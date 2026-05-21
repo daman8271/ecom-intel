@@ -6,7 +6,7 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 timedatectl set-timezone Asia/Kolkata 2>/dev/null || true
 
 # Edit this list as platforms go live:
-PLATFORMS="blinkit"
+PLATFORMS="blinkit flipkart-minutes"
 
 TMP="$(mktemp)"
 crontab -l 2>/dev/null | grep -v 'ecom-intel' > "$TMP" || true
