@@ -1,4 +1,4 @@
-import json, datetime, statistics
+import json, datetime, statistics, os
 from collections import defaultdict, OrderedDict
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
@@ -9,6 +9,9 @@ d = json.load(open('result.json'))
 rows = d['allRows']
 per = d['perPin']
 summary = d['summary']
+
+# platform name derived from the folder this runs in (blinkit, zepto, ...)
+PLATFORM = os.path.basename(os.getcwd()).replace('-', ' ').title()
 
 JIVO_GREEN = "008B3A"
 HDR = PatternFill("solid", fgColor=JIVO_GREEN)
@@ -54,7 +57,7 @@ def autosize(ws, maxw=42):
 
 # ---------- Sheet 1: Executive Summary ----------
 ws = wb.active; ws.title = "Summary"
-ws["A1"] = "Jivo x Blinkit - Live Pricing Intelligence"; ws["A1"].font = TITLE_FONT
+ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TITLE_FONT
 ws.merge_cells("A1:G1")
 ws["A2"] = f"Captured {summary['captured_at'][:16].replace('T',' ')} IST  -  {summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo  -  {summary['unique_skus']} unique SKUs  -  {summary['total_rows']} datapoints  -  scrape {summary['wall_s']}s"
 ws["A2"].font = SUB_FONT; ws.merge_cells("A2:G2")
@@ -86,7 +89,7 @@ for s in skus:
     rr += 1
 # distribution gaps
 rr += 1
-ws.cell(row=rr, column=1, value="WHITESPACE - Cities with ZERO Jivo on Blinkit:").font = Font(bold=True, size=11, color="CC0000")
+ws.cell(row=rr, column=1, value=f"WHITESPACE - Cities with ZERO Jivo on {PLATFORM}:").font = Font(bold=True, size=11, color="CC0000")
 rr += 1
 ws.cell(row=rr, column=1, value=", ".join(cities_without) if cities_without else "None - full coverage").font = Font(size=11)
 ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=7)
@@ -166,7 +169,7 @@ for row in ws.iter_rows(min_row=2):
     else: row[4].fill = GREEN
 autosize(ws)
 
-fname = f"Jivo-Blinkit-Live-Report-{datetime.date.today()}.xlsx"
+fname = f"Jivo-{PLATFORM.replace(' ', '')}-Live-Report-{datetime.date.today()}.xlsx"
 wb.save(fname)
 print("SAVED:", fname)
 print("Sheets:", wb.sheetnames)
