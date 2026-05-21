@@ -2,16 +2,12 @@
   "platform": "blinkit",
   "samples": [
     {
-      "run_id": "seed",
-      "rows": 120
-    },
-    {
-      "run_id": "2026-05-21-1530",
-      "captured_at": "2026-05-21T08:47:42.124Z",
-      "rows": 125,
-      "unique_skus": 8,
-      "pincodes_with_jivo": 27
+      "run_id": "2026-05-21-1736",
+      "captured_at": "2026-05-21T12:20:05.103Z",
+      "rows": 775,
+      "unique_skus": 9,
+      "pincodes_with_jivo": 161
     }
   ],
-  "updated_at": "2026-05-21T10:00:55.180203+00:00"
+  "updated_at": "2026-05-21T12:20:17.897129+00:00"
 }
