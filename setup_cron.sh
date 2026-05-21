@@ -36,13 +36,12 @@ HEAL_MIN=30
 TAG="# ecom-intel"
 
 # Build the exact block we want installed.
+# One sweep per window: run_all.sh scrapes every live platform SEQUENTIALLY then
+# self-heals (see run_all.sh for why sequential at ~796-pincode scale). No more
+# staggered per-platform lines — the sweep is serialized inside run_all.sh.
 build_block() {
   for H in $HOURS; do
-    for P in $PLATFORMS; do
-      M="${OFFSET[$P]:-0}"
-      echo "$M $H * * * cd $DIR && ./run.sh $P >> logs/cron.log 2>&1   $TAG"
-    done
-    echo "$HEAL_MIN $H * * * cd $DIR && ./healthcheck.sh >> logs/health.log 2>&1   $TAG"
+    echo "0 $H * * * cd $DIR && ./run_all.sh >> logs/cron.log 2>&1   $TAG"
   done
 }
 

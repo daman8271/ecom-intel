@@ -6,8 +6,9 @@
 # ./run.sh <platform>), re-check, and escalate to Telegram if still broken.
 #
 # Detection signals (any one trips a heal):
-#   1. VERDICT  — newest reviews/<platform>-<RUN_ID>.json has
-#                 "verdict":"BROKEN" or "SUSPECT".
+#   1. VERDICT  — newest reviews/<platform>-<RUN_ID>.json has "verdict":"BROKEN".
+#                 (SUSPECT is a data-quality flag, not a failure — a re-run won't
+#                  fix it, so it is recorded in reviews/ + the vault note, NOT re-run.)
 #   2. STALE    — platforms/<platform>/result.json is missing, or older than
 #                 MAX_AGE_H, or not from today (no fresh result/Excel today).
 #   3. COLLAPSE — summary.total_rows fell well below baselines/<platform>.json
@@ -167,9 +168,11 @@ assess() {
   age="$(result_age_h "$P")";    age="${age:-9999}"
   base="$(baseline_rows "$P")";  base="${base:-0}"
 
-  # signal 1: review verdict
+  # signal 1: review verdict. Only BROKEN triggers an auto re-run; SUSPECT is a
+  # data-quality flag (truncated names, scale change, etc.) that a re-run won't
+  # fix, so it is left to the recorded verdict + vault note, not a wasted re-run.
   read -r verdict vrows < <(read_verdict "$P"); verdict="${verdict:-}"; vrows="${vrows:-}"
-  if [ "$verdict" = "BROKEN" ] || [ "$verdict" = "SUSPECT" ]; then
+  if [ "$verdict" = "BROKEN" ]; then
     reason="verdict=$verdict (review rows=${vrows:-?})"
   fi
 

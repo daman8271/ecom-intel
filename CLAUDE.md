@@ -62,14 +62,19 @@ never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault,
 history, and review verdicts/baselines are what get committed each run.
 
 ## Cron (IST) — installed by ./setup_cron.sh
-Each live platform runs 3×/day, staggered to avoid concurrent Chromium:
-  09:00 / 12:00 / 16:00  ·  blinkit :00, flipkart-minutes :04, flipkart :08, amazon :12
-Self-heal runs at :30 of each window (right after the batch):
-  ./healthcheck.sh → tools/selfheal.sh detects a broken platform from the review verdict
-  (reviews/<p>-<RUN_ID>.json BROKEN|SUSPECT), staleness (no fresh result/Excel today), or
-  row collapse vs baselines/<p>.json; re-runs ./run.sh <p> ONCE under logs/.heal-<p>.lock;
-  if still broken, Telegram-alerts + logs/health.log. Idempotent; setup_cron.sh is
-  re-runnable and touches only "# ecom-intel"-tagged lines. No zepto, no amazon-now.
+One sweep per window at 09:00 / 12:00 / 16:00 via `./run_all.sh`, which scrapes every
+live platform SEQUENTIALLY (blinkit → flipkart-minutes → flipkart → amazon) then runs the
+self-heal pass. Sequential because at ~332 Blinkit stores a sweep is ~13 min and must not
+overlap the others on this single VPS. setup_cron.sh is re-runnable and touches only
+"# ecom-intel"-tagged lines. No zepto, no amazon-now.
+
+Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE (under
+logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;
+SUSPECT is recorded (reviews/ + vault note) but NOT re-run. Escalates to Telegram + logs/health.log if still broken.
+
+Blinkit pincodes: pincodes.json = 332 distinct store coordinates covering 798 pincodes
+(deduped from PinCode-blinkit.xlsx; pincodes.full.json = all 798, pincodes.coverage.md =
+geocoding report). Geocoding is region-level (free datasets), so coords are metro-accurate, not street-accurate.
 
 ## Review (tools/review.py) — never ship garbage, stay cheap
 Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,
