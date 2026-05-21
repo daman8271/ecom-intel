@@ -1,0 +1,8 @@
+node_modules/
+output/
+logs/
+**/result.json
+**/Jivo-*.xlsx
+*.log
+.DS_Store
+secrets.env
