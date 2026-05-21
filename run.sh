@@ -15,6 +15,11 @@ echo "[$RUN_ID] building excel ..."
 python3 build_excel.py
 cp Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 
+# ---- Predictions sheet: append to the workbook before delivery (best-effort). ----
+echo "[$RUN_ID] adding predictions sheet ..."
+python3 "$DIR/tools/predict.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
+cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
+
 # ---- Review: deterministic checks + optional cheap LLM. Never fail the run. ----
 # Writes reviews/<P>-<RUN_ID>.json (verdict OK|SUSPECT|BROKEN). The :30 cron
 # healthcheck reads that verdict to self-heal. exit!=0 here just means BROKEN.

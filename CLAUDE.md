@@ -56,7 +56,7 @@ ls output/                  # the Excel
 | amazon | very high | ML bot detection, blocks datacenter IPs fast → proxy required |
 
 ## Pipeline (run.sh, per platform)
-`scrape.js` → `build_excel.py` → `tools/review.py` → `tools/vault_note.py` (+ rollups)
+`scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → `tools/vault_note.py` (+ rollups)
 → Telegram delivery → git commit+push. Every step after the scrape is best-effort and
 never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault, `data/`
 history, and review verdicts/baselines are what get committed each run.
