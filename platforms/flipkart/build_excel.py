@@ -28,8 +28,16 @@ LEFT = Alignment(horizontal="left", vertical="center")
 
 wb = Workbook()
 
-# pretty SKU label from canonical
+# pretty SKU label from canonical. For Flipkart, canonical == FSN (no '-'), so we
+# map it to the clean Jivo ITEM name (sku_raw); fall back to de-slugging.
+_canon_name = {}
+for _r in rows:
+    _canon_name.setdefault(_r['canonical'], _r.get('sku_raw') or '')
+
 def label(canon):
+    nm = _canon_name.get(canon)
+    if nm:
+        return nm
     parts = canon.rsplit('-', 1)
     name = parts[0].replace('-', ' ').title()
     pack = parts[1].upper().replace('ML', ' ml').replace('L', ' L') if len(parts) > 1 else ''
@@ -79,8 +87,8 @@ for j, h in enumerate(hdr, 1):
 style_header(ws, 8, len(hdr))
 rr = 9
 for s in skus:
-    cand = [x for x in rows if x['canonical'] == s and x['in_stock'] == 1]
-    if not cand: cand = [x for x in rows if x['canonical'] == s]
+    cand = [x for x in rows if x['canonical'] == s and x['in_stock'] == 1 and x['sale'] is not None]
+    if not cand: cand = [x for x in rows if x['canonical'] == s and x['sale'] is not None]
     if not cand: continue
     b = min(cand, key=lambda x: x['sale'])
     for j, v in enumerate([label(s), b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], b['discount_pct']], 1):
@@ -144,7 +152,7 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
     return ws
 
 # Sheet 3: Pricing Matrix (avg sale per city) - green cheap -> red expensive
-matrix("Pricing Matrix", lambda c: round(statistics.mean([x['sale'] for x in c])), '"Rs"#,##0', scale=True)
+matrix("Pricing Matrix", lambda c: (round(statistics.mean([x['sale'] for x in c if x['sale'] is not None])) if any(x['sale'] is not None for x in c) else None), '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
     pct = round(100 * sum(x['in_stock'] for x in c) / len(c))
