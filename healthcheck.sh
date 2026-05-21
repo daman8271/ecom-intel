@@ -7,7 +7,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
 
-PLATFORMS="blinkit flipkart-minutes flipkart"   # keep in sync with setup_cron.sh
+PLATFORMS="blinkit flipkart-minutes flipkart amazon"   # keep in sync with setup_cron.sh
 MIN_ROWS=20                  # healthy runs return ~100+; <20 = suspicious
 MAX_AGE_H=15                 # should run every ~12h
 
