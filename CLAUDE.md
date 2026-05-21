@@ -3,7 +3,7 @@
 Operator manual. Auto-loads when you run `claude` in this directory.
 
 ## What this is
-Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms, across the top-20 Indian cities (~40 pincodes), and produces a clean Excel report per platform. Built for twice-daily cron runs. Pitched to Jivo's head of e-commerce.
+Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms, across the top-20 Indian cities (~40 pincodes), and produces a clean Excel report per platform. Built for thrice-daily cron runs (9am/12pm/4pm IST) with an automated end-of-run review + self-heal. Pitched to Jivo's head of e-commerce.
 
 ## Architecture (the rule)
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
@@ -14,14 +14,19 @@ Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms, acro
 ## Layout
 ```
 ecom-intel/
-├── CLAUDE.md              # this file
-├── run.sh                 # ./run.sh <platform>
-├── platforms/
-│   └── blinkit/           # PROVEN — works
-│       ├── SKILL.md       # the scraping recipe + selectors + quirks
-│       ├── scrape.js      # Playwright scraper -> result.json
-│       ├── build_excel.py # result.json -> 6-sheet Excel
-│       └── pincodes.json  # 40 pincodes, top-20 cities
+├── CLAUDE.md              # this file (operator manual)
+├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
+├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
+├── setup_cron.sh          # installs the 3×/day staggered cron + self-heal
+├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
+├── platforms/             # one self-contained dir per platform
+│   ├── blinkit/ flipkart-minutes/ flipkart/ amazon/   # LIVE
+│   ├── zepto/ (BLOCKED, proxy-ready)  amazon-now/ (login-gated)
+│   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
+├── tools/                 # review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
+├── vault/                 # Obsidian memory: runs/ daily/ weekly/ monthly/ platforms/  (committed)
+├── data/                  # <p>/history.csv — the future price-model training table (committed)
+├── reviews/  baselines/   # per-run verdicts + rolling expected metrics (committed)
 ├── output/                # generated Excel (gitignored)
 └── logs/                  # per-run logs (gitignored)
 ```
@@ -50,11 +55,46 @@ ls output/                  # the Excel
 | flipkart | high | marketplace bot detection |
 | amazon | very high | ML bot detection, blocks datacenter IPs fast → proxy required |
 
-## Cron (set per platform once tested)
-```
-0 9 * * *  cd /opt/ecom-intel && ./run.sh blinkit >> logs/cron.log 2>&1
-0 19 * * * cd /opt/ecom-intel && ./run.sh blinkit >> logs/cron.log 2>&1
-```
+## Pipeline (run.sh, per platform)
+`scrape.js` → `build_excel.py` → `tools/review.py` → `tools/vault_note.py` (+ rollups)
+→ Telegram delivery → git commit+push. Every step after the scrape is best-effort and
+never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault, `data/`
+history, and review verdicts/baselines are what get committed each run.
+
+## Cron (IST) — installed by ./setup_cron.sh
+Each live platform runs 3×/day, staggered to avoid concurrent Chromium:
+  09:00 / 12:00 / 16:00  ·  blinkit :00, flipkart-minutes :04, flipkart :08, amazon :12
+Self-heal runs at :30 of each window (right after the batch):
+  ./healthcheck.sh → tools/selfheal.sh detects a broken platform from the review verdict
+  (reviews/<p>-<RUN_ID>.json BROKEN|SUSPECT), staleness (no fresh result/Excel today), or
+  row collapse vs baselines/<p>.json; re-runs ./run.sh <p> ONCE under logs/.heal-<p>.lock;
+  if still broken, Telegram-alerts + logs/health.log. Idempotent; setup_cron.sh is
+  re-runnable and touches only "# ecom-intel"-tagged lines. No zepto, no amazon-now.
+
+## Review (tools/review.py) — never ship garbage, stay cheap
+Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,
+captcha/403 markers, coverage collapse vs baseline, schema, freshness — these alone
+decide BROKEN. An OPTIONAL tiny LLM judgment (Claude Haiku) can only downgrade OK→SUSPECT,
+runs only when not already BROKEN, and is FAILURE-PROOF: if the model is unreachable or
+rate-limited it logs and the verdict stands on the deterministic checks. Backend: uses
+ANTHROPIC_API_KEY if set, else `claude -p` headless on the logged-in Max subscription
+(no per-token cost). Rate-limited subscription = deterministic-only, never a crash.
+
+## Memory vault (vault/) + history (data/)
+After each run, tools/vault_note.py writes an Obsidian note vault/runs/<p>/<p>-<RUN_ID>.md
+from result.json + the review verdict, upserts the platform hub (vault/platforms/<p>.md)
+and the day's note (vault/daily/<date>.md), and appends one row per SKU×location to
+data/<p>/history.csv. tools/vault_rollup.py builds daily/weekly/monthly trend notes.
+Notes link into an Obsidian graph via body [[wikilinks]]; generators are deterministic,
+stdlib-only, idempotent per RUN_ID. Design + conventions: vault/VAULT-SPEC.md.
+
+## Proxy (residential Indian IPs) — see docs/PROXY.md
+Some sites block our datacenter IP (Zepto = hard 403; Amazon may escalate). The system
+manages the proxy; you only supply credentials. Provider: IPRoyal residential, pay-as-you-go
+(~$10–25/mo at ~8 GB/month). Set PROXY_URL / PROXY_USERNAME / PROXY_PASSWORD in secrets.env
+(template secrets.env.example). tools/proxy.js returns the proxy when set, else null ⇒ DIRECT.
+Only Zepto is wired today; wire others (Amazon first) with the same 2-line chromium.launch
+change ONLY if they start getting blocked — don't burn proxy GB on platforms that work direct.
 
 ## Hard lessons
 - This repo IS the backup. After any VPS wipe: `git clone` + `npm install` per platform + `npx playwright install chromium`. Never lose the code again.

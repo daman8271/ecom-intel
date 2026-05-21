@@ -1,0 +1,17 @@
+{
+  "platform": "amazon",
+  "samples": [
+    {
+      "run_id": "seed",
+      "rows": 160
+    },
+    {
+      "run_id": "2026-05-21-1530",
+      "captured_at": "2026-05-21T08:00:02.485Z",
+      "rows": 163,
+      "unique_skus": 163,
+      "pincodes_with_jivo": null
+    }
+  ],
+  "updated_at": "2026-05-21T10:00:55.243548+00:00"
+}

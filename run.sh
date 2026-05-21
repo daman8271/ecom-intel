@@ -15,6 +15,19 @@ echo "[$RUN_ID] building excel ..."
 python3 build_excel.py
 cp Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 
+# ---- Review: deterministic checks + optional cheap LLM. Never fail the run. ----
+# Writes reviews/<P>-<RUN_ID>.json (verdict OK|SUSPECT|BROKEN). The :30 cron
+# healthcheck reads that verdict to self-heal. exit!=0 here just means BROKEN.
+echo "[$RUN_ID] reviewing $P ..."
+python3 "$DIR/tools/review.py" "$P" "$RUN_ID" || true
+
+# ---- Vault: Obsidian memory note + daily/weekly/monthly rollups + ML history ----
+echo "[$RUN_ID] writing vault note ..."
+python3 "$DIR/tools/vault_note.py" "$P" "$RUN_ID" || echo "vault_note failed (non-fatal)" >&2
+python3 "$DIR/tools/vault_rollup.py" daily   || true
+python3 "$DIR/tools/vault_rollup.py" weekly  || true
+python3 "$DIR/tools/vault_rollup.py" monthly || true
+
 # ---- Telegram delivery (best-effort; MUST NOT fail the run) ----
 # Runs in a subshell with errexit off and a trailing `|| true`, so any
 # network/API/parse failure is logged to logs/telegram.log and ignored.
@@ -109,3 +122,20 @@ Report attached."
 
 echo "[$RUN_ID] $P done. Excel -> $DIR/output/  | log -> $DIR/logs/${P}-${RUN_ID}.log"
 tail -1 "$DIR/logs/${P}-${RUN_ID}.log" || true
+
+# ---- Persist this run to git: the memory vault + history + verdicts. Never fail. ----
+# Excel/logs/result.json are gitignored on purpose; only the Markdown vault, the
+# machine-readable history, and the review verdicts/baselines are committed.
+(
+  set +e
+  cd "$DIR"
+  git add vault data reviews baselines >/dev/null 2>&1
+  if ! git diff --cached --quiet; then
+    git commit -m "run: $P $RUN_ID" >/dev/null 2>&1
+    git pull --rebase --autostash >/dev/null 2>&1
+    git push >/dev/null 2>&1 || { git pull --rebase --autostash >/dev/null 2>&1; git push >/dev/null 2>&1; }
+    echo "[$RUN_ID] $P committed + pushed."
+  else
+    echo "[$RUN_ID] $P nothing new to commit."
+  fi
+) || true

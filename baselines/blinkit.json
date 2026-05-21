@@ -1,0 +1,17 @@
+{
+  "platform": "blinkit",
+  "samples": [
+    {
+      "run_id": "seed",
+      "rows": 120
+    },
+    {
+      "run_id": "2026-05-21-1530",
+      "captured_at": "2026-05-21T08:47:42.124Z",
+      "rows": 125,
+      "unique_skus": 8,
+      "pincodes_with_jivo": 27
+    }
+  ],
+  "updated_at": "2026-05-21T10:00:55.180203+00:00"
+}

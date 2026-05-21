@@ -1,5 +1,10 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+// Central proxy resolver: returns a Playwright proxy object when PROXY_* is set
+// in the environment / secrets.env, or null (=> DIRECT) when unset. See
+// tools/proxy.js and docs/PROXY.md. Zepto is CloudFront-403 blocked on the
+// datacenter IP, so a residential Indian-exit proxy is what unblocks it.
+const getProxy = require('../../tools/proxy');
 
 // ---------------------------------------------------------------------------
 // ZEPTO scraper.  STATUS: BLOCKED from this datacenter VPS IP (CloudFront 403).
@@ -147,7 +152,14 @@ async function pool(items, n, fn) {
 }
 
 (async () => {
-  const browser = await chromium.launch({ headless: true });
+  // Route the browser through the residential proxy when configured; otherwise
+  // launch DIRECT exactly as before (proxy === null => the spread is a no-op).
+  const proxy = getProxy();
+  process.stderr.write(`[net] ${getProxy.describeProxy(proxy)}\n`);
+  const browser = await chromium.launch({
+    headless: true,
+    ...(proxy ? { proxy } : {}),
+  });
   const t0 = Date.now();
   const perPin = await pool(PINCODES, CONCURRENCY, (rec) => scrapeOne(browser, rec));
   await browser.close();

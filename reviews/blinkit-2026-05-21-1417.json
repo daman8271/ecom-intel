@@ -1,0 +1,17 @@
+{
+  "platform": "blinkit",
+  "run_id": "2026-05-21-1417",
+  "captured_at": "2026-05-21T08:47:42.124Z",
+  "verdict": "OK",
+  "rows": 125,
+  "unique_skus": 8,
+  "pincodes_with_jivo": 27,
+  "baseline_rows": 126,
+  "checks": [
+    {"name": "rows_vs_baseline", "pass": true, "detail": "125 vs baseline 126 (-0.8%)"},
+    {"name": "min_pincodes_with_jivo", "pass": true, "detail": "27 >= 20 threshold"},
+    {"name": "price_sanity", "pass": true, "detail": "all sale<=mrp, discounts 2.7-66.7%"}
+  ],
+  "reasons": [],
+  "llm_note": "Healthy run; coverage and pricing in line with baseline."
+}

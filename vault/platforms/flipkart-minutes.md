@@ -1,0 +1,28 @@
+---
+title: flipkart-minutes
+aliases:
+  - flipkart-minutes (platform hub)
+type: platform-hub
+platform: flipkart-minutes
+tags:
+  - moc
+  - platform-hub
+  - platform/flipkart-minutes
+---
+
+# flipkart-minutes — platform hub
+
+Up: [[index]]
+
+Hub / Map of Content for the **flipkart-minutes** platform. Pricing shape: **per-pincode (top-20 cities, ~40 pincodes)**.
+Every scrape run for this platform is listed below (newest managed by
+`tools/vault_note.py`).
+
+## Runs
+
+<!-- runs:start -->
+- [[flipkart-minutes-2026-05-21-1305]] — 2026-05-21 · verdict UNREVIEWED <!-- run -->
+<!-- runs:end -->
+
+---
+*Hub auto-maintained by `tools/vault_note.py` — see [[VAULT-SPEC]].*

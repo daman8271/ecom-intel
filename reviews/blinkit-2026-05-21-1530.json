@@ -1,0 +1,74 @@
+{
+  "platform": "blinkit",
+  "run_id": "2026-05-21-1530",
+  "captured_at": "2026-05-21T08:47:42.124Z",
+  "verdict": "OK",
+  "rows": 125,
+  "unique_skus": 8,
+  "pincodes_with_jivo": 27,
+  "baseline_rows": 120,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "125 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "125 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "125 rows vs baseline 120 (104%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "8 unique SKUs (no baseline yet)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "27 pincodes w/ Jivo (no baseline yet)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-05-21T08:47:42.124Z is 1.2h old (fresh)"
+    }
+  ],
+  "reasons": [],
+  "llm_note": null
+}
