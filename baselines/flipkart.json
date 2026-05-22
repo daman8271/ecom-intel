@@ -1,0 +1,13 @@
+{
+  "platform": "flipkart",
+  "samples": [
+    {
+      "run_id": "2026-05-22-0900",
+      "captured_at": "2026-05-22T03:40:11.894Z",
+      "rows": 268,
+      "unique_skus": 268,
+      "pincodes_with_jivo": null
+    }
+  ],
+  "updated_at": "2026-05-22T03:40:26.320282+00:00"
+}
