@@ -7,3 +7,4 @@ logs/
 .DS_Store
 secrets.env
 __pycache__/
+.gitpush.lock

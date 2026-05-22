@@ -134,6 +134,12 @@ tail -1 "$DIR/logs/${P}-${RUN_ID}.log" || true
 (
   set +e
   cd "$DIR"
+  # Serialize the whole git critical section across concurrent run.sh instances
+  # (run_all.sh launches platforms in parallel). flock holds the lock for this
+  # subshell's lifetime; if flock is missing it no-ops and we degrade to the old
+  # racy-but-retrying behavior rather than failing the run.
+  exec 9>"$DIR/.gitpush.lock"
+  command -v flock >/dev/null 2>&1 && flock 9
   git add vault data reviews baselines >/dev/null 2>&1
   if ! git diff --cached --quiet; then
     git commit -m "run: $P $RUN_ID" >/dev/null 2>&1
