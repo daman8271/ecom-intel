@@ -313,9 +313,12 @@ def run_checks(data, rows, per_pincode, expected, run_id):
         add("skus_vs_baseline", True,
             f"{n_skus} unique SKUs (no baseline yet)")
 
-    # 5) prices > 0 and within plausible band -----------------------------
+    # 5) prices > 0 and within plausible band (IN-STOCK rows only — an
+    #    out-of-stock listing legitimately has no current price, e.g. Amazon) -
     bad_price = []
     for i, r in enumerate(rows):
+        if not r.get("in_stock"):   # skip out-of-stock (0/False/None): no current price
+            continue
         sale = num(r.get("sale"))
         if sale is None or sale <= 0 or sale < PRICE_MIN or sale > PRICE_MAX:
             bad_price.append((i, r.get("sku_raw"), r.get("sale")))
