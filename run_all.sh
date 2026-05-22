@@ -1,23 +1,23 @@
 #!/usr/bin/env bash
-# run_all.sh — one cron-triggered sweep: scrape every LIVE platform SEQUENTIALLY,
+# run_all.sh — one cron-triggered sweep: scrape every LIVE platform IN PARALLEL,
 # then run the self-heal pass.
 #
-# Why sequential (not the old staggered per-platform cron lines): at ~796 pincodes
-# a single Blinkit run is ~30+ min, which would overlap every other platform and
-# the healthcheck on this single VPS (4 concurrent Chromium = OOM/chaos). Running
-# them one after another keeps exactly one heavy scrape alive at a time. The 3-hour
-# gaps between windows (09/12/16 IST) comfortably fit the full ~35-40 min sweep.
-#
-# Each ./run.sh <p> is self-contained (scrape -> excel -> review -> vault -> telegram
-# -> git push) and best-effort; one platform failing must not stop the rest.
+# Parallel (not sequential): the VPS has headroom (~15G RAM / 4 CPU), so we launch
+# all platforms at once to finish the window faster. Each ./run.sh is self-contained
+# (scrape -> excel -> predict -> review -> vault -> telegram -> git push) and
+# best-effort; their git pushes are serialized by an flock inside run.sh so the
+# concurrent commits don't collide. Per-platform stdout goes to logs/run-<p>.out.
 set -uo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
-echo "[$(date '+%F %T')] run_all: START"
-for P in blinkit flipkart-minutes flipkart amazon; do
-  echo "[$(date '+%F %T')] run_all: -> $P"
-  ./run.sh "$P" || echo "[$(date '+%F %T')] run_all: $P exited non-zero (continuing)"
+echo "[$(date '+%F %T')] run_all: START (parallel)"
+pids=()
+for P in blinkit instamart flipkart-minutes flipkart amazon; do
+  echo "[$(date '+%F %T')] run_all: launching $P"
+  ./run.sh "$P" >> "logs/run-${P}.out" 2>&1 &
+  pids+=("$!")
 done
-echo "[$(date '+%F %T')] run_all: -> self-heal pass"
+for pid in "${pids[@]}"; do wait "$pid" || true; done
+echo "[$(date '+%F %T')] run_all: all platforms done -> self-heal pass"
 ./healthcheck.sh || true
 echo "[$(date '+%F %T')] run_all: DONE"
