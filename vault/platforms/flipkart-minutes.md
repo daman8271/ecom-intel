@@ -21,6 +21,7 @@ Every scrape run for this platform is listed below (newest managed by
 ## Runs
 
 <!-- runs:start -->
+- [[flipkart-minutes-2026-05-23-1200]] — 2026-05-23 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-05-23-0900]] — 2026-05-23 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-05-22-1600]] — 2026-05-22 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-05-22-1200]] — 2026-05-22 · verdict SUSPECT <!-- run -->
