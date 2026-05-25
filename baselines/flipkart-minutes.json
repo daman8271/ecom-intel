@@ -56,7 +56,14 @@
       "rows": 49,
       "unique_skus": 10,
       "pincodes_with_jivo": 16
+    },
+    {
+      "run_id": "2026-05-25-0900",
+      "captured_at": "2026-05-25T03:34:35.098Z",
+      "rows": 44,
+      "unique_skus": 9,
+      "pincodes_with_jivo": 13
     }
   ],
-  "updated_at": "2026-05-24T10:34:53.173897+00:00"
+  "updated_at": "2026-05-25T03:34:54.771847+00:00"
 }
