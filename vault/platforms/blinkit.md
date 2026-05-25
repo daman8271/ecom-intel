@@ -38,6 +38,7 @@ Hub / Map of Content for the **Blinkit** quick-commerce platform. This is the
 Newest first; auto-maintained by `tools/vault_note.py`.
 
 <!-- runs:start -->
+- [[blinkit-2026-05-25-1200]] — 2026-05-25 · verdict OK <!-- run -->
 - [[blinkit-2026-05-25-0900]] — 2026-05-25 · verdict OK <!-- run -->
 - [[blinkit-2026-05-24-1600]] — 2026-05-24 · verdict OK <!-- run -->
 - [[blinkit-2026-05-24-1200]] — 2026-05-24 · verdict OK <!-- run -->
