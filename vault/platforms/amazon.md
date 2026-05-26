@@ -21,6 +21,7 @@ Every scrape run for this platform is listed below (newest managed by
 ## Runs
 
 <!-- runs:start -->
+- [[amazon-2026-05-26-1600]] — 2026-05-26 · verdict OK <!-- run -->
 - [[amazon-2026-05-26-1200]] — 2026-05-26 · verdict OK <!-- run -->
 - [[amazon-2026-05-26-0900]] — 2026-05-26 · verdict OK <!-- run -->
 - [[amazon-2026-05-25-1600]] — 2026-05-25 · verdict SUSPECT <!-- run -->
