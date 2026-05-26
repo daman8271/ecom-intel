@@ -2,13 +2,6 @@
   "platform": "instamart",
   "samples": [
     {
-      "run_id": "2026-05-23-1200",
-      "captured_at": "2026-05-23T06:46:14.098Z",
-      "rows": 2199,
-      "unique_skus": 29,
-      "pincodes_with_jivo": 153
-    },
-    {
       "run_id": "2026-05-23-1600",
       "captured_at": "2026-05-23T10:46:03.613Z",
       "rows": 2325,
@@ -70,7 +63,14 @@
       "rows": 1946,
       "unique_skus": 30,
       "pincodes_with_jivo": 139
+    },
+    {
+      "run_id": "2026-05-26-1600",
+      "captured_at": "2026-05-26T10:46:19.868Z",
+      "rows": 2060,
+      "unique_skus": 30,
+      "pincodes_with_jivo": 148
     }
   ],
-  "updated_at": "2026-05-26T06:46:40.157210+00:00"
+  "updated_at": "2026-05-26T10:46:36.841171+00:00"
 }
