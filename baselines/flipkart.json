@@ -2,13 +2,6 @@
   "platform": "flipkart",
   "samples": [
     {
-      "run_id": "2026-05-24-1200",
-      "captured_at": "2026-05-24T06:41:03.637Z",
-      "rows": 268,
-      "unique_skus": 268,
-      "pincodes_with_jivo": null
-    },
-    {
       "run_id": "2026-05-24-1600",
       "captured_at": "2026-05-24T10:41:09.380Z",
       "rows": 268,
@@ -70,7 +63,14 @@
       "rows": 268,
       "unique_skus": 268,
       "pincodes_with_jivo": null
+    },
+    {
+      "run_id": "2026-05-27-1600",
+      "captured_at": "2026-05-27T10:41:47.388Z",
+      "rows": 268,
+      "unique_skus": 268,
+      "pincodes_with_jivo": null
     }
   ],
-  "updated_at": "2026-05-27T06:42:01.956438+00:00"
+  "updated_at": "2026-05-27T10:42:06.145238+00:00"
 }
