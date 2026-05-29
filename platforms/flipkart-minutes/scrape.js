@@ -16,8 +16,17 @@ const fs = require('fs');
 // real coverage is a bit higher than what one run captures.  See SKILL.md.
 // ---------------------------------------------------------------------------
 
-const PINCODES = JSON.parse(fs.readFileSync(__dirname + '/pincodes.json', 'utf8'));
-const CONCURRENCY = 4;
+// Full pincode grid: blinkit's 332 deduped store coords (798-pincode density across 16 cities)
+// + 13 FK-Minutes-only-city points = 345 probes. FK-Minutes is a narrower hyperlocal network
+// than Blinkit, so many probes return "not serviceable" — handled gracefully (rows: []).
+// Override the list via PINCODES_FILE (used for subset testing).
+const PFILE = process.env.PINCODES_FILE || (__dirname + '/pincodes.json');
+const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
+// Kept at 4 (same as the proven 40-pincode runs) so the per-request RATE to flipkart.com
+// matches production — spreading 345 probes over ~37 min avoids the rate-limiting/bot
+// soft-block (generic shell, 0 Jivo) seen when hammered. Well within the 3-hourly window.
+// Tunable via FKM_CONCURRENCY if you want it faster (higher = more throttle risk).
+const CONCURRENCY = parseInt(process.env.FKM_CONCURRENCY || '4', 10);
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
 function parseVolMl(pack) {
@@ -90,9 +99,17 @@ async function scrapeOne(browser, rec) {
     serviceable = !!addr;
     const pin = await page.evaluate(() => localStorage.getItem('mypin') || '');
     store = { id: pin, name: addr };
-    if (serviceable) {
+    // Search up to twice: the hyperlocal store sometimes isn't warmed up on the
+    // first try (page still shows the generic shell -> 0 Jivo despite serviceable).
+    // A re-resolve + longer-wait retry recovers those misses (helps at any scale).
+    for (let attempt = 1; attempt <= 2 && serviceable; attempt++) {
+      if (attempt === 2) {
+        const a2 = await resolveLocation(page);
+        if (a2) store = { id: store.id, name: a2 };
+        rows = [];
+      }
       await page.goto('https://www.flipkart.com/search?q=jivo&marketplace=HYPERLOCAL', { waitUntil: 'domcontentloaded', timeout: 30000 });
-      await page.waitForTimeout(5000);
+      await page.waitForTimeout(attempt === 2 ? 8000 : 5000);
       await page.evaluate(() => window.scrollBy(0, 1400));
       await page.waitForTimeout(2000);
       // Each Minutes product card is a ~300x424 element. Tight geometry bounds
@@ -144,6 +161,7 @@ async function scrapeOne(browser, rec) {
         if (!dd.has(k)) dd.set(k, r);
       }
       rows = [...dd.values()];
+      if (rows.length > 0) break;
     }
   } catch (e) {
     process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`);
@@ -184,6 +202,6 @@ async function pool(items, n, fn) {
     captured_at: new Date().toISOString(),
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
-  fs.writeFileSync(__dirname + '/result.json', JSON.stringify({ summary, perPin, allRows }, null, 2));
+  fs.writeFileSync(process.env.OUT_FILE || (__dirname + '/result.json'), JSON.stringify({ summary, perPin, allRows }, null, 2));
   console.log(JSON.stringify(summary));
 })();

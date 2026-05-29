@@ -1,42 +1,4901 @@
 [
-  {"city":"Delhi","tier":1,"pincode":"110001","locality":"Connaught Place","landmark":"Connaught Place, New Delhi, 110001, India","lat":28.633,"lon":77.219},
-  {"city":"Delhi","tier":1,"pincode":"110027","locality":"Rajouri Garden","landmark":"D40 Block D, Rajouri Garden, New Delhi, 110027, India","lat":28.640,"lon":77.127},
-  {"city":"Delhi","tier":1,"pincode":"110048","locality":"Greater Kailash","landmark":"Greater Kailash, New Delhi, 110048, India","lat":28.541,"lon":77.244},
-  {"city":"Gurgaon","tier":1,"pincode":"122002","locality":"DLF Cyber City","landmark":"DLF Cyber City, Sector 24, Gurugram, 122002, India","lat":28.494,"lon":77.089},
-  {"city":"Gurgaon","tier":1,"pincode":"122011","locality":"Sector 56","landmark":"Sector 56, Gurugram, 122011, India","lat":28.418,"lon":77.075},
-  {"city":"Noida","tier":1,"pincode":"201301","locality":"Sector 18","landmark":"Sector 18, Noida, 201301, India","lat":28.570,"lon":77.321},
-  {"city":"Noida","tier":1,"pincode":"201309","locality":"Sector 62","landmark":"Sector 62, Noida, 201309, India","lat":28.625,"lon":77.371},
-  {"city":"Ghaziabad","tier":1,"pincode":"201014","locality":"Indirapuram","landmark":"Indirapuram, Ghaziabad, 201014, India","lat":28.643,"lon":77.371},
-  {"city":"Faridabad","tier":1,"pincode":"121007","locality":"Sector 15","landmark":"Sector 15, Faridabad, 121007, India","lat":28.397,"lon":77.301},
-  {"city":"Mumbai","tier":1,"pincode":"400050","locality":"Bandra West","landmark":"Bandra West, Mumbai, 400050, India","lat":19.060,"lon":72.829},
-  {"city":"Mumbai","tier":1,"pincode":"400076","locality":"Powai","landmark":"Powai, Mumbai, 400076, India","lat":19.120,"lon":72.905},
-  {"city":"Mumbai","tier":1,"pincode":"400069","locality":"Andheri East","landmark":"Andheri East, Mumbai, 400069, India","lat":19.114,"lon":72.870},
-  {"city":"Mumbai","tier":1,"pincode":"400013","locality":"Lower Parel","landmark":"Lower Parel, Mumbai, 400013, India","lat":19.000,"lon":72.830},
-  {"city":"Pune","tier":1,"pincode":"411014","locality":"Viman Nagar","landmark":"Viman Nagar, Pune, 411014, India","lat":18.567,"lon":73.913},
-  {"city":"Pune","tier":1,"pincode":"411001","locality":"Koregaon Park","landmark":"Koregaon Park, Pune, 411001, India","lat":18.536,"lon":73.893},
-  {"city":"Bengaluru","tier":1,"pincode":"560034","locality":"Koramangala","landmark":"Koramangala, Bengaluru, 560034, India","lat":12.935,"lon":77.624},
-  {"city":"Bengaluru","tier":1,"pincode":"560066","locality":"Whitefield","landmark":"Whitefield, Bengaluru, 560066, India","lat":12.969,"lon":77.749},
-  {"city":"Bengaluru","tier":1,"pincode":"560038","locality":"Indiranagar","landmark":"Indiranagar, Bengaluru, 560038, India","lat":12.978,"lon":77.640},
-  {"city":"Hyderabad","tier":1,"pincode":"500032","locality":"Gachibowli","landmark":"Gachibowli, Hyderabad, 500032, India","lat":17.440,"lon":78.348},
-  {"city":"Hyderabad","tier":1,"pincode":"500034","locality":"Banjara Hills","landmark":"Banjara Hills, Hyderabad, 500034, India","lat":17.412,"lon":78.443},
-  {"city":"Chennai","tier":1,"pincode":"600040","locality":"Anna Nagar","landmark":"Anna Nagar, Chennai, 600040, India","lat":13.087,"lon":80.215},
-  {"city":"Chennai","tier":1,"pincode":"600042","locality":"Velachery","landmark":"Velachery, Chennai, 600042, India","lat":12.978,"lon":80.220},
-  {"city":"Kolkata","tier":1,"pincode":"700064","locality":"Salt Lake","landmark":"Salt Lake, Kolkata, 700064, India","lat":22.575,"lon":88.434},
-  {"city":"Kolkata","tier":1,"pincode":"700019","locality":"Ballygunge","landmark":"Ballygunge, Kolkata, 700019, India","lat":22.523,"lon":88.366},
-  {"city":"Ahmedabad","tier":1,"pincode":"380054","locality":"Bodakdev","landmark":"Bodakdev, Ahmedabad, 380054, India","lat":23.044,"lon":72.510},
-  {"city":"Ahmedabad","tier":1,"pincode":"380009","locality":"Navrangpura","landmark":"Navrangpura, Ahmedabad, 380009, India","lat":23.034,"lon":72.554},
-  {"city":"Surat","tier":2,"pincode":"395007","locality":"Athwa Lines","landmark":"Athwa Lines, Surat, 395007, India","lat":21.169,"lon":72.804},
-  {"city":"Vadodara","tier":2,"pincode":"390007","locality":"Alkapuri","landmark":"Alkapuri, Vadodara, 390007, India","lat":22.310,"lon":73.181},
-  {"city":"Jaipur","tier":2,"pincode":"302017","locality":"Malviya Nagar","landmark":"Malviya Nagar, Jaipur, 302017, India","lat":26.857,"lon":75.811},
-  {"city":"Lucknow","tier":2,"pincode":"226010","locality":"Gomti Nagar","landmark":"Gomti Nagar, Lucknow, 226010, India","lat":26.846,"lon":81.001},
-  {"city":"Chandigarh","tier":2,"pincode":"160017","locality":"Sector 17","landmark":"Sector 17, Chandigarh, 160017, India","lat":30.741,"lon":76.781},
-  {"city":"Indore","tier":2,"pincode":"452010","locality":"Vijay Nagar","landmark":"Vijay Nagar, Indore, 452010, India","lat":22.752,"lon":75.892},
-  {"city":"Bhopal","tier":2,"pincode":"462016","locality":"Arera Colony","landmark":"Arera Colony, Bhopal, 462016, India","lat":23.227,"lon":77.434},
-  {"city":"Coimbatore","tier":2,"pincode":"641002","locality":"RS Puram","landmark":"RS Puram, Coimbatore, 641002, India","lat":11.012,"lon":76.962},
-  {"city":"Nagpur","tier":2,"pincode":"440010","locality":"Dharampeth","landmark":"Dharampeth, Nagpur, 440010, India","lat":21.146,"lon":79.073},
-  {"city":"Visakhapatnam","tier":2,"pincode":"530017","locality":"MVP Colony","landmark":"MVP Colony, Visakhapatnam, 530017, India","lat":17.745,"lon":83.337},
-  {"city":"Kanpur","tier":2,"pincode":"208001","locality":"Civil Lines","landmark":"Civil Lines, Kanpur, 208001, India","lat":26.475,"lon":80.330},
-  {"city":"Ludhiana","tier":2,"pincode":"141001","locality":"Civil Lines","landmark":"Civil Lines, Ludhiana, 141001, India","lat":30.911,"lon":75.853},
-  {"city":"Patna","tier":2,"pincode":"800013","locality":"Patliputra","landmark":"Patliputra, Patna, 800013, India","lat":25.633,"lon":85.087},
-  {"city":"Mysuru","tier":2,"pincode":"570023","locality":"Kuvempu Nagar","landmark":"Kuvempu Nagar, Mysuru, 570023, India","lat":12.297,"lon":76.605}
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560001",
+    "locality": "Bangalore Bazaar",
+    "landmark": "Bangalore Bazaar, Bengaluru, 560001, India",
+    "lat": 13.2257,
+    "lon": 77.575,
+    "represents": 85,
+    "pincodes": [
+      "560001",
+      "560002",
+      "560003",
+      "560004",
+      "560005",
+      "560006",
+      "560007",
+      "560008",
+      "560009",
+      "560010",
+      "560011",
+      "560012",
+      "560013",
+      "560015",
+      "560016",
+      "560017",
+      "560018",
+      "560020",
+      "560021",
+      "560022",
+      "560023",
+      "560024",
+      "560025",
+      "560026",
+      "560027",
+      "560030",
+      "560032",
+      "560033",
+      "560034",
+      "560036",
+      "560037",
+      "560038",
+      "560041",
+      "560043",
+      "560046",
+      "560048",
+      "560049",
+      "560050",
+      "560051",
+      "560053",
+      "560054",
+      "560055",
+      "560056",
+      "560058",
+      "560059",
+      "560061",
+      "560062",
+      "560063",
+      "560064",
+      "560065",
+      "560066",
+      "560067",
+      "560068",
+      "560070",
+      "560071",
+      "560072",
+      "560074",
+      "560075",
+      "560076",
+      "560077",
+      "560078",
+      "560079",
+      "560080",
+      "560083",
+      "560084",
+      "560085",
+      "560086",
+      "560091",
+      "560092",
+      "560093",
+      "560094",
+      "560095",
+      "560096",
+      "560097",
+      "560098",
+      "560099",
+      "560100",
+      "560102",
+      "560103",
+      "560104",
+      "562106",
+      "562107",
+      "562125",
+      "562149",
+      "562157"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560014",
+    "locality": "Jalahalli East",
+    "landmark": "Jalahalli East, Bengaluru, 560014, India",
+    "lat": 13.0333,
+    "lon": 77.55,
+    "represents": 1,
+    "pincodes": [
+      "560014"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560019",
+    "locality": "Gaviopuram Extension",
+    "landmark": "Gaviopuram Extension, Bengaluru, 560019, India",
+    "lat": 12.9471,
+    "lon": 77.5624,
+    "represents": 1,
+    "pincodes": [
+      "560019"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560028",
+    "locality": "Tyagrajnagar",
+    "landmark": "Tyagrajnagar, Bengaluru, 560028, India",
+    "lat": 12.9452,
+    "lon": 77.5658,
+    "represents": 1,
+    "pincodes": [
+      "560028"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560029",
+    "locality": "Dharmaram College",
+    "landmark": "Dharmaram College, Bengaluru, 560029, India",
+    "lat": 13.133,
+    "lon": 77.9274,
+    "represents": 1,
+    "pincodes": [
+      "560029"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560039",
+    "locality": "Nayandahalli",
+    "landmark": "Nayandahalli, Bengaluru, 560039, India",
+    "lat": 12.9397,
+    "lon": 77.5247,
+    "represents": 1,
+    "pincodes": [
+      "560039"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560040",
+    "locality": "Chandra Lay out",
+    "landmark": "Chandra Lay out, Bengaluru, 560040, India",
+    "lat": 13.005,
+    "lon": 77.3214,
+    "represents": 4,
+    "pincodes": [
+      "560040",
+      "560042",
+      "560045",
+      "560047"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560052",
+    "locality": "Vasanthnagar",
+    "landmark": "Vasanthnagar, Bengaluru, 560052, India",
+    "lat": 13.0499,
+    "lon": 77.1594,
+    "represents": 1,
+    "pincodes": [
+      "560052"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560069",
+    "locality": "Jayangar East",
+    "landmark": "Jayangar East, Bengaluru, 560069, India",
+    "lat": 13.1075,
+    "lon": 77.6003,
+    "represents": 1,
+    "pincodes": [
+      "560069"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560073",
+    "locality": "Bagalgunte",
+    "landmark": "Bagalgunte, Bengaluru, 560073, India",
+    "lat": 13.289,
+    "lon": 77.5146,
+    "represents": 1,
+    "pincodes": [
+      "560073"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "560087",
+    "locality": "Gunjur",
+    "landmark": "Gunjur, Bengaluru, 560087, India",
+    "lat": 13.4353,
+    "lon": 77.5193,
+    "represents": 1,
+    "pincodes": [
+      "560087"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
+    "pincode": "562130",
+    "locality": "Chikkanahalli",
+    "landmark": "Chikkanahalli, Bengaluru, 562130, India",
+    "lat": 13.1303,
+    "lon": 77.7495,
+    "represents": 1,
+    "pincodes": [
+      "562130"
+    ]
+  },
+  {
+    "city": "Bhopal",
+    "tier": 2,
+    "pincode": "462001",
+    "locality": "Jumerati S.O",
+    "landmark": "Jumerati S.O, Bhopal, 462001, India",
+    "lat": 23.478,
+    "lon": 77.3961,
+    "represents": 5,
+    "pincodes": [
+      "462001",
+      "462002",
+      "462003",
+      "462004",
+      "462008"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160001",
+    "locality": "HIGH COURT",
+    "landmark": "HIGH COURT, Chandigarh, 160001, India",
+    "lat": 30.7465,
+    "lon": 76.7417,
+    "represents": 10,
+    "pincodes": [
+      "160001",
+      "160002",
+      "160003",
+      "160009",
+      "160020",
+      "160022",
+      "160023",
+      "160025",
+      "160101",
+      "160102"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160011",
+    "locality": "Chandigarh",
+    "landmark": "Chandigarh, Chandigarh, 160011, India",
+    "lat": 30.7301,
+    "lon": 76.7815,
+    "represents": 6,
+    "pincodes": [
+      "160011",
+      "160012",
+      "160015",
+      "160017",
+      "160018",
+      "160019"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160014",
+    "locality": "DADU MAJRA COLONY",
+    "landmark": "DADU MAJRA COLONY, Chandigarh, 160014, India",
+    "lat": 30.7695,
+    "lon": 76.7567,
+    "represents": 1,
+    "pincodes": [
+      "160014"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160021",
+    "locality": "Chandigarh",
+    "landmark": "Chandigarh, Chandigarh, 160021, India",
+    "lat": 30.724,
+    "lon": 76.7754,
+    "represents": 1,
+    "pincodes": [
+      "160021"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160030",
+    "locality": "Chandigarh",
+    "landmark": "Chandigarh, Chandigarh, 160030, India",
+    "lat": 30.7325,
+    "lon": 76.7341,
+    "represents": 2,
+    "pincodes": [
+      "160030",
+      "160036"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160035",
+    "locality": "Chandigarh",
+    "landmark": "Chandigarh, Chandigarh, 160035, India",
+    "lat": 30.7254,
+    "lon": 76.7592,
+    "represents": 1,
+    "pincodes": [
+      "160035"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160043",
+    "locality": "Chandigarh",
+    "landmark": "Chandigarh, Chandigarh, 160043, India",
+    "lat": 30.708,
+    "lon": 76.7621,
+    "represents": 2,
+    "pincodes": [
+      "160043",
+      "160047"
+    ]
+  },
+  {
+    "city": "Chandigarh",
+    "tier": 2,
+    "pincode": "160055",
+    "locality": "Chandigarh",
+    "landmark": "Chandigarh, Chandigarh, 160055, India",
+    "lat": 31.0624,
+    "lon": 76.4894,
+    "represents": 1,
+    "pincodes": [
+      "160055"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110001",
+    "locality": "Baroda House",
+    "landmark": "Baroda House, Delhi, 110001, India",
+    "lat": 28.6369,
+    "lon": 77.2183,
+    "represents": 1,
+    "pincodes": [
+      "110001"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110002",
+    "locality": "A.G.C.R.",
+    "landmark": "A.G.C.R., Delhi, 110002, India",
+    "lat": 28.6109,
+    "lon": 77.214,
+    "represents": 5,
+    "pincodes": [
+      "110002",
+      "110020",
+      "110029",
+      "110043",
+      "110098"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110003",
+    "locality": "Aliganj",
+    "landmark": "Aliganj, Delhi, 110003, India",
+    "lat": 28.6431,
+    "lon": 77.2197,
+    "represents": 6,
+    "pincodes": [
+      "110003",
+      "110005",
+      "110011",
+      "110012",
+      "110060",
+      "110069"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110004",
+    "locality": "Rashtrapati Bhawan",
+    "landmark": "Rashtrapati Bhawan, Delhi, 110004, India",
+    "lat": 28.6455,
+    "lon": 77.205,
+    "represents": 1,
+    "pincodes": [
+      "110004"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110006",
+    "locality": "Hauz Qazi",
+    "landmark": "Hauz Qazi, Delhi, 110006, India",
+    "lat": 28.7106,
+    "lon": 77.2115,
+    "represents": 1,
+    "pincodes": [
+      "110006"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110007",
+    "locality": "C.C.I.",
+    "landmark": "C.C.I., Delhi, 110007, India",
+    "lat": 28.6764,
+    "lon": 77.2074,
+    "represents": 1,
+    "pincodes": [
+      "110007"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110008",
+    "locality": "Dada Ghosh Bhawan (Patel Nagar)",
+    "landmark": "Dada Ghosh Bhawan (Patel Nagar), Delhi, 110008, India",
+    "lat": 28.6466,
+    "lon": 77.1701,
+    "represents": 1,
+    "pincodes": [
+      "110008"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110009",
+    "locality": "Dr.Mukerjee Nagar",
+    "landmark": "Dr.Mukerjee Nagar, Delhi, 110009, India",
+    "lat": 28.7121,
+    "lon": 77.206,
+    "represents": 1,
+    "pincodes": [
+      "110009"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110010",
+    "locality": "505 A B Workshop",
+    "landmark": "505 A B Workshop, Delhi, 110010, India",
+    "lat": 28.5724,
+    "lon": 77.0274,
+    "represents": 11,
+    "pincodes": [
+      "110010",
+      "110022",
+      "110023",
+      "110028",
+      "110030",
+      "110038",
+      "110057",
+      "110066",
+      "110068",
+      "110074",
+      "110097"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110013",
+    "locality": "Dargah Sharif",
+    "landmark": "Dargah Sharif, Delhi, 110013, India",
+    "lat": 28.5878,
+    "lon": 77.2541,
+    "represents": 1,
+    "pincodes": [
+      "110013"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110014",
+    "locality": "Hari Nagar Ashram",
+    "landmark": "Hari Nagar Ashram, Delhi, 110014, India",
+    "lat": 28.5014,
+    "lon": 77.2274,
+    "represents": 4,
+    "pincodes": [
+      "110014",
+      "110019",
+      "110049",
+      "110080"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110015",
+    "locality": "Delhi Industrial Area",
+    "landmark": "Delhi Industrial Area, Delhi, 110015, India",
+    "lat": 28.6553,
+    "lon": 77.0657,
+    "represents": 10,
+    "pincodes": [
+      "110015",
+      "110027",
+      "110045",
+      "110058",
+      "110059",
+      "110063",
+      "110064",
+      "110077",
+      "110078",
+      "110087"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110016",
+    "locality": "Green Park Market",
+    "landmark": "Green Park Market, Delhi, 110016, India",
+    "lat": 28.5531,
+    "lon": 77.1916,
+    "represents": 1,
+    "pincodes": [
+      "110016"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110017",
+    "locality": "Distt. Court Complex, Saket",
+    "landmark": "Distt. Court Complex, Saket, Delhi, 110017, India",
+    "lat": 28.5189,
+    "lon": 77.2131,
+    "represents": 1,
+    "pincodes": [
+      "110017"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110018",
+    "locality": "Ashok Nagar",
+    "landmark": "Ashok Nagar, Delhi, 110018, India",
+    "lat": 28.6396,
+    "lon": 77.0884,
+    "represents": 1,
+    "pincodes": [
+      "110018"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110021",
+    "locality": "Anand Niketan",
+    "landmark": "Anand Niketan, Delhi, 110021, India",
+    "lat": 28.5818,
+    "lon": 77.1793,
+    "represents": 1,
+    "pincodes": [
+      "110021"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110024",
+    "locality": "Amar Colony",
+    "landmark": "Amar Colony, Delhi, 110024, India",
+    "lat": 28.5724,
+    "lon": 77.2365,
+    "represents": 1,
+    "pincodes": [
+      "110024"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110025",
+    "locality": "Abul Fazal Enclave-I",
+    "landmark": "Abul Fazal Enclave-I, Delhi, 110025, India",
+    "lat": 28.5672,
+    "lon": 77.2725,
+    "represents": 1,
+    "pincodes": [
+      "110025"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110026",
+    "locality": "Ashoka Park Extn.",
+    "landmark": "Ashoka Park Extn., Delhi, 110026, India",
+    "lat": 28.6709,
+    "lon": 77.141,
+    "represents": 1,
+    "pincodes": [
+      "110026"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110031",
+    "locality": "Gandhi Nagar Bazar",
+    "landmark": "Gandhi Nagar Bazar, Delhi, 110031, India",
+    "lat": 28.659,
+    "lon": 77.2739,
+    "represents": 1,
+    "pincodes": [
+      "110031"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110032",
+    "locality": "Balbir Nagar",
+    "landmark": "Balbir Nagar, Delhi, 110032, India",
+    "lat": 28.6875,
+    "lon": 77.2856,
+    "represents": 1,
+    "pincodes": [
+      "110032"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110033",
+    "locality": "Adrash Nagar",
+    "landmark": "Adrash Nagar, Delhi, 110033, India",
+    "lat": 28.716,
+    "lon": 77.1429,
+    "represents": 2,
+    "pincodes": [
+      "110033",
+      "110034"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110035",
+    "locality": "Ganeshpura",
+    "landmark": "Ganeshpura, Delhi, 110035, India",
+    "lat": 28.6772,
+    "lon": 77.1573,
+    "represents": 1,
+    "pincodes": [
+      "110035"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110036",
+    "locality": "Alipur",
+    "landmark": "Alipur, Delhi, 110036, India",
+    "lat": 28.8127,
+    "lon": 77.1616,
+    "represents": 1,
+    "pincodes": [
+      "110036"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110037",
+    "locality": "Gurgaon Road",
+    "landmark": "Gurgaon Road, Delhi, 110037, India",
+    "lat": 28.548,
+    "lon": 77.1133,
+    "represents": 1,
+    "pincodes": [
+      "110037"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110039",
+    "locality": "Hareveli",
+    "landmark": "Hareveli, Delhi, 110039, India",
+    "lat": 28.7613,
+    "lon": 77.0628,
+    "represents": 1,
+    "pincodes": [
+      "110039"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110040",
+    "locality": "Bankner",
+    "landmark": "Bankner, Delhi, 110040, India",
+    "lat": 28.8527,
+    "lon": 77.0929,
+    "represents": 1,
+    "pincodes": [
+      "110040"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110041",
+    "locality": "Bakkarwala",
+    "landmark": "Bakkarwala, Delhi, 110041, India",
+    "lat": 28.6592,
+    "lon": 77.0382,
+    "represents": 1,
+    "pincodes": [
+      "110041"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110042",
+    "locality": "Badli",
+    "landmark": "Badli, Delhi, 110042, India",
+    "lat": 28.7581,
+    "lon": 77.1309,
+    "represents": 1,
+    "pincodes": [
+      "110042"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110044",
+    "locality": "Badarpur",
+    "landmark": "Badarpur, Delhi, 110044, India",
+    "lat": 28.5027,
+    "lon": 77.3084,
+    "represents": 1,
+    "pincodes": [
+      "110044"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110046",
+    "locality": "Nangal Raya",
+    "landmark": "Nangal Raya, Delhi, 110046, India",
+    "lat": 28.6093,
+    "lon": 77.1118,
+    "represents": 1,
+    "pincodes": [
+      "110046"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110048",
+    "locality": "Greater Kailash",
+    "landmark": "Greater Kailash, Delhi, 110048, India",
+    "lat": 28.5589,
+    "lon": 77.2531,
+    "represents": 1,
+    "pincodes": [
+      "110048"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110051",
+    "locality": "Azad Nagar",
+    "landmark": "Azad Nagar, Delhi, 110051, India",
+    "lat": 28.6292,
+    "lon": 77.298,
+    "represents": 1,
+    "pincodes": [
+      "110051"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110052",
+    "locality": "Ashok Vihar",
+    "landmark": "Ashok Vihar, Delhi, 110052, India",
+    "lat": 28.7688,
+    "lon": 77.0869,
+    "represents": 3,
+    "pincodes": [
+      "110052",
+      "110056",
+      "110094"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110053",
+    "locality": "Brahampuri",
+    "landmark": "Brahampuri, Delhi, 110053, India",
+    "lat": 28.6866,
+    "lon": 77.2732,
+    "represents": 1,
+    "pincodes": [
+      "110053"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110054",
+    "locality": "Aruna Nagar",
+    "landmark": "Aruna Nagar, Delhi, 110054, India",
+    "lat": 28.6921,
+    "lon": 77.2245,
+    "represents": 1,
+    "pincodes": [
+      "110054"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110055",
+    "locality": "A.K.Market",
+    "landmark": "A.K.Market, Delhi, 110055, India",
+    "lat": 28.6417,
+    "lon": 77.2132,
+    "represents": 1,
+    "pincodes": [
+      "110055"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110061",
+    "locality": "Bijwasan",
+    "landmark": "Bijwasan, Delhi, 110061, India",
+    "lat": 28.5346,
+    "lon": 77.0536,
+    "represents": 1,
+    "pincodes": [
+      "110061"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110062",
+    "locality": "Air Force Station Tugalkabad",
+    "landmark": "Air Force Station Tugalkabad, Delhi, 110062, India",
+    "lat": 28.5025,
+    "lon": 77.2312,
+    "represents": 1,
+    "pincodes": [
+      "110062"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110065",
+    "locality": "East Of Kailash Phase-I",
+    "landmark": "East Of Kailash Phase-I, Delhi, 110065, India",
+    "lat": 28.5619,
+    "lon": 77.2553,
+    "represents": 1,
+    "pincodes": [
+      "110065"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110067",
+    "locality": "J.N.U.",
+    "landmark": "J.N.U., Delhi, 110067, India",
+    "lat": 28.5553,
+    "lon": 77.1743,
+    "represents": 1,
+    "pincodes": [
+      "110067"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110070",
+    "locality": "Masood Pur",
+    "landmark": "Masood Pur, Delhi, 110070, India",
+    "lat": 28.5439,
+    "lon": 77.1523,
+    "represents": 1,
+    "pincodes": [
+      "110070"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110075",
+    "locality": "Amberhai",
+    "landmark": "Amberhai, Delhi, 110075, India",
+    "lat": 28.5458,
+    "lon": 77.0784,
+    "represents": 1,
+    "pincodes": [
+      "110075"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110076",
+    "locality": "South Delhi",
+    "landmark": "South Delhi, Delhi, 110076, India",
+    "lat": 28.5339,
+    "lon": 77.3025,
+    "represents": 1,
+    "pincodes": [
+      "110076"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110081",
+    "locality": "Chand Pur",
+    "landmark": "Chand Pur, Delhi, 110081, India",
+    "lat": 28.7299,
+    "lon": 76.9929,
+    "represents": 1,
+    "pincodes": [
+      "110081"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110082",
+    "locality": "Holambi Kalan",
+    "landmark": "Holambi Kalan, Delhi, 110082, India",
+    "lat": 28.8044,
+    "lon": 77.0969,
+    "represents": 1,
+    "pincodes": [
+      "110082"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110083",
+    "locality": "Mangolpuri A Block",
+    "landmark": "Mangolpuri A Block, Delhi, 110083, India",
+    "lat": 28.7441,
+    "lon": 77.0732,
+    "represents": 3,
+    "pincodes": [
+      "110083",
+      "110086",
+      "110089"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110084",
+    "locality": "Burari",
+    "landmark": "Burari, Delhi, 110084, India",
+    "lat": 28.7557,
+    "lon": 77.1994,
+    "represents": 1,
+    "pincodes": [
+      "110084"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110085",
+    "locality": "Avantika",
+    "landmark": "Avantika, Delhi, 110085, India",
+    "lat": 28.7201,
+    "lon": 77.1027,
+    "represents": 1,
+    "pincodes": [
+      "110085"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110088",
+    "locality": "Haiderpur",
+    "landmark": "Haiderpur, Delhi, 110088, India",
+    "lat": 28.7219,
+    "lon": 77.159,
+    "represents": 1,
+    "pincodes": [
+      "110088"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110090",
+    "locality": "Badarpur Khadar",
+    "landmark": "Badarpur Khadar, Delhi, 110090, India",
+    "lat": 28.7077,
+    "lon": 77.274,
+    "represents": 2,
+    "pincodes": [
+      "110090",
+      "110093"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110091",
+    "locality": "Chilla",
+    "landmark": "Chilla, Delhi, 110091, India",
+    "lat": 28.609,
+    "lon": 77.2953,
+    "represents": 1,
+    "pincodes": [
+      "110091"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110092",
+    "locality": "Anand Vihar",
+    "landmark": "Anand Vihar, Delhi, 110092, India",
+    "lat": 28.6266,
+    "lon": 77.2794,
+    "represents": 1,
+    "pincodes": [
+      "110092"
+    ]
+  },
+  {
+    "city": "Delhi",
+    "tier": 1,
+    "pincode": "110095",
+    "locality": "Dilshad Garden",
+    "landmark": "Dilshad Garden, Delhi, 110095, India",
+    "lat": 28.6114,
+    "lon": 77.2982,
+    "represents": 2,
+    "pincodes": [
+      "110095",
+      "110096"
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "tier": 2,
+    "pincode": "121001",
+    "locality": "Factory Area faridabad",
+    "landmark": "Factory Area faridabad, Faridabad, 121001, India",
+    "lat": 28.3327,
+    "lon": 77.3548,
+    "represents": 12,
+    "pincodes": [
+      "121001",
+      "121005",
+      "121006",
+      "121007",
+      "121008",
+      "121009",
+      "121010",
+      "121102",
+      "121103",
+      "121105",
+      "121106",
+      "121107"
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "tier": 2,
+    "pincode": "121002",
+    "locality": "Bhaskola",
+    "landmark": "Bhaskola, Faridabad, 121002, India",
+    "lat": 28.4172,
+    "lon": 77.393,
+    "represents": 1,
+    "pincodes": [
+      "121002"
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "tier": 2,
+    "pincode": "121003",
+    "locality": "Amarnagar",
+    "landmark": "Amarnagar, Faridabad, 121003, India",
+    "lat": 28.4651,
+    "lon": 77.3329,
+    "represents": 1,
+    "pincodes": [
+      "121003"
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "tier": 2,
+    "pincode": "121004",
+    "locality": "Amarpur",
+    "landmark": "Amarpur, Faridabad, 121004, India",
+    "lat": 28.1866,
+    "lon": 77.4449,
+    "represents": 1,
+    "pincodes": [
+      "121004"
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "tier": 2,
+    "pincode": "121011",
+    "locality": "Gurukul Indraprashtha",
+    "landmark": "Gurukul Indraprashtha, Faridabad, 121011, India",
+    "lat": 28.3759,
+    "lon": 77.3185,
+    "represents": 1,
+    "pincodes": [
+      "121011"
+    ]
+  },
+  {
+    "city": "Faridabad",
+    "tier": 2,
+    "pincode": "121101",
+    "locality": "Alipur",
+    "landmark": "Alipur, Faridabad, 121101, India",
+    "lat": 28.369,
+    "lon": 77.4496,
+    "represents": 1,
+    "pincodes": [
+      "121101"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201001",
+    "locality": "Ashok Nagar",
+    "landmark": "Ashok Nagar, Ghaziabad, 201001, India",
+    "lat": 28.7643,
+    "lon": 77.4856,
+    "represents": 20,
+    "pincodes": [
+      "201001",
+      "201004",
+      "201006",
+      "201007",
+      "201010",
+      "201011",
+      "201012",
+      "201013",
+      "201102",
+      "201206",
+      "201301",
+      "201301",
+      "201303",
+      "201303",
+      "245101",
+      "245201",
+      "245205",
+      "245207",
+      "245208",
+      "245301"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201002",
+    "locality": "Alttc",
+    "landmark": "Alttc, Ghaziabad, 201002, India",
+    "lat": 28.6969,
+    "lon": 77.8994,
+    "represents": 1,
+    "pincodes": [
+      "201002"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201003",
+    "locality": "Ator Nagla",
+    "landmark": "Ator Nagla, Ghaziabad, 201003, India",
+    "lat": 28.7238,
+    "lon": 77.4553,
+    "represents": 1,
+    "pincodes": [
+      "201003"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201005",
+    "locality": "Pasonda",
+    "landmark": "Pasonda, Ghaziabad, 201005, India",
+    "lat": 28.6713,
+    "lon": 77.3718,
+    "represents": 1,
+    "pincodes": [
+      "201005"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201009",
+    "locality": "Arya Nagar",
+    "landmark": "Arya Nagar, Ghaziabad, 201009, India",
+    "lat": 28.6472,
+    "lon": 77.4282,
+    "represents": 1,
+    "pincodes": [
+      "201009"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201201",
+    "locality": "Churiyala",
+    "landmark": "Churiyala, Ghaziabad, 201201, India",
+    "lat": 28.8624,
+    "lon": 77.6177,
+    "represents": 1,
+    "pincodes": [
+      "201201"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201204",
+    "locality": "Begmabad",
+    "landmark": "Begmabad, Ghaziabad, 201204, India",
+    "lat": 28.838,
+    "lon": 77.6202,
+    "represents": 1,
+    "pincodes": [
+      "201204"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "201302",
+    "locality": "Adhyatmic Nagar",
+    "landmark": "Adhyatmic Nagar, Ghaziabad, 201302, India",
+    "lat": 28.5246,
+    "lon": 77.4635,
+    "represents": 1,
+    "pincodes": [
+      "201302"
+    ]
+  },
+  {
+    "city": "Ghaziabad",
+    "tier": 2,
+    "pincode": "245304",
+    "locality": "Anwarpur",
+    "landmark": "Anwarpur, Ghaziabad, 245304, India",
+    "lat": 28.7325,
+    "lon": 77.5757,
+    "represents": 1,
+    "pincodes": [
+      "245304"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "121104",
+    "locality": "Baded",
+    "landmark": "Baded, Gurgaon, 121104, India",
+    "lat": 27.8638,
+    "lon": 77.2052,
+    "represents": 1,
+    "pincodes": [
+      "121104"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122001",
+    "locality": "Arjun Nagar",
+    "landmark": "Arjun Nagar, Gurgaon, 122001, India",
+    "lat": 28.418,
+    "lon": 76.9839,
+    "represents": 5,
+    "pincodes": [
+      "122001",
+      "122002",
+      "122003",
+      "122008",
+      "122009"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122004",
+    "locality": "Khandsa",
+    "landmark": "Khandsa, Gurgaon, 122004, India",
+    "lat": 28.3792,
+    "lon": 76.9522,
+    "represents": 1,
+    "pincodes": [
+      "122004"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122006",
+    "locality": "Basai",
+    "landmark": "Basai, Gurgaon, 122006, India",
+    "lat": 28.4592,
+    "lon": 76.985,
+    "represents": 1,
+    "pincodes": [
+      "122006"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122010",
+    "locality": "Dlf Ph-iii",
+    "landmark": "Dlf Ph-iii, Gurgaon, 122010, India",
+    "lat": 28.4001,
+    "lon": 76.9661,
+    "represents": 3,
+    "pincodes": [
+      "122010",
+      "122016",
+      "122017"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122051",
+    "locality": "Kasan",
+    "landmark": "Kasan, Gurgaon, 122051, India",
+    "lat": 28.3531,
+    "lon": 76.9404,
+    "represents": 1,
+    "pincodes": [
+      "122051"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122101",
+    "locality": "Badshahpur",
+    "landmark": "Badshahpur, Gurgaon, 122101, India",
+    "lat": 28.3681,
+    "lon": 76.9408,
+    "represents": 6,
+    "pincodes": [
+      "122101",
+      "122102",
+      "122103",
+      "122104",
+      "122107",
+      "122108"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122105",
+    "locality": "Air force",
+    "landmark": "Air force, Gurgaon, 122105, India",
+    "lat": 28.262,
+    "lon": 76.8518,
+    "represents": 1,
+    "pincodes": [
+      "122105"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "122106",
+    "locality": "Dungerwas",
+    "landmark": "Dungerwas, Gurgaon, 122106, India",
+    "lat": 28.2167,
+    "lon": 76.7833,
+    "represents": 1,
+    "pincodes": [
+      "122106"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "123003",
+    "locality": "Baslambi",
+    "landmark": "Baslambi, Gurgaon, 123003, India",
+    "lat": 28.1956,
+    "lon": 76.6165,
+    "represents": 1,
+    "pincodes": [
+      "123003"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "123413",
+    "locality": "Bhorakalan",
+    "landmark": "Bhorakalan, Gurgaon, 123413, India",
+    "lat": 28.1833,
+    "lon": 76.6167,
+    "represents": 2,
+    "pincodes": [
+      "123413",
+      "123414"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "123502",
+    "locality": "Cheelarh",
+    "landmark": "Cheelarh, Gurgaon, 123502, India",
+    "lat": 28.2833,
+    "lon": 76.7667,
+    "represents": 3,
+    "pincodes": [
+      "123502",
+      "123504",
+      "123506"
+    ]
+  },
+  {
+    "city": "Gurgaon",
+    "tier": 2,
+    "pincode": "123505",
+    "locality": "Bhangrola",
+    "landmark": "Bhangrola, Gurgaon, 123505, India",
+    "lat": 28.45,
+    "lon": 76.9333,
+    "represents": 1,
+    "pincodes": [
+      "123505"
+    ]
+  },
+  {
+    "city": "Indore",
+    "tier": 2,
+    "pincode": "452001",
+    "locality": "INDORE GPO",
+    "landmark": "INDORE GPO, Indore, 452001, India",
+    "lat": 22.7233,
+    "lon": 75.87,
+    "represents": 1,
+    "pincodes": [
+      "452001"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302001",
+    "locality": "Ashoknagar",
+    "landmark": "Ashoknagar, Jaipur, 302001, India",
+    "lat": 26.9196,
+    "lon": 75.7878,
+    "represents": 6,
+    "pincodes": [
+      "302001",
+      "302002",
+      "302003",
+      "302004",
+      "302005",
+      "302006"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302011",
+    "locality": "Airport Sanganer",
+    "landmark": "Airport Sanganer, Jaipur, 302011, India",
+    "lat": 26.1748,
+    "lon": 74.8799,
+    "represents": 1,
+    "pincodes": [
+      "302011"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302012",
+    "locality": "Bindayaka",
+    "landmark": "Bindayaka, Jaipur, 302012, India",
+    "lat": 26.879,
+    "lon": 75.7315,
+    "represents": 1,
+    "pincodes": [
+      "302012"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302013",
+    "locality": "Akhepura",
+    "landmark": "Akhepura, Jaipur, 302013, India",
+    "lat": 27.0261,
+    "lon": 75.8138,
+    "represents": 1,
+    "pincodes": [
+      "302013"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302015",
+    "locality": "Bajaj Nagar",
+    "landmark": "Bajaj Nagar, Jaipur, 302015, India",
+    "lat": 26.755,
+    "lon": 75.5831,
+    "represents": 2,
+    "pincodes": [
+      "302015",
+      "302019"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302016",
+    "locality": "Bani Park",
+    "landmark": "Bani Park, Jaipur, 302016, India",
+    "lat": 26.9258,
+    "lon": 75.787,
+    "represents": 1,
+    "pincodes": [
+      "302016"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302017",
+    "locality": "Malviya Industrial area",
+    "landmark": "Malviya Industrial area, Jaipur, 302017, India",
+    "lat": 26.8378,
+    "lon": 75.8256,
+    "represents": 1,
+    "pincodes": [
+      "302017"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302018",
+    "locality": "Amer Clark hotel",
+    "landmark": "Amer Clark hotel, Jaipur, 302018, India",
+    "lat": 26.8468,
+    "lon": 75.7924,
+    "represents": 1,
+    "pincodes": [
+      "302018"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302020",
+    "locality": "Mansarovar",
+    "landmark": "Mansarovar, Jaipur, 302020, India",
+    "lat": 26.8626,
+    "lon": 75.7633,
+    "represents": 1,
+    "pincodes": [
+      "302020"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302021",
+    "locality": "Vaishali Nagar",
+    "landmark": "Vaishali Nagar, Jaipur, 302021, India",
+    "lat": 26.9126,
+    "lon": 75.7441,
+    "represents": 1,
+    "pincodes": [
+      "302021"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302022",
+    "locality": "Sitapura Industrial area",
+    "landmark": "Sitapura Industrial area, Jaipur, 302022, India",
+    "lat": 26.9295,
+    "lon": 75.7962,
+    "represents": 1,
+    "pincodes": [
+      "302022"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302023",
+    "locality": "Amba Bari",
+    "landmark": "Amba Bari, Jaipur, 302023, India",
+    "lat": 26.9562,
+    "lon": 75.7756,
+    "represents": 1,
+    "pincodes": [
+      "302023"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302024",
+    "locality": "Heerapura",
+    "landmark": "Heerapura, Jaipur, 302024, India",
+    "lat": 26.892,
+    "lon": 75.7353,
+    "represents": 1,
+    "pincodes": [
+      "302024"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302025",
+    "locality": "Jagatpura",
+    "landmark": "Jagatpura, Jaipur, 302025, India",
+    "lat": 26.8008,
+    "lon": 75.8619,
+    "represents": 1,
+    "pincodes": [
+      "302025"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302026",
+    "locality": "Bhambhoria",
+    "landmark": "Bhambhoria, Jaipur, 302026, India",
+    "lat": 26.8471,
+    "lon": 75.6693,
+    "represents": 1,
+    "pincodes": [
+      "302026"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302027",
+    "locality": "Crpf Campus lalwas",
+    "landmark": "Crpf Campus lalwas, Jaipur, 302027, India",
+    "lat": 26.9972,
+    "lon": 75.929,
+    "represents": 1,
+    "pincodes": [
+      "302027"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302028",
+    "locality": "Amer",
+    "landmark": "Amer, Jaipur, 302028, India",
+    "lat": 27.0737,
+    "lon": 75.9368,
+    "represents": 1,
+    "pincodes": [
+      "302028"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302029",
+    "locality": "Kalwara",
+    "landmark": "Kalwara, Jaipur, 302029, India",
+    "lat": 26.7965,
+    "lon": 75.728,
+    "represents": 1,
+    "pincodes": [
+      "302029"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302032",
+    "locality": "Harmada",
+    "landmark": "Harmada, Jaipur, 302032, India",
+    "lat": 26.9668,
+    "lon": 75.7692,
+    "represents": 1,
+    "pincodes": [
+      "302032"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "302033",
+    "locality": "Pratap Nagar housing board",
+    "landmark": "Pratap Nagar housing board, Jaipur, 302033, India",
+    "lat": 26.7602,
+    "lon": 76.0868,
+    "represents": 1,
+    "pincodes": [
+      "302033"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303001",
+    "locality": "Andhi",
+    "landmark": "Andhi, Jaipur, 303001, India",
+    "lat": 27.6605,
+    "lon": 76.0083,
+    "represents": 1,
+    "pincodes": [
+      "303001"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303002",
+    "locality": "Achrol",
+    "landmark": "Achrol, Jaipur, 303002, India",
+    "lat": 27.1615,
+    "lon": 75.9274,
+    "represents": 1,
+    "pincodes": [
+      "303002"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303003",
+    "locality": "Bhamod",
+    "landmark": "Bhamod, Jaipur, 303003, India",
+    "lat": 26.9805,
+    "lon": 75.7243,
+    "represents": 12,
+    "pincodes": [
+      "303003",
+      "303005",
+      "303008",
+      "303104",
+      "303106",
+      "303119",
+      "303301",
+      "303338",
+      "303601",
+      "303603",
+      "303704",
+      "303801"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303006",
+    "locality": "Bichi",
+    "landmark": "Bichi, Jaipur, 303006, India",
+    "lat": 26.5781,
+    "lon": 75.6447,
+    "represents": 1,
+    "pincodes": [
+      "303006"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303007",
+    "locality": "Ajairajpura",
+    "landmark": "Ajairajpura, Jaipur, 303007, India",
+    "lat": 26.8107,
+    "lon": 75.547,
+    "represents": 1,
+    "pincodes": [
+      "303007"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303009",
+    "locality": "Dhamana",
+    "landmark": "Dhamana, Jaipur, 303009, India",
+    "lat": 26.7244,
+    "lon": 75.4528,
+    "represents": 1,
+    "pincodes": [
+      "303009"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303010",
+    "locality": "Bichoon",
+    "landmark": "Bichoon, Jaipur, 303010, India",
+    "lat": 26.8076,
+    "lon": 75.3522,
+    "represents": 1,
+    "pincodes": [
+      "303010"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303012",
+    "locality": "Burthal",
+    "landmark": "Burthal, Jaipur, 303012, India",
+    "lat": 26.9298,
+    "lon": 75.8994,
+    "represents": 1,
+    "pincodes": [
+      "303012"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303102",
+    "locality": "Beelwadi",
+    "landmark": "Beelwadi, Jaipur, 303102, India",
+    "lat": 27.3479,
+    "lon": 75.9858,
+    "represents": 1,
+    "pincodes": [
+      "303102"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303103",
+    "locality": "Badi Jori",
+    "landmark": "Badi Jori, Jaipur, 303103, India",
+    "lat": 26.8975,
+    "lon": 75.6188,
+    "represents": 1,
+    "pincodes": [
+      "303103"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303105",
+    "locality": "Banar",
+    "landmark": "Banar, Jaipur, 303105, India",
+    "lat": 27.722,
+    "lon": 76.0965,
+    "represents": 1,
+    "pincodes": [
+      "303105"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303107",
+    "locality": "Bhainslana",
+    "landmark": "Bhainslana, Jaipur, 303107, India",
+    "lat": 26.8561,
+    "lon": 76.5139,
+    "represents": 3,
+    "pincodes": [
+      "303107",
+      "303302",
+      "303305"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303108",
+    "locality": "Chaturbhuj",
+    "landmark": "Chaturbhuj, Jaipur, 303108, India",
+    "lat": 27.25,
+    "lon": 75.8992,
+    "represents": 1,
+    "pincodes": [
+      "303108"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303109",
+    "locality": "Bandha Jamwaramgarh",
+    "landmark": "Bandha Jamwaramgarh, Jaipur, 303109, India",
+    "lat": 27.1528,
+    "lon": 76.1188,
+    "represents": 1,
+    "pincodes": [
+      "303109"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303110",
+    "locality": "Bhalloji",
+    "landmark": "Bhalloji, Jaipur, 303110, India",
+    "lat": 27.6078,
+    "lon": 76.179,
+    "represents": 1,
+    "pincodes": [
+      "303110"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303120",
+    "locality": "Amloda",
+    "landmark": "Amloda, Jaipur, 303120, India",
+    "lat": 27.3205,
+    "lon": 76.0605,
+    "represents": 1,
+    "pincodes": [
+      "303120"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303328",
+    "locality": "Bhadwa",
+    "landmark": "Bhadwa, Jaipur, 303328, India",
+    "lat": 26.9726,
+    "lon": 75.3875,
+    "represents": 1,
+    "pincodes": [
+      "303328"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303329",
+    "locality": "A C jobner",
+    "landmark": "A C jobner, Jaipur, 303329, India",
+    "lat": 26.7169,
+    "lon": 76.0256,
+    "represents": 1,
+    "pincodes": [
+      "303329"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303331",
+    "locality": "Asalpur",
+    "landmark": "Asalpur, Jaipur, 303331, India",
+    "lat": 26.9193,
+    "lon": 75.4115,
+    "represents": 1,
+    "pincodes": [
+      "303331"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303339",
+    "locality": "Manda Bhim singh",
+    "landmark": "Manda Bhim singh, Jaipur, 303339, India",
+    "lat": 26.8751,
+    "lon": 75.2456,
+    "represents": 1,
+    "pincodes": [
+      "303339"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303348",
+    "locality": "Chainpura",
+    "landmark": "Chainpura, Jaipur, 303348, India",
+    "lat": 26.8247,
+    "lon": 75.3356,
+    "represents": 1,
+    "pincodes": [
+      "303348"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303602",
+    "locality": "Astikalan",
+    "landmark": "Astikalan, Jaipur, 303602, India",
+    "lat": 26.9095,
+    "lon": 75.7034,
+    "represents": 1,
+    "pincodes": [
+      "303602"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303604",
+    "locality": "Habaspura",
+    "landmark": "Habaspura, Jaipur, 303604, India",
+    "lat": 26.7784,
+    "lon": 75.3718,
+    "represents": 1,
+    "pincodes": [
+      "303604"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303701",
+    "locality": "Bhato Ki gali",
+    "landmark": "Bhato Ki gali, Jaipur, 303701, India",
+    "lat": 27.1091,
+    "lon": 75.6285,
+    "represents": 1,
+    "pincodes": [
+      "303701"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303702",
+    "locality": "Chomu",
+    "landmark": "Chomu, Jaipur, 303702, India",
+    "lat": 27.1651,
+    "lon": 75.6919,
+    "represents": 1,
+    "pincodes": [
+      "303702"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303706",
+    "locality": "Bassi Naga",
+    "landmark": "Bassi Naga, Jaipur, 303706, India",
+    "lat": 26.97,
+    "lon": 75.5369,
+    "represents": 1,
+    "pincodes": [
+      "303706"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303712",
+    "locality": "Anantpura",
+    "landmark": "Anantpura, Jaipur, 303712, India",
+    "lat": 26.8557,
+    "lon": 75.948,
+    "represents": 1,
+    "pincodes": [
+      "303712"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303802",
+    "locality": "Tripolia Chomu",
+    "landmark": "Tripolia Chomu, Jaipur, 303802, India",
+    "lat": 27.1727,
+    "lon": 75.7204,
+    "represents": 1,
+    "pincodes": [
+      "303802"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303803",
+    "locality": "Bilanderpur",
+    "landmark": "Bilanderpur, Jaipur, 303803, India",
+    "lat": 27.3323,
+    "lon": 75.6958,
+    "represents": 1,
+    "pincodes": [
+      "303803"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303804",
+    "locality": "Amarpura",
+    "landmark": "Amarpura, Jaipur, 303804, India",
+    "lat": 26.9933,
+    "lon": 75.5573,
+    "represents": 1,
+    "pincodes": [
+      "303804"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303805",
+    "locality": "Bagwara",
+    "landmark": "Bagwara, Jaipur, 303805, India",
+    "lat": 27.1587,
+    "lon": 75.7612,
+    "represents": 1,
+    "pincodes": [
+      "303805"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303806",
+    "locality": "Bansa",
+    "landmark": "Bansa, Jaipur, 303806, India",
+    "lat": 27.2021,
+    "lon": 75.8104,
+    "represents": 1,
+    "pincodes": [
+      "303806"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303807",
+    "locality": "Bhopawa",
+    "landmark": "Bhopawa, Jaipur, 303807, India",
+    "lat": 27.0306,
+    "lon": 75.8084,
+    "represents": 1,
+    "pincodes": [
+      "303807"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303901",
+    "locality": "Akodiya",
+    "landmark": "Akodiya, Jaipur, 303901, India",
+    "lat": 26.6239,
+    "lon": 76.0053,
+    "represents": 1,
+    "pincodes": [
+      "303901"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303903",
+    "locality": "Badapadampura",
+    "landmark": "Badapadampura, Jaipur, 303903, India",
+    "lat": 26.6864,
+    "lon": 75.8773,
+    "represents": 1,
+    "pincodes": [
+      "303903"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303904",
+    "locality": "Chittora",
+    "landmark": "Chittora, Jaipur, 303904, India",
+    "lat": 26.7675,
+    "lon": 75.7412,
+    "represents": 1,
+    "pincodes": [
+      "303904"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303905",
+    "locality": "Dadiya",
+    "landmark": "Dadiya, Jaipur, 303905, India",
+    "lat": 26.7776,
+    "lon": 75.7651,
+    "represents": 1,
+    "pincodes": [
+      "303905"
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "tier": 1,
+    "pincode": "303908",
+    "locality": "Achalpura",
+    "landmark": "Achalpura, Jaipur, 303908, India",
+    "lat": 26.6945,
+    "lon": 76.0035,
+    "represents": 1,
+    "pincodes": [
+      "303908"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700001",
+    "locality": "Council House street",
+    "landmark": "Council House street, Kolkata, 700001, India",
+    "lat": 22.5553,
+    "lon": 88.3558,
+    "represents": 46,
+    "pincodes": [
+      "700001",
+      "700007",
+      "700008",
+      "700009",
+      "700010",
+      "700011",
+      "700012",
+      "700013",
+      "700014",
+      "700016",
+      "700017",
+      "700018",
+      "700020",
+      "700021",
+      "700023",
+      "700025",
+      "700026",
+      "700027",
+      "700029",
+      "700031",
+      "700032",
+      "700033",
+      "700034",
+      "700038",
+      "700047",
+      "700054",
+      "700060",
+      "700061",
+      "700062",
+      "700063",
+      "700066",
+      "700068",
+      "700071",
+      "700072",
+      "700073",
+      "700075",
+      "700078",
+      "700082",
+      "700085",
+      "700086",
+      "700087",
+      "700088",
+      "700092",
+      "700094",
+      "700095",
+      "700099"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700015",
+    "locality": "Sales Tax building",
+    "landmark": "Sales Tax building, Kolkata, 700015, India",
+    "lat": 22.55,
+    "lon": 88.3833,
+    "represents": 1,
+    "pincodes": [
+      "700015"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700019",
+    "locality": "Ballygunge",
+    "landmark": "Ballygunge, Kolkata, 700019, India",
+    "lat": 22.529,
+    "lon": 88.368,
+    "represents": 1,
+    "pincodes": [
+      "700019"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700022",
+    "locality": "Bakery Road",
+    "landmark": "Bakery Road, Kolkata, 700022, India",
+    "lat": 22.55,
+    "lon": 88.3333,
+    "represents": 1,
+    "pincodes": [
+      "700022"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700024",
+    "locality": "Garden Reach",
+    "landmark": "Garden Reach, Kolkata, 700024, India",
+    "lat": 22.5439,
+    "lon": 88.3067,
+    "represents": 1,
+    "pincodes": [
+      "700024"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700040",
+    "locality": "Netaji Nagar",
+    "landmark": "Netaji Nagar, Kolkata, 700040, India",
+    "lat": 22.5333,
+    "lon": 88.3917,
+    "represents": 7,
+    "pincodes": [
+      "700040",
+      "700041",
+      "700042",
+      "700043",
+      "700044",
+      "700045",
+      "700046"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700053",
+    "locality": "Kalabagan",
+    "landmark": "Kalabagan, Kolkata, 700053, India",
+    "lat": 22.5246,
+    "lon": 88.3317,
+    "represents": 1,
+    "pincodes": [
+      "700053"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700069",
+    "locality": "Esplanade",
+    "landmark": "Esplanade, Kolkata, 700069, India",
+    "lat": 22.5644,
+    "lon": 88.3462,
+    "represents": 1,
+    "pincodes": [
+      "700069"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700089",
+    "locality": "West Bengal",
+    "landmark": "West Bengal, Kolkata, 700089, India",
+    "lat": 22.4656,
+    "lon": 88.7803,
+    "represents": 1,
+    "pincodes": [
+      "700089"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700107",
+    "locality": "E.K.t",
+    "landmark": "E.K.t, Kolkata, 700107, India",
+    "lat": 22.1168,
+    "lon": 88.4167,
+    "represents": 1,
+    "pincodes": [
+      "700107"
+    ]
+  },
+  {
+    "city": "Kolkata",
+    "tier": 1,
+    "pincode": "700141",
+    "locality": "Daulatpur",
+    "landmark": "Daulatpur, Kolkata, 700141, India",
+    "lat": 22.4069,
+    "lon": 88.1497,
+    "represents": 1,
+    "pincodes": [
+      "700141"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141001",
+    "locality": "Bharat Nagar Ludhiana",
+    "landmark": "Bharat Nagar Ludhiana, Ludhiana, 141001, India",
+    "lat": 30.8047,
+    "lon": 75.8361,
+    "represents": 20,
+    "pincodes": [
+      "141001",
+      "141002",
+      "141003",
+      "141004",
+      "141006",
+      "141008",
+      "141104",
+      "141105",
+      "141110",
+      "141112",
+      "141117",
+      "141118",
+      "141119",
+      "141120",
+      "141127",
+      "141201",
+      "141203",
+      "141205",
+      "142025",
+      "148107"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141007",
+    "locality": "Basti Jodhewal",
+    "landmark": "Basti Jodhewal, Ludhiana, 141007, India",
+    "lat": 30.9647,
+    "lon": 75.9547,
+    "represents": 1,
+    "pincodes": [
+      "141007"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141010",
+    "locality": "Focal Point",
+    "landmark": "Focal Point, Ludhiana, 141010, India",
+    "lat": 30.8485,
+    "lon": 76.141,
+    "represents": 3,
+    "pincodes": [
+      "141010",
+      "141012",
+      "141013"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141014",
+    "locality": "Daba Road",
+    "landmark": "Daba Road, Ludhiana, 141014, India",
+    "lat": 30.8646,
+    "lon": 75.9185,
+    "represents": 1,
+    "pincodes": [
+      "141014"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141015",
+    "locality": "Mundian Kalan",
+    "landmark": "Mundian Kalan, Ludhiana, 141015, India",
+    "lat": 30.8975,
+    "lon": 75.9316,
+    "represents": 1,
+    "pincodes": [
+      "141015"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141017",
+    "locality": "Jugiana",
+    "landmark": "Jugiana, Ludhiana, 141017, India",
+    "lat": 30.8549,
+    "lon": 75.9405,
+    "represents": 1,
+    "pincodes": [
+      "141017"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141101",
+    "locality": "Dakha Mandi",
+    "landmark": "Dakha Mandi, Ludhiana, 141101, India",
+    "lat": 30.8297,
+    "lon": 75.6417,
+    "represents": 1,
+    "pincodes": [
+      "141101"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141102",
+    "locality": "Bhanohar",
+    "landmark": "Bhanohar, Ludhiana, 141102, India",
+    "lat": 30.8722,
+    "lon": 75.7053,
+    "represents": 1,
+    "pincodes": [
+      "141102"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141103",
+    "locality": "Mohie",
+    "landmark": "Mohie, Ludhiana, 141103, India",
+    "lat": 30.7984,
+    "lon": 75.7216,
+    "represents": 1,
+    "pincodes": [
+      "141103"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141106",
+    "locality": "Halwara Aerodrome",
+    "landmark": "Halwara Aerodrome, Ludhiana, 141106, India",
+    "lat": 30.9228,
+    "lon": 75.6892,
+    "represents": 1,
+    "pincodes": [
+      "141106"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141107",
+    "locality": "Attiana",
+    "landmark": "Attiana, Ludhiana, 141107, India",
+    "lat": 30.8406,
+    "lon": 75.6779,
+    "represents": 1,
+    "pincodes": [
+      "141107"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141108",
+    "locality": "Andlu",
+    "landmark": "Andlu, Ludhiana, 141108, India",
+    "lat": 30.9684,
+    "lon": 75.5535,
+    "represents": 1,
+    "pincodes": [
+      "141108"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141109",
+    "locality": "Bhaini Baringa",
+    "landmark": "Bhaini Baringa, Ludhiana, 141109, India",
+    "lat": 30.6572,
+    "lon": 76.0842,
+    "represents": 1,
+    "pincodes": [
+      "141109"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141113",
+    "locality": "Chhandran",
+    "landmark": "Chhandran, Ludhiana, 141113, India",
+    "lat": 30.8445,
+    "lon": 76.0807,
+    "represents": 1,
+    "pincodes": [
+      "141113"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141114",
+    "locality": "Bhagwanpura",
+    "landmark": "Bhagwanpura, Ludhiana, 141114, India",
+    "lat": 30.808,
+    "lon": 76.1567,
+    "represents": 1,
+    "pincodes": [
+      "141114"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141115",
+    "locality": "Hambowal",
+    "landmark": "Hambowal, Ludhiana, 141115, India",
+    "lat": 30.9156,
+    "lon": 76.2002,
+    "represents": 1,
+    "pincodes": [
+      "141115"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141116",
+    "locality": "Alamgir",
+    "landmark": "Alamgir, Ludhiana, 141116, India",
+    "lat": 30.7948,
+    "lon": 75.874,
+    "represents": 1,
+    "pincodes": [
+      "141116"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141121",
+    "locality": "Behlolpur",
+    "landmark": "Behlolpur, Ludhiana, 141121, India",
+    "lat": 30.9575,
+    "lon": 75.9386,
+    "represents": 2,
+    "pincodes": [
+      "141121",
+      "141123"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141122",
+    "locality": "Jaspal Banger",
+    "landmark": "Jaspal Banger, Ludhiana, 141122, India",
+    "lat": 30.8289,
+    "lon": 75.8919,
+    "represents": 1,
+    "pincodes": [
+      "141122"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141125",
+    "locality": "Kakrala Kalan",
+    "landmark": "Kakrala Kalan, Ludhiana, 141125, India",
+    "lat": 30.848,
+    "lon": 76.3024,
+    "represents": 1,
+    "pincodes": [
+      "141125"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141126",
+    "locality": "Junewal",
+    "landmark": "Junewal, Ludhiana, 141126, India",
+    "lat": 30.8966,
+    "lon": 76.085,
+    "represents": 1,
+    "pincodes": [
+      "141126"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141202",
+    "locality": "Ballowal",
+    "landmark": "Ballowal, Ludhiana, 141202, India",
+    "lat": 30.7685,
+    "lon": 75.7437,
+    "represents": 1,
+    "pincodes": [
+      "141202"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141204",
+    "locality": "Chhapar",
+    "landmark": "Chhapar, Ludhiana, 141204, India",
+    "lat": 30.839,
+    "lon": 75.5545,
+    "represents": 1,
+    "pincodes": [
+      "141204"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141206",
+    "locality": "Bhutta",
+    "landmark": "Bhutta, Ludhiana, 141206, India",
+    "lat": 30.7998,
+    "lon": 75.9055,
+    "represents": 1,
+    "pincodes": [
+      "141206"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141412",
+    "locality": "Bagli Kalan",
+    "landmark": "Bagli Kalan, Ludhiana, 141412, India",
+    "lat": 30.7227,
+    "lon": 76.1789,
+    "represents": 1,
+    "pincodes": [
+      "141412"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141413",
+    "locality": "Dhamote",
+    "landmark": "Dhamote, Ludhiana, 141413, India",
+    "lat": 30.6547,
+    "lon": 76.0252,
+    "represents": 1,
+    "pincodes": [
+      "141413"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141414",
+    "locality": "Allona Pallah",
+    "landmark": "Allona Pallah, Ludhiana, 141414, India",
+    "lat": 30.6335,
+    "lon": 76.0733,
+    "represents": 1,
+    "pincodes": [
+      "141414"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141415",
+    "locality": "Bharthala Randhawa",
+    "landmark": "Bharthala Randhawa, Ludhiana, 141415, India",
+    "lat": 30.5969,
+    "lon": 76.0894,
+    "represents": 1,
+    "pincodes": [
+      "141415"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141416",
+    "locality": "Barmalipur",
+    "landmark": "Barmalipur, Ludhiana, 141416, India",
+    "lat": 30.7531,
+    "lon": 76.0743,
+    "represents": 1,
+    "pincodes": [
+      "141416"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141417",
+    "locality": "Chak Mafi",
+    "landmark": "Chak Mafi, Ludhiana, 141417, India",
+    "lat": 30.7513,
+    "lon": 76.2208,
+    "represents": 1,
+    "pincodes": [
+      "141417"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141418",
+    "locality": "Begowal",
+    "landmark": "Begowal, Ludhiana, 141418, India",
+    "lat": 30.8107,
+    "lon": 76.0627,
+    "represents": 1,
+    "pincodes": [
+      "141418"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141419",
+    "locality": "Ghaloti",
+    "landmark": "Ghaloti, Ludhiana, 141419, India",
+    "lat": 30.6861,
+    "lon": 76.151,
+    "represents": 1,
+    "pincodes": [
+      "141419"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141421",
+    "locality": "Bowani",
+    "landmark": "Bowani, Ludhiana, 141421, India",
+    "lat": 30.6617,
+    "lon": 76.2982,
+    "represents": 1,
+    "pincodes": [
+      "141421"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "141422",
+    "locality": "Hissowal",
+    "landmark": "Hissowal, Ludhiana, 141422, India",
+    "lat": 30.803,
+    "lon": 75.6673,
+    "represents": 1,
+    "pincodes": [
+      "141422"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142021",
+    "locality": "Baddowal",
+    "landmark": "Baddowal, Ludhiana, 142021, India",
+    "lat": 30.8611,
+    "lon": 75.7469,
+    "represents": 1,
+    "pincodes": [
+      "142021"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142022",
+    "locality": "Dad",
+    "landmark": "Dad, Ludhiana, 142022, India",
+    "lat": 30.8509,
+    "lon": 75.8048,
+    "represents": 1,
+    "pincodes": [
+      "142022"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142023",
+    "locality": "Gurreh",
+    "landmark": "Gurreh, Ludhiana, 142023, India",
+    "lat": 30.8,
+    "lon": 75.5666,
+    "represents": 1,
+    "pincodes": [
+      "142023"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142024",
+    "locality": "Barsal",
+    "landmark": "Barsal, Ludhiana, 142024, India",
+    "lat": 30.866,
+    "lon": 75.555,
+    "represents": 1,
+    "pincodes": [
+      "142024"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142026",
+    "locality": "Bhamipura",
+    "landmark": "Bhamipura, Ludhiana, 142026, India",
+    "lat": 30.8567,
+    "lon": 75.6153,
+    "represents": 2,
+    "pincodes": [
+      "142026",
+      "142028"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142027",
+    "locality": "Ayali Kalan",
+    "landmark": "Ayali Kalan, Ludhiana, 142027, India",
+    "lat": 30.9287,
+    "lon": 75.7403,
+    "represents": 1,
+    "pincodes": [
+      "142027"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142029",
+    "locality": "Dhaipai",
+    "landmark": "Dhaipai, Ludhiana, 142029, India",
+    "lat": 30.8075,
+    "lon": 75.7572,
+    "represents": 1,
+    "pincodes": [
+      "142029"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142030",
+    "locality": "Chajjewal",
+    "landmark": "Chajjewal, Ludhiana, 142030, India",
+    "lat": 30.7543,
+    "lon": 75.544,
+    "represents": 1,
+    "pincodes": [
+      "142030"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142031",
+    "locality": "Hathur",
+    "landmark": "Hathur, Ludhiana, 142031, India",
+    "lat": 30.6391,
+    "lon": 75.4472,
+    "represents": 1,
+    "pincodes": [
+      "142031"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142032",
+    "locality": "Bassian",
+    "landmark": "Bassian, Ludhiana, 142032, India",
+    "lat": 30.6559,
+    "lon": 75.5389,
+    "represents": 1,
+    "pincodes": [
+      "142032"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142033",
+    "locality": "Bangsipur",
+    "landmark": "Bangsipur, Ludhiana, 142033, India",
+    "lat": 30.9294,
+    "lon": 75.4759,
+    "represents": 1,
+    "pincodes": [
+      "142033"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142035",
+    "locality": "Chakkar",
+    "landmark": "Chakkar, Ludhiana, 142035, India",
+    "lat": 30.6855,
+    "lon": 75.4047,
+    "represents": 1,
+    "pincodes": [
+      "142035"
+    ]
+  },
+  {
+    "city": "Ludhiana",
+    "tier": 2,
+    "pincode": "142036",
+    "locality": "Fatehgarh Siwian",
+    "landmark": "Fatehgarh Siwian, Ludhiana, 142036, India",
+    "lat": 30.89,
+    "lon": 75.8962,
+    "represents": 1,
+    "pincodes": [
+      "142036"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400001",
+    "locality": "Mumbai G.P.O.",
+    "landmark": "Mumbai G.P.O., Mumbai, 400001, India",
+    "lat": 18.9474,
+    "lon": 72.8138,
+    "represents": 4,
+    "pincodes": [
+      "400001",
+      "400002",
+      "400008",
+      "400009"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400003",
+    "locality": "Mandvi",
+    "landmark": "Mandvi, Mumbai, 400003, India",
+    "lat": 18.95,
+    "lon": 72.8333,
+    "represents": 1,
+    "pincodes": [
+      "400003"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400004",
+    "locality": "Girgaon",
+    "landmark": "Girgaon, Mumbai, 400004, India",
+    "lat": 18.95,
+    "lon": 72.8167,
+    "represents": 1,
+    "pincodes": [
+      "400004"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400005",
+    "locality": "Colaba",
+    "landmark": "Colaba, Mumbai, 400005, India",
+    "lat": 18.9069,
+    "lon": 72.8106,
+    "represents": 1,
+    "pincodes": [
+      "400005"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400006",
+    "locality": "Malabar Hill",
+    "landmark": "Malabar Hill, Mumbai, 400006, India",
+    "lat": 18.9808,
+    "lon": 72.8338,
+    "represents": 54,
+    "pincodes": [
+      "400006",
+      "400042",
+      "400043",
+      "400049",
+      "400050",
+      "400051",
+      "400052",
+      "400054",
+      "400055",
+      "400056",
+      "400057",
+      "400058",
+      "400059",
+      "400060",
+      "400061",
+      "400063",
+      "400064",
+      "400065",
+      "400066",
+      "400067",
+      "400068",
+      "400069",
+      "400070",
+      "400071",
+      "400072",
+      "400074",
+      "400075",
+      "400076",
+      "400077",
+      "400078",
+      "400079",
+      "400080",
+      "400081",
+      "400082",
+      "400083",
+      "400084",
+      "400085",
+      "400086",
+      "400087",
+      "400088",
+      "400089",
+      "400091",
+      "400092",
+      "400093",
+      "400094",
+      "400095",
+      "400096",
+      "400097",
+      "400098",
+      "400099",
+      "400101",
+      "400102",
+      "400103",
+      "400104"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400007",
+    "locality": "Grant Road",
+    "landmark": "Grant Road, Mumbai, 400007, India",
+    "lat": 18.9636,
+    "lon": 72.8193,
+    "represents": 1,
+    "pincodes": [
+      "400007"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400010",
+    "locality": "Mazgaon",
+    "landmark": "Mazgaon, Mumbai, 400010, India",
+    "lat": 18.9681,
+    "lon": 72.845,
+    "represents": 1,
+    "pincodes": [
+      "400010"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400011",
+    "locality": "Jacob Circle",
+    "landmark": "Jacob Circle, Mumbai, 400011, India",
+    "lat": 18.9833,
+    "lon": 72.8333,
+    "represents": 1,
+    "pincodes": [
+      "400011"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400012",
+    "locality": "Parel",
+    "landmark": "Parel, Mumbai, 400012, India",
+    "lat": 19.0,
+    "lon": 72.8333,
+    "represents": 1,
+    "pincodes": [
+      "400012"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400013",
+    "locality": "Delisle Road",
+    "landmark": "Delisle Road, Mumbai, 400013, India",
+    "lat": 19.0073,
+    "lon": 72.8421,
+    "represents": 3,
+    "pincodes": [
+      "400013",
+      "400014",
+      "400016"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400015",
+    "locality": "Sewri",
+    "landmark": "Sewri, Mumbai, 400015, India",
+    "lat": 19.0,
+    "lon": 72.85,
+    "represents": 1,
+    "pincodes": [
+      "400015"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400017",
+    "locality": "Dharavi",
+    "landmark": "Dharavi, Mumbai, 400017, India",
+    "lat": 19.05,
+    "lon": 72.8667,
+    "represents": 1,
+    "pincodes": [
+      "400017"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400018",
+    "locality": "Worli",
+    "landmark": "Worli, Mumbai, 400018, India",
+    "lat": 19.0167,
+    "lon": 72.8167,
+    "represents": 1,
+    "pincodes": [
+      "400018"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400019",
+    "locality": "Matunga",
+    "landmark": "Matunga, Mumbai, 400019, India",
+    "lat": 19.0333,
+    "lon": 72.85,
+    "represents": 2,
+    "pincodes": [
+      "400019",
+      "400022"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400020",
+    "locality": "Marine Lines",
+    "landmark": "Marine Lines, Mumbai, 400020, India",
+    "lat": 18.986,
+    "lon": 72.8259,
+    "represents": 5,
+    "pincodes": [
+      "400020",
+      "400024",
+      "400027",
+      "400028",
+      "400029"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400021",
+    "locality": "Nariman Point",
+    "landmark": "Nariman Point, Mumbai, 400021, India",
+    "lat": 18.9274,
+    "lon": 72.8241,
+    "represents": 1,
+    "pincodes": [
+      "400021"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400023",
+    "locality": "Hutatma Chowk",
+    "landmark": "Hutatma Chowk, Mumbai, 400023, India",
+    "lat": 19.0167,
+    "lon": 72.85,
+    "represents": 6,
+    "pincodes": [
+      "400023",
+      "400031",
+      "400036",
+      "400038",
+      "400039",
+      "400062"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400025",
+    "locality": "Prabhadevi",
+    "landmark": "Prabhadevi, Mumbai, 400025, India",
+    "lat": 19.0164,
+    "lon": 72.8294,
+    "represents": 1,
+    "pincodes": [
+      "400025"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400026",
+    "locality": "Cumballa Hill",
+    "landmark": "Cumballa Hill, Mumbai, 400026, India",
+    "lat": 18.9667,
+    "lon": 72.8,
+    "represents": 1,
+    "pincodes": [
+      "400026"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400030",
+    "locality": "PMG's Off",
+    "landmark": "PMG's Off, Mumbai, 400030, India",
+    "lat": 19.0031,
+    "lon": 72.8456,
+    "represents": 5,
+    "pincodes": [
+      "400030",
+      "400032",
+      "400034",
+      "400035",
+      "400037"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400033",
+    "locality": "Hutatma Chowk",
+    "landmark": "Hutatma Chowk, Mumbai, 400033, India",
+    "lat": 18.9896,
+    "lon": 72.8411,
+    "represents": 1,
+    "pincodes": [
+      "400033"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400041",
+    "locality": "Poonam Nagar - Jogeshwari",
+    "landmark": "Poonam Nagar - Jogeshwari, Mumbai, 400041, India",
+    "lat": 19.1429,
+    "lon": 72.8552,
+    "represents": 1,
+    "pincodes": [
+      "400041"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400073",
+    "locality": "Trombay",
+    "landmark": "Trombay, Mumbai, 400073, India",
+    "lat": 19.0337,
+    "lon": 72.9504,
+    "represents": 1,
+    "pincodes": [
+      "400073"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400090",
+    "locality": "Bangur Nagar",
+    "landmark": "Bangur Nagar, Mumbai, 400090, India",
+    "lat": 19.1636,
+    "lon": 72.8377,
+    "represents": 1,
+    "pincodes": [
+      "400090"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400601",
+    "locality": "Thane",
+    "landmark": "Thane, Mumbai, 400601, India",
+    "lat": 19.1941,
+    "lon": 73.0002,
+    "represents": 9,
+    "pincodes": [
+      "400601",
+      "400602",
+      "400603",
+      "400604",
+      "400605",
+      "400606",
+      "400607",
+      "400608",
+      "400614"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400611",
+    "locality": "Belapur (CBD)",
+    "landmark": "Belapur (CBD), Mumbai, 400611, India",
+    "lat": 19.023,
+    "lon": 73.0394,
+    "represents": 1,
+    "pincodes": [
+      "400611"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400701",
+    "locality": "Airoli",
+    "landmark": "Airoli, Mumbai, 400701, India",
+    "lat": 19.1167,
+    "lon": 72.9833,
+    "represents": 1,
+    "pincodes": [
+      "400701"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400702",
+    "locality": "Uran",
+    "landmark": "Uran, Mumbai, 400702, India",
+    "lat": 18.8975,
+    "lon": 72.9407,
+    "represents": 1,
+    "pincodes": [
+      "400702"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400703",
+    "locality": "Vashi",
+    "landmark": "Vashi, Mumbai, 400703, India",
+    "lat": 19.0787,
+    "lon": 73.0005,
+    "represents": 1,
+    "pincodes": [
+      "400703"
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "tier": 1,
+    "pincode": "400707",
+    "locality": "JNPT",
+    "landmark": "JNPT, Mumbai, 400707, India",
+    "lat": 18.9894,
+    "lon": 72.961,
+    "represents": 1,
+    "pincodes": [
+      "400707"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570001",
+    "locality": "Krishna Rajendra Circle",
+    "landmark": "Krishna Rajendra Circle, Mysuru, 570001, India",
+    "lat": 12.2371,
+    "lon": 76.5683,
+    "represents": 6,
+    "pincodes": [
+      "570001",
+      "570002",
+      "570005",
+      "570006",
+      "570007",
+      "570009"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570003",
+    "locality": "Naganahalli",
+    "landmark": "Naganahalli, Mysuru, 570003, India",
+    "lat": 12.3793,
+    "lon": 76.6528,
+    "represents": 1,
+    "pincodes": [
+      "570003"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570004",
+    "locality": "Chamundi Extension",
+    "landmark": "Chamundi Extension, Mysuru, 570004, India",
+    "lat": 12.2667,
+    "lon": 76.6833,
+    "represents": 1,
+    "pincodes": [
+      "570004"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570008",
+    "locality": "Danagalli",
+    "landmark": "Danagalli, Mysuru, 570008, India",
+    "lat": 12.1624,
+    "lon": 76.4954,
+    "represents": 1,
+    "pincodes": [
+      "570008"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570010",
+    "locality": "Chamundi Betta",
+    "landmark": "Chamundi Betta, Mysuru, 570010, India",
+    "lat": 12.2503,
+    "lon": 76.7826,
+    "represents": 1,
+    "pincodes": [
+      "570010"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570011",
+    "locality": "Siddarthanagar Nagar",
+    "landmark": "Siddarthanagar Nagar, Mysuru, 570011, India",
+    "lat": 12.3134,
+    "lon": 76.7455,
+    "represents": 5,
+    "pincodes": [
+      "570011",
+      "570012",
+      "570014",
+      "570015",
+      "570017"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570016",
+    "locality": "Hebbal Layout",
+    "landmark": "Hebbal Layout, Mysuru, 570016, India",
+    "lat": 12.3465,
+    "lon": 76.6335,
+    "represents": 1,
+    "pincodes": [
+      "570016"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570018",
+    "locality": "Belavadi",
+    "landmark": "Belavadi, Mysuru, 570018, India",
+    "lat": 12.3394,
+    "lon": 76.5729,
+    "represents": 1,
+    "pincodes": [
+      "570018"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570019",
+    "locality": "Ramanahalli",
+    "landmark": "Ramanahalli, Mysuru, 570019, India",
+    "lat": 12.2088,
+    "lon": 76.4421,
+    "represents": 1,
+    "pincodes": [
+      "570019"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570020",
+    "locality": "Brindavan Extension",
+    "landmark": "Brindavan Extension, Mysuru, 570020, India",
+    "lat": 12.3537,
+    "lon": 76.5368,
+    "represents": 6,
+    "pincodes": [
+      "570020",
+      "570022",
+      "570023",
+      "570025",
+      "570027",
+      "570029"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570026",
+    "locality": "Bogadi",
+    "landmark": "Bogadi, Mysuru, 570026, India",
+    "lat": 12.303,
+    "lon": 76.5982,
+    "represents": 1,
+    "pincodes": [
+      "570026"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "570028",
+    "locality": "Alanahalli",
+    "landmark": "Alanahalli, Mysuru, 570028, India",
+    "lat": 12.2824,
+    "lon": 76.657,
+    "represents": 1,
+    "pincodes": [
+      "570028"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "571130",
+    "locality": "Anandur",
+    "landmark": "Anandur, Mysuru, 571130, India",
+    "lat": 12.3854,
+    "lon": 76.5382,
+    "represents": 1,
+    "pincodes": [
+      "571130"
+    ]
+  },
+  {
+    "city": "Mysuru",
+    "tier": 2,
+    "pincode": "571311",
+    "locality": "Ayyarahalli",
+    "landmark": "Ayyarahalli, Mysuru, 571311, India",
+    "lat": 12.3032,
+    "lon": 76.7291,
+    "represents": 1,
+    "pincodes": [
+      "571311"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "201008",
+    "locality": "Vidyut Nagar Gautam Buddha Nagar",
+    "landmark": "Vidyut Nagar Gautam Buddha Nagar, Noida, 201008, India",
+    "lat": 28.5806,
+    "lon": 77.6045,
+    "represents": 1,
+    "pincodes": [
+      "201008"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "201304",
+    "locality": "Maharishi Nagar",
+    "landmark": "Maharishi Nagar, Noida, 201304, India",
+    "lat": 28.4014,
+    "lon": 77.535,
+    "represents": 1,
+    "pincodes": [
+      "201304"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "201305",
+    "locality": "Noida",
+    "landmark": "Noida, Noida, 201305, India",
+    "lat": 28.5401,
+    "lon": 77.4077,
+    "represents": 1,
+    "pincodes": [
+      "201305"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "201306",
+    "locality": "I.A. Surajpur",
+    "landmark": "I.A. Surajpur, Noida, 201306, India",
+    "lat": 28.5506,
+    "lon": 77.4375,
+    "represents": 1,
+    "pincodes": [
+      "201306"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "201307",
+    "locality": "Noida",
+    "landmark": "Noida, Noida, 201307, India",
+    "lat": 28.5929,
+    "lon": 77.4021,
+    "represents": 1,
+    "pincodes": [
+      "201307"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "201309",
+    "locality": "Noida",
+    "landmark": "Noida, Noida, 201309, India",
+    "lat": 28.6302,
+    "lon": 77.3918,
+    "represents": 1,
+    "pincodes": [
+      "201309"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "201310",
+    "locality": "Alpha Greater Noida",
+    "landmark": "Alpha Greater Noida, Noida, 201310, India",
+    "lat": 28.4793,
+    "lon": 77.5734,
+    "represents": 1,
+    "pincodes": [
+      "201310"
+    ]
+  },
+  {
+    "city": "Noida",
+    "tier": 2,
+    "pincode": "203207",
+    "locality": "Dadri",
+    "landmark": "Dadri, Noida, 203207, India",
+    "lat": 28.5459,
+    "lon": 77.6754,
+    "represents": 1,
+    "pincodes": [
+      "203207"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "410301",
+    "locality": "Khandala",
+    "landmark": "Khandala, Pune, 410301, India",
+    "lat": 18.7589,
+    "lon": 73.3694,
+    "represents": 2,
+    "pincodes": [
+      "410301",
+      "410302"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "410401",
+    "locality": "Ambavane",
+    "landmark": "Ambavane, Pune, 410401, India",
+    "lat": 18.7528,
+    "lon": 73.4057,
+    "represents": 1,
+    "pincodes": [
+      "410401"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "410402",
+    "locality": "Ins Shivaji lonavale",
+    "landmark": "Ins Shivaji lonavale, Pune, 410402, India",
+    "lat": 18.5716,
+    "lon": 74.07,
+    "represents": 51,
+    "pincodes": [
+      "410402",
+      "410403",
+      "410405",
+      "410406",
+      "410501",
+      "410504",
+      "410505",
+      "410507",
+      "410508",
+      "410509",
+      "410510",
+      "410511",
+      "410512",
+      "410513",
+      "410515",
+      "410516",
+      "411025",
+      "411031",
+      "411034",
+      "411039",
+      "412105",
+      "412106",
+      "412107",
+      "412108",
+      "412110",
+      "412202",
+      "412203",
+      "412205",
+      "412206",
+      "412207",
+      "412212",
+      "412214",
+      "412215",
+      "412219",
+      "412305",
+      "412311",
+      "412402",
+      "412408",
+      "412411",
+      "412412",
+      "413102",
+      "413103",
+      "413104",
+      "413106",
+      "413110",
+      "413114",
+      "413115",
+      "413116",
+      "413120",
+      "413130",
+      "413133"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "410502",
+    "locality": "Anjanavale",
+    "landmark": "Anjanavale, Pune, 410502, India",
+    "lat": 19.2377,
+    "lon": 73.7923,
+    "represents": 1,
+    "pincodes": [
+      "410502"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "410503",
+    "locality": "Chandoli Bk",
+    "landmark": "Chandoli Bk, Pune, 410503, India",
+    "lat": 19.0044,
+    "lon": 73.9435,
+    "represents": 1,
+    "pincodes": [
+      "410503"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "410506",
+    "locality": "Adhale Bk",
+    "landmark": "Adhale Bk, Pune, 410506, India",
+    "lat": 18.735,
+    "lon": 73.6756,
+    "represents": 1,
+    "pincodes": [
+      "410506"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411001",
+    "locality": "C D a (o)",
+    "landmark": "C D a (o), Pune, 411001, India",
+    "lat": 18.5372,
+    "lon": 73.8551,
+    "represents": 5,
+    "pincodes": [
+      "411001",
+      "411002",
+      "411007",
+      "411008",
+      "411009"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411003",
+    "locality": "Ammunition Factory khadki",
+    "landmark": "Ammunition Factory khadki, Pune, 411003, India",
+    "lat": 18.5635,
+    "lon": 73.852,
+    "represents": 1,
+    "pincodes": [
+      "411003"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411004",
+    "locality": "A.R. shala",
+    "landmark": "A.R. shala, Pune, 411004, India",
+    "lat": 18.5148,
+    "lon": 73.8358,
+    "represents": 1,
+    "pincodes": [
+      "411004"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411005",
+    "locality": "Congress House road",
+    "landmark": "Congress House road, Pune, 411005, India",
+    "lat": 18.5247,
+    "lon": 73.8471,
+    "represents": 1,
+    "pincodes": [
+      "411005"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411006",
+    "locality": "Yerwada",
+    "landmark": "Yerwada, Pune, 411006, India",
+    "lat": 18.5459,
+    "lon": 73.8855,
+    "represents": 1,
+    "pincodes": [
+      "411006"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411011",
+    "locality": "Kasba Peth",
+    "landmark": "Kasba Peth, Pune, 411011, India",
+    "lat": 18.5732,
+    "lon": 73.8739,
+    "represents": 6,
+    "pincodes": [
+      "411011",
+      "411013",
+      "411016",
+      "411017",
+      "411018",
+      "411019"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411012",
+    "locality": "Dapodi Bazar",
+    "landmark": "Dapodi Bazar, Pune, 411012, India",
+    "lat": 18.5788,
+    "lon": 73.8263,
+    "represents": 1,
+    "pincodes": [
+      "411012"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411014",
+    "locality": "Dukirkline",
+    "landmark": "Dukirkline, Pune, 411014, India",
+    "lat": 18.5685,
+    "lon": 73.9158,
+    "represents": 1,
+    "pincodes": [
+      "411014"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411015",
+    "locality": "Dhanori",
+    "landmark": "Dhanori, Pune, 411015, India",
+    "lat": 18.5722,
+    "lon": 73.8796,
+    "represents": 1,
+    "pincodes": [
+      "411015"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411020",
+    "locality": "Range Hills",
+    "landmark": "Range Hills, Pune, 411020, India",
+    "lat": 18.4769,
+    "lon": 74.3505,
+    "represents": 6,
+    "pincodes": [
+      "411020",
+      "411022",
+      "411023",
+      "411024",
+      "411026",
+      "411027"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411021",
+    "locality": "Armament",
+    "landmark": "Armament, Pune, 411021, India",
+    "lat": 18.5131,
+    "lon": 73.7825,
+    "represents": 1,
+    "pincodes": [
+      "411021"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411028",
+    "locality": "Hadapsar",
+    "landmark": "Hadapsar, Pune, 411028, India",
+    "lat": 18.5167,
+    "lon": 73.9167,
+    "represents": 1,
+    "pincodes": [
+      "411028"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411030",
+    "locality": "Lokmanyanagar",
+    "landmark": "Lokmanyanagar, Pune, 411030, India",
+    "lat": 18.8199,
+    "lon": 75.0311,
+    "represents": 4,
+    "pincodes": [
+      "411030",
+      "411032",
+      "411037",
+      "411038"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411035",
+    "locality": "Akurdi",
+    "landmark": "Akurdi, Pune, 411035, India",
+    "lat": 18.6532,
+    "lon": 73.7896,
+    "represents": 1,
+    "pincodes": [
+      "411035"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411036",
+    "locality": "Mundhva",
+    "landmark": "Mundhva, Pune, 411036, India",
+    "lat": 18.5348,
+    "lon": 73.9306,
+    "represents": 1,
+    "pincodes": [
+      "411036"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411040",
+    "locality": "Afmc",
+    "landmark": "Afmc, Pune, 411040, India",
+    "lat": 18.5789,
+    "lon": 73.8532,
+    "represents": 7,
+    "pincodes": [
+      "411040",
+      "411041",
+      "411042",
+      "411043",
+      "411044",
+      "411046",
+      "411048"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411045",
+    "locality": "Baner Gaon",
+    "landmark": "Baner Gaon, Pune, 411045, India",
+    "lat": 18.5586,
+    "lon": 73.7794,
+    "represents": 1,
+    "pincodes": [
+      "411045"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411047",
+    "locality": "Lohogaon",
+    "landmark": "Lohogaon, Pune, 411047, India",
+    "lat": 18.5992,
+    "lon": 73.927,
+    "represents": 1,
+    "pincodes": [
+      "411047"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "411051",
+    "locality": "Anandnagar",
+    "landmark": "Anandnagar, Pune, 411051, India",
+    "lat": 18.6032,
+    "lon": 73.7626,
+    "represents": 4,
+    "pincodes": [
+      "411051",
+      "411052",
+      "411057",
+      "411058"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412101",
+    "locality": "Cod Dehu road",
+    "landmark": "Cod Dehu road, Pune, 412101, India",
+    "lat": 18.6586,
+    "lon": 74.3585,
+    "represents": 2,
+    "pincodes": [
+      "412101",
+      "412102"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412103",
+    "locality": "Korhale Bk",
+    "landmark": "Korhale Bk, Pune, 412103, India",
+    "lat": 18.1296,
+    "lon": 74.3619,
+    "represents": 1,
+    "pincodes": [
+      "412103"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412104",
+    "locality": "Gurholi",
+    "landmark": "Gurholi, Pune, 412104, India",
+    "lat": 18.3923,
+    "lon": 74.1545,
+    "represents": 1,
+    "pincodes": [
+      "412104"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412109",
+    "locality": "Dehu",
+    "landmark": "Dehu, Pune, 412109, India",
+    "lat": 18.7185,
+    "lon": 73.7664,
+    "represents": 1,
+    "pincodes": [
+      "412109"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412114",
+    "locality": "Chikhlee",
+    "landmark": "Chikhlee, Pune, 412114, India",
+    "lat": 18.6848,
+    "lon": 73.7971,
+    "represents": 1,
+    "pincodes": [
+      "412114"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412201",
+    "locality": "Alandi Chorachi",
+    "landmark": "Alandi Chorachi, Pune, 412201, India",
+    "lat": 18.4837,
+    "lon": 74.0265,
+    "represents": 1,
+    "pincodes": [
+      "412201"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412204",
+    "locality": "Babhurdi",
+    "landmark": "Babhurdi, Pune, 412204, India",
+    "lat": 18.2627,
+    "lon": 74.4223,
+    "represents": 1,
+    "pincodes": [
+      "412204"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412208",
+    "locality": "Burunjwadi",
+    "landmark": "Burunjwadi, Pune, 412208, India",
+    "lat": 18.6936,
+    "lon": 74.1381,
+    "represents": 1,
+    "pincodes": [
+      "412208"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412209",
+    "locality": "Bhamburde",
+    "landmark": "Bhamburde, Pune, 412209, India",
+    "lat": 18.7537,
+    "lon": 74.2443,
+    "represents": 1,
+    "pincodes": [
+      "412209"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412210",
+    "locality": "Golegaon",
+    "landmark": "Golegaon, Pune, 412210, India",
+    "lat": 18.8276,
+    "lon": 74.3747,
+    "represents": 1,
+    "pincodes": [
+      "412210"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412211",
+    "locality": "Alegaon",
+    "landmark": "Alegaon, Pune, 412211, India",
+    "lat": 18.6194,
+    "lon": 74.3342,
+    "represents": 1,
+    "pincodes": [
+      "412211"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412213",
+    "locality": "Dapode",
+    "landmark": "Dapode, Pune, 412213, India",
+    "lat": 19.3846,
+    "lon": 77.6251,
+    "represents": 1,
+    "pincodes": [
+      "412213"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412216",
+    "locality": "Fulgaon",
+    "landmark": "Fulgaon, Pune, 412216, India",
+    "lat": 18.6457,
+    "lon": 74.0591,
+    "represents": 1,
+    "pincodes": [
+      "412216"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412218",
+    "locality": "Amdabad",
+    "landmark": "Amdabad, Pune, 412218, India",
+    "lat": 18.8385,
+    "lon": 74.2279,
+    "represents": 1,
+    "pincodes": [
+      "412218"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412220",
+    "locality": "Karegaon",
+    "landmark": "Karegaon, Pune, 412220, India",
+    "lat": 18.7816,
+    "lon": 74.2987,
+    "represents": 1,
+    "pincodes": [
+      "412220"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412301",
+    "locality": "Bhivadi",
+    "landmark": "Bhivadi, Pune, 412301, India",
+    "lat": 18.3383,
+    "lon": 74.4945,
+    "represents": 1,
+    "pincodes": [
+      "412301"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412303",
+    "locality": "Belsar",
+    "landmark": "Belsar, Pune, 412303, India",
+    "lat": 18.4498,
+    "lon": 73.9835,
+    "represents": 1,
+    "pincodes": [
+      "412303"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412304",
+    "locality": "Morgaon",
+    "landmark": "Morgaon, Pune, 412304, India",
+    "lat": 18.5796,
+    "lon": 74.4154,
+    "represents": 3,
+    "pincodes": [
+      "412304",
+      "412307",
+      "412312"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412306",
+    "locality": "Hol",
+    "landmark": "Hol, Pune, 412306, India",
+    "lat": 18.5167,
+    "lon": 73.5167,
+    "represents": 1,
+    "pincodes": [
+      "412306"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412308",
+    "locality": "Phursungi",
+    "landmark": "Phursungi, Pune, 412308, India",
+    "lat": 18.4727,
+    "lon": 73.978,
+    "represents": 1,
+    "pincodes": [
+      "412308"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412401",
+    "locality": "Arvi",
+    "landmark": "Arvi, Pune, 412401, India",
+    "lat": 18.7581,
+    "lon": 74.047,
+    "represents": 1,
+    "pincodes": [
+      "412401"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412403",
+    "locality": "Dhamari",
+    "landmark": "Dhamari, Pune, 412403, India",
+    "lat": 18.8307,
+    "lon": 74.0537,
+    "represents": 1,
+    "pincodes": [
+      "412403"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412404",
+    "locality": "Audar",
+    "landmark": "Audar, Pune, 412404, India",
+    "lat": 18.8949,
+    "lon": 73.8128,
+    "represents": 1,
+    "pincodes": [
+      "412404"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412405",
+    "locality": "Avsari Kh",
+    "landmark": "Avsari Kh, Pune, 412405, India",
+    "lat": 19.1847,
+    "lon": 73.8803,
+    "represents": 2,
+    "pincodes": [
+      "412405",
+      "412406"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412409",
+    "locality": "Chilewadi",
+    "landmark": "Chilewadi, Pune, 412409, India",
+    "lat": 19.2885,
+    "lon": 73.9118,
+    "represents": 1,
+    "pincodes": [
+      "412409"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "412410",
+    "locality": "Ane",
+    "landmark": "Ane, Pune, 412410, India",
+    "lat": 19.1667,
+    "lon": 74.2333,
+    "represents": 1,
+    "pincodes": [
+      "412410"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "413105",
+    "locality": "Bhigwan R s",
+    "landmark": "Bhigwan R s, Pune, 413105, India",
+    "lat": 18.1724,
+    "lon": 74.7905,
+    "represents": 1,
+    "pincodes": [
+      "413105"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "413132",
+    "locality": "Agoti",
+    "landmark": "Agoti, Pune, 413132, India",
+    "lat": 18.3936,
+    "lon": 74.5945,
+    "represents": 1,
+    "pincodes": [
+      "413132"
+    ]
+  },
+  {
+    "city": "Pune",
+    "tier": 1,
+    "pincode": "413801",
+    "locality": "Beam Wirelee station",
+    "landmark": "Beam Wirelee station, Pune, 413801, India",
+    "lat": 18.4934,
+    "lon": 74.5484,
+    "represents": 2,
+    "pincodes": [
+      "413801",
+      "413802"
+    ]
+  },
+  {
+    "city": "Surat",
+    "tier": 2,
+    "pincode": "394160",
+    "locality": "Mandvi",
+    "landmark": "Mandvi, Surat, 394160, India",
+    "lat": 21.297,
+    "lon": 73.3162,
+    "represents": 1,
+    "pincodes": [
+      "394160"
+    ]
+  },
+  {
+    "city": "Surat",
+    "tier": 2,
+    "pincode": "394185",
+    "locality": "Kamrej",
+    "landmark": "Kamrej, Surat, 394185, India",
+    "lat": 21.2623,
+    "lon": 73.0694,
+    "represents": 9,
+    "pincodes": [
+      "394185",
+      "394210",
+      "394250",
+      "394445",
+      "394601",
+      "395001",
+      "395004",
+      "395006",
+      "395009"
+    ]
+  },
+  {
+    "city": "Surat",
+    "tier": 2,
+    "pincode": "394315",
+    "locality": "Palsana",
+    "landmark": "Palsana, Surat, 394315, India",
+    "lat": 21.0827,
+    "lon": 72.9862,
+    "represents": 1,
+    "pincodes": [
+      "394315"
+    ]
+  },
+  {
+    "city": "Surat",
+    "tier": 2,
+    "pincode": "394410",
+    "locality": "Mangrol",
+    "landmark": "Mangrol, Surat, 394410, India",
+    "lat": 21.4833,
+    "lon": 73.1167,
+    "represents": 1,
+    "pincodes": [
+      "394410"
+    ]
+  },
+  {
+    "city": "Surat",
+    "tier": 2,
+    "pincode": "394510",
+    "locality": "Chorasi",
+    "landmark": "Chorasi, Surat, 394510, India",
+    "lat": 21.186,
+    "lon": 72.7641,
+    "represents": 1,
+    "pincodes": [
+      "394510"
+    ]
+  },
+  {
+    "city": "Surat",
+    "tier": 2,
+    "pincode": "394540",
+    "locality": "Olpad",
+    "landmark": "Olpad, Surat, 394540, India",
+    "lat": 21.3644,
+    "lon": 72.715,
+    "represents": 1,
+    "pincodes": [
+      "394540"
+    ]
+  },
+  {
+    "city": "Hyderabad",
+    "tier": 1,
+    "pincode": "500032",
+    "locality": "Gachibowli",
+    "landmark": "Gachibowli, Hyderabad, 500032, India",
+    "lat": 17.44,
+    "lon": 78.348
+  },
+  {
+    "city": "Hyderabad",
+    "tier": 1,
+    "pincode": "500034",
+    "locality": "Banjara Hills",
+    "landmark": "Banjara Hills, Hyderabad, 500034, India",
+    "lat": 17.412,
+    "lon": 78.443
+  },
+  {
+    "city": "Chennai",
+    "tier": 1,
+    "pincode": "600040",
+    "locality": "Anna Nagar",
+    "landmark": "Anna Nagar, Chennai, 600040, India",
+    "lat": 13.087,
+    "lon": 80.215
+  },
+  {
+    "city": "Chennai",
+    "tier": 1,
+    "pincode": "600042",
+    "locality": "Velachery",
+    "landmark": "Velachery, Chennai, 600042, India",
+    "lat": 12.978,
+    "lon": 80.22
+  },
+  {
+    "city": "Ahmedabad",
+    "tier": 1,
+    "pincode": "380054",
+    "locality": "Bodakdev",
+    "landmark": "Bodakdev, Ahmedabad, 380054, India",
+    "lat": 23.044,
+    "lon": 72.51
+  },
+  {
+    "city": "Ahmedabad",
+    "tier": 1,
+    "pincode": "380009",
+    "locality": "Navrangpura",
+    "landmark": "Navrangpura, Ahmedabad, 380009, India",
+    "lat": 23.034,
+    "lon": 72.554
+  },
+  {
+    "city": "Vadodara",
+    "tier": 2,
+    "pincode": "390007",
+    "locality": "Alkapuri",
+    "landmark": "Alkapuri, Vadodara, 390007, India",
+    "lat": 22.31,
+    "lon": 73.181
+  },
+  {
+    "city": "Lucknow",
+    "tier": 2,
+    "pincode": "226010",
+    "locality": "Gomti Nagar",
+    "landmark": "Gomti Nagar, Lucknow, 226010, India",
+    "lat": 26.846,
+    "lon": 81.001
+  },
+  {
+    "city": "Coimbatore",
+    "tier": 2,
+    "pincode": "641002",
+    "locality": "RS Puram",
+    "landmark": "RS Puram, Coimbatore, 641002, India",
+    "lat": 11.012,
+    "lon": 76.962
+  },
+  {
+    "city": "Nagpur",
+    "tier": 2,
+    "pincode": "440010",
+    "locality": "Dharampeth",
+    "landmark": "Dharampeth, Nagpur, 440010, India",
+    "lat": 21.146,
+    "lon": 79.073
+  },
+  {
+    "city": "Visakhapatnam",
+    "tier": 2,
+    "pincode": "530017",
+    "locality": "MVP Colony",
+    "landmark": "MVP Colony, Visakhapatnam, 530017, India",
+    "lat": 17.745,
+    "lon": 83.337
+  },
+  {
+    "city": "Kanpur",
+    "tier": 2,
+    "pincode": "208001",
+    "locality": "Civil Lines",
+    "landmark": "Civil Lines, Kanpur, 208001, India",
+    "lat": 26.475,
+    "lon": 80.33
+  },
+  {
+    "city": "Patna",
+    "tier": 2,
+    "pincode": "800013",
+    "locality": "Patliputra",
+    "landmark": "Patliputra, Patna, 800013, India",
+    "lat": 25.633,
+    "lon": 85.087
+  }
 ]
