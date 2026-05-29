@@ -21,6 +21,7 @@ Every scrape run for this platform is listed below (newest managed by
 ## Runs
 
 <!-- runs:start -->
+- [[instamart-2026-05-29-1200]] — 2026-05-29 · verdict OK <!-- run -->
 - [[instamart-2026-05-29-0900]] — 2026-05-29 · verdict OK <!-- run -->
 - [[instamart-2026-05-28-1600]] — 2026-05-28 · verdict OK <!-- run -->
 - [[instamart-2026-05-28-1200]] — 2026-05-28 · verdict OK <!-- run -->
