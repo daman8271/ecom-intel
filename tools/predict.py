@@ -678,7 +678,7 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
 
     # ---- title + headline ----
     t = ws.cell(1, 1, "Jivo × %s — Leadership View" % pname)
-    t.font = Font(name="Segoe UI Semibold", size=20, color=INK)
+    t.font = Font(name="Calibri", size=20, bold=True, color=INK)
     t.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=10)
     ws.row_dimensions[1].height = 36
@@ -687,7 +687,7 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
                 "%d SKU(s) at stock-out risk    ·    %s"
                 % (instock_pct, avg_disc, n_risk, when))
     h = ws.cell(2, 1, headline)
-    h.font = Font(name="Segoe UI", size=11, color=MUTED)
+    h.font = Font(name="Calibri", size=11, color=MUTED)
     h.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=10)
     ws.row_dimensions[2].height = 22
@@ -697,19 +697,32 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
         ws.cell(3, c).fill = PatternFill("solid", fgColor=RULE)
     ws.row_dimensions[3].height = 3
 
+    # text-based trend indicator that replaces the old faux-sparklines
+    def _delta(idx):
+        if not have_trend or len(trend_rows) < 2:
+            return ""
+        vals = [t[idx] for t in trend_rows if t[idx] is not None]
+        if len(vals) < 2:
+            return ""
+        d = vals[-1] - vals[0]
+        arrow = "▲" if d > 0 else ("▼" if d < 0 else "•")
+        return "  ·  %s %.1fpp / %d runs" % (arrow, abs(d), len(trend_rows))
+    instk_delta_txt = _delta(1)
+    disc_delta_txt = _delta(2)
+
     # ---- KPI strip: 5 cards across (each spans a 2-col pair) ----
     if HAS_SELLER and NATIONAL:
         deep_pct = (100.0 * deep / max(1, len(discs)))
         kpis = [
             ("CATALOG LIVE", "%.0f%%" % instock_pct,
-             "%d of %d ASINs" % (n_in, n_total),
+             "%d of %d ASINs%s" % (n_in, n_total, instk_delta_txt),
              status_color(instock_pct, 70, 55)),
             ("NON-OIL LIVE",
              ("%.0f%%" % non_oil_pct) if non_oil_pct is not None else "—",
              ("%d of %d non-oil" % (non_oil_in, non_oil_total)) if non_oil_total else "",
              status_color(non_oil_pct, 50, 30)),
             ("AVG DISCOUNT", "%.0f%%" % avg_disc,
-             "across %d priced" % len(discs),
+             "across %d priced%s" % (len(discs), disc_delta_txt),
              POS if avg_disc < 30 else (WARN if avg_disc < 40 else NEG)),
             ("DEEP DISC ≥50%", "%d" % deep,
              "%.0f%% of priced" % deep_pct,
@@ -721,9 +734,11 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
     else:
         kpis = [
             ("CATALOG SKUs", "%d" % n_total, "tracked this run", INK),
-            ("IN STOCK", "%.0f%%" % instock_pct, "%d of %d" % (n_in, n_in + n_oos),
+            ("IN STOCK", "%.0f%%" % instock_pct,
+             "%d of %d%s" % (n_in, n_in + n_oos, instk_delta_txt),
              status_color(instock_pct, 70, 50)),
-            ("AVG DISCOUNT", "%.0f%%" % avg_disc, "%d priced" % len(discs),
+            ("AVG DISCOUNT", "%.0f%%" % avg_disc,
+             "%d priced%s" % (len(discs), disc_delta_txt),
              POS if avg_disc < 30 else WARN),
             ("DEEP DISC ≥50%", "%d" % deep, "of %d priced" % len(discs),
              NEG if deep >= 30 else WARN),
@@ -757,15 +772,15 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
                 bottom=SIDE_THIN if rr == 7 else None)
         ws.merge_cells(start_row=4, start_column=c0, end_row=4, end_column=c1)
         lc = ws.cell(4, c0, label)
-        lc.font = Font(name="Segoe UI Semibold", size=9, color=MUTED)
+        lc.font = Font(name="Calibri", size=9, bold=True, color=MUTED)
         lc.alignment = Alignment(horizontal="left", vertical="bottom", indent=1)
         ws.merge_cells(start_row=5, start_column=c0, end_row=5, end_column=c1)
         vc = ws.cell(5, c0, value)
-        vc.font = Font(name="Segoe UI", size=22, bold=True, color=color)
+        vc.font = Font(name="Calibri", size=22, bold=True, color=color)
         vc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
         ws.merge_cells(start_row=6, start_column=c0, end_row=6, end_column=c1)
         sc_cell = ws.cell(6, c0, sub or "")
-        sc_cell.font = Font(name="Segoe UI", size=9, color=MUTED)
+        sc_cell.font = Font(name="Calibri", size=9, color=MUTED)
         sc_cell.alignment = Alignment(horizontal="left", vertical="center", indent=1)
         ws.merge_cells(start_row=7, start_column=c0, end_row=7, end_column=c1)
         # sparkline LineCharts overlay row 7 (added below)
@@ -774,7 +789,7 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
     def section_header(row, text):
         ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
         c = ws.cell(row, 1, text.upper())
-        c.font = Font(name="Segoe UI Semibold", size=12, color="FFFFFF")
+        c.font = Font(name="Calibri", size=12, bold=True, color="FFFFFF")
         c.fill = PatternFill("solid", fgColor=BRAND)
         c.alignment = Alignment(horizontal="left", vertical="center", indent=1)
         ws.row_dimensions[row].height = 22
@@ -782,11 +797,11 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
     # ---- hidden chart-source data (rows 100+) ----
     DATA0 = 100
     ws.cell(DATA0 - 1, 1, "Chart source data (auto-generated)").font = Font(
-        name="Segoe UI", size=9, italic=True, color=MUTED)
+        name="Calibri", size=9, italic=True, color=MUTED)
 
     def put(top, headers, drows):
         for j, hh in enumerate(headers, 1):
-            ws.cell(top, j, hh).font = Font(name="Segoe UI Semibold", size=9, color=MUTED)
+            ws.cell(top, j, hh).font = Font(name="Calibri", size=9, bold=True, color=MUTED)
         for i, rw in enumerate(drows):
             for j, v in enumerate(rw, 1):
                 ws.cell(top + 1 + i, j, v)
@@ -985,7 +1000,7 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
             ws.cell(rr, cc).fill = fill
         ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=10)
         cc = ws.cell(rr, 1, "▸  " + msg)
-        cc.font = Font(name="Segoe UI", size=11, color=INK)
+        cc.font = Font(name="Calibri", size=11, color=INK)
         cc.alignment = Alignment(horizontal="left", vertical="center", indent=1, wrap_text=True)
         span_chars = 160
         lines = max(1, (len(msg) + 3 + span_chars - 1) // span_chars)
@@ -997,38 +1012,14 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
     ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=10)
     fc = ws.cell(rr, 1,
                  "Captured %s  ·  %d ASINs scraped  ·  deterministic, no LLM" % (when, n_total))
-    fc.font = Font(name="Segoe UI", size=9, italic=True, color=MUTED)
+    fc.font = Font(name="Calibri", size=9, italic=True, color=MUTED)
     fc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
 
-    # ---- faux-sparklines: openpyxl can't write native Excel sparklines, so we
-    # overlay tiny LineCharts on row 7 of each KPI card (axes deleted, no border).
-    def add_sparkline(anchor, src_col, color):
-        if not have_trend or t_hdr is None:
-            return
-        sp = LineChart()
-        sp.add_data(Reference(ws, min_col=src_col, min_row=t_hdr + 1, max_row=t_last),
-                    titles_from_data=False)
-        sp.legend = None
-        try: sp.x_axis.delete = True
-        except Exception: pass
-        try: sp.y_axis.delete = True
-        except Exception: pass
-        sp.height, sp.width = 1.6, 5.2
-        try:
-            sp.graphical_properties = GraphicalProperties()
-            sp.graphical_properties.line = LineProperties(noFill=True)
-        except Exception: pass
-        s = sp.series[0]
-        gp = GraphicalProperties()
-        gp.line = LineProperties(solidFill=color, w=22000)
-        s.graphicalProperties = gp
-        s.smooth = True
-        ws.add_chart(sp, anchor)
-
-    # KPI #1 (CATALOG/IN STOCK) gets the in-stock-% sparkline → anchor A7
-    # KPI #3 (AVG DISCOUNT) gets the avg-disc-% sparkline → anchor E7
-    add_sparkline("A7", 2, POS)
-    add_sparkline("E7", 3, WARN)
+    # NOTE: we used to embed tiny LineCharts as faux-sparklines (openpyxl has no
+    # native sparkline writer). They produced charts that some mobile viewers
+    # flagged as malformed because both axes were deleted. The trend signal is
+    # now baked into the KPI sub-row text ("▲/▼ X.Xpp vs N runs ago"), and the
+    # full trend lives in the MOMENTUM line chart below — no extra chart objects.
 
     # ---- hide the source-data block ----
     for r in range(DATA0 - 1, ws.max_row + 1):
