@@ -26,12 +26,14 @@ cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 echo "[$RUN_ID] reviewing $P ..."
 python3 "$DIR/tools/review.py" "$P" "$RUN_ID" || true
 
-# ---- Vault: Obsidian memory note + daily/weekly/monthly rollups + ML history ----
-echo "[$RUN_ID] writing vault note ..."
-python3 "$DIR/tools/vault_note.py" "$P" "$RUN_ID" || echo "vault_note failed (non-fatal)" >&2
-python3 "$DIR/tools/vault_rollup.py" daily   || true
-python3 "$DIR/tools/vault_rollup.py" weekly  || true
-python3 "$DIR/tools/vault_rollup.py" monthly || true
+# ---- Vault: append this run's COMPLETE rows to data/<P>/history.csv. ----
+# Note generation is NOT done here: the whole Obsidian graph (complete run notes +
+# SKU/city/pincode hubs + MOCs + rollups + index) is rebuilt once per sweep by
+# tools/vault_build.py in run_all.sh, after all platforms finish. So we only persist
+# the machine-readable rows here (--csv-only) — the vault is complete-by-construction
+# and never holds a summarized note. (Drop --csv-only to also write a standalone note.)
+echo "[$RUN_ID] appending history.csv ..."
+python3 "$DIR/tools/vault_note.py" "$P" "$RUN_ID" --csv-only || echo "vault_note failed (non-fatal)" >&2
 
 # ---- Telegram delivery (best-effort; MUST NOT fail the run) ----
 # Runs in a subshell with errexit off and a trailing `|| true`, so any
