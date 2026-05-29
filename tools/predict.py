@@ -499,18 +499,21 @@ def median(xs):
 def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
                     runstats, runs, history_rows, watch):
     """
-    Insert a chart-driven 'Leadership View' as the FIRST sheet: the handful of
-    things the e-com head needs at a glance and nothing else --
-        - catalog availability (in stock vs out)        : donut
-        - discount depth / price-erosion exposure        : bar
-        - buy-box control (who sells Jivo)               : bar  (Amazon)
-          -> falls back to "where Jivo is live by city"        (per-pincode)
-        - availability & discount trend over recent runs : line
-    plus a KPI strip and the top things to act on.
+    Modern 'Leadership View' front sheet. Uses an ink + sage palette (not the
+    saturated Excel defaults), Segoe UI typography, KPI cards with hairline
+    borders, faux-sparklines (openpyxl can't write native sparklines), and
+    themed charts with gridlines + chart border turned off.
 
-    Chart source data is written into a clearly-labelled block lower in the same
-    sheet; the charts reference it. Platform-agnostic and defensive -- the caller
-    wraps this so a hiccup never costs us the Predictions sheet.
+    For Amazon (HAS_SELLER + single-location NATIONAL) we surface the KPIs that
+    actually matter to the e-com head:
+       * Catalog Live %    * Non-Oil Live % (the brand-extension health)
+       * Avg Discount      * Deep Discount count
+       * Buy-Box top share (single-seller concentration risk)
+    plus a "Live % by category (10 worst)" bar and a Jivo-vs-Sano median-disc
+    bar when Sano competitor rows are present in the scrape.
+
+    For per-pincode platforms we keep "where Jivo is live by city" + the original
+    KPI set so blinkit//flipkart-minutes still render correctly.
     """
     from openpyxl.chart import DoughnutChart, BarChart, LineChart, Reference
     from openpyxl.chart.label import DataLabelList
@@ -518,72 +521,129 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
     from openpyxl.chart.marker import Marker
     from openpyxl.chart.shapes import GraphicalProperties
     from openpyxl.drawing.line import LineProperties
+    import statistics
 
     if not result_rows:
         return
 
     pname = platform.replace("-", " ").title()
     HAS_SELLER = any("seller" in r for r in result_rows)
-    GREEN, AMBER, REDC = "008B3A", "E69138", "CC0000"
+    NATIONAL = len({(r.get("city") or "", r.get("pincode") or "") for r in result_rows}) <= 1
 
-    # ---- availability breakdown (in / out / not-found-or-blocked) ----
+    # --- modern palette (anchored on Jivo green but with separate semantic colors)
+    BRAND      = "1F8A4C"   # darkened Jivo green, used for brand chrome only
+    BRAND_SOFT = "D6F0E0"
+    INK        = "111827"   # near-black, primary text
+    MUTED      = "6B7280"   # secondary text
+    RULE       = "E5E7EB"   # hairline dividers, card borders
+    CANVAS     = "F9FAFB"   # subtle stripe / banding
+    POS        = "047857"   # success
+    WARN       = "B45309"   # amber
+    NEG        = "B91C1C"   # red, used sparingly
+    ACCENT     = "0F766E"   # competitor / "other" series (neutral teal)
+    NEUTRAL    = "9CA3AF"
+
+    def status_color(v, good_ge, warn_ge):
+        if v is None:
+            return MUTED
+        if v >= good_ge:
+            return POS
+        if v >= warn_ge:
+            return WARN
+        return NEG
+
+    # ---- availability breakdown ----
     n_in = n_oos = n_nf = 0
     for r in result_rows:
         at = str(r.get("availability_text") or "").upper()
         if at in ("NOT FOUND", "BLOCKED"):
-            n_nf += 1
-            continue
+            n_nf += 1; continue
         st = in_stock_of(r)
-        if st is True:
-            n_in += 1
-        elif st is False:
-            n_oos += 1
-        else:
-            n_nf += 1
+        if st is True: n_in += 1
+        elif st is False: n_oos += 1
+        else: n_nf += 1
     n_total = len(result_rows)
     instock_pct = (100.0 * n_in / (n_in + n_oos)) if (n_in + n_oos) else 0.0
 
     # ---- discount distribution (in-stock, priced SKUs) ----
-    bands = [("0-20% off", 0, 20), ("20-40% off", 20, 40),
-             ("40-60% off", 40, 60), ("60%+ off", 60, 1e9)]
+    bands = [("0-20%", 0, 20), ("20-40%", 20, 40),
+             ("40-60%", 40, 60), ("60%+", 60, 1e9)]
     band_counts = [0] * len(bands)
     discs = []
     for r in result_rows:
-        if in_stock_of(r) is not True:
-            continue
+        if in_stock_of(r) is not True: continue
         d = _f(r.get("discount_pct"))
-        if d is None:
-            continue
+        if d is None: continue
         discs.append(d)
         for i, (_, lo, hi) in enumerate(bands):
             if lo <= d < hi:
-                band_counts[i] += 1
-                break
+                band_counts[i] += 1; break
     avg_disc = (sum(discs) / len(discs)) if discs else 0.0
     deep = sum(1 for d in discs if d >= 50)
     n_risk = sum(1 for e in per_sku_cur.values() if e["n_oos"] > 0)
 
-    # ---- control chart: buy-box (Amazon) or coverage by city ----
+    # ---- non-oil portfolio health (only meaningful when 'category' is present) ----
+    OIL_CATS = {"OLIVE", "MUSTARD", "CANOLA", "SUNFLOWER", "SOYABEAN", "GROUNDNUT",
+                "SESAME OIL", "BLENDED", "RICE BRAN", "COCONUT", "SESAME"}
+    non_oil_in = non_oil_total = 0
+    for r in result_rows:
+        cat = str(r.get("category") or "").upper()
+        if cat and cat not in OIL_CATS:
+            non_oil_total += 1
+            if in_stock_of(r) is True: non_oil_in += 1
+    non_oil_pct = (100.0 * non_oil_in / non_oil_total) if non_oil_total else None
+
+    # ---- buy-box concentration + control chart rows ----
+    sc = {}
     if HAS_SELLER:
-        sc = {}
         for r in result_rows:
-            s = (r.get("seller") or "").strip() or "No buy-box / unavailable"
-            sc[s] = sc.get(s, 0) + 1
+            s = (r.get("seller") or "").strip()
+            if s: sc[s] = sc.get(s, 0) + 1
+    top_seller, top_seller_cnt = (max(sc.items(), key=lambda kv: kv[1])
+                                  if sc else (None, 0))
+    top_seller_pct = (100.0 * top_seller_cnt / sum(sc.values())) if sc else 0.0
+
+    if HAS_SELLER:
         ranked = sorted(sc.items(), key=lambda kv: -kv[1])
-        control_title = "Who controls the buy-box (SKUs sold by)"
         control_rows = ranked[:6]
         if len(ranked) > 6:
             control_rows = control_rows + [("Other", sum(n for _, n in ranked[6:]))]
+        control_title = "Buy-box control (top sellers)"
     else:
         cc = {}
         for r in result_rows:
-            if in_stock_of(r) is False:
-                continue
+            if in_stock_of(r) is False: continue
             city = (str(r.get("city") or "?").strip()) or "?"
             cc[city] = cc.get(city, 0) + 1
-        ranked = sorted(cc.items(), key=lambda kv: -kv[1])
+        control_rows = sorted(cc.items(), key=lambda kv: -kv[1])[:8]
         control_title = "Where Jivo is live (in-stock datapoints by city)"
-        control_rows = ranked[:8]
+
+    # ---- competitor median-discount gap (only when Sano rows are present) ----
+    sano_rows = [r for r in result_rows
+                 if str(r.get("canonical") or "").lower().startswith("sano")
+                 and in_stock_of(r) is True
+                 and isinstance(r.get("discount_pct"), (int, float))]
+    jivo_rows = [r for r in result_rows
+                 if str(r.get("canonical") or "").lower().startswith("jivo")
+                 and in_stock_of(r) is True
+                 and isinstance(r.get("discount_pct"), (int, float))]
+    sano_med = statistics.median([r["discount_pct"] for r in sano_rows]) if sano_rows else None
+    jivo_med = statistics.median([r["discount_pct"] for r in jivo_rows]) if jivo_rows else None
+
+    # ---- Live % by category (Amazon NATIONAL only — 10 worst categories) ----
+    cat_rows_data = []
+    if HAS_SELLER and NATIONAL:
+        by_cat = {}
+        for r in result_rows:
+            cat = (str(r.get("category") or "").strip() or "(uncat)").title()
+            dd = by_cat.setdefault(cat, {"in": 0, "total": 0})
+            dd["total"] += 1
+            if in_stock_of(r) is True: dd["in"] += 1
+        items = [(c, (100.0 * dd["in"] / dd["total"]) if dd["total"] else 0,
+                  dd["total"], dd["in"])
+                 for c, dd in by_cat.items() if dd["total"] >= 2]
+        items.sort(key=lambda x: x[1])
+        cat_rows_data = items[:10]
 
     # ---- availability & discount trend over the recent runs ----
     WIN = 14
@@ -596,11 +656,11 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
         for s in rs.values():
             tin += s["n_in"]
             tk += s["n_in"] + s["n_oos"]
-            dd += s["discs_in"]   # in-stock-only, matches the headline KPI basis
+            dd += s["discs_in"]
         ip = (100.0 * tin / tk) if tk else None
         ad = (sum(dd) / len(dd)) if dd else None
-        rid = str(run)            # run_id format: YYYY-MM-DD-HHMM
-        try:                      # -> 'MM-DD HH:MM' so the 3 daily runs stay distinct
+        rid = str(run)
+        try:
             dlabel = "%s %s:%s" % (rid[5:10], rid[11:13], rid[13:15])
         except Exception:
             dlabel = rid
@@ -611,107 +671,122 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
 
     # =========================== write the sheet ===========================
     ws = wb.create_sheet("Leadership View", 0)
-    ws.sheet_view.showGridLines = False
-    # uniform column widths so the 10-col canvas reads as a clean grid; cards
-    # sit on column pairs (A+B, C+D, ...).
+    ws.sheet_view.showGridLines = False        # the single biggest visual upgrade
+    ws.sheet_view.zoomScale = 110
     for L in "ABCDEFGHIJ":
-        ws.column_dimensions[L].width = 16
+        ws.column_dimensions[L].width = 16     # 10-col grid, ~160 chars wide
 
-    # title row
-    t = ws.cell(1, 1, "Jivo x %s - Leadership View" % pname)
-    t.font = Font(bold=True, color=GREEN, size=20)
-    t.alignment = Alignment(horizontal="left", vertical="center")
+    # ---- title + headline ----
+    t = ws.cell(1, 1, "Jivo × %s — Leadership View" % pname)
+    t.font = Font(name="Segoe UI Semibold", size=20, color=INK)
+    t.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=10)
-    ws.row_dimensions[1].height = 34
+    ws.row_dimensions[1].height = 36
 
-    # headline (instock %, avg disc, risk count, captured time)
-    headline = ("%.0f%% of catalog in stock    ·    avg %.0f%% off    ·    "
+    headline = ("%.0f%% catalog live    ·    avg %.0f%% off    ·    "
                 "%d SKU(s) at stock-out risk    ·    %s"
                 % (instock_pct, avg_disc, n_risk, when))
     h = ws.cell(2, 1, headline)
-    h.font = Font(italic=True, color="555555", size=11)
-    h.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+    h.font = Font(name="Segoe UI", size=11, color=MUTED)
+    h.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=10)
     ws.row_dimensions[2].height = 22
-    ws.row_dimensions[3].height = 6  # tight visual spacer
 
-    # KPI strip: 5 cards across, each spans a pair of columns so labels don't
-    # overflow into the next card and a card background fill can wrap cleanly.
-    CARD_BG = PatternFill("solid", fgColor="EAF4EE")
-    kpis = [("Catalog SKUs", n_total),
-            ("In Stock", "%.0f%%" % instock_pct),
-            ("Avg Discount", "%.0f%%" % avg_disc),
-            ("Deep Discounts (>=50%)", deep),
-            ("At Stock-out Risk", n_risk)]
-    ws.row_dimensions[4].height = 22
-    ws.row_dimensions[5].height = 40
-    for i, (k, v) in enumerate(kpis):
-        c0 = 1 + i * 2
-        c1 = c0 + 1
-        # tint the whole card (label row + value row, both cells of the pair)
-        for r in (4, 5):
-            for col in (c0, c1):
-                ws.cell(r, col).fill = CARD_BG
-        # label
+    # hairline divider (3pt of solid rule color)
+    for c in range(1, 11):
+        ws.cell(3, c).fill = PatternFill("solid", fgColor=RULE)
+    ws.row_dimensions[3].height = 3
+
+    # ---- KPI strip: 5 cards across (each spans a 2-col pair) ----
+    if HAS_SELLER and NATIONAL:
+        deep_pct = (100.0 * deep / max(1, len(discs)))
+        kpis = [
+            ("CATALOG LIVE", "%.0f%%" % instock_pct,
+             "%d of %d ASINs" % (n_in, n_total),
+             status_color(instock_pct, 70, 55)),
+            ("NON-OIL LIVE",
+             ("%.0f%%" % non_oil_pct) if non_oil_pct is not None else "—",
+             ("%d of %d non-oil" % (non_oil_in, non_oil_total)) if non_oil_total else "",
+             status_color(non_oil_pct, 50, 30)),
+            ("AVG DISCOUNT", "%.0f%%" % avg_disc,
+             "across %d priced" % len(discs),
+             POS if avg_disc < 30 else (WARN if avg_disc < 40 else NEG)),
+            ("DEEP DISC ≥50%", "%d" % deep,
+             "%.0f%% of priced" % deep_pct,
+             NEG if deep_pct >= 25 else (WARN if deep_pct >= 10 else POS)),
+            ("BUY-BOX TOP", ("%.0f%%" % top_seller_pct) if top_seller else "—",
+             (top_seller[:22] if top_seller else "no buy-box data"),
+             NEG if top_seller_pct > 60 else (WARN if top_seller_pct > 40 else POS)),
+        ]
+    else:
+        kpis = [
+            ("CATALOG SKUs", "%d" % n_total, "tracked this run", INK),
+            ("IN STOCK", "%.0f%%" % instock_pct, "%d of %d" % (n_in, n_in + n_oos),
+             status_color(instock_pct, 70, 50)),
+            ("AVG DISCOUNT", "%.0f%%" % avg_disc, "%d priced" % len(discs),
+             POS if avg_disc < 30 else WARN),
+            ("DEEP DISC ≥50%", "%d" % deep, "of %d priced" % len(discs),
+             NEG if deep >= 30 else WARN),
+            ("AT STOCK-OUT RISK", "%d" % n_risk, "SKU(s)",
+             NEG if n_risk > 30 else WARN),
+        ]
+
+    # row layout: 4=label / 5=value / 6=sub / 7=sparkline / 8=gap
+    ws.row_dimensions[4].height = 20
+    ws.row_dimensions[5].height = 38
+    ws.row_dimensions[6].height = 16
+    ws.row_dimensions[7].height = 32
+    ws.row_dimensions[8].height = 10
+
+    SIDE_THIN = Side(style="thin", color=RULE)
+    CARD_FILL = PatternFill("solid", fgColor="FFFFFF")
+    for i, (label, value, sub, color) in enumerate(kpis):
+        c0 = 1 + i * 2; c1 = c0 + 1
+        for rr in range(4, 8):
+            for cc in (c0, c1):
+                ws.cell(rr, cc).fill = CARD_FILL
+        # outer border around the 4×2 card
+        for rr in range(4, 8):
+            ws.cell(rr, c0).border = Border(
+                left=SIDE_THIN,
+                top=SIDE_THIN if rr == 4 else None,
+                bottom=SIDE_THIN if rr == 7 else None)
+            ws.cell(rr, c1).border = Border(
+                right=SIDE_THIN,
+                top=SIDE_THIN if rr == 4 else None,
+                bottom=SIDE_THIN if rr == 7 else None)
         ws.merge_cells(start_row=4, start_column=c0, end_row=4, end_column=c1)
-        lbl = ws.cell(4, c0, k)
-        lbl.font = Font(bold=True, size=9, color="666666")
-        lbl.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
-        # value
+        lc = ws.cell(4, c0, label)
+        lc.font = Font(name="Segoe UI Semibold", size=9, color=MUTED)
+        lc.alignment = Alignment(horizontal="left", vertical="bottom", indent=1)
         ws.merge_cells(start_row=5, start_column=c0, end_row=5, end_column=c1)
-        val = ws.cell(5, c0, v)
-        val.font = Font(bold=True, size=22, color=GREEN)
-        val.alignment = Alignment(horizontal="center", vertical="center")
+        vc = ws.cell(5, c0, value)
+        vc.font = Font(name="Segoe UI", size=22, bold=True, color=color)
+        vc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        ws.merge_cells(start_row=6, start_column=c0, end_row=6, end_column=c1)
+        sc_cell = ws.cell(6, c0, sub or "")
+        sc_cell.font = Font(name="Segoe UI", size=9, color=MUTED)
+        sc_cell.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        ws.merge_cells(start_row=7, start_column=c0, end_row=7, end_column=c1)
+        # sparkline LineCharts overlay row 7 (added below)
 
-    ws.row_dimensions[6].height = 10  # spacer below KPI strip
+    # ---- section header helper ----
+    def section_header(row, text):
+        ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
+        c = ws.cell(row, 1, text.upper())
+        c.font = Font(name="Segoe UI Semibold", size=12, color="FFFFFF")
+        c.fill = PatternFill("solid", fgColor=BRAND)
+        c.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        ws.row_dimensions[row].height = 22
 
-    # "what to act on" section
-    sec = ws.cell(7, 1, "What to act on")
-    sec.font = Font(bold=True, color=GREEN, size=13)
-    sec.alignment = Alignment(horizontal="left", vertical="center")
-    ws.merge_cells(start_row=7, start_column=1, end_row=7, end_column=10)
-    ws.row_dimensions[7].height = 24
-
-    # bullets: merge each across A:J so wrapped text and any tint cover full
-    # width instead of spilling beyond the colored cell.
-    best = {}
-    for prio, msg in watch:
-        if msg not in best or prio > best[msg]:
-            best[msg] = prio
-    ordered = [m for m, _ in sorted(best.items(), key=lambda kv: -kv[1])[:5]]
-    if not ordered:
-        ordered = ["Stock, pricing and coverage all steady this run."]
-    rr = 8
-    BULLET_BG = PatternFill("solid", fgColor="F6FAF7")
-    BULLET_INDENT = Alignment(horizontal="left", vertical="center",
-                              wrap_text=True, indent=1)
-    # ~160 chars usable width across cols A:J at width 16 each.
-    span_chars = 160
-    for i, msg in enumerate(ordered):
-        text = u"•  " + msg
-        # tint alternate bullets a touch lighter for legibility
-        if i % 2 == 0:
-            for col in range(1, 11):
-                ws.cell(rr, col).fill = BULLET_BG
-        ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=10)
-        cell = ws.cell(rr, 1, text)
-        cell.font = Font(size=11)
-        cell.alignment = BULLET_INDENT
-        # auto-grow row height for wrap
-        lines = max(1, (len(text) + span_chars - 1) // span_chars)
-        ws.row_dimensions[rr].height = 22 + (lines - 1) * 16
-        rr += 1
-    # spacer before charts
-    ws.row_dimensions[rr].height = 10
-    ws.row_dimensions[13].height = 8
-
-    # ---- chart source-data block (charts reference these cells) ----
-    DATA0 = 46
-    ws.cell(DATA0 - 1, 1, "Chart source data (auto-generated)").font = NOTE_FONT
+    # ---- hidden chart-source data (rows 100+) ----
+    DATA0 = 100
+    ws.cell(DATA0 - 1, 1, "Chart source data (auto-generated)").font = Font(
+        name="Segoe UI", size=9, italic=True, color=MUTED)
 
     def put(top, headers, drows):
         for j, hh in enumerate(headers, 1):
-            ws.cell(top, j, hh).font = Font(bold=True, size=9, color="888888")
+            ws.cell(top, j, hh).font = Font(name="Segoe UI Semibold", size=9, color=MUTED)
         for i, rw in enumerate(drows):
             for j, v in enumerate(rw, 1):
                 ws.cell(top + 1 + i, j, v)
@@ -723,82 +798,242 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
     s_hdr, s_last = put(DATA0, ["Availability", "SKUs"], stk_rows)
 
     b_hdr, b_last = put(s_last + 2, ["Discount band", "SKUs"],
-                        [[bands[i][0], band_counts[i]] for i in range(len(bands))])
+                       [[bands[i][0], band_counts[i]] for i in range(len(bands))])
 
-    c_hdr, c_last = put(b_last + 2, ["Label", "SKUs"],
-                        [[k, v] for k, v in control_rows])
+    cat_hdr = cat_last = None
+    if cat_rows_data:
+        cat_hdr, cat_last = put(b_last + 2, ["Category", "Live %"],
+                                [[c, round(p, 1)] for c, p, _, _ in cat_rows_data])
 
+    ctrl_anchor = (cat_last or b_last) + 2
+    ctrl_hdr, ctrl_last = put(ctrl_anchor, ["Label", "SKUs"],
+                              [[k, v] for k, v in control_rows])
+
+    sv_hdr = sv_last = None
+    if sano_med is not None and jivo_med is not None:
+        sv_hdr, sv_last = put(ctrl_last + 2, ["Brand", "Median disc %"],
+                              [["Jivo", round(jivo_med, 1)],
+                               ["Sano (competitor)", round(sano_med, 1)]])
+
+    t_hdr = t_last = None
     if have_trend:
-        t_hdr, t_last = put(c_last + 2, ["Run", "In-stock %", "Avg disc %"], trend_rows)
+        t_hdr, t_last = put((sv_last or ctrl_last) + 2,
+                            ["Run", "In-stock %", "Avg disc %"], trend_rows)
 
-    def solid(color):
-        return GraphicalProperties(solidFill=color)
+    # ---- chart styling helpers ----
+    def solid(color): return GraphicalProperties(solidFill=color)
+    def kill_border(ch):
+        try:
+            ch.graphical_properties = GraphicalProperties()
+            ch.graphical_properties.line = LineProperties(noFill=True)
+        except Exception: pass
+        return ch
+    def kill_gridlines(ch):
+        try: ch.y_axis.majorGridlines = None
+        except Exception: pass
+        try: ch.x_axis.majorGridlines = None
+        except Exception: pass
+        return ch
 
-    # 1) availability donut
+    # ========================= PORTFOLIO HEALTH =========================
+    section_header(9, "PORTFOLIO HEALTH")
+    ws.row_dimensions[10].height = 6
+
+    # 1) availability donut (left)
     d = DoughnutChart()
     d.title = "Catalog availability"
     d.add_data(Reference(ws, min_col=2, min_row=s_hdr, max_row=s_last),
                titles_from_data=True)
     d.set_categories(Reference(ws, min_col=1, min_row=s_hdr + 1, max_row=s_last))
-    d.dataLabels = DataLabelList()
-    d.dataLabels.showPercent = True
-    palette = [GREEN, REDC, AMBER]
-    ser = d.series[0]
+    d.dataLabels = DataLabelList(showPercent=True, showCatName=True)
+    d.dataLabels.dLblPos = "outEnd"
+    d.holeSize = 60
+    pal = [POS, NEG, NEUTRAL]
     for i in range(s_last - s_hdr):
-        pt = DataPoint(idx=i)
-        pt.graphicalProperties = solid(palette[i % len(palette)])
-        ser.data_points.append(pt)
-    d.height, d.width = 7.2, 11.5
-    ws.add_chart(d, "A14")
+        d.series[0].data_points.append(
+            DataPoint(idx=i, spPr=solid(pal[i % len(pal)])))
+    if d.legend:
+        d.legend.position = "b"
+    d.height, d.width = 6.8, 11
+    kill_border(d)
+    ws.add_chart(d, "A11")
 
-    # 2) discount-depth bar
+    # 2) Live % by category (Amazon) OR coverage by city (per-pincode)
+    if cat_rows_data and cat_hdr is not None:
+        cb = BarChart()
+        cb.type = "bar"
+        cb.title = "Live %% by category (%d worst)" % len(cat_rows_data)
+        cb.add_data(Reference(ws, min_col=2, min_row=cat_hdr, max_row=cat_last),
+                    titles_from_data=True)
+        cb.set_categories(Reference(ws, min_col=1, min_row=cat_hdr + 1, max_row=cat_last))
+        cb.legend = None
+        cb.dataLabels = DataLabelList(showVal=True)
+        cb.dataLabels.dLblPos = "outEnd"
+        for i, (_, pct, _, _) in enumerate(cat_rows_data):
+            color = POS if pct >= 70 else (WARN if pct >= 40 else NEG)
+            cb.series[0].data_points.append(
+                DataPoint(idx=i, spPr=solid(color)))
+        cb.height, cb.width = 6.8, 14
+        kill_border(cb); kill_gridlines(cb)
+        ws.add_chart(cb, "F11")
+    else:
+        cb = BarChart()
+        cb.type = "bar"
+        cb.title = control_title
+        cb.add_data(Reference(ws, min_col=2, min_row=ctrl_hdr, max_row=ctrl_last),
+                    titles_from_data=True)
+        cb.set_categories(Reference(ws, min_col=1, min_row=ctrl_hdr + 1, max_row=ctrl_last))
+        cb.series[0].graphicalProperties = solid(BRAND)
+        cb.legend = None
+        cb.dataLabels = DataLabelList(showVal=True)
+        cb.dataLabels.dLblPos = "outEnd"
+        cb.height, cb.width = 6.8, 14
+        kill_border(cb); kill_gridlines(cb)
+        ws.add_chart(cb, "F11")
+
+    # ========================= PRICING & COMPETITION =========================
+    section_header(25, "PRICING & COMPETITION")
+    ws.row_dimensions[26].height = 6
+
+    # 3) discount-depth column chart
     b = BarChart()
     b.type = "col"
-    b.title = "Discount depth (in-stock SKUs)"
+    b.title = "Discount depth (in-stock)"
     b.add_data(Reference(ws, min_col=2, min_row=b_hdr, max_row=b_last),
                titles_from_data=True)
     b.set_categories(Reference(ws, min_col=1, min_row=b_hdr + 1, max_row=b_last))
-    b.series[0].graphicalProperties = solid(GREEN)
+    b.series[0].graphicalProperties = solid(WARN)
     b.legend = None
-    b.dataLabels = DataLabelList()
-    b.dataLabels.showVal = True
-    b.height, b.width = 7.2, 11.5
-    ws.add_chart(b, "G14")
+    b.dataLabels = DataLabelList(showVal=True)
+    b.dataLabels.dLblPos = "outEnd"
+    b.height, b.width = 6.8, 11
+    kill_border(b); kill_gridlines(b)
+    ws.add_chart(b, "A27")
 
-    # 3) buy-box / coverage bar (horizontal -> long labels read well)
-    c = BarChart()
-    c.type = "bar"
-    c.title = control_title
-    c.add_data(Reference(ws, min_col=2, min_row=c_hdr, max_row=c_last),
-               titles_from_data=True)
-    c.set_categories(Reference(ws, min_col=1, min_row=c_hdr + 1, max_row=c_last))
-    c.series[0].graphicalProperties = solid(GREEN)
-    c.legend = None
-    c.dataLabels = DataLabelList()
-    c.dataLabels.showVal = True
-    c.height, c.width = 7.2, 11.5
-    ws.add_chart(c, "A29")
+    # 4) Jivo vs Sano (if data) — else buy-box control (Amazon) — else skip
+    if sv_hdr is not None:
+        sv = BarChart()
+        sv.type = "col"
+        sv.title = "Jivo vs Sano — median discount"
+        sv.add_data(Reference(ws, min_col=2, min_row=sv_hdr, max_row=sv_last),
+                    titles_from_data=True)
+        sv.set_categories(Reference(ws, min_col=1, min_row=sv_hdr + 1, max_row=sv_last))
+        sv.legend = None
+        sv.dataLabels = DataLabelList(showVal=True)
+        sv.dataLabels.dLblPos = "outEnd"
+        sv.series[0].data_points.append(DataPoint(idx=0, spPr=solid(BRAND)))
+        sv.series[0].data_points.append(DataPoint(idx=1, spPr=solid(ACCENT)))
+        sv.height, sv.width = 6.8, 14
+        kill_border(sv); kill_gridlines(sv)
+        ws.add_chart(sv, "F27")
+    elif HAS_SELLER:
+        ctl = BarChart()
+        ctl.type = "bar"
+        ctl.title = "Buy-box control"
+        ctl.add_data(Reference(ws, min_col=2, min_row=ctrl_hdr, max_row=ctrl_last),
+                     titles_from_data=True)
+        ctl.set_categories(Reference(ws, min_col=1, min_row=ctrl_hdr + 1, max_row=ctrl_last))
+        ctl.series[0].graphicalProperties = solid(BRAND)
+        ctl.legend = None
+        ctl.dataLabels = DataLabelList(showVal=True)
+        ctl.dataLabels.dLblPos = "outEnd"
+        ctl.height, ctl.width = 6.8, 14
+        kill_border(ctl); kill_gridlines(ctl)
+        ws.add_chart(ctl, "F27")
 
-    # 4) availability & discount trend line
+    # ========================= MOMENTUM =========================
+    section_header(41, "MOMENTUM (last %d runs)" % len(window))
+    ws.row_dimensions[42].height = 6
+
     if have_trend:
         ln = LineChart()
-        ln.title = "Availability & discount trend (recent runs)"
+        ln.title = "Availability & discount trend"
         ln.add_data(Reference(ws, min_col=2, max_col=3, min_row=t_hdr, max_row=t_last),
                     titles_from_data=True)
         ln.set_categories(Reference(ws, min_col=1, min_row=t_hdr + 1, max_row=t_last))
-        line_cols = [GREEN, AMBER]
+        line_cols = [BRAND, WARN]
         for i, s in enumerate(ln.series):
             gp = GraphicalProperties()
             gp.line = LineProperties(solidFill=line_cols[i % 2], w=28000)
             s.graphicalProperties = gp
-            s.marker = Marker(symbol="circle", size=5)
+            mk = Marker(symbol="circle", size=7)
+            mk.graphicalProperties = solid(line_cols[i % 2])
+            s.marker = mk
             s.smooth = False
         ln.y_axis.title = "%"
-        ln.height, ln.width = 7.2, 11.5
-        ws.add_chart(ln, "G29")
+        if ln.legend:
+            ln.legend.position = "t"
+        ln.height, ln.width = 7, 26
+        kill_border(ln); kill_gridlines(ln)
+        ws.add_chart(ln, "A43")
 
-    # cosmetics — column widths are already set at the top of this function
-    # (uniform 16-wide grid so KPI/bullet merges sit cleanly across A:J).
+    # ========================= WHAT TO ACT ON =========================
+    section_header(58, "WHAT TO ACT ON")
+    ws.row_dimensions[59].height = 6
+
+    best = {}
+    for prio, msg in watch:
+        if msg not in best or prio > best[msg]:
+            best[msg] = prio
+    ordered = [m for m, _ in sorted(best.items(), key=lambda kv: -kv[1])[:5]]
+    if not ordered:
+        ordered = ["Stock, pricing and coverage all steady this run."]
+    rr = 60
+    for i, msg in enumerate(ordered):
+        fill = PatternFill("solid", fgColor=CANVAS) if i % 2 == 0 else PatternFill("solid", fgColor="FFFFFF")
+        for cc in range(1, 11):
+            ws.cell(rr, cc).fill = fill
+        ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=10)
+        cc = ws.cell(rr, 1, "▸  " + msg)
+        cc.font = Font(name="Segoe UI", size=11, color=INK)
+        cc.alignment = Alignment(horizontal="left", vertical="center", indent=1, wrap_text=True)
+        span_chars = 160
+        lines = max(1, (len(msg) + 3 + span_chars - 1) // span_chars)
+        ws.row_dimensions[rr].height = 24 + (lines - 1) * 16
+        rr += 1
+
+    # ---- footer ----
+    rr += 1
+    ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=10)
+    fc = ws.cell(rr, 1,
+                 "Captured %s  ·  %d ASINs scraped  ·  deterministic, no LLM" % (when, n_total))
+    fc.font = Font(name="Segoe UI", size=9, italic=True, color=MUTED)
+    fc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+
+    # ---- faux-sparklines: openpyxl can't write native Excel sparklines, so we
+    # overlay tiny LineCharts on row 7 of each KPI card (axes deleted, no border).
+    def add_sparkline(anchor, src_col, color):
+        if not have_trend or t_hdr is None:
+            return
+        sp = LineChart()
+        sp.add_data(Reference(ws, min_col=src_col, min_row=t_hdr + 1, max_row=t_last),
+                    titles_from_data=False)
+        sp.legend = None
+        try: sp.x_axis.delete = True
+        except Exception: pass
+        try: sp.y_axis.delete = True
+        except Exception: pass
+        sp.height, sp.width = 1.6, 5.2
+        try:
+            sp.graphical_properties = GraphicalProperties()
+            sp.graphical_properties.line = LineProperties(noFill=True)
+        except Exception: pass
+        s = sp.series[0]
+        gp = GraphicalProperties()
+        gp.line = LineProperties(solidFill=color, w=22000)
+        s.graphicalProperties = gp
+        s.smooth = True
+        ws.add_chart(sp, anchor)
+
+    # KPI #1 (CATALOG/IN STOCK) gets the in-stock-% sparkline → anchor A7
+    # KPI #3 (AVG DISCOUNT) gets the avg-disc-% sparkline → anchor E7
+    add_sparkline("A7", 2, POS)
+    add_sparkline("E7", 3, WARN)
+
+    # ---- hide the source-data block ----
+    for r in range(DATA0 - 1, ws.max_row + 1):
+        ws.row_dimensions[r].hidden = True
+
     try:
         wb.active = wb.sheetnames.index("Leadership View")
     except Exception:
