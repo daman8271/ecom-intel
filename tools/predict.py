@@ -196,87 +196,209 @@ def load_result(path):
 
 
 # ---------------------------------------------------------------- sheet writer
-class Sheet:
-    """Thin cursor over a worksheet with section/table/note helpers."""
+def _wrapped_lines(text, col_chars):
+    """Approximate line count for `text` wrapped inside a column of `col_chars`."""
+    if text is None:
+        return 1
+    s = str(text)
+    if not s:
+        return 1
+    col_chars = max(8, int(col_chars))
+    lines = 0
+    for para in s.split("\n"):
+        if not para:
+            lines += 1
+        else:
+            lines += (len(para) + col_chars - 1) // col_chars
+    return max(1, lines)
 
-    def __init__(self, ws):
+
+class Sheet:
+    """Cursor over a worksheet with polished section / table / note helpers.
+
+    Each row that holds a large font or wrapped text gets an explicit height so
+    the content does not clip into the next row (openpyxl will NOT autofit).
+    Bullets, notes and section headers are merged across `span` columns so the
+    colored fill covers the full width instead of just column A. `span` grows
+    automatically as tables are written; you can override on construction.
+    """
+
+    # row-height presets chosen to comfortably fit each font size
+    H_TITLE = 32
+    H_SUB = 20
+    H_SECTION = 24
+    H_SECTION_SUB = 18
+    H_HEADER = 26
+    H_ROW = 19
+    H_BULLET = 22
+    LINE_PT = 14   # extra row height per wrapped line beyond the first
+
+    def __init__(self, ws, span=8):
         self.ws = ws
         self.r = 1
-        self.maxcol = 1
+        self.span = span
+        self._col_widths = {}  # 1-based col -> width (max across tables)
 
+    # ---- internals ----
+    def _set_height(self, row, h):
+        cur = self.ws.row_dimensions[row].height or 0
+        if h > cur:
+            self.ws.row_dimensions[row].height = h
+
+    def _merge_row(self, row):
+        if self.span and self.span > 1:
+            self.ws.merge_cells(start_row=row, start_column=1,
+                                end_row=row, end_column=self.span)
+
+    def _paint_row(self, row, fill):
+        """Apply `fill` to every cell on `row` up to `self.span`. Done BEFORE
+        merging so the merged cell inherits the anchor's fill (and the pre-merge
+        cells were also tinted, which Excel keeps after unmerge)."""
+        for col in range(1, self.span + 1):
+            self.ws.cell(row=row, column=col).fill = fill
+
+    def _span_chars(self):
+        """Approximate text width of the merged span in characters."""
+        total = 0
+        for col in range(1, self.span + 1):
+            w = self._col_widths.get(col)
+            if w is None:
+                L = get_column_letter(col)
+                w = (self.ws.column_dimensions[L].width or 12)
+            total += w
+        return max(20, int(total))
+
+    # ---- public API ----
     def title(self, text, sub=None):
         c = self.ws.cell(row=self.r, column=1, value=text)
         c.font = TITLE_FONT
+        c.alignment = Alignment(horizontal="left", vertical="center")
+        self._merge_row(self.r)
+        self._set_height(self.r, self.H_TITLE)
         self.r += 1
         if sub:
             s = self.ws.cell(row=self.r, column=1, value=sub)
             s.font = SUB_FONT
+            s.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+            self._merge_row(self.r)
+            self._set_height(self.r, self.H_SUB)
             self.r += 1
         self.r += 1  # blank spacer
 
     def section(self, text, sub=None):
         c = self.ws.cell(row=self.r, column=1, value=text)
         c.font = SECTION_FONT
+        c.alignment = Alignment(horizontal="left", vertical="center")
+        self._merge_row(self.r)
+        self._set_height(self.r, self.H_SECTION)
         self.r += 1
         if sub:
             s = self.ws.cell(row=self.r, column=1, value=sub)
             s.font = NOTE_FONT
+            s.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+            self._merge_row(self.r)
+            lines = _wrapped_lines(sub, self._span_chars())
+            self._set_height(self.r, self.H_SECTION_SUB + (lines - 1) * self.LINE_PT)
             self.r += 1
 
     def note(self, text):
         c = self.ws.cell(row=self.r, column=1, value=text)
         c.font = NOTE_FONT
-        c.alignment = LEFT
+        c.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+        self._merge_row(self.r)
+        lines = _wrapped_lines(text, self._span_chars())
+        self._set_height(self.r, self.H_BULLET + (lines - 1) * self.LINE_PT)
         self.r += 1
 
     def bullet(self, text, fill=None):
-        c = self.ws.cell(row=self.r, column=1, value=u"• " + text)
+        c = self.ws.cell(row=self.r, column=1, value=u"•  " + str(text))
         c.font = Font(size=11)
-        c.alignment = LEFT
+        c.alignment = Alignment(horizontal="left", vertical="center",
+                                wrap_text=True, indent=1)
         if fill:
-            c.fill = fill
+            self._paint_row(self.r, fill)
+        self._merge_row(self.r)
+        lines = _wrapped_lines(u"•  " + str(text), self._span_chars())
+        self._set_height(self.r, self.H_BULLET + (lines - 1) * self.LINE_PT)
         self.r += 1
 
     def blank(self, n=1):
         self.r += n
 
-    def table(self, headers, data_rows, fills=None):
+    def table(self, headers, data_rows, fills=None, widths=None, wrap_cols=None):
         """
-        headers: list[str]; data_rows: list[list]; fills: optional list (one
-        PatternFill-or-None per data row) to tint the whole row.
+        headers   : list[str]
+        data_rows : list[list]
+        fills     : optional list (one PatternFill-or-None per data row)
+        widths    : optional list of column widths (chars) to set explicitly.
+                    Each column ends up at the MAX width any table requested,
+                    so stacked tables don't crush each other.
+        wrap_cols : 1-based column indexes whose data cells wrap. Column 1 is
+                    always wrapped (it usually carries the SKU label).
         """
         ncol = len(headers)
-        self.maxcol = max(self.maxcol, ncol)
+        self.span = max(self.span, ncol)
+        wrap_cols = set(wrap_cols or []) | {1}
+
+        # record column widths (max across tables)
+        if widths:
+            for idx, w in enumerate(widths, start=1):
+                if not w:
+                    continue
+                if w > self._col_widths.get(idx, 0):
+                    self._col_widths[idx] = w
+                    self.ws.column_dimensions[get_column_letter(idx)].width = w
+
+        # header row
+        self._set_height(self.r, self.H_HEADER)
         for j, h in enumerate(headers, start=1):
             cell = self.ws.cell(row=self.r, column=j, value=h)
             cell.fill = HDR
             cell.font = HDR_FONT
-            cell.alignment = CEN
+            cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
             cell.border = BORDER
         self.r += 1
+
+        # data rows
         for i, drow in enumerate(data_rows):
             rowfill = fills[i] if (fills and i < len(fills)) else None
+            max_lines = 1
             for j in range(ncol):
                 val = drow[j] if j < len(drow) else ""
                 cell = self.ws.cell(row=self.r, column=j + 1, value=val)
                 cell.border = BORDER
-                cell.alignment = CEN if j > 0 else LEFT
+                wrap = (j + 1) in wrap_cols
+                cell.alignment = Alignment(
+                    horizontal="left" if j == 0 else "center",
+                    vertical="center",
+                    wrap_text=wrap,
+                )
                 if rowfill:
                     cell.fill = rowfill
+                if wrap and not isinstance(val, (int, float)):
+                    col_w = self._col_widths.get(j + 1) or (
+                        self.ws.column_dimensions[get_column_letter(j + 1)].width or 16)
+                    max_lines = max(max_lines, _wrapped_lines(val, col_w))
+            row_h = self.H_ROW + (max_lines - 1) * self.LINE_PT
+            self._set_height(self.r, row_h)
             self.r += 1
         self.r += 1  # spacer after table
 
     def autosize(self, maxw=46):
+        """Fill in widths for any column we never set explicitly via table()."""
         ws = self.ws
         for col in ws.columns:
             try:
                 L = get_column_letter(col[0].column)
             except Exception:
                 continue
+            colno = col[0].column
+            if colno in self._col_widths:
+                continue  # explicit width already wins
             w = max((len(str(c.value)) for c in col if c.value is not None), default=10)
             ws.column_dimensions[L].width = min(maxw, max(12, w + 2))
-        # keep the first (label/bullet) column generous
-        ws.column_dimensions["A"].width = max(ws.column_dimensions["A"].width or 0, 40)
+        if 1 not in self._col_widths:
+            ws.column_dimensions["A"].width = max(ws.column_dimensions["A"].width or 0, 40)
 
 
 # ---------------------------------------------------------------- analysis
@@ -490,44 +612,98 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
     # =========================== write the sheet ===========================
     ws = wb.create_sheet("Leadership View", 0)
     ws.sheet_view.showGridLines = False
+    # uniform column widths so the 10-col canvas reads as a clean grid; cards
+    # sit on column pairs (A+B, C+D, ...).
+    for L in "ABCDEFGHIJ":
+        ws.column_dimensions[L].width = 16
 
+    # title row
     t = ws.cell(1, 1, "Jivo x %s - Leadership View" % pname)
     t.font = Font(bold=True, color=GREEN, size=20)
-    ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=12)
-    headline = ("%.0f%% of catalog in stock    .    avg %.0f%% off    .    "
-                "%d SKU(s) at stock-out risk    .    %s"
+    t.alignment = Alignment(horizontal="left", vertical="center")
+    ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=10)
+    ws.row_dimensions[1].height = 34
+
+    # headline (instock %, avg disc, risk count, captured time)
+    headline = ("%.0f%% of catalog in stock    ·    avg %.0f%% off    ·    "
+                "%d SKU(s) at stock-out risk    ·    %s"
                 % (instock_pct, avg_disc, n_risk, when))
     h = ws.cell(2, 1, headline)
     h.font = Font(italic=True, color="555555", size=11)
-    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=12)
+    h.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=10)
+    ws.row_dimensions[2].height = 22
+    ws.row_dimensions[3].height = 6  # tight visual spacer
 
-    # KPI strip
+    # KPI strip: 5 cards across, each spans a pair of columns so labels don't
+    # overflow into the next card and a card background fill can wrap cleanly.
+    CARD_BG = PatternFill("solid", fgColor="EAF4EE")
     kpis = [("Catalog SKUs", n_total),
             ("In Stock", "%.0f%%" % instock_pct),
             ("Avg Discount", "%.0f%%" % avg_disc),
             ("Deep Discounts (>=50%)", deep),
             ("At Stock-out Risk", n_risk)]
+    ws.row_dimensions[4].height = 22
+    ws.row_dimensions[5].height = 40
     for i, (k, v) in enumerate(kpis):
-        c = 1 + i * 2
-        ws.cell(4, c, k).font = Font(bold=True, size=9, color="666666")
-        ws.cell(5, c, v).font = Font(bold=True, size=22, color=GREEN)
+        c0 = 1 + i * 2
+        c1 = c0 + 1
+        # tint the whole card (label row + value row, both cells of the pair)
+        for r in (4, 5):
+            for col in (c0, c1):
+                ws.cell(r, col).fill = CARD_BG
+        # label
+        ws.merge_cells(start_row=4, start_column=c0, end_row=4, end_column=c1)
+        lbl = ws.cell(4, c0, k)
+        lbl.font = Font(bold=True, size=9, color="666666")
+        lbl.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+        # value
+        ws.merge_cells(start_row=5, start_column=c0, end_row=5, end_column=c1)
+        val = ws.cell(5, c0, v)
+        val.font = Font(bold=True, size=22, color=GREEN)
+        val.alignment = Alignment(horizontal="center", vertical="center")
 
-    # what to act on (top 5 from the prioritised watch list)
-    ws.cell(7, 1, "What to act on").font = Font(bold=True, color=GREEN, size=13)
+    ws.row_dimensions[6].height = 10  # spacer below KPI strip
+
+    # "what to act on" section
+    sec = ws.cell(7, 1, "What to act on")
+    sec.font = Font(bold=True, color=GREEN, size=13)
+    sec.alignment = Alignment(horizontal="left", vertical="center")
+    ws.merge_cells(start_row=7, start_column=1, end_row=7, end_column=10)
+    ws.row_dimensions[7].height = 24
+
+    # bullets: merge each across A:J so wrapped text and any tint cover full
+    # width instead of spilling beyond the colored cell.
     best = {}
     for prio, msg in watch:
         if msg not in best or prio > best[msg]:
             best[msg] = prio
     ordered = [m for m, _ in sorted(best.items(), key=lambda kv: -kv[1])[:5]]
+    if not ordered:
+        ordered = ["Stock, pricing and coverage all steady this run."]
     rr = 8
-    if ordered:
-        for msg in ordered:
-            cell = ws.cell(rr, 1, u"• " + msg)
-            cell.font = Font(size=11)
-            cell.alignment = Alignment(horizontal="left", vertical="center")
-            rr += 1
-    else:
-        ws.cell(rr, 1, u"• Stock, pricing and coverage all steady this run.").font = Font(size=11)
+    BULLET_BG = PatternFill("solid", fgColor="F6FAF7")
+    BULLET_INDENT = Alignment(horizontal="left", vertical="center",
+                              wrap_text=True, indent=1)
+    # ~160 chars usable width across cols A:J at width 16 each.
+    span_chars = 160
+    for i, msg in enumerate(ordered):
+        text = u"•  " + msg
+        # tint alternate bullets a touch lighter for legibility
+        if i % 2 == 0:
+            for col in range(1, 11):
+                ws.cell(rr, col).fill = BULLET_BG
+        ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=10)
+        cell = ws.cell(rr, 1, text)
+        cell.font = Font(size=11)
+        cell.alignment = BULLET_INDENT
+        # auto-grow row height for wrap
+        lines = max(1, (len(text) + span_chars - 1) // span_chars)
+        ws.row_dimensions[rr].height = 22 + (lines - 1) * 16
+        rr += 1
+    # spacer before charts
+    ws.row_dimensions[rr].height = 10
+    ws.row_dimensions[13].height = 8
 
     # ---- chart source-data block (charts reference these cells) ----
     DATA0 = 46
@@ -621,10 +797,8 @@ def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
         ln.height, ln.width = 7.2, 11.5
         ws.add_chart(ln, "G29")
 
-    # cosmetics
-    ws.column_dimensions["A"].width = 26
-    for col in ("B", "C", "D", "E", "F", "G", "H", "I", "J"):
-        ws.column_dimensions[col].width = 13
+    # cosmetics — column widths are already set at the top of this function
+    # (uniform 16-wide grid so KPI/bullet merges sit cleanly across A:J).
     try:
         wb.active = wb.sheetnames.index("Leadership View")
     except Exception:
@@ -711,7 +885,8 @@ def build(platform, xlsx_path):
                 data.append([e["label"], rr.get("asin") or "-",
                              rr.get("availability_text") or "out of stock"])
                 fills.append(RED)
-            S.table(["SKU", "ASIN", "Availability"], data, fills)
+            S.table(["SKU", "ASIN", "Availability"], data, fills,
+                    widths=[44, 16, 44], wrap_cols=[3])
             if len(oos_skus) > OOS_TABLE_CAP:
                 S.note(f"Showing top {OOS_TABLE_CAP} of {len(oos_skus)} OOS ASINs.")
                 S.blank()
@@ -729,7 +904,8 @@ def build(platform, xlsx_path):
                 frac = e["n_oos"] / e["n_loc"] if e["n_loc"] else 0
                 fills.append(RED if frac >= LOW_STOCK_FRAC else YEL)
             S.table(["SKU", "OOS locations", "Total locations", "Cities affected",
-                     "Sample cities"], data, fills)
+                     "Sample cities"], data, fills,
+                    widths=[40, 12, 12, 12, 38], wrap_cols=[5])
             if len(oos_skus) > OOS_TABLE_CAP:
                 S.note(f"Showing top {OOS_TABLE_CAP} of {len(oos_skus)} OOS SKUs "
                        "(sorted by number of locations affected).")
@@ -784,14 +960,16 @@ def build(platform, xlsx_path):
                 S.section("Flipped to OUT OF STOCK since last run")
                 S.table(["SKU", "Status change"],
                         [[s, f"in stock ({prev_run}) -> OOS ({cur_run})"] for s in flips_oos[:30]],
-                        [RED] * min(30, len(flips_oos)))
+                        [RED] * min(30, len(flips_oos)),
+                        widths=[44, 38], wrap_cols=[2])
                 watch.append((50 + len(flips_oos),
                               f"{len(flips_oos)} ASIN(s) flipped to OUT OF STOCK since last run"))
             if flips_back:
                 S.section("Came BACK in stock since last run")
                 S.table(["SKU", "Status change"],
                         [[s, f"OOS ({prev_run}) -> in stock ({cur_run})"] for s in flips_back[:30]],
-                        [GREEN] * min(30, len(flips_back)))
+                        [GREEN] * min(30, len(flips_back)),
+                        widths=[44, 38], wrap_cols=[2])
                 watch.append((30 + len(flips_back),
                               f"{len(flips_back)} ASIN(s) came back in stock since last run"))
             if not flips_oos and not flips_back:
