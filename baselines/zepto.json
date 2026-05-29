@@ -1,10 +1,13 @@
 {
   "platform": "zepto",
-  "rows": 1051,
-  "unique_skus": 19,
-  "pincodes_with_jivo": 185,
-  "captured_at": "2026-05-29T15:03:35.787Z",
-  "baseline_rows": 1051,
-  "baseline_skus": 19,
-  "note": "LIVE via bff-gateway.zeptonow.com API (no proxy). 332-pincode baseline, 2026-05-29."
+  "samples": [
+    {
+      "run_id": "2026-05-30-0017",
+      "captured_at": "2026-05-29T18:50:17.351Z",
+      "rows": 516,
+      "unique_skus": 11,
+      "pincodes_with_jivo": 93
+    }
+  ],
+  "updated_at": "2026-05-29T18:50:34.589944+00:00"
 }
