@@ -2,188 +2,169 @@
 title: Vault Spec
 aliases:
   - VAULT-SPEC
-  - Memory Vault Design
 tags:
   - meta/spec
   - moc
 created: 2026-05-21
+updated: 2026-05-29
+version: 2
 ---
 
-# Memory Vault — Design Spec & Obsidian Conventions
+# Memory Vault — Design Spec & Obsidian Conventions (v2)
 
-> The single source of truth for **how** the `vault/` Markdown memory works, **which**
-> Obsidian conventions we adopt, and **why**. Read this before touching
-> `tools/vault_note.py` or `tools/vault_rollup.py`.
+> Single source of truth for **how** the `vault/` Markdown memory works and **which** Obsidian
+> conventions we follow — and **why**. Read this before touching `tools/vault_build.py`.
 
-This vault is the **human-readable + machine-readable memory** of the ecom-intel
-price scraper. Every cron run leaves a permanent, linked note here. The notes form
-an Obsidian knowledge graph (browse history, spot trends); the parallel
-`data/<platform>/history.csv` is the flat, tidy table a future price-intelligence
-ML model trains on.
+This vault is the **human-readable + machine-readable memory** of the ecom-intel Jivo price
+scraper. The complete, append-only observation history lives in `data/<platform>/history.csv`
+(one row per `run × SKU × location`); the vault is the **fully-linked Obsidian knowledge graph
+view of that same data**. Every note is regenerated deterministically from the CSV, so the graph
+and the table never drift.
 
----
-
-## 1. How Obsidian works (research summary)
-
-Researched from the official Obsidian help, the Obsidian forum, and community
-PKM guides (sources at the bottom). The five primitives that matter for us:
-
-### 1.1 `[[Wikilinks]]` — the edges of the graph
-- Syntax `[[Note Name]]`. Obsidian resolves a wikilink **by basename, ignoring
-  folder path and the `.md` extension** — so `[[2026-05-21]]` finds
-  `vault/daily/2026-05-21.md` no matter where the linking note lives.
-- **This is the single most important fact for our design:** because resolution is
-  by basename, every note basename in the vault must be **globally unique**.
-- `[[Note|display text]]` shows custom text but links to `Note`.
-- `[[Note#Heading]]` and `[[Note#^block-id]]` link to a section / block.
-- Linking to a note that does not exist yet creates an **unresolved ("placeholder")
-  link** — it still shows in the graph as a faint node. This lets a run note link
-  to its weekly rollup *before* the weekly note is generated; the graph stays
-  connected and the placeholder fills in later.
-
-### 1.2 The graph view derives edges from **body links only**
-- Official help: *"Lines represent internal links between two nodes."* Nodes =
-  notes; an edge = one note containing a `[[wikilink]]` to another. The more
-  notes that point at a node, the **bigger** that node renders — so our hubs
-  (platform pages, dailies) naturally become large, central nodes.
-- **Tags do NOT create edges** between notes in the core graph (they show as a
-  separate, optional node class). Frontmatter *property* links (e.g.
-  `up: "[[blinkit]]"`) render as edges only in recent Obsidian and only when the
-  property is a Link type — version-dependent and fragile.
-- **Decision:** every structural relationship we want in the graph is written as
-  a plain `[[wikilink]] in the note BODY`. Frontmatter is used for metadata/query
-  only, never as the sole carrier of a graph edge. This makes the graph correct on
-  every Obsidian version with zero plugins.
-
-### 1.3 YAML frontmatter / properties — metadata, not edges
-- A `---` fenced YAML block at the very top of the file. `key: value` pairs.
-- Types: text, number, checkbox, date, list, and "links" (a quoted wikilink).
-- Used by search, Dataview/Bases queries, and (later) by our ML feature pipeline
-  to slice notes (`verdict: SUSPECT`, `platform: blinkit`). We keep frontmatter
-  **flat and machine-parseable** so a script can read a note without Markdown
-  parsing.
-
-### 1.4 `tags` — faceted classification
-- `#tag` or `#nested/tag`; or a `tags:` list in frontmatter (equivalent).
-- Tags are for *cross-cutting facets* you filter on (e.g. `#verdict/OK`,
-  `#platform/blinkit`, `#shape/per-pincode`), **not** for the primary hierarchy —
-  that is what links + folders do.
-
-### 1.5 `aliases` — alternate names a wikilink can resolve to
-- `aliases:` list in frontmatter. `[[alias]]` resolves to the note even though the
-  filename differs.
-- **We exploit this heavily.** The interface contract asks run notes to link
-  `[[<platform> (platform hub)]]` and `[[<date> (daily)]]`. Rather than name files
-  with those awkward strings, we name files cleanly (`blinkit.md`,
-  `2026-05-21.md`) and add the contract names as **aliases**, so both
-  `[[blinkit]]` and `[[blinkit (platform hub)]]` resolve to the same hub.
-
-### 1.6 Folders vs. links, and Maps of Content (MOC)
-- A note lives in exactly **one folder**, but can be linked from **many** notes.
-  Folders give us a tidy filesystem (`runs/`, `daily/`, …); **links give the
-  graph its meaning.** We use both: folders for storage, links for relationships.
-- A **MOC (Map of Content)** is a note whose job is to *link to other notes* — an
-  index/hub for a topic. Hierarchy of MOCs: an **Index/Home MOC** (entry point) →
-  **topic/section MOCs**. We adopt this directly:
-  - `index.md` = Home MOC (vault entry point).
-  - `platforms/<platform>.md` = a per-platform MOC/hub (links every run + describes
-    the platform).
-  - `daily / weekly / monthly` notes = time-based rollup MOCs.
+> **v2 changes (2026-05-29):** the vault now stores **complete** data (every observation, not
+> summaries), adds **per-SKU / per-city / per-pincode** entity nodes, and uses **real-basename
+> links** instead of alias links (v1 relied on aliases, which Obsidian does **not** resolve — see
+> §2.2, the most important correction in this version). One generator, `tools/vault_build.py`,
+> rebuilds the whole graph from the CSV. All illustrative links below are written in `code` so
+> they don't pollute the graph as placeholder nodes.
 
 ---
 
-## 2. Conventions we adopt (and why)
+## 1. Obsidian mechanics that drive the design (verified)
 
-| Convention | Rule | Why |
+Verified against the official Help (`obsidian.md/help`), the changelog, and forum staff posts
+(sources at the bottom). The facts that shape every decision below:
+
+1. **Wikilinks resolve by _basename_** — folder path and the `.md` extension are ignored, and
+   matching is **case-insensitive**. So **every note basename must be globally unique**; a
+   duplicate basename silently mis-resolves (Obsidian picks one, no warning). The build asserts
+   uniqueness and aborts on any collision.
+2. **Aliases do NOT resolve a bare link.** A hand-written `[[some alias]]` does **not** point to
+   the note that declares that alias — Obsidian only ever inserts the `[[RealName|alias]]` form
+   via autocomplete. **Therefore links must target the real basename.** (v1's `[[blinkit (platform
+   hub)]]`-style links were dead placeholders on import — fixed in v2.)
+3. **Graph edges come from _body_ wikilinks only.** Frontmatter "Link"-type properties do **not**
+   create graph edges in core Obsidian; **tags do not create edges** between notes either. So
+   every structural relationship is a plain `[[wikilink]]` in the note **body**; frontmatter is
+   metadata/query only.
+4. **Large rendered tables freeze Obsidian** (staff-reproduced jank starts in the low hundreds of
+   rows). A vault of thousands of notes + tens of thousands of links is fine, but a single big
+   rendered table is not. **Complete data therefore lives in fenced ` ```csv ` code blocks**
+   (cheap to render at any size); rendered Markdown tables are kept short (summaries only).
+5. **Tags** allow letters/digits/`_`/`-`/`/` but **must contain a non-numeric char** — a bare
+   `#110001` is invalid, so numeric facets are prefixed (`#pin/110001`).
+6. **Filename/link-safe characters:** `[ ] # ^ |` (and `/ \ :`) break filenames and links; spaces
+   and numbers are fine. Basenames are normalized accordingly.
+7. **Zero plugins required.** Body links, graph, properties and tags are all core; nothing here
+   needs Dataview/Bases. A minimal `.obsidian/graph.json` (color groups by note-type/platform) is
+   shipped so the graph is legible on first open.
+8. **YAML:** spaces (never tabs), `---` on line 1, UTF-8 (no BOM), no wikilinks inside
+   frontmatter, scalars with `: # | [ ]` quoted.
+
+---
+
+## 2. Conventions we adopt
+
+### 2.1 Globally-unique, clean basenames
+Resolution is by basename, so every basename is unique across the whole vault. Run notes are
+platform-prefixed (the bare run-id would collide between platforms in the same window). Entity
+nodes use their natural identifier; the build normalizes away unsafe characters and verifies
+uniqueness.
+
+### 2.2 Links target the REAL basename (no alias reliance)
+Because a bare `[[alias]]` does not resolve, the generator emits the **real basename** as the
+link target (optionally `[[basename|display]]` for nicer display). Frontmatter `aliases:` may
+still be present for human search/autocomplete, but the graph never depends on it.
+
+### 2.3 Body links carry the graph; frontmatter is metadata
+Every structural edge is a `[[wikilink]]` in the body (nav lines, "SKUs seen", "Cities covered",
+hub link-lists). Frontmatter holds flat, machine-parseable metadata + facet `tags:` only.
+
+### 2.4 Complete data in code blocks, summaries in tables
+Each note's full record is a fenced ` ```csv ` block (every relevant row). Short rendered tables
+(run index, cheapest-observed) are summaries for humans; they never carry the full dataset.
+
+### 2.5 Canonical link-name map (real basenames)
+
+| Concept | File | Wikilink |
 |---|---|---|
-| **Globally-unique basenames** | Run notes are `runs/<platform>/<platform>-<RUN_ID>.md`, e.g. `blinkit-2026-05-21-1600.md`. | Wikilinks resolve by basename; `<RUN_ID>` alone (`2026-05-21-1600`) would collide between platforms in the same run window. Prefixing with platform guarantees uniqueness. |
-| **Body links carry the graph** | All structural relations are `[[wikilinks]]` in the body. | Graph edges come from body links on every Obsidian version, no plugins (§1.2). |
-| **Clean filenames + contract aliases** | Hubs/dailies named cleanly; contract strings (`<platform> (platform hub)`, `<date> (daily)`) added as `aliases`. | Satisfies the interface contract's link names while keeping filenames sane (§1.5). |
-| **Frontmatter = flat metadata** | One YAML block, scalar/list values, the exact keys the contract names. | Machine-readable for ML slicing + idempotent regeneration; not relied on for edges. |
-| **Tags = facets** | `#platform/<p>`, `#verdict/<V>`, `#shape/<national\|per-pincode>`, `#run`, `#daily`, … | Faceted filtering without polluting the link hierarchy (§1.4). |
-| **MOC hierarchy** | `index` → `platforms/<p>` (hub) and `index` → latest dailies. | Standard LYT/MOC pattern; gives the graph clear central hubs (§1.6). |
-| **Time spine** | `run → daily → weekly → monthly`, each links *up* and the rollup links *down*. | Bidirectional links = strong, navigable trend backbone; placeholders keep it connected before rollups exist (§1.1). |
-| **Idempotent generation** | Re-running a generator for the same RUN_ID/date fully **overwrites** that note and **de-dupes** the CSV by `(run_id, platform, canonical, pincode)`. | Cron retries / self-heal re-runs must not double-count. |
-| **Deterministic, stdlib-only** | No LLM, no pip deps; same input → byte-identical output. | Cheap, runs in the cron loop, reproducible history. |
-
-### 2.1 Canonical link-name map (use these exact spellings)
-
-| Concept | File | Wikilink(s) that resolve to it |
-|---|---|---|
-| Home MOC | `vault/index.md` | `[[index]]`, `[[Jivo Price Intelligence — Index]]` |
-| Platform hub | `vault/platforms/<p>.md` | `[[<p>]]`, `[[<p> (platform hub)]]` |
+| Home MOC | `vault/index.md` | `[[index]]` |
+| Platform hub | `vault/platforms/<p>.md` | `[[<p>]]` |
 | Run note | `vault/runs/<p>/<p>-<RUN_ID>.md` | `[[<p>-<RUN_ID>]]` |
-| Daily | `vault/daily/<YYYY-MM-DD>.md` | `[[<YYYY-MM-DD>]]`, `[[<YYYY-MM-DD> (daily)]]` |
-| Weekly | `vault/weekly/<YYYY-Www>.md` | `[[<YYYY-Www>]]`, `[[<YYYY-Www> (weekly)]]` |
-| Monthly | `vault/monthly/<YYYY-MM>.md` | `[[<YYYY-MM>]]`, `[[<YYYY-MM> (monthly)]]` |
+| SKU hub | `vault/skus/<slug>.md` | `[[<slug>]]` |
+| SKU MOC | `vault/skus/skus-index.md` | `[[skus-index]]` |
+| City hub | `vault/locations/<City>.md` | `[[<City>]]` |
+| Pincode node | `vault/locations/pincodes/<pin>.md` | `[[<pin>]]` |
+| Locations MOC | `vault/locations/locations-index.md` | `[[locations-index]]` |
+| Daily | `vault/daily/<YYYY-MM-DD>.md` | `[[<YYYY-MM-DD>]]` |
+| Weekly | `vault/weekly/<YYYY-Www>.md` | `[[<YYYY-Www>]]` (ISO `%G-W%V`) |
+| Monthly | `vault/monthly/<YYYY-MM>.md` | `[[<YYYY-MM>]]` |
 
-> Week id is **ISO-8601 week** (`%G-W%V`), so the week a date belongs to is computed
-> the same way everywhere (e.g. `2026-05-21` → `2026-W21`).
+(The `[[…]]` entries above are written in code so they document the format without becoming graph nodes.)
 
----
-
-## 3. Graph topology this produces
-
-```
-                         [[index]]   (Home MOC)
-                        /     |      \
-        [[blinkit]]  [[amazon]] [[flipkart]] ...   (platform hubs / MOCs)
-            |              |
-   +--------+--------+     +----...
-   |        |        |
-[[blinkit-..-0900]] [[blinkit-..-1600]] ...        (run notes)
-   |  \              |  \
-   |   `--> [[blinkit-..-0900]] (prev run, back-edge)
-   v
-[[2026-05-21]] (daily) --> [[2026-W21]] (weekly) --> [[2026-05]] (monthly)
-   ^                          ^                         ^
-   |__ all of today's runs    |__ all of week's dailies |__ all of month's weeks
-```
-
-Result: platform hubs and dailies become the **large hub nodes**; runs cluster under
-their platform and thread along the date spine — exactly what a price-history graph
-should look like.
+### 2.6 Tags = facets (filter, color the graph)
+`type/<run|sku-hub|city-hub|pincode|platform-hub|daily|weekly|monthly>`, `platform/<p>`,
+`verdict/<V>`, `shape/<national|per-pincode>`, `pin/<pincode>`, plus `moc`/`home`.
 
 ---
 
-## 4. Machine-readable history (for the future ML model)
+## 3. Graph topology
 
-`data/<platform>/history.csv`, one row per `(run, sku, location)` observation:
+```
+                              index   (Home MOC)
+              /        |          |            |          \
+     platform hubs     |     skus-index   locations-index   time spine
+        |              |        |                 |
+   run note  ----------+-->  SKU hub          City hub --> pincode node
+   (complete csv of    |    (price history    (its pincodes (its SKUs +
+    every observation) |     + cities + runs)  + SKUs)        csv)
+        |              |
+        v              v
+     daily   ----->  weekly  ----->  monthly      (linked both directions)
+```
+
+A run note links **up** to its platform hub, day/week/month, prev/next run, and **out** to every
+SKU hub and city it observed. SKU hubs link to their platforms, cities and runs; city hubs link
+their pincodes and SKUs; pincode nodes link up to their city. Daily↔weekly↔monthly link both
+directions. The MOCs (`skus-index`, `locations-index`) are intentional high-degree hubs.
+
+---
+
+## 4. Machine-readable history (the source of truth)
+
+`data/<platform>/history.csv`, one row per `(run, SKU, location)`:
 
 ```
 run_id,date_ist,platform,canonical_sku,city,pincode,price,mrp,discount_pct,in_stock
 ```
 
-- `price` = the row's `sale`. National-shape platforms emit `city="All India",
-  pincode="-"`; per-pincode platforms emit the real city/pincode per observation.
-- Append-only across runs, but **idempotent within a run**: re-running a RUN_ID
-  rewrites only that run's rows (de-dup key = `run_id,platform,canonical_sku,pincode`).
-- Header written once; stable column order; deterministic row sort so diffs are clean
-  and git-friendly. This is the training table — the Markdown notes are the human view
-  of the same data.
+Append-only across runs; national platforms emit `city="All India", pincode="-"`. The vault is
+regenerated **from this file**, so historical notes are limited to these columns (display names,
+pack, store, per-litre etc. exist only in the latest `platforms/<p>/result.json` and are used
+as best-effort enrichment for SKU display names).
 
 ---
 
-## 5. The two generators
+## 5. The generator & pipeline
 
-- **`tools/vault_note.py <platform> <RUN_ID>`** — per-run. Reads
-  `platforms/<platform>/result.json` (handles both `perPin` and `allRows` /
-  national vs per-pincode shapes) and, if present,
-  `reviews/<platform>-<RUN_ID>.json` (the verdict). Writes the run note, upserts the
-  platform hub, upserts the daily note, and appends to `history.csv`. Idempotent.
-- **`tools/vault_rollup.py <daily|weekly|monthly> [date]`** — (re)builds a
-  time-rollup note from existing run notes / `history.csv`. Default date = today (IST).
+- **`tools/vault_build.py`** — the single deterministic, stdlib-only rebuilder. Reads all
+  `data/*/history.csv` (+ best-effort enrichment from `platforms/*/result.json` and verdicts from
+  `reviews/*.json`) and regenerates the **entire** vault: run notes, SKU/city/pincode hubs, the
+  two MOCs, platform hubs, daily/weekly/monthly rollups, `index.md`, and `.obsidian/`. Idempotent
+  (identical CSVs → byte-identical vault); asserts globally-unique basenames; run with `--check`
+  or plain (it always verifies uniqueness and exits non-zero on a collision).
+- **Live pipeline:** `run.sh` (per platform, in parallel) scrapes and **appends the run's rows to
+  `history.csv`**; `run_all.sh` then runs `tools/vault_build.py` **once** after the sweep + heal
+  pass (single process, so the whole-graph rebuild never races the parallel platforms) and
+  git-pushes. Cron: 09:00 / 12:00 / 16:00 IST.
 
-Both: Python 3 stdlib only, deterministic, no LLM, safe to run inside the cron loop.
+`tools/vault_note.py` / `tools/vault_rollup.py` (v1) remain in `run.sh` as the per-run CSV-append +
+provisional notes; `vault_build.py` is the authority and overwrites them with the complete,
+connected graph at the end of every sweep.
 
 ---
 
 ## Sources
-- [Obsidian Help — Graph view](https://obsidian.md/help/Plugins/Graph+view)
-- [Obsidian Help — Internal links & backlinks (DeepWiki mirror)](https://deepwiki.com/obsidianmd/obsidian-help/4.2-internal-links-and-graph-view)
-- [Obsidian skills — Internal links & wikilinks](https://deepwiki.com/kepano/obsidian-skills/2.2-internal-links-and-wikilinks)
-- [Obsidian skills — Frontmatter properties](https://instagit.com/kepano/obsidian-skills/what-are-obsidian-frontmatter-properties/)
-- [Obsidian skills — Aliases](https://instagit.com/kepano/obsidian-skills/what-is-the-purpose-of-aliases-in-obsidian-frontmatter/)
-- [Obsidian forum — Wikilinks in YAML frontmatter](https://forum.obsidian.md/t/wikilinks-in-yaml-front-matter/10052)
+- Obsidian Help — [Internal links](https://obsidian.md/help/Linking+notes+and+files/Internal+links) · [Aliases](https://obsidian.md/help/aliases) · [Graph view](https://obsidian.md/help/plugins/graph) · [Tags](https://obsidian.md/help/tags) · [Properties](https://obsidian.md/help/properties)
+- Forum — [aliases not honored in wikilink resolution](https://forum.obsidian.md/t/wikilink-resolution-does-not-honor-frontmatter-aliases/113902) · [large table slowness](https://forum.obsidian.md/t/large-markdown-table-causes-slowness/78593) · [forbidden filename characters](https://forum.obsidian.md/t/list-of-all-forbidden-filename-characters/103977)
 - [Obsidian Rocks — Maps of Content](https://obsidian.rocks/maps-of-content-effortless-organization-for-notes/)
-- [dsebastien.net — Maps of Content (complete guide)](https://www.dsebastien.net/2022-05-15-maps-of-content/)

@@ -1,16 +1,17 @@
 ---
+type: run
 platform: flipkart-minutes
 run_id: 2026-05-29-1600
 date: 2026-05-29
-time_ist: 16:04
+time_ist: "16:00"
 verdict: OK
+shape: per-pincode
 rows: 34
 unique_skus: 9
+in_stock_rows: 20
 pincodes_with_jivo: 13
-pincodes_total: 40
-shape: per-pincode
 tags:
-  - run
+  - type/run
   - platform/flipkart-minutes
   - verdict/OK
   - shape/per-pincode
@@ -18,44 +19,68 @@ tags:
 
 # flipkart-minutes — run 2026-05-29-1600
 
-Up: [[flipkart-minutes (platform hub)]] · Day: [[2026-05-29 (daily)]] · Prev: [[flipkart-minutes-2026-05-29-1200]]
+Up: [[flipkart-minutes]] · Day: [[2026-05-29]] · Week: [[2026-W22]] · Month: [[2026-05]] · Prev: [[flipkart-minutes-2026-05-29-1200]]
 
 - **Verdict:** OK
-- **Captured (IST):** 2026-05-29 16:04 IST
-- **Coverage:** 13/40 pincodes carry Jivo · 34 rows · 9 unique SKUs
-- **Note:** Your organization has disabled Claude subscription access for Claude Code · Use an Anthropic API key instead, or ask your admin to enable access
+- **Captured:** 2026-05-29 16:00 IST
+- **Coverage:** 13 pincodes carry Jivo · 34 rows · 9 unique SKUs
+- **Cheapest (in-stock):** [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — ₹169 (Gurgaon)
+- **Top discount:** [[jivo-pomace-olive-oil-plastic-bottle-1l]] — 64.6% off (Gurgaon)
 
-- **Cheapest (per litre, in-stock):** JIVO Cold Pressed Pure Cooking Mustard Oil Can — ₹167.5/L (Gurgaon)
-- **Top discount:** JIVO Pomace Olive Oil Plastic Bottle — 64.6% off (Gurgaon)
+## SKUs seen
+- [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L) — ₹238 (36.5% off) · in 12 pincodes
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L) — ₹670 (33.0% off) · in 2 pincodes
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹929 (25.7% off) · in 1 pincodes
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L) — ₹169 (33.7% off) · in 4 pincodes
+- [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L) — ₹1919 (31.4% off) · in 3 pincodes
+- [[jivo-mineral-water-na]] — JIVO Mineral Water — ₹22 · in 5 pincodes
+- [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L) — ₹371 (64.6% off) · in 4 pincodes
+- [[jivo-pomace-olive-oil-tin-5l]] — JIVO Pomace Olive Oil Tin (5 L) — ₹2191 (56.2% off) · in 1 pincodes
+- [[jivo-soybean-oil-soyabean-oil-pouch-1l]] — JIVO Soybean Oil Soyabean Oil Pouch (1 L) — ₹139 (2.1% off) · in 2 pincodes
 
-## SKUs
+## Cities covered
+[[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Coimbatore]] · [[Gurgaon]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Noida]] · [[Visakhapatnam]]
 
-| SKU | Pack | Price | MRP | Discount | In stock |
-|---|---|---:|---:|---:|:--:|
-| JIVO Cold Press Canola Oil Plastic Bottle | 1 L | 238 | 375 | 36.5% | yes |
-| JIVO Cold Pressed Pure Cooking Mustard Oil Can | 4 L | 670 | 1000 | 33.0% | yes |
-| JIVO Cold Pressed Pure Cooking Mustard Oil Can | 5 L | 929 | 1250 | 25.7% | yes |
-| JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle | 1 L | 169 | 255 | 33.7% | yes |
-| JIVO Extra Light Olive Oil Can | 2 L | 1919 | 2799 | 31.4% | yes |
-| JIVO Mineral Water |  | 22 | 22 | 0.0% | no |
-| JIVO Pomace Olive Oil Plastic Bottle | 1 L | 371 | 1049 | 64.6% | yes |
-| JIVO Pomace Olive Oil Tin | 5 L | 2191 | 4999 | 56.2% | yes |
-| JIVO Soybean Oil Soyabean Oil Pouch | 1 L | 139 | 142 | 2.1% | no |
+## Complete observations (34 rows)
+Every SKU × location captured this run (the full record; see `data/flipkart-minutes/history.csv`).
 
-## Per-city coverage
-
-| City | Pincodes with Jivo | SKUs seen |
-|---|--:|--:|
-| Ahmedabad | 2 | 3 |
-| Bengaluru | 2 | 1 |
-| Chennai | 1 | 1 |
-| Coimbatore | 1 | 1 |
-| Gurgaon | 2 | 5 |
-| Kolkata | 1 | 4 |
-| Lucknow | 1 | 2 |
-| Mumbai | 1 | 1 |
-| Noida | 1 | 8 |
-| Visakhapatnam | 1 | 1 |
+```csv
+canonical_sku,city,pincode,price,mrp,discount_pct,in_stock
+jivo-cold-press-canola-oil-plastic-bottle-1l,Ahmedabad,380009,245,250,2,0
+jivo-cold-press-canola-oil-plastic-bottle-1l,Ahmedabad,380054,245,250,2,0
+jivo-cold-press-canola-oil-plastic-bottle-1l,Bengaluru,560038,250,256,2.3,0
+jivo-cold-press-canola-oil-plastic-bottle-1l,Bengaluru,560066,265,271,2.2,0
+jivo-cold-press-canola-oil-plastic-bottle-1l,Chennai,600040,265,375,29.3,1
+jivo-cold-press-canola-oil-plastic-bottle-1l,Coimbatore,641002,250,375,33.3,1
+jivo-cold-press-canola-oil-plastic-bottle-1l,Gurgaon,122002,238,375,36.5,1
+jivo-cold-press-canola-oil-plastic-bottle-1l,Gurgaon,122011,238,375,36.5,1
+jivo-cold-press-canola-oil-plastic-bottle-1l,Kolkata,700019,265,271,2.2,0
+jivo-cold-press-canola-oil-plastic-bottle-1l,Lucknow,226010,267,375,28.8,1
+jivo-cold-press-canola-oil-plastic-bottle-1l,Noida,201309,238,375,36.5,1
+jivo-cold-press-canola-oil-plastic-bottle-1l,Visakhapatnam,530017,250,375,33.3,1
+jivo-cold-pressed-pure-cooking-mustard-oil-can-4l,Gurgaon,122002,670,1000,33,1
+jivo-cold-pressed-pure-cooking-mustard-oil-can-4l,Gurgaon,122011,670,1000,33,1
+jivo-cold-pressed-pure-cooking-mustard-oil-can-5l,Noida,201309,929,1250,25.7,1
+jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,Gurgaon,122002,169,255,33.7,1
+jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,Gurgaon,122011,169,255,33.7,1
+jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,Lucknow,226010,183,255,28.2,1
+jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,Noida,201309,169,255,33.7,1
+jivo-extra-light-olive-oil-can-2l,Gurgaon,122002,1919,2799,31.4,1
+jivo-extra-light-olive-oil-can-2l,Gurgaon,122011,1919,2799,31.4,1
+jivo-extra-light-olive-oil-can-2l,Noida,201309,1919,2799,31.4,1
+jivo-mineral-water-na,Ahmedabad,380009,22,22,0,0
+jivo-mineral-water-na,Ahmedabad,380054,22,22,0,0
+jivo-mineral-water-na,Kolkata,700019,23,23,0,0
+jivo-mineral-water-na,Mumbai,400069,22,22,0,0
+jivo-mineral-water-na,Noida,201309,23,23,0,0
+jivo-pomace-olive-oil-plastic-bottle-1l,Ahmedabad,380054,427,436,2.1,0
+jivo-pomace-olive-oil-plastic-bottle-1l,Gurgaon,122011,371,1049,64.6,1
+jivo-pomace-olive-oil-plastic-bottle-1l,Kolkata,700019,438,447,2,0
+jivo-pomace-olive-oil-plastic-bottle-1l,Noida,201309,371,1049,64.6,1
+jivo-pomace-olive-oil-tin-5l,Noida,201309,2191,4999,56.2,1
+jivo-soybean-oil-soyabean-oil-pouch-1l,Kolkata,700019,139,142,2.1,0
+jivo-soybean-oil-soyabean-oil-pouch-1l,Noida,201309,174,178,2.2,0
+```
 
 ---
-*Auto-generated by `tools/vault_note.py` — see [[VAULT-SPEC]]. Do not hand-edit.*
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]]. Do not hand-edit.*

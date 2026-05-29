@@ -8,3 +8,5 @@ logs/
 secrets.env
 __pycache__/
 .gitpush.lock
+vault/.obsidian/workspace.json
+vault/.obsidian/workspace-mobile.json
