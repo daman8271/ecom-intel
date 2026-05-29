@@ -1,0 +1,92 @@
+---
+type: sku-hub
+canonical_sku: jivo-cold-pressed-pure-cooking-mustard-oil-can-5l
+display_name: JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)
+platforms:
+  - flipkart
+  - flipkart-minutes
+first_seen: 2026-05-21
+last_seen: 2026-05-29
+observations: 49
+min_price: 929
+max_price: 1172
+latest_price: 929
+tags:
+  - type/sku-hub
+  - platform/flipkart
+  - platform/flipkart-minutes
+---
+
+# jivo-cold-pressed-pure-cooking-mustard-oil-can-5l
+
+Up: [[skus-index]]
+
+**JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)**
+
+## Sold on
+- [[flipkart]] — latest ₹1172 (6.2% off)
+- [[flipkart-minutes]] — latest ₹929 (25.7% off)
+
+## Available in cities
+[[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Noida]]
+
+## Runs that observed this SKU (23)
+[[flipkart-minutes-2026-05-29-1600]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]] · [[flipkart-minutes-2026-05-28-0900]] · [[flipkart-minutes-2026-05-27-1600]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-27-0900]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-26-0900]] · [[flipkart-minutes-2026-05-25-1600]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-25-0900]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-23-0900]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]] · [[flipkart-2026-05-21-1323]]
+
+## Price history (49 observations)
+
+```csv
+run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
+2026-05-21-1305,2026-05-21,flipkart-minutes,Delhi,110027,931,1250,25.5,1
+2026-05-21-1305,2026-05-21,flipkart-minutes,Gurgaon,122011,931,1250,25.5,1
+2026-05-21-1323,2026-05-21,flipkart,All India,-,1172,1250,6.2,1
+2026-05-22-0900,2026-05-22,flipkart-minutes,Delhi,110027,931,1250,25.5,1
+2026-05-22-0900,2026-05-22,flipkart-minutes,Gurgaon,122011,931,1250,25.5,1
+2026-05-22-0900,2026-05-22,flipkart-minutes,Noida,201309,931,1250,25.5,1
+2026-05-22-1600,2026-05-22,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-22-1600,2026-05-22,flipkart-minutes,Gurgaon,122011,929,1250,25.7,1
+2026-05-22-1600,2026-05-22,flipkart-minutes,Noida,201301,929,1250,25.7,1
+2026-05-23-0900,2026-05-23,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-23-0900,2026-05-23,flipkart-minutes,Gurgaon,122011,929,1250,25.7,1
+2026-05-23-0900,2026-05-23,flipkart-minutes,Noida,201301,929,1250,25.7,1
+2026-05-23-0900,2026-05-23,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-23-1200,2026-05-23,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-23-1200,2026-05-23,flipkart-minutes,Ghaziabad,201014,929,1250,25.7,1
+2026-05-23-1200,2026-05-23,flipkart-minutes,Noida,201301,929,1250,25.7,1
+2026-05-23-1200,2026-05-23,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-23-1600,2026-05-23,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-23-1600,2026-05-23,flipkart-minutes,Gurgaon,122011,929,1250,25.7,1
+2026-05-23-1600,2026-05-23,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-24-0900,2026-05-24,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-24-1200,2026-05-24,flipkart-minutes,Ghaziabad,201014,929,1250,25.7,1
+2026-05-24-1200,2026-05-24,flipkart-minutes,Gurgaon,122011,929,1250,25.7,1
+2026-05-24-1200,2026-05-24,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-24-1600,2026-05-24,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-24-1600,2026-05-24,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-25-0900,2026-05-25,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-25-1200,2026-05-25,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-25-1200,2026-05-25,flipkart-minutes,Gurgaon,122011,929,1250,25.7,1
+2026-05-25-1200,2026-05-25,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-25-1600,2026-05-25,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-25-1600,2026-05-25,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-26-0900,2026-05-26,flipkart-minutes,Gurgaon,122011,929,1250,25.7,1
+2026-05-26-0900,2026-05-26,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-26-1200,2026-05-26,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-26-1200,2026-05-26,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-26-1600,2026-05-26,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-27-0900,2026-05-27,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-27-0900,2026-05-27,flipkart-minutes,Noida,201301,929,1250,25.7,1
+2026-05-27-1200,2026-05-27,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-27-1600,2026-05-27,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-27-1600,2026-05-27,flipkart-minutes,Noida,201301,929,1250,25.7,1
+2026-05-28-0900,2026-05-28,flipkart-minutes,Noida,201301,929,1250,25.7,1
+2026-05-28-0900,2026-05-28,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-29-0900,2026-05-29,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-29-0900,2026-05-29,flipkart-minutes,Noida,201301,929,1250,25.7,1
+2026-05-29-1200,2026-05-29,flipkart-minutes,Delhi,110027,929,1250,25.7,1
+2026-05-29-1200,2026-05-29,flipkart-minutes,Noida,201309,929,1250,25.7,1
+2026-05-29-1600,2026-05-29,flipkart-minutes,Noida,201309,929,1250,25.7,1
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*

@@ -1,0 +1,93 @@
+{
+  "collapse-filter": true,
+  "search": "",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "tag:#type/run",
+      "color": {
+        "a": 1,
+        "rgb": 5017087
+      }
+    },
+    {
+      "query": "tag:#type/sku-hub",
+      "color": {
+        "a": 1,
+        "rgb": 16756768
+      }
+    },
+    {
+      "query": "tag:#type/city-hub",
+      "color": {
+        "a": 1,
+        "rgb": 3523211
+      }
+    },
+    {
+      "query": "tag:#type/pincode",
+      "color": {
+        "a": 1,
+        "rgb": 10151604
+      }
+    },
+    {
+      "query": "tag:#type/platform-hub",
+      "color": {
+        "a": 1,
+        "rgb": 16735354
+      }
+    },
+    {
+      "query": "tag:#type/daily",
+      "color": {
+        "a": 1,
+        "rgb": 12031220
+      }
+    },
+    {
+      "query": "tag:#type/weekly",
+      "color": {
+        "a": 1,
+        "rgb": 10451690
+      }
+    },
+    {
+      "query": "tag:#type/monthly",
+      "color": {
+        "a": 1,
+        "rgb": 8411861
+      }
+    },
+    {
+      "query": "tag:#moc",
+      "color": {
+        "a": 1,
+        "rgb": 16179294
+      }
+    },
+    {
+      "query": "tag:#home",
+      "color": {
+        "a": 1,
+        "rgb": 16166229
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1.1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.5,
+  "repelStrength": 12,
+  "linkStrength": 1,
+  "linkDistance": 130,
+  "scale": 1,
+  "close": true
+}
