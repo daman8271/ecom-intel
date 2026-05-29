@@ -647,6 +647,13 @@ def build(platform, xlsx_path):
     prev_run = runs[-2] if len(runs) >= 2 else None
     n_runs = len(runs)
 
+    # National platforms (Amazon marketplace) scrape a single national location;
+    # per-location framing then reads as noise ("OOS locations: 1, Cities: All India").
+    # Detect that and reshape STOCK-OUT and TREND sections below.
+    NATIONAL = bool(result_rows) and len(
+        {(r.get("city") or "", r.get("pincode") or "") for r in result_rows}
+    ) <= 1
+
     # captured_at -> IST string for the subtitle
     cap = (result.get("summary") or {}).get("captured_at")
     gen_when = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -683,38 +690,59 @@ def build(platform, xlsx_path):
 
     # ============================================================ STOCK-OUT RISK
     S.section("1. STOCK-OUT RISK",
-              "Currently out-of-stock / low coverage, plus SKUs trending toward stockout.")
+              "Currently out-of-stock ASINs." if NATIONAL
+              else "Currently out-of-stock / low coverage, plus SKUs trending toward stockout.")
 
     # current OOS by SKU
     OOS_TABLE_CAP = 40
     oos_skus = [(sku, e) for sku, e in per_sku_cur.items() if e["n_oos"] > 0]
     oos_skus.sort(key=lambda x: (-x[1]["n_oos"], x[1]["label"]))
     if oos_skus:
-        data, fills = [], []
-        for sku, e in oos_skus[:OOS_TABLE_CAP]:
-            cities = sorted(e["oos_cities"])
-            shown = ", ".join(cities[:6]) + (f" +{len(cities) - 6} more" if len(cities) > 6 else "")
-            data.append([e["label"], e["n_oos"], e["n_loc"], len(cities), shown])
-            frac = e["n_oos"] / e["n_loc"] if e["n_loc"] else 0
-            fills.append(RED if frac >= LOW_STOCK_FRAC else YEL)
-        S.table(["SKU", "OOS locations", "Total locations", "Cities affected",
-                 "Sample cities"], data, fills)
-        if len(oos_skus) > OOS_TABLE_CAP:
-            S.note(f"Showing top {OOS_TABLE_CAP} of {len(oos_skus)} OOS SKUs "
-                   "(sorted by number of locations affected).")
-            S.blank()
-        # Watch call-outs: an aggregate count, plus the genuinely WIDESPREAD ones
-        # (multi-location OOS). Avoids flooding the list with single-location items
-        # on national platforms where every SKU lives at one "location".
-        multi = [(sku, e) for sku, e in oos_skus if e["n_oos"] >= 2]
-        if len(oos_skus) >= 6:
-            watch.append((len(oos_skus) + 60,
-                          f"{len(oos_skus)} SKUs currently out of stock in >=1 location"))
-        for sku, e in (multi if multi else oos_skus[:5]):
-            cities = sorted(e["oos_cities"])
-            watch.append((e["n_oos"] + (10 if e["n_oos"] >= 2 else 0),
-                          f"{e['label']} out of stock in {e['n_oos']} location(s)"
-                          f" across {len(cities)} city/cities"))
+        if NATIONAL:
+            # National marketplace: each SKU is one row, so "OOS locations" / "Cities
+            # affected" are always 1 — drop them; show ASIN + raw availability text.
+            sku_first = {}
+            for rr in result_rows:
+                k = rr.get("canonical") or rr.get("sku_raw") or "?"
+                sku_first.setdefault(k, rr)
+            data, fills = [], []
+            for sku, e in oos_skus[:OOS_TABLE_CAP]:
+                rr = sku_first.get(sku, {})
+                data.append([e["label"], rr.get("asin") or "-",
+                             rr.get("availability_text") or "out of stock"])
+                fills.append(RED)
+            S.table(["SKU", "ASIN", "Availability"], data, fills)
+            if len(oos_skus) > OOS_TABLE_CAP:
+                S.note(f"Showing top {OOS_TABLE_CAP} of {len(oos_skus)} OOS ASINs.")
+                S.blank()
+            if len(oos_skus) >= 6:
+                watch.append((len(oos_skus) + 60,
+                              f"{len(oos_skus)} ASINs currently out of stock"))
+            for sku, e in oos_skus[:5]:
+                watch.append((10, f"{e['label']} currently out of stock"))
+        else:
+            data, fills = [], []
+            for sku, e in oos_skus[:OOS_TABLE_CAP]:
+                cities = sorted(e["oos_cities"])
+                shown = ", ".join(cities[:6]) + (f" +{len(cities) - 6} more" if len(cities) > 6 else "")
+                data.append([e["label"], e["n_oos"], e["n_loc"], len(cities), shown])
+                frac = e["n_oos"] / e["n_loc"] if e["n_loc"] else 0
+                fills.append(RED if frac >= LOW_STOCK_FRAC else YEL)
+            S.table(["SKU", "OOS locations", "Total locations", "Cities affected",
+                     "Sample cities"], data, fills)
+            if len(oos_skus) > OOS_TABLE_CAP:
+                S.note(f"Showing top {OOS_TABLE_CAP} of {len(oos_skus)} OOS SKUs "
+                       "(sorted by number of locations affected).")
+                S.blank()
+            multi = [(sku, e) for sku, e in oos_skus if e["n_oos"] >= 2]
+            if len(oos_skus) >= 6:
+                watch.append((len(oos_skus) + 60,
+                              f"{len(oos_skus)} SKUs currently out of stock in >=1 location"))
+            for sku, e in (multi if multi else oos_skus[:5]):
+                cities = sorted(e["oos_cities"])
+                watch.append((e["n_oos"] + (10 if e["n_oos"] >= 2 else 0),
+                              f"{e['label']} out of stock in {e['n_oos']} location(s)"
+                              f" across {len(cities)} city/cities"))
     else:
         if result_rows:
             S.bullet("No out-of-stock SKUs detected in the current run.", GREEN)
@@ -722,44 +750,77 @@ def build(platform, xlsx_path):
             S.note("No current rows available to assess stock.")
         S.blank()
 
-    # low-coverage (in stock in <50% of locations where it appears, but not all OOS)
-    low = []
-    for sku, e in per_sku_cur.items():
-        known = e["n_in"] + e["n_oos"]
-        if known >= 4 and e["n_oos"] > 0:
-            frac_in = e["n_in"] / known
-            if frac_in < LOW_STOCK_FRAC:
-                low.append([e["label"], e["n_in"], known, fmt_pct(100 * frac_in)])
-    if low:
-        S.section("Low availability (in stock in <50% of carrying locations)")
-        S.table(["SKU", "In stock", "Known locations", "In-stock rate"], low,
-                [YEL] * len(low))
+    # low-coverage (in stock in <50% of locations where it appears, but not all OOS).
+    # Needs >=4 locations per SKU, which never holds on a national single-location feed.
+    if not NATIONAL:
+        low = []
+        for sku, e in per_sku_cur.items():
+            known = e["n_in"] + e["n_oos"]
+            if known >= 4 and e["n_oos"] > 0:
+                frac_in = e["n_in"] / known
+                if frac_in < LOW_STOCK_FRAC:
+                    low.append([e["label"], e["n_in"], known, fmt_pct(100 * frac_in)])
+        if low:
+            S.section("Low availability (in stock in <50% of carrying locations)")
+            S.table(["SKU", "In stock", "Known locations", "In-stock rate"], low,
+                    [YEL] * len(low))
 
-    # trending toward stockout (needs >=2 runs): in-stock rate declining
+    # trending toward stockout (needs >=2 runs).
+    # National: single row per (run, sku), so use flip detection (in-stock <-> OOS).
+    # Per-pincode: keep the in-stock-rate decline analysis.
     if prev_run and runstats:
-        trend = []
-        for sku in sorted(set(runstats[cur_run]) | set(runstats[prev_run])):
-            c = runstats[cur_run].get(sku)
-            p = runstats[prev_run].get(sku)
-            if not c or not p:
-                continue
-            ck = c["n_in"] + c["n_oos"]
-            pk = p["n_in"] + p["n_oos"]
-            if ck < 3 or pk < 3:
-                continue
-            cr = c["n_in"] / ck
-            pr = p["n_in"] / pk
-            drop = pr - cr
-            if drop >= 0.10:  # in-stock rate fell by >=10 pts
-                trend.append([label(sku), fmt_pct(100 * pr), fmt_pct(100 * cr),
-                              fmt_pct(-100 * drop, signed=True)])
-                watch.append((int(drop * 100) + 50,
-                              f"{label(sku)} in-stock rate falling: "
-                              f"{fmt_pct(100 * pr)} -> {fmt_pct(100 * cr)} vs last run"))
-        if trend:
-            S.section("Trending toward stockout (in-stock rate dropping vs last run)")
-            S.table(["SKU", f"Prev ({prev_run})", f"Now ({cur_run})", "Change"],
-                    trend, [RED] * len(trend))
+        if NATIONAL:
+            flips_oos, flips_back = [], []
+            for sku in sorted(set(runstats[cur_run]) | set(runstats[prev_run])):
+                c = runstats[cur_run].get(sku); p = runstats[prev_run].get(sku)
+                if not c or not p:
+                    continue
+                c_in = c["n_in"] > 0; p_in = p["n_in"] > 0
+                if p_in and not c_in:
+                    flips_oos.append(label(sku))
+                elif (not p_in) and c_in:
+                    flips_back.append(label(sku))
+            if flips_oos:
+                S.section("Flipped to OUT OF STOCK since last run")
+                S.table(["SKU", "Status change"],
+                        [[s, f"in stock ({prev_run}) -> OOS ({cur_run})"] for s in flips_oos[:30]],
+                        [RED] * min(30, len(flips_oos)))
+                watch.append((50 + len(flips_oos),
+                              f"{len(flips_oos)} ASIN(s) flipped to OUT OF STOCK since last run"))
+            if flips_back:
+                S.section("Came BACK in stock since last run")
+                S.table(["SKU", "Status change"],
+                        [[s, f"OOS ({prev_run}) -> in stock ({cur_run})"] for s in flips_back[:30]],
+                        [GREEN] * min(30, len(flips_back)))
+                watch.append((30 + len(flips_back),
+                              f"{len(flips_back)} ASIN(s) came back in stock since last run"))
+            if not flips_oos and not flips_back:
+                S.note("No stock-status flips since the previous run.")
+                S.blank()
+        else:
+            trend = []
+            for sku in sorted(set(runstats[cur_run]) | set(runstats[prev_run])):
+                c = runstats[cur_run].get(sku)
+                p = runstats[prev_run].get(sku)
+                if not c or not p:
+                    continue
+                ck = c["n_in"] + c["n_oos"]
+                pk = p["n_in"] + p["n_oos"]
+                if ck < 3 or pk < 3:
+                    continue
+                cr = c["n_in"] / ck
+                pr = p["n_in"] / pk
+                drop = pr - cr
+                if drop >= 0.10:  # in-stock rate fell by >=10 pts
+                    trend.append([label(sku), fmt_pct(100 * pr), fmt_pct(100 * cr),
+                                  fmt_pct(-100 * drop, signed=True)])
+                    watch.append((int(drop * 100) + 50,
+                                  f"{label(sku)} in-stock rate falling: "
+                                  f"{fmt_pct(100 * pr)} -> {fmt_pct(100 * cr)} vs last run"))
+            if trend:
+                S.section("Trending toward stockout (in-stock rate dropping vs last run)")
+                S.table(["SKU", f"Prev ({prev_run})", f"Now ({cur_run})", "Change"],
+                        trend, [RED] * len(trend))
     elif n_runs <= 1:
         S.note("Stockout-trajectory analysis needs >=2 runs; shows here once more history exists.")
         S.blank()
@@ -896,90 +957,139 @@ def build(platform, xlsx_path):
                     S.note("No priced rows available in the current run.")
                     S.blank()
 
-    # ============================================================ COVERAGE TREND
-    S.section("3. COVERAGE TREND",
-              "Locations carrying Jivo over time, and notable gaps.")
-
-    # per-run distinct location count (from history)
-    if runstats:
-        cov = []
-        run_loc = {}  # run -> set of locations carrying any Jivo
-        # recompute distinct carrying locations per run from raw history
-        carry = defaultdict(set)
-        for r in history_rows:
-            run = r.get("run_id")
-            st = _f(r.get("in_stock"))
-            # a location "carries" the SKU if it appears in history (it was found)
-            key = (r.get("city") or "") + "|" + (r.get("pincode") or "")
-            if run:
-                carry[run].add(key)
-        for run in runs:
-            run_loc[run] = carry.get(run, set())
-        prev_n = None
-        for run in runs:
-            n = len(run_loc[run])
-            delta = (n - prev_n) if prev_n is not None else None
-            arrow = ""
-            if delta is not None:
-                arrow = "up" if delta > 0 else ("down" if delta < 0 else "flat")
-            cov.append([run_date(history_rows, run), run, n,
-                        (f"{'+' if delta and delta > 0 else ''}{delta}" if delta is not None else "-"),
-                        arrow])
-            prev_n = n
-        S.table(["Date", "Run", "Locations carrying Jivo", "delta vs prev", "Trend"], cov)
-
-        # coverage drop call-out + lost locations vs previous run
-        if prev_run:
-            now_set = run_loc.get(cur_run, set())
-            prev_set = run_loc.get(prev_run, set())
-            lost = prev_set - now_set
-            gained = now_set - prev_set
-            if lost:
-                # group lost by city
-                lost_cities = defaultdict(int)
-                for k in lost:
-                    city = k.split("|", 1)[0] or "?"
-                    lost_cities[city] += 1
-                S.section("Locations that LOST coverage since last run")
-                rows_lost = [[c, n] for c, n in sorted(lost_cities.items(),
-                                                       key=lambda x: -x[1])]
-                S.table(["City", "Locations lost"], rows_lost, [YEL] * len(rows_lost))
-                top_city = max(lost_cities.items(), key=lambda x: x[1])
-                watch.append((len(lost) + 20,
-                              f"Coverage dropped: {len(lost)} location(s) lost Jivo vs last run"
-                              f" (most in {top_city[0]})"))
-            if gained:
-                watch.append((len(gained),
-                              f"Coverage grew: {len(gained)} new location(s) now carry Jivo"))
-    else:
-        S.note("No history yet for a coverage trend; current coverage shown below.")
+    # ============================================================ COVERAGE / CATALOGUE TREND
+    if NATIONAL:
+        S.section("3. CATALOGUE TREND",
+                  "ASINs scraped and in-stock count per run.")
+        if runstats:
+            cov = []
+            recent = runs[-12:]
+            prev_in_n = None
+            for run in recent:
+                rs = runstats[run]
+                tot_sku = len(rs)
+                tot_in = sum(1 for s in rs.values() if s["n_in"] > 0)
+                tot_oos = sum(1 for s in rs.values() if s["n_oos"] > 0)
+                delta = (tot_in - prev_in_n) if prev_in_n is not None else None
+                arrow = ""
+                if delta is not None:
+                    arrow = "up" if delta > 0 else ("down" if delta < 0 else "flat")
+                cov.append([run_date(history_rows, run), run, tot_sku, tot_in, tot_oos,
+                            (f"{'+' if delta and delta > 0 else ''}{delta}" if delta is not None else "-"),
+                            arrow])
+                prev_in_n = tot_in
+            if len(runs) > len(recent):
+                S.note(f"Showing last {len(recent)} of {len(runs)} runs.")
+            S.table(["Date", "Run", "ASINs scraped", "In stock", "Out of stock",
+                     "delta in-stock", "Trend"], cov)
+            if len(cov) >= 2:
+                last_in = cov[-1][3]; prev_in_val = cov[-2][3]
+                d = last_in - prev_in_val
+                if d <= -5:
+                    watch.append((30 + abs(d),
+                                  f"In-stock ASIN count fell by {-d} since last run "
+                                  f"({prev_in_val} -> {last_in})"))
+                elif d >= 5:
+                    watch.append((20 + d,
+                                  f"In-stock ASIN count grew by {d} since last run "
+                                  f"({prev_in_val} -> {last_in})"))
+        else:
+            S.note("No history yet for a catalogue trend.")
+            S.blank()
+        cur_in = sum(1 for r in result_rows if in_stock_of(r) is True)
+        cur_oos = sum(1 for r in result_rows if in_stock_of(r) is False)
+        cur_unk = len(result_rows) - cur_in - cur_oos
+        S.section("Current catalogue snapshot")
+        S.bullet(f"{len(result_rows)} ASINs tracked this run.")
+        S.bullet(f"{cur_in} in stock  ·  {cur_oos} out of stock"
+                 + (f"  ·  {cur_unk} not found / blocked" if cur_unk else "") + ".")
+        if len(result_rows):
+            S.bullet(f"In-stock rate: {fmt_pct(100 * cur_in / len(result_rows))}.")
         S.blank()
+    else:
+        S.section("3. COVERAGE TREND",
+                  "Locations carrying Jivo over time, and notable gaps.")
 
-    # current coverage snapshot from result.json summary + gaps
-    summ = result.get("summary") or {}
-    pin_with = summ.get("pincodes_with_jivo")
-    pin_tot = summ.get("pincodes_total")
-    if pin_with is not None and pin_tot:
-        S.section("Current coverage snapshot")
-        S.bullet(f"{pin_with} of {pin_tot} locations probed currently carry Jivo "
-                 f"({fmt_pct(100 * pin_with / pin_tot)}).")
-        if pin_tot - pin_with > 0:
-            watch.append((1, f"{pin_tot - pin_with} of {pin_tot} probed locations have NO Jivo"))
+        # per-run distinct location count (from history)
+        if runstats:
+            cov = []
+            run_loc = {}  # run -> set of locations carrying any Jivo
+            # recompute distinct carrying locations per run from raw history
+            carry = defaultdict(set)
+            for r in history_rows:
+                run = r.get("run_id")
+                st = _f(r.get("in_stock"))
+                # a location "carries" the SKU if it appears in history (it was found)
+                key = (r.get("city") or "") + "|" + (r.get("pincode") or "")
+                if run:
+                    carry[run].add(key)
+            for run in runs:
+                run_loc[run] = carry.get(run, set())
+            prev_n = None
+            for run in runs:
+                n = len(run_loc[run])
+                delta = (n - prev_n) if prev_n is not None else None
+                arrow = ""
+                if delta is not None:
+                    arrow = "up" if delta > 0 else ("down" if delta < 0 else "flat")
+                cov.append([run_date(history_rows, run), run, n,
+                            (f"{'+' if delta and delta > 0 else ''}{delta}" if delta is not None else "-"),
+                            arrow])
+                prev_n = n
+            S.table(["Date", "Run", "Locations carrying Jivo", "delta vs prev", "Trend"], cov)
 
-    # cities with zero Jivo (gap), derived from perPin if available
-    cities_total = OrderedDict()
-    for p in (result.get("perPin") or []):
-        c = p.get("city") or "?"
-        cities_total.setdefault(c, 0)
-        cities_total[c] += len(p.get("rows") or [])
-    zero_cities = [c for c, n in cities_total.items() if n == 0]
-    if zero_cities:
-        S.bullet("Cities with ZERO Jivo this run: " + ", ".join(sorted(zero_cities)), RED)
-        watch.append((len(zero_cities) + 10,
-                      f"{len(zero_cities)} city/cities have ZERO Jivo this run: "
-                      + ", ".join(sorted(zero_cities)[:5])
-                      + (" ..." if len(zero_cities) > 5 else "")))
-    S.blank()
+            # coverage drop call-out + lost locations vs previous run
+            if prev_run:
+                now_set = run_loc.get(cur_run, set())
+                prev_set = run_loc.get(prev_run, set())
+                lost = prev_set - now_set
+                gained = now_set - prev_set
+                if lost:
+                    # group lost by city
+                    lost_cities = defaultdict(int)
+                    for k in lost:
+                        city = k.split("|", 1)[0] or "?"
+                        lost_cities[city] += 1
+                    S.section("Locations that LOST coverage since last run")
+                    rows_lost = [[c, n] for c, n in sorted(lost_cities.items(),
+                                                           key=lambda x: -x[1])]
+                    S.table(["City", "Locations lost"], rows_lost, [YEL] * len(rows_lost))
+                    top_city = max(lost_cities.items(), key=lambda x: x[1])
+                    watch.append((len(lost) + 20,
+                                  f"Coverage dropped: {len(lost)} location(s) lost Jivo vs last run"
+                                  f" (most in {top_city[0]})"))
+                if gained:
+                    watch.append((len(gained),
+                                  f"Coverage grew: {len(gained)} new location(s) now carry Jivo"))
+        else:
+            S.note("No history yet for a coverage trend; current coverage shown below.")
+            S.blank()
+
+        # current coverage snapshot from result.json summary + gaps
+        summ = result.get("summary") or {}
+        pin_with = summ.get("pincodes_with_jivo")
+        pin_tot = summ.get("pincodes_total")
+        if pin_with is not None and pin_tot:
+            S.section("Current coverage snapshot")
+            S.bullet(f"{pin_with} of {pin_tot} locations probed currently carry Jivo "
+                     f"({fmt_pct(100 * pin_with / pin_tot)}).")
+            if pin_tot - pin_with > 0:
+                watch.append((1, f"{pin_tot - pin_with} of {pin_tot} probed locations have NO Jivo"))
+
+        # cities with zero Jivo (gap), derived from perPin if available
+        cities_total = OrderedDict()
+        for p in (result.get("perPin") or []):
+            c = p.get("city") or "?"
+            cities_total.setdefault(c, 0)
+            cities_total[c] += len(p.get("rows") or [])
+        zero_cities = [c for c, n in cities_total.items() if n == 0]
+        if zero_cities:
+            S.bullet("Cities with ZERO Jivo this run: " + ", ".join(sorted(zero_cities)), RED)
+            watch.append((len(zero_cities) + 10,
+                          f"{len(zero_cities)} city/cities have ZERO Jivo this run: "
+                          + ", ".join(sorted(zero_cities)[:5])
+                          + (" ..." if len(zero_cities) > 5 else "")))
+        S.blank()
 
     # ============================================================ WHAT TO WATCH
     # (rendered near the top would need pre-pass; instead put it as a clearly
