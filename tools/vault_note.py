@@ -497,9 +497,12 @@ def _csv_num(v):
 
 # ---------------------------------------------------------------- main
 def main(argv):
-    if len(argv) != 3:
-        die("usage: vault_note.py <platform> <RUN_ID>")
-    platform, run_id = argv[1], argv[2]
+    flags = [a for a in argv[1:] if a.startswith("--")]
+    args = [a for a in argv[1:] if not a.startswith("--")]
+    csv_only = "--csv-only" in flags
+    if len(args) != 2:
+        die("usage: vault_note.py <platform> <RUN_ID> [--csv-only]")
+    platform, run_id = args
 
     result_path = os.path.join(ROOT, "platforms", platform, "result.json")
     if not os.path.exists(result_path):
@@ -519,6 +522,16 @@ def main(argv):
     date_str, time_str = ist_from_captured(summary.get("captured_at"), run_id)
     national = is_national(result)
     verdict = (review or {}).get("verdict", "UNREVIEWED")
+
+    if csv_only:
+        # Cron path. Only append the machine-readable rows to history.csv; do NOT write
+        # the old summarized note/hub/daily. tools/vault_build.py is the SOLE author of the
+        # COMPLETE, fully-linked Markdown graph and runs once per sweep (run_all.sh), so the
+        # vault is complete-by-construction and a summarized note can never reach it.
+        csv_path, n_csv = append_history(platform, run_id, date_str, result)
+        print("vault_note: %s rows -> %s (csv-only; complete notes built by tools/vault_build.py)"
+              % (n_csv, os.path.relpath(csv_path, ROOT)))
+        return
 
     # write run note
     note = build_run_note(platform, run_id, result, review, date_str, time_str)
