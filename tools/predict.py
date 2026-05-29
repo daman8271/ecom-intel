@@ -342,7 +342,7 @@ def per_run_sku_stats(history_rows):
     Build {run_id: {sku: {n, n_in, n_oos, prices[], discs[]}}} from history.
     """
     out = defaultdict(lambda: defaultdict(lambda: {
-        "n": 0, "n_in": 0, "n_oos": 0, "prices": [], "discs": []}))
+        "n": 0, "n_in": 0, "n_oos": 0, "prices": [], "discs": [], "discs_in": []}))
     for r in history_rows:
         run = r.get("run_id")
         sku = r.get("canonical_sku")
@@ -351,6 +351,7 @@ def per_run_sku_stats(history_rows):
         s = out[run][sku]
         s["n"] += 1
         st = _f(r.get("in_stock"))
+        in_stk = st is not None and st > 0
         if st is not None:
             if st > 0:
                 s["n_in"] += 1
@@ -362,12 +363,272 @@ def per_run_sku_stats(history_rows):
         dsc = _f(r.get("discount_pct"))
         if dsc is not None:
             s["discs"].append(dsc)
+            if in_stk:  # in-stock-only discount, to match the current-run KPI basis
+                s["discs_in"].append(dsc)
     return out
 
 
 def median(xs):
     import statistics
     return statistics.median(xs) if xs else None
+
+
+# ---------------------------------------------------------------- dashboard
+def build_dashboard(wb, platform, when, result_rows, per_sku_cur,
+                    runstats, runs, history_rows, watch):
+    """
+    Insert a chart-driven 'Leadership View' as the FIRST sheet: the handful of
+    things the e-com head needs at a glance and nothing else --
+        - catalog availability (in stock vs out)        : donut
+        - discount depth / price-erosion exposure        : bar
+        - buy-box control (who sells Jivo)               : bar  (Amazon)
+          -> falls back to "where Jivo is live by city"        (per-pincode)
+        - availability & discount trend over recent runs : line
+    plus a KPI strip and the top things to act on.
+
+    Chart source data is written into a clearly-labelled block lower in the same
+    sheet; the charts reference it. Platform-agnostic and defensive -- the caller
+    wraps this so a hiccup never costs us the Predictions sheet.
+    """
+    from openpyxl.chart import DoughnutChart, BarChart, LineChart, Reference
+    from openpyxl.chart.label import DataLabelList
+    from openpyxl.chart.series import DataPoint
+    from openpyxl.chart.marker import Marker
+    from openpyxl.chart.shapes import GraphicalProperties
+    from openpyxl.drawing.line import LineProperties
+
+    if not result_rows:
+        return
+
+    pname = platform.replace("-", " ").title()
+    HAS_SELLER = any("seller" in r for r in result_rows)
+    GREEN, AMBER, REDC = "008B3A", "E69138", "CC0000"
+
+    # ---- availability breakdown (in / out / not-found-or-blocked) ----
+    n_in = n_oos = n_nf = 0
+    for r in result_rows:
+        at = str(r.get("availability_text") or "").upper()
+        if at in ("NOT FOUND", "BLOCKED"):
+            n_nf += 1
+            continue
+        st = in_stock_of(r)
+        if st is True:
+            n_in += 1
+        elif st is False:
+            n_oos += 1
+        else:
+            n_nf += 1
+    n_total = len(result_rows)
+    instock_pct = (100.0 * n_in / (n_in + n_oos)) if (n_in + n_oos) else 0.0
+
+    # ---- discount distribution (in-stock, priced SKUs) ----
+    bands = [("0-20% off", 0, 20), ("20-40% off", 20, 40),
+             ("40-60% off", 40, 60), ("60%+ off", 60, 1e9)]
+    band_counts = [0] * len(bands)
+    discs = []
+    for r in result_rows:
+        if in_stock_of(r) is not True:
+            continue
+        d = _f(r.get("discount_pct"))
+        if d is None:
+            continue
+        discs.append(d)
+        for i, (_, lo, hi) in enumerate(bands):
+            if lo <= d < hi:
+                band_counts[i] += 1
+                break
+    avg_disc = (sum(discs) / len(discs)) if discs else 0.0
+    deep = sum(1 for d in discs if d >= 50)
+    n_risk = sum(1 for e in per_sku_cur.values() if e["n_oos"] > 0)
+
+    # ---- control chart: buy-box (Amazon) or coverage by city ----
+    if HAS_SELLER:
+        sc = {}
+        for r in result_rows:
+            s = (r.get("seller") or "").strip() or "No buy-box / unavailable"
+            sc[s] = sc.get(s, 0) + 1
+        ranked = sorted(sc.items(), key=lambda kv: -kv[1])
+        control_title = "Who controls the buy-box (SKUs sold by)"
+        control_rows = ranked[:6]
+        if len(ranked) > 6:
+            control_rows = control_rows + [("Other", sum(n for _, n in ranked[6:]))]
+    else:
+        cc = {}
+        for r in result_rows:
+            if in_stock_of(r) is False:
+                continue
+            city = (str(r.get("city") or "?").strip()) or "?"
+            cc[city] = cc.get(city, 0) + 1
+        ranked = sorted(cc.items(), key=lambda kv: -kv[1])
+        control_title = "Where Jivo is live (in-stock datapoints by city)"
+        control_rows = ranked[:8]
+
+    # ---- availability & discount trend over the recent runs ----
+    WIN = 14
+    window = runs[-WIN:] if runs else []
+    trend_rows = []
+    for run in window:
+        rs = runstats.get(run, {})
+        tin = tk = 0
+        dd = []
+        for s in rs.values():
+            tin += s["n_in"]
+            tk += s["n_in"] + s["n_oos"]
+            dd += s["discs_in"]   # in-stock-only, matches the headline KPI basis
+        ip = (100.0 * tin / tk) if tk else None
+        ad = (sum(dd) / len(dd)) if dd else None
+        rid = str(run)            # run_id format: YYYY-MM-DD-HHMM
+        try:                      # -> 'MM-DD HH:MM' so the 3 daily runs stay distinct
+            dlabel = "%s %s:%s" % (rid[5:10], rid[11:13], rid[13:15])
+        except Exception:
+            dlabel = rid
+        trend_rows.append([dlabel,
+                           round(ip, 1) if ip is not None else None,
+                           round(ad, 1) if ad is not None else None])
+    have_trend = len([t for t in trend_rows if t[1] is not None]) >= 2
+
+    # =========================== write the sheet ===========================
+    ws = wb.create_sheet("Leadership View", 0)
+    ws.sheet_view.showGridLines = False
+
+    t = ws.cell(1, 1, "Jivo x %s - Leadership View" % pname)
+    t.font = Font(bold=True, color=GREEN, size=20)
+    ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=12)
+    headline = ("%.0f%% of catalog in stock    .    avg %.0f%% off    .    "
+                "%d SKU(s) at stock-out risk    .    %s"
+                % (instock_pct, avg_disc, n_risk, when))
+    h = ws.cell(2, 1, headline)
+    h.font = Font(italic=True, color="555555", size=11)
+    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=12)
+
+    # KPI strip
+    kpis = [("Catalog SKUs", n_total),
+            ("In Stock", "%.0f%%" % instock_pct),
+            ("Avg Discount", "%.0f%%" % avg_disc),
+            ("Deep Discounts (>=50%)", deep),
+            ("At Stock-out Risk", n_risk)]
+    for i, (k, v) in enumerate(kpis):
+        c = 1 + i * 2
+        ws.cell(4, c, k).font = Font(bold=True, size=9, color="666666")
+        ws.cell(5, c, v).font = Font(bold=True, size=22, color=GREEN)
+
+    # what to act on (top 5 from the prioritised watch list)
+    ws.cell(7, 1, "What to act on").font = Font(bold=True, color=GREEN, size=13)
+    best = {}
+    for prio, msg in watch:
+        if msg not in best or prio > best[msg]:
+            best[msg] = prio
+    ordered = [m for m, _ in sorted(best.items(), key=lambda kv: -kv[1])[:5]]
+    rr = 8
+    if ordered:
+        for msg in ordered:
+            cell = ws.cell(rr, 1, u"• " + msg)
+            cell.font = Font(size=11)
+            cell.alignment = Alignment(horizontal="left", vertical="center")
+            rr += 1
+    else:
+        ws.cell(rr, 1, u"• Stock, pricing and coverage all steady this run.").font = Font(size=11)
+
+    # ---- chart source-data block (charts reference these cells) ----
+    DATA0 = 46
+    ws.cell(DATA0 - 1, 1, "Chart source data (auto-generated)").font = NOTE_FONT
+
+    def put(top, headers, drows):
+        for j, hh in enumerate(headers, 1):
+            ws.cell(top, j, hh).font = Font(bold=True, size=9, color="888888")
+        for i, rw in enumerate(drows):
+            for j, v in enumerate(rw, 1):
+                ws.cell(top + 1 + i, j, v)
+        return top, top + len(drows)
+
+    stk_rows = [["In Stock", n_in], ["Out of Stock", n_oos]]
+    if n_nf > 0 or HAS_SELLER:
+        stk_rows.append(["Not Found / Blocked", n_nf])
+    s_hdr, s_last = put(DATA0, ["Availability", "SKUs"], stk_rows)
+
+    b_hdr, b_last = put(s_last + 2, ["Discount band", "SKUs"],
+                        [[bands[i][0], band_counts[i]] for i in range(len(bands))])
+
+    c_hdr, c_last = put(b_last + 2, ["Label", "SKUs"],
+                        [[k, v] for k, v in control_rows])
+
+    if have_trend:
+        t_hdr, t_last = put(c_last + 2, ["Run", "In-stock %", "Avg disc %"], trend_rows)
+
+    def solid(color):
+        return GraphicalProperties(solidFill=color)
+
+    # 1) availability donut
+    d = DoughnutChart()
+    d.title = "Catalog availability"
+    d.add_data(Reference(ws, min_col=2, min_row=s_hdr, max_row=s_last),
+               titles_from_data=True)
+    d.set_categories(Reference(ws, min_col=1, min_row=s_hdr + 1, max_row=s_last))
+    d.dataLabels = DataLabelList()
+    d.dataLabels.showPercent = True
+    palette = [GREEN, REDC, AMBER]
+    ser = d.series[0]
+    for i in range(s_last - s_hdr):
+        pt = DataPoint(idx=i)
+        pt.graphicalProperties = solid(palette[i % len(palette)])
+        ser.data_points.append(pt)
+    d.height, d.width = 7.2, 11.5
+    ws.add_chart(d, "A14")
+
+    # 2) discount-depth bar
+    b = BarChart()
+    b.type = "col"
+    b.title = "Discount depth (in-stock SKUs)"
+    b.add_data(Reference(ws, min_col=2, min_row=b_hdr, max_row=b_last),
+               titles_from_data=True)
+    b.set_categories(Reference(ws, min_col=1, min_row=b_hdr + 1, max_row=b_last))
+    b.series[0].graphicalProperties = solid(GREEN)
+    b.legend = None
+    b.dataLabels = DataLabelList()
+    b.dataLabels.showVal = True
+    b.height, b.width = 7.2, 11.5
+    ws.add_chart(b, "G14")
+
+    # 3) buy-box / coverage bar (horizontal -> long labels read well)
+    c = BarChart()
+    c.type = "bar"
+    c.title = control_title
+    c.add_data(Reference(ws, min_col=2, min_row=c_hdr, max_row=c_last),
+               titles_from_data=True)
+    c.set_categories(Reference(ws, min_col=1, min_row=c_hdr + 1, max_row=c_last))
+    c.series[0].graphicalProperties = solid(GREEN)
+    c.legend = None
+    c.dataLabels = DataLabelList()
+    c.dataLabels.showVal = True
+    c.height, c.width = 7.2, 11.5
+    ws.add_chart(c, "A29")
+
+    # 4) availability & discount trend line
+    if have_trend:
+        ln = LineChart()
+        ln.title = "Availability & discount trend (recent runs)"
+        ln.add_data(Reference(ws, min_col=2, max_col=3, min_row=t_hdr, max_row=t_last),
+                    titles_from_data=True)
+        ln.set_categories(Reference(ws, min_col=1, min_row=t_hdr + 1, max_row=t_last))
+        line_cols = [GREEN, AMBER]
+        for i, s in enumerate(ln.series):
+            gp = GraphicalProperties()
+            gp.line = LineProperties(solidFill=line_cols[i % 2], w=28000)
+            s.graphicalProperties = gp
+            s.marker = Marker(symbol="circle", size=5)
+            s.smooth = False
+        ln.y_axis.title = "%"
+        ln.height, ln.width = 7.2, 11.5
+        ws.add_chart(ln, "G29")
+
+    # cosmetics
+    ws.column_dimensions["A"].width = 26
+    for col in ("B", "C", "D", "E", "F", "G", "H", "I", "J"):
+        ws.column_dimensions[col].width = 13
+    try:
+        wb.active = wb.sheetnames.index("Leadership View")
+    except Exception:
+        pass
 
 
 # ---------------------------------------------------------------- build sheet
@@ -744,6 +1005,17 @@ def build(platform, xlsx_path):
 
     S.autosize()
     ws.freeze_panes = "A4"
+
+    # Chart-driven 'Leadership View' front sheet for the e-com head. Wrapped so a
+    # dashboard hiccup never costs us the Predictions sheet we just built.
+    try:
+        build_dashboard(wb, platform, when, result_rows, per_sku_cur,
+                        runstats, runs, history_rows, watch)
+    except Exception as e:
+        import traceback
+        sys.stderr.write("predict.py: Leadership View skipped (non-fatal): %s\n" % e)
+        traceback.print_exc(file=sys.stderr)
+
     wb.save(xlsx_path)
     return xlsx_path, n_runs, len(per_sku_cur), len(watch)
 
