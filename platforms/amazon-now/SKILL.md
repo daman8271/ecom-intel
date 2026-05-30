@@ -1,3 +1,10 @@
+> **⚠️ STATUS REVISITED 2026-05-29/30 — see `PLAN.md`.**
+> The "NOT FEASIBLE off /dp (login-gated)" verdict below is the 2026-05-22
+> snapshot. The login itself is now being actively automated against AWS WAF
+> "AAMation" — current work in `PLAN.md` + `login_v2.js` (uncommitted). Once
+> a reusable `storageState` is minted, this SKILL.md will document the live
+> mechanism (Now + Fresh storefronts via the same logged-in session).
+
 # SKILL: scrape Amazon Now — STATUS: NOT FEASIBLE off /dp (login-gated)
 
 See **BLOCKED.md** for the full 2026-05-22 evidence. Short version:

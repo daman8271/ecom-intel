@@ -1,22 +1,41 @@
 # ecom-intel — platform coverage report
 
-**Date:** 2026-05-21 · **Run from:** Hostinger VPS (datacenter IP) · **Brand:** Jivo
+**Last updated:** 2026-05-30 · **Run from:** Hostinger VPS (datacenter IP) · **Brand:** Jivo
 
-This is the "does the datacenter IP catch us" map across all 6 target platforms,
-plus where Jivo actually has presence. Excel reports for the 4 live platforms are
-in `output/`.
+This is the "does the datacenter IP catch us" map across all 7 target platforms,
+plus where Jivo actually has presence. Generated Excel reports for every live
+platform are in `output/`.
 
-## TL;DR
-- **4 of 6 platforms are LIVE** from this VPS IP, no proxy, no login:
-  Blinkit, Flipkart Minutes, Flipkart, Amazon.
-- **Zepto is hard-blocked** (CloudFront 403 on the datacenter IP) → needs a
-  residential proxy.
-- **Amazon Now** (quick-commerce) is reachable but **location/login-gated** →
-  a separate decision (Amazon account + OTP).
-- All 4 live scrapers are on **twice-daily cron (9am/7pm IST)** with the daily
-  self-heal healthcheck.
+## TL;DR (2026-05-30)
+- **6 of 7 platforms are LIVE** from this VPS IP, **no proxy, no login**:
+  Blinkit, Instamart, Zepto, Flipkart Minutes, Flipkart, Amazon.
+- **Zepto** was unblocked 2026-05-29 by bypassing the CloudFront-fronted
+  website and calling its **`bff-gateway.zeptonow.com`** BFF API directly.
+- **Instamart** was unblocked 2026-05-22 via stealth POST to its public search
+  API.
+- **Amazon Now** (quick-commerce) is still the only gated platform — the
+  2026-05-22 verdict ("not feasible without login") is being actively
+  challenged by `platforms/amazon-now/login_v2.js` (Real Chrome new-headless +
+  warmup + vision-handoff for the AWS WAF "AAMation" adversarial-grid
+  captcha). All in-progress files in that folder are uncommitted; see
+  `platforms/amazon-now/PLAN.md` for the strategy + user-blocking questions.
+- **Amazon Fresh** has no separate platform — bundled with the Amazon Now
+  login (one logged-in `storageState` is intended to unlock both storefronts).
+- All 6 live scrapers are on **3×/day parallel cron (09:00 / 12:00 / 16:00
+  IST)** with a self-heal sweep at :30 of each window.
 
-## Working platforms (latest run)
+## Working platforms (current cron)
+
+| Platform | Type | Coverage | Jivo SKUs | Notes |
+|---|---|---|---|---|
+| **Blinkit** | quick-comm | 161/332 stores · ~798 pincodes | ~8 | `localStorage` location override |
+| **Instamart** | quick-comm | 332 pincodes | ~8 | stealth POST to `/api/instamart/search/v2` |
+| **Zepto** | quick-comm | 332 pincodes (≈100 carry Jivo) | ~11 | reached via `bff-gateway.zeptonow.com` BFF API |
+| **Flipkart Minutes** | quick-comm | 345 pincodes | ~10 | HYPERLOCAL store; GPS "use my location" |
+| **Flipkart** | marketplace | national | ~61 | national pricing; 1 row per SKU |
+| **Amazon** | marketplace | national (314 ASINs targeted) | ~163 in-stock | targeted `/dp` scrape; interstitial bypass |
+
+## Original 2026-05-21 snapshot (historical — preserved below)
 
 | Platform | Type | Coverage | Jivo SKUs | Rows | Time | Notes |
 |---|---|---|---|---|---|---|

@@ -44,21 +44,29 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 
 | Platform | Type | Status | Coverage | Jivo SKUs | Notes |
 |---|---|---|---|---|---|
-| **Blinkit** | quick-comm | ✅ LIVE | 27–28/40 pincodes carry Jivo | ~8 | proven; `localStorage` location override, no login |
-| **Flipkart Minutes** | quick-comm | ✅ LIVE | 26/40 pincodes carry Jivo | ~10 | `HYPERLOCAL` store; GPS "use my location" click |
+| **Blinkit** | quick-comm | ✅ LIVE | 161/332 stores carry Jivo (≈798 pincodes) | ~8 | `localStorage` location override, no proxy |
+| **Instamart** | quick-comm | ✅ LIVE | 332 pincodes | ~8 | stealth POST to public search API (WAF-bypass), no proxy |
+| **Zepto** | quick-comm | ✅ LIVE | 332 pincodes | ~11 | reached via `bff-gateway.zeptonow.com` BFF API (the CloudFront website still 403s — gateway is direct), no proxy |
+| **Flipkart Minutes** | quick-comm | ✅ LIVE | 345 pincodes | ~10 | `HYPERLOCAL` store; GPS "use my location" |
 | **Flipkart** | marketplace | ✅ LIVE | national | ~61 | national pricing → 1 row/SKU, tagged "All India" |
-| **Amazon** | marketplace | ✅ LIVE | national | ~163 | richest catalog; requires interstitial bypass |
-| **Zepto** | quick-comm | ⛔ BLOCKED | — | — | CloudFront **403** on datacenter IP → needs **residential proxy** |
-| **Amazon Now** | quick-comm | 🔒 GATED | — | — | reachable but **location/login-gated** → needs Amazon OTP login |
+| **Amazon** | marketplace | ✅ LIVE | national | ~314 ASINs | targeted `/dp` scrape with interstitial bypass; richest catalog |
+| **Amazon Now** | quick-comm | 🔧 LOGIN-WIP | — | — | login automation against AWS WAF "AAMation" captcha in active dev (`platforms/amazon-now/PLAN.md` + `login_v2.js`, uncommitted) |
 
 - **Marketplaces (Flipkart / Amazon)** price nationally, so we scrape the catalog
-  once and tag rows "All India" rather than looping 40 pincodes. Their value is
-  **catalog breadth + price/MRP/discount** (Amazon lists ~163 Jivo SKUs vs ~8–10 on
+  once and tag rows "All India" rather than looping pincodes. Their value is
+  **catalog breadth + price/MRP/discount** (Amazon tracks 314 ASINs vs ~8–11 on
   quick-comm). That's why their Excel city-matrix is a single column *by design*.
-- **Zepto** is staged to proxy: `platforms/zepto/scrape.js` has a 403 guard and
-  GPS-based location; add `proxy:{...}` and re-run. See `platforms/zepto/BLOCKED.md`.
-- **Amazon Now** needs a logged-in session with saved addresses (one-time OTP). See
-  `platforms/amazon-now/BLOCKED.md`.
+- **Zepto** went live 2026-05-29 — the public website is CloudFront-fronted and
+  hard-403s the datacenter IP, but the app's BFF API gateway is reachable directly.
+  No proxy needed. See `platforms/zepto/SKILL.md`.
+- **Amazon Now** needs a logged-in session with saved addresses. The 2026-05-22
+  `BLOCKED.md` verdict ("not feasible without login") is being actively challenged
+  by `platforms/amazon-now/login_v2.js` — Real Chrome new-headless + warmup + a
+  vision-handoff loop for the AWS WAF adversarial-grid captcha. See `PLAN.md` in
+  that folder for the strategy + open user-blocking questions.
+- **Amazon Fresh** is bundled with Amazon Now — one logged-in `storageState` is
+  intended to unlock both storefronts (recon scripts already in
+  `platforms/amazon-now/recon/`).
 
 ---
 
@@ -229,7 +237,7 @@ git clone https://github.com/daman8271/ecom-intel.git /opt/ecom-intel
 cd /opt/ecom-intel
 
 # 2. Per-platform deps — Node packages + the Chromium browser binary
-for p in blinkit flipkart-minutes flipkart amazon; do
+for p in blinkit instamart flipkart-minutes flipkart amazon zepto; do
   ( cd "platforms/$p" && npm install && npx playwright install chromium )
 done
 # (also: sudo npx playwright install-deps  — system libs for headless Chromium)
@@ -268,7 +276,7 @@ and restore via the runbook above, never via the Hostinger catalog.
 ecom-intel/
 ├── README.md              # this file
 ├── CLAUDE.md              # operator quick-reference (auto-loads in Claude Code)
-├── REPORT.md              # platform-coverage map (4 live, Zepto blocked, Amazon Now gated)
+├── REPORT.md              # platform-coverage map (6 LIVE; Amazon Now login-WIP)
 ├── run.sh                 # ./run.sh <platform> — scrape → Excel → Telegram deliver
 ├── healthcheck.sh         # daily self-heal: detect broken runs → Claude Code repair
 ├── setup_cron.sh          # (re)install cron jobs (idempotent, 3x/day IST), set timezone
@@ -287,14 +295,15 @@ ecom-intel/
 │   │   ├── SKILL.md              # the scraping recipe: selectors, location trick, quirks
 │   │   ├── scrape.js             # Playwright scraper → result.json (deterministic, no LLM)
 │   │   ├── build_excel.py        # result.json → 6-sheet branded Excel
-│   │   ├── pincodes.json         # 40 pincodes, top-20 cities
+│   │   ├── pincodes.json         # 332 store coords covering 798 pincodes
 │   │   ├── package.json          # playwright dep
 │   │   └── package-lock.json     # pinned for restore-after-wipe
+│   ├── instamart/                # ✅ LIVE — quick-comm, stealth POST to search API
+│   ├── zepto/                    # ✅ LIVE — quick-comm, BFF API gateway (no proxy)
 │   ├── flipkart-minutes/         # ✅ LIVE — quick-comm, HYPERLOCAL store, GPS location
 │   ├── flipkart/                 # ✅ LIVE — marketplace, national pricing
-│   ├── amazon/                   # ✅ LIVE — marketplace, interstitial bypass, ~163 SKUs
-│   ├── zepto/                    # ⛔ BLOCKED — CloudFront 403; BLOCKED.md + ready-to-proxy scaffold
-│   └── amazon-now/               # 🔒 GATED — reachable but login/location-gated; BLOCKED.md
+│   ├── amazon/                   # ✅ LIVE — marketplace, interstitial bypass, 314 ASINs
+│   └── amazon-now/               # 🔧 LOGIN-WIP — login automation against AWS WAF AAMation; PLAN.md + login_v2.js (uncommitted)
 │
 ├── output/                # generated Excel (gitignored)
 ├── logs/                  # per-run + cron + telegram + self-heal logs (gitignored)
