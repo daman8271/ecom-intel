@@ -145,7 +145,7 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
     return ws
 
 # Sheet 3: Pricing Matrix (avg sale per city) - green cheap -> red expensive
-matrix("Pricing Matrix", lambda c: round(statistics.mean([x['sale'] for x in c])), '"Rs"#,##0', scale=True)
+matrix("Pricing Matrix", lambda c: (lambda v: round(statistics.mean(v)) if v else None)([x['sale'] for x in c if x['sale'] is not None]), '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
     pct = round(100 * sum(x['in_stock'] for x in c) / len(c))
