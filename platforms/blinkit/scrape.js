@@ -1,8 +1,9 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
 
-const PINCODES = JSON.parse(fs.readFileSync(__dirname + '/pincodes.json', 'utf8'));
-const CONCURRENCY = 4;
+const PFILE = process.env.PINCODES_FILE || (__dirname + '/pincodes.json');
+const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
+const CONCURRENCY = parseInt(process.env.CONCURRENCY || '4', 10);
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
 function parseVolMl(pack) {
@@ -144,6 +145,6 @@ async function pool(items, n, fn) {
     captured_at: new Date().toISOString(),
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
-  fs.writeFileSync(__dirname + '/result.json', JSON.stringify({ summary, perPin, allRows }, null, 2));
+  fs.writeFileSync(process.env.OUT_FILE || (__dirname + '/result.json'), JSON.stringify({ summary, perPin, allRows }, null, 2));
   console.log(JSON.stringify(summary));
 })();

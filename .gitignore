@@ -6,7 +6,17 @@ logs/
 *.log
 .DS_Store
 secrets.env
+secrets/
+**/secrets/
 __pycache__/
 .gitpush.lock
 vault/.obsidian/workspace.json
 vault/.obsidian/workspace-mobile.json
+
+# captured session/network/recon artifacts (may embed tokens) — never commit
+**/cookies*.json
+**/net.*.jsonl
+**/nowstore.*.json
+**/spike.*.json
+**/investigate*.json
+**/*.now.json

@@ -96,12 +96,14 @@ ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=7)
 autosize(ws)
 
 # ---------- Sheet 2: Master Data ----------
+# Amazon Now-specific: show ASIN + the same-day delivery SLOT (the real signal) instead
+# of eta_min (always null on Now — it sells time-window slots, not minute ETAs).
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Locality", "Store", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "ETA min", "In stock"]
+cols = ["City", "Pincode", "Locality", "ASIN", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "Now Slot", "In stock"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
-    ws.append([x['city'], x['pincode'], x['locality'], x['store_name'], x['sku_raw'], x['pack'], x['vol_ml'],
-               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No"])
+    ws.append([x['city'], x['pincode'], x['locality'], x.get('asin'), x['sku_raw'], x['pack'], x['vol_ml'],
+               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], x.get('now_slot', ''), "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
@@ -110,7 +112,6 @@ for row in ws.iter_rows(min_row=2):
         cell.border = BORDER
         if cell.column in (8, 9): cell.number_format = '"Rs"#,##0'
         if cell.column == 10: cell.number_format = '0.0"%"'
-    sc = row[7].value
     if row[12].value == "No": row[12].fill = RED
     if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 40: row[9].fill = GREEN
 autosize(ws)
@@ -157,16 +158,27 @@ for row in wsS.iter_rows(min_row=2):
 # Sheet 5: Discount Analysis (avg disc per city) - higher = greener
 matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] for x in c if x['discount_pct'] is not None]), 1) if any(x['discount_pct'] is not None for x in c) else None, '0.0"%"', scale=True, scale_rev=True)
 
-# ---------- Sheet 6: Coverage / Gaps ----------
-ws = wb.create_sheet("Coverage & Gaps")
-ws.append(["City", "Pincode", "Locality", "Store assigned", "Jivo SKUs found"])
-for p in per:
-    ws.append([p['city'], p['pincode'], p['locality'], p['store_name'], len(p['rows'])])
+# ---------- Sheet 6: Now Serviceability & Coverage ----------
+# For Amazon Now the key per-pincode facts are: is Now serviceable here at all, and
+# does Jivo appear (vs only competitors). Three states: green=Jivo on Now,
+# yellow=Now serviceable but NO Jivo (competitor-only whitespace), red=no Now here.
+ws = wb.create_sheet("Now Serviceability")
+ws.append(["City", "Pincode", "Locality", "Now serviceable", "Jivo SKUs on Now", "Sample slot"])
+def sample_slot(p):
+    for r in p['rows']:
+        if r.get('now_slot'): return r['now_slot']
+    return ''
+for p in sorted(per, key=lambda p: (p['city'], p['pincode'])):
+    svc = p.get('serviceable', len(p['rows']) > 0)
+    ws.append([p['city'], p['pincode'], p['locality'], "Yes" if svc else "No", len(p['rows']), sample_slot(p)])
 style_header(ws); ws.freeze_panes = "A2"
+ws.auto_filter.ref = f"A1:F{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row: cell.border = BORDER
-    if row[4].value == 0: row[4].fill = RED
-    else: row[4].fill = GREEN
+    njivo = row[4].value
+    svc = row[3].value == "Yes"
+    row[4].fill = GREEN if njivo else (YEL if svc else RED)
+    row[3].fill = GREEN if svc else RED
 autosize(ws)
 
 fname = f"Jivo-{PLATFORM.replace(' ', '')}-Live-Report-{datetime.date.today()}.xlsx"

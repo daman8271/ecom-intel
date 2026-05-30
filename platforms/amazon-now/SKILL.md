@@ -1,46 +1,50 @@
-> **⚠️ STATUS REVISITED 2026-05-29/30 — see `PLAN.md`.**
-> The "NOT FEASIBLE off /dp (login-gated)" verdict below is the 2026-05-22
-> snapshot. The login itself is now being actively automated against AWS WAF
-> "AAMation" — current work in `PLAN.md` + `login_v2.js` (uncommitted). Once
-> a reusable `storageState` is minted, this SKILL.md will document the live
-> mechanism (Now + Fresh storefronts via the same logged-in session).
+# SKILL: scrape Amazon Now — STATUS: LIVE (2026-05-30, via transplanted session)
 
-# SKILL: scrape Amazon Now — STATUS: NOT FEASIBLE off /dp (login-gated)
+The 2026-05-22 "NOT FEASIBLE" verdict (kept in **BLOCKED.md**) is **obsolete**. Amazon
+Now IS scrapable. Key correction to the old verdict: `/dp` was the wrong surface — even
+logged-in it shows only the multi-day marketplace promise. The right surface is the
+**`i=nowstore` storefront search**, which is login-gated (503s logged-out) but, logged-in,
+returns per-SKU **Now price + same-day delivery SLOT** that varies per delivery pincode.
 
-See **BLOCKED.md** for the full 2026-05-22 evidence. Short version:
+## The mechanism (what `scrape.js` does)
+1. **Auth = a transplanted logged-in session.** The VPS datacenter IP CANNOT log in:
+   Amazon's `/ap/signin` serves the AWS WAF "AAMation" grid captcha (`/ap/cvf/request`)
+   which **rejects even correct solves** from a flagged DC IP (proven — see PLAN.md). So
+   the user logs into amazon.in on their **own clean IP**, exports cookies with the
+   **Cookie-Editor** browser extension, and we import them:
+   `node import_cookies.js <cookie-editor-export.json>` → `secrets/amazon-now.storageState.json`.
+   The session works from the VPS for *browsing* (WAF only guards the login path).
+   Auth cookies (`session-token`, `at-acbin`) last ~1 yr but Amazon may rotate sooner.
+2. **Per-pincode** = set the delivery pincode via the **GLOW** widget
+   (`#nav-global-location-popover-link` → `#GLUXZipUpdateInput`). No need to seed saved
+   addresses — a bare pincode set is enough; the nowstore search then reflects it.
+   Metros return ~24 results w/ Now slots; non-metros return 0 = Now not serviceable.
+3. **Search** `amazon.in/s?k=jivo&i=nowstore`, parse the result cards:
+   - full title in **`[data-cy="title-recipe"]`** (h2 alone is just the brand "JIVO" →
+     would collapse every SKU to one canonical — DO NOT use h2 for the name);
+   - sale = `.a-price[data-a-color="base"] .a-offscreen`; **MRP = `[data-a-strike="true"]
+     .a-offscreen` ONLY** (the bare `.a-text-price` also matches the per-unit "₹/L" price);
+   - slot = `[class*="delivery"]` ("FREE delivery Today 5–7 pm").
+4. Keep only genuine Jivo cards (`\bjivo\b`), dedupe by canonical, cross-ref `products.json`
+   by ASIN for category. Output schema matches Blinkit/Zepto (+ `asin`, `now_slot`,
+   `serviceable`) so build_excel/predict/review/vault work.
 
-- amazon.in is reachable from the VPS IP **only after clicking the "Continue
-  shopping" bot-interstitial** (homepage 202 -> click -> 200; raw `/s?k=` hits
-  get 503). This bypass (`passInterstitial()`) also unlocks the **amazon
-  marketplace** scraper, which works — see `platforms/amazon`.
+## Run
+```
+node scrape.js                 # full pincodes.json (332), sequential (CONCURRENCY=1, safe:
+                               #   one shared account → server-side location could collide)
+LIMIT=8 node scrape.js         # smoke test
+PINCODES_FILE=… OUT_FILE=… node scrape.js
+```
+`scrape.js` does a **session preflight** (checks "Hello, <name>") and exits **3** +
+writes `secrets/SESSION_EXPIRED` if the cookie died — so it fails loud instead of
+sweeping logged-out garbage. **Recovery: ask the user (Telegram) to re-export cookies,
+re-run `import_cookies.js`.** The VPS can never re-login itself.
 
-- **Tested (this run): can we read a per-ASIN "Amazon Now / fast delivery"
-  signal off the regular `/dp/<asin>` page? NO.**
-  - The default GLOW location is "Mumbai 400017" (a Now metro), and explicitly
-    re-setting 400017 worked — so location is NOT the blocker here.
-  - The /dp delivery block (`#mir-layout-DELIVERY_BLOCK` /
-    `#deliveryBlockMessage` / `[data-csa-c-content-id="DEXUnifiedCXPDM"]`) only
-    ever shows the **marketplace named-day ship promise** (e.g. "FREE delivery
-    Thursday, 28 May. Order within 2 hrs 17 mins"). No Now / today / same-day /
-    "in N min" promise on any product.
-  - DECISIVE: the 4 Jivo ASINs that ARE live on the Now storefront
-    (`i=nowstore`: B09MJ6QDX7, B093BMGPQC, B0DC6JR4F3, B0152TWWSQ) STILL show
-    only the marketplace promise on their /dp page — `nowOffer=false`, no Now
-    price/ETA. Marketplace /dp and the Now storefront are separate fulfilment
-    listings; /dp won't surface the Now offer without a Now-context session.
-
-- **Only weak signal on /dp:** Now-listed ASINs carry a buy-box seller link
-  `/sp?...&seller=A3DRET2ZTE1T2S&almBrandId=ctnow` (the Amazon-Now-brand seller);
-  marketplace-only ASINs have none. That's a **seller-identity proxy, not a
-  delivery signal** (no ETA, no Now price, no per-pincode serviceability), so
-  shipping it as `amazon_now_available` would be misleading. Not built.
-
-## To make this work later
-Use a **logged-in session (persisted storageState) with saved addresses**, or the
-**Amazon app/Now-context**, so a live Now offer/ETA resolves per location. That
-requires an Amazon account + OTP login — a separate decision (flagged in
-REPORT.md). Until then, NOT in cron.
-
-`scrape.js` is the unmodified Blinkit copy (intentionally NOT adapted). Recon
-spikes kept in-folder: `spike.js` / `spike_nowstore.js` / `spike_known.js`
-(+ `spike.*.json` dumps).
+## Files
+- `scrape.js` (live), `build_excel.py` (+ Now Serviceability sheet), `import_cookies.js`,
+  `verify_session.js` (session healthcheck), `probe_now.js` / `probe_pincode_switch.js`
+  (recon, keepable), `login_v2.js` (the failed DC-IP captcha solver — reference only).
+- `secrets/` (gitignored): `amazon-now.storageState.json` (the live session, chmod 600).
+- **Amazon Fresh** = the same surface (`/fresh` → `/alm?almBrandId=ctnow`), covered by this
+  same Now scrape; no separate platform dir.
