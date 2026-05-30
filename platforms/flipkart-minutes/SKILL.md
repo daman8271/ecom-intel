@@ -1,52 +1,55 @@
-# SKILL: scrape Flipkart Minutes — STATUS: WORKING (datacenter IP)
+# Flipkart Minutes — scraper notes
 
-Flipkart Minutes (10-min quick-commerce) is **scrapable from the VPS datacenter
-IP** — HTTP 200, no captcha, **no login needed**. First clean run (2026-05-21):
-**30/40 pincodes serviceable, 26 carry Jivo, ~72 rows, 10 unique Jivo SKUs, ~3 min.**
+Two modes in `scrape.js`, auto-selected at runtime:
 
-## The trick
-Minutes products live in the **`HYPERLOCAL` marketplace** on `flipkart.com`. You
-must first resolve a serviceable delivery location, then search:
-`https://www.flipkart.com/search?q=jivo&marketplace=HYPERLOCAL`.
+## 1. API mode (default, fast — ~60s for 345 pincodes)
+Direct calls to Flipkart's BFF, no DOM scraping. Needs a **logged-in session** transplanted from
+the user's own browser (the datacenter IP can't log in, and guests are blocked by a
+device-fingerprint cookie — see below).
 
-Location is **NOT** settable by writing `localStorage.mypin` — that bounces to
-`/hyperlocal-preview-page`. You must trigger the real serviceability resolution:
+Flow per pincode (two JSON POSTs to `https://<N>.rome.api.flipkart.com`, `<N>` from the `at`
+JWT's `z` field: CH→1, HYD→2, MUM→3, KOL→4; wrong subdomain → 406 "DC Change"):
+1. `POST /api/4/location/update` — body `{geoLocation:{latitude,longitude}, addressInfo:{addressLine1,city,state,pincode}, redirectionUrl:"/flipkart-minutes-store?marketplace=HYPERLOCAL", marketplace:"HYPERLOCAL"}`. Sets the delivery store for this context's cookie jar.
+2. `POST /api/4/page/fetch?cacheFirst=false` — body `{pageUri:"/search?q=jivo&marketplace=HYPERLOCAL", locationContext:{pincode,changed:false}, requestContext:{type:"BROWSE_PAGE"}, ...}`. Returns structured products.
 
-1. Create the context with the pincode's GPS coords:
-   `newContext({ geolocation: {latitude, longitude}, permissions: ['geolocation'] })`.
-2. `goto /flipkart-minutes-store?marketplace=HYPERLOCAL`.
-3. Click the **"Use my current location"** button → Flipkart geocodes the GPS
-   coords to a dark store and serves the Minutes catalog. (`mypin` gets set as a
-   side effect.) Poll until the "Select delivery address" picker disappears
-   (~up to 14s). ~10/40 pincodes don't resolve in time → `serviceable=false`.
-4. `goto /search?q=jivo&marketplace=HYPERLOCAL`, wait ~5s, scroll once.
+**Search-only does NOT work** (always 302s) — location/update must run first per pincode.
+Runs a pool of isolated browser contexts (each its own cookie jar → no location cross-talk), each
+looping its share of pincodes via in-page `fetch` (`credentials:'include'`). 302 → one
+re-resolve+retry. Env: `FKM_CONCURRENCY` (default 10), `PINCODES_FILE`, `OUT_FILE`.
 
-## Card parsing (line-based — IMPORTANT)
-A single product card is a ~**300×424** element. Use **tight geometry bounds
-(w 150–380, h 300–560)** so you grab one card, not a multi-product row wrapper
-(a wrapper mixes prices/ETA across SKUs and produces garbage — that was the
-first-run bug). Split each card's innerText into lines:
+Response field map (`slots[].widget.data.products[].productInfo`):
+- name `value.titles.title` · pack `value.titles.subtitle` (e.g. "1 L")
+- sale `value.pricing.finalPrice.value` (₹, **not paise**) · MRP `value.pricing.prices[priceType=="MRP"].value`
+- discount `value.pricing.totalDiscount` · per-litre `value.pricing.pricePerUnit.pricePerUnit` (pivotQualifier=="L")
+- in-stock `value.availability.displayState=="IN_STOCK"` · store `action.params.shopId[0]` · brand `value.productBrand`
 
-```
-[AD] [NN%] [Off] [N L] <JIVO product name> ₹MRP ₹SALE Add        (in stock)
-Currently unavailable [N L] <JIVO product name> ₹PRICE           (OOS)
-```
+### Why a login is required (the guest blocker)
+Flipkart binds the hyperlocal session to a **`T` device-fingerprint cookie** its JS mints in a real
+browser and cross-checks against the `at` JWT's `dId`. Guests can't forge it, so `location/update`
+returns 200 but never commits → search 302s. A logged-in session exported from a real browser
+carries a **valid `T` + matching `at`** → the bind succeeds.
 
-- **pack**: the line matching `^\d[\d.]*\s*(ml|l|kg|g)$`.
-- **name**: the line containing `jivo` (strip `(Pack of N)`).
-- **prices**: lines starting with `₹`. Flipkart lists **MRP first (struck),
-  SALE second** → `sale = min(prices)`, `mrp = max(prices)`.
-- **in_stock = 0** if any line matches `currently unavailable|out of stock|sold out|notify me`.
-- eta is store-level (shown once, e.g. "10 min"), not per-product → `eta_min = null`;
-  the store ETA is captured in `store_name`.
+### Session setup / re-export (the only manual step, ~once per few months)
+1. Log into `flipkart.com` in a browser on your own machine; set a delivery location once.
+2. Export cookies with **Cookie-Editor** (Export as JSON).
+3. On the VPS: `node import_cookies.js <export.json>` → `secrets/flipkart-minutes.storageState.json`
+   (gitignored, chmod 600). Verifies the critical `at` + `T` cookies.
+4. Optional: `node probe_session.js` (should print Jivo for several pincodes).
 
-## Output shape
-Identical to Blinkit so `build_excel.py` works unchanged. `build_excel.py` is
-platform-aware (derives "Flipkart Minutes" from the folder name).
+**Durability:** loading the logged-in homepage at the start of each run refreshes the short-lived
+`at` (30 min) from the long-lived `rt` (~6 months) — *verified* — so cron keeps working for months
+with no manual step. When `rt` expires (or you log out) it auto-falls back (mode 2) and logs
+"re-export Flipkart cookies"; just redo the 3 steps.
 
-## Quirks / tuning
-- Jivo present in Gurgaon, Delhi, Kanpur, Patna, Mysuru… **absent at Bandra/Mumbai**.
-- Per-run yield varies (~70–110 rows) with how many pincodes resolve their GPS
-  location. Comfortably above the healthcheck's 20-row floor. To raise yield,
-  increase the post-search wait or retry the location click.
-- Live in `setup_cron.sh` + `healthcheck.sh` PLATFORMS lists.
+## 2. Browser fallback (`scrape.browser.js`, login-free, ~37 min)
+The original Playwright DOM scraper — no login needed (GPS + "Use my current location" click +
+card parse with tight geometry bounds w150–380×h300–560; sale=min(₹prices), mrp=max; OOS via
+"currently unavailable" etc.). `scrape.js` runs this automatically if the session is missing or
+the health-check pincode (Noida 201304) returns no Jivo. The always-available safety net.
+
+## Coverage / output
+345 pincodes = Blinkit's 332 deduped store-coords (798-pincode density / 16 cities) + 13
+FK-Minutes-only-city points (`pincodes.json`; old 40 in `pincodes.40.bak.json`). FK Minutes is a
+narrower network than Blinkit, so ~half the probes are "not serviceable" (handled gracefully);
+typical yield ~85-100 pincodes carrying Jivo, ~11 distinct Jivo SKUs. Output shape `{summary,
+perPin, allRows}` is identical across both modes so `build_excel.py` / the vault work unchanged.

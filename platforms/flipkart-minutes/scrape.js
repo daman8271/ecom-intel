@@ -1,196 +1,203 @@
+// Flipkart Minutes scraper — DIRECT-API mode (ridiculously fast).
+//
+// Flipkart binds the hyperlocal session to a browser-minted `T` fingerprint cookie, so a guest
+// can't hit the API directly. We transplant a LOGGED-IN session (cookies exported on the user's
+// clean machine via Cookie-Editor -> import_cookies.js -> secrets/flipkart-minutes.storageState.json).
+// With that session, the whole flow is two fast JSON POSTs per pincode through Flipkart's BFF:
+//   1) /api/4/location/update          (set the delivery pincode for this context)
+//   2) /api/4/page/fetch  pageUri=/search?q=jivo&marketplace=HYPERLOCAL   (structured products)
+// We run a pool of isolated browser contexts (each its own cookie jar -> no location cross-talk),
+// each looping its share of the 345 pincodes via in-page fetch. ~30s for 345 vs ~37 min for the
+// browser DOM flow, AND cleaner data (exact sale/MRP/per-litre/stock/pid from JSON).
+//
+// ROBUSTNESS: if the session is missing or expired, we fall back to scrape.browser.js (the
+// login-free Playwright DOM scraper) so the cron never goes dark — and warn to re-export cookies.
+//
+// Env: FKM_CONCURRENCY (default 10) · PINCODES_FILE · OUT_FILE
 const { chromium } = require('playwright');
 const fs = require('fs');
+const path = require('path');
 
-// ---------------------------------------------------------------------------
-// FLIPKART MINUTES scraper.  STATUS: WORKING from this datacenter VPS IP
-// (HTTP 200, no captcha, no login needed).  Location is resolved via the
-// "Use my current location" button using the per-pincode GPS coords (Flipkart
-// needs the real serviceability resolution — setting localStorage `mypin`
-// alone bounces to the preview page).  Products live in the HYPERLOCAL
-// marketplace: /search?q=jivo&marketplace=HYPERLOCAL .
-//
-// FINDING (2026-05-21): Jivo IS carried on Flipkart Minutes. First full run:
-// 30/40 pincodes serviceable, 27 carry Jivo, ~111 rows, ~38 SKUs in ~3 min.
-// Jivo absent at Bandra/Mumbai but present in Gurgaon, Delhi, Kanpur, etc.
-// ~10 pincodes don't resolve the GPS location in time (serviceable=false) =>
-// real coverage is a bit higher than what one run captures.  See SKILL.md.
-// ---------------------------------------------------------------------------
-
-// Full pincode grid: blinkit's 332 deduped store coords (798-pincode density across 16 cities)
-// + 13 FK-Minutes-only-city points = 345 probes. FK-Minutes is a narrower hyperlocal network
-// than Blinkit, so many probes return "not serviceable" — handled gracefully (rows: []).
-// Override the list via PINCODES_FILE (used for subset testing).
-const PFILE = process.env.PINCODES_FILE || (__dirname + '/pincodes.json');
+const PFILE = process.env.PINCODES_FILE || path.join(__dirname, 'pincodes.json');
 const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
-// Kept at 4 (same as the proven 40-pincode runs) so the per-request RATE to flipkart.com
-// matches production — spreading 345 probes over ~37 min avoids the rate-limiting/bot
-// soft-block (generic shell, 0 Jivo) seen when hammered. Well within the 3-hourly window.
-// Tunable via FKM_CONCURRENCY if you want it faster (higher = more throttle risk).
-const CONCURRENCY = parseInt(process.env.FKM_CONCURRENCY || '4', 10);
-const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
+const CONCURRENCY = parseInt(process.env.FKM_CONCURRENCY || '10', 10);
+const OUT = process.env.OUT_FILE || path.join(__dirname, 'result.json');
+const STATE = path.join(__dirname, 'secrets', 'flipkart-minutes.storageState.json');
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 FKUA/msite/0.0.4/msite/Mobile';
+
+// addressInfo.state for the 26 cities in the pincode grid (location/update wants a state).
+const STATE_OF = {
+  Bengaluru: 'Karnataka', Mysuru: 'Karnataka', Bhopal: 'Madhya Pradesh', Indore: 'Madhya Pradesh',
+  Chandigarh: 'Chandigarh', Delhi: 'Delhi', Faridabad: 'Haryana', Gurgaon: 'Haryana',
+  Ghaziabad: 'Uttar Pradesh', Noida: 'Uttar Pradesh', Kanpur: 'Uttar Pradesh', Lucknow: 'Uttar Pradesh',
+  Jaipur: 'Rajasthan', Kolkata: 'West Bengal', Ludhiana: 'Punjab', Mumbai: 'Maharashtra',
+  Pune: 'Maharashtra', Nagpur: 'Maharashtra', Surat: 'Gujarat', Ahmedabad: 'Gujarat',
+  Vadodara: 'Gujarat', Chennai: 'Tamil Nadu', Coimbatore: 'Tamil Nadu', Hyderabad: 'Telangana',
+  Patna: 'Bihar', Visakhapatnam: 'Andhra Pradesh',
+};
+
+function fallbackToBrowser(reason) {
+  process.stderr.write(`[fkm-api] ${reason}\n[fkm-api] FALLING BACK to browser scraper (scrape.browser.js). Re-export Flipkart cookies (import_cookies.js) to restore fast mode.\n`);
+  try {
+    require('child_process').execFileSync('node', [path.join(__dirname, 'scrape.browser.js')],
+      { stdio: 'inherit', env: process.env });
+  } catch (e) { process.stderr.write('[fkm-api] browser fallback also failed: ' + e.message + '\n'); process.exit(1); }
+  process.exit(0);
+}
+
+if (!fs.existsSync(STATE)) fallbackToBrowser('no logged-in session at secrets/flipkart-minutes.storageState.json');
+
+function dcN() {
+  try {
+    const at = JSON.parse(fs.readFileSync(STATE, 'utf8')).cookies.find((c) => c.name === 'at');
+    const z = JSON.parse(Buffer.from(at.value.split('.')[1], 'base64').toString()).z;
+    return { CH: 1, HYD: 2, MUM: 3, KOL: 4 }[z] || 2;
+  } catch (_) { return 2; }
+}
+const N = dcN();
+const LOC_URL = `https://${N}.rome.api.flipkart.com/api/4/location/update`;
+const SEARCH_URL = `https://${N}.rome.api.flipkart.com/api/4/page/fetch?cacheFirst=false`;
 
 function parseVolMl(pack) {
   if (!pack) return null;
   const m = pack.toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
   if (!m) return null;
-  const n = parseFloat(m[1]);
-  const u = m[2];
+  const n = parseFloat(m[1]); const u = m[2];
   if (u === 'ml' || u === 'g') return n;
   if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
   return null;
 }
-
 function canonical(name, pack) {
   const base = (name || '').toLowerCase()
-    .replace(/\(.*?\)/g, '')
-    .replace(/[^a-z0-9 ]/g, '')
-    .replace(/\s+/g, ' ').trim()
-    .replace(/\s/g, '-');
+    .replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, '')
+    .replace(/\s+/g, ' ').trim().replace(/\s/g, '-');
   const vol = parseVolMl(pack);
   const volTag = vol ? (vol >= 1000 ? (vol / 1000) + 'l' : vol + 'ml') : 'na';
   return `${base}-${volTag}`.replace(/--+/g, '-');
 }
 
-// Resolve the Minutes delivery location for this context via GPS. Returns the
-// resolved address string, or '' if it stayed on the preview/unserviceable page.
-async function resolveLocation(page) {
-  await page.goto('https://www.flipkart.com/flipkart-minutes-store?marketplace=HYPERLOCAL', { waitUntil: 'domcontentloaded', timeout: 30000 });
-  await page.waitForTimeout(3000);
-  try {
-    await page.getByText(/use my current location/i).first().click({ timeout: 8000 });
-  } catch (e) { /* button absent => maybe already resolved */ }
-  // poll up to ~14s for the preview picker to disappear
-  for (let i = 0; i < 7; i++) {
-    await page.waitForTimeout(2000);
-    const onPreview = await page.evaluate(() =>
-      /Select delivery address/i.test(document.body.innerText) && /Use my current location/i.test(document.body.innerText));
-    if (!onPreview) break;
-  }
-  const addr = await page.evaluate(() => {
-    const t = (document.body.innerText || '').replace(/\s+/g, ' ').trim();
-    if (/Select delivery address/i.test(t) && /Use my current location/i.test(t)) return '';
-    // first line is usually the resolved address + eta
-    return t.slice(0, 80);
-  });
-  return addr;
+// POST a Flipkart BFF call from inside the page (inherits the transplanted cookies + DC routing).
+async function api(page, url, body) {
+  return page.evaluate(async ({ url, body }) => {
+    try {
+      const r = await fetch(url, {
+        method: 'POST', credentials: 'include',
+        headers: { flipkart_secure: 'true', 'content-type': 'application/json',
+          'accept-language': 'en-IN,en;q=0.9', 'x-user-agent': navigator.userAgent },
+        body: JSON.stringify(body),
+      });
+      const t = await r.text(); let j = null; try { j = JSON.parse(t); } catch (_) {}
+      return { status: r.status, json: j };
+    } catch (e) { return { status: -1, error: String(e) }; }
+  }, { url, body });
 }
 
-async function scrapeOne(browser, rec) {
-  const t0 = Date.now();
-  const ctx = await browser.newContext({
-    userAgent: UA,
-    locale: 'en-IN',
-    timezoneId: 'Asia/Kolkata',
-    viewport: { width: 1280, height: 900 },
-    geolocation: { latitude: rec.lat, longitude: rec.lon },
-    permissions: ['geolocation'],
-  });
-  const page = await ctx.newPage();
+function parseProducts(searchJson, rec) {
+  const rows = [];
+  const slots = ((searchJson && (searchJson.RESPONSE || searchJson).slots)) || [];
+  for (const s of slots) {
+    const ps = (((s.widget || {}).data || {}).products) || [];
+    for (const p of ps) {
+      const v = ((p.productInfo || {}).value) || {};
+      const act = (p.productInfo || {}).action || {};
+      const title = ((v.titles || {}).title) || '';
+      if (!/jivo/i.test(title) && !/jivo/i.test(v.productBrand || '')) continue;
+      const pack = ((v.titles || {}).subtitle) || '';
+      const name = title.replace(/\(pack of \d+\)/i, '').replace(/\s+/g, ' ').trim();
+      const pricing = v.pricing || {};
+      const sale = (pricing.finalPrice || {}).value;
+      const mrpEntry = (pricing.prices || []).find((x) => x.priceType === 'MRP');
+      const mrp = mrpEntry ? mrpEntry.value : sale;
+      if (!/jivo/i.test(name) || !sale) continue;
+      const disc = (typeof pricing.totalDiscount === 'number') ? pricing.totalDiscount
+        : (mrp && sale && mrp >= sale ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : null);
+      const vol = parseVolMl(pack);
+      const ppu = ((pricing.pricePerUnit || {}).pivotQualifier === 'L') ? (pricing.pricePerUnit || {}).pricePerUnit : null;
+      const storeId = (((act.params || {}).shopId) || [])[0] || '';
+      rows.push({
+        city: rec.city, pincode: rec.pincode, locality: rec.locality,
+        store_id: storeId, store_name: storeId,
+        sku_raw: name, canonical: canonical(name, pack), pack,
+        vol_ml: vol, sale, mrp, discount_pct: disc,
+        per_litre: ppu != null ? ppu : (vol ? Math.round((sale / (vol / 1000)) * 100) / 100 : null),
+        eta_min: null, in_stock: ((v.availability || {}).displayState === 'IN_STOCK') ? 1 : 0,
+      });
+    }
+  }
+  const dd = new Map();
+  for (const r of rows) { const k = `${r.store_id}|${r.canonical}`; if (!dd.has(k)) dd.set(k, r); }
+  return [...dd.values()];
+}
+
+async function scrapePincode(page, rec) {
+  const locBody = {
+    geoLocation: { latitude: String(rec.lat), longitude: String(rec.lon) },
+    addressInfo: { addressLine1: rec.locality || rec.city, city: rec.city, state: STATE_OF[rec.city] || '', pincode: String(rec.pincode) },
+    redirectionUrl: '/flipkart-minutes-store?marketplace=HYPERLOCAL', marketplace: 'HYPERLOCAL',
+  };
+  const searchBody = {
+    pageUri: '/search?q=jivo&marketplace=HYPERLOCAL',
+    locationContext: { pincode: parseInt(rec.pincode, 10), changed: false },
+    pageContext: { trackingContext: { context: { eVar51: 'direct_browse', eVar61: 'direct_browse' } }, fetchSeoData: true, networkSpeed: 9400 },
+    requestContext: { type: 'BROWSE_PAGE' },
+  };
+  let serviceable = false;
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    const loc = await api(page, LOC_URL, locBody);
+    serviceable = loc.status === 200;
+    const srch = await api(page, SEARCH_URL, searchBody);
+    const redir = (((srch.json && (srch.json.RESPONSE || srch.json).pageMeta) || {}).redirectionObject || {}).statusCode;
+    if (redir === 302) { if (attempt < 2) { await page.waitForTimeout(600); continue; } return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [] }; }
+    const rows = parseProducts(srch.json, rec);
+    const sid = (rows[0] || {}).store_id || '';
+    return { ...rec, serviceable: true, store_id: sid, store_name: sid, rows };
+  }
+  return { ...rec, serviceable, store_id: '', store_name: '', rows: [] };
+}
+
+async function newCtxPage(browser) {
+  const ctx = await browser.newContext({ userAgent: UA, locale: 'en-IN', timezoneId: 'Asia/Kolkata', storageState: STATE });
   await ctx.route('**/*', (route) => {
     const t = route.request().resourceType();
-    if (['image', 'font', 'media'].includes(t)) return route.abort();
+    if (['image', 'font', 'media', 'stylesheet'].includes(t)) return route.abort();
     return route.continue();
   });
-  let rows = [];
-  let store = {};
-  let serviceable = false;
-  try {
-    const addr = await resolveLocation(page);
-    serviceable = !!addr;
-    const pin = await page.evaluate(() => localStorage.getItem('mypin') || '');
-    store = { id: pin, name: addr };
-    // Search up to twice: the hyperlocal store sometimes isn't warmed up on the
-    // first try (page still shows the generic shell -> 0 Jivo despite serviceable).
-    // A re-resolve + longer-wait retry recovers those misses (helps at any scale).
-    for (let attempt = 1; attempt <= 2 && serviceable; attempt++) {
-      if (attempt === 2) {
-        const a2 = await resolveLocation(page);
-        if (a2) store = { id: store.id, name: a2 };
-        rows = [];
-      }
-      await page.goto('https://www.flipkart.com/search?q=jivo&marketplace=HYPERLOCAL', { waitUntil: 'domcontentloaded', timeout: 30000 });
-      await page.waitForTimeout(attempt === 2 ? 8000 : 5000);
-      await page.evaluate(() => window.scrollBy(0, 1400));
-      await page.waitForTimeout(2000);
-      // Each Minutes product card is a ~300x424 element. Tight geometry bounds
-      // avoid catching a multi-product row wrapper (which would mix prices/ETA
-      // across SKUs). Return the card's text split into lines for clean parsing.
-      const cards = await page.evaluate(() => {
-        const out = [];
-        const seen = new Set();
-        document.querySelectorAll('a, div').forEach((el) => {
-          const t = el.innerText || '';
-          if (!/jivo/i.test(t) || !/₹/.test(t)) return;
-          const r = el.getBoundingClientRect();
-          if (r.width < 150 || r.width > 380) return;
-          if (r.height < 300 || r.height > 560) return;
-          const key = t.slice(0, 90);
-          if (seen.has(key)) return;
-          seen.add(key);
-          out.push(t.split('\n').map((s) => s.trim()).filter(Boolean));
-        });
-        return out;
-      });
-      // Card line layout: [AD] [NN%] [Off] [N L] NAME ₹MRP ₹SALE Add
-      //   or for OOS:      Currently unavailable [N L] NAME ₹PRICE
-      for (const lines of cards) {
-        const inStock = !lines.some((l) => /currently unavailable|out of stock|sold out|notify me/i.test(l));
-        const disc = (lines.join(' ').match(/(\d+)%\s*off/i) || [])[1];
-        const packLine = lines.find((l) => /^\d[\d.]*\s*(ml|l|ltr|litre|kg|g)$/i.test(l));
-        const pack = packLine || '';
-        const nameLine = lines.find((l) => /jivo/i.test(l)) || '';
-        const name = nameLine.replace(/\(pack of \d+\)/i, '').replace(/\s+/g, ' ').trim();
-        const prices = lines.filter((l) => /^₹/.test(l)).map((l) => parseInt(l.replace(/[₹,\s]/g, ''), 10)).filter((n) => n > 0);
-        const sale = prices.length ? Math.min(...prices) : null;
-        const mrp = prices.length ? Math.max(...prices) : sale;
-        if (!/jivo/i.test(name) || !sale) continue;
-        rows.push({
-          city: rec.city, pincode: rec.pincode, locality: rec.locality,
-          store_id: store.id || '', store_name: store.name || '',
-          sku_raw: name, canonical: canonical(name, pack), pack: pack || '',
-          vol_ml: parseVolMl(pack), sale, mrp,
-          discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : (disc ? parseFloat(disc) : null),
-          per_litre: parseVolMl(pack) ? Math.round((sale / (parseVolMl(pack) / 1000)) * 100) / 100 : null,
-          eta_min: null,
-          in_stock: inStock ? 1 : 0,
-        });
-      }
-      const dd = new Map();
-      for (const r of rows) {
-        const k = `${r.store_id}|${r.canonical}`;
-        if (!dd.has(k)) dd.set(k, r);
-      }
-      rows = [...dd.values()];
-      if (rows.length > 0) break;
-    }
-  } catch (e) {
-    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`);
-  } finally {
-    await ctx.close();
-  }
-  process.stderr.write(`[ok] ${rec.city} ${rec.pincode} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) serviceable=${serviceable} store=${store.name || 'n/a'}\n`);
-  return { ...rec, store_id: store.id || '', store_name: store.name || '', serviceable, rows };
-}
-
-async function pool(items, n, fn) {
-  const results = [];
-  let i = 0;
-  async function worker() {
-    while (i < items.length) {
-      const idx = i++;
-      results[idx] = await fn(items[idx], idx);
-      await new Promise((r) => setTimeout(r, 800 + Math.random() * 1500));
-    }
-  }
-  await Promise.all(Array.from({ length: Math.min(n, items.length) }, worker));
-  return results;
+  const page = await ctx.newPage();
+  // Load the logged-in homepage once: establishes flipkart.com origin (for credentialed fetch)
+  // and lets Flipkart refresh the short-lived `at` from the long-lived `rt` if needed.
+  await page.goto('https://www.flipkart.com/', { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {});
+  await page.waitForTimeout(800);
+  return { ctx, page };
 }
 
 (async () => {
-  const browser = await chromium.launch({ headless: true });
+  let browser;
+  try { browser = await chromium.launch({ headless: true, channel: 'chrome', args: ['--no-sandbox'] }); }
+  catch (_) { browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] }); }
   const t0 = Date.now();
-  const perPin = await pool(PINCODES, CONCURRENCY, (rec) => scrapeOne(browser, rec));
+
+  // Health check: a known-good pincode must return Jivo, else the session is dead -> fall back.
+  const hc = await newCtxPage(browser);
+  const probe = await scrapePincode(hc.page, { city: 'Noida', pincode: '201304', locality: 'Sector 106', lat: 28.5355, lon: 77.391 });
+  await hc.ctx.close();
+  if (probe.rows.length === 0) { await browser.close(); fallbackToBrowser('session health-check failed (pincode 201304 returned no Jivo — cookies likely expired)'); }
+
+  // Partition pincodes round-robin across CONCURRENCY isolated contexts.
+  const buckets = Array.from({ length: CONCURRENCY }, () => []);
+  PINCODES.forEach((p, i) => buckets[i % CONCURRENCY].push(p));
+  const perPin = [];
+  await Promise.all(buckets.map(async (bucket) => {
+    if (!bucket.length) return;
+    const { ctx, page } = await newCtxPage(browser);
+    for (const rec of bucket) {
+      try { perPin.push(await scrapePincode(page, rec)); }
+      catch (e) { process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`); perPin.push({ ...rec, serviceable: false, store_id: '', store_name: '', rows: [] }); }
+    }
+    await ctx.close();
+  }));
   await browser.close();
+
+  perPin.sort((a, b) => String(a.pincode).localeCompare(String(b.pincode)));
   const allRows = perPin.flatMap((p) => p.rows);
   const summary = {
     pincodes_total: PINCODES.length,
@@ -200,8 +207,9 @@ async function pool(items, n, fn) {
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
     captured_at: new Date().toISOString(),
+    mode: 'api',
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
-  fs.writeFileSync(process.env.OUT_FILE || (__dirname + '/result.json'), JSON.stringify({ summary, perPin, allRows }, null, 2));
+  fs.writeFileSync(OUT, JSON.stringify({ summary, perPin, allRows }, null, 2));
   console.log(JSON.stringify(summary));
-})();
+})().catch((e) => { fallbackToBrowser('api scraper crashed: ' + e.message); });
