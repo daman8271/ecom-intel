@@ -8,7 +8,7 @@ platforms:
   - zepto
 pincodes: 47
 skus: 34
-observations: 6993
+observations: 7356
 tags:
   - type/city-hub
   - platform/blinkit
@@ -30,7 +30,7 @@ Up: [[locations-index]]
 ## SKUs available in Ludhiana (34)
 [[jivo-canola-cold-press-edible-oil-1l]] · [[jivo-canola-cold-press-oil-indian-medical-association-recommended-5l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-kachi-ghani-mustard-oil-1l]] · [[jivo-cold-pressed-canola-oil-1l]] · [[jivo-cold-pressed-canola-oil-5l]] · [[jivo-cold-pressed-chemical-free-sunflower-oil-1l]] · [[jivo-cold-pressed-chemical-free-sunflower-oil-5l]] · [[jivo-cold-pressed-mustard-oil-5l-5l]] · [[jivo-cold-pressed-oil-groundnut-oil-1l]] · [[jivo-cold-pressed-oil-groundnut-oil-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-sunflower-oil-1l]] · [[jivo-daily-cooking-pomace-olive-oil-1l]] · [[jivo-extra-light-daily-cooking-olive-oil-1l]] · [[jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-virgin-olive-oil-250ml]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na]] · [[jivo-kachi-ghani-cold-pressed-mustard-oil-1l]] · [[jivo-kachi-ghani-cold-pressed-mustard-oil-5l]] · [[jivo-mineral-water-na]] · [[jivo-pomace-daily-cooking-olive-oil-2l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-ricebran-oil-1l-1l]] · [[jivo-so-olive-oil-1l-1l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]]
 
-## Observations (6993 rows)
+## Observations (7356 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -54,6 +54,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141001,283,375,24.5,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141001,283,375,24.5,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141001,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141001,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141001,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141001,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141001,1621,1650,1.8,1
@@ -77,6 +78,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141001,1621,1650,1.8,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141001,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141001,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141001,1621,1650,1.8,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141001,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141001,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141001,165,255,35.3,1
@@ -100,6 +102,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141001,165,255,35.3,0
 2026-05-29-1600,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141001,165,255,35.3,0
 2026-05-30-0900,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141001,165,255,35.3,1
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141001,165,255,35.3,1
 2026-05-21-1417,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,141001,259,375,30.9,1
 2026-05-21-1703,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,141001,259,375,30.9,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141001,260,375,30.7,1
@@ -138,6 +141,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141001,185,275,32.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141001,185,275,32.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141001,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141001,185,275,32.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141001,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141001,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141001,1350,1350,0,1
@@ -161,6 +165,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141001,1350,1350,0,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141001,1350,1350,0,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141001,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141001,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,141001,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141001,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141001,991,1250,20.7,1
@@ -184,6 +189,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141001,991,1250,20.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141001,991,1250,20.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141001,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141001,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,141001,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141001,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141001,234,560,58.2,1
@@ -207,6 +213,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141001,234,560,58.2,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141001,234,560,58.2,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141001,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141001,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,141001,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141001,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141001,1080,2800,61.4,1
@@ -230,6 +237,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141001,1080,2800,61.4,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141001,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141001,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141001,1080,2800,61.4,1
 2026-05-21-1417,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141001,190,275,30.9,1
 2026-05-21-1703,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141001,190,275,30.9,1
 2026-05-22-1600,2026-05-22,,jivo-daily-cooking-pomace-olive-oil-1l,141001,517,1049,50.7,1
@@ -255,6 +263,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141001,517,1049,50.7,1
 2026-05-29-1600,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141001,517,1049,50.7,1
 2026-05-30-0900,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141001,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141001,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,141001,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141001,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141001,1318,2998,56,1
@@ -278,6 +287,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141001,1318,2998,56,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141001,1318,2998,56,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141001,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141001,1318,2998,56,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141001,3452,6499,46.9,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141001,3452,6499,46.9,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141001,3452,6499,46.9,1
@@ -301,6 +311,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141001,3452,6499,46.9,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141001,3452,6499,46.9,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141001,3452,6499,46.9,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141001,3452,6499,46.9,1
 2026-05-21-1417,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,141001,594,1499,60.4,1
 2026-05-21-1703,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,141001,594,1499,60.4,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141001,624,1499,58.4,1
@@ -342,6 +353,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,141001,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141001,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,141001,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,141001,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-extra-virgin-olive-oil-250ml,141001,255,430,40.7,1
 2026-05-23-0900,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141001,255,450,43.3,1
 2026-05-23-1200,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141001,255,450,43.3,1
@@ -365,6 +377,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141001,255,450,43.3,1
 2026-05-29-1600,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141001,255,450,43.3,1
 2026-05-30-0900,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141001,255,450,43.3,1
+2026-05-30-1200,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141001,255,450,43.3,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141001,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141001,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141001,225,225,0,1
@@ -388,6 +401,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141001,225,225,0,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141001,225,225,0,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141001,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141001,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141001,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141001,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141001,936,1050,10.9,1
@@ -411,6 +425,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141001,936,1050,10.9,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141001,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141001,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141001,936,1050,10.9,1
 2026-05-21-1417,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141001,169,255,33.7,1
 2026-05-21-1703,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141001,169,255,33.7,1
 2026-05-22-1600,2026-05-22,,jivo-pomace-daily-cooking-olive-oil-2l,141001,1002,1449,30.8,1
@@ -436,6 +451,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141001,1002,1449,30.8,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141001,1002,1449,30.8,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141001,1002,1449,30.8,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141001,1002,1449,30.8,1
 2026-05-21-1417,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,141001,385,1049,63.3,1
 2026-05-21-1703,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,141001,385,1049,63.3,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141001,405,1049,61.4,1
@@ -477,6 +493,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-pomace-olive-oil-5l,141001,2489,4999,50.2,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141001,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-olive-oil-5l,141001,2489,4999,50.2,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-olive-oil-5l,141001,2489,4999,50.2,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,141001,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,141001,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,141001,285,285,0,1
@@ -500,6 +517,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,141001,285,285,0,1
 2026-05-29-1600,2026-05-29,,jivo-ricebran-oil-1l-1l,141001,285,285,0,1
 2026-05-30-0900,2026-05-30,,jivo-ricebran-oil-1l-1l,141001,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,141001,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,141001,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,141001,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,141001,257,325,20.9,1
@@ -520,30 +538,37 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,141001,257,325,20.9,1
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,141001,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,141001,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,141001,257,325,20.9,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,141007,258,375,31.2,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141007,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141007,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141007,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141007,260,375,30.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,141007,1050,1650,36.4,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141007,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141007,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141007,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141007,1193,1650,27.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,141007,594,1499,60.4,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141007,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141007,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141007,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141007,624,1499,58.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,141007,1190,2799,57.5,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141007,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141007,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141007,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141007,1237,2799,55.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,141007,388,1049,63,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141007,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141007,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141007,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141007,405,1049,61.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,141007,1971,4999,60.6,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141007,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141007,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141007,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141007,1971,4999,60.6,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141010,260,375,30.7,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141010,260,375,30.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141010,260,375,30.7,1
@@ -633,6 +658,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141014,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141014,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,141014,238,375,36.5,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,141014,238,375,36.5,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141014,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141014,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141014,165,255,35.3,1
@@ -682,6 +708,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141014,262,375,30.1,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141014,262,375,30.1,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141014,262,375,30.1,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141014,260,375,30.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,141014,1186,1650,28.1,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141014,1186,1650,28.1,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141014,1186,1650,28.1,1
@@ -708,6 +735,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141014,1328,1650,19.5,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141014,1328,1650,19.5,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141014,1328,1650,19.5,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141014,1193,1650,27.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141014,206,275,25.1,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141014,185,275,32.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141014,185,275,32.7,1
@@ -824,7 +852,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141014,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141014,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-can-4l,141014,670,684,2,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-can-4l,141014,670,684,2,0
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,141014,169,255,33.7,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,141014,169,255,33.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141014,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141014,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141014,190,275,30.9,1
@@ -942,6 +972,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141014,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141014,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141014,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141014,624,1499,58.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,141014,1141,2799,59.2,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141014,1141,2799,59.2,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141014,1141,2799,59.2,1
@@ -991,6 +1022,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,141014,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141014,1188,2799,57.6,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,141014,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141014,1237,2799,55.8,1
 2026-05-22-1600,2026-05-22,,jivo-extra-virgin-olive-oil-250ml,141014,255,430,40.7,1
 2026-05-23-0900,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141014,255,430,40.7,1
 2026-05-23-1200,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141014,255,430,40.7,1
@@ -1083,6 +1115,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141014,171,255,32.9,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141014,171,255,32.9,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-mineral-water-na,141014,23,23,0,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-mineral-water-na,141014,23,23,0,0
 2026-05-22-1600,2026-05-22,,jivo-pomace-daily-cooking-olive-oil-2l,141014,724,1449,50,1
 2026-05-23-0900,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,141014,942,1449,35,1
 2026-05-23-1200,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,141014,942,1449,35,1
@@ -1132,6 +1165,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141014,384,1049,63.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141014,384,1049,63.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141014,402,1049,61.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141014,405,1049,61.4,1
 2026-05-22-1600,2026-05-22,,jivo-pomace-olive-oil-5l,141014,2489,4999,50.2,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,141014,1971,4999,60.6,1
 2026-05-23-0900,2026-05-23,,jivo-pomace-olive-oil-5l,141014,2489,4999,50.2,1
@@ -1159,7 +1193,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-pomace-olive-oil-5l,141014,2489,4999,50.2,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-olive-oil-5l,141014,2489,4999,50.2,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-olive-oil-5l,141014,2489,4999,50.2,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141014,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-pomace-olive-oil-plastic-bottle-1l,141014,371,1049,64.6,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-pomace-olive-oil-plastic-bottle-1l,141014,371,1049,64.6,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,141014,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,141014,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,141014,285,285,0,1
@@ -1207,6 +1243,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,141014,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,141014,257,325,20.9,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-soybean-oil-soyabean-oil-pouch-1l,141014,165,199,17.1,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-soybean-oil-soyabean-oil-pouch-1l,141014,165,199,17.1,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-edible-oil-1l,141015,283,375,24.5,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141015,283,375,24.5,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141015,283,375,24.5,1
@@ -1230,6 +1267,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141015,283,375,24.5,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141015,283,375,24.5,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141015,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141015,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141015,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141015,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141015,1621,1650,1.8,1
@@ -1253,8 +1291,11 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141015,1621,1650,1.8,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141015,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141015,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141015,1621,1650,1.8,1
 2026-05-30-0017,2026-05-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,141015,485,750,35.3,1
+2026-05-30-1200,2026-05-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,141015,485,750,35.3,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,141015,238,375,36.5,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,141015,238,375,36.5,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141015,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141015,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141015,165,255,35.3,1
@@ -1278,6 +1319,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141015,165,255,35.3,1
 2026-05-29-1600,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141015,165,255,35.3,1
 2026-05-30-0900,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141015,165,255,35.3,1
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141015,165,255,35.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,141015,258,375,31.2,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,141015,258,375,31.2,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,141015,258,375,31.2,1
@@ -1304,6 +1346,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141015,261,375,30.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141015,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141015,261,375,30.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141015,261,375,30.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,141015,1050,1650,36.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141015,1050,1650,36.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141015,1050,1650,36.4,1
@@ -1330,6 +1373,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141015,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141015,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141015,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141015,1193,1650,27.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141015,206,275,25.1,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141015,185,275,32.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141015,185,275,32.7,1
@@ -1353,6 +1397,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141015,185,275,32.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141015,185,275,32.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141015,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141015,185,275,32.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141015,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141015,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141015,1350,1350,0,1
@@ -1376,6 +1421,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141015,1350,1350,0,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141015,1350,1350,0,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141015,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141015,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,141015,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141015,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141015,991,1250,20.7,1
@@ -1399,6 +1445,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141015,991,1250,20.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141015,991,1250,20.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141015,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141015,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,141015,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141015,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141015,234,560,58.2,1
@@ -1422,6 +1469,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141015,234,560,58.2,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141015,234,560,58.2,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141015,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141015,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,141015,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141015,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141015,1080,2800,61.4,1
@@ -1445,7 +1493,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141015,1080,2800,61.4,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141015,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141015,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141015,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,141015,169,255,33.7,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,141015,169,255,33.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141015,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141015,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141015,190,275,30.9,1
@@ -1469,6 +1519,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-sunflower-oil-1l,141015,207,275,24.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,141015,207,275,24.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,141015,207,275,24.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,141015,207,275,24.7,1
 2026-05-22-1600,2026-05-22,,jivo-daily-cooking-pomace-olive-oil-1l,141015,517,1049,50.7,1
 2026-05-23-0900,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,141015,517,1049,50.7,1
 2026-05-23-1200,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,141015,517,1049,50.7,1
@@ -1492,6 +1543,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141015,517,1049,50.7,1
 2026-05-29-1600,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141015,517,1049,50.7,1
 2026-05-30-0900,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141015,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141015,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,141015,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141015,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141015,1318,2998,56,1
@@ -1515,6 +1567,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141015,1318,2998,56,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141015,1318,2998,56,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141015,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141015,1318,2998,56,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141015,3452,6499,46.9,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141015,3452,6499,46.9,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141015,3452,6499,46.9,1
@@ -1538,6 +1591,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141015,3452,6499,46.9,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141015,3452,6499,46.9,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141015,3452,6499,46.9,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141015,3452,6499,46.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,141015,594,1499,60.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141015,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141015,594,1499,60.4,1
@@ -1566,6 +1620,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0017,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,141015,499,1499,66.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141015,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,141015,499,1499,66.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141015,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,141015,499,1499,66.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,141015,1091,2799,61,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141015,1091,2799,61,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141015,1091,2799,61,1
@@ -1615,6 +1671,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,141015,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141015,1139,2799,59.3,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,141015,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141015,1139,2799,59.3,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,141015,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-extra-virgin-olive-oil-250ml,141015,255,430,40.7,1
 2026-05-23-0900,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141015,255,430,40.7,1
 2026-05-23-1200,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141015,255,430,40.7,1
@@ -1638,6 +1696,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141015,255,430,40.7,1
 2026-05-29-1600,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141015,255,430,40.7,1
 2026-05-30-0900,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141015,255,430,40.7,1
+2026-05-30-1200,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141015,255,430,40.7,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141015,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141015,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141015,225,225,0,1
@@ -1661,6 +1720,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141015,225,225,0,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141015,225,225,0,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141015,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141015,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141015,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141015,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141015,936,1050,10.9,1
@@ -1684,6 +1744,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141015,936,1050,10.9,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141015,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141015,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141015,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na,141015,49,150,67.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141015,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141015,169,255,33.7,1
@@ -1708,6 +1769,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141015,171,255,32.9,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141015,171,255,32.9,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141015,171,255,32.9,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141015,171,255,32.9,1
 2026-05-22-1600,2026-05-22,,jivo-pomace-daily-cooking-olive-oil-2l,141015,724,1449,50,1
 2026-05-23-0900,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,141015,942,1449,35,1
 2026-05-23-1200,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,141015,942,1449,35,1
@@ -1731,6 +1793,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141015,942,1449,35,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141015,942,1449,35,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141015,942,1449,35,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141015,942,1449,35,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,141015,385,1049,63.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141015,385,1049,63.3,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141015,385,1049,63.3,1
@@ -1757,6 +1820,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141015,384,1049,63.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141015,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141015,402,1049,61.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141015,402,1049,61.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-5l,141015,1971,4999,60.6,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141015,1971,4999,60.6,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141015,1971,4999,60.6,1
@@ -1806,6 +1870,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-pomace-olive-oil-5l,141015,2489,4999,50.2,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141015,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-olive-oil-5l,141015,2489,4999,50.2,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141015,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-olive-oil-5l,141015,2489,4999,50.2,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,141015,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,141015,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,141015,285,285,0,1
@@ -1829,6 +1895,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,141015,285,285,0,1
 2026-05-29-1600,2026-05-29,,jivo-ricebran-oil-1l-1l,141015,285,285,0,1
 2026-05-30-0900,2026-05-30,,jivo-ricebran-oil-1l-1l,141015,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,141015,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,141015,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,141015,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,141015,257,325,20.9,1
@@ -1852,6 +1919,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,141015,257,325,20.9,1
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,141015,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,141015,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,141015,257,325,20.9,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-edible-oil-1l,141017,283,375,24.5,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141017,283,375,24.5,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141017,283,375,24.5,1
@@ -1875,6 +1943,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141017,283,375,24.5,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141017,283,375,24.5,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141017,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141017,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141017,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141017,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141017,1621,1650,1.8,1
@@ -1898,6 +1967,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141017,1621,1650,1.8,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141017,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141017,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141017,1621,1650,1.8,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141017,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141017,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141017,165,255,35.3,1
@@ -1921,6 +1991,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141017,165,255,35.3,1
 2026-05-29-1600,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141017,165,255,35.3,1
 2026-05-30-0900,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141017,165,255,35.3,1
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141017,165,255,35.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,141017,259,375,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,141017,259,375,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,141017,259,375,30.9,1
@@ -1947,6 +2018,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141017,262,375,30.1,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141017,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141017,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141017,260,375,30.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,141017,1186,1650,28.1,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141017,1186,1650,28.1,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141017,1186,1650,28.1,1
@@ -1973,6 +2045,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141017,1328,1650,19.5,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141017,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141017,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141017,1193,1650,27.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141017,206,275,25.1,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141017,185,275,32.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141017,185,275,32.7,1
@@ -1996,6 +2069,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141017,185,275,32.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141017,185,275,32.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141017,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141017,185,275,32.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141017,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141017,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141017,1350,1350,0,1
@@ -2019,6 +2093,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141017,1350,1350,0,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141017,1350,1350,0,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141017,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141017,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,141017,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141017,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141017,991,1250,20.7,1
@@ -2042,6 +2117,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141017,991,1250,20.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141017,991,1250,20.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141017,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141017,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,141017,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141017,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141017,234,560,58.2,1
@@ -2065,6 +2141,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141017,234,560,58.2,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141017,234,560,58.2,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141017,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141017,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,141017,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141017,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141017,1080,2800,61.4,1
@@ -2088,6 +2165,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141017,1080,2800,61.4,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141017,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141017,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141017,1080,2800,61.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141017,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141017,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141017,190,275,30.9,1
@@ -2131,6 +2209,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141017,517,1049,50.7,1
 2026-05-29-1600,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141017,517,1049,50.7,1
 2026-05-30-0900,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141017,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141017,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,141017,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141017,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141017,1318,2998,56,1
@@ -2154,6 +2233,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141017,1318,2998,56,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141017,1318,2998,56,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141017,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141017,1318,2998,56,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141017,3452,6499,46.9,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141017,3452,6499,46.9,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141017,3452,6499,46.9,1
@@ -2177,6 +2257,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141017,3452,6499,46.9,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141017,3452,6499,46.9,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141017,3452,6499,46.9,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141017,3452,6499,46.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,141017,594,1499,60.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141017,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141017,594,1499,60.4,1
@@ -2203,6 +2284,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141017,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141017,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141017,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141017,624,1499,58.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,141017,1141,2799,59.2,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141017,1141,2799,59.2,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141017,1141,2799,59.2,1
@@ -2252,6 +2334,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,141017,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141017,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,141017,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141017,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,141017,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-extra-virgin-olive-oil-250ml,141017,255,430,40.7,1
 2026-05-23-0900,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141017,255,430,40.7,1
 2026-05-23-1200,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141017,255,430,40.7,1
@@ -2275,6 +2359,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141017,255,430,40.7,1
 2026-05-29-1600,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141017,255,430,40.7,1
 2026-05-30-0900,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141017,255,430,40.7,1
+2026-05-30-1200,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141017,255,430,40.7,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141017,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141017,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141017,225,225,0,1
@@ -2298,6 +2383,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141017,225,225,0,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141017,225,225,0,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141017,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141017,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141017,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141017,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141017,936,1050,10.9,1
@@ -2321,6 +2407,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141017,936,1050,10.9,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141017,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141017,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141017,936,1050,10.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141017,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141017,169,255,33.7,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141017,169,255,33.7,1
@@ -2364,6 +2451,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141017,942,1449,35,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141017,942,1449,35,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141017,942,1449,35,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141017,942,1449,35,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,141017,385,1049,63.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141017,385,1049,63.3,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141017,385,1049,63.3,1
@@ -2390,6 +2478,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141017,384,1049,63.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141017,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141017,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141017,405,1049,61.4,1
 2026-05-22-1600,2026-05-22,,jivo-pomace-olive-oil-5l,141017,2489,4999,50.2,1
 2026-05-23-0900,2026-05-23,,jivo-pomace-olive-oil-5l,141017,2489,4999,50.2,1
 2026-05-23-1200,2026-05-23,,jivo-pomace-olive-oil-5l,141017,2489,4999,50.2,1
@@ -2419,6 +2508,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-pomace-olive-oil-5l,141017,2489,4999,50.2,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141017,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-olive-oil-5l,141017,2489,4999,50.2,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141017,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-olive-oil-5l,141017,2489,4999,50.2,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,141017,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,141017,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,141017,285,285,0,1
@@ -2442,6 +2533,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,141017,285,285,0,1
 2026-05-29-1600,2026-05-29,,jivo-ricebran-oil-1l-1l,141017,285,285,0,1
 2026-05-30-0900,2026-05-30,,jivo-ricebran-oil-1l-1l,141017,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,141017,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,141017,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,141017,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,141017,257,325,20.9,1
@@ -2465,6 +2557,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,141017,257,325,20.9,1
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,141017,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,141017,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,141017,257,325,20.9,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,141101,258,375,31.2,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141101,260,375,30.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141101,260,375,30.7,1
@@ -2631,26 +2724,32 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141107,260,375,30.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141107,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141107,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141107,260,375,30.7,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141107,1193,1650,27.7,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141107,1193,1650,27.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141107,1193,1650,27.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141107,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141107,1193,1650,27.7,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141107,624,1499,58.4,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141107,624,1499,58.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141107,624,1499,58.4,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141107,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141107,624,1499,58.4,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141107,1237,2799,55.8,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141107,1237,2799,55.8,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141107,1237,2799,55.8,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141107,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141107,1237,2799,55.8,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141107,405,1049,61.4,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141107,399,1049,62,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141107,399,1049,62,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141107,399,1049,62,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141107,405,1049,61.4,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141107,1971,4999,60.6,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141107,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141107,1971,4999,60.6,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141107,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141107,1971,4999,60.6,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141108,260,375,30.7,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141108,260,375,30.7,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141108,260,375,30.7,1
@@ -2660,6 +2759,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141108,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141108,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141108,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141108,260,375,30.7,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141108,1193,1650,27.7,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141108,1193,1650,27.7,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141108,1193,1650,27.7,1
@@ -2669,6 +2769,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141108,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141108,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141108,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141108,1193,1650,27.7,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141108,624,1499,58.4,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141108,624,1499,58.4,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141108,624,1499,58.4,1
@@ -2678,6 +2779,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141108,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141108,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141108,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141108,624,1499,58.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141108,1237,2799,55.8,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141108,1237,2799,55.8,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141108,1237,2799,55.8,1
@@ -2687,6 +2789,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141108,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141108,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141108,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141108,1237,2799,55.8,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141108,406,1049,61.3,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141108,405,1049,61.4,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141108,399,1049,62,1
@@ -2696,6 +2799,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141108,405,1049,61.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141108,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141108,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141108,405,1049,61.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141108,1971,4999,60.6,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141108,1971,4999,60.6,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141108,1971,4999,60.6,1
@@ -2705,6 +2809,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141108,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141108,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141108,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141108,1971,4999,60.6,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141109,260,375,30.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141109,260,375,30.7,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141109,260,375,30.7,1
@@ -2751,6 +2856,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141113,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141113,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141113,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141113,260,375,30.7,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141113,1050,1650,36.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141113,1193,1650,27.7,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141113,1193,1650,27.7,1
@@ -2761,6 +2867,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141113,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141113,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141113,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141113,1193,1650,27.7,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141113,594,1499,60.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141113,624,1499,58.4,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141113,624,1499,58.4,1
@@ -2771,6 +2878,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141113,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141113,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141113,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141113,624,1499,58.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141113,1190,2799,57.5,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141113,1237,2799,55.8,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141113,1237,2799,55.8,1
@@ -2781,6 +2889,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141113,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141113,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141113,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141113,1237,2799,55.8,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141113,388,1049,63,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141113,406,1049,61.3,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141113,399,1049,62,1
@@ -2791,6 +2900,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141113,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141113,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141113,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141113,405,1049,61.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141113,1971,4999,60.6,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141113,1971,4999,60.6,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141113,1971,4999,60.6,1
@@ -2801,6 +2911,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141113,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141113,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141113,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141113,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,141114,258,375,31.2,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,141114,258,375,31.2,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,141114,258,375,31.2,1
@@ -2870,6 +2981,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141115,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141115,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141115,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141115,260,375,30.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,141115,1050,1650,36.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141115,1050,1650,36.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141115,1193,1650,27.7,1
@@ -2879,6 +2991,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141115,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141115,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141115,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141115,1193,1650,27.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,141115,594,1499,60.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141115,594,1499,60.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141115,624,1499,58.4,1
@@ -2888,6 +3001,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141115,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141115,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141115,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141115,624,1499,58.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,141115,1190,2799,57.5,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141115,1190,2799,57.5,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141115,1237,2799,55.8,1
@@ -2897,6 +3011,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141115,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141115,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141115,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141115,1237,2799,55.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,141115,388,1049,63,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141115,388,1049,63,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141115,406,1049,61.3,1
@@ -2906,6 +3021,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141115,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141115,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141115,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141115,405,1049,61.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,141115,1971,4999,60.6,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141115,1971,4999,60.6,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141115,1971,4999,60.6,1
@@ -2915,6 +3031,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141115,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141115,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141115,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141115,1971,4999,60.6,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,141116,258,375,31.2,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,141116,258,375,31.2,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,141116,258,375,31.2,1
@@ -2923,6 +3040,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141116,260,375,30.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141116,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141116,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141116,260,375,30.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,141116,1050,1650,36.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141116,1050,1650,36.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141116,1050,1650,36.4,1
@@ -2931,6 +3049,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141116,1193,1650,27.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141116,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141116,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141116,1193,1650,27.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,141116,594,1499,60.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141116,594,1499,60.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141116,594,1499,60.4,1
@@ -2939,6 +3058,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141116,624,1499,58.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141116,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141116,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141116,624,1499,58.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,141116,1190,2799,57.5,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141116,1190,2799,57.5,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141116,1190,2799,57.5,1
@@ -2947,6 +3067,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141116,1237,2799,55.8,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141116,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141116,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141116,1237,2799,55.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,141116,388,1049,63,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141116,388,1049,63,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141116,388,1049,63,1
@@ -2955,6 +3076,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141116,399,1049,62,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141116,399,1049,62,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141116,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141116,405,1049,61.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,141116,1971,4999,60.6,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141116,1971,4999,60.6,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141116,1971,4999,60.6,1
@@ -2963,6 +3085,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141116,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141116,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141116,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141116,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-edible-oil-1l,141121,283,375,24.5,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141121,283,375,24.5,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141121,283,375,24.5,1
@@ -2986,6 +3109,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141121,283,375,24.5,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141121,283,375,24.5,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141121,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141121,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141121,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141121,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141121,1621,1650,1.8,1
@@ -3009,6 +3133,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141121,1621,1650,1.8,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141121,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141121,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141121,1621,1650,1.8,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141121,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141121,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141121,165,255,35.3,1
@@ -3032,6 +3157,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141121,165,255,35.3,1
 2026-05-29-1600,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141121,165,255,35.3,1
 2026-05-30-0900,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141121,165,255,35.3,1
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141121,165,255,35.3,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,141121,258,375,31.2,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141121,260,375,30.7,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141121,260,375,30.7,1
@@ -3065,6 +3191,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141121,185,275,32.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141121,185,275,32.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141121,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141121,185,275,32.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141121,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141121,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141121,1350,1350,0,1
@@ -3088,6 +3215,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141121,1350,1350,0,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141121,1350,1350,0,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141121,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141121,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,141121,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141121,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141121,991,1250,20.7,1
@@ -3111,6 +3239,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141121,991,1250,20.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141121,991,1250,20.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141121,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141121,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,141121,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141121,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141121,234,560,58.2,1
@@ -3134,6 +3263,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141121,234,560,58.2,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141121,234,560,58.2,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141121,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141121,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,141121,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141121,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141121,1080,2800,61.4,1
@@ -3157,6 +3287,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141121,1080,2800,61.4,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141121,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141121,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141121,1080,2800,61.4,1
 2026-05-22-1600,2026-05-22,,jivo-daily-cooking-pomace-olive-oil-1l,141121,517,1049,50.7,1
 2026-05-23-0900,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,141121,517,1049,50.7,1
 2026-05-23-1200,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,141121,517,1049,50.7,1
@@ -3180,6 +3311,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141121,517,1049,50.7,1
 2026-05-29-1600,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141121,517,1049,50.7,1
 2026-05-30-0900,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141121,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141121,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,141121,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141121,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141121,1318,2998,56,1
@@ -3203,6 +3335,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141121,1318,2998,56,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141121,1318,2998,56,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141121,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141121,1318,2998,56,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141121,3452,6499,46.9,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141121,3452,6499,46.9,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141121,3452,6499,46.9,1
@@ -3226,6 +3359,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141121,3452,6499,46.9,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141121,3452,6499,46.9,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141121,3452,6499,46.9,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141121,3452,6499,46.9,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,141121,594,1499,60.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141121,624,1499,58.4,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141121,624,1499,58.4,1
@@ -3259,6 +3393,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,141121,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141121,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,141121,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,141121,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-extra-virgin-olive-oil-250ml,141121,255,430,40.7,1
 2026-05-23-0900,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141121,255,430,40.7,1
 2026-05-23-1200,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141121,255,430,40.7,1
@@ -3282,6 +3417,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141121,255,430,40.7,1
 2026-05-29-1600,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141121,255,430,40.7,1
 2026-05-30-0900,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141121,255,430,40.7,1
+2026-05-30-1200,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141121,255,430,40.7,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141121,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141121,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141121,225,225,0,1
@@ -3305,6 +3441,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141121,225,225,0,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141121,225,225,0,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141121,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141121,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141121,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141121,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141121,936,1050,10.9,1
@@ -3328,6 +3465,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141121,936,1050,10.9,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141121,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141121,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141121,936,1050,10.9,1
 2026-05-22-1600,2026-05-22,,jivo-pomace-daily-cooking-olive-oil-2l,141121,724,1449,50,1
 2026-05-23-0900,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,141121,942,1449,35,1
 2026-05-23-1200,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,141121,942,1449,35,1
@@ -3351,6 +3489,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141121,942,1449,35,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141121,942,1449,35,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141121,942,1449,35,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141121,942,1449,35,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,141121,388,1049,63,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141121,406,1049,61.3,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141121,399,1049,62,1
@@ -3384,6 +3523,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-pomace-olive-oil-5l,141121,2489,4999,50.2,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141121,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-olive-oil-5l,141121,2489,4999,50.2,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-olive-oil-5l,141121,2489,4999,50.2,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,141121,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,141121,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,141121,285,285,0,1
@@ -3407,6 +3547,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,141121,285,285,0,1
 2026-05-29-1600,2026-05-29,,jivo-ricebran-oil-1l-1l,141121,285,285,0,1
 2026-05-30-0900,2026-05-30,,jivo-ricebran-oil-1l-1l,141121,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,141121,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,141121,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,141121,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,141121,257,325,20.9,1
@@ -3430,6 +3571,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,141121,257,325,20.9,1
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,141121,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,141121,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,141121,257,325,20.9,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-edible-oil-1l,141122,283,375,24.5,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141122,283,375,24.5,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,141122,283,375,24.5,1
@@ -3449,6 +3591,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141122,283,375,24.5,1
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141122,283,375,24.5,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,141122,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,141122,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141122,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141122,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141122,1621,1650,1.8,1
@@ -3471,6 +3614,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141122,1621,1650,1.8,1
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141122,1621,1650,1.8,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141122,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,141122,1621,1650,1.8,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141122,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141122,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141122,165,255,35.3,1
@@ -3493,6 +3637,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141122,165,255,35.3,0
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141122,165,255,35.3,0
 2026-05-29-1600,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141122,165,255,35.3,0
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,141122,165,255,35.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,141122,258,375,31.2,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,141122,258,375,31.2,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,141122,258,375,31.2,1
@@ -3519,6 +3664,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141122,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141122,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141122,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141122,260,375,30.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,141122,1051,1650,36.3,0
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141122,1051,1650,36.3,0
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141122,1051,1650,36.3,0
@@ -3545,6 +3691,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141122,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141122,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141122,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141122,1193,1650,27.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141122,206,275,25.1,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141122,185,275,32.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141122,185,275,32.7,1
@@ -3564,6 +3711,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141122,185,275,32.7,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141122,185,275,32.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141122,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,141122,185,275,32.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141122,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141122,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141122,1350,1350,0,1
@@ -3586,6 +3734,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141122,1350,1350,0,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141122,1350,1350,0,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141122,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,141122,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,141122,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141122,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,141122,991,1250,20.7,1
@@ -3608,6 +3757,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141122,991,1250,20.7,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141122,991,1250,20.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,141122,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,141122,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,141122,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141122,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,141122,234,560,58.2,1
@@ -3630,6 +3780,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141122,234,560,58.2,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141122,234,560,58.2,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,141122,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,141122,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,141122,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141122,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,141122,1080,2800,61.4,1
@@ -3652,6 +3803,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141122,1080,2800,61.4,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141122,1080,2800,61.4,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,141122,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,141122,1080,2800,61.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141122,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141122,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141122,190,275,30.9,1
@@ -3693,6 +3845,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141122,517,1049,50.7,1
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141122,517,1049,50.7,1
 2026-05-29-1600,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,141122,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,141122,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,141122,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141122,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,141122,1318,2998,56,1
@@ -3715,6 +3868,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141122,1318,2998,56,1
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141122,1318,2998,56,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,141122,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,141122,1318,2998,56,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141122,3452,6499,46.9,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141122,3452,6499,46.9,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141122,3452,6499,46.9,1
@@ -3737,6 +3891,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141122,3452,6499,46.9,1
 2026-05-29-1200,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141122,3452,6499,46.9,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141122,3452,6499,46.9,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,141122,3452,6499,46.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,141122,594,1499,60.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141122,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141122,594,1499,60.4,1
@@ -3763,6 +3918,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141122,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141122,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141122,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141122,624,1499,58.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,141122,1091,2799,61,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141122,1091,2799,61,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141122,1091,2799,61,1
@@ -3811,6 +3967,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141122,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,141122,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141122,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141122,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,141122,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-extra-virgin-olive-oil-250ml,141122,255,430,40.7,1
 2026-05-23-0900,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141122,255,450,43.3,1
 2026-05-23-1200,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,141122,255,450,43.3,1
@@ -3833,6 +3991,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141122,255,450,43.3,1
 2026-05-29-1200,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141122,255,450,43.3,1
 2026-05-29-1600,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,141122,255,450,43.3,1
+2026-05-30-1200,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,141122,255,450,43.3,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141122,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141122,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141122,225,225,0,1
@@ -3855,6 +4014,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141122,225,225,0,1
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141122,225,225,0,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141122,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,141122,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141122,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141122,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141122,936,1050,10.9,1
@@ -3877,6 +4037,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141122,936,1050,10.9,1
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141122,936,1050,10.9,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141122,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,141122,936,1050,10.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141122,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141122,169,255,33.7,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141122,169,255,33.7,1
@@ -3918,6 +4079,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141122,1002,1449,30.8,1
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141122,1002,1449,30.8,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,141122,1002,1449,30.8,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,141122,1002,1449,30.8,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,141122,385,1049,63.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141122,385,1049,63.3,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141122,385,1049,63.3,1
@@ -3944,6 +4106,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141122,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141122,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141122,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141122,405,1049,61.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-5l,141122,2059,4999,58.8,0
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141122,2059,4999,58.8,0
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141122,2059,4999,58.8,0
@@ -3992,6 +4155,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141122,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-olive-oil-5l,141122,2489,4999,50.2,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141122,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141122,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-olive-oil-5l,141122,2489,4999,50.2,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,141122,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,141122,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,141122,285,285,0,1
@@ -4014,6 +4179,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-ricebran-oil-1l-1l,141122,285,285,0,1
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,141122,285,285,0,1
 2026-05-29-1600,2026-05-29,,jivo-ricebran-oil-1l-1l,141122,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,141122,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,141122,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,141122,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,141122,257,325,20.9,1
@@ -4033,30 +4199,37 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-so-olive-oil-1l-1l,141122,257,325,20.9,1
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,141122,257,325,20.9,1
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,141122,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,141122,257,325,20.9,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141125,260,375,30.7,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141125,260,375,30.7,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141125,260,375,30.7,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141125,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141125,260,375,30.7,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141125,1193,1650,27.7,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141125,1193,1650,27.7,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141125,1193,1650,27.7,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141125,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141125,1193,1650,27.7,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141125,624,1499,58.4,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141125,624,1499,58.4,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141125,624,1499,58.4,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141125,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141125,624,1499,58.4,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141125,1237,2799,55.8,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141125,1237,2799,55.8,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141125,1237,2799,55.8,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141125,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141125,1237,2799,55.8,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141125,405,1049,61.4,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141125,405,1049,61.4,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141125,399,1049,62,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141125,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141125,405,1049,61.4,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141125,1971,4999,60.6,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141125,1971,4999,60.6,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141125,1971,4999,60.6,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141125,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141125,1971,4999,60.6,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,141126,258,375,31.2,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141126,260,375,30.7,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141126,260,375,30.7,1
@@ -4104,31 +4277,37 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141204,260,375,30.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141204,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141204,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141204,260,375,30.7,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141204,1050,1650,36.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141204,1193,1650,27.7,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141204,1193,1650,27.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141204,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141204,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141204,1193,1650,27.7,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141204,594,1499,60.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141204,624,1499,58.4,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141204,624,1499,58.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141204,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141204,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141204,624,1499,58.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141204,1190,2799,57.5,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141204,1237,2799,55.8,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141204,1237,2799,55.8,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141204,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141204,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141204,1237,2799,55.8,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141204,388,1049,63,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141204,406,1049,61.3,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141204,405,1049,61.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141204,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141204,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141204,405,1049,61.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141204,1971,4999,60.6,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141204,1971,4999,60.6,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141204,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141204,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141204,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141204,1971,4999,60.6,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141206,260,375,30.7,1
 2026-05-25-1600,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141206,260,375,30.7,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141206,260,375,30.7,1
@@ -4185,6 +4364,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141412,261,375,30.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141412,261,375,30.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141412,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141412,260,375,30.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,141412,1063,1650,35.6,0
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141412,1058,1650,35.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141412,1058,1650,35.9,1
@@ -4211,6 +4391,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141412,1201,1650,27.2,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141412,1201,1650,27.2,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141412,1201,1650,27.2,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141412,1201,1650,27.2,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141412,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141412,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141412,190,275,30.9,1
@@ -4236,6 +4417,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,141412,207,275,24.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,141412,207,275,24.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,141412,207,275,24.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,141412,207,275,24.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,141412,594,1499,60.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141412,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141412,594,1499,60.4,1
@@ -4262,6 +4444,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141412,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141412,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141412,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141412,624,1499,58.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,141412,1257,2799,55.1,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141412,1257,2799,55.1,0
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141412,1257,2799,55.1,0
@@ -4288,6 +4471,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141412,1139,2799,59.3,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141412,1139,2799,59.3,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141412,1139,2799,59.3,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141412,1139,2799,59.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141412,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141412,169,255,33.7,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141412,169,255,33.7,1
@@ -4310,6 +4494,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141412,171,255,32.9,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141412,171,255,32.9,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141412,171,255,32.9,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141412,171,255,32.9,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-5l,141412,868,1250,30.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-5l,141412,868,1250,30.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-5l,141412,868,1250,30.6,1
@@ -4339,6 +4524,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141412,402,1049,61.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141412,402,1049,61.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141412,402,1049,61.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141412,402,1049,61.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-5l,141412,1973,4999,60.5,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141412,1973,4999,60.5,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141412,1973,4999,60.5,1
@@ -4365,30 +4551,37 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141412,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141412,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141412,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141412,1971,4999,60.6,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141413,260,375,30.7,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141413,260,375,30.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141413,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141413,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141413,260,375,30.7,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141413,1193,1650,27.7,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141413,1193,1650,27.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141413,1193,1650,27.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141413,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141413,1193,1650,27.7,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141413,624,1499,58.4,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141413,624,1499,58.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141413,624,1499,58.4,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141413,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141413,624,1499,58.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141413,1237,2799,55.8,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141413,1237,2799,55.8,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141413,1237,2799,55.8,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141413,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141413,1237,2799,55.8,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141413,405,1049,61.4,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141413,405,1049,61.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141413,399,1049,62,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141413,399,1049,62,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141413,405,1049,61.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141413,1971,4999,60.6,1
 2026-05-26-0900,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141413,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141413,1971,4999,60.6,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141413,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141413,1971,4999,60.6,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,141414,258,375,31.2,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,141414,258,375,31.2,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,141414,260,375,30.7,1
@@ -4397,6 +4590,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141414,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141414,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141414,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141414,260,375,30.7,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,141414,1050,1650,36.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141414,1050,1650,36.4,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,141414,1193,1650,27.7,1
@@ -4405,6 +4599,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141414,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141414,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141414,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141414,1193,1650,27.7,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,141414,594,1499,60.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141414,594,1499,60.4,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,141414,624,1499,58.4,1
@@ -4413,6 +4608,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141414,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141414,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141414,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141414,624,1499,58.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,141414,1190,2799,57.5,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141414,1190,2799,57.5,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,141414,1237,2799,55.8,1
@@ -4421,6 +4617,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141414,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141414,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141414,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141414,1237,2799,55.8,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,141414,388,1049,63,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141414,388,1049,63,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,141414,399,1049,62,1
@@ -4429,6 +4626,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141414,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141414,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141414,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141414,405,1049,61.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,141414,1971,4999,60.6,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141414,1971,4999,60.6,1
 2026-05-26-1600,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,141414,1971,4999,60.6,1
@@ -4437,6 +4635,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141414,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141414,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141414,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141414,1971,4999,60.6,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,141415,258,375,31.2,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141415,260,375,30.7,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141415,260,375,30.7,1
@@ -4445,6 +4644,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141415,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141415,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141415,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141415,260,375,30.7,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141415,1050,1650,36.4,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141415,1193,1650,27.7,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141415,1193,1650,27.7,1
@@ -4453,6 +4653,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141415,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141415,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141415,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141415,1193,1650,27.7,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141415,594,1499,60.4,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141415,624,1499,58.4,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141415,624,1499,58.4,1
@@ -4461,6 +4662,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141415,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141415,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141415,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141415,624,1499,58.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141415,1190,2799,57.5,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141415,1237,2799,55.8,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141415,1237,2799,55.8,1
@@ -4469,6 +4671,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141415,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141415,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141415,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141415,1237,2799,55.8,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141415,388,1049,63,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141415,399,1049,62,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141415,399,1049,62,1
@@ -4477,6 +4680,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141415,399,1049,62,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141415,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141415,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141415,405,1049,61.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141415,1971,4999,60.6,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141415,1971,4999,60.6,1
 2026-05-27-1200,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141415,1971,4999,60.6,1
@@ -4485,6 +4689,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141415,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141415,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141415,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141415,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141416,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141416,260,375,30.7,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141416,260,375,30.7,1
@@ -4507,62 +4712,74 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141417,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141417,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141417,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141417,260,375,30.7,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141417,1050,1650,36.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141417,1193,1650,27.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141417,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141417,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141417,1193,1650,27.7,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141417,594,1499,60.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141417,624,1499,58.4,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141417,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141417,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141417,624,1499,58.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141417,1190,2799,57.5,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141417,1237,2799,55.8,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141417,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141417,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141417,1237,2799,55.8,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141417,388,1049,63,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141417,399,1049,62,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141417,399,1049,62,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141417,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141417,405,1049,61.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141417,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141417,1971,4999,60.6,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141417,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141417,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141417,1971,4999,60.6,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141418,260,375,30.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141418,260,375,30.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141418,260,375,30.7,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141418,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141418,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141418,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141418,260,375,30.7,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141418,1193,1650,27.7,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141418,1193,1650,27.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141418,1193,1650,27.7,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141418,1193,1650,27.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141418,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141418,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141418,1193,1650,27.7,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141418,624,1499,58.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141418,624,1499,58.4,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141418,624,1499,58.4,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141418,624,1499,58.4,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141418,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141418,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141418,624,1499,58.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141418,1237,2799,55.8,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141418,1237,2799,55.8,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141418,1237,2799,55.8,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141418,1237,2799,55.8,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141418,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141418,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141418,1237,2799,55.8,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141418,405,1049,61.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141418,399,1049,62,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141418,399,1049,62,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141418,399,1049,62,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141418,399,1049,62,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141418,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141418,405,1049,61.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141418,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141418,1971,4999,60.6,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141418,1971,4999,60.6,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141418,1971,4999,60.6,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141418,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141418,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141418,1971,4999,60.6,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,141419,258,375,31.2,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141419,260,375,30.7,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141419,260,375,30.7,1
@@ -4613,6 +4830,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141421,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141421,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141421,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141421,260,375,30.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,141421,1186,1650,28.1,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141421,1186,1650,28.1,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,141421,1186,1650,28.1,1
@@ -4639,6 +4857,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141421,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141421,1194,1650,27.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141421,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141421,1194,1650,27.6,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,141421,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141421,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,141421,190,275,30.9,1
@@ -4657,6 +4876,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-sunflower-oil-1l,141421,207,275,24.7,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-sunflower-oil-1l,141421,207,275,24.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,141421,207,275,24.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,141421,207,275,24.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,141421,605,1499,59.6,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141421,605,1499,59.6,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,141421,605,1499,59.6,1
@@ -4683,6 +4903,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141421,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141421,635,1499,57.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141421,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141421,635,1499,57.6,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,141421,1103,2799,60.6,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141421,1103,2799,60.6,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,141421,1103,2799,60.6,1
@@ -4709,6 +4930,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141421,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141421,1151,2799,58.9,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141421,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141421,1151,2799,58.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141421,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141421,169,255,33.7,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141421,169,255,33.7,1
@@ -4727,6 +4949,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-0900,2026-05-28,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141421,171,255,32.9,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141421,171,255,32.9,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141421,171,255,32.9,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,141421,171,255,32.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,141421,385,1049,63.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141421,385,1049,63.3,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,141421,385,1049,63.3,1
@@ -4753,6 +4976,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141421,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141421,403,1049,61.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141421,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141421,403,1049,61.6,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-5l,141421,2026,4999,59.5,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141421,2026,4999,59.5,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,141421,2026,4999,59.5,1
@@ -4779,6 +5003,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141421,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141421,2026,4999,59.5,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141421,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141421,2026,4999,59.5,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,141422,258,375,31.2,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,141422,260,375,30.7,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,141422,260,375,30.7,1
@@ -4787,6 +5012,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,141422,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,141422,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141422,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,141422,260,375,30.7,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,141422,1050,1650,36.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,141422,1193,1650,27.7,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,141422,1193,1650,27.7,1
@@ -4795,6 +5021,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,141422,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,141422,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141422,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,141422,1193,1650,27.7,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,141422,594,1499,60.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,141422,624,1499,58.4,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,141422,624,1499,58.4,1
@@ -4803,6 +5030,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,141422,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,141422,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141422,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,141422,624,1499,58.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,141422,1190,2799,57.5,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,141422,1237,2799,55.8,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,141422,1237,2799,55.8,1
@@ -4811,6 +5039,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,141422,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,141422,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141422,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,141422,1237,2799,55.8,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,141422,388,1049,63,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,141422,405,1049,61.4,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,141422,399,1049,62,1
@@ -4819,6 +5048,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,141422,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,141422,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141422,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,141422,405,1049,61.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,141422,1971,4999,60.6,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,141422,1971,4999,60.6,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,141422,1971,4999,60.6,1
@@ -4827,6 +5057,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,141422,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,141422,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141422,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,141422,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-edible-oil-1l,142021,283,375,24.5,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,142021,283,375,24.5,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,142021,283,375,24.5,1
@@ -4848,6 +5079,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,142021,283,375,24.5,1
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,142021,283,375,24.5,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,142021,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,142021,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142021,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142021,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142021,1621,1650,1.8,1
@@ -4869,6 +5101,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142021,1621,1650,1.8,1
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142021,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142021,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142021,1621,1650,1.8,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142021,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142021,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142021,165,255,35.3,1
@@ -4890,6 +5123,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142021,165,255,35.3,1
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142021,165,255,35.3,1
 2026-05-30-0900,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142021,165,255,35.3,1
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142021,165,255,35.3,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142021,258,375,31.2,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,142021,258,375,31.2,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,142021,260,375,30.7,1
@@ -4900,6 +5134,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142021,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142021,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142021,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142021,260,375,30.7,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142021,1050,1650,36.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142021,1050,1650,36.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,142021,1193,1650,27.7,1
@@ -4910,6 +5145,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142021,1193,1650,27.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142021,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142021,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142021,1193,1650,27.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142021,206,275,25.1,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142021,185,275,32.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142021,185,275,32.7,1
@@ -4931,6 +5167,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142021,185,275,32.7,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142021,185,275,32.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142021,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142021,185,275,32.7,0
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142021,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142021,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142021,1350,1350,0,1
@@ -4952,6 +5189,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142021,1350,1350,0,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142021,1350,1350,0,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142021,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142021,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,142021,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,142021,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,142021,991,1250,20.7,1
@@ -4973,6 +5211,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,142021,991,1250,20.7,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,142021,991,1250,20.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,142021,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,142021,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,142021,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,142021,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,142021,234,560,58.2,1
@@ -4994,6 +5233,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,142021,234,560,58.2,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,142021,234,560,58.2,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,142021,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,142021,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,142021,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,142021,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,142021,1080,2800,61.4,1
@@ -5015,6 +5255,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,142021,1080,2800,61.4,1
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,142021,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,142021,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,142021,1080,2800,61.4,1
 2026-05-22-1600,2026-05-22,,jivo-daily-cooking-pomace-olive-oil-1l,142021,517,1049,50.7,1
 2026-05-23-0900,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,142021,517,1049,50.7,1
 2026-05-23-1200,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,142021,517,1049,50.7,1
@@ -5036,6 +5277,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,142021,517,1049,50.7,1
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,142021,517,1049,50.7,1
 2026-05-30-0900,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,142021,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,142021,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,142021,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,142021,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,142021,1318,2998,56,1
@@ -5057,6 +5299,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,142021,1318,2998,56,1
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,142021,1318,2998,56,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,142021,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,142021,1318,2998,56,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142021,594,1499,60.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142021,594,1499,60.4,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,142021,624,1499,58.4,1
@@ -5067,6 +5310,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142021,624,1499,58.4,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142021,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142021,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142021,624,1499,58.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142021,1190,2799,57.5,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-olive-oil-2l,142021,1433,2799,48.8,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-olive-oil-2l,142021,1433,2799,48.8,1
@@ -5098,6 +5342,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142021,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,,jivo-extra-light-olive-oil-2l,142021,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,142021,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142021,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,142021,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142021,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142021,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142021,225,225,0,1
@@ -5119,6 +5365,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142021,225,225,0,1
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142021,225,225,0,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142021,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142021,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142021,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142021,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142021,936,1050,10.9,1
@@ -5140,6 +5387,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142021,936,1050,10.9,1
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142021,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142021,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142021,936,1050,10.9,1
 2026-05-22-1600,2026-05-22,,jivo-pomace-daily-cooking-olive-oil-2l,142021,1002,1449,30.8,1
 2026-05-23-0900,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,142021,1002,1449,30.8,1
 2026-05-23-1200,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,142021,1002,1449,30.8,1
@@ -5161,6 +5409,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,142021,1002,1449,30.8,1
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,142021,1002,1449,30.8,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,142021,1002,1449,30.8,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,142021,1002,1449,30.8,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,142021,388,1049,63,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142021,388,1049,63,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,142021,405,1049,61.4,1
@@ -5171,6 +5420,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142021,399,1049,62,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142021,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142021,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142021,405,1049,61.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,142021,1971,4999,60.6,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142021,1971,4999,60.6,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,142021,1971,4999,60.6,1
@@ -5181,6 +5431,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142021,1971,4999,60.6,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142021,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142021,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142021,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,142021,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,142021,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,142021,285,285,0,1
@@ -5202,6 +5453,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-ricebran-oil-1l-1l,142021,285,285,0,1
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,142021,285,285,0,1
 2026-05-30-0900,2026-05-30,,jivo-ricebran-oil-1l-1l,142021,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,142021,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,142021,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,142021,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,142021,257,325,20.9,1
@@ -5223,6 +5475,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,,jivo-so-olive-oil-1l-1l,142021,257,325,20.9,1
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,142021,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,142021,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,142021,257,325,20.9,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-edible-oil-1l,142022,283,375,24.5,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,142022,283,375,24.5,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,142022,283,375,24.5,1
@@ -5246,6 +5499,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,142022,283,375,24.5,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,142022,283,375,24.5,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,142022,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,142022,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142022,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142022,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142022,1621,1650,1.8,1
@@ -5269,6 +5523,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142022,1621,1650,1.8,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142022,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142022,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142022,1621,1650,1.8,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142022,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142022,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142022,165,255,35.3,1
@@ -5292,6 +5547,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142022,165,255,35.3,1
 2026-05-29-1600,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142022,165,255,35.3,1
 2026-05-30-0900,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142022,165,255,35.3,1
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142022,165,255,35.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,142022,263,375,29.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142022,263,375,29.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142022,263,375,29.9,1
@@ -5318,6 +5574,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142022,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142022,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142022,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142022,261,375,30.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,142022,1186,1650,28.1,0
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142022,1186,1650,28.1,0
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142022,1186,1650,28.1,0
@@ -5344,6 +5601,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142022,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142022,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142022,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142022,1328,1650,19.5,0
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142022,206,275,25.1,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142022,185,275,32.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142022,185,275,32.7,1
@@ -5367,6 +5625,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142022,185,275,32.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142022,185,275,32.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142022,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142022,185,275,32.7,0
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142022,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142022,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142022,1350,1350,0,1
@@ -5390,6 +5649,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142022,1350,1350,0,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142022,1350,1350,0,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142022,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142022,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,142022,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,142022,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,142022,991,1250,20.7,1
@@ -5413,6 +5673,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,142022,991,1250,20.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,142022,991,1250,20.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,142022,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,142022,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,142022,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,142022,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,142022,234,560,58.2,1
@@ -5436,6 +5697,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,142022,234,560,58.2,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,142022,234,560,58.2,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,142022,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,142022,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,142022,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,142022,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,142022,1080,2800,61.4,1
@@ -5459,6 +5721,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,142022,1080,2800,61.4,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,142022,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,142022,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,142022,1080,2800,61.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,142022,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,142022,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,142022,190,275,30.9,1
@@ -5475,6 +5738,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-cold-pressed-sunflower-oil-1l,142022,207,275,24.7,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-sunflower-oil-1l,142022,207,275,24.7,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,142022,207,275,24.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,142022,207,275,24.7,1
 2026-05-22-1600,2026-05-22,,jivo-daily-cooking-pomace-olive-oil-1l,142022,517,1049,50.7,1
 2026-05-23-0900,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,142022,517,1049,50.7,1
 2026-05-23-1200,2026-05-23,,jivo-daily-cooking-pomace-olive-oil-1l,142022,517,1049,50.7,1
@@ -5498,6 +5762,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,142022,517,1049,50.7,1
 2026-05-29-1600,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,142022,517,1049,50.7,1
 2026-05-30-0900,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,142022,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,142022,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,142022,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,142022,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,142022,1318,2998,56,1
@@ -5521,6 +5786,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,142022,1318,2998,56,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,142022,1318,2998,56,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,142022,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,142022,1318,2998,56,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,142022,594,1499,60.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142022,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142022,594,1499,60.4,1
@@ -5549,6 +5815,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0017,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,142022,499,1499,66.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142022,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,142022,499,1499,66.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142022,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,142022,499,1499,66.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,142022,1207,2799,56.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142022,1207,2799,56.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142022,1207,2799,56.9,1
@@ -5598,6 +5866,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,142022,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142022,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,142022,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142022,1254,2799,55.2,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,142022,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142022,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142022,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142022,225,225,0,1
@@ -5621,6 +5891,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142022,225,225,0,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142022,225,225,0,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142022,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142022,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142022,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142022,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142022,936,1050,10.9,1
@@ -5644,6 +5915,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142022,936,1050,10.9,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142022,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142022,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142022,936,1050,10.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142022,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142022,169,255,33.7,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142022,169,255,33.7,1
@@ -5659,6 +5931,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142022,171,255,32.9,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142022,171,255,32.9,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142022,171,255,32.9,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142022,171,255,32.9,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-5l,142022,868,1250,30.6,1
 2026-05-22-1600,2026-05-22,,jivo-pomace-daily-cooking-olive-oil-2l,142022,1002,1449,30.8,1
 2026-05-23-0900,2026-05-23,,jivo-pomace-daily-cooking-olive-oil-2l,142022,1002,1449,30.8,1
@@ -5683,6 +5956,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,142022,1002,1449,30.8,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,142022,1002,1449,30.8,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,142022,1002,1449,30.8,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,142022,1002,1449,30.8,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,142022,387,1049,63.1,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,142022,387,1049,63.1,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,142022,387,1049,63.1,1
@@ -5711,6 +5985,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0017,2026-05-30,zepto,jivo-pomace-olive-oil-1l,142022,379,1049,63.9,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142022,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,zepto,jivo-pomace-olive-oil-1l,142022,379,1049,63.9,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142022,403,1049,61.6,1
+2026-05-30-1200,2026-05-30,zepto,jivo-pomace-olive-oil-1l,142022,379,1049,63.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-5l,142022,1971,4999,60.6,0
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,142022,1971,4999,60.6,0
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,142022,1971,4999,60.6,0
@@ -5737,6 +6013,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142022,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142022,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142022,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142022,1971,4999,60.6,0
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,142022,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,142022,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,142022,285,285,0,1
@@ -5760,6 +6037,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,142022,285,285,0,1
 2026-05-29-1600,2026-05-29,,jivo-ricebran-oil-1l-1l,142022,285,285,0,1
 2026-05-30-0900,2026-05-30,,jivo-ricebran-oil-1l-1l,142022,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,142022,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,142022,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,142022,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,142022,257,325,20.9,1
@@ -5783,6 +6061,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,142022,257,325,20.9,1
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,142022,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,142022,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,142022,257,325,20.9,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142023,258,375,31.2,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142023,258,375,31.2,1
 2026-05-25-1200,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,142023,260,375,30.7,1
@@ -5842,6 +6121,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142024,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142024,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142024,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142024,260,375,30.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142024,1050,1650,36.4,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142024,1050,1650,36.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142024,1050,1650,36.4,1
@@ -5853,6 +6133,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142024,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142024,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142024,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142024,1193,1650,27.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142024,594,1499,60.4,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142024,594,1499,60.4,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142024,594,1499,60.4,1
@@ -5864,6 +6145,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142024,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142024,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142024,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142024,624,1499,58.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142024,1190,2799,57.5,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142024,1190,2799,57.5,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,142024,1190,2799,57.5,1
@@ -5875,6 +6157,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142024,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142024,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142024,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142024,1237,2799,55.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142024,388,1049,63,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142024,388,1049,63,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142024,388,1049,63,1
@@ -5886,6 +6169,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142024,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142024,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142024,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142024,405,1049,61.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142024,1971,4999,60.6,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142024,1971,4999,60.6,1
 2026-05-24-0900,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142024,1971,4999,60.6,1
@@ -5897,6 +6181,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142024,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142024,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142024,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142024,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142026,258,375,31.2,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142026,258,375,31.2,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,142026,258,375,31.2,1
@@ -5906,6 +6191,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,142026,260,375,30.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142026,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142026,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142026,260,375,30.7,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142026,1050,1650,36.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142026,1050,1650,36.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142026,1050,1650,36.4,1
@@ -5915,6 +6201,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,142026,1193,1650,27.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142026,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142026,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142026,1193,1650,27.7,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142026,594,1499,60.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142026,594,1499,60.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142026,594,1499,60.4,1
@@ -5924,6 +6211,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,142026,624,1499,58.4,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142026,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142026,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142026,624,1499,58.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142026,1190,2799,57.5,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142026,1190,2799,57.5,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,142026,1190,2799,57.5,1
@@ -5933,6 +6221,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,142026,1237,2799,55.8,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142026,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142026,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142026,1237,2799,55.8,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,142026,388,1049,63,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142026,388,1049,63,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142026,388,1049,63,1
@@ -5942,6 +6231,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,142026,399,1049,62,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142026,399,1049,62,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142026,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142026,405,1049,61.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,142026,1971,4999,60.6,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142026,1971,4999,60.6,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142026,1971,4999,60.6,1
@@ -5951,6 +6241,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,142026,1971,4999,60.6,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142026,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142026,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142026,1971,4999,60.6,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,142027,258,375,31.2,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142027,258,375,31.2,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142027,258,375,31.2,1
@@ -5977,6 +6268,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142027,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142027,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142027,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142027,260,375,30.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,142027,1186,1650,28.1,0
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142027,1186,1650,28.1,0
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142027,1186,1650,28.1,0
@@ -6003,6 +6295,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142027,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142027,1328,1650,19.5,0
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142027,1328,1650,19.5,0
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142027,1328,1650,19.5,0
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,142027,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,142027,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,142027,190,275,30.9,1
@@ -6023,6 +6316,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,142027,207,275,24.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,142027,207,275,24.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,142027,207,275,24.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,142027,207,275,24.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,142027,594,1499,60.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142027,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142027,594,1499,60.4,1
@@ -6049,6 +6343,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142027,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142027,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142027,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142027,624,1499,58.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,142027,1091,2799,61,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142027,1091,2799,61,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142027,1091,2799,61,1
@@ -6075,6 +6370,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142027,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142027,1139,2799,59.3,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142027,1139,2799,59.3,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142027,1139,2799,59.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142027,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142027,169,255,33.7,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142027,169,255,33.7,1
@@ -6095,6 +6391,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142027,171,255,32.9,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142027,171,255,32.9,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142027,171,255,32.9,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142027,171,255,32.9,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-5l,142027,869,1250,30.5,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,142027,385,1049,63.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,142027,385,1049,63.3,1
@@ -6122,6 +6419,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142027,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142027,384,1049,63.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142027,402,1049,61.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142027,402,1049,61.7,0
 2026-05-23-1600,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142027,1971,4999,60.6,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,142027,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,142027,1971,4999,60.6,1
@@ -6136,6 +6434,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,142029,260,375,30.7,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142029,260,375,30.7,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142029,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142029,260,375,30.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142029,1050,1650,36.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142029,1050,1650,36.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142029,1050,1650,36.4,1
@@ -6144,6 +6443,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,142029,1193,1650,27.7,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142029,1193,1650,27.7,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142029,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142029,1193,1650,27.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142029,594,1499,60.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142029,594,1499,60.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142029,594,1499,60.4,1
@@ -6152,6 +6452,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,142029,624,1499,58.4,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142029,624,1499,58.4,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142029,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142029,624,1499,58.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142029,1190,2799,57.5,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142029,1190,2799,57.5,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,142029,1190,2799,57.5,1
@@ -6160,6 +6461,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,142029,1237,2799,55.8,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142029,1237,2799,55.8,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142029,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142029,1237,2799,55.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142029,388,1049,63,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142029,388,1049,63,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142029,388,1049,63,1
@@ -6168,6 +6470,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,142029,399,1049,62,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142029,399,1049,62,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142029,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142029,405,1049,61.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142029,1971,4999,60.6,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142029,1971,4999,60.6,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142029,1971,4999,60.6,1
@@ -6176,6 +6479,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-27-1200,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,142029,1971,4999,60.6,1
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142029,1971,4999,60.6,1
 2026-05-29-0900,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142029,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142029,1971,4999,60.6,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142030,258,375,31.2,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,142030,258,375,31.2,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,142030,258,375,31.2,1
@@ -6186,6 +6490,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142030,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142030,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142030,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142030,260,375,30.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142030,1050,1650,36.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142030,1050,1650,36.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142030,1050,1650,36.4,1
@@ -6196,6 +6501,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142030,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142030,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142030,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142030,1193,1650,27.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142030,594,1499,60.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142030,594,1499,60.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142030,594,1499,60.4,1
@@ -6206,6 +6512,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142030,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142030,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142030,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142030,624,1499,58.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142030,1190,2799,57.5,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,142030,1190,2799,57.5,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,142030,1190,2799,57.5,1
@@ -6216,6 +6523,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142030,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142030,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142030,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142030,1237,2799,55.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142030,388,1049,63,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142030,388,1049,63,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142030,388,1049,63,1
@@ -6226,6 +6534,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142030,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142030,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142030,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142030,405,1049,61.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142030,1971,4999,60.6,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142030,1971,4999,60.6,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142030,1971,4999,60.6,1
@@ -6236,6 +6545,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142030,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142030,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142030,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142030,1971,4999,60.6,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142031,258,375,31.2,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,142031,258,375,31.2,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-1l,142031,260,375,30.7,1
@@ -6244,6 +6554,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142031,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142031,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142031,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142031,260,375,30.7,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142031,1050,1650,36.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142031,1050,1650,36.4,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-cold-pressed-canola-oil-5l,142031,1193,1650,27.7,1
@@ -6252,6 +6563,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142031,1193,1650,27.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142031,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142031,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142031,1193,1650,27.7,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142031,594,1499,60.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142031,594,1499,60.4,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-extra-light-olive-oil-1l,142031,624,1499,58.4,1
@@ -6260,6 +6572,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142031,624,1499,58.4,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142031,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142031,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142031,624,1499,58.4,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142031,1190,2799,57.5,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,142031,1190,2799,57.5,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-extra-light-olive-oil-2l,142031,1237,2799,55.8,1
@@ -6268,6 +6581,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142031,1237,2799,55.8,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142031,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142031,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142031,1237,2799,55.8,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142031,388,1049,63,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142031,388,1049,63,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-pomace-olive-oil-1l,142031,405,1049,61.4,1
@@ -6276,6 +6590,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142031,399,1049,62,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142031,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142031,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142031,405,1049,61.4,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142031,1971,4999,60.6,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142031,1971,4999,60.6,1
 2026-05-26-1200,2026-05-26,blinkit,jivo-pomace-olive-oil-5l,142031,1971,4999,60.6,1
@@ -6284,6 +6599,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142031,1971,4999,60.6,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142031,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142031,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142031,1971,4999,60.6,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142032,258,375,31.2,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142032,258,375,31.2,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-1l,142032,258,375,31.2,1
@@ -6294,6 +6610,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142032,260,375,30.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142032,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142032,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142032,260,375,30.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142032,1050,1650,36.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142032,1050,1650,36.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,142032,1050,1650,36.4,1
@@ -6304,6 +6621,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142032,1193,1650,27.7,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142032,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142032,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142032,1193,1650,27.7,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142032,594,1499,60.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142032,594,1499,60.4,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,142032,594,1499,60.4,1
@@ -6314,6 +6632,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142032,624,1499,58.4,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142032,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142032,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142032,624,1499,58.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142032,1190,2799,57.5,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142032,1190,2799,57.5,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,142032,1190,2799,57.5,1
@@ -6324,6 +6643,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142032,1237,2799,55.8,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142032,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142032,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142032,1237,2799,55.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142032,388,1049,63,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142032,388,1049,63,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-1l,142032,388,1049,63,1
@@ -6334,6 +6654,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142032,399,1049,62,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142032,399,1049,62,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142032,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142032,405,1049,61.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142032,1971,4999,60.6,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142032,1971,4999,60.6,1
 2026-05-24-1600,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,142032,1971,4999,60.6,1
@@ -6344,54 +6665,67 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142032,1971,4999,60.6,1
 2026-05-28-1600,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142032,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142032,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142032,1971,4999,60.6,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-1l,142033,258,375,31.2,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,142033,260,375,30.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142033,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142033,260,375,30.7,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,142033,1050,1650,36.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,142033,1193,1650,27.7,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142033,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142033,1193,1650,27.7,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,142033,594,1499,60.4,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,142033,624,1499,58.4,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142033,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142033,624,1499,58.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,142033,1190,2799,57.5,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,142033,1237,2799,55.8,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142033,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142033,1237,2799,55.8,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-1l,142033,388,1049,63,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,142033,399,1049,62,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142033,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142033,405,1049,61.4,1
 2026-05-23-1200,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,142033,1971,4999,60.6,1
 2026-05-27-1600,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,142033,1971,4999,60.6,1
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142033,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142033,1971,4999,60.6,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-1l,142035,260,375,30.7,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-1l,142035,260,375,30.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-1l,142035,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142035,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142035,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142035,260,375,30.7,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-cold-pressed-canola-oil-5l,142035,1193,1650,27.7,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-cold-pressed-canola-oil-5l,142035,1193,1650,27.7,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-cold-pressed-canola-oil-5l,142035,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142035,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142035,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142035,1193,1650,27.7,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-1l,142035,624,1499,58.4,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-1l,142035,624,1499,58.4,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-extra-light-olive-oil-1l,142035,624,1499,58.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-1l,142035,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142035,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142035,624,1499,58.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-extra-light-olive-oil-2l,142035,1237,2799,55.8,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-extra-light-olive-oil-2l,142035,1237,2799,55.8,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-extra-light-olive-oil-2l,142035,1237,2799,55.8,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-extra-light-olive-oil-2l,142035,1237,2799,55.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142035,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142035,1237,2799,55.8,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-1l,142035,406,1049,61.3,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-1l,142035,399,1049,62,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-pomace-olive-oil-1l,142035,399,1049,62,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142035,405,1049,61.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142035,405,1049,61.4,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142035,405,1049,61.4,1
 2026-05-25-0900,2026-05-25,blinkit,jivo-pomace-olive-oil-5l,142035,1971,4999,60.6,1
 2026-05-27-0900,2026-05-27,blinkit,jivo-pomace-olive-oil-5l,142035,1971,4999,60.6,1
 2026-05-28-0900,2026-05-28,blinkit,jivo-pomace-olive-oil-5l,142035,1971,4999,60.6,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-5l,142035,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142035,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142035,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-edible-oil-1l,142036,283,375,24.5,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,142036,283,375,24.5,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-edible-oil-1l,142036,283,375,24.5,1
@@ -6415,6 +6749,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,142036,283,375,24.5,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-edible-oil-1l,142036,283,375,24.5,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,142036,283,375,24.5,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-edible-oil-1l,142036,283,375,24.5,1
 2026-05-22-1600,2026-05-22,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142036,1621,1650,1.8,1
 2026-05-23-0900,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142036,1621,1650,1.8,1
 2026-05-23-1200,2026-05-23,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142036,1621,1650,1.8,1
@@ -6438,8 +6773,11 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142036,1621,1650,1.8,1
 2026-05-29-1600,2026-05-29,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142036,1621,1650,1.8,1
 2026-05-30-0900,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142036,1621,1650,1.8,1
+2026-05-30-1200,2026-05-30,,jivo-canola-cold-press-oil-indian-medical-association-recommended-5l,142036,1621,1650,1.8,1
 2026-05-30-0017,2026-05-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,142036,485,750,35.3,1
+2026-05-30-1200,2026-05-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,142036,485,750,35.3,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,142036,238,375,36.5,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,142036,238,375,36.5,1
 2026-05-22-1600,2026-05-22,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142036,198,255,22.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142036,165,255,35.3,1
 2026-05-23-1200,2026-05-23,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142036,165,255,35.3,1
@@ -6463,6 +6801,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142036,165,255,35.3,1
 2026-05-29-1600,2026-05-29,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142036,165,255,35.3,1
 2026-05-30-0900,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142036,165,255,35.3,1
+2026-05-30-1200,2026-05-30,,jivo-cold-press-kachi-ghani-mustard-oil-1l,142036,165,255,35.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-1l,142036,258,375,31.2,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142036,258,375,31.2,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,142036,258,375,31.2,1
@@ -6489,6 +6828,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142036,260,375,30.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-1l,142036,260,375,30.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142036,260,375,30.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-1l,142036,260,375,30.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-canola-oil-5l,142036,1050,1650,36.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142036,1050,1650,36.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,142036,1050,1650,36.4,1
@@ -6515,6 +6855,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142036,1193,1650,27.7,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-cold-pressed-canola-oil-5l,142036,1193,1650,27.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142036,1193,1650,27.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-cold-pressed-canola-oil-5l,142036,1193,1650,27.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142036,206,275,25.1,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142036,185,275,32.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142036,185,275,32.7,1
@@ -6538,6 +6879,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142036,185,275,32.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142036,185,275,32.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142036,185,275,32.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-1l,142036,185,275,32.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142036,1350,1350,0,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142036,1350,1350,0,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142036,1350,1350,0,1
@@ -6561,6 +6903,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142036,1350,1350,0,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142036,1350,1350,0,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142036,1350,1350,0,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-chemical-free-sunflower-oil-5l,142036,1350,1350,0,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-mustard-oil-5l-5l,142036,991,1250,20.7,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,142036,991,1250,20.7,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-mustard-oil-5l-5l,142036,991,1250,20.7,1
@@ -6584,6 +6927,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,142036,991,1250,20.7,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-mustard-oil-5l-5l,142036,991,1250,20.7,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,142036,991,1250,20.7,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-mustard-oil-5l-5l,142036,991,1250,20.7,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-1l,142036,234,560,58.2,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,142036,234,560,58.2,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-1l,142036,234,560,58.2,1
@@ -6607,6 +6951,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,142036,234,560,58.2,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-1l,142036,234,560,58.2,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,142036,234,560,58.2,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-1l,142036,234,560,58.2,1
 2026-05-22-1600,2026-05-22,,jivo-cold-pressed-oil-groundnut-oil-5l,142036,1080,2800,61.4,1
 2026-05-23-0900,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,142036,1080,2800,61.4,1
 2026-05-23-1200,2026-05-23,,jivo-cold-pressed-oil-groundnut-oil-5l,142036,1080,2800,61.4,1
@@ -6630,7 +6975,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,142036,1080,2800,61.4,1
 2026-05-29-1600,2026-05-29,,jivo-cold-pressed-oil-groundnut-oil-5l,142036,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,142036,1080,2800,61.4,1
+2026-05-30-1200,2026-05-30,,jivo-cold-pressed-oil-groundnut-oil-5l,142036,1080,2800,61.4,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,142036,169,255,33.7,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,142036,169,255,33.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,142036,190,275,30.9,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,142036,190,275,30.9,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-sunflower-oil-1l,142036,190,275,30.9,1
@@ -6672,6 +7019,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,142036,517,1049,50.7,1
 2026-05-29-1600,2026-05-29,,jivo-daily-cooking-pomace-olive-oil-1l,142036,517,1049,50.7,1
 2026-05-30-0900,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,142036,517,1049,50.7,1
+2026-05-30-1200,2026-05-30,,jivo-daily-cooking-pomace-olive-oil-1l,142036,517,1049,50.7,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-daily-cooking-olive-oil-1l,142036,1318,2998,56,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,142036,1318,2998,56,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-daily-cooking-olive-oil-1l,142036,1318,2998,56,1
@@ -6695,6 +7043,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,142036,1318,2998,56,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-daily-cooking-olive-oil-1l,142036,1318,2998,56,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,142036,1318,2998,56,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-daily-cooking-olive-oil-1l,142036,1318,2998,56,1
 2026-05-22-1600,2026-05-22,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,142036,3452,6499,46.9,1
 2026-05-23-0900,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,142036,3452,6499,46.9,1
 2026-05-23-1200,2026-05-23,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,142036,3452,6499,46.9,1
@@ -6718,6 +7067,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,142036,3452,6499,46.9,1
 2026-05-29-1600,2026-05-29,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,142036,3452,6499,46.9,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,142036,3452,6499,46.9,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l,142036,3452,6499,46.9,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-1l,142036,594,1499,60.4,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142036,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,142036,594,1499,60.4,1
@@ -6746,6 +7096,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0017,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,142036,499,1499,66.7,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142036,624,1499,58.4,1
 2026-05-30-0900,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,142036,499,1499,66.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-1l,142036,624,1499,58.4,1
+2026-05-30-1200,2026-05-30,zepto,jivo-extra-light-olive-oil-1l,142036,499,1499,66.7,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-extra-light-olive-oil-2l,142036,1091,2799,61,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142036,1091,2799,61,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,142036,1091,2799,61,1
@@ -6795,6 +7147,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-extra-light-olive-oil-2l,142036,1433,2799,48.8,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142036,1139,2799,59.3,1
 2026-05-30-0900,2026-05-30,,jivo-extra-light-olive-oil-2l,142036,1433,2799,48.8,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-extra-light-olive-oil-2l,142036,1237,2799,55.8,1
+2026-05-30-1200,2026-05-30,,jivo-extra-light-olive-oil-2l,142036,1433,2799,48.8,1
 2026-05-22-1600,2026-05-22,,jivo-extra-virgin-olive-oil-250ml,142036,255,430,40.7,1
 2026-05-23-0900,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,142036,255,430,40.7,1
 2026-05-23-1200,2026-05-23,,jivo-extra-virgin-olive-oil-250ml,142036,255,430,40.7,1
@@ -6818,6 +7172,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,142036,255,430,40.7,1
 2026-05-29-1600,2026-05-29,,jivo-extra-virgin-olive-oil-250ml,142036,255,430,40.7,1
 2026-05-30-0900,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,142036,255,430,40.7,1
+2026-05-30-1200,2026-05-30,,jivo-extra-virgin-olive-oil-250ml,142036,255,430,40.7,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142036,225,225,0,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142036,225,225,0,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142036,225,225,0,1
@@ -6841,6 +7196,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142036,225,225,0,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142036,225,225,0,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142036,225,225,0,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l,142036,225,225,0,1
 2026-05-22-1600,2026-05-22,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142036,936,1050,10.9,1
 2026-05-23-0900,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142036,936,1050,10.9,1
 2026-05-23-1200,2026-05-23,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142036,936,1050,10.9,1
@@ -6864,6 +7220,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142036,936,1050,10.9,1
 2026-05-29-1600,2026-05-29,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142036,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142036,936,1050,10.9,1
+2026-05-30-1200,2026-05-30,,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l,142036,936,1050,10.9,1
 2026-05-30-0900,2026-05-30,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na,142036,49,150,67.3,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142036,169,255,33.7,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,142036,169,255,33.7,1
@@ -6906,6 +7263,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,142036,942,1449,35,1
 2026-05-29-1600,2026-05-29,,jivo-pomace-daily-cooking-olive-oil-2l,142036,942,1449,35,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,142036,942,1449,35,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-daily-cooking-olive-oil-2l,142036,942,1449,35,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-1l,142036,385,1049,63.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,142036,385,1049,63.3,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-1l,142036,385,1049,63.3,1
@@ -6932,6 +7290,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142036,405,1049,61.4,1
 2026-05-29-1600,2026-05-29,blinkit,jivo-pomace-olive-oil-1l,142036,384,1049,63.4,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142036,402,1049,61.7,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-1l,142036,405,1049,61.4,1
 2026-05-21-1736,2026-05-21,blinkit,jivo-pomace-olive-oil-5l,142036,1971,4999,60.6,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,142036,1971,4999,60.6,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,142036,1971,4999,60.6,1
@@ -6981,6 +7340,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,,jivo-pomace-olive-oil-5l,142036,2489,4999,50.2,1
 2026-05-30-0900,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142036,1971,4999,60.6,1
 2026-05-30-0900,2026-05-30,,jivo-pomace-olive-oil-5l,142036,2489,4999,50.2,1
+2026-05-30-1200,2026-05-30,blinkit,jivo-pomace-olive-oil-5l,142036,1971,4999,60.6,1
+2026-05-30-1200,2026-05-30,,jivo-pomace-olive-oil-5l,142036,2489,4999,50.2,1
 2026-05-22-1600,2026-05-22,,jivo-ricebran-oil-1l-1l,142036,285,285,0,1
 2026-05-23-0900,2026-05-23,,jivo-ricebran-oil-1l-1l,142036,285,285,0,1
 2026-05-23-1200,2026-05-23,,jivo-ricebran-oil-1l-1l,142036,285,285,0,1
@@ -7004,6 +7365,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-ricebran-oil-1l-1l,142036,285,285,0,1
 2026-05-29-1600,2026-05-29,,jivo-ricebran-oil-1l-1l,142036,285,285,0,1
 2026-05-30-0900,2026-05-30,,jivo-ricebran-oil-1l-1l,142036,285,285,0,1
+2026-05-30-1200,2026-05-30,,jivo-ricebran-oil-1l-1l,142036,285,285,0,1
 2026-05-22-1600,2026-05-22,,jivo-so-olive-oil-1l-1l,142036,257,325,20.9,1
 2026-05-23-0900,2026-05-23,,jivo-so-olive-oil-1l-1l,142036,257,325,20.9,1
 2026-05-23-1200,2026-05-23,,jivo-so-olive-oil-1l-1l,142036,257,325,20.9,1
@@ -7027,6 +7389,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,jivo-so-olive-oil-1l-1l,142036,257,325,20.9,1
 2026-05-29-1600,2026-05-29,,jivo-so-olive-oil-1l-1l,142036,257,325,20.9,1
 2026-05-30-0900,2026-05-30,,jivo-so-olive-oil-1l-1l,142036,257,325,20.9,1
+2026-05-30-1200,2026-05-30,,jivo-so-olive-oil-1l-1l,142036,257,325,20.9,1
 ```
 
 ---

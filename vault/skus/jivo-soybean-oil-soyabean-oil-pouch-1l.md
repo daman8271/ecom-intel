@@ -7,7 +7,7 @@ platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
 last_seen: 2026-05-30
-observations: 86
+observations: 101
 min_price: 139
 max_price: 199
 latest_price: 165
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Chandigarh]] · [[Delhi]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Noida]]
 
-## Runs that observed this SKU (27)
-[[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1600]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]] · [[flipkart-minutes-2026-05-28-1600]] · [[flipkart-minutes-2026-05-28-1200]] · [[flipkart-minutes-2026-05-28-0900]] · [[flipkart-minutes-2026-05-27-1600]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-27-0900]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-26-0900]] · [[flipkart-minutes-2026-05-25-1600]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-25-0900]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-23-0900]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-1200]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]] · [[flipkart-2026-05-21-1323]]
+## Runs that observed this SKU (28)
+[[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1600]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]] · [[flipkart-minutes-2026-05-28-1600]] · [[flipkart-minutes-2026-05-28-1200]] · [[flipkart-minutes-2026-05-28-0900]] · [[flipkart-minutes-2026-05-27-1600]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-27-0900]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-26-0900]] · [[flipkart-minutes-2026-05-25-1600]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-25-0900]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-23-0900]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-1200]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]] · [[flipkart-2026-05-21-1323]]
 
-## Price history (86 observations)
+## Price history (101 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -123,6 +123,21 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0900,2026-05-30,flipkart-minutes,Kolkata,700019,139,142,2.1,0
 2026-05-30-0900,2026-05-30,flipkart-minutes,Kolkata,700040,139,142,2.1,0
 2026-05-30-0900,2026-05-30,flipkart-minutes,Ludhiana,141014,165,199,17.1,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,Delhi,110010,174,178,2.2,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Delhi,110026,174,199,12.6,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,Delhi,110061,174,178,2.2,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Delhi,110070,174,178,2.2,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Delhi,110076,174,178,2.2,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Jaipur,302012,151,199,24.1,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,Jaipur,302017,151,199,24.1,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,Jaipur,302018,151,199,24.1,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,Jaipur,302023,151,155,2.6,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Jaipur,302024,151,155,2.6,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Jaipur,302032,151,155,2.6,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Kolkata,700001,139,142,2.1,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Kolkata,700019,139,142,2.1,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Kolkata,700040,139,142,2.1,0
+2026-05-30-1200,2026-05-30,flipkart-minutes,Ludhiana,141014,165,199,17.1,1
 ```
 
 ---

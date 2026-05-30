@@ -6,7 +6,7 @@ platforms:
   - 
 first_seen: 2026-05-24
 last_seen: 2026-05-30
-observations: 5
+observations: 6
 min_price: 150
 max_price: 150
 latest_price: 150
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]]
 
-## Runs that observed this SKU (5)
-[[-2026-05-30-0900]] · [[-2026-05-29-1600]] · [[-2026-05-29-1200]] · [[-2026-05-28-1200]] · [[-2026-05-24-1200]]
+## Runs that observed this SKU (6)
+[[-2026-05-30-1200]] · [[-2026-05-30-0900]] · [[-2026-05-29-1600]] · [[-2026-05-29-1200]] · [[-2026-05-28-1200]] · [[-2026-05-24-1200]]
 
-## Price history (5 observations)
+## Price history (6 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -39,6 +39,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,,Bengaluru,560014,150,150,0,1
 2026-05-29-1600,2026-05-29,,Bengaluru,560014,150,150,0,1
 2026-05-30-0900,2026-05-30,,Bengaluru,560014,150,150,0,1
+2026-05-30-1200,2026-05-30,,Bengaluru,560014,150,150,0,1
 ```
 
 ---
