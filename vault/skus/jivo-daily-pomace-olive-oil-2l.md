@@ -6,7 +6,7 @@ platforms:
   - zepto
 first_seen: 2026-05-30
 last_seen: 2026-05-30
-observations: 2
+observations: 3
 min_price: 941
 max_price: 941
 latest_price: 941
@@ -27,15 +27,16 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]]
 
-## Runs that observed this SKU (2)
-[[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]]
+## Runs that observed this SKU (3)
+[[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]]
 
-## Price history (2 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0900,2026-05-30,zepto,Bengaluru,560014,941,1449,35.1,1
 2026-05-30-1200,2026-05-30,zepto,Bengaluru,560014,941,1449,35.1,1
+2026-05-30-1600,2026-05-30,zepto,Bengaluru,560014,941,1449,35.1,1
 ```
 
 ---
