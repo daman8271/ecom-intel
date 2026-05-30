@@ -1,0 +1,79 @@
+{
+  "platform": "flipkart",
+  "run_id": "2026-05-30-0900",
+  "captured_at": "2026-05-30T03:42:44.071Z",
+  "verdict": "OK",
+  "rows": 268,
+  "unique_skus": 268,
+  "pincodes_with_jivo": null,
+  "baseline_rows": 268,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "268 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "268 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "268 rows vs baseline 268 (100%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "268 unique SKUs vs baseline 268 (100%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "national run (single 'All India'); n/a"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-05-30T03:42:44.071Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK, real Jivo products/prices, MRP\u2265sale all items, 60%+ discounts plausible for combo packs in India, row count matches baseline."
+    }
+  ],
+  "reasons": [],
+  "llm_note": "OK, real Jivo products/prices, MRP\u2265sale all items, 60%+ discounts plausible for combo packs in India, row count matches baseline."
+}
