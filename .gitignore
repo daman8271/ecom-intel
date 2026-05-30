@@ -1,4 +1,6 @@
 node_modules/
+node_modules
+platforms/*/node_modules
 output/
 logs/
 **/result.json

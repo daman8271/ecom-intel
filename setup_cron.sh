@@ -22,10 +22,13 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 # Make cron times mean IST.
 timedatectl set-timezone Asia/Kolkata 2>/dev/null || true
 
-# LIVE platforms only — NO amazon-now (gated). zepto went live 2026-05-29 via the
-# Zepto BFF API gateway (no proxy); see platforms/zepto/SKILL.md.  also runs
-# via run_all.sh. (run_all.sh holds the authoritative list; this is a doc mirror.)
-PLATFORMS="blinkit  flipkart-minutes flipkart amazon zepto"
+# LIVE platforms in the parallel sweep. amazon-fresh went live 2026-05-30 (logged-in
+# session, i=freshstore — the rich Fresh catalog; see platforms/amazon-fresh/SKILL.md).
+# NOT here: amazon-now (gated, manual-only — it shares amazon-fresh's account+location
+# server-side, so the two must NEVER run concurrently). The plain `amazon` scraper is
+# guest /dp and does NOT set account location, so it's safe alongside amazon-fresh.
+# (run_all.sh holds the authoritative list; this is a doc mirror.)
+PLATFORMS="blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh"
 
 # Per-platform minute offset within each window (stagger to avoid concurrent Chromium).
 declare -A OFFSET=( [blinkit]=0 [flipkart-minutes]=4 [flipkart]=8 [amazon]=12 )
