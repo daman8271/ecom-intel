@@ -1,0 +1,79 @@
+{
+  "platform": "instamart",
+  "run_id": "2026-05-30-0900",
+  "captured_at": "2026-05-30T03:49:08.500Z",
+  "verdict": "OK",
+  "rows": 2180,
+  "unique_skus": 31,
+  "pincodes_with_jivo": 152,
+  "baseline_rows": 2236,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "2180 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "2180 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "2180 rows vs baseline 2236 (97%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "31 unique SKUs vs baseline 30 (104%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "152 pincodes w/ Jivo vs baseline 158 (96%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-05-30T03:49:08.500Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK \u2014 Real product variants, sensible pricing, all MRP\u2265sale, pack-size scaling correct, minor baseline dip (-2.5%) normal."
+    }
+  ],
+  "reasons": [],
+  "llm_note": "OK \u2014 Real product variants, sensible pricing, all MRP\u2265sale, pack-size scaling correct, minor baseline dip (-2.5%) normal."
+}
