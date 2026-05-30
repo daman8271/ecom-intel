@@ -6,7 +6,7 @@ platforms:
   - instamart
 first_seen: 2026-05-22
 last_seen: 2026-05-30
-observations: 301
+observations: 314
 min_price: 1194
 max_price: 1326
 latest_price: 1217
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Ghaziabad]] · [[Mumbai]] · [[Mysuru]] · [[Pune]]
 
-## Runs that observed this SKU (23)
-[[instamart-2026-05-30-0900]] · [[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-29-0900]] · [[instamart-2026-05-28-1600]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-28-0900]] · [[instamart-2026-05-27-1600]] · [[instamart-2026-05-27-1200]] · [[instamart-2026-05-27-0900]] · [[instamart-2026-05-26-1600]] · [[instamart-2026-05-26-1200]] · [[instamart-2026-05-26-0900]] · [[instamart-2026-05-25-1600]] · [[instamart-2026-05-25-1200]] · [[instamart-2026-05-25-0900]] · [[instamart-2026-05-24-1600]] · [[instamart-2026-05-24-1200]] · [[instamart-2026-05-24-0900]] · [[instamart-2026-05-23-1600]] · [[instamart-2026-05-23-1200]] · [[instamart-2026-05-23-0900]] · [[instamart-2026-05-22-1600]]
+## Runs that observed this SKU (24)
+[[instamart-2026-05-30-1200]] · [[instamart-2026-05-30-0900]] · [[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-29-0900]] · [[instamart-2026-05-28-1600]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-28-0900]] · [[instamart-2026-05-27-1600]] · [[instamart-2026-05-27-1200]] · [[instamart-2026-05-27-0900]] · [[instamart-2026-05-26-1600]] · [[instamart-2026-05-26-1200]] · [[instamart-2026-05-26-0900]] · [[instamart-2026-05-25-1600]] · [[instamart-2026-05-25-1200]] · [[instamart-2026-05-25-0900]] · [[instamart-2026-05-24-1600]] · [[instamart-2026-05-24-1200]] · [[instamart-2026-05-24-0900]] · [[instamart-2026-05-23-1600]] · [[instamart-2026-05-23-1200]] · [[instamart-2026-05-23-0900]] · [[instamart-2026-05-22-1600]]
 
-## Price history (301 observations)
+## Price history (314 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -335,6 +335,19 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0900,2026-05-30,instamart,Mysuru,570028,1254,1625,22.8,1
 2026-05-30-0900,2026-05-30,instamart,Pune,411045,1217,1625,25.1,1
 2026-05-30-0900,2026-05-30,instamart,Pune,411047,1217,1625,25.1,1
+2026-05-30-1200,2026-05-30,instamart,Delhi,110007,1214,1625,25.3,1
+2026-05-30-1200,2026-05-30,instamart,Delhi,110016,1214,1625,25.3,1
+2026-05-30-1200,2026-05-30,instamart,Ghaziabad,201003,1220,1625,24.9,1
+2026-05-30-1200,2026-05-30,instamart,Mumbai,400001,1216,1625,25.2,1
+2026-05-30-1200,2026-05-30,instamart,Mumbai,400005,1216,1625,25.2,1
+2026-05-30-1200,2026-05-30,instamart,Mumbai,400021,1216,1625,25.2,1
+2026-05-30-1200,2026-05-30,instamart,Mumbai,400026,1216,1625,25.2,1
+2026-05-30-1200,2026-05-30,instamart,Mysuru,570003,1254,1625,22.8,1
+2026-05-30-1200,2026-05-30,instamart,Mysuru,570004,1254,1625,22.8,1
+2026-05-30-1200,2026-05-30,instamart,Mysuru,570016,1254,1625,22.8,1
+2026-05-30-1200,2026-05-30,instamart,Mysuru,570028,1254,1625,22.8,1
+2026-05-30-1200,2026-05-30,instamart,Pune,411045,1217,1625,25.1,1
+2026-05-30-1200,2026-05-30,instamart,Pune,411047,1217,1625,25.1,1
 ```
 
 ---

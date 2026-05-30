@@ -6,7 +6,7 @@ platforms:
   - flipkart-minutes
 first_seen: 2026-05-29
 last_seen: 2026-05-30
-observations: 3
+observations: 4
 min_price: 375
 max_price: 575
 latest_price: 575
@@ -27,16 +27,17 @@ Up: [[skus-index]]
 ## Available in cities
 [[Chandigarh]] · [[Delhi]]
 
-## Runs that observed this SKU (3)
-[[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]]
+## Runs that observed this SKU (4)
+[[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,flipkart-minutes,Chandigarh,160017,375,375,0,1
 2026-05-29-1200,2026-05-29,flipkart-minutes,Chandigarh,160017,375,375,0,1
 2026-05-30-0900,2026-05-30,flipkart-minutes,Delhi,110062,575,575,0,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,Delhi,110014,575,575,0,1
 ```
 
 ---
