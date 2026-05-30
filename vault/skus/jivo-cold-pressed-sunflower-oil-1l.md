@@ -5,8 +5,8 @@ display_name: Jivo Cold Pressed Sunflower Oil (1 l)
 platforms:
   - blinkit
 first_seen: 2026-05-21
-last_seen: 2026-05-29
-observations: 904
+last_seen: 2026-05-30
+observations: 925
 min_price: 181
 max_price: 255
 latest_price: 207
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Chandigarh]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]]
 
-## Runs that observed this SKU (27)
-[[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-28-1600]] · [[blinkit-2026-05-28-1200]] · [[blinkit-2026-05-28-0900]] · [[blinkit-2026-05-27-1600]] · [[blinkit-2026-05-27-1200]] · [[blinkit-2026-05-27-0900]] · [[blinkit-2026-05-26-1600]] · [[blinkit-2026-05-26-1200]] · [[blinkit-2026-05-26-0900]] · [[blinkit-2026-05-25-1600]] · [[blinkit-2026-05-25-1200]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-24-1200]] · [[blinkit-2026-05-24-0900]] · [[blinkit-2026-05-23-1600]] · [[blinkit-2026-05-23-1200]] · [[blinkit-2026-05-23-0900]] · [[blinkit-2026-05-22-1600]] · [[blinkit-2026-05-22-1200]] · [[blinkit-2026-05-22-0900]] · [[blinkit-2026-05-21-1736]] · [[blinkit-2026-05-21-1703]] · [[blinkit-2026-05-21-1417]]
+## Runs that observed this SKU (28)
+[[blinkit-2026-05-30-0900]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-28-1600]] · [[blinkit-2026-05-28-1200]] · [[blinkit-2026-05-28-0900]] · [[blinkit-2026-05-27-1600]] · [[blinkit-2026-05-27-1200]] · [[blinkit-2026-05-27-0900]] · [[blinkit-2026-05-26-1600]] · [[blinkit-2026-05-26-1200]] · [[blinkit-2026-05-26-0900]] · [[blinkit-2026-05-25-1600]] · [[blinkit-2026-05-25-1200]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-24-1200]] · [[blinkit-2026-05-24-0900]] · [[blinkit-2026-05-23-1600]] · [[blinkit-2026-05-23-1200]] · [[blinkit-2026-05-23-0900]] · [[blinkit-2026-05-22-1600]] · [[blinkit-2026-05-22-1200]] · [[blinkit-2026-05-22-0900]] · [[blinkit-2026-05-21-1736]] · [[blinkit-2026-05-21-1703]] · [[blinkit-2026-05-21-1417]]
 
-## Price history (904 observations)
+## Price history (925 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -938,6 +938,27 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,blinkit,Mysuru,570026,212,275,22.9,1
 2026-05-29-1600,2026-05-29,blinkit,Mysuru,570028,220,275,20,1
 2026-05-29-1600,2026-05-29,blinkit,Mysuru,571311,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Bengaluru,560019,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Chandigarh,160001,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Chandigarh,160014,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Chandigarh,160021,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Ludhiana,141014,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Ludhiana,141015,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Ludhiana,141412,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Ludhiana,142027,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Ludhiana,142036,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400003,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400006,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400010,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400012,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400015,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400025,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400030,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mumbai,400703,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mysuru,570016,207,275,24.7,1
+2026-05-30-0900,2026-05-30,blinkit,Mysuru,570026,212,275,22.9,1
+2026-05-30-0900,2026-05-30,blinkit,Mysuru,570028,220,275,20,1
+2026-05-30-0900,2026-05-30,blinkit,Mysuru,571311,207,275,24.7,1
 ```
 
 ---

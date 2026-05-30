@@ -5,8 +5,8 @@ display_name: Buy Jivo Extra Light Daily Cooking Olive Oil & Get Truly Good Food
 platforms:
   - instamart
 first_seen: 2026-05-22
-last_seen: 2026-05-29
-observations: 44
+last_seen: 2026-05-30
+observations: 46
 min_price: 807
 max_price: 807
 latest_price: 807
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Pune]]
 
-## Runs that observed this SKU (22)
-[[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-29-0900]] · [[instamart-2026-05-28-1600]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-28-0900]] · [[instamart-2026-05-27-1600]] · [[instamart-2026-05-27-1200]] · [[instamart-2026-05-27-0900]] · [[instamart-2026-05-26-1600]] · [[instamart-2026-05-26-1200]] · [[instamart-2026-05-26-0900]] · [[instamart-2026-05-25-1600]] · [[instamart-2026-05-25-1200]] · [[instamart-2026-05-25-0900]] · [[instamart-2026-05-24-1600]] · [[instamart-2026-05-24-1200]] · [[instamart-2026-05-24-0900]] · [[instamart-2026-05-23-1600]] · [[instamart-2026-05-23-1200]] · [[instamart-2026-05-23-0900]] · [[instamart-2026-05-22-1600]]
+## Runs that observed this SKU (23)
+[[instamart-2026-05-30-0900]] · [[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-29-0900]] · [[instamart-2026-05-28-1600]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-28-0900]] · [[instamart-2026-05-27-1600]] · [[instamart-2026-05-27-1200]] · [[instamart-2026-05-27-0900]] · [[instamart-2026-05-26-1600]] · [[instamart-2026-05-26-1200]] · [[instamart-2026-05-26-0900]] · [[instamart-2026-05-25-1600]] · [[instamart-2026-05-25-1200]] · [[instamart-2026-05-25-0900]] · [[instamart-2026-05-24-1600]] · [[instamart-2026-05-24-1200]] · [[instamart-2026-05-24-0900]] · [[instamart-2026-05-23-1600]] · [[instamart-2026-05-23-1200]] · [[instamart-2026-05-23-0900]] · [[instamart-2026-05-22-1600]]
 
-## Price history (44 observations)
+## Price history (46 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -78,6 +78,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1200,2026-05-29,instamart,Pune,410401,807,1649,51.1,1
 2026-05-29-1600,2026-05-29,instamart,Pune,410301,807,1649,51.1,1
 2026-05-29-1600,2026-05-29,instamart,Pune,410401,807,1649,51.1,1
+2026-05-30-0900,2026-05-30,instamart,Pune,410301,807,1649,51.1,1
+2026-05-30-0900,2026-05-30,instamart,Pune,410401,807,1649,51.1,1
 ```
 
 ---

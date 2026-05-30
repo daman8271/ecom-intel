@@ -5,8 +5,8 @@ display_name: Jivo  Indian Tonic Water (200 ml)
 platforms:
   - instamart
 first_seen: 2026-05-24
-last_seen: 2026-05-29
-observations: 4
+last_seen: 2026-05-30
+observations: 5
 min_price: 150
 max_price: 150
 latest_price: 150
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]]
 
-## Runs that observed this SKU (4)
-[[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-24-1200]]
+## Runs that observed this SKU (5)
+[[instamart-2026-05-30-0900]] · [[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-24-1200]]
 
-## Price history (4 observations)
+## Price history (5 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -38,6 +38,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-1200,2026-05-28,instamart,Bengaluru,560014,150,150,0,1
 2026-05-29-1200,2026-05-29,instamart,Bengaluru,560014,150,150,0,1
 2026-05-29-1600,2026-05-29,instamart,Bengaluru,560014,150,150,0,1
+2026-05-30-0900,2026-05-30,instamart,Bengaluru,560014,150,150,0,1
 ```
 
 ---

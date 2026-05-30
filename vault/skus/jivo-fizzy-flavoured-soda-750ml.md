@@ -1,12 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-fizzy-flavoured-soda-750ml
-display_name: Jivo  Fizzy Flavoured Soda (Lemon) (750 ml)
+display_name: Jivo  Fizzy Flavoured Soda (Peach) (750 ml)
 platforms:
   - instamart
 first_seen: 2026-05-22
-last_seen: 2026-05-29
-observations: 53
+last_seen: 2026-05-30
+observations: 58
 min_price: 55
 max_price: 55
 latest_price: 55
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo  Fizzy Flavoured Soda (Lemon) (750 ml)**
+**Jivo  Fizzy Flavoured Soda (Peach) (750 ml)**
 
 ## Sold on
 - [[instamart]] — latest ₹55
 
 ## Available in cities
-[[Bengaluru]] · [[Ghaziabad]] · [[Indore]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Faridabad]] · [[Ghaziabad]] · [[Indore]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (19)
-[[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-29-0900]] · [[instamart-2026-05-28-1600]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-28-0900]] · [[instamart-2026-05-27-1600]] · [[instamart-2026-05-27-1200]] · [[instamart-2026-05-27-0900]] · [[instamart-2026-05-26-1600]] · [[instamart-2026-05-26-1200]] · [[instamart-2026-05-25-0900]] · [[instamart-2026-05-24-1600]] · [[instamart-2026-05-24-1200]] · [[instamart-2026-05-24-0900]] · [[instamart-2026-05-23-1600]] · [[instamart-2026-05-23-1200]] · [[instamart-2026-05-23-0900]] · [[instamart-2026-05-22-1600]]
+## Runs that observed this SKU (20)
+[[instamart-2026-05-30-0900]] · [[instamart-2026-05-29-1600]] · [[instamart-2026-05-29-1200]] · [[instamart-2026-05-29-0900]] · [[instamart-2026-05-28-1600]] · [[instamart-2026-05-28-1200]] · [[instamart-2026-05-28-0900]] · [[instamart-2026-05-27-1600]] · [[instamart-2026-05-27-1200]] · [[instamart-2026-05-27-0900]] · [[instamart-2026-05-26-1600]] · [[instamart-2026-05-26-1200]] · [[instamart-2026-05-25-0900]] · [[instamart-2026-05-24-1600]] · [[instamart-2026-05-24-1200]] · [[instamart-2026-05-24-0900]] · [[instamart-2026-05-23-1600]] · [[instamart-2026-05-23-1200]] · [[instamart-2026-05-23-0900]] · [[instamart-2026-05-22-1600]]
 
-## Price history (53 observations)
+## Price history (58 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -87,6 +87,11 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,instamart,Indore,452001,55,55,0,0
 2026-05-29-1600,2026-05-29,instamart,Noida,201306,55,55,0,0
 2026-05-29-1600,2026-05-29,instamart,Pune,411047,55,55,0,0
+2026-05-30-0900,2026-05-30,instamart,Faridabad,121001,55,55,0,0
+2026-05-30-0900,2026-05-30,instamart,Faridabad,121011,55,55,0,0
+2026-05-30-0900,2026-05-30,instamart,Ghaziabad,201302,55,55,0,0
+2026-05-30-0900,2026-05-30,instamart,Noida,201306,55,55,0,0
+2026-05-30-0900,2026-05-30,instamart,Pune,411047,55,55,0,0
 ```
 
 ---

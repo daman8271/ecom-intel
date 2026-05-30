@@ -4,7 +4,7 @@ platform: instamart
 kind: quick-commerce
 shape: per-pincode
 risk: low
-runs: 22
+runs: 23
 skus_tracked: 31
 tags:
   - type/platform-hub
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **instamart**. Swiggy Instamart quick-commerce; per-pincode pricing across top cities.
 
 - **Type:** quick-commerce · **Shape:** per-pincode · **Block risk:** low
-- **Runs captured:** 22 · **SKUs tracked:** 31
+- **Runs captured:** 23 · **SKUs tracked:** 31
 
 ## SKUs on instamart (31)
 [[buy-jivo-extra-light-daily-cooking-olive-oil-get-truly-good-food-tgf-penne-pasta-free-combo-na]] · [[jivo-canola-cold-press-edible-oil-1l]] · [[jivo-canola-cold-press-oil-indian-medical-association-recommended-5l]] · [[jivo-cold-press-kachi-ghani-mustard-oil-1l]] · [[jivo-cold-pressed-chemical-free-sunflower-oil-1l]] · [[jivo-cold-pressed-chemical-free-sunflower-oil-5l]] · [[jivo-cold-pressed-mustard-oil-5l-5l]] · [[jivo-cold-pressed-oil-groundnut-oil-1l]] · [[jivo-cold-pressed-oil-groundnut-oil-5l]] · [[jivo-daily-cooking-pomace-olive-oil-1l]] · [[jivo-desi-ghee-1kg-1l]] · [[jivo-extra-light-daily-cooking-olive-oil-1l]] · [[jivo-extra-light-daily-cooking-olive-oil-na]] · [[jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-virgin-olive-oil-1l]] · [[jivo-extra-virgin-olive-oil-250ml]] · [[jivo-first-pressed-sesame-oil-gingelly-oil-1l]] · [[jivo-first-pressed-yellow-mustard-oil-1l]] · [[jivo-fizzy-flavoured-soda-750ml]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l]] · [[jivo-healthy-wheatgrass-juice-sugar-free-200ml]] · [[jivo-indian-tonic-water-200ml]] · [[jivo-natural-minerals-water-1l]] · [[jivo-pomace-daily-cooking-olive-oil-2l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-ricebran-oil-1l-1l]] · [[jivo-ricebran-oil-5l-5l]] · [[jivo-so-olive-oil-1l-1l]] · [[jivo-so-olive-oil-5l-5l]]
 
-## Runs (22) — newest first
+## Runs (23) — newest first
 
 <!-- runs:start -->
+- [[instamart-2026-05-30-0900]] — 2026-05-30 · verdict OK <!-- run -->
 - [[instamart-2026-05-29-1600]] — 2026-05-29 · verdict OK <!-- run -->
 - [[instamart-2026-05-29-1200]] — 2026-05-29 · verdict OK <!-- run -->
 - [[instamart-2026-05-29-0900]] — 2026-05-29 · verdict OK <!-- run -->

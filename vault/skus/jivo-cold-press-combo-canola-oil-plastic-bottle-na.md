@@ -1,14 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-combo-canola-oil-plastic-bottle-na
+display_name: JIVO Cold Press Combo Canola Oil Plastic Bottle
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-29
-last_seen: 2026-05-29
-observations: 2
+last_seen: 2026-05-30
+observations: 3
 min_price: 375
-max_price: 375
-latest_price: 375
+max_price: 575
+latest_price: 575
 tags:
   - type/sku-hub
   - platform/flipkart-minutes
@@ -18,21 +19,24 @@ tags:
 
 Up: [[skus-index]]
 
+**JIVO Cold Press Combo Canola Oil Plastic Bottle**
+
 ## Sold on
-- [[flipkart-minutes]] — latest ₹375
+- [[flipkart-minutes]] — latest ₹575
 
 ## Available in cities
-[[Chandigarh]]
+[[Chandigarh]] · [[Delhi]]
 
-## Runs that observed this SKU (2)
-[[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]]
+## Runs that observed this SKU (3)
+[[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]]
 
-## Price history (2 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,flipkart-minutes,Chandigarh,160017,375,375,0,1
 2026-05-29-1200,2026-05-29,flipkart-minutes,Chandigarh,160017,375,375,0,1
+2026-05-30-0900,2026-05-30,flipkart-minutes,Delhi,110062,575,575,0,1
 ```
 
 ---
