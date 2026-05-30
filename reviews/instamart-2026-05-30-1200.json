@@ -1,0 +1,81 @@
+{
+  "platform": "instamart",
+  "run_id": "2026-05-30-1200",
+  "captured_at": "2026-05-30T06:49:28.656Z",
+  "verdict": "SUSPECT",
+  "rows": 1984,
+  "unique_skus": 31,
+  "pincodes_with_jivo": 141,
+  "baseline_rows": 2248,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "1984 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "1984 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "1984 rows vs baseline 2248 (88%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "31 unique SKUs vs baseline 30 (103%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "141 pincodes w/ Jivo vs baseline 159 (89%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-05-30T06:49:28.656Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": false,
+      "detail": "SUSPECT \u2014 12% row drop vs baseline (1984 vs 2248); data quality OK otherwise, investigate coverage."
+    }
+  ],
+  "reasons": [
+    "llm_judgment: SUSPECT \u2014 12% row drop vs baseline (1984 vs 2248); data quality OK otherwise, investigate coverage."
+  ],
+  "llm_note": "SUSPECT \u2014 12% row drop vs baseline (1984 vs 2248); data quality OK otherwise, investigate coverage."
+}
