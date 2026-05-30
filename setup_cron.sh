@@ -22,8 +22,10 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 # Make cron times mean IST.
 timedatectl set-timezone Asia/Kolkata 2>/dev/null || true
 
-# LIVE platforms only — NO zepto (blocked), NO amazon-now (gated).
-PLATFORMS="blinkit flipkart-minutes flipkart amazon"
+# LIVE platforms only — NO amazon-now (gated). zepto went live 2026-05-29 via the
+# Zepto BFF API gateway (no proxy); see platforms/zepto/SKILL.md. instamart also runs
+# via run_all.sh. (run_all.sh holds the authoritative list; this is a doc mirror.)
+PLATFORMS="blinkit instamart flipkart-minutes flipkart amazon zepto"
 
 # Per-platform minute offset within each window (stagger to avoid concurrent Chromium).
 declare -A OFFSET=( [blinkit]=0 [flipkart-minutes]=4 [flipkart]=8 [amazon]=12 )
