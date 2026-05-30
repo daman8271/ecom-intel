@@ -20,8 +20,8 @@ ecom-intel/
 ├── setup_cron.sh          # installs the 3×/day staggered cron + self-heal
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
-│   ├── blinkit/ flipkart-minutes/ flipkart/ amazon/   # LIVE
-│   ├── zepto/ (BLOCKED, proxy-ready)  amazon-now/ (login-gated)
+│   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/   # 6 LIVE
+│   ├── amazon-now/        # login-gated; PLAN.md + login_v2.js WIP (uncommitted)
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
 ├── tools/                 # review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
 ├── vault/                 # Obsidian memory: runs/ daily/ weekly/ monthly/ platforms/  (committed)
@@ -45,15 +45,16 @@ ls output/                  # the Excel
 4. If it returns 0 rows / captcha / 403 → that platform blocks the datacenter IP → needs a residential proxy.
 5. Commit + push.
 
-## Block-risk map (datacenter VPS IP)
-| Platform | Risk | Notes |
+## Block-risk map (datacenter VPS IP) — all 6 LIVE platforms run DIRECT, no proxy
+| Platform | Status | Notes |
 |---|---|---|
-| blinkit | low (proven) | localStorage location override works |
-| zepto | low–med | similar quick-comm |
-| flipkart-minutes | med | newer quick-comm |
-| amazon-now | med–high | Amazon infra |
-| flipkart | high | marketplace bot detection |
-| amazon | very high | ML bot detection, blocks datacenter IPs fast → proxy required |
+| blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes |
+|  | ✅ LIVE | stealth context + POST to /api//search/v2 (WAF bypass) |
+| zepto | ✅ LIVE | reached via bff-gateway.zeptonow.com BFF API (CloudFront on website still 403s) |
+| flipkart-minutes | ✅ LIVE | HYPERLOCAL store; GPS "use my location"; scaled to 345 pincodes |
+| flipkart | ✅ LIVE | marketplace, national pricing, 1 row/SKU |
+| amazon | ✅ LIVE | interstitial bypass on /dp; targeted scrape of 314 ASINs |
+| amazon-now | 🔧 WIP | login automation against AWS WAF AAMation captcha — see platforms/amazon-now/PLAN.md (uncommitted) |
 
 ## Pipeline (run.sh, per platform)
 `scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → `tools/vault_note.py` (+ rollups)
@@ -62,11 +63,13 @@ never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault,
 history, and review verdicts/baselines are what get committed each run.
 
 ## Cron (IST) — installed by ./setup_cron.sh
-One sweep per window at 09:00 / 12:00 / 16:00 via `./run_all.sh`, which scrapes every
-live platform SEQUENTIALLY (blinkit → flipkart-minutes → flipkart → amazon) then runs the
-self-heal pass. Sequential because at ~332 Blinkit stores a sweep is ~13 min and must not
-overlap the others on this single VPS. setup_cron.sh is re-runnable and touches only
-"# ecom-intel"-tagged lines. No zepto, no amazon-now.
+One sweep per window at 09:00 / 12:00 / 16:00 via `./run_all.sh`, which scrapes the
+6 live platforms IN PARALLEL (blinkit, , flipkart-minutes, flipkart, amazon,
+zepto) then runs the self-heal pass at :30. Switched sequential→parallel 2026-05-22
+(VPS has headroom); each run.sh git-push critical section is flock-serialized
+(.gitpush.lock) so concurrent commits don't collide. setup_cron.sh is re-runnable
+and touches only "# ecom-intel"-tagged lines. amazon-now is NOT in cron — gated
+behind login (see platforms/amazon-now/PLAN.md for the in-progress login work).
 
 Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE (under
 logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;
@@ -94,12 +97,14 @@ Notes link into an Obsidian graph via body [[wikilinks]]; generators are determi
 stdlib-only, idempotent per RUN_ID. Design + conventions: vault/VAULT-SPEC.md.
 
 ## Proxy (residential Indian IPs) — see docs/PROXY.md
-Some sites block our datacenter IP (Zepto = hard 403; Amazon may escalate). The system
-manages the proxy; you only supply credentials. Provider: IPRoyal residential, pay-as-you-go
-(~$10–25/mo at ~8 GB/month). Set PROXY_URL / PROXY_USERNAME / PROXY_PASSWORD in secrets.env
-(template secrets.env.example). tools/proxy.js returns the proxy when set, else null ⇒ DIRECT.
-Only Zepto is wired today; wire others (Amazon first) with the same 2-line chromium.launch
-change ONLY if they start getting blocked — don't burn proxy GB on platforms that work direct.
+**NOT bought and NOT currently needed** — all 6 live platforms run direct from the
+datacenter IP. Zepto was unlocked 2026-05-29 via its bff-gateway.zeptonow.com BFF API
+(the CloudFront-fronted website still 403s the DC IP, but the gateway is reachable
+direct).  was unlocked 2026-05-22 via stealth POST to its public search API.
+tools/proxy.js + setup remain wired in case Amazon escalates to a captcha. Free
+public proxies are OFF-LIMITS (MITM risk). Provider plan if ever needed: IPRoyal
+residential, pay-as-you-go (~$10–25/mo at ~8 GB/month). The only remaining gated
+platform is amazon-now, and that's login-gated, not IP-gated.
 
 ## Hard lessons
 - This repo IS the backup. After any VPS wipe: `git clone` + `npm install` per platform + `npx playwright install chromium`. Never lose the code again.

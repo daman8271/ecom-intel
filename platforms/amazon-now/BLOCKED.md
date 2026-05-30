@@ -1,3 +1,14 @@
+> **⚠️ STATUS REVISITED 2026-05-29/30 — see `PLAN.md` for the current state.**
+> The verdict below ("not feasible without login") is a *snapshot from 2026-05-22*
+> documenting what's true off `/dp` without authentication. That verdict still
+> stands AS WRITTEN. Since then, the project chose to tackle the login itself.
+> Active uncommitted work in this folder: `PLAN.md` (the strategy), `login.js`
+> (v1, OTP-gate failure), `login_v2.js` (v2 — Real Chrome new-headless + warmup
+> + vision-handoff for the AWS WAF "AAMation" adversarial-grid captcha that
+> gates the OTP), `recon/` (capture/glow/fresh recon scripts), `secrets/`
+> (debug dumps + guest storageState). NOT in cron until the login mints a
+> reusable session.
+
 # BLOCKED: Amazon Now — no reliable per-ASIN "Now" signal on the /dp page
 
 **Date tested:** 2026-05-21 (storefront recon) + **2026-05-22** (per-ASIN /dp
