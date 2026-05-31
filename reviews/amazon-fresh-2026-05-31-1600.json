@@ -1,0 +1,81 @@
+{
+  "platform": "amazon-fresh",
+  "run_id": "2026-05-31-1600",
+  "captured_at": "2026-05-31T10:52:19.429Z",
+  "verdict": "SUSPECT",
+  "rows": 13241,
+  "unique_skus": 63,
+  "pincodes_with_jivo": 332,
+  "baseline_rows": 13312,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "13241 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "13241 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "13241 rows vs baseline 13312 (99%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "63 unique SKUs vs baseline 68 (93%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": false,
+      "detail": "107 rows w/ implausible price e.g. 'Jivo Sunflower Oil - 4 Litres'=None"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "332 pincodes w/ Jivo vs baseline 332 (100%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-05-31T10:52:19.429Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK: 13,241 rows near baseline (13,312), 63 realistic Jivo oil SKUs, MRP\u2265sale throughout, discounts 14\u201365% plausible."
+    }
+  ],
+  "reasons": [
+    "prices_in_band: 107 rows w/ implausible price e.g. 'Jivo Sunflower Oil - 4 Litres'=None"
+  ],
+  "llm_note": "OK: 13,241 rows near baseline (13,312), 63 realistic Jivo oil SKUs, MRP\u2265sale throughout, discounts 14\u201365% plausible."
+}
