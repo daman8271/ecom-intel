@@ -1,0 +1,246 @@
+// ---------------------------------------------------------------------------
+// BIGBASKET scraper.  STATUS: LIVE (2026-05-31) via the web listing-svc API.
+//
+// MODEL — NATIONAL (like Flipkart, not like Blinkit/Zepto/).
+//   BigBasket's main storefront ("BB", scheduled delivery) prices Jivo
+//   NATIONALLY: the listing-svc search API returns the same catalogue + prices
+//   regardless of the session's city/hub. (Verified in recon: the old per-city
+//   location APIs are decommissioned/404, and overriding the hub cookie doesn't
+//   change Jivo pricing.) So we do ONE scrape and tag every row city="All India"
+//   — we do NOT loop pincodes. pincodes.json is intentionally unused (kept for
+//   shape-consistency with the other platforms).
+//
+// ANTI-BOT — STEALTH REQUIRED.
+//   www.bigbasket.com is behind Akamai Bot Manager. Plain headless Chromium —
+//   and any raw node/curl client — gets HTTP 403 from this datacenter IP. A
+//   stealth browser (playwright-extra + puppeteer-extra-plugin-stealth) loads at
+//   HTTP 200, and an IN-PAGE fetch() (inheriting the real session cookies + TLS
+//   fingerprint) reaches the JSON API. Mirrors the  recipe already
+//   proven on this VPS. No proxy needed.
+//
+// API:  GET /listing-svc/v2/products?type=ps&slug=<query>&page=<n>&bucket_id=32
+//       -> { tabs:[{ product_info:{ products:[...], number_of_pages, total_count }}]}
+//   p.id                                  -> sku id
+//   p.desc                                -> name
+//   p.brand.name (trim)                   -> brand  (keep only "Jivo")
+//   p.w                                   -> pack ("5 L", "200 ml")
+//   p.magnitude + p.unit                  -> numeric volume (magnitude already in ml)
+//   p.pricing.discount.mrp                -> MRP (string)
+//   p.pricing.discount.prim_price.sp      -> selling price (string)
+//   p.pricing.discount.camp_detail.d_v    -> discount % (fallback)
+//   p.pricing.discount.prim_price.base_price/base_unit -> per-unit price
+//   p.availability.avail_status === '001' -> in stock (else 002/004 = OOS/not-serviceable)
+//
+// Output schema is Blinkit/Flipkart-compatible so build_excel.py works unchanged.
+// ZERO LLM in the loop. Full recon notes: platforms/bigbasket/RECON.md.
+// ---------------------------------------------------------------------------
+
+const { chromium } = require('playwright-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const fs = require('fs');
+const path = require('path');
+chromium.use(StealthPlugin());
+
+const OUTFILE = process.env.OUT_FILE || path.join(__dirname, 'result.json');
+const BUCKET_ID = process.env.BB_BUCKET_ID || '32';
+const MAX_PAGES = parseInt(process.env.BB_MAX_PAGES || '5', 10);
+// Multiple queries, deduped, to maximise Jivo recall across categories (oils,
+// juices, vinegar, ...). "jivo" alone returns the whole brand catalogue today;
+// the extra terms are cheap insurance if search ranking ever truncates it.
+const QUERIES = (process.env.BB_QUERIES
+  ? process.env.BB_QUERIES.split(',')
+  : ['jivo', 'jivo olive oil', 'jivo oil', 'jivo juice']
+).map((s) => s.trim()).filter(Boolean);
+const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
+
+// --- price/pack helpers (same conventions as the other platforms) ----------
+function parseVolMl(pack) {
+  if (!pack) return null;
+  const m = String(pack).toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);
+  if (!m) return null;
+  const n = parseFloat(m[1]); const u = m[2];
+  if (u === 'ml' || u === 'g') return n;
+  if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
+  return null;
+}
+function canonical(name, pack) {
+  const base = (name || '').toLowerCase().replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, '')
+    .replace(/\s+/g, ' ').trim().replace(/\s/g, '-');
+  const vol = parseVolMl(pack);
+  const volTag = vol ? (vol >= 1000 ? (vol / 1000) + 'l' : vol + 'ml') : 'na';
+  return `${base}-${volTag}`.replace(/--+/g, '-');
+}
+function num(v) {
+  if (v == null) return null;
+  const n = parseFloat(String(v).replace(/[^\d.]/g, ''));
+  return Number.isFinite(n) ? n : null;
+}
+const r1 = (n) => Math.round(n * 10) / 10;
+const r2 = (n) => Math.round(n * 100) / 100;
+
+// volume in ml: prefer the human pack string ("5 L"); fall back to magnitude+unit
+// (BigBasket's magnitude is already expressed in ml for ml/g units, e.g. "5000").
+function volMl(p, pack) {
+  const v = parseVolMl(pack);
+  if (v != null) return v;
+  const mag = num(p.magnitude);
+  if (mag == null) return null;
+  const u = String(p.unit || '').toLowerCase();
+  if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return mag * 1000;
+  return mag; // ml / g / already-ml
+}
+
+// Pull every Jivo product out of one listing-svc response into canonical rows.
+function parseProducts(json) {
+  const out = [];
+  const tabs = (json && json.tabs) || [];
+  for (const tab of tabs) {
+    const pi = (tab && tab.product_info) || {};
+    for (const p of (pi.products || [])) {
+      const brand = (p.brand && p.brand.name && String(p.brand.name).trim()) || '';
+      // strict brand match — excludes substring noise (Jivika / JIVOTTAM / etc.)
+      if (!/^jivo$/i.test(brand)) continue;
+      const disc = (p.pricing && p.pricing.discount) || {};
+      const prim = disc.prim_price || {};
+      const mrp = num(disc.mrp);
+      let sale = num(prim.sp);
+      if (sale == null) sale = mrp;
+      if (sale == null) continue; // unpriced -> skip
+      const pack = p.w || '';
+      const vol = volMl(p, pack);
+      const av = p.availability || {};
+      const inStock = (av.avail_status === '001' && !av.not_for_sale) ? 1 : (av.avail_status ? 0 : 1);
+      const dctFromMrp = (mrp && sale && mrp > sale) ? r1(((mrp - sale) / mrp) * 100) : null;
+      const dcampRaw = disc.camp_detail && disc.camp_detail.d_v;
+      const dcamp = (dcampRaw != null && Number.isFinite(parseFloat(dcampRaw))) ? r1(parseFloat(dcampRaw)) : null;
+      out.push({
+        city: 'All India', pincode: '-', locality: 'BigBasket (national)',
+        store_id: '', store_name: 'BigBasket',
+        sku_raw: p.desc || '', canonical: canonical(p.desc, pack), pack,
+        vol_ml: vol, sale, mrp,
+        discount_pct: dctFromMrp != null ? dctFromMrp : (dcamp != null ? dcamp : 0),
+        per_litre: vol ? r2(sale / (vol / 1000)) : null,
+        eta_min: null, in_stock: inStock,
+        // ---- rich identity (ignored by build_excel; kept for vault/history/review) ----
+        sku_id: String(p.id || ''), brand,
+        avail_status: av.avail_status || '', avail_button: av.button || '',
+        base_price: num(prim.base_price), base_unit: prim.base_unit || '',
+        category: (p.category && (p.category.tlc_name || p.category.mlc_name)) || '',
+        absolute_url: p.absolute_url || '',
+      });
+    }
+  }
+  return out;
+}
+
+async function fetchQuery(page, query) {
+  const slug = encodeURIComponent(query.toLowerCase().trim());
+  const all = [];
+  for (let pg = 1; pg <= MAX_PAGES; pg++) {
+    const res = await page.evaluate(async ({ slug, pg, bucket }) => {
+      try {
+        const url = `/listing-svc/v2/products?type=ps&slug=${slug}&page=${pg}&bucket_id=${bucket}`;
+        const r = await fetch(url, {
+          headers: {
+            accept: 'application/json, text/plain, */*',
+            'x-requested-with': 'XMLHttpRequest',
+            referer: `https://www.bigbasket.com/ps/?q=${slug}`,
+          },
+        });
+        if (r.status !== 200) return { __err: 'HTTP ' + r.status };
+        return await r.json();
+      } catch (e) { return { __err: e.message }; }
+    }, { slug, pg, bucket: BUCKET_ID });
+
+    if (res && res.__err) { process.stderr.write(`[warn] q="${query}" p${pg}: ${res.__err}\n`); break; }
+    const rows = parseProducts(res);
+    all.push(...rows);
+    const pi = (res.tabs && res.tabs[0] && res.tabs[0].product_info) || {};
+    const np = pi.number_of_pages || 1;
+    process.stderr.write(`[ok] q="${query}" p${pg}/${np} -> +${rows.length} jivo (total_count=${pi.total_count != null ? pi.total_count : '?'})\n`);
+    if (pg >= np) break;
+    await page.waitForTimeout(300 + Math.random() * 400);
+  }
+  return all;
+}
+
+async function openSession(browser) {
+  const ctx = await browser.newContext({
+    userAgent: UA, locale: 'en-IN', timezoneId: 'Asia/Kolkata',
+    viewport: { width: 1280, height: 900 },
+    extraHTTPHeaders: { 'accept-language': 'en-IN,en;q=0.9' },
+  });
+  const page = await ctx.newPage();
+  await ctx.route('**/*', (route) => {
+    const t = route.request().resourceType();
+    if (['image', 'font', 'media'].includes(t)) return route.abort();
+    return route.continue();
+  });
+  let ok = false;
+  for (let i = 0; i < 3 && !ok; i++) {
+    try {
+      const resp = await page.goto('https://www.bigbasket.com/', { waitUntil: 'domcontentloaded', timeout: 45000 });
+      const status = resp ? resp.status() : 0;
+      if (status === 200) { ok = true; break; }
+      process.stderr.write(`[warn] homepage status ${status} (try ${i + 1}/3)\n`);
+    } catch (e) {
+      process.stderr.write(`[warn] homepage error "${e.message}" (try ${i + 1}/3)\n`);
+    }
+    await page.waitForTimeout(1500 + Math.random() * 1500);
+  }
+  if (ok) await page.waitForTimeout(2500); // let Akamai sensor + cookies settle
+  return { ctx, page, ok };
+}
+
+(async () => {
+  const t0 = Date.now();
+  const browser = await chromium.launch({
+    headless: true,
+    executablePath: require('playwright').chromium.executablePath(),
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled'],
+  });
+
+  let rows = [];
+  let sessionOk = false;
+  try {
+    const { ctx, page, ok } = await openSession(browser);
+    sessionOk = ok;
+    if (ok) {
+      const seen = new Set();
+      for (const q of QUERIES) {
+        let qr = [];
+        try { qr = await fetchQuery(page, q); } catch (e) { process.stderr.write(`[err] q="${q}": ${e.message}\n`); }
+        for (const r of qr) {
+          if (seen.has(r.canonical)) continue; // national: dedup on canonical (store_id empty)
+          seen.add(r.canonical); rows.push(r);
+        }
+        await page.waitForTimeout(500 + Math.random() * 600);
+      }
+    } else {
+      process.stderr.write('[err] could not load BigBasket homepage (Akamai block?) — emitting empty result\n');
+    }
+    try { await ctx.close(); } catch (_) {}
+  } catch (e) {
+    process.stderr.write(`[err] fatal: ${e.message}\n`);
+  } finally {
+    try { await browser.close(); } catch (_) {}
+  }
+
+  const inStock = rows.filter((r) => r.in_stock).length;
+  const summary = {
+    pincodes_total: 1,
+    pincodes_with_jivo: rows.length ? 1 : 0,
+    total_rows: rows.length,
+    unique_skus: new Set(rows.map((r) => r.canonical)).size,
+    in_stock: inStock,
+    out_of_stock: rows.length - inStock,
+    queries: QUERIES,
+    session_ok: sessionOk,
+    wall_s: Math.round((Date.now() - t0) / 1000),
+    captured_at: new Date().toISOString(),
+  };
+  const perPin = [{ city: 'All India', pincode: '-', locality: 'BigBasket (national)', tier: 0, store_id: '', store_name: 'BigBasket', rows }];
+  process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
+  fs.writeFileSync(OUTFILE, JSON.stringify({ summary, perPin, allRows: rows }, null, 2));
+  console.log(JSON.stringify(summary));
+})();
