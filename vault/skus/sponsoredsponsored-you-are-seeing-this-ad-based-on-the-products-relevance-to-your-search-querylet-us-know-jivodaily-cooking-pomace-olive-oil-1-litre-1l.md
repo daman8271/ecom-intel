@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 17
+observations: 37
 min_price: 379
 max_price: 405
 latest_price: 379
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹379 (41.6% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Ludhiana]] · [[Mumbai]] · [[Pune]]
+[[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (17 observations)
+## Price history (37 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -51,6 +51,26 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400020,379,649,41.6,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Pune,410402,379,649,41.6,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Pune,410506,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Chandigarh,160014,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110055,379,1049,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110065,405,1049,61.4,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,303007,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,303348,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Kolkata,700053,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ludhiana,141107,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ludhiana,141206,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ludhiana,141414,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400003,379,1049,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400004,379,1049,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400007,379,1049,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400011,379,1049,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400026,379,1049,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201309,405,1049,61.4,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,411005,379,1049,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412104,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412201,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412211,379,649,41.6,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,413132,379,649,41.6,1
 ```
 
 ---

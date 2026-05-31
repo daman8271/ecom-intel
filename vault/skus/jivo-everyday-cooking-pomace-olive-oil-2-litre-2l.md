@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 4
+observations: 8
 min_price: 849
 max_price: 849
 latest_price: 849
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Kolkata]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (4 observations)
+## Price history (8 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -38,6 +38,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-0900,2026-05-31,amazon-fresh,Kolkata,700040,849,1449,41.4,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Kolkata,700053,849,1449,41.4,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Kolkata,700141,849,1449,41.4,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Kolkata,700024,849,1449,41.4,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Kolkata,700040,849,1449,41.4,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Kolkata,700053,849,1449,41.4,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Kolkata,700141,849,1449,41.4,1
 ```
 
 ---

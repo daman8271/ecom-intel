@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 35
+observations: 70
 min_price: 287
 max_price: 293
 latest_price: 293
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (35 observations)
+## Price history (70 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -69,6 +69,41 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-0900,2026-05-31,amazon-fresh,Noida,201307,293,375,21.9,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Noida,201309,293,375,21.9,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Noida,201310,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110008,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110010,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110015,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110026,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110032,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110042,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110046,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110051,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110075,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110082,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110083,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110085,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110092,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110095,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Faridabad,121001,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Faridabad,121002,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Faridabad,121003,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ghaziabad,201001,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ghaziabad,201002,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ghaziabad,201005,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ghaziabad,201009,287,375,23.5,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Gurgaon,122004,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Gurgaon,122101,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302015,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302017,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302018,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302020,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302033,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Kolkata,700089,290,375,22.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201304,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201305,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201306,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201307,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201309,293,375,21.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201310,293,375,21.9,1
 ```
 
 ---

@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-premium-quinoa-gluten-free-na
-display_name: Jivo Premium Quinoa Gluten Free
 platforms:
   - amazon
   - amazon-fresh
@@ -20,8 +19,6 @@ tags:
 # jivo-premium-quinoa-gluten-free-na
 
 Up: [[skus-index]]
-
-**Jivo Premium Quinoa Gluten Free**
 
 ## Sold on
 - [[amazon]] — latest ₹179 (40.1% off)

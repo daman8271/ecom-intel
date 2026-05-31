@@ -6,10 +6,10 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 17
+observations: 37
 min_price: 1010
 max_price: 1149
-latest_price: 1010
+latest_price: 1072
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOExtra Light Olive Oil 2 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹1010 (63.9% off)
+- [[amazon-fresh]] — latest ₹1072 (61.7% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Ludhiana]] · [[Mumbai]] · [[Pune]]
+[[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (17 observations)
+## Price history (37 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -51,6 +51,26 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400020,1149,2799,58.9,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Pune,410402,1072,2799,61.7,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Pune,410506,1010,2799,63.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Chandigarh,160014,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110055,1147,2799,59,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110065,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,303007,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,303348,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Kolkata,700053,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ludhiana,141107,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ludhiana,141206,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Ludhiana,141414,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400003,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400004,1149,2799,58.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400007,1149,2799,58.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400011,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Mumbai,400026,1149,2799,58.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Noida,201309,1143,2799,59.2,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,411005,1149,2799,58.9,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412104,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412201,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412211,1072,2799,61.7,1
+2026-05-31-1200,2026-05-31,amazon-fresh,Pune,413132,1072,2799,61.7,1
 ```
 
 ---
