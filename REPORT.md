@@ -25,7 +25,12 @@ platform are in `output/`.
   two must **never run concurrently** (the plain guest `amazon` scraper is safe
   alongside Fresh because it sets no account location). It is also a thinner
   catalog than Fresh. See `platforms/amazon-now/PLAN.md`.
-- All 7 live scrapers run on **3×/day parallel cron (09:00 / 12:00 / 16:00 IST)**
+- **BigBasket** went LIVE **2026-05-31** — `www.bigbasket.com` is behind Akamai
+  (plain HTTP → 403), so a **stealth browser** loads the session and an **in-page
+  fetch** calls the `listing-svc` JSON API. BigBasket "BB" prices Jivo
+  **nationally**, so (like Flipkart) it scrapes once and tags rows "All India"
+  (~27 SKUs, no proxy, no login).
+- All 8 live scrapers run on **3×/day parallel cron (09:00 / 12:00 / 16:00 IST)**
   via `run_all.sh`, with a self-heal sweep at the end of each window.
 
 ## Working platforms (current cron)
@@ -39,6 +44,7 @@ platform are in `output/`.
 | **Flipkart** | marketplace | national | ~61 | national pricing; 1 row per SKU |
 | **Amazon** | marketplace | national (314 ASINs targeted) | ~163 in-stock | guest `/dp` scrape; interstitial bypass; no account location |
 | **Amazon Fresh** | quick-comm | 332/332 pincodes serviceable | ~63 | logged-in session (cookie transplant); `i=freshstore` raw POST+HTML; ~13.2k rows/run, ~22 min |
+| **BigBasket** | grocery (national) | national (single "All India") | ~27 | stealth browser past Akamai + in-page `listing-svc` JSON API; national pricing → 1 row/SKU; no proxy, no login |
 
 ## Amazon Fresh — how the logged-in scrape works (no proxy)
 - **One Amazon account, cookies transplanted.** `secrets/amazon-fresh.storageState.json`
@@ -72,12 +78,12 @@ design** — the value there is **catalog breadth, price, MRP, discount %** (Ama
 ~163 in-stock Jivo SKUs vs 8–11 on the quick-comm apps).
 
 ## Where a residential proxy would help
-**None needed today** — all 7 live platforms run without a proxy. `tools/proxy.js`
+**None needed today** — all 8 live platforms run without a proxy. `tools/proxy.js`
 stays wired only as insurance if **Amazon** ever escalates from the interstitial bypass
 to a captcha on the datacenter IP. See `docs/PROXY.md`.
 
 ## Operational state
-- **Cron (IST):** `run_all.sh` scrapes all 7 live platforms **in parallel** at
+- **Cron (IST):** `run_all.sh` scrapes all 8 live platforms **in parallel** at
   **09:00 / 12:00 / 16:00**, then runs the self-heal sweep at the end of each window
   (flags any platform <20 rows / stale and re-runs once / escalates to Telegram).
   `amazon-now` is excluded (manual-only — see above).
