@@ -2,11 +2,12 @@
 
 A deterministic price- and stock-intelligence pipeline for the **Jivo** brand. It
 tracks Jivo SKU prices, MRP, discount %, per-litre cost and in-stock status across
-India's quick-commerce apps and marketplaces — covering the **top-20 cities (~40
-pincodes)** — and emits a clean **6-sheet Excel report per platform** plus an
-**Obsidian-style Markdown "memory vault"**. Runs unattended on a Hostinger VPS via
-**cron, multiple times a day**, with an automated self-heal and Telegram delivery.
-Built and pitched to Jivo's head of e-commerce.
+India's quick-commerce apps and marketplaces — at **national scale, hundreds of
+pincodes per quick-commerce platform** (≈332–798, scaled up from the original top-20
+cities) — and emits a clean **branded Excel report per platform** (6 sheets + an
+appended Predictions sheet) plus an **Obsidian-style Markdown "memory vault"**. Runs
+unattended on a Hostinger VPS via **cron, 3× per day**, with an automated self-heal and
+Telegram delivery. Built and pitched to Jivo's head of e-commerce.
 
 > Companion docs: [`CLAUDE.md`](CLAUDE.md) (operator quick-reference, auto-loads in
 > Claude Code) · [`REPORT.md`](REPORT.md) (platform-coverage map) ·
@@ -20,7 +21,7 @@ Built and pitched to Jivo's head of e-commerce.
 called inside the per-pincode scrape loop. The only place an LLM is allowed is a
 **cheap, end-of-run review** and the **narrative reports** — never in the hot path.
 
-**Why this is non-negotiable — cost.** A run touches ~40 pincodes × N platforms ×
+**Why this is non-negotiable — cost.** A run touches hundreds of pincodes × N platforms ×
 many product cards, multiple times a day, forever. Putting an LLM call in that loop
 makes every datapoint an API call: that is **100×–10,000× the cost** of a
 deterministic DOM parse, for data that a CSS selector + regex extracts perfectly.
@@ -49,8 +50,9 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 | **Zepto** | quick-comm | ✅ LIVE | 332 pincodes | ~11 | reached via `bff-gateway.zeptonow.com` BFF API (the CloudFront website still 403s — gateway is direct), no proxy |
 | **Flipkart Minutes** | quick-comm | ✅ LIVE | 345 pincodes | ~10 | `HYPERLOCAL` store; GPS "use my location" |
 | **Flipkart** | marketplace | ✅ LIVE | national | ~61 | national pricing → 1 row/SKU, tagged "All India" |
-| **Amazon** | marketplace | ✅ LIVE | national | ~314 ASINs | targeted `/dp` scrape with interstitial bypass; richest catalog |
-| **Amazon Now** | quick-comm | 🔧 LOGIN-WIP | — | — | login automation against AWS WAF "AAMation" captcha in active dev (`platforms/amazon-now/PLAN.md` + `login_v2.js`, uncommitted) |
+| **Amazon** | marketplace | ✅ LIVE | national | ~314 ASINs | guest `/dp` scrape with interstitial bypass; richest catalog; sets no account location |
+| **Amazon Fresh** | quick-comm | ✅ LIVE | 332/332 pincodes serviceable | ~63 | logged-in (cookie transplant); `i=freshstore` raw POST+HTML; ~13k rows/run, ~7× richer than Now; no proxy; in cron |
+| **Amazon Now** | quick-comm | ⏸ MANUAL | — | 0–14 | login solved (same session as Fresh) but **manual-only** — shares Fresh's account + server-side location, so the two must never co-run; thinner catalog. Not in cron. See `platforms/amazon-now/PLAN.md` |
 
 - **Marketplaces (Flipkart / Amazon)** price nationally, so we scrape the catalog
   once and tag rows "All India" rather than looping pincodes. Their value is
@@ -59,22 +61,29 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 - **Zepto** went live 2026-05-29 — the public website is CloudFront-fronted and
   hard-403s the datacenter IP, but the app's BFF API gateway is reachable directly.
   No proxy needed. See `platforms/zepto/SKILL.md`.
-- **Amazon Now** needs a logged-in session with saved addresses. The 2026-05-22
-  `BLOCKED.md` verdict ("not feasible without login") is being actively challenged
-  by `platforms/amazon-now/login_v2.js` — Real Chrome new-headless + warmup + a
-  vision-handoff loop for the AWS WAF adversarial-grid captcha. See `PLAN.md` in
-  that folder for the strategy + open user-blocking questions.
-- **Amazon Fresh** is bundled with Amazon Now — one logged-in `storageState` is
-  intended to unlock both storefronts (recon scripts already in
-  `platforms/amazon-now/recon/`).
+- **Amazon Fresh** went live 2026-05-30 — the `i=freshstore` storefront, scraped on a
+  **logged-in session** (no proxy). The VPS IP can't pass Amazon's signin WAF, so the
+  user exports cookies on a clean IP (Cookie-Editor) and they're imported via
+  `platforms/amazon-now/import_cookies.js` (session valid ~1 year). Per pincode it does
+  a raw POST to `glow/address-change` then a GET of `/s?k=jivo&i=freshstore` HTML — no
+  page render. It is **one Amazon account** shared with Amazon Now
+  (`amazon-fresh.storageState.json` is a symlink to the amazon-now one). ~63 Jivo SKUs,
+  332 pincodes, ~13k rows/run. See `platforms/amazon-fresh/SKILL.md`.
+- **Amazon Now** runs on the *same* logged-in account as Fresh, so it is **manual-only,
+  not on cron**: Amazon resolves delivery location server-side per account, meaning Now
+  and Fresh can't run at the same time without clobbering each other's location. Fresh
+  is also a far richer catalog, so Now is de-prioritized to manual runs. The guest
+  `amazon` marketplace scraper sets no account location and is safe alongside Fresh.
+  See `platforms/amazon-now/PLAN.md`.
 
 ---
 
 ## How to run
 
 ```bash
-./run.sh <platform>     # blinkit | flipkart-minutes | flipkart | amazon
-                        # (zepto | amazon-now are staged/blocked — see above)
+./run.sh <platform>     # blinkit |  | zepto | flipkart-minutes
+                        # | flipkart | amazon | amazon-fresh   (7 live, all in cron)
+                        # amazon-now = manual-only, never co-run with amazon-fresh
 ```
 
 Examples:
@@ -103,65 +112,58 @@ ls output/                             # the generated Excel reports
 
 ## The pipeline
 
-Each `./run.sh <platform>` executes this chain. Most steps now exist as code; the
-status column reflects how far the wiring has landed (this repo is being built by
-several agents in parallel — the orchestrator does the final `run.sh` wiring + cron
-swap, so verify the marked items before relying on them).
+Each `./run.sh <platform>` now executes this **fully-wired** chain. Everything after
+the scrape is best-effort (`|| true`) and can never fail the run:
 
 ```
-scrape.js (Node+Playwright)         IN run.sh    — deterministic, no LLM → result.json
-   → build_excel.py (openpyxl)      IN run.sh    — result.json → 6-sheet Excel
-   → tools/review.py                BUILT*       — sanity-check run, write reviews/<run>.json
-   → tools/selfheal.sh              BUILT*       — heal if verdict BROKEN/SUSPECT or collapse
-   → tools/vault_note.py            BUILT*       — write Obsidian run note + append data/ CSV
-   → Telegram delivery              IN run.sh    — deterministic summary + Excel to the bot
-   → git push                       (orchestrator) — code + vault/ + data/ committed
+scrape.js (Node+Playwright)      WIRED  — deterministic, no LLM → result.json
+ → build_excel.py (openpyxl)     WIRED  — result.json → branded 6-sheet Excel
+ → tools/predict.py              WIRED  — appends a "Predictions" sheet (reads data/ history)
+ → tools/review.py               WIRED  — sanity-check run → reviews/<run>.json verdict
+ → tools/vault_note.py --csv-only WIRED — append data/<p>/history.csv (run notes via rollup)
+ → Telegram delivery             WIRED  — deterministic summary + Excel to the bot
+ → git add vault data reviews baselines → commit → push   WIRED (flock-serialized)
 ```
 
-`*BUILT` = the tool exists and is self-contained, but is **not yet wired into
-`run.sh`** — the orchestrator inserts these steps. `healthcheck.sh` already invokes
-self-heal on its own cron entry today; `tools/selfheal.sh` is the richer
-review-aware successor.
-
-What is **wired into `run.sh` today**:
+Step by step:
 
 1. **Scrape** — `platforms/<p>/scrape.js` drives Playwright, sets the per-pincode
    delivery location, extracts Jivo product cards, writes `result.json` as
-   `{summary, perPin, allRows}`. Pure deterministic JS.
+   `{summary, perPin, allRows}`. Pure deterministic JS, no LLM.
 2. **Build Excel** — `platforms/<p>/build_excel.py` (openpyxl) turns `result.json`
    into a branded **6-sheet** workbook: *Summary · Master Data · Pricing Matrix ·
    Stock Status · Discount Analysis · Coverage & Gaps*. Platform name is derived
-   from the folder, so the script is identical across platforms.
-3. **Telegram delivery** — `run.sh` builds a short **Markdown summary
-   deterministically from `result.json`** (cheapest in-stock SKU by ₹/L, top
-   discount, coverage) — *no LLM* — and sends it plus the Excel to the bot. This
-   step is best-effort and can never fail the run (wrapped, logged to
-   `logs/telegram.log`).
-4. **Self-heal** — `healthcheck.sh` (separate cron entry) checks each live
-   platform's latest `result.json`: if `total_rows < 20` or the file is `> 15h`
-   old, it invokes **Claude Code** (`claude -p ...`) to read the SKILL + scraper,
-   re-run it, and — only if it's a safe selector/parsing fix — repair, re-run,
-   confirm, then commit + push. If it can't be safely fixed (captcha / IP block /
-   login wall) it writes `logs/<p>-DIAGNOSIS.md` and stops. **It is explicitly
-   instructed to never put an LLM inside the scrape loop.**
+   from the folder, so the script is identical across platforms (Amazon Fresh ships
+   a Fresh-specific variant with a *Now Serviceability* sheet).
+3. **Predictions** — `tools/predict.py <platform> <xlsx>` opens the just-built
+   workbook and **appends a "Predictions" sheet** computed from `data/<p>/history.csv`
+   (deterministic, stdlib + openpyxl, no LLM).
+4. **Automated review** — `tools/review.py <platform> <RUN_ID>` runs **free
+   deterministic** sanity checks over `result.json` (row count vs baseline,
+   implausible prices, coverage drops, schema drift), writes
+   `reviews/<platform>-<RUN_ID>.json`, and updates `baselines/<platform>.json` on OK
+   runs. An optional single tiny **Claude Haiku** call is the *only* LLM touch and is
+   failure-proof (never crashes the run, never enters the scrape loop). Exit: 0 =
+   OK/SUSPECT, 2 = BROKEN.
+5. **Vault + history** — `run.sh` calls `tools/vault_note.py <platform> <RUN_ID>
+   --csv-only` to append one row per SKU×location to `data/<platform>/history.csv`;
+   the per-run Obsidian notes + daily/weekly/monthly rollups are (re)built by
+   `tools/vault_rollup.py` after the sweep. Stdlib-only, deterministic, no LLM.
+6. **Telegram delivery** — `run.sh` builds a short **Markdown summary deterministically
+   from `result.json`** (cheapest in-stock SKU by ₹/L, top discount, coverage) — *no
+   LLM* — and sends it plus the Excel to the bot. Best-effort, logged to
+   `logs/telegram.log`.
+7. **Commit + push** — `git add vault data reviews baselines` → commit → push, inside a
+   `flock` critical section so the parallel sweep's commits don't collide.
 
-What is **built but not yet wired into `run.sh`** (parallel work — verify the wiring):
-
-- **Automated review** — `tools/review.py <platform> <RUN_ID>` runs **free
-  deterministic** sanity checks over the finished `result.json` (row count vs
-  baseline, implausible prices, coverage drops, schema drift) and writes a verdict
-  to `reviews/<platform>-<RUN_ID>.json`; it updates `baselines/<platform>.json` on
-  OK runs. An optional single tiny **Claude Haiku** call is the *only* LLM touch and
-  is failure-proof (never crashes the run, never enters the scrape loop). Exit code:
-  0 = OK/SUSPECT, 2 = BROKEN.
-- **Self-heal** — `tools/selfheal.sh` heals on three signals (review verdict
-  BROKEN/SUSPECT · stale/missing result · row collapse vs baseline), re-runs the
-  platform once under a lock, and escalates to Telegram if still broken. It is the
-  review-aware successor to `healthcheck.sh`.
-- **Vault note + history** — `tools/vault_note.py <platform> <RUN_ID>` writes the
-  Obsidian run note, upserts the platform hub + daily note, and appends to
-  `data/<platform>/history.csv`. `tools/vault_rollup.py <daily|weekly|monthly>`
-  rebuilds the time-rollups. Both are stdlib-only, deterministic, **no LLM**.
+**Self-heal** runs *after* the parallel sweep (from `run_all.sh`), not inside each
+`run.sh`. `tools/selfheal.sh` heals on three signals — review verdict BROKEN/SUSPECT ·
+stale/missing `result.json` · row collapse vs baseline — re-runs the platform once under
+a per-platform lock, and escalates to Telegram if still broken. `healthcheck.sh` is the
+older `total_rows < 20` / `> 15h`-stale variant that can invoke **Claude Code**
+(`claude -p`) to read the SKILL + scraper and apply a *safe* selector/parsing fix only;
+on a captcha / IP block / login wall it writes `logs/<p>-DIAGNOSIS.md` and stops. **Both
+are forbidden from ever putting an LLM inside the scrape loop.**
 
 ---
 
@@ -193,24 +195,26 @@ Together: humans browse the vault; a model reads `data/`. Generated by
 
 ## Schedule & self-heal
 
-**Schedule that `setup_cron.sh` installs** — **3× per day, IST**, with each platform
-staggered a few minutes so four Chromium instances don't launch the same second:
+**Schedule installed and live** — **3× per day, IST**. Each window fires a single
+`./run_all.sh`, which scrapes all **7 live platforms in parallel** (the VPS has
+headroom: ~15 GB RAM / 4 CPU) and then runs the self-heal pass at the end of the sweep:
 
-| Window (IST) | Jobs (in order) |
+| Window (IST) | Job |
 |---|---|
-| **09:00–09:12** | blinkit `:00` · flipkart-minutes `:04` · flipkart `:08` · amazon `:12` |
-| **09:30** | self-heal sweep (after the batch finishes) |
-| **12:00–12:12** | same staggered batch |
-| **12:30** | self-heal sweep |
-| **16:00–16:12** | same staggered batch |
-| **16:30** | self-heal sweep |
+| **09:00** | `run_all.sh` — parallel sweep of all 7 live platforms → self-heal pass |
+| **12:00** | same |
+| **16:00** | same |
 
-> **Note on the live crontab:** `setup_cron.sh` was updated to this **3×/day
-> (09/12/16)** cadence, but the *currently installed* crontab may still be the older
-> **2×/day (09:00 & 19:00)** — the **orchestrator applies the new crontab after
-> end-to-end testing**. Preview without installing via `./setup_cron.sh --print`
-> (or `DRY_RUN=1`). The script is idempotent (rewrites only `# ecom-intel` lines)
-> and sets the timezone (`timedatectl set-timezone Asia/Kolkata`).
+> The installed crontab is exactly three `run_all.sh` entries (verified via
+> `crontab -l`). `run_all.sh` holds the **authoritative** live-platform list;
+> `setup_cron.sh` still carries a per-platform stagger/offset block, but it is a
+> legacy doc-mirror — the real sweep is parallel. Each `run.sh`'s git-push is
+> `flock`-serialized (`.gitpush.lock`) so concurrent commits don't collide. Preview
+> the cron block without installing via `./setup_cron.sh --print` (or `DRY_RUN=1`);
+> the script is idempotent (rewrites only `# ecom-intel` lines) and sets the timezone
+> (`timedatectl set-timezone Asia/Kolkata`). **amazon-now is intentionally excluded**
+> (manual-only — it shares amazon-fresh's account + server-side location and must never
+> co-run with it).
 
 Self-heal: a run that returns too few rows / is stale / fails its review verdict
 triggers a single Claude Code (or `tools/selfheal.sh`) recovery — diagnose, safe-fix,
@@ -237,7 +241,7 @@ git clone https://github.com/daman8271/ecom-intel.git /opt/ecom-intel
 cd /opt/ecom-intel
 
 # 2. Per-platform deps — Node packages + the Chromium browser binary
-for p in blinkit  flipkart-minutes flipkart amazon zepto; do
+for p in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now; do
   ( cd "platforms/$p" && npm install && npx playwright install chromium )
 done
 # (also: sudo npx playwright install-deps  — system libs for headless Chromium)
@@ -248,6 +252,11 @@ TELEGRAM_BOT_TOKEN=...
 TELEGRAM_CHAT_ID=...
 EOF
 chmod 600 secrets.env
+
+# 3b. Amazon Fresh/Now need a logged-in session (NOT in git):
+#     export amazon.in cookies on a clean IP (Cookie-Editor) and import them —
+#     node platforms/amazon-now/import_cookies.js   (writes the shared storageState;
+#     amazon-fresh.storageState.json is a symlink to it). Valid ~1 year.
 
 # 4. Install cron (sets TZ to Asia/Kolkata, schedules runs + healthcheck)
 ./setup_cron.sh
@@ -276,14 +285,16 @@ and restore via the runbook above, never via the Hostinger catalog.
 ecom-intel/
 ├── README.md              # this file
 ├── CLAUDE.md              # operator quick-reference (auto-loads in Claude Code)
-├── REPORT.md              # platform-coverage map (6 LIVE; Amazon Now login-WIP)
-├── run.sh                 # ./run.sh <platform> — scrape → Excel → Telegram deliver
-├── healthcheck.sh         # daily self-heal: detect broken runs → Claude Code repair
-├── setup_cron.sh          # (re)install cron jobs (idempotent, 3x/day IST), set timezone
+├── REPORT.md              # platform-coverage map (7 LIVE; Amazon Now manual-only)
+├── run.sh                 # ./run.sh <p> — scrape → Excel → predict → review → vault → telegram → push
+├── run_all.sh             # one cron sweep: scrape all 7 live platforms IN PARALLEL → self-heal
+├── healthcheck.sh         # self-heal: detect broken runs → Claude Code safe repair
+├── setup_cron.sh          # (re)install cron (idempotent, 3x/day IST run_all.sh), set timezone
 ├── secrets.env            # Telegram creds (gitignored — recreate after wipe)
 ├── .gitignore             # node_modules/, output/, logs/, result.json, *.xlsx, secrets.env
 │
-├── tools/                 # cross-platform pipeline steps (orchestrator wires into run.sh)
+├── tools/                 # cross-platform pipeline steps (all wired into run.sh)
+│   ├── predict.py         # appends a "Predictions" sheet to the workbook from data/ history
 │   ├── review.py          # result.json → reviews/<run>.json verdict (deterministic + optional Haiku)
 │   ├── selfheal.sh        # review/stale/collapse → re-run + escalate to Telegram
 │   ├── vault_note.py      # per-run Obsidian note + append data/<p>/history.csv
@@ -302,8 +313,9 @@ ecom-intel/
 │   ├── zepto/                    # ✅ LIVE — quick-comm, BFF API gateway (no proxy)
 │   ├── flipkart-minutes/         # ✅ LIVE — quick-comm, HYPERLOCAL store, GPS location
 │   ├── flipkart/                 # ✅ LIVE — marketplace, national pricing
-│   ├── amazon/                   # ✅ LIVE — marketplace, interstitial bypass, 314 ASINs
-│   └── amazon-now/               # 🔧 LOGIN-WIP — login automation against AWS WAF AAMation; PLAN.md + login_v2.js (uncommitted)
+│   ├── amazon/                   # ✅ LIVE — marketplace, interstitial bypass, 314 ASINs (guest, no account location)
+│   ├── amazon-fresh/             # ✅ LIVE — logged-in (cookie transplant), i=freshstore raw POST+HTML; ~63 SKUs, ~13k rows; in cron
+│   └── amazon-now/               # ⏸ MANUAL — login solved; shares Fresh's account+location → never co-run; NOT in cron; PLAN.md
 │
 ├── output/                # generated Excel (gitignored)
 ├── logs/                  # per-run + cron + telegram + self-heal logs (gitignored)
@@ -317,8 +329,9 @@ ecom-intel/
 │   └── daily/ weekly/ monthly/   # time-rollup notes (run → daily → weekly → monthly)
 ├── data/<platform>/       # append-only history.csv — the future model's training table
 └── docs/
-    ├── ARCHITECTURE.md    # design deep-dive
-    └── PROXY.md           # residential-proxy setup (owned by another agent)
+    ├── ARCHITECTURE.md       # design deep-dive
+    ├── PROXY.md              # residential-proxy setup (owned by another agent)
+    └── DESKTOP-OBSIDIAN.md   # opening the vault/ knowledge graph in Obsidian desktop
 ```
 
 > Every platform folder is **self-contained** and follows the same shape, so adding

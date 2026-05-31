@@ -3,7 +3,7 @@
 Operator manual. Auto-loads when you run `claude` in this directory.
 
 ## What this is
-Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms, across the top-20 Indian cities (~40 pincodes), and produces a clean Excel report per platform. Built for thrice-daily cron runs (9am/12pm/4pm IST) with an automated end-of-run review + self-heal. Pitched to Jivo's head of e-commerce.
+Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for thrice-daily cron runs (9am/12pm/4pm IST) with an automated end-of-run review + self-heal. Pitched to Jivo's head of e-commerce.
 
 ## Architecture (the rule)
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
@@ -17,13 +17,15 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── setup_cron.sh          # installs the 3×/day staggered cron + self-heal
+├── run_all.sh             # one cron sweep: all 7 live platforms IN PARALLEL → self-heal
+├── setup_cron.sh          # installs the 3×/day cron (run_all.sh) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
-│   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/   # 6 LIVE
-│   ├── amazon-now/        # login-gated; PLAN.md + login_v2.js WIP (uncommitted)
+│   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/   # 6 LIVE, direct
+│   ├── amazon-fresh/      # 7th LIVE — logged-in (cookie transplant), i=freshstore, in cron
+│   ├── amazon-now/        # login solved but MANUAL-ONLY (shares Fresh's account+location)
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
-├── tools/                 # review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
+├── tools/                 # predict.py · review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
 ├── vault/                 # Obsidian memory: runs/ daily/ weekly/ monthly/ platforms/  (committed)
 ├── data/                  # <p>/history.csv — the future price-model training table (committed)
 ├── reviews/  baselines/   # per-run verdicts + rolling expected metrics (committed)
@@ -45,7 +47,7 @@ ls output/                  # the Excel
 4. If it returns 0 rows / captcha / 403 → that platform blocks the datacenter IP → needs a residential proxy.
 5. Commit + push.
 
-## Block-risk map (datacenter VPS IP) — all 6 LIVE platforms run DIRECT, no proxy
+## Block-risk map (datacenter VPS IP) — 7 LIVE, no proxy (6 direct + Amazon Fresh logged-in)
 | Platform | Status | Notes |
 |---|---|---|
 | blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes |
@@ -53,8 +55,9 @@ ls output/                  # the Excel
 | zepto | ✅ LIVE | reached via bff-gateway.zeptonow.com BFF API (CloudFront on website still 403s) |
 | flipkart-minutes | ✅ LIVE | HYPERLOCAL store; GPS "use my location"; scaled to 345 pincodes |
 | flipkart | ✅ LIVE | marketplace, national pricing, 1 row/SKU |
-| amazon | ✅ LIVE | interstitial bypass on /dp; targeted scrape of 314 ASINs |
-| amazon-now | 🔧 WIP | login automation against AWS WAF AAMation captcha — see platforms/amazon-now/PLAN.md (uncommitted) |
+| amazon | ✅ LIVE | guest interstitial bypass on /dp; targeted scrape of 314 ASINs; NO account location |
+| amazon-fresh | ✅ LIVE | logged-in (cookie transplant), i=freshstore raw POST+HTML; 332 pincodes, ~63 SKUs, ~13k rows; in cron |
+| amazon-now | ⏸ MANUAL | login solved, but shares Fresh's account+server-side location → never co-run; not in cron — see platforms/amazon-now/PLAN.md |
 
 ## Pipeline (run.sh, per platform)
 `scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → `tools/vault_note.py` (+ rollups)
@@ -62,14 +65,18 @@ ls output/                  # the Excel
 never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault, `data/`
 history, and review verdicts/baselines are what get committed each run.
 
-## Cron (IST) — installed by ./setup_cron.sh
+## Cron (IST) — installed and LIVE via ./setup_cron.sh
 One sweep per window at 09:00 / 12:00 / 16:00 via `./run_all.sh`, which scrapes the
-6 live platforms IN PARALLEL (blinkit, , flipkart-minutes, flipkart, amazon,
-zepto) then runs the self-heal pass at :30. Switched sequential→parallel 2026-05-22
-(VPS has headroom); each run.sh git-push critical section is flock-serialized
+**7 live platforms IN PARALLEL** (blinkit, , flipkart-minutes, flipkart,
+amazon, zepto, amazon-fresh) then runs the self-heal pass at the end of the window.
+`run_all.sh` holds the authoritative platform list. Switched sequential→parallel
+2026-05-22 (VPS has headroom); each run.sh git-push critical section is flock-serialized
 (.gitpush.lock) so concurrent commits don't collide. setup_cron.sh is re-runnable
-and touches only "# ecom-intel"-tagged lines. amazon-now is NOT in cron — gated
-behind login (see platforms/amazon-now/PLAN.md for the in-progress login work).
+and touches only "# ecom-intel"-tagged lines. **amazon-now is NOT in cron — manual-only:**
+its login is solved (same cookie-transplant session as amazon-fresh) but it shares
+amazon-fresh's single Amazon account + server-side delivery location, so the two must
+NEVER run concurrently. The guest `amazon` scraper sets no account location, so it's
+safe alongside amazon-fresh. See platforms/amazon-now/PLAN.md.
 
 Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE (under
 logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;
@@ -97,14 +104,16 @@ Notes link into an Obsidian graph via body [[wikilinks]]; generators are determi
 stdlib-only, idempotent per RUN_ID. Design + conventions: vault/VAULT-SPEC.md.
 
 ## Proxy (residential Indian IPs) — see docs/PROXY.md
-**NOT bought and NOT currently needed** — all 6 live platforms run direct from the
-datacenter IP. Zepto was unlocked 2026-05-29 via its bff-gateway.zeptonow.com BFF API
-(the CloudFront-fronted website still 403s the DC IP, but the gateway is reachable
-direct).  was unlocked 2026-05-22 via stealth POST to its public search API.
-tools/proxy.js + setup remain wired in case Amazon escalates to a captcha. Free
-public proxies are OFF-LIMITS (MITM risk). Provider plan if ever needed: IPRoyal
-residential, pay-as-you-go (~$10–25/mo at ~8 GB/month). The only remaining gated
-platform is amazon-now, and that's login-gated, not IP-gated.
+**NOT bought and NOT currently needed** — all 7 live platforms run with no proxy from
+the datacenter IP. Six run direct/no-login; amazon-fresh runs on a transplanted
+logged-in cookie session (still no proxy). Zepto was unlocked 2026-05-29 via its
+bff-gateway.zeptonow.com BFF API (the CloudFront-fronted website still 403s the DC IP,
+but the gateway is reachable direct).  was unlocked 2026-05-22 via stealth POST
+to its public search API. tools/proxy.js + setup remain wired in case Amazon escalates
+to a captcha. Free public proxies are OFF-LIMITS (MITM risk). Provider plan if ever
+needed: IPRoyal residential, pay-as-you-go (~$10–25/mo at ~8 GB/month). No platform is
+IP-gated today; amazon-now is the only one held back, and that's a manual-only/account
+constraint (shares amazon-fresh's account), not an IP block.
 
 ## Hard lessons
 - This repo IS the backup. After any VPS wipe: `git clone` + `npm install` per platform + `npx playwright install chromium`. Never lose the code again.
