@@ -525,7 +525,10 @@ def llm_judge(digest):
     """
     prompt = (
         "You are a data-quality auditor for a retail price scraper that tracks "
-        "the brand Jivo (edible oils) across Indian e-commerce. Given this COMPACT "
+        "the brand Jivo across Indian e-commerce. Jivo is a MULTI-CATEGORY brand: "
+        "edible oils, olive oils, juices, vinegar, honey and other health-food & "
+        "beverage lines (incl. wheatgrass juices and fizzy/tonic water) — these "
+        "are all legitimate Jivo products, NOT contamination. Given this COMPACT "
         "digest of one scrape run, judge: does this look like REAL, sensible retail "
         "data (plausible product names, prices in INR, MRP>=sale, sane discounts), "
         "or does it look broken/empty/garbled/blocked?\n"

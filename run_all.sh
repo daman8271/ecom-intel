@@ -12,7 +12,7 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
 echo "[$(date '+%F %T')] run_all: START (parallel)"
 pids=()
-for P in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh; do
+for P in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh bigbasket; do
   echo "[$(date '+%F %T')] run_all: launching $P"
   ./run.sh "$P" >> "logs/run-${P}.out" 2>&1 &
   pids+=("$!")

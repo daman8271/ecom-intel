@@ -47,9 +47,15 @@ const MAX_PAGES = parseInt(process.env.BB_MAX_PAGES || '5', 10);
 // Multiple queries, deduped, to maximise Jivo recall across categories (oils,
 // juices, vinegar, ...). "jivo" alone returns the whole brand catalogue today;
 // the extra terms are cheap insurance if search ranking ever truncates it.
+// The broad "jivo" brand search returns the whole Jivo catalogue (capped ~35
+// results/page); the category terms backfill any SKU the cap ranks out, across
+// the categories Jivo actually sells. Non-matching terms hit BB's generic
+// category fallback (e.g. "jivo honey" -> 1500-item honey list with 0 Jivo) —
+// the strict brand filter rejects those and fetchQuery's zero-Jivo-page guard
+// stops them paginating, so each costs just one request.
 const QUERIES = (process.env.BB_QUERIES
   ? process.env.BB_QUERIES.split(',')
-  : ['jivo', 'jivo olive oil', 'jivo oil', 'jivo juice']
+  : ['jivo', 'jivo oil', 'jivo olive oil', 'jivo juice', 'jivo vinegar', 'jivo honey']
 ).map((s) => s.trim()).filter(Boolean);
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
@@ -138,9 +144,12 @@ async function fetchQuery(page, query) {
   const all = [];
   for (let pg = 1; pg <= MAX_PAGES; pg++) {
     const res = await page.evaluate(async ({ slug, pg, bucket }) => {
+      const ctrl = new AbortController();
+      const tid = setTimeout(() => ctrl.abort(), 20000); // never let a single fetch hang the run
       try {
         const url = `/listing-svc/v2/products?type=ps&slug=${slug}&page=${pg}&bucket_id=${bucket}`;
         const r = await fetch(url, {
+          signal: ctrl.signal,
           headers: {
             accept: 'application/json, text/plain, */*',
             'x-requested-with': 'XMLHttpRequest',
@@ -149,7 +158,7 @@ async function fetchQuery(page, query) {
         });
         if (r.status !== 200) return { __err: 'HTTP ' + r.status };
         return await r.json();
-      } catch (e) { return { __err: e.message }; }
+      } catch (e) { return { __err: e.message }; } finally { clearTimeout(tid); }
     }, { slug, pg, bucket: BUCKET_ID });
 
     if (res && res.__err) { process.stderr.write(`[warn] q="${query}" p${pg}: ${res.__err}\n`); break; }
@@ -158,6 +167,7 @@ async function fetchQuery(page, query) {
     const pi = (res.tabs && res.tabs[0] && res.tabs[0].product_info) || {};
     const np = pi.number_of_pages || 1;
     process.stderr.write(`[ok] q="${query}" p${pg}/${np} -> +${rows.length} jivo (total_count=${pi.total_count != null ? pi.total_count : '?'})\n`);
+    if (rows.length === 0) break; // generic-category fallback or natural end — don't keep paginating a non-Jivo result set
     if (pg >= np) break;
     await page.waitForTimeout(300 + Math.random() * 400);
   }
@@ -192,40 +202,10 @@ async function openSession(browser) {
   return { ctx, page, ok };
 }
 
-(async () => {
-  const t0 = Date.now();
-  const browser = await chromium.launch({
-    headless: true,
-    executablePath: require('playwright').chromium.executablePath(),
-    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled'],
-  });
-
-  let rows = [];
-  let sessionOk = false;
-  try {
-    const { ctx, page, ok } = await openSession(browser);
-    sessionOk = ok;
-    if (ok) {
-      const seen = new Set();
-      for (const q of QUERIES) {
-        let qr = [];
-        try { qr = await fetchQuery(page, q); } catch (e) { process.stderr.write(`[err] q="${q}": ${e.message}\n`); }
-        for (const r of qr) {
-          if (seen.has(r.canonical)) continue; // national: dedup on canonical (store_id empty)
-          seen.add(r.canonical); rows.push(r);
-        }
-        await page.waitForTimeout(500 + Math.random() * 600);
-      }
-    } else {
-      process.stderr.write('[err] could not load BigBasket homepage (Akamai block?) — emitting empty result\n');
-    }
-    try { await ctx.close(); } catch (_) {}
-  } catch (e) {
-    process.stderr.write(`[err] fatal: ${e.message}\n`);
-  } finally {
-    try { await browser.close(); } catch (_) {}
-  }
-
+// Write result.json + summary EXACTLY once. Called on the happy path, on the
+// watchdog timeout, and on any unhandled rejection — so run.sh always gets a
+// valid result.json (review.py then decides OK/BROKEN). Never throws upward.
+function writeResult(rows, sessionOk, t0) {
   const inStock = rows.filter((r) => r.in_stock).length;
   const summary = {
     pincodes_total: 1,
@@ -243,4 +223,65 @@ async function openSession(browser) {
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
   fs.writeFileSync(OUTFILE, JSON.stringify({ summary, perPin, allRows: rows }, null, 2));
   console.log(JSON.stringify(summary));
-})();
+}
+
+const T0 = Date.now();
+let DONE = false;
+// Hard watchdog: if the whole scrape ever hangs (unresponsive site, stuck
+// browser), emit an empty result and exit 0 so review.py marks it BROKEN and
+// self-heal retries — instead of blocking the parallel cron sweep forever.
+const WATCHDOG_MS = parseInt(process.env.BB_WATCHDOG_MS || '240000', 10);
+const watchdog = setTimeout(() => {
+  if (DONE) return;
+  DONE = true;
+  process.stderr.write(`[FATAL] watchdog: scrape exceeded ${WATCHDOG_MS}ms — emitting empty result\n`);
+  try { writeResult([], false, T0); } catch (_) {}
+  process.exit(0);
+}, WATCHDOG_MS);
+
+(async () => {
+  const browser = await chromium.launch({
+    headless: true,
+    timeout: 60000,
+    executablePath: require('playwright').chromium.executablePath(),
+    args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-blink-features=AutomationControlled'],
+  });
+
+  let rows = [];
+  let sessionOk = false;
+  try {
+    const { ctx, page, ok } = await openSession(browser);
+    sessionOk = ok;
+    if (ok) {
+      const seen = new Set();
+      for (const q of QUERIES) {
+        let qr = [];
+        try { qr = await fetchQuery(page, q); } catch (e) { process.stderr.write(`[err] q="${q}": ${e.message}\n`); }
+        for (const r of qr) {
+          // dedup on BB's unique product id (canonical = name+pack can collide
+          // across two genuinely distinct SKUs; sku_id never does). Fall back to
+          // canonical only if an id is somehow missing.
+          const key = r.sku_id || r.canonical;
+          if (seen.has(key)) continue;
+          seen.add(key); rows.push(r);
+        }
+        await page.waitForTimeout(500 + Math.random() * 600);
+      }
+    } else {
+      process.stderr.write('[err] could not load BigBasket homepage (Akamai block?) — emitting empty result\n');
+    }
+    try { await ctx.close(); } catch (_) {}
+  } catch (e) {
+    process.stderr.write(`[err] fatal: ${e.message}\n`);
+  } finally {
+    try { await browser.close(); } catch (_) {}
+  }
+
+  if (!DONE) { DONE = true; clearTimeout(watchdog); writeResult(rows, sessionOk, T0); }
+})().catch((e) => {
+  // Last-resort guard: any unhandled rejection (incl. failures in the result
+  // write/IO path) must NOT exit non-zero, or run.sh's `set -e` aborts the run.
+  process.stderr.write(`[FATAL] unhandled: ${e && e.message}\n`);
+  if (!DONE) { DONE = true; try { clearTimeout(watchdog); writeResult([], false, T0); } catch (_) {} }
+  process.exit(0);
+});

@@ -28,7 +28,7 @@ timedatectl set-timezone Asia/Kolkata 2>/dev/null || true
 # server-side, so the two must NEVER run concurrently). The plain `amazon` scraper is
 # guest /dp and does NOT set account location, so it's safe alongside amazon-fresh.
 # (run_all.sh holds the authoritative list; this is a doc mirror.)
-PLATFORMS="blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh"
+PLATFORMS="blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh bigbasket"
 
 # Per-platform minute offset within each window (stagger to avoid concurrent Chromium).
 declare -A OFFSET=( [blinkit]=0 [flipkart-minutes]=4 [flipkart]=8 [amazon]=12 )
