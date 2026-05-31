@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 60
+observations: 89
 min_price: 167
 max_price: 225
 latest_price: 167
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Gurgaon]] · [[Jaipur]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (60 observations)
+## Price history (89 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -94,6 +94,35 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302026,167,225,25.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302032,167,225,25.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Jaipur,302033,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110003,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110013,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110014,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110016,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110017,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110024,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110025,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110037,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110044,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110048,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110061,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110062,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110065,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110067,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110070,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Gurgaon,122001,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Gurgaon,122010,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302001,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302013,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302015,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302016,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302018,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302020,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302021,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302023,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302024,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302026,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302032,167,225,25.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,302033,167,225,25.8,1
 ```
 
 ---

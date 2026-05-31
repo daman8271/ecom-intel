@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 30
+observations: 45
 min_price: 209
 max_price: 209
 latest_price: 209
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (30 observations)
+## Price history (45 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -64,6 +64,21 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,411047,209,,,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,411051,209,,,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412308,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mumbai,400601,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411001,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411004,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411005,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411006,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411011,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411014,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411015,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411028,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411030,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411036,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411040,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411047,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411051,209,,,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412308,209,,,1
 ```
 
 ---

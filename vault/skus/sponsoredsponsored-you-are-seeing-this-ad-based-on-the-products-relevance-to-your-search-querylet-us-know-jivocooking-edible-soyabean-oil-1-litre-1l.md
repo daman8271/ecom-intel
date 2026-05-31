@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 1
+observations: 15
 min_price: 199
 max_price: 199
 latest_price: 199
@@ -25,16 +25,30 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹199 (11.6% off)
 
 ## Available in cities
-[[Delhi]]
+[[Bengaluru]] · [[Bhopal]] · [[Delhi]] · [[Jaipur]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-05-31-1200]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]]
 
-## Price history (1 observations)
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Delhi,110065,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bengaluru,560052,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bhopal,462001,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110037,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110040,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110065,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303602,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303901,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141001,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141206,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141421,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mumbai,400007,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,570001,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,199,225,11.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,199,225,11.6,1
 ```
 
 ---

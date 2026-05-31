@@ -7,10 +7,10 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-21
 last_seen: 2026-05-31
-observations: 82
+observations: 93
 min_price: 460
 max_price: 750
-latest_price: 639
+latest_price: 750
 tags:
   - type/sku-hub
   - platform/amazon
@@ -25,15 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹460 (38.7% off)
-- [[amazon-fresh]] — latest ₹639 (14.8% off)
+- [[amazon-fresh]] — latest ₹750
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Surat]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (82 observations)
+## Price history (93 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -119,6 +119,17 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Surat,394410,639,750,14.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Surat,394510,639,750,14.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Surat,394540,639,750,14.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110003,750,750,0,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110013,750,750,0,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110014,750,750,0,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110016,639,750,14.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110017,639,750,14.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110024,750,750,0,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110025,750,750,0,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110044,750,750,0,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110048,750,750,0,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110062,639,750,14.8,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110065,750,750,0,1
 ```
 
 ---

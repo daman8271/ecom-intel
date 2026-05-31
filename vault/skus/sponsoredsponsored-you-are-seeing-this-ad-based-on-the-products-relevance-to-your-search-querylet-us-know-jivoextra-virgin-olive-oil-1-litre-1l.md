@@ -6,10 +6,10 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 37
+observations: 53
 min_price: 749
 max_price: 799
-latest_price: 749
+latest_price: 764
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOExtra Virgin Olive Oil 1 litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹749 (25.0% off)
+- [[amazon-fresh]] — latest ₹764 (23.5% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (37 observations)
+## Price history (53 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -71,6 +71,22 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412201,749,999,25,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412211,749,999,25,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,413132,749,999,25,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bengaluru,560052,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bhopal,462001,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110035,799,1799,55.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110037,764,1799,57.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110040,799,1799,55.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110065,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303602,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303901,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141001,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141206,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141421,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mumbai,400007,799,1799,55.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,570001,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,764,999,23.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411030,764,1799,57.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,764,999,23.5,1
 ```
 
 ---

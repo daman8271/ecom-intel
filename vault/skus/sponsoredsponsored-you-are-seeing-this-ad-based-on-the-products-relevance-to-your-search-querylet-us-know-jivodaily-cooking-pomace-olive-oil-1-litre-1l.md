@@ -6,10 +6,10 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 37
+observations: 51
 min_price: 379
-max_price: 405
-latest_price: 379
+max_price: 429
+latest_price: 429
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVODaily Cooking Pomace Olive Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹379 (41.6% off)
+- [[amazon-fresh]] — latest ₹429 (33.9% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (37 observations)
+## Price history (51 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -71,6 +71,20 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412201,379,649,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412211,379,649,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,413132,379,649,41.6,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bengaluru,560052,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bhopal,462001,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110035,405,1049,61.4,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110037,405,1049,61.4,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110040,405,1049,61.4,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110065,405,1049,61.4,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303602,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303901,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141001,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141206,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,570001,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,429,649,33.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411030,405,1049,61.4,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,429,649,33.9,1
 ```
 
 ---

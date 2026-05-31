@@ -1,13 +1,13 @@
 ---
 type: moc
 title: SKUs
-sku_count: 841
+sku_count: 842
 tags:
   - moc
   - type/sku-moc
 ---
 
-# SKUs — Map of Content (841 unique)
+# SKUs — Map of Content (842 unique)
 
 Up: [[index]]
 
@@ -447,7 +447,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l]] — Sano Sunflower Oil 1 Litre Pet Bottle - Pure, Nutrient-Rich sunflower Cooking Oil with High Smoke Point - Ideal for Frying, Sautéing, and Baking(Pack of 1) (1 LTR)
 - [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l]] — sano Sunflower Oil 5 Ltr Pet Bottle Pure, Nutrient Rich Cooking Oil with High Smoke Point Ideal for Frying, Sautéing, and Baking All type of Cuisines|
 
-## [[amazon-fresh]] (64)
+## [[amazon-fresh]] (65)
 - [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil (1 l)
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines
 - [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] — Jivo Canola Cold Pressed Edible Oil 1+1 Litres
@@ -504,7 +504,8 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l]] — Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil for Daily Use
 - [[jivo-sunflower-oil-4-litres-4l]] — Jivo Sunflower Oil - 4 Litres
 - [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOCanola Cold Pressed Edible Oil 1 Litre Cooking O
-- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-5-litres-5l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOCanola Cold Pressed Edible Oil - 5 Litres
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-11-litres-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOCanola Cold Pressed Edible Oil 1+1 Litres
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-5-litres-5l]]
 - [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocooking-edible-soyabean-oil-1-litre-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOCooking Edible Soyabean Oil 1 Litre
 - [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivodaily-cooking-pomace-olive-oil-1-litre-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVODaily Cooking Pomace Olive Oil 1 Litre
 - [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-light-olive-oil-2-litre-2l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOExtra Light Olive Oil 2 Litre
@@ -514,14 +515,14 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoso-olive-oil-1-litre-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOSo Olive Oil 1 Litre
 
 ## [[blinkit]] (9)
-- [[jivo-cold-pressed-canola-oil-1l]] — Jivo Cold Pressed Canola Oil (Canola Enne) (1 l)
+- [[jivo-cold-pressed-canola-oil-1l]] — Jivo Cold Pressed Canola Oil (1 l)
 - [[jivo-cold-pressed-canola-oil-5l]] — Jivo Cold Pressed Canola Oil ( (5 l)
 - [[jivo-cold-pressed-sunflower-oil-1l]] — Jivo Cold Pressed Sunflower Oil (1 l)
-- [[jivo-extra-light-olive-oil-1l]] — Jivo Extra Light Olive Oil (Olive Enne) (1 l)
-- [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil (Olive Enne) (2 l)
+- [[jivo-extra-light-olive-oil-1l]] — Jivo Extra Light Olive Oil (1 l)
+- [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil (2 l)
 - [[jivo-kachi-ghani-cold-pressed-mustard-oil-1l]] — Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (1 l)
 - [[jivo-kachi-ghani-cold-pressed-mustard-oil-5l]]
-- [[jivo-pomace-olive-oil-1l]] — Jivo Pomace Olive Oil (Pomace Olive Enne) (1 l)
+- [[jivo-pomace-olive-oil-1l]] — Jivo Pomace Olive Oil (1 l)
 - [[jivo-pomace-olive-oil-5l]] — Jivo Pomace Olive Oil (5 l)
 
 ## [[flipkart]] (329)
@@ -882,7 +883,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-oil-groundnut-oil-5l]] — Jivo Cold Pressed oil Groundnut Oil (5 ltr)
 - [[jivo-daily-cooking-pomace-olive-oil-1l]] — Jivo Daily Cooking Pomace Olive Oil (1 ltr)
 - [[jivo-desi-ghee-1kg-1l]] — Jivo Desi Ghee 1KG (1 kg)
-- [[jivo-extra-light-daily-cooking-olive-oil-1l]] — Jivo Extra Light Daily Cooking Olive Oil (1 ltr)
+- [[jivo-extra-light-daily-cooking-olive-oil-1l]] — Jivo Extra Light Daily Cooking Olive Oil (1 ltr x 2)
 - [[jivo-extra-light-daily-cooking-olive-oil-na]] — Jivo Extra Light Daily Cooking Olive Oil (1 Combo)
 - [[jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l]] — Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking (5 ltr)
 - [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil (2 ltr)

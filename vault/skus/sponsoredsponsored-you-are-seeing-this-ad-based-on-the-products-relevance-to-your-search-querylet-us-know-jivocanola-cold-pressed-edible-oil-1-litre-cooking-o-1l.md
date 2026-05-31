@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-05-31
 last_seen: 2026-05-31
-observations: 26
+observations: 41
 min_price: 248
 max_price: 260
 latest_price: 259
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹259 (30.9% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (26 observations)
+## Price history (41 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -60,6 +60,21 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412201,259,375,30.9,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,412211,259,375,30.9,1
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,413132,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bengaluru,560052,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Bhopal,462001,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110035,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110037,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110040,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110065,260,375,30.7,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303602,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Jaipur,303901,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141206,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Ludhiana,141421,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mumbai,400007,257,375,31.5,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,570001,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411030,259,375,30.9,1
+2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,259,375,30.9,1
 ```
 
 ---
