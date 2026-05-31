@@ -5,8 +5,8 @@ display_name: Jivo Extra Light Olive Oil Combo (2 L X 2)
 platforms:
   - zepto
 first_seen: 2026-05-30
-last_seen: 2026-05-30
-observations: 84
+last_seen: 2026-05-31
+observations: 103
 min_price: 3008
 max_price: 3010
 latest_price: 3008
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (4)
-[[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]] · [[zepto-2026-05-30-0017]]
+## Runs that observed this SKU (5)
+[[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]] · [[zepto-2026-05-30-0017]]
 
-## Price history (84 observations)
+## Price history (103 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -118,6 +118,25 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-1600,2026-05-30,zepto,Mumbai,400601,3010,5598,46.2,1
 2026-05-30-1600,2026-05-30,zepto,Mumbai,400611,3010,5598,46.2,1
 2026-05-30-1600,2026-05-30,zepto,Noida,201310,3008,5598,46.3,1
+2026-05-31-0900,2026-05-31,zepto,Delhi,110014,3008,5598,46.3,1
+2026-05-31-0900,2026-05-31,zepto,Delhi,110040,3008,5598,46.3,1
+2026-05-31-0900,2026-05-31,zepto,Delhi,110062,3008,5598,46.3,1
+2026-05-31-0900,2026-05-31,zepto,Delhi,110084,3008,5598,46.3,1
+2026-05-31-0900,2026-05-31,zepto,Gurgaon,122051,3008,5598,46.3,1
+2026-05-31-0900,2026-05-31,zepto,Gurgaon,122101,3008,5598,46.3,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400005,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400006,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400007,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400010,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400012,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400013,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400015,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400023,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400030,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400033,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400601,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Mumbai,400611,3010,5598,46.2,1
+2026-05-31-0900,2026-05-31,zepto,Noida,201310,3008,5598,46.3,1
 ```
 
 ---

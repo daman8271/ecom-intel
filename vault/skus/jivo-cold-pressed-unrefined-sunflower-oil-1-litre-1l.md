@@ -1,34 +1,60 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l
+display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
-min_price: 368
+last_seen: 2026-05-31
+observations: 18
+min_price: 177
 max_price: 368
-latest_price: 368
+latest_price: 177
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l
 
 Up: [[skus-index]]
 
+**Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
+
 ## Sold on
 - [[amazon]] — latest ₹368 (34.3% off)
+- [[amazon-fresh]] — latest ₹177 (35.6% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Pune]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+
+## Price history (18 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,368,560,34.3,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110015,177,275,35.6,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110026,177,275,35.6,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110040,177,275,35.6,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110046,177,275,35.6,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201001,177,275,35.6,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201002,177,275,35.6,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,122006,177,275,35.6,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303003,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303006,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303010,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303102,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303107,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303110,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303331,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303339,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Jaipur,303602,,,,0
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,412213,,,,0
 ```
 
 ---

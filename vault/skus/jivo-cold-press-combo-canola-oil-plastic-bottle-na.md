@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-combo-canola-oil-plastic-bottle-na
-display_name: JIVO Cold Press Combo Canola Oil Plastic Bottle
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-29
@@ -18,8 +17,6 @@ tags:
 # jivo-cold-press-combo-canola-oil-plastic-bottle-na
 
 Up: [[skus-index]]
-
-**JIVO Cold Press Combo Canola Oil Plastic Bottle**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹575

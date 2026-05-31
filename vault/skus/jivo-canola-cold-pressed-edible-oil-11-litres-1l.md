@@ -1,34 +1,89 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-edible-oil-11-litres-1l
+display_name: Jivo Canola Cold Pressed Edible Oil 1+1 Litres
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-05-31
+observations: 47
 min_price: 460
-max_price: 460
-latest_price: 460
+max_price: 750
+latest_price: 639
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-canola-cold-pressed-edible-oil-11-litres-1l
 
 Up: [[skus-index]]
 
+**Jivo Canola Cold Pressed Edible Oil 1+1 Litres**
+
 ## Sold on
 - [[amazon]] — latest ₹460 (38.7% off)
+- [[amazon-fresh]] — latest ₹639 (14.8% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Mumbai]] · [[Noida]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+
+## Price history (47 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,460,750,38.7,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110003,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110008,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110010,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110013,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110014,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110015,509,750,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110016,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110017,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110024,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110025,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110036,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110039,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110040,509,750,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110041,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110042,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110044,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110048,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110062,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110065,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110076,750,750,0,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110081,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110082,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Faridabad,121004,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Faridabad,121011,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Faridabad,121101,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201001,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201002,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201003,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201201,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201204,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Ghaziabad,201302,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,121104,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,122006,509,750,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,122051,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,122101,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,122105,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,122106,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,123003,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,123413,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,123502,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Gurgaon,123505,639,750,14.8,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400023,509,750,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400073,509,750,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400702,509,750,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400707,509,750,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Noida,201008,639,750,14.8,1
 ```
 
 ---

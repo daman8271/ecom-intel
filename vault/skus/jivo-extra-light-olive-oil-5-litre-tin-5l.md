@@ -1,34 +1,75 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-5-litre-tin-5l
+display_name: Jivo Extra Light Olive Oil 5 Litre TIN
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
-min_price: 2719
-max_price: 2719
-latest_price: 2719
+last_seen: 2026-05-31
+observations: 33
+min_price: 2599
+max_price: 2771
+latest_price: 2599
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-extra-light-olive-oil-5-litre-tin-5l
 
 Up: [[skus-index]]
 
+**Jivo Extra Light Olive Oil 5 Litre TIN**
+
 ## Sold on
 - [[amazon]] — latest ₹2719 (58.2% off)
+- [[amazon-fresh]] — latest ₹2599 (60.0% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Bengaluru]] · [[Delhi]] · [[Mumbai]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+
+## Price history (33 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,2719,6499,58.2,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Bengaluru,560069,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Bengaluru,560087,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110009,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110018,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110026,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110033,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110046,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110075,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110083,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110085,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Delhi,110088,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400001,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400003,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400004,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400005,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400006,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400007,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400011,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400013,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400015,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400017,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400018,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400019,2771,6499,57.4,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400020,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400021,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400023,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400025,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400026,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400030,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400033,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400041,2599,6499,60,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400073,2599,6499,60,1
 ```
 
 ---

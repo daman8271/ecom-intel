@@ -5,8 +5,8 @@ display_name: Punjabi_Masala_Jeera_160ml_Pack_Of_24 (160 MLS)
 platforms:
   - flipkart
 first_seen: 2026-05-22
-last_seen: 2026-05-30
-observations: 26
+last_seen: 2026-05-31
+observations: 27
 min_price: 140
 max_price: 460
 latest_price: 460
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Punjabi_Masala_Jeera_160ml_Pack_Of_24 (160 MLS)**
 
 ## Sold on
-- [[flipkart]] — latest ₹460 (46.0% off)
+- [[flipkart]] — latest ₹460 (54.0% off)
 
-## Runs that observed this SKU (26)
-[[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
+## Runs that observed this SKU (27)
+[[flipkart-2026-05-31-0900]] · [[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
 
-## Price history (26 observations)
+## Price history (27 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -57,6 +57,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-1600,2026-05-29,flipkart,All India,-,460,999,54,0
 2026-05-30-0900,2026-05-30,flipkart,All India,-,460,821,44,0
 2026-05-30-1200,2026-05-30,flipkart,All India,-,460,852,46,0
+2026-05-31-0900,2026-05-31,flipkart,All India,-,460,999,54,0
 ```
 
 ---

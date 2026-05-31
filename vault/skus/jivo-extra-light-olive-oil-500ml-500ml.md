@@ -1,34 +1,56 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-500ml-500ml
+display_name: Jivo Extra Light Olive Oil 500ml (500 ml)
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-05-31
+observations: 14
 min_price: 678
-max_price: 678
-latest_price: 678
+max_price: 1017
+latest_price: 1017
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-extra-light-olive-oil-500ml-500ml
 
 Up: [[skus-index]]
 
+**Jivo Extra Light Olive Oil 500ml (500 ml)**
+
 ## Sold on
 - [[amazon]] — latest ₹678 (32.1% off)
+- [[amazon-fresh]] — latest ₹1017 (32.1% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Bengaluru]] · [[Indore]] · [[Mumbai]] · [[Pune]] · [[Surat]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+
+## Price history (14 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,678,998,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Bengaluru,560073,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Indore,452001,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400090,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400701,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Mumbai,400703,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,411003,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,411012,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,411020,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,411035,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,412101,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,412114,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Pune,412213,1017,1497,32.1,1
+2026-05-31-0900,2026-05-31,amazon-fresh,Surat,394315,1017,1497,32.1,1
 ```
 
 ---

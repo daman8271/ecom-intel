@@ -1,13 +1,13 @@
 ---
 type: moc
 title: SKUs
-sku_count: 816
+sku_count: 838
 tags:
   - moc
   - type/sku-moc
 ---
 
-# SKUs — Map of Content (816 unique)
+# SKUs — Map of Content (838 unique)
 
 Up: [[index]]
 
@@ -447,15 +447,78 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l]] — Sano Sunflower Oil 1 Litre Pet Bottle - Pure, Nutrient-Rich sunflower Cooking Oil with High Smoke Point - Ideal for Frying, Sautéing, and Baking(Pack of 1) (1 LTR)
 - [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l]] — sano Sunflower Oil 5 Ltr Pet Bottle Pure, Nutrient Rich Cooking Oil with High Smoke Point Ideal for Frying, Sautéing, and Baking All type of Cuisines|
 
+## [[amazon-fresh]] (61)
+- [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil (1 l)
+- [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines
+- [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] — Jivo Canola Cold Pressed Edible Oil 1+1 Litres
+- [[jivo-canola-cold-pressed-edible-oil-5-litres-5l]] — Jivo Canola Cold Pressed Edible Oil - 5 Litres
+- [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l]] — Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use
+- [[jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l]] — Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch
+- [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] — Jivo Cold Pressed Kachi Ghani Mustard Oil 1L with Makki Atta 500g (1 l)
+- [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
+- [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres
+- [[jivo-cooking-edible-soyabean-oil-1-litre-1l]] — Jivo Cooking Edible Soyabean Oil 1 Litre
+- [[jivo-cooking-edible-soyabean-oil-5-litre-5l]] — Jivo Cooking Edible Soyabean Oil 5 Litre
+- [[jivo-cooking-oil-canola-oil-1l-bottle-1l]] — Jivo Cooking Oil - Canola Oil, 1L Bottle (1 l)
+- [[jivo-daily-cooking-pomace-olive-oil-1-litre-1l]] — Jivo Daily Cooking Pomace Olive Oil 1 Litre
+- [[jivo-daily-cooking-pomace-olive-oil-1l]] — Jivo Daily Cooking Pomace Olive Oil (1 l)
+- [[jivo-desi-ghee-500-ml-500ml]] — Jivo Desi Ghee 500 ML
+- [[jivo-everyday-cooking-pomace-olive-oil-2-litre-2l]] — Jivo Everyday Cooking Pomace Olive Oil 2 Litre
+- [[jivo-everyday-cooking-pomace-olive-oil-3-litre-3l]] — Jivo Everyday Cooking Pomace Olive Oil 3 Litre
+- [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-1-ltr-5l]] — Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 1 LTR (Pet Bottle)
+- [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-5l]] — Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle)
+- [[jivo-extra-light-olive-oil-1-litre-1l]] — Jivo Extra Light Olive Oil 1 Litre
+- [[jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l]] — Jivo Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades. (Pack of 2) (1 l)
+- [[jivo-extra-light-olive-oil-2-litre-2l]] — Jivo Extra Light Olive Oil 2 Litre
+- [[jivo-extra-light-olive-oil-3-litre-3l]] — Jivo Extra Light Olive Oil - 3 Litre
+- [[jivo-extra-light-olive-oil-5-litre-tin-5l]] — Jivo Extra Light Olive Oil 5 Litre TIN
+- [[jivo-extra-light-olive-oil-500ml-500ml]] — Jivo Extra Light Olive Oil 500ml (500 ml)
+- [[jivo-extra-virgin-coconut-oil-500ml]] — Jivo Extra Virgin Coconut Oil (500 ml)
+- [[jivo-extra-virgin-olive-oil-1-litre-1l]] — Jivo Extra Virgin Olive Oil 1 litre
+- [[jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml]] — Jivo Extra Virgin Olive Oil 200 ML Pet Bottle
+- [[jivo-extra-virgin-olive-oil-200ml-200ml]] — Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) (200 ml)
+- [[jivo-extra-virgin-olive-oil-250-ml-250ml]] — Jivo Extra Virgin Olive Oil 250 ML (Pack of 2)
+- [[jivo-extra-virgin-olive-oil-5-litre-with-1litre-100-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-5l]] — Jivo Extra Virgin Olive Oil 5 litre with 1Litre (Pack of 6L), 100% natural and cold pressed cooking oil, for Dressings, Salad and Soups, Dips & Marinades.
+- [[jivo-first-pressed-sesame-oil-1l]] — Jivo First Pressed Sesame Oil (1 l)
+- [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
+- [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
+- [[jivo-groundnut-oil-1-litre-1l]] — Jivo Groundnut Oil 1 Litre
+- [[jivo-groundnut-oil-5-litre-5l]] — Jivo Groundnut Oil 5 Litre
+- [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] — Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre
+- [[jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml]] — Jivo Koffie Instant Smooth Premium Coffee 100 gm
+- [[jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre with Extra light olive oil 5 Litre
+- [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] — Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking
+- [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre
+- [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] — Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter
+- [[jivo-premium-quinoa-gluten-free-na]] — Jivo Premium Quinoa Gluten Free
+- [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] — Jivo Pure Extra Virgin Coconut Oil 1 Litre
+- [[jivo-pure-extra-virgin-coconut-oil-500-ml-500ml]] — Jivo Pure Extra Virgin Coconut Oil 500 ml
+- [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] — Jivo Rice Bran Oil 1 Litre Cooking Oil
+- [[jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack
+- [[jivo-rice-bran-oil-5-litre-5l]] — Jivo Rice Bran Oil 5 Litre
+- [[jivo-so-olive-oil-1-litre-1l]] — Jivo So Olive Oil 1 Litre
+- [[jivo-so-olive-oil-5-litre-5l]] — Jivo So Olive Oil 5 litre
+- [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l]] — Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil for Daily Use
+- [[jivo-sunflower-oil-4-litres-4l]] — Jivo Sunflower Oil - 4 Litres
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOCanola Cold Pressed Edible Oil 1 Litre Cooking O
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivodaily-cooking-pomace-olive-oil-1-litre-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVODaily Cooking Pomace Olive Oil 1 Litre
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-light-olive-oil-2-litre-2l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOExtra Light Olive Oil 2 Litre
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-virgin-olive-oil-1-litre-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOExtra Virgin Olive Oil 1 litre
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivogroundnut-oil-1-litre-1l]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOGroundnut Oil 1 Litre
+- [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivopure-extra-virgin-coconut-oil-500-ml-500ml]] — SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOPure Extra Virgin Coconut Oil 500 ml
+
 ## [[blinkit]] (9)
-- [[jivo-cold-pressed-canola-oil-1l]] — Jivo Cold Pressed Canola Oil (1 l)
+- [[jivo-cold-pressed-canola-oil-1l]] — Jivo Cold Pressed Canola Oil (Canola Enne) (1 l)
 - [[jivo-cold-pressed-canola-oil-5l]] — Jivo Cold Pressed Canola Oil ( (5 l)
 - [[jivo-cold-pressed-sunflower-oil-1l]] — Jivo Cold Pressed Sunflower Oil (1 l)
-- [[jivo-extra-light-olive-oil-1l]] — Jivo Extra Light Olive Oil (1 l)
-- [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil (2 l)
+- [[jivo-extra-light-olive-oil-1l]] — Jivo Extra Light Olive Oil (Olive Enne) (1 l)
+- [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil (Olive Enne) (2 l)
 - [[jivo-kachi-ghani-cold-pressed-mustard-oil-1l]] — Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (1 l)
 - [[jivo-kachi-ghani-cold-pressed-mustard-oil-5l]]
-- [[jivo-pomace-olive-oil-1l]] — Jivo Pomace Olive Oil (1 l)
+- [[jivo-pomace-olive-oil-1l]] — Jivo Pomace Olive Oil (Pomace Olive Enne) (1 l)
 - [[jivo-pomace-olive-oil-5l]] — Jivo Pomace Olive Oil (5 l)
 
 ## [[flipkart]] (329)
@@ -789,15 +852,17 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[teahhnh9hqqvxfma]] — Jivo_Tea_250g_Pack_Of_2 (250 GM)
 - [[teahhqtvmg8qj9zj]] — Tea_250g_Pack_of_4 (1 KG)
 
-## [[flipkart-minutes]] (11)
+## [[flipkart-minutes]] (13)
 - [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L)
-- [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] — JIVO Cold Press Combo Canola Oil Plastic Bottle
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L)
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]]
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L)
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L)
 - [[jivo-cooking-sunflower-oil-can-4l]] — JIVO Cooking Sunflower Oil Can (4 L)
 - [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L)
-- [[jivo-mineral-water-na]] — JIVO Mineral Water
+- [[jivo-mineral-water-1l]] — JIVO Mineral Water (1000 ml)
+- [[jivo-mineral-water-na]]
 - [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L)
 - [[jivo-pomace-olive-oil-tin-5l]] — JIVO Pomace Olive Oil Tin (5 L)
 - [[jivo-soybean-oil-soyabean-oil-pouch-1l]] — JIVO Soybean Oil Soyabean Oil Pouch (1 L)
@@ -826,7 +891,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l]] — Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil (1 ltr)
 - [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l]] — Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil (5 ltr)
 - [[jivo-healthy-wheatgrass-juice-sugar-free-200ml]] — Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free (200 ml)
-- [[jivo-indian-tonic-water-200ml]] — Jivo  Indian Tonic Water (200 ml)
+- [[jivo-indian-tonic-water-200ml]]
 - [[jivo-natural-minerals-water-1l]] — JIVO NATURAL MINERALS WATER (1 ltr)
 - [[jivo-pomace-daily-cooking-olive-oil-2l]] — Jivo Pomace Daily Cooking Olive Oil (2 ltr)
 - [[jivo-pomace-olive-oil-5l]] — Jivo Pomace Olive Oil (5 ltr)

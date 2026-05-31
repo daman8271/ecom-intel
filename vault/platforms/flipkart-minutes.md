@@ -4,8 +4,8 @@ platform: flipkart-minutes
 kind: quick-commerce
 shape: per-pincode
 risk: low
-runs: 27
-skus_tracked: 11
+runs: 28
+skus_tracked: 13
 tags:
   - type/platform-hub
   - moc
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **flipkart-minutes**. Flipkart Minutes hyperlocal quick-commerce; per-pincode pricing.
 
 - **Type:** quick-commerce · **Shape:** per-pincode · **Block risk:** low
-- **Runs captured:** 27 · **SKUs tracked:** 11
+- **Runs captured:** 28 · **SKUs tracked:** 13
 
-## SKUs on flipkart-minutes (11)
-[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]] · [[jivo-extra-light-olive-oil-can-2l]] · [[jivo-mineral-water-na]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-pomace-olive-oil-tin-5l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]]
+## SKUs on flipkart-minutes (13)
+[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]] · [[jivo-extra-light-olive-oil-can-2l]] · [[jivo-mineral-water-1l]] · [[jivo-mineral-water-na]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-pomace-olive-oil-tin-5l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]]
 
-## Runs (27) — newest first
+## Runs (28) — newest first
 
 <!-- runs:start -->
+- [[flipkart-minutes-2026-05-31-0900]] — 2026-05-31 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-05-30-1200]] — 2026-05-30 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-05-30-0900]] — 2026-05-30 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-05-29-1600]] — 2026-05-29 · verdict OK <!-- run -->

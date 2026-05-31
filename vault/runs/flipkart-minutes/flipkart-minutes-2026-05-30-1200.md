@@ -19,7 +19,7 @@ tags:
 
 # flipkart-minutes — run 2026-05-30-1200
 
-Up: [[flipkart-minutes]] · Day: [[2026-05-30]] · Week: [[2026-W22]] · Month: [[2026-05]] · Prev: [[flipkart-minutes-2026-05-30-0900]]
+Up: [[flipkart-minutes]] · Day: [[2026-05-30]] · Week: [[2026-W22]] · Month: [[2026-05]] · Prev: [[flipkart-minutes-2026-05-30-0900]] · Next: [[flipkart-minutes-2026-05-31-0900]]
 
 - **Verdict:** OK
 - **Captured:** 2026-05-30 12:00 IST
@@ -29,13 +29,13 @@ Up: [[flipkart-minutes]] · Day: [[2026-05-30]] · Week: [[2026-W22]] · Month: 
 
 ## SKUs seen
 - [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L) — ₹238 (36.5% off) · in 58 pincodes
-- [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] — JIVO Cold Press Combo Canola Oil Plastic Bottle — ₹575 · in 1 pincodes
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] — ₹575 · in 1 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L) — ₹670 (33.0% off) · in 3 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹929 (25.7% off) · in 20 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L) — ₹169 (33.7% off) · in 46 pincodes
 - [[jivo-cooking-sunflower-oil-can-4l]] — JIVO Cooking Sunflower Oil Can (4 L) — ₹736 (31.9% off) · in 1 pincodes
 - [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L) — ₹1919 (31.4% off) · in 31 pincodes
-- [[jivo-mineral-water-na]] — JIVO Mineral Water — ₹22 (26.7% off) · in 22 pincodes
+- [[jivo-mineral-water-na]] — ₹22 (26.7% off) · in 22 pincodes
 - [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L) — ₹371 (64.6% off) · in 24 pincodes
 - [[jivo-pomace-olive-oil-tin-5l]] — JIVO Pomace Olive Oil Tin (5 L) — ₹2149 (57.0% off) · in 10 pincodes
 - [[jivo-soybean-oil-soyabean-oil-pouch-1l]] — JIVO Soybean Oil Soyabean Oil Pouch (1 L) — ₹151 (24.1% off) · in 15 pincodes
