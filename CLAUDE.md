@@ -17,12 +17,12 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── run_all.sh             # one cron sweep: all 7 live platforms IN PARALLEL → self-heal
+├── run_all.sh             # one cron sweep: all 8 live platforms IN PARALLEL → self-heal
 ├── setup_cron.sh          # installs the 3×/day cron (run_all.sh) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
-│   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/   # 6 LIVE, direct
-│   ├── amazon-fresh/      # 7th LIVE — logged-in (cookie transplant), i=freshstore, in cron
+│   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/ bigbasket/  # 7 LIVE, direct
+│   ├── amazon-fresh/      # 8th LIVE — logged-in (cookie transplant), i=freshstore, in cron
 │   ├── amazon-now/        # login solved but MANUAL-ONLY (shares Fresh's account+location)
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
 ├── tools/                 # predict.py · review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
@@ -47,7 +47,7 @@ ls output/                  # the Excel
 4. If it returns 0 rows / captcha / 403 → that platform blocks the datacenter IP → needs a residential proxy.
 5. Commit + push.
 
-## Block-risk map (datacenter VPS IP) — 7 LIVE, no proxy (6 direct + Amazon Fresh logged-in)
+## Block-risk map (datacenter VPS IP) — 8 LIVE, no proxy (7 direct + Amazon Fresh logged-in)
 | Platform | Status | Notes |
 |---|---|---|
 | blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes |
@@ -57,6 +57,7 @@ ls output/                  # the Excel
 | flipkart | ✅ LIVE | marketplace, national pricing, 1 row/SKU |
 | amazon | ✅ LIVE | guest interstitial bypass on /dp; targeted scrape of 314 ASINs; NO account location |
 | amazon-fresh | ✅ LIVE | logged-in (cookie transplant), i=freshstore raw POST+HTML; 332 pincodes, ~63 SKUs, ~13k rows; in cron |
+| bigbasket | ✅ LIVE | stealth browser past Akamai + in-page listing-svc API; NATIONAL pricing → 1 row/SKU, "All India", ~27 SKUs; no proxy; in cron |
 | amazon-now | ⏸ MANUAL | login solved, but shares Fresh's account+server-side location → never co-run; not in cron — see platforms/amazon-now/PLAN.md |
 
 ## Pipeline (run.sh, per platform)
@@ -67,8 +68,8 @@ history, and review verdicts/baselines are what get committed each run.
 
 ## Cron (IST) — installed and LIVE via ./setup_cron.sh
 One sweep per window at 09:00 / 12:00 / 16:00 via `./run_all.sh`, which scrapes the
-**7 live platforms IN PARALLEL** (blinkit, , flipkart-minutes, flipkart,
-amazon, zepto, amazon-fresh) then runs the self-heal pass at the end of the window.
+**8 live platforms IN PARALLEL** (blinkit, , flipkart-minutes, flipkart,
+amazon, zepto, amazon-fresh, bigbasket) then runs the self-heal pass at the end of the window.
 `run_all.sh` holds the authoritative platform list. Switched sequential→parallel
 2026-05-22 (VPS has headroom); each run.sh git-push critical section is flock-serialized
 (.gitpush.lock) so concurrent commits don't collide. setup_cron.sh is re-runnable
@@ -104,7 +105,7 @@ Notes link into an Obsidian graph via body [[wikilinks]]; generators are determi
 stdlib-only, idempotent per RUN_ID. Design + conventions: vault/VAULT-SPEC.md.
 
 ## Proxy (residential Indian IPs) — see docs/PROXY.md
-**NOT bought and NOT currently needed** — all 7 live platforms run with no proxy from
+**NOT bought and NOT currently needed** — all 8 live platforms run with no proxy from
 the datacenter IP. Six run direct/no-login; amazon-fresh runs on a transplanted
 logged-in cookie session (still no proxy). Zepto was unlocked 2026-05-29 via its
 bff-gateway.zeptonow.com BFF API (the CloudFront-fronted website still 403s the DC IP,
