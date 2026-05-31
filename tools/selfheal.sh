@@ -34,12 +34,15 @@ cd "$DIR" || exit 0
 mkdir -p logs reviews baselines 2>/dev/null || true
 
 # ---- config -----------------------------------------------------------------
-PLATFORMS="${ECOM_PLATFORMS:-blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh}"  # keep in sync with setup_cron.sh + run_all.sh
+PLATFORMS="${ECOM_PLATFORMS:-blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket}"  # keep in sync with run_all.sh (authoritative)
 MIN_ROWS="${ECOM_MIN_ROWS:-20}"          # absolute floor; healthy runs return ~60-160
 COLLAPSE_FRAC="${ECOM_COLLAPSE_FRAC:-0.5}" # rows <= baseline*this  => collapse
 MAX_AGE_H="${ECOM_MAX_AGE_H:-15}"        # result.json older than this = stale
 RETRY_CAP="${ECOM_RETRY_CAP:-1}"         # auto re-runs per platform per invocation
-RUN_TIMEOUT="${ECOM_RUN_TIMEOUT:-600}"   # seconds; hard cap on a single ./run.sh
+RUN_TIMEOUT="${ECOM_RUN_TIMEOUT:-2400}"  # seconds; hard cap on a single ./run.sh recovery.
+                                         # 40m so heavy per-pincode platforms (amazon-fresh,
+                                         # amazon-now ~20-30m over 332 pincodes) can actually
+                                         # finish a recovery instead of being killed mid-scrape.
 HEALTH_LOG="$DIR/logs/health.log"
 LOCKDIR="$DIR/logs"                       # lock files live here (logs/ is gitignored)
 TODAY="$(date +%Y-%m-%d)"

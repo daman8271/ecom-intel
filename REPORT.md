@@ -7,10 +7,11 @@ plus where Jivo actually has presence. Generated Excel reports for every live
 platform are in `output/`.
 
 ## TL;DR (2026-05-31)
-- **7 platforms are LIVE** and running on cron: Blinkit, , Zepto,
-  Flipkart Minutes, Flipkart, Amazon, **Amazon Fresh**.
-- **6 of the 7 run DIRECT** from this VPS IP with **no proxy and no login**:
-  Blinkit, , Zepto, Flipkart Minutes, Flipkart, Amazon.
+- **8 platforms are LIVE** and running on cron: Blinkit, , Zepto,
+  Flipkart Minutes, Flipkart, Amazon, **Amazon Fresh**, **BigBasket**.
+- **7 of the 8 run DIRECT** from this VPS IP with **no proxy and no login**:
+  Blinkit, , Zepto, Flipkart Minutes, Flipkart, Amazon, BigBasket
+  (BigBasket needs a stealth browser past Akamai, but no login and no proxy).
 - **Amazon Fresh** went LIVE **2026-05-30** — it does need a **logged-in session**
   (cookies transplanted from a clean IP, see below), but no proxy. It is the
   `i=freshstore` storefront and is **~7× richer than Amazon Now** (~63 Jivo SKUs

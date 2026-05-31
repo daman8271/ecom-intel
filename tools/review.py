@@ -59,6 +59,12 @@ FRESHNESS_MAX_AGE_H = 15      # matches healthcheck.sh MAX_AGE_H
 PRICE_MIN = 1
 PRICE_MAX = 100000
 
+# In-stock rows can legitimately have NO displayed price on Amazon (price shown only
+# in the cart for some bulk SKUs, e.g. Jivo Sunflower 4L). A small fraction is normal
+# (~1% on Amazon Fresh/Now); only a SYSTEMIC loss above this fraction of in-stock rows
+# means the price selector likely broke -> SUSPECT.
+PRICE_MISSING_SUSPECT_FRAC = 0.25
+
 # Baseline drift tolerances (fraction of the rolling baseline).
 ROWS_SUSPECT_DROP = 0.40      # <60% of baseline rows -> SUSPECT
 ROWS_BROKEN_DROP = 0.75       # <25% of baseline rows -> BROKEN
@@ -313,21 +319,45 @@ def run_checks(data, rows, per_pincode, expected, run_id):
         add("skus_vs_baseline", True,
             f"{n_skus} unique SKUs (no baseline yet)")
 
-    # 5) prices > 0 and within plausible band (IN-STOCK rows only — an
-    #    out-of-stock listing legitimately has no current price, e.g. Amazon) -
-    bad_price = []
+    # 5) prices > 0 and within plausible band (IN-STOCK rows only — an out-of-stock
+    #    listing legitimately has no current price). Two cases are NOT the same failure:
+    #      (a) a NUMERIC but implausible price (<=0 or outside the band) -> real
+    #          garbage; flag SUSPECT even for a single row.
+    #      (b) an in-stock row with NO displayed price (sale is None) -> legitimate
+    #          on Amazon for a few bulk SKUs ("see price in cart"). A small fraction
+    #          is normal; only a SYSTEMIC loss (a high fraction of in-stock rows with
+    #          no price) means the price selector likely broke -> SUSPECT.
+    bad_price = []          # in-stock rows with a numeric but implausible price
+    no_price = 0            # in-stock rows with no displayed price at all
+    n_instock = 0
     for i, r in enumerate(rows):
         if not r.get("in_stock"):   # skip out-of-stock (0/False/None): no current price
             continue
+        n_instock += 1
         sale = num(r.get("sale"))
-        if sale is None or sale <= 0 or sale < PRICE_MIN or sale > PRICE_MAX:
+        if sale is None:
+            no_price += 1
+            continue
+        if sale <= 0 or sale < PRICE_MIN or sale > PRICE_MAX:
             bad_price.append((i, r.get("sku_raw"), r.get("sale")))
-    ok = len(bad_price) == 0
-    add("prices_in_band", ok,
-        "all sale prices in (0, band]" if ok
-        else f"{len(bad_price)} rows w/ implausible price e.g. "
-             f"{bad_price[0][1]!r}={bad_price[0][2]!r}",
-        severity="suspect")
+    noprice_frac = (no_price / n_instock) if n_instock else 0.0
+    systemic_noprice = noprice_frac > PRICE_MISSING_SUSPECT_FRAC
+    ok = (len(bad_price) == 0) and (not systemic_noprice)
+    if ok:
+        detail = "all sale prices in (0, band]"
+        if no_price:
+            detail += (f" ({no_price}/{n_instock} in-stock rows have no displayed "
+                       f"price — Amazon 'see price in cart', within tolerance)")
+    elif bad_price:
+        detail = (f"{len(bad_price)} rows w/ implausible price e.g. "
+                  f"{bad_price[0][1]!r}={bad_price[0][2]!r}")
+        if no_price:
+            detail += f"; plus {no_price}/{n_instock} in-stock rows w/ no price"
+    else:  # systemic_noprice
+        detail = (f"{no_price}/{n_instock} in-stock rows ({noprice_frac:.0%}) have no "
+                  f"displayed price (> {PRICE_MISSING_SUSPECT_FRAC:.0%} tolerance); "
+                  f"price selector may have broken")
+    add("prices_in_band", ok, detail, severity="suspect")
 
     # 6) MRP >= sale price -------------------------------------------------
     bad_mrp = []
