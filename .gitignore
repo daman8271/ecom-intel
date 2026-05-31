@@ -12,6 +12,7 @@ secrets/
 **/secrets/
 __pycache__/
 .gitpush.lock
+.amazon-account.lock
 vault/.obsidian/workspace.json
 vault/.obsidian/workspace-mobile.json
 

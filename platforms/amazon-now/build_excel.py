@@ -82,6 +82,8 @@ for s in skus:
     cand = [x for x in rows if x['canonical'] == s and x['in_stock'] == 1]
     if not cand: cand = [x for x in rows if x['canonical'] == s]
     if not cand: continue
+    cand = [x for x in cand if x.get('sale') is not None]
+    if not cand: continue
     b = min(cand, key=lambda x: x['sale'])
     for j, v in enumerate([label(s), b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], b['discount_pct']], 1):
         cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
@@ -145,7 +147,7 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
     return ws
 
 # Sheet 3: Pricing Matrix (avg sale per city) - green cheap -> red expensive
-matrix("Pricing Matrix", lambda c: round(statistics.mean([x['sale'] for x in c])), '"Rs"#,##0', scale=True)
+matrix("Pricing Matrix", lambda c: (round(statistics.mean([x['sale'] for x in c if x['sale'] is not None])) if any(x['sale'] is not None for x in c) else None), '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
     pct = round(100 * sum(x['in_stock'] for x in c) / len(c))

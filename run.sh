@@ -10,7 +10,23 @@ RUN_ID="$(date +%Y-%m-%d-%H%M)"
 
 cd "$PDIR"
 echo "[$RUN_ID] scraping $P ..."
-node scrape.js 2> "$DIR/logs/${P}-${RUN_ID}.log"
+# amazon-fresh and amazon-now share ONE Amazon account whose delivery location is set
+# SERVER-SIDE (account-global). Their per-pincode scrapes both change that location, so
+# they must NEVER set it concurrently or they corrupt each other's pincode. Serialize
+# ONLY these two behind a shared lock: whichever starts first scrapes to completion; the
+# other blocks (up to 45m) then runs. Every other platform — including the guest `amazon`
+# /dp scraper, which sets NO account location — is unaffected and stays fully parallel, so
+# peak Chromium concurrency is unchanged (fresh+now share one slot). This also protects the
+# self-heal re-run path, since that re-runs platforms through this same run.sh.
+if { [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; } && command -v flock >/dev/null 2>&1; then
+  (
+    flock -w 2700 8 || { echo "[$RUN_ID] $P: amazon-account lock not acquired in 45m; skipping this window"; exit 75; }
+    echo "[$RUN_ID] $P: amazon-account lock acquired; scraping ..."
+    node scrape.js 2> "$DIR/logs/${P}-${RUN_ID}.log"
+  ) 8>"$DIR/.amazon-account.lock"
+else
+  node scrape.js 2> "$DIR/logs/${P}-${RUN_ID}.log"
+fi
 echo "[$RUN_ID] building excel ..."
 python3 build_excel.py
 cp Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true

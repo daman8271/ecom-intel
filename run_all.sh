@@ -7,12 +7,17 @@
 # (scrape -> excel -> predict -> review -> vault -> telegram -> git push) and
 # best-effort; their git pushes are serialized by an flock inside run.sh so the
 # concurrent commits don't collide. Per-platform stdout goes to logs/run-<p>.out.
+#
+# amazon-fresh and amazon-now are BOTH launched here, but run.sh holds a shared
+# .amazon-account.lock around their scrape step so the two (which share one Amazon
+# account + server-side delivery location) never scrape concurrently — one waits for
+# the other. They share a single Chromium slot, so peak concurrency is unchanged.
 set -uo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
 echo "[$(date '+%F %T')] run_all: START (parallel)"
 pids=()
-for P in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh bigbasket; do
+for P in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket; do
   echo "[$(date '+%F %T')] run_all: launching $P"
   ./run.sh "$P" >> "logs/run-${P}.out" 2>&1 &
   pids+=("$!")

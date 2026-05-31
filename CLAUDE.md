@@ -17,13 +17,13 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── run_all.sh             # one cron sweep: all 8 live platforms IN PARALLEL → self-heal
+├── run_all.sh             # one cron sweep: all 9 live platforms IN PARALLEL (fresh+now serialized) → self-heal
 ├── setup_cron.sh          # installs the 3×/day cron (run_all.sh) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
 │   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/ bigbasket/  # 7 LIVE, direct
 │   ├── amazon-fresh/      # 8th LIVE — logged-in (cookie transplant), i=freshstore, in cron
-│   ├── amazon-now/        # login solved but MANUAL-ONLY (shares Fresh's account+location)
+│   ├── amazon-now/        # 9th LIVE — logged-in, i=nowstore; serialized w/ amazon-fresh (shared lock)
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
 ├── tools/                 # predict.py · review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
 ├── vault/                 # Obsidian memory: runs/ daily/ weekly/ monthly/ platforms/  (committed)
@@ -47,7 +47,7 @@ ls output/                  # the Excel
 4. If it returns 0 rows / captcha / 403 → that platform blocks the datacenter IP → needs a residential proxy.
 5. Commit + push.
 
-## Block-risk map (datacenter VPS IP) — 8 LIVE, no proxy (7 direct + Amazon Fresh logged-in)
+## Block-risk map (datacenter VPS IP) — 9 LIVE, no proxy (7 direct + Amazon Fresh & Now logged-in)
 | Platform | Status | Notes |
 |---|---|---|
 | blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes |
@@ -58,7 +58,7 @@ ls output/                  # the Excel
 | amazon | ✅ LIVE | guest interstitial bypass on /dp; targeted scrape of 314 ASINs; NO account location |
 | amazon-fresh | ✅ LIVE | logged-in (cookie transplant), i=freshstore raw POST+HTML; 332 pincodes, ~63 SKUs, ~13k rows; in cron |
 | bigbasket | ✅ LIVE | stealth browser past Akamai + in-page listing-svc API; NATIONAL pricing → 1 row/SKU, "All India", ~27 SKUs; no proxy; in cron |
-| amazon-now | ⏸ MANUAL | login solved, but shares Fresh's account+server-side location → never co-run; not in cron — see platforms/amazon-now/PLAN.md |
+| amazon-now | ✅ LIVE | logged-in (same session as Fresh), i=nowstore; in cron but SERIALIZED with amazon-fresh via a shared .amazon-account.lock so the two never co-scrape — see platforms/amazon-now/PLAN.md |
 
 ## Pipeline (run.sh, per platform)
 `scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → `tools/vault_note.py` (+ rollups)
@@ -68,16 +68,22 @@ history, and review verdicts/baselines are what get committed each run.
 
 ## Cron (IST) — installed and LIVE via ./setup_cron.sh
 One sweep per window at 09:00 / 12:00 / 16:00 via `./run_all.sh`, which scrapes the
-**8 live platforms IN PARALLEL** (blinkit, , flipkart-minutes, flipkart,
-amazon, zepto, amazon-fresh, bigbasket) then runs the self-heal pass at the end of the window.
-`run_all.sh` holds the authoritative platform list. Switched sequential→parallel
-2026-05-22 (VPS has headroom); each run.sh git-push critical section is flock-serialized
-(.gitpush.lock) so concurrent commits don't collide. setup_cron.sh is re-runnable
-and touches only "# ecom-intel"-tagged lines. **amazon-now is NOT in cron — manual-only:**
-its login is solved (same cookie-transplant session as amazon-fresh) but it shares
-amazon-fresh's single Amazon account + server-side delivery location, so the two must
-NEVER run concurrently. The guest `amazon` scraper sets no account location, so it's
-safe alongside amazon-fresh. See platforms/amazon-now/PLAN.md.
+**9 live platforms IN PARALLEL** (blinkit, , flipkart-minutes, flipkart,
+amazon, zepto, amazon-fresh, amazon-now, bigbasket) then runs the self-heal pass at the
+end of the window. `run_all.sh` holds the authoritative platform list. Switched
+sequential→parallel 2026-05-22 (VPS has headroom); each run.sh git-push critical section
+is flock-serialized (.gitpush.lock) so concurrent commits don't collide. setup_cron.sh is
+re-runnable and touches only "# ecom-intel"-tagged lines.
+**amazon-now + amazon-fresh share ONE Amazon account** whose delivery location is set
+server-side (account-global), so their per-pincode scrapes must NEVER run concurrently.
+run.sh serializes EXACTLY these two behind a shared **.amazon-account.lock** around the
+scrape step: both are launched by the parallel sweep, but one waits (up to 45m) while the
+other scrapes — they share a single Chromium slot, so peak concurrency is unchanged. Every
+other platform (incl. the guest `amazon` scraper, which sets no account location) stays
+fully parallel. amazon-now was MANUAL-ONLY until 2026-05-31, when this lock let it join cron
+safely. Its login is the same cookie-transplant session as amazon-fresh; if that session
+expires, BOTH go BROKEN and self-heal Telegram-alerts you to re-import cookies. See
+platforms/amazon-now/PLAN.md.
 
 Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE (under
 logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;

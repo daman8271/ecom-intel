@@ -1,13 +1,13 @@
-> **⚠️ STATUS REVISITED 2026-05-29/30 — see `PLAN.md` for the current state.**
-> The verdict below ("not feasible without login") is a *snapshot from 2026-05-22*
-> documenting what's true off `/dp` without authentication. That verdict still
-> stands AS WRITTEN. Since then, the project chose to tackle the login itself.
-> Active uncommitted work in this folder: `PLAN.md` (the strategy), `login.js`
-> (v1, OTP-gate failure), `login_v2.js` (v2 — Real Chrome new-headless + warmup
-> + vision-handoff for the AWS WAF "AAMation" adversarial-grid captcha that
-> gates the OTP), `recon/` (capture/glow/fresh recon scripts), `secrets/`
-> (debug dumps + guest storageState). NOT in cron until the login mints a
-> reusable session.
+> **✅ STATUS 2026-05-31 — Amazon Now is LIVE in cron.** The doc below is a preserved
+> *2026-05-22 snapshot* explaining why a per-ASIN "Now" signal can't be read off the guest
+> `/dp` page (still true). It has since been superseded: the path that works is the
+> logged-in **`i=nowstore` storefront search** on the same cookie-transplant session as
+> Amazon Fresh. `scrape.js` is now that live scraper (NOT the Blinkit copy this doc
+> describes), and amazon-now is wired into `run_all.sh` / `setup_cron.sh` / self-heal —
+> serialized with Amazon Fresh behind a shared `.amazon-account.lock` so the two (one
+> account, server-side location) never co-scrape. Login automation remains captcha-walled
+> (AWS WAF "AAMation"), so the session is refreshed by a **manual cookie transplant** when
+> it expires. Current strategy + the manual-refresh drill: `PLAN.md`.
 
 # BLOCKED: Amazon Now — no reliable per-ASIN "Now" signal on the /dp page
 

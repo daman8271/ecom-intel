@@ -24,11 +24,12 @@ timedatectl set-timezone Asia/Kolkata 2>/dev/null || true
 
 # LIVE platforms in the parallel sweep. amazon-fresh went live 2026-05-30 (logged-in
 # session, i=freshstore — the rich Fresh catalog; see platforms/amazon-fresh/SKILL.md).
-# NOT here: amazon-now (gated, manual-only — it shares amazon-fresh's account+location
-# server-side, so the two must NEVER run concurrently). The plain `amazon` scraper is
-# guest /dp and does NOT set account location, so it's safe alongside amazon-fresh.
+# amazon-now joined the cron 2026-05-31: it shares amazon-fresh's account + server-side
+# delivery location, so run.sh serializes exactly this pair behind a shared
+# .amazon-account.lock (they never scrape at the same time). The plain `amazon` scraper is
+# guest /dp and does NOT set account location, so it's safe alongside both.
 # (run_all.sh holds the authoritative list; this is a doc mirror.)
-PLATFORMS="blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh bigbasket"
+PLATFORMS="blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket"
 
 # Per-platform minute offset within each window (stagger to avoid concurrent Chromium).
 declare -A OFFSET=( [blinkit]=0 [flipkart-minutes]=4 [flipkart]=8 [amazon]=12 )
@@ -41,9 +42,10 @@ HEAL_MIN=30
 TAG="# ecom-intel"
 
 # Build the exact block we want installed.
-# One sweep per window: run_all.sh scrapes every live platform SEQUENTIALLY then
-# self-heals (see run_all.sh for why sequential at ~796-pincode scale). No more
-# staggered per-platform lines — the sweep is serialized inside run_all.sh.
+# One sweep per window: run_all.sh scrapes every live platform IN PARALLEL then
+# self-heals (amazon-fresh + amazon-now are the only serialized pair — a shared
+# .amazon-account.lock in run.sh keeps them from co-scraping). No staggered
+# per-platform cron lines — one run_all.sh per window.
 build_block() {
   for H in $HOURS; do
     echo "0 $H * * * cd $DIR && ./run_all.sh >> logs/cron.log 2>&1   $TAG"

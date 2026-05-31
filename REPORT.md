@@ -7,9 +7,9 @@ plus where Jivo actually has presence. Generated Excel reports for every live
 platform are in `output/`.
 
 ## TL;DR (2026-05-31)
-- **8 platforms are LIVE** and running on cron: Blinkit, , Zepto,
-  Flipkart Minutes, Flipkart, Amazon, **Amazon Fresh**, **BigBasket**.
-- **7 of the 8 run DIRECT** from this VPS IP with **no proxy and no login**:
+- **9 platforms are LIVE** and running on cron: Blinkit, , Zepto,
+  Flipkart Minutes, Flipkart, Amazon, **Amazon Fresh**, **Amazon Now**, **BigBasket**.
+- **7 of the 9 run DIRECT** from this VPS IP with **no proxy and no login**:
   Blinkit, , Zepto, Flipkart Minutes, Flipkart, Amazon, BigBasket
   (BigBasket needs a stealth browser past Akamai, but no login and no proxy).
 - **Amazon Fresh** went LIVE **2026-05-30** — it does need a **logged-in session**
@@ -20,18 +20,18 @@ platform are in `output/`.
 - **Zepto** was unblocked 2026-05-29 by bypassing the CloudFront-fronted website
   and calling its **`bff-gateway.zeptonow.com`** BFF API directly.
 - **** was unblocked 2026-05-22 via stealth POST to its public search API.
-- **Amazon Now** (quick-commerce) is the only platform **NOT in cron** — it is
-  **manual-only**. Its login is solved (same cookie transplant as Fresh), but it
-  shares Amazon Fresh's single account + **server-side delivery location**, so the
-  two must **never run concurrently** (the plain guest `amazon` scraper is safe
-  alongside Fresh because it sets no account location). It is also a thinner
-  catalog than Fresh. See `platforms/amazon-now/PLAN.md`.
+- **Amazon Now** (quick-commerce) joined cron **2026-05-31**. It shares Amazon Fresh's
+  single account + **server-side delivery location**, so the two must **never scrape
+  concurrently** — `run.sh` serializes exactly this pair behind a shared
+  `.amazon-account.lock` (one waits while the other runs; the guest `amazon` scraper sets
+  no account location, so it is unaffected). Login is the same cookie transplant as Fresh;
+  it's a thinner catalog than Fresh (~23 SKUs). See `platforms/amazon-now/PLAN.md`.
 - **BigBasket** went LIVE **2026-05-31** — `www.bigbasket.com` is behind Akamai
   (plain HTTP → 403), so a **stealth browser** loads the session and an **in-page
   fetch** calls the `listing-svc` JSON API. BigBasket "BB" prices Jivo
   **nationally**, so (like Flipkart) it scrapes once and tags rows "All India"
   (~27 SKUs, no proxy, no login).
-- All 8 live scrapers run on **3×/day parallel cron (09:00 / 12:00 / 16:00 IST)**
+- All 9 live scrapers run on **3×/day parallel cron (09:00 / 12:00 / 16:00 IST)**
   via `run_all.sh`, with a self-heal sweep at the end of each window.
 
 ## Working platforms (current cron)
@@ -45,6 +45,7 @@ platform are in `output/`.
 | **Flipkart** | marketplace | national | ~61 | national pricing; 1 row per SKU |
 | **Amazon** | marketplace | national (314 ASINs targeted) | ~163 in-stock | guest `/dp` scrape; interstitial bypass; no account location |
 | **Amazon Fresh** | quick-comm | 332/332 pincodes serviceable | ~63 | logged-in session (cookie transplant); `i=freshstore` raw POST+HTML; ~13.2k rows/run, ~22 min |
+| **Amazon Now** | quick-comm | ~317/332 pincodes serviceable | ~23 | logged-in (same session as Fresh); `i=nowstore`; per-pincode `now_slot` delivery windows; ~1.7k rows/run; SERIALIZED with Fresh via shared lock |
 | **BigBasket** | grocery (national) | national (single "All India") | ~27 | stealth browser past Akamai + in-page `listing-svc` JSON API; national pricing → 1 row/SKU; no proxy, no login |
 
 ## Amazon Fresh — how the logged-in scrape works (no proxy)
@@ -60,16 +61,18 @@ platform are in `output/`.
 - Output schema matches Blinkit/Zepto (+ `asin`, `now_slot`, `serviceable`);
   `store_name='Amazon Fresh'`. Full recipe: `platforms/amazon-fresh/SKILL.md`.
 
-## Manual-only / not in cron
-
-### Amazon Now — quick-commerce, login solved but de-prioritized
+## Amazon Now + Amazon Fresh — one account, serialized (both in cron)
 - **Login works** (same cookie-transplant session as Amazon Fresh) — the old
   2026-05-22 "not feasible without login" verdict is superseded.
-- **Why it's manual-only, not on cron:** it shares Amazon Fresh's single account and
-  Amazon resolves delivery location **server-side per account**, so Amazon Now and
-  Amazon Fresh cannot run at the same time without clobbering each other's location.
-  Fresh is also a far richer catalog (~63 SKUs vs Now's 0–14). So Now is kept as a
-  manual run only, never co-scheduled with Fresh. See `platforms/amazon-now/PLAN.md`.
+- **They share one Amazon account** and Amazon resolves delivery location
+  **server-side per account**, so Amazon Now and Amazon Fresh cannot scrape at the same
+  time without clobbering each other's location.
+- **How both still run in cron (since 2026-05-31):** `run.sh` wraps the scrape step of
+  *these two only* in a shared `.amazon-account.lock`; the parallel sweep launches both,
+  but one blocks until the other finishes. Every other platform stays fully parallel, and
+  the guest `amazon` scraper (no account location) is unaffected. If the shared session
+  expires, both go BROKEN and self-heal alerts you to re-import cookies.
+  See `platforms/amazon-now/PLAN.md`.
 
 ## Marketplaces vs quick-commerce (by design)
 The two marketplaces (Flipkart, Amazon) price **nationally** — the same listing costs
@@ -79,15 +82,15 @@ design** — the value there is **catalog breadth, price, MRP, discount %** (Ama
 ~163 in-stock Jivo SKUs vs 8–11 on the quick-comm apps).
 
 ## Where a residential proxy would help
-**None needed today** — all 8 live platforms run without a proxy. `tools/proxy.js`
+**None needed today** — all 9 live platforms run without a proxy. `tools/proxy.js`
 stays wired only as insurance if **Amazon** ever escalates from the interstitial bypass
 to a captcha on the datacenter IP. See `docs/PROXY.md`.
 
 ## Operational state
-- **Cron (IST):** `run_all.sh` scrapes all 8 live platforms **in parallel** at
+- **Cron (IST):** `run_all.sh` scrapes all 9 live platforms **in parallel** at
   **09:00 / 12:00 / 16:00**, then runs the self-heal sweep at the end of each window
   (flags any platform <20 rows / stale and re-runs once / escalates to Telegram).
-  `amazon-now` is excluded (manual-only — see above).
+  `amazon-now` runs too, serialized with `amazon-fresh` via the shared lock (see above).
 - `git` is the backup. After any VPS wipe: clone, `npm install` + `npx playwright
   install chromium` per platform, recreate `secrets.env` + re-import Amazon cookies,
   `./setup_cron.sh`.

@@ -134,7 +134,10 @@ function toRow(card, rec) {
   const prod = PRODUCTS[card.asin];
   // raw-HTML textContent glues the brand span to the name ("JIVOCold Pressed…") since there's
   // no whitespace node between them — re-insert the space so name + canonical stay clean.
-  let fullTitle = (card.title || (prod && prod.name) || card.asin).replace(/^jivo\s*/i, 'Jivo ');
+  // Sponsored ad cards prepend "Sponsored … You are seeing this ad …" to the title; strip
+  // everything before the brand so they canonicalize identically to the organic listing
+  // (the per-pincode dedup then merges the ad into the real row instead of doubling SKUs).
+  let fullTitle = (card.title || (prod && prod.name) || card.asin).replace(/^.*?(?=jivo)/i, '').replace(/^jivo\s*/i, 'Jivo ');
   const name = fullTitle.split('|')[0].replace(/\s+/g, ' ').trim();
   const pack = packFromTitle(name) || packFromTitle(fullTitle) || (prod && prod.pack ? prod.pack.toLowerCase() : '');
   const sale = numPrice(card.price);
