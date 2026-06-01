@@ -1,5 +1,5 @@
 import json, datetime, statistics, os
-from collections import defaultdict, OrderedDict
+from collections import defaultdict, OrderedDict, Counter
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
@@ -143,8 +143,18 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
     autosize(ws, maxw=14)
     return ws
 
-# Sheet 3: Pricing Matrix (avg sale per city) - green cheap -> red expensive
-matrix("Pricing Matrix", lambda c: round(statistics.mean([x['sale'] for x in c])), '"Rs"#,##0', scale=True)
+# Sheet 3: Pricing Matrix (modal sale price per city) - green cheap -> red expensive.
+# We show the MOST COMMON real shelf price in each city, NOT the mean: averaging a
+# SKU sold at 485 in most pincodes and 520 in a few yields 490, a phantom price no
+# store actually charges. The mode is always a price a customer can really see; ties
+# break to the cheaper price (consistent with the report's cheapest-first framing).
+# The full per-pincode spread (e.g. the 3 Delhi stores at 520) stays in Master Data.
+def modal_price(cands):
+    prices = [x['sale'] for x in cands if x['sale'] is not None]
+    if not prices: return None
+    cnt = Counter(prices); top = max(cnt.values())
+    return round(min(p for p, n in cnt.items() if n == top))
+matrix("Pricing Matrix", modal_price, '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
     pct = round(100 * sum(x['in_stock'] for x in c) / len(c))
