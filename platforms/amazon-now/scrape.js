@@ -8,6 +8,14 @@
 // out it 503s; logged in it returns per-SKU Now price + same-day SLOT, varying per
 // delivery pincode. (/dp shows only the marketplace promise even logged in — wrong surface.)
 //
+// SERVICEABILITY (critical): `i=nowstore` is NOT a clean Now-only filter. Where Amazon Now
+// is NOT serviceable, the search silently FALLS BACK to ordinary marketplace listings
+// (multi-day delivery dates / the "FREE delivery on orders over ₹149" add-on line). Those
+// are NOT Amazon Now and must NEVER be recorded as Now prices. A card counts as Now ONLY if
+// its delivery line is a same-day time SLOT (see isNowSlot). A pincode is "serviceable" only
+// if the location resolved correctly AND ≥1 returned card carries a Now slot — otherwise it
+// has no Amazon Now and contributes ZERO rows (we do not substitute the regular Amazon price).
+//
 // SPEED: the delivery location is account-global server-side, so parallel workers would
 // collide — SEQUENTIAL is mandatory. Instead each pincode is made cheap (~2s, no page
 // render): set location via a raw `address-change` POST + read the search as raw HTML.
@@ -76,6 +84,18 @@ function numPrice(s) {
   if (!s) return null;
   const n = parseFloat(String(s).replace(/[^\d.]/g, ''));
   return Number.isFinite(n) ? n : null;
+}
+
+// A card is a GENUINE Amazon Now offer only if its delivery line is a same-day / slotted
+// time window — "Today 8 pm - 10 pm", "Tomorrow 7 am - 9 am". Marketplace-fallback cards
+// (returned where Now isn't serviceable) instead show a multi-day calendar date
+// ("FREE delivery Thu, 11 Jun", "Tomorrow, 2 Jun") or the add-on line
+// ("FREE delivery on orders over ₹149") — none of which match here, so they're rejected.
+function isNowSlot(slot) {
+  const s = slot || '';
+  const window = /\d{1,2}\s*(?:am|pm)\s*[-–]\s*\d{1,2}\s*(?:am|pm)/i.test(s); // intraday window
+  const sameDay = /\b(?:today|tomorrow)\b/i.test(s) && /\d{1,2}\s*(?:am|pm)/i.test(s);
+  return window || sameDay;
 }
 
 async function passInterstitial(page) {
@@ -214,16 +234,24 @@ async function checkSession(page) {
       res = await fastSetAndSearch(page, rec.pincode, token, QUERY);
     }
     const matched = res.glow.includes(rec.pincode);
+    // Amazon Now is serviceable here ONLY if the location resolved correctly (matched) AND at
+    // least one returned card carries a real Now slot. If the set-location failed (GLOW
+    // mismatch) we scraped the WRONG place; if no card shows a Now slot, i=nowstore fell back
+    // to the marketplace. Either way this pincode has NO Amazon Now -> 0 rows, not counted.
+    const nowOffered = res.cards.some((c) => isNowSlot(c.slot));
+    const serviceable = matched && nowOffered;
     const seen = new Set();
     const rows = [];
-    for (const card of res.cards) {
-      if (!card.isJivo) continue;
-      const row = toRow(card, rec);
-      if (seen.has(row.canonical)) continue;
-      seen.add(row.canonical); rows.push(row);
+    if (serviceable) {
+      for (const card of res.cards) {
+        if (!card.isJivo) continue;
+        if (!isNowSlot(card.slot)) continue;   // this SKU isn't on Now here (marketplace fallback) — drop it
+        const row = toRow(card, rec);
+        if (seen.has(row.canonical)) continue;
+        seen.add(row.canonical); rows.push(row);
+      }
     }
-    const serviceable = res.total > 0;
-    perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, glow: res.glow, matched, rows });
+    perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, glow: res.glow, matched, total_cards: res.total, rows });
     process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}svc=${serviceable} -> ${rows.length} jivo (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
     await sleep(350 + Math.random() * 450);
   }
