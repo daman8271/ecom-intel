@@ -135,7 +135,11 @@ async function fastSetAndSearch(page, pin, token, query, index) {
 
 function toRow(card, rec) {
   const prod = PRODUCTS[card.asin];
-  let fullTitle = (card.title || (prod && prod.name) || card.asin).replace(/^jivo\s*/i, 'Jivo ');
+  // Sponsored ad cards prepend "Sponsored … You are seeing this ad …" to the title; strip
+  // everything before the brand so they canonicalize identically to the organic listing
+  // (dedup then merges the ad into the real SKU instead of creating a phantom one). Same
+  // fix as platforms/amazon-now/scrape.js.
+  let fullTitle = (card.title || (prod && prod.name) || card.asin).replace(/^.*?(?=jivo)/i, '').replace(/^jivo\s*/i, 'Jivo ');
   const name = fullTitle.split('|')[0].replace(/\s+/g, ' ').trim();
   const pack = packFromTitle(name) || packFromTitle(fullTitle) || (prod && prod.pack ? prod.pack.toLowerCase() : '');
   const sale = numPrice(card.price);
