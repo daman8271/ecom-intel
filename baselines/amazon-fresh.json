@@ -7,8 +7,14 @@
       "rows": 13312,
       "unique_skus": 68,
       "pincodes_with_jivo": 332
+    },
+    {
+      "run_id": "2026-06-01-1200",
+      "captured_at": "2026-06-01T06:52:48.849Z",
+      "rows": 13774,
+      "unique_skus": 64,
+      "pincodes_with_jivo": 332
     }
   ],
-  "updated_at": "2026-05-30T15:35:00.000000+00:00",
-  "note": "Seeded manually from the verified first full 332-pincode sweep (all 12 deterministic review checks passed; verdict was SUSPECT only because the LLM-judgment layer is auth-disabled org-wide). review.py will append OK-run samples going forward."
+  "updated_at": "2026-06-01T06:53:13.889395+00:00"
 }
