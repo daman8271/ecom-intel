@@ -8,13 +8,20 @@
 // out it 503s; logged in it returns per-SKU Now price + same-day SLOT, varying per
 // delivery pincode. (/dp shows only the marketplace promise even logged in — wrong surface.)
 //
+// ⚠️ DEPRECATED SURFACE (2026-06-01) — DO NOT TRUST AS "AMAZON NOW". A 5-agent root-cause
+// (ROOTCAUSE-AmazonNow-2026-06-01.md) proved `i=nowstore` is the legacy Prime-Now/marketplace
+// SEARCH, not real Amazon Now quick-commerce: 0/1970 rows had a minute/hour ETA, it only ever
+// surfaces ~24 of 314 Jivo SKUs (~8%, misses groundnut/bundles/big-packs/non-oil), and the
+// search-CARD price ≠ the PDP buy-box (17/24 SKUs showed impossible multi-price spreads).
+// This file is FROZEN pending a rebuild against the real Now storefront (logged-in alm/ctnow,
+// amazon.in/fmc/storefront?almBrandId=ctnow — the surface Amazon Fresh uses). Cron is PAUSED.
+//
 // SERVICEABILITY (critical): `i=nowstore` is NOT a clean Now-only filter. Where Amazon Now
-// is NOT serviceable, the search silently FALLS BACK to ordinary marketplace listings
-// (multi-day delivery dates / the "FREE delivery on orders over ₹149" add-on line). Those
-// are NOT Amazon Now and must NEVER be recorded as Now prices. A card counts as Now ONLY if
-// its delivery line is a same-day time SLOT (see isNowSlot). A pincode is "serviceable" only
-// if the location resolved correctly AND ≥1 returned card carries a Now slot — otherwise it
-// has no Amazon Now and contributes ZERO rows (we do not substitute the regular Amazon price).
+// is NOT serviceable, the search silently FALLS BACK to ordinary marketplace listings. A card
+// counts as Now ONLY if its delivery line is a true minute/hours ETA (see isNowSlot — which
+// now returns false for this entire surface). A pincode is "serviceable" only if the location
+// resolved correctly AND ≥1 card carries a real Now ETA — otherwise ZERO rows (we never
+// substitute the regular Amazon price).
 //
 // SPEED: the delivery location is account-global server-side, so parallel workers would
 // collide — SEQUENTIAL is mandatory. Instead each pincode is made cheap (~2s, no page
@@ -86,16 +93,25 @@ function numPrice(s) {
   return Number.isFinite(n) ? n : null;
 }
 
-// A card is a GENUINE Amazon Now offer only if its delivery line is a same-day / slotted
-// time window — "Today 8 pm - 10 pm", "Tomorrow 7 am - 9 am". Marketplace-fallback cards
-// (returned where Now isn't serviceable) instead show a multi-day calendar date
-// ("FREE delivery Thu, 11 Jun", "Tomorrow, 2 Jun") or the add-on line
-// ("FREE delivery on orders over ₹149") — none of which match here, so they're rejected.
+// A GENUINE Amazon Now (quick-commerce) offer promises a DURATION — "in 10 minutes",
+// "within 2 hours", "delivered in 30 mins". The i=nowstore SEARCH surface does NOT return
+// these: it is the legacy Prime-Now/marketplace search and only ever shows a calendar date
+// or a scheduled am/pm window, all tailed "on orders over ₹149" — i.e. ordinary MARKETPLACE
+// delivery, NOT Now. (PROVEN 2026-06-01: 0 of 1970 captured rows carried a minute/hour ETA;
+// the page never even says "Amazon Now". See ROOTCAUSE-AmazonNow-2026-06-01.md.)
+//
+// So this gate now REQUIRES a true minute/hours ETA and REJECTS calendar dates, bare am/pm
+// windows, and the "on orders over" marketplace tail. On the nowstore surface it correctly
+// returns false for everything (0 genuine-Now rows) until the scraper is re-pointed at the
+// real Amazon Now storefront (logged-in alm/ctnow, the surface Amazon Fresh uses). An earlier
+// looser version wrongly accepted "Tomorrow 6 am - 8 am" scheduled slots as "Now".
 function isNowSlot(slot) {
   const s = slot || '';
-  const window = /\d{1,2}\s*(?:am|pm)\s*[-–]\s*\d{1,2}\s*(?:am|pm)/i.test(s); // intraday window
-  const sameDay = /\b(?:today|tomorrow)\b/i.test(s) && /\d{1,2}\s*(?:am|pm)/i.test(s);
-  return window || sameDay;
+  const eta = /\b(?:in|within)\s+\d+\s*(?:min|minute|hour|hr)/i.test(s) ||
+              /\bdelivered in\b/i.test(s) || /\b\d+\s*(?:min|mins|minutes)\b/i.test(s);
+  const scheduled = /\bon orders over\b/i.test(s) ||
+                    /\b\d{1,2}\s*(?:jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\b/i.test(s);
+  return eta && !scheduled;
 }
 
 async function passInterstitial(page) {
@@ -192,6 +208,7 @@ async function checkSession(page) {
 }
 
 (async () => {
+  process.stderr.write('[WARN] i=nowstore is the legacy marketplace SEARCH, NOT real Amazon Now — see ROOTCAUSE-AmazonNow-2026-06-01.md. Genuine-Now rows expected = 0 until the alm/ctnow rebuild. Cron is paused.\n');
   if (!fs.existsSync(STATE)) {
     console.error('FATAL: no session at ' + STATE + ' — run import_cookies.js with a fresh Cookie-Editor export.');
     process.exit(2);
