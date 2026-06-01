@@ -5,10 +5,10 @@ display_name: SponsoredSponsored You are seeing this ad based on the product’s
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
-last_seen: 2026-05-31
-observations: 53
+last_seen: 2026-06-01
+observations: 60
 min_price: 193
-max_price: 193
+max_price: 239
 latest_price: 193
 tags:
   - type/sku-hub
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (53 observations)
+## Price history (60 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -87,6 +87,13 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,193,560,65.5,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411030,193,560,65.5,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,193,560,65.5,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110062,239,560,57.3,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Gurgaon,122004,193,560,65.5,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302020,193,560,65.5,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700069,193,560,65.5,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141001,193,560,65.5,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mumbai,400017,193,560,65.5,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Pune,412109,193,560,65.5,1
 ```
 
 ---

@@ -1,34 +1,54 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-1l
+display_name: "Jivo Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres"
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-06-01
+observations: 12
 min_price: 449
 max_price: 449
 latest_price: 449
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-1l
 
 Up: [[skus-index]]
 
+**Jivo Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres**
+
 ## Sold on
 - [[amazon]] — latest ₹449 (0.2% off)
+- [[amazon-fresh]] — latest ₹449 (0.2% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Ghaziabad]] · [[Jaipur]] · [[Kolkata]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-2026-05-21-1330]]
+
+## Price history (12 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ghaziabad,201001,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ghaziabad,201002,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302015,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302018,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302020,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302026,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302033,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700040,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700053,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700089,449,450,0.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700141,449,450,0.2,1
 ```
 
 ---

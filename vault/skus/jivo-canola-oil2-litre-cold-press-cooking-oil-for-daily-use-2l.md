@@ -5,8 +5,8 @@ display_name: "Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use"
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
-last_seen: 2026-05-31
-observations: 275
+last_seen: 2026-06-01
+observations: 276
 min_price: 630
 max_price: 630
 latest_price: 630
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Ludhiana]] · [[Noida]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (275 observations)
+## Price history (276 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -309,6 +309,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1600,2026-05-31,amazon-fresh,Noida,201008,630,700,10,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Noida,201310,630,700,10,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Noida,203207,630,700,10,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Gurgaon,123502,630,700,10,1
 ```
 
 ---

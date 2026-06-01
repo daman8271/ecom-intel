@@ -5,11 +5,11 @@ display_name: SponsoredSponsored You are seeing this ad based on the product’s
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
-last_seen: 2026-05-31
-observations: 51
+last_seen: 2026-06-01
+observations: 71
 min_price: 379
-max_price: 429
-latest_price: 429
+max_price: 529
+latest_price: 405
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVODaily Cooking Pomace Olive Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹429 (33.9% off)
+- [[amazon-fresh]] — latest ₹405 (37.6% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (51 observations)
+## Price history (71 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -85,6 +85,26 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,429,649,33.9,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411030,405,1049,61.4,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,429,649,33.9,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Bengaluru,560001,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110006,405,1049,61.4,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110062,405,1049,61.4,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110090,405,1049,61.4,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Gurgaon,122004,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Gurgaon,122006,405,1049,61.4,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302020,529,1049,49.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302023,529,1049,49.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302025,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302033,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,303003,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700069,405,1049,61.4,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141001,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141121,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141125,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141412,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mumbai,400017,429,1049,59.1,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mumbai,400703,429,1049,59.1,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mysuru,571130,405,649,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Pune,412109,405,649,37.6,1
 ```
 
 ---

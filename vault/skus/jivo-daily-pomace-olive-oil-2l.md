@@ -5,8 +5,8 @@ display_name: Jivo Daily Pomace Olive Oil (1 pc (2 L))
 platforms:
   - zepto
 first_seen: 2026-05-30
-last_seen: 2026-05-31
-observations: 6
+last_seen: 2026-06-01
+observations: 7
 min_price: 941
 max_price: 941
 latest_price: 941
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]]
 
-## Runs that observed this SKU (6)
-[[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]]
+## Runs that observed this SKU (7)
+[[zepto-2026-06-01-0900]] · [[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]]
 
-## Price history (6 observations)
+## Price history (7 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -40,6 +40,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-0900,2026-05-31,zepto,Bengaluru,560014,941,1449,35.1,1
 2026-05-31-1200,2026-05-31,zepto,Bengaluru,560014,941,1449,35.1,1
 2026-05-31-1600,2026-05-31,zepto,Bengaluru,560014,941,1449,35.1,1
+2026-06-01-0900,2026-06-01,zepto,Bengaluru,560014,941,1449,35.1,1
 ```
 
 ---

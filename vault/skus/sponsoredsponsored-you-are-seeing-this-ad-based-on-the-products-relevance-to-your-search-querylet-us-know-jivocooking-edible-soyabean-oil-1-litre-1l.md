@@ -5,8 +5,8 @@ display_name: SponsoredSponsored You are seeing this ad based on the product’s
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
-last_seen: 2026-05-31
-observations: 15
+last_seen: 2026-06-01
+observations: 16
 min_price: 199
 max_price: 199
 latest_price: 199
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Delhi]] · [[Jaipur]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]]
 
-## Price history (15 observations)
+## Price history (16 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -49,6 +49,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,570001,199,225,11.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,199,225,11.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,199,225,11.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mysuru,571130,199,225,11.6,1
 ```
 
 ---

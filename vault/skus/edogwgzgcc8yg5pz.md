@@ -5,8 +5,8 @@ display_name: coconutoil 500G (500 GMS)
 platforms:
   - flipkart
 first_seen: 2026-05-22
-last_seen: 2026-05-31
-observations: 29
+last_seen: 2026-06-01
+observations: 30
 min_price: 335
 max_price: 373
 latest_price: 335
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[flipkart]] — latest ₹335 (15.8% off)
 
-## Runs that observed this SKU (29)
-[[flipkart-2026-05-31-1600]] · [[flipkart-2026-05-31-1200]] · [[flipkart-2026-05-31-0900]] · [[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
+## Runs that observed this SKU (30)
+[[flipkart-2026-06-01-0900]] · [[flipkart-2026-05-31-1600]] · [[flipkart-2026-05-31-1200]] · [[flipkart-2026-05-31-0900]] · [[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
 
-## Price history (29 observations)
+## Price history (30 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -60,6 +60,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-0900,2026-05-31,flipkart,All India,-,335,398,15.8,1
 2026-05-31-1200,2026-05-31,flipkart,All India,-,335,398,15.8,1
 2026-05-31-1600,2026-05-31,flipkart,All India,-,335,398,15.8,1
+2026-06-01-0900,2026-06-01,flipkart,All India,-,335,398,15.8,1
 ```
 
 ---

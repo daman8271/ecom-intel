@@ -1,13 +1,14 @@
 ---
 type: sku-hub
 canonical_sku: jivo-premium-quinoa-gluten-free-na
+display_name: Jivo Premium Quinoa Gluten Free
 platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-31
-observations: 2
-min_price: 179
+last_seen: 2026-06-01
+observations: 6
+min_price: 109
 max_price: 249
 latest_price: 249
 tags:
@@ -20,22 +21,28 @@ tags:
 
 Up: [[skus-index]]
 
+**Jivo Premium Quinoa Gluten Free**
+
 ## Sold on
 - [[amazon]] — latest ₹179 (40.1% off)
 - [[amazon-fresh]] — latest ₹249 (37.6% off)
 
 ## Available in cities
-[[Bhopal]]
+[[Bhopal]] · [[Gurgaon]] · [[Kolkata]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (2 observations)
+## Price history (6 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,179,299,40.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,Bhopal,462001,249,399,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Gurgaon,123502,109,199,45.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700024,249,399,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mumbai,400611,249,399,37.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Pune,411051,249,399,37.6,1
 ```
 
 ---

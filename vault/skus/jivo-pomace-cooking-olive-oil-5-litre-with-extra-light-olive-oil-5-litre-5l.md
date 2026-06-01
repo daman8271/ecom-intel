@@ -6,8 +6,8 @@ platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-31
-observations: 717
+last_seen: 2026-06-01
+observations: 727
 min_price: 4199
 max_price: 4599
 latest_price: 4199
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (4)
-[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (5)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (717 observations)
+## Price history (727 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -754,6 +754,16 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1600,2026-05-31,amazon-fresh,Surat,394410,4199,7399,43.2,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Surat,394510,4199,7399,43.2,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Surat,394540,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110040,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110081,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110090,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Indore,452001,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302026,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,142032,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,142033,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Noida,201008,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Noida,203207,4199,7399,43.2,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Surat,394315,4199,7399,43.2,1
 ```
 
 ---

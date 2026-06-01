@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cooking-edible-soyabean-oil-5-litre-5l
-display_name: Jivo Cooking Edible Soyabean Oil 5 Litre
 platforms:
   - amazon
   - amazon-fresh
@@ -20,8 +19,6 @@ tags:
 # jivo-cooking-edible-soyabean-oil-5-litre-5l
 
 Up: [[skus-index]]
-
-**Jivo Cooking Edible Soyabean Oil 5 Litre**
 
 ## Sold on
 - [[amazon]] — latest ₹989 (10.1% off)

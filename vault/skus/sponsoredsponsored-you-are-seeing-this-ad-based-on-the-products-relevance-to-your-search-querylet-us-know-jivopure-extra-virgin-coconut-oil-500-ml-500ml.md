@@ -5,8 +5,8 @@ display_name: SponsoredSponsored You are seeing this ad based on the product’s
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
-last_seen: 2026-05-31
-observations: 29
+last_seen: 2026-06-01
+observations: 48
 min_price: 265
 max_price: 265
 latest_price: 265
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹265 (33.6% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Bhopal]] · [[Delhi]] · [[Ghaziabad]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Bhopal]] · [[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (29 observations)
+## Price history (48 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -63,6 +63,25 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1600,2026-05-31,amazon-fresh,Mysuru,571130,265,399,33.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Pune,411030,265,399,33.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Pune,412301,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Bengaluru,560001,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110006,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110062,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Delhi,110090,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Gurgaon,122004,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Gurgaon,122006,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302020,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302023,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302025,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,302033,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Jaipur,303003,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Kolkata,700069,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141001,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141121,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141125,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Ludhiana,141412,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mumbai,400017,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Mumbai,400703,265,399,33.6,1
+2026-06-01-0900,2026-06-01,amazon-fresh,Pune,412109,265,399,33.6,1
 ```
 
 ---
