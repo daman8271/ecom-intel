@@ -6,7 +6,7 @@ platforms:
   - amazon-now
 first_seen: 2026-06-01
 last_seen: 2026-06-01
-observations: 2
+observations: 3
 min_price: 189
 max_price: 189
 latest_price: 189
@@ -27,15 +27,16 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]]
 
-## Runs that observed this SKU (1)
-[[amazon-now-2026-06-01-1200]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-01-1600]] · [[amazon-now-2026-06-01-1200]]
 
-## Price history (2 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,amazon-now,Delhi,110013,189,225,16,1
 2026-06-01-1200,2026-06-01,amazon-now,Delhi,110070,189,225,16,1
+2026-06-01-1600,2026-06-01,amazon-now,Delhi,110048,189,225,16,1
 ```
 
 ---

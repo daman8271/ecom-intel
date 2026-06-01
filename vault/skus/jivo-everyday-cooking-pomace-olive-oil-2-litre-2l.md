@@ -7,7 +7,7 @@ platforms:
   - amazon-now
 first_seen: 2026-05-31
 last_seen: 2026-06-01
-observations: 144
+observations: 152
 min_price: 849
 max_price: 849
 latest_price: 849
@@ -28,12 +28,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹849 (41.4% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Noida]]
+[[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mysuru]] · [[Noida]]
 
-## Runs that observed this SKU (7)
-[[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (8)
+[[amazon-now-2026-06-01-1600]] · [[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (144 observations)
+## Price history (152 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -181,6 +181,14 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,amazon-now,Noida,201305,849,1449,41.4,1
 2026-06-01-1200,2026-06-01,amazon-now,Noida,201309,849,1449,41.4,1
 2026-06-01-1200,2026-06-01,amazon-now,Noida,201310,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570001,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570003,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570004,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570011,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570016,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570018,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570019,849,1449,41.4,1
+2026-06-01-1600,2026-06-01,amazon-now,Mysuru,570020,849,1449,41.4,1
 ```
 
 ---

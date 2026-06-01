@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-virgin-olive-oil-1-litre-1l
-display_name: SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOExtra Virgin Olive Oil 1 litre
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -18,8 +17,6 @@ tags:
 # sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-virgin-olive-oil-1-litre-1l
 
 Up: [[skus-index]]
-
-**SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOExtra Virgin Olive Oil 1 litre**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹759 (24.0% off)

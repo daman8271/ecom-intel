@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivogroundnut-oil-1-litre-1l
-display_name: SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOGroundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -18,8 +17,6 @@ tags:
 # sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivogroundnut-oil-1-litre-1l
 
 Up: [[skus-index]]
-
-**SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOGroundnut Oil 1 Litre**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹193 (65.5% off)

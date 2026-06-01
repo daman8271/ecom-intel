@@ -1,12 +1,13 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l
+display_name: Jivo Pomace Cooking Olive Oil 5 Litre with Extra light olive oil 5 Litre
 platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
 last_seen: 2026-06-01
-observations: 727
+observations: 745
 min_price: 4199
 max_price: 4599
 latest_price: 4199
@@ -20,6 +21,8 @@ tags:
 
 Up: [[skus-index]]
 
+**Jivo Pomace Cooking Olive Oil 5 Litre with Extra light olive oil 5 Litre**
+
 ## Sold on
 - [[amazon]] — latest ₹4599 (37.8% off)
 - [[amazon-fresh]] — latest ₹4199 (43.2% off)
@@ -27,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (5)
-[[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (6)
+[[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (727 observations)
+## Price history (745 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -761,6 +764,24 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,amazon-fresh,Noida,201008,4199,7399,43.2,1
 2026-06-01-0900,2026-06-01,amazon-fresh,Noida,203207,4199,7399,43.2,1
 2026-06-01-0900,2026-06-01,amazon-fresh,Surat,394315,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110001,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110002,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110004,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110006,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110031,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110053,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110054,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110055,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110084,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303120,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303348,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303604,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303701,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Ludhiana,142032,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Mumbai,400702,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Mumbai,400707,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Pune,410506,4199,7399,43.2,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Surat,394315,4199,7399,43.2,1
 ```
 
 ---

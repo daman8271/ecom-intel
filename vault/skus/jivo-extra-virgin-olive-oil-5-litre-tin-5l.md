@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5-litre-tin-5l
-display_name: Jivo Extra Virgin Olive Oil 5 litre Tin
 platforms:
   - amazon-now
 first_seen: 2026-06-01
@@ -15,8 +14,6 @@ tags:
 # jivo-extra-virgin-olive-oil-5-litre-tin-5l
 
 Up: [[skus-index]]
-
-**Jivo Extra Virgin Olive Oil 5 litre Tin**
 
 ## Sold on
 - [[amazon-now]]

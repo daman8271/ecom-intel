@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na
-display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D
 platforms:
   - amazon-now
 first_seen: 2026-06-01
@@ -18,8 +17,6 @@ tags:
 # jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na
 
 Up: [[skus-index]]
-
-**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D**
 
 ## Sold on
 - [[amazon-now]] — latest ₹209 (18.0% off)

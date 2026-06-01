@@ -4,7 +4,7 @@ platform: zepto
 kind: marketplace
 shape: per-pincode
 risk: low
-runs: 9
+runs: 10
 skus_tracked: 12
 tags:
   - type/platform-hub
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **zepto**. zepto scraper.
 
 - **Type:** marketplace · **Shape:** per-pincode · **Block risk:** low
-- **Runs captured:** 9 · **SKUs tracked:** 12
+- **Runs captured:** 10 · **SKUs tracked:** 12
 
 ## SKUs on zepto (12)
 [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-combo-1l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-combo-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]]
 
-## Runs (9) — newest first
+## Runs (10) — newest first
 
 <!-- runs:start -->
+- [[zepto-2026-06-01-1600]] — 2026-06-01 · verdict OK <!-- run -->
 - [[zepto-2026-06-01-1200]] — 2026-06-01 · verdict OK <!-- run -->
 - [[zepto-2026-06-01-0900]] — 2026-06-01 · verdict OK <!-- run -->
 - [[zepto-2026-05-31-1600]] — 2026-05-31 · verdict OK <!-- run -->

@@ -1,34 +1,51 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-sunflower-oil-combo-pack-5l
+display_name: Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre)
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-06-01
+observations: 9
 min_price: 1078
 max_price: 1078
 latest_price: 1078
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-cold-pressed-sunflower-oil-combo-pack-5l
 
 Up: [[skus-index]]
 
+**Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre)**
+
 ## Sold on
 - [[amazon]] — latest ₹1078 (33.7% off)
+- [[amazon-fresh]]
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Indore]] · [[Jaipur]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-06-01-1600]] · [[amazon-2026-05-21-1330]]
+
+## Price history (9 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,1078,1625,33.7,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Bengaluru,562130,,,,0
+2026-06-01-1600,2026-06-01,amazon-fresh,Bhopal,462001,,,,0
+2026-06-01-1600,2026-06-01,amazon-fresh,Chandigarh,160021,,,,0
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110090,,,,0
+2026-06-01-1600,2026-06-01,amazon-fresh,Indore,452001,,,,0
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303003,,,,0
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303006,,,,0
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303010,,,,0
 ```
 
 ---

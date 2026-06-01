@@ -3,15 +3,17 @@ type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l
 display_name: Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O
 platforms:
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-06-01
 last_seen: 2026-06-01
-observations: 27
+observations: 64
 min_price: 243
 max_price: 259
 latest_price: 259
 tags:
   - type/sku-hub
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -22,15 +24,16 @@ Up: [[skus-index]]
 **Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O**
 
 ## Sold on
+- [[amazon-fresh]] — latest ₹259 (30.9% off)
 - [[amazon-now]] — latest ₹259 (30.9% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Jaipur]] · [[Ludhiana]] · [[Mumbai]] · [[Pune]]
+[[Bengaluru]] · [[Bhopal]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]]
+## Runs that observed this SKU (4)
+[[amazon-now-2026-06-01-1600]] · [[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]] · [[amazon-fresh-2026-06-01-1600]]
 
-## Price history (27 observations)
+## Price history (64 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -61,6 +64,43 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,amazon-now,Pune,411035,259,375,30.9,1
 2026-06-01-1200,2026-06-01,amazon-now,Pune,411047,259,375,30.9,1
 2026-06-01-1200,2026-06-01,amazon-now,Pune,412401,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Bengaluru,560039,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110003,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Faridabad,121002,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Gurgaon,123502,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Indore,452001,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,302012,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,302018,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,302021,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,302028,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303009,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303105,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Jaipur,303807,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Kolkata,700069,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Ludhiana,141007,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Ludhiana,141103,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Ludhiana,142031,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Ludhiana,142032,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Noida,201008,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Pune,411011,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Pune,411035,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Pune,412103,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Pune,412208,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Pune,412213,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-fresh,Surat,394160,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Bengaluru,560039,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Bengaluru,562130,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Bhopal,462001,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Delhi,110018,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Delhi,110048,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Ghaziabad,201201,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Jaipur,302028,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Mumbai,400003,248,375,33.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Mumbai,400017,248,375,33.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Mumbai,400030,248,375,33.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Pune,412211,259,375,30.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Pune,412403,248,375,33.9,1
+2026-06-01-1600,2026-06-01,amazon-now,Surat,394510,259,375,30.9,1
 ```
 
 ---
