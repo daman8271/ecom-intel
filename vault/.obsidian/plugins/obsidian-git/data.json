@@ -1,0 +1,10 @@
+{
+  "autoPullInterval": 15,
+  "autoPullOnBoot": true,
+  "autoSaveInterval": 0,
+  "autoPushInterval": 0,
+  "disablePush": true,
+  "pullBeforePush": true,
+  "differentIntervalCommitAndPush": false,
+  "syncMethod": "merge"
+}

@@ -22,7 +22,7 @@ Up: [[index]] · Sibling: [[analysis-index]]
 ## 🟢 Cheapest right now (lowest `latest_price`)
 ```dataview
 TABLE WITHOUT ID
-  link(file.link, display_name) AS "Product",
+  link(file.link, default(display_name, file.name)) AS "Product",
   latest_price AS "₹ now", min_price AS "₹ low", max_price AS "₹ high",
   join(platforms, ", ") AS "Where", last_seen AS "Seen"
 FROM "skus"
@@ -34,7 +34,7 @@ LIMIT 30
 ## 🔻 At/under their cheapest-ever (buy-signal: `latest_price` ≤ `min_price`)
 ```dataview
 TABLE WITHOUT ID
-  link(file.link, display_name) AS "Product",
+  link(file.link, default(display_name, file.name)) AS "Product",
   latest_price AS "₹ now", min_price AS "₹ best-ever",
   join(platforms, ", ") AS "Where", last_seen AS "Seen"
 FROM "skus"
@@ -45,7 +45,7 @@ SORT latest_price ASC
 ## 📈 Biggest price swing (spread = `max_price` − `min_price`)
 ```dataview
 TABLE WITHOUT ID
-  link(file.link, display_name) AS "Product",
+  link(file.link, default(display_name, file.name)) AS "Product",
   min_price AS "low", max_price AS "high",
   (max_price - min_price) AS "swing", latest_price AS "now",
   join(platforms, ", ") AS "Where"
@@ -58,7 +58,7 @@ LIMIT 25
 ## 🧊 Possibly delisted / stockout (not seen in 2+ days)
 ```dataview
 TABLE WITHOUT ID
-  link(file.link, display_name) AS "Product",
+  link(file.link, default(display_name, file.name)) AS "Product",
   last_seen AS "Last seen", latest_price AS "Last ₹",
   join(platforms, ", ") AS "Where"
 FROM "skus"
@@ -70,7 +70,7 @@ LIMIT 30
 ## 📊 Most-observed SKUs (data depth)
 ```dataview
 TABLE WITHOUT ID
-  link(file.link, display_name) AS "Product",
+  link(file.link, default(display_name, file.name)) AS "Product",
   observations AS "obs", latest_price AS "₹ now",
   join(platforms, ", ") AS "Where", first_seen AS "Since"
 FROM "skus"
@@ -83,7 +83,7 @@ LIMIT 20
 Change `""` to `blinkit` / `flipkart` / `flipkart-minutes` / `amazon` to retarget.
 ```dataview
 TABLE WITHOUT ID
-  link(file.link, display_name) AS "Product",
+  link(file.link, default(display_name, file.name)) AS "Product",
   latest_price AS "₹ now", min_price AS "₹ low", max_price AS "₹ high",
   observations AS "obs"
 FROM "skus"
@@ -108,7 +108,7 @@ SORT length(rows) DESC
 
 ### Notes
 - `latest_price`/`min_price`/`max_price` exist only on SKUs that were ever **in-stock and
-  priced** (currently ~659 of ~817 hubs). SKUs that never showed a price are omitted from
+  priced** (currently ~725 of ~883 hubs). SKUs that never showed a price are omitted from
   price tables by the `WHERE … latest_price` guard — that's intentional.
 - Prices mix per-pincode (quick-commerce: blinkit, , flipkart-minutes) and
   national (amazon, flipkart). `min`/`max`/`latest` are across **all** observed locations

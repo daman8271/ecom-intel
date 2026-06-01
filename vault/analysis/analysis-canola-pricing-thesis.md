@@ -37,7 +37,7 @@ the budget **Sano** line undercutting the flagship Jivo line on the same shelf?
 ## Live data — every canola SKU by current price
 ```dataview
 TABLE WITHOUT ID
-  link(file.link, display_name) AS "Product",
+  link(file.link, default(display_name, file.name)) AS "Product",
   latest_price AS "₹ now", min_price AS "₹ low", max_price AS "₹ high",
   (max_price - min_price) AS "swing",
   join(platforms, ", ") AS "Where", last_seen AS "Seen"

@@ -30,3 +30,19 @@ tools/whatsapp/*.out
 platforms/bigbasket/header_api.json
 platforms/bigbasket/listing_raw.json
 platforms/bigbasket/listing_inpage.json
+
+# --- Obsidian: config + enabled plugins are tracked for fresh-clone bootstrap, but
+# keep machine-specific / runtime-credential state OUT of git ---
+vault/.obsidian/plugins/*/obsidian_askpass.sh
+vault/.obsidian/plugins/*/*.lock
+vault/.obsidian/plugins/*/.git/
+
+# --- Obsidian cruft guards: stray files Obsidian creates by accident ---
+# Bases stubs (this vault doesn't use Bases)
+vault/**/*.base
+# "Untitled" placeholders (note / canvas / base)
+vault/Untitled*
+# Stray daily note created at the vault ROOT (it shadows the real daily/ note and
+# hijacks the "Today" link). Leading slash anchors to repo root, so the real
+# vault/daily/YYYY-MM-DD.md is NOT matched.
+/vault/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9].md

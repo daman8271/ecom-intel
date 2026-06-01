@@ -274,8 +274,21 @@ def platform_shape(prows):
     return "national" if all(r["pincode"] in NATIONAL_PIN for r in prows) else "per-pincode"
 
 
+def humanize_sku(canon):
+    """Last-resort display name derived from the canonical slug, so a hub is NEVER nameless.
+    'jivo-a2-ghee-500-ml-500ml' -> 'Jivo A2 Ghee 500 Ml 500ml'. Title-cases word-initial
+    alphabetic tokens, leaves tokens that touch a digit (pack sizes, '1l', 'a2') untouched."""
+    words = [w for w in str(canon or "").replace("_", " ").replace("-", " ").split() if w]
+    out = []
+    for w in words:
+        out.append(w if (w[0].isdigit() or w[-1].isdigit()) else w[:1].upper() + w[1:])
+    return " ".join(out) or str(canon or "untitled")
+
+
 def sku_display(enrich, platform, canon):
-    return enrich.get((platform, canon)) or enrich.get(("", canon)) or ""
+    """Best available human name; falls back to the slug so it is never blank."""
+    return (enrich.get((platform, canon)) or enrich.get(("", canon))
+            or humanize_sku(canon))
 
 
 def build_run_note(platform, run_id, rrows, verdict, prev_rid, next_rid, enrich):
@@ -378,10 +391,10 @@ def build_sku_hub(canon, srows, enrich):
         disp = sku_display(enrich, p, canon)
         if disp:
             break
+    if not disp:
+        disp = humanize_sku(canon)
 
-    fm = [("type", "sku-hub"), ("canonical_sku", canon)]
-    if disp:
-        fm.append(("display_name", disp))
+    fm = [("type", "sku-hub"), ("canonical_sku", canon), ("display_name", disp)]
     fm += [("platforms", platforms), ("first_seen", dates[0]), ("last_seen", dates[-1]),
            ("observations", len(srows))]
     if prices:
