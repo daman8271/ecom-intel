@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-1l
-display_name: "Jivo Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres"
 platforms:
   - amazon
   - amazon-fresh
@@ -20,8 +19,6 @@ tags:
 # jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-1l
 
 Up: [[skus-index]]
-
-**Jivo Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres**
 
 ## Sold on
 - [[amazon]] — latest ₹449 (0.2% off)

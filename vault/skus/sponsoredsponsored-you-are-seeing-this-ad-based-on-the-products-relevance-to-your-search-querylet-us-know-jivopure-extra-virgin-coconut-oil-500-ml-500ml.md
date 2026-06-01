@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivopure-extra-virgin-coconut-oil-500-ml-500ml
-display_name: SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOPure Extra Virgin Coconut Oil 500 ml
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -18,8 +17,6 @@ tags:
 # sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivopure-extra-virgin-coconut-oil-500-ml-500ml
 
 Up: [[skus-index]]
-
-**SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOPure Extra Virgin Coconut Oil 500 ml**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹265 (33.6% off)

@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l
-display_name: "Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use"
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -18,8 +17,6 @@ tags:
 # jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l
 
 Up: [[skus-index]]
-
-**Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹630 (10.0% off)

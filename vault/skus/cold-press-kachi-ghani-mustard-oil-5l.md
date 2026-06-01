@@ -6,7 +6,7 @@ platforms:
   - bigbasket
 first_seen: 2026-06-01
 last_seen: 2026-06-01
-observations: 1
+observations: 2
 min_price: 926.96
 max_price: 926.96
 latest_price: 926.96
@@ -24,14 +24,15 @@ Up: [[skus-index]]
 ## Sold on
 - [[bigbasket]] — latest ₹926.96 (25.8% off)
 
-## Runs that observed this SKU (1)
-[[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (2)
+[[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (1 observations)
+## Price history (2 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,bigbasket,All India,-,926.96,1250,25.8,1
+2026-06-01-1200,2026-06-01,bigbasket,All India,-,926.96,1250,25.8,1
 ```
 
 ---

@@ -6,7 +6,7 @@ platforms:
   - amazon-now
 first_seen: 2026-06-01
 last_seen: 2026-06-01
-observations: 12
+observations: 27
 min_price: 243
 max_price: 259
 latest_price: 259
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹259 (30.9% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Jaipur]] · [[Ludhiana]] · [[Mumbai]] · [[Pune]]
+[[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Jaipur]] · [[Ludhiana]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-now-2026-06-01-0900]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]]
 
-## Price history (12 observations)
+## Price history (27 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -46,6 +46,21 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,amazon-now,Mumbai,400073,248,375,33.9,1
 2026-06-01-0900,2026-06-01,amazon-now,Pune,410301,259,375,30.9,1
 2026-06-01-0900,2026-06-01,amazon-now,Pune,411001,259,375,30.9,1
+2026-06-01-1200,2026-06-01,amazon-now,Delhi,110006,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Delhi,110013,259,375,30.9,1
+2026-06-01-1200,2026-06-01,amazon-now,Delhi,110040,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Delhi,110070,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Gurgaon,122051,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Gurgaon,122106,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Ludhiana,141417,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Ludhiana,142026,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Ludhiana,142031,243,375,35.2,1
+2026-06-01-1200,2026-06-01,amazon-now,Mumbai,400019,248,375,33.9,1
+2026-06-01-1200,2026-06-01,amazon-now,Mumbai,400023,248,375,33.9,1
+2026-06-01-1200,2026-06-01,amazon-now,Pune,410506,248,375,33.9,1
+2026-06-01-1200,2026-06-01,amazon-now,Pune,411035,259,375,30.9,1
+2026-06-01-1200,2026-06-01,amazon-now,Pune,411047,259,375,30.9,1
+2026-06-01-1200,2026-06-01,amazon-now,Pune,412401,259,375,30.9,1
 ```
 
 ---

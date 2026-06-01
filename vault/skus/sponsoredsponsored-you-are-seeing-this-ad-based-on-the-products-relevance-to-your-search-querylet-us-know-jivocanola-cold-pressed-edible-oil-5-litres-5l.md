@@ -1,14 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-5-litres-5l
+display_name: SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOCanola Cold Pressed Edible Oil - 5 Litres
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
-last_seen: 2026-05-31
-observations: 1
+last_seen: 2026-06-01
+observations: 2
 min_price: 1207
-max_price: 1207
-latest_price: 1207
+max_price: 1249
+latest_price: 1249
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -18,20 +19,23 @@ tags:
 
 Up: [[skus-index]]
 
+**SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOCanola Cold Pressed Edible Oil - 5 Litres**
+
 ## Sold on
-- [[amazon-fresh]] — latest ₹1207 (26.8% off)
+- [[amazon-fresh]] — latest ₹1249 (24.3% off)
 
 ## Available in cities
-[[Pune]]
+[[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-05-31-1200]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-05-31-1200]]
 
-## Price history (1 observations)
+## Price history (2 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,amazon-fresh,Pune,411005,1207,1650,26.8,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mumbai,400001,1249,1650,24.3,1
 ```
 
 ---

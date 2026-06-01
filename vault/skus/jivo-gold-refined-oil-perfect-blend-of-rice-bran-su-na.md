@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na
-display_name: Jivo Gold Refined Oil Perfect Blend of Rice Bran & Su
 platforms:
   - amazon-now
 first_seen: 2026-06-01
@@ -18,8 +17,6 @@ tags:
 # jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na
 
 Up: [[skus-index]]
-
-**Jivo Gold Refined Oil Perfect Blend of Rice Bran & Su**
 
 ## Sold on
 - [[amazon-now]] — latest ₹939 (11.4% off)

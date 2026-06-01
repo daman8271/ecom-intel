@@ -1,11 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-healthy-wheatgrass-juice-sugar-free-200ml
+display_name: Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free (200 ml)
 platforms:
   - 
 first_seen: 2026-05-22
-last_seen: 2026-05-31
-observations: 21
+last_seen: 2026-06-01
+observations: 22
 min_price: 50
 max_price: 50
 latest_price: 50
@@ -18,16 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
+**Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free (200 ml)**
+
 ## Sold on
 - [[]] — latest ₹50
 
 ## Available in cities
 [[Bengaluru]]
 
-## Runs that observed this SKU (17)
-[[-2026-05-31-0900]] · [[-2026-05-30-1200]] · [[-2026-05-30-0900]] · [[-2026-05-29-1600]] · [[-2026-05-29-1200]] · [[-2026-05-28-1200]] · [[-2026-05-27-1600]] · [[-2026-05-27-1200]] · [[-2026-05-26-1600]] · [[-2026-05-26-1200]] · [[-2026-05-25-1600]] · [[-2026-05-25-1200]] · [[-2026-05-25-0900]] · [[-2026-05-24-1600]] · [[-2026-05-24-1200]] · [[-2026-05-24-0900]] · [[-2026-05-22-1600]]
+## Runs that observed this SKU (18)
+[[-2026-06-01-1200]] · [[-2026-05-31-0900]] · [[-2026-05-30-1200]] · [[-2026-05-30-0900]] · [[-2026-05-29-1600]] · [[-2026-05-29-1200]] · [[-2026-05-28-1200]] · [[-2026-05-27-1600]] · [[-2026-05-27-1200]] · [[-2026-05-26-1600]] · [[-2026-05-26-1200]] · [[-2026-05-25-1600]] · [[-2026-05-25-1200]] · [[-2026-05-25-0900]] · [[-2026-05-24-1600]] · [[-2026-05-24-1200]] · [[-2026-05-24-0900]] · [[-2026-05-22-1600]]
 
-## Price history (21 observations)
+## Price history (22 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -52,6 +55,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0900,2026-05-30,,Bengaluru,560019,50,50,0,1
 2026-05-30-1200,2026-05-30,,Bengaluru,560014,50,50,0,1
 2026-05-31-0900,2026-05-31,,Bengaluru,560019,50,50,0,1
+2026-06-01-1200,2026-06-01,,Bengaluru,560019,50,50,0,1
 ```
 
 ---

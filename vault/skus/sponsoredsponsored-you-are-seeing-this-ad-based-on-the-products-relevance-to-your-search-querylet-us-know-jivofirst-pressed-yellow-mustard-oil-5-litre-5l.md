@@ -1,7 +1,6 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivofirst-pressed-yellow-mustard-oil-5-litre-5l
-display_name: SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOFirst Pressed Yellow Mustard Oil 5 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-01
@@ -18,8 +17,6 @@ tags:
 # sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivofirst-pressed-yellow-mustard-oil-5-litre-5l
 
 Up: [[skus-index]]
-
-**SponsoredSponsored You are seeing this ad based on the product’s relevance to your search query.Let us know JIVOFirst Pressed Yellow Mustard Oil 5 Litre**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1269 (29.3% off)

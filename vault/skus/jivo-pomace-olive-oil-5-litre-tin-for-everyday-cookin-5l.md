@@ -6,7 +6,7 @@ platforms:
   - amazon-now
 first_seen: 2026-06-01
 last_seen: 2026-06-01
-observations: 1
+observations: 3
 min_price: 2017
 max_price: 2017
 latest_price: 2017
@@ -27,14 +27,16 @@ Up: [[skus-index]]
 ## Available in cities
 [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-now-2026-06-01-0900]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]]
 
-## Price history (1 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,amazon-now,Pune,410301,2017,4999,59.7,1
+2026-06-01-1200,2026-06-01,amazon-now,Pune,411047,2017,4999,59.7,1
+2026-06-01-1200,2026-06-01,amazon-now,Pune,412401,2017,4999,59.7,1
 ```
 
 ---

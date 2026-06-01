@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-06-01
 last_seen: 2026-06-01
-observations: 25
+observations: 50
 min_price: 1269
 max_price: 1269
 latest_price: 1269
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹1269 (29.3% off)
 
 ## Available in cities
-[[Kolkata]] · [[Mysuru]]
+[[Bengaluru]] · [[Kolkata]] · [[Mysuru]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-01-0900]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]]
 
-## Price history (25 observations)
+## Price history (50 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -59,6 +59,31 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,amazon-fresh,Mysuru,570028,1269,1795,29.3,1
 2026-06-01-0900,2026-06-01,amazon-fresh,Mysuru,571130,1269,1795,29.3,1
 2026-06-01-0900,2026-06-01,amazon-fresh,Mysuru,571311,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Bengaluru,562130,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700001,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700015,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700019,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700022,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700024,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700040,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700053,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700069,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700089,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700107,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700141,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570001,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570003,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570004,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570008,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570010,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570016,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570018,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570019,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570020,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570026,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,570028,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,571130,1269,1795,29.3,1
+2026-06-01-1200,2026-06-01,amazon-fresh,Mysuru,571311,1269,1795,29.3,1
 ```
 
 ---
