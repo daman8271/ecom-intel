@@ -1,0 +1,13 @@
+{
+  "platform": "amazon-now",
+  "samples": [
+    {
+      "run_id": "2026-06-01-0900",
+      "captured_at": "2026-06-01T04:07:54.453Z",
+      "rows": 1855,
+      "unique_skus": 27,
+      "pincodes_with_jivo": 292
+    }
+  ],
+  "updated_at": "2026-06-01T04:08:10.357945+00:00"
+}
