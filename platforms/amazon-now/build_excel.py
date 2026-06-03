@@ -13,6 +13,58 @@ summary = d['summary']
 # platform name derived from the folder this runs in (blinkit, zepto, ...)
 PLATFORM = os.path.basename(os.getcwd()).replace('-', ' ').title()
 
+# --- Amazon Now (ctnow surface) honesty layer -------------------------------
+# Every published row is a GENUINE Amazon Now offer (the scraper keeps only cards
+# carrying the blue Now speed badge). `now_eta` is the speed tier Amazon promised:
+#   "10 min"  = sub-hour quick-commerce        |  "today"     = same-day Now slot
+#   "overnight"/"tomorrow" = the Now storefront's slower scheduled tiers
+# These tiers are reported honestly so "10 min" is never conflated with "tomorrow".
+TIER_ORDER = ["10 min", "today", "overnight", "tomorrow"]
+def tier_rank(t):
+    t = (t or '').strip().lower()
+    return TIER_ORDER.index(t) if t in TIER_ORDER else len(TIER_ORDER)
+
+tier_counts = OrderedDict()
+for t in TIER_ORDER:
+    n = sum(1 for r in rows if (r.get('now_eta') or r.get('now_slot') or '').strip().lower() == t)
+    if n:
+        tier_counts[t] = n
+# any unexpected non-empty tier label
+for r in rows:
+    t = (r.get('now_eta') or r.get('now_slot') or '').strip().lower()
+    if t and t not in tier_counts and t not in TIER_ORDER:
+        tier_counts[t] = tier_counts.get(t, 0) + 1
+
+# Catalog coverage: classify the full Jivo catalog (the core Amazon scraper's
+# products.json, the authoritative 314-ASIN list) into PRESENT / OUT OF STOCK /
+# NOT ON NOW. Matched by ASIN (the stable key across surfaces). Best-effort: if the
+# catalog file is unavailable the Catalog Coverage sheet is simply skipped.
+CATALOG = {}
+for cat_path in ('../amazon/products.json', 'products.json'):
+    try:
+        for p in json.load(open(cat_path)):
+            if p.get('asin'):
+                CATALOG[p['asin']] = p
+        if CATALOG:
+            break
+    except Exception:
+        continue
+
+now_by_asin = defaultdict(list)
+for r in rows:
+    if r.get('asin'):
+        now_by_asin[r['asin']].append(r)
+
+def coverage_status(asin):
+    rs = now_by_asin.get(asin)
+    if not rs:
+        return "NOT ON NOW"
+    return "PRESENT" if any(x.get('in_stock') for x in rs) else "OUT OF STOCK"
+
+cov_counts = OrderedDict([("PRESENT", 0), ("OUT OF STOCK", 0), ("NOT ON NOW", 0)])
+for asin in CATALOG:
+    cov_counts[coverage_status(asin)] += 1
+
 JIVO_GREEN = "008B3A"
 HDR = PatternFill("solid", fgColor=JIVO_GREEN)
 HDR_FONT = Font(bold=True, color="FFFFFF", size=11)
@@ -61,6 +113,11 @@ ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TIT
 ws.merge_cells("A1:G1")
 ws["A2"] = f"Captured {summary['captured_at'][:16].replace('T',' ')} IST  -  {summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo  -  {summary['unique_skus']} unique SKUs  -  {summary['total_rows']} datapoints  -  scrape {summary['wall_s']}s"
 ws["A2"].font = SUB_FONT; ws.merge_cells("A2:G2")
+# Honest Now-surface caption: genuine Amazon Now (ctnow) only, with the speed-tier mix.
+tier_str = "  ·  ".join(f"{k}: {v}" for k, v in tier_counts.items()) or "no Now offers in this run"
+ws["A3"] = (f"Source: genuine Amazon Now storefront (almBrandId=ctnow) — every row carries a Now speed badge.  "
+            f"Speed tiers: {tier_str}")
+ws["A3"].font = SUB_FONT; ws.merge_cells("A3:G3")
 
 # KPI cards
 kpis = [("Unique SKUs", summary['unique_skus']), ("Pincodes w/ Jivo", f"{summary['pincodes_with_jivo']}/{summary['pincodes_total']}"),
@@ -182,6 +239,74 @@ for row in ws.iter_rows(min_row=2):
     row[4].fill = GREEN if njivo else (YEL if svc else RED)
     row[3].fill = GREEN if svc else RED
 autosize(ws)
+
+# ---------- Sheet 7: Now Speed Tiers ----------
+# Honest breakdown of WHAT KIND of Now delivery each Jivo SKU actually gets. The blue
+# Now badge promises a tier; "10 min" quick-commerce is NOT the same product as a
+# "tomorrow" scheduled Now slot, so we never blend them into one "Now" claim.
+ws = wb.create_sheet("Now Speed Tiers")
+ws["A1"] = "Amazon Now — delivery speed tiers (genuine Now offers only)"; ws["A1"].font = Font(bold=True, size=12, color=JIVO_GREEN)
+ws.append([])
+ws.append(["Speed tier", "Datapoints", "% of Now rows"])
+style_header(ws, ws.max_row, 3)
+tot = sum(tier_counts.values()) or 1
+for t, n in tier_counts.items():
+    ws.append([t, n, round(100 * n / tot, 1)])
+ws.append([])
+hdr_row = ws.max_row + 1
+ws.append(["SKU", "Fastest tier seen", "10 min?", "Datapoints"])
+style_header(ws, hdr_row, 4)
+# per-SKU fastest tier (best promise that SKU ever got across pincodes)
+sku_tiers = defaultdict(list)
+for r in rows:
+    sku_tiers[r['canonical']].append((r.get('now_eta') or r.get('now_slot') or '').strip().lower())
+for s in sorted(sku_tiers, key=lambda s: (min((tier_rank(t) for t in sku_tiers[s]), default=9), s)):
+    tiers = sku_tiers[s]
+    best = min(tiers, key=tier_rank) if tiers else ''
+    ws.append([label(s), best or '-', "Yes" if "10 min" in tiers else "No", len(tiers)])
+for row in ws.iter_rows(min_row=2):
+    for cell in row:
+        cell.border = BORDER
+        if cell.column >= 2:
+            cell.alignment = CEN
+    # green-flag the SKUs that get true 10-minute quick-commerce somewhere
+    if row[0].column == 1 and row[2].value == "Yes":
+        row[2].fill = GREEN
+autosize(ws)
+
+# ---------- Sheet 8: Catalog Coverage (PRESENT / OUT OF STOCK / NOT ON NOW) ----------
+# The honest answer to "how much of the Jivo catalog is actually on Amazon Now?".
+# Classifies the full 314-SKU core catalog by ASIN. NOT ON NOW is by Amazon's design
+# (the Now storefront indexes only a subset), not a scrape gap.
+if CATALOG:
+    ws = wb.create_sheet("Catalog Coverage")
+    ws["A1"] = f"Jivo catalog on Amazon Now — {cov_counts['PRESENT']} present · {cov_counts['OUT OF STOCK']} out of stock · {cov_counts['NOT ON NOW']} not on Now (of {len(CATALOG)} catalog SKUs)"
+    ws["A1"].font = Font(bold=True, size=11, color=JIVO_GREEN); ws.merge_cells("A1:F1")
+    ws.append([])
+    hdr_row = ws.max_row + 1
+    ws.append(["ASIN", "Catalog name", "Category", "Status", "Now sale Rs (min)", "Fastest tier"])
+    style_header(ws, hdr_row, 6)
+    STATUS_ORDER = {"PRESENT": 0, "OUT OF STOCK": 1, "NOT ON NOW": 2}
+    for asin in sorted(CATALOG, key=lambda a: (STATUS_ORDER[coverage_status(a)], CATALOG[a].get('category') or '', CATALOG[a].get('name') or '')):
+        p = CATALOG[asin]
+        st = coverage_status(asin)
+        rs = now_by_asin.get(asin, [])
+        sales = [x['sale'] for x in rs if x.get('sale') is not None]
+        tiers = [(x.get('now_eta') or x.get('now_slot') or '').strip().lower() for x in rs]
+        best = min(tiers, key=tier_rank) if tiers else ''
+        ws.append([asin, (p.get('name') or '')[:60], p.get('category') or p.get('item') or '',
+                   st, (min(sales) if sales else None), best or ('-' if st != "NOT ON NOW" else '')])
+    style_header(ws, hdr_row, 6)
+    ws.freeze_panes = "A4"
+    ws.auto_filter.ref = f"A3:F{ws.max_row}"
+    for row in ws.iter_rows(min_row=hdr_row + 1):
+        for cell in row:
+            cell.border = BORDER
+            if cell.column in (4, 5, 6):
+                cell.alignment = CEN
+        sc = row[3].value
+        row[3].fill = GREEN if sc == "PRESENT" else (YEL if sc == "OUT OF STOCK" else RED)
+    autosize(ws)
 
 fname = f"Jivo-{PLATFORM.replace(' ', '')}-Live-Report-{datetime.date.today()}.xlsx"
 wb.save(fname)

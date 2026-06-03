@@ -23,7 +23,7 @@ ecom-intel/
 ├── platforms/             # one self-contained dir per platform
 │   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/ bigbasket/  # 7 LIVE, direct
 │   ├── amazon-fresh/      # 8th LIVE — logged-in (cookie transplant), i=freshstore, in cron
-│   ├── amazon-now/        # 9th LIVE — logged-in, i=nowstore; serialized w/ amazon-fresh (shared lock)
+│   ├── amazon-now/        # 9th LIVE — logged-in (own dedicated account), genuine Now via scrape.ctnow.js (almBrandId=ctnow); lock kept w/ fresh pending a concurrency test
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
 ├── tools/                 # predict.py · review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
 ├── vault/                 # Obsidian memory: runs/ daily/ weekly/ monthly/ platforms/  (committed)
@@ -58,7 +58,7 @@ ls output/                  # the Excel
 | amazon | ✅ LIVE | guest interstitial bypass on /dp; targeted scrape of 314 ASINs; NO account location |
 | amazon-fresh | ✅ LIVE | logged-in (cookie transplant), i=freshstore raw POST+HTML; 332 pincodes, ~63 SKUs, ~13k rows; in cron |
 | bigbasket | ✅ LIVE | stealth browser past Akamai + in-page listing-svc API; NATIONAL pricing → 1 row/SKU, "All India", ~27 SKUs; no proxy; in cron |
-| amazon-now | ✅ LIVE | logged-in (same session as Fresh), i=nowstore; in cron but SERIALIZED with amazon-fresh via a shared .amazon-account.lock so the two never co-scrape — see platforms/amazon-now/PLAN.md |
+| amazon-now | ✅ LIVE | logged-in on its OWN dedicated account; **genuine Amazon Now** via `scrape.ctnow.js` (`/s?k=jivo&almBrandId=ctnow`, real "in 10 min"/overnight/tomorrow speed tiers). The old `i=nowstore` surface (legacy Prime-Now/marketplace SEARCH, 0 real ETAs) is FROZEN — see ROOTCAUSE-AmazonNow-2026-06-01.md. Now's account is now distinct from Fresh's (proven by cookie compare), so they CAN in principle run in parallel, but the shared .amazon-account.lock is KEPT until a supervised concurrent run proves non-interference. Cron PAUSED during rebuild; rebuilt + scale-validated 2026-06-03 (65-pincode representative run, 42 serviceable, badge-gated, no marketplace contamination). |
 
 ## Pipeline (run.sh, per platform)
 `scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → `tools/vault_note.py` (+ rollups)
@@ -74,16 +74,20 @@ end of the window. `run_all.sh` holds the authoritative platform list. Switched
 sequential→parallel 2026-05-22 (VPS has headroom); each run.sh git-push critical section
 is flock-serialized (.gitpush.lock) so concurrent commits don't collide. setup_cron.sh is
 re-runnable and touches only "# ecom-intel"-tagged lines.
-**amazon-now + amazon-fresh share ONE Amazon account** whose delivery location is set
-server-side (account-global), so their per-pincode scrapes must NEVER run concurrently.
-run.sh serializes EXACTLY these two behind a shared **.amazon-account.lock** around the
-scrape step: both are launched by the parallel sweep, but one waits (up to 45m) while the
-other scrapes — they share a single Chromium slot, so peak concurrency is unchanged. Every
-other platform (incl. the guest `amazon` scraper, which sets no account location) stays
-fully parallel. amazon-now was MANUAL-ONLY until 2026-05-31, when this lock let it join cron
-safely. Its login is the same cookie-transplant session as amazon-fresh; if that session
-expires, BOTH go BROKEN and self-heal Telegram-alerts you to re-import cookies. See
-platforms/amazon-now/PLAN.md.
+**amazon-now and amazon-fresh now use SEPARATE dedicated Amazon accounts** (as of
+2026-06-02; proven by comparing the storageState identity cookies — Now greets "Kanhaiya"
+on `ubid-acbin 520-…`, Fresh on `259-…`; previously they shared ONE account, preserved as
+`amazon-now.storageState.OLDACCT.bak.json`). Amazon's delivery location is account-global
+(server-side), so with two distinct accounts their per-pincode location switches no longer
+collide and the two COULD run in parallel. **The shared `.amazon-account.lock` is KEPT for
+now** (conservative): run.sh still serializes EXACTLY these two behind it around the scrape
+step — one waits (up to 45m) while the other scrapes, sharing a single Chromium slot so peak
+concurrency is unchanged. Drop the lock only AFTER a supervised concurrent run proves the two
+accounts don't interfere (e.g. each holds its own pincode through a full sweep). Every other
+platform (incl. the guest `amazon` scraper, which sets no account location) stays fully
+parallel. Each login is its own cookie-transplant session; if either expires, that platform
+goes BROKEN and self-heal Telegram-alerts you to re-import cookies (now independent — one
+expiring no longer breaks the other). See platforms/amazon-now/PLAN.md.
 
 Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE (under
 logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;

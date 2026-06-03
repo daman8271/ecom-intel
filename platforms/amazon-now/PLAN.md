@@ -1,3 +1,28 @@
+> ## STATUS 2026-06-03 — REBUILT onto the genuine Now surface; cron still PAUSED
+> The live scraper is now **`scrape.ctnow.js`** (the real Amazon Now storefront,
+> `/s?k=jivo&almBrandId=ctnow`), wired into `run.sh` for `amazon-now`. The old
+> `i=nowstore` `scrape.js` is FROZEN (it was the legacy Prime-Now/marketplace SEARCH —
+> 0 real minute-ETAs, ~8% catalog, marketplace prices mislabelled "Now"; see
+> `ROOTCAUSE-AmazonNow-2026-06-01.md`). Validated live 2026-06-03 (session "Hello,
+> Kanhaiya" OK) with a 65-pincode representative run: 42/65 serviceable, 1152 rows,
+> 69 SKUs, speed tiers {10 min:99, overnight:725, tomorrow:328}, **0 GLOW mismatches,
+> every row badge-gated** (no marketplace leakage), Groundnut 1L recovered, olive-oil
+> prices stable. The contaminated 06-01/05-31 `result.json`+xlsx are renamed `.CONTAMINATED`.
+>
+> **ACCOUNT ARCHITECTURE (NEW):** amazon-now now has its **OWN dedicated account**, distinct
+> from amazon-fresh (proven by comparing storageState identity cookies — Now `ubid-acbin
+> 520-2840772-…`, Fresh `259-8681039-…`; the previous shared account is preserved as
+> `secrets/amazon-now.storageState.OLDACCT.bak.json`, which is byte-identical to Fresh's).
+> Because Amazon's delivery location is account-global, two distinct accounts no longer
+> collide and the two scrapers *could* run in parallel. **The shared `.amazon-account.lock`
+> is KEPT** until a supervised concurrent run empirically proves non-interference.
+>
+> **REMAINING before un-pausing cron:** (1) one full 332-pincode run (the 06-03 run was a
+> 65-pincode representative sample, kept short because Fresh was scraping in parallel under
+> the same lock); (2) restore the 3×/day `run_all.sh` cron lines from
+> `.crontab.backup-2026-06-03-paused`; (3) optional: the supervised concurrency test to
+> drop the lock. The captcha/login notes below remain valid for refreshing either session.
+
 # Amazon.in Now/Fresh login — CVF / AAMation captcha execution plan
 
 > Goal: mint a reusable `storageState` cookie jar for the throwaway account (phone **8899011758**)

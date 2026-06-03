@@ -9,7 +9,13 @@ mkdir -p "$DIR/output" "$DIR/logs"
 RUN_ID="$(date +%Y-%m-%d-%H%M)"
 
 cd "$PDIR"
-echo "[$RUN_ID] scraping $P ..."
+# amazon-now runs the v2 scraper (scrape.ctnow.js) against the GENUINE Amazon Now
+# storefront (almBrandId=ctnow). The old scrape.js targeted i=nowstore — the legacy
+# Prime-Now/marketplace SEARCH — which silently published marketplace prices as "Now"
+# (0 real minute ETAs, ~8% catalog); it is frozen. See ROOTCAUSE-AmazonNow-2026-06-01.md.
+SCRAPER="scrape.js"
+[ "$P" = "amazon-now" ] && SCRAPER="scrape.ctnow.js"
+echo "[$RUN_ID] scraping $P ($SCRAPER) ..."
 # amazon-fresh and amazon-now share ONE Amazon account whose delivery location is set
 # SERVER-SIDE (account-global). Their per-pincode scrapes both change that location, so
 # they must NEVER set it concurrently or they corrupt each other's pincode. Serialize
@@ -22,10 +28,10 @@ if { [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; } && command -v flock
   (
     flock -w 2700 8 || { echo "[$RUN_ID] $P: amazon-account lock not acquired in 45m; skipping this window"; exit 75; }
     echo "[$RUN_ID] $P: amazon-account lock acquired; scraping ..."
-    node scrape.js 2> "$DIR/logs/${P}-${RUN_ID}.log"
+    node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
   ) 8>"$DIR/.amazon-account.lock"
 else
-  node scrape.js 2> "$DIR/logs/${P}-${RUN_ID}.log"
+  node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
 fi
 echo "[$RUN_ID] building excel ..."
 python3 build_excel.py

@@ -1,10 +1,22 @@
-# SKILL: scrape Amazon Now — STATUS: LIVE (2026-05-30, via transplanted session)
+# SKILL: scrape Amazon Now — STATUS: REBUILT on the genuine Now surface (2026-06-03)
+
+> **2026-06-03:** the live scraper is **`scrape.ctnow.js`** against the GENUINE Amazon Now
+> storefront search **`/s?k=jivo&almBrandId=ctnow`** (the `alm`/ctnow backend, sibling of
+> Amazon Fresh's `i=freshstore`). It returns real Now speed tiers ("in 10 minutes",
+> "Overnight", "Tomorrow") via a blue Now badge, and only badge-carrying cards are kept, so
+> marketplace listings can't leak in. **`i=nowstore` (described below) is the WRONG surface**
+> — the legacy Prime-Now/marketplace SEARCH (0 real minute-ETAs, ~8% catalog, marketplace
+> prices mislabelled "Now"); `scrape.js` is frozen. See `ROOTCAUSE-AmazonNow-2026-06-01.md`
+> and the STATUS block in `PLAN.md`. amazon-now also now uses its OWN dedicated account
+> (no longer shared with Fresh). The mechanism notes below (auth, GLOW, parsing) still apply,
+> just point at `almBrandId=ctnow` not `i=nowstore`.
 
 The 2026-05-22 "NOT FEASIBLE" verdict (kept in **BLOCKED.md**) is **obsolete**. Amazon
 Now IS scrapable. Key correction to the old verdict: `/dp` was the wrong surface — even
 logged-in it shows only the multi-day marketplace promise. The right surface is the
-**`i=nowstore` storefront search**, which is login-gated (503s logged-out) but, logged-in,
-returns per-SKU **Now price + same-day delivery SLOT** that varies per delivery pincode.
+**`almBrandId=ctnow` storefront search** (NOT `i=nowstore` — see banner above), which is
+login-gated but, logged-in, returns per-SKU **Now price + speed tier** that varies per
+delivery pincode.
 
 ## The mechanism (what `scrape.js` does)
 1. **Auth = a transplanted logged-in session.** The VPS datacenter IP CANNOT log in:
