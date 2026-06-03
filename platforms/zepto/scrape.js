@@ -31,6 +31,13 @@ const MAX_PAGES = 4;            // page 0..3; Jivo catalogue is small, this is p
 const GW = 'https://bff-gateway.zeptonow.com';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36';
 const COMPAT = 'CONVENIENCE_FEE,RAIN_FEE,EXTERNAL_COUPONS,STANDSTILL,BUNDLE,MULTI_SELLER_ENABLED,PIP_V1,ROLLUPS,SCHEDULED_DELIVERY,SAMPLING_ENABLED,HOMEPAGE_V2,NEW_ETA_BANNER,SUPER_SAVER:1,PROMO_CASH:0,24X7_ENABLED_V1,HP_V4_FEED,NEW_ROLLUPS_ENABLED,PLP_ON_SEARCH,DYNAMIC_FILTERS,NEW_FEE_STRUCTURE,NEW_BILL_INFO,SUPERSTORE_V1,MARKETPLACE_REPLACEMENT';
+// Zepto runs TWO storefronts over the SAME catalogue at the SAME store, with DIFFERENT
+// prices for the identical SKU, selected purely by the `marketplace_type` header:
+//   SUPER_SAVER  = scheduled delivery, cheaper  (e.g. Canola combo 469)  <- the price the app shows by default
+//   ZEPTO_NOW    = instant ~10-min delivery     (e.g. Canola combo 485)
+// We track SUPER_SAVER because that is the price customers (and our reference checks)
+// actually see. Override with ZEPTO_MARKETPLACE=ZEPTO_NOW to capture the instant tier.
+const MARKETPLACE = process.env.ZEPTO_MARKETPLACE || 'SUPER_SAVER';
 
 // --- price/pack helpers (same conventions as the other platforms) ---
 function parseVolMl(pack) {
@@ -66,7 +73,7 @@ function commonHeaders(storeId, lat, lon) {
     'accept': 'application/json, text/plain, */*', 'accept-language': 'en-US,en;q=0.9',
     'app_sub_platform': 'WEB', 'app_version': '12.64.1', 'appversion': '12.64.1',
     'auth_revamp_flow': 'v2', 'compatible_components': COMPAT, 'content-type': 'application/json',
-    'device_id': did, 'deviceid': did, 'marketplace_type': 'ZEPTO_NOW',
+    'device_id': did, 'deviceid': did, 'marketplace_type': MARKETPLACE,
     'origin': 'https://www.zeptonow.com', 'platform': 'WEB', 'referer': 'https://www.zeptonow.com/',
     'request_id': rid, 'requestid': rid, 'session_id': sid, 'sessionid': sid,
     'tenant': 'ZEPTO', 'x-without-bearer': 'true', 'user-agent': UA,
