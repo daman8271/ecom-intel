@@ -27,6 +27,7 @@ stdlib only. No pip deps. No network unless the optional LLM layer is on.
 
 import os
 import sys
+import csv
 import json
 import time
 import datetime
@@ -34,6 +35,7 @@ import urllib.request
 import urllib.error
 import subprocess
 import traceback
+from collections import Counter
 
 # --- paths (resolve relative to repo root = parent of tools/) ---------------
 TOOLS_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -74,6 +76,17 @@ COVERAGE_SUSPECT_DROP = 0.40  # per-pincode: <60% of baseline coverage -> SUSPEC
 COVERAGE_BROKEN_DROP = 0.75   # per-pincode: <25% of baseline coverage -> BROKEN
 
 BASELINE_WINDOW = 10          # rolling window of recent OK runs to average over
+
+# --- staleness alarm (hybrid search-API platforms, e.g. Zepto) --------------
+# Two independent signals that we may be recording a LAGGING catalogue rather than the
+# live price (the bug the owner reported on Zepto):
+#   (a) cache fraction: the scraper records per-product `cached` (true => the platform served
+#       it from its search cache, a stale-price risk). A high fraction => SUSPECT.
+#   (b) frozen price: a SKU whose modal price has not moved across many consecutive runs.
+#       Frozen alone is normal for a stable price, so we only ESCALATE when it is corroborated
+#       by a cache signal in this run; otherwise it is reported as information only.
+CACHE_STALE_SUSPECT_PCT = 50.0   # > this % of rows served from cache -> SUSPECT
+STALE_FROZEN_RUNS = 9            # modal price identical across >= this many runs -> "frozen"
 
 # Markers that, if found in scraped text, mean we captured an error page.
 BLOCK_MARKERS = (
@@ -250,7 +263,110 @@ def num(v):
         return None
 
 
-def run_checks(data, rows, per_pincode, expected, run_id):
+def _modal(vals):
+    """Most common value (ties -> smallest), ignoring None. Returns None if empty."""
+    vals = [v for v in vals if v is not None]
+    if not vals:
+        return None
+    cnt = Counter(vals)
+    top = max(cnt.values())
+    return min(p for p, n in cnt.items() if n == top)
+
+
+def _frozen_skus(platform, rows, run_id):
+    """
+    SKUs whose MODAL price has been identical across the last STALE_FROZEN_RUNS runs
+    (history + this run). history.csv is written AFTER review, so it does not yet contain
+    this run — we fold in this run's modal prices from `rows`. Best-effort; never raises.
+    Returns a sorted list of frozen canonical SKU names.
+    """
+    hist_path = os.path.join(ROOT, "data", platform, "history.csv")
+    by_run = {}   # run_id -> {canonical -> [prices]}
+    try:
+        if os.path.isfile(hist_path):
+            with open(hist_path, newline="") as f:
+                for row in csv.DictReader(f):
+                    rid = row.get("run_id")
+                    canon = row.get("canonical_sku")
+                    if not rid or not canon:
+                        continue
+                    try:
+                        price = float(row.get("price")) if row.get("price") not in (None, "") else None
+                    except (TypeError, ValueError):
+                        price = None
+                    by_run.setdefault(rid, {}).setdefault(canon, []).append(price)
+    except Exception as e:
+        log(f"{platform}: frozen-sku history read failed ({e}); skipping frozen check")
+        return []
+
+    # fold in THIS run's prices (overwrites if rerun under same run_id)
+    cur = by_run.setdefault(run_id, {})
+    for r in rows:
+        c = r.get("canonical")
+        s = num(r.get("sale"))
+        if c:
+            cur.setdefault(c, []).append(s)
+
+    # modal price per run, newest STALE_FROZEN_RUNS runs only
+    recent = sorted(by_run.keys())[-STALE_FROZEN_RUNS:]
+    if len(recent) < STALE_FROZEN_RUNS:
+        return []   # not enough history yet to judge "frozen"
+    frozen = []
+    canon_set = set(cur.keys())
+    for canon in canon_set:
+        modals = [_modal(by_run[rid].get(canon, [])) for rid in recent]
+        modals = [m for m in modals if m is not None]
+        if len(modals) >= STALE_FROZEN_RUNS and len(set(modals)) == 1:
+            frozen.append(canon)
+    return sorted(frozen)
+
+
+def staleness_alarm(data, rows, platform, run_id):
+    """
+    Returns (ok, detail, severity). ok=False + severity drive the verdict.
+    No cache/freshness signal in the data => n/a (ok, informational).
+    """
+    summary = data.get("summary", {}) or {}
+    fresh = summary.get("freshness") if isinstance(summary.get("freshness"), dict) else None
+    has_cached_field = any("cached" in r for r in rows[: min(50, len(rows))])
+    if not fresh and not has_cached_field:
+        return True, "no cache/freshness signal in data (n/a for this platform)", "suspect"
+
+    if fresh and isinstance(fresh.get("pct_cached"), (int, float)):
+        pct_cached = float(fresh["pct_cached"])
+        n_cached = fresh.get("rows_cached")
+    else:
+        n_cached = sum(1 for r in rows if r.get("cached"))
+        pct_cached = (100.0 * n_cached / len(rows)) if rows else 0.0
+
+    frozen = _frozen_skus(platform, rows, run_id)
+
+    # (a) broad cache serving -> SUSPECT on its own
+    if pct_cached > CACHE_STALE_SUSPECT_PCT:
+        return (False,
+                f"{pct_cached:.1f}% of rows served from search cache (cached=true, "
+                f"n={n_cached}); prices may lag the live catalogue"
+                + (f"; {len(frozen)} SKU(s) also price-frozen across {STALE_FROZEN_RUNS} runs: "
+                   f"{', '.join(frozen[:5])}" if frozen else ""),
+                "suspect")
+
+    # (b) frozen price corroborated by ANY cache serving this run -> SUSPECT
+    if frozen and pct_cached > 0:
+        return (False,
+                f"{len(frozen)} SKU(s) price-frozen across {STALE_FROZEN_RUNS} runs while "
+                f"{pct_cached:.1f}% of rows are cache-served — possible stale price: "
+                f"{', '.join(frozen[:5])}",
+                "suspect")
+
+    # otherwise: report state but pass. Frozen-only (no cache signal) is information.
+    detail = f"{pct_cached:.1f}% rows cache-served (<= {CACHE_STALE_SUSPECT_PCT:.0f}% ok)"
+    if frozen:
+        detail += (f"; {len(frozen)} SKU(s) price-stable across {STALE_FROZEN_RUNS} runs "
+                   f"(no cache signal, treated as genuinely stable): {', '.join(frozen[:5])}")
+    return True, detail, "suspect"
+
+
+def run_checks(data, rows, per_pincode, expected, run_id, platform):
     """
     Run all FREE deterministic checks. Each appends a dict
     {name, pass, detail} and tags severity in the returned list-of-tuples
@@ -460,6 +576,14 @@ def run_checks(data, rows, per_pincode, expected, run_id):
     captured_at = (data.get("summary", {}) or {}).get("captured_at")
     fresh_ok, fresh_detail = check_freshness(captured_at, run_id)
     add("freshness", fresh_ok, fresh_detail, severity="broken")
+
+    # 13) price staleness alarm: cache-served / frozen prices (hybrid APIs) -
+    try:
+        st_ok, st_detail, st_sev = staleness_alarm(data, rows, platform, run_id)
+    except Exception as e:
+        log(f"{platform}: staleness_alarm raised (ignored): {e}")
+        st_ok, st_detail, st_sev = True, f"staleness check error (ignored): {e}", "suspect"
+    add("price_staleness", st_ok, st_detail, severity=st_sev)
 
     return checks, reasons, hard_broken, soft_suspect
 
@@ -681,7 +805,7 @@ def main(argv):
     baseline_rows = round(expected["rows"]) if (expected and expected.get("rows")) else None
 
     checks, reasons, hard_broken, soft_suspect = run_checks(
-        data, rows, per_pincode, expected, run_id)
+        data, rows, per_pincode, expected, run_id, platform)
 
     # Decide verdict from deterministic checks first.
     if hard_broken:

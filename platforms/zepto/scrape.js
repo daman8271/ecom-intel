@@ -13,6 +13,17 @@
 // Prices are returned in PAISE (mrp:46000 == Rs 460.00) -> divide by 100.
 // We keep only products whose product.brand == "Jivo" (excludes "Jivika"/"Tata" etc).
 // Output schema is identical to Blinkit so build_excel.py works unchanged.
+//
+// FRESHNESS (2026-06-03): the owner saw the API lag a real price change by ~1 day. Recon
+// confirmed there is NO read-only PDP/product-price route on this gateway (every product/
+// inventory/pdp path 404s "no Route matched"; only cart-service exists and needs a stateful
+// guest-cart mutation — unfit for a 332-store loop). BUT the search response is itself
+// authoritative when its per-product `cached` flag is false (then it equals the live app
+// price), and it already carries the structured per-tier price in pricingData. So the fix is:
+//   (1) record the price from pricingData.pricingEntityPrices[tier] (the exact app-rendered
+//       tier price) instead of the ambiguous top-level fallback chain;
+//   (2) capture per-product `cached` + response-level realtime markers; and
+//   (3) raise a staleness alarm (tools/review.py) when prices come from cache / sit frozen.
 // ---------------------------------------------------------------------------
 
 const { execFile } = require('child_process');
@@ -106,6 +117,23 @@ async function resolveStore(lat, lon) {
   return { ok: !!(serviceable && storeId), serviceable, storeId };
 }
 
+// Pull the response-level freshness markers Zepto's search service emits. These tell us whether
+// the catalogue we just read came from a live fetch or a cache/snapshot:
+//   is_realtime_model_data_fetched / realtime_model_not_enabled_reason / algoliaTimeOut
+function findMarkers(j) {
+  const m = {};
+  (function walk(o, depth) {
+    if (!o || typeof o !== 'object' || depth > 6) return;
+    for (const k of Object.keys(o)) {
+      if (/^(is_realtime_model_data_fetched|realtime_model_not_enabled_reason|algoliaTimeOut)$/.test(k)
+        && !(k in m)) m[k] = o[k];
+      const v = o[k];
+      if (v && typeof v === 'object' && k !== 'productResponse') walk(v, depth + 1);
+    }
+  })(j, 0);
+  return m;
+}
+
 async function searchPage(storeId, lat, lon, query, pageNumber) {
   const url = `${GW}/user-search-service/api/v3/search`;
   const body = JSON.stringify({ query, pageNumber, intentId: uuid(), mode: 'AUTOSUGGEST', userSessionId: uuid() });
@@ -121,7 +149,18 @@ async function searchPage(storeId, lat, lon, query, pageNumber) {
     if (pr && pr.product && pr.product.name) items.push(pr);
     for (const k of Object.keys(o)) { const v = o[k]; if (v && typeof v === 'object') walk(v); }
   })(j);
-  return { ok: true, items };
+  return { ok: true, items, markers: findMarkers(j) };
+}
+
+// Authoritative per-tier price. Zepto's response carries pricingData.pricingEntityPrices —
+// an explicit { pricingEntity, discountedSellingPrice } per storefront tier (SUPER_SAVER /
+// ULTRA_SAVER / ...). That is the structured price the app actually renders for the selected
+// tier, so we PREFER it over the ambiguous top-level discountedSellingPrice fallback chain
+// (which is tier-dependent and easy to mis-read). This removes the "wrong tier" class of error.
+function tierPrice(pr, mk) {
+  const pe = (pr.pricingData && pr.pricingData.pricingEntityPrices) || [];
+  const hit = pe.find(x => x && x.pricingEntity === mk && x.discountedSellingPrice != null);
+  return hit ? hit.discountedSellingPrice : null;
 }
 
 function toRow(pr, rec, storeId) {
@@ -129,8 +168,20 @@ function toRow(pr, rec, storeId) {
   const name = p.name;
   const pack = v.formattedPacksize || '';
   const mrp = pr.mrp != null ? pr.mrp / 100 : (v.mrp != null ? v.mrp / 100 : null);
-  const sale = (pr.discountedSellingPrice != null ? pr.discountedSellingPrice
-    : pr.sellingPrice != null ? pr.sellingPrice : pr.superSaverSellingPrice);
+  // Price source, most-authoritative first: explicit tier price -> tier-specific field
+  // (superSaver) -> generic discounted/selling chain. price_source records which one we used
+  // so a stale/odd value can be traced back to its origin field.
+  let sale = tierPrice(pr, MARKETPLACE);
+  let priceSource = sale != null ? 'pricingData:' + MARKETPLACE : null;
+  if (sale == null && MARKETPLACE === 'SUPER_SAVER' && pr.superSaverSellingPrice != null) {
+    sale = pr.superSaverSellingPrice; priceSource = 'superSaverSellingPrice';
+  }
+  if (sale == null) {
+    sale = pr.discountedSellingPrice != null ? pr.discountedSellingPrice
+      : pr.sellingPrice != null ? pr.sellingPrice : pr.superSaverSellingPrice;
+    priceSource = pr.discountedSellingPrice != null ? 'discountedSellingPrice'
+      : pr.sellingPrice != null ? 'sellingPrice' : 'superSaverSellingPrice';
+  }
   const saleR = sale != null ? sale / 100 : null;
   const vol = parseVolMl(pack);
   const inStock = pr.outOfStock === true ? 0 : 1;
@@ -144,12 +195,17 @@ function toRow(pr, rec, storeId) {
     per_litre: (vol && saleR) ? Math.round((saleR / (vol / 1000)) * 100) / 100 : null,
     eta_min: null,
     in_stock: inStock,
+    // Freshness signal: Zepto sets cached=true when this product was served from its search
+    // cache (a stale-price risk) and false when it was fetched live. Recorded so the review
+    // step can raise a staleness alarm. price_source aids debugging odd values.
+    cached: pr.cached === true,
+    price_source: priceSource,
   };
 }
 
 async function scrapeOne(rec) {
   const t0 = Date.now();
-  let rows = [], storeId = '', serviceable = false;
+  let rows = [], storeId = '', serviceable = false, markers = {};
   try {
     const st = await resolveStore(rec.lat, rec.lon);
     serviceable = st.serviceable; storeId = st.storeId || '';
@@ -157,6 +213,7 @@ async function scrapeOne(rec) {
       const seenCanon = new Set();
       for (let pn = 0; pn < MAX_PAGES; pn++) {
         const res = await searchPage(storeId, rec.lat, rec.lon, 'jivo', pn);
+        if (pn === 0 && res.markers) markers = res.markers;   // page-0 freshness markers for this store
         if (!res.ok || !res.items.length) break;
         let added = 0;
         for (const pr of res.items) {
@@ -175,8 +232,9 @@ async function scrapeOne(rec) {
       }
     }
   } catch (e) { process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`); }
-  process.stderr.write(`[ok] ${rec.city} ${rec.pincode} serviceable=${serviceable} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${storeId || 'n/a'}\n`);
-  return { ...rec, store_id: storeId, store_name: '', serviceable, rows };
+  const cachedRows = rows.filter(r => r.cached).length;
+  process.stderr.write(`[ok] ${rec.city} ${rec.pincode} serviceable=${serviceable} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${storeId || 'n/a'}${cachedRows ? ` CACHED=${cachedRows}` : ''}\n`);
+  return { ...rec, store_id: storeId, store_name: '', serviceable, rows, freshness: { cached_rows: cachedRows, markers } };
 }
 
 async function pool(items, n, fn) {
@@ -196,6 +254,15 @@ async function pool(items, n, fn) {
   const t0 = Date.now();
   const perPin = await pool(PINCODES, CONCURRENCY, scrapeOne);
   const allRows = perPin.flatMap(p => p.rows);
+  // Freshness aggregate for the review/staleness alarm: how much of the catalogue we recorded
+  // was served from Zepto's search cache (cached=true) vs fetched live. A high pct_cached means
+  // prices may be lagging the live catalogue — exactly the symptom the owner reported.
+  const cachedRows = allRows.filter(r => r.cached).length;
+  const reasonCounts = {};
+  for (const p of perPin) {
+    const reason = p.freshness && p.freshness.markers && p.freshness.markers.realtime_model_not_enabled_reason;
+    if (reason) reasonCounts[reason] = (reasonCounts[reason] || 0) + 1;
+  }
   const summary = {
     pincodes_total: PINCODES.length,
     pincodes_serviceable: perPin.filter(p => p.serviceable).length,
@@ -204,6 +271,13 @@ async function pool(items, n, fn) {
     unique_skus: new Set(allRows.map(r => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
     captured_at: new Date().toISOString(),
+    marketplace: MARKETPLACE,
+    freshness: {
+      rows_total: allRows.length,
+      rows_cached: cachedRows,
+      pct_cached: allRows.length ? Math.round((cachedRows / allRows.length) * 1000) / 10 : 0,
+      realtime_not_enabled_reasons: reasonCounts,
+    },
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
   fs.writeFileSync(OUTFILE, JSON.stringify({ summary, perPin, allRows }, null, 2));
