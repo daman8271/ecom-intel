@@ -162,8 +162,8 @@ matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] f
 # For Amazon Now the key per-pincode facts are: is Now serviceable here at all, and
 # does Jivo appear (vs only competitors). Three states: green=Jivo on Now,
 # yellow=Now serviceable but NO Jivo (competitor-only whitespace), red=no Now here.
-ws = wb.create_sheet("Now Serviceability")
-ws.append(["City", "Pincode", "Locality", "Now serviceable", "Jivo SKUs on Now", "Sample slot"])
+ws = wb.create_sheet("Fresh Serviceability")
+ws.append(["City", "Pincode", "Locality", "Fresh serviceable", "Jivo SKUs on Fresh", "Sample Fresh slot"])
 def sample_slot(p):
     for r in p['rows']:
         if r.get('now_slot'): return r['now_slot']

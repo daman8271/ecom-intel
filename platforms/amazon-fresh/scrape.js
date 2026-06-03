@@ -83,6 +83,24 @@ function numPrice(s) {
   return Number.isFinite(n) ? n : null;
 }
 
+// FRESH-PRESENCE GATE (2026-06-01). The i=freshstore search BACK-FILLS its page with
+// ordinary Amazon marketplace listings (multi-day courier promises) when the real Fresh
+// catalogue is thin or Fresh is NOT serviceable at the pincode. Those are NOT Fresh prices
+// — recording them silently falls back to the marketplace, which we must never do.
+// A genuine Amazon Fresh / quick-commerce card carries a same/next-day delivery SLOT:
+// "FREE delivery in N minutes", or an explicit time window like "Today 7 pm - 9 pm" /
+// "Tomorrow 6 am - 10 am". A marketplace card shows a named weekday+date ("Sat, 6 Jun"),
+// a multi-day range ("4 - 7 Jun") or Prime CSS bleed — never a slot window. We keep a row
+// ONLY when its slot is a genuine Fresh window; everything else is dropped. Conservative
+// by design (an ambiguous slot is treated as NOT Fresh — under-include, never mislabel).
+function isFreshSlot(slot) {
+  const s = (slot || '').toLowerCase();
+  if (!s) return false;
+  if (/\bin\s+\d+\s*min/.test(s)) return true;                                 // "in 10 minutes"
+  if (/\d{1,2}\s*(?:am|pm)\s*[-–]\s*\d{1,2}\s*(?:am|pm)/.test(s)) return true; // "7 pm - 9 pm"
+  return false;
+}
+
 async function passInterstitial(page) {
   const hit = await page.evaluate(() => /continue shopping/i.test(document.body.innerText || '') && !document.querySelector('#nav-link-accountList')).catch(() => false);
   if (!hit) return;
@@ -179,15 +197,21 @@ async function checkSession(page) {
     process.exit(2);
   }
   const t0 = Date.now();
-  let browser;
-  try { browser = await chromium.launch({ headless: true, channel: 'chrome', args: ['--no-sandbox', '--headless=new', '--disable-blink-features=AutomationControlled'] }); }
-  catch (_) { browser = await chromium.launch({ headless: true, args: ['--no-sandbox', '--headless=new'] }); }
-  const ctx = await browser.newContext({ userAgent: UA, locale: 'en-IN', timezoneId: 'Asia/Kolkata', viewport: { width: 1366, height: 900 }, storageState: STATE });
-  await ctx.addInitScript(() => { Object.defineProperty(navigator, 'webdriver', { get: () => undefined }); });
-  const page = await ctx.newPage();
-
   let token = '';
-  page.on('request', (req) => { if (/address-change/.test(req.url())) { const t = req.headers()['anti-csrftoken-a2z']; if (t) token = t; } });
+  // Open (or RE-open, after a transient Chromium crash) a logged-in browser+context+page,
+  // re-attaching the token-capture listener. A single per-pincode browser death (seen under
+  // heavy concurrent load) must NOT kill the whole 332-pincode sweep — the loop relaunches via this.
+  async function openBrowser() {
+    let b;
+    try { b = await chromium.launch({ headless: true, channel: 'chrome', args: ['--no-sandbox', '--headless=new', '--disable-blink-features=AutomationControlled'] }); }
+    catch (_) { b = await chromium.launch({ headless: true, args: ['--no-sandbox', '--headless=new'] }); }
+    const c = await b.newContext({ userAgent: UA, locale: 'en-IN', timezoneId: 'Asia/Kolkata', viewport: { width: 1366, height: 900 }, storageState: STATE });
+    await c.addInitScript(() => { Object.defineProperty(navigator, 'webdriver', { get: () => undefined }); });
+    const p = await c.newPage();
+    p.on('request', (req) => { if (/address-change/.test(req.url())) { const t = req.headers()['anti-csrftoken-a2z']; if (t) token = t; } });
+    return { browser: b, ctx: c, page: p };
+  }
+  let { browser, ctx, page } = await openBrowser();
 
   const sess = await checkSession(page);
   if (!sess.loggedIn) {
@@ -206,23 +230,56 @@ async function checkSession(page) {
   for (let i = 0; i < PINCODES.length; i++) {
     const rec = PINCODES[i];
     const ts = Date.now();
-    let res = await fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX);
-    if (!res.glow.includes(rec.pincode)) {
-      await mintToken(page, rec.pincode);
+    let res;
+    try {
       res = await fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX);
+      if (!res.glow.includes(rec.pincode)) {
+        await mintToken(page, rec.pincode);
+        res = await fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX);
+      }
+    } catch (e) {
+      // Transient Chromium death ("Target page/context/browser has been closed") — relaunch
+      // the browser ONCE and retry this pincode so we don't lose the whole sweep. If recovery
+      // still fails, record the pincode as errored (not serviceable) and move on.
+      process.stderr.write(`[recover] ${rec.city} ${rec.pincode}: ${String(e.message).slice(0, 70)} — relaunching\n`);
+      try { await browser.close(); } catch (_) {}
+      try {
+        ({ browser, ctx, page } = await openBrowser());
+        await mintToken(page, rec.pincode);
+        res = await fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX);
+      } catch (e2) {
+        process.stderr.write(`[skip] ${rec.city} ${rec.pincode}: recovery failed (${String(e2.message).slice(0, 50)})\n`);
+        perPin.push({ ...rec, store_id: null, store_name: 'Amazon Fresh', serviceable: false, location_ok: false, glow: '', matched: false, cards_total: 0, dropped_marketplace: 0, error: true, rows: [] });
+        await sleep(800);
+        continue;
+      }
     }
     const matched = res.glow.includes(rec.pincode);
+
+    // LOCATION GATE: if the account location did not actually switch to this pincode (even
+    // after the re-mint retry above), the page we read is for the WRONG location — emit
+    // NOTHING rather than mislabel another city's prices as this pincode (the exact bug that
+    // hit Amazon Now). FRESH GATE: keep only genuine Fresh-slot Jivo cards; drop the
+    // marketplace bleed so a marketplace price is never recorded as a Fresh price.
     const seen = new Set();
     const rows = [];
-    for (const card of res.cards) {
-      if (!card.isJivo) continue;
-      const row = toRow(card, rec);
-      if (seen.has(row.canonical)) continue;
-      seen.add(row.canonical); rows.push(row);
+    let dropped_marketplace = 0;
+    if (matched) {
+      for (const card of res.cards) {
+        if (!card.isJivo) continue;
+        if (!isFreshSlot(card.slot)) { dropped_marketplace++; continue; }  // marketplace bleed — skip
+        const row = toRow(card, rec);
+        if (seen.has(row.canonical)) continue;
+        seen.add(row.canonical); rows.push(row);
+      }
     }
-    const serviceable = res.total > 0;
-    perPin.push({ ...rec, store_id: null, store_name: 'Amazon Fresh', serviceable, glow: res.glow, matched, rows });
-    process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}svc=${serviceable} -> ${rows.length} jivo (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
+    // Fresh is "serviceable here" ONLY if the (correctly-located) page shows at least one
+    // genuine Fresh slot on ANY card — NOT merely "any card returned" (the old bug).
+    const serviceable = matched && res.cards.some((c) => isFreshSlot(c.slot));
+    perPin.push({ ...rec, store_id: null, store_name: 'Amazon Fresh', serviceable,
+      location_ok: matched, glow: res.glow, matched, cards_total: res.total,
+      dropped_marketplace, rows });
+    process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH→SKIP) '}freshSvc=${serviceable} -> ${rows.length} fresh (dropped ${dropped_marketplace} mkt) (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
     await sleep(300 + Math.random() * 400);
   }
   await browser.close().catch(() => {});
@@ -230,11 +287,15 @@ async function checkSession(page) {
   const allRows = perPin.flatMap((p) => p.rows);
   const summary = {
     pincodes_total: PINCODES.length,
+    pincodes_fresh_serviceable: perPin.filter((p) => p.serviceable).length,
     pincodes_serviceable: perPin.filter((p) => p.serviceable).length,
     pincodes_with_jivo: perPin.filter((p) => p.rows.length > 0).length,
+    pincodes_location_skipped: perPin.filter((p) => !p.matched).length,
     pincodes_mismatch: perPin.filter((p) => !p.matched).length,
+    marketplace_rows_dropped: perPin.reduce((s, p) => s + (p.dropped_marketplace || 0), 0),
     total_rows: allRows.length,
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
+    gate: 'fresh-slot+location v1 (2026-06-01): row kept only if location matched AND card slot is a genuine Fresh window/in-N-min; marketplace-bleed rows dropped',
     wall_s: Math.round((Date.now() - t0) / 1000),
     captured_at: new Date().toISOString(),
   };
