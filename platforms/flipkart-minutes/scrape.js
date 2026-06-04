@@ -58,14 +58,27 @@ const N = dcN();
 const LOC_URL = `https://${N}.rome.api.flipkart.com/api/4/location/update`;
 const SEARCH_URL = `https://${N}.rome.api.flipkart.com/api/4/page/fetch?cacheFirst=false`;
 
-function parseVolMl(pack) {
-  if (!pack) return null;
-  const m = pack.toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
-  if (!m) return null;
-  const n = parseFloat(m[1]); const u = m[2];
+// ml for one "<number> <unit>" token. l/ltr/litre/kg -> *1000; ml/g -> as-is.
+function unitMl(n, u) {
   if (u === 'ml' || u === 'g') return n;
   if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
   return null;
+}
+// TOTAL pack volume in ml. Combo-aware: a multiplicative pack like "2 x 1 L" is
+// 2 * 1L = 2000 ml. The old regex matched only the first "1 L" and silently dropped
+// the "2 x" multiplier, so 2L combos were recorded as 1000 ml (and, when the API
+// per-litre was absent, the Rs/L fallback came out 2x too high).
+function parseVolMl(pack) {
+  if (!pack) return null;
+  const s = pack.toLowerCase();
+  const combo = s.match(/([\d.]+)\s*[x×*]\s*([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
+  if (combo) {
+    const each = unitMl(parseFloat(combo[2]), combo[3]);
+    return each != null ? parseFloat(combo[1]) * each : null;
+  }
+  const m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
+  if (!m) return null;
+  return unitMl(parseFloat(m[1]), m[2]);
 }
 function canonical(name, pack) {
   const base = (name || '').toLowerCase()
@@ -107,9 +120,13 @@ function parseProducts(searchJson, rec) {
       const pricing = v.pricing || {};
       const sale = (pricing.finalPrice || {}).value;
       const mrpEntry = (pricing.prices || []).find((x) => x.priceType === 'MRP');
-      const mrp = mrpEntry ? mrpEntry.value : sale;
+      // No MRP from the API (e.g. some combo packs) -> leave it null. Do NOT fabricate
+      // mrp = sale: that invents a phantom MRP and a fake 0% "discount" on a real SKU.
+      const mrp = mrpEntry ? mrpEntry.value : null;
       if (!/jivo/i.test(name) || !sale) continue;
-      const disc = (typeof pricing.totalDiscount === 'number') ? pricing.totalDiscount
+      // Discount is undefined without an MRP basis -> null (not 0) when mrp is absent.
+      const disc = (mrp == null) ? null
+        : (typeof pricing.totalDiscount === 'number') ? pricing.totalDiscount
         : (mrp && sale && mrp >= sale ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : null);
       const vol = parseVolMl(pack);
       const ppu = ((pricing.pricePerUnit || {}).pivotQualifier === 'L') ? (pricing.pricePerUnit || {}).pricePerUnit : null;
