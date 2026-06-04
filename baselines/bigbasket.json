@@ -2,13 +2,6 @@
   "platform": "bigbasket",
   "samples": [
     {
-      "run_id": "2026-06-01-0900",
-      "captured_at": "2026-06-01T03:30:40.159Z",
-      "rows": 27,
-      "unique_skus": 27,
-      "pincodes_with_jivo": null
-    },
-    {
       "run_id": "2026-06-01-1200",
       "captured_at": "2026-06-01T06:30:40.416Z",
       "rows": 27,
@@ -49,7 +42,39 @@
       "rows": 23,
       "unique_skus": 23,
       "pincodes_with_jivo": null
+    },
+    {
+      "run_id": "XVERIFY-2026-06-05",
+      "captured_at": "2026-06-04T13:48:44.234Z",
+      "rows": 23,
+      "unique_skus": 23,
+      "pincodes_with_jivo": null,
+      "priced_rows": 10
+    },
+    {
+      "run_id": "XV-2026-06-05",
+      "captured_at": "2026-06-04T13:48:44.234Z",
+      "rows": 23,
+      "unique_skus": 23,
+      "pincodes_with_jivo": null,
+      "priced_rows": 10
+    },
+    {
+      "run_id": "XV",
+      "captured_at": "2026-06-04T13:48:44.234Z",
+      "rows": 23,
+      "unique_skus": 23,
+      "pincodes_with_jivo": null,
+      "priced_rows": 10
+    },
+    {
+      "run_id": "2026-06-05-0112",
+      "captured_at": "2026-06-04T19:43:30.803Z",
+      "rows": 23,
+      "unique_skus": 23,
+      "pincodes_with_jivo": null,
+      "priced_rows": 10
     }
   ],
-  "updated_at": "2026-06-04T13:48:57.417690+00:00"
+  "updated_at": "2026-06-04T19:43:58.548402+00:00"
 }

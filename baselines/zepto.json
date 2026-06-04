@@ -7,8 +7,39 @@
       "rows": 1277,
       "unique_skus": 23,
       "pincodes_with_jivo": 75
+    },
+    {
+      "run_id": "XVERIFY-2026-06-05",
+      "captured_at": "2026-06-04T15:48:04.719Z",
+      "rows": 1277,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 75,
+      "priced_rows": 639
+    },
+    {
+      "run_id": "XV-2026-06-05",
+      "captured_at": "2026-06-04T15:48:04.719Z",
+      "rows": 1277,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 75,
+      "priced_rows": 639
+    },
+    {
+      "run_id": "XV",
+      "captured_at": "2026-06-04T15:48:04.719Z",
+      "rows": 1277,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 75,
+      "priced_rows": 639
+    },
+    {
+      "run_id": "2026-06-04-1933",
+      "captured_at": "2026-06-04T15:48:04.719Z",
+      "rows": 1277,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 75,
+      "priced_rows": 639
     }
   ],
-  "updated_at": "2026-06-04T15:50:33.200390+00:00",
-  "_note": "Baseline RESET 2026-06-04 (zcat fix): scraper now captures the FULL Jivo catalog (12->23 SKUs) incl. OOS/rollup-hidden variants via the get_page PDP seed pass, so rows ~doubled. Pre-fix 12-SKU/~623-row samples were dropped as obsolete; cron refills the rolling window from here."
+  "updated_at": "2026-06-04T19:33:25.371166+00:00"
 }
