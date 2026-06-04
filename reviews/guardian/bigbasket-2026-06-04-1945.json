@@ -93,6 +93,6 @@
   ],
   "diagnosis": "bigbasket BROKEN (deep-check): 10 in-stock priced rows (floor 15) | heal: priced-row collapse / padding -> re-scrape (selector or block?)",
   "quarantined": true,
-  "evaluated_at": "2026-06-04T19:45:04.990306+00:00",
+  "evaluated_at": "2026-06-04T19:45:56.258775+00:00",
   "source_result": "/opt/ecom-intel/platforms/bigbasket/result.json"
 }
