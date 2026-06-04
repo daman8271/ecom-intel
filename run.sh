@@ -48,6 +48,21 @@ cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 echo "[$RUN_ID] reviewing $P ..."
 python3 "$DIR/tools/review.py" "$P" "$RUN_ID" || true
 
+# Read the verdict the review just wrote (reviews/<P>-<RUN_ID>.json). This GATES the
+# stakeholder Telegram delivery below: we publish the polished report ONLY on a clean OK
+# run, so a BROKEN/SUSPECT run (contamination, padding, combo inflation, block, staleness)
+# can never reach Jivo's stakeholders. Default to BROKEN if the verdict is unreadable —
+# fail closed, never ship on uncertainty.
+VERDICT="$(python3 - "$DIR/reviews/${P}-${RUN_ID}.json" <<'PYEOF' 2>/dev/null || echo BROKEN
+import json, sys
+try:
+    print((json.load(open(sys.argv[1])).get("verdict") or "BROKEN").upper())
+except Exception:
+    print("BROKEN")
+PYEOF
+)"
+echo "[$RUN_ID] $P review verdict = $VERDICT"
+
 # ---- Vault: append this run's COMPLETE rows to data/<P>/history.csv. ----
 # Note generation is NOT done here: the whole Obsidian graph (complete run notes +
 # SKU/city/pincode hubs + MOCs + rollups + index) is rebuilt once per sweep by
@@ -65,8 +80,33 @@ python3 "$DIR/tools/vault_note.py" "$P" "$RUN_ID" --csv-only || echo "vault_note
   [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
   TG="${TELEGRAM_BOT_TOKEN:-}"
   CH="${TELEGRAM_CHAT_ID:-}"
+  # Optional separate owner/alert channel for held-back (non-OK) runs; falls back to the
+  # main chat if not configured, so the alert is never lost.
+  OWNER_CH="${TELEGRAM_OWNER_CHAT_ID:-$CH}"
   TGLOG="$DIR/logs/telegram.log"
-  if [ -n "$TG" ] && [ -n "$CH" ]; then
+
+  # ---- VERDICT GATE ----------------------------------------------------------
+  # Only an OK verdict ships the polished report+Excel to stakeholders. A SUSPECT/BROKEN
+  # run is HELD BACK and the owner gets a short alert instead (never the garbage report).
+  if [ "$VERDICT" != "OK" ] && [ -n "$TG" ] && [ -n "$OWNER_CH" ]; then
+    STAMP="$(date '+%Y-%m-%d %H:%M:%S')"
+    REASONS="$(python3 - "$DIR/reviews/${P}-${RUN_ID}.json" <<'PYEOF' 2>/dev/null
+import json, sys
+try:
+    d = json.load(open(sys.argv[1]))
+    rs = d.get("reasons") or []
+    print("; ".join(rs[:4]) if rs else "(no reason recorded)")
+except Exception:
+    print("(verdict file unreadable)")
+PYEOF
+)"
+    ALERT="⚠️ Jivo × ${P} — run ${RUN_ID} verdict=${VERDICT}. HELD BACK from stakeholder delivery (not shipped).
+${REASONS}"
+    RA="$(curl -s --max-time 60 -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
+            --data-urlencode "chat_id=${OWNER_CH}" \
+            --data-urlencode "text=${ALERT}")"
+    echo "[$STAMP] $P HELD ($VERDICT) owner-alert -> $RA" >> "$TGLOG"
+  elif [ "$VERDICT" = "OK" ] && [ -n "$TG" ] && [ -n "$CH" ]; then
     STAMP="$(date '+%Y-%m-%d %H:%M:%S')"
     # the Excel just built sits in $PDIR; newest by mtime is this run's file
     XLSX="$(ls -t "$PDIR"/Jivo-*.xlsx 2>/dev/null | head -1)"

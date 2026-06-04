@@ -77,6 +77,55 @@ COVERAGE_BROKEN_DROP = 0.75   # per-pincode: <25% of baseline coverage -> BROKEN
 
 BASELINE_WINDOW = 10          # rolling window of recent OK runs to average over
 
+# --- geo-consistency (per-pincode platforms with a resolved store id) -------
+# One physical dark-store / merchant serves ONE city/metro. If a single store_id is
+# recorded under many distinct cities, a default/fallback store was scraped and
+# mislabeled across cities (blinkit default-store contamination: id 31719 spanned 10
+# cities at one identical price). National platforms carry an empty store_id and are n/a.
+GEO_STORE_CITY_SPAN_BROKEN = 4    # one store_id across >= this many distinct cities -> BROKEN
+GEO_STORE_CITY_SPAN_SUSPECT = 3   # exactly this many -> SUSPECT
+
+# --- priced-row floor / block scan ------------------------------------------
+# Static-catalog scrapers (amazon, flipkart) emit a ROW PER CATALOG ENTRY even when the
+# fetch was blocked/threw, so total_rows never collapses on a block -> the row-count
+# checks stay green. We additionally scan for block/error MARKERS and a priced-in-stock
+# floor so a fully/partly blocked run can never pass as OK.
+BLOCK_FRAC_BROKEN = 0.40     # >= this fraction of rows carry block/error markers -> BROKEN
+BLOCK_FRAC_SUSPECT = 0.15    # >= this fraction -> SUSPECT
+BLOCK_RATE_BROKEN = 30.0     # summary.block_rate_pct >= this -> BROKEN
+BLOCK_RATE_SUSPECT = 10.0    # summary.block_rate_pct >= this -> SUSPECT
+PRICED_BROKEN_DROP = 0.75    # priced-in-stock rows < 25% of baseline -> BROKEN
+PRICED_SUSPECT_DROP = 0.40   # priced-in-stock rows < 60% of baseline -> SUSPECT
+# status / scrape_status VALUES that mean a block/throttle (NOT legit 'ok'/'oos'/'notfound'/'no_jsonld').
+STATUS_BLOCK_VALUES = (
+    "blocked", "block", "error", "captcha", "throttled", "throttle",
+    "403", "429", "timeout", "timed_out", "forbidden", "rate_limit", "ratelimited",
+)
+# Row text fields that may carry a block/error string (beyond name/locality).
+BLOCK_TEXT_FIELDS = ("availability_text", "avail_text", "error", "note")
+STATUS_FIELDS = ("status", "scrape_status")
+
+# --- per-litre / combo volume sanity ----------------------------------------
+# The scraper's per_litre = sale / (vol_ml/1000). If vol_ml UNDERCOUNTS a combo pack
+# (e.g. '5+1 LTR' parsed as 1000ml not 6000ml) the published Rs/L is inflated. We
+# re-derive the pack's TOTAL volume from the `pack` string and flag rows where the
+# recorded vol_ml is materially below it.
+COMBO_VOL_MARGIN = 1.4       # parsed total volume > recorded vol_ml * this -> per_litre inflated
+
+# --- shared (sale,mrp) duplication (fabrication / cross-sell bleed) ----------
+# A specific DISCOUNTED (sale,mrp) pair shared by several DISTINCT canonical products is
+# a fabrication tell (flipkart cross-sell carousel bled one PDP's price onto delisted
+# SKUs). We require sale != mrp (a genuine same-list-price collision across cheap SKUs,
+# e.g. several items at sale==mrp==50, is normal and excluded).
+SHARED_PRICE_MIN_CANON = 2       # a "qualifying pair" = a discounted (sale,mrp) held by >= this many canonicals
+SHARED_PRICE_BROKEN_CANON = 5    # any single pair held by >= this many canonicals -> BROKEN
+SHARED_PRICE_SUSPECT_CANON = 3   # any single pair held by >= this many canonicals -> SUSPECT
+# Row-share backstop: a couple of coincidental same-price collisions in a big catalog is
+# normal; a LARGE share of priced rows tied up in shared discounted pairs is fabrication.
+# (Audited contaminated flipkart 2026-06-04: max_canon=3, shared_frac=12% -> SUSPECT.)
+SHARED_PRICE_BROKEN_FRAC = 0.25  # >= this share of priced rows in shared discounted pairs -> BROKEN
+SHARED_PRICE_SUSPECT_FRAC = 0.08 # >= this share -> SUSPECT
+
 # --- staleness alarm (hybrid search-API platforms, e.g. Zepto) --------------
 # Goal: flag when we may be recording a LAGGING catalogue rather than the live price (the bug the
 # owner reported on Zepto). The true lag signal is NOT the per-product `cached` flag — Zepto leaves
@@ -232,6 +281,7 @@ def baseline_expected(bl):
         "rows": avg("rows"),
         "unique_skus": avg("unique_skus"),
         "pincodes_with_jivo": avg("pincodes_with_jivo"),
+        "priced_rows": avg("priced_rows"),
         "n": len(samples),
     }
 
@@ -392,6 +442,251 @@ def staleness_alarm(data, rows, platform, run_id):
     else:
         bits.append(f"no SKU frozen across {STALE_FROZEN_RUNS} runs")
     return True, "; ".join(bits), "suspect"
+
+
+# --- new systemic guards (geo / block / per-litre / fabrication) ------------
+_UNIT_ML = {"ml": 1.0, "l": 1000.0, "ltr": 1000.0, "litre": 1000.0,
+            "liter": 1000.0, "litres": 1000.0, "liters": 1000.0}
+_NUM_UNIT_RE = __import__("re").compile(
+    r"(\d+(?:\.\d+)?)\s*(ml|ltr|litres|liters|litre|liter|l)\b")
+_NUM_RE = __import__("re").compile(r"(\d+(?:\.\d+)?)")
+_ADD_SPLIT_RE = __import__("re").compile(r"\s*\+\s*|\s+with\s+|\s*&\s*|\s+and\s+|\s+plus\s+")
+_ADD_PRESENT_RE = __import__("re").compile(r"\+|\swith\s|\s&\s|\sand\s|\splus\s")
+_MULT_A_RE = __import__("re").compile(r"(\d+(?:\.\d+)?)\s*(ml|ltr|litres?|liters?|l)\s*[x×]\s*(\d+)")
+_MULT_B_RE = __import__("re").compile(r"(\d+)\s*[x×]\s*(\d+(?:\.\d+)?)\s*(ml|ltr|litres?|liters?|l)\b")
+_PACK_OF_RE = __import__("re").compile(r"pack of (\d+)")
+
+
+def parse_total_vol_ml(pack):
+    """
+    TOTAL millilitres implied by a `pack` string, or None if it carries no volume token.
+    Handles additive combos ('5+1 LTR', '200 ML + 5LTR', '5 Litre with 5 Litre',
+    '5 + 1 + 1 LTR' with a shared trailing unit), multiplicative packs ('1 L X 2',
+    'Pack of 2 ... 1 L') and plain single packs. Used only to DETECT under-counted
+    combo volumes — it never rewrites the scraper's value. Never raises.
+    """
+    if not pack:
+        return None
+    try:
+        t = str(pack).lower()
+        # multiplicative: 'M unit x N'  or  'N x M unit'
+        m = _MULT_A_RE.search(t)
+        if m:
+            um = _UNIT_ML.get(m.group(2))
+            if um:
+                return float(m.group(1)) * um * float(m.group(3))
+        m = _MULT_B_RE.search(t)
+        if m:
+            um = _UNIT_ML.get(m.group(3))
+            if um:
+                return float(m.group(1)) * float(m.group(2)) * um
+        # additive: sum every volume token; a unit-less addend inherits the shared trailing unit
+        if _ADD_PRESENT_RE.search(t):
+            parts = _ADD_SPLIT_RE.split(t)
+            shared = None
+            for p in reversed(parts):
+                nu = _NUM_UNIT_RE.search(p)
+                if nu:
+                    shared = nu.group(2)
+                    break
+            total, got = 0.0, False
+            for p in parts:
+                nu = _NUM_UNIT_RE.search(p)
+                if nu:
+                    um = _UNIT_ML.get(nu.group(2))
+                    if um:
+                        total += float(nu.group(1)) * um
+                        got = True
+                else:
+                    nm = _NUM_RE.search(p)
+                    if nm and shared:
+                        um = _UNIT_ML.get(shared)
+                        if um:
+                            total += float(nm.group(1)) * um
+                            got = True
+            return total if got else None
+        # single token, optionally multiplied by 'pack of N'
+        nu = _NUM_UNIT_RE.search(t)
+        if nu:
+            um = _UNIT_ML.get(nu.group(2))
+            if um:
+                base = float(nu.group(1)) * um
+                pof = _PACK_OF_RE.search(t)
+                if pof:
+                    base *= int(pof.group(1))
+                return base
+    except Exception:
+        return None
+    return None
+
+
+def geo_consistency(rows, per_pincode):
+    """
+    (ok, detail, severity). Flags a single resolved store_id recorded under many distinct
+    cities (default/fallback-store contamination). n/a for national platforms (empty
+    store_id). Reinforces with the identical-modal-price tell in the detail string.
+    """
+    if not per_pincode:
+        return True, "national run (no per-store geo); n/a", "broken"
+    by_store_cities = {}
+    by_store_prices = {}
+    for r in rows:
+        sid = r.get("store_id")
+        if sid in (None, "", "-"):
+            continue
+        city = r.get("city")
+        if not city:
+            continue
+        by_store_cities.setdefault(sid, set()).add(city)
+        by_store_prices.setdefault(sid, []).append(num(r.get("sale")))
+    if not by_store_cities:
+        return True, "no resolved store_id on rows; geo check n/a", "broken"
+    worst_sid, worst_cities = max(by_store_cities.items(), key=lambda kv: len(kv[1]))
+    span = len(worst_cities)
+    if span >= GEO_STORE_CITY_SPAN_SUSPECT:
+        modal = _modal(by_store_prices.get(worst_sid, []))
+        n_rows = len(by_store_prices.get(worst_sid, []))
+        sample = ", ".join(sorted(str(c) for c in worst_cities)[:6])
+        detail = (f"store_id {worst_sid} spans {span} distinct cities "
+                  f"({sample}{'…' if span > 6 else ''}) across {n_rows} rows"
+                  f"{f', identical modal sale ₹{modal:g}' if modal is not None else ''}"
+                  f" — default/fallback-store contamination")
+        sev = "broken" if span >= GEO_STORE_CITY_SPAN_BROKEN else "suspect"
+        return False, detail, sev
+    return True, f"max store_id city-span = {span} (stores stay local)", "broken"
+
+
+def block_and_priced_floor(data, rows, expected):
+    """
+    (ok, detail, severity). Catches a blocked/throttled run that pads placeholder rows so
+    the row-count checks stay green: scans status/scrape_status values + block text, reads
+    summary.block_rate_pct, and floors priced-in-stock rows (absolute + vs baseline).
+    """
+    summary = data.get("summary", {}) or {}
+    n = len(rows)
+    blocked_rows = 0
+    for r in rows:
+        hit = False
+        for f in STATUS_FIELDS:
+            v = str(r.get(f) or "").strip().lower()
+            if v and v in STATUS_BLOCK_VALUES:
+                hit = True
+                break
+        if not hit:
+            for f in BLOCK_TEXT_FIELDS:
+                txt = str(r.get(f) or "").lower()
+                if txt and any(mk in txt for mk in BLOCK_MARKERS):
+                    hit = True
+                    break
+        if hit:
+            blocked_rows += 1
+    block_frac = (blocked_rows / n) if n else 0.0
+
+    rate = num(summary.get("block_rate_pct"))
+    priced_instock = sum(1 for r in rows
+                         if r.get("in_stock") and (num(r.get("sale")) or 0) > 0)
+
+    sev = None
+    reasons = []
+    if block_frac >= BLOCK_FRAC_BROKEN:
+        sev = "broken"
+        reasons.append(f"{blocked_rows}/{n} rows ({block_frac:.0%}) carry block/error markers")
+    elif block_frac >= BLOCK_FRAC_SUSPECT:
+        sev = sev or "suspect"
+        reasons.append(f"{blocked_rows}/{n} rows ({block_frac:.0%}) carry block/error markers")
+    if rate is not None and rate >= BLOCK_RATE_BROKEN:
+        sev = "broken"
+        reasons.append(f"summary.block_rate_pct={rate:g}%")
+    elif rate is not None and rate >= BLOCK_RATE_SUSPECT:
+        sev = sev or "suspect"
+        reasons.append(f"summary.block_rate_pct={rate:g}%")
+    if n > 0 and priced_instock == 0:
+        sev = "broken"
+        reasons.append(f"0 priced in-stock rows out of {n} (all OOS/placeholder — scrape likely failed)")
+    elif expected and expected.get("priced_rows"):
+        base = expected["priced_rows"]
+        ratio = priced_instock / base if base else 1.0
+        if ratio < (1 - PRICED_BROKEN_DROP):
+            sev = "broken"
+            reasons.append(f"{priced_instock} priced in-stock rows is {ratio:.0%} of baseline {base:.0f} (collapse)")
+        elif ratio < (1 - PRICED_SUSPECT_DROP):
+            sev = sev or "suspect"
+            reasons.append(f"{priced_instock} priced in-stock rows is {ratio:.0%} of baseline {base:.0f}")
+
+    if sev:
+        return False, "; ".join(reasons), sev
+    base_note = (f", vs baseline {expected['priced_rows']:.0f}"
+                 if (expected and expected.get("priced_rows")) else "")
+    return True, (f"{priced_instock} priced in-stock rows{base_note}; "
+                  f"{blocked_rows} block/error-marked rows"), "broken"
+
+
+def per_litre_combo_sanity(rows):
+    """
+    (ok, detail, severity). Flags rows whose recorded vol_ml materially undercounts the
+    pack's parsed total volume (combo/multipack mis-parse) — the published per_litre is
+    then inflated. Precise: only fires when the `pack` string itself implies more volume.
+    """
+    bad = []
+    for r in rows:
+        vol = r.get("vol_ml")
+        if not isinstance(vol, (int, float)) or vol <= 0:
+            continue
+        total = parse_total_vol_ml(r.get("pack"))
+        if total and total > vol * COMBO_VOL_MARGIN:
+            bad.append((r.get("pack"), vol, total, r.get("per_litre")))
+    if not bad:
+        return True, "per_litre consistent with parsed pack volume for all rows", "suspect"
+    packs = {}
+    for pack, vol, total, pl in bad:
+        packs.setdefault((pack, vol), (total, pl))
+    (epack, evol), (etot, epl) = next(iter(sorted(
+        packs.items(), key=lambda kv: -(kv[1][1] or 0))))
+    detail = (f"{len(bad)} rows / {len(packs)} packs have per_litre inflated by an "
+              f"under-counted combo volume e.g. pack {epack!r} recorded {evol:g}ml but "
+              f"implies {etot:g}ml (per_litre ₹{epl})")
+    return False, detail, "suspect"
+
+
+def shared_price_dup(rows):
+    """
+    (ok, detail, severity). Flags a DISCOUNTED (sale,mrp) pair shared by several DISTINCT
+    canonical products — a price-fabrication / cross-sell-bleed tell. sale==mrp collisions
+    (many cheap SKUs at one list price) are excluded.
+    """
+    pair = {}
+    priced = 0
+    for r in rows:
+        s = num(r.get("sale"))
+        m = num(r.get("mrp"))
+        c = r.get("canonical")
+        if s is not None and s > 0:
+            priced += 1
+        if s is None or m is None or not c:
+            continue
+        if abs(s - m) < 0.5:        # require a genuine discount
+            continue
+        pair.setdefault((round(s, 2), round(m, 2)), set()).add(c)
+    qual = {k: v for k, v in pair.items() if len(v) >= SHARED_PRICE_MIN_CANON}
+    if not qual:
+        return True, "no discounted (sale,mrp) pair shared across distinct SKUs", "suspect"
+    max_canon = max(len(v) for v in qual.values())
+    # share of priced rows whose (sale,mrp) is one of the shared discounted pairs
+    shared_rows = sum(1 for r in rows
+                      if (num(r.get("sale")) is not None and num(r.get("mrp")) is not None
+                          and abs(num(r.get("sale")) - num(r.get("mrp"))) >= 0.5
+                          and (round(num(r.get("sale")), 2), round(num(r.get("mrp")), 2)) in qual))
+    shared_frac = (shared_rows / priced) if priced else 0.0
+    worst = max(qual.items(), key=lambda kv: len(kv[1]))
+    detail = (f"{len(qual)} discounted (sale,mrp) pair(s) shared by >= "
+              f"{SHARED_PRICE_MIN_CANON} distinct SKUs; worst {worst[0]} held by "
+              f"{len(worst[1])} canonicals; {shared_rows}/{priced} priced rows "
+              f"({shared_frac:.0%}) in shared pairs — possible fabrication/cross-sell bleed")
+    if max_canon >= SHARED_PRICE_BROKEN_CANON or shared_frac >= SHARED_PRICE_BROKEN_FRAC:
+        return False, detail, "broken"
+    if max_canon >= SHARED_PRICE_SUSPECT_CANON or shared_frac >= SHARED_PRICE_SUSPECT_FRAC:
+        return False, detail, "suspect"
+    return True, detail + " (below trigger)", "suspect"
 
 
 def run_checks(data, rows, per_pincode, expected, run_id, platform):
@@ -613,6 +908,42 @@ def run_checks(data, rows, per_pincode, expected, run_id, platform):
         st_ok, st_detail, st_sev = True, f"staleness check error (ignored): {e}", "suspect"
     add("price_staleness", st_ok, st_detail, severity=st_sev)
 
+    # 14) geo-consistency: one store_id must not span many cities (default-store
+    #     contamination — blinkit). Per-pincode platforms only; national => n/a.
+    try:
+        g_ok, g_detail, g_sev = geo_consistency(rows, per_pincode)
+    except Exception as e:
+        log(f"{platform}: geo_consistency raised (ignored): {e}")
+        g_ok, g_detail, g_sev = True, f"geo check error (ignored): {e}", "suspect"
+    add("geo_consistency", g_ok, g_detail, severity=g_sev)
+
+    # 15) priced-row floor + block scan: a blocked run that pads placeholder rows
+    #     must not pass green (amazon/flipkart static-catalog row-padding).
+    try:
+        b_ok, b_detail, b_sev = block_and_priced_floor(data, rows, expected)
+    except Exception as e:
+        log(f"{platform}: block_and_priced_floor raised (ignored): {e}")
+        b_ok, b_detail, b_sev = True, f"block/priced check error (ignored): {e}", "suspect"
+    add("priced_floor_block", b_ok, b_detail, severity=b_sev)
+
+    # 16) per-litre / combo volume sanity: under-counted combo volume inflates Rs/L
+    #     (amazon parseVolMl combo bug).
+    try:
+        p_ok, p_detail, p_sev = per_litre_combo_sanity(rows)
+    except Exception as e:
+        log(f"{platform}: per_litre_combo_sanity raised (ignored): {e}")
+        p_ok, p_detail, p_sev = True, f"per_litre check error (ignored): {e}", "suspect"
+    add("per_litre_sanity", p_ok, p_detail, severity=p_sev)
+
+    # 17) shared (sale,mrp) duplication across distinct SKUs (fabrication / cross-sell
+    #     bleed — flipkart).
+    try:
+        d_ok, d_detail, d_sev = shared_price_dup(rows)
+    except Exception as e:
+        log(f"{platform}: shared_price_dup raised (ignored): {e}")
+        d_ok, d_detail, d_sev = True, f"shared-price check error (ignored): {e}", "suspect"
+    add("shared_price_dup", d_ok, d_detail, severity=d_sev)
+
     return checks, reasons, hard_broken, soft_suspect
 
 
@@ -828,6 +1159,8 @@ def main(argv):
     n_rows = len(rows)
     n_skus = len({r.get("canonical") for r in rows if r.get("canonical")})
     pin_jivo = pincodes_with_jivo(data, rows)
+    priced_rows = sum(1 for r in rows
+                      if r.get("in_stock") and (num(r.get("sale")) or 0) > 0)
 
     expected = baseline_expected(normalize_baseline(platform, load_baseline(platform)))
     baseline_rows = round(expected["rows"]) if (expected and expected.get("rows")) else None
@@ -900,6 +1233,7 @@ def main(argv):
             "rows": n_rows,
             "unique_skus": n_skus,
             "pincodes_with_jivo": pin_jivo if per_pincode else None,
+            "priced_rows": priced_rows,
         })
 
     # One-line summary to stdout.
