@@ -91,8 +91,8 @@ function numPrice(s) {
 function comboVolMl(text) {
   if (!text) return null;
   const t = text.toLowerCase();
-  const U = '(ml|l|ltr|litres?|kg|gms?|g)';
-  const toMl = (n, u) => (u === 'ml' || u === 'g') ? n : n * 1000; // l/ltr/litre/kg -> ml
+  const U = '(ml|l|ltr|litres?|liters?|kg|gms?|g)';   // incl. American "liter(s)" (combo addends use it)
+  const toMl = (n, u) => (u === 'ml' || u === 'g') ? n : n * 1000; // l/ltr/litre/liter/kg -> ml
   // "1+1 litres", "500 + 500 ml", "1+1+1 l"
   let m = t.match(new RegExp('([\\d.]+(?:\\s*\\+\\s*[\\d.]+)+)\\s*' + U + '\\b'));
   if (m) {
@@ -105,6 +105,20 @@ function comboVolMl(text) {
   // "2 x 1 l", "2 × 1l"
   m = t.match(new RegExp('([\\d.]+)\\s*[x×*]\\s*([\\d.]+)\\s*' + U + '\\b'));
   if (m) return toMl(parseFloat(m[1]) * parseFloat(m[2]), m[3]);
+  // REPEATED-UNIT ADDITIVE COMBOS (2026-06-04 audit BUG-1): the branches above only catch a
+  // SHARED trailing unit ("1+1 Litres") or "N unit × M". Combos where EACH addend carries its
+  // OWN unit — "5 Litre with 5 Litre" (10L), "5 Litre & 1 Liter" (6L), "5 Litre + 1 Litre Combo
+  // Pack" (6L) — slip through to the single-pack fallback, ~halving the denominator (Rs/L
+  // inflated 1.2x–2x). Sum every unit-bearing quantity, converting per-unit first so mixed units
+  // (e.g. "500 ml + 1 l") add correctly. FIRE ONLY when a combo indicator is present AND there
+  // are >=2 unit-bearing quantities — conservative: under-include, never mis-sum a non-combo title.
+  if (/\+|&|\bwith\b|\bcombo\b|\bbundle\b/.test(t)) {
+    const matches = [...t.matchAll(new RegExp('([\\d.]+)\\s*' + U + '\\b', 'g'))];
+    if (matches.length >= 2) {
+      const sum = matches.reduce((s, mm) => s + toMl(parseFloat(mm[1]) || 0, mm[2]), 0);
+      if (sum > 0) return sum;
+    }
+  }
   return null;
 }
 
@@ -207,6 +221,27 @@ function toRow(card, rec) {
   };
 }
 
+// CANONICAL NORMALIZATION (2026-06-04 audit BUG-2). canonical() is title-derived, so the SAME
+// ASIN can split into two canonicals on a title-variant ("...Cooking" vs truncated "...Cookin"),
+// and two DISTINCT ASINs with identical titles collapse to one. Fix WITHOUT touching canonical()'s
+// cross-platform formula: per ASIN pick the MAJORITY canonical (kills title-variant splits), then
+// suffix the ASIN onto any canonical shared by >1 ASIN (keeps genuinely distinct listings separate).
+// Mutates row.canonical in place (rows are shared between perPin and allRows).
+function normalizeCanonicals(allRows) {
+  const votes = {};                  // asin -> { canonical: count }
+  for (const r of allRows) (votes[r.asin] || (votes[r.asin] = {}))[r.canonical] = ((votes[r.asin] || {})[r.canonical] || 0) + 1;
+  const asinCanon = {};              // asin -> winning (most-frequent) canonical
+  for (const [asin, m] of Object.entries(votes)) asinCanon[asin] = Object.entries(m).sort((a, b) => b[1] - a[1])[0][0];
+  const canonAsins = {};             // canonical -> Set(asin)
+  for (const [asin, c] of Object.entries(asinCanon)) (canonAsins[c] || (canonAsins[c] = new Set())).add(asin);
+  for (const r of allRows) {
+    let c = asinCanon[r.asin];
+    if (canonAsins[c] && canonAsins[c].size > 1) c = `${c}-${String(r.asin).toLowerCase()}`;  // distinct ASINs, same title
+    r.canonical = c;
+  }
+  return allRows;
+}
+
 async function checkSession(page) {
   try {
     await page.goto('https://www.amazon.in/?ref_=nav_signin', { waitUntil: 'domcontentloaded', timeout: 45000 });
@@ -219,7 +254,11 @@ async function checkSession(page) {
   } catch (_) { return { loggedIn: false, greeting: '' }; }
 }
 
-(async () => {
+// Pure helpers are exported so they can be unit-tested OFFLINE (no scraper/browser run);
+// the live sweep below only executes when this file is run directly, not when required.
+module.exports = { parseVolMl, comboVolMl, canonical, packFromTitle, numPrice, isFreshSlot, normalizeCanonicals };
+
+if (require.main === module) (async () => {
   if (!fs.existsSync(STATE)) {
     console.error('FATAL: no session at ' + STATE + ' — symlink it to ../amazon-now/secrets/amazon-now.storageState.json (same account) or run import_cookies.js.');
     process.exit(2);
@@ -297,8 +336,12 @@ async function checkSession(page) {
         if (!card.isJivo) continue;
         if (!isFreshSlot(card.slot)) { dropped_marketplace++; continue; }  // marketplace bleed — skip
         const row = toRow(card, rec);
-        if (seen.has(row.canonical)) continue;
-        seen.add(row.canonical); rows.push(row);
+        // Dedup per-pincode by ASIN, not title-canonical (2026-06-04 audit BUG-2). The sponsored
+        // ad + organic listing of one product share an ASIN -> still collapse to one row; but two
+        // DISTINCT ASINs that happen to share a title (identical-name relistings, e.g. Rs145-209 vs
+        // Rs356 1L mustard) no longer silently drop one price the way canonical-dedup did.
+        if (seen.has(card.asin)) continue;
+        seen.add(card.asin); rows.push(row);
       }
     }
     // Fresh is "serviceable here" ONLY if the (correctly-located) page shows at least one
@@ -312,7 +355,7 @@ async function checkSession(page) {
   }
   await browser.close().catch(() => {});
 
-  const allRows = perPin.flatMap((p) => p.rows);
+  const allRows = normalizeCanonicals(perPin.flatMap((p) => p.rows));
   const summary = {
     pincodes_total: PINCODES.length,
     pincodes_fresh_serviceable: perPin.filter((p) => p.serviceable).length,
