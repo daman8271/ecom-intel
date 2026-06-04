@@ -16,20 +16,20 @@ cd "$PDIR"
 SCRAPER="scrape.js"
 [ "$P" = "amazon-now" ] && SCRAPER="scrape.ctnow.js"
 echo "[$RUN_ID] scraping $P ($SCRAPER) ..."
-# amazon-fresh and amazon-now share ONE Amazon account whose delivery location is set
-# SERVER-SIDE (account-global). Their per-pincode scrapes both change that location, so
-# they must NEVER set it concurrently or they corrupt each other's pincode. Serialize
-# ONLY these two behind a shared lock: whichever starts first scrapes to completion; the
-# other blocks (up to 45m) then runs. Every other platform — including the guest `amazon`
-# /dp scraper, which sets NO account location — is unaffected and stays fully parallel, so
-# peak Chromium concurrency is unchanged (fresh+now share one slot). This also protects the
-# self-heal re-run path, since that re-runs platforms through this same run.sh.
+# amazon-fresh and amazon-now now run on SEPARATE, INDEPENDENT Amazon accounts
+# (fresh=259-8681039, now=520-2840772), each with its OWN account-global delivery
+# location — verified independent 2026-06-04 — so they no longer collide and may run
+# CONCURRENTLY. We still take a PER-PLATFORM lock (.<platform>.lock) so a platform can't
+# overlap its OWN previous run (e.g. two run_all windows stacking), which would corrupt
+# that one account's location. Cross-platform they are fully parallel. Safety net: both
+# scrapers drop any row whose resolved location != requested pincode, so even an
+# unexpected collision yields reduced coverage, never wrong prices.
 if { [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; } && command -v flock >/dev/null 2>&1; then
   (
-    flock -w 2700 8 || { echo "[$RUN_ID] $P: amazon-account lock not acquired in 45m; skipping this window"; exit 75; }
-    echo "[$RUN_ID] $P: amazon-account lock acquired; scraping ..."
+    flock -w 2700 8 || { echo "[$RUN_ID] $P: per-account lock not acquired in 45m; skipping this window"; exit 75; }
+    echo "[$RUN_ID] $P: per-account lock (.${P}.lock) acquired; scraping ..."
     node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
-  ) 8>"$DIR/.amazon-account.lock"
+  ) 8>"$DIR/.${P}.lock"
 else
   node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
 fi
