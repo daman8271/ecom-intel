@@ -40,7 +40,22 @@ const PFILE = process.env.PINCODES_FILE || (__dirname + '/pincodes.json');
 const OUTFILE = process.env.OUT_FILE || (__dirname + '/result.json');
 const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
 const CONCURRENCY = parseInt(process.env.CONCURRENCY || '3', 10);
-const MAX_PAGES = 4;            // page 0..3; Jivo catalogue is small, this is plenty
+const MAX_PAGES = 4;            // page 0..3 for the bare-brand query; all in-stock Jivo ranks on page 0
+// The bare-brand "jivo" search is gated to IN-STOCK products (oos_products_shown_count=0), so it
+// silently omits chronically-OOS Jivo SKUs: Extra Virgin Olive Oil 1L, Pomace Olive Oil 5L, the
+// single-2L Pomace bottle, the Extra Light 2L, Canola combo, etc. Those reappear under SECONDARY
+// queries that add a category/size term. We use BRAND-SCOPED queries ("jivo olive oil", "jivo 5l",
+// …) rather than bare-category ones ("olive oil"): brand-scoped keeps Jivo on page 0-1 (reliable +
+// cheap, ~8 results), whereas bare-category buries Jivo on pages 5-6 of 7 amid hundreds of competitor
+// products (unreliable + expensive — empirically it missed Pomace 5L / EV 1L at the Saket store the
+// brand-scoped set recovered). Set matches A1's live-verified minimal recovery set. Each query is
+// full-swept to its first empty page (no early-break) up to CAT_MAX_PAGES; deduped per-store by
+// canonical against the bare-"jivo" results, so in-stock prices are untouched and OOS SKUs only ADD.
+// Override/disable via env (ZEPTO_CATEGORY_QUERIES='' turns the secondary sweep off, brand-only).
+const CAT_QUERIES = (process.env.ZEPTO_CATEGORY_QUERIES !== undefined
+  ? process.env.ZEPTO_CATEGORY_QUERIES : 'jivo olive oil,jivo oil 5 litre,jivo 5l,jivo 2l,jivo pomace')
+  .split(',').map(s => s.trim()).filter(Boolean);
+const CAT_MAX_PAGES = parseInt(process.env.ZEPTO_CAT_MAX_PAGES || '6', 10);
 const GW = 'https://bff-gateway.zeptonow.com';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36';
 const COMPAT = 'CONVENIENCE_FEE,RAIN_FEE,EXTERNAL_COUPONS,STANDSTILL,BUNDLE,MULTI_SELLER_ENABLED,PIP_V1,ROLLUPS,SCHEDULED_DELIVERY,SAMPLING_ENABLED,HOMEPAGE_V2,NEW_ETA_BANNER,SUPER_SAVER:1,PROMO_CASH:0,24X7_ENABLED_V1,HP_V4_FEED,NEW_ROLLUPS_ENABLED,PLP_ON_SEARCH,DYNAMIC_FILTERS,NEW_FEE_STRUCTURE,NEW_BILL_INFO,SUPERSTORE_V1,MARKETPLACE_REPLACEMENT';
@@ -56,27 +71,48 @@ const MARKETPLACE = process.env.ZEPTO_MARKETPLACE || 'SUPER_SAVER';
 function parseVolMl(pack) {
   if (!pack) return null;
   const s = pack.toLowerCase();
+  // 'm' = Zepto's truncated 'ml' (it clips formattedPacksize at a fixed width, so "200 ml"
+  // renders as "200 m"). Placed LAST in every alternation so it never shadows 'ml'/'l'.
   const toMl = (n, u) => {
-    if (u === 'ml' || u === 'g') return n;
+    if (u === 'ml' || u === 'm' || u === 'g') return n;
     if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'litres' || u === 'kg') return n * 1000;
     return null;
   };
   // Multiplier packs ("combos"): "N L X M" / "N ml x M" => N*M of the unit (e.g. 1 L X 2 = 2 L).
   // Must run BEFORE the single-quantity match, which would otherwise read only the first "1 L".
-  let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g)\b\s*[x×]\s*([\d.]+)/);
+  let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b\s*[x×]\s*([\d.]+)/);
   if (m) { const base = toMl(parseFloat(m[1]), m[2]); return base != null ? base * parseFloat(m[3]) : null; }
   // Additive packs: "A+B L" / "A + B Litres" => (A+B) of the unit (e.g. 1+1 Litres = 2 L).
-  m = s.match(/([\d.]+)\s*\+\s*([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g)\b/);
+  m = s.match(/([\d.]+)\s*\+\s*([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b/);
   if (m) { return toMl(parseFloat(m[1]) + parseFloat(m[2]), m[3]); }
-  // Single quantity: "1 L", "200 ml", "1 pc (1 L)".
-  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g)\b/);
+  // Single quantity: "1 L", "200 ml", "1 pc (1 L)", "1 Pack(200 m)".
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b/);
   if (m) return toMl(parseFloat(m[1]), m[2]);
   return null;
 }
-function canonical(name, pack) {
+// Authoritative volume from the variant's STRUCTURED fields (packsize + unitOfMeasure), which are
+// immune to the display-string truncation that breaks formattedPacksize (e.g. "1 Pack(200 m)").
+// packsize is the TOTAL volume in unitOfMeasure units (Zepto does NOT double combos: "1 L X 2"
+// reports packsize=2/LITER), so this is correct for combos too. Falls back to parsing the display
+// string for any variant that lacks the structured fields.
+function volFromVariant(v, pack) {
+  const ps = v && v.packsize;
+  const u = v && String(v.unitOfMeasure || '').toLowerCase();
+  if (ps != null && u) {
+    if (/^milli/.test(u) || u === 'ml') return ps;            // MILLILITRE
+    if (/^lit(er|re)/.test(u) || u === 'l') return ps * 1000; // LITER / LITRE
+    if (/^gram/.test(u) || u === 'g') return ps;              // GRAM
+    if (/^kilo/.test(u) || u === 'kg') return ps * 1000;      // KILOGRAM
+  }
+  return parseVolMl(pack);
+}
+// Canonical slug = slugify(product.name) + volume tag. The vol is precomputed (see volFromVariant)
+// so the tag is correct even when the display pack string is truncated. NOTE: distinct products that
+// share a volume (single 2L bottle vs 2x1L combo, both -> "2l") stay separate ONLY via their names
+// ("Daily" vs "Combo"), which Zepto returns consistently per product.
+function canonical(name, vol) {
   const base = (name || '').toLowerCase().replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, '')
     .replace(/\s+/g, ' ').trim().replace(/\s/g, '-');
-  const vol = parseVolMl(pack);
   const volTag = vol ? (vol >= 1000 ? (vol / 1000) + 'l' : vol + 'ml') : 'na';
   return `${base}-${volTag}`.replace(/--+/g, '-');
 }
@@ -149,10 +185,17 @@ function findMarkers(j) {
 
 async function searchPage(storeId, lat, lon, query, pageNumber) {
   const url = `${GW}/user-search-service/api/v3/search`;
-  const body = JSON.stringify({ query, pageNumber, intentId: uuid(), mode: 'AUTOSUGGEST', userSessionId: uuid() });
-  const args = ['-s', '--max-time', '30', '-X', 'POST', '-w', '\n__HTTP__%{http_code}',
-    ...hdrArgs(commonHeaders(storeId, lat, lon)), '--data', body, url];
-  const r = await curl(args);
+  // The gateway 429-rate-limits aggressive bursts (~>5 req/s). The multi-query category sweep
+  // multiplies request volume, so retry 429s with exponential backoff before giving up.
+  let r;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const body = JSON.stringify({ query, pageNumber, intentId: uuid(), mode: 'AUTOSUGGEST', userSessionId: uuid() });
+    const args = ['-s', '--max-time', '30', '-X', 'POST', '-w', '\n__HTTP__%{http_code}',
+      ...hdrArgs(commonHeaders(storeId, lat, lon)), '--data', body, url];
+    r = await curl(args);
+    if (r.status !== '429') break;
+    await new Promise(res => setTimeout(res, 1500 * (attempt + 1) + Math.random() * 1500));
+  }
   if (r.status !== '200') return { ok: false, status: r.status, items: [] };
   let j; try { j = JSON.parse(r.body); } catch { return { ok: false, status: 'badjson', items: [] }; }
   const items = [];
@@ -196,12 +239,14 @@ function toRow(pr, rec, storeId) {
       : pr.sellingPrice != null ? 'sellingPrice' : 'superSaverSellingPrice';
   }
   const saleR = sale != null ? sale / 100 : null;
-  const vol = parseVolMl(pack);
+  const vol = volFromVariant(v, pack);
   const inStock = pr.outOfStock === true ? 0 : 1;
   return {
     city: rec.city, pincode: rec.pincode, locality: rec.locality,
     store_id: storeId, store_name: '',
-    sku_raw: name, canonical: canonical(name, pack), pack,
+    // Stable Zepto identifiers, persisted for traceability / future variantId-keyed canonicalization.
+    product_id: (p && p.id) || null, variant_id: v.id || null,
+    sku_raw: name, canonical: canonical(name, vol), pack,
     vol_ml: vol, sale: saleR, mrp,
     discount_pct: (mrp && saleR && mrp >= saleR) ? Math.round(((mrp - saleR) / mrp) * 1000) / 10
       : (pr.discountPercent != null ? pr.discountPercent : null),
@@ -216,6 +261,37 @@ function toRow(pr, rec, storeId) {
   };
 }
 
+// Run one search query across its pages, appending genuine-Jivo rows into `rows` and deduping by
+// per-store canonical against `seenCanon` (shared across all queries for the store, so a SKU seen
+// under "jivo" is not re-added by a category query). Returns the page-0 freshness markers.
+//   opts.maxPages   how many pages to walk
+//   opts.earlyBreak stop once a page (after page 0) adds no NEW Jivo SKU (cheap; for the brand query
+//                   where everything is on page 0). OFF for category queries, where Jivo is sparse
+//                   and interleaved with blank pages, so we must full-sweep to the empty page.
+async function collectQuery(rec, storeId, query, opts, seenCanon, rows) {
+  let firstMarkers = null;
+  for (let pn = 0; pn < opts.maxPages; pn++) {
+    const res = await searchPage(storeId, rec.lat, rec.lon, query, pn);
+    if (pn === 0) firstMarkers = res.markers || {};
+    if (!res.ok || !res.items.length) break;
+    let added = 0;
+    for (const pr of res.items) {
+      // keep only genuine Jivo products (brand == Jivo, or name contains the
+      // word "jivo"); excludes fuzzy matches like "Jivika", "Tata", "Saffola".
+      const nm = (pr.product && pr.product.name) || '';
+      const br = ((pr.product && pr.product.brand) || '').toLowerCase();
+      if (br !== 'jivo' && !/\bjivo\b/i.test(nm)) continue;
+      const row = toRow(pr, rec, storeId);
+      const key = `${storeId}|${row.canonical}`;
+      if (seenCanon.has(key)) continue;
+      seenCanon.add(key); rows.push(row); added++;
+    }
+    if (opts.earlyBreak && added === 0 && pn > 0) break; // brand query: no new Jivo SKUs on this page
+    await new Promise(r => setTimeout(r, 250 + Math.random() * 400));
+  }
+  return firstMarkers;
+}
+
 async function scrapeOne(rec) {
   const t0 = Date.now();
   let rows = [], storeId = '', serviceable = false, markers = {};
@@ -224,24 +300,14 @@ async function scrapeOne(rec) {
     serviceable = st.serviceable; storeId = st.storeId || '';
     if (st.ok) {
       const seenCanon = new Set();
-      for (let pn = 0; pn < MAX_PAGES; pn++) {
-        const res = await searchPage(storeId, rec.lat, rec.lon, 'jivo', pn);
-        if (pn === 0 && res.markers) markers = res.markers;   // page-0 freshness markers for this store
-        if (!res.ok || !res.items.length) break;
-        let added = 0;
-        for (const pr of res.items) {
-          // keep only genuine Jivo products (brand == Jivo, or name contains the
-          // word "jivo"); excludes fuzzy matches like "Jivika", "Tata", "Saffola".
-          const nm = pr.product.name || '';
-          const br = (pr.product.brand || '').toLowerCase();
-          if (br !== 'jivo' && !/\bjivo\b/i.test(nm)) continue;
-          const row = toRow(pr, rec, storeId);
-          const key = `${storeId}|${row.canonical}`;
-          if (seenCanon.has(key)) continue;
-          seenCanon.add(key); rows.push(row); added++;
-        }
-        if (added === 0 && pn > 0) break; // no new Jivo SKUs on this page
-        await new Promise(r => setTimeout(r, 250 + Math.random() * 400));
+      // 1) Primary brand query — returns all in-stock Jivo SKUs (on page 0); keep the cheap early-break.
+      //    Its page-0 markers are the store's freshness signal (unchanged from before).
+      markers = (await collectQuery(rec, storeId, 'jivo', { maxPages: MAX_PAGES, earlyBreak: true }, seenCanon, rows)) || {};
+      // 2) Brand-scoped secondary queries — recover the chronically-OOS Jivo SKUs the bare-brand
+      //    query suppresses (Extra Virgin 1L, Pomace 5L, single-2L Pomace bottle, …). Full-sweep to
+      //    the first empty page (no early-break) so a SKU on page 1 isn't missed; deduped per-store.
+      for (const cq of CAT_QUERIES) {
+        await collectQuery(rec, storeId, cq, { maxPages: CAT_MAX_PAGES, earlyBreak: false }, seenCanon, rows);
       }
     }
   } catch (e) { process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`); }
