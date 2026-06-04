@@ -36,24 +36,16 @@ const PER_PRODUCT_DELAY_MS = parseInt(process.env.AMAZON_DELAY_MS || '900', 10);
 const MAX_RETRIES = 1;
 
 // --- volume / canonical helpers (kept compatible with the old output) -------
-function parseVolMl(pack) {
-  if (!pack) return null;
-  const p = String(pack).toLowerCase();
-  const mult = p.match(/([\d.]+)\s*x\s*([\d.]+)\s*(ml|mls|l|ltr|ltrs|litre|litres|kg|gms?|g)\b/);
-  if (mult) {
-    const count = parseFloat(mult[1]);
-    let v = parseFloat(mult[2]);
-    const u = mult[3];
-    if (/^(l|ltr|ltrs|litre|litres|kg)$/.test(u)) v *= 1000;
-    return count * v;
-  }
-  const m = p.match(/([\d.]+)\s*(ml|mls|l|ltr|ltrs|litre|litres|kg|gms?|g)\b/);
-  if (!m) return null;
-  let n = parseFloat(m[1]);
-  const u = m[2];
-  if (/^(l|ltr|ltrs|litre|litres|kg)$/.test(u)) n *= 1000;
-  return n;
-}
+// parseVolMl now lives in ./volparse.js and SUMS additive combos ("5LTR + 1LTR"
+// -> 6000) instead of reading only the first token (the per_litre-inflation bug,
+// fixed 2026-06-05). See volparse.js for the root-cause note + test_volparse.js.
+const { parseVolMl } = require('./volparse.js');
+
+// Plausibility ceiling for Rs/L (oils). A correctly-parsed Jivo oil tops out
+// well under this even for premium 200 ml packs (~₹1645/L observed); a value
+// above it means a volume mis-parse slipped through -> publish null, never a
+// garbage outlier. Pure safety net; it does not fire on current clean data.
+const PRICE_PER_L_MAX = 6000;
 
 function canonical(name, pack) {
   const base = (name || '').toLowerCase()
@@ -292,8 +284,13 @@ function buildRow(meta, res) {
   let discount_pct = 0;
   if (mrp && sale && mrp > sale) discount_pct = Math.round(((mrp - sale) / mrp) * 1000) / 10;
 
-  // per_litre only meaningful for oils with a known volume
-  const per_litre = (meta.is_oil && vol_ml) ? Math.round((sale != null ? sale / (vol_ml / 1000) : 0) * 100) / 100 || null : null;
+  // per_litre only meaningful for oils with a known volume. The sanity bound
+  // nulls any implausible Rs/L (a residual volume mis-parse) rather than
+  // publishing a garbage outlier like the old combo bug's ₹10575/L.
+  let per_litre = (meta.is_oil && vol_ml && sale != null)
+    ? Math.round((sale / (vol_ml / 1000)) * 100) / 100 || null
+    : null;
+  if (per_litre != null && (per_litre <= 0 || per_litre > PRICE_PER_L_MAX)) per_litre = null;
 
   let availability_text, in_stock, units_left, seller, ships_from;
   if (res.status === 'ok') {
