@@ -4,6 +4,8 @@ platforms/*/node_modules
 output/
 logs/
 **/result.json
+# guardian "keep last-good" fallback snapshot — runtime data, same class as result.json
+**/result.last-good.json
 **/Jivo-*.xlsx
 *.log
 .DS_Store
@@ -30,6 +32,10 @@ tools/whatsapp/*.out
 platforms/bigbasket/header_api.json
 platforms/bigbasket/listing_raw.json
 platforms/bigbasket/listing_inpage.json
+
+# guardian transient "latest" pointers (regenerated every eval; dated reports +
+# per-run verdicts + state-<date>.json ARE committed as the audit trail)
+reviews/guardian/*-latest.json
 
 # --- Obsidian: config + enabled plugins are tracked for fresh-clone bootstrap, but
 # keep machine-specific / runtime-credential state OUT of git ---

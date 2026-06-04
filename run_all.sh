@@ -19,11 +19,24 @@ echo "[$(date '+%F %T')] run_all: START (parallel)"
 pids=()
 for P in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket; do
   echo "[$(date '+%F %T')] run_all: launching $P"
-  ./run.sh "$P" >> "logs/run-${P}.out" 2>&1 &
+  # AUTO-HEAL HOOK: after this platform's scrape pipeline finishes, the guardian
+  # re-evaluates the fresh result.json (CALLs tools/review.py for the shared checks
+  # + runs its independent 11-bug-class deep checks). On a BROKEN verdict it
+  # QUARANTINEs (keeps last-good, nothing published — run.sh's Telegram is already
+  # verdict-gated), SELF-HEALs (bounded ./run.sh retries via --heal), and if still
+  # broken ALERTs the owner with the specific diagnosis. Best-effort `|| true` so a
+  # guardian hiccup can never fail the sweep. Still fully parallel across platforms.
+  ( ./run.sh "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1 &
   pids+=("$!")
 done
 for pid in "${pids[@]}"; do wait "$pid" || true; done
 echo "[$(date '+%F %T')] run_all: all platforms done -> self-heal pass"
+# Backstop: the legacy self-heal pass still runs (it owns the staleness / row-collapse
+# signals the inline guardian leaves to it). It runs AFTER the wait above, so the
+# inline guardians have finished; it shares the same per-platform .heal-<p>.lock, so
+# it can never run concurrently with a guardian heal (e.g. an overlapping daily pass).
+# A platform the guardian already healed-but-left-BROKEN may get one more recovery
+# attempt here — bounded and harmless (a deliberate second safety net).
 ./healthcheck.sh || true
 
 # ---- Rebuild the COMPLETE Obsidian memory graph from the full price history. ----

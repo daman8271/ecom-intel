@@ -50,6 +50,11 @@ build_block() {
   for H in $HOURS; do
     echo "0 $H * * * cd $DIR && ./run_all.sh >> logs/cron.log 2>&1   $TAG"
   done
+  # AUTO-HEAL daily deep-dive: the full 11-bug-class audit over every platform ->
+  # dated health report (reviews/guardian/health-<date>.md) + Telegram alert on any
+  # NEW bug class. Read-only (no scraping). Runs at 18:00 IST, after the day's last
+  # sweep, so it reports on fresh data. See tools/guardian_daily.sh.
+  echo "0 18 * * * cd $DIR && ./tools/guardian_daily.sh >> logs/guardian.log 2>&1   $TAG guardian-daily"
 }
 
 BLOCK="$(build_block)"
