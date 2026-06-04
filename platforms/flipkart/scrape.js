@@ -127,7 +127,12 @@ async function scrapeOne(page, m) {
     if (o && o.price != null) { row.sale = Math.round(parseFloat(o.price)); row.price_src = 'ldjson'; }
     row.availability = (o && o.availability) || '';
   }
-  if (row.sale == null && data.domPrices.length) { row.sale = data.domPrices[0]; row.price_src = 'dom'; }
+  // DOM fallback is ONLY trustworthy on a live, buyable page: there the first ₹
+  // leaf in document order is the buy-box price. On an OOS/delisted page there is
+  // NO buy-box, so the first ₹ leaf is a cross-sell/recommendation tile of an
+  // UNRELATED product -> recording it fabricates a foreign price (audit 2026-06-04:
+  // 72/268 rows wrong). Gate on hasBuy && !looksGone so gone pages stay price-less.
+  if (row.sale == null && data.domPrices.length && data.hasBuy && !data.looksGone) { row.sale = data.domPrices[0]; row.price_src = 'dom'; }
   // ---- MRP: JSON-LD description ("for Rs.1650.0"), else a higher DOM price ----
   if (ld && ld.description) {
     const mm = ld.description.match(/for\s*Rs\.?\s*([\d,]+(?:\.\d+)?)/i);
@@ -165,7 +170,7 @@ async function withRetry(page, m, tries = 2) {
   return { fsn: m.fsn, status: 'error', err: last ? last.message : 'unknown', sale: null, mrp: null, in_stock: 0, sku_landed: '', fk_name: '', availability: '', fk_category: '', price_src: '' };
 }
 
-(async () => {
+async function main() {
   let master = loadMaster();
   if (LIMIT > 0) master = master.slice(0, LIMIT);
   process.stderr.write(`[start] ${master.length} master SKUs, concurrency=${CONCURRENCY}\n`);
@@ -251,4 +256,8 @@ async function withRetry(page, m, tries = 2) {
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
   fs.writeFileSync(path.join(__dirname, 'result.json'), JSON.stringify({ summary, perPin, allRows: rows }, null, 2));
   console.log(JSON.stringify(summary));
-})();
+}
+
+// Run only when executed directly; export internals for offline/targeted tests.
+if (require.main === module) { main(); }
+module.exports = { scrapeOne, withRetry, loadMaster, packToMl };
