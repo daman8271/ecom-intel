@@ -1,5 +1,13 @@
 # Flipkart Minutes — scraper notes
 
+## 2026-06-05 fix — combo volume + phantom MRP (30e54c2)
+Two fixes in the volume/price parse: (1) **combo `vol_ml`** now multiplies the pack
+multiplier — `2 x 1L` = **2000 ml**, not 1000 (the old regex matched only the first "1 L"
+and dropped the "2 x", so the Rs/L fallback came out ~2× too high when the API per-litre was
+absent). (2) **stop fabricating MRP = sale** when the API omits MRP (some combo packs): we
+leave `mrp` null and `discount_pct` null rather than inventing a phantom MRP + a fake 0%
+discount on a real SKU.
+
 Two modes in `scrape.js`, auto-selected at runtime:
 
 ## 1. API mode (default, fast — ~60s for 345 pincodes)

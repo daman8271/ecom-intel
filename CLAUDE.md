@@ -3,7 +3,7 @@
 Operator manual. Auto-loads when you run `claude` in this directory.
 
 ## What this is
-Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for thrice-daily cron runs (9am/12pm/4pm IST) with an automated end-of-run review + self-heal. Pitched to Jivo's head of e-commerce.
+Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for daily cron runs — **two full sweeps (10:00 + 15:00 IST) plus an 18:00 guardian deep-dive** — with an automated end-of-run review, auto-heal guardian, and self-heal. Pitched to Jivo's head of e-commerce.
 
 ## Architecture (the rule)
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
@@ -17,15 +17,15 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── run_all.sh             # one cron sweep: all 9 live platforms IN PARALLEL (fresh+now serialized) → self-heal
-├── setup_cron.sh          # installs the 3×/day cron (run_all.sh) + sets timezone
+├── run_all.sh             # one cron sweep: all 9 live platforms SERIALLY (one at a time, ~100-110 min) → per-scrape guardian auto-heal → self-heal
+├── setup_cron.sh          # installs the cron (10:00+15:00 run_all.sh sweeps, 18:00 guardian deep-dive) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
 │   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/ bigbasket/  # 7 LIVE, direct
 │   ├── amazon-fresh/      # 8th LIVE — logged-in (cookie transplant), i=freshstore, in cron
 │   ├── amazon-now/        # 9th LIVE — logged-in (own dedicated account), genuine Now via scrape.ctnow.js (almBrandId=ctnow); lock kept w/ fresh pending a concurrency test
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
-├── tools/                 # predict.py · review.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
+├── tools/                 # predict.py · review.py · guardian.py · guardian_daily.sh · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
 ├── vault/                 # Obsidian memory: runs/ daily/ weekly/ monthly/ platforms/  (committed)
 ├── data/                  # <p>/history.csv — the future price-model training table (committed)
 ├── reviews/  baselines/   # per-run verdicts + rolling expected metrics (committed)
@@ -35,7 +35,7 @@ ecom-intel/
 
 ## Run a platform
 ```bash
-./run.sh blinkit            # scrape + build excel, ~100s
+./run.sh blinkit            # scrape + build excel; blinkit now ~69 min (patient per-pincode store re-resolution — see below)
 cat platforms/blinkit/result.json | python3 -m json.tool | head   # raw data
 ls output/                  # the Excel
 ```
@@ -50,8 +50,8 @@ ls output/                  # the Excel
 ## Block-risk map (datacenter VPS IP) — 9 LIVE, no proxy (7 direct + Amazon Fresh & Now logged-in)
 | Platform | Status | Notes |
 |---|---|---|
-| blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes |
-|  | ✅ LIVE | stealth context + POST to /api//search/v2 (WAF bypass) |
+| blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes. **2026-06-05 fix (0537fbf):** scrape is gated on VERIFIED store re-resolution — the active store must be a real local store near the requested coords, else 0 rows are recorded (never the Gurgaon default). Kills the default-store contamination. This patience is why a run is now ~69 min (vs the old ~10 min, which was the contamination skipping the check). CONCURRENCY default 2 (≥3 loses re-resolution). **Known gap:** ~40% of pincodes have bad coordinates that never re-resolve → recorded as 0 rows (a geocoding follow-up, NOT a scraper bug). |
+|  | ⚠️ BLOCKED | stealth context + POST to /api//search/v2 (WAF bypass). **2026-06-05 (c0bc409):** now paginates by offset (full Jivo catalogue, not just page 0); 403 fail-safe preserved (first-page non-200 → 0 rows + "search status" marker → review BROKEN). **STILL blocked by an IP-level 403** (currently 0 rows) — needs a residential proxy OR a logged-in  session (parked; see docs/PROXY.md + platforms//LOGIN-COOKIES.md). |
 | zepto | ✅ LIVE | reached via bff-gateway.zeptonow.com BFF API (CloudFront on website still 403s) |
 | flipkart-minutes | ✅ LIVE | HYPERLOCAL store; GPS "use my location"; scaled to 345 pincodes |
 | flipkart | ✅ LIVE | marketplace, national pricing, 1 row/SKU |
@@ -62,32 +62,53 @@ ls output/                  # the Excel
 
 ## Pipeline (run.sh, per platform)
 `scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → `tools/vault_note.py` (+ rollups)
-→ Telegram delivery → git commit+push. Every step after the scrape is best-effort and
+→ **Telegram delivery (VERDICT-GATED: only verdict==OK ships to stakeholders; BROKEN/SUSPECT is held back + the owner is alerted)** → git commit+push. Every step after the scrape is best-effort and
 never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault, `data/`
-history, and review verdicts/baselines are what get committed each run.
+history, and review verdicts/baselines are what get committed each run. In `run_all.sh` each
+scrape is then re-evaluated by the **guardian auto-heal** (below).
 
 ## Cron (IST) — installed and LIVE via ./setup_cron.sh
-One sweep per window at 09:00 / 12:00 / 16:00 via `./run_all.sh`, which scrapes the
-**9 live platforms IN PARALLEL** (blinkit, , flipkart-minutes, flipkart,
-amazon, zepto, amazon-fresh, amazon-now, bigbasket) then runs the self-heal pass at the
-end of the window. `run_all.sh` holds the authoritative platform list. Switched
-sequential→parallel 2026-05-22 (VPS has headroom); each run.sh git-push critical section
-is flock-serialized (.gitpush.lock) so concurrent commits don't collide. setup_cron.sh is
-re-runnable and touches only "# ecom-intel"-tagged lines.
+Two full sweeps daily at **10:00 + 15:00** via `./run_all.sh`, plus an **18:00 daily
+guardian deep-dive** (`./tools/guardian_daily.sh`). Each sweep scrapes the **9 live
+platforms SERIALLY — one platform at a time** (commit 8ef79d4), in this order:
+, flipkart-minutes, flipkart, zepto, bigbasket, amazon, amazon-fresh,
+amazon-now, **blinkit LAST** (slowest). A full serial sweep is **~100–110 min** (blinkit
+alone ~69 min); the two windows are 5h apart, which has the headroom.
+
+**Why serial, not parallel:** running all 9 at once STARVED each scraper (CPU/network
+contention → thin, partial data the hardened review.py correctly rejects) and made the
+3 Amazon storefronts thrash their one shared account/server-side location. Serial gives
+each platform full resources + correct store re-resolution, and the Amazon trio
+(amazon, amazon-fresh, amazon-now — run consecutively) can never overlap. `run_all.sh`
+holds the authoritative platform list. Each run.sh git-push critical section is
+flock-serialized (.gitpush.lock) so commits don't collide. setup_cron.sh is re-runnable
+and touches only "# ecom-intel"-tagged lines.
+
+## Auto-heal guardian (tools/guardian.py + tools/guardian_daily.sh) — nothing breaks silently
+- **Per-scrape (wired into run_all.sh):** after each platform's pipeline, `tools/guardian.py
+  <p> --heal` re-evaluates the fresh result.json. It combines TWO verdicts — it CALLS
+  `tools/review.py` for the shared hardened checks AND runs its own independent
+  **11-bug-class deep-check** (worst verdict wins). On BROKEN it **QUARANTINEs** (keeps the
+  last-good snapshot `result.last-good.json`, nothing published — Telegram is already
+  verdict-gated), runs **bounded SELF-HEAL retries** (cap 2, re-run `./run.sh <p>` under the
+  shared `.heal-<p>.lock`), then **ALERTs the owner** if still BROKEN. Failure-proof: a
+  guardian hiccup can never fail the sweep (`|| true`).
+- **Daily 18:00 deep-dive (tools/guardian_daily.sh):** read-only DETECT pass — runs the
+  11-class audit over every platform, writes `reviews/guardian/health-<date>.md`, and
+  Telegram-alerts only on a NEW bug class vs yesterday. Owns the standing diagnosis +
+  trend; the inline hook owns the self-heal.
 **amazon-now and amazon-fresh now use SEPARATE dedicated Amazon accounts** (as of
 2026-06-02; proven by comparing the storageState identity cookies — Now greets "Kanhaiya"
 on `ubid-acbin 520-…`, Fresh on `259-…`; previously they shared ONE account, preserved as
 `amazon-now.storageState.OLDACCT.bak.json`). Amazon's delivery location is account-global
-(server-side), so with two distinct accounts their per-pincode location switches no longer
-collide and the two COULD run in parallel. **The shared `.amazon-account.lock` is KEPT for
-now** (conservative): run.sh still serializes EXACTLY these two behind it around the scrape
-step — one waits (up to 45m) while the other scrapes, sharing a single Chromium slot so peak
-concurrency is unchanged. Drop the lock only AFTER a supervised concurrent run proves the two
-accounts don't interfere (e.g. each holds its own pincode through a full sweep). Every other
-platform (incl. the guest `amazon` scraper, which sets no account location) stays fully
-parallel. Each login is its own cookie-transplant session; if either expires, that platform
-goes BROKEN and self-heal Telegram-alerts you to re-import cookies (now independent — one
-expiring no longer breaks the other). See platforms/amazon-now/PLAN.md.
+(server-side). Since the 2026-06-05 switch to a **serial** sweep, the whole Amazon trio
+(amazon, amazon-fresh, amazon-now) runs one-at-a-time and consecutively, so their per-pincode
+location switches can never overlap by construction — the serial loop is the primary guarantee.
+The per-platform `.${P}.lock` (and the legacy shared `.amazon-account.lock`) are still kept as
+belt-and-suspenders so a platform can't overlap its OWN previous run (e.g. two run_all windows
+stacking). Each login is its own cookie-transplant session; if either expires, that platform
+goes BROKEN and the guardian/self-heal Telegram-alerts you to re-import cookies (independent —
+one expiring no longer breaks the other). See platforms/amazon-now/PLAN.md.
 
 Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE (under
 logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;
@@ -100,11 +121,25 @@ geocoding report). Geocoding is region-level (free datasets), so coords are metr
 ## Review (tools/review.py) — never ship garbage, stay cheap
 Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,
 captcha/403 markers, coverage collapse vs baseline, schema, freshness — these alone
-decide BROKEN. An OPTIONAL tiny LLM judgment (Claude Haiku) can only downgrade OK→SUSPECT,
-runs only when not already BROKEN, and is FAILURE-PROOF: if the model is unreachable or
-rate-limited it logs and the verdict stands on the deterministic checks. Backend: uses
-ANTHROPIC_API_KEY if set, else `claude -p` headless on the logged-in Max subscription
-(no per-token cost). Rate-limited subscription = deterministic-only, never a crash.
+decide BROKEN. **Hardened 2026-06-05 (4433756 + 439595e)** with four new checks:
+- **geo_consistency** — one store_id spanning >2 cities → BROKEN (catches blinkit
+  default-store contamination, e.g. id 31719 spanning 10 cities at one price).
+- **priced_floor_block** — floors in-stock priced rows + scans status/block text +
+  block_rate_pct (catches row-padding-on-block false-green and undetected blocks).
+- **per_litre_sanity** — flags per_litre inflated by an under-counted combo volume,
+  plus an absolute **₹6000/L oil ceiling** (catches name-hidden combo ₹/L inflation;
+  gated to oil SKUs so a tiny saffron pack's huge nominal ₹/L isn't false-flagged).
+- **shared_price_dup** — a discounted (sale,mrp) pair shared by several distinct SKUs
+  (catches cross-sell / fabricated prices).
+
+Baselines now only seed on a clean run — **SUSPECT/BROKEN runs no longer update the
+rolling baseline** (the sole exception is a SUSPECT that is staleness-only, which still
+has healthy counts). An OPTIONAL tiny LLM judgment (Claude Haiku) can only downgrade
+OK→SUSPECT, runs only when not already BROKEN, and is FAILURE-PROOF: if the model is
+unreachable or rate-limited it logs and the verdict stands on the deterministic checks.
+Backend: uses ANTHROPIC_API_KEY if set, else `claude -p` headless on the logged-in Max
+subscription (no per-token cost). Rate-limited subscription = deterministic-only, never a
+crash. **The verdict GATES Telegram delivery in run.sh** (only OK ships to stakeholders).
 
 ## Memory vault (vault/) + history (data/)
 After each run, tools/vault_note.py writes an Obsidian note vault/runs/<p>/<p>-<RUN_ID>.md
@@ -115,16 +150,25 @@ Notes link into an Obsidian graph via body [[wikilinks]]; generators are determi
 stdlib-only, idempotent per RUN_ID. Design + conventions: vault/VAULT-SPEC.md.
 
 ## Proxy (residential Indian IPs) — see docs/PROXY.md
-**NOT bought and NOT currently needed** — all 8 live platforms run with no proxy from
-the datacenter IP. Six run direct/no-login; amazon-fresh runs on a transplanted
-logged-in cookie session (still no proxy). Zepto was unlocked 2026-05-29 via its
-bff-gateway.zeptonow.com BFF API (the CloudFront-fronted website still 403s the DC IP,
-but the gateway is reachable direct).  was unlocked 2026-05-22 via stealth POST
-to its public search API. tools/proxy.js + setup remain wired in case Amazon escalates
-to a captcha. Free public proxies are OFF-LIMITS (MITM risk). Provider plan if ever
-needed: IPRoyal residential, pay-as-you-go (~$10–25/mo at ~8 GB/month). No platform is
-IP-gated today; amazon-now is the only one held back, and that's a manual-only/account
-constraint (shares amazon-fresh's account), not an IP block.
+**NOT bought** — the other platforms run with no proxy from the datacenter IP (run
+direct/no-login or on a transplanted logged-in cookie session). Zepto was unlocked
+2026-05-29 via its bff-gateway.zeptonow.com BFF API (the CloudFront-fronted website still
+403s the DC IP, but the gateway is reachable direct). **'s stealth-POST path is
+now IP-blocked again (403 → 0 rows, 2026-06-05): it is the one platform that now WANTS a
+proxy** — a residential Indian IP OR a logged-in  session (see
+platforms//LOGIN-COOKIES.md). tools/proxy.js + setup remain wired (the zepto
+pattern) for exactly this, and as insurance if Amazon ever escalates to a captcha. Free
+public proxies are OFF-LIMITS (MITM risk). Provider plan if ever needed: IPRoyal
+residential, pay-as-you-go (~$10–25/mo at ~8 GB/month). amazon-now's hold-back is a
+manual-only/account constraint, not an IP block.
+
+## Known gaps (2026-06-05)
+- **blinkit bad-coord pincodes (~40%)** — coordinates that never re-resolve off the default
+  store are (correctly) recorded as 0 rows rather than contaminated. This is a **geocoding
+  follow-up**, not a scraper bug.
+- ** IP-level 403** — currently 0 rows; the WAF blocks the datacenter IP at the
+  network level. Needs a residential proxy OR a logged-in  session (parked; see
+  docs/PROXY.md + platforms//LOGIN-COOKIES.md).
 
 ## Hard lessons
 - This repo IS the backup. After any VPS wipe: `git clone` + `npm install` per platform + `npx playwright install chromium`. Never lose the code again.

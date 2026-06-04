@@ -1,5 +1,12 @@
 # SKILL: scrape BigBasket — STATUS: WORKING (datacenter IP, stealth, LOGGED-IN member)
 
+## 2026-06-05 note (earlier fixes, in the serial cron sweep)
+BigBasket runs **LOGGED-IN as a member** (cookie transplant) to capture **member prices**
+(what a logged-in customer actually pays, not guest public prices — the "wrong SP" fix; see
+"LOGGED-IN MEMBER MODE" below), and the parser **walks `children[]`** so sibling
+**sub-packs** nested under a parent listing are captured (not just the top-level
+`products[]`). It is now part of the **serial** `run_all.sh` cron sweep.
+
 BigBasket's web storefront is scrapable from the VPS **only via a stealth
 browser** — plain Chromium / curl / node-fetch get **HTTP 403** (Akamai Bot
 Manager). Full recon: [`RECON.md`](RECON.md).

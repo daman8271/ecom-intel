@@ -3,6 +3,16 @@
 Flipkart's main marketplace is **scrapable from the VPS datacenter IP** — HTTP
 200, no captcha, **no login needed**.
 
+## 2026-06-05 fix — cross-sell price contamination (c86dfb5)
+The DOM price-block fallback is now **gated on `hasBuy && !looksGone`**. The fallback takes
+the first `^₹[\d,]+$` leaf in document order as the sale price — but on an **OOS/delisted
+PDP** that has no buy-box, the first ₹ leaf is a **cross-sell/recommendation tile** of a
+*different* product, so the scraper was stamping a foreign carousel price onto gone SKUs
+(audited: 72/268 rows wrong). Now the DOM fallback fires **only** when the page text shows
+a live buy-box (`add to cart|buy now|go to cart`) AND no "no longer available / out of
+stock / sold out" gone-marker, so gone pages stay correctly price-less. `in_stock` is
+likewise `hasBuy && !looksGone && sale != null`.
+
 ## The rule: scrape ONLY Jivo's official catalogue (no "search jivo" grab-bag)
 The earlier version searched `q=jivo` and kept every card containing the string
 "jivo" + a ₹ price. That pulled in **JIVOTTAM** (a different brand — "jivo" is a

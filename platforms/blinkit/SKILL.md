@@ -1,6 +1,23 @@
 # SKILL: scrape Blinkit (PROVEN)
 
-How the Blinkit scraper works. Status: **working** (40 pincodes, ~98s, 0 errors, residential + datacenter IP both OK).
+How the Blinkit scraper works. Status: **working** (332 store-coords, residential + datacenter IP both OK).
+
+## 2026-06-05 fix — default-store contamination (0537fbf)
+The scrape is now **gated on VERIFIED store re-resolution**: the active store (read from
+`localStorage.merchant`) must be a real *local* store near the requested coords. If it
+hasn't re-resolved off the Gurgaon default (`isDefault=true`, or still store id 31719
+`Super Store - Gurgaon Nirvana Country` while the request is NOT in the ~55 km NCR box),
+the pincode is treated as unresolved and we **record 0 rows — never the Gurgaon default
+catalogue mislabeled under a foreign city** (the 2026-06-04 contamination: 89/146 pincodes
+were serving Gurgaon data under the wrong city). The scraper retries the
+inject→navigate→poll loop up to 4× and polls the merchant up to 6× per attempt before
+giving up to 0 rows.
+- **Cost:** this patience is why a full run now takes **~69 min** (vs the old ~10 min — the
+  old speed was the bug: it skipped this check). Worth it for clean data.
+- **CONCURRENCY default 2** — at **≥3** from the datacenter IP many pincodes never
+  re-resolve off the default and get (correctly) dropped, tanking coverage.
+- **Known gap:** **~40% of pincodes have bad coordinates** that never re-resolve → recorded
+  as 0 rows. This is a **geocoding follow-up** (fix the coords), NOT a scraper bug.
 
 ## The trick
 Blinkit picks a dark store from your delivery location, stored in `localStorage.location`. There is **no login needed** — override the location, search, scrape.
@@ -20,7 +37,7 @@ Blinkit picks a dark store from your delivery location, stored in `localStorage.
 7. Filter `name` matches `/jivo/i`. Dedup on `(store_id, canonical)` where canonical = name+pack-size.
 
 ## Tuning / quirks
-- Concurrency 4 contexts is safe. 2–3s jitter between pincodes.
+- **Concurrency default 2** (env `CONCURRENCY`); **≥3 loses store re-resolution** on the DC IP (see the 2026-06-05 fix above). 2–3s jitter between pincodes.
 - Block images/fonts/media for speed (`context.route`).
 - Some pincodes resolve to a **nearest** dark store (e.g. a Delhi-edge pincode → a Gurgaon store, or an unserved pincode → a fallback store). Trust `merchant.name`, not the requested pincode, for which store the data is from.
 - ~28/40 pincodes carry Jivo; the other 12 genuinely have zero Jivo stock (real distribution-gap intel, not a bug). Hyderabad / Chennai / Ahmedabad = currently zero Jivo on Blinkit.

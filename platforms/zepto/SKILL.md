@@ -1,5 +1,11 @@
 # SKILL: scrape Zepto — STATUS: LIVE (BFF API gateway, no proxy)
 
+## 2026-06-05 note (earlier fix, 02f8937)
+A **full-catalog PDP-seed pass** recovered the catalogue from **12 → 23 SKUs**, including
+**Jivo Mustard 5L** and OOS / rollup-hidden variants the plain search missed. Zepto tracks
+the **SUPER_SAVER** price tier (the price the app shows by default — see "Two price tiers"
+below).
+
 Zepto's WEBSITE edge (`www.zeptonow.com` / `api.zeptonow.com`, CloudFront) hard-`403`s this
 datacenter VPS IP. BUT the app's **BFF API gateway `bff-gateway.zeptonow.com` (Kong) is reachable
 direct, no proxy**, and authenticates guest browsing with `x-without-bearer: true` (no login).
@@ -53,8 +59,8 @@ discount_pct, per_litre, eta_min, in_stock, cached, price_source}`
 (`cached`/`price_source` are additive; build_excel ignores them.)
 
 ## Coverage / cron
-`pincodes.json` = 332 store-distinct coords. LIVE in the 3×/day cron sweep (`run_all.sh`),
-no Amazon lock needed (Zepto is account-independent).
+`pincodes.json` = 332 store-distinct coords. LIVE in the serial cron sweep (`run_all.sh`,
+10:00 + 15:00 IST), no Amazon lock needed (Zepto is account-independent).
 
 ## Recon probes (kept for future debugging)
 `probe_cache.js` (CloudFront/edge cache check on the search POST — shows `x-cache: Miss`,

@@ -6,6 +6,15 @@ see `platforms/zepto/BLOCKED.md`), and **Amazon** works today but may escalate t
 a captcha on the datacenter IP. The fix is to route Playwright through a
 **residential (or mobile) proxy with an Indian exit IP**.
 
+> **Update 2026-06-05 —  now needs this too.** 's stealth-POST path
+> to `/api//search/v2` is **403-blocked again at the IP level** (0 rows; the
+> WAF rejects the datacenter IP). Its 403 fail-safe records 0 rows + a marker so the run
+> goes BROKEN and nothing ships. The two fixes are a **residential Indian proxy** (this
+> guide) **or** a **logged-in  session** (see `platforms//LOGIN-COOKIES.md`).
+> Both are currently parked. Zepto unblocked itself via its BFF API gateway, so today
+> ** is the platform that actually wants a proxy** — wire it the same way as
+> Zepto (the `tools/proxy.js` + conditional `chromium.launch({ proxy })` pattern).
+
 The integration is already built and wired (see "How it's wired" below). The
 **only thing missing is credentials** — the moment you add `PROXY_*` to
 `secrets.env`, Zepto routes through the proxy automatically.
@@ -137,6 +146,7 @@ Full sticky example:
 | Platform | Recommended mode | Why |
 |---|---|---|
 | **Zepto** | **Sticky per pincode**, short lifetime (`_session-<perpin>_lifetime-10m`) | Zepto resolves the dark store from GPS; an IP that flips mid-pincode mid-load looks bot-like. Hold one Indian IP for the home→search page-set of each pincode (~seconds), then a new id for the next pincode spreads load across IPs. Rotating per-request also works but a stable IP per pincode is cleaner. |
+| **** (2026-06-05: 403-blocked) | **Sticky per pincode**, short lifetime | Same pattern as Zepto — resolve the dark store from the geo/home request, then the `/search/v2` POST, on one held Indian IP per pincode. (Alternative to a proxy: a logged-in  session — see `platforms//LOGIN-COOKIES.md`.) |
 | **Amazon (insurance)** | **Rotating** (omit `_session-`) — or sticky for the duration of one run | Amazon scrape is a single national pass per run, not 40 pincodes. A fresh Indian residential IP per run avoids reusing a flagged IP. Use sticky only if Amazon ties the interstitial-bypass cookie to the connecting IP within a run. |
 | **Other platforms** (Blinkit/Flipkart/Flipkart-Minutes) | **DIRECT (no proxy)** — leave `PROXY_*` as-is per-platform | They already work from the datacenter IP. Don't burn proxy GB on them. Only Zepto is wired to the proxy today; wire others the same way **only if** they start getting blocked. |
 

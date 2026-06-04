@@ -1,5 +1,13 @@
 # SKILL: scrape Amazon Fresh — STATUS: LIVE (2026-05-30, no proxy)
 
+## 2026-06-05 fix — additive-combo volume + ASIN-stable canonical (4cde57f)
+Two fixes: (1) the **additive-combo volume parse** is completed — `comboVolMl()` sums the
+components of a bundle whose volume token lives in the title (e.g. `"5 L with 5 L"` → 10000 ml,
+`"5+1 LTR"` → 6000 ml) and is tried *before* the single-pack `parseVolMl`, so Rs/L is no
+longer ~doubled on combos. (2) **ASIN-stable canonical** — after scraping, each ASIN's
+canonical is locked to its most-frequent (voted) value across all rows, so the same product
+canonicalizes identically everywhere (fixes split/duplicate identities for one ASIN).
+
 Amazon **Fresh** = the `i=freshstore` storefront search on amazon.in. Recon (2026-05-30)
 proved it is a **separate, ~7× richer index than Amazon Now**: ~40–49 Jivo SKUs/city
 (incl. the 5L bulk packs Now never lists) vs Now's 0–14. `i=freshstore`, `i=amazonfresh`,
@@ -27,9 +35,11 @@ different pincode concurrently and ALL collapsed to the last one. So:
   the Flipkart-Minutes "10 parallel contexts" trick is impossible here (FK passed location in
   each request body; Amazon stores it per-account).
 - **amazon-now and amazon-fresh must NEVER run at the same time** — they'd stomp each other's
-  account location. amazon-fresh is in the cron parallel sweep; amazon-now is NOT (manual only).
-  If both are ever wanted automated, MERGE them into one scraper that sets location once per
-  pincode then hits BOTH `i=nowstore` and `i=freshstore` in the same iteration (+1 GET, ~+1s).
+  account location. **As of 2026-06-05 the cron sweep is SERIAL (one platform at a time), so
+  both are in cron and the serial loop guarantees they never overlap** — the Amazon trio
+  (`amazon`, `amazon-fresh`, `amazon-now`) runs consecutively. (Note: the two now run on
+  SEPARATE Amazon accounts; the per-platform `.${P}.lock` is still kept so a platform can't
+  overlap its OWN previous run.)
 
 ## Run
 ```

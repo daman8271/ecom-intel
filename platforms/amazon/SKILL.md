@@ -4,6 +4,13 @@ amazon.in is scrapable from the VPS datacenter IP **after passing a bot
 interstitial**, with **no login**. First clean run (2026-05-21): **~163 unique
 Jivo SKUs in ~27s** — the richest catalog of all platforms.
 
+## 2026-06-05 fix — combo per-litre / volume inflation (af74b08)
+`parseVolMl` now **SUMS additive bundles** instead of reading only the first token: a pack
+like `"5+1 LTR"` or `"200ML+5LTR"` now yields the true total volume (6000 ml / 5200 ml), not
+1000 ml. (Logic lives in `./volparse.js`, shared shape.) Combined with a **per-litre clamp
+at ₹6000/L** (`PRICE_PER_L_MAX`; out-of-band → `per_litre=null`), this fixes the combo ₹/L
+inflation that was overstating these SKUs by **1.2–26×**.
+
 ## The interstitial bypass (REQUIRED)
 A datacenter IP hitting amazon.in gets HTTP **202** + a "Continue shopping"
 button (and raw `/s?k=` requests get **503** throttles). So every run must:

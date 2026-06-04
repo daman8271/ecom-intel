@@ -4,11 +4,13 @@ Design deep-dive. For operating instructions see the top-level
 [`README.md`](../README.md); for the live platform-coverage map see
 [`REPORT.md`](../REPORT.md).
 
-> **Status (2026-05-31):** the full pipeline is now **WIRED and running on cron** —
+> **Status (2026-06-05):** the full pipeline is **WIRED and running on cron** —
 > `scrape → build_excel → predict → review → vault/history → telegram → commit/push`
-> all execute inside `run.sh`, and `run_all.sh` drives a 3×/day parallel sweep of all
-> **7 live platforms** with a self-heal pass. The "BUILT but not yet wired / orchestrator
-> will insert it later" caveats that earlier drafts of this doc carried are obsolete.
+> all execute inside `run.sh`, and `run_all.sh` drives a **SERIAL** sweep (one platform at
+> a time, ~100–110 min) of all **9 live platforms**, with a **per-scrape auto-heal guardian**
+> and a self-heal backstop. Cron: two sweeps daily (**10:00 + 15:00 IST**) plus an **18:00
+> guardian deep-dive**. Telegram delivery is **verdict-gated** (only OK ships). The "BUILT
+> but not yet wired" caveats from earlier drafts are obsolete.
 
 ---
 
@@ -30,8 +32,9 @@ only at the edges.**
 
 | Use | Stage | Status |
 |---|---|---|
-| **Self-heal** — diagnose a broken scraper and, if safe, repair it | after the parallel sweep, via `run_all.sh` → `tools/selfheal.sh` (+ `healthcheck.sh`) | WIRED |
-| **Automated review** — single *optional* tiny Haiku call on the finished `result.json` | in `run.sh`, after build/predict, via `tools/review.py` | WIRED |
+| **Auto-heal guardian** — combine review.py + an independent 11-bug-class deep-check; quarantine + bounded self-heal + alert | inline per scrape in `run_all.sh` → `tools/guardian.py --heal`; daily deep-dive `tools/guardian_daily.sh` | WIRED (2026-06-05) |
+| **Self-heal backstop** — diagnose a broken scraper and, if safe, repair it | after the serial sweep, via `run_all.sh` → `tools/selfheal.sh` (+ `healthcheck.sh`) | WIRED |
+| **Automated review** — deterministic checks + single *optional* tiny Haiku call on the finished `result.json` | in `run.sh`, after build/predict, via `tools/review.py` | WIRED |
 | **Narrative / vault notes** — human-readable rollups | in `run.sh` / post-sweep rollup | deterministic, **no LLM** (`tools/vault_*`) — WIRED |
 
 Note: even the **review** and **vault** steps are LLM-light. `tools/review.py` does
@@ -114,7 +117,10 @@ This is the single biggest source of per-platform code difference:
   set) and set the delivery location each time:
   - **Blinkit** — write `localStorage.location` directly, no login. (Proven reference.)
   - **** — stealth POST to its public search API `/api//search/v2`
-    (WAF bypass), location in the request body — no page render.
+    (now **offset-paginated** for the full Jivo catalogue, c0bc409), location in the
+    request body — no page render. **Currently 403-blocked at the IP level (0 rows,
+    2026-06-05)**; the 403 fail-safe records 0 rows + a marker so review marks it BROKEN
+    and nothing ships. Needs a residential proxy or a logged-in  session.
   - **Zepto** — reached via the **`bff-gateway.zeptonow.com` BFF API** directly; the
     CloudFront-fronted website still 403s the datacenter IP, but the app gateway is
     reachable and takes lat/long per request. (The old "blocked at CloudFront" state was
@@ -135,8 +141,9 @@ This is the single biggest source of per-platform code difference:
 
 The guest **Amazon** marketplace scraper needs an **interstitial bypass**: a datacenter
 IP gets HTTP 202 + a "Continue shopping" button (and raw `/s?k=` hits get 503 throttles);
-the scraper clicks through it before searching. It sets **no account location**, so it is
-safe to run alongside Amazon Fresh in the parallel sweep.
+the scraper clicks through it before searching. It sets **no account location**; in the
+serial sweep it runs consecutively with Amazon Fresh/Now (one at a time), so the three
+Amazon storefronts never overlap.
 
 ---
 
@@ -169,20 +176,32 @@ Serviceability* sheet on top of the standard layout.
 ## 5. Pipeline & orchestration
 
 ```
-cron (setup_cron.sh — 3x/day, IST: 09:00 / 12:00 / 16:00)
-  └─ run_all.sh — scrape all 7 LIVE platforms IN PARALLEL, then self-heal pass
+cron (setup_cron.sh — IST: 10:00 + 15:00 sweeps, 18:00 guardian deep-dive)
+  └─ run_all.sh — scrape all 9 LIVE platforms SERIALLY (one at a time, ~100-110 min)
        └─ run.sh <platform>   (per platform, all steps WIRED)
-            ├─ node scrape.js             → result.json   (deterministic, no LLM)
-            ├─ python3 build_excel.py     → Jivo-*.xlsx → output/
-            ├─ tools/predict.py           → append "Predictions" sheet to the workbook
-            ├─ tools/review.py            → reviews/<run>.json verdict (exit 2 = BROKEN)
-            ├─ tools/vault_note.py --csv-only → append data/<p>/history.csv
-            ├─ Telegram delivery          → deterministic summary + Excel (best-effort)
-            └─ git add vault data reviews baselines → commit → push (flock-serialized)
-       └─ after the sweep: tools/selfheal.sh   self-heal pass over live platforms
-            └─ on BROKEN verdict / stale / row-collapse → re-run once (per-platform lock),
-               escalate to Telegram if still broken
+       │    ├─ node scrape.js             → result.json   (deterministic, no LLM)
+       │    ├─ python3 build_excel.py     → Jivo-*.xlsx → output/
+       │    ├─ tools/predict.py           → append "Predictions" sheet to the workbook
+       │    ├─ tools/review.py            → reviews/<run>.json verdict (exit 2 = BROKEN)
+       │    ├─ tools/vault_note.py --csv-only → append data/<p>/history.csv
+       │    ├─ Telegram delivery          → VERDICT-GATED: only OK ships; else owner alert
+       │    └─ git add vault data reviews baselines → commit → push (flock-serialized)
+       └─ tools/guardian.py <p> --heal    → auto-heal hook (inline, per scrape):
+            review.py + independent 11-bug-class deep-check (worst wins); on BROKEN →
+            QUARANTINE (keep last-good, nothing published) + bounded re-run + owner alert
+  └─ after the sweep: tools/selfheal.sh   self-heal backstop over live platforms
+       └─ on BROKEN verdict / stale / row-collapse → re-run once (shared per-platform lock),
+          escalate to Telegram if still broken
+  └─ 18:00 daily: tools/guardian_daily.sh  read-only 11-class deep-dive → health report
+       + alert on any NEW bug class vs yesterday
 ```
+
+**Why serial (not parallel):** running all 9 at once starved each scraper (CPU/network
+contention → thin, partial data the hardened review.py rejects) and made the 3 Amazon
+storefronts thrash their one shared account/server-side location. Serial gives each
+platform full resources + clean store re-resolution, and the Amazon trio runs
+consecutively so it can never overlap. Order: light platforms first, the Amazon trio
+consecutive, **blinkit last** (slowest — its patient per-pincode store re-resolution).
 
 > Every step after `scrape.js` is best-effort (`|| true`) and can never fail the run.
 > `healthcheck.sh` is the older self-heal variant (`rows<20` / `>15h` stale → `claude -p`
@@ -190,19 +209,31 @@ cron (setup_cron.sh — 3x/day, IST: 09:00 / 12:00 / 16:00)
 > `logs/<p>-DIAGNOSIS.md` and stop); `tools/selfheal.sh` is the review-aware successor
 > invoked at the end of each `run_all.sh` sweep. Neither ever puts an LLM in the scrape loop.
 
-- **Telegram delivery is best-effort** — it runs in a subshell with `errexit` off
-  and a trailing `|| true`, logging to `logs/telegram.log`, so a network/API hiccup
-  can never fail the scrape.
+- **Telegram delivery is best-effort AND verdict-gated** — it runs in a subshell with
+  `errexit` off and a trailing `|| true`, logging to `logs/telegram.log`. Only a clean
+  `OK` run ships the report+Excel to stakeholders; a `BROKEN`/`SUSPECT` run is held back
+  and the owner gets a short alert instead (4433756).
 - **`tools/review.py`** runs free deterministic checks (rows vs `baselines/<p>.json`,
   implausible prices, coverage drop, schema drift), writes
-  `reviews/<platform>-<RUN_ID>.json`, updates the baseline on OK runs, and exits 2 on
-  BROKEN so `run.sh`/self-heal can react. The optional single Haiku call is the only
-  LLM touch and is failure-proof.
-- **Self-heal signals** — `healthcheck.sh` thresholds: `MIN_ROWS=20`, `MAX_AGE_H=15`.
+  `reviews/<platform>-<RUN_ID>.json`, updates the baseline **on OK runs only**
+  (SUSPECT/BROKEN no longer seed it), and exits 2 on BROKEN so `run.sh`/the guardian can
+  react. **Hardened 2026-06-05 (4433756 + 439595e)** with four checks: `geo_consistency`
+  (one store_id across >2 cities → BROKEN, default-store contamination), `priced_floor_block`
+  (row-padding-on-block + undetected blocks), `per_litre_sanity` (combo-volume per-litre
+  inflation + an absolute ₹6000/L oil ceiling), and `shared_price_dup` (cross-sell/fabricated
+  prices). The optional single Haiku call is the only LLM touch and is failure-proof.
+- **Auto-heal guardian** (`tools/guardian.py`, 2026-06-05) is the inline second opinion:
+  it CALLS review.py for the shared checks AND runs an independent **11-bug-class deep-check**,
+  takes the worst verdict, and on BROKEN quarantines (keeps `result.last-good.json`, nothing
+  published), runs bounded self-heal re-runs (cap 2), then alerts the owner. Failure-proof —
+  a guardian crash never aborts a sweep. `tools/guardian_daily.sh` is the 18:00 read-only
+  11-class deep-dive (health report + NEW-bug-class alert).
+- **Self-heal backstop signals** — `healthcheck.sh` thresholds: `MIN_ROWS=20`, `MAX_AGE_H=15`.
   `tools/selfheal.sh` adds two more signals (review **verdict** BROKEN/SUSPECT, and
-  row **collapse** vs baseline), re-runs once under a per-platform lock, and escalates
-  to Telegram if still broken. Both are forbidden from putting an LLM in the scrape
-  loop and from editing code when the cause is a captcha / IP block / login wall.
+  row **collapse** vs baseline), re-runs once under the same per-platform `.heal-<p>.lock`
+  the guardian uses (so they can never double-heal), and escalates to Telegram if still
+  broken. All are forbidden from putting an LLM in the scrape loop and from editing code
+  when the cause is a captcha / IP block / login wall.
 
 ---
 
@@ -242,19 +273,19 @@ rollups) — Python 3 stdlib only, deterministic, **no LLM**, safe inside the cr
 
 | Item | Installed & live (verified via `crontab -l`) |
 |---|---|
-| Scrape cadence | **3×/day — 09:00 / 12:00 / 16:00 IST** |
-| Driver | one `./run_all.sh` per window — scrapes all **7 live platforms in parallel** |
-| Self-heal | runs at the **end** of each `run_all.sh` sweep (`tools/selfheal.sh`) |
+| Scrape cadence | **2 full sweeps/day — 10:00 + 15:00 IST** + an **18:00 guardian deep-dive** |
+| Driver | one `./run_all.sh` per sweep — scrapes all **9 live platforms SERIALLY** (one at a time, ~100–110 min) |
+| Auto-heal | inline per scrape (`tools/guardian.py --heal`) + the self-heal backstop at the sweep's end (`tools/selfheal.sh`) |
 | Timezone | `Asia/Kolkata` (set by `setup_cron.sh`) |
 
-The live crontab is exactly three `run_all.sh` entries. `run_all.sh` runs the platforms
-**in parallel** (the VPS has headroom — ~15 GB RAM / 4 CPU) and holds the authoritative
+The live crontab is two `run_all.sh` sweeps + one `tools/guardian_daily.sh` line.
+`run_all.sh` runs the platforms **serially** (commit 8ef79d4 — parallel starved the
+scrapers and thrashed the shared Amazon account/location) and holds the authoritative
 live-platform list; each `run.sh`'s git-push is `flock`-serialized so concurrent commits
-don't collide. `setup_cron.sh` still carries a per-platform stagger/offset block, but it
-is a **legacy doc-mirror** — the installed sweep is parallel. The script is idempotent
+(a heal re-run, the post-sweep vault rebuild) don't collide. The script is idempotent
 (rewrites only `# ecom-intel` lines) and supports `--print` / `DRY_RUN=1` to preview.
-**amazon-now is intentionally excluded** (manual-only — shares amazon-fresh's account +
-server-side location, so the two must never co-run).
+**amazon-now is now in the serial sweep**; the serial loop is what guarantees it never
+co-runs with amazon-fresh (Amazon's delivery location is account-global server-side).
 
 ---
 
@@ -275,8 +306,9 @@ server-side location, so the two must never co-run).
 
 ## Status — what shipped, what's left
 
-The end-to-end system is **live in production** (7 platforms on 3×/day parallel cron).
-The items earlier drafts listed as "open for the orchestrator" are done:
+The end-to-end system is **live in production** (9 platforms on a **serial** cron — two
+sweeps daily + an 18:00 guardian deep-dive). The items earlier drafts listed as "open for
+the orchestrator" are done:
 
 - ✅ **Pipeline wired into `run.sh`** — `scrape → build_excel → predict → review →
   vault_note (--csv-only) → telegram → commit/push`, every post-scrape step best-effort,
@@ -287,13 +319,16 @@ The items earlier drafts listed as "open for the orchestrator" are done:
   rollups rebuilt by `tools/vault_rollup.py`.
 - ✅ **git-tracked backup** — `vault/`, `data/`, `reviews/`, `baselines/` are committed
   every run (not caught by the `*.xlsx`/`result.json` ignore patterns).
-- ✅ **3×/day crontab applied** — installed and verified (parallel `run_all.sh`).
+- ✅ **Crontab applied** — installed and verified: 10:00 + 15:00 serial `run_all.sh` sweeps + an 18:00 `guardian_daily.sh` deep-dive.
+- ✅ **Auto-heal guardian** (2026-06-05) — inline per-scrape quarantine + bounded self-heal + owner alert, plus the daily 11-class deep-dive; review.py hardened (geo/block/per-litre/dup) and Telegram verdict-gated.
 
 Remaining / ongoing:
 
-- **`docs/PROXY.md` + `tools/proxy.js`** — proxy is **not bought and not needed** today
-  (all 7 platforms run without one); `proxy.js` stays as insurance if Amazon ever
-  escalates to a captcha on the datacenter IP.
+- **`docs/PROXY.md` + `tools/proxy.js`** — proxy is **not bought**; the other platforms
+  run without one. ** now WANTS a proxy** — its stealth-POST path is 403-blocked
+  again at the IP level (0 rows, 2026-06-05), so it needs a residential Indian IP or a
+  logged-in  session. `proxy.js` (the zepto pattern) is wired for exactly this, and
+  stays as insurance if Amazon ever escalates to a captcha on the datacenter IP.
 - **Amazon cookie freshness** — the Fresh/Now logged-in session relies on transplanted
   cookies (valid ~to May 2027); they must be re-imported on a clean IP if Amazon expires
   the session. Watch for Fresh runs collapsing to 0 rows as the signal.
