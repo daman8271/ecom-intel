@@ -1,0 +1,104 @@
+{
+  "platform": "flipkart",
+  "run_id": "2026-06-05-0413",
+  "captured_at": "2026-06-04T22:50:41.756Z",
+  "verdict": "OK",
+  "rows": 268,
+  "unique_skus": 268,
+  "pincodes_with_jivo": null,
+  "baseline_rows": 268,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "268 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "268 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "268 rows vs baseline 268 (100%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "268 unique SKUs vs baseline 268 (100%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "national run (single 'All India'); n/a"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-06-04T22:50:41.756Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; 37 SKU(s) price-stable across 9 runs (realtime path -> live, treated as genuinely stable)"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": true,
+      "detail": "national run (no per-store geo); n/a"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": true,
+      "detail": "106 priced in-stock rows, vs baseline 106; 8 block/error-marked rows"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "2 discounted (sale,mrp) pair(s) shared by >= 2 distinct SKUs; worst (1353.0, 2025.0) held by 2 canonicals; 4/159 priced rows (3%) in shared pairs \u2014 possible fabrication/cross-sell bleed (below trigger)"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK \u2014 legitimate oil/ghee products, plausible prices (\u20b9648\u2013\u20b91445), sane 13\u201368% discounts, MRP\u2265sale, no collapse vs baseline."
+    }
+  ],
+  "reasons": [],
+  "llm_note": "OK \u2014 legitimate oil/ghee products, plausible prices (\u20b9648\u2013\u20b91445), sane 13\u201368% discounts, MRP\u2265sale, no collapse vs baseline."
+}
