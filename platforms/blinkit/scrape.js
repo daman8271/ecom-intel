@@ -3,7 +3,11 @@ const fs = require('fs');
 
 const PFILE = process.env.PINCODES_FILE || (__dirname + '/pincodes.json');
 const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
-const CONCURRENCY = parseInt(process.env.CONCURRENCY || '4', 10);
+// NOTE: keep this LOW (2). Blinkit rate-limits dark-store geocode/resolution per
+// IP; at concurrency >=3 from the datacenter IP many pincodes never re-resolve
+// off the Gurgaon default and get (correctly) dropped as unresolved — tanking
+// genuine coverage. Concurrency 2 keeps resolution ~complete. See blinkit.fix.md.
+const CONCURRENCY = parseInt(process.env.CONCURRENCY || '2', 10);
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
 function parseVolMl(pack) {
@@ -15,6 +19,46 @@ function parseVolMl(pack) {
   if (u === 'ml' || u === 'g') return n;
   if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
   return null;
+}
+
+// Blinkit's DEFAULT/fallback dark store, served whenever our injected location
+// has NOT re-resolved yet. When this fallback is active, Blinkit reverts
+// localStorage.location to its own default (coords.isDefault=true, Gurugram
+// 28.41/77.07, cityName "HR-NCR"). Capturing cards in that state records the
+// Gurgaon catalog under the WRONG city (the 2026-06-04 contamination: 89/146
+// pincodes mislabeled across 10 cities). See blinkit.verdict.md / blinkit.fix.md.
+const DEFAULT_STORE_ID = 31719;       // "Super Store - Gurgaon Nirvana Country ES44"
+const DEFAULT_COORDS = { lat: 28.4133, lon: 77.0728 }; // Gurugram, the default fallback
+const COORD_EPS = 0.02;               // ~2 km — injected vs active-location coord tolerance
+const NCR_BOX = 0.5;                  // ~55 km — pincodes this close to Gurugram may legitimately use the default store
+
+// A request is genuinely near the Gurgaon default store, so resolving to it
+// (id 31719 / "Nirvana Country") is a LEGITIMATE nearest-store fallback, not the
+// contamination bug. Delhi/Gurgaon/Faridabad/Ghaziabad/Noida fall in this box.
+function nearDefaultStore(rec) {
+  return Math.abs(rec.lat - DEFAULT_COORDS.lat) < NCR_BOX && Math.abs(rec.lon - DEFAULT_COORDS.lon) < NCR_BOX;
+}
+
+// The active store is trustworthy ONLY when BOTH hold:
+//  (1) Blinkit kept OUR injected location (coords.isDefault===false AND coords
+//      still match the pincode we asked for) — on a failed/raced re-resolution
+//      Blinkit reverts location to the Gurugram default, which this catches; and
+//  (2) the active merchant is NOT the Gurgaon default store, UNLESS the request
+//      is genuinely near Gurugram. This second clause closes a narrower race
+//      where `location` has updated but `merchant` (and the rendered cards) are
+//      still the stale default — a far-city request stuck on store 31719 is
+//      rejected regardless of the location key's timing.
+// A genuine Gurgaon/NCR pincode passes both (its coords match AND it's in-box),
+// so legitimate nearest-store fallbacks are preserved.
+function storeResolved(loc, store, rec) {
+  const c = loc && loc.coords;
+  if (!c) return false;
+  if (c.isDefault !== false) return false;
+  if (typeof c.lat !== 'number' || typeof c.lon !== 'number') return false;
+  if (Math.abs(c.lat - rec.lat) > COORD_EPS) return false;
+  if (Math.abs(c.lon - rec.lon) > COORD_EPS) return false;
+  if (store && store.id === DEFAULT_STORE_ID && !nearDefaultStore(rec)) return false;
+  return true;
 }
 
 function canonical(name, pack) {
@@ -45,17 +89,58 @@ async function scrapeOne(browser, rec) {
   });
   let rows = [];
   let store = {};
+  let resolved = false;
+  const injectLocation = (r) => page.evaluate((rr) => {
+    localStorage.setItem('location', JSON.stringify({
+      coords: { isDefault: false, lat: rr.lat, lon: rr.lon, locality: rr.locality, id: 1, isTopCity: true, cityName: rr.city, landmark: rr.landmark, addressId: null }
+    }));
+  }, r);
+  const readState = async () => {
+    const loc = JSON.parse((await page.evaluate(() => localStorage.getItem('location'))) || '{}');
+    const m = JSON.parse((await page.evaluate(() => localStorage.getItem('merchant'))) || '{}');
+    return { loc, m };
+  };
   try {
     await page.goto('https://blinkit.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
-    await page.waitForTimeout(2500);
-    await page.evaluate((r) => {
-      localStorage.setItem('location', JSON.stringify({
-        coords: { isDefault: false, lat: r.lat, lon: r.lon, locality: r.locality, id: 1, isTopCity: true, cityName: r.city, landmark: r.landmark, addressId: null }
-      }));
-    }, rec);
+    await page.waitForTimeout(2000);
+    // Inject the pincode's location, then re-load HOME (this is what makes
+    // Blinkit re-resolve the dark store from the new coords) and POLL the
+    // merchant until it leaves the Gurgaon default — search-page navigation
+    // alone races and often renders the stale default store. Retry the whole
+    // inject→home→poll up to 4x; this recovers genuinely-serviceable pincodes
+    // that lost the race instead of recording the default catalog under them.
+    let activeLoc = {};
+    for (let attempt = 0; attempt < 4 && !resolved; attempt++) {
+      // de-correlate retry bursts across concurrent workers so they don't all
+      // re-hit Blinkit's geocode endpoint in lockstep (which slows resolution)
+      if (attempt > 0) await page.waitForTimeout(1000 + attempt * 1000 + Math.random() * 1000);
+      await injectLocation(rec);
+      await page.goto('https://blinkit.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+      for (let poll = 0; poll < 6 && !resolved; poll++) {
+        await page.waitForTimeout(1000);
+        ({ loc: activeLoc, m: store } = await readState());
+        resolved = storeResolved(activeLoc, store, rec);
+      }
+    }
+    if (!resolved) {
+      // Location never re-resolved — Blinkit is serving its default fallback
+      // store. Do NOT record those cards (they'd be the Gurgaon catalog
+      // mislabeled as rec.city). Treat the pincode as unresolved (no rows). A
+      // genuinely serviceable pincode with no Jivo stock still resolves here
+      // (rows just end up empty); only the default fallback is rejected.
+      process.stderr.write(`[unresolved] ${rec.city} ${rec.pincode} -> store did not re-resolve (active store=${store.name || 'n/a'} id=${store.id || ''}); recording 0 rows\n`);
+      return { ...rec, store_id: '', store_name: '', resolved: false, rows: [] };
+    }
+    // Resolved on home — now run the Jivo search, then RE-VERIFY the active
+    // store didn't revert during the search navigation before trusting cards.
+    await injectLocation(rec);
     await page.goto('https://blinkit.com/s/?q=jivo', { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(4500);
-    store = JSON.parse((await page.evaluate(() => localStorage.getItem('merchant'))) || '{}');
+    ({ loc: activeLoc, m: store } = await readState());
+    if (!storeResolved(activeLoc, store, rec)) {
+      process.stderr.write(`[unresolved] ${rec.city} ${rec.pincode} -> store reverted on search (active store=${store.name || 'n/a'} id=${store.id || ''}); recording 0 rows\n`);
+      return { ...rec, store_id: '', store_name: '', resolved: false, rows: [] };
+    }
     const cards = await page.evaluate(() => {
       const out = [];
       const seen = new Set();
@@ -113,7 +198,7 @@ async function scrapeOne(browser, rec) {
     await ctx.close();
   }
   process.stderr.write(`[ok] ${rec.city} ${rec.pincode} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${store.name || 'n/a'}\n`);
-  return { ...rec, store_id: store.id || '', store_name: store.name || '', rows };
+  return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, rows };
 }
 
 async function pool(items, n, fn) {
@@ -138,6 +223,8 @@ async function pool(items, n, fn) {
   const allRows = perPin.flatMap((p) => p.rows);
   const summary = {
     pincodes_total: PINCODES.length,
+    pincodes_resolved: perPin.filter((p) => p.resolved).length,
+    pincodes_unresolved: perPin.filter((p) => !p.resolved).length,
     pincodes_with_jivo: perPin.filter((p) => p.rows.length > 0).length,
     total_rows: allRows.length,
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
