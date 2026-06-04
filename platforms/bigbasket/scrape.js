@@ -26,10 +26,22 @@
 //   p.w                                   -> pack ("5 L", "200 ml")
 //   p.magnitude + p.unit                  -> numeric volume (magnitude already in ml)
 //   p.pricing.discount.mrp                -> MRP (string)
-//   p.pricing.discount.prim_price.sp      -> selling price (string)
+//   p.pricing.discount.prim_price.sp      -> selling price (string) — the DISPLAYED pack
+//                                            price, verified live to the paisa (JSON-LD
+//                                            offers.price + DOM). This is the CORRECT field;
+//                                            base_price/rsp are NOT the displayed price.
 //   p.pricing.discount.camp_detail.d_v    -> discount % (fallback)
-//   p.pricing.discount.prim_price.base_price/base_unit -> per-unit price
+//   p.pricing.discount.prim_price.base_price/base_unit -> per-unit (per-L/ml) secondary fig.
+//   p.children[]                          -> sibling packs nested under a parent that may
+//                                            never surface as their own top-level result
+//                                            (each is a full product obj) — walked too.
 //   p.availability.avail_status === '001' -> in stock (else 002/004 = OOS/not-serviceable)
+//
+// PRICE FIELD — the SP source is prim_price.sp (the displayed price). We do NOT fall back to
+//   MRP when sp is missing (that would silently report a full-price item); instead we try
+//   sp -> rsp -> subscription_price -> offer.offer_sp and, if all are absent, tag the row
+//   sp_source='MISSING' and SKIP it. Paise-level decimal SPs (e.g. 835.43) are BigBasket's
+//   genuine to-the-paisa pack price (NOT rounded on the live site), so we keep them as-is.
 //
 // Output schema is Blinkit/Flipkart-compatible so build_excel.py works unchanged.
 // ZERO LLM in the loop. Full recon notes: platforms/bigbasket/RECON.md.
@@ -96,44 +108,72 @@ function volMl(p, pack) {
   return mag; // ml / g / already-ml
 }
 
+// Build a canonical row from ONE listing-svc product object (top-level OR a child).
+// Returns null if the product isn't Jivo or has no usable selling price (we never
+// invent a price by falling back to MRP — see sp_source below).
+function buildRow(p) {
+  const brand = (p.brand && p.brand.name && String(p.brand.name).trim()) || '';
+  // strict brand match — excludes substring noise (Jivika / JIVOTTAM / etc.)
+  if (!/^jivo$/i.test(brand)) return null;
+  const disc = (p.pricing && p.pricing.discount) || {};
+  const prim = disc.prim_price || {};
+  const mrp = num(disc.mrp);
+  // SP source = the DISPLAYED selling price. prim_price.sp is the headline pack price
+  // (verified live to the paisa). If it's ever absent, try the other genuine price
+  // fields in order — but NEVER fall back to MRP (that would silently mislabel a
+  // missing price as a real full-price item). If none exist, tag MISSING and skip.
+  let sale = num(prim.sp);
+  let sp_source = 'sp';
+  if (sale == null) { sale = num(prim.rsp); sp_source = 'rsp'; }
+  if (sale == null) { sale = num(disc.subscription_price); sp_source = 'subscription'; }
+  if (sale == null && p.pricing && p.pricing.offer) { sale = num(p.pricing.offer.offer_sp); sp_source = 'offer'; }
+  if (sale == null) { sp_source = 'MISSING'; }
+  if (sale == null) return null; // unpriced -> skip; do NOT emit MRP-as-SP
+  const pack = p.w || '';
+  const vol = volMl(p, pack);
+  const av = p.availability || {};
+  const inStock = (av.avail_status === '001' && !av.not_for_sale) ? 1 : (av.avail_status ? 0 : 1);
+  const dctFromMrp = (mrp && sale && mrp > sale) ? r1(((mrp - sale) / mrp) * 100) : null;
+  const dcampRaw = disc.camp_detail && disc.camp_detail.d_v;
+  const dcamp = (dcampRaw != null && Number.isFinite(parseFloat(dcampRaw))) ? r1(parseFloat(dcampRaw)) : null;
+  // buy-N "Har Din Sasta" dual pricing: sale is then a multi-unit price (footnote in report)
+  const dualPricing = !!(disc.camp_detail && disc.camp_detail.dual_pricing);
+  return {
+    city: 'All India', pincode: '-', locality: 'BigBasket (national)',
+    store_id: '', store_name: 'BigBasket',
+    sku_raw: p.desc || '', canonical: canonical(p.desc, pack), pack,
+    vol_ml: vol, sale, mrp,
+    discount_pct: dctFromMrp != null ? dctFromMrp : (dcamp != null ? dcamp : 0),
+    per_litre: vol ? r2(sale / (vol / 1000)) : null,
+    eta_min: null, in_stock: inStock,
+    // ---- rich identity (ignored by build_excel; kept for vault/history/review) ----
+    sku_id: String(p.id || ''), brand,
+    avail_status: av.avail_status || '', avail_button: av.button || '',
+    base_price: num(prim.base_price), base_unit: prim.base_unit || '',
+    category: (p.category && (p.category.tlc_name || p.category.mlc_name)) || '',
+    absolute_url: p.absolute_url || '',
+    sp_source, dual_pricing: dualPricing,
+  };
+}
+
 // Pull every Jivo product out of one listing-svc response into canonical rows.
+// Walks both the top-level products[] AND each product's children[] (sibling packs
+// that may exist ONLY nested under a parent and never appear as their own top-level
+// result — e.g. Mango Wheatgrass 200ml, Mustard 1L, Canola Cold-Pressed 5L). Dedup
+// on sku_id happens upstream (the seen-set in the main loop), so a child that also
+// appears top-level is not double-counted.
 function parseProducts(json) {
   const out = [];
   const tabs = (json && json.tabs) || [];
   for (const tab of tabs) {
     const pi = (tab && tab.product_info) || {};
     for (const p of (pi.products || [])) {
-      const brand = (p.brand && p.brand.name && String(p.brand.name).trim()) || '';
-      // strict brand match — excludes substring noise (Jivika / JIVOTTAM / etc.)
-      if (!/^jivo$/i.test(brand)) continue;
-      const disc = (p.pricing && p.pricing.discount) || {};
-      const prim = disc.prim_price || {};
-      const mrp = num(disc.mrp);
-      let sale = num(prim.sp);
-      if (sale == null) sale = mrp;
-      if (sale == null) continue; // unpriced -> skip
-      const pack = p.w || '';
-      const vol = volMl(p, pack);
-      const av = p.availability || {};
-      const inStock = (av.avail_status === '001' && !av.not_for_sale) ? 1 : (av.avail_status ? 0 : 1);
-      const dctFromMrp = (mrp && sale && mrp > sale) ? r1(((mrp - sale) / mrp) * 100) : null;
-      const dcampRaw = disc.camp_detail && disc.camp_detail.d_v;
-      const dcamp = (dcampRaw != null && Number.isFinite(parseFloat(dcampRaw))) ? r1(parseFloat(dcampRaw)) : null;
-      out.push({
-        city: 'All India', pincode: '-', locality: 'BigBasket (national)',
-        store_id: '', store_name: 'BigBasket',
-        sku_raw: p.desc || '', canonical: canonical(p.desc, pack), pack,
-        vol_ml: vol, sale, mrp,
-        discount_pct: dctFromMrp != null ? dctFromMrp : (dcamp != null ? dcamp : 0),
-        per_litre: vol ? r2(sale / (vol / 1000)) : null,
-        eta_min: null, in_stock: inStock,
-        // ---- rich identity (ignored by build_excel; kept for vault/history/review) ----
-        sku_id: String(p.id || ''), brand,
-        avail_status: av.avail_status || '', avail_button: av.button || '',
-        base_price: num(prim.base_price), base_unit: prim.base_unit || '',
-        category: (p.category && (p.category.tlc_name || p.category.mlc_name)) || '',
-        absolute_url: p.absolute_url || '',
-      });
+      const row = buildRow(p);
+      if (row) out.push(row);
+      for (const c of (p.children || [])) {
+        const cr = buildRow(c);
+        if (cr) out.push(cr);
+      }
     }
   }
   return out;
