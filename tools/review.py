@@ -111,6 +111,13 @@ STATUS_FIELDS = ("status", "scrape_status")
 # re-derive the pack's TOTAL volume from the `pack` string and flag rows where the
 # recorded vol_ml is materially below it.
 COMBO_VOL_MARGIN = 1.4       # parsed total volume > recorded vol_ml * this -> per_litre inflated
+# Absolute backstop: a real Jivo cooking/olive OIL never retails above this Rs/L (premium
+# extra-virgin olive oil tops out well under ₹2000/L). Any priced OIL SKU above it has an
+# inflated per_litre — typically a combo whose volume token lives in the NAME (not the
+# `pack` field the structural check reads, e.g. amazon-fresh '5 L with 5 L'), so this fires
+# REGARDLESS of pack. Gated to oil SKUs: a 1g saffron / small non-oil pack legitimately
+# shows a huge nominal Rs/L (flipkart 'KESAR 1GM' ≈ ₹353000/L) and must NOT be flagged.
+ABS_PER_LITRE_OIL_MAX = 6000.0
 
 # --- shared (sale,mrp) duplication (fabrication / cross-sell bleed) ----------
 # A specific DISCOUNTED (sale,mrp) pair shared by several DISTINCT canonical products is
@@ -621,11 +628,36 @@ def block_and_priced_floor(data, rows, expected):
                   f"{blocked_rows} block/error-marked rows"), "broken"
 
 
+def _is_oil_row(r):
+    """True if the row is a cooking/olive oil SKU (so the absolute Rs/L ceiling applies).
+    Uses an explicit is_oil flag when present, else looks for 'oil' in the name/category."""
+    if r.get("is_oil"):
+        return True
+    txt = " ".join(str(r.get(k) or "")
+                   for k in ("sku_raw", "canonical", "category", "sub_category")).lower()
+    return "oil" in txt
+
+
+def _row_per_litre(r):
+    """Published per_litre if present, else derived sale/(vol_ml/1000). None if neither."""
+    pl = num(r.get("per_litre"))
+    if pl is not None:
+        return pl
+    s = num(r.get("sale"))
+    vol = num(r.get("vol_ml"))
+    if s is not None and s > 0 and vol and vol > 0:
+        return s / (vol / 1000.0)
+    return None
+
+
 def per_litre_combo_sanity(rows):
     """
-    (ok, detail, severity). Flags rows whose recorded vol_ml materially undercounts the
-    pack's parsed total volume (combo/multipack mis-parse) — the published per_litre is
-    then inflated. Precise: only fires when the `pack` string itself implies more volume.
+    (ok, detail, severity). Flags inflated per_litre two complementary ways:
+      (a) STRUCTURAL — recorded vol_ml materially undercounts the `pack` string's parsed
+          total volume (combo/multipack mis-parse the pack field exposes); and
+      (b) ABSOLUTE CEILING — a priced OIL SKU whose per_litre exceeds ABS_PER_LITRE_OIL_MAX,
+          which catches combos whose volume token lives in the NAME (invisible to the pack
+          parse) without false-flagging legit tiny non-oil packs.
     """
     bad = []
     for r in rows:
@@ -635,17 +667,36 @@ def per_litre_combo_sanity(rows):
         total = parse_total_vol_ml(r.get("pack"))
         if total and total > vol * COMBO_VOL_MARGIN:
             bad.append((r.get("pack"), vol, total, r.get("per_litre")))
-    if not bad:
-        return True, "per_litre consistent with parsed pack volume for all rows", "suspect"
-    packs = {}
-    for pack, vol, total, pl in bad:
-        packs.setdefault((pack, vol), (total, pl))
-    (epack, evol), (etot, epl) = next(iter(sorted(
-        packs.items(), key=lambda kv: -(kv[1][1] or 0))))
-    detail = (f"{len(bad)} rows / {len(packs)} packs have per_litre inflated by an "
-              f"under-counted combo volume e.g. pack {epack!r} recorded {evol:g}ml but "
-              f"implies {etot:g}ml (per_litre ₹{epl})")
-    return False, detail, "suspect"
+
+    over = []   # priced oil SKUs above the absolute Rs/L ceiling
+    for r in rows:
+        s = num(r.get("sale"))
+        if not s or s <= 0 or not _is_oil_row(r):
+            continue
+        pl = _row_per_litre(r)
+        if pl is not None and pl > ABS_PER_LITRE_OIL_MAX:
+            over.append((r.get("sku_raw"), r.get("pack"), pl))
+
+    if not bad and not over:
+        return True, (f"per_litre consistent with parsed pack volume and within the "
+                      f"₹{ABS_PER_LITRE_OIL_MAX:.0f}/L oil ceiling for all rows"), "suspect"
+
+    bits = []
+    if bad:
+        packs = {}
+        for pack, vol, total, pl in bad:
+            packs.setdefault((pack, vol), (total, pl))
+        (epack, evol), (etot, epl) = next(iter(sorted(
+            packs.items(), key=lambda kv: -(kv[1][1] or 0))))
+        bits.append(f"{len(bad)} rows / {len(packs)} packs per_litre inflated by an "
+                    f"under-counted combo volume e.g. pack {epack!r} recorded {evol:g}ml but "
+                    f"implies {etot:g}ml (per_litre ₹{epl})")
+    if over:
+        ename, epack, epl = max(over, key=lambda x: x[2])
+        bits.append(f"{len(over)} priced oil SKU(s) over ₹{ABS_PER_LITRE_OIL_MAX:.0f}/L "
+                    f"ceiling e.g. {str(ename)[:40]!r} (pack {epack!r}) = ₹{epl:.0f}/L "
+                    f"(likely a name-hidden combo)")
+    return False, "; ".join(bits), "suspect"
 
 
 def shared_price_dup(rows):
