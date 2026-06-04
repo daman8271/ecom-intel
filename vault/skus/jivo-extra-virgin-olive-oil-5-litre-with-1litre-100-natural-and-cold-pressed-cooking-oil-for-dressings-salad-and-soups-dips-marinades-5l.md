@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5-litre-with-1litre-100-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-5l
-display_name: "Jivo Extra Virgin Olive Oil 5 litre with 1Litre (Pack of 6L), 100% natural and cold pressed cooking oil, for Dressings, Salad and Soups, Dips & Marinades."
+display_name: Jivo Extra Virgin Olive Oil 5 Litre With 1litre 100 Natural And Cold Pressed Cooking Oil For Dressings Salad And Soups Dips Marinades 5l
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 5 litre with 1Litre (Pack of 6L), 100% natural and cold pressed cooking oil, for Dressings, Salad and Soups, Dips & Marinades.**
+**Jivo Extra Virgin Olive Oil 5 Litre With 1litre 100 Natural And Cold Pressed Cooking Oil For Dressings Salad And Soups Dips Marinades 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹3899 (60.2% off)

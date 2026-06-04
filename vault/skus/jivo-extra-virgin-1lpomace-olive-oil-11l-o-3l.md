@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-1lpomace-olive-oil-11l-o-3l
+display_name: Jivo Extra Virgin 1lpomace Olive Oil 11l O 3l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-1lpomace-olive-oil-11l-o-3l
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin 1lpomace Olive Oil 11l O 3l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1559 (48.0% off)

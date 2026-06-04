@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-jain-mnatra-prayer-kit-white-na
+display_name: Jivo Jain Mnatra Prayer Kit White Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-jain-mnatra-prayer-kit-white-na
 
 Up: [[skus-index]]
+
+**Jivo Jain Mnatra Prayer Kit White Na**
 
 ## Sold on
 - [[amazon]] — latest ₹245 (50.9% off)

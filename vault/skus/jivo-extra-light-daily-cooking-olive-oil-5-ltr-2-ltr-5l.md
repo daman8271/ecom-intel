@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-5l
-display_name: Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle)
+display_name: Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 2 Ltr 5l
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle)**
+**Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 2 Ltr 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹3559 (61.7% off)

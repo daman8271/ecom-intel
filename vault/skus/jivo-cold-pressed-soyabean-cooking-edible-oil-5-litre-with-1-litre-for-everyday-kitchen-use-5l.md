@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-soyabean-cooking-edible-oil-5-litre-with-1-litre-for-everyday-kitchen-use-5l
+display_name: Jivo Cold Pressed Soyabean Cooking Edible Oil 5 Litre With 1 Litre For Everyday Kitchen Use 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-soyabean-cooking-edible-oil-5-litre-with-1-litre-for-everyday-kitchen-use-5l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Soyabean Cooking Edible Oil 5 Litre With 1 Litre For Everyday Kitchen Use 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1395 (0.4% off)

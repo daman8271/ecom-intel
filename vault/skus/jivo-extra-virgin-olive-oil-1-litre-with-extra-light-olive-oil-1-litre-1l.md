@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-1-litre-with-extra-light-olive-oil-1-litre-1l
+display_name: Jivo Extra Virgin Olive Oil 1 Litre With Extra Light Olive Oil 1 Litre 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-olive-oil-1-litre-with-extra-light-olive-oil-1-litre-1l
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin Olive Oil 1 Litre With Extra Light Olive Oil 1 Litre 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1329 (59.7% off)

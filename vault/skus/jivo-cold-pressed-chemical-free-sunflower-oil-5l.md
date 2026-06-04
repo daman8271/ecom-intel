@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-chemical-free-sunflower-oil-5l
-display_name: Jivo Cold Pressed Chemical Free Sunflower Oil (5 ltr)
+display_name: Jivo Cold Pressed Chemical Free Sunflower Oil 5l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Chemical Free Sunflower Oil (5 ltr)**
+**Jivo Cold Pressed Chemical Free Sunflower Oil 5l**
 
 ## Sold on
 - [[]] — latest ₹940 (30.4% off)

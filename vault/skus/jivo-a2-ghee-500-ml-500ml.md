@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-a2-ghee-500-ml-500ml
+display_name: Jivo a2 Ghee 500 Ml 500ml
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-a2-ghee-500-ml-500ml
 
 Up: [[skus-index]]
+
+**Jivo a2 Ghee 500 Ml 500ml**
 
 ## Sold on
 - [[amazon]] — latest ₹749 (66.0% off)

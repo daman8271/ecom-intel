@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-namokar-mantra-plugin-plastic-chanting-box-na
+display_name: Jivo Namokar Mantra Plugin Plastic Chanting Box Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-namokar-mantra-plugin-plastic-chanting-box-na
 
 Up: [[skus-index]]
+
+**Jivo Namokar Mantra Plugin Plastic Chanting Box Na**
 
 ## Sold on
 - [[amazon]] — latest ₹239 (52.1% off)

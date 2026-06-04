@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-na
+display_name: Jivo Gold Refined Oil Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-gold-refined-oil-na
 
 Up: [[skus-index]]
+
+**Jivo Gold Refined Oil Na**
 
 ## Sold on
 - [[amazon]] — latest ₹1098 (15.5% off)

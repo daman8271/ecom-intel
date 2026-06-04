@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-indian-tonic-water-200ml
+display_name: Jivo Indian Tonic Water 200ml
 platforms:
   - 
 first_seen: 2026-05-24
@@ -17,6 +18,8 @@ tags:
 # jivo-indian-tonic-water-200ml
 
 Up: [[skus-index]]
+
+**Jivo Indian Tonic Water 200ml**
 
 ## Sold on
 - [[]] — latest ₹150

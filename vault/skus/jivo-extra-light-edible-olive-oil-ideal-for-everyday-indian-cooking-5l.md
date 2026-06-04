@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l
-display_name: Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking (5 ltr)
+display_name: Jivo Extra Light Edible Olive Oil Ideal For Everyday Indian Cooking 5l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking (5 ltr)**
+**Jivo Extra Light Edible Olive Oil Ideal For Everyday Indian Cooking 5l**
 
 ## Sold on
 - [[]] — latest ₹3134 (51.8% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-coldpressed-canola-oil-5l-and-a2-cow-ghee-1l-combo-offer-5l
+display_name: Jivo Coldpressed Canola Oil 5l And a2 Cow Ghee 1l Combo Offer 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-coldpressed-canola-oil-5l-and-a2-cow-ghee-1l-combo-offer-5l
 
 Up: [[skus-index]]
+
+**Jivo Coldpressed Canola Oil 5l And a2 Cow Ghee 1l Combo Offer 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2299 (59.3% off)

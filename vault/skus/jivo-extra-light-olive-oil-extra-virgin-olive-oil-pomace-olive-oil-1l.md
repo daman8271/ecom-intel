@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-extra-virgin-olive-oil-pomace-olive-oil-1l
+display_name: Jivo Extra Light Olive Oil Extra Virgin Olive Oil Pomace Olive Oil 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-olive-oil-extra-virgin-olive-oil-pomace-olive-oil-1l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light Olive Oil Extra Virgin Olive Oil Pomace Olive Oil 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1699 (60.9% off)

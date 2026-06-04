@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-baby-boys-dhoti-kurta-na
+display_name: Jivo Baby Boys Dhoti Kurta Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-baby-boys-dhoti-kurta-na
 
 Up: [[skus-index]]
+
+**Jivo Baby Boys Dhoti Kurta Na**
 
 ## Sold on
 - [[amazon]] — latest ₹279 (30.1% off)

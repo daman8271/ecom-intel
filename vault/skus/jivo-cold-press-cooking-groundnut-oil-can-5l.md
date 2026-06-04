@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-cooking-groundnut-oil-can-5l
+display_name: Jivo Cold Press Cooking Groundnut Oil Can 5l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-press-cooking-groundnut-oil-can-5l
 
 Up: [[skus-index]]
+
+**Jivo Cold Press Cooking Groundnut Oil Can 5l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1243 (55.6% off)

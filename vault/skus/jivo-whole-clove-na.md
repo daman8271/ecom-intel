@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-whole-clove-na
+display_name: Jivo Whole Clove Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-whole-clove-na
 
 Up: [[skus-index]]
+
+**Jivo Whole Clove Na**
 
 ## Sold on
 - [[amazon]] — latest ₹207 (26.1% off)

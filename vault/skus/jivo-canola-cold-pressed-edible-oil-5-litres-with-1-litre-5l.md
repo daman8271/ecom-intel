@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-5l
+display_name: Jivo Canola Cold Pressed Edible Oil 5 Litres With 1 Litre 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-5l
 
 Up: [[skus-index]]
+
+**Jivo Canola Cold Pressed Edible Oil 5 Litres With 1 Litre 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1689 (24.9% off)

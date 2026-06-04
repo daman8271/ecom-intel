@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-olive-oil-combo-3-litre-3l
+display_name: Jivo Olive Oil Combo 3 Litre 3l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-olive-oil-combo-3-litre-3l
 
 Up: [[skus-index]]
+
+**Jivo Olive Oil Combo 3 Litre 3l**
 
 ## Sold on
 - [[amazon]] — latest ₹1799 (53.2% off)

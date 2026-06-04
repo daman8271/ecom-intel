@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-mustard-oil-5l-5l
-display_name: Jivo Cold Pressed Mustard Oil 5L (5 ltr)
+display_name: Jivo Cold Pressed Mustard Oil 5l 5l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Mustard Oil 5L (5 ltr)**
+**Jivo Cold Pressed Mustard Oil 5l 5l**
 
 ## Sold on
 - [[]] — latest ₹938 (25.0% off)

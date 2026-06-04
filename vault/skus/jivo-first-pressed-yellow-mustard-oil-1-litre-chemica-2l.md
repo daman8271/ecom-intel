@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-yellow-mustard-oil-1-litre-chemica-2l
+display_name: Jivo First Pressed Yellow Mustard Oil 1 Litre Chemica 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-first-pressed-yellow-mustard-oil-1-litre-chemica-2l
 
 Up: [[skus-index]]
+
+**Jivo First Pressed Yellow Mustard Oil 1 Litre Chemica 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹566 (28.4% off)

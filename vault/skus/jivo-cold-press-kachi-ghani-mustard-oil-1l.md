@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-kachi-ghani-mustard-oil-1l
-display_name: Jivo Cold Press Kachi Ghani Mustard Oil (1 ltr)
+display_name: Jivo Cold Press Kachi Ghani Mustard Oil 1l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Press Kachi Ghani Mustard Oil (1 ltr)**
+**Jivo Cold Press Kachi Ghani Mustard Oil 1l**
 
 ## Sold on
 - [[]] — latest ₹187 (16.9% off)

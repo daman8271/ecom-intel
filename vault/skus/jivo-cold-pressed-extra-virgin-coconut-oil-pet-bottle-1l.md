@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-extra-virgin-coconut-oil-pet-bottle-1l
+display_name: Jivo Cold Pressed Extra Virgin Coconut Oil Pet Bottle 1l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-extra-virgin-coconut-oil-pet-bottle-1l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Extra Virgin Coconut Oil Pet Bottle 1l**
 
 ## Sold on
 - [[flipkart]] — latest ₹635 (9.3% off)

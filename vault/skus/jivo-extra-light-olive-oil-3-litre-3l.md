@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-3-litre-3l
-display_name: Jivo Extra Light Olive Oil - 3 Litre
+display_name: Jivo Extra Light Olive Oil 3 Litre 3l
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil - 3 Litre**
+**Jivo Extra Light Olive Oil 3 Litre 3l**
 
 ## Sold on
 - [[amazon]] — latest ₹1299

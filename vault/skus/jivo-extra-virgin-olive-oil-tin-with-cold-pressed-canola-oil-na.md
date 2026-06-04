@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-tin-with-cold-pressed-canola-oil-na
+display_name: Jivo Extra Virgin Olive Oil Tin With Cold Pressed Canola Oil Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-olive-oil-tin-with-cold-pressed-canola-oil-na
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin Olive Oil Tin With Cold Pressed Canola Oil Na**
 
 ## Sold on
 - [[amazon]] — latest ₹4999

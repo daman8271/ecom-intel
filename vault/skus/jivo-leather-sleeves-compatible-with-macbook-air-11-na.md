@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-leather-sleeves-compatible-with-macbook-air-11-na
+display_name: Jivo Leather Sleeves Compatible With Macbook Air 11 Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-leather-sleeves-compatible-with-macbook-air-11-na
 
 Up: [[skus-index]]
+
+**Jivo Leather Sleeves Compatible With Macbook Air 11 Na**
 
 ## Sold on
 - [[amazon]] — latest ₹1799 (40.0% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canolaoil11l-extralight1lpomace-oil1l-pack-4l
+display_name: Jivo Canolaoil11l Extralight1lpomace Oil1l Pack 4l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canolaoil11l-extralight1lpomace-oil1l-pack-4l
 
 Up: [[skus-index]]
+
+**Jivo Canolaoil11l Extralight1lpomace Oil1l Pack 4l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1368 (45.2% off)

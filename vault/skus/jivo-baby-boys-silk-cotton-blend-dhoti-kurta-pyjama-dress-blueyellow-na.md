@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-baby-boys-silk-cotton-blend-dhoti-kurta-pyjama-dress-blueyellow-na
+display_name: Jivo Baby Boys Silk Cotton Blend Dhoti Kurta Pyjama Dress Blueyellow Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-baby-boys-silk-cotton-blend-dhoti-kurta-pyjama-dress-blueyellow-na
 
 Up: [[skus-index]]
+
+**Jivo Baby Boys Silk Cotton Blend Dhoti Kurta Pyjama Dress Blueyellow Na**
 
 ## Sold on
 - [[amazon]] — latest ₹299 (57.2% off)

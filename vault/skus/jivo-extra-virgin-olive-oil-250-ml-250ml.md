@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-250-ml-250ml
-display_name: Jivo Extra Virgin Olive Oil 250 ML (Pack of 2)
+display_name: Jivo Extra Virgin Olive Oil 250 Ml 250ml
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 250 ML (Pack of 2)**
+**Jivo Extra Virgin Olive Oil 250 Ml 250ml**
 
 ## Sold on
 - [[amazon]] — latest ₹390 (56.7% off)

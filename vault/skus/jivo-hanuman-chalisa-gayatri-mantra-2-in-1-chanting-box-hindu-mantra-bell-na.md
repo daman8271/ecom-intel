@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-hanuman-chalisa-gayatri-mantra-2-in-1-chanting-box-hindu-mantra-bell-na
+display_name: Jivo Hanuman Chalisa Gayatri Mantra 2 In 1 Chanting Box Hindu Mantra Bell Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-hanuman-chalisa-gayatri-mantra-2-in-1-chanting-box-hindu-mantra-bell-na
 
 Up: [[skus-index]]
+
+**Jivo Hanuman Chalisa Gayatri Mantra 2 In 1 Chanting Box Hindu Mantra Bell Na**
 
 ## Sold on
 - [[amazon]] — latest ₹417 (47.8% off)

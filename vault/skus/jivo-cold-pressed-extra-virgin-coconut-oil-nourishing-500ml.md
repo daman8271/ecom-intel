@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-extra-virgin-coconut-oil-nourishing-500ml
+display_name: Jivo Cold Pressed Extra Virgin Coconut Oil Nourishing 500ml
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-extra-virgin-coconut-oil-nourishing-500ml
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Extra Virgin Coconut Oil Nourishing 500ml**
 
 ## Sold on
 - [[flipkart]] — latest ₹266 (33.2% off)

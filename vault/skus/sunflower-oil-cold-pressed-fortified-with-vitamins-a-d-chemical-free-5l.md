@@ -5,11 +5,11 @@ display_name: "Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chem
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 3
+last_seen: 2026-06-04
+observations: 4
 min_price: 818.72
-max_price: 818.72
-latest_price: 818.72
+max_price: 835.43
+latest_price: 835.43
 tags:
   - type/sku-hub
   - platform/bigbasket
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free (5 L)**
 
 ## Sold on
-- [[bigbasket]] — latest ₹818.72 (39.4% off)
+- [[bigbasket]] — latest ₹835.43 (38.1% off)
 
-## Runs that observed this SKU (3)
-[[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (4)
+[[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,bigbasket,All India,-,818.72,1350,39.4,1
 2026-06-01-1200,2026-06-01,bigbasket,All India,-,818.72,1350,39.4,1
 2026-06-01-1600,2026-06-01,bigbasket,All India,-,818.72,1350,39.4,1
+2026-06-04-1417,2026-06-04,bigbasket,All India,-,835.43,1350,38.1,1
 ```
 
 ---

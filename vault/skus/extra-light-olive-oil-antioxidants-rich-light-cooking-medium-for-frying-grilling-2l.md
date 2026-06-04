@@ -5,11 +5,11 @@ display_name: "Extra Light Olive Oil - Antioxidants Rich, Light Cooking Medium, 
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 3
+last_seen: 2026-06-04
+observations: 4
 min_price: 1380
-max_price: 1380
-latest_price: 1380
+max_price: 1409
+latest_price: 1409
 tags:
   - type/sku-hub
   - platform/bigbasket
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Extra Light Olive Oil - Antioxidants Rich, Light Cooking Medium, For Frying, Grilling (2 L)**
 
 ## Sold on
-- [[bigbasket]] — latest ₹1380 (50.7% off)
+- [[bigbasket]] — latest ₹1409 (49.7% off)
 
-## Runs that observed this SKU (3)
-[[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (4)
+[[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,bigbasket,All India,-,1380,2799,50.7,1
 2026-06-01-1200,2026-06-01,bigbasket,All India,-,1380,2799,50.7,1
 2026-06-01-1600,2026-06-01,bigbasket,All India,-,1380,2799,50.7,1
+2026-06-04-1417,2026-06-04,bigbasket,All India,-,1409,2799,49.7,1
 ```
 
 ---

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-11lextra-virgin-1l-olive-oil-3l
+display_name: Jivo Canola 11lextra Virgin 1l Olive Oil 3l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-11lextra-virgin-1l-olive-oil-3l
 
 Up: [[skus-index]]
+
+**Jivo Canola 11lextra Virgin 1l Olive Oil 3l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1151 (48.8% off)

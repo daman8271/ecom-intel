@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-cooking-olive-oil-pet-bottle-2l
+display_name: Jivo Extra Light Cooking Olive Oil Pet Bottle 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-cooking-olive-oil-pet-bottle-2l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light Cooking Olive Oil Pet Bottle 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1031 (65.6% off)

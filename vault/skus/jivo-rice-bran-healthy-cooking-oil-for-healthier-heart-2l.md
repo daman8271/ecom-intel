@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-healthy-cooking-oil-for-healthier-heart-2l
+display_name: Jivo Rice Bran Healthy Cooking Oil For Healthier Heart 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-rice-bran-healthy-cooking-oil-for-healthier-heart-2l
 
 Up: [[skus-index]]
+
+**Jivo Rice Bran Healthy Cooking Oil For Healthier Heart 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹408 (28.4% off)

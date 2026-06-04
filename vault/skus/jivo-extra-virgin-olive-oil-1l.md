@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-1l
-display_name: Jivo Extra Virgin Olive Oil (1 ltr)
+display_name: Jivo Extra Virgin Olive Oil 1l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil (1 ltr)**
+**Jivo Extra Virgin Olive Oil 1l**
 
 ## Sold on
 - [[]] — latest ₹941 (47.7% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-a2-ghee-100-pure-natural-healthy-500ml-ghee-pl-500ml
+display_name: Jivo a2 Ghee 100 Pure Natural Healthy 500ml Ghee Pl 500ml
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-a2-ghee-100-pure-natural-healthy-500ml-ghee-pl-500ml
 
 Up: [[skus-index]]
+
+**Jivo a2 Ghee 100 Pure Natural Healthy 500ml Ghee Pl 500ml**
 
 ## Sold on
 - [[flipkart]] — latest ₹748 (66.0% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-so-olive-oil-1l-1l
-display_name: Jivo SO OLive Oil 1L (1 ltr)
+display_name: Jivo So Olive Oil 1l 1l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo SO OLive Oil 1L (1 ltr)**
+**Jivo So Olive Oil 1l 1l**
 
 ## Sold on
 - [[]] — latest ₹239 (26.5% off)

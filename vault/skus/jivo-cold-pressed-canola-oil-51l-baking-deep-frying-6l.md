@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-51l-baking-deep-frying-6l
+display_name: Jivo Cold Pressed Canola Oil 51l Baking Deep Frying 6l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-canola-oil-51l-baking-deep-frying-6l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Canola Oil 51l Baking Deep Frying 6l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1372 (32.2% off)

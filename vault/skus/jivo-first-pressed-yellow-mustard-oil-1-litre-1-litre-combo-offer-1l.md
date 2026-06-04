@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-yellow-mustard-oil-1-litre-1-litre-combo-offer-1l
+display_name: Jivo First Pressed Yellow Mustard Oil 1 Litre 1 Litre Combo Offer 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-first-pressed-yellow-mustard-oil-1-litre-1-litre-combo-offer-1l
 
 Up: [[skus-index]]
+
+**Jivo First Pressed Yellow Mustard Oil 1 Litre 1 Litre Combo Offer 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹640 (14.7% off)

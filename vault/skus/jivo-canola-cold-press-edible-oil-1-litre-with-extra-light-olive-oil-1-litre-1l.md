@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-1-litre-with-extra-light-olive-oil-1-litre-1l
+display_name: Jivo Canola Cold Press Edible Oil 1 Litre With Extra Light Olive Oil 1 Litre 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-cold-press-edible-oil-1-litre-with-extra-light-olive-oil-1-litre-1l
 
 Up: [[skus-index]]
+
+**Jivo Canola Cold Press Edible Oil 1 Litre With Extra Light Olive Oil 1 Litre 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹919 (33.1% off)

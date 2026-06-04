@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-sunflower-oil-5-litre-jivo-gold-refined-edible-oil-5-litre-combo-pack-5l
+display_name: Jivo Cold Pressed Sunflower Oil 5 Litre Jivo Gold Refined Edible Oil 5 Litre Combo Pack 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-sunflower-oil-5-litre-jivo-gold-refined-edible-oil-5-litre-combo-pack-5l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Sunflower Oil 5 Litre Jivo Gold Refined Edible Oil 5 Litre Combo Pack 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1078 (18.6% off)

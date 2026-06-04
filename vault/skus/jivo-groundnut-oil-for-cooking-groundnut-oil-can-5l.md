@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-oil-for-cooking-groundnut-oil-can-5l
+display_name: Jivo Groundnut Oil For Cooking Groundnut Oil Can 5l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-groundnut-oil-for-cooking-groundnut-oil-can-5l
 
 Up: [[skus-index]]
+
+**Jivo Groundnut Oil For Cooking Groundnut Oil Can 5l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1352 (51.7% off)

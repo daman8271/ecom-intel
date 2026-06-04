@@ -5,11 +5,11 @@ display_name: Jivo Cold Pressed Sunflower Oil (1 l)
 platforms:
   - blinkit
 first_seen: 2026-05-21
-last_seen: 2026-06-01
-observations: 1106
+last_seen: 2026-06-04
+observations: 1124
 min_price: 181
 max_price: 255
-latest_price: 220
+latest_price: 207
 tags:
   - type/sku-hub
   - platform/blinkit
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Sunflower Oil (1 l)**
 
 ## Sold on
-- [[blinkit]] — latest ₹220 (20.0% off)
+- [[blinkit]] — latest ₹207 (24.7% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Chandigarh]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]]
 
-## Runs that observed this SKU (35)
-[[blinkit-2026-06-01-1600]] · [[blinkit-2026-06-01-1200]] · [[blinkit-2026-06-01-0900]] · [[blinkit-2026-05-31-1600]] · [[blinkit-2026-05-31-1200]] · [[blinkit-2026-05-31-0900]] · [[blinkit-2026-05-30-1200]] · [[blinkit-2026-05-30-0900]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-28-1600]] · [[blinkit-2026-05-28-1200]] · [[blinkit-2026-05-28-0900]] · [[blinkit-2026-05-27-1600]] · [[blinkit-2026-05-27-1200]] · [[blinkit-2026-05-27-0900]] · [[blinkit-2026-05-26-1600]] · [[blinkit-2026-05-26-1200]] · [[blinkit-2026-05-26-0900]] · [[blinkit-2026-05-25-1600]] · [[blinkit-2026-05-25-1200]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-24-1200]] · [[blinkit-2026-05-24-0900]] · [[blinkit-2026-05-23-1600]] · [[blinkit-2026-05-23-1200]] · [[blinkit-2026-05-23-0900]] · [[blinkit-2026-05-22-1600]] · [[blinkit-2026-05-22-1200]] · [[blinkit-2026-05-22-0900]] · [[blinkit-2026-05-21-1736]] · [[blinkit-2026-05-21-1703]] · [[blinkit-2026-05-21-1417]]
+## Runs that observed this SKU (36)
+[[blinkit-2026-06-04-1417]] · [[blinkit-2026-06-01-1600]] · [[blinkit-2026-06-01-1200]] · [[blinkit-2026-06-01-0900]] · [[blinkit-2026-05-31-1600]] · [[blinkit-2026-05-31-1200]] · [[blinkit-2026-05-31-0900]] · [[blinkit-2026-05-30-1200]] · [[blinkit-2026-05-30-0900]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-28-1600]] · [[blinkit-2026-05-28-1200]] · [[blinkit-2026-05-28-0900]] · [[blinkit-2026-05-27-1600]] · [[blinkit-2026-05-27-1200]] · [[blinkit-2026-05-27-0900]] · [[blinkit-2026-05-26-1600]] · [[blinkit-2026-05-26-1200]] · [[blinkit-2026-05-26-0900]] · [[blinkit-2026-05-25-1600]] · [[blinkit-2026-05-25-1200]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-24-1200]] · [[blinkit-2026-05-24-0900]] · [[blinkit-2026-05-23-1600]] · [[blinkit-2026-05-23-1200]] · [[blinkit-2026-05-23-0900]] · [[blinkit-2026-05-22-1600]] · [[blinkit-2026-05-22-1200]] · [[blinkit-2026-05-22-0900]] · [[blinkit-2026-05-21-1736]] · [[blinkit-2026-05-21-1703]] · [[blinkit-2026-05-21-1417]]
 
-## Price history (1106 observations)
+## Price history (1124 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -1140,6 +1140,24 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1600,2026-06-01,blinkit,Mysuru,570016,207,275,24.7,0
 2026-06-01-1600,2026-06-01,blinkit,Mysuru,570026,212,275,22.9,1
 2026-06-01-1600,2026-06-01,blinkit,Mysuru,570028,220,275,20,1
+2026-06-04-1417,2026-06-04,blinkit,Chandigarh,160030,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Ludhiana,141421,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Ludhiana,142027,208,275,24.4,1
+2026-06-04-1417,2026-06-04,blinkit,Ludhiana,142036,208,275,24.4,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400003,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400005,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400007,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400012,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400015,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400020,207,275,24.7,0
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400023,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400025,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400601,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400611,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mumbai,400703,207,275,24.7,1
+2026-06-04-1417,2026-06-04,blinkit,Mysuru,570026,212,275,22.9,1
+2026-06-04-1417,2026-06-04,blinkit,Mysuru,570028,220,275,20,0
+2026-06-04-1417,2026-06-04,blinkit,Mysuru,571311,207,275,24.7,1
 ```
 
 ---

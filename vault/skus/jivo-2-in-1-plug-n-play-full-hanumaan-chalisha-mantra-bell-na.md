@@ -1,34 +1,44 @@
 ---
 type: sku-hub
 canonical_sku: jivo-2-in-1-plug-n-play-full-hanumaan-chalisha-mantra-bell-na
+display_name: Jivo 2 In 1 Plug N Play Full Hanumaan Chalisha Mantra Bell Na
 platforms:
   - amazon
+  - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-06-04
+observations: 2
 min_price: 369
 max_price: 369
 latest_price: 369
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-now
 ---
 
 # jivo-2-in-1-plug-n-play-full-hanumaan-chalisha-mantra-bell-na
 
 Up: [[skus-index]]
 
+**Jivo 2 In 1 Plug N Play Full Hanumaan Chalisha Mantra Bell Na**
+
 ## Sold on
 - [[amazon]] — latest ₹369 (63.1% off)
+- [[amazon-now]] — latest ₹369 (26.1% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+
+## Price history (2 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,369,999,63.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110092,369,499,26.1,1
 ```
 
 ---

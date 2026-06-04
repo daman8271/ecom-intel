@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-blended-cooking-oil-for-healthy-heart-blended-2l
+display_name: Jivo Gold Blended Cooking Oil For Healthy Heart Blended 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-gold-blended-cooking-oil-for-healthy-heart-blended-2l
 
 Up: [[skus-index]]
+
+**Jivo Gold Blended Cooking Oil For Healthy Heart Blended 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹399 (11.3% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-cooking-oil-1lwith-jivo-pure-desi-cow-ghee-500g-500ml
+display_name: Jivo Pomace Olive Cooking Oil 1lwith Jivo Pure Desi Cow Ghee 500g 500ml
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-pomace-olive-cooking-oil-1lwith-jivo-pure-desi-cow-ghee-500g-500ml
 
 Up: [[skus-index]]
+
+**Jivo Pomace Olive Cooking Oil 1lwith Jivo Pure Desi Cow Ghee 500g 500ml**
 
 ## Sold on
 - [[amazon]] — latest ₹825 (44.9% off)

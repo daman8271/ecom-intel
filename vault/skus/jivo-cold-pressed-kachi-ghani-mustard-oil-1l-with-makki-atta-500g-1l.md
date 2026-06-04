@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l
-display_name: Jivo Cold Pressed Kachi Ghani Mustard Oil 1L with Makki Atta 500g (1 l)
+display_name: Jivo Cold Pressed Kachi Ghani Mustard Oil 1l With Makki Atta 500g 1l
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Kachi Ghani Mustard Oil 1L with Makki Atta 500g (1 l)**
+**Jivo Cold Pressed Kachi Ghani Mustard Oil 1l With Makki Atta 500g 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹339 (16.1% off)

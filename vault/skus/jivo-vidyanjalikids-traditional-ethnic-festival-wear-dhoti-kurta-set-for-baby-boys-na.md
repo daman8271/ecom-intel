@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-vidyanjalikids-traditional-ethnic-festival-wear-dhoti-kurta-set-for-baby-boys-na
+display_name: Jivo Vidyanjalikids Traditional Ethnic Festival Wear Dhoti Kurta Set For Baby Boys Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-vidyanjalikids-traditional-ethnic-festival-wear-dhoti-kurta-set-for-baby-boys-na
 
 Up: [[skus-index]]
+
+**Jivo Vidyanjalikids Traditional Ethnic Festival Wear Dhoti Kurta Set For Baby Boys Na**
 
 ## Sold on
 - [[amazon]] — latest ₹269 (78.5% off)

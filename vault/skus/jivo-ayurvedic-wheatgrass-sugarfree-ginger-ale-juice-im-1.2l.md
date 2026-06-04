@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-ayurvedic-wheatgrass-sugarfree-ginger-ale-juice-im-1.2l
+display_name: Jivo Ayurvedic Wheatgrass Sugarfree Ginger Ale Juice Im 1.2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-ayurvedic-wheatgrass-sugarfree-ginger-ale-juice-im-1.2l
 
 Up: [[skus-index]]
+
+**Jivo Ayurvedic Wheatgrass Sugarfree Ginger Ale Juice Im 1.2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹317 (84.1% off)

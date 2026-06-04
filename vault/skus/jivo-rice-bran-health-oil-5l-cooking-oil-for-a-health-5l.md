@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-health-oil-5l-cooking-oil-for-a-health-5l
+display_name: Jivo Rice Bran Health Oil 5l Cooking Oil For A Health 5l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-rice-bran-health-oil-5l-cooking-oil-for-a-health-5l
 
 Up: [[skus-index]]
+
+**Jivo Rice Bran Health Oil 5l Cooking Oil For A Health 5l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1072 (24.8% off)

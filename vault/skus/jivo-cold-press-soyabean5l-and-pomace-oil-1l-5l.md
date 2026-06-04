@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-soyabean5l-and-pomace-oil-1l-5l
+display_name: Jivo Cold Press Soyabean5l And Pomace Oil 1l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-press-soyabean5l-and-pomace-oil-1l-5l
 
 Up: [[skus-index]]
+
+**Jivo Cold Press Soyabean5l And Pomace Oil 1l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1745 (18.8% off)

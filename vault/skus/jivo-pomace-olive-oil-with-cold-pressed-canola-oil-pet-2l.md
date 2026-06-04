@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-with-cold-pressed-canola-oil-pet-2l
+display_name: Jivo Pomace Olive Oil With Cold Pressed Canola Oil Pet 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-pomace-olive-oil-with-cold-pressed-canola-oil-pet-2l
 
 Up: [[skus-index]]
+
+**Jivo Pomace Olive Oil With Cold Pressed Canola Oil Pet 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹666 (40.7% off)

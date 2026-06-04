@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-sunflower-oil-combo-pack-5l
-display_name: Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre)
+display_name: Jivo Cold Pressed Sunflower Oil Combo Pack 5l
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre)**
+**Jivo Cold Pressed Sunflower Oil Combo Pack 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1078 (33.7% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-1-litre-cooking-oil-canola-oil-plastic-bott-1l
+display_name: Jivo Canola 1 Litre Cooking Oil Canola Oil Plastic Bott 1l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-1-litre-cooking-oil-canola-oil-plastic-bott-1l
 
 Up: [[skus-index]]
+
+**Jivo Canola 1 Litre Cooking Oil Canola Oil Plastic Bott 1l**
 
 ## Sold on
 - [[flipkart]] — latest ₹279 (25.6% off)

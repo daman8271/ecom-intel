@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-edible-olive-oil-cooking-daily-use-na
+display_name: Jivo Pomace Edible Olive Oil Cooking Daily Use Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-pomace-edible-olive-oil-cooking-daily-use-na
 
 Up: [[skus-index]]
+
+**Jivo Pomace Edible Olive Oil Cooking Daily Use Na**
 
 ## Sold on
 - [[amazon]] — latest ₹1449 (35.5% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-imported-from-spain-hig-400ml
+display_name: Jivo Extra Virgin Olive Oil Imported From Spain Hig 400ml
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-olive-oil-imported-from-spain-hig-400ml
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin Olive Oil Imported From Spain Hig 400ml**
 
 ## Sold on
 - [[flipkart]] — latest ₹324 (55.0% off)

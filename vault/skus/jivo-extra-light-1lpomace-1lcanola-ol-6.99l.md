@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-1lpomace-1lcanola-ol-6.99l
+display_name: Jivo Extra Light 1lpomace 1lcanola Ol 6.99l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-1lpomace-1lcanola-ol-6.99l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light 1lpomace 1lcanola Ol 6.99l**
 
 ## Sold on
 - [[flipkart]] — latest ₹2306 (40.9% off)

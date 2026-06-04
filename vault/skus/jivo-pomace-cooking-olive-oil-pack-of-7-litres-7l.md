@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-pack-of-7-litres-7l
-display_name: Jivo Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle)
+display_name: Jivo Pomace Cooking Olive Oil Pack Of 7 Litres 7l
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle)**
+**Jivo Pomace Cooking Olive Oil Pack Of 7 Litres 7l**
 
 ## Sold on
 - [[amazon]] — latest ₹2859 (53.1% off)

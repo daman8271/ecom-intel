@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-healthy-wheatgrass-juice-sugar-free-200ml
-display_name: Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free (200 ml)
+display_name: Jivo Healthy Wheatgrass Juice Sugar Free 200ml
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free (200 ml)**
+**Jivo Healthy Wheatgrass Juice Sugar Free 200ml**
 
 ## Sold on
 - [[]] — latest ₹50

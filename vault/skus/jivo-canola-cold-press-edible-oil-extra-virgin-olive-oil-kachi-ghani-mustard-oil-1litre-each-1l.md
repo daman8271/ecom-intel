@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-extra-virgin-olive-oil-kachi-ghani-mustard-oil-1litre-each-1l
+display_name: Jivo Canola Cold Press Edible Oil Extra Virgin Olive Oil Kachi Ghani Mustard Oil 1litre Each 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-cold-press-edible-oil-extra-virgin-olive-oil-kachi-ghani-mustard-oil-1litre-each-1l
 
 Up: [[skus-index]]
+
+**Jivo Canola Cold Press Edible Oil Extra Virgin Olive Oil Kachi Ghani Mustard Oil 1litre Each 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1259 (43.3% off)

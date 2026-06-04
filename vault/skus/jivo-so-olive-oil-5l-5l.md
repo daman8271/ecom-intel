@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-so-olive-oil-5l-5l
-display_name: Jivo SO OLive Oil 5L (5 ltr)
+display_name: Jivo So Olive Oil 5l 5l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo SO OLive Oil 5L (5 ltr)**
+**Jivo So Olive Oil 5l 5l**
 
 ## Sold on
 - [[]] — latest ₹1204 (25.9% off)

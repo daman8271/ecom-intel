@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l
-display_name: Jivo Pomace Cooking Olive Oil 5 Litre with Extra light olive oil 5 Litre
+display_name: Jivo Pomace Cooking Olive Oil 5 Litre With Extra Light Olive Oil 5 Litre 5l
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Cooking Olive Oil 5 Litre with Extra light olive oil 5 Litre**
+**Jivo Pomace Cooking Olive Oil 5 Litre With Extra Light Olive Oil 5 Litre 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹4599 (37.8% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-pack-of-6-litres-6l
+display_name: Jivo Pomace Cooking Olive Oil Pack Of 6 Litres 6l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-pomace-cooking-olive-oil-pack-of-6-litres-6l
 
 Up: [[skus-index]]
+
+**Jivo Pomace Cooking Olive Oil Pack Of 6 Litres 6l**
 
 ## Sold on
 - [[amazon]] — latest ₹2520 (58.3% off)

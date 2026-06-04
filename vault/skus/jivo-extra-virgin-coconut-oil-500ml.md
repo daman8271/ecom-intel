@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-coconut-oil-500ml
-display_name: Jivo Extra Virgin Coconut Oil (500 ml)
+display_name: Jivo Extra Virgin Coconut Oil 500ml
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Coconut Oil (500 ml)**
+**Jivo Extra Virgin Coconut Oil 500ml**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹519 (62.7% off)

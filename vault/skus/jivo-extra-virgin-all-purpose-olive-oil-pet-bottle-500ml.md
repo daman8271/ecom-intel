@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-all-purpose-olive-oil-pet-bottle-500ml
+display_name: Jivo Extra Virgin All Purpose Olive Oil Pet Bottle 500ml
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-all-purpose-olive-oil-pet-bottle-500ml
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin All Purpose Olive Oil Pet Bottle 500ml**
 
 ## Sold on
 - [[flipkart]] — latest ₹371 (62.8% off)

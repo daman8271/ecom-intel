@@ -5,11 +5,11 @@ display_name: Pomace Olive Oil (2 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 3
+last_seen: 2026-06-04
+observations: 4
 min_price: 1078
-max_price: 1078
-latest_price: 1078
+max_price: 1100
+latest_price: 1100
 tags:
   - type/sku-hub
   - platform/bigbasket
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Pomace Olive Oil (2 L)**
 
 ## Sold on
-- [[bigbasket]] — latest ₹1078 (25.6% off)
+- [[bigbasket]] — latest ₹1100 (24.1% off)
 
-## Runs that observed this SKU (3)
-[[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (4)
+[[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,bigbasket,All India,-,1078,1449,25.6,1
 2026-06-01-1200,2026-06-01,bigbasket,All India,-,1078,1449,25.6,1
 2026-06-01-1600,2026-06-01,bigbasket,All India,-,1078,1449,25.6,1
+2026-06-04-1417,2026-06-04,bigbasket,All India,-,1100,1449,24.1,1
 ```
 
 ---

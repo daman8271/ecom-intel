@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-sesame-oil-1l
-display_name: Jivo First Pressed Sesame Oil (1 l)
+display_name: Jivo First Pressed Sesame Oil 1l
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo First Pressed Sesame Oil (1 l)**
+**Jivo First Pressed Sesame Oil 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹329 (45.2% off)

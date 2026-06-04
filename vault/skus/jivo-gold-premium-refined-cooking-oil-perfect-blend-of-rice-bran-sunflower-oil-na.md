@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-na
+display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-na
 
 Up: [[skus-index]]
+
+**Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil Na**
 
 ## Sold on
 - [[amazon]] — latest ₹688 (23.6% off)

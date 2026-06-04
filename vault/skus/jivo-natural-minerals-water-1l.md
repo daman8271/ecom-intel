@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-natural-minerals-water-1l
-display_name: JIVO NATURAL MINERALS WATER (1 ltr)
+display_name: Jivo Natural Minerals Water 1l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO NATURAL MINERALS WATER (1 ltr)**
+**Jivo Natural Minerals Water 1l**
 
 ## Sold on
 - [[]] — latest ₹29 (3.3% off)

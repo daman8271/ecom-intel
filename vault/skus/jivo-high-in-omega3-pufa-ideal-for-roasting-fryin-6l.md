@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-high-in-omega3-pufa-ideal-for-roasting-fryin-6l
+display_name: Jivo High In omega3 Pufa Ideal For Roasting Fryin 6l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-high-in-omega3-pufa-ideal-for-roasting-fryin-6l
 
 Up: [[skus-index]]
+
+**Jivo High In omega3 Pufa Ideal For Roasting Fryin 6l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1151 (23.2% off)

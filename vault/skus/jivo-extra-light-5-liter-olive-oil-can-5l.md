@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-5-liter-olive-oil-can-5l
+display_name: Jivo Extra Light 5 Liter Olive Oil Can 5l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-5-liter-olive-oil-can-5l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light 5 Liter Olive Oil Can 5l**
 
 ## Sold on
 - [[flipkart]] — latest ₹2780 (43.3% off)

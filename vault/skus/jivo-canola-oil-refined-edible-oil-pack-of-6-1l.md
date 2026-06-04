@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-oil-refined-edible-oil-pack-of-6-1l
+display_name: Jivo Canola Oil Refined Edible Oil Pack Of 6 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-oil-refined-edible-oil-pack-of-6-1l
 
 Up: [[skus-index]]
+
+**Jivo Canola Oil Refined Edible Oil Pack Of 6 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1529 (32.0% off)

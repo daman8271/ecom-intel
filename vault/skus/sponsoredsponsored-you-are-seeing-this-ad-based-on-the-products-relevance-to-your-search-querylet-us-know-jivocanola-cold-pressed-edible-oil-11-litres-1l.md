@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-11-litres-1l
+display_name: Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivocanola Cold Pressed Edible Oil 11 Litres 1l
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -17,6 +18,8 @@ tags:
 # sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-11-litres-1l
 
 Up: [[skus-index]]
+
+**Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivocanola Cold Pressed Edible Oil 11 Litres 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹639 (14.8% off)

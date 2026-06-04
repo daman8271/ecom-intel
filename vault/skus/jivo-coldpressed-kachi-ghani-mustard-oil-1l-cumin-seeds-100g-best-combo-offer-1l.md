@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-coldpressed-kachi-ghani-mustard-oil-1l-cumin-seeds-100g-best-combo-offer-1l
+display_name: Jivo Coldpressed Kachi Ghani Mustard Oil 1l Cumin Seeds 100g Best Combo Offer 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-coldpressed-kachi-ghani-mustard-oil-1l-cumin-seeds-100g-best-combo-offer-1l
 
 Up: [[skus-index]]
+
+**Jivo Coldpressed Kachi Ghani Mustard Oil 1l Cumin Seeds 100g Best Combo Offer 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹503 (0.2% off)

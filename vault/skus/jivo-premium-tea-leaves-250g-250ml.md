@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-premium-tea-leaves-250g-250ml
+display_name: Jivo Premium Tea Leaves 250g 250ml
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-premium-tea-leaves-250g-250ml
 
 Up: [[skus-index]]
+
+**Jivo Premium Tea Leaves 250g 250ml**
 
 ## Sold on
 - [[amazon]] — latest ₹355 (11.3% off)

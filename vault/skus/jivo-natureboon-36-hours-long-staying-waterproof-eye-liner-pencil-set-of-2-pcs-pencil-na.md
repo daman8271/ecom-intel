@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-natureboon-36-hours-long-staying-waterproof-eye-liner-pencil-set-of-2-pcs-pencil-na
+display_name: Jivo Natureboon 36 Hours Long Staying Waterproof Eye Liner Pencil Set Of 2 Pcs Pencil Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-natureboon-36-hours-long-staying-waterproof-eye-liner-pencil-set-of-2-pcs-pencil-na
 
 Up: [[skus-index]]
+
+**Jivo Natureboon 36 Hours Long Staying Waterproof Eye Liner Pencil Set Of 2 Pcs Pencil Na**
 
 ## Sold on
 - [[amazon]] — latest ₹160 (46.5% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-cooking-pomace-olive-oil-cold-pressed-sunflower-oil-1l-each-1l
+display_name: Jivo Daily Cooking Pomace Olive Oil Cold Pressed Sunflower Oil 1l Each 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-daily-cooking-pomace-olive-oil-cold-pressed-sunflower-oil-1l-each-1l
 
 Up: [[skus-index]]
+
+**Jivo Daily Cooking Pomace Olive Oil Cold Pressed Sunflower Oil 1l Each 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹558 (39.6% off)

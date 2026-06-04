@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: buy-jivo-extra-light-daily-cooking-olive-oil-get-truly-good-food-tgf-penne-pasta-free-combo-na
-display_name: Buy Jivo Extra Light Daily Cooking Olive Oil & Get Truly Good Food Tgf Penne Pasta Free Combo (1 Combo)
+display_name: Buy Jivo Extra Light Daily Cooking Olive Oil Get Truly Good Food Tgf Penne Pasta Free Combo Na
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Buy Jivo Extra Light Daily Cooking Olive Oil & Get Truly Good Food Tgf Penne Pasta Free Combo (1 Combo)**
+**Buy Jivo Extra Light Daily Cooking Olive Oil Get Truly Good Food Tgf Penne Pasta Free Combo Na**
 
 ## Sold on
 - [[]] — latest ₹791 (52.0% off)

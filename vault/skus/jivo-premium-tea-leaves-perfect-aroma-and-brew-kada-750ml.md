@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-premium-tea-leaves-perfect-aroma-and-brew-kada-750ml
+display_name: Jivo Premium Tea Leaves Perfect Aroma And Brew Kada 750ml
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-premium-tea-leaves-perfect-aroma-and-brew-kada-750ml
 
 Up: [[skus-index]]
+
+**Jivo Premium Tea Leaves Perfect Aroma And Brew Kada 750ml**
 
 ## Sold on
 - [[flipkart]] — latest ₹436 (27.3% off)

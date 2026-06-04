@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-glass-bottle-250ml
+display_name: Jivo Extra Virgin Olive Oil Glass Bottle 250ml
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-olive-oil-glass-bottle-250ml
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin Olive Oil Glass Bottle 250ml**
 
 ## Sold on
 - [[flipkart]] — latest ₹218 (51.6% off)

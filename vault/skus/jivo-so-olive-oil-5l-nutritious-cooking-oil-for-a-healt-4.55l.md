@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-so-olive-oil-5l-nutritious-cooking-oil-for-a-healt-4.55l
+display_name: Jivo So Olive Oil 5l Nutritious Cooking Oil For A Healt 4.55l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-so-olive-oil-5l-nutritious-cooking-oil-for-a-healt-4.55l
 
 Up: [[skus-index]]
+
+**Jivo So Olive Oil 5l Nutritious Cooking Oil For A Healt 4.55l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1372 (15.6% off)

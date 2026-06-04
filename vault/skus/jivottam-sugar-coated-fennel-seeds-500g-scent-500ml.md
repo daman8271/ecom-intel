@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivottam-sugar-coated-fennel-seeds-500g-scent-500ml
+display_name: Jivottam Sugar Coated Fennel Seeds 500g Scent 500ml
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivottam-sugar-coated-fennel-seeds-500g-scent-500ml
 
 Up: [[skus-index]]
+
+**Jivottam Sugar Coated Fennel Seeds 500g Scent 500ml**
 
 ## Sold on
 - [[flipkart]] — latest ₹130 (67.4% off)

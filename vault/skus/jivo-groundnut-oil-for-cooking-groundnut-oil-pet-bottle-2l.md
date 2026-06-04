@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-oil-for-cooking-groundnut-oil-pet-bottle-2l
+display_name: Jivo Groundnut Oil For Cooking Groundnut Oil Pet Bottle 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-groundnut-oil-for-cooking-groundnut-oil-pet-bottle-2l
 
 Up: [[skus-index]]
+
+**Jivo Groundnut Oil For Cooking Groundnut Oil Pet Bottle 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹548 (51.1% off)

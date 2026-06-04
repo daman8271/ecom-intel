@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-sesame-gingelly-oil-rich-in-mufa-1l
+display_name: Jivo First Pressed Sesame Gingelly Oil Rich In Mufa 1l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-first-pressed-sesame-gingelly-oil-rich-in-mufa-1l
 
 Up: [[skus-index]]
+
+**Jivo First Pressed Sesame Gingelly Oil Rich In Mufa 1l**
 
 ## Sold on
 - [[flipkart]] — latest ₹389 (35.2% off)

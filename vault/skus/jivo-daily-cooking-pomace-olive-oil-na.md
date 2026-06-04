@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-cooking-pomace-olive-oil-na
+display_name: Jivo Daily Cooking Pomace Olive Oil Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-daily-cooking-pomace-olive-oil-na
 
 Up: [[skus-index]]
+
+**Jivo Daily Cooking Pomace Olive Oil Na**
 
 ## Sold on
 - [[amazon]] — latest ₹758 (41.6% off)

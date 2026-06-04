@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-250ml
-display_name: Jivo Extra Virgin Olive Oil (250 ml)
+display_name: Jivo Extra Virgin Olive Oil 250ml
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil (250 ml)**
+**Jivo Extra Virgin Olive Oil 250ml**
 
 ## Sold on
 - [[]] — latest ₹255 (43.3% off)

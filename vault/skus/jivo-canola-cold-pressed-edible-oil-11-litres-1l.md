@@ -1,15 +1,16 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-edible-oil-11-litres-1l
+display_name: Jivo Canola Cold Pressed Edible Oil 11 Litres 1l
 platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-31
-observations: 93
+last_seen: 2026-06-04
+observations: 153
 min_price: 460
 max_price: 750
-latest_price: 750
+latest_price: 509
 tags:
   - type/sku-hub
   - platform/amazon
@@ -20,17 +21,19 @@ tags:
 
 Up: [[skus-index]]
 
+**Jivo Canola Cold Pressed Edible Oil 11 Litres 1l**
+
 ## Sold on
 - [[amazon]] — latest ₹460 (38.7% off)
-- [[amazon-fresh]] — latest ₹750
+- [[amazon-fresh]] — latest ₹509 (32.1% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Surat]]
 
-## Runs that observed this SKU (4)
-[[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (9)
+[[amazon-fresh-2026-06-04-1417]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (93 observations)
+## Price history (153 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -127,6 +130,66 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110048,750,750,0,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110062,639,750,14.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,Delhi,110065,750,750,0,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110003,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110013,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110014,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110016,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110017,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110024,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110025,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110044,469,750,37.5,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110048,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110062,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110065,509,750,32.1,1
+2026-06-02-1200,2026-06-02,amazon-fresh,Delhi,110076,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110003,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110013,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110014,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110016,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110017,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110024,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110025,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110044,469,750,37.5,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110048,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110062,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110065,509,750,32.1,1
+2026-06-02-1600,2026-06-02,amazon-fresh,Delhi,110076,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110003,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110013,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110014,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110016,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110017,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110024,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110025,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110044,469,750,37.5,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110048,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110062,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110065,509,750,32.1,1
+2026-06-03-0900,2026-06-03,amazon-fresh,Delhi,110076,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110003,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110013,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110014,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110016,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110017,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110024,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110025,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110044,469,750,37.5,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110048,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110062,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110065,509,750,32.1,1
+2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110076,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110003,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110013,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110014,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110016,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110017,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110024,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110025,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110044,469,750,37.5,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110048,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110062,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110065,509,750,32.1,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110076,509,750,32.1,1
 ```
 
 ---

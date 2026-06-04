@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-extra-virgin-olive-oil-po-3l
+display_name: Jivo Extra Light Olive Oil Extra Virgin Olive Oil Po 3l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-olive-oil-extra-virgin-olive-oil-po-3l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light Olive Oil Extra Virgin Olive Oil Po 3l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1563 (51.9% off)

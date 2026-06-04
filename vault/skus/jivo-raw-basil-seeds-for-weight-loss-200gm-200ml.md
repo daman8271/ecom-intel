@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-raw-basil-seeds-for-weight-loss-200gm-200ml
-display_name: Jivo Raw Basil Seeds for weight loss - 200gm (200 g)
+display_name: Jivo Raw Basil Seeds For Weight Loss 200gm 200ml
 platforms:
   - amazon-fresh
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Raw Basil Seeds for weight loss - 200gm (200 g)**
+**Jivo Raw Basil Seeds For Weight Loss 200gm 200ml**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹69 (76.9% off)

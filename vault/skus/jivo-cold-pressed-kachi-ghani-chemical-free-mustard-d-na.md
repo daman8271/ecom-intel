@@ -1,37 +1,47 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na
+display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
 platforms:
-  - amazon-now
-first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 1
-min_price: 209
-max_price: 209
-latest_price: 209
+  - amazon-fresh
+first_seen: 2026-06-02
+last_seen: 2026-06-02
+observations: 8
+min_price: 179
+max_price: 181
+latest_price: 181
 tags:
   - type/sku-hub
-  - platform/amazon-now
+  - platform/amazon-fresh
 ---
 
 # jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na
 
 Up: [[skus-index]]
 
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na**
+
 ## Sold on
-- [[amazon-now]] — latest ₹209 (18.0% off)
+- [[amazon-fresh]] — latest ₹181 (29.0% off)
 
 ## Available in cities
-[[Mumbai]]
+[[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Pune]]
 
 ## Runs that observed this SKU (1)
-[[amazon-now-2026-06-01-1200]]
+[[amazon-fresh-2026-06-02-0900]]
 
-## Price history (1 observations)
+## Price history (8 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
-2026-06-01-1200,2026-06-01,amazon-now,Mumbai,400023,209,255,18,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Delhi,110035,181,255,29,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Faridabad,121011,181,255,29,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Gurgaon,122001,181,255,29,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Jaipur,302025,181,255,29,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Kolkata,700069,179,255,29.8,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Pune,411004,181,255,29,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Pune,411005,181,255,29,1
+2026-06-02-0900,2026-06-02,amazon-fresh,Pune,411014,181,255,29,1
 ```
 
 ---

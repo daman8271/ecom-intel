@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-pure-mustard-oil-plastic-bottle-2l
+display_name: Jivo Cold Pressed Pure Mustard Oil Plastic Bottle 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-pure-mustard-oil-plastic-bottle-2l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Pure Mustard Oil Plastic Bottle 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹441 (13.5% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-oil-groundnut-oil-5l
-display_name: Jivo Cold Pressed oil Groundnut Oil (5 ltr)
+display_name: Jivo Cold Pressed Oil Groundnut Oil 5l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed oil Groundnut Oil (5 ltr)**
+**Jivo Cold Pressed Oil Groundnut Oil 5l**
 
 ## Sold on
 - [[]] — latest ₹1070 (61.8% off)

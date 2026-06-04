@@ -1,34 +1,96 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-200ml-pet-bottle-pomace-olive-oil-5-litre-200ml
+display_name: Jivo Extra Virgin Olive Oil 200ml Pet Bottle Pomace Olive Oil 5 Litre 200ml
 platforms:
   - amazon
+  - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
-min_price: 2288
+last_seen: 2026-06-04
+observations: 54
+min_price: 2115
 max_price: 2288
-latest_price: 2288
+latest_price: 2115
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-now
 ---
 
 # jivo-extra-virgin-olive-oil-200ml-pet-bottle-pomace-olive-oil-5-litre-200ml
 
 Up: [[skus-index]]
 
+**Jivo Extra Virgin Olive Oil 200ml Pet Bottle Pomace Olive Oil 5 Litre 200ml**
+
 ## Sold on
 - [[amazon]] — latest ₹2288 (56.8% off)
+- [[amazon-now]] — latest ₹2115 (60.1% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Noida]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+
+## Price history (54 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,2288,5298,56.8,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110001,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110003,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110007,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110008,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110009,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110010,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110013,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110014,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110016,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110018,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110021,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110024,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110025,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110026,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110031,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110033,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110035,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110037,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110044,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110046,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110048,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110051,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110052,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110054,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110055,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110061,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110062,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110065,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110067,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110070,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110075,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110076,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110084,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110085,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110088,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110090,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110091,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110092,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110095,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121001,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121002,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201001,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201002,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201009,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122001,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122004,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122010,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201304,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201305,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201306,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201307,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201309,2115,5298,60.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201310,2115,5298,60.1,1
 ```
 
 ---

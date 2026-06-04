@@ -5,11 +5,11 @@ display_name: Cold Press Kachi Ghani Mustard Oil (5 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 3
+last_seen: 2026-06-04
+observations: 4
 min_price: 926.96
-max_price: 926.96
-latest_price: 926.96
+max_price: 945.88
+latest_price: 945.88
 tags:
   - type/sku-hub
   - platform/bigbasket
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Cold Press Kachi Ghani Mustard Oil (5 L)**
 
 ## Sold on
-- [[bigbasket]] — latest ₹926.96 (25.8% off)
+- [[bigbasket]] — latest ₹945.88 (24.3% off)
 
-## Runs that observed this SKU (3)
-[[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (4)
+[[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-0900,2026-06-01,bigbasket,All India,-,926.96,1250,25.8,1
 2026-06-01-1200,2026-06-01,bigbasket,All India,-,926.96,1250,25.8,1
 2026-06-01-1600,2026-06-01,bigbasket,All India,-,926.96,1250,25.8,1
+2026-06-04-1417,2026-06-04,bigbasket,All India,-,945.88,1250,24.3,1
 ```
 
 ---

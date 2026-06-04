@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-plastic-bottle-1-ltr-2l
+display_name: Jivo Pomace Olive Oil Plastic Bottle 1 Ltr 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-pomace-olive-oil-plastic-bottle-1-ltr-2l
 
 Up: [[skus-index]]
+
+**Jivo Pomace Olive Oil Plastic Bottle 1 Ltr 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹813 (61.2% off)

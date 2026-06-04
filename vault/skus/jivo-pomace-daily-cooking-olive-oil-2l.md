@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-daily-cooking-olive-oil-2l
-display_name: Jivo Pomace Daily Cooking Olive Oil (2 ltr)
+display_name: Jivo Pomace Daily Cooking Olive Oil 2l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Daily Cooking Olive Oil (2 ltr)**
+**Jivo Pomace Daily Cooking Olive Oil 2l**
 
 ## Sold on
 - [[]] — latest ₹1104 (23.8% off)

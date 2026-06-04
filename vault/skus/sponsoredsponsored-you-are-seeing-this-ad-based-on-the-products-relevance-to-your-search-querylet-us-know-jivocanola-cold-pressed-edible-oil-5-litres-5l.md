@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-5-litres-5l
+display_name: Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivocanola Cold Pressed Edible Oil 5 Litres 5l
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -17,6 +18,8 @@ tags:
 # sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-5-litres-5l
 
 Up: [[skus-index]]
+
+**Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivocanola Cold Pressed Edible Oil 5 Litres 5l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1249 (24.3% off)

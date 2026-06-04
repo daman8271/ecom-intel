@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-light-olive-oil-2-litre-2l
+display_name: Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivoextra Light Olive Oil 2 Litre 2l
 platforms:
   - amazon-fresh
 first_seen: 2026-05-31
@@ -17,6 +18,8 @@ tags:
 # sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-light-olive-oil-2-litre-2l
 
 Up: [[skus-index]]
+
+**Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivoextra Light Olive Oil 2 Litre 2l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1072 (61.7% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-5lextra-virgin-5l-cooking-oil-combo-olive-10l
+display_name: Jivo Pomace 5lextra Virgin 5l Cooking Oil Combo Olive 10l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-pomace-5lextra-virgin-5l-cooking-oil-combo-olive-10l
 
 Up: [[skus-index]]
+
+**Jivo Pomace 5lextra Virgin 5l Cooking Oil Combo Olive 10l**
 
 ## Sold on
 - [[flipkart]] — latest ₹5695 (47.8% off)

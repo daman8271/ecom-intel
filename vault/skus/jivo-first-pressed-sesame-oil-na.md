@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-sesame-oil-na
+display_name: Jivo First Pressed Sesame Oil Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-first-pressed-sesame-oil-na
 
 Up: [[skus-index]]
+
+**Jivo First Pressed Sesame Oil Na**
 
 ## Sold on
 - [[amazon]] — latest ₹329 (45.2% off)

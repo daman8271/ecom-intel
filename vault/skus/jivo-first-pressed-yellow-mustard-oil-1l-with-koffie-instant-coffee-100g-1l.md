@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-yellow-mustard-oil-1l-with-koffie-instant-coffee-100g-1l
+display_name: Jivo First Pressed Yellow Mustard Oil 1l With Koffie Instant Coffee 100g 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-first-pressed-yellow-mustard-oil-1l-with-koffie-instant-coffee-100g-1l
 
 Up: [[skus-index]]
+
+**Jivo First Pressed Yellow Mustard Oil 1l With Koffie Instant Coffee 100g 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹629 (10.8% off)

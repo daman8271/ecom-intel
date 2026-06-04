@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-cooking-oil-pack-of-2-canola-2l
+display_name: Jivo Cold Pressed Canola Cooking Oil Pack Of 2 Canola 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-canola-cooking-oil-pack-of-2-canola-2l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Canola Cooking Oil Pack Of 2 Canola 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹548 (26.9% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-desi-ghee-500-ml-500ml
-display_name: Jivo Desi Ghee 500 ML
+display_name: Jivo Desi Ghee 500 Ml 500ml
 platforms:
   - amazon
   - amazon-fresh
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Desi Ghee 500 ML**
+**Jivo Desi Ghee 500 Ml 500ml**
 
 ## Sold on
 - [[amazon]] — latest ₹446 (47.5% off)

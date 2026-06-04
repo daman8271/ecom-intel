@@ -1,16 +1,16 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l
-display_name: Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O
+display_name: Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l
 platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 64
-min_price: 243
+last_seen: 2026-06-04
+observations: 30
+min_price: 248
 max_price: 259
-latest_price: 259
+latest_price: 255
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -21,49 +21,22 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O**
+**Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹259 (30.9% off)
-- [[amazon-now]] — latest ₹259 (30.9% off)
+- [[amazon-now]] — latest ₹255 (32.0% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Bhopal]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Surat]]
+[[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (4)
-[[amazon-now-2026-06-01-1600]] · [[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]] · [[amazon-fresh-2026-06-01-1600]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-04-1417]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1600]]
 
-## Price history (64 observations)
+## Price history (30 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
-2026-06-01-0900,2026-06-01,amazon-now,Delhi,110039,243,375,35.2,1
-2026-06-01-0900,2026-06-01,amazon-now,Faridabad,121101,243,375,35.2,1
-2026-06-01-0900,2026-06-01,amazon-now,Jaipur,302029,243,375,35.2,1
-2026-06-01-0900,2026-06-01,amazon-now,Jaipur,303110,243,375,35.2,1
-2026-06-01-0900,2026-06-01,amazon-now,Jaipur,303120,243,375,35.2,1
-2026-06-01-0900,2026-06-01,amazon-now,Jaipur,303802,243,375,35.2,1
-2026-06-01-0900,2026-06-01,amazon-now,Ludhiana,141412,243,375,35.2,1
-2026-06-01-0900,2026-06-01,amazon-now,Mumbai,400017,248,375,33.9,1
-2026-06-01-0900,2026-06-01,amazon-now,Mumbai,400041,248,375,33.9,1
-2026-06-01-0900,2026-06-01,amazon-now,Mumbai,400073,248,375,33.9,1
-2026-06-01-0900,2026-06-01,amazon-now,Pune,410301,259,375,30.9,1
-2026-06-01-0900,2026-06-01,amazon-now,Pune,411001,259,375,30.9,1
-2026-06-01-1200,2026-06-01,amazon-now,Delhi,110006,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Delhi,110013,259,375,30.9,1
-2026-06-01-1200,2026-06-01,amazon-now,Delhi,110040,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Delhi,110070,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Gurgaon,122051,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Gurgaon,122106,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Ludhiana,141417,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Ludhiana,142026,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Ludhiana,142031,243,375,35.2,1
-2026-06-01-1200,2026-06-01,amazon-now,Mumbai,400019,248,375,33.9,1
-2026-06-01-1200,2026-06-01,amazon-now,Mumbai,400023,248,375,33.9,1
-2026-06-01-1200,2026-06-01,amazon-now,Pune,410506,248,375,33.9,1
-2026-06-01-1200,2026-06-01,amazon-now,Pune,411035,259,375,30.9,1
-2026-06-01-1200,2026-06-01,amazon-now,Pune,411047,259,375,30.9,1
-2026-06-01-1200,2026-06-01,amazon-now,Pune,412401,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-fresh,Bengaluru,560039,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-fresh,Delhi,110003,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-fresh,Faridabad,121002,259,375,30.9,1
@@ -88,19 +61,12 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1600,2026-06-01,amazon-fresh,Pune,412208,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-fresh,Pune,412213,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-fresh,Surat,394160,259,375,30.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Bengaluru,560039,259,375,30.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Bengaluru,562130,259,375,30.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Bhopal,462001,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-now,Delhi,110018,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-now,Delhi,110048,259,375,30.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Ghaziabad,201201,259,375,30.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Jaipur,302028,259,375,30.9,1
 2026-06-01-1600,2026-06-01,amazon-now,Mumbai,400003,248,375,33.9,1
 2026-06-01-1600,2026-06-01,amazon-now,Mumbai,400017,248,375,33.9,1
 2026-06-01-1600,2026-06-01,amazon-now,Mumbai,400030,248,375,33.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Pune,412211,259,375,30.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Pune,412403,248,375,33.9,1
-2026-06-01-1600,2026-06-01,amazon-now,Surat,394510,259,375,30.9,1
+2026-06-04-1417,2026-06-04,amazon-now,Chandigarh,160035,255,375,32,1
 ```
 
 ---

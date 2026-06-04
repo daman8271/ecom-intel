@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-sesame-oil-gingelly-oil-1l
-display_name: "Jivo First Pressed Sesame Oil | Gingelly Oil (1 ltr)"
+display_name: Jivo First Pressed Sesame Oil Gingelly Oil 1l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo First Pressed Sesame Oil | Gingelly Oil (1 ltr)**
+**Jivo First Pressed Sesame Oil Gingelly Oil 1l**
 
 ## Sold on
 - [[]] — latest ₹600

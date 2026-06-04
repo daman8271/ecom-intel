@@ -3,16 +3,16 @@ type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l
 display_name: Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cookin
 platforms:
-  - amazon-now
-first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 8
-min_price: 2017
-max_price: 2119
-latest_price: 2119
+  - amazon-fresh
+first_seen: 2026-06-04
+last_seen: 2026-06-04
+observations: 4
+min_price: 1926
+max_price: 1950
+latest_price: 1926
 tags:
   - type/sku-hub
-  - platform/amazon-now
+  - platform/amazon-fresh
 ---
 
 # jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l
@@ -22,26 +22,22 @@ Up: [[skus-index]]
 **Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cookin**
 
 ## Sold on
-- [[amazon-now]] — latest ₹2119 (57.6% off)
+- [[amazon-fresh]] — latest ₹1926 (61.5% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Bhopal]] · [[Pune]] · [[Surat]]
+[[Delhi]] · [[Jaipur]]
 
-## Runs that observed this SKU (3)
-[[amazon-now-2026-06-01-1600]] · [[amazon-now-2026-06-01-1200]] · [[amazon-now-2026-06-01-0900]]
+## Runs that observed this SKU (1)
+[[amazon-fresh-2026-06-04-1417]]
 
-## Price history (8 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
-2026-06-01-0900,2026-06-01,amazon-now,Pune,410301,2017,4999,59.7,1
-2026-06-01-1200,2026-06-01,amazon-now,Pune,411047,2017,4999,59.7,1
-2026-06-01-1200,2026-06-01,amazon-now,Pune,412401,2017,4999,59.7,1
-2026-06-01-1600,2026-06-01,amazon-now,Bengaluru,560039,2119,4999,57.6,1
-2026-06-01-1600,2026-06-01,amazon-now,Bengaluru,562130,2119,4999,57.6,1
-2026-06-01-1600,2026-06-01,amazon-now,Bhopal,462001,2119,4999,57.6,1
-2026-06-01-1600,2026-06-01,amazon-now,Pune,412211,2017,4999,59.7,1
-2026-06-01-1600,2026-06-01,amazon-now,Surat,394510,2119,4999,57.6,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110033,1950,4999,61,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110040,1950,4999,61,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110076,1950,4999,61,1
+2026-06-04-1417,2026-06-04,amazon-fresh,Jaipur,302033,1926,4999,61.5,1
 ```
 
 ---

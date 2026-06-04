@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-blend-of-rice-bran-sunflower-blende-5l
+display_name: Jivo Gold Refined Blend Of Rice Bran Sunflower Blende 5l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-gold-refined-blend-of-rice-bran-sunflower-blende-5l
 
 Up: [[skus-index]]
+
+**Jivo Gold Refined Blend Of Rice Bran Sunflower Blende 5l**
 
 ## Sold on
 - [[flipkart]] — latest ₹848 (19.2% off)

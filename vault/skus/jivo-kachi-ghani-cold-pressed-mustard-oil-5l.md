@@ -1,11 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-cold-pressed-mustard-oil-5l
+display_name: Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (5 l)
 platforms:
   - blinkit
 first_seen: 2026-05-21
-last_seen: 2026-05-29
-observations: 6
+last_seen: 2026-06-04
+observations: 10
 min_price: 868
 max_price: 869
 latest_price: 868
@@ -18,16 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
+**Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (5 l)**
+
 ## Sold on
 - [[blinkit]] — latest ₹868 (30.6% off)
 
 ## Available in cities
 [[Chandigarh]] · [[Ludhiana]]
 
-## Runs that observed this SKU (6)
-[[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-21-1736]]
+## Runs that observed this SKU (7)
+[[blinkit-2026-06-04-1417]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-21-1736]]
 
-## Price history (6 observations)
+## Price history (10 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -37,6 +40,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-29-0900,2026-05-29,blinkit,Ludhiana,141412,868,1250,30.6,1
 2026-05-29-1200,2026-05-29,blinkit,Ludhiana,141412,868,1250,30.6,1
 2026-05-29-1600,2026-05-29,blinkit,Ludhiana,141412,868,1250,30.6,1
+2026-06-04-1417,2026-06-04,blinkit,Chandigarh,160030,868,1250,30.6,1
+2026-06-04-1417,2026-06-04,blinkit,Ludhiana,141421,868,1250,30.6,1
+2026-06-04-1417,2026-06-04,blinkit,Ludhiana,142027,868,1250,30.6,1
+2026-06-04-1417,2026-06-04,blinkit,Ludhiana,142036,868,1250,30.6,1
 ```
 
 ---

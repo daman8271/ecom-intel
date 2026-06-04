@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-1l-with-pomace-olive-oil-1l-for-cooking-1l
+display_name: Jivo Extra Light Olive Oil 1l With Pomace Olive Oil 1l For Cooking 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-olive-oil-1l-with-pomace-olive-oil-1l-for-cooking-1l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light Olive Oil 1l With Pomace Olive Oil 1l For Cooking 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1129 (55.7% off)

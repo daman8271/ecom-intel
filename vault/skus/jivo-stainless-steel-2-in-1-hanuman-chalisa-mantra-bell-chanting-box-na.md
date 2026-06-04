@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-stainless-steel-2-in-1-hanuman-chalisa-mantra-bell-chanting-box-na
+display_name: Jivo Stainless Steel 2 In 1 Hanuman Chalisa Mantra Bell Chanting Box Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-stainless-steel-2-in-1-hanuman-chalisa-mantra-bell-chanting-box-na
 
 Up: [[skus-index]]
+
+**Jivo Stainless Steel 2 In 1 Hanuman Chalisa Mantra Bell Chanting Box Na**
 
 ## Sold on
 - [[amazon]] — latest ₹397 (60.3% off)

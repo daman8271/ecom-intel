@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-desi-ghee-1kg-1l
-display_name: Jivo Desi Ghee 1KG (1 kg)
+display_name: Jivo Desi Ghee 1kg 1l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Desi Ghee 1KG (1 kg)**
+**Jivo Desi Ghee 1kg 1l**
 
 ## Sold on
 - [[]] — latest ₹1499

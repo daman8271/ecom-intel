@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-oil-indian-medical-association-recommended-5l
-display_name: Jivo Canola Cold Press Oil Indian Medical Association Recommended (5 ltr)
+display_name: Jivo Canola Cold Press Oil Indian Medical Association Recommended 5l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Oil Indian Medical Association Recommended (5 ltr)**
+**Jivo Canola Cold Press Oil Indian Medical Association Recommended 5l**
 
 ## Sold on
 - [[]] — latest ₹1634 (1.0% off)

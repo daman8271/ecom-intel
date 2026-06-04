@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cooking-olive-oil-11-litre-with-pomace-oil-3l
+display_name: Jivo Canola Cooking Olive Oil 11 Litre With Pomace Oil 3l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-cooking-olive-oil-11-litre-with-pomace-oil-3l
 
 Up: [[skus-index]]
+
+**Jivo Canola Cooking Olive Oil 11 Litre With Pomace Oil 3l**
 
 ## Sold on
 - [[flipkart]] — latest ₹924 (38.4% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-daily-cooking-olive-oil-na
-display_name: Jivo Extra Light Daily Cooking Olive Oil (1 Combo)
+display_name: Jivo Extra Light Daily Cooking Olive Oil Na
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Daily Cooking Olive Oil (1 Combo)**
+**Jivo Extra Light Daily Cooking Olive Oil Na**
 
 ## Sold on
 - [[]] — latest ₹1778 (56.1% off)

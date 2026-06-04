@@ -1,34 +1,57 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-pomace-olive-oil-5l
+display_name: Jivo Pomace Cooking Olive Oil 5 Litre Tin Jivo Daily Cooking Pomace Olive Oil 5l
 platforms:
   - amazon
+  - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
-min_price: 2478
+last_seen: 2026-06-04
+observations: 15
+min_price: 2305
 max_price: 2478
-latest_price: 2478
+latest_price: 2305
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-now
 ---
 
 # jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-pomace-olive-oil-5l
 
 Up: [[skus-index]]
 
+**Jivo Pomace Cooking Olive Oil 5 Litre Tin Jivo Daily Cooking Pomace Olive Oil 5l**
+
 ## Sold on
 - [[amazon]] — latest ₹2478 (56.1% off)
+- [[amazon-now]] — latest ₹2305 (59.2% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]] · [[Ghaziabad]] · [[Jaipur]] · [[Mumbai]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,2478,5648,56.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110014,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110016,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110024,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110025,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110040,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110044,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110053,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110062,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110067,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110076,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201001,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302011,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303905,2305,5648,59.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400611,2305,5648,59.2,1
 ```
 
 ---

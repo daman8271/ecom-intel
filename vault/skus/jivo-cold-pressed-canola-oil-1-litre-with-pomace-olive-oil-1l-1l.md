@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-1-litre-with-pomace-olive-oil-1l-1l
+display_name: Jivo Cold Pressed Canola Oil 1 Litre With Pomace Olive Oil 1l 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-canola-oil-1-litre-with-pomace-olive-oil-1l-1l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Canola Oil 1 Litre With Pomace Olive Oil 1l 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹799 (28.9% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-oil-2-litre-2l
+display_name: Jivo Groundnut Oil 2 Litre 2l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-groundnut-oil-2-litre-2l
 
 Up: [[skus-index]]
+
+**Jivo Groundnut Oil 2 Litre 2l**
 
 ## Sold on
 - [[amazon]] — latest ₹800

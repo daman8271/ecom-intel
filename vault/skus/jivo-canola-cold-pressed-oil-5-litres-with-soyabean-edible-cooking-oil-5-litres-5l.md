@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-5l
+display_name: Jivo Canola Cold Pressed Oil 5 Litres With Soyabean Edible Cooking Oil 5 Litres 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-5l
 
 Up: [[skus-index]]
+
+**Jivo Canola Cold Pressed Oil 5 Litres With Soyabean Edible Cooking Oil 5 Litres 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2299 (17.9% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-11-ltr-canola-oil-pet-bot-2l
+display_name: Jivo Cold Pressed Canola Oil 11 Ltr Canola Oil Pet Bot 2l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-canola-oil-11-ltr-canola-oil-pet-bot-2l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Canola Oil 11 Ltr Canola Oil Pet Bot 2l**
 
 ## Sold on
 - [[flipkart]] — latest ₹566 (24.5% off)

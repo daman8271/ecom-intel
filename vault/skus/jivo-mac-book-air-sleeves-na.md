@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-mac-book-air-sleeves-na
+display_name: Jivo Mac Book Air Sleeves Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-mac-book-air-sleeves-na
 
 Up: [[skus-index]]
+
+**Jivo Mac Book Air Sleeves Na**
 
 ## Sold on
 - [[amazon]] — latest ₹1299 (35.0% off)

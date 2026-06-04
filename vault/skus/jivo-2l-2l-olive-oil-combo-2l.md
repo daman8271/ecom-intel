@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-2l-2l-olive-oil-combo-2l
+display_name: Jivo 2l 2l Olive Oil Combo 2l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-2l-2l-olive-oil-combo-2l
 
 Up: [[skus-index]]
+
+**Jivo 2l 2l Olive Oil Combo 2l**
 
 ## Sold on
 - [[amazon]] — latest ₹2199 (48.2% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-winter-wellness-combo-pure-a2-desi-cow-ghee-500-ml-premium-makki-atta-500ml
+display_name: Jivo Winter Wellness Combo Pure a2 Desi Cow Ghee 500 Ml Premium Makki Atta 500ml
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-winter-wellness-combo-pure-a2-desi-cow-ghee-500-ml-premium-makki-atta-500ml
 
 Up: [[skus-index]]
+
+**Jivo Winter Wellness Combo Pure a2 Desi Cow Ghee 500 Ml Premium Makki Atta 500ml**
 
 ## Sold on
 - [[amazon]] — latest ₹730 (18.8% off)

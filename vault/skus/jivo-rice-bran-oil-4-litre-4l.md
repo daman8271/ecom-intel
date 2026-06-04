@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-oil-4-litre-4l
-display_name: Jivo Rice Bran Oil 4 Litre
+display_name: Jivo Rice Bran Oil 4 Litre 4l
 platforms:
   - amazon-fresh
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Oil 4 Litre**
+**Jivo Rice Bran Oil 4 Litre 4l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹719 (36.9% off)

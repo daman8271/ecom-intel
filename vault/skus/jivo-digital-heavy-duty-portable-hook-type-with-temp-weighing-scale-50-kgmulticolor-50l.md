@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-digital-heavy-duty-portable-hook-type-with-temp-weighing-scale-50-kgmulticolor-50l
+display_name: Jivo Digital Heavy Duty Portable Hook Type With Temp Weighing Scale 50 Kgmulticolor 50l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-digital-heavy-duty-portable-hook-type-with-temp-weighing-scale-50-kgmulticolor-50l
 
 Up: [[skus-index]]
+
+**Jivo Digital Heavy Duty Portable Hook Type With Temp Weighing Scale 50 Kgmulticolor 50l**
 
 ## Sold on
 - [[amazon]] — latest ₹299 (50.1% off)

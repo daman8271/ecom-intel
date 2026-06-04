@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-ricebran-oil-1l-1l
-display_name: Jivo Ricebran Oil 1L (1 ltr)
+display_name: Jivo Ricebran Oil 1l 1l
 platforms:
   - 
 first_seen: 2026-05-22
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Ricebran Oil 1L (1 ltr)**
+**Jivo Ricebran Oil 1l 1l**
 
 ## Sold on
 - [[]] — latest ₹192 (32.6% off)

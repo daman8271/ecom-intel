@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-oil-3l-basmati-rice-3kg-combo-canola-oil-5.73l
+display_name: Jivo Canola Oil 3l Basmati Rice 3kg Combo Canola Oil 5.73l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-oil-3l-basmati-rice-3kg-combo-canola-oil-5.73l
 
 Up: [[skus-index]]
+
+**Jivo Canola Oil 3l Basmati Rice 3kg Combo Canola Oil 5.73l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1530 (3.8% off)

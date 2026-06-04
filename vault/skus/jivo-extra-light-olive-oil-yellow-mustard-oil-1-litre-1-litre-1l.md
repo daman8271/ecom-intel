@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-yellow-mustard-oil-1-litre-1-litre-1l
+display_name: Jivo Extra Light Olive Oil Yellow Mustard Oil 1 Litre 1 Litre 1l
 platforms:
   - amazon-fresh
 first_seen: 2026-06-01
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-olive-oil-yellow-mustard-oil-1-litre-1-litre-1l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light Olive Oil Yellow Mustard Oil 1 Litre 1 Litre 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹999 (47.3% off)

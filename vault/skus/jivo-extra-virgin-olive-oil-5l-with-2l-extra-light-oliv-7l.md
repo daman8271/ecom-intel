@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5l-with-2l-extra-light-oliv-7l
+display_name: Jivo Extra Virgin Olive Oil 5l With 2l Extra Light Oliv 7l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-olive-oil-5l-with-2l-extra-light-oliv-7l
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin Olive Oil 5l With 2l Extra Light Oliv 7l**
 
 ## Sold on
 - [[flipkart]] — latest ₹3797 (50.0% off)

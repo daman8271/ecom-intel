@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-premium-cold-pressed-pure-mustard-oil-5-litre-1-6l
+display_name: Jivo Premium Cold Pressed Pure Mustard Oil 5 Litre 1 6l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-premium-cold-pressed-pure-mustard-oil-5-litre-1-6l
 
 Up: [[skus-index]]
+
+**Jivo Premium Cold Pressed Pure Mustard Oil 5 Litre 1 6l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1282 (16.2% off)

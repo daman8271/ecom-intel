@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-1-litre-sunflower-oil-pet-3l
+display_name: Jivo Cold Pressed 1 Litre Sunflower Oil Pet 3l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-1-litre-sunflower-oil-pet-3l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed 1 Litre Sunflower Oil Pet 3l**
 
 ## Sold on
 - [[flipkart]] — latest ₹670 (18.8% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-5-litre-pomace-cooki-6l
+display_name: Jivo Extra Light Olive Oil 5 Litre Pomace Cooki 6l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-olive-oil-5-litre-pomace-cooki-6l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light Olive Oil 5 Litre Pomace Cooki 6l**
 
 ## Sold on
 - [[flipkart]] — latest ₹2666 (42.7% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-1lpomace-1lpomace-olive-oil-11l-pa-4l
+display_name: Jivo Extra Light 1lpomace 1lpomace Olive Oil 11l Pa 4l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-1lpomace-1lpomace-olive-oil-11l-pa-4l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light 1lpomace 1lpomace Olive Oil 11l Pa 4l**
 
 ## Sold on
 - [[flipkart]] — latest ₹2153 (53.7% off)

@@ -1,14 +1,13 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cooking-edible-soyabean-oil-5-litre-5l
-display_name: Jivo Cooking Edible Soyabean Oil 5 Litre
+display_name: Jivo Cooking Edible Soyabean Oil 5 Litre 5l
 platforms:
   - amazon
   - amazon-fresh
-  - amazon-now
 first_seen: 2026-05-21
 last_seen: 2026-06-01
-observations: 1126
+observations: 1121
 min_price: 949
 max_price: 989
 latest_price: 949
@@ -16,27 +15,25 @@ tags:
   - type/sku-hub
   - platform/amazon
   - platform/amazon-fresh
-  - platform/amazon-now
 ---
 
 # jivo-cooking-edible-soyabean-oil-5-litre-5l
 
 Up: [[skus-index]]
 
-**Jivo Cooking Edible Soyabean Oil 5 Litre**
+**Jivo Cooking Edible Soyabean Oil 5 Litre 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹989 (10.1% off)
 - [[amazon-fresh]] — latest ₹949 (13.7% off)
-- [[amazon-now]] — latest ₹949 (13.7% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (6)
-[[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (5)
+[[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (1126 observations)
+## Price history (1121 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -1161,11 +1158,6 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1600,2026-06-01,amazon-fresh,Surat,394410,949,1100,13.7,1
 2026-06-01-1600,2026-06-01,amazon-fresh,Surat,394510,949,1100,13.7,1
 2026-06-01-1600,2026-06-01,amazon-fresh,Surat,394540,949,1100,13.7,1
-2026-06-01-1600,2026-06-01,amazon-now,Kolkata,700022,949,1100,13.7,1
-2026-06-01-1600,2026-06-01,amazon-now,Kolkata,700024,949,1100,13.7,1
-2026-06-01-1600,2026-06-01,amazon-now,Kolkata,700053,949,1100,13.7,1
-2026-06-01-1600,2026-06-01,amazon-now,Kolkata,700089,949,1100,13.7,1
-2026-06-01-1600,2026-06-01,amazon-now,Kolkata,700141,949,1100,13.7,1
 ```
 
 ---

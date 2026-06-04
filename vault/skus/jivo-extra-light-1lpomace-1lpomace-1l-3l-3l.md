@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-1lpomace-1lpomace-1l-3l-3l
+display_name: Jivo Extra Light 1lpomace 1lpomace 1l 3l 3l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-1lpomace-1lpomace-1l-3l-3l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light 1lpomace 1lpomace 1l 3l 3l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1303 (47.8% off)

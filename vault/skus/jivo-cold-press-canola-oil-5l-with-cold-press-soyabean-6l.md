@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-canola-oil-5l-with-cold-press-soyabean-6l
+display_name: Jivo Cold Press Canola Oil 5l With Cold Press Soyabean 6l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-press-canola-oil-5l-with-cold-press-soyabean-6l
 
 Up: [[skus-index]]
+
+**Jivo Cold Press Canola Oil 5l With Cold Press Soyabean 6l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1414 (25.6% off)

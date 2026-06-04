@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5-litre-tin-with-extra-light-olive-oil-2-litre-pet-bottle-5l
+display_name: Jivo Extra Virgin Olive Oil 5 Litre Tin With Extra Light Olive Oil 2 Litre Pet Bottle 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-virgin-olive-oil-5-litre-tin-with-extra-light-olive-oil-2-litre-pet-bottle-5l
 
 Up: [[skus-index]]
+
+**Jivo Extra Virgin Olive Oil 5 Litre Tin With Extra Light Olive Oil 2 Litre Pet Bottle 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹4829 (36.4% off)

@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-koffie-instant-smooth-premium-coffee-100-gm-na
+display_name: Jivo Koffie Instant Smooth Premium Coffee 100 Gm Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-koffie-instant-smooth-premium-coffee-100-gm-na
 
 Up: [[skus-index]]
+
+**Jivo Koffie Instant Smooth Premium Coffee 100 Gm Na**
 
 ## Sold on
 - [[amazon]] — latest ₹249 (28.9% off)

@@ -1,34 +1,48 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-5-litre-jivo-chemicalfree-sunflower-oil-5-litre-5l
+display_name: Jivo Canola Cold Press Edible Oil 5 Litre Jivo Chemicalfree Sunflower Oil 5 Litre 5l
 platforms:
   - amazon
+  - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-06-04
+observations: 6
 min_price: 2138
-max_price: 2138
-latest_price: 2138
+max_price: 2225
+latest_price: 2225
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-now
 ---
 
 # jivo-canola-cold-press-edible-oil-5-litre-jivo-chemicalfree-sunflower-oil-5-litre-5l
 
 Up: [[skus-index]]
 
+**Jivo Canola Cold Press Edible Oil 5 Litre Jivo Chemicalfree Sunflower Oil 5 Litre 5l**
+
 ## Sold on
 - [[amazon]] — latest ₹2138 (28.7% off)
+- [[amazon-now]] — latest ₹2225 (25.8% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]] · [[Pune]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+
+## Price history (6 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,2138,3000,28.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110031,2225,3000,25.8,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110040,2225,3000,25.8,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110091,2225,3000,25.8,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,412101,2225,3000,25.8,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,412114,2225,3000,25.8,1
 ```
 
 ---

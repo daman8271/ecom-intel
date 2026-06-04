@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-universal-all-in-one-world-travel-adapter-surge-protector-converter-charger-plug-na
+display_name: Jivo Universal All In One World Travel Adapter Surge Protector Converter Charger Plug Na
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-universal-all-in-one-world-travel-adapter-surge-protector-converter-charger-plug-na
 
 Up: [[skus-index]]
+
+**Jivo Universal All In One World Travel Adapter Surge Protector Converter Charger Plug Na**
 
 ## Sold on
 - [[amazon]] — latest ₹299 (25.1% off)

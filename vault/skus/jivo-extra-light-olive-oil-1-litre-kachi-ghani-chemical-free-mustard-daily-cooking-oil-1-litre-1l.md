@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-1-litre-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l
+display_name: Jivo Extra Light Olive Oil 1 Litre Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-extra-light-olive-oil-1-litre-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l
 
 Up: [[skus-index]]
+
+**Jivo Extra Light Olive Oil 1 Litre Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹819 (34.7% off)

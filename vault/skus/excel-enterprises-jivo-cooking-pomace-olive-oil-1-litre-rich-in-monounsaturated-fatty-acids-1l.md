@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: excel-enterprises-jivo-cooking-pomace-olive-oil-1-litre-rich-in-monounsaturated-fatty-acids-1l
+display_name: Excel Enterprises Jivo Cooking Pomace Olive Oil 1 Litre Rich In Monounsaturated Fatty Acids 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # excel-enterprises-jivo-cooking-pomace-olive-oil-1-litre-rich-in-monounsaturated-fatty-acids-1l
 
 Up: [[skus-index]]
+
+**Excel Enterprises Jivo Cooking Pomace Olive Oil 1 Litre Rich In Monounsaturated Fatty Acids 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹415 (60.4% off)

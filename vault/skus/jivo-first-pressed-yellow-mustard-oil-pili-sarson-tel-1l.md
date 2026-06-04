@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-yellow-mustard-oil-pili-sarson-tel-1l
+display_name: Jivo First Pressed Yellow Mustard Oil Pili Sarson Tel 1l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-first-pressed-yellow-mustard-oil-pili-sarson-tel-1l
 
 Up: [[skus-index]]
+
+**Jivo First Pressed Yellow Mustard Oil Pili Sarson Tel 1l**
 
 ## Sold on
 - [[flipkart]] — latest ₹282 (17.1% off)

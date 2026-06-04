@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-5-litre-cooking-oil-for-daily-use-with-extra-light-olive-oil-2-litre-everyday-cooking-dressings-salads-soups-dips-marinades-5l
+display_name: Jivo Canola Cold Press Edible Oil 5 Litre Cooking Oil For Daily Use With Extra Light Olive Oil 2 Litre Everyday Cooking Dressings Salads Soups Dips Marinades 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-canola-cold-press-edible-oil-5-litre-cooking-oil-for-daily-use-with-extra-light-olive-oil-2-litre-everyday-cooking-dressings-salads-soups-dips-marinades-5l
 
 Up: [[skus-index]]
+
+**Jivo Canola Cold Press Edible Oil 5 Litre Cooking Oil For Daily Use With Extra Light Olive Oil 2 Litre Everyday Cooking Dressings Salads Soups Dips Marinades 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2359 (27.4% off)

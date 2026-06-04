@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-fizzy-flavoured-soda-750ml
+display_name: Jivo Fizzy Flavoured Soda 750ml
 platforms:
   - 
 first_seen: 2026-05-22
@@ -17,6 +18,8 @@ tags:
 # jivo-fizzy-flavoured-soda-750ml
 
 Up: [[skus-index]]
+
+**Jivo Fizzy Flavoured Soda 750ml**
 
 ## Sold on
 - [[]] — latest ₹55

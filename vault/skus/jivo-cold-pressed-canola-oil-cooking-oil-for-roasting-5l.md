@@ -1,6 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-cooking-oil-for-roasting-5l
+display_name: Jivo Cold Pressed Canola Oil Cooking Oil For Roasting 5l
 platforms:
   - flipkart
 first_seen: 2026-05-21
@@ -17,6 +18,8 @@ tags:
 # jivo-cold-pressed-canola-oil-cooking-oil-for-roasting-5l
 
 Up: [[skus-index]]
+
+**Jivo Cold Pressed Canola Oil Cooking Oil For Roasting 5l**
 
 ## Sold on
 - [[flipkart]] — latest ₹1342 (18.7% off)

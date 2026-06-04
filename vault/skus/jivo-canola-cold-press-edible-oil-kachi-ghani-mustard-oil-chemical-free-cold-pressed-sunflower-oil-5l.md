@@ -1,34 +1,95 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-kachi-ghani-mustard-oil-chemical-free-cold-pressed-sunflower-oil-5l
+display_name: Jivo Canola Cold Press Edible Oil Kachi Ghani Mustard Oil Chemical Free Cold Pressed Sunflower Oil 5l
 platforms:
   - amazon
+  - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-06-04
+observations: 53
 min_price: 3177
-max_price: 3177
-latest_price: 3177
+max_price: 3185
+latest_price: 3185
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-now
 ---
 
 # jivo-canola-cold-press-edible-oil-kachi-ghani-mustard-oil-chemical-free-cold-pressed-sunflower-oil-5l
 
 Up: [[skus-index]]
 
+**Jivo Canola Cold Press Edible Oil Kachi Ghani Mustard Oil Chemical Free Cold Pressed Sunflower Oil 5l**
+
 ## Sold on
 - [[amazon]] — latest ₹3177 (25.2% off)
+- [[amazon-now]] — latest ₹3185 (25.1% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Pune]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+
+## Price history (53 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,3177,4250,25.2,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110001,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110002,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110004,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110006,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110007,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110010,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110021,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110031,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110032,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110035,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110040,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110051,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110052,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110053,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110054,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110055,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110084,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110090,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110091,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110092,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110095,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121001,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121002,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121003,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201002,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201005,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201009,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122004,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302011,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302012,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302016,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302021,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302022,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302023,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302024,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302026,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302032,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303007,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303905,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700001,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700015,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700019,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700022,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700069,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700107,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400601,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,411003,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,411012,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,411020,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,411035,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,412101,3185,4250,25.1,1
+2026-06-04-1417,2026-06-04,amazon-now,Pune,412114,3185,4250,25.1,1
 ```
 
 ---
