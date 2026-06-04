@@ -51,9 +51,18 @@ const { chromium } = require('playwright-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
+const { loadBBCookies, DEFAULT_COOKIE_PATH } = require('./import_cookies');
 chromium.use(StealthPlugin());
 
 const OUTFILE = process.env.OUT_FILE || path.join(__dirname, 'result.json');
+// LOGGED-IN MEMBER MODE. We inject a transplanted bigbasket.com session
+// (secrets/bb_cookies.json, gitignored) so the listing-svc returns MEMBER prices
+// — what a logged-in customer actually pays — instead of logged-out public prices.
+// If the cookie file is present but the session is EXPIRED/invalid, we do NOT
+// silently fall back to guest prices: we write BB_SESSION_EXPIRED and emit an
+// empty result so review.py marks the run BROKEN and self-heal escalates.
+const COOKIE_PATH = process.env.BB_COOKIE_PATH || DEFAULT_COOKIE_PATH;
+const EXPIRED_MARKER = path.join(__dirname, 'secrets', 'BB_SESSION_EXPIRED');
 const BUCKET_ID = process.env.BB_BUCKET_ID || '32';
 const MAX_PAGES = parseInt(process.env.BB_MAX_PAGES || '5', 10);
 // Multiple queries, deduped, to maximise Jivo recall across categories (oils,
@@ -214,12 +223,58 @@ async function fetchQuery(page, query) {
   return all;
 }
 
+// Ask the site who we are. /ui-svc/v1/header/ returns member_info{id,email,...}
+// for a logged-in session; for a guest it has no real member id. This is the
+// authoritative live login check (cookies merely *present* is not enough — they
+// can be expired). Returns { member, info } where info is the trimmed member_info.
+async function verifyMember(page) {
+  const res = await page.evaluate(async () => {
+    try {
+      const r = await fetch('/ui-svc/v1/header/', {
+        headers: { accept: 'application/json, text/plain, */*', 'x-requested-with': 'XMLHttpRequest' },
+      });
+      if (r.status !== 200) return { __err: 'HTTP ' + r.status };
+      const j = await r.json();
+      const mi = j && j.member_info;
+      if (!mi || !mi.id) return { member: false };
+      return {
+        member: true,
+        id: mi.id, email: mi.email || '', mobile: mi.mobile_no || '',
+        name: mi.full_name || '', is_bbstar: !!mi.is_bbstar_member, is_vip: !!mi.is_vip,
+      };
+    } catch (e) { return { __err: e.message }; }
+  });
+  if (res && res.__err) { process.stderr.write(`[warn] member check failed: ${res.__err}\n`); return { member: false, info: null }; }
+  if (res && res.member) {
+    // Never print tokens; member id/name/flags are non-secret and prove the session.
+    process.stderr.write(`[member] logged in as id=${res.id} "${res.name}" bbstar=${res.is_bbstar} vip=${res.is_vip}\n`);
+    return { member: true, info: res };
+  }
+  return { member: false, info: null };
+}
+
 async function openSession(browser) {
+  // Load + inject the transplanted logged-in cookies (if the secrets file exists).
+  let cookies = null;
+  let cookiesPresent = false;
+  try {
+    const loaded = loadBBCookies(COOKIE_PATH);
+    cookies = loaded.cookies;
+    cookiesPresent = true;
+    process.stderr.write(`[cookies] loaded ${cookies.length} cookies from secrets (critical: ${loaded.haveCritical.join(',') || 'NONE'})\n`);
+    if (loaded.missing.length) process.stderr.write(`[cookies] WARNING missing critical: ${loaded.missing.join(',')}\n`);
+  } catch (e) {
+    process.stderr.write(`[cookies] no usable cookie file at ${COOKIE_PATH} (${e.message}) — running LOGGED OUT (guest prices)\n`);
+  }
+
   const ctx = await browser.newContext({
     userAgent: UA, locale: 'en-IN', timezoneId: 'Asia/Kolkata',
     viewport: { width: 1280, height: 900 },
     extraHTTPHeaders: { 'accept-language': 'en-IN,en;q=0.9' },
   });
+  if (cookies && cookies.length) {
+    try { await ctx.addCookies(cookies); } catch (e) { process.stderr.write(`[cookies] addCookies failed: ${e.message}\n`); }
+  }
   const page = await ctx.newPage();
   await ctx.route('**/*', (route) => {
     const t = route.request().resourceType();
@@ -239,13 +294,22 @@ async function openSession(browser) {
     await page.waitForTimeout(1500 + Math.random() * 1500);
   }
   if (ok) await page.waitForTimeout(2500); // let Akamai sensor + cookies settle
-  return { ctx, page, ok };
+
+  // Confirm the injected session is genuinely logged in (only when we supplied cookies).
+  let member = false;
+  let memberInfo = null;
+  if (ok && cookiesPresent) {
+    const v = await verifyMember(page);
+    member = v.member;
+    memberInfo = v.info;
+  }
+  return { ctx, page, ok, cookiesPresent, member, memberInfo };
 }
 
 // Write result.json + summary EXACTLY once. Called on the happy path, on the
 // watchdog timeout, and on any unhandled rejection — so run.sh always gets a
 // valid result.json (review.py then decides OK/BROKEN). Never throws upward.
-function writeResult(rows, sessionOk, t0) {
+function writeResult(rows, sessionOk, t0, opts = {}) {
   const inStock = rows.filter((r) => r.in_stock).length;
   const summary = {
     pincodes_total: 1,
@@ -256,6 +320,14 @@ function writeResult(rows, sessionOk, t0) {
     out_of_stock: rows.length - inStock,
     queries: QUERIES,
     session_ok: sessionOk,
+    // logged-in member context (member prices, not guest). member_id/email/etc are
+    // non-secret identity proof; the auth tokens themselves are never written here.
+    member: !!opts.member,
+    pricing_mode: opts.member ? 'member' : 'guest',
+    session_expired: !!opts.sessionExpired,
+    member_id: opts.memberInfo ? opts.memberInfo.id : null,
+    member_email: opts.memberInfo ? opts.memberInfo.email : null,
+    member_is_bbstar: opts.memberInfo ? opts.memberInfo.is_bbstar : null,
     wall_s: Math.round((Date.now() - t0) / 1000),
     captured_at: new Date().toISOString(),
   };
@@ -289,9 +361,42 @@ const watchdog = setTimeout(() => {
 
   let rows = [];
   let sessionOk = false;
+  let member = false;
+  let memberInfo = null;
   try {
-    const { ctx, page, ok } = await openSession(browser);
+    const { ctx, page, ok, cookiesPresent, member: isMember, memberInfo: mi } = await openSession(browser);
     sessionOk = ok;
+    member = isMember;
+    memberInfo = mi;
+
+    // EXPIRED-SESSION GUARD: cookies were supplied but we could NOT establish a
+    // logged-in member session. Two shapes seen in practice:
+    //   (a) homepage loaded 200 but /ui-svc header has no member -> token expired;
+    //   (b) homepage never reached 200 -> a stale/garbled auth cookie makes BB's
+    //       edge reject the request (or a generic Akamai block).
+    // Either way: do NOT publish guest prices mislabeled as member prices. Write the
+    // BB_SESSION_EXPIRED marker (a clear, actionable breadcrumb) and emit an empty
+    // result so review.py marks the run BROKEN and self-heal escalates (re-import
+    // cookies). The next successful member run clears the marker. This is the
+    // "never silently publish wrong data" guarantee.
+    if (cookiesPresent && !member) {
+      const reason = ok
+        ? 'homepage loaded but session is NOT logged in — auth token expired; re-import cookies'
+        : 'homepage did not load 200 while cookies were present — likely expired/garbled auth cookie (or an Akamai block); verify cookies + IP';
+      process.stderr.write(`[FATAL] no member session: ${reason} — refusing to publish guest prices as member prices\n`);
+      try {
+        fs.mkdirSync(path.dirname(EXPIRED_MARKER), { recursive: true });
+        fs.writeFileSync(EXPIRED_MARKER, `BigBasket member session FAILED at ${new Date().toISOString()}\nreason: ${reason}\nfix: re-export bigbasket.com cookies from a logged-in browser into secrets/bb_cookies.json (see SKILL.md "Refreshing the login cookies").\n`);
+      } catch (_) {}
+      try { await ctx.close(); } catch (_) {}
+      try { await browser.close(); } catch (_) {}
+      if (!DONE) { DONE = true; clearTimeout(watchdog); writeResult([], false, T0, { member: false, sessionExpired: true }); }
+      return;
+    }
+    // Valid member session (or, only if no cookie file exists at all, guest mode):
+    // clear any stale expiry marker so a recovered session doesn't keep alarming.
+    if (member) { try { fs.existsSync(EXPIRED_MARKER) && fs.unlinkSync(EXPIRED_MARKER); } catch (_) {} }
+
     if (ok) {
       const seen = new Set();
       for (const q of QUERIES) {
@@ -317,7 +422,7 @@ const watchdog = setTimeout(() => {
     try { await browser.close(); } catch (_) {}
   }
 
-  if (!DONE) { DONE = true; clearTimeout(watchdog); writeResult(rows, sessionOk, T0); }
+  if (!DONE) { DONE = true; clearTimeout(watchdog); writeResult(rows, sessionOk, T0, { member, memberInfo }); }
 })().catch((e) => {
   // Last-resort guard: any unhandled rejection (incl. failures in the result
   // write/IO path) must NOT exit non-zero, or run.sh's `set -e` aborts the run.
