@@ -3,30 +3,30 @@
   "run_id": "2026-06-04-1417",
   "captured_at": "2026-06-04T09:41:20.074Z",
   "verdict": "OK",
-  "rows": 8345,
-  "unique_skus": 90,
-  "pincodes_with_jivo": 258,
-  "baseline_rows": 4057,
+  "rows": 464,
+  "unique_skus": 17,
+  "pincodes_with_jivo": 90,
+  "baseline_rows": 464,
   "checks": [
     {
       "name": "non_zero_rows",
       "pass": true,
-      "detail": "8345 rows"
+      "detail": "464 rows"
     },
     {
       "name": "rows_above_floor",
       "pass": true,
-      "detail": "8345 rows (floor 20)"
+      "detail": "464 rows (floor 20)"
     },
     {
       "name": "rows_vs_baseline",
       "pass": true,
-      "detail": "8345 rows vs baseline 4057 (206%)"
+      "detail": "464 rows vs baseline 464 (100%)"
     },
     {
       "name": "skus_vs_baseline",
       "pass": true,
-      "detail": "90 unique SKUs vs baseline 78 (115%)"
+      "detail": "17 unique SKUs vs baseline 17 (100%)"
     },
     {
       "name": "prices_in_band",
@@ -56,7 +56,7 @@
     {
       "name": "pincode_coverage",
       "pass": true,
-      "detail": "258 pincodes w/ Jivo vs baseline 191 (135%)"
+      "detail": "90 pincodes w/ Jivo vs baseline 90 (100%)"
     },
     {
       "name": "schema_integrity",
@@ -66,7 +66,7 @@
     {
       "name": "freshness",
       "pass": true,
-      "detail": "captured_at 2026-06-04T09:41:20.074Z is 0.0h old (fresh)"
+      "detail": "captured_at 2026-06-04T09:41:20.074Z is 2.7h old (fresh)"
     },
     {
       "name": "price_staleness",
@@ -76,9 +76,9 @@
     {
       "name": "llm_judgment",
       "pass": true,
-      "detail": "OK \u2014 Real Jivo products (oils, edible oils), sane pricing (MRP\u2265sale), realistic 32\u201361% discounts in INR, 258 pincodes serviceable. 2\u00d7 baseline likely expanded coverage post-rebuild."
+      "detail": "OK \u2014 Authentic Jivo oils, sensible INR prices, MRP\u2265sale, 22\u201361% discounts valid, 464 rows match baseline, 90 pincodes serviceable."
     }
   ],
   "reasons": [],
-  "llm_note": "OK \u2014 Real Jivo products (oils, edible oils), sane pricing (MRP\u2265sale), realistic 32\u201361% discounts in INR, 258 pincodes serviceable. 2\u00d7 baseline likely expanded coverage post-rebuild."
+  "llm_note": "OK \u2014 Authentic Jivo oils, sensible INR prices, MRP\u2265sale, 22\u201361% discounts valid, 464 rows match baseline, 90 pincodes serviceable."
 }

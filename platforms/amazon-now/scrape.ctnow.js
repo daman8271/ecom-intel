@@ -277,9 +277,12 @@ async function checkSession(page) {
         await sleep(250 + Math.random() * 300);
       }
     }
-    // Serviceable ⇔ location resolved AND the ctnow page is genuinely Amazon-Now-branded.
-    // (Rows can still be 0 on a serviceable pincode if Jivo isn't in the local 10-min store.)
-    const serviceable = matched && nowPage;
+    // Serviceable ⇔ location resolved AND the ctnow page is genuinely Amazon-Now-branded
+    // AND at least one genuine instant-Now Jivo row was found. amazon_now_page alone is NOT
+    // fully reliable: a few pincodes render the Now page but only offer SCHEDULED slots (e.g.
+    // Mysuru 570016/570020) — those are not genuine instant Now, so requiring rows.length>0
+    // drops them and aligns the footprint to the true ~90 instant-Now pincodes (W5 tightening).
+    const serviceable = matched && nowPage && rows.length > 0;
     perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, amazon_now_page: nowPage, glow: res.glow, matched, total_cards: res.total, rows });
     process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}nowPage=${nowPage} svc=${serviceable} -> ${rows.length} jivo-now (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
     await sleep(350 + Math.random() * 450);
