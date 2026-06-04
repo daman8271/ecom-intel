@@ -78,14 +78,15 @@ COVERAGE_BROKEN_DROP = 0.75   # per-pincode: <25% of baseline coverage -> BROKEN
 BASELINE_WINDOW = 10          # rolling window of recent OK runs to average over
 
 # --- staleness alarm (hybrid search-API platforms, e.g. Zepto) --------------
-# Two independent signals that we may be recording a LAGGING catalogue rather than the
-# live price (the bug the owner reported on Zepto):
-#   (a) cache fraction: the scraper records per-product `cached` (true => the platform served
-#       it from its search cache, a stale-price risk). A high fraction => SUSPECT.
-#   (b) frozen price: a SKU whose modal price has not moved across many consecutive runs.
-#       Frozen alone is normal for a stable price, so we only ESCALATE when it is corroborated
-#       by a cache signal in this run; otherwise it is reported as information only.
-CACHE_STALE_SUSPECT_PCT = 50.0   # > this % of rows served from cache -> SUSPECT
+# Goal: flag when we may be recording a LAGGING catalogue rather than the live price (the bug the
+# owner reported on Zepto). The true lag signal is NOT the per-product `cached` flag — Zepto leaves
+# it false even when serving a stale snapshot — it is the per-store `is_realtime_model_data_fetched`:
+# when false (reason e.g. mongo_data_exists) the store was served from a NON-realtime snapshot that
+# can stick. So the alarm raises SUSPECT when a SKU's modal price is FROZEN across >= N runs WHILE a
+# high share of stores are on the snapshot path. The frozen branch reads data/<p>/history.csv and
+# works regardless of `cached`. A frozen price on the REALTIME path is a live, genuinely-stable price
+# (not flagged). Failure-proof; n/a for platforms that emit no freshness signal.
+NONREALTIME_GATE_PCT = 50.0      # >= this % of stores on the non-realtime snapshot path opens the gate
 STALE_FROZEN_RUNS = 9            # modal price identical across >= this many runs -> "frozen"
 
 # Markers that, if found in scraped text, mean we captured an error page.
@@ -299,8 +300,12 @@ def _frozen_skus(platform, rows, run_id):
         log(f"{platform}: frozen-sku history read failed ({e}); skipping frozen check")
         return []
 
-    # fold in THIS run's prices (overwrites if rerun under same run_id)
-    cur = by_run.setdefault(run_id, {})
+    # Fold in THIS run's prices. history.csv is written AFTER review, so normally run_id is absent
+    # here; but a self-heal re-run reuses the same run_id and it MAY already be present. Either way
+    # we REBUILD this run's entry from the current rows (authoritative) rather than appending, so we
+    # never double-count an existing run_id into a corrupted modal.
+    cur = {}
+    by_run[run_id] = cur
     for r in rows:
         c = r.get("canonical")
         s = num(r.get("sale"))
@@ -321,49 +326,72 @@ def _frozen_skus(platform, rows, run_id):
     return sorted(frozen)
 
 
+def _pct_non_realtime(data, fresh):
+    """
+    Share of serviceable stores served from the NON-realtime (snapshot) path. Prefer the
+    scraper's aggregate; else derive from perPin store markers. Returns (pct, reason_str).
+    """
+    reasons = (fresh or {}).get("realtime_not_enabled_reasons") or {}
+    if fresh and isinstance(fresh.get("pct_non_realtime"), (int, float)):
+        pct = float(fresh["pct_non_realtime"])
+    else:
+        served = nonrt = 0
+        derived = {}
+        for p in data.get("perPin", []) or []:
+            if not p.get("serviceable"):
+                continue
+            served += 1
+            m = ((p.get("freshness") or {}).get("markers")) or {}
+            if m.get("is_realtime_model_data_fetched") is False:
+                nonrt += 1
+                r = m.get("realtime_model_not_enabled_reason")
+                if r:
+                    derived[r] = derived.get(r, 0) + 1
+        pct = (100.0 * nonrt / served) if served else 0.0
+        if not reasons:
+            reasons = derived
+    reason_str = ", ".join(f"{k}={v}" for k, v in sorted(reasons.items())) if reasons else ""
+    return pct, reason_str
+
+
 def staleness_alarm(data, rows, platform, run_id):
     """
-    Returns (ok, detail, severity). ok=False + severity drive the verdict.
-    No cache/freshness signal in the data => n/a (ok, informational).
+    Returns (ok, detail, severity). ok=False drives a SUSPECT verdict. No freshness signal in
+    the data => n/a (ok). SUSPECT when a SKU's modal price is FROZEN across >= STALE_FROZEN_RUNS
+    runs AND a high share of stores are on the non-realtime snapshot path (the stuck-snapshot
+    case). The frozen check works regardless of the per-product `cached` flag.
     """
     summary = data.get("summary", {}) or {}
     fresh = summary.get("freshness") if isinstance(summary.get("freshness"), dict) else None
-    has_cached_field = any("cached" in r for r in rows[: min(50, len(rows))])
-    if not fresh and not has_cached_field:
-        return True, "no cache/freshness signal in data (n/a for this platform)", "suspect"
+    has_signal = bool(fresh) or any(
+        ("cached" in r) for r in rows[: min(50, len(rows))]) or bool(data.get("perPin"))
+    if not has_signal:
+        return True, "no freshness signal in data (n/a for this platform)", "suspect"
 
-    if fresh and isinstance(fresh.get("pct_cached"), (int, float)):
-        pct_cached = float(fresh["pct_cached"])
-        n_cached = fresh.get("rows_cached")
-    else:
-        n_cached = sum(1 for r in rows if r.get("cached"))
-        pct_cached = (100.0 * n_cached / len(rows)) if rows else 0.0
-
+    pct_nonrt, reason_str = _pct_non_realtime(data, fresh)
+    snapshot_served = pct_nonrt >= NONREALTIME_GATE_PCT
     frozen = _frozen_skus(platform, rows, run_id)
 
-    # (a) broad cache serving -> SUSPECT on its own
-    if pct_cached > CACHE_STALE_SUSPECT_PCT:
-        return (False,
-                f"{pct_cached:.1f}% of rows served from search cache (cached=true, "
-                f"n={n_cached}); prices may lag the live catalogue"
-                + (f"; {len(frozen)} SKU(s) also price-frozen across {STALE_FROZEN_RUNS} runs: "
-                   f"{', '.join(frozen[:5])}" if frozen else ""),
-                "suspect")
-
-    # (b) frozen price corroborated by ANY cache serving this run -> SUSPECT
-    if frozen and pct_cached > 0:
+    # SUSPECT: price stuck across many runs WHILE served from the snapshot path -> likely stale.
+    if frozen and snapshot_served:
         return (False,
                 f"{len(frozen)} SKU(s) price-frozen across {STALE_FROZEN_RUNS} runs while "
-                f"{pct_cached:.1f}% of rows are cache-served — possible stale price: "
-                f"{', '.join(frozen[:5])}",
+                f"{pct_nonrt:.0f}% of stores are on the non-realtime snapshot path"
+                f"{(' (' + reason_str + ')') if reason_str else ''} — prices may be stale: "
+                f"{', '.join(frozen[:6])}",
                 "suspect")
 
-    # otherwise: report state but pass. Frozen-only (no cache signal) is information.
-    detail = f"{pct_cached:.1f}% rows cache-served (<= {CACHE_STALE_SUSPECT_PCT:.0f}% ok)"
+    # Pass, but report state. Frozen on the REALTIME path = live & genuinely stable (not stale).
+    bits = [f"{pct_nonrt:.0f}% stores non-realtime/snapshot"
+            + (f" ({reason_str})" if reason_str else "")]
     if frozen:
-        detail += (f"; {len(frozen)} SKU(s) price-stable across {STALE_FROZEN_RUNS} runs "
-                   f"(no cache signal, treated as genuinely stable): {', '.join(frozen[:5])}")
-    return True, detail, "suspect"
+        bits.append(
+            f"{len(frozen)} SKU(s) price-stable across {STALE_FROZEN_RUNS} runs "
+            + ("(snapshot path)" if snapshot_served
+               else "(realtime path -> live, treated as genuinely stable)"))
+    else:
+        bits.append(f"no SKU frozen across {STALE_FROZEN_RUNS} runs")
+    return True, "; ".join(bits), "suspect"
 
 
 def run_checks(data, rows, per_pincode, expected, run_id, platform):
@@ -853,8 +881,19 @@ def main(argv):
     }
     write_verdict(platform, run_id, verdict_out)
 
-    # Update the rolling baseline ONLY on OK runs.
-    if verdict == "OK":
+    # Update the rolling baseline on OK runs, AND on runs that are SUSPECT *only* because of the
+    # price-staleness alarm: those have healthy row/SKU/coverage counts (staleness is orthogonal to
+    # the row-count baseline), so excluding them would freeze the baseline whenever a price sits
+    # legitimately stable on the snapshot path. Other platforms never emit a price_staleness reason,
+    # so this branch never changes their behaviour.
+    staleness_only = (
+        verdict == "SUSPECT"
+        and bool(reasons)
+        and all(r.startswith("price_staleness:") for r in reasons)
+    )
+    if verdict == "OK" or staleness_only:
+        if staleness_only:
+            log(f"{platform} {run_id}: SUSPECT (staleness-only) — still seeding baseline")
         update_baseline(platform, {
             "run_id": run_id,
             "captured_at": captured_at,

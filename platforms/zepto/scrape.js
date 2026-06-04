@@ -22,8 +22,10 @@
 // price), and it already carries the structured per-tier price in pricingData. So the fix is:
 //   (1) record the price from pricingData.pricingEntityPrices[tier] (the exact app-rendered
 //       tier price) instead of the ambiguous top-level fallback chain;
-//   (2) capture per-product `cached` + response-level realtime markers; and
-//   (3) raise a staleness alarm (tools/review.py) when prices come from cache / sit frozen.
+//   (2) capture the per-store realtime signal (is_realtime_model_data_fetched / reason, the true
+//       lag indicator — NOT the always-false `cached` flag) into summary.freshness; and
+//   (3) raise a staleness alarm (tools/review.py): SUSPECT when a SKU's modal price is frozen
+//       across many runs while stores are served from the non-realtime (snapshot) path.
 // ---------------------------------------------------------------------------
 
 const { execFile } = require('child_process');
@@ -53,11 +55,22 @@ const MARKETPLACE = process.env.ZEPTO_MARKETPLACE || 'SUPER_SAVER';
 // --- price/pack helpers (same conventions as the other platforms) ---
 function parseVolMl(pack) {
   if (!pack) return null;
-  const m = pack.toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);
-  if (!m) return null;
-  const n = parseFloat(m[1]); const u = m[2];
-  if (u === 'ml' || u === 'g') return n;
-  if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
+  const s = pack.toLowerCase();
+  const toMl = (n, u) => {
+    if (u === 'ml' || u === 'g') return n;
+    if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'litres' || u === 'kg') return n * 1000;
+    return null;
+  };
+  // Multiplier packs ("combos"): "N L X M" / "N ml x M" => N*M of the unit (e.g. 1 L X 2 = 2 L).
+  // Must run BEFORE the single-quantity match, which would otherwise read only the first "1 L".
+  let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g)\b\s*[x×]\s*([\d.]+)/);
+  if (m) { const base = toMl(parseFloat(m[1]), m[2]); return base != null ? base * parseFloat(m[3]) : null; }
+  // Additive packs: "A+B L" / "A + B Litres" => (A+B) of the unit (e.g. 1+1 Litres = 2 L).
+  m = s.match(/([\d.]+)\s*\+\s*([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g)\b/);
+  if (m) { return toMl(parseFloat(m[1]) + parseFloat(m[2]), m[3]); }
+  // Single quantity: "1 L", "200 ml", "1 pc (1 L)".
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g)\b/);
+  if (m) return toMl(parseFloat(m[1]), m[2]);
   return null;
 }
 function canonical(name, pack) {
@@ -254,14 +267,23 @@ async function pool(items, n, fn) {
   const t0 = Date.now();
   const perPin = await pool(PINCODES, CONCURRENCY, scrapeOne);
   const allRows = perPin.flatMap(p => p.rows);
-  // Freshness aggregate for the review/staleness alarm: how much of the catalogue we recorded
-  // was served from Zepto's search cache (cached=true) vs fetched live. A high pct_cached means
-  // prices may be lagging the live catalogue — exactly the symptom the owner reported.
+  // Freshness aggregate for the review/staleness alarm. The REAL lag signal is NOT the per-product
+  // `cached` flag (Zepto leaves it false even when serving a stale MongoDB snapshot) — it is the
+  // per-store `is_realtime_model_data_fetched`: when false (reason e.g. mongo_data_exists) the store
+  // was served from a NON-realtime snapshot that can lag the live catalogue. We aggregate the share
+  // of serviceable stores served that way (pct_non_realtime) plus the reason histogram; the review
+  // step uses this to GATE the frozen-price alarm. (pct_cached kept too, for completeness.)
   const cachedRows = allRows.filter(r => r.cached).length;
+  const servStores = perPin.filter(p => p.serviceable);
+  let storesNonRealtime = 0;
   const reasonCounts = {};
-  for (const p of perPin) {
-    const reason = p.freshness && p.freshness.markers && p.freshness.markers.realtime_model_not_enabled_reason;
-    if (reason) reasonCounts[reason] = (reasonCounts[reason] || 0) + 1;
+  for (const p of servStores) {
+    const m = (p.freshness && p.freshness.markers) || {};
+    if (m.is_realtime_model_data_fetched === false) {
+      storesNonRealtime++;
+      const reason = m.realtime_model_not_enabled_reason;
+      if (reason) reasonCounts[reason] = (reasonCounts[reason] || 0) + 1;
+    }
   }
   const summary = {
     pincodes_total: PINCODES.length,
@@ -276,6 +298,9 @@ async function pool(items, n, fn) {
       rows_total: allRows.length,
       rows_cached: cachedRows,
       pct_cached: allRows.length ? Math.round((cachedRows / allRows.length) * 1000) / 10 : 0,
+      stores_total: servStores.length,
+      stores_non_realtime: storesNonRealtime,
+      pct_non_realtime: servStores.length ? Math.round((storesNonRealtime / servStores.length) * 1000) / 10 : 0,
       realtime_not_enabled_reasons: reasonCounts,
     },
   };
