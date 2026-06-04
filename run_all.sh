@@ -1,35 +1,31 @@
 #!/usr/bin/env bash
-# run_all.sh — one cron-triggered sweep: scrape every LIVE platform IN PARALLEL,
+# run_all.sh — one cron-triggered sweep: scrape every LIVE platform SERIALLY (one at a time),
 # then run the self-heal pass.
 #
-# Parallel (not sequential): the VPS has headroom (~15G RAM / 4 CPU), so we launch
-# all platforms at once to finish the window faster. Each ./run.sh is self-contained
-# (scrape -> excel -> predict -> review -> vault -> telegram -> git push) and
-# best-effort; their git pushes are serialized by an flock inside run.sh so the
-# concurrent commits don't collide. Per-platform stdout goes to logs/run-<p>.out.
-#
-# amazon-fresh and amazon-now are BOTH launched here, but run.sh holds a shared
-# .amazon-account.lock around their scrape step so the two (which share one Amazon
-# account + server-side delivery location) never scrape concurrently — one waits for
-# the other. They share a single Chromium slot, so peak concurrency is unchanged.
+# SERIAL (not parallel) — accuracy over speed. Launching all 9 at once STARVED each scraper
+# (CPU/network contention -> thin, partial data the hardened review.py correctly rejects) and
+# made the 3 Amazon storefronts thrash their one shared account/server-side location. One
+# platform at a time: each gets full resources, re-resolves its store cleanly (full coverage),
+# and the Amazon trio can never overlap. Slower wall-clock (~1-1.5h), but correct + complete —
+# a 2x/day window (10:00 + 15:00, 5h apart) has the headroom. Each ./run.sh is self-contained
+# (scrape -> excel -> predict -> review -> vault -> telegram[verdict-gated] -> git push);
+# per-platform stdout goes to logs/run-<p>.out.
 set -uo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
-echo "[$(date '+%F %T')] run_all: START (parallel)"
-pids=()
-for P in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket; do
-  echo "[$(date '+%F %T')] run_all: launching $P"
-  # AUTO-HEAL HOOK: after this platform's scrape pipeline finishes, the guardian
-  # re-evaluates the fresh result.json (CALLs tools/review.py for the shared checks
-  # + runs its independent 11-bug-class deep checks). On a BROKEN verdict it
-  # QUARANTINEs (keeps last-good, nothing published — run.sh's Telegram is already
-  # verdict-gated), SELF-HEALs (bounded ./run.sh retries via --heal), and if still
-  # broken ALERTs the owner with the specific diagnosis. Best-effort `|| true` so a
-  # guardian hiccup can never fail the sweep. Still fully parallel across platforms.
-  ( ./run.sh "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1 &
-  pids+=("$!")
+echo "[$(date '+%F %T')] run_all: START (serial — accuracy first)"
+# Order: quick/light platforms first so their clean reports land early; the Amazon trio runs
+# consecutively (serial guarantees no shared-account overlap); blinkit LAST (slowest — its
+# per-pincode store re-resolution is intentionally patient for full clean coverage).
+for P in  flipkart-minutes flipkart zepto bigbasket amazon amazon-fresh amazon-now blinkit; do
+  echo "[$(date '+%F %T')] run_all: running $P (serial)"
+  # AUTO-HEAL HOOK: after this platform's pipeline, the guardian re-evaluates the fresh
+  # result.json (CALLs tools/review.py for the shared checks + its independent 11-bug-class deep
+  # checks). On BROKEN -> QUARANTINE (keep last-good, nothing published — Telegram is already
+  # verdict-gated) + bounded --heal retry + owner alert. Best-effort `|| true` so a guardian
+  # hiccup can never fail the sweep.
+  ( ./run.sh "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1
 done
-for pid in "${pids[@]}"; do wait "$pid" || true; done
 echo "[$(date '+%F %T')] run_all: all platforms done -> self-heal pass"
 # Backstop: the legacy self-heal pass still runs (it owns the staleness / row-collapse
 # signals the inline guardian leaves to it). It runs AFTER the wait above, so the
