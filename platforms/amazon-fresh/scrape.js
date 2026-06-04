@@ -83,6 +83,31 @@ function numPrice(s) {
   return Number.isFinite(n) ? n : null;
 }
 
+// COMBO-PACK VOLUME (2026-06-04). parseVolMl()/packFromTitle() see only the FIRST number, so a
+// combo title like "Jivo Canola ... 1+1 Litres" collapses to "1 L" -> vol 1000 ml, ~doubling
+// Rs/L (reported 509 vs correct ~254). Parse the combo straight from the raw title FIRST:
+//   "A+B <unit>" (any count) => (A+B+…) units;  "N <unit> x M" / "M x N <unit>" => N*M units.
+// Returns ml, or null if no combo pattern (caller then falls back to single-pack parseVolMl).
+function comboVolMl(text) {
+  if (!text) return null;
+  const t = text.toLowerCase();
+  const U = '(ml|l|ltr|litres?|kg|gms?|g)';
+  const toMl = (n, u) => (u === 'ml' || u === 'g') ? n : n * 1000; // l/ltr/litre/kg -> ml
+  // "1+1 litres", "500 + 500 ml", "1+1+1 l"
+  let m = t.match(new RegExp('([\\d.]+(?:\\s*\\+\\s*[\\d.]+)+)\\s*' + U + '\\b'));
+  if (m) {
+    const sum = m[1].split('+').reduce((s, x) => s + (parseFloat(x) || 0), 0);
+    return toMl(sum, m[2]);
+  }
+  // "1 l x 2", "1l × 2"
+  m = t.match(new RegExp('([\\d.]+)\\s*' + U + '\\s*[x×*]\\s*([\\d.]+)\\b'));
+  if (m) return toMl(parseFloat(m[1]) * parseFloat(m[3]), m[2]);
+  // "2 x 1 l", "2 × 1l"
+  m = t.match(new RegExp('([\\d.]+)\\s*[x×*]\\s*([\\d.]+)\\s*' + U + '\\b'));
+  if (m) return toMl(parseFloat(m[1]) * parseFloat(m[2]), m[3]);
+  return null;
+}
+
 // FRESH-PRESENCE GATE (2026-06-01). The i=freshstore search BACK-FILLS its page with
 // ordinary Amazon marketplace listings (multi-day courier promises) when the real Fresh
 // catalogue is thin or Fresh is NOT serviceable at the pincode. Those are NOT Fresh prices
@@ -163,7 +188,10 @@ function toRow(card, rec) {
   const sale = numPrice(card.price);
   let mrp = numPrice(card.mrp);
   if (mrp != null && sale != null && mrp < sale) mrp = null;
-  const vol = parseVolMl(pack);
+  // Combo packs ("1+1 Litres", "1 L x 2") carry their TOTAL volume in the title; read it from
+  // there first so Rs/L isn't ~doubled, falling back to the single-pack parse. (canonical()
+  // still uses pack — the combo/single canonical merge is a separate, deferred fix.)
+  const vol = comboVolMl(name) || comboVolMl(fullTitle) || parseVolMl(pack);
   return {
     city: rec.city, pincode: rec.pincode, locality: rec.locality,
     store_id: null, store_name: 'Amazon Fresh',
