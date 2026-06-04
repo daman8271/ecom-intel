@@ -56,6 +56,26 @@ const CAT_QUERIES = (process.env.ZEPTO_CATEGORY_QUERIES !== undefined
   ? process.env.ZEPTO_CATEGORY_QUERIES : 'jivo olive oil,jivo oil 5 litre,jivo 5l,jivo 2l,jivo pomace')
   .split(',').map(s => s.trim()).filter(Boolean);
 const CAT_MAX_PAGES = parseInt(process.env.ZEPTO_CAT_MAX_PAGES || '6', 10);
+// SEED VARIANTS — the catalog-completeness fix (2026-06-04, zcat).
+// Zepto's search (Algolia) HIDES whole pack-size variants: it collapses a product's pack-size
+// siblings into ONE representative variant (variant-rollup) and the bare-brand query is in-stock-
+// gated. So large/OOS/rollup-hidden SKUs never surface in search under ANY query — e.g. the owner's
+// Kachi Ghani Mustard 5 L (in stock, MRP 1250), Sunflower 5 L, Canola 5 L, Gold blend, Rice Bran,
+// So-Olive, etc. We recover them deterministically: jivo_variants.json holds their (catalog-global)
+// variantIds, and for each serviceable store we hit the PDP route get_page?page_type=PDP&product_
+// variant_id=<id> (Agent-1's endpoint) for AUTHORITATIVE per-store price + availableQuantity, incl.
+// OOS. variantIds come from the public zepto.com /pvid/<id> index + live PDP verification (no proxy,
+// no login; the gateway PDP route is reachable from the DC IP). Rows merge with the search rows and
+// dedup BY VARIANT ID (PDP wins — it also corrects search's wrong oos:true / stale price on the few
+// large variants search does surface, e.g. Pomace 5 L). Disable with ZEPTO_SEED_VARIANTS=0.
+const SEED_ENABLED = process.env.ZEPTO_SEED_VARIANTS !== '0';
+let SEED_VARIANTS = [];
+if (SEED_ENABLED) {
+  try {
+    const sv = JSON.parse(fs.readFileSync(__dirname + '/jivo_variants.json', 'utf8'));
+    SEED_VARIANTS = (sv && Array.isArray(sv.variants) ? sv.variants : []).filter(v => v && v.variantId);
+  } catch (e) { process.stderr.write(`[warn] seed variants not loaded: ${e.message}\n`); }
+}
 const GW = 'https://bff-gateway.zeptonow.com';
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36';
 const COMPAT = 'CONVENIENCE_FEE,RAIN_FEE,EXTERNAL_COUPONS,STANDSTILL,BUNDLE,MULTI_SELLER_ENABLED,PIP_V1,ROLLUPS,SCHEDULED_DELIVERY,SAMPLING_ENABLED,HOMEPAGE_V2,NEW_ETA_BANNER,SUPER_SAVER:1,PROMO_CASH:0,24X7_ENABLED_V1,HP_V4_FEED,NEW_ROLLUPS_ENABLED,PLP_ON_SEARCH,DYNAMIC_FILTERS,NEW_FEE_STRUCTURE,NEW_BILL_INFO,SUPERSTORE_V1,MARKETPLACE_REPLACEMENT';
@@ -208,6 +228,72 @@ async function searchPage(storeId, lat, lon, query, pageNumber) {
   return { ok: true, items, markers: findMarkers(j) };
 }
 
+// Fetch a single variant's PDP (the catalog-completeness recovery path). Returns the productInfo
+// object { product, productVariant, storeProduct } or null. A 404 ("Product not found in store")
+// means this store does not carry the variant -> null (no row, correctly). 429-backoff like search.
+async function fetchPdp(storeId, lat, lon, variantId) {
+  const url = `${GW}/lms/api/v2/get_page?page_type=PDP&product_variant_id=${variantId}`
+    + `&latitude=${lat}&longitude=${lon}&store_id=${storeId}`;
+  let r;
+  for (let attempt = 0; attempt < 4; attempt++) {
+    const args = ['-s', '--max-time', '30', '-w', '\n__HTTP__%{http_code}',
+      ...hdrArgs(commonHeaders(storeId, lat, lon)), url];
+    r = await curl(args);
+    if (r.status !== '429') break;
+    await new Promise(res => setTimeout(res, 1500 * (attempt + 1) + Math.random() * 1500));
+  }
+  if (r.status !== '200') return null;          // 404 = not carried at this store; other = transient
+  let j; try { j = JSON.parse(r.body); } catch { return null; }
+  const widgets = (j.pageLayout && j.pageLayout.widgets) || [];
+  const w = widgets.find(x => x && x.widgetType === 'PRODUCT_INFO');
+  const pi = w && w.data && w.data.productInfo;
+  return (pi && pi.productVariant) ? pi : null;
+}
+
+// Authoritative per-tier price from the PDP storeProduct (same shape/precedence as tierPrice for
+// search, but the pricingData lives under storeProduct here).
+function tierPriceSP(sp, mk) {
+  const pe = (sp.pricingData && sp.pricingData.pricingEntityPrices) || [];
+  const hit = pe.find(x => x && x.pricingEntity === mk && x.discountedSellingPrice != null);
+  return hit ? hit.discountedSellingPrice : null;
+}
+
+// Build a row from a PDP productInfo. Stock is authoritative: availableQuantity > 0 == in stock
+// (there is NO outOfStock bool in the PDP payload). OOS variants keep their listed price but are
+// flagged in_stock=0 (build_excel's cheapest picker / review's price-band check both skip OOS rows).
+function pdpToRow(pi, rec, storeId, seed) {
+  const p = pi.product || {}, v = pi.productVariant || {}, sp = pi.storeProduct || {};
+  const name = p.name || (seed && seed.name) || '';
+  const pack = v.formattedPacksize || (seed && seed.pack) || '';
+  const mrp = sp.mrp != null ? sp.mrp / 100 : null;
+  let sale = tierPriceSP(sp, MARKETPLACE);
+  let priceSource = sale != null ? 'pdp:pricingData:' + MARKETPLACE : null;
+  if (sale == null && MARKETPLACE === 'SUPER_SAVER' && sp.superSaverSellingPrice != null) {
+    sale = sp.superSaverSellingPrice; priceSource = 'pdp:superSaverSellingPrice';
+  }
+  if (sale == null && sp.discountedSellingPrice != null) {
+    sale = sp.discountedSellingPrice; priceSource = 'pdp:discountedSellingPrice';
+  }
+  const saleR = sale != null ? sale / 100 : null;
+  const vol = volFromVariant(v, pack);
+  const inStock = (sp.availableQuantity != null && sp.availableQuantity > 0) ? 1 : 0;
+  return {
+    city: rec.city, pincode: rec.pincode, locality: rec.locality,
+    store_id: storeId, store_name: '',
+    product_id: (p && p.id) || (seed && seed.productId) || null, variant_id: v.id || (seed && seed.variantId) || null,
+    sku_raw: name, canonical: canonical(name, vol), pack,
+    vol_ml: vol, sale: saleR, mrp,
+    discount_pct: (mrp && saleR && mrp >= saleR) ? Math.round(((mrp - saleR) / mrp) * 1000) / 10
+      : (sp.discountPercent != null ? sp.discountPercent : null),
+    per_litre: (vol && saleR) ? Math.round((saleR / (vol / 1000)) * 100) / 100 : null,
+    eta_min: null,
+    in_stock: inStock,
+    cached: false,            // PDP is a live per-store fetch, never the search cache
+    price_source: priceSource,
+    source: 'pdp_seed',       // provenance: recovered via the seed-variant PDP pass (vs search)
+  };
+}
+
 // Authoritative per-tier price. Zepto's response carries pricingData.pricingEntityPrices —
 // an explicit { pricingEntity, discountedSellingPrice } per storefront tier (SUPER_SAVER /
 // ULTRA_SAVER / ...). That is the structured price the app actually renders for the selected
@@ -309,10 +395,33 @@ async function scrapeOne(rec) {
       for (const cq of CAT_QUERIES) {
         await collectQuery(rec, storeId, cq, { maxPages: CAT_MAX_PAGES, earlyBreak: false }, seenCanon, rows);
       }
+      // 3) SEED-VARIANT PDP PASS — recover rollup-hidden / OOS / large-pack variants that Zepto's
+      //    search never emits under ANY query (Mustard 5 L, Sunflower 5 L, Canola 5 L, Gold blend,
+      //    Rice Bran, So-Olive, …). For each known variantId hit the PDP route for authoritative
+      //    per-store price + availableQuantity (incl. OOS). Dedup BY VARIANT ID, PDP overriding any
+      //    search row for the same variant (PDP also corrects search's wrong oos/stale price on the
+      //    few large variants search does surface, e.g. Pomace 5 L).
+      if (SEED_VARIANTS.length) {
+        const byVid = new Map();
+        for (const r of rows) if (r.variant_id) byVid.set(r.variant_id, r);
+        for (const seed of SEED_VARIANTS) {
+          const pi = await fetchPdp(storeId, rec.lat, rec.lon, seed.variantId);
+          if (!pi) continue;                                   // 404 -> not carried at this store
+          const nm = (pi.product && pi.product.name) || seed.name || '';
+          const br = ((pi.product && pi.product.brand) || '').toLowerCase();
+          if (br !== 'jivo' && !/\bjivo\b/i.test(nm)) continue; // safety: only genuine Jivo
+          const row = pdpToRow(pi, rec, storeId, seed);
+          const existing = byVid.get(seed.variantId);
+          if (existing) Object.assign(existing, row);           // PDP wins (authoritative)
+          else { rows.push(row); byVid.set(seed.variantId, row); }
+          await new Promise(r => setTimeout(r, 220 + Math.random() * 300));
+        }
+      }
     }
   } catch (e) { process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`); }
   const cachedRows = rows.filter(r => r.cached).length;
-  process.stderr.write(`[ok] ${rec.city} ${rec.pincode} serviceable=${serviceable} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${storeId || 'n/a'}${cachedRows ? ` CACHED=${cachedRows}` : ''}\n`);
+  const seedRows = rows.filter(r => r.source === 'pdp_seed').length;
+  process.stderr.write(`[ok] ${rec.city} ${rec.pincode} serviceable=${serviceable} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${storeId || 'n/a'}${seedRows ? ` SEED=${seedRows}` : ''}${cachedRows ? ` CACHED=${cachedRows}` : ''}\n`);
   return { ...rec, store_id: storeId, store_name: '', serviceable, rows, freshness: { cached_rows: cachedRows, markers } };
 }
 
@@ -357,6 +466,10 @@ async function pool(items, n, fn) {
     pincodes_with_jivo: perPin.filter(p => p.rows.length > 0).length,
     total_rows: allRows.length,
     unique_skus: new Set(allRows.map(r => r.canonical)).size,
+    rows_in_stock: allRows.filter(r => r.in_stock).length,
+    rows_oos: allRows.filter(r => !r.in_stock).length,
+    rows_seed_pdp: allRows.filter(r => r.source === 'pdp_seed').length,
+    skus_via_seed: new Set(allRows.filter(r => r.source === 'pdp_seed').map(r => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
     captured_at: new Date().toISOString(),
     marketplace: MARKETPLACE,

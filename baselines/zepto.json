@@ -2,75 +2,13 @@
   "platform": "zepto",
   "samples": [
     {
-      "run_id": "2026-05-30-1600",
-      "captured_at": "2026-05-30T10:33:50.337Z",
-      "rows": 592,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 111
-    },
-    {
-      "run_id": "2026-05-31-0900",
-      "captured_at": "2026-05-31T03:33:59.854Z",
-      "rows": 607,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 111
-    },
-    {
-      "run_id": "2026-05-31-1200",
-      "captured_at": "2026-05-31T06:34:00.834Z",
-      "rows": 607,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 112
-    },
-    {
-      "run_id": "2026-05-31-1600",
-      "captured_at": "2026-05-31T10:33:59.896Z",
-      "rows": 622,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 112
-    },
-    {
-      "run_id": "2026-06-01-0900",
-      "captured_at": "2026-06-01T03:34:04.445Z",
-      "rows": 656,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 113
-    },
-    {
-      "run_id": "2026-06-01-1200",
-      "captured_at": "2026-06-01T06:34:09.014Z",
-      "rows": 646,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 112
-    },
-    {
-      "run_id": "2026-06-01-1600",
-      "captured_at": "2026-06-01T10:34:19.270Z",
-      "rows": 647,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 112
-    },
-    {
-      "run_id": "2026-06-01-1754",
-      "captured_at": "2026-06-01T12:26:36.714Z",
-      "rows": 574,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 95
-    },
-    {
-      "run_id": "2026-06-03-1401",
-      "captured_at": "2026-06-03T08:34:20.015Z",
-      "rows": 610,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 97
-    },
-    {
-      "run_id": "2026-06-04-1417",
-      "captured_at": "2026-06-04T08:51:18.185Z",
-      "rows": 670,
-      "unique_skus": 12,
-      "pincodes_with_jivo": 113
+      "run_id": "2026-06-04-2118",
+      "captured_at": "2026-06-04T15:48:04.719Z",
+      "rows": 1277,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 75
     }
   ],
-  "updated_at": "2026-06-04T08:51:59.812219+00:00"
+  "updated_at": "2026-06-04T15:50:33.200390+00:00",
+  "_note": "Baseline RESET 2026-06-04 (zcat fix): scraper now captures the FULL Jivo catalog (12->23 SKUs) incl. OOS/rollup-hidden variants via the get_page PDP seed pass, so rows ~doubled. Pre-fix 12-SKU/~623-row samples were dropped as obsolete; cron refills the rolling window from here."
 }
