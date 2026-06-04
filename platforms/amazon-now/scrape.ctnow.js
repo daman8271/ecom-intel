@@ -8,11 +8,17 @@
 //   ctnow @ Bengaluru 560034 -> 44 Jivo SKUs, page says "Amazon Now", real "in 10 minutes"
 //   ETAs; i=nowstore @ same pincode -> 0 Jivo (empty). See ROOTCAUSE-AmazonNow-2026-06-01.md.
 //
-// NOW vs MARKETPLACE inside the storefront: every genuine Now offer carries a blue speed
-// BADGE (`.udm-badge-block` / `.dex-text-slanted-blue-highlight`) reading "in 10 minutes",
-// "Overnight", "Tomorrow", "Today …". Cards WITHOUT that badge (plain "FREE delivery Thu,
-// 4 Jun") are ordinary marketplace listings surfaced in the same results and are NOT Amazon
-// Now — they are dropped. We record the speed tier per row in `now_eta`.
+// NOW vs FRESH/MARKETPLACE inside the storefront (CORRECTED 2026-06-04):
+//   * The pincode is Now-serviceable ONLY if the page is genuinely Amazon-Now-branded
+//     (`amazonNowPage` — "Continue shopping on Amazon Now" / <img alt="Amazon Now">). Where
+//     it's absent there is NO Now storefront (e.g. Chandigarh, Ludhiana) — proven live.
+//   * A blue speed BADGE alone is NOT proof of Now: the IDENTICAL "Tomorrow"/"Overnight"/
+//     "Today" chips render on the SAME ASINs in non-Now cities, where they are Amazon FRESH /
+//     generic scheduled slots. Only an INSTANT minute promise ("in N minutes" → tier '10 min')
+//     is exclusive to genuine Now (0/238 non-Now pincodes ever showed it).
+//   * So a row is kept ONLY when amazonNowPage AND the card is an instant-minute tier; every
+//     scheduled tier (tomorrow/today-window/overnight/dated) is Fresh and dropped. The kept
+//     tier is recorded in `now_eta`. See isInstantNow() and ROOTCAUSE-AmazonNow-2026-06-01.md.
 //
 // ACCOUNT: uses its OWN dedicated Amazon account (secrets/amazon-now.storageState.json),
 // SEPARATE from Amazon Fresh's account — so the account-global delivery location no longer
@@ -89,6 +95,19 @@ function nowTier(badge, deliv) {
   if (/\btoday\b/.test(s)) return 'today';
   if (/\btomorrow\b/.test(s)) return 'tomorrow';
   return badge ? badge.trim().toLowerCase() : '';
+}
+
+// THE genuine-Now discriminator (fixed 2026-06-04 — see NOW/FRESH mislabel fix).
+// A blue speed chip alone does NOT mean Amazon Now: the IDENTICAL "Tomorrow"/"Overnight"/
+// "Today" chips render on the SAME ASINs in cities with NO Now storefront (proven live:
+// Chandigarh 160001 & Ludhiana 141001 — amazon_now_page=false, only scheduled chips, those
+// are Amazon FRESH/generic scheduled slots). The ONLY signal exclusive to genuine Amazon Now
+// is an INSTANT minute-based delivery promise ("in N minutes" → tier '10 min'); live probing
+// found it appears ONLY where amazon_now_page=true (0/238 non-Now pincodes ever showed it).
+// So: a card is genuine Now ⇔ the page is Now-branded AND the offer is an instant-minute tier.
+// Scheduled tiers (tomorrow / today-window / overnight / dated) are Fresh and are EXCLUDED.
+function isInstantNow(card) {
+  return nowTier(card.badge, card.deliv) === '10 min';
 }
 
 async function passInterstitial(page) {
@@ -233,16 +252,21 @@ async function checkSession(page) {
       res = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
     }
     const matched = res.glow.includes(rec.pincode);
+    // Genuine-Now gate: the page must be Amazon-Now-branded. amazon_now_page is the real
+    // discriminator — false here means NO Now storefront at this pincode (any speed chips are
+    // Fresh/marketplace scheduled slots), so the pincode is NOT Now-serviceable and yields 0 rows.
+    const nowPage = res.amazonNowPage;
 
-    // accumulate Now-badged Jivo cards across pages (dedup by canonical)
+    // accumulate genuine-INSTANT-Now Jivo cards across pages (dedup by canonical)
     const seen = new Set();
     const rows = [];
-    let anyNowCard = res.cards.some((c) => c.nowBadge);   // does Now operate here at all?
-    if (matched) {
+    if (matched && nowPage) {
       let pageNo = 1; let pageRes = res;
       while (pageNo <= MAXPAGES) {
         for (const card of pageRes.cards) {
-          if (!card.isJivo || !card.nowBadge) continue;   // marketplace-only card -> not Now -> skip
+          // Only genuine Now: Jivo AND an instant-minute tier. Scheduled (tomorrow/today/
+          // overnight) chips are Amazon FRESH and are dropped — they are NOT Amazon Now.
+          if (!card.isJivo || !isInstantNow(card)) continue;
           const row = toRow(card, rec);
           if (seen.has(row.canonical)) continue;
           seen.add(row.canonical); rows.push(row);
@@ -250,13 +274,14 @@ async function checkSession(page) {
         if (!pageRes.hasNext || pageNo >= MAXPAGES) break;
         pageNo++;
         pageRes = await fastSetAndSearch(page, rec.pincode, token, QUERY, pageNo);
-        if (pageRes.cards.some((c) => c.nowBadge)) anyNowCard = true;
         await sleep(250 + Math.random() * 300);
       }
     }
-    const serviceable = matched && anyNowCard;
-    perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, amazon_now_page: res.amazonNowPage, glow: res.glow, matched, total_cards: res.total, rows });
-    process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}svc=${serviceable} -> ${rows.length} jivo-now (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
+    // Serviceable ⇔ location resolved AND the ctnow page is genuinely Amazon-Now-branded.
+    // (Rows can still be 0 on a serviceable pincode if Jivo isn't in the local 10-min store.)
+    const serviceable = matched && nowPage;
+    perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, amazon_now_page: nowPage, glow: res.glow, matched, total_cards: res.total, rows });
+    process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}nowPage=${nowPage} svc=${serviceable} -> ${rows.length} jivo-now (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
     await sleep(350 + Math.random() * 450);
   }
   await browser.close().catch(() => {});
