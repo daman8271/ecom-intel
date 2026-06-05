@@ -1,32 +1,32 @@
 {
   "platform": "bigbasket",
   "run_id": "2026-06-05-1601",
-  "captured_at": "2026-06-05T10:31:25.045Z",
-  "verdict": "OK",
-  "rows": 23,
-  "unique_skus": 23,
+  "captured_at": "2026-06-05T10:32:04.968Z",
+  "verdict": "BROKEN",
+  "rows": 11,
+  "unique_skus": 11,
   "pincodes_with_jivo": null,
   "baseline_rows": 23,
   "checks": [
     {
       "name": "non_zero_rows",
       "pass": true,
-      "detail": "23 rows"
+      "detail": "11 rows"
     },
     {
       "name": "rows_above_floor",
-      "pass": true,
-      "detail": "23 rows (floor 20)"
+      "pass": false,
+      "detail": "11 rows (floor 20)"
     },
     {
       "name": "rows_vs_baseline",
-      "pass": true,
-      "detail": "23 rows vs baseline 23 (100%)"
+      "pass": false,
+      "detail": "11 rows is 48% of baseline 23"
     },
     {
       "name": "skus_vs_baseline",
-      "pass": true,
-      "detail": "23 unique SKUs vs baseline 23 (100%)"
+      "pass": false,
+      "detail": "11 unique SKUs vs baseline 23 (48%)"
     },
     {
       "name": "prices_in_band",
@@ -66,12 +66,12 @@
     {
       "name": "freshness",
       "pass": true,
-      "detail": "captured_at 2026-06-05T10:31:25.045Z is 0.0h old (fresh)"
+      "detail": "captured_at 2026-06-05T10:32:04.968Z is 0.0h old (fresh)"
     },
     {
       "name": "price_staleness",
       "pass": true,
-      "detail": "0% stores non-realtime/snapshot; 15 SKU(s) price-stable across 9 runs (realtime path -> live, treated as genuinely stable)"
+      "detail": "0% stores non-realtime/snapshot; 4 SKU(s) price-stable across 9 runs (realtime path -> live, treated as genuinely stable)"
     },
     {
       "name": "geo_consistency",
@@ -80,8 +80,8 @@
     },
     {
       "name": "priced_floor_block",
-      "pass": true,
-      "detail": "10 priced in-stock rows, vs baseline 10; 0 block/error-marked rows"
+      "pass": false,
+      "detail": "1 priced in-stock rows is 10% of baseline 10 (collapse)"
     },
     {
       "name": "per_litre_sanity",
@@ -92,13 +92,13 @@
       "name": "shared_price_dup",
       "pass": true,
       "detail": "no discounted (sale,mrp) pair shared across distinct SKUs"
-    },
-    {
-      "name": "llm_judgment",
-      "pass": true,
-      "detail": "OK \u2014 23 SKUs, real oils (cold-pressed, olive, mustard, canola), sane INR prices, MRP\u2265sale, discounts 17\u201343%, realistic in-stock mix."
     }
   ],
-  "reasons": [],
-  "llm_note": "OK \u2014 23 SKUs, real oils (cold-pressed, olive, mustard, canola), sane INR prices, MRP\u2265sale, discounts 17\u201343%, realistic in-stock mix."
+  "reasons": [
+    "rows_above_floor: 11 rows (floor 20)",
+    "rows_vs_baseline: 11 rows is 48% of baseline 23",
+    "skus_vs_baseline: 11 unique SKUs vs baseline 23 (48%)",
+    "priced_floor_block: 1 priced in-stock rows is 10% of baseline 10 (collapse)"
+  ],
+  "llm_note": null
 }
