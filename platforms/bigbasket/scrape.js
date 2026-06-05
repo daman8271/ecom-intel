@@ -65,6 +65,14 @@ const COOKIE_PATH = process.env.BB_COOKIE_PATH || DEFAULT_COOKIE_PATH;
 const EXPIRED_MARKER = path.join(__dirname, 'secrets', 'BB_SESSION_EXPIRED');
 const BUCKET_ID = process.env.BB_BUCKET_ID || '32';
 const MAX_PAGES = parseInt(process.env.BB_MAX_PAGES || '5', 10);
+// RATE-LIMIT RESILIENCE (reliability > speed). BigBasket 429-throttles a fast burst
+// of queries (seen: 5/6 queries 429'd in one ~9s run -> collapsed to 11 partial rows).
+// We (a) space queries well apart so the burst doesn't trip the limit in the first
+// place, and (b) retry any throttle/transient status with exponential backoff so a
+// 429 never silently drops a query. A slower run that gets the full catalogue beats a
+// fast one throttled to garbage — the cron is serial and has the time.
+const RETRYABLE = new Set([429, 503, 502, 408]);
+const MAX_RETRIES = parseInt(process.env.BB_MAX_RETRIES || '5', 10);
 // Multiple queries, deduped, to maximise Jivo recall across categories (oils,
 // juices, vinegar, ...). "jivo" alone returns the whole brand catalogue today;
 // the extra terms are cheap insurance if search ranking ever truncates it.
@@ -188,29 +196,47 @@ function parseProducts(json) {
   return out;
 }
 
+// One raw page fetch via the in-page session. Returns parsed JSON, or
+// { __err, __status } where __status is the HTTP code (0 = network/abort).
+async function fetchPageOnce(page, slug, pg) {
+  return page.evaluate(async ({ slug, pg, bucket }) => {
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), 20000); // never let a single fetch hang the run
+    try {
+      const url = `/listing-svc/v2/products?type=ps&slug=${slug}&page=${pg}&bucket_id=${bucket}`;
+      const r = await fetch(url, {
+        signal: ctrl.signal,
+        headers: {
+          accept: 'application/json, text/plain, */*',
+          'x-requested-with': 'XMLHttpRequest',
+          referer: `https://www.bigbasket.com/ps/?q=${slug}`,
+        },
+      });
+      if (r.status !== 200) return { __err: 'HTTP ' + r.status, __status: r.status };
+      return await r.json();
+    } catch (e) { return { __err: e.message, __status: 0 }; } finally { clearTimeout(tid); }
+  }, { slug, pg, bucket: BUCKET_ID });
+}
+
 async function fetchQuery(page, query) {
   const slug = encodeURIComponent(query.toLowerCase().trim());
   const all = [];
   for (let pg = 1; pg <= MAX_PAGES; pg++) {
-    const res = await page.evaluate(async ({ slug, pg, bucket }) => {
-      const ctrl = new AbortController();
-      const tid = setTimeout(() => ctrl.abort(), 20000); // never let a single fetch hang the run
-      try {
-        const url = `/listing-svc/v2/products?type=ps&slug=${slug}&page=${pg}&bucket_id=${bucket}`;
-        const r = await fetch(url, {
-          signal: ctrl.signal,
-          headers: {
-            accept: 'application/json, text/plain, */*',
-            'x-requested-with': 'XMLHttpRequest',
-            referer: `https://www.bigbasket.com/ps/?q=${slug}`,
-          },
-        });
-        if (r.status !== 200) return { __err: 'HTTP ' + r.status };
-        return await r.json();
-      } catch (e) { return { __err: e.message }; } finally { clearTimeout(tid); }
-    }, { slug, pg, bucket: BUCKET_ID });
+    // Retry the SAME page on 429/503/502/408 with exponential backoff + jitter, so a
+    // throttle never silently drops the query. Non-retryable statuses (404, etc.) and
+    // exhausted retries fall through to the warn+break below.
+    let res = null;
+    for (let attempt = 0; attempt <= MAX_RETRIES; attempt++) {
+      res = await fetchPageOnce(page, slug, pg);
+      if (!res || !res.__err) break;                              // success
+      const st = res.__status || 0;
+      if (!RETRYABLE.has(st) || attempt === MAX_RETRIES) break;   // non-retryable / out of retries
+      const wait = Math.min(30000, 3000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1500); // 3s,6s,12s,24s,30s(+jitter)
+      process.stderr.write(`[retry] q="${query}" p${pg}: HTTP ${st} -> backoff ${Math.round(wait / 1000)}s (attempt ${attempt + 1}/${MAX_RETRIES})\n`);
+      await page.waitForTimeout(wait);
+    }
 
-    if (res && res.__err) { process.stderr.write(`[warn] q="${query}" p${pg}: ${res.__err}\n`); break; }
+    if (res && res.__err) { process.stderr.write(`[warn] q="${query}" p${pg}: ${res.__err} (gave up after ${MAX_RETRIES} retries)\n`); break; }
     const rows = parseProducts(res);
     all.push(...rows);
     const pi = (res.tabs && res.tabs[0] && res.tabs[0].product_info) || {};
@@ -218,7 +244,7 @@ async function fetchQuery(page, query) {
     process.stderr.write(`[ok] q="${query}" p${pg}/${np} -> +${rows.length} jivo (total_count=${pi.total_count != null ? pi.total_count : '?'})\n`);
     if (rows.length === 0) break; // generic-category fallback or natural end — don't keep paginating a non-Jivo result set
     if (pg >= np) break;
-    await page.waitForTimeout(300 + Math.random() * 400);
+    await page.waitForTimeout(900 + Math.random() * 800); // inter-page: gentle (was 300-700ms)
   }
   return all;
 }
@@ -342,7 +368,9 @@ let DONE = false;
 // Hard watchdog: if the whole scrape ever hangs (unresponsive site, stuck
 // browser), emit an empty result and exit 0 so review.py marks it BROKEN and
 // self-heal retries — instead of blocking the parallel cron sweep forever.
-const WATCHDOG_MS = parseInt(process.env.BB_WATCHDOG_MS || '240000', 10);
+// Bumped 240s -> 360s to give the rate-limit backoff/retries room (a throttled run
+// can legitimately take longer now). The cron is serial with hours of headroom.
+const WATCHDOG_MS = parseInt(process.env.BB_WATCHDOG_MS || '360000', 10);
 const watchdog = setTimeout(() => {
   if (DONE) return;
   DONE = true;
@@ -410,7 +438,10 @@ const watchdog = setTimeout(() => {
           if (seen.has(key)) continue;
           seen.add(key); rows.push(r);
         }
-        await page.waitForTimeout(500 + Math.random() * 600);
+        // Gentle spacing between queries so the burst doesn't trip BigBasket's rate
+        // limit in the FIRST place (the primary fix; the per-page retry is the safety
+        // net). Reliability > speed — the cron is serial and has the time.
+        await page.waitForTimeout(3000 + Math.random() * 2500);
       }
     } else {
       process.stderr.write('[err] could not load BigBasket homepage (Akamai block?) — emitting empty result\n');
