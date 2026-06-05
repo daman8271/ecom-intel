@@ -106,6 +106,30 @@ ${REASONS}"
             --data-urlencode "chat_id=${OWNER_CH}" \
             --data-urlencode "text=${ALERT}")"
     echo "[$STAMP] $P HELD ($VERDICT) owner-alert -> $RA" >> "$TGLOG"
+    # DEFER MODE (cron-deadline): the owner alert above already went out immediately
+    # (owner wants problems early); additionally spool a held-marker so the sweep's
+    # batch delivery (tools/cron/send_batch.py) can list this platform in its footer.
+    # Entirely inert unless DEFER_DELIVERY=1 and SWEEP_ID are set by the caller.
+    if [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
+      BDIR="$DIR/output/.batch/${SWEEP_ID}"
+      mkdir -p "$BDIR" 2>>"$TGLOG"
+      if REASONS="$REASONS" python3 - "$P" "$VERDICT" "$BDIR/${P}.json" 2>>"$TGLOG" <<'SPOOLPY'
+import json, os, sys, time
+p, verdict, out = sys.argv[1], sys.argv[2], sys.argv[3]
+tmp = out + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump({"platform": p, "verdict": verdict, "held": True,
+               "reasons": os.environ.get("REASONS", ""),
+               "ts": int(time.time())}, f, ensure_ascii=False)
+    f.write("\n")
+os.replace(tmp, out)  # atomic: send_batch never sees a half-written file
+SPOOLPY
+      then
+        echo "[$STAMP] $P held-marker spooled -> $BDIR/${P}.json" >> "$TGLOG"
+      else
+        echo "[$STAMP] $P held-marker spool write FAILED (owner alert already sent)" >> "$TGLOG"
+      fi
+    fi
   elif [ "$VERDICT" = "OK" ] && [ -n "$TG" ] && [ -n "$CH" ]; then
     STAMP="$(date '+%Y-%m-%d %H:%M:%S')"
     # the Excel just built sits in $PDIR; newest by mtime is this run's file
@@ -170,6 +194,42 @@ PYEOF
       [ -n "$SUMMARY" ] || SUMMARY="*Jivo ${DISP}* - ${RDATE}
 Report attached."
 
+      # ---- DEFER MODE (cron-deadline): spool instead of send ----------------------
+      # When DEFER_DELIVERY=1 and SWEEP_ID are set by the caller (run_all.sh deadline
+      # sweep), the OK report is NOT curled now; it's spooled to output/.batch/<sweep>/
+      # so tools/cron/send_batch.py can deliver the whole sweep at the slot deadline.
+      # SUMMARY above is computed EXACTLY as in immediate mode. Any spool failure falls
+      # back to the immediate-send path below — a report is never lost. With the env
+      # vars unset this block is a no-op and delivery is byte-for-byte today's.
+      DEFERRED=0
+      if [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
+        BDIR="$DIR/output/.batch/${SWEEP_ID}"
+        mkdir -p "$BDIR" 2>>"$TGLOG"
+        if SUMMARY="$SUMMARY" XLSX="$XLSX" python3 - "$P" "$DISP" "$RDATE" "$BDIR/${P}.json" 2>>"$TGLOG" <<'SPOOLPY'
+import json, os, sys, time
+p, disp, rdate, out = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+xlsx = os.environ["XLSX"]
+if not (xlsx and os.path.isfile(xlsx)):
+    raise SystemExit(f"spool: xlsx missing: {xlsx!r}")
+tmp = out + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump({"platform": p, "verdict": "OK",
+               "summary": os.environ["SUMMARY"],
+               "xlsx": os.path.abspath(xlsx),
+               "caption": f"Jivo × {disp} · {rdate}",
+               "ts": int(time.time())}, f, ensure_ascii=False)
+    f.write("\n")
+os.replace(tmp, out)  # atomic: send_batch never sees a half-written file
+SPOOLPY
+        then
+          DEFERRED=1
+          echo "[$STAMP] $P OK spooled for batch -> $BDIR/${P}.json (sweep ${SWEEP_ID})" >> "$TGLOG"
+        else
+          echo "[$STAMP] $P spool write FAILED -> falling back to immediate send" >> "$TGLOG"
+        fi
+      fi
+
+      if [ "$DEFERRED" != "1" ]; then
       # a) short markdown summary
       R1="$(curl -s --max-time 60 -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
               --data-urlencode "chat_id=${CH}" \
@@ -183,6 +243,7 @@ Report attached."
               -F "document=@${XLSX}" \
               -F "caption=Jivo × ${DISP} · ${RDATE}")"
       echo "[$STAMP] $P sendDocument -> $R2" >> "$TGLOG"
+      fi
     else
       echo "[$(date '+%F %T')] $P: no Excel file found, telegram delivery skipped" >> "$TGLOG"
     fi

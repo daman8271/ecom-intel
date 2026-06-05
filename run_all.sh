@@ -17,16 +17,40 @@ echo "[$(date '+%F %T')] run_all: START (serial — accuracy first)"
 # Order: quick/light platforms first so their clean reports land early; the Amazon trio runs
 # consecutively (serial guarantees no shared-account overlap); blinkit LAST (slowest — its
 # per-pincode store re-resolution is intentionally patient for full clean coverage).
-for P in  flipkart-minutes flipkart zepto bigbasket amazon amazon-fresh amazon-now blinkit; do
+#
+# Overrides (for the cron-deadline simulation harness ONLY — both UNSET in production, which
+# leaves the loop byte-for-byte identical to before):
+#   PLATFORMS_OVERRIDE — space-separated platform list replacing the default 9
+#   RUNNER_OVERRIDE    — command run instead of ./run.sh (word-split on purpose: may carry args)
+PLATFORMS="${PLATFORMS_OVERRIDE:- flipkart-minutes flipkart zepto bigbasket amazon amazon-fresh amazon-now blinkit}"
+RUNNER="${RUNNER_OVERRIDE:-./run.sh}"
+for P in $PLATFORMS; do
   echo "[$(date '+%F %T')] run_all: running $P (serial)"
   # AUTO-HEAL HOOK: after this platform's pipeline, the guardian re-evaluates the fresh
   # result.json (CALLs tools/review.py for the shared checks + its independent 11-bug-class deep
   # checks). On BROKEN -> QUARANTINE (keep last-good, nothing published — Telegram is already
   # verdict-gated) + bounded --heal retry + owner alert. Best-effort `|| true` so a guardian
   # hiccup can never fail the sweep.
-  ( ./run.sh "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1
+  P_START="$(date +%s)"
+  ( $RUNNER "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1
+  P_END="$(date +%s)"
+  # Duration ledger for the deadline scheduler (W1's tools/cron). Best-effort, only if the
+  # recorder exists; sweep_id falls back to "adhoc" on manual runs without SWEEP_ID.
+  if [ -f tools/cron/record_duration.sh ]; then
+    bash tools/cron/record_duration.sh "$P" "$((P_END - P_START))" "${SWEEP_ID:-adhoc}" || true
+  fi
 done
 echo "[$(date '+%F %T')] run_all: all platforms done -> self-heal pass"
+
+# ---- Deferred-delivery batch barrier (cron-deadline mode) ----
+# When the deadline sweep set DEFER_DELIVERY=1, each platform's OK report was spooled to
+# output/.batch/$SWEEP_ID/ instead of being curled (run.sh). send_batch.py sleeps until the
+# slot deadline, then delivers the whole sweep in one batch. Best-effort: a batch failure
+# never blocks the self-heal/vault steps below. Inert when the env vars are unset.
+if [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ] && [ -n "${SWEEP_DEADLINE:-}" ] && [ -f tools/cron/send_batch.py ]; then
+  echo "[$(date '+%F %T')] run_all: batch barrier -> send_batch.py $SWEEP_ID (deadline epoch $SWEEP_DEADLINE)"
+  python3 tools/cron/send_batch.py "$SWEEP_ID" "$SWEEP_DEADLINE" || true
+fi
 # Backstop: the legacy self-heal pass still runs (it owns the staleness / row-collapse
 # signals the inline guardian leaves to it). It runs AFTER the wait above, so the
 # inline guardians have finished; it shares the same per-platform .heal-<p>.lock, so
