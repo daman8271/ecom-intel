@@ -74,7 +74,13 @@ if [ "$SIM_MODE" != "1" ]; then
 # it can never run concurrently with a guardian heal (e.g. an overlapping daily pass).
 # A platform the guardian already healed-but-left-BROKEN may get one more recovery
 # attempt here — bounded and harmless (a deliberate second safety net).
-./healthcheck.sh || true
+# DEFER ENV STRIPPED (W4 report-loss fix): this backstop runs AFTER send_batch.py has
+# delivered + retired the spool dir. If a selfheal re-run came back OK with the defer env
+# still set, run.sh would SPOOL the healed report into the dead batch dir and it would
+# never be delivered. Empty values fail run.sh's `= "1"` guard -> the healed report ships
+# immediately, exactly like today. (The in-loop guardian heals keep the env on purpose —
+# they run BEFORE send_batch, so their healed reports correctly join the batch.)
+DEFER_DELIVERY= SWEEP_ID= ./healthcheck.sh || true
 
 # ---- Rebuild the COMPLETE Obsidian memory graph from the full price history. ----
 # vault_build.py regenerates EVERY run note (complete: every observation as a fenced ```csv
