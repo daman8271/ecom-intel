@@ -2,14 +2,6 @@
   "platform": "bigbasket",
   "samples": [
     {
-      "run_id": "XVERIFY-2026-06-05",
-      "captured_at": "2026-06-04T13:48:44.234Z",
-      "rows": 23,
-      "unique_skus": 23,
-      "pincodes_with_jivo": null,
-      "priced_rows": 10
-    },
-    {
       "run_id": "XV-2026-06-05",
       "captured_at": "2026-06-04T13:48:44.234Z",
       "rows": 23,
@@ -80,7 +72,15 @@
       "unique_skus": 23,
       "pincodes_with_jivo": null,
       "priced_rows": 10
+    },
+    {
+      "run_id": "BBFIX",
+      "captured_at": "2026-06-05T11:26:16.471Z",
+      "rows": 23,
+      "unique_skus": 23,
+      "pincodes_with_jivo": null,
+      "priced_rows": 10
     }
   ],
-  "updated_at": "2026-06-05T10:31:40.207971+00:00"
+  "updated_at": "2026-06-05T11:27:04.921154+00:00"
 }
