@@ -631,11 +631,11 @@ def build_index(platforms, latest_day, latest_week, latest_month, n_skus, n_citi
 
 def write_obsidian():
     groups = [
-        ("tag:#type/run", 0x4C8DFF), ("tag:#type/sku-hub", 0xFFB020),
-        ("tag:#type/city-hub", 0x35C28B), ("tag:#type/pincode", 0x9AE6B4),
-        ("tag:#type/platform-hub", 0xFF5C7A), ("tag:#type/daily", 0xB794F4),
-        ("tag:#type/weekly", 0x9F7AEA), ("tag:#type/monthly", 0x805AD5),
-        ("tag:#moc", 0xF6E05E), ("tag:#home", 0xF6AD55),
+        ("tag:#type/platform-hub", 0xE84AD0), ("tag:#type/run", 0x4C8DFF),
+        ("tag:#type/sku-hub", 0xFFB020), ("tag:#type/city-hub", 0x22C55E),
+        ("tag:#type/pincode", 0x2DD4BF), ("tag:#type/daily", 0xFB923C),
+        ("tag:#type/weekly", 0xA78BFA), ("tag:#type/monthly", 0xF43F5E),
+        ("tag:#moc", 0xFACC15), ("tag:#home", 0xF5F5F5),
     ]
     graph = {
         "collapse-filter": True, "search": "", "showTags": True, "showAttachments": False,
