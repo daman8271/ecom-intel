@@ -146,12 +146,16 @@ function parseProducts(searchJson, rec) {
           if (Array.isArray(x)) x = x.length ? x[0] : null;
           return (typeof x === 'string' || typeof x === 'number') ? String(x) : '';
         };
+        // pid shape gate (e.g. GHEHHZBQJBNVZGGQ), applied PER candidate so a junk
+        // candidate falls through to the next instead of killing the whole chain.
+        // itm…/lst… are Flipkart PAGE/LISTING ids (16-char alnum — they'd pass the
+        // shape gate) but are NOT product pids; never record one (W4 review ruling).
+        const pidOk = (s) => (/^[A-Za-z0-9]{8,32}$/.test(s) && !/^(itm|lst)/i.test(s)) ? s : '';
         const ap = act.params || {};
         const aurl = typeof act.url === 'string' ? act.url : '';
-        fkPid = first(ap.pid) || first(ap.productId)
-          || ((aurl.match(/[?&]pid=([A-Za-z0-9]+)/) || [])[1] || '')
-          || first(v.id) || first(v.productId) || '';
-        if (!/^[A-Za-z0-9]{8,32}$/.test(fkPid)) fkPid = ''; // Flipkart pid shape gate (e.g. GHEHHZBQJBNVZGGQ)
+        fkPid = pidOk(first(ap.pid)) || pidOk(first(ap.productId))
+          || pidOk((aurl.match(/[?&]pid=([A-Za-z0-9]+)/) || [])[1] || '')
+          || pidOk(first(v.id)) || pidOk(first(v.productId)) || '';
         if (aurl) listingUrl = /^https?:\/\//i.test(aurl) ? aurl : 'https://www.flipkart.com' + (aurl.startsWith('/') ? '' : '/') + aurl;
         else if (fkPid) listingUrl = 'https://www.flipkart.com/product/p/itme?pid=' + fkPid;
       } catch (_) { fkPid = ''; listingUrl = ''; }
