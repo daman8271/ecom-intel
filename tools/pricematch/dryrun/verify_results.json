@@ -1,0 +1,752 @@
+{
+ "v1": {
+  "verdicts": [
+   {
+    "listing": "Jivo Desi Ghee 1 Litre | Traditional Preparation from Desi Cow Milk | Suitable for Cooking, Frying & Baking | ",
+    "platform": "amazon",
+    "verdict": "WRONG",
+    "reason": "Listing is 'Desi Ghee' (traditional, cow milk) \u2014 a completely different product from 'A2 Ghee' (Bilona/Vedic method, MRP 4000). listing_mrp 2500 vs master_mrp 4000 is a 37% gap confirming different product. No Desi Ghee SKU exists in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "Jivo Desi Ghee 500 ML | Traditional Preparation from Desi Cow Milk | Suitable for Cooking, Frying & Baking | A",
+    "platform": "amazon",
+    "verdict": "WRONG",
+    "reason": "Listing is 'Desi Ghee' (traditional, cow milk), not A2 Ghee (Bilona). listing_mrp 849 vs master_mrp 2200 is a 61% gap \u2014 confirms different product tier. No Desi Ghee SKU in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "Sano Pomace Olive Oil 3L Pet Bottle - Ideal For Frying, Roasting, & Sauteing | Rich Flavor & High Smoke Point ",
+    "platform": "amazon",
+    "verdict": "WRONG",
+    "reason": "Title clearly says '3L'. vol_ml=1000 is a scraper bug \u2014 trust the title. Matched to SANO POMACE 1L but this is a 3L listing. listing_mrp 2997 = 3\u00d7999 confirms 3L. No SANO POMACE 3L exists in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "Jivo Cold Pressed Kachi Ghani Mustard Oil 1L with Makki Atta 500g | Chemical Free Sarson Ka Tel | Traditional ",
+    "platform": "amazon",
+    "verdict": "WRONG",
+    "reason": "This is a combo bundle (Mustard Oil 1L + Makki Atta 500g). Combos must never match a single-unit SKU. listing_mrp 404 vs master_mrp 255 also reflects combo pricing.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L)",
+    "platform": "amazon",
+    "verdict": "CORRECT",
+    "reason": "Pack of 2L = two 1L canola bottles, same product. listing_mrp 750 = master_mrp 750. Matches CANOLA 1+1L correctly."
+   },
+   {
+    "listing": "Jivo Cold Pressed Sunflower & Canola Oil 1L Each (Pack of 2)",
+    "platform": "amazon",
+    "verdict": "WRONG",
+    "reason": "This is a different-product combo: Sunflower Oil 1L + Canola Oil 1L. CANOLA 1+1L means two canola bottles of the same type. Mixing two different oils into a single-product SKU is invalid. Also listing_mrp 650 vs master_mrp 750.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "Jivo Kachi Ghani Mustard Oil & Cold Pressed Canola Oil 1L Each (Pack of 2)",
+    "platform": "amazon",
+    "verdict": "WRONG",
+    "reason": "Different-product combo: Mustard Oil 1L + Canola Oil 1L. Cannot match CANOLA 1+1L which is a same-product 2-pack. listing_mrp 630 vs master_mrp 750 further confirms mismatch.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "Jivo Cold Pressed Canola & Soyabean Oil 1L Each (Pack of 2)",
+    "platform": "amazon",
+    "verdict": "WRONG",
+    "reason": "Different-product combo: Canola 1L + Soyabean 1L. Cannot match CANOLA 1+1L (same-product pack). listing_mrp 600 vs master_mrp 750.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "Jivo Cooking Oil - Canola Oil, 1L Bottle",
+    "platform": "amazon-fresh",
+    "verdict": "CORRECT",
+    "reason": "Canola Oil 1L bottle, listing_mrp 375 = master_mrp 375. Clean match on product, size, and MRP."
+   },
+   {
+    "listing": "DESI GHEE 1KG",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "Listing is 'Desi Ghee', not A2 Ghee (Bilona/premium). listing_mrp 1499 vs master_mrp 4000 is a 63% gap \u2014 completely different product tier. No Desi Ghee SKU in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "CHIASEEDS 800G",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Chia seeds 800g, listing_mrp 899 = master_mrp 899. Exact product and size match."
+   },
+   {
+    "listing": "BLACK PEPPER 100G",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Black pepper 100g, listing_mrp 399 = master_mrp 399. Master has a typo ('BLACK PAPER') but is the same product. Exact MRP and size match."
+   },
+   {
+    "listing": "FLAX SEEDS 200GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Flax seeds 200g, listing_mrp 249 = master_mrp 249. Exact match on product, size, and MRP."
+   },
+   {
+    "listing": "BASIL SEEDS 200 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Basil seeds 200g, listing_mrp 349 = master_mrp 349. Exact match."
+   },
+   {
+    "listing": "CHIA SEEDS 200GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Chia seeds 200g, listing_mrp null (cannot verify MRP) but product name and size are unambiguous. Matched to CHIA SEEDS 200G correctly."
+   },
+   {
+    "listing": "DESI GHEE 500GM",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "Listing is 'Desi Ghee', not A2 Ghee (Bilona/premium). These are different product lines. listing_mrp null but domain rule is unambiguous: Desi Ghee \u2260 A2 Ghee. No Desi Ghee SKU in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "FLAX SEEDS 400 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Flax seeds 400g, listing_mrp 399 = master_mrp 399. Exact match."
+   },
+   {
+    "listing": "PUMPKIN SEEDS 800 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Pumpkin seeds 800g, listing_mrp 1299 = master_mrp 1299. Exact match."
+   },
+   {
+    "listing": "KESAR 1GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Kesar = Saffron in Hindi. 1g quantity, listing_mrp 899 = master_mrp 899. Correct match to SAFFRON 1GMS."
+   },
+   {
+    "listing": "BASIL SEEDS 800 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Basil seeds 800g, listing_mrp 1099 = master_mrp 1099. Exact match."
+   },
+   {
+    "listing": "SUNFLOWER SEEDS 200 GM",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "vol_ml=200 but listing_mrp=499 matches the 400G SKU's MRP (SUNFLOWER SEEDS 400G = 499), not the 200G SKU (MRP 299). This listing is likely the 400G size mislabeled or a different variant. MRP is 67% above the 200G master price.",
+    "correct_product": "SUNFLOWER SEEDS 400G"
+   },
+   {
+    "listing": "DESI GHEE 1KG 2PCS",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "Two problems: (1) 'Desi Ghee' is not A2 Ghee \u2014 different product. (2) '2PCS' makes this a multipack, which must never match a single-unit SKU. listing_mrp null. No Desi Ghee SKU in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "POMACE 1L",
+    "platform": "flipkart",
+    "verdict": "RISKY",
+    "reason": "Product is Jivo Pomace 1L and size matches JIVO POMACE 1L master. However listing_mrp 745 vs master_mrp 1049 is a 29% shortfall \u2014 substantial enough to suggest a different variant, promotional pack, or data error. Cannot confirm without more information.",
+    "correct_product": "JIVO POMACE 1L"
+   },
+   {
+    "listing": "DESI GHEE 1KG",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "Listing is 'Desi Ghee', not A2 Ghee. listing_mrp 1499 vs master_mrp 4000 \u2014 enormous gap confirming a different product. No Desi Ghee SKU in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "CANOLA 1L+MUSTARD 1L",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "This is a combo of two different oils: Canola 1L + Mustard 1L. CANOLA 1+1L master SKU represents two identical canola bottles. Mixing different product types cannot match a same-product pack SKU.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "FLAX SEEDS 800 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Flax seeds 800g, listing_mrp 750 = master_mrp 750. Exact match."
+   },
+   {
+    "listing": "SUNFLOWER SEEDS 400GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Sunflower seeds 400g, listing_mrp null. Product and size match SUNFLOWER SEEDS 400G. No basis for refutation."
+   },
+   {
+    "listing": "CHIA SEEDS 400 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Chia seeds 400g, listing_mrp null. Product and size match CHIA SEEDS 400G. No basis for refutation."
+   },
+   {
+    "listing": "PUMPKIN SEEDS 400 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Pumpkin seeds 400g, listing_mrp null. Product and size match PUMPKIN SEEDS 400G. No basis for refutation."
+   },
+   {
+    "listing": "SUNFLOWER SEEDS 200 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Sunflower seeds 200g, listing_mrp null. Product and size match SUNFLOWER SEEDS 200G. No MRP available to refute. (Distinct entry from the 499 MRP instance above.)"
+   },
+   {
+    "listing": "GREEN CARDAMOM 100GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Green cardamom 100g, listing_mrp null. Product and size match GREEN CARDAMOM 100G. No basis for refutation."
+   },
+   {
+    "listing": "CHIA SEEDS 400 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Duplicate entry. Chia seeds 400g, listing_mrp null. Product and size match CHIA SEEDS 400G."
+   },
+   {
+    "listing": "CUMIN SEEDS 100GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Cumin seeds 100g, listing_mrp null. Product and size match CUMIN SEEDS 100G. No basis for refutation."
+   },
+   {
+    "listing": "A2 GHEE 500G",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Explicitly labeled 'A2 GHEE 500G', listing_mrp 2200 = master_mrp 2200. Correct product, size, and MRP."
+   },
+   {
+    "listing": "A2 GHEE 1KG",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Explicitly labeled 'A2 GHEE 1KG', listing_mrp 4000 = master_mrp 4000. Correct product, size, and MRP."
+   },
+   {
+    "listing": "Canola1L+Mustard1L",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "Different-product combo: Canola 1L + Mustard 1L. Cannot match CANOLA 1+1L which is a same-product two-pack. listing_mrp 630 vs master_mrp 750 also inconsistent.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "SUNFLOWER OIL 5L",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Sunflower oil 5L, listing_mrp null. Product and size match SUNFLOWER 5L. No basis for refutation."
+   },
+   {
+    "listing": "DESI GHEE 1KG",
+    "platform": "flipkart",
+    "verdict": "WRONG",
+    "reason": "Listing is 'Desi Ghee', not A2 Ghee. listing_mrp null but domain rule is clear. No Desi Ghee SKU in master.",
+    "correct_product": "NONE"
+   },
+   {
+    "listing": "PUMPKIN SEEDS 200 GM",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Pumpkin seeds 200g, listing_mrp 399 = master_mrp 399. Exact match."
+   },
+   {
+    "listing": "SUNFLOWER OIL 1L",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Sunflower oil 1L, listing_mrp null. Product and size match SUNFLOWER 1L. No basis for refutation."
+   },
+   {
+    "listing": "SUNFLOWER OIL 1L",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Duplicate entry. Sunflower oil 1L, listing_mrp null. Product and size match SUNFLOWER 1L."
+   },
+   {
+    "listing": "SUNFLOWER OIL 5L",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Duplicate entry. Sunflower oil 5L, listing_mrp null. Matches SUNFLOWER 5L."
+   },
+   {
+    "listing": "COCONUT OIL 500GM",
+    "platform": "flipkart",
+    "verdict": "RISKY",
+    "reason": "Product and size (coconut oil 500g/ml) match COCONUT 500ML. However listing_mrp 398 vs master_mrp 695 is a 43% shortfall \u2014 very large gap suggesting a different variant (e.g., refined vs extra-virgin) or data error. Cannot confirm without title details.",
+    "correct_product": "COCONUT 500ML"
+   },
+   {
+    "listing": "SUNFLOWER OIL 5L",
+    "platform": "flipkart",
+    "verdict": "CORRECT",
+    "reason": "Duplicate entry. Sunflower oil 5L, listing_mrp null. Matches SUNFLOWER 5L."
+   },
+   {
+    "listing": "A2 GHEE 500 KG",
+    "platform": "flipkart",
+    "verdict": "RISKY",
+    "reason": "Unit 'KG' is clearly a data entry error (should be 'ML' or 'G'). However product name is explicitly 'A2 GHEE', vol_ml=500, and listing_mrp 2200 = master_mrp 2200 \u2014 all other signals are correct. Flagging as RISKY due to the unit typo but underlying product appears to be correct.",
+    "correct_product": "A2 GHEE 500ML"
+   },
+   {
+    "listing": "SUNFLOWER OIL 4L",
+    "platform": "flipkart",
+    "verdict": "RISKY",
+    "reason": "Sunflower oil 4L, vol_ml=4000. listing_mrp 1080 vs master_mrp 1038 is a ~4% difference. Small but non-zero \u2014 could reflect a newer pricing revision or a slightly different product variant. Product and size are otherwise a clean match.",
+    "correct_product": "SUNFLOWER 4L"
+   }
+  ]
+ },
+ "v2": {
+  "verdicts": [
+   {
+    "listing": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil",
+    "platform": "zepto",
+    "verdict": "CORRECT",
+    "reason": "Title says Kachi Ghani Mustard, vol_ml=5000 (5L), MRP 1250 matches master MUSTARD 5L MRP 1250 exactly."
+   },
+   {
+    "listing": "Jivo Canola Cold Pressed Edible Oil",
+    "platform": "zepto",
+    "verdict": "CORRECT",
+    "reason": "Title says Canola, vol_ml=5000 (5L), MRP 1650 matches master CANOLA 5L MRP 1650 exactly."
+   },
+   {
+    "listing": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil",
+    "platform": "zepto",
+    "verdict": "WRONG",
+    "correct_product": "GOLD 5L",
+    "reason": "Title explicitly says 'Gold' and 'Blend Of Rice Bran Oil and Sunflower Oil' \u2014 per domain rules this is GOLD, not RICE BRAN. Listing MRP 1050 is close to master GOLD 5L MRP 1049, not RICE BRAN 5L MRP 1425. Matched incorrectly to RICE BRAN 5L."
+   },
+   {
+    "listing": "Jivo Sunflower Cold Pressed Oil",
+    "platform": "zepto",
+    "verdict": "CORRECT",
+    "reason": "Title says Sunflower, vol_ml=5000 (5L), MRP 1350 matches master SUNFLOWER 5L MRP 1350 exactly."
+   },
+   {
+    "listing": "Jivo Rice Bran Daily Cooking Oil",
+    "platform": "zepto",
+    "verdict": "CORRECT",
+    "reason": "Title says Rice Bran, vol_ml=1000 (1L), MRP 285 matches master RICE BRAN 1L MRP 285 exactly."
+   },
+   {
+    "listing": "Jivo Pomace Olive Oil",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Pomace Olive Oil, vol_ml=1000 (1L), MRP 1049 matches master JIVO POMACE 1L MRP 1049 exactly."
+   },
+   {
+    "listing": "Jivo Cold Pressed Sunflower Oil",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Cold Pressed Sunflower Oil, vol_ml=1000 (1L), MRP 275 matches master SUNFLOWER 1L MRP 275 exactly."
+   },
+   {
+    "listing": "Jivo Cold Pressed Canola Oil",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Cold Pressed Canola Oil, vol_ml=1000 (1L), MRP 375 matches master CANOLA 1L MRP 375 exactly."
+   },
+   {
+    "listing": "Jivo Extra Light Olive Oil",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Extra Light Olive Oil, vol_ml=1000 (1L), MRP 1499 matches master EXTRA LIGHT 1L MRP 1499. Two blinkit Extra Light Olive Oil listings exist but at different volumes (1000 and 2000ml) mapping to different master SKUs \u2014 no collision."
+   },
+   {
+    "listing": "Jivo Extra Light Olive Oil",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Extra Light Olive Oil, vol_ml=2000 (2L), MRP 2799 matches master EXTRA LIGHT 2L MRP 2799. The 1L and 2L blinkit listings have the same title but different volumes mapping to different master SKUs \u2014 no collision."
+   },
+   {
+    "listing": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Kachi Ghani Cold Pressed Mustard Oil, vol_ml=1000 (1L), MRP 255 matches master MUSTARD 1L MRP 255 exactly. Two blinkit mustard listings exist but at different volumes (1000 and 5000ml) mapping to different master SKUs \u2014 no collision."
+   },
+   {
+    "listing": "Jivo Pomace Olive Oil",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Pomace Olive Oil, vol_ml=5000 (5L), MRP 4999 matches master JIVO POMACE 5L MRP 4999 exactly. Both blinkit Pomace listings are at different volumes (1000 and 5000ml) mapping to different master SKUs \u2014 no collision."
+   },
+   {
+    "listing": "Jivo Cold Pressed Canola Oil (",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title is truncated but clearly Canola Oil, vol_ml=5000 (5L), MRP 1650 matches master CANOLA 5L MRP 1650. Both blinkit Canola listings are at different volumes (1000 and 5000ml) \u2014 no collision."
+   },
+   {
+    "listing": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
+    "platform": "blinkit",
+    "verdict": "CORRECT",
+    "reason": "Title says Kachi Ghani Cold Pressed Mustard Oil, vol_ml=5000 (5L), MRP 1250 matches master MUSTARD 5L MRP 1250 exactly."
+   },
+   {
+    "listing": "JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle",
+    "platform": "flipkart-minutes",
+    "verdict": "CORRECT",
+    "reason": "Title says Cold Pressed Mustard Oil, vol_ml=1000 (1L), MRP 255 matches master MUSTARD 1L MRP 255 exactly."
+   },
+   {
+    "listing": "JIVO Extra Light Olive Oil Can",
+    "platform": "flipkart-minutes",
+    "verdict": "CORRECT",
+    "reason": "Title says Extra Light Olive Oil, vol_ml=2000 (2L), MRP 2799 matches master EXTRA LIGHT 2L MRP 2799 exactly."
+   },
+   {
+    "listing": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
+    "platform": "flipkart-minutes",
+    "verdict": "RISKY",
+    "correct_product": "MUSTARD 5L",
+    "reason": "Identical listing title 'JIVO Cold Pressed Pure Cooking Mustard Oil Can' appears twice on flipkart-minutes: once at vol_ml=5000 matched to MUSTARD 5L (MRP 1250) and once at vol_ml=4000 matched to MUSTARD 4L (MRP 1000). vol_ml is known to be a scraper field susceptible to bugs. If the volume field is wrong on one of these, both could be the same physical listing being double-counted against two master SKUs. Flagged as RISKY for human review to confirm 4L and 5L are truly distinct flipkart-minutes listings."
+   },
+   {
+    "listing": "JIVO Cold Press Canola Oil Plastic Bottle",
+    "platform": "flipkart-minutes",
+    "verdict": "CORRECT",
+    "reason": "Title says Cold Press Canola Oil, vol_ml=1000 (1L), MRP 375 matches master CANOLA 1L MRP 375 exactly."
+   },
+   {
+    "listing": "JIVO Pomace Olive Oil Plastic Bottle",
+    "platform": "flipkart-minutes",
+    "verdict": "CORRECT",
+    "reason": "Title says Pomace Olive Oil, vol_ml=1000 (1L), MRP 1049 matches master JIVO POMACE 1L MRP 1049 exactly."
+   },
+   {
+    "listing": "JIVO Pomace Olive Oil Tin",
+    "platform": "flipkart-minutes",
+    "verdict": "CORRECT",
+    "reason": "Title says Pomace Olive Oil Tin, vol_ml=5000 (5L), MRP 4999 matches master JIVO POMACE 5L MRP 4999 exactly."
+   },
+   {
+    "listing": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
+    "platform": "flipkart-minutes",
+    "verdict": "RISKY",
+    "correct_product": "MUSTARD 4L",
+    "reason": "Identical listing title 'JIVO Cold Pressed Pure Cooking Mustard Oil Can' appears twice on flipkart-minutes (5000ml and 4000ml). The 4000ml variant mapped to MUSTARD 4L (MRP 1000) is also risky because if the scraper vol_ml is wrong, this could be a duplicate of the 5L listing. MRP 1000 does match master MUSTARD 4L exactly, but the shared title warrants a check."
+   },
+   {
+    "listing": "JIVO Soybean Oil Soyabean Oil Pouch",
+    "platform": "flipkart-minutes",
+    "verdict": "CORRECT",
+    "reason": "Title says 'Soybean Oil Pouch', vol_ml=1000 (1L), MRP 199 matches master SOYABEAN 1L POUCH MRP 199 exactly. Pouch variant correctly distinguished from the bottle."
+   },
+   {
+    "listing": "JIVO Cold Press Combo Canola Oil Plastic Bottle",
+    "platform": "flipkart-minutes",
+    "verdict": "CORRECT",
+    "reason": "Title says 'Combo Canola Oil', vol_ml=2000 (2L combined), which matches the CANOLA 1+1L combo pack master SKU. MRP is null so cannot verify price, but product line and volume are consistent."
+   },
+   {
+    "listing": "Cold Pressed Sunflower Oil",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Cold Pressed Sunflower Oil, vol_ml=1000 (1L), MRP 275 matches master SUNFLOWER 1L MRP 275 exactly."
+   },
+   {
+    "listing": "Cold Press Kachi Ghani Mustard Oil",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Kachi Ghani Mustard Oil, vol_ml=1000 (1L), MRP 255 matches master MUSTARD 1L MRP 255 exactly. Two bigbasket mustard listings share this title but at different volumes (1000 and 5000ml) \u2014 no collision."
+   },
+   {
+    "listing": "Cold Press Kachi Ghani Mustard Oil",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Kachi Ghani Mustard Oil, vol_ml=5000 (5L), MRP 1250 matches master MUSTARD 5L MRP 1250 exactly. Differentiated from the 1L listing by volume."
+   },
+   {
+    "listing": "Canola Oil - Cold Pressed",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Canola Oil, vol_ml=1000 (1L), MRP 375 matches master CANOLA 1L MRP 375 exactly. Two bigbasket Canola listings share this title but at different volumes (1000 and 5000ml) \u2014 no collision."
+   },
+   {
+    "listing": "Canola Oil - Cold Pressed",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Canola Oil, vol_ml=5000 (5L), MRP 1650 matches master CANOLA 5L MRP 1650 exactly. Differentiated from the 1L listing by volume."
+   },
+   {
+    "listing": "Extra Virgin Olive Oil - Antioxidants Rich, Suitable For Salads, Saute",
+    "platform": "bigbasket",
+    "verdict": "RISKY",
+    "correct_product": "EXTRA VIRGIN 1L",
+    "reason": "Product line (Extra Virgin Olive Oil) and volume (1L) match EXTRA VIRGIN 1L, but listing MRP is 1799 versus master MRP 1499 \u2014 a 300 rupee discrepancy. This is too large to be a rounding or data entry error. Could be a price revision not yet in master, or a different variant (e.g. glass bottle vs PET). Needs human confirmation before treating as the same SKU."
+   },
+   {
+    "listing": "Pomace Olive Oil",
+    "platform": "bigbasket",
+    "verdict": "RISKY",
+    "correct_product": "JIVO POMACE 2L",
+    "reason": "Product line (Pomace Olive Oil) and volume (2L) match JIVO POMACE 2L, but listing MRP 1449 vs master MRP 1600 \u2014 a 151 rupee gap (~9%). The product identity looks correct but MRP divergence suggests either a price cut not reflected in master or a different packaging variant. Needs confirmation."
+   },
+   {
+    "listing": "Pomace Olive Oil",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Pomace Olive Oil, vol_ml=1000 (1L), MRP 1049 matches master JIVO POMACE 1L MRP 1049 exactly."
+   },
+   {
+    "listing": "Extra Light Olive Oil",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Extra Light Olive Oil, vol_ml=1000 (1L), MRP 1499 matches master EXTRA LIGHT 1L MRP 1499 exactly."
+   },
+   {
+    "listing": "Extra Light Olive Oil - Antioxidants Rich, Light Cooking Medium, For Frying, Grilling",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Extra Light Olive Oil, vol_ml=2000 (2L), MRP 2799 matches master EXTRA LIGHT 2L MRP 2799 exactly."
+   },
+   {
+    "listing": "Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says Cold Pressed Sunflower Oil, vol_ml=5000 (5L), MRP 1350 matches master SUNFLOWER 5L MRP 1350 exactly."
+   },
+   {
+    "listing": "Fizzy Water Flavoured With Lemon",
+    "platform": "bigbasket",
+    "verdict": "WRONG",
+    "correct_product": "SODA LEMON 750ML",
+    "reason": "Title says 'Fizzy Water Flavoured With Lemon'. Per domain rules, fizzy lemon = SODA LEMON not SPRING WATER. The master SODA LEMON 750ML (MRP 55) is the correct match. SPRING WATER 750ML (the current match) is the peach-flavoured natural spring water product ('Jivo DIet Fizzy Peach Natural Spring Water - Peach'), not lemon."
+   },
+   {
+    "listing": "Fizzy Water Flavoured With Peach",
+    "platform": "bigbasket",
+    "verdict": "CORRECT",
+    "reason": "Title says 'Fizzy Water Flavoured With Peach', vol_ml=750, MRP 55. Master SPRING WATER 750ML is described as 'Jivo DIet Fizzy Peach Natural Spring Water - Peach, 750ml' \u2014 the peach flavour matches the spring water product, MRP 55 matches. CORRECT."
+   },
+   {
+    "listing": "Canola Omega-3 Rich Cooking Oil 1 L",
+    "platform": "bigbasket",
+    "verdict": "WRONG",
+    "correct_product": "CANOLA 1L POUCH",
+    "reason": "Title says 'Canola Omega-3 Rich Cooking Oil 1 L', vol_ml=1000 (1L), but listing MRP is 299 versus master CANOLA 1L MRP 375. The MRP of 299 matches master CANOLA 1L POUCH (MRP 299) exactly. This is the pouch variant, not the bottle. Matched incorrectly to CANOLA 1L."
+   }
+  ]
+ },
+ "gaps": {
+  "unpriced_singles": [
+   {
+    "family": "WHEATGRASS JUICE 200ML",
+    "examples": [
+     "Mojito Healthy Wheatgrass Juice (bigbasket, mrp 50)",
+     "Apple Healthy Wheatgrass Juice (bigbasket, mrp 50)",
+     "Rose Healthy Wheatgrass Juice (bigbasket, mrp 50)",
+     "Mango Healthy Wheatgrass Juice (bigbasket, mrp 50)",
+     "Blueberry Healthy Wheatgrass Juice (bigbasket, mrp 50)",
+     "Apple Healthy Wheatgrass Juice - Sugar Free (bigbasket, mrp 50)",
+     "Mojito Healthy Wheatgrass Juice - Sugar Free (bigbasket, mrp 50)",
+     "JIVO Healthy Wheatgrass Juice with Apple | Boosts Immunity & Detox | 200ml (amazon, mrp 480)",
+     "JIVO Healthy Wheatgrass Juice with Blue Berry Flavor - Body Detox & Immunity Booster, 200Ml (amazon, mrp 421-480)",
+     "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml (amazon, mrp varies 360-695)",
+     "JIVO Healthy Wheatgrass Juice with Mojito Flavor - Body Detox & Immunity Booster, 200Ml (amazon, mrp 360-421)",
+     "JIVO Healthy Wheatgrass Juice with Rose Flavor - Body Detox & Immunity Booster, 200Ml (amazon, mrp 480)",
+     "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free 200ml Ginger Ale (amazon, mrp 695)",
+     "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free 200ml Blueberry (amazon, mrp 421)"
+    ],
+    "platforms": [
+     "bigbasket",
+     "amazon",
+     "amazon-now"
+    ]
+   },
+   {
+    "family": "WHEATGRASS JUICE 500ML",
+    "examples": [
+     "Mango Healthy Wheatgrass Juice 500ml (bigbasket, mrp 100)",
+     "JIVO Healthy Wheatgrass Juice with Mango Flavor 500ml (amazon, mrp 480)",
+     "Jivo Zero Sugar Mango Healthy Wheatgrass 500Ml Pack Of 1 (amazon, no mrp)",
+     "Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, 500ml (amazon-now, no mrp)"
+    ],
+    "platforms": [
+     "bigbasket",
+     "amazon",
+     "amazon-now"
+    ]
+   },
+   {
+    "family": "CANOLA 2L",
+    "examples": [
+     "Jivo Canola Oil, 2 Litre Cold Press Cooking Oil for Daily use | Recommended by Indian Medical Association (amazon, mrp 700)",
+     "SANO CANOLA 2L (flipkart, no mrp)"
+    ],
+    "platforms": [
+     "amazon",
+     "flipkart"
+    ]
+   },
+   {
+    "family": "CANOLA 15L TIN",
+    "examples": [
+     "JIVO Canola Cold Press Oil, Cooking Oil 15 LTR | Recommended by Indian Medical Association (amazon, mrp 2700)",
+     "Jivo Refine Canola oil Tin 15L (zepto, mrp 3500)"
+    ],
+    "platforms": [
+     "amazon",
+     "zepto"
+    ]
+   },
+   {
+    "family": "RICE BRAN 2L",
+    "examples": [
+     "RICE BRAN 2L (flipkart, mrp 570)"
+    ],
+    "platforms": [
+     "flipkart"
+    ]
+   },
+   {
+    "family": "SUNFLOWER OIL 2L",
+    "examples": [
+     "SUNFLOWER OIL 2L (flipkart, no mrp)",
+     "Jivo Cold Pressed Chemical Free Sunflower Oil 2L (amazon, mrp 399)"
+    ],
+    "platforms": [
+     "flipkart",
+     "amazon"
+    ]
+   },
+   {
+    "family": "MUSTARD 2L",
+    "examples": [
+     "MUSTARD 2L (flipkart, no mrp)",
+     "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 2 Litre (amazon, mrp 3750 \u2014 note: likely data error, ~2x of 2\u00d7master MRP)",
+     "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre (amazon-fresh, vol_ml=2000, mrp 540 \u2014 title says 1L but vol and MRP indicate 2L or 2-pack)"
+    ],
+    "platforms": [
+     "flipkart",
+     "amazon",
+     "amazon-fresh"
+    ]
+   },
+   {
+    "family": "GROUNDNUT 2L",
+    "examples": [
+     "Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking (amazon, mrp 2000)",
+     "Jivo Groundnut Oil 1 Litre (amazon-fresh, vol_ml=2000, mrp 1120 \u2014 title says 1L but vol and MRP ~2.8x master suggest 2L)"
+    ],
+    "platforms": [
+     "amazon",
+     "amazon-fresh"
+    ]
+   },
+   {
+    "family": "GROUNDNUT 200ML",
+    "examples": [
+     "Jivo Groundnut | Peanut | Cold Pressed Healthy Cooking Oil 200ml (zepto, mrp 150)"
+    ],
+    "platforms": [
+     "zepto"
+    ]
+   },
+   {
+    "family": "HONEY 500G",
+    "examples": [
+     "HONEY 500G (flipkart, no mrp \u2014 Jivo brand based on listing context)"
+    ],
+    "platforms": [
+     "flipkart"
+    ]
+   },
+   {
+    "family": "TEA 250G",
+    "examples": [
+     "TEA 250 GM (flipkart, mrp 200)",
+     "Jivo Premium Tea Leaves 250g | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea (amazon, no mrp)"
+    ],
+    "platforms": [
+     "flipkart",
+     "amazon"
+    ]
+   },
+   {
+    "family": "MINERAL WATER",
+    "examples": [
+     "Jivo Natural Mineral Water | Unprocessed & Sourced Directly from Himalayas | Non-RO | 1L (amazon, mrp 1800)",
+     "Jivo - Mineral Water - 250ML (amazon, no mrp)",
+     "Jivo Natural Mineral Water | Himalayan Origin | Non-RO & Unprocessed | Non-Carbonated | 500ml (amazon, no mrp)",
+     "JIVO Mineral Water 1L (flipkart-minutes, mrp 30)"
+    ],
+    "platforms": [
+     "amazon",
+     "flipkart-minutes"
+    ]
+   },
+   {
+    "family": "TONIC WATER 200ML",
+    "examples": [
+     "JIVO Indian Citric Tonic Water (Pack Of 1 X 200Ml) | Premium G&T Mixer | Low Calorie Flavoured Drink (amazon, mrp 210)",
+     "Indian Tonic Water 200ml (bigbasket, mrp 95)"
+    ],
+    "platforms": [
+     "amazon",
+     "bigbasket"
+    ]
+   },
+   {
+    "family": "GIFT BOX / DRY FRUITS HAMPER",
+    "examples": [
+     "GIFT BOX 480G (flipkart, mrp 1999)",
+     "GIFT BOX 240G (flipkart, mrp 999)",
+     "Jivo Dry Fruits Gift Box with Diya's | Roasted Cashews, Almonds | Gift Hamper for Diwali (amazon, mrp 349)",
+     "Jivo Dry Fruits Gift Box | Roasted Cashews, Roasted Almonds with Black Raisins (amazon, mrp 799)",
+     "Jivo Premium Dry Fruits Gift Box with Pure Kashmiri Saffron (Kesar) (amazon, mrp 399)"
+    ],
+    "platforms": [
+     "flipkart",
+     "amazon"
+    ]
+   },
+   {
+    "family": "MAKKI ATTA 500G",
+    "examples": [
+     "MAKKI ATTA 500 GM (flipkart, mrp 149)"
+    ],
+    "platforms": [
+     "flipkart"
+    ]
+   },
+   {
+    "family": "ENERGY DRINK 200ML",
+    "examples": [
+     "JIVO Jump Energy Drink, Zero Sugar 200ml (amazon, no mrp)"
+    ],
+    "platforms": [
+     "amazon"
+    ]
+   },
+   {
+    "family": "BASMATI RICE 5KG",
+    "examples": [
+     "RICE 5KG (flipkart, no mrp \u2014 Jivo Organic Long Grain Basmati Rice 5kg; master only has 1KG)"
+    ],
+    "platforms": [
+     "flipkart"
+    ]
+   }
+  ],
+  "combo_count": 169,
+  "other_brand_or_category": [
+   "SANO HONEY 500G / 1KG (Sano sister brand \u2014 Sano Pure Honey 500g mrp 599 on amazon; SANO HONEY 500 GM and SANO HONEY 1KG on flipkart both unpriced; Sano brand should have its own master, not matched to Jivo SKUs)",
+   "SANO CANOLA 2L (Sano sister brand \u2014 SANO CANOLA 2L on flipkart, no mrp; 2L size is absent from master even for Sano, making it a gap in the Sano master too)",
+   "SANO_CLASSIC 5L flipkart (scraper name-match miss \u2014 product already exists in master as 'SANO CLASSIC 5L' mrp 6499; the underscore in 'SANO_CLASSIC' tripped the name heuristic; not a missing SKU)",
+   "EXTRA LIGHT 3L amazon mrp=2997 (product exists in master mrp=2200; this is an MRP discrepancy row, not a missing SKU \u2014 e-com team should investigate the \u20b9797 gap)",
+   "EXTRA VIRGIN 2L amazon mrp=2998 (product exists in master mrp=2700; MRP discrepancy of \u20b9298 \u2014 not a missing SKU)",
+   "EXTRA VIRGIN 200ML amazon mrp=598 vol_ml=400 (product exists in master mrp=350; vol_ml is a scraper bug \u2014 title clearly says 200ML; MRP discrepancy of \u20b9248 to investigate)",
+   "COCONUT 1L amazon mrp=1400 vol_ml=2000 (product exists in master mrp=700; vol_ml is a scraper bug \u2014 title says 1 Litre; MRP discrepancy of \u20b9700 to investigate)",
+   "Coffee 100g flipkart mrp=350 (product exists in master as 'COFFEE' mrp=350; exact MRP match, scraper name-heuristic miss \u2014 not a missing SKU)",
+   "CASSEROLE 2200 and CASSEROLE 3200 (flipkart, kitchenware \u2014 non-food category, likely Jivo-branded kitchen storage; should be tracked in a separate kitchenware price sheet)",
+   "LUNCH BOX (flipkart, kitchenware)",
+   "ROTI BOX (flipkart, mrp 899 \u2014 food storage / kitchenware, not an edible oil or food product)",
+   "FLIP PRO and FLIP PRO 1000 (flipkart, internal Flipkart promotional scheme codes \u2014 not real product listings; should be excluded from scrape)",
+   "JIVO-INFI-FERRERO-1000, JIVO-INFI-CRYPTO-500, JIVO-INFI-ELEGANCE-PACK-1 (flipkart, internal reward/gifting scheme SKU codes \u2014 not purchasable products; should be excluded from price tracking)"
+  ]
+ }
+}

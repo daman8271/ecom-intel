@@ -1,0 +1,7144 @@
+{
+ "amazon": [
+  {
+   "key": "B0FJG5CFFD",
+   "raw": "Jivo KOFFIE | Instant Smooth Premium Coffee |50gm (Pack of 1)",
+   "vol": 50,
+   "mrp": 599,
+   "match": "COFFEE",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C8Z7SZG6",
+   "raw": "Jivo Koffie Instant Smooth Premium Coffee 100 gm | Soluble Instant Coffee Powder | Easy to Prepare with Rich Aroma and Taste | Coffee for Daily Use",
+   "vol": 100,
+   "mrp": 350,
+   "match": "COFFEE",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D2TVRMB6",
+   "raw": "Jivo DIet Fizzy Peach Natural Spring Water - Peach, 750ml (Pack of 1)",
+   "vol": 750,
+   "mrp": 1200,
+   "match": "SPRING WATER 750ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DVYKNPD1",
+   "raw": "Jivo Zero Sugar Mango Healthy Wheatgrass 500Ml Pack Of 1",
+   "vol": 500,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B091XPD9J3",
+   "raw": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre | Contains Omega-3 (ALA) and Vitamin E | Ideal for Cooking, Frying, Pickling & Daily Use |",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CYH9N7YW",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice (Apple, Sugar Free, 200 ml)",
+   "vol": 200,
+   "mrp": 695,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CYHFFZXG",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200 ml (Ginger Ale Sugar Free)",
+   "vol": 200,
+   "mrp": 695,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CYHHP5XZ",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200ml (Mojito Sugar Free)",
+   "vol": 200,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B2RW9N9F",
+   "raw": "Jivo A2 Cow Ghee 1 Litre | Traditional Bilona Method | Prepared from A2 Cow Milk | Rich Aroma and Distinct Flavour for Diverse Culinary Applications | Suitable for Cooking, Frying, Baking & Indian Recipes",
+   "vol": 1000,
+   "mrp": 2380,
+   "match": "A2 GHEE 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DP33QGW3",
+   "raw": "JIVO Healthy Wheatgrass Juice with Apple | Boosts Immunity & Detox | 200ml",
+   "vol": 200,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DTZ2QJSD",
+   "raw": "JIVO Healthy Wheatgrass Juice with Apple | Boosts Immunity & Detox | 200ml",
+   "vol": 200,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TN56P9",
+   "raw": "Jivo Raw Basil Seeds for weight loss - 200gm | Sabja Seed, Takmuria Seeds 200g (Jar Pack) | High Fibre And Omega 3",
+   "vol": 200,
+   "mrp": 599,
+   "match": "BASIL SEEDS 200G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8VZKFHG",
+   "raw": "Jivo Raw Basil Seeds for weight loss - 400gm | Sabja Seed, Takmuria Seeds 400g (Jar Pack) | High Fibre And Omega 3",
+   "vol": 400,
+   "mrp": 599,
+   "match": "BASIL SEEDS 400G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8VZ1JLD",
+   "raw": "Jivo Raw Basil Seeds for Weight Loss | Sabja Seeds, Tukmaria Seeds | High in Fiber, Omega-3 & Nutrients | Ideal for Smoothies, Drinks, and Baking | 100% Natural, Vegan, Gluten-Free - 800g",
+   "vol": 800,
+   "mrp": 599,
+   "match": "BASIL SEEDS 800G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8L8NR8Q",
+   "raw": "Jivo Black Pepper Whole Natural Peppercorns | Premium Kali Mirch | Perfect for Cooking, Baking & Seasoning | No Artificial Colors, Preservatives, or Taste Enhancers | Pepper- 100g",
+   "vol": 100,
+   "mrp": 420,
+   "match": "BLACK PAPER 100G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DTZ2PX56",
+   "raw": "JIVO Healthy Wheatgrass Juice with Blue Berry Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": 421,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DP34VYBF",
+   "raw": "JIVO Healthy Wheatgrass Juice with Blue Berry Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09MJ6QDX7",
+   "raw": "Jivo Cold Pressed Canola Oil 1 Litre | Natural Edible Cooking Oil | Ideal for Frying, Baking & Daily Use",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0152TWWSQ",
+   "raw": "JIVO Canola Cold Pressed Edible Oil 1+1 Litres | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines | Cold Pressed Oil for Cooking",
+   "vol": 2000,
+   "mrp": 750,
+   "match": "CANOLA 1+1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B077ZN4G28",
+   "raw": "JIVO Canola Cold Pressed Edible Oil - 5 Litres | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines | Cold Pressed Oil for Cooking (Pack of 1)",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B07H92SMCP",
+   "raw": "JIVO Canola Cold Pressed Edible Oil 5 Litres with 1 Litre | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines.",
+   "vol": 6000,
+   "mrp": 2250,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CGZS97ZX",
+   "raw": "Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use | Recommended by Indian Medical Association",
+   "vol": 2000,
+   "mrp": 700,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C1ZHRZDF",
+   "raw": "JIVO Raw Unroasted Chia Seeds For High Protein | Omega 3 & Fiber For Weight Loss Management | Healthy Snacks | Rich in Calcium 250grm",
+   "vol": 200,
+   "mrp": 1099,
+   "match": "CHIA SEEDS 200G",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09MJ3KLFP",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice ( Cola , 250 ml (Pack of 6))",
+   "vol": 250,
+   "mrp": 4999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0D8PMQCBV",
+   "raw": "Jivo Cumin Seeds | Fresh, Aromatic & Natural Spice for Cooking | No Added Colours or Preservatives | Perfect for Baking, Seasoning, and Flavoring | Gluten-Free, Whole Jeera Seeds - 100g",
+   "vol": 100,
+   "mrp": 4999,
+   "match": "CUMIN SEEDS 100G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CM6BH1S6",
+   "raw": "Jivo Desi Ghee 1 Litre | Traditional Preparation from Desi Cow Milk | Suitable for Cooking, Frying & Baking | Authentic Aroma and Flavor | Ideal for Indian and Continental Recipes",
+   "vol": 1000,
+   "mrp": 2500,
+   "match": "A2 GHEE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "B0CM68YS7X",
+   "raw": "Jivo Desi Ghee 500 ML | Traditional Preparation from Desi Cow Milk | Suitable for Cooking, Frying & Baking | Authentic Aroma and Flavor | Ideal for Indian and Continental Recipes",
+   "vol": 500,
+   "mrp": 849,
+   "match": "A2 GHEE 500ML",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 500ML"
+   ],
+   "combo": false
+  },
+  {
+   "key": "B0B2S1F6R8",
+   "raw": "Jivo A2 Ghee 500 ML | Bilona Method Traditionally Prepared from A2 Cow Milk | Suitable for Cooking, Frying, Baking & Indian Recipes | Rich Aroma and Distinct Flavour for Diverse Culinary Applications",
+   "vol": 500,
+   "mrp": 2380,
+   "match": "A2 GHEE 500ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DFQ44438",
+   "raw": "Jivo Dry Fruits Gift Box - 200g SBS (50g Each of Cashews, Almonds, Pistachios, and Raisins) | Healthy Gift Hamper for Every Occasion | Diwali Gift Pack for Family, Friends, Corporate, and Office Gifts | Festive Celebration Combo Pack",
+   "vol": 200,
+   "mrp": 890,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0DFQ44RYH",
+   "raw": "Jivo Dry Fruits Gift Box Wooden- 400g (100g Each of Cashews, Almonds, Pistachios, and Raisins) | Healthy Gift Hamper for Every Occasion | Diwali Gift Pack for Family, Friends, Corporate, and Office Gifts | Festive Celebration Combo Pack",
+   "vol": 400,
+   "mrp": 890,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0DFPXMGF9",
+   "raw": "Jivo Dry Fruits Gift Box Golden - 400g (100g Each of Cashews, Almonds, Pistachios, and Raisins) | Healthy Gift Hamper for Every Occasion | Diwali Gift Pack for Family, Friends, Corporate, and Office Gifts | Festive Celebration Combo Pack",
+   "vol": 400,
+   "mrp": 890,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0D2KLSTFZ",
+   "raw": "Jivo Extra Fizzy Soda, 750 ml, Soda (Pack of 1)",
+   "vol": 750,
+   "mrp": 695,
+   "match": "SODA 750ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09HZY97FR",
+   "raw": "Jivo Extra Light Olive Oil 1 Litre | Imported from Spain | Everyday Cooking, Dressings, Salad, Soups, Dips, and Marinades All Culinary Uses | Light, Flavorful High MUFA & Rich in Antioxidants",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "EXTRA LIGHT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09NXCPZW1",
+   "raw": "Jivo Extra Light Olive Oil 2 Litre | Imported from Spain | Everyday Cooking, Dressings, Salads, Soups, Dips & Marinades | Low in Saturated Fat | Olive Oil in Convenient Pet Bottle for Easy Pouring",
+   "vol": 2000,
+   "mrp": 2799,
+   "match": "EXTRA LIGHT 2L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B07MNWTBDT",
+   "raw": "Jivo Extra Light Olive Oil 5 Litre TIN | Imported from Spain | Recommendable Daily Cooking for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat |",
+   "vol": 5000,
+   "mrp": 6499,
+   "match": "EXTRA LIGHT 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B07WSJ45Q4",
+   "raw": "Jivo Extra Light Daily Cooking Olive Oil 1 Ltr (Pack of 2) | Rich Quality Healthy Cooking Oil for Indian Cuisine, Ideal for Frying, Roasting, and Baking",
+   "vol": 2000,
+   "mrp": 2998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CGM7THVN",
+   "raw": "Jivo Extra Virgin Olive Oil 500 ML Pet Bottle | Imported from Spain | Contains Vitamin E | Cholesterol-Free| Natural and Cold Pressed Cooking Oil, for Dressings, Salad and Soups, Dips & Marinades",
+   "vol": 500,
+   "mrp": 999,
+   "match": "EXTRA VIRGIN 500ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BZ8K3DQP",
+   "raw": "JIVO Pure Extra Virgin Coconut Oil 1 Litre | Nourishing Oil Bottle for Skin | Hair Growth | Baby Massage | Good for Salad Dressing Zero Cholesterol and Trans Fat | Keto diet & Cooking",
+   "vol": 1000,
+   "mrp": 700,
+   "match": "COCONUT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CGM7KSFV",
+   "raw": "JIVO Pure Extra Virgin Coconut Oil, 200Ml Nourishing Oil Bottle for Skin & Hair Growth| Good for Salad Dressing Zero Cholesterol and Trans Fat| Keto diet & Cooking",
+   "vol": 200,
+   "mrp": 285,
+   "match": "COCONUT 200ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CGN9Y3PT",
+   "raw": "JIVO Pure Extra Virgin Coconut Oil 500 ml | Nourishing Oil Bottle for Skin | Hair Growth | Baby Massage | Good for Salad Dressing Zero Cholesterol and Trans Fat | Keto diet & Cooking",
+   "vol": 500,
+   "mrp": 399,
+   "match": "COCONUT 500ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B098XPFQ28",
+   "raw": "Jivo Extra Virgin Olive Oil, 2 Litres - Ideal for Dressings, Salads, Soups, Dips, and Marinades. Perfect for Healthy Cooking and Gourmet Delights",
+   "vol": 2000,
+   "mrp": 2998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CGNBY24B",
+   "raw": "Jivo Extra Virgin Olive Oil 200 ML Pet Bottle | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil | Ideal use for Dressings, Salad and Soups, Dips & Marinades.",
+   "vol": 200,
+   "mrp": 299,
+   "match": "EXTRA VIRGIN 200ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DP36SDGD",
+   "raw": "Jivo Fizzy Soda | Flavoured With Lemon 750ML | Carbonated Water | Zero Sugar, Zero Calories I Pack Of 1",
+   "vol": 750,
+   "mrp": 210,
+   "match": "SODA LEMON 750ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TPCV16",
+   "raw": "Jivo Flax Seeds | Raw Alsi Seeds for Eating | High in Protein, Iron, & Dietary Fibre | Rich in Essential Nutrients | Ideal for Adding to Smoothies, Salads, Yogurt & Baking | Healthy Snack Option- 200g",
+   "vol": 200,
+   "mrp": 1099,
+   "match": "FLAX SEEDS 200G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TMZ523",
+   "raw": "Jivo Flax Seeds | Raw Alsi Seeds for Smoothies, Hair Growth, Baking & More | Rich in Omega-3, Fiber, Protein & Essential Nutrients | 100% Natural, Vegan, Gluten-Free for Optimal Health - 400g",
+   "vol": 400,
+   "mrp": 599,
+   "match": "FLAX SEEDS 400G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TN9B9B",
+   "raw": "Jivo Organic Flax Seeds | Raw Alsi Seeds for Smoothies, Cereals, Baking & More | Rich in Omega-3, Fiber, Protein & Essential Nutrients | 100% Natural, Vegan, Gluten-Free for Optimal Health - 800g",
+   "vol": 800,
+   "mrp": 1099,
+   "match": "FLAX SEEDS 800G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C1V6DG9C",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice (Jeera, 250 ml (Pack of 6)",
+   "vol": 250,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CSPMN88F",
+   "raw": "Jivo Natural Mineral Water | Unprocessed & Sourced Directly from Himalayas | Non-Ro Mineral Water Bottle | Quick Hydration Solution | Natural Mineral 1L Bottle",
+   "vol": 1000,
+   "mrp": 1800,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CST1ZYNY",
+   "raw": "Jivo - Mineral Water - 250ML",
+   "vol": 250,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D7CXGP3D",
+   "raw": "Jivo Black Cardamom | Badi Elaichi Sabut Moti Kali Elaichi Whole Organic Black Cardamom | Perfect for Cooking, Baking & Seasoning | Adds Flavor to Dishes| No Artificial Colours or Preservatives - 100g",
+   "vol": 100,
+   "mrp": 300,
+   "match": "BLACK CARDAMOM 100G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DS69LNFB",
+   "raw": "Jivo Black Sliced Olives \u2013 470g | Finest Olives from Egypt | Evenly Cut Black Olive Slices | Suitable for Pizza, Pasta, Salads & Wraps | Ready to Eat Snack Smart Choice",
+   "vol": 470,
+   "mrp": 330,
+   "match": "BLACK OLIVE 470G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BXWZQDTG",
+   "raw": "JIVO Canola Cold Press Oil,Cooking Oil 15 LTR | Cooking Oil for Daily use | Recommended by Indian Medical Association | (Pack of 1)",
+   "vol": 15000,
+   "mrp": 2700,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B07M6FYXWL",
+   "raw": "Jivo Canola Oil,1 Litre Refined Pouch Cooking Oil for Daily use | Recommended by Indian Medical Association",
+   "vol": 1000,
+   "mrp": 299,
+   "match": "CANOLA 1L POUCH",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CRF3ZQWL",
+   "raw": "Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management | Rich in Calcium, Protein & Fiber Omega 3 | Non GMO and fibre, Reusable | Antioxidant | Healthy Breakfast Snack 200g",
+   "vol": 200,
+   "mrp": 299,
+   "match": "CHIA SEEDS 200G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CRH5W2R7",
+   "raw": "Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management | Rich in Calcium, Protein & Fiber Omega 3 | Non GMO and fibre, Reusable | Antioxidant | Healthy Breakfast Snack 400g",
+   "vol": 400,
+   "mrp": 599,
+   "match": "CHIA SEEDS 400G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CRHR4KYS",
+   "raw": "Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management | Rich in Calcium, Protein & Fiber Omega 3 | Non GMO and fibre, Reusable | Antioxidant | Healthy Breakfast Snack 800g",
+   "vol": 800,
+   "mrp": 2600,
+   "match": "CHIA SEEDS 800G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D7CVQG35",
+   "raw": "Jivo Organic Cinnamon Sticks Bark | Finest Dalchini Sticks (Cinnamon Quills) | Whole Spices Sourced from Premium Origins | No Artificial Colors or Preservatives | Pack for Cooking & Seasoning - 100g",
+   "vol": 100,
+   "mrp": 370,
+   "match": "CINNAMON BARK 100G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D7CZ3WYW",
+   "raw": "Jivo Whole Clove (Laung) | 100 gm | No artificial colours or preservatives",
+   "vol": 100,
+   "mrp": 280,
+   "match": "CLOVE 100G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D9DBHG18",
+   "raw": "Jivo Extra Light Olive Oil 500ml | Imported from Spain | Everyday Use for Cooking, Dressings, Salad, Soups, Dips, and Marinades | Light, Flavorful High MUFA & Rich in Antioxidants",
+   "vol": 500,
+   "mrp": 499,
+   "match": "EXTRA LIGHT 500ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CT5MYSDS",
+   "raw": "Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil | Natural Antioxidants | 1 Litre Pack",
+   "vol": 1000,
+   "mrp": 3750,
+   "match": "GOLD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D7CZD2PB",
+   "raw": "Jivo Green Cardamom 8mm Elaichi | Whole Natural Spices | No Artificial Colors or Preservatives | Distinctive Flavor & Aroma | Premium Idukki Cardamom for Cooking, Baking & Tea - 100g",
+   "vol": 100,
+   "mrp": 799,
+   "match": "GREEN CARDAMOM 100G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CKFFW9B6",
+   "raw": "Jivo Groundnut Oil 1 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vitamin A & D Fortified, Chemical-Free Ground Nut Oil 1L",
+   "vol": 1000,
+   "mrp": 560,
+   "match": "GROUNDNUT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CKFFGC31",
+   "raw": "Jivo Groundnut Oil 5 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vitamin A & D Fortified, Chemical-Free Ground Nut Oil",
+   "vol": 5000,
+   "mrp": 2800,
+   "match": "GROUNDNUT 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DRYVRYYM",
+   "raw": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch | Recommendable for Roasting, Frying, Baking All type of Cuisines |",
+   "vol": 1000,
+   "mrp": 3750,
+   "match": "MUSTARD 1L POUCH",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TR7R3Y",
+   "raw": "Jivo Raw Pumpkin Seeds | Healthy Snack for Breakfast | High in Fiber & Antioxidants | Ideal for Diets & Weight Management | Nutritious Superfood for Daily Wellness | Hygienically Packed - 200g",
+   "vol": 200,
+   "mrp": 1099,
+   "match": "PUMPKIN SEEDS 200G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TR1ZCG",
+   "raw": "Jivo Raw Pumpkin Seeds | Healthy Snack for Breakfast | High in Fiber & Antioxidants | Ideal for Diets & Weight Management | Nutritious Superfood for Daily Wellness | Hygienically Packed - 400g",
+   "vol": 400,
+   "mrp": 1099,
+   "match": "PUMPKIN SEEDS 400G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TPCPLS",
+   "raw": "Jivo Raw Pumpkin Seeds | Healthy Snack for Breakfast | High in Fiber & Antioxidants | Ideal for Diets & Weight Management | Nutritious Superfood for Daily Wellness | Hygienically Packed - 800g",
+   "vol": 800,
+   "mrp": 1099,
+   "match": "PUMPKIN SEEDS 800G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DBHQ2QWW",
+   "raw": "Jivo Rice Bran Oil 1 Litre Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Saut\u00e9ing & Baking | Chemical-Free",
+   "vol": 1000,
+   "mrp": 285,
+   "match": "RICE BRAN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DBJ13FKL",
+   "raw": "Jivo Rice Bran Oil 5 Litre | Premium Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Sauteing & Baking | Chemical-Free",
+   "vol": 5000,
+   "mrp": 1425,
+   "match": "RICE BRAN 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BZ4WPT43",
+   "raw": "Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil for Daily Use | Ideal for Roasting, Frying, and Baking | High in Omega-3 and Low in Saturated Fat |",
+   "vol": 1000,
+   "mrp": 4999,
+   "match": "SOYABEAN 1L POUCH",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C9Q1S6QG",
+   "raw": "Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil | Cooking Oil | Rich in Antioxidants & Vitamins | Pro Lifestyle | 5L Family Pack",
+   "vol": 5000,
+   "mrp": 1050,
+   "match": "GOLD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09TWL9RFR",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice (lemon, 250 ml (Pack of 6))",
+   "vol": 250,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0DTZ2MQZW",
+   "raw": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DP336PTY",
+   "raw": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": 2800,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DM2G4YCC",
+   "raw": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1)",
+   "vol": 500,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DTZ1YLRT",
+   "raw": "JIVO Healthy Wheatgrass Juice with Mojito Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": 421,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DP3388HP",
+   "raw": "JIVO Healthy Wheatgrass Juice with Mojito Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": 360,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09NYCSQLF",
+   "raw": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre | Recommended for Roasting, Frying, Baking All type of Cuisines |",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CGZQMJHY",
+   "raw": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 2 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| Mustard oil",
+   "vol": 2000,
+   "mrp": 3750,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09MHZLRSG",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice ( orange , 250 ml (Pack of 6))",
+   "vol": 250,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0821DNF2W",
+   "raw": "Jivo Daily Cooking Pomace Olive Oil 1 Litre | Imported from Spain | Rich in Monounsaturated Fatty Acids (MUFA) | Low in Saturated Fat | Ideal for Roasting, Frying, and Baking.",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C4FFYSLV",
+   "raw": "Jivo Everyday Cooking Pomace Olive Oil 2 Litre | Imported from Spain | Rich in MUFA, Low in Saturated Fat | Ideal for Frying, Roasting & Baking | Cooking Oil for Daily Use.",
+   "vol": 2000,
+   "mrp": 1449,
+   "match": "JIVO POMACE 2L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B07X53ZL6J",
+   "raw": "Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking | Imported From Spain | Recommended for roasting, frying, and baking all types of cuisines | Rich in MUFA | Low in Saturated Fat.",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "JIVO POMACE 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0917BJZQ2",
+   "raw": "Jivo Pomace Olive Oil, 1L (Pack of 2) for Cooking, Recommendable for Roasting Dressings Salad and Soups, Dips & Marinades Healthy Oil for Daily use Baking All type of Cuisines.",
+   "vol": 2000,
+   "mrp": 1498,
+   "match": "JIVO POMACE 2L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B09ZLHZ1T7",
+   "raw": "Jivo Long Grain Basmati Rice - 1kg | Ideal for Pulao, Biryani, and Fried Rice | Trusted for Daily Use | Jivo Basmati Rice | 1 KG Per Packet",
+   "vol": null,
+   "mrp": 800,
+   "match": "RICE 1KG",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DTZ257V4",
+   "raw": "JIVO Healthy Wheatgrass Juice with Rose Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DP33FKCX",
+   "raw": "JIVO Healthy Wheatgrass Juice with Rose Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "vol": 200,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DGTNDH9L",
+   "raw": "Jivo Rosemary Leaves Whole (150g) \u2013 Natural, No Preservatives or Additives, Ideal for Hair Growth, Herbal Tea, Seasoning, and Cooking | Salvia Rosmarinus",
+   "vol": 150,
+   "mrp": 645,
+   "match": "ROSEMARY LEAVES 150G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CK2D4XCH",
+   "raw": "Sano Canola Oil: Cooking Oil for Daily Use | Recommended for All Types of Cuisines | Ideal for Conscious Cooking | 1 Liter (Pack of 1)",
+   "vol": 1000,
+   "mrp": 475,
+   "match": "SANO CANOLA 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CK2B158Y",
+   "raw": "Sano Canola Cooking Oil for Daily Use | Recommended for All Types of Cuisines | Lowest in Saturated Fat Content | Ideal for Health-Conscious Cooking | 5 Litre (Pack of 1) | Smart Cooking Choice",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "SANO CANOLA 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CKBFKQ4P",
+   "raw": "Sano Classic Olive Oil 5 Litre | Ideal for All Indian and Western Cuisines | Perfect for Cooking, Frying, Roasting, Grilling, and Baking | Versatile and Healthy Cooking Oil",
+   "vol": 5000,
+   "mrp": 2700,
+   "match": "SANO CLASSIC 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CCVF1XVS",
+   "raw": "Sano Extra Light Olive Oil 1 Litre | Product of Spain | Ideal for All Indian and Western Cuisines | Perfect for Cooking, Frying, Roasting, Grilling, and Baking | Versatile and Smart Cooking Oil",
+   "vol": 1000,
+   "mrp": 2700,
+   "match": "SANO CLASSIC 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C65W794Z",
+   "raw": "Sano Pure Honey 1 kg | 100% Natural, Organic & Unadulterated | No Sugar Adulteration | Rich in Antioxidants | Healthy Sweetener for Tea & Desserts | Syed 1 Kg",
+   "vol": null,
+   "mrp": 599,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BZVBXP56",
+   "raw": "Sano Pure Honey 500g | 100% Natural, Organic & Unadulterated | No Sugar Adulteration | Rich in Antioxidants | Healthy Sweetener for Tea & Desserts | Syed 500g (Pack of 1)",
+   "vol": 500,
+   "mrp": 599,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C77PZ83B",
+   "raw": "Sano Pure & Fresh Kachi Ghani Mustard Oil - 1 Litre Pet Bottle | High Pungency | Rich in Omega-3 | 100% Natural | Authentic Indian Cooking Oil | Boosts Heart Health",
+   "vol": 1000,
+   "mrp": 235,
+   "match": "SANO MUSTARD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C77VSKBL",
+   "raw": "Sano Pure and Aromatic Kachi Ghani Mustard Oil - 5L Pet Bottle, 100% Natural, Ideal for Cooking, Pickling, and Health Benefits - Edible Oil (Pack of 1)",
+   "vol": 5000,
+   "mrp": 3750,
+   "match": "SANO MUSTARD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CF9RQ9PL",
+   "raw": "Sano Pomace Olive Oil 1L Pet Bottle | Spain-Imported Edible Oil | Ideal for Deep Frying, Saut\u00e9ing & Roasting | High Smoke Point Cooking Oil for Indian Kitchen | 1000ml",
+   "vol": 1000,
+   "mrp": 999,
+   "match": "SANO POMACE 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CFFSWMXZ",
+   "raw": "sano Pomace Olive Oil 5L Ideal for Frying, Roasting & Saut\u00e9ing Rich Neutral Flavour & High Smoke Point Versatile Edible Cooking Oil for Indian Cuisine",
+   "vol": 5000,
+   "mrp": 4599,
+   "match": "SANO POMACE 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C77V6LL7",
+   "raw": "Sano Soyabean Oil 1 Ltr Pet Bottle - Pure, Natural, Nutrient-Rich Cooking Oil | Ideal for Healthy Delights in Cooking, Frying, and Baking | Perfect for Indian and International Cuisines",
+   "vol": 1000,
+   "mrp": 225,
+   "match": "SANO SOYABEAN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C3QYP96Z",
+   "raw": "Sano Soybean Oil 5 Ltr PET Bottle: All-natural, nutrient-rich cooking oil with a high omega-3 content and a low saturated fat content; ideal for delicious and healthful meals",
+   "vol": 5000,
+   "mrp": 1450,
+   "match": "SANO SOYABEAN 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C3QV7FV6",
+   "raw": "Sano Sunflower Oil 1 Litre Pet Bottle - Pure, Nutrient-Rich sunflower Cooking Oil with High Smoke Point - Ideal for Frying, Saut\u00e9ing, and Baking(Pack of 1)",
+   "vol": 1000,
+   "mrp": 540,
+   "match": "SANO SUNFLOWER 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C7KSLVLB",
+   "raw": "sano Sunflower Oil 5 Ltr Pet Bottle Pure, Nutrient Rich Cooking Oil with High Smoke Point Ideal for Frying, Saut\u00e9ing, and Baking All type of Cuisines|",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "SANO SUNFLOWER 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DC6JR4F3",
+   "raw": "Jivo So Olive Oil 1 Litre | Blend of Rice Bran & Olive Oil | Nutritious Cooking Oil for a Healthy Lifestyle | Ideal for Daily Use | Edible Oil",
+   "vol": 1000,
+   "mrp": 325,
+   "match": "SO OLIVE 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DC6WMYM6",
+   "raw": "Jivo So Olive Oil 5 litre | Blend of Rice Bran & Olive Oil | Nutritious Cooking Oil for a Healthy Lifestyle | Ideal for Daily Use | Edible Oil",
+   "vol": 5000,
+   "mrp": 1625,
+   "match": "SO OLIVE 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B6HNNL5B",
+   "raw": "Jivo Cooking Edible Soyabean Oil 1 Litre | High in Omega-6 PUFA | Contains Tocopherols Natural Antioxidant | Suitable for Daily Cooking |",
+   "vol": 1000,
+   "mrp": 225,
+   "match": "SOYABEAN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B6HPPMXL",
+   "raw": "Jivo Cooking Edible Soyabean Oil 5 Litre | High in Omega-6 PUFA | Contains Tocopherols Natural Antioxidant | Suitable for Daily Cooking |",
+   "vol": 5000,
+   "mrp": 1100,
+   "match": "SOYABEAN 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CJJ9S6J1",
+   "raw": "Jivo Cold Pressed Chemical Free Sunflower Oil |For Roasting, Frying, Baking All types of Cuisines | High in Antioxidants, Tasteful and Healthy 2 Litre",
+   "vol": 2000,
+   "mrp": 399,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0991VMDB1",
+   "raw": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres | Chemical-Free Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines.",
+   "vol": 5000,
+   "mrp": 1350,
+   "match": "SUNFLOWER 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B4SJTNF2",
+   "raw": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre | Chemical-Free Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines.",
+   "vol": 1000,
+   "mrp": 275,
+   "match": "SUNFLOWER 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TT92SH",
+   "raw": "Jivo Sunflower Seeds - 200g | Raw & Natural Sunflower Seeds for Snacking | Healthy Snack Option | Ideal for Weight Management & Antioxidants | Great for Diets & Nutrient-Rich Food| Packed with Protein",
+   "vol": 200,
+   "mrp": 4999,
+   "match": "SUNFLOWER SEEDS 200G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TRK651",
+   "raw": "Jivo Sunflower Seeds | Raw & Natural Sunflower Seeds for Healthy Snacking | High in Protein, Fiber & Antioxidants | Ideal for Weight Management, Clean Eating & Nutrient-Rich Diets - 400g",
+   "vol": 400,
+   "mrp": 4999,
+   "match": "SUNFLOWER SEEDS 400G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D8TPSX1V",
+   "raw": "Jivo Sunflower Seeds | Raw, Natural Sunflower Seeds for Healthy Snacking | High in Protein, Fiber & Antioxidants | Ideal for Weight Management, Diets & Clean Eating | Gluten-Free, Non-GMO - 800g",
+   "vol": 800,
+   "mrp": 4999,
+   "match": "SUNFLOWER SEEDS 800G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D5RFT1PS",
+   "raw": "JIVO Indian Citric Tonic Water (Pack Of 1 X 200Ml) | Premium G&T Mixer | Low Calorie Flavoured Drink | 100% Natural Ingredients",
+   "vol": 200,
+   "mrp": 210,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0F9YVR47L",
+   "raw": "Jivo Wheatgrass Punjabi Jeera Juice \u2013 160ml (Pack of 24) | Tangy Cumin Flavored Refreshment | Blended with Fresh Wheatgrass Extract | Convenient PET Bottles | Suitable for Daily Hydration & Refreshing",
+   "vol": 160,
+   "mrp": 2585,
+   "match": "PUNJABI JEERA 160ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FDKZPGX1",
+   "raw": "Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage",
+   "vol": 1000,
+   "mrp": 600,
+   "match": "SESAME OIL 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FF9P7XVX",
+   "raw": "JIVO First Pressed Yellow Mustard Oil 1 Litre | Pili Sarson Oil for Cooking | Chemical-Free | Ideal for Roasting, Frying, Baking | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines",
+   "vol": 1000,
+   "mrp": 395,
+   "match": "YELLOW MUSTARD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DGTFLQMS",
+   "raw": "Jivo Premium Quinoa Gluten Free | Gluten-Free | Saponin Free | High Protein & Fiber | Healthy Breakfast, Diet Food for Weight Management | 100% Wholegrain Cereal | Quinoa Jar 400g",
+   "vol": 400,
+   "mrp": 299,
+   "match": "QUINOA SEEDS 400G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DGT6KQ4F",
+   "raw": "Jivo Premium Quinoa Gluten Free | Gluten-Free | Saponin Free | High Protein & Fiber | Healthy Breakfast, Diet Food for Weight Management | 100% Wholegrain Cereal | Quinoa Jar 800g",
+   "vol": 800,
+   "mrp": 399,
+   "match": "QUINOA SEEDS 800G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DGT6CK3P",
+   "raw": "Jivo Premium Quinoa Gluten Free | Gluten-Free | Saponin Free | High Protein & Fiber | Healthy Breakfast, Diet Food for Weight Management | 100% Wholegrain Cereal | Quinoa Jar 200g",
+   "vol": 200,
+   "mrp": 199,
+   "match": "QUINOA SEEDS 200G",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09XR2YK8S",
+   "raw": "Jivo Extra Virgin Olive Oil 5 litre Tin | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil | Ideal for Dressings, Salad and Soups, Dips & Marinades",
+   "vol": 5000,
+   "mrp": 7999,
+   "match": "EXTRA VIRGIN 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CGM8QLXB",
+   "raw": "Jivo Extra Virgin Olive Oil 250 ML Glass Bottle | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil, for Dressings, Salad and Soups, Dips & Marinades.",
+   "vol": 250,
+   "mrp": 450,
+   "match": "EXTRA VIRGIN 250ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CH13ZG5M",
+   "raw": "Jivo Extra Virgin Olive Oil 2 litre | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil | Ideal for Dressings, Salad and Soups, Dips & Marinades",
+   "vol": 2000,
+   "mrp": 2700,
+   "match": "EXTRA VIRGIN 2L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B093BMGPQC",
+   "raw": "Jivo Extra Virgin Olive Oil 1 litre | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil | Ideal for Dressings, Salad, and Soups, Dips & Marinades",
+   "vol": 1000,
+   "mrp": 1799,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FQCG4R9J",
+   "raw": "Jivo Dry Fruits Gift Box with Diya's | Roasted Cashews, Almonds | Gift Hamper for Diwali, Festivals, Family, Friends & Corporate Gifting.",
+   "vol": null,
+   "mrp": 349,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FNDJBJPV",
+   "raw": "Jivo Pure Kashmiri Saffron | A+ Grade Kesar | Rich in Antioxidants | Boosts Immunity, Skin Glow & Overall Wellness",
+   "vol": 1,
+   "mrp": 900,
+   "match": "SAFFRON 1GMS",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FQCG3Z6X",
+   "raw": "Jivo Dry Fruits Gift Box | Roasted Cashews, Roasted Almonds with Black Raisins | Gift Hamper for Festivals, Family, Friends & Corporate Gifting.",
+   "vol": null,
+   "mrp": 799,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FQ62GQNL",
+   "raw": "Jivo Premium Dry Fruits Gift Box with Pure Kashmiri Saffron (Kesar) | Roasted Cashews,Almonds,Pistachios & Black Raisins | Gift Hamper for Festivals, Family, Friends & Corporate Gifting.",
+   "vol": null,
+   "mrp": 399,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FQC831P8",
+   "raw": "Jivo Premium Dry Fruits Gift Box with First Pressed Groundnut Oil | Roasted Cashews, Almonds, Pistachios & Black Raisins | Gift Hamper for Diwali, Festivals, Family, Friends & Corporate Gifting.",
+   "vol": null,
+   "mrp": 2999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0F3XX13KN",
+   "raw": "JIVO Jump Energy Drink, Zero Sugar 200ml",
+   "vol": 200,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0992GRH3Z",
+   "raw": "Jivo Cold Pressed Chemical Free Sunflower Oil 1 Litre | Ideal for Roasting, Frying, Baking All Types of Cuisines | Healthy Cooking Oil for Daily Use | Pack of 2 Litres",
+   "vol": 2000,
+   "mrp": 3750,
+   "match": "SUNFLOWER 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CQC1YFWL",
+   "raw": "Jivo Groundnut Oil | 5 + 1 Litre | Cold Pressed Groundnut Oil, Cold Pressed Oil, Peanut Oil, Ground Nut Oil, Natural Cooking Oil, Chemical Free (Pack of 2)",
+   "vol": 6000,
+   "mrp": 3200,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B8ZYWC15",
+   "raw": "Jivo Canola Cold Press Edible Oil | Ideal for Roasting, Frying, Baking All type of Cuisines| Everyday Cooking Oil for Daily use (Pack of 3)- 1 Litre each",
+   "vol": 3000,
+   "mrp": 1125,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B7JJHPQ3",
+   "raw": "JIVO Cold Pressed Soyabean Cooking Edible Oil 5 Litre with 1 Litre for Everyday Kitchen Use | Ideal for Roasting, Frying, Baking All Types of Cuisines | Healthy Cooking Oil for Daily Use | (Pack of 6 Litres)",
+   "vol": 6000,
+   "mrp": 3750,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B97QXPVW",
+   "raw": "Jivo Extra Virgin Olive Oil 5 litre with 1Litre (Pack of 6L), 100% natural and cold pressed cooking oil, for Dressings, Salad and Soups, Dips & Marinades.",
+   "vol": 6000,
+   "mrp": 9798,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CWNVJN3B",
+   "raw": "Jivo Gold Oil 1+1 Litre Pack | Blend of Rice Bran & Sunflower Oil | Refined Cooking Oil with Added Vitamins | Cholesterol-Free Edible Oil | Ideal for Deep Frying, Saut\u00e9ing & Daily Cooking",
+   "vol": 2000,
+   "mrp": 3750,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BHW94XRC",
+   "raw": "Jivo Cold Press Canola Edible Oil, Soyabean & Sunflower Oil | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use |(1L Each) (Pack of 3 Litres)",
+   "vol": null,
+   "mrp": 4999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKSN43GK",
+   "raw": "Jivo Cold Pressed Canola oil 1 Litre With Pomace Olive Oil 1L | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use | (Pack of 2L)",
+   "vol": 2000,
+   "mrp": 1124,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CQ5C7GWP",
+   "raw": "Jivo Cold Pressed Groundnut Oil | Natural, Chemical-Free Peanut Oil | 1 Litre Each (Pack of 2) | Ideal for Healthy Cooking, Deep Frying, and Traditional Indian Recipes",
+   "vol": 2000,
+   "mrp": 2000,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0917B9DCL",
+   "raw": "Jivo Pomace Edible Olive Oil Cooking Daily Use | Rich in MUFA | Low in Saturated Fat|| Recommendable for Roasting, Frying, Baking All type of Cuisines (Pack of 3) PET Bottles",
+   "vol": 3000,
+   "mrp": 2247,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B097ZZTW5C",
+   "raw": "Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking \u2013 Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat",
+   "vol": 3000,
+   "mrp": 4999,
+   "match": "EXTRA LIGHT 3L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FDFWHNHK",
+   "raw": "JIVO Cold Pressed Yellow Mustard Oil 1L | Pili Sarson Oil for Cooking | Naturally Cholesterol-Free, Chemical-Free | Ideal for Roasting, Frying, Baking | Pure Mustard Oil for All Cuisines",
+   "vol": 1000,
+   "mrp": 2175,
+   "match": "YELLOW MUSTARD 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09HKPSS96",
+   "raw": "JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "vol": 1000,
+   "mrp": 3750,
+   "match": "MUSTARD 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B08ZNM3KJK",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre with Jivo Extra Light Olive Oil 1 Litre | Cooking Oil for Daily Use | Ideal for Roasting, Frying, Baking All Types of Cuisines.",
+   "vol": null,
+   "mrp": 2475,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CJCG1ZZ4",
+   "raw": "Sano Pomace Olive Oil 3L Pet Bottle - Ideal For Frying, Roasting, & Sauteing | Rich Flavor & High Smoke Point | Versatile Cooking Oil For Indian Cuisine | Healthy Cooking Oil (3 Litre).",
+   "vol": 1000,
+   "mrp": 2997,
+   "match": "SANO POMACE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SANO POMACE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "B07CM4Z12X",
+   "raw": "Jivo Canola Oil Refined Edible Oil (1 L) - Pack of 6",
+   "vol": 1000,
+   "mrp": 2250,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0G6RSM4NJ",
+   "raw": "Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades",
+   "vol": 200,
+   "mrp": 700,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B7JJ7C9W",
+   "raw": "JIVO Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres | Ideal for Roasting, Frying, and Baking | Healthy Cooking Oil for Daily Use (Pack of 2)",
+   "vol": 1000,
+   "mrp": 450,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B092JKPCGP",
+   "raw": "Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 1 LTR (Pet Bottle) | | Recommendable for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat (Pack of 2)",
+   "vol": 6000,
+   "mrp": 7998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CCKZWF5Z",
+   "raw": "Jivo Cold Pressed Soaybean oil 5 Litre with Canola 2 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use (Pack of 3)",
+   "vol": 7000,
+   "mrp": 1850,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CJC38F8C",
+   "raw": "Sano Pomace Olive Oil 2L Pet Bottle Ideal For Frying, Roasting & Sauteing Rich Flavour & High Smoke Point Versatile Cooking Edible Oil For Indian Cuisine.",
+   "vol": 2000,
+   "mrp": 1999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B098XRZ3BX",
+   "raw": "Jivo Extra Virgin Olive Oil 1 Litre With Extra Light Olive Oil 1 Litre | Healthy Cooking Oils for Everyday Use | Ideal for Roasting, Frying, and Baking | Pack of 2 Litres",
+   "vol": null,
+   "mrp": 3298,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FV8S8XT7",
+   "raw": "Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking \u2013 Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat",
+   "vol": 3000,
+   "mrp": 2997,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FQ31J42X",
+   "raw": "Jivo Everyday Cooking Pomace Olive Oil 3 Litre | Imported from Spain | Rich in MUFA, Low in Saturated Fat | Ideal for Frying, Roasting & Baking | Cooking Oil for Daily Use",
+   "vol": 3000,
+   "mrp": 3050,
+   "match": "POMACE 3L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GFFSDTGP",
+   "raw": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 4 Litre | Contains Omega-3 (ALA) and Vitamin E | Ideal for Cooking, Frying, Pickling & Daily Use",
+   "vol": 4000,
+   "mrp": 300,
+   "match": "MUSTARD 4L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FPMH5Q4S",
+   "raw": "JIVO Canola Cold Pressed Edible Oil - 4 Litres | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines | Cold Pressed Oil for Cooking",
+   "vol": 4000,
+   "mrp": 300,
+   "match": "CANOLA 4L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GF22BHZ7",
+   "raw": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 3 Litre | Contains Omega-3 (ALA) and Vitamin E | Ideal for Cooking, Frying, Pickling & Daily Use",
+   "vol": 3000,
+   "mrp": 300,
+   "match": "MUSTARD 3L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GF1Z3DXR",
+   "raw": "JIVO First Pressed Yellow Mustard Oil 5 Litre | Pili Sarson Oil for Cooking | Chemical-Free | Ideal for Roasting, Frying, Baking | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines",
+   "vol": 5000,
+   "mrp": 1795,
+   "match": "YELLOW MUSTARD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GFWHTMT9",
+   "raw": "Jivo Rice Bran Oil 4 Litre | Premium Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Sauteing & Baking | Chemical-Free",
+   "vol": 4000,
+   "mrp": 3500,
+   "match": "RICE BRAN 4L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FPMJPCFM",
+   "raw": "Jivo Sunflower Oil - 4 Litres | Pure & Natural Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines | Sunflower Oil (Pack of 1)",
+   "vol": 4000,
+   "mrp": null,
+   "match": "SUNFLOWER 4L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GDV29RCN",
+   "raw": "Jivo Cold Pressed Chemical-Free Sunflower Oil - 3 Litres | Chemical-Free Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines | Sunflower Oil (Pack of 1)",
+   "vol": 3000,
+   "mrp": 300,
+   "match": "SUNFLOWER 3L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FQ2ZMFB9",
+   "raw": "Jivo Extra Virgin Olive Oil 3 litre | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil | Ideal for Dressings, Salad and Soups, Dips & Marinades",
+   "vol": 3000,
+   "mrp": null,
+   "match": "EXTRA VIRGIN 3L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B078T3Q3SH",
+   "raw": "JIVO Extra Virgin Canola Edible Oil 3 Litres | Vitamin A & D Fortified Cooking Oil | Canada Imported MUFA-Rich Oil | Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+   "vol": 3000,
+   "mrp": 4999,
+   "match": "CANOLA 3L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0F3XWNWV1",
+   "raw": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200ml (Blueberry Sugar Free)",
+   "vol": 200,
+   "mrp": 421,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B8ZM849L",
+   "raw": "Jivo Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle) | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "vol": 7000,
+   "mrp": 6099,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B7JK8Y7X",
+   "raw": "JIVO Soyabean Cooking Edible Oil Everyday Kitchen Use 5 Litre Each - Ideal for Roasting, Frying, and Baking All Types of Cuisines - Healthy Cooking Oil for Daily Use - Pack of 10 Litres",
+   "vol": 10000,
+   "mrp": 2300,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GD7R36B9",
+   "raw": "Jivo Kachi Ghani Mustard Oil (5L) + Makki Atta (500g) Combo | Traditionally Extracted Cold Pressed Sarson Oil | Zero Chemicals | High Smoke Point",
+   "vol": 5000,
+   "mrp": 300,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B94D3S47",
+   "raw": "Jivo Pomace Cooking Olive Oil 5 Litre with Cold Pressed Canola oil 1 Litre | Recommended for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use |(Pack 6L)",
+   "vol": 6000,
+   "mrp": 5374,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B945QDGY",
+   "raw": "Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Cooking Oil for Daily use | (Pack of 6L)",
+   "vol": 6000,
+   "mrp": 6370,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GF8V83FC",
+   "raw": "Jivo Cold Pressed Kachi Ghani Mustard Oil 1L with Makki Atta 500g | Chemical Free Sarson Ka Tel | Traditional Taste & Nutrition | Ideal for Indian Cooking",
+   "vol": 1000,
+   "mrp": 404,
+   "match": "MUSTARD 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "B076S7HLGH",
+   "raw": "Jivo Canola Refined Edible Oils 5+2 Ltr",
+   "vol": 7000,
+   "mrp": 2025,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BJDFHFYS",
+   "raw": "Jivo Cold Pressed Canola Oil 1L with Soyabean Oil 5L | Ideal for Roasting, Frying & Baking | Cooking Oil for Daily Use | (Pack of 6L)",
+   "vol": 6000,
+   "mrp": 1525,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BWRC4F33",
+   "raw": "Jivo Cold Pressed Canola Oil 5 Litre with Extra Virgin Olive Oil 1 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use.",
+   "vol": 6000,
+   "mrp": 3449,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B8ZY57DC",
+   "raw": "Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle) | | Ideal for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat",
+   "vol": 7000,
+   "mrp": 5500,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CCVPCVQY",
+   "raw": "sano Pomace Olive Oil 5+1L- Ideal for Frying, Roasting & Saut\u00e9ing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (Pack of 2)",
+   "vol": 6000,
+   "mrp": 5994,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B3XKKM8K",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre Cooking Oil for Daily Use with Extra Light Olive Oil 2 Litre Everyday Cooking, Dressings, Salads, Soups, Dips & Marinades.",
+   "vol": null,
+   "mrp": 3250,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BHTGCPQ1",
+   "raw": "Jivo Pomace Cooking Olive Oil Pack of 6 Litres (5L Tin with 1L Pet Bottle) | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "vol": 6000,
+   "mrp": 6048,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0B96TXHR6",
+   "raw": "Jivo Cold Pressed Canola Oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines | Cooking Oil for Daily use.",
+   "vol": null,
+   "mrp": 1905,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09Y982VN7",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre + Chemical-free Sunflower Oil 5 Litre | Cooking Oil for Daily use | Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+   "vol": 10000,
+   "mrp": 3000,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BBVG469C",
+   "raw": "Jivo Kachi Ghani Mustard Daily Cooking Oil, Canola Cold Press Edible Oil & Sunflower Oil For Roasting, Frying, Baking All type of Cuisines 1L Each Pack of 3",
+   "vol": null,
+   "mrp": 450,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B09Y96DYZT",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre with Extra light Olive Oil 5 Litre |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association (Pack of 10 L)",
+   "vol": null,
+   "mrp": 8149,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0D6NFLL3M",
+   "raw": "JIVO Extra Virgin Coconut Oil 1 Litre | Multi-Purpose Cooking Oil | Ideal for Salad Dressing, Light Saut\u00e9ing & Low-Heat Cooking | Zero Cholesterol & Trans Fat",
+   "vol": 2000,
+   "mrp": 1400,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GHRRY6C5",
+   "raw": "Jivo Winter Wellness Combo: Pure A2 Desi Cow Ghee 500 ML + Premium Makki Atta (500g) | Gluten-Free, Traditional Taste | Perfect for Makki Ki Roti",
+   "vol": 500,
+   "mrp": 899,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B09Y9C34J3",
+   "raw": "Jivo Pomace Olive Oil 5 Litre & Canola Cold Press Edible Oil 5 Litre | Cooking Oil for Daily use and suitable for all types of cooking",
+   "vol": null,
+   "mrp": 3299,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GVFFSVH2",
+   "raw": "Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades",
+   "vol": 400,
+   "mrp": 800,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GQTK19P6",
+   "raw": "Jivo Premium Tea Leaves 250g (Pack of 3) | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea | Everyday Essential",
+   "vol": 250,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0F9LDTVLN",
+   "raw": "JIVO Extra Virgin Coconut Oil | 500 ml+ 500 ml (Pack of 2) | Multi-Purpose Cold-Pressed Oil | Ideal for Salad Dressing, Light Saut\u00e9ing & Low-Heat Cooking | Zero Cholesterol & Trans Fat Free",
+   "vol": 1000,
+   "mrp": 1390,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BHT59BNQ",
+   "raw": "Jivo Canola Cold Pressed Oil 5 Litres with Soyabean Edible Cooking Oil 5 Litres | High in Omega-6 PUFA with Natural Antioxidant | Suitable for Daily Cooking, Roasting, Frying, Baking & All Types of Cuisines",
+   "vol": null,
+   "mrp": 2800,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CPYBCZN5",
+   "raw": "Sano Canola Oil Cooking Oil for Daily Use | Recommended for All Types of Cuisines | 5L - Pack of 2 | Ideal Choice for Cooking and Versatile Culinary Needs",
+   "vol": null,
+   "mrp": 4999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GQT98GTP",
+   "raw": "Jivo Premium Tea Leaves 250g (Pack of 2) | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea | Everyday Essential",
+   "vol": 250,
+   "mrp": 400,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FFH8J5N9",
+   "raw": "Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",
+   "vol": 2000,
+   "mrp": 2000,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CZP2RZN6",
+   "raw": "Jivo Cold Pressed Chemical Free Sunflower Oil |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy| 1 Litre (Pack of 2)",
+   "vol": 2000,
+   "mrp": 395,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CZP2HYJ5",
+   "raw": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| (Pack of 2)",
+   "vol": 2000,
+   "mrp": 510,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CZP3FZK9",
+   "raw": "Jivo Soyabean Oil | Chemical Free Cooking Oil for Roasting, Frying & Baking | Rich in Omega 3 & 6 | Light & Daily Use Oil | 1 Litre (Pack of 2)",
+   "vol": 2000,
+   "mrp": 450,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPKL94W",
+   "raw": "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil",
+   "vol": 6000,
+   "mrp": 2025,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BGPDMZ5C",
+   "raw": "Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking",
+   "vol": 6000,
+   "mrp": 1625,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPGRP4Z",
+   "raw": "Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter",
+   "vol": 6000,
+   "mrp": 1505,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CZP26VVN",
+   "raw": "Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L)",
+   "vol": 2000,
+   "mrp": 750,
+   "match": "CANOLA 1+1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1+1L"
+   ],
+   "combo": true
+  },
+  {
+   "key": "B0CZP46SJX",
+   "raw": "Jivo Daily Cooking Pomace Olive Oil |1 Litre | Rich in MUFA | Low in Saturated Fat (Pack of 2)",
+   "vol": 2000,
+   "mrp": 1298,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GG7TPQWP",
+   "raw": "Jivo Rice Bran Oil 1 Litre Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Saut\u00e9ing & Baking | Chemical-Free (Pack of 2)",
+   "vol": 2000,
+   "mrp": 570,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPLN64V",
+   "raw": "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)",
+   "vol": 7000,
+   "mrp": 3750,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ513GK",
+   "raw": "Jivo Cold Pressed Sunflower & Soyabean Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": 500,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPL5YVH",
+   "raw": "Jivo Pomace Cooking Olive Oil 5 Litre Tin & Jivo Daily Cooking Pomace Olive Oil |1 Litre",
+   "vol": 6000,
+   "mrp": 5648,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BKQ7T12L",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Kachi Ghani mustard Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use, Ideal for all type of Cuisines |Lowest in Saturated Fat",
+   "vol": 10000,
+   "mrp": 2900,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GG7LVH12",
+   "raw": "Jivo First Pressed Yellow Mustard Oil (Pili Sarson) 1 Litre (Pack of 2) | Chemical Free Cooking Oil | Ideal for Frying, Roasting & Baking | Contains Omega-3 PUFA & Added Vitamins A & D",
+   "vol": 2000,
+   "mrp": 790,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GG7QDSQ5",
+   "raw": "Jivo Groundnut Oil 1 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vitamin A & D Fortified, Chemical-Free Ground Nut Oil 1L (Pack of 2)",
+   "vol": 2000,
+   "mrp": 1120,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FR554MRR",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Vitamin A & D Fortified | for Frying, Roasting & Daily Use | Suitable for Everyday Kitchen Use",
+   "vol": 6000,
+   "mrp": 1325,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPHDRJX",
+   "raw": "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)&Jivo Extra Light Olive Oil, 1L for Cooking",
+   "vol": 6000,
+   "mrp": 3149,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BGPF9BXL",
+   "raw": "Jivo Canola Oil,1 Litre Cold Press & Canola Cold Press Edible Oil Pack of 2, 1 Litre each",
+   "vol": 3000,
+   "mrp": 2700,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPL58VC",
+   "raw": "Jivo Extra Virgin Olive Oil, 1L &Jivo Extra Light Olive Oil, 1L for Cooking",
+   "vol": 2000,
+   "mrp": 2498,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CNQ571SB",
+   "raw": "Jivo Kachi Ghani Mustard Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": 480,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CXJ54RRM",
+   "raw": "Jivo Cold Pressed Groundnut (Peanut) Oil 5 Litre + 1 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking",
+   "vol": 6000,
+   "mrp": 3360,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CZP3G5KZ",
+   "raw": "Jivo Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades. (Pack of 2)",
+   "vol": 2000,
+   "mrp": 2998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0DFWBD79K",
+   "raw": "Jivo So Olive Oil - 1L | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil | Healthy Lifestyle Edible Cooking Oil (Pack of 2)",
+   "vol": 2000,
+   "mrp": 1300,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ6PBQP",
+   "raw": "JIVO Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre | Pack of 2 | Daily Cooking Oil, Recommended for Roasting, Frying, Baking All type of Cuisines|",
+   "vol": 10000,
+   "mrp": 2600,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CZP2HPGL",
+   "raw": "JIVO Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre | Multipurpose Use, Good for Salad Keto Diet Dressing Zero Cholesterol Trans Fat Chemical Free. (Pack of 2)",
+   "vol": 2000,
+   "mrp": 1400,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FR4ZLYCF",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Rice Bran Oil 5 Litre Combo Pack | Chemical Free | Vitamin A & D Fortified | Versatile Use | Suitable for Frying, Roasting & Everyday Cooking Oil",
+   "vol": 6000,
+   "mrp": 1700,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FR5BLRH6",
+   "raw": "Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack | Cooking Oil for Everyday Use | Light Texture & Versatile for Frying, Roasting & Daily Cooking",
+   "vol": 6000,
+   "mrp": 1710,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPL9464",
+   "raw": "Jivo Daily Cooking Pomace Olive Oil |1 Litre &Jivo Extra Light Olive Oil, 1L for Cooking",
+   "vol": 2000,
+   "mrp": 2148,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BKQ5CPL7",
+   "raw": "Jivo Cold Pressed Canola oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1L | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "vol": 6000,
+   "mrp": 1905,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ7QQY5",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo pomace Olive Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use and suitable for all type of cooking | Lowest in Saturated Fat",
+   "vol": 10000,
+   "mrp": 6649,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0C2446FW4",
+   "raw": "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1) & Jivo Extra Virgin Olive Oil 1 litre (Pack of 1)",
+   "vol": 6000,
+   "mrp": 2649,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CNQ5BHGX",
+   "raw": "Jivo Cold Pressed Sunflower & Canola Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": 650,
+   "match": "CANOLA 1+1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1+1L"
+   ],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ73H9M",
+   "raw": "Jivo Kachi Ghani Mustard Oil & Cold Pressed Sunflower Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": 530,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CXJ4RJP8",
+   "raw": "Jivo Gold Refined Oil |Blend of Rice Bran Oil & Sunflower Oil | 5+1 Litre",
+   "vol": 6000,
+   "mrp": 1275,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CZP31DXK",
+   "raw": "Jivo Extra Virgin Olive Oil 1 litre | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades [Pack of 2 (1L Pet Bottle)]",
+   "vol": 2000,
+   "mrp": 1998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FR4ZD4BL",
+   "raw": "Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Rice Bran Oil 5 Litre Combo Pack | Vitamin A & D Fortified Chemical Free | Aroma & Light Texture | Suitable for Frying, Roasting & Everyday Cooking",
+   "vol": 6000,
+   "mrp": 1680,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FR55QFJG",
+   "raw": "Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking",
+   "vol": 6000,
+   "mrp": 1305,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FR597DPK",
+   "raw": "Jivo Cold Pressed Canola Oil 5 Litre & Cold Pressed Groundnut (Peanut) Oil 5 Litre Combo Pack | Chemical Free Vitamin A & D Fortified | Suitable for Frying, Roasting & Everyday Cooking",
+   "vol": 10000,
+   "mrp": 4450,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BGPDDXMV",
+   "raw": "Jivo Kachi Ghani Mustard Oil & Cold Pressed Canola Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": 630,
+   "match": "CANOLA 1+1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1+1L"
+   ],
+   "combo": true
+  },
+  {
+   "key": "B0BGPHG2KN",
+   "raw": "Jivo Extra Virgin Olive Oil 5 Litres & Extra Virgin Olive Oil, 1L",
+   "vol": 6000,
+   "mrp": 8998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BGPHR5B4",
+   "raw": "Jivo Olive Oil Extra Light Daily Cooking 5 Litre &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil",
+   "vol": 10000,
+   "mrp": 6874,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BGPJMN5W",
+   "raw": "Jivo Extra Virgin Olive Oil 5 litres, 100% natural and cold pressed cooking oil & Marinades.&Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN)",
+   "vol": 10000,
+   "mrp": 14498,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BGPMHY6S",
+   "raw": "Jivo Extra Light Olive Oil, 1L for Cooking, & Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN)",
+   "vol": 6000,
+   "mrp": 7998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BKQ4B6C4",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre with Jivo Extra light Olive Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association | Lowest in Saturated Fat",
+   "vol": 10000,
+   "mrp": 8149,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ58HBT",
+   "raw": "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Chemical-free Sunflower Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association",
+   "vol": 10000,
+   "mrp": 3000,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ59RHB",
+   "raw": "Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "vol": 6000,
+   "mrp": 8374,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ6S25F",
+   "raw": "Jivo Canola Cold Press Edible Oil 1 Litre + Jivo Extra light Olive Oil 1 Litre | Pack of 2 | Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association",
+   "vol": 2000,
+   "mrp": 1874,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ7CT6F",
+   "raw": "Jivo Cold Pressed Canola oil 5 Litre With Pomace Olive Oil 1L | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "vol": 6000,
+   "mrp": 2299,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ7GXMR",
+   "raw": "Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Cold Pressed Canola oil 1 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |(Pack 6L)",
+   "vol": 6000,
+   "mrp": 5374,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BKQ7HMF7",
+   "raw": "Jivo Extra light olive oil 5 Litre with Extra Virgin olive oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "vol": 6000,
+   "mrp": 7498,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ7SQRW",
+   "raw": "Jivo Canola Cold Press Edible Oil, Extra Virgin Olive Oil & Kachi Ghani mustard Oil 1Litre Each | Healthy Cooking Oil for Daily use, Ideal for all Cuisines | Lowest in Saturated Fat(Pack of 3 Litres)",
+   "vol": 3000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ7W3V8",
+   "raw": "Jivo Extra Light Olive Oil 1 Litre + JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+   "vol": 2000,
+   "mrp": 1754,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ7W42G",
+   "raw": "Jivo Extra light Olive Oil, Extra Virgin Olive Oil & Pomace Olive Oil (1L Each)|Healthy Cooking Oil for Daily use| Lowest in Saturated Fat, Chemical free (Pack of 3 Litres)",
+   "vol": 3000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0BKQ8YQNH",
+   "raw": "Jivo Canola Cold Press Edible Oil, Kachi Ghani mustard Oil & Chemical Free Cold Pressed Sunflower Oil (5L Each) | |Healthy Cooking for Daily use | Organic & natural Oil (15 Litres)",
+   "vol": 15000,
+   "mrp": 4250,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BKQ99TCH",
+   "raw": "Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Extra light olive oil 5 Litre |Pack of 2 | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "vol": 10000,
+   "mrp": 11498,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ3HH9Q",
+   "raw": "Jivo Kachi Ghani Mustard Oil 5L & Cold Pressed Canola Oil 1L Lowest in Saturated Fat (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ3HH9T",
+   "raw": "Jivo Cold Pressed Canola Oil 5L & Soyabean Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ3W3NT",
+   "raw": "Jivo Kachi Ghani Mustard Oil & Pomace Olive Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ45LQH",
+   "raw": "Jivo Extra Virgin Olive Oil 5L & Cold Pressed Soyabean Oil 1L (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ488XQ",
+   "raw": "Jivo Cold Pressed Kachi Ghani Mustard Oil 5L & Extra Light Olive Oil 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4DGW8",
+   "raw": "Jivo Cold Pressed Canola & Soyabean Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": 600,
+   "match": "CANOLA 1+1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1+1L"
+   ],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4GQVS",
+   "raw": "Jivo Cold Pressed Kachi Ghani Mustard Oil 5L & Pomace Olive Oil 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4M3QY",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5L & Kachi Ghani Mustard Oil 1L Recommendable for Roasting, Frying, Baking All type of Cuisines (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4R13X",
+   "raw": "Jivo Kachi Ghani Mustard Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4R4L5",
+   "raw": "Jivo Extra Virgin Olive Oil 5L & Cold Pressed Chemical Free Sunflower Oil 1L |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy|(Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4T15N",
+   "raw": "Jivo Cold Pressed Sunflower Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4WKB6",
+   "raw": "Jivo Cold Pressed Soyabean Oil 5L & Extra Light Olive Oil 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4XFWY",
+   "raw": "Jivo Kachi Ghani Mustard Oil 5L & Cold Pressed Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ4Y5YV",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5L & Extra Light Olive Oil 1L for Cooking Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ52ZDF",
+   "raw": "Jivo Cold Pressed Canola Oil 5L & Extra Light Olive Oil 1L Ideal for all type of Cuisines (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ57XLJ",
+   "raw": "Jivo Daily Cooking Pomace Olive Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ58RTY",
+   "raw": "Jivo Cold Pressed Soyabean Oil 5L & 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5BHNC",
+   "raw": "Jivo Cold Pressed Soyabean Oil 5L & Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 L (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5F6BF",
+   "raw": "Jivo Daily Cooking Pomace Olive Oil & Cold Pressed Canola Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5G2RK",
+   "raw": "Jivo Cold Pressed Canola Oil 5L & Extra Virgin Olive Oil 1L for Cooking Dressings, Salad, and Soups, Dips & Marinades (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5GQ59",
+   "raw": "Jivo Cold Pressed Soyabean Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5HMY5",
+   "raw": "Jivo Cold Pressed Soyabean Oil 5L & Extra Virgin Olive Oil Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5J8RW",
+   "raw": "Jivo Cold Pressed Canola & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5V3TQ",
+   "raw": "Jivo Extra Light Olive Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ5WGHK",
+   "raw": "Jivo Extra Light Daily Cooking Oil 5L & Cold Pressed Soyabean Oil 1L (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ62FL7",
+   "raw": "Jivo Extra Light Olive Oil & Cold Pressed Sunflower Oil 1 Litre Each (Pack of 2)",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ62GN8",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5L & Soayabean Oil 1L (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ63CC5",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5L & Pomace Olive Oil Rich in MUFA | Low in Saturated Fat (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ66LHZ",
+   "raw": "Jivo Cold Pressed Canola Oil 5L & Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ6DJRV",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5L & Canola Cooking Oil for Daily use Lowest in Saturated Fat 1L (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ6FGJY",
+   "raw": "Jivo Extra Virgin Olive Oil 5L & Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ6JFJR",
+   "raw": "Jivo Extra Virgin Olive Oil 5L & Daily Cooking Pomace Olive Oil Rich in MUFA | Low in Saturated Fat (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ6QH98",
+   "raw": "Jivo Extra Light Daily Cooking Oil 5L+1L Recommendable for Roasting, Frying, Baking All type of Cuisines| (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ6SBJB",
+   "raw": "Jivo Extra Light Daily Cooking Oil 5L & Kachi Ghani Mustard Oil 1L Recommendable for Roasting, Frying, Baking All type of Cuisines(Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CNQ6TBWG",
+   "raw": "Jivo Extra Light Daily Cooking Oil 5L & Cold Pressed Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0DFY6MYNL",
+   "raw": "Jivo So Olive Oil - 5+1 Liter | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil (Pack of 2)",
+   "vol": 6000,
+   "mrp": 1950,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0DQ48N3JC",
+   "raw": "JIVO Soyabean Cooking Oil 5 Ltr (Pack of 2)",
+   "vol": 10000,
+   "mrp": 2200,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0FR488C7L",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5L & Rice Bran Health Oil 1L",
+   "vol": 6000,
+   "mrp": 1635,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR48BGK9",
+   "raw": "JIVO Soyabean Cooking Oil 5L & Rice Bran Health Oil 5L",
+   "vol": 6000,
+   "mrp": 2525,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR4X61SQ",
+   "raw": "Jivo Extra Light Olive Oil 2L & 1L",
+   "vol": 3000,
+   "mrp": 4298,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR4Z3THL",
+   "raw": "Jivo Rice Bran Health Oil 5L & Gold Premium Refined Oil 5L",
+   "vol": 6000,
+   "mrp": 1650,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR4Z7Z4P",
+   "raw": "Jivo Kachi Ghani Mustard Oil 5L & Gold Refined Oil 5L",
+   "vol": 6000,
+   "mrp": 2300,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR4ZJ9WV",
+   "raw": "JIVO Soyabean Cooking Oil 5L & Gold Refined Oil 5L",
+   "vol": 10000,
+   "mrp": 2150,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR4ZK68G",
+   "raw": "Jivo Gold Refined Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR54HCCH",
+   "raw": "JIVO Canola Cold Pressed Oil 5L & Rice Bran Health Oil 5L",
+   "vol": 10000,
+   "mrp": 3075,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR54SZNG",
+   "raw": "Jivo Groundnut Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "vol": 10000,
+   "mrp": 4150,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR54Z89Q",
+   "raw": "Jivo Rice Bran Health Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "vol": 10000,
+   "mrp": 2775,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR55SDXS",
+   "raw": "Jivo Cold Pressed Sunflower Oil 5L & Gold Premium Refined Oil 5L",
+   "vol": 6000,
+   "mrp": 1575,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR55SGLN",
+   "raw": "Jivo Groundnut Oil 5L & Kachi Ghani Mustard Oil 5L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR55SK65",
+   "raw": "Jivo Rice Bran Health Oil 1L & Kachi Ghani Mustard Oil 5L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR55TBPH",
+   "raw": "Jivo Gold Refined Oil 5L & Rice Bran Health Oil 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR58JFSW",
+   "raw": "JIVO Soyabean Cooking Oil 5L & Kachi Ghani Mustard Oil 5L",
+   "vol": 10000,
+   "mrp": 2350,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR59TGXR",
+   "raw": "Jivo Extra Light Olive Oil 5L & 2L",
+   "vol": 7000,
+   "mrp": 9298,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR5B6NMY",
+   "raw": "JIVO Soyabean Cooking Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR5GDQZM",
+   "raw": "Jivo Rice Bran Health Oil 5L & Kachi Ghani Mustard Oil 5L",
+   "vol": 10000,
+   "mrp": 2675,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GG72R1YG",
+   "raw": "Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Sunflower Seeds 200 g | High Protein & Antioxidants | Healthy Snacking for Diet, Weight Management & Everyday Wellness (Combo Pack)",
+   "vol": 1200,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GG72YVQ1",
+   "raw": "Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Pumpkin Seeds 200 g | High Fiber & Antioxidants | Nutritious Superfood for Diet, Weight Management & Everyday Cooking (Combo Pack)",
+   "vol": 1200,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GG7CRBSC",
+   "raw": "Jivo Cold Pressed Canola Oil 1 L for Daily Cooking + Raw Basil Seeds (Sabja) 200 g | High Fibre & Omega 3 | Ideal for Frying, Baking & Weight Management (Combo Pack)",
+   "vol": 1200,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GG7QM7LY",
+   "raw": "Jivo Extra Virgin Olive Oil 200 ML Pet Bottle | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil | Ideal use for Dressings, Salad and Soups, Dips & Marinades.",
+   "vol": 400,
+   "mrp": 598,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GG7Z3Y9W",
+   "raw": "Jivo First Pressed Sesame Oil | 1L Bottle | Gingelly Oil | Contains MUFA (oleic acid) and Omega-6 PUFA (linoleic acid) | Natural Antioxidants (Lignans) | Ideal for Cooking (Pack of 2)",
+   "vol": 2000,
+   "mrp": 1200,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GH6JG7KZ",
+   "raw": "Jivo Extra Virgin Olive Oil 200ml Pet Bottle + Pomace Olive Oil 1 Litre | Imported from Spain | Rich in MUFA | Low Saturated Fat | Ideal for Cooking, Frying & Salads (Combo Pack)",
+   "vol": 1200,
+   "mrp": 948,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GH6NDVBS",
+   "raw": "Jivo Extra Virgin Olive Oil 200ml Pet Bottle + Pomace Olive Oil 5 Litre | Imported from Spain | Rich in MUFA | Low Saturated Fat | Ideal for Daily Cooking, Frying & Salads (Combo Pack)",
+   "vol": 5200,
+   "mrp": 5298,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GH79RRNC",
+   "raw": "Jivo Extra Virgin Olive Oil 200 ml & Extra Light Olive Oil 1 Litre | Imported from Spain | Low Saturated Fat | Rich in Vitamin E & Antioxidants | Ideal for Cooking, Salads & Dressings (Combo Pack)",
+   "vol": 1200,
+   "mrp": 1798,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GWZXCFR6",
+   "raw": "Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil | Natural Antioxidants | 1 Litre Pack (Pack of 4)",
+   "vol": 4000,
+   "mrp": 900,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GQLH813C",
+   "raw": "Jivo Premium Tea Leaves 250g | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea | Everyday Essential",
+   "vol": 250,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CZP48PGR",
+   "raw": "SANO Pomace Olive Oil 1L Pet Bottle - Ideal for Frying, Roasting & Saut\u00e9ing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (1L) (Pack of 2)",
+   "vol": 2000,
+   "mrp": 1998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0CZP4DS1Z",
+   "raw": "Sano Canola Oil Healthy Cooking Oil for Daily use|Recommended by for all type of Cuisines|Lowest in Saturated Fat- 1L (Pack of 2)",
+   "vol": 2000,
+   "mrp": 950,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GZ7PXVF8",
+   "raw": "Jivo Punjabi Shikanji Wheatgrass Juice | Nimbu Shikanji Masala Drink | Natural Summer Refreshment 160ml (Pack of 24)",
+   "vol": 160,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0GZB4ZQV3",
+   "raw": "Jivo Natural Mineral Water | Himalayan Origin | Non-RO & Unprocessed | Non-Carbonated & Additive-Free Packaged Water for clean hydration | 500 ml Bottle",
+   "vol": 500,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  }
+ ],
+ "amazon-fresh": [
+  {
+   "key": "B0991VMDB1",
+   "raw": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres",
+   "vol": 5000,
+   "mrp": 1350,
+   "match": "SUNFLOWER 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B077ZN4G28",
+   "raw": "Jivo Cold Pressed Canola Oil 5 Litre",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09NXCPZW1",
+   "raw": "Jivo Extra Light Olive Oil 2 Litre",
+   "vol": 2000,
+   "mrp": 2799,
+   "match": "EXTRA LIGHT 2L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B07X53ZL6J",
+   "raw": "Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "JIVO POMACE 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DBHQ2QWW",
+   "raw": "Jivo Rice Bran Oil 1 Litre Cooking Oil",
+   "vol": 1000,
+   "mrp": 285,
+   "match": "RICE BRAN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0821DNF2W",
+   "raw": "Jivo Daily Cooking Pomace Olive Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B093BMGPQC",
+   "raw": "Jivo Extra Virgin Olive Oil 1 litre",
+   "vol": 1000,
+   "mrp": 1799,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09MJ6QDX7",
+   "raw": "Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FR5BLRH6",
+   "raw": "Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack",
+   "vol": 6000,
+   "mrp": 1710,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B091XPD9J3",
+   "raw": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09HZY97FR",
+   "raw": "Jivo Extra Light Olive Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "EXTRA LIGHT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CKFFGC31",
+   "raw": "Jivo Groundnut Oil 5 Litre",
+   "vol": 5000,
+   "mrp": 2800,
+   "match": "GROUNDNUT 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0152TWWSQ",
+   "raw": "Jivo Canola Cold Pressed Edible Oil 1+1 Litres",
+   "vol": 2000,
+   "mrp": 750,
+   "match": "CANOLA 1+1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B0DBJ13FKL",
+   "raw": "Jivo Rice Bran Oil 5 Litre",
+   "vol": 5000,
+   "mrp": 1425,
+   "match": "RICE BRAN 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B6HNNL5B",
+   "raw": "Jivo Cooking Edible Soyabean Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 225,
+   "match": "SOYABEAN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BKQ6PBQP",
+   "raw": "Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre",
+   "vol": 10000,
+   "mrp": 2600,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BGPGRP4Z",
+   "raw": "Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter",
+   "vol": 6000,
+   "mrp": 1505,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GZZS8J7Q",
+   "raw": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+   "vol": 2000,
+   "mrp": 540,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09NYCSQLF",
+   "raw": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C9Q1S6QG",
+   "raw": "Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil",
+   "vol": 5000,
+   "mrp": 1050,
+   "match": "GOLD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FF9P7XVX",
+   "raw": "Jivo First Pressed Yellow Mustard Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 355,
+   "match": "YELLOW MUSTARD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B01IA0XK6W",
+   "raw": "Jivo Cooking Oil - Canola Oil, 1L Bottle",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "B0B4SJTNF2",
+   "raw": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre",
+   "vol": 1000,
+   "mrp": 275,
+   "match": "SUNFLOWER 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0GG7QDSQ5",
+   "raw": "Jivo Groundnut Oil 1 Litre",
+   "vol": 2000,
+   "mrp": 1120,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BZ8K3DQP",
+   "raw": "Jivo Pure Extra Virgin Coconut Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 700,
+   "match": "COCONUT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DC6JR4F3",
+   "raw": "Jivo So Olive Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 325,
+   "match": "SO OLIVE 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CGN9Y3PT",
+   "raw": "Jivo Pure Extra Virgin Coconut Oil 500 ml",
+   "vol": 500,
+   "mrp": 399,
+   "match": "COCONUT 500ML",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DRYVRYYM",
+   "raw": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch",
+   "vol": 1000,
+   "mrp": null,
+   "match": "MUSTARD 1L POUCH",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  }
+ ],
+ "amazon-now": [
+  {
+   "key": "B077ZN4G28",
+   "raw": "Jivo Cold Pressed Canola Oil 5 Litre",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09MJ6QDX7",
+   "raw": "Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09NXCPZW1",
+   "raw": "Jivo Extra Light Olive Oil 2 Litre",
+   "vol": 2000,
+   "mrp": 2799,
+   "match": "EXTRA LIGHT 2L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B07X53ZL6J",
+   "raw": "Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "JIVO POMACE 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B093BMGPQC",
+   "raw": "Jivo Extra Virgin Olive Oil 1 litre",
+   "vol": 1000,
+   "mrp": 1799,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DBJ13FKL",
+   "raw": "Jivo Rice Bran Oil 5 Litre",
+   "vol": 5000,
+   "mrp": 1425,
+   "match": "RICE BRAN 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0991VMDB1",
+   "raw": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres",
+   "vol": 5000,
+   "mrp": 1350,
+   "match": "SUNFLOWER 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B091XPD9J3",
+   "raw": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B09HZY97FR",
+   "raw": "Jivo Extra Light Olive Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "EXTRA LIGHT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0BZ8K3DQP",
+   "raw": "Jivo Pure Extra Virgin Coconut Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 700,
+   "match": "COCONUT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DBHQ2QWW",
+   "raw": "Jivo Rice Bran Oil 1 Litre Cooking Oil",
+   "vol": 1000,
+   "mrp": 285,
+   "match": "RICE BRAN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CKFFGC31",
+   "raw": "Jivo Groundnut Oil 5 Litre",
+   "vol": 5000,
+   "mrp": 2800,
+   "match": "GROUNDNUT 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0821DNF2W",
+   "raw": "Jivo Daily Cooking Pomace Olive Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0152TWWSQ",
+   "raw": "Jivo Canola Cold Pressed Edible Oil 1+1 Litres",
+   "vol": 1000,
+   "mrp": 750,
+   "match": "CANOLA 1+1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "B09NYCSQLF",
+   "raw": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0C9Q1S6QG",
+   "raw": "Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil",
+   "vol": 5000,
+   "mrp": 1050,
+   "match": "GOLD 5L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0FF9P7XVX",
+   "raw": "Jivo First Pressed Yellow Mustard Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 355,
+   "match": "YELLOW MUSTARD 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B4SJTNF2",
+   "raw": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre",
+   "vol": 1000,
+   "mrp": 275,
+   "match": "SUNFLOWER 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0B6HNNL5B",
+   "raw": "Jivo Cooking Edible Soyabean Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 225,
+   "match": "SOYABEAN 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0DM2G4YCC",
+   "raw": "Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) Mango",
+   "vol": 500,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "B0CKFFW9B6",
+   "raw": "Jivo Groundnut Oil 1 Litre",
+   "vol": 1000,
+   "mrp": 560,
+   "match": "GROUNDNUT 1L",
+   "method": "ID-ASIN",
+   "cands": [],
+   "combo": false
+  }
+ ],
+ "flipkart": [
+  {
+   "key": "EDOGDVWEUPPWVGED",
+   "raw": "MUSTARD 5L",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "GHEGWGQH84YSZN6F",
+   "raw": "DESI GHEE 1KG",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "A2 GHEE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGE5WYGYXCRRMF",
+   "raw": "EXTRA LIGHT 1+1+1L",
+   "vol": 3000,
+   "mrp": 4497,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGTERWCWCGYWCH",
+   "raw": "SANO POMACE 1+1L",
+   "vol": 2000,
+   "mrp": 1998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGTKKPP3TWKYSP",
+   "raw": "SANO POMACE 1+1+1L",
+   "vol": 3000,
+   "mrp": 2997,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOFTX47SWWQPRVS",
+   "raw": "CANOLA 5L",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHYSD9JPGYSX4M",
+   "raw": "GROUNDNUT 1+1L",
+   "vol": 2000,
+   "mrp": 1120,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDSH3FJV4PEJDFAN",
+   "raw": "CHIASEEDS 800G",
+   "vol": 800,
+   "mrp": 899,
+   "match": "CHIA SEEDS 800G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CHIA SEEDS 800G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGRF8RMWNYGJPE",
+   "raw": "GOLD 5L",
+   "vol": 5000,
+   "mrp": 1049,
+   "match": "GOLD 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOFRXTMJGAE9DCT",
+   "raw": "CANOLA 1+1L",
+   "vol": 2000,
+   "mrp": 750,
+   "match": "CANOLA 1+1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "SCMH4H8SNYFGCYKM",
+   "raw": "CINNAMON 100G",
+   "vol": 100,
+   "mrp": null,
+   "match": "CINNAMON BARK 100G",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGW6TC5TV8D8JF",
+   "raw": "GROUNDNUT 1+1L",
+   "vol": 2000,
+   "mrp": 1120,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "SCMH2HMC2U7PQMNV",
+   "raw": "BLACK PEPPER 100G",
+   "vol": 100,
+   "mrp": 399,
+   "match": "BLACK PAPER 100G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "BLACK PAPER 100G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGHZTJZEYQJGME",
+   "raw": "EXTRA LIGHT 2L",
+   "vol": 2000,
+   "mrp": 2998,
+   "match": "EXTRA LIGHT 2L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHF54ZZWHRJY2M",
+   "raw": "SO OLIVE 1+1L",
+   "vol": 2000,
+   "mrp": 699,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNZ7EGKQPZ3Y9",
+   "raw": "EXTRA LIGHT 1L+POMACE 1+1L",
+   "vol": 3000,
+   "mrp": 2497,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGUY3FP4Y3RVQM",
+   "raw": "EXTRA VIRGIN 250ML",
+   "vol": 250,
+   "mrp": 450,
+   "match": "EXTRA VIRGIN 250ML",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHF5F6BS3MEHJD",
+   "raw": "COCONUT 500ML",
+   "vol": 500,
+   "mrp": 398,
+   "match": "COCONUT 500ML",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHYVZVGVHUUQYF",
+   "raw": "EXTRA VIRGIN 1L",
+   "vol": 1000,
+   "mrp": 1799,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGWF6UGCWRREGZ",
+   "raw": "GROUNDNUT 1L",
+   "vol": 1000,
+   "mrp": 560,
+   "match": "GROUNDNUT 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDSH63Q3YYYWHMUH",
+   "raw": "SUNFLOWER SEEDS 800G",
+   "vol": 800,
+   "mrp": 899,
+   "match": "SUNFLOWER SEEDS 800G",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGHERSUQWAAU5S",
+   "raw": "CANOLA 1+1+1L",
+   "vol": 3000,
+   "mrp": null,
+   "match": "CANOLA 3L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "GHEGEUJJNSCCHWQ9",
+   "raw": "A2 GHEE 1KG",
+   "vol": 1000,
+   "mrp": 4000,
+   "match": "A2 GHEE 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHBH2FP9ES6GGA",
+   "raw": "RICE BRAN 2L",
+   "vol": 2000,
+   "mrp": 570,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGWYEHTUG4JBS2",
+   "raw": "GROUNDNUT 5L",
+   "vol": 5000,
+   "mrp": 2800,
+   "match": "GROUNDNUT 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGYZHGUSADDG9B",
+   "raw": "JIVO POMACE 1+1L",
+   "vol": 2000,
+   "mrp": 2098,
+   "match": "JIVO POMACE 2L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGYJ7SYY4H2MDH",
+   "raw": "GOLD 1+1L",
+   "vol": 2000,
+   "mrp": 450,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOFRWTZZUBGDJ3Q",
+   "raw": "CANOLA 5+1L",
+   "vol": 6000,
+   "mrp": 2025,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOG3WCXJMZZYVW4",
+   "raw": "JIVO POMACE 1L",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHYRQZ2GQTMYYF",
+   "raw": "CANOLA 1+1L",
+   "vol": 2000,
+   "mrp": 750,
+   "match": "CANOLA 1+1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNZ74XZGU6ZHR",
+   "raw": "EXTRA LIGHT 1L+POMACE 1L+EXTRA VIRGIN 1L",
+   "vol": 3000,
+   "mrp": 3247,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGDTXGGCGFCE88",
+   "raw": "EXTRA VIRGIN 5L",
+   "vol": 5000,
+   "mrp": 5995,
+   "match": "EXTRA VIRGIN 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHBH2URWDMHPXC",
+   "raw": "SO OLIVE 1+1L",
+   "vol": 2000,
+   "mrp": 650,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGFYRUTBCS6YHW",
+   "raw": "JIVO POMACE 1+1+1L",
+   "vol": 3000,
+   "mrp": 2247,
+   "match": "POMACE 3L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGE5XHFZN2HZ9D",
+   "raw": "JIVO POMACE 5L",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "JIVO POMACE 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGRSY3TNXGEJPJ",
+   "raw": "SANO POMACE 5L",
+   "vol": 5000,
+   "mrp": 4599,
+   "match": "SANO POMACE 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDSH4ZGFWPSUY7RH",
+   "raw": "FLAX SEEDS 200GM",
+   "vol": 200,
+   "mrp": 249,
+   "match": "FLAX SEEDS 200G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "FLAX SEEDS 200G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOFZFUFCQDJHTQF",
+   "raw": "EXTRA LIGHT 5L",
+   "vol": 5000,
+   "mrp": 6499,
+   "match": "EXTRA LIGHT 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGPM99CPXSEUYN",
+   "raw": "COCONUT 1L",
+   "vol": 1000,
+   "mrp": 700,
+   "match": "COCONUT 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOH3YZ46GFVHEPB",
+   "raw": "RICE BRAN 5L",
+   "vol": 5000,
+   "mrp": 1425,
+   "match": "RICE BRAN 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOG2NMPHJZH6GJC",
+   "raw": "EXTRA VIRGIN 1+1L",
+   "vol": 2000,
+   "mrp": 3598,
+   "match": "EXTRA VIRGIN 2L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNZ4VHFFK3W6H",
+   "raw": "CANOLA 1+1L + EXTRA VIRGIN 1L",
+   "vol": 3000,
+   "mrp": 2249,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGE62HWA7UFXHW",
+   "raw": "JIVO MUSTARD 1+1L",
+   "vol": 2000,
+   "mrp": 510,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOH5HEHTHKWTHYY",
+   "raw": "SO OLIVE 5L",
+   "vol": 5000,
+   "mrp": 1625,
+   "match": "SO OLIVE 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGMHXYU2PHFW4N",
+   "raw": "JIVO POMACE 2L",
+   "vol": 2000,
+   "mrp": 1449,
+   "match": "JIVO POMACE 2L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGGPFZ2FCJ6UWS",
+   "raw": "SOYABEAN 1+1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOFT6PR7QMYHGJH",
+   "raw": "EXTRA LIGHT 1+1L",
+   "vol": 2000,
+   "mrp": 2998,
+   "match": "EXTRA LIGHT 2L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGE5WHZBGW4SKA",
+   "raw": "EXTRA LIGHT 1L",
+   "vol": 1000,
+   "mrp": null,
+   "match": "EXTRA LIGHT 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDSH4ZF2VBEBFJUQ",
+   "raw": "BASIL SEEDS 200 GM",
+   "vol": 200,
+   "mrp": 349,
+   "match": "BASIL SEEDS 200G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "BASIL SEEDS 200G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOH5HE7FCZJWTAW",
+   "raw": "SO OLIVE 1L",
+   "vol": 1000,
+   "mrp": 325,
+   "match": "SO OLIVE 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHDGDYAUQSWVQV",
+   "raw": "YELLOW MUSTARD 1L",
+   "vol": 1000,
+   "mrp": 340,
+   "match": "YELLOW MUSTARD 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGFGQQKJSKMRYQ",
+   "raw": "JIVO EXTRA LIGHT 1L+EXTRA VIRGIN 1L+POMACE 1L",
+   "vol": 3000,
+   "mrp": 3247,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHF5YKX4KJREGK",
+   "raw": "RICE BRAN 1L",
+   "vol": 1000,
+   "mrp": 285,
+   "match": "RICE BRAN 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOG2NMEHAREDMZ3",
+   "raw": "EXTRA VIRGIN 1L",
+   "vol": 1000,
+   "mrp": 1799,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDSH4YGYGRWRQRGK",
+   "raw": "CHIA SEEDS 200GM",
+   "vol": 200,
+   "mrp": null,
+   "match": "CHIA SEEDS 200G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CHIA SEEDS 200G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGDTNZGDAHUDUJ",
+   "raw": "CANOLA 1L",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGGF7EDC9PFFHH",
+   "raw": "SOYABEAN 5L",
+   "vol": 5000,
+   "mrp": 1100,
+   "match": "SOYABEAN 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "GHEGWGYYFW9EDUBS",
+   "raw": "DESI GHEE 500GM",
+   "vol": 500,
+   "mrp": null,
+   "match": "A2 GHEE 500ML",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 500ML"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDSH7YS5QEEYEZZ6",
+   "raw": "FLAX+SUNFLOWER+PUMKIN+CHIA 800GM",
+   "vol": 800,
+   "mrp": 1246,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDSH5AVFZRHQ43RZ",
+   "raw": "FLAX SEEDS 400 GM",
+   "vol": 400,
+   "mrp": 399,
+   "match": "FLAX SEEDS 400G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "FLAX SEEDS 400G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDSH4ZZGCGCMYVFH",
+   "raw": "PUMPKIN SEEDS 800 GM",
+   "vol": 800,
+   "mrp": 1299,
+   "match": "PUMPKIN SEEDS 800G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "PUMPKIN SEEDS 800G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "SCMHG4HDYS45YCAZ",
+   "raw": "KESAR 1GM",
+   "vol": 1,
+   "mrp": 899,
+   "match": "SAFFRON 1GMS",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SAFFRON 1GMS"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGNPBFT55YKGPR",
+   "raw": "JIVO EXTRA VIRGIN 1L + POMACE 1+1L",
+   "vol": 3000,
+   "mrp": 2997,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDSH4YK7VC4ZCNPU",
+   "raw": "BASIL SEEDS 800 GM",
+   "vol": 800,
+   "mrp": 1099,
+   "match": "BASIL SEEDS 800G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "BASIL SEEDS 800G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGXYEFERFXP3ZY",
+   "raw": "GOLD 1L",
+   "vol": 1000,
+   "mrp": 350,
+   "match": "GOLD 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDSH5YNWYH26YY2G",
+   "raw": "SUNFLOWER SEEDS 200 GM",
+   "vol": 200,
+   "mrp": 499,
+   "match": "SUNFLOWER SEEDS 200G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER SEEDS 200G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGYJ7SWM6ZCTPX",
+   "raw": "GOLD 1+1+1L",
+   "vol": 3000,
+   "mrp": 780,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGG9SHSXHQYQDK",
+   "raw": "CANOLA 1+1+1L",
+   "vol": 3000,
+   "mrp": 1125,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "NDFHG8Y2J3UYQGU3",
+   "raw": "GIFT BOX 480G",
+   "vol": 480,
+   "mrp": 1999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGEMPHENBFJTME",
+   "raw": "CANOLA 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGW6R828YYA8XA",
+   "raw": "GROUNDNUT 5+1L",
+   "vol": 6000,
+   "mrp": 3360,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHEZD5SJDQAYZA",
+   "raw": "GROUNDNUT 5L",
+   "vol": 5000,
+   "mrp": 2800,
+   "match": "GROUNDNUT 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "SCMH4H8HZJ8AHQ9G",
+   "raw": "BLACK CARDAMOM 100G",
+   "vol": 100,
+   "mrp": null,
+   "match": "BLACK CARDAMOM 100G",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHYRPTDVEZVZ8E",
+   "raw": "JIVO POMACE 1L",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "NDFHG8Y5CFM292RK",
+   "raw": "GIFT BOX 240G",
+   "vol": 240,
+   "mrp": 999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "GHEHYGKVZRBKDK9U",
+   "raw": "DESI GHEE 1KG 2PCS",
+   "vol": 1000,
+   "mrp": null,
+   "match": "A2 GHEE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "QWRGEMQWQCHJBZHF",
+   "raw": "POMACE 1L",
+   "vol": 1000,
+   "mrp": 745,
+   "match": "JIVO POMACE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "JIVO POMACE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "IOMH8YGZUHV8DFBW",
+   "raw": "DESI GHEE 1KG",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "A2 GHEE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGDUZ8ZFFEGURG",
+   "raw": "EXTRA LIGHT 1L+EXTRA VIRGIN 1L",
+   "vol": 2000,
+   "mrp": 2498,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHYRRPJ3H7NHHN",
+   "raw": "JIVO POMACE 1+1L",
+   "vol": 2000,
+   "mrp": 1899,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGHPHPXJANVVRV",
+   "raw": "MUSTARD 5L+1L",
+   "vol": 6000,
+   "mrp": 1530,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHHXABMQ3JVFSR",
+   "raw": "CANOLA 5+1L",
+   "vol": 6000,
+   "mrp": 2025,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHHX9RDSSJGYGG",
+   "raw": "CANOLA 5L",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHHXANUW9SHPPJ",
+   "raw": "CANOLA 4+1L",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNM2PZPHPHYKB",
+   "raw": "POMACE 1L+CANOLA 1+1L",
+   "vol": 3000,
+   "mrp": 1499,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHYSH9GAYZHJG6",
+   "raw": "EXTRA LIGHT 5L",
+   "vol": 5000,
+   "mrp": 4900,
+   "match": "EXTRA LIGHT 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHAGDYVQWT6GNG",
+   "raw": "SANO_CLASSIC 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHDGCREHEZ8KPZ",
+   "raw": "SESAME OIL 1L",
+   "vol": 1000,
+   "mrp": 600,
+   "match": "SESAME OIL 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGDVFWGPRVTTMS",
+   "raw": "SUNFLOWER OIL 5L",
+   "vol": 5000,
+   "mrp": 1350,
+   "match": "SUNFLOWER 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHHZBQB9P4Z6WM",
+   "raw": "CANOLA 5+1L",
+   "vol": 6000,
+   "mrp": 2025,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "HNYGQTNABYZXTF6E",
+   "raw": "HONEY 500G",
+   "vol": 500,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGHZSEBQYYA6ZW",
+   "raw": "SUNFLOWER OIL 1L+1L+1L",
+   "vol": 3000,
+   "mrp": 825,
+   "match": "SUNFLOWER 3L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "GHEHHZBQJBNVZGGQ",
+   "raw": "A2 GHEE 500G",
+   "vol": 500,
+   "mrp": 2200,
+   "match": "A2 GHEE 500ML",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGJMUGKPPFMTAM",
+   "raw": "POMACE 1L+CANOLA 1L",
+   "vol": 2000,
+   "mrp": 1124,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "SCMHCKZEKPQWVE5V",
+   "raw": "CLOVE 100G",
+   "vol": 100,
+   "mrp": null,
+   "match": "CLOVE 100G",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGHESNHFFUGQB9",
+   "raw": "CANOLA 1L+MUSTARD 1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": "CANOLA 1+1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1+1L"
+   ],
+   "combo": true
+  },
+  {
+   "key": "EDSH5BX4UMFR4XYF",
+   "raw": "FLAX SEEDS 800 GM",
+   "vol": 800,
+   "mrp": 750,
+   "match": "FLAX SEEDS 800G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "FLAX SEEDS 800G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDSH66RRE84EYVHC",
+   "raw": "SUNFLOWER SEEDS 400GM",
+   "vol": 400,
+   "mrp": null,
+   "match": "SUNFLOWER SEEDS 400G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER SEEDS 400G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDSH4YGKPTS5TMSD",
+   "raw": "CHIA SEEDS 400 GM",
+   "vol": 400,
+   "mrp": null,
+   "match": "CHIA SEEDS 400G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CHIA SEEDS 400G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "QWRGDYBWXRTGFZFX",
+   "raw": "MUSTARD 1L",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "HNYHYRSYJPMYEGUX",
+   "raw": "SANO HONEY 500 GM",
+   "vol": 500,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDSH5AVGYVMTPZEC",
+   "raw": "PUMPKIN SEEDS 400 GM",
+   "vol": 400,
+   "mrp": null,
+   "match": "PUMPKIN SEEDS 400G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "PUMPKIN SEEDS 400G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDSH5AVJZCSAN5P3",
+   "raw": "SUNFLOWER SEEDS 200 GM",
+   "vol": 200,
+   "mrp": null,
+   "match": "SUNFLOWER SEEDS 200G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER SEEDS 200G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOHYRSHNGG6GDGR",
+   "raw": "EXTRA LIGHT 2L",
+   "vol": 2000,
+   "mrp": 1600,
+   "match": "EXTRA LIGHT 2L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHYSJ8BZYGCSBU",
+   "raw": "JIVO MUSTARD 1+1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "SCMH4H8NCH2PKYWV",
+   "raw": "GREEN CARDAMOM 100GM",
+   "vol": 100,
+   "mrp": null,
+   "match": "GREEN CARDAMOM 100G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "GREEN CARDAMOM 100G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOHYSGGV6BPGCHD",
+   "raw": "MUSTARD 5L",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "DAJH8RDQPBHXAAZT",
+   "raw": "WG MANGO 500 ML 3PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "DAJH7VF9GTUFZZ5K",
+   "raw": "WG MANGO 500 ML 6PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDSGXE59S7AGKHUG",
+   "raw": "CHIA SEEDS 400 GM",
+   "vol": 400,
+   "mrp": null,
+   "match": "CHIA SEEDS 400G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CHIA SEEDS 400G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "DAJH8Z2ZYB7KHGUF",
+   "raw": "WG MANGO SF 500 ML 3PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "DAJHCKT6KVUGR3GZ",
+   "raw": "WG MANGO 500 ML 3PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "DAJH7WFGYFTTVJVZ",
+   "raw": "WG MANGO 500 ML 3PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHYRPCTWGRKWKU",
+   "raw": "EXTRA LIGHT 1+1+1L",
+   "vol": 3000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "CFEGMJ5GJE7HD3DQ",
+   "raw": "Coffee 100g",
+   "vol": 100,
+   "mrp": 350,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "ARDHCJMTXHZ5HQDA",
+   "raw": "PUNJABI JEERA 160 ML 24 PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "SCMH3FHAUZYSNUAB",
+   "raw": "CUMIN SEEDS 100GM",
+   "vol": 100,
+   "mrp": null,
+   "match": "CUMIN SEEDS 100G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CUMIN SEEDS 100G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "QWRGEMR8V55BHCJK",
+   "raw": "JIVO POMACE 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "JIVO POMACE 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGEMQZXAYWVM4M",
+   "raw": "MUSTARD 1+1L",
+   "vol": 2000,
+   "mrp": 510,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMP5ZQZFEKGJ",
+   "raw": "EXTRA LIGHT 5L",
+   "vol": 5000,
+   "mrp": 6499,
+   "match": "EXTRA LIGHT 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "IOMGG4YN5WGXGQCW",
+   "raw": "A2 GHEE 500G",
+   "vol": 500,
+   "mrp": 2200,
+   "match": "A2 GHEE 500ML",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 500ML"
+   ],
+   "combo": false
+  },
+  {
+   "key": "IOMGG4YWHHYW3Z6Y",
+   "raw": "A2 GHEE 1KG",
+   "vol": 1000,
+   "mrp": 4000,
+   "match": "A2 GHEE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "QWRGEMPJJGDRYACC",
+   "raw": "EXTRA LIGHT 1+1+1L",
+   "vol": 3000,
+   "mrp": 2475,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGDFMZKGBZZYG",
+   "raw": "EXTRA LIGHT 1L+EXTRA VIRGIN 1L+POMACE 1L",
+   "vol": 3000,
+   "mrp": 3247,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMNNHGGYUYF4",
+   "raw": "Extra Light 1L+ Extra Virgin 1L",
+   "vol": 2000,
+   "mrp": 2324,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMRYNAG8T2FV",
+   "raw": "JIVO POMACE olive oil 1+1+1L",
+   "vol": 3000,
+   "mrp": 2247,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGC46UKQKVCES",
+   "raw": "EXTRA LIGHT 1+1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMQRYJBYZFUH",
+   "raw": "EXTRA VIRGIN 1L",
+   "vol": 1000,
+   "mrp": null,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGMFGPMTG7FGK",
+   "raw": "EXTRA LIGHT 1L+POMACE 1L",
+   "vol": 2000,
+   "mrp": 2399,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMRYGPGCDNKK",
+   "raw": "MUSTARD 5L",
+   "vol": 5000,
+   "mrp": 1499,
+   "match": "MUSTARD 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGC3SVFXSKZ94",
+   "raw": "EXTRA LIGHT 1L",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "EXTRA LIGHT 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGJNNV7XXV6HUS",
+   "raw": "CANOLA 1L + POMACE 1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGBUHZJQZWJZE",
+   "raw": "CANOLA+EXTRA VIRGIN+MUSTARD 1L",
+   "vol": 3000,
+   "mrp": 2129,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGG9XWMEQQPM89",
+   "raw": "Canola 1L+Extra Light 1L",
+   "vol": 2000,
+   "mrp": 1374,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGJFZ8M4EGGS5F",
+   "raw": "Canola1L+Soyabean1L+Mustard1L",
+   "vol": 3000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMP4TVBHRUE3",
+   "raw": "Canola 1+1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": "CANOLA 1+1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMZP8USGKNSY",
+   "raw": "Canola 1+1L",
+   "vol": 2000,
+   "mrp": 375,
+   "match": "CANOLA 1+1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMP99M44YSHA",
+   "raw": "Mustard 1L+Extra Light 1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGG9UACYSCUXK9",
+   "raw": "Canola1L+Mustard1L",
+   "vol": 2000,
+   "mrp": 630,
+   "match": "CANOLA 1+1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1+1L"
+   ],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMNS9ZPZGWJH",
+   "raw": "Extra Virgin 1+1L",
+   "vol": 2000,
+   "mrp": 2998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMZZBATNNPZD",
+   "raw": "Extra Virgin 5L",
+   "vol": 5000,
+   "mrp": 5995,
+   "match": "EXTRA VIRGIN 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGAZJH2PABKMH",
+   "raw": "Canola 1+1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": "CANOLA 1+1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGC2FH324F4EF",
+   "raw": "JIVO POMACE 5L+2L",
+   "vol": 7000,
+   "mrp": 4997,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMNWTAGVDDNS",
+   "raw": "EXTRA LIGHT 1L + JIVO POMACE 1L",
+   "vol": 2000,
+   "mrp": 1570,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGGP4FSQVM2ERR",
+   "raw": "SOYABEAN 1L 3PCS",
+   "vol": 3000,
+   "mrp": 750,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHYSCZHPAA3JDH",
+   "raw": "SUNFLOWER OIL 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "SUNFLOWER 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGE62ESBTMBRGF",
+   "raw": "SUNFLOWER OIL 2L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGW3HGUQBAHNCB",
+   "raw": "SANO CANOLA 2L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGY7GHFUEFHEY",
+   "raw": "EXTRA LIGHT 2L + SOYABEAN 5L",
+   "vol": 7000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGHZRXZGAKYAEF",
+   "raw": "EXTRA LIGHT 5L+1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNKQ6EFDAV9HU",
+   "raw": "CANOLA 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": "CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGWGZ7TQ6ZZT3H",
+   "raw": "EXTRA VIRGIN 500ML",
+   "vol": 500,
+   "mrp": 998,
+   "match": "EXTRA VIRGIN 500ML",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGFGRSGCW6XTFE",
+   "raw": "CANOLA 5L + MUSTARD 5L + SUNFLOWER 5L",
+   "vol": 15000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "GHEH6B93ZB66SEKQ",
+   "raw": "DESI GHEE 1KG",
+   "vol": 1000,
+   "mrp": null,
+   "match": "A2 GHEE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGNQ925UAAY6FT",
+   "raw": "JIVO POMACE 5LTR + EXTRA VIRGIN 1L",
+   "vol": 6000,
+   "mrp": 5700,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "HNYGQTUW5DB6RXQD",
+   "raw": "SANO HONEY 1KG",
+   "vol": 1000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "RICGE89BUEDDA5U7",
+   "raw": "RICE 1KG",
+   "vol": 1000,
+   "mrp": null,
+   "match": "RICE 1KG",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGK4CHWKAHJQHB",
+   "raw": "SOYABEAN 5L+5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "HNYHYRSBGKZHHFDZ",
+   "raw": "SANO HONEY 1KG",
+   "vol": 1000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGNZ8KGNW9GGWV",
+   "raw": "CANOLA 5L + JIVO POMACE 1L + JIVO POMACE 1L",
+   "vol": 7000,
+   "mrp": 3620,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGDUQJHA3RR8HA",
+   "raw": "CANOLA 5L + SUNFLOWER OIL 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGDUXZS7YRKEJY",
+   "raw": "MUSTARD 5L + SUNFLOWER 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDSH5AVCXWVGYCYT",
+   "raw": "PUMPKIN SEEDS 200 GM",
+   "vol": 200,
+   "mrp": 399,
+   "match": "PUMPKIN SEEDS 200G",
+   "method": "AUTO-NAME",
+   "cands": [
+    "PUMPKIN SEEDS 200G"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGHFUCDKHMHQY7",
+   "raw": "CANOLA 5L + JIVO POMACE 1L",
+   "vol": 6000,
+   "mrp": 2440,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGJNM6JHJDSGMP",
+   "raw": "Mustard 5L+Canola 1L",
+   "vol": 6000,
+   "mrp": 1625,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGHGSMHA6KUJTG",
+   "raw": "Mustard5L+Sunflower1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGAV6QASFQUKF",
+   "raw": "CANOLA 1L",
+   "vol": 1000,
+   "mrp": null,
+   "match": "CANOLA 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGRRXUHZZHZ2WZ",
+   "raw": "SANO POMACE 1L",
+   "vol": 1000,
+   "mrp": 999,
+   "match": "SANO POMACE 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGGX6SQXCZKD2Y",
+   "raw": "CANOLA 5L+ SOYABEAN 1L",
+   "vol": 6000,
+   "mrp": 1900,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHYVZSYQPYYEYH",
+   "raw": "CANOLA 5L",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "BOTHYVRWUHGTZFHY",
+   "raw": "FLIP PRO 1000",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGDVFKPNBPFKAU",
+   "raw": "SUNFLOWER OIL 1L",
+   "vol": 1000,
+   "mrp": null,
+   "match": "SUNFLOWER 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOHYRG4UMJFF2YE",
+   "raw": "CANOLA 5L",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGGJ6QXTBCSHY",
+   "raw": "SUNFLOWER OIL 1L+1L+1L",
+   "vol": 3000,
+   "mrp": 825,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGDURNCQZQ2YEW",
+   "raw": "CANOLA 5L + MUSTARD 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGVEF33GYXKHEW",
+   "raw": "SANO CLASSIC 1L",
+   "vol": 1000,
+   "mrp": 1299,
+   "match": "SANO CLASSIC 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "RICGFF68XXVEBZW5",
+   "raw": "RICE 5KG",
+   "vol": 5000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGHPMWKQTKU5RT",
+   "raw": "MUSTARD 1L + RICE 1KG",
+   "vol": 1000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGYJTPRV6H6WGY",
+   "raw": "GOLD 5L+1L",
+   "vol": 6000,
+   "mrp": 1309,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGDUQXXQ8JQFBW",
+   "raw": "CANOLA 5L + JIVO POMACE 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGGY5KCR8S7SHK",
+   "raw": "CANOLA 1L+SOYABEAN 1L+MUSTARD 1L",
+   "vol": 3000,
+   "mrp": 855,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGHFPZBXAAMHAK",
+   "raw": "EXTRA LIGHT 5+2L",
+   "vol": 7000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGDFAHFUEQCUC",
+   "raw": "SUNFLOWER 5L + MUSTARD 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGD86E5FYT9G3",
+   "raw": "SUNFLOWER OIL 1L",
+   "vol": 1000,
+   "mrp": null,
+   "match": "SUNFLOWER 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGQUTFK86EUTJC",
+   "raw": "SANO SUNFLOWER OIL 1L + SUNFLOWER OIL 1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMQJ8TQRHASY",
+   "raw": "JIVO POMACE 1+1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGGJJ8CEDEYWS",
+   "raw": "MUSTARD 5L + 1L",
+   "vol": 6000,
+   "mrp": 1505,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGGX8C5QAD2MPP",
+   "raw": "CANOLA 5L + SOYABEAN 5L",
+   "vol": 10000,
+   "mrp": 2750,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGG9RGWHCZHB5M",
+   "raw": "CANOLA 5L + MUSTARD 1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGQUTHDNWRMZXE",
+   "raw": "SANO SOYABEAN 1L + SOYABEAN 1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGHFUUUVNJ64PC",
+   "raw": "CANOLA 5L + MUSTARD 1L",
+   "vol": 6000,
+   "mrp": 1905,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "DAJH7UWV7CNCHSJB",
+   "raw": "WG BLUEBERRY JUICE 200 ML X 6PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "CRLHYEWUPR4DRZZD",
+   "raw": "CASSEROLE 2200",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGEMRSPZ98QRUZ",
+   "raw": "SUNFLOWER OIL 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "SUNFLOWER 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOGGXAECQMQBMYG",
+   "raw": "JIVO POMACE 5+1L",
+   "vol": 6000,
+   "mrp": 4248,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMRRZ73UUWHA",
+   "raw": "CANOLA 5L + MUSTARD 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGW3GWC36PHWKY",
+   "raw": "SANO CANOLA 5L",
+   "vol": 5000,
+   "mrp": 1950,
+   "match": "SANO CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGWGZGCC8YG5PZ",
+   "raw": "COCONUT OIL 500GM",
+   "vol": 500,
+   "mrp": 398,
+   "match": "COCONUT 500ML",
+   "method": "AUTO-NAME",
+   "cands": [
+    "COCONUT 500ML"
+   ],
+   "combo": false
+  },
+  {
+   "key": "QWRGGAU3AQ7DEAUZ",
+   "raw": "CANOLA 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGHFVGKYEQ89YB",
+   "raw": "EXTRA LIGHT 5L + JIVO POMACE 1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGGCYFGYGWYS6Y",
+   "raw": "EXTRA LIGHT 5L + 2L",
+   "vol": 7000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGGY4VUGZCEPUJ",
+   "raw": "CANOLA 1L + SOYABEAN 1L + SUNFLOWER 1L",
+   "vol": 3000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGGGHNUYZ8VYYV",
+   "raw": "CANOLA 5L + EXTRA VIRGIN 1L",
+   "vol": 6000,
+   "mrp": 3449,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGE5W95B7XQFW7",
+   "raw": "CANOLA 5L + EXTRA LIGHT 1L",
+   "vol": 6000,
+   "mrp": 2649,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOH9PHGZG9H4GVT",
+   "raw": "MUSTARD 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "MUSTARD 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOH9NGHQF5SJXJG",
+   "raw": "MUSTARD 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "MUSTARD 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOH9N9SAN3YEG7B",
+   "raw": "CANOLA 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "CANOLA 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGVH5WWCXQNJHF",
+   "raw": "SANO CANOLA 1L",
+   "vol": 1000,
+   "mrp": 475,
+   "match": "SANO CANOLA 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGQWU2JYAZCGZM",
+   "raw": "SANO SUNFLOWER 1L",
+   "vol": 1000,
+   "mrp": 291,
+   "match": "SANO SUNFLOWER 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGFGPZPBHGYPTM",
+   "raw": "CANOLA 1L+ EXTRA VIRGIN 1L + MUSTARD 1L",
+   "vol": 3000,
+   "mrp": 2129,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGGX7RKBB4BHQD",
+   "raw": "SOYABEAN 5L CANOLA 5L",
+   "vol": 10000,
+   "mrp": 1525,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOH9NDEPYZHGAHF",
+   "raw": "GROUNDNUT 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "GROUNDNUT 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGBFMFWGWUWTJ",
+   "raw": "CANOLA 5L + 2L",
+   "vol": 7000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGQURQAFV8PPCT",
+   "raw": "SANO SUNFLOWER 1L + SUNFLOWER OIL1L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGJFNWTAGPZCZU",
+   "raw": "SOYABEAN 5L + MUSTARD 1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "QWRGEMP4HBFD4GF3",
+   "raw": "SUNFLOWER 1L",
+   "vol": 1000,
+   "mrp": null,
+   "match": "SUNFLOWER 1L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGG9TZKURYBFRC",
+   "raw": "JIVO POMACE 5L+1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOH9NGFHTHZFZHJ",
+   "raw": "GOLD 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "GOLD 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOH9NFPGNJDSFPN",
+   "raw": "SUNFLOWER OIL 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "SUNFLOWER 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "QWRGJZQHMWA2GGHT",
+   "raw": "MUSTARD 5L + CANOLA 1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "CRLHYFF2NSZHWVHQ",
+   "raw": "CASSEROLE 3200",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "LBXHYVP3GUHJJZGT",
+   "raw": "LUNCH BOX",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGJMU9YVVG3GZY",
+   "raw": "JIVO POMACE 5L + EXTRA LIGHT 2L",
+   "vol": 7000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGHGRTGFEKGQHF",
+   "raw": "CANOLA 1L + MUSTARD 1L + SUNFLOWER 1L",
+   "vol": 3000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOH9NJEUZWKJWCX",
+   "raw": "RICE BRAN 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "RICE BRAN 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGDVWYGJNDYRQP",
+   "raw": "MUSTARD 1L",
+   "vol": 1000,
+   "mrp": 490,
+   "match": "MUSTARD 1L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGW5P5G27GCYPP",
+   "raw": "SANO CANOLA 1+1+1",
+   "vol": 3000,
+   "mrp": 1425,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "GHEGEUGZHGHGF5XH",
+   "raw": "A2 GHEE 500 KG",
+   "vol": 500,
+   "mrp": 2200,
+   "match": "A2 GHEE 500ML",
+   "method": "AUTO-NAME",
+   "cands": [
+    "A2 GHEE 500ML"
+   ],
+   "combo": false
+  },
+  {
+   "key": "BOTGZ9ZPVHFX8YYG",
+   "raw": "FLIP PRO",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "DAJH7WYZHZAYAKGN",
+   "raw": "WG APPLE JUICE 200ML X 6PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGHFSWJBKWD9XK",
+   "raw": "EXTRA VIRGIN 5L + EXTRA LIGHT 5L + JIVO POMACE 5L",
+   "vol": 15000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "BOTHYVMNCRZHCY2V",
+   "raw": "JIVO-INFI-FERRERO-1000",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "BOTHYVPX44HZZQRG",
+   "raw": "JIVO-INFI-CRYPTO-500",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "DAJH7TQ57QBRQ7DT",
+   "raw": "WG GINGER ALE 200 ML X 6PCS",
+   "vol": null,
+   "mrp": 1999,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "BOTH4SQVCNDSQJYH",
+   "raw": "JIVO-INFI-ELEGANCE-PACK-1",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "DAJH7VUW7J7DZN7Q",
+   "raw": "WG MOJITO 200 MLX6PCS",
+   "vol": null,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOH9Z7UHSZGTXHU",
+   "raw": "MUSTARD 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "MUSTARD 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGC56R2MHCFBE",
+   "raw": "EXTRA VIRGIN 5L + JIVO POMACE 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOH9P7NNNJUXGZP",
+   "raw": "GROUNDNUT 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "GROUNDNUT 5L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGDUU45CEVJSYR",
+   "raw": "EXTRA VIRGIN 5L + JIVO POMACE 5L",
+   "vol": 10000,
+   "mrp": 10900,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGQUT9G49NFAGZ",
+   "raw": "SANO SUNFLOWER 5L + SUNFLOWER OIL 5L",
+   "vol": 10000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGQTHV2RJYBFR9",
+   "raw": "SANO MUSTARD 5L",
+   "vol": 5000,
+   "mrp": 1200,
+   "match": "SANO MUSTARD 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGHFTJZH5CCDJ6",
+   "raw": "EXTRA LIGHT 5L + EXTRA VIRGIN 1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGYCJYJQTGHXJE",
+   "raw": "MUSTARD 2L",
+   "vol": 2000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGEMQGRDX7BTJ6",
+   "raw": "CANOLA 5L + 1L",
+   "vol": 6000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOH9P83CD6GZUMX",
+   "raw": "SOYABEAN 5L",
+   "vol": 5000,
+   "mrp": null,
+   "match": "SOYABEAN 5L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOGNZ7K5EKDCHRU",
+   "raw": "JIVO POMACE 1L X 3 + EXTRA LIGHT 1L",
+   "vol": 4000,
+   "mrp": 4646,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGGPF93QDDAMSG",
+   "raw": "SOYABEAN 5L + 1L",
+   "vol": 6000,
+   "mrp": 1499,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHGWU9WAPBEHWK",
+   "raw": "MUSTARD 4L",
+   "vol": 4000,
+   "mrp": null,
+   "match": "MUSTARD 4L",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHGP2YUDANTUXG",
+   "raw": "EXTRA VIRGIN 200ML",
+   "vol": 200,
+   "mrp": 720,
+   "match": "EXTRA VIRGIN 200ML",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHGPF2ZQ9RQPB3",
+   "raw": "EXTRA VIRGIN 200ML",
+   "vol": 200,
+   "mrp": null,
+   "match": "EXTRA VIRGIN 200ML",
+   "method": "ID-FSN",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHGP27PXFNHZNZ",
+   "raw": "EXTRA VIRGIN 200ML",
+   "vol": 200,
+   "mrp": 1080,
+   "match": "EXTRA VIRGIN 200ML",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "QWRGGCFZQUPZT3AR",
+   "raw": "EXTRA VIRGIN 5L + EXTRA LIGHT 5L + JIVO POMACE 5L",
+   "vol": 15000,
+   "mrp": null,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNZ4RAC8J4ZP6",
+   "raw": "CANOLA 2L + EXTRA LIGHT 1L + JIVO POMACE 1L",
+   "vol": 4000,
+   "mrp": 2498,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "TEAHHQTVMG8QJ9ZJ",
+   "raw": "TEA 250G PACK OF 4",
+   "vol": 1000,
+   "mrp": 200,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "TEAHHNH929SDCEGN",
+   "raw": "TEA 250G PACK OF 3",
+   "vol": 750,
+   "mrp": 600,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHGWSVUNGY8Y3M",
+   "raw": "SUNFLOWER OIL 4L",
+   "vol": 4000,
+   "mrp": 1080,
+   "match": "SUNFLOWER 4L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 4L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "EDOHH3NKYPDHRHGK",
+   "raw": "CANOLA 3L + RICE KG",
+   "vol": 3000,
+   "mrp": 3118,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGKC6KWYBCNNGH",
+   "raw": "MUSTARD 3L",
+   "vol": 3000,
+   "mrp": 750,
+   "match": "MUSTARD 3L",
+   "method": "ID-CATALOG",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "TEAHHNH9HQQVXFMA",
+   "raw": "TEA 250G PACK OF 2",
+   "vol": 250,
+   "mrp": 400,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "FLRHJ4DBVWCPKTHH",
+   "raw": "MAKKI ATTA 500 GM",
+   "vol": 500,
+   "mrp": 149,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "CRLGGF7YG5DJ4SMX",
+   "raw": "ROTI BOX",
+   "vol": null,
+   "mrp": 899,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "TEAHHNH98DRXVHNK",
+   "raw": "TEA 250 GM",
+   "vol": 250,
+   "mrp": 200,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "EDOHH3NCNGRWNYRR",
+   "raw": "YELLOW MUSTARD 1L + COFFEE 100 GM",
+   "vol": 1000,
+   "mrp": 705,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGJMUFJFKSFU3D",
+   "raw": "EXTRA LIGHT 5L + EXTRA LIGHT 2L",
+   "vol": 7000,
+   "mrp": 7595,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNZ484UZRUYYZ",
+   "raw": "JIVO POMACE 5L + CANOLA 2L",
+   "vol": 7000,
+   "mrp": 4249,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOHNFQUDF32JHZR",
+   "raw": "YELLOW MUSTARD 1L + 1L",
+   "vol": 2000,
+   "mrp": 790,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "EDOGNPGGFM3M5HQA",
+   "raw": "JIVO POMACE 5L + EXTRA LIGHT 1L +JIVO POMACE 1L",
+   "vol": 7000,
+   "mrp": 5247,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  }
+ ],
+ "zepto": [
+  {
+   "key": "2300d5e1-ccd1-46ab-990d-aa7fee80bc5d",
+   "raw": "Jivo Extra Light Olive Oil",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "EXTRA LIGHT 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "8eedf6ff-d36c-4313-88e4-6aa571372f46",
+   "raw": "Jivo Daily Pomace Olive Oil",
+   "vol": 2000,
+   "mrp": 1449,
+   "match": "JIVO POMACE 2L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "41367ef4-80d9-4819-bbae-d1806c184f5c",
+   "raw": "Jivo Groundnut (Peanut) Cold Pressed Oil | Healthy Cooking Oil",
+   "vol": 1000,
+   "mrp": 560,
+   "match": "GROUNDNUT 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "ac9a7dd8-489b-4475-a14d-27ae393a5505",
+   "raw": "Jivo Pomace Olive Oil",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "597fe027-2e19-4a49-bc07-76ef57295ad6",
+   "raw": "Jivo Extra Light Olive Oil Combo",
+   "vol": 2000,
+   "mrp": 2998,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "89804a83-79f3-45c6-b940-9c395451dffa",
+   "raw": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "5d186472-6fe2-4643-af2f-2f9cd773986d",
+   "raw": "Jivo Extra Virgin Olive Oil | Bottle",
+   "vol": 1000,
+   "mrp": 1799,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "275d43f8-2da4-4d9e-8873-e04fcaf5c073",
+   "raw": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe",
+   "raw": "Jivo Canola Cold Pressed Edible Oil | Cooking Oil",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "a81945f0-43ac-4970-82b4-c6c8986ee9ae",
+   "raw": "Jivo Pomace Olive Oil",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "JIVO POMACE 5L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "dc9c5857-5d89-45c7-895a-373097239ff7",
+   "raw": "Jivo So-Olive Blend Of Rice Bran and Olive Oil",
+   "vol": 1000,
+   "mrp": 325,
+   "match": "SO OLIVE 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "c80ef4de-b2c3-4fb4-984b-4cb29b33db33",
+   "raw": "Jivo Extra Virgin Cooking Olive Oil",
+   "vol": 5000,
+   "mrp": 7999,
+   "match": "EXTRA VIRGIN 5L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "b84e15b9-39c8-4f7e-bc24-bab7300641cc",
+   "raw": "Jivo Refine Canola oil Tin",
+   "vol": 15000,
+   "mrp": 3500,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "bc1af3d1-2a14-4296-b38e-e05ba43c3170",
+   "raw": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil",
+   "vol": 1000,
+   "mrp": 225,
+   "match": "GOLD 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40bd2571-3734-4503-84b7-bbe87a3818c3",
+   "raw": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil",
+   "vol": 5000,
+   "mrp": 1050,
+   "match": "RICE BRAN 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "RICE BRAN 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "3df8a5f6-fb0a-43d9-92ea-8098fda9253d",
+   "raw": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil",
+   "vol": 5000,
+   "mrp": 1350,
+   "match": "SUNFLOWER 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "4acb73bc-1e89-47d8-8625-05e6a34b698b",
+   "raw": "Jivo Rice Bran Daily Cooking Oil",
+   "vol": 1000,
+   "mrp": 285,
+   "match": "RICE BRAN 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "RICE BRAN 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "06c8f55b-13a5-4d9b-8990-a418e63c89ad",
+   "raw": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil",
+   "vol": 1000,
+   "mrp": 275,
+   "match": "SUNFLOWER 1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "50b56b7f-3d9f-45c7-8161-c2327e8db652",
+   "raw": "Jivo Cold Press Canola Oil Combo | Bottle",
+   "vol": 2000,
+   "mrp": 750,
+   "match": "CANOLA 1+1L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "cf896675-3ac9-4a40-b134-603931bba8e7",
+   "raw": "Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil",
+   "vol": 200,
+   "mrp": 150,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "3d955a07-72db-4d1a-9d65-42c5a8dd0641",
+   "raw": "Jivo Pomace Olive Oil Combo",
+   "vol": 2000,
+   "mrp": 2098,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  },
+  {
+   "key": "29e72c8c-7ff6-46e2-9721-ca4e9f612e98",
+   "raw": "Jivo Extra Light Olive Oil",
+   "vol": 2000,
+   "mrp": 2799,
+   "match": "EXTRA LIGHT 2L",
+   "method": "ID-PVID",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "bb21a64f-7770-484e-9614-991921f9e1e1",
+   "raw": "Jivo Extra Light Olive Oil Combo",
+   "vol": 4000,
+   "mrp": 5598,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": true
+  }
+ ],
+ "blinkit": [
+  {
+   "key": "jivo-pomace-olive-oil-1l",
+   "raw": "Jivo Pomace Olive Oil",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "JIVO POMACE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-cold-pressed-sunflower-oil-1l",
+   "raw": "Jivo Cold Pressed Sunflower Oil",
+   "vol": 1000,
+   "mrp": 275,
+   "match": "SUNFLOWER 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-cold-pressed-canola-oil-1l",
+   "raw": "Jivo Cold Pressed Canola Oil",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-extra-light-olive-oil-1l",
+   "raw": "Jivo Extra Light Olive Oil",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "EXTRA LIGHT 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "EXTRA LIGHT 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-extra-light-olive-oil-2l",
+   "raw": "Jivo Extra Light Olive Oil",
+   "vol": 2000,
+   "mrp": 2799,
+   "match": "EXTRA LIGHT 2L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "EXTRA LIGHT 2L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-kachi-ghani-cold-pressed-mustard-oil-1l",
+   "raw": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-pomace-olive-oil-5l",
+   "raw": "Jivo Pomace Olive Oil",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "JIVO POMACE 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "JIVO POMACE 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-cold-pressed-canola-oil-5l",
+   "raw": "Jivo Cold Pressed Canola Oil (",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-kachi-ghani-cold-pressed-mustard-oil-5l",
+   "raw": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 5L"
+   ],
+   "combo": false
+  }
+ ],
+ "flipkart-minutes": [
+  {
+   "key": "jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l",
+   "raw": "JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-extra-light-olive-oil-can-2l",
+   "raw": "JIVO Extra Light Olive Oil Can",
+   "vol": 2000,
+   "mrp": 2799,
+   "match": "EXTRA LIGHT 2L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "EXTRA LIGHT 2L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-cold-pressed-pure-cooking-mustard-oil-can-5l",
+   "raw": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-cold-press-canola-oil-plastic-bottle-1l",
+   "raw": "JIVO Cold Press Canola Oil Plastic Bottle",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-pomace-olive-oil-plastic-bottle-1l",
+   "raw": "JIVO Pomace Olive Oil Plastic Bottle",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "JIVO POMACE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-pomace-olive-oil-tin-5l",
+   "raw": "JIVO Pomace Olive Oil Tin",
+   "vol": 5000,
+   "mrp": 4999,
+   "match": "JIVO POMACE 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "JIVO POMACE 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-cold-pressed-pure-cooking-mustard-oil-can-4l",
+   "raw": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
+   "vol": 4000,
+   "mrp": 1000,
+   "match": "MUSTARD 4L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 4L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-soybean-oil-soyabean-oil-pouch-1l",
+   "raw": "JIVO Soybean Oil Soyabean Oil Pouch",
+   "vol": 1000,
+   "mrp": 199,
+   "match": "SOYABEAN 1L POUCH",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SOYABEAN 1L POUCH"
+   ],
+   "combo": false
+  },
+  {
+   "key": "jivo-cold-press-combo-canola-oil-plastic-bottle-2l",
+   "raw": "JIVO Cold Press Combo Canola Oil Plastic Bottle",
+   "vol": 2000,
+   "mrp": null,
+   "match": "CANOLA 1+1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1+1L"
+   ],
+   "combo": true
+  },
+  {
+   "key": "jivo-mineral-water-1l",
+   "raw": "JIVO Mineral Water",
+   "vol": 1000,
+   "mrp": 30,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  }
+ ],
+ "bigbasket": [
+  {
+   "key": "40249993",
+   "raw": "Cold Pressed Sunflower Oil",
+   "vol": 1000,
+   "mrp": 275,
+   "match": "SUNFLOWER 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40166395",
+   "raw": "Cold Press Kachi Ghani Mustard Oil",
+   "vol": 1000,
+   "mrp": 255,
+   "match": "MUSTARD 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40166396",
+   "raw": "Cold Press Kachi Ghani Mustard Oil",
+   "vol": 5000,
+   "mrp": 1250,
+   "match": "MUSTARD 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "MUSTARD 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "282779",
+   "raw": "Canola Oil - Cold Pressed",
+   "vol": 1000,
+   "mrp": 375,
+   "match": "CANOLA 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "282780",
+   "raw": "Canola Oil - Cold Pressed",
+   "vol": 5000,
+   "mrp": 1650,
+   "match": "CANOLA 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40250808",
+   "raw": "Extra Virgin Olive Oil - Antioxidants Rich, Suitable For Salads, Saute",
+   "vol": 1000,
+   "mrp": 1799,
+   "match": "EXTRA VIRGIN 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "EXTRA VIRGIN 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40309980",
+   "raw": "Pomace Olive Oil",
+   "vol": 2000,
+   "mrp": 1449,
+   "match": "JIVO POMACE 2L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "JIVO POMACE 2L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40197820",
+   "raw": "Pomace Olive Oil",
+   "vol": 1000,
+   "mrp": 1049,
+   "match": "JIVO POMACE 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "JIVO POMACE 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40166398",
+   "raw": "Extra Light Olive Oil",
+   "vol": 1000,
+   "mrp": 1499,
+   "match": "EXTRA LIGHT 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "EXTRA LIGHT 1L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40335339",
+   "raw": "Indian Tonic Water",
+   "vol": 200,
+   "mrp": 95,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40250809",
+   "raw": "Extra Light Olive Oil - Antioxidants Rich, Light Cooking Medium, For Frying, Grilling",
+   "vol": 2000,
+   "mrp": 2799,
+   "match": "EXTRA LIGHT 2L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "EXTRA LIGHT 2L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40249992",
+   "raw": "Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free",
+   "vol": 5000,
+   "mrp": 1350,
+   "match": "SUNFLOWER 5L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SUNFLOWER 5L"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40335337",
+   "raw": "Mojito Healthy Wheatgrass Juice",
+   "vol": 200,
+   "mrp": 50,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40335334",
+   "raw": "Apple Healthy Wheatgrass Juice",
+   "vol": 200,
+   "mrp": 50,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40335338",
+   "raw": "Rose Healthy Wheatgrass Juice",
+   "vol": 200,
+   "mrp": 50,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40335340",
+   "raw": "Mango Healthy Wheatgrass Juice",
+   "vol": 500,
+   "mrp": 100,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40335336",
+   "raw": "Mango Healthy Wheatgrass Juice",
+   "vol": 200,
+   "mrp": 50,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40335335",
+   "raw": "Blueberry Healthy Wheatgrass Juice",
+   "vol": 200,
+   "mrp": 50,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40335329",
+   "raw": "Apple Healthy Wheatgrass Juice - Sugar Free",
+   "vol": 200,
+   "mrp": 50,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40335332",
+   "raw": "Fizzy Water Flavoured With Lemon",
+   "vol": 750,
+   "mrp": 55,
+   "match": "SPRING WATER 750ML",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SPRING WATER 750ML"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40335333",
+   "raw": "Fizzy Water Flavoured With Peach",
+   "vol": 750,
+   "mrp": 55,
+   "match": "SPRING WATER 750ML",
+   "method": "AUTO-NAME",
+   "cands": [
+    "SPRING WATER 750ML"
+   ],
+   "combo": false
+  },
+  {
+   "key": "40335331",
+   "raw": "Mojito Healthy Wheatgrass Juice - Sugar Free",
+   "vol": 200,
+   "mrp": 50,
+   "match": null,
+   "method": "NOT-IN-MASTER",
+   "cands": [],
+   "combo": false
+  },
+  {
+   "key": "40309979",
+   "raw": "Canola Omega-3 Rich Cooking Oil 1 L",
+   "vol": 1000,
+   "mrp": 299,
+   "match": "CANOLA 1L",
+   "method": "AUTO-NAME",
+   "cands": [
+    "CANOLA 1L"
+   ],
+   "combo": false
+  }
+ ]
+}
