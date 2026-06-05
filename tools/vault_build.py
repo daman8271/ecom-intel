@@ -630,11 +630,14 @@ def build_index(platforms, latest_day, latest_week, latest_month, n_skus, n_citi
 
 
 def write_obsidian():
+    # PATH-based (vault-relative) — deterministic, independent of Obsidian's tag
+    # cache (tag-based color groups silently miss un-indexed notes). locations/pincodes
+    # is listed after locations so pincodes win teal over city green.
     groups = [
-        ("tag:#type/platform-hub", 0xE84AD0), ("tag:#type/run", 0x4C8DFF),
-        ("tag:#type/sku-hub", 0xFFB020), ("tag:#type/city-hub", 0x22C55E),
-        ("tag:#type/pincode", 0x2DD4BF), ("tag:#type/daily", 0xFB923C),
-        ("tag:#type/weekly", 0xA78BFA), ("tag:#type/monthly", 0xF43F5E),
+        ("path:platforms/", 0xE84AD0), ("path:runs/", 0x4C8DFF),
+        ("path:skus/", 0xFFB020), ("path:locations/", 0x22C55E),
+        ("path:locations/pincodes/", 0x2DD4BF), ("path:daily/", 0xFB923C),
+        ("path:weekly/", 0xA78BFA), ("path:monthly/", 0xF43F5E),
         ("tag:#moc", 0xFACC15), ("tag:#home", 0xF5F5F5),
     ]
     graph = {
