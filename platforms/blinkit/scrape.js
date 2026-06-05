@@ -153,11 +153,33 @@ async function scrapeOne(browser, rec) {
         const key = t.slice(0, 90);
         if (seen.has(key)) return;
         seen.add(key);
-        out.push(t.replace(/\s+/g, ' ').trim());
+        // ---- listing identity (ADDITIVE, fail-safe): numeric prid + PDP slug ----
+        // Blinkit PDP urls are /prn/<slug>/prid/<prid> (owner-blessed form, see
+        // tools/pricematch/fragments/map-qcom.json). Defensive: try a PDP anchor inside
+        // or wrapping the card first; else a numeric id/data attribute on the card or a
+        // close ancestor/descendant (SPA cards without hrefs). On ANY error the card is
+        // recorded exactly as before (prid/slug just stay empty).
+        let prid = '';
+        let slug = '';
+        try {
+          const a = el.querySelector('a[href*="/prid/"]') || (el.closest ? el.closest('a[href*="/prid/"]') : null);
+          const href = (a && a.getAttribute('href')) || '';
+          const m = href.match(/\/prn\/([^/?#]+)\/prid\/(\d+)/);
+          if (m) { slug = m[1]; prid = m[2]; }
+          if (!prid) {
+            const cand = [el, el.parentElement, el.closest ? el.closest('[id]') : null, el.querySelector('[id]')].filter(Boolean);
+            for (const c2 of cand) {
+              const idv = (c2.getAttribute && (c2.getAttribute('data-pid') || c2.getAttribute('data-product-id') || c2.getAttribute('id'))) || '';
+              if (/^\d{4,8}$/.test(idv)) { prid = idv; break; }
+            }
+          }
+        } catch (_) { prid = ''; slug = ''; }
+        out.push({ text: t.replace(/\s+/g, ' ').trim(), prid, slug });
       });
       return out;
     });
-    for (const c of cards) {
+    for (const card of cards) {
+      const c = (card && typeof card === 'object') ? (card.text || '') : (card || '');
       // pattern: [disc% OFF] [eta MINS] NAME PACK ₹SALE ₹MRP ADD/OutofStock
       const inStock = !/out of stock/i.test(c);
       const eta = (c.match(/(\d+)\s*MINS?/i) || [])[1];
@@ -174,6 +196,17 @@ async function scrapeOne(browser, rec) {
       if (pack) name = name.split(pack)[0];
       name = name.trim();
       if (!/jivo/i.test(name) || !sale) continue;
+      // listing identity (additive, fail-safe): prid + constructed PDP url. Prefer the
+      // real anchor slug; else slugify the parsed name (Blinkit routes PDPs on prid —
+      // the slug segment is cosmetic). On any error the row is built exactly as before.
+      let identity = {};
+      try {
+        const prid = (card && typeof card === 'object' && card.prid) ? String(card.prid) : '';
+        if (prid) {
+          const slug = (card.slug || name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')) || 'p';
+          identity = { prid, listing_url: `https://blinkit.com/prn/${slug}/prid/${prid}` };
+        }
+      } catch (_) { identity = {}; }
       rows.push({
         city: rec.city, pincode: rec.pincode, locality: rec.locality,
         store_id: store.id || '', store_name: store.name || '',
@@ -183,6 +216,7 @@ async function scrapeOne(browser, rec) {
         per_litre: parseVolMl(pack) ? Math.round((sale / (parseVolMl(pack) / 1000)) * 100) / 100 : null,
         eta_min: eta ? parseInt(eta, 10) : null,
         in_stock: inStock ? 1 : 0,
+        ...identity,
       });
     }
     // dedup on (store_id, canonical)

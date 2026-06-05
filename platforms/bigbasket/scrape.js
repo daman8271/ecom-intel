@@ -155,6 +155,15 @@ function buildRow(p) {
   const dcamp = (dcampRaw != null && Number.isFinite(parseFloat(dcampRaw))) ? r1(parseFloat(dcampRaw)) : null;
   // buy-N "Har Din Sasta" dual pricing: sale is then a multi-unit price (footnote in report)
   const dualPricing = !!(disc.camp_detail && disc.camp_detail.dual_pricing);
+  // REAL EAN-13 only (GS1-India prefix 890 + 10 digits). BigBasket's ean_code field
+  // often just echoes the internal 8-digit sku id (e.g. id=40249992, ean_code='40249992')
+  // — that is NOT an EAN and must never be recorded as one. Additive + fail-safe: on any
+  // error/non-match the row is built exactly as before (the key is simply omitted).
+  let ean = '';
+  try {
+    const e = String(p.ean_code || '');
+    if (/^890\d{10}$/.test(e)) ean = e;
+  } catch (_) { ean = ''; }
   return {
     city: 'All India', pincode: '-', locality: 'BigBasket (national)',
     store_id: '', store_name: 'BigBasket',
@@ -170,6 +179,7 @@ function buildRow(p) {
     category: (p.category && (p.category.tlc_name || p.category.mlc_name)) || '',
     absolute_url: p.absolute_url || '',
     sp_source, dual_pricing: dualPricing,
+    ...(ean ? { ean } : {}),
   };
 }
 

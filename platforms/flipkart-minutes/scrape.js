@@ -131,6 +131,30 @@ function parseProducts(searchJson, rec) {
       const vol = parseVolMl(pack);
       const ppu = ((pricing.pricePerUnit || {}).pivotQualifier === 'L') ? (pricing.pricePerUnit || {}).pricePerUnit : null;
       const storeId = (((act.params || {}).shopId) || [])[0] || '';
+      // ---- listing identity (ADDITIVE, fail-safe): pid + PDP url for the SKU map ----
+      // productInfo.action carries the product navigation target. Evidence: action.params
+      // values are arrays (shopId above); the PDP url form is /…/p/itm…?pid=<PID>&… and the
+      // generic https://www.flipkart.com/product/p/itme?pid=<PID> resolves (both proven in
+      // tools/pricematch/fragments/map-flipkart.json). Field names defensive: several
+      // candidate paths, first hit wins; on ANY error the row is built exactly as before
+      // (keys simply omitted).
+      let fkPid = '';
+      let listingUrl = '';
+      try {
+        // primitives only — a non-string/number candidate (object/bool/etc.) is junk, not a pid
+        const first = (x) => {
+          if (Array.isArray(x)) x = x.length ? x[0] : null;
+          return (typeof x === 'string' || typeof x === 'number') ? String(x) : '';
+        };
+        const ap = act.params || {};
+        const aurl = typeof act.url === 'string' ? act.url : '';
+        fkPid = first(ap.pid) || first(ap.productId)
+          || ((aurl.match(/[?&]pid=([A-Za-z0-9]+)/) || [])[1] || '')
+          || first(v.id) || first(v.productId) || '';
+        if (!/^[A-Za-z0-9]{8,32}$/.test(fkPid)) fkPid = ''; // Flipkart pid shape gate (e.g. GHEHHZBQJBNVZGGQ)
+        if (aurl) listingUrl = /^https?:\/\//i.test(aurl) ? aurl : 'https://www.flipkart.com' + (aurl.startsWith('/') ? '' : '/') + aurl;
+        else if (fkPid) listingUrl = 'https://www.flipkart.com/product/p/itme?pid=' + fkPid;
+      } catch (_) { fkPid = ''; listingUrl = ''; }
       rows.push({
         city: rec.city, pincode: rec.pincode, locality: rec.locality,
         store_id: storeId, store_name: storeId,
@@ -138,6 +162,7 @@ function parseProducts(searchJson, rec) {
         vol_ml: vol, sale, mrp, discount_pct: disc,
         per_litre: ppu != null ? ppu : (vol ? Math.round((sale / (vol / 1000)) * 100) / 100 : null),
         eta_min: null, in_stock: ((v.availability || {}).displayState === 'IN_STOCK') ? 1 : 0,
+        ...((fkPid || listingUrl) ? { fk_pid: fkPid, listing_url: listingUrl } : {}),
       });
     }
   }
