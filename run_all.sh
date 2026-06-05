@@ -24,15 +24,29 @@ echo "[$(date '+%F %T')] run_all: START (serial — accuracy first)"
 #   RUNNER_OVERRIDE    — command run instead of ./run.sh (word-split on purpose: may carry args)
 PLATFORMS="${PLATFORMS_OVERRIDE:- flipkart-minutes flipkart zepto bigbasket amazon amazon-fresh amazon-now blinkit}"
 RUNNER="${RUNNER_OVERRIDE:-./run.sh}"
+# SIM MODE hard gate (LEAD ruling): ANY override set => this is the simulation harness, NOT a
+# production sweep. Skip everything that touches live platforms or shared state: the per-platform
+# guardian.py (undefined on fake platforms), healthcheck.sh -> selfheal (would RE-RUN REAL
+# platforms on staleness/BROKEN = live scrapes), vault_build.py, and the final git block.
+# The send_batch barrier still runs — it is exactly what the sim exercises.
+SIM_MODE=0
+if [ -n "${PLATFORMS_OVERRIDE:-}" ] || [ -n "${RUNNER_OVERRIDE:-}" ]; then
+  SIM_MODE=1
+  echo "[$(date '+%F %T')] run_all: SIM MODE (override set) — guardian/healthcheck/vault/git SKIPPED"
+fi
 for P in $PLATFORMS; do
   echo "[$(date '+%F %T')] run_all: running $P (serial)"
   # AUTO-HEAL HOOK: after this platform's pipeline, the guardian re-evaluates the fresh
   # result.json (CALLs tools/review.py for the shared checks + its independent 11-bug-class deep
   # checks). On BROKEN -> QUARANTINE (keep last-good, nothing published — Telegram is already
   # verdict-gated) + bounded --heal retry + owner alert. Best-effort `|| true` so a guardian
-  # hiccup can never fail the sweep.
+  # hiccup can never fail the sweep. In SIM MODE the guardian is skipped (fake platforms).
   P_START="$(date +%s)"
-  ( $RUNNER "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1
+  if [ "$SIM_MODE" = "1" ]; then
+    ( $RUNNER "$P" ) >> "logs/run-${P}.out" 2>&1
+  else
+    ( $RUNNER "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1
+  fi
   P_END="$(date +%s)"
   # Duration ledger for the deadline scheduler (W1's tools/cron). Best-effort, only if the
   # recorder exists; sweep_id falls back to "adhoc" on manual runs without SWEEP_ID.
@@ -51,6 +65,9 @@ if [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ] && [ -n "${SWEEP_DE
   echo "[$(date '+%F %T')] run_all: batch barrier -> send_batch.py $SWEEP_ID (deadline epoch $SWEEP_DEADLINE)"
   python3 tools/cron/send_batch.py "$SWEEP_ID" "$SWEEP_DEADLINE" || true
 fi
+# SIM MODE hard gate: everything below (selfheal, vault rebuild, git) is production-only.
+if [ "$SIM_MODE" != "1" ]; then
+
 # Backstop: the legacy self-heal pass still runs (it owns the staleness / row-collapse
 # signals the inline guardian leaves to it). It runs AFTER the wait above, so the
 # inline guardians have finished; it shares the same per-platform .heal-<p>.lock, so
@@ -84,5 +101,7 @@ python3 tools/vault_build.py || echo "vault_build failed (non-fatal)" >&2
     echo "[$(date '+%F %T')] run_all: vault graph unchanged."
   fi
 ) || true
+
+fi  # end SIM MODE gate
 
 echo "[$(date '+%F %T')] run_all: DONE"
