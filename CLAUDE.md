@@ -17,7 +17,7 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── run_all.sh             # one cron sweep: all 9 live platforms SERIALLY (one at a time, ~100-110 min) → per-scrape guardian auto-heal → self-heal
+├── run_all.sh             # one cron sweep: all 8 live platforms SERIALLY (~2h;  removed 2026-06-06) → per-scrape guardian auto-heal → self-heal
 ├── setup_cron.sh          # installs the cron (10:00+15:00 run_all.sh sweeps, 18:00 guardian deep-dive) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
@@ -47,11 +47,11 @@ ls output/                  # the Excel
 4. If it returns 0 rows / captcha / 403 → that platform blocks the datacenter IP → needs a residential proxy.
 5. Commit + push.
 
-## Block-risk map (datacenter VPS IP) — 9 LIVE, no proxy (7 direct + Amazon Fresh & Now logged-in)
+## Block-risk map (datacenter VPS IP) — 8 LIVE in the cron chain, no proxy ( REMOVED 2026-06-06, rebuild pending)
 | Platform | Status | Notes |
 |---|---|---|
 | blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes. **2026-06-05 fix (0537fbf):** scrape is gated on VERIFIED store re-resolution — the active store must be a real local store near the requested coords, else 0 rows are recorded (never the Gurgaon default). Kills the default-store contamination. This patience is why a run is now ~69 min (vs the old ~10 min, which was the contamination skipping the check). CONCURRENCY default 2 (≥3 loses re-resolution). **Known gap:** ~40% of pincodes have bad coordinates that never re-resolve → recorded as 0 rows (a geocoding follow-up, NOT a scraper bug). |
-|  | ⚠️ BLOCKED | stealth context + POST to /api//search/v2 (WAF bypass). **2026-06-05 (c0bc409):** now paginates by offset (full Jivo catalogue, not just page 0); 403 fail-safe preserved (first-page non-200 → 0 rows + "search status" marker → review BROKEN). **STILL blocked by an IP-level 403** (currently 0 rows) — needs a residential proxy OR a logged-in  session (parked; see docs/PROXY.md + platforms//LOGIN-COOKIES.md). |
+|  | ❌ REMOVED from cron chain 2026-06-06 (was ⚠️ BLOCKED) | stealth context + POST to /api//search/v2 (WAF bypass). **2026-06-05 (c0bc409):** now paginates by offset (full Jivo catalogue, not just page 0); 403 fail-safe preserved (first-page non-200 → 0 rows + "search status" marker → review BROKEN). **STILL blocked by an IP-level 403** (currently 0 rows) — needs a residential proxy OR a logged-in  session (parked; see docs/PROXY.md + platforms//LOGIN-COOKIES.md). |
 | zepto | ✅ LIVE | reached via bff-gateway.zeptonow.com BFF API (CloudFront on website still 403s) |
 | flipkart-minutes | ✅ LIVE | HYPERLOCAL store; GPS "use my location"; scaled to 345 pincodes |
 | flipkart | ✅ LIVE | marketplace, national pricing, 1 row/SKU |
@@ -78,11 +78,12 @@ each OK report (`output/.batch/<sweep>/<p>.json`) instead of curling; after the 
 all summaries + Excels in canonical order, footer with held/late. BROKEN-run owner alerts
 still send immediately. Failures fall back to immediate send (a report can be early, never
 lost). Plain `./run_all.sh` without the env = old behavior. An **18:00 daily guardian
-deep-dive** (`./tools/guardian_daily.sh`) is unchanged. Each sweep scrapes the **9 live
+deep-dive** (`./tools/guardian_daily.sh`) is unchanged. Each sweep scrapes the **8 live
 platforms SERIALLY — one platform at a time** (commit 8ef79d4), in this order:
-, flipkart-minutes, flipkart, zepto, bigbasket, amazon, amazon-fresh,
-amazon-now, **blinkit LAST** (slowest). Observed full chain 2026-06-05: **~3h05m**
-( WAF heal-retries ~40m + blinkit ~69m) — the 3h30m LEAD_MAX covers it.
+flipkart-minutes, flipkart, zepto, bigbasket, amazon, amazon-fresh,
+amazon-now, **blinkit LAST** (slowest). ** was REMOVED from the chain
+2026-06-06** (WAF-dead, ~40m heal-retry waste per sweep; rebuild pending — owner).
+Predicted chain after removal: **~1h58m** → 10:00 sweep starts ~08:02.
 SIM testing: `PLATFORMS_OVERRIDE`/`RUNNER_OVERRIDE` trip SIM MODE in run_all.sh
 (guardian/healthcheck/vault/git all skipped — never reaches live scrapes); see
 `tools/cron/tests/`.

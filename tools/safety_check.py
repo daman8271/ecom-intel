@@ -22,7 +22,7 @@ import csv, json, os, re, glob, subprocess, sys, datetime
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def P(*a): return os.path.join(ROOT, *a)
 PLATFORMS = ["amazon", "amazon-fresh", "amazon-now", "bigbasket", "blinkit",
-             "flipkart", "flipkart-minutes", "", "zepto"]
+             "flipkart", "flipkart-minutes", "zepto"]
 
 OK, WARN, BAD, UNK = "OK", "WARN", "BAD", "UNKNOWN"
 RANK = {OK: 0, WARN: 1, UNK: 1, BAD: 2}

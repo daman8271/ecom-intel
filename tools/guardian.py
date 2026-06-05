@@ -83,7 +83,7 @@ BLOCK_MARKERS = (
 )
 
 PLATFORMS = (os.environ.get("ECOM_PLATFORMS")
-             or "blinkit  flipkart-minutes flipkart amazon zepto "
+             or "blinkit flipkart-minutes flipkart amazon zepto "
                 "amazon-fresh amazon-now bigbasket").split()
 
 # ===========================================================================

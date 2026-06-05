@@ -7,7 +7,7 @@ Design deep-dive. For operating instructions see the top-level
 > **Status (2026-06-06):** the full pipeline is **WIRED and running on cron** —
 > `scrape → build_excel → predict → review → vault/history → telegram → commit/push`
 > all execute inside `run.sh`, and `run_all.sh` drives a **SERIAL** sweep (one platform at
-> a time; observed full chain ~3h incl. heal-retries) of all **9 live platforms**, with a
+> a time; ~2h chain after 's 2026-06-06 removal) of all **8 live platforms**, with a
 > **per-scrape auto-heal guardian** and a self-heal backstop. Cron is **DEADLINE-ALIGNED**
 > (owner requirement 2026-06-06): `tools/cron/deadline_sweep.sh` fires at **06:30 / 11:30
 > IST**, predicts the chain runtime from per-platform duration history, sleeps so the chain
@@ -185,7 +185,7 @@ Serviceability* sheet on top of the standard layout.
 cron (IST: fire 06:30 → slot 10:00, fire 11:30 → slot 15:00, 18:00 guardian deep-dive)
   └─ tools/cron/deadline_sweep.sh <slot> — predict chain runtime (durations.jsonl p90),
   │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE
-  └─ run_all.sh — scrape all 9 LIVE platforms SERIALLY (one at a time; ~3h chain observed)
+  └─ run_all.sh — scrape all 8 LIVE platforms SERIALLY ( removed 2026-06-06; ~2h chain)
        ├─ tools/cron/record_duration.sh <p> <secs>  (per platform — self-learning ledger)
        ├─ tools/cron/send_batch.py — barrier: sleep to deadline, deliver ALL reports as ONE batch
        └─ run.sh <platform>   (per platform, all steps WIRED)
@@ -284,7 +284,7 @@ rollups) — Python 3 stdlib only, deterministic, **no LLM**, safe inside the cr
 | Item | Installed & live (verified via `crontab -l`) |
 |---|---|
 | Scrape cadence | **2 full sweeps/day — 10:00 + 15:00 IST** + an **18:00 guardian deep-dive** |
-| Driver | one `./run_all.sh` per sweep — scrapes all **9 live platforms SERIALLY** (one at a time, ~100–110 min) |
+| Driver | one `./run_all.sh` per sweep — scrapes all **8 live platforms SERIALLY** (one at a time, ~2h;  removed 2026-06-06) |
 | Auto-heal | inline per scrape (`tools/guardian.py --heal`) + the self-heal backstop at the sweep's end (`tools/selfheal.sh`) |
 | Timezone | `Asia/Kolkata` (set by `setup_cron.sh`) |
 

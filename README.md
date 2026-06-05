@@ -330,7 +330,7 @@ ecom-intel/
 ├── CLAUDE.md              # operator quick-reference (auto-loads in Claude Code)
 ├── REPORT.md              # platform-coverage map (9 in the serial cron sweep;  403-blocked)
 ├── run.sh                 # ./run.sh <p> — scrape → Excel → predict → review → vault → telegram → push
-├── run_all.sh             # one cron sweep: scrape all 9 live platforms SERIALLY (~100-110 min) → per-scrape guardian auto-heal → self-heal
+├── run_all.sh             # one cron sweep: scrape all 8 live platforms SERIALLY (~2h;  removed 2026-06-06) → per-scrape guardian auto-heal → self-heal
 ├── healthcheck.sh         # self-heal: detect broken runs → Claude Code safe repair
 ├── setup_cron.sh          # (re)install cron (idempotent: 10:00+15:00 sweeps + 18:00 guardian deep-dive, IST), set timezone
 ├── secrets.env            # Telegram creds (gitignored — recreate after wipe)

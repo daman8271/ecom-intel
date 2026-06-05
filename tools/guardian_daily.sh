@@ -18,7 +18,7 @@ DIR="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$DIR" || exit 0
 mkdir -p logs reviews/guardian 2>/dev/null || true
 
-PLATFORMS="${ECOM_PLATFORMS:-blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket}"
+PLATFORMS="${ECOM_PLATFORMS:-blinkit flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket}"
 TODAY="$(date +%Y-%m-%d)"
 YDAY="$(date -d 'yesterday' +%Y-%m-%d 2>/dev/null || echo '')"
 REPORT="$DIR/reviews/guardian/health-${TODAY}.md"

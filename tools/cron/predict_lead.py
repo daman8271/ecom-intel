@@ -8,7 +8,7 @@ Sources, in order:
   2. bootstrap from logs/cron.log history when a platform has no recorded lines —
      the serial sweeps log "[ts] run_all: running <p> (serial)" so consecutive
      timestamps give each platform's wall duration for free.
-  3. defaults: 600s per platform (: 120s — it is currently IP-blocked and
+  3. defaults: 600s per platform ( was removed from the chain 2026-06-06 and
      0-rows fast UNLESS the guardian heal-retries it, which history will reflect).
 
 Prints ONE JSON object: {"<platform>": lead_secs, ..., "total": secs}.
@@ -42,12 +42,12 @@ DURATIONS = os.environ.get("DURATIONS_FILE") or os.path.join(HERE, "durations.js
 CRON_LOG = os.path.join(ROOT, "logs", "cron.log")
 
 CANONICAL = [
-    "", "flipkart-minutes", "flipkart", "zepto", "bigbasket",
+    "flipkart-minutes", "flipkart", "zepto", "bigbasket",
     "amazon", "amazon-fresh", "amazon-now", "blinkit",
 ]
 
 DEFAULT_LEAD = 600
-DEFAULT_LEAD_BY_PLATFORM = {"": 120}
+DEFAULT_LEAD_BY_PLATFORM = {}  #  removed from the chain 2026-06-06
 PER_PLATFORM_PAD = 120      # fixed safety pad per platform, seconds
 P90_MULT = 1.15             # multiplicative margin on the p90
 SWEEP_BUFFER = 600          # tail: self-heal pass + vault rebuild + git

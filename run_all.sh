@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# run_all.sh — one cron-triggered sweep: scrape every LIVE platform SERIALLY (one at a time),
+# run_all.sh — one cron-triggered sweep: scrape every LIVE platform SERIALLY (one at a time;
+#  REMOVED from the chain 2026-06-06 — WAF-dead, rebuild pending),
 # then run the self-heal pass.
 #
 # SERIAL (not parallel) — accuracy over speed. Launching all 9 at once STARVED each scraper
@@ -22,7 +23,7 @@ echo "[$(date '+%F %T')] run_all: START (serial — accuracy first)"
 # leaves the loop byte-for-byte identical to before):
 #   PLATFORMS_OVERRIDE — space-separated platform list replacing the default 9
 #   RUNNER_OVERRIDE    — command run instead of ./run.sh (word-split on purpose: may carry args)
-PLATFORMS="${PLATFORMS_OVERRIDE:- flipkart-minutes flipkart zepto bigbasket amazon amazon-fresh amazon-now blinkit}"
+PLATFORMS="${PLATFORMS_OVERRIDE:-flipkart-minutes flipkart zepto bigbasket amazon amazon-fresh amazon-now blinkit}"  #  REMOVED 2026-06-06 (WAF-dead, owner: rebuild pending)
 RUNNER="${RUNNER_OVERRIDE:-./run.sh}"
 # SIM MODE hard gate (LEAD ruling): ANY override set => this is the simulation harness, NOT a
 # production sweep. Skip everything that touches live platforms or shared state: the per-platform

@@ -40,7 +40,7 @@ ROOT = os.path.dirname(os.path.dirname(HERE))          # tools/cron -> repo root
 TGLOG = os.path.join(ROOT, "logs", "telegram.log")
 
 CANONICAL = [
-    "", "flipkart-minutes", "flipkart", "zepto", "bigbasket",
+    "flipkart-minutes", "flipkart", "zepto", "bigbasket",
     "amazon", "amazon-fresh", "amazon-now", "blinkit",
 ]
 

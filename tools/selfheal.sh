@@ -34,7 +34,7 @@ cd "$DIR" || exit 0
 mkdir -p logs reviews baselines 2>/dev/null || true
 
 # ---- config -----------------------------------------------------------------
-PLATFORMS="${ECOM_PLATFORMS:-blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket}"  # keep in sync with run_all.sh (authoritative)
+PLATFORMS="${ECOM_PLATFORMS:-blinkit flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket}"  # keep in sync with run_all.sh (authoritative)
 MIN_ROWS="${ECOM_MIN_ROWS:-20}"          # absolute floor; healthy runs return ~60-160
 COLLAPSE_FRAC="${ECOM_COLLAPSE_FRAC:-0.5}" # rows <= baseline*this  => collapse
 MAX_AGE_H="${ECOM_MAX_AGE_H:-15}"        # result.json older than this = stale
