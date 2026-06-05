@@ -1,0 +1,3634 @@
+{
+ "family": "flipkart",
+ "generated_by": "W2 build_map_flipkart.py (read-only inputs; verify_results WRONG/RISKY + LEAD bus ruling applied)",
+ "platforms": [
+  "flipkart",
+  "flipkart-minutes"
+ ],
+ "notes": [
+  "flipkart is national (1 row/FSN) so sale_modal==sale_min==sale_max; flipkart-minutes aggregates per-store rows.",
+  "flipkart-minutes listing ids are NOT recoverable offline (scraper keeps no product id / raw JSON) -> id = canonical slug, url = null. Fixable by a 5-line scrape.js patch (capture productInfo.action params pid).",
+  "EXTRA LIGHT 3L: owner URL exists but has no pid -> unmappable offline, see review.",
+  "partition of 268 distinct flipkart listings: {'mapped': 112, 'unpriced': 139, 'junk': 9, 'review': 8} (mapped = primaries+alts)."
+ ],
+ "mappings": {
+  "A2 GHEE 500ML": {
+   "flipkart": {
+    "id": "GHEHHZBQJBNVZGGQ",
+    "url": "https://www.flipkart.com/jivo-a2-cow-ghee-500-ml-traditional-bilona-method-glass-jar-mason/p/itma045fca435975?pid=GHEHHZBQJBNVZGGQ",
+    "title": "JIVO A2 Cow Ghee 500 ml | Traditional Bilona Method | 500 ml Glass Jar Ghee Mason Jar",
+    "item": "A2 GHEE 500G",
+    "sap_code": "FG0000082",
+    "mrp": 2200,
+    "sale_modal": 586,
+    "sale_min": 586,
+    "sale_max": 586,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "alt GHEGEUGZHGHGF5XH is internally mistyped 'A2 GHEE 500 KG' but page says 500ml glass bottle and mrp 2200 == master (verifier RISKY-but-correct).",
+    "alt": [
+     {
+      "id": "GHEGEUGZHGHGF5XH",
+      "url": "https://www.flipkart.com/product/p/itme?pid=GHEGEUGZHGHGF5XH",
+      "title": "JIVO A2 Ghee 100% Pure, Natural & Healthy 500ml Ghee Plastic Bottle",
+      "item": "A2 GHEE 500 KG",
+      "sap_code": "FG0000082",
+      "mrp": 2200,
+      "sale_modal": 748,
+      "sale_min": 748,
+      "sale_max": 748,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     },
+     {
+      "id": "IOMGG4YN5WGXGQCW",
+      "url": "https://www.flipkart.com/product/p/itme?pid=IOMGG4YN5WGXGQCW",
+      "title": "JIVO A2 Ghee 100% Pure, Natural & Healthy Ghee 500 g Glass Bottle",
+      "item": "A2 GHEE 500G",
+      "sap_code": null,
+      "mrp": 2200,
+      "sale_modal": 551,
+      "sale_min": 551,
+      "sale_max": 551,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "A2 GHEE 1L": {
+   "flipkart": {
+    "id": "GHEGEUJJNSCCHWQ9",
+    "url": "https://www.flipkart.com/jivo-a2-ghee-pure-natural-healthy-glass-bottle/p/itmb44056f05fce1?pid=GHEGEUJJNSCCHWQ9",
+    "title": "JIVO A2 Ghee Pure, Natural & Healthy Ghee Glass Bottle Ghee Glass Bottle",
+    "item": "A2 GHEE 1KG",
+    "sap_code": "FG0000083",
+    "mrp": 4000,
+    "sale_modal": 1640,
+    "sale_min": 1640,
+    "sale_max": 1640,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "IOMGG4YWHHYW3Z6Y",
+      "url": "https://www.flipkart.com/product/p/itme?pid=IOMGG4YWHHYW3Z6Y",
+      "title": "JIVO A2 Ghee 100% Pure, Natural & Healthy Ghee Ghee 1 kg Glass Bottle",
+      "item": "A2 GHEE 1KG",
+      "sap_code": "FG0000083",
+      "mrp": 4000,
+      "sale_modal": 1136,
+      "sale_min": 1136,
+      "sale_max": 1136,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "CANOLA 1L": {
+   "flipkart": {
+    "id": "EDOGDTNZGDAHUDUJ",
+    "url": "https://www.flipkart.com/jivo-canola-1-litre-cooking-oil-plastic-bottle/p/itmdbd65a13a8112?pid=EDOGDTNZGDAHUDUJ",
+    "title": "JIVO Canola 1 Litre Cooking Oil Canola Oil Plastic Bottle",
+    "item": "CANOLA 1L",
+    "sap_code": "FG0000032",
+    "mrp": 375,
+    "sale_modal": 305,
+    "sale_min": 305,
+    "sale_max": 305,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "QWRGGAV6QASFQUKF",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGAV6QASFQUKF",
+      "title": "JIVO Canola 1 Litre Cooking Oil Canola Oil Plastic Bottle Canola Oil PET Bottle",
+      "item": "CANOLA 1L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": {
+    "id": "jivo-cold-press-canola-oil-plastic-bottle-1l",
+    "url": null,
+    "title": "JIVO Cold Press Canola Oil Plastic Bottle",
+    "item": null,
+    "sap_code": null,
+    "mrp": 375,
+    "sale_modal": 260,
+    "sale_min": 245,
+    "sale_max": 271,
+    "in_stock": 1,
+    "in_stock_stores": 41,
+    "stores_seen": 65,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 375 == master; minor per-store mrp variants {375: 64, 330: 1}"
+   }
+  },
+  "CANOLA 1L POUCH": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "CANOLA 1+1L": {
+   "flipkart": {
+    "id": "EDOFRXTMJGAE9DCT",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-canola-oil-1-1-ltr-pet-bottle/p/itmf71da38c53698?pid=EDOFRXTMJGAE9DCT",
+    "title": "JIVO Cold Pressed Canola Oil 1+1 Ltr Canola Oil PET Bottle",
+    "item": "CANOLA 1+1L",
+    "sap_code": "FG0000123",
+    "mrp": 750,
+    "sale_modal": 546,
+    "sale_min": 546,
+    "sale_max": 546,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "same-product 2x1L canola pack (verifier precedent: pack-of-2-same-oil == 1+1L SKU).",
+    "alt": [
+     {
+      "id": "EDOHYRQZ2GQTMYYF",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRQZ2GQTMYYF",
+      "title": "JIVO Cold Pressed Canola Cooking Oil -Pack of 2, Canola Oil Plastic Bottle",
+      "item": "CANOLA 1+1L",
+      "sap_code": "FG0000123",
+      "mrp": 750,
+      "sale_modal": 528,
+      "sale_min": 528,
+      "sale_max": 528,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "QWRGEMP4TVBHRUE3",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMP4TVBHRUE3",
+      "title": "Jivo Canola Cold Press Edible Oil 1 Litre (Pack of 2) Canola Oil Plastic Bottle",
+      "item": "Canola 1+1L",
+      "sap_code": "FG0000123",
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "QWRGGAZJH2PABKMH",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGAZJH2PABKMH",
+      "title": "JIVO Cold Pressed Canola Oil 1+1 Ltr Canola Oil Plastic Bottle",
+      "item": "Canola 1+1L",
+      "sap_code": "FG0000123",
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": {
+    "id": "jivo-cold-press-combo-canola-oil-plastic-bottle-2l",
+    "url": null,
+    "title": "JIVO Cold Press Combo Canola Oil Plastic Bottle",
+    "item": null,
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": 575,
+    "sale_min": 575,
+    "sale_max": 575,
+    "in_stock": 1,
+    "in_stock_stores": 2,
+    "stores_seen": 2,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); same-product combo: pack \"2 x 1 L\" canola only -> CANOLA 1+1L (verifier precedent); no mrp from API, sale 575"
+   }
+  },
+  "CANOLA 3L": {
+   "flipkart": {
+    "id": "EDOGHERSUQWAAU5S",
+    "url": "https://www.flipkart.com/jivo-canola-cold-press-edible-oil-pack-3-1-litre-each-3litres-pet-bottle/p/itm1e391ee3a3595?pid=EDOGHERSUQWAAU5S",
+    "title": "JIVO Canola Cold Press Edible Oil Pack of 3, 1 Litre each (3Litres) Canola Oil PET Bottle",
+    "item": "CANOLA 1+1+1L",
+    "sap_code": "FG0000043",
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed pid is a 'pack 3 - 1 litre each' listing (owner counts 3x1L as the 3L SKU). Unpriced today."
+   },
+   "flipkart-minutes": null
+  },
+  "CANOLA 4L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "CANOLA 5L": {
+   "flipkart": {
+    "id": "EDOFTX47SWWQPRVS",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-canola-oil-can/p/itm39ba636c9e4f?pid=EDOFTX47SWWQPRVS",
+    "title": "JIVO Cold Pressed Canola Oil Can",
+    "item": "CANOLA 5L",
+    "sap_code": "FG0000004",
+    "mrp": 1650,
+    "sale_modal": 1203,
+    "sale_min": 1203,
+    "sale_max": 1203,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOHHX9RDSSJGYGG",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHHX9RDSSJGYGG",
+      "title": "JIVO Cold Pressed Canola Oil | Cooking Oil for Roasting | High MUFA PUFA, Omega 3 & 6 Canola Oil Can",
+      "item": "CANOLA 5L",
+      "sap_code": "FG0000118",
+      "mrp": 1650,
+      "sale_modal": 1082,
+      "sale_min": 1082,
+      "sale_max": 1082,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOHYRG4UMJFF2YE",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRG4UMJFF2YE",
+      "title": "JIVO Healthiest Cooking Cold Pressed Canola Oil Canola Oil Can",
+      "item": "CANOLA 5L",
+      "sap_code": "FG0000118",
+      "mrp": 1650,
+      "sale_modal": 1234,
+      "sale_min": 1234,
+      "sale_max": 1234,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOHYVZSYQPYYEYH",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYVZSYQPYYEYH",
+      "title": "JIVO Cold Pressed 5 liter Canola Oil Can",
+      "item": "CANOLA 5L",
+      "sap_code": "FG0000118",
+      "mrp": 1650,
+      "sale_modal": 1284,
+      "sale_min": 1284,
+      "sale_max": 1284,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOH9N9SAN3YEG7B",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9N9SAN3YEG7B",
+      "title": "JIVO Canola Oil Rich in Omega-3s A Heart-Healthy Cooking Oil and Low in Saturated Fat Canola Oil Can",
+      "item": "CANOLA 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "QWRGEMPHENBFJTME",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMPHENBFJTME",
+      "title": "Jivo Canola Cold Press Oil 5 LTR (Pack of 1) Canola Oil Can",
+      "item": "CANOLA 5L",
+      "sap_code": "FG0000004",
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "QWRGGAU3AQ7DEAUZ",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGAU3AQ7DEAUZ",
+      "title": "JIVO Cold Pressed Canola Oil for Cooking Canola Oil Can",
+      "item": "CANOLA 5L",
+      "sap_code": "FG0000118",
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "EXTRA LIGHT 500ML": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "EXTRA LIGHT 1L": {
+   "flipkart": {
+    "id": "EDOGE5WHZBGW4SKA",
+    "url": "https://www.flipkart.com/jivo-extra-light-1-litre-cooking-oil-olive-plastic-bottle/p/itmfdd62ba312d9?pid=EDOGE5WHZBGW4SKA",
+    "title": "JIVO Extra Light Cooking Olive Oil PET Bottle",
+    "item": "EXTRA LIGHT 1L",
+    "sap_code": "FG0000005",
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "QWRGGC3SVFXSKZ94",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGC3SVFXSKZ94",
+      "title": "JIVO Extra Light 1 Litre Cooking Olive Oil Plastic Bottle",
+      "item": "EXTRA LIGHT 1L",
+      "sap_code": null,
+      "mrp": 1499,
+      "sale_modal": 489,
+      "sale_min": 489,
+      "sale_max": 489,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "EXTRA LIGHT 2L": {
+   "flipkart": {
+    "id": "EDOFT6PR7QMYHGJH",
+    "url": "https://www.flipkart.com/jivo-extra-light-olive-oil-1-1-ltr-plastic-bottle/p/itm3ce66634be61?pid=EDOFT6PR7QMYHGJH",
+    "title": "JIVO Extra Light Cooking Olive Oil PET Bottle",
+    "item": "EXTRA LIGHT 1+1L",
+    "sap_code": "FG0000313",
+    "mrp": 2998,
+    "sale_modal": 953,
+    "sale_min": 953,
+    "sale_max": 953,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed pid is the 1+1L PET pack @ mrp 2998 (= 2 x 1499 EL-1L master); the single 2L-can listing EDOGHZTJZEYQJGME also shows 2998 and zepto shows 2998 x34, while fresh/now/blinkit/bigbasket show master 2799 -> mixed pack-variant pricing, flagged in master_mrp_stale with caveat.",
+    "alt": [
+     {
+      "id": "EDOGHZTJZEYQJGME",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHZTJZEYQJGME",
+      "title": "JIVO Extra Light Olive Oil Can",
+      "item": "EXTRA LIGHT 2L",
+      "sap_code": "FG0000064",
+      "mrp": 2998,
+      "sale_modal": 1190,
+      "sale_min": 1190,
+      "sale_max": 1190,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": {
+    "id": "jivo-extra-light-olive-oil-can-2l",
+    "url": null,
+    "title": "JIVO Extra Light Olive Oil Can",
+    "item": null,
+    "sap_code": null,
+    "mrp": 2799,
+    "sale_modal": 1903,
+    "sale_min": 1903,
+    "sale_max": 2084,
+    "in_stock": 1,
+    "in_stock_stores": 36,
+    "stores_seen": 36,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 2799 == master"
+   }
+  },
+  "EXTRA LIGHT 3L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "EXTRA LIGHT 5L": {
+   "flipkart": {
+    "id": "EDOFZFUFCQDJHTQF",
+    "url": "https://www.flipkart.com/jivo-extra-light-olive-oil-5-ltr-tin/p/itmcc6abedf445?pid=EDOFZFUFCQDJHTQF",
+    "title": "JIVO Extra Light Cooking Olive Oil Tin",
+    "item": "EXTRA LIGHT 5L",
+    "sap_code": "FG0000009",
+    "mrp": 6499,
+    "sale_modal": 2742,
+    "sale_min": 2742,
+    "sale_max": 2742,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "QWRGEMP5ZQZFEKGJ",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMP5ZQZFEKGJ",
+      "title": "Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN) Olive Oil Tin",
+      "item": "EXTRA LIGHT 5L",
+      "sap_code": null,
+      "mrp": 6499,
+      "sale_modal": 2996,
+      "sale_min": 2996,
+      "sale_max": 2996,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOHYSH9GAYZHJG6",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYSH9GAYZHJG6",
+      "title": "JIVO Extra Light 5 Liter Olive Oil Can",
+      "item": "EXTRA LIGHT 5L",
+      "sap_code": null,
+      "mrp": 4900,
+      "sale_modal": 2944,
+      "sale_min": 2944,
+      "sale_max": 2944,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "JIVO POMACE 1L": {
+   "flipkart": {
+    "id": "EDOHYRPTDVEZVZ8E",
+    "url": "https://www.flipkart.com/jivo-cooking-pomace-olive-oil-plastic-bottle/p/itme69157c71cd7?pid=EDOHYRPTDVEZVZ8E",
+    "title": "JIVO Cooking Pomace Olive Oil Olive Oil Plastic Bottle",
+    "item": "JIVO POMACE 1L",
+    "sap_code": "FG0000028",
+    "mrp": 1049,
+    "sale_modal": 538,
+    "sale_min": 538,
+    "sale_max": 538,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOG3WCXJMZZYVW4",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOG3WCXJMZZYVW4",
+      "title": "JIVO Pomace Olive Oil PET Bottle",
+      "item": "JIVO POMACE 1L",
+      "sap_code": "FG0000028",
+      "mrp": 1049,
+      "sale_modal": 537,
+      "sale_min": 537,
+      "sale_max": 537,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": {
+    "id": "jivo-pomace-olive-oil-plastic-bottle-1l",
+    "url": null,
+    "title": "JIVO Pomace Olive Oil Plastic Bottle",
+    "item": null,
+    "sap_code": null,
+    "mrp": 1049,
+    "sale_modal": 409,
+    "sale_min": 379,
+    "sale_max": 447,
+    "in_stock": 1,
+    "in_stock_stores": 13,
+    "stores_seen": 31,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 1049 == master; minor per-store mrp variants {1049: 27, 1019: 2, 1043: 2}"
+   }
+  },
+  "JIVO POMACE 2L": {
+   "flipkart": {
+    "id": "EDOGYZHGUSADDG9B",
+    "url": "https://www.flipkart.com/jivo-pomace-olive-oil-plastic-bottle-1-ltr-pack-2/p/itm7ff12dcdfad72?pid=EDOGYZHGUSADDG9B",
+    "title": "JIVO Pomace Olive Oil Plastic Bottle 1 Ltr ( Pack of 2) Olive Oil PET Bottle",
+    "item": "JIVO POMACE 1+1L",
+    "sap_code": "FG0000320",
+    "mrp": 2098,
+    "sale_modal": 789,
+    "sale_min": 789,
+    "sale_max": 789,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed pid is the 1+1L pack @ mrp 2098 (= 2 x 1049 POMACE-1L master); alt EDOGMHXYU2PHFW4N is the true 2L bottle @ 1449 == the LEAD-confirmed stale master mrp (amazon+bigbasket agree).",
+    "alt": [
+     {
+      "id": "EDOGMHXYU2PHFW4N",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOGMHXYU2PHFW4N",
+      "title": "JIVO Pomace Cooking Olive Oil 2L Olive Oil Plastic Bottle",
+      "item": "JIVO POMACE 2L",
+      "sap_code": "FG0000114",
+      "mrp": 1449,
+      "sale_modal": 849,
+      "sale_min": 849,
+      "sale_max": 849,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "POMACE 3L": {
+   "flipkart": {
+    "id": "EDOGFYRUTBCS6YHW",
+    "url": "https://www.flipkart.com/jivo-pomace-olive-oil-plastic-bottle-1-ltr-pack-3-pet/p/itma8fdec97511c2?pid=EDOGFYRUTBCS6YHW",
+    "title": "JIVO Pomace Olive Oil Plastic Bottle 1 Ltr (Pack of 3) Olive Oil PET Bottle",
+    "item": "JIVO POMACE 1+1+1L",
+    "sap_code": "FG0000311",
+    "mrp": 2247,
+    "sale_modal": 1143,
+    "sale_min": 1143,
+    "sale_max": 1143,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed pid is the 1x3 (1+1+1L) pack @ mrp 2247 (= 3 x 749); amazon shows the same 2247 -> in master_mrp_stale w/ caveat (amazon also lists 3050 = master)."
+   },
+   "flipkart-minutes": null
+  },
+  "JIVO POMACE 5L": {
+   "flipkart": {
+    "id": "EDOGE5XHFZN2HZ9D",
+    "url": "https://www.flipkart.com/jivo-pomace-cooking-olive-oil-tin/p/itm6f1c19f7ad9f8?pid=EDOGE5XHFZN2HZ9D",
+    "title": "JIVO Pomace Cooking Olive Oil Tin",
+    "item": "JIVO POMACE 5L",
+    "sap_code": "FG0000008",
+    "mrp": 4999,
+    "sale_modal": 1776,
+    "sale_min": 1776,
+    "sale_max": 1776,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "QWRGEMR8V55BHCJK",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMR8V55BHCJK",
+      "title": "Jivo Pomace Cooking Olive Oil 5 Litre Tin Olive Oil Tin",
+      "item": "JIVO POMACE 5L",
+      "sap_code": "FG0000008",
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": {
+    "id": "jivo-pomace-olive-oil-tin-5l",
+    "url": null,
+    "title": "JIVO Pomace Olive Oil Tin",
+    "item": null,
+    "sap_code": null,
+    "mrp": 4999,
+    "sale_modal": 2049,
+    "sale_min": 2049,
+    "sale_max": 2274,
+    "in_stock": 1,
+    "in_stock_stores": 10,
+    "stores_seen": 12,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 4999 == master"
+   }
+  },
+  "EXTRA VIRGIN 200ML": {
+   "flipkart": {
+    "id": "EDOHGPF2ZQ9RQPB3",
+    "url": "https://www.flipkart.com/jivo-extra-virgin-olive-oil-imported-spain-high-mufa-vitamin-e-pet-bottle/p/itm204c7244c4bb9?pid=EDOHGPF2ZQ9RQPB3",
+    "title": "JIVO Extra Virgin Olive Oil | Imported From Spain | High in MUFA, Vitamin E | Olive Oil PET Bottle",
+    "item": "EXTRA VIRGIN 200ML",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "EXTRA VIRGIN 250ML": {
+   "flipkart": {
+    "id": "EDOGUY3FP4Y3RVQM",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGUY3FP4Y3RVQM",
+    "title": "JIVO Extra Virgin Olive Oil Glass Bottle",
+    "item": "EXTRA VIRGIN 250ML",
+    "sap_code": "FG0000112",
+    "mrp": 450,
+    "sale_modal": 209,
+    "sale_min": 209,
+    "sale_max": 209,
+    "in_stock": 1,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "EXTRA VIRGIN 500ML": {
+   "flipkart": {
+    "id": "EDOGWGZ7TQ6ZZT3H",
+    "url": "https://www.flipkart.com/jivo-extra-virgin-all-purpose-olive-oil-pet-bottle/p/itma8cfdbf95bab5?pid=EDOGWGZ7TQ6ZZT3H",
+    "title": "JIVO Extra Virgin All Purpose Olive Oil PET Bottle",
+    "item": "EXTRA VIRGIN 500ML",
+    "sap_code": null,
+    "mrp": 998,
+    "sale_modal": 361,
+    "sale_min": 361,
+    "sale_max": 361,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "fk mrp 998, amazon 999 (Re.1) vs master 675 -> master_mrp_stale candidate."
+   },
+   "flipkart-minutes": null
+  },
+  "EXTRA VIRGIN 1L": {
+   "flipkart": {
+    "id": "EDOG2NMEHAREDMZ3",
+    "url": "https://www.flipkart.com/jivo-extra-virgin-olive-oil-plastic-bottle/p/itm6e4cfbc1f88ce?pid=EDOG2NMEHAREDMZ3",
+    "title": "JIVO Extra Virgin Olive Oil PET Bottle",
+    "item": "EXTRA VIRGIN 1L",
+    "sap_code": "FG0000042",
+    "mrp": 1799,
+    "sale_modal": 833,
+    "sale_min": 833,
+    "sale_max": 833,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "fk mrp 1799 (both listings) == amazon-fresh/now 1799 -> ratifies LEAD-ruled master_mrp_stale (vs 1499).",
+    "alt": [
+     {
+      "id": "EDOHYVZVGVHUUQYF",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYVZVGVHUUQYF",
+      "title": "JIVO Extra Virgin 1 Liter Olive Oil Plastic Bottle",
+      "item": "EXTRA VIRGIN 1L",
+      "sap_code": "FG0000042",
+      "mrp": 1799,
+      "sale_modal": 798,
+      "sale_min": 798,
+      "sale_max": 798,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "QWRGEMQRYJBYZFUH",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQRYJBYZFUH",
+      "title": "Jivo Extra Virgin Olive Oil, 1L for Dressings, Salad and Soups, Dips & Marinades. Olive Oil Plastic Bottle",
+      "item": "EXTRA VIRGIN 1L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "EXTRA VIRGIN 2L": {
+   "flipkart": {
+    "id": "EDOG2NMPHJZH6GJC",
+    "url": "https://www.flipkart.com/jivo-extra-virgin-olive-oil-pet-bottle/p/itm6e4cfbc1f88ce?pid=EDOG2NMPHJZH6GJC",
+    "title": "JIVO Extra Virgin Olive Oil PET Bottle",
+    "item": "EXTRA VIRGIN 1+1L",
+    "sap_code": null,
+    "mrp": 3598,
+    "sale_modal": 1274,
+    "sale_min": 1274,
+    "sale_max": 1274,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed listing is the 1+1L pack; mrp 3598 = 2 x 1799 (the cross-platform-confirmed stale EV 1L mrp). Identity owner-blessed; see review for the master-vs-pack price basis question."
+   },
+   "flipkart-minutes": null
+  },
+  "EXTRA VIRGIN 3L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "EXTRA VIRGIN 5L": {
+   "flipkart": {
+    "id": "EDOGDTXGGCGFCE88",
+    "url": "https://www.flipkart.com/jivo-extra-virgin-olive-oil-tin/p/itm1fffab3662?pid=EDOGDTXGGCGFCE88",
+    "title": "JIVO Extra Virgin Olive Oil Tin",
+    "item": "EXTRA VIRGIN 5L",
+    "sap_code": "FG0000074",
+    "mrp": 5995,
+    "sale_modal": 4348,
+    "sale_min": 4348,
+    "sale_max": 4348,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "both fk listings show mrp 5995 vs master 7999 (amazon+zepto still 7999) -> flipkart-only drift, see review.",
+    "alt": [
+     {
+      "id": "QWRGEMZZBATNNPZD",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMZZBATNNPZD",
+      "title": "Jivo Extra Virgin Olive Oil 5 litres Olive Oil Tin",
+      "item": "Extra Virgin 5L",
+      "sap_code": null,
+      "mrp": 5995,
+      "sale_modal": 4222,
+      "sale_min": 4222,
+      "sale_max": 4222,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "GROUNDNUT 1L": {
+   "flipkart": {
+    "id": "EDOGWF6UGCWRREGZ",
+    "url": "https://www.flipkart.com/jivo-cold-press-cooking-groundnut-oil-pet-bottle/p/itm29f13a22efe1a?pid=EDOGWF6UGCWRREGZ",
+    "title": "JIVO Cold press Cooking Groundnut Oil PET Bottle",
+    "item": "GROUNDNUT 1L",
+    "sap_code": "FG0000142",
+    "mrp": 560,
+    "sale_modal": 300,
+    "sale_min": 300,
+    "sale_max": 300,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "fk blessed mrp 560 == amazon/amazon-now/zepto 560 -> ratifies LEAD-ruled master_mrp_stale (vs 400)."
+   },
+   "flipkart-minutes": null
+  },
+  "GROUNDNUT 5L": {
+   "flipkart": {
+    "id": "EDOH9P7NNNJUXGZP",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-groundnut-oil-nutritious-versatile-cooking-daly-use-can/p/itm633c5f6c55b98?pid=EDOH9P7NNNJUXGZP",
+    "title": "JIVO Cold Pressed Groundnut Oil A Nutritious Versatile Cooking Oil For Daly Use Groundnut Oil Can",
+    "item": "GROUNDNUT 5L",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOGWYEHTUG4JBS2",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOGWYEHTUG4JBS2",
+      "title": "JIVO Cold press Cooking Groundnut Oil Can",
+      "item": "GROUNDNUT 5L",
+      "sap_code": "FG0000143",
+      "mrp": 2800,
+      "sale_modal": 1434,
+      "sale_min": 1434,
+      "sale_max": 1434,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOHEZD5SJDQAYZA",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHEZD5SJDQAYZA",
+      "title": "JIVO Groundnut Oil for Cooking Groundnut Oil Can",
+      "item": "GROUNDNUT 5L",
+      "sap_code": "FG0000143",
+      "mrp": 2800,
+      "sale_modal": 1293,
+      "sale_min": 1293,
+      "sale_max": 1293,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOH9NDEPYZHGAHF",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9NDEPYZHGAHF",
+      "title": "JIVO Cold Pressed Groundnut Oil A Nutritious Versatile For Cooking Oil Chemical Free Groundnut Oil Can",
+      "item": "GROUNDNUT 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "COCONUT 200ML": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "COCONUT 500ML": {
+   "flipkart": {
+    "id": "EDOHF5F6BS3MEHJD",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-extra-virgin-coconut-oil-nourishing-skin-hair-growth-pet-bottle/p/itm177906178d997?pid=EDOHF5F6BS3MEHJD",
+    "title": "JIVO Cold Pressed Extra Virgin Coconut Oil | Nourishing Oil for Skin | Hair Growth | Coconut Oil PET Bottle",
+    "item": "COCONUT 500ML",
+    "sap_code": "FG0000157",
+    "mrp": 398,
+    "sale_modal": 221,
+    "sale_min": 221,
+    "sale_max": 221,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "mrp 398 on both fk listings; amazon+amazon-fresh show 399 (Re.1 rounding) vs master 695 -> master_mrp_stale per LEAD ruling; identity owner-blessed.",
+    "alt": [
+     {
+      "id": "EDOGWGZGCC8YG5PZ",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOGWGZGCC8YG5PZ",
+      "title": "JIVO Cold Pressed Extra Virgin Coconut Oil PET Bottle",
+      "item": "COCONUT OIL 500GM",
+      "sap_code": null,
+      "mrp": 398,
+      "sale_modal": 335,
+      "sale_min": 335,
+      "sale_max": 335,
+      "in_stock": 1,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "COCONUT 1L": {
+   "flipkart": {
+    "id": "EDOGPM99CPXSEUYN",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-extra-virgin-coconut-oil-pet-bottle/p/itmffd109d4c1c69?pid=EDOGPM99CPXSEUYN",
+    "title": "JIVO Cold Pressed Extra Virgin Coconut Oil PET Bottle",
+    "item": "COCONUT 1L",
+    "sap_code": "FG0000116",
+    "mrp": 700,
+    "sale_modal": 534,
+    "sale_min": 534,
+    "sale_max": 534,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SO OLIVE 1L": {
+   "flipkart": {
+    "id": "EDOH5HE7FCZJWTAW",
+    "url": "https://www.flipkart.com/jivo-so-olive-oil-1l-nutritious-cooking-healthy-ideal-daily-use-plastic-bottle/p/itmf4faaf7324fac?pid=EDOH5HE7FCZJWTAW",
+    "title": "JIVO So Olive Oil 1L Nutritious Cooking Oil for a Healthy Ideal for Daily Use Olive Oil Plastic Bottle",
+    "item": "SO OLIVE 1L",
+    "sap_code": "FG0000228",
+    "mrp": 325,
+    "sale_modal": 237,
+    "sale_min": 237,
+    "sale_max": 237,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SO OLIVE 5L": {
+   "flipkart": {
+    "id": "EDOH5HEHTHKWTHYY",
+    "url": "https://www.flipkart.com/jivo-so-olive-oil-5l-nutritious-cooking-healthy-ideal-daily-use-plastic-bottle/p/itme7ec111cdf4?pid=EDOH5HEHTHKWTHYY",
+    "title": "JIVO So Olive Oil 5L Nutritious Cooking Oil for a Healthy Ideal for Daily Use Olive Oil Plastic Bottle",
+    "item": "SO OLIVE 5L",
+    "sap_code": "FG0000229",
+    "mrp": 1625,
+    "sale_modal": 1313,
+    "sale_min": 1313,
+    "sale_max": 1313,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "YELLOW MUSTARD 1L": {
+   "flipkart": {
+    "id": "EDOHDGDYAUQSWVQV",
+    "url": "https://www.flipkart.com/jivo-first-pressed-yellow-mustard-oil-pili-sarson-tel-cholesterol-chemical-free-pet-bottle/p/itm64ca133daf8ef?pid=EDOHDGDYAUQSWVQV",
+    "title": "JIVO First Pressed Yellow Mustard Oil | Pili Sarson Tel | Cholesterol & Chemical-Free Mustard Oil PET Bottle",
+    "item": "YELLOW MUSTARD 1L",
+    "sap_code": "FG0000328",
+    "mrp": 340,
+    "sale_modal": 237,
+    "sale_min": 237,
+    "sale_max": 237,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "YELLOW MUSTARD 5L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SESAME OIL 1L": {
+   "flipkart": {
+    "id": "EDOHDGCREHEZ8KPZ",
+    "url": "https://www.flipkart.com/jivo-first-pressed-sesame-gingelly-oil-rich-mufa-omega-6-pufa-multi-purpose-pet-bottle/p/itme844db1af31ff?pid=EDOHDGCREHEZ8KPZ",
+    "title": "JIVO First Pressed Sesame & Gingelly Oil | Rich in MUFA & Omega-6 PUFA Multi-Purpose Sesame Oil PET Bottle",
+    "item": "SESAME OIL 1L",
+    "sap_code": null,
+    "mrp": 600,
+    "sale_modal": 346,
+    "sale_min": 346,
+    "sale_max": 346,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "RICE BRAN 1L": {
+   "flipkart": {
+    "id": "EDOHF5YKX4KJREGK",
+    "url": "https://www.flipkart.com/jivo-rice-bran-healthy-cooking-oil-healthier-heart-rich-antioxidants-vitamins-pet-bottle/p/itm12e56ae4a8150?pid=EDOHF5YKX4KJREGK",
+    "title": "JIVO Rice Bran Healthy Cooking Oil for Healthier Heart Rich in Antioxidants, Vitamins Rice Bran Oil PET Bottle",
+    "item": "RICE BRAN 1L",
+    "sap_code": "FG0000227",
+    "mrp": 285,
+    "sale_modal": 215,
+    "sale_min": 215,
+    "sale_max": 215,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "RICE BRAN 4L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "RICE BRAN 5L": {
+   "flipkart": {
+    "id": "EDOH3YZ46GFVHEPB",
+    "url": "https://www.flipkart.com/jivo-rice-bran-health-oil-5l-cooking-healthier-heart-can/p/itm673d5ce73d735?pid=EDOH3YZ46GFVHEPB",
+    "title": "JIVO Rice Bran Health Oil 5L - Cooking Oil for a Healthier Heart Rice Bran Oil Can",
+    "item": "RICE BRAN 5L",
+    "sap_code": "FG0000230",
+    "mrp": 1425,
+    "sale_modal": 1032,
+    "sale_min": 1032,
+    "sale_max": 1032,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOH9NJEUZWKJWCX",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9NJEUZWKJWCX",
+      "title": "JIVO Rice Bran Cooking Oil For A Healthy Heart Chemical-Free 100% Pure & Natural Rice Bran Oil Can",
+      "item": "RICE BRAN 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "SUNFLOWER 1L": {
+   "flipkart": {
+    "id": "QWRGEMP4HBFD4GF3",
+    "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMP4HBFD4GF3",
+    "title": "Jivo Cold Pressed Chemical Free Sunflower Oil 1 Litre Sunflower Oil Plastic Bottle",
+    "item": "SUNFLOWER 1L",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOGDVFKPNBPFKAU",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDVFKPNBPFKAU",
+      "title": null,
+      "item": "SUNFLOWER OIL 1L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     },
+     {
+      "id": "QWRGGD86E5FYT9G3",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGD86E5FYT9G3",
+      "title": "JIVO Sunflower Cooking Oil 1 Litre Sunflower Oil PET Bottle",
+      "item": "SUNFLOWER OIL 1L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "SUNFLOWER 3L": {
+   "flipkart": {
+    "id": "EDOGHZSEBQYYA6ZW",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-1-litre-pack-3-sunflower-oil-pet-bottle/p/itm390eaeabe0ecc?pid=EDOGHZSEBQYYA6ZW",
+    "title": "JIVO Cold Pressed 1 Litre (Pack of 3) Sunflower Oil PET Bottle",
+    "item": "SUNFLOWER OIL 1L+1L+1L",
+    "sap_code": null,
+    "mrp": 825,
+    "sale_modal": 663,
+    "sale_min": 663,
+    "sale_max": 663,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed pid is the 1L+1L+1L pack; mrp 825 == master exactly."
+   },
+   "flipkart-minutes": null
+  },
+  "SUNFLOWER 4L": {
+   "flipkart": {
+    "id": "EDOHGWSVUNGY8Y3M",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOHGWSVUNGY8Y3M",
+    "title": "JIVO Refined Sunflower Oil | Cooking Oil for Frying, Roasting & Baking Sunflower Oil Can",
+    "item": "SUNFLOWER OIL 4L",
+    "sap_code": null,
+    "mrp": 1080,
+    "sale_modal": 1077,
+    "sale_min": 1077,
+    "sale_max": 1077,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored",
+    "note": "verifier RISKY: mrp 1080 vs master 1038 (4%); no other platform corroborates 1080 -> kept mapped (sole listing, name+vol clean), drift flagged in review."
+   },
+   "flipkart-minutes": null
+  },
+  "SUNFLOWER 5L": {
+   "flipkart": {
+    "id": "EDOGDVFWGPRVTTMS",
+    "url": "https://www.flipkart.com/jivo-cooking-sunflower-oil-can/p/itm777d7284652b?pid=EDOGDVFWGPRVTTMS",
+    "title": "JIVO Cooking Sunflower Oil Can",
+    "item": "SUNFLOWER OIL 5L",
+    "sap_code": null,
+    "mrp": 1350,
+    "sale_modal": 1168,
+    "sale_min": 1168,
+    "sale_max": 1168,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOH9NFPGNJDSFPN",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9NFPGNJDSFPN",
+      "title": "JIVO Cold Pressed Sunflower Oil Chemical-Free Pure & Natural Oil for Healthy Cooking Sunflower Oil Can",
+      "item": "SUNFLOWER OIL 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     },
+     {
+      "id": "EDOHYSCZHPAA3JDH",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYSCZHPAA3JDH",
+      "title": null,
+      "item": "SUNFLOWER OIL 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     },
+     {
+      "id": "QWRGEMRSPZ98QRUZ",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMRSPZ98QRUZ",
+      "title": null,
+      "item": "SUNFLOWER OIL 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "MUSTARD 1L POUCH": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "MUSTARD 1L": {
+   "flipkart": {
+    "id": "EDOGDVWYGJNDYRQP",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-pack-1-mustard-oil-plastic-bottle/p/itm7dfb8c4f2e72?pid=EDOGDVWYGJNDYRQP",
+    "title": "JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil Plastic Bottle",
+    "item": "MUSTARD 1L",
+    "sap_code": null,
+    "mrp": 490,
+    "sale_modal": 255,
+    "sale_min": 255,
+    "sale_max": 255,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "owner-blessed pid shows mrp 490 (sale 255) vs master 255; ALL other sources show 255 (zepto x60, blinkit x16, fresh x9, bigbasket, fk-minutes, fk dup QWRGDYBWXRTGFZFX). Single-listing mrp_drift on the blessed listing itself -> see review.",
+    "alt": [
+     {
+      "id": "QWRGDYBWXRTGFZFX",
+      "url": "https://www.flipkart.com/product/p/itme?pid=QWRGDYBWXRTGFZFX",
+      "title": "JIVO Cold Pressed Pure Mustard Cooking Oil 1 Ltr (Pack of 1) Mustard Oil Plastic Bottle",
+      "item": "MUSTARD 1L",
+      "sap_code": null,
+      "mrp": 255,
+      "sale_modal": 217,
+      "sale_min": 217,
+      "sale_max": 217,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": {
+    "id": "jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l",
+    "url": null,
+    "title": "JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle",
+    "item": null,
+    "sap_code": null,
+    "mrp": 255,
+    "sale_modal": 170,
+    "sale_min": 170,
+    "sale_max": 170,
+    "in_stock": 1,
+    "in_stock_stores": 47,
+    "stores_seen": 51,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 255 == master; minor per-store mrp variants {255: 49, 225: 2}"
+   }
+  },
+  "MUSTARD 3L": {
+   "flipkart": {
+    "id": "EDOGKC6KWYBCNNGH",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGKC6KWYBCNNGH",
+    "title": "JIVO Kachi Ghani Mustard Oil, Low in Saturated Fat| | Good For Daily Use Mustard Oil Can",
+    "item": "MUSTARD 3L",
+    "sap_code": null,
+    "mrp": 750,
+    "sale_modal": 669,
+    "sale_min": 669,
+    "sale_max": 669,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "MUSTARD 4L": {
+   "flipkart": {
+    "id": "EDOHGWU9WAPBEHWK",
+    "url": "https://www.flipkart.com/jivo-cold-press-mustard-oil-idal-daily-cooking-frying-pickling-can/p/itmcd76b3e50d6bd?pid=EDOHGWU9WAPBEHWK",
+    "title": "JIVO Cold Press Mustard Oil | Idal For Daily Cooking, Frying & Pickling Mustard Oil Can",
+    "item": "MUSTARD 4L",
+    "sap_code": "FG0000302",
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed pid present in scrape but unpriced/OOS today (no mrp/sale)."
+   },
+   "flipkart-minutes": {
+    "id": "jivo-cold-pressed-pure-cooking-mustard-oil-can-4l",
+    "url": null,
+    "title": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
+    "item": null,
+    "sap_code": null,
+    "mrp": 1000,
+    "sale_modal": 677,
+    "sale_min": 677,
+    "sale_max": 677,
+    "in_stock": 1,
+    "in_stock_stores": 1,
+    "stores_seen": 4,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); RISKY duplicate RESOLVED as genuinely distinct from the 5L can: API pack subtitle says \"4 L\" (slug suffix derives from it), mrp 1000 == MUSTARD 4L master vs 1250 == MUSTARD 5L master, sale 677 vs 960, seen at 4 stores across Delhi+Ludhiana (no store carries both sizes - hub assortment)."
+   }
+  },
+  "MUSTARD 5L": {
+   "flipkart": {
+    "id": "EDOH9PHGZG9H4GVT",
+    "url": "https://www.flipkart.com/jivo-cold-pressed-kachi-ghani-mustard-cooking-oil-rich-omega-3-daily-use-can/p/itm21123f4823bb?pid=EDOH9PHGZG9H4GVT",
+    "title": "JIVO Cold Pressed Kachi Ghani Mustard Cooking Oil Rich in Omega-3 For Daily Use Mustard Oil Can",
+    "item": "MUSTARD 5L",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOGDVWEUPPWVGED",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDVWEUPPWVGED",
+      "title": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
+      "item": "MUSTARD 5L",
+      "sap_code": "FG0000011",
+      "mrp": 1250,
+      "sale_modal": 1082,
+      "sale_min": 1082,
+      "sale_max": 1082,
+      "in_stock": 1,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOHYSGGV6BPGCHD",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYSGGV6BPGCHD",
+      "title": "JIVO Cold Pressed Pure Mustard Cooking oil 5 Liter Mustard Oil Can",
+      "item": "MUSTARD 5L",
+      "sap_code": null,
+      "mrp": 1250,
+      "sale_modal": 1191,
+      "sale_min": 1191,
+      "sale_max": 1191,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOH9NGHQF5SJXJG",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9NGHQF5SJXJG",
+      "title": "JIVO Cold Pressed Kachi Ghani Pure Mustard Oil Rich in Omega-3 Cooking Daily Use Mustard Oil Can",
+      "item": "MUSTARD 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     },
+     {
+      "id": "EDOH9Z7UHSZGTXHU",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9Z7UHSZGTXHU",
+      "title": "JIVO Cold Pressed Kachi Ghani Pure Mustard Oil Rich in Omega-3 Cooking Oil Daily Use Mustard Oil Can",
+      "item": "MUSTARD 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": {
+    "id": "jivo-cold-pressed-pure-cooking-mustard-oil-can-5l",
+    "url": null,
+    "title": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
+    "item": null,
+    "sap_code": null,
+    "mrp": 1250,
+    "sale_modal": 960,
+    "sale_min": 960,
+    "sale_max": 960,
+    "in_stock": 1,
+    "in_stock_stores": 21,
+    "stores_seen": 21,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 1250 == master"
+   }
+  },
+  "SOYABEAN 1L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SOYABEAN 1L POUCH": {
+   "flipkart": null,
+   "flipkart-minutes": {
+    "id": "jivo-soybean-oil-soyabean-oil-pouch-1l",
+    "url": null,
+    "title": "JIVO Soybean Oil Soyabean Oil Pouch",
+    "item": null,
+    "sap_code": null,
+    "mrp": 199,
+    "sale_modal": 171,
+    "sale_min": 149,
+    "sale_max": 171,
+    "in_stock": 1,
+    "in_stock_stores": 10,
+    "stores_seen": 24,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 199 == master"
+   }
+  },
+  "SOYABEAN 5L": {
+   "flipkart": {
+    "id": "EDOGGF7EDC9PFFHH",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGF7EDC9PFFHH",
+    "title": "JIVO High in Omega-3 & PUFA | Ideal for Roasting, Frying, & Baking | Refined Cooking Soyabean Oil Can",
+    "item": "SOYABEAN 5L",
+    "sap_code": null,
+    "mrp": 1100,
+    "sale_modal": 925,
+    "sale_min": 925,
+    "sale_max": 925,
+    "in_stock": 1,
+    "method": "ID-CATALOG",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOH9P83CD6GZUMX",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9P83CD6GZUMX",
+      "title": "JIVO Cold Pressed Soyabean Cooking Edible Oil A Nutritious Versatile For Daly Use Soyabean Oil Can",
+      "item": "SOYABEAN 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "GOLD 1L": {
+   "flipkart": {
+    "id": "EDOGXYEFERFXP3ZY",
+    "url": "https://www.flipkart.com/jivo-gold-blende-oil-blended-pet-bottle/p/itme4f32c9e55aa1?pid=EDOGXYEFERFXP3ZY",
+    "title": "JIVO Gold Blende oil Blended Oil PET Bottle",
+    "item": "GOLD 1L",
+    "sap_code": "FG0000149",
+    "mrp": 350,
+    "sale_modal": 220,
+    "sale_min": 220,
+    "sale_max": 220,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "blessed pid mrp 350 vs master 225 (zepto shows 225 x75) -> single-platform mrp_drift, see review."
+   },
+   "flipkart-minutes": null
+  },
+  "GOLD 5L": {
+   "flipkart": {
+    "id": "EDOGRF8RMWNYGJPE",
+    "url": "https://www.flipkart.com/jivo-gold-refined-blend-rice-bran-sunflower-blended-oil-can/p/itmcfba8cb4f71ca?pid=EDOGRF8RMWNYGJPE",
+    "title": "JIVO Gold Refined Blend of Rice Bran & Sunflower Blended Oil Can",
+    "item": "GOLD 5L",
+    "sap_code": "FG0000128",
+    "mrp": 1049,
+    "sale_modal": 670,
+    "sale_min": 670,
+    "sale_max": 670,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "alt": [
+     {
+      "id": "EDOH9NGFHTHZFZHJ",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDOH9NGFHTHZFZHJ",
+      "title": "JIVO Gold Refined Perfect Blend of Rice Bran & Sunflower Oil Heart-Healthy Cooking Blended Oil Can",
+      "item": "GOLD 5L",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "ID-CATALOG",
+      "confidence": "exact"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "SANO CLASSIC 5L": {
+   "flipkart": {
+    "id": "EDOHAGDYVQWT6GNG",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOHAGDYVQWT6GNG",
+    "title": "Sano Classic Olive Oil All Indian Perfect for Cooking, Frying Versatile and Healthy Olive Oil Tin",
+    "item": "SANO_CLASSIC 5L",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SANO POMACE 5L": {
+   "flipkart": {
+    "id": "EDOGRSY3TNXGEJPJ",
+    "url": "https://www.flipkart.com/sano-pomace-olive-oil-tin/p/itmab4bcb06a1858?pid=EDOGRSY3TNXGEJPJ",
+    "title": "Sano POMACE Olive Oil Tin",
+    "item": "SANO POMACE 5L",
+    "sap_code": "FG0000151",
+    "mrp": 4599,
+    "sale_modal": 1762,
+    "sale_min": 1762,
+    "sale_max": 1762,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact",
+    "note": "fk blessed mrp 4599 == amazon sano-5L 4599 vs master 4499 -> master_mrp_stale candidate (JIVO pomace 5L @4999 is a different SKU, widely live)."
+   },
+   "flipkart-minutes": null
+  },
+  "SANO POMACE 1L": {
+   "flipkart": {
+    "id": "EDOGRRXUHZZHZ2WZ",
+    "url": "https://www.flipkart.com/sano-pomace-olive-oil-pet-bottle/p/itme2d65719bac46?pid=EDOGRRXUHZZHZ2WZ",
+    "title": "Sano POMACE Olive Oil PET Bottle",
+    "item": "SANO POMACE 1L",
+    "sap_code": null,
+    "mrp": 999,
+    "sale_modal": 369,
+    "sale_min": 369,
+    "sale_max": 369,
+    "in_stock": 1,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SANO CANOLA 1L": {
+   "flipkart": {
+    "id": "EDOGVH5WWCXQNJHF",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGVH5WWCXQNJHF",
+    "title": "Sano canola 1L Canola Oil PET Bottle",
+    "item": "SANO CANOLA 1L",
+    "sap_code": null,
+    "mrp": 475,
+    "sale_modal": 245,
+    "sale_min": 245,
+    "sale_max": 245,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SANO CANOLA 5L": {
+   "flipkart": {
+    "id": "EDOGW3GWC36PHWKY",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGW3GWC36PHWKY",
+    "title": "Sano Canola 5L Canola Oil PET Bottle",
+    "item": "SANO CANOLA 5L",
+    "sap_code": "FG0000135",
+    "mrp": 1950,
+    "sale_modal": 1523,
+    "sale_min": 1523,
+    "sale_max": 1523,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SANO CLASSIC 1L": {
+   "flipkart": {
+    "id": "EDOGVEF33GYXKHEW",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGVEF33GYXKHEW",
+    "title": "Sano s- Classic 1L Olive Oil PET Bottle",
+    "item": "SANO CLASSIC 1L",
+    "sap_code": null,
+    "mrp": 1299,
+    "sale_modal": 512,
+    "sale_min": 512,
+    "sale_max": 512,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SANO MUSTARD 1L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SANO MUSTARD 5L": {
+   "flipkart": {
+    "id": "EDOGQTHV2RJYBFR9",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGQTHV2RJYBFR9",
+    "title": "Sano Cold Pressed Cooking Oil Mustard Oil PET Bottle",
+    "item": "SANO MUSTARD 5L",
+    "sap_code": null,
+    "mrp": 1200,
+    "sale_modal": 1092,
+    "sale_min": 1092,
+    "sale_max": 1092,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SANO SOYABEAN 1L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SANO SOYABEAN 5L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SANO SUNFLOWER 1L": {
+   "flipkart": {
+    "id": "EDOGQWU2JYAZCGZM",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGQWU2JYAZCGZM",
+    "title": "Sano Refined Sunflower Oil- Pure, Nutrient-Rich Cooking Oil Sunflower Oil PET Bottle",
+    "item": "SANO SUNFLOWER 1L",
+    "sap_code": null,
+    "mrp": 291,
+    "sale_modal": 203,
+    "sale_min": 203,
+    "sale_max": 203,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SANO SUNFLOWER 5L": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "BLACK CARDAMOM 100G": {
+   "flipkart": {
+    "id": "SCMH4H8HZJ8AHQ9G",
+    "url": "https://www.flipkart.com/product/p/itme?pid=SCMH4H8HZJ8AHQ9G",
+    "title": "JIVO Natural WholeBlack Cardamom | Badi Elaichi Sabut Moti Kali Elaichi\"",
+    "item": "BLACK CARDAMOM 100G",
+    "sap_code": "FG0000195",
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "BLACK PAPER 100G": {
+   "flipkart": {
+    "id": "SCMH2HMC2U7PQMNV",
+    "url": "https://www.flipkart.com/product/p/itme?pid=SCMH2HMC2U7PQMNV",
+    "title": "JIVO Natural Whole Peppercorns, Free from Artificial Colors & Taste Enhancers\"",
+    "item": "BLACK PEPPER 100G",
+    "sap_code": "FG0000196",
+    "mrp": 399,
+    "sale_modal": 239,
+    "sale_min": 239,
+    "sale_max": 239,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "CINNAMON BARK 100G": {
+   "flipkart": {
+    "id": "SCMH4H8SNYFGCYKM",
+    "url": "https://www.flipkart.com/jivo-premium-organic-cinnamon-sticks-bark-dalchini-finest/p/itmd24df572bf9?pid=SCMH4H8SNYFGCYKM",
+    "title": "JIVO Premium Organic Cinnamon Sticks Bark Dalchini Sticks Finest Cinnamon",
+    "item": "CINNAMON 100G",
+    "sap_code": "FG0000198",
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-FSN",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "CUMIN SEEDS 100G": {
+   "flipkart": {
+    "id": "SCMH3FHAUZYSNUAB",
+    "url": "https://www.flipkart.com/product/p/itme?pid=SCMH3FHAUZYSNUAB",
+    "title": "JIVO Cumin Seeds 100g",
+    "item": "CUMIN SEEDS 100GM",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "GREEN CARDAMOM 100G": {
+   "flipkart": {
+    "id": "SCMH4H8NCH2PKYWV",
+    "url": "https://www.flipkart.com/product/p/itme?pid=SCMH4H8NCH2PKYWV",
+    "title": "JIVO Green Cardamom 8mm Elaichi | Whole/Hari Elaichi",
+    "item": "GREEN CARDAMOM 100GM",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "CLOVE 100G": {
+   "flipkart": {
+    "id": "SCMHCKZEKPQWVE5V",
+    "url": "https://www.flipkart.com/product/p/itme?pid=SCMHCKZEKPQWVE5V",
+    "title": "JIVO Whole Cloves | Laung | Premium Quality",
+    "item": "CLOVE 100G",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "SUNFLOWER SEEDS 200G": {
+   "flipkart": {
+    "id": "EDSH5AVJZCSAN5P3",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH5AVJZCSAN5P3",
+    "title": "JIVO Rich Calcium Fiber Protein Immunity Booster Diet Snacks Weight Loss Superfood Sunflower Seeds",
+    "item": "SUNFLOWER SEEDS 200 GM",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored",
+    "note": "mapped listing is unpriced/OOS; the only PRICED '200 GM' sibling (EDSH5YNWYH26YY2G, mrp 499) has conflicting size evidence and sits in review."
+   },
+   "flipkart-minutes": null
+  },
+  "SUNFLOWER SEEDS 400G": {
+   "flipkart": {
+    "id": "EDSH66RRE84EYVHC",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH66RRE84EYVHC",
+    "title": "JIVO Rich Calcium Fiber Protein Immunity Booster Diet Snacks Weight Loss Sunflower Seeds",
+    "item": "SUNFLOWER SEEDS 400GM",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored",
+    "note": "mapped listing is unpriced/OOS; the mrp-499 candidate titled '200 GM' is in review (MRP matches 400G, title/pack/sap say 200G)."
+   },
+   "flipkart-minutes": null
+  },
+  "SUNFLOWER SEEDS 800G": {
+   "flipkart": {
+    "id": "EDSH63Q3YYYWHMUH",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH63Q3YYYWHMUH",
+    "title": "JIVO Rich Calcium Fiber Protein Immunity Booster Diet Snacks Weight Loss Superfood Sunflower Seeds",
+    "item": "SUNFLOWER SEEDS 800G",
+    "sap_code": "FG0000301",
+    "mrp": 899,
+    "sale_modal": 367,
+    "sale_min": 367,
+    "sale_max": 367,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  },
+  "PUMPKIN SEEDS 200G": {
+   "flipkart": {
+    "id": "EDSH5AVCXWVGYCYT",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH5AVCXWVGYCYT",
+    "title": "JIVO Raw Seeds Rich Fiber Calcium Protein Immunity Booster Diet Snacks Superfood Pumpkin Seeds",
+    "item": "PUMPKIN SEEDS 200 GM",
+    "sap_code": null,
+    "mrp": 399,
+    "sale_modal": 216,
+    "sale_min": 216,
+    "sale_max": 216,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "PUMPKIN SEEDS 400G": {
+   "flipkart": {
+    "id": "EDSH5AVGYVMTPZEC",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH5AVGYVMTPZEC",
+    "title": "JIVO Raw Seeds Rich Fiber Calcium Protein Immunity Booster Diet Snacks Superfood Pumpkin Seeds",
+    "item": "PUMPKIN SEEDS 400 GM",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "PUMPKIN SEEDS 800G": {
+   "flipkart": {
+    "id": "EDSH4ZZGCGCMYVFH",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH4ZZGCGCMYVFH",
+    "title": "JIVO Raw Seeds Rich Fiber Calcium Protein Immunity Booster Diet Snacks Superfood Pumpkin Seeds",
+    "item": "PUMPKIN SEEDS 800 GM",
+    "sap_code": "FG0000299",
+    "mrp": 1299,
+    "sale_modal": 409,
+    "sale_min": 409,
+    "sale_max": 409,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "FLAX SEEDS 200G": {
+   "flipkart": {
+    "id": "EDSH4ZGFWPSUY7RH",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH4ZGFWPSUY7RH",
+    "title": "JIVO High Fibre And Omega 3 | Weight Management | Tukmaria Seeds - 200g Brown Flax Seeds",
+    "item": "FLAX SEEDS 200GM",
+    "sap_code": null,
+    "mrp": 249,
+    "sale_modal": 106,
+    "sale_min": 106,
+    "sale_max": 106,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "FLAX SEEDS 400G": {
+   "flipkart": {
+    "id": "EDSH5AVFZRHQ43RZ",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH5AVFZRHQ43RZ",
+    "title": "JIVO Rich Omega 3 Fiber Protein Immunity Booster Diet Snacks Superfood Weight Manage Brown Flax Seeds",
+    "item": "FLAX SEEDS 400 GM",
+    "sap_code": "FG0000290",
+    "mrp": 399,
+    "sale_modal": 141,
+    "sale_min": 141,
+    "sale_max": 141,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "FLAX SEEDS 800G": {
+   "flipkart": {
+    "id": "EDSH5BX4UMFR4XYF",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH5BX4UMFR4XYF",
+    "title": "JIVO High Fibre Omega 3 Weight Loss Management Healthy Diet Snack Superfood Alsi Seed Brown Flax Seeds",
+    "item": "FLAX SEEDS 800 GM",
+    "sap_code": null,
+    "mrp": 750,
+    "sale_modal": 209,
+    "sale_min": 209,
+    "sale_max": 209,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "CHIA SEEDS 200G": {
+   "flipkart": {
+    "id": "EDSH4YGYGRWRQRGK",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH4YGYGRWRQRGK",
+    "title": "JIVO Jivo Chia Seeds 200gm Black Chia Seeds",
+    "item": "CHIA SEEDS 200GM",
+    "sap_code": "FG0000165",
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "CHIA SEEDS 400G": {
+   "flipkart": {
+    "id": "EDSGXE59S7AGKHUG",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSGXE59S7AGKHUG",
+    "title": "JIVO Raw Unroasted Chia Seeds For High Protein Chia Seeds",
+    "item": "CHIA SEEDS 400 GM",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored",
+    "alt": [
+     {
+      "id": "EDSH4YGKPTS5TMSD",
+      "url": "https://www.flipkart.com/product/p/itme?pid=EDSH4YGKPTS5TMSD",
+      "title": "JIVO High Protein Omega 3 Calcium & Fiber for Weight Loss Healthy Dite Snacks Raw Black Chia Seeds",
+      "item": "CHIA SEEDS 400 GM",
+      "sap_code": null,
+      "mrp": null,
+      "sale_modal": null,
+      "sale_min": null,
+      "sale_max": null,
+      "in_stock": 0,
+      "method": "AUTO-NAME",
+      "confidence": "anchored"
+     }
+    ]
+   },
+   "flipkart-minutes": null
+  },
+  "CHIA SEEDS 800G": {
+   "flipkart": {
+    "id": "EDSH3FJV4PEJDFAN",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH3FJV4PEJDFAN",
+    "title": "JIVO Raw Unroasted Chia Seeds For High Protein Chia Seeds",
+    "item": "CHIASEEDS 800G",
+    "sap_code": "FG0000167",
+    "mrp": 899,
+    "sale_modal": 315,
+    "sale_min": 315,
+    "sale_max": 315,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "QUINOA SEEDS 200G": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "QUINOA SEEDS 400G": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "QUINOA SEEDS 800G": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "BASIL SEEDS 200G": {
+   "flipkart": {
+    "id": "EDSH4ZF2VBEBFJUQ",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH4ZF2VBEBFJUQ",
+    "title": "JIVO Jivo Raw Basil Seeds for Weight loss | Sabja Seeds | Tukmaria Basil Seed Basil Seeds",
+    "item": "BASIL SEEDS 200 GM",
+    "sap_code": "FG0000180",
+    "mrp": 349,
+    "sale_modal": 115,
+    "sale_min": 115,
+    "sale_max": 115,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "BASIL SEEDS 400G": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "BASIL SEEDS 800G": {
+   "flipkart": {
+    "id": "EDSH4YK7VC4ZCNPU",
+    "url": "https://www.flipkart.com/product/p/itme?pid=EDSH4YK7VC4ZCNPU",
+    "title": "JIVO High Protein Omega 3 Calcium & Fiber Weight Loss Healthy Dite Snack Tukmaria Raw Basil Seeds",
+    "item": "BASIL SEEDS 800 GM",
+    "sap_code": "FG0000297",
+    "mrp": 1099,
+    "sale_modal": 321,
+    "sale_min": 321,
+    "sale_max": 321,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "SODA 750ML": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SODA LEMON 750ML": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SPRING WATER 750ML": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "PUNJABI JEERA 160ML": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "ROSEMARY LEAVES 150G": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "SAFFRON 1GMS": {
+   "flipkart": {
+    "id": "SCMHG4HDYS45YCAZ",
+    "url": "https://www.flipkart.com/product/p/itme?pid=SCMHG4HDYS45YCAZ",
+    "title": "JIVO Pure Kashmiri Saffron | A+ Grade Kesar | Beauty, Pregnant, Natural & Authentic |",
+    "item": "KESAR 1GM",
+    "sap_code": null,
+    "mrp": 899,
+    "sale_modal": 353,
+    "sale_min": 353,
+    "sale_max": 353,
+    "in_stock": 0,
+    "method": "AUTO-NAME",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "BLACK OLIVE 470G": {
+   "flipkart": null,
+   "flipkart-minutes": null
+  },
+  "COFFEE": {
+   "flipkart": {
+    "id": "CFEGMJ5GJE7HD3DQ",
+    "url": "https://www.flipkart.com/product/p/itme?pid=CFEGMJ5GJE7HD3DQ",
+    "title": "JIVO Koffie Smooth Premium ,100% Pure Instant Coffee",
+    "item": "Coffee 100g",
+    "sap_code": null,
+    "mrp": 350,
+    "sale_modal": 243,
+    "sale_min": 243,
+    "sale_max": 243,
+    "in_stock": 0,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored"
+   },
+   "flipkart-minutes": null
+  },
+  "RICE 1KG": {
+   "flipkart": {
+    "id": "RICGE89BUEDDA5U7",
+    "url": "https://www.flipkart.com/product/p/itme?pid=RICGE89BUEDDA5U7",
+    "title": "JIVO Long Grain Organic Basmati Rice 1 Kg Basmati Rice (Long Grain, Unpolished)",
+    "item": "RICE 1KG",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": 0,
+    "method": "ID-CATALOG",
+    "confidence": "exact"
+   },
+   "flipkart-minutes": null
+  }
+ },
+ "master_mrp_stale": [
+  {
+   "product": "COCONUT 500ML",
+   "master_mrp": 695,
+   "live_mrp": 398,
+   "evidence": "flipkart 398 on BOTH listings (blessed EDOHF5F6BS3MEHJD + EDOGWGZGCC8YG5PZ); amazon 399 + amazon-fresh 399 (Re.1 rounding, same convention as W3 GOLD 5L re-verdict). LEAD asked W2 to cross-check this exact case -> stale, mapping kept."
+  },
+  {
+   "product": "EXTRA VIRGIN 500ML",
+   "master_mrp": 675,
+   "live_mrp": 998,
+   "evidence": "flipkart 998 (blessed) + amazon 999 (Re.1). 2 platforms -> stale."
+  },
+  {
+   "product": "SANO POMACE 5L",
+   "master_mrp": 4499,
+   "live_mrp": 4599,
+   "evidence": "flipkart 4599 (blessed) + amazon sano-pomace-5L 4599. (4999 elsewhere is JIVO pomace 5L, a different SKU.) 2 platforms -> stale."
+  },
+  {
+   "product": "GROUNDNUT 1L",
+   "master_mrp": 400,
+   "live_mrp": 560,
+   "evidence": "flipkart blessed 560 RATIFIES the already-ruled stale (amazon, amazon-now, zepto x51)."
+  },
+  {
+   "product": "EXTRA VIRGIN 1L",
+   "master_mrp": 1499,
+   "live_mrp": 1799,
+   "evidence": "flipkart 1799 on both listings RATIFIES the already-ruled stale (amazon-fresh/now)."
+  },
+  {
+   "product": "JIVO POMACE 2L",
+   "master_mrp": 1600,
+   "live_mrp": 1449,
+   "evidence": "flipkart 2L-bottle alt EDOGMHXYU2PHFW4N @1449 RATIFIES the already-ruled stale (amazon, bigbasket)."
+  },
+  {
+   "product": "EXTRA LIGHT 2L",
+   "master_mrp": 2799,
+   "live_mrp": 2998,
+   "caveat": "MIXED",
+   "evidence": "flipkart x2 (blessed 1+1L pack AND single 2L can) + amazon x2 + zepto x34 show 2998 (= 2x1499 EL-1L master); BUT master 2799 is also live on fresh x54, now x38, blinkit x135, bigbasket. Likely pack-variant coexistence (1+1L pack vs 2L can), not a clean stale \u2014 lead to adjudicate."
+  },
+  {
+   "product": "POMACE 3L",
+   "master_mrp": 3050,
+   "live_mrp": 2247,
+   "caveat": "MIXED",
+   "evidence": "flipkart blessed (1+1+1L pack) 2247 (= 3x749) + amazon 2247; but amazon also lists 3050. Pack-vs-single pricing \u2014 lead to adjudicate."
+  }
+ ],
+ "unpriced": [
+  {
+   "platform": "flipkart",
+   "id": "GHEGWGQH84YSZN6F",
+   "url": "https://www.flipkart.com/product/p/itme?pid=GHEGWGQH84YSZN6F",
+   "title": "JIVO Desi Ghee 100% Pure, Natural & Healthy Ghee Plastic Bottle",
+   "internal_name": "DESI GHEE 1KG",
+   "mrp": 1499,
+   "combo": false,
+   "note": "verifier WRONG: Desi Ghee is not A2 Ghee (different product line) -> unpriced"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGE5WYGYXCRRMF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGE5WYGYXCRRMF",
+   "title": "JIVO Extra Light Cooking Olive Oil PET Bottle",
+   "internal_name": "EXTRA LIGHT 1+1+1L",
+   "mrp": 4497,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGTERWCWCGYWCH",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGTERWCWCGYWCH",
+   "title": "Sano pomace Olive Oil PET Bottle",
+   "internal_name": "SANO POMACE 1+1L",
+   "mrp": 1998,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGTKKPP3TWKYSP",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGTKKPP3TWKYSP",
+   "title": "Sano POMACE Olive Oil PET Bottle",
+   "internal_name": "SANO POMACE 1+1+1L",
+   "mrp": 2997,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHYSD9JPGYSX4M",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYSD9JPGYSX4M",
+   "title": "JIVO Groundnut Oil for Cooking Groundnut Oil PET Bottle",
+   "internal_name": "GROUNDNUT 1+1L",
+   "mrp": 1120,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGW6TC5TV8D8JF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGW6TC5TV8D8JF",
+   "title": "JIVO Cold press Cooking Groundnut Oil PET Bottle",
+   "internal_name": "GROUNDNUT 1+1L",
+   "mrp": 1120,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHF54ZZWHRJY2M",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHF54ZZWHRJY2M",
+   "title": "JIVO So Olive Rice Bran & Olive Blend Cooking Oil Nutritious Healthy Ideal Daily Use Blended Oil PET Bottle",
+   "internal_name": "SO OLIVE 1+1L",
+   "mrp": 699,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNZ7EGKQPZ3Y9",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ7EGKQPZ3Y9",
+   "title": "JIVO Extra Light 1L+Pomace 1L+Pomace 1L (pack of 3) 3L Olive Oil PET Bottle",
+   "internal_name": "EXTRA LIGHT 1L+POMACE 1+1L",
+   "mrp": 2497,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHBH2FP9ES6GGA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHBH2FP9ES6GGA",
+   "title": "JIVO Rice Bran Healthy Cooking Oil for Healthier Heart Rich in Antioxidants, Vitamins Rice Bran Oil PET Bottle",
+   "internal_name": "RICE BRAN 2L",
+   "mrp": 570,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGYJ7SYY4H2MDH",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGYJ7SYY4H2MDH",
+   "title": "JIVO Gold Blended Cooking Oil For Healthy Heart Blended Oil PET Bottle",
+   "internal_name": "GOLD 1+1L",
+   "mrp": 450,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOFRWTZZUBGDJ3Q",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOFRWTZZUBGDJ3Q",
+   "title": "JIVO Cold Press Canola Oil 5 Ltr+1Ltr Canola Oil Can",
+   "internal_name": "CANOLA 5+1L",
+   "mrp": 2025,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNZ74XZGU6ZHR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ74XZGU6ZHR",
+   "title": "JIVO Extra Light 1L+Pomace 1L+Extra Virgin 1L(PACK OF 3L) Olive Oil Plastic Bottle",
+   "internal_name": "EXTRA LIGHT 1L+POMACE 1L+EXTRA VIRGIN 1L",
+   "mrp": 3247,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHBH2URWDMHPXC",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHBH2URWDMHPXC",
+   "title": "JIVO So Olive Rice Bran & Olive Blend Cooking Oil Nutritious Healthy Ideal Daily Use Blended Oil PET Bottle",
+   "internal_name": "SO OLIVE 1+1L",
+   "mrp": 650,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNZ4VHFFK3W6H",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ4VHFFK3W6H",
+   "title": "JIVO Canola 1+1L+Extra Virgin 1L (PACK OF 3L) Olive Oil Plastic Bottle",
+   "internal_name": "CANOLA 1+1L + EXTRA VIRGIN 1L",
+   "mrp": 2249,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGE62HWA7UFXHW",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGE62HWA7UFXHW",
+   "title": "JIVO Cold Pressed Pure Mustard Oil Plastic Bottle",
+   "internal_name": "JIVO MUSTARD 1+1L",
+   "mrp": 510,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGPFZ2FCJ6UWS",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGPFZ2FCJ6UWS",
+   "title": "JIVO High in Omega-3 & PUFA | Ideal for Roasting, Frying, & Baking | Refined Cooking Soyabean Oil PET Bottle",
+   "internal_name": "SOYABEAN 1+1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGFGQQKJSKMRYQ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGFGQQKJSKMRYQ",
+   "title": "JIVO Extra light Olive Oil, Extra Virgin Olive Oil & Pomace Olive Oil Olive Oil PET Bottle",
+   "internal_name": "JIVO EXTRA LIGHT 1L+EXTRA VIRGIN 1L+POMACE 1L",
+   "mrp": 3247,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "GHEGWGYYFW9EDUBS",
+   "url": "https://www.flipkart.com/product/p/itme?pid=GHEGWGYYFW9EDUBS",
+   "title": "JIVO Desi Ghee 100% Pure, Natural & Healthy Plastic Bottle",
+   "internal_name": "DESI GHEE 500GM",
+   "mrp": null,
+   "combo": false,
+   "note": "verifier WRONG: Desi Ghee is not A2 Ghee (different product line) -> unpriced"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDSH7YS5QEEYEZZ6",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDSH7YS5QEEYEZZ6",
+   "title": "JIVO High Protein Omega-3 Calcium & Fiber for Healthy Dite Snacks 200 gm each Jar Brown Flax Seeds, Brown Chia Seeds, Pumpkin Seeds, Sunflower Seeds",
+   "internal_name": "FLAX+SUNFLOWER+PUMKIN+CHIA 800GM",
+   "mrp": 1246,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNPBFT55YKGPR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNPBFT55YKGPR",
+   "title": "JIVO Extra Virgin 1L+Pomace olive oil 1+1L(Pack of 3) Olive Oil PET Bottle",
+   "internal_name": "JIVO EXTRA VIRGIN 1L + POMACE 1+1L",
+   "mrp": 2997,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGYJ7SWM6ZCTPX",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGYJ7SWM6ZCTPX",
+   "title": "JIVO Gold Blended Cooking Oil For Healthy Heart Blended Oil PET Bottle",
+   "internal_name": "GOLD 1+1+1L",
+   "mrp": 780,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGG9SHSXHQYQDK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGG9SHSXHQYQDK",
+   "title": "JIVO Canola Cold Press Edible Oil Pack of 3, 1 Litre each (3Litres) Canola Oil PET Bottle",
+   "internal_name": "CANOLA 1+1+1L",
+   "mrp": 1125,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "NDFHG8Y2J3UYQGU3",
+   "url": "https://www.flipkart.com/product/p/itme?pid=NDFHG8Y2J3UYQGU3",
+   "title": "JIVO Dry Fruits Gift Hamper Box | For Occasions Like Diwali, Festival |Diya & Roasted Almonds, Cashews",
+   "internal_name": "GIFT BOX 480G",
+   "mrp": 1999,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGW6R828YYA8XA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGW6R828YYA8XA",
+   "title": "JIVO Cold press Cooking Groundnut Oil Can",
+   "internal_name": "GROUNDNUT 5+1L",
+   "mrp": 3360,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "NDFHG8Y5CFM292RK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=NDFHG8Y5CFM292RK",
+   "title": "JIVO Dry Fruits Gift Hamper Box | Occasion For Diwali, New Year, Wedding At | Roasted Almonds, Cashews, Raisins",
+   "internal_name": "GIFT BOX 240G",
+   "mrp": 999,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "GHEHYGKVZRBKDK9U",
+   "url": "https://www.flipkart.com/product/p/itme?pid=GHEHYGKVZRBKDK9U",
+   "title": "JIVO Ghee 100% Pure, Natural & Healthy Ghee (Each pack 500g) Ghee Plastic Bottle",
+   "internal_name": "DESI GHEE 1KG 2PCS",
+   "mrp": null,
+   "combo": true,
+   "note": "verifier WRONG: Desi Ghee is not A2 Ghee (different product line) -> unpriced"
+  },
+  {
+   "platform": "flipkart",
+   "id": "IOMH8YGZUHV8DFBW",
+   "url": "https://www.flipkart.com/product/p/itme?pid=IOMH8YGZUHV8DFBW",
+   "title": "JIVO 100% Pure Natural Desi Ghee Rich In Nutrients And Authentic Flavor Ghee 1 L Mason Jar",
+   "internal_name": "DESI GHEE 1KG",
+   "mrp": 1499,
+   "combo": false,
+   "note": "verifier WRONG: Desi Ghee is not A2 Ghee (different product line) -> unpriced"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDUZ8ZFFEGURG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDUZ8ZFFEGURG",
+   "title": "JIVO Extra Light 1L+ Extra Virgin 1L Cooking Oil Combo Olive Oil Plastic Bottle",
+   "internal_name": "EXTRA LIGHT 1L+EXTRA VIRGIN 1L",
+   "mrp": 2498,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHYRRPJ3H7NHHN",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRRPJ3H7NHHN",
+   "title": "JIVO Pomace Olive Oil Pack of 2 Olive Oil Plastic Bottle",
+   "internal_name": "JIVO POMACE 1+1L",
+   "mrp": 1899,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHPHPXJANVVRV",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHPHPXJANVVRV",
+   "title": "JIVO Premium Cold Pressed Pure Mustard Oil, 5 Litre + 1 Litre Mustard Oil Can",
+   "internal_name": "MUSTARD 5L+1L",
+   "mrp": 1530,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHHXABMQ3JVFSR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHHXABMQ3JVFSR",
+   "title": "JIVO Cold Pressed Canola Oil | Cooking Oil for Roasting | High MUFA PUFA, Omega 3 & 6 Canola Oil Can",
+   "internal_name": "CANOLA 5+1L",
+   "mrp": 2025,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHHXANUW9SHPPJ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHHXANUW9SHPPJ",
+   "title": "JIVO Cold Pressed Canola Oil 4+1L | Baking Deep Frying | High MUFA, PUFA, Omega 3 & 6 Canola Oil Can",
+   "internal_name": "CANOLA 4+1L",
+   "mrp": 1650,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNM2PZPHPHYKB",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNM2PZPHPHYKB",
+   "title": "JIVO Canola Cooking Olive Oil 1+1 Litre with Pomace oil 1 Litre( Pack 3L) Olive Oil Canola Oil PET Bottle",
+   "internal_name": "POMACE 1L+CANOLA 1+1L",
+   "mrp": 1499,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHHZBQB9P4Z6WM",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHHZBQB9P4Z6WM",
+   "title": "JIVO Cold Pressed Canola Oil 5+1L | Baking Deep Frying | High MUFA, PUFA, Omega 3 & 6 Canola Oil Can",
+   "internal_name": "CANOLA 5+1L",
+   "mrp": 2025,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "HNYGQTNABYZXTF6E",
+   "url": "https://www.flipkart.com/product/p/itme?pid=HNYGQTNABYZXTF6E",
+   "title": "Sano Pure & Natural Honey 100% Organic",
+   "internal_name": "HONEY 500G",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGJMUGKPPFMTAM",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGJMUGKPPFMTAM",
+   "title": "JIVO Pomace Olive Oil with Cold Pressed Canola Oil PET Bottle",
+   "internal_name": "POMACE 1L+CANOLA 1L",
+   "mrp": 1124,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHESNHFFUGQB9",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHESNHFFUGQB9",
+   "title": "JIVO Cold Pressed Canola Oil 1Ltr with Cold Pressed Pure Mustard Oil 1Ltr (Pack of 2) Canola Oil PET Bottle",
+   "internal_name": "CANOLA 1L+MUSTARD 1L",
+   "mrp": null,
+   "combo": true,
+   "note": "verifier WRONG: mixed-oil combo (canola+mustard) never maps to same-product CANOLA 1+1L"
+  },
+  {
+   "platform": "flipkart",
+   "id": "HNYHYRSYJPMYEGUX",
+   "url": "https://www.flipkart.com/product/p/itme?pid=HNYHYRSYJPMYEGUX",
+   "title": "Sano Pure Natural Honey 100% Organic",
+   "internal_name": "SANO HONEY 500 GM",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHYSJ8BZYGCSBU",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYSJ8BZYGCSBU",
+   "title": "JIVO Cold Pressed Pure 2 Liter Mustard Oil Plastic Bottle",
+   "internal_name": "JIVO MUSTARD 1+1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH8RDQPBHXAAZT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH8RDQPBHXAAZT",
+   "title": "JIVO Ayurvedic Wheatgrass Mango Juice Natural Immunity Booster helps to live longer",
+   "internal_name": "WG MANGO 500 ML 3PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH7VF9GTUFZZ5K",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH7VF9GTUFZZ5K",
+   "title": "JIVO Ayurvedic Wheatgrass Mango Juice Natural Immunity Booster helps to live longer",
+   "internal_name": "WG MANGO 500 ML 6PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH8Z2ZYB7KHGUF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH8Z2ZYB7KHGUF",
+   "title": "JIVO Ayurvedic Zero Sugar Wheatgrass Mango Juice Natural Immunity Booster live longer",
+   "internal_name": "WG MANGO SF 500 ML 3PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJHCKT6KVUGR3GZ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJHCKT6KVUGR3GZ",
+   "title": "JIVO Healthy Wheatgrass | Mango Juice | Vegan | Natural Detox | Immunity Booster |",
+   "internal_name": "WG MANGO 500 ML 3PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH7WFGYFTTVJVZ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH7WFGYFTTVJVZ",
+   "title": "JIVO Ayurvedic Wheatgrass Mango Juice Immunity Booster with Natural Benefits Longer",
+   "internal_name": "WG MANGO 500 ML 3PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHYRPCTWGRKWKU",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRPCTWGRKWKU",
+   "title": "JIVO Extra Light Cooking 3 Liter Olive Oil Plastic Bottle",
+   "internal_name": "EXTRA LIGHT 1+1+1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "ARDHCJMTXHZ5HQDA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=ARDHCJMTXHZ5HQDA",
+   "title": "JIVO Punjabi Jeera | Ready To Drink | With Wheatgrass | Boost Immunity & Digestion Plastic Bottle",
+   "internal_name": "PUNJABI JEERA 160 ML 24 PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMQZXAYWVM4M",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQZXAYWVM4M",
+   "title": "Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) Mustard Oil Plastic Bottle",
+   "internal_name": "MUSTARD 1+1L",
+   "mrp": 510,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMPJJGDRYACC",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMPJJGDRYACC",
+   "title": "Jivo Extra Light Daily Cooking Olive Oil 3 Litre Olive Oil Plastic Bottle",
+   "internal_name": "EXTRA LIGHT 1+1+1L",
+   "mrp": 2475,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGDFMZKGBZZYG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGDFMZKGBZZYG",
+   "title": "JIVO Extra light , Extra Virgin & Pomace 1L each (3L) Olive Oil PET Bottle",
+   "internal_name": "EXTRA LIGHT 1L+EXTRA VIRGIN 1L+POMACE 1L",
+   "mrp": 3247,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMNNHGGYUYF4",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMNNHGGYUYF4",
+   "title": "Jivo Extra Virgin Olive Oil 1 Litre With Extra Light Olive Oil 1 Litre Olive Oil Plastic Bottle",
+   "internal_name": "Extra Light 1L+ Extra Virgin 1L",
+   "mrp": 2324,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMRYNAG8T2FV",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMRYNAG8T2FV",
+   "title": "Jivo Everyday Cooking Pomace Olive Oil 1 Litre (Pack of 3) Olive Oil Plastic Bottle",
+   "internal_name": "JIVO POMACE olive oil 1+1+1L",
+   "mrp": 2247,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGC46UKQKVCES",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGC46UKQKVCES",
+   "title": "JIVO Extra Light Olive Oil 1+1 Ltr Olive Oil PET Bottle",
+   "internal_name": "EXTRA LIGHT 1+1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGMFGPMTG7FGK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGMFGPMTG7FGK",
+   "title": "JIVO Extra Light 1L+Pomace 1L Cooking Olive Oil PET Bottle",
+   "internal_name": "EXTRA LIGHT 1L+POMACE 1L",
+   "mrp": 2399,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGJNNV7XXV6HUS",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGJNNV7XXV6HUS",
+   "title": "JIVO Pomace Olive Oil with Cold Pressed Canola Oil PET Bottle",
+   "internal_name": "CANOLA 1L + POMACE 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGBUHZJQZWJZE",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGBUHZJQZWJZE",
+   "title": "JIVO Canola Cold Press Oil, Extra Virgin Olive Oil & Kachi Ghani mustard Oil Canola Oil Plastic Bottle",
+   "internal_name": "CANOLA+EXTRA VIRGIN+MUSTARD 1L",
+   "mrp": 2129,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGG9XWMEQQPM89",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGG9XWMEQQPM89",
+   "title": "JIVO Canola 1L+Extra Light 1L Cooking Oil Canola Oil Plastic Bottle Canola Oil PET Bottle",
+   "internal_name": "Canola 1L+Extra Light 1L",
+   "mrp": 1374,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGJFZ8M4EGGS5F",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGJFZ8M4EGGS5F",
+   "title": "JIVO Canola Cold Press Edible Oil, Cold Press Soyabean Oil& Mustard Oil (1L Each) Canola Oil PET Bottle",
+   "internal_name": "Canola1L+Soyabean1L+Mustard1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMP99M44YSHA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMP99M44YSHA",
+   "title": "Jivo Cold Pressed Pure Mustard Oil 1 Ltr + Extra light Olive Oil 1 Litre (Pack of 2) Canola Oil Plastic Bottle",
+   "internal_name": "Mustard 1L+Extra Light 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGG9UACYSCUXK9",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGG9UACYSCUXK9",
+   "title": "JIVO Cold Pressed with Cold Pressed Pure Mustard Oil 1L Canola Oil PET Bottle",
+   "internal_name": "Canola1L+Mustard1L",
+   "mrp": 630,
+   "combo": true,
+   "note": "verifier WRONG: mixed-oil combo (canola+mustard) never maps to same-product CANOLA 1+1L"
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMNS9ZPZGWJH",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMNS9ZPZGWJH",
+   "title": "Jivo Extra Virgin Olive Oil, 2 L for Dressings, Salad and Soups, Dips & Marinades. Olive Oil Plastic Bottle",
+   "internal_name": "Extra Virgin 1+1L",
+   "mrp": 2998,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGC2FH324F4EF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGC2FH324F4EF",
+   "title": "JIVO Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle) Olive Oil Tin",
+   "internal_name": "JIVO POMACE 5L+2L",
+   "mrp": 4997,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMNWTAGVDDNS",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMNWTAGVDDNS",
+   "title": "Jivo Extra Light Olive Oil 1 Litre + Pomace Cooking Olive Oil 1 Litre Olive Oil Plastic Bottle",
+   "internal_name": "EXTRA LIGHT 1L + JIVO POMACE 1L",
+   "mrp": 1570,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGP4FSQVM2ERR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGP4FSQVM2ERR",
+   "title": "JIVO High in Omega-3 & PUFA | Ideal for Roasting, Frying, & Baking | Refined Cooking Soyabean Oil PET Bottle",
+   "internal_name": "SOYABEAN 1L 3PCS",
+   "mrp": 750,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGE62ESBTMBRGF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGE62ESBTMBRGF",
+   "title": null,
+   "internal_name": "SUNFLOWER OIL 2L",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGW3HGUQBAHNCB",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGW3HGUQBAHNCB",
+   "title": "Sano canola 1+1L Canola Oil PET Bottle",
+   "internal_name": "SANO CANOLA 2L",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGY7GHFUEFHEY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGY7GHFUEFHEY",
+   "title": "JIVO Cold Press Soyabean Oil 5L with Extra Light Olive Oil 2L Soyabean Oil Can",
+   "internal_name": "EXTRA LIGHT 2L + SOYABEAN 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHZRXZGAKYAEF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHZRXZGAKYAEF",
+   "title": "JIVO Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 1 LTR ( Pet Bottle) Olive Oil Glass Bottle",
+   "internal_name": "EXTRA LIGHT 5L+1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGFGRSGCW6XTFE",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGFGRSGCW6XTFE",
+   "title": null,
+   "internal_name": "CANOLA 5L + MUSTARD 5L + SUNFLOWER 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "GHEH6B93ZB66SEKQ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=GHEH6B93ZB66SEKQ",
+   "title": "JIVO 100% Pure Natural Cow Milk From Desi Ghee Rich In Nutrients And Authentic Flavor Ghee Plastic Bottle",
+   "internal_name": "DESI GHEE 1KG",
+   "mrp": null,
+   "combo": false,
+   "note": "verifier WRONG: Desi Ghee is not A2 Ghee (different product line) -> unpriced"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNQ925UAAY6FT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNQ925UAAY6FT",
+   "title": "JIVO Pomace 5L+Extra Virgin 1L olive oil Pack of 6 Litres (5L Tin with 1L bottle) Olive Oil Tin",
+   "internal_name": "JIVO POMACE 5LTR + EXTRA VIRGIN 1L",
+   "mrp": 5700,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "HNYGQTUW5DB6RXQD",
+   "url": "https://www.flipkart.com/product/p/itme?pid=HNYGQTUW5DB6RXQD",
+   "title": "Sano Pure & Natural Honey 100% Organic",
+   "internal_name": "SANO HONEY 1KG",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGK4CHWKAHJQHB",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGK4CHWKAHJQHB",
+   "title": "JIVO Cold Press Soyabean Oil For Daily Healthy Cooking (10 Litres Pack) Soyabean Oil Can",
+   "internal_name": "SOYABEAN 5L+5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "HNYHYRSBGKZHHFDZ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=HNYHYRSBGKZHHFDZ",
+   "title": "Sano Pure & Natural Honey, 100% Organic",
+   "internal_name": "SANO HONEY 1KG",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNZ8KGNW9GGWV",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ8KGNW9GGWV",
+   "title": "JIVO Canola 5L+Pomace olive oil 1+1L(Pack of 3)7L Canola Oil Tin",
+   "internal_name": "CANOLA 5L + JIVO POMACE 1L + JIVO POMACE 1L",
+   "mrp": 3620,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDUQJHA3RR8HA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDUQJHA3RR8HA",
+   "title": "JIVO Canola 5L+Sunflower 5L Cooking Oil Canola Oil Can",
+   "internal_name": "CANOLA 5L + SUNFLOWER OIL 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDUXZS7YRKEJY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDUXZS7YRKEJY",
+   "title": null,
+   "internal_name": "MUSTARD 5L + SUNFLOWER 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHFUCDKHMHQY7",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHFUCDKHMHQY7",
+   "title": "JIVO Cold Pressed Canola oil 5 Litre With Pomace Olive Oil 1L (Pack of 6L) Canola Oil Can",
+   "internal_name": "CANOLA 5L + JIVO POMACE 1L",
+   "mrp": 2440,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGJNM6JHJDSGMP",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGJNM6JHJDSGMP",
+   "title": "JIVO Premium Pure Mustard Oil 5Ltr with Cold Pressed 1L Canola Oil (Pack of 6) Canola Oil PET Bottle",
+   "internal_name": "Mustard 5L+Canola 1L",
+   "mrp": 1625,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHGSMHA6KUJTG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHGSMHA6KUJTG",
+   "title": "JIVO Kachi Ghani Mustard Oil 5L with Sunflower Oil 1L (Pack of 6L) Mustard Oil Can",
+   "internal_name": "Mustard5L+Sunflower1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGX6SQXCZKD2Y",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGX6SQXCZKD2Y",
+   "title": "JIVO Cold Press Canola Oil 5L with Cold Press Soyabean Oil 1L Canola Oil Can",
+   "internal_name": "CANOLA 5L+ SOYABEAN 1L",
+   "mrp": 1900,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGGJ6QXTBCSHY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGGJ6QXTBCSHY",
+   "title": "JIVO Cold Pressed Sunflower Oil 1 Litre (Pack of 3) Sunflower Oil PET Bottle",
+   "internal_name": "SUNFLOWER OIL 1L+1L+1L",
+   "mrp": 825,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDURNCQZQ2YEW",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDURNCQZQ2YEW",
+   "title": "JIVO Canola 5L+Kachi Ghani Mustard 5L Cooking Oil Canola Oil Can",
+   "internal_name": "CANOLA 5L + MUSTARD 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "RICGFF68XXVEBZW5",
+   "url": "https://www.flipkart.com/product/p/itme?pid=RICGFF68XXVEBZW5",
+   "title": "JIVO Organic Long Grain Basmati Rice Certified By Ecocert India 1 KG Per Packet (Pack of 5) Basmati Rice (Long Grain, Unpolished)",
+   "internal_name": "RICE 5KG",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHPMWKQTKU5RT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHPMWKQTKU5RT",
+   "title": "JIVO Mustard Kachi Ghani 1 Litre (Pet Bottle) + Organic Long Grain Basmati Rice 1 KG Mustard Oil PET Bottle",
+   "internal_name": "MUSTARD 1L + RICE 1KG",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGYJTPRV6H6WGY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGYJTPRV6H6WGY",
+   "title": "JIVO Gold Blended Cooking Oil For Healthy Heart Blended Oil Can",
+   "internal_name": "GOLD 5L+1L",
+   "mrp": 1309,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDUQXXQ8JQFBW",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDUQXXQ8JQFBW",
+   "title": "JIVO Canola 5L+Pomace 5L Cooking Oil Combo Canola Oil Can",
+   "internal_name": "CANOLA 5L + JIVO POMACE 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGY5KCR8S7SHK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGY5KCR8S7SHK",
+   "title": "JIVO Canola Cold Press Edible Oil, Cold Press Soyabean Oil& Mustard Oil (1L Each) Canola Oil PET Bottle",
+   "internal_name": "CANOLA 1L+SOYABEAN 1L+MUSTARD 1L",
+   "mrp": 855,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHFPZBXAAMHAK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHFPZBXAAMHAK",
+   "title": "JIVO Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR ( Pet Bottle) Olive Oil Tin",
+   "internal_name": "EXTRA LIGHT 5+2L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGDFAHFUEQCUC",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGDFAHFUEQCUC",
+   "title": "JIVO Sunflower 5L+Mustard 5L Cooking Oil Mustard Oil Tin",
+   "internal_name": "SUNFLOWER 5L + MUSTARD 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGQUTFK86EUTJC",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGQUTFK86EUTJC",
+   "title": "Sano Sunflower Oil 1 Ltr + 5 Ltr Oil- Pure, Nutrient-Rich Cooking Oil Sunflower Oil PET Bottle",
+   "internal_name": "SANO SUNFLOWER OIL 1L + SUNFLOWER OIL 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMQJ8TQRHASY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQJ8TQRHASY",
+   "title": "Jivo Everyday Cooking Pomace Olive Oil 1 Litre (Pack of 2) Olive Oil Plastic Bottle",
+   "internal_name": "JIVO POMACE 1+1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGGJJ8CEDEYWS",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGGJJ8CEDEYWS",
+   "title": "JIVO Premium Cold Pressed Pure Mustard Oil Can, 5 Litre + 1 Litre Mustard Oil Can",
+   "internal_name": "MUSTARD 5L + 1L",
+   "mrp": 1505,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGX8C5QAD2MPP",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGX8C5QAD2MPP",
+   "title": "JIVO Cold Press Soyabean Oil 5L with Cold Press Canola Oil 5L Canola Oil Can",
+   "internal_name": "CANOLA 5L + SOYABEAN 5L",
+   "mrp": 2750,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGG9RGWHCZHB5M",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGG9RGWHCZHB5M",
+   "title": "JIVO Cold Pressed Canola oil 5 Litre With Kachi Ghani Mustard Oil 1L (Pack of 6L) Canola Oil Can",
+   "internal_name": "CANOLA 5L + MUSTARD 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGQUTHDNWRMZXE",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGQUTHDNWRMZXE",
+   "title": "Sano Soyabean 1L+ Soyabean 1 L Soyabean Oil PET Bottle",
+   "internal_name": "SANO SOYABEAN 1L + SOYABEAN 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHFUUUVNJ64PC",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHFUUUVNJ64PC",
+   "title": "JIVO Cold Pressed Canola oil 5 Litre With Kachi Ghani Mustard Oil 1L (Pack of 6L) Canola Oil Can",
+   "internal_name": "CANOLA 5L + MUSTARD 1L",
+   "mrp": 1905,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH7UWV7CNCHSJB",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH7UWV7CNCHSJB",
+   "title": "JIVO Healthy Ayurvedic Wheatgrass Blueberry Juice Immunity Booster Preservatives used",
+   "internal_name": "WG BLUEBERRY JUICE 200 ML X 6PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGXAECQMQBMYG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGXAECQMQBMYG",
+   "title": "JIVO Pomace Cooking Olive Oil Pack of 6 Litres (5L Tin with 1L) Olive Oil Tin",
+   "internal_name": "JIVO POMACE 5+1L",
+   "mrp": 4248,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMRRZ73UUWHA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMRRZ73UUWHA",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre + Kachi Ghani mustard Oil 5 Litre Canola Oil Can",
+   "internal_name": "CANOLA 5L + MUSTARD 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHFVGKYEQ89YB",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHFVGKYEQ89YB",
+   "title": "JIVO Extra Light Olive Oil 5 Litre (TIN) + Pomace Cooking Olive Oil 1 Litre Olive Oil Tin",
+   "internal_name": "EXTRA LIGHT 5L + JIVO POMACE 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGCYFGYGWYS6Y",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGCYFGYGWYS6Y",
+   "title": "JIVO Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR ( Pet Bottle) Olive Oil Tin",
+   "internal_name": "EXTRA LIGHT 5L + 2L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGY4VUGZCEPUJ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGY4VUGZCEPUJ",
+   "title": null,
+   "internal_name": "CANOLA 1L + SOYABEAN 1L + SUNFLOWER 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGGHNUYZ8VYYV",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGGHNUYZ8VYYV",
+   "title": "JIVO Canola Cold Press Edible Oil 5L + Extra Virgin 1L Canola Oil Can",
+   "internal_name": "CANOLA 5L + EXTRA VIRGIN 1L",
+   "mrp": 3449,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGE5W95B7XQFW7",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGE5W95B7XQFW7",
+   "title": "JIVO 5L + Extra Virgin 1L Olive Cooking Canola Oil Can",
+   "internal_name": "CANOLA 5L + EXTRA LIGHT 1L",
+   "mrp": 2649,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGFGPZPBHGYPTM",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGFGPZPBHGYPTM",
+   "title": "JIVO Canola Cold Press Edible Oil, Extra Virgin Olive Oil & Kachi Ghani mustard Oil Canola Oil PET Bottle",
+   "internal_name": "CANOLA 1L+ EXTRA VIRGIN 1L + MUSTARD 1L",
+   "mrp": 2129,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGX7RKBB4BHQD",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGX7RKBB4BHQD",
+   "title": "JIVO Cold Press Canola Oil 5L with Cold Press Soyabean Oil 1L Soyabean Oil Can",
+   "internal_name": "SOYABEAN 5L CANOLA 5L",
+   "mrp": 1525,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGBFMFWGWUWTJ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGBFMFWGWUWTJ",
+   "title": "JIVO Canola Cold Pressed Edible Oils 5+2 Ltr Canola Oil Can",
+   "internal_name": "CANOLA 5L + 2L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGQURQAFV8PPCT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGQURQAFV8PPCT",
+   "title": "Sano Pure Sunflower Oil 1 Ltr X 2 Pack- Nutrient-Rich Cooking Oil Sunflower Oil PET Bottle",
+   "internal_name": "SANO SUNFLOWER 1L + SUNFLOWER OIL1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGJFNWTAGPZCZU",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGJFNWTAGPZCZU",
+   "title": "JIVO Cold Press Soyabean Oil 5L with Mustard Oil 1L (Pack of 6L) Soyabean Oil Can",
+   "internal_name": "SOYABEAN 5L + MUSTARD 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGG9TZKURYBFRC",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGG9TZKURYBFRC",
+   "title": "JIVO Pomace Cooking Olive Oil 5 Litre with Cold Pressed Canola oil 1 Litre( Pack 6L) Olive Oil Tin",
+   "internal_name": "JIVO POMACE 5L+1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGJZQHMWA2GGHT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGJZQHMWA2GGHT",
+   "title": "JIVO Premium Cold Pressed Pure Mustard Oil 5Ltr with Cold Pressed 1Ltr Canola Oil PET Bottle",
+   "internal_name": "MUSTARD 5L + CANOLA 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGJMU9YVVG3GZY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGJMU9YVVG3GZY",
+   "title": "JIVO Pomace Olive Oil 5L with 2L Extra Light Olive Oil Can",
+   "internal_name": "JIVO POMACE 5L + EXTRA LIGHT 2L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHGRTGFEKGQHF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHGRTGFEKGQHF",
+   "title": "JIVO Canola Cold Press Edible Oil, mustard Oil & Sunflower Oil (1L Each) (3 Litres) Canola Oil PET Bottle",
+   "internal_name": "CANOLA 1L + MUSTARD 1L + SUNFLOWER 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGW5P5G27GCYPP",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGW5P5G27GCYPP",
+   "title": "Sano canola 1+1+1L Canola Oil PET Bottle",
+   "internal_name": "SANO CANOLA 1+1+1",
+   "mrp": 1425,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH7WYZHZAYAKGN",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH7WYZHZAYAKGN",
+   "title": "JIVO Ayurvedic Wheatgrass Natural Apple Juice Immunity Booster Encourages Energy",
+   "internal_name": "WG APPLE JUICE 200ML X 6PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHFSWJBKWD9XK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHFSWJBKWD9XK",
+   "title": null,
+   "internal_name": "EXTRA VIRGIN 5L + EXTRA LIGHT 5L + JIVO POMACE 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH7TQ57QBRQ7DT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH7TQ57QBRQ7DT",
+   "title": "JIVO Ayurvedic Wheatgrass SugarFree Ginger Ale Juice Immunity Booster Natural Benefit",
+   "internal_name": "WG GINGER ALE 200 ML X 6PCS",
+   "mrp": 1999,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "DAJH7VUW7J7DZN7Q",
+   "url": "https://www.flipkart.com/product/p/itme?pid=DAJH7VUW7J7DZN7Q",
+   "title": "JIVO Ayurvedic Wheatgrass Mojito Juice Immunity Booster with Natural Healthy Benefits",
+   "internal_name": "WG MOJITO 200 MLX6PCS",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGC56R2MHCFBE",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGC56R2MHCFBE",
+   "title": "JIVO Pomace 5L+Extra Virgin 5L Cooking Oil Combo Olive Oil Tin",
+   "internal_name": "EXTRA VIRGIN 5L + JIVO POMACE 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDUU45CEVJSYR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGDUU45CEVJSYR",
+   "title": "JIVO Pomace 5L+Extra Virgin 5L Cooking Oil Combo Olive Oil Tin",
+   "internal_name": "EXTRA VIRGIN 5L + JIVO POMACE 5L",
+   "mrp": 10900,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGQUT9G49NFAGZ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGQUT9G49NFAGZ",
+   "title": "Sano Sunflower Oil 5 Ltr X 2 Pack- Pure, Nutrient-Rich Cooking Oil Sunflower Oil PET Bottle",
+   "internal_name": "SANO SUNFLOWER 5L + SUNFLOWER OIL 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGHFTJZH5CCDJ6",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGHFTJZH5CCDJ6",
+   "title": "JIVO Extra light olive oil 5 Litre with Extra Virgin olive oil 1 Litre (Pack of 6L) Olive Oil Tin",
+   "internal_name": "EXTRA LIGHT 5L + EXTRA VIRGIN 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGYCJYJQTGHXJE",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGYCJYJQTGHXJE",
+   "title": "JIVO Cold Pressed Pure Mustard Cooking Oil, Mustard Oil Plastic Bottle",
+   "internal_name": "MUSTARD 2L",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMQGRDX7BTJ6",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQGRDX7BTJ6",
+   "title": "Jivo Canola Cold Press Edible Oil 5 LTR with 1 LTR Free Canola Oil Can",
+   "internal_name": "CANOLA 5L + 1L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNZ7K5EKDCHRU",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ7K5EKDCHRU",
+   "title": "JIVO Extra Light 1L+Pomace 1L+Pomace olive oil 1+1L (PACK OF 3)4L Olive Oil Plastic Bottle",
+   "internal_name": "JIVO POMACE 1L X 3 + EXTRA LIGHT 1L",
+   "mrp": 4646,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGGPF93QDDAMSG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGPF93QDDAMSG",
+   "title": "JIVO High in Omega-3 & PUFA | Ideal for Roasting, Frying, & Baking | Refined Cooking Soyabean Oil Can",
+   "internal_name": "SOYABEAN 5L + 1L",
+   "mrp": 1499,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGGCFZQUPZT3AR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGCFZQUPZT3AR",
+   "title": "JIVO Extra Virgin, Extra Light & Pomace (5L Each) (15 Litres) Olive Oil Tin",
+   "internal_name": "EXTRA VIRGIN 5L + EXTRA LIGHT 5L + JIVO POMACE 5L",
+   "mrp": null,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNZ4RAC8J4ZP6",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ4RAC8J4ZP6",
+   "title": "JIVO Canolaoil1+1L +extralight1L+pomace oil1L (4L)PACK OF 3 Olive Oil Tin",
+   "internal_name": "CANOLA 2L + EXTRA LIGHT 1L + JIVO POMACE 1L",
+   "mrp": 2498,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "TEAHHQTVMG8QJ9ZJ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=TEAHHQTVMG8QJ9ZJ",
+   "title": "JIVO Premium Tea 250g (Pack of 4)|Strong Aroma|Cardamom Chai, Ginger Tea, Spiced Tea Black Tea Pouch",
+   "internal_name": "TEA 250G PACK OF 4",
+   "mrp": 200,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "TEAHHNH929SDCEGN",
+   "url": "https://www.flipkart.com/product/p/itme?pid=TEAHHNH929SDCEGN",
+   "title": "JIVO Premium Tea Leaves | Perfect Aroma And Brew | Kadak Chai | Everyday Essential Black Tea Pouch",
+   "internal_name": "TEA 250G PACK OF 3",
+   "mrp": 600,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHH3NKYPDHRHGK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHH3NKYPDHRHGK",
+   "title": "JIVO Canola Oil 3L + Basmati Rice 3kg Combo Canola Oil Can",
+   "internal_name": "CANOLA 3L + RICE KG",
+   "mrp": 3118,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "TEAHHNH9HQQVXFMA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=TEAHHNH9HQQVXFMA",
+   "title": "JIVO Premium Tea Leaves | Perfect Aroma And Brew | Kadak Chai | Everyday Essential Black Tea Pouch",
+   "internal_name": "TEA 250G PACK OF 2",
+   "mrp": 400,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "FLRHJ4DBVWCPKTHH",
+   "url": "https://www.flipkart.com/product/p/itme?pid=FLRHJ4DBVWCPKTHH",
+   "title": "JIVO Makki Atta| Corn Flour | Maize Flour | For Makki Ki Roti",
+   "internal_name": "MAKKI ATTA 500 GM",
+   "mrp": 149,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "TEAHHNH98DRXVHNK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=TEAHHNH98DRXVHNK",
+   "title": "JIVO Premium Tea Leaves | Perfect Aroma And Brew | Kadak Chai | Everyday Essential Black Tea Pouch",
+   "internal_name": "TEA 250 GM",
+   "mrp": 200,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHH3NCNGRWNYRR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHH3NCNGRWNYRR",
+   "title": "JIVO Yellow Mustad 1L + Coffee 100 G Mustard Oil PET Bottle",
+   "internal_name": "YELLOW MUSTARD 1L + COFFEE 100 GM",
+   "mrp": 705,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGJMUFJFKSFU3D",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGJMUFJFKSFU3D",
+   "title": "JIVO Extra Virgin olive oil 5L with 2L Extra light Olive Oil Can",
+   "internal_name": "EXTRA LIGHT 5L + EXTRA LIGHT 2L",
+   "mrp": 7595,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNZ484UZRUYYZ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ484UZRUYYZ",
+   "title": "JIVO Pomace Cooking Olive Oil 5 Litre with Cold Pressed Canola oil 1+1 L( Pack 7L) Olive Oil Tin",
+   "internal_name": "JIVO POMACE 5L + CANOLA 2L",
+   "mrp": 4249,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHNFQUDF32JHZR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHNFQUDF32JHZR",
+   "title": "JIVO First Pressed Yellow Mustard Oil 1 Litre | Chemical-Free Mustard Oil PET Bottle",
+   "internal_name": "YELLOW MUSTARD 1L + 1L",
+   "mrp": 790,
+   "combo": true
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNPGGFM3M5HQA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNPGGFM3M5HQA",
+   "title": "JIVO Pomace Cooking Olive Oil 5L,Extra light 1L & Pomace 1L ( Pack 3L) Olive Oil Glass Bottle",
+   "internal_name": "JIVO POMACE 5L + EXTRA LIGHT 1L +JIVO POMACE 1L",
+   "mrp": 5247,
+   "combo": true
+  },
+  {
+   "platform": "flipkart-minutes",
+   "id": "jivo-mineral-water-1l",
+   "url": null,
+   "title": "JIVO Mineral Water",
+   "internal_name": null,
+   "mrp": 30,
+   "combo": false,
+   "note": "1L water, modal mrp 30 (variants 25/36); master has only SPRING WATER 750ML @55 -> no row"
+  }
+ ],
+ "junk": [
+  {
+   "platform": "flipkart",
+   "id": "BOTHYVRWUHGTZFHY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=BOTHYVRWUHGTZFHY",
+   "title": "jivo infinite Flip Pro Thermosteel Vacuum Flask Bottle, 18 Hrs Hot and Cold with Zipper Bag 1000 ml Steel Flask - Buy jivo infinite Flip Pro Thermosteel Vacuum Flask Bottle, 18 Hrs Hot and Cold with Zipper Bag 1000 ml Steel Flask Online at Best Prices in India - Sports & Fitness | Flipkart.com",
+   "internal_name": "FLIP PRO 1000",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "CRLHYEWUPR4DRZZD",
+   "url": "https://www.flipkart.com/product/p/itme?pid=CRLHYEWUPR4DRZZD",
+   "title": "jivo infinite PREMIUM STAINLESS STEEL THERMAL INSULATED FOOD CONTAINER | ROTI BOX Serve Casserole",
+   "internal_name": "CASSEROLE 2200",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "CRLHYFF2NSZHWVHQ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=CRLHYFF2NSZHWVHQ",
+   "title": "jivo infinite Jivo Infinite Stainless Steel Thermal Insulated Roti Casserole: 3200ml. Serve Casserole",
+   "internal_name": "CASSEROLE 3200",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "LBXHYVP3GUHJJZGT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=LBXHYVP3GUHJJZGT",
+   "title": "Flipkart.com | jivo infinite Pro 4 Containers Stainless Steel Office Lunch Box -",
+   "internal_name": "LUNCH BOX",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "BOTGZ9ZPVHFX8YYG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=BOTGZ9ZPVHFX8YYG",
+   "title": "jivo infinite Flip Pro with Ziper Bag ISI Certified Flask Stainless Steel Water Bottle 1000 ml Triply Flask - Buy jivo infinite Flip Pro with Ziper Bag ISI Certified Flask Stainless Steel Water Bottle 1000 ml Triply Flask Online at Best Prices in India - Sports & Fitness | Flipkart.com",
+   "internal_name": "FLIP PRO",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "BOTHYVMNCRZHCY2V",
+   "url": "https://www.flipkart.com/product/p/itme?pid=BOTHYVMNCRZHCY2V",
+   "title": "jivo infinite Ferrero 1000 ml Steel Flask - Buy jivo infinite Ferrero 1000 ml Steel Flask Online at Best Prices in India - Sports & Fitness | Flipkart.com",
+   "internal_name": "JIVO-INFI-FERRERO-1000",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "BOTHYVPX44HZZQRG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=BOTHYVPX44HZZQRG",
+   "title": "jivo infinite Crypto Vacuum Insulated Water Bottle Thermosteel 24 Hrs Hot and Cold Flask 500 ml Steel Flask - Buy jivo infinite Crypto Vacuum Insulated Water Bottle Thermosteel 24 Hrs Hot and Cold Flask 500 ml Steel Flask Online at Best Prices in India - Sports & Fitness | Flipkart.com",
+   "internal_name": "JIVO-INFI-CRYPTO-500",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "BOTH4SQVCNDSQJYH",
+   "url": "https://www.flipkart.com/product/p/itme?pid=BOTH4SQVCNDSQJYH",
+   "title": "jivo infinite Stainless Steel Single Wall Elegance 1000ml, Pack of 1 1000 ml Steel Bottle - Buy jivo infinite Stainless Steel Single Wall Elegance 1000ml, Pack of 1 1000 ml Steel Bottle Online at Best Prices in India - Sports & Fitness | Flipkart.com",
+   "internal_name": "JIVO-INFI-ELEGANCE-PACK-1",
+   "mrp": null,
+   "combo": false
+  },
+  {
+   "platform": "flipkart",
+   "id": "CRLGGF7YG5DJ4SMX",
+   "url": "https://www.flipkart.com/product/p/itme?pid=CRLGGF7YG5DJ4SMX",
+   "title": "JIVO Stainless Steel Casserole with Plastic Cover and Bottom Set of 1 3200 ml Cook and Serve Casserole",
+   "internal_name": "ROTI BOX",
+   "mrp": 899,
+   "combo": false
+  }
+ ],
+ "review": [
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMQWQCHJBZHF",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQWQCHJBZHF",
+   "title": "Jivo Daily Cooking Pomace Olive Oil |1 Litre | Rich in MUFA | Low in Saturated Fat Olive Oil Plastic Bottle",
+   "candidate": "JIVO POMACE 1L",
+   "reason": "mrp 745 vs master 1049; LEAD-ruling cross-check: NO other platform shows 745 (1049 live on amazon-fresh x95, blinkit x152, zepto x55, amazon, bigbasket) -> single-listing mrp_drift, review. Possibly a stale/seller-custom listing. Blessed pid EDOHYRPTDVEZVZ8E carries the mapping."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDSH5YNWYH26YY2G",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDSH5YNWYH26YY2G",
+   "title": "JIVO Rich Calcium Fiber Protein Immunity Booster Diet Snacks Weight Loss Sunflower Seeds",
+   "candidate": "SUNFLOWER SEEDS 400G",
+   "reason": "verifier: 'SUNFLOWER SEEDS 200 GM with mrp 499 is actually the 400G' (400G master mrp=499). BUT page pack says '200 GMS' and sap_code FG0000181 sits in the 200G FG-range (basil 200G=FG0000180), while 800G sunflower=FG0000301. MRP says 400G; title/pack/sap say 200G -> conflicting evidence, review (priced: sale 164, OOS). Neither 200G nor 400G mapping asserted from this listing."
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMZP8USGKNSY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMZP8USGKNSY",
+   "title": "Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil for Daily use Canola Oil Plastic Bottle",
+   "candidate": "CANOLA 1+1L",
+   "reason": "item 'Canola 1+1L' pack '1+1 LTR' but fk_name says '1 Litre' and mrp 375 == CANOLA 1L master exactly (vs 750 for 1+1L). Could be a single 1L mislabeled as the 2-pack. sale 260."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGNKQ6EFDAV9HU",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNKQ6EFDAV9HU",
+   "title": "JIVO Canola Cold Pressed Cooking Oil Canola Oil Can",
+   "candidate": "CANOLA 5L",
+   "reason": "internal item CANOLA 5L, pack '5 LTR', but vol_ml=10000 in scrape rows (field conflict, possible 2x5L). Unpriced/OOS today; resolve when it prices."
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMRYGPGCDNKK",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMRYGPGCDNKK",
+   "title": "Jivo Premium Cold Pressed Pure Mustard Oil Can (5 Ltr) Mustard Oil Can",
+   "candidate": "MUSTARD 5L",
+   "reason": "'Jivo Premium Cold Pressed' duplicate seller listing, mrp 1499 vs 1250 everywhere else (amazon-fresh x59, zepto x75, blinkit, bigbasket, 2 other fk listings). Single-listing mrp_drift."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHYRSHNGG6GDGR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRSHNGG6GDGR",
+   "title": "JIVO Extra Light Olive Oil Can",
+   "candidate": "EXTRA LIGHT 2L",
+   "reason": "'JIVO Extra Light Olive Oil Can 2 LTR' duplicate with mrp 1600 vs master 2799 (sibling fk listing EDOGHZTJZEYQJGME same name shows 2998). 43% below master -> seller anomaly, review."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHGP2YUDANTUXG",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHGP2YUDANTUXG",
+   "title": "JIVO Extra Virgin Olive Oil | Imported From Spain | High in MUFA, Vitamin E | Olive Oil PET Bottle",
+   "candidate": "EXTRA VIRGIN 200ML",
+   "reason": "EV 200ML at mrp 720 (~2x360) vs master 350 -> probable hidden Pack-of-2; no other platform shows 720. In stock, sale 277."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHGP27PXFNHZNZ",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHGP27PXFNHZNZ",
+   "title": "JIVO Extra Virgin Olive Oil | Imported From Spain | High in MUFA, Vitamin E | Olive Oil PET Bottle",
+   "candidate": "EXTRA VIRGIN 200ML",
+   "reason": "EV 200ML at mrp 1080 (~3x360) vs master 350 -> probable hidden Pack-of-3; no other platform shows 1080. In stock, sale 509."
+  },
+  {
+   "platform": "flipkart",
+   "id": null,
+   "url": "https://www.flipkart.com/jivo-extra-light-3-litre-cooking-oil-olive-plastic-bottle/p/itmf655d53b1f4f2",
+   "title": "jivo-extra-light-3-litre-cooking-oil-olive-plastic-bottle (owner sheet URL)",
+   "candidate": "EXTRA LIGHT 3L",
+   "reason": "owner sheet has a FLIPKART URL for EXTRA LIGHT 3L but it carries NO pid (cannot resolve offline, network calls forbidden). Two scraped 1+1+1L listings have 3L-style names: EDOHYRPCTWGRKWKU 'JIVO Extra Light Cooking 3 Liter ... Plastic Bottle' (unpriced) and QWRGEMPJJGDRYACC 'Jivo Extra Light Daily Cooking Olive Oil 3 Litre ...' (mrp 2475, sale 1647, sap FG0000310); master mrp 2200 matches neither (third sibling EDOGE5WYGYXCRRMF @4497=3x1499). Mapping left null; the 3 listings stay in unpriced. Needs the pid from the live URL."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDVWYGJNDYRQP",
+   "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-pack-1-mustard-oil-plastic-bottle/p/itm7dfb8c4f2e72?pid=EDOGDVWYGJNDYRQP",
+   "title": "JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil Plastic Bottle",
+   "candidate": "MUSTARD 1L",
+   "reason": "owner-blessed pid (mapping KEPT) but mrp 490 vs master/everywhere-else 255 (sale 255 == master mrp!). Single-listing drift per LEAD ruling. Dup QWRGDYBWXRTGFZFX shows the clean 255/217 and is kept as alt \u2014 consider re-blessing it."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGXYEFERFXP3ZY",
+   "url": "https://www.flipkart.com/jivo-gold-blende-oil-blended-pet-bottle/p/itme4f32c9e55aa1?pid=EDOGXYEFERFXP3ZY",
+   "title": "GOLD 1L (blessed)",
+   "candidate": "GOLD 1L",
+   "reason": "mapping KEPT (owner-blessed); mrp 350 vs master 225, zepto shows 225 x75 -> flipkart-only mrp_drift per LEAD ruling."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGDTXGGCGFCE88",
+   "url": "https://www.flipkart.com/jivo-extra-virgin-olive-oil-tin/p/itm1fffab3662?pid=EDOGDTXGGCGFCE88",
+   "title": "EXTRA VIRGIN 5L (blessed)",
+   "candidate": "EXTRA VIRGIN 5L",
+   "reason": "mapping KEPT; BOTH fk listings show mrp 5995 vs master 7999 while amazon+zepto still show 7999 -> flipkart-only drift (same value on 2 listings of ONE platform does not satisfy the >=2-platform stale rule). sale 4348/4222."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOG2NMPHJZH6GJC",
+   "url": "https://www.flipkart.com/jivo-extra-virgin-olive-oil-pet-bottle/p/itm6e4cfbc1f88ce?pid=EDOG2NMPHJZH6GJC",
+   "title": "EXTRA VIRGIN 1+1L (blessed as EXTRA VIRGIN 2L)",
+   "candidate": "EXTRA VIRGIN 2L",
+   "reason": "mapping KEPT (owner-blessed) but the pid is a 1+1L pack @ mrp 3598 = 2x1799 (stale EV-1L mrp), not a single 2L bottle (master 2700; amazon lists a 2998 EV-2L, W4 flagged separately). Price-match comparisons for EV 2L on flipkart will be on pack arithmetic, not the 2L bottle."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHGWSVUNGY8Y3M",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHGWSVUNGY8Y3M",
+   "title": "SUNFLOWER OIL 4L",
+   "candidate": "SUNFLOWER 4L",
+   "reason": "verifier RISKY applied: mrp 1080 vs master 1038 (~4%) \u2014 mapping KEPT (sole 4L sunflower listing, name+vol clean, no other platform shows 1080), possible MRP drift, flag don't drop. OOS, sale 1077."
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDSH5AVJZCSAN5P3",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDSH5AVJZCSAN5P3",
+   "title": "JIVO ... Sunflower Seeds 200 GMS (unpriced)",
+   "candidate": "SUNFLOWER SEEDS 200G",
+   "reason": "mapping KEPT with caution: name/pack say 200 GM and nothing contradicts, but its priced sibling (EDSH5YNWYH26YY2G) proved size-ambiguous (mrp 499 = 400G master) \u2014 verify when this one prices."
+  }
+ ]
+}

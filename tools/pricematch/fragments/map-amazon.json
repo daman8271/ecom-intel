@@ -1,0 +1,4172 @@
+{
+ "family": "amazon",
+ "generated_from": "result.json snapshots 2026-06-05",
+ "mappings": {
+  "A2 GHEE 500ML": {
+   "amazon": {
+    "id": "B0B2S1F6R8",
+    "url": "https://www.amazon.in/dp/B0B2S1F6R8",
+    "title": "Jivo A2 Ghee 500 ML | Bilona Method Traditionally Prepared from A2 Cow Milk | Suitable for Cooking, Frying, Baking & Indian Recipes | Rich Aroma and Distinct Flavour for Diverse Culinary Applications",
+    "sap_code": "FG0000082",
+    "mrp": 2380,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "A2 GHEE 1L": {
+   "amazon": {
+    "id": "B0B2RW9N9F",
+    "url": "https://www.amazon.in/dp/B0B2RW9N9F",
+    "title": "Jivo A2 Cow Ghee 1 Litre | Traditional Bilona Method | Prepared from A2 Cow Milk | Rich Aroma and Distinct Flavour for Diverse Culinary Applications | Suitable for Cooking, Frying, Baking & Indian Recipes",
+    "sap_code": "FG0000083",
+    "mrp": 2380,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CANOLA 1L": {
+   "amazon": {
+    "id": "B09MJ6QDX7",
+    "url": "https://www.amazon.in/dp/B09MJ6QDX7",
+    "title": "Jivo Cold Pressed Canola Oil 1 Litre | Natural Edible Cooking Oil | Ideal for Frying, Baking & Daily Use",
+    "sap_code": "FG0000032",
+    "mrp": 375,
+    "sale_modal": 255,
+    "sale_min": 255,
+    "sale_max": 255,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B09MJ6QDX7",
+    "url": "https://www.amazon.in/dp/B09MJ6QDX7",
+    "title": "Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+    "sap_code": "FG0000032",
+    "mrp": 375,
+    "sale_modal": 255,
+    "sale_min": 248,
+    "sale_max": 259,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B09MJ6QDX7",
+    "url": "https://www.amazon.in/dp/B09MJ6QDX7",
+    "title": "Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+    "sap_code": "FG0000032",
+    "mrp": 375,
+    "sale_modal": 259,
+    "sale_min": 255,
+    "sale_max": 259,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "CANOLA 1L POUCH": {
+   "amazon": {
+    "id": "B07M6FYXWL",
+    "url": "https://www.amazon.in/dp/B07M6FYXWL",
+    "title": "Jivo Canola Oil,1 Litre Refined Pouch Cooking Oil for Daily use | Recommended by Indian Medical Association",
+    "sap_code": "FG0000032",
+    "mrp": 299,
+    "sale_modal": 259,
+    "sale_min": 259,
+    "sale_max": 259,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CANOLA 1+1L": {
+   "amazon": {
+    "id": "B0152TWWSQ",
+    "url": "https://www.amazon.in/dp/B0152TWWSQ",
+    "title": "JIVO Canola Cold Pressed Edible Oil 1+1 Litres | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines | Cold Pressed Oil for Cooking",
+    "sap_code": "FG0000088",
+    "mrp": 750,
+    "sale_modal": 639,
+    "sale_min": 639,
+    "sale_max": 639,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0152TWWSQ",
+    "url": "https://www.amazon.in/dp/B0152TWWSQ",
+    "title": "Jivo Canola Cold Pressed Edible Oil 1+1 Litres",
+    "sap_code": "FG0000088",
+    "mrp": 750,
+    "sale_modal": 509,
+    "sale_min": 469,
+    "sale_max": 750,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0152TWWSQ",
+    "url": "https://www.amazon.in/dp/B0152TWWSQ",
+    "title": "Jivo Canola Cold Pressed Edible Oil 1+1 Litres",
+    "sap_code": "FG0000088",
+    "mrp": 750,
+    "sale_modal": 509,
+    "sale_min": 469,
+    "sale_max": 750,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "CANOLA 3L": {
+   "amazon": {
+    "id": "B078T3Q3SH",
+    "url": "https://www.amazon.in/dp/B078T3Q3SH",
+    "title": "JIVO Extra Virgin Canola Edible Oil 3 Litres | Vitamin A & D Fortified Cooking Oil | Canada Imported MUFA-Rich Oil | Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+    "sap_code": "FG0000317",
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CANOLA 4L": {
+   "amazon": {
+    "id": "B0FPMH5Q4S",
+    "url": "https://www.amazon.in/dp/B0FPMH5Q4S",
+    "title": "JIVO Canola Cold Pressed Edible Oil - 4 Litres | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines | Cold Pressed Oil for Cooking",
+    "sap_code": "FG0000160",
+    "mrp": 300,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CANOLA 5L": {
+   "amazon": {
+    "id": "B077ZN4G28",
+    "url": "https://www.amazon.in/dp/B077ZN4G28",
+    "title": "JIVO Canola Cold Pressed Edible Oil - 5 Litres | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines | Cold Pressed Oil for Cooking (Pack of 1)",
+    "sap_code": "FG0000004",
+    "mrp": 1650,
+    "sale_modal": 1249,
+    "sale_min": 1249,
+    "sale_max": 1249,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B077ZN4G28",
+    "url": "https://www.amazon.in/dp/B077ZN4G28",
+    "title": "Jivo Cold Pressed Canola Oil 5 Litre",
+    "sap_code": "FG0000004",
+    "mrp": 1650,
+    "sale_modal": 1193,
+    "sale_min": 1193,
+    "sale_max": 1249,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B077ZN4G28",
+    "url": "https://www.amazon.in/dp/B077ZN4G28",
+    "title": "Jivo Cold Pressed Canola Oil 5 Litre",
+    "sap_code": "FG0000004",
+    "mrp": 1650,
+    "sale_modal": 1249,
+    "sale_min": 1193,
+    "sale_max": 1249,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA LIGHT 500ML": {
+   "amazon": {
+    "id": "B0D9DBHG18",
+    "url": "https://www.amazon.in/dp/B0D9DBHG18",
+    "title": "Jivo Extra Light Olive Oil 500ml | Imported from Spain | Everyday Use for Cooking, Dressings, Salad, Soups, Dips, and Marinades | Light, Flavorful High MUFA & Rich in Antioxidants",
+    "sap_code": "FG0000039",
+    "mrp": 499,
+    "sale_modal": 339,
+    "sale_min": 339,
+    "sale_max": 339,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "EXTRA LIGHT 1L": {
+   "amazon": {
+    "id": "B09HZY97FR",
+    "url": "https://www.amazon.in/dp/B09HZY97FR",
+    "title": "Jivo Extra Light Olive Oil 1 Litre | Imported from Spain | Everyday Cooking, Dressings, Salad, Soups, Dips, and Marinades All Culinary Uses | Light, Flavorful High MUFA & Rich in Antioxidants",
+    "sap_code": "FG0000005",
+    "mrp": 1499,
+    "sale_modal": 499,
+    "sale_min": 499,
+    "sale_max": 499,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B09HZY97FR",
+    "url": "https://www.amazon.in/dp/B09HZY97FR",
+    "title": "Jivo Extra Light Olive Oil 1 Litre",
+    "sap_code": "FG0000005",
+    "mrp": 1499,
+    "sale_modal": 499,
+    "sale_min": 499,
+    "sale_max": 560,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B09HZY97FR",
+    "url": "https://www.amazon.in/dp/B09HZY97FR",
+    "title": "Jivo Extra Light Olive Oil 1 Litre",
+    "sap_code": "FG0000005",
+    "mrp": 1499,
+    "sale_modal": 499,
+    "sale_min": 499,
+    "sale_max": 560,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA LIGHT 2L": {
+   "amazon": {
+    "id": "B09NXCPZW1",
+    "url": "https://www.amazon.in/dp/B09NXCPZW1",
+    "title": "Jivo Extra Light Olive Oil 2 Litre | Imported from Spain | Everyday Cooking, Dressings, Salads, Soups, Dips & Marinades | Low in Saturated Fat | Olive Oil in Convenient Pet Bottle for Easy Pouring",
+    "sap_code": "FG0000064",
+    "mrp": 2799,
+    "sale_modal": 1130,
+    "sale_min": 1130,
+    "sale_max": 1130,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B09NXCPZW1",
+    "url": "https://www.amazon.in/dp/B09NXCPZW1",
+    "title": "Jivo Extra Light Olive Oil 2 Litre",
+    "sap_code": "FG0000064",
+    "mrp": 2799,
+    "sale_modal": 1135,
+    "sale_min": 1130,
+    "sale_max": 1189,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B09NXCPZW1",
+    "url": "https://www.amazon.in/dp/B09NXCPZW1",
+    "title": "Jivo Extra Light Olive Oil 2 Litre",
+    "sap_code": "FG0000064",
+    "mrp": 2799,
+    "sale_modal": 1135,
+    "sale_min": 1130,
+    "sale_max": 1164,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA LIGHT 3L": {
+   "amazon": {
+    "id": "B097ZZTW5C",
+    "url": "https://www.amazon.in/dp/B097ZZTW5C",
+    "title": "Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking – Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat",
+    "sap_code": null,
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "EXTRA LIGHT 5L": {
+   "amazon": {
+    "id": "B07MNWTBDT",
+    "url": "https://www.amazon.in/dp/B07MNWTBDT",
+    "title": "Jivo Extra Light Olive Oil 5 Litre TIN | Imported from Spain | Recommendable Daily Cooking for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat |",
+    "sap_code": "FG0000009",
+    "mrp": 6499,
+    "sale_modal": 2944,
+    "sale_min": 2944,
+    "sale_max": 2944,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "JIVO POMACE 1L": {
+   "amazon": {
+    "id": "B0821DNF2W",
+    "url": "https://www.amazon.in/dp/B0821DNF2W",
+    "title": "Jivo Daily Cooking Pomace Olive Oil 1 Litre | Imported from Spain | Rich in Monounsaturated Fatty Acids (MUFA) | Low in Saturated Fat | Ideal for Roasting, Frying, and Baking.",
+    "sap_code": "FG0000028",
+    "mrp": 1049,
+    "sale_modal": 379,
+    "sale_min": 379,
+    "sale_max": 379,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0821DNF2W",
+    "url": "https://www.amazon.in/dp/B0821DNF2W",
+    "title": "Jivo Daily Cooking Pomace Olive Oil 1 Litre",
+    "sap_code": "FG0000028",
+    "mrp": 1049,
+    "sale_modal": 379,
+    "sale_min": 379,
+    "sale_max": 397,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0821DNF2W",
+    "url": "https://www.amazon.in/dp/B0821DNF2W",
+    "title": "Jivo Daily Cooking Pomace Olive Oil 1 Litre",
+    "sap_code": "FG0000028",
+    "mrp": 1049,
+    "sale_modal": 379,
+    "sale_min": 379,
+    "sale_max": 397,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "JIVO POMACE 2L": {
+   "amazon": {
+    "id": "B0C4FFYSLV",
+    "url": "https://www.amazon.in/dp/B0C4FFYSLV",
+    "title": "Jivo Everyday Cooking Pomace Olive Oil 2 Litre | Imported from Spain | Rich in MUFA, Low in Saturated Fat | Ideal for Frying, Roasting & Baking | Cooking Oil for Daily Use.",
+    "sap_code": "FG0000114",
+    "mrp": 1449,
+    "sale_modal": 849,
+    "sale_min": 849,
+    "sale_max": 849,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "POMACE 3L": {
+   "amazon": {
+    "id": "B0FQ31J42X",
+    "url": "https://www.amazon.in/dp/B0FQ31J42X",
+    "title": "Jivo Everyday Cooking Pomace Olive Oil 3 Litre | Imported from Spain | Rich in MUFA, Low in Saturated Fat | Ideal for Frying, Roasting & Baking | Cooking Oil for Daily Use",
+    "sap_code": null,
+    "mrp": 3050,
+    "sale_modal": 1279,
+    "sale_min": 1279,
+    "sale_max": 1279,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "JIVO POMACE 5L": {
+   "amazon": {
+    "id": "B07X53ZL6J",
+    "url": "https://www.amazon.in/dp/B07X53ZL6J",
+    "title": "Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking | Imported From Spain | Recommended for roasting, frying, and baking all types of cuisines | Rich in MUFA | Low in Saturated Fat.",
+    "sap_code": "FG0000008",
+    "mrp": 4999,
+    "sale_modal": 2119,
+    "sale_min": 2119,
+    "sale_max": 2119,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B07X53ZL6J",
+    "url": "https://www.amazon.in/dp/B07X53ZL6J",
+    "title": "Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking",
+    "sap_code": "FG0000008",
+    "mrp": 4999,
+    "sale_modal": 1950,
+    "sale_min": 1950,
+    "sale_max": 2119,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B07X53ZL6J",
+    "url": "https://www.amazon.in/dp/B07X53ZL6J",
+    "title": "Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking",
+    "sap_code": "FG0000008",
+    "mrp": 4999,
+    "sale_modal": 1950,
+    "sale_min": 1950,
+    "sale_max": 2119,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA VIRGIN 200ML": {
+   "amazon": {
+    "id": "B0CGNBY24B",
+    "url": "https://www.amazon.in/dp/B0CGNBY24B",
+    "title": "Jivo Extra Virgin Olive Oil 200 ML Pet Bottle | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil | Ideal use for Dressings, Salad and Soups, Dips & Marinades.",
+    "sap_code": "FG0000164",
+    "mrp": 299,
+    "sale_modal": 189,
+    "sale_min": 189,
+    "sale_max": 189,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "EXTRA VIRGIN 250ML": {
+   "amazon": {
+    "id": "B0CGM8QLXB",
+    "url": "https://www.amazon.in/dp/B0CGM8QLXB",
+    "title": "Jivo Extra Virgin Olive Oil 250 ML Glass Bottle | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil, for Dressings, Salad and Soups, Dips & Marinades.",
+    "sap_code": "FG0000112",
+    "mrp": 450,
+    "sale_modal": 245,
+    "sale_min": 245,
+    "sale_max": 245,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "EXTRA VIRGIN 500ML": {
+   "amazon": {
+    "id": "B0CGM7THVN",
+    "url": "https://www.amazon.in/dp/B0CGM7THVN",
+    "title": "Jivo Extra Virgin Olive Oil 500 ML Pet Bottle | Imported from Spain | Contains Vitamin E | Cholesterol-Free| Natural and Cold Pressed Cooking Oil, for Dressings, Salad and Soups, Dips & Marinades",
+    "sap_code": "FG0000161",
+    "mrp": 999,
+    "sale_modal": 379,
+    "sale_min": 379,
+    "sale_max": 379,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "EXTRA VIRGIN 1L": {
+   "amazon": {
+    "id": "B093BMGPQC",
+    "url": "https://www.amazon.in/dp/B093BMGPQC",
+    "title": "Jivo Extra Virgin Olive Oil 1 litre | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil | Ideal for Dressings, Salad, and Soups, Dips & Marinades",
+    "sap_code": "FG0000071",
+    "mrp": 1799,
+    "sale_modal": 789,
+    "sale_min": 789,
+    "sale_max": 789,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B093BMGPQC",
+    "url": "https://www.amazon.in/dp/B093BMGPQC",
+    "title": "Jivo Extra Virgin Olive Oil 1 litre",
+    "sap_code": "FG0000071",
+    "mrp": 1799,
+    "sale_modal": 789,
+    "sale_min": 759,
+    "sale_max": 789,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B093BMGPQC",
+    "url": "https://www.amazon.in/dp/B093BMGPQC",
+    "title": "Jivo Extra Virgin Olive Oil 1 litre",
+    "sap_code": "FG0000071",
+    "mrp": 1799,
+    "sale_modal": 789,
+    "sale_min": 759,
+    "sale_max": 789,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA VIRGIN 2L": {
+   "amazon": {
+    "id": "B0CH13ZG5M",
+    "url": "https://www.amazon.in/dp/B0CH13ZG5M",
+    "title": "Jivo Extra Virgin Olive Oil 2 litre | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil | Ideal for Dressings, Salad and Soups, Dips & Marinades",
+    "sap_code": "FG0000155",
+    "mrp": 2700,
+    "sale_modal": 1399,
+    "sale_min": 1399,
+    "sale_max": 1399,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "EXTRA VIRGIN 3L": {
+   "amazon": {
+    "id": "B0FQ2ZMFB9",
+    "url": "https://www.amazon.in/dp/B0FQ2ZMFB9",
+    "title": "Jivo Extra Virgin Olive Oil 3 litre | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil | Ideal for Dressings, Salad and Soups, Dips & Marinades",
+    "sap_code": null,
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "EXTRA VIRGIN 5L": {
+   "amazon": {
+    "id": "B09XR2YK8S",
+    "url": "https://www.amazon.in/dp/B09XR2YK8S",
+    "title": "Jivo Extra Virgin Olive Oil 5 litre Tin | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil | Ideal for Dressings, Salad and Soups, Dips & Marinades",
+    "sap_code": "FG0000074",
+    "mrp": 7999,
+    "sale_modal": 3579,
+    "sale_min": 3579,
+    "sale_max": 3579,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "GROUNDNUT 1L": {
+   "amazon": {
+    "id": "B0CKFFW9B6",
+    "url": "https://www.amazon.in/dp/B0CKFFW9B6",
+    "title": "Jivo Groundnut Oil 1 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vitamin A & D Fortified, Chemical-Free Ground Nut Oil 1L",
+    "sap_code": "FG0000142",
+    "mrp": 560,
+    "sale_modal": 193,
+    "sale_min": 193,
+    "sale_max": 193,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": {
+    "id": "B0CKFFW9B6",
+    "url": "https://www.amazon.in/dp/B0CKFFW9B6",
+    "title": "Jivo Groundnut Oil 1 Litre",
+    "sap_code": "FG0000142",
+    "mrp": 560,
+    "sale_modal": 193,
+    "sale_min": 193,
+    "sale_max": 193,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "GROUNDNUT 5L": {
+   "amazon": {
+    "id": "B0CKFFGC31",
+    "url": "https://www.amazon.in/dp/B0CKFFGC31",
+    "title": "Jivo Groundnut Oil 5 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vitamin A & D Fortified, Chemical-Free Ground Nut Oil",
+    "sap_code": "FG0000143",
+    "mrp": 2800,
+    "sale_modal": 1169,
+    "sale_min": 1169,
+    "sale_max": 1169,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0CKFFGC31",
+    "url": "https://www.amazon.in/dp/B0CKFFGC31",
+    "title": "Jivo Groundnut Oil 5 Litre",
+    "sap_code": "FG0000143",
+    "mrp": 2800,
+    "sale_modal": 1074,
+    "sale_min": 1074,
+    "sale_max": 1079,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0CKFFGC31",
+    "url": "https://www.amazon.in/dp/B0CKFFGC31",
+    "title": "Jivo Groundnut Oil 5 Litre",
+    "sap_code": "FG0000143",
+    "mrp": 2800,
+    "sale_modal": 1074,
+    "sale_min": 1074,
+    "sale_max": 1106,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "COCONUT 200ML": {
+   "amazon": {
+    "id": "B0CGM7KSFV",
+    "url": "https://www.amazon.in/dp/B0CGM7KSFV",
+    "title": "JIVO Pure Extra Virgin Coconut Oil, 200Ml Nourishing Oil Bottle for Skin & Hair Growth| Good for Salad Dressing Zero Cholesterol and Trans Fat| Keto diet & Cooking",
+    "sap_code": "FG0000163",
+    "mrp": 285,
+    "sale_modal": 159,
+    "sale_min": 159,
+    "sale_max": 159,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "COCONUT 500ML": {
+   "amazon": {
+    "id": "B0CGN9Y3PT",
+    "url": "https://www.amazon.in/dp/B0CGN9Y3PT",
+    "title": "JIVO Pure Extra Virgin Coconut Oil 500 ml | Nourishing Oil Bottle for Skin | Hair Growth | Baby Massage | Good for Salad Dressing Zero Cholesterol and Trans Fat | Keto diet & Cooking",
+    "sap_code": "FG0000157",
+    "mrp": 399,
+    "sale_modal": 279,
+    "sale_min": 279,
+    "sale_max": 279,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0CGN9Y3PT",
+    "url": "https://www.amazon.in/dp/B0CGN9Y3PT",
+    "title": "Jivo Pure Extra Virgin Coconut Oil 500 ml",
+    "sap_code": "FG0000157",
+    "mrp": 399,
+    "sale_modal": 279,
+    "sale_min": 279,
+    "sale_max": 279,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": null
+  },
+  "COCONUT 1L": {
+   "amazon": {
+    "id": "B0BZ8K3DQP",
+    "url": "https://www.amazon.in/dp/B0BZ8K3DQP",
+    "title": "JIVO Pure Extra Virgin Coconut Oil 1 Litre | Nourishing Oil Bottle for Skin | Hair Growth | Baby Massage | Good for Salad Dressing Zero Cholesterol and Trans Fat | Keto diet & Cooking",
+    "sap_code": "FG0000116",
+    "mrp": 700,
+    "sale_modal": 539,
+    "sale_min": 539,
+    "sale_max": 539,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0BZ8K3DQP",
+    "url": "https://www.amazon.in/dp/B0BZ8K3DQP",
+    "title": "Jivo Pure Extra Virgin Coconut Oil 1 Litre",
+    "sap_code": "FG0000116",
+    "mrp": 700,
+    "sale_modal": 539,
+    "sale_min": 539,
+    "sale_max": 539,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0BZ8K3DQP",
+    "url": "https://www.amazon.in/dp/B0BZ8K3DQP",
+    "title": "Jivo Pure Extra Virgin Coconut Oil 1 Litre",
+    "sap_code": "FG0000116",
+    "mrp": 700,
+    "sale_modal": 539,
+    "sale_min": 539,
+    "sale_max": 539,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "SO OLIVE 1L": {
+   "amazon": {
+    "id": "B0DC6JR4F3",
+    "url": "https://www.amazon.in/dp/B0DC6JR4F3",
+    "title": "Jivo So Olive Oil 1 Litre | Blend of Rice Bran & Olive Oil | Nutritious Cooking Oil for a Healthy Lifestyle | Ideal for Daily Use | Edible Oil",
+    "sap_code": "FG0000228",
+    "mrp": 325,
+    "sale_modal": 257,
+    "sale_min": 257,
+    "sale_max": 257,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0DC6JR4F3",
+    "url": "https://www.amazon.in/dp/B0DC6JR4F3",
+    "title": "Jivo So Olive Oil 1 Litre",
+    "sap_code": "FG0000228",
+    "mrp": 325,
+    "sale_modal": 257,
+    "sale_min": 257,
+    "sale_max": 257,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": null
+  },
+  "SO OLIVE 5L": {
+   "amazon": {
+    "id": "B0DC6WMYM6",
+    "url": "https://www.amazon.in/dp/B0DC6WMYM6",
+    "title": "Jivo So Olive Oil 5 litre | Blend of Rice Bran & Olive Oil | Nutritious Cooking Oil for a Healthy Lifestyle | Ideal for Daily Use | Edible Oil",
+    "sap_code": "FG0000229",
+    "mrp": 1625,
+    "sale_modal": 1363,
+    "sale_min": 1363,
+    "sale_max": 1363,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "YELLOW MUSTARD 1L": {
+   "amazon": {
+    "id": "B0FF9P7XVX",
+    "url": "https://www.amazon.in/dp/B0FF9P7XVX",
+    "title": "JIVO First Pressed Yellow Mustard Oil 1 Litre | Pili Sarson Oil for Cooking | Chemical-Free | Ideal for Roasting, Frying, Baking | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines",
+    "sap_code": "FG0000328",
+    "mrp": 395,
+    "sale_modal": 259,
+    "sale_min": 259,
+    "sale_max": 259,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0FF9P7XVX",
+    "url": "https://www.amazon.in/dp/B0FF9P7XVX",
+    "title": "Jivo First Pressed Yellow Mustard Oil 1 Litre",
+    "sap_code": "FG0000328",
+    "mrp": 355,
+    "sale_modal": 259,
+    "sale_min": 259,
+    "sale_max": 259,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0FF9P7XVX",
+    "url": "https://www.amazon.in/dp/B0FF9P7XVX",
+    "title": "Jivo First Pressed Yellow Mustard Oil 1 Litre",
+    "sap_code": "FG0000328",
+    "mrp": 355,
+    "sale_modal": 259,
+    "sale_min": 259,
+    "sale_max": 259,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "YELLOW MUSTARD 5L": {
+   "amazon": {
+    "id": "B0GF1Z3DXR",
+    "url": "https://www.amazon.in/dp/B0GF1Z3DXR",
+    "title": "JIVO First Pressed Yellow Mustard Oil 5 Litre | Pili Sarson Oil for Cooking | Chemical-Free | Ideal for Roasting, Frying, Baking | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines",
+    "sap_code": "FG0000385",
+    "mrp": 1795,
+    "sale_modal": 1269,
+    "sale_min": 1269,
+    "sale_max": 1269,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SESAME OIL 1L": {
+   "amazon": {
+    "id": "B0FDKZPGX1",
+    "url": "https://www.amazon.in/dp/B0FDKZPGX1",
+    "title": "Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage",
+    "sap_code": "FG0000376",
+    "mrp": 600,
+    "sale_modal": 329,
+    "sale_min": 329,
+    "sale_max": 329,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "RICE BRAN 1L": {
+   "amazon": {
+    "id": "B0DBHQ2QWW",
+    "url": "https://www.amazon.in/dp/B0DBHQ2QWW",
+    "title": "Jivo Rice Bran Oil 1 Litre Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Sautéing & Baking | Chemical-Free",
+    "sap_code": "FG0000227",
+    "mrp": 285,
+    "sale_modal": 178,
+    "sale_min": 178,
+    "sale_max": 178,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0DBHQ2QWW",
+    "url": "https://www.amazon.in/dp/B0DBHQ2QWW",
+    "title": "Jivo Rice Bran Oil 1 Litre Cooking Oil",
+    "sap_code": "FG0000227",
+    "mrp": 285,
+    "sale_modal": 189,
+    "sale_min": 169,
+    "sale_max": 189,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0DBHQ2QWW",
+    "url": "https://www.amazon.in/dp/B0DBHQ2QWW",
+    "title": "Jivo Rice Bran Oil 1 Litre Cooking Oil",
+    "sap_code": "FG0000227",
+    "mrp": 285,
+    "sale_modal": 189,
+    "sale_min": 169,
+    "sale_max": 189,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "RICE BRAN 4L": {
+   "amazon": {
+    "id": "B0GFWHTMT9",
+    "url": "https://www.amazon.in/dp/B0GFWHTMT9",
+    "title": "Jivo Rice Bran Oil 4 Litre | Premium Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Sauteing & Baking | Chemical-Free",
+    "sap_code": "FG0000383",
+    "mrp": 3500,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "RICE BRAN 5L": {
+   "amazon": {
+    "id": "B0DBJ13FKL",
+    "url": "https://www.amazon.in/dp/B0DBJ13FKL",
+    "title": "Jivo Rice Bran Oil 5 Litre | Premium Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Sauteing & Baking | Chemical-Free",
+    "sap_code": "FG0000230",
+    "mrp": 1425,
+    "sale_modal": 909,
+    "sale_min": 909,
+    "sale_max": 909,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0DBJ13FKL",
+    "url": "https://www.amazon.in/dp/B0DBJ13FKL",
+    "title": "Jivo Rice Bran Oil 5 Litre",
+    "sap_code": "FG0000230",
+    "mrp": 1425,
+    "sale_modal": 909,
+    "sale_min": 909,
+    "sale_max": 909,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0DBJ13FKL",
+    "url": "https://www.amazon.in/dp/B0DBJ13FKL",
+    "title": "Jivo Rice Bran Oil 5 Litre",
+    "sap_code": "FG0000230",
+    "mrp": 1425,
+    "sale_modal": 909,
+    "sale_min": 909,
+    "sale_max": 909,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "SUNFLOWER 1L": {
+   "amazon": {
+    "id": "B0B4SJTNF2",
+    "url": "https://www.amazon.in/dp/B0B4SJTNF2",
+    "title": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre | Chemical-Free Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines.",
+    "sap_code": "FG0000081",
+    "mrp": 275,
+    "sale_modal": 207,
+    "sale_min": 207,
+    "sale_max": 207,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0B4SJTNF2",
+    "url": "https://www.amazon.in/dp/B0B4SJTNF2",
+    "title": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre",
+    "sap_code": "FG0000081",
+    "mrp": 275,
+    "sale_modal": 207,
+    "sale_min": 177,
+    "sale_max": 207,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0B4SJTNF2",
+    "url": "https://www.amazon.in/dp/B0B4SJTNF2",
+    "title": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre",
+    "sap_code": "FG0000081",
+    "mrp": 275,
+    "sale_modal": 177,
+    "sale_min": 177,
+    "sale_max": 185,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "SUNFLOWER 3L": {
+   "amazon": {
+    "id": "B0GDV29RCN",
+    "url": "https://www.amazon.in/dp/B0GDV29RCN",
+    "title": "Jivo Cold Pressed Chemical-Free Sunflower Oil - 3 Litres | Chemical-Free Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines | Sunflower Oil (Pack of 1)",
+    "sap_code": "FG0000316",
+    "mrp": 300,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SUNFLOWER 4L": {
+   "amazon": {
+    "id": "B0FPMJPCFM",
+    "url": "https://www.amazon.in/dp/B0FPMJPCFM",
+    "title": "Jivo Sunflower Oil - 4 Litres | Pure & Natural Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines | Sunflower Oil (Pack of 1)",
+    "sap_code": "FG0000303",
+    "mrp": null,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SUNFLOWER 5L": {
+   "amazon": {
+    "id": "B0991VMDB1",
+    "url": "https://www.amazon.in/dp/B0991VMDB1",
+    "title": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres | Chemical-Free Oil for Cooking | Ideal for Roasting, Frying, Baking, and All Types of Cuisines.",
+    "sap_code": "FG0000053",
+    "mrp": 1350,
+    "sale_modal": 976,
+    "sale_min": 976,
+    "sale_max": 976,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0991VMDB1",
+    "url": "https://www.amazon.in/dp/B0991VMDB1",
+    "title": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres",
+    "sap_code": "FG0000053",
+    "mrp": 1350,
+    "sale_modal": 976,
+    "sale_min": 949,
+    "sale_max": 1049,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0991VMDB1",
+    "url": "https://www.amazon.in/dp/B0991VMDB1",
+    "title": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres",
+    "sap_code": "FG0000053",
+    "mrp": 1350,
+    "sale_modal": 1049,
+    "sale_min": 949,
+    "sale_max": 1049,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "MUSTARD 1L POUCH": {
+   "amazon": {
+    "id": "B0DRYVRYYM",
+    "url": "https://www.amazon.in/dp/B0DRYVRYYM",
+    "title": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch | Recommendable for Roasting, Frying, Baking All type of Cuisines |",
+    "sap_code": "FG0000106",
+    "mrp": 3750,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0DRYVRYYM",
+    "url": "https://www.amazon.in/dp/B0DRYVRYYM",
+    "title": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch",
+    "sap_code": "FG0000106",
+    "mrp": null,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": null
+  },
+  "MUSTARD 1L": {
+   "amazon": {
+    "id": "B09NYCSQLF",
+    "url": "https://www.amazon.in/dp/B09NYCSQLF",
+    "title": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre | Recommended for Roasting, Frying, Baking All type of Cuisines |",
+    "sap_code": "FG0000030",
+    "mrp": 255,
+    "sale_modal": 176,
+    "sale_min": 176,
+    "sale_max": 176,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B09NYCSQLF",
+    "url": "https://www.amazon.in/dp/B09NYCSQLF",
+    "title": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+    "sap_code": "FG0000030",
+    "mrp": 255,
+    "sale_modal": 181,
+    "sale_min": 181,
+    "sale_max": 209,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B09NYCSQLF",
+    "url": "https://www.amazon.in/dp/B09NYCSQLF",
+    "title": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+    "sap_code": "FG0000030",
+    "mrp": 255,
+    "sale_modal": 181,
+    "sale_min": 181,
+    "sale_max": 190,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "MUSTARD 3L": {
+   "amazon": {
+    "id": "B0GF22BHZ7",
+    "url": "https://www.amazon.in/dp/B0GF22BHZ7",
+    "title": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 3 Litre | Contains Omega-3 (ALA) and Vitamin E | Ideal for Cooking, Frying, Pickling & Daily Use",
+    "sap_code": "FG0000067",
+    "mrp": 300,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "MUSTARD 4L": {
+   "amazon": {
+    "id": "B0GFFSDTGP",
+    "url": "https://www.amazon.in/dp/B0GFFSDTGP",
+    "title": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 4 Litre | Contains Omega-3 (ALA) and Vitamin E | Ideal for Cooking, Frying, Pickling & Daily Use",
+    "sap_code": "FG0000302",
+    "mrp": 300,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "MUSTARD 5L": {
+   "amazon": {
+    "id": "B091XPD9J3",
+    "url": "https://www.amazon.in/dp/B091XPD9J3",
+    "title": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre | Contains Omega-3 (ALA) and Vitamin E | Ideal for Cooking, Frying, Pickling & Daily Use |",
+    "sap_code": "FG0000011",
+    "mrp": 1250,
+    "sale_modal": 960,
+    "sale_min": 960,
+    "sale_max": 960,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B091XPD9J3",
+    "url": "https://www.amazon.in/dp/B091XPD9J3",
+    "title": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre",
+    "sap_code": "FG0000011",
+    "mrp": 1250,
+    "sale_modal": 960,
+    "sale_min": 960,
+    "sale_max": 999,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B091XPD9J3",
+    "url": "https://www.amazon.in/dp/B091XPD9J3",
+    "title": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre",
+    "sap_code": "FG0000011",
+    "mrp": 1250,
+    "sale_modal": 960,
+    "sale_min": 960,
+    "sale_max": 999,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "SOYABEAN 1L": {
+   "amazon": {
+    "id": "B0B6HNNL5B",
+    "url": "https://www.amazon.in/dp/B0B6HNNL5B",
+    "title": "Jivo Cooking Edible Soyabean Oil 1 Litre | High in Omega-6 PUFA | Contains Tocopherols Natural Antioxidant | Suitable for Daily Cooking |",
+    "sap_code": "FG0000193",
+    "mrp": 225,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0B6HNNL5B",
+    "url": "https://www.amazon.in/dp/B0B6HNNL5B",
+    "title": "Jivo Cooking Edible Soyabean Oil 1 Litre",
+    "sap_code": "FG0000193",
+    "mrp": 225,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0B6HNNL5B",
+    "url": "https://www.amazon.in/dp/B0B6HNNL5B",
+    "title": "Jivo Cooking Edible Soyabean Oil 1 Litre",
+    "sap_code": "FG0000193",
+    "mrp": 225,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "SOYABEAN 1L POUCH": {
+   "amazon": {
+    "id": "B0BZ4WPT43",
+    "url": "https://www.amazon.in/dp/B0BZ4WPT43",
+    "title": "Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil for Daily Use | Ideal for Roasting, Frying, and Baking | High in Omega-3 and Low in Saturated Fat |",
+    "sap_code": "FG0000193",
+    "mrp": 4999,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SOYABEAN 5L": {
+   "amazon": {
+    "id": "B0B6HPPMXL",
+    "url": "https://www.amazon.in/dp/B0B6HPPMXL",
+    "title": "Jivo Cooking Edible Soyabean Oil 5 Litre | High in Omega-6 PUFA | Contains Tocopherols Natural Antioxidant | Suitable for Daily Cooking |",
+    "sap_code": "FG0000192",
+    "mrp": 1100,
+    "sale_modal": 949,
+    "sale_min": 949,
+    "sale_max": 949,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "GOLD 1L": {
+   "amazon": {
+    "id": "B0CT5MYSDS",
+    "url": "https://www.amazon.in/dp/B0CT5MYSDS",
+    "title": "Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil | Natural Antioxidants | 1 Litre Pack",
+    "sap_code": "FG0000149",
+    "mrp": 3750,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "GOLD 5L": {
+   "amazon": {
+    "id": "B0C9Q1S6QG",
+    "url": "https://www.amazon.in/dp/B0C9Q1S6QG",
+    "title": "Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil | Cooking Oil | Rich in Antioxidants & Vitamins | Pro Lifestyle | 5L Family Pack",
+    "sap_code": "FG0000128",
+    "mrp": 1050,
+    "sale_modal": 909,
+    "sale_min": 909,
+    "sale_max": 909,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": {
+    "id": "B0C9Q1S6QG",
+    "url": "https://www.amazon.in/dp/B0C9Q1S6QG",
+    "title": "Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil",
+    "sap_code": "FG0000128",
+    "mrp": 1050,
+    "sale_modal": 909,
+    "sale_min": 909,
+    "sale_max": 909,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-now": {
+    "id": "B0C9Q1S6QG",
+    "url": "https://www.amazon.in/dp/B0C9Q1S6QG",
+    "title": "Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil",
+    "sap_code": "FG0000128",
+    "mrp": 1050,
+    "sale_modal": 909,
+    "sale_min": 909,
+    "sale_max": 909,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   }
+  },
+  "SANO CLASSIC 5L": {
+   "amazon": {
+    "id": "B0CKBFKQ4P",
+    "url": "https://www.amazon.in/dp/B0CKBFKQ4P",
+    "title": "Sano Classic Olive Oil 5 Litre | Ideal for All Indian and Western Cuisines | Perfect for Cooking, Frying, Roasting, Grilling, and Baking | Versatile and Healthy Cooking Oil",
+    "sap_code": "FG0000152",
+    "mrp": 2700,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO POMACE 5L": {
+   "amazon": {
+    "id": "B0CFFSWMXZ",
+    "url": "https://www.amazon.in/dp/B0CFFSWMXZ",
+    "title": "sano Pomace Olive Oil 5L Ideal for Frying, Roasting & Sautéing Rich Neutral Flavour & High Smoke Point Versatile Edible Cooking Oil for Indian Cuisine",
+    "sap_code": "FG0000151",
+    "mrp": 4599,
+    "sale_modal": 1960,
+    "sale_min": 1960,
+    "sale_max": 1960,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO POMACE 1L": {
+   "amazon": {
+    "id": "B0CF9RQ9PL",
+    "url": "https://www.amazon.in/dp/B0CF9RQ9PL",
+    "title": "Sano Pomace Olive Oil 1L Pet Bottle | Spain-Imported Edible Oil | Ideal for Deep Frying, Sautéing & Roasting | High Smoke Point Cooking Oil for Indian Kitchen | 1000ml",
+    "sap_code": "FG0000150",
+    "mrp": 999,
+    "sale_modal": 399,
+    "sale_min": 399,
+    "sale_max": 399,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO CANOLA 1L": {
+   "amazon": {
+    "id": "B0CK2D4XCH",
+    "url": "https://www.amazon.in/dp/B0CK2D4XCH",
+    "title": "Sano Canola Oil: Cooking Oil for Daily Use | Recommended for All Types of Cuisines | Ideal for Conscious Cooking | 1 Liter (Pack of 1)",
+    "sap_code": "FG0000134",
+    "mrp": 475,
+    "sale_modal": 249,
+    "sale_min": 249,
+    "sale_max": 249,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO CANOLA 5L": {
+   "amazon": {
+    "id": "B0CK2B158Y",
+    "url": "https://www.amazon.in/dp/B0CK2B158Y",
+    "title": "Sano Canola Cooking Oil for Daily Use | Recommended for All Types of Cuisines | Lowest in Saturated Fat Content | Ideal for Health-Conscious Cooking | 5 Litre (Pack of 1) | Smart Cooking Choice",
+    "sap_code": "FG0000135",
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO CLASSIC 1L": {
+   "amazon": {
+    "id": "B0CCVF1XVS",
+    "url": "https://www.amazon.in/dp/B0CCVF1XVS",
+    "title": "Sano Extra Light Olive Oil 1 Litre | Product of Spain | Ideal for All Indian and Western Cuisines | Perfect for Cooking, Frying, Roasting, Grilling, and Baking | Versatile and Smart Cooking Oil",
+    "sap_code": "FG0000162",
+    "mrp": 2700,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO MUSTARD 1L": {
+   "amazon": {
+    "id": "B0C77PZ83B",
+    "url": "https://www.amazon.in/dp/B0C77PZ83B",
+    "title": "Sano Pure & Fresh Kachi Ghani Mustard Oil - 1 Litre Pet Bottle | High Pungency | Rich in Omega-3 | 100% Natural | Authentic Indian Cooking Oil | Boosts Heart Health",
+    "sap_code": "FG0000136",
+    "mrp": 235,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO MUSTARD 5L": {
+   "amazon": {
+    "id": "B0C77VSKBL",
+    "url": "https://www.amazon.in/dp/B0C77VSKBL",
+    "title": "Sano Pure and Aromatic Kachi Ghani Mustard Oil - 5L Pet Bottle, 100% Natural, Ideal for Cooking, Pickling, and Health Benefits - Edible Oil (Pack of 1)",
+    "sap_code": "FG0000137",
+    "mrp": 3750,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO SOYABEAN 1L": {
+   "amazon": {
+    "id": "B0C77V6LL7",
+    "url": "https://www.amazon.in/dp/B0C77V6LL7",
+    "title": "Sano Soyabean Oil 1 Ltr Pet Bottle - Pure, Natural, Nutrient-Rich Cooking Oil | Ideal for Healthy Delights in Cooking, Frying, and Baking | Perfect for Indian and International Cuisines",
+    "sap_code": "FG0000140",
+    "mrp": 225,
+    "sale_modal": 189,
+    "sale_min": 189,
+    "sale_max": 189,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO SOYABEAN 5L": {
+   "amazon": {
+    "id": "B0C3QYP96Z",
+    "url": "https://www.amazon.in/dp/B0C3QYP96Z",
+    "title": "Sano Soybean Oil 5 Ltr PET Bottle: All-natural, nutrient-rich cooking oil with a high omega-3 content and a low saturated fat content; ideal for delicious and healthful meals",
+    "sap_code": "FG0000141",
+    "mrp": 1450,
+    "sale_modal": 899,
+    "sale_min": 899,
+    "sale_max": 899,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO SUNFLOWER 1L": {
+   "amazon": {
+    "id": "B0C3QV7FV6",
+    "url": "https://www.amazon.in/dp/B0C3QV7FV6",
+    "title": "Sano Sunflower Oil 1 Litre Pet Bottle - Pure, Nutrient-Rich sunflower Cooking Oil with High Smoke Point - Ideal for Frying, Sautéing, and Baking(Pack of 1)",
+    "sap_code": "FG0000138",
+    "mrp": 540,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SANO SUNFLOWER 5L": {
+   "amazon": {
+    "id": "B0C7KSLVLB",
+    "url": "https://www.amazon.in/dp/B0C7KSLVLB",
+    "title": "sano Sunflower Oil 5 Ltr Pet Bottle Pure, Nutrient Rich Cooking Oil with High Smoke Point Ideal for Frying, Sautéing, and Baking All type of Cuisines|",
+    "sap_code": "FG0000139",
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "BLACK CARDAMOM 100G": {
+   "amazon": {
+    "id": "B0D7CXGP3D",
+    "url": "https://www.amazon.in/dp/B0D7CXGP3D",
+    "title": "Jivo Black Cardamom | Badi Elaichi Sabut Moti Kali Elaichi Whole Organic Black Cardamom | Perfect for Cooking, Baking & Seasoning | Adds Flavor to Dishes| No Artificial Colours or Preservatives - 100g",
+    "sap_code": "FG0000195",
+    "mrp": 300,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "BLACK PAPER 100G": {
+   "amazon": {
+    "id": "B0D8L8NR8Q",
+    "url": "https://www.amazon.in/dp/B0D8L8NR8Q",
+    "title": "Jivo Black Pepper Whole Natural Peppercorns | Premium Kali Mirch | Perfect for Cooking, Baking & Seasoning | No Artificial Colors, Preservatives, or Taste Enhancers | Pepper- 100g",
+    "sap_code": "FG0000196",
+    "mrp": 420,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CINNAMON BARK 100G": {
+   "amazon": {
+    "id": "B0D7CVQG35",
+    "url": "https://www.amazon.in/dp/B0D7CVQG35",
+    "title": "Jivo Organic Cinnamon Sticks Bark | Finest Dalchini Sticks (Cinnamon Quills) | Whole Spices Sourced from Premium Origins | No Artificial Colors or Preservatives | Pack for Cooking & Seasoning - 100g",
+    "sap_code": "FG0000198",
+    "mrp": 370,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CUMIN SEEDS 100G": {
+   "amazon": {
+    "id": "B0D8PMQCBV",
+    "url": "https://www.amazon.in/dp/B0D8PMQCBV",
+    "title": "Jivo Cumin Seeds | Fresh, Aromatic & Natural Spice for Cooking | No Added Colours or Preservatives | Perfect for Baking, Seasoning, and Flavoring | Gluten-Free, Whole Jeera Seeds - 100g",
+    "sap_code": "FG0000199",
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "GREEN CARDAMOM 100G": {
+   "amazon": {
+    "id": "B0D7CZD2PB",
+    "url": "https://www.amazon.in/dp/B0D7CZD2PB",
+    "title": "Jivo Green Cardamom 8mm Elaichi | Whole Natural Spices | No Artificial Colors or Preservatives | Distinctive Flavor & Aroma | Premium Idukki Cardamom for Cooking, Baking & Tea - 100g",
+    "sap_code": "FG0000197",
+    "mrp": 799,
+    "sale_modal": 466,
+    "sale_min": 466,
+    "sale_max": 466,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CLOVE 100G": {
+   "amazon": {
+    "id": "B0D7CZ3WYW",
+    "url": "https://www.amazon.in/dp/B0D7CZ3WYW",
+    "title": "Jivo Whole Clove (Laung) | 100 gm | No artificial colours or preservatives",
+    "sap_code": "FG0000308",
+    "mrp": 280,
+    "sale_modal": 209,
+    "sale_min": 209,
+    "sale_max": 209,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SUNFLOWER SEEDS 200G": {
+   "amazon": {
+    "id": "B0D8TT92SH",
+    "url": "https://www.amazon.in/dp/B0D8TT92SH",
+    "title": "Jivo Sunflower Seeds - 200g | Raw & Natural Sunflower Seeds for Snacking | Healthy Snack Option | Ideal for Weight Management & Antioxidants | Great for Diets & Nutrient-Rich Food| Packed with Protein",
+    "sap_code": "FG0000181",
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SUNFLOWER SEEDS 400G": {
+   "amazon": {
+    "id": "B0D8TRK651",
+    "url": "https://www.amazon.in/dp/B0D8TRK651",
+    "title": "Jivo Sunflower Seeds | Raw & Natural Sunflower Seeds for Healthy Snacking | High in Protein, Fiber & Antioxidants | Ideal for Weight Management, Clean Eating & Nutrient-Rich Diets - 400g",
+    "sap_code": "FG0000300",
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SUNFLOWER SEEDS 800G": {
+   "amazon": {
+    "id": "B0D8TPSX1V",
+    "url": "https://www.amazon.in/dp/B0D8TPSX1V",
+    "title": "Jivo Sunflower Seeds | Raw, Natural Sunflower Seeds for Healthy Snacking | High in Protein, Fiber & Antioxidants | Ideal for Weight Management, Diets & Clean Eating | Gluten-Free, Non-GMO - 800g",
+    "sap_code": "FG0000301",
+    "mrp": 4999,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "PUMPKIN SEEDS 200G": {
+   "amazon": {
+    "id": "B0D8TR7R3Y",
+    "url": "https://www.amazon.in/dp/B0D8TR7R3Y",
+    "title": "Jivo Raw Pumpkin Seeds | Healthy Snack for Breakfast | High in Fiber & Antioxidants | Ideal for Diets & Weight Management | Nutritious Superfood for Daily Wellness | Hygienically Packed - 200g",
+    "sap_code": "FG0000182",
+    "mrp": 1099,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "PUMPKIN SEEDS 400G": {
+   "amazon": {
+    "id": "B0D8TR1ZCG",
+    "url": "https://www.amazon.in/dp/B0D8TR1ZCG",
+    "title": "Jivo Raw Pumpkin Seeds | Healthy Snack for Breakfast | High in Fiber & Antioxidants | Ideal for Diets & Weight Management | Nutritious Superfood for Daily Wellness | Hygienically Packed - 400g",
+    "sap_code": "FG0000306",
+    "mrp": 1099,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "PUMPKIN SEEDS 800G": {
+   "amazon": {
+    "id": "B0D8TPCPLS",
+    "url": "https://www.amazon.in/dp/B0D8TPCPLS",
+    "title": "Jivo Raw Pumpkin Seeds | Healthy Snack for Breakfast | High in Fiber & Antioxidants | Ideal for Diets & Weight Management | Nutritious Superfood for Daily Wellness | Hygienically Packed - 800g",
+    "sap_code": "FG0000299",
+    "mrp": 1099,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "FLAX SEEDS 200G": {
+   "amazon": {
+    "id": "B0D8TPCV16",
+    "url": "https://www.amazon.in/dp/B0D8TPCV16",
+    "title": "Jivo Flax Seeds | Raw Alsi Seeds for Eating | High in Protein, Iron, & Dietary Fibre | Rich in Essential Nutrients | Ideal for Adding to Smoothies, Salads, Yogurt & Baking | Healthy Snack Option- 200g",
+    "sap_code": "FG0000179",
+    "mrp": 1099,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "FLAX SEEDS 400G": {
+   "amazon": {
+    "id": "B0D8TMZ523",
+    "url": "https://www.amazon.in/dp/B0D8TMZ523",
+    "title": "Jivo Flax Seeds | Raw Alsi Seeds for Smoothies, Hair Growth, Baking & More | Rich in Omega-3, Fiber, Protein & Essential Nutrients | 100% Natural, Vegan, Gluten-Free for Optimal Health - 400g",
+    "sap_code": "FG0000290",
+    "mrp": 599,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "FLAX SEEDS 800G": {
+   "amazon": {
+    "id": "B0D8TN9B9B",
+    "url": "https://www.amazon.in/dp/B0D8TN9B9B",
+    "title": "Jivo Organic Flax Seeds | Raw Alsi Seeds for Smoothies, Cereals, Baking & More | Rich in Omega-3, Fiber, Protein & Essential Nutrients | 100% Natural, Vegan, Gluten-Free for Optimal Health - 800g",
+    "sap_code": "FG0000298",
+    "mrp": 1099,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CHIA SEEDS 200G": {
+   "amazon": {
+    "id": "B0CRF3ZQWL",
+    "url": "https://www.amazon.in/dp/B0CRF3ZQWL",
+    "title": "Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management | Rich in Calcium, Protein & Fiber Omega 3 | Non GMO and fibre, Reusable | Antioxidant | Healthy Breakfast Snack 200g",
+    "sap_code": "FG0000165",
+    "mrp": 299,
+    "sale_modal": 99,
+    "sale_min": 99,
+    "sale_max": 99,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CHIA SEEDS 400G": {
+   "amazon": {
+    "id": "B0CRH5W2R7",
+    "url": "https://www.amazon.in/dp/B0CRH5W2R7",
+    "title": "Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management | Rich in Calcium, Protein & Fiber Omega 3 | Non GMO and fibre, Reusable | Antioxidant | Healthy Breakfast Snack 400g",
+    "sap_code": "FG0000166",
+    "mrp": 599,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "CHIA SEEDS 800G": {
+   "amazon": {
+    "id": "B0CRHR4KYS",
+    "url": "https://www.amazon.in/dp/B0CRHR4KYS",
+    "title": "Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management | Rich in Calcium, Protein & Fiber Omega 3 | Non GMO and fibre, Reusable | Antioxidant | Healthy Breakfast Snack 800g",
+    "sap_code": "FG0000167",
+    "mrp": 2600,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "QUINOA SEEDS 200G": {
+   "amazon": {
+    "id": "B0DGT6CK3P",
+    "url": "https://www.amazon.in/dp/B0DGT6CK3P",
+    "title": "Jivo Premium Quinoa Gluten Free | Gluten-Free | Saponin Free | High Protein & Fiber | Healthy Breakfast, Diet Food for Weight Management | 100% Wholegrain Cereal | Quinoa Jar 200g",
+    "sap_code": null,
+    "mrp": 199,
+    "sale_modal": 109,
+    "sale_min": 109,
+    "sale_max": 109,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "QUINOA SEEDS 400G": {
+   "amazon": {
+    "id": "B0DGTFLQMS",
+    "url": "https://www.amazon.in/dp/B0DGTFLQMS",
+    "title": "Jivo Premium Quinoa Gluten Free | Gluten-Free | Saponin Free | High Protein & Fiber | Healthy Breakfast, Diet Food for Weight Management | 100% Wholegrain Cereal | Quinoa Jar 400g",
+    "sap_code": null,
+    "mrp": 299,
+    "sale_modal": 169,
+    "sale_min": 169,
+    "sale_max": 169,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "QUINOA SEEDS 800G": {
+   "amazon": {
+    "id": "B0DGT6KQ4F",
+    "url": "https://www.amazon.in/dp/B0DGT6KQ4F",
+    "title": "Jivo Premium Quinoa Gluten Free | Gluten-Free | Saponin Free | High Protein & Fiber | Healthy Breakfast, Diet Food for Weight Management | 100% Wholegrain Cereal | Quinoa Jar 800g",
+    "sap_code": null,
+    "mrp": 399,
+    "sale_modal": 249,
+    "sale_min": 249,
+    "sale_max": 249,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "BASIL SEEDS 200G": {
+   "amazon": {
+    "id": "B0D8TN56P9",
+    "url": "https://www.amazon.in/dp/B0D8TN56P9",
+    "title": "Jivo Raw Basil Seeds for weight loss - 200gm | Sabja Seed, Takmuria Seeds 200g (Jar Pack) | High Fibre And Omega 3",
+    "sap_code": "FG0000180",
+    "mrp": 599,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "BASIL SEEDS 400G": {
+   "amazon": {
+    "id": "B0D8VZKFHG",
+    "url": "https://www.amazon.in/dp/B0D8VZKFHG",
+    "title": "Jivo Raw Basil Seeds for weight loss - 400gm | Sabja Seed, Takmuria Seeds 400g (Jar Pack) | High Fibre And Omega 3",
+    "sap_code": "FG0000296",
+    "mrp": 599,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "BASIL SEEDS 800G": {
+   "amazon": {
+    "id": "B0D8VZ1JLD",
+    "url": "https://www.amazon.in/dp/B0D8VZ1JLD",
+    "title": "Jivo Raw Basil Seeds for Weight Loss | Sabja Seeds, Tukmaria Seeds | High in Fiber, Omega-3 & Nutrients | Ideal for Smoothies, Drinks, and Baking | 100% Natural, Vegan, Gluten-Free - 800g",
+    "sap_code": "FG0000297",
+    "mrp": 599,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SODA 750ML": {
+   "amazon": {
+    "id": "B0D2KLSTFZ",
+    "url": "https://www.amazon.in/dp/B0D2KLSTFZ",
+    "title": "Jivo Extra Fizzy Soda, 750 ml, Soda (Pack of 1)",
+    "sap_code": "FG0000282",
+    "mrp": 695,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SODA LEMON 750ML": {
+   "amazon": {
+    "id": "B0DP36SDGD",
+    "url": "https://www.amazon.in/dp/B0DP36SDGD",
+    "title": "Jivo Fizzy Soda | Flavoured With Lemon 750ML | Carbonated Water | Zero Sugar, Zero Calories I Pack Of 1",
+    "sap_code": "FG0000231",
+    "mrp": 210,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SPRING WATER 750ML": {
+   "amazon": {
+    "id": "B0D2TVRMB6",
+    "url": "https://www.amazon.in/dp/B0D2TVRMB6",
+    "title": "Jivo DIet Fizzy Peach Natural Spring Water - Peach, 750ml (Pack of 1)",
+    "sap_code": "FG0000277",
+    "mrp": 1200,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "PUNJABI JEERA 160ML": {
+   "amazon": {
+    "id": "B0F9YVR47L",
+    "url": "https://www.amazon.in/dp/B0F9YVR47L",
+    "title": "Jivo Wheatgrass Punjabi Jeera Juice – 160ml (Pack of 24) | Tangy Cumin Flavored Refreshment | Blended with Fresh Wheatgrass Extract | Convenient PET Bottles | Suitable for Daily Hydration & Refreshing",
+    "sap_code": "FG0000293",
+    "mrp": 2585,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact",
+    "note": "Listing is a Pack of 24 (per the master's own amazon title); master mrp 240 looks per-bottle while listing prices are per-case — divide by 24 for per-unit comparison."
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "ROSEMARY LEAVES 150G": {
+   "amazon": {
+    "id": "B0DGTNDH9L",
+    "url": "https://www.amazon.in/dp/B0DGTNDH9L",
+    "title": "Jivo Rosemary Leaves Whole (150g) – Natural, No Preservatives or Additives, Ideal for Hair Growth, Herbal Tea, Seasoning, and Cooking | Salvia Rosmarinus",
+    "sap_code": null,
+    "mrp": 645,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "SAFFRON 1GMS": {
+   "amazon": {
+    "id": "B0FNDJBJPV",
+    "url": "https://www.amazon.in/dp/B0FNDJBJPV",
+    "title": "Jivo Pure Kashmiri Saffron | A+ Grade Kesar | Rich in Antioxidants | Boosts Immunity, Skin Glow & Overall Wellness",
+    "sap_code": null,
+    "mrp": 900,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "BLACK OLIVE 470G": {
+   "amazon": {
+    "id": "B0DS69LNFB",
+    "url": "https://www.amazon.in/dp/B0DS69LNFB",
+    "title": "Jivo Black Sliced Olives – 470g | Finest Olives from Egypt | Evenly Cut Black Olive Slices | Suitable for Pizza, Pasta, Salads & Wraps | Ready to Eat Snack Smart Choice",
+    "sap_code": "FG0000288",
+    "mrp": 330,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "COFFEE": {
+   "amazon": {
+    "id": "B0C8Z7SZG6",
+    "url": "https://www.amazon.in/dp/B0C8Z7SZG6",
+    "title": "Jivo Koffie Instant Smooth Premium Coffee 100 gm | Soluble Instant Coffee Powder | Easy to Prepare with Rich Aroma and Taste | Coffee for Daily Use",
+    "sap_code": "FG0000271",
+    "mrp": 350,
+    "sale_modal": 239,
+    "sale_min": 239,
+    "sale_max": 239,
+    "in_stock": true,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  },
+  "RICE 1KG": {
+   "amazon": {
+    "id": "B09ZLHZ1T7",
+    "url": "https://www.amazon.in/dp/B09ZLHZ1T7",
+    "title": "Jivo Long Grain Basmati Rice - 1kg | Ideal for Pulao, Biryani, and Fried Rice | Trusted for Daily Use | Jivo Basmati Rice | 1 KG Per Packet",
+    "sap_code": "FG0000201",
+    "mrp": 800,
+    "sale_modal": null,
+    "sale_min": null,
+    "sale_max": null,
+    "in_stock": false,
+    "method": "ID-ASIN",
+    "confidence": "exact"
+   },
+   "amazon-fresh": null,
+   "amazon-now": null
+  }
+ },
+ "unpriced": [
+  {
+   "platform": "amazon",
+   "id": "B0FJG5CFFD",
+   "url": "https://www.amazon.in/dp/B0FJG5CFFD",
+   "title": "Jivo KOFFIE | Instant Smooth Premium Coffee |50gm (Pack of 1)",
+   "mrp": 599,
+   "combo": false,
+   "internal_name": "COFFEE",
+   "note": "Coffee 50gm pack — master COFFEE is the 100gm pack (title says 100gm, mrp 350); no 50g master row"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DVYKNPD1",
+   "url": "https://www.amazon.in/dp/B0DVYKNPD1",
+   "title": "Jivo Zero Sugar Mango Healthy Wheatgrass 500Ml Pack Of 1",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "WG MANGO JUICE 500ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CYH9N7YW",
+   "url": "https://www.amazon.in/dp/B0CYH9N7YW",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice (Apple, Sugar Free, 200 ml)",
+   "mrp": 695,
+   "combo": false,
+   "internal_name": "APPLE 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CYHFFZXG",
+   "url": "https://www.amazon.in/dp/B0CYHFFZXG",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200 ml (Ginger Ale Sugar Free)",
+   "mrp": 695,
+   "combo": false,
+   "internal_name": "GINGER ALE 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CYHHP5XZ",
+   "url": "https://www.amazon.in/dp/B0CYHHP5XZ",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200ml (Mojito Sugar Free)",
+   "mrp": 480,
+   "combo": false,
+   "internal_name": "MOJITO 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DP33QGW3",
+   "url": "https://www.amazon.in/dp/B0DP33QGW3",
+   "title": "JIVO Healthy Wheatgrass Juice with Apple | Boosts Immunity & Detox | 200ml",
+   "mrp": 480,
+   "combo": false,
+   "internal_name": "APPLE 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DTZ2QJSD",
+   "url": "https://www.amazon.in/dp/B0DTZ2QJSD",
+   "title": "JIVO Healthy Wheatgrass Juice with Apple | Boosts Immunity & Detox | 200ml",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "APPLE 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DTZ2PX56",
+   "url": "https://www.amazon.in/dp/B0DTZ2PX56",
+   "title": "JIVO Healthy Wheatgrass Juice with Blue Berry Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": 421,
+   "combo": false,
+   "internal_name": "BLUEBERRY 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DP34VYBF",
+   "url": "https://www.amazon.in/dp/B0DP34VYBF",
+   "title": "JIVO Healthy Wheatgrass Juice with Blue Berry Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": 480,
+   "combo": false,
+   "internal_name": "BLUEBERRY 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B07H92SMCP",
+   "url": "https://www.amazon.in/dp/B07H92SMCP",
+   "title": "JIVO Canola Cold Pressed Edible Oil 5 Litres with 1 Litre | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines.",
+   "mrp": 2250,
+   "combo": false,
+   "internal_name": "CANOLA 5+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CGZS97ZX",
+   "url": "https://www.amazon.in/dp/B0CGZS97ZX",
+   "title": "Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use | Recommended by Indian Medical Association",
+   "mrp": 700,
+   "combo": false,
+   "internal_name": "CANOLA 2L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B09MJ3KLFP",
+   "url": "https://www.amazon.in/dp/B09MJ3KLFP",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice ( Cola , 250 ml (Pack of 6))",
+   "mrp": 4999,
+   "combo": true,
+   "internal_name": "COLA JUICE"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CM6BH1S6",
+   "url": "https://www.amazon.in/dp/B0CM6BH1S6",
+   "title": "Jivo Desi Ghee 1 Litre | Traditional Preparation from Desi Cow Milk | Suitable for Cooking, Frying & Baking | Authentic Aroma and Flavor | Ideal for Indian and Continental Recipes",
+   "mrp": 2500,
+   "combo": false,
+   "internal_name": "DESI GHEE 1L",
+   "note": "verifier WRONG verdict — stripped from dryrun match"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CM68YS7X",
+   "url": "https://www.amazon.in/dp/B0CM68YS7X",
+   "title": "Jivo Desi Ghee 500 ML | Traditional Preparation from Desi Cow Milk | Suitable for Cooking, Frying & Baking | Authentic Aroma and Flavor | Ideal for Indian and Continental Recipes",
+   "mrp": 849,
+   "combo": false,
+   "internal_name": "DESI GHEE 500G",
+   "note": "verifier WRONG verdict — stripped from dryrun match"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DFQ44438",
+   "url": "https://www.amazon.in/dp/B0DFQ44438",
+   "title": "Jivo Dry Fruits Gift Box - 200g SBS (50g Each of Cashews, Almonds, Pistachios, and Raisins) | Healthy Gift Hamper for Every Occasion | Diwali Gift Pack for Family, Friends, Corporate, and Office Gifts | Festive Celebration Combo Pack",
+   "mrp": 890,
+   "combo": true,
+   "internal_name": "DRY FRUITS 200G"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DFQ44RYH",
+   "url": "https://www.amazon.in/dp/B0DFQ44RYH",
+   "title": "Jivo Dry Fruits Gift Box Wooden- 400g (100g Each of Cashews, Almonds, Pistachios, and Raisins) | Healthy Gift Hamper for Every Occasion | Diwali Gift Pack for Family, Friends, Corporate, and Office Gifts | Festive Celebration Combo Pack",
+   "mrp": 890,
+   "combo": true,
+   "internal_name": "DRY FRUITS 400G"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DFPXMGF9",
+   "url": "https://www.amazon.in/dp/B0DFPXMGF9",
+   "title": "Jivo Dry Fruits Gift Box Golden - 400g (100g Each of Cashews, Almonds, Pistachios, and Raisins) | Healthy Gift Hamper for Every Occasion | Diwali Gift Pack for Family, Friends, Corporate, and Office Gifts | Festive Celebration Combo Pack",
+   "mrp": 890,
+   "combo": true,
+   "internal_name": "DRY FRUITS 400G"
+  },
+  {
+   "platform": "amazon",
+   "id": "B07WSJ45Q4",
+   "url": "https://www.amazon.in/dp/B07WSJ45Q4",
+   "title": "Jivo Extra Light Daily Cooking Olive Oil 1 Ltr (Pack of 2) | Rich Quality Healthy Cooking Oil for Indian Cuisine, Ideal for Frying, Roasting, and Baking",
+   "mrp": 2998,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 1+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B098XPFQ28",
+   "url": "https://www.amazon.in/dp/B098XPFQ28",
+   "title": "Jivo Extra Virgin Olive Oil, 2 Litres - Ideal for Dressings, Salads, Soups, Dips, and Marinades. Perfect for Healthy Cooking and Gourmet Delights",
+   "mrp": 2998,
+   "combo": false,
+   "internal_name": "EXTRA VIRGIN 1+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0C1V6DG9C",
+   "url": "https://www.amazon.in/dp/B0C1V6DG9C",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice (Jeera, 250 ml (Pack of 6)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "JEERA JUICE"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CSPMN88F",
+   "url": "https://www.amazon.in/dp/B0CSPMN88F",
+   "title": "Jivo Natural Mineral Water | Unprocessed & Sourced Directly from Himalayas | Non-Ro Mineral Water Bottle | Quick Hydration Solution | Natural Mineral 1L Bottle",
+   "mrp": 1800,
+   "combo": false,
+   "internal_name": "WATER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CST1ZYNY",
+   "url": "https://www.amazon.in/dp/B0CST1ZYNY",
+   "title": "Jivo - Mineral Water - 250ML",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "WATER 250ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BXWZQDTG",
+   "url": "https://www.amazon.in/dp/B0BXWZQDTG",
+   "title": "JIVO Canola Cold Press Oil,Cooking Oil 15 LTR | Cooking Oil for Daily use | Recommended by Indian Medical Association | (Pack of 1)",
+   "mrp": 2700,
+   "combo": false,
+   "internal_name": "CANOLA 15L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B09TWL9RFR",
+   "url": "https://www.amazon.in/dp/B09TWL9RFR",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice (lemon, 250 ml (Pack of 6))",
+   "mrp": 480,
+   "combo": true,
+   "internal_name": "LEMON JUICE"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DTZ2MQZW",
+   "url": "https://www.amazon.in/dp/B0DTZ2MQZW",
+   "title": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "WG MANGO JUICE 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DP336PTY",
+   "url": "https://www.amazon.in/dp/B0DP336PTY",
+   "title": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": 2800,
+   "combo": false,
+   "internal_name": "WG MANGO JUICE 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DM2G4YCC",
+   "url": "https://www.amazon.in/dp/B0DM2G4YCC",
+   "title": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1)",
+   "mrp": 480,
+   "combo": false,
+   "internal_name": "WG MANGO JUICE 500ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DTZ1YLRT",
+   "url": "https://www.amazon.in/dp/B0DTZ1YLRT",
+   "title": "JIVO Healthy Wheatgrass Juice with Mojito Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": 421,
+   "combo": false,
+   "internal_name": "MOJITO 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DP3388HP",
+   "url": "https://www.amazon.in/dp/B0DP3388HP",
+   "title": "JIVO Healthy Wheatgrass Juice with Mojito Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": 360,
+   "combo": false,
+   "internal_name": "MOJITO 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CGZQMJHY",
+   "url": "https://www.amazon.in/dp/B0CGZQMJHY",
+   "title": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 2 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| Mustard oil",
+   "mrp": 3750,
+   "combo": false,
+   "internal_name": "MUSTARD 2L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B09MHZLRSG",
+   "url": "https://www.amazon.in/dp/B09MHZLRSG",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice ( orange , 250 ml (Pack of 6))",
+   "mrp": 480,
+   "combo": true,
+   "internal_name": "ORANGE JUICE"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DTZ257V4",
+   "url": "https://www.amazon.in/dp/B0DTZ257V4",
+   "title": "JIVO Healthy Wheatgrass Juice with Rose Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "ROSE FLAVOR 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DP33FKCX",
+   "url": "https://www.amazon.in/dp/B0DP33FKCX",
+   "title": "JIVO Healthy Wheatgrass Juice with Rose Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml",
+   "mrp": 480,
+   "combo": false,
+   "internal_name": "ROSE FLAVOR 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0C65W794Z",
+   "url": "https://www.amazon.in/dp/B0C65W794Z",
+   "title": "Sano Pure Honey 1 kg | 100% Natural, Organic & Unadulterated | No Sugar Adulteration | Rich in Antioxidants | Healthy Sweetener for Tea & Desserts | Syed 1 Kg",
+   "mrp": 599,
+   "combo": false,
+   "internal_name": "SANO HONEY 1KG"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BZVBXP56",
+   "url": "https://www.amazon.in/dp/B0BZVBXP56",
+   "title": "Sano Pure Honey 500g | 100% Natural, Organic & Unadulterated | No Sugar Adulteration | Rich in Antioxidants | Healthy Sweetener for Tea & Desserts | Syed 500g (Pack of 1)",
+   "mrp": 599,
+   "combo": false,
+   "internal_name": "SANO HONEY 500G"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CJJ9S6J1",
+   "url": "https://www.amazon.in/dp/B0CJJ9S6J1",
+   "title": "Jivo Cold Pressed Chemical Free Sunflower Oil |For Roasting, Frying, Baking All types of Cuisines | High in Antioxidants, Tasteful and Healthy 2 Litre",
+   "mrp": 399,
+   "combo": false,
+   "internal_name": "SUNFLOWER 2L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0D5RFT1PS",
+   "url": "https://www.amazon.in/dp/B0D5RFT1PS",
+   "title": "JIVO Indian Citric Tonic Water (Pack Of 1 X 200Ml) | Premium G&T Mixer | Low Calorie Flavoured Drink | 100% Natural Ingredients",
+   "mrp": 210,
+   "combo": false,
+   "internal_name": "TONIC WATER 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FQCG4R9J",
+   "url": "https://www.amazon.in/dp/B0FQCG4R9J",
+   "title": "Jivo Dry Fruits Gift Box with Diya's | Roasted Cashews, Almonds | Gift Hamper for Diwali, Festivals, Family, Friends & Corporate Gifting.",
+   "mrp": 349,
+   "combo": false,
+   "internal_name": "GIFT BOX"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FQCG3Z6X",
+   "url": "https://www.amazon.in/dp/B0FQCG3Z6X",
+   "title": "Jivo Dry Fruits Gift Box | Roasted Cashews, Roasted Almonds with Black Raisins | Gift Hamper for Festivals, Family, Friends & Corporate Gifting.",
+   "mrp": 799,
+   "combo": false,
+   "internal_name": "GIFT BOX"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FQ62GQNL",
+   "url": "https://www.amazon.in/dp/B0FQ62GQNL",
+   "title": "Jivo Premium Dry Fruits Gift Box with Pure Kashmiri Saffron (Kesar) | Roasted Cashews,Almonds,Pistachios & Black Raisins | Gift Hamper for Festivals, Family, Friends & Corporate Gifting.",
+   "mrp": 399,
+   "combo": false,
+   "internal_name": "GIFT BOX"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FQC831P8",
+   "url": "https://www.amazon.in/dp/B0FQC831P8",
+   "title": "Jivo Premium Dry Fruits Gift Box with First Pressed Groundnut Oil | Roasted Cashews, Almonds, Pistachios & Black Raisins | Gift Hamper for Diwali, Festivals, Family, Friends & Corporate Gifting.",
+   "mrp": 2999,
+   "combo": false,
+   "internal_name": "GIFT BOX"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0F3XX13KN",
+   "url": "https://www.amazon.in/dp/B0F3XX13KN",
+   "title": "JIVO Jump Energy Drink, Zero Sugar 200ml",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "ENERGY DRINK 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0992GRH3Z",
+   "url": "https://www.amazon.in/dp/B0992GRH3Z",
+   "title": "Jivo Cold Pressed Chemical Free Sunflower Oil 1 Litre | Ideal for Roasting, Frying, Baking All Types of Cuisines | Healthy Cooking Oil for Daily Use | Pack of 2 Litres",
+   "mrp": 3750,
+   "combo": true,
+   "internal_name": "SUNFLOWER 1L",
+   "note": "Sunflower 1L Pack of 2 (catalog pack 2 LTR, combo) — no SUNFLOWER combo master row"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CQC1YFWL",
+   "url": "https://www.amazon.in/dp/B0CQC1YFWL",
+   "title": "Jivo Groundnut Oil | 5 + 1 Litre | Cold Pressed Groundnut Oil, Cold Pressed Oil, Peanut Oil, Ground Nut Oil, Natural Cooking Oil, Chemical Free (Pack of 2)",
+   "mrp": 3200,
+   "combo": true,
+   "internal_name": "GROUNDNUT 5+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B8ZYWC15",
+   "url": "https://www.amazon.in/dp/B0B8ZYWC15",
+   "title": "Jivo Canola Cold Press Edible Oil | Ideal for Roasting, Frying, Baking All type of Cuisines| Everyday Cooking Oil for Daily use (Pack of 3)- 1 Litre each",
+   "mrp": 1125,
+   "combo": true,
+   "internal_name": "CANOLA 1+1+1"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B7JJHPQ3",
+   "url": "https://www.amazon.in/dp/B0B7JJHPQ3",
+   "title": "JIVO Cold Pressed Soyabean Cooking Edible Oil 5 Litre with 1 Litre for Everyday Kitchen Use | Ideal for Roasting, Frying, Baking All Types of Cuisines | Healthy Cooking Oil for Daily Use | (Pack of 6 Litres)",
+   "mrp": 3750,
+   "combo": true,
+   "internal_name": "SOYABEAN 5+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B97QXPVW",
+   "url": "https://www.amazon.in/dp/B0B97QXPVW",
+   "title": "Jivo Extra Virgin Olive Oil 5 litre with 1Litre (Pack of 6L), 100% natural and cold pressed cooking oil, for Dressings, Salad and Soups, Dips & Marinades.",
+   "mrp": 9798,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 5+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CWNVJN3B",
+   "url": "https://www.amazon.in/dp/B0CWNVJN3B",
+   "title": "Jivo Gold Oil 1+1 Litre Pack | Blend of Rice Bran & Sunflower Oil | Refined Cooking Oil with Added Vitamins | Cholesterol-Free Edible Oil | Ideal for Deep Frying, Sautéing & Daily Cooking",
+   "mrp": 3750,
+   "combo": true,
+   "internal_name": "GOLD 1+1"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BHW94XRC",
+   "url": "https://www.amazon.in/dp/B0BHW94XRC",
+   "title": "Jivo Cold Press Canola Edible Oil, Soyabean & Sunflower Oil | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use |(1L Each) (Pack of 3 Litres)",
+   "mrp": 4999,
+   "combo": true,
+   "internal_name": "CANOLA 1L + SOYABEAN 1L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKSN43GK",
+   "url": "https://www.amazon.in/dp/B0BKSN43GK",
+   "title": "Jivo Cold Pressed Canola oil 1 Litre With Pomace Olive Oil 1L | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use | (Pack of 2L)",
+   "mrp": 1124,
+   "combo": true,
+   "internal_name": "CANOLA 1L + POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CQ5C7GWP",
+   "url": "https://www.amazon.in/dp/B0CQ5C7GWP",
+   "title": "Jivo Cold Pressed Groundnut Oil | Natural, Chemical-Free Peanut Oil | 1 Litre Each (Pack of 2) | Ideal for Healthy Cooking, Deep Frying, and Traditional Indian Recipes",
+   "mrp": 2000,
+   "combo": true,
+   "internal_name": "GROUNDNUT 1+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0917B9DCL",
+   "url": "https://www.amazon.in/dp/B0917B9DCL",
+   "title": "Jivo Pomace Edible Olive Oil Cooking Daily Use | Rich in MUFA | Low in Saturated Fat|| Recommendable for Roasting, Frying, Baking All type of Cuisines (Pack of 3) PET Bottles",
+   "mrp": 2247,
+   "combo": true,
+   "internal_name": "POMACE 1+1+1"
+  },
+  {
+   "platform": "amazon",
+   "id": "B09HKPSS96",
+   "url": "https://www.amazon.in/dp/B09HKPSS96",
+   "title": "JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "mrp": 3750,
+   "combo": true,
+   "internal_name": "MUSTARD 1L",
+   "note": "Mustard 1L Pack of 2 (catalog case_pack 2) — no MUSTARD 1+1L combo master row"
+  },
+  {
+   "platform": "amazon",
+   "id": "B08ZNM3KJK",
+   "url": "https://www.amazon.in/dp/B08ZNM3KJK",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre with Jivo Extra Light Olive Oil 1 Litre | Cooking Oil for Daily Use | Ideal for Roasting, Frying, Baking All Types of Cuisines.",
+   "mrp": 2475,
+   "combo": false,
+   "internal_name": "CANOLA 5L + EV 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CJCG1ZZ4",
+   "url": "https://www.amazon.in/dp/B0CJCG1ZZ4",
+   "title": "Sano Pomace Olive Oil 3L Pet Bottle - Ideal For Frying, Roasting, & Sauteing | Rich Flavor & High Smoke Point | Versatile Cooking Oil For Indian Cuisine | Healthy Cooking Oil (3 Litre).",
+   "mrp": 2997,
+   "combo": false,
+   "internal_name": "SANO POMACE 1L+1L+1L",
+   "note": "verifier WRONG verdict — stripped from dryrun match"
+  },
+  {
+   "platform": "amazon",
+   "id": "B07CM4Z12X",
+   "url": "https://www.amazon.in/dp/B07CM4Z12X",
+   "title": "Jivo Canola Oil Refined Edible Oil (1 L) - Pack of 6",
+   "mrp": 2250,
+   "combo": true,
+   "internal_name": "Jivo-Canola 1L Pack 6"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0G6RSM4NJ",
+   "url": "https://www.amazon.in/dp/B0G6RSM4NJ",
+   "title": "Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades",
+   "mrp": 700,
+   "combo": true,
+   "internal_name": "Extra Virgin Olive Oil 200ml (Pack 2)"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B7JJ7C9W",
+   "url": "https://www.amazon.in/dp/B0B7JJ7C9W",
+   "title": "JIVO Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres | Ideal for Roasting, Frying, and Baking | Healthy Cooking Oil for Daily Use (Pack of 2)",
+   "mrp": 450,
+   "combo": true,
+   "internal_name": "soyabean-1L+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B092JKPCGP",
+   "url": "https://www.amazon.in/dp/B092JKPCGP",
+   "title": "Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 1 LTR (Pet Bottle) | | Recommendable for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat (Pack of 2)",
+   "mrp": 7998,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CCKZWF5Z",
+   "url": "https://www.amazon.in/dp/B0CCKZWF5Z",
+   "title": "Jivo Cold Pressed Soaybean oil 5 Litre with Canola 2 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use (Pack of 3)",
+   "mrp": 1850,
+   "combo": true,
+   "internal_name": "Jivo-Soya Canola-5+1+1"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CJC38F8C",
+   "url": "https://www.amazon.in/dp/B0CJC38F8C",
+   "title": "Sano Pomace Olive Oil 2L Pet Bottle Ideal For Frying, Roasting & Sauteing Rich Flavour & High Smoke Point Versatile Cooking Edible Oil For Indian Cuisine.",
+   "mrp": 1999,
+   "combo": false,
+   "internal_name": "SANO POMACE 1L+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B098XRZ3BX",
+   "url": "https://www.amazon.in/dp/B098XRZ3BX",
+   "title": "Jivo Extra Virgin Olive Oil 1 Litre With Extra Light Olive Oil 1 Litre | Healthy Cooking Oils for Everyday Use | Ideal for Roasting, Frying, and Baking | Pack of 2 Litres",
+   "mrp": 3298,
+   "combo": true,
+   "internal_name": "EV 1 LTR + EL 1 LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FV8S8XT7",
+   "url": "https://www.amazon.in/dp/B0FV8S8XT7",
+   "title": "Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking – Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat",
+   "mrp": 2997,
+   "combo": false,
+   "internal_name": "Extra light olive oil 1+1+1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0F3XWNWV1",
+   "url": "https://www.amazon.in/dp/B0F3XWNWV1",
+   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200ml (Blueberry Sugar Free)",
+   "mrp": 421,
+   "combo": false,
+   "internal_name": "BLUEBERRY WHEATGRASS 200 ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B8ZM849L",
+   "url": "https://www.amazon.in/dp/B0B8ZM849L",
+   "title": "Jivo Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle) | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "mrp": 6099,
+   "combo": true,
+   "internal_name": "JIVO POMACE 5 + 2 LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B7JK8Y7X",
+   "url": "https://www.amazon.in/dp/B0B7JK8Y7X",
+   "title": "JIVO Soyabean Cooking Edible Oil Everyday Kitchen Use 5 Litre Each - Ideal for Roasting, Frying, and Baking All Types of Cuisines - Healthy Cooking Oil for Daily Use - Pack of 10 Litres",
+   "mrp": 2300,
+   "combo": false,
+   "internal_name": "SOYABEAN 5+5 LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GD7R36B9",
+   "url": "https://www.amazon.in/dp/B0GD7R36B9",
+   "title": "Jivo Kachi Ghani Mustard Oil (5L) + Makki Atta (500g) Combo | Traditionally Extracted Cold Pressed Sarson Oil | Zero Chemicals | High Smoke Point",
+   "mrp": 300,
+   "combo": true,
+   "internal_name": "MUSTARD 5LTR + MAKKI ATTA 500GMS"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B94D3S47",
+   "url": "https://www.amazon.in/dp/B0B94D3S47",
+   "title": "Jivo Pomace Cooking Olive Oil 5 Litre with Cold Pressed Canola oil 1 Litre | Recommended for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use |(Pack 6L)",
+   "mrp": 5374,
+   "combo": false,
+   "internal_name": "POMACE 5LTR + 1LTR CANOLA"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B945QDGY",
+   "url": "https://www.amazon.in/dp/B0B945QDGY",
+   "title": "Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Cooking Oil for Daily use | (Pack of 6L)",
+   "mrp": 6370,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 5LTR +1LTR CANOLA"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GF8V83FC",
+   "url": "https://www.amazon.in/dp/B0GF8V83FC",
+   "title": "Jivo Cold Pressed Kachi Ghani Mustard Oil 1L with Makki Atta 500g | Chemical Free Sarson Ka Tel | Traditional Taste & Nutrition | Ideal for Indian Cooking",
+   "mrp": 404,
+   "combo": false,
+   "internal_name": "MUSTARD 1LTR + MAKKI ATTA 500GMS",
+   "note": "verifier WRONG verdict — stripped from dryrun match"
+  },
+  {
+   "platform": "amazon",
+   "id": "B076S7HLGH",
+   "url": "https://www.amazon.in/dp/B076S7HLGH",
+   "title": "Jivo Canola Refined Edible Oils 5+2 Ltr",
+   "mrp": 2025,
+   "combo": true,
+   "internal_name": "CANOLA 5LTR + 2 LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BJDFHFYS",
+   "url": "https://www.amazon.in/dp/B0BJDFHFYS",
+   "title": "Jivo Cold Pressed Canola Oil 1L with Soyabean Oil 5L | Ideal for Roasting, Frying & Baking | Cooking Oil for Daily Use | (Pack of 6L)",
+   "mrp": 1525,
+   "combo": true,
+   "internal_name": "SOYABEAN 5LTR + CANOLA 1LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BWRC4F33",
+   "url": "https://www.amazon.in/dp/B0BWRC4F33",
+   "title": "Jivo Cold Pressed Canola Oil 5 Litre with Extra Virgin Olive Oil 1 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use.",
+   "mrp": 3449,
+   "combo": false,
+   "internal_name": "EXTRA VIRGIN 1LTR + CANOLA 5LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B8ZY57DC",
+   "url": "https://www.amazon.in/dp/B0B8ZY57DC",
+   "title": "Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle) | | Ideal for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat",
+   "mrp": 5500,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5LTR + 2LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CCVPCVQY",
+   "url": "https://www.amazon.in/dp/B0CCVPCVQY",
+   "title": "sano Pomace Olive Oil 5+1L- Ideal for Frying, Roasting & Sautéing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (Pack of 2)",
+   "mrp": 5994,
+   "combo": true,
+   "internal_name": "SANO POMACE 5+1LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B3XKKM8K",
+   "url": "https://www.amazon.in/dp/B0B3XKKM8K",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre Cooking Oil for Daily Use with Extra Light Olive Oil 2 Litre Everyday Cooking, Dressings, Salads, Soups, Dips & Marinades.",
+   "mrp": 3250,
+   "combo": false,
+   "internal_name": "CANOLA 5LTR + EXTRA LIGHT 2LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BHTGCPQ1",
+   "url": "https://www.amazon.in/dp/B0BHTGCPQ1",
+   "title": "Jivo Pomace Cooking Olive Oil Pack of 6 Litres (5L Tin with 1L Pet Bottle) | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "mrp": 6048,
+   "combo": true,
+   "internal_name": "JIVO POMACE 5LTR + 1LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0B96TXHR6",
+   "url": "https://www.amazon.in/dp/B0B96TXHR6",
+   "title": "Jivo Cold Pressed Canola Oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines | Cooking Oil for Daily use.",
+   "mrp": 1905,
+   "combo": false,
+   "internal_name": "CANOLA 5LTR + MUSTARD 1LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B09Y982VN7",
+   "url": "https://www.amazon.in/dp/B09Y982VN7",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre + Chemical-free Sunflower Oil 5 Litre | Cooking Oil for Daily use | Ideal for Roasting, Frying, Baking & All Types of Cuisines",
+   "mrp": 3000,
+   "combo": true,
+   "internal_name": "CANOLA 5LTR + SUNFLOWER 5LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BBVG469C",
+   "url": "https://www.amazon.in/dp/B0BBVG469C",
+   "title": "Jivo Kachi Ghani Mustard Daily Cooking Oil, Canola Cold Press Edible Oil & Sunflower Oil For Roasting, Frying, Baking All type of Cuisines 1L Each Pack of 3",
+   "mrp": 450,
+   "combo": true,
+   "internal_name": "CANOLA 1LTR + MUSTARD 1LTR + SUNFLOWER 1LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B09Y96DYZT",
+   "url": "https://www.amazon.in/dp/B09Y96DYZT",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre with Extra light Olive Oil 5 Litre |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association (Pack of 10 L)",
+   "mrp": 8149,
+   "combo": false,
+   "internal_name": "CANOLA 5LTR + EXTRA LIGHT 5LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0D6NFLL3M",
+   "url": "https://www.amazon.in/dp/B0D6NFLL3M",
+   "title": "JIVO Extra Virgin Coconut Oil 1 Litre | Multi-Purpose Cooking Oil | Ideal for Salad Dressing, Light Sautéing & Low-Heat Cooking | Zero Cholesterol & Trans Fat",
+   "mrp": 1400,
+   "combo": false,
+   "internal_name": "COCONUT 1+1"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GHRRY6C5",
+   "url": "https://www.amazon.in/dp/B0GHRRY6C5",
+   "title": "Jivo Winter Wellness Combo: Pure A2 Desi Cow Ghee 500 ML + Premium Makki Atta (500g) | Gluten-Free, Traditional Taste | Perfect for Makki Ki Roti",
+   "mrp": 899,
+   "combo": true,
+   "internal_name": "A2 500ML + MAKKI ATTA"
+  },
+  {
+   "platform": "amazon",
+   "id": "B09Y9C34J3",
+   "url": "https://www.amazon.in/dp/B09Y9C34J3",
+   "title": "Jivo Pomace Olive Oil 5 Litre & Canola Cold Press Edible Oil 5 Litre | Cooking Oil for Daily use and suitable for all types of cooking",
+   "mrp": 3299,
+   "combo": false,
+   "internal_name": "JIVO POMACE 5LTR + CANOLA 5LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GVFFSVH2",
+   "url": "https://www.amazon.in/dp/B0GVFFSVH2",
+   "title": "Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades",
+   "mrp": 800,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 200ML X 2"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GQTK19P6",
+   "url": "https://www.amazon.in/dp/B0GQTK19P6",
+   "title": "Jivo Premium Tea Leaves 250g (Pack of 3) | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea | Everyday Essential",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "JIVO TEA 250 GMS X 3"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0F9LDTVLN",
+   "url": "https://www.amazon.in/dp/B0F9LDTVLN",
+   "title": "JIVO Extra Virgin Coconut Oil | 500 ml+ 500 ml (Pack of 2) | Multi-Purpose Cold-Pressed Oil | Ideal for Salad Dressing, Light Sautéing & Low-Heat Cooking | Zero Cholesterol & Trans Fat Free",
+   "mrp": 1390,
+   "combo": true,
+   "internal_name": "COCONUT 500ML X 2"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BHT59BNQ",
+   "url": "https://www.amazon.in/dp/B0BHT59BNQ",
+   "title": "Jivo Canola Cold Pressed Oil 5 Litres with Soyabean Edible Cooking Oil 5 Litres | High in Omega-6 PUFA with Natural Antioxidant | Suitable for Daily Cooking, Roasting, Frying, Baking & All Types of Cuisines",
+   "mrp": 2800,
+   "combo": false,
+   "internal_name": "CANOLA 5 LTR + SOYABEAM 5 LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CPYBCZN5",
+   "url": "https://www.amazon.in/dp/B0CPYBCZN5",
+   "title": "Sano Canola Oil Cooking Oil for Daily Use | Recommended for All Types of Cuisines | 5L - Pack of 2 | Ideal Choice for Cooking and Versatile Culinary Needs",
+   "mrp": 4999,
+   "combo": true,
+   "internal_name": "SANO CANOLA 5 LTR X 2"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GQT98GTP",
+   "url": "https://www.amazon.in/dp/B0GQT98GTP",
+   "title": "Jivo Premium Tea Leaves 250g (Pack of 2) | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea | Everyday Essential",
+   "mrp": 400,
+   "combo": true,
+   "internal_name": "JIVO TEA 250 GMS X 2"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FFH8J5N9",
+   "url": "https://www.amazon.in/dp/B0FFH8J5N9",
+   "title": "Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",
+   "mrp": 2000,
+   "combo": false,
+   "internal_name": "JIVO GROUNDNUT 2LTR"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP2RZN6",
+   "url": "https://www.amazon.in/dp/B0CZP2RZN6",
+   "title": "Jivo Cold Pressed Chemical Free Sunflower Oil |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy| 1 Litre (Pack of 2)",
+   "mrp": 395,
+   "combo": true,
+   "internal_name": "SUNFLOWER 1L +1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP2HYJ5",
+   "url": "https://www.amazon.in/dp/B0CZP2HYJ5",
+   "title": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| (Pack of 2)",
+   "mrp": 510,
+   "combo": true,
+   "internal_name": "MUSTARD 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP3FZK9",
+   "url": "https://www.amazon.in/dp/B0CZP3FZK9",
+   "title": "Jivo Soyabean Oil | Chemical Free Cooking Oil for Roasting, Frying & Baking | Rich in Omega 3 & 6 | Light & Daily Use Oil | 1 Litre (Pack of 2)",
+   "mrp": 450,
+   "combo": true,
+   "internal_name": "SOYABEAN 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPKL94W",
+   "url": "https://www.amazon.in/dp/B0BGPKL94W",
+   "title": "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil",
+   "mrp": 2025,
+   "combo": false,
+   "internal_name": "CANOLA 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPDMZ5C",
+   "url": "https://www.amazon.in/dp/B0BGPDMZ5C",
+   "title": "Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking",
+   "mrp": 1625,
+   "combo": true,
+   "internal_name": "SUNFLOWER 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPGRP4Z",
+   "url": "https://www.amazon.in/dp/B0BGPGRP4Z",
+   "title": "Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter",
+   "mrp": 1505,
+   "combo": false,
+   "internal_name": "MUSTARD 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP46SJX",
+   "url": "https://www.amazon.in/dp/B0CZP46SJX",
+   "title": "Jivo Daily Cooking Pomace Olive Oil |1 Litre | Rich in MUFA | Low in Saturated Fat (Pack of 2)",
+   "mrp": 1298,
+   "combo": true,
+   "internal_name": "JIVO POMACE 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG7TPQWP",
+   "url": "https://www.amazon.in/dp/B0GG7TPQWP",
+   "title": "Jivo Rice Bran Oil 1 Litre Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Sautéing & Baking | Chemical-Free (Pack of 2)",
+   "mrp": 570,
+   "combo": true,
+   "internal_name": "RICE BRAN 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPLN64V",
+   "url": "https://www.amazon.in/dp/B0BGPLN64V",
+   "title": "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)",
+   "mrp": 3750,
+   "combo": true,
+   "internal_name": "CANOLA 5L + 1L+ 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ513GK",
+   "url": "https://www.amazon.in/dp/B0CNQ513GK",
+   "title": "Jivo Cold Pressed Sunflower & Soyabean Oil 1L Each (Pack of 2)",
+   "mrp": 500,
+   "combo": true,
+   "internal_name": "SUNFLOWER 1L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPL5YVH",
+   "url": "https://www.amazon.in/dp/B0BGPL5YVH",
+   "title": "Jivo Pomace Cooking Olive Oil 5 Litre Tin & Jivo Daily Cooking Pomace Olive Oil |1 Litre",
+   "mrp": 5648,
+   "combo": false,
+   "internal_name": "JIVO POMACE 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7T12L",
+   "url": "https://www.amazon.in/dp/B0BKQ7T12L",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Kachi Ghani mustard Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use, Ideal for all type of Cuisines |Lowest in Saturated Fat",
+   "mrp": 2900,
+   "combo": true,
+   "internal_name": "CANOLA 5L + MUSTARD 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG7LVH12",
+   "url": "https://www.amazon.in/dp/B0GG7LVH12",
+   "title": "Jivo First Pressed Yellow Mustard Oil (Pili Sarson) 1 Litre (Pack of 2) | Chemical Free Cooking Oil | Ideal for Frying, Roasting & Baking | Contains Omega-3 PUFA & Added Vitamins A & D",
+   "mrp": 790,
+   "combo": true,
+   "internal_name": "YELLOW MUSTARD 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG7QDSQ5",
+   "url": "https://www.amazon.in/dp/B0GG7QDSQ5",
+   "title": "Jivo Groundnut Oil 1 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vitamin A & D Fortified, Chemical-Free Ground Nut Oil 1L (Pack of 2)",
+   "mrp": 1120,
+   "combo": true,
+   "internal_name": "GROUNDNUT 1L +1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR554MRR",
+   "url": "https://www.amazon.in/dp/B0FR554MRR",
+   "title": "Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Vitamin A & D Fortified | for Frying, Roasting & Daily Use | Suitable for Everyday Kitchen Use",
+   "mrp": 1325,
+   "combo": true,
+   "internal_name": "GOLD 5L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPHDRJX",
+   "url": "https://www.amazon.in/dp/B0BGPHDRJX",
+   "title": "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)&Jivo Extra Light Olive Oil, 1L for Cooking",
+   "mrp": 3149,
+   "combo": false,
+   "internal_name": "CANOLA 5L + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPF9BXL",
+   "url": "https://www.amazon.in/dp/B0BGPF9BXL",
+   "title": "Jivo Canola Oil,1 Litre Cold Press & Canola Cold Press Edible Oil Pack of 2, 1 Litre each",
+   "mrp": 2700,
+   "combo": true,
+   "internal_name": "CANOLA 1L + 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPL58VC",
+   "url": "https://www.amazon.in/dp/B0BGPL58VC",
+   "title": "Jivo Extra Virgin Olive Oil, 1L &Jivo Extra Light Olive Oil, 1L for Cooking",
+   "mrp": 2498,
+   "combo": false,
+   "internal_name": "EXTRA VIRGIN 1L + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ571SB",
+   "url": "https://www.amazon.in/dp/B0CNQ571SB",
+   "title": "Jivo Kachi Ghani Mustard Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2)",
+   "mrp": 480,
+   "combo": true,
+   "internal_name": "MUSTARD 1L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CXJ54RRM",
+   "url": "https://www.amazon.in/dp/B0CXJ54RRM",
+   "title": "Jivo Cold Pressed Groundnut (Peanut) Oil 5 Litre + 1 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking",
+   "mrp": 3360,
+   "combo": true,
+   "internal_name": "GROUNDNUT 5L +1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP3G5KZ",
+   "url": "https://www.amazon.in/dp/B0CZP3G5KZ",
+   "title": "Jivo Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades. (Pack of 2)",
+   "mrp": 2998,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DFWBD79K",
+   "url": "https://www.amazon.in/dp/B0DFWBD79K",
+   "title": "Jivo So Olive Oil - 1L | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil | Healthy Lifestyle Edible Cooking Oil (Pack of 2)",
+   "mrp": 1300,
+   "combo": true,
+   "internal_name": "SO OLIVE 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ6PBQP",
+   "url": "https://www.amazon.in/dp/B0BKQ6PBQP",
+   "title": "JIVO Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre | Pack of 2 | Daily Cooking Oil, Recommended for Roasting, Frying, Baking All type of Cuisines|",
+   "mrp": 2600,
+   "combo": true,
+   "internal_name": "MUSTARD 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP2HPGL",
+   "url": "https://www.amazon.in/dp/B0CZP2HPGL",
+   "title": "JIVO Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre | Multipurpose Use, Good for Salad Keto Diet Dressing Zero Cholesterol Trans Fat Chemical Free. (Pack of 2)",
+   "mrp": 1400,
+   "combo": true,
+   "internal_name": "COCONUT 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR4ZLYCF",
+   "url": "https://www.amazon.in/dp/B0FR4ZLYCF",
+   "title": "Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Rice Bran Oil 5 Litre Combo Pack | Chemical Free | Vitamin A & D Fortified | Versatile Use | Suitable for Frying, Roasting & Everyday Cooking Oil",
+   "mrp": 1700,
+   "combo": true,
+   "internal_name": "RICE BRAN 5L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR5BLRH6",
+   "url": "https://www.amazon.in/dp/B0FR5BLRH6",
+   "title": "Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack | Cooking Oil for Everyday Use | Light Texture & Versatile for Frying, Roasting & Daily Cooking",
+   "mrp": 1710,
+   "combo": true,
+   "internal_name": "RICE BRAN 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPL9464",
+   "url": "https://www.amazon.in/dp/B0BGPL9464",
+   "title": "Jivo Daily Cooking Pomace Olive Oil |1 Litre &Jivo Extra Light Olive Oil, 1L for Cooking",
+   "mrp": 2148,
+   "combo": false,
+   "internal_name": "EXTRA LIGHT 1L + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ5CPL7",
+   "url": "https://www.amazon.in/dp/B0BKQ5CPL7",
+   "title": "Jivo Cold Pressed Canola oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1L | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "mrp": 1905,
+   "combo": true,
+   "internal_name": "CANOLA 5L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7QQY5",
+   "url": "https://www.amazon.in/dp/B0BKQ7QQY5",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo pomace Olive Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use and suitable for all type of cooking | Lowest in Saturated Fat",
+   "mrp": 6649,
+   "combo": true,
+   "internal_name": "CANOLA 5L + JIVO POMACE 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0C2446FW4",
+   "url": "https://www.amazon.in/dp/B0C2446FW4",
+   "title": "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1) & Jivo Extra Virgin Olive Oil 1 litre (Pack of 1)",
+   "mrp": 2649,
+   "combo": false,
+   "internal_name": "CANOLA 5L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5BHGX",
+   "url": "https://www.amazon.in/dp/B0CNQ5BHGX",
+   "title": "Jivo Cold Pressed Sunflower & Canola Oil 1L Each (Pack of 2)",
+   "mrp": 650,
+   "combo": true,
+   "internal_name": "CANOLA 1L + SUNFLOWER 1L",
+   "note": "verifier WRONG verdict — stripped from dryrun match"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ73H9M",
+   "url": "https://www.amazon.in/dp/B0CNQ73H9M",
+   "title": "Jivo Kachi Ghani Mustard Oil & Cold Pressed Sunflower Oil 1L Each (Pack of 2)",
+   "mrp": 530,
+   "combo": true,
+   "internal_name": "MUSTARD 1L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CXJ4RJP8",
+   "url": "https://www.amazon.in/dp/B0CXJ4RJP8",
+   "title": "Jivo Gold Refined Oil |Blend of Rice Bran Oil & Sunflower Oil | 5+1 Litre",
+   "mrp": 1275,
+   "combo": true,
+   "internal_name": "GOLD 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP31DXK",
+   "url": "https://www.amazon.in/dp/B0CZP31DXK",
+   "title": "Jivo Extra Virgin Olive Oil 1 litre | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades [Pack of 2 (1L Pet Bottle)]",
+   "mrp": 1998,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR4ZD4BL",
+   "url": "https://www.amazon.in/dp/B0FR4ZD4BL",
+   "title": "Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Rice Bran Oil 5 Litre Combo Pack | Vitamin A & D Fortified Chemical Free | Aroma & Light Texture | Suitable for Frying, Roasting & Everyday Cooking",
+   "mrp": 1680,
+   "combo": true,
+   "internal_name": "RICE BRAN 5L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR55QFJG",
+   "url": "https://www.amazon.in/dp/B0FR55QFJG",
+   "title": "Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking",
+   "mrp": 1305,
+   "combo": true,
+   "internal_name": "GOLD 5L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR597DPK",
+   "url": "https://www.amazon.in/dp/B0FR597DPK",
+   "title": "Jivo Cold Pressed Canola Oil 5 Litre & Cold Pressed Groundnut (Peanut) Oil 5 Litre Combo Pack | Chemical Free Vitamin A & D Fortified | Suitable for Frying, Roasting & Everyday Cooking",
+   "mrp": 4450,
+   "combo": true,
+   "internal_name": "CANOLA 5L + GOUNDNUT 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPDDXMV",
+   "url": "https://www.amazon.in/dp/B0BGPDDXMV",
+   "title": "Jivo Kachi Ghani Mustard Oil & Cold Pressed Canola Oil 1L Each (Pack of 2)",
+   "mrp": 630,
+   "combo": true,
+   "internal_name": "CANOLA 1L+ MUSTARD 1L",
+   "note": "verifier WRONG verdict — stripped from dryrun match"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPHG2KN",
+   "url": "https://www.amazon.in/dp/B0BGPHG2KN",
+   "title": "Jivo Extra Virgin Olive Oil 5 Litres & Extra Virgin Olive Oil, 1L",
+   "mrp": 8998,
+   "combo": false,
+   "internal_name": "EXTRA VIRGIN 5L +1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPHR5B4",
+   "url": "https://www.amazon.in/dp/B0BGPHR5B4",
+   "title": "Jivo Olive Oil Extra Light Daily Cooking 5 Litre &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil",
+   "mrp": 6874,
+   "combo": false,
+   "internal_name": "EXTRA LIGHT 5L + CANOLA 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPJMN5W",
+   "url": "https://www.amazon.in/dp/B0BGPJMN5W",
+   "title": "Jivo Extra Virgin Olive Oil 5 litres, 100% natural and cold pressed cooking oil & Marinades.&Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN)",
+   "mrp": 14498,
+   "combo": false,
+   "internal_name": "EXTRA LIGHT 5L + EXTRA VIRGIN 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BGPMHY6S",
+   "url": "https://www.amazon.in/dp/B0BGPMHY6S",
+   "title": "Jivo Extra Light Olive Oil, 1L for Cooking, & Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN)",
+   "mrp": 7998,
+   "combo": false,
+   "internal_name": "EXTRA LIGHT 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ4B6C4",
+   "url": "https://www.amazon.in/dp/B0BKQ4B6C4",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre with Jivo Extra light Olive Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association | Lowest in Saturated Fat",
+   "mrp": 8149,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5L + CANOLA 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ58HBT",
+   "url": "https://www.amazon.in/dp/B0BKQ58HBT",
+   "title": "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Chemical-free Sunflower Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association",
+   "mrp": 3000,
+   "combo": true,
+   "internal_name": "CANOLA 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ59RHB",
+   "url": "https://www.amazon.in/dp/B0BKQ59RHB",
+   "title": "Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "mrp": 8374,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 5L + CANOLA 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ6S25F",
+   "url": "https://www.amazon.in/dp/B0BKQ6S25F",
+   "title": "Jivo Canola Cold Press Edible Oil 1 Litre + Jivo Extra light Olive Oil 1 Litre | Pack of 2 | Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association",
+   "mrp": 1874,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 1L + CANOLA 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7CT6F",
+   "url": "https://www.amazon.in/dp/B0BKQ7CT6F",
+   "title": "Jivo Cold Pressed Canola oil 5 Litre With Pomace Olive Oil 1L | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "mrp": 2299,
+   "combo": true,
+   "internal_name": "CANOLA 5L + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7GXMR",
+   "url": "https://www.amazon.in/dp/B0BKQ7GXMR",
+   "title": "Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Cold Pressed Canola oil 1 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |(Pack 6L)",
+   "mrp": 5374,
+   "combo": false,
+   "internal_name": "JIVO POMACE 5L + CANOLA 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7HMF7",
+   "url": "https://www.amazon.in/dp/B0BKQ7HMF7",
+   "title": "Jivo Extra light olive oil 5 Litre with Extra Virgin olive oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",
+   "mrp": 7498,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7SQRW",
+   "url": "https://www.amazon.in/dp/B0BKQ7SQRW",
+   "title": "Jivo Canola Cold Press Edible Oil, Extra Virgin Olive Oil & Kachi Ghani mustard Oil 1Litre Each | Healthy Cooking Oil for Daily use, Ideal for all Cuisines | Lowest in Saturated Fat(Pack of 3 Litres)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 1L + CANOLA 1L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7W3V8",
+   "url": "https://www.amazon.in/dp/B0BKQ7W3V8",
+   "title": "Jivo Extra Light Olive Oil 1 Litre + JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+   "mrp": 1754,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 1L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ7W42G",
+   "url": "https://www.amazon.in/dp/B0BKQ7W42G",
+   "title": "Jivo Extra light Olive Oil, Extra Virgin Olive Oil & Pomace Olive Oil (1L Each)|Healthy Cooking Oil for Daily use| Lowest in Saturated Fat, Chemical free (Pack of 3 Litres)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 1L + EXTRA LIGHT 1L + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ8YQNH",
+   "url": "https://www.amazon.in/dp/B0BKQ8YQNH",
+   "title": "Jivo Canola Cold Press Edible Oil, Kachi Ghani mustard Oil & Chemical Free Cold Pressed Sunflower Oil (5L Each) | |Healthy Cooking for Daily use | Organic & natural Oil (15 Litres)",
+   "mrp": 4250,
+   "combo": false,
+   "internal_name": "CANOLA 5L + MUSTARD 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0BKQ99TCH",
+   "url": "https://www.amazon.in/dp/B0BKQ99TCH",
+   "title": "Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Extra light olive oil 5 Litre |Pack of 2 | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+   "mrp": 11498,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5L +POMACE 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ3HH9Q",
+   "url": "https://www.amazon.in/dp/B0CNQ3HH9Q",
+   "title": "Jivo Kachi Ghani Mustard Oil 5L & Cold Pressed Canola Oil 1L Lowest in Saturated Fat (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "MUSTARD 5L + CANOLA 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ3HH9T",
+   "url": "https://www.amazon.in/dp/B0CNQ3HH9T",
+   "title": "Jivo Cold Pressed Canola Oil 5L & Soyabean Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 5L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ3W3NT",
+   "url": "https://www.amazon.in/dp/B0CNQ3W3NT",
+   "title": "Jivo Kachi Ghani Mustard Oil & Pomace Olive Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "MUSTARD 1L + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ45LQH",
+   "url": "https://www.amazon.in/dp/B0CNQ45LQH",
+   "title": "Jivo Extra Virgin Olive Oil 5L & Cold Pressed Soyabean Oil 1L (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 5L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ488XQ",
+   "url": "https://www.amazon.in/dp/B0CNQ488XQ",
+   "title": "Jivo Cold Pressed Kachi Ghani Mustard Oil 5L & Extra Light Olive Oil 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "MUSTARD 5L + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4DGW8",
+   "url": "https://www.amazon.in/dp/B0CNQ4DGW8",
+   "title": "Jivo Cold Pressed Canola & Soyabean Oil 1L Each (Pack of 2)",
+   "mrp": 600,
+   "combo": true,
+   "internal_name": "CANOLA 1L + SOYABEAN 1L",
+   "note": "verifier WRONG verdict — stripped from dryrun match"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4GQVS",
+   "url": "https://www.amazon.in/dp/B0CNQ4GQVS",
+   "title": "Jivo Cold Pressed Kachi Ghani Mustard Oil 5L & Pomace Olive Oil 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "MUSTARD 5L + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4M3QY",
+   "url": "https://www.amazon.in/dp/B0CNQ4M3QY",
+   "title": "Jivo Cold Pressed Sunflower Oil 5L & Kachi Ghani Mustard Oil 1L Recommendable for Roasting, Frying, Baking All type of Cuisines (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SUNFLOWER 5L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4R13X",
+   "url": "https://www.amazon.in/dp/B0CNQ4R13X",
+   "title": "Jivo Kachi Ghani Mustard Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "MUSTARD 1L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4R4L5",
+   "url": "https://www.amazon.in/dp/B0CNQ4R4L5",
+   "title": "Jivo Extra Virgin Olive Oil 5L & Cold Pressed Chemical Free Sunflower Oil 1L |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy|(Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 5L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4T15N",
+   "url": "https://www.amazon.in/dp/B0CNQ4T15N",
+   "title": "Jivo Cold Pressed Sunflower Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SUNFLOWER 1L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4WKB6",
+   "url": "https://www.amazon.in/dp/B0CNQ4WKB6",
+   "title": "Jivo Cold Pressed Soyabean Oil 5L & Extra Light Olive Oil 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SOYABEAN 5L + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4XFWY",
+   "url": "https://www.amazon.in/dp/B0CNQ4XFWY",
+   "title": "Jivo Kachi Ghani Mustard Oil 5L & Cold Pressed Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "MUSTARD 5L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ4Y5YV",
+   "url": "https://www.amazon.in/dp/B0CNQ4Y5YV",
+   "title": "Jivo Cold Pressed Sunflower Oil 5L & Extra Light Olive Oil 1L for Cooking Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SUNFLOWER 5L + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ52ZDF",
+   "url": "https://www.amazon.in/dp/B0CNQ52ZDF",
+   "title": "Jivo Cold Pressed Canola Oil 5L & Extra Light Olive Oil 1L Ideal for all type of Cuisines (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 5L + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ57XLJ",
+   "url": "https://www.amazon.in/dp/B0CNQ57XLJ",
+   "title": "Jivo Daily Cooking Pomace Olive Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "JIVO POMACE 1L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ58RTY",
+   "url": "https://www.amazon.in/dp/B0CNQ58RTY",
+   "title": "Jivo Cold Pressed Soyabean Oil 5L & 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SOYABEAN 5L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5BHNC",
+   "url": "https://www.amazon.in/dp/B0CNQ5BHNC",
+   "title": "Jivo Cold Pressed Soyabean Oil 5L & Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 L (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SOYABEAN 5L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5F6BF",
+   "url": "https://www.amazon.in/dp/B0CNQ5F6BF",
+   "title": "Jivo Daily Cooking Pomace Olive Oil & Cold Pressed Canola Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "JIVO POMACE 1L + CANOLA 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5G2RK",
+   "url": "https://www.amazon.in/dp/B0CNQ5G2RK",
+   "title": "Jivo Cold Pressed Canola Oil 5L & Extra Virgin Olive Oil 1L for Cooking Dressings, Salad, and Soups, Dips & Marinades (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 5L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5GQ59",
+   "url": "https://www.amazon.in/dp/B0CNQ5GQ59",
+   "title": "Jivo Cold Pressed Soyabean Oil & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SOYABEAN 1L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5HMY5",
+   "url": "https://www.amazon.in/dp/B0CNQ5HMY5",
+   "title": "Jivo Cold Pressed Soyabean Oil 5L & Extra Virgin Olive Oil Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SOYABEAN 5L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5J8RW",
+   "url": "https://www.amazon.in/dp/B0CNQ5J8RW",
+   "title": "Jivo Cold Pressed Canola & Extra Virgin Olive Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 1L + EXTRA VIRGIN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5V3TQ",
+   "url": "https://www.amazon.in/dp/B0CNQ5V3TQ",
+   "title": "Jivo Extra Light Olive Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 1L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ5WGHK",
+   "url": "https://www.amazon.in/dp/B0CNQ5WGHK",
+   "title": "Jivo Extra Light Daily Cooking Oil 5L & Cold Pressed Soyabean Oil 1L (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ62FL7",
+   "url": "https://www.amazon.in/dp/B0CNQ62FL7",
+   "title": "Jivo Extra Light Olive Oil & Cold Pressed Sunflower Oil 1 Litre Each (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 1L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ62GN8",
+   "url": "https://www.amazon.in/dp/B0CNQ62GN8",
+   "title": "Jivo Cold Pressed Sunflower Oil 5L & Soayabean Oil 1L (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SUNFLOWER 5L + SOYABEAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ63CC5",
+   "url": "https://www.amazon.in/dp/B0CNQ63CC5",
+   "title": "Jivo Cold Pressed Sunflower Oil 5L & Pomace Olive Oil Rich in MUFA | Low in Saturated Fat (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SUNFLOWER 5L + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ66LHZ",
+   "url": "https://www.amazon.in/dp/B0CNQ66LHZ",
+   "title": "Jivo Cold Pressed Canola Oil 5L & Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 5L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ6DJRV",
+   "url": "https://www.amazon.in/dp/B0CNQ6DJRV",
+   "title": "Jivo Cold Pressed Sunflower Oil 5L & Canola Cooking Oil for Daily use Lowest in Saturated Fat 1L (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "SUNFLOWER 5L + CANOLA 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ6FGJY",
+   "url": "https://www.amazon.in/dp/B0CNQ6FGJY",
+   "title": "Jivo Extra Virgin Olive Oil 5L & Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 5L + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ6JFJR",
+   "url": "https://www.amazon.in/dp/B0CNQ6JFJR",
+   "title": "Jivo Extra Virgin Olive Oil 5L & Daily Cooking Pomace Olive Oil Rich in MUFA | Low in Saturated Fat (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 5L + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ6QH98",
+   "url": "https://www.amazon.in/dp/B0CNQ6QH98",
+   "title": "Jivo Extra Light Daily Cooking Oil 5L+1L Recommendable for Roasting, Frying, Baking All type of Cuisines| (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ6SBJB",
+   "url": "https://www.amazon.in/dp/B0CNQ6SBJB",
+   "title": "Jivo Extra Light Daily Cooking Oil 5L & Kachi Ghani Mustard Oil 1L Recommendable for Roasting, Frying, Baking All type of Cuisines(Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5L + MUSTARD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CNQ6TBWG",
+   "url": "https://www.amazon.in/dp/B0CNQ6TBWG",
+   "title": "Jivo Extra Light Daily Cooking Oil 5L & Cold Pressed Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "EXTRA LIGHT 5L + SUNFLOWER 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DFY6MYNL",
+   "url": "https://www.amazon.in/dp/B0DFY6MYNL",
+   "title": "Jivo So Olive Oil - 5+1 Liter | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil (Pack of 2)",
+   "mrp": 1950,
+   "combo": true,
+   "internal_name": "SO OLIVE 5L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0DQ48N3JC",
+   "url": "https://www.amazon.in/dp/B0DQ48N3JC",
+   "title": "JIVO Soyabean Cooking Oil 5 Ltr (Pack of 2)",
+   "mrp": 2200,
+   "combo": true,
+   "internal_name": "SOYABEAN 5L + 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR488C7L",
+   "url": "https://www.amazon.in/dp/B0FR488C7L",
+   "title": "Jivo Cold Pressed Sunflower Oil 5L & Rice Bran Health Oil 1L",
+   "mrp": 1635,
+   "combo": false,
+   "internal_name": "SUNFLOWER 5L + RICE BRAN 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR48BGK9",
+   "url": "https://www.amazon.in/dp/B0FR48BGK9",
+   "title": "JIVO Soyabean Cooking Oil 5L & Rice Bran Health Oil 5L",
+   "mrp": 2525,
+   "combo": false,
+   "internal_name": "SOYABEAN 5L + RICE BRAN 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR4X61SQ",
+   "url": "https://www.amazon.in/dp/B0FR4X61SQ",
+   "title": "Jivo Extra Light Olive Oil 2L & 1L",
+   "mrp": 4298,
+   "combo": false,
+   "internal_name": "EXTRA LIGHT 2L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR4Z3THL",
+   "url": "https://www.amazon.in/dp/B0FR4Z3THL",
+   "title": "Jivo Rice Bran Health Oil 5L & Gold Premium Refined Oil 5L",
+   "mrp": 1650,
+   "combo": false,
+   "internal_name": "RICE BRAN 5L + GOLD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR4Z7Z4P",
+   "url": "https://www.amazon.in/dp/B0FR4Z7Z4P",
+   "title": "Jivo Kachi Ghani Mustard Oil 5L & Gold Refined Oil 5L",
+   "mrp": 2300,
+   "combo": false,
+   "internal_name": "MUSTARD 5L + GOLD 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR4ZJ9WV",
+   "url": "https://www.amazon.in/dp/B0FR4ZJ9WV",
+   "title": "JIVO Soyabean Cooking Oil 5L & Gold Refined Oil 5L",
+   "mrp": 2150,
+   "combo": false,
+   "internal_name": "SOYABEAN 5L + GOLD 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR4ZK68G",
+   "url": "https://www.amazon.in/dp/B0FR4ZK68G",
+   "title": "Jivo Gold Refined Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "GOLD 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR54HCCH",
+   "url": "https://www.amazon.in/dp/B0FR54HCCH",
+   "title": "JIVO Canola Cold Pressed Oil 5L & Rice Bran Health Oil 5L",
+   "mrp": 3075,
+   "combo": false,
+   "internal_name": "CANOLA 5L + RICE BRAN 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR54SZNG",
+   "url": "https://www.amazon.in/dp/B0FR54SZNG",
+   "title": "Jivo Groundnut Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "mrp": 4150,
+   "combo": false,
+   "internal_name": "GROUNDNUT 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR54Z89Q",
+   "url": "https://www.amazon.in/dp/B0FR54Z89Q",
+   "title": "Jivo Rice Bran Health Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "mrp": 2775,
+   "combo": false,
+   "internal_name": "RICE BRAN 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR55SDXS",
+   "url": "https://www.amazon.in/dp/B0FR55SDXS",
+   "title": "Jivo Cold Pressed Sunflower Oil 5L & Gold Premium Refined Oil 5L",
+   "mrp": 1575,
+   "combo": false,
+   "internal_name": "SUNFLOWER 5L + GOLD 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR55SGLN",
+   "url": "https://www.amazon.in/dp/B0FR55SGLN",
+   "title": "Jivo Groundnut Oil 5L & Kachi Ghani Mustard Oil 5L",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "GROUNDNUT 5L + MUSTARD 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR55SK65",
+   "url": "https://www.amazon.in/dp/B0FR55SK65",
+   "title": "Jivo Rice Bran Health Oil 1L & Kachi Ghani Mustard Oil 5L",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "RICE BRAN 1L + MUSTARD 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR55TBPH",
+   "url": "https://www.amazon.in/dp/B0FR55TBPH",
+   "title": "Jivo Gold Refined Oil 5L & Rice Bran Health Oil 5L",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "GOLD 5L + RICE BRAN 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR58JFSW",
+   "url": "https://www.amazon.in/dp/B0FR58JFSW",
+   "title": "JIVO Soyabean Cooking Oil 5L & Kachi Ghani Mustard Oil 5L",
+   "mrp": 2350,
+   "combo": false,
+   "internal_name": "SOYABEAN 5L + MUSTARD 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR59TGXR",
+   "url": "https://www.amazon.in/dp/B0FR59TGXR",
+   "title": "Jivo Extra Light Olive Oil 5L & 2L",
+   "mrp": 9298,
+   "combo": false,
+   "internal_name": "EXTRA LIGHT 5L + 2L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR5B6NMY",
+   "url": "https://www.amazon.in/dp/B0FR5B6NMY",
+   "title": "JIVO Soyabean Cooking Oil 5L & Cold Pressed Sunflower Oil 5L",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "SOYABEAN 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FR5GDQZM",
+   "url": "https://www.amazon.in/dp/B0FR5GDQZM",
+   "title": "Jivo Rice Bran Health Oil 5L & Kachi Ghani Mustard Oil 5L",
+   "mrp": 2675,
+   "combo": false,
+   "internal_name": "RICE BRAN 5L + MUSTARD 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG72R1YG",
+   "url": "https://www.amazon.in/dp/B0GG72R1YG",
+   "title": "Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Sunflower Seeds 200 g | High Protein & Antioxidants | Healthy Snacking for Diet, Weight Management & Everyday Wellness (Combo Pack)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 1L + SUNFLOWER SEEDS 200GM"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG72YVQ1",
+   "url": "https://www.amazon.in/dp/B0GG72YVQ1",
+   "title": "Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Pumpkin Seeds 200 g | High Fiber & Antioxidants | Nutritious Superfood for Diet, Weight Management & Everyday Cooking (Combo Pack)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 1L + PUMPKIN SEEDS 200GM"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG7CRBSC",
+   "url": "https://www.amazon.in/dp/B0GG7CRBSC",
+   "title": "Jivo Cold Pressed Canola Oil 1 L for Daily Cooking + Raw Basil Seeds (Sabja) 200 g | High Fibre & Omega 3 | Ideal for Frying, Baking & Weight Management (Combo Pack)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "CANOLA 1L + BASIL SEEDS 200GM"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG7QM7LY",
+   "url": "https://www.amazon.in/dp/B0GG7QM7LY",
+   "title": "Jivo Extra Virgin Olive Oil 200 ML Pet Bottle | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil | Ideal use for Dressings, Salad and Soups, Dips & Marinades.",
+   "mrp": 598,
+   "combo": false,
+   "internal_name": "EXTRA VIRGIN 200ML + 200ML"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GG7Z3Y9W",
+   "url": "https://www.amazon.in/dp/B0GG7Z3Y9W",
+   "title": "Jivo First Pressed Sesame Oil | 1L Bottle | Gingelly Oil | Contains MUFA (oleic acid) and Omega-6 PUFA (linoleic acid) | Natural Antioxidants (Lignans) | Ideal for Cooking (Pack of 2)",
+   "mrp": 1200,
+   "combo": true,
+   "internal_name": "SESAME 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GH6JG7KZ",
+   "url": "https://www.amazon.in/dp/B0GH6JG7KZ",
+   "title": "Jivo Extra Virgin Olive Oil 200ml Pet Bottle + Pomace Olive Oil 1 Litre | Imported from Spain | Rich in MUFA | Low Saturated Fat | Ideal for Cooking, Frying & Salads (Combo Pack)",
+   "mrp": 948,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 200ML + JIVO POMACE 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GH6NDVBS",
+   "url": "https://www.amazon.in/dp/B0GH6NDVBS",
+   "title": "Jivo Extra Virgin Olive Oil 200ml Pet Bottle + Pomace Olive Oil 5 Litre | Imported from Spain | Rich in MUFA | Low Saturated Fat | Ideal for Daily Cooking, Frying & Salads (Combo Pack)",
+   "mrp": 5298,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 200ML + JIVO POMACE 5L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GH79RRNC",
+   "url": "https://www.amazon.in/dp/B0GH79RRNC",
+   "title": "Jivo Extra Virgin Olive Oil 200 ml & Extra Light Olive Oil 1 Litre | Imported from Spain | Low Saturated Fat | Rich in Vitamin E & Antioxidants | Ideal for Cooking, Salads & Dressings (Combo Pack)",
+   "mrp": 1798,
+   "combo": true,
+   "internal_name": "EXTRA VIRGIN 200ML + EXTRA LIGHT 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GWZXCFR6",
+   "url": "https://www.amazon.in/dp/B0GWZXCFR6",
+   "title": "Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil | Natural Antioxidants | 1 Litre Pack (Pack of 4)",
+   "mrp": 900,
+   "combo": true,
+   "internal_name": "GOLD 1L + 1L + 1L + 1L"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GQLH813C",
+   "url": "https://www.amazon.in/dp/B0GQLH813C",
+   "title": "Jivo Premium Tea Leaves 250g | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea | Everyday Essential",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "JIVO TEA 250 GMS"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP48PGR",
+   "url": "https://www.amazon.in/dp/B0CZP48PGR",
+   "title": "SANO Pomace Olive Oil 1L Pet Bottle - Ideal for Frying, Roasting & Sautéing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (1L) (Pack of 2)",
+   "mrp": 1998,
+   "combo": true,
+   "internal_name": "SANO POMACE 1+1"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP4DS1Z",
+   "url": "https://www.amazon.in/dp/B0CZP4DS1Z",
+   "title": "Sano Canola Oil Healthy Cooking Oil for Daily use|Recommended by for all type of Cuisines|Lowest in Saturated Fat- 1L (Pack of 2)",
+   "mrp": 950,
+   "combo": true,
+   "internal_name": "SANO CANOLA 1+1"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GZ7PXVF8",
+   "url": "https://www.amazon.in/dp/B0GZ7PXVF8",
+   "title": "Jivo Punjabi Shikanji Wheatgrass Juice | Nimbu Shikanji Masala Drink | Natural Summer Refreshment 160ml (Pack of 24)",
+   "mrp": null,
+   "combo": true,
+   "internal_name": "Jivo Punjabi Shikanji"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0GZB4ZQV3",
+   "url": "https://www.amazon.in/dp/B0GZB4ZQV3",
+   "title": "Jivo Natural Mineral Water | Himalayan Origin | Non-RO & Unprocessed | Non-Carbonated & Additive-Free Packaged Water for clean hydration | 500 ml Bottle",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "JIVO WATER"
+  },
+  {
+   "platform": "amazon-fresh",
+   "id": "B0FR5BLRH6",
+   "url": "https://www.amazon.in/dp/B0FR5BLRH6",
+   "title": "Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack",
+   "mrp": 1710,
+   "combo": true,
+   "internal_name": "RICE BRAN 5L + 1L"
+  },
+  {
+   "platform": "amazon-fresh",
+   "id": "B0BKQ6PBQP",
+   "url": "https://www.amazon.in/dp/B0BKQ6PBQP",
+   "title": "Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre",
+   "mrp": 2600,
+   "combo": false,
+   "internal_name": "MUSTARD 5L + SUNFLOWER 5L"
+  },
+  {
+   "platform": "amazon-fresh",
+   "id": "B0BGPGRP4Z",
+   "url": "https://www.amazon.in/dp/B0BGPGRP4Z",
+   "title": "Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter",
+   "mrp": 1505,
+   "combo": false,
+   "internal_name": "MUSTARD 5L + 1L"
+  },
+  {
+   "platform": "amazon-fresh",
+   "id": "B0GZZS8J7Q",
+   "url": "https://www.amazon.in/dp/B0GZZS8J7Q",
+   "title": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre",
+   "mrp": 540,
+   "combo": false,
+   "internal_name": null
+  },
+  {
+   "platform": "amazon-fresh",
+   "id": "B0GG7QDSQ5",
+   "url": "https://www.amazon.in/dp/B0GG7QDSQ5",
+   "title": "Jivo Groundnut Oil 1 Litre",
+   "mrp": 1120,
+   "combo": false,
+   "internal_name": "GROUNDNUT 1L +1L"
+  },
+  {
+   "platform": "amazon-now",
+   "id": "B0DM2G4YCC",
+   "url": "https://www.amazon.in/dp/B0DM2G4YCC",
+   "title": "Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) Mango",
+   "mrp": null,
+   "combo": false,
+   "internal_name": "WG MANGO JUICE 500ML"
+  }
+ ],
+ "review": [
+  {
+   "platform": "amazon",
+   "id": "B0C1ZHRZDF",
+   "title": "JIVO Raw Unroasted Chia Seeds For High Protein | Omega 3 & Fiber For Weight Loss Management | Healthy Snacks | Rich in Calcium 250grm",
+   "candidate": "CHIA SEEDS 200G",
+   "reason": "ID-CATALOG join (catalog pack 200 GMS, sap FG0000165) but listing mrp 1099 vs master mrp 299 (3.7x). Possibly a multipack or stale listing MRP; slot held by ID-ASIN B0CRF3ZQWL (mrp 299)."
+  },
+  {
+   "platform": "amazon",
+   "id": "B0917BJZQ2",
+   "title": "Jivo Pomace Olive Oil, 1L (Pack of 2) for Cooking, Recommendable for Roasting Dressings Salad and Soups, Dips & Marinades Healthy Oil for Daily use Baking All type of Cuisines.",
+   "candidate": "JIVO POMACE 2L",
+   "reason": "Catalog item name says JIVO POMACE 2L with pack '1+1 LTR' (sap FG0000320), i.e. the catalog treats the 1L-pack-of-2 as this SKU, but the master amazon title joins the single 2L bottle B0C4FFYSLV (which holds the slot). Composition 2x1L vs 2L bottle + mrp 1498 vs 1600 — needs a human call on which listing is the official JIVO POMACE 2L."
+  },
+  {
+   "platform": "amazon",
+   "id": "B0FDFWHNHK",
+   "title": "JIVO Cold Pressed Yellow Mustard Oil 1L | Pili Sarson Oil for Cooking | Naturally Cholesterol-Free, Chemical-Free | Ideal for Roasting, Frying, Baking | Pure Mustard Oil for All Cuisines",
+   "candidate": "YELLOW MUSTARD 1L",
+   "reason": "ID-CATALOG join (catalog pack 1 LTR, sap FG0000328) but listing mrp 2175 vs master mrp 375 (5.8x) — likely an undetected multipack (title truncated). Slot held by ID-ASIN B0FF9P7XVX."
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CZP26VVN",
+   "title": "Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L)",
+   "candidate": "CANOLA 1+1L",
+   "reason": "Verifier-confirmed CORRECT ('Pack of 2L' = 2x1L canola, mrp 750 = master 750) but it is a DUPLICATE listing: the mapping slot is held by the ID-ASIN join B0152TWWSQ. Keep as a known secondary listing of CANOLA 1+1L."
+  },
+  {
+   "platform": "amazon-fresh",
+   "id": "B01IA0XK6W",
+   "title": "Jivo Cooking Oil - Canola Oil, 1L Bottle",
+   "candidate": "CANOLA 1L",
+   "reason": "Verifier-confirmed CORRECT (Canola 1L bottle, mrp 375 = master 375) but a DUPLICATE listing: the amazon-fresh slot is held by the ID-ASIN join B09MJ6QDX7. Keep as a known secondary listing of CANOLA 1L on fresh."
+  }
+ ]
+}

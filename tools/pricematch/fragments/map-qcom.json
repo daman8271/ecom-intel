@@ -1,0 +1,748 @@
+{
+ "family": "qcom",
+ "mappings": {
+  "A2 GHEE 500ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "A2 GHEE 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CANOLA 1L": {
+   "zepto": null,
+   "blinkit": {
+    "id": "407851",
+    "url": "https://blinkit.com/prn/jivo-cold-pressed-canola-oil/prid/407851",
+    "title": "Jivo Cold Pressed Canola Oil",
+    "mrp": 375,
+    "sale_modal": 260,
+    "sale_min": 250,
+    "sale_max": 375,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact",
+    "note": "identity verified (v2 CORRECT); prid owner-blessed from master sheet BLINKIT URL"
+   }
+  },
+  "CANOLA 1L POUCH": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CANOLA 1+1L": {
+   "zepto": {
+    "id": "50b56b7f-3d9f-45c7-8161-c2327e8db652",
+    "url": "https://www.zepto.com/pn/jivo-cold-press-canola-oil-combo-bottle/pvid/50b56b7f-3d9f-45c7-8161-c2327e8db652",
+    "title": "Jivo Cold Press Canola Oil Combo | Bottle",
+    "mrp": 750,
+    "sale_modal": 485,
+    "sale_min": 485,
+    "sale_max": 520,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact",
+    "note": "combo 1L x 2 matches master CANOLA 1+1L; mrp 750 exact"
+   },
+   "blinkit": null
+  },
+  "CANOLA 3L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CANOLA 4L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CANOLA 5L": {
+   "zepto": {
+    "id": "c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe",
+    "url": "https://www.zepto.com/pn/p/pvid/c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe",
+    "title": "Jivo Canola Cold Pressed Edible Oil | Cooking Oil",
+    "mrp": 1650,
+    "sale_modal": 1584,
+    "sale_min": 1193,
+    "sale_max": 1617,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored"
+   },
+   "blinkit": {
+    "id": "406593",
+    "url": "https://blinkit.com/prn/jivo-cold-pressed-canola-oil-5-l/prid/406593",
+    "title": "Jivo Cold Pressed Canola Oil (",
+    "mrp": 1650,
+    "sale_modal": 1193,
+    "sale_min": 1193,
+    "sale_max": 1650,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact",
+    "note": "identity verified (v2 CORRECT); prid owner-blessed from master sheet BLINKIT URL"
+   }
+  },
+  "EXTRA LIGHT 500ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "EXTRA LIGHT 1L": {
+   "zepto": {
+    "id": "2300d5e1-ccd1-46ab-990d-aa7fee80bc5d",
+    "url": "https://www.zepto.com/pn/jivo-extra-light-olive-oil/pvid/2300d5e1-ccd1-46ab-990d-aa7fee80bc5d",
+    "title": "Jivo Extra Light Olive Oil",
+    "mrp": 1499,
+    "sale_modal": 499,
+    "sale_min": 499,
+    "sale_max": 499,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": {
+    "id": "406592",
+    "url": "https://blinkit.com/prn/jivo-extra-light-olive-oil/prid/406592",
+    "title": "Jivo Extra Light Olive Oil",
+    "mrp": 1499,
+    "sale_modal": 624,
+    "sale_min": 620,
+    "sale_max": 708,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact",
+    "note": "identity verified (v2 CORRECT); prid owner-blessed from master sheet BLINKIT URL"
+   }
+  },
+  "EXTRA LIGHT 2L": {
+   "zepto": {
+    "id": "29e72c8c-7ff6-46e2-9721-ca4e9f612e98",
+    "url": "https://www.zepto.com/pn/jivo-extra-light-olive-oil/pvid/29e72c8c-7ff6-46e2-9721-ca4e9f612e98",
+    "title": "Jivo Extra Light Olive Oil",
+    "mrp": 2799,
+    "sale_modal": 1135,
+    "sale_min": 1135,
+    "sale_max": 1135,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": {
+    "id": "545244",
+    "url": "https://blinkit.com/prn/jivo-extra-light-olive-oil/prid/545244",
+    "title": "Jivo Extra Light Olive Oil",
+    "mrp": 2799,
+    "sale_modal": 1135,
+    "sale_min": 1135,
+    "sale_max": 1339,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact",
+    "note": "identity verified (v2 CORRECT); prid owner-blessed from master sheet BLINKIT URL"
+   }
+  },
+  "EXTRA LIGHT 3L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "EXTRA LIGHT 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "JIVO POMACE 1L": {
+   "zepto": {
+    "id": "ac9a7dd8-489b-4475-a14d-27ae393a5505",
+    "url": "https://www.zepto.com/pn/jivo-pomace-olive-oil/pvid/ac9a7dd8-489b-4475-a14d-27ae393a5505",
+    "title": "Jivo Pomace Olive Oil",
+    "mrp": 1049,
+    "sale_modal": 379,
+    "sale_min": 379,
+    "sale_max": 379,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": {
+    "id": "528706",
+    "url": "https://blinkit.com/prn/jivo-pomace-olive-oil/prid/528706",
+    "title": "Jivo Pomace Olive Oil",
+    "mrp": 1049,
+    "sale_modal": 379,
+    "sale_min": 314,
+    "sale_max": 485,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact",
+    "note": "identity verified (v2 CORRECT); prid owner-blessed from master sheet BLINKIT URL"
+   }
+  },
+  "JIVO POMACE 2L": {
+   "zepto": {
+    "id": "8eedf6ff-d36c-4313-88e4-6aa571372f46",
+    "url": "https://www.zepto.com/pn/jivo-daily-pomace-olive-oil/pvid/8eedf6ff-d36c-4313-88e4-6aa571372f46",
+    "title": "Jivo Daily Pomace Olive Oil",
+    "mrp": 1449,
+    "sale_modal": 947,
+    "sale_min": 930,
+    "sale_max": 959,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact",
+    "note": "listing mrp 1449 vs master 1600 (owner-blessed pvid; live MRP differs)"
+   },
+   "blinkit": null
+  },
+  "POMACE 3L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "JIVO POMACE 5L": {
+   "zepto": {
+    "id": "a81945f0-43ac-4970-82b4-c6c8986ee9ae",
+    "url": "https://www.zepto.com/pn/jivo-pomace-olive-oil/pvid/a81945f0-43ac-4970-82b4-c6c8986ee9ae",
+    "title": "Jivo Pomace Olive Oil",
+    "mrp": 4999,
+    "sale_modal": 2474,
+    "sale_min": 2076,
+    "sale_max": 2474,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": {
+    "id": "407561",
+    "url": "https://blinkit.com/prn/jivo-pomace-olive-oil/prid/407561",
+    "title": "Jivo Pomace Olive Oil",
+    "mrp": 4999,
+    "sale_modal": 1950,
+    "sale_min": 1950,
+    "sale_max": 2267,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact",
+    "note": "identity verified (v2 CORRECT); prid owner-blessed from master sheet BLINKIT URL"
+   }
+  },
+  "EXTRA VIRGIN 200ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "EXTRA VIRGIN 250ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "EXTRA VIRGIN 500ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "EXTRA VIRGIN 1L": {
+   "zepto": {
+    "id": "5d186472-6fe2-4643-af2f-2f9cd773986d",
+    "url": "https://www.zepto.com/pn/jivo-extra-virgin-olive-oil-bottle/pvid/5d186472-6fe2-4643-af2f-2f9cd773986d",
+    "title": "Jivo Extra Virgin Olive Oil | Bottle",
+    "mrp": 1799,
+    "sale_modal": 934,
+    "sale_min": 934,
+    "sale_max": 1764,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact",
+    "note": "listing mrp 1799 vs master 1499 (owner-blessed pvid; live MRP differs)"
+   },
+   "blinkit": null
+  },
+  "EXTRA VIRGIN 2L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "EXTRA VIRGIN 3L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "EXTRA VIRGIN 5L": {
+   "zepto": {
+    "id": "c80ef4de-b2c3-4fb4-984b-4cb29b33db33",
+    "url": "https://www.zepto.com/pn/jivo-extra-virgin-cooking-olive-oil/pvid/c80ef4de-b2c3-4fb4-984b-4cb29b33db33",
+    "title": "Jivo Extra Virgin Cooking Olive Oil",
+    "mrp": 7999,
+    "sale_modal": 7920,
+    "sale_min": 4541,
+    "sale_max": 7920,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": null
+  },
+  "GROUNDNUT 1L": {
+   "zepto": {
+    "id": "41367ef4-80d9-4819-bbae-d1806c184f5c",
+    "url": "https://www.zepto.com/pn/jivo-groundnut-peanut-cold-pressed-oil-healthy-cooking-oil/pvid/41367ef4-80d9-4819-bbae-d1806c184f5c",
+    "title": "Jivo Groundnut (Peanut) Cold Pressed Oil | Healthy Cooking Oil",
+    "mrp": 560,
+    "sale_modal": 199,
+    "sale_min": 199,
+    "sale_max": 199,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact",
+    "note": "listing mrp modal 560 (1 store shows 400) vs master 400 (owner-blessed pvid; live MRP differs)"
+   },
+   "blinkit": null
+  },
+  "GROUNDNUT 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "COCONUT 200ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "COCONUT 500ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "COCONUT 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SO OLIVE 1L": {
+   "zepto": {
+    "id": "dc9c5857-5d89-45c7-895a-373097239ff7",
+    "url": "https://www.zepto.com/pn/jivo-so-olive-blend-of-rice-bran-and-olive-oil/pvid/dc9c5857-5d89-45c7-895a-373097239ff7",
+    "title": "Jivo So-Olive Blend Of Rice Bran and Olive Oil",
+    "mrp": 325,
+    "sale_modal": 258,
+    "sale_min": 257,
+    "sale_max": 322,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": null
+  },
+  "SO OLIVE 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "YELLOW MUSTARD 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "YELLOW MUSTARD 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SESAME OIL 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "RICE BRAN 1L": {
+   "zepto": {
+    "id": "4acb73bc-1e89-47d8-8625-05e6a34b698b",
+    "url": "https://www.zepto.com/pn/p/pvid/4acb73bc-1e89-47d8-8625-05e6a34b698b",
+    "title": "Jivo Rice Bran Daily Cooking Oil",
+    "mrp": 285,
+    "sale_modal": 184,
+    "sale_min": 183,
+    "sale_max": 283,
+    "in_stock": false,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored"
+   },
+   "blinkit": null
+  },
+  "RICE BRAN 4L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "RICE BRAN 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SUNFLOWER 1L": {
+   "zepto": {
+    "id": "06c8f55b-13a5-4d9b-8990-a418e63c89ad",
+    "url": "https://www.zepto.com/pn/jivo-sunflower-cold-pressed-oil-healthy-cooking-oil/pvid/06c8f55b-13a5-4d9b-8990-a418e63c89ad",
+    "title": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil",
+    "mrp": 275,
+    "sale_modal": 192,
+    "sale_min": 182,
+    "sale_max": 192,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": {
+    "id": "jivo-cold-pressed-sunflower-oil-1l",
+    "url": null,
+    "title": "Jivo Cold Pressed Sunflower Oil",
+    "mrp": 275,
+    "sale_modal": 207,
+    "sale_min": 192,
+    "sale_max": 220,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "prid unrecoverable: blinkit scraper captures card innerText only (no product links), no raw artifacts on disk, no owner URL in master sheet"
+   }
+  },
+  "SUNFLOWER 3L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SUNFLOWER 4L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SUNFLOWER 5L": {
+   "zepto": {
+    "id": "3df8a5f6-fb0a-43d9-92ea-8098fda9253d",
+    "url": "https://www.zepto.com/pn/p/pvid/3df8a5f6-fb0a-43d9-92ea-8098fda9253d",
+    "title": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil",
+    "mrp": 1350,
+    "sale_modal": 976,
+    "sale_min": 976,
+    "sale_max": 1350,
+    "in_stock": false,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored"
+   },
+   "blinkit": null
+  },
+  "MUSTARD 1L POUCH": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "MUSTARD 1L": {
+   "zepto": {
+    "id": "89804a83-79f3-45c6-b940-9c395451dffa",
+    "url": "https://www.zepto.com/pn/jivo-kachi-ghani-mustard-sarson-cold-pressed-oil-healthy-cooking-oil/pvid/89804a83-79f3-45c6-b940-9c395451dffa",
+    "title": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil",
+    "mrp": 255,
+    "sale_modal": 181,
+    "sale_min": 179,
+    "sale_max": 181,
+    "in_stock": true,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": {
+    "id": "jivo-kachi-ghani-cold-pressed-mustard-oil-1l",
+    "url": null,
+    "title": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
+    "mrp": 255,
+    "sale_modal": 171,
+    "sale_min": 166,
+    "sale_max": 171,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "prid unrecoverable: blinkit scraper captures card innerText only, no raw artifacts on disk, no owner URL in master sheet"
+   }
+  },
+  "MUSTARD 3L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "MUSTARD 4L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "MUSTARD 5L": {
+   "zepto": {
+    "id": "275d43f8-2da4-4d9e-8873-e04fcaf5c073",
+    "url": "https://www.zepto.com/pn/p/pvid/275d43f8-2da4-4d9e-8873-e04fcaf5c073",
+    "title": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil",
+    "mrp": 1250,
+    "sale_modal": 960,
+    "sale_min": 873,
+    "sale_max": 989,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored"
+   },
+   "blinkit": {
+    "id": "jivo-kachi-ghani-cold-pressed-mustard-oil-5l",
+    "url": null,
+    "title": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
+    "mrp": 1250,
+    "sale_modal": 868,
+    "sale_min": 868,
+    "sale_max": 885,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "prid unrecoverable: blinkit scraper captures card innerText only, no raw artifacts on disk, no owner URL in master sheet"
+   }
+  },
+  "SOYABEAN 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SOYABEAN 1L POUCH": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SOYABEAN 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "GOLD 1L": {
+   "zepto": {
+    "id": "bc1af3d1-2a14-4296-b38e-e05ba43c3170",
+    "url": "https://www.zepto.com/pn/jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil/pvid/bc1af3d1-2a14-4296-b38e-e05ba43c3170",
+    "title": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil",
+    "mrp": 225,
+    "sale_modal": 169,
+    "sale_min": 168,
+    "sale_max": 225,
+    "in_stock": false,
+    "method": "ID-PVID",
+    "confidence": "exact"
+   },
+   "blinkit": null
+  },
+  "GOLD 5L": {
+   "zepto": {
+    "id": "40bd2571-3734-4503-84b7-bbe87a3818c3",
+    "url": "https://www.zepto.com/pn/p/pvid/40bd2571-3734-4503-84b7-bbe87a3818c3",
+    "title": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil",
+    "mrp": 1050,
+    "sale_modal": 909,
+    "sale_min": 909,
+    "sale_max": 1050,
+    "in_stock": false,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "anchored",
+    "note": "verify_results v2 verdict applied: title says Gold blend; listing mrp 1050 vs master GOLD 5L 1049 (Rs.1 rounding delta); NOT RICE BRAN 5L (master 1425)"
+   },
+   "blinkit": null
+  },
+  "SANO CLASSIC 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO POMACE 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO POMACE 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO CANOLA 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO CANOLA 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO CLASSIC 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO MUSTARD 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO MUSTARD 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO SOYABEAN 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO SOYABEAN 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO SUNFLOWER 1L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SANO SUNFLOWER 5L": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "BLACK CARDAMOM 100G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "BLACK PAPER 100G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CINNAMON BARK 100G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CUMIN SEEDS 100G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "GREEN CARDAMOM 100G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CLOVE 100G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SUNFLOWER SEEDS 200G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SUNFLOWER SEEDS 400G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SUNFLOWER SEEDS 800G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "PUMPKIN SEEDS 200G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "PUMPKIN SEEDS 400G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "PUMPKIN SEEDS 800G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "FLAX SEEDS 200G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "FLAX SEEDS 400G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "FLAX SEEDS 800G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CHIA SEEDS 200G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CHIA SEEDS 400G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "CHIA SEEDS 800G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "QUINOA SEEDS 200G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "QUINOA SEEDS 400G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "QUINOA SEEDS 800G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "BASIL SEEDS 200G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "BASIL SEEDS 400G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "BASIL SEEDS 800G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SODA 750ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SODA LEMON 750ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SPRING WATER 750ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "PUNJABI JEERA 160ML": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "ROSEMARY LEAVES 150G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "SAFFRON 1GMS": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "BLACK OLIVE 470G": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "COFFEE": {
+   "zepto": null,
+   "blinkit": null
+  },
+  "RICE 1KG": {
+   "zepto": null,
+   "blinkit": null
+  }
+ },
+ "unpriced": [
+  {
+   "platform": "zepto",
+   "id": "597fe027-2e19-4a49-bc07-76ef57295ad6",
+   "url": "https://www.zepto.com/pn/p/pvid/597fe027-2e19-4a49-bc07-76ef57295ad6",
+   "title": "Jivo Extra Light Olive Oil Combo",
+   "mrp": 2998,
+   "combo": true,
+   "what": "Extra Light Olive Oil Combo 1L x 2"
+  },
+  {
+   "platform": "zepto",
+   "id": "3d955a07-72db-4d1a-9d65-42c5a8dd0641",
+   "url": "https://www.zepto.com/pn/p/pvid/3d955a07-72db-4d1a-9d65-42c5a8dd0641",
+   "title": "Jivo Pomace Olive Oil Combo",
+   "mrp": 2098,
+   "combo": true,
+   "what": "Pomace Olive Oil Combo 1L x 2"
+  },
+  {
+   "platform": "zepto",
+   "id": "bb21a64f-7770-484e-9614-991921f9e1e1",
+   "url": "https://www.zepto.com/pn/p/pvid/bb21a64f-7770-484e-9614-991921f9e1e1",
+   "title": "Jivo Extra Light Olive Oil Combo",
+   "mrp": 5598,
+   "combo": true,
+   "what": "Extra Light Olive Oil Combo 2L x 2"
+  },
+  {
+   "platform": "zepto",
+   "id": "b84e15b9-39c8-4f7e-bc24-bab7300641cc",
+   "url": "https://www.zepto.com/pn/p/pvid/b84e15b9-39c8-4f7e-bc24-bab7300641cc",
+   "title": "Jivo Refine Canola oil Tin",
+   "mrp": 3500,
+   "combo": false,
+   "what": "Refined Canola Oil Tin 15L"
+  },
+  {
+   "platform": "zepto",
+   "id": "cf896675-3ac9-4a40-b134-603931bba8e7",
+   "url": "https://www.zepto.com/pn/p/pvid/cf896675-3ac9-4a40-b134-603931bba8e7",
+   "title": "Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil",
+   "mrp": 150,
+   "combo": false,
+   "what": "Groundnut Cold Pressed Oil 200ml"
+  }
+ ],
+ "review": []
+}

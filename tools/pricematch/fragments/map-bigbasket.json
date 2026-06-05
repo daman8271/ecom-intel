@@ -1,0 +1,1013 @@
+{
+ "family": "bigbasket",
+ "mappings": {
+  "A2 GHEE 500ML": null,
+  "A2 GHEE 1L": null,
+  "CANOLA 1L": {
+   "bigbasket": {
+    "id": "282779",
+    "url": "https://www.bigbasket.com/pd/282779/jivo-oil-canola-1-l/",
+    "title": "Canola Oil - Cold Pressed",
+    "mrp": 375,
+    "sale_modal": 283.99,
+    "sale_min": 283.99,
+    "sale_max": 283.99,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "CANOLA 1L POUCH": {
+   "bigbasket": {
+    "id": "40309979",
+    "url": "https://www.bigbasket.com/pd/40309979/jivo-canola-omega-3-rich-cooking-oil-1-l-pouch/",
+    "title": "Canola Omega-3 Rich Cooking Oil 1 L",
+    "mrp": 299,
+    "sale_modal": 241.47,
+    "sale_min": 241.47,
+    "sale_max": 241.47,
+    "in_stock": false,
+    "method": "VERIFY-CORRECTED+MRP",
+    "confidence": "anchored"
+   }
+  },
+  "CANOLA 1+1L": null,
+  "CANOLA 3L": null,
+  "CANOLA 4L": null,
+  "CANOLA 5L": {
+   "bigbasket": {
+    "id": "282780",
+    "url": "https://www.bigbasket.com/pd/282780/jivo-canola-oil-5-l-bottle/",
+    "title": "Canola Oil - Cold Pressed",
+    "mrp": 1650,
+    "sale_modal": 1366,
+    "sale_min": 1366,
+    "sale_max": 1366,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA LIGHT 500ML": null,
+  "EXTRA LIGHT 1L": {
+   "bigbasket": {
+    "id": "40166398",
+    "url": "https://www.bigbasket.com/pd/40166398/jivo-extra-light-olive-oil-1-l-bottle/",
+    "title": "Extra Light Olive Oil",
+    "mrp": 1499,
+    "sale_modal": 1284,
+    "sale_min": 1284,
+    "sale_max": 1284,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA LIGHT 2L": {
+   "bigbasket": {
+    "id": "40250809",
+    "url": "https://www.bigbasket.com/pd/40250809/jivo-extra-light-olive-oil-antioxidants-rich-light-cooking-medium-for-frying-grilling-2-l/",
+    "title": "Extra Light Olive Oil - Antioxidants Rich, Light Cooking Medium, For Frying, Grilling",
+    "mrp": 2799,
+    "sale_modal": 1343,
+    "sale_min": 1343,
+    "sale_max": 1343,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "EXTRA LIGHT 3L": null,
+  "EXTRA LIGHT 5L": null,
+  "JIVO POMACE 1L": {
+   "bigbasket": {
+    "id": "40197820",
+    "url": "https://www.bigbasket.com/pd/40197820/jivo-pomace-olive-oil-1-l/",
+    "title": "Pomace Olive Oil",
+    "mrp": 1049,
+    "sale_modal": 485.01,
+    "sale_min": 485.01,
+    "sale_max": 485.01,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "JIVO POMACE 2L": {
+   "bigbasket": {
+    "id": "40309980",
+    "url": "https://www.bigbasket.com/pd/40309980/jivo-pomace-olive-oil-2-l/",
+    "title": "Pomace Olive Oil",
+    "mrp": 1449,
+    "sale_modal": 1099,
+    "sale_min": 1099,
+    "sale_max": 1099,
+    "in_stock": true,
+    "method": "AUTO-NAME",
+    "confidence": "anchored",
+    "note": "identity CERTAIN (LEAD ruling): listing mrp 1449 matches the same divergent MRP on >=2 independent platforms (W1/W3 cross-check) -> master MRP is stale, see master_mrp_stale"
+   }
+  },
+  "POMACE 3L": null,
+  "JIVO POMACE 5L": null,
+  "EXTRA VIRGIN 200ML": null,
+  "EXTRA VIRGIN 250ML": null,
+  "EXTRA VIRGIN 500ML": null,
+  "EXTRA VIRGIN 1L": {
+   "bigbasket": {
+    "id": "40250808",
+    "url": "https://www.bigbasket.com/pd/40250808/jivo-extra-virgin-olive-oil-antioxidants-rich-suitable-for-salads-saute-1-l/",
+    "title": "Extra Virgin Olive Oil - Antioxidants Rich, Suitable For Salads, Saute",
+    "mrp": 1799,
+    "sale_modal": 1012,
+    "sale_min": 1012,
+    "sale_max": 1012,
+    "in_stock": true,
+    "method": "AUTO-NAME",
+    "confidence": "anchored",
+    "note": "identity CERTAIN (LEAD ruling): listing mrp 1799 matches the same divergent MRP on >=2 independent platforms (W1/W3 cross-check) -> master MRP is stale, see master_mrp_stale"
+   }
+  },
+  "EXTRA VIRGIN 2L": null,
+  "EXTRA VIRGIN 3L": null,
+  "EXTRA VIRGIN 5L": null,
+  "GROUNDNUT 1L": null,
+  "GROUNDNUT 5L": null,
+  "COCONUT 200ML": null,
+  "COCONUT 500ML": null,
+  "COCONUT 1L": null,
+  "SO OLIVE 1L": null,
+  "SO OLIVE 5L": null,
+  "YELLOW MUSTARD 1L": null,
+  "YELLOW MUSTARD 5L": null,
+  "SESAME OIL 1L": null,
+  "RICE BRAN 1L": null,
+  "RICE BRAN 4L": null,
+  "RICE BRAN 5L": null,
+  "SUNFLOWER 1L": {
+   "bigbasket": {
+    "id": "40249993",
+    "url": "https://www.bigbasket.com/pd/40249993/jivo-sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-1-l-bottle/",
+    "title": "Cold Pressed Sunflower Oil",
+    "mrp": 275,
+    "sale_modal": 177.74,
+    "sale_min": 177.74,
+    "sale_max": 177.74,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "SUNFLOWER 3L": null,
+  "SUNFLOWER 4L": null,
+  "SUNFLOWER 5L": {
+   "bigbasket": {
+    "id": "40249992",
+    "url": "https://www.bigbasket.com/pd/40249992/jivo-sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5-l-jar/",
+    "title": "Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free",
+    "mrp": 1350,
+    "sale_modal": 882.81,
+    "sale_min": 882.81,
+    "sale_max": 882.81,
+    "in_stock": false,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "MUSTARD 1L POUCH": null,
+  "MUSTARD 1L": {
+   "bigbasket": {
+    "id": "40166395",
+    "url": "https://www.bigbasket.com/pd/40166395/jivo-imported-kachi-ghani-mustard-oil-1-l-bottle/",
+    "title": "Cold Press Kachi Ghani Mustard Oil",
+    "mrp": 255,
+    "sale_modal": 202.09,
+    "sale_min": 202.09,
+    "sale_max": 202.09,
+    "in_stock": true,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "MUSTARD 3L": null,
+  "MUSTARD 4L": null,
+  "MUSTARD 5L": {
+   "bigbasket": {
+    "id": "40166396",
+    "url": "https://www.bigbasket.com/pd/40166396/jivo-imported-kachi-ghani-mustard-oil-5-l-bottle/",
+    "title": "Cold Press Kachi Ghani Mustard Oil",
+    "mrp": 1250,
+    "sale_modal": 981.13,
+    "sale_min": 981.13,
+    "sale_max": 981.13,
+    "in_stock": false,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "SOYABEAN 1L": null,
+  "SOYABEAN 1L POUCH": null,
+  "SOYABEAN 5L": null,
+  "GOLD 1L": null,
+  "GOLD 5L": null,
+  "SANO CLASSIC 5L": null,
+  "SANO POMACE 5L": null,
+  "SANO POMACE 1L": null,
+  "SANO CANOLA 1L": null,
+  "SANO CANOLA 5L": null,
+  "SANO CLASSIC 1L": null,
+  "SANO MUSTARD 1L": null,
+  "SANO MUSTARD 5L": null,
+  "SANO SOYABEAN 1L": null,
+  "SANO SOYABEAN 5L": null,
+  "SANO SUNFLOWER 1L": null,
+  "SANO SUNFLOWER 5L": null,
+  "BLACK CARDAMOM 100G": null,
+  "BLACK PAPER 100G": null,
+  "CINNAMON BARK 100G": null,
+  "CUMIN SEEDS 100G": null,
+  "GREEN CARDAMOM 100G": null,
+  "CLOVE 100G": null,
+  "SUNFLOWER SEEDS 200G": null,
+  "SUNFLOWER SEEDS 400G": null,
+  "SUNFLOWER SEEDS 800G": null,
+  "PUMPKIN SEEDS 200G": null,
+  "PUMPKIN SEEDS 400G": null,
+  "PUMPKIN SEEDS 800G": null,
+  "FLAX SEEDS 200G": null,
+  "FLAX SEEDS 400G": null,
+  "FLAX SEEDS 800G": null,
+  "CHIA SEEDS 200G": null,
+  "CHIA SEEDS 400G": null,
+  "CHIA SEEDS 800G": null,
+  "QUINOA SEEDS 200G": null,
+  "QUINOA SEEDS 400G": null,
+  "QUINOA SEEDS 800G": null,
+  "BASIL SEEDS 200G": null,
+  "BASIL SEEDS 400G": null,
+  "BASIL SEEDS 800G": null,
+  "SODA 750ML": null,
+  "SODA LEMON 750ML": {
+   "bigbasket": {
+    "id": "40335332",
+    "url": "https://www.bigbasket.com/pd/40335332/jivo-fizzy-water-lemon-flavoured-carbonated-water-750-ml/",
+    "title": "Fizzy Water Flavoured With Lemon",
+    "mrp": 55,
+    "sale_modal": 55,
+    "sale_min": 55,
+    "sale_max": 55,
+    "in_stock": false,
+    "method": "VERIFY-CORRECTED+MRP",
+    "confidence": "anchored"
+   }
+  },
+  "SPRING WATER 750ML": {
+   "bigbasket": {
+    "id": "40335333",
+    "url": "https://www.bigbasket.com/pd/40335333/jivo-fizzy-water-peach-flavoured-carbonated-water-750-ml/",
+    "title": "Fizzy Water Flavoured With Peach",
+    "mrp": 55,
+    "sale_modal": 55,
+    "sale_min": 55,
+    "sale_max": 55,
+    "in_stock": false,
+    "method": "AUTO-NAME+MRP",
+    "confidence": "exact"
+   }
+  },
+  "PUNJABI JEERA 160ML": null,
+  "ROSEMARY LEAVES 150G": null,
+  "SAFFRON 1GMS": null,
+  "BLACK OLIVE 470G": null,
+  "COFFEE": null,
+  "RICE 1KG": null
+ },
+ "mrp_drift": [
+  {
+   "platform": "amazon",
+   "master_product": "EXTRA LIGHT 3L",
+   "platform_mrp": 2997,
+   "official_mrp": 2200,
+   "listing": "Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain (ASIN B0FV8S8XT7) — surfaced by census sweep; amazon mapping itself is W1 scope"
+  },
+  {
+   "platform": "amazon",
+   "master_product": "EXTRA VIRGIN 2L",
+   "platform_mrp": 2998,
+   "official_mrp": 2700,
+   "listing": "Jivo Extra Virgin Olive Oil, 2 Litres (ASIN B098XPFQ28) — surfaced by census sweep; amazon mapping itself is W1 scope"
+  }
+ ],
+ "unpriced_census": [
+  {
+   "family": "DESI GHEE 500G",
+   "platforms": [
+    "amazon",
+    "flipkart"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "Jivo Desi Ghee 500 ML | Traditional Preparation from Desi Cow Milk",
+     "mrp": 849,
+     "id-or-key": "B0CM68YS7X"
+    },
+    {
+     "platform": "flipkart",
+     "title": "DESI GHEE 500GM",
+     "mrp": null,
+     "id-or-key": "GHEGWGYYFW9EDUBS"
+    }
+   ],
+   "suggestion": "add to master — HIGH PRIORITY: Desi Ghee has no master row and is currently being auto-matched WRONGLY to A2 GHEE 500ML (verify v1); a master row kills that recurring mismatch"
+  },
+  {
+   "family": "DESI GHEE 1KG",
+   "platforms": [
+    "amazon",
+    "flipkart"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "Jivo Desi Ghee 1 Litre | Traditional Preparation from Desi Cow Milk",
+     "mrp": 2500,
+     "id-or-key": "B0CM6BH1S6"
+    },
+    {
+     "platform": "flipkart",
+     "title": "DESI GHEE 1KG",
+     "mrp": 1499,
+     "id-or-key": "GHEGWGQH84YSZN6F"
+    },
+    {
+     "platform": "flipkart",
+     "title": "DESI GHEE 1KG",
+     "mrp": 1499,
+     "id-or-key": "IOMH8YGZUHV8DFBW"
+    },
+    {
+     "platform": "flipkart",
+     "title": "DESI GHEE 1KG",
+     "mrp": null,
+     "id-or-key": "GHEH6B93ZB66SEKQ"
+    }
+   ],
+   "suggestion": "add to master — HIGH PRIORITY: same A2-GHEE mis-match problem; also note amazon mrp 2500 vs flipkart 1499 (inter-platform MRP conflict to resolve when seeding the master row). A 'DESI GHEE 1KG 2PCS' flipkart multipack (GHEHYGKVZRBKDK9U) also exists"
+  },
+  {
+   "family": "WHEATGRASS JUICE 200ML",
+   "platforms": [
+    "bigbasket",
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "bigbasket",
+     "title": "Mojito Healthy Wheatgrass Juice",
+     "mrp": 50,
+     "id-or-key": "40335337"
+    },
+    {
+     "platform": "bigbasket",
+     "title": "Apple Healthy Wheatgrass Juice",
+     "mrp": 50,
+     "id-or-key": "40335334"
+    },
+    {
+     "platform": "bigbasket",
+     "title": "Rose Healthy Wheatgrass Juice",
+     "mrp": 50,
+     "id-or-key": "40335338"
+    },
+    {
+     "platform": "bigbasket",
+     "title": "Mango Healthy Wheatgrass Juice",
+     "mrp": 50,
+     "id-or-key": "40335336"
+    },
+    {
+     "platform": "bigbasket",
+     "title": "Blueberry Healthy Wheatgrass Juice",
+     "mrp": 50,
+     "id-or-key": "40335335"
+    },
+    {
+     "platform": "bigbasket",
+     "title": "Apple Healthy Wheatgrass Juice - Sugar Free",
+     "mrp": 50,
+     "id-or-key": "40335329"
+    },
+    {
+     "platform": "bigbasket",
+     "title": "Mojito Healthy Wheatgrass Juice - Sugar Free",
+     "mrp": 50,
+     "id-or-key": "40335331"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice with Apple | Boosts Immunity & Detox | 200ml",
+     "mrp": 480,
+     "id-or-key": "B0DP33QGW3"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice with Blue Berry Flavor, 200ml",
+     "mrp": 421,
+     "id-or-key": "B0DTZ2PX56"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice with Mango Flavor, 200ml",
+     "mrp": null,
+     "id-or-key": "B0DTZ2MQZW"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice with Mojito Flavor, 200ml",
+     "mrp": 421,
+     "id-or-key": "B0DTZ1YLRT"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice with Rose Flavor, 200ml",
+     "mrp": null,
+     "id-or-key": "B0DTZ257V4"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice Sugar Free (Apple), 200 ml",
+     "mrp": 695,
+     "id-or-key": "B0CYH9N7YW"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice Sugar Free (Ginger Ale), 200 ml",
+     "mrp": 695,
+     "id-or-key": "B0CYHFFZXG"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice Sugar Free (Blueberry), 200ml",
+     "mrp": 421,
+     "id-or-key": "B0F3XWNWV1"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice Sugar Free (Mojito), 200ml",
+     "mrp": 480,
+     "id-or-key": "B0CYHHP5XZ"
+    }
+   ],
+   "suggestion": "add to master — one row per flavour (incl. sugar-free + ginger-ale variants). BigBasket MRP is a clean 50; amazon MRPs (360-695 across dup ASINs) look like marketplace-seller multipack/inflated prices, do NOT seed the master MRP from amazon. NOTE: gaps' first-pass listed amazon-now under this family — wrong; amazon-now's only unmatched listing is the 500ml mango"
+  },
+  {
+   "family": "WHEATGRASS JUICE 500ML",
+   "platforms": [
+    "bigbasket",
+    "amazon",
+    "amazon-now"
+   ],
+   "listings": [
+    {
+     "platform": "bigbasket",
+     "title": "Mango Healthy Wheatgrass Juice 500ml",
+     "mrp": 100,
+     "id-or-key": "40335340"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Healthy Wheatgrass Juice with Mango Flavor, 500ml",
+     "mrp": 480,
+     "id-or-key": "B0DM2G4YCC"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Zero Sugar Mango Healthy Wheatgrass 500Ml Pack Of 1",
+     "mrp": null,
+     "id-or-key": "B0DVYKNPD1"
+    },
+    {
+     "platform": "amazon-now",
+     "title": "Jivo Healthy Wheatgrass Juice with Mango Flavor, 500ml",
+     "mrp": null,
+     "id-or-key": "B0DM2G4YCC"
+    }
+   ],
+   "suggestion": "add to master — BB MRP 100 is the clean anchor; flipkart sells this only as 3/6-pc multipacks (WG MANGO 500 ML 3PCS/6PCS, in combos bucket)"
+  },
+  {
+   "family": "CANOLA 2L",
+   "platforms": [
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "Jivo Canola Oil, 2 Litre Cold Press Cooking Oil for Daily use",
+     "mrp": 700,
+     "id-or-key": "B0CGZS97ZX"
+    }
+   ],
+   "suggestion": "add to master — refined vs gaps' first pass: SANO CANOLA 2L (flipkart) is the Sano sister brand, split into its own family below"
+  },
+  {
+   "family": "CANOLA 15L TIN",
+   "platforms": [
+    "amazon",
+    "zepto"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "JIVO Canola Cold Press Oil, Cooking Oil 15 LTR",
+     "mrp": 2700,
+     "id-or-key": "B0BXWZQDTG"
+    },
+    {
+     "platform": "zepto",
+     "title": "Jivo Refine Canola oil Tin 15L",
+     "mrp": 3500,
+     "id-or-key": "b84e15b9-39c8-4f7e-bd07-{see zepto dryrun}"
+    }
+   ],
+   "suggestion": "add to master — institutional pack sold on 2 platforms; MRP conflict 2700 (amazon) vs 3500 (zepto) must be resolved with the official price list first"
+  },
+  {
+   "family": "RICE BRAN 2L",
+   "platforms": [
+    "flipkart"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "RICE BRAN 2L",
+     "mrp": 570,
+     "id-or-key": "EDOHBH2FP9ES6GGA"
+    }
+   ],
+   "suggestion": "add to master"
+  },
+  {
+   "family": "SUNFLOWER OIL 2L",
+   "platforms": [
+    "flipkart",
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "SUNFLOWER OIL 2L",
+     "mrp": null,
+     "id-or-key": "EDOGE62ESBTMBRGF"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Cold Pressed Chemical Free Sunflower Oil 2L",
+     "mrp": 399,
+     "id-or-key": "B0CJJ9S6J1"
+    }
+   ],
+   "suggestion": "add to master"
+  },
+  {
+   "family": "MUSTARD 2L",
+   "platforms": [
+    "flipkart",
+    "amazon",
+    "amazon-fresh"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "MUSTARD 2L",
+     "mrp": null,
+     "id-or-key": "EDOGYCJYJQTGHXJE"
+    },
+    {
+     "platform": "amazon",
+     "title": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 2 Litre",
+     "mrp": 3750,
+     "id-or-key": "B0CGZQMJHY"
+    },
+    {
+     "platform": "amazon-fresh",
+     "title": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre (vol_ml=2000)",
+     "mrp": 540,
+     "id-or-key": "B0GZZS8J7Q"
+    }
+   ],
+   "suggestion": "add to master — but verify amazon mrp 3750 (likely data error, ~7x the 1L MRP) and the amazon-fresh row (title says 1L, vol 2000, mrp 540 — could be a 1Lx2 pack rather than a 2L bottle) before seeding the MRP"
+  },
+  {
+   "family": "GROUNDNUT 2L",
+   "platforms": [
+    "amazon",
+    "amazon-fresh"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil",
+     "mrp": 2000,
+     "id-or-key": "B0FFH8J5N9"
+    },
+    {
+     "platform": "amazon-fresh",
+     "title": "Jivo Groundnut Oil 1 Litre (vol_ml=2000)",
+     "mrp": 1120,
+     "id-or-key": "B0GG7QDSQ5"
+    }
+   ],
+   "suggestion": "add to master — CAVEAT: the amazon-fresh row (mrp 1120) is most likely the GROUNDNUT 1+1L twin-pack, NOT a 2L bottle: flipkart's GROUNDNUT 1+1L combo carries the identical 1120 MRP. Confirm on the PDP before counting it as 2L evidence"
+  },
+  {
+   "family": "GROUNDNUT 200ML",
+   "platforms": [
+    "zepto"
+   ],
+   "listings": [
+    {
+     "platform": "zepto",
+     "title": "Jivo Groundnut | Peanut | Cold Pressed Healthy Cooking Oil 200ml",
+     "mrp": 150,
+     "id-or-key": "cf896675-3ac9-4a40-{see zepto dryrun}"
+    }
+   ],
+   "suggestion": "add to master"
+  },
+  {
+   "family": "HONEY 500G (JIVO)",
+   "platforms": [
+    "flipkart"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "HONEY 500G",
+     "mrp": null,
+     "id-or-key": "HNYGQTNABYZXTF6E"
+    }
+   ],
+   "suggestion": "add to master — single platform, no MRP captured; confirm it is Jivo-branded (not Sano) on the PDP before adding"
+  },
+  {
+   "family": "TEA 250G",
+   "platforms": [
+    "flipkart",
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "TEA 250 GM",
+     "mrp": 200,
+     "id-or-key": "TEAHHNH98DRXVHNK"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Premium Tea Leaves 250g | Strong Aroma, Perfect Brew",
+     "mrp": null,
+     "id-or-key": "B0GQLH813C"
+    }
+   ],
+   "suggestion": "add to master — MRP 200 cross-checks: flipkart's TEA 250G PACK OF 2 lists mrp 400 (=2x200). Pack-of-2/3/4 multipacks exist on flipkart (combos bucket)"
+  },
+  {
+   "family": "MINERAL WATER (250ML / 500ML / 1L)",
+   "platforms": [
+    "amazon",
+    "flipkart-minutes"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "Jivo - Mineral Water - 250ML",
+     "mrp": null,
+     "id-or-key": "B0CST1ZYNY"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Natural Mineral Water | Himalayan Origin | 500ml",
+     "mrp": null,
+     "id-or-key": "B0GZB4ZQV3"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Natural Mineral Water | Sourced Directly from Himalayas | 1L",
+     "mrp": 1800,
+     "id-or-key": "B0CSPMN88F"
+    },
+    {
+     "platform": "flipkart-minutes",
+     "title": "JIVO Mineral Water 1L",
+     "mrp": 30,
+     "id-or-key": "jivo-mineral-water-1l"
+    }
+   ],
+   "suggestion": "add to master — 3 sizes. RED FLAG: amazon 1L mrp 1800 vs flipkart-minutes 1L mrp 30; the amazon listing is almost certainly a case pack (12/24 bottles) sold per-case — verify before seeding"
+  },
+  {
+   "family": "TONIC WATER 200ML",
+   "platforms": [
+    "amazon",
+    "bigbasket"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "JIVO Indian Citric Tonic Water (Pack Of 1 X 200Ml) | Premium G&T Mixer",
+     "mrp": 210,
+     "id-or-key": "B0D5RFT1PS"
+    },
+    {
+     "platform": "bigbasket",
+     "title": "Indian Tonic Water 200ml",
+     "mrp": 95,
+     "id-or-key": "40335339"
+    }
+   ],
+   "suggestion": "add to master — MRP conflict 210 (amazon) vs 95 (bigbasket); BB is in stock at 95 with no discount, the amazon price smells like marketplace-seller inflation. Resolve with official list"
+  },
+  {
+   "family": "ENERGY DRINK 200ML (JIVO JUMP)",
+   "platforms": [
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "JIVO Jump Energy Drink, Zero Sugar 200ml",
+     "mrp": null,
+     "id-or-key": "B0F3XX13KN"
+    }
+   ],
+   "suggestion": "add to master — new product line, no MRP captured yet"
+  },
+  {
+   "family": "GIFT BOX / DRY FRUITS HAMPER",
+   "platforms": [
+    "flipkart",
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "GIFT BOX 480G",
+     "mrp": 1999,
+     "id-or-key": "NDFHG8Y2J3UYQGU3"
+    },
+    {
+     "platform": "flipkart",
+     "title": "GIFT BOX 240G",
+     "mrp": 999,
+     "id-or-key": "NDFHG8Y5CFM292RK"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Dry Fruits Gift Box with Diya's | Gift Hamper for Diwali",
+     "mrp": 349,
+     "id-or-key": "B0FQCG4R9J"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Dry Fruits Gift Box | Roasted Cashews, Roasted Almonds with Black Raisins",
+     "mrp": 799,
+     "id-or-key": "B0FQCG3Z6X"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Premium Dry Fruits Gift Box with Pure Kashmiri Saffron (Kesar)",
+     "mrp": 399,
+     "id-or-key": "B0FQ62GQNL"
+    },
+    {
+     "platform": "amazon",
+     "title": "Jivo Premium Dry Fruits Gift Box with First Pressed Groundnut Oil",
+     "mrp": 2999,
+     "id-or-key": "B0FQC831P8"
+    }
+   ],
+   "suggestion": "separate sheet — seasonal gifting assortment, not a price-trackable staple; (4th amazon hamper B0FQC831P8 was missing from gaps' first pass)"
+  },
+  {
+   "family": "MAKKI ATTA 500G",
+   "platforms": [
+    "flipkart"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "MAKKI ATTA 500 GM",
+     "mrp": 149,
+     "id-or-key": "FLRHJ4DBVWCPKTHH"
+    }
+   ],
+   "suggestion": "add to master — also sold inside the amazon Mustard-1L+Makki-Atta combo, so a master row helps decompose that bundle"
+  },
+  {
+   "family": "BASMATI RICE 5KG",
+   "platforms": [
+    "flipkart"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "RICE 5KG (Jivo Organic Long Grain Basmati)",
+     "mrp": null,
+     "id-or-key": "RICGFF68XXVEBZW5"
+    }
+   ],
+   "suggestion": "add to master — master currently only has RICE 1KG"
+  },
+  {
+   "family": "SANO POMACE 2L",
+   "platforms": [
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "Sano Pomace Olive Oil 2L Pet Bottle",
+     "mrp": 1999,
+     "id-or-key": "B0CJC38F8C"
+    }
+   ],
+   "suggestion": "add to master (Sano line) — missed by gaps' first pass"
+  },
+  {
+   "family": "SANO POMACE 3L",
+   "platforms": [
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "amazon",
+     "title": "Sano Pomace Olive Oil 3L Pet Bottle (scraper vol_ml=1000 is wrong; title + mrp 2997=3x999 say 3L)",
+     "mrp": 2997,
+     "id-or-key": "B0CJCG1ZZ4"
+    }
+   ],
+   "suggestion": "add to master (Sano line) — HIGH PRIORITY: currently auto-matched WRONGLY to SANO POMACE 1L (verify v1); a master row kills the mismatch"
+  },
+  {
+   "family": "SANO CANOLA 2L",
+   "platforms": [
+    "flipkart"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "SANO CANOLA 2L",
+     "mrp": null,
+     "id-or-key": "EDOGW3HGUQBAHNCB"
+    }
+   ],
+   "suggestion": "add to master (Sano line) — split out of gaps' CANOLA 2L family (sister brand, separate price ladder)"
+  },
+  {
+   "family": "SANO HONEY 500G",
+   "platforms": [
+    "flipkart",
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "SANO HONEY 500 GM",
+     "mrp": null,
+     "id-or-key": "HNYHYRSYJPMYEGUX"
+    },
+    {
+     "platform": "amazon",
+     "title": "Sano Pure Honey 500g | 100% Natural, Organic & Unadulterated",
+     "mrp": 599,
+     "id-or-key": "B0BZVBXP56"
+    }
+   ],
+   "suggestion": "add to master (Sano line)"
+  },
+  {
+   "family": "SANO HONEY 1KG",
+   "platforms": [
+    "flipkart",
+    "amazon"
+   ],
+   "listings": [
+    {
+     "platform": "flipkart",
+     "title": "SANO HONEY 1KG",
+     "mrp": null,
+     "id-or-key": "HNYGQTUW5DB6RXQD"
+    },
+    {
+     "platform": "flipkart",
+     "title": "SANO HONEY 1KG",
+     "mrp": null,
+     "id-or-key": "HNYHYRSBGKZHHFDZ"
+    },
+    {
+     "platform": "amazon",
+     "title": "Sano Pure Honey 1 kg | 100% Natural, Organic & Unadulterated",
+     "mrp": 599,
+     "id-or-key": "B0C65W794Z"
+    }
+   ],
+   "suggestion": "add to master (Sano line) — amazon 1kg mrp 599 equals the 500g mrp 599: one of the two amazon listings likely carries a stale/wrong MRP, verify before seeding"
+  }
+ ],
+ "junk": [
+  "FLIP PRO (flipkart BOTGZ9ZPVHFX8YYG) — internal Flipkart promo scheme code, not a product",
+  "FLIP PRO 1000 (flipkart BOTHYVRWUHGTZFHY) — internal promo scheme code",
+  "JIVO-INFI-FERRERO-1000 (flipkart BOTHYVMNCRZHCY2V) — internal reward/gifting scheme SKU, not purchasable",
+  "JIVO-INFI-CRYPTO-500 (flipkart BOTHYVPX44HZZQRG) — internal reward scheme SKU",
+  "JIVO-INFI-ELEGANCE-PACK-1 (flipkart BOTH4SQVCNDSQJYH) — internal reward scheme SKU",
+  "CASSEROLE 2200 (flipkart CRLHYEWUPR4DRZZD) — kitchenware, not food; candidate for a separate kitchenware sheet",
+  "CASSEROLE 3200 (flipkart CRLHYFF2NSZHWVHQ) — kitchenware",
+  "LUNCH BOX (flipkart LBXHYVP3GUHJJZGT) — kitchenware",
+  "ROTI BOX (flipkart CRLGGF7YG5DJ4SMX, mrp 899) — kitchenware/food storage"
+ ],
+ "review": [
+  "APPLIED verify_results corrections to the BB fragment: (1) 'Fizzy Water Flavoured With Lemon' 40335332 remapped SPRING WATER 750ML -> SODA LEMON 750ML (URL slug 'fizzy-water-lemon-flavoured-carbonated-water' + mrp 55 = master 55 confirm); (2) 'Canola Omega-3 Rich Cooking Oil 1 L' 40309979 remapped CANOLA 1L -> CANOLA 1L POUCH (URL slug ends '...-1-l-pouch' + mrp 299 = pouch master 299 confirm). Both marked method=VERIFY-CORRECTED+MRP, confidence=anchored.",
+  "LEAD RULING APPLIED (bus.md): BB EXTRA VIRGIN 1L (1799) and JIVO POMACE 2L (1449) divergences are multi-platform confirmed (W1 amazon-family + W3 zepto show identical MRPs) -> moved from mrp_drift to the new master_mrp_stale section; mapping confidence set to 'anchored' with identity-certain note (was anchored-with-mrp-drift per the original task spec — ruling supersedes). mrp_drift now holds only single-platform divergences (amazon EXTRA LIGHT 3L 2997v2200, EXTRA VIRGIN 2L 2998v2700 — W1 should confirm or fold).",
+  "BB run is a single national 'All India' member-price session (1 pincode), so sale_modal=sale_min=sale_max for every row; prices are MEMBER prices (logged-in cookie session), not guest prices.",
+  "BB coverage: 14 of 96 master products present on bigbasket; 82 mapped null. 9 BB listings are NOT-IN-MASTER (7x wheatgrass 200ml, 1x wheatgrass 500ml mango, 1x Indian Tonic Water 200ml) — all folded into the census.",
+  "CENSUS REFINEMENTS vs verify_results 'gaps' first pass: (a) amazon-now removed from WHEATGRASS 200ML platforms (its only unmatched listing is the 500ml mango); (b) SANO CANOLA 2L split out of CANOLA 2L (sister brand); (c) added DESI GHEE 500G/1KG families (live mis-matches to A2 GHEE, invisible to gaps because they sat in auto_matches, not not_in_master); (d) added SANO POMACE 3L (WRONG-matched to SANO POMACE 1L) and SANO POMACE 2L (missed); (e) added 4th amazon gift hamper B0FQC831P8; (f) PUNJABI JEERA 160 ML 24 PCS (flipkart ARDHCJMTXHZ5HQDA) is NOT a gap — master 'PUNJABI JEERA 160ML' IS the Pack-of-24 SKU (mrp 240); it's a name-heuristic miss like SANO_CLASSIC 5L and Coffee 100g.",
+  "Name-heuristic misses (exist in master, scraper failed to match — fix the matcher, do not add SKUs): SANO_CLASSIC 5L flipkart EDOHAGDYVQWT6GNG (underscore), Coffee 100g flipkart CFEGMJ5GJE7HD3DQ (mrp 350 = master COFFEE exactly), PUNJABI JEERA 160 ML 24 PCS flipkart ARDHCJMTXHZ5HQDA (master row is itself a pack-of-24).",
+  "DISAGREE with gaps on amazon COCONUT 1L B0D6NFLL3M (vol 2000, mrp 1400): gaps called vol a scraper bug + a Rs.700 MRP discrepancy; evidence says it is a 1L x2 twin-pack — mrp is exactly 2x master (700) and sibling ASIN B0CZP2HPGL has identical vol/mrp with an explicit '(Pack of' marker. Treated as combo, not drift.",
+  "AMBIGUOUS (needs PDP check, not asserted): amazon EXTRA VIRGIN 200ML B0GG7QM7LY (vol 400 suggests a 2-pack but mrp 598 != 2x350=700); amazon-fresh mustard B0GZZS8J7Q (title 1L, vol 2000, mrp 540 — 2L bottle or 1Lx2 pack at 540?); amazon MUSTARD 2L B0CGZQMJHY mrp 3750 (likely data error, ~7x the 1L price).",
+  "amazon B0BGPGRP4Z ('Mustard 5L &JIVO...' vol 6000 mrp 1505 = 1250+255 exactly) reclassified as a 5L+1L combo despite combo=false flag; the combo flag in the raw data under-counts amazon 'X & Y (Pack of 2)' bundles broadly.",
+  "Combos/multipacks EXCLUDED from the census: 277 deduplicated bundle/multipack listings (incl. flipkart WG 3/6-packs, TEA pack-of-2/3/4, SOYABEAN 1L 3PCS EDOGGP4FSQVM2ERR, and ~50 amazon 'X & Y each' two-product bundles mis-flagged combo=false). gaps' combo_count of 169 used a different dedupe. Suggest a dedicated combo sheet priced from component master rows.",
+  "amazon also sells a WHEATGRASS 250ML flavour line (cola B09MJ3KLFP, jeera B0C1V6DG9C, lemon B09TWL9RFR, orange B09MHZLRSG) — only as multipacks, so left in the combos bucket; flag to e-comm team as an unpriced single-unit line if single packs appear.",
+  "mrp_drift includes 2 amazon rows (EXTRA LIGHT 3L 2997 vs 2200, EXTRA VIRGIN 2L 2998 vs 2700) surfaced by the cross-platform census sweep; the amazon master-map fragment itself is W1's scope — dedupe on merge if W1 reports the same.",
+  "No W1/W2/W3 unpriced findings were on bus.md at finalize time; census built from dryrun.json + verify_input.json + verify_results.json only."
+ ],
+ "master_mrp_stale": [
+  {
+   "master_product": "EXTRA VIRGIN 1L",
+   "official_mrp": 1499,
+   "consensus_mrp": 1799,
+   "evidence": [
+    {
+     "platform": "bigbasket",
+     "listing": "Extra Virgin Olive Oil - Antioxidants Rich, Suitable For Salads, Saute",
+     "id": "40250808",
+     "mrp": 1799
+    },
+    {
+     "platform": "zepto",
+     "listing": "per W3 owner-blessed pvid",
+     "mrp": 1799
+    },
+    {
+     "platform": "amazon-fresh/amazon-now",
+     "listing": "per W1 cross-check",
+     "mrp": 1799
+    }
+   ],
+   "action": "refresh master MRP sheet (1499 -> 1799); identity certain, mappings kept"
+  },
+  {
+   "master_product": "JIVO POMACE 2L",
+   "official_mrp": 1600,
+   "consensus_mrp": 1449,
+   "evidence": [
+    {
+     "platform": "bigbasket",
+     "listing": "Pomace Olive Oil 2L",
+     "id": "40309980",
+     "mrp": 1449
+    },
+    {
+     "platform": "zepto",
+     "listing": "per W3 owner-blessed pvid",
+     "mrp": 1449
+    },
+    {
+     "platform": "amazon",
+     "listing": "per W1 cross-check",
+     "mrp": 1449
+    }
+   ],
+   "action": "refresh master MRP sheet (1600 -> 1449); identity certain, mappings kept"
+  },
+  {
+   "master_product": "GROUNDNUT 1L",
+   "official_mrp": 400,
+   "consensus_mrp": 560,
+   "evidence": [
+    {
+     "platform": "zepto",
+     "listing": "per W3 owner-blessed pvid",
+     "mrp": 560
+    },
+    {
+     "platform": "amazon-now",
+     "listing": "per W1 cross-check",
+     "mrp": 560
+    }
+   ],
+   "action": "refresh master MRP sheet (400 -> 560); no bigbasket listing for this SKU"
+  }
+ ]
+}
