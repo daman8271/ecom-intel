@@ -1,0 +1,6 @@
+# sim-run artifacts (regenerated every run; evidence lives in shared/verification.md)
+*.log
+durations.sim.jsonl
+durations.pre-sim.bak.jsonl
+durations.post-sim.jsonl
+secrets.sim.env
