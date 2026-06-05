@@ -6,7 +6,7 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-05
-observations: 3
+observations: 4
 min_price: 354
 max_price: 354
 latest_price: 354
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Jivo Kachi Ghani Mustard Oil & Cold Pressed Sunflower Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹354 (90.6% off)
+- [[amazon]] — latest ₹354 (33.2% off)
 
-## Runs that observed this SKU (3)
-[[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (4)
+[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0112,2026-06-05,amazon,All India,-,,4999,0,0
 2026-06-05-0429,2026-06-05,amazon,All India,-,,4999,0,0
 2026-06-05-1057,2026-06-05,amazon,All India,-,354,3750,90.6,1
+2026-06-05-1602,2026-06-05,amazon,All India,-,354,530,33.2,1
 ```
 
 ---

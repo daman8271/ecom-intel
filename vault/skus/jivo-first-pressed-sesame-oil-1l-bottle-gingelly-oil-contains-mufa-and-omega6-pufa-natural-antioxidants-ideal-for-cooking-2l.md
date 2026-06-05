@@ -6,7 +6,10 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-05
-observations: 3
+observations: 4
+min_price: 658
+max_price: 658
+latest_price: 658
 tags:
   - type/sku-hub
   - platform/amazon
@@ -19,18 +22,19 @@ Up: [[skus-index]]
 **Jivo First Pressed Sesame Oil | 1L Bottle | Gingelly Oil | Contains MUFA (oleic acid) and Omega-6 PUFA (linoleic acid) | Natural Antioxidants (Lignans) | Ideal for Cooking (Pack of 2) (1LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]]
+- [[amazon]] — latest ₹658 (45.2% off)
 
-## Runs that observed this SKU (3)
-[[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (4)
+[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0112,2026-06-05,amazon,All India,-,,1350,0,0
 2026-06-05-0429,2026-06-05,amazon,All India,-,,879,0,0
 2026-06-05-1057,2026-06-05,amazon,All India,-,,879,0,0
+2026-06-05-1602,2026-06-05,amazon,All India,-,658,1200,45.2,1
 ```
 
 ---

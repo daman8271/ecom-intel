@@ -6,10 +6,10 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-05
-observations: 3
+observations: 4
 min_price: 1144
 max_price: 1149
-latest_price: 1149
+latest_price: 1144
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Sunflower Oil 5L & Gold Premium Refined Oil 5L (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1149 (28.2% off)
+- [[amazon]] — latest ₹1144 (27.4% off)
 
-## Runs that observed this SKU (3)
-[[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (4)
+[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0112,2026-06-05,amazon,All India,-,1144,1600,28.5,1
 2026-06-05-0429,2026-06-05,amazon,All India,-,1149,1575,27,1
 2026-06-05-1057,2026-06-05,amazon,All India,-,1149,1600,28.2,1
+2026-06-05-1602,2026-06-05,amazon,All India,-,1144,1575,27.4,1
 ```
 
 ---

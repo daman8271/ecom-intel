@@ -7,7 +7,7 @@ platforms:
   - amazon-now
 first_seen: 2026-06-04
 last_seen: 2026-06-05
-observations: 4
+observations: 8
 min_price: 100
 max_price: 100
 latest_price: 100
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ghaziabad]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-04-1417]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-04-1417]]
 
-## Price history (4 observations)
+## Price history (8 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -41,6 +41,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1125,2026-06-05,amazon-now,Ghaziabad,201001,100,,,1
 2026-06-05-1125,2026-06-05,amazon-now,Noida,201307,100,,,1
 2026-06-05-1125,2026-06-05,amazon-now,Noida,201309,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Mumbai,400601,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Noida,201307,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Noida,201309,100,,,1
 ```
 
 ---

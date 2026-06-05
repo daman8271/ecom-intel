@@ -6,7 +6,7 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-05
-observations: 3
+observations: 4
 min_price: 2305
 max_price: 2498
 latest_price: 2498
@@ -24,16 +24,17 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹2498 (55.8% off)
 
-## Runs that observed this SKU (3)
-[[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (4)
+[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0112,2026-06-05,amazon,All India,-,2305,5648,59.2,1
 2026-06-05-0429,2026-06-05,amazon,All India,-,2498,5648,55.8,1
 2026-06-05-1057,2026-06-05,amazon,All India,-,2498,5648,55.8,1
+2026-06-05-1602,2026-06-05,amazon,All India,-,2498,5648,55.8,1
 ```
 
 ---

@@ -6,10 +6,10 @@ platforms:
   - amazon-fresh
 first_seen: 2026-06-05
 last_seen: 2026-06-05
-observations: 29
+observations: 38
 min_price: 176
 max_price: 209
-latest_price: 176
+latest_price: 181
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹176 (31.0% off)
+- [[amazon-fresh]] — latest ₹181 (29.0% off)
 
 ## Available in cities
 [[Delhi]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (29 observations)
+## Price history (38 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -63,6 +63,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411047,176,255,31,1
 2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411051,176,255,31,1
 2026-06-05-1108,2026-06-05,amazon-fresh,Pune,412308,176,255,31,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110003,190,255,25.5,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110014,209,255,18,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110016,181,255,29,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110024,209,255,18,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110048,181,255,29,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110062,209,255,18,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110067,181,255,29,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Mumbai,400701,184,255,27.8,1
+2026-06-05-1613,2026-06-05,amazon-fresh,Mumbai,400703,181,255,29,1
 ```
 
 ---

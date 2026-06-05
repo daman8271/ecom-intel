@@ -6,7 +6,7 @@ platforms:
   - zepto
 first_seen: 2026-06-04
 last_seen: 2026-06-05
-observations: 37
+observations: 44
 min_price: 2268
 max_price: 2270
 latest_price: 2270
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Gurgaon]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (4)
-[[zepto-2026-06-05-1049]] · [[zepto-2026-06-05-0421]] · [[zepto-2026-06-05-0112]] · [[zepto-2026-06-04-1417]]
+## Runs that observed this SKU (5)
+[[zepto-2026-06-05-1549]] · [[zepto-2026-06-05-1049]] · [[zepto-2026-06-05-0421]] · [[zepto-2026-06-05-0112]] · [[zepto-2026-06-04-1417]]
 
-## Price history (37 observations)
+## Price history (44 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -71,6 +71,13 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1049,2026-06-05,zepto,Mumbai,400007,2270,5598,59.4,1
 2026-06-05-1049,2026-06-05,zepto,Mumbai,400010,2270,5598,59.4,1
 2026-06-05-1049,2026-06-05,zepto,Mumbai,400012,2270,5598,59.4,1
+2026-06-05-1549,2026-06-05,zepto,Delhi,110014,2270,5598,59.4,1
+2026-06-05-1549,2026-06-05,zepto,Delhi,110040,2270,5598,59.4,1
+2026-06-05-1549,2026-06-05,zepto,Delhi,110062,2270,5598,59.4,1
+2026-06-05-1549,2026-06-05,zepto,Delhi,110084,2270,5598,59.4,1
+2026-06-05-1549,2026-06-05,zepto,Gurgaon,122051,2270,5598,59.4,1
+2026-06-05-1549,2026-06-05,zepto,Gurgaon,122101,2270,5598,59.4,1
+2026-06-05-1549,2026-06-05,zepto,Mumbai,400005,2270,5598,59.4,1
 ```
 
 ---

@@ -6,10 +6,10 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-05
-observations: 3
+observations: 4
 min_price: 1077
 max_price: 1109
-latest_price: 1082
+latest_price: 1077
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Jivo Gold Refined Oil |Blend of Rice Bran Oil & Sunflower Oil | 5+1 Litre (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1082 (16.8% off)
+- [[amazon]] — latest ₹1077 (15.5% off)
 
-## Runs that observed this SKU (3)
-[[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (4)
+[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0112,2026-06-05,amazon,All India,-,1077,1275,15.5,1
 2026-06-05-0429,2026-06-05,amazon,All India,-,1109,1300,14.7,1
 2026-06-05-1057,2026-06-05,amazon,All India,-,1082,1300,16.8,1
+2026-06-05-1602,2026-06-05,amazon,All India,-,1077,1275,15.5,1
 ```
 
 ---

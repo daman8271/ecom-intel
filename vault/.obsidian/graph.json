@@ -8,73 +8,73 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:#type/run",
+      "query": "path:platforms/",
+      "color": {
+        "a": 1,
+        "rgb": 15223504
+      }
+    },
+    {
+      "query": "path:runs/",
       "color": {
         "a": 1,
         "rgb": 5017087
       }
     },
     {
-      "query": "tag:#type/sku-hub",
+      "query": "path:skus/",
       "color": {
         "a": 1,
         "rgb": 16756768
       }
     },
     {
-      "query": "tag:#type/city-hub",
+      "query": "path:locations/",
       "color": {
         "a": 1,
-        "rgb": 3523211
+        "rgb": 2278750
       }
     },
     {
-      "query": "tag:#type/pincode",
+      "query": "path:locations/pincodes/",
       "color": {
         "a": 1,
-        "rgb": 10151604
+        "rgb": 3003583
       }
     },
     {
-      "query": "tag:#type/platform-hub",
+      "query": "path:daily/",
       "color": {
         "a": 1,
-        "rgb": 16735354
+        "rgb": 16486972
       }
     },
     {
-      "query": "tag:#type/daily",
+      "query": "path:weekly/",
       "color": {
         "a": 1,
-        "rgb": 12031220
+        "rgb": 10980346
       }
     },
     {
-      "query": "tag:#type/weekly",
+      "query": "path:monthly/",
       "color": {
         "a": 1,
-        "rgb": 10451690
-      }
-    },
-    {
-      "query": "tag:#type/monthly",
-      "color": {
-        "a": 1,
-        "rgb": 8411861
+        "rgb": 16007006
       }
     },
     {
       "query": "tag:#moc",
       "color": {
         "a": 1,
-        "rgb": 16179294
+        "rgb": 16436245
       }
     },
     {
       "query": "tag:#home",
       "color": {
         "a": 1,
-        "rgb": 16166229
+        "rgb": 16119285
       }
     }
   ],

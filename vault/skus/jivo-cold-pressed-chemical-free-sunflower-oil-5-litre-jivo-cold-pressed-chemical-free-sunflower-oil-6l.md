@@ -6,7 +6,7 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-05
-observations: 3
+observations: 4
 min_price: 1154
 max_price: 1154
 latest_price: 1154
@@ -22,18 +22,19 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1154
+- [[amazon]] — latest ₹1154 (29.0% off)
 
-## Runs that observed this SKU (3)
-[[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (4)
+[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0112,2026-06-05,amazon,All India,-,,5500,0,0
 2026-06-05-0429,2026-06-05,amazon,All India,-,,295,0,0
 2026-06-05-1057,2026-06-05,amazon,All India,-,1154,1154,0,1
+2026-06-05-1602,2026-06-05,amazon,All India,-,1154,1625,29,1
 ```
 
 ---

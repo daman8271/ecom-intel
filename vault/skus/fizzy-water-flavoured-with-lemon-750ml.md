@@ -6,7 +6,7 @@ platforms:
   - bigbasket
 first_seen: 2026-06-01
 last_seen: 2026-06-05
-observations: 13
+observations: 15
 min_price: 55
 max_price: 55
 latest_price: 55
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[bigbasket]] — latest ₹55
 
-## Runs that observed this SKU (13)
-[[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (15)
+[[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1601]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (13 observations)
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -44,6 +44,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0429,2026-06-05,bigbasket,All India,-,55,55,0,0
 2026-06-05-1056,2026-06-05,bigbasket,All India,-,55,55,0,0
 2026-06-05-1315,2026-06-05,bigbasket,All India,-,55,55,0,0
+2026-06-05-1601,2026-06-05,bigbasket,All India,-,55,55,0,0
+2026-06-05-1821,2026-06-05,bigbasket,All India,-,55,55,0,0
 ```
 
 ---
