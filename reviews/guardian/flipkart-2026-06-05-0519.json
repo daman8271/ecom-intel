@@ -1,0 +1,96 @@
+{
+  "platform": "flipkart",
+  "run_id": "2026-06-05-0519",
+  "verdict": "SUSPECT",
+  "review_verdict": "OK",
+  "review_reasons": [],
+  "deep_reasons": [
+    "[class 4] shared_price_dup: 2 (sale,mrp) pairs shared by distinct SKUs, e.g. \u20b91353.0/\u20b92025.0 -> edohhxabmq3jvfsr, edohhzbqb9p4z6wm"
+  ],
+  "reasons": [
+    "[class 4] shared_price_dup: 2 (sale,mrp) pairs shared by distinct SKUs, e.g. \u20b91353.0/\u20b92025.0 -> edohhxabmq3jvfsr, edohhzbqb9p4z6wm"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "national platform \u2014 geo n/a"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "268 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "106 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 106 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "2 (sale,mrp) pairs shared by distinct SKUs, e.g. \u20b91353.0/\u20b92025.0 -> edohhxabmq3jvfsr, edohhzbqb9p4z6wm"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/106 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (106/268 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 0.0h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "flipkart SUSPECT (deep-check): 2 (sale,mrp) pairs shared by distinct SKUs, e.g. \u20b91353.0/\u20b92025.0 -> edohhxabmq3jvfsr, edohhzbqb9p4z6wm | heal: priced-row collapse / padding -> re-scrape (selector or block?)",
+  "quarantined": false,
+  "evaluated_at": "2026-06-05T05:19:29.479904+00:00",
+  "source_result": "/opt/ecom-intel/platforms/flipkart/result.json"
+}
