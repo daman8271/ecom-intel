@@ -67,13 +67,25 @@ never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault,
 history, and review verdicts/baselines are what get committed each run. In `run_all.sh` each
 scrape is then re-evaluated by the **guardian auto-heal** (below).
 
-## Cron (IST) — installed and LIVE via ./setup_cron.sh
-Two full sweeps daily at **10:00 + 15:00** via `./run_all.sh`, plus an **18:00 daily
-guardian deep-dive** (`./tools/guardian_daily.sh`). Each sweep scrapes the **9 live
+## Cron (IST) — DEADLINE-ALIGNED (owner requirement 2026-06-06)
+Reports must all **LAND at the slot time (10:00 + 15:00 IST)**, not start at it. Cron fires
+`tools/cron/deadline_sweep.sh <slot>` at **06:30 / 11:30**; it predicts the chain runtime
+(`tools/cron/predict_lead.py` — p90 of last 10 per-platform durations in
+`tools/cron/durations.jsonl`, self-learning, `LEAD_MAX=12600`), sleeps to `T − lead`, then
+runs `./run_all.sh` with `DEFER_DELIVERY=1 SWEEP_ID=… SWEEP_DEADLINE=…`. run.sh then SPOOLS
+each OK report (`output/.batch/<sweep>/<p>.json`) instead of curling; after the loop
+`tools/cron/send_batch.py` sleeps until the deadline (barrier) and ships ONE batch — header,
+all summaries + Excels in canonical order, footer with held/late. BROKEN-run owner alerts
+still send immediately. Failures fall back to immediate send (a report can be early, never
+lost). Plain `./run_all.sh` without the env = old behavior. An **18:00 daily guardian
+deep-dive** (`./tools/guardian_daily.sh`) is unchanged. Each sweep scrapes the **9 live
 platforms SERIALLY — one platform at a time** (commit 8ef79d4), in this order:
 , flipkart-minutes, flipkart, zepto, bigbasket, amazon, amazon-fresh,
-amazon-now, **blinkit LAST** (slowest). A full serial sweep is **~100–110 min** (blinkit
-alone ~69 min); the two windows are 5h apart, which has the headroom.
+amazon-now, **blinkit LAST** (slowest). Observed full chain 2026-06-05: **~3h05m**
+( WAF heal-retries ~40m + blinkit ~69m) — the 3h30m LEAD_MAX covers it.
+SIM testing: `PLATFORMS_OVERRIDE`/`RUNNER_OVERRIDE` trip SIM MODE in run_all.sh
+(guardian/healthcheck/vault/git all skipped — never reaches live scrapes); see
+`tools/cron/tests/`.
 
 **Why serial, not parallel:** running all 9 at once STARVED each scraper (CPU/network
 contention → thin, partial data the hardened review.py correctly rejects) and made the

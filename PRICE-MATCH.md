@@ -67,6 +67,17 @@ Bonus: verification already surfaced real MRP-drift red flags — flipkart Pomac
 vs official ₹1049, bigbasket EV 1L MRP ₹1799 vs ₹1499, amazon duplicate EL-3L ASIN at MRP
 ₹2997 vs ₹2200 — exactly the MRP-consistency deliverable.
 
+### Identity-capture patches (2026-06-06, fleet pricecron W3 — live from the next cron run)
+Scrapers now additionally record (additive, fail-safe, contract unchanged):
+- flipkart-minutes: `fk_pid` + `listing_url` (defensive extraction from productInfo.action)
+- blinkit: `prid` + `listing_url` (PDP anchor → /prn/<slug>/prid/<id>)
+- bigbasket: `ean` (ONLY a true GS1-India EAN-13, `/^890\d{10}$/` — the 8-digit ean_code echo
+  of sku_id is rejected)
+**Post-deploy gate (W4-required, run BEFORE folding new ids into sku_map.json):** on the first
+post-patch run assert blinkit prids are 5–7 digits AND stable per canonical across pincodes,
+and every fk_pid matches `/^[A-Z0-9]{13,16}$/` and is not `itm/lst`-prefixed; any violation →
+strip the field and keep the slug mapping. These ids fill the map's 12 missing URLs.
+
 ### Unpriced-listings census (from the same fleet)
 169 combo/multipack listings + unpriced single families: WHEATGRASS JUICE 200/500ML (7 on
 bigbasket alone — bigbasket-exclusive vs other q-commerce), CANOLA 2L & 15L TIN, RICE BRAN 2L,

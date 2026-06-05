@@ -4,13 +4,19 @@ Design deep-dive. For operating instructions see the top-level
 [`README.md`](../README.md); for the live platform-coverage map see
 [`REPORT.md`](../REPORT.md).
 
-> **Status (2026-06-05):** the full pipeline is **WIRED and running on cron** —
+> **Status (2026-06-06):** the full pipeline is **WIRED and running on cron** —
 > `scrape → build_excel → predict → review → vault/history → telegram → commit/push`
 > all execute inside `run.sh`, and `run_all.sh` drives a **SERIAL** sweep (one platform at
-> a time, ~100–110 min) of all **9 live platforms**, with a **per-scrape auto-heal guardian**
-> and a self-heal backstop. Cron: two sweeps daily (**10:00 + 15:00 IST**) plus an **18:00
-> guardian deep-dive**. Telegram delivery is **verdict-gated** (only OK ships). The "BUILT
-> but not yet wired" caveats from earlier drafts are obsolete.
+> a time; observed full chain ~3h incl. heal-retries) of all **9 live platforms**, with a
+> **per-scrape auto-heal guardian** and a self-heal backstop. Cron is **DEADLINE-ALIGNED**
+> (owner requirement 2026-06-06): `tools/cron/deadline_sweep.sh` fires at **06:30 / 11:30
+> IST**, predicts the chain runtime from per-platform duration history, sleeps so the chain
+> **finishes by the slot (10:00 / 15:00 IST)**, spools each verdict-gated report
+> (`DEFER_DELIVERY=1` → `output/.batch/<sweep>/`), and `tools/cron/send_batch.py` holds a
+> barrier until the deadline, then ships ONE batch (BROKEN-run owner alerts still immediate;
+> any spool failure falls back to immediate send). Plus an **18:00 guardian deep-dive**.
+> Telegram delivery is **verdict-gated** (only OK ships). The "BUILT but not yet wired"
+> caveats from earlier drafts are obsolete.
 
 ---
 
@@ -176,8 +182,12 @@ Serviceability* sheet on top of the standard layout.
 ## 5. Pipeline & orchestration
 
 ```
-cron (setup_cron.sh — IST: 10:00 + 15:00 sweeps, 18:00 guardian deep-dive)
-  └─ run_all.sh — scrape all 9 LIVE platforms SERIALLY (one at a time, ~100-110 min)
+cron (IST: fire 06:30 → slot 10:00, fire 11:30 → slot 15:00, 18:00 guardian deep-dive)
+  └─ tools/cron/deadline_sweep.sh <slot> — predict chain runtime (durations.jsonl p90),
+  │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE
+  └─ run_all.sh — scrape all 9 LIVE platforms SERIALLY (one at a time; ~3h chain observed)
+       ├─ tools/cron/record_duration.sh <p> <secs>  (per platform — self-learning ledger)
+       ├─ tools/cron/send_batch.py — barrier: sleep to deadline, deliver ALL reports as ONE batch
        └─ run.sh <platform>   (per platform, all steps WIRED)
        │    ├─ node scrape.js             → result.json   (deterministic, no LLM)
        │    ├─ python3 build_excel.py     → Jivo-*.xlsx → output/

@@ -1,0 +1,3 @@
+0 10 * * * cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1   # ecom-intel 2xday
+0 15 * * * [ "$(date +\%F)" = "2026-06-04" ] || { cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1; }   # ecom-intel 2xday (skip 2026-06-04 today)
+0 18 * * * cd /opt/ecom-intel && ./tools/guardian_daily.sh >> logs/guardian.log 2>&1   # ecom-intel guardian-daily (paused w/ sweeps; un-pause together)
