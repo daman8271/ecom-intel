@@ -72,31 +72,41 @@ sys.exit(0 if (ok_count >= 2 and not violated) else 1)
 PYEOF
 
 # ---------- (d) batch fired AT the deadline ±5s, graceful TG failure, spool preserved ----------
-# look for send_batch evidence in sweep stdout + logs/cron.log
-BATCH_LINE=$(grep -hEn "send_batch|batch" "$SWEEP_OUT" logs/cron.log 2>/dev/null | grep -viE "deadline_sweep: (computed|lead|sleep)" | head -20)
-echo "---- batch log evidence ----"; echo "$BATCH_LINE"; echo "----------------------------"
-# timing: find epoch of first actual send attempt; tolerate either explicit epoch logging
-# or derive from the sent/spool dir state transition in monitor.log
-python3 - "$MON" "$T" "$SWEEP_ID" <<'PYEOF' && ok "(d.timing) no spool-dir change before T; first transition at/after T" || bad "(d.timing) spool dir changed before the deadline"
-import re, sys
-mon, T, sid = sys.argv[1], int(sys.argv[2]), sys.argv[3]
-snap_t, files_prev, changed_early = None, None, False
-for line in open(mon):
-    m = re.match(r"=== (\d+)", line)
-    if m:
-        snap_t = int(m.group(1)); files = set(); continue
-    m = re.match(rf"output/\.batch/([^/]+)/(\S+) ", line)
-    if m and m.group(1) in (sid, f"sent-{sid}") and snap_t and snap_t < T - 2:
-        pass  # presence before T is fine (spooling); we detect DISAPPEARANCE pre-T below
-# simpler: ensure no sent-<sid> dir appears before T
-snap_t = None
-for line in open(mon):
-    m = re.match(r"=== (\d+)", line)
-    if m: snap_t = int(m.group(1)); continue
-    if f"sent-{sid}" in line and snap_t and snap_t < T - 2:
-        sys.exit(1)
-sys.exit(0)
-PYEOF
+# send_batch logs (stdout -> sweep stdout, mirrored to logs/telegram.log):
+#   "[ts] send_batch: sweep <id>: chain done early — holding batch Ns until HH:MM:SS"
+#   "[ts] send_batch: sweep <id>: woke at deadline — releasing batch"
+echo "---- batch log evidence ----"
+grep -h "send_batch:" "$SWEEP_OUT" | head -25
+echo "----------------------------"
+if grep -q "holding batch" "$SWEEP_OUT"; then
+  ok "(d.barrier) send_batch entered the barrier (chain finished early, held)"
+else
+  bad "(d.barrier) no 'holding batch' line — barrier never engaged"
+fi
+WOKE_TS=$(grep "woke at deadline" "$SWEEP_OUT" | head -1 | sed -E 's/^\[([0-9-]+ [0-9:]+)\].*/\1/')
+if [ -n "$WOKE_TS" ]; then
+  WOKE_EPOCH=$(date -d "$WOKE_TS" +%s)
+  WDRIFT=$(( WOKE_EPOCH - T )); [ $WDRIFT -lt 0 ] && WDRIFT=$(( -WDRIFT ))
+  if [ "$WDRIFT" -le 5 ]; then
+    ok "(d.timing) batch released at deadline (woke $WOKE_TS, drift ${WDRIFT}s from T)"
+  else
+    bad "(d.timing) batch released ${WDRIFT}s away from T ($WOKE_TS vs $(date -d "@$T" '+%T'))"
+  fi
+else
+  bad "(d.timing) no 'woke at deadline' line in send_batch output"
+fi
+# no send attempt may precede T: first sendMessage/sendDocument log line must be >= T-2
+FIRST_SEND_TS=$(grep -E "send_batch: .*(header|sendMessage|sendDocument|TG_DRY_RUN)" "$SWEEP_OUT" | head -1 | sed -E 's/^\[([0-9-]+ [0-9:]+)\].*/\1/')
+if [ -n "$FIRST_SEND_TS" ]; then
+  FS_EPOCH=$(date -d "$FIRST_SEND_TS" +%s)
+  if [ "$FS_EPOCH" -ge $(( T - 2 )) ]; then
+    ok "(d.no-early-send) first send attempt at $FIRST_SEND_TS (>= T)"
+  else
+    bad "(d.no-early-send) send attempt at $FIRST_SEND_TS is BEFORE the deadline"
+  fi
+else
+  bad "(d.no-early-send) no send-attempt lines found at all"
+fi
 # graceful failure with dead creds: spool must still exist (not moved to sent- on failure)
 if [ -d "$SPOOL" ] && [ "$(ls -1 "$SPOOL" 2>/dev/null | wc -l)" -ge 3 ]; then
   ok "(d.preserve) dead-creds send failed gracefully — all 3 spool files preserved in $SPOOL"
@@ -116,20 +126,42 @@ else
   bad "(e) durations file gained $GAIN records, expected 3 ($DUR_BASE -> $DUR_NOW)"
 fi
 
-# ---------- (f) idempotent re-run of send_batch ----------
-echo "re-running send_batch for idempotency check..."
-RERUN_OUT=$(python3 tools/cron/send_batch.py "$SWEEP_ID" "$T" 2>&1); RERUN_RC=$?
-SPOOL_AFTER=$(ls -1 "$SPOOL" 2>/dev/null | wc -l)
-if [ "$RERUN_RC" -eq 0 ] || [ -n "$RERUN_OUT" ]; then
-  if [ "$SPOOL_AFTER" -ge 3 ] || [ -d "$SENT" ]; then
-    ok "(f) send_batch re-run completed (rc=$RERUN_RC) without losing spool files"
+# ---------- (f) idempotent re-run of send_batch (3 stages) ----------
+# f1: re-run with STILL-dead creds -> must fail gracefully again, spool intact
+echo "(f1) re-running send_batch with dead creds..."
+RERUN1=$(TELEGRAM_BOT_TOKEN="000000000:SIMULATED-INVALID-TOKEN" TELEGRAM_CHAT_ID="-1" \
+         SECRETS_FILE="$TESTS_DIR/secrets.sim.env" PLATFORMS_OVERRIDE="alpha beta gamma" \
+         python3 tools/cron/send_batch.py "$SWEEP_ID" "$T" 2>&1); RC1=$?
+N1=$(ls -1 "$SPOOL"/*.json 2>/dev/null | wc -l)
+if [ "$RC1" -eq 0 ] && [ "$N1" -ge 3 ]; then
+  ok "(f1) dead-creds re-run exited 0, all $N1 spool files intact"
+else
+  bad "(f1) dead-creds re-run rc=$RC1, spool files now $N1 (expected >=3): $(echo "$RERUN1" | tail -2)"
+fi
+# f2: re-run with TG_DRY_RUN=1 -> resume succeeds, OK files -> .json.sent, dir retired to sent-
+echo "(f2) re-running send_batch with TG_DRY_RUN=1 (resume + retire)..."
+RERUN2=$(TG_DRY_RUN=1 TELEGRAM_BOT_TOKEN="000000000:SIMULATED-INVALID-TOKEN" TELEGRAM_CHAT_ID="-1" \
+         SECRETS_FILE="$TESTS_DIR/secrets.sim.env" PLATFORMS_OVERRIDE="alpha beta gamma" \
+         python3 tools/cron/send_batch.py "$SWEEP_ID" "$T" 2>&1); RC2=$?
+SENT_DIR=$(ls -d output/.batch/sent-"$SWEEP_ID"* 2>/dev/null | head -1)
+if [ "$RC2" -eq 0 ] && [ -n "$SENT_DIR" ] && [ ! -d "$SPOOL" ]; then
+  if ls "$SENT_DIR"/alpha.json.sent >/dev/null 2>&1 && ls "$SENT_DIR"/beta.json.sent >/dev/null 2>&1 \
+     && ls "$SENT_DIR"/gamma.json >/dev/null 2>&1; then
+    ok "(f2) dry-run resume delivered + retired spool -> $SENT_DIR (alpha/beta .sent, gamma held kept)"
   else
-    bad "(f) send_batch re-run LOST spool files (now $SPOOL_AFTER in $SPOOL)"
+    bad "(f2) retired dir $SENT_DIR has unexpected contents: $(ls "$SENT_DIR")"
   fi
 else
-  bad "(f) send_batch re-run crashed silently (rc=$RERUN_RC, no output)"
+  bad "(f2) dry-run resume rc=$RC2 sent_dir='$SENT_DIR' spool_still_exists=$([ -d "$SPOOL" ] && echo yes || echo no)"
 fi
-echo "rerun output: $RERUN_OUT" | head -5
+# f3: re-run after retirement -> must be a no-op (nothing resent)
+RERUN3=$(TG_DRY_RUN=1 PLATFORMS_OVERRIDE="alpha beta gamma" \
+         python3 tools/cron/send_batch.py "$SWEEP_ID" "$T" 2>&1); RC3=$?
+if [ "$RC3" -eq 0 ] && echo "$RERUN3" | grep -q "no spool dir"; then
+  ok "(f3) post-retirement re-run is a clean no-op (nothing resent)"
+else
+  bad "(f3) post-retirement re-run rc=$RC3: $(echo "$RERUN3" | tail -2)"
+fi
 
 echo
 echo "==== RESULT: $PASS pass / $FAIL fail ===="

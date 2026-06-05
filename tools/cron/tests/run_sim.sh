@@ -33,11 +33,13 @@ export RUNNER_OVERRIDE="$TESTS_DIR/stub_run.sh"
 export LEAD_MAX=300
 export HELD_PLATFORM=gamma
 export SIM_LOG="$TESTS_DIR/sim.log"
-# dead creds — every send must fail gracefully; also try dry-run flag if supported
+# dead creds — every send must FAIL GRACEFULLY (spool preserved). TG_DRY_RUN is
+# deliberately NOT set for the sweep itself: the failure path is what we test here;
+# assert_sim.sh re-runs send_batch with TG_DRY_RUN=1 afterwards to test resume+retire.
 export TELEGRAM_BOT_TOKEN="000000000:SIMULATED-INVALID-TOKEN"
 export TELEGRAM_CHAT_ID="-1"
 export TELEGRAM_OWNER_CHAT_ID="-1"
-export TG_DRY_RUN=1
+unset TG_DRY_RUN
 export SECRETS_FILE="$TESTS_DIR/secrets.sim.env"
 cat > "$SECRETS_FILE" <<'EOF'
 TELEGRAM_BOT_TOKEN="000000000:SIMULATED-INVALID-TOKEN"

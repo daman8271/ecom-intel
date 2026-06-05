@@ -41,10 +41,11 @@ if [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
   mkdir -p "$SPOOL"
   if [ "$P" = "$HELD_PLATFORM" ]; then
     python3 - "$P" "$SPOOL/$P.json" <<'PYEOF'
-import json, sys
+import json, sys, time
 p, out = sys.argv[1], sys.argv[2]
 json.dump({"platform": p, "verdict": "BROKEN",
-           "held": True, "reasons": "simulated broken run (stub held-marker)"},
+           "held": True, "reasons": "simulated broken run (stub held-marker)",
+           "ts": int(time.time())},
           open(out, "w"))
 PYEOF
     echo "[$(date +%s)] [$(date '+%F %T')] stub: $P spooled HELD marker -> $SPOOL/$P.json" >> "$SIM_LOG"
@@ -59,7 +60,7 @@ p, out, xlsx, disp, rdate = sys.argv[1:6]
 json.dump({"platform": p, "verdict": "OK",
            "summary": f"*Jivo x {disp}* (SIMULATED)\nCoverage: 3/3 pincodes\nSKUs: 2 unique - 6 rows",
            "xlsx": xlsx,
-           "caption": f"Jivo x {disp} - {rdate}",
+           "caption": f"Jivo × {disp} · {rdate}",
            "ts": int(time.time())},
           open(out, "w"))
 PYEOF
