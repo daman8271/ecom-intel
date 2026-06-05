@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-5-litre-with-kachi-ghani-chemical-free-mustard-oil-1l-ideal-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-5l
-display_name: "Jivo Cold Pressed Canola oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1L | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L) (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Pressed Canola Oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1l Ideal For Roasting Frying Baking All Type Of Cuisines Healthy Cooking Oil For Daily Use 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1L | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L) (5LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Canola Oil 5 Litre With Kachi Ghani Chemical Free Mustard Oil 1l Ideal For Roasting Frying Baking All Type Of Cuisines Healthy Cooking Oil For Daily Use 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1416 (25.7% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-soyabean-oil-1l-each-1l
-display_name: Jivo Cold Pressed Canola & Soyabean Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))
+display_name: Jivo Cold Pressed Canola Soyabean Oil 1l Each 1l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola & Soyabean Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Canola Soyabean Oil 1l Each 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹454 (24.3% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: gold-multisource-edible-oil-5l
-display_name: Gold Multi-Source Edible Oil (5 l)
+display_name: Gold Multisource Edible Oil 5l
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Gold Multi-Source Edible Oil (5 l)**
+**Gold Multisource Edible Oil 5l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹716.81 (31.7% off)

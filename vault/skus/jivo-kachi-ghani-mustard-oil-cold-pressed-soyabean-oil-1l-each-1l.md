@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-mustard-oil-cold-pressed-soyabean-oil-1l-each-1l
-display_name: Jivo Kachi Ghani Mustard Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))
+display_name: Jivo Kachi Ghani Mustard Oil Cold Pressed Soyabean Oil 1l Each 1l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Mustard Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Kachi Ghani Mustard Oil Cold Pressed Soyabean Oil 1l Each 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹366 (23.8% off)

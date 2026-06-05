@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-na
-display_name: Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management
+display_name: Jivo Premium Raw Chia Seeds I Eating Seeds For Weight Loss Management Na
 platforms:
   - amazon-now
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Premium Raw Chia seeds I Eating Seeds for Weight Loss Management**
+**Jivo Premium Raw Chia Seeds I Eating Seeds For Weight Loss Management Na**
 
 ## Sold on
 - [[amazon-now]] — latest ₹199 (66.8% off)

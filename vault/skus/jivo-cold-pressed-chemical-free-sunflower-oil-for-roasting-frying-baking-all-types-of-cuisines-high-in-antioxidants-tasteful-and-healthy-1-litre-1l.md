@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-chemical-free-sunflower-oil-for-roasting-frying-baking-all-types-of-cuisines-high-in-antioxidants-tasteful-and-healthy-1-litre-1l
-display_name: "Jivo Cold Pressed Chemical Free Sunflower Oil |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy| 1 Litre (Pack of 2) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Pressed Chemical Free Sunflower Oil For Roasting Frying Baking All Types Of Cuisines High In Antioxidants Tasteful And Healthy 1 Litre 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Chemical Free Sunflower Oil |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy| 1 Litre (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Chemical Free Sunflower Oil For Roasting Frying Baking All Types Of Cuisines High In Antioxidants Tasteful And Healthy 1 Litre 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹438 (20.4% off)

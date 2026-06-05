@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-kachi-ghani-mustard-oil-chemical-free-cold-pressed-sunflower-oil-healthy-cooking-for-daily-use-organic-natural-oil-5l
-display_name: "Jivo Canola Cold Press Edible Oil, Kachi Ghani mustard Oil & Chemical Free Cold Pressed Sunflower Oil (5L Each) | |Healthy Cooking for Daily use | Organic & natural Oil (15 Litres) (5LTR + 5LTR + 5LTR (BUNDLE))"
+display_name: Jivo Canola Cold Press Edible Oil Kachi Ghani Mustard Oil Chemical Free Cold Pressed Sunflower Oil Healthy Cooking For Daily Use Organic Natural Oil 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil, Kachi Ghani mustard Oil & Chemical Free Cold Pressed Sunflower Oil (5L Each) | |Healthy Cooking for Daily use | Organic & natural Oil (15 Litres) (5LTR + 5LTR + 5LTR (BUNDLE))**
+**Jivo Canola Cold Press Edible Oil Kachi Ghani Mustard Oil Chemical Free Cold Pressed Sunflower Oil Healthy Cooking For Daily Use Organic Natural Oil 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹3185 (25.1% off)

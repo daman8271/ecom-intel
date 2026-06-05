@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-sunflower-oil-5l-soayabean-oil-1l-5l
-display_name: Jivo Cold Pressed Sunflower Oil 5L & Soayabean Oil 1L (Pack of 2) (5LTR + 1LTR (BUNDLE))
+display_name: Jivo Cold Pressed Sunflower Oil 5l Soayabean Oil 1l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Sunflower Oil 5L & Soayabean Oil 1L (Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Sunflower Oil 5l Soayabean Oil 1l 5l**
 
 ## Sold on
 - [[amazon]]

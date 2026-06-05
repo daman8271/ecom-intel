@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-so-olive-oil-1l-multi-saurce-edible-oil-blend-of-rice-bran-oil-and-olive-oil-healthy-lifestyle-edible-cooking-oil-1l
-display_name: "Jivo So Olive Oil - 1L | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil | Healthy Lifestyle Edible Cooking Oil (Pack of 2) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo So Olive Oil 1l Multi Saurce Edible Oil Blend Of Rice Bran Oil And Olive Oil Healthy Lifestyle Edible Cooking Oil 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo So Olive Oil - 1L | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil | Healthy Lifestyle Edible Cooking Oil (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo So Olive Oil 1l Multi Saurce Edible Oil Blend Of Rice Bran Oil And Olive Oil Healthy Lifestyle Edible Cooking Oil 1l**
 
 ## Sold on
 - [[amazon]]

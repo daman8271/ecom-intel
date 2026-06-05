@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l
-display_name: "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr Jivo Canola oil1 Litre Cold Press Healthy Cooking Oil 5l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil (5LTR + 1LTR (BUNDLE))**
+**Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr Jivo Canola oil1 Litre Cold Press Healthy Cooking Oil 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1504 (25.7% off)

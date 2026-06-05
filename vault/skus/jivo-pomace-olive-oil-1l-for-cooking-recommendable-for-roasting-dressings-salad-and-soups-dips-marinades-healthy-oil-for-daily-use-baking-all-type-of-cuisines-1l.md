@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-1l-for-cooking-recommendable-for-roasting-dressings-salad-and-soups-dips-marinades-healthy-oil-for-daily-use-baking-all-type-of-cuisines-1l
-display_name: "Jivo Pomace Olive Oil, 1L (Pack of 2) for Cooking, Recommendable for Roasting Dressings Salad and Soups, Dips & Marinades Healthy Oil for Daily use Baking All type of Cuisines. (1+1 LTR)"
+display_name: Jivo Pomace Olive Oil 1l For Cooking Recommendable For Roasting Dressings Salad And Soups Dips Marinades Healthy Oil For Daily Use Baking All Type Of Cuisines 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Olive Oil, 1L (Pack of 2) for Cooking, Recommendable for Roasting Dressings Salad and Soups, Dips & Marinades Healthy Oil for Daily use Baking All type of Cuisines. (1+1 LTR)**
+**Jivo Pomace Olive Oil 1l For Cooking Recommendable For Roasting Dressings Salad And Soups Dips Marinades Healthy Oil For Daily Use Baking All Type Of Cuisines 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹849 (43.3% off)

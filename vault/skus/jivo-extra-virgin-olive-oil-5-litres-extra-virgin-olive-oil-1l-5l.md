@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5-litres-extra-virgin-olive-oil-1l-5l
-display_name: "Jivo Extra Virgin Olive Oil 5 Litres & Extra Virgin Olive Oil, 1L (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 5 Litres Extra Virgin Olive Oil 1l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 5 Litres & Extra Virgin Olive Oil, 1L (5LTR + 1LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 5 Litres Extra Virgin Olive Oil 1l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹4698 (47.8% off)

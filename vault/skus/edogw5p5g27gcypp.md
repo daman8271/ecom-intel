@@ -5,11 +5,11 @@ display_name: Sano Canola -1L-(1+1+1) (1+1+1 LTR)
 platforms:
   - flipkart
 first_seen: 2026-05-22
-last_seen: 2026-06-04
-observations: 33
+last_seen: 2026-06-05
+observations: 36
 min_price: 694
 max_price: 838
-latest_price: 754
+latest_price: 771
 tags:
   - type/sku-hub
   - platform/flipkart
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Sano Canola -1L-(1+1+1) (1+1+1 LTR)**
 
 ## Sold on
-- [[flipkart]] — latest ₹754 (47.1% off)
+- [[flipkart]] — latest ₹771 (45.9% off)
 
-## Runs that observed this SKU (33)
-[[flipkart-2026-06-04-1417]] · [[flipkart-2026-06-01-1600]] · [[flipkart-2026-06-01-1200]] · [[flipkart-2026-06-01-0900]] · [[flipkart-2026-05-31-1600]] · [[flipkart-2026-05-31-1200]] · [[flipkart-2026-05-31-0900]] · [[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
+## Runs that observed this SKU (36)
+[[flipkart-2026-06-05-1041]] · [[flipkart-2026-06-05-0413]] · [[flipkart-2026-06-05-0112]] · [[flipkart-2026-06-04-1417]] · [[flipkart-2026-06-01-1600]] · [[flipkart-2026-06-01-1200]] · [[flipkart-2026-06-01-0900]] · [[flipkart-2026-05-31-1600]] · [[flipkart-2026-05-31-1200]] · [[flipkart-2026-05-31-0900]] · [[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
 
-## Price history (33 observations)
+## Price history (36 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -64,6 +64,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,flipkart,All India,-,754,1425,47.1,0
 2026-06-01-1600,2026-06-01,flipkart,All India,-,754,1425,47.1,0
 2026-06-04-1417,2026-06-04,flipkart,All India,-,754,1425,47.1,0
+2026-06-05-0112,2026-06-05,flipkart,All India,-,771,1425,45.9,0
+2026-06-05-0413,2026-06-05,flipkart,All India,-,771,1425,45.9,0
+2026-06-05-1041,2026-06-05,flipkart,All India,-,771,1425,45.9,0
 ```
 
 ---

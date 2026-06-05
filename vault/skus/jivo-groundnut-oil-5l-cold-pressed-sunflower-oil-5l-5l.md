@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-oil-5l-cold-pressed-sunflower-oil-5l-5l
-display_name: Jivo Groundnut Oil 5L & Cold Pressed Sunflower Oil 5L (5LTR + 5LTR (BUNDLE))
+display_name: Jivo Groundnut Oil 5l Cold Pressed Sunflower Oil 5l 5l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Groundnut Oil 5L & Cold Pressed Sunflower Oil 5L (5LTR + 5LTR (BUNDLE))**
+**Jivo Groundnut Oil 5l Cold Pressed Sunflower Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2055 (50.5% off)

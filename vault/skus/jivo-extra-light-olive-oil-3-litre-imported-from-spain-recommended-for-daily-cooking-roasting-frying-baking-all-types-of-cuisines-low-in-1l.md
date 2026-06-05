@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-1l
-display_name: "Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking – Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat (1+1+1 LTR)"
+display_name: Jivo Extra Light Olive Oil 3 Litre Imported From Spain Recommended For Daily Cooking Roasting Frying Baking All Types Of Cuisines Low In 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking – Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat (1+1+1 LTR)**
+**Jivo Extra Light Olive Oil 3 Litre Imported From Spain Recommended For Daily Cooking Roasting Frying Baking All Types Of Cuisines Low In 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1559 (48.0% off)

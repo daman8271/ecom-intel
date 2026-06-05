@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-2l-1l-2l
-display_name: Jivo Extra Light Olive Oil 2L & 1L (2LTR + 1LTR (BUNDLE))
+display_name: Jivo Extra Light Olive Oil 2l 1l 2l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil 2L & 1L (2LTR + 1LTR (BUNDLE))**
+**Jivo Extra Light Olive Oil 2l 1l 2l**
 
 ## Sold on
 - [[amazon]] — latest ₹1629 (62.1% off)

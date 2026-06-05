@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-oil-5-1-litre-cold-pressed-groundnut-oil-cold-pressed-oil-peanut-oil-ground-nut-oil-natural-cooking-oil-chemical-free-pack-1l
-display_name: "Jivo Groundnut Oil | 5 + 1 Litre | Cold Pressed Groundnut Oil, Cold Pressed Oil, Peanut Oil, Ground Nut Oil, Natural Cooking Oil, Chemical Free (Pack of 2) (5+1 LTR)"
+display_name: Jivo Groundnut Oil 5 1 Litre Cold Pressed Groundnut Oil Cold Pressed Oil Peanut Oil Ground Nut Oil Natural Cooking Oil Chemical Free Pack 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Groundnut Oil | 5 + 1 Litre | Cold Pressed Groundnut Oil, Cold Pressed Oil, Peanut Oil, Ground Nut Oil, Natural Cooking Oil, Chemical Free (Pack of 2) (5+1 LTR)**
+**Jivo Groundnut Oil 5 1 Litre Cold Pressed Groundnut Oil Cold Pressed Oil Peanut Oil Ground Nut Oil Natural Cooking Oil Chemical Free Pack 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1685 (47.3% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soyabean-cooking-oil-5l-gold-refined-oil-5l-5l
-display_name: JIVO Soyabean Cooking Oil 5L & Gold Refined Oil 5L (5LTR + 5LTR (BUNDLE))
+display_name: Jivo Soyabean Cooking Oil 5l Gold Refined Oil 5l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Soyabean Cooking Oil 5L & Gold Refined Oil 5L (5LTR + 5LTR (BUNDLE))**
+**Jivo Soyabean Cooking Oil 5l Gold Refined Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1858 (13.6% off)

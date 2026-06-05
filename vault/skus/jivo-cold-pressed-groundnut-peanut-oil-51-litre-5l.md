@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-groundnut-peanut-oil-51-litre-5l
-display_name: "Jivo Cold Pressed Groundnut (Peanut) Oil 5 Litre + 1 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Pressed Groundnut Peanut Oil 51 Litre 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Groundnut (Peanut) Oil 5 Litre + 1 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Groundnut Peanut Oil 51 Litre 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1272 (62.1% off)

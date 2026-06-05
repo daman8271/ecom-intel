@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-200-ml-extra-light-olive-oil-1-litre-imported-from-spain-low-saturated-fat-rich-in-vitamin-e-antioxidants-ideal-for-cooking-salads-dressings-200ml
-display_name: "Jivo Extra Virgin Olive Oil 200 ml & Extra Light Olive Oil 1 Litre | Imported from Spain | Low Saturated Fat | Rich in Vitamin E & Antioxidants | Ideal for Cooking, Salads & Dressings (Combo Pack) (200 ML + 1LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 200 Ml Extra Light Olive Oil 1 Litre Imported From Spain Low Saturated Fat Rich In Vitamin E Antioxidants Ideal For Cooking Salads Dressings 200ml
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 200 ml & Extra Light Olive Oil 1 Litre | Imported from Spain | Low Saturated Fat | Rich in Vitamin E & Antioxidants | Ideal for Cooking, Salads & Dressings (Combo Pack) (200 ML + 1LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 200 Ml Extra Light Olive Oil 1 Litre Imported From Spain Low Saturated Fat Rich In Vitamin E Antioxidants Ideal For Cooking Salads Dressings 200ml**
 
 ## Sold on
 - [[amazon]] — latest ₹688 (61.7% off)

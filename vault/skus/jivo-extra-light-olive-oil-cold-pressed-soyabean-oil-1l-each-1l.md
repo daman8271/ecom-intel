@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-cold-pressed-soyabean-oil-1l-each-1l
-display_name: Jivo Extra Light Olive Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))
+display_name: Jivo Extra Light Olive Oil Cold Pressed Soyabean Oil 1l Each 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil & Cold Pressed Soyabean Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Extra Light Olive Oil Cold Pressed Soyabean Oil 1l Each 1l**
 
 ## Sold on
 - [[amazon]]

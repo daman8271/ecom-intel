@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-51-litre-5l
-display_name: "Jivo Gold Refined Oil |Blend of Rice Bran Oil & Sunflower Oil | 5+1 Litre (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Gold Refined Oil Blend Of Rice Bran Oil Sunflower Oil 51 Litre 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Refined Oil |Blend of Rice Bran Oil & Sunflower Oil | 5+1 Litre (5LTR + 1LTR (BUNDLE))**
+**Jivo Gold Refined Oil Blend Of Rice Bran Oil Sunflower Oil 51 Litre 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1077 (15.5% off)

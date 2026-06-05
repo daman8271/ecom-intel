@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-1l-with-soyabean-oil-5l-ideal-for-roasting-frying-baking-cooking-oil-for-daily-use-1l
-display_name: "Jivo Cold Pressed Canola Oil 1L with Soyabean Oil 5L | Ideal for Roasting, Frying & Baking | Cooking Oil for Daily Use | (Pack of 6L) (5 + 1 LTR)"
+display_name: Jivo Cold Pressed Canola Oil 1l With Soyabean Oil 5l Ideal For Roasting Frying Baking Cooking Oil For Daily Use 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola Oil 1L with Soyabean Oil 5L | Ideal for Roasting, Frying & Baking | Cooking Oil for Daily Use | (Pack of 6L) (5 + 1 LTR)**
+**Jivo Cold Pressed Canola Oil 1l With Soyabean Oil 5l Ideal For Roasting Frying Baking Cooking Oil For Daily Use 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1395 (8.5% off)

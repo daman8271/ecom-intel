@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-daily-cooking-oil-5l-cold-pressed-sunflower-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-5l
-display_name: "Jivo Extra Light Daily Cooking Oil 5L & Cold Pressed Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2) (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Light Daily Cooking Oil 5l Cold Pressed Sunflower Oil 1l For Roasting Frying Baking All Types Of Cuisines 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Daily Cooking Oil 5L & Cold Pressed Sunflower Oil 1L For Roasting, Frying, Baking All types of Cuisines (Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo Extra Light Daily Cooking Oil 5l Cold Pressed Sunflower Oil 1l For Roasting Frying Baking All Types Of Cuisines 5l**
 
 ## Sold on
 - [[amazon]]

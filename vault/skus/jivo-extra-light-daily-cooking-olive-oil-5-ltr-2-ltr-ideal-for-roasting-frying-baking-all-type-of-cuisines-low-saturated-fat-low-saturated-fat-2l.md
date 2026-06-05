@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-ideal-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-2l
-display_name: "Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle) | | Ideal for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat (5 + 2 LTR)"
+display_name: Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 2 Ltr Ideal For Roasting Frying Baking All Type Of Cuisines Low Saturated Fat Low Saturated Fat 2l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle) | | Ideal for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat (5 + 2 LTR)**
+**Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 2 Ltr Ideal For Roasting Frying Baking All Type Of Cuisines Low Saturated Fat Low Saturated Fat 2l**
 
 ## Sold on
 - [[amazon]] — latest ₹3389 (38.4% off)

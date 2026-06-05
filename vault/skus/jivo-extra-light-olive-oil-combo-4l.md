@@ -5,11 +5,11 @@ display_name: Jivo Extra Light Olive Oil Combo (2 L X 2)
 platforms:
   - zepto
 first_seen: 2026-06-04
-last_seen: 2026-06-04
-observations: 15
+last_seen: 2026-06-05
+observations: 37
 min_price: 2268
 max_price: 2270
-latest_price: 2268
+latest_price: 2270
 tags:
   - type/sku-hub
   - platform/zepto
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Extra Light Olive Oil Combo (2 L X 2)**
 
 ## Sold on
-- [[zepto]] — latest ₹2268 (59.5% off)
+- [[zepto]] — latest ₹2270 (59.4% off)
 
 ## Available in cities
 [[Delhi]] · [[Gurgaon]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (1)
-[[zepto-2026-06-04-1417]]
+## Runs that observed this SKU (4)
+[[zepto-2026-06-05-1049]] · [[zepto-2026-06-05-0421]] · [[zepto-2026-06-05-0112]] · [[zepto-2026-06-04-1417]]
 
-## Price history (15 observations)
+## Price history (37 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -49,6 +49,28 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,zepto,Mumbai,400601,2268,5598,59.5,1
 2026-06-04-1417,2026-06-04,zepto,Mumbai,400611,2268,5598,59.5,1
 2026-06-04-1417,2026-06-04,zepto,Noida,201310,2268,5598,59.5,1
+2026-06-05-0112,2026-06-05,zepto,Delhi,110014,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Gurgaon,122051,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Gurgaon,122101,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Mumbai,400005,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Mumbai,400006,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Mumbai,400007,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Mumbai,400010,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Mumbai,400012,2270,5598,59.4,1
+2026-06-05-0112,2026-06-05,zepto,Mumbai,400033,2270,5598,59.4,1
+2026-06-05-0421,2026-06-05,zepto,Delhi,110014,2270,5598,59.4,1
+2026-06-05-0421,2026-06-05,zepto,Delhi,110017,2270,5598,59.4,1
+2026-06-05-0421,2026-06-05,zepto,Delhi,110040,2270,5598,59.4,1
+2026-06-05-0421,2026-06-05,zepto,Delhi,110062,2270,5598,59.4,1
+2026-06-05-0421,2026-06-05,zepto,Delhi,110084,2268,5598,59.5,1
+2026-06-05-0421,2026-06-05,zepto,Gurgaon,122051,2270,5598,59.4,1
+2026-06-05-0421,2026-06-05,zepto,Gurgaon,122101,2270,5598,59.4,1
+2026-06-05-1049,2026-06-05,zepto,Delhi,110014,2270,5598,59.4,1
+2026-06-05-1049,2026-06-05,zepto,Mumbai,400005,2270,5598,59.4,1
+2026-06-05-1049,2026-06-05,zepto,Mumbai,400006,2270,5598,59.4,1
+2026-06-05-1049,2026-06-05,zepto,Mumbai,400007,2270,5598,59.4,1
+2026-06-05-1049,2026-06-05,zepto,Mumbai,400010,2270,5598,59.4,1
+2026-06-05-1049,2026-06-05,zepto,Mumbai,400012,2270,5598,59.4,1
 ```
 
 ---

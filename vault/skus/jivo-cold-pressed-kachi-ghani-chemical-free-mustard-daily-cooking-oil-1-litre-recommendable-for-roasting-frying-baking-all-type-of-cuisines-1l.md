@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommendable-for-roasting-frying-baking-all-type-of-cuisines-1l
-display_name: "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| (Pack of 2) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Recommendable For Roasting Frying Baking All Type Of Cuisines 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Recommendable For Roasting Frying Baking All Type Of Cuisines 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹334 (34.5% off)

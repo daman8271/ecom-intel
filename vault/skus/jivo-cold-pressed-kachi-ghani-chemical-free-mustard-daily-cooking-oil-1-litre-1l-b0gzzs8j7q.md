@@ -1,0 +1,102 @@
+---
+type: sku-hub
+canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzs8j7q
+display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre"
+platforms:
+  - amazon-fresh
+first_seen: 2026-06-05
+last_seen: 2026-06-05
+observations: 62
+min_price: 365
+max_price: 365
+latest_price: 365
+tags:
+  - type/sku-hub
+  - platform/amazon-fresh
+---
+
+# jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzs8j7q
+
+Up: [[skus-index]]
+
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
+
+## Sold on
+- [[amazon-fresh]] — latest ₹365 (32.4% off)
+
+## Available in cities
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+
+## Runs that observed this SKU (1)
+[[amazon-fresh-2026-06-05-1108]]
+
+## Price history (62 observations)
+
+```csv
+run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110001,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110002,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110004,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110006,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110007,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110008,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110009,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110010,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110013,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110016,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110021,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110031,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110035,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110037,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110040,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110044,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110051,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110054,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110055,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110061,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110070,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110075,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110076,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110090,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110091,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Faridabad,121001,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Ghaziabad,201001,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Ghaziabad,201005,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Ghaziabad,201009,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Gurgaon,122001,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Gurgaon,122004,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Gurgaon,122010,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Gurgaon,122051,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Gurgaon,123505,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,302011,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,302012,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,302013,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,302021,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,302022,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,302026,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,303007,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Jaipur,303905,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Mumbai,400090,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Mumbai,400601,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Noida,201304,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411001,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411003,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411004,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411005,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411006,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411011,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411014,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411015,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411020,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411028,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411030,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411036,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411040,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411047,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,411051,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,412101,365,540,32.4,1
+2026-06-05-1108,2026-06-05,amazon-fresh,Pune,412114,365,540,32.4,1
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*

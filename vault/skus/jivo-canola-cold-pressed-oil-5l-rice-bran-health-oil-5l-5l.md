@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-oil-5l-rice-bran-health-oil-5l-5l
-display_name: JIVO Canola Cold Pressed Oil 5L & Rice Bran Health Oil 5L (5LTR + 5LTR (BUNDLE))
+display_name: Jivo Canola Cold Pressed Oil 5l Rice Bran Health Oil 5l 5l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Canola Cold Pressed Oil 5L & Rice Bran Health Oil 5L (5LTR + 5LTR (BUNDLE))**
+**Jivo Canola Cold Pressed Oil 5l Rice Bran Health Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2158 (29.8% off)

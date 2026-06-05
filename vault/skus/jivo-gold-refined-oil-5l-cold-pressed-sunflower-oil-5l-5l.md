@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-5l-cold-pressed-sunflower-oil-5l-5l
-display_name: Jivo Gold Refined Oil 5L & Cold Pressed Sunflower Oil 5L (5LTR + 5LTR (BUNDLE))
+display_name: Jivo Gold Refined Oil 5l Cold Pressed Sunflower Oil 5l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Refined Oil 5L & Cold Pressed Sunflower Oil 5L (5LTR + 5LTR (BUNDLE))**
+**Jivo Gold Refined Oil 5l Cold Pressed Sunflower Oil 5l 5l**
 
 ## Sold on
 - [[amazon]]

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-cooking-pomace-olive-oil-1-litre-jivo-extra-light-olive-oil-1l-for-cooking-1l
-display_name: "Jivo Daily Cooking Pomace Olive Oil |1 Litre &Jivo Extra Light Olive Oil, 1L for Cooking (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Daily Cooking Pomace Olive Oil 1 Litre Jivo Extra Light Olive Oil 1l For Cooking 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Daily Cooking Pomace Olive Oil |1 Litre &Jivo Extra Light Olive Oil, 1L for Cooking (1LTR + 1LTR (BUNDLE))**
+**Jivo Daily Cooking Pomace Olive Oil 1 Litre Jivo Extra Light Olive Oil 1l For Cooking 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹878 (59.1% off)

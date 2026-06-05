@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5-litres-100-natural-and-cold-pressed-cooking-oil-marinadesjivo-olive-oil-extra-light-daily-cooking-5-litre-5l
-display_name: "Jivo Extra Virgin Olive Oil 5 litres, 100% natural and cold pressed cooking oil & Marinades.&Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN) (5LTR + 5LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 5 Litres 100 Natural And Cold Pressed Cooking Oil Marinadesjivo Olive Oil Extra Light Daily Cooking 5 Litre 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 5 litres, 100% natural and cold pressed cooking oil & Marinades.&Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN) (5LTR + 5LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 5 Litres 100 Natural And Cold Pressed Cooking Oil Marinadesjivo Olive Oil Extra Light Daily Cooking 5 Litre 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹6883 (52.5% off)

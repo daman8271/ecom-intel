@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-sunflower-oil-5l-rice-bran-health-oil-1l-5l
-display_name: Jivo Cold Pressed Sunflower Oil 5L & Rice Bran Health Oil 1L (5LTR + 1LTR (BUNDLE))
+display_name: Jivo Cold Pressed Sunflower Oil 5l Rice Bran Health Oil 1l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Sunflower Oil 5L & Rice Bran Health Oil 1L (5LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Sunflower Oil 5l Rice Bran Health Oil 1l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1165 (28.7% off)

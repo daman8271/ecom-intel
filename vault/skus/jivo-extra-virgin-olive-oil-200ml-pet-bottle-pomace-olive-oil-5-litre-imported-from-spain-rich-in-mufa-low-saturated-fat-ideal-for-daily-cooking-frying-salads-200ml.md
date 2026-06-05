@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-200ml-pet-bottle-pomace-olive-oil-5-litre-imported-from-spain-rich-in-mufa-low-saturated-fat-ideal-for-daily-cooking-frying-salads-200ml
-display_name: "Jivo Extra Virgin Olive Oil 200ml Pet Bottle + Pomace Olive Oil 5 Litre | Imported from Spain | Rich in MUFA | Low Saturated Fat | Ideal for Daily Cooking, Frying & Salads (Combo Pack) (200 ML + 5LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 200ml Pet Bottle Pomace Olive Oil 5 Litre Imported From Spain Rich In Mufa Low Saturated Fat Ideal For Daily Cooking Frying Salads 200ml
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 200ml Pet Bottle + Pomace Olive Oil 5 Litre | Imported from Spain | Rich in MUFA | Low Saturated Fat | Ideal for Daily Cooking, Frying & Salads (Combo Pack) (200 ML + 5LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 200ml Pet Bottle Pomace Olive Oil 5 Litre Imported From Spain Rich In Mufa Low Saturated Fat Ideal For Daily Cooking Frying Salads 200ml**
 
 ## Sold on
 - [[amazon]] — latest ₹2115 (60.1% off)

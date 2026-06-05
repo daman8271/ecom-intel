@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-refined-edible-oils-52-ltr-2l
-display_name: Jivo Canola Refined Edible Oils 5+2 Ltr (5 + 2 LTR)
+display_name: Jivo Canola Refined Edible Oils 52 Ltr 2l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Refined Edible Oils 5+2 Ltr (5 + 2 LTR)**
+**Jivo Canola Refined Edible Oils 52 Ltr 2l**
 
 ## Sold on
 - [[amazon]] — latest ₹2010 (0.7% off)

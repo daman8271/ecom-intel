@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-health-oil-5l-kachi-ghani-mustard-oil-5l-5l
-display_name: Jivo Rice Bran Health Oil 5L & Kachi Ghani Mustard Oil 5L (5LTR + 5LTR (BUNDLE))
+display_name: Jivo Rice Bran Health Oil 5l Kachi Ghani Mustard Oil 5l 5l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Health Oil 5L & Kachi Ghani Mustard Oil 5L (5LTR + 5LTR (BUNDLE))**
+**Jivo Rice Bran Health Oil 5l Kachi Ghani Mustard Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1869 (30.1% off)

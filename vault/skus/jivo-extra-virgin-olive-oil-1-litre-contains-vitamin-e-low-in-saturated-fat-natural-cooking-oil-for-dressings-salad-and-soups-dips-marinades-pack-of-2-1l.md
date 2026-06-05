@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-1-litre-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-for-dressings-salad-and-soups-dips-marinades-pack-of-2-1l
-display_name: "Jivo Extra Virgin Olive Oil 1 litre | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades [Pack of 2 (1L Pet Bottle)] (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 1 Litre Contains Vitamin E Low In Saturated Fat Natural Cooking Oil For Dressings Salad And Soups Dips Marinades Pack Of 2 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 1 litre | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades [Pack of 2 (1L Pet Bottle)] (1LTR + 1LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 1 Litre Contains Vitamin E Low In Saturated Fat Natural Cooking Oil For Dressings Salad And Soups Dips Marinades Pack Of 2 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1518 (24.0% off)

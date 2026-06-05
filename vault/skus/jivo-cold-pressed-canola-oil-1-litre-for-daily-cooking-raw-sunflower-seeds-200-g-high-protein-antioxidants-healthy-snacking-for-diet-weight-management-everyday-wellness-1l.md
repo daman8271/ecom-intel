@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-sunflower-seeds-200-g-high-protein-antioxidants-healthy-snacking-for-diet-weight-management-everyday-wellness-1l
-display_name: "Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Sunflower Seeds 200 g | High Protein & Antioxidants | Healthy Snacking for Diet, Weight Management & Everyday Wellness (Combo Pack) (1LTR + 200 GM (BUNDLE))"
+display_name: Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Sunflower Seeds 200 G High Protein Antioxidants Healthy Snacking For Diet Weight Management Everyday Wellness 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Sunflower Seeds 200 g | High Protein & Antioxidants | Healthy Snacking for Diet, Weight Management & Everyday Wellness (Combo Pack) (1LTR + 200 GM (BUNDLE))**
+**Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Sunflower Seeds 200 G High Protein Antioxidants Healthy Snacking For Diet Weight Management Everyday Wellness 1l**
 
 ## Sold on
 - [[amazon]]

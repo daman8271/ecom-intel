@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-2-litres-ideal-for-dressings-salads-soups-dips-and-marinades-perfect-for-healthy-cooking-and-gourmet-delights-1l
-display_name: "Jivo Extra Virgin Olive Oil, 2 Litres - Ideal for Dressings, Salads, Soups, Dips, and Marinades. Perfect for Healthy Cooking and Gourmet Delights (1+1 LTR)"
+display_name: Jivo Extra Virgin Olive Oil 2 Litres Ideal For Dressings Salads Soups Dips And Marinades Perfect For Healthy Cooking And Gourmet Delights 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil, 2 Litres - Ideal for Dressings, Salads, Soups, Dips, and Marinades. Perfect for Healthy Cooking and Gourmet Delights (1+1 LTR)**
+**Jivo Extra Virgin Olive Oil 2 Litres Ideal For Dressings Salads Soups Dips And Marinades Perfect For Healthy Cooking And Gourmet Delights 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1409 (53.0% off)

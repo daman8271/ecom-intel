@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-5l
-display_name: "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1) (5LTR+ 1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre Each Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1) (5LTR+ 1LTR + 1LTR (BUNDLE))**
+**Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre Each Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1718 (28.4% off)

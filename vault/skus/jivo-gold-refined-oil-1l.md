@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-1l
-display_name: Jivo Gold Refined Oil (1 l)
+display_name: Jivo Gold Refined Oil 1l
 platforms:
   - amazon-now
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Refined Oil (1 l)**
+**Jivo Gold Refined Oil 1l**
 
 ## Sold on
 - [[amazon-now]] — latest ₹1077 (17.2% off)

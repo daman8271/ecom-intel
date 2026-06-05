@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l
-display_name: "Jivo Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades. (Pack of 2) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Light Olive Oil 1l For Cooking Dressings Salad And Soups Dips Marinades 1l
 platforms:
   - amazon
   - amazon-fresh
@@ -23,7 +23,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades. (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Extra Light Olive Oil 1l For Cooking Dressings Salad And Soups Dips Marinades 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹998 (66.7% off)

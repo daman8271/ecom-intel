@@ -1,40 +1,46 @@
 ---
 type: sku-hub
 canonical_sku: jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml
-display_name: "Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) Mango (500 ml)"
+display_name: Jivo Healthy Wheatgrass Juice With Mango Flavor Body Detox Immunity Booster Natural Ingredients 500ml Mango 500ml
 platforms:
   - amazon-fresh
+  - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-06-04
-observations: 1
+last_seen: 2026-06-05
+observations: 4
 min_price: 100
 max_price: 100
 latest_price: 100
 tags:
   - type/sku-hub
   - platform/amazon-fresh
+  - platform/amazon-now
 ---
 
 # jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml
 
 Up: [[skus-index]]
 
-**Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) Mango (500 ml)**
+**Jivo Healthy Wheatgrass Juice With Mango Flavor Body Detox Immunity Booster Natural Ingredients 500ml Mango 500ml**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹100
+- [[amazon-now]] — latest ₹100
 
 ## Available in cities
-[[Mumbai]]
+[[Ghaziabad]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-04-1417]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-04-1417]]
 
-## Price history (1 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-fresh,Mumbai,400703,100,,,1
+2026-06-05-1125,2026-06-05,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-05-1125,2026-06-05,amazon-now,Noida,201307,100,,,1
+2026-06-05-1125,2026-06-05,amazon-now,Noida,201309,100,,,1
 ```
 
 ---

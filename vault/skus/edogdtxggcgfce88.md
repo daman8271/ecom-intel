@@ -5,11 +5,11 @@ display_name: Extra Virgin 5L (5 LTR)
 platforms:
   - flipkart
 first_seen: 2026-05-22
-last_seen: 2026-06-04
-observations: 33
+last_seen: 2026-06-05
+observations: 36
 min_price: 3213
-max_price: 3778
-latest_price: 3778
+max_price: 4348
+latest_price: 4348
 tags:
   - type/sku-hub
   - platform/flipkart
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Extra Virgin 5L (5 LTR)**
 
 ## Sold on
-- [[flipkart]] — latest ₹3778 (37.0% off)
+- [[flipkart]] — latest ₹4348 (27.5% off)
 
-## Runs that observed this SKU (33)
-[[flipkart-2026-06-04-1417]] · [[flipkart-2026-06-01-1600]] · [[flipkart-2026-06-01-1200]] · [[flipkart-2026-06-01-0900]] · [[flipkart-2026-05-31-1600]] · [[flipkart-2026-05-31-1200]] · [[flipkart-2026-05-31-0900]] · [[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
+## Runs that observed this SKU (36)
+[[flipkart-2026-06-05-1041]] · [[flipkart-2026-06-05-0413]] · [[flipkart-2026-06-05-0112]] · [[flipkart-2026-06-04-1417]] · [[flipkart-2026-06-01-1600]] · [[flipkart-2026-06-01-1200]] · [[flipkart-2026-06-01-0900]] · [[flipkart-2026-05-31-1600]] · [[flipkart-2026-05-31-1200]] · [[flipkart-2026-05-31-0900]] · [[flipkart-2026-05-30-1200]] · [[flipkart-2026-05-30-0900]] · [[flipkart-2026-05-29-1600]] · [[flipkart-2026-05-29-1200]] · [[flipkart-2026-05-29-0900]] · [[flipkart-2026-05-28-1600]] · [[flipkart-2026-05-28-1200]] · [[flipkart-2026-05-28-0900]] · [[flipkart-2026-05-27-1600]] · [[flipkart-2026-05-27-1200]] · [[flipkart-2026-05-27-0900]] · [[flipkart-2026-05-26-1600]] · [[flipkart-2026-05-26-1200]] · [[flipkart-2026-05-26-0900]] · [[flipkart-2026-05-25-1600]] · [[flipkart-2026-05-25-1200]] · [[flipkart-2026-05-25-0900]] · [[flipkart-2026-05-24-1600]] · [[flipkart-2026-05-24-1200]] · [[flipkart-2026-05-24-0900]] · [[flipkart-2026-05-23-1600]] · [[flipkart-2026-05-23-1200]] · [[flipkart-2026-05-23-0900]] · [[flipkart-2026-05-22-1600]] · [[flipkart-2026-05-22-1200]] · [[flipkart-2026-05-22-0900]]
 
-## Price history (33 observations)
+## Price history (36 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -64,6 +64,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,flipkart,All India,-,3213,5995,46.4,1
 2026-06-01-1600,2026-06-01,flipkart,All India,-,3213,5995,46.4,1
 2026-06-04-1417,2026-06-04,flipkart,All India,-,3778,5995,37,1
+2026-06-05-0112,2026-06-05,flipkart,All India,-,4348,5995,27.5,1
+2026-06-05-0413,2026-06-05,flipkart,All India,-,4348,5995,27.5,1
+2026-06-05-1041,2026-06-05,flipkart,All India,-,4348,5995,27.5,1
 ```
 
 ---

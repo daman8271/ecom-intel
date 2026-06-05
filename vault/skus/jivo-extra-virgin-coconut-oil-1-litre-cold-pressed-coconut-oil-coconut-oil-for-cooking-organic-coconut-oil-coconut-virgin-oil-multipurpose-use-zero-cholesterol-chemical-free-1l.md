@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-coconut-oil-1-litre-cold-pressed-coconut-oil-coconut-oil-for-cooking-organic-coconut-oil-coconut-virgin-oil-multipurpose-use-zero-cholesterol-chemical-free-1l
-display_name: "JIVO Extra Virgin Coconut Oil 1 Litre | Multi-Purpose Cooking Oil | Ideal for Salad Dressing, Light Sautéing & Low-Heat Cooking | Zero Cholesterol & Trans Fat (1+1 LTR)"
+display_name: Jivo Extra Virgin Coconut Oil 1 Litre Cold Pressed Coconut Oil Coconut Oil For Cooking Organic Coconut Oil Coconut Virgin Oil Multipurpose Use Zero Cholesterol Chemical Free 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Extra Virgin Coconut Oil 1 Litre | Multi-Purpose Cooking Oil | Ideal for Salad Dressing, Light Sautéing & Low-Heat Cooking | Zero Cholesterol & Trans Fat (1+1 LTR)**
+**Jivo Extra Virgin Coconut Oil 1 Litre Cold Pressed Coconut Oil Coconut Oil For Cooking Organic Coconut Oil Coconut Virgin Oil Multipurpose Use Zero Cholesterol Chemical Free 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1069 (23.6% off)

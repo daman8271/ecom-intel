@@ -29,11 +29,11 @@ Up: [[flipkart-minutes]] · Day: [[2026-06-01]] · Week: [[2026-W23]] · Month: 
 
 ## SKUs seen
 - [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L) — ₹243 (35.0% off) · in 68 pincodes
-- [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L) — ₹575 · in 2 pincodes
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 1l — ₹575 · in 2 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L) — ₹684 (31.0% off) · in 3 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹961 (23.0% off) · in 26 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L) — ₹178 (30.0% off) · in 57 pincodes
-- [[jivo-cooking-sunflower-oil-can-4l]] — JIVO Cooking Sunflower Oil Can (4 L) — ₹736 (31.0% off) · in 1 pincodes
+- [[jivo-cooking-sunflower-oil-can-4l]] — Jivo Cooking Sunflower Oil Can 4l — ₹736 (31.0% off) · in 1 pincodes
 - [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L) — ₹1959 (30.0% off) · in 41 pincodes
 - [[jivo-mineral-water-1l]] — JIVO Mineral Water (1000 ml) — ₹22 (26.0% off) · in 24 pincodes
 - [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L) — ₹394 (62.0% off) · in 22 pincodes

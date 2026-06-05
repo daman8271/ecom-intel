@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-soaybean-oil-5-litre-with-canola-2-litre-ideal-for-roasting-frying-baking-all-types-of-cuisines-cooking-oil-for-daily-use-pack-1l
-display_name: "Jivo Cold Pressed Soaybean oil 5 Litre with Canola 2 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use (Pack of 3) (5+1+1 LTR)"
+display_name: Jivo Cold Pressed Soaybean Oil 5 Litre With Canola 2 Litre Ideal For Roasting Frying Baking All Types Of Cuisines Cooking Oil For Daily Use Pack 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Soaybean oil 5 Litre with Canola 2 Litre | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use (Pack of 3) (5+1+1 LTR)**
+**Jivo Cold Pressed Soaybean Oil 5 Litre With Canola 2 Litre Ideal For Roasting Frying Baking All Types Of Cuisines Cooking Oil For Daily Use Pack 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1599 (13.6% off)

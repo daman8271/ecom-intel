@@ -5,8 +5,8 @@ display_name: Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da 
 platforms:
   - blinkit
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 288
+last_seen: 2026-06-05
+observations: 304
 min_price: 161
 max_price: 171
 latest_price: 171
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Chandigarh]] · [[Ludhiana]]
 
-## Runs that observed this SKU (36)
-[[blinkit-2026-06-04-1417]] · [[blinkit-2026-06-01-1600]] · [[blinkit-2026-06-01-1200]] · [[blinkit-2026-06-01-0900]] · [[blinkit-2026-05-31-1600]] · [[blinkit-2026-05-31-1200]] · [[blinkit-2026-05-31-0900]] · [[blinkit-2026-05-30-1200]] · [[blinkit-2026-05-30-0900]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-28-1600]] · [[blinkit-2026-05-28-1200]] · [[blinkit-2026-05-28-0900]] · [[blinkit-2026-05-27-1600]] · [[blinkit-2026-05-27-1200]] · [[blinkit-2026-05-27-0900]] · [[blinkit-2026-05-26-1600]] · [[blinkit-2026-05-26-1200]] · [[blinkit-2026-05-26-0900]] · [[blinkit-2026-05-25-1600]] · [[blinkit-2026-05-25-1200]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-24-1200]] · [[blinkit-2026-05-24-0900]] · [[blinkit-2026-05-23-1600]] · [[blinkit-2026-05-23-1200]] · [[blinkit-2026-05-23-0900]] · [[blinkit-2026-05-22-1600]] · [[blinkit-2026-05-22-1200]] · [[blinkit-2026-05-22-0900]] · [[blinkit-2026-05-21-1736]] · [[blinkit-2026-05-21-1703]] · [[blinkit-2026-05-21-1417]]
+## Runs that observed this SKU (37)
+[[blinkit-2026-06-05-1151]] · [[blinkit-2026-06-04-1417]] · [[blinkit-2026-06-01-1600]] · [[blinkit-2026-06-01-1200]] · [[blinkit-2026-06-01-0900]] · [[blinkit-2026-05-31-1600]] · [[blinkit-2026-05-31-1200]] · [[blinkit-2026-05-31-0900]] · [[blinkit-2026-05-30-1200]] · [[blinkit-2026-05-30-0900]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-28-1600]] · [[blinkit-2026-05-28-1200]] · [[blinkit-2026-05-28-0900]] · [[blinkit-2026-05-27-1600]] · [[blinkit-2026-05-27-1200]] · [[blinkit-2026-05-27-0900]] · [[blinkit-2026-05-26-1600]] · [[blinkit-2026-05-26-1200]] · [[blinkit-2026-05-26-0900]] · [[blinkit-2026-05-25-1600]] · [[blinkit-2026-05-25-1200]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-24-1200]] · [[blinkit-2026-05-24-0900]] · [[blinkit-2026-05-23-1600]] · [[blinkit-2026-05-23-1200]] · [[blinkit-2026-05-23-0900]] · [[blinkit-2026-05-22-1600]] · [[blinkit-2026-05-22-1200]] · [[blinkit-2026-05-22-0900]] · [[blinkit-2026-05-21-1736]] · [[blinkit-2026-05-21-1703]] · [[blinkit-2026-05-21-1417]]
 
-## Price history (288 observations)
+## Price history (304 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -322,6 +322,22 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,blinkit,Ludhiana,141421,171,255,32.9,1
 2026-06-04-1417,2026-06-04,blinkit,Ludhiana,142027,171,255,32.9,1
 2026-06-04-1417,2026-06-04,blinkit,Ludhiana,142036,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Chandigarh,160001,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Chandigarh,160011,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Chandigarh,160014,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Chandigarh,160021,168,255,34.1,1
+2026-06-05-1151,2026-06-05,blinkit,Chandigarh,160030,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Chandigarh,160035,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Chandigarh,160043,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,141014,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,141015,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,141017,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,141122,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,141412,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,141421,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,142022,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,142027,171,255,32.9,1
+2026-06-05-1151,2026-06-05,blinkit,Ludhiana,142036,171,255,32.9,1
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-extra-virgin-olive-oil-pomace-olive-oil-healthy-cooking-oil-for-daily-use-lowest-in-saturated-fat-chemical-free-1l
-display_name: "Jivo Extra light Olive Oil, Extra Virgin Olive Oil & Pomace Olive Oil (1L Each)|Healthy Cooking Oil for Daily use| Lowest in Saturated Fat, Chemical free (Pack of 3 Litres) (1LTR + 1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Light Olive Oil Extra Virgin Olive Oil Pomace Olive Oil Healthy Cooking Oil For Daily Use Lowest In Saturated Fat Chemical Free 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra light Olive Oil, Extra Virgin Olive Oil & Pomace Olive Oil (1L Each)|Healthy Cooking Oil for Daily use| Lowest in Saturated Fat, Chemical free (Pack of 3 Litres) (1LTR + 1LTR + 1LTR (BUNDLE))**
+**Jivo Extra Light Olive Oil Extra Virgin Olive Oil Pomace Olive Oil Healthy Cooking Oil For Daily Use Lowest In Saturated Fat Chemical Free 1l**
 
 ## Sold on
 - [[amazon]]

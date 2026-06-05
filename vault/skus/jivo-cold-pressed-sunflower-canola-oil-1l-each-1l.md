@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-sunflower-canola-oil-1l-each-1l
-display_name: Jivo Cold Pressed Sunflower & Canola Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))
+display_name: Jivo Cold Pressed Sunflower Canola Oil 1l Each 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Sunflower & Canola Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Sunflower Canola Oil 1l Each 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹433 (33.4% off)

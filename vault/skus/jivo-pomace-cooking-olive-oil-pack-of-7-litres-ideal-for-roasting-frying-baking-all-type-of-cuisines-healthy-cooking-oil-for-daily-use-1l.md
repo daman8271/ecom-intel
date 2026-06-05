@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-pack-of-7-litres-ideal-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-1l
-display_name: "Jivo Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle) | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (5 + 1 + 1 LTR)"
+display_name: Jivo Pomace Cooking Olive Oil Pack Of 7 Litres Ideal For Roasting Frying Baking All Type Of Cuisines Healthy Cooking Oil For Daily Use 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle) | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (5 + 1 + 1 LTR)**
+**Jivo Pomace Cooking Olive Oil Pack Of 7 Litres Ideal For Roasting Frying Baking All Type Of Cuisines Healthy Cooking Oil For Daily Use 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹2699 (55.7% off)

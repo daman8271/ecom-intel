@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-1l-jivo-extra-light-olive-oil-1l-for-cooking-1l
-display_name: "Jivo Extra Virgin Olive Oil, 1L &Jivo Extra Light Olive Oil, 1L for Cooking (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 1l Jivo Extra Light Olive Oil 1l For Cooking 1l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil, 1L &Jivo Extra Light Olive Oil, 1L for Cooking (1LTR + 1LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 1l Jivo Extra Light Olive Oil 1l For Cooking 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1258 (49.6% off)

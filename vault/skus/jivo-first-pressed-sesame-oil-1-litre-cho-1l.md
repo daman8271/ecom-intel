@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-sesame-oil-1-litre-cho-1l
-display_name: "Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cho"
+display_name: Jivo First Pressed Sesame Oil 1 Litre Cho 1l
 platforms:
   - amazon-now
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cho**
+**Jivo First Pressed Sesame Oil 1 Litre Cho 1l**
 
 ## Sold on
 - [[amazon-now]] — latest ₹329 (45.2% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: extra-light-olive-oil-5l
-display_name: Extra Light Olive Oil (5 L)
+display_name: Extra Light Olive Oil 5l
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Extra Light Olive Oil (5 L)**
+**Extra Light Olive Oil 5l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹1840 (52.8% off)

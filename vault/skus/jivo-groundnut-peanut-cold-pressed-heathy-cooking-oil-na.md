@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na
-display_name: "Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil (1 Pack(200 m))"
+display_name: Jivo Groundnut Peanut Cold Pressed Heathy Cooking Oil Na
 platforms:
   - zepto
 first_seen: 2026-05-30
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil (1 Pack(200 m))**
+**Jivo Groundnut Peanut Cold Pressed Heathy Cooking Oil Na**
 
 ## Sold on
 - [[zepto]] — latest ₹49 (67.3% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-soyabean-oil-1-ltr-1l
-display_name: "Jivo Soyabean Oil | Chemical Free Cooking Oil for Roasting, Frying & Baking | Rich in Omega 3 & 6 | Light & Daily Use Oil | 1 Litre (Pack of 2) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Press Soyabean Oil 1 Ltr 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Soyabean Oil | Chemical Free Cooking Oil for Roasting, Frying & Baking | Rich in Omega 3 & 6 | Light & Daily Use Oil | 1 Litre (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Cold Press Soyabean Oil 1 Ltr 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹398 (11.6% off)

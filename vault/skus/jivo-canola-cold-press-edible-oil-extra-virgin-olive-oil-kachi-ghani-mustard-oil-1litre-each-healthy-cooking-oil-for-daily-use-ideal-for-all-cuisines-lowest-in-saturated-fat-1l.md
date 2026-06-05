@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-extra-virgin-olive-oil-kachi-ghani-mustard-oil-1litre-each-healthy-cooking-oil-for-daily-use-ideal-for-all-cuisines-lowest-in-saturated-fat-1l
-display_name: "Jivo Canola Cold Press Edible Oil, Extra Virgin Olive Oil & Kachi Ghani mustard Oil 1Litre Each | Healthy Cooking Oil for Daily use, Ideal for all Cuisines | Lowest in Saturated Fat(Pack of 3 Litres) (1LTR + 1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Canola Cold Press Edible Oil Extra Virgin Olive Oil Kachi Ghani Mustard Oil 1litre Each Healthy Cooking Oil For Daily Use Ideal For All Cuisines Lowest In Saturated Fat 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil, Extra Virgin Olive Oil & Kachi Ghani mustard Oil 1Litre Each | Healthy Cooking Oil for Daily use, Ideal for all Cuisines | Lowest in Saturated Fat(Pack of 3 Litres) (1LTR + 1LTR + 1LTR (BUNDLE))**
+**Jivo Canola Cold Press Edible Oil Extra Virgin Olive Oil Kachi Ghani Mustard Oil 1litre Each Healthy Cooking Oil For Daily Use Ideal For All Cuisines Lowest In Saturated Fat 1l**
 
 ## Sold on
 - [[amazon]]

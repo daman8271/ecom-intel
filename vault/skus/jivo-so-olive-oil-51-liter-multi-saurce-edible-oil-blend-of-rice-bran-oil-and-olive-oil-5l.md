@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-so-olive-oil-51-liter-multi-saurce-edible-oil-blend-of-rice-bran-oil-and-olive-oil-5l
-display_name: "Jivo So Olive Oil - 5+1 Liter | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil (Pack of 2) (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo So Olive Oil 51 Liter Multi Saurce Edible Oil Blend Of Rice Bran Oil And Olive Oil 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo So Olive Oil - 5+1 Liter | Multi - Saurce Edible Oil | Blend Of Rice Bran Oil And Olive Oil (Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo So Olive Oil 51 Liter Multi Saurce Edible Oil Blend Of Rice Bran Oil And Olive Oil 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1620 (16.9% off)

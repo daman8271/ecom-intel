@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-5-litre-with-cold-pressed-canola-oil-1-litre-recommended-for-roasting-frying-baking-all-types-of-cuisines-cooking-oil-for-daily-use-1l
-display_name: "Jivo Pomace Cooking Olive Oil 5 Litre with Cold Pressed Canola oil 1 Litre | Recommended for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use |(Pack 6L) (5+1 LTR)"
+display_name: Jivo Pomace Cooking Olive Oil 5 Litre With Cold Pressed Canola Oil 1 Litre Recommended For Roasting Frying Baking All Types Of Cuisines Cooking Oil For Daily Use 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Cooking Olive Oil 5 Litre with Cold Pressed Canola oil 1 Litre | Recommended for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use |(Pack 6L) (5+1 LTR)**
+**Jivo Pomace Cooking Olive Oil 5 Litre With Cold Pressed Canola Oil 1 Litre Recommended For Roasting Frying Baking All Types Of Cuisines Cooking Oil For Daily Use 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹2210 (58.9% off)

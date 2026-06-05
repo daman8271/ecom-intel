@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-health-oil-1l-kachi-ghani-mustard-oil-5l-5l
-display_name: Jivo Rice Bran Health Oil 1L & Kachi Ghani Mustard Oil 5L (5LTR + 1LTR (BUNDLE))
+display_name: Jivo Rice Bran Health Oil 1l Kachi Ghani Mustard Oil 5l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Health Oil 1L & Kachi Ghani Mustard Oil 5L (5LTR + 1LTR (BUNDLE))**
+**Jivo Rice Bran Health Oil 1l Kachi Ghani Mustard Oil 5l 5l**
 
 ## Sold on
 - [[amazon]]

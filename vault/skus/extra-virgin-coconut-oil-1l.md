@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: extra-virgin-coconut-oil-1l
-display_name: Extra Virgin Coconut Oil (1 L)
+display_name: Extra Virgin Coconut Oil 1l
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Extra Virgin Coconut Oil (1 L)**
+**Extra Virgin Coconut Oil 1l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹467.25 (33.3% off)

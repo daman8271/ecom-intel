@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-mustard-oil-1l-gold-refined-oil-5l-5l
-display_name: "Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Kachi Ghani Mustard Oil 1l Gold Refined Oil 5l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 1LTR (BUNDLE))**
+**Jivo Kachi Ghani Mustard Oil 1l Gold Refined Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1076 (17.5% off)

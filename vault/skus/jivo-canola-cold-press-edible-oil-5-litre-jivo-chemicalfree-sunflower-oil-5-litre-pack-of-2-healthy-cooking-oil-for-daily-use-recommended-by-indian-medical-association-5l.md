@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-5-litre-jivo-chemicalfree-sunflower-oil-5-litre-pack-of-2-healthy-cooking-oil-for-daily-use-recommended-by-indian-medical-association-5l
-display_name: "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Chemical-free Sunflower Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association (5LTR + 5LTR (BUNDLE))"
+display_name: Jivo Canola Cold Press Edible Oil 5 Litre Jivo Chemicalfree Sunflower Oil 5 Litre Pack Of 2 Healthy Cooking Oil For Daily Use Recommended By Indian Medical Association 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Chemical-free Sunflower Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association (5LTR + 5LTR (BUNDLE))**
+**Jivo Canola Cold Press Edible Oil 5 Litre Jivo Chemicalfree Sunflower Oil 5 Litre Pack Of 2 Healthy Cooking Oil For Daily Use Recommended By Indian Medical Association 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2225 (25.8% off)

@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na
-display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend O Na
+display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend o
 platforms:
   - amazon-now
 first_seen: 2026-06-01
-last_seen: 2026-06-01
-observations: 1
-min_price: 189
+last_seen: 2026-06-05
+observations: 2
+min_price: 173
 max_price: 189
-latest_price: 189
+latest_price: 173
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -19,22 +19,23 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Premium Refined Cooking Oil Perfect Blend O Na**
+**Jivo Gold Premium Refined Cooking Oil Perfect Blend o**
 
 ## Sold on
-- [[amazon-now]] — latest ₹189 (16.0% off)
+- [[amazon-now]] — latest ₹173 (23.1% off)
 
 ## Available in cities
 [[Delhi]]
 
-## Runs that observed this SKU (1)
-[[amazon-now-2026-06-01-1600]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-01-1600]]
 
-## Price history (1 observations)
+## Price history (2 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1600,2026-06-01,amazon-now,Delhi,110048,189,225,16,1
+2026-06-05-1125,2026-06-05,amazon-now,Delhi,110051,173,225,23.1,1
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-pack-of-2-daily-cooking-oil-recommended-for-roasting-frying-baking-all-type-of-cuisines-5l
-display_name: "JIVO Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre | Pack of 2 | Daily Cooking Oil, Recommended for Roasting, Frying, Baking All type of Cuisines| (5LTR + 5LTR (BUNDLE))"
+display_name: Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre With Jivo Chemical Free Sunflower Oil 5 Litre Pack Of 2 Daily Cooking Oil Recommended For Roasting Frying Baking All Type Of Cuisines 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre | Pack of 2 | Daily Cooking Oil, Recommended for Roasting, Frying, Baking All type of Cuisines| (5LTR + 5LTR (BUNDLE))**
+**Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre With Jivo Chemical Free Sunflower Oil 5 Litre Pack Of 2 Daily Cooking Oil Recommended For Roasting Frying Baking All Type Of Cuisines 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1936 (25.5% off)

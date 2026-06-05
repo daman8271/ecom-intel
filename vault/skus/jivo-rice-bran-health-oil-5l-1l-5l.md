@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-health-oil-5l-1l-5l
-display_name: "Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack | Cooking Oil for Everyday Use | Light Texture & Versatile for Frying, Roasting & Daily Cooking (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Rice Bran Health Oil 5l 1l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack | Cooking Oil for Everyday Use | Light Texture & Versatile for Frying, Roasting & Daily Cooking (5LTR + 1LTR (BUNDLE))**
+**Jivo Rice Bran Health Oil 5l 1l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1098 (35.8% off)

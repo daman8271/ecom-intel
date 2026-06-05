@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5l-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-5l
-display_name: "Jivo Extra Virgin Olive Oil 5L & Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2) (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 5l Extra Light Olive Oil 1l For Cooking Dressings Salad And Soups Dips Marinades 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 5L & Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades (Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 5l Extra Light Olive Oil 1l For Cooking Dressings Salad And Soups Dips Marinades 5l**
 
 ## Sold on
 - [[amazon]]

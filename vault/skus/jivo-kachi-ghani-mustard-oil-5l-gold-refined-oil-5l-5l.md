@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-mustard-oil-5l-gold-refined-oil-5l-5l
-display_name: Jivo Kachi Ghani Mustard Oil 5L & Gold Refined Oil 5L (5LTR + 1LTR (BUNDLE))
+display_name: Jivo Kachi Ghani Mustard Oil 5l Gold Refined Oil 5l 5l
 platforms:
   - amazon
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Mustard Oil 5L & Gold Refined Oil 5L (5LTR + 1LTR (BUNDLE))**
+**Jivo Kachi Ghani Mustard Oil 5l Gold Refined Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1869 (18.7% off)

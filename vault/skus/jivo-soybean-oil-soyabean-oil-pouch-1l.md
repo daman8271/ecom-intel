@@ -1,19 +1,17 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soybean-oil-soyabean-oil-pouch-1l
-display_name: Jivo Soybean Oil Soyabean Oil Pouch 1l
+display_name: JIVO Soybean Oil Soyabean Oil Pouch (1 L)
 platforms:
-  - flipkart
   - flipkart-minutes
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 251
+last_seen: 2026-06-05
+observations: 281
 min_price: 139
-max_price: 199
-latest_price: 149
+max_price: 178
+latest_price: 171
 tags:
   - type/sku-hub
-  - platform/flipkart
   - platform/flipkart-minutes
 ---
 
@@ -21,19 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Soybean Oil Soyabean Oil Pouch 1l**
+**JIVO Soybean Oil Soyabean Oil Pouch (1 L)**
 
 ## Sold on
-- [[flipkart]] — latest ₹199
-- [[flipkart-minutes]] — latest ₹149 (25.0% off)
+- [[flipkart-minutes]] — latest ₹171 (14.0% off)
 
 ## Available in cities
 [[Chandigarh]] · [[Delhi]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Noida]]
 
-## Runs that observed this SKU (35)
-[[flipkart-minutes-2026-06-04-1417]] · [[flipkart-minutes-2026-06-01-1600]] · [[flipkart-minutes-2026-06-01-1200]] · [[flipkart-minutes-2026-06-01-0900]] · [[flipkart-minutes-2026-05-31-1600]] · [[flipkart-minutes-2026-05-31-1200]] · [[flipkart-minutes-2026-05-31-0900]] · [[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1600]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]] · [[flipkart-minutes-2026-05-28-1600]] · [[flipkart-minutes-2026-05-28-1200]] · [[flipkart-minutes-2026-05-28-0900]] · [[flipkart-minutes-2026-05-27-1600]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-27-0900]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-26-0900]] · [[flipkart-minutes-2026-05-25-1600]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-25-0900]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-23-0900]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-1200]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]]
+## Runs that observed this SKU (36)
+[[flipkart-minutes-2026-06-05-1039]] · [[flipkart-minutes-2026-06-05-0112]] · [[flipkart-minutes-2026-06-04-1417]] · [[flipkart-minutes-2026-06-01-1600]] · [[flipkart-minutes-2026-06-01-1200]] · [[flipkart-minutes-2026-06-01-0900]] · [[flipkart-minutes-2026-05-31-1600]] · [[flipkart-minutes-2026-05-31-1200]] · [[flipkart-minutes-2026-05-31-0900]] · [[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1600]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]] · [[flipkart-minutes-2026-05-28-1600]] · [[flipkart-minutes-2026-05-28-1200]] · [[flipkart-minutes-2026-05-28-0900]] · [[flipkart-minutes-2026-05-27-1600]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-27-0900]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-26-0900]] · [[flipkart-minutes-2026-05-25-1600]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-25-0900]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-23-0900]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-1200]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]]
 
-## Price history (251 observations)
+## Price history (281 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -41,7 +38,6 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1305,2026-05-21,flipkart-minutes,Gurgaon,122002,164,164,0,0
 2026-05-21-1305,2026-05-21,flipkart-minutes,Kolkata,700064,169,169,0,0
 2026-05-21-1305,2026-05-21,flipkart-minutes,Noida,201301,164,164,0,0
-2026-05-21-1323,2026-05-21,flipkart,All India,-,199,199,0,0
 2026-05-22-0900,2026-05-22,flipkart-minutes,Chandigarh,160017,164,164,0,0
 2026-05-22-0900,2026-05-22,flipkart-minutes,Kolkata,700019,169,169,0,0
 2026-05-22-0900,2026-05-22,flipkart-minutes,Kolkata,700064,169,169,0,0
@@ -288,6 +284,37 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,flipkart-minutes,Kolkata,700001,149,199,25,0
 2026-06-04-1417,2026-06-04,flipkart-minutes,Kolkata,700015,149,199,25,0
 2026-06-04-1417,2026-06-04,flipkart-minutes,Kolkata,700040,149,199,25,0
+2026-06-05-0112,2026-06-05,flipkart-minutes,Gurgaon,122004,171,199,14,0
+2026-06-05-0112,2026-06-05,flipkart-minutes,Gurgaon,123003,171,199,14,0
+2026-06-05-0112,2026-06-05,flipkart-minutes,Gurgaon,123413,171,199,14,0
+2026-06-05-0112,2026-06-05,flipkart-minutes,Kolkata,700001,149,199,25,0
+2026-06-05-0112,2026-06-05,flipkart-minutes,Kolkata,700019,149,199,25,0
+2026-06-05-0112,2026-06-05,flipkart-minutes,Kolkata,700040,149,199,25,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Chandigarh,160030,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Delhi,110010,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Delhi,110040,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Delhi,110076,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Delhi,110090,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Gurgaon,122004,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Gurgaon,123003,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Gurgaon,123413,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302012,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302016,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302017,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302018,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302020,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302021,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302022,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302023,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302024,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302025,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,302032,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Jaipur,303602,171,199,14,1
+2026-06-05-1039,2026-06-05,flipkart-minutes,Kolkata,700001,149,199,25,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Kolkata,700019,149,199,25,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Kolkata,700040,149,199,25,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Ludhiana,141015,171,199,14,0
+2026-06-05-1039,2026-06-05,flipkart-minutes,Ludhiana,142036,171,199,14,0
 ```
 
 ---

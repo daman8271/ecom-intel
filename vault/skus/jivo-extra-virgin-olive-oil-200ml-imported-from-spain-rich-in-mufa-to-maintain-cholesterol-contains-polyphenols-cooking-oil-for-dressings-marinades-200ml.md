@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-200ml-imported-from-spain-rich-in-mufa-to-maintain-cholesterol-contains-polyphenols-cooking-oil-for-dressings-marinades-200ml
-display_name: "Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades (0.2 + 0.2 LTR)"
+display_name: Jivo Extra Virgin Olive Oil 200ml Imported From Spain Rich In Mufa To Maintain Cholesterol Contains Polyphenols Cooking Oil For Dressings Marinades 200ml
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades (0.2 + 0.2 LTR)**
+**Jivo Extra Virgin Olive Oil 200ml Imported From Spain Rich In Mufa To Maintain Cholesterol Contains Polyphenols Cooking Oil For Dressings Marinades 200ml**
 
 ## Sold on
 - [[amazon]] — latest ₹299 (62.6% off)

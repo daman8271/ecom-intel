@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-cooking-pomace-olive-oil-1-litre-rich-in-mufa-low-in-saturated-fat-1l
-display_name: "Jivo Daily Cooking Pomace Olive Oil |1 Litre | Rich in MUFA | Low in Saturated Fat (Pack of 2) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Daily Cooking Pomace Olive Oil 1 Litre Rich In Mufa Low In Saturated Fat 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Daily Cooking Pomace Olive Oil |1 Litre | Rich in MUFA | Low in Saturated Fat (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Daily Cooking Pomace Olive Oil 1 Litre Rich In Mufa Low In Saturated Fat 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹758 (41.6% off)

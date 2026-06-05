@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-sunflower-oil-5l-canola-cooking-oil-for-daily-use-lowest-in-saturated-fat-1l-5l
-display_name: Jivo Cold Pressed Sunflower Oil 5L & Canola Cooking Oil for Daily use Lowest in Saturated Fat 1L (Pack of 2) (5LTR + 1LTR (BUNDLE))
+display_name: Jivo Cold Pressed Sunflower Oil 5l Canola Cooking Oil For Daily Use Lowest In Saturated Fat 1l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Sunflower Oil 5L & Canola Cooking Oil for Daily use Lowest in Saturated Fat 1L (Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Sunflower Oil 5l Canola Cooking Oil For Daily Use Lowest In Saturated Fat 1l 5l**
 
 ## Sold on
 - [[amazon]]

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-1l
-display_name: "Sano Pomace Olive Oil 2L Pet Bottle Ideal For Frying, Roasting & Sauteing Rich Flavour & High Smoke Point Versatile Cooking Edible Oil For Indian Cuisine. (1+1 LTR)"
+display_name: Sano Pomace Olive Oil 2l Pet Bottle Ideal For Frying Roasting Sauteing Rich Flavour High Smoke Point Versatile Cooking Edible Oil For Indian Cuis 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Sano Pomace Olive Oil 2L Pet Bottle Ideal For Frying, Roasting & Sauteing Rich Flavour & High Smoke Point Versatile Cooking Edible Oil For Indian Cuisine. (1+1 LTR)**
+**Sano Pomace Olive Oil 2l Pet Bottle Ideal For Frying Roasting Sauteing Rich Flavour High Smoke Point Versatile Cooking Edible Oil For Indian Cuis 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹759 (62.0% off)

@@ -5,11 +5,11 @@ display_name: Extra Light Olive Oil (1 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-04
-observations: 4
+last_seen: 2026-06-05
+observations: 14
 min_price: 743.85
-max_price: 743.85
-latest_price: 743.85
+max_price: 1284
+latest_price: 1284
 tags:
   - type/sku-hub
   - platform/bigbasket
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Extra Light Olive Oil (1 L)**
 
 ## Sold on
-- [[bigbasket]] — latest ₹743.85 (50.4% off)
+- [[bigbasket]] — latest ₹1284 (14.3% off)
 
-## Runs that observed this SKU (4)
-[[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (14)
+[[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1057]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (4 observations)
+## Price history (14 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -35,6 +35,16 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,bigbasket,All India,-,743.85,1499,50.4,1
 2026-06-01-1600,2026-06-01,bigbasket,All India,-,743.85,1499,50.4,1
 2026-06-04-1417,2026-06-04,bigbasket,All India,-,743.85,1499,50.4,1
+2026-06-04-1902,2026-06-04,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-04-1909,2026-06-04,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-04-1918,2026-06-04,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-05-0112,2026-06-05,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-05-0114,2026-06-05,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-05-0115,2026-06-05,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-05-0429,2026-06-05,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-05-1056,2026-06-05,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-05-1057,2026-06-05,bigbasket,All India,-,1284,1499,14.3,1
+2026-06-05-1315,2026-06-05,bigbasket,All India,-,1284,1499,14.3,1
 ```
 
 ---

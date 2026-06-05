@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: sano-pomace-olive-oil-51l-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-1l
-display_name: "sano Pomace Olive Oil 5+1L- Ideal for Frying, Roasting & Sautéing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (Pack of 2) (5 + 1 LTR)"
+display_name: Sano Pomace Olive Oil 51l Ideal For Frying Roasting Sauting Rich Flavour High Smoke Point Versatile Cooking Oil For Indian Cuisine 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**sano Pomace Olive Oil 5+1L- Ideal for Frying, Roasting & Sautéing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (Pack of 2) (5 + 1 LTR)**
+**Sano Pomace Olive Oil 51l Ideal For Frying Roasting Sauting Rich Flavour High Smoke Point Versatile Cooking Oil For Indian Cuisine 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹2299 (61.6% off)

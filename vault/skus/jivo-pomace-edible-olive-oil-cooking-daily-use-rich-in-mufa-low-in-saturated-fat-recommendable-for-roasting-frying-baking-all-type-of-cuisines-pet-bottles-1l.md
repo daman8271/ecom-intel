@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-edible-olive-oil-cooking-daily-use-rich-in-mufa-low-in-saturated-fat-recommendable-for-roasting-frying-baking-all-type-of-cuisines-pet-bottles-1l
-display_name: "Jivo Pomace Edible Olive Oil Cooking Daily Use | Rich in MUFA | Low in Saturated Fat|| Recommendable for Roasting, Frying, Baking All type of Cuisines (Pack of 3) PET Bottles (1+1+1 LTR)"
+display_name: Jivo Pomace Edible Olive Oil Cooking Daily Use Rich In Mufa Low In Saturated Fat Recommendable For Roasting Frying Baking All Type Of Cuisines Pet Bottles 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Edible Olive Oil Cooking Daily Use | Rich in MUFA | Low in Saturated Fat|| Recommendable for Roasting, Frying, Baking All type of Cuisines (Pack of 3) PET Bottles (1+1+1 LTR)**
+**Jivo Pomace Edible Olive Oil Cooking Daily Use Rich In Mufa Low In Saturated Fat Recommendable For Roasting Frying Baking All Type Of Cuisines Pet Bottles 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1319 (41.3% off)

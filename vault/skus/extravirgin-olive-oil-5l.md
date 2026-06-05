@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: extravirgin-olive-oil-5l
-display_name: Extra-Virgin Olive Oil (5 L)
+display_name: Extravirgin Olive Oil 5l
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Extra-Virgin Olive Oil (5 L)**
+**Extravirgin Olive Oil 5l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹5077 (36.5% off)

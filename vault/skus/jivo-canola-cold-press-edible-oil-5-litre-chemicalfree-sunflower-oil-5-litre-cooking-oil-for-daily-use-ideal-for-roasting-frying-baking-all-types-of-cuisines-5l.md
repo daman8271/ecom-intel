@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-5-litre-chemicalfree-sunflower-oil-5-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-5l
-display_name: "Jivo Canola Cold Press Edible Oil 5 Litre + Chemical-free Sunflower Oil 5 Litre | Cooking Oil for Daily use | Ideal for Roasting, Frying, Baking & All Types of Cuisines (5 + 5 LTR)"
+display_name: Jivo Canola Cold Press Edible Oil 5 Litre Chemicalfree Sunflower Oil 5 Litre Cooking Oil For Daily Use Ideal For Roasting Frying Baking All Types Of Cuisines 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil 5 Litre + Chemical-free Sunflower Oil 5 Litre | Cooking Oil for Daily use | Ideal for Roasting, Frying, Baking & All Types of Cuisines (5 + 5 LTR)**
+**Jivo Canola Cold Press Edible Oil 5 Litre Chemicalfree Sunflower Oil 5 Litre Cooking Oil For Daily Use Ideal For Roasting Frying Baking All Types Of Cuisines 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2769 (7.7% off)

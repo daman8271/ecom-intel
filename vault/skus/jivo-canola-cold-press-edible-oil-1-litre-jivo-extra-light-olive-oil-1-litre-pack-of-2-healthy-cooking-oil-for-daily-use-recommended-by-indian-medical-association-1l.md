@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-1-litre-jivo-extra-light-olive-oil-1-litre-pack-of-2-healthy-cooking-oil-for-daily-use-recommended-by-indian-medical-association-1l
-display_name: "Jivo Canola Cold Press Edible Oil 1 Litre + Jivo Extra light Olive Oil 1 Litre | Pack of 2 | Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Canola Cold Press Edible Oil 1 Litre Jivo Extra Light Olive Oil 1 Litre Pack Of 2 Healthy Cooking Oil For Daily Use Recommended By Indian Medical Association 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil 1 Litre + Jivo Extra light Olive Oil 1 Litre | Pack of 2 | Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association (1LTR + 1LTR (BUNDLE))**
+**Jivo Canola Cold Press Edible Oil 1 Litre Jivo Extra Light Olive Oil 1 Litre Pack Of 2 Healthy Cooking Oil For Daily Use Recommended By Indian Medical Association 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹754 (59.8% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-1l-for-cooking-jivo-olive-oil-extra-light-daily-cooking-5-litre-5l
-display_name: "Jivo Extra Light Olive Oil, 1L for Cooking, & Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN) (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Light Olive Oil 1l For Cooking Jivo Olive Oil Extra Light Daily Cooking 5 Litre 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil, 1L for Cooking, & Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN) (5LTR + 1LTR (BUNDLE))**
+**Jivo Extra Light Olive Oil 1l For Cooking Jivo Olive Oil Extra Light Daily Cooking 5 Litre 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹3443 (57.0% off)

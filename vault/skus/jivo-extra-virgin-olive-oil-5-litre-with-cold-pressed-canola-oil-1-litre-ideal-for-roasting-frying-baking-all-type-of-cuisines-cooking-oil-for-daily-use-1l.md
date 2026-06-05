@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5-litre-with-cold-pressed-canola-oil-1-litre-ideal-for-roasting-frying-baking-all-type-of-cuisines-cooking-oil-for-daily-use-1l
-display_name: "Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Cooking Oil for Daily use | (Pack of 6L) (5+1 LTR)"
+display_name: Jivo Extra Virgin Olive Oil 5 Litre With Cold Pressed Canola Oil 1 Litre Ideal For Roasting Frying Baking All Type Of Cuisines Cooking Oil For Daily Use 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Cooking Oil for Daily use | (Pack of 6L) (5+1 LTR)**
+**Jivo Extra Virgin Olive Oil 5 Litre With Cold Pressed Canola Oil 1 Litre Ideal For Roasting Frying Baking All Type Of Cuisines Cooking Oil For Daily Use 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹3650 (42.7% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soyabean-cooking-edible-oil-everyday-kitchen-use-5-litre-each-ideal-for-roasting-frying-and-baking-all-types-of-cuisines-healthy-cooking-oil-for-daily-use-pack-of-10-litres-5l
-display_name: "JIVO Soyabean Cooking Edible Oil Everyday Kitchen Use 5 Litre Each - Ideal for Roasting, Frying, and Baking All Types of Cuisines - Healthy Cooking Oil for Daily Use - Pack of 10 Litres (5+5 LTR)"
+display_name: Jivo Soyabean Cooking Edible Oil Everyday Kitchen Use 5 Litre Each Ideal For Roasting Frying And Baking All Types Of Cuisines Healthy Cooking Oil For Daily Use Pack Of 10 Litres 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Soyabean Cooking Edible Oil Everyday Kitchen Use 5 Litre Each - Ideal for Roasting, Frying, and Baking All Types of Cuisines - Healthy Cooking Oil for Daily Use - Pack of 10 Litres (5+5 LTR)**
+**Jivo Soyabean Cooking Edible Oil Everyday Kitchen Use 5 Litre Each Ideal For Roasting Frying And Baking All Types Of Cuisines Healthy Cooking Oil For Daily Use Pack Of 10 Litres 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2099 (8.7% off)

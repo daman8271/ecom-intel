@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-f-1l
-display_name: Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil f
+display_name: Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l
 platforms:
   - amazon-now
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil f**
+**Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l**
 
 ## Sold on
 - [[amazon-now]] — latest ₹199

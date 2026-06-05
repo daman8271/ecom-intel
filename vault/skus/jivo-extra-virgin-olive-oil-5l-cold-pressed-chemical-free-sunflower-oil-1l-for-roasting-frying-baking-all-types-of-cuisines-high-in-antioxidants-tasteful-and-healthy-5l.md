@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5l-cold-pressed-chemical-free-sunflower-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-high-in-antioxidants-tasteful-and-healthy-5l
-display_name: "Jivo Extra Virgin Olive Oil 5L & Cold Pressed Chemical Free Sunflower Oil 1L |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy|(Pack of 2) (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Extra Virgin Olive Oil 5l Cold Pressed Chemical Free Sunflower Oil 1l For Roasting Frying Baking All Types Of Cuisines High In Antioxidants Tasteful And Healthy 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 5L & Cold Pressed Chemical Free Sunflower Oil 1L |For Roasting, Frying, Baking All types of Cuisines |High in Antioxidants, Tasteful and Healthy|(Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo Extra Virgin Olive Oil 5l Cold Pressed Chemical Free Sunflower Oil 1l For Roasting Frying Baking All Types Of Cuisines High In Antioxidants Tasteful And Healthy 5l**
 
 ## Sold on
 - [[amazon]]

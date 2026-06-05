@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: sano-canola-oil-healthy-cooking-oil-for-daily-userecommended-by-for-all-type-of-cuisineslowest-in-saturated-fat-1l-1l
-display_name: "Sano Canola Oil Healthy Cooking Oil for Daily use|Recommended by for all type of Cuisines|Lowest in Saturated Fat- 1L (Pack of 2) (1LTR +1LTR)"
+display_name: Sano Canola Oil Healthy Cooking Oil For Daily Userecommended By For All Type Of Cuisineslowest In Saturated Fat 1l 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Sano Canola Oil Healthy Cooking Oil for Daily use|Recommended by for all type of Cuisines|Lowest in Saturated Fat- 1L (Pack of 2) (1LTR +1LTR)**
+**Sano Canola Oil Healthy Cooking Oil For Daily Userecommended By For All Type Of Cuisineslowest In Saturated Fat 1l 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹498 (47.6% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-oil-5l-groundnut-oil-5l-5l
-display_name: "Jivo Cold Pressed Canola Oil 5 Litre & Cold Pressed Groundnut (Peanut) Oil 5 Litre Combo Pack | Chemical Free Vitamin A & D Fortified | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 5LTR (BUNDLE))"
+display_name: Jivo Canola Cold Pressed Oil 5l Groundnut Oil 5l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola Oil 5 Litre & Cold Pressed Groundnut (Peanut) Oil 5 Litre Combo Pack | Chemical Free Vitamin A & D Fortified | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 5LTR (BUNDLE))**
+**Jivo Canola Cold Pressed Oil 5l Groundnut Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹2328 (47.7% off)

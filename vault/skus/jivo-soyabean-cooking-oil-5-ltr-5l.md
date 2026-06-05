@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soyabean-cooking-oil-5-ltr-5l
-display_name: JIVO Soyabean Cooking Oil 5 Ltr (Pack of 2) (5LTR + 5LTR (BUNDLE))
+display_name: Jivo Soyabean Cooking Oil 5 Ltr 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Soyabean Cooking Oil 5 Ltr (Pack of 2) (5LTR + 5LTR (BUNDLE))**
+**Jivo Soyabean Cooking Oil 5 Ltr 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1898 (13.7% off)

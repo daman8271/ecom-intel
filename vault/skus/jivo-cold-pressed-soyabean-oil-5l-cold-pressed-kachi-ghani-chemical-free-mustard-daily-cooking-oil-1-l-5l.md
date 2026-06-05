@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-soyabean-oil-5l-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-l-5l
-display_name: "Jivo Cold Pressed Soyabean Oil 5L & Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 L (Pack of 2) (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Pressed Soyabean Oil 5l Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 L 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Soyabean Oil 5L & Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 L (Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Soyabean Oil 5l Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 L 5l**
 
 ## Sold on
 - [[amazon]]

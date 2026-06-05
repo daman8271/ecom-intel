@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-1l
-display_name: "Jivo Extra Light Daily Cooking Olive Oil 1 Ltr (Pack of 2) | Rich Quality Healthy Cooking Oil for Indian Cuisine, Ideal for Frying, Roasting, and Baking (1+1 LTR)"
+display_name: Jivo Extra Light Olive Oil 2 Litre Imported From Spain Everyday Cooking Dressings Salads Soups Dips Marinades Low In Saturated Fat Olive Oil In Convenient Pet Bottle For Easy Pouring 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Daily Cooking Olive Oil 1 Ltr (Pack of 2) | Rich Quality Healthy Cooking Oil for Indian Cuisine, Ideal for Frying, Roasting, and Baking (1+1 LTR)**
+**Jivo Extra Light Olive Oil 2 Litre Imported From Spain Everyday Cooking Dressings Salads Soups Dips Marinades Low In Saturated Fat Olive Oil In Convenient Pet Bottle For Easy Pouring 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1139 (62.0% off)

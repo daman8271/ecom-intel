@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-mustard-oil-5l-cold-pressed-canola-oil-1l-lowest-in-saturated-fat-5l
-display_name: Jivo Kachi Ghani Mustard Oil 5L & Cold Pressed Canola Oil 1L Lowest in Saturated Fat (Pack of 2) (5LTR + 1LTR (BUNDLE))
+display_name: Jivo Kachi Ghani Mustard Oil 5l Cold Pressed Canola Oil 1l Lowest In Saturated Fat 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Mustard Oil 5L & Cold Pressed Canola Oil 1L Lowest in Saturated Fat (Pack of 2) (5LTR + 1LTR (BUNDLE))**
+**Jivo Kachi Ghani Mustard Oil 5l Cold Pressed Canola Oil 1l Lowest In Saturated Fat 5l**
 
 ## Sold on
 - [[amazon]]

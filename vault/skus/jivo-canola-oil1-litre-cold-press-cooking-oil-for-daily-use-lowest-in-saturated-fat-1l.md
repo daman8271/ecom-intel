@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest-in-saturated-fat-1l
-display_name: "Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use Lowest In Saturated Fat 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L) (1LTR + 1LTR (BUNDLE))**
+**Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use Lowest In Saturated Fat 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹509 (32.1% off)

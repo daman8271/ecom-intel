@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-olive-oil-extra-light-daily-cooking-5-litre-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l
-display_name: "Jivo Olive Oil Extra Light Daily Cooking 5 Litre &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil (5LTR + 5LTR (BUNDLE))"
+display_name: Jivo Olive Oil Extra Light Daily Cooking 5 Litre Jivo Canola oil1 Litre Cold Press Healthy Cooking Oil 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Olive Oil Extra Light Daily Cooking 5 Litre &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil (5LTR + 5LTR (BUNDLE))**
+**Jivo Olive Oil Extra Light Daily Cooking 5 Litre Jivo Canola oil1 Litre Cold Press Healthy Cooking Oil 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹3199 (53.5% off)

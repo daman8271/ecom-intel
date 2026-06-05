@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-mustard-oil-1l-rice-bran-health-oil-5l-5l
-display_name: "Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Rice Bran Oil 5 Litre Combo Pack | Vitamin A & D Fortified Chemical Free | Aroma & Light Texture | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Kachi Ghani Mustard Oil 1l Rice Bran Health Oil 5l 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Rice Bran Oil 5 Litre Combo Pack | Vitamin A & D Fortified Chemical Free | Aroma & Light Texture | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 1LTR (BUNDLE))**
+**Jivo Kachi Ghani Mustard Oil 1l Rice Bran Health Oil 5l 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1076 (36.0% off)

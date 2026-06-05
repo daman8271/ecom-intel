@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-chemical-free-sunflower-oil-5-litre-jivo-cold-pressed-chemical-free-sunflower-oil-5l
-display_name: "Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking (5LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Pressed Chemical Free Sunflower Oil 5 Litre Jivo Cold Pressed Chemical Free Sunflower Oil 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre) | Vitamin A & D Fortified |Chemical Free Cooking Oil |Light & Versatile for Frying, Roasting & Baking (5LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Chemical Free Sunflower Oil 5 Litre Jivo Cold Pressed Chemical Free Sunflower Oil 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹1073 (34.0% off)

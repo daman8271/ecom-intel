@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-extra-virgin-coconut-cooking-edible-oil-1-litre-multipurpose-use-good-for-salad-keto-diet-dressing-zero-cholesterol-trans-fat-chemical-free-1l
-display_name: "JIVO Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre | Multipurpose Use, Good for Salad Keto Diet Dressing Zero Cholesterol Trans Fat Chemical Free. (Pack of 2) (1LTR + 1LTR (BUNDLE))"
+display_name: Jivo Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre Multipurpose Use Good For Salad Keto Diet Dressing Zero Cholesterol Trans Fat Chemical Free 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre | Multipurpose Use, Good for Salad Keto Diet Dressing Zero Cholesterol Trans Fat Chemical Free. (Pack of 2) (1LTR + 1LTR (BUNDLE))**
+**Jivo Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre Multipurpose Use Good For Salad Keto Diet Dressing Zero Cholesterol Trans Fat Chemical Free 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1078 (23.0% off)

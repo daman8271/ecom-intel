@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l
-display_name: "JIVO Canola Cold Pressed Edible Oil 5 Litres with 1 Litre | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines. (5+1 LTR)"
+display_name: Jivo Canola Cold Pressed Edible Oil 5 Litres With 1 Litre Cooking Oil For Daily Use Ideal For Roasting Frying Baking All Types Of Cuisines 1l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Canola Cold Pressed Edible Oil 5 Litres with 1 Litre | Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines. (5+1 LTR)**
+**Jivo Canola Cold Pressed Edible Oil 5 Litres With 1 Litre Cooking Oil For Daily Use Ideal For Roasting Frying Baking All Types Of Cuisines 1l**
 
 ## Sold on
 - [[amazon]] — latest ₹1689 (24.9% off)

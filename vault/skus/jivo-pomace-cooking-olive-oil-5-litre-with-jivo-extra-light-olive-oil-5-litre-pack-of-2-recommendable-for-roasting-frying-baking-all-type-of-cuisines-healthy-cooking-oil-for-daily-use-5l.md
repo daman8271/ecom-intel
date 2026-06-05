@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-5-litre-with-jivo-extra-light-olive-oil-5-litre-pack-of-2-recommendable-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-5l
-display_name: "Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Extra light olive oil 5 Litre |Pack of 2 | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (5LTR + 5LTR (BUNDLE))"
+display_name: Jivo Pomace Cooking Olive Oil 5 Litre With Jivo Extra Light Olive Oil 5 Litre Pack Of 2 Recommendable For Roasting Frying Baking All Type Of Cuisines Healthy Cooking Oil For Daily Use 5l
 platforms:
   - amazon
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Extra light olive oil 5 Litre |Pack of 2 | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (5LTR + 5LTR (BUNDLE))**
+**Jivo Pomace Cooking Olive Oil 5 Litre With Jivo Extra Light Olive Oil 5 Litre Pack Of 2 Recommendable For Roasting Frying Baking All Type Of Cuisines Healthy Cooking Oil For Daily Use 5l**
 
 ## Sold on
 - [[amazon]] — latest ₹4870 (57.6% off)
