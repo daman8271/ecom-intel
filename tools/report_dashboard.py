@@ -62,12 +62,14 @@ def pct(v):
 _GLOSSARY_FALLBACK = {
     "SVD": "Special Value Days (Fri–Sun agreed price list)",
     "BAU": "Business As Usual (weekday agreed price list)",
-    # ART intentionally absent: no documented expansion — never invent one.
+    # owner-confirmed 2026-06-06 (bus): ART = festival pricing
+    "ART": "festival/event agreed price list, applied when announced",
 }
 
 
 def regime_expansion(regime):
-    g = getattr(xd, "GLOSSARY", None) or _GLOSSARY_FALLBACK
+    g = dict(_GLOSSARY_FALLBACK)
+    g.update(getattr(xd, "GLOSSARY", None) or {})   # shared entries win
     return g.get(str(regime), None)
 
 
