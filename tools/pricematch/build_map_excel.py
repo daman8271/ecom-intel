@@ -34,7 +34,7 @@ so W1 can fold it into sku_map.json later — this script never writes sku_map.j
 Usage: build_map_excel.py [DATE]          (default: today)
 Deterministic + idempotent. No network. No LLM.
 """
-import json, sys, datetime, pathlib, collections
+import json, sys, datetime, pathlib, collections, re
 import openpyxl
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
@@ -115,29 +115,85 @@ overlay = build_overlay()
 print(f"titles_overlay.json: {sum(len(v) for v in overlay.values())} titles "
       f"across {len(overlay)} platforms")
 
+# master-sheet titles by PRODUCT name (e-com sheet fallback for unresolved listings)
+def load_master_titles_by_product():
+    titles = {}
+    wb = openpyxl.load_workbook(HERE / "Amazon Price Match.xlsx", data_only=True)
+    ws = wb["url"]; hdr = [c.value for c in ws[1]]; ix = {h: i for i, h in enumerate(hdr)}
+    for r in ws.iter_rows(min_row=2, values_only=True):
+        if r[ix["PRODUCT"]] and r[ix["Title"]]:
+            titles[str(r[ix["PRODUCT"]]).strip().upper()] = str(r[ix["Title"]]).strip()
+    return titles
+
+
 master_titles = load_master_titles()
+master_titles_by_product = load_master_titles_by_product()
 title_src = collections.Counter()
 
+# OWNER ORDER (Punkirat feedback 2026-06-06): a title cell holds the exact on-page
+# listing name ONLY — never internal names, never url-slugs, never annotations like
+# "(blessed)" / "(unpriced)" / "(owner sheet URL)". Annotations move to the note column.
+ANNOT_RE = re.compile(r"\s*\((?:blessed|unpriced|owner sheet)[^)]*\)", re.IGNORECASE)
+SLUG_RE = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+){2,}")
 
-def exact_title(plat, le):
-    """Resolve the exact on-page listing title for a map/review/unpriced entry."""
+
+def team_lang(s):
+    """Team-facing language for evidence/reason/note text (never title cells)."""
+    if not s:
+        return s
+    return re.sub(r"(?:owner[- ])?blessed", "owner-verified", str(s), flags=re.IGNORECASE)
+
+
+def exact_title(plat, le, sku=None):
+    """Resolve the exact on-page listing title -> (title, displaced_note).
+
+    title is "" when no on-page title exists offline — the explanation then lives in
+    displaced_note, which call sites append to their note/reason column.
+    """
     rid = le.get("id")
     t = overlay.get(plat, {}).get(str(rid)) if rid is not None else None
     if t:
-        title_src["overlay"] += 1; return t
+        title_src["overlay"] += 1; return t, ""
     if plat in AMZ_FAMILY and rid is not None:
         t = overlay.get("amazon", {}).get(str(rid))
         if t:
-            title_src["overlay-amazon"] += 1; return t
-    if le.get("title"):
-        title_src["map-title"] += 1; return le["title"]
+            title_src["overlay-amazon"] += 1; return t, ""
+    notes = []
+    stored = le.get("title") or ""
+    if stored:
+        cleaned = ANNOT_RE.sub("", stored).strip()
+        annot = stored.replace(cleaned, "").strip()
+        if annot:
+            notes.append(f"title annotation moved: {annot}")
+        if cleaned and SLUG_RE.fullmatch(cleaned):
+            notes.append(f"url-slug (not a title): {cleaned}")
+            cleaned = ""
+        if cleaned:
+            title_src["map-title"] += 1
+            return cleaned, "; ".join(notes)
     if plat in AMZ_FAMILY and rid is not None and str(rid) in master_titles:
-        title_src["master-sheet"] += 1; return master_titles[str(rid)]
-    title_src["internal-last-resort"] += 1
-    fallback = le.get("item") or le.get("internal_name")
-    # never present an internal name as if it were the platform title
-    return f"{fallback} ⚠ internal name (listing not yet scraped)" if fallback \
-        else "⚠ title not captured (listing not yet scraped)"
+        title_src["master-sheet"] += 1
+        return master_titles[str(rid)], "; ".join(notes)
+    prod = (sku or le.get("candidate") or "").strip().upper()
+    if prod in master_titles_by_product:
+        title_src["master-sheet-by-product"] += 1
+        notes.append("title from e-com master sheet (listing not resolvable offline)")
+        return master_titles_by_product[prod], "; ".join(notes)
+    if rid is None and not le.get("url") and not stored:
+        return "", ""  # a plain note row, not a listing — no title expected
+    title_src["no-title"] += 1
+    internal = le.get("item") or le.get("internal_name")
+    notes.append(f"internal name: {internal} — listing not yet scraped, no on-page title"
+                 if internal else "title not captured (listing not yet scraped)")
+    return "", "; ".join(notes)
+
+
+def slug_from(le):
+    """The url-slug for the id column when a listing has no id (slug lives THERE only)."""
+    stored = ANNOT_RE.sub("", le.get("title") or "").strip()
+    if SLUG_RE.fullmatch(stored):
+        return stored
+    return None
 
 
 # ---------------- Excel ----------------
@@ -217,11 +273,12 @@ for p in products:
         le = (sku_map["skus"][p].get("platforms") or {}).get(plat)
         if not le:
             continue
-        ws.append([p, plat, le.get("id"), le.get("url"), exact_title(plat, le),
+        t, extra = exact_title(plat, le, sku=p)
+        ws.append([p, plat, le.get("id") or slug_from(le), le.get("url"), t,
                    le.get("mrp"), le.get("sale_modal"), le.get("sale_min"), le.get("sale_max"),
                    "?" if le.get("in_stock") is None else ("Y" if le.get("in_stock") else "N"),
                    le.get("method"), le.get("confidence"),
-                   le.get("note", "")])
+                   team_lang("; ".join(x for x in (le.get("note", ""), extra) if x))])
         for c in ws[ws.max_row]: c.font = SM
         if le.get("url"):
             u = ws.cell(row=ws.max_row, column=4); u.hyperlink = le["url"]; u.font = BLU
@@ -235,8 +292,10 @@ for it in sku_map.get("review", []):
     if isinstance(it, str):  # some fragments emit plain-string notes
         it = {"reason": it}
     plat = it.get("platform") or ""
-    ws.append([plat, it.get("id"), it.get("url"), exact_title(plat, it),
-               it.get("candidate"), it.get("reason") or "", ""])
+    t, extra = exact_title(plat, it)
+    ws.append([plat, it.get("id") or slug_from(it), it.get("url"), t,
+               it.get("candidate"),
+               team_lang("; ".join(x for x in (it.get("reason") or "", extra) if x)), ""])
     if it.get("url"):
         u = ws.cell(row=ws.max_row, column=3); u.hyperlink = it["url"]; u.font = BLU
     ws.cell(row=ws.max_row, column=7).fill = YEL
@@ -247,11 +306,11 @@ ws = wb.create_sheet("MRP integrity")
 ws.append(["type", "SKU", "sheet MRP", "live MRP", "where", "evidence / consensus"])
 for k, s in sorted((sku_map.get("master_mrp_stale") or {}).items()):
     ws.append(["MASTER SHEET STALE", k, s.get("master_mrp"), s.get("live_mrp"),
-               ", ".join(s.get("platforms", [])), s.get("evidence") or ""])
+               ", ".join(s.get("platforms", [])), team_lang(s.get("evidence") or "")])
     ws.cell(row=ws.max_row, column=4).fill = RED
 for s in sku_map.get("mrp_drift", []):
     ws.append(["PLATFORM DRIFT", s.get("product"), s.get("official_mrp"),
-               s.get("platform_mrp"), s.get("platform"), s.get("consensus", "")])
+               s.get("platform_mrp"), s.get("platform"), team_lang(s.get("consensus", ""))])
     ws.cell(row=ws.max_row, column=4).fill = YEL
 style_hdr(ws); ws.freeze_panes = "A2"; autosize(ws)
 
@@ -266,8 +325,12 @@ for f in fams:
     ws.cell(row=ws.max_row, column=1).font = Font(bold=True, size=10)
 for u in singles:
     plat = u.get("platform") or ""
-    ws.append(["    " + exact_title(plat, u), plat, u.get("id"),
-               u.get("mrp"), "Y" if u.get("combo") else "", u.get("internal_name", "")])
+    t, extra = exact_title(plat, u)
+    internal = u.get("internal_name", "")
+    note6 = extra if internal and internal in extra else \
+        "; ".join(x for x in (internal, extra) if x)
+    ws.append(["    " + (t or "(title not captured)"), plat, u.get("id") or slug_from(u),
+               u.get("mrp"), "Y" if u.get("combo") else "", team_lang(note6)])
     for c in ws[ws.max_row]: c.font = SM
     if u.get("url"):
         cell = ws.cell(row=ws.max_row, column=1); cell.hyperlink = u["url"]
@@ -310,6 +373,38 @@ def assert_hyperlinks(path):
 
 
 filled, linked, marked = assert_hyperlinks(out)
+
+
+def assert_title_hygiene(path):
+    """Punkirat checks: no slug-shaped titles, no (blessed|unpriced|owner sheet)
+    annotations in ANY title cell, no 'blessed' jargon anywhere in the workbook."""
+    chk = openpyxl.load_workbook(path)
+    title_cols = {"Listing Details": 5, "Review (confirm these)": 4,
+                  "Unpriced (no master row)": 1}
+    bad = []
+    for sheet, col in title_cols.items():
+        for r in range(2, chk[sheet].max_row + 1):
+            v = chk[sheet].cell(row=r, column=col).value
+            if not isinstance(v, str):
+                continue
+            t = v.strip()
+            if SLUG_RE.fullmatch(t):
+                bad.append((sheet, r, "slug-shaped title", t))
+            if ANNOT_RE.search(t):
+                bad.append((sheet, r, "annotation in title", t))
+    for sheet in chk.sheetnames:
+        for row in chk[sheet].iter_rows(values_only=True):
+            for v in row:
+                if isinstance(v, str) and re.search(r"\bblessed\b", v, re.IGNORECASE):
+                    bad.append((sheet, "-", "'blessed' jargon", v[:80]))
+    if bad:
+        for b in bad:
+            print(f"  TITLE-LEAK: sheet={b[0]} row={b[1]} {b[2]}: {b[3]!r}", file=sys.stderr)
+        sys.exit(f"FAIL: {len(bad)} title-hygiene violation(s)")
+    print("title hygiene: 0 slug titles, 0 annotations in title cells, 0 'blessed' jargon")
+
+
+assert_title_hygiene(out)
 
 print(f"xlsx: {out}")
 print(f"skus: {len(products)} | title sources: {dict(title_src)}")
