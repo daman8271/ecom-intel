@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-06-05
 last_seen: 2026-06-06
-observations: 155
+observations: 168
 min_price: 365
 max_price: 365
 latest_price: 365
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹365 (32.4% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (155 observations)
+## Price history (168 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -189,6 +189,19 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-06-0712,2026-06-06,amazon-fresh,Pune,411020,365,540,32.4,1
 2026-06-06-0712,2026-06-06,amazon-fresh,Pune,412101,365,540,32.4,1
 2026-06-06-0712,2026-06-06,amazon-fresh,Pune,412114,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Bengaluru,560069,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Delhi,110001,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Delhi,110002,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Delhi,110004,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Delhi,110006,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Delhi,110021,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Delhi,110031,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Mumbai,400090,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Mumbai,400601,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Pune,411003,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Pune,411020,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Pune,412101,365,540,32.4,1
+2026-06-06-1211,2026-06-06,amazon-fresh,Pune,412114,365,540,32.4,1
 ```
 
 ---

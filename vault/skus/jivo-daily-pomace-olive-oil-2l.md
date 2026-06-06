@@ -6,10 +6,10 @@ platforms:
   - zepto
 first_seen: 2026-05-30
 last_seen: 2026-06-06
-observations: 28
+observations: 33
 min_price: 930
 max_price: 959
-latest_price: 959
+latest_price: 946
 tags:
   - type/sku-hub
   - platform/zepto
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Daily Pomace Olive Oil (1 pc (2 L))**
 
 ## Sold on
-- [[zepto]] — latest ₹959 (33.8% off)
+- [[zepto]] — latest ₹946 (34.7% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]]
 
-## Runs that observed this SKU (17)
-[[zepto-2026-06-06-0650]] · [[zepto-2026-06-05-1549]] · [[zepto-2026-06-05-1049]] · [[zepto-2026-06-05-0421]] · [[zepto-2026-06-05-0112]] · [[zepto-2026-06-04-1417]] · [[zepto-2026-06-03-1401]] · [[zepto-2026-06-01-1754]] · [[zepto-2026-06-01-1600]] · [[zepto-2026-06-01-1200]] · [[zepto-2026-06-01-0900]] · [[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]]
+## Runs that observed this SKU (18)
+[[zepto-2026-06-06-1148]] · [[zepto-2026-06-06-0650]] · [[zepto-2026-06-05-1549]] · [[zepto-2026-06-05-1049]] · [[zepto-2026-06-05-0421]] · [[zepto-2026-06-05-0112]] · [[zepto-2026-06-04-1417]] · [[zepto-2026-06-03-1401]] · [[zepto-2026-06-01-1754]] · [[zepto-2026-06-01-1600]] · [[zepto-2026-06-01-1200]] · [[zepto-2026-06-01-0900]] · [[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]]
 
-## Price history (28 observations)
+## Price history (33 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -62,6 +62,11 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1549,2026-06-05,zepto,Delhi,110095,930,1449,35.8,0
 2026-06-06-0650,2026-06-06,zepto,Bengaluru,560014,959,1449,33.8,1
 2026-06-06-0650,2026-06-06,zepto,Bengaluru,560039,959,1449,33.8,0
+2026-06-06-1148,2026-06-06,zepto,Bengaluru,560014,959,1449,33.8,1
+2026-06-06-1148,2026-06-06,zepto,Bengaluru,560019,946,1449,34.7,0
+2026-06-06-1148,2026-06-06,zepto,Bengaluru,560028,946,1449,34.7,0
+2026-06-06-1148,2026-06-06,zepto,Bengaluru,560039,959,1449,33.8,0
+2026-06-06-1148,2026-06-06,zepto,Bengaluru,560069,946,1449,34.7,0
 ```
 
 ---

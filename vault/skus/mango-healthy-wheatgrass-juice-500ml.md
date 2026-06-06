@@ -6,7 +6,7 @@ platforms:
   - bigbasket
 first_seen: 2026-06-01
 last_seen: 2026-06-06
-observations: 18
+observations: 21
 min_price: 100
 max_price: 100
 latest_price: 100
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[bigbasket]] — latest ₹100
 
-## Runs that observed this SKU (18)
-[[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1601]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (21)
+[[bigbasket-2026-06-06-1200]] · [[bigbasket-2026-06-06-1159]] · [[bigbasket-2026-06-06-1158]] · [[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1601]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (18 observations)
+## Price history (21 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -49,6 +49,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-06-0659,2026-06-06,bigbasket,All India,-,100,100,0,0
 2026-06-06-0700,2026-06-06,bigbasket,All India,-,100,100,0,0
 2026-06-06-0701,2026-06-06,bigbasket,All India,-,100,100,0,0
+2026-06-06-1158,2026-06-06,bigbasket,All India,-,100,100,0,0
+2026-06-06-1159,2026-06-06,bigbasket,All India,-,100,100,0,0
+2026-06-06-1200,2026-06-06,bigbasket,All India,-,100,100,0,0
 ```
 
 ---

@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 2
-observations: 43
+observations: 45
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Lucknow (2)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]]
 
-## Observations (43 rows)
+## Observations (45 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -51,6 +51,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,245,375,34,1
 2026-06-05-1539,2026-06-05,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,245,375,34,1
 2026-06-06-0641,2026-06-06,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,244,375,34,1
+2026-06-06-1139,2026-06-06,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,244,375,34,1
 2026-05-21-1305,2026-05-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,173,255,32.2,1
 2026-05-23-1200,2026-05-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,168,255,34.1,1
 2026-05-23-1600,2026-05-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,168,255,34.1,1
@@ -71,6 +72,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,179,255,29,1
 2026-06-05-1539,2026-06-05,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,170,255,33,1
 2026-06-06-0641,2026-06-06,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26,1
+2026-06-06-1139,2026-06-06,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26,1
 ```
 
 ---
