@@ -110,6 +110,99 @@ else
   echo "[$(date '+%F %T')] run_all: all platforms done -> self-heal pass"
 fi
 
+# ---- PRICE-MATCH master workbook (SHEETS-B) ----------------------------------
+# One standalone violations workbook per sweep: every platform x every SKU vs the
+# day's regime reference (tools/pricematch/build_pricematch.py; Ecom Head first
+# sheet). Built AFTER the platform loop (freshest result.json for all platforms,
+# chain lock already released) and BEFORE the batch barrier so it joins the same
+# deadline batch — send_batch.py ships it LAST (most visible message in the chat).
+# Best-effort everywhere (|| true): a builder/send failure can never touch the
+# sweep. SIM MODE skips it (fake platforms must never feed a real-data workbook);
+# a CHAIN_SKIPPED sweep skips it too (another chain is actively rewriting the
+# result.json files this builder would read). Plain run without defer env = build
+# + immediate Telegram send, same pattern run.sh uses.
+if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ -f tools/pricematch/build_pricematch.py ]; then
+  echo "[$(date '+%F %T')] run_all: building master Price Match workbook"
+  (
+    set +e
+    PM_SRC="$(python3 tools/pricematch/build_pricematch.py 2>>logs/pricematch.log | tail -1)"
+    if [ -z "$PM_SRC" ] || [ ! -f "$PM_SRC" ]; then
+      echo "[$(date '+%F %T')] run_all: price-match build produced no xlsx (see logs/pricematch.log)"
+      exit 0
+    fi
+    PM_SUM="${PM_SRC}.summary.json"            # sidecar written by the builder
+    PM_XLSX="$PM_SRC"
+    if cp -f "$PM_SRC" "$DIR/output/" 2>>logs/pricematch.log; then
+      PM_XLSX="$DIR/output/$(basename "$PM_SRC")"
+    fi
+    TGLOG="$DIR/logs/telegram.log"
+    PM_SENT=0
+    # DEFER MODE (cron-deadline): spool for send_batch.py instead of curling now.
+    # Same spool schema v1 + atomic-replace pattern as run.sh. Any spool failure
+    # falls through to the immediate-send path below — the report is never lost.
+    if [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
+      BDIR="$DIR/output/.batch/${SWEEP_ID}"
+      mkdir -p "$BDIR" 2>>"$TGLOG"
+      if PM_XLSX="$PM_XLSX" PM_SUM="$PM_SUM" python3 - "$BDIR/price-match.json" 2>>"$TGLOG" <<'SPOOLPY'
+import json, os, sys, time
+out = sys.argv[1]
+xlsx = os.environ["PM_XLSX"]
+if not (xlsx and os.path.isfile(xlsx)):
+    raise SystemExit(f"pm spool: xlsx missing: {xlsx!r}")
+try:
+    with open(os.environ["PM_SUM"], encoding="utf-8") as fh:
+        side = json.load(fh)
+except Exception:
+    side = {}
+date = side.get("date") or time.strftime("%Y-%m-%d")
+regime = side.get("regime") or "?"
+tmp = out + ".tmp"
+with open(tmp, "w", encoding="utf-8") as f:
+    json.dump({"platform": "price-match", "verdict": "OK",
+               "summary": side.get("summary_md")
+                          or f"*Jivo Price Match — master*\n{date} · {regime} day\nReport attached.",
+               "xlsx": os.path.abspath(xlsx),
+               "caption": side.get("caption") or f"Jivo Price Match · {date} · {regime} day",
+               "ts": int(time.time())}, f, ensure_ascii=False)
+    f.write("\n")
+os.replace(tmp, out)  # atomic: send_batch never sees a half-written file
+SPOOLPY
+      then
+        PM_SENT=1
+        echo "[$(date '+%F %T')] run_all: price-match spooled for batch -> $BDIR/price-match.json (sweep ${SWEEP_ID})" | tee -a "$TGLOG"
+      else
+        echo "[$(date '+%F %T')] run_all: price-match spool write FAILED -> falling back to immediate send" | tee -a "$TGLOG"
+      fi
+    fi
+    # IMMEDIATE SEND (plain run, or spool fallback) — same TG pattern as run.sh.
+    if [ "$PM_SENT" != "1" ]; then
+      [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
+      TG="${TELEGRAM_BOT_TOKEN:-}"
+      CH="${TELEGRAM_CHAT_ID:-}"
+      if [ -n "$TG" ] && [ -n "$CH" ]; then
+        STAMP="$(date '+%Y-%m-%d %H:%M:%S')"
+        SUMMARY="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1], encoding="utf-8")).get("summary_md",""))' "$PM_SUM" 2>>"$TGLOG")"
+        CAPTION="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1], encoding="utf-8")).get("caption",""))' "$PM_SUM" 2>>"$TGLOG")"
+        [ -n "$SUMMARY" ] || SUMMARY="*Jivo Price Match — master*
+Report attached."
+        [ -n "$CAPTION" ] || CAPTION="Jivo Price Match"
+        R1="$(curl -s --max-time 60 -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
+                --data-urlencode "chat_id=${CH}" \
+                --data-urlencode "parse_mode=Markdown" \
+                --data-urlencode "text=${SUMMARY}")"
+        echo "[$STAMP] price-match sendMessage  -> $R1" >> "$TGLOG"
+        R2="$(curl -s --max-time 120 -X POST "https://api.telegram.org/bot${TG}/sendDocument" \
+                -F "chat_id=${CH}" \
+                -F "document=@${PM_XLSX}" \
+                -F "caption=${CAPTION}")"
+        echo "[$STAMP] price-match sendDocument -> $R2" >> "$TGLOG"
+      else
+        echo "[$(date '+%F %T')] run_all: price-match built but no Telegram creds — workbook at $PM_XLSX" | tee -a "$TGLOG"
+      fi
+    fi
+  ) || true
+fi
+
 # ---- Deferred-delivery batch barrier (cron-deadline mode) ----
 # When the deadline sweep set DEFER_DELIVERY=1, each platform's OK report was spooled to
 # output/.batch/$SWEEP_ID/ instead of being curled (run.sh). send_batch.py sleeps until the

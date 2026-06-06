@@ -42,6 +42,7 @@ TGLOG = os.path.join(ROOT, "logs", "telegram.log")
 CANONICAL = [
     "flipkart-minutes", "flipkart", "zepto", "bigbasket",
     "amazon", "amazon-fresh", "amazon-now", "blinkit",
+    "price-match",   # master Price Match workbook — sent LAST (most visible in chat)
 ]
 
 
