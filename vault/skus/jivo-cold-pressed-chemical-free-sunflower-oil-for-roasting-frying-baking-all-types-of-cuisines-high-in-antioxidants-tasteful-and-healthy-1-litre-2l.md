@@ -5,8 +5,8 @@ display_name: "Jivo Cold Pressed Chemical Free Sunflower Oil |For Roasting, Fryi
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-05
-observations: 4
+last_seen: 2026-06-06
+observations: 5
 min_price: 356
 max_price: 356
 latest_price: 356
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹356 (35.3% off)
 
-## Runs that observed this SKU (4)
-[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (5)
+[[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (4 observations)
+## Price history (5 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -35,6 +35,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0429,2026-06-05,amazon,All India,-,,395,0,0
 2026-06-05-1057,2026-06-05,amazon,All India,-,356,550,35.3,1
 2026-06-05-1602,2026-06-05,amazon,All India,-,,395,0,0
+2026-06-06-0702,2026-06-06,amazon,All India,-,,550,0,0
 ```
 
 ---

@@ -5,11 +5,11 @@ display_name: "Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Gold Refined Edible O
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-05
-observations: 4
+last_seen: 2026-06-06
+observations: 5
 min_price: 1085
-max_price: 1085
-latest_price: 1085
+max_price: 1112
+latest_price: 1112
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Kachi Ghani Mustard Oil 1 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Chemical Free Cooking | Vitamin A & D Fortified Oil | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1085 (16.9% off)
+- [[amazon]] — latest ₹1112 (14.8% off)
 
-## Runs that observed this SKU (4)
-[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (5)
+[[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (4 observations)
+## Price history (5 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -35,6 +35,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0429,2026-06-05,amazon,All India,-,,879,0,0
 2026-06-05-1057,2026-06-05,amazon,All India,-,1085,1305,16.9,1
 2026-06-05-1602,2026-06-05,amazon,All India,-,1085,1305,16.9,1
+2026-06-06-0702,2026-06-06,amazon,All India,-,1112,1305,14.8,1
 ```
 
 ---

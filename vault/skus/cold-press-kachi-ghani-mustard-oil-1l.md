@@ -5,8 +5,8 @@ display_name: Cold Press Kachi Ghani Mustard Oil (1 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-04
-last_seen: 2026-06-05
-observations: 11
+last_seen: 2026-06-06
+observations: 14
 min_price: 202.09
 max_price: 202.09
 latest_price: 202.09
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[bigbasket]] — latest ₹202.09 (20.7% off)
 
-## Runs that observed this SKU (11)
-[[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1057]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]]
+## Runs that observed this SKU (14)
+[[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1057]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]]
 
-## Price history (11 observations)
+## Price history (14 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -42,6 +42,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1057,2026-06-05,bigbasket,All India,-,202.09,255,20.7,1
 2026-06-05-1315,2026-06-05,bigbasket,All India,-,202.09,255,20.7,1
 2026-06-05-1821,2026-06-05,bigbasket,All India,-,202.09,255,20.7,1
+2026-06-06-0659,2026-06-06,bigbasket,All India,-,202.09,255,20.7,1
+2026-06-06-0700,2026-06-06,bigbasket,All India,-,202.09,255,20.7,1
+2026-06-06-0701,2026-06-06,bigbasket,All India,-,202.09,255,20.7,1
 ```
 
 ---

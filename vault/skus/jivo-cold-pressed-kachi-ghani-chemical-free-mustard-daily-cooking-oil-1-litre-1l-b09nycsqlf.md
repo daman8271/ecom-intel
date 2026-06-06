@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf
-display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre"
+display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-06-05
-observations: 38
+last_seen: 2026-06-06
+observations: 53
 min_price: 176
 max_price: 209
-latest_price: 181
+latest_price: 176
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹181 (29.0% off)
+- [[amazon-fresh]] — latest ₹176 (31.0% off)
 
 ## Available in cities
-[[Delhi]] · [[Mumbai]] · [[Pune]]
+[[Delhi]] · [[Jaipur]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (38 observations)
+## Price history (53 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -72,6 +72,21 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1613,2026-06-05,amazon-fresh,Delhi,110067,181,255,29,1
 2026-06-05-1613,2026-06-05,amazon-fresh,Mumbai,400701,184,255,27.8,1
 2026-06-05-1613,2026-06-05,amazon-fresh,Mumbai,400703,181,255,29,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110003,190,255,25.5,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110006,181,255,29,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110013,209,255,18,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110014,209,255,18,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110016,181,255,29,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110024,209,255,18,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110025,209,255,18,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110048,181,255,29,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110062,209,255,18,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110065,181,255,29,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Delhi,110076,209,255,18,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Jaipur,302020,176,255,31,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Mumbai,400701,184,255,27.8,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Mumbai,400703,181,255,29,1
+2026-06-06-0712,2026-06-06,amazon-fresh,Noida,201307,176,255,31,1
 ```
 
 ---

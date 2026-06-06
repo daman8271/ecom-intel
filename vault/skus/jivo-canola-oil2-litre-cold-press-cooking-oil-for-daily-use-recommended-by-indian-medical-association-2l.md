@@ -1,12 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-recommended-by-indian-medical-association-2l
-display_name: "Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use | Recommended by Indian Medical Association (2 LTR)"
+display_name: "Jivo Cold Pressed Canola Oil 2L | Natural Edible Cooking Oil | Lowest Saturated Fat for Daily Use (2 LTR)"
 platforms:
   - amazon
 first_seen: 2026-05-21
-last_seen: 2026-06-05
-observations: 38
+last_seen: 2026-06-06
+observations: 39
 min_price: 630
 max_price: 630
 latest_price: 630
@@ -19,15 +19,15 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Oil,2 Litre Cold Press Cooking Oil for Daily use | Recommended by Indian Medical Association (2 LTR)**
+**Jivo Cold Pressed Canola Oil 2L | Natural Edible Cooking Oil | Lowest Saturated Fat for Daily Use (2 LTR)**
 
 ## Sold on
 - [[amazon]] — latest ₹630 (10.0% off)
 
-## Runs that observed this SKU (38)
-[[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]]
+## Runs that observed this SKU (39)
+[[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]]
 
-## Price history (38 observations)
+## Price history (39 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -69,6 +69,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0429,2026-06-05,amazon,All India,-,630,700,10,1
 2026-06-05-1057,2026-06-05,amazon,All India,-,630,700,10,1
 2026-06-05-1602,2026-06-05,amazon,All India,-,630,700,10,1
+2026-06-06-0702,2026-06-06,amazon,All India,-,630,700,10,1
 ```
 
 ---

@@ -6,8 +6,8 @@ platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-06-01
-last_seen: 2026-06-05
-observations: 6
+last_seen: 2026-06-06
+observations: 7
 min_price: 1399
 max_price: 1409
 latest_price: 1409
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo Extra Virgin Olive Oil, 2 Litres - Ideal for Dressings, Salads, Soups, Dips, and Marinades. Perfect for Healthy Cooking and Gourmet Delights (1+1 LTR)**
 
 ## Sold on
-- [[amazon]] — latest ₹1409 (53.0% off)
+- [[amazon]] — latest ₹1409 (14.6% off)
 - [[amazon-fresh]] — latest ₹1409 (53.0% off)
 
 ## Available in cities
 [[Gurgaon]] · [[Mysuru]]
 
-## Runs that observed this SKU (6)
-[[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (7)
+[[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (6 observations)
+## Price history (7 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -43,6 +43,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-0429,2026-06-05,amazon,All India,-,1409,1649,14.6,1
 2026-06-05-1057,2026-06-05,amazon,All India,-,1409,1649,14.6,1
 2026-06-05-1602,2026-06-05,amazon,All India,-,1409,2998,53,1
+2026-06-06-0702,2026-06-06,amazon,All India,-,1409,1649,14.6,1
 ```
 
 ---
