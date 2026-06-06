@@ -35,6 +35,48 @@ if [ -n "${PLATFORMS_OVERRIDE:-}" ] || [ -n "${RUNNER_OVERRIDE:-}" ]; then
   SIM_MODE=1
   echo "[$(date '+%F %T')] run_all: SIM MODE (override set) — guardian/healthcheck/vault/git SKIPPED"
 fi
+# ---- SWEEP-CHAIN LOCK (W2 mitigation, LEAD-approved 2026-06-06) --------------
+# Deadline slots 12:00 + 15:00 are only 3h apart: an overrunning prior chain
+# (in-chain guardian heal re-runs are not priced into the p90 lead) could still
+# be scraping when this sweep's chain starts — two serial chains co-running
+# defeats the whole serial design. One mechanism guards both that and the
+# post-batch selfheal backstop (gated below on the SAME lock): the PLATFORM
+# LOOP ONLY runs under a BLOCKING flock on logs/.sweep-chain.lock, released
+# before the batch barrier (the deadline sleep must never hold the chain mutex).
+# Manual ./run_all.sh takes it too (manual-vs-cron protection); SIM MODE takes
+# it as well (harmless — fake platforms still shouldn't co-run a real chain).
+# If the lock can't be had in 9000s (2h30m — a full healthy chain + slack), we
+# NEVER scrape concurrently: log + owner-alert + SKIP the chain; send_batch
+# still ships an honest (empty/partial) batch at the deadline. No flock binary /
+# unopenable lockfile degrades to the old unlocked behavior rather than failing.
+SWEEP_CHAIN_LOCK="$DIR/logs/.sweep-chain.lock"
+mkdir -p "$DIR/logs" 2>/dev/null || true
+HAVE_CHAIN_LOCK=0
+CHAIN_SKIPPED=0
+if command -v flock >/dev/null 2>&1; then
+  if exec 7>"$SWEEP_CHAIN_LOCK" 2>/dev/null; then
+    HAVE_CHAIN_LOCK=1
+    if ! flock -n 7; then
+      echo "[$(date '+%F %T')] run_all: waiting for prior sweep chain (logs/.sweep-chain.lock held)"
+      if ! flock -w 9000 7; then
+        CHAIN_SKIPPED=1
+        echo "[$(date '+%F %T')] run_all: sweep-chain lock NOT acquired in 9000s -> SKIPPING the chain (never scrape concurrently)"
+        ( # owner alert — same secrets.env pattern as run.sh; best-effort, never fails the sweep
+          set +e
+          [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
+          TG="${TELEGRAM_BOT_TOKEN:-}"; OC="${TELEGRAM_OWNER_CHAT_ID:-${TELEGRAM_CHAT_ID:-}}"
+          [ -n "$TG" ] && [ -n "$OC" ] && curl -s --max-time 60 -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
+            --data-urlencode "chat_id=${OC}" \
+            --data-urlencode "text=⚠️ ecom-intel run_all: sweep-chain lock busy >2h30m — chain SKIPPED for sweep ${SWEEP_ID:-manual} (a prior sweep is still scraping). The batch will be empty/partial; investigate the stuck chain." >/dev/null
+        ) || true
+      fi
+    fi
+  else
+    echo "[$(date '+%F %T')] run_all: cannot open $SWEEP_CHAIN_LOCK — degrading to unlocked (old behavior)"
+  fi
+fi
+
+if [ "$CHAIN_SKIPPED" != "1" ]; then
 for P in $PLATFORMS; do
   echo "[$(date '+%F %T')] run_all: running $P (serial)"
   # AUTO-HEAL HOOK: after this platform's pipeline, the guardian re-evaluates the fresh
@@ -55,7 +97,18 @@ for P in $PLATFORMS; do
     bash tools/cron/record_duration.sh "$P" "$((P_END - P_START))" "${SWEEP_ID:-adhoc}" || true
   fi
 done
-echo "[$(date '+%F %T')] run_all: all platforms done -> self-heal pass"
+fi  # end CHAIN_SKIPPED guard
+# Release the sweep-chain lock BEFORE the batch barrier: the deadline sleep in
+# send_batch.py (up to ~55m) must never hold the chain mutex — the next sweep's
+# chain only has to wait for SCRAPING, never for a barrier.
+if [ "$HAVE_CHAIN_LOCK" = "1" ]; then
+  exec 7>&- 2>/dev/null || true
+fi
+if [ "$CHAIN_SKIPPED" = "1" ]; then
+  echo "[$(date '+%F %T')] run_all: chain was SKIPPED (sweep-chain lock busy) -> straight to barrier"
+else
+  echo "[$(date '+%F %T')] run_all: all platforms done -> self-heal pass"
+fi
 
 # ---- Deferred-delivery batch barrier (cron-deadline mode) ----
 # When the deadline sweep set DEFER_DELIVERY=1, each platform's OK report was spooled to
@@ -81,7 +134,30 @@ if [ "$SIM_MODE" != "1" ]; then
 # never be delivered. Empty values fail run.sh's `= "1"` guard -> the healed report ships
 # immediately, exactly like today. (The in-loop guardian heals keep the env on purpose —
 # they run BEFORE send_batch, so their healed reports correctly join the batch.)
-DEFER_DELIVERY= SWEEP_ID= ./healthcheck.sh || true
+# W2 SWEEP-CHAIN GATE on the backstop (same logs/.sweep-chain.lock as the loop):
+# with 12:00 + 15:00 slots 3h apart, this tail runs ~12:00:16 — mid-way through
+# the 15:00 sweep's chain. A heal re-run here (`timeout 2400 ./run.sh <p>`) would
+# scrape CONCURRENTLY with that chain (only amazon-fresh/now have a heal-vs-chain
+# lock; every other platform has none). flock -n: another sweep's chain holds the
+# lock => SKIP — zero coverage loss, the next sweep's own backstop runs with
+# nothing else active and assesses ALL platforms. While the backstop DOES run, we
+# hold the lock, so any heal re-run is itself mutually exclusive with a chain.
+BACKSTOP_DONE=0
+if command -v flock >/dev/null 2>&1; then
+  {
+    if flock -n 6 2>/dev/null; then
+      BACKSTOP_DONE=1
+      DEFER_DELIVERY= SWEEP_ID= ./healthcheck.sh || true
+    else
+      BACKSTOP_DONE=1
+      echo "[$(date '+%F %T')] run_all: selfheal backstop SKIPPED — another sweep chain is active (logs/.sweep-chain.lock busy)"
+    fi
+  } 6>"$SWEEP_CHAIN_LOCK" 2>/dev/null
+fi
+if [ "$BACKSTOP_DONE" != "1" ]; then
+  # no flock binary / unopenable lockfile -> old unlocked behavior
+  DEFER_DELIVERY= SWEEP_ID= ./healthcheck.sh || true
+fi
 
 # ---- Rebuild the COMPLETE Obsidian memory graph from the full price history. ----
 # vault_build.py regenerates EVERY run note (complete: every observation as a fenced ```csv
