@@ -36,17 +36,31 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(os.path.dirname(HERE))          # /opt/ecom-intel
 
 # ---------------------------------------------------------------- styling
-# Mirror build_excel.py / predict.py so the appended sheet matches the book.
+# THE one red/green pair + canonical names come from tools/xlsx_dash (v2,
+# fresh-eyes 2026-06-06). Guarded import: this script is fail-safe, so a
+# missing helper degrades to the same hexes inline, never a crash.
+try:
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(
+        os.path.abspath(__file__))), ))  # /opt/ecom-intel/tools
+    import xlsx_dash as _xd
+    _RED_HEX, _RED_TXT = _xd.BAD_PAIR
+    _GREEN_HEX, _GREEN_TXT = _xd.GOOD_PAIR
+    _GLOSS = _xd.GLOSSARY
+except Exception:
+    _RED_HEX, _RED_TXT = "FFC7CE", "9C0006"
+    _GREEN_HEX, _GREEN_TXT = "C6EFCE", "006100"
+    _GLOSS = {"SVD": "Special Value Days (Fri–Sun agreed price list)"}
+
 JIVO_GREEN = "008B3A"
 HDR = PatternFill("solid", fgColor=JIVO_GREEN)
 HDR_FONT = Font(bold=True, color="FFFFFF", size=11)
 TITLE_FONT = Font(bold=True, color=JIVO_GREEN, size=18)
 SUB_FONT = Font(italic=True, color="555555", size=10)
 NOTE_FONT = Font(italic=True, color="777777", size=9)
-RED_FILL = PatternFill("solid", fgColor="F4CCCC")
-GREEN_FILL = PatternFill("solid", fgColor="D9EAD3")
-RED_FONT = Font(bold=True, color="CC0000", size=11)
-GREEN_FONT = Font(bold=True, color="006100", size=11)
+RED_FILL = PatternFill("solid", fgColor=_RED_HEX)
+GREEN_FILL = PatternFill("solid", fgColor=_GREEN_HEX)
+RED_FONT = Font(bold=True, color=_RED_TXT, size=11)
+GREEN_FONT = Font(bold=True, color=_GREEN_TXT, size=11)
 _thin = Side(style="thin", color="D0D0D0")
 BORDER = Border(left=_thin, right=_thin, top=_thin, bottom=_thin)
 CEN = Alignment(horizontal="center", vertical="center")
@@ -259,28 +273,38 @@ def render(ws, platform, records, date, regime):
     ws["A1"].font = TITLE_FONT
     ws.merge_cells(start_row=1, start_column=1, end_row=1,
                    end_column=len(HEADERS))
-    ws["A2"] = (f"{date} · {regime} day · live price vs our reference — "
+    # expand the regime once at first use (fresh-eyes: never bare "SVD")
+    rlong = _GLOSS.get(regime)
+    rtxt = f"{regime} — {rlong}" if rlong else f"{regime} day"
+    ws["A2"] = (f"{date} · {rtxt} · live price vs our reference — "
                 f"red = live BELOW our price, green = live ABOVE")
     ws["A2"].font = SUB_FONT
     ws.merge_cells(start_row=2, start_column=1, end_row=2,
+                   end_column=len(HEADERS))
+    # fresh-eyes MUST-5: a MATCH row can still show stores below — say why.
+    ws["A3"] = ("Status compares the most-common live price across stores; "
+                "'Stores Below Ref' counts individual stores selling below "
+                "reference — a MATCH can still have stores below.")
+    ws["A3"].font = NOTE_FONT
+    ws.merge_cells(start_row=3, start_column=1, end_row=3,
                    end_column=len(HEADERS))
 
     headers = list(HEADERS)
     headers[2] = f"Ref Price (₹, {regime})"
     for j, h in enumerate(headers, 1):
-        c = ws.cell(row=3, column=j, value=h)
+        c = ws.cell(row=4, column=j, value=h)
         c.fill = HDR; c.font = HDR_FONT; c.alignment = CEN; c.border = BORDER
-    ws.freeze_panes = "A4"
+    ws.freeze_panes = "A5"
 
     if not rows:
-        ws["A4"] = "No mapped SKUs for this platform yet."
-        ws["A4"].font = NOTE_FONT
-        ws.merge_cells(start_row=4, start_column=1, end_row=4,
+        ws["A5"] = "No mapped SKUs for this platform yet."
+        ws["A5"].font = NOTE_FONT
+        ws.merge_cells(start_row=5, start_column=1, end_row=5,
                        end_column=len(HEADERS))
         return Counter()
 
     counts = Counter()
-    rr = 4
+    rr = 5
     for r in rows:
         st = r.get("status")
         counts[st] += 1
@@ -303,7 +327,8 @@ def render(ws, platform, records, date, regime):
             c = ws.cell(row=rr, column=j, value=v)
             c.border = BORDER
             c.alignment = LEFT if j in (1, 2, 9) else CEN
-        ws.cell(row=rr, column=5).number_format = "#,##0.00"
+        # signed whole-rupee diff (fresh-eyes: "-169.00" read as unitless)
+        ws.cell(row=rr, column=5).number_format = "+₹#,##0;-₹#,##0"
         ws.cell(row=rr, column=6).number_format = "0.0%"
         # ---- THE color rule (sacred): RED = live below ref, GREEN = above
         dcell = ws.cell(row=rr, column=5)

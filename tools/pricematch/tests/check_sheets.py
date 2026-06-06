@@ -279,15 +279,19 @@ def check_platform_sheet(p):
 
 # ------------------------------------------------------------------ master
 def find_master():
+    # exact unlabeled name FIRST — a scoped edition (Jivo-Price-Match-Amazon-…)
+    # must never be picked up and judged against all-8-platform expectations
+    for d in (PM_DIR, os.path.join(ROOT, "output"), ROOT):
+        c = os.path.join(d, "Jivo-Price-Match-%s.xlsx" % DATE)
+        if os.path.exists(c):
+            return c
     cands = []
     for d in (PM_DIR, os.path.join(ROOT, "output"), ROOT):
         if os.path.isdir(d):
             for f in os.listdir(d):
-                if f.startswith("Jivo-Price-Match") and f.endswith(".xlsx"):
+                if re.match(r"Jivo-Price-Match-\d{4}-\d{2}-\d{2}\.xlsx$", f):
                     cands.append(os.path.join(d, f))
-    today = [c for c in cands if DATE in c]
-    pool = today or cands
-    return max(pool, key=os.path.getmtime) if pool else None
+    return max(cands, key=os.path.getmtime) if cands else None
 
 
 def check_master():
@@ -489,8 +493,17 @@ def check_ecom_head():
               s_int in re.sub(r"[,₹]", "", blob), "exposure %r absent" % exp)
     check("Ecom Head: regime badge for %s" % summ.get("regime"),
           summ.get("regime", "??") in blob, "no regime badge found")
-    check("Ecom Head: footer mentions regime.json source",
-          "regime.json" in blob, "footer missing")
+    # fresh-eyes MUST-4: plain words, the regime expanded, NO internal residue
+    GLOSS = {"SVD": "Special Value Days"}
+    rg = summ.get("regime", "")
+    long_form = GLOSS.get(rg)
+    if long_form:
+        check("Ecom Head: regime expanded in plain words ('%s')" % long_form,
+              long_form in blob, "expansion missing")
+    residue = [t for t in ("regime.json", "almBrandId", "_dashboard.py",
+                           "tools/", ".py") if t in blob]
+    check("Ecom Head: no internal residue (file names / parameters)",
+          not residue, "found %s" % residue)
 
 
 def main():

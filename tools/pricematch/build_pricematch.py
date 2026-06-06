@@ -31,42 +31,50 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
+sys.path.insert(0, os.path.dirname(HERE))              # /opt/ecom-intel/tools
 
 from openpyxl import Workbook
 from openpyxl.comments import Comment
 from openpyxl.styles import Alignment, Font, PatternFill
 from openpyxl.utils import get_column_letter
 
+import xlsx_dash as xd                                 # v2 house style (fresh-eyes)
+
 # ---------------------------------------------------------------- palette
-# Same modern ink+sage system as the Leadership View sheets (tools/predict.py).
-JIVO_GREEN = "008B3A"
-BRAND      = "1F8A4C"
-BRAND_SOFT = "D6F0E0"
-INK        = "111827"
-MUTED      = "6B7280"
-RULE       = "E5E7EB"
-CANVAS     = "F9FAFB"
-POS        = "047857"   # green text — ABOVE ref
-NEG        = "B91C1C"   # red text — BELOW ref (the violation)
-WARN       = "B45309"
-RED_FILL   = PatternFill("solid", fgColor="FFC7CE")   # classic "bad" fill
-GREEN_FILL = PatternFill("solid", fgColor="C6EFCE")   # classic "good" fill
+# Single house palette from tools/xlsx_dash (fresh-eyes 2026-06-06: one brand
+# green, ONE red/green compliance pair across every deliverable).
+JIVO_GREEN = xd.JIVO_GREEN
+BRAND      = xd.BRAND
+BRAND_SOFT = xd.BRAND_SOFT
+INK        = xd.INK
+MUTED      = xd.MUTED
+RULE       = xd.RULE
+CANVAS     = xd.CANVAS
+POS        = xd.POS      # green text — ABOVE ref
+NEG        = xd.NEG      # red text — BELOW ref (the violation)
+WARN       = xd.WARN
+RED_FILL   = PatternFill("solid", fgColor=xd.RED_FILL_HEX)
+GREEN_FILL = PatternFill("solid", fgColor=xd.GREEN_FILL_HEX)
+AMBER_FILL = PatternFill("solid", fgColor=xd.AMBER_FILL_HEX)
 GREY_FILL  = PatternFill("solid", fgColor=CANVAS)
 HDR_FILL   = PatternFill("solid", fgColor=JIVO_GREEN)
 SOFT_FILL  = PatternFill("solid", fgColor=BRAND_SOFT)
 RULE_FILL  = PatternFill("solid", fgColor=RULE)
 
-F = "Calibri"
+F = xd.F
 
 CANONICAL = ["flipkart-minutes", "flipkart", "zepto", "bigbasket",
              "amazon", "amazon-fresh", "amazon-now", "blinkit"]
-PDISP = {"flipkart-minutes": "FK Minutes", "flipkart": "Flipkart", "zepto": "Zepto",
-         "bigbasket": "BigBasket", "amazon": "Amazon", "amazon-fresh": "Amz Fresh",
-         "amazon-now": "Amz Now", "blinkit": "Blinkit"}
+PDISP = dict(xd.PLATFORM_DISPLAY)        # canonical full display names
 
 REGIME_BADGE = {"BAU": ("475569", "BAU day"),        # slate
                 "SVD": (JIVO_GREEN, "SVD day"),      # Jivo green
                 "ART": ("B45309", "ART day")}        # amber — announcement regime
+
+def regime_long(regime):
+    """'SVD' -> 'SVD — Special Value Days (…)' via the shared glossary."""
+    full = xd.GLOSSARY.get(regime)
+    return f"{regime} — {full}" if full else f"{regime} day"
 
 
 def _f(v):
@@ -163,6 +171,8 @@ def kpis_of(flat, summ, sku_map):
         exposure = sum((_f(r.get("ref_price")) or 0) - (_f(r.get("live_modal")) or 0)
                        for r in flat if r.get("status") == "BELOW"
                        and _f(r.get("ref_price")) and _f(r.get("live_modal")))
+    # listing-unit counts (fresh-eyes: the cards must say which unit they count)
+    listed_skus = {r.get("sku") for r in flat if r.get("status") != "NOT_LISTED"}
     return {
         "skus_tracked": len(live_skus),
         "platforms": len([p for p in CANONICAL]),
@@ -173,6 +183,9 @@ def kpis_of(flat, summ, sku_map):
         "pending": counts.get("PENDING_REVIEW", 0),
         "not_listed": counts.get("NOT_LISTED", 0),
         "exposure": round(exposure),
+        "listings": len(flat),
+        "mapped": sum(1 for r in flat if r.get("status") != "NOT_LISTED"),
+        "listed_skus": len(listed_skus),
     }
 
 
@@ -242,14 +255,18 @@ def money(c, red=False, green=False, bold=False):
 
 
 # ---------------------------------------------------------------- sheets
-def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map):
+def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map, label=None):
     ws = wb.create_sheet("Ecom Head", 0)
     ws.sheet_view.showGridLines = False
     ws.sheet_view.zoomScale = 110
     for L in "ABCDEFGHIJ":
         ws.column_dimensions[L].width = 16
 
-    title_cell(ws, 1, "Jivo — Price Match · Ecom Head", span=8)
+    # edition cover identity (fresh-eyes ed-MUST-1: a scoped edition must
+    # never be mistakable for the cross-platform master)
+    title = (f"Jivo — Price Match · {label} channels" if label
+             else "Jivo — Price Match · Ecom Head")
+    title_cell(ws, 1, title, span=8)
     # regime badge, top-right
     badge_color, badge_text = REGIME_BADGE.get(regime, (MUTED, f"{regime} day"))
     b = ws.cell(1, 9, f"{date}  ·  {badge_text}".upper())
@@ -257,26 +274,35 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map):
     b.fill = PatternFill("solid", fgColor=badge_color)
     b.alignment = Alignment(horizontal="center", vertical="center")
     ws.merge_cells(start_row=1, start_column=9, end_row=1, end_column=10)
+    if label:
+        xd.edition_badge(ws, 2, 9, f"{label} edition", span=2)
 
-    h = ws.cell(2, 1, f"{kpi['skus_tracked']} SKUs tracked across {kpi['platforms']} platforms"
-                      f"    ·    {kpi['below']} below-reference violations"
-                      f"    ·    ₹{kpi['exposure']:,} total below-ref exposure")
-    h.font = Font(name=F, size=11, color=MUTED)
+    # ONE reconciling caption: the cards below count LISTINGS (SKU×platform),
+    # not SKUs — say so up front (fresh-eyes MUST-2).
+    scope = (f"{', '.join(PDISP.get(p, p) for p in CANONICAL)} — the cross-"
+             f"platform master covers all 8 platforms · " if label else "")
+    h = ws.cell(2, 1, f"{kpi['skus_tracked']} master SKUs, {kpi['listed_skus']} listed here · "
+                      f"{scope}of {kpi['listings']} SKU×platform listings: "
+                      f"{kpi['compliant']} at agreed price · {kpi['below']} below · "
+                      f"{kpi['above']} above · {kpi['oos']} OOS · "
+                      f"{kpi['not_listed']} not listed · {kpi['pending']} pending · "
+                      f"₹{kpi['exposure']:,} below-ref gap")
+    h.font = Font(name=F, size=10, color=MUTED)
     h.alignment = Alignment(horizontal="left", vertical="center", indent=1)
-    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=10)
+    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=8 if label else 10)
     ws.row_dimensions[2].height = 22
     divider(ws, 3)
 
     # ---- KPI cards: 8 cards, 2 rows x 4, each spanning 2 cols x 3 rows ----
     cards = [
-        ("SKUS TRACKED", f"{kpi['skus_tracked']}", "live in master (retired excluded)", INK),
-        ("PLATFORMS", f"{kpi['platforms']}", "in the daily sweep", INK),
-        ("COMPLIANT", f"{kpi['compliant']}", "match reference (±₹1)", BRAND),
-        ("BELOW REF", f"{kpi['below']}", "VIOLATIONS — selling under ref", NEG),
-        ("ABOVE REF", f"{kpi['above']}", "priced over reference", POS),
-        ("OUT OF STOCK", f"{kpi['oos']}", "no compliance verdict", MUTED),
+        ("MASTER SKUS", f"{kpi['skus_tracked']}", "tracked (retired excluded)", INK),
+        ("PLATFORMS", f"{kpi['platforms']}", "in this report", INK),
+        ("AT AGREED PRICE", f"{kpi['compliant']}", "listings matching reference (±₹1)", BRAND),
+        ("BELOW REF", f"{kpi['below']}", "listing-level violations — under agreed price", NEG),
+        ("ABOVE REF", f"{kpi['above']}", "listings priced over reference", POS),
+        ("OOS LISTINGS", f"{kpi['oos']}", f"of {kpi['mapped']} mapped listings — no price verdict", MUTED),
         ("PENDING REVIEW", f"{kpi['pending']}", "mappings awaiting confirmation", WARN),
-        ("EXPOSURE ₹", f"₹{kpi['exposure']:,}", "Σ(ref − live) over below-ref listings", NEG),
+        ("BELOW-REF GAP ₹", f"₹{kpi['exposure']:,}", "Σ(agreed − live) over below-ref listings", NEG),
     ]
     r0 = 5
     for i, (label, value, sub, color) in enumerate(cards):
@@ -352,9 +378,10 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map):
         ws.cell(row, 1, PDISP.get(p, p)).font = Font(name=F, size=10, bold=True, color=INK)
         ws.cell(row, 2, mapped).font = Font(name=F, size=10, color=INK)
         pc = ws.cell(row, 3, f"{pct:.0f}%" if pct is not None else "—")
+        # fresh-eyes S9: threshold the colour or it stops meaning anything
         pc.font = Font(name=F, size=10, bold=True,
-                       color=(POS if (pct or 0) >= 99.5 else
-                              (WARN if (pct or 0) >= 90 else NEG)) if pct is not None else MUTED)
+                       color=(POS if (pct or 0) >= 90 else
+                              (WARN if (pct or 0) >= 70 else NEG)) if pct is not None else MUTED)
         vc = ws.cell(row, 4, len(viols))
         vc.font = Font(name=F, size=10, bold=True, color=NEG if viols else POS)
         oc = ws.cell(row, 5, offender)
@@ -369,12 +396,15 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map):
     t = ws.cell(row, 1, f"MRP-INTEGRITY FLAGS: {n_flags}")
     t.font = Font(name=F, size=12, bold=True, color=WARN if n_flags else POS)
     row += 1
+    # plain language (fresh-eyes S10: no insider shorthand, state the action)
     detail = []
     if stale:
-        detail.append(f"{len(stale)} stale master MRPs ({', '.join(sorted(stale))})")
+        detail.append(f"{len(stale)} master MRPs look stale vs live listings "
+                      f"({', '.join(sorted(stale))}) — confirm with brand team")
     for d in el:
-        detail.append(f"EXTRA LIGHT 1+1L master {d.get('official_mrp')} vs "
-                      f"{d.get('platform')} live {d.get('platform_mrp')} (the 2798-vs-2998 case)")
+        detail.append(f"EXTRA LIGHT 1+1L: master MRP ₹{d.get('official_mrp')} vs "
+                      f"{PDISP.get(d.get('platform'), d.get('platform'))} live "
+                      f"₹{d.get('platform_mrp')} — confirm which is current")
     dc = ws.cell(row, 1, "; ".join(detail) if detail else "none on file")
     dc.font = Font(name=F, size=9, color=MUTED)
     dc.alignment = Alignment(horizontal="left", vertical="top", wrap_text=True, indent=1)
@@ -385,35 +415,52 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map):
     # ---- footer ----
     divider(ws, row)
     row += 1
-    fc = ws.cell(row, 1, f"pricing day source: regime.json · today is a {regime} day — "
-                         f"all references on this report are {regime} prices")
+    # plain words, no internal file names (fresh-eyes MUST-4)
+    fc = ws.cell(row, 1, f"Today is {regime_long(regime)}. Every reference price on "
+                         f"this report is today's agreed {regime} price list.")
     fc.font = Font(name=F, size=9, italic=True, color=MUTED)
     fc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
     return ws
 
 
-def sheet_matrix(wb, date, regime, by_key, sku_map):
+def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
     # Owner order 2026-06-06: show ONLY today's regime — MRP + ONE named
     # "Agreed price (<regime>)" column. The BAU/SVD/ART trio lives in the
     # team's own master sheet; our report shows the day's truth.
+    # listed_only (scoped editions): keep only SKUs with >=1 listing on the
+    # edition's platforms — the never-listed tail lives in Coverage & pending.
     ws = wb.create_sheet("Matrix")
     ws.sheet_view.showGridLines = False
-    ws.freeze_panes = "B2"
+    ws.freeze_panes = "B3"
     ws.column_dimensions["A"].width = 26
     regime_cols = ["MRP", f"Agreed price ({regime})"]
     ws.column_dimensions["B"].width = 11
     ws.column_dimensions["C"].width = 18
     for i in range(len(CANONICAL)):
-        ws.column_dimensions[get_column_letter(2 + len(regime_cols) + i)].width = 11
+        ws.column_dimensions[get_column_letter(2 + len(regime_cols) + i)].width = 14
 
     headers = ["SKU"] + regime_cols + [PDISP.get(p, p) for p in CANONICAL]
     table_header(ws, 1, headers)
     agreed_col = 3
     ws.cell(1, agreed_col).fill = PatternFill("solid", fgColor=INK)
 
+    # legend at the TOP, inside the frozen pane, all states covered
+    # (fresh-eyes MUST-5: it was the last row, below 115 data rows)
+    xd.legend(ws, 2, [
+        ("RED = live below agreed price (±₹1)", xd.RED_FILL_HEX, xd.RED_TEXT),
+        ("GREEN = live above", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
+        ("blue link = live listing · plain = at agreed price", None, "0563C1"),
+        ("OOS = out of stock · ? = mapping under review · — = not listed", None, None),
+    ], span=2)
+
     skus = sku_map.get("skus", {})
-    row = 2
+    if listed_only:
+        skus = {sku: e for sku, e in skus.items()
+                if not e.get("retired") and any(
+                    (by_key.get((sku, p)) or {}).get("status",
+                     "NOT_LISTED") != "NOT_LISTED" for p in CANONICAL)}
+    row = 3
     for sku, entry in skus.items():
         retired = bool(entry.get("retired"))
         name = ws.cell(row, 1, sku + ("  (retired)" if retired else ""))
@@ -491,34 +538,84 @@ def sheet_matrix(wb, date, regime, by_key, sku_map):
                                     "pricematch", height=50, width=220)
             # MATCH: value + hyperlink, no fill
         row += 1
-    ws.cell(row + 1, 1, f"Reference = Agreed price ({regime}, {date}); tolerance ±₹1. "
-                        "RED fill = live below reference (violation) · GREEN = above · "
-                        "no fill = match · — = not listed.").font = \
-        Font(name=F, size=9, italic=True, color=MUTED)
+    # (legend lives in the frozen top row — fresh-eyes: never the last row)
     return ws
 
 
-def sheet_violations(wb, date, regime, vrows):
+def sheet_violations(wb, date, regime, vrows, below_listings):
     ws = wb.create_sheet("Violations")
     ws.sheet_view.showGridLines = False
-    widths = [26, 13, 16, 10, 11, 11, 11]
+    widths = [26, 16, 16, 10, 11, 11, 11]
     for i, w in enumerate(widths):
         ws.column_dimensions[get_column_letter(1 + i)].width = w
     title_cell(ws, 1, "Below-reference violations — every store", size=14, color=NEG, span=7)
     tot = sum(v["loss"] for v in vrows)
-    h = ws.cell(2, 1, f"{len(vrows)} store-level rows under the {regime} reference "
-                      f"({date}) · Σ loss ₹{tot:,.0f} — the modal price can hide a "
-                      f"single cheap dark store; this sheet can't.")
+    # reconcile the cover's listing-level count with this sheet's store rows
+    # (fresh-eyes MUST-3) in plain words (S6: no "modal"/"dark store" jargon).
+    h = ws.cell(2, 1, f"The cover's {below_listings} listing-level violations expand to "
+                      f"{len(vrows)} store-level rows under the {regime} reference "
+                      f"({date}) · Σ loss ₹{tot:,.0f}. The most-common price can hide "
+                      f"one cheaper store; this sheet lists every store below reference.")
     h.font = Font(name=F, size=10, color=MUTED)
+    h.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True, indent=1)
     ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=7)
-    table_header(ws, 4, ["SKU", "Platform", "City", "Pincode", "Store ₹", "Ref ₹", "Loss ₹"])
-    ws.freeze_panes = "A5"
-    row = 5
-    if not vrows:
+    ws.row_dimensions[2].height = 28
+
+    # ---- roll-up first (fresh-eyes S7: make the wall of rows navigable) ----
+    groups = {}
+    for v in vrows:
+        g = groups.setdefault((v["sku"], v["platform"]),
+                              {"n": 0, "loss": 0.0, "worst": None, "url": v.get("url")})
+        g["n"] += 1
+        g["loss"] += v["loss"]
+        if g["worst"] is None or v["loss"] > g["worst"]["loss"]:
+            g["worst"] = v
+    ranked = sorted(groups.items(), key=lambda kv: -kv[1]["loss"])
+    TOP = 15
+    t = ws.cell(4, 1, "WORST FIRST — by SKU × platform"
+                      + (f" (top {TOP} of {len(ranked)})" if len(ranked) > TOP else ""))
+    t.font = Font(name=F, size=12, bold=True, color=NEG)
+    table_header(ws, 5, ["SKU", "Platform", "Stores below", "Σ loss ₹",
+                         "Worst store (city @ ₹)"])
+    ws.merge_cells(start_row=5, start_column=5, end_row=5, end_column=7)
+    row = 6
+    if not ranked:
         c = ws.cell(row, 1, "None — no store anywhere is selling below reference today.")
         c.font = Font(name=F, size=10, italic=True, color=POS)
+        row += 1
+    for (sku, plat), g in ranked[:TOP]:
+        sc = ws.cell(row, 1, sku)
+        sc.font = Font(name=F, size=10, color=INK)
+        if g.get("url"):
+            sc.hyperlink = g["url"]
+            sc.font = Font(name=F, size=10, color="0563C1", underline="single")
+        ws.cell(row, 2, PDISP.get(plat, plat)).font = Font(name=F, size=10, color=MUTED)
+        ws.cell(row, 3, g["n"]).font = Font(name=F, size=10, bold=True, color=INK)
+        lc = ws.cell(row, 4, round(g["loss"]))
+        lc.number_format = "₹#,##0"
+        lc.font = Font(name=F, size=10, bold=True, color=NEG)
+        lc.fill = RED_FILL
+        w = g["worst"]
+        wc = ws.cell(row, 5, f"{w['city']} @ ₹{w['price']:,.0f} (−₹{w['loss']:,.0f})")
+        wc.font = Font(name=F, size=10, color=INK)
+        ws.merge_cells(start_row=row, start_column=5, end_row=row, end_column=7)
+        row += 1
+    row += 1
+
+    # ---- full store-level detail (appendix), filterable ----
+    t = ws.cell(row, 1, f"EVERY STORE — all {len(vrows)} rows, by loss")
+    t.font = Font(name=F, size=12, bold=True, color=INK)
+    row += 1
+    hdr_row = row
+    table_header(ws, hdr_row, ["SKU", "Platform", "City", "Pincode",
+                               "Store ₹", "Ref ₹", "Loss ₹"])
+    row += 1
     for v in vrows:
-        ws.cell(row, 1, v["sku"]).font = Font(name=F, size=10, color=INK)
+        sc = ws.cell(row, 1, v["sku"])
+        sc.font = Font(name=F, size=10, color=INK)
+        if v.get("url"):
+            sc.hyperlink = v["url"]
+            sc.font = Font(name=F, size=10, color="0563C1", underline="single")
         ws.cell(row, 2, PDISP.get(v["platform"], v["platform"])).font = \
             Font(name=F, size=10, color=MUTED)
         ws.cell(row, 3, v["city"]).font = Font(name=F, size=10, color=INK)
@@ -530,6 +627,8 @@ def sheet_violations(wb, date, regime, vrows):
         lc.font = Font(name=F, size=10, bold=True, color=NEG)
         lc.fill = RED_FILL
         row += 1
+    if vrows:
+        ws.auto_filter.ref = "A%d:G%d" % (hdr_row, row - 1)
     return ws
 
 
@@ -539,10 +638,14 @@ def sheet_above(wb, date, regime, flat):
     widths = [26, 13, 11, 11, 11, 9, 60]
     for i, w in enumerate(widths):
         ws.column_dimensions[get_column_letter(1 + i)].width = w
-    title_cell(ws, 1, "Above-reference listings — the green list", size=14, color=POS, span=7)
+    title_cell(ws, 1, "Above-reference listings", size=14, color=POS, span=7)
     above = sorted([r for r in flat if r.get("status") == "ABOVE"],
                    key=lambda r: -(_f(r.get("diff")) or 0))
-    h = ws.cell(2, 1, f"{len(above)} listings priced above the {regime} reference ({date}).")
+    over = sum(1 for r in above if (_f(r.get("diff_pct")) or 0) > 25)
+    # fresh-eyes S8: heavy over-pricing is a sales risk, not a win — amber it
+    h = ws.cell(2, 1, f"{len(above)} listings priced above the {regime} reference ({date})"
+                      + (f" · AMBER = more than 25% over reference — overpriced, "
+                         f"sales risk ({over})" if over else ""))
     h.font = Font(name=F, size=10, color=MUTED)
     ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=7)
     table_header(ws, 4, ["SKU", "Platform", "Ref ₹", "Live ₹", "Diff ₹", "Diff %", "Listing"])
@@ -552,16 +655,22 @@ def sheet_above(wb, date, regime, flat):
         c = ws.cell(row, 1, "None above reference today.")
         c.font = Font(name=F, size=10, italic=True, color=MUTED)
     for r in above:
+        overpriced = (_f(r.get("diff_pct")) or 0) > 25
         ws.cell(row, 1, r.get("sku")).font = Font(name=F, size=10, color=INK)
         ws.cell(row, 2, PDISP.get(r.get("platform"), r.get("platform"))).font = \
             Font(name=F, size=10, color=MUTED)
         money(ws.cell(row, 3, _f(r.get("ref_price"))))
         lv = ws.cell(row, 4, _f(r.get("live_modal")))
-        money(lv, green=True)
-        lv.fill = GREEN_FILL
+        if overpriced:
+            lv.number_format = "₹#,##0"
+            lv.font = Font(name=F, size=10, bold=True, color=WARN)
+            lv.fill = AMBER_FILL
+        else:
+            money(lv, green=True)
+            lv.fill = GREEN_FILL
         dc = ws.cell(row, 5, _f(r.get("diff")))
         dc.number_format = "+₹#,##0;-₹#,##0"
-        dc.font = Font(name=F, size=10, bold=True, color=POS)
+        dc.font = Font(name=F, size=10, bold=True, color=WARN if overpriced else POS)
         pc = ws.cell(row, 6, (_f(r.get("diff_pct")) or 0) / 100.0)
         pc.number_format = "+0.0%;-0.0%"
         pc.font = Font(name=F, size=10, color=MUTED)
@@ -592,60 +701,64 @@ def sheet_coverage(wb, date, flat, by_key, sku_map):
                    if (by_key.get((sku, p)) or {}).get("status", "NOT_LISTED") == "NOT_LISTED"]
         if missing:
             gaps.append((sku, missing))
-    t = ws.cell(row, 1, f"NOT LISTED — matrix gaps ({sum(len(m) for _, m in gaps)} "
-                        f"SKU×platform cells across {len(gaps)} SKUs)")
-    t.font = Font(name=F, size=12, bold=True, color=INK)
-    row += 1
-    table_header(ws, row, ["SKU", "Gaps", "Missing platforms"], start_col=1)
-    row += 1
-    for sku, missing in sorted(gaps, key=lambda g: -len(g[1])):
-        ws.cell(row, 1, sku).font = Font(name=F, size=10, color=INK)
-        ws.cell(row, 2, len(missing)).font = Font(name=F, size=10, color=MUTED)
-        ws.cell(row, 3, ", ".join(PDISP.get(p, p) for p in missing)).font = \
-            Font(name=F, size=10, color=MUTED)
+    # zero-count sections are dropped entirely (fresh-eyes ed-S5)
+    if gaps:
+        t = ws.cell(row, 1, f"NOT LISTED — matrix gaps ({sum(len(m) for _, m in gaps)} "
+                            f"SKU×platform cells across {len(gaps)} SKUs)")
+        t.font = Font(name=F, size=12, bold=True, color=INK)
         row += 1
-    row += 1
+        table_header(ws, row, ["SKU", "Gaps", "Missing platforms"], start_col=1)
+        row += 1
+        all_str = ", ".join(PDISP.get(p, p) for p in CANONICAL)
+        for sku, missing in sorted(gaps, key=lambda g: -len(g[1])):
+            ws.cell(row, 1, sku).font = Font(name=F, size=10, color=INK)
+            ws.cell(row, 2, len(missing)).font = Font(name=F, size=10, color=MUTED)
+            miss_str = ", ".join(PDISP.get(p, p) for p in missing)
+            if miss_str == all_str:
+                miss_str = f"all {len(CANONICAL)} platforms in this report"
+            ws.cell(row, 3, miss_str).font = Font(name=F, size=10, color=MUTED)
+            row += 1
+        row += 1
 
     # PENDING_REVIEW
     pend = [r for r in flat if r.get("status") == "PENDING_REVIEW"]
-    t = ws.cell(row, 1, f"PENDING REVIEW — mapped but unconfirmed ({len(pend)})")
-    t.font = Font(name=F, size=12, bold=True, color=WARN)
-    row += 1
-    table_header(ws, row, ["SKU", "Platform", "Listing"], start_col=1)
-    row += 1
-    if not pend:
-        ws.cell(row, 1, "none").font = Font(name=F, size=10, italic=True, color=MUTED)
+    if pend:
+        t = ws.cell(row, 1, f"PENDING REVIEW — mapped but unconfirmed ({len(pend)})")
+        t.font = Font(name=F, size=12, bold=True, color=WARN)
         row += 1
-    for r in pend:
-        ws.cell(row, 1, r.get("sku")).font = Font(name=F, size=10, color=INK)
-        ws.cell(row, 2, PDISP.get(r.get("platform"), r.get("platform"))).font = \
-            Font(name=F, size=10, color=MUTED)
-        u = ws.cell(row, 3, r.get("url") or r.get("listing_id") or "")
-        if r.get("url"):
-            u.hyperlink = r["url"]
-            u.font = Font(name=F, size=9, color="0563C1", underline="single")
+        table_header(ws, row, ["SKU", "Platform", "Listing"], start_col=1)
         row += 1
-    row += 1
+        for r in pend:
+            ws.cell(row, 1, r.get("sku")).font = Font(name=F, size=10, color=INK)
+            ws.cell(row, 2, PDISP.get(r.get("platform"), r.get("platform"))).font = \
+                Font(name=F, size=10, color=MUTED)
+            u = ws.cell(row, 3, r.get("url") or r.get("listing_id") or "")
+            if r.get("url"):
+                u.hyperlink = r["url"]
+                u.font = Font(name=F, size=9, color="0563C1", underline="single")
+            row += 1
+        row += 1
 
     # OOS
     oos = [r for r in flat if r.get("status") == "OOS"]
-    t = ws.cell(row, 1, f"OUT OF STOCK — no compliance verdict ({len(oos)})")
-    t.font = Font(name=F, size=12, bold=True, color=MUTED)
-    row += 1
-    table_header(ws, row, ["SKU", "Platform", "Listing"], start_col=1)
-    row += 1
-    if not oos:
-        ws.cell(row, 1, "none").font = Font(name=F, size=10, italic=True, color=MUTED)
+    if oos:
+        t = ws.cell(row, 1, f"OUT OF STOCK — no price verdict ({len(oos)})")
+        t.font = Font(name=F, size=12, bold=True, color=MUTED)
         row += 1
-    for r in oos:
-        ws.cell(row, 1, r.get("sku")).font = Font(name=F, size=10, color=INK)
-        ws.cell(row, 2, PDISP.get(r.get("platform"), r.get("platform"))).font = \
-            Font(name=F, size=10, color=MUTED)
-        u = ws.cell(row, 3, r.get("url") or r.get("listing_id") or "")
-        if r.get("url"):
-            u.hyperlink = r["url"]
-            u.font = Font(name=F, size=9, color="0563C1", underline="single")
+        table_header(ws, row, ["SKU", "Platform", "Listing"], start_col=1)
         row += 1
+        for r in oos:
+            ws.cell(row, 1, r.get("sku")).font = Font(name=F, size=10, color=INK)
+            ws.cell(row, 2, PDISP.get(r.get("platform"), r.get("platform"))).font = \
+                Font(name=F, size=10, color=MUTED)
+            u = ws.cell(row, 3, r.get("url") or r.get("listing_id") or "")
+            if r.get("url"):
+                u.hyperlink = r["url"]
+                u.font = Font(name=F, size=9, color="0563C1", underline="single")
+            row += 1
+    if row == 3:
+        ws.cell(3, 1, "No gaps — every master SKU is listed, confirmed and in stock."
+                ).font = Font(name=F, size=10, italic=True, color=POS)
     return ws
 
 
@@ -723,9 +836,9 @@ def main():
 
     wb = Workbook()
     wb.remove(wb.active)
-    sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map)
-    sheet_matrix(wb, date, regime, by_key, sku_map)
-    sheet_violations(wb, date, regime, vrows)
+    sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map, label=args.label)
+    sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=bool(args.label))
+    sheet_violations(wb, date, regime, vrows, kpi["below"])
     sheet_above(wb, date, regime, flat)
     sheet_coverage(wb, date, flat, by_key, sku_map)
     wb.active = 0

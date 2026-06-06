@@ -64,8 +64,20 @@ LEFT = Alignment(horizontal="left", vertical="center")
 
 wb = Workbook()
 
-# pretty SKU label from canonical
-def label(canon):
+# Display label = the REAL listing title (longest seen for the SKU), cleaned.
+# Re-titling the canonical slug garbled names ("1+1"→"11 Litres", truncated
+# "Mustard D" + a literal "NA" pack) and doubled the pack suffix ("1 Litre 1 L")
+# — fresh-eyes 2026-06-06 MUST-3. Slug titling stays only as a fallback.
+RAW_BY_CANON = {}
+for _r in rows:
+    _raw = (_r.get('sku_raw') or '').strip().rstrip(',-– ').strip()
+    if _raw and len(_raw) > len(RAW_BY_CANON.get(_r['canonical'], '')):
+        RAW_BY_CANON[_r['canonical']] = _raw
+
+def label(canon, maxlen=60):
+    raw = RAW_BY_CANON.get(canon)
+    if raw:
+        return raw if len(raw) <= maxlen else raw[:maxlen - 1].rstrip() + "…"
     parts = canon.rsplit('-', 1)
     name = parts[0].replace('-', ' ').title()
     pack = parts[1].upper().replace('ML', ' ml').replace('L', ' L') if len(parts) > 1 else ''
@@ -95,10 +107,14 @@ def autosize(ws, maxw=42):
 ws = wb.active; ws.title = "Summary"
 ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TITLE_FONT
 ws.merge_cells("A1:G1")
-ws["A2"] = f"Captured {summary['captured_at'][:16].replace('T',' ')} IST  -  {summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo  -  {summary['unique_skus']} unique SKUs  -  {summary['total_rows']} datapoints  -  scrape {summary['wall_s']}s"
+# ONE honest IST timestamp (captured_at is UTC "Z"; the old slice printed UTC
+# labelled IST — the 07:24-vs-12:54 confusion). No scrape-seconds (internal).
+_utc = datetime.datetime.fromisoformat(summary['captured_at'].replace('Z', '+00:00'))
+CAPTURED_IST = (_utc + datetime.timedelta(hours=5, minutes=30)).strftime('%Y-%m-%d %H:%M')
+ws["A2"] = f"Captured {CAPTURED_IST} IST  -  {summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo  -  {summary['unique_skus']} unique SKUs  -  {summary['total_rows']} datapoints"
 ws["A2"].font = SUB_FONT; ws.merge_cells("A2:G2")
-# Source caption: genuine Amazon Now (ctnow) only. No speed-tier text (owner order).
-ws["A3"] = "Source: genuine Amazon Now storefront (almBrandId=ctnow)."
+# Source caption: plain words, no URL parameters (fresh-eyes MUST-6).
+ws["A3"] = "Source: Amazon Now storefront."
 ws["A3"].font = SUB_FONT; ws.merge_cells("A3:G3")
 
 # KPI cards
@@ -109,10 +125,14 @@ for i, (k, v) in enumerate(kpis):
     c = 1 + i * 2
     ws.cell(row=r, column=c, value=k).font = Font(bold=True, size=10, color="555555")
     cell = ws.cell(row=r + 1, column=c, value=v); cell.font = Font(bold=True, size=20, color=JIVO_GREEN)
+if cities_without:
+    nz = ws.cell(row=6, column=1, value="Zero-Jivo cities: " + ", ".join(cities_without))
+    nz.font = Font(italic=True, size=9, color="CC0000")
+    ws.merge_cells(start_row=6, start_column=1, end_row=6, end_column=8)
 
 # cheapest per SKU
 ws.cell(row=7, column=1, value="Cheapest pincode per SKU (in-stock, sale price)").font = Font(bold=True, size=12)
-hdr = ["SKU", "City", "Pincode", "Store", "Sale Rs", "MRP Rs", "Disc %"]
+hdr = ["SKU", "City", "Pincode", "Store", "Sale ₹", "MRP ₹", "Disc %"]
 for j, h in enumerate(hdr, 1):
     ws.cell(row=8, column=j, value=h)
 style_header(ws, 8, len(hdr))
@@ -124,9 +144,12 @@ for s in skus:
     cand = [x for x in cand if x.get('sale') is not None]
     if not cand: continue
     b = min(cand, key=lambda x: x['sale'])
-    for j, v in enumerate([label(s), b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], b['discount_pct']], 1):
+    disc = b['discount_pct'] / 100 if b.get('discount_pct') is not None else None
+    for j, v in enumerate([label(s), b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], disc], 1):
         cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
         if j >= 5: cell.alignment = CEN
+        if j in (5, 6): cell.number_format = '"₹"#,##0'
+        if j == 7: cell.number_format = '0.0%'
     rr += 1
 # distribution gaps
 rr += 1
@@ -140,21 +163,23 @@ autosize(ws)
 # Amazon Now-specific: show ASIN (the stable cross-surface key). No slot/speed-tier
 # column (owner order 2026-06-06).
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Locality", "ASIN", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "In stock"]
+cols = ["City", "Pincode", "Locality", "ASIN", "SKU", "Pack", "Vol (ml)", "Sale ₹", "MRP ₹", "Disc %", "₹/L", "In stock"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     ws.append([x['city'], x['pincode'], x['locality'], x.get('asin'), x['sku_raw'], x['pack'], x['vol_ml'],
-               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], "Yes" if x['in_stock'] else "No"])
+               x['sale'], x['mrp'],
+               (x['discount_pct'] / 100 if x.get('discount_pct') is not None else None),
+               x['per_litre'], "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
-        if cell.column in (8, 9): cell.number_format = '"Rs"#,##0'
-        if cell.column == 10: cell.number_format = '0.0"%"'
+        if cell.column in (8, 9, 11): cell.number_format = '"₹"#,##0'
+        if cell.column == 10: cell.number_format = '0.0%'  # fraction + true % (never literal-% on a ×100 value)
     if row[11].value == "No": row[11].fill = RED
-    if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 40: row[9].fill = GREEN
+    if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 0.4: row[9].fill = GREEN
 autosize(ws)
 
 # ---------- Matrix builder ----------
@@ -183,34 +208,52 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
         ws.conditional_formatting.add(f"B2:{last}{ws.max_row}",
             ColorScaleRule(start_type="min", start_color=lo, end_type="max", end_color=hi))
     autosize(ws, maxw=14)
+    ws.column_dimensions["A"].width = 46   # full product names readable (fresh-eyes MUST-2)
     return ws
 
 # Sheet 3: Pricing Matrix (avg sale per city) - green cheap -> red expensive
-matrix("Pricing Matrix", lambda c: (round(statistics.mean([x['sale'] for x in c if x['sale'] is not None])) if any(x['sale'] is not None for x in c) else None), '"Rs"#,##0', scale=True)
-# Sheet 4: Stock Status (% in stock)
+matrix("Pricing Matrix", lambda c: (round(statistics.mean([x['sale'] for x in c if x['sale'] is not None])) if any(x['sale'] is not None for x in c) else None), '"₹"#,##0', scale=True)
+# Sheet 4: Stock Status (share in stock; FRACTION + true % format)
 def stock_cell(c):
-    pct = round(100 * sum(x['in_stock'] for x in c) / len(c))
-    return pct
-wsS = matrix("Stock Status", stock_cell, '0"%"')
+    return round(sum(x['in_stock'] for x in c) / len(c), 2)
+wsS = matrix("Stock Status", stock_cell, '0%')
+n_full = 0; n_cells = 0
 for row in wsS.iter_rows(min_row=2):
     for cell in row:
         if cell.column > 1 and isinstance(cell.value, (int, float)):
-            cell.fill = GREEN if cell.value == 100 else (RED if cell.value == 0 else YEL)
-# Sheet 5: Discount Analysis (avg disc per city) - higher = greener
-matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] for x in c if x['discount_pct'] is not None]), 1) if any(x['discount_pct'] is not None for x in c) else None, '0.0"%"', scale=True, scale_rev=True)
+            n_cells += 1
+            if cell.value == 1: n_full += 1
+            cell.fill = GREEN if cell.value == 1 else (RED if cell.value == 0 else YEL)
+# one-line takeaway above the grid (fresh-eyes S12: the wall of green is one bit)
+wsS.insert_rows(1)
+wsS["A1"] = (f"All {len(skus)} SKUs 100% in stock in every covered city."
+             if n_full == n_cells else
+             f"{n_full} of {n_cells} SKU×city cells fully in stock — yellow/red cells below need attention.")
+wsS["A1"].font = Font(bold=True, size=11, color=JIVO_GREEN if n_full == n_cells else "CC0000")
+wsS.merge_cells(start_row=1, start_column=1, end_row=1, end_column=min(7, wsS.max_column))
+wsS.freeze_panes = "B3"
+# Sheet 5: Discount Analysis (avg disc per city) — deep discount is a BRAND
+# COMPLIANCE RISK, not a win: deepest discount = RED (fresh-eyes S14).
+matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] / 100 for x in c if x['discount_pct'] is not None]), 3) if any(x['discount_pct'] is not None for x in c) else None, '0.0%', scale=True)
 
 # ---------- Sheet 6: Now Serviceability & Coverage ----------
 # For Amazon Now the key per-pincode facts are: is Now serviceable here at all, and
 # does Jivo appear (vs only competitors). Three states: green=Jivo on Now,
 # yellow=Now serviceable but NO Jivo (competitor-only whitespace), red=no Now here.
 ws = wb.create_sheet("Now Serviceability")
+n_svc = sum(1 for p in per if p.get('serviceable', len(p['rows']) > 0))
+ws["A1"] = f"{n_svc} of {len(per)} pincodes serviceable on Now · {summary['pincodes_with_jivo']} carry Jivo"
+ws["A1"].font = Font(bold=True, size=11, color=JIVO_GREEN)
+ws.merge_cells("A1:E1")
 ws.append(["City", "Pincode", "Locality", "Now serviceable", "Jivo SKUs on Now"])
-for p in sorted(per, key=lambda p: (p['city'], p['pincode'])):
+# serviceable first (fresh-eyes: alphabetical put the red wall on screen one)
+for p in sorted(per, key=lambda p: (not p.get('serviceable', len(p['rows']) > 0),
+                                    -len(p['rows']), p['city'], p['pincode'])):
     svc = p.get('serviceable', len(p['rows']) > 0)
     ws.append([p['city'], p['pincode'], p['locality'], "Yes" if svc else "No", len(p['rows'])])
-style_header(ws); ws.freeze_panes = "A2"
-ws.auto_filter.ref = f"A1:E{ws.max_row}"
-for row in ws.iter_rows(min_row=2):
+style_header(ws, 2); ws.freeze_panes = "A3"
+ws.auto_filter.ref = f"A2:E{ws.max_row}"
+for row in ws.iter_rows(min_row=3):
     for cell in row: cell.border = BORDER
     njivo = row[4].value
     svc = row[3].value == "Yes"
@@ -226,12 +269,12 @@ autosize(ws)
 # (the Now storefront indexes only a subset), not a scrape gap.
 if CATALOG:
     ws = wb.create_sheet("Catalog Coverage")
+    # title + header + data — no blank-band sandwich, header styled LAST so no
+    # data fill can bleed into it (fresh-eyes S11).
     ws["A1"] = f"Jivo catalog on Amazon Now — {cov_counts['PRESENT']} present · {cov_counts['OUT OF STOCK']} out of stock · {cov_counts['NOT ON NOW']} not on Now (of {len(CATALOG)} catalog SKUs)"
     ws["A1"].font = Font(bold=True, size=11, color=JIVO_GREEN); ws.merge_cells("A1:E1")
-    ws.append([])
-    hdr_row = ws.max_row + 1
-    ws.append(["ASIN", "Catalog name", "Category", "Status", "Now sale Rs (min)"])
-    style_header(ws, hdr_row, 5)
+    hdr_row = 2
+    ws.append(["ASIN", "Catalog name", "Category", "Status", "Now sale ₹ (min)"])
     STATUS_ORDER = {"PRESENT": 0, "OUT OF STOCK": 1, "NOT ON NOW": 2}
     for asin in sorted(CATALOG, key=lambda a: (STATUS_ORDER[coverage_status(a)], CATALOG[a].get('category') or '', CATALOG[a].get('name') or '')):
         p = CATALOG[asin]
@@ -240,16 +283,17 @@ if CATALOG:
         sales = [x['sale'] for x in rs if x.get('sale') is not None]
         ws.append([asin, (p.get('name') or '')[:60], p.get('category') or p.get('item') or '',
                    st, (min(sales) if sales else None)])
-    style_header(ws, hdr_row, 5)
-    ws.freeze_panes = "A4"
-    ws.auto_filter.ref = f"A3:E{ws.max_row}"
+    ws.freeze_panes = "A3"
+    ws.auto_filter.ref = f"A2:E{ws.max_row}"
     for row in ws.iter_rows(min_row=hdr_row + 1):
         for cell in row:
             cell.border = BORDER
             if cell.column in (4, 5):
                 cell.alignment = CEN
+            if cell.column == 5: cell.number_format = '"₹"#,##0'
         sc = row[3].value
         row[3].fill = GREEN if sc == "PRESENT" else (YEL if sc == "OUT OF STOCK" else RED)
+    style_header(ws, hdr_row, 5)
     autosize(ws)
 
 fname = f"Jivo-{PLATFORM.replace(' ', '')}-Live-Report-{datetime.date.today()}.xlsx"

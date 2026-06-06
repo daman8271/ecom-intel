@@ -176,12 +176,18 @@ def main():
               sum_mapped == mapped_global, "sum=%d" % sum_mapped)
 
     # ------------------------------------------------------------ Violations
+    # The sheet now opens with a SKU×platform ROLL-UP (fresh-eyes S7); the
+    # store-level detail table is the one whose header row is SKU|…|City.
     ws = wb["Violations"]
     hdr = None
-    for r in range(1, 8):
-        if str(ws.cell(row=r, column=1).value or "").strip().upper() == "SKU":
+    for r in range(1, 40):
+        if (str(ws.cell(row=r, column=1).value or "").strip().upper() == "SKU"
+                and str(ws.cell(row=r, column=3).value or "").strip().upper() == "CITY"):
             hdr = r
             break
+    check("Violations: store-level detail table found (SKU|…|City header)", hdr is not None)
+    if hdr is None:
+        finish()
     vrows = []
     for r in range(hdr + 1, ws.max_row + 1):
         if ws.cell(row=r, column=1).value is None:
