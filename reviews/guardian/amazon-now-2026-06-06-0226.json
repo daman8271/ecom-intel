@@ -1,0 +1,98 @@
+{
+  "platform": "amazon-now",
+  "run_id": "2026-06-06-0226",
+  "verdict": "SUSPECT",
+  "review_verdict": "OK",
+  "review_reasons": [],
+  "deep_reasons": [
+    "[class 2] geo_price_identity: jivo-daily-cooking-pomace-olive-oil-1-litre-1l sells at identical \u20b9379.0 across 8 cities w/o store_id \u2014 possible contamination",
+    "[class 4] shared_price_dup: 2 (sale,mrp) pairs shared by distinct SKUs, e.g. \u20b9909.0/\u20b91050.0 -> jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na, jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l"
+  ],
+  "reasons": [
+    "[class 2] geo_price_identity: jivo-daily-cooking-pomace-olive-oil-1-litre-1l sells at identical \u20b9379.0 across 8 cities w/o store_id \u2014 possible contamination",
+    "[class 4] shared_price_dup: 2 (sale,mrp) pairs shared by distinct SKUs, e.g. \u20b9909.0/\u20b91050.0 -> jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na, jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_price_identity",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "jivo-daily-cooking-pomace-olive-oil-1-litre-1l sells at identical \u20b9379.0 across 8 cities w/o store_id \u2014 possible contamination"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "23 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "646 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 646 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "2 (sale,mrp) pairs shared by distinct SKUs, e.g. \u20b9909.0/\u20b91050.0 -> jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na, jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "3/646 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (646/646 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 0.0h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "amazon-now SUSPECT (deep-check): jivo-daily-cooking-pomace-olive-oil-1-litre-1l sells at identical \u20b9379.0 across 8 cities w/o store_id \u2014 possible contamination | heal: blinkit-style default-store contamination -> re-resolve store + re-scrape",
+  "quarantined": false,
+  "evaluated_at": "2026-06-06T02:26:22.956621+00:00",
+  "source_result": "/opt/ecom-intel/platforms/amazon-now/result.json"
+}
