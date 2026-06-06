@@ -138,8 +138,49 @@ Ready-to-merge additions: **`tools/cron/tests/id_fold_proposal.json`**
 
 ---
 
-## Pending re-verification before w3.done (owner instruction)
-1. **W1 guardian changes** — adversarially re-verify: floor recalibration, spool-pull on
-   guardian-BROKEN, no regression in heal/quarantine/alert behavior.
-2. **W2 sweep-chain lock in run_all.sh** — re-verify: serialization, backstop skip, SIM
-   tests still green.
+## Re-verification appendix (post-landing, W3 adversarial) — BOTH VERIFIED ✅
+
+### W1 guardian changes (`af313183`) — floor + spool-pull + no-regression: **VERIFIED**
+- **(a) Floor**: `priced_floor_for()` re-derived independently — bigbasket baseline
+  `priced_rows` samples = [10×10], median 10 → 0.6× → **floor 6**; all 7 other platforms
+  stay at the static 15 (verified by direct call per platform). Clamp semantics confirmed in
+  code: can only RELAX below 15, never under 5, env-overridable per platform. Baseline is
+  OK-runs-only, and review.py's own collapse checks bound the poisoning risk. `py_compile` OK.
+- **(b) Spool-pull**: my own 12-check fixture battery (independent of W1's 15): no-env inert /
+  defer-env replaces an ok-report with a held-marker (`held:true, pulled_by:guardian`,
+  send_batch-classifiable) / `.json.sent` respected, nothing created beside it / marker created
+  when nothing was spooled / non-BROKEN never touches the spool / wired at the no-heal
+  final-BROKEN exit (post-heal-exhausted exit verified in code — pull is AFTER the heal loop,
+  so a heal re-spool can't resurrect the report; heal-RECOVERY correctly does not pull).
+  **12/12 PASS.**
+- **(c) Flip + no-regression**: real bigbasket result.json now evaluates **SUSPECT** (not
+  BROKEN — no quarantine/heal/alert; residual is the pre-existing `shared_price_dup` on
+  identically-priced juice flavour variants, ship-per-design). Note: LEAD's (c) said
+  "BROKEN→OK"; actual is BROKEN→SUSPECT, which W1 documented and which satisfies the intent.
+  Full 8-platform verdict sweep vs pre-change guardian.log: **bigbasket-only delta, zero
+  regressions** (fkm OK, flipkart SUSPECT, zepto OK, amazon SUSPECT, fresh SUSPECT,
+  now SUSPECT, blinkit OK — all unchanged). Stale `.guardian-broken-bigbasket` marker now
+  clears on evaluation.
+
+### W2 sweep-chain lock (`f50860ae`) — **VERIFIED** (own sandbox, verbatim run_all.sh copy)
+- `bash -n` OK.
+- **(A) Plain path unchanged**: single run → 8 serial platforms, lock silent (no
+  wait/skip/degrade lines), backstop ran, DONE.
+- **(B) Serialization**: two concurrent run_alls — 2nd logged `waiting for prior sweep chain`
+  and its first platform started at exactly the 1st chain's end; the 16-run stub timeline has
+  **zero interleave**.
+- **(C) Backstop skip**: 1st sweep's backstop SKIPPED while the 2nd's chain held the lock;
+  2nd sweep's own backstop ran afterward — the designed zero-coverage-loss handoff.
+- **(D) `-w` timeout** (constant sandbox-shrunk to 2s, sole diff line): chain SKIPPED with 0
+  scrapes, `straight to barrier`, backstop gated, sweep reached DONE.
+- **(E) Degrade**: unopenable lockfile (dir in place of file) → logged
+  `degrading to unlocked (old behavior)`; chain AND backstop both ran unlocked.
+- **(F) Adversarial fd-leak probe** (beyond W2's battery): a daemonized scraper grandchild
+  inherits lock fd 7 and holds the chain mutex past sweep DONE — a following sweep waited the
+  full grandchild lifetime. **Fail direction is SAFE** (wait → bounded by `-w 9000` →
+  skip + owner alert; never a concurrent scrape), so not a blocker — but a lingering
+  playwright/chromium daemon would stall the next chain. *Hardening suggestion for lead:*
+  spawn the runner with the lock fd closed (`( $RUNNER "$P" ... ) 7>&-` in the loop).
+- **W4 e2e SIM re-run with the lock live: 11 pass / 0 fail** (T-180 start drift 0s, serial,
+  barrier held to T, dead-creds preserve + dry-run resume/retire green). SIM debris retired
+  cleanly to `output/.batch/sent-2026-06-06-1553`.
