@@ -68,6 +68,7 @@ HEALTH_LOG = os.path.join(LOGS_DIR, "guardian.log")
 GEO_MAX_CITIES = int(os.environ.get("GUARDIAN_GEO_MAX_CITIES", "2"))   # one store in >N cities = contamination
 PRICE_CITIES_MAX = int(os.environ.get("GUARDIAN_PRICE_CITIES_MAX", "6"))  # identical price across >N far cities
 PRICED_FLOOR = int(os.environ.get("GUARDIAN_PRICED_FLOOR", "15"))     # abs floor of in-stock priced rows
+PRICED_FLOOR_MIN = int(os.environ.get("GUARDIAN_PRICED_FLOOR_MIN", "5"))  # never relax below this
 NULL_PRICE_FRAC = float(os.environ.get("GUARDIAN_NULL_PRICE_FRAC", "0.6"))  # padding tell
 PERLITRE_MULT = float(os.environ.get("GUARDIAN_PERLITRE_MULT", "2.5"))   # row /L vs SKU median
 PERLITRE_ABS_MAX = float(os.environ.get("GUARDIAN_PERLITRE_ABS_MAX", "6000"))  # Rs/L hard ceiling
@@ -118,6 +119,50 @@ def result_path(platform, override=None):
 def load_result(platform, override=None):
     with open(result_path(platform, override)) as f:
         return json.load(f)
+
+
+def priced_floor_for(platform):
+    """Effective in-stock-priced-rows floor for `platform` (class-4 deep check).
+
+    RECALIBRATION (2026-06-06): the one static PRICED_FLOOR (15) was sized for the
+    big catalogs and mis-fired on bigbasket MEMBER mode, whose stable healthy
+    profile is 10 priced of 23 in-stock rows since the 2026-06-05 member-session
+    switch (smaller member catalog, OOS-heavy hub) — guardian called every sweep
+    BROKEN (false alarm: quarantine + 2 heal re-runs + owner alert each time)
+    while review.py correctly said OK. When the platform's OWN rolling baseline
+    (baselines/<p>.json, seeded only by review-accepted OK runs) says its normal
+    priced-row count is small, derive the floor from that instead:
+
+        floor = clamp(round(0.6 * median(baseline priced_rows)),
+                      PRICED_FLOOR_MIN, PRICED_FLOOR)
+
+    0.6x mirrors review.py's PRICED_SUSPECT_DROP=0.40 boundary. The clamp means
+    the floor can only RELAX below the static 15 (never get stricter), and never
+    below PRICED_FLOOR_MIN. Today only bigbasket qualifies (median 10 -> floor 6;
+    every other platform's 0.6x median is >= 15 and stays clamped at 15; no
+    baseline priced_rows -> static 15). Env GUARDIAN_PRICED_FLOOR_<PLATFORM>
+    (e.g. GUARDIAN_PRICED_FLOOR_BIGBASKET) overrides everything. Never raises.
+    """
+    env = os.environ.get(
+        "GUARDIAN_PRICED_FLOOR_" + platform.upper().replace("-", "_"))
+    if env:
+        try:
+            return int(env)
+        except ValueError:
+            pass
+    try:
+        with open(os.path.join(BASELINES_DIR, platform + ".json")) as f:
+            bl = json.load(f)
+        pr = sorted(s.get("priced_rows") for s in bl.get("samples", [])
+                    if isinstance(s.get("priced_rows"), (int, float)))
+        if not pr:
+            return PRICED_FLOOR
+        med = pr[len(pr) // 2] if len(pr) % 2 else (pr[len(pr) // 2 - 1]
+                                                    + pr[len(pr) // 2]) / 2.0
+        return max(PRICED_FLOOR_MIN, min(PRICED_FLOOR, int(round(0.6 * med))))
+    except Exception as e:
+        log(f"{platform}: priced_floor_for fell back to static ({e})")
+        return PRICED_FLOOR
 
 
 def extract_rows(data):
@@ -253,14 +298,19 @@ def deep_checks(platform, data):
         f"{len(skus)} distinct Jivo SKUs (floor {SKU_FLOOR})")
 
     # ---- CLASS 4/11: PRICED-ROW FLOOR + null-price padding ----------------
+    # floor is per-platform (baseline-derived for small healthy catalogs like
+    # bigbasket member mode; static 15 elsewhere) — see priced_floor_for().
     instock = [r for r in rows if r.get("in_stock")]
     priced = [r for r in instock if num(r.get("sale")) and num(r.get("sale")) > 0]
     n_instock = len(instock)
     null_frac = (1 - len(priced) / n_instock) if n_instock else 0.0
-    add(4, "priced_row_floor", len(priced) >= PRICED_FLOOR, "broken",
-        f"{len(priced)} in-stock priced rows (floor {PRICED_FLOOR})")
+    eff_floor = priced_floor_for(platform)
+    floor_note = f"floor {eff_floor}" + (
+        ", baseline-derived" if eff_floor != PRICED_FLOOR else "")
+    add(4, "priced_row_floor", len(priced) >= eff_floor, "broken",
+        f"{len(priced)} in-stock priced rows ({floor_note})")
     add(11, "null_price_padding",
-        not (n_instock >= PRICED_FLOOR and null_frac > NULL_PRICE_FRAC), "suspect",
+        not (n_instock >= eff_floor and null_frac > NULL_PRICE_FRAC), "suspect",
         f"{null_frac:.0%} of {n_instock} in-stock rows have no price"
         + (" — looks padded" if null_frac > NULL_PRICE_FRAC else ""))
 
@@ -469,6 +519,65 @@ def tg_alert(text):
         return False
 
 
+def pull_spooled_report(platform, verdict_out):
+    """DEFENSE-IN-DEPTH (2026-06-06): a guardian-quarantined report must never ride
+    an already-spooled deadline batch.
+
+    Gap this closes: review.py=OK makes run.sh SPOOL the report to
+    output/.batch/$SWEEP_ID/<p>.json (defer mode), then the guardian's independent
+    deep-check can go BROKEN — quarantine + heals fired, owner alerted, but the
+    spooled file stayed and send_batch.py shipped it at the barrier (bigbasket,
+    both 2026-06-06 sweeps). On a FINAL BROKEN verdict under defer mode we PULL
+    the spooled report, replacing it with a held-marker in run.sh's exact shape
+    so the batch footer reports it ("Held back ...: <p> [BROKEN]").
+
+    Inert unless DEFER_DELIVERY=1 and SWEEP_ID are set (plain ./run_all.sh and the
+    18:00 read-only deep-dive carry no env -> no-op). If send_batch already
+    retired <p>.json to .json.sent the batch has shipped — too late to pull; log
+    loudly instead. Atomic replace; never raises (failure-proof like every stage).
+    """
+    try:
+        if os.environ.get("DEFER_DELIVERY") != "1":
+            return False
+        sweep = os.environ.get("SWEEP_ID")
+        if not sweep:
+            return False
+        bdir = os.path.join(ROOT, "output", ".batch", sweep)
+        spool = os.path.join(bdir, f"{platform}.json")
+        if os.path.isfile(spool + ".sent"):
+            log(f"{platform}: spool-pull TOO LATE — {spool}.sent exists "
+                f"(batch already shipped this report)")
+            return False
+        os.makedirs(bdir, exist_ok=True)
+        was = "none"
+        if os.path.isfile(spool):
+            try:
+                with open(spool) as f:
+                    was = "held" if json.load(f).get("held") else "ok-report"
+            except Exception:
+                was = "unreadable"
+        marker = {
+            "platform": platform,
+            "verdict": verdict_out.get("verdict", "BROKEN"),
+            "held": True,
+            "reasons": "guardian: " + str(verdict_out.get("diagnosis") or
+                                          "quarantined (BROKEN)"),
+            "pulled_by": "guardian",
+            "ts": int(now_utc().timestamp()),
+        }
+        tmp = spool + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(marker, f, ensure_ascii=False)
+            f.write("\n")
+        os.replace(tmp, spool)  # atomic: send_batch never sees a half-written file
+        log(f"{platform}: spool-pull — replaced {was} at {spool} with held-marker "
+            f"(sweep {sweep}, verdict {marker['verdict']})")
+        return True
+    except Exception as e:
+        log(f"{platform}: spool-pull failed (ignored): {e}")
+        return False
+
+
 def heal(platform):
     """Bounded self-heal: re-run ./run.sh <platform> under a lock, cap RETRY_CAP.
     Returns the fresh combined verdict after the last attempt."""
@@ -635,6 +744,9 @@ def run_one(platform, force_review=False, do_heal=False, run_id=None,
     log(f"{platform}: QUARANTINED — {v['diagnosis']}")
 
     if not do_heal:
+        # FINAL verdict is BROKEN (no heal requested) — under defer mode the
+        # spooled report (if any) must not ride the batch.
+        pull_spooled_report(platform, v)
         return v
 
     healed = heal(platform)
@@ -650,7 +762,11 @@ def run_one(platform, force_review=False, do_heal=False, run_id=None,
                 pass
         return v
 
-    # still broken -> ALERT the owner with the specific diagnosis
+    # still broken -> PULL any spooled report (defer mode), then ALERT the owner.
+    # A heal attempt's run.sh may have re-spooled an OK report (review.py=OK while
+    # the deep-check stays BROKEN — the bigbasket 2026-06-06 gap); the pull is
+    # therefore AFTER the heal loop, on the FINAL verdict.
+    pull_spooled_report(platform, v)
     msg = (f"🚑 ecom-intel AUTO-HEAL: *{platform}* still BROKEN after "
            f"{RETRY_CAP} self-heal retries.\n\n{v['diagnosis']}\n\n"
            f"Run QUARANTINED — last-good data kept, nothing published.")
