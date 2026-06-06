@@ -96,6 +96,7 @@ def platform_name(key, short=False):
 # Rule: expand each term ONCE per sheet at first use (or use the plain term).
 GLOSSARY = {
     "SVD":        "Special Value Days (Fri–Sun agreed price list)",
+    "ART":        "festival/event agreed price list, applied when announced",
     "regime":     "price plan",
     "modal":      "most-common price",
     "exposure":   "₹ gap below agreed price",
