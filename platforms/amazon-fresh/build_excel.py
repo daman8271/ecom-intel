@@ -96,14 +96,14 @@ ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=7)
 autosize(ws)
 
 # ---------- Sheet 2: Master Data ----------
-# Amazon Now-specific: show ASIN + the same-day delivery SLOT (the real signal) instead
-# of eta_min (always null on Now — it sells time-window slots, not minute ETAs).
+# Show ASIN (the stable cross-surface key). No slot/speed-tier column
+# (owner order 2026-06-06 — removed from all sheets; data stays in result.json).
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Locality", "ASIN", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "Now Slot", "In stock"]
+cols = ["City", "Pincode", "Locality", "ASIN", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "In stock"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     ws.append([x['city'], x['pincode'], x['locality'], x.get('asin'), x['sku_raw'], x['pack'], x['vol_ml'],
-               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], x.get('now_slot', ''), "Yes" if x['in_stock'] else "No"])
+               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
@@ -112,7 +112,7 @@ for row in ws.iter_rows(min_row=2):
         cell.border = BORDER
         if cell.column in (8, 9): cell.number_format = '"Rs"#,##0'
         if cell.column == 10: cell.number_format = '0.0"%"'
-    if row[12].value == "No": row[12].fill = RED
+    if row[11].value == "No": row[11].fill = RED
     if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 40: row[9].fill = GREEN
 autosize(ws)
 
@@ -163,16 +163,12 @@ matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] f
 # does Jivo appear (vs only competitors). Three states: green=Jivo on Now,
 # yellow=Now serviceable but NO Jivo (competitor-only whitespace), red=no Now here.
 ws = wb.create_sheet("Fresh Serviceability")
-ws.append(["City", "Pincode", "Locality", "Fresh serviceable", "Jivo SKUs on Fresh", "Sample Fresh slot"])
-def sample_slot(p):
-    for r in p['rows']:
-        if r.get('now_slot'): return r['now_slot']
-    return ''
+ws.append(["City", "Pincode", "Locality", "Fresh serviceable", "Jivo SKUs on Fresh"])
 for p in sorted(per, key=lambda p: (p['city'], p['pincode'])):
     svc = p.get('serviceable', len(p['rows']) > 0)
-    ws.append([p['city'], p['pincode'], p['locality'], "Yes" if svc else "No", len(p['rows']), sample_slot(p)])
+    ws.append([p['city'], p['pincode'], p['locality'], "Yes" if svc else "No", len(p['rows'])])
 style_header(ws); ws.freeze_panes = "A2"
-ws.auto_filter.ref = f"A1:F{ws.max_row}"
+ws.auto_filter.ref = f"A1:E{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row: cell.border = BORDER
     njivo = row[4].value

@@ -232,9 +232,9 @@ def _get_core():
 
 
 # ================================================================ rendering
-HEADERS = ["SKU", "Listing Title", None, "Live Price (₹)", "Min–Max (₹)",
+HEADERS = ["SKU", "Listing Title", None, "Live Price (₹)",
            "Diff (₹)", "Diff %", "Stock", "Status", "Stores Below Ref"]
-COL_W = [22, 52, 14, 13, 14, 11, 9, 8, 16, 30]
+COL_W = [22, 52, 14, 13, 11, 9, 8, 16, 30]
 
 ORDER = {"BELOW": 0, "ABOVE": 1, "MATCH": 2, "OOS": 3,
          "PENDING_REVIEW": 4, "NO_REF": 5}
@@ -291,22 +291,23 @@ def render(ws, platform, records, date, regime):
                       f" @ ₹{w.get('price'):g}")
         else:
             sb_txt = "—" if st in ("BELOW", "ABOVE", "MATCH") else ""
-        mm = ""
-        if r.get("live_min") is not None:
-            mm = (f"{r['live_min']:g}" if r["live_min"] == r["live_max"]
-                  else f"{r['live_min']:g}–{r['live_max']:g}")
+        # diff_pct from the engine is ALREADY ×100 (-7.98 means -7.98%); Excel
+        # percent formats scale ×100 again, so store the fraction + true "%"
+        # format — renders -8.0% in every viewer (the -798% screenshot bug).
+        pct = r.get("diff_pct")
         vals = [r.get("sku"), r.get("title") or "", r.get("ref_price"),
-                r.get("live_modal"), mm, r.get("diff"), r.get("diff_pct"),
+                r.get("live_modal"), r.get("diff"),
+                (pct / 100.0 if pct is not None else None),
                 ("Yes" if r.get("in_stock") else "No"), st, sb_txt]
         for j, v in enumerate(vals, 1):
             c = ws.cell(row=rr, column=j, value=v)
             c.border = BORDER
-            c.alignment = LEFT if j in (1, 2, 10) else CEN
-        ws.cell(row=rr, column=6).number_format = "#,##0.00"
-        ws.cell(row=rr, column=7).number_format = '0.0"%"'
+            c.alignment = LEFT if j in (1, 2, 9) else CEN
+        ws.cell(row=rr, column=5).number_format = "#,##0.00"
+        ws.cell(row=rr, column=6).number_format = "0.0%"
         # ---- THE color rule (sacred): RED = live below ref, GREEN = above
-        dcell = ws.cell(row=rr, column=6)
-        scell = ws.cell(row=rr, column=9)
+        dcell = ws.cell(row=rr, column=5)
+        scell = ws.cell(row=rr, column=8)
         if st == "BELOW":
             dcell.fill = RED_FILL; dcell.font = RED_FONT
             scell.fill = RED_FILL
@@ -314,7 +315,7 @@ def render(ws, platform, records, date, regime):
             dcell.fill = GREEN_FILL; dcell.font = GREEN_FONT
             scell.fill = GREEN_FILL
         if not r.get("in_stock"):
-            ws.cell(row=rr, column=8).fill = RED_FILL  # like the stock sheets
+            ws.cell(row=rr, column=7).fill = RED_FILL  # like the stock sheets
         rr += 1
 
     # ---- bottom summary row

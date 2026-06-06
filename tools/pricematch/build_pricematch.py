@@ -385,8 +385,8 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map):
     # ---- footer ----
     divider(ws, row)
     row += 1
-    fc = ws.cell(row, 1, "pricing day source: regime.json (Mon–Thu BAU / Fri–Sun SVD / "
-                         "ART on announcement)")
+    fc = ws.cell(row, 1, f"pricing day source: regime.json · today is a {regime} day — "
+                         f"all references on this report are {regime} prices")
     fc.font = Font(name=F, size=9, italic=True, color=MUTED)
     fc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
@@ -394,23 +394,23 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map):
 
 
 def sheet_matrix(wb, date, regime, by_key, sku_map):
+    # Owner order 2026-06-06: show ONLY today's regime — MRP + ONE named
+    # "Agreed price (<regime>)" column. The BAU/SVD/ART trio lives in the
+    # team's own master sheet; our report shows the day's truth.
     ws = wb.create_sheet("Matrix")
     ws.sheet_view.showGridLines = False
     ws.freeze_panes = "B2"
     ws.column_dimensions["A"].width = 26
-    regime_cols = ["MRP", "BAU", "SVD", "ART"]
-    for i in range(len(regime_cols) + len(CANONICAL)):
-        ws.column_dimensions[get_column_letter(2 + i)].width = 11
+    regime_cols = ["MRP", f"Agreed price ({regime})"]
+    ws.column_dimensions["B"].width = 11
+    ws.column_dimensions["C"].width = 18
+    for i in range(len(CANONICAL)):
+        ws.column_dimensions[get_column_letter(2 + len(regime_cols) + i)].width = 11
 
     headers = ["SKU"] + regime_cols + [PDISP.get(p, p) for p in CANONICAL]
     table_header(ws, 1, headers)
-    today_col = None
-    for i, rc in enumerate(regime_cols):
-        if rc == regime:
-            today_col = 2 + i
-            hc = ws.cell(1, today_col)
-            hc.value = f"{rc} ◀ today"
-            hc.fill = PatternFill("solid", fgColor=INK)
+    agreed_col = 3
+    ws.cell(1, agreed_col).fill = PatternFill("solid", fgColor=INK)
 
     skus = sku_map.get("skus", {})
     row = 2
@@ -423,13 +423,13 @@ def sheet_matrix(wb, date, regime, by_key, sku_map):
             for c in range(1, len(headers) + 1):
                 ws.cell(row, c).fill = GREY_FILL
         regs = entry.get("regimes") or {}
-        for i, key in enumerate(("mrp", "bau", "svd", "art")):
+        for i, key in enumerate(("mrp", regime.lower())):
             c = ws.cell(row, 2 + i, _f(regs.get(key)))
             money(c)
             if retired:
                 c.font = Font(name=F, size=10, color=MUTED)
                 c.fill = GREY_FILL
-            elif today_col == 2 + i:
+            elif agreed_col == 2 + i:
                 c.fill = SOFT_FILL
                 c.font = Font(name=F, size=10, bold=True, color=BRAND)
         for j, p in enumerate(CANONICAL):
@@ -491,7 +491,7 @@ def sheet_matrix(wb, date, regime, by_key, sku_map):
                                     "pricematch", height=50, width=220)
             # MATCH: value + hyperlink, no fill
         row += 1
-    ws.cell(row + 1, 1, f"Reference = {regime} price ({date}); tolerance ±₹1. "
+    ws.cell(row + 1, 1, f"Reference = Agreed price ({regime}, {date}); tolerance ±₹1. "
                         "RED fill = live below reference (violation) · GREEN = above · "
                         "no fill = match · — = not listed.").font = \
         Font(name=F, size=9, italic=True, color=MUTED)

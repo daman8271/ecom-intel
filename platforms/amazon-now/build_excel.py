@@ -13,27 +13,11 @@ summary = d['summary']
 # platform name derived from the folder this runs in (blinkit, zepto, ...)
 PLATFORM = os.path.basename(os.getcwd()).replace('-', ' ').title()
 
-# --- Amazon Now (ctnow surface) honesty layer -------------------------------
+# --- Amazon Now (ctnow surface) -----------------------------------------------
 # Every published row is a GENUINE Amazon Now offer (the scraper keeps only cards
-# carrying the blue Now speed badge). `now_eta` is the speed tier Amazon promised:
-#   "10 min"  = sub-hour quick-commerce        |  "today"     = same-day Now slot
-#   "overnight"/"tomorrow" = the Now storefront's slower scheduled tiers
-# These tiers are reported honestly so "10 min" is never conflated with "tomorrow".
-TIER_ORDER = ["10 min", "today", "overnight", "tomorrow"]
-def tier_rank(t):
-    t = (t or '').strip().lower()
-    return TIER_ORDER.index(t) if t in TIER_ORDER else len(TIER_ORDER)
-
-tier_counts = OrderedDict()
-for t in TIER_ORDER:
-    n = sum(1 for r in rows if (r.get('now_eta') or r.get('now_slot') or '').strip().lower() == t)
-    if n:
-        tier_counts[t] = n
-# any unexpected non-empty tier label
-for r in rows:
-    t = (r.get('now_eta') or r.get('now_slot') or '').strip().lower()
-    if t and t not in tier_counts and t not in TIER_ORDER:
-        tier_counts[t] = tier_counts.get(t, 0) + 1
+# carrying the blue Now badge). The speed-tier data (now_eta/now_slot) stays in
+# result.json but is NOT displayed: owner order 2026-06-06 — "that thing is not
+# our thing, kindly remove from all the sheets".
 
 # Catalog coverage: classify the full Jivo catalog (the core Amazon scraper's
 # products.json, the authoritative 314-ASIN list) into PRESENT / OUT OF STOCK /
@@ -113,10 +97,8 @@ ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TIT
 ws.merge_cells("A1:G1")
 ws["A2"] = f"Captured {summary['captured_at'][:16].replace('T',' ')} IST  -  {summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo  -  {summary['unique_skus']} unique SKUs  -  {summary['total_rows']} datapoints  -  scrape {summary['wall_s']}s"
 ws["A2"].font = SUB_FONT; ws.merge_cells("A2:G2")
-# Honest Now-surface caption: genuine Amazon Now (ctnow) only, with the speed-tier mix.
-tier_str = "  ·  ".join(f"{k}: {v}" for k, v in tier_counts.items()) or "no Now offers in this run"
-ws["A3"] = (f"Source: genuine Amazon Now storefront (almBrandId=ctnow) — every row carries a Now speed badge.  "
-            f"Speed tiers: {tier_str}")
+# Source caption: genuine Amazon Now (ctnow) only. No speed-tier text (owner order).
+ws["A3"] = "Source: genuine Amazon Now storefront (almBrandId=ctnow)."
 ws["A3"].font = SUB_FONT; ws.merge_cells("A3:G3")
 
 # KPI cards
@@ -155,14 +137,14 @@ ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=7)
 autosize(ws)
 
 # ---------- Sheet 2: Master Data ----------
-# Amazon Now-specific: show ASIN + the same-day delivery SLOT (the real signal) instead
-# of eta_min (always null on Now — it sells time-window slots, not minute ETAs).
+# Amazon Now-specific: show ASIN (the stable cross-surface key). No slot/speed-tier
+# column (owner order 2026-06-06).
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Locality", "ASIN", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "Now Slot", "In stock"]
+cols = ["City", "Pincode", "Locality", "ASIN", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "In stock"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     ws.append([x['city'], x['pincode'], x['locality'], x.get('asin'), x['sku_raw'], x['pack'], x['vol_ml'],
-               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], x.get('now_slot', ''), "Yes" if x['in_stock'] else "No"])
+               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
@@ -171,7 +153,7 @@ for row in ws.iter_rows(min_row=2):
         cell.border = BORDER
         if cell.column in (8, 9): cell.number_format = '"Rs"#,##0'
         if cell.column == 10: cell.number_format = '0.0"%"'
-    if row[12].value == "No": row[12].fill = RED
+    if row[11].value == "No": row[11].fill = RED
     if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 40: row[9].fill = GREEN
 autosize(ws)
 
@@ -222,16 +204,12 @@ matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] f
 # does Jivo appear (vs only competitors). Three states: green=Jivo on Now,
 # yellow=Now serviceable but NO Jivo (competitor-only whitespace), red=no Now here.
 ws = wb.create_sheet("Now Serviceability")
-ws.append(["City", "Pincode", "Locality", "Now serviceable", "Jivo SKUs on Now", "Sample slot"])
-def sample_slot(p):
-    for r in p['rows']:
-        if r.get('now_slot'): return r['now_slot']
-    return ''
+ws.append(["City", "Pincode", "Locality", "Now serviceable", "Jivo SKUs on Now"])
 for p in sorted(per, key=lambda p: (p['city'], p['pincode'])):
     svc = p.get('serviceable', len(p['rows']) > 0)
-    ws.append([p['city'], p['pincode'], p['locality'], "Yes" if svc else "No", len(p['rows']), sample_slot(p)])
+    ws.append([p['city'], p['pincode'], p['locality'], "Yes" if svc else "No", len(p['rows'])])
 style_header(ws); ws.freeze_panes = "A2"
-ws.auto_filter.ref = f"A1:F{ws.max_row}"
+ws.auto_filter.ref = f"A1:E{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row: cell.border = BORDER
     njivo = row[4].value
@@ -240,69 +218,35 @@ for row in ws.iter_rows(min_row=2):
     row[3].fill = GREEN if svc else RED
 autosize(ws)
 
-# ---------- Sheet 7: Now Speed Tiers ----------
-# Honest breakdown of WHAT KIND of Now delivery each Jivo SKU actually gets. The blue
-# Now badge promises a tier; "10 min" quick-commerce is NOT the same product as a
-# "tomorrow" scheduled Now slot, so we never blend them into one "Now" claim.
-ws = wb.create_sheet("Now Speed Tiers")
-ws["A1"] = "Amazon Now — delivery speed tiers (genuine Now offers only)"; ws["A1"].font = Font(bold=True, size=12, color=JIVO_GREEN)
-ws.append([])
-ws.append(["Speed tier", "Datapoints", "% of Now rows"])
-style_header(ws, ws.max_row, 3)
-tot = sum(tier_counts.values()) or 1
-for t, n in tier_counts.items():
-    ws.append([t, n, round(100 * n / tot, 1)])
-ws.append([])
-hdr_row = ws.max_row + 1
-ws.append(["SKU", "Fastest tier seen", "10 min?", "Datapoints"])
-style_header(ws, hdr_row, 4)
-# per-SKU fastest tier (best promise that SKU ever got across pincodes)
-sku_tiers = defaultdict(list)
-for r in rows:
-    sku_tiers[r['canonical']].append((r.get('now_eta') or r.get('now_slot') or '').strip().lower())
-for s in sorted(sku_tiers, key=lambda s: (min((tier_rank(t) for t in sku_tiers[s]), default=9), s)):
-    tiers = sku_tiers[s]
-    best = min(tiers, key=tier_rank) if tiers else ''
-    ws.append([label(s), best or '-', "Yes" if "10 min" in tiers else "No", len(tiers)])
-for row in ws.iter_rows(min_row=2):
-    for cell in row:
-        cell.border = BORDER
-        if cell.column >= 2:
-            cell.alignment = CEN
-    # green-flag the SKUs that get true 10-minute quick-commerce somewhere
-    if row[0].column == 1 and row[2].value == "Yes":
-        row[2].fill = GREEN
-autosize(ws)
+# (the former "Now Speed Tiers" sheet was REMOVED — owner order 2026-06-06)
 
-# ---------- Sheet 8: Catalog Coverage (PRESENT / OUT OF STOCK / NOT ON NOW) ----------
+# ---------- Sheet 7: Catalog Coverage (PRESENT / OUT OF STOCK / NOT ON NOW) ----------
 # The honest answer to "how much of the Jivo catalog is actually on Amazon Now?".
 # Classifies the full 314-SKU core catalog by ASIN. NOT ON NOW is by Amazon's design
 # (the Now storefront indexes only a subset), not a scrape gap.
 if CATALOG:
     ws = wb.create_sheet("Catalog Coverage")
     ws["A1"] = f"Jivo catalog on Amazon Now — {cov_counts['PRESENT']} present · {cov_counts['OUT OF STOCK']} out of stock · {cov_counts['NOT ON NOW']} not on Now (of {len(CATALOG)} catalog SKUs)"
-    ws["A1"].font = Font(bold=True, size=11, color=JIVO_GREEN); ws.merge_cells("A1:F1")
+    ws["A1"].font = Font(bold=True, size=11, color=JIVO_GREEN); ws.merge_cells("A1:E1")
     ws.append([])
     hdr_row = ws.max_row + 1
-    ws.append(["ASIN", "Catalog name", "Category", "Status", "Now sale Rs (min)", "Fastest tier"])
-    style_header(ws, hdr_row, 6)
+    ws.append(["ASIN", "Catalog name", "Category", "Status", "Now sale Rs (min)"])
+    style_header(ws, hdr_row, 5)
     STATUS_ORDER = {"PRESENT": 0, "OUT OF STOCK": 1, "NOT ON NOW": 2}
     for asin in sorted(CATALOG, key=lambda a: (STATUS_ORDER[coverage_status(a)], CATALOG[a].get('category') or '', CATALOG[a].get('name') or '')):
         p = CATALOG[asin]
         st = coverage_status(asin)
         rs = now_by_asin.get(asin, [])
         sales = [x['sale'] for x in rs if x.get('sale') is not None]
-        tiers = [(x.get('now_eta') or x.get('now_slot') or '').strip().lower() for x in rs]
-        best = min(tiers, key=tier_rank) if tiers else ''
         ws.append([asin, (p.get('name') or '')[:60], p.get('category') or p.get('item') or '',
-                   st, (min(sales) if sales else None), best or ('-' if st != "NOT ON NOW" else '')])
-    style_header(ws, hdr_row, 6)
+                   st, (min(sales) if sales else None)])
+    style_header(ws, hdr_row, 5)
     ws.freeze_panes = "A4"
-    ws.auto_filter.ref = f"A3:F{ws.max_row}"
+    ws.auto_filter.ref = f"A3:E{ws.max_row}"
     for row in ws.iter_rows(min_row=hdr_row + 1):
         for cell in row:
             cell.border = BORDER
-            if cell.column in (4, 5, 6):
+            if cell.column in (4, 5):
                 cell.alignment = CEN
         sc = row[3].value
         row[3].fill = GREEN if sc == "PRESENT" else (YEL if sc == "OUT OF STOCK" else RED)
