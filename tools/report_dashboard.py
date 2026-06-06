@@ -52,8 +52,23 @@ FMT_PCT_TRUE = "0.0%"
 
 
 def pct(v):
-    """0-100-scale number -> fraction for a true-% formatted cell."""
-    return None if v is None else v / 100.0
+    """0-100-scale number -> fraction for a true-% formatted cell (rounded so
+    float artifacts like -0.08130000000000001 never reach a formula bar)."""
+    return None if v is None else round(v / 100.0, 4)
+
+
+# Plain-words glossary (fresh-eyes 2026-06-06: SVD/regime/exposure were never
+# expanded anywhere). Prefer the shared xlsx_dash GLOSSARY once it lands.
+_GLOSSARY_FALLBACK = {
+    "SVD": "Special Value Days (Fri–Sun agreed price list)",
+    "BAU": "Business As Usual (weekday agreed price list)",
+    # ART intentionally absent: no documented expansion — never invent one.
+}
+
+
+def regime_expansion(regime):
+    g = getattr(xd, "GLOSSARY", None) or _GLOSSARY_FALLBACK
+    return g.get(str(regime), None)
 
 
 # ------------------------------------------------------------- data helpers
@@ -98,7 +113,20 @@ def load_result(platform):
         d = json.load(f)
     rows = d.get("allRows") or [r for p in d.get("perPin", [])
                                 for r in (p.get("rows") or [])]
-    return d.get("summary") or {}, rows
+    # cities probed this run where NOT ONE pincode returned a Jivo row
+    # (named in the action list — "5 cities have zero Jivo" begs "which?")
+    zero_cities = []
+    per_pin = d.get("perPin") or []
+    if per_pin:
+        by_city = {}
+        for p in per_pin:
+            c = (str(p.get("city") or "").strip()) or None
+            if not c:
+                continue
+            by_city.setdefault(c, 0)
+            by_city[c] += len(p.get("rows") or [])
+        zero_cities = sorted(c for c, n in by_city.items() if n == 0)
+    return d.get("summary") or {}, rows, zero_cities
 
 
 def captured_ist(summary):
@@ -137,6 +165,18 @@ def load_history(platform, last_n=10):
             pc = (row.get("pincode") or "").strip()
             if pc:
                 a[4].add(pc)
+    # comparable-sweep filter (fresh-eyes 2026-06-06): drop off-hours debug/
+    # heal runs (a handful of rows) that read as fake collapse-and-recovery
+    # in the momentum table. Same rule as predict.py: keep runs with row
+    # count >=25% of the median; the newest run is always kept.
+    if order:
+        counts = [agg[x][0] for x in order]
+        med = sorted(counts)[len(counts) // 2]
+        floor = 0.25 * med
+        keep = [x for x in order if agg[x][0] >= floor]
+        if order[-1] not in keep:
+            keep.append(order[-1])
+        order = keep
     out = []
     for rid in order[-last_n:]:
         rows_n, n_in, dsum, dn, pins = agg[rid]
@@ -179,12 +219,13 @@ def pricematch_block(platform, date_str):
 
 # ------------------------------------------------------------- the dashboard
 def build_sheet(wb, platform, date_str):
-    summary, rows = load_result(platform)
+    summary, rows, zero_cities = load_result(platform)
     if not rows:
         raise RuntimeError("result.json has no rows — refusing to draw an "
                            "empty dashboard over the existing sheet")
 
-    pname = platform.replace("-", " ").title()
+    pname = (getattr(xd, "PLATFORM_DISPLAY", None) or {}).get(
+        platform, platform.replace("-", " ").title())
     cap = captured_ist(summary)
     when = cap.strftime("%Y-%m-%d %H:%M IST") if cap else (date_str or "")
 
@@ -293,8 +334,19 @@ def build_sheet(wb, platform, date_str):
     # ---- KPI strip (plain cells: render EVERYWHERE) ----
     cov_val = "National" if national else "%s/%s" % (pin_with, pin_tot)
     cov_sub = "single national listing" if national else "pincodes with Jivo live"
+    # honest tone: 31% coverage must not glow green (fresh-eyes 2026-06-06)
+    if national:
+        cov_tone = "brand"
+    else:
+        try:
+            ratio = float(pin_with) / float(pin_tot)
+        except (TypeError, ValueError, ZeroDivisionError):
+            ratio = None
+        cov_tone = ("good" if ratio is not None and ratio >= 0.7 else
+                    "warn" if ratio is not None and ratio >= 0.4 else
+                    "bad" if ratio is not None else "neutral")
     cards = [
-        ("COVERAGE", cov_val, cov_sub, "brand"),
+        ("COVERAGE", cov_val, cov_sub, cov_tone),
         ("CATALOG SKUs", "%d" % int(skus), "%s datapoints this run" % nrows, "neutral"),
         ("IN STOCK", "%.0f%%" % instock_pct,
          "%d of %d datapoints" % (n_in, stocked),
@@ -305,7 +357,7 @@ def build_sheet(wb, platform, date_str):
     if pm:
         nb = pm["counts"].get("BELOW", 0)
         cards.append(("BELOW REFERENCE", "%d" % nb,
-                      "%d match · %d above · regime %s"
+                      "%d match · %d above · vs %s plan"
                       % (pm["counts"].get("MATCH", 0),
                          pm["counts"].get("ABOVE", 0), pm["regime"]),
                       "bad" if nb else "good"))
@@ -329,7 +381,7 @@ def build_sheet(wb, platform, date_str):
         split_rows.append(["Not found / blocked", n_nf,
                            xd.meter(n_nf, max(1, len(rows)))])
     xd.banded_table(
-        ws, r, 1, ["Stock split", "Rows", "Share"],
+        ws, r, 1, ["Stock split", "Rows", "% of rows"],
         split_rows,
         widths=[18, 10, 18], num_fmts=[None, xd.FMT_INT, None],
         aligns=[None, "right", None])
@@ -339,7 +391,7 @@ def build_sheet(wb, platform, date_str):
     # left, below: discount mix
     r2 = left_end + 2
     xd.banded_table(
-        ws, r2, 1, ["Discount band", "Rows", "Share"],
+        ws, r2, 1, ["Discount band", "Rows", "% of priced rows"],
         [[label, band_counts[i],
           xd.meter(band_counts[i], max(1, sum(band_counts)))]
          for i, (label, _, _) in enumerate(bands)],
@@ -352,7 +404,7 @@ def build_sheet(wb, platform, date_str):
     if city_rows and not national:
         xd.banded_table(
             ws, top, 5,
-            ["Where Jivo is live (city)", "In-stock rows", "Share"],
+            ["Where Jivo is live (city)", "In-stock rows", "vs top city"],
             [[c, n, xd.meter(n, city_rows[0][1])] for c, n in city_rows],
             widths=[26, 14, 18], num_fmts=[None, xd.FMT_INT, None],
             aligns=[None, "right", None])
@@ -388,7 +440,7 @@ def build_sheet(wb, platform, date_str):
     r = xd.section_title(ws, r, "Pricing & competition")
     r += 1
     if pm:
-        xd.chip(ws, r, 1, "Regime today: %s" % pm["regime"],
+        xd.chip(ws, r, 1, "Today's price plan: %s" % pm["regime"],
                 xd.BRAND_SOFT, xd.GREEN_TEXT)
         ws.merge_cells(start_row=r, start_column=1, end_row=r, end_column=2)
         msg = ("%d SKU(s) priced BELOW reference · exposure ₹%s · "
@@ -402,6 +454,12 @@ def build_sheet(wb, platform, date_str):
                             color=xd.NEG if pm["counts"].get("BELOW") else xd.POS)
         cell.alignment = xd.Alignment(horizontal="left", vertical="center", indent=1)
         ws.merge_cells(start_row=r, start_column=3, end_row=r, end_column=10)
+        r += 1
+        # expand the regime code once, in plain words (fresh-eyes 2026-06-06)
+        exp = regime_expansion(pm["regime"])
+        gloss = ("%s = %s. " % (pm["regime"], exp)) if exp else ""
+        xd.footnote(ws, r, gloss + '"Reference" = today\'s agreed price per '
+                          'SKU; "exposure" = total ₹ gap below it.')
         r += 2
         if pm["below"]:
             body = []
@@ -504,6 +562,11 @@ def build_sheet(wb, platform, date_str):
     if deep:
         actions.append("%d in-stock row(s) at ≥50%% discount — margin check."
                        % deep)
+    if zero_cities:
+        sample = ", ".join(zero_cities[:5])
+        actions.append("%d city/cities have ZERO Jivo this run: %s%s"
+                       % (len(zero_cities), sample,
+                          " …" if len(zero_cities) > 5 else ""))
     if not national and pin_tot and pin_with is not None:
         gap = int(pin_tot) - int(pin_with)
         if gap > 0:
@@ -525,11 +588,10 @@ def build_sheet(wb, platform, date_str):
         ws.row_dimensions[r].height = 18
         r += 1
     r += 1
-    xd.footnote(ws, r, "Captured %s · %s rows · dashboard regenerated %s by "
-                       "tools/report_dashboard.py (chart-free: renders in every "
-                       "viewer, survives all pipeline round-trips)"
-                % (when, nrows,
-                   datetime.datetime.now(IST).strftime("%Y-%m-%d %H:%M IST")))
+    # ONE timestamp (the scrape's captured_at), no internal tool paths
+    # (fresh-eyes 2026-06-06): execs forward this; keep it clean.
+    xd.footnote(ws, r, "Data captured %s · %s datapoints · source: %s live "
+                       "storefront" % (when, nrows, pname))
     xd.freeze(ws, "A4")
     return {"cards": len(cards), "actions": len(actions),
             "pm": bool(pm), "hist_runs": len(hist)}
@@ -544,7 +606,7 @@ def build(platform, xlsx_path, date_str, force=False):
     fdate = None
     if base.endswith(".xlsx") and len(m) == 4:
         fdate = "-".join(m[-3:]).replace(".xlsx", "")
-    summary, _ = load_result(platform)
+    summary, _, _ = load_result(platform)
     cap = captured_ist(summary)
     cap_date = cap.strftime("%Y-%m-%d") if cap else None
     if fdate and cap_date and fdate != cap_date and not force:

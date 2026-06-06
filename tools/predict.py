@@ -146,14 +146,14 @@ def loc_key(row):
 def fmt_money(v):
     if v is None:
         return "-"
-    return f"Rs.{v:,.0f}" if abs(v - round(v)) < 0.05 else f"Rs.{v:,.2f}"
+    return f"₹{v:,.0f}" if abs(v - round(v)) < 0.05 else f"₹{v:,.2f}"
 
 
 def fmt_signed_money(v):
     if v is None:
         return "-"
     sign = "+" if v >= 0 else "-"
-    return f"{sign}Rs.{abs(v):,.0f}"
+    return f"{sign}₹{abs(v):,.0f}"
 
 
 def fmt_pct(v, signed=False):
@@ -1043,6 +1043,25 @@ def build(platform, xlsx_path):
     per_sku_cur, oos_loc_events = analyze_current(result_rows)
     runstats = per_run_sku_stats(history_rows)
 
+    # --- comparable-sweep filter (fresh-eyes 2026-06-06) -------------------
+    # Off-hours debug/heal runs (a handful of rows, 1-2 pincodes) used to
+    # surface in every trend table as a fake collapse-and-recovery
+    # ("12 rows, 2 pincodes" between two ~600-row sweeps). Keep a run only if
+    # its row count is >=25% of the median across runs; the newest run is
+    # always kept (it is the run being reported, however small).
+    if runs:
+        run_rows = defaultdict(int)
+        for hr in history_rows:
+            rid = hr.get("run_id")
+            if rid:
+                run_rows[rid] += 1
+        med = median([run_rows.get(x, 0) for x in runs])
+        floor = 0.25 * (med or 0)
+        keep = [x for x in runs if run_rows.get(x, 0) >= floor]
+        if runs[-1] not in keep:
+            keep.append(runs[-1])
+        runs = keep
+
     cur_run = runs[-1] if runs else None
     prev_run = runs[-2] if len(runs) >= 2 else None
     n_runs = len(runs)
@@ -1254,8 +1273,16 @@ def build(platform, xlsx_path):
                 "rank": abs(d_pct) if d_pct is not None else 0,
             })
         moves.sort(key=lambda m: (-1 if m["big"] else 0, -m["rank"], m["lbl"]))
+        # fresh-eyes 2026-06-06: only MOVERS get a row — a 21-row wall of
+        # "+₹0 / +0.0%" buries the signal. Unchanged SKUs collapse to a count.
+        unchanged_n = 0
         data, fills = [], []
         for m in moves:
+            moved = ((m["d_abs"] is not None and abs(m["d_abs"]) >= 0.005) or
+                     (m["d_disc"] is not None and abs(m["d_disc"]) >= 0.05))
+            if not moved:
+                unchanged_n += 1
+                continue
             data.append([
                 m["lbl"], fmt_money(m["pp"]), fmt_money(m["cp"]),
                 fmt_signed_money(m["d_abs"]), fmt_pct(m["d_pct"], signed=True),
@@ -1278,10 +1305,20 @@ def build(platform, xlsx_path):
                 fills.append(None)
         if data:
             S.table(["SKU", f"Prev price ({prev_run})", f"Now price ({cur_run})",
-                     "delta Rs.", "delta %", "Prev disc", "Now disc", "delta disc pts"],
+                     "delta ₹", "delta %", "Prev disc", "Now disc", "delta disc pts"],
                     data, fills)
-            S.note("Red = sale price rose vs last run; Green = sale price fell. "
-                   "Flagged moves: >=5% / >=Rs.10 price, or >=5 pts discount.")
+            legend = "Flagged moves: >=5% / >=₹10 price, or >=5 pts discount."
+            if any(fills):
+                legend = ("Red = sale price rose vs last run; Green = sale "
+                          "price fell. " + legend)
+            if unchanged_n:
+                legend += (" %d further SKU(s) unchanged vs last run (not shown)."
+                           % unchanged_n)
+            S.note(legend)
+            S.blank()
+        elif moves:
+            S.note("No price or discount moves vs the previous run "
+                   "(%d SKUs unchanged)." % unchanged_n)
             S.blank()
         else:
             S.note("No SKUs shared between the last two runs to compare.")
@@ -1319,7 +1356,7 @@ def build(platform, xlsx_path):
                     watch.append((int(100 * spread / e["med_price"]),
                                   f"{e['label']} price varies {fmt_money(e['min_price'])}-"
                                   f"{fmt_money(e['max_price'])} across locations this run"))
-            S.section("Widest cross-location price spread (top by Rs. spread)")
+            S.section("Widest cross-location price spread (top by ₹ spread)")
             S.table(["SKU", "Min price", "Median price", "Max price",
                      "Spread", "Median discount"], data)
             if len(ranked) > len(shown):
