@@ -12,15 +12,19 @@ Indian ₹ lakh/crore number formats, and text sparklines.
 THE DURABILITY CONTRACT
 -----------------------
 Every element this module draws survives an openpyxl load()+save() round-trip
-unchanged. That matters because our workbooks are re-opened and appended to by
-later pipeline stages (predict.py Predictions sheet, add_pricematch_sheet.py,
-title overlays). openpyxl DROPS native charts/images/shapes on load+save, so:
+unchanged AND renders in cache-only preview viewers (macOS Quick Look, Google
+Drive, Office mobile). Our workbooks are re-opened and appended to by later
+pipeline stages, and the owner reads them in preview apps. Native openpyxl
+charts carry ZERO cached values, so they render BLANK in every preview viewer
+(the 2026-06-06 empty-Leadership-View root cause) — and Excel-AUTHORED
+charts/images/shapes are destroyed by an openpyxl load+save. So:
 
   * NO native charts here — ever. Trend/proportion visuals are done with
     conditional-format data bars, 3-color scales, icon sets and unicode
-    text sparklines/meters, all of which round-trip losslessly.
-  * Native charts are allowed ONLY in the final stage that touches a workbook
-    (predict.py draws its Leadership View charts LAST for exactly this reason).
+    text sparklines/meters, all of which round-trip losslessly and render
+    everywhere.
+  * Native charts are allowed ONLY in the final stage that touches a workbook,
+    accepting they will be blank in preview apps.
 
 Self-test (builds demo.xlsx exercising every helper, round-trips it, asserts
 nothing was lost):    python3 tools/xlsx_dash.py --selftest
@@ -33,8 +37,8 @@ from openpyxl.utils import get_column_letter
 
 # ---------------------------------------------------------------- palette
 # The ink + sage system (tools/predict.py Leadership View + tools/pricematch).
-JIVO_GREEN = "008B3A"   # brand anchor — header bars, brand chrome only
-BRAND      = "1F8A4C"   # darkened Jivo green — section titles, data bars
+JIVO_GREEN = "008B3A"   # THE one brand green (fresh-eyes 2026-06-06: single green)
+BRAND      = JIVO_GREEN  # alias — section titles, data bars (was 1F8A4C; unified)
 BRAND_SOFT = "D6F0E0"   # soft sage — subtle emphasis fills
 INK        = "111827"   # near-black — primary text
 MUTED      = "6B7280"   # secondary text, card labels
@@ -46,12 +50,63 @@ NEG        = "B91C1C"   # risk red (text)
 ACCENT     = "0F766E"   # neutral teal — competitor / "other" series
 NEUTRAL    = "9CA3AF"
 
-# Classic Excel compliance fills (the red/green every stakeholder already reads)
+# Classic Excel compliance fills (the red/green every stakeholder already reads).
+# THE one red pair and THE one green pair (fill, text) — fresh-eyes 2026-06-06
+# found F4CCCC/CC0000 vs FFC7CE/B91C1C drift across files; use ONLY these.
 RED_FILL_HEX,   RED_TEXT   = "FFC7CE", "9C0006"
 GREEN_FILL_HEX, GREEN_TEXT = "C6EFCE", "006100"
 AMBER_FILL_HEX, AMBER_TEXT = "FFEB9C", "9C6500"
+BAD_PAIR   = (RED_FILL_HEX, RED_TEXT)     # below agreed price / violation
+GOOD_PAIR  = (GREEN_FILL_HEX, GREEN_TEXT)  # compliant / at-or-above
+AMBER_PAIR = (AMBER_FILL_HEX, AMBER_TEXT)  # overpriced — sales risk / caution
 
 F = "Calibri"           # ships with every Excel; never substitute-fonted
+
+# ------------------------------------------------- canonical display names
+# ONE set of platform names across every deliverable (fresh-eyes: "FK Minutes"
+# vs "Flipkart Minutes" vs "Amz Now" drift). Use PLATFORM_DISPLAY everywhere;
+# PLATFORM_SHORT only where a column is genuinely too narrow.
+PLATFORM_DISPLAY = {
+    "blinkit":          "Blinkit",
+    "zepto":            "Zepto",
+    "":        "",
+    "flipkart-minutes": "Flipkart Minutes",
+    "flipkart":         "Flipkart",
+    "bigbasket":        "BigBasket",
+    "amazon":           "Amazon",
+    "amazon-fresh":     "Amazon Fresh",
+    "amazon-now":       "Amazon Now",
+}
+PLATFORM_SHORT = {
+    "flipkart-minutes": "FK Minutes",
+    "amazon-fresh":     "Amz Fresh",
+    "amazon-now":       "Amz Now",
+}
+
+
+def platform_name(key, short=False):
+    """Canonical display name for a platform key ('amazon-now' → 'Amazon Now')."""
+    if short and key in PLATFORM_SHORT:
+        return PLATFORM_SHORT[key]
+    return PLATFORM_DISPLAY.get(key, str(key).replace("-", " ").title())
+
+
+# ------------------------------------------------------------- glossary
+# Plain-language replacements/expansions for the jargon fresh-eyes flagged.
+# Rule: expand each term ONCE per sheet at first use (or use the plain term).
+GLOSSARY = {
+    "SVD":        "Special Value Days (Fri–Sun agreed price list)",
+    "regime":     "price plan",
+    "modal":      "most-common price",
+    "exposure":   "₹ gap below agreed price",
+    "dark store": "delivery store",
+}
+
+
+def gloss(term):
+    """First-use expansion: gloss('SVD') → 'SVD — Special Value Days (…)'."""
+    full = GLOSSARY.get(term)
+    return "%s — %s" % (term, full) if full else str(term)
 
 TONES = {                # kpi_card / big_number / chip semantic tones
     "good":    POS,
@@ -213,6 +268,53 @@ def chip(ws, r, c, text, fill=BRAND_SOFT, color=INK):
     cell.font = Font(name=F, size=9, bold=True, color=color)
     cell.alignment = Alignment(horizontal="center", vertical="center")
     return cell
+
+
+def edition_badge(ws, r, c, text, span=2, fill=JIVO_GREEN, color="FFFFFF"):
+    """
+    Prominent cover badge ("AMAZON EDITION", "SVD DAY") — bold white caps on
+    brand green, merged across `span` columns, hairline-bordered. Fresh-eyes
+    2026-06-06: every scoped/edition workbook MUST carry one on its first
+    sheet so it can never be mistaken for the cross-platform master.
+    """
+    c1 = c + span - 1
+    ws.merge_cells(start_row=r, start_column=c, end_row=r, end_column=c1)
+    for cc in range(c, c1 + 1):
+        ws.cell(r, cc).border = Border(left=_THIN, right=_THIN, top=_THIN, bottom=_THIN)
+    cell = ws.cell(r, c, str(text).upper())
+    cell.fill = PatternFill("solid", fgColor=fill)
+    cell.font = Font(name=F, size=11, bold=True, color=color)
+    cell.alignment = Alignment(horizontal="center", vertical="center")
+    ws.row_dimensions[r].height = max(ws.row_dimensions[r].height or 0, 20)
+    return cell
+
+
+def legend(ws, r, items, c=1, span=2):
+    """
+    Compact self-demonstrating legend row, meant to sit at the TOP of a sheet
+    (under the header, inside the frozen pane — fresh-eyes: never row 117).
+    items = [(text, fill_hex_or_None, text_hex_or_None)] — each item renders
+    as one merged cell STYLED LIKE THE STATE IT EXPLAINS, e.g.
+      legend(ws, 2, [("RED = below agreed price", *BAD_PAIR),
+                     ("GREEN = at/above", *GOOD_PAIR),
+                     ("blue = exact match", None, "1D4ED8"),
+                     ("OOS = out of stock", None, None),
+                     ("? = mapping pending", None, None)])
+    Returns r + 1.
+    """
+    cc = c
+    for text, fill, color in items:
+        c1 = cc + span - 1
+        if span > 1:
+            ws.merge_cells(start_row=r, start_column=cc, end_row=r, end_column=c1)
+        cell = ws.cell(r, cc, str(text))
+        if fill:
+            cell.fill = PatternFill("solid", fgColor=fill)
+        cell.font = Font(name=F, size=9, bold=bool(fill), color=color or MUTED)
+        cell.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        cc = c1 + 1
+    ws.row_dimensions[r].height = 16
+    return r + 1
 
 
 # ---------------------------------------------------------------- tables
@@ -379,8 +481,16 @@ def _build_demo(path):
     ws.title = "Demo Dashboard"
     no_gridlines(ws)
     col_grid(ws, n=10, width=16)
-    r = title_block(ws, 1, "Jivo × Demo — Leadership View",
-                    "82% catalog live · avg 18% off · generated by xlsx_dash selftest")
+    r = title_block(ws, 1, "Jivo × %s — Leadership View" % platform_name("amazon-now"),
+                    "82% catalog live · avg 18% off · " + gloss("SVD"))
+    edition_badge(ws, r, 9, "Amazon edition")
+    r += 1
+    r = legend(ws, r, [("RED = below agreed price",) + BAD_PAIR,
+                       ("GREEN = at/above",) + GOOD_PAIR,
+                       ("AMBER = overpriced",) + AMBER_PAIR,
+                       ("OOS = out of stock", None, None),
+                       ("? = mapping pending", None, None)])
+    r += 1
     # KPI strip: 5 cards
     cards = [("CATALOG LIVE", "82%", "51 of 62 SKUs", "good"),
              ("AVG DISCOUNT", "18%", "across 48 priced", "good"),
