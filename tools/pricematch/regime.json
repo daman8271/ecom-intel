@@ -1,0 +1,12 @@
+{
+  "defaults": {
+    "mon": "BAU",
+    "tue": "BAU",
+    "wed": "BAU",
+    "thu": "BAU",
+    "fri": "SVD",
+    "sat": "SVD",
+    "sun": "SVD"
+  },
+  "overrides": []
+}
