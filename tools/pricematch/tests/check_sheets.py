@@ -134,16 +134,28 @@ def check_platform_sheet(p):
             cols["live"] = c
         elif h.startswith("diff") and "%" not in h:
             cols["diff"] = c
+        elif h.startswith("diff") and "%" in h:
+            cols["pct"] = c
         elif h.startswith("status"):
             cols["status"] = c
-    missing = [k for k in ("sku", "ref", "live", "diff", "status") if k not in cols]
+    missing = [k for k in ("sku", "ref", "live", "diff", "pct", "status") if k not in cols]
     if missing:
         check("%s: required columns present" % p, False, "missing %s" % missing)
         return
 
+    # New 9-col layout (owner order 2026-06-06): Min–Max column REMOVED
+    hdr_vals = [str(ws.cell(row=hdr_row, column=c).value or "")
+                for c in range(1, ws.max_column + 1)]
+    nonempty = [h for h in hdr_vals if h.strip()]
+    check("%s: 9-col layout, no Min–Max column" % p,
+          len(nonempty) == 9 and not any(
+              "min" in h.lower() and "max" in h.lower() for h in hdr_vals),
+          hdr_vals)
+
     rows_seen = 0
     color_mismatches = []
     value_mismatches = []
+    pct_mismatches = []
     order_seen = []
     status_count = {}
     for r in range(hdr_row + 1, ws.max_row + 1):
@@ -172,6 +184,19 @@ def check_platform_sheet(p):
             if ev is not None and sv is not None and abs(sv - ev) > 0.005:
                 value_mismatches.append("row %d %s: %s sheet=%r engine=%r" % (r, sku, key, sv, ev))
 
+        # Diff % must be the FRACTION (engine diff_pct/100) with a true Excel
+        # percent format — the literal '0.0"%"' on a pre-scaled value is the
+        # -798% double-scaling bug (owner screenshot 2026-06-06).
+        if rec.get("diff_pct") is not None:
+            pcell = ws.cell(row=r, column=cols["pct"])
+            want = rec["diff_pct"] / 100.0
+            got = num(pcell.value)
+            if got is None or abs(got - want) > 1e-9:
+                pct_mismatches.append("row %d %s: pct cell=%r want=%r" % (r, sku, pcell.value, want))
+            elif "%" not in (pcell.number_format or "") or '"' in (pcell.number_format or ""):
+                pct_mismatches.append("row %d %s: pct fmt=%r not a true %% format" %
+                                      (r, sku, pcell.number_format))
+
         # ---- COLOR DIRECTION, recomputed INDEPENDENTLY from engine numbers
         live, ref = num(rec["live_modal"]), num(rec["ref_price"])
         truth = None
@@ -199,6 +224,8 @@ def check_platform_sheet(p):
           "; ".join(color_mismatches[:6]) or "no data rows matched engine records")
     check("%s: sheet numbers/status == engine records" % p, not value_mismatches,
           "; ".join(value_mismatches[:6]))
+    check("%s: Diff %% = engine diff_pct/100 with true %% format" % p, not pct_mismatches,
+          "; ".join(pct_mismatches[:6]))
 
     # NOT_LISTED omitted
     check("%s: NOT_LISTED omitted from sheet" % p, "NOT_LISTED" not in status_count,
@@ -241,6 +268,13 @@ def check_platform_sheet(p):
     check("%s: footer BELOW count == engine (%d)" % (p, eng_counts.get("BELOW", 0)),
           m is not None and int(m.group(1)) == eng_counts.get("BELOW", 0),
           "footer=%r" % footer[:90])
+
+    # only today's regime may be named on the sheet (owner order 2026-06-06)
+    forbidden = {"BAU", "SVD", "ART"} - {regime}
+    leaks = [repr(str(v)[:60]) for row in ws.iter_rows(values_only=True) for v in row
+             if isinstance(v, str) and any(re.search(r"\b%s\b" % rg, v) for rg in forbidden)]
+    check("%s: no non-today regime token on Price Match sheet" % p, not leaks,
+          "; ".join(leaks[:4]))
 
 
 # ------------------------------------------------------------------ master
@@ -310,28 +344,29 @@ def check_master():
             plat_cols[DISPLAY[vl]] = c
     check("master Matrix: all 8 platform columns", len(plat_cols) == 8,
           "found %s" % sorted(plat_cols))
-    regime_cols = {}
-    for c, v in cols.items():
-        head = v.upper().split()[0] if v.strip() else ""
-        if head in ("BAU", "SVD", "ART"):
-            regime_cols[head] = c
+    # Owner order 2026-06-06 (sheet-clean): show ONLY today's regime — the
+    # header must be MRP + ONE named "Agreed price (<regime>)" column; the
+    # old BAU/SVD/ART trio is BANNED from the Matrix.
+    trio = [v for v in cols.values()
+            if (v.upper().split()[0] if v.strip() else "") in ("BAU", "SVD", "ART")]
+    agreed = [c for c, v in cols.items()
+              if v.strip().lower() == ("agreed price (%s)" % regime.lower())]
+    has_mrp = any(v.strip().upper() == "MRP" for v in cols.values())
+    check("master Matrix: MRP + single 'Agreed price (%s)' column, no BAU/SVD/ART trio" % regime,
+          len(agreed) == 1 and has_mrp and not trio,
+          "agreed=%r trio=%r cols=%r" % (agreed, trio, cols))
 
-    # regime column highlight: today's regime col fill differs from the other two
-    fills = {}
-    for rg, c in regime_cols.items():
-        fills[rg] = fill_rgb(ws.cell(row=hdr_row, column=c))
-    if regime in regime_cols:
-        hdr_txt = cols[regime_cols[regime]]
-        marked = ("today" in hdr_txt.lower()) or ("◀" in hdr_txt) or ("▶" in hdr_txt)
-        others = [v for k, v in fills.items() if k != regime]
-        fill_distinct = all(fills.get(regime) != o for o in others)
-        other_marked = [cols[c] for rg, c in regime_cols.items() if rg != regime
-                        and ("today" in cols[c].lower() or "◀" in cols[c])]
-        check("master Matrix: today's regime column '%s' highlighted (marker or fill)" % regime,
-              (marked or fill_distinct) and not other_marked,
-              "hdr=%r fills=%r other_marked=%r" % (hdr_txt, fills, other_marked))
-    else:
-        check("master Matrix: regime columns present", False, "cols=%r" % cols)
+    # no OTHER regime's name leaks anywhere in the workbook (today's is fine)
+    forbidden = {"BAU", "SVD", "ART"} - {regime}
+    leaks = []
+    for sn in wb.sheetnames:
+        for row in wb[sn].iter_rows(values_only=True):
+            for v in row:
+                if isinstance(v, str) and any(
+                        re.search(r"\b%s\b" % rg, v) for rg in forbidden):
+                    leaks.append("[%s] %r" % (sn, v[:60]))
+    check("master: no non-today regime token (%s) in any cell" % "/".join(sorted(forbidden)),
+          not leaks, "; ".join(leaks[:5]))
 
     color_mm, val_mm, link_missing = [], [], []
     checked = 0

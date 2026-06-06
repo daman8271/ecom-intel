@@ -221,17 +221,31 @@ def main():
             break
     arows = []
     fmt_ugly = []
+    pct_bad = []
     for r in range(hdr + 1, ws.max_row + 1):
         if ws.cell(row=r, column=1).value is None:
             continue
         arows.append(r)
-        c6 = ws.cell(row=r, column=6)  # Diff %
+        c6 = ws.cell(row=r, column=6)  # Diff % — FRACTION + true % format
         if isinstance(c6.value, float) and c6.number_format in ("General", "@", None):
             fmt_ugly.append("%s: %r fmt=%r" % (c6.coordinate, c6.value, c6.number_format))
+        # exact: cell == engine diff_pct/100 (pre-scaled value here = the
+        # -798% double-scaling bug, owner screenshot 2026-06-06)
+        sku = str(ws.cell(row=r, column=1).value).strip()
+        plat = DISPLAY2SLUG.get(str(ws.cell(row=r, column=2).value or "").strip().lower())
+        er = next((x for x in above if x["sku"] == sku and x["platform"] == plat), None)
+        if er and er.get("diff_pct") is not None and isinstance(c6.value, (int, float)):
+            want = er["diff_pct"] / 100.0
+            if abs(c6.value - want) > 1e-9:
+                pct_bad.append("%s/%s c6=%r want=%r" % (sku, plat, c6.value, want))
+            elif "%" not in (c6.number_format or "") or '"' in (c6.number_format or ""):
+                pct_bad.append("%s/%s fmt=%r not a true %% format" % (sku, plat, c6.number_format))
     check("Above reference: row count == engine ABOVE (%d)" % len(above),
           len(arows) == len(above), "sheet=%d" % len(arows))
     check("Above reference: Diff %% cells carry a number format (owner-facing)",
           not fmt_ugly, "raw floats shown as General: %s" % fmt_ugly[:3])
+    check("Above reference: Diff %% = engine diff_pct/100 (no double-scaling)",
+          not pct_bad, "; ".join(pct_bad[:4]))
 
     # ------------------------------------------------------------ Coverage
     ws = wb["Coverage & pending"]
