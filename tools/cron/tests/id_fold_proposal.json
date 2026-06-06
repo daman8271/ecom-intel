@@ -1,0 +1,105 @@
+{
+  "blinkit": {
+    "jivo-cold-pressed-sunflower-oil-1l": {
+      "id": "628632",
+      "url": "https://blinkit.com/prn/jivo-cold-pressed-sunflower-oil/prid/628632"
+    },
+    "jivo-kachi-ghani-cold-pressed-mustard-oil-1l": {
+      "id": "540835",
+      "url": "https://blinkit.com/prn/jivo-kachi-ghani-cold-pressed-mustard-oil-cold-pressed-saaron-da-tel/prid/540835"
+    },
+    "jivo-kachi-ghani-cold-pressed-mustard-oil-5l": {
+      "id": "540970",
+      "url": "https://blinkit.com/prn/jivo-kachi-ghani-cold-pressed-mustard-oil-cold-pressed-saaron-da-tel/prid/540970"
+    }
+  },
+  "flipkart-minutes": {
+    "jivo-cold-press-canola-oil-plastic-bottle-1l": {
+      "id": "EDOG9BP8GEWFW9XC",
+      "url": "https://www.flipkart.com/jivo-cold-press-canola-oil-plastic-bottle/p/itm154321724e08f?pid=EDOG9BP8GEWFW9XC"
+    },
+    "jivo-cold-press-combo-canola-oil-plastic-bottle-2l": {
+      "id": "EDOF25FJGBH5EDS3",
+      "url": "https://www.flipkart.com/jivo-cold-press-combo-canola-oil-plastic-bottle/p/itm93f5608b041a0?pid=EDOF25FJGBH5EDS3"
+    },
+    "jivo-cold-pressed-pure-cooking-mustard-oil-can-4l": {
+      "id": "EDOHAUNQSDFDYPFC",
+      "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-mustard-oil-can/p/itmbc19c03fa6ee9?pid=EDOHAUNQSDFDYPFC"
+    },
+    "jivo-cold-pressed-pure-cooking-mustard-oil-can-5l": {
+      "id": "EDOGDVWEUPPWVGED",
+      "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-mustard-oil-can/p/itmbc19c03fa6ee9?pid=EDOGDVWEUPPWVGED"
+    },
+    "jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l": {
+      "id": "EDOGDVWYGJNDYRQP",
+      "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-pack-1-mustard-oil-plastic-bottle/p/itm7dfb8c40f2e72?pid=EDOGDVWYGJNDYRQP"
+    },
+    "jivo-extra-light-olive-oil-can-2l": {
+      "id": "EDOGHZTJZEYQJGME",
+      "url": "https://www.flipkart.com/jivo-extra-light-olive-oil-can/p/itm013dc71f38fe9?pid=EDOGHZTJZEYQJGME"
+    },
+    "jivo-mineral-water-1l": {
+      "id": "WERH9M3VYW6X5KSX",
+      "url": "https://www.flipkart.com/jivo-mineral-water/p/itmbe68dfb27dd33?pid=WERH9M3VYW6X5KSX"
+    },
+    "jivo-pomace-olive-oil-plastic-bottle-1l": {
+      "id": "EDOFTHNH4YZ7GDHS",
+      "url": "https://www.flipkart.com/jivo-pomace-olive-oil-plastic-bottle/p/itm0e69157c71cd7?pid=EDOFTHNH4YZ7GDHS"
+    },
+    "jivo-pomace-olive-oil-tin-5l": {
+      "id": "EDOFTHNH3T8PATGW",
+      "url": "https://www.flipkart.com/jivo-pomace-olive-oil-tin/p/itm577d630310a40?pid=EDOFTHNH3T8PATGW"
+    },
+    "jivo-soybean-oil-soyabean-oil-pouch-1l": {
+      "id": "EDOGPX8ZD2ZYPH6U",
+      "url": "https://www.flipkart.com/jivo-soybean-oil-soyabean-pouch/p/itm07811dbc08ff2?pid=EDOGPX8ZD2ZYPH6U"
+    }
+  },
+  "bigbasket": {
+    "apple-healthy-wheatgrass-juice-sugar-free-200ml": {
+      "id": "40335329",
+      "url": "https://www.bigbasket.com/pd/40335329/jivo-apple-healthy-wheatgrass-juice-sugar-free-200-ml/",
+      "ean": "8905604001786"
+    },
+    "blueberry-healthy-wheatgrass-juice-200ml": {
+      "id": "40335335",
+      "url": "https://www.bigbasket.com/pd/40335335/jivo-blueberry-healthy-wheatgrass-juice-200-ml/",
+      "ean": "8905604002967"
+    },
+    "canola-oil-cold-pressed-1l": {
+      "id": "282779",
+      "url": "https://www.bigbasket.com/pd/282779/jivo-oil-canola-1-l/",
+      "ean": "8905604001083"
+    },
+    "canola-oil-cold-pressed-5l": {
+      "id": "282780",
+      "url": "https://www.bigbasket.com/pd/282780/jivo-canola-oil-5-l-bottle/",
+      "ean": "8905604000994"
+    },
+    "fizzy-water-flavoured-with-lemon-750ml": {
+      "id": "40335332",
+      "url": "https://www.bigbasket.com/pd/40335332/jivo-fizzy-water-lemon-flavoured-carbonated-water-750-ml/",
+      "ean": "8905604001847"
+    },
+    "mango-healthy-wheatgrass-juice-200ml": {
+      "id": "40335336",
+      "url": "https://www.bigbasket.com/pd/40335336/jivo-mango-healthy-wheatgrass-juice-200-ml/",
+      "ean": "8905604000338"
+    },
+    "mango-healthy-wheatgrass-juice-500ml": {
+      "id": "40335340",
+      "url": "https://www.bigbasket.com/pd/40335340/jivo-mango-healthy-wheatgrass-juice-500-ml/",
+      "ean": "8905604001861"
+    },
+    "mojito-healthy-wheatgrass-juice-200ml": {
+      "id": "40335337",
+      "url": "https://www.bigbasket.com/pd/40335337/jivo-mojito-healthy-wheatgrass-juice-200-ml/",
+      "ean": "8905604000123"
+    },
+    "mojito-healthy-wheatgrass-juice-sugar-free-200ml": {
+      "id": "40335331",
+      "url": "https://www.bigbasket.com/pd/40335331/jivo-mojito-healthy-wheatgrass-juice-sugar-free-200-ml/",
+      "ean": "8905604002837"
+    }
+  }
+}
