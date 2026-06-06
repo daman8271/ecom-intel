@@ -456,6 +456,12 @@ _UNIT_ML = {"ml": 1.0, "l": 1000.0, "ltr": 1000.0, "litre": 1000.0,
             "liter": 1000.0, "litres": 1000.0, "liters": 1000.0}
 _NUM_UNIT_RE = __import__("re").compile(
     r"(\d+(?:\.\d+)?)\s*(ml|ltr|litres|liters|litre|liter|l)\b")
+# Explicit WEIGHT token ("200 gm", "1 kg"): a non-oil freebie in a mixed bundle
+# ("1LTR + 200 GM (BUNDLE)"). It contributes NO volume and must NEVER fall through
+# to the bare-number branch and inherit a sibling's litre unit (the 2026-06-06
+# false-SUSPECT: '200 GM' read as 200 litres -> "implies 201000ml").
+_NUM_WEIGHT_RE = __import__("re").compile(
+    r"(\d+(?:\.\d+)?)\s*(kgs?|gms?|grams?|g)\b")
 _NUM_RE = __import__("re").compile(r"(\d+(?:\.\d+)?)")
 _ADD_SPLIT_RE = __import__("re").compile(r"\s*\+\s*|\s+with\s+|\s*&\s*|\s+and\s+|\s+plus\s+")
 _ADD_PRESENT_RE = __import__("re").compile(r"\+|\swith\s|\s&\s|\sand\s|\splus\s")
@@ -469,8 +475,10 @@ def parse_total_vol_ml(pack):
     TOTAL millilitres implied by a `pack` string, or None if it carries no volume token.
     Handles additive combos ('5+1 LTR', '200 ML + 5LTR', '5 Litre with 5 Litre',
     '5 + 1 + 1 LTR' with a shared trailing unit), multiplicative packs ('1 L X 2',
-    'Pack of 2 ... 1 L') and plain single packs. Used only to DETECT under-counted
-    combo volumes — it never rewrites the scraper's value. Never raises.
+    'Pack of 2 ... 1 L') and plain single packs. An explicit WEIGHT addend
+    ('1LTR + 200 GM' = oil + seed freebie) contributes no volume — it is never
+    read as litres. Used only to DETECT under-counted combo volumes — it never
+    rewrites the scraper's value. Never raises.
     """
     if not pack:
         return None
@@ -504,6 +512,11 @@ def parse_total_vol_ml(pack):
                     if um:
                         total += float(nu.group(1)) * um
                         got = True
+                elif _NUM_WEIGHT_RE.search(p):
+                    # explicit weight addend (g/gm/kg) = non-oil freebie in a
+                    # mixed bundle -> zero volume, and crucially NOT a bare
+                    # number that inherits the shared litre unit.
+                    continue
                 else:
                     nm = _NUM_RE.search(p)
                     if nm and shared:
