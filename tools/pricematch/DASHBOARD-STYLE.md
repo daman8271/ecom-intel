@@ -8,13 +8,12 @@ durable; `python3 tools/xlsx_dash.py --selftest` proves the contract).
 ## Palette (ink + sage — one accent hue + neutrals)
 | Role | Hex | Use |
 |---|---|---|
-| `JIVO_GREEN` | `008B3A` | brand chrome only (filled header bars, tab color) |
-| `BRAND` | `1F8A4C` | section title bars, data bars |
+| `JIVO_GREEN` = `BRAND` | `008B3A` | **the ONE brand green** (fresh-eyes 2026-06-06): header bars, section titles, data bars, tab color |
 | `BRAND_SOFT` | `D6F0E0` | soft emphasis fills, chips |
 | `INK` / `MUTED` | `111827` / `6B7280` | primary text / labels, subs, footnotes |
 | `RULE` / `CANVAS` | `E5E7EB` / `F9FAFB` | hairlines + card borders / zebra stripe |
 | `POS` / `WARN` / `NEG` | `047857` / `B45309` / `B91C1C` | semantic text colors — **reserved**: green=good, red=bad, never decorative |
-| compliance fills | `FFC7CE`/`9C0006` red · `C6EFCE`/`006100` green · `FFEB9C`/`9C6500` amber | the classic Excel read every stakeholder knows (violations engine) |
+| `BAD_PAIR` / `GOOD_PAIR` / `AMBER_PAIR` | `FFC7CE`/`9C0006` · `C6EFCE`/`006100` · `FFEB9C`/`9C6500` | **the ONLY compliance (fill, text) pairs** — no `F4CCCC`/`CC0000` drift. Amber = "overpriced — sales risk", never green |
 
 ## Type scale (Calibri everywhere — ships with every Excel)
 20pt bold INK title → 12pt bold white-on-BRAND section bars → **22pt bold toned KPI values**
@@ -30,6 +29,20 @@ durable; `python3 tools/xlsx_dash.py --selftest` proves the contract).
   `12345678 → ₹1,23,45,678`), `FMT_PCT`. Caveat: negatives render unsigned in `FMT_INR`
   (2-condition format) — use it for prices/counts, not deltas.
 
+## Language & naming (fresh-eyes 2026-06-06)
+- **No unexplained jargon**: expand each `GLOSSARY` term ONCE per sheet at first use via
+  `gloss("SVD")` → "SVD — Special Value Days (Fri–Sun agreed price list)"; use the plain term
+  (`regime`→"price plan", `modal`→"most-common price", `exposure`→"₹ gap below agreed price",
+  `dark store`→"delivery store") everywhere else.
+- **One platform name set**: `platform_name(key)` ("Amazon Now", "Flipkart Minutes");
+  `short=True` only for genuinely narrow columns.
+- **No engineering residue** in stakeholder cells: no script paths, file names
+  (`regime.json`), URL params (`almBrandId`), or scrape durations. ONE capture timestamp
+  per workbook.
+- **Legends at the frozen TOP** (`legend()`, self-demonstrating, all states covered —
+  red/green/blue/OOS/?) — never below the data. Scoped editions carry `edition_badge()`
+  on the cover.
+
 ## Do
 - KPI cards: merged cells + hairline border + big toned value (`kpi_card`); tone carries the
   verdict (good/warn/bad) so the number reads before the label.
@@ -41,9 +54,12 @@ durable; `python3 tools/xlsx_dash.py --selftest` proves the contract).
 - CF colors as 8-digit ARGB (`FF…`) — the helpers do this for you.
 
 ## Don't
-- **NO native charts except in the LAST stage that touches a workbook** (predict.py).
-  openpyxl load+save destroys Excel-authored charts/images/shapes; our own openpyxl-drawn
-  charts do survive a re-save, but the rule stays absolute so ordering never matters.
+- **NO native charts except in the LAST stage that touches a workbook** — and know that
+  even then they render BLANK in preview viewers (Quick Look, Drive, Office mobile):
+  openpyxl charts carry no cached values, the 2026-06-06 empty-Leadership-View root cause.
+  Durable dashboards are cells + CF (report_dashboard.py). openpyxl load+save also destroys
+  Excel-AUTHORED charts/images/shapes; our own openpyxl-drawn charts survive a re-save,
+  but the rule stays absolute so ordering never matters.
 - If drawing charts in that last stage: call `xlsx_dash.excel_app_workaround()` first —
   openpyxl ≥3.1.4 stamps `Application: …Openpyxl…` and Excel then mis-renders its charts.
 - No native Excel Tables on executive sheets (header filter dropdowns can't be suppressed).
