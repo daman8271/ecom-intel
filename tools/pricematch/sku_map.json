@@ -1,13 +1,13 @@
 {
- "version": "2026-06-05",
- "source": "fleet pricemap 2026-06-05 (4 workers, lead-merged)",
+ "version": "2026-06-06",
+ "source": "fleet pricemap 2026-06-05 (4 workers, lead-merged) + master v2 extension 2026-06-06 (team sheet 113 SKUs: renames merged, RICE 1KG retired, regimes refreshed, 20 new SKUs mapped from frozen evidence)",
  "skus": {
   "A2 GHEE 1L": {
    "regimes": {
     "mrp": 4000,
-    "bau": 1399,
-    "svd": 1299,
-    "art": 1199
+    "bau": 1409,
+    "svd": 1309,
+    "art": 1209
    },
    "platforms": {
     "amazon": {
@@ -58,9 +58,9 @@
   "A2 GHEE 500ML": {
    "regimes": {
     "mrp": 2200,
-    "bau": 749,
-    "svd": 699,
-    "art": 649
+    "bau": 759,
+    "svd": 709,
+    "art": 659
    },
    "platforms": {
     "amazon": {
@@ -225,7 +225,7 @@
     "mrp": 549,
     "bau": 289,
     "svd": 289,
-    "art": 278.99999999999994
+    "art": 278.9999999999999
    },
    "platforms": {
     "amazon": {
@@ -262,7 +262,7 @@
     "mrp": 399,
     "bau": 249,
     "svd": 209,
-    "art": 188.99999999999997
+    "art": 189
    },
    "platforms": {
     "amazon": {
@@ -280,7 +280,7 @@
     }
    }
   },
-  "BLACK PAPER 100G": {
+  "BLACK PEPPER 100G": {
    "regimes": {
     "mrp": 399,
     "bau": 145,
@@ -315,14 +315,15 @@
      "method": "AUTO-NAME",
      "confidence": "anchored"
     }
-   }
+   },
+   "renamed_from": "BLACK PAPER 100G"
   },
   "CANOLA 1+1L": {
    "regimes": {
     "mrp": 750,
-    "bau": 509,
-    "svd": 489,
-    "art": 469
+    "bau": 529,
+    "svd": 509,
+    "art": 489
    },
    "platforms": {
     "amazon": {
@@ -459,9 +460,9 @@
   "CANOLA 1L": {
    "regimes": {
     "mrp": 375,
-    "bau": 259,
-    "svd": 249,
-    "art": 239
+    "bau": 269,
+    "svd": 259,
+    "art": 249
    },
    "platforms": {
     "amazon": {
@@ -580,12 +581,35 @@
     }
    }
   },
+  "CANOLA 1L + 1L": {
+   "regimes": {
+    "mrp": 750,
+    "bau": 529,
+    "svd": 509,
+    "art": 489
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0CZP26VVN",
+     "url": "https://www.amazon.in/dp/B0CZP26VVN",
+     "title": "Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L)",
+     "mrp": 750,
+     "sale_modal": 509,
+     "sale_min": 509,
+     "sale_max": 509,
+     "in_stock": true,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "verifier-confirmed 2026-06-05 ('Pack of 2L' = 2x1L canola); was held as a known DUPLICATE of CANOLA 1+1L (B0152TWWSQ) — team sheet v2 gives it its own master row, old review item retired"
+    }
+   }
+  },
   "CANOLA 1L POUCH": {
    "regimes": {
     "mrp": 299,
-    "bau": 259,
-    "svd": 249,
-    "art": 239
+    "bau": 269,
+    "svd": 259,
+    "art": 249
    },
    "platforms": {
     "amazon": {
@@ -618,9 +642,9 @@
   "CANOLA 3L": {
    "regimes": {
     "mrp": 690,
-    "bau": 769,
-    "svd": 739,
-    "art": 709
+    "bau": 799,
+    "svd": 769,
+    "art": 739
    },
    "platforms": {
     "amazon": {
@@ -656,9 +680,9 @@
   "CANOLA 4L": {
    "regimes": {
     "mrp": 1199,
-    "bau": 1029,
-    "svd": 989,
-    "art": 949
+    "bau": 1189,
+    "svd": 1149,
+    "art": 1109
    },
    "platforms": {
     "amazon": {
@@ -679,9 +703,9 @@
   "CANOLA 5L": {
    "regimes": {
     "mrp": 1650,
-    "bau": 1289,
-    "svd": 1239,
-    "art": 1099
+    "bau": 1299,
+    "svd": 1249,
+    "art": 1199
    },
    "platforms": {
     "amazon": {
@@ -1068,9 +1092,9 @@
   "COCONUT 1L": {
    "regimes": {
     "mrp": 700,
-    "bau": 549,
-    "svd": 529,
-    "art": 499
+    "bau": 559,
+    "svd": 539,
+    "art": 509
    },
    "platforms": {
     "amazon": {
@@ -1131,9 +1155,9 @@
   "COCONUT 200ML": {
    "regimes": {
     "mrp": 285,
-    "bau": 139,
-    "svd": 119,
-    "art": 129
+    "bau": 149,
+    "svd": 129,
+    "art": 139
    },
    "platforms": {
     "amazon": {
@@ -1292,12 +1316,49 @@
     }
    }
   },
+  "EXTRA LIGHT 1+1L": {
+   "regimes": {
+    "mrp": 2798,
+    "bau": 1229,
+    "svd": 1189,
+    "art": 1089
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B07WSJ45Q4",
+     "url": "https://www.amazon.in/dp/B07WSJ45Q4",
+     "title": "Jivo Extra Light Daily Cooking Olive Oil 1 Ltr (Pack of 2) | Rich Quality Healthy Cooking Oil for Indian Cuisine, Ideal for Frying, Roasting, and Baking",
+     "mrp": 2998,
+     "sale_modal": 1139,
+     "sale_min": 1139,
+     "sale_max": 1139,
+     "in_stock": true,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    },
+    "flipkart": {
+     "id": "QWRGGC46UKQKVCES",
+     "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGC46UKQKVCES",
+     "title": "JIVO Extra Light Olive Oil 1+1 Ltr Olive Oil PET Bottle",
+     "item": "EXTRA LIGHT 1+1L",
+     "sap_code": null,
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-CATALOG",
+     "confidence": "exact",
+     "note": "exact Jivo-catalog internal-name match (frozen fragment evidence, no re-scrape); no live MRP on the listing — catalog identity stands, nothing contradicts"
+    }
+   }
+  },
   "EXTRA LIGHT 1L": {
    "regimes": {
     "mrp": 1499,
-    "bau": 599,
-    "svd": 579,
-    "art": 529
+    "bau": 619,
+    "svd": 599,
+    "art": 549
    },
    "platforms": {
     "amazon": {
@@ -1411,9 +1472,9 @@
   "EXTRA LIGHT 2L": {
    "regimes": {
     "mrp": 2799,
-    "bau": 1149,
-    "svd": 1099,
-    "art": 1039
+    "bau": 1229,
+    "svd": 1189,
+    "art": 1089
    },
    "platforms": {
     "amazon": {
@@ -1546,9 +1607,9 @@
   "EXTRA LIGHT 3L": {
    "regimes": {
     "mrp": 2200,
-    "bau": 1699,
-    "svd": 1599,
-    "art": 1499
+    "bau": 1849,
+    "svd": 1789,
+    "art": 1639
    },
    "platforms": {
     "amazon": {
@@ -1569,9 +1630,9 @@
   "EXTRA LIGHT 500ML": {
    "regimes": {
     "mrp": 499,
-    "bau": 339,
-    "svd": 329,
-    "art": 269
+    "bau": 349,
+    "svd": 339,
+    "art": 299
    },
    "platforms": {
     "amazon": {
@@ -1592,9 +1653,9 @@
   "EXTRA LIGHT 5L": {
    "regimes": {
     "mrp": 6499,
-    "bau": 2799,
-    "svd": 2699,
-    "art": 2599
+    "bau": 3069,
+    "svd": 2969,
+    "art": 2709
    },
    "platforms": {
     "amazon": {
@@ -1659,9 +1720,9 @@
   "EXTRA VIRGIN 1L": {
    "regimes": {
     "mrp": 1499,
-    "bau": 799,
-    "svd": 779,
-    "art": 749
+    "bau": 809,
+    "svd": 789,
+    "art": 759
    },
    "platforms": {
     "amazon": {
@@ -1776,12 +1837,49 @@
     }
    }
   },
+  "EXTRA VIRGIN 1L + 1L": {
+   "regimes": {
+    "mrp": 2998,
+    "bau": 1609,
+    "svd": 1589,
+    "art": 1519
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0CZP31DXK",
+     "url": "https://www.amazon.in/dp/B0CZP31DXK",
+     "title": "Jivo Extra Virgin Olive Oil 1 litre | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades [Pack of 2 (1L Pet Bottle)]",
+     "mrp": 1998,
+     "sale_modal": 1518,
+     "sale_min": 1518,
+     "sale_max": 1518,
+     "in_stock": true,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    },
+    "flipkart": {
+     "id": "QWRGEMNS9ZPZGWJH",
+     "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMNS9ZPZGWJH",
+     "title": "Jivo Extra Virgin Olive Oil, 2 L for Dressings, Salad and Soups, Dips & Marinades. Olive Oil Plastic Bottle",
+     "item": "Extra Virgin 1+1L",
+     "sap_code": null,
+     "mrp": 2998,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-CATALOG",
+     "confidence": "exact",
+     "note": "exact Jivo-catalog internal-name match (frozen fragment evidence, no re-scrape); listing mrp 2998 == sheet mrp (anchor confirmed)"
+    }
+   }
+  },
   "EXTRA VIRGIN 200ML": {
    "regimes": {
     "mrp": 350,
-    "bau": 189,
-    "svd": 179,
-    "art": 169
+    "bau": 199,
+    "svd": 189,
+    "art": 179
    },
    "platforms": {
     "amazon": {
@@ -1816,9 +1914,9 @@
   "EXTRA VIRGIN 250ML": {
    "regimes": {
     "mrp": 450,
-    "bau": 209,
-    "svd": 199,
-    "art": 189
+    "bau": 219,
+    "svd": 209,
+    "art": 199
    },
    "platforms": {
     "amazon": {
@@ -1853,9 +1951,9 @@
   "EXTRA VIRGIN 2L": {
    "regimes": {
     "mrp": 2700,
-    "bau": 1589,
-    "svd": 1549,
-    "art": 1489
+    "bau": 1619,
+    "svd": 1589,
+    "art": 1519
    },
    "platforms": {
     "amazon": {
@@ -1891,9 +1989,9 @@
   "EXTRA VIRGIN 3L": {
    "regimes": {
     "mrp": 4000,
-    "bau": 2349,
-    "svd": 2299,
-    "art": 2199
+    "bau": 2429,
+    "svd": 2369,
+    "art": 2279
    },
    "platforms": {
     "amazon": {
@@ -1914,9 +2012,9 @@
   "EXTRA VIRGIN 500ML": {
    "regimes": {
     "mrp": 675,
-    "bau": 409,
-    "svd": 399,
-    "art": 379
+    "bau": 419,
+    "svd": 409,
+    "art": 389
    },
    "platforms": {
     "amazon": {
@@ -1952,9 +2050,9 @@
   "EXTRA VIRGIN 5L": {
    "regimes": {
     "mrp": 7999,
-    "bau": 3849,
-    "svd": 3749,
-    "art": 3589
+    "bau": 4039,
+    "svd": 3939,
+    "art": 3789
    },
    "platforms": {
     "amazon": {
@@ -2057,7 +2155,7 @@
     "mrp": 399,
     "bau": 189,
     "svd": 179,
-    "art": 159.00000000000003
+    "art": 159
    },
    "platforms": {
     "amazon": {
@@ -2126,12 +2224,72 @@
     }
    }
   },
+  "GINGER ALE 200ML": {
+   "regimes": {
+    "mrp": 100,
+    "bau": 49,
+    "svd": 39,
+    "art": 39
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0CYHFFZXG",
+     "url": "https://www.amazon.in/dp/B0CYHFFZXG",
+     "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200 ml (Ginger Ale Sugar Free)",
+     "mrp": 480,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "wheatgrass-census identity: this ASIN is 'Wheatgrass Juice Sugar Free (Ginger Ale) 200ml'; live amazon MRP 480 looks marketplace-inflated (census: BB 200ml flavours carry clean MRP 50)"
+    }
+   }
+  },
+  "GOLD 1+1": {
+   "regimes": {
+    "mrp": 450,
+    "bau": 389,
+    "svd": 369,
+    "art": 349
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0CWNVJN3B",
+     "url": "https://www.amazon.in/dp/B0CWNVJN3B",
+     "title": "Jivo Gold Oil 1+1 Litre Pack | Blend of Rice Bran & Sunflower Oil | Refined Cooking Oil with Added Vitamins | Cholesterol-Free Edible Oil | Ideal for Deep Frying, Sautéing & Daily Cooking",
+     "mrp": 295,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    },
+    "flipkart": {
+     "id": "EDOGYJ7SYY4H2MDH",
+     "url": "https://www.flipkart.com/product/p/itme?pid=EDOGYJ7SYY4H2MDH",
+     "title": "JIVO Gold Blended Cooking Oil For Healthy Heart Blended Oil PET Bottle",
+     "item": "GOLD 1+1L",
+     "sap_code": null,
+     "mrp": 450,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-CATALOG",
+     "confidence": "exact",
+     "note": "exact Jivo-catalog internal-name match (frozen fragment evidence, no re-scrape); listing mrp 450 == sheet mrp (anchor confirmed)"
+    }
+   }
+  },
   "GOLD 1L": {
    "regimes": {
     "mrp": 225,
     "bau": 199,
-    "svd": 179,
-    "art": 168
+    "svd": 189,
+    "art": 179
    },
    "platforms": {
     "amazon": {
@@ -2179,9 +2337,9 @@
   "GOLD 5L": {
    "regimes": {
     "mrp": 1049,
-    "bau": 899,
-    "svd": 849,
-    "art": 825
+    "bau": 989,
+    "svd": 939,
+    "art": 889
    },
    "platforms": {
     "amazon": {
@@ -2308,9 +2466,9 @@
   "GROUNDNUT 1L": {
    "regimes": {
     "mrp": 400,
-    "bau": 249,
-    "svd": 229,
-    "art": 199
+    "bau": 259,
+    "svd": 239,
+    "art": 219
    },
    "platforms": {
     "amazon": {
@@ -2372,9 +2530,9 @@
   "GROUNDNUT 5L": {
    "regimes": {
     "mrp": 2800,
-    "bau": 1239,
-    "svd": 1139,
-    "art": 999
+    "bau": 1269,
+    "svd": 1169,
+    "art": 1069
    },
    "platforms": {
     "amazon": {
@@ -2479,9 +2637,9 @@
   "JIVO POMACE 1L": {
    "regimes": {
     "mrp": 1049,
-    "bau": 429,
-    "svd": 419,
-    "art": 399
+    "bau": 439,
+    "svd": 429,
+    "art": 409
    },
    "platforms": {
     "amazon": {
@@ -2610,12 +2768,47 @@
     }
    }
   },
+  "JIVO POMACE 1L + 1L": {
+   "regimes": {
+    "mrp": 2098,
+    "bau": 869,
+    "svd": 849,
+    "art": 809
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0CZP46SJX",
+     "url": "https://www.amazon.in/dp/B0CZP46SJX",
+     "title": "Jivo Daily Cooking Pomace Olive Oil |1 Litre | Rich in MUFA | Low in Saturated Fat (Pack of 2)",
+     "mrp": 1298,
+     "sale_modal": 758,
+     "sale_min": 758,
+     "sale_max": 758,
+     "in_stock": true,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    },
+    "zepto": {
+     "id": "3d955a07-72db-4d1a-9d65-42c5a8dd0641",
+     "url": "https://www.zepto.com/pn/p/pvid/3d955a07-72db-4d1a-9d65-42c5a8dd0641",
+     "title": "Jivo Pomace Olive Oil Combo",
+     "mrp": 2098,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "AUTO-NAME+MRP",
+     "confidence": "anchored",
+     "note": "census-classified combo 1L x 2 (same composition), mrp 2098 == v2 sheet exact; sale not captured in the frozen census"
+    }
+   }
+  },
   "JIVO POMACE 2L": {
    "regimes": {
     "mrp": 1600,
-    "bau": 849,
-    "svd": 829,
-    "art": 789
+    "bau": 869,
+    "svd": 849,
+    "art": 809
    },
    "platforms": {
     "amazon": {
@@ -2693,9 +2886,9 @@
   "JIVO POMACE 5L": {
    "regimes": {
     "mrp": 4999,
-    "bau": 2099,
-    "svd": 2049,
-    "art": 1899
+    "bau": 2169,
+    "svd": 2119,
+    "art": 2049
    },
    "platforms": {
     "amazon": {
@@ -2812,12 +3005,117 @@
     }
    }
   },
+  "JIVO PUNJABI SHIKANJI 160 MLS": {
+   "regimes": {
+    "mrp": 480,
+    "bau": 219,
+    "svd": 219,
+    "art": 199
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0GZ7PXVF8",
+     "url": "https://www.amazon.in/dp/B0GZ7PXVF8",
+     "title": "Jivo Punjabi Shikanji Wheatgrass Juice | Nimbu Shikanji Masala Drink | Natural Summer Refreshment 160ml (Pack of 24)",
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    }
+   }
+  },
+  "JIVO WATER 1L": {
+   "regimes": {
+    "mrp": 30,
+    "bau": 20,
+    "svd": 18,
+    "art": 15
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0CSPMN88F",
+     "url": "https://www.amazon.in/dp/B0CSPMN88F",
+     "title": "Jivo Natural Mineral Water | Unprocessed & Sourced Directly from Himalayas | Non-Ro Mineral Water Bottle | Quick Hydration Solution | Natural Mineral 1L Bottle",
+     "mrp": 1800,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "live amazon MRP 1800 vs sheet 30 — census red flag: almost certainly a case-pack listing sold per-case; see review"
+    },
+    "flipkart-minutes": {
+     "id": "WERH9M3VYW6X5KSX",
+     "url": "https://www.flipkart.com/jivo-mineral-water/p/itmbe68dfb27dd33?pid=WERH9M3VYW6X5KSX",
+     "title": "JIVO Mineral Water",
+     "item": null,
+     "sap_code": null,
+     "mrp": 30,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "AUTO-NAME+MRP",
+     "confidence": "anchored",
+     "note": "1L water, modal mrp 30 == v2 sheet exact (fragment evidence; variants 25/36 noted there); id = canonical slug, real pid via id-fold",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
+    }
+   }
+  },
+  "JIVO WATER 250ML": {
+   "regimes": {
+    "mrp": 360,
+    "bau": 119,
+    "svd": 109,
+    "art": 105
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0CST1ZYNY",
+     "url": "https://www.amazon.in/dp/B0CST1ZYNY",
+     "title": "Jivo - Mineral Water - 250ML",
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    }
+   }
+  },
+  "JIVO WATER 500 MLS": {
+   "regimes": {
+    "mrp": 15,
+    "bau": 12,
+    "svd": 10,
+    "art": 9
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0GZB4ZQV3",
+     "url": "https://www.amazon.in/dp/B0GZB4ZQV3",
+     "title": "Jivo Natural Mineral Water | Himalayan Origin | Non-RO & Unprocessed | Non-Carbonated & Additive-Free Packaged Water for clean hydration | 500 ml Bottle",
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    }
+   }
+  },
   "MUSTARD 1L": {
    "regimes": {
     "mrp": 255,
-    "bau": 209,
-    "svd": 199,
-    "art": 172
+    "bau": 219,
+    "svd": 209,
+    "art": 189
    },
    "platforms": {
     "amazon": {
@@ -2948,12 +3246,34 @@
     }
    }
   },
+  "MUSTARD 1L + 1L": {
+   "regimes": {
+    "mrp": 500,
+    "bau": 429,
+    "svd": 409,
+    "art": 369
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B09HKPSS96",
+     "url": "https://www.amazon.in/dp/B09HKPSS96",
+     "title": "JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
+     "mrp": 550,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    }
+   }
+  },
   "MUSTARD 1L POUCH": {
    "regimes": {
     "mrp": 250,
-    "bau": 209,
-    "svd": 199,
-    "art": 169
+    "bau": 219,
+    "svd": 209,
+    "art": 189
    },
    "platforms": {
     "amazon": {
@@ -2987,9 +3307,9 @@
   "MUSTARD 3L": {
    "regimes": {
     "mrp": 765,
-    "bau": 619,
-    "svd": 589,
-    "art": 509
+    "bau": 629,
+    "svd": 599,
+    "art": 519
    },
    "platforms": {
     "amazon": {
@@ -3024,9 +3344,9 @@
   "MUSTARD 4L": {
    "regimes": {
     "mrp": 1000,
-    "bau": 829,
-    "svd": 789,
-    "art": 679
+    "bau": 839,
+    "svd": 799,
+    "art": 689
    },
    "platforms": {
     "amazon": {
@@ -3080,9 +3400,9 @@
   "MUSTARD 5L": {
    "regimes": {
     "mrp": 1250,
-    "bau": 1039,
-    "svd": 989,
-    "art": 899
+    "bau": 1049,
+    "svd": 999,
+    "art": 909
    },
    "platforms": {
     "amazon": {
@@ -3257,9 +3577,9 @@
   "POMACE 3L": {
    "regimes": {
     "mrp": 3050,
-    "bau": 1249,
-    "svd": 1199,
-    "art": 1149
+    "bau": 1309,
+    "svd": 1279,
+    "art": 1219
    },
    "platforms": {
     "amazon": {
@@ -3405,10 +3725,10 @@
   },
   "PUNJABI JEERA 160ML": {
    "regimes": {
-    "mrp": 240,
+    "mrp": 360,
     "bau": 219,
     "svd": 219,
-    "art": 198.99999999999997
+    "art": 199
    },
    "platforms": {
     "amazon": {
@@ -3531,14 +3851,16 @@
      "method": "ID-CATALOG",
      "confidence": "exact"
     }
-   }
+   },
+   "retired": true,
+   "retired_note": "dropped from team master sheet v2 (2026-06-06); mapping kept for history"
   },
   "RICE BRAN 1L": {
    "regimes": {
     "mrp": 285,
-    "bau": 189,
-    "svd": 179,
-    "art": 169
+    "bau": 199,
+    "svd": 189,
+    "art": 179
    },
    "platforms": {
     "amazon": {
@@ -3608,12 +3930,35 @@
     }
    }
   },
+  "RICE BRAN 1L + 1L": {
+   "regimes": {
+    "mrp": 570,
+    "bau": 389,
+    "svd": 369,
+    "art": 349
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0H2HDLB5Q",
+     "url": "https://www.amazon.in/dp/B0H2HDLB5Q?th=1",
+     "title": null,
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "identity from team master sheet v2 (2026-06-06); ASIN not in the 314-ASIN targeted scrape set yet (sheet says In Stock, seller Jivo Mart, url price 555)"
+    }
+   }
+  },
   "RICE BRAN 4L": {
    "regimes": {
     "mrp": 1140,
-    "bau": 749,
-    "svd": 709,
-    "art": 669
+    "bau": 759,
+    "svd": 719,
+    "art": 679
    },
    "platforms": {
     "amazon": {
@@ -3634,9 +3979,9 @@
   "RICE BRAN 5L": {
    "regimes": {
     "mrp": 1425,
-    "bau": 949,
-    "svd": 899,
-    "art": 829
+    "bau": 959,
+    "svd": 909,
+    "art": 839
    },
    "platforms": {
     "amazon": {
@@ -3710,7 +4055,7 @@
     }
    }
   },
-  "ROSEMARY LEAVES 150G": {
+  "ROSEMARY LEAVES 150 GMS": {
    "regimes": {
     "mrp": 499,
     "bau": 179,
@@ -3731,7 +4076,8 @@
      "method": "ID-ASIN",
      "confidence": "exact"
     }
-   }
+   },
+   "renamed_from": "ROSEMARY LEAVES 150G"
   },
   "SAFFRON 1GMS": {
    "regimes": {
@@ -3773,9 +4119,9 @@
   "SANO CANOLA 1L": {
    "regimes": {
     "mrp": 475,
-    "bau": 249,
-    "svd": 239,
-    "art": 229
+    "bau": 259,
+    "svd": 249,
+    "art": 239
    },
    "platforms": {
     "amazon": {
@@ -3810,9 +4156,9 @@
   "SANO CANOLA 5L": {
    "regimes": {
     "mrp": 1950,
-    "bau": 1239,
-    "svd": 1189,
-    "art": 1139
+    "bau": 1249,
+    "svd": 1199,
+    "art": 1149
    },
    "platforms": {
     "amazon": {
@@ -3847,9 +4193,9 @@
   "SANO CLASSIC 1L": {
    "regimes": {
     "mrp": 1399,
-    "bau": 579,
-    "svd": 549,
-    "art": 529
+    "bau": 589,
+    "svd": 559,
+    "art": 539
    },
    "platforms": {
     "amazon": {
@@ -3884,9 +4230,9 @@
   "SANO CLASSIC 5L": {
    "regimes": {
     "mrp": 6499,
-    "bau": 2699,
-    "svd": 2599,
-    "art": 2499
+    "bau": 2709,
+    "svd": 2609,
+    "art": 2509
    },
    "platforms": {
     "amazon": {
@@ -3921,9 +4267,9 @@
   "SANO MUSTARD 1L": {
    "regimes": {
     "mrp": 235,
-    "bau": 199,
-    "svd": 189,
-    "art": 169
+    "bau": 209,
+    "svd": 199,
+    "art": 179
    },
    "platforms": {
     "amazon": {
@@ -3944,9 +4290,9 @@
   "SANO MUSTARD 5L": {
    "regimes": {
     "mrp": 1200,
-    "bau": 989,
-    "svd": 939,
-    "art": 839
+    "bau": 999,
+    "svd": 949,
+    "art": 889
    },
    "platforms": {
     "amazon": {
@@ -3981,9 +4327,9 @@
   "SANO POMACE 1L": {
    "regimes": {
     "mrp": 999,
-    "bau": 399,
-    "svd": 379,
-    "art": 355
+    "bau": 419,
+    "svd": 399,
+    "art": 379
    },
    "platforms": {
     "amazon": {
@@ -4018,9 +4364,9 @@
   "SANO POMACE 5L": {
    "regimes": {
     "mrp": 4499,
-    "bau": 1899,
-    "svd": 1799,
-    "art": 1699
+    "bau": 2069,
+    "svd": 1969,
+    "art": 1869
    },
    "platforms": {
     "amazon": {
@@ -4056,9 +4402,9 @@
   "SANO SOYABEAN 1L": {
    "regimes": {
     "mrp": 225,
-    "bau": 189,
-    "svd": 179,
-    "art": 169
+    "bau": 199,
+    "svd": 189,
+    "art": 179
    },
    "platforms": {
     "amazon": {
@@ -4079,9 +4425,9 @@
   "SANO SOYABEAN 5L": {
    "regimes": {
     "mrp": 1450,
-    "bau": 939,
-    "svd": 889,
-    "art": 839
+    "bau": 949,
+    "svd": 899,
+    "art": 849
    },
    "platforms": {
     "amazon": {
@@ -4102,9 +4448,9 @@
   "SANO SUNFLOWER 1L": {
    "regimes": {
     "mrp": 280,
-    "bau": 209,
-    "svd": 199,
-    "art": 179
+    "bau": 219,
+    "svd": 209,
+    "art": 189
    },
    "platforms": {
     "amazon": {
@@ -4139,9 +4485,9 @@
   "SANO SUNFLOWER 5L": {
    "regimes": {
     "mrp": 1475,
-    "bau": 1039,
-    "svd": 989,
-    "art": 889
+    "bau": 1069,
+    "svd": 1029,
+    "art": 929
    },
    "platforms": {
     "amazon": {
@@ -4156,6 +4502,29 @@
      "in_stock": false,
      "method": "ID-ASIN",
      "confidence": "exact"
+    }
+   }
+  },
+  "SESAME 1L + 1L": {
+   "regimes": {
+    "mrp": 1200,
+    "bau": 689,
+    "svd": 649,
+    "art": 589
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0H2B92WLP",
+     "url": "https://www.amazon.in/dp/B0H2B92WLP?th=1",
+     "title": null,
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "identity from team master sheet v2 (2026-06-06); ASIN not in the 314-ASIN targeted scrape set yet (sheet says In Stock, seller Jivo Mart, url price 929)"
     }
    }
   },
@@ -4199,9 +4568,9 @@
   "SO OLIVE 1L": {
    "regimes": {
     "mrp": 325,
-    "bau": 249,
-    "svd": 239,
-    "art": 219
+    "bau": 289,
+    "svd": 279,
+    "art": 259
    },
    "platforms": {
     "amazon": {
@@ -4258,12 +4627,50 @@
     }
    }
   },
+  "SO OLIVE 1L + 1L": {
+   "regimes": {
+    "mrp": 650,
+    "bau": 569,
+    "svd": 549,
+    "art": 509
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0H2HJKJH1",
+     "url": "https://www.amazon.in/dp/B0H2HJKJH1?th=1",
+     "title": null,
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "identity from team master sheet v2 (2026-06-06); ASIN not in the 314-ASIN targeted scrape set yet (sheet says Out of Stock)"
+    },
+    "flipkart": {
+     "id": "EDOHBH2URWDMHPXC",
+     "url": "https://www.flipkart.com/product/p/itme?pid=EDOHBH2URWDMHPXC",
+     "title": "JIVO So Olive Rice Bran & Olive Blend Cooking Oil Nutritious Healthy Ideal Daily Use Blended Oil PET Bottle",
+     "item": "SO OLIVE 1+1L",
+     "sap_code": null,
+     "mrp": 650,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-CATALOG",
+     "confidence": "exact",
+     "note": "exact Jivo-catalog internal-name match (frozen fragment evidence, no re-scrape); listing mrp 650 == sheet mrp (anchor confirmed)"
+    }
+   }
+  },
   "SO OLIVE 5L": {
    "regimes": {
     "mrp": 1625,
-    "bau": 1239,
-    "svd": 1189,
-    "art": 1089
+    "bau": 1419,
+    "svd": 1369,
+    "art": 1319
    },
    "platforms": {
     "amazon": {
@@ -4358,9 +4765,9 @@
   "SOYABEAN 1L": {
    "regimes": {
     "mrp": 225,
-    "bau": 199,
-    "svd": 189,
-    "art": 169
+    "bau": 209,
+    "svd": 199,
+    "art": 179
    },
    "platforms": {
     "amazon": {
@@ -4404,12 +4811,49 @@
     }
    }
   },
+  "SOYABEAN 1L + 1L": {
+   "regimes": {
+    "mrp": 1100,
+    "bau": 409,
+    "svd": 389,
+    "art": 358
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0B7JJ7C9W",
+     "url": "https://www.amazon.in/dp/B0B7JJ7C9W",
+     "title": "JIVO Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres | Ideal for Roasting, Frying, and Baking | Healthy Cooking Oil for Daily Use (Pack of 2)",
+     "mrp": 450,
+     "sale_modal": 449,
+     "sale_min": 449,
+     "sale_max": 449,
+     "in_stock": true,
+     "method": "ID-ASIN",
+     "confidence": "exact"
+    },
+    "flipkart": {
+     "id": "EDOGGPFZ2FCJ6UWS",
+     "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGPFZ2FCJ6UWS",
+     "title": "JIVO High in Omega-3 & PUFA | Ideal for Roasting, Frying, & Baking | Refined Cooking Soyabean Oil PET Bottle",
+     "item": "SOYABEAN 1+1L",
+     "sap_code": null,
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-CATALOG",
+     "confidence": "exact",
+     "note": "exact Jivo-catalog internal-name match (frozen fragment evidence, no re-scrape); no live MRP on the listing — catalog identity stands, nothing contradicts"
+    }
+   }
+  },
   "SOYABEAN 1L POUCH": {
    "regimes": {
     "mrp": 199,
-    "bau": 199,
-    "svd": 189,
-    "art": 168
+    "bau": 209,
+    "svd": 199,
+    "art": 169
    },
    "platforms": {
     "amazon": {
@@ -4448,9 +4892,9 @@
   "SOYABEAN 5L": {
    "regimes": {
     "mrp": 1100,
-    "bau": 989,
-    "svd": 939,
-    "art": 819
+    "bau": 999,
+    "svd": 949,
+    "art": 829
    },
    "platforms": {
     "amazon": {
@@ -4536,9 +4980,9 @@
   "SUNFLOWER 1L": {
    "regimes": {
     "mrp": 275,
-    "bau": 219,
-    "svd": 209,
-    "art": 189
+    "bau": 229,
+    "svd": 219,
+    "art": 209
    },
    "platforms": {
     "amazon": {
@@ -4664,12 +5108,35 @@
     }
    }
   },
+  "SUNFLOWER 1L + 1L": {
+   "regimes": {
+    "mrp": 550,
+    "bau": 449,
+    "svd": 429,
+    "art": 409
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0992GRH3Z",
+     "url": "https://www.amazon.in/dp/B0992GRH3Z",
+     "title": "Jivo Cold Pressed Chemical Free Sunflower Oil 1 Litre | Ideal for Roasting, Frying, Baking All Types of Cuisines | Healthy Cooking Oil for Daily Use | Pack of 2 Litres",
+     "mrp": 295,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "sheet ASIN is identity, but the scraped row for it reads '1 Litre' mrp 295 (a th=1 variant capture?) vs sheet 1L+1L mrp 550; see review"
+    }
+   }
+  },
   "SUNFLOWER 3L": {
    "regimes": {
     "mrp": 825,
-    "bau": 649,
-    "svd": 619,
-    "art": 559
+    "bau": 679,
+    "svd": 649,
+    "art": 619
    },
    "platforms": {
     "amazon": {
@@ -4705,9 +5172,9 @@
   "SUNFLOWER 4L": {
    "regimes": {
     "mrp": 1038,
-    "bau": 869,
-    "svd": 829,
-    "art": 749
+    "bau": 909,
+    "svd": 869,
+    "art": 829
    },
    "platforms": {
     "amazon": {
@@ -4743,9 +5210,9 @@
   "SUNFLOWER 5L": {
    "regimes": {
     "mrp": 1350,
-    "bau": 1089,
-    "svd": 1039,
-    "art": 939
+    "bau": 1139,
+    "svd": 1049,
+    "art": 999
    },
    "platforms": {
     "amazon": {
@@ -4984,12 +5451,62 @@
     }
    }
   },
+  "WG MANGO JUICE 500ML": {
+   "regimes": {
+    "mrp": 100,
+    "bau": 39,
+    "svd": 35,
+    "art": 35
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0DM2G4YCC",
+     "url": "https://www.amazon.in/dp/B0DM2G4YCC",
+     "title": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1)",
+     "mrp": 750,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": false,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "live amazon MRP 480 vs sheet 100 — census flags amazon WG MRPs as seller-inflated; BB EAN row is the clean anchor"
+    },
+    "bigbasket": {
+     "id": "40335340",
+     "ean": "8905604001861",
+     "url": "https://www.bigbasket.com/pd/40335340/jivo-mango-healthy-wheatgrass-juice-500-ml/",
+     "title": "Mango Healthy Wheatgrass Juice",
+     "mrp": 100,
+     "sale_modal": 100,
+     "sale_min": 100,
+     "sale_max": 100,
+     "in_stock": false,
+     "method": "ID-EAN",
+     "confidence": "exact",
+     "note": "EAN 8905604001861 (member-session scrape), mrp 100 == v2 sheet exact"
+    },
+    "amazon-now": {
+     "id": "B0DM2G4YCC",
+     "url": "https://www.amazon.in/dp/B0DM2G4YCC",
+     "title": "Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) Mango",
+     "mrp": null,
+     "sale_modal": 100,
+     "sale_min": 100,
+     "sale_max": 100,
+     "in_stock": true,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "genuine Now (ctnow) rows across 6 pincodes; sale 100 == v2 sheet mrp"
+    }
+   }
+  },
   "YELLOW MUSTARD 1L": {
    "regimes": {
     "mrp": 375,
-    "bau": 259,
-    "svd": 249,
-    "art": 239
+    "bau": 269,
+    "svd": 259,
+    "art": 249
    },
    "platforms": {
     "amazon": {
@@ -5047,12 +5564,35 @@
     }
    }
   },
+  "YELLOW MUSTARD 1L + 1L": {
+   "regimes": {
+    "mrp": 750,
+    "bau": 529,
+    "svd": 509,
+    "art": 489
+   },
+   "platforms": {
+    "amazon": {
+     "id": "B0GX19RGQH",
+     "url": "https://www.amazon.in/dp/B0GX19RGQH?th=1",
+     "title": null,
+     "mrp": null,
+     "sale_modal": null,
+     "sale_min": null,
+     "sale_max": null,
+     "in_stock": null,
+     "method": "ID-ASIN",
+     "confidence": "exact",
+     "note": "identity from team master sheet v2 (2026-06-06); ASIN not in the 314-ASIN targeted scrape set yet (sheet says Out of Stock)"
+    }
+   }
+  },
   "YELLOW MUSTARD 5L": {
    "regimes": {
     "mrp": 2000,
-    "bau": 1249,
-    "svd": 1229,
-    "art": 1189
+    "bau": 1329,
+    "svd": 1269,
+    "art": 1369
    },
    "platforms": {
     "amazon": {
@@ -5099,15 +5639,6 @@
    "mrp": 695,
    "combo": false,
    "internal_name": "APPLE 200ML"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0CYHFFZXG",
-   "url": "https://www.amazon.in/dp/B0CYHFFZXG",
-   "title": "JIVO Healthy Wheatgrass Body Detoxifying & Immunity Booster Juice Sugar Free, 200 ml (Ginger Ale Sugar Free)",
-   "mrp": 695,
-   "combo": false,
-   "internal_name": "GINGER ALE 200ML"
   },
   {
    "platform": "amazon",
@@ -5230,15 +5761,6 @@
   },
   {
    "platform": "amazon",
-   "id": "B07WSJ45Q4",
-   "url": "https://www.amazon.in/dp/B07WSJ45Q4",
-   "title": "Jivo Extra Light Daily Cooking Olive Oil 1 Ltr (Pack of 2) | Rich Quality Healthy Cooking Oil for Indian Cuisine, Ideal for Frying, Roasting, and Baking",
-   "mrp": 2998,
-   "combo": true,
-   "internal_name": "EXTRA LIGHT 1+1L"
-  },
-  {
-   "platform": "amazon",
    "id": "B098XPFQ28",
    "url": "https://www.amazon.in/dp/B098XPFQ28",
    "title": "Jivo Extra Virgin Olive Oil, 2 Litres - Ideal for Dressings, Salads, Soups, Dips, and Marinades. Perfect for Healthy Cooking and Gourmet Delights",
@@ -5254,24 +5776,6 @@
    "mrp": null,
    "combo": true,
    "internal_name": "JEERA JUICE"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0CSPMN88F",
-   "url": "https://www.amazon.in/dp/B0CSPMN88F",
-   "title": "Jivo Natural Mineral Water | Unprocessed & Sourced Directly from Himalayas | Non-Ro Mineral Water Bottle | Quick Hydration Solution | Natural Mineral 1L Bottle",
-   "mrp": 1800,
-   "combo": false,
-   "internal_name": "WATER 1L"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0CST1ZYNY",
-   "url": "https://www.amazon.in/dp/B0CST1ZYNY",
-   "title": "Jivo - Mineral Water - 250ML",
-   "mrp": null,
-   "combo": false,
-   "internal_name": "WATER 250ML"
   },
   {
    "platform": "amazon",
@@ -5308,15 +5812,6 @@
    "mrp": 2800,
    "combo": false,
    "internal_name": "WG MANGO JUICE 200ML"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0DM2G4YCC",
-   "url": "https://www.amazon.in/dp/B0DM2G4YCC",
-   "title": "JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1)",
-   "mrp": 480,
-   "combo": false,
-   "internal_name": "WG MANGO JUICE 500ML"
   },
   {
    "platform": "amazon",
@@ -5455,16 +5950,6 @@
   },
   {
    "platform": "amazon",
-   "id": "B0992GRH3Z",
-   "url": "https://www.amazon.in/dp/B0992GRH3Z",
-   "title": "Jivo Cold Pressed Chemical Free Sunflower Oil 1 Litre | Ideal for Roasting, Frying, Baking All Types of Cuisines | Healthy Cooking Oil for Daily Use | Pack of 2 Litres",
-   "mrp": 3750,
-   "combo": true,
-   "internal_name": "SUNFLOWER 1L",
-   "note": "Sunflower 1L Pack of 2 (catalog pack 2 LTR, combo) — no SUNFLOWER combo master row"
-  },
-  {
-   "platform": "amazon",
    "id": "B0CQC1YFWL",
    "url": "https://www.amazon.in/dp/B0CQC1YFWL",
    "title": "Jivo Groundnut Oil | 5 + 1 Litre | Cold Pressed Groundnut Oil, Cold Pressed Oil, Peanut Oil, Ground Nut Oil, Natural Cooking Oil, Chemical Free (Pack of 2)",
@@ -5498,15 +5983,6 @@
    "mrp": 9798,
    "combo": true,
    "internal_name": "EXTRA VIRGIN 5+1L"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0CWNVJN3B",
-   "url": "https://www.amazon.in/dp/B0CWNVJN3B",
-   "title": "Jivo Gold Oil 1+1 Litre Pack | Blend of Rice Bran & Sunflower Oil | Refined Cooking Oil with Added Vitamins | Cholesterol-Free Edible Oil | Ideal for Deep Frying, Sautéing & Daily Cooking",
-   "mrp": 3750,
-   "combo": true,
-   "internal_name": "GOLD 1+1"
   },
   {
    "platform": "amazon",
@@ -5546,16 +6022,6 @@
   },
   {
    "platform": "amazon",
-   "id": "B09HKPSS96",
-   "url": "https://www.amazon.in/dp/B09HKPSS96",
-   "title": "JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) | Recommendable for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",
-   "mrp": 3750,
-   "combo": true,
-   "internal_name": "MUSTARD 1L",
-   "note": "Mustard 1L Pack of 2 (catalog case_pack 2) — no MUSTARD 1+1L combo master row"
-  },
-  {
-   "platform": "amazon",
    "id": "B08ZNM3KJK",
    "url": "https://www.amazon.in/dp/B08ZNM3KJK",
    "title": "Jivo Canola Cold Press Edible Oil 5 Litre with Jivo Extra Light Olive Oil 1 Litre | Cooking Oil for Daily Use | Ideal for Roasting, Frying, Baking All Types of Cuisines.",
@@ -5590,15 +6056,6 @@
    "mrp": 700,
    "combo": true,
    "internal_name": "Extra Virgin Olive Oil 200ml (Pack 2)"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0B7JJ7C9W",
-   "url": "https://www.amazon.in/dp/B0B7JJ7C9W",
-   "title": "JIVO Soyabean Cooking Oil - 1 Litre Bottles, Pack of 2 Litres | Ideal for Roasting, Frying, and Baking | Healthy Cooking Oil for Daily Use (Pack of 2)",
-   "mrp": 450,
-   "combo": true,
-   "internal_name": "soyabean-1L+1L"
   },
   {
    "platform": "amazon",
@@ -5954,15 +6411,6 @@
   },
   {
    "platform": "amazon",
-   "id": "B0CZP46SJX",
-   "url": "https://www.amazon.in/dp/B0CZP46SJX",
-   "title": "Jivo Daily Cooking Pomace Olive Oil |1 Litre | Rich in MUFA | Low in Saturated Fat (Pack of 2)",
-   "mrp": 1298,
-   "combo": true,
-   "internal_name": "JIVO POMACE 1L + 1L"
-  },
-  {
-   "platform": "amazon",
    "id": "B0GG7TPQWP",
    "url": "https://www.amazon.in/dp/B0GG7TPQWP",
    "title": "Jivo Rice Bran Oil 1 Litre Cooking Oil | Rich in Antioxidants | Ideal for Deep Frying, Sautéing & Baking | Chemical-Free (Pack of 2)",
@@ -6195,15 +6643,6 @@
    "mrp": 1275,
    "combo": true,
    "internal_name": "GOLD 5L + 1L"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0CZP31DXK",
-   "url": "https://www.amazon.in/dp/B0CZP31DXK",
-   "title": "Jivo Extra Virgin Olive Oil 1 litre | Contains Vitamin E | Low in Saturated Fat | Natural Cooking Oil, for Dressings, Salad, and Soups, Dips & Marinades [Pack of 2 (1L Pet Bottle)]",
-   "mrp": 1998,
-   "combo": true,
-   "internal_name": "EXTRA VIRGIN 1L + 1L"
   },
   {
    "platform": "amazon",
@@ -6991,24 +7430,6 @@
    "internal_name": "SANO CANOLA 1+1"
   },
   {
-   "platform": "amazon",
-   "id": "B0GZ7PXVF8",
-   "url": "https://www.amazon.in/dp/B0GZ7PXVF8",
-   "title": "Jivo Punjabi Shikanji Wheatgrass Juice | Nimbu Shikanji Masala Drink | Natural Summer Refreshment 160ml (Pack of 24)",
-   "mrp": null,
-   "combo": true,
-   "internal_name": "Jivo Punjabi Shikanji"
-  },
-  {
-   "platform": "amazon",
-   "id": "B0GZB4ZQV3",
-   "url": "https://www.amazon.in/dp/B0GZB4ZQV3",
-   "title": "Jivo Natural Mineral Water | Himalayan Origin | Non-RO & Unprocessed | Non-Carbonated & Additive-Free Packaged Water for clean hydration | 500 ml Bottle",
-   "mrp": null,
-   "combo": false,
-   "internal_name": "JIVO WATER"
-  },
-  {
    "platform": "amazon-fresh",
    "id": "B0FR5BLRH6",
    "url": "https://www.amazon.in/dp/B0FR5BLRH6",
@@ -7052,15 +7473,6 @@
    "mrp": 1120,
    "combo": false,
    "internal_name": "GROUNDNUT 1L +1L"
-  },
-  {
-   "platform": "amazon-now",
-   "id": "B0DM2G4YCC",
-   "url": "https://www.amazon.in/dp/B0DM2G4YCC",
-   "title": "Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) Mango",
-   "mrp": null,
-   "combo": false,
-   "internal_name": "WG MANGO JUICE 500ML"
   },
   {
    "platform": "flipkart",
@@ -7146,15 +7558,6 @@
   },
   {
    "platform": "flipkart",
-   "id": "EDOGYJ7SYY4H2MDH",
-   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGYJ7SYY4H2MDH",
-   "title": "JIVO Gold Blended Cooking Oil For Healthy Heart Blended Oil PET Bottle",
-   "internal_name": "GOLD 1+1L",
-   "mrp": 450,
-   "combo": true
-  },
-  {
-   "platform": "flipkart",
    "id": "EDOFRWTZZUBGDJ3Q",
    "url": "https://www.flipkart.com/product/p/itme?pid=EDOFRWTZZUBGDJ3Q",
    "title": "JIVO Cold Press Canola Oil 5 Ltr+1Ltr Canola Oil Can",
@@ -7173,15 +7576,6 @@
   },
   {
    "platform": "flipkart",
-   "id": "EDOHBH2URWDMHPXC",
-   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHBH2URWDMHPXC",
-   "title": "JIVO So Olive Rice Bran & Olive Blend Cooking Oil Nutritious Healthy Ideal Daily Use Blended Oil PET Bottle",
-   "internal_name": "SO OLIVE 1+1L",
-   "mrp": 650,
-   "combo": true
-  },
-  {
-   "platform": "flipkart",
    "id": "EDOGNZ4VHFFK3W6H",
    "url": "https://www.flipkart.com/product/p/itme?pid=EDOGNZ4VHFFK3W6H",
    "title": "JIVO Canola 1+1L+Extra Virgin 1L (PACK OF 3L) Olive Oil Plastic Bottle",
@@ -7196,15 +7590,6 @@
    "title": "JIVO Cold Pressed Pure Mustard Oil Plastic Bottle",
    "internal_name": "JIVO MUSTARD 1+1L",
    "mrp": 510,
-   "combo": true
-  },
-  {
-   "platform": "flipkart",
-   "id": "EDOGGPFZ2FCJ6UWS",
-   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGGPFZ2FCJ6UWS",
-   "title": "JIVO High in Omega-3 & PUFA | Ideal for Roasting, Frying, & Baking | Refined Cooking Soyabean Oil PET Bottle",
-   "internal_name": "SOYABEAN 1+1L",
-   "mrp": null,
    "combo": true
   },
   {
@@ -7528,15 +7913,6 @@
   },
   {
    "platform": "flipkart",
-   "id": "QWRGGC46UKQKVCES",
-   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGC46UKQKVCES",
-   "title": "JIVO Extra Light Olive Oil 1+1 Ltr Olive Oil PET Bottle",
-   "internal_name": "EXTRA LIGHT 1+1L",
-   "mrp": null,
-   "combo": true
-  },
-  {
-   "platform": "flipkart",
    "id": "QWRGGMFGPMTG7FGK",
    "url": "https://www.flipkart.com/product/p/itme?pid=QWRGGMFGPMTG7FGK",
    "title": "JIVO Extra Light 1L+Pomace 1L Cooking Olive Oil PET Bottle",
@@ -7598,15 +7974,6 @@
    "mrp": 630,
    "combo": true,
    "note": "verifier WRONG: mixed-oil combo (canola+mustard) never maps to same-product CANOLA 1+1L"
-  },
-  {
-   "platform": "flipkart",
-   "id": "QWRGEMNS9ZPZGWJH",
-   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMNS9ZPZGWJH",
-   "title": "Jivo Extra Virgin Olive Oil, 2 L for Dressings, Salad and Soups, Dips & Marinades. Olive Oil Plastic Bottle",
-   "internal_name": "Extra Virgin 1+1L",
-   "mrp": 2998,
-   "combo": true
   },
   {
    "platform": "flipkart",
@@ -8321,16 +8688,6 @@
    "combo": true
   },
   {
-   "platform": "flipkart-minutes",
-   "id": "jivo-mineral-water-1l",
-   "url": null,
-   "title": "JIVO Mineral Water",
-   "internal_name": null,
-   "mrp": 30,
-   "combo": false,
-   "note": "1L water, modal mrp 30 (variants 25/36); master has only SPRING WATER 750ML @55 -> no row"
-  },
-  {
    "platform": "zepto",
    "id": "597fe027-2e19-4a49-bc07-76ef57295ad6",
    "url": "https://www.zepto.com/pn/p/pvid/597fe027-2e19-4a49-bc07-76ef57295ad6",
@@ -8338,15 +8695,6 @@
    "mrp": 2998,
    "combo": true,
    "what": "Extra Light Olive Oil Combo 1L x 2"
-  },
-  {
-   "platform": "zepto",
-   "id": "3d955a07-72db-4d1a-9d65-42c5a8dd0641",
-   "url": "https://www.zepto.com/pn/p/pvid/3d955a07-72db-4d1a-9d65-42c5a8dd0641",
-   "title": "Jivo Pomace Olive Oil Combo",
-   "mrp": 2098,
-   "combo": true,
-   "what": "Pomace Olive Oil Combo 1L x 2"
   },
   {
    "platform": "zepto",
@@ -9131,13 +9479,6 @@
    "reason": "ID-CATALOG join (catalog pack 1 LTR, sap FG0000328) but listing mrp 2175 vs master mrp 375 (5.8x) — likely an undetected multipack (title truncated). Slot held by ID-ASIN B0FF9P7XVX."
   },
   {
-   "platform": "amazon",
-   "id": "B0CZP26VVN",
-   "title": "Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L)",
-   "candidate": "CANOLA 1+1L",
-   "reason": "Verifier-confirmed CORRECT ('Pack of 2L' = 2x1L canola, mrp 750 = master 750) but it is a DUPLICATE listing: the mapping slot is held by the ID-ASIN join B0152TWWSQ. Keep as a known secondary listing of CANOLA 1+1L."
-  },
-  {
    "platform": "amazon-fresh",
    "id": "B01IA0XK6W",
    "title": "Jivo Cooking Oil - Canola Oil, 1L Bottle",
@@ -9276,7 +9617,111 @@
   "Combos/multipacks EXCLUDED from the census: 277 deduplicated bundle/multipack listings (incl. flipkart WG 3/6-packs, TEA pack-of-2/3/4, SOYABEAN 1L 3PCS EDOGGP4FSQVM2ERR, and ~50 amazon 'X & Y each' two-product bundles mis-flagged combo=false). gaps' combo_count of 169 used a different dedupe. Suggest a dedicated combo sheet priced from component master rows.",
   "amazon also sells a WHEATGRASS 250ML flavour line (cola B09MJ3KLFP, jeera B0C1V6DG9C, lemon B09TWL9RFR, orange B09MHZLRSG) — only as multipacks, so left in the combos bucket; flag to e-comm team as an unpriced single-unit line if single packs appear.",
   "mrp_drift includes 2 amazon rows (EXTRA LIGHT 3L 2997 vs 2200, EXTRA VIRGIN 2L 2998 vs 2700) surfaced by the cross-platform census sweep; the amazon master-map fragment itself is W1's scope — dedupe on merge if W1 reports the same.",
-  "No W1/W2/W3 unpriced findings were on bus.md at finalize time; census built from dryrun.json + verify_input.json + verify_results.json only."
+  "No W1/W2/W3 unpriced findings were on bus.md at finalize time; census built from dryrun.json + verify_input.json + verify_results.json only.",
+  {
+   "platform": "amazon",
+   "id": "B0992GRH3Z",
+   "url": "https://www.amazon.in/dp/B0992GRH3Z",
+   "title": "Jivo Cold Pressed Chemical Free Sunflower Oil 1 Litre | Ideal for Roasting, Frying, Baking All Types of Cuisines | Healthy Cooking Oil for Daily Use | Pack of 2 Litres",
+   "candidate": "SUNFLOWER 1L + 1L",
+   "reason": "sheet ASIN mapped (identity), but scraped row reads '1 Litre' mrp 295 vs sheet 1L+1L mrp 550 — th=1 variant dimension suspected; confirm the ?th=1 variant is the 2-pack"
+  },
+  {
+   "platform": "amazon",
+   "id": "B0CSPMN88F",
+   "url": "https://www.amazon.in/dp/B0CSPMN88F",
+   "title": "Jivo Natural Mineral Water | Unprocessed & Sourced Directly from Himalayas | Non-Ro Mineral Water Bottle | Quick Hydration Solution | Natural Mineral 1L Bottle",
+   "candidate": "JIVO WATER 1L",
+   "reason": "sheet ASIN mapped (identity), but live MRP 1800 vs sheet 30 — census red flag: case-pack (12/24 bottles) sold per-case; per-bottle price-match must divide by case size once confirmed"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOFRXTMJGAE9DCT",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOFRXTMJGAE9DCT",
+   "title": "JIVO Cold Pressed Canola Oil 1+1 Ltr Canola Oil PET Bottle",
+   "candidate": "CANOLA 1L + 1L",
+   "reason": "same-platform collision: flipkart's single 'CANOLA 1+1L' catalog FSN is already held by master CANOLA 1+1L (B0152TWWSQ family); the new CANOLA 1L + 1L (B0CZP26VVN) is the same composition — owner to confirm whether flipkart carries a second distinct FSN or the slot stays with v1"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHYRRPJ3H7NHHN",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRRPJ3H7NHHN",
+   "title": "JIVO Pomace Olive Oil Pack of 2 Olive Oil Plastic Bottle",
+   "candidate": "JIVO POMACE 1L + 1L",
+   "reason": "TWO FSNs share internal name 'JIVO POMACE 1+1L' (collision) and this one's mrp 1899 != sheet 2098 — owner pick"
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMQJ8TQRHASY",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQJ8TQRHASY",
+   "title": "Jivo Everyday Cooking Pomace Olive Oil 1 Litre (Pack of 2) Olive Oil Plastic Bottle",
+   "candidate": "JIVO POMACE 1L + 1L",
+   "reason": "TWO FSNs share internal name 'JIVO POMACE 1+1L' (collision); this one has no live MRP — owner pick"
+  },
+  {
+   "platform": "flipkart",
+   "id": "QWRGEMQZXAYWVM4M",
+   "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQZXAYWVM4M",
+   "title": "Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) Mustard Oil Plastic Bottle",
+   "candidate": "MUSTARD 1L + 1L",
+   "reason": "3-way same-platform collision ('MUSTARD 1+1L'); mrp 510 vs sheet 500 — MRP conflict; amazon live mrp is 550 — owner pick"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOGE62HWA7UFXHW",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOGE62HWA7UFXHW",
+   "title": "JIVO Cold Pressed Pure Mustard Oil Plastic Bottle",
+   "candidate": "MUSTARD 1L + 1L",
+   "reason": "3-way same-platform collision ('JIVO MUSTARD 1+1L'); mrp 510 vs sheet 500 — MRP conflict; amazon live mrp is 550 — owner pick"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHYSJ8BZYGCSBU",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYSJ8BZYGCSBU",
+   "title": "JIVO Cold Pressed Pure 2 Liter Mustard Oil Plastic Bottle",
+   "candidate": "MUSTARD 1L + 1L",
+   "reason": "3-way same-platform collision ('JIVO MUSTARD 1+1L'); mrp None vs sheet 500 — no live MRP; amazon live mrp is 550 — owner pick"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHNFQUDF32JHZR",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHNFQUDF32JHZR",
+   "title": "JIVO First Pressed Yellow Mustard Oil 1 Litre | Chemical-Free Mustard Oil PET Bottle",
+   "candidate": "YELLOW MUSTARD 1L + 1L",
+   "reason": "internal name 'YELLOW MUSTARD 1L + 1L' is an exact match but listing mrp 790 != sheet 750 — MRP conflict, not mapped"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHF54ZZWHRJY2M",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHF54ZZWHRJY2M",
+   "title": "JIVO So Olive Rice Bran & Olive Blend Cooking Oil Nutritious Healthy Ideal Daily Use Blended Oil PET Bottle",
+   "candidate": "SO OLIVE 1L + 1L",
+   "reason": "second FSN with internal name 'SO OLIVE 1+1L' at mrp 699 vs sheet 650; the 650 twin EDOHBH2URWDMHPXC is mapped (anchor) — confirm this one as duplicate/secondary"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOHBH2FP9ES6GGA",
+   "url": "https://www.flipkart.com/product/p/itme?pid=EDOHBH2FP9ES6GGA",
+   "title": "JIVO Rice Bran Healthy Cooking Oil for Healthier Heart Rich in Antioxidants, Vitamins Rice Bran Oil PET Bottle",
+   "candidate": "RICE BRAN 1L + 1L",
+   "reason": "catalog 'RICE BRAN 2L' (single 2L bottle) carries mrp 570 == the new 1L+1L sheet mrp, but composition differs (2L bottle vs 2x1L combo) — owner-ratified rule forbids the map; confirm whether flipkart's '2L' is actually the twin-pack"
+  },
+  {
+   "platform": "flipkart",
+   "id": "EDOG2NMPHJZH6GJC",
+   "url": "https://www.flipkart.com/jivo-extra-virgin-olive-oil-pet-bottle/p/itm6e4cfbc1f88ce?pid=EDOG2NMPHJZH6GJC",
+   "title": "EXTRA VIRGIN 1+1L (blessed as EXTRA VIRGIN 2L)",
+   "candidate": "EXTRA VIRGIN 1L + 1L",
+   "reason": "FYI, mapping NOT changed: EXTRA VIRGIN 2L's owner-blessed flipkart slot is itself a 1+1L pack (mrp 3598 = 2x stale 1799). Now that a true EXTRA VIRGIN 1L + 1L master row exists (mapped to QWRGEMNS9ZPZGWJH @2998), owner may want to re-point the EV 2L slot"
+  },
+  {
+   "platform": "zepto",
+   "id": "597fe027-2e19-4a49-bc07-76ef57295ad6",
+   "url": "https://www.zepto.com/pn/p/pvid/597fe027-2e19-4a49-bc07-76ef57295ad6",
+   "title": "Jivo Extra Light Olive Oil Combo",
+   "candidate": "EXTRA LIGHT 1+1L",
+   "reason": "census-classified combo 1L x 2 (composition OK) but mrp 2998 != sheet 2798 — MRP conflict; NOTE amazon's ID-anchored live listing also says 2998, the v2 sheet MRP may be stale here"
+  }
  ],
  "master_mrp_stale": {
   "COCONUT 500ML": {
@@ -9432,6 +9877,34 @@
    "platform_mrp": 1795,
    "official_mrp": 2000,
    "consensus": "0 platforms agree with sheet"
+  },
+  {
+   "product": "EXTRA LIGHT 1+1L",
+   "platform": "amazon",
+   "platform_mrp": 2998,
+   "official_mrp": 2798,
+   "consensus": "v2 sheet vs live in-stock listing (new SKU, single platform)"
+  },
+  {
+   "product": "EXTRA VIRGIN 1L + 1L",
+   "platform": "amazon",
+   "platform_mrp": 1998,
+   "official_mrp": 2998,
+   "consensus": "v2 sheet vs live in-stock listing (new SKU, single platform)"
+  },
+  {
+   "product": "JIVO POMACE 1L + 1L",
+   "platform": "amazon",
+   "platform_mrp": 1298,
+   "official_mrp": 2098,
+   "consensus": "v2 sheet vs live in-stock listing (new SKU, single platform)"
+  },
+  {
+   "product": "SOYABEAN 1L + 1L",
+   "platform": "amazon",
+   "platform_mrp": 450,
+   "official_mrp": 1100,
+   "consensus": "v2 sheet vs live in-stock listing (new SKU, single platform)"
   }
  ]
 }
