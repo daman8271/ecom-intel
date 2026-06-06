@@ -10,11 +10,11 @@ Color rule (owner's exact words, sacred):
     live price ABOVE our reference  -> difference in GREEN
     within tolerance (MATCH)        -> plain
 
-Data comes from tools/pricematch/pricematch_core.py (the violations-engine
-core, frozen contract). Until that module lands on disk, an embedded stub
-implementing the SAME contract (same record schema, same owner-ratified
-rules) is used — the script binds to the real module automatically the
-moment `pricematch_core.py` is importable.
+Data comes EXCLUSIVELY from tools/pricematch/pricematch_core.py (the
+violations-engine core, frozen contract). If the core is missing or fails,
+NO sheet is written — a sheet must never carry non-engine numbers/colors
+(LEAD ruling). An embedded stub implementing the same contract exists for
+DEVELOPMENT ONLY, behind PM_DEV_STUB=1 (default off).
 
 Fail-safe like predict.py: ANY error -> print a warning, exit 0, workbook
 untouched (all edits happen on a temp copy, atomically replaced on success).
@@ -65,8 +65,9 @@ DISPLAY = {
 
 
 # ================================================================ stub core
-# Implements the FROZEN pricematch_core contract (agent-1 brief) so this
-# builder works before the real module lands. Same record schema, same rules:
+# DEV-ONLY (PM_DEV_STUB=1; never reached in production — see _get_core).
+# Implements the FROZEN pricematch_core contract (agent-1 brief) for working
+# on this builder without the engine. Same record schema, same rules:
 #   regime price = reference; tolerance Rs.1; BELOW = live_modal < ref-1;
 #   live basis = modal of in-stock rows; stores_below = every row < ref-1;
 #   only confidence exact/anchored participate; retired SKUs excluded;
@@ -208,16 +209,26 @@ class _StubCore(object):
 
 
 def _get_core():
-    """Real pricematch_core when importable (frozen contract), else stub."""
+    """The real pricematch_core, ALWAYS, in production.
+
+    LEAD RULING (PM_DEV_STUB gate): a core import/call failure must mean NO
+    sheet — never stub numbers/colors diverging from engine truth. The stub
+    survives only for development, behind an explicit PM_DEV_STUB=1 (default
+    off): with it set, a missing/broken core falls back to the stub.
+    """
     sys.path.insert(0, HERE)
     try:
         import pricematch_core as core
         for fn in ("load_context", "platform_comparison"):
             if not callable(getattr(core, fn, None)):
-                raise AttributeError(fn)
+                raise AttributeError(f"pricematch_core.{fn} missing")
         return core, "pricematch_core"
-    except Exception:
-        return _StubCore(), "stub"
+    except Exception as e:
+        if os.environ.get("PM_DEV_STUB") == "1":
+            return _StubCore(), "stub"
+        raise RuntimeError(
+            f"pricematch_core unavailable ({e}); refusing to write a sheet "
+            f"without the engine (dev-only: PM_DEV_STUB=1)") from e
 
 
 # ================================================================ rendering
@@ -333,25 +344,35 @@ def render(ws, platform, records, date, regime):
 
 
 # ================================================================ main
+def _platform_unmapped(platform):
+    """True iff NO sku in sku_map.json has a mapping on this platform
+    (e.g. a future platform). Pure read of the map — no stub pricing."""
+    try:
+        with open(os.path.join(HERE, "sku_map.json")) as f:
+            skus = json.load(f).get("skus") or {}
+        return not any(platform in (e.get("platforms") or {})
+                       for e in skus.values() if not e.get("retired"))
+    except Exception:
+        return False  # can't tell -> treat as a real failure (no sheet)
+
+
 def build(platform, xlsx_path, date_str):
     core, core_name = _get_core()
+    ctx = core.load_context(date_str) if date_str else core.load_context()
     try:
-        ctx = core.load_context(date_str) if date_str else core.load_context()
         records = core.platform_comparison(ctx, platform)
-        regime = (ctx.get("regime") if isinstance(ctx, dict) else None) \
-            or core.regime_for(date_str or datetime.date.today())
-        date = (ctx.get("date") if isinstance(ctx, dict) else None) \
-            or date_str or datetime.date.today()
-    except Exception as e:
-        if core_name == "stub":
+    except Exception:
+        # LEAD RULING: a core failure means NO sheet (the except in main()
+        # leaves the workbook untouched). Sole carve-out: a platform with
+        # ZERO mapped SKUs gets the static "no mapped SKUs" note — records
+        # stay empty, so no price/diff/color cell can ever come from here.
+        if not _platform_unmapped(platform):
             raise
-        # real core misbehaved (e.g. landed mid-write): fall back to the stub
-        sys.stderr.write(f"add_pricematch_sheet: pricematch_core failed "
-                         f"({e}); falling back to stub\n")
-        core, core_name = _StubCore(), "stub"
-        ctx = core.load_context(date_str)
-        records = core.platform_comparison(ctx, platform)
-        regime, date = ctx["regime"], ctx["date"]
+        records = []
+    regime = (ctx.get("regime") if isinstance(ctx, dict) else None) \
+        or core.regime_for(date_str or datetime.date.today())
+    date = (ctx.get("date") if isinstance(ctx, dict) else None) \
+        or date_str or datetime.date.today()
 
     # All edits on a temp copy; atomic replace only on full success.
     # Dotted hidden name: must end .xlsx for openpyxl, and must NOT match the
