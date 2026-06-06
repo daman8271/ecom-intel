@@ -153,6 +153,41 @@ Unpriced); freeze panes on every sheet (B5 + 4×A2); fills meaningful — green 
 
 **W3 sign-off: PASS. The LEAD may send `Jivo-SKU-Master-Map-2026-06-06.xlsx` to the team.**
 
+---
+
+## Addendum — PUNKIRAT-CHECKS (e-com dept feedback via owner, added post-sign-off)
+
+Four checks over the title cells of ALL 5 sheets (Punkirat Singh's screenshot complaints:
+internal names / URL-slugs / `(blessed)`-style annotations posing as titles in the OLD xlsx).
+
+Counts per sheet (title cells scanned → violations):
+
+| Sheet | title cells | (1) internal-shape | (2) slug | (3) annotation | (4) real-title where evidence exists |
+|---|---|---|---|---|---|
+| Master Map | 0 (no title col) | 0 | 0 | 0 | n/a |
+| Listing Details | 286 | 0 | 0 | 0 | 282/282 exact (4 justified ⚠) |
+| Review (confirm these) | 45 | 0 | 0 | **1 — D14** | 30/30 exact |
+| MRP integrity | 0 (no title col) | 0 | 0 | 0 | n/a |
+| Unpriced (no master row) | 368 | 0* | 0 | 0 | 334/334 exact |
+
+\* 16 col-A internal-shaped strings are **family-header rows** (no listing id — census
+"add to master" suggestions, the family name IS the content, by design). The 5 flipkart
+listings with NO on-page title anywhere (`fk_name` empty in result.json — disclosed on bus
+16:10:42) render `<internal name> ⚠ internal name (listing not scraped)` — explicitly
+marked, never posing as a title, and check 4 is satisfied (result.json has nothing).
+
+**The one violation — Review!D14** (`EXTRA LIGHT 3L` / flipkart, pid unresolvable offline):
+the "exact listing title" cell reads
+`jivo-extra-light-3-litre-cooking-oil-olive-plastic-bottle (owner sheet URL)` —
+a URL-slug posing as a title PLUS a parenthetical annotation, i.e. Punkirat's classes (b)+(c)
+in one cell. Inconsistent with W2's own (correct) idiom for the 4 never-scraped amazon ASINs
+("⚠ title not captured"). Fix = render that cell as
+`⚠ title not captured (owner-sheet URL carries no pid)` and keep the slug/URL in the
+url/reason columns. One-cell builder fix + rebuild requested from W2 on the bus;
+re-verified result will be appended below.
+
+<PUNKIRAT RE-VERIFY RESULT PENDING>
+
 Non-blocking follow-ups (no action required before shipping):
 1. zepto pomace-combo sale 758 / in_stock 1 exists in `platforms/zepto/result.json` but not in
    the map entry (W1 used the frozen census) — available enrichment.
