@@ -704,9 +704,19 @@ def main():
     ap = argparse.ArgumentParser(description="Build the master Price Match workbook")
     ap.add_argument("--date", help="YYYY-MM-DD (default: today)")
     ap.add_argument("--out", help="output directory (default: this script's dir)")
+    ap.add_argument("--platforms", help="CSV subset edition (e.g. amazon,amazon-now); default = all")
+    ap.add_argument("--label", help="edition label for the filename (e.g. Amazon)")
     args = ap.parse_args()
 
     date, regime, comps, summ, sku_map = gather(args.date)
+    if args.platforms:
+        # Scoped edition: shrink the canonical column list IN PLACE (all sheet fns read it),
+        # filter comps (flatten() has a defensive catch-all that would re-add others), and
+        # drop the engine's GLOBAL summary so exposure falls back to the scoped sum.
+        subset = [s.strip() for s in args.platforms.split(",") if s.strip()]
+        CANONICAL[:] = [p for p in CANONICAL if p in subset]
+        comps = {p: r for p, r in comps.items() if p in subset}
+        summ = {}
     flat, by_key = flatten(comps)
     kpi = kpis_of(flat, summ, sku_map)
     vrows = store_violations(flat)
@@ -721,7 +731,8 @@ def main():
     wb.active = 0
 
     out_dir = args.out or HERE
-    xlsx = os.path.join(out_dir, f"Jivo-Price-Match-{date}.xlsx")
+    tag = f"{args.label}-" if args.label else ""
+    xlsx = os.path.join(out_dir, f"Jivo-Price-Match-{tag}{date}.xlsx")
     wb.save(xlsx)
     # Byte-stability (LEAD ruling 2026-06-06): pin doc props + zip mtimes to the
     # report date (midnight IST) so rebuilding the same day is byte-identical.
