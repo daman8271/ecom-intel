@@ -64,6 +64,8 @@ TONES = {                # kpi_card / big_number / chip semantic tones
 
 # ------------------------------------------------------- number formats
 # Indian grouping via conditional sections: crore / lakh / thousands.
+# (Excel allows max 2 conditions + fallback. NOTE: negatives land in the
+# fallback section UNSIGNED — fine for prices/counts, don't use for deltas.)
 FMT_INR      = '[>=10000000]"₹"##\\,##\\,##\\,##0;[>=100000]"₹"##\\,##\\,##0;"₹"#,##0'
 FMT_INR_DEC  = '[>=10000000]"₹"##\\,##\\,##\\,##0.00;[>=100000]"₹"##\\,##\\,##0.00;"₹"#,##0.00'
 FMT_INT_IN   = '[>=10000000]##\\,##\\,##\\,##0;[>=100000]##\\,##\\,##0;#,##0'
@@ -79,6 +81,13 @@ _WHITE_FILL = PatternFill("solid", fgColor="FFFFFF")
 def _tone(tone):
     """Accept a semantic tone name or a raw hex string."""
     return TONES.get(tone, tone or INK)
+
+
+def _argb(hex6):
+    """CF rule colors should be 8-digit ARGB; openpyxl 00-prefixes 6-digit hex
+    (alpha 0 — Excel happens to ignore it, but FF is the documented form)."""
+    h = str(hex6).lstrip("#").upper()
+    return h if len(h) == 8 else "FF" + h
 
 
 # ---------------------------------------------------------------- canvas
@@ -264,16 +273,16 @@ def data_bar(ws, ref, color=BRAND, vmin=0, vmax=None):
         start_type="num", start_value=vmin,
         end_type=("max" if vmax is None else "num"),
         end_value=vmax,
-        color=color, showValue=True, minLength=None, maxLength=None)
+        color=_argb(color), showValue=True, minLength=None, maxLength=None)
     ws.conditional_formatting.add(ref, rule)
 
 
 def color_scale(ws, ref, low=RED_FILL_HEX, mid="FFFFFF", high=GREEN_FILL_HEX):
     """3-color scale (default red→white→green, classic compliance read)."""
     ws.conditional_formatting.add(ref, ColorScaleRule(
-        start_type="min", start_color=low,
-        mid_type="percentile", mid_value=50, mid_color=mid,
-        end_type="max", end_color=high))
+        start_type="min", start_color=_argb(low),
+        mid_type="percentile", mid_value=50, mid_color=_argb(mid),
+        end_type="max", end_color=_argb(high)))
 
 
 def icon_set(ws, ref, style="3TrafficLights1", values=(0, 33, 67), pct=True,
@@ -324,6 +333,30 @@ def spark_cell(ws, r, c, text, tone="brand", size=11):
 
 
 # ---------------------------------------------------------------- extras
+def excel_app_workaround():
+    """
+    openpyxl >=3.1.4 stamps docProps/app.xml with
+    'Microsoft Excel Compatible / Openpyxl 3.1.5'; Excel then mis-renders
+    openpyxl-DRAWN native charts (tiny overlapping titles, missing axes).
+    Call ONCE, before save, in the one stage allowed to draw charts
+    (predict.py Leadership View) — it patches the stamp to 'Microsoft Excel'
+    for every subsequent Workbook save in the process. No-op for chart-free
+    workbooks; harmless to call twice.
+    Ref: https://groups.google.com/g/openpyxl-users/c/khC6BTqaH3Y
+    """
+    from openpyxl.packaging.extended import ExtendedProperties
+    if getattr(ExtendedProperties, "_xd_app_patched", False):
+        return
+    orig = ExtendedProperties.__init__
+
+    def patched(self, *a, **kw):
+        orig(self, *a, **kw)
+        self.Application = "Microsoft Excel"
+
+    ExtendedProperties.__init__ = patched
+    ExtendedProperties._xd_app_patched = True
+
+
 def note(ws, r, c, text, author="ecom-intel"):
     """Cell comment for drill-down detail (hover in Excel). Round-trip safe."""
     ws.cell(r, c).comment = Comment(text, author)
