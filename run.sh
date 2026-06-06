@@ -42,6 +42,11 @@ echo "[$RUN_ID] adding predictions sheet ..."
 python3 "$DIR/tools/predict.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
 cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 
+# ---- Price Match sheet: live vs our reference for today's regime (best-effort). ----
+# Guarded: if the tool is absent this is a no-op and behavior is exactly as before.
+[ -f "$DIR/tools/pricematch/add_pricematch_sheet.py" ] && python3 "$DIR/tools/pricematch/add_pricematch_sheet.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
+cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
+
 # ---- Review: deterministic checks + optional cheap LLM. Never fail the run. ----
 # Writes reviews/<P>-<RUN_ID>.json (verdict OK|SUSPECT|BROKEN). The :30 cron
 # healthcheck reads that verdict to self-heal. exit!=0 here just means BROKEN.
