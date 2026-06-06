@@ -45,6 +45,11 @@ cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 # ---- Price Match sheet: live vs our reference for today's regime (best-effort). ----
 # Guarded: if the tool is absent this is a no-op and behavior is exactly as before.
 [ -f "$DIR/tools/pricematch/add_pricematch_sheet.py" ] && python3 "$DIR/tools/pricematch/add_pricematch_sheet.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
+
+# ---- Leadership View: regenerate the FIRST sheet LAST (best-effort). ----
+# MUST stay the final workbook-touching step: it redraws the chart-free durable
+# dashboard so no earlier openpyxl round-trip / viewer quirk can blank page 1.
+[ -f "$DIR/tools/report_dashboard.py" ] && python3 "$DIR/tools/report_dashboard.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
 cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 
 # ---- Review: deterministic checks + optional cheap LLM. Never fail the run. ----
