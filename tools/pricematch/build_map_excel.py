@@ -134,7 +134,10 @@ def exact_title(plat, le):
     if plat in AMZ_FAMILY and rid is not None and str(rid) in master_titles:
         title_src["master-sheet"] += 1; return master_titles[str(rid)]
     title_src["internal-last-resort"] += 1
-    return le.get("item") or le.get("internal_name") or ""
+    fallback = le.get("item") or le.get("internal_name")
+    # never present an internal name as if it were the platform title
+    return f"{fallback} ⚠ internal name (listing not yet scraped)" if fallback \
+        else "⚠ title not captured (listing not yet scraped)"
 
 
 # ---------------- Excel ----------------
@@ -186,8 +189,12 @@ for p in products:
         le = (e.get("platforms") or {}).get(plat)
         if not le:
             continue
-        val = le.get("sale_modal") if le.get("sale_modal") is not None else \
-            ("OOS" if not le.get("in_stock") else "listed")
+        if le.get("sale_modal") is not None:
+            val = le.get("sale_modal")
+        elif le.get("in_stock") is None:   # sheet-asserted listing, never scraped
+            val = "listed"
+        else:
+            val = "listed" if le.get("in_stock") else "OOS"
         if le.get("url"):
             cell.value = val
             cell.hyperlink = le["url"]; cell.font = BLU
@@ -212,7 +219,8 @@ for p in products:
             continue
         ws.append([p, plat, le.get("id"), le.get("url"), exact_title(plat, le),
                    le.get("mrp"), le.get("sale_modal"), le.get("sale_min"), le.get("sale_max"),
-                   "Y" if le.get("in_stock") else "N", le.get("method"), le.get("confidence"),
+                   "?" if le.get("in_stock") is None else ("Y" if le.get("in_stock") else "N"),
+                   le.get("method"), le.get("confidence"),
                    le.get("note", "")])
         for c in ws[ws.max_row]: c.font = SM
         if le.get("url"):
