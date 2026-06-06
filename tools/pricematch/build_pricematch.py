@@ -671,6 +671,34 @@ def tg_summary(date, regime, kpi, flat):
     return "\n".join(lines)
 
 
+# ---------------------------------------------------------------- byte-stability
+def stabilize_xlsx(path, stamp, props):
+    """LEAD ruling 2026-06-06: same date ⇒ byte-identical workbook.
+
+    openpyxl re-stamps properties.modified=now inside save() AND embeds the
+    wall-clock in every zip entry's local header, so pinning wb.properties
+    before save is not enough. Rewrite the saved zip deterministically:
+    every entry's mtime pinned to the report date, and docProps/core.xml
+    re-serialized (via openpyxl's own tostring) with created=modified=stamp.
+    """
+    import zipfile
+    from openpyxl.xml.functions import tostring
+
+    props.created = stamp
+    props.modified = stamp
+    core_xml = tostring(props.to_tree())
+    with zipfile.ZipFile(path) as zin:
+        items = [(i.filename, zin.read(i.filename)) for i in zin.infolist()]
+    dt = (stamp.year, stamp.month, stamp.day, 0, 0, 0)
+    with zipfile.ZipFile(path, "w", zipfile.ZIP_DEFLATED, allowZip64=True) as zout:
+        for name, data in items:
+            if name == "docProps/core.xml":
+                data = core_xml
+            zi = zipfile.ZipInfo(name, date_time=dt)
+            zi.compress_type = zipfile.ZIP_DEFLATED
+            zout.writestr(zi, data)
+
+
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser(description="Build the master Price Match workbook")
@@ -695,6 +723,9 @@ def main():
     out_dir = args.out or HERE
     xlsx = os.path.join(out_dir, f"Jivo-Price-Match-{date}.xlsx")
     wb.save(xlsx)
+    # Byte-stability (LEAD ruling 2026-06-06): pin doc props + zip mtimes to the
+    # report date (midnight IST) so rebuilding the same day is byte-identical.
+    stabilize_xlsx(xlsx, datetime.datetime.fromisoformat(date), wb.properties)
 
     sidecar = {
         "date": date, "regime": regime, "kpis": kpi,
