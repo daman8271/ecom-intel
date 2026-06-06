@@ -186,7 +186,35 @@ in one cell. Inconsistent with W2's own (correct) idiom for the 4 never-scraped 
 url/reason columns. One-cell builder fix + rebuild requested from W2 on the bus;
 re-verified result will be appended below.
 
-<PUNKIRAT RE-VERIFY RESULT PENDING>
+### Re-verify after W2's title-hygiene rebuild (commit f41a35a4) — **PASS**
+
+Full harness re-run on the rebuilt file: **FAIL=0** (286/286 hyperlinked, titles exact,
+18/18 new SKUs, sanity all green — no regression). PUNKIRAT counts per sheet, final:
+
+| Sheet | title cells | internal | slug | annotation | real-title where evidence exists |
+|---|---|---|---|---|---|
+| Master Map | 0 (no title col) | 0 | 0 | 0 | n/a |
+| Listing Details | 282 | 0 | 0 | 0 | 229/229 (bigbasket = brand-prefixed live API desc, verified) |
+| Review (confirm these) | 32 | 0 | 0 | 0 | 30/30 |
+| MRP integrity | 0 (no title col) | 0 | 0 | 0 | n/a |
+| Unpriced (no master row) | 368 | 0 | 0 | 0 | 334/334 |
+
+- **Review!D14 fixed**: slug + `(owner sheet URL)` gone. The title cell now carries the
+  e-com master sheet's own title for EXTRA LIGHT 3L, with provenance disclosed in the
+  reason column ("title from e-com master sheet (listing not resolvable offline)") — the
+  chartered master-sheet fallback, annotations where the owner ordered them. I traced the
+  string: it is the master/amazon family title (B097ZZTW5C), NOT a fabrication.
+  *Residual judgment note for the LEAD*: it is a cross-platform title on a flipkart row —
+  the on-page flipkart name may differ when the owner clicks through; the reason column
+  says so, and no offline source can do better (URL carries no pid).
+- The 4 never-scraped amazon combos: title cells now **empty** with a disclosing note
+  ("identity from team master sheet v2; ASIN not in the 314-ASIN targeted scrape") —
+  honest, nothing posing as a title; Master Map cells unchanged ("listed", linked).
+- The 5 fk_name-less Unpriced rows now read "(title not captured)" — status, not a fake title.
+- MRP integrity r2 (COCONUT 500ML) + r6 (SANO POMACE 5L): "blessed" jargon reworded to
+  "owner-verified" — team-facing language, living in the evidence column where it belongs.
+
+**PUNKIRAT-CHECKS final verdict: PASS — 0 violations across all 5 sheets. Overall PASS stands.**
 
 Non-blocking follow-ups (no action required before shipping):
 1. zepto pomace-combo sale 758 / in_stock 1 exists in `platforms/zepto/result.json` but not in
