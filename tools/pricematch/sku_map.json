@@ -424,8 +424,8 @@
      ]
     },
     "flipkart-minutes": {
-     "id": "jivo-cold-press-combo-canola-oil-plastic-bottle-2l",
-     "url": null,
+     "id": "EDOF25FJGBH5EDS3",
+     "url": "https://www.flipkart.com/jivo-cold-press-combo-canola-oil-plastic-bottle/p/itm93f5608b041a0?pid=EDOF25FJGBH5EDS3",
      "title": "JIVO Cold Press Combo Canola Oil Plastic Bottle",
      "item": null,
      "sap_code": null,
@@ -438,7 +438,8 @@
      "stores_seen": 2,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); same-product combo: pack \"2 x 1 L\" canola only -> CANOLA 1+1L (verifier precedent); no mrp from API, sale 575"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); same-product combo: pack \"2 x 1 L\" canola only -> CANOLA 1+1L (verifier precedent); no mrp from API, sale 575",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "zepto": {
      "id": "50b56b7f-3d9f-45c7-8161-c2327e8db652",
@@ -533,8 +534,8 @@
      ]
     },
     "flipkart-minutes": {
-     "id": "jivo-cold-press-canola-oil-plastic-bottle-1l",
-     "url": null,
+     "id": "EDOG9BP8GEWFW9XC",
+     "url": "https://www.flipkart.com/jivo-cold-press-canola-oil-plastic-bottle/p/itm154321724e08f?pid=EDOG9BP8GEWFW9XC",
      "title": "JIVO Cold Press Canola Oil Plastic Bottle",
      "item": null,
      "sap_code": null,
@@ -547,7 +548,8 @@
      "stores_seen": 65,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 375 == master; minor per-store mrp variants {375: 64, 330: 1}"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 375 == master; minor per-store mrp variants {375: 64, 330: 1}",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "blinkit": {
      "id": "407851",
@@ -572,7 +574,9 @@
      "sale_max": 283.99,
      "in_stock": true,
      "method": "AUTO-NAME+MRP",
-     "confidence": "exact"
+     "confidence": "exact",
+     "ean": "8905604001083",
+     "id_folded": "ean attached 2026-06-06 (gate-passed)"
     }
    }
   },
@@ -854,7 +858,9 @@
      "sale_max": 1366,
      "in_stock": true,
      "method": "AUTO-NAME+MRP",
-     "confidence": "exact"
+     "confidence": "exact",
+     "ean": "8905604000994",
+     "id_folded": "ean attached 2026-06-06 (gate-passed)"
     }
    }
   },
@@ -1481,8 +1487,8 @@
      ]
     },
     "flipkart-minutes": {
-     "id": "jivo-extra-light-olive-oil-can-2l",
-     "url": null,
+     "id": "EDOGHZTJZEYQJGME",
+     "url": "https://www.flipkart.com/jivo-extra-light-olive-oil-can/p/itm013dc71f38fe9?pid=EDOGHZTJZEYQJGME",
      "title": "JIVO Extra Light Olive Oil Can",
      "item": null,
      "sap_code": null,
@@ -1495,7 +1501,8 @@
      "stores_seen": 36,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 2799 == master"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 2799 == master",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "zepto": {
      "id": "29e72c8c-7ff6-46e2-9721-ca4e9f612e98",
@@ -2547,8 +2554,8 @@
      ]
     },
     "flipkart-minutes": {
-     "id": "jivo-pomace-olive-oil-plastic-bottle-1l",
-     "url": null,
+     "id": "EDOFTHNH4YZ7GDHS",
+     "url": "https://www.flipkart.com/jivo-pomace-olive-oil-plastic-bottle/p/itm0e69157c71cd7?pid=EDOFTHNH4YZ7GDHS",
      "title": "JIVO Pomace Olive Oil Plastic Bottle",
      "item": null,
      "sap_code": null,
@@ -2561,7 +2568,8 @@
      "stores_seen": 31,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 1049 == master; minor per-store mrp variants {1049: 27, 1019: 2, 1043: 2}"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 1049 == master; minor per-store mrp variants {1049: 27, 1019: 2, 1043: 2}",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "zepto": {
      "id": "ac9a7dd8-489b-4475-a14d-27ae393a5505",
@@ -2760,8 +2768,8 @@
      ]
     },
     "flipkart-minutes": {
-     "id": "jivo-pomace-olive-oil-tin-5l",
-     "url": null,
+     "id": "EDOFTHNH3T8PATGW",
+     "url": "https://www.flipkart.com/jivo-pomace-olive-oil-tin/p/itm577d630310a40?pid=EDOFTHNH3T8PATGW",
      "title": "JIVO Pomace Olive Oil Tin",
      "item": null,
      "sap_code": null,
@@ -2774,7 +2782,8 @@
      "stores_seen": 12,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 4999 == master"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 4999 == master",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "zepto": {
      "id": "a81945f0-43ac-4970-82b4-c6c8986ee9ae",
@@ -2882,8 +2891,8 @@
      ]
     },
     "flipkart-minutes": {
-     "id": "jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l",
-     "url": null,
+     "id": "EDOGDVWYGJNDYRQP",
+     "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-pack-1-mustard-oil-plastic-bottle/p/itm7dfb8c40f2e72?pid=EDOGDVWYGJNDYRQP",
      "title": "JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle",
      "item": null,
      "sap_code": null,
@@ -2896,7 +2905,8 @@
      "stores_seen": 51,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 255 == master; minor per-store mrp variants {255: 49, 225: 2}"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); modal mrp 255 == master; minor per-store mrp variants {255: 49, 225: 2}",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "zepto": {
      "id": "89804a83-79f3-45c6-b940-9c395451dffa",
@@ -2911,8 +2921,8 @@
      "confidence": "exact"
     },
     "blinkit": {
-     "id": "jivo-kachi-ghani-cold-pressed-mustard-oil-1l",
-     "url": null,
+     "id": "540835",
+     "url": "https://blinkit.com/prn/jivo-kachi-ghani-cold-pressed-mustard-oil-cold-pressed-saaron-da-tel/prid/540835",
      "title": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
      "mrp": 255,
      "sale_modal": 171,
@@ -2921,7 +2931,8 @@
      "in_stock": true,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "prid unrecoverable: blinkit scraper captures card innerText only, no raw artifacts on disk, no owner URL in master sheet"
+     "note": "prid unrecoverable: blinkit scraper captures card innerText only, no raw artifacts on disk, no owner URL in master sheet",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "bigbasket": {
      "id": "40166395",
@@ -3047,8 +3058,8 @@
      "note": "blessed pid present in scrape but unpriced/OOS today (no mrp/sale)."
     },
     "flipkart-minutes": {
-     "id": "jivo-cold-pressed-pure-cooking-mustard-oil-can-4l",
-     "url": null,
+     "id": "EDOHAUNQSDFDYPFC",
+     "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-mustard-oil-can/p/itmbc19c03fa6ee9?pid=EDOHAUNQSDFDYPFC",
      "title": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
      "item": null,
      "sap_code": null,
@@ -3061,7 +3072,8 @@
      "stores_seen": 4,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); RISKY duplicate RESOLVED as genuinely distinct from the 5L can: API pack subtitle says \"4 L\" (slug suffix derives from it), mrp 1000 == MUSTARD 4L master vs 1250 == MUSTARD 5L master, sale 677 vs 960, seen at 4 stores across Delhi+Ludhiana (no store carries both sizes - hub assortment)."
+     "note": "no listing id recoverable from the scraper (id = canonical slug); RISKY duplicate RESOLVED as genuinely distinct from the 5L can: API pack subtitle says \"4 L\" (slug suffix derives from it), mrp 1000 == MUSTARD 4L master vs 1250 == MUSTARD 5L master, sale 677 vs 960, seen at 4 stores across Delhi+Ludhiana (no store carries both sizes - hub assortment).",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     }
    }
   },
@@ -3185,8 +3197,8 @@
      ]
     },
     "flipkart-minutes": {
-     "id": "jivo-cold-pressed-pure-cooking-mustard-oil-can-5l",
-     "url": null,
+     "id": "EDOGDVWEUPPWVGED",
+     "url": "https://www.flipkart.com/jivo-cold-pressed-pure-cooking-mustard-oil-can/p/itmbc19c03fa6ee9?pid=EDOGDVWEUPPWVGED",
      "title": "JIVO Cold Pressed Pure Cooking Mustard Oil Can",
      "item": null,
      "sap_code": null,
@@ -3199,7 +3211,8 @@
      "stores_seen": 21,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 1250 == master"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 1250 == master",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "zepto": {
      "id": "275d43f8-2da4-4d9e-8873-e04fcaf5c073",
@@ -3214,8 +3227,8 @@
      "confidence": "anchored"
     },
     "blinkit": {
-     "id": "jivo-kachi-ghani-cold-pressed-mustard-oil-5l",
-     "url": null,
+     "id": "540970",
+     "url": "https://blinkit.com/prn/jivo-kachi-ghani-cold-pressed-mustard-oil-cold-pressed-saaron-da-tel/prid/540970",
      "title": "Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel)",
      "mrp": 1250,
      "sale_modal": 868,
@@ -3224,7 +3237,8 @@
      "in_stock": true,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "prid unrecoverable: blinkit scraper captures card innerText only, no raw artifacts on disk, no owner URL in master sheet"
+     "note": "prid unrecoverable: blinkit scraper captures card innerText only, no raw artifacts on disk, no owner URL in master sheet",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "bigbasket": {
      "id": "40166396",
@@ -4335,7 +4349,9 @@
      "sale_max": 55,
      "in_stock": false,
      "method": "VERIFY-CORRECTED+MRP",
-     "confidence": "anchored"
+     "confidence": "anchored",
+     "ean": "8905604001847",
+     "id_folded": "ean attached 2026-06-06 (gate-passed)"
     }
    }
   },
@@ -4410,8 +4426,8 @@
      "confidence": "exact"
     },
     "flipkart-minutes": {
-     "id": "jivo-soybean-oil-soyabean-oil-pouch-1l",
-     "url": null,
+     "id": "EDOGPX8ZD2ZYPH6U",
+     "url": "https://www.flipkart.com/jivo-soybean-oil-soyabean-pouch/p/itm07811dbc08ff2?pid=EDOGPX8ZD2ZYPH6U",
      "title": "JIVO Soybean Oil Soyabean Oil Pouch",
      "item": null,
      "sap_code": null,
@@ -4424,7 +4440,8 @@
      "stores_seen": 24,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 199 == master"
+     "note": "no listing id recoverable from the scraper (id = canonical slug); mrp 199 == master",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     }
    }
   },
@@ -4620,8 +4637,8 @@
      "confidence": "exact"
     },
     "blinkit": {
-     "id": "jivo-cold-pressed-sunflower-oil-1l",
-     "url": null,
+     "id": "628632",
+     "url": "https://blinkit.com/prn/jivo-cold-pressed-sunflower-oil/prid/628632",
      "title": "Jivo Cold Pressed Sunflower Oil",
      "mrp": 275,
      "sale_modal": 207,
@@ -4630,7 +4647,8 @@
      "in_stock": true,
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
-     "note": "prid unrecoverable: blinkit scraper captures card innerText only (no product links), no raw artifacts on disk, no owner URL in master sheet"
+     "note": "prid unrecoverable: blinkit scraper captures card innerText only (no product links), no raw artifacts on disk, no owner URL in master sheet",
+     "id_folded": "2026-06-06 first post-patch run (gate-passed)"
     },
     "bigbasket": {
      "id": "40249993",
