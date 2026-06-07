@@ -5,8 +5,8 @@ display_name: "Jivo Pomace Cooking Olive Oil 5 Litre with Cold Pressed Canola oi
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-06
-observations: 6
+last_seen: 2026-06-07
+observations: 7
 min_price: 2210
 max_price: 2210
 latest_price: 2210
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹2210 (58.9% off)
 
-## Runs that observed this SKU (6)
-[[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (7)
+[[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (6 observations)
+## Price history (7 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -37,6 +37,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1602,2026-06-05,amazon,All India,-,2210,5374,58.9,1
 2026-06-06-0702,2026-06-06,amazon,All India,-,2210,5374,58.9,1
 2026-06-06-1201,2026-06-06,amazon,All India,-,2210,5374,58.9,1
+2026-06-07-0908,2026-06-07,amazon,All India,-,2210,5374,58.9,1
 ```
 
 ---

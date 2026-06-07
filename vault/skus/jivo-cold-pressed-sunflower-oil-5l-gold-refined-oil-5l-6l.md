@@ -5,11 +5,11 @@ display_name: "Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Gold Refined Edibl
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-06
-observations: 6
+last_seen: 2026-06-07
+observations: 7
 min_price: 1087
-max_price: 1087
-latest_price: 1087
+max_price: 1114
+latest_price: 1114
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Vitamin A & D Fortified | for Frying, Roasting & Daily Use | Suitable for Everyday Kitchen Use (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1087 (18.0% off)
+- [[amazon]] — latest ₹1114 (15.9% off)
 
-## Runs that observed this SKU (6)
-[[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (7)
+[[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (6 observations)
+## Price history (7 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -37,6 +37,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1602,2026-06-05,amazon,All India,-,1087,1325,18,1
 2026-06-06-0702,2026-06-06,amazon,All India,-,,1300,0,0
 2026-06-06-1201,2026-06-06,amazon,All India,-,,1300,0,0
+2026-06-07-0908,2026-06-07,amazon,All India,-,1114,1325,15.9,1
 ```
 
 ---

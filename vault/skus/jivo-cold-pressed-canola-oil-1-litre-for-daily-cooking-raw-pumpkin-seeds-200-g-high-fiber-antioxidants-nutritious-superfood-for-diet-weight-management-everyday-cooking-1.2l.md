@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-pumpkin-seeds-200-g-high-fiber-antioxidants-nutritious-superfood-for-diet-weight-management-everyday-cooking-1.2l
-display_name: "Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Pumpkin Seeds 200 g | High Fiber & Antioxidants | Nutritious Superfood for Diet, Weight Management & Everyday Cooking (Combo Pack) (1LTR + 200 GM (BUNDLE))"
+display_name: Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Pumpkin Seeds 200 G High Fiber Antioxidants Nutritious Superfood For Diet Weight Management Everyday Cooking 1.2l
 platforms:
   - amazon
 first_seen: 2026-06-05
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Pumpkin Seeds 200 g | High Fiber & Antioxidants | Nutritious Superfood for Diet, Weight Management & Everyday Cooking (Combo Pack) (1LTR + 200 GM (BUNDLE))**
+**Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Pumpkin Seeds 200 G High Fiber Antioxidants Nutritious Superfood For Diet Weight Management Everyday Cooking 1.2l**
 
 ## Sold on
 - [[amazon]]

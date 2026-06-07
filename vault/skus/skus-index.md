@@ -1,13 +1,13 @@
 ---
 type: moc
 title: SKUs
-sku_count: 1001
+sku_count: 1003
 tags:
   - moc
   - type/sku-moc
 ---
 
-# SKUs — Map of Content (1001 unique)
+# SKUs — Map of Content (1003 unique)
 
 Up: [[index]]
 
@@ -106,12 +106,12 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-press-soyabean5l-and-pomace-oil-1l-5l]] — Jivo Cold Press Soyabean5l And Pomace Oil 1l 5l
 - [[jivo-cold-pressed-canola-extra-virgin-olive-oil-1l-each-1l]] — Jivo Cold Pressed Canola Extra Virgin Olive Oil 1l Each 1l
 - [[jivo-cold-pressed-canola-extra-virgin-olive-oil-1l-each-2l]] — Jivo Cold Pressed Canola & Extra Virgin Olive Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))
-- [[jivo-cold-pressed-canola-oil-1-l-for-daily-cooking-raw-basil-seeds-200-g-high-fibre-omega-3-ideal-for-frying-baking-weight-management-1.2l]] — Jivo Cold Pressed Canola Oil 1 L for Daily Cooking + Raw Basil Seeds (Sabja) 200 g | High Fibre & Omega 3 | Ideal for Frying, Baking & Weight Management (Combo Pack) (1LTR + 200 GM (BUNDLE))
-- [[jivo-cold-pressed-canola-oil-1-l-for-daily-cooking-raw-basil-seeds-200-g-high-fibre-omega-3-ideal-for-frying-baking-weight-management-1l]] — Jivo Cold Pressed Canola Oil 1 L For Daily Cooking Raw Basil Seeds 200 G High Fibre Omega 3 Ideal For Frying Baking Weight Management 1l
-- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-pumpkin-seeds-200-g-high-fiber-antioxidants-nutritious-superfood-for-diet-weight-management-everyday-cooking-1.2l]] — Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Pumpkin Seeds 200 g | High Fiber & Antioxidants | Nutritious Superfood for Diet, Weight Management & Everyday Cooking (Combo Pack) (1LTR + 200 GM (BUNDLE))
-- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-pumpkin-seeds-200-g-high-fiber-antioxidants-nutritious-superfood-for-diet-weight-management-everyday-cooking-1l]] — Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Pumpkin Seeds 200 G High Fiber Antioxidants Nutritious Superfood For Diet Weight Management Everyday Cooking 1l
-- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-sunflower-seeds-200-g-high-protein-antioxidants-healthy-snacking-for-diet-weight-management-everyday-wellness-1.2l]] — Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Sunflower Seeds 200 g | High Protein & Antioxidants | Healthy Snacking for Diet, Weight Management & Everyday Wellness (Combo Pack) (1LTR + 200 GM (BUNDLE))
-- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-sunflower-seeds-200-g-high-protein-antioxidants-healthy-snacking-for-diet-weight-management-everyday-wellness-1l]] — Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Sunflower Seeds 200 G High Protein Antioxidants Healthy Snacking For Diet Weight Management Everyday Wellness 1l
+- [[jivo-cold-pressed-canola-oil-1-l-for-daily-cooking-raw-basil-seeds-200-g-high-fibre-omega-3-ideal-for-frying-baking-weight-management-1.2l]] — Jivo Cold Pressed Canola Oil 1 L For Daily Cooking Raw Basil Seeds 200 G High Fibre Omega 3 Ideal For Frying Baking Weight Management 1.2l
+- [[jivo-cold-pressed-canola-oil-1-l-for-daily-cooking-raw-basil-seeds-200-g-high-fibre-omega-3-ideal-for-frying-baking-weight-management-1l]] — Jivo Cold Pressed Canola Oil 1 L for Daily Cooking + Raw Basil Seeds (Sabja) 200 g | High Fibre & Omega 3 | Ideal for Frying, Baking & Weight Management (Combo Pack) (1LTR + 200 GM (BUNDLE))
+- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-pumpkin-seeds-200-g-high-fiber-antioxidants-nutritious-superfood-for-diet-weight-management-everyday-cooking-1.2l]] — Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Pumpkin Seeds 200 G High Fiber Antioxidants Nutritious Superfood For Diet Weight Management Everyday Cooking 1.2l
+- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-pumpkin-seeds-200-g-high-fiber-antioxidants-nutritious-superfood-for-diet-weight-management-everyday-cooking-1l]] — Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Pumpkin Seeds 200 g | High Fiber & Antioxidants | Nutritious Superfood for Diet, Weight Management & Everyday Cooking (Combo Pack) (1LTR + 200 GM (BUNDLE))
+- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-sunflower-seeds-200-g-high-protein-antioxidants-healthy-snacking-for-diet-weight-management-everyday-wellness-1.2l]] — Jivo Cold Pressed Canola Oil 1 Litre For Daily Cooking Raw Sunflower Seeds 200 G High Protein Antioxidants Healthy Snacking For Diet Weight Management Everyday Wellness 1.2l
+- [[jivo-cold-pressed-canola-oil-1-litre-for-daily-cooking-raw-sunflower-seeds-200-g-high-protein-antioxidants-healthy-snacking-for-diet-weight-management-everyday-wellness-1l]] — Jivo Cold Pressed Canola Oil 1 Litre for Daily Cooking + Raw Sunflower Seeds 200 g | High Protein & Antioxidants | Healthy Snacking for Diet, Weight Management & Everyday Wellness (Combo Pack) (1LTR + 200 GM (BUNDLE))
 - [[jivo-cold-pressed-canola-oil-1-litre-with-pomace-olive-oil-1l-1l]] — Jivo Cold Pressed Canola Oil 1 Litre With Pomace Olive Oil 1l 1l
 - [[jivo-cold-pressed-canola-oil-1-litre-with-pomace-olive-oil-1l-ideal-for-roasting-frying-baking-all-types-of-cuisines-cooking-oil-for-daily-use-2l]] — Jivo Cold Pressed Canola oil 1 Litre With Pomace Olive Oil 1L | Ideal for Roasting, Frying, Baking All types of Cuisines| Cooking Oil for Daily use | (Pack of 2L) (2 LTR)
 - [[jivo-cold-pressed-canola-oil-1l-with-soyabean-oil-5l-1l]] — Jivo Cold Pressed Canola Oil 1l With Soyabean Oil 5l 1l
@@ -593,7 +593,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l]] — Sano Sunflower Oil 1 Litre Pet Bottle - Pure, Nutrient-Rich sunflower Cooking Oil with High Smoke Point - Ideal for Frying, Sautéing, and Baking(Pack of 1) (1 LTR)
 - [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l]] — sano Sunflower Oil 5 Ltr Pet Bottle Pure, Nutrient Rich Cooking Oil with High Smoke Point Ideal for Frying, Sautéing, and Baking All type of Cuisines|
 
-## [[amazon-fresh]] (87)
+## [[amazon-fresh]] (89)
 - [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil 1l
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines
@@ -602,10 +602,12 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l]] — Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use 1l
 - [[jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l]] — Jivo Canola oil2 Litre Cold Press Cooking Oil For Daily Use 2l
 - [[jivo-cold-pressed-canola-oil-5-litre-5l]] — Jivo Cold Pressed Canola Oil 5 Litre
+- [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre
+- [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
-- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l
-- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
-- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzs8j7q]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l B09nycsqlf
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzs8j7q]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l B0gzzs8j7q
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch
 - [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] — Jivo Cold Pressed Kachi Ghani Mustard Oil 1l With Makki Atta 500g 1l
 - [[jivo-cold-pressed-sunflower-oil-combo-pack-5l]] — Jivo Cold Pressed Sunflower Oil Combo Pack 5l
@@ -645,7 +647,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-groundnut-oil-1-litre-1l-b0ckffw9b6]] — Jivo Groundnut Oil 1 Litre 1l b0ckffw9b6
 - [[jivo-groundnut-oil-1-litre-1l-b0gzzy6bh3]] — Jivo Groundnut Oil 1 Litre 1l b0gzzy6bh3
 - [[jivo-groundnut-oil-1l]] — Jivo Groundnut Oil 1l
-- [[jivo-groundnut-oil-5-litre-5l]] — Jivo Groundnut Oil 5 Litre
+- [[jivo-groundnut-oil-5-litre-5l]] — Jivo Groundnut Oil 5 Litre 5l
 - [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml]] — Jivo Healthy Wheatgrass Juice With Mango Flavor Body Detox Immunity Booster Natural Ingredients 500ml Mango 500ml
 - [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] — Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre
 - [[jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml]] — Jivo Koffie Instant Smooth Premium Coffee 100 Gm 100ml
@@ -682,7 +684,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivopure-extra-virgin-coconut-oil-500-ml-500ml]] — Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivopure Extra Virgin Coconut Oil 500 Ml 500ml
 - [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoso-olive-oil-1-litre-1l]] — Sponsoredsponsored You Are Seeing This Ad Based On The Products Relevance To Your Search Querylet Us Know Jivoso Olive Oil 1 Litre 1l
 
-## [[amazon-now]] (100)
+## [[amazon-now]] (103)
 - [[jivo-2-in-1-plug-n-play-full-hanumaan-chalisha-mantra-bell-na]] — Jivo 2 In 1 Plug N Play Full Hanumaan Chalisha Mantra Bell Na
 - [[jivo-canola-cold-press-edible-oil-1-litre-jivo-extra-light-olive-oil-1-litre-1l]] — Jivo Canola Cold Press Edible Oil 1 Litre Jivo Extra Light Olive Oil 1 Litre 1l
 - [[jivo-canola-cold-press-edible-oil-5-litre-jivo-chemicalfree-sunflower-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre Jivo Chemicalfree Sunflower Oil 5 Litre 5l
@@ -690,7 +692,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-canola-cold-press-edible-oil-kachi-ghani-mustard-oil-chemical-free-cold-pressed-sunflower-oil-5l]] — Jivo Canola Cold Press Edible Oil Kachi Ghani Mustard Oil Chemical Free Cold Pressed Sunflower Oil 5l
 - [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l]] — Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr Jivo Canola oil1 Litre Cold Press Healthy Cooking Oil 5l
 - [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-extra-virgin-olive-oil-1-litre-5l]] — Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr Jivo Extra Virgin Olive Oil 1 Litre 5l
-- [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l
+- [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-jivo-groundnut-oil-1-litre-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil For Daily Use Ideal For Roasting Jivo Groundnut Oil 1 Litre 1l
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-jivo-rice-bran-oil-1-litre-cooking-oil-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil For Daily Use Ideal For Roasting Jivo Rice Bran Oil 1 Litre Cooking Oil 1l
@@ -706,7 +708,9 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-canola-oil-5-litre-with-pomace-olive-oil-1l-5l]] — Jivo Cold Pressed Canola Oil 5 Litre With Pomace Olive Oil 1l 5l
 - [[jivo-cold-pressed-canola-soyabean-oil-1l-each-1l]] — Jivo Cold Pressed Canola Soyabean Oil 1l Each 1l
 - [[jivo-cold-pressed-extra-virgin-coconut-cooking-edible-oil-1-litre-1l]] — Jivo Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre 1l
+- [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre
 - [[jivo-cold-pressed-groundnut-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre 1 Litre Combo Pack 5l
+- [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch 1l
@@ -749,7 +753,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
 - [[jivo-green-cardamom-8mm-elaichi-na]] — Jivo Green Cardamom 8mm Elaichi Na
 - [[jivo-groundnut-oil-1-litre-1l]] — Jivo Groundnut Oil 1 Litre 1l
-- [[jivo-groundnut-oil-5-litre-5l]] — Jivo Groundnut Oil 5 Litre
+- [[jivo-groundnut-oil-5-litre-5l]] — Jivo Groundnut Oil 5 Litre 5l
 - [[jivo-groundnut-oil-5l-cold-pressed-sunflower-oil-5l-5l]] — Jivo Groundnut Oil 5l Cold Pressed Sunflower Oil 5l 5l
 - [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml]] — Jivo Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) Mango (500 ml)
 - [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] — Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre With Jivo Chemical Free Sunflower Oil 5 Litre 5l
@@ -777,6 +781,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-so-olive-oil-1-litre-1l]] — Jivo So Olive Oil 1 Litre 1l
 - [[jivo-so-olive-oil-5-litre-5l]] — Jivo So Olive Oil 5 Litre 5l
 - [[jivo-so-olive-oil-51-liter-na]] — Jivo So Olive Oil 51 Liter Na
+- [[jivo-soolive-oil-1l-1l]] — Jivo So-Olive Oil 1L (1 l)
 - [[jivo-soyabean-cooking-oil-5l-kachi-ghani-mustard-oil-5l-5l]] — Jivo Soyabean Cooking Oil 5l Kachi Ghani Mustard Oil 5l 5l
 - [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-f-1l]] — Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l
 - [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-fo-1l]] — Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil Fo 1l

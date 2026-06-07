@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-1-l-for-daily-cooking-raw-basil-seeds-200-g-high-fibre-omega-3-ideal-for-frying-baking-weight-management-1.2l
-display_name: "Jivo Cold Pressed Canola Oil 1 L for Daily Cooking + Raw Basil Seeds (Sabja) 200 g | High Fibre & Omega 3 | Ideal for Frying, Baking & Weight Management (Combo Pack) (1LTR + 200 GM (BUNDLE))"
+display_name: Jivo Cold Pressed Canola Oil 1 L For Daily Cooking Raw Basil Seeds 200 G High Fibre Omega 3 Ideal For Frying Baking Weight Management 1.2l
 platforms:
   - amazon
 first_seen: 2026-06-05
@@ -16,7 +16,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola Oil 1 L for Daily Cooking + Raw Basil Seeds (Sabja) 200 g | High Fibre & Omega 3 | Ideal for Frying, Baking & Weight Management (Combo Pack) (1LTR + 200 GM (BUNDLE))**
+**Jivo Cold Pressed Canola Oil 1 L For Daily Cooking Raw Basil Seeds 200 G High Fibre Omega 3 Ideal For Frying Baking Weight Management 1.2l**
 
 ## Sold on
 - [[amazon]]

@@ -5,8 +5,8 @@ display_name: "Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Extra light olive
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-06
-observations: 6
+last_seen: 2026-06-07
+observations: 7
 min_price: 4870
 max_price: 5063
 latest_price: 5063
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹5063 (56.0% off)
 
-## Runs that observed this SKU (6)
-[[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (7)
+[[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (6 observations)
+## Price history (7 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -37,6 +37,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1602,2026-06-05,amazon,All India,-,5063,11498,56,1
 2026-06-06-0702,2026-06-06,amazon,All India,-,5063,11498,56,1
 2026-06-06-1201,2026-06-06,amazon,All India,-,5063,11498,56,1
+2026-06-07-0908,2026-06-07,amazon,All India,-,5063,11498,56,1
 ```
 
 ---
