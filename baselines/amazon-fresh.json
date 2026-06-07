@@ -70,7 +70,15 @@
       "unique_skus": 28,
       "pincodes_with_jivo": 166,
       "priced_rows": 1164
+    },
+    {
+      "run_id": "2026-06-07-0918",
+      "captured_at": "2026-06-07T04:04:27.565Z",
+      "rows": 1186,
+      "unique_skus": 28,
+      "pincodes_with_jivo": 162,
+      "priced_rows": 1185
     }
   ],
-  "updated_at": "2026-06-06T06:58:09.248330+00:00"
+  "updated_at": "2026-06-07T04:04:47.103347+00:00"
 }
