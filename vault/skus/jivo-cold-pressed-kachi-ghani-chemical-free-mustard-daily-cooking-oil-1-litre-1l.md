@@ -8,7 +8,7 @@ platforms:
   - amazon-now
 first_seen: 2026-05-21
 last_seen: 2026-06-07
-observations: 2564
+observations: 2586
 min_price: 145
 max_price: 418
 latest_price: 175
@@ -33,10 +33,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (23)
-[[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-04-1417]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-07-0918]] · [[amazon-fresh-2026-06-05-0504]] · [[amazon-fresh-2026-06-05-0112]] · [[amazon-fresh-2026-06-04-1417]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (25)
+[[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-04-1417]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]] · [[amazon-fresh-2026-06-05-0504]] · [[amazon-fresh-2026-06-05-0112]] · [[amazon-fresh-2026-06-04-1417]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (2564 observations)
+## Price history (2586 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -2604,6 +2604,28 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-07-0934,2026-06-07,amazon-now,Delhi,110065,181,255,29,1
 2026-06-07-0934,2026-06-07,amazon-now,Mumbai,400701,175,255,31.4,1
 2026-06-07-0934,2026-06-07,amazon-now,Mumbai,400703,175,255,31.4,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110003,190,255,25.5,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110013,209,255,18,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110014,209,255,18,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110016,181,255,29,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110017,209,255,18,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110024,209,255,18,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110025,209,255,18,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110044,190,255,25.5,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110048,181,255,29,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110062,209,255,18,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110065,181,255,29,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Delhi,110076,209,255,18,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Jaipur,302025,176,255,31,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Mumbai,400701,175,255,31.4,1
+2026-06-07-1209,2026-06-07,amazon-fresh,Mumbai,400703,175,255,31.4,1
+2026-06-07-1225,2026-06-07,amazon-now,Delhi,110003,190,255,25.5,1
+2026-06-07-1225,2026-06-07,amazon-now,Delhi,110016,181,255,29,1
+2026-06-07-1225,2026-06-07,amazon-now,Delhi,110044,190,255,25.5,1
+2026-06-07-1225,2026-06-07,amazon-now,Delhi,110048,181,255,29,1
+2026-06-07-1225,2026-06-07,amazon-now,Delhi,110065,181,255,29,1
+2026-06-07-1225,2026-06-07,amazon-now,Mumbai,400701,175,255,31.4,1
+2026-06-07-1225,2026-06-07,amazon-now,Mumbai,400703,175,255,31.4,1
 ```
 
 ---

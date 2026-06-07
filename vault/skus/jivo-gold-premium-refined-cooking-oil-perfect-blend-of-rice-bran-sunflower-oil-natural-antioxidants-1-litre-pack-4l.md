@@ -6,7 +6,7 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-07
-observations: 7
+observations: 8
 min_price: 672
 max_price: 692
 latest_price: 692
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil | Natural Antioxidants | 1 Litre Pack (Pack of 4) (1LTR + 1LTR + 1LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹692 (30.8% off)
+- [[amazon]] — latest ₹692 (23.1% off)
 
-## Runs that observed this SKU (7)
-[[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (8)
+[[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (7 observations)
+## Price history (8 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -38,6 +38,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-06-0702,2026-06-06,amazon,All India,-,692,1000,30.8,1
 2026-06-06-1201,2026-06-06,amazon,All India,-,692,1000,30.8,1
 2026-06-07-0908,2026-06-07,amazon,All India,-,692,1000,30.8,1
+2026-06-07-1158,2026-06-07,amazon,All India,-,692,900,23.1,1
 ```
 
 ---
