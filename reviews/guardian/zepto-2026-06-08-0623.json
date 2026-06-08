@@ -1,0 +1,96 @@
+{
+  "platform": "zepto",
+  "run_id": "2026-06-08-0623",
+  "verdict": "SUSPECT",
+  "review_verdict": "SUSPECT",
+  "review_reasons": [
+    "price_staleness: 14 SKU(s) price-frozen across 9 runs while 100% of stores are on the non-realtime snapshot path (mongo_data_exists=56) \u2014 prices may be stale: jivo-extra-light-olive-oil-1l, jivo-extra-light-olive-oil-2l, jivo-extra-light-olive-oil-combo-2l, jivo-extra-light-olive-oil-combo-4l, jivo-extra-virgin-olive-oil-bottle-1l, jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l"
+  ],
+  "deep_reasons": [],
+  "reasons": [
+    "price_staleness: 14 SKU(s) price-frozen across 9 runs while 100% of stores are on the non-realtime snapshot path (mongo_data_exists=56) \u2014 prices may be stale: jivo-extra-light-olive-oil-1l, jivo-extra-light-olive-oil-2l, jivo-extra-light-olive-oil-combo-2l, jivo-extra-light-olive-oil-combo-4l, jivo-extra-virgin-olive-oil-bottle-1l, jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no store spans >2 cities (45 stores, 8 cities, 100% rows carry a store_id)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "23 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "450 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 450 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no (sale,mrp) pair shared across distinct SKUs"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/450 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (450/972 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 0.0h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "zepto SUSPECT (review.py): price_staleness: 14 SKU(s) price-frozen across 9 runs while 100% of stores are on the non-realtime snapshot path (mongo_data_exists=56) \u2014 prices may be stale: jivo-extra-light-olive-oil-1l, jivo-extra-light-olive-oil-2l, jivo-extra-light-olive-oil-combo-2l, jivo-extra-light-olive-oil-combo-4l, jivo-extra-virgin-olive-oil-bottle-1l, jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l | heal: see review.py reasons",
+  "quarantined": false,
+  "evaluated_at": "2026-06-08T06:23:27.894046+00:00",
+  "source_result": "/opt/ecom-intel/platforms/zepto/result.json"
+}
