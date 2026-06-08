@@ -221,6 +221,15 @@ FALLBACK
   echo "STOP after writing $DIAGNOSIS."
 } > "$PROMPT_FILE"
 
+# ALERT-ONLY non-mutation guard: deny-tools stop Edit/Write, but an allowed
+# subprocess (e.g. `python3 tools/review.py`) can still write tracked files as a
+# side effect. Snapshot the working tree before the agent so we can restore it
+# after — leaving the repo EXACTLY as found (untracked diagnosis reports survive).
+PRE_SNAP=""
+if [ "$DOCTOR_AUTOFIX" != "1" ]; then
+  PRE_SNAP="$(git -C "$DIR" stash create 2>/dev/null || true)"
+fi
+
 AGENT_RC=0
 if [ -n "${DOCTOR_AGENT_CMD:-}" ]; then
   # --- test/stub path: run the override command with the prompt on stdin.
@@ -316,6 +325,16 @@ SETTINGS
   AGENT_RC=$?
 fi
 rm -f "$PROMPT_FILE" 2>/dev/null
+
+# ALERT-ONLY: restore tracked files to the pre-agent snapshot, undoing any
+# incidental writes a diagnostic subprocess made (the agent must persist NOTHING
+# in alert-only). Untracked files (logs/doctor/* reports) are left intact.
+if [ "$DOCTOR_AUTOFIX" != "1" ]; then
+  base="${PRE_SNAP:-HEAD}"
+  if git -C "$DIR" checkout "$base" -- . >/dev/null 2>&1; then
+    log "alert-only: working tree restored to pre-agent state (no mutations persisted)"
+  fi
+fi
 
 if [ "$AGENT_RC" -eq 124 ]; then
   log "agent TIMED OUT after ${TIMEOUT_S}s"

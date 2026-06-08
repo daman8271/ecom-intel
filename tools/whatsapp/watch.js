@@ -22,9 +22,13 @@ const LOG_FILE = process.env.WA_BOT_LOG || path.join(ROOT, 'logs', 'whatsapp-wat
 const INTERVAL_MS = Number(process.env.WA_BOT_INTERVAL_MS || 10000);
 const BOT_NUMBER = (process.env.WA_BOT_NUMBER || '918899011758').replace(/[^0-9]/g, '');
 const BOT_JID = `${BOT_NUMBER}@s.whatsapp.net`;
-const AGENT = (process.env.WA_BOT_AGENT || 'template').toLowerCase();
+const AGENT = (process.env.WA_BOT_AGENT || 'claude').toLowerCase();
 const SEND = process.env.WA_BOT_SEND !== '0';
-const CODEX_TIMEOUT_MS = Number(process.env.WA_BOT_CODEX_TIMEOUT_MS || 90000);
+// Claude responder (default agent). Absolute bin path so a thin PATH (e.g. under
+// tmux) can't break it the way it broke the old codex path. Read-only, fast model.
+const CLAUDE_BIN = process.env.WA_BOT_CLAUDE_BIN || '/root/.local/bin/claude';
+const CLAUDE_MODEL = process.env.WA_BOT_CLAUDE_MODEL || 'sonnet';
+const CLAUDE_TIMEOUT_MS = Number(process.env.WA_BOT_CLAUDE_TIMEOUT_MS || 150000);
 const RESPOND_TO_FROM_ME = process.env.WA_BOT_RESPOND_TO_FROM_ME === '1';
 // Self-chat / DM-only mode: ignore the group entirely and only answer chats whose
 // number is in WA_BOT_DM_ALLOWLIST (defaults to the linked number's own self-chat).
@@ -112,9 +116,9 @@ function relevantMessage(m, targetJid) {
     lower.includes(`@${BOT_NUMBER}`) ||
     lower.includes(BOT_NUMBER);
 
-  const botEcho = lower.startsWith('codex watcher saw this') ||
-    lower.startsWith('codex here from the vps') ||
-    lower.includes('i am online on the vps');
+  // Secondary echo guard (id-tracking is the primary loop defense): skip our own
+  // template fallback if it ever comes back through upsert.
+  const botEcho = lower.startsWith('(auto) i got your message');
 
   // Self-chat / DM-only mode: never touch the group; only the allowlisted
   // number(s). The owner's own messages (fromMe) in the self-chat are the trigger;
@@ -153,62 +157,63 @@ function trimState(state) {
   state.replied = (state.replied || []).slice(-800);
 }
 
-function buildTemplateReply({ text, why }) {
+function buildTemplateReply({ text }) {
   const clean = text.replace(/\s+/g, ' ').trim().slice(0, 240);
   return [
-    `Codex watcher saw this (${why}).`,
-    `Message: "${clean}"`,
-    '',
-    'I am online on the VPS. For repo/cron work, tag this number or start with /codex and I will inspect it in read-only mode when agent mode is enabled.',
+    `(auto) I got your message: "${clean}"`,
+    'The Claude responder is busy or unavailable right now, so this is just an automatic acknowledgement — try again in a moment.',
   ].join('\n');
 }
 
-function askCodex({ chat, from, name, text, why }) {
-  const outFile = path.join('/tmp', `wa-codex-${Date.now()}-${Math.random().toString(16).slice(2)}.txt`);
+// Ask Claude (Claude Code CLI, print mode) for a read-only reply. No codex.
+function askClaude({ from, name, text, why }) {
+  const sys = [
+    'You are a personal WhatsApp assistant for Damanpreet, running on his VPS.',
+    'You are Claude, made by Anthropic. You are NOT Codex — never mention codex.',
+    'Answer the incoming WhatsApp message directly, briefly and practically.',
+    'You are READ-ONLY: never edit files or run shell commands. You may read repo',
+    'files to answer questions about the ecom-intel scraper, its logs, or reports.',
+    'Keep replies under 900 characters. Plain text — no markdown tables or headings.',
+  ].join(' ');
   const prompt = [
-    'You are Codex running as a WhatsApp reply bot for the ecom-intel VPS.',
-    'Answer the incoming WhatsApp message briefly and practically.',
-    'Do not edit files. Do not run destructive commands. If repo state is needed, inspect read-only.',
-    'If the request asks to change cron, scraper, WhatsApp automation, or self-heal behavior, explain the safe next step and say you can implement it when explicitly asked in the terminal.',
-    'Keep the reply under 900 characters. No markdown tables.',
-    '',
     `Trigger: ${why}`,
-    `Chat: ${chat}`,
     `From: ${name || from}`,
     `Message: ${text}`,
   ].join('\n');
 
-  const res = spawnSync('codex', [
-    '--ask-for-approval', 'never',
-    'exec',
-    '-C', ROOT,
-    '-s', 'read-only',
-    '--ephemeral',
-    '--color', 'never',
-    '-o', outFile,
-    prompt,
+  const res = spawnSync(CLAUDE_BIN, [
+    '-p', prompt,
+    '--model', CLAUDE_MODEL,
+    '--allowedTools', 'Read', 'Grep', 'Glob', 'LS',
+    '--disallowedTools',
+    'Bash', 'Edit', 'Write', 'NotebookEdit', 'MultiEdit', 'WebFetch', 'WebSearch',
+    // also deny spawn / persistence / outward tools so the bot is purely read+answer
+    'Agent', 'Task', 'Workflow', 'Skill', 'CronCreate', 'CronDelete',
+    'RemoteTrigger', 'PushNotification', 'ScheduleWakeup',
+    // Read-only file access only; no shell/edits (harness-enforced) and NO MCP
+    // connectors (--strict-mcp-config with no --mcp-config loads zero servers),
+    // so a WhatsApp message can never send email / post to GitHub / etc.
+    '--strict-mcp-config',
+    '--output-format', 'text',
+    '--append-system-prompt', sys,
   ], {
+    cwd: ROOT,
     encoding: 'utf8',
-    timeout: CODEX_TIMEOUT_MS,
-    maxBuffer: 1024 * 1024,
+    timeout: CLAUDE_TIMEOUT_MS,
+    maxBuffer: 4 * 1024 * 1024,
+    env: { ...process.env, PATH: `${process.env.PATH || ''}:/root/.local/bin:/usr/local/bin:/usr/bin:/bin` },
   });
 
   if (res.error) {
-    log(`codex error: ${res.error.message}`);
+    log(`claude error: ${res.error.message}`);
     return null;
   }
   if (res.status !== 0) {
-    log(`codex exited ${res.status}: ${(res.stderr || '').slice(0, 500)}`);
+    log(`claude exited ${res.status}: ${(res.stderr || '').slice(0, 500)}`);
     return null;
   }
-  let answer = '';
-  try {
-    answer = fs.readFileSync(outFile, 'utf8');
-    fs.unlinkSync(outFile);
-  } catch (_) {
-    answer = res.stdout || '';
-  }
-  return answer.trim().slice(0, 3500);
+  const answer = (res.stdout || '').trim();
+  return answer ? answer.slice(0, 3500) : null;
 }
 
 async function main() {
@@ -256,10 +261,10 @@ async function main() {
               if (!rel.ok || replied.has(id)) continue;
 
               let reply = null;
-              if (AGENT === 'codex') {
-                reply = askCodex({ chat, from, name, text, why: rel.why });
+              if (AGENT === 'claude') {
+                reply = askClaude({ from, name, text, why: rel.why });
               }
-              if (!reply) reply = buildTemplateReply({ text, why: rel.why });
+              if (!reply) reply = buildTemplateReply({ text });
 
               if (SEND) {
                 const sent = await sock.sendMessage(chat, { text: reply }, { quoted: m });
