@@ -1,0 +1,96 @@
+{
+  "platform": "amazon-now",
+  "run_id": "2026-06-08-0421",
+  "verdict": "SUSPECT",
+  "review_verdict": "OK",
+  "review_reasons": [],
+  "deep_reasons": [
+    "[class 2] geo_price_identity: jivo-extra-virgin-olive-oil-1-litre-1l sells at identical \u20b9789.0 across 7 cities w/o store_id \u2014 possible contamination"
+  ],
+  "reasons": [
+    "[class 2] geo_price_identity: jivo-extra-virgin-olive-oil-1-litre-1l sells at identical \u20b9789.0 across 7 cities w/o store_id \u2014 possible contamination"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_price_identity",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "jivo-extra-virgin-olive-oil-1-litre-1l sells at identical \u20b9789.0 across 7 cities w/o store_id \u2014 possible contamination"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "20 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "646 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 646 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no (sale,mrp) pair shared across distinct SKUs"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/646 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (646/646 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 0.0h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "amazon-now SUSPECT (deep-check): jivo-extra-virgin-olive-oil-1-litre-1l sells at identical \u20b9789.0 across 7 cities w/o store_id \u2014 possible contamination | heal: blinkit-style default-store contamination -> re-resolve store + re-scrape",
+  "quarantined": false,
+  "evaluated_at": "2026-06-08T04:21:38.208528+00:00",
+  "source_result": "/opt/ecom-intel/platforms/amazon-now/result.json"
+}
