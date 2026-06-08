@@ -760,9 +760,18 @@ def build():
                 len(by_sku), len(by_city), len(by_pin), len(run_meta))
     write_obsidian()
 
+    # ----- price-match section (additive; never aborts the core build — best-effort like run.sh)
+    pm_n = 0
+    try:
+        import vault_pricematch
+        pm_n = vault_pricematch.build_section()
+    except Exception as e:
+        print(f"vault_build: price-match section skipped ({e})", file=sys.stderr)
+
     print(f"vault_build: {len(run_meta)} run notes · {len(by_sku)} SKU hubs · "
           f"{len(by_city)} city + {len(by_pin)} pincode nodes · "
-          f"{len(weeks)} weeks · {len(months)} months")
+          f"{len(weeks)} weeks · {len(months)} months"
+          + (f" · {pm_n} price-match notes" if pm_n else ""))
     return 0
 
 
