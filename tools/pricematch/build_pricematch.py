@@ -860,6 +860,19 @@ def main():
     with open(xlsx + ".summary.json", "w", encoding="utf-8") as fh:
         json.dump(sidecar, fh, ensure_ascii=False, indent=1)
 
+    # Best-effort: persist the machine price-match history (data/pricematch/*.csv) from
+    # the comps/summ we already hold — AFTER the xlsx is saved + byte-stabilized, so a
+    # history-write error can never fail the workbook build and can't touch the xlsx
+    # bytes. Idempotent (replace-by-date). Skipped for scoped editions (--platforms): the
+    # FULL national workbook owns the canonical daily history. (W1 — pm-history)
+    if not args.platforms:
+        try:
+            import pricematch_history as pmh
+            n, _ = pmh.record_run(date, regime, comps, store_violation_count=len(vrows))
+            print(f"build_pricematch: pm-history captured {n} rows for {date}", file=sys.stderr)
+        except Exception as e:  # never fail the build on a history hiccup
+            print(f"build_pricematch: pm-history skipped (non-fatal): {e}", file=sys.stderr)
+
     print(f"build_pricematch: {regime} day · {kpi['below']} below-ref "
           f"(₹{kpi['exposure']:,} exposure) · {kpi['above']} above · "
           f"{kpi['compliant']} match · {kpi['oos']} OOS · {len(vrows)} store rows",
