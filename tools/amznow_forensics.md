@@ -63,12 +63,15 @@ that matters is whether the **prices** are independently sourced — §2/§3 sho
 
 ## 2. Price divergence — snapshot table (by ASIN)
 
-Modal (sale, mrp) per ASIN across all pincodes. **NOTE on snapshot:** at the time of writing,
-a live re-scrape is mid-flight; this table compares **now @ 2026-06-08 07:17Z** (this
-morning's sweep) vs **core @ 2026-06-08 09:40Z** (re-scraped ~2h later). Because the two
-captures are ~2h apart, some differences include genuine intraday drift — the §3 time-series,
-which aligns same-day/same-slot, is the clean test. *(Will refresh this table with the
-fresh same-run now snapshot once the live run reaches "amazon-now: DONE".)*
+Modal (sale, mrp) per ASIN across all pincodes. **NOTE on snapshot:** this table compares
+**now @ 2026-06-08 07:17Z** (the 12:00 sweep) vs **core @ 2026-06-08 09:40Z** (re-scraped ~2h
+later by the live run). The live AMAZON-3 run completed (`amazon-now: DONE` 15:35), but its
+amazon-now step did **not** persist a new `result.json` (on-disk now snapshot stayed the
+07:17Z morning file; no new 15:xx run_id was appended to now's history — likely an
+`OUT_FILE`/partial harness run, flagged to W3). So this morning-now / afternoon-core pair is
+the best available same-day on-disk pair; the ~2h skew means some differences include genuine
+intraday drift. **The §3 time-series, which aligns same-day/same-slot per ASIN, is the clean
+test and is decisive on its own.**
 
 | ASIN | now sale | now mrp | core sale | core mrp | Δsale | verdict | name |
 |---|--:|--:|--:|--:|--:|---|---|
@@ -156,9 +159,9 @@ It is *not* a copy signature, because the *other* 15 SKUs demonstrably do not tr
 
 ## Caveats / scope
 
-- §2 snapshot is a ~2h-skewed pair (live re-scrape in flight); the §3 time-series is the clean,
-  same-slot test and is decisive on its own. Table §2 will be refreshed to the same-run pair
-  once the live run reports "amazon-now: DONE".
+- §2 snapshot is a ~2h-skewed same-day pair (the live run's amazon-now step did not refresh
+  `result.json`, so a tighter same-slot pair was not obtainable on-disk); the §3 time-series is
+  the clean, same-slot test and is decisive on its own.
 - A handful of single-day spikes in §3 (e.g. core 06-01/06-04 jumps of −189/−259) are
   *core-side* combo/cross-sell artifacts, not now contamination; they don't affect the
   conclusion (they show core moving while now didn't — still independent).
