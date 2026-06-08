@@ -331,12 +331,12 @@ def _modal(vals):
     return min(p for p, n in cnt.items() if n == top)
 
 
-def _frozen_skus(platform, rows, run_id):
+def _modal_series(platform, rows, run_id):
     """
-    SKUs whose MODAL price has been identical across the last STALE_FROZEN_RUNS runs
-    (history + this run). history.csv is written AFTER review, so it does not yet contain
-    this run — we fold in this run's modal prices from `rows`. Best-effort; never raises.
-    Returns a sorted list of frozen canonical SKU names.
+    {canonical -> [modal price per run]} over the newest STALE_FROZEN_RUNS runs (history +
+    this run), None-modals dropped per canonical. history.csv is written AFTER review, so it
+    does not yet contain this run — we fold in this run's modal prices from `rows`.
+    Returns {} when there is not yet enough history to judge. Best-effort; never raises.
     """
     hist_path = os.path.join(ROOT, "data", platform, "history.csv")
     by_run = {}   # run_id -> {canonical -> [prices]}
@@ -355,7 +355,7 @@ def _frozen_skus(platform, rows, run_id):
                     by_run.setdefault(rid, {}).setdefault(canon, []).append(price)
     except Exception as e:
         log(f"{platform}: frozen-sku history read failed ({e}); skipping frozen check")
-        return []
+        return {}
 
     # Fold in THIS run's prices. history.csv is written AFTER review, so normally run_id is absent
     # here; but a self-heal re-run reuses the same run_id and it MAY already be present. Either way
@@ -372,15 +372,34 @@ def _frozen_skus(platform, rows, run_id):
     # modal price per run, newest STALE_FROZEN_RUNS runs only
     recent = sorted(by_run.keys())[-STALE_FROZEN_RUNS:]
     if len(recent) < STALE_FROZEN_RUNS:
-        return []   # not enough history yet to judge "frozen"
-    frozen = []
-    canon_set = set(cur.keys())
-    for canon in canon_set:
+        return {}   # not enough history yet to judge "frozen"
+    series = {}
+    for canon in set(cur.keys()):
         modals = [_modal(by_run[rid].get(canon, [])) for rid in recent]
         modals = [m for m in modals if m is not None]
-        if len(modals) >= STALE_FROZEN_RUNS and len(set(modals)) == 1:
-            frozen.append(canon)
-    return sorted(frozen)
+        series[canon] = modals
+    return series
+
+
+def _frozen_skus(platform, rows, run_id):
+    """
+    SKUs whose MODAL price has been identical across the last STALE_FROZEN_RUNS runs.
+    Returns a sorted list of frozen canonical SKU names.
+    """
+    series = _modal_series(platform, rows, run_id)
+    return sorted(c for c, modals in series.items()
+                  if len(modals) >= STALE_FROZEN_RUNS and len(set(modals)) == 1)
+
+
+def _price_movers(platform, rows, run_id):
+    """
+    SKUs whose MODAL price CHANGED across the recent-run window — proof the data path is
+    LIVE (a stuck snapshot would freeze every SKU). Returns a sorted list of canonicals
+    with >= 2 distinct modal prices over the window.
+    """
+    series = _modal_series(platform, rows, run_id)
+    return sorted(c for c, modals in series.items()
+                  if len(modals) >= 2 and len(set(modals)) > 1)
 
 
 def _pct_non_realtime(data, fresh):
@@ -428,26 +447,40 @@ def staleness_alarm(data, rows, platform, run_id):
     pct_nonrt, reason_str = _pct_non_realtime(data, fresh)
     snapshot_served = pct_nonrt >= NONREALTIME_GATE_PCT
     frozen = _frozen_skus(platform, rows, run_id)
+    movers = _price_movers(platform, rows, run_id)
 
-    # SUSPECT: price stuck across many runs WHILE served from the snapshot path -> likely stale.
-    if frozen and snapshot_served:
+    # SUSPECT only for a TRULY-STUCK scraper. A frozen price is genuine market stability,
+    # not a stale snapshot, whenever OTHER SKUs on the SAME path MOVED across the window —
+    # that proves the path is live (zepto 2026-06-08: 9/23 SKUs moved while 14 held steady,
+    # bigbasket-confirmed stable, yet the old gate held the whole platform). So we alarm
+    # only when prices are frozen, the snapshot path is open, AND not a single SKU moved
+    # across the window (nothing is live -> the scraper is stuck, not the market).
+    if frozen and snapshot_served and not movers:
         return (False,
                 f"{len(frozen)} SKU(s) price-frozen across {STALE_FROZEN_RUNS} runs while "
-                f"{pct_nonrt:.0f}% of stores are on the non-realtime snapshot path"
-                f"{(' (' + reason_str + ')') if reason_str else ''} — prices may be stale: "
-                f"{', '.join(frozen[:6])}",
+                f"{pct_nonrt:.0f}% of stores are on the non-realtime snapshot path AND NO SKU "
+                f"moved across the window"
+                f"{(' (' + reason_str + ')') if reason_str else ''} — path looks stuck, "
+                f"prices may be stale: {', '.join(frozen[:6])}",
                 "suspect")
 
-    # Pass, but report state. Frozen on the REALTIME path = live & genuinely stable (not stale).
+    # Pass, but report state.
     bits = [f"{pct_nonrt:.0f}% stores non-realtime/snapshot"
             + (f" ({reason_str})" if reason_str else "")]
     if frozen:
+        if movers:
+            why = (f"path proven live by {len(movers)} SKU(s) that moved "
+                   f"(e.g. {', '.join(movers[:3])}) -> genuinely stable")
+        elif snapshot_served:
+            why = "(snapshot path)"
+        else:
+            why = "(realtime path -> live, treated as genuinely stable)"
         bits.append(
-            f"{len(frozen)} SKU(s) price-stable across {STALE_FROZEN_RUNS} runs "
-            + ("(snapshot path)" if snapshot_served
-               else "(realtime path -> live, treated as genuinely stable)"))
+            f"{len(frozen)} SKU(s) price-stable across {STALE_FROZEN_RUNS} runs " + why)
     else:
         bits.append(f"no SKU frozen across {STALE_FROZEN_RUNS} runs")
+    if movers:
+        bits.append(f"{len(movers)} SKU(s) moved over the window")
     return True, "; ".join(bits), "suspect"
 
 
@@ -712,11 +745,52 @@ def per_litre_combo_sanity(rows):
     return False, "; ".join(bits), "suspect"
 
 
+_COMBO_RE = __import__("re").compile(r"\+|\bcombo\b|pack of \d+")
+_WS_RE = __import__("re").compile(r"\s+")
+
+
+def _is_combo_listing(r):
+    """
+    True if this row is a multipack/combo listing. Combos legitimately share ONE bundle
+    price across sellers/variants (e.g. flipkart 'CANOLA 5+1L', '1L+1L+1L' 3-oil packs),
+    so they must NOT count as fabrication. Detected from the human name fields (item /
+    sku_raw): a '+' addend, the word 'combo', or 'pack of N'. Falls back to None-safe.
+    """
+    for fld in (r.get("item"), r.get("sku_raw")):
+        if fld and _COMBO_RE.search(str(fld).lower()):
+            return True
+    return False
+
+
+def _product_identity(r):
+    """
+    A normalized key for the UNDERLYING product, so seller-duplicate listings of the same
+    product (distinct per-FSN canonicals, identical product) collapse to ONE identity.
+    Prefer the human name (`item`, e.g. flipkart 'CANOLA 5L') normalized to lowercase /
+    collapsed whitespace; else fall back to the per-FSN `canonical`. On platforms with no
+    `item` field this is exactly the old canonical-counting behaviour.
+    """
+    it = r.get("item")
+    if it:
+        return ("item", _WS_RE.sub(" ", str(it).strip().lower()))
+    return ("canon", r.get("canonical"))
+
+
 def shared_price_dup(rows):
     """
     (ok, detail, severity). Flags a DISCOUNTED (sale,mrp) pair shared by several DISTINCT
-    canonical products — a price-fabrication / cross-sell-bleed tell. sale==mrp collisions
+    UNDERLYING PRODUCTS — a price-fabrication / cross-sell-bleed tell. sale==mrp collisions
     (many cheap SKUs at one list price) are excluded.
+
+    Identity-aware (2026-06-08, W1): the genuine signal is ONE price appearing across
+    truly-UNRELATED products. Two things are NOT that and must not fire:
+      - seller-duplicate listings of the SAME product (distinct per-FSN canonicals, same
+        `item`) — collapsed to one identity via _product_identity; and
+      - COMBO / multipack listings, which legitimately share a bundle price — excluded
+        entirely via _is_combo_listing.
+    So we count distinct PRODUCT IDENTITIES among non-combo rows, not raw canonicals. This
+    is monotonically RELAXING vs the old canonical count (identities <= canonicals, combos
+    dropped), so it can only clear false positives, never newly flag a clean platform.
     """
     pair = {}
     priced = 0
@@ -730,21 +804,24 @@ def shared_price_dup(rows):
             continue
         if abs(s - m) < 0.5:        # require a genuine discount
             continue
-        pair.setdefault((round(s, 2), round(m, 2)), set()).add(c)
+        if _is_combo_listing(r):    # combos legitimately share a bundle price
+            continue
+        pair.setdefault((round(s, 2), round(m, 2)), set()).add(_product_identity(r))
     qual = {k: v for k, v in pair.items() if len(v) >= SHARED_PRICE_MIN_CANON}
     if not qual:
-        return True, "no discounted (sale,mrp) pair shared across distinct SKUs", "suspect"
+        return True, "no discounted (sale,mrp) pair shared across distinct products", "suspect"
     max_canon = max(len(v) for v in qual.values())
-    # share of priced rows whose (sale,mrp) is one of the shared discounted pairs
+    # share of priced rows that are a non-combo discounted row in one of the shared pairs
     shared_rows = sum(1 for r in rows
                       if (num(r.get("sale")) is not None and num(r.get("mrp")) is not None
                           and abs(num(r.get("sale")) - num(r.get("mrp"))) >= 0.5
+                          and not _is_combo_listing(r)
                           and (round(num(r.get("sale")), 2), round(num(r.get("mrp")), 2)) in qual))
     shared_frac = (shared_rows / priced) if priced else 0.0
     worst = max(qual.items(), key=lambda kv: len(kv[1]))
     detail = (f"{len(qual)} discounted (sale,mrp) pair(s) shared by >= "
-              f"{SHARED_PRICE_MIN_CANON} distinct SKUs; worst {worst[0]} held by "
-              f"{len(worst[1])} canonicals; {shared_rows}/{priced} priced rows "
+              f"{SHARED_PRICE_MIN_CANON} distinct products; worst {worst[0]} held by "
+              f"{len(worst[1])} products; {shared_rows}/{priced} priced rows "
               f"({shared_frac:.0%}) in shared pairs — possible fabrication/cross-sell bleed")
     if max_canon >= SHARED_PRICE_BROKEN_CANON or shared_frac >= SHARED_PRICE_BROKEN_FRAC:
         return False, detail, "broken"
