@@ -4,3 +4,6 @@ durations.sim.jsonl
 durations.pre-sim.bak.jsonl
 durations.post-sim.jsonl
 secrets.sim.env
+
+# doctor dry-run sandbox (regenerated every run; verdict lives in doctor_verify.md)
+doctor/
