@@ -67,6 +67,13 @@ CANONICAL = ["flipkart-minutes", "flipkart", "zepto", "bigbasket",
              "amazon", "amazon-fresh", "amazon-now", "blinkit"]
 PDISP = dict(xd.PLATFORM_DISPLAY)        # canonical full display names
 
+# Price-match cluster band (owner ask 2026-06-08): when 2+ platforms price a SKU
+# within ±₹PM_CLUSTER_BAND of each other they are "fighting for the same price" —
+# price-match is ACTIVE for that SKU. Easy to retune later.
+PM_CLUSTER_BAND = 5.0
+# statuses that carry a REAL live price this run (exclude OOS/NOT_LISTED/PENDING/retired)
+PM_PRICE_STATUSES = ("BELOW", "ABOVE", "MATCH", "NO_REF")
+
 REGIME_BADGE = {"BAU": ("475569", "BAU day"),        # slate
                 "SVD": (JIVO_GREEN, "SVD day"),      # Jivo green
                 "ART": ("B45309", "ART day")}        # amber — announcement regime
@@ -424,6 +431,47 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map, label=None):
     return ws
 
 
+def pm_clusters(sku, by_key):
+    """Price-match clusters for one SKU over the CURRENT CANONICAL platforms.
+
+    Collect platforms that have a REAL live price this run (PM_PRICE_STATUSES with a
+    numeric live_modal), sort by price, then greedily group so that within each group
+    max(price) − min(price) ≤ PM_CLUSTER_BAND. A group of ≥2 platforms is a cluster.
+    Scoped editions narrow naturally because CANONICAL is shrunk in place. Returns a
+    list of clusters; each cluster = list of (platform, price) tuples, price-sorted.
+    """
+    priced = []
+    for p in CANONICAL:
+        r = by_key.get((sku, p))
+        if not r or r.get("status") not in PM_PRICE_STATUSES:
+            continue
+        price = _f(r.get("live_modal"))
+        if price is None:
+            continue
+        priced.append((p, price))
+    priced.sort(key=lambda x: x[1])
+
+    clusters, group = [], []
+    for p, price in priced:
+        if group and price - group[0][1] > PM_CLUSTER_BAND:   # group[0] = min (sorted)
+            if len(group) >= 2:
+                clusters.append(group)
+            group = []
+        group.append((p, price))
+    if len(group) >= 2:
+        clusters.append(group)
+    return clusters
+
+
+def fmt_cluster(cluster):
+    """'Blinkit · Zepto · Amazon @ ₹379–381' (single price when the band is flat)."""
+    names = " · ".join(PDISP.get(p, p) for p, _ in cluster)
+    lo = min(pr for _, pr in cluster)
+    hi = max(pr for _, pr in cluster)
+    band = f"₹{lo:,.0f}" if abs(hi - lo) < 0.005 else f"₹{lo:,.0f}–{hi:,.0f}"
+    return f"{names} @ {band}"
+
+
 def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
     # Owner order 2026-06-06: show ONLY today's regime — MRP + ONE named
     # "Agreed price (<regime>)" column. The BAU/SVD/ART trio lives in the
@@ -439,8 +487,12 @@ def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
     ws.column_dimensions["C"].width = 18
     for i in range(len(CANONICAL)):
         ws.column_dimensions[get_column_letter(2 + len(regime_cols) + i)].width = 14
+    # NEW col at the very end: platforms whose live prices cluster within ±₹5
+    pm_col = 2 + len(regime_cols) + len(CANONICAL)
+    ws.column_dimensions[get_column_letter(pm_col)].width = 34
 
-    headers = ["SKU"] + regime_cols + [PDISP.get(p, p) for p in CANONICAL]
+    headers = (["SKU"] + regime_cols + [PDISP.get(p, p) for p in CANONICAL]
+               + [f"Price-Match active (±₹{PM_CLUSTER_BAND:.0f})"])
     table_header(ws, 1, headers)
     agreed_col = 3
     ws.cell(1, agreed_col).fill = PatternFill("solid", fgColor=INK)
@@ -452,6 +504,8 @@ def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
         ("GREEN = live above", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
         ("blue link = live listing · plain = at agreed price", None, "0563C1"),
         ("OOS = out of stock · ? = mapping under review · — = not listed", None, None),
+        (f"⚡ Price-Match active = 2+ platforms within ₹{PM_CLUSTER_BAND:.0f} of "
+         f"each other (last col)", BRAND_SOFT, BRAND),
     ], span=2)
 
     skus = sku_map.get("skus", {})
@@ -537,6 +591,25 @@ def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
                 c.comment = Comment("No reference price for this SKU/regime.",
                                     "pricematch", height=50, width=220)
             # MATCH: value + hyperlink, no fill
+
+        # ---- Price-Match active (±₹5) — the new cluster column ----
+        pmc = ws.cell(row, pm_col)
+        clusters = [] if retired else pm_clusters(sku, by_key)
+        if clusters:
+            pmc.value = "⚡ " + "  |  ".join(fmt_cluster(cl) for cl in clusters)
+            pmc.fill = SOFT_FILL
+            pmc.font = Font(name=F, size=10, bold=True, color=BRAND)
+            n = sum(len(cl) for cl in clusters)
+            pmc.comment = Comment(
+                f"{len(clusters)} price-match cluster(s) · {n} platform listings "
+                f"within ₹{PM_CLUSTER_BAND:.0f} of each other (live modal price).",
+                "pricematch", height=70, width=260)
+        else:
+            pmc.value = "" if retired else "—"
+            pmc.font = Font(name=F, size=10, color=MUTED)
+            pmc.alignment = Alignment(horizontal="center")
+            if retired:
+                pmc.fill = GREY_FILL
         row += 1
     # (legend lives in the frozen top row — fresh-eyes: never the last row)
     return ws
