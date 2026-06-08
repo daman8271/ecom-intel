@@ -27,7 +27,7 @@ Hub / Map of Content for **zepto**. zepto scraper.
 ## Runs (23) — newest first
 
 <!-- runs:start -->
-- [[zepto-2026-06-08-1144]] — 2026-06-08 · verdict SUSPECT <!-- run -->
+- [[zepto-2026-06-08-1144]] — 2026-06-08 · verdict OK <!-- run -->
 - [[zepto-2026-06-08-0844]] — 2026-06-08 · verdict SUSPECT <!-- run -->
 - [[zepto-2026-06-07-1144]] — 2026-06-07 · verdict SUSPECT <!-- run -->
 - [[zepto-2026-06-07-0850]] — 2026-06-07 · verdict SUSPECT <!-- run -->

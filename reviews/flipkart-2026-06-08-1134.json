@@ -2,7 +2,7 @@
   "platform": "flipkart",
   "run_id": "2026-06-08-1134",
   "captured_at": "2026-06-08T06:14:10.507Z",
-  "verdict": "SUSPECT",
+  "verdict": "OK",
   "rows": 268,
   "unique_skus": 268,
   "pincodes_with_jivo": null,
@@ -66,12 +66,12 @@
     {
       "name": "freshness",
       "pass": true,
-      "detail": "captured_at 2026-06-08T06:14:10.507Z is 0.0h old (fresh)"
+      "detail": "captured_at 2026-06-08T06:14:10.507Z is 3.1h old (fresh)"
     },
     {
       "name": "price_staleness",
       "pass": true,
-      "detail": "0% stores non-realtime/snapshot; 74 SKU(s) price-stable across 9 runs (realtime path -> live, treated as genuinely stable)"
+      "detail": "0% stores non-realtime/snapshot; 74 SKU(s) price-stable across 9 runs path proven live by 85 SKU(s) that moved (e.g. cfegmj5gje7hd3dq, edofrwtzzubgdj3q, edofrxtmjgae9dct) -> genuinely stable; 85 SKU(s) moved over the window"
     },
     {
       "name": "geo_consistency",
@@ -90,17 +90,15 @@
     },
     {
       "name": "shared_price_dup",
-      "pass": false,
-      "detail": "3 discounted (sale,mrp) pair(s) shared by >= 2 distinct SKUs; worst (1285.0, 1650.0) held by 3 canonicals; 7/159 priced rows (4%) in shared pairs \u2014 possible fabrication/cross-sell bleed"
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
     },
     {
       "name": "llm_judgment",
       "pass": true,
-      "detail": "OK \u2014 268 SKUs with sensible oil/ghee/mustard product names, INR prices, MRP\u2265sale (9\u201367% discounts), no schema errors or zero-collapse."
+      "detail": "OK \u2014 Real oil/ghee SKUs, sensible INR prices, MRP\u2265sale holds, combo packs show realistic promotional depth."
     }
   ],
-  "reasons": [
-    "shared_price_dup: 3 discounted (sale,mrp) pair(s) shared by >= 2 distinct SKUs; worst (1285.0, 1650.0) held by 3 canonicals; 7/159 priced rows (4%) in shared pairs \u2014 possible fabrication/cross-sell bleed"
-  ],
-  "llm_note": "OK \u2014 268 SKUs with sensible oil/ghee/mustard product names, INR prices, MRP\u2265sale (9\u201367% discounts), no schema errors or zero-collapse."
+  "reasons": [],
+  "llm_note": "OK \u2014 Real oil/ghee SKUs, sensible INR prices, MRP\u2265sale holds, combo packs show realistic promotional depth."
 }

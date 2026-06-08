@@ -27,7 +27,7 @@ Hub / Map of Content for **flipkart**. Flipkart marketplace; national catalog (s
 ## Runs (43) — newest first
 
 <!-- runs:start -->
-- [[flipkart-2026-06-08-1134]] — 2026-06-08 · verdict SUSPECT <!-- run -->
+- [[flipkart-2026-06-08-1134]] — 2026-06-08 · verdict OK <!-- run -->
 - [[flipkart-2026-06-08-0834]] — 2026-06-08 · verdict SUSPECT <!-- run -->
 - [[flipkart-2026-06-07-1134]] — 2026-06-07 · verdict SUSPECT <!-- run -->
 - [[flipkart-2026-06-07-0840]] — 2026-06-07 · verdict SUSPECT <!-- run -->

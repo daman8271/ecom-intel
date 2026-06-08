@@ -2,37 +2,6 @@
   "platform": "flipkart",
   "samples": [
     {
-      "run_id": "2026-06-04-1417",
-      "captured_at": "2026-06-04T09:02:07.153Z",
-      "rows": 268,
-      "unique_skus": 268,
-      "pincodes_with_jivo": null
-    },
-    {
-      "run_id": "XVERIFY-2026-06-05",
-      "captured_at": "2026-06-04T18:46:33.070Z",
-      "rows": 268,
-      "unique_skus": 268,
-      "pincodes_with_jivo": null,
-      "priced_rows": 106
-    },
-    {
-      "run_id": "XV-2026-06-05",
-      "captured_at": "2026-06-04T18:46:33.070Z",
-      "rows": 268,
-      "unique_skus": 268,
-      "pincodes_with_jivo": null,
-      "priced_rows": 106
-    },
-    {
-      "run_id": "XV",
-      "captured_at": "2026-06-04T18:46:33.070Z",
-      "rows": 268,
-      "unique_skus": 268,
-      "pincodes_with_jivo": null,
-      "priced_rows": 106
-    },
-    {
       "run_id": "2026-06-05-0112",
       "captured_at": "2026-06-04T19:54:23.232Z",
       "rows": 268,
@@ -79,7 +48,39 @@
       "unique_skus": 268,
       "pincodes_with_jivo": null,
       "priced_rows": 106
+    },
+    {
+      "run_id": "2026-06-08-unhold",
+      "captured_at": "2026-06-08T06:14:10.507Z",
+      "rows": 268,
+      "unique_skus": 268,
+      "pincodes_with_jivo": null,
+      "priced_rows": 106
+    },
+    {
+      "run_id": "2026-06-08-w2probe",
+      "captured_at": "2026-06-08T06:14:10.507Z",
+      "rows": 268,
+      "unique_skus": 268,
+      "pincodes_with_jivo": null,
+      "priced_rows": 106
+    },
+    {
+      "run_id": "2026-06-08-unhold",
+      "captured_at": "2026-06-08T06:14:10.507Z",
+      "rows": 268,
+      "unique_skus": 268,
+      "pincodes_with_jivo": null,
+      "priced_rows": 106
+    },
+    {
+      "run_id": "2026-06-08-1134",
+      "captured_at": "2026-06-08T06:14:10.507Z",
+      "rows": 268,
+      "unique_skus": 268,
+      "pincodes_with_jivo": null,
+      "priced_rows": 106
     }
   ],
-  "updated_at": "2026-06-06T06:18:20.659991+00:00"
+  "updated_at": "2026-06-08T09:19:33.475551+00:00"
 }

@@ -6,10 +6,10 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-08
-observations: 9
-min_price: 352
+observations: 10
+min_price: 334
 max_price: 352
-latest_price: 352
+latest_price: 334
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre | Recommendable for Roasting, Frying, Baking All type of Cuisines| (Pack of 2) (1LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹352 (31.0% off)
+- [[amazon]] — latest ₹334 (34.5% off)
 
-## Runs that observed this SKU (9)
-[[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (10)
+[[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (9 observations)
+## Price history (10 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -40,6 +40,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-07-0908,2026-06-07,amazon,All India,-,352,510,31,1
 2026-06-07-1158,2026-06-07,amazon,All India,-,,550,0,0
 2026-06-08-0859,2026-06-08,amazon,All India,-,,,0,0
+2026-06-08-1154,2026-06-08,amazon,All India,-,334,510,34.5,1
 ```
 
 ---

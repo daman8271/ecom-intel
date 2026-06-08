@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-06-08
 last_seen: 2026-06-08
-observations: 5
+observations: 7
 min_price: 385
 max_price: 385
 latest_price: 385
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Gurgaon]] · [[Jaipur]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-08-0909]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]]
 
-## Price history (5 observations)
+## Price history (7 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -39,6 +39,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-08-0909,2026-06-08,amazon-fresh,Delhi,110090,385,835,53.9,1
 2026-06-08-0909,2026-06-08,amazon-fresh,Gurgaon,122051,385,835,53.9,1
 2026-06-08-0909,2026-06-08,amazon-fresh,Jaipur,302026,385,835,53.9,1
+2026-06-08-1204,2026-06-08,amazon-fresh,Delhi,110040,385,835,53.9,1
+2026-06-08-1204,2026-06-08,amazon-fresh,Delhi,110067,385,835,53.9,1
 ```
 
 ---
