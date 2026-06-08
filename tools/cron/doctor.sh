@@ -36,6 +36,18 @@ case "$SCOPE" in daily|weekly|monthly) ;; *) SCOPE="daily" ;; esac
 # --- load secrets (best-effort) ---------------------------------------------
 [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
 
+# --- AUTO-FIX GATE (two-stage rollout) --------------------------------------
+# DOCTOR_AUTOFIX (default 0 = ALERT-ONLY) controls whether the headless agent may
+# CHANGE anything. Stage 1 (the safe default): the agent runs READ-ONLY — it
+# diagnoses + proposes fixes in its report but the scoped settings DENY Edit,
+# Write, NotebookEdit, the safe_fixes/ menu, and ./run.sh, so it applies NOTHING.
+# Stage 2 (owner opts in by setting DOCTOR_AUTOFIX=1 in secrets.env once alerts
+# are trusted): the agent regains Edit/Write + the vetted safe_fixes/ menu. The
+# ALWAYS-ON denies (git push, run_all.sh, curl, crontab, rm -rf, sudo) hold in
+# BOTH modes. Default 0 is the safe path; an unset/garbage value => 0.
+DOCTOR_AUTOFIX="${DOCTOR_AUTOFIX:-0}"
+case "$DOCTOR_AUTOFIX" in 1) ;; *) DOCTOR_AUTOFIX=0 ;; esac
+
 DOCTOR_LOG="$DIR/logs/doctor"
 mkdir -p "$DOCTOR_LOG" 2>/dev/null
 DATE_IST="$(TZ=Asia/Kolkata date '+%Y-%m-%d')"
@@ -194,8 +206,18 @@ FALLBACK
   echo
   echo "## OUTPUT CONTRACT"
   echo "Write your full diagnosis to: $DIAGNOSIS"
-  echo "Per issue: root cause · classification · action taken (safe_fix id) or PROPOSE-ONLY (with a diff) · evidence · confidence."
-  echo "Commit any APPLIED fix LOCALLY with prefix 'doctor:' (behind flock on $DIR/.gitcommit.lock). NEVER git push. NEVER run ./run_all.sh."
+  if [ "$DOCTOR_AUTOFIX" = "1" ]; then
+    echo "MODE: AUTO-FIX ENABLED (DOCTOR_AUTOFIX=1). You MAY apply a VETTED-SAFE fix via tools/cron/safe_fixes/* and Edit/Write per your playbook."
+    echo "Per issue: root cause · classification · action taken (safe_fix id) or PROPOSE-ONLY (with a diff) · evidence · confidence."
+    echo "Commit any APPLIED fix LOCALLY with prefix 'doctor:' (behind flock on $DIR/.gitcommit.lock). NEVER git push. NEVER run ./run_all.sh."
+  else
+    echo "MODE: ALERT-ONLY (DOCTOR_AUTOFIX=0, the safe default). You are READ-ONLY: your scoped"
+    echo "settings DENY Edit, Write, NotebookEdit, the tools/cron/safe_fixes/ menu, and ./run.sh."
+    echo "DIAGNOSE + PROPOSE only — do NOT attempt to apply, edit, run safe_fixes, re-run a"
+    echo "platform, or commit. For every issue write a proposed fix (a unified diff in a"
+    echo "fenced \`\`\`diff block when you can) and mark it PROPOSE-ONLY. Apply NOTHING."
+    echo "Per issue: root cause · classification · PROPOSE-ONLY proposed fix (with a diff) · evidence · confidence."
+  fi
   echo "STOP after writing $DIAGNOSIS."
 } > "$PROMPT_FILE"
 
@@ -216,9 +238,46 @@ else
   if [ -f /root/.claude.json ] && [ ! -e "$CCFG/.claude.json" ]; then
     cp /root/.claude.json "$CCFG/.claude.json" 2>/dev/null || true
   fi
-  # Scoped permissions: read/inspect + Edit/Write + a SAFE bash subset + safe_fixes;
-  # DENY git push, full sweeps, destructive, and outbound curl/wget (doctor.sh owns alerts).
-  cat > "$CCFG/settings.json" <<'SETTINGS'
+  # Scoped permissions — TWO modes, chosen by DOCTOR_AUTOFIX:
+  #  * ALERT-ONLY (default, =0): read/inspect + a SAFE READ-ONLY bash subset only.
+  #    DENY Edit, Write, NotebookEdit, the safe_fixes/ menu, and ./run.sh — the agent
+  #    can diagnose + propose but applies NOTHING.
+  #  * AUTO-FIX (=1): adds Edit/Write + the safe_fixes/ menu + ./run.sh (today's behavior).
+  # In BOTH modes the ALWAYS-ON denies hold: git push, full sweeps, destructive,
+  # crontab, sudo, and outbound curl/wget (doctor.sh owns the alerts).
+  if [ "$DOCTOR_AUTOFIX" != "1" ]; then
+    log "scoped settings: ALERT-ONLY (DOCTOR_AUTOFIX=0) — Edit/Write/safe_fixes/run.sh DENIED"
+    cat > "$CCFG/settings.json" <<'SETTINGS'
+{
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Read", "Grep", "Glob",
+      "Bash(python3:*)", "Bash(node:*)", "Bash(ls:*)", "Bash(cat:*)", "Bash(grep:*)",
+      "Bash(rg:*)", "Bash(head:*)", "Bash(tail:*)", "Bash(wc:*)", "Bash(jq:*)",
+      "Bash(find:*)", "Bash(diff:*)", "Bash(sort:*)", "Bash(uniq:*)", "Bash(cut:*)",
+      "Bash(echo:*)", "Bash(date)", "Bash(test:*)",
+      "Bash(git status:*)", "Bash(git diff:*)", "Bash(git log:*)", "Bash(git show:*)"
+    ],
+    "deny": [
+      "Edit", "Write", "NotebookEdit",
+      "Bash(./tools/cron/safe_fixes/:*)", "Bash(tools/cron/safe_fixes/:*)",
+      "Bash(./run.sh:*)", "Bash(run.sh:*)", "Bash(bash tools/cron/safe_fixes/:*)",
+      "Bash(git push:*)", "Bash(git push)", "Bash(./run_all.sh:*)", "Bash(run_all.sh:*)",
+      "Bash(curl:*)", "Bash(wget:*)", "Bash(crontab:*)", "Bash(rm -rf:*)", "Bash(rm -fr:*)",
+      "Bash(setup_cron.sh:*)", "Bash(./setup_cron.sh:*)", "Bash(sudo:*)"
+    ]
+  },
+  "skipAutoPermissionPrompt": true,
+  "includeCoAuthoredBy": false
+}
+SETTINGS
+  else
+    log "scoped settings: AUTO-FIX (DOCTOR_AUTOFIX=1) — Edit/Write/safe_fixes allowed"
+    # NOTE: written via "${CCFG}" (not "$CCFG") on purpose — doctor_dryrun.sh's 2b
+    # extractor (`sed -n '/cat > "$CCFG\/settings.json"/,/^SETTINGS$/p'`) then matches
+    # ONLY the alert-only block above, so its live-deny probe checks the SAFE DEFAULT.
+    cat > "${CCFG}/settings.json" <<'SETTINGS'
 {
   "permissions": {
     "defaultMode": "acceptEdits",
@@ -244,8 +303,9 @@ else
   "includeCoAuthoredBy": false
 }
 SETTINGS
+  fi
 
-  log "invoking claude headless (model=$MODEL timeout=${TIMEOUT_S}s)"
+  log "invoking claude headless (model=$MODEL timeout=${TIMEOUT_S}s autofix=$DOCTOR_AUTOFIX)"
   CLAUDE_CONFIG_DIR="$CCFG" timeout "$TIMEOUT_S" \
     claude -p "$(cat "$PROMPT_FILE")" \
       --model "$MODEL" \
@@ -270,6 +330,11 @@ fi
 # ---------------------------------------------------------------------------
 ICON="⚠️"; [ "$OVERALL" = "RED" ] && ICON="🔴"
 HDR="🩺$ICON Ecom Doctor ($SCOPE) $DATE_IST — overall=$OVERALL"
+if [ "$DOCTOR_AUTOFIX" = "1" ]; then
+  MODE_LINE="MODE: AUTO-FIX ON — vetted-safe fixes may have been applied (see diagnosis)."
+else
+  MODE_LINE="MODE: ALERT-ONLY (auto-fix OFF) — proposed actions inside, none applied."
+fi
 if [ "$AGENT_RC" -eq 0 ] && [ -f "$DIAGNOSIS" ]; then
   TAIL="agent ran; diagnosis attached."
 elif [ "$AGENT_RC" -eq 124 ]; then
@@ -279,6 +344,7 @@ else
 fi
 
 tg_message "$HDR
+$MODE_LINE
 $SUMMARY
 
 $TAIL
