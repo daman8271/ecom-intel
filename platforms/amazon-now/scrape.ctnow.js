@@ -243,50 +243,67 @@ async function checkSession(page) {
   process.stderr.write('[token] ' + (token ? token.slice(0, 18) + '… minted' : 'NONE — will retry per-pincode') + '\n');
 
   const perPin = [];
+  let failedPins = 0;
   for (let i = 0; i < PINCODES.length; i++) {
     const rec = PINCODES[i];
-    const ts = Date.now();
-    let res = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
-    if (!res.glow.includes(rec.pincode)) {
-      await mintToken(page, rec.pincode);
-      res = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
-    }
-    const matched = res.glow.includes(rec.pincode);
-    // Genuine-Now gate: the page must be Amazon-Now-branded. amazon_now_page is the real
-    // discriminator — false here means NO Now storefront at this pincode (any speed chips are
-    // Fresh/marketplace scheduled slots), so the pincode is NOT Now-serviceable and yields 0 rows.
-    const nowPage = res.amazonNowPage;
-
-    // accumulate genuine-INSTANT-Now Jivo cards across pages (dedup by canonical)
-    const seen = new Set();
-    const rows = [];
-    if (matched && nowPage) {
-      let pageNo = 1; let pageRes = res;
-      while (pageNo <= MAXPAGES) {
-        for (const card of pageRes.cards) {
-          // Only genuine Now: Jivo AND an instant-minute tier. Scheduled (tomorrow/today/
-          // overnight) chips are Amazon FRESH and are dropped — they are NOT Amazon Now.
-          if (!card.isJivo || !isInstantNow(card)) continue;
-          const row = toRow(card, rec);
-          if (seen.has(row.canonical)) continue;
-          seen.add(row.canonical); rows.push(row);
-        }
-        if (!pageRes.hasNext || pageNo >= MAXPAGES) break;
-        pageNo++;
-        pageRes = await fastSetAndSearch(page, rec.pincode, token, QUERY, pageNo);
-        await sleep(250 + Math.random() * 300);
+    // Per-pincode resilience: a transient blip (e.g. page.evaluate "Failed to fetch") on ONE
+    // pincode must never crash the whole sweep. On a thrown error we record this pincode as a
+    // 0-row/failed entry (same shape as a genuinely-empty pincode so downstream is unaffected)
+    // and continue. The final result.json with all SUCCEEDED pincodes is still written below.
+    try {
+      const ts = Date.now();
+      let res = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
+      if (!res.glow.includes(rec.pincode)) {
+        await mintToken(page, rec.pincode);
+        res = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
       }
+      const matched = res.glow.includes(rec.pincode);
+      // Genuine-Now gate: the page must be Amazon-Now-branded. amazon_now_page is the real
+      // discriminator — false here means NO Now storefront at this pincode (any speed chips are
+      // Fresh/marketplace scheduled slots), so the pincode is NOT Now-serviceable and yields 0 rows.
+      const nowPage = res.amazonNowPage;
+
+      // accumulate genuine-INSTANT-Now Jivo cards across pages (dedup by canonical)
+      const seen = new Set();
+      const rows = [];
+      if (matched && nowPage) {
+        let pageNo = 1; let pageRes = res;
+        while (pageNo <= MAXPAGES) {
+          for (const card of pageRes.cards) {
+            // Only genuine Now: Jivo AND an instant-minute tier. Scheduled (tomorrow/today/
+            // overnight) chips are Amazon FRESH and are dropped — they are NOT Amazon Now.
+            if (!card.isJivo || !isInstantNow(card)) continue;
+            const row = toRow(card, rec);
+            if (seen.has(row.canonical)) continue;
+            seen.add(row.canonical); rows.push(row);
+          }
+          if (!pageRes.hasNext || pageNo >= MAXPAGES) break;
+          pageNo++;
+          pageRes = await fastSetAndSearch(page, rec.pincode, token, QUERY, pageNo);
+          await sleep(250 + Math.random() * 300);
+        }
+      }
+      // Serviceable ⇔ location resolved AND the ctnow page is genuinely Amazon-Now-branded
+      // AND at least one genuine instant-Now Jivo row was found. amazon_now_page alone is NOT
+      // fully reliable: a few pincodes render the Now page but only offer SCHEDULED slots (e.g.
+      // Mysuru 570016/570020) — those are not genuine instant Now, so requiring rows.length>0
+      // drops them and aligns the footprint to the true ~90 instant-Now pincodes (W5 tightening).
+      const serviceable = matched && nowPage && rows.length > 0;
+      perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, amazon_now_page: nowPage, glow: res.glow, matched, total_cards: res.total, rows });
+      process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}nowPage=${nowPage} svc=${serviceable} -> ${rows.length} jivo-now (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
+      await sleep(350 + Math.random() * 450);
+    } catch (err) {
+      process.stderr.write(`[skip] ${rec.pincode} ${err && err.message ? err.message : err}\n`);
+      perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable: false, amazon_now_page: false, glow: '', matched: false, total_cards: 0, rows: [] });
+      failedPins++;
+      continue;
     }
-    // Serviceable ⇔ location resolved AND the ctnow page is genuinely Amazon-Now-branded
-    // AND at least one genuine instant-Now Jivo row was found. amazon_now_page alone is NOT
-    // fully reliable: a few pincodes render the Now page but only offer SCHEDULED slots (e.g.
-    // Mysuru 570016/570020) — those are not genuine instant Now, so requiring rows.length>0
-    // drops them and aligns the footprint to the true ~90 instant-Now pincodes (W5 tightening).
-    const serviceable = matched && nowPage && rows.length > 0;
-    perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, amazon_now_page: nowPage, glow: res.glow, matched, total_cards: res.total, rows });
-    process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}nowPage=${nowPage} svc=${serviceable} -> ${rows.length} jivo-now (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
-    await sleep(350 + Math.random() * 450);
   }
+  process.stderr.write(`[done] ${PINCODES.length} pincodes, ${failedPins} failed (skipped)\n`);
+  // Catastrophic guard: do NOT silently ship a mostly-empty run, but do NOT hard-exit either
+  // (that would reintroduce the crash). Still write result.json — review.py's baseline/row-collapse
+  // check then correctly marks it SUSPECT/BROKEN — but emit a loud alarm so logs show it.
+  if (failedPins > PINCODES.length / 2) process.stderr.write('[ALARM] majority of pincodes failed\n');
   await browser.close().catch(() => {});
 
   const allRows = perPin.flatMap((p) => p.rows);
