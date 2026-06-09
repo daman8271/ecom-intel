@@ -1308,10 +1308,16 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
                     red_count += 1
             # EXACT price-match indicator (trailing col): which platforms ON THIS ROW
             # sit at the identical ₹. Pending rows show "pending" (no data yet).
-            pbp = _row_price_by_platform(rec, ref_name, comp_cols, include_ref=True)
-            groups = [] if is_pending else core.exact_price_match(pbp)
-            if _paint_exact_cell(ws.cell(row, PM_C), groups, pending=is_pending):
-                exact_match_skus.add(sku)
+            # Inner guard (W3 note): a per-row failure degrades the cell to "—" rather
+            # than dropping the whole sheet — matches the Ecom Head section's granularity.
+            try:
+                pbp = _row_price_by_platform(rec, ref_name, comp_cols, include_ref=True)
+                groups = [] if is_pending else core.exact_price_match(pbp)
+                if _paint_exact_cell(ws.cell(row, PM_C), groups, pending=is_pending):
+                    exact_match_skus.add(sku)
+            except Exception:
+                ec = ws.cell(row, PM_C, "—")
+                ec.font = Font(name=F, size=10, color=MUTED)
             # zebra the SKU/pincode gutter lightly on the 2nd pincode
             if pin != pincodes[0]:
                 for cc in range(1, PIN_C + 1):
