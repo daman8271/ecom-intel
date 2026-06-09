@@ -77,6 +77,19 @@ REGIME_PRICE_KEY = {"BAU": "bau", "SVD": "svd", "ART": "art"}
 DOW_KEYS = ("mon", "tue", "wed", "thu", "fri", "sat", "sun")  # date.weekday() 0=mon
 ALLOWED_CONFIDENCE = ("exact", "anchored")
 
+# SVD applies on the first N calendar days of any month (any weekday), in addition
+# to the weekday defaults (Fri/Sat/Sun). Owner-confirmed 2026-06-09.
+SVD_FIRST_N_DAYS = 7
+
+# ---- Competitor price-match (JOB B) — owner-confirmed 2026-06-09 -------------
+# Reference pincodes the compete sheets evaluate at (NOT modal/average — exact
+# rows at these pincodes). 560005 has no live data yet (W3 adds it to the sweeps
+# -> fills tomorrow); until then every cell there is NOT_SERVICEABLE.
+PM_REF_PINCODES = ["110095", "560005"]
+# Platforms whose ONE national price applies at every pincode (marketplace /
+# all-India). For these we ignore the pincode arg and tag the cell national=True.
+NATIONAL_PLATFORMS = {"amazon", "flipkart", "bigbasket"}
+
 
 # ---------------------------------------------------------------- helpers
 
@@ -128,7 +141,15 @@ _BUILTIN_DEFAULTS = {"mon": "BAU", "tue": "BAU", "wed": "BAU", "thu": "BAU",
 def regime_for(date=None, cfg=None):
     """'BAU'|'SVD'|'ART' for the given date. cfg (dict) is an optional injected
     regime config for testing; default reads tools/pricematch/regime.json.
-    A missing/corrupt regime.json degrades to the built-in Fri-Sun=SVD defaults."""
+    A missing/corrupt regime.json degrades to the built-in Fri-Sun=SVD defaults.
+
+    Resolution order (first match wins):
+      1. An exact-date override in regime.json (ART or explicit BAU/SVD) ALWAYS wins.
+      2. The weekday default (Fri/Sat/Sun -> SVD, else BAU).
+      3. FIRST-WEEK rule (owner-confirmed 2026-06-09): if steps 1-2 resolved to BAU
+         and the date is within the first SVD_FIRST_N_DAYS (=7) days of its month,
+         upgrade to SVD. So days 1-7 of any month are SVD on ANY weekday, while an
+         explicit ART/override on such a date still wins (step 1 precedence)."""
     d = _as_date(date)
     if cfg is None:
         try:
@@ -142,10 +163,16 @@ def regime_for(date=None, cfg=None):
         if str(ov.get("date")) == iso:
             r = str(ov.get("regime", "")).upper()
             if r in REGIMES:
-                return r
+                return r  # override (incl. ART) wins outright
     dow = DOW_KEYS[d.weekday()]
     r = str((cfg.get("defaults") or {}).get(dow, _BUILTIN_DEFAULTS[dow])).upper()
-    return r if r in REGIMES else _BUILTIN_DEFAULTS[dow]
+    if r not in REGIMES:
+        r = _BUILTIN_DEFAULTS[dow]
+    # First-week-of-month rule: only upgrades a plain BAU weekday to SVD; never
+    # downgrades SVD and never overrides an explicit override above.
+    if r == "BAU" and d.day <= SVD_FIRST_N_DAYS:
+        return "SVD"
+    return r
 
 
 # ---------------------------------------------------------------- context
@@ -389,6 +416,151 @@ def summary(ctx):
     return out
 
 
+# ------------------------------------------------- competitor compare (JOB B)
+#
+# COLOR POLARITY (OWNER — OPPOSITE to the agreed-price sheets, flag it loudly):
+#   a COMPETITOR priced BELOW the reference (undercutting our Amazon) = RED;
+#   ABOVE the reference = GREEN; within +/- TOLERANCE of it = MATCH.
+#   diff = competitor_price - ref_price  (NEGATIVE diff = undercut = RED).
+# This is the inverse of platform_comparison's BELOW=red-against-our-own-floor.
+
+def price_at(platform, sku, pincode, live=None, skumap=None):
+    """Live price for a master SKU on a platform at a SPECIFIC pincode.
+
+    Returns {sale, mrp, in_stock, seller} or None. Read FRESH from
+    platforms/<p>/result.json (never the sku_map snapshot prices).
+      - None            -> not serviceable here: unknown/no-data platform
+                           (e.g. /), no ratified mapping, or no
+                           row at this pincode at all.
+      - in_stock False  -> a row exists at the pincode but is OOS / unpriced.
+      - in_stock True   -> sale is the modal in-stock price at the pincode.
+    NATIONAL_PLATFORMS ignore the pincode (one national price for every pincode).
+    `live`/`skumap` are optional injected caches (competitor_compare passes them
+    so the inner loop reads each result.json once)."""
+    if platform not in ID_FIELD:
+        return None  # caller-passed but we have no data (, removed )
+    if skumap is None:
+        skumap = _load_json(MAP_PATH)
+    if live is None:
+        live = _index_live(platform)
+    national = platform in NATIONAL_PLATFORMS
+
+    entry = (skumap.get("skus") or {}).get(sku) or {}
+    plat = (entry.get("platforms") or {}).get(platform)
+    listings = _candidate_listings(plat) if plat else []
+    if not listings:
+        return None  # no ratified mapping for this SKU on this platform
+
+    listing, rows = listings[0], _rows_for(live, listings[0])
+    for alt in listings[1:]:
+        if rows:
+            break
+        arows = _rows_for(live, alt)
+        if arows:
+            listing, rows = alt, arows
+
+    if not national:
+        rows = [r for r in rows if str(r.get("pincode", "")) == str(pincode)]
+    if not rows:
+        return None  # not serviceable at this pincode
+
+    in_rows = [r for r in rows if r.get("in_stock") and _num(r.get("sale")) is not None]
+    if not in_rows:
+        mrps = [_num(r.get("mrp")) for r in rows if _num(r.get("mrp")) is not None]
+        return {"sale": None, "mrp": _round2(_modal(mrps)) if mrps else None,
+                "in_stock": False, "seller": rows[0].get("seller")}
+
+    prices = [_round2(_num(r.get("sale"))) for r in in_rows]
+    sale = _modal(prices)
+    mrps = [_num(r.get("mrp")) for r in in_rows if _num(r.get("mrp")) is not None]
+    seller = next((r.get("seller") for r in in_rows
+                   if _round2(_num(r.get("sale"))) == sale), in_rows[0].get("seller"))
+    return {"sale": sale, "mrp": _round2(_modal(mrps)) if mrps else None,
+            "in_stock": True, "seller": seller}
+
+
+def buybox_seller(sku, live=None, skumap=None):
+    """Amazon-core current buybox seller + price for a master SKU, or None.
+    seller is the raw amazon `seller` field: 'RK World Infocom Pvt Ltd',
+    'Jivo Mart', or '' (blank = Amazon-fulfilled). Used for the compete sheet's
+    'Amazon Jivo Mart' (RK/JM/blank) column when amazon-core is the reference."""
+    p = price_at("amazon", sku, "-", live=live, skumap=skumap)
+    if p is None or not p.get("in_stock"):
+        return None
+    return {"seller": p.get("seller"), "sale": p.get("sale")}
+
+
+def competitor_compare(ref_platform, competitor_platforms, skus, pincodes=PM_REF_PINCODES):
+    """Compare each competitor platform's per-pincode price against a REFERENCE
+    platform's price, for every (sku, pincode). Returns one record per
+    (sku, pincode):
+        {sku, pincode, ref_price, ref_seller?, cells: [
+            {platform, price, in_stock, national, diff, status}, ... ]}
+    ref_price is the reference's in-stock price at that pincode (for amazon-core
+    ref this is the national buybox price; for amazon-now ref it is the
+    per-pincode price). ref_seller is present only for amazon-core ref (buybox).
+
+    cell.status, in precedence order:
+      NOT_SERVICEABLE  competitor has no row here (or no data at all) -> blank
+      OOS              a row exists but is out of stock / unpriced
+      NO_REF           competitor IS priced but the reference has no price
+      BELOW  (RED)     competitor priced < ref - TOLERANCE  (undercut)
+      ABOVE  (GREEN)   competitor priced > ref + TOLERANCE
+      MATCH            within +/- TOLERANCE of the reference
+    """
+    skumap = _load_json(MAP_PATH)
+    needed = {ref_platform, *competitor_platforms}
+    live = {p: _index_live(p) for p in needed if p in ID_FIELD}
+    ref_is_core = (ref_platform == "amazon")
+
+    out = []
+    for sku in skus:
+        for pincode in pincodes:
+            ref = (price_at(ref_platform, sku, pincode, live=live.get(ref_platform), skumap=skumap)
+                   if ref_platform in ID_FIELD else None)
+            ref_price = ref["sale"] if (ref and ref.get("in_stock")) else None
+            if ref_is_core:
+                bb = buybox_seller(sku, live=live.get("amazon"), skumap=skumap)
+                ref_seller = bb["seller"] if bb else None
+            else:
+                ref_seller = ref.get("seller") if ref else None
+
+            cells = []
+            for plat in competitor_platforms:
+                national = plat in NATIONAL_PLATFORMS
+                p = (price_at(plat, sku, pincode, live=live.get(plat), skumap=skumap)
+                     if plat in ID_FIELD else None)
+                cell = {"platform": plat, "price": None, "in_stock": False,
+                        "national": national, "diff": None, "status": None}
+                if p is None:
+                    cell["status"] = "NOT_SERVICEABLE"
+                elif not p.get("in_stock"):
+                    cell["status"] = "OOS"
+                elif ref_price is None:
+                    cell["price"] = p["sale"]
+                    cell["in_stock"] = True
+                    cell["status"] = "NO_REF"
+                else:
+                    cell["price"] = p["sale"]
+                    cell["in_stock"] = True
+                    diff = round(p["sale"] - ref_price, 2)
+                    cell["diff"] = diff
+                    if diff < -TOLERANCE:
+                        cell["status"] = "BELOW"   # RED: competitor undercuts our Amazon
+                    elif diff > TOLERANCE:
+                        cell["status"] = "ABOVE"   # GREEN: competitor dearer than our Amazon
+                    else:
+                        cell["status"] = "MATCH"
+                cells.append(cell)
+
+            rec = {"sku": sku, "pincode": pincode, "ref_price": _round2(ref_price),
+                   "cells": cells}
+            if ref_seller is not None:
+                rec["ref_seller"] = ref_seller
+            out.append(rec)
+    return out
+
+
 # ---------------------------------------------------------------- CLI
 
 def main(argv=None):
@@ -396,7 +568,21 @@ def main(argv=None):
     ap.add_argument("--date", default=None, help="YYYY-MM-DD (default: today)")
     ap.add_argument("--json", nargs="?", const="__ALL__", default=None, metavar="PLATFORM",
                     help="dump JSON: all platforms + summary, or one platform's records")
+    ap.add_argument("--compete", default=None, metavar="REF_PLATFORM",
+                    help="dump competitor_compare JSON with this reference platform "
+                         "(e.g. amazon-now or amazon); competitors = the other live platforms")
     args = ap.parse_args(argv)
+
+    if args.compete is not None:
+        ref = args.compete
+        ctx = load_context(args.date)
+        competitors = [p for p in PLATFORM_ORDER if p != ref]
+        recs = competitor_compare(ref, competitors, ctx["sku_names"])
+        json.dump({"date": ctx["date"], "ref_platform": ref,
+                   "ref_pincodes": PM_REF_PINCODES, "competitors": competitors,
+                   "records": recs}, sys.stdout, indent=1)
+        sys.stdout.write("\n")
+        return 0
 
     ctx = load_context(args.date)
     if args.json == "__ALL__":

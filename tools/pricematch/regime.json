@@ -1,4 +1,5 @@
 {
+  "_comment": "Pricing regime config. Weekday defaults below; exact-date overrides win outright (incl. ART). FIRST-WEEK RULE (owner-confirmed 2026-06-09): days 1-7 of ANY month resolve to SVD on any weekday (a plain-BAU weekday is upgraded to SVD), unless an override on that date says otherwise. See SVD_FIRST_N_DAYS in pricematch_core.py.",
   "defaults": {
     "mon": "BAU",
     "tue": "BAU",
