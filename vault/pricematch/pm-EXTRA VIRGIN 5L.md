@@ -14,7 +14,7 @@ platforms:
 first_seen: 2026-06-08
 last_seen: 2026-06-09
 observations: 16
-latest_status: ABOVE
+latest_status: OOS
 below_days: 2
 tags:
   - type/pricematch-sku
@@ -37,7 +37,7 @@ SKU memory: [[jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contai
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-09) — ref ₹4039 vs live ₹7920
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-09) — ref ₹4039 vs live ₹-
 - **Days below reference:** 2 of 2
 - **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
@@ -60,7 +60,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-09,blinkit,NOT_LISTED,BAU,4039,,,,,,0,false
 2026-06-09,flipkart,ABOVE,BAU,4039,4047,4047,4047,8,0.2,0,true
 2026-06-09,flipkart-minutes,NOT_LISTED,BAU,4039,,,,,,0,false
-2026-06-09,zepto,ABOVE,BAU,4039,7920,3600,7920,3881,96.09,1,true
+2026-06-09,zepto,OOS,BAU,4039,,,,,,0,false
 ```
 
 ---

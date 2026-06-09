@@ -6,9 +6,9 @@ platforms:
   - amazon-now
 first_seen: 2026-06-09
 last_seen: 2026-06-09
-observations: 4
-min_price: 985
-max_price: 985
+observations: 22
+min_price: 960
+max_price: 999
 latest_price: 985
 tags:
   - type/sku-hub
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹985 (21.2% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Gurgaon]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-now-2026-06-09-0924]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
 
-## Price history (4 observations)
+## Price history (22 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -38,6 +38,24 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-09-0924,2026-06-09,amazon-now,Pune,411021,985,1250,21.2,1
 2026-06-09-0924,2026-06-09,amazon-now,Pune,411036,985,1250,21.2,1
 2026-06-09-0924,2026-06-09,amazon-now,Pune,411051,985,1250,21.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Bengaluru,560039,985,1250,21.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Bengaluru,560069,985,1250,21.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110003,999,1250,20.1,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110018,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110031,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110044,999,1250,20.1,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110053,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110084,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Gurgaon,122010,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Gurgaon,122051,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Mumbai,400003,999,1250,20.1,1
+2026-06-09-1226,2026-06-09,amazon-now,Mumbai,400010,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Mumbai,400015,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Mumbai,400033,960,1250,23.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Pune,411005,985,1250,21.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Pune,411015,985,1250,21.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Pune,411028,985,1250,21.2,1
+2026-06-09-1226,2026-06-09,amazon-now,Pune,411045,985,1250,21.2,1
 ```
 
 ---

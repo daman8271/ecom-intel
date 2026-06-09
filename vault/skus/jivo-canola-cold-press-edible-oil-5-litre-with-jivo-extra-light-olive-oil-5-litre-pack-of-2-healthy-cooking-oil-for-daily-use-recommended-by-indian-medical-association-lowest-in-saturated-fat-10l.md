@@ -6,10 +6,10 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-09
-observations: 11
+observations: 12
 min_price: 4178
-max_price: 4193
-latest_price: 4193
+max_price: 4218
+latest_price: 4218
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Canola Cold Press Edible Oil 5 Litre with Jivo Extra light Olive Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use | Recommended by Indian Medical Association | Lowest in Saturated Fat (5LTR + 5LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹4193 (48.5% off)
+- [[amazon]] — latest ₹4218 (48.2% off)
 
-## Runs that observed this SKU (11)
-[[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (12)
+[[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (11 observations)
+## Price history (12 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -42,6 +42,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-08-0859,2026-06-08,amazon,All India,-,4178,8149,48.7,1
 2026-06-08-1154,2026-06-08,amazon,All India,-,4193,8149,48.5,1
 2026-06-09-0857,2026-06-09,amazon,All India,-,4193,8149,48.5,1
+2026-06-09-1159,2026-06-09,amazon,All India,-,4218,8149,48.2,1
 ```
 
 ---

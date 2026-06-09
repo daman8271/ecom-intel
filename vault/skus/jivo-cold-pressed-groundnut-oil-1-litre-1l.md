@@ -7,7 +7,7 @@ platforms:
   - amazon-now
 first_seen: 2026-06-07
 last_seen: 2026-06-09
-observations: 25
+observations: 27
 min_price: 193
 max_price: 199
 latest_price: 199
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Kolkata]]
 
-## Runs that observed this SKU (10)
-[[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]]
+## Runs that observed this SKU (12)
+[[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-fresh-2026-06-09-1210]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]]
 
-## Price history (25 observations)
+## Price history (27 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -62,6 +62,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-09-0908,2026-06-09,amazon-fresh,Kolkata,700001,199,560,64.5,1
 2026-06-09-0908,2026-06-09,amazon-fresh,Kolkata,700069,199,560,64.5,1
 2026-06-09-0924,2026-06-09,amazon-now,Delhi,110091,199,560,64.5,1
+2026-06-09-1210,2026-06-09,amazon-fresh,Delhi,110091,199,560,64.5,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110091,199,560,64.5,1
 ```
 
 ---
