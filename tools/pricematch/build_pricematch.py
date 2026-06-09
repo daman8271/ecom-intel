@@ -974,8 +974,27 @@ def _compete_legend(ws, row, ref_name):
         (f"RED = cheaper than {ref_name} (they're UNDERCUTTING us)", xd.RED_FILL_HEX, xd.RED_TEXT),
         (f"GREEN = dearer than {ref_name} (above our price)", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
         ("no fill = MATCH (within ±₹1)", None, INK),
-        ("pending = pincode not yet swept (fills next sweep) · n/s = not serviceable · OOS = out of stock", None, None),
+        ("n/s = platform doesn't sell/serve this SKU here · OOS = out of stock · pending = 560005 fills on tomorrow's sweep · “—” seller = no live Amazon buybox (out of stock)", None, None),
+        ("Rows = only SKUs at least one competitor actually sells (q-comm platforms carry ~9–25 of the 113 SKUs).", None, None),
     ], span=2)
+
+
+def _sku_has_compete_data(sku, by_key, pincodes, comp_specs):
+    """True if at least one (non-blank) competitor actually carries this SKU (has a live
+    price at any reference pincode). Quick-commerce platforms sell only ~9–25 of the 113
+    master SKUs, so without this filter the sheet is a wall of 'n/s' for products nobody
+    on these platforms sells. We show ONLY the SKUs with a real head-to-head."""
+    for pin in pincodes:
+        rec = by_key.get((sku, pin)) or {}
+        cells = rec.get("_cell_by_platform") or {}
+        for spec in comp_specs:
+            if spec.get("blank"):
+                continue
+            cell = cells.get(spec["key"]) or {}
+            if _f(cell.get("price")) is not None or \
+               cell.get("status") in ("BELOW", "ABOVE", "MATCH", "NO_REF"):
+                return True
+    return False
 
 
 def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map, *,
@@ -993,6 +1012,9 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
     by_key = _index_compete(records)
     perpincode_keys = {c["key"] for c in columns if not c.get("national")}
     pending = _pending_pincodes(records, perpincode_keys, ref_key, ref_is_perpincode)
+    # Only SKUs a competitor actually sells (else 90+ all-'n/s' rows). Preserves map order.
+    shown_skus = [s for s in _compete_skus(sku_map)
+                  if _sku_has_compete_data(s, by_key, pincodes, columns)]
 
     # ---- columns layout ----
     col = 1
@@ -1060,10 +1082,15 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
     ws.row_dimensions[hdr_row].height = 28
     ws.freeze_panes = ws.cell(hdr_row + 1, PIN_C + 1).coordinate
 
-    # ---- body: one sub-block (per pincode) per SKU ----
+    # ---- body: one sub-block (per pincode) per SKU (only SKUs a competitor sells) ----
     red_count = 0
     row = hdr_row + 1
-    for sku in _compete_skus(sku_map):
+    if not shown_skus:
+        nc = ws.cell(row, 1, "No competitor is selling any tracked SKU at these pincodes today.")
+        nc.font = Font(name=F, size=10, italic=True, color=MUTED)
+        ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=last_c)
+        return 0
+    for sku in shown_skus:
         block_top = row
         seller_txt = None
         for pin in pincodes:
