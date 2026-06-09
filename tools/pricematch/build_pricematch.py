@@ -1160,7 +1160,6 @@ def build_compete_sheets(wb, date, regime, sku_map):
 
     # ---- Sheet 1: Amazon Now PM Check ----
     now_cols = [
-        {"key": "", "label": "", "blank": True},
         {"key": "blinkit", "label": "Blinkit"},
         {"key": "zepto", "label": "Zepto"},
         {"key": "flipkart-minutes", "label": "Flipkart Minutes"},
@@ -1177,7 +1176,6 @@ def build_compete_sheets(wb, date, regime, sku_map):
     # ---- Sheet 2: Amazon Core PM Check ----
     core_cols = [
         {"key": "blinkit", "label": "Blinkit"},
-        {"key": "", "label": "", "blank": True},
         {"key": "zepto", "label": "Zepto"},
         {"key": "flipkart-minutes", "label": "Flipkart Minutes"},
         {"key": "flipkart", "label": "Flipkart MP", "national": True},
