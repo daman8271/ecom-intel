@@ -561,6 +561,78 @@ def competitor_compare(ref_platform, competitor_platforms, skus, pincodes=PM_REF
     return out
 
 
+# ------------------------------------------- EXACT price-match (cross-platform)
+#
+# DISTINCT from the Matrix +/-5 cluster: this detects 2+ platforms sitting at the
+# IDENTICAL price for one SKU (genuine price-matching between platforms). "Same
+# price" = the prices round to the same whole rupee (|a-b| < 0.5). This is a
+# neutral *signal* — NOT a compliance verdict, NOT red/green.
+
+EXACT_MATCH_TOL = 0.5  # "same price" = prices round to the same whole rupee
+
+
+def exact_price_match(price_by_platform):
+    """Given {platform: price} (None / non-numeric = not priced), return the
+    groups of >=2 platforms sharing the SAME price (within EXACT_MATCH_TOL, i.e.
+    rounding to the same whole rupee). Each group:
+        {"price": <rounded Rs>, "platforms": [<platform keys sorted>]}
+    Groups sorted by size desc then price asc. Empty list if no 2 platforms share
+    a price. None / non-numeric prices are ignored. A platform appears in at most
+    one group (it lands in exactly one whole-rupee bucket)."""
+    buckets = {}  # rounded-rupee -> [platform, ...]
+    for plat, price in (price_by_platform or {}).items():
+        v = _num(price)
+        if v is None:
+            continue
+        key = int(round(v))  # whole-rupee bucket; |a-b| < 0.5 => same bucket
+        buckets.setdefault(key, []).append(plat)
+    groups = [
+        {"price": key, "platforms": sorted(plats)}
+        for key, plats in buckets.items() if len(plats) >= 2
+    ]
+    groups.sort(key=lambda g: (-len(g["platforms"]), g["price"]))
+    return groups
+
+
+def _board_price(platform, sku, pincodes, live, skumap):
+    """A single board-wide live price for (platform, sku), or None. National
+    platforms use their one price; per-pincode platforms use the modal of the
+    in-stock prices observed across the reference pincodes."""
+    if platform not in ID_FIELD:
+        return None
+    if platform in NATIONAL_PLATFORMS:
+        p = price_at(platform, sku, "-", live=live.get(platform), skumap=skumap)
+        return p["sale"] if (p and p.get("in_stock")) else None
+    sales = []
+    for pc in pincodes:
+        p = price_at(platform, sku, pc, live=live.get(platform), skumap=skumap)
+        if p and p.get("in_stock") and p.get("sale") is not None:
+            sales.append(p["sale"])
+    return _modal(sales) if sales else None
+
+
+def board_price_matches(skus, platforms=PLATFORM_ORDER, pincodes=PM_REF_PINCODES,
+                        live=None, skumap=None):
+    """Board-wide convenience: per SKU, build {platform: live_price} from the FRESH
+    live records and run exact_price_match. Returns the SKUs that have at least one
+    exact-match group:
+        [{"sku": <name>, "groups": [<exact_price_match group>, ...]}, ...]
+    `live`/`skumap` are optional injected caches (read once each if omitted).
+    W2 may call this for the Ecom Head summary, or build the {platform: price} dict
+    itself and call exact_price_match directly — both are supported."""
+    if skumap is None:
+        skumap = _load_json(MAP_PATH)
+    if live is None:
+        live = {p: _index_live(p) for p in platforms if p in ID_FIELD}
+    out = []
+    for sku in skus:
+        pbp = {p: _board_price(p, sku, pincodes, live, skumap) for p in platforms}
+        groups = exact_price_match(pbp)
+        if groups:
+            out.append({"sku": sku, "groups": groups})
+    return out
+
+
 # ---------------------------------------------------------------- CLI
 
 def main(argv=None):
@@ -571,7 +643,24 @@ def main(argv=None):
     ap.add_argument("--compete", default=None, metavar="REF_PLATFORM",
                     help="dump competitor_compare JSON with this reference platform "
                          "(e.g. amazon-now or amazon); competitors = the other live platforms")
+    ap.add_argument("--exact-demo", action="store_true",
+                    help="list SKUs where 2+ platforms sit at the EXACT same Rs "
+                         "(exact_price_match / board_price_matches smoke test)")
     args = ap.parse_args(argv)
+
+    if args.exact_demo:
+        ctx = load_context(args.date)
+        matches = board_price_matches(ctx["sku_names"])
+        print("exact price-matches (2+ platforms at identical Rs)  %s  regime=%s"
+              % (ctx["date"], ctx["regime"]))
+        if not matches:
+            print("  (no SKU has 2+ platforms at an identical price today)")
+        for m in matches:
+            for g in m["groups"]:
+                print("  Rs%-7s x%d  %-34s %s" % (
+                    g["price"], len(g["platforms"]), m["sku"][:34],
+                    ", ".join(g["platforms"])))
+        return 0
 
     if args.compete is not None:
         ref = args.compete
