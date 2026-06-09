@@ -123,13 +123,23 @@ REGIME_JSON = {
     "overrides": [{"date": "2026-06-03", "regime": "ART", "note": "fixture override"}],
 }
 
-# expected regimes for the exhaustive week (hand-checked calendar):
-# 2026-06-01 Mon BAU | 02 Tue BAU | 03 Wed ART(override; default BAU) | 04 Thu BAU
-# 2026-06-05 Fri SVD | 06 Sat SVD | 07 Sun SVD | 08 Mon BAU
-WEEK = {"2026-06-01": "BAU", "2026-06-02": "BAU", "2026-06-04": "BAU",
+# expected regimes for the exhaustive week (hand-checked calendar).
+# FIRST-WEEK RULE (owner-confirmed 2026-06-09): days 1-7 of any month resolve to
+# SVD on ANY weekday; an explicit override on the date still wins.
+# 2026-06-01 Mon SVD(day1) | 02 Tue SVD(day2) | 03 Wed ART(override beats first-week)
+# 04 Thu SVD(day4) | 05 Fri SVD | 06 Sat SVD | 07 Sun SVD | 08 Mon BAU(day8, weekday)
+WEEK = {"2026-06-01": "SVD", "2026-06-02": "SVD", "2026-06-04": "SVD",
         "2026-06-05": "SVD", "2026-06-06": "SVD", "2026-06-07": "SVD",
         "2026-06-08": "BAU"}
 OVERRIDE_DATE, OVERRIDE_REGIME = "2026-06-03", "ART"
+
+# first-week-rule positive cases that generalize beyond June (proves the rule is
+# month-agnostic, not a June fixture quirk) + the day-8 weekday boundary -> BAU.
+# 2026-07-02 Thu day2 -> SVD | 2026-09-07 Mon day7 -> SVD (last first-week day) |
+# 2026-07-09 Thu day9 -> BAU (plain weekday, past first week) |
+# 2026-06-09 Tue day9 -> BAU (today; unchanged by the rule)
+FIRST_WEEK = {"2026-07-02": "SVD", "2026-09-07": "SVD",
+              "2026-07-09": "BAU", "2026-06-09": "BAU"}
 
 
 def build_sandbox(base):
@@ -234,7 +244,7 @@ def main():
     base = tempfile.mkdtemp(prefix="pmverify-")
     try:
         build_sandbox(base)
-        out = run_driver(base, list(WEEK.keys()) + [OVERRIDE_DATE], "2026-06-06")
+        out = run_driver(base, list(WEEK.keys()) + [OVERRIDE_DATE] + list(FIRST_WEEK.keys()), "2026-06-06")
 
         # --- sandbox sanity: engine must read the SANDBOX files, not /opt/ecom-intel
         if out.get("err"):
@@ -258,6 +268,11 @@ def main():
         check("regime_for override %s == %s" % (OVERRIDE_DATE, OVERRIDE_REGIME),
               out["regimes"].get(OVERRIDE_DATE) == OVERRIDE_REGIME,
               "got %r" % out["regimes"].get(OVERRIDE_DATE))
+
+        # --- first-week-of-month rule (owner 2026-06-09): days 1-7 -> SVD, month-agnostic
+        for d, want in sorted(FIRST_WEEK.items()):
+            check("first-week rule: regime_for(%s) == %s" % (d, want),
+                  out["regimes"].get(d) == want, "got %r" % out["regimes"].get(d))
 
         # --- tolerance edges, hand-computed (ref = svd 140, tol Rs1)
         edge = [("EDGE MATCH LOW 1L", 139, -1, "MATCH"),

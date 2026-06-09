@@ -99,6 +99,19 @@
   {
     "city": "Bengaluru",
     "tier": 1,
+    "pincode": "560005",
+    "locality": "Pulikeshinagar",
+    "landmark": "Pulikeshinagar, Bengaluru, 560005, India",
+    "lat": 12.9986,
+    "lon": 77.6205,
+    "represents": 1,
+    "pincodes": [
+      "560005"
+    ]
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
     "pincode": "560014",
     "locality": "Jalahalli East",
     "landmark": "Jalahalli East, Bengaluru, 560014, India",
