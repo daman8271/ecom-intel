@@ -50,6 +50,7 @@ INK        = xd.INK
 MUTED      = xd.MUTED
 RULE       = xd.RULE
 CANVAS     = xd.CANVAS
+FAINT      = "D1D5DB"    # very light grey — the quiet "not sold here" dot (owner: kill the n/s wall)
 POS        = xd.POS      # green text — ABOVE ref
 NEG        = xd.NEG      # red text — BELOW ref (the violation)
 WARN       = xd.WARN
@@ -516,9 +517,8 @@ def sheet_ecom_head_exact(ws, row, comps, sku_map):
     matches = _board_exact_matches(sku_map, by_key)
 
     row = xd.section_title(ws, row, "EXACT PRICE-MATCH ACROSS PLATFORMS", c0=1, c1=10)
-    sub = ws.cell(row, 1, "Which SKUs have 2+ platforms at the IDENTICAL ₹ (same whole rupee) "
-                          "today — genuine cross-platform price-matching. DISTINCT from the "
-                          "Matrix “Price-Match active (±₹5)” cluster: this is EXACT-equal only.")
+    sub = ws.cell(row, 1, "SKUs with 2+ platforms at the IDENTICAL ₹ today "
+                          "(exact-equal — distinct from the Matrix ±₹5 cluster).")
     sub.font = Font(name=F, size=9, color=MUTED)
     sub.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
@@ -1020,8 +1020,11 @@ def _paint_compete_cell(c, cell, *, blank, national, pending, ref_name):
     status = (cell or {}).get("status")
     price = _f((cell or {}).get("price"))
     if cell is None or status in (None, "NOT_SERVICEABLE"):
-        c.value = "n/s"
-        c.font = Font(name=F, size=9, color=MUTED)
+        # owner: kill the n/s wall — q-comm carries ~9–25 of 113 SKUs, so most cells are
+        # "not sold here". Render a quiet faint "·" instead of a loud "n/s" everywhere,
+        # so real prices + OOS stand out. Legend explains the dot.
+        c.value = "·"
+        c.font = Font(name=F, size=9, color=FAINT)
         c.alignment = Alignment(horizontal="center")
         return None
     if status == "OOS":
@@ -1031,33 +1034,20 @@ def _paint_compete_cell(c, cell, *, blank, national, pending, ref_name):
         return None
     c.value = price
     c.number_format = "₹#,##0"
-    diff = _f(cell.get("diff"))
-    nat_note = "\nnational price — same at every pincode" if national else ""
     out = None
     if status == "BELOW":                        # competitor cheaper → undercut → RED
         c.fill = RED_FILL
         c.font = Font(name=F, size=10, bold=True, color=NEG)
-        c.comment = Comment(f"−₹{abs(diff or 0):,.0f} BELOW {ref_name} — UNDERCUTTING us{nat_note}",
-                            "pricematch", height=72, width=250)
         out = "RED"
     elif status == "ABOVE":                      # competitor dearer → GREEN
         c.fill = GREEN_FILL
         c.font = Font(name=F, size=10, bold=True, color=POS)
-        c.comment = Comment(f"+₹{abs(diff or 0):,.0f} ABOVE {ref_name}{nat_note}",
-                            "pricematch", height=60, width=250)
     elif status == "MATCH":                       # within ±₹1 → no fill
         c.font = Font(name=F, size=10, color=INK)
-        c.comment = Comment(f"within ±₹1 of {ref_name} — matched{nat_note}",
-                            "pricematch", height=54, width=230)
     elif status == "NO_REF":                       # priced, but no Amazon ref to compare
         c.font = Font(name=F, size=10, color=MUTED)
-        c.comment = Comment(f"no {ref_name} reference at this pincode to compare{nat_note}",
-                            "pricematch", height=54, width=230)
     else:
         c.font = Font(name=F, size=10, color=INK)
-        if national:
-            c.comment = Comment("national price — same at every pincode", "pricematch",
-                                height=40, width=210)
     return out
 
 
@@ -1071,8 +1061,8 @@ def _paint_ref_cell(c, ref_price, *, pending, ref_is_perpincode):
         return
     rp = _f(ref_price)
     if rp is None:
-        c.value = "n/s"
-        c.font = Font(name=F, size=9, color=MUTED)
+        c.value = "·"                            # we don't sell it here — quiet, not a loud n/s
+        c.font = Font(name=F, size=9, color=FAINT)
         c.alignment = Alignment(horizontal="center")
         return
     c.value = rp
@@ -1121,10 +1111,6 @@ def _paint_exact_cell(c, groups, *, pending):
     c.fill = SOFT_FILL                           # BRAND_SOFT — explicitly NOT red/green
     c.font = Font(name=F, size=9, bold=True, color=BRAND)
     c.alignment = Alignment(horizontal="left", vertical="center", indent=1, wrap_text=True)
-    c.comment = Comment("EXACT price match: these platforms list this SKU at the IDENTICAL "
-                        "₹ (same whole rupee) at this pincode — genuine price-matching. "
-                        "This is NOT the ±₹5 'price-match active' band on the Matrix.",
-                        "pricematch", height=84, width=260)
     return True
 
 
@@ -1133,23 +1119,21 @@ def _write_exact_summary(ws, summary_row, last_c, n_skus):
     Sage-filled so it visually ties to the ⚡ cells below."""
     noun = "SKU" if n_skus == 1 else "SKUs"
     cell = ws.cell(summary_row, 1,
-                   f"⚡ {n_skus} {noun} with an EXACT cross-platform price-match today "
-                   f"— 2+ platforms at the IDENTICAL ₹ (same whole rupee, NOT the ±₹5 cluster). "
-                   f"See the “Price match (same ₹)” column →")
+                   f"⚡ {n_skus} {noun} with an exact cross-platform price match today.")
     cell.font = Font(name=F, size=10, bold=True, color=BRAND)
     cell.fill = SOFT_FILL
     cell.alignment = Alignment(horizontal="left", vertical="center", indent=1)
 
 
 def _compete_legend(ws, row, ref_name):
-    """The SACRED opposite-polarity legend — stated loudly at the top of each PM sheet."""
+    """One tight legend: the essential opposite-polarity colour rule + a short marker key.
+    (Owner 2026-06-09: strip the note clutter — keep only the red/green meaning + a minimal key.)"""
     xd.legend(ws, row, [
-        (f"RED = cheaper than {ref_name} (they're UNDERCUTTING us)", xd.RED_FILL_HEX, xd.RED_TEXT),
-        (f"GREEN = dearer than {ref_name} (above our price)", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
-        ("no fill = MATCH (within ±₹1)", None, INK),
-        ("⚡ sage = EXACT price match: 2+ platforms at the IDENTICAL ₹ (same whole rupee — NOT the ±₹5 cluster)", xd.BRAND_SOFT, INK),
-        ("n/s = platform doesn't sell/serve this SKU here · OOS = out of stock · pending = 560005 fills on tomorrow's sweep · “—” seller = no live Amazon buybox (out of stock)", None, None),
-        ("Rows = only SKUs at least one competitor actually sells (q-comm platforms carry ~9–25 of the 113 SKUs).", None, None),
+        (f"RED = below {ref_name} (UNDERCUTTING us)", xd.RED_FILL_HEX, xd.RED_TEXT),
+        (f"GREEN = above {ref_name}", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
+        ("no fill = match (±₹1)", None, INK),
+        ("⚡ = exact same ₹", xd.BRAND_SOFT, INK),
+        ("· not sold · OOS out of stock", None, None),
     ], span=2)
 
 
@@ -1221,11 +1205,9 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
     b.fill = PatternFill("solid", fgColor=badge_color)
     b.alignment = Alignment(horizontal="center", vertical="center")
 
-    # ---- loud sub-title: what "reference" means + the seller note (sheet 2) ----
-    sub = (f"Each competitor's live price at {', '.join(PM_COMPETE_CITY.get(p, p) + ' ' + p for p in pincodes)} "
-           f"vs our {ref_name} price. COLOUR IS OPPOSITE the agreed-price sheets — see legend.")
-    if show_seller:
-        sub += "  Seller = current buybox holder; both-seller (JM-vs-RK) split coming."
+    # ---- tight sub-title: competitor live price vs our reference (colour is OPPOSITE the
+    # agreed sheets — the one warning that must stay; everything else stripped per owner) ----
+    sub = f"Competitor live price vs our {ref_name} — colour is OPPOSITE the agreed sheets (see legend)."
     hs = ws.cell(2, 1, sub)
     hs.font = Font(name=F, size=9, color=MUTED)
     hs.alignment = Alignment(horizontal="left", vertical="center", indent=1)
