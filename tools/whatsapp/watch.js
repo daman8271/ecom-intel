@@ -44,7 +44,7 @@ const STARTUP_GRACE_S = Number(process.env.WA_BOT_STARTUP_GRACE_S || 20);
 
 const KEYWORDS = [
   'cron', 'scraper', 'scrape', 'selfheal', 'self-heal', 'self healing',
-  'ecom-intel', 'ecom intel', 'blinkit', '', 'zepto',
+  'ecom-intel', 'ecom intel', 'blinkit', 'zepto',
   'flipkart', 'amazon', 'fresh', 'report', 'excel', 'vault',
 ];
 

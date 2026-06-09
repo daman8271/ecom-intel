@@ -69,7 +69,6 @@ F = "Calibri"           # ships with every Excel; never substitute-fonted
 PLATFORM_DISPLAY = {
     "blinkit":          "Blinkit",
     "zepto":            "Zepto",
-    "":        "",
     "flipkart-minutes": "Flipkart Minutes",
     "flipkart":         "Flipkart",
     "bigbasket":        "BigBasket",

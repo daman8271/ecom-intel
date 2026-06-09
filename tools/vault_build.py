@@ -61,8 +61,6 @@ SPEC = "[[VAULT-SPEC]]"
 PLATFORM_INFO = {
     "blinkit":          ("quick-commerce", "per-pincode", "low",
                          "Blinkit 10-20 min delivery; pricing is per-pincode (top-cities sweep)."),
-    "":        ("quick-commerce", "per-pincode", "low",
-                         "  quick-commerce; per-pincode pricing across top cities."),
     "flipkart-minutes": ("quick-commerce", "per-pincode", "low",
                          "Flipkart Minutes hyperlocal quick-commerce; per-pincode pricing."),
     "flipkart":         ("marketplace", "national", "low",
