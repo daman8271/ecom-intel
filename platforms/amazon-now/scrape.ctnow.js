@@ -55,6 +55,30 @@ try {
   for (const p of pj) if (p.asin) PRODUCTS[p.asin] = p;
 } catch (_) {}
 
+// --- SEED-FALLBACK for the broad-search recall gap (amzcover W1, 2026-06-09) -------------------
+// The broad `k=jivo&almBrandId=ctnow` search has incomplete recall: live-proven that genuinely
+// Amazon-Now-serviceable Jivo ASINs ("in 10 minutes" buy-box) can be ENTIRELY ABSENT from the
+// k=jivo result set at a store where they are in fact Now-orderable (e.g. RICE BRAN 1L B0DBHQ2QWW
+// @110095 — broad=ABSENT, direct ASIN search + PDP = genuine 10-min Now). This is the same
+// false-not-stocked class the owner caught on Zepto (a search-discovery gap, NOT a per-store
+// stock-out). FIX (Zepto-seed analogy, additive + fail-safe): the SEED is every mapped Jivo
+// amazon-now ASIN (tools/pricematch/sku_map.json); after the broad search at a serviceable
+// pincode, any SEED ASIN the broad search MISSED entirely is re-checked via a DIRECT ASIN search
+// on the SAME ctnow surface, and added ONLY if it shows the same strict instant-minute Now tier
+// (isInstantNow). Scheduled-only items (overnight/tomorrow = Fresh) are still dropped. Toggle off
+// with SEED_FALLBACK=0; bounded by SEED_MAX direct checks/pincode. Best-effort: a load/probe error
+// never aborts the sweep. See COVERAGE-DIAG.md.
+const SEED_FALLBACK = process.env.SEED_FALLBACK !== '0';
+const SEED_MAX = parseInt(process.env.SEED_MAX || '40', 10);
+const SEED = {};   // asin -> mapped SKU name
+try {
+  const sm = JSON.parse(fs.readFileSync(path.join(__dirname, '..', '..', 'tools', 'pricematch', 'sku_map.json'), 'utf8'));
+  for (const [name, v] of Object.entries(sm.skus || {})) {
+    const an = v && v.platforms && v.platforms['amazon-now'];
+    if (an && an.id) SEED[an.id] = name;
+  }
+} catch (e) { process.stderr.write('[seed] sku_map load failed (' + (e && e.message) + ') — fallback inert\n'); }
+
 // --- price/pack helpers (IDENTICAL to zepto/blinkit/fresh so canonical IDs line up) ---
 function parseVolMl(pack) {
   if (!pack) return null;
@@ -241,6 +265,7 @@ async function checkSession(page) {
 
   await mintToken(page, PINCODES[0] ? PINCODES[0].pincode : '560034');
   process.stderr.write('[token] ' + (token ? token.slice(0, 18) + '… minted' : 'NONE — will retry per-pincode') + '\n');
+  process.stderr.write('[seed] fallback=' + (SEED_FALLBACK ? 'ON' : 'OFF') + ' seed_asins=' + Object.keys(SEED).length + ' (cap ' + SEED_MAX + '/pincode)\n');
 
   const perPin = [];
   let failedPins = 0;
@@ -265,11 +290,14 @@ async function checkSession(page) {
 
       // accumulate genuine-INSTANT-Now Jivo cards across pages (dedup by canonical)
       const seen = new Set();
+      const seenAsins = new Set();   // EVERY asin the broad search returned (any tier) — drives seed-fallback
       const rows = [];
+      let seedAdded = 0;
       if (matched && nowPage) {
         let pageNo = 1; let pageRes = res;
         while (pageNo <= MAXPAGES) {
           for (const card of pageRes.cards) {
+            if (card.asin) seenAsins.add(card.asin);
             // Only genuine Now: Jivo AND an instant-minute tier. Scheduled (tomorrow/today/
             // overnight) chips are Amazon FRESH and are dropped — they are NOT Amazon Now.
             if (!card.isJivo || !isInstantNow(card)) continue;
@@ -282,6 +310,26 @@ async function checkSession(page) {
           pageRes = await fastSetAndSearch(page, rec.pincode, token, QUERY, pageNo);
           await sleep(250 + Math.random() * 300);
         }
+
+        // SEED-FALLBACK: the broad k=jivo search has a recall gap (proven: RICE BRAN 1L @110095 is
+        // genuine 10-min Now but absent from k=jivo). For each mapped Jivo ASIN the broad search
+        // missed ENTIRELY, do a DIRECT ASIN search on the SAME ctnow surface (location already set,
+        // so token='' skips a redundant address-change POST) and add it ONLY if it shows the SAME
+        // strict instant-minute Now tier. Same gate as above → scheduled-only items stay dropped.
+        if (SEED_FALLBACK) {
+          const missed = Object.keys(SEED).filter((a) => !seenAsins.has(a)).slice(0, SEED_MAX);
+          for (const asin of missed) {
+            try {
+              const ds = await fastSetAndSearch(page, rec.pincode, '', asin, 1);
+              const card = (ds.cards || []).find((c) => c.asin === asin);
+              if (card && card.isJivo && isInstantNow(card)) {
+                const row = toRow(card, rec);
+                if (!seen.has(row.canonical)) { seen.add(row.canonical); row.via = 'seed-fallback'; rows.push(row); seedAdded++; }
+              }
+              await sleep(200 + Math.random() * 200);
+            } catch (e) { process.stderr.write(`[seed] ${rec.pincode} ${asin} err ${e && e.message}\n`); }
+          }
+        }
       }
       // Serviceable ⇔ location resolved AND the ctnow page is genuinely Amazon-Now-branded
       // AND at least one genuine instant-Now Jivo row was found. amazon_now_page alone is NOT
@@ -290,7 +338,7 @@ async function checkSession(page) {
       // drops them and aligns the footprint to the true ~90 instant-Now pincodes (W5 tightening).
       const serviceable = matched && nowPage && rows.length > 0;
       perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', serviceable, amazon_now_page: nowPage, glow: res.glow, matched, total_cards: res.total, rows });
-      process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}nowPage=${nowPage} svc=${serviceable} -> ${rows.length} jivo-now (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
+      process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}nowPage=${nowPage} svc=${serviceable} -> ${rows.length} jivo-now${seedAdded ? ' (+' + seedAdded + ' seed)' : ''} (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
       await sleep(350 + Math.random() * 450);
     } catch (err) {
       process.stderr.write(`[skip] ${rec.pincode} ${err && err.message ? err.message : err}\n`);
@@ -315,6 +363,7 @@ async function checkSession(page) {
     pincodes_with_jivo: perPin.filter((p) => p.rows.length > 0).length,
     pincodes_mismatch: perPin.filter((p) => !p.matched).length,
     total_rows: allRows.length,
+    seed_fallback_rows: allRows.filter((r) => r.via === 'seed-fallback').length,
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
     now_tier_breakdown: tiers,
     wall_s: Math.round((Date.now() - t0) / 1000),
