@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-08
-observations: 8
+last_seen: 2026-06-09
+observations: 16
 latest_status: OOS
-below_days: 1
+below_days: 2
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,15 +37,15 @@ SKU memory: [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-coo
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-08) — ref ₹989 vs live ₹-
-- **Days below reference:** 1 of 1
-- **Below on:** [[2026-06-08]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-09) — ref ₹989 vs live ₹-
+- **Days below reference:** 2 of 2
+- **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (8 observations)
+## Ref-vs-live history (16 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-08,amazon,BELOW,BAU,989,909,909,909,-80,-8.09,1,true
+2026-06-08,amazon,BELOW,BAU,989,930,930,930,-59,-5.97,1,true
 2026-06-08,amazon-fresh,BELOW,BAU,989,909,899,909,-80,-8.09,30,true
 2026-06-08,amazon-now,BELOW,BAU,989,909,909,909,-80,-8.09,13,true
 2026-06-08,bigbasket,NOT_LISTED,BAU,989,,,,,,0,false
@@ -53,6 +53,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-08,flipkart,OOS,BAU,989,,,,,,0,false
 2026-06-08,flipkart-minutes,NOT_LISTED,BAU,989,,,,,,0,false
 2026-06-08,zepto,OOS,BAU,989,,,,,,0,false
+2026-06-09,amazon,BELOW,BAU,989,939,939,939,-50,-5.06,1,true
+2026-06-09,amazon-fresh,BELOW,BAU,989,930,899,939,-59,-5.97,30,true
+2026-06-09,amazon-now,BELOW,BAU,989,930,930,930,-59,-5.97,13,true
+2026-06-09,bigbasket,NOT_LISTED,BAU,989,,,,,,0,false
+2026-06-09,blinkit,NOT_LISTED,BAU,989,,,,,,0,false
+2026-06-09,flipkart,OOS,BAU,989,,,,,,0,false
+2026-06-09,flipkart-minutes,NOT_LISTED,BAU,989,,,,,,0,false
+2026-06-09,zepto,OOS,BAU,989,,,,,,0,false
 ```
 
 ---

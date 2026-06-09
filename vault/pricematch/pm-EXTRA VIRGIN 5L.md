@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-08
-observations: 8
-latest_status: OOS
-below_days: 1
+last_seen: 2026-06-09
+observations: 16
+latest_status: ABOVE
+below_days: 2
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,15 +37,15 @@ SKU memory: [[jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contai
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-08) — ref ₹4039 vs live ₹-
-- **Days below reference:** 1 of 1
-- **Below on:** [[2026-06-08]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-09) — ref ₹4039 vs live ₹7920
+- **Days below reference:** 2 of 2
+- **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (8 observations)
+## Ref-vs-live history (16 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-08,amazon,BELOW,BAU,4039,3579,3579,3579,-460,-11.39,1,true
+2026-06-08,amazon,BELOW,BAU,4039,3619,3619,3619,-420,-10.4,1,true
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,4039,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,4039,,,,,,0,false
 2026-06-08,bigbasket,NOT_LISTED,BAU,4039,,,,,,0,false
@@ -53,6 +53,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-08,flipkart,ABOVE,BAU,4039,4047,4047,4047,8,0.2,0,true
 2026-06-08,flipkart-minutes,NOT_LISTED,BAU,4039,,,,,,0,false
 2026-06-08,zepto,OOS,BAU,4039,,,,,,0,false
+2026-06-09,amazon,BELOW,BAU,4039,3619,3619,3619,-420,-10.4,1,true
+2026-06-09,amazon-fresh,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-09,amazon-now,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-09,bigbasket,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-09,blinkit,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-09,flipkart,ABOVE,BAU,4039,4047,4047,4047,8,0.2,0,true
+2026-06-09,flipkart-minutes,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-09,zepto,ABOVE,BAU,4039,7920,3600,7920,3881,96.09,1,true
 ```
 
 ---

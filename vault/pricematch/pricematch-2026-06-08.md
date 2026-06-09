@@ -3,9 +3,9 @@ type: pricematch-daily
 date: 2026-06-08
 regime: BAU
 below: 139
-above: 27
+above: 26
 match: 2
-exposure: 10302
+exposure: 10249
 store_violations: 2825
 listings: 904
 tags:
@@ -18,15 +18,15 @@ tags:
 Up: [[Price-Match-MOC]] · Day: [[2026-06-08]] · Home: [[index]]
 
 - **Regime:** BAU
-- **KPIs:** **BAU** · 🔴 below 139 · 🟢 above 27 · ✅ match 2 · 💸 exposure ₹10302 · 🏪 store-violations 2825
-- **Coverage:** 113 SKUs · 904 listings · 116 OOS · 613 not listed
+- **KPIs:** **BAU** · 🔴 below 139 · 🟢 above 26 · ✅ match 2 · 💸 exposure ₹10249 · 🏪 store-violations 2825
+- **Coverage:** 113 SKUs · 904 listings · 117 OOS · 613 not listed
 
 ## Top offenders below reference (15)
 
 | SKU | Platform | Ref ₹ | Live ₹ | Diff ₹ |
 |---|---|--:|--:|--:|
 | [[pm-EXTRA LIGHT 3L|EXTRA LIGHT 3L]] · [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-saturated-fat-3l]] | [[amazon]] | 1849 | 1299 | -550 |
-| [[pm-EXTRA VIRGIN 5L|EXTRA VIRGIN 5L]] · [[jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-5l]] | [[amazon]] | 4039 | 3579 | -460 |
+| [[pm-EXTRA VIRGIN 5L|EXTRA VIRGIN 5L]] · [[jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-5l]] | [[amazon]] | 4039 | 3619 | -420 |
 | [[pm-EXTRA LIGHT 5L|EXTRA LIGHT 5L]] · [[jivo-extra-light-olive-oil-5-litre-tin-imported-from-spain-recommendable-daily-cooking-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-5l]] | [[amazon]] | 3069 | 2771 | -298 |
 | [[pm-EXTRA VIRGIN 2L|EXTRA VIRGIN 2L]] · [[edog2nmphjzh6gjc]] | [[flipkart]] | 1619 | 1325 | -294 |
 | [[pm-EXTRA LIGHT 5L|EXTRA LIGHT 5L]] · [[edofzfufcqdjhtqf]] | [[flipkart]] | 3069 | 2793 | -276 |
@@ -109,7 +109,7 @@ BLACK PEPPER 100G,blinkit,NOT_LISTED,BAU,145,,,,,,0,false
 BLACK PEPPER 100G,flipkart,OOS,BAU,145,,,,,,0,false
 BLACK PEPPER 100G,flipkart-minutes,NOT_LISTED,BAU,145,,,,,,0,false
 BLACK PEPPER 100G,zepto,NOT_LISTED,BAU,145,,,,,,0,false
-CANOLA 1+1L,amazon,ABOVE,BAU,529,639,639,639,110,20.79,0,true
+CANOLA 1+1L,amazon,BELOW,BAU,529,469,469,469,-60,-11.34,1,true
 CANOLA 1+1L,amazon-fresh,OOS,BAU,529,,,,,,0,false
 CANOLA 1+1L,amazon-now,OOS,BAU,529,,,,,,0,false
 CANOLA 1+1L,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
@@ -213,7 +213,7 @@ COCONUT 1L,blinkit,NOT_LISTED,BAU,559,,,,,,0,false
 COCONUT 1L,flipkart,BELOW,BAU,559,534,534,534,-25,-4.47,1,true
 COCONUT 1L,flipkart-minutes,NOT_LISTED,BAU,559,,,,,,0,false
 COCONUT 1L,zepto,NOT_LISTED,BAU,559,,,,,,0,false
-COCONUT 200ML,amazon,ABOVE,BAU,149,159,159,159,10,6.71,0,true
+COCONUT 200ML,amazon,ABOVE,BAU,149,169,169,169,20,13.42,0,true
 COCONUT 200ML,amazon-fresh,NOT_LISTED,BAU,149,,,,,,0,false
 COCONUT 200ML,amazon-now,NOT_LISTED,BAU,149,,,,,,0,false
 COCONUT 200ML,bigbasket,NOT_LISTED,BAU,149,,,,,,0,false
@@ -349,7 +349,7 @@ EXTRA VIRGIN 500ML,blinkit,NOT_LISTED,BAU,419,,,,,,0,false
 EXTRA VIRGIN 500ML,flipkart,OOS,BAU,419,,,,,,0,false
 EXTRA VIRGIN 500ML,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
 EXTRA VIRGIN 500ML,zepto,NOT_LISTED,BAU,419,,,,,,0,false
-EXTRA VIRGIN 5L,amazon,BELOW,BAU,4039,3579,3579,3579,-460,-11.39,1,true
+EXTRA VIRGIN 5L,amazon,BELOW,BAU,4039,3619,3619,3619,-420,-10.4,1,true
 EXTRA VIRGIN 5L,amazon-fresh,NOT_LISTED,BAU,4039,,,,,,0,false
 EXTRA VIRGIN 5L,amazon-now,NOT_LISTED,BAU,4039,,,,,,0,false
 EXTRA VIRGIN 5L,bigbasket,NOT_LISTED,BAU,4039,,,,,,0,false
@@ -405,7 +405,7 @@ GOLD 1L,blinkit,NOT_LISTED,BAU,199,,,,,,0,false
 GOLD 1L,flipkart,ABOVE,BAU,199,220,220,220,21,10.55,0,true
 GOLD 1L,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
 GOLD 1L,zepto,OOS,BAU,199,,,,,,0,false
-GOLD 5L,amazon,BELOW,BAU,989,909,909,909,-80,-8.09,1,true
+GOLD 5L,amazon,BELOW,BAU,989,930,930,930,-59,-5.97,1,true
 GOLD 5L,amazon-fresh,BELOW,BAU,989,909,899,909,-80,-8.09,30,true
 GOLD 5L,amazon-now,BELOW,BAU,989,909,909,909,-80,-8.09,13,true
 GOLD 5L,bigbasket,NOT_LISTED,BAU,989,,,,,,0,false
@@ -501,7 +501,7 @@ JIVO WATER 500 MLS,blinkit,NOT_LISTED,BAU,12,,,,,,0,false
 JIVO WATER 500 MLS,flipkart,NOT_LISTED,BAU,12,,,,,,0,false
 JIVO WATER 500 MLS,flipkart-minutes,NOT_LISTED,BAU,12,,,,,,0,false
 JIVO WATER 500 MLS,zepto,NOT_LISTED,BAU,12,,,,,,0,false
-MUSTARD 1L,amazon,BELOW,BAU,219,167,167,167,-52,-23.74,1,true
+MUSTARD 1L,amazon,OOS,BAU,219,,,,,,0,false
 MUSTARD 1L,amazon-fresh,BELOW,BAU,219,209,181,209,-10,-4.57,14,true
 MUSTARD 1L,amazon-now,BELOW,BAU,219,181,176,190,-38,-17.35,8,true
 MUSTARD 1L,bigbasket,BELOW,BAU,219,202.09,202.09,202.09,-16.91,-7.72,1,true

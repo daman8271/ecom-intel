@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-07
-last_seen: 2026-06-08
-observations: 21
+last_seen: 2026-06-09
+observations: 25
 min_price: 193
-max_price: 193
-latest_price: 193
+max_price: 199
+latest_price: 199
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Groundnut Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹193 (65.5% off)
-- [[amazon-now]] — latest ₹193 (65.5% off)
+- [[amazon-fresh]] — latest ₹199 (64.5% off)
+- [[amazon-now]] — latest ₹199 (64.5% off)
 
 ## Available in cities
 [[Delhi]] · [[Kolkata]]
 
-## Runs that observed this SKU (8)
-[[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]]
+## Runs that observed this SKU (10)
+[[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]]
 
-## Price history (21 observations)
+## Price history (25 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -58,6 +58,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-08-0925,2026-06-08,amazon-now,Delhi,110046,193,560,65.5,1
 2026-06-08-1204,2026-06-08,amazon-fresh,Delhi,110046,193,560,65.5,1
 2026-06-08-1221,2026-06-08,amazon-now,Delhi,110046,193,560,65.5,1
+2026-06-09-0908,2026-06-09,amazon-fresh,Delhi,110091,199,560,64.5,1
+2026-06-09-0908,2026-06-09,amazon-fresh,Kolkata,700001,199,560,64.5,1
+2026-06-09-0908,2026-06-09,amazon-fresh,Kolkata,700069,199,560,64.5,1
+2026-06-09-0924,2026-06-09,amazon-now,Delhi,110091,199,560,64.5,1
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-08
-observations: 8
+last_seen: 2026-06-09
+observations: 16
 latest_status: BELOW
-below_days: 1
+below_days: 2
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,15 +37,15 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-08) — ref ₹219 vs live ₹181
-- **Days below reference:** 1 of 1
-- **Below on:** [[2026-06-08]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-09) — ref ₹219 vs live ₹181
+- **Days below reference:** 2 of 2
+- **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (8 observations)
+## Ref-vs-live history (16 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-08,amazon,BELOW,BAU,219,167,167,167,-52,-23.74,1,true
+2026-06-08,amazon,OOS,BAU,219,,,,,,0,false
 2026-06-08,amazon-fresh,BELOW,BAU,219,209,181,209,-10,-4.57,14,true
 2026-06-08,amazon-now,BELOW,BAU,219,181,176,190,-38,-17.35,8,true
 2026-06-08,bigbasket,BELOW,BAU,219,202.09,202.09,202.09,-16.91,-7.72,1,true
@@ -53,6 +53,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-08,flipkart,ABOVE,BAU,219,255,255,255,36,16.44,0,true
 2026-06-08,flipkart-minutes,BELOW,BAU,219,171,171,171,-48,-21.92,44,true
 2026-06-08,zepto,BELOW,BAU,219,181,179,181,-38,-17.35,49,true
+2026-06-09,amazon,OOS,BAU,219,,,,,,0,false
+2026-06-09,amazon-fresh,BELOW,BAU,219,209,181,209,-10,-4.57,14,true
+2026-06-09,amazon-now,BELOW,BAU,219,181,181,190,-38,-17.35,7,true
+2026-06-09,bigbasket,BELOW,BAU,219,202.09,202.09,202.09,-16.91,-7.72,1,true
+2026-06-09,blinkit,BELOW,BAU,219,171,169,171,-48,-21.92,13,true
+2026-06-09,flipkart,BELOW,BAU,219,151,151,151,-68,-31.05,1,true
+2026-06-09,flipkart-minutes,BELOW,BAU,219,179,179,186,-40,-18.26,44,true
+2026-06-09,zepto,BELOW,BAU,219,181,179,181,-38,-17.35,57,true
 ```
 
 ---

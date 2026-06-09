@@ -19,7 +19,7 @@ tags:
 
 # flipkart-minutes — run 2026-06-08-1132
 
-Up: [[flipkart-minutes]] · Day: [[2026-06-08]] · Week: [[2026-W24]] · Month: [[2026-06]] · Prev: [[flipkart-minutes-2026-06-08-0832]]
+Up: [[flipkart-minutes]] · Day: [[2026-06-08]] · Week: [[2026-W24]] · Month: [[2026-06]] · Prev: [[flipkart-minutes-2026-06-08-0832]] · Next: [[flipkart-minutes-2026-06-09-0832]]
 
 - **Verdict:** OK
 - **Captured:** 2026-06-08 11:32 IST

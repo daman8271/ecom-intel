@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-08
-observations: 8
+last_seen: 2026-06-09
+observations: 16
 latest_status: BELOW
-below_days: 1
+below_days: 2
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-ri
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-08) — ref ₹439 vs live ₹379
-- **Days below reference:** 1 of 1
-- **Below on:** [[2026-06-08]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-09) — ref ₹439 vs live ₹379
+- **Days below reference:** 2 of 2
+- **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (8 observations)
+## Ref-vs-live history (16 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -53,6 +53,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-08,flipkart,ABOVE,BAU,439,563,563,563,124,28.25,0,true
 2026-06-08,flipkart-minutes,BELOW,BAU,439,379,379,411,-60,-13.67,7,true
 2026-06-08,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,38,true
+2026-06-09,amazon,BELOW,BAU,439,379,379,379,-60,-13.67,1,true
+2026-06-09,amazon-fresh,BELOW,BAU,439,379,379,429,-60,-13.67,107,true
+2026-06-09,amazon-now,BELOW,BAU,439,379,379,429,-60,-13.67,65,true
+2026-06-09,bigbasket,ABOVE,BAU,439,485.01,485.01,485.01,46.01,10.48,0,true
+2026-06-09,blinkit,BELOW,BAU,439,380,380,485,-59,-13.44,122,true
+2026-06-09,flipkart,ABOVE,BAU,439,563,563,563,124,28.25,0,true
+2026-06-09,flipkart-minutes,BELOW,BAU,439,379,379,405,-60,-13.67,7,true
+2026-06-09,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,53,true
 ```
 
 ---

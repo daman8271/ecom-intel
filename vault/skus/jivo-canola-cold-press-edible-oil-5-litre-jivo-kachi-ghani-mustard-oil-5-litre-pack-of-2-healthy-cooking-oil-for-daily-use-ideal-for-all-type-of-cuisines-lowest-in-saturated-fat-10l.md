@@ -5,11 +5,11 @@ display_name: "Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Kachi Ghani must
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-08
-observations: 10
+last_seen: 2026-06-09
+observations: 11
 min_price: 2194
-max_price: 2209
-latest_price: 2209
+max_price: 2234
+latest_price: 2234
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Kachi Ghani mustard Oil 5 Litre | Pack of 2 |Healthy Cooking Oil for Daily use, Ideal for all type of Cuisines |Lowest in Saturated Fat (5LTR + 5LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹2209 (23.8% off)
+- [[amazon]] — latest ₹2234 (23.0% off)
 
-## Runs that observed this SKU (10)
-[[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (11)
+[[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (10 observations)
+## Price history (11 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -41,6 +41,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-07-1158,2026-06-07,amazon,All India,-,2194,2900,24.3,1
 2026-06-08-0859,2026-06-08,amazon,All India,-,2194,2900,24.3,1
 2026-06-08-1154,2026-06-08,amazon,All India,-,2209,2900,23.8,1
+2026-06-09-0857,2026-06-09,amazon,All India,-,2234,2900,23,1
 ```
 
 ---
