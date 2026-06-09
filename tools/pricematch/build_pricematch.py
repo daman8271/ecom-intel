@@ -835,6 +835,337 @@ def sheet_coverage(wb, date, flat, by_key, sku_map):
     return ws
 
 
+# ---------------------------------------------------------------- competitor PM sheets (NEW 2026-06-09)
+# Owner ask: two "PM Check" sheets that FLIP the question the agreed-price sheets answer.
+# The agreed sheets ask "is OUR listing below the agreed price (a violation)". These ask
+# "is a COMPETITOR undercutting our Amazon price". The COLOR POLARITY IS DELIBERATELY
+# OPPOSITE and that is spelled out LOUDLY in each legend:
+#     RED   = competitor BELOW our Amazon price  → they are UNDERCUTTING us
+#     GREEN = competitor ABOVE our Amazon price
+#     no fill = MATCH (within ±₹1)
+# Pinned to the two owner reference pincodes — 110095 (Delhi, live) + 560005 (Bengaluru,
+# added to the sweeps by W3, fills tomorrow). NATIONAL platforms (bigbasket / flipkart MP /
+# amazon core) carry ONE price at every pincode. Built on the FROZEN pricematch_core
+# competitor_compare contract; the whole block is fail-safe in main() so an engine hiccup
+# can never break the master workbook (and therefore never break tomorrow's batch).
+
+PM_COMPETE_CITY = {"110095": "Delhi", "560005": "Bengaluru"}
+
+
+def _compete_skus(sku_map):
+    """Master SKU names (retired excluded) in map order — the rows of both PM sheets."""
+    return [s for s, e in (sku_map.get("skus") or {}).items() if not e.get("retired")]
+
+
+def _index_compete(records):
+    """competitor_compare() list → {(sku,pincode): record} + per-record cell index."""
+    by_key = {}
+    for r in records or []:
+        key = (r.get("sku"), str(r.get("pincode")))
+        by_key.setdefault(key, r)
+        cells = {}
+        for cell in r.get("cells") or []:
+            cells.setdefault(cell.get("platform"), cell)
+        r["_cell_by_platform"] = cells
+    return by_key
+
+
+def _pending_pincodes(records, perpincode_keys, ref_key, ref_is_perpincode):
+    """Pincodes NOT yet swept = no per-pincode platform produced a real price there.
+
+    560005 reads "pending" today and AUTO-CLEARS the moment tomorrow's sweep lands a
+    real row (then the cell renders the live value). National platforms are ignored
+    here — their one price applies everywhere and never counts as "swept" evidence."""
+    all_pin = set()
+    swept = set()
+    for r in records or []:
+        pin = str(r.get("pincode"))
+        all_pin.add(pin)
+        if ref_is_perpincode and _f(r.get("ref_price")) is not None:
+            swept.add(pin)
+        for cell in r.get("cells") or []:
+            if cell.get("platform") in perpincode_keys and _f(cell.get("price")) is not None:
+                swept.add(pin)
+    return all_pin - swept
+
+
+def _paint_compete_cell(c, cell, *, blank, national, pending, ref_name):
+    """Render one competitor cell; return "RED" if it's a (counted) undercut, else None.
+
+    OWNER POLARITY (opposite the agreed sheets): BELOW ref = competitor cheaper = RED.
+    """
+    if blank:                                    # / — no feed yet
+        c.value = ""
+        c.fill = GREY_FILL
+        return None
+    if pending:                                  # pincode not yet swept (560005 today)
+        c.value = "pending"
+        c.font = Font(name=F, size=9, italic=True, color=MUTED)
+        c.alignment = Alignment(horizontal="center")
+        c.fill = GREY_FILL
+        return None
+    status = (cell or {}).get("status")
+    price = _f((cell or {}).get("price"))
+    if cell is None or status in (None, "NOT_SERVICEABLE"):
+        c.value = "n/s"
+        c.font = Font(name=F, size=9, color=MUTED)
+        c.alignment = Alignment(horizontal="center")
+        return None
+    if status == "OOS":
+        c.value = "OOS"
+        c.font = Font(name=F, size=9, bold=True, color=MUTED)
+        c.alignment = Alignment(horizontal="center")
+        return None
+    c.value = price
+    c.number_format = "₹#,##0"
+    diff = _f(cell.get("diff"))
+    nat_note = "\nnational price — same at every pincode" if national else ""
+    out = None
+    if status == "BELOW":                        # competitor cheaper → undercut → RED
+        c.fill = RED_FILL
+        c.font = Font(name=F, size=10, bold=True, color=NEG)
+        c.comment = Comment(f"−₹{abs(diff or 0):,.0f} BELOW {ref_name} — UNDERCUTTING us{nat_note}",
+                            "pricematch", height=72, width=250)
+        out = "RED"
+    elif status == "ABOVE":                      # competitor dearer → GREEN
+        c.fill = GREEN_FILL
+        c.font = Font(name=F, size=10, bold=True, color=POS)
+        c.comment = Comment(f"+₹{abs(diff or 0):,.0f} ABOVE {ref_name}{nat_note}",
+                            "pricematch", height=60, width=250)
+    elif status == "MATCH":                       # within ±₹1 → no fill
+        c.font = Font(name=F, size=10, color=INK)
+        c.comment = Comment(f"within ±₹1 of {ref_name} — matched{nat_note}",
+                            "pricematch", height=54, width=230)
+    elif status == "NO_REF":                       # priced, but no Amazon ref to compare
+        c.font = Font(name=F, size=10, color=MUTED)
+        c.comment = Comment(f"no {ref_name} reference at this pincode to compare{nat_note}",
+                            "pricematch", height=54, width=230)
+    else:
+        c.font = Font(name=F, size=10, color=INK)
+        if national:
+            c.comment = Comment("national price — same at every pincode", "pricematch",
+                                height=40, width=210)
+    return out
+
+
+def _paint_ref_cell(c, ref_price, *, pending, ref_is_perpincode):
+    """The reference-platform price cell (our Amazon Now / Amazon Core price)."""
+    if pending and ref_is_perpincode:
+        c.value = "pending"
+        c.font = Font(name=F, size=9, italic=True, color=MUTED)
+        c.alignment = Alignment(horizontal="center")
+        c.fill = GREY_FILL
+        return
+    rp = _f(ref_price)
+    if rp is None:
+        c.value = "n/s"
+        c.font = Font(name=F, size=9, color=MUTED)
+        c.alignment = Alignment(horizontal="center")
+        return
+    c.value = rp
+    c.number_format = "₹#,##0"
+    c.font = Font(name=F, size=10, bold=True, color=INK)
+    c.fill = SOFT_FILL                            # the baseline everything is compared to
+
+
+def _compete_legend(ws, row, ref_name):
+    """The SACRED opposite-polarity legend — stated loudly at the top of each PM sheet."""
+    xd.legend(ws, row, [
+        (f"RED = cheaper than {ref_name} (they're UNDERCUTTING us)", xd.RED_FILL_HEX, xd.RED_TEXT),
+        (f"GREEN = dearer than {ref_name} (above our price)", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
+        ("no fill = MATCH (within ±₹1)", None, INK),
+        ("pending = pincode not yet swept (fills next sweep) · n/s = not serviceable · OOS = out of stock", None, None),
+    ], span=2)
+
+
+def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map, *,
+                          ref_key, ref_name, columns, ref_is_perpincode,
+                          ref_national_label=None, show_seller=False):
+    """Generic renderer for both PM Check sheets — SKU rows × per-pincode sub-blocks.
+
+    columns = ordered list of {key, label, blank?, national?} for the competitor cols.
+    Returns the count of RED (undercut) cells painted.
+    """
+    ws = wb.create_sheet(sheet_name)
+    ws.sheet_view.showGridLines = False
+
+    pincodes = [str(p) for p in PM_REF_PINCODES_LOCAL]
+    by_key = _index_compete(records)
+    perpincode_keys = {c["key"] for c in columns if not c.get("national")}
+    pending = _pending_pincodes(records, perpincode_keys, ref_key, ref_is_perpincode)
+
+    # ---- columns layout ----
+    col = 1
+    SKU_C = col; col += 1
+    SELLER_C = None
+    if show_seller:
+        SELLER_C = col; col += 1
+    PIN_C = col; col += 1
+    REF_C = col; col += 1
+    comp_cols = []
+    for spec in columns:
+        comp_cols.append((col, spec)); col += 1
+    last_c = col - 1
+
+    ws.column_dimensions[get_column_letter(SKU_C)].width = 30
+    if SELLER_C:
+        ws.column_dimensions[get_column_letter(SELLER_C)].width = 18
+    ws.column_dimensions[get_column_letter(PIN_C)].width = 16
+    ws.column_dimensions[get_column_letter(REF_C)].width = 16
+    for cc, _ in comp_cols:
+        ws.column_dimensions[get_column_letter(cc)].width = 15
+
+    # ---- title + regime badge (title spans all but the last col; badge sits in it) ----
+    title_cell(ws, 1, title, size=16, span=max(1, last_c - 1))
+    badge_color, badge_text = REGIME_BADGE.get(regime, (MUTED, f"{regime} day"))
+    b = ws.cell(1, last_c, f"{date} · {badge_text}".upper())
+    b.font = Font(name=F, size=10, bold=True, color="FFFFFF")
+    b.fill = PatternFill("solid", fgColor=badge_color)
+    b.alignment = Alignment(horizontal="center", vertical="center")
+
+    # ---- loud sub-title: what "reference" means + the seller note (sheet 2) ----
+    sub = (f"Each competitor's live price at {', '.join(PM_COMPETE_CITY.get(p, p) + ' ' + p for p in pincodes)} "
+           f"vs our {ref_name} price. COLOUR IS OPPOSITE the agreed-price sheets — see legend.")
+    if show_seller:
+        sub += "  Seller = current buybox holder; both-seller (JM-vs-RK) split coming."
+    hs = ws.cell(2, 1, sub)
+    hs.font = Font(name=F, size=9, color=MUTED)
+    hs.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+    ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=last_c)
+    ws.row_dimensions[2].height = 24
+
+    _compete_legend(ws, 3, ref_name)
+
+    # ---- header row ----
+    hdr_row = 4
+    ws.cell(hdr_row, SKU_C, "SKU")
+    if SELLER_C:
+        ws.cell(hdr_row, SELLER_C, "Buybox seller")
+    ws.cell(hdr_row, PIN_C, "Pincode")
+    ref_hdr = (ref_national_label or ref_name) + (" (national)" if not ref_is_perpincode else "")
+    ws.cell(hdr_row, REF_C, ref_hdr + " — ref ₹")
+    for cc, spec in comp_cols:
+        lbl = spec["label"]
+        if spec.get("national"):
+            lbl += " (national)"
+        elif spec.get("blank"):
+            lbl += " — no feed yet"
+        ws.cell(hdr_row, cc, lbl)
+    for cc in range(1, last_c + 1):
+        h = ws.cell(hdr_row, cc)
+        h.font = Font(name=F, size=10, bold=True, color="FFFFFF")
+        h.fill = HDR_FILL
+        h.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+    ws.cell(hdr_row, REF_C).fill = PatternFill("solid", fgColor=INK)
+    ws.row_dimensions[hdr_row].height = 28
+    ws.freeze_panes = ws.cell(hdr_row + 1, PIN_C + 1).coordinate
+
+    # ---- body: one sub-block (per pincode) per SKU ----
+    red_count = 0
+    row = hdr_row + 1
+    for sku in _compete_skus(sku_map):
+        block_top = row
+        seller_txt = None
+        for pin in pincodes:
+            rec = by_key.get((sku, pin)) or {}
+            is_pending = pin in pending
+            # SKU + seller written once (merged) at the block top
+            if pin == pincodes[0]:
+                sc = ws.cell(block_top, SKU_C, sku)
+                sc.font = Font(name=F, size=10, bold=True, color=INK)
+                sc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+                if show_seller:
+                    seller_txt = (rec.get("ref_seller") or {}).get("seller") \
+                        if isinstance(rec.get("ref_seller"), dict) else rec.get("ref_seller")
+            pc = ws.cell(row, PIN_C, f"{pin} · {PM_COMPETE_CITY.get(pin, '')}".strip(" ·"))
+            pc.font = Font(name=F, size=9, color=MUTED)
+            pc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+            _paint_ref_cell(ws.cell(row, REF_C), rec.get("ref_price"),
+                            pending=is_pending, ref_is_perpincode=ref_is_perpincode)
+            for cc, spec in comp_cols:
+                cell = (rec.get("_cell_by_platform") or {}).get(spec["key"])
+                # national columns are NEVER pending — their one price applies everywhere
+                cell_pending = is_pending and not spec.get("national")
+                res = _paint_compete_cell(
+                    ws.cell(row, cc), cell, blank=bool(spec.get("blank")),
+                    national=bool(spec.get("national")), pending=cell_pending,
+                    ref_name=ref_name)
+                if res == "RED":
+                    red_count += 1
+            # zebra the SKU/pincode gutter lightly on the 2nd pincode
+            if pin != pincodes[0]:
+                for cc in range(1, PIN_C + 1):
+                    if ws.cell(row, cc).fill.fgColor.rgb in (None, "00000000"):
+                        ws.cell(row, cc).fill = GREY_FILL
+            row += 1
+        # merge SKU (and seller) down the block
+        if row - 1 > block_top:
+            ws.merge_cells(start_row=block_top, start_column=SKU_C, end_row=row - 1, end_column=SKU_C)
+            if SELLER_C:
+                ws.merge_cells(start_row=block_top, start_column=SELLER_C, end_row=row - 1, end_column=SELLER_C)
+        if SELLER_C:
+            sl = ws.cell(block_top, SELLER_C, seller_txt or "—")
+            sl.font = Font(name=F, size=9, color=INK if seller_txt else MUTED)
+            sl.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        # thin divider under each SKU block
+        for cc in range(1, last_c + 1):
+            ws.cell(row, cc).fill = RULE_FILL
+        ws.row_dimensions[row].height = 3
+        row += 1
+    return red_count
+
+
+# the two owner reference pincodes (Delhi live, Bengaluru fills tomorrow). Mirrors the
+# frozen pricematch_core.PM_REF_PINCODES; bound from the engine at call time when present.
+PM_REF_PINCODES_LOCAL = ["110095", "560005"]
+
+
+def build_compete_sheets(wb, date, regime, sku_map):
+    """Append the two competitor PM Check sheets; return {sheet: red_cell_count}.
+
+    Binds to the FROZEN pricematch_core competitor_compare contract. Raises on a missing
+    engine / bad data so the caller's fail-safe can skip JUST these sheets.
+    """
+    global PM_REF_PINCODES_LOCAL
+    import pricematch_core as core
+    PM_REF_PINCODES_LOCAL = [str(p) for p in getattr(core, "PM_REF_PINCODES", PM_REF_PINCODES_LOCAL)]
+    skus = _compete_skus(sku_map)
+
+    # ---- Sheet 1: Amazon Now PM Check ----
+    now_cols = [
+        {"key": "", "label": "", "blank": True},
+        {"key": "blinkit", "label": "Blinkit"},
+        {"key": "zepto", "label": "Zepto"},
+        {"key": "flipkart-minutes", "label": "Flipkart Minutes"},
+        {"key": "bigbasket", "label": "BigBasket", "national": True},
+    ]
+    now_recs = core.competitor_compare(
+        "amazon-now", [c["key"] for c in now_cols], skus, pincodes=PM_REF_PINCODES_LOCAL)
+    red_now = _render_compete_sheet(
+        wb, "Amazon Now PM Check",
+        "Amazon Now — Price-Match Check (quick-commerce)", date, regime, now_recs, sku_map,
+        ref_key="amazon-now", ref_name="Amazon Now", columns=now_cols,
+        ref_is_perpincode=True)
+
+    # ---- Sheet 2: Amazon Core PM Check ----
+    core_cols = [
+        {"key": "blinkit", "label": "Blinkit"},
+        {"key": "", "label": "", "blank": True},
+        {"key": "zepto", "label": "Zepto"},
+        {"key": "flipkart-minutes", "label": "Flipkart Minutes"},
+        {"key": "flipkart", "label": "Flipkart MP", "national": True},
+    ]
+    core_recs = core.competitor_compare(
+        "amazon", [c["key"] for c in core_cols], skus, pincodes=PM_REF_PINCODES_LOCAL)
+    red_core = _render_compete_sheet(
+        wb, "Amazon Core PM Check",
+        "Amazon Core — Price-Match Check (national buybox)", date, regime, core_recs, sku_map,
+        ref_key="amazon", ref_name="Amazon Core", columns=core_cols,
+        ref_is_perpincode=False, ref_national_label="Amazon Core", show_seller=True)
+
+    return {"Amazon Now PM Check": red_now, "Amazon Core PM Check": red_core}
+
+
 # ---------------------------------------------------------------- summary sidecar
 def tg_summary(date, regime, kpi, flat):
     """Deterministic 6-line Telegram markdown (run_all.sh spools/sends this)."""
@@ -914,6 +1245,28 @@ def main():
     sheet_violations(wb, date, regime, vrows, kpi["below"])
     sheet_above(wb, date, regime, flat)
     sheet_coverage(wb, date, flat, by_key, sku_map)
+
+    # NEW (2026-06-09): the two competitor "PM Check" sheets, appended AFTER the existing
+    # sheets so those stay byte-identical. FAIL-SAFE — any error (engine absent, bad data,
+    # render bug) skips JUST these two sheets and logs; the rest of the workbook still saves
+    # so tomorrow's batch can never be broken by them. Only on the FULL national workbook
+    # (scoped --platforms editions stay byte-identical / don't carry the cross-platform view).
+    compete_reds = None
+    if not args.platforms:
+        try:
+            compete_reds = build_compete_sheets(wb, date, regime, sku_map)
+            print(f"build_pricematch: competitor PM sheets added · undercut(RED) cells "
+                  f"{compete_reds}", file=sys.stderr)
+        except Exception as e:
+            import traceback
+            print(f"build_pricematch: competitor PM sheets SKIPPED (non-fatal): {e}",
+                  file=sys.stderr)
+            traceback.print_exc(file=sys.stderr)
+            # remove any half-built sheet so the workbook stays clean
+            for nm in ("Amazon Now PM Check", "Amazon Core PM Check"):
+                if nm in wb.sheetnames:
+                    wb.remove(wb[nm])
+
     wb.active = 0
 
     out_dir = args.out or HERE
