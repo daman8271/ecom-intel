@@ -39,6 +39,28 @@ The response also carries `pricingData.pricingEntityPrices` = an explicit
 records the price from **that structured tier field** (authoritative, app-rendered), falling
 back to `superSaverSellingPrice` → `discountedSellingPrice` only if absent.
 
+## Per-pincode pricing: national vs per-store — when a SKU shows the SAME price in two cities, that is REAL (verified 2026-06-09, pmdiag W1+W3)
+The scrape is **already per-store**: it resolves a distinct store per pincode and reads THAT
+store's `pricingData:SUPER_SAVER`. So when a SKU shows the **same price at two different-city
+pincodes, that is a TRUE Zepto fact, not a scrape/merge/cache bug.** Zepto prices many
+high-volume SUPER_SAVER SKUs **uniformly nationwide**, and prices others **per store** — and
+`scrape.js` captures both correctly. Proof (W1 live PDP probe + W3 cross-check of the same
+`result.json` scrape, Delhi store `0c865653` vs Bengaluru `e4a9d9d2`):
+- **National (genuinely flat):** Extra Light 1L = ₹499 at both cities (and all 48 in-stock
+  stores in that day's scrape); Pomace 1L ₹379; Extra Virgin 1L ₹934 — all `cached:false`.
+- **Per-store (genuinely varies, SAME scrape, SAME route):** Pomace 5L 2128 vs 2494
+  (≈13 distinct values across stores); Kachi Ghani Mustard 1L 180 vs 181; Canola ₹1193–1617;
+  Sunflower 182–192; Groundnut peanut ₹49 vs 72. In W3's audit of `result.json`, **6 of 18
+  in-stock SKUs vary across stores**, 12 are flat.
+A scraper recording one cached national constant could NOT produce that side-by-side variation
+in a single scrape — so the flat SKUs are flat because Zepto sets them flat. **SUPER_SAVER is
+the correct tier:** the `marketplace_type` header (SUPER_SAVER vs ZEPTO_NOW) makes ZERO
+difference at the PDP route, and ULTRA_SAVER is just a lower price with the same per-store
+pattern. **No per-store "tier X" to switch to; no scraper change.** Implication for the
+competitor price-match sheets: pinning Zepto to `110095` (Delhi) vs `560005` (Bengaluru) is
+**accurate** — identical values are real cross-city parity, not a defect. (Sheet labeling is
+W4/W5's call; the scraper data is correct as-is.)
+
 ## Freshness (the ~1-day staleness problem) — IMPORTANT
 The search endpoint is backed by a search index. When it serves a product from cache it sets
 **`cached: true`** on that product (a stale-price risk); when `cached: false` the search price
