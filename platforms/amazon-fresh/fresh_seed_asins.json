@@ -1,0 +1,170 @@
+{
+ "note": "Known genuine Jivo Amazon-Fresh ASINs (observed as real fresh-slot rows in production result.json). Used by scrape.js direct-ASIN fallback to recover SKUs the broad k=jivo freshstore search drops at a Fresh-serviceable store. Additive only; recovered rows still gated on a genuine Fresh slot.",
+ "built": "2026-06-09 amzcover-fresh W2",
+ "asins": [
+  "B0BKQ6PBQP",
+  "B09MJ6QDX7",
+  "B0821DNF2W",
+  "B09NXCPZW1",
+  "B091XPD9J3",
+  "B0FR5BLRH6",
+  "B07X53ZL6J",
+  "B093BMGPQC",
+  "B0991VMDB1",
+  "B077ZN4G28",
+  "B0DBJ13FKL",
+  "B0B6HNNL5B",
+  "B0DC6JR4F3",
+  "B0CKFFGC31",
+  "B01IA0XK6W",
+  "B0C9Q1S6QG",
+  "B09NYCSQLF",
+  "B0DBHQ2QWW",
+  "B0FF9P7XVX",
+  "B07MNWTBDT",
+  "B0B4SJTNF2",
+  "B09HZY97FR",
+  "B0BZ8K3DQP",
+  "B0152TWWSQ",
+  "B0CKFFW9B6",
+  "B0CGN9Y3PT",
+  "B0DRYVRYYM"
+ ],
+ "detail": [
+  {
+   "asin": "B0BKQ6PBQP",
+   "name": "Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO",
+   "pincodes_observed": 122
+  },
+  {
+   "asin": "B09MJ6QDX7",
+   "name": "Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for ",
+   "pincodes_observed": 111
+  },
+  {
+   "asin": "B0821DNF2W",
+   "name": "Jivo Daily Cooking Pomace Olive Oil 1 Litre",
+   "pincodes_observed": 108
+  },
+  {
+   "asin": "B09NXCPZW1",
+   "name": "Jivo Extra Light Olive Oil 2 Litre",
+   "pincodes_observed": 104
+  },
+  {
+   "asin": "B091XPD9J3",
+   "name": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre",
+   "pincodes_observed": 102
+  },
+  {
+   "asin": "B0FR5BLRH6",
+   "name": "Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack",
+   "pincodes_observed": 97
+  },
+  {
+   "asin": "B07X53ZL6J",
+   "name": "Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking",
+   "pincodes_observed": 96
+  },
+  {
+   "asin": "B093BMGPQC",
+   "name": "Jivo Extra Virgin Olive Oil 1 litre",
+   "pincodes_observed": 96
+  },
+  {
+   "asin": "B0991VMDB1",
+   "name": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres",
+   "pincodes_observed": 85
+  },
+  {
+   "asin": "B077ZN4G28",
+   "name": "Jivo Cold Pressed Canola Oil 5 Litre",
+   "pincodes_observed": 74
+  },
+  {
+   "asin": "B0DBJ13FKL",
+   "name": "Jivo Rice Bran Oil 5 Litre",
+   "pincodes_observed": 71
+  },
+  {
+   "asin": "B0B6HNNL5B",
+   "name": "Jivo Cooking Edible Soyabean Oil 1 Litre",
+   "pincodes_observed": 47
+  },
+  {
+   "asin": "B0DC6JR4F3",
+   "name": "Jivo So-Olive Oil 1L",
+   "pincodes_observed": 42
+  },
+  {
+   "asin": "B0CKFFGC31",
+   "name": "Jivo Cold Pressed Groundnut Oil 5 Litre",
+   "pincodes_observed": 36
+  },
+  {
+   "asin": "B01IA0XK6W",
+   "name": "Jivo Cooking Oil - Canola Oil, 1L Bottle",
+   "pincodes_observed": 34
+  },
+  {
+   "asin": "B0C9Q1S6QG",
+   "name": "Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower",
+   "pincodes_observed": 30
+  },
+  {
+   "asin": "B09NYCSQLF",
+   "name": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Co",
+   "pincodes_observed": 14
+  },
+  {
+   "asin": "B0DBHQ2QWW",
+   "name": "Jivo Rice Bran Oil 1 Litre Cooking Oil",
+   "pincodes_observed": 9
+  },
+  {
+   "asin": "B0FF9P7XVX",
+   "name": "Jivo First Pressed Yellow Mustard Oil 1 Litre",
+   "pincodes_observed": 8
+  },
+  {
+   "asin": "B07MNWTBDT",
+   "name": "Jivo Extra Light Olive Oil 5 Litre TIN",
+   "pincodes_observed": 7
+  },
+  {
+   "asin": "B0B4SJTNF2",
+   "name": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre",
+   "pincodes_observed": 5
+  },
+  {
+   "asin": "B09HZY97FR",
+   "name": "Jivo Extra Light Olive Oil 1 Litre",
+   "pincodes_observed": 5
+  },
+  {
+   "asin": "B0BZ8K3DQP",
+   "name": "Jivo Pure Extra Virgin Coconut Oil 1 Litre",
+   "pincodes_observed": 3
+  },
+  {
+   "asin": "B0152TWWSQ",
+   "name": "Jivo Canola Cold Pressed Edible Oil 1+1 Litres",
+   "pincodes_observed": 3
+  },
+  {
+   "asin": "B0CKFFW9B6",
+   "name": "Jivo Cold Pressed Groundnut Oil 1 Litre",
+   "pincodes_observed": 1
+  },
+  {
+   "asin": "B0CGN9Y3PT",
+   "name": "Jivo Pure Extra Virgin Coconut Oil 500 ml",
+   "pincodes_observed": 1
+  },
+  {
+   "asin": "B0DRYVRYYM",
+   "name": "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Co",
+   "pincodes_observed": 1
+  }
+ ]
+}

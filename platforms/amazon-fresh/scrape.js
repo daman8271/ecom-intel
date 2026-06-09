@@ -51,6 +51,25 @@ try {
   for (const p of pj) if (p.asin) PRODUCTS[p.asin] = p;
 } catch (_) {}
 
+// DIRECT-ASIN FALLBACK seed (2026-06-09 amzcover-fresh W2). The broad `k=jivo` freshstore
+// search returns a RELEVANCE-RANKED, page-capped result set and chronically DROPS some
+// genuinely-Fresh Jivo SKUs even at stores where they ARE Fresh-serviceable — a direct
+// `k=<ASIN>` lookup surfaces them with their real "in 10 minutes"/time-window Fresh slot
+// (proven at 110095: EXTRA LIGHT 1L B09HZY97FR + RICE BRAN 1L B0DBHQ2QWW were absent from
+// the broad page but in-stock Fresh on a direct probe — COVERAGE-DIAG.md). Same class of bug
+// as the Zepto search-hides-variants seed fix. The fallback re-probes ONLY seed ASINs the
+// broad search missed, ONLY at already-Fresh-serviceable stores, and keeps a recovered row
+// ONLY if it carries a genuine Fresh slot — so it is purely additive (never invents a
+// non-Fresh/marketplace row). Disable with FRESH_DIRECT_FALLBACK=0; missing/empty seed file
+// => no-op (fully backward compatible).
+const FALLBACK_ON = process.env.FRESH_DIRECT_FALLBACK !== '0';
+const FALLBACK_MAX = parseInt(process.env.FRESH_FALLBACK_MAX || '40', 10);
+let SEED_ASINS = [];
+try {
+  const sj = JSON.parse(fs.readFileSync(path.join(__dirname, 'fresh_seed_asins.json'), 'utf8'));
+  SEED_ASINS = Array.isArray(sj.asins) ? sj.asins.filter((a) => typeof a === 'string' && a.length > 3) : [];
+} catch (_) {}
+
 // --- price/pack helpers (IDENTICAL to zepto/blinkit/now so canonical IDs line up) ---
 function parseVolMl(pack) {
   if (!pack) return null;
@@ -188,6 +207,32 @@ async function fastSetAndSearch(page, pin, token, query, index) {
     }));
     return { setStatus, glow: (html.match(/glow-ingress-line2[^>]*>\s*([^<]+?)\s*</) || [])[1] || '', total: cards.length, cards: out };
   }, { pin, token, query, index });
+}
+
+// DIRECT-ASIN freshstore lookup for ONE asin (no page render, raw fetch — same cost profile
+// as fastSetAndSearch). Returns the card matching `asin` in the same shape the broad search
+// emits (so toRow + the Fresh gate apply identically), or null. Location is NOT re-set here —
+// the caller has already located the page to this pincode.
+async function directFreshCard(page, asin, index) {
+  return page.evaluate(async ({ asin, index }) => {
+    const r = await fetch('/s?k=' + encodeURIComponent(asin) + '&i=' + index, { headers: { accept: 'text/html' } }).catch(() => null);
+    if (!r) return null;
+    const html = await r.text();
+    const doc = new DOMParser().parseFromString(html, 'text/html');
+    const T = (el) => el ? (el.textContent || '').replace(/\s+/g, ' ').trim() : '';
+    const c = [...doc.querySelectorAll('[data-component-type="s-search-result"][data-asin]')]
+      .find((x) => (x.getAttribute('data-asin') || '').toUpperCase() === asin.toUpperCase());
+    if (!c) return null;
+    return {
+      asin: c.getAttribute('data-asin'),
+      title: T(c.querySelector('[data-cy="title-recipe"], h2 a span.a-text-normal, a.a-link-normal .a-text-normal, h2 a span')).slice(0, 160),
+      price: T(c.querySelector('.a-price[data-a-color="base"] .a-offscreen, .a-price .a-offscreen')),
+      mrp: T(c.querySelector('[data-a-strike="true"] .a-offscreen')),
+      slot: T(c.querySelector('[data-cy="delivery-recipe"], [class*="delivery" i], .udm-primary-delivery-message')).slice(0, 80),
+      oos: /currently unavailable|out of stock|sold out/i.test(T(c)),
+      isJivo: /jivo/i.test(T(c)),
+    };
+  }, { asin, index });
 }
 
 function toRow(card, rec) {
@@ -347,10 +392,30 @@ if (require.main === module) (async () => {
     // Fresh is "serviceable here" ONLY if the (correctly-located) page shows at least one
     // genuine Fresh slot on ANY card — NOT merely "any card returned" (the old bug).
     const serviceable = matched && res.cards.some((c) => isFreshSlot(c.slot));
+
+    // DIRECT-ASIN FALLBACK (2026-06-09): only at a Fresh-serviceable, correctly-located store,
+    // re-probe each known Jivo Fresh seed ASIN the broad search DIDN'T already capture, and add
+    // it ONLY if the direct lookup returns a genuine Fresh-slot in-stock Jivo card. Purely
+    // additive + fail-safe (each probe wrapped; a failure just skips that ASIN). Bounded by
+    // FALLBACK_MAX so a pathological store can't blow the per-pincode budget.
+    let recovered_direct = 0;
+    if (FALLBACK_ON && serviceable && SEED_ASINS.length) {
+      const missing = SEED_ASINS.filter((a) => !seen.has(a)).slice(0, FALLBACK_MAX);
+      for (const asin of missing) {
+        try {
+          const card = await directFreshCard(page, asin, INDEX);
+          if (!card || !card.isJivo || card.oos) continue;
+          if (!isFreshSlot(card.slot)) continue;            // marketplace-only here — genuinely not Fresh, skip
+          if (seen.has(card.asin)) continue;
+          seen.add(card.asin); rows.push(toRow(card, rec)); recovered_direct++;
+        } catch (_) { /* fail-safe: a bad probe never aborts the pincode */ }
+        await sleep(120 + Math.random() * 180);
+      }
+    }
     perPin.push({ ...rec, store_id: null, store_name: 'Amazon Fresh', serviceable,
       location_ok: matched, glow: res.glow, matched, cards_total: res.total,
-      dropped_marketplace, rows });
-    process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH→SKIP) '}freshSvc=${serviceable} -> ${rows.length} fresh (dropped ${dropped_marketplace} mkt) (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
+      dropped_marketplace, recovered_direct, rows });
+    process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH→SKIP) '}freshSvc=${serviceable} -> ${rows.length} fresh (dropped ${dropped_marketplace} mkt${recovered_direct ? `, +${recovered_direct} direct` : ''}) (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
     await sleep(300 + Math.random() * 400);
   }
   await browser.close().catch(() => {});
@@ -364,6 +429,7 @@ if (require.main === module) (async () => {
     pincodes_location_skipped: perPin.filter((p) => !p.matched).length,
     pincodes_mismatch: perPin.filter((p) => !p.matched).length,
     marketplace_rows_dropped: perPin.reduce((s, p) => s + (p.dropped_marketplace || 0), 0),
+    rows_recovered_direct: perPin.reduce((s, p) => s + (p.recovered_direct || 0), 0),
     total_rows: allRows.length,
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
     gate: 'fresh-slot+location v1 (2026-06-01): row kept only if location matched AND card slot is a genuine Fresh window/in-N-min; marketplace-bleed rows dropped',
