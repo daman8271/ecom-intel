@@ -236,10 +236,127 @@ def num(x):
         return None
 
 
+def _import_core():
+    """Import the real pricematch_core in-process (the helper is pure — no I/O)."""
+    import importlib.util
+    spec = importlib.util.spec_from_file_location("pmc_exact", CORE)
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    return m
+
+
+def _grp(groups, plats):
+    """Find the group whose platform set == set(plats); None if absent."""
+    want = set(plats)
+    for g in (groups or []):
+        if set(g.get("platforms") or []) == want:
+            return g
+    return None
+
+
+def test_exact_price_match():
+    """W1 helper exact_price_match — hand-computed, adversarial.
+
+    CRITICAL distinction this proves: EXACT (tol 0.5, same whole rupee) is NOT the
+    Matrix ±5 cluster. 380 & 384 are within ₹5 but MUST NOT be grouped here.
+    """
+    try:
+        m = _import_core()
+    except Exception as e:
+        check("exact_price_match: core imports", False, repr(e))
+        return
+    f = getattr(m, "exact_price_match", None)
+    if not callable(f):
+        check("exact_price_match: helper exists (W1 frozen sig)", False,
+              "pricematch_core.exact_price_match not defined yet")
+        return
+    check("exact_price_match: helper exists (W1 frozen sig)", True)
+
+    # tol constant present and == 0.5 (same whole rupee)
+    tol = getattr(m, "EXACT_MATCH_TOL", None)
+    check("EXACT_MATCH_TOL == 0.5", tol == 0.5, "got %r" % tol)
+
+    # 1. exact-equal pair, third platform excluded
+    g = f({"a": 380, "b": 380, "c": 385})
+    grp = _grp(g, ["a", "b"])
+    check("exact: {a380,b380,c385} -> one group [a,b]", len(g) == 1 and grp is not None,
+          "got %r" % g)
+    check("exact: group price rounds to 380", grp is not None and grp.get("price") == 380,
+          "got %r" % (grp and grp.get("price")))
+    check("exact: c(385) NOT in any group", _grp(g, ["a", "b", "c"]) is None and
+          all("c" not in (gg.get("platforms") or []) for gg in g), "got %r" % g)
+
+    # 2. the 0.5 boundary — 0.4 gap is SAME, 0.6 gap is DIFFERENT
+    g = f({"a": 380, "b": 380.4, "c": 381})
+    check("boundary: 380 vs 380.4 (0.4<0.5) => SAME group", _grp(g, ["a", "b"]) is not None,
+          "got %r" % g)
+    check("boundary: 381 NOT merged with 380.x", all("c" not in (gg.get("platforms") or [])
+          for gg in g), "got %r" % g)
+    g2 = f({"a": 380, "b": 380.6})
+    check("boundary: 380 vs 380.6 (0.6>0.5) => DIFFERENT (no group)", g2 == [],
+          "got %r" % g2)
+
+    # 3. CRITICAL anti-±5: 380 & 384 within ₹5 but NOT exact => MUST NOT group
+    g = f({"a": 380, "b": 384})
+    check("anti-±5: 380 & 384 (within ₹5, not equal) => [] (NOT grouped)", g == [],
+          "got %r — exact-match wrongly behaving like the ±5 cluster" % g)
+    g = f({"a": 380, "b": 384, "c": 384})
+    check("anti-±5: {380,384,384} groups ONLY the 384 pair, never 380",
+          _grp(g, ["b", "c"]) is not None and all("a" not in (gg.get("platforms") or [])
+          for gg in g), "got %r" % g)
+
+    # 4. 3-way identical
+    g = f({"a": 500, "b": 500, "c": 500})
+    grp = _grp(g, ["a", "b", "c"])
+    check("3-way: {500,500,500} => one group of 3", len(g) == 1 and grp is not None,
+          "got %r" % g)
+    check("3-way: platforms sorted [a,b,c]", grp is not None and
+          grp.get("platforms") == ["a", "b", "c"], "got %r" % (grp and grp.get("platforms")))
+
+    # 5. None / non-numeric ignored
+    g = f({"a": 380, "b": 380, "c": None, "d": "n/s", "e": float("nan")})
+    check("None/non-numeric ignored, real pair survives", _grp(g, ["a", "b"]) is not None and
+          len(g) == 1, "got %r" % g)
+    check("None platform never appears in a group",
+          all(not ({"c", "d", "e"} & set(gg.get("platforms") or [])) for gg in g),
+          "got %r" % g)
+
+    # 6. no match
+    check("no-match: {a380,b382} => []", f({"a": 380, "b": 382}) == [], "")
+    check("single platform => []", f({"a": 380}) == [], "")
+    check("empty dict => []", f({}) == [], "")
+
+    # 7. a platform appears in AT MOST one group + groups sorted size desc then price
+    g = f({"a": 200, "b": 200, "c": 200, "d": 999, "e": 999})
+    seen = []
+    for gg in g:
+        seen += (gg.get("platforms") or [])
+    check("each platform in at most one group", len(seen) == len(set(seen)),
+          "duplicate platform across groups: %r" % seen)
+    sizes = [len(gg.get("platforms") or []) for gg in g]
+    check("groups sorted by size desc (3 before 2)", sizes == sorted(sizes, reverse=True),
+          "got sizes %r" % sizes)
+    # two equal-size groups => tie-break by price ascending
+    g = f({"a": 700, "b": 700, "c": 300, "d": 300})
+    if len(g) == 2 and all(len(x.get("platforms")) == 2 for x in g):
+        check("equal-size groups tie-break by price asc (300 before 700)",
+              g[0].get("price") == 300 and g[1].get("price") == 700,
+              "got %r" % [x.get("price") for x in g])
+
+    # 8. purity: calling it must not mutate the caller's dict
+    inp = {"a": 380, "b": 380}
+    snap = dict(inp)
+    f(inp)
+    check("exact_price_match does not mutate input dict", inp == snap, "input mutated: %r" % inp)
+
+
 def main():
     if not os.path.exists(CORE):
         print("ENGINE NOT LANDED: %s missing — nothing to test yet." % CORE)
         sys.exit(2)
+
+    # W1 helper — pure-function unit tests (no sandbox needed)
+    test_exact_price_match()
 
     base = tempfile.mkdtemp(prefix="pmverify-")
     try:
