@@ -6,7 +6,7 @@
   "rows": 972,
   "unique_skus": 23,
   "pincodes_with_jivo": 56,
-  "baseline_rows": 1259,
+  "baseline_rows": 1261,
   "checks": [
     {
       "name": "non_zero_rows",
@@ -21,7 +21,7 @@
     {
       "name": "rows_vs_baseline",
       "pass": true,
-      "detail": "972 rows vs baseline 1259 (77%)"
+      "detail": "972 rows vs baseline 1261 (77%)"
     },
     {
       "name": "skus_vs_baseline",
@@ -56,7 +56,7 @@
     {
       "name": "pincode_coverage",
       "pass": true,
-      "detail": "56 pincodes w/ Jivo vs baseline 75 (75%)"
+      "detail": "56 pincodes w/ Jivo vs baseline 73 (77%)"
     },
     {
       "name": "schema_integrity",
@@ -66,7 +66,7 @@
     {
       "name": "freshness",
       "pass": true,
-      "detail": "captured_at 2026-06-08T06:23:07.372Z is 2.9h old (fresh)"
+      "detail": "captured_at 2026-06-08T06:23:07.372Z is 6.1h old (fresh)"
     },
     {
       "name": "price_staleness",
@@ -81,7 +81,7 @@
     {
       "name": "priced_floor_block",
       "pass": true,
-      "detail": "450 priced in-stock rows, vs baseline 613; 0 block/error-marked rows"
+      "detail": "450 priced in-stock rows, vs baseline 597; 0 block/error-marked rows"
     },
     {
       "name": "per_litre_sanity",
@@ -96,9 +96,9 @@
     {
       "name": "llm_judgment",
       "pass": true,
-      "detail": "OK \u2014 Legitimate Jivo oil SKUs, plausible INR prices (\u20b9181\u2013\u20b9934), MRP>sale in all rows, sane discount range (29\u201366%), 972/1259 baseline is natural stock variance."
+      "detail": "OK \u2014 Real Jivo oils, sane INR prices, MRP\u2265sale. Row variance vs baseline (77%) notable."
     }
   ],
   "reasons": [],
-  "llm_note": "OK \u2014 Legitimate Jivo oil SKUs, plausible INR prices (\u20b9181\u2013\u20b9934), MRP>sale in all rows, sane discount range (29\u201366%), 972/1259 baseline is natural stock variance."
+  "llm_note": "OK \u2014 Real Jivo oils, sane INR prices, MRP\u2265sale. Row variance vs baseline (77%) notable."
 }

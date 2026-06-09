@@ -1,32 +1,32 @@
 {
-  "platform": "flipkart",
-  "run_id": "2026-06-08-1134",
-  "captured_at": "2026-06-08T06:14:10.507Z",
+  "platform": "blinkit",
+  "run_id": "daily-2026-06-08",
+  "captured_at": "2026-06-08T08:27:57.670Z",
   "verdict": "OK",
-  "rows": 268,
-  "unique_skus": 268,
-  "pincodes_with_jivo": null,
-  "baseline_rows": 268,
+  "rows": 768,
+  "unique_skus": 9,
+  "pincodes_with_jivo": 159,
+  "baseline_rows": 750,
   "checks": [
     {
       "name": "non_zero_rows",
       "pass": true,
-      "detail": "268 rows"
+      "detail": "768 rows"
     },
     {
       "name": "rows_above_floor",
       "pass": true,
-      "detail": "268 rows (floor 20)"
+      "detail": "768 rows (floor 20)"
     },
     {
       "name": "rows_vs_baseline",
       "pass": true,
-      "detail": "268 rows vs baseline 268 (100%)"
+      "detail": "768 rows vs baseline 750 (102%)"
     },
     {
       "name": "skus_vs_baseline",
       "pass": true,
-      "detail": "268 unique SKUs vs baseline 268 (100%)"
+      "detail": "9 unique SKUs vs baseline 9 (100%)"
     },
     {
       "name": "prices_in_band",
@@ -56,7 +56,7 @@
     {
       "name": "pincode_coverage",
       "pass": true,
-      "detail": "national run (single 'All India'); n/a"
+      "detail": "159 pincodes w/ Jivo vs baseline 155 (103%)"
     },
     {
       "name": "schema_integrity",
@@ -66,22 +66,22 @@
     {
       "name": "freshness",
       "pass": true,
-      "detail": "captured_at 2026-06-08T06:14:10.507Z is 6.2h old (fresh)"
+      "detail": "captured_at 2026-06-08T08:27:57.670Z is 4.0h old (fresh)"
     },
     {
       "name": "price_staleness",
       "pass": true,
-      "detail": "0% stores non-realtime/snapshot; 74 SKU(s) price-stable across 9 runs path proven live by 85 SKU(s) that moved (e.g. cfegmj5gje7hd3dq, edofrwtzzubgdj3q, edofrxtmjgae9dct) -> genuinely stable; 85 SKU(s) moved over the window"
+      "detail": "0% stores non-realtime/snapshot; 5 SKU(s) price-stable across 9 runs path proven live by 4 SKU(s) that moved (e.g. jivo-cold-pressed-sunflower-oil-1l, jivo-extra-light-olive-oil-1l, jivo-extra-light-olive-oil-2l) -> genuinely stable; 4 SKU(s) moved over the window"
     },
     {
       "name": "geo_consistency",
       "pass": true,
-      "detail": "national run (no per-store geo); n/a"
+      "detail": "max store_id city-span = 1 (stores stay local)"
     },
     {
       "name": "priced_floor_block",
       "pass": true,
-      "detail": "106 priced in-stock rows, vs baseline 106; 8 block/error-marked rows"
+      "detail": "688 priced in-stock rows, vs baseline 667; 0 block/error-marked rows"
     },
     {
       "name": "per_litre_sanity",
@@ -96,9 +96,9 @@
     {
       "name": "llm_judgment",
       "pass": true,
-      "detail": "OK \u2014 268 rows, real Jivo oils/ghee, plausible INR prices, MRP\u2265sale, bundle discounts sensible."
+      "detail": "OK \u2014 768 rows, 9 Jivo oils, sane prices (MRP\u2265sale), realistic Blinkit discounts 30\u201365%, baseline +2.4%"
     }
   ],
   "reasons": [],
-  "llm_note": "OK \u2014 268 rows, real Jivo oils/ghee, plausible INR prices, MRP\u2265sale, bundle discounts sensible."
+  "llm_note": "OK \u2014 768 rows, 9 Jivo oils, sane prices (MRP\u2265sale), realistic Blinkit discounts 30\u201365%, baseline +2.4%"
 }

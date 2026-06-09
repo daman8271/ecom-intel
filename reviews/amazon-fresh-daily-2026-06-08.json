@@ -1,32 +1,32 @@
 {
-  "platform": "flipkart",
-  "run_id": "2026-06-08-1134",
-  "captured_at": "2026-06-08T06:14:10.507Z",
+  "platform": "amazon-fresh",
+  "run_id": "daily-2026-06-08",
+  "captured_at": "2026-06-08T09:57:25.931Z",
   "verdict": "OK",
-  "rows": 268,
-  "unique_skus": 268,
-  "pincodes_with_jivo": null,
-  "baseline_rows": 268,
+  "rows": 1275,
+  "unique_skus": 30,
+  "pincodes_with_jivo": 164,
+  "baseline_rows": 1185,
   "checks": [
     {
       "name": "non_zero_rows",
       "pass": true,
-      "detail": "268 rows"
+      "detail": "1275 rows"
     },
     {
       "name": "rows_above_floor",
       "pass": true,
-      "detail": "268 rows (floor 20)"
+      "detail": "1275 rows (floor 20)"
     },
     {
       "name": "rows_vs_baseline",
       "pass": true,
-      "detail": "268 rows vs baseline 268 (100%)"
+      "detail": "1275 rows vs baseline 1185 (108%)"
     },
     {
       "name": "skus_vs_baseline",
       "pass": true,
-      "detail": "268 unique SKUs vs baseline 268 (100%)"
+      "detail": "30 unique SKUs vs baseline 28 (106%)"
     },
     {
       "name": "prices_in_band",
@@ -56,7 +56,7 @@
     {
       "name": "pincode_coverage",
       "pass": true,
-      "detail": "national run (single 'All India'); n/a"
+      "detail": "164 pincodes w/ Jivo vs baseline 163 (101%)"
     },
     {
       "name": "schema_integrity",
@@ -66,22 +66,22 @@
     {
       "name": "freshness",
       "pass": true,
-      "detail": "captured_at 2026-06-08T06:14:10.507Z is 6.2h old (fresh)"
+      "detail": "captured_at 2026-06-08T09:57:25.931Z is 2.6h old (fresh)"
     },
     {
       "name": "price_staleness",
       "pass": true,
-      "detail": "0% stores non-realtime/snapshot; 74 SKU(s) price-stable across 9 runs path proven live by 85 SKU(s) that moved (e.g. cfegmj5gje7hd3dq, edofrwtzzubgdj3q, edofrxtmjgae9dct) -> genuinely stable; 85 SKU(s) moved over the window"
+      "detail": "0% stores non-realtime/snapshot; 13 SKU(s) price-stable across 9 runs path proven live by 8 SKU(s) that moved (e.g. jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l, jivo-canola-cold-pressed-edible-oil-11-litres-1l, jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l) -> genuinely stable; 8 SKU(s) moved over the window"
     },
     {
       "name": "geo_consistency",
       "pass": true,
-      "detail": "national run (no per-store geo); n/a"
+      "detail": "no resolved store_id on rows; geo check n/a"
     },
     {
       "name": "priced_floor_block",
       "pass": true,
-      "detail": "106 priced in-stock rows, vs baseline 106; 8 block/error-marked rows"
+      "detail": "1275 priced in-stock rows, vs baseline 1185; 0 block/error-marked rows"
     },
     {
       "name": "per_litre_sanity",
@@ -96,9 +96,9 @@
     {
       "name": "llm_judgment",
       "pass": true,
-      "detail": "OK \u2014 268 rows, real Jivo oils/ghee, plausible INR prices, MRP\u2265sale, bundle discounts sensible."
+      "detail": "OK \u2014 row count stable, products legitimate (edible/olive oils), pricing sane in INR, MRP\u2265sale, discounts plausible."
     }
   ],
   "reasons": [],
-  "llm_note": "OK \u2014 268 rows, real Jivo oils/ghee, plausible INR prices, MRP\u2265sale, bundle discounts sensible."
+  "llm_note": "OK \u2014 row count stable, products legitimate (edible/olive oils), pricing sane in INR, MRP\u2265sale, discounts plausible."
 }

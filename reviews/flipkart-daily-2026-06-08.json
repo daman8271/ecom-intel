@@ -1,6 +1,6 @@
 {
   "platform": "flipkart",
-  "run_id": "2026-06-08-1134",
+  "run_id": "daily-2026-06-08",
   "captured_at": "2026-06-08T06:14:10.507Z",
   "verdict": "OK",
   "rows": 268,
@@ -66,7 +66,7 @@
     {
       "name": "freshness",
       "pass": true,
-      "detail": "captured_at 2026-06-08T06:14:10.507Z is 6.2h old (fresh)"
+      "detail": "captured_at 2026-06-08T06:14:10.507Z is 6.3h old (fresh)"
     },
     {
       "name": "price_staleness",
@@ -96,9 +96,9 @@
     {
       "name": "llm_judgment",
       "pass": true,
-      "detail": "OK \u2014 268 rows, real Jivo oils/ghee, plausible INR prices, MRP\u2265sale, bundle discounts sensible."
+      "detail": "OK \u2014 268 SKUs match baseline, plausible oil prices/discounts, bundles explain high discounts (56\u201366%)."
     }
   ],
   "reasons": [],
-  "llm_note": "OK \u2014 268 rows, real Jivo oils/ghee, plausible INR prices, MRP\u2265sale, bundle discounts sensible."
+  "llm_note": "OK \u2014 268 SKUs match baseline, plausible oil prices/discounts, bundles explain high discounts (56\u201366%)."
 }
