@@ -1,17 +1,167 @@
 {
-  "_comment": "Committed master seed list of Jivo Zepto product VARIANTs that the search API never reliably emits (Algolia variant-rollup collapses pack-size siblings, and the bare-brand query is in-stock-gated). scrape.js PDP-probes each at every serviceable store via bff-gateway lms/api/v2/get_page?page_type=PDP&product_variant_id=<variantId> to recover authoritative per-store price + availableQuantity, INCLUDING out-of-stock and rollup-hidden variants. The variantIds are catalog-global (store-independent); only price/stock vary per store. Source: the public Zepto /pvid/<variantId> URL index (Google) + live PDP verification (Agent run 2026-06-04, zcat). No login / no proxy needed to USE these (the gateway PDP route is reachable from the DC IP). To ADD a new hidden variant later: find its /pvid/<id> on zepto.com (or owner-supplied), confirm via the PDP route, append here. search-discovered (in-stock) variants are still captured live by scrape.js and need NOT be listed here.",
-  "_verified_at": "2026-06-04",
+  "_comment": "Committed master seed list of Jivo Zepto product VARIANTs that the search API never reliably emits (Algolia variant-rollup collapses pack-size siblings, and the bare-brand query is in-stock-gated). scrape.js PDP-probes each at every serviceable store via bff-gateway lms/api/v2/get_page?page_type=PDP&product_variant_id=<variantId> to recover authoritative per-store price + availableQuantity, INCLUDING out-of-stock and rollup-hidden variants. The variantIds are catalog-global (store-independent); only price/stock vary per store. Source: the public Zepto /pvid/<variantId> URL index (Google) + live PDP verification (Agent run 2026-06-04, zcat). No login / no proxy needed to USE these (the gateway PDP route is reachable from the DC IP). To ADD a new hidden variant later: find its /pvid/<id> on zepto.com (or owner-supplied), confirm via the PDP route, append here. search-discovered (in-stock) variants are still captured live by scrape.js and need NOT be listed here. UNION REBUILD 2026-06-09 (zepto-seed/W1): the seed is now the COMPLETE known-variant union — (a) the prior seed, (b) every Jivo zepto id in tools/pricematch/sku_map.json, (c) every distinct variant_id ever seen in result.json across all pincodes. PDP now probes EVERY serviceable store for ALL known variants, so n/s is AUTHORITATIVE: a SKU is \"not here\" only when the PDP route says so, never because Algolia search lagged. (Root cause of the owner-caught 560005 false n/s on CANOLA 1+1L 50b56b7f @ ~Rs469 — it was search-discovered but unseeded, so absent at stores where search did not surface it.) Enlarging this list is data-only and tomorrow-safe: it only makes the next sweep more complete (scrape.js untouched, result.json contract unchanged). Cost: one extra PDP probe per serviceable store per added variant (11 -> 23 seeds = +12 probes/store).",
+  "_verified_at": "2026-06-09",
   "variants": [
-    { "variantId": "275d43f8-2da4-4d9e-8873-e04fcaf5c073", "productId": "fd22f023-30e5-435e-8e8f-bf0ff4b4f66a", "name": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil", "pack": "1 pc (5 L)", "note": "owner-flagged; separate productId from 1L (1757613d); search-rollup-hidden" },
-    { "variantId": "c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe", "productId": "49cbf3a6-da24-4182-bfc5-7a39e9f6eca1", "name": "Jivo Canola Cold Pressed Edible Oil", "pack": "1 pc (5 L)", "note": "standalone canola; query-gap + rollup" },
-    { "variantId": "5d186472-6fe2-4643-af2f-2f9cd773986d", "productId": "c9c0a349-a8a5-417b-9d11-223a6194e57d", "name": "Jivo Extra Virgin Olive Oil | Bottle", "pack": "1 pc (1 L)", "note": "OOS-gated in search at most stores; often actually in-stock" },
-    { "variantId": "a81945f0-43ac-4970-82b4-c6c8986ee9ae", "productId": "d1f57b95-670b-4570-8339-0a63eea54bfa", "name": "Jivo Pomace Olive Oil", "pack": "1 pc (5 L)", "note": "search reports oos:true & wrong price; PDP authoritative" },
-    { "variantId": "dc9c5857-5d89-45c7-895a-373097239ff7", "productId": "e035fa66-01cb-4161-9766-812dcd9cbb7d", "name": "Jivo So-Olive Blend Of Rice Bran and Olive Oil", "pack": "1 pc (1 L)", "note": "surfaces only at rich stores in search" },
-    { "variantId": "c80ef4de-b2c3-4fb4-984b-4cb29b33db33", "productId": "48026d94-bf9d-42f6-abc9-f0d1d2df07fb", "name": "Jivo Extra Virgin Cooking Olive Oil", "pack": "1 pc (5 L)", "note": "query-gap + rollup (Google-only); often OOS" },
-    { "variantId": "b84e15b9-39c8-4f7e-bc24-bab7300641cc", "productId": "cf05a1a4-e08d-4cb0-adea-19cd43610ecf", "name": "Jivo Refine Canola oil Tin", "pack": "1 pc (15 L)", "note": "query-gap + rollup (Google-only); often OOS" },
-    { "variantId": "bc1af3d1-2a14-4296-b38e-e05ba43c3170", "productId": "a47a6c65-f048-433a-96ac-ad9ab356b3ba", "name": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil", "pack": "1 pc (1 L)", "note": "query-gap (Google-only); often OOS" },
-    { "variantId": "40bd2571-3734-4503-84b7-bbe87a3818c3", "productId": "213767b4-c09a-4ba4-b8e3-7dcf6fd2a487", "name": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil", "pack": "1 pack (5 L)", "note": "query-gap (Google-only); often OOS" },
-    { "variantId": "3df8a5f6-fb0a-43d9-92ea-8098fda9253d", "productId": "e9eaa88f-d0ef-4ef0-a06e-41af296320e2", "name": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil", "pack": "1 pc (5 L)", "note": "5L sibling of captured 1L; search-rollup-hidden" },
-    { "variantId": "4acb73bc-1e89-47d8-8625-05e6a34b698b", "productId": "1158254b-4bdb-4ad0-9833-a137f7063862", "name": "Jivo Rice Bran Daily Cooking Oil", "pack": "1 pack (1 L)", "note": "standalone rice bran; query-gap (Google-only); often OOS" }
+    {
+      "variantId": "06c8f55b-13a5-4d9b-8990-a418e63c89ad",
+      "productId": "0d030266-d839-4fd2-99f1-25221abb2d67",
+      "name": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil",
+      "pack": "1 pc (1 L)",
+      "note": "sku_map=SUNFLOWER 1L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "2300d5e1-ccd1-46ab-990d-aa7fee80bc5d",
+      "productId": "958af08b-b8df-43d5-8ce3-ded9b0a9594d",
+      "name": "Jivo Extra Light Olive Oil",
+      "pack": "1 pc (1 L)",
+      "note": "sku_map=EXTRA LIGHT 1L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "275d43f8-2da4-4d9e-8873-e04fcaf5c073",
+      "productId": "fd22f023-30e5-435e-8e8f-bf0ff4b4f66a",
+      "name": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil",
+      "pack": "1 pc (5 L)",
+      "note": "owner-flagged; separate productId from 1L (1757613d); search-rollup-hidden; sku_map=MUSTARD 5L"
+    },
+    {
+      "variantId": "29e72c8c-7ff6-46e2-9721-ca4e9f612e98",
+      "productId": "f68d23e6-fa9b-463e-8abe-db93fec7cf80",
+      "name": "Jivo Extra Light Olive Oil",
+      "pack": "1 pc (2 L)",
+      "note": "sku_map=EXTRA LIGHT 2L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "3d955a07-72db-4d1a-9d65-42c5a8dd0641",
+      "productId": "a31e9ac4-1bdd-4cf4-9bb3-3879e9a84469",
+      "name": "Jivo Pomace Olive Oil Combo",
+      "pack": "1 L X 2",
+      "note": "sku_map=JIVO POMACE 1L + 1L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "3df8a5f6-fb0a-43d9-92ea-8098fda9253d",
+      "productId": "e9eaa88f-d0ef-4ef0-a06e-41af296320e2",
+      "name": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil",
+      "pack": "1 pc (5 L)",
+      "note": "5L sibling of captured 1L; search-rollup-hidden; sku_map=SUNFLOWER 5L"
+    },
+    {
+      "variantId": "40bd2571-3734-4503-84b7-bbe87a3818c3",
+      "productId": "213767b4-c09a-4ba4-b8e3-7dcf6fd2a487",
+      "name": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil",
+      "pack": "1 pack (5 L)",
+      "note": "query-gap (Google-only); often OOS; sku_map=GOLD 5L"
+    },
+    {
+      "variantId": "41367ef4-80d9-4819-bbae-d1806c184f5c",
+      "productId": "04aee944-c00a-40a3-9bfc-9623a92a0aa9",
+      "name": "Jivo Groundnut (Peanut) Cold Pressed Oil | Healthy Cooking Oil",
+      "pack": "1 pc (1 L)",
+      "note": "sku_map=GROUNDNUT 1L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "4acb73bc-1e89-47d8-8625-05e6a34b698b",
+      "productId": "1158254b-4bdb-4ad0-9833-a137f7063862",
+      "name": "Jivo Rice Bran Daily Cooking Oil",
+      "pack": "1 pack (1 L)",
+      "note": "standalone rice bran; query-gap (Google-only); often OOS; sku_map=RICE BRAN 1L"
+    },
+    {
+      "variantId": "50b56b7f-3d9f-45c7-8161-c2327e8db652",
+      "productId": "5abba2ab-182f-4eb5-8caa-329c25fab8d6",
+      "name": "Jivo Cold Press Canola Oil Combo | Bottle",
+      "pack": "1 pack (2 L)",
+      "note": "sku_map=CANOLA 1+1L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "597fe027-2e19-4a49-bc07-76ef57295ad6",
+      "productId": "eb402720-f4c5-4799-95dd-1d12a7e5a343",
+      "name": "Jivo Extra Light Olive Oil Combo",
+      "pack": "1 L X 2",
+      "note": "seen in result.json (search-discovered); seeded for store-complete n/s"
+    },
+    {
+      "variantId": "5d186472-6fe2-4643-af2f-2f9cd773986d",
+      "productId": "c9c0a349-a8a5-417b-9d11-223a6194e57d",
+      "name": "Jivo Extra Virgin Olive Oil | Bottle",
+      "pack": "1 pc (1 L)",
+      "note": "OOS-gated in search at most stores; often actually in-stock; sku_map=EXTRA VIRGIN 1L"
+    },
+    {
+      "variantId": "89804a83-79f3-45c6-b940-9c395451dffa",
+      "productId": "1757613d-5d92-449c-9ed8-6c9375591af5",
+      "name": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil",
+      "pack": "1 pc (1 L)",
+      "note": "sku_map=MUSTARD 1L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "8eedf6ff-d36c-4313-88e4-6aa571372f46",
+      "productId": "2a3ad7ef-9831-4b0d-8ed1-3f65a4c2dd13",
+      "name": "Jivo Daily Pomace Olive Oil",
+      "pack": "1 pc (2 L)",
+      "note": "sku_map=JIVO POMACE 2L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "a81945f0-43ac-4970-82b4-c6c8986ee9ae",
+      "productId": "d1f57b95-670b-4570-8339-0a63eea54bfa",
+      "name": "Jivo Pomace Olive Oil",
+      "pack": "1 pc (5 L)",
+      "note": "search reports oos:true & wrong price; PDP authoritative; sku_map=JIVO POMACE 5L"
+    },
+    {
+      "variantId": "ac9a7dd8-489b-4475-a14d-27ae393a5505",
+      "productId": "0dc8a10a-16aa-4fb7-85d8-9282766ba006",
+      "name": "Jivo Pomace Olive Oil",
+      "pack": "1 pc (1 L)",
+      "note": "sku_map=JIVO POMACE 1L; search-discovered (now seeded so n/s is PDP-authoritative even at index-lagged stores)"
+    },
+    {
+      "variantId": "b84e15b9-39c8-4f7e-bc24-bab7300641cc",
+      "productId": "cf05a1a4-e08d-4cb0-adea-19cd43610ecf",
+      "name": "Jivo Refine Canola oil Tin",
+      "pack": "1 pc (15 L)",
+      "note": "query-gap + rollup (Google-only); often OOS"
+    },
+    {
+      "variantId": "bb21a64f-7770-484e-9614-991921f9e1e1",
+      "productId": "f1172b69-ae9e-4b13-918d-7817398509e2",
+      "name": "Jivo Extra Light Olive Oil Combo",
+      "pack": "2 L X 2",
+      "note": "seen in result.json (search-discovered); seeded for store-complete n/s"
+    },
+    {
+      "variantId": "bc1af3d1-2a14-4296-b38e-e05ba43c3170",
+      "productId": "a47a6c65-f048-433a-96ac-ad9ab356b3ba",
+      "name": "Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil",
+      "pack": "1 pc (1 L)",
+      "note": "query-gap (Google-only); often OOS; sku_map=GOLD 1L"
+    },
+    {
+      "variantId": "c80ef4de-b2c3-4fb4-984b-4cb29b33db33",
+      "productId": "48026d94-bf9d-42f6-abc9-f0d1d2df07fb",
+      "name": "Jivo Extra Virgin Cooking Olive Oil",
+      "pack": "1 pc (5 L)",
+      "note": "query-gap + rollup (Google-only); often OOS; sku_map=EXTRA VIRGIN 5L"
+    },
+    {
+      "variantId": "c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe",
+      "productId": "49cbf3a6-da24-4182-bfc5-7a39e9f6eca1",
+      "name": "Jivo Canola Cold Pressed Edible Oil | Cooking Oil",
+      "pack": "1 pc (5 L)",
+      "note": "standalone canola; query-gap + rollup; sku_map=CANOLA 5L"
+    },
+    {
+      "variantId": "cf896675-3ac9-4a40-b134-603931bba8e7",
+      "productId": "b607b52d-01e2-4fb3-a01d-94e35c2274df",
+      "name": "Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil",
+      "pack": "1 Pack(200 m)",
+      "note": "seen in result.json (search-discovered); seeded for store-complete n/s"
+    },
+    {
+      "variantId": "dc9c5857-5d89-45c7-895a-373097239ff7",
+      "productId": "e035fa66-01cb-4161-9766-812dcd9cbb7d",
+      "name": "Jivo So-Olive Blend Of Rice Bran and Olive Oil",
+      "pack": "1 pc (1 L)",
+      "note": "surfaces only at rich stores in search; sku_map=SO OLIVE 1L"
+    }
   ]
 }
