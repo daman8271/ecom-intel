@@ -428,6 +428,18 @@ def sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map, label=None):
     fc.font = Font(name=F, size=9, italic=True, color=MUTED)
     fc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
     ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
+    row += 2
+
+    # ---- APPENDED (2026-06-09): board-wide EXACT price-match section. Self-contained
+    # fail-safe — a bug here skips ONLY this section; the KPI cards / violations /
+    # scoreboard above are untouched and the workbook still builds. ----
+    try:
+        sheet_ecom_head_exact(ws, row, comps, sku_map)
+    except Exception as e:
+        import traceback
+        print(f"build_pricematch: Ecom Head exact-match section SKIPPED (non-fatal): {e}",
+              file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
     return ws
 
 
@@ -470,6 +482,107 @@ def fmt_cluster(cluster):
     hi = max(pr for _, pr in cluster)
     band = f"₹{lo:,.0f}" if abs(hi - lo) < 0.005 else f"₹{lo:,.0f}–{hi:,.0f}"
     return f"{names} @ {band}"
+
+
+def _board_exact_matches(sku_map, by_key):
+    """Board-wide EXACT price-match: per master SKU, build {platform: live modal/national
+    price} over the current CANONICAL platforms (SAME source the Matrix/Ecom Head already
+    use — by_key + live_modal) and run the IDENTICAL-₹ grouping. Returns
+    [{"sku", "groups"}] for SKUs with >=1 exact match, sorted by largest group desc, SKU.
+    This is DISTINCT from pm_clusters (the ±₹5 'price-match active' band)."""
+    import pricematch_core as core
+    out = []
+    for sku in _compete_skus(sku_map):
+        pbp = {}
+        for p in CANONICAL:
+            r = by_key.get((sku, p))
+            if not r or r.get("status") not in PM_PRICE_STATUSES:
+                continue
+            price = _f(r.get("live_modal"))
+            if price is not None:
+                pbp[p] = price
+        groups = core.exact_price_match(pbp)
+        if groups:
+            out.append({"sku": sku, "groups": groups})
+    out.sort(key=lambda m: (-max(len(g["platforms"]) for g in m["groups"]), m["sku"]))
+    return out
+
+
+def sheet_ecom_head_exact(ws, row, comps, sku_map):
+    """APPENDED Ecom Head section: 'EXACT PRICE-MATCH ACROSS PLATFORMS' — a board-wide,
+    all-platforms KPI + top table of SKUs where 2+ platforms sit at the IDENTICAL ₹.
+    Fail-safe: wrapped by the caller; a bug skips only this section. Returns next row."""
+    _, by_key = flatten(comps)
+    matches = _board_exact_matches(sku_map, by_key)
+
+    row = xd.section_title(ws, row, "EXACT PRICE-MATCH ACROSS PLATFORMS", c0=1, c1=10)
+    sub = ws.cell(row, 1, "Which SKUs have 2+ platforms at the IDENTICAL ₹ (same whole rupee) "
+                          "today — genuine cross-platform price-matching. DISTINCT from the "
+                          "Matrix “Price-Match active (±₹5)” cluster: this is EXACT-equal only.")
+    sub.font = Font(name=F, size=9, color=MUTED)
+    sub.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
+    ws.row_dimensions[row].height = 24
+    row += 1
+
+    n = len(matches)
+    noun = "SKU" if n == 1 else "SKUs"
+    kc = ws.cell(row, 1, f"{n} {noun} matching exactly across platforms today")
+    kc.font = Font(name=F, size=13, bold=True, color=BRAND if n else MUTED)
+    kc.fill = SOFT_FILL if n else GREY_FILL
+    kc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+    ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
+    ws.row_dimensions[row].height = 22
+    row += 2
+
+    if not matches:
+        nc = ws.cell(row, 1, "No SKU has 2+ platforms at an identical price today.")
+        nc.font = Font(name=F, size=10, italic=True, color=MUTED)
+        ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
+        return row + 1
+
+    # flatten SKU→group(s); a SKU with two distinct identical-price clusters shows twice
+    grows = [(m["sku"], g) for m in matches for g in m["groups"]]
+    grows.sort(key=lambda x: (-len(x[1]["platforms"]), x[0], x[1]["price"]))
+
+    # header (SKU | platforms | ₹) — house table style, merged spans
+    def _hdr(cc0, cc1, text):
+        ws.merge_cells(start_row=row, start_column=cc0, end_row=row, end_column=cc1)
+        h = ws.cell(row, cc0, text)
+        h.font = Font(name=F, size=10, bold=True, color="FFFFFF")
+        h.fill = HDR_FILL
+        h.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+    _hdr(1, 3, "SKU")
+    _hdr(4, 8, "Platforms matched at the identical ₹")
+    _hdr(9, 10, "₹ price")
+    ws.row_dimensions[row].height = 18
+    row += 1
+
+    TOP = 12
+    for sku, g in grows[:TOP]:
+        ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=3)
+        sc = ws.cell(row, 1, sku)
+        sc.font = Font(name=F, size=10, bold=True, color=INK)
+        sc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        ws.merge_cells(start_row=row, start_column=4, end_row=row, end_column=8)
+        names = " = ".join(PDISP.get(p, p) for p in g["platforms"])
+        pc = ws.cell(row, 4, f"⚡ {names}")
+        pc.font = Font(name=F, size=10, bold=True, color=BRAND)
+        pc.fill = SOFT_FILL
+        pc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        ws.merge_cells(start_row=row, start_column=9, end_row=row, end_column=10)
+        vc = ws.cell(row, 9, g["price"])
+        vc.number_format = "₹#,##0"
+        vc.font = Font(name=F, size=10, bold=True, color=INK)
+        vc.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+        row += 1
+    if len(grows) > TOP:
+        mc = ws.cell(row, 1, f"… and {len(grows) - TOP} more exact-match group(s) — "
+                             f"full per-pincode detail on the two PM Check sheets.")
+        mc.font = Font(name=F, size=9, italic=True, color=MUTED)
+        ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=10)
+        row += 1
+    return row
 
 
 def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
@@ -968,12 +1081,73 @@ def _paint_ref_cell(c, ref_price, *, pending, ref_is_perpincode):
     c.fill = SOFT_FILL                            # the baseline everything is compared to
 
 
+def _row_price_by_platform(rec, ref_name, comp_cols, *, include_ref):
+    """Build {display_platform: price} for ONE pincode row from the cells already on it —
+    the reference price + each competitor's live price at this pincode. Only platforms
+    with a REAL numeric live price (priced statuses) are included; OOS/n/s/blank dropped.
+    Keyed by DISPLAY name so exact_price_match's sorted group names read cleanly."""
+    pbp = {}
+    if include_ref:
+        rp = _f(rec.get("ref_price"))
+        if rp is not None:
+            pbp[ref_name] = rp
+    for _cc, spec in comp_cols:
+        if spec.get("blank"):
+            continue
+        cell = (rec.get("_cell_by_platform") or {}).get(spec["key"]) or {}
+        price = _f(cell.get("price"))
+        if price is not None and cell.get("status") in PM_PRICE_STATUSES:
+            pbp[spec["label"]] = price
+    return pbp
+
+
+def _paint_exact_cell(c, groups, *, pending):
+    """The trailing 'Price match (same ₹)' cell. EXACT identical-₹ grouping (NOT the
+    ±₹5 cluster). Soft sage fill (NEVER red/green — those mean undercut/above here).
+    Returns True if it flagged a real exact match (so the caller can count the SKU)."""
+    if pending:                                  # pincode not yet swept (560005 today)
+        c.value = "pending"
+        c.font = Font(name=F, size=9, italic=True, color=MUTED)
+        c.alignment = Alignment(horizontal="center")
+        c.fill = GREY_FILL
+        return False
+    if not groups:
+        c.value = "—"
+        c.font = Font(name=F, size=10, color=MUTED)
+        c.alignment = Alignment(horizontal="center")
+        return False
+    parts = [f"{' = '.join(g['platforms'])} @ ₹{g['price']:,.0f}" for g in groups]
+    c.value = "⚡ " + "  |  ".join(parts)
+    c.fill = SOFT_FILL                           # BRAND_SOFT — explicitly NOT red/green
+    c.font = Font(name=F, size=9, bold=True, color=BRAND)
+    c.alignment = Alignment(horizontal="left", vertical="center", indent=1, wrap_text=True)
+    c.comment = Comment("EXACT price match: these platforms list this SKU at the IDENTICAL "
+                        "₹ (same whole rupee) at this pincode — genuine price-matching. "
+                        "This is NOT the ±₹5 'price-match active' band on the Matrix.",
+                        "pricematch", height=84, width=260)
+    return True
+
+
+def _write_exact_summary(ws, summary_row, last_c, n_skus):
+    """The top summary line (row 4): count + definition of the EXACT-match signal.
+    Sage-filled so it visually ties to the ⚡ cells below."""
+    noun = "SKU" if n_skus == 1 else "SKUs"
+    cell = ws.cell(summary_row, 1,
+                   f"⚡ {n_skus} {noun} with an EXACT cross-platform price-match today "
+                   f"— 2+ platforms at the IDENTICAL ₹ (same whole rupee, NOT the ±₹5 cluster). "
+                   f"See the “Price match (same ₹)” column →")
+    cell.font = Font(name=F, size=10, bold=True, color=BRAND)
+    cell.fill = SOFT_FILL
+    cell.alignment = Alignment(horizontal="left", vertical="center", indent=1)
+
+
 def _compete_legend(ws, row, ref_name):
     """The SACRED opposite-polarity legend — stated loudly at the top of each PM sheet."""
     xd.legend(ws, row, [
         (f"RED = cheaper than {ref_name} (they're UNDERCUTTING us)", xd.RED_FILL_HEX, xd.RED_TEXT),
         (f"GREEN = dearer than {ref_name} (above our price)", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
         ("no fill = MATCH (within ±₹1)", None, INK),
+        ("⚡ sage = EXACT price match: 2+ platforms at the IDENTICAL ₹ (same whole rupee — NOT the ±₹5 cluster)", xd.BRAND_SOFT, INK),
         ("n/s = platform doesn't sell/serve this SKU here · OOS = out of stock · pending = 560005 fills on tomorrow's sweep · “—” seller = no live Amazon buybox (out of stock)", None, None),
         ("Rows = only SKUs at least one competitor actually sells (q-comm platforms carry ~9–25 of the 113 SKUs).", None, None),
     ], span=2)
@@ -1027,6 +1201,7 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
     comp_cols = []
     for spec in columns:
         comp_cols.append((col, spec)); col += 1
+    PM_C = col; col += 1                          # NEW: "Price match (same ₹)" trailing col
     last_c = col - 1
 
     ws.column_dimensions[get_column_letter(SKU_C)].width = 30
@@ -1036,6 +1211,7 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
     ws.column_dimensions[get_column_letter(REF_C)].width = 16
     for cc, _ in comp_cols:
         ws.column_dimensions[get_column_letter(cc)].width = 15
+    ws.column_dimensions[get_column_letter(PM_C)].width = 40
 
     # ---- title + regime badge (title spans all but the last col; badge sits in it) ----
     title_cell(ws, 1, title, size=16, span=max(1, last_c - 1))
@@ -1058,8 +1234,15 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
 
     _compete_legend(ws, 3, ref_name)
 
+    # ---- top summary line (row 4): defines + counts the EXACT-match signal. The
+    # count is written AFTER the body loop (we don't know it yet); reserve the row now
+    # so the header/freeze land below it. ----
+    SUMMARY_ROW = 4
+    ws.merge_cells(start_row=SUMMARY_ROW, start_column=1, end_row=SUMMARY_ROW, end_column=last_c)
+    ws.row_dimensions[SUMMARY_ROW].height = 20
+
     # ---- header row ----
-    hdr_row = 4
+    hdr_row = 5
     ws.cell(hdr_row, SKU_C, "SKU")
     if SELLER_C:
         ws.cell(hdr_row, SELLER_C, "Buybox seller")
@@ -1073,6 +1256,7 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
         elif spec.get("blank"):
             lbl += " — no feed yet"
         ws.cell(hdr_row, cc, lbl)
+    ws.cell(hdr_row, PM_C, "Price match (same ₹)")
     for cc in range(1, last_c + 1):
         h = ws.cell(hdr_row, cc)
         h.font = Font(name=F, size=10, bold=True, color="FFFFFF")
@@ -1083,12 +1267,15 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
     ws.freeze_panes = ws.cell(hdr_row + 1, PIN_C + 1).coordinate
 
     # ---- body: one sub-block (per pincode) per SKU (only SKUs a competitor sells) ----
+    import pricematch_core as core
     red_count = 0
+    exact_match_skus = set()                      # distinct SKUs with >=1 exact ₹ match
     row = hdr_row + 1
     if not shown_skus:
         nc = ws.cell(row, 1, "No competitor is selling any tracked SKU at these pincodes today.")
         nc.font = Font(name=F, size=10, italic=True, color=MUTED)
         ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=last_c)
+        _write_exact_summary(ws, SUMMARY_ROW, last_c, 0)
         return 0
     for sku in shown_skus:
         block_top = row
@@ -1119,6 +1306,12 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
                     ref_name=ref_name)
                 if res == "RED":
                     red_count += 1
+            # EXACT price-match indicator (trailing col): which platforms ON THIS ROW
+            # sit at the identical ₹. Pending rows show "pending" (no data yet).
+            pbp = _row_price_by_platform(rec, ref_name, comp_cols, include_ref=True)
+            groups = [] if is_pending else core.exact_price_match(pbp)
+            if _paint_exact_cell(ws.cell(row, PM_C), groups, pending=is_pending):
+                exact_match_skus.add(sku)
             # zebra the SKU/pincode gutter lightly on the 2nd pincode
             if pin != pincodes[0]:
                 for cc in range(1, PIN_C + 1):
@@ -1139,6 +1332,9 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
             ws.cell(row, cc).fill = RULE_FILL
         ws.row_dimensions[row].height = 3
         row += 1
+    _write_exact_summary(ws, SUMMARY_ROW, last_c, len(exact_match_skus))
+    print(f"build_pricematch: {sheet_name} · exact cross-platform price-match SKUs = "
+          f"{len(exact_match_skus)}", file=sys.stderr)
     return red_count
 
 
