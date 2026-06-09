@@ -2155,7 +2155,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-09,BAU,BLACK OLIVE 470G,,amazon-now,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-09,BAU,BLACK PEPPER 100G,,amazon-now,,145,,,,false,NOT_LISTED,,,0,399,
 2026-06-09,BAU,CANOLA 1+1L,,amazon-now,B0152TWWSQ,529,,,,false,OOS,,,0,750,
-2026-06-09,BAU,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,amazon-now,B09MJ6QDX7,269,259,257,268,true,BELOW,-10,-3.72,69,375,375
+2026-06-09,BAU,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,amazon-now,B09MJ6QDX7,269,259,257,268,true,BELOW,-10,-3.72,68,375,375
 2026-06-09,BAU,CANOLA 1L + 1L,,amazon-now,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-09,BAU,CANOLA 1L POUCH,,amazon-now,,269,,,,false,NOT_LISTED,,,0,299,
 2026-06-09,BAU,CANOLA 3L,,amazon-now,,799,,,,false,NOT_LISTED,,,0,690,
@@ -2217,7 +2217,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-09,BAU,QUINOA SEEDS 200G,,amazon-now,,119,,,,false,NOT_LISTED,,,0,199,
 2026-06-09,BAU,QUINOA SEEDS 400G,,amazon-now,,179,,,,false,NOT_LISTED,,,0,299,
 2026-06-09,BAU,QUINOA SEEDS 800G,,amazon-now,,259,,,,false,NOT_LISTED,,,0,399,
-2026-06-09,BAU,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-now,B0DBHQ2QWW,199,189,178,189,true,BELOW,-10,-5.03,20,285,285
+2026-06-09,BAU,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-now,B0DBHQ2QWW,199,189,178,189,true,BELOW,-10,-5.03,21,285,285
 2026-06-09,BAU,RICE BRAN 1L + 1L,,amazon-now,,389,,,,false,NOT_LISTED,,,0,570,
 2026-06-09,BAU,RICE BRAN 4L,,amazon-now,,759,,,,false,NOT_LISTED,,,0,1140,
 2026-06-09,BAU,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-5l,amazon-now,B0DBJ13FKL,959,909,909,909,true,BELOW,-50,-5.21,18,1425,1425
