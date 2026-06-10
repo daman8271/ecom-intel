@@ -73,6 +73,13 @@ def regime_expansion(regime):
     return g.get(str(regime), None)
 
 
+# Owner 2026-06-10: the agreed price list (BAU/SVD/ART) is an Amazon agreement —
+# only the Amazon-family reports carry the reference-compliance block. Every
+# other platform has NO agreed price; those platforms are compared against
+# Amazon in the Price Match workbook's PM Check sheets instead.
+AGREED_PRICE_PLATFORMS = {"amazon", "amazon-now", "amazon-fresh"}
+
+
 # ------------------------------------------------------------- data helpers
 def _f(v):
     try:
@@ -308,7 +315,8 @@ def build_sheet(wb, platform, date_str):
     cheapest = sorted(best_pl.values(), key=lambda e: e["pl"])[:8]
     discounts = sorted(best_disc.values(), key=lambda e: -e["d"])[:8]
 
-    pm = pricematch_block(platform, date_str)
+    pm = (pricematch_block(platform, date_str)
+          if platform in AGREED_PRICE_PLATFORMS else None)
     hist = load_history(platform, last_n=10)
 
     pin_tot = summary.get("pincodes_total")
@@ -483,7 +491,7 @@ def build_sheet(wb, platform, date_str):
                                               color=xd.NEG)
             xd.data_bar(ws, "E%d:E%d" % (r + 1, last), color=xd.NEG)
             r = last + 2
-    else:
+    elif platform in AGREED_PRICE_PLATFORMS:
         xd.footnote(ws, r, "Price-match reference unavailable for this run — "
                            "compliance block omitted.")
         r += 2
