@@ -162,14 +162,20 @@ def main():
             d1, d2 = os.path.join(base, "b1"), os.path.join(base, "b2")
             os.makedirs(d1)
             os.makedirs(d2)
+            # PM_SKIP_HISTORY: a test build for the frozen past DATE must NEVER
+            # touch data/pricematch/*.csv (it was overwriting the real 2026-06-06
+            # history with today's prices on every run — caught 2026-06-10).
+            env_nohist = dict(os.environ, PM_SKIP_HISTORY="1")
             outs = []
             for d in (d1, d2):
                 p = subprocess.run([sys.executable, BUILDER, "--date", DATE, "--out", d],
-                                   capture_output=True, text=True, timeout=600, cwd=ROOT)
+                                   capture_output=True, text=True, timeout=600, cwd=ROOT,
+                                   env=env_nohist)
                 if p.returncode != 0:
                     # builder may not support --out; try cwd-based
                     p = subprocess.run([sys.executable, BUILDER, "--date", DATE],
-                                       capture_output=True, text=True, timeout=600, cwd=d)
+                                       capture_output=True, text=True, timeout=600, cwd=d,
+                                       env=env_nohist)
                 xs = [os.path.join(d, f) for f in os.listdir(d) if f.endswith(".xlsx")]
                 outs.append((p, max(xs, key=os.path.getmtime) if xs else None))
             (pa, fa), (pb, fb) = outs

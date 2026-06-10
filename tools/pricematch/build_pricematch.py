@@ -1500,7 +1500,11 @@ def main():
     # history-write error can never fail the workbook build and can't touch the xlsx
     # bytes. Idempotent (replace-by-date). Skipped for scoped editions (--platforms): the
     # FULL national workbook owns the canonical daily history. (W1 — pm-history)
-    if not args.platforms:
+    # PM_SKIP_HISTORY=1 also skips it: test/diagnostic builds for a PAST --date would
+    # otherwise overwrite that date's real history with TODAY's prices (caught
+    # 2026-06-10 — check_safety's frozen --date 2026-06-06 had been silently
+    # corrupting the 06-06 rows on every doctor/gate run).
+    if not args.platforms and os.environ.get("PM_SKIP_HISTORY") != "1":
         try:
             import pricematch_history as pmh
             n, _ = pmh.record_run(date, regime, comps, store_violation_count=len(vrows))
