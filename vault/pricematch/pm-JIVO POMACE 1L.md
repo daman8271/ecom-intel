@@ -11,11 +11,11 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-08
-last_seen: 2026-06-09
-observations: 16
+first_seen: 2026-06-06
+last_seen: 2026-06-10
+observations: 32
 latest_status: BELOW
-below_days: 2
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,14 +37,22 @@ SKU memory: [[jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-ri
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-09) — ref ₹439 vs live ₹379
-- **Days below reference:** 2 of 2
-- **Below on:** [[2026-06-08]] · [[2026-06-09]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-10) — ref ₹439 vs live ₹379
+- **Days below reference:** 4 of 4
+- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
 
-## Ref-vs-live history (16 observations)
+## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
+2026-06-06,amazon,BELOW,SVD,429,379,379,379,-50,-11.66,1,true
+2026-06-06,amazon-fresh,BELOW,SVD,429,379,379,429,-50,-11.66,107,true
+2026-06-06,amazon-now,BELOW,SVD,429,379,379,429,-50,-11.66,65,true
+2026-06-06,bigbasket,ABOVE,SVD,429,485.01,485.01,485.01,56.01,13.06,0,true
+2026-06-06,blinkit,BELOW,SVD,429,380,379,485,-49,-11.42,112,true
+2026-06-06,flipkart,ABOVE,SVD,429,563,563,563,134,31.24,0,true
+2026-06-06,flipkart-minutes,BELOW,SVD,429,379,379,405,-50,-11.66,7,true
+2026-06-06,zepto,BELOW,SVD,429,379,379,379,-50,-11.66,48,true
 2026-06-08,amazon,BELOW,BAU,439,379,379,379,-60,-13.67,1,true
 2026-06-08,amazon-fresh,BELOW,BAU,439,379,379,429,-60,-13.67,92,true
 2026-06-08,amazon-now,BELOW,BAU,439,379,379,429,-60,-13.67,56,true
@@ -60,7 +68,15 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-09,blinkit,BELOW,BAU,439,380,379,485,-59,-13.44,119,true
 2026-06-09,flipkart,ABOVE,BAU,439,563,563,563,124,28.25,0,true
 2026-06-09,flipkart-minutes,BELOW,BAU,439,379,379,405,-60,-13.67,7,true
-2026-06-09,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,47,true
+2026-06-09,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,48,true
+2026-06-10,amazon,BELOW,BAU,439,379,379,379,-60,-13.67,1,true
+2026-06-10,amazon-fresh,BELOW,BAU,439,379,379,439,-60,-13.67,104,true
+2026-06-10,amazon-now,BELOW,BAU,439,379,379,429,-60,-13.67,66,true
+2026-06-10,bigbasket,ABOVE,BAU,439,485.01,485.01,485.01,46.01,10.48,0,true
+2026-06-10,blinkit,BELOW,BAU,439,379,379,485,-60,-13.67,132,true
+2026-06-10,flipkart,ABOVE,BAU,439,563,563,563,124,28.25,0,true
+2026-06-10,flipkart-minutes,BELOW,BAU,439,379,379,405,-60,-13.67,8,true
+2026-06-10,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,57,true
 ```
 
 ---

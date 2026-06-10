@@ -5,11 +5,11 @@ display_name: "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-09
-observations: 12
+last_seen: 2026-06-10
+observations: 13
 min_price: 1999
-max_price: 2038
-latest_price: 2038
+max_price: 2090
+latest_price: 2090
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1) & Jivo Extra Virgin Olive Oil 1 litre (Pack of 1) (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹2038 (23.1% off)
+- [[amazon]] — latest ₹2090 (21.1% off)
 
-## Runs that observed this SKU (12)
-[[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (13)
+[[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (12 observations)
+## Price history (13 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -43,6 +43,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-08-1154,2026-06-08,amazon,All India,-,2014,2649,24,1
 2026-06-09-0857,2026-06-09,amazon,All India,-,2038,2649,23.1,1
 2026-06-09-1159,2026-06-09,amazon,All India,-,2038,2649,23.1,1
+2026-06-10-0901,2026-06-10,amazon,All India,-,2090,2649,21.1,1
 ```
 
 ---

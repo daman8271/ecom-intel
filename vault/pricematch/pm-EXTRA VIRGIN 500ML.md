@@ -11,11 +11,11 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-08
-last_seen: 2026-06-09
-observations: 16
+first_seen: 2026-06-06
+last_seen: 2026-06-10
+observations: 32
 latest_status: NOT_LISTED
-below_days: 1
+below_days: 3
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,14 +37,22 @@ SKU memory: [[jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-09) — ref ₹419 vs live ₹-
-- **Days below reference:** 1 of 2
-- **Below on:** [[2026-06-09]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-10) — ref ₹419 vs live ₹-
+- **Days below reference:** 3 of 4
+- **Below on:** [[2026-06-06]] · [[2026-06-09]] · [[2026-06-10]]
 
-## Ref-vs-live history (16 observations)
+## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
+2026-06-06,amazon,OOS,SVD,409,,,,,,0,false
+2026-06-06,amazon-fresh,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-06,amazon-now,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-06,bigbasket,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-06,blinkit,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-06,flipkart,BELOW,SVD,409,396,396,396,-13,-3.18,1,true
+2026-06-06,flipkart-minutes,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-06,zepto,NOT_LISTED,SVD,409,,,,,,0,false
 2026-06-08,amazon,OOS,BAU,419,,,,,,0,false
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
@@ -61,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-09,flipkart,BELOW,BAU,419,396,396,396,-23,-5.49,1,true
 2026-06-09,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-09,zepto,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-10,amazon,MATCH,BAU,419,419,419,419,0,0,0,true
+2026-06-10,amazon-fresh,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-10,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-10,bigbasket,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-10,blinkit,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-10,flipkart,BELOW,BAU,419,396,396,396,-23,-5.49,1,true
+2026-06-10,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-10,zepto,NOT_LISTED,BAU,419,,,,,,0,false
 ```
 
 ---

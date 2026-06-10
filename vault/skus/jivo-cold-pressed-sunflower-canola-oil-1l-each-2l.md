@@ -5,11 +5,11 @@ display_name: Jivo Cold Pressed Sunflower & Canola Oil 1L Each (Pack of 2) (1LTR
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-09
-observations: 12
+last_seen: 2026-06-10
+observations: 13
 min_price: 433
 max_price: 451
-latest_price: 437
+latest_price: 449
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Sunflower & Canola Oil 1L Each (Pack of 2) (1LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹437 (32.8% off)
+- [[amazon]] — latest ₹449 (30.9% off)
 
-## Runs that observed this SKU (12)
-[[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (13)
+[[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (12 observations)
+## Price history (13 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -43,6 +43,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-08-1154,2026-06-08,amazon,All India,-,447,650,31.2,1
 2026-06-09-0857,2026-06-09,amazon,All India,-,433,650,33.4,1
 2026-06-09-1159,2026-06-09,amazon,All India,-,437,650,32.8,1
+2026-06-10-0901,2026-06-10,amazon,All India,-,449,650,30.9,1
 ```
 
 ---

@@ -11,11 +11,11 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-08
-last_seen: 2026-06-09
-observations: 16
+first_seen: 2026-06-06
+last_seen: 2026-06-10
+observations: 32
 latest_status: BELOW
-below_days: 2
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,14 +37,22 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-09) — ref ₹229 vs live ₹192
-- **Days below reference:** 2 of 2
-- **Below on:** [[2026-06-08]] · [[2026-06-09]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-10) — ref ₹229 vs live ₹192
+- **Days below reference:** 4 of 4
+- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
 
-## Ref-vs-live history (16 observations)
+## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
+2026-06-06,amazon,BELOW,SVD,219,207,207,207,-12,-5.48,1,true
+2026-06-06,amazon-fresh,BELOW,SVD,219,177,177,195,-42,-19.18,5,true
+2026-06-06,amazon-now,BELOW,SVD,219,177,177,195,-42,-19.18,6,true
+2026-06-06,bigbasket,BELOW,SVD,219,177.74,177.74,177.74,-41.26,-18.84,1,true
+2026-06-06,blinkit,BELOW,SVD,219,207,192,212,-12,-5.48,41,true
+2026-06-06,flipkart,OOS,SVD,219,,,,,,0,false
+2026-06-06,flipkart-minutes,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-06,zepto,BELOW,SVD,219,192,182,192,-27,-12.33,46,true
 2026-06-08,amazon,BELOW,BAU,229,207,207,207,-22,-9.61,1,true
 2026-06-08,amazon-fresh,BELOW,BAU,229,207,177,207,-22,-9.61,30,true
 2026-06-08,amazon-now,BELOW,BAU,229,177,177,192,-52,-22.71,10,true
@@ -57,10 +65,18 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-09,amazon-fresh,BELOW,BAU,229,177,177,195,-52,-22.71,5,true
 2026-06-09,amazon-now,BELOW,BAU,229,177,177,195,-52,-22.71,6,true
 2026-06-09,bigbasket,BELOW,BAU,229,177.74,177.74,177.74,-51.26,-22.38,1,true
-2026-06-09,blinkit,BELOW,BAU,229,207,207,212,-22,-9.61,40,true
+2026-06-09,blinkit,BELOW,BAU,229,207,192,212,-22,-9.61,41,true
 2026-06-09,flipkart,OOS,BAU,229,,,,,,0,false
 2026-06-09,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
-2026-06-09,zepto,BELOW,BAU,229,192,182,192,-37,-16.16,45,true
+2026-06-09,zepto,BELOW,BAU,229,192,182,192,-37,-16.16,46,true
+2026-06-10,amazon,BELOW,BAU,229,207,207,207,-22,-9.61,1,true
+2026-06-10,amazon-fresh,BELOW,BAU,229,186,177,207,-43,-18.78,52,true
+2026-06-10,amazon-now,BELOW,BAU,229,177,177,195,-52,-22.71,6,true
+2026-06-10,bigbasket,OOS,BAU,229,,,,,,0,false
+2026-06-10,blinkit,BELOW,BAU,229,207,192,212,-22,-9.61,42,true
+2026-06-10,flipkart,OOS,BAU,229,,,,,,0,false
+2026-06-10,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
+2026-06-10,zepto,BELOW,BAU,229,192,178,192,-37,-16.16,39,true
 ```
 
 ---

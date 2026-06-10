@@ -11,11 +11,11 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-08
-last_seen: 2026-06-09
-observations: 16
+first_seen: 2026-06-06
+last_seen: 2026-06-10
+observations: 32
 latest_status: BELOW
-below_days: 2
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,14 +37,22 @@ SKU memory: [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-fr
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-09) — ref ₹2169 vs live ₹2121
-- **Days below reference:** 2 of 2
-- **Below on:** [[2026-06-08]] · [[2026-06-09]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-10) — ref ₹2169 vs live ₹2123
+- **Days below reference:** 4 of 4
+- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
 
-## Ref-vs-live history (16 observations)
+## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
+2026-06-06,amazon,MATCH,SVD,2119,2119,2119,2119,0,0,0,true
+2026-06-06,amazon-fresh,BELOW,SVD,2119,1950,1950,2119,-169,-7.98,81,true
+2026-06-06,amazon-now,BELOW,SVD,2119,1950,1950,2119,-169,-7.98,69,true
+2026-06-06,bigbasket,NOT_LISTED,SVD,2119,,,,,,0,false
+2026-06-06,blinkit,BELOW,SVD,2119,1950,1950,2267,-169,-7.98,84,true
+2026-06-06,flipkart,OOS,SVD,2119,,,,,,0,false
+2026-06-06,flipkart-minutes,BELOW,SVD,2119,2049,2049,2049,-70,-3.3,8,true
+2026-06-06,zepto,ABOVE,SVD,2119,2121,2114,2494,2,0.09,3,true
 2026-06-08,amazon,BELOW,BAU,2169,2119,2119,2119,-50,-2.31,1,true
 2026-06-08,amazon-fresh,BELOW,BAU,2169,1950,1950,2119,-219,-10.1,98,true
 2026-06-08,amazon-now,BELOW,BAU,2169,1950,1950,2119,-219,-10.1,86,true
@@ -61,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-09,flipkart,OOS,BAU,2169,,,,,,0,false
 2026-06-09,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,8,true
 2026-06-09,zepto,BELOW,BAU,2169,2121,2114,2494,-48,-2.21,36,true
+2026-06-10,amazon,BELOW,BAU,2169,1926,1926,1926,-243,-11.2,1,true
+2026-06-10,amazon-fresh,BELOW,BAU,2169,1950,1926,2083,-219,-10.1,84,true
+2026-06-10,amazon-now,BELOW,BAU,2169,1950,1950,2119,-219,-10.1,84,true
+2026-06-10,bigbasket,NOT_LISTED,BAU,2169,,,,,,0,false
+2026-06-10,blinkit,BELOW,BAU,2169,1950,1950,2267,-219,-10.1,91,true
+2026-06-10,flipkart,BELOW,BAU,2169,1827,1827,1827,-342,-15.77,1,true
+2026-06-10,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,8,true
+2026-06-10,zepto,BELOW,BAU,2169,2123,2114,2574,-46,-2.12,47,true
 ```
 
 ---

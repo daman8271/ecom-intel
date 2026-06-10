@@ -5,8 +5,8 @@ display_name: Pomace Olive Oil (1 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-09
-observations: 27
+last_seen: 2026-06-10
+observations: 28
 min_price: 485.01
 max_price: 1049
 latest_price: 485.01
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[bigbasket]] — latest ₹485.01 (53.8% off)
 
-## Runs that observed this SKU (27)
-[[bigbasket-2026-06-09-1158]] · [[bigbasket-2026-06-09-0856]] · [[bigbasket-2026-06-08-1153]] · [[bigbasket-2026-06-08-0858]] · [[bigbasket-2026-06-07-1157]] · [[bigbasket-2026-06-07-0906]] · [[bigbasket-2026-06-06-1200]] · [[bigbasket-2026-06-06-1159]] · [[bigbasket-2026-06-06-1158]] · [[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1057]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (28)
+[[bigbasket-2026-06-10-0900]] · [[bigbasket-2026-06-09-1158]] · [[bigbasket-2026-06-09-0856]] · [[bigbasket-2026-06-08-1153]] · [[bigbasket-2026-06-08-0858]] · [[bigbasket-2026-06-07-1157]] · [[bigbasket-2026-06-07-0906]] · [[bigbasket-2026-06-06-1200]] · [[bigbasket-2026-06-06-1159]] · [[bigbasket-2026-06-06-1158]] · [[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1057]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (27 observations)
+## Price history (28 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -58,6 +58,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-08-1153,2026-06-08,bigbasket,All India,-,485.01,1049,53.8,1
 2026-06-09-0856,2026-06-09,bigbasket,All India,-,485.01,1049,53.8,1
 2026-06-09-1158,2026-06-09,bigbasket,All India,-,485.01,1049,53.8,1
+2026-06-10-0900,2026-06-10,bigbasket,All India,-,485.01,1049,53.8,1
 ```
 
 ---

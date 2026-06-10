@@ -1,13 +1,13 @@
 ---
 type: moc
 title: SKUs
-sku_count: 1006
+sku_count: 979
 tags:
   - moc
   - type/sku-moc
 ---
 
-# SKUs — Map of Content (1006 unique)
+# SKUs — Map of Content (979 unique)
 
 Up: [[index]]
 
@@ -399,7 +399,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-healthy-wheatgrass-juice-with-apple-boosts-immunity-detox-200ml-200ml]] — JIVO Healthy Wheatgrass Juice with Apple | Boosts Immunity & Detox | 200ml (200 MLS)
 - [[jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml]] — JIVO Healthy Wheatgrass Juice with Blue Berry Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml (200 MLS)
 - [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml]] — JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml (200 MLS)
-- [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml]] — JIVO Healthy Wheatgrass Juice with Mango Flavor - Body Detox & Immunity Booster, Natural Ingredients, 500ml (Pack of 1) (500 MLS)
+- [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml]] — Jivo Healthy Wheatgrass Juice with Mango Flavor (500ml) | Ayurvedic Body Detox & Immunity Booster Drink | Rich in Antioxidants & Nutrients | Delicious Ready to Drink Liquid Supplement (500 MLS)
 - [[jivo-healthy-wheatgrass-juice-with-mojito-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml]] — JIVO Healthy Wheatgrass Juice with Mojito Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml (200 MLS)
 - [[jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml]] — JIVO Healthy Wheatgrass Juice with Rose Flavor - Body Detox & Immunity Booster, Natural Ingredients, 200Ml (200 MLS)
 - [[jivo-indian-citric-tonic-water-premium-gt-mixer-low-calorie-flavoured-drink-100-natural-ingredients-200ml]] — JIVO Indian Citric Tonic Water (Pack Of 1 X 200Ml) | Premium G&T Mixer | Low Calorie Flavoured Drink | 100% Natural Ingredients (200 MLS)
@@ -658,7 +658,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l]] — Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cookin 5l
 - [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] — Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking
 - [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre
-- [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] — Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil 5 Litre Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Liter 5l
+- [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] — Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter
 - [[jivo-premium-quinoa-gluten-free-na]] — Jivo Premium Quinoa Gluten Free Na
 - [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] — Jivo Pure Extra Virgin Coconut Oil 1 Litre
 - [[jivo-pure-extra-virgin-coconut-oil-500-ml-500ml]] — Jivo Pure Extra Virgin Coconut Oil 500 ml
@@ -1121,46 +1121,13 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-pomace-olive-oil-tin-5l]] — JIVO Pomace Olive Oil Tin (5 L)
 - [[jivo-soybean-oil-soyabean-oil-pouch-1l]] — JIVO Soybean Oil Soyabean Oil Pouch (1 L)
 
-## [[]] (31)
-- [[buy-jivo-extra-light-daily-cooking-olive-oil-get-truly-good-food-tgf-penne-pasta-free-combo-na]] — Buy Jivo Extra Light Daily Cooking Olive Oil Get Truly Good Food Tgf Penne Pasta Free Combo Na
-- [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil 1l
-- [[jivo-canola-cold-press-oil-indian-medical-association-recommended-5l]] — Jivo Canola Cold Press Oil Indian Medical Association Recommended 5l
-- [[jivo-cold-press-kachi-ghani-mustard-oil-1l]] — Jivo Cold Press Kachi Ghani Mustard Oil 1l
-- [[jivo-cold-pressed-chemical-free-sunflower-oil-1l]] — Jivo Cold Pressed Chemical Free Sunflower Oil 1l
-- [[jivo-cold-pressed-chemical-free-sunflower-oil-5l]] — Jivo Cold Pressed Chemical Free Sunflower Oil 5l
-- [[jivo-cold-pressed-mustard-oil-5l-5l]] — Jivo Cold Pressed Mustard Oil 5l 5l
-- [[jivo-cold-pressed-oil-groundnut-oil-1l]] — Jivo Cold Pressed Oil Groundnut Oil 1l
-- [[jivo-cold-pressed-oil-groundnut-oil-5l]] — Jivo Cold Pressed Oil Groundnut Oil 5l
-- [[jivo-daily-cooking-pomace-olive-oil-1l]] — Jivo Daily Cooking Pomace Olive Oil 1l
-- [[jivo-desi-ghee-1kg-1l]] — Jivo Desi Ghee 1kg 1l
-- [[jivo-extra-light-daily-cooking-olive-oil-1l]] — Jivo Extra Light Daily Cooking Olive Oil 1l
-- [[jivo-extra-light-daily-cooking-olive-oil-na]] — Jivo Extra Light Daily Cooking Olive Oil Na
-- [[jivo-extra-light-edible-olive-oil-ideal-for-everyday-indian-cooking-5l]] — Jivo Extra Light Edible Olive Oil Ideal For Everyday Indian Cooking 5l
-- [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil 2l
-- [[jivo-extra-virgin-olive-oil-1l]] — Jivo Extra Virgin Olive Oil 1l
-- [[jivo-extra-virgin-olive-oil-250ml]] — Jivo Extra Virgin Olive Oil 250ml
-- [[jivo-first-pressed-sesame-oil-gingelly-oil-1l]] — Jivo First Pressed Sesame Oil Gingelly Oil 1l
-- [[jivo-first-pressed-yellow-mustard-oil-1l]] — Jivo First Pressed Yellow Mustard Oil 1l
-- [[jivo-fizzy-flavoured-soda-750ml]] — Jivo Fizzy Flavoured Soda 750ml
-- [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-1l]] — Jivo Gold Refined Oil Blend Of Rice Bran Oil Sunflower Oil 1l
-- [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-5l]] — Jivo Gold Refined Oil Blend Of Rice Bran Oil Sunflower Oil 5l
-- [[jivo-healthy-wheatgrass-juice-sugar-free-200ml]] — Jivo Healthy Wheatgrass Juice Sugar Free 200ml
-- [[jivo-indian-tonic-water-200ml]] — Jivo Indian Tonic Water 200ml
-- [[jivo-natural-minerals-water-1l]] — Jivo Natural Minerals Water 1l
-- [[jivo-pomace-daily-cooking-olive-oil-2l]] — Jivo Pomace Daily Cooking Olive Oil 2l
-- [[jivo-pomace-olive-oil-5l]] — Jivo Pomace Olive Oil 5l
-- [[jivo-ricebran-oil-1l-1l]] — Jivo Ricebran Oil 1l 1l
-- [[jivo-ricebran-oil-5l-5l]] — Jivo Ricebran Oil 5l 5l
-- [[jivo-so-olive-oil-1l-1l]] — Jivo So Olive Oil 1l 1l
-- [[jivo-so-olive-oil-5l-5l]] — Jivo So Olive Oil 5l 5l
-
 ## [[zepto]] (26)
 - [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] — Jivo Canola Cold Pressed Edible Oil | Cooking Oil (1 pc (5 L))
 - [[jivo-cold-press-canola-oil-combo-bottle-2l]] — Jivo Cold Press Canola Oil Combo | Bottle (1 pack (2 L))
 - [[jivo-daily-pomace-olive-oil-2l]] — Jivo Daily Pomace Olive Oil (1 pc (2 L))
 - [[jivo-extra-light-olive-oil-1l]] — Jivo Extra Light Olive Oil (1 pc (1 L))
 - [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil (1 pc (2 L))
-- [[jivo-extra-light-olive-oil-combo-1l]] — Jivo Extra Light Olive Oil Combo 1l
+- [[jivo-extra-light-olive-oil-combo-1l]] — Jivo Extra Light Olive Oil Combo (2 x 1 L)
 - [[jivo-extra-light-olive-oil-combo-2l]] — Jivo Extra Light Olive Oil Combo (1 L X 2)
 - [[jivo-extra-light-olive-oil-combo-4l]] — Jivo Extra Light Olive Oil Combo (2 L X 2)
 - [[jivo-extra-virgin-cooking-olive-oil-5l]] — Jivo Extra Virgin Cooking Olive Oil (1 pc (5 L))

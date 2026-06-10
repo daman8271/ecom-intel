@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-07
-last_seen: 2026-06-09
-observations: 27
+last_seen: 2026-06-10
+observations: 43
 min_price: 193
-max_price: 199
-latest_price: 199
+max_price: 202
+latest_price: 193
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Groundnut Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹199 (64.5% off)
+- [[amazon-fresh]] — latest ₹193 (65.5% off)
 - [[amazon-now]] — latest ₹199 (64.5% off)
 
 ## Available in cities
-[[Delhi]] · [[Kolkata]]
+[[Bengaluru]] · [[Delhi]] · [[Gurgaon]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (12)
-[[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-fresh-2026-06-09-1210]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]]
+## Runs that observed this SKU (13)
+[[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-fresh-2026-06-10-0911]] · [[amazon-fresh-2026-06-09-1210]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]]
 
-## Price history (27 observations)
+## Price history (43 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -64,6 +64,22 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-09-0924,2026-06-09,amazon-now,Delhi,110091,199,560,64.5,1
 2026-06-09-1210,2026-06-09,amazon-fresh,Delhi,110091,199,560,64.5,1
 2026-06-09-1226,2026-06-09,amazon-now,Delhi,110091,199,560,64.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Bengaluru,560019,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Bengaluru,560028,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Bengaluru,560069,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Delhi,110026,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Delhi,110035,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Delhi,110046,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Delhi,110048,202,560,63.9,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Delhi,110070,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Delhi,110091,198,560,64.6,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Gurgaon,122006,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Gurgaon,122010,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Kolkata,700107,199,560,64.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Mumbai,400703,202,560,63.9,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Noida,201309,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Pune,411014,193,560,65.5,1
+2026-06-10-0911,2026-06-10,amazon-fresh,Pune,411035,193,560,65.5,1
 ```
 
 ---

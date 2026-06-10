@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-combo-1l
-display_name: Jivo Extra Light Olive Oil Combo 1l
+display_name: Jivo Extra Light Olive Oil Combo (2 x 1 L)
 platforms:
   - zepto
 first_seen: 2026-05-30
-last_seen: 2026-06-03
-observations: 575
+last_seen: 2026-06-10
+observations: 600
 min_price: 998
-max_price: 1120
-latest_price: 1108
+max_price: 2664
+latest_price: 2664
 tags:
   - type/sku-hub
   - platform/zepto
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil Combo 1l**
+**Jivo Extra Light Olive Oil Combo (2 x 1 L)**
 
 ## Sold on
-- [[zepto]] — latest ₹1108 (63.0% off)
+- [[zepto]] — latest ₹2664 (11.1% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Gurgaon]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (12)
-[[zepto-2026-06-03-1401]] · [[zepto-2026-06-01-1754]] · [[zepto-2026-06-01-1600]] · [[zepto-2026-06-01-1200]] · [[zepto-2026-06-01-0900]] · [[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]] · [[zepto-2026-05-30-0017]]
+## Runs that observed this SKU (13)
+[[zepto-2026-06-10-0843]] · [[zepto-2026-06-03-1401]] · [[zepto-2026-06-01-1754]] · [[zepto-2026-06-01-1600]] · [[zepto-2026-06-01-1200]] · [[zepto-2026-06-01-0900]] · [[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]] · [[zepto-2026-05-30-0017]]
 
-## Price history (575 observations)
+## Price history (600 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -609,6 +609,31 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-03-1401,2026-06-03,zepto,Noida,201306,1120,2998,62.6,1
 2026-06-03-1401,2026-06-03,zepto,Noida,201307,1120,2998,62.6,1
 2026-06-03-1401,2026-06-03,zepto,Noida,201309,1108,2998,63,1
+2026-06-10-0843,2026-06-10,zepto,Bengaluru,560005,2664,2998,11.1,0
+2026-06-10-0843,2026-06-10,zepto,Chandigarh,160011,2664,2998,11.1,0
+2026-06-10-0843,2026-06-10,zepto,Chandigarh,160021,2664,2998,11.1,0
+2026-06-10-0843,2026-06-10,zepto,Chandigarh,160035,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Chandigarh,160043,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110006,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110008,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110009,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110010,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110017,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110018,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110035,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110088,2664,2998,11.1,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110090,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Delhi,110092,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Faridabad,121011,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Ghaziabad,201009,2664,2998,11.1,0
+2026-06-10-0843,2026-06-10,zepto,Ludhiana,141015,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Ludhiana,142022,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Ludhiana,142036,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Mumbai,400025,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Mysuru,570026,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Pune,410506,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Pune,411004,998,2998,66.7,0
+2026-06-10-0843,2026-06-10,zepto,Pune,411028,2664,2998,11.1,0
 ```
 
 ---

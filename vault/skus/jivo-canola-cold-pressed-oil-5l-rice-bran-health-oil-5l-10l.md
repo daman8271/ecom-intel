@@ -5,11 +5,11 @@ display_name: JIVO Canola Cold Pressed Oil 5L & Rice Bran Health Oil 5L (5LTR + 
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-09
-observations: 12
+last_seen: 2026-06-10
+observations: 13
 min_price: 2143
-max_price: 2158
-latest_price: 2158
+max_price: 2244
+latest_price: 2244
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **JIVO Canola Cold Pressed Oil 5L & Rice Bran Health Oil 5L (5LTR + 5LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹2158 (29.8% off)
+- [[amazon]] — latest ₹2244 (27.0% off)
 
-## Runs that observed this SKU (12)
-[[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (13)
+[[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (12 observations)
+## Price history (13 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -43,6 +43,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-08-1154,2026-06-08,amazon,All India,-,2158,3075,29.8,1
 2026-06-09-0857,2026-06-09,amazon,All India,-,2158,3075,29.8,1
 2026-06-09-1159,2026-06-09,amazon,All India,-,2158,3075,29.8,1
+2026-06-10-0901,2026-06-10,amazon,All India,-,2244,3075,27,1
 ```
 
 ---
