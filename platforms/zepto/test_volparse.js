@@ -14,8 +14,11 @@ const CASES = [
   ['1 L X 2', 2000],
   ['2 L X 2', 4000],
   ['750 ml x 2', 1500],
-  // additive packs
+  // additive packs — incl. 3+ addend chains (owner: "1+1+1 price-matches 3L")
   ['1+1 litres', 2000],
+  ['1L+1L+1L', 3000],
+  ['1 + 1 + 1 litres', 3000],
+  ['1L + 1L', 2000],
   // single quantities incl. Zepto's truncated-'ml' quirk
   ['1 pc (5 L)', 5000],
   ['1 Pack(200 m)', 200],
@@ -40,6 +43,23 @@ for (const [input, want] of CASES) {
   const ok = got === 2000;
   if (!ok) fail++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  volFromVariant(packsize=2/LITER) = ${got} (want 2000)`);
+}
+
+// the 2026-06-10 held-batch bug: some stores report UNIT packsize (1/LITER) for a
+// combo whose display string carries the multiplier — the display parse must win
+{
+  const got = volFromVariant({ packsize: 1, unitOfMeasure: 'LITER' }, '2 x 1 L');
+  const ok = got === 2000;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  volFromVariant(packsize=1/LITER, '2 x 1 L') = ${got} (want 2000)`);
+}
+
+// ...but a TRUNCATED display string must not drag a correct structured volume down
+{
+  const got = volFromVariant({ packsize: 2, unitOfMeasure: 'LITER' }, '1 L X');
+  const ok = got === 2000;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  volFromVariant(packsize=2/LITER, truncated '1 L X') = ${got} (want 2000)`);
 }
 
 // the fix must merge the phantom combo-1l canonical back into combo-2l

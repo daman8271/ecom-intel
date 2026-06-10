@@ -107,29 +107,45 @@ function parseVolMl(pack) {
   // so both orders are required; reviewers' parse_total_vol_ml already handles both.
   m = s.match(/([\d.]+)\s*[x×]\s*([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b/);
   if (m) { const base = toMl(parseFloat(m[2]), m[3]); return base != null ? parseFloat(m[1]) * base : null; }
-  // Additive packs: "A+B L" / "A + B Litres" => (A+B) of the unit (e.g. 1+1 Litres = 2 L).
-  m = s.match(/([\d.]+)\s*\+\s*([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b/);
-  if (m) { return toMl(parseFloat(m[1]) + parseFloat(m[2]), m[3]); }
+  // Additive packs: "A+B L" / "1L+1L+1L" / "1 + 1 + 1 Litres" => sum of ALL addends
+  // (Jivo sells 2- and 3-oil packs; a 1+1+1 legitimately price-matches a 3 L). A term
+  // without its own unit inherits the chain's trailing unit ("1+1 Litres").
+  m = s.match(/(?:[\d.]+\s*(?:ml|ltr|litres|litre|l|kg|g|m)?\s*\+\s*)+[\d.]+\s*(ml|ltr|litres|litre|l|kg|g|m)\b/);
+  if (m) {
+    let tot = 0;
+    for (const t of m[0].split('+')) {
+      const tm = t.trim().match(/^([\d.]+)\s*(ml|ltr|litres|litre|l|kg|g|m)?\s*$/);
+      const add = tm ? toMl(parseFloat(tm[1]), tm[2] || m[1]) : null;
+      if (add == null) { tot = null; break; }
+      tot += add;
+    }
+    if (tot) return tot;
+  }
   // Single quantity: "1 L", "200 ml", "1 pc (1 L)", "1 Pack(200 m)".
   m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b/);
   if (m) return toMl(parseFloat(m[1]), m[2]);
   return null;
 }
-// Authoritative volume from the variant's STRUCTURED fields (packsize + unitOfMeasure), which are
-// immune to the display-string truncation that breaks formattedPacksize (e.g. "1 Pack(200 m)").
-// packsize is the TOTAL volume in unitOfMeasure units (Zepto does NOT double combos: "1 L X 2"
-// reports packsize=2/LITER), so this is correct for combos too. Falls back to parsing the display
-// string for any variant that lacks the structured fields.
+// Volume from the variant's STRUCTURED fields (packsize + unitOfMeasure), which are immune to
+// the display-string truncation that breaks formattedPacksize (e.g. "1 Pack(200 m)"). packsize
+// is USUALLY the TOTAL volume in unitOfMeasure units ("1 L X 2" reports packsize=2/LITER) — but
+// some store catalogs report the UNIT size instead (packsize=1/LITER on "2 x 1 L"; held the
+// 2026-06-10 sheets: vol 1000 ml on a 2 L combo split the canonical and doubled per_litre). The
+// display string can only ever UNDERSTATE (truncation), never overstate, so when both sources
+// parse, the larger one is the true total.
 function volFromVariant(v, pack) {
   const ps = v && v.packsize;
   const u = v && String(v.unitOfMeasure || '').toLowerCase();
+  let structured = null;
   if (ps != null && u) {
-    if (/^milli/.test(u) || u === 'ml') return ps;            // MILLILITRE
-    if (/^lit(er|re)/.test(u) || u === 'l') return ps * 1000; // LITER / LITRE
-    if (/^gram/.test(u) || u === 'g') return ps;              // GRAM
-    if (/^kilo/.test(u) || u === 'kg') return ps * 1000;      // KILOGRAM
+    if (/^milli/.test(u) || u === 'ml') structured = ps;            // MILLILITRE
+    else if (/^lit(er|re)/.test(u) || u === 'l') structured = ps * 1000; // LITER / LITRE
+    else if (/^gram/.test(u) || u === 'g') structured = ps;              // GRAM
+    else if (/^kilo/.test(u) || u === 'kg') structured = ps * 1000;      // KILOGRAM
   }
-  return parseVolMl(pack);
+  const parsed = parseVolMl(pack);
+  if (structured != null && parsed != null) return Math.max(structured, parsed);
+  return structured != null ? structured : parsed;
 }
 // Canonical slug = slugify(product.name) + volume tag. The vol is precomputed (see volFromVariant)
 // so the tag is correct even when the display pack string is truncated. NOTE: distinct products that

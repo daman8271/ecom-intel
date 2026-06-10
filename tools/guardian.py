@@ -51,6 +51,7 @@ import csv
 import datetime
 import json
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -334,21 +335,41 @@ def deep_checks(platform, data):
         + (" — looks padded" if null_frac > NULL_PRICE_FRAC else ""))
 
     # ---- CLASS 4/2: SHARED (sale,mrp) across DISTINCT canonicals ----------
+    # Calibration mirrors review.py shared_price_dup (identity-aware, W1) — kept
+    # inline so the deep checks stay an independent implementation. Three things
+    # are NOT fabrication and must not fire (each held a clean sheet before):
+    #   - combo/multipack listings: combined volumes legitimately share one bundle
+    #     price (owner-confirmed 2026-06-10: a 2x1L combo == a 2L combo at ₹998,
+    #     a 1+1+1 pack price-matches a 3L);
+    #   - sale==mrp collisions: many cheap SKUs at one list price, no discount;
+    #   - seller-duplicate listings of the SAME product (same `item` name,
+    #     distinct per-listing canonicals) — collapsed to one identity.
+    combo_re = re.compile(r"\+|\bcombo\b|pack of \d+")
+    def is_combo(r):
+        return any(fld and combo_re.search(str(fld).lower())
+                   for fld in (r.get("item"), r.get("sku_raw")))
+    def identity(r):
+        it = r.get("item")
+        return ("item", " ".join(str(it).split()).lower()) if it else ("canon", canon(r))
     pair_to_skus = defaultdict(set)
     for r in rows:
         sale, mrp = num(r.get("sale")), num(r.get("mrp"))
         c = canon(r)
-        if sale and mrp and c:
-            pair_to_skus[(round(sale, 2), round(mrp, 2))].add(c)
+        if not (sale and mrp and c):
+            continue
+        if abs(sale - mrp) < 0.5 or is_combo(r):
+            continue
+        pair_to_skus[(round(sale, 2), round(mrp, 2))].add(identity(r))
     dup_pairs = {p: s for p, s in pair_to_skus.items() if len(s) >= 2}
     if dup_pairs:
         ex = next(iter(dup_pairs.items()))
+        ex_names = ", ".join(str(i[1]) for i in sorted(ex[1])[:3])
         add(4, "shared_price_dup", False, "suspect",
-            f"{len(dup_pairs)} (sale,mrp) pairs shared by distinct SKUs, e.g. "
-            f"₹{ex[0][0]}/₹{ex[0][1]} -> {', '.join(sorted(ex[1])[:3])}")
+            f"{len(dup_pairs)} discounted (sale,mrp) pairs shared by distinct "
+            f"non-combo products, e.g. ₹{ex[0][0]}/₹{ex[0][1]} -> {ex_names}")
     else:
         add(4, "shared_price_dup", True, "suspect",
-            "no (sale,mrp) pair shared across distinct SKUs")
+            "no discounted (sale,mrp) pair shared across distinct non-combo products")
 
     # ---- CLASS 5/6: PER-LITRE / VOLUME / COMBO ----------------------------
     by_canon = defaultdict(list)
