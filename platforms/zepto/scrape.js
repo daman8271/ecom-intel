@@ -102,6 +102,11 @@ function parseVolMl(pack) {
   // Must run BEFORE the single-quantity match, which would otherwise read only the first "1 L".
   let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b\s*[x×]\s*([\d.]+)/);
   if (m) { const base = toMl(parseFloat(m[1]), m[2]); return base != null ? base * parseFloat(m[3]) : null; }
+  // Multiplier-FIRST combos: "M x N unit" ("2 x 1 L", "2x1L", "3 x 500 ml") => M*N of the unit.
+  // Zepto renders the SAME variant either way depending on the store ("1 L X 2" vs "2 x 1 L"),
+  // so both orders are required; reviewers' parse_total_vol_ml already handles both.
+  m = s.match(/([\d.]+)\s*[x×]\s*([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b/);
+  if (m) { const base = toMl(parseFloat(m[2]), m[3]); return base != null ? parseFloat(m[1]) * base : null; }
   // Additive packs: "A+B L" / "A + B Litres" => (A+B) of the unit (e.g. 1+1 Litres = 2 L).
   m = s.match(/([\d.]+)\s*\+\s*([\d.]+)\s*(ml|l|ltr|litre|litres|kg|g|m)\b/);
   if (m) { return toMl(parseFloat(m[1]) + parseFloat(m[2]), m[3]); }
@@ -438,7 +443,11 @@ async function pool(items, n, fn) {
   return results;
 }
 
-(async () => {
+// Exported for the offline volparse test (same pattern as amazon-fresh); the scrape
+// only runs when invoked directly, so `require`-ing this file never hits the network.
+module.exports = { parseVolMl, volFromVariant, canonical };
+
+if (require.main === module) (async () => {
   const t0 = Date.now();
   const perPin = await pool(PINCODES, CONCURRENCY, scrapeOne);
   const allRows = perPin.flatMap(p => p.rows);
