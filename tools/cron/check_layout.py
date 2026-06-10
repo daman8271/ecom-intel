@@ -107,10 +107,14 @@ def main(argv):
     note = (f"layout gate PASS — {checked} book(s) compliant"
             + (f" ({', '.join(missing)} not built yet)" if missing else ""))
     print(note)
-    if not dry and not os.path.exists(STATE):
-        telegram("✅ Layout gate live: today's batch verified — competitor "
-                 "reports carry no agreed-price content, Amazon books intact. "
-                 "This pings again only if a future batch ever breaks the rule.")
+    # bootstrap ping only on a FULL pass (all 8 books present) — a late chain
+    # at 12:10 holds the confirmation for the 15:10 run instead
+    if not dry and not missing and not os.path.exists(STATE):
+        telegram(f"✅ Batch verified ({date}) — all {checked} reports checked: "
+                 "competitor books carry no agreed-price content / no Price "
+                 "Match tab, Amazon books intact. The layout gate now runs "
+                 "after every batch and pings again only if one ever breaks "
+                 "the rule.")
         open(STATE, "w").write(date + "\n")
     return 0
 
