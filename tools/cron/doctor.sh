@@ -314,9 +314,14 @@ SETTINGS
 SETTINGS
   fi
 
-  log "invoking claude headless (model=$MODEL timeout=${TIMEOUT_S}s autofix=$DOCTOR_AUTOFIX)"
+  # Cron's bare PATH (/usr/bin:/bin) can't see ~/.local/bin, so every nightly agent
+  # invocation died rc=127 since install (2026-06-08..10) — the doctor has only ever
+  # run deterministic checks. Resolve the binary once, falling back to the known
+  # install path; DOCTOR_AGENT_CMD (above) still overrides the whole invocation.
+  CLAUDE_BIN="${CLAUDE_BIN:-$(command -v claude || echo /root/.local/bin/claude)}"
+  log "invoking claude headless (bin=$CLAUDE_BIN model=$MODEL timeout=${TIMEOUT_S}s autofix=$DOCTOR_AUTOFIX)"
   CLAUDE_CONFIG_DIR="$CCFG" timeout "$TIMEOUT_S" \
-    claude -p "$(cat "$PROMPT_FILE")" \
+    "$CLAUDE_BIN" -p "$(cat "$PROMPT_FILE")" \
       --model "$MODEL" \
       --output-format text \
       --add-dir "$DIR" \
