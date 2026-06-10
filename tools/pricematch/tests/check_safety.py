@@ -80,7 +80,7 @@ def main():
 
     base = tempfile.mkdtemp(prefix="pmsafety-")
     try:
-        src = newest_workbook("bigbasket")  # small workbook, fast
+        src = newest_workbook("amazon")  # Amazon-family: the append path (owner 2026-06-10: tab is Amazon-only)
         tmp_x = os.path.join(base, os.path.basename(src))
         shutil.copy2(src, tmp_x)
 
@@ -90,7 +90,7 @@ def main():
         n_sheets_pre = len(wb.sheetnames)
         had_pm = "Price Match" in wb.sheetnames
         wb.close()
-        p1 = run_appender("bigbasket", tmp_x)
+        p1 = run_appender("amazon", tmp_x)
         check("appender re-run: exit 0", p1.returncode == 0,
               "rc=%d stderr=%s" % (p1.returncode, p1.stderr[-300:]))
         wb = openpyxl.load_workbook(tmp_x, read_only=True)
@@ -108,7 +108,7 @@ def main():
               not drift and not gone, "drift=%s gone=%s" % (drift, gone))
 
         # run twice more: still one sheet (true idempotency)
-        run_appender("bigbasket", tmp_x)
+        run_appender("amazon", tmp_x)
         wb = openpyxl.load_workbook(tmp_x, read_only=True)
         check("appender 3x: still one 'Price Match', count stable",
               wb.sheetnames.count("Price Match") == 1 and len(wb.sheetnames) == expect_n,
@@ -129,7 +129,7 @@ def main():
         with open(crash_x, "rb") as f:
             pre_bytes = hashlib.sha256(f.read()).hexdigest()
         p4 = subprocess.run([sys.executable, os.path.join(sandbox_pm, "add_pricematch_sheet.py"),
-                             "bigbasket", crash_x, "--date", DATE],
+                             "amazon", crash_x, "--date", DATE],
                             capture_output=True, text=True, timeout=120, cwd=base)
         with open(crash_x, "rb") as f:
             post_bytes = hashlib.sha256(f.read()).hexdigest()
@@ -139,7 +139,7 @@ def main():
         check("crashing engine: warning printed", bool((p4.stdout + p4.stderr).strip()),
               "silent failure — no warning at all")
 
-        # --- 5: unknown platform => graceful note sheet, exit 0
+        # --- 5: non-Amazon platform => tab stripped (owner 2026-06-10), exit 0
         unk_x = os.path.join(base, "unk-" + os.path.basename(src))
         shutil.copy2(src, unk_x)
         p5 = run_appender("not-a-platform", unk_x)
@@ -147,11 +147,15 @@ def main():
               "rc=%d stderr=%s" % (p5.returncode, p5.stderr[-300:]))
         try:
             wb = openpyxl.load_workbook(unk_x, read_only=True)
+            unk_names = wb.sheetnames
             wb.close()
             ok_open = True
         except Exception as e:
             ok_open = False
+            unk_names = []
         check("unknown platform: workbook still opens", ok_open)
+        check("non-Amazon platform: 'Price Match' tab stripped",
+              ok_open and "Price Match" not in unk_names, unk_names)
 
         # --- 3: master builder determinism (byte-stable)
         if os.path.exists(BUILDER):

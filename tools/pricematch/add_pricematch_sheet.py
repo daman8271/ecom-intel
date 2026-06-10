@@ -70,6 +70,14 @@ WRAP = Alignment(horizontal="left", vertical="center", wrap_text=True)
 SHEET_NAME = "Price Match"
 TOL = 1.0  # Rs.1 tolerance: |diff| <= 1 => MATCH (owner-ratified)
 
+# Owner 2026-06-10: the "Price Match" tab (live vs agreed BAU/SVD/ART
+# reference) belongs ONLY to the Amazon-family reports — the agreed price
+# list is an Amazon agreement. Other platforms have no reference price;
+# they are compared against Amazon in the central Price Match workbook's
+# PM Check sheets instead. For them this script now REMOVES a leftover
+# tab instead of appending one.
+AGREED_PRICE_PLATFORMS = {"amazon", "amazon-fresh", "amazon-now"}
+
 DISPLAY = {
     "blinkit": "Blinkit", "": "", "zepto": "Zepto",
     "flipkart-minutes": "Flipkart Minutes", "flipkart": "Flipkart",
@@ -382,6 +390,31 @@ def _platform_unmapped(platform):
         return False  # can't tell -> treat as a real failure (no sheet)
 
 
+def strip_sheet(xlsx_path):
+    """Remove SHEET_NAME if present (same atomic temp-copy pattern as
+    build()). Returns True if a tab was removed, False on no-op."""
+    wb = load_workbook(xlsx_path, read_only=True)
+    names = wb.sheetnames
+    wb.close()
+    if SHEET_NAME not in names or len(names) < 2:
+        return False                    # nothing to do / never leave a book sheetless
+    tmp = os.path.join(os.path.dirname(os.path.abspath(xlsx_path)),
+                       ".pm.tmp." + os.path.basename(xlsx_path))
+    shutil.copy2(xlsx_path, tmp)
+    try:
+        wb = load_workbook(tmp)
+        del wb[SHEET_NAME]
+        wb.save(tmp)
+        os.replace(tmp, xlsx_path)
+    finally:
+        if os.path.exists(tmp):
+            try:
+                os.remove(tmp)
+            except OSError:
+                pass
+    return True
+
+
 def build(platform, xlsx_path, date_str):
     core, core_name = _get_core()
     ctx = core.load_context(date_str) if date_str else core.load_context()
@@ -438,6 +471,21 @@ def main(argv):
                          "<xlsx_path> [--date YYYY-MM-DD]\n")
         return 0  # fail-safe: never break the pipeline
     platform, xlsx_path = args[0], args[1]
+    if platform not in AGREED_PRICE_PLATFORMS:
+        # Owner rule 2026-06-10: agreed-price tab is Amazon-family only.
+        # Same fail-safe contract: any error -> warn, workbook untouched, exit 0.
+        try:
+            if not os.path.isfile(xlsx_path):
+                raise FileNotFoundError(xlsx_path)
+            removed = strip_sheet(xlsx_path)
+            sys.stderr.write(
+                "add_pricematch_sheet: %r is not Amazon-family — '%s' %s "
+                "(owner rule 2026-06-10)\n"
+                % (platform, SHEET_NAME, "removed" if removed else "not added"))
+        except Exception as e:
+            sys.stderr.write(f"add_pricematch_sheet: strip FAILED (non-fatal, "
+                             f"workbook untouched): {e}\n")
+        return 0
     try:
         if not os.path.isfile(xlsx_path):
             raise FileNotFoundError(xlsx_path)
