@@ -71,7 +71,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-09,zepto,OOS,BAU,1139,,,,,,0,false
 2026-06-10,amazon,BELOW,BAU,1139,976,976,976,-163,-14.31,1,true
 2026-06-10,amazon-fresh,BELOW,BAU,1139,1051,949,1103,-88,-7.73,99,true
-2026-06-10,amazon-now,BELOW,BAU,1139,1049,949,1049,-90,-7.9,54,true
+2026-06-10,amazon-now,BELOW,BAU,1139,1051,949,1051,-88,-7.73,73,true
 2026-06-10,bigbasket,OOS,BAU,1139,,,,,,0,false
 2026-06-10,blinkit,NOT_LISTED,BAU,1139,,,,,,0,false
 2026-06-10,flipkart,ABOVE,BAU,1139,1204,1204,1204,65,5.71,0,true

@@ -15,7 +15,7 @@ first_seen: 2026-06-06
 last_seen: 2026-06-10
 observations: 32
 latest_status: NOT_LISTED
-below_days: 3
+below_days: 2
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,8 @@ SKU memory: [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunit
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** ▫️ not listed on [[zepto]] (2026-06-10) — ref ₹39 vs live ₹-
-- **Days below reference:** 3 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Days below reference:** 2 of 4
+- **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
 ## Ref-vs-live history (32 observations)
 
@@ -71,7 +71,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-09,zepto,NOT_LISTED,BAU,39,,,,,,0,false
 2026-06-10,amazon,OOS,BAU,39,,,,,,0,false
 2026-06-10,amazon-fresh,NOT_LISTED,BAU,39,,,,,,0,false
-2026-06-10,amazon-now,BELOW,BAU,39,35,35,35,-4,-10.26,8,true
+2026-06-10,amazon-now,ABOVE,BAU,39,55,55,100,16,41.03,0,true
 2026-06-10,bigbasket,OOS,BAU,39,,,,,,0,false
 2026-06-10,blinkit,NOT_LISTED,BAU,39,,,,,,0,false
 2026-06-10,flipkart,NOT_LISTED,BAU,39,,,,,,0,false

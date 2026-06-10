@@ -37,7 +37,7 @@ SKU memory: [[jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-10) — ref ₹289 vs live ₹257
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-10) — ref ₹289 vs live ₹264
 - **Days below reference:** 4 of 4
 - **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
 
@@ -76,7 +76,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,blinkit,NOT_LISTED,BAU,289,,,,,,0,false
 2026-06-10,flipkart,BELOW,BAU,289,237,237,237,-52,-17.99,1,true
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,289,,,,,,0,false
-2026-06-10,zepto,BELOW,BAU,289,257,257,257,-32,-11.07,2,true
+2026-06-10,zepto,BELOW,BAU,289,264,264,264,-25,-8.65,2,true
 ```
 
 ---

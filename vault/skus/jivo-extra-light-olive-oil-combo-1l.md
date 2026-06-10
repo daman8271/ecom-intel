@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-combo-1l
-display_name: Jivo Extra Light Olive Oil Combo (2 x 1 L)
+display_name: Jivo Extra Light Olive Oil Combo 1l
 platforms:
   - zepto
 first_seen: 2026-05-30
 last_seen: 2026-06-10
-observations: 600
+observations: 625
 min_price: 998
 max_price: 2664
-latest_price: 2664
+latest_price: 998
 tags:
   - type/sku-hub
   - platform/zepto
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil Combo (2 x 1 L)**
+**Jivo Extra Light Olive Oil Combo 1l**
 
 ## Sold on
-- [[zepto]] — latest ₹2664 (11.1% off)
+- [[zepto]] — latest ₹998 (66.7% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (13)
-[[zepto-2026-06-10-0843]] · [[zepto-2026-06-03-1401]] · [[zepto-2026-06-01-1754]] · [[zepto-2026-06-01-1600]] · [[zepto-2026-06-01-1200]] · [[zepto-2026-06-01-0900]] · [[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]] · [[zepto-2026-05-30-0017]]
+## Runs that observed this SKU (14)
+[[zepto-2026-06-10-1149]] · [[zepto-2026-06-10-0843]] · [[zepto-2026-06-03-1401]] · [[zepto-2026-06-01-1754]] · [[zepto-2026-06-01-1600]] · [[zepto-2026-06-01-1200]] · [[zepto-2026-06-01-0900]] · [[zepto-2026-05-31-1600]] · [[zepto-2026-05-31-1200]] · [[zepto-2026-05-31-0900]] · [[zepto-2026-05-30-1600]] · [[zepto-2026-05-30-1200]] · [[zepto-2026-05-30-0900]] · [[zepto-2026-05-30-0017]]
 
-## Price history (600 observations)
+## Price history (625 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -634,6 +634,31 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-10-0843,2026-06-10,zepto,Pune,410506,998,2998,66.7,0
 2026-06-10-0843,2026-06-10,zepto,Pune,411004,998,2998,66.7,0
 2026-06-10-0843,2026-06-10,zepto,Pune,411028,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Bengaluru,560005,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Chandigarh,160011,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Chandigarh,160021,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Chandigarh,160035,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Chandigarh,160043,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110006,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110008,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110009,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110010,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110017,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110018,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110035,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110088,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Delhi,110090,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Faridabad,121011,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Ghaziabad,201009,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Indore,452001,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Jaipur,302020,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Jaipur,302025,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Jaipur,303602,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Kolkata,700001,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Mysuru,570026,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Pune,410506,2664,2998,11.1,0
+2026-06-10-1149,2026-06-10,zepto,Pune,411004,998,2998,66.7,0
+2026-06-10-1149,2026-06-10,zepto,Pune,411028,998,2998,66.7,0
 ```
 
 ---

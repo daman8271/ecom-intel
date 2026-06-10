@@ -7,7 +7,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-06-01
 last_seen: 2026-06-10
-observations: 15
+observations: 16
 min_price: 1399
 max_price: 1409
 latest_price: 1409
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Gurgaon]] · [[Mysuru]]
 
-## Runs that observed this SKU (15)
-[[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (16)
+[[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (15 observations)
+## Price history (16 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -52,6 +52,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-09-0857,2026-06-09,amazon,All India,-,1409,1649,14.6,1
 2026-06-09-1159,2026-06-09,amazon,All India,-,1409,1649,14.6,1
 2026-06-10-0901,2026-06-10,amazon,All India,-,1409,1649,14.6,1
+2026-06-10-1208,2026-06-10,amazon,All India,-,1409,1649,14.6,1
 ```
 
 ---
