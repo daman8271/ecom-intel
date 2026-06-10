@@ -73,7 +73,16 @@ try {
 // --- price/pack helpers (IDENTICAL to zepto/blinkit/now so canonical IDs line up) ---
 function parseVolMl(pack) {
   if (!pack) return null;
-  const m = pack.toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);
+  const s = pack.toLowerCase();
+  const toMl = (n, u) => (u === 'ml' || u === 'g') ? n : n * 1000; // l/ltr/litre/kg -> ml
+  // Combo PACK strings in BOTH orders ("1 l x 2" / "2 x 1 l" — same 2L pack; zepto fix
+  // 2026-06-10). comboVolMl() below only sees raw TITLES — when a combo lands here as a
+  // pack string, the single-quantity match would read just "1 l" and halve the volume.
+  let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b\s*[x×*]\s*([\d.]+)/);          // unit-first "N unit X M"
+  if (m) return toMl(parseFloat(m[1]), m[2]) * parseFloat(m[3]);
+  m = s.match(/([\d.]+)\s*[x×*]\s*([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);              // multiplier-first "M x N unit"
+  if (m) return parseFloat(m[1]) * toMl(parseFloat(m[2]), m[3]);
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);                                 // single quantity (unchanged)
   if (!m) return null;
   const n = parseFloat(m[1]); const u = m[2];
   if (u === 'ml' || u === 'g') return n;
@@ -287,16 +296,24 @@ function normalizeCanonicals(allRows) {
   return allRows;
 }
 
+// Session probe — THREE outcomes, not two (2026-06-10 false-expiry fix, same as amazon-now).
+// greeting is:
+//   * a non-null string read off a LOADED page (nav account widget present — the
+//     waitForSelector gate): trustworthy. A real signed-out page shows "Hello, sign in";
+//   * null: the probe never got a loaded page (goto/selector timeout, network, WAF) — says
+//     NOTHING about the cookies. The old catch returned greeting:'' here, so a single 45s
+//     nav timeout was misread as expiry and killed the morning report.
 async function checkSession(page) {
   try {
     await page.goto('https://www.amazon.in/?ref_=nav_signin', { waitUntil: 'domcontentloaded', timeout: 45000 });
     await sleep(1500); await passInterstitial(page);
+    await page.waitForSelector('#nav-link-accountList', { timeout: 15000 });   // loaded-page gate
     return await page.evaluate(() => {
       const g = document.querySelector('#nav-link-accountList-nav-line-1, #nav-link-accountList .nav-line-1');
       const t = g ? (g.innerText || '').trim() : '';
       return { loggedIn: /hello,?\s+(?!sign)/i.test(t) && !/sign in/i.test(t), greeting: t };
     });
-  } catch (_) { return { loggedIn: false, greeting: '' }; }
+  } catch (e) { return { loggedIn: false, greeting: null, err: (e && e.message) || String(e) }; }
 }
 
 // Pure helpers are exported so they can be unit-tested OFFLINE (no scraper/browser run);
@@ -325,12 +342,26 @@ if (require.main === module) (async () => {
   }
   let { browser, ctx, page } = await openBrowser();
 
-  const sess = await checkSession(page);
-  if (!sess.loggedIn) {
+  // Session gate with retry (2026-06-10 false-expiry fix, same as amazon-now): up to 3 probes
+  // ~10s apart, only the FINAL one judged. TRUE expiry (marker + exit 3) requires a LOADED
+  // page showing a signed-out greeting (greeting non-null). 3/3 inconclusive (greeting null —
+  // page never loaded) = network suspect, NOT expiry: no marker, distinct exit 4.
+  let sess = await checkSession(page);
+  for (let att = 2; att <= 3 && !sess.loggedIn; att++) {
+    process.stderr.write('[session] probe ' + (att - 1) + '/3 ' + (sess.greeting === null ? 'inconclusive (' + (sess.err || 'no load') + ')' : 'signed-out greeting "' + sess.greeting + '"') + ' — retrying in 10s\n');
+    await sleep(10000);
+    sess = await checkSession(page);
+  }
+  if (!sess.loggedIn && sess.greeting !== null) {
     await browser.close().catch(() => {});
     fs.writeFileSync(path.join(__dirname, 'secrets', 'SESSION_EXPIRED'), new Date().toISOString() + '\n');
     console.error('FATAL: Amazon session EXPIRED (greeting="' + sess.greeting + '"). Re-export cookies + run ../amazon-now/import_cookies.js.');
     process.exit(3);
+  }
+  if (!sess.loggedIn) {
+    await browser.close().catch(() => {});
+    console.error('FATAL: session probe INCONCLUSIVE 3/3 (' + (sess.err || 'page never loaded') + ') — network suspect, NOT expiry; SESSION_EXPIRED not written.');
+    process.exit(4);
   }
   try { fs.unlinkSync(path.join(__dirname, 'secrets', 'SESSION_EXPIRED')); } catch (_) {}
   process.stderr.write('[session] OK — ' + sess.greeting + '\n');

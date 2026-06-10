@@ -31,13 +31,22 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
 function parseVolMl(pack) {
   if (!pack) return null;
-  const m = pack.toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
+  const s = pack.toLowerCase();
+  const toMl = (n, u) => {
+    if (u === 'ml' || u === 'g') return n;
+    if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
+    return null;
+  };
+  // Combo packs come in BOTH orders ("2 x 1 L" and "1 L X 2" are the same 2L pack —
+  // same combo handling as scrape.js / zepto 2026-06-10); they must run BEFORE the
+  // single-quantity match, which would otherwise read only "1 L" and halve the volume.
+  let m = s.match(/([\d.]+)\s*[x×*]\s*([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);           // multiplier-first "M x N unit"
+  if (m) { const each = toMl(parseFloat(m[2]), m[3]); return each != null ? parseFloat(m[1]) * each : null; }
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\s*[x×*]\s*([\d.]+)/);               // unit-first "N unit X M"
+  if (m) { const each = toMl(parseFloat(m[1]), m[2]); return each != null ? each * parseFloat(m[3]) : null; }
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);                                  // single quantity (unchanged)
   if (!m) return null;
-  const n = parseFloat(m[1]);
-  const u = m[2];
-  if (u === 'ml' || u === 'g') return n;
-  if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
-  return null;
+  return toMl(parseFloat(m[1]), m[2]);
 }
 
 function canonical(name, pack) {
@@ -186,7 +195,11 @@ async function pool(items, n, fn) {
   return results;
 }
 
-(async () => {
+// Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
+// only runs when invoked directly, so `require`-ing this file never launches a browser.
+module.exports = { parseVolMl, canonical };
+
+if (require.main === module) (async () => {
   const browser = await chromium.launch({ headless: true });
   const t0 = Date.now();
   const perPin = await pool(PINCODES, CONCURRENCY, (rec) => scrapeOne(browser, rec));

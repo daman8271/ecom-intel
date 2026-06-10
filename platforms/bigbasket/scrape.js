@@ -91,12 +91,22 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 // --- price/pack helpers (same conventions as the other platforms) ----------
 function parseVolMl(pack) {
   if (!pack) return null;
-  const m = String(pack).toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);
+  const s = String(pack).toLowerCase();
+  const toMl = (n, u) => {
+    if (u === 'ml' || u === 'g') return n;
+    if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
+    return null;
+  };
+  // Combo packs come in BOTH orders ("1 L x 2" and "2 x 1 L" are the same 2L pack —
+  // same fix as zepto 2026-06-10); they must run BEFORE the single-quantity match,
+  // which would otherwise read only the first "1 L" and halve the volume (2x Rs/L).
+  let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b\s*[x×]\s*([\d.]+)/);          // unit-first "N unit X M"
+  if (m) { const base = toMl(parseFloat(m[1]), m[2]); return base != null ? base * parseFloat(m[3]) : null; }
+  m = s.match(/([\d.]+)\s*[x×]\s*([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);              // multiplier-first "M x N unit"
+  if (m) { const base = toMl(parseFloat(m[2]), m[3]); return base != null ? parseFloat(m[1]) * base : null; }
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);                                // single quantity (unchanged)
   if (!m) return null;
-  const n = parseFloat(m[1]); const u = m[2];
-  if (u === 'ml' || u === 'g') return n;
-  if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
-  return null;
+  return toMl(parseFloat(m[1]), m[2]);
 }
 function canonical(name, pack) {
   const base = (name || '').toLowerCase().replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, '')
@@ -381,7 +391,9 @@ let DONE = false;
 // Bumped 240s -> 360s to give the rate-limit backoff/retries room (a throttled run
 // can legitimately take longer now). The cron is serial with hours of headroom.
 const WATCHDOG_MS = parseInt(process.env.BB_WATCHDOG_MS || '360000', 10);
-const watchdog = setTimeout(() => {
+// Armed only when run directly: a `require` (offline volparse test) must never start a
+// timer that overwrites result.json with an empty result. clearTimeout(null) is a no-op.
+const watchdog = (require.main !== module) ? null : setTimeout(() => {
   if (DONE) return;
   DONE = true;
   process.stderr.write(`[FATAL] watchdog: scrape exceeded ${WATCHDOG_MS}ms — emitting empty result\n`);
@@ -389,7 +401,11 @@ const watchdog = setTimeout(() => {
   process.exit(0);
 }, WATCHDOG_MS);
 
-(async () => {
+// Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
+// only runs when invoked directly, so `require`-ing this file never launches a browser.
+module.exports = { parseVolMl, canonical, volMl };
+
+if (require.main === module) (async () => {
   const browser = await chromium.launch({
     headless: true,
     timeout: 60000,

@@ -9,6 +9,11 @@
 // multiplicative case, and SUM. If NO component carries a unit anywhere
 // ("5 + 1 EV") we still return null rather than guess.
 //
+// COMBO-ORDER FIX (2026-06-10, ported with zepto's): multiplicative combos also
+// appear unit-FIRST ("250 GMS X 2", "1 L X 2") — the multiplicative branch only
+// read "N x M unit", so unit-first packs fell through to the single match and
+// recorded just the first token (250 GMS X 2 -> 250). Both orders now parse.
+//
 // MIXED-BUNDLE FIX (2026-06-06): a pack that mixes a true VOLUME component with
 // a WEIGHT component ("1LTR + 200 GM (BUNDLE)" = 1L oil + 200g seed freebie) is
 // an oil + non-oil combo — the grams are NOT oil volume (the old code summed
@@ -33,9 +38,12 @@ const toMl = (n, u) => (isLitreClass(u) ? n * 1000 : n);
 function parseComponent(comp) {
   comp = comp.trim();
   if (!comp) return null;
-  // multiplicative: "N x M unit"  (e.g. "5 x 200ml" -> 1000)
-  const mult = comp.match(new RegExp('([\\d.]+)\\s*x\\s*([\\d.]+)\\s*(' + UNIT + ')\\b'));
+  // multiplicative: "N x M unit"  (e.g. "5 x 200ml" -> 1000; x or the × glyph)
+  const mult = comp.match(new RegExp('([\\d.]+)\\s*[x×]\\s*([\\d.]+)\\s*(' + UNIT + ')\\b'));
   if (mult) return { ml: parseFloat(mult[1]) * toMl(parseFloat(mult[2]), mult[3]), unit: mult[3] };
+  // multiplicative, unit-FIRST: "M unit x N"  (e.g. "250 gms x 2" -> 500, "1 l x 2" -> 2000)
+  const multU = comp.match(new RegExp('([\\d.]+)\\s*(' + UNIT + ')\\b\\s*[x×]\\s*([\\d.]+)'));
+  if (multU) return { ml: toMl(parseFloat(multU[1]), multU[2]) * parseFloat(multU[3]), unit: multU[2] };
   // number immediately followed by a unit (e.g. "5ltr", "200 ml", "50 gms")
   const m = comp.match(new RegExp('([\\d.]+)\\s*(' + UNIT + ')\\b'));
   if (m) return { ml: toMl(parseFloat(m[1]), m[2]), unit: m[2] };

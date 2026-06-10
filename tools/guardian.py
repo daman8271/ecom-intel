@@ -271,6 +271,12 @@ def deep_checks(platform, data):
         else:
             # store_id largely ABSENT -> fall back to the price-identity tell:
             # one canonical at an identical price across many far-apart cities.
+            # VARIANCE-AWARE (2026-06-10): a lone flat SKU is NOT contamination —
+            # stable national-price SKUs do that legitimately (amazon-now carries
+            # no store_id, yet healthy runs show 6-7 prices/SKU across 10 cities).
+            # TRUE default-store contamination (the blinkit incident) flattens
+            # MOST SKUs to one price — so flag only when a MAJORITY (>50%) of the
+            # multi-city canonicals are price-flat; lone identities are logged.
             price_cities = defaultdict(lambda: defaultdict(set))
             for r in rows:
                 c = canon(r)
@@ -278,18 +284,31 @@ def deep_checks(platform, data):
                 city = (r.get("city") or "").strip()
                 if c and sale is not None and city and r.get("in_stock"):
                     price_cities[c][sale].add(city)
-            pc_worst = (None, None, set())
+            n_multi = 0  # canonicals seen in >PRICE_CITIES_MAX cities
+            flat = []    # ...of those, (canon, price, n_cities) at ONE price everywhere
             for c, pm in price_cities.items():
-                for sale, cs in pm.items():
-                    if len(cs) > len(pc_worst[2]):
-                        pc_worst = (c, sale, cs)
-            if pc_worst[0] and len(pc_worst[2]) > PRICE_CITIES_MAX:
+                cities_all = set().union(*pm.values())
+                if len(cities_all) <= PRICE_CITIES_MAX:
+                    continue
+                n_multi += 1
+                if len(pm) == 1:
+                    flat.append((c, next(iter(pm)), len(cities_all)))
+            if flat and len(flat) * 2 > n_multi:
+                worst = max(flat, key=lambda t: t[2])
                 add(2, "geo_price_identity", False, "suspect",
-                    f"{pc_worst[0]} sells at identical ₹{pc_worst[1]} across "
-                    f"{len(pc_worst[2])} cities w/o store_id — possible contamination")
+                    f"{len(flat)}/{n_multi} multi-city SKUs price-identical, e.g. "
+                    f"{worst[0]} at identical ₹{worst[1]} across {worst[2]} cities "
+                    f"w/o store_id — possible contamination")
             else:
+                if flat:  # minority — legit national pricing: record, don't flag
+                    log(f"{platform}: geo note — {len(flat)}/{n_multi} multi-city "
+                        f"SKUs price-flat (below majority, not flagged): "
+                        + "; ".join(f"{c} ₹{s} x{n} cities" for c, s, n in flat[:4]))
                 add(2, "geo_consistency", True, "suspect",
-                    f"no price spans >{PRICE_CITIES_MAX} cities (store_id sparse)")
+                    f"no price spans >{PRICE_CITIES_MAX} cities (store_id sparse)"
+                    if not n_multi else
+                    f"{len(flat)}/{n_multi} multi-city SKUs price-identical "
+                    f"(majority needed; store_id sparse)")
     else:
         add(2, "geo_consistency", True, "suspect", "national platform — geo n/a")
 

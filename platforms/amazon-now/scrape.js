@@ -64,12 +64,22 @@ try {
 // --- price/pack helpers (IDENTICAL to zepto/blinkit so canonical IDs line up) ---
 function parseVolMl(pack) {
   if (!pack) return null;
-  const m = pack.toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);
+  const s = pack.toLowerCase();
+  const toMl = (n, u) => {
+    if (u === 'ml' || u === 'g') return n;
+    if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
+    return null;
+  };
+  // Combo packs come in BOTH orders ("1 L x 2" and "2 x 1 L" are the same 2L pack —
+  // same fix as zepto 2026-06-10); they must run BEFORE the single-quantity match,
+  // which would otherwise read only the first "1 L" and halve the volume (2x Rs/L).
+  let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b\s*[x×]\s*([\d.]+)/);          // unit-first "N unit X M"
+  if (m) { const base = toMl(parseFloat(m[1]), m[2]); return base != null ? base * parseFloat(m[3]) : null; }
+  m = s.match(/([\d.]+)\s*[x×]\s*([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);              // multiplier-first "M x N unit"
+  if (m) { const base = toMl(parseFloat(m[2]), m[3]); return base != null ? parseFloat(m[1]) * base : null; }
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);                                // single quantity (unchanged)
   if (!m) return null;
-  const n = parseFloat(m[1]); const u = m[2];
-  if (u === 'ml' || u === 'g') return n;
-  if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
-  return null;
+  return toMl(parseFloat(m[1]), m[2]);
 }
 function canonical(name, pack) {
   const base = (name || '').toLowerCase().replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, '')
@@ -207,7 +217,11 @@ async function checkSession(page) {
   } catch (_) { return { loggedIn: false, greeting: '' }; }
 }
 
-(async () => {
+// Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
+// only runs when invoked directly, so `require`-ing this file never launches a browser.
+module.exports = { parseVolMl, canonical, packFromTitle };
+
+if (require.main === module) (async () => {
   process.stderr.write('[WARN] i=nowstore is the legacy marketplace SEARCH, NOT real Amazon Now — see ROOTCAUSE-AmazonNow-2026-06-01.md. Genuine-Now rows expected = 0 until the alm/ctnow rebuild. Cron is paused.\n');
   if (!fs.existsSync(STATE)) {
     console.error('FATAL: no session at ' + STATE + ' — run import_cookies.js with a fresh Cookie-Editor export.');

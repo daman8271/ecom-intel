@@ -88,7 +88,19 @@ for P in $PLATFORMS; do
   if [ "$SIM_MODE" = "1" ]; then
     ( $RUNNER "$P" ) >> "logs/run-${P}.out" 2>&1
   else
-    ( $RUNNER "$P"; python3 tools/guardian.py "$P" --heal || true ) >> "logs/run-${P}.out" 2>&1
+    # Guardian only after a CLEAN pipeline exit (2026-06-10): a failed run.sh (e.g. scrape
+    # FATAL) leaves the PREVIOUS run's result.json on disk, and evaluating that re-blesses
+    # STALE data into the last-good snapshot (bit amazon-now 2026-06-10: false session-expiry
+    # abort + a 21.5h-old result.json — under guardian's 24h freshness bar, so it passed).
+    # Staleness/recovery after a failed scrape belongs to the healthcheck/selfheal backstop.
+    (
+      if $RUNNER "$P"; then
+        python3 tools/guardian.py "$P" --heal || true
+      else
+        rc=$?
+        echo "[$(date '+%F %T')] run_all: $P pipeline FAILED (rc=$rc) -> inline guardian SKIPPED (stale result.json must not refresh last-good; healthcheck backstop owns recovery)"
+      fi
+    ) >> "logs/run-${P}.out" 2>&1
   fi
   P_END="$(date +%s)"
   # Duration ledger for the deadline scheduler (W1's tools/cron). Best-effort, only if the

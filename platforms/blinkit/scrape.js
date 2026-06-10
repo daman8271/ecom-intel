@@ -12,13 +12,25 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
 function parseVolMl(pack) {
   if (!pack) return null;
-  const m = pack.toLowerCase().match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
+  const s = pack.toLowerCase();
+  const toMl = (n, u) => {
+    if (u === 'ml' || u === 'g') return n;
+    if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
+    return null;
+  };
+  // Combo packs come in BOTH orders ("1 l x 2" and "2 x 1 l" are the same 2L pack —
+  // same fix as zepto 2026-06-10). They must run BEFORE the single-quantity match,
+  // which would otherwise read only the first token and halve the recorded volume
+  // (doubling Rs/L). Unit-first "N unit X M":
+  let m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b\s*[x×]\s*([\d.]+)/);
+  if (m) { const base = toMl(parseFloat(m[1]), m[2]); return base != null ? base * parseFloat(m[3]) : null; }
+  // Multiplier-first "M x N unit" ("2 x 1 l", "2x1l", "3 x 500 ml"):
+  m = s.match(/([\d.]+)\s*[x×]\s*([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b/);
+  if (m) { const base = toMl(parseFloat(m[2]), m[3]); return base != null ? parseFloat(m[1]) * base : null; }
+  // Single quantity (original first-token behavior, unchanged).
+  m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
   if (!m) return null;
-  const n = parseFloat(m[1]);
-  const u = m[2];
-  if (u === 'ml' || u === 'g') return n;
-  if (u === 'l' || u === 'ltr' || u === 'litre' || u === 'kg') return n * 1000;
-  return null;
+  return toMl(parseFloat(m[1]), m[2]);
 }
 
 // Blinkit's DEFAULT/fallback dark store, served whenever our injected location
@@ -249,7 +261,11 @@ async function pool(items, n, fn) {
   return results;
 }
 
-(async () => {
+// Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
+// only runs when invoked directly, so `require`-ing this file never launches a browser.
+module.exports = { parseVolMl, canonical };
+
+if (require.main === module) (async () => {
   const browser = await chromium.launch({ headless: true });
   const t0 = Date.now();
   const perPin = await pool(PINCODES, CONCURRENCY, (rec) => scrapeOne(browser, rec));

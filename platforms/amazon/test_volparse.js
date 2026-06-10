@@ -77,3 +77,27 @@ console.log(`\nper_litre changed: ${plChanged} | clamped-to-null: ${plClamped}`)
 after.sort((a, b) => b.pl - a.pl);
 console.log('\n=== highest surviving per_litre AFTER fix (sanity: should all be plausible) ===');
 for (const r of after.slice(0, 12)) console.log(`  ${String(r.pl).padStart(8)}  ${JSON.stringify(r.pack).padEnd(28)} ${r.sku}`);
+
+// ---- fixed-point assertions (COMBO-ORDER FIX 2026-06-10) -------------------
+// Combos appear in BOTH orders; unit-FIRST ("250 GMS X 2") used to fall through to the
+// single match and record only the first token. Additive/mixed/null behavior must not move.
+const CASES = [
+  // unit-first combos — incl. the two live catalog packs this fix corrects
+  ['1 L X 2', 2000], ['250 GMS X 2', 500], ['250 GMS X 3', 750],
+  // multiplier-first combos (existing behavior, must not regress)
+  ['2 x 1 L', 2000], ['2x1L', 2000], ['3 x 500 ml', 1500],
+  // additive bundles (live packs — the 2026-06-05/06 fixes, must not regress)
+  ['5LTR + 1LTR (BUNDLE)', 6000], ['5 + 1 LTR', 6000], ['1LTR + 200 GM (BUNDLE)', 1000],
+  // singles + fail-safe nulls
+  ['1 LTR', 1000], ['200 MLS', 200], ['5 + 1 EV', null], [null, null],
+];
+let fail = 0;
+console.log('\n=== combo-order assertions ===');
+for (const [input, want] of CASES) {
+  const got = parseVolMl(input);
+  const ok = got === want;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  parseVolMl(${JSON.stringify(input)}) = ${got} (want ${want})`);
+}
+if (fail) { console.error(`\n${fail} FAILED`); process.exit(1); }
+console.log('\nALL PASS');

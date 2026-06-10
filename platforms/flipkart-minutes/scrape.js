@@ -45,7 +45,9 @@ function fallbackToBrowser(reason) {
   process.exit(0);
 }
 
-if (!fs.existsSync(STATE)) fallbackToBrowser('no logged-in session at secrets/flipkart-minutes.storageState.json');
+// Direct-run only: a `require` (offline volparse test) must never be able to spawn the
+// browser scraper. When run directly the behavior is unchanged.
+if (require.main === module && !fs.existsSync(STATE)) fallbackToBrowser('no logged-in session at secrets/flipkart-minutes.storageState.json');
 
 function dcN() {
   try {
@@ -75,6 +77,13 @@ function parseVolMl(pack) {
   if (combo) {
     const each = unitMl(parseFloat(combo[2]), combo[3]);
     return each != null ? parseFloat(combo[1]) * each : null;
+  }
+  // Unit-FIRST combos ("1 L X 2") are the SAME pack in the other order (zepto fix
+  // 2026-06-10 — stores render either); parse it too, before the single-token fallback.
+  const comboU = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)\s*[x×*]\s*([\d.]+)/);
+  if (comboU) {
+    const each = unitMl(parseFloat(comboU[1]), comboU[2]);
+    return each != null ? each * parseFloat(comboU[3]) : null;
   }
   const m = s.match(/([\d.]+)\s*(ml|l|ltr|litre|kg|g)/);
   if (!m) return null;
@@ -216,7 +225,11 @@ async function newCtxPage(browser) {
   return { ctx, page };
 }
 
-(async () => {
+// Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
+// only runs when invoked directly, so `require`-ing this file never launches a browser.
+module.exports = { parseVolMl, unitMl, canonical };
+
+if (require.main === module) (async () => {
   let browser;
   try { browser = await chromium.launch({ headless: true, channel: 'chrome', args: ['--no-sandbox'] }); }
   catch (_) { browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] }); }
