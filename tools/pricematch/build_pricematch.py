@@ -35,19 +35,21 @@ sys.path.insert(0, os.path.dirname(HERE))              # /opt/ecom-intel/tools
 
 from openpyxl import Workbook
 from openpyxl.comments import Comment
-from openpyxl.styles import Alignment, Font, PatternFill
+from openpyxl.styles import Alignment, Border, Font, PatternFill, Side
 from openpyxl.utils import get_column_letter
 
 import xlsx_dash as xd                                 # v2 house style (fresh-eyes)
 
 # ---------------------------------------------------------------- price basis
-# Owner order 2026-06-11 morning: price at one pincode (560005 for a few hours,
-# then Delhi 110095). SUPERSEDED the same evening — owner reverted to the
-# legacy pan-India modal, paired with the Matrix PINCODE SPREAD section that
-# shows which pins share the modal price and which deviate. A pincode string
-# here restores a single-pin basis. Scoped to THIS builder — the per-platform
-# report sheets (add_pricematch_sheet) were always modal.
+# Basis history, all on 2026-06-11: modal → 560005 → 110095 → modal again →
+# test builds at 560006 and 560006+110092. FINAL owner order (same night,
+# after the tests): the Matrix shows each SKU at the PM_MATRIX_PINS exact
+# pins, ONE ROW PER PIN (core.price_at — never modal). The REST of the
+# workbook (Ecom Head verdicts, KPIs, Violations) keeps the pan-India modal
+# basis: PM_MATRIX_BASIS_PINCODE stays None.
 PM_MATRIX_BASIS_PINCODE = None
+# (pincode, city label) rows rendered per SKU in the Matrix, in this order.
+PM_MATRIX_PINS = [("560006", "Bengaluru"), ("110092", "Delhi")]
 
 # ---------------------------------------------------------------- palette
 # Single house palette from tools/xlsx_dash (fresh-eyes 2026-06-06: one brand
@@ -471,8 +473,13 @@ def pm_clusters(sku, by_key):
         if price is None:
             continue
         priced.append((p, price))
-    priced.sort(key=lambda x: x[1])
+    return band_clusters(priced)
 
+
+def band_clusters(priced):
+    """Greedy ±PM_CLUSTER_BAND grouping of (platform, price) pairs.
+    The Matrix feeds it per-pin prices; pm_clusters feeds it modal prices."""
+    priced = sorted(priced, key=lambda x: x[1])
     clusters, group = [], []
     for p, price in priced:
         if group and price - group[0][1] > PM_CLUSTER_BAND:   # group[0] = min (sorted)
@@ -595,49 +602,50 @@ def sheet_ecom_head_exact(ws, row, comps, sku_map):
 
 
 def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
-    # Owner order 2026-06-06: show ONLY today's regime — MRP + ONE named
-    # "Agreed price (<regime>)" column. The BAU/SVD/ART trio lives in the
-    # team's own master sheet; our report shows the day's truth.
-    # listed_only (scoped editions): keep only SKUs with >=1 listing on the
-    # edition's platforms — the never-listed tail lives in Coverage & pending.
+    """Matrix, two exact pins per SKU (owner final order 2026-06-11 night).
+
+    Each SKU renders as len(PM_MATRIX_PINS) consecutive rows — its live price
+    AT that pin (core.price_at, never modal). Cell language: price w/ RED
+    below agreed / GREEN above (±₹1) · OOS = row at pin but nothing in stock ·
+    '·' = pin not served · '—' = not listed · '?' = mapping under review.
+    National platforms (one all-India price) repeat on every pin row so each
+    row reads as a complete price board. Last col = ±₹PM_CLUSTER_BAND clusters
+    AT THAT PIN. Retired SKUs are skipped (they live in Coverage).
+    listed_only (scoped editions): keep only SKUs with >=1 listing on the
+    edition's platforms."""
+    import pricematch_core as core
+    ctx = core.load_context(date)
+    raw_map = {"skus": ctx["map"]}
+
     ws = wb.create_sheet("Matrix")
     ws.sheet_view.showGridLines = False
-    ws.freeze_panes = "B3"
-    ws.column_dimensions["A"].width = 26
-    regime_cols = ["MRP", f"Agreed price ({regime})"]
-    ws.column_dimensions["B"].width = 11
-    ws.column_dimensions["C"].width = 18
+    ws.freeze_panes = "C4"
+    for col, w in (("A", 26), ("B", 16), ("C", 11), ("D", 18)):
+        ws.column_dimensions[col].width = w
     for i in range(len(CANONICAL)):
-        ws.column_dimensions[get_column_letter(2 + len(regime_cols) + i)].width = 14
-    # NEW col at the very end: platforms whose live prices cluster within ±₹5
-    pm_col = 2 + len(regime_cols) + len(CANONICAL)
+        ws.column_dimensions[get_column_letter(5 + i)].width = 13
+    pm_col = 5 + len(CANONICAL)
     ws.column_dimensions[get_column_letter(pm_col)].width = 34
 
-    headers = (["SKU"] + regime_cols + [PDISP.get(p, p) for p in CANONICAL]
-               + [f"Price-Match active (±₹{PM_CLUSTER_BAND:.0f})"])
-    table_header(ws, 1, headers)
-    agreed_col = 3
-    ws.cell(1, agreed_col).fill = PatternFill("solid", fgColor=INK)
-
-    # legend at the TOP, inside the frozen pane, all states covered
-    # (fresh-eyes MUST-5: it was the last row, below 115 data rows)
-    basis_line = []
-    if PM_MATRIX_BASIS_PINCODE:
-        city = PM_COMPETE_CITY.get(PM_MATRIX_BASIS_PINCODE, "")
-        basis_line = [(f"Live basis = price @ {PM_MATRIX_BASIS_PINCODE}"
-                       + (f" ({city})" if city else "")
-                       + " · national platforms = all-India price",
-                       BRAND_SOFT, BRAND)]
-    xd.legend(ws, 2, basis_line + [
-        ("RED = live below agreed price (±₹1)", xd.RED_FILL_HEX, xd.RED_TEXT),
+    pins_label = " + ".join(f"{p} ({c})" for p, c in PM_MATRIX_PINS)
+    title_cell(ws, 1, f"Matrix — live price at {pins_label}", size=14, span=pm_col)
+    xd.legend(ws, 2, [
+        (f"each SKU = {len(PM_MATRIX_PINS)} rows — its EXACT price at that pin",
+         BRAND_SOFT, BRAND),
+        ("RED = live below agreed (±₹1)", xd.RED_FILL_HEX, xd.RED_TEXT),
         ("GREEN = live above", xd.GREEN_FILL_HEX, xd.GREEN_TEXT),
-        ("blue link = live listing · plain = at agreed price", None, "0563C1"),
-        ("OOS = out of stock · ? = mapping under review · — = not listed", None, None),
-        (f"⚡ Price-Match active = 2+ platforms within ₹{PM_CLUSTER_BAND:.0f} of "
-         f"each other (last col)", BRAND_SOFT, BRAND),
-        ("price here = modal (most-common) across pins · pin-by-pin detail = "
-         "'Pin Spread · <platform>' sheets", None, None),
+        ("OOS = out of stock at that pin · '·' = pin not served · — = not "
+         "listed · ? = mapping under review", None, None),
+        ("Amazon Core / Flipkart / BigBasket are national — one price at "
+         "every pin", None, None),
+        (f"⚡ Price-Match active = 2+ platforms within ₹{PM_CLUSTER_BAND:.0f} "
+         f"of each other AT THAT PIN (last col)", BRAND_SOFT, BRAND),
+        ("all-pin spread = 'Pin Spread · <platform>' sheets", None, None),
     ], span=2)
+
+    table_header(ws, 3, ["SKU", "Pincode", "MRP", f"Agreed price ({regime})"]
+                 + [PDISP.get(p, p) for p in CANONICAL]
+                 + [f"Price-Match active (±₹{PM_CLUSTER_BAND:.0f})"])
 
     skus = sku_map.get("skus", {})
     if listed_only:
@@ -645,107 +653,105 @@ def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
                 if not e.get("retired") and any(
                     (by_key.get((sku, p)) or {}).get("status",
                      "NOT_LISTED") != "NOT_LISTED" for p in CANONICAL)}
-    row = 3
+
+    top_border = Border(top=Side(style="thin", color=RULE))
+    row = 4
     for sku, entry in skus.items():
-        retired = bool(entry.get("retired"))
-        name = ws.cell(row, 1, sku + ("  (retired)" if retired else ""))
-        name.font = Font(name=F, size=10, bold=not retired,
-                         color=MUTED if retired else INK)
-        if retired:
-            for c in range(1, len(headers) + 1):
-                ws.cell(row, c).fill = GREY_FILL
+        if entry.get("retired"):
+            continue
+        r0 = row
+        for cc in range(1, pm_col + 1):
+            ws.cell(r0, cc).border = top_border
+        name = ws.cell(r0, 1, sku)
+        name.font = Font(name=F, size=10, bold=True, color=INK)
+        name.alignment = Alignment(vertical="center")
+        ws.merge_cells(start_row=r0, start_column=1,
+                       end_row=r0 + len(PM_MATRIX_PINS) - 1, end_column=1)
         regs = entry.get("regimes") or {}
-        for i, key in enumerate(("mrp", regime.lower())):
-            c = ws.cell(row, 2 + i, _f(regs.get(key)))
+        for off, key in ((3, "mrp"), (4, regime.lower())):
+            c = ws.cell(r0, off, _f(regs.get(key)))
             money(c)
-            if retired:
-                c.font = Font(name=F, size=10, color=MUTED)
-                c.fill = GREY_FILL
-            elif agreed_col == 2 + i:
+            c.alignment = Alignment(vertical="center")
+            if off == 4:
                 c.fill = SOFT_FILL
                 c.font = Font(name=F, size=10, bold=True, color=BRAND)
-        for j, p in enumerate(CANONICAL):
-            cc = 2 + len(regime_cols) + j
-            c = ws.cell(row, cc)
-            if retired:
-                c.value = "retired"
-                c.font = Font(name=F, size=9, italic=True, color=MUTED)
-                c.fill = GREY_FILL
-                continue
-            r = by_key.get((sku, p))
-            status = (r or {}).get("status")
-            if r is None or status == "NOT_LISTED":
-                c.value = "—"
-                c.font = Font(name=F, size=10, color=MUTED)
-                c.fill = GREY_FILL
-                c.alignment = Alignment(horizontal="center")
-                continue
-            if status == "OOS":
-                c.value = "OOS"
-                c.font = Font(name=F, size=9, bold=True, color=MUTED)
-                c.alignment = Alignment(horizontal="center")
-                if r.get("url"):
-                    c.hyperlink = r["url"]
-                continue
-            if status == "PENDING_REVIEW":
-                c.value = "?"
-                c.font = Font(name=F, size=10, bold=True, color=WARN)
-                c.alignment = Alignment(horizontal="center")
-                c.comment = Comment("Mapping pending human review — not priced.",
-                                    "pricematch", height=60, width=220)
-                continue
-            live = _f(r.get("live_modal"))
-            ref = _f(r.get("ref_price"))
-            diff = _f(r.get("diff"))
-            c.value = live
-            c.number_format = "₹#,##0"
-            c.font = Font(name=F, size=10, color=INK)
-            if r.get("url"):
-                c.hyperlink = r["url"]
-                c.font = Font(name=F, size=10, color="0563C1", underline="single")
-            if status == "BELOW":                     # RED = below ref. Sacred.
-                c.fill = RED_FILL
-                c.font = Font(name=F, size=10, bold=True, color=NEG,
-                              underline="single" if r.get("url") else None)
-                c.comment = Comment(
-                    f"−₹{abs(diff or 0):,.0f} BELOW {regime} ref ₹{ref:,.0f}"
-                    + (f"\n{len(r.get('stores_below') or [])} store(s) below ref"
-                       if r.get("stores_below") else ""),
-                    "pricematch", height=70, width=240)
-            elif status == "ABOVE":                   # GREEN = above ref.
-                c.fill = GREEN_FILL
-                c.font = Font(name=F, size=10, bold=True, color=POS,
-                              underline="single" if r.get("url") else None)
-                c.comment = Comment(f"+₹{abs(diff or 0):,.0f} ABOVE {regime} ref ₹{ref:,.0f}",
-                                    "pricematch", height=60, width=240)
-            elif status == "NO_REF":
-                c.comment = Comment("No reference price for this SKU/regime.",
-                                    "pricematch", height=50, width=220)
-            # MATCH: value + hyperlink, no fill
+            ws.merge_cells(start_row=r0, start_column=off,
+                           end_row=r0 + len(PM_MATRIX_PINS) - 1, end_column=off)
 
-        # ---- Price-Match active (±₹5) — the new cluster column ----
-        pmc = ws.cell(row, pm_col)
-        clusters = [] if retired else pm_clusters(sku, by_key)
-        if clusters:
-            pmc.value = "⚡ " + "  |  ".join(fmt_cluster(cl) for cl in clusters)
-            pmc.fill = SOFT_FILL
-            pmc.font = Font(name=F, size=10, bold=True, color=BRAND)
-            n = sum(len(cl) for cl in clusters)
-            pmc.comment = Comment(
-                f"{len(clusters)} price-match cluster(s) · {n} platform listings "
-                f"within ₹{PM_CLUSTER_BAND:.0f} of each other (live modal price).",
-                "pricematch", height=70, width=260)
-        else:
-            pmc.value = "" if retired else "—"
-            pmc.font = Font(name=F, size=10, color=MUTED)
-            pmc.alignment = Alignment(horizontal="center")
-            if retired:
-                pmc.fill = GREY_FILL
-        row += 1
-    # (legend lives in the frozen top row — fresh-eyes: never the last row)
-    # (pin spread lived BELOW this grid 2026-06-11 evening for a few hours;
-    #  owner moved it the same night to one "Pin Spread · <platform>" sheet
-    #  per QC platform — see add_pin_spread_sheets)
+        for k, (pin, city) in enumerate(PM_MATRIX_PINS):
+            rr = r0 + k
+            pc = ws.cell(rr, 2, f"{pin} · {city}")
+            pc.font = Font(name=F, size=9, color=MUTED)
+            row_prices = []
+            for j, plat in enumerate(CANONICAL):
+                cc = 5 + j
+                c = ws.cell(rr, cc)
+                rec = by_key.get((sku, plat))
+                status = (rec or {}).get("status")
+                if rec is None or status == "NOT_LISTED":
+                    c.value = "—"
+                    c.font = Font(name=F, size=10, color=MUTED)
+                    c.fill = GREY_FILL
+                    c.alignment = Alignment(horizontal="center")
+                    continue
+                if status == "PENDING_REVIEW":
+                    c.value = "?"
+                    c.font = Font(name=F, size=10, bold=True, color=WARN)
+                    c.alignment = Alignment(horizontal="center")
+                    c.comment = Comment("Mapping pending human review — not priced.",
+                                        "pricematch", height=60, width=220)
+                    continue
+                ref = _f(rec.get("ref_price"))
+                if plat in core.NATIONAL_PLATFORMS:
+                    sale = _f(rec.get("live_modal"))
+                    if sale is None:
+                        c.value = "OOS"
+                        c.font = Font(name=F, size=9, bold=True, color=MUTED)
+                        c.alignment = Alignment(horizontal="center")
+                        continue
+                else:
+                    pa = core.price_at(plat, sku, pin,
+                                       live=ctx["live"].get(plat), skumap=raw_map)
+                    if pa is None:
+                        c.value = "·"
+                        c.font = Font(name=F, size=10, color=FAINT)
+                        c.alignment = Alignment(horizontal="center")
+                        continue
+                    if not pa.get("in_stock"):
+                        c.value = "OOS"
+                        c.font = Font(name=F, size=9, bold=True, color=MUTED)
+                        c.alignment = Alignment(horizontal="center")
+                        continue
+                    sale = pa["sale"]
+                c.value = sale
+                row_prices.append((plat, sale))
+                c.number_format = "₹#,##0"
+                c.font = Font(name=F, size=10, color=INK)
+                if rec.get("url"):
+                    c.hyperlink = rec["url"]
+                    c.font = Font(name=F, size=10, color="0563C1", underline="single")
+                if ref is not None:
+                    if sale < ref - 1:
+                        c.fill = RED_FILL
+                        c.font = Font(name=F, size=10, bold=True, color=NEG,
+                                      underline="single" if c.hyperlink else None)
+                    elif sale > ref + 1:
+                        c.fill = GREEN_FILL
+                        c.font = Font(name=F, size=10, bold=True, color=POS,
+                                      underline="single" if c.hyperlink else None)
+
+            pmc = ws.cell(rr, pm_col)
+            clusters = band_clusters(row_prices)
+            if clusters:
+                pmc.value = "⚡ " + "  |  ".join(fmt_cluster(cl) for cl in clusters)
+                pmc.fill = SOFT_FILL
+                pmc.font = Font(name=F, size=10, bold=True, color=BRAND)
+                pmc.alignment = Alignment(vertical="center", wrap_text=True)
+            else:
+                pmc.value = "—"
+                pmc.font = Font(name=F, size=10, color=MUTED)
+                pmc.alignment = Alignment(horizontal="center")
+        row += len(PM_MATRIX_PINS)
     return ws
 
 
@@ -1089,7 +1095,8 @@ def sheet_coverage(wb, date, flat, by_key, sku_map):
 # competitor_compare contract; the whole block is fail-safe in main() so an engine hiccup
 # can never break the master workbook (and therefore never break tomorrow's batch).
 
-PM_COMPETE_CITY = {"110095": "Delhi", "560005": "Bengaluru"}
+PM_COMPETE_CITY = {"110095": "Delhi", "110092": "Delhi",
+                   "560005": "Bengaluru", "560006": "Bengaluru"}
 
 
 def _compete_skus(sku_map):

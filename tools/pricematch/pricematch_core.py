@@ -88,9 +88,11 @@ SVD_FIRST_N_DAYS = 7
 
 # ---- Competitor price-match (JOB B) — owner-confirmed 2026-06-09 -------------
 # Reference pincodes the compete sheets evaluate at (NOT modal/average — exact
-# rows at these pincodes). 560005 has no live data yet (W3 adds it to the sweeps
-# -> fills tomorrow); until then every cell there is NOT_SERVICEABLE.
-PM_REF_PINCODES = ["110095", "560005"]
+# rows at these pincodes). Owner order 2026-06-11 night: 110092 (East Delhi,
+# the richest-coverage pin) replaces 110095, and 560006 (J.C. Nagar Bengaluru,
+# owner probe newly added to all 5 QC sweeps) replaces 560005. These are also
+# the Matrix pins (build_pricematch.PM_MATRIX_PINS).
+PM_REF_PINCODES = ["110092", "560006"]
 # Platforms whose ONE national price applies at every pincode (marketplace /
 # all-India). For these we ignore the pincode arg and tag the cell national=True.
 NATIONAL_PLATFORMS = {"amazon", "flipkart", "bigbasket"}
