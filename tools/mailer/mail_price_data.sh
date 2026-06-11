@@ -91,21 +91,26 @@ python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
   --subject "$SUBJ" --body "$BODY" --attach "$OUT" \
   || { echo "ERROR: send failed"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
 
-# Also post the combined workbook to the WhatsApp "Ecom team" group
-# (secrets/whatsapp-target.json). Best-effort: a WhatsApp failure never undoes
-# the already-sent email — it just alerts the owner.
-MANIFEST="output/mail/.wa-manifest-$D-$TS.json"
-python3 - "$OUT" "$SUBJ" "$MANIFEST" <<'PYEOF'
+# Also post the combined workbook to the WhatsApp "Ecom team" group via the
+# Hermes gateway bridge (127.0.0.1:3001 — the live WhatsApp pipe; the old
+# Baileys dummy-number session is dead). Best-effort: a WhatsApp failure never
+# undoes the already-sent email — it just alerts the owner.
+WA_GROUP="120363047864912511@g.us"
+WA_BODY=$(python3 - "$PWD/$OUT" "$SUBJ" "$WA_GROUP" <<'PYEOF'
 import json, sys
-out, subj, man = sys.argv[1:4]
-json.dump({"summary": subj, "files": [{"path": out}]}, open(man, "w"))
+path, subj, chat = sys.argv[1:4]
+print(json.dumps({"chatId": chat, "filePath": path, "mediaType": "document",
+                  "caption": subj, "fileName": path.rsplit("/", 1)[-1]}))
 PYEOF
-if node tools/whatsapp/post_reports.js "$MANIFEST"; then
+)
+WA_RESP=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
+  -H 'Content-Type: application/json' -d "$WA_BODY")
+echo "WhatsApp bridge response: $WA_RESP"
+if echo "$WA_RESP" | grep -qiE '"(success|queued|sent|ok)"?[": ]*(true|1)?' && ! echo "$WA_RESP" | grep -qi 'error'; then
   echo "WhatsApp: posted to Ecom team group"
 else
   echo "ERROR: WhatsApp group post failed"
-  alert "WhatsApp Ecom-group post failed (email did go out)"
+  alert "WhatsApp Ecom-group post failed (email did go out): $WA_RESP"
 fi
-rm -f "$MANIFEST"
 
 echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group ($OUT) ==="
