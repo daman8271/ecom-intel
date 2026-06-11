@@ -6,7 +6,7 @@ platforms:
   - flipkart-minutes
 first_seen: 2026-06-05
 last_seen: 2026-06-11
-observations: 36
+observations: 40
 min_price: 375
 max_price: 575
 latest_price: 375
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Jaipur]]
 
-## Runs that observed this SKU (13)
-[[flipkart-minutes-2026-06-11-0832]] · [[flipkart-minutes-2026-06-10-1137]] · [[flipkart-minutes-2026-06-10-0832]] · [[flipkart-minutes-2026-06-09-1132]] · [[flipkart-minutes-2026-06-09-0832]] · [[flipkart-minutes-2026-06-08-1132]] · [[flipkart-minutes-2026-06-08-0832]] · [[flipkart-minutes-2026-06-07-1132]] · [[flipkart-minutes-2026-06-07-0839]] · [[flipkart-minutes-2026-06-06-1139]] · [[flipkart-minutes-2026-06-06-0641]] · [[flipkart-minutes-2026-06-05-1539]] · [[flipkart-minutes-2026-06-05-1039]]
+## Runs that observed this SKU (14)
+[[flipkart-minutes-2026-06-11-1215]] · [[flipkart-minutes-2026-06-11-0832]] · [[flipkart-minutes-2026-06-10-1137]] · [[flipkart-minutes-2026-06-10-0832]] · [[flipkart-minutes-2026-06-09-1132]] · [[flipkart-minutes-2026-06-09-0832]] · [[flipkart-minutes-2026-06-08-1132]] · [[flipkart-minutes-2026-06-08-0832]] · [[flipkart-minutes-2026-06-07-1132]] · [[flipkart-minutes-2026-06-07-0839]] · [[flipkart-minutes-2026-06-06-1139]] · [[flipkart-minutes-2026-06-06-0641]] · [[flipkart-minutes-2026-06-05-1539]] · [[flipkart-minutes-2026-06-05-1039]]
 
-## Price history (36 observations)
+## Price history (40 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -70,6 +70,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-11-0832,2026-06-11,flipkart-minutes,Delhi,110062,575,,,1
 2026-06-11-0832,2026-06-11,flipkart-minutes,Jaipur,302016,375,,,0
 2026-06-11-0832,2026-06-11,flipkart-minutes,Jaipur,302022,375,,,0
+2026-06-11-1215,2026-06-11,flipkart-minutes,Delhi,110014,575,,,1
+2026-06-11-1215,2026-06-11,flipkart-minutes,Delhi,110062,575,,,1
+2026-06-11-1215,2026-06-11,flipkart-minutes,Jaipur,302016,375,,,0
+2026-06-11-1215,2026-06-11,flipkart-minutes,Jaipur,302022,375,,,0
 ```
 
 ---

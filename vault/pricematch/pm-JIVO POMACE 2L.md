@@ -76,7 +76,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,blinkit,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-11,flipkart,BELOW,BAU,869,826,826,826,-43,-4.95,1,true
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
-2026-06-11,zepto,ABOVE,BAU,869,988,983,1014,119,13.69,0,true
+2026-06-11,zepto,ABOVE,BAU,869,988,983,1045,119,13.69,0,true
 ```
 
 ---

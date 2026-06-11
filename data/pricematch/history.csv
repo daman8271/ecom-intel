@@ -3398,12 +3398,12 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-11,BAU,BLACK OLIVE 470G,,blinkit,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-11,BAU,BLACK PEPPER 100G,,blinkit,,145,,,,false,NOT_LISTED,,,0,399,
 2026-06-11,BAU,CANOLA 1+1L,,blinkit,,529,,,,false,NOT_LISTED,,,0,750,
-2026-06-11,BAU,CANOLA 1L,jivo-cold-pressed-canola-oil-1l,blinkit,407851,269,260,250,277,true,BELOW,-9,-3.35,107,375,375
+2026-06-11,BAU,CANOLA 1L,jivo-cold-pressed-canola-oil-1l,blinkit,407851,269,260,250,375,true,BELOW,-9,-3.35,100,375,375
 2026-06-11,BAU,CANOLA 1L + 1L,,blinkit,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-11,BAU,CANOLA 1L POUCH,,blinkit,,269,,,,false,NOT_LISTED,,,0,299,
 2026-06-11,BAU,CANOLA 3L,,blinkit,,799,,,,false,NOT_LISTED,,,0,690,
 2026-06-11,BAU,CANOLA 4L,,blinkit,,1189,,,,false,NOT_LISTED,,,0,1199,
-2026-06-11,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5l,blinkit,406593,1299,1193,1193,1493,true,BELOW,-106,-8.16,61,1650,1650
+2026-06-11,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5l,blinkit,406593,1299,1193,1193,1650,true,BELOW,-106,-8.16,43,1650,1650
 2026-06-11,BAU,CHIA SEEDS 200G,,blinkit,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-11,BAU,CHIA SEEDS 400G,,blinkit,,209,,,,false,NOT_LISTED,,,0,599,
 2026-06-11,BAU,CHIA SEEDS 800G,,blinkit,,349,,,,false,NOT_LISTED,,,0,899,
@@ -3415,8 +3415,8 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-11,BAU,COFFEE,,blinkit,,249,,,,false,NOT_LISTED,,,0,350,
 2026-06-11,BAU,CUMIN SEEDS 100G,,blinkit,,75,,,,false,NOT_LISTED,,,0,249,
 2026-06-11,BAU,EXTRA LIGHT 1+1L,,blinkit,,1229,,,,false,NOT_LISTED,,,0,2798,
-2026-06-11,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1l,blinkit,406592,619,609,609,691,true,BELOW,-10,-1.62,58,1499,1499
-2026-06-11,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,blinkit,545244,1229,1132,1132,1332,true,BELOW,-97,-7.89,81,2799,2799
+2026-06-11,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1l,blinkit,406592,619,624,620,708,true,ABOVE,5,0.81,0,1499,1499
+2026-06-11,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,blinkit,545244,1229,1139,1138,1340,true,BELOW,-90,-7.32,90,2799,2799
 2026-06-11,BAU,EXTRA LIGHT 3L,,blinkit,,1849,,,,false,NOT_LISTED,,,0,2200,
 2026-06-11,BAU,EXTRA LIGHT 500ML,,blinkit,,349,,,,false,NOT_LISTED,,,0,499,
 2026-06-11,BAU,EXTRA LIGHT 5L,,blinkit,,3069,,,,false,NOT_LISTED,,,0,6499,
@@ -3438,15 +3438,15 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-11,BAU,GREEN CARDAMOM 100G,,blinkit,,499,,,,false,NOT_LISTED,,,0,799,
 2026-06-11,BAU,GROUNDNUT 1L,,blinkit,,259,,,,false,NOT_LISTED,,,0,400,
 2026-06-11,BAU,GROUNDNUT 5L,,blinkit,,1269,,,,false,NOT_LISTED,,,0,2800,
-2026-06-11,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,blinkit,528706,439,380,379,485,true,BELOW,-59,-13.44,128,1049,1049
+2026-06-11,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,blinkit,528706,439,379,379,485,true,BELOW,-60,-13.67,130,1049,1049
 2026-06-11,BAU,JIVO POMACE 1L + 1L,,blinkit,,869,,,,false,NOT_LISTED,,,0,2098,
 2026-06-11,BAU,JIVO POMACE 2L,,blinkit,,869,,,,false,NOT_LISTED,,,0,1600,
-2026-06-11,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,blinkit,407561,2169,1950,1950,2140,true,BELOW,-219,-10.1,79,4999,4999
+2026-06-11,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,blinkit,407561,2169,1950,1950,2140,true,BELOW,-219,-10.1,82,4999,4999
 2026-06-11,BAU,JIVO PUNJABI SHIKANJI 160 MLS,,blinkit,,219,,,,false,NOT_LISTED,,,0,480,
 2026-06-11,BAU,JIVO WATER 1L,,blinkit,,20,,,,false,NOT_LISTED,,,0,30,
 2026-06-11,BAU,JIVO WATER 250ML,,blinkit,,119,,,,false,NOT_LISTED,,,0,360,
 2026-06-11,BAU,JIVO WATER 500 MLS,,blinkit,,12,,,,false,NOT_LISTED,,,0,15,
-2026-06-11,BAU,MUSTARD 1L,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,blinkit,540835,219,171,165,171,true,BELOW,-48,-21.92,15,255,255
+2026-06-11,BAU,MUSTARD 1L,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,blinkit,540835,219,171,169,171,true,BELOW,-48,-21.92,16,255,255
 2026-06-11,BAU,MUSTARD 1L + 1L,,blinkit,,429,,,,false,NOT_LISTED,,,0,500,
 2026-06-11,BAU,MUSTARD 1L POUCH,,blinkit,,219,,,,false,NOT_LISTED,,,0,250,
 2026-06-11,BAU,MUSTARD 3L,,blinkit,,629,,,,false,NOT_LISTED,,,0,765,
@@ -3490,7 +3490,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-11,BAU,SOYABEAN 1L POUCH,,blinkit,,209,,,,false,NOT_LISTED,,,0,199,
 2026-06-11,BAU,SOYABEAN 5L,,blinkit,,999,,,,false,NOT_LISTED,,,0,1100,
 2026-06-11,BAU,SPRING WATER 750ML,,blinkit,,50,,,,false,NOT_LISTED,,,0,55,
-2026-06-11,BAU,SUNFLOWER 1L,jivo-cold-pressed-sunflower-oil-1l,blinkit,628632,229,215,202,275,true,BELOW,-14,-6.11,41,275,275
+2026-06-11,BAU,SUNFLOWER 1L,jivo-cold-pressed-sunflower-oil-1l,blinkit,628632,229,215,192,220,true,BELOW,-14,-6.11,41,275,275
 2026-06-11,BAU,SUNFLOWER 1L + 1L,,blinkit,,449,,,,false,NOT_LISTED,,,0,550,
 2026-06-11,BAU,SUNFLOWER 3L,,blinkit,,679,,,,false,NOT_LISTED,,,0,825,
 2026-06-11,BAU,SUNFLOWER 4L,,blinkit,,909,,,,false,NOT_LISTED,,,0,1038,

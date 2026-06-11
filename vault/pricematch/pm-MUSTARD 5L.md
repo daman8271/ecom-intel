@@ -37,7 +37,7 @@ SKU memory: [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-contains
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-11) — ref ₹1049 vs live ₹1004
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-11) — ref ₹1049 vs live ₹985
 - **Days below reference:** 4 of 4
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
@@ -70,13 +70,13 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart-minutes,BELOW,BAU,1049,960,960,960,-89,-8.48,24,true
 2026-06-10,zepto,BELOW,BAU,1049,985,985,988,-64,-6.1,22,true
 2026-06-11,amazon,BELOW,BAU,1049,1022,1022,1022,-27,-2.57,1,true
-2026-06-11,amazon-fresh,BELOW,BAU,1049,985,985,1049,-64,-6.1,119,true
-2026-06-11,amazon-now,BELOW,BAU,1049,985,985,1049,-64,-6.1,67,true
+2026-06-11,amazon-fresh,BELOW,BAU,1049,985,985,1049,-64,-6.1,120,true
+2026-06-11,amazon-now,BELOW,BAU,1049,985,985,1049,-64,-6.1,68,true
 2026-06-11,bigbasket,BELOW,BAU,1049,981.13,981.13,981.13,-67.87,-6.47,1,true
 2026-06-11,blinkit,BELOW,BAU,1049,868,868,868,-181,-17.25,13,true
 2026-06-11,flipkart,OOS,BAU,1049,,,,,,0,false
 2026-06-11,flipkart-minutes,BELOW,BAU,1049,985,985,985,-64,-6.1,24,true
-2026-06-11,zepto,BELOW,BAU,1049,1004,963,1007,-45,-4.29,38,true
+2026-06-11,zepto,BELOW,BAU,1049,985,979,1004,-64,-6.1,22,true
 ```
 
 ---
