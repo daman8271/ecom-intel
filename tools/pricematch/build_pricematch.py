@@ -635,6 +635,8 @@ def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
         ("OOS = out of stock · ? = mapping under review · — = not listed", None, None),
         (f"⚡ Price-Match active = 2+ platforms within ₹{PM_CLUSTER_BAND:.0f} of "
          f"each other (last col)", BRAND_SOFT, BRAND),
+        ("price here = modal (most-common) across pins · pin-by-pin detail = "
+         "'Pin Spread · <platform>' sheets", None, None),
     ], span=2)
 
     skus = sku_map.get("skus", {})
@@ -741,100 +743,116 @@ def sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=False):
                 pmc.fill = GREY_FILL
         row += 1
     # (legend lives in the frozen top row — fresh-eyes: never the last row)
+    # (pin spread lived BELOW this grid 2026-06-11 evening for a few hours;
+    #  owner moved it the same night to one "Pin Spread · <platform>" sheet
+    #  per QC platform — see add_pin_spread_sheets)
+    return ws
 
-    # ---- PINCODE SPREAD (owner ask 2026-06-11 evening) -----------------
-    # The modal hides which pins agree and which don't. Below the grid: per
-    # quick-commerce platform, every price group per SKU — the MODE group and
-    # the pins it "takes out". National platforms have no spread by definition.
+
+# ---------------------------------------------------------------- pin spread
+def add_pin_spread_sheets(wb, date, regime, by_key, sku_map):
+    """One "Pin Spread · <platform>" sheet per QC platform in CANONICAL
+    (owner order 2026-06-11 night; replaces the below-Matrix section).
+    Per SKU: every price group — MODE row highlighted first, then deviating
+    groups (worst SKUs first), FULL pin lists (no cap — the team actions
+    pins). Uniform SKUs keep their full pin list in their own section.
+    National platforms carry one all-India price -> no sheet."""
     import pricematch_core as core
-    PIN_CAP = 25                      # pins listed per group before "+N more"
-    qc_platforms = [p for p in CANONICAL if p not in core.NATIONAL_PLATFORMS]
-    blocks = []
-    for p in qc_platforms:
+
+    for plat in [p for p in CANONICAL if p not in core.NATIONAL_PLATFORMS]:
+        disp = PDISP.get(plat, plat)
+        ws = wb.create_sheet(f"Pin Spread · {disp}"[:31])
+        ws.sheet_view.showGridLines = False
+        for col, w in (("A", 46), ("B", 10), ("C", 7), ("D", 110)):
+            ws.column_dimensions[col].width = w
+        title_cell(ws, 1, f"Pincode spread — {disp}", size=14, span=4)
+        s = ws.cell(2, 1,
+                    f"{date} · {regime_long(regime)} · Matrix shows the modal "
+                    "(most-common) price across pins; this sheet shows every "
+                    "price group behind it. MODE row highlighted; a group below "
+                    "the agreed price (±₹1) is RED. A pin with two store prices "
+                    "appears in both groups. Worst SKUs (most price groups) first. "
+                    "Amazon Core / Flipkart / BigBasket are national — one "
+                    "all-India price, no spread (see Matrix).")
+        s.font = Font(name=F, size=9, color=MUTED)
+        s.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+        ws.merge_cells(start_row=2, start_column=1, end_row=2, end_column=4)
+        ws.row_dimensions[2].height = 38
+
         dev, uni = [], []
-        for sku, entry in skus.items():
+        for sku, entry in sku_map.get("skus", {}).items():
             if entry.get("retired"):
                 continue
-            r = by_key.get((sku, p)) or {}
+            r = by_key.get((sku, plat)) or {}
             pg = r.get("pin_groups")
             if pg:
                 (dev if len(pg) > 1 else uni).append((sku, r, pg))
-        if dev or uni:
-            blocks.append((p, dev, uni))
-    if blocks:
-        row += 2
-        t = ws.cell(row, 1, "PINCODE SPREAD — which pins share the price, which don't")
-        t.font = Font(name=F, size=12, bold=True, color=INK)
-        row += 1
-        s = ws.cell(row, 1,
-                    "Matrix price = the modal (most-common) live price across pins. "
-                    "Each SKU below shows every price group: MODE row highlighted; "
-                    "a group below the agreed price (±₹1) is RED. A pin with two "
-                    "store prices appears in both groups.")
-        s.font = Font(name=F, size=9, color=MUTED)
-        s.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
-        ws.merge_cells(start_row=row, start_column=1, end_row=row, end_column=pm_col)
-        row += 2
-        spread_hdr = ["SKU / price group", "₹", "Pins", "Pincodes"] + [""] * (pm_col - 4)
-        for p, dev, uni in blocks:
-            h = ws.cell(row, 1, f"{PDISP.get(p, p)} — {len(dev)} SKU(s) with price "
-                                f"spread · {len(uni)} uniform")
-            h.font = Font(name=F, size=11, bold=True, color=BRAND)
-            row += 1
-            if dev:
-                table_header(ws, row, spread_hdr)
-                row += 1
+        dev.sort(key=lambda t: (-len(t[2]), t[0]))
+
+        if not dev and not uni:
+            c = ws.cell(4, 1, "No pinned in-stock rows for this platform today.")
+            c.font = Font(name=F, size=10, italic=True, color=MUTED)
+            continue
+
+        table_header(ws, 4, ["SKU / price group", "₹", "Pins", "Pincodes"])
+        ws.freeze_panes = "A5"
+        row = 5
+
+        def group_row(row, g, ref, with_mode_label=True):
+            below_ref = ref is not None and g["price"] < ref - 1
+            lab = ws.cell(row, 1, "MODE" if (g["is_mode"] and with_mode_label) else "")
+            lab.font = Font(name=F, size=9, bold=True,
+                            color=BRAND if g["is_mode"] else MUTED)
+            lab.alignment = Alignment(horizontal="right")
+            money(ws.cell(row, 2, g["price"]), red=below_ref,
+                  bold=g["is_mode"] or below_ref)
+            nc = ws.cell(row, 3, len(g["pincodes"]))
+            nc.font = Font(name=F, size=10, color=MUTED)
+            txt = ", ".join(g["pincodes"])
+            pc = ws.cell(row, 4, txt)
+            pc.font = Font(name=F, size=9, color=NEG if below_ref else INK)
+            pc.alignment = Alignment(horizontal="left", vertical="center",
+                                     wrap_text=True)
+            if below_ref:
+                for cc in range(1, 5):
+                    ws.cell(row, cc).fill = RED_FILL
+            elif g["is_mode"]:
+                for cc in range(1, 5):
+                    ws.cell(row, cc).fill = SOFT_FILL
+            # explicit height: Quick Look / cached viewers don't auto-fit wraps
+            lines = max(1, -(-len(txt) // 100))
+            if lines > 1:
+                ws.row_dimensions[row].height = min(14 * lines, 150)
+            return row + 1
+
+        if dev:
+            t = ws.cell(row, 1, f"PRICE SPREAD — {len(dev)} SKU(s) where pins disagree")
+            t.font = Font(name=F, size=12, bold=True, color=INK)
+            row += 2
             for sku, r, pg in dev:
                 ref = _f(r.get("ref_price"))
                 n_pins = len({pc for g in pg for pc in g["pincodes"]})
-                mode_g = pg[0]
-                sc = ws.cell(row, 1, f"{sku} — mode ₹{mode_g['price']:,.0f} · "
-                                     f"{len(mode_g['pincodes'])} of {n_pins} pins at mode")
-                sc.font = Font(name=F, size=10, bold=True, color=INK)
+                hdr = ws.cell(row, 1, f"{sku} — mode ₹{pg[0]['price']:,.0f} · "
+                                      f"{len(pg[0]['pincodes'])} of {n_pins} pins at mode"
+                                      f" · {len(pg)} price groups")
+                hdr.font = Font(name=F, size=10, bold=True, color=INK)
                 row += 1
                 for g in pg:
-                    below_ref = ref is not None and g["price"] < ref - 1
-                    lab = ws.cell(row, 1, "MODE" if g["is_mode"] else "")
-                    lab.font = Font(name=F, size=9, bold=True,
-                                    color=BRAND if g["is_mode"] else MUTED)
-                    lab.alignment = Alignment(horizontal="right")
-                    money(ws.cell(row, 2, g["price"]), red=below_ref,
-                          bold=g["is_mode"] or below_ref)
-                    nc = ws.cell(row, 3, len(g["pincodes"]))
-                    nc.font = Font(name=F, size=10, color=MUTED)
-                    pins = g["pincodes"]
-                    txt = ", ".join(pins[:PIN_CAP]) + (
-                        f"  +{len(pins) - PIN_CAP} more" if len(pins) > PIN_CAP else "")
-                    pc_cell = ws.cell(row, 4, txt)
-                    pc_cell.font = Font(name=F, size=9,
-                                        color=NEG if below_ref else INK)
-                    pc_cell.alignment = Alignment(horizontal="left", vertical="center",
-                                                  wrap_text=True)
-                    ws.merge_cells(start_row=row, start_column=4,
-                                   end_row=row, end_column=pm_col)
-                    if below_ref:
-                        for cc in range(1, pm_col + 1):
-                            ws.cell(row, cc).fill = RED_FILL
-                    elif g["is_mode"]:
-                        for cc in range(1, pm_col + 1):
-                            ws.cell(row, cc).fill = SOFT_FILL
-                    if len(txt) > 130:
-                        ws.row_dimensions[row].height = 26
-                    row += 1
+                    row = group_row(row, g, ref)
                 row += 1
-            if uni:
-                utxt = " · ".join(f"{sku} ₹{pg[0]['price']:,.0f} "
-                                  f"({len(pg[0]['pincodes'])} pins)"
-                                  for sku, _r, pg in uni)
-                u = ws.cell(row, 1, f"Uniform — every pin one price: {utxt}")
-                u.font = Font(name=F, size=9, italic=True, color=MUTED)
-                u.alignment = Alignment(horizontal="left", vertical="center",
-                                        wrap_text=True)
-                ws.merge_cells(start_row=row, start_column=1,
-                               end_row=row, end_column=pm_col)
+
+        if uni:
+            t = ws.cell(row, 1, f"UNIFORM — every pin one price ({len(uni)} SKU(s))")
+            t.font = Font(name=F, size=12, bold=True, color=POS)
+            row += 2
+            for sku, r, pg in sorted(uni, key=lambda t: t[0]):
+                ref = _f(r.get("ref_price"))
+                hdr = ws.cell(row, 1, f"{sku} — ₹{pg[0]['price']:,.0f} at all "
+                                      f"{len(pg[0]['pincodes'])} pins")
+                hdr.font = Font(name=F, size=10, bold=True, color=INK)
                 row += 1
-            row += 1
-    return ws
+                row = group_row(row, pg[0], ref, with_mode_label=False)
+                row += 1
 
 
 def sheet_violations(wb, date, regime, vrows, below_listings):
@@ -1560,6 +1578,18 @@ def main():
     wb.remove(wb.active)
     sheet_ecom_head(wb, date, regime, flat, comps, kpi, sku_map, label=args.label)
     sheet_matrix(wb, date, regime, by_key, sku_map, listed_only=bool(args.label))
+    # Pin Spread tabs (owner order 2026-06-11 night: spread moved off the
+    # Matrix into one sheet per QC platform). FAIL-SAFE like the PM Check
+    # sheets: any error drops JUST these tabs, never the workbook.
+    try:
+        add_pin_spread_sheets(wb, date, regime, by_key, sku_map)
+    except Exception as e:
+        import traceback
+        print(f"build_pricematch: pin-spread sheets SKIPPED (non-fatal): {e}",
+              file=sys.stderr)
+        traceback.print_exc(file=sys.stderr)
+        for nm in [n for n in wb.sheetnames if n.startswith("Pin Spread")]:
+            wb.remove(wb[nm])
     sheet_violations(wb, date, regime, vrows, kpi["below"])
     sheet_above(wb, date, regime, flat)
     sheet_coverage(wb, date, flat, by_key, sku_map)
