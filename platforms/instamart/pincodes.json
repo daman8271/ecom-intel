@@ -98,6 +98,17 @@
   {
     "city": "Bengaluru",
     "tier": 1,
+    "pincode": "560006",
+    "locality": "J.C. Nagar",
+    "landmark": "J.C. Nagar, Bengaluru, 560006, India",
+    "lat": 13.0139,
+    "lon": 77.5895,
+    "represents": 0,
+    "pincodes": []
+  },
+  {
+    "city": "Bengaluru",
+    "tier": 1,
     "pincode": "560014",
     "locality": "Jalahalli East",
     "landmark": "Jalahalli East, Bengaluru, 560014, India",
@@ -4765,19 +4776,6 @@
     "represents": 1,
     "pincodes": [
       "394540"
-    ]
-  },
-  {
-    "city": "Bengaluru",
-    "tier": 1,
-    "pincode": "560006",
-    "locality": "J.C. Nagar",
-    "landmark": "J.C. Nagar, Bengaluru, 560006, India",
-    "lat": 13.0139,
-    "lon": 77.5895,
-    "represents": 1,
-    "pincodes": [
-      "560006"
     ]
   }
 ]

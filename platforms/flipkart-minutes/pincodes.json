@@ -7,13 +7,12 @@
     "landmark": "Bangalore Bazaar, Bengaluru, 560001, India",
     "lat": 13.2257,
     "lon": 77.575,
-    "represents": 85,
+    "represents": 84,
     "pincodes": [
       "560001",
       "560002",
       "560003",
       "560004",
-      "560005",
       "560006",
       "560007",
       "560008",
@@ -94,19 +93,6 @@
       "562125",
       "562149",
       "562157"
-    ]
-  },
-  {
-    "city": "Bengaluru",
-    "tier": 1,
-    "pincode": "560005",
-    "locality": "Pulikeshinagar",
-    "landmark": "Pulikeshinagar, Bengaluru, 560005, India",
-    "lat": 12.9986,
-    "lon": 77.6205,
-    "represents": 1,
-    "pincodes": [
-      "560005"
     ]
   },
   {
@@ -1126,22 +1112,9 @@
     "landmark": "Anand Vihar, Delhi, 110092, India",
     "lat": 28.6266,
     "lon": 77.2794,
-    "represents": 1,
-    "pincodes": [
-      "110092"
-    ]
-  },
-  {
-    "city": "Delhi",
-    "tier": 1,
-    "pincode": "110095",
-    "locality": "Dilshad Garden",
-    "landmark": "Dilshad Garden, Delhi, 110095, India",
-    "lat": 28.6114,
-    "lon": 77.2982,
     "represents": 2,
     "pincodes": [
-      "110095",
+      "110092",
       "110096"
     ]
   },

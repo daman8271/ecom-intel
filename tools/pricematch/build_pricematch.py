@@ -1089,8 +1089,10 @@ def sheet_coverage(wb, date, flat, by_key, sku_map):
 #     RED   = competitor BELOW our Amazon price  → they are UNDERCUTTING us
 #     GREEN = competitor ABOVE our Amazon price
 #     no fill = MATCH (within ±₹1)
-# Pinned to the two owner reference pincodes — 110095 (Delhi, live) + 560005 (Bengaluru,
-# added to the sweeps by W3, fills tomorrow). NATIONAL platforms (bigbasket / flipkart MP /
+# Pinned to the two owner reference pincodes — 110092 (Anand Vihar, Delhi) + 560006
+# (J.C. Nagar, Bengaluru). Owner order 2026-06-11: 110095/560005 are RETIRED — removed
+# from every platform's sweep list; they must never reappear in any sheet.
+# NATIONAL platforms (bigbasket / flipkart MP /
 # amazon core) carry ONE price at every pincode. Built on the FROZEN pricematch_core
 # competitor_compare contract; the whole block is fail-safe in main() so an engine hiccup
 # can never break the master workbook (and therefore never break tomorrow's batch).
@@ -1460,9 +1462,10 @@ def _render_compete_sheet(wb, sheet_name, title, date, regime, records, sku_map,
     return red_count
 
 
-# the two owner reference pincodes (Delhi live, Bengaluru fills tomorrow). Mirrors the
-# frozen pricematch_core.PM_REF_PINCODES; bound from the engine at call time when present.
-PM_REF_PINCODES_LOCAL = ["110095", "560005"]
+# the two owner reference pincodes (110092 Delhi, 560006 Bengaluru — 110095/560005
+# retired by owner order 2026-06-11). Mirrors the frozen pricematch_core.PM_REF_PINCODES;
+# bound from the engine at call time when present.
+PM_REF_PINCODES_LOCAL = ["110092", "560006"]
 
 
 def build_compete_sheets(wb, date, regime, sku_map):
