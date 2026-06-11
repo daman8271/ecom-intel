@@ -73,3 +73,14 @@
 #
 # Dropped vs the live crontab: nothing. This file is the live crontab + the 3 doctor lines.
 # ===========================================================================================
+
+# ============================== PRICE-DATA MAILER (ADDITIVE) ===============================
+# Emails ONE combined workbook (all sheets from the day's 9 reports, platform-prefixed) to
+# dev04@jivo.in (override: PRICE_MAIL_TO in secrets.env) via Gmail SMTP (tools/send_email.py).
+# Each run opens its own tmux session (mailgw-am/pm-YYYYMMDD) so the send gateway is
+# observable live; it exits when done. Log: logs/mailer.log. The 10:00 run WAITS (up to 3h)
+# until ALL of today's files exist and are >=90s stable — batches land ~12:00 — so it never
+# mails a partial/stale set; the 16:00 run picks up the complete 15:00 batch immediately.
+# Telegram-alerts the owner on any failure. Built 2026-06-11.
+0 10 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "mailgw-am-$(date +\%Y\%m\%d)" './tools/mailer/mail_price_data.sh am'   # ecom-mailer price-data am
+0 16 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "mailgw-pm-$(date +\%Y\%m\%d)" './tools/mailer/mail_price_data.sh pm'   # ecom-mailer price-data pm
