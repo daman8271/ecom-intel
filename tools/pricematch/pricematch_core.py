@@ -16,7 +16,9 @@ FROZEN CONTRACT (sheet builders code against these names — do not change):
 record = {sku, platform, listing_id, url, title, regime, ref_price, live_modal,
           live_min, live_max, in_stock, mrp_live, mrp_official, diff, diff_pct,
           status: 'BELOW'|'ABOVE'|'MATCH'|'OOS'|'NO_REF'|'PENDING_REVIEW'|'NOT_LISTED',
-          stores_below: [{pincode, city, price}]}
+          stores_below: [{pincode, city, price}],
+          pin_groups: [{price, pincodes, is_mode}]}   # per-pincode platforms only;
+                                                      # pan-India, mode group first
 
 Rules (owner-ratified):
   - Reference = the regime price for the given date (Fri/Sat/Sun -> SVD, else BAU;
@@ -26,6 +28,9 @@ Rules (owner-ratified):
   - stores_below lists EVERY in-stock store/pincode row priced < ref-1, even when the
     modal itself is fine.
   - Live price basis = modal of in-stock rows; min/max recorded. No in-stock rows => OOS.
+  - load_context(basis_pincode=...) narrows the verdict basis to in-stock rows AT that
+    pincode (national platforms keep their one all-India price; stores_below stays
+    pan-India). Default None = the legacy modal across all stores.
   - Zepto rows are already SUPER_SAVER prices (no adjustment).
   - Only confidence exact/anchored mappings participate; a review-pending candidate
     (sku_map.json "review" list) with no ratified mapping => PENDING_REVIEW (counted,
@@ -132,6 +137,27 @@ def _modal(prices):
     return min(p for p, c in counts.items() if c == top)
 
 
+def _pin_groups(in_rows, prices):
+    """Group in-stock rows by sale price -> the distinct pincodes at that price.
+    Returns [{price, pincodes, is_mode}] with the mode group first, then by pin
+    count (desc), then price. A pincode selling at two prices (two stores)
+    appears in both groups — that is the real spread, not a dedupe bug. Rows
+    without a usable pincode ('-'/'') are skipped; [] if none has one."""
+    by_price = {}
+    for r, p in zip(in_rows, prices):
+        pc = str(r.get("pincode", "") or "")
+        if not pc or pc == "-":
+            continue
+        by_price.setdefault(p, set()).add(pc)
+    if not by_price:
+        return []
+    mode = _modal(prices)
+    groups = [{"price": p, "pincodes": sorted(pins), "is_mode": p == mode}
+              for p, pins in by_price.items()]
+    groups.sort(key=lambda g: (not g["is_mode"], -len(g["pincodes"]), g["price"]))
+    return groups
+
+
 # ---------------------------------------------------------------- regime
 
 _BUILTIN_DEFAULTS = {"mon": "BAU", "tue": "BAU", "wed": "BAU", "thu": "BAU",
@@ -201,8 +227,11 @@ def _index_live(platform):
     return out
 
 
-def load_context(date=None):
-    """Load master + map + regime + fresh live rows for every platform."""
+def load_context(date=None, basis_pincode=None):
+    """Load master + map + regime + fresh live rows for every platform.
+
+    basis_pincode: when set, platform_comparison prices per-pincode platforms
+    from in-stock rows AT this pincode only (owner order 2026-06-11)."""
     d = _as_date(date)
     master = _load_json(MASTER_PATH)
     skumap = _load_json(MAP_PATH)
@@ -222,6 +251,7 @@ def load_context(date=None):
 
     return {
         "date": d.isoformat(),
+        "basis_pincode": str(basis_pincode) if basis_pincode else None,
         "regime": regime_for(d),
         "master": master.get("skus") or {},
         "map": map_skus,
@@ -324,10 +354,35 @@ def platform_comparison(ctx, platform):
 
         rec = _base_record(sku, platform, regime, ref, mrp_official, listing)
         in_rows = [r for r in rows if r.get("in_stock") and _num(r.get("sale")) is not None]
-        prices = [_round2(_num(r.get("sale"))) for r in in_rows]
+        # verdict basis: rows at the basis pincode when one is set (national
+        # platforms carry one all-India price, so they are never narrowed)
+        basis_pin = ctx.get("basis_pincode")
+        if basis_pin and platform not in NATIONAL_PLATFORMS:
+            basis_rows = [r for r in in_rows if str(r.get("pincode", "")) == basis_pin]
+        else:
+            basis_rows = in_rows
+        prices = [_round2(_num(r.get("sale"))) for r in basis_rows]
+        all_prices = [_round2(_num(r.get("sale"))) for r in in_rows]
         mrps = [_num(r.get("mrp")) for r in (in_rows or rows) if _num(r.get("mrp")) is not None]
         if mrps:
             rec["mrp_live"] = _round2(_modal(mrps))
+
+        # EVERY in-stock store under ref-1 — pan-India regardless of the basis,
+        # so the Violations safety net never shrinks when the basis narrows
+        if ref is not None and in_rows:
+            below = [
+                {"pincode": str(r.get("pincode", "")), "city": r.get("city", ""), "price": p}
+                for r, p in zip(in_rows, all_prices) if p < ref - TOLERANCE
+            ]
+            rec["stores_below"] = sorted(below, key=lambda s: (s["price"], s["pincode"]))
+
+        # pan-India pin price groups (additive, 2026-06-11) — feeds the Matrix
+        # PINCODE SPREAD section. Per-pincode platforms only: national carry
+        # one all-India price, so a spread is meaningless there.
+        if platform not in NATIONAL_PLATFORMS and in_rows:
+            pg = _pin_groups(in_rows, all_prices)
+            if pg:
+                rec["pin_groups"] = pg
 
         if ref is None:
             rec["status"] = "NO_REF"  # no regime price -> no compliance verdict
@@ -340,7 +395,7 @@ def platform_comparison(ctx, platform):
             continue
 
         if not prices:
-            rec["status"] = "OOS"  # no in-stock rows -> no compliance verdict
+            rec["status"] = "OOS"  # no in-stock rows at the basis -> no verdict
             records.append(rec)
             continue
 
@@ -358,12 +413,6 @@ def platform_comparison(ctx, platform):
             rec["status"] = "BELOW"   # red: selling under the agreed reference
         else:
             rec["status"] = "ABOVE"   # green
-        # EVERY in-stock store under ref-1, even when the modal is fine
-        below = [
-            {"pincode": str(r.get("pincode", "")), "city": r.get("city", ""), "price": p}
-            for r, p in zip(in_rows, prices) if p < ref - TOLERANCE
-        ]
-        rec["stores_below"] = sorted(below, key=lambda s: (s["price"], s["pincode"]))
         records.append(rec)
 
     ctx["_comparisons"][platform] = records

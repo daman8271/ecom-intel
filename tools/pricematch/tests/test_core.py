@@ -350,6 +350,71 @@ def test_exact_price_match():
     check("exact_price_match does not mutate input dict", inp == snap, "input mutated: %r" % inp)
 
 
+def test_pin_groups():
+    """_pin_groups — hand-computed, adversarial. Feeds the Matrix PINCODE
+    SPREAD section (2026-06-11): mode group FIRST, then pin count desc, price asc."""
+    try:
+        m = _import_core()
+    except Exception as e:
+        check("pin_groups: core imports", False, repr(e))
+        return
+    f = getattr(m, "_pin_groups", None)
+    if not callable(f):
+        check("pin_groups: _pin_groups exists", False, "helper missing")
+        return
+    check("pin_groups: _pin_groups exists", True)
+
+    def rows(*pins):
+        return [{"pincode": pc} for pc in pins]
+
+    # 1. basic: 3 pins at 469, 1 at 485 -> mode group first with the 3 pins
+    g = f(rows("110001", "110002", "110095", "400001"), [469.0, 469.0, 469.0, 485.0])
+    check("basic: two groups, mode first",
+          len(g) == 2 and g[0]["is_mode"] and not g[1]["is_mode"],
+          "got %r" % g)
+    check("basic: mode group = 469 with its 3 pins sorted",
+          g and g[0]["price"] == 469.0 and
+          g[0]["pincodes"] == ["110001", "110002", "110095"],
+          "got %r" % (g and g[0]))
+
+    # 2. a pin selling at TWO prices (two stores) appears in BOTH groups
+    g = f(rows("110001", "110001", "110002"), [469.0, 485.0, 469.0])
+    in_both = (len(g) == 2 and "110001" in g[0]["pincodes"]
+               and "110001" in g[1]["pincodes"])
+    check("two-price pin appears in both groups", in_both, "got %r" % g)
+
+    # 3. duplicate stores, same pin, same price -> pin listed once
+    g = f(rows("110001", "110001"), [469.0, 469.0])
+    check("same pin+price dedupes to one entry",
+          len(g) == 1 and g[0]["pincodes"] == ["110001"], "got %r" % g)
+
+    # 4. modal tie -> LOWEST price is the mode (conservative), and leads
+    g = f(rows("A1", "A2", "B1", "B2"), [500.0, 500.0, 400.0, 400.0])
+    check("modal tie: lowest price group is mode and first",
+          len(g) == 2 and g[0]["price"] == 400.0 and g[0]["is_mode"],
+          "got %r" % g)
+
+    # 5. non-mode groups sort by pin count desc, then price asc
+    g = f(rows("M1", "M2", "M3", "X1", "X2", "Y1", "Z1"),
+          [100.0, 100.0, 100.0, 300.0, 300.0, 250.0, 200.0])
+    order = [(x["price"], len(x["pincodes"])) for x in g]
+    check("sort: mode, then count desc, then price asc",
+          order == [(100.0, 3), (300.0, 2), (200.0, 1), (250.0, 1)],
+          "got %r" % order)
+
+    # 6. rows with '-'/'' pincodes are skipped; all-unusable -> []
+    g = f(rows("-", "", "110001"), [469.0, 469.0, 469.0])
+    check("dash/empty pins skipped", len(g) == 1 and g[0]["pincodes"] == ["110001"],
+          "got %r" % g)
+    check("all pins unusable -> []", f(rows("-", "-"), [469.0, 469.0]) == [], "")
+
+    # 7. purity: must not mutate the caller's rows
+    inp = rows("110001", "110002")
+    snap = [dict(r) for r in inp]
+    f(inp, [469.0, 485.0])
+    check("pin_groups does not mutate input rows", inp == snap, "input mutated")
+
+
 def main():
     if not os.path.exists(CORE):
         print("ENGINE NOT LANDED: %s missing — nothing to test yet." % CORE)
@@ -357,6 +422,7 @@ def main():
 
     # W1 helper — pure-function unit tests (no sandbox needed)
     test_exact_price_match()
+    test_pin_groups()
 
     base = tempfile.mkdtemp(prefix="pmverify-")
     try:
@@ -377,6 +443,27 @@ def main():
             finish()
             return
         check("engine reads files relative to its location (sandboxable)", True)
+
+        # --- pin_groups invariants on real records (2026-06-11 spread section)
+        pg_recs = [r for r in recs if r.get("pin_groups")]
+        check("pin_groups: present on in-stock per-pincode records", bool(pg_recs),
+              "no blinkit record carries pin_groups")
+        pg_ok, pg_why = True, ""
+        for r in pg_recs:
+            pg = r["pin_groups"]
+            if not pg[0].get("is_mode"):
+                pg_ok, pg_why = False, "%s: first group not mode" % r.get("sku")
+                break
+            if sum(1 for g in pg if g.get("is_mode")) != 1:
+                pg_ok, pg_why = False, "%s: != 1 mode group" % r.get("sku")
+                break
+            if r.get("live_modal") is not None and \
+                    num(pg[0].get("price")) != num(r.get("live_modal")):
+                pg_ok, pg_why = False, ("%s: mode group %r != live_modal %r" %
+                                        (r.get("sku"), pg[0].get("price"),
+                                         r.get("live_modal")))
+                break
+        check("pin_groups: exactly one mode group, first, == live_modal", pg_ok, pg_why)
 
         # --- regime week (exhaustive)
         for d, want in sorted(WEEK.items()):
