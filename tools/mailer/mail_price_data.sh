@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# mail_price_data.sh <slot> — combine today's report workbooks into one .xlsx
-# and email it to the price-data recipient (default dev04@jivo.in, override
-# with PRICE_MAIL_TO in secrets.env).
+# mail_price_data.sh <slot> — email today's report workbooks AS-IS (each .xlsx
+# an individual attachment, nothing merged or modified) to the ecom team list,
+# then post the same files to the WhatsApp "Ecom team" group.
 #
 # Slots: am (10:00 cron) waits up to 3h for the morning chain to finish
 # writing ALL of today's files (batches land ~12:00); pm (16:00 cron) expects
@@ -75,42 +75,44 @@ if [ ${#PRESENT[@]} -eq 0 ]; then
   exit 1
 fi
 
-TS=$(date +%H%M)
-OUT="output/mail/Jivo-Price-Data-$D-$TS.xlsx"
-python3 tools/mailer/combine_reports.py --out "$OUT" "${PRESENT[@]}" \
-  || { echo "ERROR: combine failed"; alert "combine failed"; exit 1; }
-
 # Ecom team distribution list (owner-specified 2026-06-11); PRICE_MAIL_TO in
 # secrets.env overrides.
 TEAM="dev04@jivo.in,ecom4@jivo.in,ecom3@jivo.in,ecom1@jivo.in,ecom8@jivo.in,pr@jivo.in,tanuj@jivo.in,ecomoperations@jivo.in,marketplace@jivo.in,ecomb2b@jivo.in,manav@jivo.in,kamaldeep@jivo.in,ps@jivo.in"
 TO="${PRICE_MAIL_TO:-$TEAM}"
 SUBJ="Jivo Price Data — $(date '+%-I:%M %p') IST — $D"
-BODY="Combined price data workbook attached (${#PRESENT[@]}/9 reports, all sheets): $(basename -a "${PRESENT[@]}" | paste -sd ', ' -)"
+BODY="Today's price data reports attached (${#PRESENT[@]}/9 files): $(basename -a "${PRESENT[@]}" | paste -sd ', ' -)"
+ATTACH=()
+for f in "${PRESENT[@]}"; do ATTACH+=(--attach "$f"); done
 
 python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
-  --subject "$SUBJ" --body "$BODY" --attach "$OUT" \
+  --subject "$SUBJ" --body "$BODY" "${ATTACH[@]}" \
   || { echo "ERROR: send failed"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
 
-# Also post the combined workbook to the WhatsApp "Ecom team" group via the
-# Hermes gateway bridge (127.0.0.1:3001 — the live WhatsApp pipe; the old
-# Baileys dummy-number session is dead). Best-effort: a WhatsApp failure never
-# undoes the already-sent email — it just alerts the owner.
+# Also post the same files to the WhatsApp "Ecom team" group via the Hermes
+# gateway bridge (127.0.0.1:3001 — the live WhatsApp pipe, owner-approved; the
+# old Baileys dummy-number session is dead): one header text, then each report
+# as its own document. Best-effort: a WhatsApp failure never undoes the
+# already-sent email — it just alerts the owner.
 WA_GROUP="120363047864912511@g.us"
-WA_BODY=$(python3 - "$PWD/$OUT" "$SUBJ" "$WA_GROUP" <<'PYEOF'
-import json, sys
-path, subj, chat = sys.argv[1:4]
-print(json.dumps({"chatId": chat, "filePath": path, "mediaType": "document",
-                  "caption": subj, "fileName": path.rsplit("/", 1)[-1]}))
-PYEOF
-)
-WA_RESP=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
-  -H 'Content-Type: application/json' -d "$WA_BODY")
-echo "WhatsApp bridge response: $WA_RESP"
-if echo "$WA_RESP" | grep -qiE '"(success|queued|sent|ok)"?[": ]*(true|1)?' && ! echo "$WA_RESP" | grep -qi 'error'; then
-  echo "WhatsApp: posted to Ecom team group"
+WA_FAIL=0
+R=$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send \
+  -H 'Content-Type: application/json' \
+  -d "$(python3 -c 'import json,sys; print(json.dumps({"chatId": sys.argv[1], "message": sys.argv[2]}))' "$WA_GROUP" "$SUBJ")")
+echo "WhatsApp header: $R"
+echo "$R" | grep -q '"success":true' || WA_FAIL=1
+for f in "${PRESENT[@]}"; do
+  B=$(python3 -c 'import json,sys; p=sys.argv[1]; print(json.dumps({"chatId": sys.argv[2], "filePath": p, "mediaType": "document", "fileName": p.rsplit("/",1)[-1]}))' "$PWD/$f" "$WA_GROUP")
+  R=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
+    -H 'Content-Type: application/json' -d "$B")
+  echo "WhatsApp doc $(basename "$f"): $R"
+  echo "$R" | grep -q '"success":true' || WA_FAIL=1
+  sleep 2
+done
+if [ "$WA_FAIL" -eq 0 ]; then
+  echo "WhatsApp: posted ${#PRESENT[@]} reports to Ecom team group"
 else
-  echo "ERROR: WhatsApp group post failed"
-  alert "WhatsApp Ecom-group post failed (email did go out): $WA_RESP"
+  echo "ERROR: some WhatsApp posts failed"
+  alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"
 fi
 
-echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group ($OUT) ==="
+echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group (${#PRESENT[@]} files) ==="

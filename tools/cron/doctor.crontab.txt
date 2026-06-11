@@ -75,9 +75,9 @@
 # ===========================================================================================
 
 # ============================== PRICE-DATA MAILER (ADDITIVE) ===============================
-# Emails ONE combined workbook (all sheets from the day's 9 reports, platform-prefixed) to
+# Emails the day's 9 report files AS-IS (each .xlsx an individual attachment, unmodified) to
 # the 13-address ecom team list in mail_price_data.sh (override: PRICE_MAIL_TO in secrets.env)
-# via Gmail SMTP (tools/send_email.py), then posts the same workbook to the WhatsApp
+# via Gmail SMTP (tools/send_email.py), then posts the same files to the WhatsApp
 # "Ecom team" group via the Hermes gateway bridge (127.0.0.1:3001/send-media,
 # owner-approved 2026-06-11; best-effort).
 # Each run opens its own tmux session (mailgw-am/pm-YYYYMMDD) so the send gateway is
