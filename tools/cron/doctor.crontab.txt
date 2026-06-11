@@ -78,7 +78,8 @@
 # Emails ONE combined workbook (all sheets from the day's 9 reports, platform-prefixed) to
 # the 13-address ecom team list in mail_price_data.sh (override: PRICE_MAIL_TO in secrets.env)
 # via Gmail SMTP (tools/send_email.py), then posts the same workbook to the WhatsApp
-# "Ecom team" group (secrets/whatsapp-target.json, best-effort).
+# "Ecom team" group via the Hermes gateway bridge (127.0.0.1:3001/send-media,
+# owner-approved 2026-06-11; best-effort).
 # Each run opens its own tmux session (mailgw-am/pm-YYYYMMDD) so the send gateway is
 # observable live; it exits when done. Log: logs/mailer.log. The 10:00 run WAITS (up to 3h)
 # until ALL of today's files exist and are >=90s stable — batches land ~12:00 — so it never
