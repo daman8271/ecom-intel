@@ -11,8 +11,8 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: BELOW
 below_days: 4
@@ -37,22 +37,14 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-11-litres-cooking-oil-for-dail
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-10) — ref ₹529 vs live ₹485
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-11) — ref ₹529 vs live ₹485
 - **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,BELOW,SVD,509,469,469,469,-40,-7.86,1,true
-2026-06-06,amazon-fresh,BELOW,SVD,509,464,464,487,-45,-8.84,3,true
-2026-06-06,amazon-now,OOS,SVD,509,,,,,,0,false
-2026-06-06,bigbasket,NOT_LISTED,SVD,509,,,,,,0,false
-2026-06-06,blinkit,NOT_LISTED,SVD,509,,,,,,0,false
-2026-06-06,flipkart,ABOVE,SVD,509,572,572,572,63,12.38,0,true
-2026-06-06,flipkart-minutes,ABOVE,SVD,509,575,575,575,66,12.97,0,true
-2026-06-06,zepto,BELOW,SVD,509,485,485,520,-24,-4.72,19,true
 2026-06-08,amazon,BELOW,BAU,529,469,469,469,-60,-11.34,1,true
 2026-06-08,amazon-fresh,OOS,BAU,529,,,,,,0,false
 2026-06-08,amazon-now,OOS,BAU,529,,,,,,0,false
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,ABOVE,BAU,529,572,572,572,43,8.13,0,true
 2026-06-10,flipkart-minutes,ABOVE,BAU,529,575,575,575,46,8.7,0,true
 2026-06-10,zepto,BELOW,BAU,529,485,485,485,-44,-8.32,21,true
+2026-06-11,amazon,ABOVE,BAU,529,659,659,659,130,24.57,0,true
+2026-06-11,amazon-fresh,BELOW,BAU,529,464,464,750,-65,-12.29,16,true
+2026-06-11,amazon-now,BELOW,BAU,529,464,464,750,-65,-12.29,16,true
+2026-06-11,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,flipkart,ABOVE,BAU,529,572,572,572,43,8.13,0,true
+2026-06-11,flipkart-minutes,ABOVE,BAU,529,575,575,575,46,8.7,0,true
+2026-06-11,zepto,BELOW,BAU,529,485,485,520,-44,-8.32,31,true
 ```
 
 ---

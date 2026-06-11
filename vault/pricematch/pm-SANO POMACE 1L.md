@@ -11,8 +11,8 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: NOT_LISTED
 below_days: 4
@@ -37,22 +37,14 @@ SKU memory: [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-10) — ref ₹419 vs live ₹-
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹419 vs live ₹-
 - **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,MATCH,SVD,399,399,399,399,0,0,0,true
-2026-06-06,amazon-fresh,NOT_LISTED,SVD,399,,,,,,0,false
-2026-06-06,amazon-now,NOT_LISTED,SVD,399,,,,,,0,false
-2026-06-06,bigbasket,NOT_LISTED,SVD,399,,,,,,0,false
-2026-06-06,blinkit,NOT_LISTED,SVD,399,,,,,,0,false
-2026-06-06,flipkart,BELOW,SVD,399,387,387,387,-12,-3.01,1,true
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,399,,,,,,0,false
-2026-06-06,zepto,NOT_LISTED,SVD,399,,,,,,0,false
 2026-06-08,amazon,BELOW,BAU,419,399,399,399,-20,-4.77,1,true
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,BELOW,BAU,419,387,387,387,-32,-7.64,1,true
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-10,zepto,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-11,amazon,MATCH,BAU,419,419,419,419,0,0,0,true
+2026-06-11,amazon-fresh,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-11,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-11,bigbasket,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-11,flipkart,BELOW,BAU,419,387,387,387,-32,-7.64,1,true
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-11,zepto,NOT_LISTED,BAU,419,,,,,,0,false
 ```
 
 ---

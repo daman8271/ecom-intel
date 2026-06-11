@@ -5,11 +5,11 @@ display_name: "JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-10
-observations: 14
+last_seen: 2026-06-11
+observations: 15
 min_price: 1733
-max_price: 1784
-latest_price: 1784
+max_price: 1798
+latest_price: 1798
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)&Jivo Extra Light Olive Oil, 1L for Cooking (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1784 (43.3% off)
+- [[amazon]] — latest ₹1798 (42.9% off)
 
-## Runs that observed this SKU (14)
-[[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (15)
+[[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (14 observations)
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -45,6 +45,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-09-1159,2026-06-09,amazon,All India,-,1748,3149,44.5,1
 2026-06-10-0901,2026-06-10,amazon,All India,-,1784,3149,43.3,1
 2026-06-10-1208,2026-06-10,amazon,All India,-,1784,3149,43.3,1
+2026-06-11-0900,2026-06-11,amazon,All India,-,1798,3149,42.9,1
 ```
 
 ---

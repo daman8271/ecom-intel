@@ -11,8 +11,8 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: NOT_LISTED
 below_days: 0
@@ -37,21 +37,13 @@ SKU memory: [[jivo-black-pepper-whole-natural-peppercorns-premium-kali-mirch-per
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-10) — ref ₹145 vs live ₹-
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹145 vs live ₹-
 - **Days below reference:** 0 of 4
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,OOS,SVD,135,,,,,,0,false
-2026-06-06,amazon-fresh,NOT_LISTED,SVD,135,,,,,,0,false
-2026-06-06,amazon-now,NOT_LISTED,SVD,135,,,,,,0,false
-2026-06-06,bigbasket,NOT_LISTED,SVD,135,,,,,,0,false
-2026-06-06,blinkit,NOT_LISTED,SVD,135,,,,,,0,false
-2026-06-06,flipkart,OOS,SVD,135,,,,,,0,false
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,135,,,,,,0,false
-2026-06-06,zepto,NOT_LISTED,SVD,135,,,,,,0,false
 2026-06-08,amazon,OOS,BAU,145,,,,,,0,false
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,145,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,145,,,,,,0,false
@@ -76,6 +68,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,OOS,BAU,145,,,,,,0,false
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,145,,,,,,0,false
 2026-06-10,zepto,NOT_LISTED,BAU,145,,,,,,0,false
+2026-06-11,amazon,OOS,BAU,145,,,,,,0,false
+2026-06-11,amazon-fresh,NOT_LISTED,BAU,145,,,,,,0,false
+2026-06-11,amazon-now,NOT_LISTED,BAU,145,,,,,,0,false
+2026-06-11,bigbasket,NOT_LISTED,BAU,145,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,145,,,,,,0,false
+2026-06-11,flipkart,OOS,BAU,145,,,,,,0,false
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,145,,,,,,0,false
+2026-06-11,zepto,NOT_LISTED,BAU,145,,,,,,0,false
 ```
 
 ---

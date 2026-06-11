@@ -3,15 +3,17 @@ type: sku-hub
 canonical_sku: jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml
 display_name: Jivo Healthy Wheatgrass Juice with Mango Flavor (500ml) (500 ml)
 platforms:
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-06-10
-last_seen: 2026-06-10
-observations: 20
-min_price: 55
+last_seen: 2026-06-11
+observations: 85
+min_price: 39
 max_price: 100
-latest_price: 55
+latest_price: 39
 tags:
   - type/sku-hub
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -22,15 +24,16 @@ Up: [[skus-index]]
 **Jivo Healthy Wheatgrass Juice with Mango Flavor (500ml) (500 ml)**
 
 ## Sold on
-- [[amazon-now]] — latest ₹55
+- [[amazon-fresh]] — latest ₹39 (29.1% off)
+- [[amazon-now]] — latest ₹39 (29.1% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Ghaziabad]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-now-2026-06-10-1336]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-11-1022]] · [[amazon-now-2026-06-10-1336]] · [[amazon-fresh-2026-06-11-0910]]
 
-## Price history (20 observations)
+## Price history (85 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -54,6 +57,71 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-10-1336,2026-06-10,amazon-now,Pune,411028,55,,,1
 2026-06-10-1336,2026-06-10,amazon-now,Pune,411035,55,,,1
 2026-06-10-1336,2026-06-10,amazon-now,Pune,411045,55,,,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Bengaluru,560028,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Delhi,110026,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Delhi,110033,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Delhi,110035,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Delhi,110040,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Ghaziabad,201001,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Ghaziabad,201002,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Ghaziabad,201005,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400001,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400003,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400004,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400007,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400011,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400020,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400021,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400023,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400601,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400611,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Mumbai,400703,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Noida,201307,39,100,61,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Noida,201309,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Noida,201310,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411005,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411006,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411014,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411015,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411021,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411028,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411030,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411035,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411045,39,55,29.1,1
+2026-06-11-0910,2026-06-11,amazon-fresh,Pune,411051,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Bengaluru,560028,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Delhi,110026,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Delhi,110033,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Delhi,110035,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Delhi,110040,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Delhi,110044,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Ghaziabad,201001,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Ghaziabad,201002,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Ghaziabad,201005,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400001,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400003,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400004,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400007,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400011,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400020,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400021,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400023,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400601,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400611,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Mumbai,400703,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Noida,201307,39,100,61,1
+2026-06-11-1022,2026-06-11,amazon-now,Noida,201309,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Noida,201310,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411005,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411006,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411014,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411015,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411021,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411028,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411030,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411035,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411045,39,55,29.1,1
+2026-06-11-1022,2026-06-11,amazon-now,Pune,411051,39,55,29.1,1
 ```
 
 ---

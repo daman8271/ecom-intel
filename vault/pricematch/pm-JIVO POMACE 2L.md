@@ -11,8 +11,8 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: ABOVE
 below_days: 4
@@ -37,22 +37,14 @@ SKU memory: [[jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-10) — ref ₹869 vs live ₹988
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-11) — ref ₹869 vs live ₹988
 - **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,MATCH,SVD,849,849,849,849,0,0,0,true
-2026-06-06,amazon-fresh,NOT_LISTED,SVD,849,,,,,,0,false
-2026-06-06,amazon-now,NOT_LISTED,SVD,849,,,,,,0,false
-2026-06-06,bigbasket,ABOVE,SVD,849,1099,1099,1099,250,29.45,0,true
-2026-06-06,blinkit,NOT_LISTED,SVD,849,,,,,,0,false
-2026-06-06,flipkart,BELOW,SVD,849,826,826,826,-23,-2.71,1,true
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,849,,,,,,0,false
-2026-06-06,zepto,ABOVE,SVD,849,959,959,961,110,12.96,0,true
 2026-06-08,amazon,BELOW,BAU,869,849,849,849,-20,-2.3,1,true
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,869,,,,,,0,false
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,BELOW,BAU,869,826,826,826,-43,-4.95,1,true
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-10,zepto,ABOVE,BAU,869,988,988,1009,119,13.69,0,true
+2026-06-11,amazon,BELOW,BAU,869,849,849,849,-20,-2.3,1,true
+2026-06-11,amazon-fresh,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-11,amazon-now,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-11,bigbasket,ABOVE,BAU,869,1099,1099,1099,230,26.47,0,true
+2026-06-11,blinkit,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-11,flipkart,BELOW,BAU,869,826,826,826,-43,-4.95,1,true
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-11,zepto,ABOVE,BAU,869,988,983,1014,119,13.69,0,true
 ```
 
 ---

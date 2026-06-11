@@ -11,11 +11,11 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: NOT_LISTED
-below_days: 3
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,22 +37,14 @@ SKU memory: [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-10) — ref ₹529 vs live ₹-
-- **Days below reference:** 3 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹529 vs live ₹-
+- **Days below reference:** 4 of 4
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,MATCH,SVD,509,509,509,509,0,0,0,true
-2026-06-06,amazon-fresh,NOT_LISTED,SVD,509,,,,,,0,false
-2026-06-06,amazon-now,NOT_LISTED,SVD,509,,,,,,0,false
-2026-06-06,bigbasket,NOT_LISTED,SVD,509,,,,,,0,false
-2026-06-06,blinkit,NOT_LISTED,SVD,509,,,,,,0,false
-2026-06-06,flipkart,PENDING_REVIEW,SVD,509,,,,,,0,false
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,509,,,,,,0,false
-2026-06-06,zepto,NOT_LISTED,SVD,509,,,,,,0,false
 2026-06-08,amazon,BELOW,BAU,529,509,509,509,-20,-3.78,1,true
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,529,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,529,,,,,,0,false
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,PENDING_REVIEW,BAU,529,,,,,,0,false
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,529,,,,,,0,false
 2026-06-10,zepto,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,amazon,BELOW,BAU,529,526,526,526,-3,-0.57,1,true
+2026-06-11,amazon-fresh,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,amazon-now,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,flipkart,PENDING_REVIEW,BAU,529,,,,,,0,false
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-11,zepto,NOT_LISTED,BAU,529,,,,,,0,false
 ```
 
 ---

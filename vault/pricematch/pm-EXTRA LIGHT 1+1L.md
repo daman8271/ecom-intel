@@ -11,8 +11,8 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: PENDING_REVIEW
 below_days: 4
@@ -37,22 +37,14 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟡 pending on [[zepto]] (2026-06-10) — ref ₹1229 vs live ₹-
+- **Latest status:** 🟡 pending on [[zepto]] (2026-06-11) — ref ₹1229 vs live ₹-
 - **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,BELOW,SVD,1189,1169,1169,1169,-20,-1.68,1,true
-2026-06-06,amazon-fresh,NOT_LISTED,SVD,1189,,,,,,0,false
-2026-06-06,amazon-now,NOT_LISTED,SVD,1189,,,,,,0,false
-2026-06-06,bigbasket,NOT_LISTED,SVD,1189,,,,,,0,false
-2026-06-06,blinkit,NOT_LISTED,SVD,1189,,,,,,0,false
-2026-06-06,flipkart,OOS,SVD,1189,,,,,,0,false
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,1189,,,,,,0,false
-2026-06-06,zepto,PENDING_REVIEW,SVD,1189,,,,,,0,false
 2026-06-08,amazon,BELOW,BAU,1229,1139,1139,1139,-90,-7.32,1,true
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,1229,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,1229,,,,,,0,false
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,OOS,BAU,1229,,,,,,0,false
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,1229,,,,,,0,false
 2026-06-10,zepto,PENDING_REVIEW,BAU,1229,,,,,,0,false
+2026-06-11,amazon,BELOW,BAU,1229,1169,1169,1169,-60,-4.88,1,true
+2026-06-11,amazon-fresh,NOT_LISTED,BAU,1229,,,,,,0,false
+2026-06-11,amazon-now,NOT_LISTED,BAU,1229,,,,,,0,false
+2026-06-11,bigbasket,NOT_LISTED,BAU,1229,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,1229,,,,,,0,false
+2026-06-11,flipkart,OOS,BAU,1229,,,,,,0,false
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,1229,,,,,,0,false
+2026-06-11,zepto,PENDING_REVIEW,BAU,1229,,,,,,0,false
 ```
 
 ---

@@ -11,8 +11,8 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: ABOVE
 below_days: 2
@@ -37,7 +37,7 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-10) — ref ₹809 vs live ₹940
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-11) — ref ₹809 vs live ₹940
 - **Days below reference:** 2 of 4
 - **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
@@ -45,14 +45,6 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,MATCH,SVD,789,789,789,789,0,0,0,true
-2026-06-06,amazon-fresh,MATCH,SVD,789,789,765,789,0,0,1,true
-2026-06-06,amazon-now,MATCH,SVD,789,789,765,789,0,0,1,true
-2026-06-06,bigbasket,ABOVE,SVD,789,1012,1012,1012,223,28.26,0,true
-2026-06-06,blinkit,NOT_LISTED,SVD,789,,,,,,0,false
-2026-06-06,flipkart,ABOVE,SVD,789,872,872,872,83,10.52,0,true
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,789,,,,,,0,false
-2026-06-06,zepto,ABOVE,SVD,789,934,934,934,145,18.38,0,true
 2026-06-08,amazon,BELOW,BAU,809,789,789,789,-20,-2.47,1,true
 2026-06-08,amazon-fresh,BELOW,BAU,809,789,765,789,-20,-2.47,96,true
 2026-06-08,amazon-now,BELOW,BAU,809,789,765,789,-20,-2.47,57,true
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,ABOVE,BAU,809,872,872,872,63,7.79,0,true
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
 2026-06-10,zepto,ABOVE,BAU,809,940,940,989,131,16.19,0,true
+2026-06-11,amazon,MATCH,BAU,809,809,809,809,0,0,0,true
+2026-06-11,amazon-fresh,MATCH,BAU,809,809,805,809,0,0,28,true
+2026-06-11,amazon-now,MATCH,BAU,809,809,805,809,0,0,18,true
+2026-06-11,bigbasket,ABOVE,BAU,809,1012,1012,1012,203,25.09,0,true
+2026-06-11,blinkit,NOT_LISTED,BAU,809,,,,,,0,false
+2026-06-11,flipkart,ABOVE,BAU,809,872,872,872,63,7.79,0,true
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
+2026-06-11,zepto,ABOVE,BAU,809,940,940,989,131,16.19,0,true
 ```
 
 ---

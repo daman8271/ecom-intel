@@ -5,11 +5,11 @@ display_name: "Jivo Olive Oil Extra Light Daily Cooking 5 Litre &Jivo Canola Oil
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-10
-observations: 14
+last_seen: 2026-06-11
+observations: 15
 min_price: 3199
-max_price: 3258
-latest_price: 3258
+max_price: 3332
+latest_price: 3332
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Olive Oil Extra Light Daily Cooking 5 Litre &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil (5LTR + 5LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹3258 (52.6% off)
+- [[amazon]] — latest ₹3332 (51.5% off)
 
-## Runs that observed this SKU (14)
-[[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (15)
+[[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (14 observations)
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -45,6 +45,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-09-1159,2026-06-09,amazon,All India,-,3224,6874,53.1,1
 2026-06-10-0901,2026-06-10,amazon,All India,-,3258,6874,52.6,1
 2026-06-10-1208,2026-06-10,amazon,All India,-,3258,6874,52.6,1
+2026-06-11-0900,2026-06-11,amazon,All India,-,3332,6874,51.5,1
 ```
 
 ---

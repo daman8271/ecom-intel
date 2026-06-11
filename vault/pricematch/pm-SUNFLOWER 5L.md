@@ -11,11 +11,11 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: OOS
-below_days: 4
+below_days: 3
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,22 +37,14 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oi
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-10) — ref ₹1139 vs live ₹-
-- **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-11) — ref ₹1139 vs live ₹-
+- **Days below reference:** 3 of 4
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,BELOW,SVD,1049,987,987,987,-62,-5.91,1,true
-2026-06-06,amazon-fresh,MATCH,SVD,1049,1049,949,1049,0,0,50,true
-2026-06-06,amazon-now,MATCH,SVD,1049,1049,949,1049,0,0,20,true
-2026-06-06,bigbasket,OOS,SVD,1049,,,,,,0,false
-2026-06-06,blinkit,NOT_LISTED,SVD,1049,,,,,,0,false
-2026-06-06,flipkart,OOS,SVD,1049,,,,,,0,false
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,1049,,,,,,0,false
-2026-06-06,zepto,OOS,SVD,1049,,,,,,0,false
 2026-06-08,amazon,BELOW,BAU,1139,987,987,987,-152,-13.35,1,true
 2026-06-08,amazon-fresh,BELOW,BAU,1139,1049,949,1049,-90,-7.9,67,true
 2026-06-08,amazon-now,BELOW,BAU,1139,1049,949,1049,-90,-7.9,42,true
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,ABOVE,BAU,1139,1204,1204,1204,65,5.71,0,true
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,1139,,,,,,0,false
 2026-06-10,zepto,OOS,BAU,1139,,,,,,0,false
+2026-06-11,amazon,MATCH,BAU,1139,1139,1139,1139,0,0,0,true
+2026-06-11,amazon-fresh,MATCH,BAU,1139,1139,976,1139,0,0,23,true
+2026-06-11,amazon-now,MATCH,BAU,1139,1139,1139,1139,0,0,0,true
+2026-06-11,bigbasket,OOS,BAU,1139,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,1139,,,,,,0,false
+2026-06-11,flipkart,ABOVE,BAU,1139,1204,1204,1204,65,5.71,0,true
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,1139,,,,,,0,false
+2026-06-11,zepto,OOS,BAU,1139,,,,,,0,false
 ```
 
 ---

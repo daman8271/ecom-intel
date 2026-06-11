@@ -11,8 +11,8 @@ platforms:
   - flipkart
   - flipkart-minutes
   - zepto
-first_seen: 2026-06-06
-last_seen: 2026-06-10
+first_seen: 2026-06-08
+last_seen: 2026-06-11
 observations: 32
 latest_status: ABOVE
 below_days: 4
@@ -37,22 +37,14 @@ SKU memory: [[jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contai
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-10) — ref ₹4039 vs live ₹7920
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-11) — ref ₹4039 vs live ₹7920
 - **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-06]] · [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]]
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
 ## Ref-vs-live history (32 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
-2026-06-06,amazon,BELOW,SVD,3939,3619,3619,3619,-320,-8.12,1,true
-2026-06-06,amazon-fresh,NOT_LISTED,SVD,3939,,,,,,0,false
-2026-06-06,amazon-now,NOT_LISTED,SVD,3939,,,,,,0,false
-2026-06-06,bigbasket,NOT_LISTED,SVD,3939,,,,,,0,false
-2026-06-06,blinkit,NOT_LISTED,SVD,3939,,,,,,0,false
-2026-06-06,flipkart,ABOVE,SVD,3939,4047,4047,4047,108,2.74,0,true
-2026-06-06,flipkart-minutes,NOT_LISTED,SVD,3939,,,,,,0,false
-2026-06-06,zepto,OOS,SVD,3939,,,,,,0,false
 2026-06-08,amazon,BELOW,BAU,4039,3619,3619,3619,-420,-10.4,1,true
 2026-06-08,amazon-fresh,NOT_LISTED,BAU,4039,,,,,,0,false
 2026-06-08,amazon-now,NOT_LISTED,BAU,4039,,,,,,0,false
@@ -77,6 +69,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-10,flipkart,OOS,BAU,4039,,,,,,0,false
 2026-06-10,flipkart-minutes,NOT_LISTED,BAU,4039,,,,,,0,false
 2026-06-10,zepto,ABOVE,BAU,4039,7920,3600,7920,3881,96.09,1,true
+2026-06-11,amazon,BELOW,BAU,4039,3619,3619,3619,-420,-10.4,1,true
+2026-06-11,amazon-fresh,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-11,amazon-now,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-11,bigbasket,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-11,flipkart,OOS,BAU,4039,,,,,,0,false
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,4039,,,,,,0,false
+2026-06-11,zepto,ABOVE,BAU,4039,7920,2000,7920,3881,96.09,1,true
 ```
 
 ---
