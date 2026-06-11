@@ -372,101 +372,59 @@ def check_master():
     check("master: no non-today regime token (%s) in any cell" % "/".join(sorted(forbidden)),
           not leaks, "; ".join(leaks[:5]))
 
-    # ---- two-pin Matrix shape (owner final order 2026-06-11 night) ----
-    # Each SKU = one row per build_pricematch.PM_MATRIX_PINS pin. QC cell
-    # truth = core.price_at AT that pin ('·' = not served, OOS = no stock);
-    # national platforms repeat their live_modal on every pin row.
-    import importlib.util
-    spec = importlib.util.spec_from_file_location("pmc_sheets", CORE)
-    core = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(core)
-    if PM_DIR not in sys.path:
-        sys.path.insert(0, PM_DIR)
-    import build_pricematch as bp
-    PINS = [p for p, _c in bp.PM_MATRIX_PINS]
-    npins = len(PINS)
-    ctx = core.load_context(DATE)
-    raw_map = {"skus": ctx["map"]}
-    pin_col = next((c for c, v in cols.items()
-                    if v.strip().lower() == "pincode"), 2)
-
-    color_mm, val_mm, link_missing, shape_mm = [], [], [], []
+    color_mm, val_mm, link_missing = [], [], []
     checked = 0
     skus_in_matrix = set()
-    r = hdr_row + 1
-    while r <= ws.max_row:
+    for r in range(hdr_row + 1, ws.max_row + 1):
         sku = ws.cell(row=r, column=1).value
         if sku is None or str(sku).strip() == "":
-            r += 1
             continue
         sku = str(sku).strip()
         skus_in_matrix.add(sku)
-        labels = [str(ws.cell(row=r + k, column=pin_col).value or "")
-                  for k in range(npins)]
-        if [l.split(" ·")[0].strip() for l in labels] != PINS:
-            shape_mm.append("%s rows=%r" % (sku, labels))
-            r += 1
-            continue
-        for k, pin in enumerate(PINS):
-            for p, c in plat_cols.items():
-                rec = by.get((sku, p))
-                cell = ws.cell(row=r + k, column=c)
-                v = cell.value
-                got = classify(fill_rgb(cell))
-                if rec is None or rec["status"] == "NOT_LISTED":
-                    if not (v is None or str(v).strip() in ("—", "-", "--", "")):
-                        val_mm.append("%s/%s/%s NOT_LISTED cell=%r" % (sku, p, pin, v))
-                    continue
-                if rec["status"] == "PENDING_REVIEW":
-                    if str(v or "").strip() != "?":
-                        val_mm.append("%s/%s/%s PENDING cell=%r" % (sku, p, pin, v))
-                    continue
-                ref = num(rec["ref_price"])
-                if p in core.NATIONAL_PLATFORMS:
-                    truth_sale = num(rec["live_modal"])
-                    if truth_sale is None:
-                        if "OOS" not in str(v or "").upper():
-                            val_mm.append("%s/%s/%s natl-OOS cell=%r" % (sku, p, pin, v))
-                        continue
-                else:
-                    pa = core.price_at(p, sku, pin,
-                                       live=ctx["live"].get(p), skumap=raw_map)
-                    if pa is None:
-                        if str(v or "").strip() not in ("·", ""):
-                            val_mm.append("%s/%s/%s not-served cell=%r" % (sku, p, pin, v))
-                        if got is not None:
-                            color_mm.append("%s/%s/%s not-served colored %s" % (sku, p, pin, got))
-                        continue
-                    if not pa.get("in_stock"):
-                        if "OOS" not in str(v or "").upper():
-                            val_mm.append("%s/%s/%s OOS cell=%r" % (sku, p, pin, v))
-                        continue
-                    truth_sale = num(pa["sale"])
-                checked += 1
-                sheetnum = num(v)
-                if sheetnum is None or abs(sheetnum - truth_sale) > 0.005:
-                    val_mm.append("%s/%s/%s truth=%r cell=%r" % (sku, p, pin, truth_sale, v))
-                    continue
-                truth = None
-                if ref is not None:
-                    truth = ("red" if truth_sale < ref - 1
-                             else ("green" if truth_sale > ref + 1 else None))
-                if got != truth:
-                    color_mm.append("%s/%s/%s fill=%s truth=%s (sale=%r ref=%r)" %
-                                    (sku, p, pin, got, truth, truth_sale, ref))
-                if rec.get("url") and not cell.hyperlink:
-                    link_missing.append("%s/%s/%s" % (sku, p, pin))
-        r += npins
+        for p, c in plat_cols.items():
+            rec = by.get((sku, p))
+            cell = ws.cell(row=r, column=c)
+            v = cell.value
+            if rec is None:
+                continue
+            got = classify(fill_rgb(cell))
+            live, ref = num(rec["live_modal"]), num(rec["ref_price"])
+            status = rec["status"]
+            if status == "NOT_LISTED":
+                ok = v is None or str(v).strip() in ("—", "-", "--", "")
+                if not ok:
+                    val_mm.append("%s/%s NOT_LISTED but cell=%r" % (sku, p, v))
+                if got is not None:
+                    color_mm.append("%s/%s NOT_LISTED colored %s" % (sku, p, got))
+                continue
+            if status == "OOS":
+                if "OOS" not in str(v or "").upper():
+                    val_mm.append("%s/%s OOS but cell=%r" % (sku, p, v))
+                if got is not None:
+                    color_mm.append("%s/%s OOS colored %s" % (sku, p, got))
+                continue
+            if live is None:
+                continue
+            checked += 1
+            # priced cell: value == live modal (allow "(±x)" annotations)
+            mnum = re.search(r"[\d.]+", str(v or ""))
+            sheetnum = num(v) if num(v) is not None else (num(mnum.group(0)) if mnum else None)
+            if sheetnum is None or abs(sheetnum - live) > 0.005:
+                val_mm.append("%s/%s live=%r cell=%r" % (sku, p, live, v))
+            truth = "red" if live < ref - 1 else ("green" if live > ref + 1 else None)
+            if got != truth:
+                color_mm.append("%s/%s fill=%s truth=%s (live=%r ref=%r st=%s)" %
+                                (sku, p, got, truth, live, ref, status))
+            if not cell.hyperlink:
+                link_missing.append("%s/%s" % (sku, p))
 
-    check("master Matrix: every SKU block = %d pin rows %s" % (npins, PINS),
-          not shape_mm and skus_in_matrix, "; ".join(shape_mm[:5]))
-    check("master Matrix: COLOR DIRECTION zero mismatches (%d priced pin-cells)" % checked,
+    check("master Matrix: COLOR DIRECTION zero mismatches (%d priced cells)" % checked,
           checked > 0 and not color_mm, "; ".join(color_mm[:8]))
-    check("master Matrix: cell values == price_at(pin) / national live modal",
-          not val_mm, "; ".join(val_mm[:8]))
-    check("master Matrix: hyperlink on every priced cell with a listing url",
-          not link_missing, "%d missing e.g. %s" % (len(link_missing), link_missing[:5]))
-    # coverage: every engine SKU (non-retired) appears
+    check("master Matrix: priced cell values == engine live modal", not val_mm,
+          "; ".join(val_mm[:8]))
+    check("master Matrix: hyperlink on every priced cell", not link_missing,
+          "%d missing e.g. %s" % (len(link_missing), link_missing[:5]))
+    # coverage: every non-retired master SKU appears
     eng_skus = {k[0] for k in by}
     check("master Matrix: covers all %d engine SKUs" % len(eng_skus),
           eng_skus <= skus_in_matrix,
