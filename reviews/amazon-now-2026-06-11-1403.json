@@ -1,0 +1,104 @@
+{
+  "platform": "amazon-now",
+  "run_id": "2026-06-11-1403",
+  "captured_at": "2026-06-11T09:16:28.952Z",
+  "verdict": "OK",
+  "rows": 1170,
+  "unique_skus": 24,
+  "pincodes_with_jivo": 105,
+  "baseline_rows": 735,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "1170 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "1170 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "1170 rows vs baseline 735 (159%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "24 unique SKUs vs baseline 23 (105%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "105 pincodes w/ Jivo vs baseline 103 (102%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-06-11T09:16:28.952Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; 2 SKU(s) price-stable across 9 runs path proven live by 20 SKU(s) that moved (e.g. jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l, jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l, jivo-canola-cold-pressed-edible-oil-11-litres-1l) -> genuinely stable; 20 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": true,
+      "detail": "no resolved store_id on rows; geo check n/a"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": true,
+      "detail": "1170 priced in-stock rows, vs baseline 735; 0 block/error-marked rows"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "3 discounted (sale,mrp) pair(s) shared by >= 2 distinct products; worst (261.0, 375.0) held by 2 products; 61/1170 priced rows (5%) in shared pairs \u2014 possible fabrication/cross-sell bleed (below trigger)"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK \u2014 Real Jivo products (oils, varied sizes), sensible INR prices, MRP\u2265sale, reasonable discounts. Baseline +59% warrants full-run review but sample clean."
+    }
+  ],
+  "reasons": [],
+  "llm_note": "OK \u2014 Real Jivo products (oils, varied sizes), sensible INR prices, MRP\u2265sale, reasonable discounts. Baseline +59% warrants full-run review but sample clean."
+}
