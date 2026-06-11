@@ -80,12 +80,32 @@ OUT="output/mail/Jivo-Price-Data-$D-$TS.xlsx"
 python3 tools/mailer/combine_reports.py --out "$OUT" "${PRESENT[@]}" \
   || { echo "ERROR: combine failed"; alert "combine failed"; exit 1; }
 
-TO="${PRICE_MAIL_TO:-dev04@jivo.in}"
+# Ecom team distribution list (owner-specified 2026-06-11); PRICE_MAIL_TO in
+# secrets.env overrides.
+TEAM="dev04@jivo.in,ecom4@jivo.in,ecom3@jivo.in,ecom1@jivo.in,ecom8@jivo.in,pr@jivo.in,tanuj@jivo.in,ecomoperations@jivo.in,marketplace@jivo.in,ecomb2b@jivo.in,manav@jivo.in,kamaldeep@jivo.in,ps@jivo.in"
+TO="${PRICE_MAIL_TO:-$TEAM}"
 SUBJ="Jivo Price Data — $(date '+%-I:%M %p') IST — $D"
 BODY="Combined price data workbook attached (${#PRESENT[@]}/9 reports, all sheets): $(basename -a "${PRESENT[@]}" | paste -sd ', ' -)"
 
 python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
   --subject "$SUBJ" --body "$BODY" --attach "$OUT" \
-  || { echo "ERROR: send failed"; alert "Gmail send to $TO failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
+  || { echo "ERROR: send failed"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
 
-echo "=== $(date '+%F %T') mailer done -> $TO ($OUT) ==="
+# Also post the combined workbook to the WhatsApp "Ecom team" group
+# (secrets/whatsapp-target.json). Best-effort: a WhatsApp failure never undoes
+# the already-sent email — it just alerts the owner.
+MANIFEST="output/mail/.wa-manifest-$D-$TS.json"
+python3 - "$OUT" "$SUBJ" "$MANIFEST" <<'PYEOF'
+import json, sys
+out, subj, man = sys.argv[1:4]
+json.dump({"summary": subj, "files": [{"path": out}]}, open(man, "w"))
+PYEOF
+if node tools/whatsapp/post_reports.js "$MANIFEST"; then
+  echo "WhatsApp: posted to Ecom team group"
+else
+  echo "ERROR: WhatsApp group post failed"
+  alert "WhatsApp Ecom-group post failed (email did go out)"
+fi
+rm -f "$MANIFEST"
+
+echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group ($OUT) ==="
