@@ -601,6 +601,13 @@
      "method": "ID-ASIN",
      "confidence": "exact",
      "note": "verifier-confirmed 2026-06-05 ('Pack of 2L' = 2x1L canola); was held as a known DUPLICATE of CANOLA 1+1L (B0152TWWSQ) — team sheet v2 gives it its own master row, old review item retired"
+    },
+    "flipkart": {
+     "id": "EDOFRXTMJGAE9DCT",
+     "url": "https://www.flipkart.com/product/p/itme?pid=EDOFRXTMJGAE9DCT",
+     "title": "JIVO Cold Pressed Canola Oil 1+1 Ltr Canola Oil PET Bottle",
+     "confidence": "exact",
+     "method": "owner-review-telegram-2026-06-11"
     }
    }
   },
@@ -1350,6 +1357,13 @@
      "method": "ID-CATALOG",
      "confidence": "exact",
      "note": "exact Jivo-catalog internal-name match (frozen fragment evidence, no re-scrape); no live MRP on the listing — catalog identity stands, nothing contradicts"
+    },
+    "zepto": {
+     "id": "597fe027-2e19-4a49-bc07-76ef57295ad6",
+     "url": "https://www.zepto.com/pn/p/pvid/597fe027-2e19-4a49-bc07-76ef57295ad6",
+     "title": "Jivo Extra Light Olive Oil Combo",
+     "confidence": "exact",
+     "method": "owner-review-telegram-2026-06-11"
     }
    }
   },
@@ -1624,6 +1638,13 @@
      "in_stock": false,
      "method": "ID-ASIN",
      "confidence": "exact"
+    },
+    "flipkart": {
+     "id": "EDOHZYYSYEZ2YVTM",
+     "url": "https://www.flipkart.com/jivo-extra-light-3-litre-cooking-oil-olive-plastic-bottle/p/itmf655d53b1f4f2?pid=EDOHZYYSYEZ2YVTM",
+     "title": "Jivo Extra Light 3 Litre Cooking Oil Olive Plastic Bottle (owner-supplied pid)",
+     "confidence": "exact",
+     "method": "owner-review-telegram-2026-06-11"
     }
    }
   },
@@ -2800,6 +2821,13 @@
      "method": "AUTO-NAME+MRP",
      "confidence": "anchored",
      "note": "census-classified combo 1L x 2 (same composition), mrp 2098 == v2 sheet exact; sale not captured in the frozen census"
+    },
+    "flipkart": {
+     "id": "EDOHYRRPJ3H7NHHN",
+     "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRRPJ3H7NHHN",
+     "title": "JIVO Pomace Olive Oil Pack of 2 Olive Oil Plastic Bottle",
+     "confidence": "exact",
+     "method": "owner-review-telegram-2026-06-11"
     }
    }
   },
@@ -3265,6 +3293,13 @@
      "in_stock": false,
      "method": "ID-ASIN",
      "confidence": "exact"
+    },
+    "flipkart": {
+     "id": "QWRGEMQZXAYWVM4M",
+     "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQZXAYWVM4M",
+     "title": "Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) Mustard Oil Plastic Bottle",
+     "confidence": "exact",
+     "method": "owner-review-telegram-2026-06-11"
     }
    }
   },
@@ -3950,6 +3985,13 @@
      "method": "ID-ASIN",
      "confidence": "exact",
      "note": "identity from team master sheet v2 (2026-06-06); ASIN not in the 314-ASIN targeted scrape set yet (sheet says In Stock, seller Jivo Mart, url price 555)"
+    },
+    "flipkart": {
+     "id": "EDOHBH2FP9ES6GGA",
+     "url": "https://www.flipkart.com/product/p/itme?pid=EDOHBH2FP9ES6GGA",
+     "title": "JIVO Rice Bran Healthy Cooking Oil for Healthier Heart Rich in Antioxidants, Vitamins Rice Bran Oil PET Bottle",
+     "confidence": "exact",
+     "method": "owner-review-telegram-2026-06-11"
     }
    }
   },
@@ -5584,6 +5626,13 @@
      "method": "ID-ASIN",
      "confidence": "exact",
      "note": "identity from team master sheet v2 (2026-06-06); ASIN not in the 314-ASIN targeted scrape set yet (sheet says Out of Stock)"
+    },
+    "flipkart": {
+     "id": "EDOHNFQUDF32JHZR",
+     "url": "https://www.flipkart.com/product/p/itme?pid=EDOHNFQUDF32JHZR",
+     "title": "JIVO First Pressed Yellow Mustard Oil 1 Litre | Chemical-Free Mustard Oil PET Bottle",
+     "confidence": "exact",
+     "method": "owner-review-telegram-2026-06-11"
     }
    }
   },
@@ -9555,7 +9604,8 @@
    "url": "https://www.flipkart.com/jivo-extra-light-3-litre-cooking-oil-olive-plastic-bottle/p/itmf655d53b1f4f2",
    "title": "jivo-extra-light-3-litre-cooking-oil-olive-plastic-bottle (owner sheet URL)",
    "candidate": "EXTRA LIGHT 3L",
-   "reason": "owner sheet has a FLIPKART URL for EXTRA LIGHT 3L but it carries NO pid (cannot resolve offline, network calls forbidden). Two scraped 1+1+1L listings have 3L-style names: EDOHYRPCTWGRKWKU 'JIVO Extra Light Cooking 3 Liter ... Plastic Bottle' (unpriced) and QWRGEMPJJGDRYACC 'Jivo Extra Light Daily Cooking Olive Oil 3 Litre ...' (mrp 2475, sale 1647, sap FG0000310); master mrp 2200 matches neither (third sibling EDOGE5WYGYXCRRMF @4497=3x1499). Mapping left null; the 3 listings stay in unpriced. Needs the pid from the live URL."
+   "reason": "owner sheet has a FLIPKART URL for EXTRA LIGHT 3L but it carries NO pid (cannot resolve offline, network calls forbidden). Two scraped 1+1+1L listings have 3L-style names: EDOHYRPCTWGRKWKU 'JIVO Extra Light Cooking 3 Liter ... Plastic Bottle' (unpriced) and QWRGEMPJJGDRYACC 'Jivo Extra Light Daily Cooking Olive Oil 3 Litre ...' (mrp 2475, sale 1647, sap FG0000310); master mrp 2200 matches neither (third sibling EDOGE5WYGYXCRRMF @4497=3x1499). Mapping left null; the 3 listings stay in unpriced. Needs the pid from the live URL.",
+   "resolved": "owner-review-telegram-2026-06-11 — ratified correct (owner supplied pid EDOHZYYSYEZ2YVTM; added to skus.master.tsv sweep)"
   },
   {
    "platform": "flipkart",
@@ -9640,7 +9690,8 @@
    "url": "https://www.flipkart.com/product/p/itme?pid=EDOFRXTMJGAE9DCT",
    "title": "JIVO Cold Pressed Canola Oil 1+1 Ltr Canola Oil PET Bottle",
    "candidate": "CANOLA 1L + 1L",
-   "reason": "same-platform collision: flipkart's single 'CANOLA 1+1L' catalog FSN is already held by master CANOLA 1+1L (B0152TWWSQ family); the new CANOLA 1L + 1L (B0CZP26VVN) is the same composition — owner to confirm whether flipkart carries a second distinct FSN or the slot stays with v1"
+   "reason": "same-platform collision: flipkart's single 'CANOLA 1+1L' catalog FSN is already held by master CANOLA 1+1L (B0152TWWSQ family); the new CANOLA 1L + 1L (B0CZP26VVN) is the same composition — owner to confirm whether flipkart carries a second distinct FSN or the slot stays with v1",
+   "resolved": "owner-review-telegram-2026-06-11 — ratified correct"
   },
   {
    "platform": "flipkart",
@@ -9648,7 +9699,8 @@
    "url": "https://www.flipkart.com/product/p/itme?pid=EDOHYRRPJ3H7NHHN",
    "title": "JIVO Pomace Olive Oil Pack of 2 Olive Oil Plastic Bottle",
    "candidate": "JIVO POMACE 1L + 1L",
-   "reason": "TWO FSNs share internal name 'JIVO POMACE 1+1L' (collision) and this one's mrp 1899 != sheet 2098 — owner pick"
+   "reason": "TWO FSNs share internal name 'JIVO POMACE 1+1L' (collision) and this one's mrp 1899 != sheet 2098 — owner pick",
+   "resolved": "owner-review-telegram-2026-06-11 — ratified correct"
   },
   {
    "platform": "flipkart",
@@ -9664,7 +9716,8 @@
    "url": "https://www.flipkart.com/product/p/itme?pid=QWRGEMQZXAYWVM4M",
    "title": "Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2) Mustard Oil Plastic Bottle",
    "candidate": "MUSTARD 1L + 1L",
-   "reason": "3-way same-platform collision ('MUSTARD 1+1L'); mrp 510 vs sheet 500 — MRP conflict; amazon live mrp is 550 — owner pick"
+   "reason": "3-way same-platform collision ('MUSTARD 1+1L'); mrp 510 vs sheet 500 — MRP conflict; amazon live mrp is 550 — owner pick",
+   "resolved": "owner-review-telegram-2026-06-11 — ratified correct"
   },
   {
    "platform": "flipkart",
@@ -9688,7 +9741,8 @@
    "url": "https://www.flipkart.com/product/p/itme?pid=EDOHNFQUDF32JHZR",
    "title": "JIVO First Pressed Yellow Mustard Oil 1 Litre | Chemical-Free Mustard Oil PET Bottle",
    "candidate": "YELLOW MUSTARD 1L + 1L",
-   "reason": "internal name 'YELLOW MUSTARD 1L + 1L' is an exact match but listing mrp 790 != sheet 750 — MRP conflict, not mapped"
+   "reason": "internal name 'YELLOW MUSTARD 1L + 1L' is an exact match but listing mrp 790 != sheet 750 — MRP conflict, not mapped",
+   "resolved": "owner-review-telegram-2026-06-11 — ratified correct"
   },
   {
    "platform": "flipkart",
@@ -9704,7 +9758,8 @@
    "url": "https://www.flipkart.com/product/p/itme?pid=EDOHBH2FP9ES6GGA",
    "title": "JIVO Rice Bran Healthy Cooking Oil for Healthier Heart Rich in Antioxidants, Vitamins Rice Bran Oil PET Bottle",
    "candidate": "RICE BRAN 1L + 1L",
-   "reason": "catalog 'RICE BRAN 2L' (single 2L bottle) carries mrp 570 == the new 1L+1L sheet mrp, but composition differs (2L bottle vs 2x1L combo) — owner-ratified rule forbids the map; confirm whether flipkart's '2L' is actually the twin-pack"
+   "reason": "catalog 'RICE BRAN 2L' (single 2L bottle) carries mrp 570 == the new 1L+1L sheet mrp, but composition differs (2L bottle vs 2x1L combo) — owner-ratified rule forbids the map; confirm whether flipkart's '2L' is actually the twin-pack",
+   "resolved": "owner-review-telegram-2026-06-11 — ratified correct"
   },
   {
    "platform": "flipkart",
@@ -9720,7 +9775,8 @@
    "url": "https://www.zepto.com/pn/p/pvid/597fe027-2e19-4a49-bc07-76ef57295ad6",
    "title": "Jivo Extra Light Olive Oil Combo",
    "candidate": "EXTRA LIGHT 1+1L",
-   "reason": "census-classified combo 1L x 2 (composition OK) but mrp 2998 != sheet 2798 — MRP conflict; NOTE amazon's ID-anchored live listing also says 2998, the v2 sheet MRP may be stale here"
+   "reason": "census-classified combo 1L x 2 (composition OK) but mrp 2998 != sheet 2798 — MRP conflict; NOTE amazon's ID-anchored live listing also says 2998, the v2 sheet MRP may be stale here",
+   "resolved": "owner-review-telegram-2026-06-11 — ratified correct"
   }
  ],
  "master_mrp_stale": {
