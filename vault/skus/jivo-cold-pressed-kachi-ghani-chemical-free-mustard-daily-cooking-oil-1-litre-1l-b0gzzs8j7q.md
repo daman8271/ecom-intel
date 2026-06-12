@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzs8j7q
-display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l B0gzzs8j7q
+display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre"
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-06-06
-observations: 168
+last_seen: 2026-06-12
+observations: 176
 min_price: 365
-max_price: 365
-latest_price: 365
+max_price: 375
+latest_price: 375
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l B0gzzs8j7q**
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹365 (32.4% off)
+- [[amazon-fresh]] — latest ₹375 (30.6% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (4)
-[[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (5)
+[[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (168 observations)
+## Price history (176 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -202,6 +202,14 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-06-1211,2026-06-06,amazon-fresh,Pune,411020,365,540,32.4,1
 2026-06-06-1211,2026-06-06,amazon-fresh,Pune,412101,365,540,32.4,1
 2026-06-06-1211,2026-06-06,amazon-fresh,Pune,412114,365,540,32.4,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Delhi,110046,375,540,30.6,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Delhi,110090,375,540,30.6,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Delhi,110092,375,540,30.6,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Faridabad,121001,375,540,30.6,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Ghaziabad,201005,375,540,30.6,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Ghaziabad,201009,375,540,30.6,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Gurgaon,122001,375,540,30.6,1
+2026-06-12-1254,2026-06-12,amazon-fresh,Gurgaon,122004,375,540,30.6,1
 ```
 
 ---

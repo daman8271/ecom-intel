@@ -6,7 +6,7 @@ platforms:
   - blinkit
 first_seen: 2026-05-21
 last_seen: 2026-06-12
-observations: 244
+observations: 258
 min_price: 868
 max_price: 885
 latest_price: 868
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Chandigarh]] · [[Ludhiana]]
 
-## Runs that observed this SKU (22)
-[[blinkit-2026-06-12-1107]] · [[blinkit-2026-06-11-1446]] · [[blinkit-2026-06-11-1104]] · [[blinkit-2026-06-10-1418]] · [[blinkit-2026-06-10-1026]] · [[blinkit-2026-06-09-1254]] · [[blinkit-2026-06-09-0951]] · [[blinkit-2026-06-08-1247]] · [[blinkit-2026-06-08-0951]] · [[blinkit-2026-06-07-1253]] · [[blinkit-2026-06-07-1000]] · [[blinkit-2026-06-06-1254]] · [[blinkit-2026-06-06-0756]] · [[blinkit-2026-06-05-1659]] · [[blinkit-2026-06-05-1151]] · [[blinkit-2026-06-04-1417]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-21-1736]]
+## Runs that observed this SKU (23)
+[[blinkit-2026-06-12-1449]] · [[blinkit-2026-06-12-1107]] · [[blinkit-2026-06-11-1446]] · [[blinkit-2026-06-11-1104]] · [[blinkit-2026-06-10-1418]] · [[blinkit-2026-06-10-1026]] · [[blinkit-2026-06-09-1254]] · [[blinkit-2026-06-09-0951]] · [[blinkit-2026-06-08-1247]] · [[blinkit-2026-06-08-0951]] · [[blinkit-2026-06-07-1253]] · [[blinkit-2026-06-07-1000]] · [[blinkit-2026-06-06-1254]] · [[blinkit-2026-06-06-0756]] · [[blinkit-2026-06-05-1659]] · [[blinkit-2026-06-05-1151]] · [[blinkit-2026-06-04-1417]] · [[blinkit-2026-05-29-1600]] · [[blinkit-2026-05-29-1200]] · [[blinkit-2026-05-29-0900]] · [[blinkit-2026-05-25-0900]] · [[blinkit-2026-05-24-1600]] · [[blinkit-2026-05-21-1736]]
 
-## Price history (244 observations)
+## Price history (258 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -278,6 +278,20 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-12-1107,2026-06-12,blinkit,Ludhiana,141421,868,1250,30.6,1
 2026-06-12-1107,2026-06-12,blinkit,Ludhiana,142022,868,1250,30.6,1
 2026-06-12-1107,2026-06-12,blinkit,Ludhiana,142027,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Chandigarh,160001,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Chandigarh,160011,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Chandigarh,160014,868,1250,30.6,0
+2026-06-12-1449,2026-06-12,blinkit,Chandigarh,160021,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Chandigarh,160030,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Chandigarh,160035,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Chandigarh,160043,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Ludhiana,141015,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Ludhiana,141122,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Ludhiana,141412,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Ludhiana,141421,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Ludhiana,142022,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Ludhiana,142027,868,1250,30.6,1
+2026-06-12-1449,2026-06-12,blinkit,Ludhiana,142036,868,1250,30.6,1
 ```
 
 ---

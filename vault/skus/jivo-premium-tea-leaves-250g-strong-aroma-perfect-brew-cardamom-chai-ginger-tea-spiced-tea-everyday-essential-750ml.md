@@ -6,7 +6,7 @@ platforms:
   - amazon
 first_seen: 2026-06-11
 last_seen: 2026-06-12
-observations: 3
+observations: 4
 tags:
   - type/sku-hub
   - platform/amazon
@@ -21,16 +21,17 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]]
 
-## Runs that observed this SKU (3)
-[[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]]
+## Runs that observed this SKU (4)
+[[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-11-0900,2026-06-11,amazon,All India,-,,,0,0
 2026-06-11-1237,2026-06-11,amazon,All India,-,,,0,0
 2026-06-12-0901,2026-06-12,amazon,All India,-,,,0,0
+2026-06-12-1243,2026-06-12,amazon,All India,-,,,0,0
 ```
 
 ---

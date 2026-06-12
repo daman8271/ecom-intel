@@ -6,10 +6,10 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-12
-observations: 17
+observations: 18
 min_price: 1869
 max_price: 1983
-latest_price: 1946
+latest_price: 1915
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Kachi Ghani Mustard Oil 5L & Gold Refined Oil 5L (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1946 (15.4% off)
+- [[amazon]] — latest ₹1915 (16.7% off)
 
-## Runs that observed this SKU (17)
-[[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (18)
+[[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (17 observations)
+## Price history (18 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -48,6 +48,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-11-0900,2026-06-11,amazon,All India,-,1983,2300,13.8,1
 2026-06-11-1237,2026-06-11,amazon,All India,-,1952,2300,15.1,1
 2026-06-12-0901,2026-06-12,amazon,All India,-,1946,2300,15.4,1
+2026-06-12-1243,2026-06-12,amazon,All India,-,1915,2300,16.7,1
 ```
 
 ---

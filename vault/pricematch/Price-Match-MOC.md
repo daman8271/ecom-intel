@@ -33,7 +33,7 @@ date,regime,below,above,match,exposure,store_violations,listings
 2026-06-09,BAU,139,25,2,9522,2835,904
 2026-06-10,BAU,106,28,34,9098,3060,904
 2026-06-11,BAU,95,30,46,10273,2787,904
-2026-06-12,SVD,80,85,6,6013,2292,904
+2026-06-12,SVD,78,86,6,5994,2279,904
 ```
 
 ## Worst recurring offenders (20)
@@ -42,7 +42,7 @@ date,regime,below,above,match,exposure,store_violations,listings
 |---|--:|--:|---|
 | [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] | 5 | 5587 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
 | [[pm-EXTRA VIRGIN 5L|EXTRA VIRGIN 5L]] | 5 | 4039 | [[amazon]] · [[zepto]] |
-| [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] | 5 | 3773 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[zepto]] |
+| [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] | 5 | 3802 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[zepto]] |
 | [[pm-MUSTARD 5L|MUSTARD 5L]] | 5 | 2693 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart-minutes]] · [[zepto]] |
 | [[pm-EXTRA LIGHT 1L|EXTRA LIGHT 1L]] | 5 | 2474 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[zepto]] |
 | [[pm-EXTRA LIGHT 5L|EXTRA LIGHT 5L]] | 5 | 2223 | [[amazon]] · [[flipkart]] |
@@ -53,11 +53,11 @@ date,regime,below,above,match,exposure,store_violations,listings
 | [[pm-EXTRA LIGHT 3L|EXTRA LIGHT 3L]] | 5 | 1506 | [[amazon]] |
 | [[pm-EXTRA VIRGIN 1L + 1L|EXTRA VIRGIN 1L + 1L]] | 5 | 1410 | [[amazon]] · [[flipkart]] |
 | [[pm-JIVO POMACE 1L + 1L|JIVO POMACE 1L + 1L]] | 5 | 1228 | [[amazon]] · [[flipkart]] · [[zepto]] |
-| [[pm-MUSTARD 1L|MUSTARD 1L]] | 5 | 1180 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
+| [[pm-MUSTARD 1L|MUSTARD 1L]] | 5 | 1150 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
 | [[pm-GROUNDNUT 1L|GROUNDNUT 1L]] | 5 | 882 | [[amazon]] · [[amazon-now]] · [[zepto]] |
 | [[pm-SUNFLOWER 1L|SUNFLOWER 1L]] | 5 | 859 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[zepto]] |
+| [[pm-GOLD 5L|GOLD 5L]] | 5 | 737 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] |
 | [[pm-CANOLA 1+1L|CANOLA 1+1L]] | 5 | 735 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[zepto]] |
-| [[pm-GOLD 5L|GOLD 5L]] | 5 | 728 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] |
 | [[pm-EXTRA LIGHT 1+1L|EXTRA LIGHT 1+1L]] | 5 | 712 | [[amazon]] · [[zepto]] |
 | [[pm-A2 GHEE 500ML|A2 GHEE 500ML]] | 5 | 680 | [[flipkart]] |
 
