@@ -5,8 +5,8 @@ display_name: Canola Omega-3 Rich Cooking Oil 1 L
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-11
-observations: 30
+last_seen: 2026-06-12
+observations: 31
 min_price: 241.47
 max_price: 241.47
 latest_price: 241.47
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[bigbasket]] — latest ₹241.47 (19.2% off)
 
-## Runs that observed this SKU (30)
-[[bigbasket-2026-06-11-1236]] · [[bigbasket-2026-06-11-0859]] · [[bigbasket-2026-06-10-1207]] · [[bigbasket-2026-06-10-0900]] · [[bigbasket-2026-06-09-1158]] · [[bigbasket-2026-06-09-0856]] · [[bigbasket-2026-06-08-1153]] · [[bigbasket-2026-06-08-0858]] · [[bigbasket-2026-06-07-1157]] · [[bigbasket-2026-06-07-0906]] · [[bigbasket-2026-06-06-1200]] · [[bigbasket-2026-06-06-1159]] · [[bigbasket-2026-06-06-1158]] · [[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (31)
+[[bigbasket-2026-06-12-0900]] · [[bigbasket-2026-06-11-1236]] · [[bigbasket-2026-06-11-0859]] · [[bigbasket-2026-06-10-1207]] · [[bigbasket-2026-06-10-0900]] · [[bigbasket-2026-06-09-1158]] · [[bigbasket-2026-06-09-0856]] · [[bigbasket-2026-06-08-1153]] · [[bigbasket-2026-06-08-0858]] · [[bigbasket-2026-06-07-1157]] · [[bigbasket-2026-06-07-0906]] · [[bigbasket-2026-06-06-1200]] · [[bigbasket-2026-06-06-1159]] · [[bigbasket-2026-06-06-1158]] · [[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (30 observations)
+## Price history (31 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -61,6 +61,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-10-1207,2026-06-10,bigbasket,All India,-,241.47,299,19.2,0
 2026-06-11-0859,2026-06-11,bigbasket,All India,-,241.47,299,19.2,0
 2026-06-11-1236,2026-06-11,bigbasket,All India,-,241.47,299,19.2,0
+2026-06-12-0900,2026-06-12,bigbasket,All India,-,241.47,299,19.2,0
 ```
 
 ---

@@ -1,16 +1,16 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l
-display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
+display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
 platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-31
-last_seen: 2026-06-03
-observations: 277
+last_seen: 2026-06-12
+observations: 279
 min_price: 167
 max_price: 225
-latest_price: 173
+latest_price: 180
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -21,19 +21,19 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l**
+**Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹173 (23.1% off)
-- [[amazon-now]] — latest ₹168 (25.3% off)
+- [[amazon-fresh]] — latest ₹180 (20.0% off)
+- [[amazon-now]] — latest ₹180 (20.0% off)
 
 ## Available in cities
-[[Delhi]] · [[Gurgaon]] · [[Jaipur]]
+[[Delhi]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]]
 
-## Runs that observed this SKU (12)
-[[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (14)
+[[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (277 observations)
+## Price history (279 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -314,6 +314,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-03-1200,2026-06-03,amazon-fresh,Delhi,110076,168,225,25.3,1
 2026-06-03-1200,2026-06-03,amazon-fresh,Gurgaon,122001,173,225,23.1,1
 2026-06-03-1200,2026-06-03,amazon-fresh,Gurgaon,122010,173,225,23.1,1
+2026-06-12-0911,2026-06-12,amazon-fresh,Kolkata,700107,180,225,20,1
+2026-06-12-1025,2026-06-12,amazon-now,Kolkata,700107,180,225,20,1
 ```
 
 ---

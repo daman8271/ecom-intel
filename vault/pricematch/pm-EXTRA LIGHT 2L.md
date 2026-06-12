@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: BELOW
-below_days: 4
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-11) — ref ₹1229 vs live ₹1135
-- **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-12) — ref ₹1189 vs live ₹1173
+- **Days below reference:** 5 of 5
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -76,7 +76,15 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,blinkit,BELOW,BAU,1229,1139,1138,1340,-90,-7.32,90,true
 2026-06-11,flipkart,BELOW,BAU,1229,1004,1004,1004,-225,-18.31,1,true
 2026-06-11,flipkart-minutes,ABOVE,BAU,1229,1903,1903,2084,674,54.84,0,true
-2026-06-11,zepto,BELOW,BAU,1229,1135,1135,1199,-94,-7.65,32,true
+2026-06-11,zepto,BELOW,BAU,1229,1135,1135,1199,-94,-7.65,33,true
+2026-06-12,amazon,BELOW,SVD,1189,1010,1010,1010,-179,-15.05,1,true
+2026-06-12,amazon-fresh,BELOW,SVD,1189,1132,1010,1229,-57,-4.79,92,true
+2026-06-12,amazon-now,BELOW,SVD,1189,1132,1132,1229,-57,-4.79,62,true
+2026-06-12,bigbasket,ABOVE,SVD,1189,1343,1343,1343,154,12.95,0,true
+2026-06-12,blinkit,BELOW,SVD,1189,1139,1139,1340,-50,-4.21,86,true
+2026-06-12,flipkart,BELOW,SVD,1189,1004,1004,1004,-185,-15.56,1,true
+2026-06-12,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2084,714,60.05,0,true
+2026-06-12,zepto,BELOW,SVD,1189,1173,1132,1195,-16,-1.35,33,true
 ```
 
 ---

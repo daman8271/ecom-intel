@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: NOT_LISTED
 below_days: 2
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-oil1-litre-refined-pouch-cooking-oil-for-daily-use-rec
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹269 vs live ₹-
-- **Days below reference:** 2 of 4
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹259 vs live ₹-
+- **Days below reference:** 2 of 5
 - **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -77,6 +77,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,flipkart,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-11,zepto,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-12,amazon,ABOVE,SVD,259,269,269,269,10,3.86,0,true
+2026-06-12,amazon-fresh,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,amazon-now,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,bigbasket,OOS,SVD,259,,,,,,0,false
+2026-06-12,blinkit,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,flipkart,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,zepto,NOT_LISTED,SVD,259,,,,,,0,false
 ```
 
 ---

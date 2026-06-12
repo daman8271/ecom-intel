@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: BELOW
-below_days: 4
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-11) — ref ₹229 vs live ₹192
-- **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-12) — ref ₹219 vs live ₹192
+- **Days below reference:** 5 of 5
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -73,10 +73,18 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,amazon-fresh,BELOW,BAU,229,186,177,207,-43,-18.78,64,true
 2026-06-11,amazon-now,BELOW,BAU,229,186,177,195,-43,-18.78,52,true
 2026-06-11,bigbasket,OOS,BAU,229,,,,,,0,false
-2026-06-11,blinkit,BELOW,BAU,229,215,192,220,-14,-6.11,41,true
+2026-06-11,blinkit,BELOW,BAU,229,215,192,220,-14,-6.11,42,true
 2026-06-11,flipkart,OOS,BAU,229,,,,,,0,false
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
-2026-06-11,zepto,BELOW,BAU,229,192,183,192,-37,-16.16,25,true
+2026-06-11,zepto,BELOW,BAU,229,192,183,192,-37,-16.16,26,true
+2026-06-12,amazon,BELOW,SVD,219,207,207,207,-12,-5.48,1,true
+2026-06-12,amazon-fresh,BELOW,SVD,219,178,177,207,-41,-18.72,75,true
+2026-06-12,amazon-now,BELOW,SVD,219,178,177,186,-41,-18.72,60,true
+2026-06-12,bigbasket,OOS,SVD,219,,,,,,0,false
+2026-06-12,blinkit,BELOW,SVD,219,215,192,220,-4,-1.83,37,true
+2026-06-12,flipkart,OOS,SVD,219,,,,,,0,false
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-12,zepto,BELOW,SVD,219,192,191,192,-27,-12.33,32,true
 ```
 
 ---

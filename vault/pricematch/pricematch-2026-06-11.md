@@ -2,11 +2,11 @@
 type: pricematch-daily
 date: 2026-06-11
 regime: BAU
-below: 93
-above: 26
+below: 95
+above: 30
 match: 46
-exposure: 9978
-store_violations: 2749
+exposure: 10273
+store_violations: 2787
 listings: 904
 tags:
   - type/pricematch-daily
@@ -18,8 +18,8 @@ tags:
 Up: [[Price-Match-MOC]] · Day: [[2026-06-11]] · Home: [[index]]
 
 - **Regime:** BAU
-- **KPIs:** **BAU** · 🔴 below 93 · 🟢 above 26 · ✅ match 46 · 💸 exposure ₹9978 · 🏪 store-violations 2749
-- **Coverage:** 113 SKUs · 904 listings · 119 OOS · 613 not listed
+- **KPIs:** **BAU** · 🔴 below 95 · 🟢 above 30 · ✅ match 46 · 💸 exposure ₹10273 · 🏪 store-violations 2787
+- **Coverage:** 113 SKUs · 904 listings · 120 OOS · 613 not listed
 
 ## Top offenders below reference (15)
 
@@ -34,12 +34,12 @@ Up: [[Price-Match-MOC]] · Day: [[2026-06-11]] · Home: [[index]]
 | [[pm-SANO POMACE 5L|SANO POMACE 5L]] · [[edogrsy3tnxgejpj]] | [[flipkart]] | 2069 | 1813 | -256 |
 | [[pm-EXTRA LIGHT 3L|EXTRA LIGHT 3L]] · [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-saturated-fat-3l]] | [[amazon]] | 1849 | 1595 | -254 |
 | [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-from-spain-recommended-for-roasting-frying-and-baking-all-types-of-cuisines-rich-in-mufa-low-in-saturated-fat-5l]] | [[amazon]] | 2169 | 1926 | -243 |
+| [[pm-EXTRA LIGHT 1+1L|EXTRA LIGHT 1+1L]] · [[jivo-extra-light-olive-oil-combo-2l]] | [[zepto]] | 1229 | 998 | -231 |
 | [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] · [[edoft6pr7qmyhgjh]] | [[flipkart]] | 1229 | 1004 | -225 |
 | [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] · [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l]] | [[amazon]] | 1229 | 1010 | -219 |
 | [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] | [[amazon-fresh]] | 2169 | 1950 | -219 |
 | [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] | [[amazon-now]] | 2169 | 1950 | -219 |
 | [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] · [[jivo-pomace-olive-oil-5l]] | [[blinkit]] | 2169 | 1950 | -219 |
-| [[pm-MUSTARD 5L|MUSTARD 5L]] · [[jivo-kachi-ghani-cold-pressed-mustard-oil-5l]] | [[blinkit]] | 1049 | 868 | -181 |
 
 ## Complete record (904 listings)
 
@@ -118,8 +118,8 @@ CANOLA 1+1L,flipkart,ABOVE,BAU,529,572,572,572,43,8.13,0,true
 CANOLA 1+1L,flipkart-minutes,ABOVE,BAU,529,575,575,575,46,8.7,0,true
 CANOLA 1+1L,zepto,BELOW,BAU,529,485,485,520,-44,-8.32,21,true
 CANOLA 1L,amazon,BELOW,BAU,269,263,263,263,-6,-2.23,1,true
-CANOLA 1L,amazon-fresh,BELOW,BAU,269,261,248,269,-8,-2.97,99,true
-CANOLA 1L,amazon-now,BELOW,BAU,269,261,257,269,-8,-2.97,68,true
+CANOLA 1L,amazon-fresh,BELOW,BAU,269,261,248,269,-8,-2.97,100,true
+CANOLA 1L,amazon-now,BELOW,BAU,269,261,257,269,-8,-2.97,69,true
 CANOLA 1L,bigbasket,ABOVE,BAU,269,283.99,283.99,283.99,14.99,5.57,0,true
 CANOLA 1L,blinkit,BELOW,BAU,269,260,250,375,-9,-3.35,100,true
 CANOLA 1L,flipkart,ABOVE,BAU,269,319,319,319,50,18.59,0,true
@@ -130,7 +130,7 @@ CANOLA 1L + 1L,amazon-fresh,NOT_LISTED,BAU,529,,,,,,0,false
 CANOLA 1L + 1L,amazon-now,NOT_LISTED,BAU,529,,,,,,0,false
 CANOLA 1L + 1L,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
 CANOLA 1L + 1L,blinkit,NOT_LISTED,BAU,529,,,,,,0,false
-CANOLA 1L + 1L,flipkart,PENDING_REVIEW,BAU,529,,,,,,0,false
+CANOLA 1L + 1L,flipkart,ABOVE,BAU,529,572,572,572,43,8.13,0,true
 CANOLA 1L + 1L,flipkart-minutes,NOT_LISTED,BAU,529,,,,,,0,false
 CANOLA 1L + 1L,zepto,NOT_LISTED,BAU,529,,,,,,0,false
 CANOLA 1L POUCH,amazon,MATCH,BAU,269,269,269,269,0,0,0,true
@@ -252,15 +252,15 @@ EXTRA LIGHT 1+1L,bigbasket,NOT_LISTED,BAU,1229,,,,,,0,false
 EXTRA LIGHT 1+1L,blinkit,NOT_LISTED,BAU,1229,,,,,,0,false
 EXTRA LIGHT 1+1L,flipkart,OOS,BAU,1229,,,,,,0,false
 EXTRA LIGHT 1+1L,flipkart-minutes,NOT_LISTED,BAU,1229,,,,,,0,false
-EXTRA LIGHT 1+1L,zepto,PENDING_REVIEW,BAU,1229,,,,,,0,false
+EXTRA LIGHT 1+1L,zepto,BELOW,BAU,1229,998,998,998,-231,-18.8,18,true
 EXTRA LIGHT 1L,amazon,BELOW,BAU,619,499,499,499,-120,-19.39,1,true
-EXTRA LIGHT 1L,amazon-fresh,BELOW,BAU,619,499,499,619,-120,-19.39,107,true
-EXTRA LIGHT 1L,amazon-now,BELOW,BAU,619,499,499,619,-120,-19.39,75,true
+EXTRA LIGHT 1L,amazon-fresh,BELOW,BAU,619,499,499,619,-120,-19.39,108,true
+EXTRA LIGHT 1L,amazon-now,BELOW,BAU,619,499,499,619,-120,-19.39,76,true
 EXTRA LIGHT 1L,bigbasket,ABOVE,BAU,619,1284,1284,1284,665,107.43,0,true
 EXTRA LIGHT 1L,blinkit,ABOVE,BAU,619,624,620,708,5,0.81,0,true
 EXTRA LIGHT 1L,flipkart,OOS,BAU,619,,,,,,0,false
 EXTRA LIGHT 1L,flipkart-minutes,NOT_LISTED,BAU,619,,,,,,0,false
-EXTRA LIGHT 1L,zepto,BELOW,BAU,619,499,499,499,-120,-19.39,37,true
+EXTRA LIGHT 1L,zepto,BELOW,BAU,619,499,499,499,-120,-19.39,38,true
 EXTRA LIGHT 2L,amazon,BELOW,BAU,1229,1010,1010,1010,-219,-17.82,1,true
 EXTRA LIGHT 2L,amazon-fresh,BELOW,BAU,1229,1126,1010,1229,-103,-8.38,108,true
 EXTRA LIGHT 2L,amazon-now,BELOW,BAU,1229,1126,1126,1229,-103,-8.38,78,true
@@ -268,13 +268,13 @@ EXTRA LIGHT 2L,bigbasket,ABOVE,BAU,1229,1343,1343,1343,114,9.28,0,true
 EXTRA LIGHT 2L,blinkit,BELOW,BAU,1229,1139,1138,1340,-90,-7.32,90,true
 EXTRA LIGHT 2L,flipkart,BELOW,BAU,1229,1004,1004,1004,-225,-18.31,1,true
 EXTRA LIGHT 2L,flipkart-minutes,ABOVE,BAU,1229,1903,1903,2084,674,54.84,0,true
-EXTRA LIGHT 2L,zepto,BELOW,BAU,1229,1135,1135,1199,-94,-7.65,32,true
+EXTRA LIGHT 2L,zepto,BELOW,BAU,1229,1135,1135,1199,-94,-7.65,33,true
 EXTRA LIGHT 3L,amazon,BELOW,BAU,1849,1595,1595,1595,-254,-13.74,1,true
 EXTRA LIGHT 3L,amazon-fresh,NOT_LISTED,BAU,1849,,,,,,0,false
 EXTRA LIGHT 3L,amazon-now,NOT_LISTED,BAU,1849,,,,,,0,false
 EXTRA LIGHT 3L,bigbasket,NOT_LISTED,BAU,1849,,,,,,0,false
 EXTRA LIGHT 3L,blinkit,NOT_LISTED,BAU,1849,,,,,,0,false
-EXTRA LIGHT 3L,flipkart,PENDING_REVIEW,BAU,1849,,,,,,0,false
+EXTRA LIGHT 3L,flipkart,OOS,BAU,1849,,,,,,0,false
 EXTRA LIGHT 3L,flipkart-minutes,NOT_LISTED,BAU,1849,,,,,,0,false
 EXTRA LIGHT 3L,zepto,NOT_LISTED,BAU,1849,,,,,,0,false
 EXTRA LIGHT 500ML,amazon,MATCH,BAU,349,349,349,349,0,0,0,true
@@ -428,7 +428,7 @@ GROUNDNUT 1L,bigbasket,NOT_LISTED,BAU,259,,,,,,0,false
 GROUNDNUT 1L,blinkit,NOT_LISTED,BAU,259,,,,,,0,false
 GROUNDNUT 1L,flipkart,ABOVE,BAU,259,300,300,300,41,15.83,0,true
 GROUNDNUT 1L,flipkart-minutes,NOT_LISTED,BAU,259,,,,,,0,false
-GROUNDNUT 1L,zepto,BELOW,BAU,259,199,199,199,-60,-23.17,31,true
+GROUNDNUT 1L,zepto,BELOW,BAU,259,199,199,199,-60,-23.17,32,true
 GROUNDNUT 5L,amazon,MATCH,BAU,1269,1269,1269,1269,0,0,0,true
 GROUNDNUT 5L,amazon-fresh,MATCH,BAU,1269,1269,1074,1269,0,0,29,true
 GROUNDNUT 5L,amazon-now,MATCH,BAU,1269,1269,1269,1269,0,0,0,true
@@ -441,16 +441,16 @@ JIVO POMACE 1L,amazon,BELOW,BAU,439,379,379,379,-60,-13.67,1,true
 JIVO POMACE 1L,amazon-fresh,BELOW,BAU,439,379,379,387,-60,-13.67,110,true
 JIVO POMACE 1L,amazon-now,BELOW,BAU,439,379,379,387,-60,-13.67,82,true
 JIVO POMACE 1L,bigbasket,ABOVE,BAU,439,549.68,549.68,549.68,110.68,25.21,0,true
-JIVO POMACE 1L,blinkit,BELOW,BAU,439,379,379,485,-60,-13.67,130,true
+JIVO POMACE 1L,blinkit,BELOW,BAU,439,379,379,485,-60,-13.67,131,true
 JIVO POMACE 1L,flipkart,ABOVE,BAU,439,563,563,563,124,28.25,0,true
 JIVO POMACE 1L,flipkart-minutes,BELOW,BAU,439,379,379,405,-60,-13.67,8,true
-JIVO POMACE 1L,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,32,true
+JIVO POMACE 1L,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,33,true
 JIVO POMACE 1L + 1L,amazon,BELOW,BAU,869,758,758,758,-111,-12.77,1,true
 JIVO POMACE 1L + 1L,amazon-fresh,NOT_LISTED,BAU,869,,,,,,0,false
 JIVO POMACE 1L + 1L,amazon-now,NOT_LISTED,BAU,869,,,,,,0,false
 JIVO POMACE 1L + 1L,bigbasket,NOT_LISTED,BAU,869,,,,,,0,false
 JIVO POMACE 1L + 1L,blinkit,NOT_LISTED,BAU,869,,,,,,0,false
-JIVO POMACE 1L + 1L,flipkart,PENDING_REVIEW,BAU,869,,,,,,0,false
+JIVO POMACE 1L + 1L,flipkart,BELOW,BAU,869,780,780,780,-89,-10.24,1,true
 JIVO POMACE 1L + 1L,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
 JIVO POMACE 1L + 1L,zepto,BELOW,BAU,869,758,758,758,-111,-12.77,11,true
 JIVO POMACE 2L,amazon,BELOW,BAU,869,849,849,849,-20,-2.3,1,true
@@ -468,7 +468,7 @@ JIVO POMACE 5L,bigbasket,NOT_LISTED,BAU,2169,,,,,,0,false
 JIVO POMACE 5L,blinkit,BELOW,BAU,2169,1950,1950,2140,-219,-10.1,82,true
 JIVO POMACE 5L,flipkart,BELOW,BAU,2169,1827,1827,1827,-342,-15.77,1,true
 JIVO POMACE 5L,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,8,true
-JIVO POMACE 5L,zepto,BELOW,BAU,2169,2127,2114,2574,-42,-1.94,17,true
+JIVO POMACE 5L,zepto,ABOVE,BAU,2169,2574,2114,2574,405,18.67,17,true
 JIVO PUNJABI SHIKANJI 160 MLS,amazon,OOS,BAU,219,,,,,,0,false
 JIVO PUNJABI SHIKANJI 160 MLS,amazon-fresh,NOT_LISTED,BAU,219,,,,,,0,false
 JIVO PUNJABI SHIKANJI 160 MLS,amazon-now,NOT_LISTED,BAU,219,,,,,,0,false
@@ -502,19 +502,19 @@ JIVO WATER 500 MLS,flipkart,NOT_LISTED,BAU,12,,,,,,0,false
 JIVO WATER 500 MLS,flipkart-minutes,NOT_LISTED,BAU,12,,,,,,0,false
 JIVO WATER 500 MLS,zepto,NOT_LISTED,BAU,12,,,,,,0,false
 MUSTARD 1L,amazon,OOS,BAU,219,,,,,,0,false
-MUSTARD 1L,amazon-fresh,BELOW,BAU,219,176,167,219,-43,-19.63,89,true
-MUSTARD 1L,amazon-now,BELOW,BAU,219,167,167,186,-52,-23.74,77,true
+MUSTARD 1L,amazon-fresh,BELOW,BAU,219,176,167,219,-43,-19.63,90,true
+MUSTARD 1L,amazon-now,BELOW,BAU,219,167,167,186,-52,-23.74,78,true
 MUSTARD 1L,bigbasket,BELOW,BAU,219,202.09,202.09,202.09,-16.91,-7.72,1,true
 MUSTARD 1L,blinkit,BELOW,BAU,219,171,169,171,-48,-21.92,16,true
 MUSTARD 1L,flipkart,OOS,BAU,219,,,,,,0,false
 MUSTARD 1L,flipkart-minutes,BELOW,BAU,219,179,179,186,-40,-18.26,46,true
-MUSTARD 1L,zepto,BELOW,BAU,219,181,179,181,-38,-17.35,38,true
+MUSTARD 1L,zepto,BELOW,BAU,219,181,179,181,-38,-17.35,39,true
 MUSTARD 1L + 1L,amazon,OOS,BAU,429,,,,,,0,false
 MUSTARD 1L + 1L,amazon-fresh,NOT_LISTED,BAU,429,,,,,,0,false
 MUSTARD 1L + 1L,amazon-now,NOT_LISTED,BAU,429,,,,,,0,false
 MUSTARD 1L + 1L,bigbasket,NOT_LISTED,BAU,429,,,,,,0,false
 MUSTARD 1L + 1L,blinkit,NOT_LISTED,BAU,429,,,,,,0,false
-MUSTARD 1L + 1L,flipkart,PENDING_REVIEW,BAU,429,,,,,,0,false
+MUSTARD 1L + 1L,flipkart,BELOW,BAU,429,412,412,412,-17,-3.96,1,true
 MUSTARD 1L + 1L,flipkart-minutes,NOT_LISTED,BAU,429,,,,,,0,false
 MUSTARD 1L + 1L,zepto,NOT_LISTED,BAU,429,,,,,,0,false
 MUSTARD 1L POUCH,amazon,OOS,BAU,219,,,,,,0,false
@@ -542,8 +542,8 @@ MUSTARD 4L,flipkart,OOS,BAU,839,,,,,,0,false
 MUSTARD 4L,flipkart-minutes,OOS,BAU,839,,,,,,0,false
 MUSTARD 4L,zepto,NOT_LISTED,BAU,839,,,,,,0,false
 MUSTARD 5L,amazon,BELOW,BAU,1049,1022,1022,1022,-27,-2.57,1,true
-MUSTARD 5L,amazon-fresh,BELOW,BAU,1049,985,985,1049,-64,-6.1,120,true
-MUSTARD 5L,amazon-now,BELOW,BAU,1049,985,985,1049,-64,-6.1,68,true
+MUSTARD 5L,amazon-fresh,BELOW,BAU,1049,985,985,1049,-64,-6.1,121,true
+MUSTARD 5L,amazon-now,BELOW,BAU,1049,985,985,1049,-64,-6.1,69,true
 MUSTARD 5L,bigbasket,BELOW,BAU,1049,981.13,981.13,981.13,-67.87,-6.47,1,true
 MUSTARD 5L,blinkit,BELOW,BAU,1049,868,868,868,-181,-17.25,13,true
 MUSTARD 5L,flipkart,OOS,BAU,1049,,,,,,0,false
@@ -614,7 +614,7 @@ QUINOA SEEDS 800G,flipkart,NOT_LISTED,BAU,259,,,,,,0,false
 QUINOA SEEDS 800G,flipkart-minutes,NOT_LISTED,BAU,259,,,,,,0,false
 QUINOA SEEDS 800G,zepto,NOT_LISTED,BAU,259,,,,,,0,false
 RICE BRAN 1L,amazon,BELOW,BAU,199,184,184,184,-15,-7.54,1,true
-RICE BRAN 1L,amazon-fresh,MATCH,BAU,199,199,178,199,0,0,61,true
+RICE BRAN 1L,amazon-fresh,MATCH,BAU,199,199,178,199,0,0,62,true
 RICE BRAN 1L,amazon-now,MATCH,BAU,199,199,178,199,0,0,48,true
 RICE BRAN 1L,bigbasket,NOT_LISTED,BAU,199,,,,,,0,false
 RICE BRAN 1L,blinkit,NOT_LISTED,BAU,199,,,,,,0,false
@@ -626,7 +626,7 @@ RICE BRAN 1L + 1L,amazon-fresh,NOT_LISTED,BAU,389,,,,,,0,false
 RICE BRAN 1L + 1L,amazon-now,NOT_LISTED,BAU,389,,,,,,0,false
 RICE BRAN 1L + 1L,bigbasket,NOT_LISTED,BAU,389,,,,,,0,false
 RICE BRAN 1L + 1L,blinkit,NOT_LISTED,BAU,389,,,,,,0,false
-RICE BRAN 1L + 1L,flipkart,PENDING_REVIEW,BAU,389,,,,,,0,false
+RICE BRAN 1L + 1L,flipkart,ABOVE,BAU,389,391,391,391,2,0.51,0,true
 RICE BRAN 1L + 1L,flipkart-minutes,NOT_LISTED,BAU,389,,,,,,0,false
 RICE BRAN 1L + 1L,zepto,NOT_LISTED,BAU,389,,,,,,0,false
 RICE BRAN 4L,amazon,MATCH,BAU,759,759,759,759,0,0,0,true
@@ -780,7 +780,7 @@ SO OLIVE 1L,bigbasket,NOT_LISTED,BAU,289,,,,,,0,false
 SO OLIVE 1L,blinkit,NOT_LISTED,BAU,289,,,,,,0,false
 SO OLIVE 1L,flipkart,BELOW,BAU,289,237,237,237,-52,-17.99,1,true
 SO OLIVE 1L,flipkart-minutes,NOT_LISTED,BAU,289,,,,,,0,false
-SO OLIVE 1L,zepto,BELOW,BAU,289,264,264,264,-25,-8.65,2,true
+SO OLIVE 1L,zepto,BELOW,BAU,289,264,264,264,-25,-8.65,3,true
 SO OLIVE 1L + 1L,amazon,OOS,BAU,569,,,,,,0,false
 SO OLIVE 1L + 1L,amazon-fresh,NOT_LISTED,BAU,569,,,,,,0,false
 SO OLIVE 1L + 1L,amazon-now,NOT_LISTED,BAU,569,,,,,,0,false
@@ -857,10 +857,10 @@ SUNFLOWER 1L,amazon,BELOW,BAU,229,207,207,207,-22,-9.61,1,true
 SUNFLOWER 1L,amazon-fresh,BELOW,BAU,229,186,177,207,-43,-18.78,64,true
 SUNFLOWER 1L,amazon-now,BELOW,BAU,229,186,177,195,-43,-18.78,52,true
 SUNFLOWER 1L,bigbasket,OOS,BAU,229,,,,,,0,false
-SUNFLOWER 1L,blinkit,BELOW,BAU,229,215,192,220,-14,-6.11,41,true
+SUNFLOWER 1L,blinkit,BELOW,BAU,229,215,192,220,-14,-6.11,42,true
 SUNFLOWER 1L,flipkart,OOS,BAU,229,,,,,,0,false
 SUNFLOWER 1L,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
-SUNFLOWER 1L,zepto,BELOW,BAU,229,192,183,192,-37,-16.16,25,true
+SUNFLOWER 1L,zepto,BELOW,BAU,229,192,183,192,-37,-16.16,26,true
 SUNFLOWER 1L + 1L,amazon,OOS,BAU,449,,,,,,0,false
 SUNFLOWER 1L + 1L,amazon-fresh,NOT_LISTED,BAU,449,,,,,,0,false
 SUNFLOWER 1L + 1L,amazon-now,NOT_LISTED,BAU,449,,,,,,0,false
@@ -938,7 +938,7 @@ YELLOW MUSTARD 1L + 1L,amazon-fresh,NOT_LISTED,BAU,529,,,,,,0,false
 YELLOW MUSTARD 1L + 1L,amazon-now,NOT_LISTED,BAU,529,,,,,,0,false
 YELLOW MUSTARD 1L + 1L,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
 YELLOW MUSTARD 1L + 1L,blinkit,NOT_LISTED,BAU,529,,,,,,0,false
-YELLOW MUSTARD 1L + 1L,flipkart,PENDING_REVIEW,BAU,529,,,,,,0,false
+YELLOW MUSTARD 1L + 1L,flipkart,ABOVE,BAU,529,572,572,572,43,8.13,0,true
 YELLOW MUSTARD 1L + 1L,flipkart-minutes,NOT_LISTED,BAU,529,,,,,,0,false
 YELLOW MUSTARD 1L + 1L,zepto,NOT_LISTED,BAU,529,,,,,,0,false
 YELLOW MUSTARD 5L,amazon,MATCH,BAU,1329,1329,1329,1329,0,0,0,true

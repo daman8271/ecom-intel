@@ -4,8 +4,8 @@ platform: flipkart-minutes
 kind: quick-commerce
 shape: per-pincode
 risk: low
-runs: 50
-skus_tracked: 15
+runs: 51
+skus_tracked: 16
 tags:
   - type/platform-hub
   - moc
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **flipkart-minutes**. Flipkart Minutes hyperlocal quick-commerce; per-pincode pricing.
 
 - **Type:** quick-commerce · **Shape:** per-pincode · **Block risk:** low
-- **Runs captured:** 50 · **SKUs tracked:** 15
+- **Runs captured:** 51 · **SKUs tracked:** 16
 
-## SKUs on flipkart-minutes (15)
-[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]] · [[jivo-extra-light-olive-oil-can-2l]] · [[jivo-mineral-water-1l]] · [[jivo-mineral-water-na]] · [[jivo-pomace-cooking-olive-oil-tin-5l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-pomace-olive-oil-tin-5l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]]
+## SKUs on flipkart-minutes (16)
+[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]] · [[jivo-extra-light-olive-oil-can-2l]] · [[jivo-extra-light-olive-oil-plastic-bottle-1l]] · [[jivo-mineral-water-1l]] · [[jivo-mineral-water-na]] · [[jivo-pomace-cooking-olive-oil-tin-5l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-pomace-olive-oil-tin-5l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]]
 
-## Runs (50) — newest first
+## Runs (51) — newest first
 
 <!-- runs:start -->
+- [[flipkart-minutes-2026-06-12-0832]] — 2026-06-12 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-06-11-1215]] — 2026-06-11 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-06-11-0832]] — 2026-06-11 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-06-10-1137]] — 2026-06-10 · verdict OK <!-- run -->

@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: NOT_LISTED
 below_days: 4
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹529 vs live ₹-
-- **Days below reference:** 4 of 4
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹509 vs live ₹-
+- **Days below reference:** 4 of 5
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -74,9 +74,17 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,amazon-now,NOT_LISTED,BAU,529,,,,,,0,false
 2026-06-11,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
 2026-06-11,blinkit,NOT_LISTED,BAU,529,,,,,,0,false
-2026-06-11,flipkart,PENDING_REVIEW,BAU,529,,,,,,0,false
+2026-06-11,flipkart,ABOVE,BAU,529,572,572,572,43,8.13,0,true
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,529,,,,,,0,false
 2026-06-11,zepto,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-12,amazon,ABOVE,SVD,509,526,526,526,17,3.34,0,true
+2026-06-12,amazon-fresh,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-12,amazon-now,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-12,bigbasket,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-12,blinkit,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-12,flipkart,ABOVE,SVD,509,572,572,572,63,12.38,0,true
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-12,zepto,NOT_LISTED,SVD,509,,,,,,0,false
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: BELOW
-below_days: 4
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-11) — ref ₹1299 vs live ₹1193
-- **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-12) — ref ₹1249 vs live ₹1193
+- **Days below reference:** 5 of 5
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -77,6 +77,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,flipkart,BELOW,BAU,1299,1254,1254,1254,-45,-3.46,1,true
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,1299,,,,,,0,false
 2026-06-11,zepto,BELOW,BAU,1299,1193,1193,1617,-106,-8.16,11,true
+2026-06-12,amazon,ABOVE,SVD,1249,1299,1299,1299,50,4,0,true
+2026-06-12,amazon-fresh,ABOVE,SVD,1249,1299,1193,1405,50,4,39,true
+2026-06-12,amazon-now,ABOVE,SVD,1249,1299,1193,1299,50,4,31,true
+2026-06-12,bigbasket,ABOVE,SVD,1249,1366,1366,1366,117,9.37,0,true
+2026-06-12,blinkit,BELOW,SVD,1249,1193,1193,1493,-56,-4.48,55,true
+2026-06-12,flipkart,ABOVE,SVD,1249,1254,1254,1254,5,0.4,0,true
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,1249,,,,,,0,false
+2026-06-12,zepto,BELOW,SVD,1249,1193,1193,1617,-56,-4.48,18,true
 ```
 
 ---

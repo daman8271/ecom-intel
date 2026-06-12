@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: NOT_LISTED
-below_days: 4
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹1849 vs live ₹-
-- **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹1789 vs live ₹-
+- **Days below reference:** 5 of 5
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -74,9 +74,17 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,amazon-now,NOT_LISTED,BAU,1849,,,,,,0,false
 2026-06-11,bigbasket,NOT_LISTED,BAU,1849,,,,,,0,false
 2026-06-11,blinkit,NOT_LISTED,BAU,1849,,,,,,0,false
-2026-06-11,flipkart,PENDING_REVIEW,BAU,1849,,,,,,0,false
+2026-06-11,flipkart,OOS,BAU,1849,,,,,,0,false
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,1849,,,,,,0,false
 2026-06-11,zepto,NOT_LISTED,BAU,1849,,,,,,0,false
+2026-06-12,amazon,BELOW,SVD,1789,1595,1595,1595,-194,-10.84,1,true
+2026-06-12,amazon-fresh,NOT_LISTED,SVD,1789,,,,,,0,false
+2026-06-12,amazon-now,NOT_LISTED,SVD,1789,,,,,,0,false
+2026-06-12,bigbasket,NOT_LISTED,SVD,1789,,,,,,0,false
+2026-06-12,blinkit,NOT_LISTED,SVD,1789,,,,,,0,false
+2026-06-12,flipkart,OOS,SVD,1789,,,,,,0,false
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,1789,,,,,,0,false
+2026-06-12,zepto,NOT_LISTED,SVD,1789,,,,,,0,false
 ```
 
 ---

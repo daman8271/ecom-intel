@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: NOT_LISTED
 below_days: 4
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidant
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹959 vs live ₹-
-- **Days below reference:** 4 of 4
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹909 vs live ₹-
+- **Days below reference:** 4 of 5
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -77,6 +77,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,flipkart,ABOVE,BAU,959,1033,1033,1033,74,7.72,0,true
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
 2026-06-11,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-12,amazon,ABOVE,SVD,909,959,959,959,50,5.5,0,true
+2026-06-12,amazon-fresh,ABOVE,SVD,909,959,909,989,50,5.5,0,true
+2026-06-12,amazon-now,ABOVE,SVD,909,940,909,959,31,3.41,0,true
+2026-06-12,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-12,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-12,flipkart,ABOVE,SVD,909,1033,1033,1033,124,13.64,0,true
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-12,zepto,NOT_LISTED,SVD,909,,,,,,0,false
 ```
 
 ---

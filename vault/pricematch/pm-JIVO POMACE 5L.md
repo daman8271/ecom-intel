@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
-latest_status: BELOW
-below_days: 4
+last_seen: 2026-06-12
+observations: 40
+latest_status: ABOVE
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-fr
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-11) — ref ₹2169 vs live ₹2127
-- **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-12) — ref ₹2119 vs live ₹2127
+- **Days below reference:** 5 of 5
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -76,7 +76,15 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,blinkit,BELOW,BAU,2169,1950,1950,2140,-219,-10.1,82,true
 2026-06-11,flipkart,BELOW,BAU,2169,1827,1827,1827,-342,-15.77,1,true
 2026-06-11,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,8,true
-2026-06-11,zepto,BELOW,BAU,2169,2127,2114,2574,-42,-1.94,17,true
+2026-06-11,zepto,ABOVE,BAU,2169,2574,2114,2574,405,18.67,17,true
+2026-06-12,amazon,BELOW,SVD,2119,1926,1926,1926,-193,-9.11,1,true
+2026-06-12,amazon-fresh,BELOW,SVD,2119,1950,1897,2083,-169,-7.98,95,true
+2026-06-12,amazon-now,BELOW,SVD,2119,1950,1897,1996,-169,-7.98,77,true
+2026-06-12,bigbasket,NOT_LISTED,SVD,2119,,,,,,0,false
+2026-06-12,blinkit,BELOW,SVD,2119,1897,1897,2088,-222,-10.48,82,true
+2026-06-12,flipkart,BELOW,SVD,2119,1827,1827,1827,-292,-13.78,1,true
+2026-06-12,flipkart-minutes,BELOW,SVD,2119,2049,2049,2049,-70,-3.3,7,true
+2026-06-12,zepto,ABOVE,SVD,2119,2127,2114,2574,8,0.38,3,true
 ```
 
 ---

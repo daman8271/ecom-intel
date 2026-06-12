@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: NOT_LISTED
-below_days: 0
+below_days: 1
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,10 +37,11 @@ SKU memory: [[jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-e
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹429 vs live ₹-
-- **Days below reference:** 0 of 4
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹409 vs live ₹-
+- **Days below reference:** 1 of 5
+- **Below on:** [[2026-06-11]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -73,9 +74,17 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,amazon-now,NOT_LISTED,BAU,429,,,,,,0,false
 2026-06-11,bigbasket,NOT_LISTED,BAU,429,,,,,,0,false
 2026-06-11,blinkit,NOT_LISTED,BAU,429,,,,,,0,false
-2026-06-11,flipkart,PENDING_REVIEW,BAU,429,,,,,,0,false
+2026-06-11,flipkart,BELOW,BAU,429,412,412,412,-17,-3.96,1,true
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,429,,,,,,0,false
 2026-06-11,zepto,NOT_LISTED,BAU,429,,,,,,0,false
+2026-06-12,amazon,OOS,SVD,409,,,,,,0,false
+2026-06-12,amazon-fresh,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-12,amazon-now,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-12,bigbasket,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-12,blinkit,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-12,flipkart,ABOVE,SVD,409,412,412,412,3,0.73,0,true
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-12,zepto,NOT_LISTED,SVD,409,,,,,,0,false
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-11
-observations: 32
+last_seen: 2026-06-12
+observations: 40
 latest_status: NOT_LISTED
-below_days: 4
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-11) — ref ₹269 vs live ₹-
-- **Days below reference:** 4 of 4
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹259 vs live ₹-
+- **Days below reference:** 5 of 5
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
 
-## Ref-vs-live history (32 observations)
+## Ref-vs-live history (40 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -77,6 +77,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-11,flipkart,BELOW,BAU,269,237,237,237,-32,-11.9,1,true
 2026-06-11,flipkart-minutes,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-11,zepto,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-12,amazon,BELOW,SVD,259,237,237,237,-22,-8.49,1,true
+2026-06-12,amazon-fresh,BELOW,SVD,259,237,237,237,-22,-8.49,8,true
+2026-06-12,amazon-now,BELOW,SVD,259,237,237,237,-22,-8.49,8,true
+2026-06-12,bigbasket,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,blinkit,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,flipkart,BELOW,SVD,259,237,237,237,-22,-8.49,1,true
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-12,zepto,NOT_LISTED,SVD,259,,,,,,0,false
 ```
 
 ---

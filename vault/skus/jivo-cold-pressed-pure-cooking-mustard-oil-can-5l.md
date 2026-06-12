@@ -5,11 +5,11 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
-last_seen: 2026-06-11
-observations: 586
+last_seen: 2026-06-12
+observations: 610
 min_price: 929
-max_price: 985
-latest_price: 985
+max_price: 997
+latest_price: 997
 tags:
   - type/sku-hub
   - platform/flipkart-minutes
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)**
 
 ## Sold on
-- [[flipkart-minutes]] — latest ₹985 (21.0% off)
+- [[flipkart-minutes]] — latest ₹997 (20.0% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Noida]]
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (47)
-[[flipkart-minutes-2026-06-11-1215]] · [[flipkart-minutes-2026-06-11-0832]] · [[flipkart-minutes-2026-06-10-1137]] · [[flipkart-minutes-2026-06-10-0832]] · [[flipkart-minutes-2026-06-09-1132]] · [[flipkart-minutes-2026-06-09-0832]] · [[flipkart-minutes-2026-06-08-1132]] · [[flipkart-minutes-2026-06-08-0832]] · [[flipkart-minutes-2026-06-07-1132]] · [[flipkart-minutes-2026-06-07-0839]] · [[flipkart-minutes-2026-06-06-1139]] · [[flipkart-minutes-2026-06-06-0641]] · [[flipkart-minutes-2026-06-05-1539]] · [[flipkart-minutes-2026-06-05-1039]] · [[flipkart-minutes-2026-06-05-0336]] · [[flipkart-minutes-2026-06-05-0112]] · [[flipkart-minutes-2026-06-04-1417]] · [[flipkart-minutes-2026-06-01-1600]] · [[flipkart-minutes-2026-06-01-1200]] · [[flipkart-minutes-2026-06-01-0900]] · [[flipkart-minutes-2026-05-31-1600]] · [[flipkart-minutes-2026-05-31-1200]] · [[flipkart-minutes-2026-05-31-0900]] · [[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1600]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]] · [[flipkart-minutes-2026-05-28-0900]] · [[flipkart-minutes-2026-05-27-1600]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-27-0900]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-26-0900]] · [[flipkart-minutes-2026-05-25-1600]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-25-0900]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-23-0900]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]]
+## Runs that observed this SKU (48)
+[[flipkart-minutes-2026-06-12-0832]] · [[flipkart-minutes-2026-06-11-1215]] · [[flipkart-minutes-2026-06-11-0832]] · [[flipkart-minutes-2026-06-10-1137]] · [[flipkart-minutes-2026-06-10-0832]] · [[flipkart-minutes-2026-06-09-1132]] · [[flipkart-minutes-2026-06-09-0832]] · [[flipkart-minutes-2026-06-08-1132]] · [[flipkart-minutes-2026-06-08-0832]] · [[flipkart-minutes-2026-06-07-1132]] · [[flipkart-minutes-2026-06-07-0839]] · [[flipkart-minutes-2026-06-06-1139]] · [[flipkart-minutes-2026-06-06-0641]] · [[flipkart-minutes-2026-06-05-1539]] · [[flipkart-minutes-2026-06-05-1039]] · [[flipkart-minutes-2026-06-05-0336]] · [[flipkart-minutes-2026-06-05-0112]] · [[flipkart-minutes-2026-06-04-1417]] · [[flipkart-minutes-2026-06-01-1600]] · [[flipkart-minutes-2026-06-01-1200]] · [[flipkart-minutes-2026-06-01-0900]] · [[flipkart-minutes-2026-05-31-1600]] · [[flipkart-minutes-2026-05-31-1200]] · [[flipkart-minutes-2026-05-31-0900]] · [[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-29-1600]] · [[flipkart-minutes-2026-05-29-1200]] · [[flipkart-minutes-2026-05-29-0900]] · [[flipkart-minutes-2026-05-28-0900]] · [[flipkart-minutes-2026-05-27-1600]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-27-0900]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-26-0900]] · [[flipkart-minutes-2026-05-25-1600]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-25-0900]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-23-0900]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]]
 
-## Price history (586 observations)
+## Price history (610 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -620,6 +620,30 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-11-1215,2026-06-11,flipkart-minutes,Gurgaon,123003,985,1250,21,1
 2026-06-11-1215,2026-06-11,flipkart-minutes,Gurgaon,123413,985,1250,21,1
 2026-06-11-1215,2026-06-11,flipkart-minutes,Noida,201307,985,1250,21,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110004,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110007,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110008,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110014,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110025,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110031,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110032,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110046,997,1250,20,0
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110053,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110054,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110055,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110061,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110062,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110076,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110083,997,1250,20,0
+2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110091,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Faridabad,121011,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Gurgaon,122004,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Gurgaon,122006,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Gurgaon,122010,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Gurgaon,122051,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Gurgaon,123003,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Gurgaon,123413,997,1250,20,1
+2026-06-12-0832,2026-06-12,flipkart-minutes,Pune,412403,997,1250,20,1
 ```
 
 ---
