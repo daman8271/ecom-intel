@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-12
-observations: 40
+last_seen: 2026-06-13
+observations: 48
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-ref
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹219 vs live ₹-
-- **Days below reference:** 0 of 5
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-13) — ref ₹219 vs live ₹-
+- **Days below reference:** 0 of 6
 
-## Ref-vs-live history (40 observations)
+## Ref-vs-live history (48 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -84,6 +84,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-12,flipkart,NOT_LISTED,SVD,219,,,,,,0,false
 2026-06-12,flipkart-minutes,NOT_LISTED,SVD,219,,,,,,0,false
 2026-06-12,zepto,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-13,amazon,OOS,SVD,219,,,,,,0,false
+2026-06-13,amazon-fresh,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-13,amazon-now,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-13,bigbasket,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-13,blinkit,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-13,flipkart,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-13,flipkart-minutes,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-13,zepto,NOT_LISTED,SVD,219,,,,,,0,false
 ```
 
 ---

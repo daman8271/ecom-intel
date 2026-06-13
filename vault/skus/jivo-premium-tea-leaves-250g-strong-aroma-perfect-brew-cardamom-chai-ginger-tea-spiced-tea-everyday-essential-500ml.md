@@ -5,8 +5,11 @@ display_name: "Jivo Premium Tea Leaves 250g (Pack of 2) | Strong Aroma, Perfect 
 platforms:
   - amazon
 first_seen: 2026-06-11
-last_seen: 2026-06-12
-observations: 4
+last_seen: 2026-06-13
+observations: 5
+min_price: 355
+max_price: 355
+latest_price: 355
 tags:
   - type/sku-hub
   - platform/amazon
@@ -19,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Premium Tea Leaves 250g (Pack of 2) | Strong Aroma, Perfect Brew | Cardamom Chai, Ginger Tea, Spiced Tea | Everyday Essential (250 GMS X 2)**
 
 ## Sold on
-- [[amazon]]
+- [[amazon]] — latest ₹355 (11.3% off)
 
-## Runs that observed this SKU (4)
-[[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]]
+## Runs that observed this SKU (5)
+[[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]]
 
-## Price history (4 observations)
+## Price history (5 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -32,6 +35,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-11-1237,2026-06-11,amazon,All India,-,,,0,0
 2026-06-12-0901,2026-06-12,amazon,All India,-,,,0,0
 2026-06-12-1243,2026-06-12,amazon,All India,-,,,0,0
+2026-06-13-0853,2026-06-13,amazon,All India,-,355,400,11.3,1
 ```
 
 ---

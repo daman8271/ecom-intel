@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-12
-observations: 40
+last_seen: 2026-06-13
+observations: 48
 latest_status: OOS
-below_days: 4
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-12) — ref ₹189 vs live ₹-
-- **Days below reference:** 4 of 5
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-13) — ref ₹189 vs live ₹-
+- **Days below reference:** 5 of 6
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]]
 
-## Ref-vs-live history (40 observations)
+## Ref-vs-live history (48 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -85,6 +85,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-12,flipkart,ABOVE,SVD,189,225,225,225,36,19.05,0,true
 2026-06-12,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
 2026-06-12,zepto,OOS,SVD,189,,,,,,0,false
+2026-06-13,amazon,BELOW,SVD,189,184,184,184,-5,-2.65,1,true
+2026-06-13,amazon-fresh,MATCH,SVD,189,189,178,199,0,0,43,true
+2026-06-13,amazon-now,MATCH,SVD,189,189,178,199,0,0,26,true
+2026-06-13,bigbasket,NOT_LISTED,SVD,189,,,,,,0,false
+2026-06-13,blinkit,NOT_LISTED,SVD,189,,,,,,0,false
+2026-06-13,flipkart,ABOVE,SVD,189,225,225,225,36,19.05,0,true
+2026-06-13,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
+2026-06-13,zepto,OOS,SVD,189,,,,,,0,false
 ```
 
 ---

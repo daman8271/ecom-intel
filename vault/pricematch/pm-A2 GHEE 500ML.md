@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-12
-observations: 40
+last_seen: 2026-06-13
+observations: 48
 latest_status: NOT_LISTED
-below_days: 5
+below_days: 6
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-a2-ghee-500-ml-bilona-method-traditionally-prepared-from-a2-c
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹709 vs live ₹-
-- **Days below reference:** 5 of 5
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-13) — ref ₹709 vs live ₹-
+- **Days below reference:** 6 of 6
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]]
 
-## Ref-vs-live history (40 observations)
+## Ref-vs-live history (48 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -85,6 +85,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-12,flipkart,BELOW,SVD,709,613,613,613,-96,-13.54,1,true
 2026-06-12,flipkart-minutes,NOT_LISTED,SVD,709,,,,,,0,false
 2026-06-12,zepto,NOT_LISTED,SVD,709,,,,,,0,false
+2026-06-13,amazon,OOS,SVD,709,,,,,,0,false
+2026-06-13,amazon-fresh,NOT_LISTED,SVD,709,,,,,,0,false
+2026-06-13,amazon-now,NOT_LISTED,SVD,709,,,,,,0,false
+2026-06-13,bigbasket,NOT_LISTED,SVD,709,,,,,,0,false
+2026-06-13,blinkit,NOT_LISTED,SVD,709,,,,,,0,false
+2026-06-13,flipkart,BELOW,SVD,709,586,586,586,-123,-17.35,1,true
+2026-06-13,flipkart-minutes,NOT_LISTED,SVD,709,,,,,,0,false
+2026-06-13,zepto,NOT_LISTED,SVD,709,,,,,,0,false
 ```
 
 ---

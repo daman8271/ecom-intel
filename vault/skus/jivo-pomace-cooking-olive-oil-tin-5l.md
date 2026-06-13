@@ -5,8 +5,8 @@ display_name: JIVO Pomace Cooking Olive Oil Tin (5000 ml)
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-11
-last_seen: 2026-06-12
-observations: 3
+last_seen: 2026-06-13
+observations: 4
 min_price: 4898
 max_price: 4898
 latest_price: 4898
@@ -27,16 +27,17 @@ Up: [[skus-index]]
 ## Available in cities
 [[Faridabad]]
 
-## Runs that observed this SKU (3)
-[[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]] · [[flipkart-minutes-2026-06-11-1215]]
+## Runs that observed this SKU (4)
+[[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]] · [[flipkart-minutes-2026-06-11-1215]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-11-1215,2026-06-11,flipkart-minutes,Faridabad,121011,4898,,,1
 2026-06-12-0832,2026-06-12,flipkart-minutes,Faridabad,121011,4898,,,1
 2026-06-12-1216,2026-06-12,flipkart-minutes,Faridabad,121011,4898,,,1
+2026-06-13-0832,2026-06-13,flipkart-minutes,Faridabad,121011,4898,,,1
 ```
 
 ---

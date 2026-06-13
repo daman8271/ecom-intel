@@ -5,8 +5,8 @@ display_name: JIVO Extra Light Olive Oil Plastic Bottle (1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-12
-last_seen: 2026-06-12
-observations: 2
+last_seen: 2026-06-13
+observations: 3
 min_price: 1499
 max_price: 1499
 latest_price: 1499
@@ -27,15 +27,16 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]]
 
-## Runs that observed this SKU (2)
-[[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]]
+## Runs that observed this SKU (3)
+[[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]]
 
-## Price history (2 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-12-0832,2026-06-12,flipkart-minutes,Delhi,110083,1499,,,0
 2026-06-12-1216,2026-06-12,flipkart-minutes,Delhi,110083,1499,,,0
+2026-06-13-0832,2026-06-13,flipkart-minutes,Delhi,110083,1499,,,0
 ```
 
 ---

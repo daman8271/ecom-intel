@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na
-display_name: Jivo Premium Cold Pressed Kachi Ghani Mustard Oil 5 Na
+display_name: "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5"
 platforms:
   - amazon-now
 first_seen: 2026-06-09
-last_seen: 2026-06-12
-observations: 23
+last_seen: 2026-06-13
+observations: 25
 min_price: 960
-max_price: 999
-latest_price: 985
+max_price: 1007
+latest_price: 999
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Premium Cold Pressed Kachi Ghani Mustard Oil 5 Na**
+**Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5**
 
 ## Sold on
-- [[amazon-now]] — latest ₹985 (21.2% off)
+- [[amazon-now]] — latest ₹999 (20.1% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Gurgaon]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (3)
-[[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
+## Runs that observed this SKU (4)
+[[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
 
-## Price history (23 observations)
+## Price history (25 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -57,6 +57,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-09-1226,2026-06-09,amazon-now,Pune,411028,985,1250,21.2,1
 2026-06-09-1226,2026-06-09,amazon-now,Pune,411045,985,1250,21.2,1
 2026-06-12-1025,2026-06-12,amazon-now,Bengaluru,560028,985,1250,21.2,1
+2026-06-13-1013,2026-06-13,amazon-now,Mumbai,400019,1007,1250,19.4,1
+2026-06-13-1013,2026-06-13,amazon-now,Pune,411036,999,1250,20.1,1
 ```
 
 ---

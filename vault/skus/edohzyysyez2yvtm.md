@@ -5,8 +5,8 @@ display_name: Jivo Extra Light 3 Litre Cooking Oil Olive Plastic Bottle (3 LTR)
 platforms:
   - flipkart
 first_seen: 2026-06-12
-last_seen: 2026-06-12
-observations: 2
+last_seen: 2026-06-13
+observations: 3
 min_price: 1501
 max_price: 1501
 latest_price: 1501
@@ -24,15 +24,16 @@ Up: [[skus-index]]
 ## Sold on
 - [[flipkart]] — latest ₹1501 (61.5% off)
 
-## Runs that observed this SKU (2)
-[[flipkart-2026-06-12-1218]] · [[flipkart-2026-06-12-0833]]
+## Runs that observed this SKU (3)
+[[flipkart-2026-06-13-0833]] · [[flipkart-2026-06-12-1218]] · [[flipkart-2026-06-12-0833]]
 
-## Price history (2 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-12-0833,2026-06-12,flipkart,All India,-,1501,3899,61.5,0
 2026-06-12-1218,2026-06-12,flipkart,All India,-,1501,3899,61.5,0
+2026-06-13-0833,2026-06-13,flipkart,All India,-,1501,3899,61.5,0
 ```
 
 ---

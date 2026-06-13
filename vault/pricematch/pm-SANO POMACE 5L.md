@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-12
-observations: 40
+last_seen: 2026-06-13
+observations: 48
 latest_status: NOT_LISTED
-below_days: 5
+below_days: 6
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-pomace-olive-oil-5l-ideal-for-frying-roasting-sauting-rich-ne
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-12) — ref ₹1969 vs live ₹-
-- **Days below reference:** 5 of 5
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-13) — ref ₹1969 vs live ₹-
+- **Days below reference:** 6 of 6
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]]
 
-## Ref-vs-live history (40 observations)
+## Ref-vs-live history (48 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -85,6 +85,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-12,flipkart,BELOW,SVD,1969,1813,1813,1813,-156,-7.92,1,true
 2026-06-12,flipkart-minutes,NOT_LISTED,SVD,1969,,,,,,0,false
 2026-06-12,zepto,NOT_LISTED,SVD,1969,,,,,,0,false
+2026-06-13,amazon,BELOW,SVD,1969,1912,1912,1912,-57,-2.89,1,true
+2026-06-13,amazon-fresh,NOT_LISTED,SVD,1969,,,,,,0,false
+2026-06-13,amazon-now,NOT_LISTED,SVD,1969,,,,,,0,false
+2026-06-13,bigbasket,NOT_LISTED,SVD,1969,,,,,,0,false
+2026-06-13,blinkit,NOT_LISTED,SVD,1969,,,,,,0,false
+2026-06-13,flipkart,BELOW,SVD,1969,1813,1813,1813,-156,-7.92,1,true
+2026-06-13,flipkart-minutes,NOT_LISTED,SVD,1969,,,,,,0,false
+2026-06-13,zepto,NOT_LISTED,SVD,1969,,,,,,0,false
 ```
 
 ---
