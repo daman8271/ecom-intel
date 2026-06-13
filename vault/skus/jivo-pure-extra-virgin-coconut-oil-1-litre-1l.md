@@ -7,7 +7,7 @@ platforms:
   - amazon-now
 first_seen: 2026-05-31
 last_seen: 2026-06-13
-observations: 1205
+observations: 1260
 min_price: 534
 max_price: 700
 latest_price: 539
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (48)
-[[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1407]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-11-1403]] · [[amazon-now-2026-06-11-1022]] · [[amazon-now-2026-06-10-1336]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-05-0520]] · [[amazon-now-2026-06-05-0441]] · [[amazon-now-2026-06-05-0131]] · [[amazon-now-2026-06-05-0112]] · [[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-06-13-0904]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-11-1248]] · [[amazon-fresh-2026-06-11-0910]] · [[amazon-fresh-2026-06-10-1219]] · [[amazon-fresh-2026-06-10-0911]] · [[amazon-fresh-2026-06-09-1210]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]] · [[amazon-fresh-2026-06-04-1417]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (50)
+[[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1407]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-11-1403]] · [[amazon-now-2026-06-11-1022]] · [[amazon-now-2026-06-10-1336]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-05-0520]] · [[amazon-now-2026-06-05-0441]] · [[amazon-now-2026-06-05-0131]] · [[amazon-now-2026-06-05-0112]] · [[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-06-13-1234]] · [[amazon-fresh-2026-06-13-0904]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-11-1248]] · [[amazon-fresh-2026-06-11-0910]] · [[amazon-fresh-2026-06-10-1219]] · [[amazon-fresh-2026-06-10-0911]] · [[amazon-fresh-2026-06-09-1210]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]] · [[amazon-fresh-2026-06-04-1417]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (1205 observations)
+## Price history (1260 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -1242,6 +1242,61 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-13-1013,2026-06-13,amazon-now,Noida,201304,539,700,23,1
 2026-06-13-1013,2026-06-13,amazon-now,Noida,201305,539,700,23,1
 2026-06-13-1013,2026-06-13,amazon-now,Noida,201307,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Bengaluru,560029,559,700,20.1,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110003,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110006,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110015,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110016,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110021,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110035,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110040,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110046,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110048,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110055,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110061,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110062,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110067,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110083,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110090,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110091,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Delhi,110092,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Faridabad,121001,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Ghaziabad,201001,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Gurgaon,122001,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Gurgaon,122051,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Mumbai,400019,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Mumbai,400601,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Noida,201304,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Noida,201305,539,700,23,1
+2026-06-13-1234,2026-06-13,amazon-fresh,Noida,201307,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Bengaluru,560029,559,700,20.1,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110003,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110006,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110015,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110016,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110021,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110035,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110040,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110046,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110048,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110055,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110061,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110062,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110067,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110083,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110090,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110091,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Delhi,110092,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Faridabad,121001,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Ghaziabad,201001,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Gurgaon,122001,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Gurgaon,122051,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Jaipur,302025,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Mumbai,400019,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Mumbai,400601,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Noida,201304,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Noida,201305,539,700,23,1
+2026-06-13-1346,2026-06-13,amazon-now,Noida,201307,539,700,23,1
 ```
 
 ---

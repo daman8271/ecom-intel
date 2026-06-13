@@ -6,7 +6,7 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-13
-observations: 19
+observations: 20
 min_price: 2181
 max_price: 2378
 latest_price: 2378
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹2378 (55.7% off)
 
-## Runs that observed this SKU (19)
-[[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (20)
+[[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (19 observations)
+## Price history (20 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -50,6 +50,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-12-0901,2026-06-12,amazon,All India,-,2189,5374,59.3,1
 2026-06-12-1243,2026-06-12,amazon,All India,-,2189,5374,59.3,1
 2026-06-13-0853,2026-06-13,amazon,All India,-,2378,5374,55.7,1
+2026-06-13-1224,2026-06-13,amazon,All India,-,2378,5374,55.7,1
 ```
 
 ---
