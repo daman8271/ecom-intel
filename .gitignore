@@ -37,6 +37,10 @@ platforms/bigbasket/listing_inpage.json
 # per-run verdicts + state-<date>.json ARE committed as the audit trail)
 reviews/guardian/*-latest.json
 
+# auto-heal reversible snapshots (result.json.bak copies — runtime + embed pricing,
+# same class as result.json; the verdict/log audit trail is kept elsewhere)
+backups/autoheal/
+
 # --- Obsidian: config + enabled plugins are tracked for fresh-clone bootstrap, but
 # keep machine-specific / runtime-credential state OUT of git ---
 vault/.obsidian/plugins/*/obsidian_askpass.sh

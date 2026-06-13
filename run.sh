@@ -73,6 +73,31 @@ PYEOF
 )"
 echo "[$RUN_ID] $P review verdict = $VERDICT"
 
+# ---- AUTO-HEAL (Amazon canonical-collision) — reactive, identity-only. -------
+# If an Amazon report is about to be HELD *solely* on the shared_price_dup
+# canonical-collision flag, wake Claude to merge stub canonicals into their real
+# product (rewrites identity only — NEVER a price), rebuild the report, and
+# re-review. On success the verdict flips SUSPECT->OK right here, so the clean
+# report ships on the normal OK path below and history.csv is appended clean.
+# Scoped + best-effort: a no-op for non-Amazon / non-SUSPECT / any other reason,
+# and can NEVER fail the run (set -e safe). See tools/autoheal_amazon.py + spec
+# docs/superpowers/specs/2026-06-13-amazon-canonical-autoheal-design.md.
+case "$P" in
+  amazon-now|amazon|amazon-fresh)
+    if [ "$VERDICT" = "SUSPECT" ] && [ -f "$DIR/tools/autoheal_amazon.py" ]; then
+      echo "[$RUN_ID] $P SUSPECT -> auto-heal adjudication (Amazon canonical-collision)"
+      python3 "$DIR/tools/autoheal_amazon.py" "$P" "$RUN_ID" >>"$DIR/logs/autoheal.log" 2>&1 || true
+      # re-read the verdict the auto-heal's fresh review may have rewritten to OK
+      VERDICT="$(python3 - "$DIR/reviews/${P}-${RUN_ID}.json" <<'PYEOF' 2>/dev/null || echo "$VERDICT"
+import json, sys
+print((json.load(open(sys.argv[1])).get("verdict") or "BROKEN").upper())
+PYEOF
+)"
+      echo "[$RUN_ID] $P post-auto-heal verdict = $VERDICT"
+    fi
+    ;;
+esac
+
 # ---- Vault: append this run's COMPLETE rows to data/<P>/history.csv. ----
 # Note generation is NOT done here: the whole Obsidian graph (complete run notes +
 # SKU/city/pincode hubs + MOCs + rollups + index) is rebuilt once per sweep by
