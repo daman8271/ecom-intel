@@ -3,7 +3,7 @@
 Operator manual. Auto-loads when you run `claude` in this directory.
 
 ## What this is
-Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for daily cron runs — **two full sweeps (12:00 + 15:00 IST; morning moved 10:00→12:00 per owner order 2026-06-06) plus an 18:00 guardian deep-dive** — with an automated end-of-run review, auto-heal guardian, and self-heal. Pitched to Jivo's head of e-commerce.
+Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for daily cron runs — **two full sweeps (12:00 + 15:00 IST; morning moved 10:00→12:00 per owner order 2026-06-06) plus an 18:00 guardian deep-dive** — with an automated end-of-run review, auto-heal guardian, self-heal, and an **Amazon canonical auto-heal** (Claude merges truncated-title stub SKUs, identity-only — LIVE 2026-06-13). Pitched to Jivo's head of e-commerce.
 
 ## Architecture (the rule)
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
@@ -25,7 +25,7 @@ ecom-intel/
 │   ├── amazon-fresh/      # 8th LIVE — logged-in (cookie transplant), i=freshstore, in cron
 │   ├── amazon-now/        # 9th LIVE — logged-in (own dedicated account), genuine Now via scrape.ctnow.js (almBrandId=ctnow); lock kept w/ fresh pending a concurrency test
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
-├── tools/                 # predict.py · review.py · guardian.py · guardian_daily.sh · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
+├── tools/                 # predict.py · review.py · guardian.py · guardian_daily.sh · autoheal_amazon.py · vault_note.py · vault_rollup.py · selfheal.sh · proxy.js
 ├── vault/                 # Obsidian memory: runs/ daily/ weekly/ monthly/ platforms/  (committed)
 ├── data/                  # <p>/history.csv — the future price-model training table (committed)
 ├── reviews/  baselines/   # per-run verdicts + rolling expected metrics (committed)
@@ -61,7 +61,7 @@ ls output/                  # the Excel
 | amazon-now | ✅ LIVE | logged-in on its OWN dedicated account; **genuine Amazon Now** via `scrape.ctnow.js` (`/s?k=jivo&almBrandId=ctnow`, real "in 10 min"/overnight/tomorrow speed tiers). The old `i=nowstore` surface (legacy Prime-Now/marketplace SEARCH, 0 real ETAs) is FROZEN — see ROOTCAUSE-AmazonNow-2026-06-01.md. Now's account is now distinct from Fresh's (proven by cookie compare), so they CAN in principle run in parallel, but the shared .amazon-account.lock is KEPT until a supervised concurrent run proves non-interference. Cron PAUSED during rebuild; rebuilt + scale-validated 2026-06-03 (65-pincode representative run, 42 serviceable, badge-gated, no marketplace contamination). |
 
 ## Pipeline (run.sh, per platform)
-`scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → `tools/vault_note.py` (+ rollups)
+`scrape.js` → `build_excel.py` → `tools/predict.py` (Predictions sheet) → `tools/review.py` → *(Amazon only: if held SOLELY on `shared_price_dup`, `tools/autoheal_amazon.py` merges truncated-title stub SKUs identity-only and re-reviews → SUSPECT can flip OK — see below)* → `tools/vault_note.py` (+ rollups)
 → **Telegram delivery (VERDICT-GATED: only verdict==OK ships to stakeholders; BROKEN/SUSPECT is held back + the owner is alerted)** → git commit+push. Every step after the scrape is best-effort and
 never aborts the run. Excel/logs/result.json are gitignored; the Markdown vault, `data/`
 history, and review verdicts/baselines are what get committed each run. In `run_all.sh` each
@@ -116,6 +116,29 @@ and touches only "# ecom-intel"-tagged lines.
   11-class audit over every platform, writes `reviews/guardian/health-<date>.md`, and
   Telegram-alerts only on a NEW bug class vs yesterday. Owns the standing diagnosis +
   trend; the inline hook owns the self-heal.
+
+## Amazon canonical auto-heal (tools/autoheal_amazon.py) — LIVE 2026-06-13 (cad3a0ec)
+Reactive, **identity-only** fix for the recurring Amazon `shared_price_dup` HOLD. Amazon
+returns a TRUNCATED product title for a few pincode cards, so the SAME listing gets a second,
+shorter `canonical` (a "stub", e.g. `…mustard-d-na` vs the full
+`…mustard-daily-cooking-oil-1-litre-1l`); same ASIN + same `(sale,mrp)` → the gate reads it as
+"distinct products, one price" = fabrication → SUSPECT → the whole report is held. (It also
+silently inflates `unique_skus`.) The hook lives in `run.sh`, right after the verdict and
+**before** the delivery gate: when an **Amazon** report is about to be held *solely* on
+`shared_price_dup` and **nothing hard-fails**, it wakes Claude (`claude -p`, model chain
+fable-5 → CLI default → haiku, so a model outage can't disable it) to decide, per colliding
+pair, **same product** (merge) / **distinct** / **suspect**. It merges each stub into its
+survivor in `result.json` (rewrites `canonical`/`item` ONLY — **never** `sale`/`mrp`/`discount`;
+a priced-multiset **tripwire + snapshot rollback** enforce that), rebuilds the xlsx, and
+re-runs `review.py` so the verdict flips **SUSPECT→OK** on the normal path (history.csv then
+appends clean). **Fail-safe:** Claude unreachable / merges nothing → the report stays HELD,
+exactly as today; one Telegram note per action; audit in `logs/autoheal.log`; reversible
+snapshots in `backups/autoheal/` (gitignored). **Scoped:** Amazon family + the
+`shared_price_dup` class only — other failure types and other platforms are untouched. Disable
+by removing the script (the `run.sh` hook is a no-op without it); override model via
+`AUTOHEAL_MODEL`. Tests `tools/tests/test_autoheal_amazon.py`; spec
+`docs/superpowers/specs/2026-06-13-amazon-canonical-autoheal-design.md`.
+
 **amazon-now and amazon-fresh now use SEPARATE dedicated Amazon accounts** (as of
 2026-06-02; proven by comparing the storageState identity cookies — Now greets "Kanhaiya"
 on `ubid-acbin 520-…`, Fresh on `259-…`; previously they shared ONE account, preserved as
@@ -149,7 +172,8 @@ decide BROKEN. **Hardened 2026-06-05 (4433756 + 439595e)** with four new checks:
   plus an absolute **₹6000/L oil ceiling** (catches name-hidden combo ₹/L inflation;
   gated to oil SKUs so a tiny saffron pack's huge nominal ₹/L isn't false-flagged).
 - **shared_price_dup** — a discounted (sale,mrp) pair shared by several distinct SKUs
-  (catches cross-sell / fabricated prices).
+  (catches cross-sell / fabricated prices). For the **Amazon family**, a SUSPECT triggered
+  *solely* by this check is now auto-healed — see **Amazon canonical auto-heal** above.
 
 Baselines now only seed on a clean run — **SUSPECT/BROKEN runs no longer update the
 rolling baseline** (the sole exception is a SUSPECT that is staleness-only, which still

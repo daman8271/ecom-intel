@@ -112,7 +112,7 @@ ls output/                             # the generated Excel reports
 | `data/<p>/history.csv` | Machine-readable **append-only history**, one row per (run, SKU, location); feeds a future price-intelligence model | tracked |
 | `reviews/` | Per-run automated **review verdicts** (`<platform>-<RUN_ID>.json`) | tracked |
 | `baselines/` | Rolling **expected** per-platform stats (updated from OK runs; used to detect collapse) | tracked |
-| `tools/` | Cross-platform pipeline steps: `review.py`, `vault_note.py`, `vault_rollup.py`, `selfheal.sh`, `proxy.js` | tracked |
+| `tools/` | Cross-platform pipeline steps: `review.py`, `autoheal_amazon.py`, `vault_note.py`, `vault_rollup.py`, `selfheal.sh`, `proxy.js` | tracked |
 
 ---
 
@@ -126,6 +126,7 @@ scrape.js (Node+Playwright)      WIRED  — deterministic, no LLM → result.jso
  → build_excel.py (openpyxl)     WIRED  — result.json → branded 6-sheet Excel
  → tools/predict.py              WIRED  — appends a "Predictions" sheet (reads data/ history)
  → tools/review.py               WIRED  — sanity-check run → reviews/<run>.json verdict
+ → tools/autoheal_amazon.py      WIRED  — Amazon only: if held SOLELY on shared_price_dup, Claude merges truncated-title stub SKUs (identity-only) & re-reviews → SUSPECT can flip OK
  → tools/vault_note.py --csv-only WIRED — append data/<p>/history.csv (run notes via rollup)
  → Telegram delivery             WIRED  — VERDICT-GATED: only OK ships the report+Excel; BROKEN/SUSPECT held back + owner alerted
  → git add vault data reviews baselines → commit → push   WIRED (flock-serialized)
@@ -190,6 +191,22 @@ the older `total_rows < 20` / `> 15h`-stale variant that can invoke **Claude Cod
 -p`) to apply a *safe* selector/parsing fix only; on a captcha / IP block / login wall it
 writes `logs/<p>-DIAGNOSIS.md` and stops. **All are forbidden from ever putting an LLM inside
 the scrape loop.**
+
+**Amazon canonical auto-heal** (`tools/autoheal_amazon.py`, **LIVE 2026-06-13**) is a narrow,
+reactive repair for the one chronic Amazon false-hold. Amazon occasionally returns a *truncated*
+product title for a few pincode cards, so the same listing gets a second, shorter `canonical`
+(a "stub", e.g. `…mustard-d-na` vs the full `…mustard-daily-cooking-oil-1-litre-1l`); same ASIN
++ same `(sale,mrp)` makes `shared_price_dup` read it as fabrication → SUSPECT → the whole report
+held. When an **Amazon** report is about to be held *solely* on `shared_price_dup` (no
+hard-fail), the hook in `run.sh` wakes Claude (`claude -p`, model fallback chain fable-5 → CLI
+default → haiku) to merge each stub into its real product — **identity only**, rewriting
+`canonical`/`item` and **never** a price (a priced-multiset *tripwire* + snapshot rollback
+enforce this) — then rebuilds the report and re-reviews so the verdict flips SUSPECT→OK on the
+normal delivery path. Like the review judge, this LLM call is **outside the scrape loop** and
+**failure-proof**: if Claude is unreachable or finds nothing to merge, the report simply stays
+held (today's behaviour). Owner is pinged on Telegram per action; reversible snapshots in
+`backups/autoheal/`. Scoped to the Amazon family + the `shared_price_dup` class only. Spec:
+`docs/superpowers/specs/2026-06-13-amazon-canonical-autoheal-design.md`.
 
 ---
 

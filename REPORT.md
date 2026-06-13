@@ -91,6 +91,11 @@ to a captcha on the datacenter IP. See `docs/PROXY.md`.
   **09:00 / 12:00 / 16:00**, then runs the self-heal sweep at the end of each window
   (flags any platform <20 rows / stale and re-runs once / escalates to Telegram).
   `amazon-now` runs too, serialized with `amazon-fresh` via the shared lock (see above).
+- **Amazon canonical auto-heal (LIVE 2026-06-13):** the recurring Amazon `shared_price_dup`
+  hold — a *truncated* product title minting a duplicate "stub" SKU at the same ASIN/price — is
+  now auto-fixed in `run.sh`: Claude merges each stub into its real product (identity-only,
+  **never** prices) and re-reviews, so the report ships instead of being held. Fail-safe
+  (Claude unreachable → stays held). See `tools/autoheal_amazon.py` + CLAUDE.md.
 - `git` is the backup. After any VPS wipe: clone, `npm install` + `npx playwright
   install chromium` per platform, recreate `secrets.env` + re-import Amazon cookies,
   `./setup_cron.sh`.

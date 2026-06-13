@@ -43,6 +43,7 @@ only at the edges.**
 | **Auto-heal guardian** — combine review.py + an independent 11-bug-class deep-check; quarantine + bounded self-heal + alert | inline per scrape in `run_all.sh` → `tools/guardian.py --heal`; daily deep-dive `tools/guardian_daily.sh` | WIRED (2026-06-05) |
 | **Self-heal backstop** — diagnose a broken scraper and, if safe, repair it | after the serial sweep, via `run_all.sh` → `tools/selfheal.sh` (+ `healthcheck.sh`) | WIRED |
 | **Automated review** — deterministic checks + single *optional* tiny Haiku call on the finished `result.json` | in `run.sh`, after build/predict, via `tools/review.py` | WIRED |
+| **Amazon canonical auto-heal** — adjudicate truncated-title stub SKUs vs real products; merge identity-only (never prices) & re-review so a `shared_price_dup`-only SUSPECT can flip OK | in `run.sh`, after review (Amazon only), via `tools/autoheal_amazon.py` (`claude -p`, model fallback chain) | WIRED (2026-06-13) |
 | **Narrative / vault notes** — human-readable rollups | in `run.sh` / post-sweep rollup | deterministic, **no LLM** (`tools/vault_*`) — WIRED |
 
 Note: even the **review** and **vault** steps are LLM-light. `tools/review.py` does
@@ -195,6 +196,7 @@ cron (IST: fire 08:30 → slot 12:00, fire 11:30 → slot 15:00, 18:00 guardian 
        │    ├─ python3 build_excel.py     → Jivo-*.xlsx → output/
        │    ├─ tools/predict.py           → append "Predictions" sheet to the workbook
        │    ├─ tools/review.py            → reviews/<run>.json verdict (exit 2 = BROKEN)
+       │    ├─ tools/autoheal_amazon.py   → Amazon only: shared_price_dup-only SUSPECT → Claude merges stub SKUs (identity-only) → re-review → may flip OK
        │    ├─ tools/vault_note.py --csv-only → append data/<p>/history.csv
        │    ├─ Telegram delivery          → VERDICT-GATED: only OK ships; else owner alert
        │    └─ git add vault data reviews baselines → commit → push (flock-serialized)
@@ -234,6 +236,15 @@ consecutive, **blinkit last** (slowest — its patient per-pincode store re-reso
   (row-padding-on-block + undetected blocks), `per_litre_sanity` (combo-volume per-litre
   inflation + an absolute ₹6000/L oil ceiling), and `shared_price_dup` (cross-sell/fabricated
   prices). The optional single Haiku call is the only LLM touch and is failure-proof.
+- **Amazon canonical auto-heal** (`tools/autoheal_amazon.py`, 2026-06-13) is a reactive,
+  identity-only repair wired into `run.sh` right after review (Amazon family only). When a
+  report is about to be held *solely* on `shared_price_dup`, it wakes Claude (`claude -p`,
+  model fallback chain) to adjudicate truncated-title **stub** canonicals vs real products,
+  merges each stub into its survivor (rewrites `canonical`/`item` ONLY — **never** a price; a
+  priced-multiset tripwire + snapshot rollback enforce it), rebuilds the report, and re-reviews
+  so the verdict flips SUSPECT→OK. Fail-safe: Claude unreachable / nothing to merge → stays
+  held; one Telegram note per action. Spec
+  `docs/superpowers/specs/2026-06-13-amazon-canonical-autoheal-design.md`.
 - **Auto-heal guardian** (`tools/guardian.py`, 2026-06-05) is the inline second opinion:
   it CALLS review.py for the shared checks AND runs an independent **11-bug-class deep-check**,
   takes the worst verdict, and on BROKEN quarantines (keeps `result.last-good.json`, nothing
