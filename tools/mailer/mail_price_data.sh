@@ -33,6 +33,35 @@ alert() {
     -d text="⚠️ price-data mailer ($SLOT $D): $1" >/dev/null || true
 }
 
+# Ensure the WhatsApp gateway is CONNECTED before posting. The twice-daily
+# failure mode (Jun 12-14) was the gateway being down at cron time: a dead
+# :3001 returns an empty curl body, which fails the '"success":true' check and
+# flags every file as failed. Health-check it; if it's not connected, (re)start
+# the systemd --user service and wait up to 30s. Cron/tmux has a bare env, so we
+# set XDG_RUNTIME_DIR / DBUS explicitly to reach root's `systemctl --user`.
+# Best-effort: if it still won't come up we fall through and the WhatsApp block
+# fails-and-alerts as before (the email already went out).
+GW_HEALTH="http://127.0.0.1:3001/health"
+ensure_gateway() {
+  export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/0}"
+  export DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS:-unix:path=/run/user/0/bus}"
+  if curl -s --max-time 5 "$GW_HEALTH" 2>/dev/null | grep -q '"connected"'; then
+    echo "gateway: already connected"; return 0
+  fi
+  echo "gateway: not connected at $SLOT run — starting hermes-gateway-wa-test.service"
+  systemctl --user reset-failed hermes-gateway-wa-test.service 2>/dev/null || true
+  systemctl --user start       hermes-gateway-wa-test.service 2>/dev/null || true
+  for i in $(seq 1 30); do
+    if curl -s --max-time 3 "$GW_HEALTH" 2>/dev/null | grep -q '"connected"'; then
+      echo "gateway: connected after ${i}s"; return 0
+    fi
+    sleep 1
+  done
+  echo "WARN: gateway still not connected after 30s — WhatsApp posts will likely fail"
+  alert "WhatsApp gateway down at $SLOT run and would not start — group post likely failed"
+  return 1
+}
+
 case "$SLOT" in
   am) MAX_WAIT=10800 ;;
   pm) MAX_WAIT=1200 ;;
@@ -89,10 +118,12 @@ python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
   || { echo "ERROR: send failed"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
 
 # Also post the same files to the WhatsApp "Ecom team" group via the Hermes
-# gateway bridge (127.0.0.1:3001 — the live WhatsApp pipe, owner-approved; the
-# old Baileys dummy-number session is dead): one header text, then each report
+# gateway bridge (127.0.0.1:3001 — the live WhatsApp pipe, owner-approved;
+# wa-test profile, dummy number 88990 11758): one header text, then each report
 # as its own document. Best-effort: a WhatsApp failure never undoes the
-# already-sent email — it just alerts the owner.
+# already-sent email — it just alerts the owner. Make sure the gateway is up
+# first so a dead :3001 at cron time doesn't silently drop every file.
+ensure_gateway || true
 WA_GROUP="120363047864912511@g.us"
 WA_FAIL=0
 R=$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send \
