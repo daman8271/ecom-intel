@@ -4,7 +4,7 @@ platform: zepto
 kind: marketplace
 shape: per-pincode
 risk: low
-runs: 35
+runs: 36
 skus_tracked: 26
 tags:
   - type/platform-hub
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **zepto**. zepto scraper.
 
 - **Type:** marketplace · **Shape:** per-pincode · **Block risk:** low
-- **Runs captured:** 35 · **SKUs tracked:** 26
+- **Runs captured:** 36 · **SKUs tracked:** 26
 
 ## SKUs on zepto (26)
 [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-combo-1l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-1l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]]
 
-## Runs (35) — newest first
+## Runs (36) — newest first
 
 <!-- runs:start -->
+- [[zepto-2026-06-14-1218]] — 2026-06-14 · verdict OK <!-- run -->
 - [[zepto-2026-06-14-0841]] — 2026-06-14 · verdict OK <!-- run -->
 - [[zepto-2026-06-13-1214]] — 2026-06-13 · verdict SUSPECT <!-- run -->
 - [[zepto-2026-06-13-0841]] — 2026-06-13 · verdict OK <!-- run -->

@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 3
-observations: 42
+observations: 44
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Kanpur (3)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]]
 
-## Observations (42 rows)
+## Observations (44 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -52,6 +52,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-11-1215,2026-06-11,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,208001,241,375,35,1
 2026-06-12-0832,2026-06-12,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,208001,241,375,35,1
 2026-06-14-0832,2026-06-14,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,208001,272,375,27,1
+2026-06-14-1208,2026-06-14,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,208001,238,375,36,1
 2026-05-21-1305,2026-05-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,173,255,32.2,1
 2026-05-22-0900,2026-05-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,173,255,32.2,1
 2026-05-22-1600,2026-05-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,174,255,31.8,1
@@ -69,6 +70,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-31-1200,2026-05-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,187,255,26,1
 2026-06-11-1215,2026-06-11,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,186,255,27,1
 2026-06-12-0832,2026-06-12,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,186,255,27,1
+2026-06-14-1208,2026-06-14,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,185,255,27,1
 2026-06-14-0832,2026-06-14,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,208001,737,1080,31,1
 ```
 

@@ -14,7 +14,7 @@ platforms:
 first_seen: 2026-06-08
 last_seen: 2026-06-14
 observations: 56
-latest_status: ABOVE
+latest_status: BELOW
 below_days: 7
 tags:
   - type/pricematch-sku
@@ -37,7 +37,7 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-14) — ref ₹1249 vs live ₹1617
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-14) — ref ₹1249 vs live ₹1193
 - **Days below reference:** 7 of 7
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
 
@@ -100,7 +100,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-14,blinkit,BELOW,SVD,1249,1193,1193,1493,-56,-4.48,57,true
 2026-06-14,flipkart,BELOW,SVD,1249,1191,1191,1191,-58,-4.64,1,true
 2026-06-14,flipkart-minutes,NOT_LISTED,SVD,1249,,,,,,0,false
-2026-06-14,zepto,ABOVE,SVD,1249,1617,1193,1617,368,29.46,12,true
+2026-06-14,zepto,BELOW,SVD,1249,1193,1193,1617,-56,-4.48,19,true
 ```
 
 ---
