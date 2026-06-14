@@ -2,14 +2,6 @@
   "platform": "flipkart-minutes",
   "samples": [
     {
-      "run_id": "2026-06-09-1132",
-      "captured_at": "2026-06-09T06:03:09.919Z",
-      "rows": 269,
-      "unique_skus": 9,
-      "pincodes_with_jivo": 88,
-      "priced_rows": 166
-    },
-    {
       "run_id": "2026-06-10-0832",
       "captured_at": "2026-06-10T03:03:07.808Z",
       "rows": 260,
@@ -80,7 +72,15 @@
       "unique_skus": 11,
       "pincodes_with_jivo": 86,
       "priced_rows": 165
+    },
+    {
+      "run_id": "2026-06-14-1208",
+      "captured_at": "2026-06-14T06:40:08.129Z",
+      "rows": 264,
+      "unique_skus": 11,
+      "pincodes_with_jivo": 87,
+      "priced_rows": 170
     }
   ],
-  "updated_at": "2026-06-14T03:03:25.221697+00:00"
+  "updated_at": "2026-06-14T06:40:19.703531+00:00"
 }
