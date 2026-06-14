@@ -19,7 +19,7 @@ tags:
 
 # flipkart-minutes — run 2026-06-13-1205
 
-Up: [[flipkart-minutes]] · Day: [[2026-06-13]] · Week: [[2026-W24]] · Month: [[2026-06]] · Prev: [[flipkart-minutes-2026-06-13-0832]]
+Up: [[flipkart-minutes]] · Day: [[2026-06-13]] · Week: [[2026-W24]] · Month: [[2026-06]] · Prev: [[flipkart-minutes-2026-06-13-0832]] · Next: [[flipkart-minutes-2026-06-14-0832]]
 
 - **Verdict:** OK
 - **Captured:** 2026-06-13 12:05 IST
@@ -33,7 +33,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-06-13]] · Week: [[2026-W24]] · Month: 
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹997 (20.0% off) · in 26 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L) — ₹180 (29.0% off) · in 50 pincodes
 - [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L) — ₹1903 (32.0% off) · in 43 pincodes
-- [[jivo-extra-light-olive-oil-plastic-bottle-1l]] — JIVO Extra Light Olive Oil Plastic Bottle (1 L) — ₹1499 · in 1 pincodes
+- [[jivo-extra-light-olive-oil-plastic-bottle-1l]] — Jivo Extra Light Olive Oil Plastic Bottle 1l — ₹1499 · in 1 pincodes
 - [[jivo-mineral-water-1l]] — JIVO Mineral Water (1000 ml) — ₹24 (20.0% off) · in 33 pincodes
 - [[jivo-pomace-cooking-olive-oil-tin-5l]] — JIVO Pomace Cooking Olive Oil Tin (5000 ml) — ₹4898 · in 1 pincodes
 - [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L) — ₹379 (63.0% off) · in 27 pincodes

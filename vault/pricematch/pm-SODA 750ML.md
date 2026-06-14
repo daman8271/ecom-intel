@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-13
-observations: 48
+last_seen: 2026-06-14
+observations: 56
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-extra-fizzy-soda-750-ml-soda-750ml]]
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-13) — ref ₹15 vs live ₹-
-- **Days below reference:** 0 of 6
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-14) — ref ₹15 vs live ₹-
+- **Days below reference:** 0 of 7
 
-## Ref-vs-live history (48 observations)
+## Ref-vs-live history (56 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -92,6 +92,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-13,flipkart,NOT_LISTED,SVD,15,,,,,,0,false
 2026-06-13,flipkart-minutes,NOT_LISTED,SVD,15,,,,,,0,false
 2026-06-13,zepto,NOT_LISTED,SVD,15,,,,,,0,false
+2026-06-14,amazon,OOS,SVD,15,,,,,,0,false
+2026-06-14,amazon-fresh,NOT_LISTED,SVD,15,,,,,,0,false
+2026-06-14,amazon-now,NOT_LISTED,SVD,15,,,,,,0,false
+2026-06-14,bigbasket,NOT_LISTED,SVD,15,,,,,,0,false
+2026-06-14,blinkit,NOT_LISTED,SVD,15,,,,,,0,false
+2026-06-14,flipkart,NOT_LISTED,SVD,15,,,,,,0,false
+2026-06-14,flipkart-minutes,NOT_LISTED,SVD,15,,,,,,0,false
+2026-06-14,zepto,NOT_LISTED,SVD,15,,,,,,0,false
 ```
 
 ---

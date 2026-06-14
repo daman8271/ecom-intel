@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-13
-observations: 48
+last_seen: 2026-06-14
+observations: 56
 latest_status: ABOVE
-below_days: 6
+below_days: 7
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-13) — ref ₹849 vs live ₹1045
-- **Days below reference:** 6 of 6
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-14) — ref ₹849 vs live ₹1045
+- **Days below reference:** 7 of 7
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
 
-## Ref-vs-live history (48 observations)
+## Ref-vs-live history (56 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -93,6 +93,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-13,flipkart,BELOW,SVD,849,789,789,789,-60,-7.07,1,true
 2026-06-13,flipkart-minutes,NOT_LISTED,SVD,849,,,,,,0,false
 2026-06-13,zepto,ABOVE,SVD,849,1045,988,1082,196,23.09,0,true
+2026-06-14,amazon,MATCH,SVD,849,849,849,849,0,0,0,true
+2026-06-14,amazon-fresh,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-14,amazon-now,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-14,bigbasket,ABOVE,SVD,849,1099,1099,1099,250,29.45,0,true
+2026-06-14,blinkit,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-14,flipkart,BELOW,SVD,849,752,752,752,-97,-11.43,1,true
+2026-06-14,flipkart-minutes,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-14,zepto,ABOVE,SVD,849,1045,977,1421,196,23.09,0,true
 ```
 
 ---

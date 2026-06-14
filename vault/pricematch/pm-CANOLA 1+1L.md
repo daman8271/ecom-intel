@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-13
-observations: 48
+last_seen: 2026-06-14
+observations: 56
 latest_status: BELOW
-below_days: 6
+below_days: 7
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-11-litres-cooking-oil-for-dail
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-13) — ref ₹509 vs live ₹485
-- **Days below reference:** 6 of 6
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-14) — ref ₹509 vs live ₹485
+- **Days below reference:** 7 of 7
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
 
-## Ref-vs-live history (48 observations)
+## Ref-vs-live history (56 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -93,6 +93,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-13,flipkart,ABOVE,SVD,509,546,546,546,37,7.27,0,true
 2026-06-13,flipkart-minutes,ABOVE,SVD,509,575,575,575,66,12.97,0,true
 2026-06-13,zepto,BELOW,SVD,509,485,485,520,-24,-4.72,15,true
+2026-06-14,amazon,MATCH,SVD,509,509,509,509,0,0,0,true
+2026-06-14,amazon-fresh,BELOW,SVD,509,464,464,509,-45,-8.84,16,true
+2026-06-14,amazon-now,BELOW,SVD,509,464,464,509,-45,-8.84,16,true
+2026-06-14,bigbasket,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-14,blinkit,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-14,flipkart,ABOVE,SVD,509,521,521,521,12,2.36,0,true
+2026-06-14,flipkart-minutes,OOS,SVD,509,,,,,,0,false
+2026-06-14,zepto,BELOW,SVD,509,485,485,520,-24,-4.72,35,true
 ```
 
 ---

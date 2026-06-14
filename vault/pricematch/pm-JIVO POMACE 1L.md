@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-13
-observations: 48
+last_seen: 2026-06-14
+observations: 56
 latest_status: BELOW
-below_days: 6
+below_days: 7
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-ri
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-13) — ref ₹429 vs live ₹379
-- **Days below reference:** 6 of 6
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-14) — ref ₹429 vs live ₹379
+- **Days below reference:** 7 of 7
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
 
-## Ref-vs-live history (48 observations)
+## Ref-vs-live history (56 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -93,6 +93,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-13,flipkart,ABOVE,SVD,429,563,563,563,134,31.24,0,true
 2026-06-13,flipkart-minutes,BELOW,SVD,429,379,379,394,-50,-11.66,8,true
 2026-06-13,zepto,BELOW,SVD,429,379,379,379,-50,-11.66,19,true
+2026-06-14,amazon,BELOW,SVD,429,379,379,379,-50,-11.66,1,true
+2026-06-14,amazon-fresh,BELOW,SVD,429,379,379,387,-50,-11.66,99,true
+2026-06-14,amazon-now,BELOW,SVD,429,379,379,387,-50,-11.66,85,true
+2026-06-14,bigbasket,ABOVE,SVD,429,549.68,549.68,549.68,120.68,28.13,0,true
+2026-06-14,blinkit,BELOW,SVD,429,380,379,485,-49,-11.42,125,true
+2026-06-14,flipkart,ABOVE,SVD,429,563,563,563,134,31.24,0,true
+2026-06-14,flipkart-minutes,BELOW,SVD,429,379,379,398,-50,-11.66,7,true
+2026-06-14,zepto,BELOW,SVD,429,379,379,379,-50,-11.66,53,true
 ```
 
 ---

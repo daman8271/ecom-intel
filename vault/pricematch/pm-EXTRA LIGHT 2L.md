@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-13
-observations: 48
+last_seen: 2026-06-14
+observations: 56
 latest_status: BELOW
-below_days: 6
+below_days: 7
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-13) — ref ₹1189 vs live ₹1141
-- **Days below reference:** 6 of 6
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-14) — ref ₹1189 vs live ₹1141
+- **Days below reference:** 7 of 7
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
 
-## Ref-vs-live history (48 observations)
+## Ref-vs-live history (56 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -93,6 +93,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-13,flipkart,BELOW,SVD,1189,948,948,948,-241,-20.27,1,true
 2026-06-13,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2084,714,60.05,0,true
 2026-06-13,zepto,BELOW,SVD,1189,1141,1139,1195,-48,-4.04,16,true
+2026-06-14,amazon,BELOW,SVD,1189,1141,1141,1141,-48,-4.04,1,true
+2026-06-14,amazon-fresh,BELOW,SVD,1189,1139,1010,1229,-50,-4.21,91,true
+2026-06-14,amazon-now,BELOW,SVD,1189,1139,1139,1229,-50,-4.21,73,true
+2026-06-14,bigbasket,ABOVE,SVD,1189,1343,1343,1343,154,12.95,0,true
+2026-06-14,blinkit,BELOW,SVD,1189,1139,1139,1340,-50,-4.21,82,true
+2026-06-14,flipkart,BELOW,SVD,1189,904,904,904,-285,-23.97,1,true
+2026-06-14,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2105,714,60.05,0,true
+2026-06-14,zepto,BELOW,SVD,1189,1141,1139,1195,-48,-4.04,49,true
 ```
 
 ---

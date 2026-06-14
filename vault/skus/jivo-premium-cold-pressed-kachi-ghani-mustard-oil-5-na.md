@@ -5,11 +5,11 @@ display_name: "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5"
 platforms:
   - amazon-now
 first_seen: 2026-06-09
-last_seen: 2026-06-13
-observations: 41
+last_seen: 2026-06-14
+observations: 56
 min_price: 960
 max_price: 1049
-latest_price: 985
+latest_price: 999
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5**
 
 ## Sold on
-- [[amazon-now]] — latest ₹985 (21.2% off)
+- [[amazon-now]] — latest ₹999 (20.1% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Mumbai]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Kolkata]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (5)
-[[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
+## Runs that observed this SKU (6)
+[[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
 
-## Price history (41 observations)
+## Price history (56 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -75,6 +75,21 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-13-1346,2026-06-13,amazon-now,Pune,411011,985,1250,21.2,1
 2026-06-13-1346,2026-06-13,amazon-now,Pune,411035,985,1250,21.2,1
 2026-06-13-1346,2026-06-13,amazon-now,Pune,411045,985,1250,21.2,1
+2026-06-14-1018,2026-06-14,amazon-now,Bengaluru,560006,985,1250,21.2,1
+2026-06-14-1018,2026-06-14,amazon-now,Bengaluru,560028,985,1250,21.2,1
+2026-06-14-1018,2026-06-14,amazon-now,Bengaluru,560052,985,1250,21.2,1
+2026-06-14-1018,2026-06-14,amazon-now,Delhi,110003,1045,1250,16.4,1
+2026-06-14-1018,2026-06-14,amazon-now,Delhi,110018,996,1250,20.3,1
+2026-06-14-1018,2026-06-14,amazon-now,Delhi,110033,996,1250,20.3,1
+2026-06-14-1018,2026-06-14,amazon-now,Delhi,110035,996,1250,20.3,1
+2026-06-14-1018,2026-06-14,amazon-now,Delhi,110055,996,1250,20.3,1
+2026-06-14-1018,2026-06-14,amazon-now,Kolkata,700107,1049,1250,16.1,1
+2026-06-14-1018,2026-06-14,amazon-now,Mumbai,400611,1007,1250,19.4,1
+2026-06-14-1018,2026-06-14,amazon-now,Pune,411014,999,1250,20.1,1
+2026-06-14-1018,2026-06-14,amazon-now,Pune,411021,999,1250,20.1,1
+2026-06-14-1018,2026-06-14,amazon-now,Pune,411030,999,1250,20.1,1
+2026-06-14-1018,2026-06-14,amazon-now,Pune,411036,999,1250,20.1,1
+2026-06-14-1018,2026-06-14,amazon-now,Pune,411040,999,1250,20.1,1
 ```
 
 ---

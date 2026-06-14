@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-13
-observations: 48
+last_seen: 2026-06-14
+observations: 56
 latest_status: BELOW
-below_days: 6
+below_days: 7
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-13) — ref ₹209 vs live ₹181
-- **Days below reference:** 6 of 6
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-14) — ref ₹209 vs live ₹181
+- **Days below reference:** 7 of 7
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
 
-## Ref-vs-live history (48 observations)
+## Ref-vs-live history (56 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -93,6 +93,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-13,flipkart,OOS,SVD,209,,,,,,0,false
 2026-06-13,flipkart-minutes,BELOW,SVD,209,180,180,183,-29,-13.88,41,true
 2026-06-13,zepto,BELOW,SVD,209,181,179,181,-28,-13.4,28,true
+2026-06-14,amazon,BELOW,SVD,209,176,176,176,-33,-15.79,1,true
+2026-06-14,amazon-fresh,BELOW,SVD,209,176,173,209,-33,-15.79,85,true
+2026-06-14,amazon-now,BELOW,SVD,209,176,173,184,-33,-15.79,73,true
+2026-06-14,bigbasket,OOS,SVD,209,,,,,,0,false
+2026-06-14,blinkit,BELOW,SVD,209,169,164,169,-40,-19.14,15,true
+2026-06-14,flipkart,OOS,SVD,209,,,,,,0,false
+2026-06-14,flipkart-minutes,BELOW,SVD,209,180,180,185,-29,-13.88,45,true
+2026-06-14,zepto,BELOW,SVD,209,181,179,181,-28,-13.4,64,true
 ```
 
 ---
