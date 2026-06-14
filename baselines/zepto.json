@@ -10,14 +10,6 @@
       "priced_rows": 450
     },
     {
-      "run_id": "2026-06-08-1144",
-      "captured_at": "2026-06-08T06:23:07.372Z",
-      "rows": 972,
-      "unique_skus": 23,
-      "pincodes_with_jivo": 56,
-      "priced_rows": 450
-    },
-    {
       "run_id": "2026-06-09-0844",
       "captured_at": "2026-06-09T03:25:52.636Z",
       "rows": 1336,
@@ -80,7 +72,15 @@
       "unique_skus": 23,
       "pincodes_with_jivo": 49,
       "priced_rows": 415
+    },
+    {
+      "run_id": "2026-06-14-0841",
+      "captured_at": "2026-06-14T03:28:32.706Z",
+      "rows": 1881,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 83,
+      "priced_rows": 777
     }
   ],
-  "updated_at": "2026-06-13T03:22:53.378883+00:00"
+  "updated_at": "2026-06-14T03:28:55.328823+00:00"
 }
