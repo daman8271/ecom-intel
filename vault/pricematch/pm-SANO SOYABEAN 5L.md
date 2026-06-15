@@ -15,7 +15,7 @@ first_seen: 2026-06-08
 last_seen: 2026-06-15
 observations: 64
 latest_status: NOT_LISTED
-below_days: 3
+below_days: 2
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,8 @@ SKU memory: [[sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** ▫️ not listed on [[zepto]] (2026-06-15) — ref ₹949 vs live ₹-
-- **Days below reference:** 3 of 8
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]]
+- **Days below reference:** 2 of 8
+- **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
 ## Ref-vs-live history (64 observations)
 
@@ -101,7 +101,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-14,flipkart,NOT_LISTED,SVD,899,,,,,,0,false
 2026-06-14,flipkart-minutes,NOT_LISTED,SVD,899,,,,,,0,false
 2026-06-14,zepto,NOT_LISTED,SVD,899,,,,,,0,false
-2026-06-15,amazon,BELOW,BAU,949,899,899,899,-50,-5.27,1,true
+2026-06-15,amazon,ABOVE,BAU,949,1203,1203,1203,254,26.77,0,true
 2026-06-15,amazon-fresh,NOT_LISTED,BAU,949,,,,,,0,false
 2026-06-15,amazon-now,NOT_LISTED,BAU,949,,,,,,0,false
 2026-06-15,bigbasket,NOT_LISTED,BAU,949,,,,,,0,false

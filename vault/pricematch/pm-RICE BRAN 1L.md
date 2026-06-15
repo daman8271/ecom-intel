@@ -15,7 +15,7 @@ first_seen: 2026-06-08
 last_seen: 2026-06-15
 observations: 64
 latest_status: OOS
-below_days: 6
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,8 @@ SKU memory: [[jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-15) — ref ₹199 vs live ₹-
-- **Days below reference:** 6 of 8
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-15]]
+- **Days below reference:** 5 of 8
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]]
 
 ## Ref-vs-live history (64 observations)
 
@@ -101,9 +101,9 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-14,flipkart,ABOVE,SVD,189,225,225,225,36,19.05,0,true
 2026-06-14,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
 2026-06-14,zepto,OOS,SVD,189,,,,,,0,false
-2026-06-15,amazon,BELOW,BAU,199,189,189,189,-10,-5.03,1,true
-2026-06-15,amazon-fresh,BELOW,BAU,199,189,184,197,-10,-5.03,96,true
-2026-06-15,amazon-now,BELOW,BAU,199,189,184,197,-10,-5.03,79,true
+2026-06-15,amazon,ABOVE,BAU,199,251,251,251,52,26.13,0,true
+2026-06-15,amazon-fresh,MATCH,BAU,199,199,184,251,0,0,54,true
+2026-06-15,amazon-now,MATCH,BAU,199,199,184,251,0,0,37,true
 2026-06-15,bigbasket,NOT_LISTED,BAU,199,,,,,,0,false
 2026-06-15,blinkit,NOT_LISTED,BAU,199,,,,,,0,false
 2026-06-15,flipkart,ABOVE,BAU,199,225,225,225,26,13.07,0,true
