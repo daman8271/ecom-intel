@@ -1,0 +1,16 @@
+[
+  {"city":"Delhi","pincode":"110092","locality":"East Delhi (Vivek Vihar)","lat":28.6126,"lon":77.2950,"tier":1},
+  {"city":"Bengaluru","pincode":"560006","locality":"Bengaluru GPO","lat":12.9716,"lon":77.5946,"tier":1},
+  {"city":"Mumbai","pincode":"400001","locality":"Fort, Mumbai","lat":18.9385,"lon":72.8363,"tier":1},
+  {"city":"Hyderabad","pincode":"500001","locality":"Afzal Gunj","lat":17.3850,"lon":78.4867,"tier":1},
+  {"city":"Chennai","pincode":"600001","locality":"Parrys","lat":13.0827,"lon":80.2707,"tier":1},
+  {"city":"Kolkata","pincode":"700001","locality":"BBD Bagh","lat":22.5726,"lon":88.3639,"tier":1},
+  {"city":"Pune","pincode":"411001","locality":"Pune City","lat":18.5204,"lon":73.8567,"tier":1},
+  {"city":"Ahmedabad","pincode":"380001","locality":"Ahmedabad GPO","lat":23.0225,"lon":72.5714,"tier":1},
+  {"city":"Gurugram","pincode":"122001","locality":"Gurugram Sadar","lat":28.4595,"lon":77.0266,"tier":1},
+  {"city":"Noida","pincode":"201301","locality":"Noida Sector 1","lat":28.5708,"lon":77.3210,"tier":1},
+  {"city":"Jaipur","pincode":"302001","locality":"Jaipur GPO","lat":26.9124,"lon":75.7873,"tier":2},
+  {"city":"Lucknow","pincode":"226001","locality":"Lucknow GPO","lat":26.8467,"lon":80.9462,"tier":2},
+  {"city":"Chandigarh","pincode":"160001","locality":"Chandigarh Sector 17","lat":30.7333,"lon":76.7794,"tier":2},
+  {"city":"Surat","pincode":"395003","locality":"Surat City","lat":21.1702,"lon":72.8311,"tier":2}
+]
