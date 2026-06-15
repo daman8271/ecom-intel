@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-14
-observations: 56
-latest_status: BELOW
-below_days: 7
+last_seen: 2026-06-15
+observations: 64
+latest_status: ABOVE
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-14) — ref ₹1249 vs live ₹1193
-- **Days below reference:** 7 of 7
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-15) — ref ₹1299 vs live ₹1617
+- **Days below reference:** 8 of 8
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
 
-## Ref-vs-live history (56 observations)
+## Ref-vs-live history (64 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -101,6 +101,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-14,flipkart,BELOW,SVD,1249,1191,1191,1191,-58,-4.64,1,true
 2026-06-14,flipkart-minutes,NOT_LISTED,SVD,1249,,,,,,0,false
 2026-06-14,zepto,BELOW,SVD,1249,1193,1193,1617,-56,-4.48,19,true
+2026-06-15,amazon,BELOW,BAU,1299,1249,1249,1249,-50,-3.85,1,true
+2026-06-15,amazon-fresh,BELOW,BAU,1299,1193,1193,1394,-106,-8.16,54,true
+2026-06-15,amazon-now,BELOW,BAU,1299,1193,1193,1299,-106,-8.16,47,true
+2026-06-15,bigbasket,ABOVE,BAU,1299,1366,1366,1366,67,5.16,0,true
+2026-06-15,blinkit,BELOW,BAU,1299,1193,1193,1493,-106,-8.16,57,true
+2026-06-15,flipkart,BELOW,BAU,1299,1191,1191,1191,-108,-8.31,1,true
+2026-06-15,flipkart-minutes,NOT_LISTED,BAU,1299,,,,,,0,false
+2026-06-15,zepto,ABOVE,BAU,1299,1617,1193,1617,318,24.48,13,true
 ```
 
 ---

@@ -5,11 +5,11 @@ display_name: "Jivo Extra Virgin Olive Oil 200 ml & Extra Light Olive Oil 1 Litr
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-14
-observations: 22
-min_price: 688
+last_seen: 2026-06-15
+observations: 23
+min_price: 669
 max_price: 688
-latest_price: 688
+latest_price: 669
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Extra Virgin Olive Oil 200 ml & Extra Light Olive Oil 1 Litre | Imported from Spain | Low Saturated Fat | Rich in Vitamin E & Antioxidants | Ideal for Cooking, Salads & Dressings (Combo Pack) (200 ML + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹688 (61.7% off)
+- [[amazon]] — latest ₹669 (62.8% off)
 
-## Runs that observed this SKU (22)
-[[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (23)
+[[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (22 observations)
+## Price history (23 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -53,6 +53,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-13-1224,2026-06-13,amazon,All India,-,688,1798,61.7,1
 2026-06-14-0859,2026-06-14,amazon,All India,-,688,1798,61.7,1
 2026-06-14-1236,2026-06-14,amazon,All India,-,688,1798,61.7,1
+2026-06-15-0858,2026-06-15,amazon,All India,-,669,1798,62.8,1
 ```
 
 ---

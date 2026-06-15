@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-14
-observations: 56
+last_seen: 2026-06-15
+observations: 64
 latest_status: OOS
-below_days: 7
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-coo
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-14) — ref ₹939 vs live ₹-
-- **Days below reference:** 7 of 7
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-15) — ref ₹989 vs live ₹-
+- **Days below reference:** 8 of 8
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
 
-## Ref-vs-live history (56 observations)
+## Ref-vs-live history (64 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -101,6 +101,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-14,flipkart,OOS,SVD,939,,,,,,0,false
 2026-06-14,flipkart-minutes,NOT_LISTED,SVD,939,,,,,,0,false
 2026-06-14,zepto,OOS,SVD,939,,,,,,0,false
+2026-06-15,amazon,BELOW,BAU,989,930,930,930,-59,-5.97,1,true
+2026-06-15,amazon-fresh,BELOW,BAU,989,925,925,930,-64,-6.47,30,true
+2026-06-15,amazon-now,BELOW,BAU,989,925,925,925,-64,-6.47,14,true
+2026-06-15,bigbasket,NOT_LISTED,BAU,989,,,,,,0,false
+2026-06-15,blinkit,NOT_LISTED,BAU,989,,,,,,0,false
+2026-06-15,flipkart,OOS,BAU,989,,,,,,0,false
+2026-06-15,flipkart-minutes,NOT_LISTED,BAU,989,,,,,,0,false
+2026-06-15,zepto,OOS,BAU,989,,,,,,0,false
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-14
-observations: 56
+last_seen: 2026-06-15
+observations: 64
 latest_status: BELOW
-below_days: 7
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-14) — ref ₹1189 vs live ₹1141
-- **Days below reference:** 7 of 7
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-15) — ref ₹1229 vs live ₹1195
+- **Days below reference:** 8 of 8
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
 
-## Ref-vs-live history (56 observations)
+## Ref-vs-live history (64 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -101,6 +101,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-14,flipkart,BELOW,SVD,1189,904,904,904,-285,-23.97,1,true
 2026-06-14,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2105,714,60.05,0,true
 2026-06-14,zepto,BELOW,SVD,1189,1141,1139,1195,-48,-4.04,39,true
+2026-06-15,amazon,BELOW,BAU,1229,1142,1142,1142,-87,-7.08,1,true
+2026-06-15,amazon-fresh,BELOW,BAU,1229,1139,1010,1229,-90,-7.32,102,true
+2026-06-15,amazon-now,BELOW,BAU,1229,1139,1139,1229,-90,-7.32,88,true
+2026-06-15,bigbasket,ABOVE,BAU,1229,1343,1343,1343,114,9.28,0,true
+2026-06-15,blinkit,BELOW,BAU,1229,1139,1139,1340,-90,-7.32,83,true
+2026-06-15,flipkart,BELOW,BAU,1229,904,904,904,-325,-26.44,1,true
+2026-06-15,flipkart-minutes,ABOVE,BAU,1229,1903,1903,2084,674,54.84,0,true
+2026-06-15,zepto,BELOW,BAU,1229,1195,1137,1201,-34,-2.77,50,true
 ```
 
 ---

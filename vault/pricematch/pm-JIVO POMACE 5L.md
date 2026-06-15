@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-14
-observations: 56
-latest_status: ABOVE
-below_days: 7
+last_seen: 2026-06-15
+observations: 64
+latest_status: BELOW
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-fr
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-14) — ref ₹2119 vs live ₹2127
-- **Days below reference:** 7 of 7
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-15) — ref ₹2169 vs live ₹2130
+- **Days below reference:** 8 of 8
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
 
-## Ref-vs-live history (56 observations)
+## Ref-vs-live history (64 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -101,6 +101,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-14,flipkart,BELOW,SVD,2119,1584,1584,1584,-535,-25.25,1,true
 2026-06-14,flipkart-minutes,BELOW,SVD,2119,2049,2049,2049,-70,-3.3,7,true
 2026-06-14,zepto,ABOVE,SVD,2119,2127,2114,2574,8,0.38,2,true
+2026-06-15,amazon,BELOW,BAU,2169,2084,2084,2084,-85,-3.92,1,true
+2026-06-15,amazon-fresh,BELOW,BAU,2169,1897,1897,2169,-272,-12.54,90,true
+2026-06-15,amazon-now,BELOW,BAU,2169,1897,1897,2169,-272,-12.54,73,true
+2026-06-15,bigbasket,NOT_LISTED,BAU,2169,,,,,,0,false
+2026-06-15,blinkit,BELOW,BAU,2169,1897,1897,2088,-272,-12.54,80,true
+2026-06-15,flipkart,OOS,BAU,2169,,,,,,0,false
+2026-06-15,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,7,true
+2026-06-15,zepto,BELOW,BAU,2169,2130,2114,2574,-39,-1.8,47,true
 ```
 
 ---
