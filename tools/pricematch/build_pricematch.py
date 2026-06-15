@@ -778,7 +778,7 @@ def add_pin_spread_sheets(wb, date, regime, by_key, sku_map):
                     "price group behind it. MODE row highlighted; a group below "
                     "the agreed price (±₹1) is RED. A pin with two store prices "
                     "appears in both groups. Worst SKUs (most price groups) first. "
-                    "Amazon Core / Flipkart / BigBasket are national — one "
+                    "Amazon Core / Flipkart are national — one "
                     "all-India price, no spread (see Matrix).")
         s.font = Font(name=F, size=9, color=MUTED)
         s.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
@@ -1484,7 +1484,7 @@ def build_compete_sheets(wb, date, regime, sku_map):
         {"key": "blinkit", "label": "Blinkit"},
         {"key": "zepto", "label": "Zepto"},
         {"key": "flipkart-minutes", "label": "Flipkart Minutes"},
-        {"key": "bigbasket", "label": "BigBasket", "national": True},
+        {"key": "bigbasket", "label": "BigBasket"},  # per-pincode now (QC pincode feed) — price at the ref pins
     ]
     now_recs = core.competitor_compare(
         "amazon-now", [c["key"] for c in now_cols], skus, pincodes=PM_REF_PINCODES_LOCAL)

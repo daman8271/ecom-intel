@@ -95,7 +95,7 @@ SVD_FIRST_N_DAYS = 7
 PM_REF_PINCODES = ["110092", "560006"]
 # Platforms whose ONE national price applies at every pincode (marketplace /
 # all-India). For these we ignore the pincode arg and tag the cell national=True.
-NATIONAL_PLATFORMS = {"amazon", "flipkart", "bigbasket"}
+NATIONAL_PLATFORMS = {"amazon", "flipkart"}  # bigbasket moved to per-pincode (licensed QC pincode feed) 2026-06-15 -> gets basis pricing + pin_groups (Pin Spread) like the other QC platforms
 
 
 # ---------------------------------------------------------------- helpers
@@ -206,8 +206,15 @@ def regime_for(date=None, cfg=None):
 # ---------------------------------------------------------------- context
 
 def _index_live(platform):
-    """Read platforms/<p>/result.json fresh and index allRows by listing id."""
+    """Read platforms/<p>/result.json fresh and index allRows by listing id.
+    BigBasket is fed by the licensed QuickCommerce per-pincode pull
+    (result_pincode.json, per-pincode rows for the Pin Spread); falls back to
+    result.json (national scrape) if that pull hasn't run today."""
     path = os.path.join(PLATFORMS_DIR, platform, "result.json")
+    if platform == "bigbasket":
+        _pin = os.path.join(PLATFORMS_DIR, platform, "result_pincode.json")
+        if os.path.exists(_pin):
+            path = _pin
     out = {"by_id": {}, "by_canonical": {}, "rows": 0, "mtime": None, "path": path}
     if not os.path.exists(path):
         return out
