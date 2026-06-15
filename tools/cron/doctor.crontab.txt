@@ -19,6 +19,11 @@
 # comes at the timing, not starts at it"). If the chain overruns, the batch goes
 # out as soon as it's done, marked "(late by Xm)".
 
+# BigBasket pincode-wise (licensed QuickCommerce API) — runs 08:00, BEFORE the sweeps, so
+# result_pincode.json is fresh when build_pricematch reads it for the BigBasket column / Pin Spread.
+# Pulls the 92 Jivo-carrying pincodes (incl. price-match pins 110092/560006); ~3 min. Single PAID key.
+0 8 * * * cd /opt/ecom-intel && ./platforms/bigbasket/run_pincode.sh >> logs/cron.log 2>&1   # ecom-intel bigbasket-pincode daily
+
 # 12:00 IST slot — fire 08:30, sweep starts at 12:00 - predicted lead (~08:41 on today's lead), batch lands AT 12:00.
 30 8 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
 

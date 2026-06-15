@@ -23,6 +23,7 @@
 # the self-learning durations ledger tightens.
 
 # 12:00 IST slot — fire 08:30, sweep starts at 12:00 - predicted lead (~08:41 on today's lead), batch lands AT 12:00.
+0 8 * * * cd /opt/ecom-intel && ./platforms/bigbasket/run_pincode.sh >> logs/cron.log 2>&1   # ecom-intel bigbasket-pincode daily
 30 8 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
 
 # 15:00 IST slot — fire 11:30, same mechanics, batch lands AT 15:00.
