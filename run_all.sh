@@ -123,6 +123,38 @@ else
 fi
 
 # ---- PRICE-MATCH master workbook (SHEETS-B) ----------------------------------
+# BigBasket — pincode-wise via the licensed QuickCommerce API, pulled ONCE daily by
+# platforms/bigbasket/run_pincode.sh (08:00). National scrape retired (not in PLATFORMS),
+# so we spool the day's pincode report into THIS sweep's batch — it lands WITH the other
+# platforms in BOTH the 12:00 and 15:00 batches (no re-pull; uses the 08:00 report).
+if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
+  BB_RPT="$(ls -t "$DIR"/output/Jivo-BigBasket-Pincode-Report-*.xlsx 2>/dev/null | head -1)"
+  if [ -n "$BB_RPT" ] && [ -f "$BB_RPT" ]; then
+    BBDIR="$DIR/output/.batch/${SWEEP_ID}"; mkdir -p "$BBDIR" 2>>logs/telegram.log
+    BB_RPT="$BB_RPT" BB_SUM="$DIR/platforms/bigbasket/result_pincode.json" python3 - "$BBDIR/bigbasket.json" 2>>logs/telegram.log <<'BBSPOOL'
+import json, os, sys, time
+out = sys.argv[1]; xlsx = os.path.abspath(os.environ["BB_RPT"])
+s = {}
+try:
+    s = json.load(open(os.environ["BB_SUM"]))["summary"]
+except Exception:
+    pass
+date = (s.get("captured_at", "") or "")[:10] or time.strftime("%Y-%m-%d")
+summ = (f"*BigBasket — pincode-wise (licensed QC API)*\n{date}\n"
+        f"{s.get('pincodes_with_jivo','?')}/{s.get('pincodes_total','?')} pincodes carry Jivo · "
+        f"{s.get('unique_skus','?')} SKUs · {s.get('total_rows','?')} datapoints")
+tmp = out + ".tmp"
+json.dump({"platform": "bigbasket", "verdict": "OK", "summary": summ, "xlsx": xlsx,
+           "caption": f"Jivo x BigBasket pincode-wise · {date}", "ts": int(time.time())},
+          open(tmp, "w"), ensure_ascii=False)
+os.replace(tmp, out)
+BBSPOOL
+    echo "[$(date '+%F %T')] run_all: bigbasket (pincode) spooled for batch -> $BBDIR/bigbasket.json (sweep ${SWEEP_ID})"
+  else
+    echo "[$(date '+%F %T')] run_all: bigbasket pincode report not in output/ — skipped (08:00 pull may have failed)"
+  fi
+fi
+
 # One standalone violations workbook per sweep: every platform x every SKU vs the
 # day's regime reference (tools/pricematch/build_pricematch.py; Ecom Head first
 # sheet). Built AFTER the platform loop (freshest result.json for all platforms,
