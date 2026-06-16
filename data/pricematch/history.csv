@@ -7127,12 +7127,12 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-15,BAU,BLACK OLIVE 470G,,bigbasket,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-15,BAU,BLACK PEPPER 100G,,bigbasket,,145,,,,false,NOT_LISTED,,,0,399,
 2026-06-15,BAU,CANOLA 1+1L,,bigbasket,,529,,,,false,NOT_LISTED,,,0,750,
-2026-06-15,BAU,CANOLA 1L,canola-oil-cold-pressed-1l,bigbasket,282779,269,284,284,284,true,ABOVE,15,5.58,0,375,375
+2026-06-15,BAU,CANOLA 1L,canola-oil-cold-pressed-1l,bigbasket,282779,269,260,260,298,true,BELOW,-9,-3.35,3,375,375
 2026-06-15,BAU,CANOLA 1L + 1L,,bigbasket,,529,,,,false,NOT_LISTED,,,0,750,
-2026-06-15,BAU,CANOLA 1L POUCH,canola-omega3-rich-cooking-oil-1-l-1l,bigbasket,40309979,269,,,,false,OOS,,,0,299,299
+2026-06-15,BAU,CANOLA 1L POUCH,canola-omega3-rich-cooking-oil-1-l-1l,bigbasket,40309979,269,241.47,240.16,249.17,true,BELOW,-27.53,-10.23,15,299,299
 2026-06-15,BAU,CANOLA 3L,,bigbasket,,799,,,,false,NOT_LISTED,,,0,690,
 2026-06-15,BAU,CANOLA 4L,,bigbasket,,1189,,,,false,NOT_LISTED,,,0,1199,
-2026-06-15,BAU,CANOLA 5L,canola-oil-cold-pressed-5l,bigbasket,282780,1299,1366,1366,1366,true,ABOVE,67,5.16,0,1650,1650
+2026-06-15,BAU,CANOLA 5L,canola-oil-cold-pressed-5l,bigbasket,282780,1299,1366,1366,1600,true,ABOVE,67,5.16,0,1650,1650
 2026-06-15,BAU,CHIA SEEDS 200G,,bigbasket,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-15,BAU,CHIA SEEDS 400G,,bigbasket,,209,,,,false,NOT_LISTED,,,0,599,
 2026-06-15,BAU,CHIA SEEDS 800G,,bigbasket,,349,,,,false,NOT_LISTED,,,0,899,
@@ -7144,12 +7144,12 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-15,BAU,COFFEE,,bigbasket,,249,,,,false,NOT_LISTED,,,0,350,
 2026-06-15,BAU,CUMIN SEEDS 100G,,bigbasket,,75,,,,false,NOT_LISTED,,,0,249,
 2026-06-15,BAU,EXTRA LIGHT 1+1L,,bigbasket,,1229,,,,false,NOT_LISTED,,,0,2798,
-2026-06-15,BAU,EXTRA LIGHT 1L,extra-light-olive-oil-1l,bigbasket,40166398,619,1284,1284,1284,true,ABOVE,665,107.43,0,1499,1499
-2026-06-15,BAU,EXTRA LIGHT 2L,extra-light-olive-oil-antioxidants-rich-light-cooking-medium-for-frying-grilling-2l,bigbasket,40250809,1229,1343,1343,1343,true,ABOVE,114,9.28,0,2799,2799
+2026-06-15,BAU,EXTRA LIGHT 1L,extra-light-olive-oil-1l,bigbasket,40166398,619,1284,639.45,1386,true,ABOVE,665,107.43,0,1499,1499
+2026-06-15,BAU,EXTRA LIGHT 2L,extra-light-olive-oil-antioxidants-rich-light-cooking-medium-for-frying-grilling-2l,bigbasket,40250809,1229,1343,1343,1386,true,ABOVE,114,9.28,0,2799,2799
 2026-06-15,BAU,EXTRA LIGHT 3L,,bigbasket,,1849,,,,false,NOT_LISTED,,,0,2200,
 2026-06-15,BAU,EXTRA LIGHT 500ML,,bigbasket,,349,,,,false,NOT_LISTED,,,0,499,
 2026-06-15,BAU,EXTRA LIGHT 5L,,bigbasket,,3069,,,,false,NOT_LISTED,,,0,6499,
-2026-06-15,BAU,EXTRA VIRGIN 1L,extra-virgin-olive-oil-antioxidants-rich-suitable-for-salads-saute-1l,bigbasket,40250808,809,1012,1012,1012,true,ABOVE,203,25.09,0,1499,1799
+2026-06-15,BAU,EXTRA VIRGIN 1L,extra-virgin-olive-oil-antioxidants-rich-suitable-for-salads-saute-1l,bigbasket,40250808,809,1012,1012,1060,true,ABOVE,203,25.09,0,1499,1799
 2026-06-15,BAU,EXTRA VIRGIN 1L + 1L,,bigbasket,,1609,,,,false,NOT_LISTED,,,0,2998,
 2026-06-15,BAU,EXTRA VIRGIN 200ML,,bigbasket,,199,,,,false,NOT_LISTED,,,0,350,
 2026-06-15,BAU,EXTRA VIRGIN 250ML,,bigbasket,,219,,,,false,NOT_LISTED,,,0,450,
@@ -7167,9 +7167,9 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-15,BAU,GREEN CARDAMOM 100G,,bigbasket,,499,,,,false,NOT_LISTED,,,0,799,
 2026-06-15,BAU,GROUNDNUT 1L,,bigbasket,,259,,,,false,NOT_LISTED,,,0,400,
 2026-06-15,BAU,GROUNDNUT 5L,,bigbasket,,1269,,,,false,NOT_LISTED,,,0,2800,
-2026-06-15,BAU,JIVO POMACE 1L,pomace-olive-oil-1l,bigbasket,40197820,439,,,,false,OOS,,,0,1049,1049
+2026-06-15,BAU,JIVO POMACE 1L,pomace-olive-oil-1l,bigbasket,40197820,439,380,380,577.74,true,BELOW,-59,-13.44,34,1049,1049
 2026-06-15,BAU,JIVO POMACE 1L + 1L,,bigbasket,,869,,,,false,NOT_LISTED,,,0,2098,
-2026-06-15,BAU,JIVO POMACE 2L,pomace-olive-oil-2l,bigbasket,40309980,869,1099,1099,1099,true,ABOVE,230,26.47,0,1600,1449
+2026-06-15,BAU,JIVO POMACE 2L,pomace-olive-oil-2l,bigbasket,40309980,869,1100,983.03,1117,true,ABOVE,231,26.58,0,1600,1449
 2026-06-15,BAU,JIVO POMACE 5L,,bigbasket,,2169,,,,false,NOT_LISTED,,,0,4999,
 2026-06-15,BAU,JIVO PUNJABI SHIKANJI 160 MLS,,bigbasket,,219,,,,false,NOT_LISTED,,,0,480,
 2026-06-15,BAU,JIVO WATER 1L,,bigbasket,,20,,,,false,NOT_LISTED,,,0,30,
@@ -7180,7 +7180,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-15,BAU,MUSTARD 1L POUCH,,bigbasket,,219,,,,false,NOT_LISTED,,,0,250,
 2026-06-15,BAU,MUSTARD 3L,,bigbasket,,629,,,,false,NOT_LISTED,,,0,765,
 2026-06-15,BAU,MUSTARD 4L,,bigbasket,,839,,,,false,NOT_LISTED,,,0,1000,
-2026-06-15,BAU,MUSTARD 5L,cold-press-kachi-ghani-mustard-oil-5l,bigbasket,40166396,1049,981.13,981.13,981.13,true,BELOW,-67.87,-6.47,1,1250,1250
+2026-06-15,BAU,MUSTARD 5L,cold-press-kachi-ghani-mustard-oil-5l,bigbasket,40166396,1049,981.13,981.13,981.13,true,BELOW,-67.87,-6.47,8,1250,1250
 2026-06-15,BAU,POMACE 3L,,bigbasket,,1309,,,,false,NOT_LISTED,,,0,3050,
 2026-06-15,BAU,PUMPKIN SEEDS 200G,,bigbasket,,209,,,,false,NOT_LISTED,,,0,399,
 2026-06-15,BAU,PUMPKIN SEEDS 400G,,bigbasket,,399,,,,false,NOT_LISTED,,,0,699,
@@ -7213,21 +7213,21 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-15,BAU,SO OLIVE 1L + 1L,,bigbasket,,569,,,,false,NOT_LISTED,,,0,650,
 2026-06-15,BAU,SO OLIVE 5L,,bigbasket,,1419,,,,false,NOT_LISTED,,,0,1625,
 2026-06-15,BAU,SODA 750ML,,bigbasket,,15,,,,false,NOT_LISTED,,,0,30,
-2026-06-15,BAU,SODA LEMON 750ML,fizzy-water-flavoured-with-lemon-750ml,bigbasket,40335332,45,,,,false,OOS,,,0,55,55
+2026-06-15,BAU,SODA LEMON 750ML,fizzy-water-flavoured-with-lemon-750ml,bigbasket,40335332,45,55,55,55,true,ABOVE,10,22.22,0,55,55
 2026-06-15,BAU,SOYABEAN 1L,,bigbasket,,209,,,,false,NOT_LISTED,,,0,225,
 2026-06-15,BAU,SOYABEAN 1L + 1L,,bigbasket,,409,,,,false,NOT_LISTED,,,0,1100,
 2026-06-15,BAU,SOYABEAN 1L POUCH,,bigbasket,,209,,,,false,NOT_LISTED,,,0,199,
 2026-06-15,BAU,SOYABEAN 5L,,bigbasket,,999,,,,false,NOT_LISTED,,,0,1100,
-2026-06-15,BAU,SPRING WATER 750ML,fizzy-water-flavoured-with-peach-750ml,bigbasket,40335333,50,,,,false,OOS,,,0,55,55
-2026-06-15,BAU,SUNFLOWER 1L,cold-pressed-sunflower-oil-1l,bigbasket,40249993,229,,,,false,OOS,,,0,275,275
+2026-06-15,BAU,SPRING WATER 750ML,fizzy-water-flavoured-with-peach-750ml,bigbasket,40335333,50,55,55,60,true,ABOVE,5,10,0,55,55
+2026-06-15,BAU,SUNFLOWER 1L,cold-pressed-sunflower-oil-1l,bigbasket,40249993,229,177.73,177.73,217.73,true,BELOW,-51.27,-22.39,53,275,275
 2026-06-15,BAU,SUNFLOWER 1L + 1L,,bigbasket,,449,,,,false,NOT_LISTED,,,0,550,
 2026-06-15,BAU,SUNFLOWER 3L,,bigbasket,,679,,,,false,NOT_LISTED,,,0,825,
 2026-06-15,BAU,SUNFLOWER 4L,,bigbasket,,909,,,,false,NOT_LISTED,,,0,1038,
-2026-06-15,BAU,SUNFLOWER 5L,sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l,bigbasket,40249992,1139,,,,false,OOS,,,0,1350,1350
+2026-06-15,BAU,SUNFLOWER 5L,sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l,bigbasket,40249992,1139,882.84,882.83,1350,true,BELOW,-256.16,-22.49,35,1350,1350
 2026-06-15,BAU,SUNFLOWER SEEDS 200G,,bigbasket,,139,,,,false,NOT_LISTED,,,0,299,
 2026-06-15,BAU,SUNFLOWER SEEDS 400G,,bigbasket,,259,,,,false,NOT_LISTED,,,0,499,
 2026-06-15,BAU,SUNFLOWER SEEDS 800G,,bigbasket,,389,,,,false,NOT_LISTED,,,0,899,
-2026-06-15,BAU,WG MANGO JUICE 500ML,mango-healthy-wheatgrass-juice-500ml,bigbasket,40335340,39,,,,false,OOS,,,0,100,100
+2026-06-15,BAU,WG MANGO JUICE 500ML,mango-healthy-wheatgrass-juice-500ml,bigbasket,40335340,39,,,,false,OOS,,,0,100,125
 2026-06-15,BAU,YELLOW MUSTARD 1L,,bigbasket,,269,,,,false,NOT_LISTED,,,0,375,
 2026-06-15,BAU,YELLOW MUSTARD 1L + 1L,,bigbasket,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-15,BAU,YELLOW MUSTARD 5L,,bigbasket,,1329,,,,false,NOT_LISTED,,,0,2000,
