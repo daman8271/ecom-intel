@@ -72,7 +72,7 @@ EXPECTED=(
   "output/Jivo-Amazon-Live-Report-$D.xlsx"
   "output/Jivo-AmazonFresh-Live-Report-$D.xlsx"
   "output/Jivo-AmazonNow-Live-Report-$D.xlsx"
-  "output/Jivo-Bigbasket-Live-Report-$D.xlsx"
+  "output/Jivo-BigBasket-Pincode-Report-$D.xlsx"
   "output/Jivo-Blinkit-Live-Report-$D.xlsx"
   "output/Jivo-Flipkart-Live-Report-$D.xlsx"
   "output/Jivo-FlipkartMinutes-Live-Report-$D.xlsx"
