@@ -6,7 +6,7 @@ platforms:
   - amazon
 first_seen: 2026-06-11
 last_seen: 2026-06-16
-observations: 11
+observations: 12
 min_price: 355
 max_price: 355
 latest_price: 355
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹355 (11.3% off)
 
-## Runs that observed this SKU (11)
-[[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]]
+## Runs that observed this SKU (12)
+[[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]]
 
-## Price history (11 observations)
+## Price history (12 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -42,6 +42,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-15-0858,2026-06-15,amazon,All India,-,355,400,11.3,1
 2026-06-15-1231,2026-06-15,amazon,All India,-,355,400,11.3,1
 2026-06-16-0853,2026-06-16,amazon,All India,-,355,400,11.3,1
+2026-06-16-1228,2026-06-16,amazon,All India,-,355,400,11.3,1
 ```
 
 ---

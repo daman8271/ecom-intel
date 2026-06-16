@@ -6,7 +6,7 @@ platforms:
   - amazon-now
 first_seen: 2026-06-09
 last_seen: 2026-06-16
-observations: 64
+observations: 76
 min_price: 960
 max_price: 1049
 latest_price: 1022
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹1022 (18.2% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (7)
-[[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
+## Runs that observed this SKU (8)
+[[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
 
-## Price history (64 observations)
+## Price history (76 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -98,6 +98,18 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-1014,2026-06-16,amazon-now,Noida,201305,1004,1250,19.7,1
 2026-06-16-1014,2026-06-16,amazon-now,Noida,201310,1004,1250,19.7,1
 2026-06-16-1014,2026-06-16,amazon-now,Pune,411051,1022,1250,18.2,1
+2026-06-16-1352,2026-06-16,amazon-now,Bengaluru,560052,985,1250,21.2,1
+2026-06-16-1352,2026-06-16,amazon-now,Delhi,110009,996,1250,20.3,1
+2026-06-16-1352,2026-06-16,amazon-now,Delhi,110051,996,1250,20.3,1
+2026-06-16-1352,2026-06-16,amazon-now,Delhi,110092,996,1250,20.3,1
+2026-06-16-1352,2026-06-16,amazon-now,Gurgaon,122006,996,1250,20.3,1
+2026-06-16-1352,2026-06-16,amazon-now,Jaipur,302025,1022,1250,18.2,1
+2026-06-16-1352,2026-06-16,amazon-now,Mumbai,400010,1013,1250,19,1
+2026-06-16-1352,2026-06-16,amazon-now,Mumbai,400033,1013,1250,19,1
+2026-06-16-1352,2026-06-16,amazon-now,Noida,201305,1004,1250,19.7,1
+2026-06-16-1352,2026-06-16,amazon-now,Pune,411015,1022,1250,18.2,1
+2026-06-16-1352,2026-06-16,amazon-now,Pune,411030,1022,1250,18.2,1
+2026-06-16-1352,2026-06-16,amazon-now,Pune,411045,1022,1250,18.2,1
 ```
 
 ---
