@@ -358,7 +358,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-1l]] — JIVO First Pressed Yellow Mustard Oil 1 Litre | Pili Sarson Oil for Cooking | Chemical-Free | Ideal for Roasting, Frying, Baking | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines (1 LTR)
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-2l]] — Jivo First Pressed Yellow Mustard Oil (Pili Sarson) 1 Litre (Pack of 2) | Chemical Free Cooking Oil | Ideal for Frying, Roasting & Baking | Contains Omega-3 PUFA & Added Vitamins A & D (1LTR + 1LTR (BUNDLE))
 - [[jivo-first-pressed-yellow-mustard-oil-1l-with-koffie-instant-coffee-100g-1l]] — Jivo First Pressed Yellow Mustard Oil 1l With Koffie Instant Coffee 100g 1l
-- [[jivo-first-pressed-yellow-mustard-oil-5-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-5l]] — JIVO First Pressed Yellow Mustard Oil 5 Litre | Pili Sarson Oil for Cooking | Chemical-Free | Ideal for Roasting, Frying, Baking | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines (5 LTR)
+- [[jivo-first-pressed-yellow-mustard-oil-5-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-5l]] — JIVO First Pressed Yellow Mustard Oil 5L | Pili Sarson Oil for Cooking | Chemical-Free Edible Oil for Deep Frying & Roasting | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines- (5 LTR)
 - [[jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml]] — Jivo Fizzy Soda | Flavoured With Lemon 750ML | Carbonated Water | Zero Sugar, Zero Calories I Pack Of 1 (750 MLS)
 - [[jivo-flax-seeds-raw-alsi-seeds-for-eating-high-in-protein-iron-dietary-fibre-rich-in-essential-nutrients-ideal-for-adding-to-smoothies-salads-yogurt-baking-healthy-snack-option-200g-200ml]] — Jivo Flax Seeds | Raw Alsi Seeds for Eating | High in Protein, Iron, & Dietary Fibre | Rich in Essential Nutrients | Ideal for Adding to Smoothies, Salads, Yogurt & Baking | Healthy Snack Option- 200g (200 GMS)
 - [[jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml]] — Jivo Flax Seeds | Raw Alsi Seeds for Smoothies, Hair Growth, Baking & More | Rich in Omega-3, Fiber, Protein & Essential Nutrients | 100% Natural, Vegan, Gluten-Free for Optimal Health - 400g (400 GMS)
@@ -646,7 +646,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-first-pressed-sesame-oil-1l]] — Jivo First Pressed Sesame Oil 1l
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
 - [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] — Jivo First Pressed Yellow Mustard Oil 5 Litre 5l
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
 - [[jivo-groundnut-oil-1-litre-1l]] — Jivo Groundnut Oil 1 Litre 1l
 - [[jivo-groundnut-oil-1-litre-1l-b0ckffw9b6]] — Jivo Groundnut Oil 1 Litre 1l b0ckffw9b6
@@ -751,8 +751,8 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l]] — Jivo First Pressed Sesame Oil 1 Litre Cholesterol Free With Rich Aroma Flavour Of Sesame Seeds Unrefined Daily Cooking With Multipurpose Usage 1l
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
 - [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] — Jivo First Pressed Yellow Mustard Oil 5 Litre 5l
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend O Na
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend o
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
 - [[jivo-gold-refined-oil-1l]] — Jivo Gold Refined Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-s-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran S Na
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
@@ -775,7 +775,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-pomace-cooking-olive-oil-5-litre-with-jivo-cold-pressed-canola-oil-1-litre-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre With Jivo Cold Pressed Canola Oil 1 Litre 5l
 - [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] — Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking
 - [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre
-- [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil 5 Na
+- [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5
 - [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] — Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil 5 Litre Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Liter 5l
 - [[jivo-premium-dry-fruits-gift-box-with-first-pressed-groundnut-oil-na]] — Jivo Premium Dry Fruits Gift Box With First Pressed Groundnut Oil Na
 - [[jivo-premium-quinoa-gluten-free-na]] — Jivo Premium Quinoa Gluten Free Na

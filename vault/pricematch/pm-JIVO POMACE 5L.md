@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-15
-observations: 64
-latest_status: ABOVE
-below_days: 8
+last_seen: 2026-06-16
+observations: 72
+latest_status: BELOW
+below_days: 9
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-fr
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-15) — ref ₹2169 vs live ₹2574
-- **Days below reference:** 8 of 8
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-16) — ref ₹2169 vs live ₹2127
+- **Days below reference:** 9 of 9
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
 
-## Ref-vs-live history (64 observations)
+## Ref-vs-live history (72 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -109,6 +109,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-15,flipkart,OOS,BAU,2169,,,,,,0,false
 2026-06-15,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,5,true
 2026-06-15,zepto,ABOVE,BAU,2169,2574,2114,2574,405,18.67,19,true
+2026-06-16,amazon,BELOW,BAU,2169,2084,2084,2084,-85,-3.92,1,true
+2026-06-16,amazon-fresh,BELOW,BAU,2169,1897,1897,2169,-272,-12.54,82,true
+2026-06-16,amazon-now,BELOW,BAU,2169,1897,1897,2169,-272,-12.54,68,true
+2026-06-16,bigbasket,NOT_LISTED,BAU,2169,,,,,,0,false
+2026-06-16,blinkit,BELOW,BAU,2169,1897,1897,2088,-272,-12.54,78,true
+2026-06-16,flipkart,OOS,BAU,2169,,,,,,0,false
+2026-06-16,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,7,true
+2026-06-16,zepto,BELOW,BAU,2169,2127,2114,2574,-42,-1.94,19,true
 ```
 
 ---

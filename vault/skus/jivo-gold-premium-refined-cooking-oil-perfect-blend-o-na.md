@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na
-display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend O Na
+display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend o
 platforms:
   - amazon-now
 first_seen: 2026-06-01
-last_seen: 2026-06-14
-observations: 25
+last_seen: 2026-06-16
+observations: 34
 min_price: 173
-max_price: 189
-latest_price: 173
+max_price: 191
+latest_price: 191
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Premium Refined Cooking Oil Perfect Blend O Na**
+**Jivo Gold Premium Refined Cooking Oil Perfect Blend o**
 
 ## Sold on
-- [[amazon-now]] — latest ₹173 (23.1% off)
+- [[amazon-now]] — latest ₹191 (15.1% off)
 
 ## Available in cities
-[[Delhi]] · [[Ghaziabad]] · [[Gurgaon]] · [[Noida]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Noida]]
 
-## Runs that observed this SKU (7)
-[[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-01-1600]]
+## Runs that observed this SKU (8)
+[[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-01-1600]]
 
-## Price history (25 observations)
+## Price history (34 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -59,6 +59,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-14-1018,2026-06-14,amazon-now,Delhi,110035,173,225,23.1,1
 2026-06-14-1356,2026-06-14,amazon-now,Delhi,110055,173,225,23.1,1
 2026-06-14-1356,2026-06-14,amazon-now,Delhi,110061,173,225,23.1,1
+2026-06-16-1014,2026-06-16,amazon-now,Bengaluru,560040,173,225,23.1,1
+2026-06-16-1014,2026-06-16,amazon-now,Delhi,110048,180,225,20,1
+2026-06-16-1014,2026-06-16,amazon-now,Delhi,110065,180,225,20,1
+2026-06-16-1014,2026-06-16,amazon-now,Delhi,110083,180,225,20,1
+2026-06-16-1014,2026-06-16,amazon-now,Faridabad,121011,180,225,20,1
+2026-06-16-1014,2026-06-16,amazon-now,Gurgaon,122006,180,225,20,1
+2026-06-16-1014,2026-06-16,amazon-now,Noida,201304,191,225,15.1,1
+2026-06-16-1014,2026-06-16,amazon-now,Noida,201305,191,225,15.1,1
+2026-06-16-1014,2026-06-16,amazon-now,Noida,201310,191,225,15.1,1
 ```
 
 ---

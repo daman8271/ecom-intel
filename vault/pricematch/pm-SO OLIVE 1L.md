@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-15
-observations: 64
+last_seen: 2026-06-16
+observations: 72
 latest_status: OOS
-below_days: 8
+below_days: 9
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-15) — ref ₹289 vs live ₹-
-- **Days below reference:** 8 of 8
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-16) — ref ₹289 vs live ₹-
+- **Days below reference:** 9 of 9
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
 
-## Ref-vs-live history (64 observations)
+## Ref-vs-live history (72 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -109,6 +109,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-15,flipkart,BELOW,BAU,289,237,237,237,-52,-17.99,1,true
 2026-06-15,flipkart-minutes,NOT_LISTED,BAU,289,,,,,,0,false
 2026-06-15,zepto,OOS,BAU,289,,,,,,0,false
+2026-06-16,amazon,BELOW,BAU,289,279,279,279,-10,-3.46,1,true
+2026-06-16,amazon-fresh,MATCH,BAU,289,289,279,289,0,0,21,true
+2026-06-16,amazon-now,NOT_LISTED,BAU,289,,,,,,0,false
+2026-06-16,bigbasket,NOT_LISTED,BAU,289,,,,,,0,false
+2026-06-16,blinkit,NOT_LISTED,BAU,289,,,,,,0,false
+2026-06-16,flipkart,BELOW,BAU,289,237,237,237,-52,-17.99,1,true
+2026-06-16,flipkart-minutes,NOT_LISTED,BAU,289,,,,,,0,false
+2026-06-16,zepto,OOS,BAU,289,,,,,,0,false
 ```
 
 ---

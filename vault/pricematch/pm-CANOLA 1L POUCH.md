@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-15
-observations: 64
+last_seen: 2026-06-16
+observations: 72
 latest_status: NOT_LISTED
-below_days: 2
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-oil1-litre-refined-pouch-cooking-oil-for-daily-use-rec
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-15) — ref ₹269 vs live ₹-
-- **Days below reference:** 2 of 8
-- **Below on:** [[2026-06-08]] · [[2026-06-09]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-16) — ref ₹269 vs live ₹-
+- **Days below reference:** 4 of 9
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]]
 
-## Ref-vs-live history (64 observations)
+## Ref-vs-live history (72 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -104,11 +104,19 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-15,amazon,ABOVE,BAU,269,299,299,299,30,11.15,0,true
 2026-06-15,amazon-fresh,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-15,amazon-now,NOT_LISTED,BAU,269,,,,,,0,false
-2026-06-15,bigbasket,OOS,BAU,269,,,,,,0,false
+2026-06-15,bigbasket,BELOW,BAU,269,241.47,240.16,249.17,-27.53,-10.23,15,true
 2026-06-15,blinkit,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-15,flipkart,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-15,flipkart-minutes,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-15,zepto,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-16,amazon,MATCH,BAU,269,269,269,269,0,0,0,true
+2026-06-16,amazon-fresh,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-16,amazon-now,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-16,bigbasket,BELOW,BAU,269,241.47,240.16,249.17,-27.53,-10.23,14,true
+2026-06-16,blinkit,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-16,flipkart,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-16,flipkart-minutes,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-16,zepto,NOT_LISTED,BAU,269,,,,,,0,false
 ```
 
 ---

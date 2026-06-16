@@ -5,11 +5,11 @@ display_name: "Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lo
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-15
-observations: 24
+last_seen: 2026-06-16
+observations: 25
 min_price: 509
 max_price: 534
-latest_price: 534
+latest_price: 529
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Canola Oil,1 Litre Cold Press Cooking Oil for Daily use | Lowest in Saturated Fat (Pack of 2L) (1LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹534 (28.8% off)
+- [[amazon]] — latest ₹529 (29.5% off)
 
-## Runs that observed this SKU (24)
-[[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (25)
+[[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (24 observations)
+## Price history (25 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -55,6 +55,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-14-1236,2026-06-14,amazon,All India,-,509,750,32.1,1
 2026-06-15-0858,2026-06-15,amazon,All India,-,509,750,32.1,1
 2026-06-15-1231,2026-06-15,amazon,All India,-,534,750,28.8,1
+2026-06-16-0853,2026-06-16,amazon,All India,-,529,750,29.5,1
 ```
 
 ---

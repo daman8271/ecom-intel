@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-15
-observations: 64
+last_seen: 2026-06-16
+observations: 72
 latest_status: BELOW
-below_days: 8
+below_days: 9
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-15) — ref ₹619 vs live ₹480
-- **Days below reference:** 8 of 8
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-16) — ref ₹619 vs live ₹499
+- **Days below reference:** 9 of 9
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
 
-## Ref-vs-live history (64 observations)
+## Ref-vs-live history (72 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -104,11 +104,19 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-15,amazon,BELOW,BAU,619,480,480,480,-139,-22.46,1,true
 2026-06-15,amazon-fresh,BELOW,BAU,619,480,480,619,-139,-22.46,79,true
 2026-06-15,amazon-now,BELOW,BAU,619,480,480,504,-139,-22.46,64,true
-2026-06-15,bigbasket,ABOVE,BAU,619,1284,1284,1284,665,107.43,0,true
+2026-06-15,bigbasket,ABOVE,BAU,619,1284,639.45,1386,665,107.43,0,true
 2026-06-15,blinkit,ABOVE,BAU,619,624,624,708,5,0.81,0,true
 2026-06-15,flipkart,OOS,BAU,619,,,,,,0,false
 2026-06-15,flipkart-minutes,NOT_LISTED,BAU,619,,,,,,0,false
 2026-06-15,zepto,BELOW,BAU,619,480,480,480,-139,-22.46,36,true
+2026-06-16,amazon,BELOW,BAU,619,499,499,499,-120,-19.39,1,true
+2026-06-16,amazon-fresh,BELOW,BAU,619,499,480,619,-120,-19.39,75,true
+2026-06-16,amazon-now,BELOW,BAU,619,499,499,523,-120,-19.39,65,true
+2026-06-16,bigbasket,ABOVE,BAU,619,1284,639.45,1386,665,107.43,0,true
+2026-06-16,blinkit,ABOVE,BAU,619,624,624,708,5,0.81,0,true
+2026-06-16,flipkart,OOS,BAU,619,,,,,,0,false
+2026-06-16,flipkart-minutes,NOT_LISTED,BAU,619,,,,,,0,false
+2026-06-16,zepto,BELOW,BAU,619,499,499,499,-120,-19.39,35,true
 ```
 
 ---

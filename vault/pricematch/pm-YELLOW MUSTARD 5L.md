@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-15
-observations: 64
+last_seen: 2026-06-16
+observations: 72
 latest_status: NOT_LISTED
 below_days: 2
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-first-pressed-yellow-mustard-oil-5-litre-pili-sarson-oil-for-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-15) — ref ₹1329 vs live ₹-
-- **Days below reference:** 2 of 8
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-16) — ref ₹1329 vs live ₹-
+- **Days below reference:** 2 of 9
 - **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (64 observations)
+## Ref-vs-live history (72 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -109,6 +109,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-15,flipkart,NOT_LISTED,BAU,1329,,,,,,0,false
 2026-06-15,flipkart-minutes,NOT_LISTED,BAU,1329,,,,,,0,false
 2026-06-15,zepto,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-06-16,amazon,MATCH,BAU,1329,1329,1329,1329,0,0,0,true
+2026-06-16,amazon-fresh,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-06-16,amazon-now,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-06-16,bigbasket,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-06-16,blinkit,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-06-16,flipkart,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-06-16,flipkart-minutes,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-06-16,zepto,NOT_LISTED,BAU,1329,,,,,,0,false
 ```
 
 ---
