@@ -128,7 +128,7 @@ fi
 # so we spool the day's pincode report into THIS sweep's batch — it lands WITH the other
 # platforms in BOTH the 12:00 and 15:00 batches (no re-pull; uses the 08:00 report).
 if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
-  BB_RPT="$(ls -t "$DIR"/output/Jivo-BigBasket-Pincode-Report-*.xlsx 2>/dev/null | head -1)"
+  BB_RPT="$DIR/output/Jivo-BigBasket-Pincode-Report-$(date +%F).xlsx"   # today's, by date (not mtime)
   if [ -n "$BB_RPT" ] && [ -f "$BB_RPT" ]; then
     BBDIR="$DIR/output/.batch/${SWEEP_ID}"; mkdir -p "$BBDIR" 2>>logs/telegram.log
     BB_RPT="$BB_RPT" BB_SUM="$DIR/platforms/bigbasket/result_pincode.json" python3 - "$BBDIR/bigbasket.json" 2>>logs/telegram.log <<'BBSPOOL'
