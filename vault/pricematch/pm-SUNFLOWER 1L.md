@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-16
-observations: 72
+last_seen: 2026-06-17
+observations: 80
 latest_status: BELOW
-below_days: 9
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-16) — ref ₹229 vs live ₹192
-- **Days below reference:** 9 of 9
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-17) — ref ₹229 vs live ₹192
+- **Days below reference:** 10 of 10
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
 
-## Ref-vs-live history (72 observations)
+## Ref-vs-live history (80 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -117,6 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,OOS,BAU,229,,,,,,0,false
 2026-06-16,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
 2026-06-16,zepto,BELOW,BAU,229,192,187,192,-37,-16.16,37,true
+2026-06-17,amazon,BELOW,BAU,229,195,195,195,-34,-14.85,1,true
+2026-06-17,amazon-fresh,BELOW,BAU,229,186,177,195,-43,-18.78,83,true
+2026-06-17,amazon-now,BELOW,BAU,229,177,177,195,-52,-22.71,66,true
+2026-06-17,bigbasket,BELOW,BAU,229,177.75,177.73,217.73,-51.25,-22.38,44,true
+2026-06-17,blinkit,BELOW,BAU,229,195,184,200,-34,-14.85,40,true
+2026-06-17,flipkart,OOS,BAU,229,,,,,,0,false
+2026-06-17,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
+2026-06-17,zepto,BELOW,BAU,229,192,186,192,-37,-16.16,31,true
 ```
 
 ---

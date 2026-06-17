@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-16
-observations: 72
+last_seen: 2026-06-17
+observations: 80
 latest_status: BELOW
-below_days: 9
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-16) — ref ₹219 vs live ₹181
-- **Days below reference:** 9 of 9
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-17) — ref ₹219 vs live ₹181
+- **Days below reference:** 10 of 10
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
 
-## Ref-vs-live history (72 observations)
+## Ref-vs-live history (80 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -117,6 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,OOS,BAU,219,,,,,,0,false
 2026-06-16,flipkart-minutes,BELOW,BAU,219,181,181,183,-38,-17.35,50,true
 2026-06-16,zepto,BELOW,BAU,219,181,180,181,-38,-17.35,56,true
+2026-06-17,amazon,BELOW,BAU,219,176,176,176,-43,-19.63,1,true
+2026-06-17,amazon-fresh,BELOW,BAU,219,176,176,219,-43,-19.63,68,true
+2026-06-17,amazon-now,BELOW,BAU,219,176,176,190,-43,-19.63,58,true
+2026-06-17,bigbasket,BELOW,BAU,219,202.1,202.09,215.86,-16.9,-7.72,7,true
+2026-06-17,blinkit,BELOW,BAU,219,169,167,169,-50,-22.83,15,true
+2026-06-17,flipkart,OOS,BAU,219,,,,,,0,false
+2026-06-17,flipkart-minutes,BELOW,BAU,219,181,176,181,-38,-17.35,49,true
+2026-06-17,zepto,BELOW,BAU,219,181,179,181,-38,-17.35,65,true
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-16
-observations: 72
+last_seen: 2026-06-17
+observations: 80
 latest_status: BELOW
-below_days: 9
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-16) — ref ₹1229 vs live ₹1194
-- **Days below reference:** 9 of 9
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-17) — ref ₹1229 vs live ₹1141
+- **Days below reference:** 10 of 10
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
 
-## Ref-vs-live history (72 observations)
+## Ref-vs-live history (80 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -117,6 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,OOS,BAU,1229,,,,,,0,false
 2026-06-16,flipkart-minutes,ABOVE,BAU,1229,1903,1903,2084,674,54.84,0,true
 2026-06-16,zepto,BELOW,BAU,1229,1194,1139,1201,-35,-2.85,42,true
+2026-06-17,amazon,BELOW,BAU,1229,1142,1142,1142,-87,-7.08,1,true
+2026-06-17,amazon-fresh,BELOW,BAU,1229,1139,1139,1229,-90,-7.32,104,true
+2026-06-17,amazon-now,BELOW,BAU,1229,1139,1139,1229,-90,-7.32,91,true
+2026-06-17,bigbasket,ABOVE,BAU,1229,1343,1343,2799,114,9.28,0,true
+2026-06-17,blinkit,BELOW,BAU,1229,1141,1139,1340,-88,-7.16,86,true
+2026-06-17,flipkart,BELOW,BAU,1229,1004,1004,1004,-225,-18.31,1,true
+2026-06-17,flipkart-minutes,ABOVE,BAU,1229,1903,1903,2084,674,54.84,0,true
+2026-06-17,zepto,BELOW,BAU,1229,1141,1139,1201,-88,-7.16,61,true
 ```
 
 ---

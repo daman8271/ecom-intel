@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-16
-observations: 72
+last_seen: 2026-06-17
+observations: 80
 latest_status: NOT_LISTED
-below_days: 8
+below_days: 9
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-16) — ref ₹269 vs live ₹-
-- **Days below reference:** 8 of 9
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-17) — ref ₹269 vs live ₹-
+- **Days below reference:** 9 of 10
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
 
-## Ref-vs-live history (72 observations)
+## Ref-vs-live history (80 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -117,6 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,ABOVE,BAU,269,319,319,319,50,18.59,0,true
 2026-06-16,flipkart-minutes,BELOW,BAU,269,251,235,271,-18,-6.69,36,true
 2026-06-16,zepto,NOT_LISTED,BAU,269,,,,,,0,false
+2026-06-17,amazon,BELOW,BAU,269,246,246,246,-23,-8.55,1,true
+2026-06-17,amazon-fresh,BELOW,BAU,269,246,239,279,-23,-8.55,105,true
+2026-06-17,amazon-now,BELOW,BAU,269,239,239,279,-30,-11.15,79,true
+2026-06-17,bigbasket,ABOVE,BAU,269,284,283.99,375,15,5.58,0,true
+2026-06-17,blinkit,BELOW,BAU,269,239,228,255,-30,-11.15,112,true
+2026-06-17,flipkart,ABOVE,BAU,269,319,319,319,50,18.59,0,true
+2026-06-17,flipkart-minutes,BELOW,BAU,269,239,234,271,-30,-11.15,34,true
+2026-06-17,zepto,NOT_LISTED,BAU,269,,,,,,0,false
 ```
 
 ---

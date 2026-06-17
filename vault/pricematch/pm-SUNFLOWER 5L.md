@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-16
-observations: 72
+last_seen: 2026-06-17
+observations: 80
 latest_status: OOS
-below_days: 5
+below_days: 6
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oi
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-16) — ref ₹1139 vs live ₹-
-- **Days below reference:** 5 of 9
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-17) — ref ₹1139 vs live ₹-
+- **Days below reference:** 6 of 10
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
 
-## Ref-vs-live history (72 observations)
+## Ref-vs-live history (80 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -117,6 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,OOS,BAU,1139,,,,,,0,false
 2026-06-16,flipkart-minutes,NOT_LISTED,BAU,1139,,,,,,0,false
 2026-06-16,zepto,OOS,BAU,1139,,,,,,0,false
+2026-06-17,amazon,MATCH,BAU,1139,1139,1139,1139,0,0,0,true
+2026-06-17,amazon-fresh,MATCH,BAU,1139,1139,1139,1139,0,0,0,true
+2026-06-17,amazon-now,MATCH,BAU,1139,1139,1139,1139,0,0,0,true
+2026-06-17,bigbasket,BELOW,BAU,1139,882.84,882.83,1350,-256.16,-22.49,34,true
+2026-06-17,blinkit,NOT_LISTED,BAU,1139,,,,,,0,false
+2026-06-17,flipkart,ABOVE,BAU,1139,1204,1204,1204,65,5.71,0,true
+2026-06-17,flipkart-minutes,NOT_LISTED,BAU,1139,,,,,,0,false
+2026-06-17,zepto,OOS,BAU,1139,,,,,,0,false
 ```
 
 ---

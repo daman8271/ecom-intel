@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-16
-observations: 72
+last_seen: 2026-06-17
+observations: 80
 latest_status: BELOW
-below_days: 9
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-ri
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-16) — ref ₹439 vs live ₹379
-- **Days below reference:** 9 of 9
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-17) — ref ₹439 vs live ₹379
+- **Days below reference:** 10 of 10
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
 
-## Ref-vs-live history (72 observations)
+## Ref-vs-live history (80 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -117,6 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,ABOVE,BAU,439,563,563,563,124,28.25,0,true
 2026-06-16,flipkart-minutes,BELOW,BAU,439,380,379,394,-59,-13.44,10,true
 2026-06-16,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,36,true
+2026-06-17,amazon,BELOW,BAU,439,379,379,379,-60,-13.67,1,true
+2026-06-17,amazon-fresh,BELOW,BAU,439,379,379,398,-60,-13.67,100,true
+2026-06-17,amazon-now,BELOW,BAU,439,379,379,398,-60,-13.67,82,true
+2026-06-17,bigbasket,ABOVE,BAU,439,549.68,462.19,1049,110.68,25.21,0,true
+2026-06-17,blinkit,BELOW,BAU,439,398,379,503,-41,-9.34,120,true
+2026-06-17,flipkart,ABOVE,BAU,439,563,563,563,124,28.25,0,true
+2026-06-17,flipkart-minutes,BELOW,BAU,439,379,379,394,-60,-13.67,10,true
+2026-06-17,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,48,true
 ```
 
 ---

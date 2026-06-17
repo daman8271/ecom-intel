@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-16
-observations: 72
+last_seen: 2026-06-17
+observations: 80
 latest_status: NOT_LISTED
 below_days: 7
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-groundnut-oil-5-litre-cold-pressed-unrefined-peanut-oil-for-c
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-16) — ref ₹1269 vs live ₹-
-- **Days below reference:** 7 of 9
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-17) — ref ₹1269 vs live ₹-
+- **Days below reference:** 7 of 10
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]]
 
-## Ref-vs-live history (72 observations)
+## Ref-vs-live history (80 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -117,6 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,OOS,BAU,1269,,,,,,0,false
 2026-06-16,flipkart-minutes,NOT_LISTED,BAU,1269,,,,,,0,false
 2026-06-16,zepto,NOT_LISTED,BAU,1269,,,,,,0,false
+2026-06-17,amazon,OOS,BAU,1269,,,,,,0,false
+2026-06-17,amazon-fresh,MATCH,BAU,1269,1269,1045,2800,0,0,34,true
+2026-06-17,amazon-now,MATCH,BAU,1269,1269,1045,2800,0,0,35,true
+2026-06-17,bigbasket,NOT_LISTED,BAU,1269,,,,,,0,false
+2026-06-17,blinkit,NOT_LISTED,BAU,1269,,,,,,0,false
+2026-06-17,flipkart,OOS,BAU,1269,,,,,,0,false
+2026-06-17,flipkart-minutes,NOT_LISTED,BAU,1269,,,,,,0,false
+2026-06-17,zepto,NOT_LISTED,BAU,1269,,,,,,0,false
 ```
 
 ---

@@ -5,11 +5,11 @@ display_name: "Jivo Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and 
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-16
-observations: 26
-min_price: 960
+last_seen: 2026-06-17
+observations: 27
+min_price: 950
 max_price: 998
-latest_price: 998
+latest_price: 950
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Extra Light Olive Oil, 1L for Cooking, Dressings, Salad and Soups, Dips & Marinades. (Pack of 2) (1LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹998 (66.7% off)
+- [[amazon]] — latest ₹950 (68.3% off)
 
-## Runs that observed this SKU (26)
-[[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (27)
+[[amazon-2026-06-17-0901]] · [[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (26 observations)
+## Price history (27 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -57,6 +57,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-15-1231,2026-06-15,amazon,All India,-,960,2998,68,1
 2026-06-16-0853,2026-06-16,amazon,All India,-,998,2998,66.7,1
 2026-06-16-1228,2026-06-16,amazon,All India,-,998,2998,66.7,1
+2026-06-17-0901,2026-06-17,amazon,All India,-,950,2998,68.3,1
 ```
 
 ---
