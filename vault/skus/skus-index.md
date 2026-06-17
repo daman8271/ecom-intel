@@ -614,7 +614,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch
 - [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] — Jivo Cold Pressed Kachi Ghani Mustard Oil 1l With Makki Atta 500g 1l
 - [[jivo-cold-pressed-sunflower-oil-combo-pack-5l]] — Jivo Cold Pressed Sunflower Oil Combo Pack 5l
-- [[jivo-cold-pressed-sunflower-soyabean-oil-1l-each-1l]] — Jivo Cold Pressed Sunflower & Soyabean Oil 1L Each (Pack of 2) (1 l)
+- [[jivo-cold-pressed-sunflower-soyabean-oil-1l-each-1l]] — Jivo Cold Pressed Sunflower Soyabean Oil 1l Each 1l
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2]] — Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0b4sjtnf2
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0h111xbjq]] — Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l B0h111xbjq
@@ -755,7 +755,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
 - [[jivo-gold-refined-oil-1l]] — Jivo Gold Refined Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-s-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran S Na
-- [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Su
+- [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
 - [[jivo-green-cardamom-8mm-elaichi-na]] — Jivo Green Cardamom 8mm Elaichi Na
 - [[jivo-groundnut-oil-1-litre-1l]] — Jivo Groundnut Oil 1 Litre 1l

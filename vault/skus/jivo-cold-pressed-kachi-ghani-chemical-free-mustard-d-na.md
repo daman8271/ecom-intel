@@ -7,7 +7,7 @@ platforms:
   - amazon-now
 first_seen: 2026-06-02
 last_seen: 2026-06-17
-observations: 48
+observations: 61
 min_price: 167
 max_price: 190
 latest_price: 176
@@ -25,15 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹181 (29.0% off)
-- [[amazon-now]] — latest ₹176 (21.8% off)
+- [[amazon-now]] — latest ₹176 (31.0% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (11)
-[[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-02-0900]]
+## Runs that observed this SKU (12)
+[[amazon-now-2026-06-17-1405]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-02-0900]]
 
-## Price history (48 observations)
+## Price history (61 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -85,6 +85,19 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-17-1021,2026-06-17,amazon-now,Gurgaon,122051,181,255,29,1
 2026-06-17-1021,2026-06-17,amazon-now,Mumbai,400026,176,255,31,1
 2026-06-17-1021,2026-06-17,amazon-now,Pune,411040,176,225,21.8,1
+2026-06-17-1405,2026-06-17,amazon-now,Bengaluru,560029,176,255,31,1
+2026-06-17-1405,2026-06-17,amazon-now,Delhi,110003,190,255,25.5,1
+2026-06-17-1405,2026-06-17,amazon-now,Delhi,110006,181,255,29,1
+2026-06-17-1405,2026-06-17,amazon-now,Delhi,110007,181,255,29,1
+2026-06-17-1405,2026-06-17,amazon-now,Ghaziabad,201005,176,255,31,1
+2026-06-17-1405,2026-06-17,amazon-now,Gurgaon,122006,181,255,29,1
+2026-06-17-1405,2026-06-17,amazon-now,Jaipur,302023,176,255,31,1
+2026-06-17-1405,2026-06-17,amazon-now,Mumbai,400003,184,255,27.8,1
+2026-06-17-1405,2026-06-17,amazon-now,Mumbai,400004,176,255,31,1
+2026-06-17-1405,2026-06-17,amazon-now,Mumbai,400019,176,255,31,1
+2026-06-17-1405,2026-06-17,amazon-now,Noida,201307,176,255,31,1
+2026-06-17-1405,2026-06-17,amazon-now,Pune,411028,176,255,31,1
+2026-06-17-1405,2026-06-17,amazon-now,Pune,411045,176,255,31,1
 ```
 
 ---

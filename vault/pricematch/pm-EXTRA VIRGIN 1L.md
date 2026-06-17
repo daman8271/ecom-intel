@@ -15,7 +15,7 @@ first_seen: 2026-06-08
 last_seen: 2026-06-17
 observations: 80
 latest_status: ABOVE
-below_days: 5
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,8 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** 🟢 above ref on [[zepto]] (2026-06-17) — ref ₹809 vs live ₹989
-- **Days below reference:** 5 of 10
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
+- **Days below reference:** 4 of 10
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]]
 
 ## Ref-vs-live history (80 observations)
 
@@ -117,14 +117,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-16,flipkart,BELOW,BAU,809,794,794,794,-15,-1.85,1,true
 2026-06-16,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
 2026-06-16,zepto,ABOVE,BAU,809,989,940,1025,180,22.25,0,true
-2026-06-17,amazon,BELOW,BAU,809,795,795,795,-14,-1.73,1,true
+2026-06-17,amazon,MATCH,BAU,809,809,809,809,0,0,0,true
 2026-06-17,amazon-fresh,MATCH,BAU,809,809,789,809,0,0,26,true
 2026-06-17,amazon-now,MATCH,BAU,809,809,789,809,0,0,18,true
 2026-06-17,bigbasket,ABOVE,BAU,809,1012,1012,1799,203,25.09,0,true
 2026-06-17,blinkit,NOT_LISTED,BAU,809,,,,,,0,false
 2026-06-17,flipkart,ABOVE,BAU,809,872,872,872,63,7.79,0,true
 2026-06-17,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
-2026-06-17,zepto,ABOVE,BAU,809,989,940,1006,180,22.25,0,true
+2026-06-17,zepto,ABOVE,BAU,809,989,940,989,180,22.25,0,true
 ```
 
 ---
