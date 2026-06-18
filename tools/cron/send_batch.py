@@ -42,6 +42,7 @@ TGLOG = os.path.join(ROOT, "logs", "telegram.log")
 CANONICAL = [
     "flipkart-minutes", "flipkart", "zepto", "bigbasket",
     "amazon", "amazon-fresh", "amazon-now", "blinkit",
+    "swiggy-instamart",   # residential-IP collector, spooled from output/ by run_all.sh
     "price-match",   # master Price Match workbook — sent LAST (most visible in chat)
 ]
 

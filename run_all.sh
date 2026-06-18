@@ -155,6 +155,38 @@ BBSPOOL
   fi
 fi
 
+# Swiggy Instamart — scraped OFF-BOX on a residential IP (Mac launchd @02:30 IST; this
+# VPS datacenter IP is WAF-blocked on Swiggy's search endpoint) and dropped+ingested into
+# output/ by ~04:00. Spool the day's report into THIS sweep's batch so it lands WITH the
+# other platforms in BOTH the 12:00 and 15:00 batches (no scrape here). Skipped if absent.
+if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
+  SI_RPT="$DIR/output/Jivo-SwiggyInstamart-Live-Report-$(date +%F).xlsx"   # today's, by date
+  if [ -n "$SI_RPT" ] && [ -f "$SI_RPT" ]; then
+    SIDIR="$DIR/output/.batch/${SWEEP_ID}"; mkdir -p "$SIDIR" 2>>logs/telegram.log
+    SI_RPT="$SI_RPT" SI_SUM="$DIR/platforms/swiggy-instamart/result.json" python3 - "$SIDIR/swiggy-instamart.json" 2>>logs/telegram.log <<'SISPOOL'
+import json, os, sys, time
+out = sys.argv[1]; xlsx = os.path.abspath(os.environ["SI_RPT"])
+s = {}
+try:
+    s = json.load(open(os.environ["SI_SUM"]))["summary"]
+except Exception:
+    pass
+date = (s.get("captured_at", "") or "")[:10] or time.strftime("%Y-%m-%d")
+summ = (f"*Swiggy Instamart — residential-IP collector*\n{date}\n"
+        f"{s.get('pincodes_with_jivo','?')}/{s.get('pincodes_total','?')} pincodes carry Jivo · "
+        f"{s.get('unique_skus','?')} SKUs · {s.get('total_rows','?')} datapoints")
+tmp = out + ".tmp"
+json.dump({"platform": "swiggy-instamart", "verdict": "OK", "summary": summ, "xlsx": xlsx,
+           "caption": f"Jivo x Swiggy Instamart · {date}", "ts": int(time.time())},
+          open(tmp, "w"), ensure_ascii=False)
+os.replace(tmp, out)
+SISPOOL
+    echo "[$(date '+%F %T')] run_all: swiggy-instamart spooled for batch -> $SIDIR/swiggy-instamart.json (sweep ${SWEEP_ID})"
+  else
+    echo "[$(date '+%F %T')] run_all: swiggy-instamart report not in output/ — skipped (residential drop late/absent)"
+  fi
+fi
+
 # One standalone violations workbook per sweep: every platform x every SKU vs the
 # day's regime reference (tools/pricematch/build_pricematch.py; Ecom Head first
 # sheet). Built AFTER the platform loop (freshest result.json for all platforms,

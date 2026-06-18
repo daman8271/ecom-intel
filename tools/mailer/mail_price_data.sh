@@ -80,6 +80,14 @@ EXPECTED=(
   "output/Jivo-Price-Match-$D.xlsx"
 )
 
+# Swiggy Instamart is produced OFF-BOX (Mac, residential IP — this datacenter IP is
+# WAF-blocked on Swiggy search) and dropped in via scp+ingest.sh ~04:00 IST. Attach it
+# if present, but it must NEVER gate the wait loop: a missing/late Swiggy report must not
+# stall the whole team's batch. So it lives in EXTRA, not EXPECTED.
+EXTRA=(
+  "output/Jivo-SwiggyInstamart-Live-Report-$D.xlsx"
+)
+
 deadline=$(( $(date +%s) + MAX_WAIT ))
 while :; do
   now=$(date +%s); ready=1
@@ -97,7 +105,7 @@ while :; do
 done
 
 PRESENT=()
-for f in "${EXPECTED[@]}"; do [ -f "$f" ] && PRESENT+=("$f"); done
+for f in "${EXPECTED[@]}" "${EXTRA[@]}"; do [ -f "$f" ] && PRESENT+=("$f"); done
 if [ ${#PRESENT[@]} -eq 0 ]; then
   echo "ERROR: no report files for $D — nothing sent"
   alert "no report files for $D — nothing sent"
@@ -109,7 +117,7 @@ fi
 TEAM="dev04@jivo.in,ecom4@jivo.in,ecom3@jivo.in,ecom1@jivo.in,ecom8@jivo.in,pr@jivo.in,tanuj@jivo.in,ecomoperations@jivo.in,marketplace@jivo.in,ecomb2b@jivo.in,manav@jivo.in,kamaldeep@jivo.in,ps@jivo.in"
 TO="${PRICE_MAIL_TO:-$TEAM}"
 SUBJ="Jivo Price Data — $(date '+%-I:%M %p') IST — $D"
-BODY="Today's price data reports attached (${#PRESENT[@]}/9 files): $(basename -a "${PRESENT[@]}" | paste -sd ', ' -)"
+BODY="Today's price data reports attached (${#PRESENT[@]}/$(( ${#EXPECTED[@]} + ${#EXTRA[@]} )) files): $(basename -a "${PRESENT[@]}" | paste -sd ', ' -)"
 ATTACH=()
 for f in "${PRESENT[@]}"; do ATTACH+=(--attach "$f"); done
 
