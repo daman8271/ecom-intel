@@ -239,7 +239,12 @@ wsS.merge_cells(start_row=1, start_column=1, end_row=1, end_column=min(7, wsS.ma
 wsS.freeze_panes = "B3"
 # Sheet 5: Discount Analysis (avg disc per city) — deep discount is a BRAND
 # COMPLIANCE RISK, not a win: deepest discount = RED (fresh-eyes S14).
-matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] / 100 for x in c if x['discount_pct'] is not None]), 3) if any(x['discount_pct'] is not None for x in c) else None, '0.0%', scale=True)
+def modal_disc(cands):
+    vals = [x['discount_pct'] for x in cands if x['discount_pct'] is not None]
+    if not vals: return None
+    cnt = Counter(vals); top = max(cnt.values())
+    return round(min(v for v, n in cnt.items() if n == top) / 100, 3)
+matrix("Discount Analysis", modal_disc, '0.0%', scale=True)
 
 # ---------- Sheet 6: Now Serviceability & Coverage ----------
 # For Amazon Now the key per-pincode facts are: is Now serviceable here at all, and

@@ -159,8 +159,13 @@ for row in wsS.iter_rows(min_row=2):
     for cell in row:
         if cell.column > 1 and isinstance(cell.value, (int, float)):
             cell.fill = GREEN if cell.value == 100 else (RED if cell.value == 0 else YEL)
-# Sheet 5: Discount Analysis (avg disc per city) - higher = greener
-matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] for x in c if x['discount_pct'] is not None]), 1) if any(x['discount_pct'] is not None for x in c) else None, '0.0"%"', scale=True, scale_rev=True)
+# Sheet 5: Discount Analysis (modal disc per city) - higher = greener
+def modal_disc(cands):
+    vals = [x['discount_pct'] for x in cands if x['discount_pct'] is not None]
+    if not vals: return None
+    cnt = Counter(vals); top = max(cnt.values())
+    return round(min(v for v, n in cnt.items() if n == top), 1)
+matrix("Discount Analysis", modal_disc, '0.0"%"', scale=True, scale_rev=True)
 
 # ---------- Sheet 6: Coverage / Gaps ----------
 ws = wb.create_sheet("Coverage & Gaps")
