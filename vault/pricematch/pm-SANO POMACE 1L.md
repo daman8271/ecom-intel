@@ -15,7 +15,7 @@ first_seen: 2026-06-08
 last_seen: 2026-06-18
 observations: 88
 latest_status: NOT_LISTED
-below_days: 11
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,8 @@ SKU memory: [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** ▫️ not listed on [[zepto]] (2026-06-18) — ref ₹419 vs live ₹-
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Days below reference:** 10 of 11
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
 
 ## Ref-vs-live history (88 observations)
 
@@ -130,7 +130,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-18,bigbasket,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-18,blinkit,NOT_LISTED,BAU,419,,,,,,0,false
-2026-06-18,flipkart,BELOW,BAU,419,387,387,387,-32,-7.64,1,true
+2026-06-18,flipkart,ABOVE,BAU,419,440,440,440,21,5.01,0,true
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-18,zepto,NOT_LISTED,BAU,419,,,,,,0,false
 ```

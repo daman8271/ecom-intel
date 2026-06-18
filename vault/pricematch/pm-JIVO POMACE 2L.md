@@ -37,7 +37,7 @@ SKU memory: [[jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-18) — ref ₹869 vs live ₹1045
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-18) — ref ₹869 vs live ₹1014
 - **Days below reference:** 11 of 11
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
 
@@ -130,9 +130,9 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,amazon-now,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-18,bigbasket,ABOVE,BAU,869,1100,983.03,1117,231,26.58,0,true
 2026-06-18,blinkit,NOT_LISTED,BAU,869,,,,,,0,false
-2026-06-18,flipkart,BELOW,BAU,869,826,826,826,-43,-4.95,1,true
+2026-06-18,flipkart,ABOVE,BAU,869,887,887,887,18,2.07,0,true
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
-2026-06-18,zepto,ABOVE,BAU,869,1045,988,1049,176,20.25,0,true
+2026-06-18,zepto,ABOVE,BAU,869,1014,977,1049,145,16.69,0,true
 ```
 
 ---

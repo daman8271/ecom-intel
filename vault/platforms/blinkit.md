@@ -4,7 +4,7 @@ platform: blinkit
 kind: quick-commerce
 shape: per-pincode
 risk: low
-runs: 63
+runs: 64
 skus_tracked: 9
 tags:
   - type/platform-hub
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **blinkit**. Blinkit 10-20 min delivery; pricing is per-pincode (top-cities sweep).
 
 - **Type:** quick-commerce · **Shape:** per-pincode · **Block risk:** low
-- **Runs captured:** 63 · **SKUs tracked:** 9
+- **Runs captured:** 64 · **SKUs tracked:** 9
 
 ## SKUs on blinkit (9)
 [[jivo-cold-pressed-canola-oil-1l]] · [[jivo-cold-pressed-canola-oil-5l]] · [[jivo-cold-pressed-sunflower-oil-1l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-kachi-ghani-cold-pressed-mustard-oil-1l]] · [[jivo-kachi-ghani-cold-pressed-mustard-oil-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]]
 
-## Runs (63) — newest first
+## Runs (64) — newest first
 
 <!-- runs:start -->
+- [[blinkit-2026-06-18-1439]] — 2026-06-18 · verdict OK <!-- run -->
 - [[blinkit-2026-06-18-1053]] — 2026-06-18 · verdict OK <!-- run -->
 - [[blinkit-2026-06-17-1446]] — 2026-06-17 · verdict OK <!-- run -->
 - [[blinkit-2026-06-17-1103]] — 2026-06-17 · verdict OK <!-- run -->

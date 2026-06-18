@@ -4,7 +4,7 @@ platform: bigbasket
 kind: marketplace
 shape: national
 risk: low
-runs: 43
+runs: 44
 skus_tracked: 30
 tags:
   - type/platform-hub
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **bigbasket**. bigbasket scraper.
 
 - **Type:** marketplace · **Shape:** national · **Block risk:** low
-- **Runs captured:** 43 · **SKUs tracked:** 30
+- **Runs captured:** 44 · **SKUs tracked:** 30
 
 ## SKUs on bigbasket (30)
 [[apple-healthy-wheatgrass-juice-200ml]] · [[apple-healthy-wheatgrass-juice-sugar-free-200ml]] · [[blueberry-healthy-wheatgrass-juice-200ml]] · [[canola-oil-cold-pressed-1l]] · [[canola-oil-cold-pressed-5l]] · [[canola-omega3-rich-cooking-oil-1-l-1l]] · [[cold-press-kachi-ghani-mustard-oil-1l]] · [[cold-press-kachi-ghani-mustard-oil-5l]] · [[cold-pressed-soyabean-oil-1l]] · [[cold-pressed-sunflower-oil-1l]] · [[extra-light-olive-oil-1l]] · [[extra-light-olive-oil-5l]] · [[extra-light-olive-oil-antioxidants-rich-light-cooking-medium-for-frying-grilling-2l]] · [[extra-virgin-coconut-oil-1l]] · [[extra-virgin-olive-oil-antioxidants-rich-suitable-for-salads-saute-1l]] · [[extravirgin-olive-oil-5l]] · [[fizzy-water-flavoured-with-lemon-750ml]] · [[fizzy-water-flavoured-with-peach-750ml]] · [[ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml]] · [[gold-multisource-edible-oil-5l]] · [[indian-tonic-water-200ml]] · [[mango-healthy-wheatgrass-juice-200ml]] · [[mango-healthy-wheatgrass-juice-500ml]] · [[mojito-healthy-wheatgrass-juice-200ml]] · [[mojito-healthy-wheatgrass-juice-sugar-free-200ml]] · [[pomace-olive-oil-1l]] · [[pomace-olive-oil-2l]] · [[pomace-olive-oil-5l]] · [[rose-healthy-wheatgrass-juice-200ml]] · [[sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l]]
 
-## Runs (43) — newest first
+## Runs (44) — newest first
 
 <!-- runs:start -->
+- [[bigbasket-2026-06-18-1630]] — 2026-06-18 · verdict OK <!-- run -->
 - [[bigbasket-2026-06-17-1634]] — 2026-06-17 · verdict OK <!-- run -->
 - [[bigbasket-2026-06-16-1228]] — 2026-06-16 · verdict OK <!-- run -->
 - [[bigbasket-2026-06-16-0852]] — 2026-06-16 · verdict OK <!-- run -->

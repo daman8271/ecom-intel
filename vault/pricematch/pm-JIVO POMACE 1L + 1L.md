@@ -130,9 +130,9 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,amazon-now,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-18,bigbasket,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-18,blinkit,NOT_LISTED,BAU,869,,,,,,0,false
-2026-06-18,flipkart,BELOW,BAU,869,780,780,780,-89,-10.24,1,true
+2026-06-18,flipkart,BELOW,BAU,869,840,840,840,-29,-3.34,1,true
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
-2026-06-18,zepto,BELOW,BAU,869,758,758,758,-111,-12.77,17,true
+2026-06-18,zepto,BELOW,BAU,869,758,758,758,-111,-12.77,34,true
 ```
 
 ---
