@@ -40,6 +40,24 @@ python3 "$COLL/collector/swiggy_pricematch_sheet.py" "$XLSX"       || echo "[ing
 
 echo "[ingest] built $(basename "$XLSX")"
 
+# 4b) GUARD: refuse to deliver a broken report (100x discount, empty, etc.).
+#     A missing Swiggy file never stalls the team batch (it's an attach-if-present
+#     EXTRA), so blocking a bad one is the safe default. Best-effort Telegram alert.
+if ! python3 "$COLL/collector/validate_report.py" "$XLSX"; then
+  echo "[ingest] VALIDATION FAILED — NOT delivering $(basename "$XLSX")" >&2
+  if [ -f "$ROOT/secrets.env" ]; then
+    # shellcheck disable=SC1091
+    set -a; . "$ROOT/secrets.env"; set +a
+    if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ]; then
+      curl -s --max-time 30 -X POST \
+        "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+        -d chat_id="${TELEGRAM_CHAT_ID}" \
+        -d text="⚠️ Swiggy Instamart report FAILED validation ($(date +%F)) — not delivered. Check ingest log." >/dev/null || true
+    fi
+  fi
+  exit 3
+fi
+
 # 5) deliver into the pipeline pickup dir (only when asked)
 if [ "$DELIVER" = "--deliver" ]; then
   cp "$XLSX" "$ROOT/output/$(basename "$XLSX")"
