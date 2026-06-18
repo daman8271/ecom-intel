@@ -1,5 +1,5 @@
 import json, datetime, statistics, os
-from collections import defaultdict, OrderedDict
+from collections import defaultdict, OrderedDict, Counter
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
@@ -156,8 +156,13 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
     autosize(ws, maxw=14)
     return ws
 
-# Sheet 3: Pricing Matrix (avg sale per city) - green cheap -> red expensive
-matrix("Pricing Matrix", lambda c: round(statistics.mean([x['sale'] for x in c])), '"Rs"#,##0', scale=True)
+# Sheet 3: Pricing Matrix (modal sale per city) - green cheap -> red expensive
+def modal_price(cands):
+    prices = [x['sale'] for x in cands if x['sale'] is not None]
+    if not prices: return None
+    cnt = Counter(prices); top = max(cnt.values())
+    return round(min(p for p, n in cnt.items() if n == top))
+matrix("Pricing Matrix", modal_price, '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
     pct = round(100 * sum(x['in_stock'] for x in c) / len(c))
