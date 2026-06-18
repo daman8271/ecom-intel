@@ -1,12 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na
-display_name: Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
+display_name: Jivo Gold Refined Oil Perfect Blend of Rice Bran & Su
 platforms:
   - amazon-now
 first_seen: 2026-06-06
-last_seen: 2026-06-17
-observations: 7
+last_seen: 2026-06-18
+observations: 10
 min_price: 909
 max_price: 930
 latest_price: 930
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na**
+**Jivo Gold Refined Oil Perfect Blend of Rice Bran & Su**
 
 ## Sold on
 - [[amazon-now]] — latest ₹930 (11.4% off)
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]]
 
-## Runs that observed this SKU (4)
-[[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-06-0729]]
+## Runs that observed this SKU (5)
+[[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-06-0729]]
 
-## Price history (7 observations)
+## Price history (10 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -41,6 +41,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-17-1021,2026-06-17,amazon-now,Delhi,110006,930,1050,11.4,1
 2026-06-17-1021,2026-06-17,amazon-now,Delhi,110017,930,1050,11.4,1
 2026-06-17-1021,2026-06-17,amazon-now,Delhi,110083,930,1050,11.4,1
+2026-06-18-1013,2026-06-18,amazon-now,Delhi,110084,930,1050,11.4,1
+2026-06-18-1013,2026-06-18,amazon-now,Delhi,110090,930,1050,11.4,1
+2026-06-18-1013,2026-06-18,amazon-now,Delhi,110092,930,1050,11.4,1
 ```
 
 ---

@@ -5,8 +5,8 @@ display_name: JIVO Pomace Cooking Olive Oil Tin (5000 ml)
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-11
-last_seen: 2026-06-17
-observations: 13
+last_seen: 2026-06-18
+observations: 15
 min_price: 4898
 max_price: 4898
 latest_price: 4898
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Faridabad]]
 
-## Runs that observed this SKU (13)
-[[flipkart-minutes-2026-06-17-1211]] · [[flipkart-minutes-2026-06-17-0832]] · [[flipkart-minutes-2026-06-16-1204]] · [[flipkart-minutes-2026-06-16-0832]] · [[flipkart-minutes-2026-06-15-1208]] · [[flipkart-minutes-2026-06-15-0832]] · [[flipkart-minutes-2026-06-14-1208]] · [[flipkart-minutes-2026-06-14-0832]] · [[flipkart-minutes-2026-06-13-1205]] · [[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]] · [[flipkart-minutes-2026-06-11-1215]]
+## Runs that observed this SKU (15)
+[[flipkart-minutes-2026-06-18-1202]] · [[flipkart-minutes-2026-06-18-0832]] · [[flipkart-minutes-2026-06-17-1211]] · [[flipkart-minutes-2026-06-17-0832]] · [[flipkart-minutes-2026-06-16-1204]] · [[flipkart-minutes-2026-06-16-0832]] · [[flipkart-minutes-2026-06-15-1208]] · [[flipkart-minutes-2026-06-15-0832]] · [[flipkart-minutes-2026-06-14-1208]] · [[flipkart-minutes-2026-06-14-0832]] · [[flipkart-minutes-2026-06-13-1205]] · [[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]] · [[flipkart-minutes-2026-06-11-1215]]
 
-## Price history (13 observations)
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -47,6 +47,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-1204,2026-06-16,flipkart-minutes,Faridabad,121011,4898,,,1
 2026-06-17-0832,2026-06-17,flipkart-minutes,Faridabad,121011,4898,,,1
 2026-06-17-1211,2026-06-17,flipkart-minutes,Faridabad,121011,4898,,,1
+2026-06-18-0832,2026-06-18,flipkart-minutes,Faridabad,121011,4898,,,1
+2026-06-18-1202,2026-06-18,flipkart-minutes,Faridabad,121011,4898,,,1
 ```
 
 ---

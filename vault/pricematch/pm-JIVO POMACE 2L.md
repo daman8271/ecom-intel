@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-17
-observations: 80
+last_seen: 2026-06-18
+observations: 88
 latest_status: ABOVE
-below_days: 10
+below_days: 11
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-17) — ref ₹869 vs live ₹1009
-- **Days below reference:** 10 of 10
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-18) — ref ₹869 vs live ₹1045
+- **Days below reference:** 11 of 11
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
 
-## Ref-vs-live history (80 observations)
+## Ref-vs-live history (88 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -125,6 +125,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-17,flipkart,BELOW,BAU,869,826,826,826,-43,-4.95,1,true
 2026-06-17,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-17,zepto,ABOVE,BAU,869,1009,832,1049,140,16.11,3,true
+2026-06-18,amazon,BELOW,BAU,869,849,849,849,-20,-2.3,1,true
+2026-06-18,amazon-fresh,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-18,amazon-now,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-18,bigbasket,ABOVE,BAU,869,1100,983.03,1117,231,26.58,0,true
+2026-06-18,blinkit,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-18,flipkart,BELOW,BAU,869,826,826,826,-43,-4.95,1,true
+2026-06-18,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
+2026-06-18,zepto,ABOVE,BAU,869,1045,988,1049,176,20.25,0,true
 ```
 
 ---

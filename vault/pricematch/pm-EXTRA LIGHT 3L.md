@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-17
-observations: 80
+last_seen: 2026-06-18
+observations: 88
 latest_status: NOT_LISTED
 below_days: 8
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-17) — ref ₹1849 vs live ₹-
-- **Days below reference:** 8 of 10
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-18) — ref ₹1849 vs live ₹-
+- **Days below reference:** 8 of 11
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]]
 
-## Ref-vs-live history (80 observations)
+## Ref-vs-live history (88 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -125,6 +125,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-17,flipkart,OOS,BAU,1849,,,,,,0,false
 2026-06-17,flipkart-minutes,NOT_LISTED,BAU,1849,,,,,,0,false
 2026-06-17,zepto,NOT_LISTED,BAU,1849,,,,,,0,false
+2026-06-18,amazon,OOS,BAU,1849,,,,,,0,false
+2026-06-18,amazon-fresh,NOT_LISTED,BAU,1849,,,,,,0,false
+2026-06-18,amazon-now,NOT_LISTED,BAU,1849,,,,,,0,false
+2026-06-18,bigbasket,NOT_LISTED,BAU,1849,,,,,,0,false
+2026-06-18,blinkit,NOT_LISTED,BAU,1849,,,,,,0,false
+2026-06-18,flipkart,OOS,BAU,1849,,,,,,0,false
+2026-06-18,flipkart-minutes,NOT_LISTED,BAU,1849,,,,,,0,false
+2026-06-18,zepto,NOT_LISTED,BAU,1849,,,,,,0,false
 ```
 
 ---
