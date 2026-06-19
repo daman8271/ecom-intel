@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 1
-observations: 32
+observations: 33
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Coimbatore (1)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]]
 
-## Observations (32 rows)
+## Observations (33 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -60,6 +60,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,641002,256,375,31,1
 2026-06-05-1039,2026-06-05,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,641002,256,375,31,1
 2026-06-08-0832,2026-06-08,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,641002,255,375,32,1
+2026-06-19-0832,2026-06-19,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,641002,247,375,34,0
 ```
 
 ---

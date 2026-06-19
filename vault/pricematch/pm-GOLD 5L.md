@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: OOS
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-coo
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-18) — ref ₹989 vs live ₹-
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-19) — ref ₹939 vs live ₹-
+- **Days below reference:** 12 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,OOS,BAU,989,,,,,,0,false
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,989,,,,,,0,false
 2026-06-18,zepto,OOS,BAU,989,,,,,,0,false
+2026-06-19,amazon,ABOVE,SVD,939,961,961,961,22,2.34,0,true
+2026-06-19,amazon-fresh,BELOW,SVD,939,930,930,961,-9,-0.96,20,true
+2026-06-19,amazon-now,BELOW,SVD,939,930,930,930,-9,-0.96,16,true
+2026-06-19,bigbasket,NOT_LISTED,SVD,939,,,,,,0,false
+2026-06-19,blinkit,NOT_LISTED,SVD,939,,,,,,0,false
+2026-06-19,flipkart,OOS,SVD,939,,,,,,0,false
+2026-06-19,flipkart-minutes,NOT_LISTED,SVD,939,,,,,,0,false
+2026-06-19,zepto,OOS,SVD,939,,,,,,0,false
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: NOT_LISTED
-below_days: 8
+below_days: 9
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-18) — ref ₹419 vs live ₹-
-- **Days below reference:** 8 of 11
-- **Below on:** [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-19) — ref ₹409 vs live ₹-
+- **Days below reference:** 9 of 12
+- **Below on:** [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,ABOVE,BAU,419,440,440,440,21,5.01,0,true
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
 2026-06-18,zepto,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-19,amazon,BELOW,SVD,409,379,379,379,-30,-7.33,1,true
+2026-06-19,amazon-fresh,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-19,amazon-now,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-19,bigbasket,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-19,blinkit,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-19,flipkart,BELOW,SVD,409,400,400,400,-9,-2.2,1,true
+2026-06-19,flipkart-minutes,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-19,zepto,NOT_LISTED,SVD,409,,,,,,0,false
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: ABOVE
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contai
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-18) — ref ₹4039 vs live ₹7920
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-19) — ref ₹3939 vs live ₹7920
+- **Days below reference:** 12 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,ABOVE,BAU,4039,4121,4121,4121,82,2.03,0,true
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,4039,,,,,,0,false
 2026-06-18,zepto,ABOVE,BAU,4039,7920,4541,7920,3881,96.09,0,true
+2026-06-19,amazon,BELOW,SVD,3939,3599,3599,3599,-340,-8.63,1,true
+2026-06-19,amazon-fresh,NOT_LISTED,SVD,3939,,,,,,0,false
+2026-06-19,amazon-now,NOT_LISTED,SVD,3939,,,,,,0,false
+2026-06-19,bigbasket,NOT_LISTED,SVD,3939,,,,,,0,false
+2026-06-19,blinkit,NOT_LISTED,SVD,3939,,,,,,0,false
+2026-06-19,flipkart,BELOW,SVD,3939,3072,3072,3072,-867,-22.01,1,true
+2026-06-19,flipkart-minutes,NOT_LISTED,SVD,3939,,,,,,0,false
+2026-06-19,zepto,ABOVE,SVD,3939,7920,7920,7920,3981,101.07,0,true
 ```
 
 ---

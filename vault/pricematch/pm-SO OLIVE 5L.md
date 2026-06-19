@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: NOT_LISTED
-below_days: 10
+below_days: 11
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-so-olive-oil-5-litre-blend-of-rice-bran-olive-oil-nutritious-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-18) — ref ₹1419 vs live ₹-
-- **Days below reference:** 10 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-19) — ref ₹1369 vs live ₹-
+- **Days below reference:** 11 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,ABOVE,BAU,1419,1438,1438,1438,19,1.34,0,true
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,1419,,,,,,0,false
 2026-06-18,zepto,NOT_LISTED,BAU,1419,,,,,,0,false
+2026-06-19,amazon,ABOVE,SVD,1369,1419,1419,1419,50,3.65,0,true
+2026-06-19,amazon-fresh,NOT_LISTED,SVD,1369,,,,,,0,false
+2026-06-19,amazon-now,NOT_LISTED,SVD,1369,,,,,,0,false
+2026-06-19,bigbasket,NOT_LISTED,SVD,1369,,,,,,0,false
+2026-06-19,blinkit,NOT_LISTED,SVD,1369,,,,,,0,false
+2026-06-19,flipkart,BELOW,SVD,1369,1241,1241,1241,-128,-9.35,1,true
+2026-06-19,flipkart-minutes,NOT_LISTED,SVD,1369,,,,,,0,false
+2026-06-19,zepto,NOT_LISTED,SVD,1369,,,,,,0,false
 ```
 
 ---

@@ -5,11 +5,11 @@ display_name: Jivo Extra Light 3 Litre Cooking Oil Olive Plastic Bottle (3 LTR)
 platforms:
   - flipkart
 first_seen: 2026-06-12
-last_seen: 2026-06-18
-observations: 14
+last_seen: 2026-06-19
+observations: 16
 min_price: 1501
 max_price: 1572
-latest_price: 1572
+latest_price: 1515
 tags:
   - type/sku-hub
   - platform/flipkart
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Extra Light 3 Litre Cooking Oil Olive Plastic Bottle (3 LTR)**
 
 ## Sold on
-- [[flipkart]] — latest ₹1572 (59.7% off)
+- [[flipkart]] — latest ₹1515 (61.1% off)
 
-## Runs that observed this SKU (14)
-[[flipkart-2026-06-18-1203]] · [[flipkart-2026-06-18-0833]] · [[flipkart-2026-06-17-1213]] · [[flipkart-2026-06-17-0833]] · [[flipkart-2026-06-16-1205]] · [[flipkart-2026-06-16-0833]] · [[flipkart-2026-06-15-1210]] · [[flipkart-2026-06-15-0833]] · [[flipkart-2026-06-14-1210]] · [[flipkart-2026-06-14-0833]] · [[flipkart-2026-06-13-1206]] · [[flipkart-2026-06-13-0833]] · [[flipkart-2026-06-12-1218]] · [[flipkart-2026-06-12-0833]]
+## Runs that observed this SKU (16)
+[[flipkart-2026-06-19-1210]] · [[flipkart-2026-06-19-0833]] · [[flipkart-2026-06-18-1203]] · [[flipkart-2026-06-18-0833]] · [[flipkart-2026-06-17-1213]] · [[flipkart-2026-06-17-0833]] · [[flipkart-2026-06-16-1205]] · [[flipkart-2026-06-16-0833]] · [[flipkart-2026-06-15-1210]] · [[flipkart-2026-06-15-0833]] · [[flipkart-2026-06-14-1210]] · [[flipkart-2026-06-14-0833]] · [[flipkart-2026-06-13-1206]] · [[flipkart-2026-06-13-0833]] · [[flipkart-2026-06-12-1218]] · [[flipkart-2026-06-12-0833]]
 
-## Price history (14 observations)
+## Price history (16 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -45,6 +45,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-17-1213,2026-06-17,flipkart,All India,-,1501,3899,61.5,0
 2026-06-18-0833,2026-06-18,flipkart,All India,-,1501,3899,61.5,0
 2026-06-18-1203,2026-06-18,flipkart,All India,-,1572,3899,59.7,0
+2026-06-19-0833,2026-06-19,flipkart,All India,-,1515,3899,61.1,0
+2026-06-19-1210,2026-06-19,flipkart,All India,-,1515,3899,61.1,0
 ```
 
 ---

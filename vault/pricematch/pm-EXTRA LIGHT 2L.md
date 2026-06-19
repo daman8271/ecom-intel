@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: BELOW
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-18) — ref ₹1229 vs live ₹1141
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-19) — ref ₹1189 vs live ₹1144
+- **Days below reference:** 12 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,BELOW,BAU,1229,1075,1075,1075,-154,-12.53,1,true
 2026-06-18,flipkart-minutes,ABOVE,BAU,1229,1903,1903,2084,674,54.84,0,true
 2026-06-18,zepto,BELOW,BAU,1229,1141,1139,1211,-88,-7.16,76,true
+2026-06-19,amazon,BELOW,SVD,1189,1144,1144,1144,-45,-3.78,1,true
+2026-06-19,amazon-fresh,BELOW,SVD,1189,1000,1000,1229,-189,-15.9,102,true
+2026-06-19,amazon-now,BELOW,SVD,1189,1000,1000,1229,-189,-15.9,93,true
+2026-06-19,bigbasket,OOS,SVD,1189,,,,,,0,false
+2026-06-19,blinkit,BELOW,SVD,1189,1000,1000,1340,-189,-15.9,90,true
+2026-06-19,flipkart,BELOW,SVD,1189,915,915,915,-274,-23.04,1,true
+2026-06-19,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2084,714,60.05,0,true
+2026-06-19,zepto,BELOW,SVD,1189,1144,1139,1292,-45,-3.78,28,true
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: BELOW
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-18) — ref ₹229 vs live ₹192
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-19) — ref ₹219 vs live ₹192
+- **Days below reference:** 12 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,OOS,BAU,229,,,,,,0,false
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
 2026-06-18,zepto,BELOW,BAU,229,192,185,192,-37,-16.16,48,true
+2026-06-19,amazon,BELOW,SVD,219,177,177,177,-42,-19.18,1,true
+2026-06-19,amazon-fresh,BELOW,SVD,219,177,177,185,-42,-19.18,80,true
+2026-06-19,amazon-now,BELOW,SVD,219,177,177,185,-42,-19.18,73,true
+2026-06-19,bigbasket,OOS,SVD,219,,,,,,0,false
+2026-06-19,blinkit,BELOW,SVD,219,195,184,200,-24,-10.96,40,true
+2026-06-19,flipkart,OOS,SVD,219,,,,,,0,false
+2026-06-19,flipkart-minutes,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-19,zepto,BELOW,SVD,219,192,177,192,-27,-12.33,21,true
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: BELOW
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-contains
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-18) — ref ₹1049 vs live ₹997
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-19) — ref ₹999 vs live ₹996
+- **Days below reference:** 12 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,OOS,BAU,1049,,,,,,0,false
 2026-06-18,flipkart-minutes,BELOW,BAU,1049,997,997,997,-52,-4.96,19,true
 2026-06-18,zepto,BELOW,BAU,1049,997,963,1034,-52,-4.96,43,true
+2026-06-19,amazon,ABOVE,SVD,999,1022,1022,1022,23,2.3,0,true
+2026-06-19,amazon-fresh,BELOW,SVD,999,996,985,1049,-3,-0.3,62,true
+2026-06-19,amazon-now,ABOVE,SVD,999,1022,985,1049,23,2.3,40,true
+2026-06-19,bigbasket,OOS,SVD,999,,,,,,0,false
+2026-06-19,blinkit,BELOW,SVD,999,868,868,868,-131,-13.11,15,true
+2026-06-19,flipkart,OOS,SVD,999,,,,,,0,false
+2026-06-19,flipkart-minutes,BELOW,SVD,999,997,997,997,-2,-0.2,20,true
+2026-06-19,zepto,BELOW,SVD,999,996,963,1004,-3,-0.3,11,true
 ```
 
 ---

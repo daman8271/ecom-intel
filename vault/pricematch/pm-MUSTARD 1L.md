@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: BELOW
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-18) — ref ₹219 vs live ₹181
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-19) — ref ₹209 vs live ₹181
+- **Days below reference:** 12 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,OOS,BAU,219,,,,,,0,false
 2026-06-18,flipkart-minutes,BELOW,BAU,219,181,176,181,-38,-17.35,48,true
 2026-06-18,zepto,BELOW,BAU,219,181,178,181,-38,-17.35,81,true
+2026-06-19,amazon,BELOW,SVD,209,181,181,181,-28,-13.4,1,true
+2026-06-19,amazon-fresh,BELOW,SVD,209,167,167,219,-42,-20.1,57,true
+2026-06-19,amazon-now,BELOW,SVD,209,167,167,190,-42,-20.1,42,true
+2026-06-19,bigbasket,OOS,SVD,209,,,,,,0,false
+2026-06-19,blinkit,BELOW,SVD,209,169,166,169,-40,-19.14,12,true
+2026-06-19,flipkart,OOS,SVD,209,,,,,,0,false
+2026-06-19,flipkart-minutes,BELOW,SVD,209,181,176,181,-28,-13.4,47,true
+2026-06-19,zepto,BELOW,SVD,209,181,178,181,-28,-13.4,27,true
 ```
 
 ---

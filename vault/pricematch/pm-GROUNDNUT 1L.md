@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-18
-observations: 88
+last_seen: 2026-06-19
+observations: 96
 latest_status: BELOW
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-groundnut-oil-1-litre-cold-pressed-unrefined-peanut-oil-for-c
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-18) — ref ₹259 vs live ₹199
-- **Days below reference:** 11 of 11
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-19) — ref ₹239 vs live ₹199
+- **Days below reference:** 12 of 12
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
-## Ref-vs-live history (88 observations)
+## Ref-vs-live history (96 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -133,6 +133,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart,ABOVE,BAU,259,395,395,395,136,52.51,0,true
 2026-06-18,flipkart-minutes,NOT_LISTED,BAU,259,,,,,,0,false
 2026-06-18,zepto,BELOW,BAU,259,199,199,199,-60,-23.17,62,true
+2026-06-19,amazon,BELOW,SVD,239,193,193,193,-46,-19.25,1,true
+2026-06-19,amazon-fresh,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-19,amazon-now,BELOW,SVD,239,193,193,202,-46,-19.25,14,true
+2026-06-19,bigbasket,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-19,blinkit,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-19,flipkart,ABOVE,SVD,239,312,312,312,73,30.54,0,true
+2026-06-19,flipkart-minutes,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-19,zepto,BELOW,SVD,239,199,199,199,-40,-16.74,26,true
 ```
 
 ---
