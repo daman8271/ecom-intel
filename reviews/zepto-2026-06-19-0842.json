@@ -1,0 +1,103 @@
+{
+  "platform": "zepto",
+  "run_id": "2026-06-19-0842",
+  "captured_at": "2026-06-19T03:17:24.191Z",
+  "verdict": "BROKEN",
+  "rows": 526,
+  "unique_skus": 23,
+  "pincodes_with_jivo": 24,
+  "baseline_rows": 1683,
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "526 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "526 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": false,
+      "detail": "526 rows is 31% of baseline 1683"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "23 unique SKUs vs baseline 23 (99%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": false,
+      "detail": "24 pincodes w/ Jivo is 32% of baseline 74"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-06-19T03:17:24.191Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "100% stores non-realtime/snapshot (mongo_data_exists=24); 7 SKU(s) price-stable across 9 runs path proven live by 16 SKU(s) that moved (e.g. jivo-canola-cold-pressed-edible-oil-cooking-oil-5l, jivo-daily-pomace-olive-oil-2l, jivo-extra-light-olive-oil-1l) -> genuinely stable; 16 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": true,
+      "detail": "max store_id city-span = 1 (stores stay local)"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": false,
+      "detail": "148 priced in-stock rows is 21% of baseline 698 (collapse)"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
+    }
+  ],
+  "reasons": [
+    "rows_vs_baseline: 526 rows is 31% of baseline 1683",
+    "pincode_coverage: 24 pincodes w/ Jivo is 32% of baseline 74",
+    "priced_floor_block: 148 priced in-stock rows is 21% of baseline 698 (collapse)"
+  ],
+  "llm_note": null
+}
