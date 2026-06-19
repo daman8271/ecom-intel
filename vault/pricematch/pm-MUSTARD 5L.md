@@ -37,7 +37,7 @@ SKU memory: [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-contains
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-19) — ref ₹999 vs live ₹996
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-19) — ref ₹999 vs live ₹997
 - **Days below reference:** 12 of 12
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
@@ -139,8 +139,8 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-19,bigbasket,OOS,SVD,999,,,,,,0,false
 2026-06-19,blinkit,BELOW,SVD,999,868,868,868,-131,-13.11,15,true
 2026-06-19,flipkart,OOS,SVD,999,,,,,,0,false
-2026-06-19,flipkart-minutes,BELOW,SVD,999,997,997,997,-2,-0.2,20,true
-2026-06-19,zepto,BELOW,SVD,999,996,963,1004,-3,-0.3,11,true
+2026-06-19,flipkart-minutes,BELOW,SVD,999,997,997,997,-2,-0.2,17,true
+2026-06-19,zepto,BELOW,SVD,999,997,997,1004,-2,-0.2,17,true
 ```
 
 ---

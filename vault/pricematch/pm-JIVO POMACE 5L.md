@@ -37,7 +37,7 @@ SKU memory: [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-fr
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-19) — ref ₹2119 vs live ₹2123
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-19) — ref ₹2119 vs live ₹2146
 - **Days below reference:** 12 of 12
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]]
 
@@ -134,13 +134,13 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-18,flipkart-minutes,BELOW,BAU,2169,2049,2049,2049,-120,-5.53,7,true
 2026-06-18,zepto,BELOW,BAU,2169,2146,2114,2580,-23,-1.06,62,true
 2026-06-19,amazon,BELOW,SVD,2119,1900,1900,1900,-219,-10.34,1,true
-2026-06-19,amazon-fresh,BELOW,SVD,2119,1897,1897,1943,-222,-10.48,66,true
-2026-06-19,amazon-now,BELOW,SVD,2119,1897,1897,1943,-222,-10.48,61,true
+2026-06-19,amazon-fresh,BELOW,SVD,2119,1897,1897,1943,-222,-10.48,65,true
+2026-06-19,amazon-now,BELOW,SVD,2119,1897,1897,1943,-222,-10.48,60,true
 2026-06-19,bigbasket,NOT_LISTED,SVD,2119,,,,,,0,false
-2026-06-19,blinkit,BELOW,SVD,2119,1897,1897,2088,-222,-10.48,84,true
-2026-06-19,flipkart,BELOW,SVD,2119,1596,1596,1596,-523,-24.68,1,true
-2026-06-19,flipkart-minutes,BELOW,SVD,2119,2049,2049,2049,-70,-3.3,8,true
-2026-06-19,zepto,ABOVE,SVD,2119,2123,2121,2574,4,0.19,0,true
+2026-06-19,blinkit,BELOW,SVD,2119,1897,1897,2088,-222,-10.48,82,true
+2026-06-19,flipkart,OOS,SVD,2119,,,,,,0,false
+2026-06-19,flipkart-minutes,BELOW,SVD,2119,2049,2049,2049,-70,-3.3,6,true
+2026-06-19,zepto,ABOVE,SVD,2119,2146,2114,2574,27,1.27,3,true
 ```
 
 ---
