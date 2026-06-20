@@ -204,3 +204,17 @@
 {"platform":"amazon-fresh","secs":4298,"sweep":"2026-06-18-1500","ts":"2026-06-18T13:57:50+0530"}
 {"platform":"amazon-now","secs":2529,"sweep":"2026-06-18-1500","ts":"2026-06-18T14:39:59+0530"}
 {"platform":"blinkit","secs":4133,"sweep":"2026-06-18-1500","ts":"2026-06-18T15:48:52+0530"}
+{"platform":"flipkart-minutes","secs":109,"sweep":"2026-06-19-1200","ts":"2026-06-19T08:33:49+0530"}
+{"platform":"flipkart","secs":512,"sweep":"2026-06-19-1200","ts":"2026-06-19T08:42:21+0530"}
+{"platform":"zepto","secs":969,"sweep":"2026-06-19-1200","ts":"2026-06-19T08:58:30+0530"}
+{"platform":"amazon","secs":688,"sweep":"2026-06-19-1200","ts":"2026-06-19T09:09:58+0530"}
+{"platform":"amazon-fresh","secs":4164,"sweep":"2026-06-19-1200","ts":"2026-06-19T10:19:22+0530"}
+{"platform":"amazon-now","secs":2430,"sweep":"2026-06-19-1200","ts":"2026-06-19T10:59:52+0530"}
+{"platform":"blinkit","secs":4151,"sweep":"2026-06-19-1200","ts":"2026-06-19T12:09:03+0530"}
+{"platform":"flipkart-minutes","secs":110,"sweep":"2026-06-19-1500","ts":"2026-06-19T12:10:53+0530"}
+{"platform":"flipkart","secs":523,"sweep":"2026-06-19-1500","ts":"2026-06-19T12:19:36+0530"}
+{"platform":"zepto","secs":643,"sweep":"2026-06-19-1500","ts":"2026-06-19T12:30:19+0530"}
+{"platform":"amazon","secs":669,"sweep":"2026-06-19-1500","ts":"2026-06-19T12:41:28+0530"}
+{"platform":"amazon-fresh","secs":4402,"sweep":"2026-06-19-1500","ts":"2026-06-19T13:54:50+0530"}
+{"platform":"amazon-now","secs":2405,"sweep":"2026-06-19-1500","ts":"2026-06-19T14:34:55+0530"}
+{"platform":"blinkit","secs":4164,"sweep":"2026-06-19-1500","ts":"2026-06-19T15:44:19+0530"}
