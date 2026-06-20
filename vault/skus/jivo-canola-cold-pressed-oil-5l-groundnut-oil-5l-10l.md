@@ -6,10 +6,10 @@ platforms:
   - amazon
 first_seen: 2026-06-05
 last_seen: 2026-06-20
-observations: 33
-min_price: 2271
+observations: 34
+min_price: 2221
 max_price: 2568
-latest_price: 2418
+latest_price: 2221
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Canola Oil 5 Litre & Cold Pressed Groundnut (Peanut) Oil 5 Litre Combo Pack | Chemical Free Vitamin A & D Fortified | Suitable for Frying, Roasting & Everyday Cooking (5LTR + 5LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹2418 (45.7% off)
+- [[amazon]] — latest ₹2221 (50.1% off)
 
-## Runs that observed this SKU (33)
-[[amazon-2026-06-20-0850]] · [[amazon-2026-06-19-1230]] · [[amazon-2026-06-19-0858]] · [[amazon-2026-06-18-1235]] · [[amazon-2026-06-18-0852]] · [[amazon-2026-06-17-1243]] · [[amazon-2026-06-17-0901]] · [[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (34)
+[[amazon-2026-06-20-1232]] · [[amazon-2026-06-20-0850]] · [[amazon-2026-06-19-1230]] · [[amazon-2026-06-19-0858]] · [[amazon-2026-06-18-1235]] · [[amazon-2026-06-18-0852]] · [[amazon-2026-06-17-1243]] · [[amazon-2026-06-17-0901]] · [[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (33 observations)
+## Price history (34 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -64,6 +64,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-19-0858,2026-06-19,amazon,All India,-,2271,4450,49,1
 2026-06-19-1230,2026-06-19,amazon,All India,-,2271,4450,49,1
 2026-06-20-0850,2026-06-20,amazon,All India,-,2418,4450,45.7,1
+2026-06-20-1232,2026-06-20,amazon,All India,-,2221,4450,50.1,1
 ```
 
 ---

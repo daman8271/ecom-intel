@@ -148,7 +148,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-20,blinkit,NOT_LISTED,SVD,789,,,,,,0,false
 2026-06-20,flipkart,ABOVE,SVD,789,866,866,866,77,9.76,0,true
 2026-06-20,flipkart-minutes,NOT_LISTED,SVD,789,,,,,,0,false
-2026-06-20,zepto,ABOVE,SVD,789,989,970,989,200,25.35,0,true
+2026-06-20,zepto,ABOVE,SVD,789,989,940,989,200,25.35,0,true
 ```
 
 ---
