@@ -9,7 +9,7 @@ platforms:
   - zepto
 pincodes: 7
 skus: 83
-observations: 1871
+observations: 1917
 tags:
   - type/city-hub
   - platform/amazon-fresh
@@ -32,7 +32,7 @@ Up: [[locations-index]]
 ## SKUs available in Surat (83)
 [[jivo-canola-cold-press-edible-oil-1l]] · [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] · [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] · [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] · [[jivo-canola-cold-pressed-edible-oil-5-litres-5l]] · [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-canola-oil-1l]] · [[jivo-cold-pressed-canola-oil-5l]] · [[jivo-cold-pressed-extra-virgin-coconut-cooking-edible-oil-1-litre-1l]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] · [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] · [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l]] · [[jivo-cooking-edible-soyabean-oil-1-litre-1l]] · [[jivo-cooking-edible-soyabean-oil-5-litre-5l]] · [[jivo-daily-cooking-pomace-olive-oil-1-litre-1l]] · [[jivo-daily-cooking-pomace-olive-oil-1l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-desi-ghee-500-ml-500ml]] · [[jivo-everyday-cooking-pomace-olive-oil-3-litre-3l]] · [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-1-ltr-5l]] · [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-5l]] · [[jivo-extra-light-olive-oil-1-litre-1l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l]] · [[jivo-extra-light-olive-oil-2-litre-2l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-3-litre-3l]] · [[jivo-extra-light-olive-oil-500ml-500ml]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-coconut-oil-500ml]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-1-litre-1l]] · [[jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml]] · [[jivo-extra-virgin-olive-oil-200ml-200ml]] · [[jivo-extra-virgin-olive-oil-250-ml-250ml]] · [[jivo-extra-virgin-olive-oil-5-litre-with-1litre-100-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-first-pressed-sesame-oil-1l]] · [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] · [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-oil-1-litre-1l]] · [[jivo-groundnut-oil-1l]] · [[jivo-groundnut-oil-5-litre-5l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na]] · [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml]] · [[jivo-mineral-water-1l]] · [[jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] · [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] · [[jivo-premium-quinoa-gluten-free-na]] · [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] · [[jivo-pure-extra-virgin-coconut-oil-500-ml-500ml]] · [[jivo-raw-basil-seeds-for-weight-loss-200gm-200ml]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] · [[jivo-rice-bran-oil-4-litre-4l]] · [[jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l]] · [[jivo-rice-bran-oil-5-litre-5l]] · [[jivo-so-olive-oil-1-litre-1l]] · [[jivo-so-olive-oil-5-litre-5l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-sunflower-oil-4-litres-4l]]
 
-## Observations (1871 rows)
+## Observations (1917 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -1101,6 +1101,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,394510,1617,1650,2,0
 2026-06-16-1214,2026-06-16,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,394510,1617,1650,2,0
 2026-06-18-0840,2026-06-18,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,394510,1617,1650,2,0
+2026-06-20-0842,2026-06-20,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,394510,1617,1650,2,0
+2026-06-20-1217,2026-06-20,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,394510,1617,1650,2,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l,394510,518,750,30.9,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l,394510,518,750,30.9,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l,394510,518,750,30.9,1
@@ -1116,6 +1118,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,394510,485,750,35.3,0
 2026-06-16-1214,2026-06-16,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,394510,485,750,35.3,0
 2026-06-18-0840,2026-06-18,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,394510,485,750,35.3,0
+2026-06-20-0842,2026-06-20,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,394510,485,750,35.3,0
+2026-06-20-1217,2026-06-20,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,394510,485,750,35.3,0
 2026-06-04-1417,2026-06-04,amazon-now,jivo-cold-pressed-extra-virgin-coconut-cooking-edible-oil-1-litre-1l,394510,1078,1400,23,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,394510,418,510,18,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,394510,418,510,18,1
@@ -1162,6 +1166,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-daily-pomace-olive-oil-2l,394510,1104,1449,23.8,0
 2026-06-16-1214,2026-06-16,zepto,jivo-daily-pomace-olive-oil-2l,394510,1104,1449,23.8,0
 2026-06-18-0840,2026-06-18,zepto,jivo-daily-pomace-olive-oil-2l,394510,1104,1449,23.8,0
+2026-06-20-0842,2026-06-20,zepto,jivo-daily-pomace-olive-oil-2l,394510,1104,1449,23.8,0
+2026-06-20-1217,2026-06-20,zepto,jivo-daily-pomace-olive-oil-2l,394510,1104,1449,23.8,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-desi-ghee-500-ml-500ml,394510,446,849,47.5,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-desi-ghee-500-ml-500ml,394510,446,849,47.5,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-desi-ghee-500-ml-500ml,394510,446,849,47.5,1
@@ -1201,6 +1207,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-extra-light-olive-oil-1l,394510,499,1499,66.7,0
 2026-06-16-1214,2026-06-16,zepto,jivo-extra-light-olive-oil-1l,394510,499,1499,66.7,0
 2026-06-18-0840,2026-06-18,zepto,jivo-extra-light-olive-oil-1l,394510,499,1499,66.7,0
+2026-06-20-0842,2026-06-20,zepto,jivo-extra-light-olive-oil-1l,394510,499,1499,66.7,0
+2026-06-20-1217,2026-06-20,zepto,jivo-extra-light-olive-oil-1l,394510,499,1499,66.7,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l,394510,998,2998,66.7,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l,394510,998,2998,66.7,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l,394510,998,2998,66.7,1
@@ -1219,6 +1227,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-extra-light-olive-oil-2l,394510,1131,2799,59.6,0
 2026-06-16-1214,2026-06-16,zepto,jivo-extra-light-olive-oil-2l,394510,1131,2799,59.6,0
 2026-06-18-0840,2026-06-18,zepto,jivo-extra-light-olive-oil-2l,394510,1205,2799,56.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-extra-light-olive-oil-2l,394510,1205,2799,56.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-extra-light-olive-oil-2l,394510,1205,2799,56.9,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-light-olive-oil-3-litre-3l,394510,1299,,,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-light-olive-oil-3-litre-3l,394510,1299,,,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-light-olive-oil-3-litre-3l,394510,1299,,,1
@@ -1237,6 +1247,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-extra-light-olive-oil-combo-2l,394510,998,2998,66.7,0
 2026-06-16-1214,2026-06-16,zepto,jivo-extra-light-olive-oil-combo-2l,394510,998,2998,66.7,0
 2026-06-18-0840,2026-06-18,zepto,jivo-extra-light-olive-oil-combo-2l,394510,998,2998,66.7,0
+2026-06-20-0842,2026-06-20,zepto,jivo-extra-light-olive-oil-combo-2l,394510,998,2998,66.7,0
+2026-06-20-1217,2026-06-20,zepto,jivo-extra-light-olive-oil-combo-2l,394510,998,2998,66.7,0
 2026-06-10-1149,2026-06-10,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2382,5598,57.4,0
 2026-06-10-1505,2026-06-10,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2262,5598,59.6,0
 2026-06-11-1226,2026-06-11,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2262,5598,59.6,0
@@ -1246,6 +1258,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2262,5598,59.6,0
 2026-06-16-1214,2026-06-16,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2262,5598,59.6,0
 2026-06-18-0840,2026-06-18,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2410,5598,56.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2410,5598,56.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-extra-light-olive-oil-combo-4l,394510,2410,5598,56.9,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-virgin-coconut-oil-500ml,394510,519,1390,62.7,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-virgin-coconut-oil-500ml,394510,519,1390,62.7,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-virgin-coconut-oil-500ml,394510,519,1390,62.7,1
@@ -1270,6 +1284,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-extra-virgin-cooking-olive-oil-5l,394510,7920,7999,1,0
 2026-06-16-1214,2026-06-16,zepto,jivo-extra-virgin-cooking-olive-oil-5l,394510,7920,7999,1,0
 2026-06-18-0840,2026-06-18,zepto,jivo-extra-virgin-cooking-olive-oil-5l,394510,7920,7999,1,0
+2026-06-20-0842,2026-06-20,zepto,jivo-extra-virgin-cooking-olive-oil-5l,394510,7920,7999,1,0
+2026-06-20-1217,2026-06-20,zepto,jivo-extra-virgin-cooking-olive-oil-5l,394510,7920,7999,1,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,394510,749,999,25,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,394510,749,999,25,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,394510,764,999,23.5,1
@@ -1319,6 +1335,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-extra-virgin-olive-oil-bottle-1l,394510,1764,1799,1.9,0
 2026-06-16-1214,2026-06-16,zepto,jivo-extra-virgin-olive-oil-bottle-1l,394510,1764,1799,1.9,0
 2026-06-18-0840,2026-06-18,zepto,jivo-extra-virgin-olive-oil-bottle-1l,394510,1764,1799,1.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-extra-virgin-olive-oil-bottle-1l,394510,1764,1799,1.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-extra-virgin-olive-oil-bottle-1l,394510,1764,1799,1.9,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-first-pressed-sesame-oil-1l,394510,329,600,45.2,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-first-pressed-sesame-oil-1l,394510,449,600,25.2,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-first-pressed-sesame-oil-1l,394510,449,600,25.2,1
@@ -1350,6 +1368,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,394510,177,225,21.3,0
 2026-06-16-1214,2026-06-16,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,394510,177,225,21.3,0
 2026-06-18-0840,2026-06-18,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,394510,177,225,21.3,0
+2026-06-20-0842,2026-06-20,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,394510,177,225,21.3,0
+2026-06-20-1217,2026-06-20,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,394510,177,225,21.3,0
 2026-06-05-0112,2026-06-05,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,909,1050,13.4,0
 2026-06-05-1049,2026-06-05,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,909,1050,13.4,0
 2026-06-05-1549,2026-06-05,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,909,1050,13.4,0
@@ -1367,6 +1387,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,890,1050,15.2,0
 2026-06-16-1214,2026-06-16,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,890,1050,15.2,0
 2026-06-18-0840,2026-06-18,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,890,1050,15.2,0
+2026-06-20-0842,2026-06-20,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,890,1050,15.2,0
+2026-06-20-1217,2026-06-20,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,394510,890,1050,15.2,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l,394510,899,1050,14.4,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l,394510,899,1050,14.4,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l,394510,899,1050,14.4,1
@@ -1382,6 +1404,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l,394510,199,560,64.5,0
 2026-06-16-1214,2026-06-16,zepto,jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l,394510,199,560,64.5,0
 2026-06-18-0840,2026-06-18,zepto,jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l,394510,199,560,64.5,0
+2026-06-20-0842,2026-06-20,zepto,jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l,394510,199,560,64.5,0
+2026-06-20-1217,2026-06-20,zepto,jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l,394510,199,560,64.5,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-groundnut-oil-1-litre-1l,394510,386,1120,65.5,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-groundnut-oil-1-litre-1l,394510,386,1120,65.5,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-groundnut-oil-1-litre-1l,394510,386,1120,65.5,1
@@ -1416,6 +1440,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml,394510,49,150,67.3,1
 2026-06-16-1214,2026-06-16,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml,394510,49,150,67.3,1
 2026-06-18-0840,2026-06-18,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml,394510,49,150,67.3,1
+2026-06-20-0842,2026-06-20,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml,394510,49,150,67.3,1
+2026-06-20-1217,2026-06-20,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml,394510,49,150,67.3,1
 2026-05-31-0900,2026-05-31,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na,394510,76,150,49.3,1
 2026-05-31-1200,2026-05-31,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na,394510,76,150,49.3,1
 2026-05-31-1600,2026-05-31,zepto,jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-na,394510,76,150,49.3,1
@@ -1438,6 +1464,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l,394510,245,255,3.9,0
 2026-06-16-1214,2026-06-16,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l,394510,245,255,3.9,0
 2026-06-18-0840,2026-06-18,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l,394510,245,255,3.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l,394510,167,255,34.5,0
+2026-06-20-1217,2026-06-20,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l,394510,167,255,34.5,0
 2026-06-05-0112,2026-06-05,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,845,1250,32.4,0
 2026-06-05-1049,2026-06-05,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,889,1250,28.9,0
 2026-06-05-1549,2026-06-05,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,889,1250,28.9,0
@@ -1456,6 +1484,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,889,1250,28.9,0
 2026-06-16-1214,2026-06-16,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,889,1250,28.9,0
 2026-06-18-0840,2026-06-18,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,889,1250,28.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,889,1250,28.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,394510,889,1250,28.9,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml,394510,249,350,28.9,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml,394510,249,350,28.9,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml,394510,249,350,28.9,1
@@ -1474,6 +1504,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-pomace-olive-oil-1l,394510,379,1049,63.9,0
 2026-06-16-1214,2026-06-16,zepto,jivo-pomace-olive-oil-1l,394510,379,1049,63.9,0
 2026-06-18-0840,2026-06-18,zepto,jivo-pomace-olive-oil-1l,394510,379,1049,63.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-pomace-olive-oil-1l,394510,379,1049,63.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-pomace-olive-oil-1l,394510,379,1049,63.9,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,394510,1926,4999,61.5,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,394510,1926,4999,61.5,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,394510,1926,4999,61.5,1
@@ -1499,6 +1531,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-pomace-olive-oil-5l,394510,2852,4999,42.9,0
 2026-06-16-1214,2026-06-16,zepto,jivo-pomace-olive-oil-5l,394510,2852,4999,42.9,0
 2026-06-18-0840,2026-06-18,zepto,jivo-pomace-olive-oil-5l,394510,2852,4999,42.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-pomace-olive-oil-5l,394510,2852,4999,42.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-pomace-olive-oil-5l,394510,2852,4999,42.9,0
 2026-06-10-1149,2026-06-10,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
 2026-06-10-1505,2026-06-10,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
 2026-06-11-1226,2026-06-11,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
@@ -1508,6 +1542,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
 2026-06-16-1214,2026-06-16,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
 2026-06-18-0840,2026-06-18,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-pomace-olive-oil-combo-2l,394510,758,2098,63.9,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,394510,961,1250,23.1,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,394510,961,1250,23.1,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,394510,961,1250,23.1,1
@@ -1549,6 +1585,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-refine-canola-oil-tin-15l,394510,3465,3500,1,0
 2026-06-16-1214,2026-06-16,zepto,jivo-refine-canola-oil-tin-15l,394510,3465,3500,1,0
 2026-06-18-0840,2026-06-18,zepto,jivo-refine-canola-oil-tin-15l,394510,3465,3500,1,0
+2026-06-20-0842,2026-06-20,zepto,jivo-refine-canola-oil-tin-15l,394510,3465,3500,1,0
+2026-06-20-1217,2026-06-20,zepto,jivo-refine-canola-oil-tin-15l,394510,3187,3500,8.9,0
 2026-06-05-0112,2026-06-05,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,183,285,35.8,0
 2026-06-05-1049,2026-06-05,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,183,285,35.8,0
 2026-06-05-1549,2026-06-05,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,186,285,34.7,0
@@ -1567,6 +1605,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,182,285,36.1,0
 2026-06-16-1214,2026-06-16,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,182,285,36.1,0
 2026-06-18-0840,2026-06-18,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,182,285,36.1,0
+2026-06-20-0842,2026-06-20,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,182,285,36.1,0
+2026-06-20-1217,2026-06-20,zepto,jivo-rice-bran-daily-cooking-oil-1l,394510,182,285,36.1,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-rice-bran-oil-1-litre-cooking-oil-1l,394510,378,570,33.7,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-rice-bran-oil-1-litre-cooking-oil-1l,394510,378,570,33.7,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-rice-bran-oil-1-litre-cooking-oil-1l,394510,378,570,33.7,1
@@ -1613,6 +1653,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,394510,322,325,0.9,0
 2026-06-16-1214,2026-06-16,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,394510,322,325,0.9,0
 2026-06-18-0840,2026-06-18,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,394510,322,325,0.9,0
+2026-06-20-0842,2026-06-20,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,394510,322,325,0.9,0
+2026-06-20-1217,2026-06-20,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,394510,322,325,0.9,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l,394510,199,,,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l,394510,199,,,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l,394510,199,,,1
@@ -1629,6 +1671,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l,394510,273,275,0.7,0
 2026-06-16-1214,2026-06-16,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l,394510,273,275,0.7,0
 2026-06-18-0840,2026-06-18,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l,394510,273,275,0.7,0
+2026-06-20-0842,2026-06-20,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l,394510,177,275,35.6,0
+2026-06-20-1217,2026-06-20,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l,394510,177,275,35.6,0
 2026-06-05-0112,2026-06-05,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,976,1350,27.7,0
 2026-06-05-1049,2026-06-05,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,976,1350,27.7,0
 2026-06-05-1549,2026-06-05,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,976,1350,27.7,0
@@ -1646,6 +1690,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-16-0841,2026-06-16,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,1350,1350,0,0
 2026-06-16-1214,2026-06-16,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,1350,1350,0,0
 2026-06-18-0840,2026-06-18,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,1350,1350,0,0
+2026-06-20-0842,2026-06-20,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,884,1350,34.5,0
+2026-06-20-1217,2026-06-20,zepto,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l,394510,884,1350,34.5,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-sunflower-oil-4-litres-4l,394510,,,,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-sunflower-oil-4-litres-4l,394510,,,,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-sunflower-oil-4-litres-4l,394510,,,,1

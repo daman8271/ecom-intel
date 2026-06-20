@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-19
-observations: 96
+last_seen: 2026-06-20
+observations: 104
 latest_status: NOT_LISTED
 below_days: 3
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-c
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-19) — ref ₹239 vs live ₹-
-- **Days below reference:** 3 of 12
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-20) — ref ₹239 vs live ₹-
+- **Days below reference:** 3 of 13
 - **Below on:** [[2026-06-08]] · [[2026-06-14]] · [[2026-06-15]]
 
-## Ref-vs-live history (96 observations)
+## Ref-vs-live history (104 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -141,6 +141,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-19,flipkart,OOS,SVD,239,,,,,,0,false
 2026-06-19,flipkart-minutes,NOT_LISTED,SVD,239,,,,,,0,false
 2026-06-19,zepto,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-20,amazon,MATCH,SVD,239,239,239,239,0,0,0,true
+2026-06-20,amazon-fresh,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-20,amazon-now,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-20,bigbasket,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-20,blinkit,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-20,flipkart,OOS,SVD,239,,,,,,0,false
+2026-06-20,flipkart-minutes,NOT_LISTED,SVD,239,,,,,,0,false
+2026-06-20,zepto,NOT_LISTED,SVD,239,,,,,,0,false
 ```
 
 ---

@@ -599,7 +599,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil 1l
 - [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l]] — Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr Jivo Canola oil1 Litre Cold Press Healthy Cooking Oil 5l
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l
-- [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O
+- [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines
 - [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] — Jivo Canola Cold Pressed Edible Oil 1+1 Litres
 - [[jivo-canola-cold-pressed-edible-oil-5-litres-5l]] — Jivo Canola Cold Pressed Edible Oil 5 Litres 5l
 - [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l]] — Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use 1l
@@ -718,7 +718,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre
 - [[jivo-cold-pressed-groundnut-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre 1 Litre Combo Pack 5l
 - [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre
-- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch 1l
 - [[jivo-cold-pressed-sunflower-oil-5l-gold-premium-refined-oil-5l-5l]] — Jivo Cold Pressed Sunflower Oil 5l Gold Premium Refined Oil 5l 5l
@@ -1117,7 +1117,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 1l
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L)
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] — Jivo Cold Press Combo Canola Oil Plastic Bottle Na
-- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L)
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — Jivo Cold Pressed Pure Cooking Mustard Oil Can 4l
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L)
 - [[jivo-cooking-sunflower-oil-can-4l]] — JIVO Cooking Sunflower Oil Can (4 L)
@@ -1150,7 +1150,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] — Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil (1 pc (5 L))
 - [[jivo-pomace-olive-oil-1l]] — Jivo Pomace Olive Oil (1 pc (1 L))
 - [[jivo-pomace-olive-oil-5l]] — Jivo Pomace Olive Oil (1 pc (5 L))
-- [[jivo-pomace-olive-oil-combo-10l]] — Jivo Pomace Olive Oil Combo 10l
+- [[jivo-pomace-olive-oil-combo-10l]] — Jivo Pomace Olive Oil Combo (5 L X 2)
 - [[jivo-pomace-olive-oil-combo-1l]] — Jivo Pomace Olive Oil Combo 1l
 - [[jivo-pomace-olive-oil-combo-2l]] — Jivo Pomace Olive Oil Combo (1 L X 2)
 - [[jivo-refine-canola-oil-tin-15l]] — Jivo Refine Canola oil Tin (1 pc (15 L))

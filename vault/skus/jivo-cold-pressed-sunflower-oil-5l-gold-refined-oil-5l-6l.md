@@ -5,11 +5,11 @@ display_name: "Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Gold Refined Edibl
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-19
-observations: 32
+last_seen: 2026-06-20
+observations: 33
 min_price: 1087
 max_price: 1147
-latest_price: 1107
+latest_price: 1116
 tags:
   - type/sku-hub
   - platform/amazon
@@ -22,12 +22,12 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Sunflower Oil 5 Litre & Jivo Gold Refined Edible Oil 5 Litre Combo Pack | Vitamin A & D Fortified | for Frying, Roasting & Daily Use | Suitable for Everyday Kitchen Use (5LTR + 1LTR (BUNDLE))**
 
 ## Sold on
-- [[amazon]] — latest ₹1107 (16.5% off)
+- [[amazon]] — latest ₹1116 (15.8% off)
 
-## Runs that observed this SKU (32)
-[[amazon-2026-06-19-1230]] · [[amazon-2026-06-19-0858]] · [[amazon-2026-06-18-1235]] · [[amazon-2026-06-18-0852]] · [[amazon-2026-06-17-1243]] · [[amazon-2026-06-17-0901]] · [[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (33)
+[[amazon-2026-06-20-0850]] · [[amazon-2026-06-19-1230]] · [[amazon-2026-06-19-0858]] · [[amazon-2026-06-18-1235]] · [[amazon-2026-06-18-0852]] · [[amazon-2026-06-17-1243]] · [[amazon-2026-06-17-0901]] · [[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (32 observations)
+## Price history (33 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -63,6 +63,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-18-1235,2026-06-18,amazon,All India,-,1107,1325,16.5,1
 2026-06-19-0858,2026-06-19,amazon,All India,-,1138,1325,14.1,1
 2026-06-19-1230,2026-06-19,amazon,All India,-,1107,1325,16.5,1
+2026-06-20-0850,2026-06-20,amazon,All India,-,1116,1325,15.8,1
 ```
 
 ---
