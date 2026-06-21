@@ -37,7 +37,7 @@ SKU memory: [[jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-ri
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-21) — ref ₹429 vs live ₹450
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-21) — ref ₹429 vs live ₹449
 - **Days below reference:** 14 of 14
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
 
@@ -150,13 +150,13 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-20,flipkart-minutes,BELOW,SVD,429,379,379,394,-50,-11.66,12,true
 2026-06-20,zepto,BELOW,SVD,429,379,379,379,-50,-11.66,45,true
 2026-06-21,amazon,BELOW,SVD,429,379,379,379,-50,-11.66,1,true
-2026-06-21,amazon-fresh,BELOW,SVD,429,379,379,397,-50,-11.66,98,true
-2026-06-21,amazon-now,BELOW,SVD,429,379,379,397,-50,-11.66,84,true
+2026-06-21,amazon-fresh,BELOW,SVD,429,387,379,418,-42,-9.79,98,true
+2026-06-21,amazon-now,BELOW,SVD,429,387,379,418,-42,-9.79,80,true
 2026-06-21,bigbasket,ABOVE,SVD,429,549.68,462.19,577.74,120.68,28.13,0,true
-2026-06-21,blinkit,BELOW,SVD,429,387,379,494,-42,-9.79,111,true
+2026-06-21,blinkit,BELOW,SVD,429,387,379,494,-42,-9.79,114,true
 2026-06-21,flipkart,ABOVE,SVD,429,576,576,576,147,34.27,0,true
 2026-06-21,flipkart-minutes,BELOW,SVD,429,379,379,394,-50,-11.66,12,true
-2026-06-21,zepto,ABOVE,SVD,429,450,420,450,21,4.9,2,true
+2026-06-21,zepto,ABOVE,SVD,429,449,449,517,20,4.66,0,true
 ```
 
 ---

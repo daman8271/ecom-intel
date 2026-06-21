@@ -37,7 +37,7 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-21) — ref ₹1189 vs live ₹1141
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-21) — ref ₹1189 vs live ₹1173
 - **Days below reference:** 14 of 14
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
 
@@ -150,13 +150,13 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-20,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2084,714,60.05,0,true
 2026-06-20,zepto,BELOW,SVD,1189,1141,1046,1195,-48,-4.04,49,true
 2026-06-21,amazon,BELOW,SVD,1189,1136,1136,1136,-53,-4.46,1,true
-2026-06-21,amazon-fresh,BELOW,SVD,1189,1000,1000,1189,-189,-15.9,103,true
-2026-06-21,amazon-now,BELOW,SVD,1189,1000,1000,1189,-189,-15.9,91,true
+2026-06-21,amazon-fresh,BELOW,SVD,1189,1000,1000,1189,-189,-15.9,102,true
+2026-06-21,amazon-now,BELOW,SVD,1189,1000,1000,1189,-189,-15.9,88,true
 2026-06-21,bigbasket,ABOVE,SVD,1189,1343,1343,1386,154,12.95,0,true
-2026-06-21,blinkit,BELOW,SVD,1189,1000,1000,1340,-189,-15.9,86,true
+2026-06-21,blinkit,BELOW,SVD,1189,1000,1000,1340,-189,-15.9,87,true
 2026-06-21,flipkart,BELOW,SVD,1189,927,927,927,-262,-22.04,1,true
 2026-06-21,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2084,714,60.05,0,true
-2026-06-21,zepto,BELOW,SVD,1189,1141,1046,1199,-48,-4.04,40,true
+2026-06-21,zepto,BELOW,SVD,1189,1173,1046,1195,-16,-1.35,46,true
 ```
 
 ---
