@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-20
-observations: 104
+last_seen: 2026-06-21
+observations: 112
 latest_status: NOT_LISTED
-below_days: 10
+below_days: 11
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-20) — ref ₹509 vs live ₹-
-- **Days below reference:** 10 of 13
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-21) — ref ₹509 vs live ₹-
+- **Days below reference:** 11 of 14
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
 
-## Ref-vs-live history (104 observations)
+## Ref-vs-live history (112 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -149,6 +149,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-20,flipkart,ABOVE,SVD,509,585,585,585,76,14.93,0,true
 2026-06-20,flipkart-minutes,NOT_LISTED,SVD,509,,,,,,0,false
 2026-06-20,zepto,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-21,amazon,BELOW,SVD,509,492,492,492,-17,-3.34,1,true
+2026-06-21,amazon-fresh,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-21,amazon-now,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-21,bigbasket,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-21,blinkit,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-21,flipkart,ABOVE,SVD,509,539,539,539,30,5.89,0,true
+2026-06-21,flipkart-minutes,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-21,zepto,NOT_LISTED,SVD,509,,,,,,0,false
 ```
 
 ---

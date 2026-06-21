@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-20
-observations: 104
+last_seen: 2026-06-21
+observations: 112
 latest_status: OOS
-below_days: 9
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oi
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-20) — ref ₹1049 vs live ₹-
-- **Days below reference:** 9 of 13
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-21) — ref ₹1049 vs live ₹-
+- **Days below reference:** 10 of 14
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
 
-## Ref-vs-live history (104 observations)
+## Ref-vs-live history (112 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -149,6 +149,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-20,flipkart,ABOVE,SVD,1049,1219,1219,1219,170,16.21,0,true
 2026-06-20,flipkart-minutes,NOT_LISTED,SVD,1049,,,,,,0,false
 2026-06-20,zepto,OOS,SVD,1049,,,,,,0,false
+2026-06-21,amazon,MATCH,SVD,1049,1049,1049,1049,0,0,0,true
+2026-06-21,amazon-fresh,MATCH,SVD,1049,1049,884,1049,0,0,8,true
+2026-06-21,amazon-now,MATCH,SVD,1049,1049,884,1049,0,0,5,true
+2026-06-21,bigbasket,BELOW,SVD,1049,882.83,882.83,1350,-166.17,-15.84,44,true
+2026-06-21,blinkit,NOT_LISTED,SVD,1049,,,,,,0,false
+2026-06-21,flipkart,ABOVE,SVD,1049,1093,1093,1093,44,4.19,0,true
+2026-06-21,flipkart-minutes,NOT_LISTED,SVD,1049,,,,,,0,false
+2026-06-21,zepto,OOS,SVD,1049,,,,,,0,false
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-20
-observations: 104
+last_seen: 2026-06-21
+observations: 112
 latest_status: BELOW
-below_days: 13
+below_days: 14
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-20) — ref ₹599 vs live ₹499
-- **Days below reference:** 13 of 13
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-21) — ref ₹599 vs live ₹560
+- **Days below reference:** 14 of 14
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
 
-## Ref-vs-live history (104 observations)
+## Ref-vs-live history (112 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -149,6 +149,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-20,flipkart,OOS,SVD,599,,,,,,0,false
 2026-06-20,flipkart-minutes,NOT_LISTED,SVD,599,,,,,,0,false
 2026-06-20,zepto,BELOW,SVD,599,499,499,499,-100,-16.69,48,true
+2026-06-21,amazon,ABOVE,SVD,599,610,610,610,11,1.84,0,true
+2026-06-21,amazon-fresh,BELOW,SVD,599,499,475,672,-100,-16.69,68,true
+2026-06-21,amazon-now,BELOW,SVD,599,499,475,672,-100,-16.69,64,true
+2026-06-21,bigbasket,ABOVE,SVD,599,1284,639.45,1386,685,114.36,0,true
+2026-06-21,blinkit,BELOW,SVD,599,499,499,648,-100,-16.69,80,true
+2026-06-21,flipkart,OOS,SVD,599,,,,,,0,false
+2026-06-21,flipkart-minutes,NOT_LISTED,SVD,599,,,,,,0,false
+2026-06-21,zepto,BELOW,SVD,599,560,555,1499,-39,-6.51,16,true
 ```
 
 ---

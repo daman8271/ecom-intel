@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-20
-observations: 104
+last_seen: 2026-06-21
+observations: 112
 latest_status: BELOW
-below_days: 13
+below_days: 14
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-20) — ref ₹209 vs live ₹181
-- **Days below reference:** 13 of 13
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-21) — ref ₹209 vs live ₹181
+- **Days below reference:** 14 of 14
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
 
-## Ref-vs-live history (104 observations)
+## Ref-vs-live history (112 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -149,6 +149,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-20,flipkart,OOS,SVD,209,,,,,,0,false
 2026-06-20,flipkart-minutes,BELOW,SVD,209,181,174,181,-28,-13.4,53,true
 2026-06-20,zepto,BELOW,SVD,209,181,180,184,-28,-13.4,58,true
+2026-06-21,amazon,BELOW,SVD,209,181,181,181,-28,-13.4,1,true
+2026-06-21,amazon-fresh,BELOW,SVD,209,167,154,190,-42,-20.1,61,true
+2026-06-21,amazon-now,BELOW,SVD,209,167,154,190,-42,-20.1,50,true
+2026-06-21,bigbasket,BELOW,SVD,209,202.09,202.09,215.86,-6.91,-3.31,33,true
+2026-06-21,blinkit,BELOW,SVD,209,169,166,169,-40,-19.14,16,true
+2026-06-21,flipkart,OOS,SVD,209,,,,,,0,false
+2026-06-21,flipkart-minutes,BELOW,SVD,209,181,174,181,-28,-13.4,52,true
+2026-06-21,zepto,BELOW,SVD,209,181,180,181,-28,-13.4,45,true
 ```
 
 ---
