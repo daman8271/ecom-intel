@@ -2,14 +2,6 @@
   "platform": "blinkit",
   "samples": [
     {
-      "run_id": "2026-06-17-1103",
-      "captured_at": "2026-06-17T06:40:36.120Z",
-      "rows": 733,
-      "unique_skus": 9,
-      "pincodes_with_jivo": 143,
-      "priced_rows": 659
-    },
-    {
       "run_id": "2026-06-17-1446",
       "captured_at": "2026-06-17T10:25:18.338Z",
       "rows": 713,
@@ -80,7 +72,15 @@
       "unique_skus": 9,
       "pincodes_with_jivo": 142,
       "priced_rows": 659
+    },
+    {
+      "run_id": "2026-06-22-1103",
+      "captured_at": "2026-06-22T06:42:59.183Z",
+      "rows": 717,
+      "unique_skus": 9,
+      "pincodes_with_jivo": 141,
+      "priced_rows": 645
     }
   ],
-  "updated_at": "2026-06-21T10:28:31.838215+00:00"
+  "updated_at": "2026-06-22T06:43:54.120059+00:00"
 }
