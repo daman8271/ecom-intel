@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-organic-flax-seeds-raw-alsi-seeds-for-smoothies-cereals-bakin
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-21) — ref ₹349 vs live ₹-
-- **Days below reference:** 0 of 14
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-22) — ref ₹369 vs live ₹-
+- **Days below reference:** 0 of 15
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -156,6 +156,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,OOS,SVD,349,,,,,,0,false
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,349,,,,,,0,false
 2026-06-21,zepto,NOT_LISTED,SVD,349,,,,,,0,false
+2026-06-22,amazon,OOS,BAU,369,,,,,,0,false
+2026-06-22,amazon-fresh,NOT_LISTED,BAU,369,,,,,,0,false
+2026-06-22,amazon-now,NOT_LISTED,BAU,369,,,,,,0,false
+2026-06-22,bigbasket,NOT_LISTED,BAU,369,,,,,,0,false
+2026-06-22,blinkit,NOT_LISTED,BAU,369,,,,,,0,false
+2026-06-22,flipkart,OOS,BAU,369,,,,,,0,false
+2026-06-22,flipkart-minutes,NOT_LISTED,BAU,369,,,,,,0,false
+2026-06-22,zepto,NOT_LISTED,BAU,369,,,,,,0,false
 ```
 
 ---

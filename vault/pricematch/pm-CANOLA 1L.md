@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: NOT_LISTED
-below_days: 13
+below_days: 14
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-21) — ref ₹259 vs live ₹-
-- **Days below reference:** 13 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-22) — ref ₹269 vs live ₹-
+- **Days below reference:** 14 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,ABOVE,SVD,259,332,332,332,73,28.19,0,true
 2026-06-21,flipkart-minutes,BELOW,SVD,259,239,234,271,-20,-7.72,32,true
 2026-06-21,zepto,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-22,amazon,BELOW,BAU,269,257,257,257,-12,-4.46,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,269,239,239,268,-30,-11.15,92,true
+2026-06-22,amazon-now,BELOW,BAU,269,239,239,268,-30,-11.15,72,true
+2026-06-22,bigbasket,ABOVE,BAU,269,284,284,318,15,5.58,0,true
+2026-06-22,blinkit,BELOW,BAU,269,260,250,277,-9,-3.35,108,true
+2026-06-22,flipkart,ABOVE,BAU,269,332,332,332,63,23.42,0,true
+2026-06-22,flipkart-minutes,BELOW,BAU,269,239,234,271,-30,-11.15,32,true
+2026-06-22,zepto,NOT_LISTED,BAU,269,,,,,,0,false
 ```
 
 ---

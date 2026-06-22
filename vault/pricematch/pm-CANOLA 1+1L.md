@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: BELOW
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-11-litres-cooking-oil-for-dail
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-21) — ref ₹509 vs live ₹485
-- **Days below reference:** 14 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-22) — ref ₹529 vs live ₹485
+- **Days below reference:** 15 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,ABOVE,SVD,509,539,539,539,30,5.89,0,true
 2026-06-21,flipkart-minutes,OOS,SVD,509,,,,,,0,false
 2026-06-21,zepto,BELOW,SVD,509,485,485,504,-24,-4.72,31,true
+2026-06-22,amazon,BELOW,BAU,529,509,509,509,-20,-3.78,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,529,509,469,509,-20,-3.78,37,true
+2026-06-22,amazon-now,BELOW,BAU,529,509,469,509,-20,-3.78,37,true
+2026-06-22,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-22,blinkit,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-22,flipkart,ABOVE,BAU,529,539,539,539,10,1.89,0,true
+2026-06-22,flipkart-minutes,OOS,BAU,529,,,,,,0,false
+2026-06-22,zepto,BELOW,BAU,529,485,485,504,-44,-8.32,34,true
 ```
 
 ---

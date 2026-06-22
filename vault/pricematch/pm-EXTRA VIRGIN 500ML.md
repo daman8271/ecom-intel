@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: NOT_LISTED
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-21) — ref ₹409 vs live ₹-
-- **Days below reference:** 11 of 14
-- **Below on:** [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-22) — ref ₹419 vs live ₹-
+- **Days below reference:** 12 of 15
+- **Below on:** [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,BELOW,SVD,409,400,400,400,-9,-2.2,1,true
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,409,,,,,,0,false
 2026-06-21,zepto,NOT_LISTED,SVD,409,,,,,,0,false
+2026-06-22,amazon,BELOW,BAU,419,379,379,379,-40,-9.55,1,true
+2026-06-22,amazon-fresh,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,bigbasket,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,blinkit,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,flipkart,BELOW,BAU,419,400,400,400,-19,-4.53,1,true
+2026-06-22,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,zepto,NOT_LISTED,BAU,419,,,,,,0,false
 ```
 
 ---

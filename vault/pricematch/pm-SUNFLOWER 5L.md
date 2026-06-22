@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: OOS
-below_days: 10
+below_days: 11
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oi
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-21) — ref ₹1049 vs live ₹-
-- **Days below reference:** 10 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-22) — ref ₹1139 vs live ₹-
+- **Days below reference:** 11 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,ABOVE,SVD,1049,1093,1093,1093,44,4.19,0,true
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,1049,,,,,,0,false
 2026-06-21,zepto,OOS,SVD,1049,,,,,,0,false
+2026-06-22,amazon,BELOW,BAU,1139,1049,1049,1049,-90,-7.9,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,1139,1049,884,1049,-90,-7.9,92,true
+2026-06-22,amazon-now,BELOW,BAU,1139,1049,884,1049,-90,-7.9,82,true
+2026-06-22,bigbasket,BELOW,BAU,1139,882.83,882.83,1350,-256.17,-22.49,50,true
+2026-06-22,blinkit,NOT_LISTED,BAU,1139,,,,,,0,false
+2026-06-22,flipkart,BELOW,BAU,1139,1093,1093,1093,-46,-4.04,1,true
+2026-06-22,flipkart-minutes,NOT_LISTED,BAU,1139,,,,,,0,false
+2026-06-22,zepto,OOS,BAU,1139,,,,,,0,false
 ```
 
 ---

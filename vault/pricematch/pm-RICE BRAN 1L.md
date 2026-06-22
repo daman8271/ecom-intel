@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: OOS
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-21) — ref ₹189 vs live ₹-
-- **Days below reference:** 11 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-22) — ref ₹199 vs live ₹-
+- **Days below reference:** 12 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,ABOVE,SVD,189,237,237,237,48,25.4,0,true
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
 2026-06-21,zepto,OOS,SVD,189,,,,,,0,false
+2026-06-22,amazon,BELOW,BAU,199,189,189,189,-10,-5.03,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,199,189,184,189,-10,-5.03,96,true
+2026-06-22,amazon-now,BELOW,BAU,199,189,184,189,-10,-5.03,76,true
+2026-06-22,bigbasket,NOT_LISTED,BAU,199,,,,,,0,false
+2026-06-22,blinkit,NOT_LISTED,BAU,199,,,,,,0,false
+2026-06-22,flipkart,ABOVE,BAU,199,237,237,237,38,19.1,0,true
+2026-06-22,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
+2026-06-22,zepto,OOS,BAU,199,,,,,,0,false
 ```
 
 ---

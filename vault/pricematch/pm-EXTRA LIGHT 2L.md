@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: BELOW
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-21) — ref ₹1189 vs live ₹1173
-- **Days below reference:** 14 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-22) — ref ₹1229 vs live ₹1091
+- **Days below reference:** 15 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,BELOW,SVD,1189,927,927,927,-262,-22.04,1,true
 2026-06-21,flipkart-minutes,ABOVE,SVD,1189,1903,1903,2084,714,60.05,0,true
 2026-06-21,zepto,BELOW,SVD,1189,1173,1046,1195,-16,-1.35,46,true
+2026-06-22,amazon,BELOW,BAU,1229,1136,1136,1136,-93,-7.57,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,1229,1000,1000,1189,-229,-18.63,108,true
+2026-06-22,amazon-now,BELOW,BAU,1229,1000,1000,1189,-229,-18.63,90,true
+2026-06-22,bigbasket,ABOVE,BAU,1229,1343,1343,1386,114,9.28,0,true
+2026-06-22,blinkit,BELOW,BAU,1229,1139,1139,1340,-90,-7.32,84,true
+2026-06-22,flipkart,BELOW,BAU,1229,927,927,927,-302,-24.57,1,true
+2026-06-22,flipkart-minutes,ABOVE,BAU,1229,1903,1903,2084,674,54.84,0,true
+2026-06-22,zepto,BELOW,BAU,1229,1091,1046,1292,-138,-11.23,42,true
 ```
 
 ---

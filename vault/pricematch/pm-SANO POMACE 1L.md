@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: NOT_LISTED
-below_days: 10
+below_days: 11
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-21) — ref ₹399 vs live ₹-
-- **Days below reference:** 10 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-22) — ref ₹419 vs live ₹-
+- **Days below reference:** 11 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,MATCH,SVD,399,400,400,400,1,0.25,0,true
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,399,,,,,,0,false
 2026-06-21,zepto,NOT_LISTED,SVD,399,,,,,,0,false
+2026-06-22,amazon,BELOW,BAU,419,399,399,399,-20,-4.77,1,true
+2026-06-22,amazon-fresh,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,bigbasket,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,blinkit,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,flipkart,BELOW,BAU,419,400,400,400,-19,-4.53,1,true
+2026-06-22,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-22,zepto,NOT_LISTED,BAU,419,,,,,,0,false
 ```
 
 ---

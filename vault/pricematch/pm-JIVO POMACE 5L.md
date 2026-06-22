@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
-latest_status: ABOVE
-below_days: 14
+last_seen: 2026-06-22
+observations: 120
+latest_status: BELOW
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-fr
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-21) — ref ₹2119 vs live ₹2146
-- **Days below reference:** 14 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-22) — ref ₹2169 vs live ₹2146
+- **Days below reference:** 15 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,BELOW,SVD,2119,1743,1743,1743,-376,-17.74,1,true
 2026-06-21,flipkart-minutes,BELOW,SVD,2119,2049,2049,2049,-70,-3.3,8,true
 2026-06-21,zepto,ABOVE,SVD,2119,2146,2127,2574,27,1.27,0,true
+2026-06-22,amazon,BELOW,BAU,2169,2084,2084,2084,-85,-3.92,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,2169,1917,1917,2119,-252,-11.62,103,true
+2026-06-22,amazon-now,BELOW,BAU,2169,1917,1917,2119,-252,-11.62,86,true
+2026-06-22,bigbasket,NOT_LISTED,BAU,2169,,,,,,0,false
+2026-06-22,blinkit,BELOW,BAU,2169,1917,1917,2188,-252,-11.62,83,true
+2026-06-22,flipkart,BELOW,BAU,2169,1743,1743,1743,-426,-19.64,1,true
+2026-06-22,flipkart-minutes,BELOW,BAU,2169,2145,2145,2145,-24,-1.11,6,true
+2026-06-22,zepto,BELOW,BAU,2169,2146,2121,2574,-23,-1.06,34,true
 ```
 
 ---

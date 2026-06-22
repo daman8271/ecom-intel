@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-21
-observations: 112
+last_seen: 2026-06-22
+observations: 120
 latest_status: BELOW
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-21) — ref ₹219 vs live ₹192
-- **Days below reference:** 14 of 14
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-22) — ref ₹229 vs live ₹192
+- **Days below reference:** 15 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
 
-## Ref-vs-live history (112 observations)
+## Ref-vs-live history (120 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -157,6 +157,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,OOS,SVD,219,,,,,,0,false
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,219,,,,,,0,false
 2026-06-21,zepto,BELOW,SVD,219,192,185,195,-27,-12.33,47,true
+2026-06-22,amazon,BELOW,BAU,229,177,177,177,-52,-22.71,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,229,177,177,185,-52,-22.71,81,true
+2026-06-22,amazon-now,BELOW,BAU,229,177,177,185,-52,-22.71,74,true
+2026-06-22,bigbasket,BELOW,BAU,229,177,177,217.73,-52,-22.71,62,true
+2026-06-22,blinkit,BELOW,BAU,229,215,202,216,-14,-6.11,34,true
+2026-06-22,flipkart,OOS,BAU,229,,,,,,0,false
+2026-06-22,flipkart-minutes,NOT_LISTED,BAU,229,,,,,,0,false
+2026-06-22,zepto,BELOW,BAU,229,192,185,195,-37,-16.16,51,true
 ```
 
 ---

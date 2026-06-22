@@ -5,8 +5,8 @@ display_name: Jivo Pomace Olive Oil Combo (5 L X 2)
 platforms:
   - zepto
 first_seen: 2026-06-17
-last_seen: 2026-06-21
-observations: 66
+last_seen: 2026-06-22
+observations: 79
 min_price: 4152
 max_price: 9500
 latest_price: 4152
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Mumbai]]
 
-## Runs that observed this SKU (6)
-[[zepto-2026-06-21-1221]] · [[zepto-2026-06-21-0842]] · [[zepto-2026-06-20-1217]] · [[zepto-2026-06-18-1211]] · [[zepto-2026-06-17-1223]] · [[zepto-2026-06-17-0843]]
+## Runs that observed this SKU (7)
+[[zepto-2026-06-22-1224]] · [[zepto-2026-06-21-1221]] · [[zepto-2026-06-21-0842]] · [[zepto-2026-06-20-1217]] · [[zepto-2026-06-18-1211]] · [[zepto-2026-06-17-1223]] · [[zepto-2026-06-17-0843]]
 
-## Price history (66 observations)
+## Price history (79 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -100,6 +100,19 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-21-1221,2026-06-21,zepto,Mumbai,400019,4152,9998,58.5,0
 2026-06-21-1221,2026-06-21,zepto,Mumbai,400020,4152,9998,58.5,0
 2026-06-21-1221,2026-06-21,zepto,Mumbai,400021,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400003,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400005,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400006,9500,9998,5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400007,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400010,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400011,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400012,9500,9998,5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400019,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400020,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400021,4152,9998,58.5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400033,9500,9998,5,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400041,4292,9998,57.1,0
+2026-06-22-1224,2026-06-22,zepto,Mumbai,400611,4152,9998,58.5,0
 ```
 
 ---
