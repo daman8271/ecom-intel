@@ -15,7 +15,7 @@ first_seen: 2026-06-08
 last_seen: 2026-06-22
 observations: 120
 latest_status: NOT_LISTED
-below_days: 1
+below_days: 0
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,7 @@ SKU memory: [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** ▫️ not listed on [[zepto]] (2026-06-22) — ref ₹1069 vs live ₹-
-- **Days below reference:** 1 of 15
-- **Below on:** [[2026-06-22]]
+- **Days below reference:** 0 of 15
 
 ## Ref-vs-live history (120 observations)
 
@@ -157,7 +156,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,NOT_LISTED,SVD,1029,,,,,,0,false
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,1029,,,,,,0,false
 2026-06-21,zepto,NOT_LISTED,SVD,1029,,,,,,0,false
-2026-06-22,amazon,BELOW,BAU,1069,1029,1029,1029,-40,-3.74,1,true
+2026-06-22,amazon,MATCH,BAU,1069,1069,1069,1069,0,0,0,true
 2026-06-22,amazon-fresh,NOT_LISTED,BAU,1069,,,,,,0,false
 2026-06-22,amazon-now,NOT_LISTED,BAU,1069,,,,,,0,false
 2026-06-22,bigbasket,NOT_LISTED,BAU,1069,,,,,,0,false

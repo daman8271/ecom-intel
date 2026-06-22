@@ -15,7 +15,7 @@ first_seen: 2026-06-08
 last_seen: 2026-06-22
 observations: 120
 latest_status: NOT_LISTED
-below_days: 4
+below_days: 3
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,8 @@ SKU memory: [[jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-c
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** ▫️ not listed on [[zepto]] (2026-06-22) — ref ₹249 vs live ₹-
-- **Days below reference:** 4 of 15
-- **Below on:** [[2026-06-08]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-22]]
+- **Days below reference:** 3 of 15
+- **Below on:** [[2026-06-08]] · [[2026-06-14]] · [[2026-06-15]]
 
 ## Ref-vs-live history (120 observations)
 
@@ -157,7 +157,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-21,flipkart,OOS,SVD,239,,,,,,0,false
 2026-06-21,flipkart-minutes,NOT_LISTED,SVD,239,,,,,,0,false
 2026-06-21,zepto,NOT_LISTED,SVD,239,,,,,,0,false
-2026-06-22,amazon,BELOW,BAU,249,239,239,239,-10,-4.02,1,true
+2026-06-22,amazon,MATCH,BAU,249,249,249,249,0,0,0,true
 2026-06-22,amazon-fresh,NOT_LISTED,BAU,249,,,,,,0,false
 2026-06-22,amazon-now,NOT_LISTED,BAU,249,,,,,,0,false
 2026-06-22,bigbasket,NOT_LISTED,BAU,249,,,,,,0,false
