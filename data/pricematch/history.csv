@@ -13571,21 +13571,21 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-1l,amazon,B09MJ6QDX7,269,246,246,246,true,BELOW,-23,-8.55,1,375,375
 2026-06-23,BAU,CANOLA 1L + 1L,jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest-in-saturated-fat-2l,amazon,B0CZP26VVN,529,492,492,492,true,BELOW,-37,-6.99,1,750,750
 2026-06-23,BAU,CANOLA 1L POUCH,jivo-canola-oil1-litre-refined-pouch-cooking-oil-for-daily-use-recommended-by-indian-medical-association-1l,amazon,B07M6FYXWL,269,269,269,269,true,MATCH,0,0,0,299,299
-2026-06-23,BAU,CANOLA 3L,jivo-canola-cold-pressed-edible-oil-3-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-3l,amazon,B078T3Q3SH,799,,,,false,OOS,,,0,690,295
-2026-06-23,BAU,CANOLA 4L,jivo-canola-cold-pressed-edible-oil-4-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-4l,amazon,B0FPMH5Q4S,1189,,,,false,OOS,,,0,1199,289
+2026-06-23,BAU,CANOLA 3L,jivo-canola-cold-pressed-edible-oil-3-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-3l,amazon,B078T3Q3SH,799,,,,false,OOS,,,0,690,735
+2026-06-23,BAU,CANOLA 4L,jivo-canola-cold-pressed-edible-oil-4-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-4l,amazon,B0FPMH5Q4S,1189,,,,false,OOS,,,0,1199,285
 2026-06-23,BAU,CANOLA 5L,jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-5l,amazon,B077ZN4G28,1299,1299,1299,1299,true,MATCH,0,0,0,1650,1650
 2026-06-23,BAU,CHIA SEEDS 200G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-200g-200ml,amazon,B0CRF3ZQWL,99,99,99,99,true,MATCH,0,0,0,299,299
-2026-06-23,BAU,CHIA SEEDS 400G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-400g-400ml,amazon,B0CRH5W2R7,209,,,,false,OOS,,,0,599,999
-2026-06-23,BAU,CHIA SEEDS 800G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml,amazon,B0CRHR4KYS,349,,,,false,OOS,,,0,899,620
-2026-06-23,BAU,CINNAMON BARK 100G,jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml,amazon,B0D7CVQG35,99,,,,false,OOS,,,0,299,485
+2026-06-23,BAU,CHIA SEEDS 400G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-400g-400ml,amazon,B0CRH5W2R7,209,,,,false,OOS,,,0,599,1099
+2026-06-23,BAU,CHIA SEEDS 800G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml,amazon,B0CRHR4KYS,349,,,,false,OOS,,,0,899,1099
+2026-06-23,BAU,CINNAMON BARK 100G,jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml,amazon,B0D7CVQG35,99,,,,false,OOS,,,0,299,550
 2026-06-23,BAU,CLOVE 100G,jivo-whole-clove-100-gm-no-artificial-colours-or-preservatives-100ml,amazon,B0D7CZ3WYW,249,,,,false,OOS,,,0,280,600
 2026-06-23,BAU,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-1l,amazon,B0BZ8K3DQP,559,559,559,559,true,MATCH,0,0,0,700,700
-2026-06-23,BAU,COCONUT 200ML,jivo-pure-extra-virgin-coconut-oil-200ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-200ml,amazon,B0CGM7KSFV,149,,,,false,OOS,,,0,285,345
+2026-06-23,BAU,COCONUT 200ML,jivo-pure-extra-virgin-coconut-oil-200ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-200ml,amazon,B0CGM7KSFV,149,,,,false,OOS,,,0,285,295
 2026-06-23,BAU,COCONUT 500ML,jivo-pure-extra-virgin-coconut-oil-500-ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-500ml,amazon,B0CGN9Y3PT,289,289,289,289,true,MATCH,0,0,0,695,399
 2026-06-23,BAU,COFFEE,jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-coffee-powder-easy-to-prepare-with-rich-aroma-and-taste-coffee-for-daily-use-100ml,amazon,B0C8Z7SZG6,249,249,249,249,true,MATCH,0,0,0,350,350
 2026-06-23,BAU,CUMIN SEEDS 100G,jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml,amazon,B0D8PMQCBV,75,,,,false,OOS,,,0,249,4999
 2026-06-23,BAU,EXTRA LIGHT 1+1L,jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l,amazon,B07WSJ45Q4,1229,1169,1169,1169,true,BELOW,-60,-4.88,1,2798,2998
-2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-cooking-dressings-salad-soups-dips-and-marinades-all-culinary-uses-light-flavorful-high-mufa-rich-in-antioxidants-1l,amazon,B09HZY97FR,619,505,505,505,true,BELOW,-114,-18.42,1,1499,1499
+2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-cooking-dressings-salad-soups-dips-and-marinades-all-culinary-uses-light-flavorful-high-mufa-rich-in-antioxidants-1l,amazon,B09HZY97FR,619,499,499,499,true,BELOW,-120,-19.39,1,1499,1499
 2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l,amazon,B09NXCPZW1,1229,1146,1146,1146,true,BELOW,-83,-6.75,1,2799,2799
 2026-06-23,BAU,EXTRA LIGHT 3L,jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-saturated-fat-3l,amazon,B097ZZTW5C,1849,1849,1849,1849,true,MATCH,0,0,0,2200,3899
 2026-06-23,BAU,EXTRA LIGHT 500ML,jivo-extra-light-olive-oil-500ml-imported-from-spain-everyday-use-for-cooking-dressings-salad-soups-dips-and-marinades-light-flavorful-high-mufa-rich-in-antioxidants-500ml,amazon,B0D9DBHG18,349,349,349,349,true,MATCH,0,0,0,499,499
@@ -13595,15 +13595,15 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,EXTRA VIRGIN 200ML,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-ideal-use-for-dressings-salad-and-soups-dips-marinades-200ml,amazon,B0CGNBY24B,199,189,189,189,true,BELOW,-10,-5.03,1,350,400
 2026-06-23,BAU,EXTRA VIRGIN 250ML,jivo-extra-virgin-olive-oil-250-ml-glass-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-250ml,amazon,B0CGM8QLXB,219,245,245,245,true,ABOVE,26,11.87,0,450,450
 2026-06-23,BAU,EXTRA VIRGIN 2L,jivo-extra-virgin-olive-oil-2-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-2l,amazon,B0CH13ZG5M,1619,1349,1349,1349,true,BELOW,-270,-16.68,1,2700,3499
-2026-06-23,BAU,EXTRA VIRGIN 3L,jivo-extra-virgin-olive-oil-3-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-3l,amazon,B0FQ2ZMFB9,2429,,,,false,OOS,,,0,4000,
-2026-06-23,BAU,EXTRA VIRGIN 500ML,jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-500ml,amazon,B0CGM7THVN,419,,,,false,OOS,,,0,675,1499
+2026-06-23,BAU,EXTRA VIRGIN 3L,jivo-extra-virgin-olive-oil-3-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-3l,amazon,B0FQ2ZMFB9,2429,,,,false,OOS,,,0,4000,549
+2026-06-23,BAU,EXTRA VIRGIN 500ML,jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-500ml,amazon,B0CGM7THVN,419,,,,false,OOS,,,0,675,999
 2026-06-23,BAU,EXTRA VIRGIN 5L,jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-5l,amazon,B09XR2YK8S,4039,3899,3899,3899,true,BELOW,-140,-3.47,1,7999,7999
 2026-06-23,BAU,FLAX SEEDS 200G,jivo-flax-seeds-raw-alsi-seeds-for-eating-high-in-protein-iron-dietary-fibre-rich-in-essential-nutrients-ideal-for-adding-to-smoothies-salads-yogurt-baking-healthy-snack-option-200g-200ml,amazon,B0D8TPCV16,99,,,,false,OOS,,,0,249,599
 2026-06-23,BAU,FLAX SEEDS 400G,jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml,amazon,B0D8TMZ523,189,,,,false,OOS,,,0,399,599
 2026-06-23,BAU,FLAX SEEDS 800G,jivo-organic-flax-seeds-raw-alsi-seeds-for-smoothies-cereals-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-800g-800ml,amazon,B0D8TN9B9B,369,,,,false,OOS,,,0,750,599
 2026-06-23,BAU,GINGER ALE 200ML,jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml,amazon,B0CYHFFZXG,49,,,,false,OOS,,,0,100,300
 2026-06-23,BAU,GOLD 1+1,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-cooking-oil-pro-healthy-lifestyle-edible-oil-1-litre-pack-of-2-2l,amazon,B0CWNVJN3B,389,,,,false,OOS,,,0,450,295
-2026-06-23,BAU,GOLD 1L,jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-natural-antioxidants-1-litre-pack-1l,amazon,B0CT5MYSDS,199,,,,false,OOS,,,0,225,1499
+2026-06-23,BAU,GOLD 1L,jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-natural-antioxidants-1-litre-pack-1l,amazon,B0CT5MYSDS,199,,,,false,OOS,,,0,225,4999
 2026-06-23,BAU,GOLD 5L,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-cooking-oil-rich-in-antioxidants-vitamins-pro-lifestyle-5l-family-pack-5l,amazon,B0C9Q1S6QG,989,966,966,966,true,BELOW,-23,-2.33,1,1049,1050
 2026-06-23,BAU,GREEN CARDAMOM 100G,jivo-green-cardamom-8mm-elaichi-whole-natural-spices-no-artificial-colors-or-preservatives-distinctive-flavor-aroma-premium-idukki-cardamom-for-cooking-baking-tea-100g-100ml,amazon,B0D7CZD2PB,499,499,499,499,true,MATCH,0,0,0,799,799
 2026-06-23,BAU,GROUNDNUT 1L,jivo-groundnut-oil-1-litre-cold-pressed-unrefined-peanut-oil-for-cooking-vitamin-a-d-fortified-chemicalfree-ground-nut-oil-1l-1l,amazon,B0CKFFW9B6,259,188,188,188,true,BELOW,-71,-27.41,1,400,560
@@ -13613,26 +13613,26 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,JIVO POMACE 2L,jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain-rich-in-mufa-low-in-saturated-fat-ideal-for-frying-roasting-baking-cooking-oil-for-daily-use-2l,amazon,B0C4FFYSLV,869,849,849,849,true,BELOW,-20,-2.3,1,1600,1449
 2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-from-spain-recommended-for-roasting-frying-and-baking-all-types-of-cuisines-rich-in-mufa-low-in-saturated-fat-5l,amazon,B07X53ZL6J,2169,2084,2084,2084,true,BELOW,-85,-3.92,1,4999,4999
 2026-06-23,BAU,JIVO PUNJABI SHIKANJI 160 MLS,jivo-punjabi-shikanji-wheatgrass-juice-nimbu-shikanji-masala-drink-natural-summer-refreshment-160ml-160ml,amazon,B0GZ7PXVF8,219,,,,false,OOS,,,0,480,
-2026-06-23,BAU,JIVO WATER 1L,jivo-natural-mineral-1l-1l,amazon,B0CSPMN88F,20,,,,false,OOS,,,0,30,
+2026-06-23,BAU,JIVO WATER 1L,jivo-natural-mineral-1l-1l,amazon,B0CSPMN88F,20,,,,false,OOS,,,0,30,1800
 2026-06-23,BAU,JIVO WATER 250ML,jivo-mineral-water-250ml-250ml,amazon,B0CST1ZYNY,119,,,,false,OOS,,,0,360,
 2026-06-23,BAU,JIVO WATER 500 MLS,jivo-natural-mineral-water-himalayan-origin-nonro-unprocessed-noncarbonated-additivefree-packaged-water-for-clean-hydration-500-ml-bottle-500ml,amazon,B0GZB4ZQV3,12,,,,false,OOS,,,0,15,
 2026-06-23,BAU,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommended-for-roasting-frying-baking-all-type-of-cuisines-1l,amazon,B09NYCSQLF,219,181,181,181,true,BELOW,-38,-17.35,1,255,255
 2026-06-23,BAU,MUSTARD 1L + 1L,jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-each-recommendable-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-1l,amazon,B09HKPSS96,429,,,,false,OOS,,,0,500,3750
 2026-06-23,BAU,MUSTARD 1L POUCH,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-recommendable-for-roasting-frying-baking-all-type-of-cuisines-1l,amazon,B0DRYVRYYM,219,,,,false,OOS,,,0,250,3750
-2026-06-23,BAU,MUSTARD 3L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-3-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-3l,amazon,B0GF22BHZ7,629,,,,false,OOS,,,0,765,1300
-2026-06-23,BAU,MUSTARD 4L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-4-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-4l,amazon,B0GFFSDTGP,839,,,,false,OOS,,,0,1000,1300
+2026-06-23,BAU,MUSTARD 3L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-3-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-3l,amazon,B0GF22BHZ7,629,,,,false,OOS,,,0,765,289
+2026-06-23,BAU,MUSTARD 4L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-4-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-4l,amazon,B0GFFSDTGP,839,,,,false,OOS,,,0,1000,289
 2026-06-23,BAU,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-5l,amazon,B091XPD9J3,1049,1027,1027,1027,true,BELOW,-22,-2.1,1,1250,1250
 2026-06-23,BAU,POMACE 3L,jivo-everyday-cooking-pomace-olive-oil-3-litre-imported-from-spain-rich-in-mufa-low-in-saturated-fat-ideal-for-frying-roasting-baking-cooking-oil-for-daily-use-3l,amazon,B0FQ31J42X,1309,1309,1309,1309,true,MATCH,0,0,0,3050,3050
-2026-06-23,BAU,PUMPKIN SEEDS 200G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-200g-200ml,amazon,B0D8TR7R3Y,209,,,,false,OOS,,,0,399,598
-2026-06-23,BAU,PUMPKIN SEEDS 400G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-400g-400ml,amazon,B0D8TR1ZCG,399,,,,false,OOS,,,0,699,620
-2026-06-23,BAU,PUMPKIN SEEDS 800G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-800g-800ml,amazon,B0D8TPCPLS,789,,,,false,OOS,,,0,1299,620
+2026-06-23,BAU,PUMPKIN SEEDS 200G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-200g-200ml,amazon,B0D8TR7R3Y,209,,,,false,OOS,,,0,399,1099
+2026-06-23,BAU,PUMPKIN SEEDS 400G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-400g-400ml,amazon,B0D8TR1ZCG,399,,,,false,OOS,,,0,699,1099
+2026-06-23,BAU,PUMPKIN SEEDS 800G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-800g-800ml,amazon,B0D8TPCPLS,789,,,,false,OOS,,,0,1299,1099
 2026-06-23,BAU,PUNJABI JEERA 160ML,jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml,amazon,B0F9YVR47L,219,,,,false,OOS,,,0,360,300
 2026-06-23,BAU,QUINOA SEEDS 200G,jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-200g-200ml,amazon,B0DGT6CK3P,119,119,119,119,true,MATCH,0,0,0,199,199
 2026-06-23,BAU,QUINOA SEEDS 400G,jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-400g-400ml,amazon,B0DGTFLQMS,179,179,179,179,true,MATCH,0,0,0,299,299
 2026-06-23,BAU,QUINOA SEEDS 800G,jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-800g-800ml,amazon,B0DGT6KQ4F,259,,,,false,OOS,,,0,399,421
 2026-06-23,BAU,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauting-baking-chemicalfree-1l,amazon,B0DBHQ2QWW,199,199,199,199,true,MATCH,0,0,0,285,285
 2026-06-23,BAU,RICE BRAN 1L + 1L,,amazon,B0H2HDLB5Q,389,,,,false,OOS,,,0,570,
-2026-06-23,BAU,RICE BRAN 4L,jivo-rice-bran-oil-4-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-4l,amazon,B0GFWHTMT9,759,,,,false,OOS,,,0,1140,289
+2026-06-23,BAU,RICE BRAN 4L,jivo-rice-bran-oil-4-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-4l,amazon,B0GFWHTMT9,759,,,,false,OOS,,,0,1140,3500
 2026-06-23,BAU,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-5l,amazon,B0DBJ13FKL,959,909,909,909,true,BELOW,-50,-5.21,1,1425,1425
 2026-06-23,BAU,ROSEMARY LEAVES 150 GMS,jivo-rosemary-leaves-whole-natural-no-preservatives-or-additives-ideal-for-hair-growth-herbal-tea-seasoning-and-cooking-salvia-rosmarinus-150ml,amazon,B0DGTNDH9L,179,,,,false,OOS,,,0,499,4999
 2026-06-23,BAU,SAFFRON 1GMS,jivo-pure-kashmiri-saffron-a-grade-kesar-rich-in-antioxidants-boosts-immunity-skin-glow-overall-wellness-1ml,amazon,B0FNDJBJPV,449,,,,false,OOS,,,0,899,339
@@ -13646,14 +13646,14 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,SANO POMACE 5L,sano-pomace-olive-oil-5l-ideal-for-frying-roasting-sauting-rich-neutral-flavour-high-smoke-point-versatile-edible-cooking-oil-for-indian-cuisine-5l,amazon,B0CFFSWMXZ,2069,1912,1912,1912,true,BELOW,-157,-7.59,1,4499,4499
 2026-06-23,BAU,SANO SOYABEAN 1L,sano-soyabean-oil-1-ltr-pet-bottle-pure-natural-nutrientrich-cooking-oil-ideal-for-healthy-delights-in-cooking-frying-and-baking-perfect-for-indian-and-international-cuisines-1l,amazon,B0C77V6LL7,199,199,199,199,true,MATCH,0,0,0,225,225
 2026-06-23,BAU,SANO SOYABEAN 5L,sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-oil-with-a-high-omega3-content-and-a-low-saturated-fat-content-ideal-for-delicious-and-healthful-meals-5l,amazon,B0C3QYP96Z,949,,,,false,OOS,,,0,1450,295
-2026-06-23,BAU,SANO SUNFLOWER 1L,sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l,amazon,B0C3QV7FV6,219,,,,false,OOS,,,0,280,295
+2026-06-23,BAU,SANO SUNFLOWER 1L,sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l,amazon,B0C3QV7FV6,219,,,,false,OOS,,,0,280,1350
 2026-06-23,BAU,SANO SUNFLOWER 5L,sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l,amazon,B0C7KSLVLB,1069,1069,1069,1069,true,MATCH,0,0,0,1475,1475
 2026-06-23,BAU,SESAME 1L + 1L,,amazon,B0H2B92WLP,689,,,,false,OOS,,,0,1200,
 2026-06-23,BAU,SESAME OIL 1L,jivo-first-pressed-sesame-oil-1l-bottle-gingelly-oil-contains-mufa-and-omega6-pufa-natural-antioxidants-ideal-for-cooking-1l,amazon,B0FDKZPGX1,349,349,349,349,true,MATCH,0,0,0,600,600
-2026-06-23,BAU,SO OLIVE 1L,jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-1l,amazon,B0DC6JR4F3,289,279,279,279,true,BELOW,-10,-3.46,1,325,325
+2026-06-23,BAU,SO OLIVE 1L,jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-1l,amazon,B0DC6JR4F3,289,289,289,289,true,MATCH,0,0,0,325,325
 2026-06-23,BAU,SO OLIVE 1L + 1L,,amazon,B0H2HJKJH1,569,,,,false,OOS,,,0,650,
 2026-06-23,BAU,SO OLIVE 5L,jivo-so-olive-oil-5-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-5l,amazon,B0DC6WMYM6,1419,1419,1419,1419,true,MATCH,0,0,0,1625,1625
-2026-06-23,BAU,SODA 750ML,jivo-extra-fizzy-soda-750-ml-soda-750ml,amazon,B0D2KLSTFZ,15,,,,false,OOS,,,0,30,40
+2026-06-23,BAU,SODA 750ML,jivo-extra-fizzy-soda-750-ml-soda-750ml,amazon,B0D2KLSTFZ,15,,,,false,OOS,,,0,30,695
 2026-06-23,BAU,SODA LEMON 750ML,jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml,amazon,B0DP36SDGD,45,,,,false,OOS,,,0,55,210
 2026-06-23,BAU,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-high-in-omega6-pufa-contains-tocopherols-natural-antioxidant-suitable-for-daily-cooking-1l,amazon,B0B6HNNL5B,209,209,209,209,true,MATCH,0,0,0,225,225
 2026-06-23,BAU,SOYABEAN 1L + 1L,jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-ideal-for-roasting-frying-and-baking-healthy-cooking-oil-for-daily-use-pack-of-2-1l,amazon,B0B7JJ7C9W,409,449,449,449,true,ABOVE,40,9.78,0,1100,450
@@ -13662,13 +13662,13 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,SPRING WATER 750ML,jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml,amazon,B0D2TVRMB6,50,,,,false,OOS,,,0,55,600
 2026-06-23,BAU,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-1l,amazon,B0B4SJTNF2,229,166,166,166,true,BELOW,-63,-27.51,1,275,275
 2026-06-23,BAU,SUNFLOWER 1L + 1L,jivo-cold-pressed-chemical-free-sunflower-oil-1-litre-ideal-for-roasting-frying-baking-all-types-of-cuisines-healthy-cooking-oil-for-daily-use-pack-of-2-litres-2l,amazon,B0992GRH3Z,449,,,,false,OOS,,,0,550,295
-2026-06-23,BAU,SUNFLOWER 3L,jivo-cold-pressed-chemicalfree-sunflower-oil-3-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-3l,amazon,B0GDV29RCN,679,,,,false,OOS,,,0,825,289
-2026-06-23,BAU,SUNFLOWER 4L,jivo-sunflower-oil-4-litres-pure-natural-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-4l,amazon,B0FPMJPCFM,909,,,,false,OOS,,,0,1038,289
+2026-06-23,BAU,SUNFLOWER 3L,jivo-cold-pressed-chemicalfree-sunflower-oil-3-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-3l,amazon,B0GDV29RCN,679,,,,false,OOS,,,0,825,285
+2026-06-23,BAU,SUNFLOWER 4L,jivo-sunflower-oil-4-litres-pure-natural-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-4l,amazon,B0FPMJPCFM,909,,,,false,OOS,,,0,1038,1425
 2026-06-23,BAU,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-5l,amazon,B0991VMDB1,1139,1139,1139,1139,true,MATCH,0,0,0,1350,1350
 2026-06-23,BAU,SUNFLOWER SEEDS 200G,jivo-sunflower-seeds-200g-raw-natural-sunflower-seeds-for-snacking-healthy-snack-option-ideal-for-weight-management-antioxidants-great-for-diets-nutrientrich-food-packed-with-protein-200ml,amazon,B0D8TT92SH,139,,,,false,OOS,,,0,299,1250
 2026-06-23,BAU,SUNFLOWER SEEDS 400G,jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-clean-eating-nutrientrich-diets-400g-400ml,amazon,B0D8TRK651,259,,,,false,OOS,,,0,499,4999
 2026-06-23,BAU,SUNFLOWER SEEDS 800G,jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-diets-clean-eating-glutenfree-nongmo-800g-800ml,amazon,B0D8TPSX1V,389,,,,false,OOS,,,0,899,4999
-2026-06-23,BAU,WG MANGO JUICE 500ML,jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml,amazon,B0DM2G4YCC,39,,,,false,OOS,,,0,100,
+2026-06-23,BAU,WG MANGO JUICE 500ML,jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml,amazon,B0DM2G4YCC,39,,,,false,OOS,,,0,100,300
 2026-06-23,BAU,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-1l,amazon,B0FF9P7XVX,269,269,269,269,true,MATCH,0,0,0,375,395
 2026-06-23,BAU,YELLOW MUSTARD 1L + 1L,,amazon,B0GX19RGQH,529,,,,false,OOS,,,0,750,
 2026-06-23,BAU,YELLOW MUSTARD 5L,jivo-first-pressed-yellow-mustard-oil-5-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-5l,amazon,B0GF1Z3DXR,1329,1329,1329,1329,true,MATCH,0,0,0,2000,1795
@@ -13793,30 +13793,30 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,BLACK CARDAMOM 100G,,amazon-fresh,,289,,,,false,NOT_LISTED,,,0,549,
 2026-06-23,BAU,BLACK OLIVE 470G,,amazon-fresh,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,BLACK PEPPER 100G,,amazon-fresh,,145,,,,false,NOT_LISTED,,,0,399,
-2026-06-23,BAU,CANOLA 1+1L,jivo-canola-cold-pressed-edible-oil-11-litres-1l,amazon-fresh,B0152TWWSQ,529,509,485,529,true,BELOW,-20,-3.78,33,750,750
-2026-06-23,BAU,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,amazon-fresh,B09MJ6QDX7,269,246,239,281,true,BELOW,-23,-8.55,95,375,375
+2026-06-23,BAU,CANOLA 1+1L,jivo-canola-cold-pressed-edible-oil-11-litres-1l,amazon-fresh,B0152TWWSQ,529,529,485,529,true,MATCH,0,0,11,750,750
+2026-06-23,BAU,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,amazon-fresh,B09MJ6QDX7,269,246,233,281,true,BELOW,-23,-8.55,94,375,375
 2026-06-23,BAU,CANOLA 1L + 1L,,amazon-fresh,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-23,BAU,CANOLA 1L POUCH,,amazon-fresh,,269,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CANOLA 3L,,amazon-fresh,,799,,,,false,NOT_LISTED,,,0,690,
 2026-06-23,BAU,CANOLA 4L,,amazon-fresh,,1189,,,,false,NOT_LISTED,,,0,1199,
-2026-06-23,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5-litre-5l,amazon-fresh,B077ZN4G28,1299,1193,1193,1416,true,BELOW,-106,-8.16,99,1650,1650
+2026-06-23,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5-litre-5l,amazon-fresh,B077ZN4G28,1299,1193,1193,1416,true,BELOW,-106,-8.16,58,1650,1650
 2026-06-23,BAU,CHIA SEEDS 200G,,amazon-fresh,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CHIA SEEDS 400G,,amazon-fresh,,209,,,,false,NOT_LISTED,,,0,599,
 2026-06-23,BAU,CHIA SEEDS 800G,,amazon-fresh,,349,,,,false,NOT_LISTED,,,0,899,
 2026-06-23,BAU,CINNAMON BARK 100G,,amazon-fresh,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CLOVE 100G,,amazon-fresh,,249,,,,false,NOT_LISTED,,,0,280,
-2026-06-23,BAU,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-1l,amazon-fresh,B0BZ8K3DQP,559,539,539,559,true,BELOW,-20,-3.58,23,700,700
+2026-06-23,BAU,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-1l,amazon-fresh,B0BZ8K3DQP,559,559,559,559,true,MATCH,0,0,0,700,700
 2026-06-23,BAU,COCONUT 200ML,,amazon-fresh,,149,,,,false,NOT_LISTED,,,0,285,
 2026-06-23,BAU,COCONUT 500ML,,amazon-fresh,B0CGN9Y3PT,289,,,,false,OOS,,,0,695,
 2026-06-23,BAU,COFFEE,,amazon-fresh,,249,,,,false,NOT_LISTED,,,0,350,
 2026-06-23,BAU,CUMIN SEEDS 100G,,amazon-fresh,,75,,,,false,NOT_LISTED,,,0,249,
 2026-06-23,BAU,EXTRA LIGHT 1+1L,,amazon-fresh,,1229,,,,false,NOT_LISTED,,,0,2798,
-2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1-litre-1l,amazon-fresh,B09HZY97FR,619,499,480,599,true,BELOW,-120,-19.39,85,1499,1499
-2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-2l,amazon-fresh,B09NXCPZW1,1229,988,988,1189,true,BELOW,-241,-19.61,113,2799,2799
+2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1-litre-1l,amazon-fresh,B09HZY97FR,619,499,480,619,true,BELOW,-120,-19.39,54,1499,1499
+2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-2l,amazon-fresh,B09NXCPZW1,1229,988,988,1229,true,BELOW,-241,-19.61,109,2799,2799
 2026-06-23,BAU,EXTRA LIGHT 3L,,amazon-fresh,,1849,,,,false,NOT_LISTED,,,0,2200,
 2026-06-23,BAU,EXTRA LIGHT 500ML,,amazon-fresh,,349,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,EXTRA LIGHT 5L,,amazon-fresh,,3069,,,,false,NOT_LISTED,,,0,6499,
-2026-06-23,BAU,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-1-litre-1l,amazon-fresh,B093BMGPQC,809,789,789,809,true,BELOW,-20,-2.47,84,1499,1799
+2026-06-23,BAU,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-1-litre-1l,amazon-fresh,B093BMGPQC,809,809,797,809,true,MATCH,0,0,25,1499,1799
 2026-06-23,BAU,EXTRA VIRGIN 1L + 1L,,amazon-fresh,,1609,,,,false,NOT_LISTED,,,0,2998,
 2026-06-23,BAU,EXTRA VIRGIN 200ML,,amazon-fresh,,199,,,,false,NOT_LISTED,,,0,350,
 2026-06-23,BAU,EXTRA VIRGIN 250ML,,amazon-fresh,,219,,,,false,NOT_LISTED,,,0,450,
@@ -13833,21 +13833,21 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,GOLD 5L,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l,amazon-fresh,B0C9Q1S6QG,989,966,930,966,true,BELOW,-23,-2.33,41,1049,1050
 2026-06-23,BAU,GREEN CARDAMOM 100G,,amazon-fresh,,499,,,,false,NOT_LISTED,,,0,799,
 2026-06-23,BAU,GROUNDNUT 1L,,amazon-fresh,,259,,,,false,NOT_LISTED,,,0,400,
-2026-06-23,BAU,GROUNDNUT 5L,jivo-cold-pressed-groundnut-oil-5-litre-5l,amazon-fresh,B0CKFFGC31,1269,913,913,958,true,BELOW,-356,-28.05,59,2800,2800
-2026-06-23,BAU,JIVO POMACE 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,amazon-fresh,B0821DNF2W,439,387,379,428,true,BELOW,-52,-11.85,94,1049,1049
+2026-06-23,BAU,GROUNDNUT 5L,jivo-cold-pressed-groundnut-oil-5-litre-5l,amazon-fresh,B0CKFFGC31,1269,913,913,913,true,BELOW,-356,-28.05,2,2800,2800
+2026-06-23,BAU,JIVO POMACE 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,amazon-fresh,B0821DNF2W,439,387,379,428,true,BELOW,-52,-11.85,96,1049,1049
 2026-06-23,BAU,JIVO POMACE 1L + 1L,,amazon-fresh,,869,,,,false,NOT_LISTED,,,0,2098,
 2026-06-23,BAU,JIVO POMACE 2L,,amazon-fresh,,869,,,,false,NOT_LISTED,,,0,1600,
-2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,amazon-fresh,B07X53ZL6J,2169,1917,1917,2169,true,BELOW,-252,-11.62,96,4999,4999
+2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,amazon-fresh,B07X53ZL6J,2169,1917,1917,2169,true,BELOW,-252,-11.62,76,4999,4999
 2026-06-23,BAU,JIVO PUNJABI SHIKANJI 160 MLS,,amazon-fresh,,219,,,,false,NOT_LISTED,,,0,480,
 2026-06-23,BAU,JIVO WATER 1L,,amazon-fresh,,20,,,,false,NOT_LISTED,,,0,30,
 2026-06-23,BAU,JIVO WATER 250ML,,amazon-fresh,,119,,,,false,NOT_LISTED,,,0,360,
 2026-06-23,BAU,JIVO WATER 500 MLS,,amazon-fresh,,12,,,,false,NOT_LISTED,,,0,15,
-2026-06-23,BAU,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,amazon-fresh,B09NYCSQLF,219,159,154,174,true,BELOW,-60,-27.4,51,255,255
+2026-06-23,BAU,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,amazon-fresh,B09NYCSQLF,219,159,154,159,true,BELOW,-60,-27.4,43,255,255
 2026-06-23,BAU,MUSTARD 1L + 1L,,amazon-fresh,,429,,,,false,NOT_LISTED,,,0,500,
 2026-06-23,BAU,MUSTARD 1L POUCH,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l,amazon-fresh,B0DRYVRYYM,219,199,199,199,true,BELOW,-20,-9.13,1,250,
 2026-06-23,BAU,MUSTARD 3L,,amazon-fresh,,629,,,,false,NOT_LISTED,,,0,765,
 2026-06-23,BAU,MUSTARD 4L,,amazon-fresh,,839,,,,false,NOT_LISTED,,,0,1000,
-2026-06-23,BAU,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,amazon-fresh,B091XPD9J3,1049,999,985,1078,true,BELOW,-50,-4.77,111,1250,1250
+2026-06-23,BAU,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,amazon-fresh,B091XPD9J3,1049,996,985,1078,true,BELOW,-53,-5.05,107,1250,1250
 2026-06-23,BAU,POMACE 3L,,amazon-fresh,,1309,,,,false,NOT_LISTED,,,0,3050,
 2026-06-23,BAU,PUMPKIN SEEDS 200G,,amazon-fresh,,209,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,PUMPKIN SEEDS 400G,,amazon-fresh,,399,,,,false,NOT_LISTED,,,0,699,
@@ -13856,10 +13856,10 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,QUINOA SEEDS 200G,,amazon-fresh,,119,,,,false,NOT_LISTED,,,0,199,
 2026-06-23,BAU,QUINOA SEEDS 400G,,amazon-fresh,,179,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,QUINOA SEEDS 800G,,amazon-fresh,,259,,,,false,NOT_LISTED,,,0,399,
-2026-06-23,BAU,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-fresh,B0DBHQ2QWW,199,189,185,199,true,BELOW,-10,-5.03,90,285,285
+2026-06-23,BAU,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-fresh,B0DBHQ2QWW,199,189,185,199,true,BELOW,-10,-5.03,85,285,285
 2026-06-23,BAU,RICE BRAN 1L + 1L,,amazon-fresh,,389,,,,false,NOT_LISTED,,,0,570,
 2026-06-23,BAU,RICE BRAN 4L,,amazon-fresh,,759,,,,false,NOT_LISTED,,,0,1140,
-2026-06-23,BAU,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-5l,amazon-fresh,B0DBJ13FKL,959,909,909,959,true,BELOW,-50,-5.21,74,1425,1425
+2026-06-23,BAU,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-5l,amazon-fresh,B0DBJ13FKL,959,909,909,959,true,BELOW,-50,-5.21,71,1425,1425
 2026-06-23,BAU,ROSEMARY LEAVES 150 GMS,,amazon-fresh,,179,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,SAFFRON 1GMS,,amazon-fresh,,449,,,,false,NOT_LISTED,,,0,899,
 2026-06-23,BAU,SANO CANOLA 1L,,amazon-fresh,,259,,,,false,NOT_LISTED,,,0,475,
@@ -13876,26 +13876,26 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,SANO SUNFLOWER 5L,,amazon-fresh,,1069,,,,false,NOT_LISTED,,,0,1475,
 2026-06-23,BAU,SESAME 1L + 1L,,amazon-fresh,,689,,,,false,NOT_LISTED,,,0,1200,
 2026-06-23,BAU,SESAME OIL 1L,,amazon-fresh,,349,,,,false,NOT_LISTED,,,0,600,
-2026-06-23,BAU,SO OLIVE 1L,jivo-soolive-oil-1l-1l,amazon-fresh,B0DC6JR4F3,289,279,279,289,true,BELOW,-10,-3.46,36,325,325
+2026-06-23,BAU,SO OLIVE 1L,jivo-soolive-oil-1l-1l,amazon-fresh,B0DC6JR4F3,289,289,279,289,true,MATCH,0,0,4,325,325
 2026-06-23,BAU,SO OLIVE 1L + 1L,,amazon-fresh,,569,,,,false,NOT_LISTED,,,0,650,
 2026-06-23,BAU,SO OLIVE 5L,,amazon-fresh,,1419,,,,false,NOT_LISTED,,,0,1625,
 2026-06-23,BAU,SODA 750ML,,amazon-fresh,,15,,,,false,NOT_LISTED,,,0,30,
 2026-06-23,BAU,SODA LEMON 750ML,,amazon-fresh,,45,,,,false,NOT_LISTED,,,0,55,
-2026-06-23,BAU,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-1l,amazon-fresh,B0B6HNNL5B,209,199,199,209,true,BELOW,-10,-4.78,19,225,225
+2026-06-23,BAU,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-1l,amazon-fresh,B0B6HNNL5B,209,209,199,209,true,MATCH,0,0,3,225,225
 2026-06-23,BAU,SOYABEAN 1L + 1L,,amazon-fresh,,409,,,,false,NOT_LISTED,,,0,1100,
 2026-06-23,BAU,SOYABEAN 1L POUCH,,amazon-fresh,,209,,,,false,NOT_LISTED,,,0,199,
 2026-06-23,BAU,SOYABEAN 5L,,amazon-fresh,,999,,,,false,NOT_LISTED,,,0,1100,
 2026-06-23,BAU,SPRING WATER 750ML,,amazon-fresh,,50,,,,false,NOT_LISTED,,,0,55,
-2026-06-23,BAU,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,amazon-fresh,B0B4SJTNF2,229,166,166,174,true,BELOW,-63,-27.51,80,275,275
+2026-06-23,BAU,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,amazon-fresh,B0B4SJTNF2,229,166,166,174,true,BELOW,-63,-27.51,79,275,275
 2026-06-23,BAU,SUNFLOWER 1L + 1L,,amazon-fresh,,449,,,,false,NOT_LISTED,,,0,550,
 2026-06-23,BAU,SUNFLOWER 3L,,amazon-fresh,,679,,,,false,NOT_LISTED,,,0,825,
 2026-06-23,BAU,SUNFLOWER 4L,,amazon-fresh,,909,,,,false,NOT_LISTED,,,0,1038,
-2026-06-23,BAU,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,amazon-fresh,B0991VMDB1,1139,831,831,1139,true,BELOW,-308,-27.04,78,1350,1350
+2026-06-23,BAU,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,amazon-fresh,B0991VMDB1,1139,1139,831,1139,true,MATCH,0,0,43,1350,1350
 2026-06-23,BAU,SUNFLOWER SEEDS 200G,,amazon-fresh,,139,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,SUNFLOWER SEEDS 400G,,amazon-fresh,,259,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,SUNFLOWER SEEDS 800G,,amazon-fresh,,389,,,,false,NOT_LISTED,,,0,899,
 2026-06-23,BAU,WG MANGO JUICE 500ML,,amazon-fresh,,39,,,,false,NOT_LISTED,,,0,100,
-2026-06-23,BAU,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,amazon-fresh,B0FF9P7XVX,269,259,259,259,true,BELOW,-10,-3.72,10,375,355
+2026-06-23,BAU,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,amazon-fresh,B0FF9P7XVX,269,269,269,269,true,MATCH,0,0,0,375,355
 2026-06-23,BAU,YELLOW MUSTARD 1L + 1L,,amazon-fresh,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-23,BAU,YELLOW MUSTARD 5L,,amazon-fresh,,1329,,,,false,NOT_LISTED,,,0,2000,
 2026-06-23,BAU,A2 GHEE 1L,,amazon-now,,1409,,,,false,NOT_LISTED,,,0,4000,
@@ -13906,30 +13906,30 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,BLACK CARDAMOM 100G,,amazon-now,,289,,,,false,NOT_LISTED,,,0,549,
 2026-06-23,BAU,BLACK OLIVE 470G,,amazon-now,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,BLACK PEPPER 100G,,amazon-now,,145,,,,false,NOT_LISTED,,,0,399,
-2026-06-23,BAU,CANOLA 1+1L,jivo-canola-cold-pressed-edible-oil-11-litres-1l,amazon-now,B0152TWWSQ,529,509,485,529,true,BELOW,-20,-3.78,33,750,750
-2026-06-23,BAU,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,amazon-now,B09MJ6QDX7,269,239,239,281,true,BELOW,-30,-11.15,81,375,375
+2026-06-23,BAU,CANOLA 1+1L,jivo-canola-cold-pressed-edible-oil-11-litres-1l,amazon-now,B0152TWWSQ,529,529,485,529,true,MATCH,0,0,11,750,750
+2026-06-23,BAU,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,amazon-now,B09MJ6QDX7,269,239,233,281,true,BELOW,-30,-11.15,87,375,375
 2026-06-23,BAU,CANOLA 1L + 1L,,amazon-now,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-23,BAU,CANOLA 1L POUCH,,amazon-now,,269,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CANOLA 3L,,amazon-now,,799,,,,false,NOT_LISTED,,,0,690,
 2026-06-23,BAU,CANOLA 4L,,amazon-now,,1189,,,,false,NOT_LISTED,,,0,1199,
-2026-06-23,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5-litre-5l,amazon-now,B077ZN4G28,1299,1193,1193,1299,true,BELOW,-106,-8.16,89,1650,1650
+2026-06-23,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5-litre-5l,amazon-now,B077ZN4G28,1299,1299,1193,1299,true,MATCH,0,0,48,1650,1650
 2026-06-23,BAU,CHIA SEEDS 200G,,amazon-now,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CHIA SEEDS 400G,,amazon-now,,209,,,,false,NOT_LISTED,,,0,599,
 2026-06-23,BAU,CHIA SEEDS 800G,,amazon-now,,349,,,,false,NOT_LISTED,,,0,899,
 2026-06-23,BAU,CINNAMON BARK 100G,,amazon-now,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CLOVE 100G,,amazon-now,,249,,,,false,NOT_LISTED,,,0,280,
-2026-06-23,BAU,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-1l,amazon-now,B0BZ8K3DQP,559,539,539,559,true,BELOW,-20,-3.58,23,700,700
+2026-06-23,BAU,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-1l,amazon-now,B0BZ8K3DQP,559,559,559,559,true,MATCH,0,0,0,700,700
 2026-06-23,BAU,COCONUT 200ML,,amazon-now,,149,,,,false,NOT_LISTED,,,0,285,
 2026-06-23,BAU,COCONUT 500ML,,amazon-now,,289,,,,false,NOT_LISTED,,,0,695,
 2026-06-23,BAU,COFFEE,,amazon-now,,249,,,,false,NOT_LISTED,,,0,350,
 2026-06-23,BAU,CUMIN SEEDS 100G,,amazon-now,,75,,,,false,NOT_LISTED,,,0,249,
 2026-06-23,BAU,EXTRA LIGHT 1+1L,,amazon-now,,1229,,,,false,NOT_LISTED,,,0,2798,
-2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1-litre-1l,amazon-now,B09HZY97FR,619,499,480,599,true,BELOW,-120,-19.39,58,1499,1499
-2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-2l,amazon-now,B09NXCPZW1,1229,988,988,1189,true,BELOW,-241,-19.61,95,2799,2799
+2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1-litre-1l,amazon-now,B09HZY97FR,619,499,480,619,true,BELOW,-120,-19.39,40,1499,1499
+2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-2l,amazon-now,B09NXCPZW1,1229,988,988,1229,true,BELOW,-241,-19.61,89,2799,2799
 2026-06-23,BAU,EXTRA LIGHT 3L,,amazon-now,,1849,,,,false,NOT_LISTED,,,0,2200,
 2026-06-23,BAU,EXTRA LIGHT 500ML,,amazon-now,,349,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,EXTRA LIGHT 5L,,amazon-now,,3069,,,,false,NOT_LISTED,,,0,6499,
-2026-06-23,BAU,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-1-litre-1l,amazon-now,B093BMGPQC,809,789,789,797,true,BELOW,-20,-2.47,76,1499,1799
+2026-06-23,BAU,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-1-litre-1l,amazon-now,B093BMGPQC,809,809,797,809,true,MATCH,0,0,16,1499,1799
 2026-06-23,BAU,EXTRA VIRGIN 1L + 1L,,amazon-now,,1609,,,,false,NOT_LISTED,,,0,2998,
 2026-06-23,BAU,EXTRA VIRGIN 200ML,,amazon-now,,199,,,,false,NOT_LISTED,,,0,350,
 2026-06-23,BAU,EXTRA VIRGIN 250ML,,amazon-now,,219,,,,false,NOT_LISTED,,,0,450,
@@ -13946,21 +13946,21 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,GOLD 5L,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l,amazon-now,B0C9Q1S6QG,989,930,930,930,true,BELOW,-59,-5.97,13,1049,1050
 2026-06-23,BAU,GREEN CARDAMOM 100G,,amazon-now,,499,,,,false,NOT_LISTED,,,0,799,
 2026-06-23,BAU,GROUNDNUT 1L,jivo-cold-pressed-groundnut-oil-1-litre-1l,amazon-now,B0CKFFW9B6,259,188,188,197,true,BELOW,-71,-27.41,11,400,560
-2026-06-23,BAU,GROUNDNUT 5L,jivo-cold-pressed-groundnut-oil-5-litre-5l,amazon-now,B0CKFFGC31,1269,913,913,958,true,BELOW,-356,-28.05,40,2800,2800
-2026-06-23,BAU,JIVO POMACE 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,amazon-now,B0821DNF2W,439,379,379,418,true,BELOW,-60,-13.67,81,1049,1049
+2026-06-23,BAU,GROUNDNUT 5L,jivo-cold-pressed-groundnut-oil-5-litre-5l,amazon-now,B0CKFFGC31,1269,913,913,913,true,BELOW,-356,-28.05,2,2800,2800
+2026-06-23,BAU,JIVO POMACE 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,amazon-now,B0821DNF2W,439,379,379,402,true,BELOW,-60,-13.67,82,1049,1049
 2026-06-23,BAU,JIVO POMACE 1L + 1L,,amazon-now,,869,,,,false,NOT_LISTED,,,0,2098,
 2026-06-23,BAU,JIVO POMACE 2L,,amazon-now,,869,,,,false,NOT_LISTED,,,0,1600,
-2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,amazon-now,B07X53ZL6J,2169,1917,1917,2169,true,BELOW,-252,-11.62,79,4999,4999
+2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,amazon-now,B07X53ZL6J,2169,1917,1917,2169,true,BELOW,-252,-11.62,62,4999,4999
 2026-06-23,BAU,JIVO PUNJABI SHIKANJI 160 MLS,,amazon-now,,219,,,,false,NOT_LISTED,,,0,480,
 2026-06-23,BAU,JIVO WATER 1L,,amazon-now,,20,,,,false,NOT_LISTED,,,0,30,
 2026-06-23,BAU,JIVO WATER 250ML,,amazon-now,,119,,,,false,NOT_LISTED,,,0,360,
 2026-06-23,BAU,JIVO WATER 500 MLS,,amazon-now,,12,,,,false,NOT_LISTED,,,0,15,
-2026-06-23,BAU,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,amazon-now,B09NYCSQLF,219,159,154,166,true,BELOW,-60,-27.4,35,255,255
+2026-06-23,BAU,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,amazon-now,B09NYCSQLF,219,159,154,159,true,BELOW,-60,-27.4,29,255,255
 2026-06-23,BAU,MUSTARD 1L + 1L,,amazon-now,,429,,,,false,NOT_LISTED,,,0,500,
 2026-06-23,BAU,MUSTARD 1L POUCH,,amazon-now,,219,,,,false,NOT_LISTED,,,0,250,
 2026-06-23,BAU,MUSTARD 3L,,amazon-now,,629,,,,false,NOT_LISTED,,,0,765,
 2026-06-23,BAU,MUSTARD 4L,,amazon-now,,839,,,,false,NOT_LISTED,,,0,1000,
-2026-06-23,BAU,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,amazon-now,B091XPD9J3,1049,999,990,1027,true,BELOW,-50,-4.77,88,1250,1250
+2026-06-23,BAU,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,amazon-now,B091XPD9J3,1049,996,990,1049,true,BELOW,-53,-5.05,84,1250,1250
 2026-06-23,BAU,POMACE 3L,,amazon-now,,1309,,,,false,NOT_LISTED,,,0,3050,
 2026-06-23,BAU,PUMPKIN SEEDS 200G,,amazon-now,,209,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,PUMPKIN SEEDS 400G,,amazon-now,,399,,,,false,NOT_LISTED,,,0,699,
@@ -13969,10 +13969,10 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,QUINOA SEEDS 200G,,amazon-now,,119,,,,false,NOT_LISTED,,,0,199,
 2026-06-23,BAU,QUINOA SEEDS 400G,,amazon-now,,179,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,QUINOA SEEDS 800G,,amazon-now,,259,,,,false,NOT_LISTED,,,0,399,
-2026-06-23,BAU,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-now,B0DBHQ2QWW,199,189,185,199,true,BELOW,-10,-5.03,77,285,285
+2026-06-23,BAU,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-now,B0DBHQ2QWW,199,189,185,199,true,BELOW,-10,-5.03,72,285,285
 2026-06-23,BAU,RICE BRAN 1L + 1L,,amazon-now,,389,,,,false,NOT_LISTED,,,0,570,
 2026-06-23,BAU,RICE BRAN 4L,,amazon-now,,759,,,,false,NOT_LISTED,,,0,1140,
-2026-06-23,BAU,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-5l,amazon-now,B0DBJ13FKL,959,909,909,909,true,BELOW,-50,-5.21,23,1425,1425
+2026-06-23,BAU,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-5l,amazon-now,B0DBJ13FKL,959,945,909,959,true,BELOW,-14,-1.46,23,1425,1425
 2026-06-23,BAU,ROSEMARY LEAVES 150 GMS,,amazon-now,,179,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,SAFFRON 1GMS,,amazon-now,,449,,,,false,NOT_LISTED,,,0,899,
 2026-06-23,BAU,SANO CANOLA 1L,,amazon-now,,259,,,,false,NOT_LISTED,,,0,475,
@@ -13994,21 +13994,21 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,SO OLIVE 5L,,amazon-now,,1419,,,,false,NOT_LISTED,,,0,1625,
 2026-06-23,BAU,SODA 750ML,,amazon-now,,15,,,,false,NOT_LISTED,,,0,30,
 2026-06-23,BAU,SODA LEMON 750ML,,amazon-now,,45,,,,false,NOT_LISTED,,,0,55,
-2026-06-23,BAU,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-1l,amazon-now,B0B6HNNL5B,209,199,199,199,true,BELOW,-10,-4.78,20,225,225
+2026-06-23,BAU,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-1l,amazon-now,B0B6HNNL5B,209,209,199,209,true,MATCH,0,0,3,225,225
 2026-06-23,BAU,SOYABEAN 1L + 1L,,amazon-now,,409,,,,false,NOT_LISTED,,,0,1100,
 2026-06-23,BAU,SOYABEAN 1L POUCH,,amazon-now,,209,,,,false,NOT_LISTED,,,0,199,
 2026-06-23,BAU,SOYABEAN 5L,,amazon-now,,999,,,,false,NOT_LISTED,,,0,1100,
 2026-06-23,BAU,SPRING WATER 750ML,,amazon-now,,50,,,,false,NOT_LISTED,,,0,55,
-2026-06-23,BAU,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,amazon-now,B0B4SJTNF2,229,166,166,174,true,BELOW,-63,-27.51,72,275,275
+2026-06-23,BAU,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,amazon-now,B0B4SJTNF2,229,166,166,174,true,BELOW,-63,-27.51,71,275,275
 2026-06-23,BAU,SUNFLOWER 1L + 1L,,amazon-now,,449,,,,false,NOT_LISTED,,,0,550,
 2026-06-23,BAU,SUNFLOWER 3L,,amazon-now,,679,,,,false,NOT_LISTED,,,0,825,
 2026-06-23,BAU,SUNFLOWER 4L,,amazon-now,,909,,,,false,NOT_LISTED,,,0,1038,
-2026-06-23,BAU,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,amazon-now,B0991VMDB1,1139,831,831,1139,true,BELOW,-308,-27.04,75,1350,1350
+2026-06-23,BAU,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,amazon-now,B0991VMDB1,1139,831,831,1139,true,BELOW,-308,-27.04,41,1350,1350
 2026-06-23,BAU,SUNFLOWER SEEDS 200G,,amazon-now,,139,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,SUNFLOWER SEEDS 400G,,amazon-now,,259,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,SUNFLOWER SEEDS 800G,,amazon-now,,389,,,,false,NOT_LISTED,,,0,899,
-2026-06-23,BAU,WG MANGO JUICE 500ML,jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml,amazon-now,B0DM2G4YCC,39,35,35,55,true,BELOW,-4,-10.26,8,100,55
-2026-06-23,BAU,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,amazon-now,B0FF9P7XVX,269,259,259,259,true,BELOW,-10,-3.72,10,375,355
+2026-06-23,BAU,WG MANGO JUICE 500ML,jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml,amazon-now,B0DM2G4YCC,39,39,39,55,true,MATCH,0,0,0,100,55
+2026-06-23,BAU,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,amazon-now,B0FF9P7XVX,269,269,269,269,true,MATCH,0,0,0,375,355
 2026-06-23,BAU,YELLOW MUSTARD 1L + 1L,,amazon-now,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-23,BAU,YELLOW MUSTARD 5L,,amazon-now,,1329,,,,false,NOT_LISTED,,,0,2000,
 2026-06-23,BAU,A2 GHEE 1L,,flipkart-minutes,,1409,,,,false,NOT_LISTED,,,0,4000,
@@ -14020,7 +14020,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,BLACK OLIVE 470G,,flipkart-minutes,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,BLACK PEPPER 100G,,flipkart-minutes,,145,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,CANOLA 1+1L,jivo-cold-press-combo-canola-oil-plastic-bottle-2l,flipkart-minutes,EDOF25FJGBH5EDS3,529,,,,false,OOS,,,0,750,
-2026-06-23,BAU,CANOLA 1L,jivo-cold-press-canola-oil-plastic-bottle-1l,flipkart-minutes,EDOG9BP8GEWFW9XC,269,251,234,271,true,BELOW,-18,-6.69,30,375,375
+2026-06-23,BAU,CANOLA 1L,jivo-cold-press-canola-oil-plastic-bottle-1l,flipkart-minutes,EDOG9BP8GEWFW9XC,269,251,234,271,true,BELOW,-18,-6.69,32,375,375
 2026-06-23,BAU,CANOLA 1L + 1L,,flipkart-minutes,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-23,BAU,CANOLA 1L POUCH,,flipkart-minutes,,269,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CANOLA 3L,,flipkart-minutes,,799,,,,false,NOT_LISTED,,,0,690,
@@ -14060,20 +14060,20 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,GREEN CARDAMOM 100G,,flipkart-minutes,,499,,,,false,NOT_LISTED,,,0,799,
 2026-06-23,BAU,GROUNDNUT 1L,,flipkart-minutes,,259,,,,false,NOT_LISTED,,,0,400,
 2026-06-23,BAU,GROUNDNUT 5L,,flipkart-minutes,,1269,,,,false,NOT_LISTED,,,0,2800,
-2026-06-23,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-plastic-bottle-1l,flipkart-minutes,EDOFTHNH4YZ7GDHS,439,430,387,430,true,BELOW,-9,-2.05,24,1049,1049
+2026-06-23,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-plastic-bottle-1l,flipkart-minutes,EDOFTHNH4YZ7GDHS,439,430,387,430,true,BELOW,-9,-2.05,25,1049,1049
 2026-06-23,BAU,JIVO POMACE 1L + 1L,,flipkart-minutes,,869,,,,false,NOT_LISTED,,,0,2098,
 2026-06-23,BAU,JIVO POMACE 2L,,flipkart-minutes,,869,,,,false,NOT_LISTED,,,0,1600,
-2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-tin-5l,flipkart-minutes,EDOFTHNH3T8PATGW,2169,2132,2132,2132,true,BELOW,-37,-1.71,6,4999,4999
+2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-tin-5l,flipkart-minutes,EDOFTHNH3T8PATGW,2169,2132,2132,2132,true,BELOW,-37,-1.71,8,4999,4999
 2026-06-23,BAU,JIVO PUNJABI SHIKANJI 160 MLS,,flipkart-minutes,,219,,,,false,NOT_LISTED,,,0,480,
 2026-06-23,BAU,JIVO WATER 1L,jivo-natural-minerals-water-mineral-water-1l,flipkart-minutes,WERH9M3VYW6X5KSX,20,24,24,24,true,ABOVE,4,20,0,30,30
 2026-06-23,BAU,JIVO WATER 250ML,,flipkart-minutes,,119,,,,false,NOT_LISTED,,,0,360,
 2026-06-23,BAU,JIVO WATER 500 MLS,,flipkart-minutes,,12,,,,false,NOT_LISTED,,,0,15,
-2026-06-23,BAU,MUSTARD 1L,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,flipkart-minutes,EDOGDVWYGJNDYRQP,219,181,174,181,true,BELOW,-38,-17.35,47,255,255
+2026-06-23,BAU,MUSTARD 1L,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,flipkart-minutes,EDOGDVWYGJNDYRQP,219,181,181,181,true,BELOW,-38,-17.35,48,255,255
 2026-06-23,BAU,MUSTARD 1L + 1L,,flipkart-minutes,,429,,,,false,NOT_LISTED,,,0,500,
 2026-06-23,BAU,MUSTARD 1L POUCH,,flipkart-minutes,,219,,,,false,NOT_LISTED,,,0,250,
 2026-06-23,BAU,MUSTARD 3L,,flipkart-minutes,,629,,,,false,NOT_LISTED,,,0,765,
 2026-06-23,BAU,MUSTARD 4L,jivo-cold-pressed-pure-cooking-mustard-oil-can-4l,flipkart-minutes,EDOHAUNQSDFDYPFC,839,,,,false,OOS,,,0,1000,1000
-2026-06-23,BAU,MUSTARD 5L,jivo-cold-pressed-pure-cooking-mustard-oil-can-5l,flipkart-minutes,EDOGDVWEUPPWVGED,1049,997,997,997,true,BELOW,-52,-4.96,19,1250,1250
+2026-06-23,BAU,MUSTARD 5L,jivo-cold-pressed-pure-cooking-mustard-oil-can-5l,flipkart-minutes,EDOGDVWEUPPWVGED,1049,997,997,997,true,BELOW,-52,-4.96,18,1250,1250
 2026-06-23,BAU,POMACE 3L,,flipkart-minutes,,1309,,,,false,NOT_LISTED,,,0,3050,
 2026-06-23,BAU,PUMPKIN SEEDS 200G,,flipkart-minutes,,209,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,PUMPKIN SEEDS 400G,,flipkart-minutes,,399,,,,false,NOT_LISTED,,,0,699,
@@ -14109,7 +14109,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,SODA LEMON 750ML,,flipkart-minutes,,45,,,,false,NOT_LISTED,,,0,55,
 2026-06-23,BAU,SOYABEAN 1L,,flipkart-minutes,,209,,,,false,NOT_LISTED,,,0,225,
 2026-06-23,BAU,SOYABEAN 1L + 1L,,flipkart-minutes,,409,,,,false,NOT_LISTED,,,0,1100,
-2026-06-23,BAU,SOYABEAN 1L POUCH,jivo-soybean-oil-soyabean-oil-pouch-1l,flipkart-minutes,EDOGPX8ZD2ZYPH6U,209,171,171,171,true,BELOW,-38,-18.18,1,199,199
+2026-06-23,BAU,SOYABEAN 1L POUCH,jivo-soybean-oil-soyabean-oil-pouch-1l,flipkart-minutes,EDOGPX8ZD2ZYPH6U,209,171,171,171,true,BELOW,-38,-18.18,2,199,199
 2026-06-23,BAU,SOYABEAN 5L,,flipkart-minutes,,999,,,,false,NOT_LISTED,,,0,1100,
 2026-06-23,BAU,SPRING WATER 750ML,,flipkart-minutes,,50,,,,false,NOT_LISTED,,,0,55,
 2026-06-23,BAU,SUNFLOWER 1L,,flipkart-minutes,,229,,,,false,NOT_LISTED,,,0,275,
@@ -14132,13 +14132,13 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,BLACK CARDAMOM 100G,,zepto,,289,,,,false,NOT_LISTED,,,0,549,
 2026-06-23,BAU,BLACK OLIVE 470G,,zepto,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,BLACK PEPPER 100G,,zepto,,145,,,,false,NOT_LISTED,,,0,399,
-2026-06-23,BAU,CANOLA 1+1L,jivo-cold-press-canola-oil-combo-bottle-2l,zepto,50b56b7f-3d9f-45c7-8161-c2327e8db652,529,485,485,520,true,BELOW,-44,-8.32,37,750,750
+2026-06-23,BAU,CANOLA 1+1L,jivo-cold-press-canola-oil-combo-bottle-2l,zepto,50b56b7f-3d9f-45c7-8161-c2327e8db652,529,485,485,520,true,BELOW,-44,-8.32,27,750,750
 2026-06-23,BAU,CANOLA 1L,,zepto,,269,,,,false,NOT_LISTED,,,0,375,
 2026-06-23,BAU,CANOLA 1L + 1L,,zepto,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-23,BAU,CANOLA 1L POUCH,,zepto,,269,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CANOLA 3L,,zepto,,799,,,,false,NOT_LISTED,,,0,690,
 2026-06-23,BAU,CANOLA 4L,,zepto,,1189,,,,false,NOT_LISTED,,,0,1199,
-2026-06-23,BAU,CANOLA 5L,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,zepto,c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe,1299,1193,1193,1617,true,BELOW,-106,-8.16,28,1650,1650
+2026-06-23,BAU,CANOLA 5L,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,zepto,c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe,1299,1617,1193,1617,true,ABOVE,318,24.48,14,1650,1650
 2026-06-23,BAU,CHIA SEEDS 200G,,zepto,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CHIA SEEDS 400G,,zepto,,209,,,,false,NOT_LISTED,,,0,599,
 2026-06-23,BAU,CHIA SEEDS 800G,,zepto,,349,,,,false,NOT_LISTED,,,0,899,
@@ -14149,20 +14149,20 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,COCONUT 500ML,,zepto,,289,,,,false,NOT_LISTED,,,0,695,
 2026-06-23,BAU,COFFEE,,zepto,,249,,,,false,NOT_LISTED,,,0,350,
 2026-06-23,BAU,CUMIN SEEDS 100G,,zepto,,75,,,,false,NOT_LISTED,,,0,249,
-2026-06-23,BAU,EXTRA LIGHT 1+1L,jivo-extra-light-olive-oil-combo-2l,zepto,597fe027-2e19-4a49-bc07-76ef57295ad6,1229,998,998,998,true,BELOW,-231,-18.8,28,2798,2998
-2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1l,zepto,2300d5e1-ccd1-46ab-990d-aa7fee80bc5d,619,499,499,1499,true,BELOW,-120,-19.39,47,1499,1499
-2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,zepto,29e72c8c-7ff6-46e2-9721-ca4e9f612e98,1229,1127,1046,1292,true,BELOW,-102,-8.3,45,2799,2799
+2026-06-23,BAU,EXTRA LIGHT 1+1L,jivo-extra-light-olive-oil-combo-2l,zepto,597fe027-2e19-4a49-bc07-76ef57295ad6,1229,998,998,998,true,BELOW,-231,-18.8,23,2798,2998
+2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1l,zepto,2300d5e1-ccd1-46ab-990d-aa7fee80bc5d,619,499,499,499,true,BELOW,-120,-19.39,38,1499,1499
+2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,zepto,29e72c8c-7ff6-46e2-9721-ca4e9f612e98,1229,1141,1100,1203,true,BELOW,-88,-7.16,41,2799,2799
 2026-06-23,BAU,EXTRA LIGHT 3L,,zepto,,1849,,,,false,NOT_LISTED,,,0,2200,
 2026-06-23,BAU,EXTRA LIGHT 500ML,,zepto,,349,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,EXTRA LIGHT 5L,,zepto,,3069,,,,false,NOT_LISTED,,,0,6499,
-2026-06-23,BAU,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-bottle-1l,zepto,5d186472-6fe2-4643-af2f-2f9cd773986d,809,989,970,1044,true,ABOVE,180,22.25,0,1499,1799
+2026-06-23,BAU,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-bottle-1l,zepto,5d186472-6fe2-4643-af2f-2f9cd773986d,809,989,940,1044,true,ABOVE,180,22.25,0,1499,1799
 2026-06-23,BAU,EXTRA VIRGIN 1L + 1L,,zepto,,1609,,,,false,NOT_LISTED,,,0,2998,
 2026-06-23,BAU,EXTRA VIRGIN 200ML,,zepto,,199,,,,false,NOT_LISTED,,,0,350,
 2026-06-23,BAU,EXTRA VIRGIN 250ML,,zepto,,219,,,,false,NOT_LISTED,,,0,450,
 2026-06-23,BAU,EXTRA VIRGIN 2L,,zepto,,1619,,,,false,NOT_LISTED,,,0,2700,
 2026-06-23,BAU,EXTRA VIRGIN 3L,,zepto,,2429,,,,false,NOT_LISTED,,,0,4000,
 2026-06-23,BAU,EXTRA VIRGIN 500ML,,zepto,,419,,,,false,NOT_LISTED,,,0,675,
-2026-06-23,BAU,EXTRA VIRGIN 5L,jivo-extra-virgin-cooking-olive-oil-5l,zepto,c80ef4de-b2c3-4fb4-984b-4cb29b33db33,4039,7920,7920,7920,true,ABOVE,3881,96.09,0,7999,7999
+2026-06-23,BAU,EXTRA VIRGIN 5L,jivo-extra-virgin-cooking-olive-oil-5l,zepto,c80ef4de-b2c3-4fb4-984b-4cb29b33db33,4039,,,,false,OOS,,,0,7999,7999
 2026-06-23,BAU,FLAX SEEDS 200G,,zepto,,99,,,,false,NOT_LISTED,,,0,249,
 2026-06-23,BAU,FLAX SEEDS 400G,,zepto,,189,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,FLAX SEEDS 800G,,zepto,,369,,,,false,NOT_LISTED,,,0,750,
@@ -14171,22 +14171,22 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,GOLD 1L,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,zepto,bc1af3d1-2a14-4296-b38e-e05ba43c3170,199,,,,false,OOS,,,0,225,225
 2026-06-23,BAU,GOLD 5L,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l,zepto,40bd2571-3734-4503-84b7-bbe87a3818c3,989,,,,false,OOS,,,0,1049,1050
 2026-06-23,BAU,GREEN CARDAMOM 100G,,zepto,,499,,,,false,NOT_LISTED,,,0,799,
-2026-06-23,BAU,GROUNDNUT 1L,jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l,zepto,41367ef4-80d9-4819-bbae-d1806c184f5c,259,199,199,199,true,BELOW,-60,-23.17,50,400,560
+2026-06-23,BAU,GROUNDNUT 1L,jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l,zepto,41367ef4-80d9-4819-bbae-d1806c184f5c,259,199,199,199,true,BELOW,-60,-23.17,37,400,560
 2026-06-23,BAU,GROUNDNUT 5L,,zepto,,1269,,,,false,NOT_LISTED,,,0,2800,
-2026-06-23,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,zepto,ac9a7dd8-489b-4475-a14d-27ae393a5505,439,379,379,379,true,BELOW,-60,-13.67,48,1049,1049
-2026-06-23,BAU,JIVO POMACE 1L + 1L,jivo-pomace-olive-oil-combo-2l,zepto,3d955a07-72db-4d1a-9d65-42c5a8dd0641,869,758,758,758,true,BELOW,-111,-12.77,24,2098,2098
-2026-06-23,BAU,JIVO POMACE 2L,jivo-daily-pomace-olive-oil-2l,zepto,8eedf6ff-d36c-4313-88e4-6aa571372f46,869,1045,977,1049,true,ABOVE,176,20.25,0,1600,1449
-2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,zepto,a81945f0-43ac-4970-82b4-c6c8986ee9ae,2169,2146,2121,2677,true,BELOW,-23,-1.06,37,4999,4999
+2026-06-23,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,zepto,ac9a7dd8-489b-4475-a14d-27ae393a5505,439,379,379,379,true,BELOW,-60,-13.67,38,1049,1049
+2026-06-23,BAU,JIVO POMACE 1L + 1L,jivo-pomace-olive-oil-combo-2l,zepto,3d955a07-72db-4d1a-9d65-42c5a8dd0641,869,758,758,758,true,BELOW,-111,-12.77,23,2098,2098
+2026-06-23,BAU,JIVO POMACE 2L,jivo-daily-pomace-olive-oil-2l,zepto,8eedf6ff-d36c-4313-88e4-6aa571372f46,869,1014,988,1050,true,ABOVE,145,16.69,0,1600,1449
+2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,zepto,a81945f0-43ac-4970-82b4-c6c8986ee9ae,2169,2146,2127,2587,true,BELOW,-23,-1.06,27,4999,4999
 2026-06-23,BAU,JIVO PUNJABI SHIKANJI 160 MLS,,zepto,,219,,,,false,NOT_LISTED,,,0,480,
 2026-06-23,BAU,JIVO WATER 1L,,zepto,,20,,,,false,NOT_LISTED,,,0,30,
 2026-06-23,BAU,JIVO WATER 250ML,,zepto,,119,,,,false,NOT_LISTED,,,0,360,
 2026-06-23,BAU,JIVO WATER 500 MLS,,zepto,,12,,,,false,NOT_LISTED,,,0,15,
-2026-06-23,BAU,MUSTARD 1L,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l,zepto,89804a83-79f3-45c6-b940-9c395451dffa,219,181,180,184,true,BELOW,-38,-17.35,53,255,255
+2026-06-23,BAU,MUSTARD 1L,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l,zepto,89804a83-79f3-45c6-b940-9c395451dffa,219,181,180,184,true,BELOW,-38,-17.35,41,255,255
 2026-06-23,BAU,MUSTARD 1L + 1L,,zepto,,429,,,,false,NOT_LISTED,,,0,500,
 2026-06-23,BAU,MUSTARD 1L POUCH,,zepto,,219,,,,false,NOT_LISTED,,,0,250,
 2026-06-23,BAU,MUSTARD 3L,,zepto,,629,,,,false,NOT_LISTED,,,0,765,
 2026-06-23,BAU,MUSTARD 4L,,zepto,,839,,,,false,NOT_LISTED,,,0,1000,
-2026-06-23,BAU,MUSTARD 5L,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,zepto,275d43f8-2da4-4d9e-8873-e04fcaf5c073,1049,997,996,1063,true,BELOW,-52,-4.96,33,1250,1250
+2026-06-23,BAU,MUSTARD 5L,jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l,zepto,275d43f8-2da4-4d9e-8873-e04fcaf5c073,1049,997,972,1022,true,BELOW,-52,-4.96,21,1250,1250
 2026-06-23,BAU,POMACE 3L,,zepto,,1309,,,,false,NOT_LISTED,,,0,3050,
 2026-06-23,BAU,PUMPKIN SEEDS 200G,,zepto,,209,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,PUMPKIN SEEDS 400G,,zepto,,399,,,,false,NOT_LISTED,,,0,699,
@@ -14225,7 +14225,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,SOYABEAN 1L POUCH,,zepto,,209,,,,false,NOT_LISTED,,,0,199,
 2026-06-23,BAU,SOYABEAN 5L,,zepto,,999,,,,false,NOT_LISTED,,,0,1100,
 2026-06-23,BAU,SPRING WATER 750ML,,zepto,,50,,,,false,NOT_LISTED,,,0,55,
-2026-06-23,BAU,SUNFLOWER 1L,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l,zepto,06c8f55b-13a5-4d9b-8990-a418e63c89ad,229,192,185,200,true,BELOW,-37,-16.16,54,275,275
+2026-06-23,BAU,SUNFLOWER 1L,jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l,zepto,06c8f55b-13a5-4d9b-8990-a418e63c89ad,229,192,192,195,true,BELOW,-37,-16.16,42,275,275
 2026-06-23,BAU,SUNFLOWER 1L + 1L,,zepto,,449,,,,false,NOT_LISTED,,,0,550,
 2026-06-23,BAU,SUNFLOWER 3L,,zepto,,679,,,,false,NOT_LISTED,,,0,825,
 2026-06-23,BAU,SUNFLOWER 4L,,zepto,,909,,,,false,NOT_LISTED,,,0,1038,
@@ -14246,12 +14246,12 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,BLACK OLIVE 470G,,blinkit,,249,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,BLACK PEPPER 100G,,blinkit,,145,,,,false,NOT_LISTED,,,0,399,
 2026-06-23,BAU,CANOLA 1+1L,,blinkit,,529,,,,false,NOT_LISTED,,,0,750,
-2026-06-23,BAU,CANOLA 1L,jivo-cold-pressed-canola-oil-1l,blinkit,407851,269,239,228,249,true,BELOW,-30,-11.15,111,375,375
+2026-06-23,BAU,CANOLA 1L,jivo-cold-pressed-canola-oil-1l,blinkit,407851,269,239,228,249,true,BELOW,-30,-11.15,110,375,375
 2026-06-23,BAU,CANOLA 1L + 1L,,blinkit,,529,,,,false,NOT_LISTED,,,0,750,
 2026-06-23,BAU,CANOLA 1L POUCH,,blinkit,,269,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CANOLA 3L,,blinkit,,799,,,,false,NOT_LISTED,,,0,690,
 2026-06-23,BAU,CANOLA 4L,,blinkit,,1189,,,,false,NOT_LISTED,,,0,1199,
-2026-06-23,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5l,blinkit,406593,1299,1193,1193,1493,true,BELOW,-106,-8.16,54,1650,1650
+2026-06-23,BAU,CANOLA 5L,jivo-cold-pressed-canola-oil-5l,blinkit,406593,1299,1193,1193,1493,true,BELOW,-106,-8.16,57,1650,1650
 2026-06-23,BAU,CHIA SEEDS 200G,,blinkit,,99,,,,false,NOT_LISTED,,,0,299,
 2026-06-23,BAU,CHIA SEEDS 400G,,blinkit,,209,,,,false,NOT_LISTED,,,0,599,
 2026-06-23,BAU,CHIA SEEDS 800G,,blinkit,,349,,,,false,NOT_LISTED,,,0,899,
@@ -14263,8 +14263,8 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,COFFEE,,blinkit,,249,,,,false,NOT_LISTED,,,0,350,
 2026-06-23,BAU,CUMIN SEEDS 100G,,blinkit,,75,,,,false,NOT_LISTED,,,0,249,
 2026-06-23,BAU,EXTRA LIGHT 1+1L,,blinkit,,1229,,,,false,NOT_LISTED,,,0,2798,
-2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1l,blinkit,406592,619,564,564,648,true,BELOW,-55,-8.89,83,1499,1499
-2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,blinkit,545244,1229,1141,988,1340,true,BELOW,-88,-7.16,89,2799,2799
+2026-06-23,BAU,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1l,blinkit,406592,619,499,499,648,true,BELOW,-120,-19.39,83,1499,1499
+2026-06-23,BAU,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,blinkit,545244,1229,1127,988,1340,true,BELOW,-102,-8.3,102,2799,2799
 2026-06-23,BAU,EXTRA LIGHT 3L,,blinkit,,1849,,,,false,NOT_LISTED,,,0,2200,
 2026-06-23,BAU,EXTRA LIGHT 500ML,,blinkit,,349,,,,false,NOT_LISTED,,,0,499,
 2026-06-23,BAU,EXTRA LIGHT 5L,,blinkit,,3069,,,,false,NOT_LISTED,,,0,6499,
@@ -14286,15 +14286,15 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,GREEN CARDAMOM 100G,,blinkit,,499,,,,false,NOT_LISTED,,,0,799,
 2026-06-23,BAU,GROUNDNUT 1L,,blinkit,,259,,,,false,NOT_LISTED,,,0,400,
 2026-06-23,BAU,GROUNDNUT 5L,,blinkit,,1269,,,,false,NOT_LISTED,,,0,2800,
-2026-06-23,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,blinkit,528706,439,387,381,494,true,BELOW,-52,-11.85,116,1049,1049
+2026-06-23,BAU,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,blinkit,528706,439,379,379,494,true,BELOW,-60,-13.67,122,1049,1049
 2026-06-23,BAU,JIVO POMACE 1L + 1L,,blinkit,,869,,,,false,NOT_LISTED,,,0,2098,
 2026-06-23,BAU,JIVO POMACE 2L,,blinkit,,869,,,,false,NOT_LISTED,,,0,1600,
-2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,blinkit,407561,2169,1917,1917,2188,true,BELOW,-252,-11.62,86,4999,4999
+2026-06-23,BAU,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,blinkit,407561,2169,1917,1917,2188,true,BELOW,-252,-11.62,87,4999,4999
 2026-06-23,BAU,JIVO PUNJABI SHIKANJI 160 MLS,,blinkit,,219,,,,false,NOT_LISTED,,,0,480,
 2026-06-23,BAU,JIVO WATER 1L,,blinkit,,20,,,,false,NOT_LISTED,,,0,30,
 2026-06-23,BAU,JIVO WATER 250ML,,blinkit,,119,,,,false,NOT_LISTED,,,0,360,
 2026-06-23,BAU,JIVO WATER 500 MLS,,blinkit,,12,,,,false,NOT_LISTED,,,0,15,
-2026-06-23,BAU,MUSTARD 1L,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,blinkit,540835,219,169,164,169,true,BELOW,-50,-22.83,16,255,255
+2026-06-23,BAU,MUSTARD 1L,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,blinkit,540835,219,169,159,169,true,BELOW,-50,-22.83,16,255,255
 2026-06-23,BAU,MUSTARD 1L + 1L,,blinkit,,429,,,,false,NOT_LISTED,,,0,500,
 2026-06-23,BAU,MUSTARD 1L POUCH,,blinkit,,219,,,,false,NOT_LISTED,,,0,250,
 2026-06-23,BAU,MUSTARD 3L,,blinkit,,629,,,,false,NOT_LISTED,,,0,765,
@@ -14338,7 +14338,7 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-06-23,BAU,SOYABEAN 1L POUCH,,blinkit,,209,,,,false,NOT_LISTED,,,0,199,
 2026-06-23,BAU,SOYABEAN 5L,,blinkit,,999,,,,false,NOT_LISTED,,,0,1100,
 2026-06-23,BAU,SPRING WATER 750ML,,blinkit,,50,,,,false,NOT_LISTED,,,0,55,
-2026-06-23,BAU,SUNFLOWER 1L,jivo-cold-pressed-sunflower-oil-1l,blinkit,628632,229,195,184,196,true,BELOW,-34,-14.85,34,275,275
+2026-06-23,BAU,SUNFLOWER 1L,jivo-cold-pressed-sunflower-oil-1l,blinkit,628632,229,195,184,196,true,BELOW,-34,-14.85,33,275,275
 2026-06-23,BAU,SUNFLOWER 1L + 1L,,blinkit,,449,,,,false,NOT_LISTED,,,0,550,
 2026-06-23,BAU,SUNFLOWER 3L,,blinkit,,679,,,,false,NOT_LISTED,,,0,825,
 2026-06-23,BAU,SUNFLOWER 4L,,blinkit,,909,,,,false,NOT_LISTED,,,0,1038,
