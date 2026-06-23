@@ -15,7 +15,7 @@ first_seen: 2026-06-08
 last_seen: 2026-06-23
 observations: 128
 latest_status: NOT_LISTED
-below_days: 5
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -38,8 +38,8 @@ SKU memory: [[jivo-cooking-edible-soyabean-oil-1-litre-high-in-omega6-pufa-conta
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
 - **Latest status:** ▫️ not listed on [[zepto]] (2026-06-23) — ref ₹209 vs live ₹-
-- **Days below reference:** 5 of 16
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-22]] · [[2026-06-23]]
+- **Days below reference:** 4 of 16
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-22]]
 
 ## Ref-vs-live history (128 observations)
 
@@ -166,8 +166,8 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-22,flipkart-minutes,NOT_LISTED,BAU,209,,,,,,0,false
 2026-06-22,zepto,NOT_LISTED,BAU,209,,,,,,0,false
 2026-06-23,amazon,MATCH,BAU,209,209,209,209,0,0,0,true
-2026-06-23,amazon-fresh,BELOW,BAU,209,199,199,209,-10,-4.78,19,true
-2026-06-23,amazon-now,BELOW,BAU,209,199,199,199,-10,-4.78,20,true
+2026-06-23,amazon-fresh,MATCH,BAU,209,209,199,209,0,0,3,true
+2026-06-23,amazon-now,MATCH,BAU,209,209,199,209,0,0,3,true
 2026-06-23,bigbasket,NOT_LISTED,BAU,209,,,,,,0,false
 2026-06-23,blinkit,NOT_LISTED,BAU,209,,,,,,0,false
 2026-06-23,flipkart,NOT_LISTED,BAU,209,,,,,,0,false
