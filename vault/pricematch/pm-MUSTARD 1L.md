@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-22
-observations: 120
+last_seen: 2026-06-23
+observations: 128
 latest_status: BELOW
-below_days: 15
+below_days: 16
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-22) — ref ₹219 vs live ₹181
-- **Days below reference:** 15 of 15
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-23) — ref ₹219 vs live ₹181
+- **Days below reference:** 16 of 16
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]]
 
-## Ref-vs-live history (120 observations)
+## Ref-vs-live history (128 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -165,6 +165,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-22,flipkart,OOS,BAU,219,,,,,,0,false
 2026-06-22,flipkart-minutes,BELOW,BAU,219,181,174,181,-38,-17.35,48,true
 2026-06-22,zepto,BELOW,BAU,219,181,180,184,-38,-17.35,72,true
+2026-06-23,amazon,BELOW,BAU,219,181,181,181,-38,-17.35,1,true
+2026-06-23,amazon-fresh,BELOW,BAU,219,159,154,174,-60,-27.4,51,true
+2026-06-23,amazon-now,BELOW,BAU,219,159,154,166,-60,-27.4,35,true
+2026-06-23,bigbasket,BELOW,BAU,219,202.09,202.09,215.86,-16.91,-7.72,35,true
+2026-06-23,blinkit,BELOW,BAU,219,169,164,169,-50,-22.83,16,true
+2026-06-23,flipkart,OOS,BAU,219,,,,,,0,false
+2026-06-23,flipkart-minutes,BELOW,BAU,219,181,174,181,-38,-17.35,47,true
+2026-06-23,zepto,BELOW,BAU,219,181,180,184,-38,-17.35,53,true
 ```
 
 ---

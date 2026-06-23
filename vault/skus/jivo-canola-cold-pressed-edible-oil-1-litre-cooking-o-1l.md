@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-01
-last_seen: 2026-06-22
-observations: 58
-min_price: 248
+last_seen: 2026-06-23
+observations: 63
+min_price: 239
 max_price: 269
-latest_price: 257
+latest_price: 256
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -25,15 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹259 (30.9% off)
-- [[amazon-now]] — latest ₹257 (31.5% off)
+- [[amazon-now]] — latest ₹256 (31.7% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (14)
-[[amazon-now-2026-06-22-1410]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1407]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-11-1403]] · [[amazon-now-2026-06-11-1022]] · [[amazon-now-2026-06-10-1336]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-04-1417]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1600]]
+## Runs that observed this SKU (15)
+[[amazon-now-2026-06-23-1024]] · [[amazon-now-2026-06-22-1410]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1407]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-11-1403]] · [[amazon-now-2026-06-11-1022]] · [[amazon-now-2026-06-10-1336]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-04-1417]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1600]]
 
-## Price history (58 observations)
+## Price history (63 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -95,6 +95,11 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-13-1346,2026-06-13,amazon-now,Delhi,110055,261,375,30.4,1
 2026-06-22-1410,2026-06-22,amazon-now,Mumbai,400015,256,375,31.7,1
 2026-06-22-1410,2026-06-22,amazon-now,Pune,411030,257,375,31.5,1
+2026-06-23-1024,2026-06-23,amazon-now,Delhi,110016,239,375,36.3,1
+2026-06-23-1024,2026-06-23,amazon-now,Delhi,110048,239,375,36.3,1
+2026-06-23-1024,2026-06-23,amazon-now,Delhi,110091,239,375,36.3,1
+2026-06-23-1024,2026-06-23,amazon-now,Gurgaon,122001,239,375,36.3,1
+2026-06-23-1024,2026-06-23,amazon-now,Mumbai,400020,256,375,31.7,1
 ```
 
 ---
