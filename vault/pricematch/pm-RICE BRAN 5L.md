@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-23
-observations: 128
+last_seen: 2026-06-24
+observations: 136
 latest_status: NOT_LISTED
-below_days: 10
+below_days: 11
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidant
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-23) — ref ₹959 vs live ₹-
-- **Days below reference:** 10 of 16
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-22]] · [[2026-06-23]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-24) — ref ₹959 vs live ₹-
+- **Days below reference:** 11 of 17
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]]
 
-## Ref-vs-live history (128 observations)
+## Ref-vs-live history (136 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -173,6 +173,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-23,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
 2026-06-23,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
 2026-06-23,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-24,amazon-fresh,MATCH,BAU,959,959,909,959,0,0,11,true
+2026-06-24,amazon-now,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-24,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
+2026-06-24,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,zepto,NOT_LISTED,BAU,959,,,,,,0,false
 ```
 
 ---

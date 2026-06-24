@@ -5,8 +5,8 @@ display_name: JIVO Natural Minerals Water Mineral Water (1000 ml)
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-23
-last_seen: 2026-06-23
-observations: 51
+last_seen: 2026-06-24
+observations: 75
 min_price: 22
 max_price: 24
 latest_price: 22
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ahmedabad]] · [[Delhi]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]]
+## Runs that observed this SKU (3)
+[[flipkart-minutes-2026-06-24-0832]] · [[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]]
 
-## Price history (51 observations)
+## Price history (75 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -85,6 +85,30 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-23-1215,2026-06-23,flipkart-minutes,Pune,411012,22,30,26,0
 2026-06-23-1215,2026-06-23,flipkart-minutes,Pune,411045,22,30,26,0
 2026-06-23-1215,2026-06-23,flipkart-minutes,Pune,412216,22,30,26,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Delhi,110040,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Delhi,110054,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Delhi,110061,24,25,4,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Delhi,110091,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Gurgaon,122004,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Gurgaon,123003,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Gurgaon,123413,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,302016,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,302017,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,302018,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,302022,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,302023,24,27,11,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,302024,24,30,20,1
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,302032,24,27,11,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Jaipur,303602,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Kolkata,700040,24,30,20,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Mumbai,400006,22,30,26,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Mumbai,400007,22,30,26,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Mumbai,400010,22,30,26,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Mumbai,400011,22,30,26,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Mumbai,400015,22,30,26,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Mumbai,400023,22,25,12,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Mumbai,400703,22,25,12,0
+2026-06-24-0832,2026-06-24,flipkart-minutes,Pune,411004,22,30,26,0
 ```
 
 ---

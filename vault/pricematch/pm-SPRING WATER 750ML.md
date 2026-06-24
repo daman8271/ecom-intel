@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-23
-observations: 128
+last_seen: 2026-06-24
+observations: 136
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml]]
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-23) — ref ₹50 vs live ₹-
-- **Days below reference:** 0 of 16
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-24) — ref ₹50 vs live ₹-
+- **Days below reference:** 0 of 17
 
-## Ref-vs-live history (128 observations)
+## Ref-vs-live history (136 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -172,6 +172,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-23,flipkart,NOT_LISTED,BAU,50,,,,,,0,false
 2026-06-23,flipkart-minutes,NOT_LISTED,BAU,50,,,,,,0,false
 2026-06-23,zepto,NOT_LISTED,BAU,50,,,,,,0,false
+2026-06-24,amazon,OOS,BAU,50,,,,,,0,false
+2026-06-24,amazon-fresh,NOT_LISTED,BAU,50,,,,,,0,false
+2026-06-24,amazon-now,NOT_LISTED,BAU,50,,,,,,0,false
+2026-06-24,bigbasket,ABOVE,BAU,50,55,55,60,5,10,0,true
+2026-06-24,blinkit,NOT_LISTED,BAU,50,,,,,,0,false
+2026-06-24,flipkart,NOT_LISTED,BAU,50,,,,,,0,false
+2026-06-24,flipkart-minutes,NOT_LISTED,BAU,50,,,,,,0,false
+2026-06-24,zepto,NOT_LISTED,BAU,50,,,,,,0,false
 ```
 
 ---

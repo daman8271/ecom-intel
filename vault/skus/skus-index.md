@@ -1117,7 +1117,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 1l
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L)
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] — Jivo Cold Press Combo Canola Oil Plastic Bottle Na
-- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L)
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — Jivo Cold Pressed Pure Cooking Mustard Oil Can 4l
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L)
 - [[jivo-cooking-sunflower-oil-can-4l]] — JIVO Cooking Sunflower Oil Can (4 L)
@@ -1151,7 +1151,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] — Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil (1 pc (5 L))
 - [[jivo-pomace-olive-oil-1l]] — Jivo Pomace Olive Oil (1 pc (1 L))
 - [[jivo-pomace-olive-oil-5l]] — Jivo Pomace Olive Oil (1 pc (5 L))
-- [[jivo-pomace-olive-oil-combo-10l]] — Jivo Pomace Olive Oil Combo (5 L X 2)
+- [[jivo-pomace-olive-oil-combo-10l]] — Jivo Pomace Olive Oil Combo 10l
 - [[jivo-pomace-olive-oil-combo-1l]] — Jivo Pomace Olive Oil Combo 1l
 - [[jivo-pomace-olive-oil-combo-2l]] — Jivo Pomace Olive Oil Combo (1 L X 2)
 - [[jivo-refine-canola-oil-tin-15l]] — Jivo Refine Canola oil Tin (1 pc (15 L))
