@@ -37,7 +37,7 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-24) — ref ₹809 vs live ₹989
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-24) — ref ₹809 vs live ₹994
 - **Days below reference:** 8 of 17
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]]
 
@@ -180,7 +180,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,blinkit,NOT_LISTED,BAU,809,,,,,,0,false
 2026-06-24,flipkart,ABOVE,BAU,809,853,853,853,44,5.44,0,true
 2026-06-24,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
-2026-06-24,zepto,ABOVE,BAU,809,989,940,1044,180,22.25,0,true
+2026-06-24,zepto,ABOVE,BAU,809,994,975,1044,185,22.87,0,true
 ```
 
 ---
