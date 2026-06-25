@@ -4,8 +4,8 @@ city: Ahmedabad
 platforms:
   - flipkart-minutes
 pincodes: 2
-skus: 5
-observations: 161
+skus: 6
+observations: 163
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -21,10 +21,10 @@ Up: [[locations-index]]
 ## Pincodes (2)
 [[380009]] · [[380054]]
 
-## SKUs available in Ahmedabad (5)
-[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-mineral-water-1l]] · [[jivo-mineral-water-na]] · [[jivo-natural-minerals-water-mineral-water-1l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]]
+## SKUs available in Ahmedabad (6)
+[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-mineral-water-1l]] · [[jivo-mineral-water-na]] · [[jivo-natural-minerals-water-mineral-water-1l]] · [[jivo-natural-minerals-water-mineral-water-na]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]]
 
-## Observations (161 rows)
+## Observations (163 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -53,6 +53,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-10-1137,2026-06-10,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,380009,250,375,33,0
 2026-06-22-0832,2026-06-22,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,380009,250,375,33,0
 2026-06-23-1215,2026-06-23,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,380009,250,375,33,0
+2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,380009,245,250,2,0
 2026-05-31-0900,2026-05-31,flipkart-minutes,jivo-mineral-water-1l,380009,22,25,12,0
 2026-05-31-1200,2026-05-31,flipkart-minutes,jivo-mineral-water-1l,380009,22,25,12,0
 2026-05-31-1600,2026-05-31,flipkart-minutes,jivo-mineral-water-1l,380009,22,25,12,0
@@ -78,6 +79,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-mineral-water-na,380009,22,22,0,0
 2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-mineral-water-na,380009,22,22,0,0
 2026-06-23-1215,2026-06-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,380009,22,25,12,0
+2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,380009,22,22,0,0
 2026-05-21-1305,2026-05-21,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,380054,250,250,0,0
 2026-05-22-0900,2026-05-22,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,380054,250,250,0,0
 2026-05-22-1200,2026-05-22,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,380054,245,250,2,0

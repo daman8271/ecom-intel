@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 2
-observations: 64
+observations: 66
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Hyderabad (2)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]]
 
-## Observations (64 rows)
+## Observations (66 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -60,6 +60,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-20-1207,2026-06-20,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,500034,271,375,27,1
 2026-06-24-0832,2026-06-24,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,500034,271,375,27,1
 2026-06-24-1208,2026-06-24,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,500034,271,375,27,1
+2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,500034,265,375,29.3,1
 2026-05-21-1305,2026-05-21,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,500034,738,738,0,0
 2026-05-22-0900,2026-05-22,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,500034,738,738,0,0
 2026-05-22-1200,2026-05-22,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,500034,738,738,0,0
@@ -92,6 +93,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-20-1207,2026-06-20,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,500034,729,1080,32,1
 2026-06-24-0832,2026-06-24,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,500034,729,1080,32,1
 2026-06-24-1208,2026-06-24,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,500034,729,1080,32,1
+2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,500034,729,1080,32.5,1
 ```
 
 ---

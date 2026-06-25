@@ -186,7 +186,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,bigbasket,NOT_LISTED,BAU,20,,,,,,0,false
 2026-06-25,blinkit,NOT_LISTED,BAU,20,,,,,,0,false
 2026-06-25,flipkart,NOT_LISTED,BAU,20,,,,,,0,false
-2026-06-25,flipkart-minutes,ABOVE,BAU,20,24,24,24,4,20,0,true
+2026-06-25,flipkart-minutes,OOS,BAU,20,,,,,,0,false
 2026-06-25,zepto,NOT_LISTED,BAU,20,,,,,,0,false
 ```
 

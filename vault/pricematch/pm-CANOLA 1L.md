@@ -182,12 +182,12 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,flipkart-minutes,BELOW,BAU,269,239,234,271,-30,-11.15,35,true
 2026-06-24,zepto,NOT_LISTED,BAU,269,,,,,,0,false
 2026-06-25,amazon,BELOW,BAU,269,234,234,234,-35,-13.01,1,true
-2026-06-25,amazon-fresh,BELOW,BAU,269,239,234,269,-30,-11.15,102,true
-2026-06-25,amazon-now,BELOW,BAU,269,239,234,269,-30,-11.15,97,true
+2026-06-25,amazon-fresh,BELOW,BAU,269,239,234,269,-30,-11.15,101,true
+2026-06-25,amazon-now,BELOW,BAU,269,239,234,269,-30,-11.15,96,true
 2026-06-25,bigbasket,ABOVE,BAU,269,283.99,283.99,318,14.99,5.57,0,true
-2026-06-25,blinkit,BELOW,BAU,269,239,228,249,-30,-11.15,110,true
+2026-06-25,blinkit,BELOW,BAU,269,239,228,249,-30,-11.15,108,true
 2026-06-25,flipkart,ABOVE,BAU,269,332,332,332,63,23.42,0,true
-2026-06-25,flipkart-minutes,BELOW,BAU,269,239,234,271,-30,-11.15,36,true
+2026-06-25,flipkart-minutes,OOS,BAU,269,,,,,,0,false
 2026-06-25,zepto,NOT_LISTED,BAU,269,,,,,,0,false
 ```
 

@@ -182,8 +182,8 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
 2026-06-24,zepto,OOS,BAU,199,,,,,,0,false
 2026-06-25,amazon,MATCH,BAU,199,199,199,199,0,0,0,true
-2026-06-25,amazon-fresh,MATCH,BAU,199,199,185,199,0,0,47,true
-2026-06-25,amazon-now,MATCH,BAU,199,199,185,199,0,0,41,true
+2026-06-25,amazon-fresh,MATCH,BAU,199,199,185,199,0,0,44,true
+2026-06-25,amazon-now,MATCH,BAU,199,199,185,199,0,0,36,true
 2026-06-25,bigbasket,NOT_LISTED,BAU,199,,,,,,0,false
 2026-06-25,blinkit,NOT_LISTED,BAU,199,,,,,,0,false
 2026-06-25,flipkart,ABOVE,BAU,199,237,237,237,38,19.1,0,true
