@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-24
-observations: 136
+last_seen: 2026-06-25
+observations: 144
 latest_status: ABOVE
-below_days: 8
+below_days: 9
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-24) — ref ₹809 vs live ₹994
-- **Days below reference:** 8 of 17
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-25) — ref ₹809 vs live ₹987
+- **Days below reference:** 9 of 18
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
 
-## Ref-vs-live history (136 observations)
+## Ref-vs-live history (144 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -181,6 +181,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,flipkart,ABOVE,BAU,809,853,853,853,44,5.44,0,true
 2026-06-24,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
 2026-06-24,zepto,ABOVE,BAU,809,994,975,1044,185,22.87,0,true
+2026-06-25,amazon,BELOW,BAU,809,797,797,797,-12,-1.48,1,true
+2026-06-25,amazon-fresh,MATCH,BAU,809,809,797,809,0,0,25,true
+2026-06-25,amazon-now,MATCH,BAU,809,809,797,809,0,0,16,true
+2026-06-25,bigbasket,ABOVE,BAU,809,1012,1012,1060,203,25.09,0,true
+2026-06-25,blinkit,NOT_LISTED,BAU,809,,,,,,0,false
+2026-06-25,flipkart,ABOVE,BAU,809,853,853,853,44,5.44,0,true
+2026-06-25,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
+2026-06-25,zepto,ABOVE,BAU,809,987,965,1044,178,22,0,true
 ```
 
 ---

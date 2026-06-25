@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-24
-observations: 136
+last_seen: 2026-06-25
+observations: 144
 latest_status: BELOW
-below_days: 17
+below_days: 18
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-ri
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-24) — ref ₹439 vs live ₹379
-- **Days below reference:** 17 of 17
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-25) — ref ₹439 vs live ₹379
+- **Days below reference:** 18 of 18
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
 
-## Ref-vs-live history (136 observations)
+## Ref-vs-live history (144 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -181,6 +181,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,flipkart,ABOVE,BAU,439,576,576,576,137,31.21,0,true
 2026-06-24,flipkart-minutes,BELOW,BAU,439,379,379,394,-60,-13.67,21,true
 2026-06-24,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,48,true
+2026-06-25,amazon,BELOW,BAU,439,379,379,379,-60,-13.67,1,true
+2026-06-25,amazon-fresh,BELOW,BAU,439,379,379,388,-60,-13.67,94,true
+2026-06-25,amazon-now,BELOW,BAU,439,379,379,388,-60,-13.67,79,true
+2026-06-25,bigbasket,ABOVE,BAU,439,549.68,462.19,577.74,110.68,25.21,0,true
+2026-06-25,blinkit,BELOW,BAU,439,387,379,494,-52,-11.85,122,true
+2026-06-25,flipkart,ABOVE,BAU,439,576,576,576,137,31.21,0,true
+2026-06-25,flipkart-minutes,BELOW,BAU,439,379,379,394,-60,-13.67,25,true
+2026-06-25,zepto,BELOW,BAU,439,379,379,379,-60,-13.67,38,true
 ```
 
 ---

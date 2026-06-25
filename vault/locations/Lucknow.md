@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 4
-observations: 70
+observations: 71
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Lucknow (4)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-mineral-water-1l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]]
 
-## Observations (70 rows)
+## Observations (71 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -96,6 +96,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-21-0832,2026-06-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,174,255,31,1
 2026-06-21-1211,2026-06-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,174,255,31,1
 2026-06-24-0832,2026-06-24,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,170,255,33,1
+2026-06-25-0832,2026-06-25,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,170,255,33,1
 2026-06-13-0832,2026-06-13,flipkart-minutes,jivo-mineral-water-1l,226010,22,30,26,0
 2026-06-13-0832,2026-06-13,flipkart-minutes,jivo-pomace-olive-oil-plastic-bottle-1l,226010,409,1049,61,0
 ```

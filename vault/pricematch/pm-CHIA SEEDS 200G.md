@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-24
-observations: 136
+last_seen: 2026-06-25
+observations: 144
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-managem
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-24) — ref ₹99 vs live ₹-
-- **Days below reference:** 0 of 17
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-25) — ref ₹99 vs live ₹-
+- **Days below reference:** 0 of 18
 
-## Ref-vs-live history (136 observations)
+## Ref-vs-live history (144 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -180,6 +180,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,flipkart,OOS,BAU,99,,,,,,0,false
 2026-06-24,flipkart-minutes,NOT_LISTED,BAU,99,,,,,,0,false
 2026-06-24,zepto,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-25,amazon,MATCH,BAU,99,99,99,99,0,0,0,true
+2026-06-25,amazon-fresh,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-25,amazon-now,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-25,bigbasket,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-25,blinkit,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-25,flipkart,OOS,BAU,99,,,,,,0,false
+2026-06-25,flipkart-minutes,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-25,zepto,NOT_LISTED,BAU,99,,,,,,0,false
 ```
 
 ---

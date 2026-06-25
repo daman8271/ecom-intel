@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-24
-observations: 136
+last_seen: 2026-06-25
+observations: 144
 latest_status: NOT_LISTED
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidant
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-24) — ref ₹959 vs live ₹-
-- **Days below reference:** 11 of 17
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-25) — ref ₹959 vs live ₹-
+- **Days below reference:** 12 of 18
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
 
-## Ref-vs-live history (136 observations)
+## Ref-vs-live history (144 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -181,6 +181,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
 2026-06-24,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
 2026-06-24,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-25,amazon-fresh,MATCH,BAU,959,959,909,959,0,0,12,true
+2026-06-25,amazon-now,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-25,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
+2026-06-25,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,zepto,NOT_LISTED,BAU,959,,,,,,0,false
 ```
 
 ---

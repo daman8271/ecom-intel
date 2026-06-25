@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-24
-observations: 136
+last_seen: 2026-06-25
+observations: 144
 latest_status: NOT_LISTED
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-24) — ref ₹219 vs live ₹-
-- **Days below reference:** 14 of 17
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-25) — ref ₹219 vs live ₹-
+- **Days below reference:** 15 of 18
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
 
-## Ref-vs-live history (136 observations)
+## Ref-vs-live history (144 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -181,6 +181,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-24,flipkart,NOT_LISTED,BAU,219,,,,,,0,false
 2026-06-24,flipkart-minutes,NOT_LISTED,BAU,219,,,,,,0,false
 2026-06-24,zepto,NOT_LISTED,BAU,219,,,,,,0,false
+2026-06-25,amazon,OOS,BAU,219,,,,,,0,false
+2026-06-25,amazon-fresh,BELOW,BAU,219,199,199,199,-20,-9.13,1,true
+2026-06-25,amazon-now,NOT_LISTED,BAU,219,,,,,,0,false
+2026-06-25,bigbasket,NOT_LISTED,BAU,219,,,,,,0,false
+2026-06-25,blinkit,NOT_LISTED,BAU,219,,,,,,0,false
+2026-06-25,flipkart,NOT_LISTED,BAU,219,,,,,,0,false
+2026-06-25,flipkart-minutes,NOT_LISTED,BAU,219,,,,,,0,false
+2026-06-25,zepto,NOT_LISTED,BAU,219,,,,,,0,false
 ```
 
 ---

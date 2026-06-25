@@ -5,8 +5,8 @@ display_name: Jivo Extra Light 3 Litre Cooking Oil Olive Plastic Bottle (3 LTR)
 platforms:
   - flipkart
 first_seen: 2026-06-12
-last_seen: 2026-06-24
-observations: 26
+last_seen: 2026-06-25
+observations: 27
 min_price: 1501
 max_price: 1572
 latest_price: 1515
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[flipkart]] — latest ₹1515 (61.1% off)
 
-## Runs that observed this SKU (26)
-[[flipkart-2026-06-24-1209]] · [[flipkart-2026-06-24-0833]] · [[flipkart-2026-06-23-1216]] · [[flipkart-2026-06-23-0833]] · [[flipkart-2026-06-22-1215]] · [[flipkart-2026-06-22-0833]] · [[flipkart-2026-06-21-1213]] · [[flipkart-2026-06-21-0834]] · [[flipkart-2026-06-20-1209]] · [[flipkart-2026-06-20-0833]] · [[flipkart-2026-06-19-1210]] · [[flipkart-2026-06-19-0833]] · [[flipkart-2026-06-18-1203]] · [[flipkart-2026-06-18-0833]] · [[flipkart-2026-06-17-1213]] · [[flipkart-2026-06-17-0833]] · [[flipkart-2026-06-16-1205]] · [[flipkart-2026-06-16-0833]] · [[flipkart-2026-06-15-1210]] · [[flipkart-2026-06-15-0833]] · [[flipkart-2026-06-14-1210]] · [[flipkart-2026-06-14-0833]] · [[flipkart-2026-06-13-1206]] · [[flipkart-2026-06-13-0833]] · [[flipkart-2026-06-12-1218]] · [[flipkart-2026-06-12-0833]]
+## Runs that observed this SKU (27)
+[[flipkart-2026-06-25-0833]] · [[flipkart-2026-06-24-1209]] · [[flipkart-2026-06-24-0833]] · [[flipkart-2026-06-23-1216]] · [[flipkart-2026-06-23-0833]] · [[flipkart-2026-06-22-1215]] · [[flipkart-2026-06-22-0833]] · [[flipkart-2026-06-21-1213]] · [[flipkart-2026-06-21-0834]] · [[flipkart-2026-06-20-1209]] · [[flipkart-2026-06-20-0833]] · [[flipkart-2026-06-19-1210]] · [[flipkart-2026-06-19-0833]] · [[flipkart-2026-06-18-1203]] · [[flipkart-2026-06-18-0833]] · [[flipkart-2026-06-17-1213]] · [[flipkart-2026-06-17-0833]] · [[flipkart-2026-06-16-1205]] · [[flipkart-2026-06-16-0833]] · [[flipkart-2026-06-15-1210]] · [[flipkart-2026-06-15-0833]] · [[flipkart-2026-06-14-1210]] · [[flipkart-2026-06-14-0833]] · [[flipkart-2026-06-13-1206]] · [[flipkart-2026-06-13-0833]] · [[flipkart-2026-06-12-1218]] · [[flipkart-2026-06-12-0833]]
 
-## Price history (26 observations)
+## Price history (27 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -57,6 +57,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-23-1216,2026-06-23,flipkart,All India,-,1515,3899,61.1,0
 2026-06-24-0833,2026-06-24,flipkart,All India,-,1515,3899,61.1,0
 2026-06-24-1209,2026-06-24,flipkart,All India,-,1515,3899,61.1,0
+2026-06-25-0833,2026-06-25,flipkart,All India,-,1515,3899,61.1,1
 ```
 
 ---

@@ -4,7 +4,7 @@ platform: flipkart-minutes
 kind: quick-commerce
 shape: per-pincode
 risk: low
-runs: 76
+runs: 77
 skus_tracked: 17
 tags:
   - type/platform-hub
@@ -19,14 +19,15 @@ Up: [[index]]
 Hub / Map of Content for **flipkart-minutes**. Flipkart Minutes hyperlocal quick-commerce; per-pincode pricing.
 
 - **Type:** quick-commerce · **Shape:** per-pincode · **Block risk:** low
-- **Runs captured:** 76 · **SKUs tracked:** 17
+- **Runs captured:** 77 · **SKUs tracked:** 17
 
 ## SKUs on flipkart-minutes (17)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]] · [[jivo-extra-light-olive-oil-can-2l]] · [[jivo-extra-light-olive-oil-plastic-bottle-1l]] · [[jivo-mineral-water-1l]] · [[jivo-mineral-water-na]] · [[jivo-natural-minerals-water-mineral-water-1l]] · [[jivo-pomace-cooking-olive-oil-tin-5l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-pomace-olive-oil-tin-5l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]]
 
-## Runs (76) — newest first
+## Runs (77) — newest first
 
 <!-- runs:start -->
+- [[flipkart-minutes-2026-06-25-0832]] — 2026-06-25 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-06-24-1208]] — 2026-06-24 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-06-24-0832]] — 2026-06-24 · verdict OK <!-- run -->
 - [[flipkart-minutes-2026-06-23-1215]] — 2026-06-23 · verdict OK <!-- run -->
