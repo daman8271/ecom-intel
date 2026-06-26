@@ -191,7 +191,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,zepto,NOT_LISTED,BAU,39,,,,,,0,false
 2026-06-26,amazon,OOS,SVD,35,,,,,,0,false
 2026-06-26,amazon-fresh,NOT_LISTED,SVD,35,,,,,,0,false
-2026-06-26,amazon-now,ABOVE,SVD,35,39,39,55,4,11.43,0,true
+2026-06-26,amazon-now,MATCH,SVD,35,35,35,55,0,0,0,true
 2026-06-26,bigbasket,OOS,SVD,35,,,,,,0,false
 2026-06-26,blinkit,NOT_LISTED,SVD,35,,,,,,0,false
 2026-06-26,flipkart,NOT_LISTED,SVD,35,,,,,,0,false

@@ -14,7 +14,7 @@ platforms:
 first_seen: 2026-06-08
 last_seen: 2026-06-26
 observations: 152
-latest_status: BELOW
+latest_status: ABOVE
 below_days: 19
 tags:
   - type/pricematch-sku
@@ -37,7 +37,7 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-26) — ref ₹1249 vs live ₹1193
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-26) — ref ₹1249 vs live ₹1617
 - **Days below reference:** 19 of 19
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]]
 
@@ -190,13 +190,13 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart-minutes,NOT_LISTED,BAU,1299,,,,,,0,false
 2026-06-25,zepto,ABOVE,BAU,1299,1617,1193,1617,318,24.48,9,true
 2026-06-26,amazon,ABOVE,SVD,1249,1299,1299,1299,50,4,0,true
-2026-06-26,amazon-fresh,ABOVE,SVD,1249,1299,1193,1426,50,4,56,true
-2026-06-26,amazon-now,ABOVE,SVD,1249,1299,1193,1299,50,4,47,true
+2026-06-26,amazon-fresh,MATCH,SVD,1249,1249,1193,1426,0,0,56,true
+2026-06-26,amazon-now,MATCH,SVD,1249,1249,1193,1299,0,0,47,true
 2026-06-26,bigbasket,ABOVE,SVD,1249,1366,1366,1600,117,9.37,0,true
-2026-06-26,blinkit,BELOW,SVD,1249,1193,1193,1493,-56,-4.48,56,true
-2026-06-26,flipkart,ABOVE,SVD,1249,1285,1285,1285,36,2.88,0,true
+2026-06-26,blinkit,BELOW,SVD,1249,1193,1193,1493,-56,-4.48,53,true
+2026-06-26,flipkart,ABOVE,SVD,1249,1369,1369,1369,120,9.61,0,true
 2026-06-26,flipkart-minutes,NOT_LISTED,SVD,1249,,,,,,0,false
-2026-06-26,zepto,BELOW,SVD,1249,1193,1193,1617,-56,-4.48,10,true
+2026-06-26,zepto,ABOVE,SVD,1249,1617,1193,1617,368,29.46,17,true
 ```
 
 ---

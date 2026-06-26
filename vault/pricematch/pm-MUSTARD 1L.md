@@ -190,13 +190,13 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart-minutes,OOS,BAU,219,,,,,,0,false
 2026-06-25,zepto,BELOW,BAU,219,181,180,181,-38,-17.35,42,true
 2026-06-26,amazon,BELOW,SVD,209,181,181,181,-28,-13.4,1,true
-2026-06-26,amazon-fresh,BELOW,SVD,209,181,159,190,-28,-13.4,49,true
-2026-06-26,amazon-now,BELOW,SVD,209,181,159,190,-28,-13.4,32,true
+2026-06-26,amazon-fresh,BELOW,SVD,209,181,159,190,-28,-13.4,43,true
+2026-06-26,amazon-now,BELOW,SVD,209,181,159,190,-28,-13.4,28,true
 2026-06-26,bigbasket,BELOW,SVD,209,202.09,202.09,215.86,-6.91,-3.31,28,true
-2026-06-26,blinkit,BELOW,SVD,209,171,171,171,-38,-18.18,14,true
+2026-06-26,blinkit,BELOW,SVD,209,171,167,171,-38,-18.18,16,true
 2026-06-26,flipkart,OOS,SVD,209,,,,,,0,false
-2026-06-26,flipkart-minutes,BELOW,SVD,209,181,170,181,-28,-13.4,51,true
-2026-06-26,zepto,BELOW,SVD,209,181,180,184,-28,-13.4,30,true
+2026-06-26,flipkart-minutes,BELOW,SVD,209,181,170,181,-28,-13.4,47,true
+2026-06-26,zepto,BELOW,SVD,209,181,180,184,-28,-13.4,67,true
 ```
 
 ---
