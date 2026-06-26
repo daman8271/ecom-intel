@@ -337,7 +337,23 @@ fi
 # the whole-graph rebuild can't race the concurrent run.sh instances. Then persist to git
 # (same flock on .gitpush.lock as run.sh). Never fails the sweep.
 echo "[$(date '+%F %T')] run_all: rebuilding Obsidian memory graph"
-python3 tools/vault_build.py || echo "vault_build failed (non-fatal)" >&2
+# vault_build.py rebuilds + prunes orphans + runs the integrity gate (basename uniqueness AND
+# every body [[wikilink]] resolves), returning nonzero on any violation. The commit/push below
+# is GATED on that exit code: a broken graph is NEVER committed or pushed (last good vault is
+# preserved in git) and the owner is alerted. This still never aborts the sweep.
+if python3 tools/vault_build.py; then VB_RC=0; else VB_RC=$?; fi
+if [ "$VB_RC" != "0" ]; then
+  echo "[$(date '+%F %T')] run_all: vault_build FAILED (rc=$VB_RC) — memory graph NOT committed/pushed; last good vault preserved" >&2
+  ( # owner alert — same secrets.env pattern as the chain-skip alert above; never fails the sweep
+    set +e
+    [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
+    TG="${TELEGRAM_BOT_TOKEN:-}"; OC="${TELEGRAM_OWNER_CHAT_ID:-${TELEGRAM_CHAT_ID:-}}"
+    [ -n "$TG" ] && [ -n "$OC" ] && curl -s --max-time 60 -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
+      --data-urlencode "chat_id=${OC}" \
+      --data-urlencode "text=🛑 ecom-intel vault_build FAILED (rc=${VB_RC}: basename collision or broken-link integrity check) for sweep ${SWEEP_ID:-manual} — the memory graph was NOT committed or pushed; the last good vault is preserved in git. See logs/cron.log." >/dev/null
+  ) || true
+fi
+if [ "$VB_RC" = "0" ]; then
 (
   set +e
   cd "$DIR"
@@ -353,6 +369,7 @@ python3 tools/vault_build.py || echo "vault_build failed (non-fatal)" >&2
     echo "[$(date '+%F %T')] run_all: vault graph unchanged."
   fi
 ) || true
+fi
 
 fi  # end SIM MODE gate
 

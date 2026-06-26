@@ -57,6 +57,14 @@ NATIONAL_PIN = {"-", ""}
 GEN = "tools/vault_build.py"
 SPEC = "[[VAULT-SPEC]]"
 
+# Dirs FULLY owned by this generator — every .md inside is rewritten on each rebuild. A note
+# here that is NOT (re)written this run is an ORPHAN: its entity left data/*/history.csv (e.g. a
+# retired platform's SKU/run notes) and is pruned so the graph never drifts from the CSV and
+# never accretes dead links. Hand-authored / externally-owned areas (analysis/, pricematch/,
+# VAULT-SPEC.md, .obsidian/) are NEVER pruned.
+GENERATED_DIRS = ("runs", "skus", "locations", "daily", "weekly", "monthly", "platforms")
+_WRITTEN = set()                      # abspaths written this run; populated by write_file()
+
 # Per-platform editorial blurb for the platform hub (prose preserved across rebuilds via markers).
 PLATFORM_INFO = {
     "blinkit":          ("quick-commerce", "per-pincode", "low",
@@ -167,6 +175,7 @@ def write_file(path, text):
         text += "\n"
     with open(path, "w", encoding="utf-8", newline="\n") as f:
         f.write(text)
+    _WRITTEN.add(os.path.abspath(path))
 
 
 def iso_week(d):
@@ -758,6 +767,13 @@ def build():
                 len(by_sku), len(by_city), len(by_pin), len(run_meta))
     write_obsidian()
 
+    # ----- prune orphans BEFORE the price-match section, so price-match (which only links to
+    # SKU notes that exist on disk) can never link to a note that is about to be removed.
+    pruned = prune_orphans()
+    if pruned:
+        print(f"vault_build: pruned {len(pruned)} orphan note(s) (entity left data/): "
+              + ", ".join(pruned[:8]) + (" …" if len(pruned) > 8 else ""), file=sys.stderr)
+
     # ----- price-match section (additive; never aborts the core build — best-effort like run.sh)
     pm_n = 0
     try:
@@ -769,8 +785,84 @@ def build():
     print(f"vault_build: {len(run_meta)} run notes · {len(by_sku)} SKU hubs · "
           f"{len(by_city)} city + {len(by_pin)} pincode nodes · "
           f"{len(weeks)} weeks · {len(months)} months"
-          + (f" · {pm_n} price-match notes" if pm_n else ""))
+          + (f" · {pm_n} price-match notes" if pm_n else "")
+          + (f" · pruned {len(pruned)} orphan(s)" if pruned else ""))
     return 0
+
+
+def prune_orphans():
+    """Delete generator-owned notes whose entity no longer exists in data/*/history.csv.
+    Without this the vault only ever grows: when a platform is retired (e.g. instamart), its
+    SKU/run/location notes linger forever as stale orphans full of dead [[wikilinks]], and the
+    'deterministic, never drifts from the CSV' guarantee is quietly broken. Only GENERATED_DIRS
+    are swept, and only files NOT (re)written this run are removed. Returns the relpaths removed."""
+    removed = []
+    for sub in GENERATED_DIRS:
+        base = os.path.join(VAULT, sub)
+        if not os.path.isdir(base):
+            continue
+        for dp, _, fns in os.walk(base):
+            for fn in fns:
+                if not fn.endswith(".md"):
+                    continue
+                fp = os.path.abspath(os.path.join(dp, fn))
+                if fp not in _WRITTEN:
+                    os.remove(fp)
+                    removed.append(os.path.relpath(fp, VAULT))
+    # tidy up any now-empty subdirectories left behind (e.g. runs/<retired-platform>/), but
+    # keep the top-level GENERATED_DIRS themselves.
+    for sub in GENERATED_DIRS:
+        base = os.path.join(VAULT, sub)
+        if not os.path.isdir(base):
+            continue
+        for dp, _, _ in os.walk(base, topdown=False):
+            if os.path.abspath(dp) != os.path.abspath(base) and not os.listdir(dp):
+                os.rmdir(dp)
+    return sorted(removed)
+
+
+def check_links():
+    """Assert every body [[wikilink]] in the GENERATED graph resolves to a real note basename
+    (Obsidian resolves by basename, case-insensitive). This is the missing seatbelt: it catches
+    dead links the build would otherwise ship silently (e.g. an empty [[]] or an unpruned orphan).
+    Hand-authored areas (analysis/, VAULT-SPEC.md) are exempt from the SCAN but remain valid link
+    TARGETS. Wikilinks inside fenced code blocks are ignored. Returns True iff zero broken links."""
+    import re
+    link_re = re.compile(r"\[\[([^\]\n]*?)\]\]")
+    exempt_top = {"analysis"}
+    basenames, notes = set(), []
+    for dp, _, fns in os.walk(VAULT):
+        if ".obsidian" in dp.split(os.sep):
+            continue
+        for fn in fns:
+            if fn.endswith(".md"):
+                basenames.add(fn[:-3].lower())
+                notes.append(os.path.join(dp, fn))
+    broken = []
+    for fp in notes:
+        rel = os.path.relpath(fp, VAULT)
+        if rel == "VAULT-SPEC.md" or rel.split(os.sep)[0] in exempt_top:
+            continue
+        in_code = False
+        with open(fp, encoding="utf-8") as fh:
+            for line in fh:
+                if line.lstrip().startswith("```"):
+                    in_code = not in_code
+                    continue
+                if in_code:
+                    continue
+                for m in link_re.finditer(line):
+                    tgt = m.group(1).split("|")[0].split("#")[0].strip()
+                    if not tgt or tgt.lower() not in basenames:
+                        broken.append((rel, tgt or "<empty>"))
+    if broken:
+        print(f"vault_build: {len(broken)} BROKEN wikilink(s) — graph would mis-resolve "
+              f"(first 15):", file=sys.stderr)
+        for f, t in broken[:15]:
+            print(f"  {f}: [[{t}]]", file=sys.stderr)
+        return False
+    print(f"vault_build: OK — 0 broken wikilinks across {len(notes)} notes")
+    return True
 
 
 def check_unique():
@@ -796,9 +888,11 @@ def main(argv):
     rc = build()
     if rc:
         return rc
-    if not check_unique():
-        return 2
-    return 0
+    # Integrity gate: both checks always run (full report), nonzero exit if EITHER fails so the
+    # caller (run_all.sh) can refuse to commit/push a broken graph.
+    ok_unique = check_unique()
+    ok_links = check_links()
+    return 0 if (ok_unique and ok_links) else 2
 
 
 if __name__ == "__main__":
