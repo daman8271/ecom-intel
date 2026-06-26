@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-25
-observations: 144
+last_seen: 2026-06-26
+observations: 152
 latest_status: BELOW
-below_days: 18
+below_days: 19
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-25) — ref ₹219 vs live ₹181
-- **Days below reference:** 18 of 18
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-26) — ref ₹209 vs live ₹181
+- **Days below reference:** 19 of 19
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]]
 
-## Ref-vs-live history (144 observations)
+## Ref-vs-live history (152 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -189,6 +189,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart,OOS,BAU,219,,,,,,0,false
 2026-06-25,flipkart-minutes,OOS,BAU,219,,,,,,0,false
 2026-06-25,zepto,BELOW,BAU,219,181,180,181,-38,-17.35,42,true
+2026-06-26,amazon,BELOW,SVD,209,181,181,181,-28,-13.4,1,true
+2026-06-26,amazon-fresh,BELOW,SVD,209,181,159,190,-28,-13.4,49,true
+2026-06-26,amazon-now,BELOW,SVD,209,181,159,190,-28,-13.4,32,true
+2026-06-26,bigbasket,BELOW,SVD,209,202.09,202.09,215.86,-6.91,-3.31,28,true
+2026-06-26,blinkit,BELOW,SVD,209,171,171,171,-38,-18.18,14,true
+2026-06-26,flipkart,OOS,SVD,209,,,,,,0,false
+2026-06-26,flipkart-minutes,BELOW,SVD,209,181,170,181,-28,-13.4,51,true
+2026-06-26,zepto,BELOW,SVD,209,181,180,184,-28,-13.4,30,true
 ```
 
 ---

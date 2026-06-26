@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-25
-observations: 144
+last_seen: 2026-06-26
+observations: 152
 latest_status: BELOW
-below_days: 15
+below_days: 16
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-25) — ref ₹199 vs live ₹186
-- **Days below reference:** 15 of 18
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-06-26) — ref ₹189 vs live ₹186
+- **Days below reference:** 16 of 19
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]]
 
-## Ref-vs-live history (144 observations)
+## Ref-vs-live history (152 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -189,6 +189,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart,ABOVE,BAU,199,237,237,237,38,19.1,0,true
 2026-06-25,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
 2026-06-25,zepto,BELOW,BAU,199,186,186,186,-13,-6.53,2,true
+2026-06-26,amazon,ABOVE,SVD,189,199,199,199,10,5.29,0,true
+2026-06-26,amazon-fresh,ABOVE,SVD,189,199,185,199,10,5.29,15,true
+2026-06-26,amazon-now,ABOVE,SVD,189,199,185,199,10,5.29,15,true
+2026-06-26,bigbasket,NOT_LISTED,SVD,189,,,,,,0,false
+2026-06-26,blinkit,NOT_LISTED,SVD,189,,,,,,0,false
+2026-06-26,flipkart,ABOVE,SVD,189,237,237,237,48,25.4,0,true
+2026-06-26,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
+2026-06-26,zepto,BELOW,SVD,189,186,186,186,-3,-1.59,2,true
 ```
 
 ---

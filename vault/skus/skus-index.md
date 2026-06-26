@@ -614,7 +614,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzy91b3]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l b0gzzy91b3
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch
 - [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] — Jivo Cold Pressed Kachi Ghani Mustard Oil 1l With Makki Atta 500g 1l
-- [[jivo-cold-pressed-sunflower-oil-combo-pack-5l]] — Jivo Cold Pressed Sunflower Oil Combo Pack 5l
+- [[jivo-cold-pressed-sunflower-oil-combo-pack-5l]] — Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre)
 - [[jivo-cold-pressed-sunflower-soyabean-oil-1l-each-1l]] — Jivo Cold Pressed Sunflower & Soyabean Oil 1L Each (Pack of 2) (1 l)
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2]] — Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0b4sjtnf2
@@ -753,7 +753,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
 - [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] — Jivo First Pressed Yellow Mustard Oil 5 Litre 5l
 - [[jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend O Na
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
 - [[jivo-gold-refined-oil-1l]] — Jivo Gold Refined Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-s-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran S Na
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
@@ -1115,8 +1115,8 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 ## [[flipkart-minutes]] (18)
 - [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L)
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 1l
-- [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 2l
-- [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] — JIVO Cold Press Combo Canola Oil Plastic Bottle
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L)
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] — Jivo Cold Press Combo Canola Oil Plastic Bottle Na
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — Jivo Cold Pressed Pure Cooking Mustard Oil Can 4l
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L)
@@ -1125,8 +1125,8 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-light-olive-oil-plastic-bottle-1l]] — Jivo Extra Light Olive Oil Plastic Bottle 1l
 - [[jivo-mineral-water-1l]] — Jivo Mineral Water 1l
 - [[jivo-mineral-water-na]] — Jivo Mineral Water Na
-- [[jivo-natural-minerals-water-mineral-water-1l]] — Jivo Natural Minerals Water Mineral Water 1l
-- [[jivo-natural-minerals-water-mineral-water-na]] — JIVO Natural Minerals Water Mineral Water
+- [[jivo-natural-minerals-water-mineral-water-1l]] — JIVO Natural Minerals Water Mineral Water (1000 ml)
+- [[jivo-natural-minerals-water-mineral-water-na]] — Jivo Natural Minerals Water Mineral Water Na
 - [[jivo-pomace-cooking-olive-oil-tin-5l]] — JIVO Pomace Cooking Olive Oil Tin (5000 ml)
 - [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L)
 - [[jivo-pomace-olive-oil-tin-5l]] — JIVO Pomace Olive Oil Tin (5 L)

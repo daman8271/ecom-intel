@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-25
-observations: 144
+last_seen: 2026-06-26
+observations: 152
 latest_status: ABOVE
-below_days: 18
+below_days: 19
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-25) — ref ₹869 vs live ₹1052
-- **Days below reference:** 18 of 18
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-26) — ref ₹849 vs live ₹1088
+- **Days below reference:** 19 of 19
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]]
 
-## Ref-vs-live history (144 observations)
+## Ref-vs-live history (152 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -189,6 +189,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart,BELOW,BAU,869,844,844,844,-25,-2.88,1,true
 2026-06-25,flipkart-minutes,NOT_LISTED,BAU,869,,,,,,0,false
 2026-06-25,zepto,ABOVE,BAU,869,1052,1028,1088,183,21.06,0,true
+2026-06-26,amazon,MATCH,SVD,849,849,849,849,0,0,0,true
+2026-06-26,amazon-fresh,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-26,amazon-now,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-26,bigbasket,ABOVE,SVD,849,1100,983.03,1117,251,29.56,0,true
+2026-06-26,blinkit,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-26,flipkart,BELOW,SVD,849,844,844,844,-5,-0.59,1,true
+2026-06-26,flipkart-minutes,NOT_LISTED,SVD,849,,,,,,0,false
+2026-06-26,zepto,ABOVE,SVD,849,1088,1019,1088,239,28.15,0,true
 ```
 
 ---

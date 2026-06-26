@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-25
-observations: 144
+last_seen: 2026-06-26
+observations: 152
 latest_status: NOT_LISTED
 below_days: 2
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cooking-edible-soyabean-oil-5-litre-high-in-omega6-pufa-conta
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-25) — ref ₹999 vs live ₹-
-- **Days below reference:** 2 of 18
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-26) — ref ₹949 vs live ₹-
+- **Days below reference:** 2 of 19
 - **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (144 observations)
+## Ref-vs-live history (152 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -189,6 +189,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart,OOS,BAU,999,,,,,,0,false
 2026-06-25,flipkart-minutes,NOT_LISTED,BAU,999,,,,,,0,false
 2026-06-25,zepto,NOT_LISTED,BAU,999,,,,,,0,false
+2026-06-26,amazon,ABOVE,SVD,949,999,999,999,50,5.27,0,true
+2026-06-26,amazon-fresh,NOT_LISTED,SVD,949,,,,,,0,false
+2026-06-26,amazon-now,NOT_LISTED,SVD,949,,,,,,0,false
+2026-06-26,bigbasket,NOT_LISTED,SVD,949,,,,,,0,false
+2026-06-26,blinkit,NOT_LISTED,SVD,949,,,,,,0,false
+2026-06-26,flipkart,OOS,SVD,949,,,,,,0,false
+2026-06-26,flipkart-minutes,NOT_LISTED,SVD,949,,,,,,0,false
+2026-06-26,zepto,NOT_LISTED,SVD,949,,,,,,0,false
 ```
 
 ---

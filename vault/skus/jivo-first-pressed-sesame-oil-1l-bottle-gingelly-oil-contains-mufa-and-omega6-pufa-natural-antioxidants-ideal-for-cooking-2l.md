@@ -5,8 +5,8 @@ display_name: "Jivo First Pressed Sesame Oil | 1L Bottle | Gingelly Oil | Contai
 platforms:
   - amazon
 first_seen: 2026-06-05
-last_seen: 2026-06-25
-observations: 44
+last_seen: 2026-06-26
+observations: 45
 min_price: 658
 max_price: 878
 latest_price: 698
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹698 (41.8% off)
 
-## Runs that observed this SKU (44)
-[[amazon-2026-06-25-1259]] · [[amazon-2026-06-25-0853]] · [[amazon-2026-06-24-1231]] · [[amazon-2026-06-24-0853]] · [[amazon-2026-06-23-1235]] · [[amazon-2026-06-23-0856]] · [[amazon-2026-06-22-1241]] · [[amazon-2026-06-22-0854]] · [[amazon-2026-06-21-1236]] · [[amazon-2026-06-21-0854]] · [[amazon-2026-06-20-1232]] · [[amazon-2026-06-20-0850]] · [[amazon-2026-06-19-1230]] · [[amazon-2026-06-19-0858]] · [[amazon-2026-06-18-1235]] · [[amazon-2026-06-18-0852]] · [[amazon-2026-06-17-1243]] · [[amazon-2026-06-17-0901]] · [[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
+## Runs that observed this SKU (45)
+[[amazon-2026-06-26-0853]] · [[amazon-2026-06-25-1259]] · [[amazon-2026-06-25-0853]] · [[amazon-2026-06-24-1231]] · [[amazon-2026-06-24-0853]] · [[amazon-2026-06-23-1235]] · [[amazon-2026-06-23-0856]] · [[amazon-2026-06-22-1241]] · [[amazon-2026-06-22-0854]] · [[amazon-2026-06-21-1236]] · [[amazon-2026-06-21-0854]] · [[amazon-2026-06-20-1232]] · [[amazon-2026-06-20-0850]] · [[amazon-2026-06-19-1230]] · [[amazon-2026-06-19-0858]] · [[amazon-2026-06-18-1235]] · [[amazon-2026-06-18-0852]] · [[amazon-2026-06-17-1243]] · [[amazon-2026-06-17-0901]] · [[amazon-2026-06-16-1228]] · [[amazon-2026-06-16-0853]] · [[amazon-2026-06-15-1231]] · [[amazon-2026-06-15-0858]] · [[amazon-2026-06-14-1236]] · [[amazon-2026-06-14-0859]] · [[amazon-2026-06-13-1224]] · [[amazon-2026-06-13-0853]] · [[amazon-2026-06-12-1243]] · [[amazon-2026-06-12-0901]] · [[amazon-2026-06-11-1237]] · [[amazon-2026-06-11-0900]] · [[amazon-2026-06-10-1208]] · [[amazon-2026-06-10-0901]] · [[amazon-2026-06-09-1159]] · [[amazon-2026-06-09-0857]] · [[amazon-2026-06-08-1154]] · [[amazon-2026-06-08-0859]] · [[amazon-2026-06-07-1158]] · [[amazon-2026-06-07-0908]] · [[amazon-2026-06-06-1201]] · [[amazon-2026-06-06-0702]] · [[amazon-2026-06-05-1602]] · [[amazon-2026-06-05-1057]] · [[amazon-2026-06-05-0429]] · [[amazon-2026-06-05-0112]]
 
-## Price history (44 observations)
+## Price history (45 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -75,6 +75,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-24-1231,2026-06-24,amazon,All India,-,698,1200,41.8,1
 2026-06-25-0853,2026-06-25,amazon,All India,-,698,1200,41.8,1
 2026-06-25-1259,2026-06-25,amazon,All India,-,698,1200,41.8,1
+2026-06-26-0853,2026-06-26,amazon,All India,-,698,1200,41.8,1
 ```
 
 ---

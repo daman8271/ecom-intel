@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-25
-observations: 144
+last_seen: 2026-06-26
+observations: 152
 latest_status: OOS
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oi
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-25) — ref ₹1139 vs live ₹-
-- **Days below reference:** 14 of 18
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-06-26) — ref ₹1049 vs live ₹-
+- **Days below reference:** 15 of 19
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]]
 
-## Ref-vs-live history (144 observations)
+## Ref-vs-live history (152 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -189,6 +189,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart,BELOW,BAU,1139,1093,1093,1093,-46,-4.04,1,true
 2026-06-25,flipkart-minutes,NOT_LISTED,BAU,1139,,,,,,0,false
 2026-06-25,zepto,OOS,BAU,1139,,,,,,0,false
+2026-06-26,amazon,ABOVE,SVD,1049,1139,1139,1139,90,8.58,0,true
+2026-06-26,amazon-fresh,ABOVE,SVD,1049,1139,831,1139,90,8.58,40,true
+2026-06-26,amazon-now,BELOW,SVD,1049,831,831,1139,-218,-20.78,40,true
+2026-06-26,bigbasket,BELOW,SVD,1049,882.83,882.83,1350,-166.17,-15.84,41,true
+2026-06-26,blinkit,NOT_LISTED,SVD,1049,,,,,,0,false
+2026-06-26,flipkart,ABOVE,SVD,1049,1093,1093,1093,44,4.19,0,true
+2026-06-26,flipkart-minutes,NOT_LISTED,SVD,1049,,,,,,0,false
+2026-06-26,zepto,OOS,SVD,1049,,,,,,0,false
 ```
 
 ---

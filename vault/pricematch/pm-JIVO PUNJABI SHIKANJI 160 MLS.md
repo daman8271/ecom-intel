@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-25
-observations: 144
+last_seen: 2026-06-26
+observations: 152
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-punjabi-shikanji-wheatgrass-juice-nimbu-shikanji-masala-drink
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-25) — ref ₹219 vs live ₹-
-- **Days below reference:** 0 of 18
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-26) — ref ₹219 vs live ₹-
+- **Days below reference:** 0 of 19
 
-## Ref-vs-live history (144 observations)
+## Ref-vs-live history (152 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -188,6 +188,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-25,flipkart,NOT_LISTED,BAU,219,,,,,,0,false
 2026-06-25,flipkart-minutes,NOT_LISTED,BAU,219,,,,,,0,false
 2026-06-25,zepto,NOT_LISTED,BAU,219,,,,,,0,false
+2026-06-26,amazon,OOS,SVD,219,,,,,,0,false
+2026-06-26,amazon-fresh,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-26,amazon-now,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-26,bigbasket,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-26,blinkit,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-26,flipkart,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-26,flipkart-minutes,NOT_LISTED,SVD,219,,,,,,0,false
+2026-06-26,zepto,NOT_LISTED,SVD,219,,,,,,0,false
 ```
 
 ---
