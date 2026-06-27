@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-26
-observations: 152
+last_seen: 2026-06-27
+observations: 160
 latest_status: NOT_LISTED
-below_days: 18
+below_days: 19
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-26) — ref ₹259 vs live ₹-
-- **Days below reference:** 18 of 19
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-27) — ref ₹259 vs live ₹-
+- **Days below reference:** 19 of 20
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]]
 
-## Ref-vs-live history (152 observations)
+## Ref-vs-live history (160 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -197,6 +197,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-26,flipkart,ABOVE,SVD,259,332,332,332,73,28.19,0,true
 2026-06-26,flipkart-minutes,BELOW,SVD,259,239,234,271,-20,-7.72,32,true
 2026-06-26,zepto,NOT_LISTED,SVD,259,,,,,,0,false
+2026-06-27,amazon,BELOW,SVD,259,246,246,246,-13,-5.02,1,true
+2026-06-27,amazon-fresh,BELOW,SVD,259,239,234,259,-20,-7.72,93,true
+2026-06-27,amazon-now,BELOW,SVD,259,239,234,259,-20,-7.72,84,true
+2026-06-27,bigbasket,ABOVE,SVD,259,283.99,283.99,318,24.99,9.65,0,true
+2026-06-27,blinkit,BELOW,SVD,259,239,228,249,-20,-7.72,105,true
+2026-06-27,flipkart,ABOVE,SVD,259,332,332,332,73,28.19,0,true
+2026-06-27,flipkart-minutes,BELOW,SVD,259,239,234,271,-20,-7.72,33,true
+2026-06-27,zepto,NOT_LISTED,SVD,259,,,,,,0,false
 ```
 
 ---

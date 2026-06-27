@@ -4,8 +4,8 @@ city: Chennai
 platforms:
   - flipkart-minutes
 pincodes: 2
-skus: 1
-observations: 71
+skus: 3
+observations: 74
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -21,10 +21,10 @@ Up: [[locations-index]]
 ## Pincodes (2)
 [[600040]] · [[600042]]
 
-## SKUs available in Chennai (1)
-[[jivo-cold-press-canola-oil-plastic-bottle-1l]]
+## SKUs available in Chennai (3)
+[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-natural-minerals-water-mineral-water-1l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]]
 
-## Observations (71 rows)
+## Observations (74 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -99,6 +99,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-22-1213,2026-06-22,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,600042,271,375,27,0
 2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,600042,265,271,2.2,0
 2026-06-26-1213,2026-06-26,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,600042,271,375,27,0
+2026-06-27-0832,2026-06-27,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,600042,250,375,33,0
+2026-06-27-0832,2026-06-27,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,600042,22,30,26,0
+2026-06-27-0832,2026-06-27,flipkart-minutes,jivo-pomace-olive-oil-plastic-bottle-1l,600042,409,1049,61,0
 ```
 
 ---
