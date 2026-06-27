@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JIVO E-Com Control Tower — The App Model</title>
+<style>
+/* ============================================================
+   JIVO E-COM CONTROL TOWER — single-file app-model explainer
+   Inline CSS only. No external/CDN deps. Renders offline.
+   ============================================================ */
+
+:root{
+  --green-900:#10371f;
+  --green-800:#15512c;
+  --green-700:#1b6b39;
+  --green-600:#238147;   /* JIVO green accent */
+  --green-500:#2ea25a;
+  --green-300:#7fcf9c;
+  --green-100:#e4f4ea;
+  --green-050:#f1faf4;
+
+  --ink:#15201a;
+  --ink-2:#3a4a41;
+  --ink-3:#62716a;
+  --line:#dfe6e1;
+  --line-2:#eef2ef;
+  --paper:#fbfdfb;
+  --paper-2:#f4f8f5;
+  --white:#ffffff;
+
+  /* segmentation palette */
+  --premium:#b6862c;     /* gold */
+  --premium-bg:#fbf3df;
+  --commodity:#3a6ea5;   /* slate-blue */
+  --commodity-bg:#e7eef7;
+  --other:#7a8a82;       /* grey-green */
+  --other-bg:#eef1ef;
+
+  /* status palette */
+  --ok:#1d8a4e;     --ok-bg:#e1f3e8;
+  --warn:#b7791f;   --warn-bg:#fbf0d8;
+  --bad:#b33a3a;    --bad-bg:#f7e3e3;
+
+  --shadow-sm:0 1px 2px rgba(16,55,31,.06), 0 1px 3px rgba(16,55,31,.05);
+  --shadow:0 4px 14px rgba(16,55,31,.08), 0 1px 3px rgba(16,55,31,.06);
+  --shadow-lg:0 18px 48px rgba(16,55,31,.13);
+  --radius:14px;
+  --radius-sm:9px;
+  --maxw:1180px;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --mono:"SFMono-Regular",ui-monospace,"Menlo",Consolas,"Liberation Mono",monospace;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 500px at 85% -10%, var(--green-050), transparent 70%),
+    var(--paper);
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+h1,h2,h3,h4{line-height:1.18;margin:0}
+p{margin:0 0 .85em}
+a{color:var(--green-700);text-decoration:none}
+a:hover{text-decoration:underline}
+.tnum{font-variant-numeric:tabular-nums lining-nums}
+.mono{font-family:var(--mono)}
+small{color:var(--ink-3)}
+
+/* ---------- sticky section nav ---------- */
+.nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(251,253,251,.86);
+  backdrop-filter:saturate(150%) blur(10px);
+  -webkit-backdrop-filter:saturate(150%) blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav-inner{display:flex;align-items:center;gap:8px;max-width:var(--maxw);margin:0 auto;padding:9px 26px;overflow-x:auto}
+.nav-brand{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:.2px;white-space:nowrap;margin-right:6px}
+.nav-brand .dot{width:11px;height:11px;border-radius:3px;background:var(--green-600);box-shadow:0 0 0 4px var(--green-100)}
+.nav-links{display:flex;gap:3px;white-space:nowrap}
+.nav a{
+  color:var(--ink-2);font-size:13px;font-weight:600;
+  padding:6px 11px;border-radius:8px;text-decoration:none;transition:.15s;
+}
+.nav a:hover{background:var(--green-100);color:var(--green-800)}
+.nav a.active{background:var(--green-600);color:#fff}
+
+/* ---------- hero ---------- */
+.hero{padding:54px 0 30px;position:relative;overflow:hidden}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--green-700);background:var(--green-100);
+  padding:6px 13px;border-radius:100px;margin-bottom:18px;
+}
+.hero h1{
+  font-family:var(--serif);
+  font-size:clamp(34px,5.4vw,58px);
+  font-weight:700;letter-spacing:-.6px;color:var(--green-900);
+  max-width:18ch;
+}
+.hero h1 em{font-style:normal;color:var(--green-600)}
+.lede{font-size:clamp(16px,1.6vw,19px);color:var(--ink-2);max-width:74ch;margin-top:20px}
+.lede strong{color:var(--ink)}
+.stat-strip{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.stat{
+  background:var(--white);border:1px solid var(--line);border-radius:12px;
+  padding:13px 18px;box-shadow:var(--shadow-sm);min-width:118px;
+}
+.stat b{display:block;font-family:var(--serif);font-size:25px;color:var(--green-800);line-height:1}
+.stat span{font-size:12px;color:var(--ink-3);font-weight:600;letter-spacing:.02em}
+
+/* ---------- section scaffolding ---------- */
+section{padding:46px 0;border-top:1px solid var(--line-2)}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:26px}
+.sec-num{
+  font-family:var(--serif);font-size:15px;font-weight:700;color:#fff;
+  background:var(--green-600);min-width:34px;height:34px;border-radius:9px;
+  display:flex;align-items:center;justify-content:center;flex:0 0 auto;box-shadow:var(--shadow-sm)
+}
+.sec-head h2{font-family:var(--serif);font-size:clamp(24px,3vw,33px);font-weight:700;color:var(--green-900);letter-spacing:-.4px}
+.sec-head p{margin:5px 0 0;color:var(--ink-3);font-size:14.5px;max-width:70ch}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--green-600);margin-bottom:8px}
+
+/* ---------- value chain ---------- */
+.chain{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:8px 0 4px;position:relative}
+.rung{
+  background:var(--white);border:1px solid var(--line);
+  padding:20px 18px 18px;position:relative;
+  border-right:none;
+}
+.rung:first-child{border-radius:var(--radius) 0 0 var(--radius)}
+.rung:last-child{border-radius:0 var(--radius) var(--radius) 0;border-right:1px solid var(--line)}
+.rung .step{font-size:11px;font-weight:800;letter-spacing:.1em;color:var(--green-600);text-transform:uppercase}
+.rung h3{font-family:var(--serif);font-size:20px;color:var(--green-900);margin:7px 0 2px}
+.rung .who{font-size:12.5px;color:var(--ink-3);min-height:34px}
+.rung .litres{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--ink);margin-top:12px;letter-spacing:-.5px}
+.rung .litres small{font-size:13px;color:var(--ink-3);font-weight:400;font-family:var(--sans)}
+.rung .price{
+  display:inline-block;margin-top:9px;font-weight:700;font-size:14px;color:var(--green-800);
+  background:var(--green-100);padding:4px 11px;border-radius:100px
+}
+.rung .barwrap{height:7px;background:var(--paper-2);border-radius:100px;margin-top:14px;overflow:hidden}
+.rung .bar{height:100%;background:linear-gradient(90deg,var(--green-500),var(--green-700));border-radius:100px}
+.gap-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:14px 4% 0;max-width:92%}
+.gap{
+  text-align:center;background:var(--green-050);border:1px dashed var(--green-300);
+  border-radius:100px;padding:7px;font-size:13px;font-weight:700;color:var(--green-800)
+}
+.gap span{color:var(--ink-3);font-weight:500;font-size:12px}
+.chain-notes{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
+.note-card{background:var(--white);border:1px solid var(--line);border-left:3px solid var(--green-500);border-radius:10px;padding:15px 17px;box-shadow:var(--shadow-sm)}
+.note-card h4{font-size:14px;color:var(--green-800);margin-bottom:5px}
+.note-card p{font-size:13.5px;color:var(--ink-2);margin:0}
+
+/* segmentation split bars */
+.split-block{margin-top:30px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow-sm)}
+.split-block h4{font-size:15px;color:var(--green-900);margin-bottom:3px}
+.split-bar{display:flex;height:42px;border-radius:9px;overflow:hidden;margin:16px 0 6px;box-shadow:var(--shadow-sm)}
+.split-seg{display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:13px;white-space:nowrap;min-width:0;padding:0 6px}
+.seg-prem{background:linear-gradient(135deg,#c9962f,#a9781f)}
+.seg-comm{background:linear-gradient(135deg,#4279b0,#305f8c)}
+.seg-other{background:linear-gradient(135deg,#8a988f,#6c7a71)}
+.split-legend{display:flex;gap:20px;flex-wrap:wrap;font-size:12.5px;color:var(--ink-2);margin-top:10px}
+.split-legend span{display:inline-flex;align-items:center;gap:7px}
+.swatch{width:12px;height:12px;border-radius:3px;display:inline-block}
+
+/* ---------- page cards ---------- */
+.page-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:16px}
+.pcard{
+  background:var(--white);border:1px solid var(--line);border-radius:var(--radius);
+  padding:0;box-shadow:var(--shadow-sm);overflow:hidden;display:flex;flex-direction:column;
+  transition:.18s;
+}
+.pcard:hover{box-shadow:var(--shadow);transform:translateY(-2px);border-color:var(--green-300)}
+.pcard .top{display:flex;align-items:center;gap:11px;padding:15px 18px 12px;border-bottom:1px solid var(--line-2)}
+.pcard .pnum{
+  font-family:var(--serif);font-weight:700;font-size:14px;color:var(--green-700);
+  background:var(--green-100);min-width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:0 0 auto
+}
+.pcard h3{font-size:17px;color:var(--green-900);flex:1}
+.tag{font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:6px;white-space:nowrap}
+.tag-rollup{background:#ede4fb;color:#6b3fb0}
+.tag-supply{background:var(--green-100);color:var(--green-800)}
+.tag-demand{background:#fde7e0;color:#b0532f}
+.tag-stock{background:#e0eefb;color:#2f5fa0}
+.tag-spend{background:#fbf0d8;color:#9a6b12}
+.tag-found{background:#e7ece9;color:#4a5a51}
+.tag-lens{background:#e0f2f1;color:#1f7a72}
+.pcard .body{padding:14px 18px 17px;font-size:13px;color:var(--ink-2);flex:1}
+.pcard .purpose{color:var(--ink);font-weight:500;margin-bottom:12px;font-size:13.3px}
+.pcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 11px}
+.pcard dt{font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--green-600);padding-top:2px}
+.pcard dd{margin:0;font-size:12.6px;color:var(--ink-2)}
+.pcard dd b{color:var(--ink);font-weight:700}
+.pcard code,.cd{font-family:var(--mono);font-size:11.5px;background:var(--paper-2);border:1px solid var(--line-2);padding:1px 5px;border-radius:5px;color:var(--green-800)}
+.flag{display:inline-block;font-size:11px;font-weight:700;color:var(--bad);background:var(--bad-bg);border-radius:5px;padding:1px 7px;margin-top:9px}
+.flag.warnf{color:var(--warn);background:var(--warn-bg)}
+
+/* ---------- connection map ---------- */
+.map{background:linear-gradient(180deg,var(--paper-2),var(--white));border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow)}
+.band{margin:0 auto;max-width:980px}
+.band-label{text-align:center;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin:0 0 12px}
+.mbox{
+  background:var(--white);border:1.5px solid var(--line);border-radius:11px;
+  padding:13px 16px;box-shadow:var(--shadow-sm);text-align:center;position:relative
+}
+.mbox .mt{font-weight:800;font-size:14px;color:var(--green-900);letter-spacing:.01em}
+.mbox .ms{font-size:11.5px;color:var(--ink-3);margin-top:2px}
+.mbox.accent{border-color:var(--green-500);background:var(--green-050)}
+.mbox.home{border:2px solid var(--green-600);background:linear-gradient(135deg,#fff,var(--green-050))}
+.mbox.home .mt{font-size:16px}
+.mbox.write{border-style:dashed;border-color:var(--commodity)}
+.flow-row{display:flex;align-items:stretch;justify-content:center;gap:0;flex-wrap:nowrap}
+.flow-row .mbox{flex:1}
+.harrow{display:flex;align-items:center;justify-content:center;flex:0 0 46px;color:var(--green-600);font-weight:800;font-size:13px;flex-direction:column;gap:1px}
+.harrow .lbl{font-size:9.5px;color:var(--green-700);font-weight:700;white-space:nowrap}
+.harrow .ar{font-size:20px;line-height:1}
+.varrow{display:flex;flex-direction:column;align-items:center;color:var(--green-600);margin:10px 0;font-size:12px;font-weight:700}
+.varrow .ar{font-size:22px;line-height:.7}
+.varrow .lbl{font-size:10.5px;color:var(--ink-3);margin-top:3px}
+.cols-2{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:760px;margin:0 auto}
+.cols-3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.side-band{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:760px;margin:14px auto 0}
+.legend-map{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:22px;font-size:12px;color:var(--ink-2)}
+.legend-map span{display:inline-flex;align-items:center;gap:7px}
+
+.conn-list{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:24px}
+.conn{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:13px 16px;box-shadow:var(--shadow-sm);font-size:13px;color:var(--ink-2)}
+.conn b{color:var(--green-800)}
+.conn .n{display:inline-block;font-family:var(--serif);font-weight:700;color:#fff;background:var(--green-600);width:22px;height:22px;border-radius:6px;text-align:center;line-height:22px;font-size:12px;margin-right:8px}
+
+/* ---------- entities ---------- */
+.ent-grid{display:grid;grid-template-columns:1fr;gap:18px}
+.arche{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow-sm)}
+.arche h4{font-size:14.5px;color:var(--green-900);display:flex;align-items:center;gap:9px}
+.arche h4 .a-badge{font-size:11px;font-weight:800;color:#fff;background:var(--green-600);border-radius:6px;padding:2px 8px}
+.arche p{font-size:12.8px;color:var(--ink-3);margin:5px 0 12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12.5px;font-weight:600;background:var(--green-050);border:1px solid var(--green-100);color:var(--green-800);padding:5px 12px;border-radius:100px}
+.chip.empty{background:var(--bad-bg);border-color:#eccaca;color:var(--bad);text-decoration:line-through;opacity:.85}
+.seg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
+.seg-card{border-radius:12px;padding:16px 17px;border:1px solid}
+.seg-card.prem{background:var(--premium-bg);border-color:#eaddb9}
+.seg-card.comm{background:var(--commodity-bg);border-color:#cfdcec}
+.seg-card.oth{background:var(--other-bg);border-color:#dde3df}
+.seg-card h5{font-size:13px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin-bottom:4px}
+.seg-card.prem h5{color:var(--premium)}
+.seg-card.comm h5{color:var(--commodity)}
+.seg-card.oth h5{color:var(--other)}
+.seg-card .desc{font-size:12px;color:var(--ink-3);margin-bottom:10px}
+.seg-card ul{margin:0;padding-left:17px;font-size:12.5px;color:var(--ink-2)}
+.seg-card li{margin-bottom:3px}
+.seg-card .mix{font-family:var(--serif);font-size:22px;font-weight:700;margin-top:10px}
+.seg-card.prem .mix{color:var(--premium)}
+.seg-card.comm .mix{color:var(--commodity)}
+
+.drill{background:var(--green-900);border-radius:var(--radius);padding:20px 22px;margin-top:18px;color:#dff1e6}
+.drill .eyebrow{color:var(--green-300)}
+.breadcrumb{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-top:8px;font-family:var(--mono);font-size:13px}
+.bc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:7px 13px;color:#eafaf0;font-weight:600}
+.bc.lvl1{background:rgba(46,162,90,.25);border-color:var(--green-500)}
+.bc.lvl-sku{background:#fff;color:var(--green-900);border-color:#fff}
+.drill .sep{color:var(--green-300);font-weight:800}
+.drill p{color:#bfe0cd;font-size:12.5px;margin:12px 0 0}
+
+/* ---------- generic tables ---------- */
+.tablecard{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+table{border-collapse:collapse;width:100%;font-size:13px}
+thead th{
+  background:var(--green-800);color:#eafaf0;text-align:left;font-weight:700;font-size:11.5px;
+  letter-spacing:.04em;text-transform:uppercase;padding:11px 14px;white-space:nowrap
+}
+tbody td{padding:10px 14px;border-top:1px solid var(--line-2);color:var(--ink-2);vertical-align:top}
+tbody tr:nth-child(even){background:var(--paper)}
+tbody tr:hover{background:var(--green-050)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.barcell{position:relative}
+.barcell .mini{position:absolute;left:0;top:0;bottom:0;background:var(--green-100);z-index:0}
+.barcell span{position:relative;z-index:1}
+
+/* ---------- coverage ---------- */
+.cov-controls{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+.cov-controls .lbl{font-size:12.5px;font-weight:700;color:var(--ink-3)}
+.fbtn{
+  font:inherit;font-size:12.5px;font-weight:700;cursor:pointer;border:1px solid var(--line);
+  background:var(--white);color:var(--ink-2);padding:7px 14px;border-radius:100px;transition:.15s
+}
+.fbtn:hover{border-color:var(--green-300)}
+.fbtn.active{background:var(--green-600);border-color:var(--green-600);color:#fff}
+.fbtn .ct{opacity:.7;font-weight:600}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:800;letter-spacing:.03em;padding:3px 10px;border-radius:100px;white-space:nowrap}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%}
+.pill.ok{background:var(--ok-bg);color:var(--ok)} .pill.ok::before{background:var(--ok)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)} .pill.warn::before{background:var(--warn)}
+.pill.bad{background:var(--bad-bg);color:var(--bad)} .pill.bad::before{background:var(--bad)}
+.cov-sub{font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--green-700);margin:26px 0 10px;display:flex;align-items:center;gap:9px}
+.cov-sub::after{content:"";flex:1;height:1px;background:var(--line)}
+.cov-table td:first-child{font-weight:700;color:var(--ink);white-space:nowrap}
+.cov-table td .cd{white-space:normal}
+
+/* ---------- anomalies ---------- */
+.anom-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.anom{background:var(--white);border:1px solid var(--line);border-radius:11px;padding:15px 17px;box-shadow:var(--shadow-sm);border-top:3px solid var(--warn)}
+.anom.sev-high{border-top-color:var(--bad)}
+.anom.sev-info{border-top-color:var(--commodity)}
+.anom .sev{font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--warn)}
+.anom.sev-high .sev{color:var(--bad)}
+.anom.sev-info .sev{color:var(--commodity)}
+.anom h4{font-size:13.6px;color:var(--ink);margin:5px 0 5px}
+.anom p{font-size:12.6px;color:var(--ink-2);margin:0}
+.anom code,.anom .cd{font-size:11px}
+
+/* ---------- self assessment ---------- */
+.assess{background:linear-gradient(135deg,var(--green-900),var(--green-700));color:#eafaf0;border-radius:var(--radius);padding:30px 34px;box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.assess::after{content:"";position:absolute;right:-60px;top:-60px;width:240px;height:240px;border-radius:50%;background:rgba(255,255,255,.05)}
+.assess .eyebrow{color:var(--green-300)}
+.assess h2{font-family:var(--serif);font-size:27px;color:#fff;margin-bottom:6px}
+.confbar{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 20px}
+.confbar .c{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);border-radius:11px;padding:12px 16px;flex:1;min-width:180px}
+.confbar .c .lvl{font-family:var(--serif);font-size:18px;font-weight:700;color:#fff}
+.confbar .c .lvl.hi{color:#a9e9bf} .confbar .c .lvl.mid{color:#ffe39a} .confbar .c .lvl.lo{color:#ffc0a8}
+.confbar .c .d{font-size:12px;color:#cfe9d8;margin-top:3px}
+.assess-cols{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:6px}
+.assess h4{font-size:13.5px;color:#fff;margin-bottom:8px;letter-spacing:.02em}
+.assess ul{margin:0;padding-left:19px}
+.assess li{font-size:13px;color:#dff1e6;margin-bottom:7px}
+.assess code,.assess .cd{background:rgba(255,255,255,.13);border-color:rgba(255,255,255,.2);color:#eafaf0}
+
+/* ---------- footer ---------- */
+footer{padding:34px 0 50px;border-top:1px solid var(--line);color:var(--ink-3);font-size:12.5px}
+footer .src{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+footer .src code{font-size:11px}
+
+/* ---------- responsive ---------- */
+@media(max-width:880px){
+  .chain{grid-template-columns:1fr 1fr}
+  .rung,.rung:first-child,.rung:last-child{border-radius:0;border:1px solid var(--line)}
+  .gap-row,.chain-notes,.conn-list,.cols-2,.cols-3,.side-band,.seg-grid,.assess-cols{grid-template-columns:1fr}
+  .flow-row{flex-wrap:wrap}
+  .flow-row .mbox{flex:1 1 100%}
+  .harrow{flex:1 1 100%;flex-direction:row;padding:2px 0}
+  .harrow .ar{transform:rotate(90deg)}
+}
+
+/* ---------- print ---------- */
+@media print{
+  body{background:#fff}
+  .nav{display:none}
+  section{break-inside:avoid;padding:22px 0}
+  .pcard,.anom,.note-card,.conn,.arche,.tablecard,.map{break-inside:avoid;box-shadow:none}
+  .assess{background:#10371f !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  thead th,.seg-prem,.seg-comm,.seg-other,.pill,.tag{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hero{padding-top:10px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="nav-brand"><span class="dot"></span>JIVO&nbsp;Control&nbsp;Tower</div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#chain">Value Chain</a>
+      <a href="#pages">13 Pages</a>
+      <a href="#map">Connection Map</a>
+      <a href="#entities">Entities</a>
+      <a href="#coverage">Coverage</a>
+      <a href="#anomalies">Anomalies</a>
+      <a href="#assessment">Self-Assessment</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero" id="overview">
+  <div class="wrap">
+    <span class="kicker"><span>●</span> Internal data-product brief · June 2026</span>
+    <h1>JIVO's e-com <em>control tower</em> for edible oils.</h1>
+    <p class="lede">
+      The JIVO e-com app is the company's <strong>single internal command centre</strong> for its
+      online edible-oils business — canola, mustard, sunflower, groundnut, soyabean, rice-bran,
+      olive/pomace, sesame and ghee, plus non-oils (seeds, spices, juices, honey). In one workspace it
+      tracks the whole value chain — from <strong>Jivo&nbsp;Wellness</strong> (the parent factory that makes
+      and bills the oil) through <strong>Jivo&nbsp;Mart (JM)</strong>, out to <strong>8–10 platforms</strong>
+      (Amazon, Swiggy, Blinkit, Zepto…), and all the way to <strong>consumer sell-through</strong> — measured
+      everywhere in <strong>litres</strong> and split <strong>Premium vs Commodity</strong>. Across
+      <strong>13 pages</strong> built on <strong>41 raw tables</strong> it answers, daily: what's the category
+      mix, what's moving, are we filling orders, where's the stock, and is marketing spend paying off.
+      It was <strong>built fast (~1 month) and is live</strong> — powerful, but with a few hollow corners
+      this brief calls out honestly.
+    </p>
+    <div class="stat-strip">
+      <div class="stat"><b>13</b><span>workspace pages</span></div>
+      <div class="stat"><b>41</b><span>raw data tables</span></div>
+      <div class="stat"><b>10</b><span>platforms (8 active)</span></div>
+      <div class="stat"><b>4</b><span>value-chain rungs</span></div>
+      <div class="stat"><b class="tnum">+21%</b><span>factory→consumer markup</span></div>
+      <div class="stat"><b class="tnum">~51%</b><span>premium-mix (Jun oils)</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== VALUE CHAIN ===================== -->
+<section id="chain">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">1</span>
+      <div>
+        <h2>The business model &amp; value chain</h2>
+        <p>One litre of oil, re-sold down a four-rung chain. Volume <b>shrinks</b> as stock is held back at each
+        stage; price <b>rises</b> as each stage adds its margin. These are the four Home KPI cards (Jun&nbsp;2026).</p>
+      </div>
+    </div>
+
+    <div class="chain">
+      <div class="rung">
+        <div class="step">Rung 1 · Billing</div>
+        <h3>Wellness Billing</h3>
+        <div class="who">Jivo <b>Wellness</b> — the parent factory — makes the oil and bills/invoices Jivo (ex-factory transfer price).</div>
+        <div class="litres tnum">811,616 <small>L</small></div>
+        <div class="price tnum">₹180.0 / L</div>
+        <div class="barwrap"><div class="bar" style="width:100%"></div></div>
+      </div>
+      <div class="rung">
+        <div class="step">Rung 2 · Supply</div>
+        <h3>JM Primary</h3>
+        <div class="who"><b>Jivo Mart (JM)</b> — Jivo's own distribution arm/warehouse — takes that stock as its primary &amp; dispatches onward.</div>
+        <div class="litres tnum">672,739 <small>L</small></div>
+        <div class="price tnum">₹192.6 / L</div>
+        <div class="barwrap"><div class="bar" style="width:82.9%"></div></div>
+      </div>
+      <div class="rung">
+        <div class="step">Rung 3 · Sell-in</div>
+        <h3>Primary</h3>
+        <div class="who">Jivo <b>ships to the platforms</b> against their POs. This is sell-in — the operational scoreboard of order vs deliver.</div>
+        <div class="litres tnum">484,975 <small>L</small></div>
+        <div class="price tnum">₹210.3 / L</div>
+        <div class="barwrap"><div class="bar" style="width:59.8%"></div></div>
+      </div>
+      <div class="rung">
+        <div class="step">Rung 4 · Sell-out</div>
+        <h3>Secondary</h3>
+        <div class="who">Platforms <b>sell through to consumers</b>. The demand signal everything upstream serves — at the highest ₹/L.</div>
+        <div class="litres tnum">560,048 <small>L</small></div>
+        <div class="price tnum">₹218.2 / L</div>
+        <div class="barwrap"><div class="bar" style="width:69.0%"></div></div>
+      </div>
+    </div>
+
+    <div class="gap-row">
+      <div class="gap tnum">+₹12.6/L <span>Wellness → JM margin</span></div>
+      <div class="gap tnum">+₹17.7/L <span>JM → Primary margin</span></div>
+      <div class="gap tnum">+₹7.9/L <span>Primary → Secondary markup</span></div>
+    </div>
+
+    <div class="chain-notes">
+      <div class="note-card">
+        <h4>Volume shrinks, then bounces back</h4>
+        <p>811k → 672k → 485k L: each stage holds back stock as inventory (≈139k built at Wellness, ≈188k at JM).
+        But <b>Secondary (560k) &gt; Primary (485k)</b> — consumers pulled <b>more</b> than Jivo shipped this month,
+        i.e. platforms are <b>destocking</b>. A persistent Secondary&gt;Primary gap is the early warning for
+        next-month stock-outs — the single most important cross-page signal.</p>
+      </div>
+      <div class="note-card">
+        <h4>The ladder is reproducible in the data</h4>
+        <p>Inside <span class="cd">master_po</span> the per-litre columns step up the same way:
+        <b>without-margin ₹202/L → exclusive (with distributor margin) ₹213/L → inclusive (with GST) ₹225/L</b>.
+        The price ladder is the reliable monotonic signal; the litre counts are not. Rung-1 (₹180) is
+        owner-asserted — it sits above what the extracted data can recompute.</p>
+      </div>
+    </div>
+
+    <div class="split-block">
+      <h4>Premium vs Commodity vs Other — split inside every card</h4>
+      <small>June 2026 Primary oils: PREMIUM 233,401.7&nbsp;L vs COMMODITY 225,302.0&nbsp;L → <b>premium-mix ≈ 50.9%</b>.
+      The Primary <em>card</em> (484,975&nbsp;L) also carries an ≈26,271&nbsp;L OTHER (non-oil) head that the category charts exclude.</small>
+      <div class="split-bar" role="img" aria-label="Premium 45.6 percent, Commodity 44.0 percent, Other 5.4 percent of the Primary card litres">
+        <div class="split-seg seg-prem" style="flex-basis:48.1%">PREMIUM&nbsp;·&nbsp;233,402&nbsp;L</div>
+        <div class="split-seg seg-comm" style="flex-basis:46.5%">COMMODITY&nbsp;·&nbsp;225,302&nbsp;L</div>
+        <div class="split-seg seg-other" style="flex-basis:5.4%">OTHER</div>
+      </div>
+      <div class="split-legend">
+        <span><i class="swatch" style="background:#b6862c"></i><b>Premium</b> — value oils: canola, groundnut, pomace/olive, extra-light/virgin, sesame, yellow mustard, coconut, ghee</span>
+        <span><i class="swatch" style="background:#3a6ea5"></i><b>Commodity</b> — staples: mustard kacchi-ghani, sunflower, soyabean, rice-bran, gold (blended)</span>
+        <span><i class="swatch" style="background:#7a8a82"></i><b>Other</b> — non-oils (seeds, spices, juices, honey) tracked in units, <b>0 litres</b> by design</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 13 PAGES ===================== -->
+<section id="pages">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">2</span>
+      <div>
+        <h2>The 13 workspace pages</h2>
+        <p>Every page, what it is for, the headline numbers, the tables/dashboards behind it, and the grain you drill to.</p>
+      </div>
+    </div>
+
+    <div class="page-grid">
+
+      <!-- 1 HOME -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">1</span><h3>Home</h3><span class="tag tag-rollup">Roll-up</span></div>
+        <div class="body">
+          <p class="purpose">The executive overview. Owns no data — it re-states the whole business in one screen; every tile is a doorway into a deeper domain.</p>
+          <dl>
+            <dt>Blocks</dt><dd>4 KPI cards (the value chain) · Category Split (Premium/Commodity, Primary↔Secondary toggle) · Top Movers · Fulfilment Health</dd>
+            <dt>Numbers</dt><dd>Cards <b>811,616 → 672,739 → 484,975 → 560,048&nbsp;L</b>; overall fill-rate <b>56.2%</b> (30-day window)</dd>
+            <dt>Source</dt><dd>Composed from W1/W2/W3 dashboards; <span class="cd">top-skus</span>, <span class="cd">category-breakdown</span>, <span class="cd">fulfilment-health</span></dd>
+            <dt>Grain</dt><dd>Company → platform → category → SKU (via drill)</dd>
+          </dl>
+          <span class="flag warnf">Card exact litres are owner-screenshot, not in any single dashboard</span>
+        </div>
+      </article>
+
+      <!-- 2 JM PRIMARY -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">2</span><h3>JM Primary</h3><span class="tag tag-supply">Supply</span></div>
+        <div class="body">
+          <p class="purpose">Rung 2 — the volume Jivo Mart takes from Wellness and dispatches as <em>its</em> primary, before third-party distributors mark it up to platforms.</p>
+          <dl>
+            <dt>Numbers</dt><dd><b>672,739&nbsp;L @ ₹192.6/L</b> — sits above Primary in volume, below it in price (no distributor margin yet)</dd>
+            <dt>Source</dt><dd>No dedicated leaf/table; <span class="cd">prim_master_po</span> is empty; the JM-as-vendor proxy <b>fails</b> (JM delivered 0&nbsp;L Apr–Jun)</dd>
+            <dt>Grain</dt><dd>Warehouse → SKU → item_head (aspirational)</dd>
+          </dl>
+          <span class="flag">UNCLEAR: upstream rung not present in the SSOT — needs owner confirmation</span>
+        </div>
+      </article>
+
+      <!-- 3 PRIMARY -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">3</span><h3>Primary</h3><span class="tag tag-supply">Supply</span></div>
+        <div class="body">
+          <p class="purpose">Rung 3, per-platform — "how much got ordered, how much did we deliver, what's pending, are we on pace?" The sell-in team's daily scoreboard.</p>
+          <dl>
+            <dt>Metrics</dt><dd><span class="cd">order_ltrs</span> · <span class="cd">done/filled</span> · <span class="cd">missed</span> · <span class="cd">pending</span> · <span class="cd">dp</span> · <span class="cd">projection</span> · <span class="cd">lead_time</span></dd>
+            <dt>Numbers</dt><dd>Swiggy Jun: ordered <b>175,227&nbsp;L</b>, done <b>125,838&nbsp;L</b>, pending 49,389&nbsp;L</dd>
+            <dt>Source</dt><dd><span class="cd">master_po</span> (mode "DEL MONTH"). <b>Amazon exception</b>: <span class="cd">reporting."Amazon PO"</span></dd>
+            <dt>Grain</dt><dd>Platform → item_head → category → sub-cat → pack (1L/5L)</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- 4 SECONDARY -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">4</span><h3>Secondary</h3><span class="tag tag-demand">Demand</span></div>
+        <div class="body">
+          <p class="purpose">Rung 4 — what consumers actually <em>bought</em> off each platform (sell-through). The truest demand signal, valued at the highest ₹/L.</p>
+          <dl>
+            <dt>Metrics</dt><dd><span class="cd">shipped_units</span> / <span class="cd">shipped_ltr</span> / <span class="cd">shipped_value</span> / per-litre; PREMIUM/COMMODITY mix</dd>
+            <dt>Numbers</dt><dd>Swiggy Jun <b>146,668&nbsp;L</b> @ ₹197.1/L; all-platform YoY <b>+77.8%</b> (proj. 642,901&nbsp;L)</dd>
+            <dt>Source</dt><dd><span class="cd">SecMaster</span> + per-platform <span class="cd">*Sec</span> tables (Amazon via <span class="cd">*_range_master_view</span>)</dd>
+            <dt>Grain</dt><dd>Platform → category → sub-cat → SKU; raw goes to city/store/date</dd>
+          </dl>
+          <span class="flag warnf">"Done Value" ≈ 0.40× gross MRP (realised, not GMV)</span>
+        </div>
+      </article>
+
+      <!-- 5 JM INVENTORY -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">5</span><h3>JM Inventory</h3><span class="tag tag-stock">Stock</span></div>
+        <div class="body">
+          <p class="purpose">The stock JM holds in its <em>own</em> warehouse — the buffer between "JM Primary received" and "Primary shipped to platforms". Can we fill the open POs?</p>
+          <dl>
+            <dt>KPI</dt><dd>cover = JM SOH ÷ outstanding platform open-PO qty (conceptual)</dd>
+            <dt>Source</dt><dd>No <span class="cd">jm_inventory</span> table; derived from supply residual + open-PO columns (<span class="cd">open_po_quantity</span> 93,103 Swiggy; 165,351 Amazon)</dd>
+            <dt>Grain</dt><dd>Warehouse → SKU → item_head/brand vs platform open POs</dd>
+          </dl>
+          <span class="flag">UNCLEAR: <span class="cd">inventory-match</span> reconciliation returns null for all 10 platforms</span>
+        </div>
+      </article>
+
+      <!-- 6 INVENTORY -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">6</span><h3>Inventory</h3><span class="tag tag-stock">Stock</span></div>
+        <div class="body">
+          <p class="purpose">Stock sitting at the <em>platforms'</em> FCs / dark-stores, and how fast it depletes — to catch stock-outs (lost sales) and overstock/expiry (locked cash).</p>
+          <dl>
+            <dt>Metrics</dt><dd><b>SOH</b> · <b>DRR</b> (daily run-rate) · <b>DOH = SOH÷DRR</b> · potential GMV-loss · expiry exposure</dd>
+            <dt>Numbers</dt><dd>Amazon SOH <b>258,041&nbsp;L</b>, DOH <b>21.4 d</b>; Swiggy GMV-loss ₹16.96M (198 SKUs at DOH&lt;7)</dd>
+            <dt>Source</dt><dd><span class="cd">all_platform_inventory</span> (5 formats) + per-platform <span class="cd">*_inventory</span>; <span class="cd">soh-doh</span>, <span class="cd">region-doh</span>, <span class="cd">platform-expiry-alerts</span></dd>
+            <dt>Grain</dt><dd>Platform → city/facility/region → SKU/ASIN → date snapshot</dd>
+          </dl>
+          <span class="flag warnf"><span class="cd">soh-doh</span> totals=0 for non-Amazon platforms (use region-doh)</span>
+        </div>
+      </article>
+
+      <!-- 7 MARKETING -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">7</span><h3>Marketing</h3><span class="tag tag-spend">Spend</span></div>
+        <div class="body">
+          <p class="purpose">Demand generation &amp; pricing: ad spend, ROAS/ACOS, coupons, brand-fund, and the competitive price/margin guardrails (incl. the price-match engine).</p>
+          <dl>
+            <dt>Metrics</dt><dd>ROAS · ACOS · NTB · coupon redemptions · brand-fund · ASP vs MRP vs competitor</dd>
+            <dt>Numbers</dt><dd>Spend <b>₹25.3M</b> → sales <b>₹354.2M</b> (~14× ROAS); Zepto 18.7×; coupons ₹948k / 44,257 redemptions</dd>
+            <dt>Source</dt><dd><span class="cd">*_ads</span>, <span class="cd">*_brandfund</span>, <span class="cd">amazon_coupon</span>, <span class="cd">amazon_price_data</span></dd>
+            <dt>Grain</dt><dd>Platform → campaign → (ad-group → ASIN) → date</dd>
+          </dl>
+          <span class="flag warnf">Only Amazon dashboards render live; others server-gated</span>
+        </div>
+      </article>
+
+      <!-- 8 DISTRIBUTOR -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">8</span><h3>Distributor</h3><span class="tag tag-supply">Supply</span></div>
+        <div class="body">
+          <p class="purpose">Who fulfils Jivo's POs and how well — the third-party distributors (and JM itself) scored on fill-rate, miss and commission.</p>
+          <dl>
+            <dt>Metrics</dt><dd>vendor fill-rate (filled÷ordered L) · commission · lead-time · item_status mix</dd>
+            <dt>Numbers</dt><dd>Best EVARA <b>90.9%</b>, ANTIZE 86.7%; big-volume vendors mediocre (56–70%); ≈₹39M total commission</dd>
+            <dt>Source</dt><dd><span class="cd">master_po.vendor_new</span>; only roll-up is platform-grained <span class="cd">fulfilment-health</span></dd>
+            <dt>Grain</dt><dd>Vendor → format → SKU → PO line</dd>
+          </dl>
+          <span class="flag">No native vendor-level dashboard — scorecard computed from rows</span>
+        </div>
+      </article>
+
+      <!-- 9 DATA -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">9</span><h3>Data</h3><span class="tag tag-found">Foundation</span></div>
+        <div class="body">
+          <p class="purpose">The raw foundation: the 41 source tables every page is built from, each with its <span class="cd">table-columns</span> schema + sample row. The SSOT, made browsable.</p>
+          <dl>
+            <dt>Contents</dt><dd>Secondary <span class="cd">*Sec</span> · Primary <span class="cd">total_po</span>/<span class="cd">_zbs</span>/<span class="cd">master_po</span> · <span class="cd">*_inventory</span> · <span class="cd">*_ads</span> + master products/fcs</dd>
+            <dt>Key fact</dt><dd><b>master_po = total_po ∪ total_po_zbs</b> (8,239 + 35,842 = 44,081), enriched with 40 derived cols</dd>
+            <dt>CLI</dt><dd><span class="cd">tables counts | columns | data | distinct</span></dd>
+            <dt>Grain</dt><dd>PO-line / sku×city×date / date×sku×location — varies per table</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- 10 UPLOADERS -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">10</span><h3>Uploaders</h3><span class="tag tag-found">Foundation</span></div>
+        <div class="body">
+          <p class="purpose">How data gets <em>into</em> the app — the write-only ingestion screens where ops push platform exports (CSV/Excel) into the database. Source of everything.</p>
+          <dl>
+            <dt>Ingests</dt><dd>Secondary sales → <span class="cd">*Sec</span>; POs → <span class="cd">total_po*</span>; inventory → <span class="cd">*_inventory</span>; ads/coupon/brand-fund; targets</dd>
+            <dt>Evidence</dt><dd>The <span class="cd">Uploader</span> user group + the <span class="cd">import</span> command (no read endpoint — write-only)</dd>
+            <dt>Mirror</dt><dd>The read-in opposite of Reports (read-out)</dd>
+          </dl>
+          <span class="flag warnf">Zero captured payloads; freshness gates everything (≈7-day upload lag)</span>
+        </div>
+      </article>
+
+      <!-- 11 INSIGHTS -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">11</span><h3>Insights</h3><span class="tag tag-lens">Lens</span></div>
+        <div class="body">
+          <p class="purpose">The analytical lens — computed views that slice the same Primary/Secondary/Inventory data along business questions. If Home is the headline, Insights is the body.</p>
+          <dl>
+            <dt>Dashboards</dt><dd>14 <span class="cd">dashboard</span> keys + 19 per-platform sub-dashboards (drr, pos, price, comparison, marketplace, soh-doh…)</dd>
+            <dt>Flagship</dt><dd><span class="cd">secondary-yoy-growth</span> (YoY + projection), <span class="cd">state-sales</span> (geographic sell-out), <span class="cd">category-*</span></dd>
+            <dt>Numbers</dt><dd>Top states Jun: Maharashtra 167,809 · Karnataka 125,421 · Delhi 109,108 units</dd>
+            <dt>Grain</dt><dd>Re-aggregates existing data — introduces none of its own</dd>
+          </dl>
+        </div>
+      </article>
+
+      <!-- 12 REPORTS -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">12</span><h3>Reports</h3><span class="tag tag-lens">Lens</span></div>
+        <div class="body">
+          <p class="purpose">The export / rendered surface — the same Insights numbers packaged for download or print (month-end packs, state-sales, target-vs-actual, SKU breakdowns).</p>
+          <dl>
+            <dt>Form</dt><dd>Output renderers, not distinct endpoints: <span class="cd">--json --csv --select --compact</span></dd>
+            <dt>Feeds</dt><dd>Re-renders Insights (<span class="cd">category-*</span>, <span class="cd">top-skus</span>, <span class="cd">state-sales</span>) + the Target sheet</dd>
+            <dt>Mirror</dt><dd>The read-out opposite of Uploaders</dd>
+          </dl>
+          <span class="flag warnf">No separate "reports" endpoint family — a presentation layer</span>
+        </div>
+      </article>
+
+      <!-- 13 TARGET SHEET -->
+      <article class="pcard">
+        <div class="top"><span class="pnum">13</span><h3>Target sheet</h3><span class="tag tag-lens">Lens</span></div>
+        <div class="body">
+          <p class="purpose">Where the team sets monthly volume targets and tracks actual-vs-target for <em>both</em> halves of the funnel. The one place numbers are authored in this read-only surface.</p>
+          <dl>
+            <dt>Two tracks</dt><dd><span class="cd">primary-month-targets</span> (type <b>prim</b>, source master_po) · <span class="cd">month-targets</span> (type <b>B2B</b>, source <em>secmaster</em> → actually Secondary)</dd>
+            <dt>Numbers</dt><dd>Swiggy Jun PREMIUM secondary 78,642/60,000 = <b>131%</b>; Primary COMMODITY 62,446/200,000 = 31.2%, needs DRR 22,926/day</dd>
+            <dt>Extra</dt><dd>Primary track adds run-rate pacing: <span class="cd">drr</span>, <span class="cd">require_drr</span>, <span class="cd">pending_ltr</span></dd>
+            <dt>Grain</dt><dd>Platform × item_head × month (editable)</dd>
+          </dl>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONNECTION MAP ===================== -->
+<section id="map">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">3</span>
+      <div>
+        <h2>How the pages connect</h2>
+        <p>The whole point of the app. Data flows <b>up</b> from ingestion to the roll-up, while the value chain flows <b>left-to-right</b> as the physical movement of oil and money.</p>
+      </div>
+    </div>
+
+    <div class="map">
+
+      <!-- INGEST + DATA -->
+      <div class="band">
+        <p class="band-label">Ingestion → Foundation</p>
+        <div class="flow-row">
+          <div class="mbox write" style="flex:0 0 30%">
+            <div class="mt">UPLOADERS</div>
+            <div class="ms">write-only · platform exports in · no read data</div>
+          </div>
+          <div class="harrow"><span class="lbl">ingest</span><span class="ar">→</span></div>
+          <div class="mbox accent" style="flex:1">
+            <div class="mt">DATA — 41 raw tables + schemas</div>
+            <div class="ms">master_po · *Sec · *_inventory · *_ads · total_po* — the substrate of every page</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="varrow"><span class="ar">↓</span><span class="lbl">rows aggregate up into the domain pages</span></div>
+
+      <!-- VALUE CHAIN BAND -->
+      <div class="band">
+        <p class="band-label">The value-chain spine (oil &amp; money flow →)</p>
+        <div class="flow-row">
+          <div class="mbox"><div class="mt">WELLNESS BILLING</div><div class="ms">811,616 L · ₹180/L</div></div>
+          <div class="harrow"><span class="lbl">+₹12.6</span><span class="ar">→</span></div>
+          <div class="mbox"><div class="mt">JM PRIMARY</div><div class="ms">672,739 L · ₹192.6/L</div></div>
+          <div class="harrow"><span class="lbl">+₹17.7</span><span class="ar">→</span></div>
+          <div class="mbox"><div class="mt">PRIMARY</div><div class="ms">484,975 L · ₹210.3/L</div></div>
+          <div class="harrow"><span class="lbl">+₹7.9</span><span class="ar">→</span></div>
+          <div class="mbox"><div class="mt">SECONDARY</div><div class="ms">560,048 L · ₹218.2/L</div></div>
+        </div>
+      </div>
+
+      <!-- SIDE LOOPS -->
+      <div class="side-band">
+        <div class="mbox" style="border-color:var(--commodity)">
+          <div class="mt">INVENTORY ↔ JM INVENTORY</div>
+          <div class="ms">platform open-POs debit JM's warehouse → ship → credit platform stock (the two ends of one pipe). SOH / DOH / expiry.</div>
+        </div>
+        <div class="mbox" style="border-color:var(--premium)">
+          <div class="mt">MARKETING → SECONDARY &nbsp;·&nbsp; DISTRIBUTOR ↔ PRIMARY</div>
+          <div class="ms">ad/coupon spend pulls stock through to sell-out · vendors fulfil the POs; their fill-rate <em>is</em> Primary's fill-rate.</div>
+        </div>
+      </div>
+
+      <div class="varrow"><span class="ar">↑</span><span class="lbl">Target sheet sets the numbers · everything rolls up into…</span></div>
+
+      <!-- HOME -->
+      <div class="band" style="max-width:680px">
+        <div class="mbox home">
+          <div class="mt">HOME — the roll-up</div>
+          <div class="ms">4 KPI cards (the chain) · Category Split (P/C toggle) · Top Movers · Fulfilment Health</div>
+        </div>
+      </div>
+
+      <div class="varrow"><span class="ar">↓</span><span class="lbl">same numbers, sliced &amp; packaged</span></div>
+
+      <!-- INSIGHTS + REPORTS -->
+      <div class="cols-2">
+        <div class="mbox accent"><div class="mt">INSIGHTS</div><div class="ms">analytical dashboards: category-*, top-skus, secondary-yoy-growth, state-sales, per-platform drr/pos/price…</div></div>
+        <div class="mbox accent"><div class="mt">REPORTS</div><div class="ms">exports / rendered views — --csv/--select over the same Insights + Target dashboards</div></div>
+      </div>
+
+      <div class="legend-map">
+        <span><i class="swatch" style="background:var(--green-500)"></i>Aggregation / lens</span>
+        <span><i class="swatch" style="background:var(--commodity)"></i>Stock pipe</span>
+        <span><i class="swatch" style="background:var(--premium)"></i>Spend / fulfilment loop</span>
+        <span><i class="swatch" style="border:2px dashed var(--commodity);background:#fff"></i>Write-only</span>
+      </div>
+    </div>
+
+    <!-- the connections that matter most -->
+    <div class="conn-list">
+      <div class="conn"><span class="n">1</span><b>The value chain is the spine.</b> Wellness → JM → Primary → Secondary; litres roughly constant, ₹/L rising 180→192.6→210.3→218.2. <span class="cd">primary-po-litres</span> (458,703.7 L) = <span class="cd">category-trend</span> Jun total, exactly.</div>
+      <div class="conn"><span class="n">2</span><b>Home = roll-up of Primary + Secondary + Inventory.</b> Every Home block's <span class="cd">source</span> field is one of primary / secondary / inventory; the 4 cards span the whole chain.</div>
+      <div class="conn"><span class="n">3</span><b>Category Split links every domain.</b> Premium-vs-commodity by Category→Sub-cat→Platform→SKU is the universal axis — coloured by <span class="cd">master_po</span>+<span class="cd">notifications</span> taxonomy.</div>
+      <div class="conn"><span class="n">4</span><b>Target sheet ↔ Primary &amp; Secondary.</b> <span class="cd">primary-month-targets</span> (prim) = Primary actuals + run-rate; <span class="cd">month-targets</span> (B2B/secmaster) = Secondary actuals + projection.</div>
+      <div class="conn"><span class="n">5</span><b>Distributor fills Primary → stock lands as Inventory → Marketing depletes it as Secondary → DOH triggers the next PO.</b> That loop is the spine of the supply-chain domain.</div>
+      <div class="conn"><span class="n">6</span><b>Uploaders → everything; Reports ← everything.</b> The pipeline reads <span class="cd">Uploaders → Data → domain pages → Insights → Home → Reports</span>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ENTITIES ===================== -->
+<section id="entities">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">4</span>
+      <div>
+        <h2>Key entities &amp; segmentation</h2>
+        <p>The platforms (grouped by how they behave in the data), the Premium / Commodity / Other axis with real sub-categories, and how a drill-down resolves to a single SKU.</p>
+      </div>
+    </div>
+
+    <div class="eyebrow">Platforms — 10 slugs, 3 archetypes</div>
+    <div class="ent-grid">
+      <div class="arche">
+        <h4><span class="a-badge">A</span> Vendor-central</h4>
+        <p>Runs its own PO pipeline (<span class="cd">reporting."Amazon PO"</span>) — absent from <span class="cd">master_po</span>; reconstructed from vendor-central inventory signals.</p>
+        <div class="chips"><span class="chip">amazon</span></div>
+      </div>
+      <div class="arche">
+        <h4><span class="a-badge">B</span> Quick-commerce (ZBS feed)</h4>
+        <p>POs flow through <span class="cd">total_po_zbs</span> (35,842 rows, "P…" PO ids). The growth engine of Secondary sell-out.</p>
+        <div class="chips"><span class="chip">blinkit</span><span class="chip">swiggy</span><span class="chip">zepto</span></div>
+      </div>
+      <div class="arche">
+        <h4><span class="a-badge">C</span> Marketplace-grocery</h4>
+        <p>POs flow through <span class="cd">total_po</span> (8,239 rows, "IRA…" ids, + DEAL SHARE). <b>citymall</b> &amp; <b>zomato</b> are wired but their secondary/inventory tables are empty (0 rows).</p>
+        <div class="chips"><span class="chip">bigbasket</span><span class="chip">flipkart</span><span class="chip">flipkart_grocery</span><span class="chip">jiomart</span><span class="chip empty">citymall</span><span class="chip empty">zomato</span></div>
+      </div>
+    </div>
+
+    <div class="eyebrow" style="margin-top:30px">item_head — the segmentation axis everywhere</div>
+    <div class="seg-grid">
+      <div class="seg-card prem">
+        <h5>Premium</h5>
+        <div class="desc">Value oils — carry the margin. The classifier is <b>per-SKU</b>, not per-category (premium mustard/blended exist too).</div>
+        <ul>
+          <li>Groundnut · Canola</li>
+          <li>Olive / Pomace (Jivo &amp; Sano)</li>
+          <li>Extra-Light · Extra-Virgin</li>
+          <li>Sesame · Yellow Mustard · Coconut · Ghee</li>
+        </ul>
+        <div class="mix tnum">233,402 L<span style="font-size:13px;font-weight:400"> · Jun primary</span></div>
+      </div>
+      <div class="seg-card comm">
+        <h5>Commodity</h5>
+        <div class="desc">Staples — high volume, lower ₹/L. Ship in bigger pack sizes (5L), so litres are large.</div>
+        <ul>
+          <li>Mustard Kacchi-Ghani — 104,808 L</li>
+          <li>Sunflower — 89,681 L</li>
+          <li>Soyabean — 16,010 L</li>
+          <li>Gold (blended) · Rice-bran</li>
+        </ul>
+        <div class="mix tnum">225,302 L<span style="font-size:13px;font-weight:400"> · Jun primary</span></div>
+      </div>
+      <div class="seg-card oth">
+        <h5>Other</h5>
+        <div class="desc">Non-oils — tracked in <b>units only</b>, <b>0 litres</b> by design, so always "empty" on litre charts.</div>
+        <ul>
+          <li>Seeds · Spices</li>
+          <li>Wheatgrass juices · Beverages</li>
+          <li>Honey · Basmati</li>
+        </ul>
+        <div class="mix" style="color:var(--other)">≈26,271 L<span style="font-size:13px;font-weight:400"> · the card "OTHER" gap</span></div>
+      </div>
+    </div>
+
+    <div class="drill">
+      <div class="eyebrow">SKU drill-down — the app IS detailed when you go deep</div>
+      <div class="breadcrumb">
+        <span class="bc lvl1">GROUNDNUT</span><span class="sep">›</span>
+        <span class="bc">Premium</span><span class="sep">›</span>
+        <span class="bc">Swiggy</span><span class="sep">›</span>
+        <span class="bc lvl-sku">GROUNDNUT 1L · 390730</span>
+        <span class="sep">+</span>
+        <span class="bc lvl-sku">GROUNDNUT 5L · 401502</span>
+      </div>
+      <p>Category → Sub-category → Platform → SKU (with SKU code, units, litres, by month — Apr/May/Jun).
+      The join model under it: <span class="cd">format_sku_code</span> (platform listing) → <span class="cd">sku_sap_code</span> (the FG SKU-hub, e.g. FG0000083) → <span class="cd">item</span> (e.g. "A2 GHEE 1L"); taxonomy comes from <span class="cd">master_po + notifications</span>, not master products.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FULFILMENT + GROWTH SNAPSHOTS ===================== -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Snapshot · Fulfilment Health (30-day window, 7-day lag · 2026-05-21 → 06-20)</div>
+    <div class="tablecard" style="margin-bottom:30px">
+      <table>
+        <thead>
+          <tr><th>Platform</th><th class="num">Ordered L</th><th class="num">Filled L</th><th class="num barcell">Fill-rate</th><th class="num">POs</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>ZOMATO</td><td class="num tnum">37,747</td><td class="num tnum">31,848</td><td class="num barcell"><div class="mini" style="width:84.4%"></div><span class="tnum"><b>84.4%</b></span></td><td class="num tnum">45</td></tr>
+          <tr><td>CITY MALL</td><td class="num tnum">21,028</td><td class="num tnum">17,715</td><td class="num barcell"><div class="mini" style="width:84.2%"></div><span class="tnum">84.2%</span></td><td class="num tnum">6</td></tr>
+          <tr><td>BIG BASKET</td><td class="num tnum">26,869</td><td class="num tnum">22,097</td><td class="num barcell"><div class="mini" style="width:82.2%"></div><span class="tnum">82.2%</span></td><td class="num tnum">39</td></tr>
+          <tr><td>FLIPKART GROCERY</td><td class="num tnum">22,008</td><td class="num tnum">17,806</td><td class="num barcell"><div class="mini" style="width:80.9%"></div><span class="tnum">80.9%</span></td><td class="num tnum">30</td></tr>
+          <tr><td>ZEPTO</td><td class="num tnum">94,787</td><td class="num tnum">67,847</td><td class="num barcell"><div class="mini" style="width:71.6%"></div><span class="tnum">71.6%</span></td><td class="num tnum">134</td></tr>
+          <tr><td>SWIGGY</td><td class="num tnum">222,359</td><td class="num tnum">114,430</td><td class="num barcell"><div class="mini" style="width:51.5%"></div><span class="tnum">51.5%</span></td><td class="num tnum">504</td></tr>
+          <tr><td>AMAZON</td><td class="num tnum">429,242</td><td class="num tnum">180,540</td><td class="num barcell"><div class="mini" style="width:42.1%;background:#f7dede"></div><span class="tnum" style="color:var(--bad)"><b>42.1%</b></span></td><td class="num tnum">108</td></tr>
+          <tr style="font-weight:700;background:var(--green-050)"><td>TOTAL</td><td class="num tnum">964,560</td><td class="num tnum">542,343</td><td class="num barcell"><div class="mini" style="width:56.2%"></div><span class="tnum">56.2%</span></td><td class="num tnum">1,031</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="eyebrow">Snapshot · Secondary growth (sell-out litres, anchored to June)</div>
+    <div class="tablecard">
+      <table>
+        <thead><tr><th>Year</th><th class="num">Total secondary L</th><th class="num">YoY growth</th><th>What changed</th></tr></thead>
+        <tbody>
+          <tr><td>2024</td><td class="num tnum">138,505</td><td class="num">—</td><td>only Amazon + Blinkit reporting</td></tr>
+          <tr><td>2025</td><td class="num tnum">295,936</td><td class="num"><span class="pill ok">+113.7%</span></td><td>Flipkart, BigBasket added</td></tr>
+          <tr><td>2026 (MTD)</td><td class="num tnum"><b>526,138</b></td><td class="num"><span class="pill ok">+77.8%</span></td><td>Swiggy/Zepto/FK-Grocery live · projected <b>642,901 L</b></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COVERAGE ===================== -->
+<section id="coverage">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">5</span>
+      <div>
+        <h2>What we understand — coverage map</h2>
+        <p>An honest self-audit. Every page, table and metric marked <b>Fully understood</b>, <b>Partial</b>, or <b>Unclear</b>, with a one-line reason. Pulled from each domain file's own UNDERSTANDING-COVERAGE section; where a page had none, marked conservatively.</p>
+      </div>
+    </div>
+
+    <div class="cov-controls">
+      <span class="lbl">Filter:</span>
+      <button class="fbtn active" data-f="all">All <span class="ct" id="ct-all"></span></button>
+      <button class="fbtn" data-f="ok">Fully <span class="ct" id="ct-ok"></span></button>
+      <button class="fbtn" data-f="warn">Partial <span class="ct" id="ct-warn"></span></button>
+      <button class="fbtn" data-f="bad">Unclear <span class="ct" id="ct-bad"></span></button>
+    </div>
+
+    <!-- PAGES & DASHBOARDS -->
+    <div class="cov-sub">Pages &amp; dashboards</div>
+    <div class="tablecard">
+      <table class="cov-table"><thead><tr><th style="width:230px">Object</th><th style="width:120px">Status</th><th>Why</th></tr></thead><tbody>
+        <tr data-s="warn"><td>Home</td><td><span class="pill warn">Partial</span></td><td>Composes 4 cards from 4 domains; exact card litres are owner-screenshot, not in any single dashboard.</td></tr>
+        <tr data-s="bad"><td>JM Primary</td><td><span class="pill bad">Unclear</span></td><td>Rung-2 concept clear (672,739 L @ ₹192.6); no leaf/table, <span class="cd">prim_master_po</span> empty, JM-vendor proxy fails (0 L Apr–Jun).</td></tr>
+        <tr data-s="ok"><td>Primary <span class="cd">primary__&lt;p&gt;</span></td><td><span class="pill ok">Fully</span></td><td>source=master_po; full metric vocab + summary/fill-rate windows + details/top_items/trends decoded with Swiggy numbers.</td></tr>
+        <tr data-s="warn"><td>Wellness Billing card</td><td><span class="pill warn">Partial</span></td><td>Meaning clear (rung-1 factory invoice, 811,616 L @ ₹180) but in no pulled object — can't recompute or drill.</td></tr>
+        <tr data-s="ok"><td>Secondary <span class="cd">secondary__&lt;p&gt;</span></td><td><span class="pill ok">Fully</span></td><td>Structure + PREMIUM/COMMODITY summary + top_items + detail rows parsed; units tie to raw.</td></tr>
+        <tr data-s="bad"><td>JM Inventory</td><td><span class="pill bad">Unclear</span></td><td>No <span class="cd">jm_inventory</span> table; <span class="cd">inventory-match</span> empty; JM stock only derivable.</td></tr>
+        <tr data-s="ok"><td>Inventory</td><td><span class="pill ok">Fully</span></td><td>Source tables + 3 dashboards mapped; SOH/DRR/DOH cross-checked (Amazon units 111,880 tie-out).</td></tr>
+        <tr data-s="warn"><td>Marketing</td><td><span class="pill warn">Partial</span></td><td>Amazon end fully understood; non-Amazon dashboards server-gated (tables seen, rendered page not).</td></tr>
+        <tr data-s="warn"><td>Distributor</td><td><span class="pill warn">Partial</span></td><td>Vendor scorecard fully computable from master_po, but no native distributor dashboard exists.</td></tr>
+        <tr data-s="ok"><td>Data (41-table page)</td><td><span class="pill ok">Fully</span></td><td>All 41 tables + layers (L1 raw → L2 master) + table-columns schemas catalogued.</td></tr>
+        <tr data-s="warn"><td>Uploaders</td><td><span class="pill warn">Partial</span></td><td>Existence via <span class="cd">Uploader</span> group + <span class="cd">import</span> cmd; write-only, zero captured payloads.</td></tr>
+        <tr data-s="ok"><td>Insights</td><td><span class="pill ok">Fully</span></td><td>14 dashboard keys + 19 platform sub-dashboards enumerated; re-aggregates owned data, no new source.</td></tr>
+        <tr data-s="warn"><td>Reports</td><td><span class="pill warn">Partial</span></td><td>Presentation layer (–csv/–select) over Insights + Targets; no separate "reports" endpoint captured.</td></tr>
+        <tr data-s="ok"><td>Target sheet</td><td><span class="pill ok">Fully</span></td><td>Both tracks decoded (prim/master_po vs B2B/secmaster); editable; no aggregate roll-up view.</td></tr>
+        <tr data-s="ok"><td><span class="cd">fulfilment-health</span></td><td><span class="pill ok">Fully</span></td><td>Window (30d/7d-lag), fill=filled/ordered, miss=missed/ordered verified; per-platform cross-checked.</td></tr>
+        <tr data-s="ok"><td><span class="cd">pendency</span></td><td><span class="pill ok">Fully</span></td><td>4 slices (city/distributor/sku/warehouse) + totals; Swiggy 91,033 L / 162 POs.</td></tr>
+        <tr data-s="ok"><td><span class="cd">pos</span></td><td><span class="pill ok">Fully</span></td><td>= raw master_po line viewer; populated only citymall/fk_grocery/zomato (counts match total_po).</td></tr>
+        <tr data-s="ok"><td><span class="cd">primary-po-litres</span></td><td><span class="pill ok">Fully</span></td><td>Per-format delivered ltrs; Σ≈458,704 reconciled to non-Amazon (330,257) + Amazon (128,447).</td></tr>
+        <tr data-s="ok"><td><span class="cd">primary-month-targets</span></td><td><span class="pill ok">Fully</span></td><td>source master_po; litres + DRR pacing (drr vs require_drr) decoded.</td></tr>
+        <tr data-s="ok"><td><span class="cd">month-targets</span> (B2B)</td><td><span class="pill ok">Fully</span></td><td>Re-classified: source=secmaster ⇒ a SECONDARY target (₹219/L + differing done_ltrs prove it).</td></tr>
+        <tr data-s="warn"><td><span class="cd">drr</span></td><td><span class="pill warn">Partial</span></td><td>Mechanics clear (DRR=sales/elapsed, DOH=SOH/DRR); really a Secondary/Inventory metric — full ownership W3/W1.</td></tr>
+        <tr data-s="ok"><td><span class="cd">secondary-yoy-growth</span></td><td><span class="pill ok">Fully</span></td><td>2024/25/26 + projection; sums verified to 526,138 L.</td></tr>
+        <tr data-s="ok"><td><span class="cd">state-sales</span></td><td><span class="pill ok">Fully</span></td><td>Units-only, 6 platforms, by_platform split; May 435,152 u verified.</td></tr>
+        <tr data-s="warn"><td><span class="cd">state-sales-detail</span></td><td><span class="pill warn">Partial</span></td><td>Drill template only; changelog holds the empty runtime-param template.</td></tr>
+        <tr data-s="warn"><td><span class="cd">secondary-monthly</span></td><td><span class="pill warn">Partial</span></td><td>Monthly shipped/ordered + MoM read off; only amazon/flipkart have it; ordered-def inferred.</td></tr>
+        <tr data-s="warn"><td><span class="cd">month-on-month-sale</span></td><td><span class="pill warn">Partial</span></td><td>Target + 4-month + day-pace projection clear; only bigbasket/fk_grocery; target from another domain.</td></tr>
+        <tr data-s="warn"><td><span class="cd">top-skus</span></td><td><span class="pill warn">Partial</span></td><td>Structure + values read, but <span class="cd">source:"primary"</span> ⇒ shows sell-IN, mislabelled near Secondary.</td></tr>
+        <tr data-s="bad"><td><span class="cd">category-sku-breakdown</span></td><td><span class="pill bad">Unclear</span></td><td>Schema for 10 platforms but never populated — every snapshot a single "Uncategorized" row, 0 SKUs.</td></tr>
+        <tr data-s="warn"><td><span class="cd">category-breakdown</span>/<span class="cd">-litres</span></td><td><span class="pill warn">Partial</span></td><td>Premium/commodity split clear but <span class="cd">source:"primary"</span> by default; secondary toggle owned by Home.</td></tr>
+        <tr data-s="ok"><td><span class="cd">soh-doh</span></td><td><span class="pill ok">Fully</span></td><td>Per-SKU SOH/DRR/DOH + breakdowns decoded; caveat: top-level totals=0 for non-Amazon platforms.</td></tr>
+        <tr data-s="ok"><td><span class="cd">region-doh</span></td><td><span class="pill ok">Fully</span></td><td>SOH/DOH by city/region (swiggy/zepto live); Swiggy 104,098 L over 131 cities.</td></tr>
+        <tr data-s="ok"><td><span class="cd">inventory-charts</span></td><td><span class="pill ok">Fully</span></td><td>platform_totals/city_distribution/top_products decoded; caveat: totals are cumulative not live.</td></tr>
+        <tr data-s="ok"><td><span class="cd">platform-expiry-alerts</span></td><td><span class="pill ok">Fully</span></td><td>Roll-up populated (City Mall 51,756 L, Amazon 15,794 L, Swiggy 12,326 L flagged June).</td></tr>
+        <tr data-s="bad"><td><span class="cd">inventory-match</span></td><td><span class="pill bad">Unclear</span></td><td>Returns <span class="cd">{"match":null}</span> for ALL 10 platforms — the JM↔platform reconciliation is hollow.</td></tr>
+        <tr data-s="warn"><td><span class="cd">ads__&lt;p&gt;</span> (marketing)</td><td><span class="pill warn">Partial</span></td><td>Only Amazon renders live (986 campaigns, ROAS/ACOS/NTB); other platforms' dashboards gated.</td></tr>
+        <tr data-s="ok"><td><span class="cd">coupon__amazon</span></td><td><span class="pill ok">Fully</span></td><td>795 rows; budget/clip/redemption mechanics clear (₹948k, 44,257 redemptions, item_head-tagged).</td></tr>
+        <tr data-s="warn"><td><span class="cd">price/comparison/marketplace__amazon</span></td><td><span class="pill warn">Partial</span></td><td>Price-match role clear but amazon_price_data is a 2-date snapshot; comparison flags excel_visible_match:false.</td></tr>
+      </tbody></table>
+    </div>
+
+    <!-- TABLES -->
+    <div class="cov-sub">Tables</div>
+    <div class="tablecard">
+      <table class="cov-table"><thead><tr><th style="width:230px">Table</th><th style="width:120px">Status</th><th>Why</th></tr></thead><tbody>
+        <tr data-s="ok"><td><span class="cd">master_po</span> (44,081)</td><td><span class="pill ok">Fully</span></td><td>= total_po ∪ total_po_zbs (8,239+35,842 exact); 55 cols decoded; status/item_head/brand/rate reconciled.</td></tr>
+        <tr data-s="ok"><td><span class="cd">total_po</span> (8,239)</td><td><span class="pill ok">Fully</span></td><td>Format dist verified (BIGBASKET/FK-GROC/CITYMALL/ZOMATO/DEALSHARE); "IRA…" PO ids.</td></tr>
+        <tr data-s="ok"><td><span class="cd">total_po_zbs</span> (35,842)</td><td><span class="pill ok">Fully</span></td><td>qcomm only (SWIGGY/BLINKIT/ZEPTO) = taxonomy.zbs; "P…" PO ids.</td></tr>
+        <tr data-s="ok"><td><span class="cd">prim_master_po</span> / <span class="cd">test_master_po</span></td><td><span class="pill ok">Fully</span></td><td>0 rows — confirmed unused placeholder / test scratch.</td></tr>
+        <tr data-s="ok"><td>master_po rate columns</td><td><span class="pill ok">Fully</span></td><td>Pack-scaling + landing=basic×1.05 + per-litre <span class="cd">realise</span> verified on sampled rows.</td></tr>
+        <tr data-s="ok"><td><span class="cd">swiggySec</span></td><td><span class="pill ok">Fully</span></td><td>Grain date×city×area×store×SKU; June units 122,220 ≈ dash 122,457; GMV=units×MRP verified.</td></tr>
+        <tr data-s="ok"><td><span class="cd">blinkitSec</span></td><td><span class="pill ok">Fully</span></td><td>June units 54,334 == dashboard exactly; mrp=aggregate semantics nailed.</td></tr>
+        <tr data-s="ok"><td><span class="cd">zeptoSec</span></td><td><span class="pill ok">Fully</span></td><td>Grain date×city×SKU; GMV==MRP×units verified on samples.</td></tr>
+        <tr data-s="warn"><td><span class="cd">bigbasketSec</span></td><td><span class="pill warn">Partial</span></td><td>Grain/fields clear; date_range semantics + total_sales realisation not reconciled to a dashboard.</td></tr>
+        <tr data-s="ok"><td><span class="cd">flipkartSec</span></td><td><span class="pill ok">Fully</span></td><td>gross/cancel/return/final-sale split clear; superseded by flipkart_secondary_all.</td></tr>
+        <tr data-s="ok"><td><span class="cd">flipkart_secondary_all</span></td><td><span class="pill ok">Fully</span></td><td>Enriched layer; June ltr_sold 19,286 == yoy exactly; item_head mapping inspected (junk OTHER noted).</td></tr>
+        <tr data-s="warn"><td><span class="cd">jiomartSec</span></td><td><span class="pill warn">Partial</span></td><td>Invoice/GST grain clear, but <b>stale to 2026-04-15</b>, no dashboard, excluded from yoy.</td></tr>
+        <tr data-s="warn"><td><span class="cd">amazon_sec_daily</span> / _master_view</td><td><span class="pill warn">Partial</span></td><td>ASIN×date grain + enrichment clear; only 2026-05→06 history; not reconciled to a daily dashboard.</td></tr>
+        <tr data-s="warn"><td><span class="cd">amazon_sec_range</span> / _master_view</td><td><span class="pill warn">Partial</span></td><td>Feeds Amazon yoy (195,294 L) which ties out, BUT raw rows overlapping/non-additive (naive sum 2.08M L).</td></tr>
+        <tr data-s="ok"><td><span class="cd">amazon_sec_range_margins</span></td><td><span class="pill ok">Fully</span></td><td>Simple ASIN→margin_pct lookup (Canola 5L 25%, A2 Ghee 20%); drives after-margin value.</td></tr>
+        <tr data-s="ok"><td><span class="cd">citymallSec</span> / <span class="cd">zomatoSec</span></td><td><span class="pill ok">Fully</span></td><td>0 rows confirmed (empty by design); no secondary page exists for them.</td></tr>
+        <tr data-s="bad"><td><span class="cd">SecMaster</span> (combined master)</td><td><span class="pill bad">Unclear</span></td><td>Not in the 41-table extract (server-side); its sales_amt realisation (~0.40× MRP) can't be reproduced.</td></tr>
+        <tr data-s="ok"><td><span class="cd">all_platform_inventory</span></td><td><span class="pill ok">Fully</span></td><td>174,155 rows; 5 formats (no Amazon/Flipkart) verified; content-hash grain; 19% zero-SOH; mix 64/36.</td></tr>
+        <tr data-s="ok"><td><span class="cd">amazon_inventory</span></td><td><span class="pill ok">Fully</span></td><td>Feeds soh-doh__amazon (sellable units 111,880 = dashboard); litres derived, value≠litres disambiguated.</td></tr>
+        <tr data-s="ok"><td><span class="cd">swiggy_inventory</span></td><td><span class="pill ok">Fully</span></td><td>Richest schema; DOH/shelf-life/GMV-loss/open-PO present + reconciled (719 rows, 36 facilities).</td></tr>
+        <tr data-s="ok"><td><span class="cd">blinkit_inventory</span></td><td><span class="pill ok">Fully</span></td><td>backend/frontend/total split clear (59 facilities, 53,068 latest).</td></tr>
+        <tr data-s="ok"><td><span class="cd">zepto_inventory</span> / <span class="cd">bigbasket_inventory</span></td><td><span class="pill ok">Fully</span></td><td>Straightforward SOH/units/value by city; latest snapshots computed.</td></tr>
+        <tr data-s="warn"><td><span class="cd">jiomart_inventory</span></td><td><span class="pill warn">Partial</span></td><td>Schema clear but latest near-empty (sellable=0, 22 rows, 1 RFC) — stalled-feed vs wound-down unknown.</td></tr>
+        <tr data-s="ok"><td><span class="cd">citymall_inventory</span> / <span class="cd">zomato_inventory</span></td><td><span class="pill ok">Fully</span></td><td>Empty by design (expected_empty:true).</td></tr>
+        <tr data-s="ok"><td><span class="cd">amazon_ads</span></td><td><span class="pill ok">Fully</span></td><td>50,503 rows, 986 campaigns, 55 days; ROAS verified, ACOS confirmed derived; halo/NTB understood.</td></tr>
+        <tr data-s="warn"><td><span class="cd">swiggy/zepto/blinkit/flipkart/bigbasket_ads</span></td><td><span class="pill warn">Partial</span></td><td>Spend/sales/ROAS computed, but short windows (5–11 days) + gated dashboards limit cross-platform trust.</td></tr>
+        <tr data-s="warn"><td><span class="cd">blinkit_brandfund</span></td><td><span class="pill warn">Partial</span></td><td>Spend total ₹1.69M clear; offer_type all "None", 40% rows zero — incentive mechanics not fully exposed.</td></tr>
+        <tr data-s="warn"><td><span class="cd">zepto_brandfund</span></td><td><span class="pill warn">Partial</span></td><td>100% populated, claim amounts clear; GST/cess/margin flags not fully traced.</td></tr>
+        <tr data-s="bad"><td><span class="cd">swiggy_brandfund</span></td><td><span class="pill bad">Unclear</span></td><td>Only 9% of rows have spend (₹1,178 total) — effectively unpopulated; can't validate meaning.</td></tr>
+        <tr data-s="ok"><td><span class="cd">amazon_coupon</span></td><td><span class="pill ok">Fully</span></td><td>795 rows; budget/clip/redemption mechanics clear (₹948k spent, 44,257 redemptions).</td></tr>
+        <tr data-s="warn"><td><span class="cd">amazon_price_data</span></td><td><span class="pill warn">Partial</span></td><td>Price-match role understood, but 2-date snapshot, jm_price 72% null + dirty outliers — poor series.</td></tr>
+        <tr data-s="ok"><td><span class="cd">master_po</span> (vendor lens)</td><td><span class="pill ok">Fully</span></td><td>Vendor fill/miss/commission/status all computed + reconciled (66.5% litre fill).</td></tr>
+      </tbody></table>
+    </div>
+
+    <!-- METRICS -->
+    <div class="cov-sub">Metrics</div>
+    <div class="tablecard">
+      <table class="cov-table"><thead><tr><th style="width:230px">Metric</th><th style="width:120px">Status</th><th>Why</th></tr></thead><tbody>
+        <tr data-s="ok"><td>Order/Done/Missed/Pending/DP/Projection L</td><td><span class="pill ok">Fully</span></td><td>dp=done+pending verified; projection = run-rate extrapolation.</td></tr>
+        <tr data-s="ok"><td>Fill-rate / Miss-rate</td><td><span class="pill ok">Fully</span></td><td>Verified — but THREE coexisting definitions/windows; never compare across pages without stating the window.</td></tr>
+        <tr data-s="ok"><td>Lead time</td><td><span class="pill ok">Fully</span></td><td>po_date→delivery_date; Swiggy avg ≈10.5d; per-vendor lead_time_avg.</td></tr>
+        <tr data-s="ok"><td>Premium-mix</td><td><span class="pill ok">Fully</span></td><td>P/C/O split verified; classifier is per-SKU not per-category (MUSTARD/BLENDED in both); ~51% June oils.</td></tr>
+        <tr data-s="warn"><td>Value / margin ladder ₹/L</td><td><span class="pill warn">Partial</span></td><td>Rungs 2–4 + master_po per-L steps (202→213→225) verified; rung-1 (₹180) owner-asserted, not in data.</td></tr>
+        <tr data-s="ok"><td>shipped_units / Done Qty</td><td><span class="pill ok">Fully</span></td><td>Reconciles to raw units across platforms.</td></tr>
+        <tr data-s="ok"><td>shipped_ltr / Done Liters</td><td><span class="pill ok">Fully</span></td><td>Ties out (flipkart 19,286; cross-platform 526,138) = units × pack litres.</td></tr>
+        <tr data-s="warn"><td>shipped_value / Done Value</td><td><span class="pill warn">Partial</span></td><td>= SecMaster.sales_amt ≈ 0.40× gross MRP (realised, not GMV); factor measured, formula server-side.</td></tr>
+        <tr data-s="ok"><td>per_liter_shpd (₹/L)</td><td><span class="pill ok">Fully</span></td><td>= value÷litres; ₹197–240 brackets the chain's ₹218.2/L — cross-confirms realised pricing.</td></tr>
+        <tr data-s="ok"><td>YoY / MoM growth %</td><td><span class="pill ok">Fully</span></td><td>Recomputable from yearly actuals (Blinkit 64,666→69,794 = +7.93%).</td></tr>
+        <tr data-s="ok"><td>Month-end projection</td><td><span class="pill ok">Fully</span></td><td>= actual × days_in_month ÷ elapsed_day per platform, then summed (Σ = 642,901 ✓).</td></tr>
+        <tr data-s="bad"><td>state-sales "value"</td><td><span class="pill bad">Unclear</span></td><td>Rows have units == value (no separate revenue/litres) — a unit count mislabelled "value".</td></tr>
+        <tr data-s="ok"><td>SOH / DRR / DOH</td><td><span class="pill ok">Fully</span></td><td>DOH = SOH÷DRR verified vs Amazon totals (21.4 d); per-platform &amp; per-city forms understood.</td></tr>
+        <tr data-s="ok"><td>Potential GMV loss</td><td><span class="pill ok">Fully</span></td><td>Verified per-snapshot, stock-out-driven (43% concentrated in DOH&lt;7 SKUs).</td></tr>
+        <tr data-s="warn"><td>ROAS / ACOS</td><td><span class="pill warn">Partial</span></td><td>Computable both ways; app uses avg-of-ratios (15.83 vs 11.00 ratio-of-sums) — on-screen aggregation differs.</td></tr>
+        <tr data-s="warn"><td>Brand-fund</td><td><span class="pill warn">Partial</span></td><td>Net spend clear; co-funding %/trigger mechanics + empty Swiggy feed leave gaps.</td></tr>
+        <tr data-s="ok"><td>Vendor fill-rate</td><td><span class="pill ok">Fully</span></td><td>filled÷ordered (L &amp; units) per vendor; miss decomposed into short/expired/cancelled.</td></tr>
+        <tr data-s="warn"><td>Distributor margin / commission</td><td><span class="pill warn">Partial</span></td><td>Values present (~4.5% margin, ~₹39M total) but per-unit vs % calc basis not fully pinned across formats.</td></tr>
+        <tr data-s="bad"><td>inventory-match reconciliation</td><td><span class="pill bad">Unclear</span></td><td>Returns null everywhere — the metric the JM↔platform page should expose is not produced by the app.</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ANOMALIES ===================== -->
+<section id="anomalies">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-num">6</span>
+      <div>
+        <h2>Anomalies &amp; caveats</h2>
+        <p>The app was built fast (≈1 month) and is live — powerful but with hollow corners. These are the things to know before trusting any number blind.</p>
+      </div>
+    </div>
+
+    <div class="anom-grid">
+      <div class="anom sev-high"><div class="sev">Hollow feature</div><h4>JM↔platform reconciliation is empty</h4><p><span class="cd">inventory-match</span> returns <span class="cd">{"match":null}</span> for all 10 platforms — the screen meant to reconcile JM stock vs platform stock does not actually function yet.</p></div>
+
+      <div class="anom sev-high"><div class="sev">Hollow feature</div><h4>JM Primary has no source object</h4><p>Rung-2 (672,739 L) has no leaf/table; <span class="cd">prim_master_po</span> is empty and the JM-as-vendor proxy fails (JIVO MART delivered 0 L Apr–Jun). It sits upstream of the SSOT.</p></div>
+
+      <div class="anom sev-high"><div class="sev">Never populated</div><h4>category-sku-breakdown is dormant</h4><p>Schema supports Category→Sub-cat→Platform→SKU for all 10 platforms, but every snapshot (2023→2026) is a single "Uncategorized" row with 0 SKUs.</p></div>
+
+      <div class="anom sev-high"><div class="sev">Mislabelled source</div><h4>top-skus carries source=primary</h4><p><span class="cd">top-skus</span>, <span class="cd">category-breakdown</span> and <span class="cd">category-litres</span> default to <span class="cd">source:"primary"</span> — they render sell-IN, not the sell-out you'd expect near the Secondary surface.</p></div>
+
+      <div class="anom"><div class="sev">Stale feed</div><h4>jiomartSec frozen to 2026-04-15</h4><p>JioMart secondary is ~2.5 months behind the live platforms (06-25); it has no <span class="cd">secondary__jiomart</span> page and is excluded from YoY. JioMart inventory is near-dead too (sellable=0).</p></div>
+
+      <div class="anom"><div class="sev">Empty platforms</div><h4>CityMall &amp; Zomato are shells</h4><p>Both are wired but <span class="cd">*Sec</span> and <span class="cd">*_inventory</span> tables are 0 rows (<span class="cd">expected_empty</span>). Their secondary sell-out is effectively un-tracked.</p></div>
+
+      <div class="anom sev-info"><div class="sev">Off-model</div><h4>Amazon runs a parallel PO pipeline</h4><p><span class="cd">primary__amazon.source = reporting."Amazon PO"</span>, absent from master_po/total_po/total_po_zbs. It's ⅓ of ordered litres (429k of 964k) yet has the worst fill-rate (42.1%) and can't be reconciled against the same table.</p></div>
+
+      <div class="anom"><div class="sev">Owner-asserted</div><h4>Wellness Billing isn't in the SSOT</h4><p>811,616 L @ ₹180/L (and all 4 card ₹/L) are owner-screenshot values; master_po starts below the Wellness→Jivo invoice, so the data can't recompute them.</p></div>
+
+      <div class="anom"><div class="sev">Broken roll-up</div><h4>soh-doh totals are zeroed</h4><p>Top-level <span class="cd">totals</span> read 0 for swiggy/blinkit/zepto/bigbasket (Amazon's are fine) and the four sub-keys repeat byte-identical — use <span class="cd">region-doh</span> or raw tables for those.</p></div>
+
+      <div class="anom"><div class="sev">No native view</div><h4>Distributor has no dashboard</h4><p>There is no <span class="cd">distributor__*</span> doc; the page is built ad-hoc over master_po's vendor columns, and the only roll-up is platform-grained (<span class="cd">fulfilment-health</span>), not vendor-grained.</p></div>
+
+      <div class="anom"><div class="sev">Under-fed</div><h4>amazon_price_data is thin &amp; dirty</h4><p>The price-match engine exists structurally but rests on a 2-date snapshot (192 rows); <span class="cd">jm_price</span> is null on 72% of rows with implausible outliers (A2 Ghee 1L ₹129 vs ASP ₹1,579).</p></div>
+
+      <div class="anom sev-info"><div class="sev">Definition trap</div><h4>"Value" ≠ consumer GMV</h4><p>Raw <span class="cd">*Sec</span> tables store gross MRP; dashboards' "Done Value" = <span class="cd">SecMaster.sales_amt</span> ≈ 0.40× that (realised, after margin). Summing raw GMV overstates revenue ~2.3×.</p></div>
+
+      <div class="anom"><div class="sev">Non-additive</div><h4>Amazon range views double-count</h4><p><span class="cd">amazon_sec_range_master_view</span> holds overlapping date ranges — a naive <span class="cd">SUM(shipped_litres)</span> gives 2.08M L vs the true 195,294 L. The dashboards de-overlap; raw sums must not.</p></div>
+
+      <div class="anom sev-info"><div class="sev">Gated, not broken</div><h4>Non-Amazon marketing is server-gated</h4><p>The ad/price/coupon dashboards render live only for Amazon; the underlying tables exist for all platforms but the per-platform dashboards are restricted server-side (a 400/404 is the API's choice).</p></div>
+
+      <div class="anom sev-info"><div class="sev">Lifecycle noise</div><h4>delivered_qty=0 ≠ missed</h4><p>The EXPIRED + CANCELLED tail (6,294 + 3,061 lines, ~21%) inflates "ordered". BigBasket shows 64% zero-delivered yet 82% fill — the lagged window exists precisely to strip this noise.</p></div>
+
+      <div class="anom sev-info"><div class="sev">Upload lag</div><h4>Everything trails real-world by ~a week</h4><p><span class="cd">fulfilment-health</span> bakes a 7-day lag into its window — a hint that uploads (the only way data enters) trail real POs by roughly a week. Treat "missing" recent data as upload-lag, not a model gap.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SELF ASSESSMENT ===================== -->
+<section id="assessment">
+  <div class="wrap">
+    <div class="assess">
+      <div class="eyebrow">Self-assessment</div>
+      <h2>How confident are we in this model?</h2>
+      <p style="color:#cfe9d8;max-width:74ch">This brief is built from four domain deep-dives, each independently verified against the extracted SSOT (41 tables + the app's own dashboard docs), not just restated from context. Confidence is high where numbers reconcile and lower where the data simply doesn't contain the object.</p>
+
+      <div class="confbar">
+        <div class="c"><div class="lvl hi">HIGH</div><div class="d">The data-backed core: Primary/Secondary/Inventory/Distributor mechanics, the 41 tables, the ₹/L ladder, fill-rate, SOH/DOH, premium-mix — all cross-checked and tied out.</div></div>
+        <div class="c"><div class="lvl mid">MEDIUM</div><div class="d">Marketing beyond Amazon (gated), JioMart (stale/dormant), and the realised-value (~0.40× MRP) formula that's computed server-side.</div></div>
+        <div class="c"><div class="lvl lo">LOWER</div><div class="d">JM Primary &amp; Wellness Billing (owner-screenshot rungs, not in the SSOT) and write-only Uploaders (no captured payloads).</div></div>
+      </div>
+
+      <div class="assess-cols">
+        <div>
+          <h4>What would need owner confirmation</h4>
+          <ul>
+            <li>The true source of <b>JM Primary</b> (672,739 L) — no table, vendor proxy fails. Is it an upstream stock-transfer ledger we never extracted?</li>
+            <li>Provenance of <b>Wellness Billing</b> 811,616 L @ ₹180/L — confirm it's an authoritative figure, since the SSOT can't recompute it.</li>
+            <li>Are <span class="cd">category-sku-breakdown</span> and <span class="cd">inventory-match</span> <b>intended-but-unbuilt</b>, or broken? Both are hollow today.</li>
+            <li>The <span class="cd">SecMaster.sales_amt</span> realisation rule (~0.40× MRP) — the one money figure not reproducible from raw.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>What we're sure of</h4>
+          <ul>
+            <li>The <b>value chain</b> is one flow of oil re-sold down four rungs; the <b>price ladder</b> is the reliable signal, litre counts are not monotonic.</li>
+            <li><span class="cd">master_po</span> is the join hub — Primary, Pendency, POS, both target tracks &amp; fulfilment all read it (Amazon excepted).</li>
+            <li><b>premium-mix</b> is the universal axis, classified <b>per-SKU</b>, appearing on Home, Insights, Targets &amp; Secondary.</li>
+            <li>The pipeline is <span class="cd">Uploaders → Data → domain pages → Insights → Home → Reports</span>.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>JIVO E-Com Control Tower — internal app model.</strong> All figures June 2026 unless stated; mined from the extracted SSOT, not the live app.
+    <div class="src">
+      <code>docs/app-model/home-overview.md</code>
+      <code>docs/app-model/primary.md</code>
+      <code>docs/app-model/secondary.md</code>
+      <code>docs/app-model/inventory-marketing-distributor.md</code>
+      <code>orchestrator/runs/jivolearn/shared/CONTEXT.md</code>
+      <code>registry/{tables,taxonomy}.json</code>
+    </div>
+    <p style="margin-top:14px;color:var(--ink-3)">Single self-contained file · renders offline · print-friendly. Coverage table is filterable above.</p>
+  </div>
+</footer>
+
+<script>
+/* ---- scroll-spy for the sticky nav ---- */
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var map = {};
+  links.forEach(function(a){ var id=a.getAttribute('href').slice(1); var el=document.getElementById(id); if(el) map[id]=a; });
+  var ids = Object.keys(map);
+  function onScroll(){
+    var y = window.scrollY + 90, cur = ids[0];
+    ids.forEach(function(id){ var el=document.getElementById(id); if(el && el.offsetTop<=y) cur=id; });
+    links.forEach(function(a){a.classList.remove('active');});
+    if(map[cur]) map[cur].classList.add('active');
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+
+/* ---- coverage table filter + counts ---- */
+(function(){
+  var rows = Array.prototype.slice.call(document.querySelectorAll('.cov-table tbody tr'));
+  var counts = {all:rows.length, ok:0, warn:0, bad:0};
+  rows.forEach(function(r){ counts[r.getAttribute('data-s')]++; });
+  ['all','ok','warn','bad'].forEach(function(k){ var e=document.getElementById('ct-'+k); if(e) e.textContent='('+counts[k]+')'; });
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.fbtn'));
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      var f=b.getAttribute('data-f');
+      btns.forEach(function(x){x.classList.remove('active');}); b.classList.add('active');
+      rows.forEach(function(r){ r.style.display = (f==='all'||r.getAttribute('data-s')===f)?'':'none'; });
+    });
+  });
+})();
+</script>
+</body>
+</html>

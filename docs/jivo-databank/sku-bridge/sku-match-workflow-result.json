@@ -1,0 +1,1020 @@
+{
+  "summary": "Match the 67 unmatched JIVO SKUs to ECOM scraper product canonicals; adversarially verify; output confirmed + unconfirmed for owner review",
+  "agentCount": 15,
+  "logs": [],
+  "result": {
+    "matches": [
+      {
+        "jivo": "A2 GHEE 500G",
+        "ecom": [
+          "ghegeugzhghgf5xh",
+          "ghehhzbqjbnvzggq",
+          "iomgg4yn5wgxgqcw",
+          "jivo-a2-ghee-500-ml-500ml",
+          "jivo-a2-ghee-500-ml-bilona-method-traditionally-prepared-from-a2-cow-milk-suitable-for-cooking-frying-baking-indian-recipes-rich-aroma-and-distinct-flavour-for-diverse-culinary-applications-500ml"
+        ],
+        "confidence": "high",
+        "reason": "Multiple A2 cow ghee 500ml(=500g) listings: 'A2 Cow Ghee 500ml', 'Jivo_A2_Ghee_500ml', shopsy variant, and Amazon 'Jivo A2 Ghee 500 ML' bilona-method; size matches."
+      },
+      {
+        "jivo": "BASIL SEEDS 200 GM",
+        "ecom": [
+          "edsh4zf2vbebfjuq",
+          "jivo-raw-basil-seeds-for-weight-loss-200gm-200ml",
+          "jivo-raw-basil-seeds-for-weight-loss-200gm-sabja-seed-takmuria-seeds-200g-high-fibre-and-omega-3-200ml"
+        ],
+        "confidence": "high",
+        "reason": "'Jivo Basil Seeds 200gm' plus 'Jivo Raw Basil Seeds for weight loss - 200gm (Jar Pack)' platform variants; exact 200g size."
+      },
+      {
+        "jivo": "BASIL SEEDS 800 GM",
+        "ecom": [
+          "edsh4yk7vc4zcnpu",
+          "jivo-raw-basil-seeds-for-weight-loss-sabja-seeds-tukmaria-seeds-high-in-fiber-omega3-nutrients-ideal-for-smoothies-drinks-and-baking-100-natural-vegan-glutenfree-800g-800ml"
+        ],
+        "confidence": "high",
+        "reason": "'Jivo Basil Seeds 800gm' and 'Jivo Raw Basil Seeds ... 800g'; exact 800g size."
+      },
+      {
+        "jivo": "BLACK OLIVES 3KG",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "Only black-olives listing is 'Jivo Black Sliced Olives - 470g' (470 GMS); 470g != 3KG, no 3kg pack exists."
+      },
+      {
+        "jivo": "BLUEBERRY 200ML",
+        "ecom": [
+          "blueberry-healthy-wheatgrass-juice-200ml",
+          "jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Single 200ml 'Blueberry Healthy Wheatgrass Juice (200 ml)' and 'JIVO Healthy Wheatgrass Juice with Blue Berry Flavor 200Ml'; 6PCS multipack excluded as different pack."
+      },
+      {
+        "jivo": "CANOLA 1+1+1L",
+        "ecom": [
+          "edoghersuqwaau5s",
+          "qwrgg9shsxhqyqdk",
+          "jivo-canola-cold-press-edible-oil-ideal-for-roasting-frying-baking-all-type-of-cuisines-everyday-cooking-oil-for-daily-use-pack-of-3-1-litre-e-3l",
+          "jivo-canola-cold-press-edible-oil-ideal-for-roasting-frying-baking-all-type-of-cuisines-everyday-cooking-oil-for-daily-use-pack-of-3-1-litre-e-1l",
+          "jivo-canola-oil1-litre-cold-press-canola-cold-press-edible-oil-pack-of-2-1-litre-each-3l",
+          "jivo-canola-oil1-litre-cold-press-canola-cold-press-edible-oil-pack-of-2-1-litre-each-1l"
+        ],
+        "confidence": "high",
+        "reason": "Pure-canola 3x1L bundle: 'FL-Canola oil 3L (1+1+1 LTR)', 'Canola oil 3L-shopsy (1+1+1 LTR)', 'Pack of 3 - 1 Litre each (1+1+1 LTR)', and 'Pack of 2 1L each + 1L (1+1+1 BUNDLE)' variants."
+      },
+      {
+        "jivo": "CANOLA 100ML",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "No canola oil at 100ml; only spices/coffee at 100ml (black pepper, cardamom, cumin, koffie)."
+      },
+      {
+        "jivo": "CANOLA 15L",
+        "ecom": [
+          "jivo-canola-cold-press-oilcooking-oil-15-ltr-cooking-oil-for-daily-use-recommended-by-indian-medical-association-15l",
+          "jivo-refine-canola-oil-tin-15l"
+        ],
+        "confidence": "high",
+        "reason": "Pure-canola 15L: 'JIVO Canola Cold Press Oil 15 LTR (Pack of 1)' and 'Jivo Refine Canola oil Tin (1 pc 15 L)'; excludes canola-mustard-sunflower-15L mix."
+      },
+      {
+        "jivo": "CANOLA 1L+MUSTARD 1L",
+        "ecom": [
+          "edoghesnhffugqb9",
+          "qwrgg9uacyscuxk9",
+          "jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-1l",
+          "jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-2l"
+        ],
+        "confidence": "high",
+        "reason": "Exact same 1+1L bundle: internal 'FL-Canola1L+Mustard1L', 'Canola1L+Mustard1L-shopsy', and Amazon 'Jivo Kachi Ghani Mustard Oil & Cold Pressed Canola Oil 1L Each (Pack of 2)'."
+      },
+      {
+        "jivo": "CANOLA 1L+SOYABEAN 1L+MUSTARD 1L",
+        "ecom": [
+          "edoggy5kcr8s7shk",
+          "qwrgjfz8m4eggs5f"
+        ],
+        "confidence": "high",
+        "reason": "Exact 3-bottle 1+1+1L bundle: internal 'FL-Canola1L+Soyabean1L+Mustard1L' and 'Canola1L+Soyabean1L+Mustard1L-shopsy'."
+      },
+      {
+        "jivo": "CANOLA 2L",
+        "ecom": [
+          "jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l",
+          "jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-recommended-by-indian-medical-association-2l"
+        ],
+        "confidence": "high",
+        "reason": "Single 2L Canola bottle matches 'Jivo Canola oil 2 Litre Cold Press' / 'Jivo Cold Pressed Canola Oil 2L (2 LTR)'; the 2x1L combo listings belong to Canola 1+1L instead."
+      },
+      {
+        "jivo": "CANOLA 5+1L",
+        "ecom": [
+          "edofrwtzzubgdj3q",
+          "qwrgemqgrdx7btj6",
+          "edohhxabmq3jvfsr",
+          "edohhzbqb9p4z6wm",
+          "jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-5l",
+          "jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l",
+          "jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-6l",
+          "jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l",
+          "jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-6l"
+        ],
+        "confidence": "high",
+        "reason": "Canola 5L+Canola 1L bundle: internal 'Canola 5+1L', 'Canola 5+1L_Shopsy', 'Jivo_Canola_Oil_5+1L', and Amazon 'Canola Cold Pressed Edible Oil 5 Litres with 1 Litre (5+1 LTR)' variants."
+      },
+      {
+        "jivo": "CANOLA 5+2L",
+        "ecom": [
+          "qwrggbfmfwgwuwtj",
+          "jivo-canola-refined-edible-oils-52-ltr-7l",
+          "jivo-canola-refined-edible-oils-52-ltr-2l"
+        ],
+        "confidence": "high",
+        "reason": "Canola 5+2L bundle: 'Canola 5+2L-shopsy (5+2 LTR)' and Amazon 'Jivo Canola Refined Edible Oils 5+2 Ltr (5 + 2 LTR)'."
+      },
+      {
+        "jivo": "CANOLA 5L + SOYABEAN 5L",
+        "ecom": [
+          "edoggx8c5qad2mpp",
+          "jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-5l",
+          "jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-high-in-omega6-pufa-with-natural-antioxidant-suitable-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-na"
+        ],
+        "confidence": "high",
+        "reason": "Canola 5L+Soyabean 5L bundle: internal 'FL-Canola5L+Soyabean5L (5+5 LTR)' and Amazon 'Jivo Canola Cold Pressed Oil 5 Litres with Soyabean ... 5 Litres (5 + 5 SOYA)'."
+      },
+      {
+        "jivo": "CANOLA 5L+ SOYABEAN 1L",
+        "ecom": [
+          "edoggx6sqxczkd2y",
+          "jivo-cold-pressed-canola-oil-5l-soyabean-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-5l",
+          "jivo-cold-pressed-canola-oil-5l-soyabean-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-6l"
+        ],
+        "confidence": "high",
+        "reason": "Canola 5L+Soyabean 1L bundle: internal 'FL-Canola5L+Soyabean1L (5+1 LTR)' and Amazon 'Jivo Cold Pressed Canola Oil 5L & Soyabean Oil 1L (5LTR + 1LTR BUNDLE)'; inverse Canola1L+Soyabean5L listings excluded."
+      },
+      {
+        "jivo": "CHIA SEEDS 200GM",
+        "ecom": [
+          "edsh4ygygrwrqrgk",
+          "jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-200g-200ml"
+        ],
+        "confidence": "high",
+        "reason": "200g chia seeds matches 'Jivo Chia Seeds 200gm (200 GMS)' and 'Jivo Premium Raw Chia seeds ... 200g (200 GMS)'; the 250grm and size-'na' listings excluded for size precision."
+      },
+      {
+        "jivo": "CHIASEEDS 800G",
+        "ecom": [
+          "edsh3fjv4pejdfan",
+          "jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml"
+        ],
+        "confidence": "high",
+        "reason": "Pure chia seeds at 800g: 'Chiaseed800jar (800 GMS)' and 'Jivo Premium Raw Chia seeds ... 800g (800 GMS)'; excluded mixed-seed 'Flax_Sunflower_Pumpking_Chia_800G'."
+      },
+      {
+        "jivo": "CINNAMON 100G",
+        "ecom": [
+          "scmh4h8snyfgcykm",
+          "jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml"
+        ],
+        "confidence": "high",
+        "reason": "'Cinnamon Sticks 100g (100 GMS)' and 'Jivo Organic Cinnamon Sticks Bark ... 100g (100 GMS)' match size exactly."
+      },
+      {
+        "jivo": "COLA JUICE",
+        "ecom": [
+          "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-250ml"
+        ],
+        "confidence": "medium",
+        "reason": "Only cola-flavoured juice in list: 'JIVO Healthy Wheatgrass ... Juice (Cola, 250 ml (Pack of 6))'; flavour matches but Jivo SKU gives no size to confirm."
+      },
+      {
+        "jivo": "COTTON SEED OIL",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "No cottonseed/cotton-seed edible oil in candidates; only 'cotton' hits are apparel (dhoti-kurta, sports bra)."
+      },
+      {
+        "jivo": "Canola 1+1L",
+        "ecom": [
+          "edofrxtmjgae9dct",
+          "edohyrqz2gqtmyyf",
+          "qwrgemp4tvbhrue3",
+          "qwrggazjh2pabkmh",
+          "jivo-canola-cold-pressed-soaybean-oil-na"
+        ],
+        "confidence": "high",
+        "reason": "Exact 1+1L canola bundle: 'Canola 1+1L (1+1 LTR)', 'New_Canola 1+1L-Local', 'Canola 1+1L_Shopsy', 'Canola 1+1L-shopsy' and 'JIVO Canola Cold Pressed Edible Oil 1+1 Litres (1+1 LTR)'."
+      },
+      {
+        "jivo": "DESI GHEE 1KG",
+        "ecom": [
+          "ghegwgqh84yszn6f",
+          "gheh6b93zb66sekq",
+          "jivo-desi-ghee-1-litre-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-1l",
+          "iomh8ygzuhv8dfbw"
+        ],
+        "confidence": "high",
+        "reason": "Desi ghee 1kg (list treats 1Kg=1 LTR): 'deshiGhee 1KG', 'Jivo Desi Ghee 1Kg(900G)', 'Jivo Desi Ghee 1 Litre'; 'Shopshy_Ghee_1Kg' is the generic (non-A2) shopsy 1kg; A2 Cow Ghee excluded as a different line."
+      },
+      {
+        "jivo": "DESI GHEE 500GM",
+        "ecom": [
+          "ghegwgyyfw9edubs",
+          "jivo-desi-ghee-500-ml-500ml",
+          "jivo-desi-ghee-500-ml-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-500ml"
+        ],
+        "confidence": "high",
+        "reason": "Single 500g desi ghee: 'Desi Ghee 500G (500 MLS)', 'Jivo Desi Ghee 500 Ml', 'Jivo Desi Ghee 500 ML ... (500 GMS)'; excluded 'Desi ghee 500g pack of 2' (1kg bundle)."
+      },
+      {
+        "jivo": "DESI GHEE 500KG",
+        "ecom": [
+          "ghegwgyyfw9edubs",
+          "jivo-desi-ghee-500-ml-500ml",
+          "jivo-desi-ghee-500-ml-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-500ml"
+        ],
+        "confidence": "low",
+        "reason": "'500KG' is not a real pack size; almost certainly a typo for 500G, so tentatively the single 500g desi ghee listings ('Desi Ghee 500G'); flagged low due to the size typo."
+      },
+      {
+        "jivo": "DRY FRUITS 200G",
+        "ecom": [
+          "jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml"
+        ],
+        "confidence": "high",
+        "reason": "'Jivo Dry Fruits Gift Box - 200g SBS ... (200 GMS)' is Jivo dry fruits at exact 200g; other dry-fruit boxes are 400g or sizeless."
+      },
+      {
+        "jivo": "ENERGY DRINK 200ML",
+        "ecom": [
+          "jivo-jump-energy-drink-zero-sugar-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "'JIVO Jump Energy Drink, Zero Sugar 200ml (200 MLS)' is an exact Jivo energy-drink + 200ml match."
+      },
+      {
+        "jivo": "EXTRA LIGHT 1+1+1L",
+        "ecom": [
+          "edoge5wygyxcrrmf",
+          "qwrgempjjgdryacc",
+          "edohyrpctwgrkwku",
+          "jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-3l"
+        ],
+        "confidence": "high",
+        "reason": "'Extra Light 3L (1+1+1 LTR)' plus its Shopsy/Local/Amazon 3x1L bundle variants all match the same Extra Light 1+1+1L pack."
+      },
+      {
+        "jivo": "EXTRA VIRGIN 1+1L",
+        "ecom": [
+          "edog2nmphjzh6gjc",
+          "qwrgemns9zpzgwjh",
+          "jivo-extra-virgin-olive-oil-1-litre-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-for-dressings-salad-and-soups-dips-marinades-pack-of-2-2l"
+        ],
+        "confidence": "high",
+        "reason": "'Extra Virgin 1+1L (1+1 LTR)' + Shopsy variant + Amazon 'Extra Virgin Olive Oil 1L Pack of 2 (1LTR+1LTR BUNDLE)' are the same EV 1+1L bundle."
+      },
+      {
+        "jivo": "FLAX SEEDS 400 GM",
+        "ecom": [
+          "jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml"
+        ],
+        "confidence": "high",
+        "reason": "'Jivo Flax Seeds ... 400g (400 GMS)' is exact Jivo flax seeds + 400g; the others are 200g/800g."
+      },
+      {
+        "jivo": "GROUNDNUT 5+1L",
+        "ecom": [
+          "edogw6r828yya8xa",
+          "jivo-groundnut-oil-5-1-litre-cold-pressed-groundnut-oil-cold-pressed-oil-peanut-oil-ground-nut-oil-natural-cooking-oil-chemical-free-pack-6l",
+          "jivo-cold-pressed-groundnut-peanut-oil-51-litre-6l"
+        ],
+        "confidence": "high",
+        "reason": "'Groudnut 5+1L (5+1 LTR)' + Amazon 'Groundnut Oil 5 + 1 Litre' / '5L+1L Combo (5+1 LTR)' all match the 5+1L groundnut bundle."
+      },
+      {
+        "jivo": "JEERA JUICE",
+        "ecom": [
+          "jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml",
+          "ardhcjmtxhz5hqda"
+        ],
+        "confidence": "medium",
+        "reason": "'Jivo Wheatgrass Punjabi Jeera Juice 160ml' and 'Punjabi_Masala_Jeera_160ml' are the jeera-juice product; SKU gives no size so which canonical is exact is uncertain."
+      },
+      {
+        "jivo": "JIVO POMACE 1+1+1L",
+        "ecom": [
+          "edogfyrutbcs6yhw",
+          "qwrgemrynag8t2fv",
+          "jivo-pomace-edible-olive-oil-cooking-daily-use-rich-in-mufa-low-in-saturated-fat-recommendable-for-roasting-frying-baking-all-type-of-cuisines-pet-bottles-3l"
+        ],
+        "confidence": "high",
+        "reason": "'Pomace olive oil 1+1+1L (1+1+1 LTR)' + Shopsy variant + Amazon 'Jivo Pomace ... Pack of 3 PET Bottles (1+1+1 LTR)'; excluded Sano-brand 'sano POMACE 1l+1l+1L'."
+      },
+      {
+        "jivo": "JIVO POMACE 1+1L",
+        "ecom": [
+          "edogyzhgusaddg9b",
+          "edogterwcwcgywch",
+          "edohyrrpj3h7nhhn",
+          "qwrgemqj8tqrhasy",
+          "jivo-pomace-olive-oil-1l-for-cooking-recommendable-for-roasting-dressings-salad-and-soups-dips-marinades-healthy-oil-for-daily-use-baking-all-type-of-cuisines-2l",
+          "jivo-daily-cooking-pomace-olive-oil-1-litre-rich-in-mufa-low-in-saturated-fat-2l",
+          "jivo-pomace-olive-oil-combo-2l"
+        ],
+        "confidence": "high",
+        "reason": "Pomace olive oil two-1L bundles, e.g. 'Pomace olive oil 1+1L (1+1 LTR)' and 'Jivo Pomace Olive Oil, 1L (Pack of 2) (1+1 LTR)' / 'Jivo Pomace Olive Oil Combo (1 L X 2)'."
+      },
+      {
+        "jivo": "JUMP ENERGY DRINK 200ML",
+        "ecom": [
+          "jivo-jump-energy-drink-zero-sugar-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Exact match to 'JIVO Jump Energy Drink, Zero Sugar 200ml (200 MLS)'."
+      },
+      {
+        "jivo": "LEMON 750ML",
+        "ecom": [
+          "fizzy-water-flavoured-with-lemon-750ml",
+          "jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml"
+        ],
+        "confidence": "high",
+        "reason": "Lemon fizzy water/soda 750ml: 'Fizzy Water Flavoured With Lemon (750 ml)' and 'Jivo Fizzy Soda Flavoured With Lemon 750ML'."
+      },
+      {
+        "jivo": "LEMON JUICE",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "No plain lemon juice in candidates; only lemon fizzy soda/water 750ml and wheatgrass-based Punjabi nimbu shikanji exist, neither is a lemon juice."
+      },
+      {
+        "jivo": "MUSTARD 1+1L",
+        "ecom": [
+          "edoge62hwa7ufxhw",
+          "edohysj8bzygcsbu",
+          "qwrgemqzxaywvm4m",
+          "jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommendable-for-roasting-frying-baking-all-type-of-cuisines-2l",
+          "jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-each-recommendable-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-1l"
+        ],
+        "confidence": "high",
+        "reason": "Plain/kachi-ghani mustard oil two-1L bundles, e.g. 'Mustard Oil 2L (1+1 LTR)' and 'JIVO Kachi Ghani Mustard Daily Cooking Oil 1 Litre (Pack of 2) (1LTR + 1LTR)'; excludes yellow-mustard and mixed-oil bundles."
+      },
+      {
+        "jivo": "MUSTARD 15L",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "No pure mustard 15L; only 15L items are 3-oil mixes ('canola-mustard-sunflower-15L'), not a pure-mustard same-bundle listing."
+      },
+      {
+        "jivo": "ORANGE JUICE",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "No orange product of any kind in the candidate list (wheatgrass juices come only in apple/blueberry/mango/mojito/rose/ginger-ale/cola)."
+      },
+      {
+        "jivo": "PUMPKIN SEEDS 800 GM",
+        "ecom": [
+          "edsh4zzgcgcmyvfh",
+          "jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-800g-800ml"
+        ],
+        "confidence": "high",
+        "reason": "Pure 800g pumpkin seeds: 'Jivo Pumpkin Seeds 800gm (800 GMS)' and 'Jivo Raw Pumpkin Seeds ... 800g (800 GMS)'; excludes the 4-seed Flax/Sunflower/Pumpkin/Chia 800G mix."
+      },
+      {
+        "jivo": "RICE 1KG",
+        "ecom": [
+          "jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na",
+          "ricge89buedda5u7"
+        ],
+        "confidence": "high",
+        "reason": "'Jivo Long Grain Basmati Rice - 1kg (1 KGS)' and platform 'Basmati Rice 1kg (1 KG)' both match Jivo rice at 1kg; 5kg variant excluded on size."
+      },
+      {
+        "jivo": "ROSE FLAVOR 200ML",
+        "ecom": [
+          "jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml",
+          "rose-healthy-wheatgrass-juice-200ml"
+        ],
+        "confidence": "high",
+        "reason": "'JIVO Healthy Wheatgrass Juice with Rose Flavor ... 200Ml' and 'Rose Healthy Wheatgrass Juice (200 ml)' both match the WG rose wheatgrass juice at 200ml."
+      },
+      {
+        "jivo": "ROSEMARY LEAVES 150G",
+        "ecom": [
+          "jivo-rosemary-leaves-whole-natural-no-preservatives-or-additives-ideal-for-hair-growth-herbal-tea-seasoning-and-cooking-salvia-rosmarinus-150ml"
+        ],
+        "confidence": "high",
+        "reason": "'Jivo Rosemary Leaves Whole (150g) (150 GMS)' is exact same product and size."
+      },
+      {
+        "jivo": "SANO HONEY 1KG",
+        "ecom": [
+          "hnygqtuw5db6rxqd",
+          "hnyhyrsbgkzhhfdz",
+          "sano-pure-honey-1-kg-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-1-kg-na"
+        ],
+        "confidence": "high",
+        "reason": "'Sano_honey_1KG (1 KG)', 'New_Sano_honey_1KG-Local (1 KG)' and 'Sano Pure Honey 1 kg (1 KGS)' all match Sano honey at 1kg."
+      },
+      {
+        "jivo": "SANO HONEY 500G",
+        "ecom": [
+          "hnygqtnabyzxtf6e",
+          "hnyhyrsyjpmyegux",
+          "sano-pure-honey-500g-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-500g-500ml"
+        ],
+        "confidence": "high",
+        "reason": "'Sano_honey_500g (500 GMS)', 'Sano_honey_500g-Local (500 GMS)' and 'Sano Pure Honey 500g (500 GMS)' all match Sano honey at 500g."
+      },
+      {
+        "jivo": "SANO POMACE 1+1+1L",
+        "ecom": [
+          "edogtkkpp3twkysp"
+        ],
+        "confidence": "high",
+        "reason": "'sano POMACE 1l+1l+1L (1+1+1 LTR)' is the exact Sano-brand 1+1+1L bundle; the Sano 3L single pet bottle is a different format and excluded."
+      },
+      {
+        "jivo": "SANO POMACE 1+1L",
+        "ecom": [
+          "sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l",
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l",
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-1l"
+        ],
+        "confidence": "medium",
+        "reason": "'SANO Pomace Olive Oil 1L Pet Bottle (Pack of 2) (1LTR +1LTR)' is exact 1+1L Sano; the two 'Sano Pomace Olive Oil 2L Pet Bottle (1+1 LTR)' listings carry the 1+1 LTR bundle tag (medium, title says 2L bottle)."
+      },
+      {
+        "jivo": "SANO POMACE 1L+1L",
+        "ecom": [
+          "sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l",
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l",
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-1l"
+        ],
+        "confidence": "medium",
+        "reason": "Same physical bundle as SANO POMACE 1+1L: 'SANO Pomace Olive Oil 1L Pet Bottle (Pack of 2) (1LTR +1LTR)' exact; the two 'Sano Pomace Olive Oil 2L Pet Bottle (1+1 LTR)' tagged-1+1 listings are medium."
+      },
+      {
+        "jivo": "SANO POMACE 1L+1L+1L",
+        "ecom": [
+          "edogtkkpp3twkysp"
+        ],
+        "confidence": "high",
+        "reason": "Exact brand+product+bundle match: 'sano POMACE 1l+1l+1L (1+1+1 LTR)' = Sano pomace olive oil 1+1+1L bundle."
+      },
+      {
+        "jivo": "SESAME 1L + 1L",
+        "ecom": [
+          "jivo-first-pressed-sesame-oil-1l-bottle-gingelly-oil-contains-mufa-and-omega6-pufa-natural-antioxidants-ideal-for-cooking-2l"
+        ],
+        "confidence": "high",
+        "reason": "Exact bundle match: 'Jivo First Pressed Sesame Oil ... (Pack of 2) (1LTR + 1LTR (BUNDLE))' = sesame 1L+1L; the other sesame listings are single 1L bottles."
+      },
+      {
+        "jivo": "SODA PEACH 750ML",
+        "ecom": [
+          "fizzy-water-flavoured-with-peach-750ml",
+          "jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml"
+        ],
+        "confidence": "high",
+        "reason": "'Fizzy Water Flavoured With Peach (750 ml)' = peach soda 750ml; 'Jivo DIet Fizzy Peach ... 750ml' is the same peach-soda product/size."
+      },
+      {
+        "jivo": "SOYABEAN 15L",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "No pure soyabean 15L listing exists; soyabean candidates only go to 5L/5+5L(10L)/10L, and all 15L candidates are canola/olive combos."
+      },
+      {
+        "jivo": "SUNFLOWER 15L",
+        "ecom": [],
+        "confidence": "none",
+        "reason": "No pure sunflower 15L listing; 'canola-mustard-sunflower-15L' is a 3-oil combo, and sunflower singles only reach 5L."
+      },
+      {
+        "jivo": "SUNFLOWER 2L",
+        "ecom": [
+          "edoge62esbtmbrgf",
+          "jivo-cold-pressed-chemical-free-sunflower-oil-for-roasting-frying-baking-all-types-of-cuisines-high-in-antioxidants-tasteful-and-healthy-2-litre-2l"
+        ],
+        "confidence": "high",
+        "reason": "'Sunflower 2L (2 LTR)' and 'Jivo Cold Pressed Chemical Free Sunflower Oil ... 2 Litre (2 LTR)' are single 2L sunflower bottles."
+      },
+      {
+        "jivo": "SUNFLOWER SEEDS 200 GM",
+        "ecom": [
+          "edsh5avjzcsan5p3",
+          "edsh5ynwyh26yy2g",
+          "jivo-sunflower-seeds-200g-raw-natural-sunflower-seeds-for-snacking-healthy-snack-option-ideal-for-weight-management-antioxidants-great-for-diets-nutrientrich-food-packed-with-protein-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Multiple platform variants of 'Jivo Sunflower Seeds 200gm (200 GMS)' match brand+product+size exactly."
+      },
+      {
+        "jivo": "TONIC WATER 200ML",
+        "ecom": [
+          "indian-tonic-water-200ml",
+          "jivo-indian-citric-tonic-water-premium-gt-mixer-low-calorie-flavoured-drink-100-natural-ingredients-200ml"
+        ],
+        "confidence": "high",
+        "reason": "'Indian Tonic Water (200 ml)' and 'JIVO Indian Citric Tonic Water (Pack Of 1 X 200Ml)' are the same 200ml tonic water product."
+      },
+      {
+        "jivo": "WATER 1L",
+        "ecom": [
+          "jivo-mineral-water-1l",
+          "jivo-natural-mineral-1l-1l",
+          "jivo-natural-minerals-water-mineral-water-1l"
+        ],
+        "confidence": "high",
+        "reason": "Jivo mineral/natural water at 1L: 'Jivo Mineral Water 1l', 'Natural Mineral 1L Bottle (1 LTR)', 'JIVO Natural Minerals Water (1000 ml)'"
+      },
+      {
+        "jivo": "WATER PEACH 750ML",
+        "ecom": [
+          "fizzy-water-flavoured-with-peach-750ml",
+          "jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml"
+        ],
+        "confidence": "high",
+        "reason": "Peach fizzy water 750ml: 'Fizzy Water Flavoured With Peach (750 ml)' and 'Jivo DIet Fizzy Peach Natural Spring Water - Peach, 750ml'"
+      },
+      {
+        "jivo": "WG APPLE JUICE 200 ML",
+        "ecom": [
+          "apple-healthy-wheatgrass-juice-200ml",
+          "dajh7wyzhzayakgn",
+          "jivo-healthy-wheatgrass-juice-with-apple-boosts-immunity-detox-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Apple wheatgrass juice 200ml (regular, non-SF): 'Apple Healthy Wheatgrass Juice (200 ml)', 'WheatGrass_Apple_6PCS (200 MLS)', 'JIVO Healthy Wheatgrass Juice with Apple ... 200ml'"
+      },
+      {
+        "jivo": "WG APPLE JUICE 200ML",
+        "ecom": [
+          "apple-healthy-wheatgrass-juice-200ml",
+          "dajh7wyzhzayakgn",
+          "jivo-healthy-wheatgrass-juice-with-apple-boosts-immunity-detox-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Apple wheatgrass juice 200ml (regular, non-SF): same as 'Apple Healthy Wheatgrass Juice (200 ml)' / 'WheatGrass_Apple_6PCS' / JIVO Apple 200ml"
+      },
+      {
+        "jivo": "WG BLUEBERRY 200ML",
+        "ecom": [
+          "blueberry-healthy-wheatgrass-juice-200ml",
+          "dajh7uwv7cnchsjb",
+          "jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Blueberry wheatgrass juice 200ml: 'Blueberry Healthy Wheatgrass Juice (200 ml)', 'WheatGrass_Blueberry_Juice_6PCS (200 MLS)', 'JIVO ... Blue Berry Flavor ... 200Ml'"
+      },
+      {
+        "jivo": "WG BLUEBERRY JUICE 200ML",
+        "ecom": [
+          "blueberry-healthy-wheatgrass-juice-200ml",
+          "dajh7uwv7cnchsjb",
+          "jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Blueberry wheatgrass juice 200ml: same as 'Blueberry Healthy Wheatgrass Juice (200 ml)' / Blueberry 6PCS / JIVO Blue Berry 200ml"
+      },
+      {
+        "jivo": "WG GINGER ALE 200ML",
+        "ecom": [
+          "ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml",
+          "dajh7tq57qbrq7dt",
+          "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml"
+        ],
+        "confidence": "medium",
+        "reason": "Ginger Ale wheatgrass juice 200ml; all ginger-ale listings are sugar-free only ('Ginger Ale Healthy Wheatgrass Juice Sugar Free 200ml', 'Wheatgrass_Ginger_Ale_Sugar_Free_6PCS', JIVO 'Ginger Ale Sugar Free') so likely same product despite SKU not stating SF"
+      },
+      {
+        "jivo": "WG MANGO JUICE 200ML",
+        "ecom": [
+          "mango-healthy-wheatgrass-juice-200ml",
+          "jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "Mango wheatgrass juice 200ml: 'Mango Healthy Wheatgrass Juice (200 ml)' and 'JIVO ... Mango Flavor ... 200Ml'; 500ml mango listings excluded on size"
+      },
+      {
+        "jivo": "WG MOJITO 200ML",
+        "ecom": [
+          "mojito-healthy-wheatgrass-juice-200ml",
+          "jivo-healthy-wheatgrass-juice-with-mojito-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml",
+          "dajh7vuw7j7dzn7q"
+        ],
+        "confidence": "high",
+        "reason": "\"Mojito Healthy Wheatgrass Juice (200 ml)\" and JIVO Mojito-flavor 200ml (regular, not sugar-free); dajh7vuw7j7dzn7q = Wheatgrass_Mojito_6PCS (200 MLS) is the same 200ml mojito sold as a 6-pack."
+      },
+      {
+        "jivo": "WG MOJITO SF 200ML",
+        "ecom": [
+          "mojito-healthy-wheatgrass-juice-sugar-free-200ml",
+          "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "\"Mojito Healthy Wheatgrass Juice - Sugar Free (200 ml)\" and JIVO sugar-free 200ml (Mojito Sugar Free) match the SF mojito 200ml."
+      },
+      {
+        "jivo": "WG ROSE 200ML",
+        "ecom": [
+          "rose-healthy-wheatgrass-juice-200ml",
+          "jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+        ],
+        "confidence": "high",
+        "reason": "\"Rose Healthy Wheatgrass Juice (200 ml)\" and JIVO Rose-flavor wheatgrass juice 200ml match exactly."
+      }
+    ],
+    "verdicts": [
+      {
+        "jivo": "COLA JUICE",
+        "confirmed": [],
+        "rejected": [
+          "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-250ml"
+        ],
+        "final_confidence": "high",
+        "note": "JIVO SKU \"COLA JUICE\" is a cola-flavored juice. The proposed canonical is a Jivo wheatgrass body-detoxifying/immunity-booster juice (250ml). Brand matches (Jivo) and both are juices, but the product/flavor type is entirely different (cola vs wheatgrass). Not the same product — rejected. No cola-juice candidate exists among the wheatgrass/seed/oil candidates reviewed."
+      },
+      {
+        "jivo": "DESI GHEE 500KG",
+        "confirmed": [
+          "ghegwgyyfw9edubs",
+          "jivo-desi-ghee-500-ml-500ml",
+          "jivo-desi-ghee-500-ml-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-500ml"
+        ],
+        "rejected": [],
+        "final_confidence": "high",
+        "note": "All three are Jivo Desi Ghee in the 500-size single jar. ghegwgyyfw9edubs is titled \"Desi Ghee 500G\" but normalized \"(500 MLS)\"; the long slug is titled \"500 ML\" but normalized \"(500 GMS)\" — the dataset itself treats 500g and 500ml as the same physical desi-ghee jar, so g-vs-ml labeling is not a real quantity mismatch (a strict g≠ml read would even reject candidate 1, whose own normalized size is 500 MLS — clearly unintended). No competing different-quantity 500 variant exists among the candidates, so confirming all three is safe. Brand (Jivo) and product (Desi Ghee) match exactly for all. Source: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv lines 214, 477, 478. (Other nearby ghee SKUs deliberately NOT matched: deshiGhee 1KG / Jivo Desi Ghee 1Kg / Desi ghee 500g pack of 2 are all 1KG/1L = wrong size; A2 Cow Ghee variants are a different product line.)"
+      },
+      {
+        "jivo": "JEERA JUICE",
+        "confirmed": [
+          "jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml"
+        ],
+        "rejected": [
+          "ardhcjmtxhz5hqda"
+        ],
+        "final_confidence": "medium",
+        "note": "Confirmed: jivo-wheatgrass-punjabi-jeera-juice-160ml (display \"Jivo Wheatgrass Punjabi Jeera Juice - 160ml | Tangy Cumin Flavored...\") is a direct match for JIVO SKU \"JEERA JUICE\" — Jivo brand, product literally \"Jeera Juice\", 160ml. Rejected: ardhcjmtxhz5hqda (\"Punjabi_Masala_Jeera_160ml_Pack_Of_24\") — named \"Masala Jeera\" (spiced variant), NOT \"Jeera Juice\"; the word \"Juice\" is absent and \"Masala\" added, indicating a distinct product. JIVO SKU specifies no pack size, so the product name is the discriminator (both ECOM listings are 160ml Pack-of-24 cases). Default-reject applied to the masala-named candidate. Candidates source: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv (lines 875 and 4)."
+      },
+      {
+        "jivo": "SANO POMACE 1+1L",
+        "confirmed": [
+          "sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l",
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l"
+        ],
+        "rejected": [
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-1l"
+        ],
+        "final_confidence": "medium",
+        "note": "JIVO SKU is a Sano-brand pomace olive oil 1+1L BUNDLE (two 1L bottles, total 2L). Authoritative pack field in this dataset is the parenthetical \"(... LTR)\" tag. CONFIRMED: (1) ...cuisine-2l (line 954), display \"SANO Pomace Olive Oil 1L Pet Bottle ... (1L) (Pack of 2) (1LTR +1LTR)\" = unambiguous exact 1+1L bundle. (2) ...cuis-2l (line 956), display \"Sano Pomace Olive Oil 2L Pet Bottle ... (1+1 LTR)\" — pack tag exactly equals 1+1L; the \"2L\" in the title is the bundle's total volume, and it is NOT tagged \"(2 LTR)\" as a single 2L bottle would be (medium confidence due to \"2L Pet Bottle\" title noise). REJECTED: ...cuis-1l (line 955), display \"Sano Pomace Olive Oil 2l Pet Bottle ... 1l\" — tag \"1l\" (single 1L), title says \"2l Pet Bottle\"; contradictory and not a 1+1L bundle in any reading. Note: the dataset also contains a cleaner short Sano bundle \"pomace 1l+1l (1+1 LTR)\" / \"sano POMACE 1l+1l+1L (1+1+1 LTR)\" but those were not among the proposed canonicals."
+      },
+      {
+        "jivo": "SANO POMACE 1L+1L",
+        "confirmed": [
+          "sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l"
+        ],
+        "rejected": [
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l",
+          "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-1l"
+        ],
+        "final_confidence": "high",
+        "note": "JIVO \"SANO POMACE 1L+1L\" = Sano-brand pomace olive oil, multi-bottle BUNDLE of two separate 1L bottles. All three candidates are Sano Pomace (brand+oil-type match); pack format is the discriminator. CONFIRMED: line 954 display name \"SANO Pomace Olive Oil 1L Pet Bottle ... (1L) (Pack of 2) (1LTR +1LTR)\" — exact 1L+1L two-bottle bundle. REJECTED: line 956 \"Sano Pomace Olive Oil 2L Pet Bottle ... (1+1 LTR)\" — title is a SINGLE 2L PET bottle; its \"(1+1 LTR)\" annotation contradicts the title, and the clean 1L+1L bundle already exists (candidate 1), so defaulted to reject on the conflict. REJECTED: line 955 \"Sano Pomace Olive Oil 2l Pet Bottle ... 1l\" — single 2L bottle with a 1L annotation; neither a 1L+1L bundle nor a size match. Source: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv (lines 954, 955, 956)."
+      },
+      {
+        "jivo": "WG GINGER ALE 200ML",
+        "confirmed": [
+          "ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml",
+          "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml"
+        ],
+        "rejected": [
+          "dajh7tq57qbrq7dt"
+        ],
+        "final_confidence": "high",
+        "note": "JIVO \"WG GINGER ALE 200ML\" = Jivo Wheatgrass Ginger Ale juice, single 200ml. CONFIRMED: (1) ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml = \"Ginger Ale Healthy Wheatgrass Juice Sugar Free 200ml\" — exact brand/flavor/size, single 200ml. (3) jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml — slug hides flavor but display name is \"JIVO Healthy Wheatgrass...Juice Sugar Free, 200 ml (Ginger Ale Sugar Free)\", single 200ml; confirmed via display name. Note its sibling slug ...sugar-free-200ml-200ml (line 672) is the MOJITO variant, NOT a match. REJECTED: dajh7tq57qbrq7dt = \"Wheatgrass_Ginger_Ale_Sugar_Free_6PCS (200 MLS)\" — correct brand/flavor but a 6-piece multipack bundle, not a single 200ml unit, so pack size does not match exactly. All ginger-ale wheatgrass listings are sugar-free (no non-SF ginger ale exists in the set), so the SKU's omission of \"SF\" is not a mismatch. Candidates file: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv"
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Match"
+    },
+    {
+      "type": "workflow_phase",
+      "index": 2,
+      "title": "Verify"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "match:b1",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "ae8927f3058dadcba",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782558865288,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"A2 GHEE 500G\",\"BASIL SEEDS 200 GM\",\"BASIL SEEDS 800 GM\",…",
+      "lastProgressAt": 1782559017298,
+      "tokens": 73346,
+      "toolCalls": 6,
+      "durationMs": 152010,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"A2 GHEE 500G\",\"ecom\":[\"ghegeugzhghgf5xh\",\"ghehhzbqjbnvzggq\",\"iomgg4yn5wgxgqcw\",\"jivo-a2-ghee-500-ml-500ml\",\"jivo-a2-ghee-500-ml-bilona-method-traditionally-prepared-from-a2-cow-milk-suitable-for-cooking-frying-baking-indian-recipes-rich-aroma-and-distinct-flavour-for-diverse-culinary-applications-500ml\"],\"confidence\":\"high\",\"reason\":\"Multiple A2 cow ghee 500ml(=500g) listings:…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "match:b2",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "a817555ca85156d69",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782558865289,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"CANOLA 1L+MUSTARD 1L\",\"CANOLA 1L+SOYABEAN 1L+MUSTARD 1L\"…",
+      "lastProgressAt": 1782559045201,
+      "tokens": 90569,
+      "toolCalls": 7,
+      "durationMs": 179911,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"CANOLA 1L+MUSTARD 1L\",\"ecom\":[\"edoghesnhffugqb9\",\"qwrgg9uacyscuxk9\",\"jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-1l\",\"jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-2l\"],\"confidence\":\"high\",\"reason\":\"Exact same 1+1L bundle: internal 'FL-Canola1L+Mustard1L', 'Canola1L+Mustard1L-shopsy', and Amazon 'Jivo Kachi Ghani Mustard Oil & Cold Pressed Canol…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "match:b3",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "afec8f36fc642931d",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559017300,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"CHIASEEDS 800G\",\"CINNAMON 100G\",\"COLA JUICE\",\"COTTON SEE…",
+      "lastProgressAt": 1782559121518,
+      "tokens": 42152,
+      "toolCalls": 3,
+      "durationMs": 104218,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"CHIASEEDS 800G\",\"ecom\":[\"edsh3fjv4pejdfan\",\"jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml\"],\"confidence\":\"high\",\"reason\":\"Pure chia seeds at 800g: 'Chiaseed800jar (800 GMS)' and 'Jivo Premium Raw Chia seeds ... 800g (800 GMS)'; excluded mixed-…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "match:b4",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "a19f6449d38101d3c",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559045202,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"DRY FRUITS 200G\",\"ENERGY DRINK 200ML\",\"EXTRA LIGHT 1+1+1…",
+      "lastProgressAt": 1782559196353,
+      "tokens": 70650,
+      "toolCalls": 6,
+      "durationMs": 151151,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"DRY FRUITS 200G\",\"ecom\":[\"jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml\"],\"confidence\":\"high\",\"reason\":\"'Jivo Dry Fruits Gift Box - 200g SBS ... (200 GMS)' is Jivo dry fruits at exact 200g; other dry-fruit boxes are 400g or sizeless.\"},{\"jivo\":\"ENERGY …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "match:b5",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "aad83b11926c4ce1f",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559121520,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"JIVO POMACE 1+1L\",\"JUMP ENERGY DRINK 200ML\",\"LEMON 750ML…",
+      "lastProgressAt": 1782559259127,
+      "tokens": 71711,
+      "toolCalls": 4,
+      "durationMs": 137607,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"JIVO POMACE 1+1L\",\"ecom\":[\"edogyzhgusaddg9b\",\"edogterwcwcgywch\",\"edohyrrpj3h7nhhn\",\"qwrgemqj8tqrhasy\",\"jivo-pomace-olive-oil-1l-for-cooking-recommendable-for-roasting-dressings-salad-and-soups-dips-marinades-healthy-oil-for-daily-use-baking-all-type-of-cuisines-2l\",\"jivo-daily-cooking-pomace-olive-oil-1-litre-rich-in-mufa-low-in-saturated-fat-2l\",\"jivo-pomace-olive-oil-combo-2…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "match:b6",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "ac2a93e712f2eb7e6",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559196354,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"RICE 1KG\",\"ROSE FLAVOR 200ML\",\"ROSEMARY LEAVES 150G\",\"SA…",
+      "lastProgressAt": 1782559326776,
+      "tokens": 51762,
+      "toolCalls": 4,
+      "durationMs": 130422,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"RICE 1KG\",\"ecom\":[\"jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na\",\"ricge89buedda5u7\"],\"confidence\":\"high\",\"reason\":\"'Jivo Long Grain Basmati Rice - 1kg (1 KGS)' and platform 'Basmati Rice 1kg (1 KG)' both match Jivo rice at 1kg; 5kg variant excluded on size.\"},{\"jivo\":\"ROSE FLAVOR 200ML\",\"ecom…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "match:b7",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "a851a5510e4a342c0",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559259128,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"SANO POMACE 1L+1L+1L\",\"SESAME 1L + 1L\",\"SODA PEACH 750ML…",
+      "lastProgressAt": 1782559349157,
+      "tokens": 63825,
+      "toolCalls": 4,
+      "durationMs": 90029,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"SANO POMACE 1L+1L+1L\",\"ecom\":[\"edogtkkpp3twkysp\"],\"confidence\":\"high\",\"reason\":\"Exact brand+product+bundle match: 'sano POMACE 1l+1l+1L (1+1+1 LTR)' = Sano pomace olive oil 1+1+1L bundle.\"},{\"jivo\":\"SESAME 1L + 1L\",\"ecom\":[\"jivo-first-pressed-sesame-oil-1l-bottle-gingelly-oil-contains-mufa-and-omega6-pufa-natural-antioxidants-ideal-for-cooking-2l\"],\"confidence\":\"high\",\"reason\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "match:b8",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "a15e0aba30d6cd67b",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559326778,
+      "queuedAt": 1782558865258,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"WATER 1L\",\"WATER PEACH 750ML\",\"WG APPLE JUICE 200 ML\",\"W…",
+      "lastProgressAt": 1782559382638,
+      "tokens": 35285,
+      "toolCalls": 3,
+      "durationMs": 55860,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"WATER 1L\",\"ecom\":[\"jivo-mineral-water-1l\",\"jivo-natural-mineral-1l-1l\",\"jivo-natural-minerals-water-mineral-water-1l\"],\"confidence\":\"high\",\"reason\":\"Jivo mineral/natural water at 1L: 'Jivo Mineral Water 1l', 'Natural Mineral 1L Bottle (1 LTR)', 'JIVO Natural Minerals Water (1000 ml)'\"},{\"jivo\":\"WATER PEACH 750ML\",\"ecom\":[\"fizzy-water-flavoured-with-peach-750ml\",\"jivo-diet-fizz…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "match:b9",
+      "phaseIndex": 1,
+      "phaseTitle": "Match",
+      "agentId": "a2f86125ad93c5ac8",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559349158,
+      "queuedAt": 1782558865259,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "promptPreview": "You match JIVO internal product SKUs to ECOM competitor-scraper product canonicals (the SAME real product as sold on shopping platforms).\nRead the full ECOM candidate list (TSV header: canonical<TAB>display_name) at: /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv\nMatch THIS batch of JIVO SKUs: [\"WG MOJITO 200ML\",\"WG MOJITO SF 200ML\",\"WG ROSE 200ML\"]\nJ…",
+      "lastProgressAt": 1782559382809,
+      "tokens": 30219,
+      "toolCalls": 2,
+      "durationMs": 33651,
+      "resultPreview": "{\"matches\":[{\"jivo\":\"WG MOJITO 200ML\",\"ecom\":[\"mojito-healthy-wheatgrass-juice-200ml\",\"jivo-healthy-wheatgrass-juice-with-mojito-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml\",\"dajh7vuw7j7dzn7q\"],\"confidence\":\"high\",\"reason\":\"\\\"Mojito Healthy Wheatgrass Juice (200 ml)\\\" and JIVO Mojito-flavor 200ml (regular, not sugar-free); dajh7vuw7j7dzn7q = Wheatgrass_Mojito_6PCS (200 MLS) …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "verify:COLA JUICE",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "a8f1f40571326067d",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559382827,
+      "queuedAt": 1782559382812,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "COLA JUICE",
+      "promptPreview": "Adversarially verify a product match (default to rejecting if unsure). Read ECOM display names at /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv.\nJIVO SKU: \"COLA JUICE\". Proposed ECOM canonicals: [\"jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-250ml\"].\nFor EACH proposed canonical decide if it is truly the SAME product as the JIVO SKU…",
+      "lastProgressAt": 1782559400360,
+      "tokens": 36532,
+      "toolCalls": 2,
+      "durationMs": 17532,
+      "resultPreview": "{\"jivo\":\"COLA JUICE\",\"confirmed\":[],\"rejected\":[\"jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-250ml\"],\"final_confidence\":\"high\",\"note\":\"JIVO SKU \\\"COLA JUICE\\\" is a cola-flavored juice. The proposed canonical is a Jivo wheatgrass body-detoxifying/immunity-booster juice (250ml). Brand matches (Jivo) and both are juices, but the product/flavor type is entirely different (cola vs w…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 11,
+      "label": "verify:DESI GHEE 500KG",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "ac9aa183d62f4b936",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559382829,
+      "queuedAt": 1782559382812,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "DESI GHEE 500KG = Jivo Desi Ghee, 500-size pack (the standa…",
+      "promptPreview": "Adversarially verify a product match (default to rejecting if unsure). Read ECOM display names at /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv.\nJIVO SKU: \"DESI GHEE 500KG\". Proposed ECOM canonicals: [\"ghegwgyyfw9edubs\",\"jivo-desi-ghee-500-ml-500ml\",\"jivo-desi-ghee-500-ml-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-a…",
+      "lastProgressAt": 1782559516167,
+      "tokens": 40805,
+      "toolCalls": 4,
+      "durationMs": 133338,
+      "resultPreview": "{\"jivo\":\"DESI GHEE 500KG = Jivo Desi Ghee, 500-size pack (the standard 500g/500ml desi-ghee jar; \\\"KG\\\" is a stray unit-label artifact, real quantity is 500).\",\"confirmed\":[\"ghegwgyyfw9edubs\",\"jivo-desi-ghee-500-ml-500ml\",\"jivo-desi-ghee-500-ml-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-500ml\"],\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 12,
+      "label": "verify:JEERA JUICE",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "a3089a5b37702c003",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559400361,
+      "queuedAt": 1782559382812,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "JEERA JUICE",
+      "promptPreview": "Adversarially verify a product match (default to rejecting if unsure). Read ECOM display names at /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv.\nJIVO SKU: \"JEERA JUICE\". Proposed ECOM canonicals: [\"jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily…",
+      "lastProgressAt": 1782559478663,
+      "tokens": 38911,
+      "toolCalls": 3,
+      "durationMs": 78300,
+      "resultPreview": "{\"jivo\":\"JEERA JUICE\",\"confirmed\":[\"jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml\"],\"rejected\":[\"ardhcjmtxhz5hqda\"],\"final_confidence\":\"medium\",\"note\":\"Confirmed: jivo-wheatgrass-punjabi-jeera-juice-160ml (display \\\"Jivo Wheatgrass Punjabi Jeera Juice - 160ml | Ta…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 13,
+      "label": "verify:SANO POMACE 1+1L",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "a83e63f6ce82d7976",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559478664,
+      "queuedAt": 1782559382812,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "SANO POMACE 1+1L",
+      "promptPreview": "Adversarially verify a product match (default to rejecting if unsure). Read ECOM display names at /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv.\nJIVO SKU: \"SANO POMACE 1+1L\". Proposed ECOM canonicals: [\"sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l\",\"san…",
+      "lastProgressAt": 1782559593148,
+      "tokens": 41395,
+      "toolCalls": 4,
+      "durationMs": 114483,
+      "resultPreview": "{\"jivo\":\"SANO POMACE 1+1L\",\"confirmed\":[\"sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l\",\"sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l\"],\"rejected\":[\"sano-pomace-olive-oil-2l-pet-bottle-ideal-for-fry…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 14,
+      "label": "verify:SANO POMACE 1L+1L",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "a9c655a889a102329",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559516168,
+      "queuedAt": 1782559382812,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "SANO POMACE 1L+1L",
+      "promptPreview": "Adversarially verify a product match (default to rejecting if unsure). Read ECOM display names at /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv.\nJIVO SKU: \"SANO POMACE 1L+1L\". Proposed ECOM canonicals: [\"sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l\",\"sa…",
+      "lastProgressAt": 1782559589537,
+      "tokens": 53907,
+      "toolCalls": 4,
+      "durationMs": 73369,
+      "resultPreview": "{\"jivo\":\"SANO POMACE 1L+1L\",\"confirmed\":[\"sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l\"],\"rejected\":[\"sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l\",\"sano-pomace-olive-oil-2l-pet-bottle-ideal-for-fr…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 15,
+      "label": "verify:WG GINGER ALE 200ML",
+      "phaseIndex": 2,
+      "phaseTitle": "Verify",
+      "agentId": "af762fc9b8a70c8a5",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782559589539,
+      "queuedAt": 1782559382812,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "WG GINGER ALE 200ML",
+      "promptPreview": "Adversarially verify a product match (default to rejecting if unsure). Read ECOM display names at /tmp/claude-0/-root/4fceceb7-1c85-47c9-a853-be060cf86a86/scratchpad/match/ecom_candidates.tsv.\nJIVO SKU: \"WG GINGER ALE 200ML\". Proposed ECOM canonicals: [\"ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml\",\"dajh7tq57qbrq7dt\",\"jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-fr…",
+      "lastProgressAt": 1782559658936,
+      "tokens": 39305,
+      "toolCalls": 3,
+      "durationMs": 69397,
+      "resultPreview": "{\"jivo\":\"WG GINGER ALE 200ML\",\"confirmed\":[\"ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml\",\"jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml\"],\"rejected\":[\"dajh7tq57qbrq7dt\"],\"final_confidence\":\"high\",\"note\":\"JIVO \\\"WG GINGER ALE 200ML\\\" = Jivo Wheatgrass Ginger Ale juice, single 200ml. CONFIRMED: (1) ginger-ale-healthy-wheatgrass-juice-sugar-free-200m…"
+    }
+  ],
+  "totalTokens": 780374,
+  "totalToolCalls": 59
+}
