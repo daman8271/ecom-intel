@@ -316,3 +316,67 @@
 {"platform":"amazon-fresh","secs":4475,"sweep":"2026-06-26-1500","ts":"2026-06-26T14:05:09+0530"}
 {"platform":"amazon-now","secs":2617,"sweep":"2026-06-26-1500","ts":"2026-06-26T14:48:46+0530"}
 {"platform":"blinkit","secs":3933,"sweep":"2026-06-26-1500","ts":"2026-06-26T15:54:19+0530"}
+{"platform":"flipkart-minutes","secs":83,"sweep":"2026-06-27-1200","ts":"2026-06-27T08:33:23+0530"}
+{"platform":"flipkart","secs":463,"sweep":"2026-06-27-1200","ts":"2026-06-27T08:41:06+0530"}
+{"platform":"zepto","secs":533,"sweep":"2026-06-27-1200","ts":"2026-06-27T08:49:59+0530"}
+{"platform":"amazon","secs":625,"sweep":"2026-06-27-1200","ts":"2026-06-27T09:00:24+0530"}
+{"platform":"amazon-fresh","secs":4424,"sweep":"2026-06-27-1200","ts":"2026-06-27T10:14:08+0530"}
+{"platform":"amazon-now","secs":2462,"sweep":"2026-06-27-1200","ts":"2026-06-27T10:55:10+0530"}
+{"platform":"blinkit","secs":3990,"sweep":"2026-06-27-1200","ts":"2026-06-27T12:01:40+0530"}
+{"platform":"flipkart-minutes","secs":101,"sweep":"2026-06-27-1500","ts":"2026-06-27T12:03:21+0530"}
+{"platform":"flipkart","secs":505,"sweep":"2026-06-27-1500","ts":"2026-06-27T12:11:46+0530"}
+{"platform":"zepto","secs":564,"sweep":"2026-06-27-1500","ts":"2026-06-27T12:21:10+0530"}
+{"platform":"amazon","secs":647,"sweep":"2026-06-27-1500","ts":"2026-06-27T12:31:57+0530"}
+{"platform":"amazon-fresh","secs":4482,"sweep":"2026-06-27-1500","ts":"2026-06-27T13:46:39+0530"}
+{"platform":"amazon-now","secs":2535,"sweep":"2026-06-27-1500","ts":"2026-06-27T14:28:54+0530"}
+{"platform":"blinkit","secs":4000,"sweep":"2026-06-27-1500","ts":"2026-06-27T15:35:34+0530"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-0", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-1", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-2", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-3", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-4", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-5", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-6", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-7", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-8", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-fresh", "secs": 6304, "sweep": "warmstart-pincode-20260628-9", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-0", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-1", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-2", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-3", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-4", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-5", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-6", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-7", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-8", "ts": "2026-06-28T01:05:57"}
+{"platform": "blinkit", "secs": 5604, "sweep": "warmstart-pincode-20260628-9", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-0", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-1", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-2", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-3", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-4", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-5", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-6", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-7", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-8", "ts": "2026-06-28T01:05:57"}
+{"platform": "amazon-now", "secs": 3596, "sweep": "warmstart-pincode-20260628-9", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-0", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-1", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-2", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-3", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-4", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-5", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-6", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-7", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-8", "ts": "2026-06-28T01:05:57"}
+{"platform": "zepto", "secs": 981, "sweep": "warmstart-pincode-20260628-9", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-0", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-1", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-2", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-3", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-4", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-5", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-6", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-7", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-8", "ts": "2026-06-28T01:05:57"}
+{"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-9", "ts": "2026-06-28T01:05:57"}
