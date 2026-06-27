@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 # Daily BigBasket PINCODE-WISE Jivo pull via the licensed QuickCommerce API (PAID key).
-# Pulls ONCE/day (08:00) the 92 Jivo pincodes (pincodes_jivo.json, incl. price-match pins),
-# builds the report, copies it to output/. Delivery is NOT done here — run_all.sh spools this
-# report into BOTH deadline batches (12:00 + 15:00) so it lands WITH the other platforms on
-# Telegram, and the mailer ships it on WhatsApp + Gmail (10:00 + 16:00). Single PAID key only.
+# Pulls ONCE/day (03:00) the 227 Jivo pincodes (pincodes_jivo.json, incl. price-match pins +
+# the 2026-06-28 tier-1 expansion), builds the report, copies it to output/. Delivery is NOT done
+# here — run_all.sh spools this report into the noon deadline batch (12:00) so it lands WITH the
+# other platforms on Telegram, and the mailer ships it on WhatsApp + Gmail (10:00). Single PAID key only.
 set -uo pipefail
 cd "$(dirname "$0")"
 LOG=/opt/ecom-intel/logs/bigbasket-pincode.log

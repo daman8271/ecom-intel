@@ -29,6 +29,8 @@ def main():
     verdicts = {v["city"]: v for v in wf.get("per_city", []) if isinstance(v, dict)}
     cron_diff = tload(os.path.join(OUT, "cron_diff.txt"), "(diff unavailable)")
     smoke = tload(os.path.join(OUT, "smoke.txt"), "")
+    totals = jload(os.path.join(OUT, "totals.json"), {})
+    audit = jload(os.path.join(OUT, "audit.json"), {})
 
     rows = []
     tot_real = tot_anchor = was_tot = 0
@@ -63,6 +65,43 @@ def main():
 
     smoke_html = f'<pre class="mono">{html.escape(smoke.strip())}</pre>' if smoke.strip() else \
                  '<p class="muted">Smoke test result attached in run log.</p>'
+
+    # system-wide footprint
+    anc = totals.get("anchors_per_platform", {})
+    anc_rows = "\n".join(
+        f'<tr><td>{html.escape(k)}</td><td class="num big">{v}</td></tr>' for k, v in anc.items())
+    totals_html = f"""
+      <div class="grid2">
+        <div class="panel"><h3>🛰️ Anchors scraped per platform / day</h3>
+          <table><tr><th>Platform</th><th>Anchors</th></tr>{anc_rows}</table>
+          <p class="muted" style="margin-top:8px">Up from 332 (345 Flipkart&nbsp;Minutes / 92 BigBasket) before this run.</p>
+        </div>
+        <div class="panel"><h3>🌍 Total coverage (whole system)</h3>
+          <div style="font-size:46px;font-weight:800;color:var(--g);letter-spacing:-1.5px;line-height:1.1">{totals.get('total_covered','—')}</div>
+          <p class="muted">unique real pincodes now covered &nbsp;·&nbsp; was {totals.get('total_before','—')} &nbsp;·&nbsp; <b class="" style="color:var(--g2)">+{totals.get('net_new','—')} net-new</b> this run</p>
+        </div>
+      </div>"""
+
+    # independent audit
+    if audit:
+        v = audit.get("verdict", "—")
+        vc = {"ALL-CORRECT": "#15803d", "PASS": "#15803d", "FAULTS FOUND": "#b45309", "FAIL": "#b91c1c"}.get(v, "#15803d")
+        checks = "".join(
+            f'<tr><td>{html.escape(c.get("check",""))}</td>'
+            f'<td>{verdict_chip(c.get("status","—"))}</td>'
+            f'<td class="muted">{html.escape(c.get("evidence",""))}</td></tr>'
+            for c in audit.get("checks", []))
+        faults = audit.get("faults", [])
+        faults_html = ("<ul>" + "".join(f"<li>{html.escape(str(x))}</li>" for x in faults) + "</ul>") \
+            if faults else '<p class="muted">None found.</p>'
+        audit_html = f"""
+      <h2>Independent audit (separate Opus agent)</h2>
+      <p><span class="badge" style="background:{vc}">VERDICT: {html.escape(str(v))}</span></p>
+      <table><tr><th>Check</th><th>Result</th><th>Evidence</th></tr>{checks}</table>
+      <h3 style="margin-top:16px;font-size:14.5px">Faults</h3>{faults_html}
+      <p class="muted">{html.escape(str(audit.get('summary','')))}</p>"""
+    else:
+        audit_html = '<h2>Independent audit</h2><p class="muted">Audit running…</p>'
 
     doc = f"""<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -130,6 +169,9 @@ def main():
   <p class="muted" style="margin-top:8px">"New anchors" is what actually gets scraped each run; "new pincodes" is the
   real-world coverage those anchors represent. Hyderabad / Chennai / Ahmedabad went from <b>2 each</b> to full city coverage.</p>
 
+  <h2>System-wide footprint</h2>
+  {totals_html}
+
   <h2>What was done</h2>
   <div class="grid2">
     <div class="panel"><h3>📍 Data &amp; coverage</h3><ul>
@@ -155,6 +197,8 @@ def main():
   </ul>
   {smoke_html}
   </div>
+
+  {audit_html}
 
   <h2>Cron change (exact)</h2>
   <pre class="mono">{html.escape(cron_diff.strip())}</pre>

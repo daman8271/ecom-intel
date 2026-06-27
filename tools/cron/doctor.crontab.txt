@@ -11,31 +11,31 @@
 # Cron runs in system-local time = IST (the live `0 18` guardian is 18:00 IST — confirmed).
 #
 # ============================ LIVE SWEEPS + GUARDIAN (UNCHANGED) ============================
-# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY (3.5h lead window:
-# fire = slot − 3h30m, LEAD_MAX=12600). The script predicts the serial chain's
+# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY (lead window up to ~7.5h:
+# fire = 04:00, LEAD_MAX=27000). The script predicts the serial chain's
 # runtime from history (predict_lead.py), sleeps until <slot> - predicted_lead,
 # runs ./run_all.sh with DEFER_DELIVERY=1, and send_batch.py holds every
 # platform's report and delivers them as ONE batch AT the slot time ("everyone
 # comes at the timing, not starts at it"). If the chain overruns, the batch goes
 # out as soon as it's done, marked "(late by Xm)".
 
-# BigBasket pincode-wise (licensed QuickCommerce API) — runs 08:00, BEFORE the sweeps, so
+# BigBasket pincode-wise (licensed QuickCommerce API) — runs 03:00, BEFORE the sweep, so
 # result_pincode.json is fresh when build_pricematch reads it for the BigBasket column / Pin Spread.
-# Pulls the 92 Jivo-carrying pincodes (incl. price-match pins 110092/560006); ~3 min. Single PAID key.
-0 8 * * * cd /opt/ecom-intel && ./platforms/bigbasket/run_pincode.sh >> logs/cron.log 2>&1   # ecom-intel bigbasket-pincode daily
+# Pulls 227 pincodes (Jivo cities + the 2026-06-28 tier-1 expansion Hyd/Chn/Ahd/Kol/Pune; incl.
+# price-match pins 110092/560006); ~6 min. Single PAID key.
+0 3 * * * cd /opt/ecom-intel && ./platforms/bigbasket/run_pincode.sh >> logs/cron.log 2>&1   # ecom-intel bigbasket-pincode daily
 
-# 12:00 IST slot — fire 08:30, sweep starts at 12:00 - predicted lead (~08:41 on today's lead), batch lands AT 12:00.
-30 8 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
-
-# 15:00 IST slot — fire 11:30, same mechanics, batch lands AT 15:00.
-30 11 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 15:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 15:00
+# 12:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28). Fire 04:00; sweep
+# starts at 12:00 - predicted lead (~05:51 on the ~467-anchor chain) and the batch lands AT 12:00.
+# LEAD_MAX=27000 (7.5h ceiling) covers the longer chain after the tier-1 pincode expansion.
+0 4 * * * cd /opt/ecom-intel && LEAD_MAX=27000 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
 # 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).
 0 18 * * * cd /opt/ecom-intel && ./tools/guardian_daily.sh >> logs/guardian.log 2>&1   # ecom-intel guardian-daily (paused w/ sweeps; un-pause together)
 
 # ================================ ECOM DOCTOR (ADDITIVE) ====================================
-# Self-healing watchdog. After BOTH daily sweeps have landed (12:00 + 15:00) and the 18:00
+# Self-healing watchdog. After the daily noon sweep has landed (12:00) and the 18:00
 # guardian deep-dive has run, the doctor gathers deterministic health signals
 # (tools/cron/health_snapshot.py) and — ONLY if something is wrong — invokes a bounded headless
 # Claude agent (tools/cron/doctor_prompt.md + the vetted tools/cron/safe_fixes/ menu) to
@@ -43,12 +43,12 @@
 # pushes, only runs when ECOM_DOCTOR_ENABLE=1 (kill switch = unset it in secrets.env), and is
 # flock-guarded so two doctors never overlap. A doctor crash can NEVER touch the sweeps above.
 #
-# WHY 18:30 daily: it must see the WHOLE day — both sweep batches (15:00 + its post-batch tail
-# done ~15:01) AND the 18:00 guardian's fresh health-<date>.md. 18:30 is the first slot strictly
+# WHY 18:30 daily: it must see the WHOLE day — the noon sweep batch (12:00 + its post-batch tail)
+# AND the 18:00 guardian's fresh health-<date>.md. 18:30 is the first slot strictly
 # after the guardian finishes (guardian is read-only/seconds), so the doctor reads the complete,
 # settled signal set. The headline signal it exists to catch — a platform HELD N sweeps in a row
-# (the 2-day silent flipkart/zepto false-positive hold) — is only fully visible once both of the
-# day's sweeps are in reviews/.
+# (the 2-day silent flipkart/zepto false-positive hold) — is now visible once the
+# day's sweep is in reviews/.
 30 18 * * * cd /opt/ecom-intel && ./tools/cron/doctor.sh daily >> logs/doctor.log 2>&1   # ecom-intel doctor-daily
 
 # WHY Sunday 19:00 weekly: a 7-day trend pass (held-platform frequency, recurring SUSPECT
@@ -67,8 +67,8 @@
 #   apart) and additionally serialized by logs/.doctor.lock (flock -n in doctor.sh) — a long
 #   agent run from the daily can never be clobbered by the weekly/monthly; the later one logs
 #   "another doctor holds the lock" and exits.
-# - All three run in the EVENING (18:30–19:30), well clear of the sweep chains (morning chain
-#   ~08:41–11:06, afternoon ~11:39–14:02) and the 18:00 guardian (read-only, seconds). No
+# - All three run in the EVENING (18:30–19:30), well clear of the single sweep chain
+#   (~05:51–12:00) and the 18:00 guardian (read-only, seconds). No
 #   sweep/guardian overlap by construction.
 # - The doctor reads artifacts only and (when it acts) calls vetted safe_fixes/ scripts that are
 #   themselves lock-guarded (sweep-chain / amazon-account / .heal-<p>) and refuse during a live
@@ -87,8 +87,7 @@
 # owner-approved 2026-06-11; best-effort).
 # Each run opens its own tmux session (mailgw-am/pm-YYYYMMDD) so the send gateway is
 # observable live; it exits when done. Log: logs/mailer.log. The 10:00 run WAITS (up to 3h)
-# until ALL of today's files exist and are >=90s stable — batches land ~12:00 — so it never
-# mails a partial/stale set; the 16:00 run picks up the complete 15:00 batch immediately.
+# until ALL of today's files exist and are >=90s stable — the single batch lands ~12:00 — so it
+# never mails a partial/stale set. (The 16:00 pm run was dropped with the 15:00 sweep 2026-06-28.)
 # Telegram-alerts the owner on any failure. Built 2026-06-11.
 0 10 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "mailgw-am-$(date +\%Y\%m\%d)" './tools/mailer/mail_price_data.sh am'   # ecom-mailer price-data am
-0 16 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "mailgw-pm-$(date +\%Y\%m\%d)" './tools/mailer/mail_price_data.sh pm'   # ecom-mailer price-data pm
