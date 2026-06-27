@@ -94,3 +94,6 @@ needed to still hit target — the real point of the daily post).
 - SKU bridge: `docs/jivo-databank/sku-bridge/` (`bridge_result.json`, the match xlsx, core map).
 - App vault + lossless SSOT: repo `daman8271/jivo-intel` (`/root/jivo-intel`).
 - This journal: `docs/jivo-databank/BUILD-JOURNAL.md` (append as we go).
+
+## Phase E — 2026 deep-dive (DONE 2026-06-28)
+4 subagents deep-dived 2026 H1 (Secondary / Primary / Inventory+Marketing / Targets+big-picture) -> docs/jivo-databank/deep-dive-2026/*.md + consolidated 2026-DEEP-DIVE.md. (tmux fleet was classifier-blocked for bypass-mode spawn; used subagents instead.) Headline: strong growth + premium-mix recovering; sell-OUT healthy but June sell-IN collapsed (~70% a target-setting problem, not fill); Swiggy/Zepto winning, Flipkart-family/CityMall/Zomato declining, JioMart dead. Corrected the over-years achievement table to like-for-line method.
