@@ -4,16 +4,18 @@ canonical_sku: jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-poma
 display_name: Jivo Pomace Cooking Olive Oil 5 Litre Tin Jivo Daily Cooking Pomace Olive Oil 5l
 platforms:
   - amazon
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 15
+last_seen: 2026-06-27
+observations: 24
 min_price: 2305
-max_price: 2478
-latest_price: 2305
+max_price: 2498
+latest_price: 2498
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -25,15 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹2478 (56.1% off)
+- [[amazon-fresh]] — latest ₹2498 (55.8% off)
 - [[amazon-now]] — latest ₹2305 (59.2% off)
 
 ## Available in cities
 [[Delhi]] · [[Ghaziabad]] · [[Jaipur]] · [[Mumbai]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-2026-05-21-1330]]
 
-## Price history (15 observations)
+## Price history (24 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -52,6 +55,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302011,2305,5648,59.2,1
 2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303905,2305,5648,59.2,1
 2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400611,2305,5648,59.2,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110001,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110004,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110007,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110009,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110033,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110035,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110052,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110054,2498,5648,55.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110088,2498,5648,55.8,1
 ```
 
 ---

@@ -63,7 +63,7 @@ date,regime,below,above,match,exposure,store_violations,listings
 2026-06-24,BAU,97,27,50,8824,3125,904
 2026-06-25,BAU,97,25,48,10354,2886,904
 2026-06-26,SVD,83,66,28,7716,2568,904
-2026-06-27,SVD,71,41,63,5338,2440,904
+2026-06-27,SVD,74,41,59,5709,2444,904
 ```
 
 ## Worst recurring offenders (20)
@@ -72,11 +72,11 @@ date,regime,below,above,match,exposure,store_violations,listings
 |---|--:|--:|---|
 | [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] | 20 | 20905 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
 | [[pm-EXTRA VIRGIN 5L|EXTRA VIRGIN 5L]] | 20 | 14928 | [[amazon]] · [[flipkart]] · [[zepto]] |
-| [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] | 20 | 14021 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[zepto]] |
+| [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] | 20 | 14128 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[zepto]] |
 | [[pm-EXTRA LIGHT 1L|EXTRA LIGHT 1L]] | 20 | 9758 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[zepto]] |
 | [[pm-MUSTARD 5L|MUSTARD 5L]] | 20 | 7183 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart-minutes]] · [[zepto]] |
-| [[pm-SANO POMACE 5L|SANO POMACE 5L]] | 20 | 6680 | [[amazon]] · [[flipkart]] |
-| [[pm-JIVO POMACE 1L|JIVO POMACE 1L]] | 20 | 6073 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart-minutes]] · [[zepto]] |
+| [[pm-SANO POMACE 5L|SANO POMACE 5L]] | 20 | 6844 | [[amazon]] · [[flipkart]] |
+| [[pm-JIVO POMACE 1L|JIVO POMACE 1L]] | 20 | 6173 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart-minutes]] · [[zepto]] |
 | [[pm-EXTRA VIRGIN 1L + 1L|EXTRA VIRGIN 1L + 1L]] | 20 | 5421 | [[amazon]] · [[flipkart]] |
 | [[pm-JIVO POMACE 1L + 1L|JIVO POMACE 1L + 1L]] | 20 | 5056 | [[amazon]] · [[flipkart]] · [[zepto]] |
 | [[pm-CANOLA 5L|CANOLA 5L]] | 20 | 5035 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[zepto]] |

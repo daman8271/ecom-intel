@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-tin-5l
-display_name: JIVO Pomace Cooking Olive Oil Tin (5000 ml)
+display_name: Jivo Pomace Cooking Olive Oil Tin 5l
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-11
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Pomace Cooking Olive Oil Tin (5000 ml)**
+**Jivo Pomace Cooking Olive Oil Tin 5l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹4898

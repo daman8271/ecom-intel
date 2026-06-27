@@ -6,7 +6,7 @@ platforms:
   - amazon-fresh
 first_seen: 2026-06-27
 last_seen: 2026-06-27
-observations: 36
+observations: 56
 min_price: 1734
 max_price: 1734
 latest_price: 1734
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Jaipur]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-27-0900]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
 
-## Price history (36 observations)
+## Price history (56 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -70,6 +70,26 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-27-0900,2026-06-27,amazon-fresh,Jaipur,302024,1734,2400,27.8,1
 2026-06-27-0900,2026-06-27,amazon-fresh,Jaipur,302026,1734,2400,27.8,1
 2026-06-27-0900,2026-06-27,amazon-fresh,Jaipur,302032,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110037,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110061,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110067,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Delhi,110070,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Faridabad,121002,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Faridabad,121003,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Gurgaon,122001,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Gurgaon,122004,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Gurgaon,122010,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302001,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302013,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302015,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302016,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302018,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302020,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302021,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302023,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302024,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302026,1734,2400,27.8,1
+2026-06-27-1231,2026-06-27,amazon-fresh,Jaipur,302032,1734,2400,27.8,1
 ```
 
 ---

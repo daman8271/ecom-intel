@@ -199,12 +199,12 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-26,zepto,BELOW,SVD,239,199,199,199,-40,-16.74,58,true
 2026-06-27,amazon,BELOW,SVD,239,193,193,193,-46,-19.25,1,true
 2026-06-27,amazon-fresh,NOT_LISTED,SVD,239,,,,,,0,false
-2026-06-27,amazon-now,BELOW,SVD,239,193,188,202,-46,-19.25,6,true
+2026-06-27,amazon-now,BELOW,SVD,239,193,193,202,-46,-19.25,8,true
 2026-06-27,bigbasket,NOT_LISTED,SVD,239,,,,,,0,false
 2026-06-27,blinkit,NOT_LISTED,SVD,239,,,,,,0,false
 2026-06-27,flipkart,ABOVE,SVD,239,327,327,327,88,36.82,0,true
 2026-06-27,flipkart-minutes,NOT_LISTED,SVD,239,,,,,,0,false
-2026-06-27,zepto,BELOW,SVD,239,199,199,199,-40,-16.74,29,true
+2026-06-27,zepto,BELOW,SVD,239,199,199,199,-40,-16.74,24,true
 ```
 
 ---
