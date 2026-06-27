@@ -1,0 +1,64 @@
+{
+  "aggregate_hash_method": "sha256 over sorted list of per-file SOURCE sha256 hex digests",
+  "combined_vault": "/opt/ecom-intel/combined-vault",
+  "design_note": "Source vaults are copied verbatim, then a '## Related' wikilink layer is APPENDED to source notes that reference a known SKU/canonical/product/platform/category. Therefore DEST bytes EXCEED SOURCE bytes BY DESIGN. Zero-loss is proven per file: each source file's original bytes are preserved as an EXACT BYTE-PREFIX of its combined-vault copy (n_altered=n_truncated=0). 'bytes_match' is intentionally NOT claimed; the honest signal is original_prefix_preserved_all.",
+  "generated_at": "2026-06-27T22:07:50.906951+00:00",
+  "summary": {
+    "appended_link_layer_bytes": 1965602,
+    "combined_dest_notes": 36891,
+    "dest_bytes": 560165856,
+    "ecom_source_notes": 2141,
+    "jivo_source_notes": 34750,
+    "source_bytes": 558200254,
+    "zero_loss_ok": true
+  },
+  "tool": "/opt/ecom-intel/bin/combined_backbone.py",
+  "vaults": {
+    "ecom": {
+      "appended_link_layer_bytes": 192388,
+      "dest": {
+        "bytes": 169368376,
+        "count": 2141
+      },
+      "dest_path": "/opt/ecom-intel/combined-vault/ecom",
+      "lossless": {
+        "extra_in_dest": [],
+        "files_altered": [],
+        "files_truncated": [],
+        "missing_in_dest": [],
+        "n_altered": 0,
+        "n_truncated": 0,
+        "original_prefix_preserved_all": true
+      },
+      "source": {
+        "aggregate_sha256": "aa8cd79331f0ec6ccfde53392523fdbd1c71684c7f714abadaed09e35bef5518",
+        "bytes": 169175988,
+        "count": 2141
+      },
+      "source_path": "/opt/ecom-intel/vault"
+    },
+    "jivo": {
+      "appended_link_layer_bytes": 1773214,
+      "dest": {
+        "bytes": 390797480,
+        "count": 34750
+      },
+      "dest_path": "/opt/ecom-intel/combined-vault/jivo",
+      "lossless": {
+        "extra_in_dest": [],
+        "files_altered": [],
+        "files_truncated": [],
+        "missing_in_dest": [],
+        "n_altered": 0,
+        "n_truncated": 0,
+        "original_prefix_preserved_all": true
+      },
+      "source": {
+        "aggregate_sha256": "846dd046b8f80c37bbad5dd2ba7ebd4594b088a431429932e905216aebb5b40e",
+        "bytes": 389024266,
+        "count": 34750
+      },
+      "source_path": "/root/jivo-intel/vault"
+    }
+  }
+}

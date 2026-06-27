@@ -1,0 +1,57 @@
+---
+type: product
+product: "WG MANGO JUICE 500ML"
+sap_codes:
+  - FG0000226
+  - FG0000279
+category: "DRINKS"
+tier: OTHER
+platforms:
+  - amazon
+  - bigbasket
+tags:
+  - type/product
+  - tier/OTHER
+  - category/DRINKS
+  - platform/amazon
+  - platform/bigbasket
+---
+
+# WG MANGO JUICE 500ML
+
+Up: [[Home]]
+
+## Identity
+| Field | Value |
+|---|---|
+| Product | WG MANGO JUICE 500ML |
+| JIVO SKU / SAP code | `FG0000226`, `FG0000279` |
+| canonical_sku(s) | `jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml`, `jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml`, `mango-healthy-wheatgrass-juice-500ml` |
+| Category | [[Category - DRINKS\|DRINKS]] |
+| Sub-category | MANGO |
+| Brand | JIVO |
+| TIER | [[Tier - Other\|Other]] *(name-token derived)* |
+| Pack(s) | 500ML |
+| Bridge class | core (priced) |
+
+## Competitor-price lens
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-27).*
+
+| Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
+|---|---|---|---|---|---|---|
+| [[Platform - amazon\|amazon]] | 35 | — | — | ⚪ OOS | SVD | 2026-06-27 |
+| [[Platform - amazon\|amazon-now]] | 35 | 35 | 0 | 🟦 MATCH | SVD | 2026-06-27 |
+| [[Platform - bigbasket\|bigbasket]] | 35 | — | — | ⚪ OOS | SVD | 2026-06-27 |
+
+## JIVO lens
+*TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
+
+_OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
+
+## Connections
+Cross-vault fusion by name / SKU match:
+- **JIVO source notes:** [[sku-FG0000226]] · [[sku-FG0000279]]
+- **Ecom source notes:** [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml]] · [[jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml]] · [[mango-healthy-wheatgrass-juice-500ml]]
+- **Category:** [[Category - DRINKS]]
+- **TIER:** [[Tier - Other]]
+- **Platforms:** [[Platform - amazon]] · [[Platform - bigbasket]]

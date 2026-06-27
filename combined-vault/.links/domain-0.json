@@ -1,0 +1,344 @@
+[
+  {
+    "from": "ecom/skus/jivo-pomace-edible-olive-oil-cooking-daily-use-rich-in-mufa-low-in-saturated-fat-recommendable-for-roasting-frying-baking-all-type-of-cuisines-pet-bottles-1l.md",
+    "to": "jivo/skus/sku-FG0000028.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Pomace Edible Olive Oil Cooking Daily Use Rich In Mufa Low In Sat' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivogroundnut-oil-1-litre-1l.md",
+    "to": "jivo/skus/sku-FG0000142.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO GROUNDNUT 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-light-olive-oil-5-litre-tin-5l.md",
+    "to": "jivo/skus/sku-FG0000009.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Light Olive Oil 5 Litre Tin 5l' is JIVO EXTRA LIGHT 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l.md",
+    "to": "jivo/skus/sku-FG0000005.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Light Olive Oil 1l For Cooking Dressings Salad And Soups Di' is JIVO EXTRA LIGHT 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-light-olive-oil-3-litre-3l.md",
+    "to": "jivo/skus/sku-FG0000390.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Light Olive Oil 3 Litre 3l' is JIVO EXTRA LIGHT 3L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml.md",
+    "to": "jivo/skus/sku-FG0000164.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Virgin Olive Oil 200 Ml Pet Bottle 200ml' is JIVO EXTRA VIRGIN 200ML; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-cooking-sunflower-oil-can-4l.md",
+    "to": "jivo/skus/sku-FG0000303.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Cooking Sunflower Oil Can 4l' is JIVO SUNFLOWER 4L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-cold-pressed-edible-oil-5-litres-5l.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola Cold Pressed Edible Oil 5 Litres 5l' is JIVO CANOLA 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-first-pressed-yellow-mustard-oil-5-litre-5l.md",
+    "to": "jivo/skus/sku-FG0000385.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo First Pressed Yellow Mustard Oil 5 Litre 5l' is JIVO YELLOW MUSTARD 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l.md",
+    "to": "products/SOYABEAN 1L POUCH.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil For Daily Use 1l' is JIVO SOYABEAN 1L POUCH; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-oil1-litre-refined-pouch-cooking-oil-for-daily-use-1l.md",
+    "to": "jivo/skus/sku-FG0000021.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola oil1 Litre Refined Pouch Cooking Oil For Daily Use 1l' is JIVO CANOLA 1L POUCH; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-cold-pressed-chemical-free-sunflower-oil-for-roasting-frying-baking-all-types-of-cuisines-high-in-antioxidants-tasteful-and-healthy-1-litre-1l.md",
+    "to": "jivo/skus/sku-FG0000081.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Cold Pressed Chemical Free Sunflower Oil For Roasting Frying Baki' is JIVO SUNFLOWER 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-pomace-olive-oil-1l-for-cooking-recommendable-for-roasting-dressings-salad-and-soups-dips-marinades-healthy-oil-for-daily-use-baking-all-type-of-cuisines-1l.md",
+    "to": "jivo/skus/sku-FG0000028.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Pomace Olive Oil 1l For Cooking Recommendable For Roasting Dressi' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-cooking-oil-canola-oil-1l-bottle-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Cooking Oil - Canola Oil, 1L Bottle (1 l)' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use 1l' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-oil-refined-edible-oil-1-l-pack-of-6-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola Oil Refined Edible Oil (1 L) - Pack of 6 (1 LTR)' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-so-olive-oil-1-litre-1l.md",
+    "to": "jivo/skus/sku-FG0000228.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo So Olive Oil 1 Litre 1l' is JIVO SO OLIVE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-5-litres-5l.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO CANOLA 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-groundnut-oil-5-litre-5l.md",
+    "to": "jivo/skus/sku-FG0000143.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Groundnut Oil 5 Litre 5l' is JIVO GROUNDNUT 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-fo-1l.md",
+    "to": "products/SOYABEAN 1L POUCH.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil Fo 1l' is JIVO SOYABEAN 1L POUCH; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-virgin-olive-oil-200ml-imported-from-spain-rich-in-mufa-to-maintain-cholesterol-contains-polyphenols-cooking-oil-for-dressings-marinades-200ml.md",
+    "to": "jivo/skus/sku-FG0000164.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Virgin Olive Oil 200ml Imported From Spain Rich In Mufa To ' is JIVO EXTRA VIRGIN 200ML; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-daily-cooking-pomace-olive-oil-1-litre-rich-in-mufa-low-in-saturated-fat-1l.md",
+    "to": "jivo/skus/sku-FG0000028.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Daily Cooking Pomace Olive Oil 1 Litre Rich In Mufa Low In Satura' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivodaily-cooking-pomace-olive-oil-1-litre-1l.md",
+    "to": "jivo/skus/sku-FG0000028.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoso-olive-oil-1-litre-1l.md",
+    "to": "jivo/skus/sku-FG0000228.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO SO OLIVE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-oil-refined-edible-oil-pack-of-6-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola Oil Refined Edible Oil Pack Of 6 1l' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-daily-cooking-pomace-olive-oil-1l.md",
+    "to": "jivo/skus/sku-FG0000028.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Daily Cooking Pomace Olive Oil 1l' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest-in-saturated-fat-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use Lowest In ' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-first-pressed-sesame-oil-1-litre-ch-1l.md",
+    "to": "jivo/skus/sku-FG0000376.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo First Pressed Sesame Oil 1 Litre Ch 1l' is JIVO SESAME OIL 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-virgin-olive-oil-1-litre-1l.md",
+    "to": "products/EXTRA VIRGIN 1L.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO EXTRA VIRGIN 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-everyday-cooking-pomace-olive-oil-3-litre-3l.md",
+    "to": "jivo/skus/sku-FG0000392.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Everyday Cooking Pomace Olive Oil 3 Litre 3l' is JIVO POMACE 3L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-cooking-edible-soyabean-oil-5-litre-5l.md",
+    "to": "jivo/skus/sku-FG0000192.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Cooking Edible Soyabean Oil 5 Litre 5l' is JIVO SOYABEAN 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocooking-edible-soyabean-oil-1-litre-1l.md",
+    "to": "jivo/skus/sku-FG0000193.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO SOYABEAN 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-pomace-cooking-olive-oil-tin-5l.md",
+    "to": "jivo/skus/sku-FG0000008.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Pomace Cooking Olive Oil Tin 5l' is JIVO JIVO POMACE 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-f-1l.md",
+    "to": "products/SOYABEAN 1L POUCH.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l' is JIVO SOYABEAN 1L POUCH; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommendable-for-roasting-frying-baking-all-type-of-cuisines-1l.md",
+    "to": "jivo/skus/sku-FG0000030.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil ' is JIVO MUSTARD 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-groundnut-oil-1-litre-1l.md",
+    "to": "jivo/skus/sku-FG0000142.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Groundnut Oil 1 Litre 1l' is JIVO GROUNDNUT 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-groundnut-oil-1l.md",
+    "to": "jivo/skus/sku-FG0000142.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Groundnut Oil 1l' is JIVO GROUNDNUT 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-sunflower-oil-4-litres-4l.md",
+    "to": "jivo/skus/sku-FG0000303.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Sunflower Oil 4 Litres 4l' is JIVO SUNFLOWER 4L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-light-olive-oil-2-litre-2l.md",
+    "to": "jivo/skus/sku-FG0000064.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO EXTRA LIGHT 2L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-virgin-olive-oil-250-ml-250ml.md",
+    "to": "jivo/skus/sku-FG0000112.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Virgin Olive Oil 250 Ml 250ml' is JIVO EXTRA VIRGIN 250ML; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-first-pressed-sesame-oil-1-litre-cho-1l.md",
+    "to": "jivo/skus/sku-FG0000376.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo First Pressed Sesame Oil 1 Litre Cho 1l' is JIVO SESAME OIL 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-gold-refined-oil-1l.md",
+    "to": "jivo/skus/sku-FG0000149.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Gold Refined Oil 1l' is JIVO GOLD 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-light-olive-oil-plastic-bottle-1l.md",
+    "to": "jivo/skus/sku-FG0000005.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Light Olive Oil Plastic Bottle 1l' is JIVO EXTRA LIGHT 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-canola-cold-press-edible-oil-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Canola Cold Press Edible Oil 1l' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-rice-bran-oil-4-litre-4l.md",
+    "to": "jivo/skus/sku-FG0000383.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Rice Bran Oil 4 Litre 4l' is JIVO RICE BRAN 4L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-everyday-cooking-pomace-olive-oil-2-litre-2l.md",
+    "to": "jivo/skus/sku-FG0000114.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Everyday Cooking Pomace Olive Oil 2 Litre 2l' is JIVO JIVO POMACE 2L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-so-olive-oil-5-litre-5l.md",
+    "to": "jivo/skus/sku-FG0000229.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo So Olive Oil 5 Litre 5l' is JIVO SO OLIVE 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivofirst-pressed-yellow-mustard-oil-5-litre-5l.md",
+    "to": "jivo/skus/sku-FG0000385.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO YELLOW MUSTARD 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-soyabean-cooking-oil-5-ltr-5l.md",
+    "to": "jivo/skus/sku-FG0000192.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Soyabean Cooking Oil 5 Ltr 5l' is JIVO SOYABEAN 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-1-litre-cooking-o-1l.md",
+    "to": "jivo/skus/sku-FG0000032.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO CANOLA 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-light-olive-oil-500ml-500ml.md",
+    "to": "jivo/skus/sku-FG0000039.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Light Olive Oil 500ml 500ml' is JIVO EXTRA LIGHT 500ML; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-first-pressed-sesame-oil-1l.md",
+    "to": "jivo/skus/sku-FG0000376.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo First Pressed Sesame Oil 1l' is JIVO SESAME OIL 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l.md",
+    "to": "jivo/skus/sku-FG0000008.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cookin 5l' is JIVO JIVO POMACE 5L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-extra-virgin-olive-oil-200ml-200ml.md",
+    "to": "jivo/skus/sku-FG0000164.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Extra Virgin Olive Oil 200ml 200ml' is JIVO EXTRA VIRGIN 200ML; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/excel-enterprises-jivo-cooking-pomace-olive-oil-1-litre-rich-in-monounsaturated-fatty-acids-1l.md",
+    "to": "jivo/skus/sku-FG0000028.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Excel Enterprises Jivo Cooking Pomace Olive Oil 1 Litre Rich In Monoun' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge"
+  },
+  {
+    "from": "ecom/skus/jivo-cold-press-soyabean-oil-1-ltr-1l.md",
+    "to": "jivo/skus/sku-FG0000193.md",
+    "link_type": "D0",
+    "reason": "Fuzzy name/pack match: ecom listing 'Jivo Cold Press Soyabean Oil 1 Ltr 1l' is JIVO SOYABEAN 1L; same physical product, not fused by bridge"
+  }
+]

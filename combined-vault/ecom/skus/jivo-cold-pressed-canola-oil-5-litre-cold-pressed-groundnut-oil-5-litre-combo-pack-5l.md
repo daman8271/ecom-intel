@@ -1,0 +1,117 @@
+---
+type: sku-hub
+canonical_sku: jivo-cold-pressed-canola-oil-5-litre-cold-pressed-groundnut-oil-5-litre-combo-pack-5l
+display_name: Jivo Cold Pressed Canola Oil 5 Litre Cold Pressed Groundnut Oil 5 Litre Combo Pack 5l
+platforms:
+  - amazon
+  - amazon-now
+first_seen: 2026-05-21
+last_seen: 2026-06-04
+observations: 69
+min_price: 2328
+max_price: 2478
+latest_price: 2328
+tags:
+  - type/sku-hub
+  - platform/amazon
+  - platform/amazon-now
+---
+
+# jivo-cold-pressed-canola-oil-5-litre-cold-pressed-groundnut-oil-5-litre-combo-pack-5l
+
+Up: [[skus-index]]
+
+**Jivo Cold Pressed Canola Oil 5 Litre Cold Pressed Groundnut Oil 5 Litre Combo Pack 5l**
+
+## Sold on
+- [[amazon]] — latest ₹2478 (44.3% off)
+- [[amazon-now]] — latest ₹2328 (47.7% off)
+
+## Available in cities
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Noida]]
+
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+
+## Price history (69 observations)
+
+```csv
+run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
+2026-05-21-1330,2026-05-21,amazon,All India,-,2478,4450,44.3,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110001,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110002,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110003,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110004,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110006,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110007,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110008,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110009,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110010,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110013,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110014,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110018,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110021,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110033,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110035,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110040,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110046,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110052,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110054,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110055,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110061,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110062,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110067,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110070,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110075,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110085,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110088,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110090,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121001,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121002,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201001,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201002,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201005,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201009,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122001,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122004,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122010,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302001,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302011,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302012,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302013,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302015,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302016,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302018,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302020,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302021,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302022,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302023,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302024,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302026,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302032,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302033,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303007,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303905,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700015,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700019,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700024,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700040,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700053,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700089,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700107,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700141,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201304,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201305,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201306,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201307,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201309,2328,4450,47.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Noida,201310,2328,4450,47.7,1
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*
+
+
+## Related
+<!-- combined-backbone -->
+[[Platform - amazon]]

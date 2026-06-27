@@ -1,0 +1,386 @@
+[
+  {
+    "from": "jivo/months/2024-01.md",
+    "to": "jivo/months/2024-02.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-02.md",
+    "to": "jivo/months/2024-01.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-02.md",
+    "to": "jivo/months/2024-03.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-03.md",
+    "to": "jivo/months/2024-02.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-03.md",
+    "to": "jivo/months/2024-04.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-04.md",
+    "to": "jivo/months/2024-03.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-04.md",
+    "to": "jivo/months/2024-05.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-05.md",
+    "to": "jivo/months/2024-04.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-05.md",
+    "to": "jivo/months/2024-06.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-06.md",
+    "to": "jivo/months/2024-05.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-06.md",
+    "to": "jivo/months/2024-07.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-07.md",
+    "to": "jivo/months/2024-06.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-07.md",
+    "to": "jivo/months/2024-08.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-08.md",
+    "to": "jivo/months/2024-07.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-08.md",
+    "to": "jivo/months/2024-09.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-09.md",
+    "to": "jivo/months/2024-08.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-09.md",
+    "to": "jivo/months/2024-10.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-10.md",
+    "to": "jivo/months/2024-09.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-10.md",
+    "to": "jivo/months/2024-11.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-11.md",
+    "to": "jivo/months/2024-10.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-11.md",
+    "to": "jivo/months/2024-12.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-12.md",
+    "to": "jivo/months/2024-11.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2024-12.md",
+    "to": "jivo/months/2025-01.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-01.md",
+    "to": "jivo/months/2024-12.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-01.md",
+    "to": "jivo/months/2025-02.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-02.md",
+    "to": "jivo/months/2025-01.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-02.md",
+    "to": "jivo/months/2025-03.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-03.md",
+    "to": "jivo/months/2025-02.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-03.md",
+    "to": "jivo/months/2025-04.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-04.md",
+    "to": "jivo/months/2025-03.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-04.md",
+    "to": "jivo/months/2025-05.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-05.md",
+    "to": "jivo/months/2025-04.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-05.md",
+    "to": "jivo/months/2025-06.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-06.md",
+    "to": "jivo/months/2025-05.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-06.md",
+    "to": "jivo/months/2025-07.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-07.md",
+    "to": "jivo/months/2025-06.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-07.md",
+    "to": "jivo/months/2025-08.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-08.md",
+    "to": "jivo/months/2025-07.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-08.md",
+    "to": "jivo/months/2025-09.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-09.md",
+    "to": "jivo/months/2025-08.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-09.md",
+    "to": "jivo/months/2025-10.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-10.md",
+    "to": "jivo/months/2025-09.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-10.md",
+    "to": "jivo/months/2025-11.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-11.md",
+    "to": "jivo/months/2025-10.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-11.md",
+    "to": "jivo/months/2025-12.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-12.md",
+    "to": "jivo/months/2025-11.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2025-12.md",
+    "to": "jivo/months/2026-01.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-01.md",
+    "to": "jivo/months/2025-12.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-01.md",
+    "to": "jivo/months/2026-02.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-02.md",
+    "to": "jivo/months/2026-01.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-02.md",
+    "to": "jivo/months/2026-03.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-03.md",
+    "to": "jivo/months/2026-02.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-03.md",
+    "to": "jivo/months/2026-04.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-04.md",
+    "to": "jivo/months/2026-03.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-04.md",
+    "to": "jivo/months/2026-05.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-05.md",
+    "to": "jivo/months/2026-04.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-05.md",
+    "to": "jivo/months/2026-06.md",
+    "link_type": "D3",
+    "reason": "next calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "jivo/months/2026-06.md",
+    "to": "jivo/months/2026-05.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in jivo app month-rollup chain"
+  },
+  {
+    "from": "ecom/monthly/2026-05.md",
+    "to": "ecom/monthly/2026-06.md",
+    "link_type": "D3",
+    "reason": "next calendar month in ecom-intel monthly-trend chain"
+  },
+  {
+    "from": "ecom/monthly/2026-06.md",
+    "to": "ecom/monthly/2026-05.md",
+    "link_type": "D3",
+    "reason": "prev calendar month in ecom-intel monthly-trend chain"
+  },
+  {
+    "from": "jivo/months/2026-05.md",
+    "to": "ecom/monthly/2026-05.md",
+    "link_type": "D3",
+    "reason": "same calendar month: ecom-intel monthly-trend counterpart of jivo app rollup"
+  },
+  {
+    "from": "ecom/monthly/2026-05.md",
+    "to": "jivo/months/2026-05.md",
+    "link_type": "D3",
+    "reason": "same calendar month: jivo app month-rollup counterpart of ecom-intel rollup"
+  },
+  {
+    "from": "jivo/months/2026-06.md",
+    "to": "ecom/monthly/2026-06.md",
+    "link_type": "D3",
+    "reason": "same calendar month: ecom-intel monthly-trend counterpart of jivo app rollup"
+  },
+  {
+    "from": "ecom/monthly/2026-06.md",
+    "to": "jivo/months/2026-06.md",
+    "link_type": "D3",
+    "reason": "same calendar month: jivo app month-rollup counterpart of ecom-intel rollup"
+  }
+]

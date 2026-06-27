@@ -1,0 +1,116 @@
+---
+type: sku-hub
+canonical_sku: jivo-extra-light-olive-oil-5-litre-with-extra-virgin-olive-oil-1-litre-5l
+display_name: Jivo Extra Light Olive Oil 5 Litre With Extra Virgin Olive Oil 1 Litre 5l
+platforms:
+  - amazon
+  - amazon-now
+first_seen: 2026-05-21
+last_seen: 2026-06-04
+observations: 68
+min_price: 3199
+max_price: 3703
+latest_price: 3703
+tags:
+  - type/sku-hub
+  - platform/amazon
+  - platform/amazon-now
+---
+
+# jivo-extra-light-olive-oil-5-litre-with-extra-virgin-olive-oil-1-litre-5l
+
+Up: [[skus-index]]
+
+**Jivo Extra Light Olive Oil 5 Litre With Extra Virgin Olive Oil 1 Litre 5l**
+
+## Sold on
+- [[amazon]] — latest ₹3199 (40.7% off)
+- [[amazon-now]] — latest ₹3703 (50.6% off)
+
+## Available in cities
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]]
+
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+
+## Price history (68 observations)
+
+```csv
+run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
+2026-05-21-1330,2026-05-21,amazon,All India,-,3199,5399,40.7,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110001,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110003,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110004,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110007,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110008,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110010,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110013,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110016,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110017,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110021,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110024,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110025,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110031,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110032,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110035,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110040,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110044,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110048,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110051,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110052,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110054,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110055,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110062,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110065,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110067,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110070,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110076,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110090,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110091,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110092,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Delhi,110095,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121001,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121002,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201002,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201005,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201009,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Gurgaon,122004,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302011,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302012,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302022,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302026,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,302032,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303007,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Jaipur,303905,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700001,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700015,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700019,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700022,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700024,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700040,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700053,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700069,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700089,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700107,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Kolkata,700141,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400012,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400013,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400015,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400018,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400025,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400026,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400030,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400033,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400090,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400601,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400611,3703,7498,50.6,1
+2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400703,3703,7498,50.6,1
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*
+
+
+## Related
+<!-- combined-backbone -->
+[[Platform - amazon]]

@@ -1,0 +1,50 @@
+---
+type: product
+product: "JEERA JUICE"
+sap_codes:
+  - FG0000245
+category: "SPICES"
+tier: OTHER
+platforms:
+  - amazon
+tags:
+  - type/product
+  - tier/OTHER
+  - category/SPICES
+  - platform/amazon
+---
+
+# JEERA JUICE
+
+Up: [[Home]]
+
+## Identity
+| Field | Value |
+|---|---|
+| Product | JEERA JUICE |
+| JIVO SKU / SAP code | `FG0000245` |
+| canonical_sku(s) | `jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml` |
+| Category | [[Category - SPICES\|SPICES]] |
+| TIER | [[Tier - Other\|Other]] *(name-token derived)* |
+| Pack(s) | — |
+| Bridge class | new_confirmed |
+
+## Competitor-price lens
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-27).*
+
+| Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
+|---|---|---|---|---|---|---|
+| [[Platform - amazon\|amazon]] | 219 | — | — | ⚪ OOS | SVD | 2026-06-27 |
+
+## JIVO lens
+*TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
+
+_OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
+
+## Connections
+Cross-vault fusion by name / SKU match:
+- **JIVO source notes:** [[sku-FG0000245]]
+- **Ecom source notes:** [[jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml]]
+- **Category:** [[Category - SPICES]]
+- **TIER:** [[Tier - Other]]
+- **Platforms:** [[Platform - amazon]]

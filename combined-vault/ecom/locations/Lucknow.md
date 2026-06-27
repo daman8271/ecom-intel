@@ -1,0 +1,120 @@
+---
+type: city-hub
+city: Lucknow
+platforms:
+  - flipkart-minutes
+pincodes: 1
+skus: 4
+observations: 75
+tags:
+  - type/city-hub
+  - platform/flipkart-minutes
+---
+
+# Lucknow
+
+Up: [[locations-index]]
+
+## Platforms serving Lucknow
+[[flipkart-minutes]]
+
+## Pincodes (1)
+[[226010]]
+
+## SKUs available in Lucknow (4)
+[[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-mineral-water-1l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]]
+
+## Observations (75 rows)
+
+```csv
+run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
+2026-05-21-1305,2026-05-21,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,261,375,30.4,1
+2026-05-22-1200,2026-05-22,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,255,375,32,1
+2026-05-22-1600,2026-05-22,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-23-1200,2026-05-23,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-23-1600,2026-05-23,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-25-0900,2026-05-25,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-25-1600,2026-05-25,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-27-1200,2026-05-27,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-28-0900,2026-05-28,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-28-1200,2026-05-28,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,242,375,35.5,1
+2026-05-28-1600,2026-05-28,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,255,375,32,1
+2026-05-29-0900,2026-05-29,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,255,375,32,1
+2026-05-29-1600,2026-05-29,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,267,375,28.8,1
+2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,267,375,28.8,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,267,375,28.8,1
+2026-05-31-0900,2026-05-31,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,273,375,27,1
+2026-05-31-1200,2026-05-31,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,273,375,27,1
+2026-05-31-1600,2026-05-31,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,273,375,27,1
+2026-06-01-1200,2026-06-01,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,273,375,27,1
+2026-06-01-1600,2026-06-01,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,273,375,27,1
+2026-06-04-1417,2026-06-04,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,245,375,34,1
+2026-06-05-1539,2026-06-05,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,245,375,34,1
+2026-06-06-0641,2026-06-06,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,244,375,34,1
+2026-06-06-1139,2026-06-06,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,244,375,34,1
+2026-06-08-1132,2026-06-08,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,244,375,34,1
+2026-06-09-0832,2026-06-09,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,241,375,35,1
+2026-06-10-0832,2026-06-10,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,241,375,35,1
+2026-06-11-1215,2026-06-11,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,241,375,35,1
+2026-06-12-1216,2026-06-12,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,241,375,35,1
+2026-06-13-0832,2026-06-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,251,375,33,0
+2026-06-13-1205,2026-06-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,235,375,37,1
+2026-06-14-0832,2026-06-14,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,238,375,36,1
+2026-06-14-1208,2026-06-14,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,238,375,36,1
+2026-06-21-0832,2026-06-21,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,234,375,37,1
+2026-06-21-1211,2026-06-21,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,234,375,37,1
+2026-06-23-1215,2026-06-23,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,234,375,37,1
+2026-06-24-0832,2026-06-24,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,234,375,37,1
+2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,229,375,38.9,1
+2026-06-26-0832,2026-06-26,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,226010,234,375,37,1
+2026-05-21-1305,2026-05-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,173,255,32.2,1
+2026-05-23-1200,2026-05-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,168,255,34.1,1
+2026-05-23-1600,2026-05-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,168,255,34.1,1
+2026-05-25-0900,2026-05-25,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,168,255,34.1,1
+2026-05-27-1200,2026-05-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,169,255,33.7,1
+2026-05-28-0900,2026-05-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,183,255,28.2,1
+2026-05-28-1200,2026-05-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,183,255,28.2,1
+2026-05-28-1600,2026-05-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26.7,1
+2026-05-29-0900,2026-05-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26.7,1
+2026-05-29-1600,2026-05-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,183,255,28.2,1
+2026-05-30-0900,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,183,255,28.2,1
+2026-05-30-1200,2026-05-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,183,255,28.2,1
+2026-05-31-0900,2026-05-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26,1
+2026-05-31-1200,2026-05-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26,1
+2026-05-31-1600,2026-05-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26,1
+2026-06-01-1200,2026-06-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,191,255,25,1
+2026-06-01-1600,2026-06-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,179,255,29,1
+2026-06-04-1417,2026-06-04,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,179,255,29,1
+2026-06-05-1539,2026-06-05,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,170,255,33,1
+2026-06-06-0641,2026-06-06,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26,1
+2026-06-06-1139,2026-06-06,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,187,255,26,1
+2026-06-08-1132,2026-06-08,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,171,255,32,1
+2026-06-09-0832,2026-06-09,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,186,255,27,1
+2026-06-10-0832,2026-06-10,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,186,255,27,1
+2026-06-11-1215,2026-06-11,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,181,255,29,1
+2026-06-12-1216,2026-06-12,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,186,255,27,1
+2026-06-14-0832,2026-06-14,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,185,255,27,1
+2026-06-14-1208,2026-06-14,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,185,255,27,1
+2026-06-21-0832,2026-06-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,174,255,31,1
+2026-06-21-1211,2026-06-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,174,255,31,1
+2026-06-24-0832,2026-06-24,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,170,255,33,1
+2026-06-25-0832,2026-06-25,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,170,255,33,1
+2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,166,255,34.9,1
+2026-06-26-0832,2026-06-26,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,226010,170,255,33,1
+2026-06-13-0832,2026-06-13,flipkart-minutes,jivo-mineral-water-1l,226010,22,30,26,0
+2026-06-13-0832,2026-06-13,flipkart-minutes,jivo-pomace-olive-oil-plastic-bottle-1l,226010,409,1049,61,0
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*
+## Related (discovered)
+
+- [[ecom/locations/locations-index|locations-index]] — Lucknow is a q-comm city in the Locations map-of-content _(D5)_
+- [[ecom/locations/Ghaziabad|Ghaziabad]] — Lucknow and Ghaziabad are both in Uttar Pradesh _(D5)_
+- [[ecom/locations/Kanpur|Kanpur]] — Lucknow and Kanpur are both in Uttar Pradesh _(D5)_
+- [[ecom/locations/Noida|Noida]] — Lucknow and Noida are both in Uttar Pradesh _(D5)_
+
+
+## Related
+<!-- combined-backbone -->
+[[Platform - flipkart]]

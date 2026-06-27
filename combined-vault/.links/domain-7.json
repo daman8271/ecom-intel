@@ -1,0 +1,338 @@
+[
+  {
+    "from": "ecom/pricematch/pm-CANOLA 1+1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "CANOLA 1+1L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "ecom/pricematch/pm-CANOLA 1+1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: CANOLA 1+1L (PREMIUM, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-CANOLA 1L + 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "CANOLA 1L + 1L under price-floor (BELOW on amazon) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "ecom/pricematch/pm-CANOLA 1L + 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: CANOLA 1L + 1L (PREMIUM, tier missing target) shows price-floor breach on amazon"
+  },
+  {
+    "from": "ecom/pricematch/pm-CANOLA 1L POUCH.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "CANOLA 1L POUCH under price-floor (BELOW on bigbasket) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "ecom/pricematch/pm-CANOLA 1L POUCH.md",
+    "link_type": "D7",
+    "reason": "price<->performance: CANOLA 1L POUCH (PREMIUM, tier missing target) shows price-floor breach on bigbasket"
+  },
+  {
+    "from": "ecom/pricematch/pm-CANOLA 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "CANOLA 1L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, blinkit, flipkart-minutes) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "ecom/pricematch/pm-CANOLA 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: CANOLA 1L (PREMIUM, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now, blinkit, flipkart-minutes"
+  },
+  {
+    "from": "ecom/pricematch/pm-CANOLA 5L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "CANOLA 5L under price-floor (BELOW on amazon-fresh, amazon-now, blinkit) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/CANOLA 5L.md",
+    "to": "ecom/pricematch/pm-CANOLA 5L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: CANOLA 5L (PREMIUM, tier missing target) shows price-floor breach on amazon-fresh, amazon-now, blinkit"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA LIGHT 1+1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA LIGHT 1+1L under price-floor (BELOW on amazon, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1L.md",
+    "to": "ecom/pricematch/pm-EXTRA LIGHT 1+1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA LIGHT 1+1L (PREMIUM, tier missing target) shows price-floor breach on amazon, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA LIGHT 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA LIGHT 1L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, blinkit, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "ecom/pricematch/pm-EXTRA LIGHT 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA LIGHT 1L (PREMIUM, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now, blinkit, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA LIGHT 2L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA LIGHT 2L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, blinkit, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "ecom/pricematch/pm-EXTRA LIGHT 2L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA LIGHT 2L (PREMIUM, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now, blinkit, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA LIGHT 3L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA LIGHT 3L under price-floor (BELOW on amazon, flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 3L.md",
+    "to": "ecom/pricematch/pm-EXTRA LIGHT 3L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA LIGHT 3L (PREMIUM, tier missing target) shows price-floor breach on amazon, flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA VIRGIN 1L + 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA VIRGIN 1L + 1L under price-floor (BELOW on amazon, flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L + 1L.md",
+    "to": "ecom/pricematch/pm-EXTRA VIRGIN 1L + 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA VIRGIN 1L + 1L (PREMIUM, tier missing target) shows price-floor breach on amazon, flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA VIRGIN 2L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA VIRGIN 2L under price-floor (BELOW on flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 2L.md",
+    "to": "ecom/pricematch/pm-EXTRA VIRGIN 2L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA VIRGIN 2L (PREMIUM, tier missing target) shows price-floor breach on flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA VIRGIN 500ML.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA VIRGIN 500ML under price-floor (BELOW on amazon, flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 500ML.md",
+    "to": "ecom/pricematch/pm-EXTRA VIRGIN 500ML.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA VIRGIN 500ML (PREMIUM, tier missing target) shows price-floor breach on amazon, flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-EXTRA VIRGIN 5L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "EXTRA VIRGIN 5L under price-floor (BELOW on amazon, flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 5L.md",
+    "to": "ecom/pricematch/pm-EXTRA VIRGIN 5L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: EXTRA VIRGIN 5L (PREMIUM, tier missing target) shows price-floor breach on amazon, flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-GOLD 1L.md",
+    "to": "hubs/Tier - Commodity.md",
+    "link_type": "D7",
+    "reason": "GOLD 1L under price-floor (BELOW on amazon) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L)"
+  },
+  {
+    "from": "products/GOLD 1L.md",
+    "to": "ecom/pricematch/pm-GOLD 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: GOLD 1L (COMMODITY, tier missing target) shows price-floor breach on amazon"
+  },
+  {
+    "from": "ecom/pricematch/pm-GROUNDNUT 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "GROUNDNUT 1L under price-floor (BELOW on amazon, amazon-now, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/GROUNDNUT 1L.md",
+    "to": "ecom/pricematch/pm-GROUNDNUT 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: GROUNDNUT 1L (PREMIUM, tier missing target) shows price-floor breach on amazon, amazon-now, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-GROUNDNUT 5L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "GROUNDNUT 5L under price-floor (BELOW on amazon, amazon-fresh, amazon-now) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/GROUNDNUT 5L.md",
+    "to": "ecom/pricematch/pm-GROUNDNUT 5L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: GROUNDNUT 5L (PREMIUM, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now"
+  },
+  {
+    "from": "ecom/pricematch/pm-JIVO POMACE 1L + 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "JIVO POMACE 1L + 1L under price-floor (BELOW on amazon, flipkart, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/JIVO POMACE 1L + 1L.md",
+    "to": "ecom/pricematch/pm-JIVO POMACE 1L + 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: JIVO POMACE 1L + 1L (PREMIUM, tier missing target) shows price-floor breach on amazon, flipkart, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-JIVO POMACE 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "JIVO POMACE 1L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, blinkit, flipkart-minutes, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "ecom/pricematch/pm-JIVO POMACE 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: JIVO POMACE 1L (PREMIUM, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now, blinkit, flipkart-minutes, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-JIVO POMACE 5L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "JIVO POMACE 5L under price-floor (BELOW on amazon-now, blinkit) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/JIVO POMACE 5L.md",
+    "to": "ecom/pricematch/pm-JIVO POMACE 5L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: JIVO POMACE 5L (PREMIUM, tier missing target) shows price-floor breach on amazon-now, blinkit"
+  },
+  {
+    "from": "ecom/pricematch/pm-MUSTARD 1L POUCH.md",
+    "to": "hubs/Tier - Commodity.md",
+    "link_type": "D7",
+    "reason": "MUSTARD 1L POUCH under price-floor (BELOW on amazon-fresh) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L)"
+  },
+  {
+    "from": "products/MUSTARD 1L POUCH.md",
+    "to": "ecom/pricematch/pm-MUSTARD 1L POUCH.md",
+    "link_type": "D7",
+    "reason": "price<->performance: MUSTARD 1L POUCH (COMMODITY, tier missing target) shows price-floor breach on amazon-fresh"
+  },
+  {
+    "from": "ecom/pricematch/pm-MUSTARD 1L.md",
+    "to": "hubs/Tier - Commodity.md",
+    "link_type": "D7",
+    "reason": "MUSTARD 1L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, bigbasket, blinkit, flipkart-minutes, zepto) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L)"
+  },
+  {
+    "from": "products/MUSTARD 1L.md",
+    "to": "ecom/pricematch/pm-MUSTARD 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: MUSTARD 1L (COMMODITY, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now, bigbasket, blinkit, flipkart-minutes, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-MUSTARD 5L.md",
+    "to": "hubs/Tier - Commodity.md",
+    "link_type": "D7",
+    "reason": "MUSTARD 5L under price-floor (BELOW on bigbasket, blinkit) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L)"
+  },
+  {
+    "from": "products/MUSTARD 5L.md",
+    "to": "ecom/pricematch/pm-MUSTARD 5L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: MUSTARD 5L (COMMODITY, tier missing target) shows price-floor breach on bigbasket, blinkit"
+  },
+  {
+    "from": "ecom/pricematch/pm-POMACE 3L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "POMACE 3L under price-floor (BELOW on flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/POMACE 3L.md",
+    "to": "ecom/pricematch/pm-POMACE 3L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: POMACE 3L (PREMIUM, tier missing target) shows price-floor breach on flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-RICE BRAN 1L.md",
+    "to": "hubs/Tier - Commodity.md",
+    "link_type": "D7",
+    "reason": "RICE BRAN 1L under price-floor (BELOW on zepto) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L)"
+  },
+  {
+    "from": "products/RICE BRAN 1L.md",
+    "to": "ecom/pricematch/pm-RICE BRAN 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: RICE BRAN 1L (COMMODITY, tier missing target) shows price-floor breach on zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-SANO POMACE 5L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "SANO POMACE 5L under price-floor (BELOW on amazon, flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/SANO POMACE 5L.md",
+    "to": "ecom/pricematch/pm-SANO POMACE 5L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: SANO POMACE 5L (PREMIUM, tier missing target) shows price-floor breach on amazon, flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-SO OLIVE 1L.md",
+    "to": "hubs/Tier - Premium.md",
+    "link_type": "D7",
+    "reason": "SO OLIVE 1L under price-floor (BELOW on flipkart) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L)"
+  },
+  {
+    "from": "products/SO OLIVE 1L.md",
+    "to": "ecom/pricematch/pm-SO OLIVE 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: SO OLIVE 1L (PREMIUM, tier missing target) shows price-floor breach on flipkart"
+  },
+  {
+    "from": "ecom/pricematch/pm-SUNFLOWER 1L.md",
+    "to": "hubs/Tier - Commodity.md",
+    "link_type": "D7",
+    "reason": "SUNFLOWER 1L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, bigbasket, blinkit, zepto) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L)"
+  },
+  {
+    "from": "products/SUNFLOWER 1L.md",
+    "to": "ecom/pricematch/pm-SUNFLOWER 1L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: SUNFLOWER 1L (COMMODITY, tier missing target) shows price-floor breach on amazon, amazon-fresh, amazon-now, bigbasket, blinkit, zepto"
+  },
+  {
+    "from": "ecom/pricematch/pm-SUNFLOWER 5L.md",
+    "to": "hubs/Tier - Commodity.md",
+    "link_type": "D7",
+    "reason": "SUNFLOWER 5L under price-floor (BELOW on bigbasket) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L)"
+  },
+  {
+    "from": "products/SUNFLOWER 5L.md",
+    "to": "ecom/pricematch/pm-SUNFLOWER 5L.md",
+    "link_type": "D7",
+    "reason": "price<->performance: SUNFLOWER 5L (COMMODITY, tier missing target) shows price-floor breach on bigbasket"
+  }
+]

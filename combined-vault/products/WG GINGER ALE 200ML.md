@@ -1,0 +1,55 @@
+---
+type: product
+product: "WG GINGER ALE 200ML"
+sap_codes:
+  - FG0000276
+category: "DRINKS"
+tier: OTHER
+platforms:
+  - bigbasket
+  - amazon
+tags:
+  - type/product
+  - tier/OTHER
+  - category/DRINKS
+  - platform/bigbasket
+  - platform/amazon
+---
+
+# WG GINGER ALE 200ML
+
+Up: [[Home]]
+
+## Identity
+| Field | Value |
+|---|---|
+| Product | WG GINGER ALE 200ML |
+| JIVO SKU / SAP code | `FG0000276` |
+| canonical_sku(s) | `ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml`, `jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml` |
+| Category | [[Category - DRINKS\|DRINKS]] |
+| Sub-category | GINGER ALE SF |
+| Brand | JIVO |
+| TIER | [[Tier - Other\|Other]] *(name-token derived)* |
+| Pack(s) | 200ML |
+| Bridge class | new_confirmed |
+
+## Competitor-price lens
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-27).*
+
+| Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
+|---|---|---|---|---|---|---|
+| [[Platform - amazon\|amazon]] | 39 | — | — | ⚪ OOS | SVD | 2026-06-27 |
+| [[Platform - bigbasket\|bigbasket]] | — | — | — | — | — | — |
+
+## JIVO lens
+*TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
+
+_OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
+
+## Connections
+Cross-vault fusion by name / SKU match:
+- **JIVO source notes:** [[sku-FG0000276]]
+- **Ecom source notes:** [[ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml]] · [[jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml]]
+- **Category:** [[Category - DRINKS]]
+- **TIER:** [[Tier - Other]]
+- **Platforms:** [[Platform - bigbasket]] · [[Platform - amazon]]

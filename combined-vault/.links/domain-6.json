@@ -1,0 +1,1712 @@
+[
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 1L POUCH.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution at identical 2L pack"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/SANO MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 3L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/SANO MUSTARD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution at identical 2L pack"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/MUSTARD 1L POUCH.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution at identical 1L pack"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/MUSTARD 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/SANO MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/MUSTARD 3L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/SANO MUSTARD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution at identical 1L pack"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/MUSTARD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution at identical 1L pack"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/MUSTARD 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/MUSTARD 1L POUCH.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/MUSTARD 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/SANO MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution at identical 5L pack"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution at identical 5L pack"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/MUSTARD 3L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/SANO MUSTARD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/MUSTARD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 5L.md",
+    "to": "products/MUSTARD 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (MUSTARD); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/SO OLIVE 5L.md",
+    "to": "products/GOLD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (BLENDED); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/SO OLIVE 5L.md",
+    "to": "products/GOLD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (BLENDED); premium<->commodity tier substitution at identical 5L pack"
+  },
+  {
+    "from": "products/SO OLIVE 5L.md",
+    "to": "products/GOLD 1+1.md",
+    "link_type": "D6",
+    "reason": "Same oil type (BLENDED); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/SO OLIVE 1L.md",
+    "to": "products/GOLD 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (BLENDED); premium<->commodity tier substitution at identical 1L pack"
+  },
+  {
+    "from": "products/SO OLIVE 1L.md",
+    "to": "products/GOLD 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (BLENDED); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/SO OLIVE 1L.md",
+    "to": "products/GOLD 1+1.md",
+    "link_type": "D6",
+    "reason": "Same oil type (BLENDED); premium<->commodity tier substitution"
+  },
+  {
+    "from": "products/MUSTARD 1L.md",
+    "to": "products/MUSTARD 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/MUSTARD 1L.md",
+    "to": "products/MUSTARD 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/MUSTARD 1L.md",
+    "to": "products/MUSTARD 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/MUSTARD 1L.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->4L"
+  },
+  {
+    "from": "products/MUSTARD 1L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/MUSTARD 1L POUCH.md",
+    "to": "products/MUSTARD 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/MUSTARD 1L POUCH.md",
+    "to": "products/MUSTARD 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/MUSTARD 1L POUCH.md",
+    "to": "products/MUSTARD 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/MUSTARD 1L POUCH.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->4L"
+  },
+  {
+    "from": "products/MUSTARD 1L POUCH.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/MUSTARD 1+1L.md",
+    "to": "products/MUSTARD 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/MUSTARD 1+1L.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/MUSTARD 1+1L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/MUSTARD 1L + 1L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/MUSTARD 3L.md",
+    "to": "products/MUSTARD 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 3L<->4L"
+  },
+  {
+    "from": "products/MUSTARD 3L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/MUSTARD 4L.md",
+    "to": "products/MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (MUSTARD); pack-size substitution 4L<->5L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L.md",
+    "to": "products/SUNFLOWER 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L.md",
+    "to": "products/SUNFLOWER 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L.md",
+    "to": "products/SUNFLOWER 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L.md",
+    "to": "products/SUNFLOWER 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 1L<->4L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L.md",
+    "to": "products/SUNFLOWER 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L + 1L.md",
+    "to": "products/SUNFLOWER 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L + 1L.md",
+    "to": "products/SUNFLOWER 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/SUNFLOWER 1L + 1L.md",
+    "to": "products/SUNFLOWER 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/SUNFLOWER 2L.md",
+    "to": "products/SUNFLOWER 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/SUNFLOWER 2L.md",
+    "to": "products/SUNFLOWER 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/SUNFLOWER 2L.md",
+    "to": "products/SUNFLOWER 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/SUNFLOWER 3L.md",
+    "to": "products/SUNFLOWER 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 3L<->4L"
+  },
+  {
+    "from": "products/SUNFLOWER 3L.md",
+    "to": "products/SUNFLOWER 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/SUNFLOWER 4L.md",
+    "to": "products/SUNFLOWER 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SUNFLOWER); pack-size substitution 4L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 250ML.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->0.25L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 500ML.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->0.5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->1L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->3L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 200ML.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.2L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 250ML.md",
+    "to": "products/EXTRA VIRGIN 500ML.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.25L<->0.5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 250ML.md",
+    "to": "products/EXTRA VIRGIN 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.25L<->1L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 250ML.md",
+    "to": "products/EXTRA VIRGIN 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.25L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 250ML.md",
+    "to": "products/EXTRA VIRGIN 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.25L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 250ML.md",
+    "to": "products/EXTRA VIRGIN 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.25L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 250ML.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.25L<->3L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 250ML.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.25L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 500ML.md",
+    "to": "products/EXTRA VIRGIN 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.5L<->1L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 500ML.md",
+    "to": "products/EXTRA VIRGIN 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.5L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 500ML.md",
+    "to": "products/EXTRA VIRGIN 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.5L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 500ML.md",
+    "to": "products/EXTRA VIRGIN 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.5L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 500ML.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.5L<->3L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 500ML.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 0.5L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/EXTRA VIRGIN 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/EXTRA VIRGIN 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/EXTRA VIRGIN 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1+1L.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1+1L.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L + 1L.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L + 1L.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 2L.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 2L.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 3L.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA VIRGIN); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/YELLOW MUSTARD 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (YELLOW MUSTARD); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L.md",
+    "to": "products/YELLOW MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (YELLOW MUSTARD); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/YELLOW MUSTARD 1L + 1L.md",
+    "to": "products/YELLOW MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (YELLOW MUSTARD); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 500ML.md",
+    "to": "products/EXTRA LIGHT 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 0.5L<->1L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 500ML.md",
+    "to": "products/EXTRA LIGHT 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 0.5L<->2L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 500ML.md",
+    "to": "products/EXTRA LIGHT 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 0.5L<->2L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 500ML.md",
+    "to": "products/EXTRA LIGHT 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 0.5L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 500ML.md",
+    "to": "products/EXTRA LIGHT 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 0.5L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 500ML.md",
+    "to": "products/EXTRA LIGHT 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 0.5L<->5L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/EXTRA LIGHT 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/EXTRA LIGHT 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/EXTRA LIGHT 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/EXTRA LIGHT 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/EXTRA LIGHT 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1L.md",
+    "to": "products/EXTRA LIGHT 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1L.md",
+    "to": "products/EXTRA LIGHT 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1L.md",
+    "to": "products/EXTRA LIGHT 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "products/EXTRA LIGHT 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "products/EXTRA LIGHT 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "products/EXTRA LIGHT 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1+1L.md",
+    "to": "products/EXTRA LIGHT 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 3L.md",
+    "to": "products/EXTRA LIGHT 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (EXTRA LIGHT); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/SO OLIVE 1L.md",
+    "to": "products/SO OLIVE 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SO OLIVE); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/SO OLIVE 1L.md",
+    "to": "products/SO OLIVE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SO OLIVE); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SO OLIVE 1L + 1L.md",
+    "to": "products/SO OLIVE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SO OLIVE); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "products/JIVO POMACE 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "products/JIVO POMACE 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "products/JIVO POMACE 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "products/JIVO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "products/JIVO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/JIVO POMACE 1+1L.md",
+    "to": "products/JIVO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/JIVO POMACE 1+1L.md",
+    "to": "products/JIVO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/JIVO POMACE 1L + 1L.md",
+    "to": "products/JIVO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/JIVO POMACE 1L + 1L.md",
+    "to": "products/JIVO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/JIVO POMACE 2L.md",
+    "to": "products/JIVO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/JIVO POMACE 2L.md",
+    "to": "products/JIVO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/JIVO POMACE 1+1+1L.md",
+    "to": "products/JIVO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (JIVO POMACE); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/SANO SOYABEAN 1L.md",
+    "to": "products/SANO SOYABEAN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO SOYABEAN); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SANO POMACE 1L.md",
+    "to": "products/SANO POMACE 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/SANO POMACE 1L.md",
+    "to": "products/SANO POMACE 1L+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/SANO POMACE 1L.md",
+    "to": "products/SANO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/SANO POMACE 1L.md",
+    "to": "products/SANO POMACE 1L+1L+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/SANO POMACE 1L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SANO POMACE 1+1L.md",
+    "to": "products/SANO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/SANO POMACE 1+1L.md",
+    "to": "products/SANO POMACE 1L+1L+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/SANO POMACE 1+1L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/SANO POMACE 1L+1L.md",
+    "to": "products/SANO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/SANO POMACE 1L+1L.md",
+    "to": "products/SANO POMACE 1L+1L+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/SANO POMACE 1L+1L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/SANO POMACE 1+1+1L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/SANO POMACE 1L+1L+1L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO POMACE); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/Canola 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->4L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->6L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->7L"
+  },
+  {
+    "from": "products/CANOLA 1L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->15L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/Canola 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->4L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->6L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->7L"
+  },
+  {
+    "from": "products/CANOLA 1L POUCH.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 1L<->15L"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "products/CANOLA 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "products/CANOLA 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->6L"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->7L"
+  },
+  {
+    "from": "products/CANOLA 1+1L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->15L"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "products/CANOLA 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "products/CANOLA 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->6L"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->7L"
+  },
+  {
+    "from": "products/CANOLA 1L + 1L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->15L"
+  },
+  {
+    "from": "products/CANOLA 2L.md",
+    "to": "products/CANOLA 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/CANOLA 2L.md",
+    "to": "products/CANOLA 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/CANOLA 2L.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/CANOLA 2L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/CANOLA 2L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->6L"
+  },
+  {
+    "from": "products/CANOLA 2L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->7L"
+  },
+  {
+    "from": "products/CANOLA 2L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->15L"
+  },
+  {
+    "from": "products/Canola 1+1L.md",
+    "to": "products/CANOLA 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/Canola 1+1L.md",
+    "to": "products/CANOLA 3L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->3L"
+  },
+  {
+    "from": "products/Canola 1+1L.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/Canola 1+1L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/Canola 1+1L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->6L"
+  },
+  {
+    "from": "products/Canola 1+1L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->7L"
+  },
+  {
+    "from": "products/Canola 1+1L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 2L<->15L"
+  },
+  {
+    "from": "products/CANOLA 1+1+1L.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->4L"
+  },
+  {
+    "from": "products/CANOLA 1+1+1L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/CANOLA 1+1+1L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->6L"
+  },
+  {
+    "from": "products/CANOLA 1+1+1L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->7L"
+  },
+  {
+    "from": "products/CANOLA 1+1+1L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->15L"
+  },
+  {
+    "from": "products/CANOLA 3L.md",
+    "to": "products/CANOLA 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->4L"
+  },
+  {
+    "from": "products/CANOLA 3L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->5L"
+  },
+  {
+    "from": "products/CANOLA 3L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->6L"
+  },
+  {
+    "from": "products/CANOLA 3L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->7L"
+  },
+  {
+    "from": "products/CANOLA 3L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 3L<->15L"
+  },
+  {
+    "from": "products/CANOLA 4L.md",
+    "to": "products/CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 4L<->5L"
+  },
+  {
+    "from": "products/CANOLA 4L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 4L<->6L"
+  },
+  {
+    "from": "products/CANOLA 4L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 4L<->7L"
+  },
+  {
+    "from": "products/CANOLA 4L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 4L<->15L"
+  },
+  {
+    "from": "products/CANOLA 5L.md",
+    "to": "products/CANOLA 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 5L<->6L"
+  },
+  {
+    "from": "products/CANOLA 5L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 5L<->7L"
+  },
+  {
+    "from": "products/CANOLA 5L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 5L<->15L"
+  },
+  {
+    "from": "products/CANOLA 5+1L.md",
+    "to": "products/CANOLA 5+2L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 6L<->7L"
+  },
+  {
+    "from": "products/CANOLA 5+1L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 6L<->15L"
+  },
+  {
+    "from": "products/CANOLA 5+2L.md",
+    "to": "products/CANOLA 15L.md",
+    "link_type": "D6",
+    "reason": "Same product line (CANOLA); pack-size substitution 7L<->15L"
+  },
+  {
+    "from": "products/SANO CANOLA 1L.md",
+    "to": "products/SANO CANOLA 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO CANOLA); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/GOLD 1L.md",
+    "to": "products/GOLD 1+1.md",
+    "link_type": "D6",
+    "reason": "Same product line (GOLD); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/GOLD 1L.md",
+    "to": "products/GOLD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (GOLD); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/GOLD 1+1.md",
+    "to": "products/GOLD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (GOLD); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/SANO SUNFLOWER 1L.md",
+    "to": "products/SANO SUNFLOWER 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO SUNFLOWER); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SANO CLASSIC 1L.md",
+    "to": "products/SANO CLASSIC 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO CLASSIC); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SOYABEAN 1L.md",
+    "to": "products/SOYABEAN 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SOYABEAN); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/SOYABEAN 1L.md",
+    "to": "products/SOYABEAN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SOYABEAN); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SOYABEAN 1L POUCH.md",
+    "to": "products/SOYABEAN 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SOYABEAN); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/SOYABEAN 1L POUCH.md",
+    "to": "products/SOYABEAN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SOYABEAN); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/SOYABEAN 1L + 1L.md",
+    "to": "products/SOYABEAN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SOYABEAN); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/RICE BRAN 1L.md",
+    "to": "products/RICE BRAN 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (RICE BRAN); pack-size substitution 1L<->2L"
+  },
+  {
+    "from": "products/RICE BRAN 1L.md",
+    "to": "products/RICE BRAN 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (RICE BRAN); pack-size substitution 1L<->4L"
+  },
+  {
+    "from": "products/RICE BRAN 1L.md",
+    "to": "products/RICE BRAN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (RICE BRAN); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/RICE BRAN 1L + 1L.md",
+    "to": "products/RICE BRAN 4L.md",
+    "link_type": "D6",
+    "reason": "Same product line (RICE BRAN); pack-size substitution 2L<->4L"
+  },
+  {
+    "from": "products/RICE BRAN 1L + 1L.md",
+    "to": "products/RICE BRAN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (RICE BRAN); pack-size substitution 2L<->5L"
+  },
+  {
+    "from": "products/RICE BRAN 4L.md",
+    "to": "products/RICE BRAN 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (RICE BRAN); pack-size substitution 4L<->5L"
+  },
+  {
+    "from": "products/SANO MUSTARD 1L.md",
+    "to": "products/SANO MUSTARD 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (SANO MUSTARD); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/COCONUT 200ML.md",
+    "to": "products/COCONUT 500ML.md",
+    "link_type": "D6",
+    "reason": "Same product line (COCONUT); pack-size substitution 0.2L<->0.5L"
+  },
+  {
+    "from": "products/COCONUT 200ML.md",
+    "to": "products/COCONUT 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (COCONUT); pack-size substitution 0.2L<->1L"
+  },
+  {
+    "from": "products/COCONUT 500ML.md",
+    "to": "products/COCONUT 1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (COCONUT); pack-size substitution 0.5L<->1L"
+  },
+  {
+    "from": "products/GROUNDNUT 1L.md",
+    "to": "products/GROUNDNUT 5L.md",
+    "link_type": "D6",
+    "reason": "Same product line (GROUNDNUT); pack-size substitution 1L<->5L"
+  },
+  {
+    "from": "products/GROUNDNUT 1L.md",
+    "to": "products/GROUNDNUT 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (GROUNDNUT); pack-size substitution 1L<->6L"
+  },
+  {
+    "from": "products/GROUNDNUT 5L.md",
+    "to": "products/GROUNDNUT 5+1L.md",
+    "link_type": "D6",
+    "reason": "Same product line (GROUNDNUT); pack-size substitution 5L<->6L"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "products/EXTRA VIRGIN 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (EXTRA LIGHT <-> EXTRA VIRGIN)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "products/JIVO POMACE 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (EXTRA LIGHT <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "products/SANO POMACE 1L+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (EXTRA LIGHT <-> SANO POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 2L.md",
+    "to": "products/SO OLIVE 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (EXTRA LIGHT <-> SO OLIVE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1+1L.md",
+    "to": "products/JIVO POMACE 1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (EXTRA VIRGIN <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1+1L.md",
+    "to": "products/SANO POMACE 1L+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (EXTRA VIRGIN <-> SANO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1+1L.md",
+    "to": "products/SO OLIVE 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (EXTRA VIRGIN <-> SO OLIVE)"
+  },
+  {
+    "from": "products/JIVO POMACE 1+1L.md",
+    "to": "products/SANO POMACE 1L+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (JIVO POMACE <-> SANO POMACE)"
+  },
+  {
+    "from": "products/JIVO POMACE 1+1L.md",
+    "to": "products/SO OLIVE 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (JIVO POMACE <-> SO OLIVE)"
+  },
+  {
+    "from": "products/SANO POMACE 1L+1L.md",
+    "to": "products/SO OLIVE 1L + 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 2L pack; grade-tier substitution (SANO POMACE <-> SO OLIVE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/EXTRA VIRGIN 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (EXTRA LIGHT <-> EXTRA VIRGIN)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/JIVO POMACE 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (EXTRA LIGHT <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/SANO CLASSIC 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (EXTRA LIGHT <-> SANO CLASSIC)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1L.md",
+    "to": "products/SANO POMACE 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (EXTRA LIGHT <-> SANO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/JIVO POMACE 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (EXTRA VIRGIN <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/SANO CLASSIC 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (EXTRA VIRGIN <-> SANO CLASSIC)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 1L.md",
+    "to": "products/SANO POMACE 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (EXTRA VIRGIN <-> SANO POMACE)"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "products/SANO CLASSIC 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (JIVO POMACE <-> SANO CLASSIC)"
+  },
+  {
+    "from": "products/JIVO POMACE 1L.md",
+    "to": "products/SANO POMACE 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (JIVO POMACE <-> SANO POMACE)"
+  },
+  {
+    "from": "products/SANO CLASSIC 1L.md",
+    "to": "products/SANO POMACE 1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 1L pack; grade-tier substitution (SANO CLASSIC <-> SANO POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 5L.md",
+    "to": "products/EXTRA VIRGIN 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (EXTRA LIGHT <-> EXTRA VIRGIN)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 5L.md",
+    "to": "products/JIVO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (EXTRA LIGHT <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 5L.md",
+    "to": "products/SANO CLASSIC 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (EXTRA LIGHT <-> SANO CLASSIC)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 5L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (EXTRA LIGHT <-> SANO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 5L.md",
+    "to": "products/JIVO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (EXTRA VIRGIN <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 5L.md",
+    "to": "products/SANO CLASSIC 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (EXTRA VIRGIN <-> SANO CLASSIC)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 5L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (EXTRA VIRGIN <-> SANO POMACE)"
+  },
+  {
+    "from": "products/JIVO POMACE 5L.md",
+    "to": "products/SANO CLASSIC 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (JIVO POMACE <-> SANO CLASSIC)"
+  },
+  {
+    "from": "products/JIVO POMACE 5L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (JIVO POMACE <-> SANO POMACE)"
+  },
+  {
+    "from": "products/SANO CLASSIC 5L.md",
+    "to": "products/SANO POMACE 5L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 5L pack; grade-tier substitution (SANO CLASSIC <-> SANO POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 500ML.md",
+    "to": "products/EXTRA VIRGIN 500ML.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 0.5L pack; grade-tier substitution (EXTRA LIGHT <-> EXTRA VIRGIN)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1+1L.md",
+    "to": "products/EXTRA VIRGIN 3L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (EXTRA LIGHT <-> EXTRA VIRGIN)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1+1L.md",
+    "to": "products/JIVO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (EXTRA LIGHT <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1+1L.md",
+    "to": "products/POMACE 3L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (EXTRA LIGHT <-> POMACE)"
+  },
+  {
+    "from": "products/EXTRA LIGHT 1+1+1L.md",
+    "to": "products/SANO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (EXTRA LIGHT <-> SANO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 3L.md",
+    "to": "products/JIVO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (EXTRA VIRGIN <-> JIVO POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 3L.md",
+    "to": "products/POMACE 3L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (EXTRA VIRGIN <-> POMACE)"
+  },
+  {
+    "from": "products/EXTRA VIRGIN 3L.md",
+    "to": "products/SANO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (EXTRA VIRGIN <-> SANO POMACE)"
+  },
+  {
+    "from": "products/JIVO POMACE 1+1+1L.md",
+    "to": "products/POMACE 3L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (JIVO POMACE <-> POMACE)"
+  },
+  {
+    "from": "products/JIVO POMACE 1+1+1L.md",
+    "to": "products/SANO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (JIVO POMACE <-> SANO POMACE)"
+  },
+  {
+    "from": "products/POMACE 3L.md",
+    "to": "products/SANO POMACE 1+1+1L.md",
+    "link_type": "D6",
+    "reason": "Same oil type (OLIVE), 3L pack; grade-tier substitution (POMACE <-> SANO POMACE)"
+  }
+]

@@ -1,0 +1,117 @@
+---
+type: sku-hub
+canonical_sku: jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml
+display_name: Jivo Healthy Wheatgrass Juice With Mango Flavor Body Detox Immunity Booster Natural Ingredients 500ml Mango 500ml
+platforms:
+  - amazon-fresh
+  - amazon-now
+first_seen: 2026-06-04
+last_seen: 2026-06-09
+observations: 69
+min_price: 35
+max_price: 100
+latest_price: 35
+tags:
+  - type/sku-hub
+  - platform/amazon-fresh
+  - platform/amazon-now
+---
+
+# jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml
+
+Up: [[skus-index]]
+
+**Jivo Healthy Wheatgrass Juice With Mango Flavor Body Detox Immunity Booster Natural Ingredients 500ml Mango 500ml**
+
+## Sold on
+- [[amazon-fresh]] — latest ₹100
+- [[amazon-now]] — latest ₹35 (36.4% off)
+
+## Available in cities
+[[Bengaluru]] · [[Delhi]] · [[Ghaziabad]] · [[Mumbai]] · [[Noida]]
+
+## Runs that observed this SKU (11)
+[[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-04-1417]]
+
+## Price history (69 observations)
+
+```csv
+run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
+2026-06-04-1417,2026-06-04,amazon-fresh,Mumbai,400703,100,,,1
+2026-06-05-1125,2026-06-05,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-05-1125,2026-06-05,amazon-now,Noida,201307,100,,,1
+2026-06-05-1125,2026-06-05,amazon-now,Noida,201309,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Mumbai,400601,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Noida,201307,100,,,1
+2026-06-05-1630,2026-06-05,amazon-now,Noida,201309,100,,,1
+2026-06-06-0729,2026-06-06,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-06-0729,2026-06-06,amazon-now,Mumbai,400601,100,,,1
+2026-06-06-0729,2026-06-06,amazon-now,Mumbai,400703,100,,,1
+2026-06-06-0729,2026-06-06,amazon-now,Noida,201307,100,,,1
+2026-06-06-0729,2026-06-06,amazon-now,Noida,201309,100,,,1
+2026-06-06-1228,2026-06-06,amazon-now,Delhi,110040,100,,,1
+2026-06-06-1228,2026-06-06,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-06-1228,2026-06-06,amazon-now,Mumbai,400601,100,,,1
+2026-06-06-1228,2026-06-06,amazon-now,Mumbai,400703,100,,,1
+2026-06-06-1228,2026-06-06,amazon-now,Noida,201307,100,,,1
+2026-06-06-1228,2026-06-06,amazon-now,Noida,201309,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Bengaluru,560028,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Delhi,110026,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Delhi,110040,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Ghaziabad,201005,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Mumbai,400703,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Noida,201307,100,,,1
+2026-06-07-0934,2026-06-07,amazon-now,Noida,201309,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Bengaluru,560028,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Delhi,110026,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Delhi,110040,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Ghaziabad,201005,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Mumbai,400703,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Noida,201307,100,,,1
+2026-06-07-1225,2026-06-07,amazon-now,Noida,201309,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Bengaluru,560028,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Delhi,110026,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Delhi,110040,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Ghaziabad,201001,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Ghaziabad,201005,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Mumbai,400601,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Mumbai,400703,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Noida,201307,100,,,1
+2026-06-08-0925,2026-06-08,amazon-now,Noida,201309,100,,,1
+2026-06-08-1221,2026-06-08,amazon-now,Bengaluru,560028,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Delhi,110026,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Delhi,110040,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Ghaziabad,201001,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Ghaziabad,201005,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Mumbai,400601,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Mumbai,400703,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Noida,201307,35,100,65,1
+2026-06-08-1221,2026-06-08,amazon-now,Noida,201309,35,100,65,1
+2026-06-09-0924,2026-06-09,amazon-now,Bengaluru,560028,35,55,36.4,1
+2026-06-09-0924,2026-06-09,amazon-now,Delhi,110040,35,55,36.4,1
+2026-06-09-0924,2026-06-09,amazon-now,Ghaziabad,201001,35,55,36.4,1
+2026-06-09-0924,2026-06-09,amazon-now,Ghaziabad,201005,35,55,36.4,1
+2026-06-09-0924,2026-06-09,amazon-now,Mumbai,400601,35,55,36.4,1
+2026-06-09-0924,2026-06-09,amazon-now,Mumbai,400703,35,55,36.4,1
+2026-06-09-0924,2026-06-09,amazon-now,Noida,201307,35,100,65,1
+2026-06-09-0924,2026-06-09,amazon-now,Noida,201309,35,55,36.4,1
+2026-06-09-1226,2026-06-09,amazon-now,Bengaluru,560028,35,55,36.4,1
+2026-06-09-1226,2026-06-09,amazon-now,Delhi,110040,35,55,36.4,1
+2026-06-09-1226,2026-06-09,amazon-now,Ghaziabad,201001,35,55,36.4,1
+2026-06-09-1226,2026-06-09,amazon-now,Ghaziabad,201005,35,55,36.4,1
+2026-06-09-1226,2026-06-09,amazon-now,Mumbai,400601,35,55,36.4,1
+2026-06-09-1226,2026-06-09,amazon-now,Mumbai,400703,35,55,36.4,1
+2026-06-09-1226,2026-06-09,amazon-now,Noida,201307,35,100,65,1
+2026-06-09-1226,2026-06-09,amazon-now,Noida,201309,35,55,36.4,1
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*
+
+
+## Related
+<!-- combined-backbone -->
+[[Platform - amazon]]
