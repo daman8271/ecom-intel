@@ -380,3 +380,10 @@
 {"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-7", "ts": "2026-06-28T01:05:57"}
 {"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-8", "ts": "2026-06-28T01:05:57"}
 {"platform": "flipkart-minutes", "secs": 130, "sweep": "warmstart-pincode-20260628-9", "ts": "2026-06-28T01:05:57"}
+{"platform":"flipkart-minutes","secs":2558,"sweep":"2026-06-28-1200","ts":"2026-06-28T06:34:22+0530"}
+{"platform":"flipkart","secs":551,"sweep":"2026-06-28-1200","ts":"2026-06-28T06:43:33+0530"}
+{"platform":"zepto","secs":1022,"sweep":"2026-06-28-1200","ts":"2026-06-28T07:00:35+0530"}
+{"platform":"amazon","secs":594,"sweep":"2026-06-28-1200","ts":"2026-06-28T07:10:29+0530"}
+{"platform":"amazon-fresh","secs":6883,"sweep":"2026-06-28-1200","ts":"2026-06-28T09:05:12+0530"}
+{"platform":"amazon-now","secs":3511,"sweep":"2026-06-28-1200","ts":"2026-06-28T10:03:43+0530"}
+{"platform":"blinkit","secs":4936,"sweep":"2026-06-28-1200","ts":"2026-06-28T11:25:59+0530"}
