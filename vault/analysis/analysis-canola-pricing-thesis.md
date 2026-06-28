@@ -27,7 +27,7 @@ the budget **Sano** line undercutting the flagship Jivo line on the same shelf?
 - [[jivo-canola-cold-press-edible-oil-1l]] — flagship 1 L, the most-observed canola SKU
 - [[jivo-cold-pressed-canola-oil-1l]] — alt 1 L listing
 - [[jivo-cold-pressed-canola-oil-5l]] — 5 L value pack
-- [[jivo-canola-cold-press-oil-indian-medical-association-recommended-5l]] — IMA-badged 5 L
+- [[jivo-canola-cold-pressed-edible-oil-5-litres-5l]] — IMA-badged 5 L
 - [[sano-canola-oil-healthy-cooking-oil-for-daily-userecommended-by-for-all-type-of-cuisineslowest-in-saturated-fat-1l-1l]] — Sano budget 1 L (watch vs flagship)
 
 ## Platforms in play
