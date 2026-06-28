@@ -10,6 +10,51 @@ const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
 const CONCURRENCY = parseInt(process.env.CONCURRENCY || '2', 10);
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
+// ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
+// At 1,885 pincodes a run is long, so it MUST survive interruption and rate-limiting
+// without losing work or throwing. Three additions, all opt-in / fail-safe:
+//   (1) checkpoint/resume — per-pincode result cached in .progress.<date>.json; a
+//       re-run the same day skips finished pincodes and resumes where it stopped.
+//   (2) block-detection + exponential backoff — a 403/429/503 or an Akamai/"access
+//       denied"/captcha body is treated as a block: back off (capped) and retry a
+//       few times, then record 0 rows and flag the run partial (NEVER evade — owner rule).
+//   (3) partial tolerance — one pincode can never kill the run; result.json always
+//       gets written with a top-level `partial` flag so the batch wrapper sees it.
+// SIM hooks (BLINKIT_SIM / BLINKIT_BLOCK_SIM) drive the hermetic fault-injection
+// tests in test_hardening.md without launching a browser or hitting Blinkit live.
+const PROG = `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
+const MAX_BLOCK_RETRIES = parseInt(process.env.BLINKIT_BLOCK_RETRIES || '4', 10);
+// Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
+// which could appear in legitimate page text) — HTTP status carries those.
+const BLOCK_RE = /access denied|akamai|reference #\s*\d|too many requests|rate[\s-]?limit|are you a human|captcha|forbidden/i;
+
+async function backoff(attempt) {
+  const ms = Math.min(60000, 2000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1000);
+  process.stderr.write(`[backoff] attempt ${attempt} -> sleeping ${Math.round(ms)}ms\n`);
+  await new Promise((r) => setTimeout(r, ms));
+}
+
+// Classify a navigation response / page as blocked. Returns a short reason string or null.
+async function pageBlocked(resp, page) {
+  try {
+    if (resp && typeof resp.status === 'function') {
+      const s = resp.status();
+      if (s === 403 || s === 429 || s === 503) return `http ${s}`;
+    }
+    const body = (await page.content()).slice(0, 5000);
+    if (BLOCK_RE.test(body)) return 'block-signature';
+  } catch (_) { /* content() can race a navigation; treat as not-blocked */ }
+  return null;
+}
+
+function loadProgress() {
+  try { return fs.existsSync(PROG) ? JSON.parse(fs.readFileSync(PROG, 'utf8')) : {}; }
+  catch (_) { return {}; }
+}
+function saveProgress(done) {
+  try { fs.writeFileSync(PROG, JSON.stringify(done)); } catch (e) { process.stderr.write(`[progress] write failed: ${e.message}\n`); }
+}
+
 function parseVolMl(pack) {
   if (!pack) return null;
   const s = pack.toLowerCase();
@@ -86,6 +131,23 @@ function canonical(name, pack) {
 
 async function scrapeOne(browser, rec) {
   const t0 = Date.now();
+  // SIM hooks (tests only; never active in production runs):
+  //   BLINKIT_BLOCK_SIM=1 -> every pincode reports blocked (drives the backoff/partial test)
+  //   BLINKIT_SIM=1       -> return a synthetic resolved row without a browser (resume test)
+  if (process.env.BLINKIT_BLOCK_SIM === '1') {
+    await new Promise((r) => setTimeout(r, 10));
+    return { ...rec, store_id: '', store_name: '', resolved: false, blocked: 'sim-block', rows: [] };
+  }
+  if (process.env.BLINKIT_SIM === '1') {
+    await new Promise((r) => setTimeout(r, 10));
+    const rows = [{
+      city: rec.city, pincode: rec.pincode, locality: rec.locality,
+      store_id: 'sim', store_name: 'sim-store', sku_raw: 'Jivo Sim Oil',
+      canonical: 'jivo-sim-oil-1l', pack: '1 l', vol_ml: 1000, sale: 199, mrp: 250,
+      discount_pct: 20, per_litre: 199, eta_min: 10, in_stock: 1,
+    }];
+    return { ...rec, store_id: 'sim', store_name: 'sim-store', resolved: true, blocked: null, rows };
+  }
   const ctx = await browser.newContext({
     userAgent: UA,
     locale: 'en-IN',
@@ -102,6 +164,7 @@ async function scrapeOne(browser, rec) {
   let rows = [];
   let store = {};
   let resolved = false;
+  let blocked = null;
   const injectLocation = (r) => page.evaluate((rr) => {
     localStorage.setItem('location', JSON.stringify({
       coords: { isDefault: false, lat: rr.lat, lon: rr.lon, locality: rr.locality, id: 1, isTopCity: true, cityName: rr.city, landmark: rr.landmark, addressId: null }
@@ -113,8 +176,16 @@ async function scrapeOne(browser, rec) {
     return { loc, m };
   };
   try {
-    await page.goto('https://blinkit.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+    const firstResp = await page.goto('https://blinkit.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2000);
+    // Block check on the landing page: if Blinkit is rate-limiting/Akamai-walling this
+    // IP, bail early with a blocked signal so the caller can back off (never evade).
+    blocked = await pageBlocked(firstResp, page);
+    if (blocked) {
+      process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} -> ${blocked} on landing\n`);
+      await ctx.close();
+      return { ...rec, store_id: '', store_name: '', resolved: false, blocked, rows: [] };
+    }
     // Inject the pincode's location, then re-load HOME (this is what makes
     // Blinkit re-resolve the dark store from the new coords) and POLL the
     // merchant until it leaves the Gurgaon default — search-page navigation
@@ -239,12 +310,15 @@ async function scrapeOne(browser, rec) {
     }
     rows = [...dd.values()];
   } catch (e) {
-    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`);
+    // A navigation error whose message carries a block signature is treated as a block
+    // (so the caller backs off); any other error is just a per-pincode failure (0 rows).
+    if (BLOCK_RE.test(String(e && e.message))) blocked = 'block-error';
+    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}${blocked ? ' (block)' : ''}\n`);
   } finally {
-    await ctx.close();
+    try { await ctx.close(); } catch (_) { /* context may already be closed */ }
   }
   process.stderr.write(`[ok] ${rec.city} ${rec.pincode} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${store.name || 'n/a'}\n`);
-  return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, rows };
+  return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, blocked, rows };
 }
 
 async function pool(items, n, fn) {
@@ -265,23 +339,53 @@ async function pool(items, n, fn) {
 // only runs when invoked directly, so `require`-ing this file never launches a browser.
 module.exports = { parseVolMl, canonical };
 
+// Scrape one pincode with block-aware exponential backoff. A blocked attempt backs
+// off and retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag
+// the result `partial_block` (the run is then marked partial). NEVER evades — it only
+// waits and retries politely, then gives up honestly.
+async function scrapeWithBackoff(browser, rec) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await scrapeOne(browser, rec);
+    if (!res.blocked) return res;
+    if (attempt >= MAX_BLOCK_RETRIES) {
+      process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} still blocked after ${attempt} retr${attempt === 1 ? 'y' : 'ies'} (${res.blocked}); recording 0 rows, run is partial\n`);
+      return { ...res, partial_block: true };
+    }
+    await backoff(attempt);
+  }
+}
+
 if (require.main === module) (async () => {
-  const browser = await chromium.launch({ headless: true });
+  const browser = process.env.BLINKIT_SIM === '1' ? null : await chromium.launch({ headless: true });
   const t0 = Date.now();
-  const perPin = await pool(PINCODES, CONCURRENCY, (rec) => scrapeOne(browser, rec));
-  await browser.close();
+  // Resume: reload any per-pincode results already captured for TODAY and skip them.
+  const done = loadProgress();
+  const doneCount = Object.keys(done).length;
+  if (doneCount) process.stderr.write(`[resume] ${doneCount} pincodes already done in ${PROG}; resuming\n`);
+  let partial = false;
+  const perPin = await pool(PINCODES, CONCURRENCY, async (rec) => {
+    if (done[rec.pincode]) return done[rec.pincode];          // checkpoint hit — skip
+    const res = await scrapeWithBackoff(browser, rec);
+    if (res.blocked || res.partial_block) partial = true;     // any unresolved block => partial run
+    done[rec.pincode] = res;
+    saveProgress(done);                                       // checkpoint AFTER each pincode
+    return res;
+  });
+  if (browser) await browser.close();
   const allRows = perPin.flatMap((p) => p.rows);
   const summary = {
     pincodes_total: PINCODES.length,
     pincodes_resolved: perPin.filter((p) => p.resolved).length,
     pincodes_unresolved: perPin.filter((p) => !p.resolved).length,
     pincodes_with_jivo: perPin.filter((p) => p.rows.length > 0).length,
+    pincodes_blocked: perPin.filter((p) => p.blocked || p.partial_block).length,
     total_rows: allRows.length,
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
+    partial,
     captured_at: new Date().toISOString(),
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
-  fs.writeFileSync(process.env.OUT_FILE || (__dirname + '/result.json'), JSON.stringify({ summary, perPin, allRows }, null, 2));
+  fs.writeFileSync(process.env.OUT_FILE || (__dirname + '/result.json'), JSON.stringify({ summary, perPin, allRows, partial }, null, 2));
   console.log(JSON.stringify(summary));
 })();
