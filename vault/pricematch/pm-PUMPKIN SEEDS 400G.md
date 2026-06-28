@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-27
-observations: 160
+last_seen: 2026-06-28
+observations: 168
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-a
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-27) — ref ₹389 vs live ₹-
-- **Days below reference:** 0 of 20
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-28) — ref ₹389 vs live ₹-
+- **Days below reference:** 0 of 21
 
-## Ref-vs-live history (160 observations)
+## Ref-vs-live history (168 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -204,6 +204,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-27,flipkart,OOS,SVD,389,,,,,,0,false
 2026-06-27,flipkart-minutes,NOT_LISTED,SVD,389,,,,,,0,false
 2026-06-27,zepto,NOT_LISTED,SVD,389,,,,,,0,false
+2026-06-28,amazon,OOS,SVD,389,,,,,,0,false
+2026-06-28,amazon-fresh,NOT_LISTED,SVD,389,,,,,,0,false
+2026-06-28,amazon-now,NOT_LISTED,SVD,389,,,,,,0,false
+2026-06-28,bigbasket,NOT_LISTED,SVD,389,,,,,,0,false
+2026-06-28,blinkit,NOT_LISTED,SVD,389,,,,,,0,false
+2026-06-28,flipkart,OOS,SVD,389,,,,,,0,false
+2026-06-28,flipkart-minutes,NOT_LISTED,SVD,389,,,,,,0,false
+2026-06-28,zepto,NOT_LISTED,SVD,389,,,,,,0,false
 ```
 
 ---

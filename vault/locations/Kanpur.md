@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 3
-observations: 58
+observations: 59
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Kanpur (3)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-cooking-sunflower-oil-can-4l]]
 
-## Observations (58 rows)
+## Observations (59 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -84,6 +84,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-20-1207,2026-06-20,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,174,255,31,1
 2026-06-24-0832,2026-06-24,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,170,255,33,1
 2026-06-24-1208,2026-06-24,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,170,255,33,1
+2026-06-28-0551,2026-06-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,208001,164,255,35.7,1
 2026-06-14-0832,2026-06-14,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,208001,737,1080,31,1
 2026-06-21-1211,2026-06-21,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,208001,729,1080,32,1
 ```
