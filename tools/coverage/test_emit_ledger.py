@@ -24,5 +24,20 @@ class TestEmit(unittest.TestCase):
         self.assertEqual(by["560002"], "serviceable_no_jivo")
         self.assertEqual(by["560003"], "not_serviceable")   # configured, no row
 
+    def test_resolved_no_jivo_is_serviceable(self):
+        # result.json marks 560003 resolved (store served) but it has NO history row;
+        # with result_path it must be serviceable_no_jivo, NOT not_serviceable.
+        res = os.path.join(self.d, "result.json")
+        json.dump({"perPin":[
+            {"pincode":"560003","resolved":True,"rows":[]},
+            {"pincode":"560001","resolved":True,"rows":[{}]},
+        ]}, open(res,"w"))
+        led2 = os.path.join(self.d, "ledger2.csv")
+        emit_for_run("blinkit","r1","2026-06-29",self.hist,self.cfg,led2,result_path=res)
+        by = {r["pincode"]: r["status"] for r in csv.DictReader(open(led2))}
+        self.assertEqual(by["560001"], "price_captured")        # price wins over resolved
+        self.assertEqual(by["560002"], "serviceable_no_jivo")   # had a (priceless) history row
+        self.assertEqual(by["560003"], "serviceable_no_jivo")   # resolved, no row -> served
+
 if __name__ == "__main__":
     unittest.main()

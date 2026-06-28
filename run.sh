@@ -132,7 +132,7 @@ if [ "$P" = "blinkit" ] && [ "${COVERAGE_FULL:-0}" = "1" ]; then
   CFG_USED="${PINCODES_FILE:-$PDIR/pincodes.full25.json}"
   echo "[$RUN_ID] emitting coverage ledger from history (config=$CFG_USED) ..."
   python3 "$DIR/tools/coverage/emit_ledger_from_history.py" blinkit "$RUN_ID" "$(date +%F)" \
-    "$DIR/data/blinkit/history.csv" "$CFG_USED" "$DIR/data/coverage/ledger.csv" || true
+    "$DIR/data/blinkit/history.csv" "$CFG_USED" "$DIR/data/coverage/ledger.csv" "$PDIR/result.json" || true
 fi
 
 # ---- Telegram delivery (best-effort; MUST NOT fail the run) ----
