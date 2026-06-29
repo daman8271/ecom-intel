@@ -1,5 +1,38 @@
 const { chromium } = require('playwright');
 const fs = require('fs');
+const path = require('path');
+
+// --- Competitor mode (env-gated; the Jivo path below is byte-for-byte unchanged) ----------
+// Login-free DOM scraper => works nationally (GPS location resolve), so unlike the logged-in
+// API path it is NOT bound to one Flipkart datacenter. Captures the competitor shelf via
+// category sweeps and a brand whitelist; oil-type/grade accuracy is decided downstream by the
+// report (oil_classifier.json on the product NAME).
+const COMPETITOR_MODE = process.env.COMPETITOR_MODE === '1';
+const COMP_DIR = path.join(__dirname, '..', '..', 'tools', 'competitor');
+const COMP_DATE = process.env.COMPETITOR_DATE || new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+function loadCompetitorRegex() {
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(COMP_DIR, 'competitor_brands.json'), 'utf8'));
+    if (j.whitelist_regex) return new RegExp(j.whitelist_regex, 'i');
+  } catch (_) { /* fall through to default */ }
+  return /jivo|sano|fortune|saffola|dhara|oleev|figaro|borges|del ?monte|gold ?winner|sunpure|freedom|gemini|sundrop|nature ?fresh|tata|patanjali|emami|leonardo|disano|ricela|idhayam|gulab|natureland|p ?mark|engine/i;
+}
+function loadCategoryQueries() {
+  try {
+    const j = JSON.parse(fs.readFileSync(path.join(COMP_DIR, 'category_queries.json'), 'utf8'));
+    const q = Array.isArray(j) ? j : (j.queries || []);
+    if (q.length) return q;
+  } catch (_) { /* fall through to default */ }
+  return ['olive oil', 'mustard oil', 'sunflower oil', 'canola oil', 'rice bran oil', 'groundnut oil', 'soyabean oil', 'blended oil'];
+}
+const COMPETITOR_RE = COMPETITOR_MODE ? loadCompetitorRegex() : null;
+const COMPETITOR_TERMS = COMPETITOR_MODE ? ['jivo', ...loadCategoryQueries()] : [];
+// Logged-in session for the DOM context. As of 2026-06-30 Flipkart GATES *guest* hyperlocal
+// search (both direct /search and the in-page box bounce a logged-out user back to the store
+// landing with 0 products). So competitor mode loads the transplanted session if present; the
+// website DOM (unlike the DC-routed rome.api) appears to render products for any pincode once
+// logged in, which is what unlocks national coverage. Falls back to guest (0 rows) if absent.
+const FKM_STATE = path.join(__dirname, 'secrets', 'flipkart-minutes.storageState.json');
 
 // ---------------------------------------------------------------------------
 // FLIPKART MINUTES scraper.  STATUS: WORKING from this datacenter VPS IP
@@ -49,7 +82,7 @@ function parseVolMl(pack) {
   return toMl(parseFloat(m[1]), m[2]);
 }
 
-function canonical(name, pack) {
+function canonical(name, pack, brand) {
   const base = (name || '').toLowerCase()
     .replace(/\(.*?\)/g, '')
     .replace(/[^a-z0-9 ]/g, '')
@@ -57,7 +90,20 @@ function canonical(name, pack) {
     .replace(/\s/g, '-');
   const vol = parseVolMl(pack);
   const volTag = vol ? (vol >= 1000 ? (vol / 1000) + 'l' : vol + 'ml') : 'na';
-  return `${base}-${volTag}`.replace(/--+/g, '-');
+  // Optional brand prefix (competitor mode): keeps a competitor SKU from colliding with a
+  // Jivo SKU of the same name+pack on dedup. Empty when brand is falsy -> Jivo output unchanged.
+  const brandTag = brand ? (String(brand).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') + '-') : '';
+  return `${brandTag}${base}-${volTag}`.replace(/--+/g, '-');
+}
+
+// Competitor per-litre needs true VOLUME: rivals sell oil by weight ("910 g"). Convert mass to
+// volume via edible-oil density (~0.916 g/ml) so 910 g -> ~993 ml (matches the other collectors).
+function compVolMl(pack) {
+  const raw = parseVolMl(pack); // combos handled; grams returned as-is here
+  if (raw == null) return { vol: null, unit: 'ml' };
+  const isMass = /\d\s*(g|kg)\b/i.test(pack || '') && !/\d\s*(ml|l|ltr|litre)\b/i.test(pack || '');
+  if (isMass) return { vol: Math.round((raw / 0.916) * 100) / 100, unit: 'g' };
+  return { vol: raw, unit: 'ml' };
 }
 
 // Resolve the Minutes delivery location for this context via GPS. Returns the
@@ -181,6 +227,98 @@ async function scrapeOne(browser, rec) {
   return { ...rec, store_id: store.id || '', store_name: store.name || '', serviceable, rows };
 }
 
+// Competitor variant of scrapeOne: same GPS location resolve + card geometry, but sweeps the
+// category queries, keeps any whitelisted brand (not just Jivo), tags brand, and emits the
+// shared competitor row contract. Jivo's scrapeOne above is untouched.
+async function scrapeOneCompetitor(browser, rec) {
+  const t0 = Date.now();
+  const ctx = await browser.newContext({
+    userAgent: UA, locale: 'en-IN', timezoneId: 'Asia/Kolkata',
+    viewport: { width: 1280, height: 900 },
+    geolocation: { latitude: rec.lat, longitude: rec.lon }, permissions: ['geolocation'],
+    ...(fs.existsSync(FKM_STATE) ? { storageState: FKM_STATE } : {}),
+  });
+  const page = await ctx.newPage();
+  await ctx.route('**/*', (route) => {
+    const t = route.request().resourceType();
+    if (['image', 'font', 'media'].includes(t)) return route.abort();
+    return route.continue();
+  });
+  let rows = [];
+  let store = {};
+  let serviceable = false;
+  try {
+    const addr = await resolveLocation(page);
+    serviceable = !!addr;
+    const pin = await page.evaluate(() => localStorage.getItem('mypin') || '');
+    store = { id: pin, name: addr };
+    if (serviceable) {
+      for (const term of COMPETITOR_TERMS) {
+        await page.goto(`https://www.flipkart.com/search?q=${encodeURIComponent(term)}&marketplace=HYPERLOCAL`, { waitUntil: 'domcontentloaded', timeout: 30000 });
+        await page.waitForTimeout(5000);
+        await page.evaluate(() => window.scrollBy(0, 1400));
+        await page.waitForTimeout(1800);
+        const cards = await page.evaluate((reSrc) => {
+          const RE = new RegExp(reSrc, 'i');
+          const out = []; const seen = new Set();
+          document.querySelectorAll('a, div').forEach((el) => {
+            const t = el.innerText || '';
+            if (!RE.test(t) || !/₹/.test(t)) return;
+            const r = el.getBoundingClientRect();
+            if (r.width < 150 || r.width > 380) return;
+            if (r.height < 300 || r.height > 560) return;
+            const key = t.slice(0, 90);
+            if (seen.has(key)) return; seen.add(key);
+            out.push(t.split('\n').map((s) => s.trim()).filter(Boolean));
+          });
+          return out;
+        }, COMPETITOR_RE.source);
+        let rank = 0;
+        for (const lines of cards) {
+          rank++;
+          const joined = lines.join(' ');
+          const inStock = !lines.some((l) => /currently unavailable|out of stock|sold out|notify me/i.test(l));
+          const isAd = lines.some((l) => /^(ad|sponsored)$/i.test(l.trim()));
+          const disc = (joined.match(/(\d+)%\s*off/i) || [])[1];
+          const packLine = lines.find((l) => /^\d[\d.]*\s*(ml|l|ltr|litre|kg|g)$/i.test(l));
+          const pack = packLine || '';
+          const nameLine = lines.find((l) => COMPETITOR_RE.test(l)) || '';
+          const name = nameLine.replace(/\(pack of \d+\)/i, '').replace(/\s+/g, ' ').trim();
+          const brandMatch = (name.match(COMPETITOR_RE) || [])[0];
+          const prices = lines.filter((l) => /^₹/.test(l)).map((l) => parseInt(l.replace(/[₹,\s]/g, ''), 10)).filter((n) => n > 0);
+          const sale = prices.length ? Math.min(...prices) : null;
+          const mrp = prices.length ? Math.max(...prices) : sale;
+          if (!brandMatch || !sale) continue;
+          const brand = brandMatch.replace(/\s+/g, ' ').trim();
+          const { vol, unit } = compVolMl(pack);
+          rows.push({
+            platform: 'flipkart-minutes', city: rec.city, pincode: rec.pincode,
+            store_id: store.id || '', store_name: store.name || '',
+            brand, name, canonical: canonical(name, pack, brand),
+            category: term === 'jivo' ? '' : term, sub_grade: '',
+            pack: pack || '', vol_ml: vol, unit,
+            per_litre: vol ? Math.round((sale / (vol / 1000)) * 100) / 100 : null,
+            mrp, sale,
+            discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : (disc ? parseFloat(disc) : null),
+            in_stock: inStock ? 1 : 0, rank, is_ad: isAd ? 1 : 0,
+            captured_at: new Date().toISOString(),
+          });
+        }
+        await page.waitForTimeout(600 + Math.random() * 900);
+      }
+    }
+    const dd = new Map();
+    for (const r of rows) { const k = `${r.store_id}|${(r.brand || '').toLowerCase()}|${r.canonical}`; if (!dd.has(k)) dd.set(k, r); }
+    rows = [...dd.values()];
+  } catch (e) {
+    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`);
+  } finally {
+    await ctx.close();
+  }
+  process.stderr.write(`[ok:comp] ${rec.city} ${rec.pincode} -> ${rows.length} competitor SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) serviceable=${serviceable}\n`);
+  return { ...rec, store_id: store.id || '', store_name: store.name || '', serviceable, rows };
+}
+
 async function pool(items, n, fn) {
   const results = [];
   let i = 0;
@@ -202,7 +340,8 @@ module.exports = { parseVolMl, canonical };
 if (require.main === module) (async () => {
   const browser = await chromium.launch({ headless: true });
   const t0 = Date.now();
-  const perPin = await pool(PINCODES, CONCURRENCY, (rec) => scrapeOne(browser, rec));
+  const fn = COMPETITOR_MODE ? scrapeOneCompetitor : scrapeOne;
+  const perPin = await pool(PINCODES, CONCURRENCY, (rec) => fn(browser, rec));
   await browser.close();
   const allRows = perPin.flatMap((p) => p.rows);
   const summary = {
@@ -213,8 +352,25 @@ if (require.main === module) (async () => {
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
     captured_at: new Date().toISOString(),
+    mode: COMPETITOR_MODE ? 'browser-competitor' : 'browser',
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
+  if (COMPETITOR_MODE) {
+    // Competitor output contract (matches blinkit/zepto): lands ONLY under tools/competitor/data,
+    // never the jivo result.json / cron-git-added paths, and never a "Jivo-" filename.
+    const dataDir = path.join(COMP_DIR, 'data');
+    fs.mkdirSync(dataDir, { recursive: true });
+    fs.writeFileSync(path.join(dataDir, `flipkart-minutes_competitor_${COMP_DATE}.json`), JSON.stringify({ summary, allRows }, null, 2));
+    const csv = path.join(dataDir, 'competitor_history.csv');
+    const header = 'run_id,date_ist,platform,brand,category,canonical,city,pincode,store_id,pack,vol_ml,per_litre,mrp,sale,discount_pct,in_stock,rank,is_ad\n';
+    if (!fs.existsSync(csv)) fs.writeFileSync(csv, header);
+    const esc = (v) => `"${String(v == null ? '' : v).replace(/"/g, '""')}"`;
+    const out = allRows.map((r) => [`${COMP_DATE}-fkmbrowser`, COMP_DATE, 'flipkart-minutes', r.brand, r.category, r.canonical, r.city, r.pincode, r.store_id, r.pack, r.vol_ml, r.per_litre, r.mrp, r.sale, r.discount_pct, r.in_stock, r.rank, r.is_ad].map(esc).join(',')).join('\n');
+    if (out) fs.appendFileSync(csv, out + '\n');
+    process.stderr.write(`[comp] wrote ${allRows.length} rows -> ${path.join(dataDir, `flipkart-minutes_competitor_${COMP_DATE}.json`)}\n`);
+    console.log(JSON.stringify({ ...summary, mode: 'competitor' }));
+    return;
+  }
   fs.writeFileSync(process.env.OUT_FILE || (__dirname + '/result.json'), JSON.stringify({ summary, perPin, allRows }, null, 2));
   console.log(JSON.stringify(summary));
 })();
