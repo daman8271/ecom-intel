@@ -23,6 +23,9 @@ const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
 const CONCURRENCY = parseInt(process.env.FKM_CONCURRENCY || '10', 10);
 const OUT = process.env.OUT_FILE || path.join(__dirname, 'result.json');
 const STATE = path.join(__dirname, 'secrets', 'flipkart-minutes.storageState.json');
+// SIM hooks for the hermetic fault-injection tests (see test_hardening.md). Inert in
+// production; declared early because the session/fallback check below consults it.
+const SIM = process.env.FKM_SIM === '1' || process.env.FKM_BLOCK_SIM === '1';
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 FKUA/msite/0.0.4/msite/Mobile';
 
 // addressInfo.state for the 26 cities in the pincode grid (location/update wants a state).
@@ -47,7 +50,9 @@ function fallbackToBrowser(reason) {
 
 // Direct-run only: a `require` (offline volparse test) must never be able to spawn the
 // browser scraper. When run directly the behavior is unchanged.
-if (require.main === module && !fs.existsSync(STATE)) fallbackToBrowser('no logged-in session at secrets/flipkart-minutes.storageState.json');
+// (SIM modes never touch the live session or the browser fallback — they short-circuit
+// before any network call, so a missing storageState must not trigger the fallback.)
+if (require.main === module && !SIM && !fs.existsSync(STATE)) fallbackToBrowser('no logged-in session at secrets/flipkart-minutes.storageState.json');
 
 function dcN() {
   try {
@@ -59,6 +64,54 @@ function dcN() {
 const N = dcN();
 const LOC_URL = `https://${N}.rome.api.flipkart.com/api/4/location/update`;
 const SEARCH_URL = `https://${N}.rome.api.flipkart.com/api/4/page/fetch?cacheFirst=false`;
+
+// ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
+// At full 25-city scale a run loops far more pincodes, so it MUST survive interruption
+// and rate-limiting without losing work or throwing. Three additions, mirroring the
+// proven blinkit pilot (commit c4ab885d5), adapted to this direct-API/bucket scraper.
+// All opt-in / fail-safe:
+//   (1) checkpoint/resume — per-pincode result cached in .progress.<date>.json; a
+//       re-run the same day skips finished pincodes and resumes where it stopped.
+//   (2) block-detection + exponential backoff — a 403/429/503 on the BFF call, or an
+//       Akamai/"access denied"/captcha body, is treated as a block: back off (capped)
+//       and retry a few times, then record 0 rows and flag the run partial. NEVER
+//       evade — polite wait+retry only (owner rule); no proxies, no fingerprint games.
+//   (3) partial tolerance — one pincode can never kill the run; result.json always
+//       gets written with a top-level `partial` flag so the batch wrapper sees it.
+// SIM hooks (FKM_SIM / FKM_BLOCK_SIM) drive the hermetic fault-injection tests in
+// test_hardening.md without launching a browser or hitting Flipkart live (declared above).
+const PROG = `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
+const MAX_BLOCK_RETRIES = parseInt(process.env.FKM_BLOCK_RETRIES || '4', 10);
+// Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
+// which could appear in legitimate JSON text) — HTTP status carries those.
+const BLOCK_RE = /access denied|akamai|reference #\s*\d|too many requests|rate[\s-]?limit|are you a human|captcha|forbidden/i;
+
+async function backoff(attempt) {
+  const ms = Math.min(60000, 2000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1000);
+  process.stderr.write(`[backoff] attempt ${attempt} -> sleeping ${Math.round(ms)}ms\n`);
+  await new Promise((r) => setTimeout(r, ms));
+}
+
+// Classify a BFF api() response as blocked. Returns a short reason string or null.
+// Status 403/429/503 is an IP-level block; an Akamai/captcha HTML body (served instead
+// of JSON when walled) is caught by BLOCK_RE. A plain non-200 (e.g. 302 redirect, 404)
+// is NOT a block — it is handled by the normal serviceability logic.
+function respBlocked(resp) {
+  if (!resp) return null;
+  const s = resp.status;
+  if (s === 403 || s === 429 || s === 503) return `http ${s}`;
+  const text = resp.text || (resp.json ? '' : (resp.error || ''));
+  if (text && BLOCK_RE.test(text)) return 'block-signature';
+  return null;
+}
+
+function loadProgress() {
+  try { return fs.existsSync(PROG) ? JSON.parse(fs.readFileSync(PROG, 'utf8')) : {}; }
+  catch (_) { return {}; }
+}
+function saveProgress(done) {
+  try { fs.writeFileSync(PROG, JSON.stringify(done)); } catch (e) { process.stderr.write(`[progress] write failed: ${e.message}\n`); }
+}
 
 // ml for one "<number> <unit>" token. l/ltr/litre/kg -> *1000; ml/g -> as-is.
 function unitMl(n, u) {
@@ -109,7 +162,9 @@ async function api(page, url, body) {
         body: JSON.stringify(body),
       });
       const t = await r.text(); let j = null; try { j = JSON.parse(t); } catch (_) {}
-      return { status: r.status, json: j };
+      // Return a short slice of the raw body too: when Akamai walls the IP it serves an
+      // HTML block page instead of JSON, which respBlocked() scans for a block signature.
+      return { status: r.status, json: j, text: j ? '' : t.slice(0, 4000) };
     } catch (e) { return { status: -1, error: String(e) }; }
   }, { url, body });
 }
@@ -185,6 +240,23 @@ function parseProducts(searchJson, rec) {
 }
 
 async function scrapePincode(page, rec) {
+  // SIM hooks (tests only; never active in production runs):
+  //   FKM_BLOCK_SIM=1 -> every pincode reports blocked (drives the backoff/partial test)
+  //   FKM_SIM=1       -> return a synthetic serviceable row without a browser (resume test)
+  if (process.env.FKM_BLOCK_SIM === '1') {
+    await new Promise((r) => setTimeout(r, 10));
+    return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [], blocked: 'sim-block' };
+  }
+  if (process.env.FKM_SIM === '1') {
+    await new Promise((r) => setTimeout(r, 10));
+    const rows = [{
+      city: rec.city, pincode: rec.pincode, locality: rec.locality,
+      store_id: 'sim', store_name: 'sim-store', sku_raw: 'Jivo Sim Oil',
+      canonical: 'jivo-sim-oil-1l', pack: '1 L', vol_ml: 1000, sale: 199, mrp: 250,
+      discount_pct: 20, per_litre: 199, eta_min: null, in_stock: 1,
+    }];
+    return { ...rec, serviceable: true, store_id: 'sim', store_name: 'sim-store', rows, blocked: null };
+  }
   const locBody = {
     geoLocation: { latitude: String(rec.lat), longitude: String(rec.lon) },
     addressInfo: { addressLine1: rec.locality || rec.city, city: rec.city, state: STATE_OF[rec.city] || '', pincode: String(rec.pincode) },
@@ -199,15 +271,36 @@ async function scrapePincode(page, rec) {
   let serviceable = false;
   for (let attempt = 1; attempt <= 2; attempt++) {
     const loc = await api(page, LOC_URL, locBody);
+    // Block check on the location call: a walled IP fails here before any product fetch.
+    let b = respBlocked(loc);
+    if (b) { process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} -> ${b} on location/update\n`); return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [], blocked: b }; }
     serviceable = loc.status === 200;
     const srch = await api(page, SEARCH_URL, searchBody);
+    b = respBlocked(srch);
+    if (b) { process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} -> ${b} on page/fetch\n`); return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [], blocked: b }; }
     const redir = (((srch.json && (srch.json.RESPONSE || srch.json).pageMeta) || {}).redirectionObject || {}).statusCode;
-    if (redir === 302) { if (attempt < 2) { await page.waitForTimeout(600); continue; } return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [] }; }
+    if (redir === 302) { if (attempt < 2) { await page.waitForTimeout(600); continue; } return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [], blocked: null }; }
     const rows = parseProducts(srch.json, rec);
     const sid = (rows[0] || {}).store_id || '';
-    return { ...rec, serviceable: true, store_id: sid, store_name: sid, rows };
+    return { ...rec, serviceable: true, store_id: sid, store_name: sid, rows, blocked: null };
   }
-  return { ...rec, serviceable, store_id: '', store_name: '', rows: [] };
+  return { ...rec, serviceable, store_id: '', store_name: '', rows: [], blocked: null };
+}
+
+// Scrape one pincode with block-aware exponential backoff. A blocked attempt backs off and
+// retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag the result
+// `partial_block` (the run is then marked partial). NEVER evades — it only waits and retries
+// politely on the same context, then gives up honestly.
+async function scrapeWithBackoff(page, rec) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await scrapePincode(page, rec);
+    if (!res.blocked) return res;
+    if (attempt >= MAX_BLOCK_RETRIES) {
+      process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} still blocked after ${attempt} retr${attempt === 1 ? 'y' : 'ies'} (${res.blocked}); recording 0 rows, run is partial\n`);
+      return { ...res, partial_block: true };
+    }
+    await backoff(attempt);
+  }
 }
 
 async function newCtxPage(browser) {
@@ -230,16 +323,31 @@ async function newCtxPage(browser) {
 module.exports = { parseVolMl, unitMl, canonical };
 
 if (require.main === module) (async () => {
-  let browser;
-  try { browser = await chromium.launch({ headless: true, channel: 'chrome', args: ['--no-sandbox'] }); }
-  catch (_) { browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] }); }
+  // SIM mode never launches a browser or touches the live session — it drives the
+  // hermetic fault-injection tests purely through scrapePincode's SIM short-circuit.
+  let browser = null;
+  if (!SIM) {
+    try { browser = await chromium.launch({ headless: true, channel: 'chrome', args: ['--no-sandbox'] }); }
+    catch (_) { browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] }); }
+  }
   const t0 = Date.now();
 
   // Health check: a known-good pincode must return Jivo, else the session is dead -> fall back.
-  const hc = await newCtxPage(browser);
-  const probe = await scrapePincode(hc.page, { city: 'Noida', pincode: '201304', locality: 'Sector 106', lat: 28.5355, lon: 77.391 });
-  await hc.ctx.close();
-  if (probe.rows.length === 0) { await browser.close(); fallbackToBrowser('session health-check failed (pincode 201304 returned no Jivo — cookies likely expired)'); }
+  // (Skipped in SIM — there is no live session.)
+  if (!SIM) {
+    const hc = await newCtxPage(browser);
+    const probe = await scrapePincode(hc.page, { city: 'Noida', pincode: '201304', locality: 'Sector 106', lat: 28.5355, lon: 77.391 });
+    await hc.ctx.close();
+    if (probe.rows.length === 0) { await browser.close(); fallbackToBrowser('session health-check failed (pincode 201304 returned no Jivo — cookies likely expired)'); }
+  }
+
+  // Resume: reload any per-pincode results already captured for TODAY and skip them.
+  // The progress file is keyed by pincode and rewritten after EACH pincode, so a kill
+  // mid-run loses at most the in-flight pincode; a re-run resumes with no duplicate work.
+  const done = loadProgress();
+  const doneCount = Object.keys(done).length;
+  if (doneCount) process.stderr.write(`[resume] ${doneCount} pincodes already done in ${PROG}; resuming\n`);
+  let partial = false;
 
   // Partition pincodes round-robin across CONCURRENCY isolated contexts.
   const buckets = Array.from({ length: CONCURRENCY }, () => []);
@@ -247,14 +355,28 @@ if (require.main === module) (async () => {
   const perPin = [];
   await Promise.all(buckets.map(async (bucket) => {
     if (!bucket.length) return;
-    const { ctx, page } = await newCtxPage(browser);
+    // SIM has no browser/context; scrapePincode short-circuits before using `page`.
+    let ctx = null;
+    let page = null;
+    if (!SIM) ({ ctx, page } = await newCtxPage(browser));
     for (const rec of bucket) {
-      try { perPin.push(await scrapePincode(page, rec)); }
-      catch (e) { process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`); perPin.push({ ...rec, serviceable: false, store_id: '', store_name: '', rows: [] }); }
+      if (done[rec.pincode]) { perPin.push(done[rec.pincode]); continue; }   // checkpoint hit — skip
+      let res;
+      try {
+        res = await scrapeWithBackoff(page, rec);
+      } catch (e) {
+        // A per-pincode failure can never abort the bucket or the run (partial tolerance).
+        process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`);
+        res = { ...rec, serviceable: false, store_id: '', store_name: '', rows: [], blocked: null, error: String(e && e.message) };
+      }
+      if (res.blocked || res.partial_block) partial = true;   // any unresolved block => partial run
+      done[rec.pincode] = res;
+      saveProgress(done);                                     // checkpoint AFTER each pincode
+      perPin.push(res);
     }
-    await ctx.close();
+    if (ctx) await ctx.close();
   }));
-  await browser.close();
+  if (browser) await browser.close();
 
   perPin.sort((a, b) => String(a.pincode).localeCompare(String(b.pincode)));
   const allRows = perPin.flatMap((p) => p.rows);
@@ -262,13 +384,19 @@ if (require.main === module) (async () => {
     pincodes_total: PINCODES.length,
     pincodes_serviceable: perPin.filter((p) => p.serviceable).length,
     pincodes_with_jivo: perPin.filter((p) => p.rows.length > 0).length,
+    pincodes_blocked: perPin.filter((p) => p.blocked || p.partial_block).length,
     total_rows: allRows.length,
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
+    partial,
     captured_at: new Date().toISOString(),
-    mode: 'api',
+    mode: SIM ? 'sim' : 'api',
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
-  fs.writeFileSync(OUT, JSON.stringify({ summary, perPin, allRows }, null, 2));
+  fs.writeFileSync(OUT, JSON.stringify({ summary, perPin, allRows, partial }, null, 2));
   console.log(JSON.stringify(summary));
-})().catch((e) => { fallbackToBrowser('api scraper crashed: ' + e.message); });
+})().catch((e) => {
+  // In SIM (tests) there is no browser fallback to take — surface the error and exit.
+  if (SIM) { process.stderr.write('[fkm-sim] crashed: ' + (e && e.message) + '\n'); process.exit(1); }
+  fallbackToBrowser('api scraper crashed: ' + e.message);
+});
