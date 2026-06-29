@@ -100,7 +100,7 @@ ws = wb.create_sheet("Master Data")
 cols = ["City", "Pincode", "Locality", "Store", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "ETA min", "In stock"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
-    ws.append([x['city'], x['pincode'], x['locality'], x['store_name'], x['sku_raw'], x['pack'], x['vol_ml'],
+    ws.append([x['city'], x['pincode'], x.get('locality',''), x['store_name'], x['sku_raw'], x['pack'], x['vol_ml'],
                x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"
@@ -176,7 +176,7 @@ matrix("Discount Analysis", modal_disc, '0.0"%"', scale=True, scale_rev=True)
 ws = wb.create_sheet("Coverage & Gaps")
 ws.append(["City", "Pincode", "Locality", "Store assigned", "Jivo SKUs found"])
 for p in per:
-    ws.append([p['city'], p['pincode'], p['locality'], p['store_name'], len(p['rows'])])
+    ws.append([p['city'], p['pincode'], p.get('locality',''), p['store_name'], len(p['rows'])])
 style_header(ws); ws.freeze_panes = "A2"
 for row in ws.iter_rows(min_row=2):
     for cell in row: cell.border = BORDER
