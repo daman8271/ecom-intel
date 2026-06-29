@@ -1,36 +1,55 @@
 #!/usr/bin/env python3
-"""Lean by-brand competitor gap report (V1, quick-commerce).
+"""Anchor-based competitor price watch (V2, quick-commerce).
 
-Reads the env-gated competitor capture written by a scraper running in
-COMPETITOR_MODE=1 (tools/competitor/data/<platform>_competitor_<date>.json,
-shape {"summary":{...},"allRows":[...]}), normalises every competitor + JIVO
-row onto the V1 comparison buckets (maps_to_jivo.json), and emits a 3-sheet
-workbook to output/Competitor-Price-Watch-<Platform>-<date>.xlsx.
+V2 fixes a real accuracy bug: oil type is now derived from the PRODUCT NAME,
+never from the search query the row came back on. e.g. "Patanjali Virgin Sesame
+Oil (Gingelly/Til Oil)" surfaced on the *canola oil* search but is name-derived
+as **sesame** and therefore never appears under a canola anchor.
+
+Pipeline
+  1. Read the env-gated competitor capture for one platform
+     (tools/competitor/data/<platform>_competitor_<date>.json, shape
+     {"summary":{...},"allRows":[...]}).
+  2. AUTHORITATIVELY re-derive oil_type + grade from each row's NAME using
+     oil_classifier.json (overrides the scraper's query-based `category`).
+  3. Attach competitors to the 9 JIVO anchors in competitor_match_map.json ONLY
+     when name-derived oil_type EQUALS the anchor's oil_type AND grade is in the
+     anchor's grades_ok AND brand is allowed AND no blend/exclude token appears
+     AND pack volume is within ~15% (grams->ml at density 0.916). Sesame /
+     mustard / sunflower / groundnut can NEVER match canola; canola never matches
+     anything else. Olive grades (extra_virgin | extra_light | pomace) are never
+     crossed; mustard kachi_ghani/cold_pressed is never crossed with refined.
+  4. Emit, per anchor, JIVO price / MRP / Discount % / per-litre vs each MATCHED
+     rival, modal across the captured pincodes. Where no like-for-like rival
+     exists, say "no direct competitor" honestly - never force a wrong oil.
+
+Outputs (Competitor- prefix, NEVER the mailer-globbed Jivo-*):
+  output/Competitor-Price-Watch-<Platform>-<date>.xlsx   (the run's platform)
+  output/Competitor-Price-Watch-AllQcomm-<date>.xlsx     (all platforms for <date>)
 
 House style matches platforms/<p>/build_excel.py: JIVO green #008B3A headers,
 freeze panes, autofilter, MODAL aggregation (most common value, ties -> lowest).
 
-GUARDRAILS honoured here:
-  - reads ONLY from tools/competitor/data/ (never data/ vault/ reviews/ baselines/)
-  - writes ONLY to output/ with the "Competitor-Price-Watch-" prefix (NEVER "Jivo-",
-    which the daily mailer auto-emails)
-  - read-only on maps_to_jivo.json / competitor_brands.json; never touches pricematch.
+GUARDRAILS honoured:
+  - reads ONLY tools/competitor/data/*_competitor_<date>.json (the combined book
+    globs by <date>, so a TESTFIX run can never read a live YYYY-MM-DD capture).
+  - writes ONLY to output/ with the "Competitor-Price-Watch-" prefix.
+  - read-only on the config JSONs; never touches the price-match master.
 
 Usage:
   build_competitor_report.py <platform> [date]
     <platform>  e.g. blinkit | zepto | flipkart-minutes
-    [date]      YYYY-MM-DD (default: today, IST)
-Env overrides (have sane defaults; used for offline smoke tests):
+    [date]      YYYY-MM-DD (default: today, IST); any tag (e.g. TESTFIX) works.
+Env overrides (sane defaults; used for offline smoke tests):
   COMPETITOR_DATA_DIR  default /root/ecom-intel/tools/competitor/data
   COMPETITOR_OUT_DIR   default /root/ecom-intel/output
-  COMPETITOR_INPUT     explicit path to the <platform>_competitor_<date>.json
+  COMPETITOR_INPUT     explicit path to the run platform's capture json
 """
-import json, os, re, sys, datetime
-from collections import Counter, OrderedDict
+import json, os, re, sys, glob, datetime
+from collections import Counter
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
-from openpyxl.formatting.rule import ColorScaleRule
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -41,9 +60,13 @@ HDR = PatternFill("solid", fgColor=JIVO_GREEN)
 HDR_FONT = Font(bold=True, color="FFFFFF", size=11)
 TITLE_FONT = Font(bold=True, color=JIVO_GREEN, size=18)
 SUB_FONT = Font(italic=True, color="555555", size=10)
-RED = PatternFill("solid", fgColor="F4CCCC")     # competitor CHEAPER than JIVO = threat
-GREEN = PatternFill("solid", fgColor="D9EAD3")    # JIVO cheaper = good
-YEL = PatternFill("solid", fgColor="FFF2CC")      # ~level
+SECTION_FILL = PatternFill("solid", fgColor="E2EFDA")   # pale green section band
+SECTION_FONT = Font(bold=True, color="006100", size=11)
+JIVO_FILL = PatternFill("solid", fgColor="D9EAD3")       # JIVO anchor row
+RED = PatternFill("solid", fgColor="F4CCCC")             # rival CHEAPER than JIVO = threat
+GREEN = PatternFill("solid", fgColor="D9EAD3")           # JIVO cheaper = good
+YEL = PatternFill("solid", fgColor="FFF2CC")             # ~level
+GREY = PatternFill("solid", fgColor="F2F2F2")            # no direct competitor
 thin = Side(style="thin", color="D0D0D0")
 BORDER = Border(left=thin, right=thin, top=thin, bottom=thin)
 CEN = Alignment(horizontal="center", vertical="center")
@@ -51,18 +74,71 @@ LEFT = Alignment(horizontal="left", vertical="center")
 EPS_PCT = 0.02  # within 2% per-litre counts as "level", not a threat/win
 
 
-def style_header(ws, row=1, ncols=None):
-    ncols = ncols or ws.max_column
-    for c in range(1, ncols + 1):
-        cell = ws.cell(row=row, column=c)
-        cell.fill = HDR; cell.font = HDR_FONT; cell.alignment = CEN; cell.border = BORDER
+# ---- config load --------------------------------------------------------------
+def load_json(path):
+    with open(path, 'r') as f:
+        return json.load(f)
 
 
-def autosize(ws, maxw=44):
-    for col in ws.columns:
-        L = get_column_letter(col[0].column)
-        w = max((len(str(c.value)) for c in col if c.value is not None), default=8)
-        ws.column_dimensions[L].width = min(maxw, max(10, w + 2))
+OIL_CLASSIFIER = load_json(os.path.join(HERE, 'oil_classifier.json'))
+MATCH_MAP = load_json(os.path.join(HERE, 'competitor_match_map.json'))
+MAPS = load_json(os.path.join(HERE, 'maps_to_jivo.json'))
+
+# merged single-oil keyword table: oil_classifier is authoritative, augmented with
+# the match-map's spelling variants (e.g. "til oil"/"til "). 'blend' stays a gate.
+OIL_KW = {}
+for _src in (OIL_CLASSIFIER.get('oil_type', {}), MATCH_MAP.get('oil_type_keywords', {})):
+    for _tok, _kws in _src.items():
+        if _tok == 'blend':
+            continue
+        OIL_KW.setdefault(_tok, set()).update(_kws)
+BLEND_KW = list(OIL_CLASSIFIER['oil_type']['blend'])
+SINGLE_PRIORITY = [t for t in OIL_CLASSIFIER['priority'] if t != 'blend']
+GRADE_KW = OIL_CLASSIFIER['grade']            # canonical grade tokens (folds light/pure/classic -> extra_light)
+GRADE_PRIORITY = OIL_CLASSIFIER['grade_priority']
+ANCHORS = MATCH_MAP['anchors']                # the 9 JIVO anchors, authoritative order
+DENSITY = MAPS.get('density_g_per_ml', {}).get('oil', 0.916)
+
+
+def _norm(s):
+    """Lowercase, fold kachchi/kachhi->kachi, hyphen/slash->space, collapse ws."""
+    s = (s or '').lower()
+    s = s.replace('kachchi', 'kachi').replace('kachhi', 'kachi')
+    s = re.sub(r'[-/]', ' ', s)
+    s = re.sub(r'\s+', ' ', s).strip()
+    return s
+
+
+def _kw_in(kw, text):
+    """Word-boundary keyword test (so 'til' never matches 'lentil'/'until')."""
+    kw = _norm(kw)
+    if not kw:
+        return False
+    return re.search(r'(?<![a-z])' + re.escape(kw) + r'(?![a-z])', text) is not None
+
+
+def oil_type_of(name):
+    """Authoritative NAME-derived oil_type. Blend gate first; >1 distinct single
+    oil also = blend; otherwise first match in priority order; else None."""
+    n = _norm(name)
+    if any(_kw_in(k, n) for k in BLEND_KW):
+        return 'blend'
+    hits = {tok for tok, kws in OIL_KW.items() if any(_kw_in(k, n) for k in kws)}
+    if len(hits) > 1:
+        return 'blend'
+    for tok in SINGLE_PRIORITY:
+        if tok in hits:
+            return tok
+    return next(iter(hits)) if hits else None
+
+
+def grade_of(name):
+    """Authoritative NAME-derived grade (most-specific first)."""
+    n = _norm(name)
+    for g in GRADE_PRIORITY:
+        if any(_kw_in(k, n) for k in GRADE_KW.get(g, [])):
+            return g
+    return None
 
 
 def modal(values):
@@ -70,18 +146,425 @@ def modal(values):
     vals = [round(v) for v in values if v is not None]
     if not vals:
         return None
-    cnt = Counter(vals); top = max(cnt.values())
+    cnt = Counter(vals)
+    top = max(cnt.values())
     return min(v for v, n in cnt.items() if n == top)
-
-
-# ---- config / inputs ----------------------------------------------------------
-def load_json(path):
-    with open(path, 'r') as f:
-        return json.load(f)
 
 
 def ist_today():
     return (datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)).date().isoformat()
+
+
+# ---- brand identity -----------------------------------------------------------
+BRANDS_CFG = load_json(os.path.join(HERE, 'competitor_brands.json'))
+OURS = [str(x).lower() for x in BRANDS_CFG.get('ours', ['jivo', 'sano'])]
+ALIAS_TO_BRAND = {}
+for _b in BRANDS_CFG.get('brands', []):
+    ALIAS_TO_BRAND[_b['brand'].lower()] = _b['brand']
+    for _a in _b.get('aliases', []) or []:
+        if _a:
+            ALIAS_TO_BRAND[_a.lower()] = _b['brand']
+
+
+def is_jivo(r):
+    raw = (r.get('brand') or '').lower()
+    nm = (r.get('name') or '').lower()
+    return any(o in raw or o in nm for o in OURS)
+
+
+def brand_label(r):
+    if is_jivo(r):
+        return 'JIVO'
+    raw = (r.get('brand') or '').strip().lower()
+    if raw in ALIAS_TO_BRAND:
+        return ALIAS_TO_BRAND[raw]
+    nm = (r.get('name') or '').lower()
+    for alias, brand in ALIAS_TO_BRAND.items():
+        if alias and alias in nm:
+            return brand
+    return (r.get('brand') or 'Unknown').title()
+
+
+def brand_allowed(r, allowed):
+    rb = _norm(r.get('brand'))
+    nm = _norm(r.get('name'))
+    for a in allowed:
+        al = _norm(a)
+        if not al:
+            continue
+        if al == rb or _kw_in(al, nm) or (rb and _kw_in(al, rb)):
+            return True
+    return False
+
+
+# ---- anchor matching ----------------------------------------------------------
+def anchor_pack_label(a):
+    v = a['vol_ml']
+    return f"{v // 1000}L" if v % 1000 == 0 else f"{v}ml"
+
+
+def jivo_matches(r, anchor):
+    """A scraped JIVO row backs an anchor: oil_type + grade + pack (brand is ours,
+    so brands_allowed / exclude_name are skipped)."""
+    m = anchor['match']
+    if r['_oil'] != m['oil_type']:
+        return False
+    if r['_grade'] not in m['grades_ok']:
+        return False
+    v = r.get('vol_ml')
+    if v is None:
+        return False
+    return abs(v - m['pack_ml']) <= m.get('pack_tol', 0.15) * m['pack_ml']
+
+
+def rival_matches(r, anchor):
+    """A competitor row matches an anchor ONLY when every gate passes."""
+    if r['_jivo']:
+        return False
+    m = anchor['match']
+    if r['_oil'] is None or r['_oil'] != m['oil_type']:   # name-derived oil must equal anchor's
+        return False
+    if r['_grade'] not in m['grades_ok']:                  # grade never crossed
+        return False
+    v = r.get('vol_ml')
+    if v is None or abs(v - m['pack_ml']) > m.get('pack_tol', 0.15) * m['pack_ml']:
+        return False
+    n = _norm(r.get('name'))
+    if any(_kw_in(tok, n) for tok in m.get('exclude_name', [])):  # blends / wrong-grade tokens out
+        return False
+    return brand_allowed(r, m.get('brands_allowed', []))
+
+
+def maps_bucket_for(anchor):
+    """maps_to_jivo bucket that carries the JIVO BAU/MRP anchor per-litre."""
+    for b in MAPS['buckets']:
+        if b['category'] != anchor['oil_type'] or b['vol_ml'] != anchor['vol_ml']:
+            continue
+        bg = b.get('sub_grade')
+        if bg is None or bg == anchor['grade']:
+            return b
+    return None
+
+
+def aggregate(sub):
+    """Modal roll-up of a set of rows for one SKU/anchor across pincodes."""
+    sale = modal([r.get('sale') for r in sub])
+    mrp = modal([r.get('mrp') for r in sub])
+    pl = modal([r.get('per_litre') for r in sub])
+    disc = round(100.0 * (mrp - sale) / mrp, 1) if (mrp and sale is not None) else None
+    ranks = [r.get('rank') for r in sub if r.get('rank') is not None]
+    name = Counter(r.get('name') for r in sub).most_common(1)[0][0]
+    brand = Counter(r.get('_brand') for r in sub).most_common(1)[0][0]
+    oil = Counter(r.get('_oil') for r in sub).most_common(1)[0][0]
+    grade = Counter(r.get('_grade') for r in sub).most_common(1)[0][0]
+    return {
+        'sale': sale, 'mrp': mrp, 'pl': pl, 'disc': disc,
+        'rank': modal(ranks) if ranks else None,
+        'cities': {r.get('city') for r in sub},
+        'pins': {r.get('pincode') for r in sub},
+        'name': name, 'brand': brand, 'oil': oil, 'grade': grade,
+        'vol': modal([r.get('vol_ml') for r in sub]),
+        'instock': any(r.get('in_stock') for r in sub),
+        'n': len(sub),
+    }
+
+
+def jivo_anchor_value(rows, anchor):
+    """(agg_dict, source) for the JIVO side of an anchor. Prefer scraped JIVO rows;
+    fall back to the maps_to_jivo BAU/MRP per-litre anchor."""
+    sub = [r for r in rows if r['_jivo'] and jivo_matches(r, anchor)]
+    if sub:
+        return aggregate(sub), 'scraped'
+    b = maps_bucket_for(anchor)
+    if b is None:
+        return None, 'none'
+    vol = anchor['vol_ml']
+    pl = b.get('jivo_bau_per_litre')
+    mrp_pl = b.get('jivo_mrp_per_litre')
+    sale = round(pl * vol / 1000.0) if pl is not None else None
+    mrp = round(mrp_pl * vol / 1000.0) if mrp_pl is not None else None
+    disc = round(100.0 * (mrp_pl - pl) / mrp_pl, 1) if (mrp_pl and pl is not None) else None
+    return {
+        'sale': sale, 'mrp': mrp, 'pl': round(pl) if pl is not None else None, 'disc': disc,
+        'rank': None, 'cities': set(), 'pins': set(),
+        'name': anchor.get('jivo_example', 'JIVO'), 'brand': 'JIVO',
+        'oil': anchor['oil_type'], 'grade': anchor['grade'],
+        'vol': vol, 'instock': True, 'n': 0,
+    }, 'anchor (BAU)'
+
+
+def rivals_for_anchor(rows, anchor):
+    """Matched rival SKUs, one modal row per canonical, cheapest per-litre first."""
+    matched = [r for r in rows if rival_matches(r, anchor)]
+    by_canon = {}
+    for r in matched:
+        by_canon.setdefault(r.get('canonical') or (r.get('_brand'), r.get('name')), []).append(r)
+    aggs = [aggregate(g) for g in by_canon.values()]
+    aggs.sort(key=lambda a: (a['pl'] is None, a['pl'] if a['pl'] is not None else 0))
+    return aggs
+
+
+def verdict_for(rival_pl, jivo_pl):
+    if rival_pl is None or jivo_pl is None:
+        return "no rival data", None, None
+    gap = rival_pl - jivo_pl
+    gap_pct = round(100.0 * gap / jivo_pl, 1) if jivo_pl else None
+    if gap < -EPS_PCT * jivo_pl:
+        return "THREAT - rival cheaper", gap, gap_pct
+    if gap > EPS_PCT * jivo_pl:
+        return "JIVO cheaper", gap, gap_pct
+    return "level", gap, gap_pct
+
+
+# ---- xlsx helpers -------------------------------------------------------------
+def style_header(ws, row=1, ncols=None):
+    ncols = ncols or ws.max_column
+    for c in range(1, ncols + 1):
+        cell = ws.cell(row=row, column=c)
+        cell.fill = HDR
+        cell.font = HDR_FONT
+        cell.alignment = CEN
+        cell.border = BORDER
+
+
+def autosize(ws, maxw=46):
+    for col in ws.columns:
+        L = get_column_letter(col[0].column)
+        w = max((len(str(c.value)) for c in col if c.value is not None), default=8)
+        ws.column_dimensions[L].width = min(maxw, max(10, w + 2))
+
+
+# ---- workbook builder ---------------------------------------------------------
+def annotate(rows, platform):
+    for r in rows:
+        r['_platform'] = platform
+        r['_jivo'] = is_jivo(r)
+        r['_brand'] = brand_label(r)
+        r['_oil'] = oil_type_of(r.get('name'))
+        r['_grade'] = grade_of(r.get('name'))
+        r['_anchor'] = ''
+        if not r['_jivo']:
+            for a in ANCHORS:
+                if rival_matches(r, a):
+                    r['_anchor'] = a['key']
+                    break
+    return rows
+
+
+def build_workbook(captures, label, date, out_dir):
+    """captures: list of (platform, rows, summary). Builds one workbook."""
+    plats = [p for p, _, _ in captures]
+    multi = len(plats) > 1
+    all_rows = []
+    for p, rows, _ in captures:
+        all_rows.extend(annotate(rows, p))
+
+    wb = Workbook()
+
+    # ---------- Sheet 1: Summary ----------
+    ws = wb.active
+    ws.title = "Summary"
+    disp = "All Quick-Commerce" if label == "AllQcomm" else label.replace('-', ' ').title()
+    ws["A1"] = f"Competitor Price Watch - {disp}"
+    ws["A1"].font = TITLE_FONT
+    ws.merge_cells("A1:J1")
+    plat_list = ", ".join(sorted({p.replace('-', ' ').title() for p in plats}))
+    ws["A2"] = (f"{date}  -  9 JIVO anchors vs name-matched rivals  -  "
+                f"{len(all_rows)} datapoints across {plat_list}  -  "
+                f"oil type derived from PRODUCT NAME (not the search query)  -  "
+                f"modal per-litre (ties->lowest)")
+    ws["A2"].font = SUB_FONT
+    ws.merge_cells("A2:J2")
+
+    comp_rows = [r for r in all_rows if not r['_jivo'] and r['_oil'] not in (None, 'blend')]
+    kpis = [
+        ("Platforms", len(set(plats))),
+        ("Competitor brands", len({r['_brand'] for r in comp_rows})),
+        ("Cities", len({r.get('city') for r in all_rows})),
+        ("Pincodes", len({r.get('pincode') for r in all_rows})),
+    ]
+    for i, (k, v) in enumerate(kpis):
+        c = 1 + i * 2
+        ws.cell(row=4, column=c, value=k).font = Font(bold=True, size=10, color="555555")
+        ws.cell(row=5, column=c, value=v).font = Font(bold=True, size=20, color=JIVO_GREEN)
+
+    ws.cell(row=7, column=1, value="JIVO vs cheapest matched rival, per anchor").font = Font(bold=True, size=12)
+    hdr = (["Platform"] if multi else []) + ["JIVO Anchor", "Oil / Grade / Pack", "JIVO Rs/L",
+            "JIVO src", "# Rivals", "Cheapest Rival", "Rival Rs/L", "Gap Rs/L", "Gap %", "Verdict"]
+    hr = 8
+    for j, h in enumerate(hdr, 1):
+        ws.cell(row=hr, column=j, value=h)
+    style_header(ws, hr, len(hdr))
+    rr = hr + 1
+    for p, rows, _ in captures:
+        prows = [r for r in all_rows if r['_platform'] == p]
+        for a in ANCHORS:
+            jv, src = jivo_anchor_value(prows, a)
+            jpl = jv['pl'] if jv else None
+            rivals = rivals_for_anchor(prows, a)
+            if rivals:
+                cheap = rivals[0]
+                v, gap, gap_pct = verdict_for(cheap['pl'], jpl)
+                cheap_br, cheap_pl = cheap['brand'], cheap['pl']
+            else:
+                cheap_br, cheap_pl, gap, gap_pct = "no direct competitor", None, None, None
+                v = "no direct competitor"
+            vals = ([p.replace('-', ' ').title()] if multi else []) + [
+                a.get('jivo_example', a['key']),
+                f"{a['oil_type']} / {a['grade']} / {anchor_pack_label(a)}",
+                jpl, src, len(rivals), cheap_br, cheap_pl, gap, gap_pct, v]
+            for j, val in enumerate(vals, 1):
+                cell = ws.cell(row=rr, column=j, value=val)
+                cell.border = BORDER
+                if j > 2 - (0 if multi else 0):
+                    cell.alignment = CEN if j >= (4 if multi else 3) else LEFT
+            base = 1 if multi else 0
+            for col in (base + 3, base + 8):  # Rs/L, Gap Rs/L
+                ws.cell(row=rr, column=col).number_format = '"Rs"#,##0'
+            ws.cell(row=rr, column=base + 9).number_format = '0.0"%"'
+            vc = ws.cell(row=rr, column=base + 10)
+            gc = ws.cell(row=rr, column=base + 8)
+            if "THREAT" in v:
+                vc.fill = RED
+                gc.fill = RED
+            elif "JIVO cheaper" in v:
+                vc.fill = GREEN
+                gc.fill = GREEN
+            elif v == "level":
+                vc.fill = YEL
+                gc.fill = YEL
+            elif v == "no direct competitor":
+                vc.fill = GREY
+            rr += 1
+    ws.freeze_panes = ws.cell(row=hr + 1, column=1).coordinate
+    autosize(ws)
+
+    # ---------- Sheet 2: Anchor Watch (one section per anchor) ----------
+    ws = wb.create_sheet("Anchor Watch")
+    cols = (["Platform"] if multi else []) + [
+        "Brand", "Product", "Oil Type", "Grade", "Vol (ml)", "MRP Rs", "Sale Rs",
+        "Discount %", "Rs/L", "Gap vs JIVO Rs/L", "Gap %", "Avg Rank", "Pins", "Verdict"]
+    ncol = len(cols)
+    for j, h in enumerate(cols, 1):
+        ws.cell(row=1, column=j, value=h)
+    style_header(ws, 1, ncol)
+    ws.freeze_panes = "A2"
+    base = 1 if multi else 0
+    money_cols = [base + 5, base + 6, base + 8, base + 9]   # MRP, Sale, Rs/L, Gap Rs/L
+    rr = 2
+
+    def write_row(values, fill=None, bold=False):
+        nonlocal rr
+        for j, val in enumerate(values, 1):
+            cell = ws.cell(row=rr, column=j, value=val)
+            cell.border = BORDER
+            if j >= (3 if multi else 2):
+                cell.alignment = CEN
+            if bold:
+                cell.font = Font(bold=True)
+            if fill:
+                cell.fill = fill
+        for col in money_cols:
+            ws.cell(row=rr, column=col).number_format = '"Rs"#,##0'
+        ws.cell(row=rr, column=base + 7).number_format = '0.0"%"'   # Discount %
+        ws.cell(row=rr, column=base + 10).number_format = '0.0"%"'  # Gap %
+        rr += 1
+
+    for idx, a in enumerate(ANCHORS, 1):
+        # section band
+        ws.merge_cells(start_row=rr, start_column=1, end_row=rr, end_column=ncol)
+        band = ws.cell(row=rr, column=1,
+                       value=f"{idx}. {a.get('jivo_example', a['key'])}   |   "
+                             f"{a['oil_type']} / {a['grade']} / {anchor_pack_label(a)}")
+        band.fill = SECTION_FILL
+        band.font = SECTION_FONT
+        band.alignment = LEFT
+        rr += 1
+        for p, rows, _ in captures:
+            prows = [r for r in all_rows if r['_platform'] == p]
+            jv, src = jivo_anchor_value(prows, a)
+            jpl = jv['pl'] if jv else None
+            ptag = [p.replace('-', ' ').title()] if multi else []
+            # JIVO anchor row
+            if jv:
+                write_row(ptag + ["JIVO", f"{jv['name']}  [{src}]", jv['oil'], jv['grade'],
+                                  jv['vol'], jv['mrp'], jv['sale'], jv['disc'], jpl,
+                                  None, None, jv['rank'], len(jv['pins']) or None, "JIVO anchor"],
+                          fill=JIVO_FILL, bold=True)
+            # rivals
+            rivals = rivals_for_anchor(prows, a)
+            if rivals:
+                for rv in rivals:
+                    v, gap, gap_pct = verdict_for(rv['pl'], jpl)
+                    write_row(ptag + [rv['brand'], rv['name'], rv['oil'], rv['grade'],
+                                      rv['vol'], rv['mrp'], rv['sale'], rv['disc'], rv['pl'],
+                                      gap, gap_pct, rv['rank'], len(rv['pins']) or None, v])
+                    cell = ws.cell(row=rr - 1, column=base + 9)   # Rs/L cell
+                    gcell = ws.cell(row=rr - 1, column=base + 10)  # Gap Rs/L
+                    if "THREAT" in v:
+                        cell.fill = RED
+                        gcell.fill = RED
+                    elif "JIVO cheaper" in v:
+                        cell.fill = GREEN
+                        gcell.fill = GREEN
+                    elif v == "level":
+                        cell.fill = YEL
+                        gcell.fill = YEL
+            else:
+                note = "no direct competitor" + ("" if a['match'].get('allow_no_match', True)
+                                                 else " (none found - expected one)")
+                write_row(ptag + ["-", f"-- {note} --", a['oil_type'], a['grade'],
+                                  None, None, None, None, None, None, None, None, None, ""],
+                          fill=GREY)
+        rr += 1   # blank spacer
+    autosize(ws, maxw=52)
+
+    # ---------- Sheet 3: Master Data (audit: NAME-derived oil_type + grade) ----------
+    ws = wb.create_sheet("Master Data")
+    cols = ["Platform", "Brand", "JIVO?", "Search Category (scraped)", "Oil Type (name)",
+            "Grade (name)", "Matched Anchor", "Blend?", "City", "Pincode", "Store ID",
+            "Name", "Pack", "Vol (ml)", "MRP Rs", "Sale Rs", "Rs/L", "Discount %",
+            "In stock", "Rank", "Ad?", "Captured"]
+    ws.append(cols)
+    for x in sorted(all_rows, key=lambda r: (r['_platform'], r['_oil'] or 'zzz',
+                                             r['_grade'] or '', r.get('_brand') or '',
+                                             r.get('city') or '', r.get('pincode') or '')):
+        ws.append([
+            x['_platform'].replace('-', ' ').title(), x.get('_brand'),
+            "Yes" if x['_jivo'] else "", x.get('category'), x.get('_oil') or '',
+            x.get('_grade') or '', x.get('_anchor') or '',
+            "Yes" if x.get('_oil') == 'blend' else "",
+            x.get('city'), x.get('pincode'), x.get('store_id'),
+            x.get('name'), x.get('pack'), x.get('vol_ml'), x.get('mrp'), x.get('sale'),
+            x.get('per_litre'), x.get('discount_pct'),
+            "Yes" if x.get('in_stock') else "No", x.get('rank'),
+            "Yes" if x.get('is_ad') else "", (x.get('captured_at') or '')[:16].replace('T', ' '),
+        ])
+    style_header(ws)
+    ws.freeze_panes = "A2"
+    ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
+    for row in ws.iter_rows(min_row=2):
+        for cell in row:
+            cell.border = BORDER
+            if cell.column in (15, 16, 17):
+                cell.number_format = '"Rs"#,##0'
+            if cell.column == 18:
+                cell.number_format = '0.0"%"'
+        if row[2].value == "Yes":
+            row[1].fill = JIVO_FILL
+        if row[7].value == "Yes":
+            row[4].fill = YEL              # blend flagged
+        if row[18].value == "No":
+            row[18].fill = RED
+    autosize(ws)
+
+    os.makedirs(out_dir, exist_ok=True)
+    plat_file = ("AllQcomm" if label == "AllQcomm"
+                 else label.replace('-', ' ').title().replace(' ', '-'))
+    fname = os.path.join(out_dir, f"Competitor-Price-Watch-{plat_file}-{date}.xlsx")
+    assert not os.path.basename(fname).startswith("Jivo-"), "filename must never start with Jivo-"
+    wb.save(fname)
+    return fname
 
 
 def main():
@@ -102,303 +585,26 @@ def main():
     rows = cap.get('allRows', []) or []
     summary = cap.get('summary', {}) or {}
 
-    maps = load_json(os.path.join(HERE, 'maps_to_jivo.json'))
-    brands_cfg = load_json(os.path.join(HERE, 'competitor_brands.json'))
+    produced = []
+    # 1) per-platform workbook
+    produced.append(build_workbook([(platform, rows, summary)], platform, date, out_dir))
 
-    density = maps.get('density_g_per_ml', {"oil": 0.916, "ghee": 0.91})
-    ROUND_VOL = maps.get('round_vol_ml', [200, 250, 500, 1000, 2000, 4000, 5000, 15000])
-    buckets = {b['key']: b for b in maps.get('buckets', [])}
+    # 2) combined AllQcomm workbook: every *_competitor_<date>.json for THIS date.
+    #    Globbing by <date> guarantees a TESTFIX run never reads a live YYYY-MM-DD capture.
+    captures = []
+    for path in sorted(glob.glob(os.path.join(data_dir, f'*_competitor_{date}.json'))):
+        base = os.path.basename(path)
+        p = base[:-len(f'_competitor_{date}.json')]
+        c = load_json(path)
+        captures.append((p, c.get('allRows', []) or [], c.get('summary', {}) or {}))
+    if not captures:
+        captures = [(platform, rows, summary)]
+    produced.append(build_workbook(captures, "AllQcomm", date, out_dir))
 
-    # V1 priority order (must line up with maps_to_jivo.json keys)
-    V1_ORDER = [
-        'olive.extra_light.1L', 'olive.extra_light.2L', 'olive.pomace.1L', 'olive.pomace.5L',
-        'canola.1L', 'canola.5L', 'mustard.kachi_ghani.1L', 'mustard.kachi_ghani.5L',
-        'sunflower.1L', 'olive.extra_virgin.1L',
-    ]
-    V1 = [buckets[k] for k in V1_ORDER if k in buckets]
-
-    # brand identity ------------------------------------------------------------
-    ours = [str(x).lower() for x in brands_cfg.get('ours', ['jivo', 'sano'])]
-    alias_to_brand = {}
-    for b in brands_cfg.get('brands', []):
-        alias_to_brand[b['brand'].lower()] = b['brand']
-        for a in b.get('aliases', []) or []:
-            if a:
-                alias_to_brand[a.lower()] = b['brand']
-
-    def is_jivo(r):
-        raw = (r.get('brand') or '').lower()
-        nm = (r.get('name') or '').lower()
-        return any(o in raw or o in nm for o in ours)
-
-    def brand_label(r):
-        if is_jivo(r):
-            return 'JIVO'
-        raw = (r.get('brand') or '').strip().lower()
-        if raw in alias_to_brand:
-            return alias_to_brand[raw]
-        nm = (r.get('name') or '').lower()
-        for alias, brand in alias_to_brand.items():
-            if alias and alias in nm:
-                return brand
-        return (r.get('brand') or 'Unknown').title()
-
-    # bucket assignment ---------------------------------------------------------
-    def norm_cat(c):
-        return re.sub(r'\s*oil\s*$', '', (c or '').lower()).strip().replace(' ', '_')
-
-    def is_combo(r):
-        s = ((r.get('name') or '') + ' ' + (r.get('pack') or '')).lower()
-        return bool(re.search(r'\d\s*[x×+]\s*\d', s)) or 'combo' in s or 'pack of' in s or '1+1' in s
-
-    def snap_vol(v):
-        if v is None:
-            return None
-        return min(ROUND_VOL, key=lambda x: abs(x - v))
-
-    def grade_ok(bucket, cat, grade):
-        bg = bucket.get('sub_grade')
-        if bg is None:
-            return True              # canola / sunflower: no grade constraint
-        if cat == 'mustard':
-            return True              # mustard oil in scope == kachi ghani
-        g = (grade or '').lower().replace(' ', '_')
-        if bg == 'extra_light':
-            return g in ('extra_light', 'light')
-        if bg == 'pomace':
-            return g == 'pomace'
-        if bg == 'extra_virgin':
-            return g == 'extra_virgin'
-        if bg == 'kachi_ghani':
-            return True
-        return g == bg
-
-    def bucket_for(r):
-        if is_combo(r):                       # combos are their own pack axis - never folded in
-            return None
-        cat = norm_cat(r.get('category'))
-        sv = snap_vol(r.get('vol_ml'))
-        if sv is None:
-            return None
-        grade = r.get('sub_grade')
-        for b in V1:
-            if b['category'] != cat:
-                continue
-            if b['vol_ml'] != sv:
-                continue
-            if not grade_ok(b, cat, grade):
-                continue
-            return b['key']
-        return None
-
-    # index rows by bucket + brand ---------------------------------------------
-    for r in rows:
-        r['_bucket'] = bucket_for(r)
-        r['_brand'] = brand_label(r)
-        r['_jivo'] = is_jivo(r)
-
-    def pl_modal(filter_fn):
-        return modal([r.get('per_litre') for r in rows if filter_fn(r)])
-
-    def jivo_pl(bkey, bucket):
-        """JIVO modal per-litre from scraped rows; fall back to the agreed BAU anchor."""
-        m = pl_modal(lambda r: r['_bucket'] == bkey and r['_jivo'] and r.get('per_litre'))
-        if m is not None:
-            return m, 'scraped'
-        anc = bucket.get('jivo_bau_per_litre')
-        return (round(anc) if anc is not None else None), 'anchor'
-
-    # competitor brands present in any V1 bucket (sorted, JIVO excluded)
-    comp_brands = sorted({r['_brand'] for r in rows if r['_bucket'] and not r['_jivo']})
-
-    def bucket_label(b):
-        cat = b['category'].replace('_', ' ').title()
-        grade = (b.get('sub_grade') or '').replace('_', ' ').title()
-        return f"{cat} - {grade} - {b['pack_label']}" if grade else f"{cat} - {b['pack_label']}"
-
-    # ==========================================================================
-    wb = Workbook()
-    PLAT_DISP = platform.replace('-', ' ').title()
-
-    # ---------- Sheet 1: Summary ----------
-    ws = wb.active; ws.title = "Summary"
-    ws["A1"] = f"Competitor Price Watch - {PLAT_DISP}"; ws["A1"].font = TITLE_FONT
-    ws.merge_cells("A1:H1")
-    cap_at = (summary.get('captured_at') or '')[:16].replace('T', ' ')
-    ws["A2"] = (f"{date}  -  per-litre gap vs JIVO across V1 buckets  -  "
-                f"{summary.get('total_rows', len(rows))} datapoints  -  captured {cap_at} "
-                f"-  modal aggregation (ties->lowest)")
-    ws["A2"].font = SUB_FONT; ws.merge_cells("A2:H2")
-
-    comp_rows = [r for r in rows if not r['_jivo']]
-    kpis = [
-        ("Competitor brands seen", len({r['_brand'] for r in comp_rows})),
-        ("Competitor SKUs", len({r.get('canonical') for r in comp_rows})),
-        ("Cities", len({r.get('city') for r in rows})),
-        ("Pincodes", len({r.get('pincode') for r in rows})),
-    ]
-    r0 = 4
-    for i, (k, v) in enumerate(kpis):
-        c = 1 + i * 2
-        ws.cell(row=r0, column=c, value=k).font = Font(bold=True, size=10, color="555555")
-        ws.cell(row=r0 + 1, column=c, value=v).font = Font(bold=True, size=20, color=JIVO_GREEN)
-
-    # headline: JIVO vs cheapest rival per V1 bucket
-    ws.cell(row=7, column=1, value="JIVO vs rivals - per-litre headline per V1 bucket").font = Font(bold=True, size=12)
-    hdr = ["V1 Bucket", "JIVO Rs/L", "JIVO src", "Cheapest rival", "Rival Rs/L", "Gap Rs/L", "Gap %", "Verdict"]
-    for j, h in enumerate(hdr, 1):
-        ws.cell(row=8, column=j, value=h)
-    style_header(ws, 8, len(hdr))
-    rr = 9
-    for b in V1:
-        bkey = b['key']
-        jpl, src = jivo_pl(bkey, b)
-        # cheapest rival in this bucket
-        rivals = [(br, pl_modal(lambda r, _b=bkey, _br=br: r['_bucket'] == _b and not r['_jivo'] and r['_brand'] == _br and r.get('per_litre')))
-                  for br in comp_brands]
-        rivals = [(br, pl) for br, pl in rivals if pl is not None]
-        if rivals:
-            cheap_br, cheap_pl = min(rivals, key=lambda x: x[1])
-        else:
-            cheap_br, cheap_pl = "-", None
-        gap = (cheap_pl - jpl) if (cheap_pl is not None and jpl is not None) else None
-        gap_pct = round(100 * gap / jpl, 1) if (gap is not None and jpl) else None
-        if gap is None:
-            verdict = "no rival data"
-        elif jpl and gap < -EPS_PCT * jpl:
-            verdict = "THREAT - rival cheaper"
-        elif jpl and gap > EPS_PCT * jpl:
-            verdict = "JIVO cheaper"
-        else:
-            verdict = "level"
-        vals = [bucket_label(b), jpl, src, cheap_br, cheap_pl, gap, gap_pct, verdict]
-        for j, v in enumerate(vals, 1):
-            cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
-            if j >= 2:
-                cell.alignment = CEN
-            if j in (2, 5, 6):
-                cell.number_format = '"Rs"#,##0'
-            if j == 7 and v is not None:
-                cell.number_format = '0.0"%"'
-        # colour the verdict / gap cell: red = rival cheaper (threat)
-        vc = ws.cell(row=rr, column=8)
-        gc = ws.cell(row=rr, column=6)
-        if "THREAT" in verdict:
-            vc.fill = RED; gc.fill = RED
-        elif "JIVO cheaper" in verdict:
-            vc.fill = GREEN; gc.fill = GREEN
-        elif verdict == "level":
-            vc.fill = YEL; gc.fill = YEL
-        rr += 1
-    ws.cell(row=rr + 1, column=1,
-            value="Notes: per-litre computed from MEASURED volume (grams -> ml via density "
-                  f"oil {density.get('oil')}, ghee {density.get('ghee')}), so '910 g labelled 1L' "
-                  "pack deflation is caught. Olive grades never compared across tiers; blends & "
-                  "combos excluded from single-pack buckets; ghee is a separate per-kg axis. "
-                  "JIVO src=anchor means the BAU street price was used (no JIVO row scraped in that bucket)."
-            ).font = Font(italic=True, size=9, color="777777")
-    ws.merge_cells(start_row=rr + 1, start_column=1, end_row=rr + 1, end_column=8)
-    autosize(ws)
-
-    # ---------- Sheet 2: Master Data ----------
-    ws = wb.create_sheet("Master Data")
-    cols = ["Brand", "JIVO?", "Category", "Sub-grade", "V1 Bucket", "City", "Pincode",
-            "Store", "Store ID", "Name", "Pack", "Vol (ml)", "MRP Rs", "Sale Rs",
-            "Rs/L", "Disc %", "In stock", "Rank", "Ad?", "Captured"]
-    ws.append(cols)
-    for x in sorted(rows, key=lambda r: (norm_cat(r.get('category')), r.get('_brand') or '',
-                                         r.get('city') or '', r.get('pincode') or '')):
-        b = x.get('_bucket')
-        ws.append([
-            x.get('_brand'), "Yes" if x['_jivo'] else "", norm_cat(x.get('category')),
-            x.get('sub_grade') or '', (b or ''),
-            x.get('city'), x.get('pincode'), x.get('store_name'), x.get('store_id'),
-            x.get('name'), x.get('pack'), x.get('vol_ml'), x.get('mrp'), x.get('sale'),
-            x.get('per_litre'), x.get('discount_pct'),
-            "Yes" if x.get('in_stock') else "No", x.get('rank'),
-            "Yes" if x.get('is_ad') else "", (x.get('captured_at') or '')[:16].replace('T', ' '),
-        ])
-    style_header(ws)
-    ws.freeze_panes = "A2"
-    ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
-    for row in ws.iter_rows(min_row=2):
-        for cell in row:
-            cell.border = BORDER
-            if cell.column in (13, 14, 15):
-                cell.number_format = '"Rs"#,##0'
-            if cell.column == 16:
-                cell.number_format = '0.0"%"'
-        if row[1].value == "Yes":
-            row[0].fill = GREEN
-        if row[16].value == "No":
-            row[16].fill = RED
-    autosize(ws)
-
-    # ---------- Sheet 3: Gap Matrix ----------
-    ws = wb.create_sheet("Gap Matrix")
-    cols = ["V1 Bucket", "JIVO Rs/L"] + comp_brands + ["Cheapest rival", "Min rival Rs/L", "Gap vs JIVO Rs/L"]
-    ws.append(cols)
-    GAP_COL = len(cols)  # last col = gap vs jivo (cheapest rival - jivo)
-    for b in V1:
-        bkey = b['key']
-        jpl, src = jivo_pl(bkey, b)
-        rowvals = [bucket_label(b), jpl]
-        brand_pls = {}
-        for br in comp_brands:
-            pl = pl_modal(lambda r, _b=bkey, _br=br: r['_bucket'] == _b and not r['_jivo'] and r['_brand'] == _br and r.get('per_litre'))
-            brand_pls[br] = pl
-            rowvals.append(pl)
-        present = {br: pl for br, pl in brand_pls.items() if pl is not None}
-        if present:
-            cheap_br = min(present, key=lambda k: present[k])
-            cheap_pl = present[cheap_br]
-            gap = (cheap_pl - jpl) if jpl is not None else None
-        else:
-            cheap_br, cheap_pl, gap = "-", None, None
-        rowvals += [cheap_br, cheap_pl, gap]
-        ws.append(rowvals)
-    style_header(ws)
-    ws.freeze_panes = "B2"
-    last = get_column_letter(ws.max_column)
-    for ri, row in enumerate(ws.iter_rows(min_row=2), start=2):
-        jpl = ws.cell(row=ri, column=2).value
-        for cell in row:
-            cell.border = BORDER
-            if cell.column > 1:
-                cell.alignment = CEN
-                if isinstance(cell.value, (int, float)):
-                    cell.number_format = '"Rs"#,##0'
-            # per-brand cells: colour relative to THIS row's JIVO Rs/L (red = rival cheaper)
-            if 3 <= cell.column <= 2 + len(comp_brands) and isinstance(cell.value, (int, float)) and isinstance(jpl, (int, float)) and jpl:
-                d = cell.value - jpl
-                if d < -EPS_PCT * jpl:
-                    cell.fill = RED
-                elif d > EPS_PCT * jpl:
-                    cell.fill = GREEN
-                else:
-                    cell.fill = YEL
-            if cell.value is None:
-                cell.value = "-"
-    # gradient on the final gap column: red (rival cheaper) -> white (level) -> green (JIVO cheaper)
-    if ws.max_row >= 2:
-        gcol = get_column_letter(GAP_COL)
-        ws.conditional_formatting.add(
-            f"{gcol}2:{gcol}{ws.max_row}",
-            ColorScaleRule(start_type="min", start_color="F4CCCC",
-                           mid_type="num", mid_value=0, mid_color="FFFFFF",
-                           end_type="max", end_color="D9EAD3"))
-    autosize(ws, maxw=18)
-
-    # ---- save (Competitor-Price-Watch- prefix; NEVER Jivo-) ----
-    os.makedirs(out_dir, exist_ok=True)
-    plat_file = platform.replace('-', ' ').title().replace(' ', '-')
-    fname = os.path.join(out_dir, f"Competitor-Price-Watch-{plat_file}-{date}.xlsx")
-    assert not os.path.basename(fname).startswith("Jivo-"), "filename must never start with Jivo-"
-    wb.save(fname)
-    print("SAVED:", fname)
-    print("Sheets:", wb.sheetnames)
-    print("Rows:", len(rows), "| competitor brands:", len(comp_brands),
-          "| V1 buckets:", len(V1))
+    print("SAVED:")
+    for f in produced:
+        print("  ", f)
+    print("Anchors:", len(ANCHORS), "| platforms in combined:", len({p for p, _, _ in captures}))
 
 
 if __name__ == "__main__":

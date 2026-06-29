@@ -1,0 +1,199 @@
+{
+  "_doc": "V2 competitor->JIVO anchor match map for Blinkit (and other q-comm). A competitor row matches a JIVO anchor ONLY when its NAME-DERIVED oil_type EQUALS the anchor's oil_type, its name-derived grade is in grades_ok, its brand is in brands_allowed, no exclude_name token appears, and its volume is within pack_tol of pack_ml. The whole point of V2: oil_type MUST be derived from the PRODUCT NAME, never from the search query that returned the row.",
+  "_version": "v2",
+  "_generated": "2026-06-30",
+  "_supersedes": "search-query-category matching that wrongly filed 'Patanjali Virgin Sesame Oil' under canola because it surfaced on the 'canola oil' query",
+  "_accuracy_rules": [
+    "oil_type is derived from the product NAME via oil_type_keywords, NEVER from the search query / scraped category field.",
+    "A row matches an anchor only if name-derived oil_type == anchor.oil_type. sesame/mustard/sunflower/groundnut/soyabean/rice_bran can NEVER match canola; canola never matches anything else.",
+    "Grades are distinct and never crossed: olive {extra_virgin | extra_light(=light/pure/classic) | pomace}; mustard {kachi_ghani/cold_pressed vs refined}.",
+    "Exclude blends / multi-source cooking oils from single-oil anchors via exclude_name.",
+    "Pack tolerance is pack_tol (0.15) on volume in ml; grams converted at density 0.916 (910 g -> ~993 ml still matches a 1 L anchor).",
+    "If an anchor has no true like-for-like rival in the data, report 'no direct competitor' (allow_no_match) and NEVER force a wrong oil."
+  ],
+  "density_g_per_ml": 0.916,
+  "pack_tol": 0.15,
+  "regional_words": {
+    "enne": "oil (Kannada)",
+    "sasive": "mustard",
+    "suryakanthi": "sunflower",
+    "surajmukhi": "sunflower",
+    "kadale": "groundnut",
+    "gingelly": "sesame",
+    "til": "sesame",
+    "ellu": "sesame",
+    "akki": "rice_bran",
+    "kachi ghani": "cold-pressed mustard"
+  },
+  "_oil_type_keywords_note": "Match against the product NAME (lowercased). Evaluate every oil_type; a row's oil_type is the set of these that hit. A row with >1 distinct oil_type (e.g. 'olive & rice bran') is a blend -> excluded from single-oil anchors. Every key here is a real oil_type (no meta keys).",
+  "oil_type_keywords": {
+    "olive": ["olive"],
+    "canola": ["canola"],
+    "mustard": ["mustard", "sarso", "sarson", "sasive", "kachi ghani", "kachchi ghani"],
+    "sunflower": ["sunflower", "suryakanthi", "surajmukhi"],
+    "groundnut": ["groundnut", "peanut", "kadale", "mungfali"],
+    "sesame": ["sesame", "gingelly", "til oil", "til ", "ellu"],
+    "rice_bran": ["rice bran", "ricebran", "akki"],
+    "soyabean": ["soya", "soyabean", "soybean"],
+    "coconut": ["coconut"]
+  },
+  "_grade_vocab_note": "Derive grade from the NAME. Evaluate most-specific first: extra_virgin before light; extra_light before light. Every key here is a real grade token (no meta keys).",
+  "grade_vocab": {
+    "extra_virgin": ["extra virgin", "extra-virgin", "virgin"],
+    "pomace": ["pomace"],
+    "extra_light": ["extra light", "extra-light"],
+    "light": ["light"],
+    "pure": ["pure"],
+    "classic": ["classic"],
+    "kachi_ghani": ["kachi ghani", "kachchi ghani", "kachi-ghani"],
+    "cold_pressed": ["cold pressed", "cold-pressed", "kachi ghani", "kachchi ghani"],
+    "refined": ["refined"],
+    "filtered": ["filtered"]
+  },
+  "anchors": [
+    {
+      "key": "olive.extra_light.1L",
+      "oil_type": "olive",
+      "grade": "extra_light",
+      "vol_ml": 1000,
+      "jivo_example": "Jivo Extra Light Olive Oil 1L",
+      "match": {
+        "oil_type": "olive",
+        "grades_ok": ["extra_light", "light", "pure", "classic"],
+        "pack_ml": 1000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Figaro", "Borges", "Del Monte", "Leonardo"],
+        "exclude_name": ["pomace", "extra virgin", "virgin", "blend", "multi-source", "cooking oil", "olivkare", "smart", "active", "heart", "total"],
+        "allow_no_match": false
+      }
+    },
+    {
+      "key": "olive.extra_light.2L",
+      "oil_type": "olive",
+      "grade": "extra_light",
+      "vol_ml": 2000,
+      "jivo_example": "Jivo Extra Light Olive Oil 2L",
+      "match": {
+        "oil_type": "olive",
+        "grades_ok": ["extra_light", "light", "pure", "classic"],
+        "pack_ml": 2000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Figaro", "Borges", "Del Monte", "Leonardo"],
+        "exclude_name": ["pomace", "extra virgin", "virgin", "blend", "multi-source", "cooking oil", "olivkare", "smart", "active", "heart", "total"],
+        "allow_no_match": false
+      }
+    },
+    {
+      "key": "olive.pomace.1L",
+      "oil_type": "olive",
+      "grade": "pomace",
+      "vol_ml": 1000,
+      "jivo_example": "Jivo Pomace Olive Oil 1L",
+      "match": {
+        "oil_type": "olive",
+        "grades_ok": ["pomace"],
+        "pack_ml": 1000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Figaro", "Borges", "Del Monte", "Leonardo", "Oleev"],
+        "exclude_name": ["extra light", "light", "pure", "classic", "extra virgin", "virgin", "blend", "multi-source", "cooking oil", "olivkare", "smart", "active", "heart", "total"],
+        "allow_no_match": false
+      }
+    },
+    {
+      "key": "olive.pomace.5L",
+      "oil_type": "olive",
+      "grade": "pomace",
+      "vol_ml": 5000,
+      "jivo_example": "Jivo Pomace Olive Oil 5L",
+      "match": {
+        "oil_type": "olive",
+        "grades_ok": ["pomace"],
+        "pack_ml": 5000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Figaro", "Borges", "Del Monte", "Leonardo", "Oleev"],
+        "exclude_name": ["extra light", "light", "pure", "classic", "extra virgin", "virgin", "blend", "multi-source", "cooking oil", "olivkare", "smart", "active", "heart", "total"],
+        "allow_no_match": true
+      }
+    },
+    {
+      "key": "canola.cold_pressed.1L",
+      "oil_type": "canola",
+      "grade": "cold_pressed",
+      "vol_ml": 1000,
+      "jivo_example": "Jivo Cold Pressed Canola Oil 1L",
+      "match": {
+        "oil_type": "canola",
+        "grades_ok": ["cold_pressed"],
+        "pack_ml": 1000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Borges", "bb Royal"],
+        "exclude_name": ["sesame", "gingelly", "til", "ellu", "mustard", "sarso", "sarson", "sasive", "sunflower", "suryakanthi", "surajmukhi", "groundnut", "peanut", "kadale", "soya", "soyabean", "rice bran", "ricebran", "akki", "olive", "blend", "multi-source", "cooking oil", "virgin"],
+        "allow_no_match": true
+      }
+    },
+    {
+      "key": "canola.cold_pressed.5L",
+      "oil_type": "canola",
+      "grade": "cold_pressed",
+      "vol_ml": 5000,
+      "jivo_example": "Jivo Cold Pressed Canola Oil 5L",
+      "match": {
+        "oil_type": "canola",
+        "grades_ok": ["cold_pressed"],
+        "pack_ml": 5000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Borges", "bb Royal"],
+        "exclude_name": ["sesame", "gingelly", "til", "ellu", "mustard", "sarso", "sarson", "sasive", "sunflower", "suryakanthi", "surajmukhi", "groundnut", "peanut", "kadale", "soya", "soyabean", "rice bran", "ricebran", "akki", "olive", "blend", "multi-source", "cooking oil", "virgin"],
+        "allow_no_match": true
+      }
+    },
+    {
+      "key": "sunflower.cold_pressed.1L",
+      "oil_type": "sunflower",
+      "grade": "cold_pressed",
+      "vol_ml": 1000,
+      "jivo_example": "Jivo Cold Pressed Sunflower Oil 1L",
+      "match": {
+        "oil_type": "sunflower",
+        "grades_ok": ["cold_pressed"],
+        "pack_ml": 1000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Tata"],
+        "exclude_name": ["refined", "blend", "multi-source", "cooking oil", "rice bran", "corn", "heart", "active", "smart", "total", "superlite", "lite"],
+        "allow_no_match": true
+      }
+    },
+    {
+      "key": "mustard.kachi_ghani.1L",
+      "oil_type": "mustard",
+      "grade": "kachi_ghani",
+      "vol_ml": 1000,
+      "jivo_example": "Jivo Cold Pressed Kachi Ghani Mustard Oil 1L",
+      "match": {
+        "oil_type": "mustard",
+        "grades_ok": ["kachi_ghani", "cold_pressed"],
+        "pack_ml": 1000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Fortune", "Dhara", "Patanjali", "Emami", "P Mark", "Gemini"],
+        "exclude_name": ["refined", "blend", "multi-source", "cooking oil", "sunflower", "rice bran", "soya", "soyabean"],
+        "allow_no_match": false
+      }
+    },
+    {
+      "key": "mustard.kachi_ghani.5L",
+      "oil_type": "mustard",
+      "grade": "kachi_ghani",
+      "vol_ml": 5000,
+      "jivo_example": "Jivo Cold Pressed Kachi Ghani Mustard Oil 5L",
+      "match": {
+        "oil_type": "mustard",
+        "grades_ok": ["kachi_ghani", "cold_pressed"],
+        "pack_ml": 5000,
+        "pack_tol": 0.15,
+        "brands_allowed": ["Fortune", "Dhara", "Patanjali", "Emami", "P Mark", "Gemini"],
+        "exclude_name": ["refined", "blend", "multi-source", "cooking oil", "sunflower", "rice bran", "soya", "soyabean"],
+        "allow_no_match": false
+      }
+    }
+  ]
+}

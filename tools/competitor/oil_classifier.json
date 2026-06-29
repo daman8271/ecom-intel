@@ -1,0 +1,37 @@
+{
+  "_doc": "V2 deterministic oil_type + grade classifier. Derive oil_type and grade from the PRODUCT NAME only - NEVER from the search query/category field. A competitor row matches a JIVO anchor ONLY if its name-derived oil_type EQUALS the anchor's oil_type. Sesame/mustard/sunflower/groundnut can NEVER match canola; canola never matches anything else.",
+  "_bug_fixed": "'Patanjali Virgin Sesame Oil (Gingelly/Til Oil)' was wrongly shown under Canola because it returned from the 'canola oil' search. Oil type is now name-derived: it classifies as sesame.",
+  "_consumer_logic": [
+    "1. Lowercase the product NAME (ignore the search-query 'category' field entirely).",
+    "2. BLEND GATE FIRST (exclusion): if any oil_type.blend keyword is present in the name, oil_type='blend' -> exclude this row from every single-oil anchor, regardless of any other oil word present.",
+    "3. Otherwise assign oil_type = the FIRST entry in 'priority' whose keyword list matches the name (single oils tested before blend; more-specific first).",
+    "4. Grade = the FIRST entry in 'grade_priority' whose keyword list matches the name; grade is only enforced for olive (extra_virgin|extra_light|pomace) and mustard (kachi_ghani/cold_pressed vs refined) anchors.",
+    "5. A row joins an anchor only if oil_type == anchor.oil_type AND (anchor has no grade OR grade matches the anchor grade) AND pack volume within ~15% (density 0.916 for oil: 910 g -> ~993 ml still matches a 1 L anchor).",
+    "6. If an anchor has no like-for-like rival after these gates, report 'no direct competitor' - NEVER force a wrong oil (canola usually has none on Indian q-comm; cold-pressed sunflower is rare)."
+  ],
+  "_regional_words": "Enne=oil(Kannada); Sasive=mustard; Suryakanthi/Surajmukhi=sunflower; Kadale=groundnut; Gingelly/Til/Ellu=sesame; Akki=rice bran; Nariyal/Copra=coconut; Jaitun=olive; 'Kachi Ghani'=cold-pressed mustard.",
+  "oil_type": {
+    "sesame": ["sesame", "gingelly", "til", "ellu"],
+    "groundnut": ["groundnut", "peanut", "kadale", "moongphali", "mungfali"],
+    "rice_bran": ["rice bran", "ricebran", "akki"],
+    "mustard": ["mustard", "sarso", "sarson", "sasive", "kachi ghani"],
+    "sunflower": ["sunflower", "suryakanthi", "surajmukhi"],
+    "canola": ["canola"],
+    "coconut": ["coconut", "nariyal", "copra"],
+    "soyabean": ["soya", "soyabean", "soybean"],
+    "olive": ["olive", "jaitun"],
+    "blend": ["blend", "multi-source", "multi source", "cooking oil", "olivkare", "smart", "active", "heart", "total"]
+  },
+  "grade": {
+    "extra_virgin": ["extra virgin", "evoo"],
+    "pomace": ["pomace"],
+    "extra_light": ["extra light", "light", "pure olive", "classic"],
+    "kachi_ghani": ["kachi ghani", "kachhi", "cold pressed mustard"],
+    "cold_pressed": ["cold pressed", "cold-pressed"],
+    "refined": ["refined"],
+    "filtered": ["filtered"],
+    "virgin": ["virgin"]
+  },
+  "priority": ["sesame", "groundnut", "rice_bran", "mustard", "sunflower", "canola", "coconut", "soyabean", "olive", "blend"],
+  "grade_priority": ["extra_virgin", "pomace", "extra_light", "kachi_ghani", "cold_pressed", "refined", "filtered", "virgin"]
+}
