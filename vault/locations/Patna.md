@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 4
-observations: 55
+observations: 57
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Patna (4)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-mineral-water-1l]] · [[jivo-mineral-water-na]] · [[jivo-natural-minerals-water-mineral-water-na]]
 
-## Observations (55 rows)
+## Observations (57 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -56,6 +56,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-20-1207,2026-06-20,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,800013,271,375,27,0
 2026-06-27-1201,2026-06-27,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,800013,271,375,27,1
 2026-06-28-0551,2026-06-28,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,800013,265,271,2.2,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,800013,265,271,2.2,0
 2026-06-07-1132,2026-06-07,flipkart-minutes,jivo-mineral-water-1l,800013,24,30,20,0
 2026-06-08-0832,2026-06-08,flipkart-minutes,jivo-mineral-water-1l,800013,24,30,20,0
 2026-06-10-1137,2026-06-10,flipkart-minutes,jivo-mineral-water-1l,800013,24,30,20,0
@@ -83,6 +84,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-05-28-0900,2026-05-28,flipkart-minutes,jivo-mineral-water-na,800013,23,23,0,0
 2026-05-28-1200,2026-05-28,flipkart-minutes,jivo-mineral-water-na,800013,23,23,0,0
 2026-06-28-0551,2026-06-28,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,800013,24,24,0,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,800013,24,24,0,0
 ```
 
 ---

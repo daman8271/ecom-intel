@@ -1,13 +1,13 @@
 ---
 type: moc
 title: Locations
-city_count: 24
+city_count: 25
 tags:
   - moc
   - type/location-moc
 ---
 
-# Locations — Map of Content (24 cities)
+# Locations — Map of Content (25 cities)
 
 Up: [[index]]
 
@@ -69,6 +69,9 @@ Cities and pincodes where Jivo is sold. Each city links to its pincodes.
 
 ## [[Mysuru]] (15 pincodes)
 [[570001]] · [[570003]] · [[570004]] · [[570008]] · [[570010]] · [[570011]] · [[570016]] · [[570018]] · [[570019]] · [[570020]] · [[570023]] · [[570026]] · [[570028]] · [[571130]] · [[571311]]
+
+## [[Nashik]] (12 pincodes)
+[[422001]] · [[422002]] · [[422005]] · [[422006]] · [[422008]] · [[422010]] · [[422011]] · [[422012]] · [[422101]] · [[422105]] · [[422221]] · [[422501]]
 
 ## [[Noida]] (9 pincodes)
 [[201008]] · [[201301]] · [[201304]] · [[201305]] · [[201306]] · [[201307]] · [[201309]] · [[201310]] · [[203207]]
