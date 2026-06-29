@@ -1,0 +1,12 @@
+{
+  "blinkit": [],
+  "flipkart-minutes": [],
+  "flipkart": [],
+  "amazon": [],
+  "zepto": [],
+  "amazon-fresh": [
+    "2:geo_price_identity"
+  ],
+  "amazon-now": [],
+  "bigbasket": []
+}
