@@ -29,6 +29,10 @@ if [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ]; 
     export PINCODES_FILE
   elif [ "${COVERAGE_FULL:-0}" = "1" ] && [ -f "$PDIR/pincodes.full25.json" ]; then
     export PINCODES_FILE="$PDIR/pincodes.full25.json"
+  elif [ "${COVERAGE_DAILY:-0}" = "1" ] && [ -f "$PDIR/pincodes.daily.json" ]; then
+    # DAILY mode: only the pincodes where Jivo is actually on sale (price-tracking set).
+    # blinkit 486 / zepto 693 / flipkart-minutes 340 — refreshed by the weekly full pass.
+    export PINCODES_FILE="$PDIR/pincodes.daily.json"
   fi
   [ -n "${PINCODES_FILE:-}" ] && echo "[$RUN_ID] $P PINCODES_FILE=$PINCODES_FILE"
 fi
@@ -128,7 +132,7 @@ python3 "$DIR/tools/vault_note.py" "$P" "$RUN_ID" --csv-only || echo "vault_note
 # Best-effort + gated on COVERAGE_FULL so default runs are unchanged. Derives an honest
 # per-pincode status (price_captured / serviceable_no_jivo / not_serviceable) from the
 # history rows this run just appended + the config that was actually scraped.
-if { [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ]; } && [ "${COVERAGE_FULL:-0}" = "1" ]; then
+if { [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ]; } && { [ "${COVERAGE_FULL:-0}" = "1" ] || [ "${COVERAGE_DAILY:-0}" = "1" ]; }; then
   CFG_USED="${PINCODES_FILE:-$PDIR/pincodes.full25.json}"
   echo "[$RUN_ID] emitting coverage ledger from history (config=$CFG_USED) ..."
   python3 "$DIR/tools/coverage/emit_ledger_from_history.py" "$P" "$RUN_ID" "$(date +%F)" \

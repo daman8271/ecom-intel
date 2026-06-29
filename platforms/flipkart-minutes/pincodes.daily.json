@@ -1,0 +1,4082 @@
+[
+ {
+  "city": "Mumbai",
+  "pincode": "400001",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400001"
+  ],
+  "lat": 18.935871116666668,
+  "lon": 72.83409186666667,
+  "locality": "Mumbai GPO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400006"
+  ],
+  "lat": 18.95675,
+  "lon": 72.8098889,
+  "locality": "Malabar Hill S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400007",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400007"
+  ],
+  "lat": 18.967287419999998,
+  "lon": 72.81915957999999,
+  "locality": "Grant Road S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400010",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400010"
+  ],
+  "lat": 18.96992706,
+  "lon": 72.8412154,
+  "locality": "Mazgaon S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400011",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400011"
+  ],
+  "lat": 18.979641500000003,
+  "lon": 72.82601738000001,
+  "locality": "Jacob Circle S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400012",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400012"
+  ],
+  "lat": 18.999496042857142,
+  "lon": 72.8390754,
+  "locality": "Parel S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400013",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400013"
+  ],
+  "lat": 18.9965,
+  "lon": 72.8256111,
+  "locality": "Delisle Road S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400015"
+  ],
+  "lat": 18.9771667,
+  "lon": 72.8494167,
+  "locality": "Sewri S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400016"
+  ],
+  "lat": 19.03613576,
+  "lon": 72.84312643999999,
+  "locality": "Mahim H.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400017"
+  ],
+  "lat": 19.04233335,
+  "lon": 72.85173610000001,
+  "locality": "Dharavi S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400019",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400019"
+  ],
+  "lat": 19.02808,
+  "lon": 72.852298,
+  "locality": "Matunga SO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400029",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400029"
+  ],
+  "lat": 19.024430549999998,
+  "lon": 72.845,
+  "locality": "Santacruz P and T  Colony S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400030",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400030"
+  ],
+  "lat": 19.014506975,
+  "lon": 72.817125,
+  "locality": "Worli Colony S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400033",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400033"
+  ],
+  "lat": 18.97372172,
+  "lon": 72.8374266,
+  "locality": "Tank Road S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400055",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400055"
+  ],
+  "lat": 19.081361100000002,
+  "lon": 72.84866665,
+  "locality": "Santacruz(East) S.O"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400066",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400066"
+  ],
+  "lat": 19.230976024999997,
+  "lon": 72.860007475,
+  "locality": "Borivali East SO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400071",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400071"
+  ],
+  "lat": 19.0568889,
+  "lon": 72.8981111,
+  "locality": "Chembur HO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400079",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400079"
+  ],
+  "lat": 19.1057361,
+  "lon": 72.9232917,
+  "locality": "Vikhroli SO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400080",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400080"
+  ],
+  "lat": 19.162844439999997,
+  "lon": 72.94812778,
+  "locality": "Mulund West SO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400081",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400081"
+  ],
+  "lat": 19.169097200000003,
+  "lon": 72.9634028,
+  "locality": "Mulund East SO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400082",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400082"
+  ],
+  "lat": 19.1709167,
+  "lon": 72.93305555,
+  "locality": "Bhandup Complex SO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400091",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400091"
+  ],
+  "lat": 19.2318889,
+  "lon": 72.8404444,
+  "locality": "Borivali HO"
+ },
+ {
+  "city": "Mumbai",
+  "pincode": "400098",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "400098"
+  ],
+  "lat": 19.0799722,
+  "lon": 72.8545,
+  "locality": "Vidyanagari S.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110007",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110007"
+  ],
+  "lat": 28.67359318181818,
+  "lon": 77.20531777272727,
+  "locality": "Malka Ganj SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110008",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110008"
+  ],
+  "lat": 28.64263888,
+  "lon": 77.1754,
+  "locality": "Patel Nagar SO Central Delhi"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110014",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110014"
+  ],
+  "lat": 28.579201374999997,
+  "lon": 77.25380555,
+  "locality": "Jungpura SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110015"
+  ],
+  "lat": 28.65779928571428,
+  "lon": 77.13125761428572,
+  "locality": "Ramesh Nagar H.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110017"
+  ],
+  "lat": 28.5319738125,
+  "lon": 77.2146171375,
+  "locality": "Malviya Nagar SO South Delhi"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110025",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110025"
+  ],
+  "lat": 28.557827780000004,
+  "lon": 77.27961668,
+  "locality": "New Friends Colony SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110026",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110026"
+  ],
+  "lat": 28.658085775,
+  "lon": 77.13170975,
+  "locality": "Punjabi Bagh S.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110027",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110027"
+  ],
+  "lat": 28.64253728333333,
+  "lon": 77.11687058333332,
+  "locality": "Tagore Garden S.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110028",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110028"
+  ],
+  "lat": 28.6313205,
+  "lon": 77.13688435,
+  "locality": "Naraina Industrial Estate H.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110031",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110031"
+  ],
+  "lat": 28.669238085714287,
+  "lon": 77.27432935714286,
+  "locality": "Gandhi Nagar SO East Delhi"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110032",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110032"
+  ],
+  "lat": 28.672822638461533,
+  "lon": 77.29726493846154,
+  "locality": "Shahdara SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110033",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110033"
+  ],
+  "lat": 28.723717583333336,
+  "lon": 77.17099998333333,
+  "locality": "NSMandi SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110034",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110034"
+  ],
+  "lat": 28.695146842857138,
+  "lon": 77.13748411428571,
+  "locality": "Saraswati Vihar SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110035",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110035"
+  ],
+  "lat": 28.680592414285716,
+  "lon": 77.16264871428572,
+  "locality": "Keshavpuram SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110040",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110040"
+  ],
+  "lat": 28.849454825000002,
+  "lon": 77.087048575,
+  "locality": "Bankner BO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110042",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110042"
+  ],
+  "lat": 28.741790614285716,
+  "lon": 77.13669655714286,
+  "locality": "Pehlad Pur BO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110046",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110046"
+  ],
+  "lat": 28.6110556,
+  "lon": 77.10586115,
+  "locality": "Nangal Raya S.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110051",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110051"
+  ],
+  "lat": 28.660645825,
+  "lon": 77.29134027500001,
+  "locality": "Krishna Nagar HO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110052",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110052"
+  ],
+  "lat": 28.68178286,
+  "lon": 77.1776389,
+  "locality": "Ashok Vihar HO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110054",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110054"
+  ],
+  "lat": 28.687274659999996,
+  "lon": 77.22421464,
+  "locality": "Civil Lines SO North Delhi"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110056",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110056"
+  ],
+  "lat": 28.6827222,
+  "lon": 77.1111111,
+  "locality": "Shakur Basti Depot SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110058",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110058"
+  ],
+  "lat": 28.62873566,
+  "lon": 77.09654814000001,
+  "locality": "Janakpuri B 1 S.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110060",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110060"
+  ],
+  "lat": 28.6367222,
+  "lon": 77.1831111,
+  "locality": "Rajender Nagar SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110063",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110063"
+  ],
+  "lat": 28.66855906,
+  "lon": 77.11112069999999,
+  "locality": "Paschim Vihar S.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110065",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110065"
+  ],
+  "lat": 28.56102578,
+  "lon": 77.25219842,
+  "locality": "Sriniwaspuri SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110066",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110066"
+  ],
+  "lat": 28.5625556,
+  "lon": 77.1781389,
+  "locality": "R K Puram Main SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110067",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110067"
+  ],
+  "lat": 28.548398133333336,
+  "lon": 77.173,
+  "locality": "JNU SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110069",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110069"
+  ],
+  "lat": 28.6225833,
+  "lon": 77.2127222,
+  "locality": "Union Public Service Commission SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110070",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110070"
+  ],
+  "lat": 28.520824066666666,
+  "lon": 77.15779629999999,
+  "locality": "Vasant Kunj SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110074",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110074"
+  ],
+  "lat": 28.501062066666666,
+  "lon": 77.18678539999999,
+  "locality": "BHATI VILLAGE BO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110075",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110075"
+  ],
+  "lat": 28.58859436666667,
+  "lon": 77.05011359999999,
+  "locality": "Amberhai B.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110077",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110077"
+  ],
+  "lat": 28.568251119999996,
+  "lon": 77.06289424,
+  "locality": "Dhulsiras B.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110078",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110078"
+  ],
+  "lat": 28.613895,
+  "lon": 77.06544219999999,
+  "locality": "Kakrola B.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110083",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110083"
+  ],
+  "lat": 28.69819445,
+  "lon": 77.08843055,
+  "locality": "Mangolpuri N Block SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110085",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110085"
+  ],
+  "lat": 28.7124186375,
+  "lon": 77.133018675,
+  "locality": "Rohini Sector7 SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110087",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110087"
+  ],
+  "lat": 28.675387233333336,
+  "lon": 77.08653523333334,
+  "locality": "Sunder Vihar S.O"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110088",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110088"
+  ],
+  "lat": 28.703796300000004,
+  "lon": 77.16324073333334,
+  "locality": "Shalamar BO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110089",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110089"
+  ],
+  "lat": 28.73480555,
+  "lon": 77.1325,
+  "locality": "Rohini Sector 15 SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110090",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110090"
+  ],
+  "lat": 28.70345077142857,
+  "lon": 77.2887649,
+  "locality": "Karawal Nagar SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110091",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110091"
+  ],
+  "lat": 28.62391665714286,
+  "lon": 77.30280555714286,
+  "locality": "Patparganj SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110092",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110092"
+  ],
+  "lat": 28.657012344444443,
+  "lon": 77.29079936666666,
+  "locality": "Laxmi Nagar SO East Delhi"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110093",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110093"
+  ],
+  "lat": 28.689928950000006,
+  "lon": 77.30706646666667,
+  "locality": "Nand Nagri C SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110094",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110094"
+  ],
+  "lat": 28.696148133333335,
+  "lon": 77.29725,
+  "locality": "Gokal Puri SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110095",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110095"
+  ],
+  "lat": 28.680317512499997,
+  "lon": 77.317744425,
+  "locality": "Jhilmil HO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110096",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110096"
+  ],
+  "lat": 28.6162011,
+  "lon": 77.32758296666667,
+  "locality": "Vasundhra Enclave SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110099",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110099"
+  ],
+  "lat": 28.720596,
+  "lon": 77.080909,
+  "locality": "ROHINI SECTOR 23 SO"
+ },
+ {
+  "city": "Delhi",
+  "pincode": "110110",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "110110"
+  ],
+  "lat": 28.7158,
+  "lon": 77.11,
+  "locality": "Nodal Delivery Centre(Parcel), Rohini"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560001",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560001"
+  ],
+  "lat": 12.903898270000003,
+  "lon": 77.63319888,
+  "locality": "Bengaluru G.P.O."
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560004",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560004"
+  ],
+  "lat": 12.948536025,
+  "lon": 77.573275025,
+  "locality": "Basavanagudi H.O"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560015"
+  ],
+  "lat": 13.046435,
+  "lon": 77.522697,
+  "locality": "Jalahalli West S.O"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560030",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560030"
+  ],
+  "lat": 12.9485278,
+  "lon": 77.6017222,
+  "locality": "Adugodi S.O"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560047",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560047"
+  ],
+  "lat": 12.95006945,
+  "lon": 77.5948611,
+  "locality": "Viveknagar S.O (Bengaluru)"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560058",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560058"
+  ],
+  "lat": 13.020583333333335,
+  "lon": 77.51902033333333,
+  "locality": "Peenya Small Industries S.O"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560068",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560068"
+  ],
+  "lat": 12.902451200000002,
+  "lon": 77.63206993333334,
+  "locality": "Bommanahalli S.O (Bengaluru)"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560096",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560096"
+  ],
+  "lat": 13.011426,
+  "lon": 77.535877,
+  "locality": "Nandinilayout S.O"
+ },
+ {
+  "city": "Bengaluru",
+  "pincode": "560102",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "560102"
+  ],
+  "lat": 12.9141099,
+  "lon": 77.6371518,
+  "locality": "HSR Layout S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500001",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500001"
+  ],
+  "lat": 17.523194445,
+  "lon": 78.62307639,
+  "locality": "Hyderabad G.P.O."
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500003",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500003"
+  ],
+  "lat": 17.73758333,
+  "lon": 78.83125,
+  "locality": "Secunderabad H.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500011",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500011"
+  ],
+  "lat": 17.46488889,
+  "lon": 78.47244444,
+  "locality": "Bowenpally S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500013",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500013"
+  ],
+  "lat": 17.3952222,
+  "lon": 78.5265139,
+  "locality": "Amberpet S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500016"
+  ],
+  "lat": 17.440375,
+  "lon": 78.46345833500001,
+  "locality": "Begumpet S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500017"
+  ],
+  "lat": 17.43663889,
+  "lon": 78.535736115,
+  "locality": "Lallaguda S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500020",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500020"
+  ],
+  "lat": 17.47504167,
+  "lon": 78.5752583375,
+  "locality": "Musheerabad (D) S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500023",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500023"
+  ],
+  "lat": 17.3520278,
+  "lon": 78.4885278,
+  "locality": "Yakutpura S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500024",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500024"
+  ],
+  "lat": 17.6186389,
+  "lon": 78.8256667,
+  "locality": "Sahifa S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500029",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500029"
+  ],
+  "lat": 17.609555555,
+  "lon": 78.72390277999999,
+  "locality": "Himayathnagar S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500033",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500033"
+  ],
+  "lat": 17.42997222,
+  "lon": 78.41741667,
+  "locality": "Jubilee Hills S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500034",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500034"
+  ],
+  "lat": 17.41722222,
+  "lon": 78.43588889,
+  "locality": "Banjara Hills S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500044",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500044"
+  ],
+  "lat": 17.484055533333333,
+  "lon": 78.62169443333333,
+  "locality": "New Nallakunta S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500045",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500045"
+  ],
+  "lat": 17.442972225,
+  "lon": 78.42816666499999,
+  "locality": "Yousufguda S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500053",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500053"
+  ],
+  "lat": 17.34106945,
+  "lon": 78.474125,
+  "locality": "Falaknuma S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500065",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500065"
+  ],
+  "lat": 17.3526111,
+  "lon": 78.4786944,
+  "locality": "Shahalibanda S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500073",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500073"
+  ],
+  "lat": 17.42972222,
+  "lon": 78.43783333,
+  "locality": "Srinagar Colony S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500081",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500081"
+  ],
+  "lat": 17.44738889,
+  "lon": 78.39625,
+  "locality": "Cyberabad S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500082",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500082"
+  ],
+  "lat": 17.421791665,
+  "lon": 78.45497222,
+  "locality": "Somajiguda S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500110",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500110"
+  ],
+  "lat": 17.418955,
+  "lon": 78.401742,
+  "locality": "Prashasan Nagar S.O"
+ },
+ {
+  "city": "Hyderabad",
+  "pincode": "500112",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "500112"
+  ],
+  "lat": 17.3051,
+  "lon": 78.5254,
+  "locality": "Almasguda B.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600002",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600002"
+  ],
+  "lat": 13.068737073333333,
+  "lon": 80.26355381333333,
+  "locality": "Anna Road H.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600003",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600003"
+  ],
+  "lat": 13.081962966666666,
+  "lon": 80.27610186666666,
+  "locality": "Park Town H.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600005",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600005"
+  ],
+  "lat": 13.061988125,
+  "lon": 80.27972155,
+  "locality": "Tiruvallikeni S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600006"
+  ],
+  "lat": 13.076705024999999,
+  "lon": 80.3314726,
+  "locality": "Greams Road S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600008",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600008"
+  ],
+  "lat": 13.069567,
+  "lon": 80.25872633333333,
+  "locality": "EGMORE MDO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600011",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600011"
+  ],
+  "lat": 13.143685166666666,
+  "lon": 80.2938333,
+  "locality": "Perambur S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600013",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600013"
+  ],
+  "lat": 13.1126111,
+  "lon": 80.2931667,
+  "locality": "Rayapuram S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600015"
+  ],
+  "lat": 13.02394455,
+  "lon": 80.23497205,
+  "locality": "Saidapet S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600016"
+  ],
+  "lat": 12.983460925000001,
+  "lon": 80.190880925,
+  "locality": "St Thomas Mount HO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600017"
+  ],
+  "lat": 13.042445825,
+  "lon": 80.237595825,
+  "locality": "Thygarayanagar H.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600019",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600019"
+  ],
+  "lat": 13.13522222,
+  "lon": 80.25412224,
+  "locality": "Tiruvottiyur SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600020",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600020"
+  ],
+  "lat": 12.736823800000002,
+  "lon": 80.2319284,
+  "locality": "Adyar S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600021",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600021"
+  ],
+  "lat": 13.11725,
+  "lon": 80.28697220000001,
+  "locality": "Washermanpet S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600022",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600022"
+  ],
+  "lat": 13.0453611,
+  "lon": 80.2376111,
+  "locality": "Rajbhavan S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600023",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600023"
+  ],
+  "lat": 13.1014722,
+  "lon": 80.2395278,
+  "locality": "Aynavaram S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600024",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600024"
+  ],
+  "lat": 13.0518333,
+  "lon": 80.2299722,
+  "locality": "Kodambakkam S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600025",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600025"
+  ],
+  "lat": 13.0453611,
+  "lon": 80.2376111,
+  "locality": "Engineering College S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600026",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600026"
+  ],
+  "lat": 13.5056389,
+  "lon": 80.2145833,
+  "locality": "Vadapalani S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600030",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600030"
+  ],
+  "lat": 13.105388900000001,
+  "lon": 80.3033889,
+  "locality": "Shenoy Nagar S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600031",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600031"
+  ],
+  "lat": 13.07815155,
+  "lon": 80.2457831,
+  "locality": "Chetput S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600032",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600032"
+  ],
+  "lat": 13.03594445,
+  "lon": 80.20866665,
+  "locality": "Guindy Industrial Estate S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600033",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600033"
+  ],
+  "lat": 13.03681945,
+  "lon": 80.22355555,
+  "locality": "West Mambalam S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600037",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600037"
+  ],
+  "lat": 13.1154167,
+  "lon": 80.23322225,
+  "locality": "Mogappair SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600038",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600038"
+  ],
+  "lat": 13.1006944,
+  "lon": 80.224,
+  "locality": "Icf Colony S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600040",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600040"
+  ],
+  "lat": 13.0453611,
+  "lon": 80.2376111,
+  "locality": "Anna Nagar S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600041",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600041"
+  ],
+  "lat": 12.985216666666666,
+  "lon": 80.26272943333333,
+  "locality": "Tiruvanmiyur S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600042",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600042"
+  ],
+  "lat": 12.9826389,
+  "lon": 80.2216389,
+  "locality": "Velacheri S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600049",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600049"
+  ],
+  "lat": 13.1060625,
+  "lon": 80.19121527499999,
+  "locality": "Villivakkam SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600050",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600050"
+  ],
+  "lat": 13.083055550000001,
+  "lon": 80.14786665,
+  "locality": "Padi SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600051",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600051"
+  ],
+  "lat": 13.2660278,
+  "lon": 80.4100556,
+  "locality": "Madhavaram Milk Colony SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600053",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600053"
+  ],
+  "lat": 13.132842616666665,
+  "lon": 80.16136575,
+  "locality": "Ambattur HO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600058",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600058"
+  ],
+  "lat": 13.092541650000001,
+  "lon": 80.15804165,
+  "locality": "Ambattur Indl Estate SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600061",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600061"
+  ],
+  "lat": 13.315736099999999,
+  "lon": 80.2585417,
+  "locality": "Nanganallur S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600068",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600068"
+  ],
+  "lat": 13.1271389,
+  "lon": 79.9108889,
+  "locality": "Manali SO Tiruvallur"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600077",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600077"
+  ],
+  "lat": 13.066916675,
+  "lon": 80.10480555000001,
+  "locality": "Thiruverkadu SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600078",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600078"
+  ],
+  "lat": 13.0433889,
+  "lon": 80.2064167,
+  "locality": "Kalaignar Karunanidhi Nagar S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600083",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600083"
+  ],
+  "lat": 13.03680555,
+  "lon": 80.22706944999999,
+  "locality": "Ashoknagar S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600086",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600086"
+  ],
+  "lat": 13.0453611,
+  "lon": 80.2376111,
+  "locality": "Gopalapuram S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600087",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600087"
+  ],
+  "lat": 13.0475,
+  "lon": 80.1809861,
+  "locality": "Alwarthirunagar S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600089",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600089"
+  ],
+  "lat": 13.023987049999999,
+  "lon": 80.18440345,
+  "locality": "Nandambakkam Kudiyiruppu S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600092",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600092"
+  ],
+  "lat": 13.05025,
+  "lon": 80.1943611,
+  "locality": "Virugambakkam S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600093",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600093"
+  ],
+  "lat": 13.0425556,
+  "lon": 80.2063889,
+  "locality": "Saligramam S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600096",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600096"
+  ],
+  "lat": 12.9725972,
+  "lon": 80.24412219999999,
+  "locality": "Perungudi S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600097",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600097"
+  ],
+  "lat": 12.93543055,
+  "lon": 80.23959725,
+  "locality": "Oggiamthoraipakkam S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600104",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600104"
+  ],
+  "lat": 13.0453611,
+  "lon": 80.2376111,
+  "locality": "High Court Building S.O (Chennai)"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600107",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600107"
+  ],
+  "lat": 13.088067066666667,
+  "lon": 80.241073,
+  "locality": "Koyambedu S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600113",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600113"
+  ],
+  "lat": 12.989267850000001,
+  "lon": 80.25331395,
+  "locality": "TTTI Taramani S.O"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600116",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600116"
+  ],
+  "lat": 13.035731499999999,
+  "lon": 80.15253703333333,
+  "locality": "Porur SO"
+ },
+ {
+  "city": "Chennai",
+  "pincode": "600118",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "600118"
+  ],
+  "lat": 13.126916666666668,
+  "lon": 80.23973146666667,
+  "locality": "Kodungaiyur SO"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411005",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411005"
+  ],
+  "lat": 18.525402225,
+  "lon": 73.7136708,
+  "locality": "Shivajinagar S.O (Pune)"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411012",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411012"
+  ],
+  "lat": 18.581208335,
+  "lon": 73.832319445,
+  "locality": "Dapodi S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411023",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411023"
+  ],
+  "lat": 18.46894214,
+  "lon": 73.78627208,
+  "locality": "Shivane B.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411028",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411028"
+  ],
+  "lat": 18.498194445000003,
+  "lon": 73.930819445,
+  "locality": "Hadapsar S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411033",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411033"
+  ],
+  "lat": 18.52047,
+  "lon": 73.300211,
+  "locality": "Tathawade B.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411039",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411039"
+  ],
+  "lat": 18.62033333,
+  "lon": 73.84822222,
+  "locality": "Bhosarigoan S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411043",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411043"
+  ],
+  "lat": 18.4653611,
+  "lon": 73.8551111,
+  "locality": "Dhankawadi S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411044",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411044"
+  ],
+  "lat": 18.65888889,
+  "lon": 73.75027778,
+  "locality": "P.C.N.T. S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411045",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411045"
+  ],
+  "lat": 18.5699504,
+  "lon": 73.7661502,
+  "locality": "N.I.A. S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411046",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411046"
+  ],
+  "lat": 18.447838500000003,
+  "lon": 73.8555539,
+  "locality": "Katraj S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411058",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411058"
+  ],
+  "lat": 18.4758056,
+  "lon": 73.7976667,
+  "locality": "Warje S.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "411068",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "411068"
+  ],
+  "lat": 18.457955,
+  "lon": 73.79191,
+  "locality": "Nanded S.O (Pune)"
+ },
+ {
+  "city": "Pune",
+  "pincode": "412107",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "412107"
+  ],
+  "lat": 18.66025661,
+  "lon": 73.7515039,
+  "locality": "Rule B.O"
+ },
+ {
+  "city": "Pune",
+  "pincode": "412220",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "412220"
+  ],
+  "lat": 18.670735933333333,
+  "lon": 73.88973333333334,
+  "locality": "Karegaon B.O"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380003",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380003"
+  ],
+  "lat": 23.04,
+  "lon": 72.59,
+  "locality": "DELIVERY HUB AHMEDABAD"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380004",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380004"
+  ],
+  "lat": 23.049472225,
+  "lon": 72.5913680625,
+  "locality": "Shahibag SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380006"
+  ],
+  "lat": 23.0072778,
+  "lon": 72.5573611,
+  "locality": "Ellisbridge SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380007",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380007"
+  ],
+  "lat": 23.00945666,
+  "lon": 72.55974333999998,
+  "locality": "Paldi SO Ahmedabad"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380008",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380008"
+  ],
+  "lat": 22.999607142857144,
+  "lon": 72.60906348571429,
+  "locality": "Maninagar SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380009",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380009"
+  ],
+  "lat": 23.040479175,
+  "lon": 72.55771527499999,
+  "locality": "Navrangpura HO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380016"
+  ],
+  "lat": 23.05000695,
+  "lon": 72.610076375,
+  "locality": "Civil Hospital SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380019",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380019"
+  ],
+  "lat": 23.0661111,
+  "lon": 72.5767361,
+  "locality": "Railway Colony SO Ahmedabad"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380022",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380022"
+  ],
+  "lat": 23.009236100000003,
+  "lon": 72.58790275000001,
+  "locality": "Behrampura SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380023",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380023"
+  ],
+  "lat": 23.0165139,
+  "lon": 72.6263889,
+  "locality": "Rakhial Udyog Vistar SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380024",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380024"
+  ],
+  "lat": 23.031333333333333,
+  "lon": 72.62524076666666,
+  "locality": "I E Bapunagar SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380026",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380026"
+  ],
+  "lat": 22.9992722,
+  "lon": 72.6294778,
+  "locality": "Amraiwadi SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380028",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380028"
+  ],
+  "lat": 22.997805550000002,
+  "lon": 72.5923472,
+  "locality": "Shah Alam Roza SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380049",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380049"
+  ],
+  "lat": 23.04,
+  "lon": 72.66,
+  "locality": "Nikol SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380050",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380050"
+  ],
+  "lat": 23.0281944,
+  "lon": 72.5833889,
+  "locality": "Ghodasar SO Ahmedabad"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380051",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380051"
+  ],
+  "lat": 23.0048889,
+  "lon": 72.5208889,
+  "locality": "Jivraj Park SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380054",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380054"
+  ],
+  "lat": 23.0483611,
+  "lon": 72.52084719999999,
+  "locality": "Bodakdev SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380058",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380058"
+  ],
+  "lat": 23.02742,
+  "lon": 72.45576,
+  "locality": "Ambli BO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380059",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380059"
+  ],
+  "lat": 23.054457,
+  "lon": 72.4856125,
+  "locality": "Shilaj BO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380061",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380061"
+  ],
+  "lat": 23.0687222,
+  "lon": 72.5431389,
+  "locality": "Ghatlodia SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "380063",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "380063"
+  ],
+  "lat": 23.0576944,
+  "lon": 72.5488611,
+  "locality": "Sola H B C SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "382345",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "382345"
+  ],
+  "lat": 23.0529111,
+  "lon": 72.6291722,
+  "locality": "Saijpur Bogha SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "382350",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "382350"
+  ],
+  "lat": 23.0375389,
+  "lon": 72.64154445,
+  "locality": "T B Nagar SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "382415",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "382415"
+  ],
+  "lat": 23.0224167,
+  "lon": 72.66116665,
+  "locality": "Odhav Industrial Estate SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "382418",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "382418"
+  ],
+  "lat": 23.00425,
+  "lon": 72.69075,
+  "locality": "Vastral SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "382443",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "382443"
+  ],
+  "lat": 22.9829722,
+  "lon": 72.5971111,
+  "locality": "Isanpur SO"
+ },
+ {
+  "city": "Ahmedabad",
+  "pincode": "382445",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "382445"
+  ],
+  "lat": 22.947611119999998,
+  "lon": 72.64445556000001,
+  "locality": "Vivekanandnagar BO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700001",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700001"
+  ],
+  "lat": 22.431713676923074,
+  "lon": 88.26323846153848,
+  "locality": "Kolkatta GPO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700002",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700002"
+  ],
+  "lat": 22.886207737500005,
+  "lon": 87.8101047625,
+  "locality": "Cossipore HO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700006"
+  ],
+  "lat": 22.588581685714285,
+  "lon": 88.36744062857143,
+  "locality": "Beadon Street SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700015"
+  ],
+  "lat": 22.34199793333333,
+  "lon": 88.22452866666667,
+  "locality": "Tangra SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700016"
+  ],
+  "lat": 22.5597685,
+  "lon": 88.35675926666666,
+  "locality": "Park Street HO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700019",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700019"
+  ],
+  "lat": 22.526569449999997,
+  "lon": 88.36264353333335,
+  "locality": "Ballygunge SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700034",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700034"
+  ],
+  "lat": 22.498042400000003,
+  "lon": 88.31864221666667,
+  "locality": "Behala SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700040",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700040"
+  ],
+  "lat": 22.48340263333333,
+  "lon": 88.35204646666666,
+  "locality": "Regent Park SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700041",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700041"
+  ],
+  "lat": 22.5010972,
+  "lon": 88.32011109999999,
+  "locality": "Paschim Putiari SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700067",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700067"
+  ],
+  "lat": 22.5926111,
+  "lon": 88.38597215,
+  "locality": "Ultadanga Main Road SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700071",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700071"
+  ],
+  "lat": 22.557851833333334,
+  "lon": 88.36252776666667,
+  "locality": "Middleton Row SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700072",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700072"
+  ],
+  "lat": 22.5601759,
+  "lon": 88.35550003333333,
+  "locality": "Princep Street SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700087",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700087"
+  ],
+  "lat": 22.5588889,
+  "lon": 88.3551111,
+  "locality": "New Market SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700094",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700094"
+  ],
+  "lat": 22.487982033333335,
+  "lon": 88.39712473333334,
+  "locality": "Panchasayar SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700099",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700099"
+  ],
+  "lat": 22.4954527,
+  "lon": 88.4017125,
+  "locality": "Mukundapur SO"
+ },
+ {
+  "city": "Kolkata",
+  "pincode": "700100",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "700100"
+  ],
+  "lat": 22.3143584,
+  "lon": 88.25855,
+  "locality": "Vip Nagar SO"
+ },
+ {
+  "city": "Surat",
+  "pincode": "394230",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "394230"
+  ],
+  "lat": 21.214518474999995,
+  "lon": 72.79357088333333,
+  "locality": "Bonandh BO"
+ },
+ {
+  "city": "Surat",
+  "pincode": "395009",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "395009"
+  ],
+  "lat": 21.204060840000004,
+  "lon": 72.79158262,
+  "locality": "Navyug College SO"
+ },
+ {
+  "city": "Noida",
+  "pincode": "201009",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "201009"
+  ],
+  "lat": 28.64701677,
+  "lon": 77.44141692,
+  "locality": "Chhapraula BO"
+ },
+ {
+  "city": "Noida",
+  "pincode": "201302",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "201302"
+  ],
+  "lat": 28.5787,
+  "lon": 77.3134,
+  "locality": "NDC Noida"
+ },
+ {
+  "city": "Noida",
+  "pincode": "201309",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "201309"
+  ],
+  "lat": 25.246191666666665,
+  "lon": 78.137134,
+  "locality": "Sec62 Noida SO"
+ },
+ {
+  "city": "Noida",
+  "pincode": "201310",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "201310"
+  ],
+  "lat": 26.6521175,
+  "lon": 77.1233612,
+  "locality": "Sakipur BO"
+ },
+ {
+  "city": "Noida",
+  "pincode": "201318",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "201318"
+  ],
+  "lat": 28.6681111,
+  "lon": 77.4284722,
+  "locality": "Sec 01 Greater Noida SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122001",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122001"
+  ],
+  "lat": 28.46114021818182,
+  "lon": 77.02951565454545,
+  "locality": "Gurgaon HO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122003",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122003"
+  ],
+  "lat": 28.44960056,
+  "lon": 77.06522058,
+  "locality": "Jharsa BO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122004",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122004"
+  ],
+  "lat": 28.413813233333332,
+  "lon": 76.99296301666668,
+  "locality": "Khandsa BO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122005",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122005"
+  ],
+  "lat": 28.5056111,
+  "lon": 77.0710556,
+  "locality": "Air Force SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122006"
+  ],
+  "lat": 28.469851525,
+  "lon": 77.03257672500001,
+  "locality": "Basai BO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122007",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122007"
+  ],
+  "lat": 28.462,
+  "lon": 77.0316389,
+  "locality": "Industrial Estate SO Gurgaon"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122008",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122008"
+  ],
+  "lat": 28.462,
+  "lon": 77.0316389,
+  "locality": "DLF PhII SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122010",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122010"
+  ],
+  "lat": 28.466093,
+  "lon": 77.1058349,
+  "locality": "DLF PhIII SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122011",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122011"
+  ],
+  "lat": 28.462,
+  "lon": 77.0316389,
+  "locality": "Gurgaon Sector 56 SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122015"
+  ],
+  "lat": 28.4973611,
+  "lon": 77.0630556,
+  "locality": "Palam Road SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122016"
+  ],
+  "lat": 28.4965833,
+  "lon": 77.0852778,
+  "locality": "Industrial Complex Dundahera SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122018",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122018"
+  ],
+  "lat": 28.462,
+  "lon": 77.0316389,
+  "locality": "Gurgaon South City II SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122051",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122051"
+  ],
+  "lat": 28.343123499999997,
+  "lon": 76.9401834,
+  "locality": "Kasan BO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122098",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122098"
+  ],
+  "lat": 28.3913822,
+  "lon": 77.0511932,
+  "locality": "CRPF Kadarpur SO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122101",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122101"
+  ],
+  "lat": 28.39167242,
+  "lon": 77.05193790000001,
+  "locality": "Fazilpur BO"
+ },
+ {
+  "city": "Gurugram",
+  "pincode": "122505",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "122505"
+  ],
+  "lat": 28.424405366666665,
+  "lon": 76.91778906666667,
+  "locality": "Budhera BO"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302001",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302001"
+  ],
+  "lat": 26.920560116666664,
+  "lon": 75.80878025,
+  "locality": "Jaipur G.P.O."
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302005",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302005"
+  ],
+  "lat": 26.89938308,
+  "lon": 75.79987668000001,
+  "locality": "Rajasthan Secretariate S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302006"
+  ],
+  "lat": 26.913191480000002,
+  "lon": 75.7866135,
+  "locality": "Jaipur R.S. S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302012",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302012"
+  ],
+  "lat": 26.989283057142853,
+  "lon": 75.70386078571428,
+  "locality": "Hathoj B.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302015"
+  ],
+  "lat": 26.880087500000002,
+  "lon": 75.80086750000001,
+  "locality": "Gandhi Nagar S.O (Jaipur)"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302016"
+  ],
+  "lat": 27.032241439999996,
+  "lon": 74.94853724,
+  "locality": "Shastri Nagar H.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302017"
+  ],
+  "lat": 26.87219776666667,
+  "lon": 75.78798706666667,
+  "locality": "Malviya Nagar S.O (Jaipur)"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302018",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302018"
+  ],
+  "lat": 26.8472222,
+  "lon": 75.7933333,
+  "locality": "Durgapura S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302019",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302019"
+  ],
+  "lat": 26.91925,
+  "lon": 75.7196389,
+  "locality": "Shyam Nagar S.O (Jaipur)"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302020",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302020"
+  ],
+  "lat": 26.854962599999997,
+  "lon": 75.76477446666667,
+  "locality": "Mansarovar S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302021",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302021"
+  ],
+  "lat": 26.9116667,
+  "lon": 75.74,
+  "locality": "Vaishali Nagar S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302022",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302022"
+  ],
+  "lat": 26.754603850000002,
+  "lon": 75.83860165,
+  "locality": "Bilwa B.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302034",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302034"
+  ],
+  "lat": 26.91925,
+  "lon": 75.7196389,
+  "locality": "Panchyawala S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302036",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302036"
+  ],
+  "lat": 26.91925,
+  "lon": 75.7196389,
+  "locality": "Jaisinghpura Khore S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302037",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302037"
+  ],
+  "lat": 26.91925,
+  "lon": 75.7196389,
+  "locality": "Mahindra World City S.O (Jaipur)"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302040",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302040"
+  ],
+  "lat": 26.975584,
+  "lon": 75.733509,
+  "locality": "Nangal Jaisabohara S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302041",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302041"
+  ],
+  "lat": 26.924370266666667,
+  "lon": 75.71136486666667,
+  "locality": "Dhankya B.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302044",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302044"
+  ],
+  "lat": 26.953393,
+  "lon": 75.702683,
+  "locality": "Govindpura S.O."
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302045",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302045"
+  ],
+  "lat": 26.92206,
+  "lon": 75.68768,
+  "locality": "Sirsi SO"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "302046",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "302046"
+  ],
+  "lat": 26.92098,
+  "lon": 75.79422,
+  "locality": "Bhanpur kalan S.O"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "303104",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "303104"
+  ],
+  "lat": 26.91925,
+  "lon": 75.7196389,
+  "locality": "Dev Ka Harwada BO"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "303121",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "303121"
+  ],
+  "lat": 26.91925,
+  "lon": 75.7196389,
+  "locality": "NIMS University SO"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "303122",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "303122"
+  ],
+  "lat": 26.91925,
+  "lon": 75.7196389,
+  "locality": "Vedaant Gyan Valley SO"
+ },
+ {
+  "city": "Jaipur",
+  "pincode": "303602",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "303602"
+  ],
+  "lat": 26.151978400000004,
+  "lon": 75.13837345555555,
+  "locality": "Nangal Govind BO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226001",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226001"
+  ],
+  "lat": 26.849856654545455,
+  "lon": 80.94430159090909,
+  "locality": "Lucknow GPO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226003",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226003"
+  ],
+  "lat": 26.86390759444445,
+  "lon": 80.90940078333331,
+  "locality": "Lucknow Chowk HO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226004",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226004"
+  ],
+  "lat": 26.846229780000005,
+  "lon": 80.92525979,
+  "locality": "Rajendranagar SO Lucknow"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226005",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226005"
+  ],
+  "lat": 26.825984077777775,
+  "lon": 80.91852002222221,
+  "locality": "Alambagh SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226006"
+  ],
+  "lat": 26.87565275,
+  "lon": 80.959625,
+  "locality": "Mahanagar SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226007",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226007"
+  ],
+  "lat": 26.8659548,
+  "lon": 80.9512122,
+  "locality": "New Hyderabad SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226009",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226009"
+  ],
+  "lat": 26.8074445,
+  "lon": 80.9121125,
+  "locality": "AMAUSI AD SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226010",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226010"
+  ],
+  "lat": 26.863002,
+  "lon": 80.85799507142858,
+  "locality": "Maleshemau BO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226011",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226011"
+  ],
+  "lat": 26.816896,
+  "lon": 80.892826,
+  "locality": "MANAK NAGAR SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226012",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226012"
+  ],
+  "lat": 26.823256,
+  "lon": 80.9181385,
+  "locality": "LDA Colony SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226015"
+  ],
+  "lat": 26.8951388,
+  "lon": 80.9835833,
+  "locality": "Cimap SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226016"
+  ],
+  "lat": 26.87924185,
+  "lon": 80.99157107,
+  "locality": "Indira Nagar SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226018",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226018"
+  ],
+  "lat": 26.839782449999994,
+  "lon": 80.92866081999999,
+  "locality": "Aminabad Park SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226021",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226021"
+  ],
+  "lat": 26.907681233333335,
+  "lon": 80.95029813333333,
+  "locality": "Jankipuram SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226022",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226022"
+  ],
+  "lat": 26.89681615,
+  "lon": 80.96458415000001,
+  "locality": "Vikas Nagar SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226023",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226023"
+  ],
+  "lat": 26.8208665,
+  "lon": 80.91526200000001,
+  "locality": "MANAS NAGAR SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226024",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226024"
+  ],
+  "lat": 26.893408300000004,
+  "lon": 80.94589673333333,
+  "locality": "Aliganj SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226027",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226027"
+  ],
+  "lat": 26.8447,
+  "lon": 80.945626,
+  "locality": "UPG Camp SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226028",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226028"
+  ],
+  "lat": 26.88148625,
+  "lon": 81.010286125,
+  "locality": "Amraigaon BO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226030",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226030"
+  ],
+  "lat": 26.794722,
+  "lon": 81.007825,
+  "locality": "Sushant Golf City SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226031",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226031"
+  ],
+  "lat": 26.906258,
+  "lon": 80.948475,
+  "locality": "Jankipuram Extension SO"
+ },
+ {
+  "city": "Lucknow",
+  "pincode": "226302",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "226302"
+  ],
+  "lat": 26.9037306,
+  "lon": 80.9534262,
+  "locality": "Dayalpur BO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160003",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160003"
+  ],
+  "lat": 30.684289399999997,
+  "lon": 76.7465939,
+  "locality": "Behlana BO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160006"
+  ],
+  "lat": 30.742,
+  "lon": 76.7834,
+  "locality": "NDC Chandigarh"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160009",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160009"
+  ],
+  "lat": 30.74430555,
+  "lon": 76.79504165,
+  "locality": "Sector 9 Chandigarh SO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160011",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160011"
+  ],
+  "lat": 30.756722250000003,
+  "lon": 76.78575000000001,
+  "locality": "Sector 11 Chandigarh SO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160012",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160012"
+  ],
+  "lat": 30.7543194,
+  "lon": 76.7834861,
+  "locality": "Sector 12 Chandigarh SO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160014",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160014"
+  ],
+  "lat": 30.71767502,
+  "lon": 76.72056821999999,
+  "locality": "Behlolpur BO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160015"
+  ],
+  "lat": 30.74956945,
+  "lon": 76.77491665,
+  "locality": "Sector 15 Chandigarh SO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160016"
+  ],
+  "lat": 30.692051,
+  "lon": 76.69841,
+  "locality": "NODAL DELIVERY  SPEED POST  CHANDIGARH"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160017"
+  ],
+  "lat": 30.7420833,
+  "lon": 76.7833611,
+  "locality": "Chandigarh GPO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160018",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160018"
+  ],
+  "lat": 30.73716665,
+  "lon": 76.78965275,
+  "locality": "Sector 18 Chandigarh SO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160019",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160019"
+  ],
+  "lat": 30.727920275000002,
+  "lon": 76.8038375,
+  "locality": "Sector 19 Chandigarh SO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160020",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160020"
+  ],
+  "lat": 30.7420833,
+  "lon": 76.7833611,
+  "locality": "Sector 20 Chandigarh SO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160036",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160036"
+  ],
+  "lat": 30.710368833333334,
+  "lon": 76.72572926666666,
+  "locality": "Badheri BO"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160043",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160043"
+  ],
+  "lat": 30.7420833,
+  "lon": 76.7833611,
+  "locality": "Sector43 Chandigarh"
+ },
+ {
+  "city": "Chandigarh",
+  "pincode": "160102",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "160102"
+  ],
+  "lat": 30.6921644,
+  "lon": 76.75401055,
+  "locality": "Raipur Kalan BO"
+ },
+ {
+  "city": "Indore",
+  "pincode": "452014",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "452014"
+  ],
+  "lat": 22.6989722,
+  "lon": 75.8575,
+  "locality": "Khatiwala Tank S.O"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641002",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641002"
+  ],
+  "lat": 11.0095,
+  "lon": 76.953,
+  "locality": "Rathinasabapathy Puram HO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641005",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641005"
+  ],
+  "lat": 10.9998611,
+  "lon": 77.0308056,
+  "locality": "Singanallur SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641006"
+  ],
+  "lat": 11.042717733333333,
+  "lon": 76.9708378,
+  "locality": "Ganapathy SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641007",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641007"
+  ],
+  "lat": 11.005713,
+  "lon": 76.90555044,
+  "locality": "Sundapalayam BO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641013",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641013"
+  ],
+  "lat": 11.02071,
+  "lon": 76.93631,
+  "locality": "GovtCollege Of Technology SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641014",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641014"
+  ],
+  "lat": 11.02581,
+  "lon": 77.02456000000001,
+  "locality": "Coimbatore Aerodrome SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641015",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641015"
+  ],
+  "lat": 11.00708,
+  "lon": 77.0229,
+  "locality": "Uppilipalayam SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641016"
+  ],
+  "lat": 11.008174839999999,
+  "lon": 77.00776742000001,
+  "locality": "Pattanam BO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641018",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641018"
+  ],
+  "lat": 11.002238428571431,
+  "lon": 76.97298657142856,
+  "locality": "Coimbatore Central SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641027",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641027"
+  ],
+  "lat": 11.02685,
+  "lon": 76.967908,
+  "locality": "Rathinapuri SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641028",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641028"
+  ],
+  "lat": 11.00250165,
+  "lon": 76.99637045,
+  "locality": "Sowripalayam SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641033",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641033"
+  ],
+  "lat": 11.01112,
+  "lon": 77.03619,
+  "locality": "Neelikonampalayam SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641037",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641037"
+  ],
+  "lat": 11.01788,
+  "lon": 76.9844,
+  "locality": "Pappanaickenpalayam SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641041",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641041"
+  ],
+  "lat": 11.022355,
+  "lon": 76.910675,
+  "locality": "Pappanaickenpudur SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641044",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641044"
+  ],
+  "lat": 11.01743,
+  "lon": 76.9844,
+  "locality": "Siddhapudur SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641045",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641045"
+  ],
+  "lat": 11.004100000000001,
+  "lon": 77.01699500000001,
+  "locality": "Ramanathapuram Coimbatore SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641049",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641049"
+  ],
+  "lat": 11.0611,
+  "lon": 76.98524,
+  "locality": "Chinnavedampatti SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "641111",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "641111"
+  ],
+  "lat": 10.990705,
+  "lon": 76.99865750000001,
+  "locality": "Vellalore SO"
+ },
+ {
+  "city": "Coimbatore",
+  "pincode": "642006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "642006"
+  ],
+  "lat": 10.9997222,
+  "lon": 76.9637222,
+  "locality": "Suleeswaran Patti S.O"
+ },
+ {
+  "city": "Visakhapatnam",
+  "pincode": "530017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "530017"
+  ],
+  "lat": 17.7368056,
+  "lon": 83.33858330000001,
+  "locality": "L B Colony S.O"
+ },
+ {
+  "city": "Visakhapatnam",
+  "pincode": "530022",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "530022"
+  ],
+  "lat": 17.743089349999998,
+  "lon": 83.32384404999999,
+  "locality": "H B Colony S.O"
+ },
+ {
+  "city": "Visakhapatnam",
+  "pincode": "530024",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "530024"
+  ],
+  "lat": 17.7425556,
+  "lon": 83.2939444,
+  "locality": "Salagramapuram S.O"
+ },
+ {
+  "city": "Visakhapatnam",
+  "pincode": "530045",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "530045"
+  ],
+  "lat": 17.775166733333332,
+  "lon": 83.36609273333333,
+  "locality": "Sagar Nagar B.O"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390002",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390002"
+  ],
+  "lat": 22.3035833,
+  "lon": 73.1976944,
+  "locality": "Fateganj HO"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390006",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390006"
+  ],
+  "lat": 22.3035833,
+  "lon": 73.1976944,
+  "locality": "Fatepura SO Vadodara"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390007",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390007"
+  ],
+  "lat": 22.30650275,
+  "lon": 73.166816675,
+  "locality": "Racecourse SO"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390013",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390013"
+  ],
+  "lat": 22.3035833,
+  "lon": 73.1976944,
+  "locality": "Maneja SO"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390016"
+  ],
+  "lat": 22.3035833,
+  "lon": 73.1976944,
+  "locality": "Industrial Estate Vadodara SO"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390020",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390020"
+  ],
+  "lat": 22.314166649999997,
+  "lon": 73.1780139,
+  "locality": "Akota SO"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390021",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390021"
+  ],
+  "lat": 22.3035833,
+  "lon": 73.1976944,
+  "locality": "T B Sanatorium SO"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "390024",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "390024"
+  ],
+  "lat": 22.3415,
+  "lon": 73.1786944,
+  "locality": "Chhani Rd SO"
+ },
+ {
+  "city": "Vadodara",
+  "pincode": "391320",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "391320"
+  ],
+  "lat": 22.3035833,
+  "lon": 73.1976944,
+  "locality": "Jawahar Nagar SO Vadodara"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422002",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422002"
+  ],
+  "lat": 19.9967445,
+  "lon": 73.7787375,
+  "locality": "Gole Colony S.O"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422005",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422005"
+  ],
+  "lat": 19.988439,
+  "lon": 73.720725,
+  "locality": "H P T College S.O"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422008",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422008"
+  ],
+  "lat": 19.98615,
+  "lon": 73.7862,
+  "locality": "Trimurti Chowk S.O"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422011",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422011"
+  ],
+  "lat": 19.988439,
+  "lon": 73.720725,
+  "locality": "Dwarka Corner S.O"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422012",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422012"
+  ],
+  "lat": 19.988439,
+  "lon": 73.720725,
+  "locality": "Ashok Nagar S.O (Nashik)"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422013",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422013"
+  ],
+  "lat": 20.00758,
+  "lon": 73.75300666666668,
+  "locality": "Sawarkar Nagar S.O"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422105",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422105"
+  ],
+  "lat": 19.941645700000002,
+  "lon": 73.83484485,
+  "locality": "Kotamgaon B.O"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422221",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422221"
+  ],
+  "lat": 19.988439,
+  "lon": 73.720725,
+  "locality": "Ojhar A.F. Stn. S.O"
+ },
+ {
+  "city": "Nashik",
+  "pincode": "422501",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "422501"
+  ],
+  "lat": 19.9272324,
+  "lon": 73.8330674,
+  "locality": "Devlali Air Force S.O"
+ },
+ {
+  "city": "Mysuru",
+  "pincode": "570002",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "570002"
+  ],
+  "lat": 12.327277775,
+  "lon": 76.62838889,
+  "locality": "Vani Vilas Mohalla S.O"
+ },
+ {
+  "city": "Mysuru",
+  "pincode": "570012",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "570012"
+  ],
+  "lat": 12.323287,
+  "lon": 76.619653,
+  "locality": "Jayalakshmipuram S.O (Mysuru)"
+ },
+ {
+  "city": "Mysuru",
+  "pincode": "570016",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "570016"
+  ],
+  "lat": 12.343041665000001,
+  "lon": 76.623208335,
+  "locality": "Metagalli S.O"
+ },
+ {
+  "city": "Mysuru",
+  "pincode": "570017",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "570017"
+  ],
+  "lat": 12.33719444,
+  "lon": 76.61169444,
+  "locality": "Vijaynagar II Stage S.O"
+ },
+ {
+  "city": "Mysuru",
+  "pincode": "570030",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "570030"
+  ],
+  "lat": 12.32063889,
+  "lon": 76.60372222,
+  "locality": "Vijayanagar III Stage S.O"
+ },
+ {
+  "city": "Vijayawada",
+  "pincode": "520008",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "520008"
+  ],
+  "lat": 16.51597963333333,
+  "lon": 80.67186296666667,
+  "locality": "Vj Polytechnic S.O"
+ },
+ {
+  "city": "Vijayawada",
+  "pincode": "521108",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "521108"
+  ],
+  "lat": 16.5174436,
+  "lon": 80.69329164999999,
+  "locality": "Enikepadu B.O"
+ },
+ {
+  "city": "Vijayawada",
+  "pincode": "521137",
+  "tier": 1,
+  "represents": 1,
+  "pincodes": [
+   "521137"
+  ],
+  "lat": 16.4791944,
+  "lon": 80.7079167,
+  "locality": "Poranki S.O"
+ }
+]
