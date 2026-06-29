@@ -18,7 +18,22 @@ def load_centroids(csv_path):
         a = acc[p]; a[0] += lat; a[1] += lon; a[2] += 1
     return {p: (a[0]/a[2], a[1]/a[2]) for p, a in acc.items() if a[2]}
 
-def gen_config(city_pins, pin_city, centroids, cities=None):
+def load_localities(csv_path):
+    """A representative OfficeName per pincode (first delivery PO, else first PO) — used as the
+    config `locality` display field that build_excel/scrapers expect."""
+    loc = {}
+    for r in csv.DictReader(open(csv_path, newline="", encoding="utf-8", errors="replace")):
+        p = r["Pincode"].strip()
+        name = (r.get("OfficeName") or "").strip()
+        if not p or not name:
+            continue
+        delivery = (r.get("Delivery") or "").strip().lower() == "delivery"
+        if p not in loc or (delivery and not loc[p][1]):
+            loc[p] = (name, delivery)
+    return {p: v[0] for p, v in loc.items()}
+
+def gen_config(city_pins, pin_city, centroids, cities=None, localities=None):
+    localities = localities or {}
     out = []
     for city, pins in city_pins.items():
         if cities and city not in cities:
@@ -26,13 +41,15 @@ def gen_config(city_pins, pin_city, centroids, cities=None):
         for p in sorted(pins):
             lat, lon = centroids.get(p, (None, None))
             out.append({"city": city, "pincode": p, "tier": 1,
-                        "represents": 1, "pincodes": [p], "lat": lat, "lon": lon})
+                        "represents": 1, "pincodes": [p], "lat": lat, "lon": lon,
+                        "locality": localities.get(p, "")})
     return out
 
 def write_platform_configs(csv_path):
     cp, pc = build_universe(csv_path)
     cents = load_centroids(csv_path)
-    cfg = gen_config(cp, pc, cents)
+    locs = load_localities(csv_path)
+    cfg = gen_config(cp, pc, cents, localities=locs)
     for plat in WAVE1:
         path = os.path.join(BASE, "platforms", plat, "pincodes.full25.json")
         with open(path, "w") as f:

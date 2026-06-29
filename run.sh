@@ -328,7 +328,8 @@ tail -1 "$DIR/logs/${P}-${RUN_ID}.log" || true
   # racy-but-retrying behavior rather than failing the run.
   exec 9>"$DIR/.gitpush.lock"
   command -v flock >/dev/null 2>&1 && flock 9
-  git add vault data reviews baselines >/dev/null 2>&1
+  git add vault data reviews baselines docs README.md REPORT.md CLAUDE.md >/dev/null 2>&1
+  git add platforms/*/pincodes.full25.json >/dev/null 2>&1 || true
   if ! git diff --cached --quiet; then
     git commit -m "run: $P $RUN_ID" >/dev/null 2>&1
     git pull --rebase --autostash >/dev/null 2>&1
