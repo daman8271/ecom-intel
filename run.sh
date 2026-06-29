@@ -16,21 +16,21 @@ cd "$PDIR"
 SCRAPER="scrape.js"
 [ "$P" = "amazon-now" ] && SCRAPER="scrape.ctnow.js"
 
-# ---- Per-pincode coverage (Wave-1 pilot, blinkit). Opt-in via COVERAGE_FULL=1. ----
+# ---- Per-pincode coverage (Wave-1 QC: blinkit/zepto/flipkart-minutes). Opt-in via COVERAGE_FULL=1. ----
 # When COVERAGE_FULL=1 and no explicit PINCODES_FILE is set, point the scraper at the
 # full 25-city per-pincode config (pincodes.full25.json, 1,885 pins) instead of the
 # anchor config. An operator may instead pass their own PINCODES_FILE (e.g. a zero-cities
 # subset) — we honor it. Either way a relative PINCODES_FILE is normalized to an absolute
 # path because the scraper runs with cwd=$PDIR. Flag unset = byte-for-byte unchanged
 # (anchor pincodes.json). This NEVER touches pincodes.json (the rollback anchor).
-if [ "$P" = "blinkit" ]; then
+if [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ]; then
   if [ -n "${PINCODES_FILE:-}" ]; then
     case "$PINCODES_FILE" in /*) ;; *) PINCODES_FILE="$DIR/$PINCODES_FILE";; esac
     export PINCODES_FILE
   elif [ "${COVERAGE_FULL:-0}" = "1" ] && [ -f "$PDIR/pincodes.full25.json" ]; then
     export PINCODES_FILE="$PDIR/pincodes.full25.json"
   fi
-  [ -n "${PINCODES_FILE:-}" ] && echo "[$RUN_ID] blinkit PINCODES_FILE=$PINCODES_FILE"
+  [ -n "${PINCODES_FILE:-}" ] && echo "[$RUN_ID] $P PINCODES_FILE=$PINCODES_FILE"
 fi
 echo "[$RUN_ID] scraping $P ($SCRAPER) ..."
 # amazon-fresh and amazon-now now run on SEPARATE, INDEPENDENT Amazon accounts
@@ -124,15 +124,15 @@ esac
 echo "[$RUN_ID] appending history.csv ..."
 python3 "$DIR/tools/vault_note.py" "$P" "$RUN_ID" --csv-only || echo "vault_note failed (non-fatal)" >&2
 
-# ---- Coverage ledger (Wave-1 pilot, blinkit): classify every CONFIGURED pincode. ----
+# ---- Coverage ledger (Wave-1 QC: blinkit/zepto/flipkart-minutes): classify every CONFIGURED pincode. ----
 # Best-effort + gated on COVERAGE_FULL so default runs are unchanged. Derives an honest
 # per-pincode status (price_captured / serviceable_no_jivo / not_serviceable) from the
 # history rows this run just appended + the config that was actually scraped.
-if [ "$P" = "blinkit" ] && [ "${COVERAGE_FULL:-0}" = "1" ]; then
+if { [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ]; } && [ "${COVERAGE_FULL:-0}" = "1" ]; then
   CFG_USED="${PINCODES_FILE:-$PDIR/pincodes.full25.json}"
   echo "[$RUN_ID] emitting coverage ledger from history (config=$CFG_USED) ..."
-  python3 "$DIR/tools/coverage/emit_ledger_from_history.py" blinkit "$RUN_ID" "$(date +%F)" \
-    "$DIR/data/blinkit/history.csv" "$CFG_USED" "$DIR/data/coverage/ledger.csv" "$PDIR/result.json" || true
+  python3 "$DIR/tools/coverage/emit_ledger_from_history.py" "$P" "$RUN_ID" "$(date +%F)" \
+    "$DIR/data/$P/history.csv" "$CFG_USED" "$DIR/data/coverage/ledger.csv" "$PDIR/result.json" || true
 fi
 
 # ---- Telegram delivery (best-effort; MUST NOT fail the run) ----
