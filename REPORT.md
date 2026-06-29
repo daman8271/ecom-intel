@@ -48,6 +48,23 @@ platform are in `output/`.
 | **Amazon Now** | quick-comm | ~317/332 pincodes serviceable | ~23 | logged-in (same session as Fresh); `i=nowstore`; per-pincode `now_slot` delivery windows; ~1.7k rows/run; SERIALIZED with Fresh via shared lock |
 | **BigBasket** | grocery (national) | national (single "All India") | ~27 | stealth browser past Akamai + in-page `listing-svc` JSON API; national pricing → 1 row/SKU; no proxy, no login |
 
+## Per-pincode coverage (Wave 1 — 2026-06-29)
+
+True per-pincode ground truth across the **25 target cities (1,885 distinct pincodes)** for the
+3 genuinely pincode-wise QC platforms, replacing anchor extrapolation. Opt-in via
+`COVERAGE_FULL=1`; honest status per `(platform,pincode)` in `data/coverage/ledger.csv`
+(`price_captured | serviceable_no_jivo | not_serviceable | error`). See
+`docs/pincodes/india-pincode-universe.md` and the design at
+`docs/superpowers/specs/2026-06-29-coverage-expansion-design.md`.
+
+| Platform | Serviceable pincodes (of 1,885) | Notes |
+|---|---|---|
+| **Zepto** | **693** (=Jivo-priced) | full rollout 2026-06-29; up from ~214 anchors. 0 in Visakhapatnam / Bhubaneswar / Thiruvananthapuram (Zepto doesn't operate there). |
+| **Blinkit** | full rollout in progress | pilot finding: Blinkit *delivers* widely but Jivo barely stocked in many new cities (only Nashik had Jivo among the 5 zero-cities). |
+| **Flipkart-minutes** | pending | deferred — expired login cookies force slow browser mode; re-export `import_cookies.js` to enable the full 1,885 run. |
+
+**Amazon = Wave 2** (amazon-fresh + amazon-now on 2 dedicated accounts, pending creds).
+
 ## Amazon Fresh — how the logged-in scrape works (no proxy)
 - **One Amazon account, cookies transplanted.** `secrets/amazon-fresh.storageState.json`
   is a **symlink** to `../amazon-now/secrets/amazon-now.storageState.json` — it is ONE
