@@ -2,7 +2,7 @@ import csv, json, os, sys
 from collections import defaultdict
 from universe25 import build_universe
 
-WAVE1 = ["blinkit", "zepto", "flipkart-minutes"]
+WAVE1 = ["blinkit", "zepto", "flipkart-minutes", "amazon-fresh", "amazon-now"]
 BASE = os.path.join(os.path.dirname(__file__), "..", "..")
 
 def load_centroids(csv_path):

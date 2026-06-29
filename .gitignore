@@ -63,3 +63,6 @@ vault/Untitled*
 # large reproducible pincode directory (curl in docs/pincodes/india-pincode-universe.md)
 docs/pincodes/drr_pincode.csv
 platforms/*/.progress.*.json
+
+# amazon per-city coverage runtime chunks
+platforms/*/.cov-chunks/
