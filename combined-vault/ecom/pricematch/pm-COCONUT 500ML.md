@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-27
-observations: 160
+last_seen: 2026-06-28
+observations: 168
 latest_status: NOT_LISTED
-below_days: 7
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-pure-extra-virgin-coconut-oil-500-ml-nourishing-oil-bottle-fo
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-27) — ref ₹279 vs live ₹-
-- **Days below reference:** 7 of 20
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-25]] · [[2026-06-26]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-28) — ref ₹279 vs live ₹-
+- **Days below reference:** 8 of 21
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-28]]
 
-## Ref-vs-live history (160 observations)
+## Ref-vs-live history (168 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -205,6 +205,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-27,flipkart,MATCH,SVD,279,280,280,280,1,0.36,0,true
 2026-06-27,flipkart-minutes,NOT_LISTED,SVD,279,,,,,,0,false
 2026-06-27,zepto,NOT_LISTED,SVD,279,,,,,,0,false
+2026-06-28,amazon,MATCH,SVD,279,279,279,279,0,0,0,true
+2026-06-28,amazon-fresh,OOS,SVD,279,,,,,,0,false
+2026-06-28,amazon-now,NOT_LISTED,SVD,279,,,,,,0,false
+2026-06-28,bigbasket,NOT_LISTED,SVD,279,,,,,,0,false
+2026-06-28,blinkit,NOT_LISTED,SVD,279,,,,,,0,false
+2026-06-28,flipkart,BELOW,SVD,279,266,266,266,-13,-4.66,1,true
+2026-06-28,flipkart-minutes,NOT_LISTED,SVD,279,,,,,,0,false
+2026-06-28,zepto,NOT_LISTED,SVD,279,,,,,,0,false
 ```
 
 ---

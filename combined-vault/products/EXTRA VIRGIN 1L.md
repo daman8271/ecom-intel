@@ -40,16 +40,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-27).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 789 | 789 | 0 | 🟦 MATCH | SVD | 2026-06-27 |
-| [[Platform - amazon\|amazon-fresh]] | 789 | 789 | 0 | 🟦 MATCH | SVD | 2026-06-27 |
-| [[Platform - amazon\|amazon-now]] | 789 | 789 | 0 | 🟦 MATCH | SVD | 2026-06-27 |
-| [[Platform - bigbasket\|bigbasket]] | 789 | 1012 | 28.26 | 🔴 ABOVE | SVD | 2026-06-27 |
-| [[Platform - flipkart\|flipkart]] | 789 | 968 | 22.69 | 🔴 ABOVE | SVD | 2026-06-27 |
-| [[Platform - zepto\|zepto]] | 789 | 1012 | 28.26 | 🔴 ABOVE | SVD | 2026-06-27 |
+| [[Platform - amazon\|amazon]] | 789 | 789 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon-fresh]] | 789 | 789 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon-now]] | 789 | 789 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
+| [[Platform - bigbasket\|bigbasket]] | 789 | 1012 | 28.26 | 🔴 ABOVE | SVD | 2026-06-28 |
+| [[Platform - flipkart\|flipkart]] | 789 | 726 | -7.98 | 🟢 BELOW | SVD | 2026-06-28 |
+| [[Platform - zepto\|zepto]] | 789 | 1012 | 28.26 | 🔴 ABOVE | SVD | 2026-06-28 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

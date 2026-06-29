@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-27
-observations: 160
+last_seen: 2026-06-28
+observations: 168
 latest_status: ABOVE
-below_days: 9
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-27) — ref ₹789 vs live ₹1012
-- **Days below reference:** 9 of 20
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-28) — ref ₹789 vs live ₹1012
+- **Days below reference:** 10 of 21
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-28]]
 
-## Ref-vs-live history (160 observations)
+## Ref-vs-live history (168 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -205,6 +205,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-27,flipkart,ABOVE,SVD,789,968,968,968,179,22.69,0,true
 2026-06-27,flipkart-minutes,NOT_LISTED,SVD,789,,,,,,0,false
 2026-06-27,zepto,ABOVE,SVD,789,1012,1004,1044,223,28.26,0,true
+2026-06-28,amazon,MATCH,SVD,789,789,789,789,0,0,0,true
+2026-06-28,amazon-fresh,MATCH,SVD,789,789,789,789,0,0,0,true
+2026-06-28,amazon-now,MATCH,SVD,789,789,789,789,0,0,0,true
+2026-06-28,bigbasket,ABOVE,SVD,789,1012,1012,1060,223,28.26,0,true
+2026-06-28,blinkit,NOT_LISTED,SVD,789,,,,,,0,false
+2026-06-28,flipkart,BELOW,SVD,789,726,726,726,-63,-7.98,1,true
+2026-06-28,flipkart-minutes,NOT_LISTED,SVD,789,,,,,,0,false
+2026-06-28,zepto,ABOVE,SVD,789,1012,987,1764,223,28.26,0,true
 ```
 
 ---
