@@ -1,0 +1,13 @@
+{
+  "queries": [
+    "olive oil",
+    "mustard oil",
+    "sunflower oil",
+    "canola oil",
+    "rice bran oil",
+    "groundnut oil",
+    "soyabean oil",
+    "blended oil"
+  ],
+  "keep_jivo_query": true
+}

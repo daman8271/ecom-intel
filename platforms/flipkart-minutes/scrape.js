@@ -18,6 +18,18 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
+// ---- COMPETITOR_MODE (env-gated, ADDITIVE — see task brief) ----------------------------
+// Everything competitor-related activates ONLY when process.env.COMPETITOR_MODE === '1'.
+// When it is unset, COMPETITOR_MODE is false, every competitor const collapses to a harmless
+// default (null / {} / []), and NONE of the competitor branches execute — so the scraper's
+// query (q=jivo), its jivo-only filter and its output path (result.json / OUT) stay
+// byte-for-byte unchanged. Competitor data is written ONLY under tools/competitor/ — never
+// under data/ vault/ reviews/ baselines/ (those are git-added by the cron), and the output
+// filename never starts with "Jivo-" (the mailer auto-emails Jivo-*.xlsx).
+const COMPETITOR_MODE = process.env.COMPETITOR_MODE === '1';
+const COMP_DIR = path.join(__dirname, '..', '..', 'tools', 'competitor');
+const COMP_DATE = process.env.COMPETITOR_DATE || new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+
 const PFILE = process.env.PINCODES_FILE || path.join(__dirname, 'pincodes.json');
 const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
 const CONCURRENCY = parseInt(process.env.FKM_CONCURRENCY || '10', 10);
@@ -80,7 +92,13 @@ const SEARCH_URL = `https://${N}.rome.api.flipkart.com/api/4/page/fetch?cacheFir
 //       gets written with a top-level `partial` flag so the batch wrapper sees it.
 // SIM hooks (FKM_SIM / FKM_BLOCK_SIM) drive the hermetic fault-injection tests in
 // test_hardening.md without launching a browser or hitting Flipkart live (declared above).
-const PROG = `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
+// In COMPETITOR_MODE the checkpoint lives under tools/competitor/data/ so a competitor
+// re-run never resumes from (or overwrites) the jivo progress file, and never lands under
+// a cron-git-added path. The jivo path is byte-for-byte unchanged.
+const PROG = COMPETITOR_MODE
+  ? `${COMP_DIR}/data/.progress.competitor.${COMP_DATE}.json`
+  : `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
+if (COMPETITOR_MODE) { try { fs.mkdirSync(path.dirname(PROG), { recursive: true }); } catch (_) { /* created lazily on write */ } }
 const MAX_BLOCK_RETRIES = parseInt(process.env.FKM_BLOCK_RETRIES || '4', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could appear in legitimate JSON text) — HTTP status carries those.
@@ -142,14 +160,189 @@ function parseVolMl(pack) {
   if (!m) return null;
   return unitMl(parseFloat(m[1]), m[2]);
 }
-function canonical(name, pack) {
+function canonical(name, pack, brand) {
   const base = (name || '').toLowerCase()
     .replace(/\(.*?\)/g, '').replace(/[^a-z0-9 ]/g, '')
     .replace(/\s+/g, ' ').trim().replace(/\s/g, '-');
   const vol = parseVolMl(pack);
   const volTag = vol ? (vol >= 1000 ? (vol / 1000) + 'l' : vol + 'ml') : 'na';
-  return `${base}-${volTag}`.replace(/--+/g, '-');
+  // brand is OPTIONAL: it is only ever passed in COMPETITOR_MODE. When omitted/falsy the
+  // brandTag is '' and the returned canonical is byte-for-byte identical to the old 2-arg form.
+  const brandTag = brand ? (String(brand).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') + '-') : '';
+  return `${brandTag}${base}-${volTag}`.replace(/--+/g, '-');
 }
+
+// ======================= COMPETITOR_MODE helpers (env-gated) =======================
+// Pure helpers + module-level constants used ONLY by the competitor branch. None of them
+// run or mutate anything when COMPETITOR_MODE is unset (the consts collapse to null / {} / []
+// and every call site is behind `if (COMPETITOR_MODE)`).
+function escRe(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+// Brand whitelist regex, resolved from (in order): tools/competitor/competitor_brands.json
+// (accepts a raw regex string, {regex|whitelist_regex:"..."}, an array of brands, or
+// {brands:[{brand,aliases}],ours:[...]}), then env COMPETITOR_BRANDS (comma list), then a
+// sane edible-oil default list. This repo ships `whitelist_regex`, so that branch wins.
+function loadCompetitorRegex() {
+  const def = ['jivo', 'sano', 'fortune', 'saffola', 'dhara', 'gemini', 'sundrop', 'figaro',
+    'nature ?fresh', 'emami', 'patanjali', 'freedom', 'gold ?winner', 'sunpure', 'ricela',
+    'borges', 'disano', 'del ?monte', 'oleev', 'leonardo', 'idhayam', 'gulab', 'natureland',
+    'p ?mark', 'engine', 'bb ?royal', 'rafael ?salgado', 'tata'];
+  try {
+    const f = path.join(COMP_DIR, 'competitor_brands.json');
+    if (fs.existsSync(f)) {
+      const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+      if (typeof j === 'string' && j.trim()) return new RegExp(j, 'i');
+      // Preferred: a ready-made regex string (this file ships `whitelist_regex`).
+      const rgx = j && (j.regex || j.whitelist_regex);
+      if (typeof rgx === 'string' && rgx.trim()) return new RegExp(rgx, 'i');
+      // Else build one from a brand list — entries may be plain strings OR
+      // {brand, aliases:[...]} objects; also fold in any `ours` (Jivo/Sano).
+      const list = Array.isArray(j) ? j : (j && Array.isArray(j.brands) ? j.brands : null);
+      if (list && list.length) {
+        const terms = [];
+        for (const b of list) {
+          if (typeof b === 'string') terms.push(b);
+          else if (b && typeof b === 'object') {
+            if (b.brand) terms.push(b.brand);
+            if (Array.isArray(b.aliases)) for (const a of b.aliases) if (a) terms.push(a);
+          }
+        }
+        if (j && Array.isArray(j.ours)) for (const o of j.ours) if (o) terms.push(o);
+        const uniq = Array.from(new Set(terms.filter(Boolean)));
+        if (uniq.length) return new RegExp('(' + uniq.map(escRe).join('|') + ')', 'i');
+      }
+    }
+  } catch (e) { process.stderr.write(`[comp] competitor_brands.json load failed (${e.message}); using fallback list\n`); }
+  if (process.env.COMPETITOR_BRANDS) {
+    const list = process.env.COMPETITOR_BRANDS.split(',').map((s) => s.trim()).filter(Boolean);
+    if (list.length) return new RegExp('(' + list.map(escRe).join('|') + ')', 'i');
+  }
+  return new RegExp('(' + def.join('|') + ')', 'i');
+}
+
+// Category query terms, from tools/competitor/category_queries.json (array, {queries:[...]},
+// or a {term: category} map -> its keys), then env COMPETITOR_QUERIES, then defaults.
+function loadCategoryQueries() {
+  const def = ['olive oil', 'mustard oil', 'sunflower oil', 'canola oil', 'rice bran oil',
+    'groundnut oil', 'soyabean oil', 'blended oil'];
+  try {
+    const f = path.join(COMP_DIR, 'category_queries.json');
+    if (fs.existsSync(f)) {
+      const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+      if (Array.isArray(j)) return j.filter(Boolean);
+      if (j && Array.isArray(j.queries)) return j.queries.filter(Boolean);
+      if (j && typeof j === 'object') return Object.keys(j).filter((k) => k !== 'keep_jivo_query');
+    }
+  } catch (e) { process.stderr.write(`[comp] category_queries.json load failed (${e.message}); using fallback list\n`); }
+  if (process.env.COMPETITOR_QUERIES) return process.env.COMPETITOR_QUERIES.split(',').map((s) => s.trim()).filter(Boolean);
+  return def;
+}
+
+// Optional explicit {query: category} map (only when category_queries.json is such an object).
+function loadCategoryMap() {
+  try {
+    const f = path.join(COMP_DIR, 'category_queries.json');
+    if (fs.existsSync(f)) {
+      const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+      if (j && !Array.isArray(j) && typeof j === 'object' && !Array.isArray(j.queries)) {
+        const m = {};
+        for (const k of Object.keys(j)) if (typeof j[k] === 'string') m[k.toLowerCase()] = j[k];
+        return m;
+      }
+    }
+  } catch (_) { /* fall through to empty map */ }
+  return {};
+}
+
+// Brand label = the whitelist substring actually present in the text (productBrand or name).
+function deriveBrand(text) {
+  if (!COMPETITOR_RE) return '';
+  const m = (text || '').match(COMPETITOR_RE);
+  return m ? m[0].replace(/\s+/g, ' ').trim() : '';
+}
+
+// Category from the explicit map, else keyword-scan name then query term. Returns the
+// short category slug used by maps_to_jivo.json buckets (e.g. olive, mustard, rice_bran).
+function deriveCategory(term, name) {
+  const t = (term || '').toLowerCase();
+  const n = (name || '').toLowerCase();
+  if (CATEGORY_MAP[t]) return CATEGORY_MAP[t];
+  const cats = [
+    [/mustard|kachi ghani|sarso/, 'mustard'],
+    [/sunflower/, 'sunflower'],
+    [/soya|soybean|soyabean/, 'soyabean'],
+    [/groundnut|peanut/, 'groundnut'],
+    [/rice ?bran/, 'rice_bran'],
+    [/olive/, 'olive'],
+    [/canola/, 'canola'],
+    [/sesame|gingelly|til\b/, 'sesame'],
+    [/coconut/, 'coconut'],
+    [/ghee/, 'ghee'],
+    [/blend/, 'blended'],
+    [/vegetable/, 'vegetable'],
+  ];
+  for (const [re, c] of cats) { if (re.test(n) || re.test(t)) return c; }
+  // fall back to the query term, normalised (" oil" stripped, spaces -> "_").
+  const slug = t.replace(/\s*oil\s*$/, '').trim().replace(/\s+/g, '_');
+  return (slug && slug !== 'jivo') ? slug : 'edible_oil';
+}
+
+// Light sub-grade extraction from the product name (best-effort; '' when none found).
+function deriveSubGrade(name) {
+  const n = (name || '').toLowerCase();
+  const grades = [
+    [/extra virgin/, 'extra_virgin'],
+    [/extra light/, 'extra_light'],
+    [/virgin/, 'virgin'],
+    [/pomace/, 'pomace'],
+    [/double refined/, 'double_refined'],
+    [/kachi ghani|cold ?press|wood ?press|wooden ?press|ghani/, 'kachi_ghani'],
+    [/filtered/, 'filtered'],
+    [/refined/, 'refined'],
+    [/light/, 'light'],
+  ];
+  for (const [re, g] of grades) if (re.test(n)) return g;
+  return '';
+}
+
+// Pack unit family for the contract: 'g' when the pack is mass-only (g/kg), else 'ml'.
+function packUnit(pack) {
+  const s = (pack || '').toLowerCase();
+  const hasLiquid = /\d[\d.]*\s*(?:ml|l|ltr|litre)\b/.test(s);
+  const hasMass = /\d[\d.]*\s*(?:kg|g)\b/.test(s);
+  return (hasMass && !hasLiquid) ? 'g' : 'ml';
+}
+
+// vol in ML for the competitor contract: grams -> volume via oil density (ghee 0.91,
+// other oils 0.916); liquids pass straight through. parseVolMl already handles combos.
+function competitorVolMl(pack, isGhee) {
+  const raw = parseVolMl(pack);
+  if (raw == null) return null;
+  if (packUnit(pack) === 'g') return Math.round((raw / (isGhee ? 0.91 : 0.916)) * 100) / 100;
+  return raw;
+}
+
+// Best-effort sponsored/ad detector over Flipkart's structured product node. Conservative:
+// only explicit ad fields / a "sponsored" tag flip it to 1, so it never false-positives.
+function detectAd(p, v) {
+  try {
+    if (p && (p.adInfo || p.adsInfo || p.adId || p.isAd || p.sponsored)) return true;
+    if (v && (v.isAd || v.sponsored || v.adId)) return true;
+    const tags = (v && (v.tags || v.productTags)) || [];
+    const arr = Array.isArray(tags) ? tags : [];
+    for (const tg of arr) {
+      const s = typeof tg === 'string' ? tg : (tg && (tg.text || tg.value || tg.title || tg.type) || '');
+      if (/sponsored/i.test(s)) return true;
+    }
+  } catch (_) { /* default: not an ad */ }
+  return false;
+}
+
+// Built once at module load; only populated when COMPETITOR_MODE is on.
+const COMPETITOR_RE = COMPETITOR_MODE ? loadCompetitorRegex() : null;
+const CATEGORY_MAP = COMPETITOR_MODE ? loadCategoryMap() : {};
+const COMPETITOR_TERMS = COMPETITOR_MODE ? Array.from(new Set(['jivo', ...loadCategoryQueries()])) : [];
+// ===================== end COMPETITOR_MODE helpers =====================
 
 // POST a Flipkart BFF call from inside the page (inherits the transplanted cookies + DC routing).
 async function api(page, url, body) {
@@ -169,16 +362,21 @@ async function api(page, url, body) {
   }, { url, body });
 }
 
-function parseProducts(searchJson, rec) {
+function parseProducts(searchJson, rec, term) {
   const rows = [];
+  let rank = 0;   // competitor-only: running position across the ranked response (inert in jivo mode)
   const slots = ((searchJson && (searchJson.RESPONSE || searchJson).slots)) || [];
   for (const s of slots) {
     const ps = (((s.widget || {}).data || {}).products) || [];
     for (const p of ps) {
+      rank++;
       const v = ((p.productInfo || {}).value) || {};
       const act = (p.productInfo || {}).action || {};
       const title = ((v.titles || {}).title) || '';
-      if (!/jivo/i.test(title) && !/jivo/i.test(v.productBrand || '')) continue;
+      if (COMPETITOR_MODE) {
+        // competitor gate: keep any whitelisted brand (jivo/sano + rivals) by title OR productBrand
+        if (!COMPETITOR_RE.test(title) && !COMPETITOR_RE.test(v.productBrand || '')) continue;
+      } else if (!/jivo/i.test(title) && !/jivo/i.test(v.productBrand || '')) continue;
       const pack = ((v.titles || {}).subtitle) || '';
       const name = title.replace(/\(pack of \d+\)/i, '').replace(/\s+/g, ' ').trim();
       const pricing = v.pricing || {};
@@ -187,7 +385,9 @@ function parseProducts(searchJson, rec) {
       // No MRP from the API (e.g. some combo packs) -> leave it null. Do NOT fabricate
       // mrp = sale: that invents a phantom MRP and a fake 0% "discount" on a real SKU.
       const mrp = mrpEntry ? mrpEntry.value : null;
-      if (!/jivo/i.test(name) || !sale) continue;
+      if (COMPETITOR_MODE) {
+        if ((!COMPETITOR_RE.test(name) && !COMPETITOR_RE.test(v.productBrand || '')) || !sale) continue;
+      } else if (!/jivo/i.test(name) || !sale) continue;
       // Discount is undefined without an MRP basis -> null (not 0) when mrp is absent.
       const disc = (mrp == null) ? null
         : (typeof pricing.totalDiscount === 'number') ? pricing.totalDiscount
@@ -223,6 +423,31 @@ function parseProducts(searchJson, rec) {
         if (aurl) listingUrl = /^https?:\/\//i.test(aurl) ? aurl : 'https://www.flipkart.com' + (aurl.startsWith('/') ? '' : '/') + aurl;
         else if (fkPid) listingUrl = 'https://www.flipkart.com/product/p/itme?pid=' + fkPid;
       } catch (_) { fkPid = ''; listingUrl = ''; }
+      if (COMPETITOR_MODE) {
+        // ---- COMPETITOR_MODE row (shared competitor contract) ----
+        // brand = productBrand when present, else the whitelist substring found in the title.
+        const brand = (v.productBrand && String(v.productBrand).trim()) ? String(v.productBrand).trim() : deriveBrand(title || name);
+        const category = deriveCategory(term, name);
+        const subGrade = deriveSubGrade(name);
+        const isGhee = /ghee/i.test(name) || /ghee/i.test(category);
+        const unitC = packUnit(pack);
+        const volC = competitorVolMl(pack, isGhee);
+        rows.push({
+          platform: 'flipkart-minutes',
+          city: rec.city, pincode: rec.pincode,
+          store_id: storeId, store_name: storeId,
+          brand, name, canonical: canonical(name, pack, brand),
+          category, sub_grade: subGrade,
+          pack: pack || '', vol_ml: volC, unit: unitC,
+          per_litre: volC ? Math.round((sale / (volC / 1000)) * 100) / 100 : null,
+          mrp, sale, discount_pct: disc,
+          in_stock: ((v.availability || {}).displayState === 'IN_STOCK') ? 1 : 0,
+          rank, is_ad: detectAd(p, v) ? 1 : 0,
+          captured_at: new Date().toISOString(),
+          ...((fkPid || listingUrl) ? { fk_pid: fkPid, listing_url: listingUrl } : {}),
+        });
+        continue;
+      }
       rows.push({
         city: rec.city, pincode: rec.pincode, locality: rec.locality,
         store_id: storeId, store_name: storeId,
@@ -233,6 +458,13 @@ function parseProducts(searchJson, rec) {
         ...((fkPid || listingUrl) ? { fk_pid: fkPid, listing_url: listingUrl } : {}),
       });
     }
+  }
+  if (COMPETITOR_MODE) {
+    // competitor dedup includes brand so a JIVO row and a rival row of the same name+pack
+    // don't collapse into one (brand is already inside the canonical too).
+    const ddc = new Map();
+    for (const r of rows) { const k = `${r.store_id}|${(r.brand || '').toLowerCase()}|${r.canonical}`; if (!ddc.has(k)) ddc.set(k, r); }
+    return [...ddc.values()];
   }
   const dd = new Map();
   for (const r of rows) { const k = `${r.store_id}|${r.canonical}`; if (!dd.has(k)) dd.set(k, r); }
@@ -262,6 +494,48 @@ async function scrapePincode(page, rec) {
     addressInfo: { addressLine1: rec.locality || rec.city, city: rec.city, state: STATE_OF[rec.city] || '', pincode: String(rec.pincode) },
     redirectionUrl: '/flipkart-minutes-store?marketplace=HYPERLOCAL', marketplace: 'HYPERLOCAL',
   };
+  if (COMPETITOR_MODE) {
+    // Competitor sweep: set the pincode context once (location/update), then run one
+    // page/fetch PER term — q=jivo PLUS each category query from category_queries.json —
+    // harvesting every whitelisted brand from each ranked response. Same block/backoff
+    // contract as the jivo path (a block returns blocked:<reason> for scrapeWithBackoff).
+    // Writes NOTHING here; the main runner writes only under tools/competitor/.
+    let serviceableC = false;
+    let storeIdC = '';
+    let compRows = [];
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      const loc = await api(page, LOC_URL, locBody);
+      const lb = respBlocked(loc);
+      if (lb) { process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} -> ${lb} on location/update\n`); return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [], blocked: lb }; }
+      serviceableC = loc.status === 200;
+      let redirSeen = false;
+      compRows = [];
+      storeIdC = '';
+      for (const term of COMPETITOR_TERMS) {
+        const body = {
+          pageUri: `/search?q=${encodeURIComponent(term)}&marketplace=HYPERLOCAL`,
+          locationContext: { pincode: parseInt(rec.pincode, 10), changed: false },
+          pageContext: { trackingContext: { context: { eVar51: 'direct_browse', eVar61: 'direct_browse' } }, fetchSeoData: true, networkSpeed: 9400 },
+          requestContext: { type: 'BROWSE_PAGE' },
+        };
+        const srch = await api(page, SEARCH_URL, body);
+        const sb = respBlocked(srch);
+        if (sb) { process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} -> ${sb} on page/fetch (q=${term})\n`); return { ...rec, serviceable: false, store_id: '', store_name: '', rows: [], blocked: sb }; }
+        const redir = (((srch.json && (srch.json.RESPONSE || srch.json).pageMeta) || {}).redirectionObject || {}).statusCode;
+        if (redir === 302) { redirSeen = true; continue; }
+        const rws = parseProducts(srch.json, rec, term);
+        for (const r of rws) compRows.push(r);
+        if (!storeIdC && rws.length) storeIdC = rws[0].store_id || '';
+      }
+      if (compRows.length === 0 && redirSeen && attempt < 2) { await page.waitForTimeout(600); continue; }
+      break;
+    }
+    // dedup across terms on (store_id, brand, canonical) — the same SKU can surface in
+    // more than one category response (e.g. a blend listed under two terms).
+    const ddc = new Map();
+    for (const r of compRows) { const k = `${r.store_id}|${(r.brand || '').toLowerCase()}|${r.canonical}`; if (!ddc.has(k)) ddc.set(k, r); }
+    return { ...rec, serviceable: serviceableC, store_id: storeIdC, store_name: storeIdC, rows: [...ddc.values()], blocked: null };
+  }
   const searchBody = {
     pageUri: '/search?q=jivo&marketplace=HYPERLOCAL',
     locationContext: { pincode: parseInt(rec.pincode, 10), changed: false },
@@ -393,6 +667,27 @@ if (require.main === module) (async () => {
     mode: SIM ? 'sim' : 'api',
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
+  if (COMPETITOR_MODE) {
+    // Competitor mode writes ONLY under tools/competitor/data/ — NEVER the jivo result.json
+    // (OUT), and never under data/ vault/ reviews/ baselines/. The filename uses the
+    // "flipkart-minutes_competitor_" prefix (never "Jivo-", which the mailer auto-emails).
+    summary.mode = 'competitor';
+    const dataDir = path.join(COMP_DIR, 'data');
+    try { fs.mkdirSync(dataDir, { recursive: true }); } catch (_) { /* already exists */ }
+    const outJson = path.join(dataDir, `flipkart-minutes_competitor_${COMP_DATE}.json`);
+    fs.writeFileSync(outJson, JSON.stringify({ summary, allRows }, null, 2));
+    // Append to the shared history CSV (create header if missing).
+    const csvPath = path.join(dataDir, 'competitor_history.csv');
+    const header = 'run_id,date_ist,platform,brand,category,canonical,city,pincode,store_id,pack,vol_ml,per_litre,mrp,sale,discount_pct,in_stock,rank,is_ad\n';
+    if (!fs.existsSync(csvPath)) fs.writeFileSync(csvPath, header);
+    const esc = (val) => { const s = (val == null) ? '' : String(val); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+    const runId = `flipkart-minutes-${COMP_DATE}-${Date.now()}`;
+    const lines = allRows.map((r) => [runId, COMP_DATE, 'flipkart-minutes', r.brand, r.category, r.canonical, r.city, r.pincode, r.store_id, r.pack, r.vol_ml, r.per_litre, r.mrp, r.sale, r.discount_pct, r.in_stock, r.rank, r.is_ad].map(esc).join(','));
+    if (lines.length) fs.appendFileSync(csvPath, lines.join('\n') + '\n');
+    process.stderr.write(`[comp] wrote ${allRows.length} rows -> ${outJson} and appended history -> ${csvPath}\n`);
+    console.log(JSON.stringify(summary));
+    return;
+  }
   fs.writeFileSync(OUT, JSON.stringify({ summary, perPin, allRows, partial }, null, 2));
   console.log(JSON.stringify(summary));
 })().catch((e) => {

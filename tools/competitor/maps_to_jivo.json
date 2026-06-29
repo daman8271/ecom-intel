@@ -1,0 +1,148 @@
+{
+  "_doc": "comparison axes: a competitor row maps to a JIVO bucket on category+sub_grade+pack; compare per_litre",
+  "_source": "jivo refs from tools/pricematch/sku_map.json regimes (v2026-06-06); bau = business-as-usual street regime, per_litre derived from pack volume",
+  "_generated": "2026-06-30",
+  "density_g_per_ml": {
+    "oil": 0.916,
+    "ghee": 0.91
+  },
+  "round_vol_ml": [
+    200,
+    250,
+    500,
+    1000,
+    2000,
+    4000,
+    5000,
+    15000
+  ],
+  "buckets": [
+    {
+      "key": "olive.extra_light.1L",
+      "category": "olive",
+      "sub_grade": "extra_light",
+      "pack_label": "1L",
+      "vol_ml": 1000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Extra Light Olive Oil 1L",
+      "jivo_sku_key": "EXTRA LIGHT 1L",
+      "jivo_mrp_per_litre": 1499.0,
+      "jivo_bau_per_litre": 619.0
+    },
+    {
+      "key": "olive.extra_light.2L",
+      "category": "olive",
+      "sub_grade": "extra_light",
+      "pack_label": "2L",
+      "vol_ml": 2000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Extra Light Olive Oil 2L",
+      "jivo_sku_key": "EXTRA LIGHT 2L",
+      "jivo_mrp_per_litre": 1399.5,
+      "jivo_bau_per_litre": 614.5
+    },
+    {
+      "key": "olive.pomace.1L",
+      "category": "olive",
+      "sub_grade": "pomace",
+      "pack_label": "1L",
+      "vol_ml": 1000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Pomace Olive Oil 1L",
+      "jivo_sku_key": "JIVO POMACE 1L",
+      "jivo_mrp_per_litre": 1049.0,
+      "jivo_bau_per_litre": 439.0
+    },
+    {
+      "key": "olive.pomace.5L",
+      "category": "olive",
+      "sub_grade": "pomace",
+      "pack_label": "5L",
+      "vol_ml": 5000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Pomace Olive Oil 5L Tin",
+      "jivo_sku_key": "JIVO POMACE 5L",
+      "jivo_mrp_per_litre": 999.8,
+      "jivo_bau_per_litre": 433.8
+    },
+    {
+      "key": "canola.1L",
+      "category": "canola",
+      "sub_grade": null,
+      "pack_label": "1L",
+      "vol_ml": 1000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Cold Pressed Canola Oil 1L",
+      "jivo_sku_key": "CANOLA 1L",
+      "jivo_mrp_per_litre": 375.0,
+      "jivo_bau_per_litre": 269.0
+    },
+    {
+      "key": "canola.5L",
+      "category": "canola",
+      "sub_grade": null,
+      "pack_label": "5L",
+      "vol_ml": 5000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Canola Cold Pressed Oil 5L",
+      "jivo_sku_key": "CANOLA 5L",
+      "jivo_mrp_per_litre": 330.0,
+      "jivo_bau_per_litre": 259.8
+    },
+    {
+      "key": "mustard.kachi_ghani.1L",
+      "category": "mustard",
+      "sub_grade": "kachi_ghani",
+      "pack_label": "1L",
+      "vol_ml": 1000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Cold Pressed Kachi Ghani Mustard Oil 1L",
+      "jivo_sku_key": "MUSTARD 1L",
+      "jivo_mrp_per_litre": 255.0,
+      "jivo_bau_per_litre": 219.0
+    },
+    {
+      "key": "mustard.kachi_ghani.5L",
+      "category": "mustard",
+      "sub_grade": "kachi_ghani",
+      "pack_label": "5L",
+      "vol_ml": 5000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Cold Pressed Kachi Ghani Mustard Oil 5L",
+      "jivo_sku_key": "MUSTARD 5L",
+      "jivo_mrp_per_litre": 250.0,
+      "jivo_bau_per_litre": 209.8
+    },
+    {
+      "key": "sunflower.1L",
+      "category": "sunflower",
+      "sub_grade": null,
+      "pack_label": "1L",
+      "vol_ml": 1000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Cold Pressed Unrefined Sunflower Oil 1L",
+      "jivo_sku_key": "SUNFLOWER 1L",
+      "jivo_mrp_per_litre": 275.0,
+      "jivo_bau_per_litre": 229.0
+    },
+    {
+      "key": "olive.extra_virgin.1L",
+      "category": "olive",
+      "sub_grade": "extra_virgin",
+      "pack_label": "1L",
+      "vol_ml": 1000,
+      "compare_unit": "per_litre",
+      "jivo_anchor": "Jivo Extra Virgin Olive Oil 1L",
+      "jivo_sku_key": "EXTRA VIRGIN 1L",
+      "jivo_mrp_per_litre": 1499.0,
+      "jivo_bau_per_litre": 809.0
+    }
+  ],
+  "join_rules": [
+    "never compare across olive grades (extra_virgin vs extra_light vs pomace are 3-5x apart)",
+    "blends are own category (GOLD=ricebran+sunflower, SO-OLIVE=ricebran+olive) - not olive/sunflower/ricebran",
+    "combo packs (1+1L) are their own pack axis, never folded into single-bottle packs",
+    "ghee compares per_kg on a separate axis (density != 1)",
+    "per_litre from measured vol_ml; convert grams via density (oil 0.916, ghee 0.91); flag if vol_ml not in round_vol_ml as pack_deflation"
+  ]
+}

@@ -87,6 +87,144 @@ const COMPAT = 'CONVENIENCE_FEE,RAIN_FEE,EXTERNAL_COUPONS,STANDSTILL,BUNDLE,MULT
 // actually see. Override with ZEPTO_MARKETPLACE=ZEPTO_NOW to capture the instant tier.
 const MARKETPLACE = process.env.ZEPTO_MARKETPLACE || 'SUPER_SAVER';
 
+// ---- COMPETITOR MODE (env-gated; additive; 2026-06-30) ---------------------------
+// OFF by default. When process.env.COMPETITOR_MODE === '1' the scraper STOPS being
+// jivo-only: it (1) runs extra bare-CATEGORY search queries IN ADDITION to the normal
+// 'jivo' + brand-scoped sweeps, (2) keeps any row whose clean brand field OR name
+// matches the competitor whitelist regex (tools/competitor/competitor_brands.json)
+// instead of jivo-only, (3) tags every kept row brand+category+sub_grade+rank+is_ad,
+// and (4) writes ONLY under tools/competitor/data/ (never the mailer-globbed jivo
+// result.json). With the flag UNSET every branch below is skipped and behavior is
+// byte-for-byte the live jivo path. Never cron-wired; see tools/competitor/COMPETITOR-PLAN.md.
+const COMPETITOR = process.env.COMPETITOR_MODE === '1';
+// IST calendar date drives the dated output filename + the history CSV date_ist column.
+const COMP_DATE_IST = new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+const COMP_DIR = __dirname + '/../../tools/competitor/data';
+let COMP_WHITELIST = /jivo/i;
+let COMP_QUERIES = ['olive oil', 'mustard oil', 'sunflower oil', 'canola oil',
+  'rice bran oil', 'groundnut oil', 'soyabean oil', 'blended oil'];
+if (COMPETITOR) {
+  try {
+    const cb = JSON.parse(fs.readFileSync(__dirname + '/../../tools/competitor/competitor_brands.json', 'utf8'));
+    if (cb && cb.whitelist_regex) COMP_WHITELIST = new RegExp(cb.whitelist_regex, 'i');
+  } catch (e) { process.stderr.write(`[competitor] brand whitelist load failed (${e.message}); falling back to /jivo/i\n`); }
+  try {
+    const cq = JSON.parse(fs.readFileSync(__dirname + '/../../tools/competitor/category_queries.json', 'utf8'));
+    if (cq && Array.isArray(cq.queries) && cq.queries.length) COMP_QUERIES = cq.queries.slice();
+  } catch (e) { process.stderr.write(`[competitor] category_queries load failed (${e.message}); using built-in list\n`); }
+}
+const COMP_DENSITY = { oil: 0.916, ghee: 0.91 };
+// brand: trust the clean product.brand; fall back to the first whitelist hit in the name.
+function compBrand(brand, name) {
+  const b = (brand || '').trim();
+  if (b) return b;
+  const m = COMP_WHITELIST.exec((name || '').toLowerCase());
+  return m ? m[0].replace(/\s+/g, ' ').trim() : '';
+}
+// category: prefer the category the surfacing query implies; else infer from the name.
+function compCategory(name, queryCat) {
+  if (queryCat) return queryCat;
+  const s = (name || '').toLowerCase();
+  if (/olive/.test(s)) return 'olive';
+  if (/mustard|kachi ?ghani|sarso(n)?/.test(s)) return 'mustard';
+  if (/sunflower/.test(s)) return 'sunflower';
+  if (/canola/.test(s)) return 'canola';
+  if (/rice ?bran/.test(s)) return 'rice_bran';
+  if (/groundnut|peanut/.test(s)) return 'groundnut';
+  if (/soyabean|soybean|soya/.test(s)) return 'soyabean';
+  if (/sesame|gingelly|\btil\b/.test(s)) return 'sesame';
+  if (/ghee/.test(s)) return 'ghee';
+  if (/blend|so-?olive|\bgold\b/.test(s)) return 'blended';
+  return '';
+}
+// olive splits into price tiers that must never be compared across; null for non-olive.
+function compSubGrade(name, category) {
+  if (category !== 'olive') return null;
+  const s = (name || '').toLowerCase();
+  if (/extra ?virgin/.test(s)) return 'extra_virgin';
+  if (/extra ?light|extralight/.test(s)) return 'extra_light';
+  if (/pomace/.test(s)) return 'pomace';
+  if (/\bpure\b/.test(s)) return 'pure';
+  return null;
+}
+// unit of the pack AS LABELLED: grams when it carries g/kg and no ml/l token, else ml.
+function compUnit(pack) {
+  const s = (pack || '').toLowerCase();
+  if (/\b(kg|g|gram|grams|kilogram)\b/.test(s) && !/\b(ml|l|ltr|litre|litres)\b/.test(s)) return 'g';
+  return 'ml';
+}
+// best-effort sponsored-listing flag: probe the product node + its search-result parent for an
+// ad/sponsored marker. Honest default 0 (Zepto's live ad field is unconfirmed from this host).
+function compDetectAd(pr) {
+  const hit = (o) => {
+    if (!o || typeof o !== 'object') return false;
+    for (const k of Object.keys(o)) {
+      if (/^(is_?ad|isad|sponsored|is_?sponsored|ad_?id|adid)$/i.test(k)) {
+        const v = o[k];
+        if (v === true || (typeof v === 'number' && v > 0) || (typeof v === 'string' && v && v !== 'false')) return true;
+      }
+    }
+    return false;
+  };
+  return (hit(pr) || hit(pr && pr.meta) || hit(pr && pr.__node)) ? 1 : 0;
+}
+// Project an internal row to the shared COMPETITOR ROW CONTRACT, converting grams->ml by
+// oil/ghee density so per_litre reflects ACTUAL contents (the 910 g-as-1L pack-deflation trap).
+function toCompetitorRow(row) {
+  const unit = compUnit(row.pack);
+  const cat = row.category || '';
+  const density = cat === 'ghee' ? COMP_DENSITY.ghee : COMP_DENSITY.oil;
+  let volMl = row.vol_ml;
+  if (unit === 'g' && volMl != null) volMl = Math.round(volMl / density);
+  const sale = row.sale != null ? row.sale : null;
+  const perLitre = (volMl && sale != null) ? Math.round((sale / (volMl / 1000)) * 100) / 100 : null;
+  return {
+    platform: 'zepto',
+    city: row.city, pincode: row.pincode,
+    store_id: row.store_id, store_name: row.store_name || '',
+    brand: row.brand || '', name: row.sku_raw || '', canonical: row.canonical,
+    category: cat, sub_grade: (row.sub_grade != null ? row.sub_grade : null),
+    pack: row.pack, vol_ml: volMl, unit,
+    per_litre: perLitre, mrp: row.mrp != null ? row.mrp : null, sale,
+    discount_pct: row.discount_pct != null ? row.discount_pct : null,
+    in_stock: row.in_stock ? 1 : 0,
+    rank: row.rank != null ? row.rank : null, is_ad: row.is_ad ? 1 : 0,
+    captured_at: row.captured_at || new Date().toISOString(),
+  };
+}
+// Write the competitor run result + append the rolling history CSV. ONLY tools/competitor/data/
+// (never result.json / data|vault|reviews|baselines, which the cron git-adds).
+function writeCompetitorOutputs(summary, allRows, partial) {
+  try { fs.mkdirSync(COMP_DIR, { recursive: true }); } catch (_) { /* already exists */ }
+  const compRows = allRows.map(toCompetitorRow);
+  const runId = 'zepto-' + new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().replace(/[-:T]/g, '').slice(0, 14);
+  const byBrand = {};
+  for (const r of compRows) { const b = r.brand || 'unknown'; byBrand[b] = (byBrand[b] || 0) + 1; }
+  const compSummary = Object.assign({}, summary, {
+    platform: 'zepto', mode: 'competitor', run_id: runId, date_ist: COMP_DATE_IST, partial,
+    competitor_rows: compRows.length,
+    brands: Array.from(new Set(compRows.map(r => r.brand).filter(Boolean))).sort(),
+    categories: Array.from(new Set(compRows.map(r => r.category).filter(Boolean))).sort(),
+    rows_by_brand: byBrand,
+  });
+  const outPath = COMP_DIR + '/zepto_competitor_' + COMP_DATE_IST + '.json';
+  fs.writeFileSync(outPath, JSON.stringify({ summary: compSummary, allRows: compRows }, null, 2));
+  process.stderr.write(`[competitor] wrote ${compRows.length} rows -> ${outPath}\n`);
+  const csvPath = COMP_DIR + '/competitor_history.csv';
+  const header = 'run_id,date_ist,platform,brand,category,canonical,city,pincode,store_id,pack,vol_ml,per_litre,mrp,sale,discount_pct,in_stock,rank,is_ad\n';
+  const esc = (v) => {
+    if (v == null) return '';
+    const s = String(v);
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  };
+  const lines = compRows.map(r => [runId, COMP_DATE_IST, 'zepto', r.brand, r.category, r.canonical,
+    r.city, r.pincode, r.store_id, r.pack, r.vol_ml, r.per_litre, r.mrp, r.sale, r.discount_pct,
+    r.in_stock, r.rank, r.is_ad].map(esc).join(','));
+  fs.appendFileSync(csvPath, (fs.existsSync(csvPath) ? '' : header) + (lines.length ? lines.join('\n') + '\n' : ''));
+  process.stderr.write(`[competitor] appended ${lines.length} rows -> ${csvPath}\n`);
+}
+// ---------------------------------------------------------------------------------
+
 // ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
 // At up to 1,885 pincodes a run is long, so it MUST survive interruption and rate-
 // limiting without losing work or throwing. Three additions, all opt-in / fail-safe,
@@ -102,7 +240,7 @@ const MARKETPLACE = process.env.ZEPTO_MARKETPLACE || 'SUPER_SAVER';
 //       gets written with a top-level `partial` flag so the batch wrapper sees it.
 // SIM hooks (ZEPTO_SIM / ZEPTO_BLOCK_SIM) drive the hermetic fault-injection tests in
 // test_hardening.md without hitting Zepto live.
-const PROG = `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
+const PROG = `${__dirname}/.progress.${COMPETITOR ? 'competitor.' : ''}${new Date().toISOString().slice(0, 10)}.json`;
 const MAX_BLOCK_RETRIES = parseInt(process.env.ZEPTO_BLOCK_RETRIES || '4', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could legitimately appear in JSON payloads) — HTTP status carries those.
@@ -293,7 +431,12 @@ async function searchPage(storeId, lat, lon, query, pageNumber) {
   (function walk(o) {
     if (!o || typeof o !== 'object') return;
     const pr = o.productResponse;
-    if (pr && pr.product && pr.product.name) items.push(pr);
+    if (pr && pr.product && pr.product.name) {
+      // competitor mode only: stash the search-result parent node (non-enumerable, so it never
+      // serializes) so compDetectAd can probe it for a sponsored/ad marker. No-op when OFF.
+      if (COMPETITOR) { try { Object.defineProperty(pr, '__node', { value: o, enumerable: false, configurable: true }); } catch (_) { /* frozen */ } }
+      items.push(pr);
+    }
     for (const k of Object.keys(o)) { const v = o[k]; if (v && typeof v === 'object') walk(v); }
   })(j);
   return { ok: true, items, markers: findMarkers(j) };
@@ -348,7 +491,7 @@ function pdpToRow(pi, rec, storeId, seed) {
   const saleR = sale != null ? sale / 100 : null;
   const vol = volFromVariant(v, pack);
   const inStock = (sp.availableQuantity != null && sp.availableQuantity > 0) ? 1 : 0;
-  return {
+  const row = {
     city: rec.city, pincode: rec.pincode, locality: rec.locality,
     store_id: storeId, store_name: '',
     product_id: (p && p.id) || (seed && seed.productId) || null, variant_id: v.id || (seed && seed.variantId) || null,
@@ -363,6 +506,17 @@ function pdpToRow(pi, rec, storeId, seed) {
     price_source: priceSource,
     source: 'pdp_seed',       // provenance: recovered via the seed-variant PDP pass (vs search)
   };
+  if (COMPETITOR) {
+    // PDP rows are not from a ranked search response -> no rank / ad signal.
+    const category = compCategory(name, null);
+    row.brand = compBrand((p && p.brand) || '', name);
+    row.category = category;
+    row.sub_grade = compSubGrade(name, category);
+    row.rank = null;
+    row.is_ad = 0;
+    row.captured_at = new Date().toISOString();
+  }
+  return row;
 }
 
 // Authoritative per-tier price. Zepto's response carries pricingData.pricingEntityPrices —
@@ -376,7 +530,7 @@ function tierPrice(pr, mk) {
   return hit ? hit.discountedSellingPrice : null;
 }
 
-function toRow(pr, rec, storeId) {
+function toRow(pr, rec, storeId, ctx) {
   const p = pr.product, v = pr.productVariant || {};
   const name = p.name;
   const pack = v.formattedPacksize || '';
@@ -398,7 +552,7 @@ function toRow(pr, rec, storeId) {
   const saleR = sale != null ? sale / 100 : null;
   const vol = volFromVariant(v, pack);
   const inStock = pr.outOfStock === true ? 0 : 1;
-  return {
+  const row = {
     city: rec.city, pincode: rec.pincode, locality: rec.locality,
     store_id: storeId, store_name: '',
     // Stable Zepto identifiers, persisted for traceability / future variantId-keyed canonicalization.
@@ -416,6 +570,17 @@ function toRow(pr, rec, storeId) {
     cached: pr.cached === true,
     price_source: priceSource,
   };
+  if (COMPETITOR) {
+    // ctx carries the surfacing query's implied category + the 1-based search rank + ad flag.
+    const category = compCategory(name, ctx && ctx.category);
+    row.brand = compBrand((p && p.brand) || '', name);
+    row.category = category;
+    row.sub_grade = compSubGrade(name, category);
+    row.rank = ctx && ctx.rank != null ? ctx.rank : null;
+    row.is_ad = ctx && ctx.isAd ? 1 : 0;
+    row.captured_at = new Date().toISOString();
+  }
+  return row;
 }
 
 // Run one search query across its pages, appending genuine-Jivo rows into `rows` and deduping by
@@ -427,18 +592,28 @@ function toRow(pr, rec, storeId) {
 //                   and interleaved with blank pages, so we must full-sweep to the empty page.
 async function collectQuery(rec, storeId, query, opts, seenCanon, rows) {
   let firstMarkers = null, blocked = null;
+  const qCat = COMPETITOR ? compCategory(query) : null;  // category implied by a bare-category sweep
+  let rank = 0;                                           // 1-based search position across the query's pages
   for (let pn = 0; pn < opts.maxPages; pn++) {
     const res = await searchPage(storeId, rec.lat, rec.lon, query, pn);
     if (pn === 0) { firstMarkers = res.markers || {}; blocked = res.blocked || null; }
     if (!res.ok || !res.items.length) break;
     let added = 0;
     for (const pr of res.items) {
+      if (COMPETITOR) rank++;  // count EVERY returned item so rank reflects true search position
       // keep only genuine Jivo products (brand == Jivo, or name contains the
       // word "jivo"); excludes fuzzy matches like "Jivika", "Tata", "Saffola".
       const nm = (pr.product && pr.product.name) || '';
       const br = ((pr.product && pr.product.brand) || '').toLowerCase();
-      if (br !== 'jivo' && !/\bjivo\b/i.test(nm)) continue;
-      const row = toRow(pr, rec, storeId);
+      if (COMPETITOR) {
+        // competitor mode: keep any whitelisted brand (clean brand field OR name match)
+        if (!COMP_WHITELIST.test(br) && !COMP_WHITELIST.test(nm)) continue;
+      } else {
+        if (br !== 'jivo' && !/\bjivo\b/i.test(nm)) continue;
+      }
+      const row = COMPETITOR
+        ? toRow(pr, rec, storeId, { category: qCat, rank, isAd: compDetectAd(pr) })
+        : toRow(pr, rec, storeId);
       const key = `${storeId}|${row.canonical}`;
       if (seenCanon.has(key)) continue;
       seenCanon.add(key); rows.push(row); added++;
@@ -498,6 +673,14 @@ async function scrapeOne(rec) {
       for (const cq of CAT_QUERIES) {
         await collectQuery(rec, storeId, cq, { maxPages: CAT_MAX_PAGES, earlyBreak: false }, seenCanon, rows);
       }
+      // 2b) COMPETITOR sweep (env-gated) — bare-CATEGORY queries (olive oil, mustard oil, …) that
+      //     surface rival brands in the SAME ranked response we already read for Jivo. Full-swept,
+      //     deduped per-store by canonical (brand is encoded in the name -> dedup stays brand-safe).
+      if (COMPETITOR) {
+        for (const cq of COMP_QUERIES) {
+          await collectQuery(rec, storeId, cq, { maxPages: CAT_MAX_PAGES, earlyBreak: false }, seenCanon, rows);
+        }
+      }
       // 3) SEED-VARIANT PDP PASS — recover rollup-hidden / OOS / large-pack variants that Zepto's
       //    search never emits under ANY query (Mustard 5 L, Sunflower 5 L, Canola 5 L, Gold blend,
       //    Rice Bran, So-Olive, …). For each known variantId hit the PDP route for authoritative
@@ -512,7 +695,11 @@ async function scrapeOne(rec) {
           if (!pi) continue;                                   // 404 -> not carried at this store
           const nm = (pi.product && pi.product.name) || seed.name || '';
           const br = ((pi.product && pi.product.brand) || '').toLowerCase();
-          if (br !== 'jivo' && !/\bjivo\b/i.test(nm)) continue; // safety: only genuine Jivo
+          if (COMPETITOR) {
+            if (!COMP_WHITELIST.test(br) && !COMP_WHITELIST.test(nm)) continue; // competitor whitelist
+          } else {
+            if (br !== 'jivo' && !/\bjivo\b/i.test(nm)) continue; // safety: only genuine Jivo
+          }
           const row = pdpToRow(pi, rec, storeId, seed);
           const existing = byVid.get(seed.variantId);
           if (existing) Object.assign(existing, row);           // PDP wins (authoritative)
@@ -627,6 +814,11 @@ if (require.main === module) (async () => {
     },
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
-  fs.writeFileSync(OUTFILE, JSON.stringify({ summary, perPin, allRows, partial }, null, 2));
+  if (COMPETITOR) {
+    // competitor mode: write ONLY under tools/competitor/data/ — never the mailer-globbed result.json
+    writeCompetitorOutputs(summary, allRows, partial);
+  } else {
+    fs.writeFileSync(OUTFILE, JSON.stringify({ summary, perPin, allRows, partial }, null, 2));
+  }
   console.log(JSON.stringify(summary));
 })();

@@ -1,0 +1,89 @@
+[
+  {"city": "Mumbai", "pincode": "400001", "locality": "Fort, Mumbai", "lat": 18.9385, "lon": 72.8363, "tier": 1, "primary": true},
+  {"city": "Mumbai", "pincode": "400053", "locality": "Andheri West (Azad Nagar)", "lat": 19.0458, "lon": 72.8262, "tier": 1, "primary": false},
+  {"city": "Mumbai", "pincode": "400076", "locality": "Powai", "lat": 19.1287, "lon": 72.9192, "tier": 1, "primary": false},
+
+  {"city": "Delhi", "pincode": "110092", "locality": "East Delhi (Vivek Vihar)", "lat": 28.6126, "lon": 77.2950, "tier": 1, "primary": true},
+  {"city": "Delhi", "pincode": "110075", "locality": "Dwarka (Amberhai)", "lat": 28.5886, "lon": 77.0501, "tier": 1, "primary": false},
+  {"city": "Delhi", "pincode": "110085", "locality": "Rohini Sector 7", "lat": 28.7124, "lon": 77.1330, "tier": 1, "primary": false},
+
+  {"city": "Bengaluru", "pincode": "560006", "locality": "Bengaluru GPO", "lat": 12.9716, "lon": 77.5946, "tier": 1, "primary": true},
+  {"city": "Bengaluru", "pincode": "560003", "locality": "Malleswaram", "lat": 13.0022, "lon": 77.5743, "tier": 1, "primary": false},
+  {"city": "Bengaluru", "pincode": "560034", "locality": "Koramangala", "lat": 12.9252, "lon": 77.6324, "tier": 1, "primary": false},
+
+  {"city": "Hyderabad", "pincode": "500001", "locality": "Afzal Gunj", "lat": 17.3850, "lon": 78.4867, "tier": 1, "primary": true},
+  {"city": "Hyderabad", "pincode": "500081", "locality": "Cyberabad (HITEC City)", "lat": 17.4474, "lon": 78.3963, "tier": 1, "primary": false},
+  {"city": "Hyderabad", "pincode": "500013", "locality": "Amberpet", "lat": 17.3952, "lon": 78.5265, "tier": 1, "primary": false},
+
+  {"city": "Chennai", "pincode": "600001", "locality": "Parrys", "lat": 13.0827, "lon": 80.2707, "tier": 1, "primary": true},
+  {"city": "Chennai", "pincode": "600042", "locality": "Velachery", "lat": 12.9826, "lon": 80.2216, "tier": 1, "primary": false},
+  {"city": "Chennai", "pincode": "600028", "locality": "Raja Annamalaipuram", "lat": 13.0373, "lon": 80.3549, "tier": 1, "primary": false},
+
+  {"city": "Pune", "pincode": "411001", "locality": "Pune City", "lat": 18.5204, "lon": 73.8567, "tier": 1, "primary": true},
+  {"city": "Pune", "pincode": "411028", "locality": "Hadapsar", "lat": 18.4982, "lon": 73.9308, "tier": 1, "primary": false},
+  {"city": "Pune", "pincode": "411067", "locality": "Aundh", "lat": 18.5634, "lon": 73.8129, "tier": 1, "primary": false},
+
+  {"city": "Ahmedabad", "pincode": "380001", "locality": "Ahmedabad GPO", "lat": 23.0225, "lon": 72.5714, "tier": 1, "primary": true},
+  {"city": "Ahmedabad", "pincode": "380015", "locality": "Manekbag (Satellite)", "lat": 23.0261, "lon": 72.5354, "tier": 1, "primary": false},
+  {"city": "Ahmedabad", "pincode": "380005", "locality": "Sabarmati", "lat": 23.0953, "lon": 72.5968, "tier": 1, "primary": false},
+
+  {"city": "Kolkata", "pincode": "700001", "locality": "BBD Bagh", "lat": 22.5726, "lon": 88.3639, "tier": 1, "primary": true},
+  {"city": "Kolkata", "pincode": "700006", "locality": "Beadon Street", "lat": 22.5886, "lon": 88.3674, "tier": 1, "primary": false},
+  {"city": "Kolkata", "pincode": "700075", "locality": "Santoshpur", "lat": 22.4627, "lon": 88.3389, "tier": 1, "primary": false},
+
+  {"city": "Gurugram", "pincode": "122001", "locality": "Gurugram Sadar", "lat": 28.4595, "lon": 77.0266, "tier": 1, "primary": true},
+  {"city": "Gurugram", "pincode": "122002", "locality": "DLF Phase (QE)", "lat": 28.4661, "lon": 77.1058, "tier": 1, "primary": false},
+  {"city": "Gurugram", "pincode": "122015", "locality": "Palam Road", "lat": 28.4974, "lon": 77.0631, "tier": 1, "primary": false},
+
+  {"city": "Noida", "pincode": "201301", "locality": "Noida Sector 1", "lat": 28.5708, "lon": 77.3210, "tier": 1, "primary": true},
+  {"city": "Noida", "pincode": "201302", "locality": "Noida (NDC)", "lat": 28.5787, "lon": 77.3134, "tier": 1, "primary": false},
+  {"city": "Noida", "pincode": "201318", "locality": "Greater Noida Sector 1", "lat": 28.6681, "lon": 77.4285, "tier": 1, "primary": false},
+
+  {"city": "Jaipur", "pincode": "302001", "locality": "Jaipur GPO", "lat": 26.9124, "lon": 75.7873, "tier": 2, "primary": true},
+  {"city": "Jaipur", "pincode": "302017", "locality": "Malviya Nagar", "lat": 26.8722, "lon": 75.7880, "tier": 2, "primary": false},
+  {"city": "Jaipur", "pincode": "302020", "locality": "Mansarovar", "lat": 26.8550, "lon": 75.7648, "tier": 2, "primary": false},
+
+  {"city": "Lucknow", "pincode": "226001", "locality": "Lucknow GPO", "lat": 26.8467, "lon": 80.9462, "tier": 2, "primary": true},
+  {"city": "Lucknow", "pincode": "226006", "locality": "Mahanagar", "lat": 26.8757, "lon": 80.9596, "tier": 2, "primary": false},
+  {"city": "Lucknow", "pincode": "226005", "locality": "Alambagh", "lat": 26.8260, "lon": 80.9185, "tier": 2, "primary": false},
+
+  {"city": "Surat", "pincode": "395003", "locality": "Surat City", "lat": 21.1702, "lon": 72.8311, "tier": 2, "primary": true},
+  {"city": "Surat", "pincode": "395002", "locality": "Sagrampura (Putli)", "lat": 21.1866, "lon": 72.8325, "tier": 2, "primary": false},
+  {"city": "Surat", "pincode": "395006", "locality": "Varachha Road", "lat": 21.2146, "lon": 72.8529, "tier": 2, "primary": false},
+
+  {"city": "Chandigarh", "pincode": "160001", "locality": "Chandigarh Sector 17", "lat": 30.7333, "lon": 76.7794, "tier": 2, "primary": true},
+  {"city": "Chandigarh", "pincode": "160022", "locality": "Sector 22", "lat": 30.7250, "lon": 76.7695, "tier": 2, "primary": false},
+
+  {"city": "Kochi", "pincode": "682011", "locality": "Ernakulam HO", "lat": 9.9719, "lon": 76.2823, "tier": 2, "primary": true},
+  {"city": "Kochi", "pincode": "682001", "locality": "Fort Kochi (Kochi HO)", "lat": 9.9656, "lon": 76.2414, "tier": 2, "primary": false},
+
+  {"city": "Indore", "pincode": "452001", "locality": "Indore GPO", "lat": 22.5719, "lon": 75.8743, "tier": 2, "primary": true},
+  {"city": "Indore", "pincode": "452010", "locality": "Vijay Nagar", "lat": 22.6351, "lon": 75.8349, "tier": 2, "primary": false},
+
+  {"city": "Coimbatore", "pincode": "641001", "locality": "Coimbatore HO", "lat": 10.9954, "lon": 76.9597, "tier": 2, "primary": true},
+  {"city": "Coimbatore", "pincode": "641004", "locality": "Peelamedu", "lat": 11.0255, "lon": 76.8548, "tier": 2, "primary": false},
+
+  {"city": "Nagpur", "pincode": "440001", "locality": "Nagpur GPO", "lat": 21.1158, "lon": 79.1370, "tier": 2, "primary": true},
+  {"city": "Nagpur", "pincode": "440010", "locality": "Shankar Nagar (Dharampeth)", "lat": 21.1357, "lon": 79.0594, "tier": 2, "primary": false},
+
+  {"city": "Visakhapatnam", "pincode": "530001", "locality": "Visakhapatnam HO", "lat": 17.6987, "lon": 83.2944, "tier": 2, "primary": true},
+  {"city": "Visakhapatnam", "pincode": "530009", "locality": "NAD Junction", "lat": 17.7363, "lon": 83.2357, "tier": 2, "primary": false},
+
+  {"city": "Vadodara", "pincode": "390007", "locality": "Racecourse", "lat": 22.3065, "lon": 73.1668, "tier": 2, "primary": true},
+  {"city": "Vadodara", "pincode": "390011", "locality": "Manjalpur", "lat": 22.2782, "lon": 73.1945, "tier": 2, "primary": false},
+
+  {"city": "Bhubaneswar", "pincode": "751001", "locality": "Bhubaneswar GPO", "lat": 20.2708, "lon": 85.8314, "tier": 2, "primary": true},
+  {"city": "Bhubaneswar", "pincode": "751016", "locality": "Chandrasekharpur", "lat": 20.3288, "lon": 85.8202, "tier": 2, "primary": false},
+
+  {"city": "Nashik", "pincode": "422001", "locality": "Nashik HO", "lat": 20.0082, "lon": 73.8065, "tier": 2, "primary": true},
+  {"city": "Nashik", "pincode": "422101", "locality": "Nashik Road", "lat": 19.9653, "lon": 73.8607, "tier": 2, "primary": false},
+
+  {"city": "Mysuru", "pincode": "570001", "locality": "Mysuru HO", "lat": 12.3149, "lon": 76.6544, "tier": 2, "primary": true},
+  {"city": "Mysuru", "pincode": "570012", "locality": "Jayalakshmipuram", "lat": 12.3233, "lon": 76.6197, "tier": 2, "primary": false},
+
+  {"city": "Vijayawada", "pincode": "520001", "locality": "Vijayawada HO", "lat": 16.5222, "lon": 80.6192, "tier": 2, "primary": true},
+  {"city": "Vijayawada", "pincode": "520010", "locality": "Venkateswarapuram", "lat": 16.4497, "lon": 80.6379, "tier": 2, "primary": false},
+
+  {"city": "Thiruvananthapuram", "pincode": "695010", "locality": "Sasthamangalam", "lat": 8.5120, "lon": 76.9707, "tier": 2, "primary": true},
+  {"city": "Thiruvananthapuram", "pincode": "695002", "locality": "Karamana (Karumom)", "lat": 8.4666, "lon": 76.9746, "tier": 2, "primary": false}
+]
