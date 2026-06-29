@@ -40,6 +40,20 @@ cat platforms/blinkit/result.json | python3 -m json.tool | head   # raw data
 ls output/                  # the Excel
 ```
 
+### Per-pincode coverage mode (Wave 1: blinkit / zepto / flipkart-minutes)
+True per-pincode ground truth over the 25-city universe (1,885 pincodes), opt-in and non-breaking:
+```bash
+# full 1,885-pincode coverage for one QC platform (default OFF = anchor pincodes.json, unchanged):
+COVERAGE_FULL=1 ./run.sh zepto
+# or a subset (e.g. just the zero-cities) — relative path is auto-normalized:
+COVERAGE_FULL=1 PINCODES_FILE=platforms/zepto/pincodes.zerocities.json ./run.sh zepto
+python3 tools/coverage/coverage_report.py $(date +%F)   # honest per-city x per-platform matrix
+```
+- Configs: `platforms/<p>/pincodes.full25.json` (regen: `python3 tools/pincodes/gen_full_configs.py`). NEVER edit `pincodes.json` (anchor = rollback).
+- Ledger: `data/coverage/ledger.csv` — status per `(platform,pincode)`: `price_captured|serviceable_no_jivo|not_serviceable|error`.
+- Scrapers are hardened: checkpoint/resume (`.progress.<date>.json`), polite block-backoff (no evasion), partial-run tolerance. ⚠️ The `.progress.<date>.json` checkpoint is shared per-date — delete it (`rm platforms/<p>/.progress.*.json`) before a fresh full run if the cron's anchor run already populated it that day.
+- Amazon = Wave 2 (2 dedicated accounts pending). Spec/plan: `docs/superpowers/specs|plans/2026-06-29-coverage-expansion-*`.
+
 ## Add a new platform (the workflow)
 1. `cp -r platforms/blinkit platforms/<new>` and read `platforms/<new>/SKILL.md`
 2. Adapt `scrape.js`: the site URL, the location-setting mechanism, the product-card selectors. Keep the same output JSON shape so `build_excel.py` works unchanged.
