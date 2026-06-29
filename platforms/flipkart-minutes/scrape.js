@@ -96,7 +96,7 @@ const SEARCH_URL = `https://${N}.rome.api.flipkart.com/api/4/page/fetch?cacheFir
 // re-run never resumes from (or overwrites) the jivo progress file, and never lands under
 // a cron-git-added path. The jivo path is byte-for-byte unchanged.
 const PROG = COMPETITOR_MODE
-  ? `${COMP_DIR}/data/.progress.competitor.${COMP_DATE}.json`
+  ? `${COMP_DIR}/data/.progress.competitor.${path.basename(__dirname)}.${COMP_DATE}.json`
   : `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
 if (COMPETITOR_MODE) { try { fs.mkdirSync(path.dirname(PROG), { recursive: true }); } catch (_) { /* created lazily on write */ } }
 const MAX_BLOCK_RETRIES = parseInt(process.env.FKM_BLOCK_RETRIES || '4', 10);
@@ -608,7 +608,10 @@ if (require.main === module) (async () => {
 
   // Health check: a known-good pincode must return Jivo, else the session is dead -> fall back.
   // (Skipped in SIM — there is no live session.)
-  if (!SIM) {
+  // (Skipped in COMPETITOR_MODE: the logged-in API is DC-bound, so the northern canary 201304
+  //  false-fails for a HYD-region token; the browser fallback has no competitor logic anyway, so
+  //  we run the API loop directly and capture whatever pincodes this DC serves.)
+  if (!SIM && process.env.COMPETITOR_MODE !== '1') {
     const hc = await newCtxPage(browser);
     const probe = await scrapePincode(hc.page, { city: 'Noida', pincode: '201304', locality: 'Sector 106', lat: 28.5355, lon: 77.391 });
     await hc.ctx.close();

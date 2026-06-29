@@ -34,7 +34,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 // SIM hooks (BLINKIT_SIM / BLINKIT_BLOCK_SIM) drive the hermetic fault-injection
 // tests in test_hardening.md without launching a browser or hitting Blinkit live.
 const PROG = COMPETITOR_MODE
-  ? `${COMP_DIR}/data/.progress.competitor.${COMP_DATE}.json`
+  ? `${COMP_DIR}/data/.progress.competitor.${path.basename(__dirname)}.${COMP_DATE}.json`
   : `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
 const MAX_BLOCK_RETRIES = parseInt(process.env.BLINKIT_BLOCK_RETRIES || '4', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
