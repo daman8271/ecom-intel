@@ -87,6 +87,51 @@ const COMPAT = 'CONVENIENCE_FEE,RAIN_FEE,EXTERNAL_COUPONS,STANDSTILL,BUNDLE,MULT
 // actually see. Override with ZEPTO_MARKETPLACE=ZEPTO_NOW to capture the instant tier.
 const MARKETPLACE = process.env.ZEPTO_MARKETPLACE || 'SUPER_SAVER';
 
+// ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
+// At up to 1,885 pincodes a run is long, so it MUST survive interruption and rate-
+// limiting without losing work or throwing. Three additions, all opt-in / fail-safe,
+// mirroring the proven Blinkit pilot (commit c4ab885d5) but adapted to Zepto's
+// curl/BFF-API structure (no browser — blocks show up as HTTP status + body markers):
+//   (1) checkpoint/resume — per-pincode result cached in .progress.<date>.json; a
+//       re-run the same day skips finished pincodes and resumes where it stopped.
+//   (2) block-detection + exponential backoff — a 403/429/503 or an Akamai/"access
+//       denied"/captcha body on the per-pincode entry calls (store-resolution +
+//       primary search) is treated as a block: back off (capped) and retry a few
+//       times, then record 0 rows and flag the run partial (NEVER evade — owner rule).
+//   (3) partial tolerance — one pincode can never kill the run; result.json always
+//       gets written with a top-level `partial` flag so the batch wrapper sees it.
+// SIM hooks (ZEPTO_SIM / ZEPTO_BLOCK_SIM) drive the hermetic fault-injection tests in
+// test_hardening.md without hitting Zepto live.
+const PROG = `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
+const MAX_BLOCK_RETRIES = parseInt(process.env.ZEPTO_BLOCK_RETRIES || '4', 10);
+// Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
+// which could legitimately appear in JSON payloads) — HTTP status carries those.
+const BLOCK_RE = /access denied|akamai|reference #\s*\d|too many requests|rate[\s-]?limit|are you a human|captcha|forbidden|cloudfront|request blocked/i;
+// A blocked HTTP status (curl returns the code as a string). 429 is the gateway's
+// rate-limit; 403/503 are the CloudFront/WAF block the DC IP already sees on the edge.
+function isBlockStatus(s) { return s === '403' || s === '429' || s === '503'; }
+// Classify an HTTP result {status, body} as blocked. Returns a reason string or null.
+function classifyBlock(status, body) {
+  if (isBlockStatus(status)) return `http ${status}`;
+  if (body && BLOCK_RE.test(String(body).slice(0, 5000))) return 'block-signature';
+  return null;
+}
+
+async function backoff(attempt) {
+  const ms = Math.min(60000, 2000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1000);
+  process.stderr.write(`[backoff] attempt ${attempt} -> sleeping ${Math.round(ms)}ms\n`);
+  await new Promise((r) => setTimeout(r, ms));
+}
+
+function loadProgress() {
+  try { return fs.existsSync(PROG) ? JSON.parse(fs.readFileSync(PROG, 'utf8')) : {}; }
+  catch (_) { return {}; }
+}
+function saveProgress(done) {
+  try { fs.writeFileSync(PROG, JSON.stringify(done)); }
+  catch (e) { process.stderr.write(`[progress] write failed: ${e.message}\n`); }
+}
+
 // --- price/pack helpers (same conventions as the other platforms) ---
 function parseVolMl(pack) {
   if (!pack) return null;
@@ -192,7 +237,12 @@ async function resolveStore(lat, lon) {
   const url = `${GW}/serviceability-service/api/v1/serviceability?lat=${lat}&long=${lon}`;
   const args = ['-s', '--max-time', '25', '-w', '\n__HTTP__%{http_code}', ...hdrArgs(commonHeaders(null, lat, lon)), url];
   const r = await curl(args);
-  if (r.status !== '200') return { ok: false, status: r.status };
+  if (r.status !== '200') {
+    // A 403/429/503 (or a block-signature body) on the per-pincode ENTRY call means the
+    // gateway is blocking/rate-limiting this IP — surface it so scrapeWithBackoff retries.
+    const blocked = classifyBlock(r.status, r.body);
+    return { ok: false, status: r.status, blocked };
+  }
   let j; try { j = JSON.parse(r.body); } catch { return { ok: false, status: 'badjson' }; }
   // Response shape: { errors:[], data:{ serviceable:bool, stores:[{storeId, serviceable, storeConstruct}] } }
   const data = j.data || {};
@@ -237,7 +287,7 @@ async function searchPage(storeId, lat, lon, query, pageNumber) {
     if (r.status !== '429') break;
     await new Promise(res => setTimeout(res, 1500 * (attempt + 1) + Math.random() * 1500));
   }
-  if (r.status !== '200') return { ok: false, status: r.status, items: [] };
+  if (r.status !== '200') return { ok: false, status: r.status, items: [], blocked: classifyBlock(r.status, r.body) };
   let j; try { j = JSON.parse(r.body); } catch { return { ok: false, status: 'badjson', items: [] }; }
   const items = [];
   (function walk(o) {
@@ -376,10 +426,10 @@ function toRow(pr, rec, storeId) {
 //                   where everything is on page 0). OFF for category queries, where Jivo is sparse
 //                   and interleaved with blank pages, so we must full-sweep to the empty page.
 async function collectQuery(rec, storeId, query, opts, seenCanon, rows) {
-  let firstMarkers = null;
+  let firstMarkers = null, blocked = null;
   for (let pn = 0; pn < opts.maxPages; pn++) {
     const res = await searchPage(storeId, rec.lat, rec.lon, query, pn);
-    if (pn === 0) firstMarkers = res.markers || {};
+    if (pn === 0) { firstMarkers = res.markers || {}; blocked = res.blocked || null; }
     if (!res.ok || !res.items.length) break;
     let added = 0;
     for (const pr of res.items) {
@@ -396,20 +446,52 @@ async function collectQuery(rec, storeId, query, opts, seenCanon, rows) {
     if (opts.earlyBreak && added === 0 && pn > 0) break; // brand query: no new Jivo SKUs on this page
     await new Promise(r => setTimeout(r, 250 + Math.random() * 400));
   }
-  return firstMarkers;
+  return { markers: firstMarkers, blocked };
 }
 
 async function scrapeOne(rec) {
   const t0 = Date.now();
-  let rows = [], storeId = '', serviceable = false, markers = {};
+  // SIM hooks (tests only; never active in production runs — gated on env vars):
+  //   ZEPTO_BLOCK_SIM=1 -> every pincode reports blocked (drives the backoff/partial test)
+  //   ZEPTO_SIM=1       -> return a synthetic serviceable row without any network call (resume test)
+  if (process.env.ZEPTO_BLOCK_SIM === '1') {
+    await new Promise((r) => setTimeout(r, 10));
+    return { ...rec, store_id: '', store_name: '', serviceable: false, blocked: 'sim-block', rows: [], freshness: { cached_rows: 0, markers: {} } };
+  }
+  if (process.env.ZEPTO_SIM === '1') {
+    await new Promise((r) => setTimeout(r, 10));
+    const rows = [{
+      city: rec.city, pincode: rec.pincode, locality: rec.locality,
+      store_id: 'sim', store_name: '', product_id: 'sim', variant_id: 'sim',
+      sku_raw: 'Jivo Sim Oil', canonical: 'jivo-sim-oil-1l', pack: '1 L', vol_ml: 1000,
+      sale: 199, mrp: 250, discount_pct: 20.4, per_litre: 199, eta_min: null,
+      in_stock: 1, cached: false, price_source: 'sim', source: 'sim',
+    }];
+    return { ...rec, store_id: 'sim', store_name: '', serviceable: true, blocked: null, rows, freshness: { cached_rows: 0, markers: {} } };
+  }
+  let rows = [], storeId = '', serviceable = false, markers = {}, blocked = null;
   try {
     const st = await resolveStore(rec.lat, rec.lon);
     serviceable = st.serviceable; storeId = st.storeId || '';
+    // The gateway blocked the per-pincode entry call -> propagate so scrapeWithBackoff retries.
+    if (st.blocked) {
+      blocked = st.blocked;
+      process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} -> ${blocked} on store-resolution\n`);
+      return { ...rec, store_id: '', store_name: '', serviceable, blocked, rows: [], freshness: { cached_rows: 0, markers: {} } };
+    }
     if (st.ok) {
       const seenCanon = new Set();
       // 1) Primary brand query — returns all in-stock Jivo SKUs (on page 0); keep the cheap early-break.
       //    Its page-0 markers are the store's freshness signal (unchanged from before).
-      markers = (await collectQuery(rec, storeId, 'jivo', { maxPages: MAX_PAGES, earlyBreak: true }, seenCanon, rows)) || {};
+      const primary = (await collectQuery(rec, storeId, 'jivo', { maxPages: MAX_PAGES, earlyBreak: true }, seenCanon, rows)) || {};
+      markers = primary.markers || {};
+      if (primary.blocked) {
+        // A block on the primary search (after a clean store-resolve) is still a block:
+        // surface it so we back off + retry rather than silently recording 0 Jivo SKUs.
+        blocked = primary.blocked;
+        process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} -> ${blocked} on primary search\n`);
+        return { ...rec, store_id: storeId, store_name: '', serviceable, blocked, rows: [], freshness: { cached_rows: 0, markers } };
+      }
       // 2) Brand-scoped secondary queries — recover the chronically-OOS Jivo SKUs the bare-brand
       //    query suppresses (Extra Virgin 1L, Pomace 5L, single-2L Pomace bottle, …). Full-sweep to
       //    the first empty page (no early-break) so a SKU on page 1 isn't missed; deduped per-store.
@@ -439,11 +521,32 @@ async function scrapeOne(rec) {
         }
       }
     }
-  } catch (e) { process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}\n`); }
+  } catch (e) {
+    // An error whose message carries a block signature is treated as a block (so the caller
+    // backs off); any other error is just a per-pincode failure (0 rows). Never rethrown.
+    if (BLOCK_RE.test(String(e && e.message))) blocked = 'block-error';
+    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}${blocked ? ' (block)' : ''}\n`);
+  }
   const cachedRows = rows.filter(r => r.cached).length;
   const seedRows = rows.filter(r => r.source === 'pdp_seed').length;
   process.stderr.write(`[ok] ${rec.city} ${rec.pincode} serviceable=${serviceable} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${storeId || 'n/a'}${seedRows ? ` SEED=${seedRows}` : ''}${cachedRows ? ` CACHED=${cachedRows}` : ''}\n`);
-  return { ...rec, store_id: storeId, store_name: '', serviceable, rows, freshness: { cached_rows: cachedRows, markers } };
+  return { ...rec, store_id: storeId, store_name: '', serviceable, blocked, rows, freshness: { cached_rows: cachedRows, markers } };
+}
+
+// Scrape one pincode with block-aware exponential backoff. A blocked attempt backs off and
+// retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag the result
+// `partial_block` (the run is then marked partial). NEVER evades — it only waits and retries
+// politely, then gives up honestly. Mirrors the Blinkit pilot.
+async function scrapeWithBackoff(rec) {
+  for (let attempt = 0; ; attempt++) {
+    const res = await scrapeOne(rec);
+    if (!res.blocked) return res;
+    if (attempt >= MAX_BLOCK_RETRIES) {
+      process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} still blocked after ${attempt} retr${attempt === 1 ? 'y' : 'ies'} (${res.blocked}); recording 0 rows, run is partial\n`);
+      return { ...res, partial_block: true };
+    }
+    await backoff(attempt);
+  }
 }
 
 async function pool(items, n, fn) {
@@ -465,7 +568,20 @@ module.exports = { parseVolMl, volFromVariant, canonical };
 
 if (require.main === module) (async () => {
   const t0 = Date.now();
-  const perPin = await pool(PINCODES, CONCURRENCY, scrapeOne);
+  // Resume: reload any per-pincode results already captured for TODAY and skip them, so a
+  // kill/restart finishes the run with no duplicate work and a complete result.json.
+  const done = loadProgress();
+  const doneCount = Object.keys(done).length;
+  if (doneCount) process.stderr.write(`[resume] ${doneCount} pincodes already done in ${PROG}; resuming\n`);
+  let partial = false;
+  const perPin = await pool(PINCODES, CONCURRENCY, async (rec) => {
+    if (done[rec.pincode]) return done[rec.pincode];          // checkpoint hit — skip
+    const res = await scrapeWithBackoff(rec);
+    if (res.blocked || res.partial_block) partial = true;     // any unresolved block => partial run
+    done[rec.pincode] = res;
+    saveProgress(done);                                       // checkpoint AFTER each pincode
+    return res;
+  });
   const allRows = perPin.flatMap(p => p.rows);
   // Freshness aggregate for the review/staleness alarm. The REAL lag signal is NOT the per-product
   // `cached` flag (Zepto leaves it false even when serving a stale MongoDB snapshot) — it is the
@@ -489,6 +605,7 @@ if (require.main === module) (async () => {
     pincodes_total: PINCODES.length,
     pincodes_serviceable: perPin.filter(p => p.serviceable).length,
     pincodes_with_jivo: perPin.filter(p => p.rows.length > 0).length,
+    pincodes_blocked: perPin.filter(p => p.blocked || p.partial_block).length,
     total_rows: allRows.length,
     unique_skus: new Set(allRows.map(r => r.canonical)).size,
     rows_in_stock: allRows.filter(r => r.in_stock).length,
@@ -496,6 +613,7 @@ if (require.main === module) (async () => {
     rows_seed_pdp: allRows.filter(r => r.source === 'pdp_seed').length,
     skus_via_seed: new Set(allRows.filter(r => r.source === 'pdp_seed').map(r => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
+    partial,
     captured_at: new Date().toISOString(),
     marketplace: MARKETPLACE,
     freshness: {
@@ -509,6 +627,6 @@ if (require.main === module) (async () => {
     },
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
-  fs.writeFileSync(OUTFILE, JSON.stringify({ summary, perPin, allRows }, null, 2));
+  fs.writeFileSync(OUTFILE, JSON.stringify({ summary, perPin, allRows, partial }, null, 2));
   console.log(JSON.stringify(summary));
 })();
