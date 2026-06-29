@@ -40,19 +40,23 @@ cat platforms/blinkit/result.json | python3 -m json.tool | head   # raw data
 ls output/                  # the Excel
 ```
 
-### Per-pincode coverage mode (Wave 1: blinkit / zepto / flipkart-minutes)
-True per-pincode ground truth over the 25-city universe (1,885 pincodes), opt-in and non-breaking:
+### Per-pincode coverage modes (Wave 1: blinkit / zepto / flipkart-minutes)
+True per-pincode ground truth over the 25-city universe (1,885 pincodes). **Three modes, gated, non-breaking** (flag unset = old anchor `pincodes.json`, untouched):
 ```bash
-# full 1,885-pincode coverage for one QC platform (default OFF = anchor pincodes.json, unchanged):
-COVERAGE_FULL=1 ./run.sh zepto
-# or a subset (e.g. just the zero-cities) — relative path is auto-normalized:
+# DAILY (the cron now uses this): only pincodes where Jivo is on sale — blinkit 486 / zepto 693 / fkm 340
+COVERAGE_DAILY=1 ./run.sh blinkit            # uses platforms/<p>/pincodes.daily.json
+# FULL census: every one of the 1,885 pincodes (weekly / discovery)
+COVERAGE_FULL=1 ./run.sh zepto               # uses platforms/<p>/pincodes.full25.json
+# subset (relative path auto-normalized):
 COVERAGE_FULL=1 PINCODES_FILE=platforms/zepto/pincodes.zerocities.json ./run.sh zepto
 python3 tools/coverage/coverage_report.py $(date +%F)   # honest per-city x per-platform matrix
 ```
-- Configs: `platforms/<p>/pincodes.full25.json` (regen: `python3 tools/pincodes/gen_full_configs.py`). NEVER edit `pincodes.json` (anchor = rollback).
+- **The daily cron (`deadline_sweep 12:00`) now runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) → QC scrapes the Jivo-priced subsets, NOT anchors. Amazon platforms have no `pincodes.daily.json` → stay on anchors. Rollback: `crontab -e`, remove `COVERAGE_DAILY=1` (backup in `backups/crontab.pre-daily-coverage.*`).
+- **Daily set goes stale** unless refreshed: a **weekly `COVERAGE_FULL` pass** rebuilds `pincodes.daily.json` (= price_captured pincodes from the fresh census). Regenerate the daily configs from the ledger after a full run.
+- Configs: `pincodes.daily.json` (daily) · `pincodes.full25.json` (full; regen `python3 tools/pincodes/gen_full_configs.py`). NEVER edit `pincodes.json` (anchor = rollback).
 - Ledger: `data/coverage/ledger.csv` — status per `(platform,pincode)`: `price_captured|serviceable_no_jivo|not_serviceable|error`.
-- Scrapers are hardened: checkpoint/resume (`.progress.<date>.json`), polite block-backoff (no evasion), partial-run tolerance. ⚠️ The `.progress.<date>.json` checkpoint is shared per-date — delete it (`rm platforms/<p>/.progress.*.json`) before a fresh full run if the cron's anchor run already populated it that day.
-- Amazon = Wave 2 (2 dedicated accounts pending). Spec/plan: `docs/superpowers/specs|plans/2026-06-29-coverage-expansion-*`.
+- Scrapers hardened: checkpoint/resume (`.progress.<date>.json`), polite block-backoff (no evasion), partial-run tolerance. ⚠️ `.progress.<date>.json` is shared per-date — `rm platforms/<p>/.progress.*.json` before a fresh full run if the cron already populated it that day.
+- **Amazon Wave 2** (fresh=acct 259, now=acct 520 — **kept strictly separate, never summed/co-scraped**): full per-pincode via `tools/coverage/amazon_chunked.sh <p>` (per-city resilient resume) → `amazon_merge.py` → `amazon_ledger.py`. Must NOT run while the cron scrapes Amazon (account-global location clobbers); see `tools/cron/babysit_20260630.sh`.
 
 ## Add a new platform (the workflow)
 1. `cp -r platforms/blinkit platforms/<new>` and read `platforms/<new>/SKILL.md`
@@ -82,6 +86,8 @@ history, and review verdicts/baselines are what get committed each run. In `run_
 scrape is then re-evaluated by the **guardian auto-heal** (below).
 
 ## Cron (IST) — DEADLINE-ALIGNED (owner requirement 2026-06-06)
+> **2026-06-30: the daily batch now runs `COVERAGE_DAILY=1`** — QC platforms scrape the Jivo-priced per-pincode subsets (blinkit 486 / zepto 693 / fkm 340) instead of anchors. Amazon stays on anchors (no daily config). First-run review may flag `SUSPECT` (row-count vs old baseline; non-blocking) until baselines are rescaled.
+
 Reports must all **LAND at the slot time (12:00 + 15:00 IST)** — the morning slot moved
 10:00→12:00 per the owner's 2026-06-06 order (crontab.proposed.txt; install = lead). The
 system is **LIVE and PROVEN as of 2026-06-06**: the first two real batches landed at exactly
