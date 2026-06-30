@@ -34,6 +34,20 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
+// ---- COMPETITOR_MODE (env-gated, ADDITIVE — mirrors platforms/blinkit/scrape.js) -------
+// Everything competitor-related activates ONLY when process.env.COMPETITOR_MODE === '1'.
+// When it is unset, COMPETITOR_MODE is false, every const/helper below collapses to a
+// harmless default (null / {} / []), and NONE of the competitor branches execute — so the
+// scraper's k=jivo query, isJivo-only filter, login/session/per-pincode-location/ASIN-recall
+// logic and result.json output stay byte-for-byte unchanged. Competitor data is written ONLY
+// under tools/competitor/ (never under data/ vault/ reviews/ baselines/). The competitor path
+// keeps the SAME almBrandId=ctnow storefront gate and the SAME per-pincode GLOW location set as
+// the jivo path; it only widens the search to the oil-category terms and swaps the isJivo filter
+// for a brand whitelist. Filenames never start with "Jivo-" (the mailer auto-emails those).
+const COMPETITOR_MODE = process.env.COMPETITOR_MODE === '1';
+const COMP_DIR = path.join(__dirname, '..', '..', 'tools', 'competitor');
+const COMP_DATE = process.env.COMPETITOR_DATE || new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+
 const PFILE = process.env.PINCODES_FILE || path.join(__dirname, 'pincodes.json');
 const OUTFILE = process.env.OUT_FILE || path.join(__dirname, 'result.json');
 const STATE = path.join(__dirname, 'secrets', 'amazon-now.storageState.json');
@@ -120,6 +134,167 @@ function numPrice(s) {
   const n = parseFloat(String(s).replace(/[^\d.]/g, ''));
   return Number.isFinite(n) ? n : null;
 }
+
+// ======================= COMPETITOR_MODE helpers (env-gated) =======================
+// All of the following are pure helpers + module-level constants used ONLY by the
+// competitor branch. None run / mutate anything when COMPETITOR_MODE is unset.
+// Mirrors platforms/blinkit/scrape.js so the competitor report reads amazon-now
+// identically to blinkit/zepto.
+function escRe(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+
+// Brand whitelist regex, resolved from (in order): tools/competitor/competitor_brands.json
+// (accepts a raw regex string, {regex|whitelist_regex:"..."}, an array of brands, or
+// {brands:[...]}), then env COMPETITOR_BRANDS (comma list), then a sane edible-oil default.
+function loadCompetitorRegex() {
+  const def = ['jivo', 'fortune', 'saffola', 'dhara', 'gemini', 'sundrop', 'figaro', 'nature fresh',
+    'emami healthy', 'patanjali', 'dalda', 'freedom', 'sweekar', 'postman', 'gold ?drop', 'gold ?winner',
+    'ricela', 'borges', 'disano', 'del monte', 'oleev', 'kohinoor', 'mahakosh', 'engine', 'p mark',
+    'gagan', 'scoop', 'rasoi', 'ktc', 'aashirvaad', 'tata'];
+  try {
+    const f = path.join(COMP_DIR, 'competitor_brands.json');
+    if (fs.existsSync(f)) {
+      const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+      if (typeof j === 'string' && j.trim()) return new RegExp(j, 'i');
+      // Preferred: a ready-made regex string (this file ships `whitelist_regex`).
+      const rgx = j && (j.regex || j.whitelist_regex);
+      if (typeof rgx === 'string' && rgx.trim()) return new RegExp(rgx, 'i');
+      // Else build one from a brand list — entries may be plain strings OR
+      // {brand, aliases:[...]} objects; also fold in any `ours` (Jivo/Sano).
+      const list = Array.isArray(j) ? j : (j && Array.isArray(j.brands) ? j.brands : null);
+      if (list && list.length) {
+        const terms = [];
+        for (const b of list) {
+          if (typeof b === 'string') terms.push(b);
+          else if (b && typeof b === 'object') {
+            if (b.brand) terms.push(b.brand);
+            if (Array.isArray(b.aliases)) for (const a of b.aliases) if (a) terms.push(a);
+          }
+        }
+        if (j && Array.isArray(j.ours)) for (const o of j.ours) if (o) terms.push(o);
+        const uniq = Array.from(new Set(terms.filter(Boolean)));
+        if (uniq.length) return new RegExp('(' + uniq.map(escRe).join('|') + ')', 'i');
+      }
+    }
+  } catch (e) { process.stderr.write(`[comp] competitor_brands.json load failed (${e.message}); using fallback list\n`); }
+  if (process.env.COMPETITOR_BRANDS) {
+    const list = process.env.COMPETITOR_BRANDS.split(',').map((s) => s.trim()).filter(Boolean);
+    if (list.length) return new RegExp('(' + list.map(escRe).join('|') + ')', 'i');
+  }
+  return new RegExp('(' + def.join('|') + ')', 'i');
+}
+
+// Category query terms, from tools/competitor/category_queries.json (array, {queries:[...]},
+// or a {term: category} map -> its keys), then env COMPETITOR_QUERIES, then the 8 oil defaults.
+function loadCategoryQueries() {
+  const def = ['olive oil', 'mustard oil', 'sunflower oil', 'canola oil', 'rice bran oil',
+    'groundnut oil', 'soyabean oil', 'blended oil'];
+  try {
+    const f = path.join(COMP_DIR, 'category_queries.json');
+    if (fs.existsSync(f)) {
+      const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+      if (Array.isArray(j)) return j.filter(Boolean);
+      if (j && Array.isArray(j.queries)) return j.queries.filter(Boolean);
+      if (j && typeof j === 'object') return Object.keys(j).filter(Boolean);
+    }
+  } catch (e) { process.stderr.write(`[comp] category_queries.json load failed (${e.message}); using fallback list\n`); }
+  if (process.env.COMPETITOR_QUERIES) return process.env.COMPETITOR_QUERIES.split(',').map((s) => s.trim()).filter(Boolean);
+  return def;
+}
+
+// Optional explicit {query: category} map (only when category_queries.json is such an object).
+function loadCategoryMap() {
+  try {
+    const f = path.join(COMP_DIR, 'category_queries.json');
+    if (fs.existsSync(f)) {
+      const j = JSON.parse(fs.readFileSync(f, 'utf8'));
+      if (j && !Array.isArray(j) && typeof j === 'object' && !Array.isArray(j.queries)) {
+        const m = {};
+        for (const k of Object.keys(j)) if (typeof j[k] === 'string') m[k.toLowerCase()] = j[k];
+        return m;
+      }
+    }
+  } catch (_) { /* fall through to empty map */ }
+  return {};
+}
+
+// Brand label = the whitelist substring actually present in the product name.
+function deriveBrand(name) {
+  if (!COMPETITOR_RE) return '';
+  const m = (name || '').match(COMPETITOR_RE);
+  return m ? m[0].replace(/\s+/g, ' ').trim() : '';
+}
+
+// Category from the explicit map, else keyword-scan name then query term.
+function deriveCategory(term, name) {
+  const t = (term || '').toLowerCase();
+  const n = (name || '').toLowerCase();
+  if (CATEGORY_MAP[t]) return CATEGORY_MAP[t];
+  const cats = [
+    [/mustard|kachi ghani|sarso/, 'mustard oil'],
+    [/sunflower/, 'sunflower oil'],
+    [/soya|soybean|soyabean/, 'soyabean oil'],
+    [/groundnut|peanut/, 'groundnut oil'],
+    [/rice ?bran/, 'rice bran oil'],
+    [/olive/, 'olive oil'],
+    [/canola/, 'canola oil'],
+    [/sesame|gingelly|til\b/, 'sesame oil'],
+    [/coconut/, 'coconut oil'],
+    [/ghee/, 'ghee'],
+    [/double refined|refined/, 'refined oil'],
+    [/blend/, 'blended oil'],
+    [/vegetable/, 'vegetable oil'],
+  ];
+  for (const [re, c] of cats) { if (re.test(n) || re.test(t)) return c; }
+  return (t && t !== 'jivo') ? t : 'edible oil';
+}
+
+// Light sub-grade extraction from the product name (best-effort; '' when none found).
+function deriveSubGrade(name) {
+  const n = (name || '').toLowerCase();
+  const grades = [
+    [/extra virgin/, 'extra virgin'],
+    [/virgin/, 'virgin'],
+    [/double refined/, 'double refined'],
+    [/kachi ghani|cold ?press|wood ?press|wooden ?press|ghani/, 'cold pressed'],
+    [/filtered/, 'filtered'],
+    [/refined/, 'refined'],
+    [/pomace/, 'pomace'],
+    [/light/, 'light'],
+  ];
+  for (const [re, g] of grades) if (re.test(n)) return g;
+  return '';
+}
+
+// Pack unit family for the contract: 'g' when the pack is mass-only (g/kg), else 'ml'.
+function packUnit(pack) {
+  const s = (pack || '').toLowerCase();
+  const hasLiquid = /\d[\d.]*\s*(?:ml|l|ltr|litre)\b/.test(s);
+  const hasMass = /\d[\d.]*\s*(?:kg|g)\b/.test(s);
+  return (hasMass && !hasLiquid) ? 'g' : 'ml';
+}
+
+// vol in ML for the competitor contract: grams -> volume via oil density (ghee 0.91,
+// other oils 0.916); liquids pass straight through. parseVolMl already handles combos.
+function competitorVolMl(pack, isGhee) {
+  const raw = parseVolMl(pack);
+  if (raw == null) return null;
+  if (packUnit(pack) === 'g') return Math.round((raw / (isGhee ? 0.91 : 0.916)) * 100) / 100;
+  return raw;
+}
+
+// Competitor canonical = brand-tagged version of the jivo-path canonical(name, pack). brand is
+// folded into the id so a competitor and a JIVO SKU of the same name+pack never collapse.
+function competitorCanonical(name, pack, brand) {
+  const base = canonical(name, pack);
+  const brandTag = brand ? (String(brand).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') + '-') : '';
+  return `${brandTag}${base}`.replace(/--+/g, '-');
+}
+
+// Built once at module load; only populated when COMPETITOR_MODE is on.
+const COMPETITOR_RE = COMPETITOR_MODE ? loadCompetitorRegex() : null;
+const CATEGORY_MAP = COMPETITOR_MODE ? loadCategoryMap() : {};
+const COMPETITOR_TERMS = COMPETITOR_MODE ? Array.from(new Set(['jivo', ...loadCategoryQueries()])) : [];
+// ===================== end COMPETITOR_MODE helpers =====================
 
 // Normalise the speed badge into a tier label. '' = no Now badge (marketplace, not Now).
 function nowTier(badge, deliv) {
@@ -232,6 +407,46 @@ function toRow(card, rec) {
     now_eta: nowTier(card.badge, card.deliv),
     category: prod ? (prod.category || prod.item) : null,
     in_stock: card.oos ? 0 : 1,
+  };
+}
+
+// COMPETITOR row builder (env-gated; used ONLY by the competitor branch). Emits the SHARED
+// competitor contract (identical field set to blinkit/zepto) so the competitor report reads it.
+// Parses price/MRP/pack/in_stock the SAME way the jivo toRow() path does. brand is derived from
+// the title via the whitelist regex; category is tagged from the query term + title.
+function competitorToRow(card, rec, term, rank) {
+  const prod = PRODUCTS[card.asin];
+  // Strip any "Sponsored …" lead-in so the brand sits at the front, exactly like toRow().
+  const fullTitle = (card.title || (prod && prod.name) || card.asin).replace(/\s+/g, ' ').trim();
+  const name = fullTitle.split('|')[0].replace(/\s+/g, ' ').trim();
+  const pack = packFromTitle(name) || packFromTitle(fullTitle) || (prod && prod.pack ? prod.pack.toLowerCase() : '');
+  const sale = numPrice(card.price);
+  let mrp = numPrice(card.mrp);
+  if (mrp != null && sale != null && mrp < sale) mrp = null;
+  const brand = deriveBrand(name) || deriveBrand(fullTitle);
+  const category = deriveCategory(term, name);
+  const subGrade = deriveSubGrade(name);
+  const isGhee = /ghee/i.test(name) || /ghee/i.test(category);
+  const unit = packUnit(pack);
+  const volMl = competitorVolMl(pack, isGhee);
+  // ad/sponsored detector: standalone "Ad"/"sponsored" only (won't match an "ADD" button).
+  const blob = `${fullTitle} ${card.badge || ''} ${card.deliv || ''}`;
+  const isAd = (/\bsponsored\b/i.test(blob) || /(^|[^a-z])ad([^a-z]|$)/i.test(blob)) ? 1 : 0;
+  return {
+    platform: 'amazon-now',
+    city: rec.city, pincode: rec.pincode,
+    store_id: '', store_name: 'Amazon Now',
+    brand, name, canonical: competitorCanonical(name, pack, brand),
+    category, sub_grade: subGrade,
+    pack: pack || '', vol_ml: volMl, unit,
+    per_litre: volMl ? Math.round((sale / (volMl / 1000)) * 100) / 100 : null,
+    mrp, sale,
+    discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : null,
+    in_stock: card.oos ? 0 : 1,
+    rank: rank || null,
+    is_ad: isAd,
+    captured_at: new Date().toISOString(),
+    asin: card.asin,
   };
 }
 
