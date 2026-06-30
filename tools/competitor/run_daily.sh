@@ -2,10 +2,14 @@
 # Daily competitor price-watch (quick-commerce): Blinkit + Zepto across the 25-pin set,
 # then build the per-platform + combined Excel reports.
 #
-# Scheduled at 02:00 IST -- a clean window with NO JIVO q-commerce scraping running
-# (the JIVO deadline sweep finishes by 12:00 noon the previous day; BigBasket runs 03:00).
-# This is NOT the JIVO revenue pipeline and shares none of its state. FKM is excluded until
-# its logged-in browser path is validated.
+# Scheduled at 12:15 IST -- RIGHT AFTER the JIVO noon batch finishes (run_all "DONE" ~12:02),
+# so competitor prices are captured within ~15 min of the JIVO prices for a same-time,
+# apples-to-apples comparison (vs a ~10h gap if run overnight). It must run AFTER, never
+# DURING, the JIVO sweep: both scrape blinkit+zepto from the same VPS IP, so concurrent runs
+# would double the request rate and risk a bot soft-block on BOTH datasets. The sweep-lock
+# guard below enforces this -- if the JIVO sweep is somehow still scraping at 12:15 (a late
+# batch), this run skips itself rather than contend. NOT the JIVO pipeline; shares no state.
+# FKM excluded until its logged-in browser path is validated.
 #
 # GUARDRAILS: capture lands only under tools/competitor/data; reports under output/ with the
 # "Competitor-Price-Watch-" prefix (the daily mailer only globs "Jivo-*.xlsx", so these are
