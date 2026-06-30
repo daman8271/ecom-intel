@@ -31,6 +31,8 @@ vault/.obsidian/workspace-mobile.json
 
 # whatsapp tool debug dumps — leak group JIDs / pairing code / phone numbers
 tools/whatsapp/*.out
+# instamart MCP validation dumps — runtime noise, regenerated on demand
+platforms/instamart/validation/*.out
 # bigbasket recon captures — large, and header_api.json embeds account/session context
 platforms/bigbasket/header_api.json
 platforms/bigbasket/listing_raw.json
