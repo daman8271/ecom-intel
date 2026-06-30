@@ -1,0 +1,235 @@
+---
+type: pricematch-sku
+sku: RICE BRAN 5L
+canonical_sku: jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-5l
+platforms:
+  - amazon
+  - amazon-fresh
+  - amazon-now
+  - bigbasket
+  - blinkit
+  - flipkart
+  - flipkart-minutes
+  - zepto
+first_seen: 2026-06-08
+last_seen: 2026-06-30
+observations: 184
+latest_status: NOT_LISTED
+below_days: 13
+tags:
+  - type/pricematch-sku
+  - platform/amazon
+  - platform/amazon-fresh
+  - platform/amazon-now
+  - platform/bigbasket
+  - platform/blinkit
+  - platform/flipkart
+  - platform/flipkart-minutes
+  - platform/zepto
+---
+
+# Price match — RICE BRAN 5L
+
+Up: [[Price-Match-MOC]]
+
+SKU memory: [[jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-5l]]
+
+## Sold on
+[[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
+
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-30) — ref ₹959 vs live ₹-
+- **Days below reference:** 13 of 23
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-29]]
+
+## Ref-vs-live history (184 observations)
+
+```csv
+date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
+2026-06-08,amazon,BELOW,BAU,959,909,909,909,-50,-5.21,1,true
+2026-06-08,amazon-fresh,BELOW,BAU,959,909,909,909,-50,-5.21,70,true
+2026-06-08,amazon-now,BELOW,BAU,959,909,909,909,-50,-5.21,17,true
+2026-06-08,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-08,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-08,flipkart,ABOVE,BAU,959,1033,1033,1033,74,7.72,0,true
+2026-06-08,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-08,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-09,amazon,BELOW,BAU,959,909,909,909,-50,-5.21,1,true
+2026-06-09,amazon-fresh,BELOW,BAU,959,909,909,909,-50,-5.21,71,true
+2026-06-09,amazon-now,BELOW,BAU,959,909,909,909,-50,-5.21,18,true
+2026-06-09,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-09,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-09,flipkart,ABOVE,BAU,959,1033,1033,1033,74,7.72,0,true
+2026-06-09,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-09,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-10,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-10,amazon-fresh,BELOW,BAU,959,940,909,959,-19,-1.98,42,true
+2026-06-10,amazon-now,BELOW,BAU,959,940,909,959,-19,-1.98,16,true
+2026-06-10,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-10,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-10,flipkart,ABOVE,BAU,959,1033,1033,1033,74,7.72,0,true
+2026-06-10,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-10,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-11,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-11,amazon-fresh,MATCH,BAU,959,959,909,989,0,0,37,true
+2026-06-11,amazon-now,BELOW,BAU,959,940,909,959,-19,-1.98,16,true
+2026-06-11,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-11,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-11,flipkart,ABOVE,BAU,959,1033,1033,1033,74,7.72,0,true
+2026-06-11,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-11,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-12,amazon,ABOVE,SVD,909,959,959,959,50,5.5,0,true
+2026-06-12,amazon-fresh,ABOVE,SVD,909,959,909,959,50,5.5,0,true
+2026-06-12,amazon-now,ABOVE,SVD,909,940,909,959,31,3.41,0,true
+2026-06-12,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-12,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-12,flipkart,ABOVE,SVD,909,1033,1033,1033,124,13.64,0,true
+2026-06-12,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-12,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-13,amazon,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-13,amazon-fresh,MATCH,SVD,909,909,909,959,0,0,0,true
+2026-06-13,amazon-now,ABOVE,SVD,909,940,909,959,31,3.41,0,true
+2026-06-13,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-13,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-13,flipkart,ABOVE,SVD,909,996,996,996,87,9.57,0,true
+2026-06-13,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-13,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-14,amazon,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-14,amazon-fresh,MATCH,SVD,909,909,909,959,0,0,0,true
+2026-06-14,amazon-now,ABOVE,SVD,909,935,909,959,26,2.86,0,true
+2026-06-14,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-14,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-14,flipkart,ABOVE,SVD,909,950,950,950,41,4.51,0,true
+2026-06-14,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-14,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-15,amazon,BELOW,BAU,959,909,909,909,-50,-5.21,1,true
+2026-06-15,amazon-fresh,BELOW,BAU,959,909,909,940,-50,-5.21,90,true
+2026-06-15,amazon-now,BELOW,BAU,959,940,909,940,-19,-1.98,15,true
+2026-06-15,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-15,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-15,flipkart,BELOW,BAU,959,950,950,950,-9,-0.94,1,true
+2026-06-15,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-15,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-16,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-16,amazon-fresh,MATCH,BAU,959,959,909,959,0,0,40,true
+2026-06-16,amazon-now,BELOW,BAU,959,940,909,959,-19,-1.98,12,true
+2026-06-16,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-16,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-16,flipkart,BELOW,BAU,959,950,950,950,-9,-0.94,1,true
+2026-06-16,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-16,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-17,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-17,amazon-fresh,MATCH,BAU,959,959,909,959,0,0,36,true
+2026-06-17,amazon-now,BELOW,BAU,959,940,909,959,-19,-1.98,13,true
+2026-06-17,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-17,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-17,flipkart,ABOVE,BAU,959,1033,1033,1033,74,7.72,0,true
+2026-06-17,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-17,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-18,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-18,amazon-fresh,MATCH,BAU,959,959,940,959,0,0,32,true
+2026-06-18,amazon-now,BELOW,BAU,959,940,940,959,-19,-1.98,12,true
+2026-06-18,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-18,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-18,flipkart,ABOVE,BAU,959,1106,1106,1106,147,15.33,0,true
+2026-06-18,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-18,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-19,amazon,ABOVE,SVD,909,959,959,959,50,5.5,0,true
+2026-06-19,amazon-fresh,ABOVE,SVD,909,959,940,959,50,5.5,0,true
+2026-06-19,amazon-now,ABOVE,SVD,909,940,940,959,31,3.41,0,true
+2026-06-19,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-19,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-19,flipkart,ABOVE,SVD,909,1008,1008,1008,99,10.89,0,true
+2026-06-19,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-19,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-20,amazon,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-20,amazon-fresh,MATCH,SVD,909,909,909,959,0,0,0,true
+2026-06-20,amazon-now,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-20,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-20,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-20,flipkart,ABOVE,SVD,909,1047,1047,1047,138,15.18,0,true
+2026-06-20,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-20,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-21,amazon,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-21,amazon-fresh,MATCH,SVD,909,909,909,959,0,0,0,true
+2026-06-21,amazon-now,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-21,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-21,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-21,flipkart,ABOVE,SVD,909,951,951,951,42,4.62,0,true
+2026-06-21,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-21,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-22,amazon,BELOW,BAU,959,909,909,909,-50,-5.21,1,true
+2026-06-22,amazon-fresh,BELOW,BAU,959,909,909,959,-50,-5.21,54,true
+2026-06-22,amazon-now,BELOW,BAU,959,909,909,909,-50,-5.21,24,true
+2026-06-22,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-22,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-22,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
+2026-06-22,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-22,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-23,amazon,BELOW,BAU,959,909,909,909,-50,-5.21,1,true
+2026-06-23,amazon-fresh,BELOW,BAU,959,909,909,959,-50,-5.21,71,true
+2026-06-23,amazon-now,BELOW,BAU,959,945,909,959,-14,-1.46,23,true
+2026-06-23,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-23,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-23,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
+2026-06-23,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-23,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-24,amazon-fresh,MATCH,BAU,959,959,909,959,0,0,13,true
+2026-06-24,amazon-now,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-24,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
+2026-06-24,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-24,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-25,amazon-fresh,MATCH,BAU,959,959,909,959,0,0,12,true
+2026-06-25,amazon-now,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-25,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,flipkart,BELOW,BAU,959,951,951,951,-8,-0.83,1,true
+2026-06-25,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-25,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-26,amazon,ABOVE,SVD,909,959,959,959,50,5.5,0,true
+2026-06-26,amazon-fresh,MATCH,SVD,909,909,909,959,0,0,0,true
+2026-06-26,amazon-now,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-26,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-26,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-26,flipkart,ABOVE,SVD,909,951,951,951,42,4.62,0,true
+2026-06-26,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-26,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-27,amazon,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-27,amazon-fresh,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-27,amazon-now,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-27,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-27,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-27,flipkart,ABOVE,SVD,909,1047,1047,1047,138,15.18,0,true
+2026-06-27,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-27,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-28,amazon,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-28,amazon-fresh,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-28,amazon-now,MATCH,SVD,909,909,909,909,0,0,0,true
+2026-06-28,bigbasket,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-28,blinkit,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-28,flipkart,ABOVE,SVD,909,962,962,962,53,5.83,0,true
+2026-06-28,flipkart-minutes,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-28,zepto,NOT_LISTED,SVD,909,,,,,,0,false
+2026-06-29,amazon,BELOW,BAU,959,909,909,909,-50,-5.21,1,true
+2026-06-29,amazon-fresh,BELOW,BAU,959,909,909,909,-50,-5.21,111,true
+2026-06-29,amazon-now,ABOVE,BAU,959,966,909,1014,7,0.73,9,true
+2026-06-29,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-29,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-29,flipkart,ABOVE,BAU,959,962,962,962,3,0.31,0,true
+2026-06-29,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-29,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-30,amazon,MATCH,BAU,959,959,959,959,0,0,0,true
+2026-06-30,amazon-fresh,MATCH,BAU,959,959,909,959,0,0,19,true
+2026-06-30,amazon-now,MATCH,BAU,959,959,909,959,0,0,5,true
+2026-06-30,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-30,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-30,flipkart,ABOVE,BAU,959,962,962,962,3,0.31,0,true
+2026-06-30,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-06-30,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*
