@@ -1,0 +1,21 @@
+{
+ "date": "2026-06-24",
+ "regime": "BAU",
+ "kpis": {
+  "skus_tracked": 113,
+  "platforms": 8,
+  "compliant": 50,
+  "below": 97,
+  "above": 27,
+  "oos": 117,
+  "pending": 0,
+  "not_listed": 613,
+  "exposure": 8824,
+  "listings": 904,
+  "mapped": 291,
+  "listed_skus": 113
+ },
+ "store_violations": 3125,
+ "summary_md": "*Jivo Price Match — master* 🎯\n2026-06-24 · BAU day\n🔴 Below ref: 97 listings · ₹8,824 exposure\nTop offenders: EXTRA VIRGIN 2L (Flipkart −₹467) · SANO POMACE 5L (Flipkart −₹363) · GROUNDNUT 5L (Amazon −₹356)\n🟢 Above: 27 · Match: 50 · OOS: 117 · Pending: 0\nCoverage: 113 SKUs × 8 platforms (613 not listed)",
+ "caption": "Jivo Price Match · 2026-06-24 · BAU day"
+}

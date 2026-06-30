@@ -1,0 +1,11 @@
+{
+  "name": "ecom-intel-instamart",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Swiggy Instamart price scraper for ecom-intel. curl-based (like zepto), reuses a transplanted guest session. No proxy, no browser, no fingerprint spoofing.",
+  "main": "scrape.js",
+  "scripts": {
+    "scrape": "node scrape.js"
+  },
+  "dependencies": {}
+}

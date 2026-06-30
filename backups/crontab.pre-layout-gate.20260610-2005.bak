@@ -1,0 +1,75 @@
+# doctor.crontab.txt — FULL MERGED crontab: the LIVE deadline sweeps + 18:00 guardian
+# (UNCHANGED, copied verbatim from crontab.proposed.txt) PLUS the additive "Ecom Doctor"
+# self-healing watchdog lines (daily 18:30 / weekly Sun 19:00 / monthly 1st 19:30 IST).
+#
+# This is the ONE file the LEAD installs in a single shot:   crontab tools/cron/doctor.crontab.txt
+# (Installation is the LEAD's call after W3 PASS — W3 only proposes. The doctor section is
+#  ADDITIVE: the sweep + guardian lines below are byte-for-byte the live crontab; nothing
+#  about the live pipeline changes. setup_cron.sh only touches "# ecom-intel"-tagged lines,
+#  so it stays re-runnable over this file.)
+#
+# Cron runs in system-local time = IST (the live `0 18` guardian is 18:00 IST — confirmed).
+#
+# ============================ LIVE SWEEPS + GUARDIAN (UNCHANGED) ============================
+# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY (3.5h lead window:
+# fire = slot − 3h30m, LEAD_MAX=12600). The script predicts the serial chain's
+# runtime from history (predict_lead.py), sleeps until <slot> - predicted_lead,
+# runs ./run_all.sh with DEFER_DELIVERY=1, and send_batch.py holds every
+# platform's report and delivers them as ONE batch AT the slot time ("everyone
+# comes at the timing, not starts at it"). If the chain overruns, the batch goes
+# out as soon as it's done, marked "(late by Xm)".
+
+# 12:00 IST slot — fire 08:30, sweep starts at 12:00 - predicted lead (~08:41 on today's lead), batch lands AT 12:00.
+30 8 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
+
+# 15:00 IST slot — fire 11:30, same mechanics, batch lands AT 15:00.
+30 11 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 15:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 15:00
+
+# 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
+# 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).
+0 18 * * * cd /opt/ecom-intel && ./tools/guardian_daily.sh >> logs/guardian.log 2>&1   # ecom-intel guardian-daily (paused w/ sweeps; un-pause together)
+
+# ================================ ECOM DOCTOR (ADDITIVE) ====================================
+# Self-healing watchdog. After BOTH daily sweeps have landed (12:00 + 15:00) and the 18:00
+# guardian deep-dive has run, the doctor gathers deterministic health signals
+# (tools/cron/health_snapshot.py) and — ONLY if something is wrong — invokes a bounded headless
+# Claude agent (tools/cron/doctor_prompt.md + the vetted tools/cron/safe_fixes/ menu) to
+# diagnose, auto-apply a VETTED-SAFE fix or PROPOSE-only, and ALWAYS alert the owner. It never
+# pushes, only runs when ECOM_DOCTOR_ENABLE=1 (kill switch = unset it in secrets.env), and is
+# flock-guarded so two doctors never overlap. A doctor crash can NEVER touch the sweeps above.
+#
+# WHY 18:30 daily: it must see the WHOLE day — both sweep batches (15:00 + its post-batch tail
+# done ~15:01) AND the 18:00 guardian's fresh health-<date>.md. 18:30 is the first slot strictly
+# after the guardian finishes (guardian is read-only/seconds), so the doctor reads the complete,
+# settled signal set. The headline signal it exists to catch — a platform HELD N sweeps in a row
+# (the 2-day silent flipkart/zepto false-positive hold) — is only fully visible once both of the
+# day's sweeps are in reviews/.
+30 18 * * * cd /opt/ecom-intel && ./tools/cron/doctor.sh daily >> logs/doctor.log 2>&1   # ecom-intel doctor-daily
+
+# WHY Sunday 19:00 weekly: a 7-day trend pass (held-platform frequency, recurring SUSPECT
+# reasons, prediction-vs-actual drift, coverage trends) — runs after Sunday's daily doctor
+# (18:30) so it never races it; 30m apart, both are short unless the agent is invoked (lock
+# serializes that anyway).
+0 19 * * 0 cd /opt/ecom-intel && ./tools/cron/doctor.sh weekly >> logs/doctor.log 2>&1   # ecom-intel doctor-weekly
+
+# WHY 1st 19:30 monthly: a 30-day rollup — runs after the daily (18:30) and (when the 1st is a
+# Sunday) after the weekly (19:00), each 30m apart and lock-serialized so they never overlap.
+30 19 1 * * cd /opt/ecom-intel && ./tools/cron/doctor.sh monthly >> logs/doctor.log 2>&1   # ecom-intel doctor-monthly
+
+# ===========================================================================================
+# OVERLAP / SAFETY NOTES (doctor lines)
+# - The three doctor lines are mutually exclusive in practice (18:30 / 19:00 / 19:30, ≥30m
+#   apart) and additionally serialized by logs/.doctor.lock (flock -n in doctor.sh) — a long
+#   agent run from the daily can never be clobbered by the weekly/monthly; the later one logs
+#   "another doctor holds the lock" and exits.
+# - All three run in the EVENING (18:30–19:30), well clear of the sweep chains (morning chain
+#   ~08:41–11:06, afternoon ~11:39–14:02) and the 18:00 guardian (read-only, seconds). No
+#   sweep/guardian overlap by construction.
+# - The doctor reads artifacts only and (when it acts) calls vetted safe_fixes/ scripts that are
+#   themselves lock-guarded (sweep-chain / amazon-account / .heal-<p>) and refuse during a live
+#   sweep window — so even a safe-fix re-run can't collide with a sweep.
+# - doctor.sh is fully fail-safe: if ECOM_DOCTOR_ENABLE!=1 it no-ops; any internal error still
+#   fires an owner alert and exits 0; it has no path that can abort or modify the sweep crons.
+#
+# Dropped vs the live crontab: nothing. This file is the live crontab + the 3 doctor lines.
+# ===========================================================================================

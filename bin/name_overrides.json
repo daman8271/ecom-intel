@@ -1,0 +1,17 @@
+{
+  "_doc": "Curated identity-correction layer for the JIVO Data Bank. Applied by combined_backbone.py BEFORE product grouping, so a renamed product collapses into the correct node via the existing twin-merge logic (union of SAP codes + canonical listings). This is OUR authority over upstream name errors (SAP-master typos, ecom listing-name drift) that we cannot fix at the source. Every entry MUST document evidence. Each rename is fully reversible: delete the line and rebuild. Pure name->name; the merge target is whatever node the new name normalizes to.",
+  "_applied_by": "/opt/ecom-intel/bin/combined_backbone.py (LOAD INPUTS section)",
+  "rename": {
+    "DESI GHEE 500KG": {
+      "to": "DESI GHEE 500ML",
+      "confidence": "certain",
+      "why": "Upstream JIVO SAP-master typo. SAP SL0000090's own app note (sku-SL0000090.md) reads 'JIVO DESI GHEE 500 ML 1 PCS' with per_unit_value 0.5 (=500ML), and the 3 ecom canonicals all say '...500ml'. '500KG' is impossible for a retail ghee jar. Normalizes to DESIGHEE500G and merges with FG0000352 'DESI GHEE 500GM' (identical 3 canonicals) -> one product, two SAPs [FG0000352, SL0000090]. Final display: 'DESI GHEE 500GM'."
+    },
+    "JIVO WATER 1L": {
+      "to": "WATER 1L",
+      "confidence": "high",
+      "why": "Ecom listing-name duplicate of the JIVO SAP master FG0000266 'WATER 1L' (both 1L plain mineral water, shared canonicals jivo-natural-mineral-1l-1l + jivo-natural-minerals-water-mineral-water-1l). 'JIVO WATER 1L' is a SAP-less node = the unmatched listing spelling. Fold into the master. Reversible; flagged for owner confirm in identity/REGISTRY.md."
+    }
+  },
+  "_deferred_review": "16 duplicate-identity clusters were detected by combined_identity.py's collision scan; only the 2 airtight/high cases above are auto-corrected. The rest (incl. combo-vs-single packs like 'CANOLA 1+1+1L' vs 'CANOLA 3L' which must NOT be merged) are surfaced in identity/REGISTRY.md under 'Identity Conflicts' for human adjudication."
+}

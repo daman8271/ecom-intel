@@ -174,42 +174,6 @@ core_list = bridge["core"]
 new_confirmed = bridge["new_confirmed"]
 core_matches = json.load(open(MATCH_F))          # name -> {platform: canonical}
 jivo_skus = json.load(open(JSKU_F))              # SAP -> name
-
-# ---- curated identity-correction layer (OUR authority over upstream name errors) ----
-# Applied BEFORE grouping so a renamed product collapses into the correct node via the
-# EXISTING twin-merge (union of SAP codes + canonical listings). Fixes upstream SAP-master
-# typos / ecom listing-name drift we cannot fix at the source. See name_overrides.json.
-# Fully reversible: remove an entry and rebuild. Pure name->name.
-_OVR_F = os.path.join(os.path.dirname(os.path.abspath(__file__)), "name_overrides.json")
-RENAME = {}
-if os.path.exists(_OVR_F):
-    try:
-        _ovr = json.load(open(_OVR_F))
-        RENAME = {k: v["to"] for k, v in _ovr.get("rename", {}).items()
-                  if isinstance(v, dict) and v.get("to")}
-    except Exception as _e:                       # never let a bad override file break the build
-        print(f"[override] WARN could not load {_OVR_F}: {_e}", file=sys.stderr)
-
-def _ren(nm):
-    return RENAME.get(nm, nm)
-
-def _rename_keys(d, mergefn):
-    """Rename dict keys via RENAME, merging values when two keys collide post-rename."""
-    out = {}
-    for k, v in d.items():
-        nk = _ren(k)
-        out[nk] = v if nk not in out else mergefn(out[nk], v)
-    return out
-
-if RENAME:
-    jivo_skus = {sap: _ren(nm) for sap, nm in jivo_skus.items()}
-    core_list = [_ren(n) for n in core_list]
-    core_matches = _rename_keys(core_matches, lambda a, b: {**a, **b})              # name->{plat:canon}
-    new_confirmed = _rename_keys(new_confirmed,
-                                 lambda a, b: list(dict.fromkeys(list(a) + list(b))))  # name->[canon]
-    print(f"[override] applied {len(RENAME)} rename(s): "
-          + "; ".join(f"{k} -> {v}" for k, v in RENAME.items()), file=sys.stderr)
-
 name2saps = collections.defaultdict(list)
 for sap, nm in jivo_skus.items():
     name2saps[nm].append(sap)

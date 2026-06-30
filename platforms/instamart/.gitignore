@@ -1,0 +1,7 @@
+node_modules/
+secrets/
+result.json
+result.last-good.json
+*.hdr
+*.tmp
+._*

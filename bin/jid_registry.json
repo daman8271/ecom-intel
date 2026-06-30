@@ -1,0 +1,2202 @@
+{
+  "_doc": "OUR own append-only internal product-ID registry for the JIVO Data Bank. JID = opaque immutable serial per physical product, bridging price-match / ecom-app / factory names via SAP code(s) and ecom canonical listing(s). Managed by bin/combined_identity.py. Never hand-edit JIDs.",
+  "entries": {
+    "JID-0001": {
+      "canons": [
+        "jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-5l",
+        "edoftx47swwqprvs",
+        "jivo-cold-pressed-canola-oil-5-litre-5l",
+        "jivo-canola-cold-pressed-edible-oil-cooking-oil-5l",
+        "jivo-cold-pressed-canola-oil-5l",
+        "canola-oil-cold-pressed-5l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 5L",
+      "norm": "CANOLA5L",
+      "saps": [
+        "FG0000004",
+        "FG0000118",
+        "SL0000018"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0002": {
+      "canons": [
+        "jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-cooking-dressings-salad-soups-dips-and-marinades-all-culinary-uses-light-flavorful-high-mufa-rich-in-antioxidants-1l",
+        "edoge5whzbgw4ska",
+        "jivo-extra-light-olive-oil-1-litre-1l",
+        "jivo-extra-light-olive-oil-1l",
+        "extra-light-olive-oil-1l"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA LIGHT 1L",
+      "norm": "EXTRALIGHT1L",
+      "saps": [
+        "FG0000005"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0003": {
+      "canons": [
+        "jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-from-spain-recommended-for-roasting-frying-and-baking-all-types-of-cuisines-rich-in-mufa-low-in-saturated-fat-5l",
+        "edoge5xhfzn2hz9d",
+        "jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l",
+        "jivo-pomace-olive-oil-tin-5l",
+        "jivo-pomace-olive-oil-5l"
+      ],
+      "category": "OLIVE",
+      "name": "JIVO POMACE 5L",
+      "norm": "JIVOPOMACE5L",
+      "saps": [
+        "FG0000008"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0004": {
+      "canons": [
+        "jivo-extra-light-olive-oil-5-litre-tin-imported-from-spain-recommendable-daily-cooking-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-5l",
+        "edofzfufcqdjhtqf"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA LIGHT 5L",
+      "norm": "EXTRALIGHT5L",
+      "saps": [
+        "FG0000009"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0005": {
+      "canons": [
+        "jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-5l",
+        "edoh9phgzg9h4gvt",
+        "jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l",
+        "jivo-cold-pressed-pure-cooking-mustard-oil-can-5l",
+        "jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l",
+        "jivo-kachi-ghani-cold-pressed-mustard-oil-5l",
+        "cold-press-kachi-ghani-mustard-oil-5l"
+      ],
+      "category": "MUSTARD",
+      "name": "MUSTARD 5L",
+      "norm": "MUSTARD5L",
+      "saps": [
+        "FG0000011"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0006": {
+      "canons": [
+        "jivo-canola-cold-press-oilcooking-oil-15-ltr-cooking-oil-for-daily-use-recommended-by-indian-medical-association-15l",
+        "jivo-refine-canola-oil-tin-15l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 15L",
+      "norm": "CANOLA15L",
+      "saps": [
+        "FG0000015"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0007": {
+      "canons": [
+        "edofrwtzzubgdj3q",
+        "jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-5l",
+        "jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l",
+        "qwrgemqgrdx7btj6",
+        "edohhxabmq3jvfsr",
+        "edohhzbqb9p4z6wm",
+        "jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l",
+        "jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-6l",
+        "jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-6l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 5+1L",
+      "norm": "CANOLA5+1L",
+      "saps": [
+        "FG0000018",
+        "SL0000243"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0008": {
+      "canons": [
+        "jivo-canola-oil1-litre-refined-pouch-cooking-oil-for-daily-use-recommended-by-indian-medical-association-1l",
+        "canola-omega3-rich-cooking-oil-1-l-1l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 1L POUCH",
+      "norm": "CANOLA1LPOUCH",
+      "saps": [
+        "FG0000021"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0009": {
+      "canons": [
+        "jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l",
+        "jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-recommended-by-indian-medical-association-2l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 2L",
+      "norm": "CANOLA2L",
+      "saps": [
+        "FG0000022"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0010": {
+      "canons": [
+        "jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-rich-in-monounsaturated-fatty-acids-low-in-saturated-fat-ideal-for-roasting-frying-and-baking-1l",
+        "edohyrptdvezvz8e",
+        "jivo-daily-cooking-pomace-olive-oil-1-litre-1l",
+        "jivo-pomace-olive-oil-plastic-bottle-1l",
+        "jivo-pomace-olive-oil-1l",
+        "pomace-olive-oil-1l"
+      ],
+      "category": "OLIVE",
+      "name": "JIVO POMACE 1L",
+      "norm": "JIVOPOMACE1L",
+      "saps": [
+        "FG0000028"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0011": {
+      "canons": [
+        "jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommended-for-roasting-frying-baking-all-type-of-cuisines-1l",
+        "edogdvwygjndyrqp",
+        "jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l",
+        "jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l",
+        "jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l",
+        "jivo-kachi-ghani-cold-pressed-mustard-oil-1l",
+        "cold-press-kachi-ghani-mustard-oil-1l"
+      ],
+      "category": "MUSTARD",
+      "name": "MUSTARD 1L",
+      "norm": "MUSTARD1L",
+      "saps": [
+        "FG0000030"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0012": {
+      "canons": [
+        "jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-1l",
+        "edogdtnzgdahuduj",
+        "jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l",
+        "jivo-cold-press-canola-oil-plastic-bottle-1l",
+        "jivo-cold-pressed-canola-oil-1l",
+        "canola-oil-cold-pressed-1l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 1L",
+      "norm": "CANOLA1L",
+      "saps": [
+        "FG0000032"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0013": {
+      "canons": [
+        "edoge62hwa7ufxhw",
+        "jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommendable-for-roasting-frying-baking-all-type-of-cuisines-2l",
+        "edohysj8bzygcsbu",
+        "qwrgemqzxaywvm4m",
+        "jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-each-recommendable-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-1l"
+      ],
+      "category": "MUSTARD",
+      "name": "MUSTARD 1+1L",
+      "norm": "MUSTARD1+1L",
+      "saps": [
+        "FG0000038",
+        "FG0000275"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0014": {
+      "canons": [
+        "jivo-extra-light-olive-oil-500ml-imported-from-spain-everyday-use-for-cooking-dressings-salad-soups-dips-and-marinades-light-flavorful-high-mufa-rich-in-antioxidants-500ml"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA LIGHT 500ML",
+      "norm": "EXTRALIGHT500ML",
+      "saps": [
+        "FG0000039"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0015": {
+      "canons": [
+        "jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-1l",
+        "edog2nmeharedmz3",
+        "jivo-extra-virgin-olive-oil-1-litre-1l",
+        "jivo-extra-virgin-olive-oil-bottle-1l",
+        "extra-virgin-olive-oil-antioxidants-rich-suitable-for-salads-saute-1l"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 1L",
+      "norm": "EXTRAVIRGIN1L",
+      "saps": [
+        "FG0000042",
+        "FG0000071"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0016": {
+      "canons": [
+        "edoghersuqwaau5s",
+        "jivo-canola-cold-press-edible-oil-ideal-for-roasting-frying-baking-all-type-of-cuisines-everyday-cooking-oil-for-daily-use-pack-of-3-1-litre-e-3l",
+        "jivo-canola-oil1-litre-cold-press-canola-cold-press-edible-oil-pack-of-2-1-litre-each-1l",
+        "qwrgg9shsxhqyqdk",
+        "jivo-canola-cold-press-edible-oil-ideal-for-roasting-frying-baking-all-type-of-cuisines-everyday-cooking-oil-for-daily-use-pack-of-3-1-litre-e-1l",
+        "jivo-canola-oil1-litre-cold-press-canola-cold-press-edible-oil-pack-of-2-1-litre-each-3l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 1+1+1L",
+      "norm": "CANOLA1+1+1L",
+      "saps": [
+        "FG0000043"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0017": {
+      "canons": [
+        "jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-5l",
+        "edogdvfwgprvttms",
+        "jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l",
+        "jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l",
+        "sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SUNFLOWER 5L",
+      "norm": "SUNFLOWER5L",
+      "saps": [
+        "FG0000053",
+        "FG0000059"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0018": {
+      "canons": [
+        "jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l",
+        "edoft6pr7qmyhgjh",
+        "jivo-extra-light-olive-oil-2-litre-2l",
+        "jivo-extra-light-olive-oil-can-2l",
+        "jivo-extra-light-olive-oil-2l",
+        "extra-light-olive-oil-antioxidants-rich-light-cooking-medium-for-frying-grilling-2l"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA LIGHT 2L",
+      "norm": "EXTRALIGHT2L",
+      "saps": [
+        "FG0000064"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0019": {
+      "canons": [
+        "jivo-premium-cold-pressed-kachi-ghani-mustard-oil-3-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-3l",
+        "edogkc6kwybcnngh"
+      ],
+      "category": "MUSTARD",
+      "name": "MUSTARD 3L",
+      "norm": "MUSTARD3L",
+      "saps": [
+        "FG0000067"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0020": {
+      "canons": [
+        "jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-5l",
+        "edogdtxggcgfce88",
+        "jivo-extra-virgin-cooking-olive-oil-5l"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 5L",
+      "norm": "EXTRAVIRGIN5L",
+      "saps": [
+        "FG0000074"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0021": {
+      "canons": [
+        "edog2nmphjzh6gjc",
+        "jivo-extra-virgin-olive-oil-1-litre-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-for-dressings-salad-and-soups-dips-marinades-pack-of-2-2l",
+        "qwrgemns9zpzgwjh"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 1+1L",
+      "norm": "EXTRAVIRGIN1+1L",
+      "saps": [
+        "FG0000075"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0022": {
+      "canons": [
+        "jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-1l",
+        "qwrgemp4hbfd4gf3",
+        "jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2",
+        "jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l",
+        "jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l",
+        "jivo-cold-pressed-sunflower-oil-1l",
+        "cold-pressed-sunflower-oil-1l"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SUNFLOWER 1L",
+      "norm": "SUNFLOWER1L",
+      "saps": [
+        "FG0000081"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0023": {
+      "canons": [
+        "ghegeugzhghgf5xh",
+        "jivo-a2-ghee-500-ml-500ml",
+        "ghehhzbqjbnvzggq",
+        "iomgg4yn5wgxgqcw",
+        "jivo-a2-ghee-500-ml-bilona-method-traditionally-prepared-from-a2-cow-milk-suitable-for-cooking-frying-baking-indian-recipes-rich-aroma-and-distinct-flavour-for-diverse-culinary-applications-500ml"
+      ],
+      "category": "GHEE",
+      "name": "A2 GHEE 500G",
+      "norm": "A2GHEE500G",
+      "saps": [
+        "FG0000082"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0024": {
+      "canons": [
+        "jivo-a2-cow-ghee-1-litre-traditional-bilona-method-prepared-from-a2-cow-milk-rich-aroma-and-distinct-flavour-for-diverse-culinary-applications-suitable-for-cooking-frying-baking-indian-recipes-1l",
+        "ghegeujjnscchwq9"
+      ],
+      "category": "GHEE",
+      "name": "A2 GHEE 1L",
+      "norm": "A2GHEE1L",
+      "saps": [
+        "FG0000083"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0025": {
+      "canons": [
+        "jivo-canola-cold-pressed-edible-oil-11-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-2l",
+        "edofrxtmjgae9dct",
+        "jivo-cold-press-combo-canola-oil-plastic-bottle-2l",
+        "jivo-cold-press-canola-oil-combo-bottle-2l",
+        "jivo-canola-cold-pressed-edible-oil-11-litres-1l",
+        "edohyrqz2gqtmyyf",
+        "qwrgemp4tvbhrue3",
+        "qwrggazjh2pabkmh",
+        "jivo-canola-cold-pressed-soaybean-oil-na"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 1+1L",
+      "norm": "CANOLA1+1L",
+      "saps": [
+        "FG0000088",
+        "FG0000123",
+        "FG0000125"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0026": {
+      "canons": [
+        "jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-recommendable-for-roasting-frying-baking-all-type-of-cuisines-1l",
+        "jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l"
+      ],
+      "category": "MUSTARD",
+      "name": "MUSTARD 1L POUCH",
+      "norm": "MUSTARD1LPOUCH",
+      "saps": [
+        "FG0000106"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0027": {
+      "canons": [
+        "jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-ideal-for-roasting-frying-and-baking-high-in-omega3-and-low-in-saturated-fat-1l",
+        "jivo-soybean-oil-soyabean-oil-pouch-1l"
+      ],
+      "category": "SOYABEAN",
+      "name": "SOYABEAN 1L POUCH",
+      "norm": "SOYABEAN1LPOUCH",
+      "saps": [
+        "FG0000109",
+        "FG0000194"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0028": {
+      "canons": [
+        "jivo-extra-virgin-olive-oil-250-ml-glass-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-250ml",
+        "edoguy3fp4y3rvqm"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 250ML",
+      "norm": "EXTRAVIRGIN250ML",
+      "saps": [
+        "FG0000112"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0029": {
+      "canons": [
+        "jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain-rich-in-mufa-low-in-saturated-fat-ideal-for-frying-roasting-baking-cooking-oil-for-daily-use-2l",
+        "edogyzhgusaddg9b",
+        "jivo-daily-pomace-olive-oil-2l",
+        "pomace-olive-oil-2l"
+      ],
+      "category": "OLIVE",
+      "name": "JIVO POMACE 2L",
+      "norm": "JIVOPOMACE2L",
+      "saps": [
+        "FG0000114"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0030": {
+      "canons": [
+        "jivo-pure-extra-virgin-coconut-oil-1-litre-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-1l",
+        "edogpm99cpxseuyn",
+        "jivo-pure-extra-virgin-coconut-oil-1-litre-1l"
+      ],
+      "category": "COCONUT",
+      "name": "COCONUT 1L",
+      "norm": "COCONUT1L",
+      "saps": [
+        "FG0000116"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0031": {
+      "canons": [
+        "jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-cooking-oil-rich-in-antioxidants-vitamins-pro-lifestyle-5l-family-pack-5l",
+        "edogrf8rmwnygjpe",
+        "jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l",
+        "jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l"
+      ],
+      "category": "BLENDED",
+      "name": "GOLD 5L",
+      "norm": "GOLD5L",
+      "saps": [
+        "FG0000128"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0032": {
+      "canons": [
+        "edoge62esbtmbrgf",
+        "jivo-cold-pressed-chemical-free-sunflower-oil-for-roasting-frying-baking-all-types-of-cuisines-high-in-antioxidants-tasteful-and-healthy-2-litre-2l"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SUNFLOWER 2L",
+      "norm": "SUNFLOWER2L",
+      "saps": [
+        "FG0000133"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0033": {
+      "canons": [
+        "sano-canola-oil-cooking-oil-for-daily-use-recommended-for-all-types-of-cuisines-ideal-for-conscious-cooking-1-liter-1l",
+        "edogvh5wwcxqnjhf"
+      ],
+      "category": "CANOLA",
+      "name": "SANO CANOLA 1L",
+      "norm": "SANOCANOLA1L",
+      "saps": [
+        "FG0000134"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0034": {
+      "canons": [
+        "sano-canola-cooking-oil-for-daily-use-recommended-for-all-types-of-cuisines-lowest-in-saturated-fat-content-ideal-for-healthconscious-cooking-5-litre-smart-cooking-choice-5l",
+        "edogw3gwc36phwky"
+      ],
+      "category": "CANOLA",
+      "name": "SANO CANOLA 5L",
+      "norm": "SANOCANOLA5L",
+      "saps": [
+        "FG0000135"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0035": {
+      "canons": [
+        "sano-pure-fresh-kachi-ghani-mustard-oil-1-litre-pet-bottle-high-pungency-rich-in-omega3-100-natural-authentic-indian-cooking-oil-boosts-heart-health-1l"
+      ],
+      "category": "MUSTARD",
+      "name": "SANO MUSTARD 1L",
+      "norm": "SANOMUSTARD1L",
+      "saps": [
+        "FG0000136"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0036": {
+      "canons": [
+        "sano-pure-and-aromatic-kachi-ghani-mustard-oil-5l-pet-bottle-100-natural-ideal-for-cooking-pickling-and-health-benefits-edible-oil-5l",
+        "edogqthv2rjybfr9"
+      ],
+      "category": "MUSTARD",
+      "name": "SANO MUSTARD 5L",
+      "norm": "SANOMUSTARD5L",
+      "saps": [
+        "FG0000137"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0037": {
+      "canons": [
+        "sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l",
+        "edogqwu2jyazcgzm"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SANO SUNFLOWER 1L",
+      "norm": "SANOSUNFLOWER1L",
+      "saps": [
+        "FG0000138"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0038": {
+      "canons": [
+        "sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SANO SUNFLOWER 5L",
+      "norm": "SANOSUNFLOWER5L",
+      "saps": [
+        "FG0000139"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0039": {
+      "canons": [
+        "sano-soyabean-oil-1-ltr-pet-bottle-pure-natural-nutrientrich-cooking-oil-ideal-for-healthy-delights-in-cooking-frying-and-baking-perfect-for-indian-and-international-cuisines-1l"
+      ],
+      "category": "SOYABEAN",
+      "name": "SANO SOYABEAN 1L",
+      "norm": "SANOSOYABEAN1L",
+      "saps": [
+        "FG0000140"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0040": {
+      "canons": [
+        "sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-oil-with-a-high-omega3-content-and-a-low-saturated-fat-content-ideal-for-delicious-and-healthful-meals-5l"
+      ],
+      "category": "SOYABEAN",
+      "name": "SANO SOYABEAN 5L",
+      "norm": "SANOSOYABEAN5L",
+      "saps": [
+        "FG0000141"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0041": {
+      "canons": [
+        "jivo-groundnut-oil-1-litre-cold-pressed-unrefined-peanut-oil-for-cooking-vitamin-a-d-fortified-chemicalfree-ground-nut-oil-1l-1l",
+        "edogwf6ugcwrregz",
+        "jivo-cold-pressed-groundnut-oil-1-litre-1l",
+        "jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l"
+      ],
+      "category": "GROUNDNUT",
+      "name": "GROUNDNUT 1L",
+      "norm": "GROUNDNUT1L",
+      "saps": [
+        "FG0000142"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0042": {
+      "canons": [
+        "jivo-groundnut-oil-5-litre-cold-pressed-unrefined-peanut-oil-for-cooking-vitamin-a-d-fortified-chemicalfree-ground-nut-oil-5l",
+        "edoh9p7nnnjuxgzp",
+        "jivo-cold-pressed-groundnut-oil-5-litre-5l"
+      ],
+      "category": "GROUNDNUT",
+      "name": "GROUNDNUT 5L",
+      "norm": "GROUNDNUT5L",
+      "saps": [
+        "FG0000143"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0043": {
+      "canons": [
+        "jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-natural-antioxidants-1-litre-pack-1l",
+        "edogxyeferfxp3zy",
+        "jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l"
+      ],
+      "category": "BLENDED",
+      "name": "GOLD 1L",
+      "norm": "GOLD1L",
+      "saps": [
+        "FG0000149"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0044": {
+      "canons": [
+        "sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-roasting-high-smoke-point-cooking-oil-for-indian-kitchen-1000ml-1l",
+        "edogrrxuhzzhz2wz"
+      ],
+      "category": "OLIVE",
+      "name": "SANO POMACE 1L",
+      "norm": "SANOPOMACE1L",
+      "saps": [
+        "FG0000150"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0045": {
+      "canons": [
+        "sano-pomace-olive-oil-5l-ideal-for-frying-roasting-sauting-rich-neutral-flavour-high-smoke-point-versatile-edible-cooking-oil-for-indian-cuisine-5l",
+        "edogrsy3tnxgejpj"
+      ],
+      "category": "OLIVE",
+      "name": "SANO POMACE 5L",
+      "norm": "SANOPOMACE5L",
+      "saps": [
+        "FG0000151"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0046": {
+      "canons": [
+        "sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-healthy-cooking-oil-5l",
+        "edohagdyvqwt6gng"
+      ],
+      "category": "OLIVE",
+      "name": "SANO CLASSIC 5L",
+      "norm": "SANOCLASSIC5L",
+      "saps": [
+        "FG0000152"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0047": {
+      "canons": [
+        "jivo-extra-virgin-olive-oil-2-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-2l",
+        "edog2nmphjzh6gjc"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 2L",
+      "norm": "EXTRAVIRGIN2L",
+      "saps": [
+        "FG0000155"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0048": {
+      "canons": [
+        "jivo-pure-extra-virgin-coconut-oil-500-ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-500ml",
+        "edohf5f6bs3mehjd",
+        "jivo-pure-extra-virgin-coconut-oil-500-ml-500ml"
+      ],
+      "category": "COCONUT",
+      "name": "COCONUT 500ML",
+      "norm": "COCONUT500ML",
+      "saps": [
+        "FG0000157"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0049": {
+      "canons": [
+        "jivo-canola-cold-pressed-edible-oil-4-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-4l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 4L",
+      "norm": "CANOLA4L",
+      "saps": [
+        "FG0000160"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0050": {
+      "canons": [
+        "jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-500ml",
+        "edogwgz7tq6zzt3h"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 500ML",
+      "norm": "EXTRAVIRGIN500ML",
+      "saps": [
+        "FG0000161"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0051": {
+      "canons": [
+        "sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l",
+        "edogvef33gyxkhew"
+      ],
+      "category": "OLIVE",
+      "name": "SANO CLASSIC 1L",
+      "norm": "SANOCLASSIC1L",
+      "saps": [
+        "FG0000162"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0052": {
+      "canons": [
+        "jivo-pure-extra-virgin-coconut-oil-200ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-200ml"
+      ],
+      "category": "COCONUT",
+      "name": "COCONUT 200ML",
+      "norm": "COCONUT200ML",
+      "saps": [
+        "FG0000163"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0053": {
+      "canons": [
+        "jivo-extra-virgin-olive-oil-200-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-ideal-use-for-dressings-salad-and-soups-dips-marinades-200ml",
+        "edohgpf2zq9rqpb3"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 200ML",
+      "norm": "EXTRAVIRGIN200ML",
+      "saps": [
+        "FG0000164"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0054": {
+      "canons": [
+        "edsh4ygygrwrqrgk",
+        "jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-200g-200ml"
+      ],
+      "category": "SEEDS",
+      "name": "CHIA SEEDS 200GM",
+      "norm": "CHIASEEDS200G",
+      "saps": [
+        "FG0000165"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0055": {
+      "canons": [
+        "jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-400g-400ml",
+        "edsgxe59s7agkhug"
+      ],
+      "category": "SEEDS",
+      "name": "CHIA SEEDS 400G",
+      "norm": "CHIASEEDS400G",
+      "saps": [
+        "FG0000166"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0056": {
+      "canons": [
+        "edsh3fjv4pejdfan",
+        "jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml"
+      ],
+      "category": "SEEDS",
+      "name": "CHIASEEDS 800G",
+      "norm": "CHIASEEDS800G",
+      "saps": [
+        "FG0000167"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0057": {
+      "canons": [
+        "jivo-flax-seeds-raw-alsi-seeds-for-eating-high-in-protein-iron-dietary-fibre-rich-in-essential-nutrients-ideal-for-adding-to-smoothies-salads-yogurt-baking-healthy-snack-option-200g-200ml",
+        "edsh4zgfwpsuy7rh"
+      ],
+      "category": "SEEDS",
+      "name": "FLAX SEEDS 200G",
+      "norm": "FLAXSEEDS200G",
+      "saps": [
+        "FG0000179"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0058": {
+      "canons": [
+        "edsh4zf2vbebfjuq",
+        "jivo-raw-basil-seeds-for-weight-loss-200gm-200ml",
+        "jivo-raw-basil-seeds-for-weight-loss-200gm-sabja-seed-takmuria-seeds-200g-high-fibre-and-omega-3-200ml"
+      ],
+      "category": "SEEDS",
+      "name": "BASIL SEEDS 200 GM",
+      "norm": "BASILSEEDS200G",
+      "saps": [
+        "FG0000180"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0059": {
+      "canons": [
+        "edsh5avjzcsan5p3",
+        "jivo-sunflower-seeds-200g-raw-natural-sunflower-seeds-for-snacking-healthy-snack-option-ideal-for-weight-management-antioxidants-great-for-diets-nutrientrich-food-packed-with-protein-200ml",
+        "edsh5ynwyh26yy2g"
+      ],
+      "category": "SEEDS",
+      "name": "SUNFLOWER SEEDS 200 GM",
+      "norm": "SUNFLOWERSEEDS200G",
+      "saps": [
+        "FG0000181"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0060": {
+      "canons": [
+        "jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-200g-200ml",
+        "edsh5avcxwvgycyt"
+      ],
+      "category": "SEEDS",
+      "name": "PUMPKIN SEEDS 200G",
+      "norm": "PUMPKINSEEDS200G",
+      "saps": [
+        "FG0000182"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0061": {
+      "canons": [
+        "jivo-cooking-edible-soyabean-oil-5-litre-high-in-omega6-pufa-contains-tocopherols-natural-antioxidant-suitable-for-daily-cooking-5l",
+        "edoggf7edc9pffhh"
+      ],
+      "category": "SOYABEAN",
+      "name": "SOYABEAN 5L",
+      "norm": "SOYABEAN5L",
+      "saps": [
+        "FG0000192"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0062": {
+      "canons": [
+        "jivo-cooking-edible-soyabean-oil-1-litre-high-in-omega6-pufa-contains-tocopherols-natural-antioxidant-suitable-for-daily-cooking-1l",
+        "jivo-cooking-edible-soyabean-oil-1-litre-1l"
+      ],
+      "category": "SOYABEAN",
+      "name": "SOYABEAN 1L",
+      "norm": "SOYABEAN1L",
+      "saps": [
+        "FG0000193"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0063": {
+      "canons": [
+        "jivo-black-cardamom-badi-elaichi-sabut-moti-kali-elaichi-whole-organic-black-cardamom-perfect-for-cooking-baking-seasoning-adds-flavor-to-dishes-no-artificial-colours-or-preservatives-100g-100ml",
+        "scmh4h8hzj8ahq9g"
+      ],
+      "category": "SPICES",
+      "name": "BLACK CARDAMOM 100G",
+      "norm": "BLACKCARDAMOM100G",
+      "saps": [
+        "FG0000195"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0064": {
+      "canons": [
+        "jivo-black-pepper-whole-natural-peppercorns-premium-kali-mirch-perfect-for-cooking-baking-seasoning-no-artificial-colors-preservatives-or-taste-enhancers-pepper-100g-100ml",
+        "scmh2hmc2u7pqmnv"
+      ],
+      "category": "SPICES",
+      "name": "BLACK PEPPER 100G",
+      "norm": "BLACKPEPPER100G",
+      "saps": [
+        "FG0000196"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0065": {
+      "canons": [
+        "jivo-green-cardamom-8mm-elaichi-whole-natural-spices-no-artificial-colors-or-preservatives-distinctive-flavor-aroma-premium-idukki-cardamom-for-cooking-baking-tea-100g-100ml",
+        "scmh4h8nch2pkywv"
+      ],
+      "category": "SPICES",
+      "name": "GREEN CARDAMOM 100G",
+      "norm": "GREENCARDAMOM100G",
+      "saps": [
+        "FG0000197"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0066": {
+      "canons": [
+        "scmh4h8snyfgcykm",
+        "jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml"
+      ],
+      "category": "SPICES",
+      "name": "CINNAMON 100G",
+      "norm": "CINNAMON100G",
+      "saps": [
+        "FG0000198"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0067": {
+      "canons": [
+        "jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml",
+        "scmh3fhauzysnuab"
+      ],
+      "category": "SEEDS",
+      "name": "CUMIN SEEDS 100G",
+      "norm": "CUMINSEEDS100G",
+      "saps": [
+        "FG0000199"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0068": {
+      "canons": [
+        "jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na",
+        "ricge89buedda5u7"
+      ],
+      "category": "OTHER",
+      "name": "RICE 1KG",
+      "norm": "RICE1KG",
+      "saps": [
+        "FG0000201"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0069": {
+      "canons": [
+        "hnygqtuw5db6rxqd",
+        "sano-pure-honey-1-kg-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-1-kg-na",
+        "hnyhyrsbgkzhhfdz"
+      ],
+      "category": "HONEY",
+      "name": "SANO HONEY 1KG",
+      "norm": "SANOHONEY1KG",
+      "saps": [
+        "FG0000216"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0070": {
+      "canons": [
+        "hnygqtnabyzxtf6e",
+        "sano-pure-honey-500g-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-500g-500ml",
+        "hnyhyrsyjpmyegux"
+      ],
+      "category": "HONEY",
+      "name": "SANO HONEY 500G",
+      "norm": "SANOHONEY500G",
+      "saps": [
+        "FG0000217"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0071": {
+      "canons": [
+        "ghegwgqh84yszn6f",
+        "jivo-desi-ghee-1-litre-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-1l",
+        "gheh6b93zb66sekq",
+        "iomh8ygzuhv8dfbw"
+      ],
+      "category": "GHEE",
+      "name": "DESI GHEE 1KG",
+      "norm": "DESIGHEE1KG",
+      "saps": [
+        "FG0000223",
+        "SL0000089"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0072": {
+      "canons": [
+        "jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml",
+        "jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml",
+        "mango-healthy-wheatgrass-juice-500ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG MANGO JUICE 500ML",
+      "norm": "WGMANGOJUICE500ML",
+      "saps": [
+        "FG0000226",
+        "FG0000279"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0073": {
+      "canons": [
+        "jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauting-baking-chemicalfree-1l",
+        "edohf5ykx4kjregk",
+        "jivo-rice-bran-oil-1-litre-cooking-oil-1l",
+        "jivo-rice-bran-daily-cooking-oil-1l"
+      ],
+      "category": "RICE BRAN",
+      "name": "RICE BRAN 1L",
+      "norm": "RICEBRAN1L",
+      "saps": [
+        "FG0000227"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0074": {
+      "canons": [
+        "jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-1l",
+        "edoh5he7fczjwtaw",
+        "jivo-soolive-oil-1l-1l",
+        "jivo-soolive-blend-of-rice-bran-and-olive-oil-1l"
+      ],
+      "category": "BLENDED",
+      "name": "SO OLIVE 1L",
+      "norm": "SOOLIVE1L",
+      "saps": [
+        "FG0000228"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0075": {
+      "canons": [
+        "jivo-so-olive-oil-5-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-5l",
+        "edoh5hehthkwthyy"
+      ],
+      "category": "BLENDED",
+      "name": "SO OLIVE 5L",
+      "norm": "SOOLIVE5L",
+      "saps": [
+        "FG0000229"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0076": {
+      "canons": [
+        "jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-5l",
+        "edoh3yz46gfvhepb",
+        "jivo-rice-bran-oil-5-litre-5l"
+      ],
+      "category": "RICE BRAN",
+      "name": "RICE BRAN 5L",
+      "norm": "RICEBRAN5L",
+      "saps": [
+        "FG0000230"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0077": {
+      "canons": [
+        "jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml",
+        "fizzy-water-flavoured-with-lemon-750ml"
+      ],
+      "category": "DRINKS",
+      "name": "SODA LEMON 750ML",
+      "norm": "SODALEMON750ML",
+      "saps": [
+        "FG0000231"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0078": {
+      "canons": [
+        "blueberry-healthy-wheatgrass-juice-200ml",
+        "jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+      ],
+      "category": "OTHER",
+      "name": "BLUEBERRY 200ML",
+      "norm": "BLUEBERRY200ML",
+      "saps": [
+        "FG0000232"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0079": {
+      "canons": [
+        "jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml",
+        "rose-healthy-wheatgrass-juice-200ml"
+      ],
+      "category": "OTHER",
+      "name": "ROSE FLAVOR 200ML",
+      "norm": "ROSEFLAVOR200ML",
+      "saps": [
+        "FG0000234"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0080": {
+      "canons": [
+        "mango-healthy-wheatgrass-juice-200ml",
+        "jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG MANGO JUICE 200ML",
+      "norm": "WGMANGOJUICE200ML",
+      "saps": [
+        "FG0000236",
+        "FG0000262"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0081": {
+      "canons": [
+        "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "GINGER ALE 200ML",
+      "norm": "GINGERALE200ML",
+      "saps": [
+        "FG0000238"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0082": {
+      "canons": [
+        "mojito-healthy-wheatgrass-juice-200ml",
+        "jivo-healthy-wheatgrass-juice-with-mojito-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml",
+        "dajh7vuw7j7dzn7q"
+      ],
+      "category": "DRINKS",
+      "name": "WG MOJITO 200ML",
+      "norm": "WGMOJITO200ML",
+      "saps": [
+        "FG0000244"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0083": {
+      "canons": [
+        "jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml"
+      ],
+      "category": "SPICES",
+      "name": "JEERA JUICE",
+      "norm": "JEERAJUICE",
+      "saps": [
+        "FG0000245"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0084": {
+      "canons": [
+        "mojito-healthy-wheatgrass-juice-sugar-free-200ml",
+        "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG MOJITO SF 200ML",
+      "norm": "WGMOJITOSF200ML",
+      "saps": [
+        "FG0000250"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0085": {
+      "canons": [
+        "indian-tonic-water-200ml",
+        "jivo-indian-citric-tonic-water-premium-gt-mixer-low-calorie-flavoured-drink-100-natural-ingredients-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "TONIC WATER 200ML",
+      "norm": "TONICWATER200ML",
+      "saps": [
+        "FG0000252",
+        "FG0000264"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0086": {
+      "canons": [
+        "apple-healthy-wheatgrass-juice-200ml",
+        "dajh7wyzhzayakgn",
+        "jivo-healthy-wheatgrass-juice-with-apple-boosts-immunity-detox-200ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG APPLE JUICE 200ML",
+      "norm": "WGAPPLEJUICE200ML",
+      "saps": [
+        "FG0000258",
+        "FG0000251"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0087": {
+      "canons": [
+        "blueberry-healthy-wheatgrass-juice-200ml",
+        "dajh7uwv7cnchsjb",
+        "jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG BLUEBERRY JUICE 200ML",
+      "norm": "WGBLUEBERRYJUICE200ML",
+      "saps": [
+        "FG0000260"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0088": {
+      "canons": [
+        "rose-healthy-wheatgrass-juice-200ml",
+        "jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG ROSE 200ML",
+      "norm": "WGROSE200ML",
+      "saps": [
+        "FG0000263"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0089": {
+      "canons": [
+        "jivo-natural-mineral-1l-1l",
+        "jivo-natural-minerals-water-mineral-water-1l",
+        "jivo-mineral-water-1l"
+      ],
+      "category": "DRINKS",
+      "name": "WATER 1L",
+      "norm": "WATER1L",
+      "saps": [
+        "FG0000266"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0090": {
+      "canons": [
+        "jivo-mineral-water-250ml-250ml"
+      ],
+      "category": "DRINKS",
+      "name": "JIVO WATER 250ML",
+      "norm": "JIVOWATER250ML",
+      "saps": [
+        "FG0000268"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0091": {
+      "canons": [
+        "fizzy-water-flavoured-with-peach-750ml",
+        "jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml"
+      ],
+      "category": "DRINKS",
+      "name": "SODA PEACH 750ML",
+      "norm": "SODAPEACH750ML",
+      "saps": [
+        "FG0000270"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0092": {
+      "canons": [
+        "jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-coffee-powder-easy-to-prepare-with-rich-aroma-and-taste-coffee-for-daily-use-100ml",
+        "cfegmj5gje7hd3dq"
+      ],
+      "category": "DRINKS",
+      "name": "COFFEE",
+      "norm": "COFFEE",
+      "saps": [
+        "FG0000271"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0093": {
+      "canons": [
+        "ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml",
+        "jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG GINGER ALE 200ML",
+      "norm": "WGGINGERALE200ML",
+      "saps": [
+        "FG0000276"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0094": {
+      "canons": [
+        "fizzy-water-flavoured-with-peach-750ml",
+        "jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml"
+      ],
+      "category": "DRINKS",
+      "name": "WATER PEACH 750ML",
+      "norm": "WATERPEACH750ML",
+      "saps": [
+        "FG0000277"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0095": {
+      "canons": [
+        "fizzy-water-flavoured-with-lemon-750ml",
+        "jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml"
+      ],
+      "category": "DRINKS",
+      "name": "LEMON 750ML",
+      "norm": "LEMON750ML",
+      "saps": [
+        "FG0000278"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0096": {
+      "canons": [
+        "jivo-extra-fizzy-soda-750-ml-soda-750ml"
+      ],
+      "category": "DRINKS",
+      "name": "SODA 750ML",
+      "norm": "SODA750ML",
+      "saps": [
+        "FG0000282"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0097": {
+      "canons": [
+        "jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml"
+      ],
+      "category": "SLICED OLIVE",
+      "name": "BLACK OLIVE 470G",
+      "norm": "BLACKOLIVE470G",
+      "saps": [
+        "FG0000288"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0098": {
+      "canons": [
+        "jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml",
+        "edsh5avfzrhq43rz"
+      ],
+      "category": "SEEDS",
+      "name": "FLAX SEEDS 400 GM",
+      "norm": "FLAXSEEDS400G",
+      "saps": [
+        "FG0000290"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0099": {
+      "canons": [
+        "jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml"
+      ],
+      "category": "OTHER",
+      "name": "DRY FRUITS 200G",
+      "norm": "DRYFRUITS200G",
+      "saps": [
+        "FG0000291"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0100": {
+      "canons": [
+        "jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml"
+      ],
+      "category": "DRINKS",
+      "name": "PUNJABI JEERA 160ML",
+      "norm": "PUNJABIJEERA160ML",
+      "saps": [
+        "FG0000293"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0101": {
+      "canons": [
+        "jivo-raw-basil-seeds-for-weight-loss-400gm-sabja-seed-takmuria-seeds-400g-high-fibre-and-omega-3-400ml"
+      ],
+      "category": "SEEDS",
+      "name": "BASIL SEEDS 400G",
+      "norm": "BASILSEEDS400G",
+      "saps": [
+        "FG0000296"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0102": {
+      "canons": [
+        "edsh4yk7vc4zcnpu",
+        "jivo-raw-basil-seeds-for-weight-loss-sabja-seeds-tukmaria-seeds-high-in-fiber-omega3-nutrients-ideal-for-smoothies-drinks-and-baking-100-natural-vegan-glutenfree-800g-800ml"
+      ],
+      "category": "SEEDS",
+      "name": "BASIL SEEDS 800 GM",
+      "norm": "BASILSEEDS800G",
+      "saps": [
+        "FG0000297"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0103": {
+      "canons": [
+        "jivo-organic-flax-seeds-raw-alsi-seeds-for-smoothies-cereals-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-800g-800ml",
+        "edsh5bx4umfr4xyf"
+      ],
+      "category": "SEEDS",
+      "name": "FLAX SEEDS 800G",
+      "norm": "FLAXSEEDS800G",
+      "saps": [
+        "FG0000298"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0104": {
+      "canons": [
+        "edsh4zzgcgcmyvfh",
+        "jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-800g-800ml"
+      ],
+      "category": "SEEDS",
+      "name": "PUMPKIN SEEDS 800 GM",
+      "norm": "PUMPKINSEEDS800G",
+      "saps": [
+        "FG0000299"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0105": {
+      "canons": [
+        "jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-clean-eating-nutrientrich-diets-400g-400ml",
+        "edsh66rre84eyvhc"
+      ],
+      "category": "SEEDS",
+      "name": "SUNFLOWER SEEDS 400G",
+      "norm": "SUNFLOWERSEEDS400G",
+      "saps": [
+        "FG0000300"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0106": {
+      "canons": [
+        "jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-diets-clean-eating-glutenfree-nongmo-800g-800ml",
+        "edsh63q3yyywhmuh"
+      ],
+      "category": "SEEDS",
+      "name": "SUNFLOWER SEEDS 800G",
+      "norm": "SUNFLOWERSEEDS800G",
+      "saps": [
+        "FG0000301"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0107": {
+      "canons": [
+        "jivo-premium-cold-pressed-kachi-ghani-mustard-oil-4-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-4l",
+        "edohgwu9wapbehwk",
+        "jivo-cold-pressed-pure-cooking-mustard-oil-can-4l"
+      ],
+      "category": "MUSTARD",
+      "name": "MUSTARD 4L",
+      "norm": "MUSTARD4L",
+      "saps": [
+        "FG0000302"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0108": {
+      "canons": [
+        "jivo-sunflower-oil-4-litres-pure-natural-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-4l",
+        "edohgwsvungy8y3m"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SUNFLOWER 4L",
+      "norm": "SUNFLOWER4L",
+      "saps": [
+        "FG0000303"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0109": {
+      "canons": [
+        "jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-400g-400ml",
+        "edsh5avgyvmtpzec"
+      ],
+      "category": "SEEDS",
+      "name": "PUMPKIN SEEDS 400G",
+      "norm": "PUMPKINSEEDS400G",
+      "saps": [
+        "FG0000306"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0110": {
+      "canons": [
+        "jivo-whole-clove-100-gm-no-artificial-colours-or-preservatives-100ml",
+        "scmhckzekpqwve5v"
+      ],
+      "category": "SPICES",
+      "name": "CLOVE 100G",
+      "norm": "CLOVE100G",
+      "saps": [
+        "FG0000308"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0111": {
+      "canons": [
+        "jivo-jump-energy-drink-zero-sugar-200ml-200ml"
+      ],
+      "category": "OTHER",
+      "name": "JUMP ENERGY DRINK 200ML",
+      "norm": "JUMPENERGYDRINK200ML",
+      "saps": [
+        "FG0000309"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0112": {
+      "canons": [
+        "edoge5wygyxcrrmf",
+        "jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-3l",
+        "qwrgempjjgdryacc",
+        "edohyrpctwgrkwku"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA LIGHT 1+1+1L",
+      "norm": "EXTRALIGHT1+1+1L",
+      "saps": [
+        "FG0000310"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0113": {
+      "canons": [
+        "edogfyrutbcs6yhw",
+        "jivo-pomace-edible-olive-oil-cooking-daily-use-rich-in-mufa-low-in-saturated-fat-recommendable-for-roasting-frying-baking-all-type-of-cuisines-pet-bottles-3l",
+        "qwrgemrynag8t2fv"
+      ],
+      "category": "OLIVE",
+      "name": "JIVO POMACE 1+1+1L",
+      "norm": "JIVOPOMACE1+1+1L",
+      "saps": [
+        "FG0000311"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0114": {
+      "canons": [
+        "jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l",
+        "qwrggc46ukqkvces",
+        "jivo-extra-light-olive-oil-combo-2l"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA LIGHT 1+1L",
+      "norm": "EXTRALIGHT1+1L",
+      "saps": [
+        "FG0000313"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0115": {
+      "canons": [
+        "jivo-cold-pressed-chemicalfree-sunflower-oil-3-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-3l",
+        "edoghzsebqyya6zw"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SUNFLOWER 3L",
+      "norm": "SUNFLOWER3L",
+      "saps": [
+        "FG0000316"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0116": {
+      "canons": [
+        "jivo-canola-cold-pressed-edible-oil-3-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-3l",
+        "edoghersuqwaau5s"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 3L",
+      "norm": "CANOLA3L",
+      "saps": [
+        "FG0000317"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0117": {
+      "canons": [
+        "edogyzhgusaddg9b",
+        "jivo-pomace-olive-oil-1l-for-cooking-recommendable-for-roasting-dressings-salad-and-soups-dips-marinades-healthy-oil-for-daily-use-baking-all-type-of-cuisines-2l",
+        "jivo-pomace-olive-oil-combo-2l",
+        "edogterwcwcgywch",
+        "edohyrrpj3h7nhhn",
+        "qwrgemqj8tqrhasy",
+        "jivo-daily-cooking-pomace-olive-oil-1-litre-rich-in-mufa-low-in-saturated-fat-2l"
+      ],
+      "category": "OLIVE",
+      "name": "JIVO POMACE 1+1L",
+      "norm": "JIVOPOMACE1+1L",
+      "saps": [
+        "FG0000320"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0118": {
+      "canons": [
+        "jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-cooking-oil-pro-healthy-lifestyle-edible-oil-1-litre-pack-of-2-2l",
+        "edogyj7syy4h2mdh"
+      ],
+      "category": "BLENDED",
+      "name": "GOLD 1+1",
+      "norm": "GOLD1+1",
+      "saps": [
+        "FG0000321"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0119": {
+      "canons": [
+        "jivo-jump-energy-drink-zero-sugar-200ml-200ml"
+      ],
+      "category": "OTHER",
+      "name": "ENERGY DRINK 200ML",
+      "norm": "ENERGYDRINK200ML",
+      "saps": [
+        "FG0000325"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0120": {
+      "canons": [
+        "jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-1l",
+        "edohdgdyauqswvqv",
+        "jivo-first-pressed-yellow-mustard-oil-1-litre-1l"
+      ],
+      "category": "MUSTARD",
+      "name": "YELLOW MUSTARD 1L",
+      "norm": "YELLOWMUSTARD1L",
+      "saps": [
+        "FG0000328",
+        "FG0000329"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0121": {
+      "canons": [
+        "sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l",
+        "sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l"
+      ],
+      "category": "OLIVE",
+      "name": "SANO POMACE 1+1L",
+      "norm": "SANOPOMACE1+1L",
+      "saps": [
+        "FG0000339",
+        "FG0000326"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0122": {
+      "canons": [
+        "edogtkkpp3twkysp"
+      ],
+      "category": "OLIVE",
+      "name": "SANO POMACE 1+1+1L",
+      "norm": "SANOPOMACE1+1+1L",
+      "saps": [
+        "FG0000340",
+        "FG0000327"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0123": {
+      "canons": [
+        "ghegwgyyfw9edubs",
+        "jivo-desi-ghee-500-ml-500ml",
+        "jivo-desi-ghee-500-ml-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-500ml"
+      ],
+      "category": "GHEE",
+      "name": "DESI GHEE 500GM",
+      "norm": "DESIGHEE500G",
+      "saps": [
+        "FG0000352",
+        "SL0000090"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0124": {
+      "canons": [
+        "blueberry-healthy-wheatgrass-juice-200ml",
+        "dajh7uwv7cnchsjb",
+        "jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
+      ],
+      "category": "DRINKS",
+      "name": "WG BLUEBERRY 200ML",
+      "norm": "WGBLUEBERRY200ML",
+      "saps": [
+        "FG0000363"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0125": {
+      "canons": [
+        "jivo-pure-kashmiri-saffron-a-grade-kesar-rich-in-antioxidants-boosts-immunity-skin-glow-overall-wellness-1ml",
+        "scmhg4hdys45ycaz"
+      ],
+      "category": "SPICES",
+      "name": "SAFFRON 1GMS",
+      "norm": "SAFFRON1G",
+      "saps": [
+        "FG0000367"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0126": {
+      "canons": [
+        "jivo-rosemary-leaves-whole-natural-no-preservatives-or-additives-ideal-for-hair-growth-herbal-tea-seasoning-and-cooking-salvia-rosmarinus-150ml"
+      ],
+      "category": "SPICES",
+      "name": "ROSEMARY LEAVES 150G",
+      "norm": "ROSEMARYLEAVES150G",
+      "saps": [
+        "FG0000371"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0127": {
+      "canons": [
+        "jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-400g-400ml"
+      ],
+      "category": "SEEDS",
+      "name": "QUINOA SEEDS 400G",
+      "norm": "QUINOASEEDS400G",
+      "saps": [
+        "FG0000372"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0128": {
+      "canons": [
+        "jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-200g-200ml"
+      ],
+      "category": "SEEDS",
+      "name": "QUINOA SEEDS 200G",
+      "norm": "QUINOASEEDS200G",
+      "saps": [
+        "FG0000373"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0129": {
+      "canons": [
+        "jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-800g-800ml"
+      ],
+      "category": "SEEDS",
+      "name": "QUINOA SEEDS 800G",
+      "norm": "QUINOASEEDS800G",
+      "saps": [
+        "FG0000374"
+      ],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0130": {
+      "canons": [
+        "jivo-first-pressed-sesame-oil-1l-bottle-gingelly-oil-contains-mufa-and-omega6-pufa-natural-antioxidants-ideal-for-cooking-1l",
+        "edohdgcrehez8kpz"
+      ],
+      "category": "SESAME OIL",
+      "name": "SESAME OIL 1L",
+      "norm": "SESAMEOIL1L",
+      "saps": [
+        "FG0000376"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0131": {
+      "canons": [
+        "jivo-rice-bran-oil-4-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-4l"
+      ],
+      "category": "RICE BRAN",
+      "name": "RICE BRAN 4L",
+      "norm": "RICEBRAN4L",
+      "saps": [
+        "FG0000383"
+      ],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0132": {
+      "canons": [
+        "jivo-first-pressed-yellow-mustard-oil-5-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-5l"
+      ],
+      "category": "MUSTARD",
+      "name": "YELLOW MUSTARD 5L",
+      "norm": "YELLOWMUSTARD5L",
+      "saps": [
+        "FG0000385"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0133": {
+      "canons": [
+        "jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-saturated-fat-3l",
+        "edohzyysyez2yvtm"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA LIGHT 3L",
+      "norm": "EXTRALIGHT3L",
+      "saps": [
+        "FG0000390"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0134": {
+      "canons": [
+        "jivo-everyday-cooking-pomace-olive-oil-3-litre-imported-from-spain-rich-in-mufa-low-in-saturated-fat-ideal-for-frying-roasting-baking-cooking-oil-for-daily-use-3l",
+        "edogfyrutbcs6yhw"
+      ],
+      "category": "OLIVE",
+      "name": "POMACE 3L",
+      "norm": "POMACE3L",
+      "saps": [
+        "FG0000392"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0135": {
+      "canons": [
+        "edogw6r828yya8xa",
+        "jivo-groundnut-oil-5-1-litre-cold-pressed-groundnut-oil-cold-pressed-oil-peanut-oil-ground-nut-oil-natural-cooking-oil-chemical-free-pack-6l",
+        "jivo-cold-pressed-groundnut-peanut-oil-51-litre-6l"
+      ],
+      "category": "GROUNDNUT",
+      "name": "GROUNDNUT 5+1L",
+      "norm": "GROUNDNUT5+1L",
+      "saps": [
+        "FG0000399"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0136": {
+      "canons": [
+        "jivo-first-pressed-sesame-oil-1l-bottle-gingelly-oil-contains-mufa-and-omega6-pufa-natural-antioxidants-ideal-for-cooking-2l"
+      ],
+      "category": "SESAME OIL",
+      "name": "SESAME 1L + 1L",
+      "norm": "SESAME1+1L",
+      "saps": [
+        "FG0000410"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0137": {
+      "canons": [
+        "edoghesnhffugqb9",
+        "jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-1l",
+        "qwrgg9uacyscuxk9",
+        "jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-2l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 1L+MUSTARD 1L",
+      "norm": "CANOLA1+MUSTARD1L",
+      "saps": [
+        "SL0000007"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0138": {
+      "canons": [
+        "qwrggbfmfwgwuwtj",
+        "jivo-canola-refined-edible-oils-52-ltr-7l",
+        "jivo-canola-refined-edible-oils-52-ltr-2l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 5+2L",
+      "norm": "CANOLA5+2L",
+      "saps": [
+        "SL0000012"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0139": {
+      "canons": [
+        "edoggx8c5qad2mpp",
+        "jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-5l",
+        "jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-high-in-omega6-pufa-with-natural-antioxidant-suitable-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-na"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 5L + SOYABEAN 5L",
+      "norm": "CANOLA5+SOYABEAN5L",
+      "saps": [
+        "SL0000016"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0140": {
+      "canons": [
+        "edoggy5kcr8s7shk",
+        "qwrgjfz8m4eggs5f"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 1L+SOYABEAN 1L+MUSTARD 1L",
+      "norm": "CANOLA1+SOYABEAN1+MUSTARD1L",
+      "saps": [
+        "SL0000212"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0141": {
+      "canons": [
+        "edoggx6sqxczkd2y",
+        "jivo-cold-pressed-canola-oil-5l-soyabean-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-5l",
+        "jivo-cold-pressed-canola-oil-5l-soyabean-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-6l"
+      ],
+      "category": "CANOLA",
+      "name": "CANOLA 5L+ SOYABEAN 1L",
+      "norm": "CANOLA5+SOYABEAN1L",
+      "saps": [
+        "SL0000213"
+      ],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0142": {
+      "canons": [
+        "jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml",
+        "scmh4h8snyfgcykm"
+      ],
+      "category": "SPICES",
+      "name": "CINNAMON BARK 100G",
+      "norm": "CINNAMONBARK100G",
+      "saps": [],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0143": {
+      "canons": [
+        "jivo-extra-virgin-olive-oil-3-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-3l"
+      ],
+      "category": "OLIVE",
+      "name": "EXTRA VIRGIN 3L",
+      "norm": "EXTRAVIRGIN3L",
+      "saps": [],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0144": {
+      "canons": [
+        "jivo-punjabi-shikanji-wheatgrass-juice-nimbu-shikanji-masala-drink-natural-summer-refreshment-160ml-160ml"
+      ],
+      "category": "DRINKS",
+      "name": "JIVO PUNJABI SHIKANJI 160 MLS",
+      "norm": "JIVOPUNJABISHIKANJI160ML",
+      "saps": [],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0145": {
+      "canons": [
+        "jivo-natural-mineral-water-himalayan-origin-nonro-unprocessed-noncarbonated-additivefree-packaged-water-for-clean-hydration-500-ml-bottle-500ml"
+      ],
+      "category": "DRINKS",
+      "name": "JIVO WATER 500 MLS",
+      "norm": "JIVOWATER500ML",
+      "saps": [],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0146": {
+      "canons": [
+        "edohbh2fp9es6gga"
+      ],
+      "category": "RICE BRAN",
+      "name": "RICE BRAN 1L + 1L",
+      "norm": "RICEBRAN1+1L",
+      "saps": [],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0147": {
+      "canons": [
+        "edohbh2urwdmhpxc"
+      ],
+      "category": "OLIVE",
+      "name": "SO OLIVE 1L + 1L",
+      "norm": "SOOLIVE1+1L",
+      "saps": [],
+      "status": "active",
+      "tier": "PREMIUM"
+    },
+    "JID-0148": {
+      "canons": [
+        "jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-ideal-for-roasting-frying-and-baking-healthy-cooking-oil-for-daily-use-pack-of-2-1l",
+        "edoggpfz2fcj6uws"
+      ],
+      "category": "SOYABEAN",
+      "name": "SOYABEAN 1L + 1L",
+      "norm": "SOYABEAN1+1L",
+      "saps": [],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0149": {
+      "canons": [
+        "jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml",
+        "fizzy-water-flavoured-with-peach-750ml"
+      ],
+      "category": "DRINKS",
+      "name": "SPRING WATER 750ML",
+      "norm": "SPRINGWATER750ML",
+      "saps": [],
+      "status": "active",
+      "tier": "OTHER"
+    },
+    "JID-0150": {
+      "canons": [
+        "jivo-cold-pressed-chemical-free-sunflower-oil-1-litre-ideal-for-roasting-frying-baking-all-types-of-cuisines-healthy-cooking-oil-for-daily-use-pack-of-2-litres-2l"
+      ],
+      "category": "SUNFLOWER",
+      "name": "SUNFLOWER 1L + 1L",
+      "norm": "SUNFLOWER1+1L",
+      "saps": [],
+      "status": "active",
+      "tier": "COMMODITY"
+    },
+    "JID-0151": {
+      "canons": [
+        "edohnfqudf32jhzr"
+      ],
+      "category": "MUSTARD",
+      "name": "YELLOW MUSTARD 1L + 1L",
+      "norm": "YELLOWMUSTARD1+1L",
+      "saps": [],
+      "status": "active",
+      "tier": "PREMIUM"
+    }
+  },
+  "next_serial": 152,
+  "prefix": "JID-",
+  "updated_at": "2026-06-30T00:30:54.372892+00:00"
+}

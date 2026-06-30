@@ -37,18 +37,28 @@ if pgrep -f "amazon_chunked.sh" >/dev/null 2>&1; then
   tg "🛡️ ecom 30-Jun: Amazon coverage PAUSED at 05:38 before the cron (now $nf/25, fresh $ff/25 cities). Auto-resumes after noon. No clobber."
 fi
 
-# ---- B) health check @12:20 ----
-TB=$(date -d "2026-06-30 12:20" +%s)
-while [ "$(date +%s)" -lt "$TB" ]; do sleep 300; done
-DONE=$(tail -60 "$DIR/logs/cron.log" 2>/dev/null | grep -c "run_all: DONE")
+# ---- B) health check: wait for TODAY's run_all DONE (robust to lateness), cap 14:00 ----
+TMAX=$(date -d "2026-06-30 14:00" +%s)
+while [ "$(date +%s)" -lt "$TMAX" ]; do
+  grep -q "2026-06-30.*run_all: DONE" "$DIR/logs/cron.log" 2>/dev/null && break
+  sleep 240
+done
+DONE=$(grep -c "2026-06-30.*run_all: DONE" "$DIR/logs/cron.log" 2>/dev/null)
 T=$(date +%F); rep=0
 for p in blinkit zepto flipkart-minutes; do ls "$DIR"/platforms/$p/Jivo-*"$T".xlsx >/dev/null 2>&1 && rep=$((rep+1)); done
-if [ "$DONE" -ge 1 ] && [ "$rep" -ge 2 ]; then
-  say "HEALTH OK run_all DONE, $rep/3 QC reports"
-  tg "✅ ecom 30-Jun: first COVERAGE_DAILY run OK — cron finished, $rep/3 QC reports built on the 486/693/340 Jivo-priced pincodes. Resuming Amazon."
+# Blinkit-specific status (owner asked to be sure about Blinkit)
+if ls "$DIR"/platforms/blinkit/Jivo-*"$T".xlsx >/dev/null 2>&1; then
+  bkrows=$(grep -c ",blinkit," "$DIR/data/blinkit/history.csv" 2>/dev/null || echo "?")
+  BK="🟢 BLINKIT RAN ✅ (report built)"
 else
-  say "HEALTH WARN DONE=$DONE reports=$rep/3"
-  tg "⚠️ ecom 30-Jun: first COVERAGE_DAILY run needs a look — run_all DONE=$DONE, QC reports=$rep/3. See logs/cron.log. Rollback: remove COVERAGE_DAILY=1 from crontab."
+  BK="🔴 BLINKIT report MISSING ⚠️"
+fi
+if [ "$DONE" -ge 1 ] && [ "$rep" -ge 2 ]; then
+  say "HEALTH OK run_all DONE, $rep/3 QC reports, $BK"
+  tg "✅ ecom 30-Jun daily run OK. $BK. $rep/3 QC reports built on the 486/693/340 Jivo-priced pincodes. Resuming Amazon."
+else
+  say "HEALTH WARN DONE=$DONE reports=$rep/3 $BK"
+  tg "⚠️ ecom 30-Jun daily run needs a look. $BK. run_all DONE=$DONE, QC reports=$rep/3. See logs/cron.log. Rollback: remove COVERAGE_DAILY=1 from crontab."
 fi
 
 # ---- C) resume Amazon coverage (per-city, skips done) ----

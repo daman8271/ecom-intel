@@ -1,0 +1,4 @@
+# PAUSED 2026-06-01 (Amazon Now rebuild) -- restore from .crontab.backup-2026-06-01-paused: 0 9 * * * cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1   # ecom-intel
+# PAUSED 2026-06-01 (Amazon Now rebuild) -- restore from .crontab.backup-2026-06-01-paused: 0 12 * * * cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1   # ecom-intel
+# PAUSED 2026-06-01 (Amazon Now rebuild) -- restore from .crontab.backup-2026-06-01-paused: 0 16 * * * cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1   # ecom-intel
+0 9,12,16 * * * cd /opt/ecom-intel && ./run.sh amazon-fresh >> logs/cron.log 2>&1   # ecom-intel amazon-fresh (gated v1; Now excluded during cloud rebuild)

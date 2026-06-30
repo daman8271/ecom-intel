@@ -1,0 +1,30 @@
+# crontab.proposed.txt — DEADLINE-ALIGNED sweeps (replaces the whole crontab).
+# DO NOT install by hand-editing crontab -e line by line; review, then:  crontab crontab.proposed.txt
+# (Installation is the LEAD's call after verification — W1 only proposes.)
+#
+# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY (3.5h lead window,
+# LEAD ruling 2026-06-06: covers the observed ~3h05m serial chain with margin).
+# The script predicts the serial chain's runtime from history (predict_lead.py),
+# sleeps until <slot> - predicted_lead, runs ./run_all.sh with DEFER_DELIVERY=1,
+# and send_batch.py holds every platform's report and delivers them as ONE batch
+# AT the slot time ("everyone comes at the timing, not starts at it"). If the
+# chain overruns, the batch goes out as soon as it's done, marked "(late by Xm)".
+#
+# Sizing (bootstrap data, 2026-06-05 serial sweeps): predicted total lead is
+# currently ~14.8k s, clamped to LEAD_MAX-120 = 12480s (~3h28m) -> the 10:00
+# sweep starts ~06:32, the 15:00 sweep ~11:32 — both inside their fire windows.
+# starts drift later automatically; the fire times below just open the window.
+
+# 10:00 IST slot — fire 06:30, sweep starts at 10:00 - predicted lead, batch lands AT 10:00.
+30 6 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
+
+# 15:00 IST slot — fire 11:30, same mechanics, batch lands AT 15:00.
+30 11 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 15:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 15:00
+
+# 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
+# 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).
+0 18 * * * cd /opt/ecom-intel && ./tools/guardian_daily.sh >> logs/guardian.log 2>&1   # ecom-intel guardian-daily (paused w/ sweeps; un-pause together)
+
+# Dropped vs the live crontab: the one-day "skip 2026-06-04" guard on the 15:00
+# line (stale — that date has passed) and the raw `0 10/0 15 ./run_all.sh` starts
+# (replaced by the deadline-aligned entries above).

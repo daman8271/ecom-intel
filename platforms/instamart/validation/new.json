@@ -1,0 +1,9 @@
+{
+  "error": {
+    "type": "full-permission-actor-not-approved",
+    "message": "This Actor requires full access to your account. You must approve its permissions before running it: https://console.apify.com/actors/sEPEiWvzfhXTdTkoo?approvePermissions=true",
+    "data": {
+      "approvalUrl": "https://console.apify.com/actors/sEPEiWvzfhXTdTkoo?approvePermissions=true"
+    }
+  }
+}

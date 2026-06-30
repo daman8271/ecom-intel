@@ -1,0 +1,21 @@
+{
+ "date": "2026-06-16",
+ "regime": "BAU",
+ "kpis": {
+  "skus_tracked": 113,
+  "platforms": 8,
+  "compliant": 43,
+  "below": 101,
+  "above": 23,
+  "oos": 124,
+  "pending": 0,
+  "not_listed": 613,
+  "exposure": 9247,
+  "listings": 904,
+  "mapped": 291,
+  "listed_skus": 113
+ },
+ "store_violations": 3098,
+ "summary_md": "*Jivo Price Match — master* 🎯\n2026-06-16 · BAU day\n🔴 Below ref: 101 listings · ₹9,247 exposure\nTop offenders: EXTRA LIGHT 5L (Flipkart −₹640) · EXTRA VIRGIN 5L (Flipkart −₹557) · EXTRA VIRGIN 5L (Amazon −₹540)\n🟢 Above: 23 · Match: 43 · OOS: 124 · Pending: 0\nCoverage: 113 SKUs × 8 platforms (613 not listed)",
+ "caption": "Jivo Price Match · 2026-06-16 · BAU day"
+}

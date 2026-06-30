@@ -66,3 +66,8 @@ platforms/*/.progress.*.json
 
 # amazon per-city coverage runtime chunks
 platforms/*/.cov-chunks/
+.vercel
+secrets.env.bak*
+*.lock
+secrets.env.bak.*
+collectors/

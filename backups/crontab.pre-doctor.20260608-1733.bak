@@ -1,0 +1,109 @@
+# crontab.proposed.txt — DEADLINE-ALIGNED sweeps (replaces the whole crontab).
+# DO NOT install by hand-editing crontab -e line by line; review, then:  crontab crontab.proposed.txt
+# (Installation is the LEAD's call after verification — W2 only proposes.)
+#
+# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY (3.5h lead window:
+# fire = slot − 3h30m, LEAD_MAX=12600). The script predicts the serial chain's
+# runtime from history (predict_lead.py), sleeps until <slot> - predicted_lead,
+# runs ./run_all.sh with DEFER_DELIVERY=1, and send_batch.py holds every
+# platform's report and delivers them as ONE batch AT the slot time ("everyone
+# comes at the timing, not starts at it"). If the chain overruns, the batch goes
+# out as soon as it's done, marked "(late by Xm)".
+#
+# SLOT CHANGE (owner order 2026-06-06): the morning batch must LAND at 12:00 IST,
+# not 10:00. Afternoon stays 15:00. So the morning line becomes fire 08:30 ->
+# deadline_sweep.sh 12:00 — the same fire = slot − 3h30m pattern as 11:30 -> 15:00.
+#
+# PROOF (2026-06-06 — the system is LIVE; first real deadline day, logs/cron.log
+# 523–598): both batches landed at the slot TO THE SECOND — 10:00:00 and 15:00:00
+# sweeps (06:41:49->09:06:35 = 2h24m46s; 11:39:10->14:02:36 = 2h23m26s). Barrier
+# sleep ~55m (3205s / 3444s). Predicted p90 leads 11891s / 12050s (~3h18–21m) —
+# comfortably inside LEAD_MAX=12600, with starts drifting later automatically as
+# the self-learning durations ledger tightens.
+
+# 12:00 IST slot — fire 08:30, sweep starts at 12:00 - predicted lead (~08:41 on today's lead), batch lands AT 12:00.
+30 8 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
+
+# 15:00 IST slot — fire 11:30, same mechanics, batch lands AT 15:00.
+30 11 * * * cd /opt/ecom-intel && LEAD_MAX=12600 ./tools/cron/deadline_sweep.sh 15:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 15:00
+
+# 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
+# 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).
+0 18 * * * cd /opt/ecom-intel && ./tools/guardian_daily.sh >> logs/guardian.log 2>&1   # ecom-intel guardian-daily (paused w/ sweeps; un-pause together)
+
+# =============================================================================
+# OVERLAP ANALYSIS — 12:00 + 15:00 slots are only 3h apart (was 5h).
+# Walked on today's REAL timings (logs/cron.log 523–598) shifted +2h for the
+# morning sweep:
+#   morning:   fire 08:30 -> start ~08:41 -> chain done ~11:06 -> BARRIER SLEEP
+#              11:06->12:00 -> batch 12:00:00–12:00:16 -> post-batch TAIL
+#              (healthcheck->selfheal backstop, vault_build + git) ~12:00:16+
+#   afternoon: fire 11:30 -> start ~11:39 -> chain 11:39->~14:02 (fkm 11:39,
+#              flipkart 11:41, zepto 11:48, bigbasket 11:58, amazon 12:01,
+#              amazon-fresh 12:12, amazon-now 12:28, blinkit 12:55)
+# So the morning BARRIER SLEEP and post-batch TAIL overlap the afternoon CHAIN.
+# Note run_all.sh's order is chain -> send_batch barrier -> healthcheck/selfheal
+# -> vault_build+git: the backstop runs AFTER the 12:00 batch, mid-afternoon-chain.
+#
+# 1. Barrier sleep — ✓ SAFE. send_batch.py is a single python process blocked in
+#    sleep(); zero CPU/network contention. At 12:00 it makes ~16 Telegram API
+#    calls over ~16s (today's real batch); it never touches platform sites.
+#    Spool dirs are per-sweep (output/.batch/<SWEEP_ID>/), so afternoon platforms
+#    finishing early (fkm ~11:41) spool into ...-1500 while the morning batch
+#    reads ...-1200 — no cross-contamination by construction.
+#
+# 2. Morning tail healthcheck->selfheal backstop — ⚠️ ONE REAL (conditional)
+#    HAZARD. It runs ~12:00:16 while the afternoon chain is mid-sweep (~amazon).
+#    On a CLEAN morning it is a no-op (assess-only; took <1s today — results
+#    fresh today, age<15h, rows healthy). But if the morning left a platform
+#    BROKEN / row-collapsed (i.e. the inline guardian's bounded heals already
+#    failed), the backstop fires `timeout 2400 ./run.sh <p>` — a live scrape of
+#    up to 40m running CONCURRENTLY with the afternoon chain. Lock walk
+#    (verified in healthcheck.sh, tools/selfheal.sh, run.sh, run_all.sh):
+#      - .heal-<p>.lock (selfheal.sh recover() + guardian.py) only serializes
+#        heal-vs-heal. The afternoon chain's plain ./run.sh never takes it, so
+#        it does NOT bound heal-vs-chain.
+#      - .{p}.lock is taken by run.sh ONLY for amazon-fresh / amazon-now
+#        (flock -w 2700). For those two a same-platform heal-vs-chain overlap
+#        serializes — safe, but can stall the afternoon chain up to 45m and
+#        push the 15:00 batch late.
+#      - Every OTHER platform (blinkit, zepto, fkm, flipkart, amazon, bigbasket)
+#        has NO heal-vs-chain lock at all: a 12:00 heal re-run can run
+#        simultaneously with the afternoon chain — the exact CPU/network
+#        starvation the serial sweep exists to prevent — and could even overlap
+#        the chain's OWN scrape of the same platform later in the chain.
+#    The heal is also REDUNDANT: the afternoon sweep re-scrapes every platform
+#    within ~3h anyway.
+#
+# 2b. Chain-vs-chain overrun — ⚠️ second conditional hazard, NEW with the 3h gap.
+#    The shifted morning chain ends ~11:06; the afternoon chain starts ~11:39 —
+#    only ~33m of slack (was ~2h33m at 10:00+15:00). The p90 lead does NOT price
+#    in the inline guardian's in-chain heal re-runs (cap 2 × up to a full
+#    platform re-run, e.g. blinkit ~70m each): a degraded morning chain can
+#    still be scraping past 11:39, putting TWO serial chains live at once.
+#
+#    -> MITIGATION for 2 + 2b (PROPOSED TO LEAD ON THE BUS, NOT implemented —
+#       run_all.sh / healthcheck.sh / deadline_sweep.sh are outside W2's files):
+#       a single sweep-chain lockfile. run_all.sh (or deadline_sweep.sh) holds
+#       flock on logs/.sweep-chain.lock for the platform for-loop ONLY (released
+#       before the barrier; crash-safe — a flock dies with its holder, unlike a
+#       touch-file). Then (i) the legacy backstop is gated with `flock -n`: held
+#       by another sweep => log "skipped: concurrent sweep chain active" + skip
+#       — zero coverage loss, since the 15:00 sweep's own backstop (~15:00:16,
+#       nothing else running) assesses ALL platforms; and (ii) the chain itself
+#       acquires it BLOCKING, so an overrunning morning chain makes the
+#       afternoon chain WAIT (batch ships "(late by Xm)" — already supported)
+#       instead of running two chains concurrently.
+#
+# 3. vault_build + git — ✓ SAFE. The morning tail's commit/push and every
+#    afternoon run.sh commit/push are serialized by the same BLOCKING flock on
+#    .gitpush.lock (run.sh fd 9 + run_all.sh fd 9 — confirmed in both). The
+#    durations-ledger appends are likewise flock'd (record_duration.sh ->
+#    durations.jsonl.lock). vault_build.py itself is ~10s of CPU overlapping the
+#    afternoon's amazon scrape — brief, acceptable.
+# =============================================================================
+
+# Dropped vs the live crontab: the 06:30 -> 10:00 deadline line (replaced by the
+# 08:30 -> 12:00 line above per the owner's 2026-06-06 slot order), the one-day
+# "skip 2026-06-04" guard on the 15:00 line (stale — that date has passed) and
+# the raw `0 10/0 15 ./run_all.sh` starts (replaced by deadline-aligned entries).

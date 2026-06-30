@@ -1,0 +1,21 @@
+{
+ "date": "2026-06-08",
+ "regime": "BAU",
+ "kpis": {
+  "skus_tracked": 113,
+  "platforms": 3,
+  "compliant": 1,
+  "below": 94,
+  "above": 2,
+  "oos": 59,
+  "pending": 0,
+  "not_listed": 183,
+  "exposure": 6203,
+  "listings": 339,
+  "mapped": 156,
+  "listed_skus": 113
+ },
+ "store_violations": 1771,
+ "summary_md": "*Jivo Price Match — master* 🎯\n2026-06-08 · BAU day\n🔴 Below ref: 94 listings · ₹6,203 exposure\nTop offenders: EXTRA LIGHT 3L (Amazon −₹550) · EXTRA VIRGIN 5L (Amazon −₹420) · EXTRA LIGHT 5L (Amazon −₹298)\n🟢 Above: 2 · Match: 1 · OOS: 59 · Pending: 0\nCoverage: 113 SKUs × 3 platforms (183 not listed)",
+ "caption": "Jivo Price Match · 2026-06-08 · BAU day"
+}

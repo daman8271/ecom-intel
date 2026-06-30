@@ -1,0 +1,3 @@
+0 9 * * * cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1   # ecom-intel
+0 12 * * * cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1   # ecom-intel
+0 16 * * * cd /opt/ecom-intel && ./run_all.sh >> logs/cron.log 2>&1   # ecom-intel

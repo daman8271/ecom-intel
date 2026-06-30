@@ -1,0 +1,21 @@
+{
+ "date": "2026-06-28",
+ "regime": "SVD",
+ "kpis": {
+  "skus_tracked": 113,
+  "platforms": 8,
+  "compliant": 57,
+  "below": 78,
+  "above": 34,
+  "oos": 122,
+  "pending": 0,
+  "not_listed": 613,
+  "exposure": 8325,
+  "listings": 904,
+  "mapped": 291,
+  "listed_skus": 113
+ },
+ "store_violations": 3523,
+ "summary_md": "*Jivo Price Match — master* 🎯\n2026-06-28 · SVD day\n🔴 Below ref: 78 listings · ₹8,325 exposure\nTop offenders: EXTRA VIRGIN 5L (Flipkart −₹952) · JIVO POMACE 5L (Flipkart −₹565) · EXTRA VIRGIN 2L (Flipkart −₹534)\n🟢 Above: 34 · Match: 57 · OOS: 122 · Pending: 0\nCoverage: 113 SKUs × 8 platforms (613 not listed)",
+ "caption": "Jivo Price Match · 2026-06-28 · SVD day"
+}
