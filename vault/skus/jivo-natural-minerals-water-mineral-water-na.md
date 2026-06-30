@@ -5,8 +5,8 @@ display_name: JIVO Natural Minerals Water Mineral Water
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-25
-last_seen: 2026-06-29
-observations: 135
+last_seen: 2026-06-30
+observations: 173
 min_price: 20
 max_price: 24
 latest_price: 22
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[flipkart-minutes]] — latest ₹22
 
 ## Available in cities
-[[Ahmedabad]] · [[Delhi]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Patna]] · [[Pune]]
+[[Ahmedabad]] · [[Delhi]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Nashik]] · [[Noida]] · [[Patna]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (3)
-[[flipkart-minutes-2026-06-29-0551]] · [[flipkart-minutes-2026-06-28-0551]] · [[flipkart-minutes-2026-06-25-1208]]
+## Runs that observed this SKU (4)
+[[flipkart-minutes-2026-06-30-0549]] · [[flipkart-minutes-2026-06-29-0551]] · [[flipkart-minutes-2026-06-28-0551]] · [[flipkart-minutes-2026-06-25-1208]]
 
-## Price history (135 observations)
+## Price history (173 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -169,6 +169,44 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-29-0551,2026-06-29,flipkart-minutes,Pune,411028,22,22,0,0
 2026-06-29-0551,2026-06-29,flipkart-minutes,Pune,411033,22,22,0,0
 2026-06-29-0551,2026-06-29,flipkart-minutes,Pune,411045,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380003,22,25,12,1
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380004,22,25,12,1
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380006,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380007,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380008,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380016,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380022,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380026,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380028,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380051,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380054,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380058,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,380059,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,382345,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,382350,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Ahmedabad,382443,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Jaipur,302001,24,24,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Jaipur,302046,24,24,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Kolkata,700040,24,24,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422002,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422005,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422008,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422011,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422012,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422013,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422105,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422221,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Nashik,422501,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,411028,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,411043,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,411044,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,411045,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,411046,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,411058,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,411068,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Pune,412107,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Surat,394230,22,22,0,0
+2026-06-30-0549,2026-06-30,flipkart-minutes,Surat,395009,22,22,0,0
 ```
 
 ---

@@ -1,17 +1,19 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l
-display_name: Jivo First Pressed Sesame Oil 1 Litre Cholesterol Free With Rich Aroma Flavour Of Sesame Seeds Unrefined Daily Cooking With Multipurpose Usage 1l
+display_name: "Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage"
 platforms:
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-06-04
-observations: 67
+last_seen: 2026-06-30
+observations: 76
 min_price: 329
-max_price: 329
-latest_price: 329
+max_price: 349
+latest_price: 349
 tags:
   - type/sku-hub
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -19,18 +21,19 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo First Pressed Sesame Oil 1 Litre Cholesterol Free With Rich Aroma Flavour Of Sesame Seeds Unrefined Daily Cooking With Multipurpose Usage 1l**
+**Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage**
 
 ## Sold on
+- [[amazon-fresh]] — latest ₹349 (41.8% off)
 - [[amazon-now]] — latest ₹329 (45.2% off)
 
 ## Available in cities
 [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]]
 
-## Runs that observed this SKU (1)
-[[amazon-now-2026-06-04-1417]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (67 observations)
+## Price history (76 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -101,6 +104,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121004,329,600,45.2,1
 2026-06-04-1417,2026-06-04,amazon-now,Faridabad,121011,329,600,45.2,1
 2026-06-04-1417,2026-06-04,amazon-now,Ghaziabad,201001,329,600,45.2,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110001,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110002,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110004,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110006,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110031,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110053,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110054,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110055,349,600,41.8,1
+2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110091,349,600,41.8,1
 ```
 
 ---
