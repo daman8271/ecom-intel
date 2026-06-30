@@ -542,6 +542,61 @@ if (require.main === module) (async () => {
     // and continue. The final result.json with all SUCCEEDED pincodes is still written below.
     try {
       const ts = Date.now();
+      // ===== COMPETITOR_MODE branch (env-gated, ADDITIVE; the original jivo path below is left
+      // fully intact and runs verbatim whenever COMPETITOR_MODE is unset). REUSES the SAME
+      // per-pincode GLOW location-set (fastSetAndSearch's address-change POST + mint-retry) and
+      // the SAME almBrandId=ctnow storefront gate (baked into the search URL) as the jivo path.
+      // It only WIDENS the search to [jivo + the 8 oil-category terms], swaps the isJivo filter
+      // for the brand whitelist, tags brand+category+sub_grade, and emits the shared competitor
+      // contract. It writes NOTHING here — the runner writes only under tools/competitor/. =====
+      if (COMPETITOR_MODE) {
+        // Set the pincode location ONCE (same as the jivo path), with the mint-retry on mismatch.
+        let loc = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
+        if (!loc.glow.includes(rec.pincode)) {
+          await mintToken(page, rec.pincode);
+          loc = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
+        }
+        const matched = loc.glow.includes(rec.pincode);
+        const nowPage = loc.amazonNowPage;
+        const rows = [];
+        if (matched) {
+          // Loop the competitor queries (jivo + category terms). The first term ('jivo') already
+          // ran above as `loc`; reuse it and only re-fetch for the remaining terms. Location is
+          // already set, so token='' skips a redundant address-change POST per term.
+          for (const term of COMPETITOR_TERMS) {
+            let tr = (term === COMPETITOR_TERMS[0]) ? loc : await fastSetAndSearch(page, rec.pincode, '', term, 1);
+            let pageNo = 1;
+            while (pageNo <= MAXPAGES) {
+              for (let ri = 0; ri < tr.cards.length; ri++) {
+                const card = tr.cards[ri];
+                const title = (card.title || '') + ' ' + (PRODUCTS[card.asin] ? PRODUCTS[card.asin].name || '' : '');
+                // competitor gate: keep when the title matches the brand whitelist AND has a price.
+                if (!COMPETITOR_RE.test(title) || !numPrice(card.price)) continue;
+                const row = competitorToRow(card, rec, term, ri + 1);
+                if (!row.brand || !row.sale) continue;
+                rows.push(row);
+              }
+              if (!tr.hasNext || pageNo >= MAXPAGES) break;
+              pageNo++;
+              tr = await fastSetAndSearch(page, rec.pincode, '', term, pageNo);
+              await sleep(250 + Math.random() * 300);
+            }
+            await sleep(200 + Math.random() * 250);
+          }
+        }
+        // dedup on (store_id, brand, canonical): brand in the key (and inside canonical) keeps a
+        // competitor and a JIVO SKU of the same name+pack from collapsing into one row.
+        const ddc = new Map();
+        for (const r of rows) {
+          const k = `${r.store_id}|${(r.brand || '').toLowerCase()}|${r.canonical}`;
+          if (!ddc.has(k)) ddc.set(k, r);
+        }
+        const dedup = [...ddc.values()];
+        perPin.push({ ...rec, store_id: null, store_name: 'Amazon Now', amazon_now_page: nowPage, glow: loc.glow, matched, total_cards: loc.total, rows: dedup });
+        process.stderr.write(`[ok:comp] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH) '}nowPage=${nowPage} -> ${dedup.length} competitor SKUs across ${COMPETITOR_TERMS.length} queries (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
+        await sleep(350 + Math.random() * 450);
+        continue;
+      }
       let res = await fastSetAndSearch(page, rec.pincode, token, QUERY, 1);
       if (!res.glow.includes(rec.pincode)) {
         await mintToken(page, rec.pincode);
@@ -620,6 +675,42 @@ if (require.main === module) (async () => {
   await browser.close().catch(() => {});
 
   const allRows = perPin.flatMap((p) => p.rows);
+
+  // ===== COMPETITOR_MODE output (env-gated; mirrors platforms/blinkit/scrape.js). Writes ONLY
+  // under tools/competitor/ — NEVER the jivo result.json / data/ vault/ reviews/ baselines/
+  // paths. Output filename uses the "amazon-now_competitor_" prefix (never "Jivo-"). =====
+  if (COMPETITOR_MODE) {
+    const summary = {
+      mode: 'competitor',
+      platform: 'amazon-now',
+      pincodes_total: PINCODES.length,
+      pincodes_matched: perPin.filter((p) => p.matched).length,
+      pincodes_mismatch: perPin.filter((p) => !p.matched).length,
+      pincodes_with_competitor: perPin.filter((p) => p.rows.length > 0).length,
+      total_rows: allRows.length,
+      unique_skus: new Set(allRows.map((r) => r.canonical)).size,
+      brands: Array.from(new Set(allRows.map((r) => r.brand).filter(Boolean))).sort(),
+      wall_s: Math.round((Date.now() - t0) / 1000),
+      captured_at: new Date().toISOString(),
+    };
+    process.stderr.write('[SUMMARY:comp] ' + JSON.stringify(summary) + '\n');
+    const dataDir = path.join(COMP_DIR, 'data');
+    try { fs.mkdirSync(dataDir, { recursive: true }); } catch (_) { /* already exists */ }
+    const outJson = path.join(dataDir, `amazon-now_competitor_${COMP_DATE}.json`);
+    fs.writeFileSync(outJson, JSON.stringify({ summary, allRows }, null, 2));
+    // Append to the shared history CSV (create header if missing).
+    const csvPath = path.join(dataDir, 'competitor_history.csv');
+    const header = 'run_id,date_ist,platform,brand,category,canonical,city,pincode,store_id,pack,vol_ml,per_litre,mrp,sale,discount_pct,in_stock,rank,is_ad\n';
+    if (!fs.existsSync(csvPath)) fs.writeFileSync(csvPath, header);
+    const esc = (v) => { const s = (v == null) ? '' : String(v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+    const runId = `amazon-now-${COMP_DATE}-${Date.now()}`;
+    const lines = allRows.map((r) => [runId, COMP_DATE, 'amazon-now', r.brand, r.category, r.canonical, r.city, r.pincode, r.store_id, r.pack, r.vol_ml, r.per_litre, r.mrp, r.sale, r.discount_pct, r.in_stock, r.rank, r.is_ad].map(esc).join(','));
+    if (lines.length) fs.appendFileSync(csvPath, lines.join('\n') + '\n');
+    process.stderr.write(`[comp] wrote ${allRows.length} rows -> ${outJson} and appended history -> ${csvPath}\n`);
+    console.log(JSON.stringify(summary));
+    return;
+  }
+
   const tiers = {};
   for (const r of allRows) tiers[r.now_eta || '(none)'] = (tiers[r.now_eta || '(none)'] || 0) + 1;
   const summary = {
