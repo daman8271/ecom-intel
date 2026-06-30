@@ -59,13 +59,17 @@ python3 "$ROOT/tools/competitor/to_vault.py" "$DATE_IST" || echo "[comp-daily] t
   fi
 ) || echo "[comp-daily] ecom-intel push step had an issue (continuing)"
 
-# ---- PUSH 2: propagate to the JIVO data bank (losslessly copies the ecom vault, then pushes) ----
-if [ "${COMP_SKIP_DATABANK:-0}" != "1" ] && [ -x /root/jivo-data-bank/bin/daily_rebuild.sh ]; then
-  echo "[comp-daily] triggering JIVO data bank rebuild (folds competitor data + pushes) ..."
-  if bash /root/jivo-data-bank/bin/daily_rebuild.sh >> "$ROOT/logs/competitor-databank.log" 2>&1; then
-    echo "[comp-daily] data bank rebuilt + pushed"
+# ---- PUSH 2: propagate to the JIVO data bank (rebuild -> verify -> PUSH both remotes) ----
+# Use run_daily.sh, NOT daily_rebuild.sh: daily_rebuild only COMMITS locally, whereas
+# run_daily wraps rebuild + push_both (private remote + embedded ecom-intel copy) + notify.
+# Since the fixed 13:30 data-bank cron was removed (goal #35), THIS is now the path that
+# actually pushes the data bank — so it must be the full run_daily wrapper.
+if [ "${COMP_SKIP_DATABANK:-0}" != "1" ] && [ -x /root/jivo-data-bank/bin/run_daily.sh ]; then
+  echo "[comp-daily] triggering JIVO data bank fusion (rebuild + verify + PUSH both remotes) ..."
+  if bash /root/jivo-data-bank/bin/run_daily.sh >> "$ROOT/logs/competitor-databank.log" 2>&1; then
+    echo "[comp-daily] data bank fused + pushed"
   else
-    echo "[comp-daily] data bank rebuild non-zero exit (competitor data is still safe in ecom-intel; retries next run)"
+    echo "[comp-daily] data bank fusion non-zero exit (competitor data is still safe in ecom-intel; retries next run)"
   fi
 fi
 

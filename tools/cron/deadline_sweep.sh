@@ -65,4 +65,36 @@ export SWEEP_DEADLINE="$T"
 [ -n "${RUNNER_OVERRIDE:-}" ] && export RUNNER_OVERRIDE
 
 echo "[$(date '+%F %T')] deadline_sweep($SLOT): launching run_all.sh SWEEP_ID=$SWEEP_ID deadline=$(date -d "@$T" '+%F %T')"
-exec ./run_all.sh
+# NOTE: deliberately NOT `exec` — we need control back after the sweep so the
+# event-driven downstream chain below can fire the instant the sweep finishes.
+./run_all.sh
+RUN_ALL_RC=$?
+
+# ---- EVENT-DRIVEN DOWNSTREAM CHAIN (replaces the old fixed 12:15 competitor +
+#      13:30 data-bank crons; goal #35, 2026-07-01) ---------------------------
+# The instant the noon price sweep finishes, the ecom price vault is freshly
+# rebuilt AND the sweep-chain scrape lock was already released (run_all drops it
+# BEFORE the 12:00 batch barrier), so JIVO is done hitting Blinkit/Zepto and it is
+# safe to scrape competitor prices now. tools/competitor/run_daily.sh scrapes
+# Blinkit+Zepto, folds today's capture into the ecom vault, pushes ecom-intel,
+# then triggers the JIVO data-bank fusion + push. Net effect: the data bank lands
+# ~12:20 (right after the sweep) instead of waiting for a fixed 13:30 clock, and
+# it auto-slides later if the sweep ever runs late — no timing to tune.
+#
+# Guards: noon (12:00) slot only; production only (skip W2/W4 test + sim runs);
+# only when the sweep itself succeeded (rc=0, so the vault is fresh); kill switch
+# SWEEP_DOWNSTREAM=0. This block can NEVER change the sweep's own exit status.
+if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+   && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
+   && [ "$RUN_ALL_RC" = "0" ] && [ -x ./tools/competitor/run_daily.sh ]; then
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): sweep DONE (rc=0) -> firing downstream competitor + data-bank chain"
+  if ./tools/competitor/run_daily.sh >> logs/competitor-cron.log 2>&1; then
+    echo "[$(date '+%F %T')] deadline_sweep($SLOT): downstream chain OK (competitor folded + data bank fused & pushed)"
+  else
+    echo "[$(date '+%F %T')] deadline_sweep($SLOT): downstream chain returned non-zero — see logs/competitor-cron.log (sweep unaffected)"
+  fi
+else
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): downstream chain skipped (slot=$SLOT rc=$RUN_ALL_RC downstream=${SWEEP_DOWNSTREAM:-1})"
+fi
+
+exit "$RUN_ALL_RC"
