@@ -119,4 +119,25 @@ else
   echo "[$(date '+%F %T')] deadline_sweep($SLOT): site refresh skipped (slot=$SLOT rc=$RUN_ALL_RC sites=${SWEEP_SITES:-1})"
 fi
 
+# ---- EVENT-DRIVEN today/ SNAPSHOT (jivo-today, 2026-07-01) ------------------
+# jivo-today: the instant the noon sweep lands today's data AND the downstream
+# competitor + data-bank chain above has committed vault/competitor/<DATE>, take
+# the verbatim per-day `today/` MD snapshot across all 4 vaults (bin/build_today.sh).
+# Event-driven off the sweep finishing — no fixed clock — so it auto-slides if the
+# sweep ever runs late. Gated identically to the two blocks above: noon (12:00)
+# slot only; production only (skip W2/W4 test + sim runs); only when the sweep
+# itself succeeded (rc=0, vault fresh). build_today self-gates (ready-signal) so an
+# early/duplicate call is a safe no-op, and the */20 12-16 poller is the backstop.
+# Best-effort (|| true): this block can NEVER change the sweep's own exit status.
+# Kill switch SWEEP_TODAY=0.
+if [ "${SWEEP_TODAY:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+   && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
+   && [ "$RUN_ALL_RC" = "0" ] && [ -x ./bin/build_today.sh ]; then
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): sweep DONE -> firing today/ snapshot (build_today.sh)"
+  ./bin/build_today.sh >> logs/build_today.cron.log 2>&1 || true
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): today/ snapshot call returned (see logs/build_today.cron.log; sweep unaffected)"
+else
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): today/ snapshot skipped (slot=$SLOT rc=$RUN_ALL_RC today=${SWEEP_TODAY:-1})"
+fi
+
 exit "$RUN_ALL_RC"

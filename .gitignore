@@ -73,3 +73,7 @@ secrets.env.bak*
 *.lock
 secrets.env.bak.*
 collectors/
+
+# jivo-today: build_today.sh staging dirs (today/ itself IS committed)
+today.tmp/
+today.prev/
