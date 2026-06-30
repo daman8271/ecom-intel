@@ -52,17 +52,19 @@ platform are in `output/`.
 
 True per-pincode ground truth across the **25 target cities (1,885 distinct pincodes)**, replacing
 anchor extrapolation. Honest status per `(platform,pincode)` in `data/coverage/ledger.csv`
-(`price_captured | serviceable_no_jivo | not_serviceable | error`). Full census 2026-06-29.
+(`price_captured | serviceable_no_jivo | not_serviceable | error`). **Full 5-platform census — latest as of 2026-06-30.**
 
 | Platform | Serviceable (of 1,885) | Jivo on sale | Notes |
 |---|--:|--:|---|
-| **Zepto** | **693** | 693 | up from ~214 anchors. 0 in Visakhapatnam / Bhubaneswar / Thiruvananthapuram (doesn't operate there). |
-| **Blinkit** | **902** | **486** | delivers widely but Jivo only in 486 → **416-pincode delivers-but-no-Jivo gap**. |
-| **Flipkart-minutes** | **340** | 340 | fast API once cookies re-imported. Reaches Vizag (4) where Zepto is 0. |
-| **Combined (any QC)** | **935 / 1,885 (50%)** | **806 (43%)** | was 234 (12%) on the old anchor model the same morning. |
+| **Amazon Fresh** | **973** | **881** | widest network; richest catalog (39 SKUs). 92-pincode gap (Nagpur 27, TVM 19). Only Nashik dark. |
+| **Blinkit** | **902** | **486** | all 25 cities; **416-pincode delivers-but-no-Jivo gap** (Chennai 49, Kochi 46, Ahmedabad 41). |
+| **Zepto** | **693** | 693 | Jivo everywhere it serves; ⚠ only 33% in-stock (2/3 OOS). 0 in Vizag/Bhubaneswar/TVM. |
+| **Flipkart-minutes** | **340** | 340 | metro-led; reaches Vizag (4) where Zepto is 0. Cookies expire ~daily → browser fallback. |
+| **Amazon Now** | **132** | 132 | narrowest; 88% just Bengaluru+Chennai. 0 in 19 cities — metro express lane only. |
+| **Combined (any platform)** | **1,173 / 1,885 (62%)** | **1,071 (57%)** | was 234 (12%) on the old anchor model — ~5× real coverage. |
 
-- **Daily cron now runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) → QC scrapes the **Jivo-priced subsets** (blinkit 486 / zepto 693 / fkm 340), not anchors. Weekly full census refreshes the set.
-- **Amazon = Wave 2** — amazon-fresh (acct 259) + amazon-now (acct 520), **separate accounts, never summed/co-scraped**; full per-pincode via `tools/coverage/amazon_chunked.sh` (per-city resilient), guarded from colliding with the daily cron. Live HTML: `darkstore-dashboard.vercel.app`.
+- **Daily cron runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) → QC scrapes the **Jivo-priced subsets** (blinkit 486 / zepto 693 / fkm 340), not anchors. Weekly full census refreshes the set.
+- **Amazon Wave 2 COMPLETE** — amazon-fresh (acct 259, 973) + amazon-now (acct 520, 132), **separate accounts, never summed/co-scraped**; full per-pincode via `tools/coverage/amazon_chunked.sh` → `amazon_merge.py` → `amazon_ledger.py`. Live HTML: `darkstore-dashboard.vercel.app` (5-platform).
 
 ## Amazon Fresh — how the logged-in scrape works (no proxy)
 - **One Amazon account, cookies transplanted.** `secrets/amazon-fresh.storageState.json`

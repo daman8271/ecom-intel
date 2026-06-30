@@ -110,8 +110,9 @@ and `tools/pincodes/universe25.py`).
 - **Pilot (verified 2026-06-29):** Blinkit across the 5 previously-zero cities (481
   pincodes) — honest result: Blinkit *delivers* widely but **Jivo is barely stocked**
   there (only Nashik returned Jivo prices). A real distribution gap, now measured.
-- **Amazon = Wave 2:** amazon-fresh + amazon-now get the same treatment on **2
-  dedicated accounts** (removes the account-global serialization), pending creds.
+- **Amazon Wave 2 — COMPLETE (2026-06-30):** amazon-fresh (acct 259, **973** serviceable —
+  widest network) + amazon-now (acct 520, **132**) on **2 separate accounts, never summed**.
+  **Full 5-platform combined: 1,173 / 1,885 reachable (62%), 1,071 Jivo-priced** — up from 234 (12%).
 
 ---
 
