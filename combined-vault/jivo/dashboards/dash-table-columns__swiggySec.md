@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "hsr",
-  "BASE_MRP": 225.0,
+  "AREA_NAME": "banjara hills",
+  "BASE_MRP": 375.0,
   "BRAND": "jivo",
-  "CITY": "Bangalore",
+  "CITY": "Hyderabad",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
   "COMBO_UNITS_SOLD": null,
-  "GMV": 225.0,
-  "ITEM_CODE": "60711",
+  "GMV": 375.0,
+  "ITEM_CODE": "15685",
   "L1_CATEGORY": "edible oils and ghee",
   "L2_CATEGORY": "edible oils",
-  "L3_CATEGORY": "mustard oil",
-  "ORDERED_DATE": "2026-01-09",
-  "PRODUCT_NAME": "jivo cold press kachi ghani mustard oil",
-  "STORE_ID": "1403139",
+  "L3_CATEGORY": "canola cold pressed oil",
+  "ORDERED_DATE": "2025-11-20",
+  "PRODUCT_NAME": "jivo canola cold press edible oil",
+  "STORE_ID": "1267913",
   "UNITS_SOLD": 1,
   "VARIANT": "1 ltr",
-  "id": 616713
+  "id": 378434
  }
 }
 ```
