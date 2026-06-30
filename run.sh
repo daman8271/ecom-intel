@@ -69,6 +69,13 @@ cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 # Guarded: if the tool is absent this is a no-op and behavior is exactly as before.
 [ -f "$DIR/tools/pricematch/add_pricematch_sheet.py" ] && python3 "$DIR/tools/pricematch/add_pricematch_sheet.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
 
+# ---- Availability sheet: list EVERY serviceable pincode marked Jivo Yes/No, so the ----
+# "delivers but Jivo NOT available" pincodes are visible (the availability-tracker's point).
+# Per-pincode platforms only; best-effort. Runs before the Leadership View regen below.
+case "$P" in blinkit|zepto|flipkart-minutes|amazon-fresh|amazon-now)
+  [ -f "$DIR/tools/availability/add_availability_sheet.py" ] && python3 "$DIR/tools/availability/add_availability_sheet.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true ;;
+esac
+
 # ---- Leadership View: regenerate the FIRST sheet LAST (best-effort). ----
 # MUST stay the final workbook-touching step: it redraws the chart-free durable
 # dashboard so no earlier openpyxl round-trip / viewer quirk can blank page 1.

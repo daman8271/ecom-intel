@@ -21,21 +21,23 @@ Each platform was checked at **every one of the 1,885 pincodes**.
 
 **Read it as:** of the 1,885 city pincodes, **1,173 are reachable** by at least one platform and **1,071 have Jivo on sale** today. (Was 234 / 12% on the old anchor model.)
 
-## 3. What the daily cron scrapes (the Jivo-priced subsets)
-The daily run tracks only the pincodes where Jivo is actually sold (price-tracking set):
+## 3. What the daily cron scrapes (the SERVICEABLE footprint — marks where Jivo is/isn't)
+**Updated 2026-07-01:** the daily run scrapes **every pincode the platform delivers to**
+(the serviceable set), and each report carries an **"Availability" sheet** marking
+**Jivo: Yes / No** per pincode — so the "delivers but Jivo NOT available" pincodes are
+visible, not dropped. (Previously the daily set was Jivo-only.)
 
-| Platform | Daily pincodes | Grain |
-|---|--:|---|
-| Amazon Fresh | 881 | per-pincode (in noon chain; ~5h, chain starts 01:19) |
-| Zepto | 693 | per-pincode |
-| Blinkit | 486 | per-pincode |
-| Flipkart Minutes | 340 | per-pincode |
-| Amazon Now | 132 | per-pincode |
-| BigBasket | 227 | national price / pincode serviceability |
-| Amazon.in / Flipkart.com | 40 each | national 40-pin sample |
-| Swiggy Instamart | 0 | **NOT RUNNING** (VPS IP WAF-blocked) |
+| Platform | Daily pincodes (serviceable) | Jivo on sale | Delivers but **NO Jivo** (marked) |
+|---|--:|--:|--:|
+| Amazon Fresh | **973** | 881 | **92** |
+| Blinkit | **902** | 486 | **416** |
+| Zepto | 693 | 693 | 0 |
+| Flipkart Minutes | 340 | 340 | 0 |
+| Amazon Now | 132 | 132 | 0 |
 
-Reports land **12:00 noon** daily (deadline-aligned cron, fires 00:30).
+National-price / serviceability-only crawlers are unchanged: BigBasket 227, Amazon.in &
+Flipkart.com 40-pin national samples. Swiggy Instamart not running. Reports land **12:00 noon**
+(Amazon Fresh ~5–6h, chain starts ~01:02). Effective from the **2026-07-02** cron.
 
 ## 4. Definitions
 - **Serviceable** = the platform delivers to that pincode (`price_captured` + `serviceable_no_jivo`).
