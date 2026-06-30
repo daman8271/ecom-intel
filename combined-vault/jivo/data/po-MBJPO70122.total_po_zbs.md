@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,2026-06-02,74545,38.5,BANGALORE,5.0,2026-05-27,2026-06-08,MBJPO70122,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74545,2026-06-27
-244.76,20.0,SWIGGY,2026-06-02,74546,256.998,BANGALORE,20.0,2026-05-27,2026-06-08,MBJPO70122,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74546,2026-06-27
+27.5,0.0,SWIGGY,2026-06-02,74545,38.5,BANGALORE,5.0,2026-05-27,2026-06-08,MBJPO70122,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74545,2026-06-30
+244.76,20.0,SWIGGY,2026-06-02,74546,256.998,BANGALORE,20.0,2026-05-27,2026-06-08,MBJPO70122,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74546,2026-06-30
 ```
 
 ---

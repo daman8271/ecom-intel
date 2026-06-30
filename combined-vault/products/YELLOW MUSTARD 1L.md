@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0120
 product: "YELLOW MUSTARD 1L"
 sap_codes:
   - FG0000328
@@ -24,6 +25,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0120` |
 | Product | YELLOW MUSTARD 1L |
 | JIVO SKU / SAP code | `FG0000328`, `FG0000329` |
 | canonical_sku(s) | `jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-1l`, `edohdgdyauqswvqv`, `jivo-first-pressed-yellow-mustard-oil-1-litre-1l` |
@@ -36,14 +38,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 259 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 259 | 259 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 259 | 259 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 259 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 269 | 259 | -3.72 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 269 | 259 | -3.72 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 269 | 355 | 31.97 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 269 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -68,3 +70,16 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - MUSTARD]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000328`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000328]]
+- **163 boxes:** [[box-135354]] · [[box-135355]] · [[box-135356]] … +160 more (tag `bridge/FG0000328`)
+- **19 boxes:** [[barcode__dispatch__reports__boxes-135354]] · [[barcode__dispatch__reports__boxes-135355]] · [[barcode__dispatch__reports__boxes-135356]] … +16 more (tag `bridge/FG0000328`)
+- **4 pallets:** [[pal-2825]] · [[pal-2826]] · [[pal-2827]] … +1 more (tag `bridge/FG0000328`)
+
+**`FG0000329`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000329]]
+

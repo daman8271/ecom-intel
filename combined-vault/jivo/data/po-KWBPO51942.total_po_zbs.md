@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-138.1,320.0,SWIGGY,2026-01-03,59314,145.00475,KOLKATA,320.0,2025-12-23,2026-01-04,KWBPO51942,GRN DONE,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59314,2026-06-27
-2619.05,12.0,SWIGGY,2026-01-03,59315,2750.0025,KOLKATA,44.0,2025-12-23,2026-01-04,KWBPO51942,GRN DONE,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59315,2026-06-27
+138.1,320.0,SWIGGY,2026-01-03,59314,145.00475,KOLKATA,320.0,2025-12-23,2026-01-04,KWBPO51942,GRN DONE,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59314,2026-06-30
+2619.05,12.0,SWIGGY,2026-01-03,59315,2750.0025,KOLKATA,44.0,2025-12-23,2026-01-04,KWBPO51942,GRN DONE,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59315,2026-06-30
 ```
 
 ---

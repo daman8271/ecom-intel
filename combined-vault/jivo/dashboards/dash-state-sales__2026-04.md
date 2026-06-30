@@ -232,6 +232,10 @@ Up: [[dashboards-index]] · [[2026-04]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "MUSTARD KACCHI GHANI"
    },
    {
@@ -376,6 +380,10 @@ Up: [[dashboards-index]] · [[2026-04]]
    },
    {
     "category": "SUNFLOWER",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
+   },
+   {
+    "category": "SUNFLOWER",
     "sub_category": "SUNFLOWER"
    },
    {
@@ -384,8 +392,8 @@ Up: [[dashboards-index]] · [[2026-04]]
    }
   ]
  },
- "mapped_units": 246332.0,
- "mapped_value": 246332.0,
+ "mapped_units": 267194.0,
+ "mapped_value": 267194.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -397,71 +405,84 @@ Up: [[dashboards-index]] · [[2026-04]]
   {
    "by_platform": {
     "AMAZON": 10694.0,
-    "BLINKIT": 4201.0,
+    "BLINKIT": 8509.0,
     "FLIPKART": 656.0,
     "JIO MART": 55.0,
     "SWIGGY": 7912.0,
     "ZEPTO": 16117.0
    },
    "state": "DELHI",
-   "units": 39635.0,
-   "value": 39635.0
+   "units": 43943.0,
+   "value": 43943.0
   },
   {
    "by_platform": {
     "AMAZON": 12903.0,
     "BIG BASKET": 1283.0,
-    "BLINKIT": 1391.0,
+    "BLINKIT": 2750.0,
     "FLIPKART": 583.0,
     "JIO MART": 85.0,
     "SWIGGY": 12794.0,
     "ZEPTO": 7086.0
    },
    "state": "MAHARASHTRA",
-   "units": 36125.0,
-   "value": 36125.0
+   "units": 37484.0,
+   "value": 37484.0
   },
   {
    "by_platform": {
     "AMAZON": 7346.0,
     "BIG BASKET": 385.0,
-    "BLINKIT": 1182.0,
+    "BLINKIT": 2290.0,
     "FLIPKART": 441.0,
     "JIO MART": 31.0,
     "SWIGGY": 11615.0,
     "ZEPTO": 9385.0
    },
    "state": "KARNATAKA",
-   "units": 30385.0,
-   "value": 30385.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 8638.0,
-    "BIG BASKET": 1551.0,
-    "BLINKIT": 1914.0,
-    "FLIPKART": 932.0,
-    "JIO MART": 84.0,
-    "SWIGGY": 3793.0,
-    "ZEPTO": 8258.0
-   },
-   "state": "UTTAR PRADESH",
-   "units": 25170.0,
-   "value": 25170.0
+   "units": 31493.0,
+   "value": 31493.0
   },
   {
    "by_platform": {
     "AMAZON": 5988.0,
     "BIG BASKET": 3689.0,
-    "BLINKIT": 3294.0,
+    "BLINKIT": 6434.0,
     "FLIPKART": 618.0,
     "JIO MART": 39.0,
     "SWIGGY": 4053.0,
     "ZEPTO": 6854.0
    },
    "state": "HARYANA",
-   "units": 24535.0,
-   "value": 24535.0
+   "units": 27675.0,
+   "value": 27675.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 8638.0,
+    "BIG BASKET": 1551.0,
+    "BLINKIT": 3698.0,
+    "FLIPKART": 932.0,
+    "JIO MART": 84.0,
+    "SWIGGY": 3793.0,
+    "ZEPTO": 8258.0
+   },
+   "state": "UTTAR PRADESH",
+   "units": 26954.0,
+   "value": 26954.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 2560.0,
+    "BLINKIT": 13127.0,
+    "FLIPKART": 432.0,
+    "JIO MART": 37.0,
+    "SWIGGY": 2299.0,
+    "ZEPTO": 1724.0
+   },
+   "state": "PUNJAB",
+   "units": 20179.0,
+   "value": 20179.0
   },
   {
    "by_platform": {
@@ -478,84 +499,71 @@ Up: [[dashboards-index]] · [[2026-04]]
   },
   {
    "by_platform": {
-    "AMAZON": 2560.0,
-    "BLINKIT": 6512.0,
-    "FLIPKART": 432.0,
-    "JIO MART": 37.0,
-    "SWIGGY": 2299.0,
-    "ZEPTO": 1724.0
-   },
-   "state": "PUNJAB",
-   "units": 13564.0,
-   "value": 13564.0
-  },
-  {
-   "by_platform": {
     "AMAZON": 5899.0,
     "BIG BASKET": 255.0,
-    "BLINKIT": 103.0,
+    "BLINKIT": 157.0,
     "FLIPKART": 861.0,
     "JIO MART": 103.0,
     "SWIGGY": 1160.0,
     "ZEPTO": 2.0
    },
    "state": "WEST BENGAL",
-   "units": 8383.0,
-   "value": 8383.0
+   "units": 8437.0,
+   "value": 8437.0
   },
   {
    "by_platform": {
     "AMAZON": 2165.0,
     "BIG BASKET": 7.0,
-    "BLINKIT": 4.0,
+    "BLINKIT": 6.0,
     "FLIPKART": 232.0,
     "JIO MART": 28.0,
     "SWIGGY": 3892.0,
     "ZEPTO": 1281.0
    },
    "state": "TAMIL NADU",
-   "units": 7609.0,
-   "value": 7609.0
+   "units": 7611.0,
+   "value": 7611.0
   },
   {
    "by_platform": {
     "AMAZON": 250.0,
     "BIG BASKET": 702.0,
-    "BLINKIT": 1116.0,
+    "BLINKIT": 2301.0,
     "FLIPKART": 63.0,
     "JIO MART": 5.0,
     "SWIGGY": 3162.0,
     "ZEPTO": 213.0
    },
    "state": "CHANDIGARH",
-   "units": 5511.0,
-   "value": 5511.0
+   "units": 6696.0,
+   "value": 6696.0
   },
   {
    "by_platform": {
     "AMAZON": 2940.0,
     "BIG BASKET": 246.0,
-    "BLINKIT": 1.0,
+    "BLINKIT": 4.0,
     "FLIPKART": 319.0,
     "JIO MART": 20.0,
     "SWIGGY": 1629.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 5155.0,
-   "value": 5155.0
+   "units": 5158.0,
+   "value": 5158.0
   },
   {
    "by_platform": {
     "AMAZON": 1836.0,
-    "BLINKIT": 97.0,
+    "BLINKIT": 197.0,
     "FLIPKART": 189.0,
     "JIO MART": 12.0,
     "SWIGGY": 1963.0,
     "ZEPTO": 3.0
    },
    "state": "RAJASTHAN",
-   "units": 4100.0,
-   "value": 4100.0
+   "units": 4200.0,
+   "value": 4200.0
   },
   {
    "by_platform": {
@@ -595,15 +603,15 @@ Up: [[dashboards-index]] · [[2026-04]]
    "by_platform": {
     "AMAZON": 920.0,
     "BIG BASKET": 43.0,
-    "BLINKIT": 378.0,
+    "BLINKIT": 758.0,
     "FLIPKART": 96.0,
     "JIO MART": 29.0,
     "SWIGGY": 920.0,
     "ZEPTO": 192.0
    },
    "state": "UTTARAKHAND",
-   "units": 2578.0,
-   "value": 2578.0
+   "units": 2958.0,
+   "value": 2958.0
   },
   {
    "by_platform": {
@@ -621,13 +629,14 @@ Up: [[dashboards-index]] · [[2026-04]]
    "by_platform": {
     "AMAZON": 1409.0,
     "BIG BASKET": 20.0,
+    "BLINKIT": 1.0,
     "FLIPKART": 505.0,
     "JIO MART": 30.0,
     "SWIGGY": 54.0
    },
    "state": "ASSAM",
-   "units": 2018.0,
-   "value": 2018.0
+   "units": 2019.0,
+   "value": 2019.0
   },
   {
    "by_platform": {
@@ -644,6 +653,17 @@ Up: [[dashboards-index]] · [[2026-04]]
   },
   {
    "by_platform": {
+    "AMAZON": 570.0,
+    "BLINKIT": 1195.0,
+    "FLIPKART": 82.0,
+    "JIO MART": 21.0
+   },
+   "state": "JAMMU AND KASHMIR",
+   "units": 1868.0,
+   "value": 1868.0
+  },
+  {
+   "by_platform": {
     "AMAZON": 1434.0,
     "FLIPKART": 242.0
    },
@@ -653,37 +673,26 @@ Up: [[dashboards-index]] · [[2026-04]]
   },
   {
    "by_platform": {
+    "AMAZON": 734.0,
+    "BLINKIT": 626.0,
+    "FLIPKART": 74.0,
+    "JIO MART": 10.0
+   },
+   "state": "HIMACHAL PRADESH",
+   "units": 1444.0,
+   "value": 1444.0
+  },
+  {
+   "by_platform": {
     "AMAZON": 537.0,
-    "BLINKIT": 6.0,
+    "BLINKIT": 20.0,
     "FLIPKART": 57.0,
     "JIO MART": 1.0,
     "SWIGGY": 776.0
    },
    "state": "GOA",
-   "units": 1377.0,
-   "value": 1377.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 570.0,
-    "BLINKIT": 665.0,
-    "FLIPKART": 82.0,
-    "JIO MART": 21.0
-   },
-   "state": "JAMMU AND KASHMIR",
-   "units": 1338.0,
-   "value": 1338.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 734.0,
-    "BLINKIT": 347.0,
-    "FLIPKART": 74.0,
-    "JIO MART": 10.0
-   },
-   "state": "HIMACHAL PRADESH",
-   "units": 1165.0,
-   "value": 1165.0
+   "units": 1391.0,
+   "value": 1391.0
   },
   {
    "by_platform": {
@@ -804,8 +813,8 @@ Up: [[dashboards-index]] · [[2026-04]]
   }
  ],
  "sub_categories": [],
- "total_units": 246347.0,
- "total_value": 246347.0,
+ "total_units": 267209.0,
+ "total_value": 267209.0,
  "year": 2026
 }
 ```

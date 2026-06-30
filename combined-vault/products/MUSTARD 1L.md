@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0011
 product: "MUSTARD 1L"
 sap_codes:
   - FG0000030
@@ -29,6 +30,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0011` |
 | Product | MUSTARD 1L |
 | JIVO SKU / SAP code | `FG0000030` |
 | canonical_sku(s) | `jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommended-for-roasting-frying-baking-all-type-of-cuisines-1l`, `edogdvwygjndyrqp`, `jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l`, `jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l`, `jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l`, `jivo-kachi-ghani-cold-pressed-mustard-oil-1l`, `cold-press-kachi-ghani-mustard-oil-1l` |
@@ -41,18 +43,18 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 209 | 181 | -13.4 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 209 | 159 | -23.92 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 209 | 159 | -23.92 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - bigbasket\|bigbasket]] | 209 | 202.09 | -3.31 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - blinkit\|blinkit]] | 209 | 171 | -18.18 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 209 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 219 | 181 | -17.35 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 219 | 181 | -17.35 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 219 | 181 | -17.35 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - bigbasket\|bigbasket]] | 219 | 202.09 | -7.72 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - blinkit\|blinkit]] | 219 | 171 | -21.92 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 219 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 | [[Platform - flipkart\|flipkart-minutes]] | 209 | 181 | -13.4 | 🟢 BELOW | SVD | 2026-06-27 |
-| [[Platform - zepto\|zepto]] | 209 | 181 | -13.4 | 🟢 BELOW | SVD | 2026-06-28 |
+| [[Platform - zepto\|zepto]] | 219 | 181 | -17.35 | 🟢 BELOW | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -76,3 +78,13 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - MUSTARD]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - zepto]] · [[Platform - blinkit]] · [[Platform - bigbasket]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000030`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000030]]
+- **5195 boxes:** [[box-100226]] · [[box-100227]] · [[box-100228]] … +5192 more (tag `bridge/FG0000030`)
+- **115 pallets:** [[pal-1002]] · [[pal-1003]] · [[pal-1005]] … +112 more (tag `bridge/FG0000030`)
+- **108 boxes:** [[barcode__dispatch__reports__boxes-140319]] · [[barcode__dispatch__reports__boxes-140320]] · [[barcode__dispatch__reports__boxes-140321]] … +105 more (tag `bridge/FG0000030`)
+

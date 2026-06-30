@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-190.48,0.0,SWIGGY,,54816,200.00375,CENTRAL GOA,16.0,2025-10-25,2025-11-09,GCAPO19020,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54816,2026-06-27
-165.71,0.0,SWIGGY,,54817,173.99575,CENTRAL GOA,80.0,2025-10-25,2025-11-09,GCAPO19020,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54817,2026-06-27
-642.86,0.0,SWIGGY,,54818,675.0025,CENTRAL GOA,4.0,2025-10-25,2025-11-09,GCAPO19020,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54818,2026-06-27
+190.48,0.0,SWIGGY,,54816,200.00375,CENTRAL GOA,16.0,2025-10-25,2025-11-09,GCAPO19020,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54816,2026-06-30
+165.71,0.0,SWIGGY,,54817,173.99575,CENTRAL GOA,80.0,2025-10-25,2025-11-09,GCAPO19020,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54817,2026-06-30
+642.86,0.0,SWIGGY,,54818,675.0025,CENTRAL GOA,4.0,2025-10-25,2025-11-09,GCAPO19020,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54818,2026-06-30
 ```
 
 ---

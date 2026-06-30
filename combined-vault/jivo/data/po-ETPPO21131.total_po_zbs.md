@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,10.0,SWIGGY,2026-01-31,61098,1100.001,NOIDA,10.0,2026-01-13,2026-02-04,ETPPO21131,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61098,2026-06-27
-533.33,0.0,SWIGGY,2026-01-31,61099,559.9967347,NOIDA,49.0,2026-01-13,2026-02-04,ETPPO21131,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61099,2026-06-27
+1047.62,10.0,SWIGGY,2026-01-31,61098,1100.001,NOIDA,10.0,2026-01-13,2026-02-04,ETPPO21131,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61098,2026-06-30
+533.33,0.0,SWIGGY,2026-01-31,61099,559.9967347,NOIDA,49.0,2026-01-13,2026-02-04,ETPPO21131,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61099,2026-06-30
 ```
 
 ---

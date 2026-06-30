@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0006
 product: "CANOLA 15L"
 sap_codes:
   - FG0000015
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0006` |
 | Product | CANOLA 15L |
 | JIVO SKU / SAP code | `FG0000015` |
 | canonical_sku(s) | `jivo-canola-cold-press-oilcooking-oil-15-ltr-cooking-oil-for-daily-use-recommended-by-indian-medical-association-15l`, `jivo-refine-canola-oil-tin-15l` |
@@ -65,3 +67,12 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - CANOLA]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - zepto]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000015`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000015]]
+- **120 boxes:** [[box-88255]] · [[box-88256]] · [[box-88257]] … +117 more (tag `bridge/FG0000015`)
+- **2 pallets:** [[pal-1845]] · [[pal-1867]]
+

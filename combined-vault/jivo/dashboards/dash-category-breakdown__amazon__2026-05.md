@@ -22,7 +22,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 71142.0,
+    "ltrs": 70982.0,
     "name": "SUNFLOWER"
    },
    {
@@ -34,7 +34,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 18649.0,
+    "ltrs": 18644.0,
     "name": "BLENDED"
    },
    {
@@ -44,7 +44,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
   ],
   "sub_categories": [
    {
-    "ltrs": 71142.0,
+    "ltrs": 70982.0,
     "name": "SUNFLOWER"
    },
    {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 18649.0,
+    "ltrs": 18644.0,
     "name": "GOLD"
    },
    {
@@ -64,7 +64,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SOYABEAN"
    }
   ],
-  "total_ltrs": 201990.0
+  "total_ltrs": 201825.0
  },
  "errors": [],
  "month": 5,
@@ -80,7 +80,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "OLIVE"
    },
    {
-    "ltrs": 50617.0,
+    "ltrs": 50632.0,
     "name": "CANOLA"
    },
    {
@@ -106,7 +106,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 50617.0,
+    "ltrs": 50632.0,
     "name": "CANOLA"
    },
    {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SESAME OIL"
    }
   ],
-  "total_ltrs": 173110.5
+  "total_ltrs": 173125.5
  },
  "source": "primary",
  "year": 2026

@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0131
 product: "RICE BRAN 4L"
 sap_codes:
   - FG0000383
@@ -21,23 +22,21 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0131` |
 | Product | RICE BRAN 4L |
 | JIVO SKU / SAP code | `FG0000383` |
 | canonical_sku(s) | `jivo-rice-bran-oil-4-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-4l` |
 | Category | [[Category - RICE BRAN\|RICE BRAN]] |
-| Sub-category | RICE BRAN |
-| Brand | JIVO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 4L |
-| Per-unit | 4.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 719 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 759 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -61,3 +60,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - RICE BRAN]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000383`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000383]]
+

@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-366.67,0.0,SWIGGY,,74990,385.0034375,BANGALORE,32.0,2026-05-30,2026-06-11,MBEPO26326,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74990,2026-06-27
-154.29,0.0,SWIGGY,,74991,162.0042917,BANGALORE,240.0,2026-05-30,2026-06-11,MBEPO26326,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74991,2026-06-27
+366.67,0.0,SWIGGY,,74990,385.0034375,BANGALORE,32.0,2026-05-30,2026-06-11,MBEPO26326,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74990,2026-06-30
+154.29,0.0,SWIGGY,,74991,162.0042917,BANGALORE,240.0,2026-05-30,2026-06-11,MBEPO26326,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74991,2026-06-30
 ```
 
 ---

@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0002
 product: "EXTRA LIGHT 1L"
 sap_codes:
   - FG0000005
@@ -29,6 +30,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0002` |
 | Product | EXTRA LIGHT 1L |
 | JIVO SKU / SAP code | `FG0000005` |
 | canonical_sku(s) | `jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-cooking-dressings-salad-soups-dips-and-marinades-all-culinary-uses-light-flavorful-high-mufa-rich-in-antioxidants-1l`, `edoge5whzbgw4ska`, `jivo-extra-light-olive-oil-1-litre-1l`, `jivo-extra-light-olive-oil-1l`, `extra-light-olive-oil-1l` |
@@ -41,17 +43,17 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 599 | 499 | -16.69 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 599 | 499 | -16.69 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 599 | 499 | -16.69 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - bigbasket\|bigbasket]] | 599 | 1284 | 114.36 | 🔴 ABOVE | SVD | 2026-06-28 |
-| [[Platform - blinkit\|blinkit]] | 599 | 499 | -16.69 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 599 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - zepto\|zepto]] | 599 | 499 | -16.69 | 🟢 BELOW | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 619 | 499 | -19.39 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 619 | 499 | -19.39 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 619 | 499 | -19.39 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - bigbasket\|bigbasket]] | 619 | 1284 | 107.43 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - blinkit\|blinkit]] | 619 | 624 | 0.81 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 619 | — | — | ⚪ OOS | BAU | 2026-06-29 |
+| [[Platform - zepto\|zepto]] | 619 | 499 | -19.39 | 🟢 BELOW | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -76,3 +78,12 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - zepto]] · [[Platform - blinkit]] · [[Platform - bigbasket]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000005`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000005]]
+- **290 boxes:** [[box-17767]] · [[box-17769]] · [[box-17770]] … +287 more (tag `bridge/FG0000005`)
+- **6 pallets:** [[pal-1064]] · [[pal-1065]] · [[pal-1442]] … +3 more (tag `bridge/FG0000005`)
+

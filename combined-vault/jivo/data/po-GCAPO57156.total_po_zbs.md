@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-19.43,0.0,SWIGGY,,74704,20.40138889,CENTRAL GOA,36.0,2026-05-28,2026-06-14,GCAPO57156,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74704,2026-06-27
-344.76,0.0,SWIGGY,,74705,361.9981667,CENTRAL GOA,60.0,2026-05-28,2026-06-14,GCAPO57156,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74705,2026-06-27
+19.43,0.0,SWIGGY,,74704,20.40138889,CENTRAL GOA,36.0,2026-05-28,2026-06-14,GCAPO57156,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74704,2026-06-30
+344.76,0.0,SWIGGY,,74705,361.9981667,CENTRAL GOA,60.0,2026-05-28,2026-06-14,GCAPO57156,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74705,2026-06-30
 ```
 
 ---

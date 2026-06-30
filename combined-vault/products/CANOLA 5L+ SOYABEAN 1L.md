@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0141
 product: "CANOLA 5L+ SOYABEAN 1L"
 sap_codes:
   - SL0000213
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0141` |
 | Product | CANOLA 5L+ SOYABEAN 1L |
 | JIVO SKU / SAP code | `SL0000213` |
 | canonical_sku(s) | `edoggx6sqxczkd2y`, `jivo-cold-pressed-canola-oil-5l-soyabean-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-5l`, `jivo-cold-pressed-canola-oil-5l-soyabean-oil-1l-for-roasting-frying-baking-all-types-of-cuisines-6l` |

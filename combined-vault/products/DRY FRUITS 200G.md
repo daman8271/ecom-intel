@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0099
 product: "DRY FRUITS 200G"
 sap_codes:
   - FG0000291
@@ -21,6 +22,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0099` |
 | Product | DRY FRUITS 200G |
 | JIVO SKU / SAP code | `FG0000291` |
 | canonical_sku(s) | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` |
@@ -48,3 +50,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OTHER]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000291`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000291]]
+

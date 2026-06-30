@@ -6,8 +6,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-02
-last_seen: 2026-06-27
-observations: 105
+last_seen: 2026-06-29
+observations: 112
 min_price: 154
 max_price: 190
 latest_price: 181
@@ -28,12 +28,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹181 (29.0% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (20)
-[[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-23-1024]] · [[amazon-now-2026-06-22-1410]] · [[amazon-now-2026-06-22-1021]] · [[amazon-now-2026-06-21-1020]] · [[amazon-now-2026-06-20-1400]] · [[amazon-now-2026-06-20-1016]] · [[amazon-now-2026-06-19-1019]] · [[amazon-now-2026-06-17-1405]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-02-0900]]
+## Runs that observed this SKU (21)
+[[amazon-now-2026-06-29-0903]] · [[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-23-1024]] · [[amazon-now-2026-06-22-1410]] · [[amazon-now-2026-06-22-1021]] · [[amazon-now-2026-06-21-1020]] · [[amazon-now-2026-06-20-1400]] · [[amazon-now-2026-06-20-1016]] · [[amazon-now-2026-06-19-1019]] · [[amazon-now-2026-06-17-1405]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1125]] · [[amazon-fresh-2026-06-02-0900]]
 
-## Price history (105 observations)
+## Price history (112 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -142,6 +142,13 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-23-1024,2026-06-23,amazon-now,Delhi,110007,159,255,37.6,1
 2026-06-23-1024,2026-06-23,amazon-now,Noida,201304,159,255,37.6,1
 2026-06-27-1346,2026-06-27,amazon-now,Ghaziabad,201005,181,255,29,1
+2026-06-29-0903,2026-06-29,amazon-now,Bengaluru,560001,181,255,29,1
+2026-06-29-0903,2026-06-29,amazon-now,Delhi,110041,181,255,29,1
+2026-06-29-0903,2026-06-29,amazon-now,Delhi,110065,181,255,29,1
+2026-06-29-0903,2026-06-29,amazon-now,Gurgaon,122051,181,255,29,1
+2026-06-29-0903,2026-06-29,amazon-now,Hyderabad,500048,159,255,37.6,1
+2026-06-29-0903,2026-06-29,amazon-now,Pune,411030,181,255,29,1
+2026-06-29-0903,2026-06-29,amazon-now,Pune,411051,181,255,29,1
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-28
-observations: 168
+last_seen: 2026-06-29
+observations: 176
 latest_status: ABOVE
-below_days: 10
+below_days: 11
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-28) — ref ₹789 vs live ₹1012
-- **Days below reference:** 10 of 21
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-28]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-06-29) — ref ₹809 vs live ₹987
+- **Days below reference:** 11 of 22
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-28]] · [[2026-06-29]]
 
-## Ref-vs-live history (168 observations)
+## Ref-vs-live history (176 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -213,6 +213,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-28,flipkart,BELOW,SVD,789,726,726,726,-63,-7.98,1,true
 2026-06-28,flipkart-minutes,NOT_LISTED,SVD,789,,,,,,0,false
 2026-06-28,zepto,ABOVE,SVD,789,1012,987,1764,223,28.26,0,true
+2026-06-29,amazon,BELOW,BAU,809,789,789,789,-20,-2.47,1,true
+2026-06-29,amazon-fresh,BELOW,BAU,809,789,789,789,-20,-2.47,132,true
+2026-06-29,amazon-now,BELOW,BAU,809,789,789,797,-20,-2.47,18,true
+2026-06-29,bigbasket,ABOVE,BAU,809,1012,1012,1060,203,25.09,0,true
+2026-06-29,blinkit,NOT_LISTED,BAU,809,,,,,,0,false
+2026-06-29,flipkart,BELOW,BAU,809,726,726,726,-83,-10.26,1,true
+2026-06-29,flipkart-minutes,NOT_LISTED,BAU,809,,,,,,0,false
+2026-06-29,zepto,ABOVE,BAU,809,987,987,1764,178,22,0,true
 ```
 
 ---

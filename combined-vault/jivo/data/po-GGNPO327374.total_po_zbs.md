@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,16.0,SWIGGY,2026-02-21,63624,550.000625,DELHI,16.0,2026-02-14,2026-02-23,GGNPO327374,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63624,2026-06-27
-209.52,112.0,SWIGGY,2026-02-21,63625,219.9961607,DELHI,112.0,2026-02-14,2026-02-23,GGNPO327374,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63625,2026-06-27
+523.81,16.0,SWIGGY,2026-02-21,63624,550.000625,DELHI,16.0,2026-02-14,2026-02-23,GGNPO327374,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63624,2026-06-30
+209.52,112.0,SWIGGY,2026-02-21,63625,219.9961607,DELHI,112.0,2026-02-14,2026-02-23,GGNPO327374,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63625,2026-06-30
 ```
 
 ---

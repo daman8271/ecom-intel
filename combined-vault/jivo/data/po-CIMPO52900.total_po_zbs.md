@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,40.0,SWIGGY,2025-11-05,54890,222.0015,MUMBAI,40.0,2025-10-28,2025-11-08,CIMPO52900,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54890,2026-06-27
-800.0,0.0,SWIGGY,2025-11-05,54891,840.0,MUMBAI,20.0,2025-10-28,2025-11-08,CIMPO52900,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54891,2026-06-27
-160.0,40.0,SWIGGY,2025-11-05,54892,168.0,MUMBAI,40.0,2025-10-28,2025-11-08,CIMPO52900,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54892,2026-06-27
-2522.86,4.0,SWIGGY,2025-11-05,54893,2649.0025,MUMBAI,4.0,2025-10-28,2025-11-08,CIMPO52900,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54893,2026-06-27
+211.43,40.0,SWIGGY,2025-11-05,54890,222.0015,MUMBAI,40.0,2025-10-28,2025-11-08,CIMPO52900,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54890,2026-06-30
+800.0,0.0,SWIGGY,2025-11-05,54891,840.0,MUMBAI,20.0,2025-10-28,2025-11-08,CIMPO52900,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54891,2026-06-30
+160.0,40.0,SWIGGY,2025-11-05,54892,168.0,MUMBAI,40.0,2025-10-28,2025-11-08,CIMPO52900,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54892,2026-06-30
+2522.86,4.0,SWIGGY,2025-11-05,54893,2649.0025,MUMBAI,4.0,2025-10-28,2025-11-08,CIMPO52900,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54893,2026-06-30
 ```
 
 ---

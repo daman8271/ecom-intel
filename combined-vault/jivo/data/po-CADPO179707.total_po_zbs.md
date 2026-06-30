@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-144.76,20.0,SWIGGY,2026-02-07,61810,151.998,AHMEDABAD,20.0,2026-01-22,2026-02-10,CADPO179707,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61810,2026-06-27
-690.48,4.0,SWIGGY,2026-02-07,61811,725.005,AHMEDABAD,4.0,2026-01-22,2026-02-10,CADPO179707,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61811,2026-06-27
+144.76,20.0,SWIGGY,2026-02-07,61810,151.998,AHMEDABAD,20.0,2026-01-22,2026-02-10,CADPO179707,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61810,2026-06-30
+690.48,4.0,SWIGGY,2026-02-07,61811,725.005,AHMEDABAD,4.0,2026-01-22,2026-02-10,CADPO179707,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61811,2026-06-30
 ```
 
 ---

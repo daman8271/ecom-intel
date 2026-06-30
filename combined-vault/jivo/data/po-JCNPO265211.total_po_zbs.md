@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,20.0,SWIGGY,2026-06-10,74644,225.0045,CHENNAI,20.0,2026-05-27,2026-06-13,JCNPO265211,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74644,2026-06-27
-761.9,10.0,SWIGGY,2026-06-10,74645,799.995,CHENNAI,10.0,2026-05-27,2026-06-13,JCNPO265211,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74645,2026-06-27
+214.29,20.0,SWIGGY,2026-06-10,74644,225.0045,CHENNAI,20.0,2026-05-27,2026-06-13,JCNPO265211,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74644,2026-06-30
+761.9,10.0,SWIGGY,2026-06-10,74645,799.995,CHENNAI,10.0,2026-05-27,2026-06-13,JCNPO265211,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74645,2026-06-30
 ```
 
 ---

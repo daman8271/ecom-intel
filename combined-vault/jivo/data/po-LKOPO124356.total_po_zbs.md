@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,0.0,SWIGGY,,52206,1323.0,LUCKNOW,6.0,2025-09-18,2025-10-20,LKOPO124356,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52206,2026-06-27
-397.14,0.0,SWIGGY,,52207,416.9971875,LUCKNOW,32.0,2025-09-18,2025-10-20,LKOPO124356,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CANCELLED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52207,2026-06-27
+1260.0,0.0,SWIGGY,,52206,1323.0,LUCKNOW,6.0,2025-09-18,2025-10-20,LKOPO124356,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52206,2026-06-30
+397.14,0.0,SWIGGY,,52207,416.9971875,LUCKNOW,32.0,2025-09-18,2025-10-20,LKOPO124356,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CANCELLED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52207,2026-06-30
 ```
 
 ---

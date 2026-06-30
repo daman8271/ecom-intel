@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,0.0,SWIGGY,,54380,222.0015,JAIPUR,20.0,2025-10-17,2025-10-31,JPAPO17185,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54380,2026-06-27
-190.48,0.0,SWIGGY,,54381,200.00375,JAIPUR,48.0,2025-10-17,2025-10-31,JPAPO17185,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54381,2026-06-27
-800.0,0.0,SWIGGY,,54382,840.0,JAIPUR,4.0,2025-10-17,2025-10-31,JPAPO17185,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54382,2026-06-27
+211.43,0.0,SWIGGY,,54380,222.0015,JAIPUR,20.0,2025-10-17,2025-10-31,JPAPO17185,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54380,2026-06-30
+190.48,0.0,SWIGGY,,54381,200.00375,JAIPUR,48.0,2025-10-17,2025-10-31,JPAPO17185,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54381,2026-06-30
+800.0,0.0,SWIGGY,,54382,840.0,JAIPUR,4.0,2025-10-17,2025-10-31,JPAPO17185,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54382,2026-06-30
 ```
 
 ---

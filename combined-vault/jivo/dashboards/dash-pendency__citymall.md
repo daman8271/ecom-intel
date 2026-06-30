@@ -79,6 +79,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
  "by_po": [
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "Dadri",
    "open_ltrs": 11484.0,
    "open_pos": 1,
    "open_units": 9884.0,
@@ -91,6 +92,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
   },
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "Gurugram",
    "open_ltrs": 10520.0,
    "open_pos": 1,
    "open_units": 9272.0,
@@ -103,6 +105,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
   },
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "Sonipat",
    "open_ltrs": 10120.0,
    "open_pos": 1,
    "open_units": 8712.0,
@@ -115,6 +118,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
   },
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "Bahadurgarh",
    "open_ltrs": 9848.0,
    "open_pos": 1,
    "open_units": 8968.0,
@@ -127,6 +131,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
   },
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "Lucknow",
    "open_ltrs": 9784.0,
    "open_pos": 1,
    "open_units": 8536.0,

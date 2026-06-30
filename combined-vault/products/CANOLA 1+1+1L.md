@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0016
 product: "CANOLA 1+1+1L"
 sap_codes:
   - FG0000043
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0016` |
 | Product | CANOLA 1+1+1L |
 | JIVO SKU / SAP code | `FG0000043` |
 | canonical_sku(s) | `edoghersuqwaau5s`, `jivo-canola-cold-press-edible-oil-ideal-for-roasting-frying-baking-all-type-of-cuisines-everyday-cooking-oil-for-daily-use-pack-of-3-1-litre-e-3l`, `jivo-canola-oil1-litre-cold-press-canola-cold-press-edible-oil-pack-of-2-1-litre-each-1l`, `qwrgg9shsxhqyqdk`, `jivo-canola-cold-press-edible-oil-ideal-for-roasting-frying-baking-all-type-of-cuisines-everyday-cooking-oil-for-daily-use-pack-of-3-1-litre-e-1l`, `jivo-canola-oil1-litre-cold-press-canola-cold-press-edible-oil-pack-of-2-1-litre-each-3l` |
@@ -32,13 +34,13 @@ Up: [[Home]]
 | Bridge class | new_confirmed |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
 | [[Platform - amazon\|amazon]] | — | — | — | — | — | — |
 | [[Platform - amazon\|amazon-now]] | — | — | — | — | — | — |
-| [[Platform - flipkart\|flipkart]] | 769 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - flipkart\|flipkart]] | 799 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -63,3 +65,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - CANOLA]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - flipkart]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000043`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000043]]
+

@@ -29,7 +29,7 @@ Up: [[dashboards-index]] · [[2026-05]]
   },
   {
    "category": "CANOLA",
-   "ltrs": 110528.0
+   "ltrs": 110543.0
   },
   {
    "category": "MUSTARD",
@@ -52,7 +52,7 @@ Up: [[dashboards-index]] · [[2026-05]]
  "head": "premium",
  "month": 5,
  "platform": null,
- "total_ltrs": 488661.65,
+ "total_ltrs": 488676.65,
  "year": 2026
 }
 ```

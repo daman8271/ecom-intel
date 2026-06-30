@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-538.1,0.0,SWIGGY,,66887,565.005,CENTRAL GOA,16.0,2026-03-31,2026-04-17,GCAPO48053,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66887,2026-06-27
-423.81,0.0,SWIGGY,,66888,445.000625,CENTRAL GOA,16.0,2026-03-31,2026-04-17,GCAPO48053,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66888,2026-06-27
-952.38,0.0,SWIGGY,,66889,999.99875,CENTRAL GOA,8.0,2026-03-31,2026-04-17,GCAPO48053,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66889,2026-06-27
-761.9,0.0,SWIGGY,,66890,799.995,CENTRAL GOA,4.0,2026-03-31,2026-04-17,GCAPO48053,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66890,2026-06-27
+538.1,0.0,SWIGGY,,66887,565.005,CENTRAL GOA,16.0,2026-03-31,2026-04-17,GCAPO48053,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66887,2026-06-30
+423.81,0.0,SWIGGY,,66888,445.000625,CENTRAL GOA,16.0,2026-03-31,2026-04-17,GCAPO48053,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66888,2026-06-30
+952.38,0.0,SWIGGY,,66889,999.99875,CENTRAL GOA,8.0,2026-03-31,2026-04-17,GCAPO48053,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66889,2026-06-30
+761.9,0.0,SWIGGY,,66890,799.995,CENTRAL GOA,4.0,2026-03-31,2026-04-17,GCAPO48053,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66890,2026-06-30
 ```
 
 ---

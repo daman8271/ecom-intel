@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0085
 product: "TONIC WATER 200ML"
 sap_codes:
   - FG0000252
@@ -24,6 +25,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0085` |
 | Product | TONIC WATER 200ML |
 | JIVO SKU / SAP code | `FG0000252`, `FG0000264` |
 | canonical_sku(s) | `indian-tonic-water-200ml`, `jivo-indian-citric-tonic-water-premium-gt-mixer-low-calorie-flavoured-drink-100-natural-ingredients-200ml` |
@@ -54,3 +56,15 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - DRINKS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - bigbasket]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000252`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000252]]
+- **1 sap items:** [[quality-control__sap-items-FG0000252]]
+
+**`FG0000264`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000264]]
+- **1 sap items:** [[quality-control__sap-items-FG0000264]]
+

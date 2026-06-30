@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-138.1,0.0,SWIGGY,,65635,145.00475,LUCKNOW,120.0,2026-03-11,2026-03-23,LKOPO159649,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65635,2026-06-27
-714.29,0.0,SWIGGY,,65636,750.0045,LUCKNOW,20.0,2026-03-11,2026-03-23,LKOPO159649,,766072,Jivo Ricebran Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65636,2026-06-27
+138.1,0.0,SWIGGY,,65635,145.00475,LUCKNOW,120.0,2026-03-11,2026-03-23,LKOPO159649,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65635,2026-06-30
+714.29,0.0,SWIGGY,,65636,750.0045,LUCKNOW,20.0,2026-03-11,2026-03-23,LKOPO159649,,766072,Jivo Ricebran Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65636,2026-06-30
 ```
 
 ---

@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,0.0,SWIGGY,,76179,1290.0,LUCKNOW,3.0,2026-06-11,2026-06-23,LKOPO174222,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76179,2026-06-27
-185.71,0.0,SWIGGY,,76180,195.0,LUCKNOW,192.0,2026-06-11,2026-06-23,LKOPO174222,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76180,2026-06-27
-149.52,0.0,SWIGGY,,76181,156.9961667,LUCKNOW,120.0,2026-06-11,2026-06-23,LKOPO174222,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76181,2026-06-27
+1228.57,0.0,SWIGGY,,76179,1290.0,LUCKNOW,3.0,2026-06-11,2026-07-11,LKOPO174222,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76179,2026-06-30
+185.71,0.0,SWIGGY,,76180,195.0,LUCKNOW,192.0,2026-06-11,2026-07-11,LKOPO174222,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76180,2026-06-30
+149.52,0.0,SWIGGY,,76181,157.0,LUCKNOW,120.0,2026-06-11,2026-07-11,LKOPO174222,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76181,2026-06-30
 ```
 
 ---

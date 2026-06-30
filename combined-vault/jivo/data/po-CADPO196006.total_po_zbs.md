@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-547.62,0.0,SWIGGY,,68533,575.000625,AHMEDABAD,16.0,2026-04-09,2026-04-18,CADPO196006,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68533,2026-06-27
-200.0,0.0,SWIGGY,,68534,210.0,AHMEDABAD,64.0,2026-04-09,2026-04-18,CADPO196006,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68534,2026-06-27
-1000.0,0.0,SWIGGY,,68535,1050.0,AHMEDABAD,48.0,2026-04-09,2026-04-18,CADPO196006,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68535,2026-06-27
-161.9,0.0,SWIGGY,,68536,169.99525,AHMEDABAD,120.0,2026-04-09,2026-04-18,CADPO196006,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68536,2026-06-27
+547.62,0.0,SWIGGY,,68533,575.000625,AHMEDABAD,16.0,2026-04-09,2026-04-18,CADPO196006,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68533,2026-06-30
+200.0,0.0,SWIGGY,,68534,210.0,AHMEDABAD,64.0,2026-04-09,2026-04-18,CADPO196006,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68534,2026-06-30
+1000.0,0.0,SWIGGY,,68535,1050.0,AHMEDABAD,48.0,2026-04-09,2026-04-18,CADPO196006,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68535,2026-06-30
+161.9,0.0,SWIGGY,,68536,169.99525,AHMEDABAD,120.0,2026-04-09,2026-04-18,CADPO196006,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68536,2026-06-30
 ```
 
 ---

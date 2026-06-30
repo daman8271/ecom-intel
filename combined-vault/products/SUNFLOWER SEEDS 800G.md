@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0106
 product: "SUNFLOWER SEEDS 800G"
 sap_codes:
   - FG0000301
@@ -23,21 +24,24 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0106` |
 | Product | SUNFLOWER SEEDS 800G |
 | JIVO SKU / SAP code | `FG0000301` |
 | canonical_sku(s) | `jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-diets-clean-eating-glutenfree-nongmo-800g-800ml`, `edsh63q3yyywhmuh` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | SUNFLOWER SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 800G |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 369 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 369 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 389 | — | — | ⚪ OOS | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 389 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -51,3 +55,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - SEEDS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000301`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000301]]
+

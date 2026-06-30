@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0148
 product: "SOYABEAN 1L + 1L"
 category: "SOYABEAN"
 tier: COMMODITY
@@ -21,6 +22,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0148` |
 | Product | SOYABEAN 1L + 1L |
 | JIVO SKU / SAP code | — |
 | canonical_sku(s) | `jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-ideal-for-roasting-frying-and-baking-healthy-cooking-oil-for-daily-use-pack-of-2-1l`, `edoggpfz2fcj6uws` |
@@ -30,12 +32,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 389 | 449 | 15.42 | 🔴 ABOVE | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 389 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 409 | 449 | 9.78 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 409 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

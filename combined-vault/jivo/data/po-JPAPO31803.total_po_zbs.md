@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,,60795,1499.998485,JAIPUR,33.0,2026-01-10,2026-01-23,JPAPO31803,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60795,2026-06-27
-196.19,0.0,SWIGGY,,60796,206.0,JAIPUR,8.0,2026-01-10,2026-01-23,JPAPO31803,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60796,2026-06-27
-1047.62,0.0,SWIGGY,,60797,1100.000833,JAIPUR,24.0,2026-01-10,2026-01-23,JPAPO31803,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60797,2026-06-27
+1428.57,0.0,SWIGGY,,60795,1499.998485,JAIPUR,33.0,2026-01-10,2026-01-23,JPAPO31803,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60795,2026-06-30
+196.19,0.0,SWIGGY,,60796,206.0,JAIPUR,8.0,2026-01-10,2026-01-23,JPAPO31803,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60796,2026-06-30
+1047.62,0.0,SWIGGY,,60797,1100.000833,JAIPUR,24.0,2026-01-10,2026-01-23,JPAPO31803,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60797,2026-06-30
 ```
 
 ---

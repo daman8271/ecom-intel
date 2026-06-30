@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,20.0,SWIGGY,2026-06-08,74657,225.0045,KOLKATA,20.0,2026-05-27,2026-06-08,KWBPO91689,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74657,2026-06-27
-476.19,64.0,SWIGGY,2026-06-08,74658,499.9995313,KOLKATA,64.0,2026-05-27,2026-06-08,KWBPO91689,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74658,2026-06-27
+214.29,20.0,SWIGGY,2026-06-08,74657,225.0045,KOLKATA,20.0,2026-05-27,2026-06-08,KWBPO91689,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74657,2026-06-30
+476.19,64.0,SWIGGY,2026-06-08,74658,499.9995313,KOLKATA,64.0,2026-05-27,2026-06-08,KWBPO91689,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74658,2026-06-30
 ```
 
 ---

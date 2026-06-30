@@ -527,7 +527,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 219.047619,
    "brand": "JIVO",
-   "case_pack": 24,
+   "case_pack": 20,
    "category": "CANOLA",
    "category_head": "OIL",
    "city": "BENGALURU",

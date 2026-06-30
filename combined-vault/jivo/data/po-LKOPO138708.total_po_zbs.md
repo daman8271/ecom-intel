@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1451.98,0.0,SWIGGY,,56745,1524.578333,LUCKNOW,6.0,2025-11-18,2025-12-01,LKOPO138708,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56745,2026-06-27
-564.16,0.0,SWIGGY,,56746,592.368125,LUCKNOW,16.0,2025-11-18,2025-12-01,LKOPO138708,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56746,2026-06-27
-209.52,0.0,SWIGGY,,56747,219.99625,LUCKNOW,16.0,2025-11-18,2025-12-01,LKOPO138708,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56747,2026-06-27
-116.19,0.0,SWIGGY,,56748,121.9995,LUCKNOW,100.0,2025-11-18,2025-12-01,LKOPO138708,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56748,2026-06-27
+1451.98,0.0,SWIGGY,,56745,1524.578333,LUCKNOW,6.0,2025-11-18,2025-12-01,LKOPO138708,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56745,2026-06-30
+564.16,0.0,SWIGGY,,56746,592.368125,LUCKNOW,16.0,2025-11-18,2025-12-01,LKOPO138708,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56746,2026-06-30
+209.52,0.0,SWIGGY,,56747,219.99625,LUCKNOW,16.0,2025-11-18,2025-12-01,LKOPO138708,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56747,2026-06-30
+116.19,0.0,SWIGGY,,56748,121.9995,LUCKNOW,100.0,2025-11-18,2025-12-01,LKOPO138708,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:56748,2026-06-30
 ```
 
 ---

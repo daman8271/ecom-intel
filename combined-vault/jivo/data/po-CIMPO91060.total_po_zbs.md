@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,,64656,38.5,MUMBAI,12.0,2026-02-28,2026-03-09,CIMPO91060,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64656,2026-06-27
+27.5,0.0,SWIGGY,,64656,38.5,MUMBAI,12.0,2026-02-28,2026-03-09,CIMPO91060,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64656,2026-06-30
 ```
 
 ---

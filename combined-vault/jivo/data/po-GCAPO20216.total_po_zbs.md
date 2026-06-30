@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-537.29,0.0,SWIGGY,,55247,564.155,CENTRAL GOA,16.0,2025-11-01,2025-11-17,GCAPO20216,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55247,2026-06-27
-342.86,0.0,SWIGGY,,55248,360.0029545,CENTRAL GOA,44.0,2025-11-01,2025-11-17,GCAPO20216,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55248,2026-06-27
+537.29,0.0,SWIGGY,,55247,564.155,CENTRAL GOA,16.0,2025-11-01,2025-11-17,GCAPO20216,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55247,2026-06-30
+342.86,0.0,SWIGGY,,55248,360.0029545,CENTRAL GOA,44.0,2025-11-01,2025-11-17,GCAPO20216,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55248,2026-06-30
 ```
 
 ---

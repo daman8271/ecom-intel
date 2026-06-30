@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0043
 product: "GOLD 1L"
 sap_codes:
   - FG0000149
@@ -25,6 +26,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0043` |
 | Product | GOLD 1L |
 | JIVO SKU / SAP code | `FG0000149` |
 | canonical_sku(s) | `jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-natural-antioxidants-1-litre-pack-1l`, `edogxyeferfxp3zy`, `jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l` |
@@ -37,13 +39,13 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 189 | 179 | -5.29 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 189 | 234 | 23.81 | 🔴 ABOVE | SVD | 2026-06-28 |
-| [[Platform - zepto\|zepto]] | 189 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 199 | 186 | -6.53 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 199 | 234 | 17.59 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - zepto\|zepto]] | 199 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -67,3 +69,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - BLENDED]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - zepto]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000149`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000149]]
+

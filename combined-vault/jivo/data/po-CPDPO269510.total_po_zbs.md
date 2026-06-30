@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-147.62,300.0,SWIGGY,2026-05-16,72122,155.0009667,PUNE,300.0,2026-05-07,2026-05-17,CPDPO269510,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72122,2026-06-27
-738.1,16.0,SWIGGY,2026-05-16,72123,775.005,PUNE,16.0,2026-05-07,2026-05-17,CPDPO269510,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72123,2026-06-27
+147.62,300.0,SWIGGY,2026-05-16,72122,155.0009667,PUNE,300.0,2026-05-07,2026-05-17,CPDPO269510,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72122,2026-06-30
+738.1,16.0,SWIGGY,2026-05-16,72123,775.005,PUNE,16.0,2026-05-07,2026-05-17,CPDPO269510,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72123,2026-06-30
 ```
 
 ---

@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-138.1,320.0,SWIGGY,2025-12-16,58206,145.00475,CHENNAI,320.0,2025-12-06,2025-12-22,JCNPO225953,DISPATCH,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58206,2026-06-27
+138.1,320.0,SWIGGY,2025-12-16,58206,145.00475,CHENNAI,320.0,2025-12-06,2025-12-22,JCNPO225953,DISPATCH,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58206,2026-06-30
 ```
 
 ---

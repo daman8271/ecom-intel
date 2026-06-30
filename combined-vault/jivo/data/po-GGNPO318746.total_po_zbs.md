@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,,61817,1500.0,DELHI,3.0,2026-01-23,2026-01-31,GGNPO318746,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61817,2026-06-27
-209.52,0.0,SWIGGY,,61818,219.9961806,DELHI,144.0,2026-01-23,2026-01-31,GGNPO318746,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61818,2026-06-27
-138.1,0.0,SWIGGY,,61819,145.0047857,DELHI,140.0,2026-01-23,2026-01-31,GGNPO318746,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61819,2026-06-27
-2619.05,0.0,SWIGGY,,61820,2750.0025,DELHI,4.0,2026-01-23,2026-01-31,GGNPO318746,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61820,2026-06-27
+1428.57,0.0,SWIGGY,,61817,1500.0,DELHI,3.0,2026-01-23,2026-01-31,GGNPO318746,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61817,2026-06-30
+209.52,0.0,SWIGGY,,61818,219.9961806,DELHI,144.0,2026-01-23,2026-01-31,GGNPO318746,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61818,2026-06-30
+138.1,0.0,SWIGGY,,61819,145.0047857,DELHI,140.0,2026-01-23,2026-01-31,GGNPO318746,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61819,2026-06-30
+2619.05,0.0,SWIGGY,,61820,2750.0025,DELHI,4.0,2026-01-23,2026-01-31,GGNPO318746,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61820,2026-06-30
 ```
 
 ---

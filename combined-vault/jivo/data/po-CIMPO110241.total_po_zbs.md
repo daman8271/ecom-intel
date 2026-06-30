@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-928.57,0.0,SWIGGY,2026-06-17,76049,975.0,MUMBAI,32.0,2026-06-09,2026-06-18,CIMPO110241,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76049,2026-06-27
-344.76,0.0,SWIGGY,2026-06-17,76050,361.998,MUMBAI,10.0,2026-06-09,2026-06-18,CIMPO110241,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76050,2026-06-27
-147.62,16.0,SWIGGY,2026-06-17,76051,155.00125,MUMBAI,16.0,2026-06-09,2026-06-18,CIMPO110241,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76051,2026-06-27
-200.0,16.0,SWIGGY,2026-06-17,76052,210.0,MUMBAI,16.0,2026-06-09,2026-06-18,CIMPO110241,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76052,2026-06-27
+928.57,0.0,SWIGGY,2026-06-17,76049,975.0,MUMBAI,32.0,2026-06-09,2026-06-18,CIMPO110241,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76049,2026-06-30
+344.76,0.0,SWIGGY,2026-06-17,76050,361.998,MUMBAI,10.0,2026-06-09,2026-06-18,CIMPO110241,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76050,2026-06-30
+147.62,16.0,SWIGGY,2026-06-17,76051,155.00125,MUMBAI,16.0,2026-06-09,2026-06-18,CIMPO110241,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76051,2026-06-30
+200.0,16.0,SWIGGY,2026-06-17,76052,210.0,MUMBAI,16.0,2026-06-09,2026-06-18,CIMPO110241,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76052,2026-06-30
 ```
 
 ---

@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-723.81,0.0,SWIGGY,,66168,760.0005769,KOCHI,52.0,2026-03-19,2026-04-11,KOCPO101883,,766072,Jivo Ricebran Oil 5L 5.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66168,2026-06-27
+723.81,0.0,SWIGGY,,66168,760.0005769,KOCHI,52.0,2026-03-19,2026-04-11,KOCPO101883,,766072,Jivo Ricebran Oil 5L 5.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66168,2026-06-30
 ```
 
 ---

@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-890.48,32.0,SWIGGY,2026-05-16,72285,935.00375,CHANDIGARH,32.0,2026-05-08,2026-05-20,PCHPO198883,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:72285,2026-06-27
-738.09,12.0,SWIGGY,2026-05-16,72286,774.995,CHANDIGARH,12.0,2026-05-08,2026-05-20,PCHPO198883,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:72286,2026-06-27
+890.48,32.0,SWIGGY,2026-05-16,72285,935.00375,CHANDIGARH,32.0,2026-05-08,2026-05-20,PCHPO198883,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:72285,2026-06-30
+738.09,12.0,SWIGGY,2026-05-16,72286,774.995,CHANDIGARH,12.0,2026-05-08,2026-05-20,PCHPO198883,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:72286,2026-06-30
 ```
 
 ---

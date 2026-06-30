@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-190.48,0.0,SWIGGY,2025-09-30,52613,200.0038393,DELHI,112.0,2025-09-23,2025-10-16,GGNPO231492,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52613,2026-06-27
-114.29,340.0,SWIGGY,2025-09-30,52614,120.0042941,DELHI,340.0,2025-09-23,2025-10-16,GGNPO231492,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52614,2026-06-27
+190.48,0.0,SWIGGY,2025-09-30,52613,200.0038393,DELHI,112.0,2025-09-23,2025-10-16,GGNPO231492,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52613,2026-06-30
+114.29,340.0,SWIGGY,2025-09-30,52614,120.0042941,DELHI,340.0,2025-09-23,2025-10-16,GGNPO231492,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52614,2026-06-30
 ```
 
 ---

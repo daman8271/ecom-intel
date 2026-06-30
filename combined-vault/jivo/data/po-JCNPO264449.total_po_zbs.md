@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-182.86,16.0,SWIGGY,2026-06-04,74214,192.003125,CHENNAI,16.0,2026-05-23,2026-06-08,JCNPO264449,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74214,2026-06-27
+182.86,16.0,SWIGGY,2026-06-04,74214,192.003125,CHENNAI,16.0,2026-05-23,2026-06-08,JCNPO264449,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74214,2026-06-30
 ```
 
 ---

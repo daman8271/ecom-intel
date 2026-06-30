@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0010
 product: "JIVO POMACE 1L"
 sap_codes:
   - FG0000028
@@ -29,6 +30,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0010` |
 | Product | JIVO POMACE 1L |
 | JIVO SKU / SAP code | `FG0000028` |
 | canonical_sku(s) | `jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-rich-in-monounsaturated-fatty-acids-low-in-saturated-fat-ideal-for-roasting-frying-and-baking-1l`, `edohyrptdvezvz8e`, `jivo-daily-cooking-pomace-olive-oil-1-litre-1l`, `jivo-pomace-olive-oil-plastic-bottle-1l`, `jivo-pomace-olive-oil-1l`, `pomace-olive-oil-1l` |
@@ -41,18 +43,18 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - bigbasket\|bigbasket]] | 429 | 548.25 | 27.8 | 🔴 ABOVE | SVD | 2026-06-28 |
-| [[Platform - blinkit\|blinkit]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 429 | 576 | 34.27 | 🔴 ABOVE | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 439 | 379 | -13.67 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 439 | 379 | -13.67 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 439 | 379 | -13.67 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - bigbasket\|bigbasket]] | 439 | 548.25 | 24.89 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - blinkit\|blinkit]] | 439 | 405 | -7.74 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 439 | 576 | 31.21 | 🔴 ABOVE | BAU | 2026-06-29 |
 | [[Platform - flipkart\|flipkart-minutes]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-06-27 |
-| [[Platform - zepto\|zepto]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-06-28 |
+| [[Platform - zepto\|zepto]] | 439 | 379 | -13.67 | 🟢 BELOW | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -77,3 +79,13 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - zepto]] · [[Platform - blinkit]] · [[Platform - bigbasket]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000028`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000028]]
+- **561 boxes:** [[box-101360]] · [[box-101361]] · [[box-101362]] … +558 more (tag `bridge/FG0000028`)
+- **34 boxes:** [[barcode__dispatch__reports__boxes-104201]] · [[barcode__dispatch__reports__boxes-104212]] · [[barcode__dispatch__reports__boxes-104213]] … +31 more (tag `bridge/FG0000028`)
+- **10 pallets:** [[pal-1531]] · [[pal-1628]] · [[pal-1629]] … +7 more (tag `bridge/FG0000028`)
+

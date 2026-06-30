@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,9.0,SWIGGY,2025-11-07,54849,1323.0,CHANDIGARH,9.0,2025-10-28,2025-11-10,PCHPO153055,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54849,2026-06-27
-116.19,280.0,SWIGGY,2025-11-07,54850,121.9995357,CHANDIGARH,280.0,2025-10-28,2025-11-10,PCHPO153055,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54850,2026-06-27
-642.86,0.0,SWIGGY,2025-11-07,54851,675.0025,CHANDIGARH,8.0,2025-10-28,2025-11-10,PCHPO153055,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54851,2026-06-27
-828.57,12.0,SWIGGY,2025-11-07,54852,869.9983333,CHANDIGARH,12.0,2025-10-28,2025-11-10,PCHPO153055,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54852,2026-06-27
+1260.0,9.0,SWIGGY,2025-11-07,54849,1323.0,CHANDIGARH,9.0,2025-10-28,2025-11-10,PCHPO153055,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54849,2026-06-30
+116.19,280.0,SWIGGY,2025-11-07,54850,121.9995357,CHANDIGARH,280.0,2025-10-28,2025-11-10,PCHPO153055,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54850,2026-06-30
+642.86,0.0,SWIGGY,2025-11-07,54851,675.0025,CHANDIGARH,8.0,2025-10-28,2025-11-10,PCHPO153055,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54851,2026-06-30
+828.57,12.0,SWIGGY,2025-11-07,54852,869.9983333,CHANDIGARH,12.0,2025-10-28,2025-11-10,PCHPO153055,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54852,2026-06-30
 ```
 
 ---

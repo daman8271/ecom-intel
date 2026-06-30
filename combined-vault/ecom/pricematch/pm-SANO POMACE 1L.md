@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-28
-observations: 168
+last_seen: 2026-06-29
+observations: 176
 latest_status: NOT_LISTED
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-28) — ref ₹399 vs live ₹-
-- **Days below reference:** 14 of 21
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-29) — ref ₹419 vs live ₹-
+- **Days below reference:** 15 of 22
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-29]]
 
-## Ref-vs-live history (168 observations)
+## Ref-vs-live history (176 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -213,6 +213,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-28,flipkart,MATCH,SVD,399,400,400,400,1,0.25,0,true
 2026-06-28,flipkart-minutes,NOT_LISTED,SVD,399,,,,,,0,false
 2026-06-28,zepto,NOT_LISTED,SVD,399,,,,,,0,false
+2026-06-29,amazon,BELOW,BAU,419,399,399,399,-20,-4.77,1,true
+2026-06-29,amazon-fresh,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-29,amazon-now,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-29,bigbasket,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-29,blinkit,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-29,flipkart,BELOW,BAU,419,400,400,400,-19,-4.53,1,true
+2026-06-29,flipkart-minutes,NOT_LISTED,BAU,419,,,,,,0,false
+2026-06-29,zepto,NOT_LISTED,BAU,419,,,,,,0,false
 ```
 
 ---

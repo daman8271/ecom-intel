@@ -36,7 +36,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "require_drr": 6304.62,
    "targets": 150000.0,
    "type": "prim",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-27T06:27:31.635505+00:00",
    "year": 2026
   },
   {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "require_drr": 89.9,
    "targets": 2000.0,
    "type": "prim",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-27T06:27:31.635505+00:00",
    "year": 2026
   },
   {
@@ -76,7 +76,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "require_drr": 187.89,
    "targets": 50000.0,
    "type": "prim",
-   "updated_at": "2026-06-08T09:55:46.462453+00:00",
+   "updated_at": "2026-06-27T06:27:40.010678+00:00",
    "year": 2026
   },
   {
@@ -96,7 +96,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "require_drr": 2135.56,
    "targets": 20000.0,
    "type": "prim",
-   "updated_at": "2026-06-08T09:55:46.462453+00:00",
+   "updated_at": "2026-06-27T06:27:40.010678+00:00",
    "year": 2026
   }
  ],

@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,,58604,1500.0,AHMEDABAD,3.0,2025-12-13,2025-12-22,CADPO169508,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58604,2026-06-27
-523.81,0.0,SWIGGY,,58605,550.000625,AHMEDABAD,16.0,2025-12-13,2025-12-22,CADPO169508,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58605,2026-06-27
-761.9,0.0,SWIGGY,,58606,799.995,AHMEDABAD,4.0,2025-12-13,2025-12-22,CADPO169508,Appointment Done,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58606,2026-06-27
-819.05,0.0,SWIGGY,,58607,860.0028571,AHMEDABAD,7.0,2025-12-13,2025-12-22,CADPO169508,Appointment Done,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58607,2026-06-27
+1428.57,0.0,SWIGGY,,58604,1500.0,AHMEDABAD,3.0,2025-12-13,2025-12-22,CADPO169508,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58604,2026-06-30
+523.81,0.0,SWIGGY,,58605,550.000625,AHMEDABAD,16.0,2025-12-13,2025-12-22,CADPO169508,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58605,2026-06-30
+761.9,0.0,SWIGGY,,58606,799.995,AHMEDABAD,4.0,2025-12-13,2025-12-22,CADPO169508,Appointment Done,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58606,2026-06-30
+819.05,0.0,SWIGGY,,58607,860.0028571,AHMEDABAD,7.0,2025-12-13,2025-12-22,CADPO169508,Appointment Done,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58607,2026-06-30
 ```
 
 ---

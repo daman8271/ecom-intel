@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,48.0,SWIGGY,2026-06-15,76031,390.0014583,DELHI,48.0,2026-06-09,2026-06-18,GGNPO365395,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76031,2026-06-27
-195.24,44.0,SWIGGY,2026-06-15,76032,205.0018182,DELHI,44.0,2026-06-09,2026-06-18,GGNPO365395,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76032,2026-06-27
-344.76,0.0,SWIGGY,2026-06-15,76033,361.998,DELHI,40.0,2026-06-09,2026-06-18,GGNPO365395,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76033,2026-06-27
+371.43,48.0,SWIGGY,2026-06-15,76031,390.0014583,DELHI,48.0,2026-06-09,2026-06-18,GGNPO365395,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76031,2026-06-30
+195.24,44.0,SWIGGY,2026-06-15,76032,205.0018182,DELHI,44.0,2026-06-09,2026-06-18,GGNPO365395,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76032,2026-06-30
+344.76,0.0,SWIGGY,2026-06-15,76033,361.998,DELHI,40.0,2026-06-09,2026-06-18,GGNPO365395,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76033,2026-06-30
 ```
 
 ---

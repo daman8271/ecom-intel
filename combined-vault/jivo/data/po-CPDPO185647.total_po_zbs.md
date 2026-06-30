@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,0.0,SWIGGY,,52328,529.998125,PUNE,16.0,2025-09-20,2025-10-07,CPDPO185647,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52328,2026-06-27
-642.86,0.0,SWIGGY,,52329,675.0025,PUNE,4.0,2025-09-20,2025-10-07,CPDPO185647,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52329,2026-06-27
-761.9,0.0,SWIGGY,,52330,799.995,PUNE,16.0,2025-09-20,2025-10-07,CPDPO185647,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52330,2026-06-27
+504.76,0.0,SWIGGY,,52328,529.998125,PUNE,16.0,2025-09-20,2025-10-07,CPDPO185647,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52328,2026-06-30
+642.86,0.0,SWIGGY,,52329,675.0025,PUNE,4.0,2025-09-20,2025-10-07,CPDPO185647,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52329,2026-06-30
+761.9,0.0,SWIGGY,,52330,799.995,PUNE,16.0,2025-09-20,2025-10-07,CPDPO185647,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52330,2026-06-30
 ```
 
 ---

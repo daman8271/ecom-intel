@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-28
-observations: 168
+last_seen: 2026-06-29
+observations: 176
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-flax-seeds-raw-alsi-seeds-for-eating-high-in-protein-iron-die
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-28) — ref ₹89 vs live ₹-
-- **Days below reference:** 0 of 21
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-29) — ref ₹99 vs live ₹-
+- **Days below reference:** 0 of 22
 
-## Ref-vs-live history (168 observations)
+## Ref-vs-live history (176 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -212,6 +212,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-28,flipkart,OOS,SVD,89,,,,,,0,false
 2026-06-28,flipkart-minutes,NOT_LISTED,SVD,89,,,,,,0,false
 2026-06-28,zepto,NOT_LISTED,SVD,89,,,,,,0,false
+2026-06-29,amazon,OOS,BAU,99,,,,,,0,false
+2026-06-29,amazon-fresh,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-29,amazon-now,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-29,bigbasket,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-29,blinkit,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-29,flipkart,OOS,BAU,99,,,,,,0,false
+2026-06-29,flipkart-minutes,NOT_LISTED,BAU,99,,,,,,0,false
+2026-06-29,zepto,NOT_LISTED,BAU,99,,,,,,0,false
 ```
 
 ---

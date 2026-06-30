@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-166.67,0.0,SWIGGY,,52828,175.0035,BANGALORE,20.0,2025-09-25,2025-10-10,MBJPO08059,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52828,2026-06-27
+166.67,0.0,SWIGGY,,52828,175.0035,BANGALORE,20.0,2025-09-25,2025-10-10,MBJPO08059,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52828,2026-06-30
 ```
 
 ---

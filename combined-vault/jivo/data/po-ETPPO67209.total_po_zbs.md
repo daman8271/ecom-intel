@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,4.0,SWIGGY,2026-06-15,76286,1289.998333,NOIDA,6.0,2026-06-12,2026-06-21,ETPPO67209,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76286,2026-06-27
-195.24,48.0,SWIGGY,2026-06-15,76287,205.001875,NOIDA,48.0,2026-06-12,2026-06-21,ETPPO67209,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76287,2026-06-27
+1228.57,4.0,SWIGGY,2026-06-15,76286,1289.998333,NOIDA,6.0,2026-06-12,2026-06-21,ETPPO67209,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76286,2026-06-30
+195.24,48.0,SWIGGY,2026-06-15,76287,205.001875,NOIDA,48.0,2026-06-12,2026-06-21,ETPPO67209,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76287,2026-06-30
 ```
 
 ---

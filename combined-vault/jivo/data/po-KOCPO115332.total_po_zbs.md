@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-344.76,0.0,SWIGGY,,74689,361.9981111,KOCHI,180.0,2026-05-27,2026-06-19,KOCPO115332,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74689,2026-06-27
+344.76,0.0,SWIGGY,,74689,362.0,KOCHI,180.0,2026-05-27,2026-06-26,KOCPO115332,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74689,2026-06-30
 ```
 
 ---

@@ -18,11 +18,11 @@ Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,0.0,SWIGGY,2026-06-17,75815,1290.0,MUMBAI,3.0,2026-06-08,2026-06-17,CMFPO328225,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75815,2026-06-27
-476.19,64.0,SWIGGY,2026-06-17,75816,499.9995313,MUMBAI,64.0,2026-06-08,2026-06-17,CMFPO328225,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75816,2026-06-27
-928.57,0.0,SWIGGY,2026-06-17,75817,975.0,MUMBAI,36.0,2026-06-08,2026-06-17,CMFPO328225,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75817,2026-06-27
-144.76,40.0,SWIGGY,2026-06-17,75818,151.998,MUMBAI,40.0,2026-06-08,2026-06-17,CMFPO328225,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75818,2026-06-27
-154.29,300.0,SWIGGY,2026-06-17,75819,162.0043,MUMBAI,300.0,2026-06-08,2026-06-17,CMFPO328225,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75819,2026-06-27
+1228.57,0.0,SWIGGY,2026-06-17,75815,1290.0,MUMBAI,3.0,2026-06-08,2026-06-17,CMFPO328225,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75815,2026-06-30
+476.19,64.0,SWIGGY,2026-06-17,75816,499.9995313,MUMBAI,64.0,2026-06-08,2026-06-17,CMFPO328225,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75816,2026-06-30
+928.57,0.0,SWIGGY,2026-06-17,75817,975.0,MUMBAI,36.0,2026-06-08,2026-06-17,CMFPO328225,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75817,2026-06-30
+144.76,40.0,SWIGGY,2026-06-17,75818,151.998,MUMBAI,40.0,2026-06-08,2026-06-17,CMFPO328225,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75818,2026-06-30
+154.29,300.0,SWIGGY,2026-06-17,75819,162.0043,MUMBAI,300.0,2026-06-08,2026-06-17,CMFPO328225,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75819,2026-06-30
 ```
 
 ---

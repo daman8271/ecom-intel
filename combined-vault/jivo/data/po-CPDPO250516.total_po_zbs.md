@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-147.62,0.0,SWIGGY,,65095,155.001,PUNE,80.0,2026-03-04,2026-03-14,CPDPO250516,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65095,2026-06-27
-819.05,0.0,SWIGGY,,65096,860.0022917,PUNE,48.0,2026-03-04,2026-03-14,CPDPO250516,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65096,2026-06-27
+147.62,0.0,SWIGGY,,65095,155.001,PUNE,80.0,2026-03-04,2026-03-14,CPDPO250516,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65095,2026-06-30
+819.05,0.0,SWIGGY,,65096,860.0022917,PUNE,48.0,2026-03-04,2026-03-14,CPDPO250516,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65096,2026-06-30
 ```
 
 ---

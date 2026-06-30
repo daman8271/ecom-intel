@@ -37,7 +37,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "month": 5,
    "targets": 50000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -58,7 +58,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "month": 5,
    "targets": 2000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -79,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "month": 4,
    "targets": 23900.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   },
   {
@@ -100,7 +100,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "month": 4,
    "targets": 34870.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   }
  ],

@@ -30,7 +30,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
   },
   {
    "category": "CANOLA",
-   "ltrs": 50617.0
+   "ltrs": 50632.0
   },
   {
    "category": "MUSTARD",
@@ -53,7 +53,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
  "head": "premium",
  "month": 5,
  "platform": "amazon",
- "total_ltrs": 173110.5,
+ "total_ltrs": 173125.5,
  "year": 2026
 }
 ```

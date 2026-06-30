@@ -12,7 +12,7 @@ tags:
 
 Up: [[Home]]
 
-**60 matched products** in the Other tier.
+**59 matched products** in the Other tier.
 
 ## 2026 aggregate (target-history)
 - _OTHER tier not tracked in target-history (PREMIUM/COMMODITY only)._
@@ -41,7 +41,6 @@ Up: [[Home]]
 - [[GREEN CARDAMOM 100G]] — [[Category - SPICES\|SPICES]] · 100G
 - [[JEERA JUICE]] — [[Category - SPICES\|SPICES]] · —
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — [[Category - DRINKS\|DRINKS]] · 160 MLS
-- [[JIVO WATER 1L]] — [[Category - DRINKS\|DRINKS]] · 1L
 - [[JIVO WATER 250ML]] — [[Category - DRINKS\|DRINKS]] · 250ML
 - [[JIVO WATER 500 MLS]] — [[Category - DRINKS\|DRINKS]] · 500 MLS
 - [[JUMP ENERGY DRINK 200ML]] — [[Category - OTHER\|OTHER]] · 200ML

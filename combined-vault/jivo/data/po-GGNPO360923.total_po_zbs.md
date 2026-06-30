@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,,74444,38.5,DELHI,12.0,2026-05-26,2026-06-03,GGNPO360923,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74444,2026-06-27
+27.5,0.0,SWIGGY,,74444,38.5,DELHI,12.0,2026-05-26,2026-06-03,GGNPO360923,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74444,2026-06-30
 ```
 
 ---

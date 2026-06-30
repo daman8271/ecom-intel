@@ -1,0 +1,205 @@
+---
+type: moc
+title: Sap Items (193)
+tags:
+  - moc
+  - source/factory
+---
+
+# Sap Items — 193 records
+
+From `/quality-control/sap-items/`. Up: [[_HOME]]
+
+- [[quality-control__sap-items-FG0000180]] — BASIL SEEDS 200 GMS 1 PCS
+- [[quality-control__sap-items-FG0000102]] — BASIL SEEDS 250 GMS 1 POUCH
+- [[quality-control__sap-items-FG0000185]] — BB ROYAL BLENDED OIL OLIVE + RICE BRAN 1 LTR 20 PCS
+- [[quality-control__sap-items-FG0000186]] — BB ROYAL BLENDED OIL OLIVE + RICE BRAN 5 LTR 4 PCS
+- [[quality-control__sap-items-FG0000183]] — BB ROYAL CANOLA OIL 1 LTR 20 PCS
+- [[quality-control__sap-items-FG0000184]] — BB ROYAL CANOLA OIL 5 LTR 4 PCS
+- [[quality-control__sap-items-FG0000123]] — CANOLA OIL 1 LTR + 1 LTR COMBO 10 SET
+- [[quality-control__sap-items-FG0000125]] — CANOLA OIL 1 LTR + 1 LTR COMBO 10 SET PLAIN
+- [[quality-control__sap-items-FG0000121]] — CANOLA OIL 1 LTR 20 PCS
+- [[quality-control__sap-items-FG0000122]] — CANOLA OIL 1 LTR 24 PCS
+- [[quality-control__sap-items-FG0000156]] — CANOLA OIL 100 MLS 20 PCS
+- [[quality-control__sap-items-FG0000120]] — CANOLA OIL 5 LTR + 1 OLIVE 4 PCS
+- [[quality-control__sap-items-FG0000124]] — CANOLA OIL 5 LTR + OLIVE 1 LTR 3 PCS SHRINKED
+- [[quality-control__sap-items-FG0000127]] — CANOLA OIL 5 LTR + OLIVE 1 LTR 3 PCS SHRINKED PLAIN
+- [[quality-control__sap-items-FG0000118]] — CANOLA OIL 5 LTR 4 PCS
+- [[quality-control__sap-items-FG0000119]] — CANOLA OIL 5 LTR 4 PCS + 100 CASH BACK
+- [[quality-control__sap-items-FG0000126]] — CANOLA OIL 5 LTR 5 PCS + EXTRA LIGHT OLIVE 500 MLS
+- [[quality-control__sap-items-FG0000165]] — CHIA SEEDS 200 GMS 1 PCS
+- [[quality-control__sap-items-FG0000166]] — CHIA SEEDS 400 GMS 1 PCS
+- [[quality-control__sap-items-FG0000171]] — CHIA SEEDS 50 GMS
+- [[quality-control__sap-items-FG0000167]] — CHIA SEEDS 800 GMS 1 PCS
+- [[quality-control__sap-items-FG0000175]] — COLD PRESS 1 LTR +1 LTR COMBO 12 SET
+- [[quality-control__sap-items-FG0000144]] — COLD PRESS 3 LTR + 1 LTR 6 PCS
+- [[quality-control__sap-items-FG0000129]] — COLD PRESS 3 LTR 4 PCS PLAIN
+- [[quality-control__sap-items-FG0000159]] — COLD PRESS 4 LTR + 1 LTR 5 PCS
+- [[quality-control__sap-items-FG0000176]] — COLD PRESS 4 LTR + POMACE OLIVE 1 LTR 5 PCS
+- [[quality-control__sap-items-FG0000160]] — COLD PRESS 4 LTR 5 PCS
+- [[quality-control__sap-items-FG0000131]] — COLD PRESS 5 LTR + EXTRA LIGHT OLIVE 1 LTR 3 PCS SHRINKED PLAIN
+- [[quality-control__sap-items-FG0000146]] — COLD PRESS 5 LTR + POMACE OLIVE 1 LTR 3 PCS SHRINKED
+- [[quality-control__sap-items-FG0000153]] — COLD PRESS 5 LTR + SANO EXTRA LIGHT OLIVE 1 LTR 4 PCS
+- [[quality-control__sap-items-FG0000113]] — COLD PRESS 5 LTR 4 PCS + 100 GMS COFFEE
+- [[quality-control__sap-items-FG0000107]] — COLD PRESS 5 LTR 5 PCS + 100 GMS COFFEE
+- [[quality-control__sap-items-FG0000115]] — COLD PRESS 5 LTR 5 PCS + CASSROLE
+- [[quality-control__sap-items-FG0000145]] — COLD PRESS 5 LTR + POMACE OLIVE 1 LTR 4 PCS
+- [[quality-control__sap-items-FG0000142]] — COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
+- [[quality-control__sap-items-FG0000143]] — COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
+- [[quality-control__sap-items-FG0000108]] — COLD PRESS SOYABEAN 15 LTR
+- [[quality-control__sap-items-FG0000109]] — COLD PRESS SOYABEAN OIL 1 LTR POUCH 12 PCS
+- [[quality-control__sap-items-FG0000130]] — COLD PRESS SUNFLOWER 200 LTR 1 PCS
+- [[quality-control__sap-items-FG0000133]] — COLD PRESSED SUNFLOWER OIL 2 LTR 10 PCS HANDLE
+- [[quality-control__sap-items-FG0000103]] — DESI GHEE 700 MLS 12 PCS
+- [[quality-control__sap-items-FG0000173]] — DESI GHEE A2 USA 1000 GMS 1 PCS
+- [[quality-control__sap-items-FG0000174]] — DESI GHEE A2 USA 500 GMS 1 PCS
+- [[quality-control__sap-items-FG0000104]] — EXTRA LIGHT OLIVE 100 MLS 10 PCS CSD
+- [[quality-control__sap-items-FG0000105]] — EXTRA LIGHT OLIVE 250 MLS 4 PCS CSD
+- [[quality-control__sap-items-FG0000111]] — EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS IMPORTED
+- [[quality-control__sap-items-FG0000155]] — EXTRA VIRGIN 2 LTR 10 PCS HANDLE
+- [[quality-control__sap-items-FG0000116]] — EXTRA VIRGIN COCONUT OIL 1 LTR 16 PCS
+- [[quality-control__sap-items-FG0000163]] — EXTRA VIRGIN COCONUT OIL 200 MLS 36 PCS
+- [[quality-control__sap-items-FG0000157]] — EXTRA VIRGIN COCONUT OIL 500 MLS 24 PCS
+- [[quality-control__sap-items-FG0000296]] — BASIL SEED 400 GMS 1 PCS
+- [[quality-control__sap-items-FG0000297]] — BASIL SEED 800 GMS 1 PCS
+- [[quality-control__sap-items-FG0000255]] — CAPSULES IMMUNITY BOOSTER 60 UNITS
+- [[quality-control__sap-items-FG0000256]] — CAPSULES WHEATGRASS 60 UNITS
+- [[quality-control__sap-items-FG0000225]] — COFFEE 100 GMS 16 PCS
+- [[quality-control__sap-items-FG0000215]] — COFFEE 100 GMS 24 PCS
+- [[quality-control__sap-items-FG0000271]] — COFFIE 100 GMS 15 PCS
+- [[quality-control__sap-items-FG0000200]] — COLD PRESS 4 LTR + 1 LTR FLASK 5 PCS
+- [[quality-control__sap-items-FG0000274]] — COLD PRESS SUNFLOWER 5 LTR 1 PCS ( 1 SET )
+- [[quality-control__sap-items-FG0000273]] — COLD PRESS SUNFLOWER 5 LTR 2 PCS ( 1 SET )
+- [[quality-control__sap-items-FG0000292]] — COLD PRESS SUNFLOWER OIL 15 LTR
+- [[quality-control__sap-items-FG0000265]] — DESI GHEE 1000 MLS 12 PCS
+- [[quality-control__sap-items-FG0000240]] — DESI GHEE 1000 MLS 9 PCS STEELJAR
+- [[quality-control__sap-items-FG0000208]] — DIET MIXTURE 120 GMS PKT
+- [[quality-control__sap-items-FG0000242]] — EXTRA LIGHT 1 LTR 1 PCS + POMACE OLIVE 1 LTR 2 PCS ( 1 SET )
+- [[quality-control__sap-items-FG0000243]] — EXTRA LIGHT 1 LTR 2 PCS + POMACE OLIVE 1 LTR 4 PCS ( 1 SET )
+- [[quality-control__sap-items-FG0000295]] — EXTRA VIRGIN OLIVE 200 LTR 1 PCS
+- [[quality-control__sap-items-FG0000298]] — FLAX  (ALSI) SEEDS 800 GMS 1 PCS
+- [[quality-control__sap-items-FG0000290]] — FLAX SEED 400 GMS 1 PCS
+- [[quality-control__sap-items-FG0000257]] — GIFT PACK 10 BOTTLES WHEAT GRASS
+- [[quality-control__sap-items-FG0000258]] — GLASS BOTTLE 200 MLS APPLE 12 PCS
+- [[quality-control__sap-items-FG0000233]] — GLASS BOTTLE 200 MLS APPLE 6 PCS
+- [[quality-control__sap-items-FG0000251]] — GLASS BOTTLE 200 MLS APPLE SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000239]] — GLASS BOTTLE 200 MLS APPLE SUGAR FREE 6 PCS
+- [[quality-control__sap-items-FG0000260]] — GLASS BOTTLE 200 MLS BLUEBERRY 12 PCS
+- [[quality-control__sap-items-FG0000286]] — GLASS BOTTLE 200 MLS BLUEBERRY 50 % SUGAR 12 PCS
+- [[quality-control__sap-items-FG0000232]] — GLASS BOTTLE 200 MLS BLUEBERRY 6 PCS
+- [[quality-control__sap-items-FG0000261]] — GLASS BOTTLE 200 MLS GINGER ALE 12 PCS
+- [[quality-control__sap-items-FG0000276]] — GLASS BOTTLE 200 MLS GINGER ALE SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000238]] — GLASS BOTTLE 200 MLS GINGER ALE SUGAR FREE 6 PCS
+- [[quality-control__sap-items-FG0000294]] — GLASS BOTTLE 200 MLS JEERA 12 PCS
+- [[quality-control__sap-items-FG0000262]] — GLASS BOTTLE 200 MLS MANGO 12 PCS
+- [[quality-control__sap-items-FG0000236]] — GLASS BOTTLE 200 MLS MANGO 6 PCS
+- [[quality-control__sap-items-FG0000244]] — GLASS BOTTLE 200 MLS MOJITO 12 PCS
+- [[quality-control__sap-items-FG0000285]] — GLASS BOTTLE 200 MLS MOJITO 50% SUGAR 12 PCS
+- [[quality-control__sap-items-FG0000235]] — GLASS BOTTLE 200 MLS MOJITO 6 PCS
+- [[quality-control__sap-items-FG0000250]] — GLASS BOTTLE 200 MLS MOJITO SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000237]] — GLASS BOTTLE 200 MLS MOJITO SUGAR FREE 6 PCS
+- [[quality-control__sap-items-FG0000263]] — GLASS BOTTLE 200 MLS ROSE 12 PCS
+- [[quality-control__sap-items-FG0000234]] — GLASS BOTTLE 200 MLS ROSE 6 PCS
+- [[quality-control__sap-items-FG0000252]] — GLASS BOTTLE 200 MLS TONIC WATER 12 PCS
+- [[quality-control__sap-items-FG0000264]] — GLASS BOTTLE 200 MLS TONIC WATER 6 PCS
+- [[quality-control__sap-items-FG0000284]] — GLASS BOTTLE 275 MLS ENERGY DRINK 50 % SUGAR 12 PCS
+- [[quality-control__sap-items-FG0000219]] — HONEY 1 KGS 6 PCS
+- [[quality-control__sap-items-FG0000218]] — HONEY 500 GMS 12 PCS
+- [[quality-control__sap-items-FG0000210]] — JIVO CHOCO FLAKES 125 GMS 10 PCS CSD
+- [[quality-control__sap-items-FG0000206]] — JIVO CHOCO FLAKES 125 GMS 72 PCS
+- [[quality-control__sap-items-FG0000205]] — JIVO CHOCO FLAKES 375 GMS 20 PCS
+- [[quality-control__sap-items-FG0000209]] — JIVO CHOCO FLAKES 375 GMS 4 PCS CSD
+- [[quality-control__sap-items-FG0000223]] — JIVO DESI GHEE 1 LTR 16 PCS
+- [[quality-control__sap-items-FG0000347]] — A2 GHEE 1KGS
+- [[quality-control__sap-items-FG0000348]] — A2 GHEE 500 GMS
+- [[quality-control__sap-items-FG0000397]] — CANOLA 5 + 1 LTR SET
+- [[quality-control__sap-items-FG0000317]] — CANOLA OIL 3 LTR
+- [[quality-control__sap-items-FG0000387]] — CHAI 250 GMS 40 PCS
+- [[quality-control__sap-items-FG0000393]] — COLD PRESS GROUNDNUT 200 MLS 70 PCS
+- [[quality-control__sap-items-FG0000396]] — COLD PRESS GROUNDNUT OIL 200 LTR 1 PCS
+- [[quality-control__sap-items-FG0000388]] — COLD PRESS GROUNDNUT OIL 200 MLS 36 PCS
+- [[quality-control__sap-items-FG0000389]] — COLD PRESS SUNFLOWER 3 LTR 6 PCS
+- [[quality-control__sap-items-FG0000394]] — COLD PRESS SUNFLOWER 5LTR 5 PCS
+- [[quality-control__sap-items-FG0000313]] — EXTRA LIGHT 1 +  1 LTR
+- [[quality-control__sap-items-FG0000304]] — EXTRA LIGHT 1 LTR 1 PCS + POMACE OLIVE 1 LTR 1 PCS + EXTRA VIRGIN 1 LTR 1 PCS ( 1 SET )
+- [[quality-control__sap-items-FG0000305]] — EXTRA LIGHT 1 LTR 2 PCS + POMACE OLIVE 1 LTR 2 PCS + EXTRA VIRGIN 1 LTR 2 PCS ( 1 SET )
+- [[quality-control__sap-items-FG0000310]] — EXTRA LIGHT 1 LTR PACK OF 3 SET
+- [[quality-control__sap-items-FG0000390]] — EXTRA LIGHT OLIVE 3 LTR TIN 2 PCS
+- [[quality-control__sap-items-FG0000315]] — EXTRA VIRGIN 1 + 1 LTR
+- [[quality-control__sap-items-FG0000380]] — EXTRA VIRGIN COCONUT OIL 200 MLS 6 PCS
+- [[quality-control__sap-items-FG0000381]] — EXTRA VIRGIN OLIVE 200 MLS 35 PCS
+- [[quality-control__sap-items-FG0000391]] — EXTRA VIRGIN OLIVE 3 LTR TIN 6 PCS
+- [[quality-control__sap-items-FG0000363]] — GLASS BOTTLE 200 MLS BLUEBERRY SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000325]] — GLASS BOTTLE 200 MLS ENERGY DRINK SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000309]] — GLASS BOTTLE 200 MLS ENERGY DRINK SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000375]] — GLASS BOTTLE 200 MLS JEERA SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000319]] — GROUNDNUT 1 + 1 LTR
+- [[quality-control__sap-items-FG0000399]] — GROUNDNUT 5+1 LTR
+- [[quality-control__sap-items-FG0000366]] — JIVO CELEBRATION GIFT BOX 410 GMS
+- [[quality-control__sap-items-FG0000386]] — JIVO GOLD 1 LTR 20 PCS ROUND BOTTLE
+- [[quality-control__sap-items-FG0000321]] — JIVO GOLD OIL 1 + 1 LTR
+- [[quality-control__sap-items-FG0000365]] — JIVO HEALTHY GREETING GIFT BOX 240 GMS
+- [[quality-control__sap-items-FG0000370]] — JIVO PREMIUM OIL AND NUTS GIFT BOX
+- [[quality-control__sap-items-FG0000369]] — JIVO PREMIUM SAFFRON AND NUTS GIFT BOX
+- [[quality-control__sap-items-FG0000318]] — JIVO SO OLIVE OIL 1 + 1 LTR
+- [[quality-control__sap-items-FG0000307]] — JIVO WHEATGRASS LEMONADE SACHET 9 GMS 30 PCS
+- [[quality-control__sap-items-FG0000349]] — JIVO_CANOLA_EXTRALIGHT_2+2
+- [[quality-control__sap-items-FG0000361]] — JIVO_CANOLA_GROUNDNUT_1+1L
+- [[quality-control__sap-items-FG0000336]] — JIVO_CANOLA_GROUNDNUT_GROUNDNUT_1+1+1L
+- [[quality-control__sap-items-FG0000362]] — JIVO_CANOLA_MUSTARD_GROUNDNUT_1+1+1L
+- [[quality-control__sap-items-FG0000351]] — JIVO_CANOLA_MUSTARD_SOYABEAN_SUNFLOWER_POMACE_1+1+1+1+1
+- [[quality-control__sap-items-FG0000352]] — JIVO_DESI_GHEE_500 GMS
+- [[quality-control__sap-items-FG0000353]] — JIVO_DESI_GHEE_500 GMS (1+1)
+- [[quality-control__sap-items-FG0000341]] — JIVO_EXTRA_LIGHT+COCONUT+POMACE_1+1+1L
+- [[quality-control__sap-items-FG0000350]] — JIVO_EXTRA_LIGHT_2+1
+- [[quality-control__sap-items-FG0000354]] — JIVO_GHEE_CANOLA_(500G+1L)
+- [[quality-control__sap-items-FG0000355]] — JIVO_GHEE_CANOLA_SUNFLOWER_500G+1+1L
+- [[quality-control__sap-items-FG0000356]] — JIVO_SUNFLOWER_CANOLA_1+1L
+- [[quality-control__sap-items-FG0000357]] — JIVO_SUNFLOWER_SOYABEAN_1+1L
+- [[quality-control__sap-items-FG0000358]] — JIVO_YELLOW_MUSTARD+GROUNDNUT_1+1L
+- [[quality-control__sap-items-FG0000360]] — JIVO_YELLOW_MUSTARD+YELLOW_MUSTARD_1+1L
+- [[quality-control__sap-items-FG0000359]] — JIVO_YELLOW_MUSTARD_1L
+- [[quality-control__sap-items-FG0000378]] — KIRPA DESI GHEE 1 LTR 12 PCS
+- [[quality-control__sap-items-FG0000421]] — COLD PRESS 1 LTR (NIRMAL RISHI ) 24 PCS
+- [[quality-control__sap-items-FG0000422]] — COLD PRESS 1 LTR (NIRMAL RISHI )20PCS
+- [[quality-control__sap-items-FG0000420]] — COLD PRESS GROUNDNUT 200 MLS 70 PCS - BH
+- [[quality-control__sap-items-FG0000416]] — COLD PRESS GROUNDNUT OIL 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000404]] — COLD PRESS SUNFLOWER 1 LTR +1 LTR COMBO 10 SET
+- [[quality-control__sap-items-FG0000402]] — COLD PRESS SUNFLOWER 1 LTR 24 PCS
+- [[quality-control__sap-items-FG0000400]] — EXTRA LIGHT 1+1+1 LTR
+- [[quality-control__sap-items-FG0000414]] — EXTRA LIGHT OLIVE 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000417]] — EXTRA VIRGIN COCONUT 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000413]] — EXTRA VIRGIN OLIVE 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000424]] — FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS
+- [[quality-control__sap-items-FG0000419]] — FIRST PRESSED SUNFLOWER OIL 1 LTR 20 PCS
+- [[quality-control__sap-items-FG0000409]] — JIVO GOLD 1 LTR + 1 LTR COMBO 10 SET
+- [[quality-control__sap-items-FG0000401]] — JIVO MUSTARD KACCHI GHANI 869 GMS 20 PCS
+- [[quality-control__sap-items-FG0000408]] — MUSTARD KACHI GHANI 1 LTR + 1 LTR COMBO 10 SET
+- [[quality-control__sap-items-FG0000425]] — PET BOTTLE 160 MLS SHIKANJI 24 PCS
+- [[quality-control__sap-items-FG0000403]] — PET BOTTLE 250 ML JIVO NATURAL MINERAL SPECIAL EDITION ARSHDEEP * (24 PCS)
+- [[quality-control__sap-items-FG0000407]] — PET BOTTLE 5 LTR SANO NATURAL MINERAL WATER
+- [[quality-control__sap-items-FG0000412]] — POMACE OLIVE 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000406]] — RICE BRAN OIL 1 LTR +1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000411]] — SANO POMACE OLIVE 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000410]] — SESAME OIL 1 LTR + 1 LTR COMBO 10 SET
+- [[quality-control__sap-items-FG0000418]] — SO OLIVE 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000405]] — SOYABEAN OIL 1 LTR + 1 LTR COMBO 10 SET
+- [[quality-control__sap-items-FG0000423]] — SOYABEAN OIL 12 KGS
+- [[quality-control__sap-items-FG0000415]] — YELLOW MUSTARD OIL 1 LTR + 1 LTR COMBO 10 SET
+- [[quality-control__sap-items-RM0000002]] — CANOLA COLD PRESS LOOSE OIL OLD
+- [[quality-control__sap-items-FG0000060]] — CANOLA OIL VEDAKA 5 LTR 4 PCS
+- [[quality-control__sap-items-RM0000037]] — COCONUT EXTRA VIRGIN OIL
+- [[quality-control__sap-items-RM0000033]] — COCONUT RAW MATERIAL FOR OIL
+- [[quality-control__sap-items-RM0000035]] — COLD PRESS RAPESSED OIL CANOLA OIL
+- [[quality-control__sap-items-RM0000016]] — CRUDE DEGUMMED RAPESEED OIL NEW
+- [[quality-control__sap-items-RM0000031]] — CRUDE DEGUMMED SOYABEAN OIL IN BULK
+- [[quality-control__sap-items-RM0000020]] — CRUDE SUNFLOWER OIL
+- [[quality-control__sap-items-RM0000012]] — EXTRA LIGHT OLIVE LOSSE OIL IMPORTED
+- [[quality-control__sap-items-RM0000014]] — EXTRA VIRGIN OLIVE OIL IMPORTED
+- [[quality-control__sap-items-RM0000011]] — GROUNDNUT LOOSE OIL
+- [[quality-control__sap-items-SL0000220]] — JIVO CANOLA OIL 15 LTR TIN
+- [[quality-control__sap-items-SL0000254]] — JIVO COLD PRESS CANOLA OIL WITH PUNJABI JEERA JUICE BOX - 5L
+- [[quality-control__sap-items-SL0000213]] — JIVO RICE BRAIN OIL 1 LTR
+- [[quality-control__sap-items-SL0000195]] — JIVO RICE BRAIN OIL 5  LTR
+- [[quality-control__sap-items-SL0000221]] — JIVO SOYABEAN OIL POUCH 1 LTR
+- [[quality-control__sap-items-SC0000037]] — KUMKUMADI OIL

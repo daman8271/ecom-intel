@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-196.19,0.0,SWIGGY,,61804,206.0,JAIPUR,4.0,2026-01-22,2026-02-05,JPAPO33818,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61804,2026-06-27
-138.09,0.0,SWIGGY,,61805,144.995,JAIPUR,20.0,2026-01-22,2026-02-05,JPAPO33818,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61805,2026-06-27
-690.48,0.0,SWIGGY,,61806,725.00375,JAIPUR,8.0,2026-01-22,2026-02-05,JPAPO33818,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61806,2026-06-27
-761.9,0.0,SWIGGY,,61807,799.995,JAIPUR,16.0,2026-01-22,2026-02-05,JPAPO33818,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61807,2026-06-27
+196.19,0.0,SWIGGY,,61804,206.0,JAIPUR,4.0,2026-01-22,2026-02-05,JPAPO33818,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61804,2026-06-30
+138.09,0.0,SWIGGY,,61805,144.995,JAIPUR,20.0,2026-01-22,2026-02-05,JPAPO33818,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61805,2026-06-30
+690.48,0.0,SWIGGY,,61806,725.00375,JAIPUR,8.0,2026-01-22,2026-02-05,JPAPO33818,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61806,2026-06-30
+761.9,0.0,SWIGGY,,61807,799.995,JAIPUR,16.0,2026-01-22,2026-02-05,JPAPO33818,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61807,2026-06-30
 ```
 
 ---

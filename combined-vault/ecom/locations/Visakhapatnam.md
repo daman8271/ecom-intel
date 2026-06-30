@@ -5,7 +5,7 @@ platforms:
   - flipkart-minutes
 pincodes: 1
 skus: 1
-observations: 37
+observations: 38
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -24,7 +24,7 @@ Up: [[locations-index]]
 ## SKUs available in Visakhapatnam (1)
 [[jivo-cold-press-canola-oil-plastic-bottle-1l]]
 
-## Observations (37 rows)
+## Observations (38 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -65,6 +65,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-25-1208,2026-06-25,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,530017,242,375,35.5,1
 2026-06-26-0832,2026-06-26,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,530017,247,375,34,1
 2026-06-28-0551,2026-06-28,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,530017,242,375,35.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,530017,242,375,35.5,1
 ```
 
 ---

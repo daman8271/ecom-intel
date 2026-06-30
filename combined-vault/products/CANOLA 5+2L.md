@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0138
 product: "CANOLA 5+2L"
 sap_codes:
   - SL0000012
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0138` |
 | Product | CANOLA 5+2L |
 | JIVO SKU / SAP code | `SL0000012` |
 | canonical_sku(s) | `qwrggbfmfwgwuwtj`, `jivo-canola-refined-edible-oils-52-ltr-7l`, `jivo-canola-refined-edible-oils-52-ltr-2l` |

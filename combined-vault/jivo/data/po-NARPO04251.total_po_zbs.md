@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-196.19,0.0,SWIGGY,,63061,205.9995833,NAGPUR,24.0,2026-02-06,2026-02-15,NARPO04251,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63061,2026-06-27
-144.76,0.0,SWIGGY,,63062,151.998125,NAGPUR,80.0,2026-02-06,2026-02-15,NARPO04251,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63062,2026-06-27
+196.19,0.0,SWIGGY,,63061,205.9995833,NAGPUR,24.0,2026-02-06,2026-02-15,NARPO04251,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63061,2026-06-30
+144.76,0.0,SWIGGY,,63062,151.998125,NAGPUR,80.0,2026-02-06,2026-02-15,NARPO04251,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63062,2026-06-30
 ```
 
 ---

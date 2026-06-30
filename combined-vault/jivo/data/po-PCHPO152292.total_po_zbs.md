@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,0.0,SWIGGY,2025-11-03,54620,529.9981013,CHANDIGARH,79.0,2025-10-23,2025-11-06,PCHPO152292,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54620,2026-06-27
-800.0,8.0,SWIGGY,2025-11-03,54621,840.0,CHANDIGARH,8.0,2025-10-23,2025-11-06,PCHPO152292,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54621,2026-06-27
+504.76,0.0,SWIGGY,2025-11-03,54620,529.9981013,CHANDIGARH,79.0,2025-10-23,2025-11-06,PCHPO152292,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54620,2026-06-30
+800.0,8.0,SWIGGY,2025-11-03,54621,840.0,CHANDIGARH,8.0,2025-10-23,2025-11-06,PCHPO152292,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54621,2026-06-30
 ```
 
 ---

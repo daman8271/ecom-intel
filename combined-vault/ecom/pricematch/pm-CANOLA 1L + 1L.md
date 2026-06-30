@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-28
-observations: 168
+last_seen: 2026-06-29
+observations: 176
 latest_status: NOT_LISTED
-below_days: 18
+below_days: 19
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-28) — ref ₹509 vs live ₹-
-- **Days below reference:** 18 of 21
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-29) — ref ₹529 vs live ₹-
+- **Days below reference:** 19 of 22
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]]
 
-## Ref-vs-live history (168 observations)
+## Ref-vs-live history (176 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -213,6 +213,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-28,flipkart,ABOVE,SVD,509,533,533,533,24,4.72,0,true
 2026-06-28,flipkart-minutes,NOT_LISTED,SVD,509,,,,,,0,false
 2026-06-28,zepto,NOT_LISTED,SVD,509,,,,,,0,false
+2026-06-29,amazon,BELOW,BAU,529,492,492,492,-37,-6.99,1,true
+2026-06-29,amazon-fresh,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-29,amazon-now,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-29,bigbasket,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-29,blinkit,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-29,flipkart,ABOVE,BAU,529,533,533,533,4,0.76,0,true
+2026-06-29,flipkart-minutes,NOT_LISTED,BAU,529,,,,,,0,false
+2026-06-29,zepto,NOT_LISTED,BAU,529,,,,,,0,false
 ```
 
 ---

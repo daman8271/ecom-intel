@@ -36,7 +36,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "require_drr": 9382.67,
    "targets": 70000.0,
    "type": "prim",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-27T06:27:31.635505+00:00",
    "year": 2026
   },
   {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "require_drr": 17251.0,
    "targets": 120000.0,
    "type": "prim",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-27T06:27:31.635505+00:00",
    "year": 2026
   },
   {
@@ -76,7 +76,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "require_drr": 0.0,
    "targets": 50000.0,
    "type": "prim",
-   "updated_at": "2026-06-08T09:55:46.462453+00:00",
+   "updated_at": "2026-06-27T06:27:40.010678+00:00",
    "year": 2026
   },
   {
@@ -96,7 +96,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "require_drr": 0.0,
    "targets": 100000.0,
    "type": "prim",
-   "updated_at": "2026-06-08T09:55:46.462453+00:00",
+   "updated_at": "2026-06-27T06:27:40.010678+00:00",
    "year": 2026
   }
  ],

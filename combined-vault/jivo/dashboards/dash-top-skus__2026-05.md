@@ -67,20 +67,20 @@ Up: [[dashboards-index]] · [[2026-05]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 40.7,
+   "delta_pct": 40.4,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 68290.0,
+   "ltrs": 68130.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 48540.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 155.1,
+   "delta_pct": 155.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 67910.0,
+   "ltrs": 67925.0,
    "name": "CANOLA 5L",
    "prev_ltrs": 26620.0
   },

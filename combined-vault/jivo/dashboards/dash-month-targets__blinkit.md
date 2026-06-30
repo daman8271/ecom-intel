@@ -20,45 +20,45 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
 {
  "data": [
   {
-   "achieved_pct": 0.8616,
+   "achieved_pct": 0.9758,
    "created_at": "2026-06-04T07:45:24.268336+00:00",
-   "date": "2026-06-25",
-   "done_ltrs": 30156.0,
-   "done_value": 4567164.0,
-   "est_ltr": 36187.2,
-   "est_ltr_pct": 1.0339,
-   "est_value": 5480596.8,
+   "date": "2026-06-28",
+   "done_ltrs": 34154.0,
+   "done_value": 5173254.5,
+   "est_ltr": 36593.57,
+   "est_ltr_pct": 1.0455,
+   "est_value": 5542772.68,
    "format": "BLINKIT",
-   "growth": 2692.2,
-   "growth_pct": 0.0804,
+   "growth": 3098.57,
+   "growth_pct": 0.0925,
    "id": 39,
    "item_head": "COMMODITY",
    "last_month": 33495.0,
    "month": 6,
    "targets": 35000.0,
    "type": "B2B",
-   "updated_at": "2026-06-26T05:29:55.379666+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
-   "achieved_pct": 0.6606,
+   "achieved_pct": 0.7424,
    "created_at": "2026-06-04T07:45:22.716127+00:00",
-   "date": "2026-06-25",
-   "done_ltrs": 39638.0,
-   "done_value": 12179320.0,
-   "est_ltr": 47565.6,
-   "est_ltr_pct": 0.7928,
-   "est_value": 14615184.0,
+   "date": "2026-06-28",
+   "done_ltrs": 44544.0,
+   "done_value": 13682587.0,
+   "est_ltr": 47725.71,
+   "est_ltr_pct": 0.7954,
+   "est_value": 14659914.64,
    "format": "BLINKIT",
-   "growth": -5540.4,
-   "growth_pct": -0.1043,
+   "growth": -5380.29,
+   "growth_pct": -0.1013,
    "id": 38,
    "item_head": "PREMIUM",
    "last_month": 53106.0,
    "month": 6,
    "targets": 60000.0,
    "type": "B2B",
-   "updated_at": "2026-06-26T05:29:55.379666+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
@@ -79,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "month": 5,
    "targets": 35000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -100,7 +100,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "month": 5,
    "targets": 66000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -121,7 +121,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "month": 4,
    "targets": 55000.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   },
   {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "month": 4,
    "targets": 11000.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   }
  ],

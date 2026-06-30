@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-19.43,0.0,SWIGGY,,65509,20.40166667,DELHI,12.0,2026-03-11,2026-03-20,GGNPO336144,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65509,2026-06-27
+19.43,0.0,SWIGGY,,65509,20.40166667,DELHI,12.0,2026-03-11,2026-03-20,GGNPO336144,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65509,2026-06-30
 ```
 
 ---

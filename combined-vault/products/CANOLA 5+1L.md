@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0007
 product: "CANOLA 5+1L"
 sap_codes:
   - FG0000018
@@ -24,6 +25,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0007` |
 | Product | CANOLA 5+1L |
 | JIVO SKU / SAP code | `FG0000018`, `SL0000243` |
 | canonical_sku(s) | `edofrwtzzubgdj3q`, `jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-5l`, `jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l`, `qwrgemqgrdx7btj6`, `edohhxabmq3jvfsr`, `edohhzbqb9p4z6wm`, `jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l`, `jivo-canola-cold-pressed-edible-oil-5-litres-with-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-6l`, `jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-6l` |
@@ -68,3 +70,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - CANOLA]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - flipkart]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000018`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000018]]
+

@@ -5,8 +5,8 @@ display_name: JIVO Cooking Sunflower Oil Can (4 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
-last_seen: 2026-06-28
-observations: 120
+last_seen: 2026-06-29
+observations: 139
 min_price: 270
 max_price: 1080
 latest_price: 729
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Hyderabad]] · [[Kanpur]]
 
-## Runs that observed this SKU (52)
-[[flipkart-minutes-2026-06-28-0551]] · [[flipkart-minutes-2026-06-26-0832]] · [[flipkart-minutes-2026-06-25-1208]] · [[flipkart-minutes-2026-06-25-0832]] · [[flipkart-minutes-2026-06-24-1208]] · [[flipkart-minutes-2026-06-24-0832]] · [[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]] · [[flipkart-minutes-2026-06-22-1213]] · [[flipkart-minutes-2026-06-22-0832]] · [[flipkart-minutes-2026-06-21-1211]] · [[flipkart-minutes-2026-06-21-0832]] · [[flipkart-minutes-2026-06-20-1207]] · [[flipkart-minutes-2026-06-20-0832]] · [[flipkart-minutes-2026-06-19-1209]] · [[flipkart-minutes-2026-06-19-0832]] · [[flipkart-minutes-2026-06-18-1202]] · [[flipkart-minutes-2026-06-18-0832]] · [[flipkart-minutes-2026-06-17-1211]] · [[flipkart-minutes-2026-06-17-0832]] · [[flipkart-minutes-2026-06-16-1204]] · [[flipkart-minutes-2026-06-16-0832]] · [[flipkart-minutes-2026-06-15-1208]] · [[flipkart-minutes-2026-06-15-0832]] · [[flipkart-minutes-2026-06-14-1208]] · [[flipkart-minutes-2026-06-14-0832]] · [[flipkart-minutes-2026-06-12-0832]] · [[flipkart-minutes-2026-06-11-1215]] · [[flipkart-minutes-2026-06-04-1417]] · [[flipkart-minutes-2026-06-01-1600]] · [[flipkart-minutes-2026-06-01-1200]] · [[flipkart-minutes-2026-06-01-0900]] · [[flipkart-minutes-2026-05-31-1600]] · [[flipkart-minutes-2026-05-31-1200]] · [[flipkart-minutes-2026-05-31-0900]] · [[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-28-1600]] · [[flipkart-minutes-2026-05-28-1200]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-1200]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]]
+## Runs that observed this SKU (53)
+[[flipkart-minutes-2026-06-29-0551]] · [[flipkart-minutes-2026-06-28-0551]] · [[flipkart-minutes-2026-06-26-0832]] · [[flipkart-minutes-2026-06-25-1208]] · [[flipkart-minutes-2026-06-25-0832]] · [[flipkart-minutes-2026-06-24-1208]] · [[flipkart-minutes-2026-06-24-0832]] · [[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]] · [[flipkart-minutes-2026-06-22-1213]] · [[flipkart-minutes-2026-06-22-0832]] · [[flipkart-minutes-2026-06-21-1211]] · [[flipkart-minutes-2026-06-21-0832]] · [[flipkart-minutes-2026-06-20-1207]] · [[flipkart-minutes-2026-06-20-0832]] · [[flipkart-minutes-2026-06-19-1209]] · [[flipkart-minutes-2026-06-19-0832]] · [[flipkart-minutes-2026-06-18-1202]] · [[flipkart-minutes-2026-06-18-0832]] · [[flipkart-minutes-2026-06-17-1211]] · [[flipkart-minutes-2026-06-17-0832]] · [[flipkart-minutes-2026-06-16-1204]] · [[flipkart-minutes-2026-06-16-0832]] · [[flipkart-minutes-2026-06-15-1208]] · [[flipkart-minutes-2026-06-15-0832]] · [[flipkart-minutes-2026-06-14-1208]] · [[flipkart-minutes-2026-06-14-0832]] · [[flipkart-minutes-2026-06-12-0832]] · [[flipkart-minutes-2026-06-11-1215]] · [[flipkart-minutes-2026-06-04-1417]] · [[flipkart-minutes-2026-06-01-1600]] · [[flipkart-minutes-2026-06-01-1200]] · [[flipkart-minutes-2026-06-01-0900]] · [[flipkart-minutes-2026-05-31-1600]] · [[flipkart-minutes-2026-05-31-1200]] · [[flipkart-minutes-2026-05-31-0900]] · [[flipkart-minutes-2026-05-30-1200]] · [[flipkart-minutes-2026-05-30-0900]] · [[flipkart-minutes-2026-05-28-1600]] · [[flipkart-minutes-2026-05-28-1200]] · [[flipkart-minutes-2026-05-27-1200]] · [[flipkart-minutes-2026-05-26-1600]] · [[flipkart-minutes-2026-05-26-1200]] · [[flipkart-minutes-2026-05-25-1200]] · [[flipkart-minutes-2026-05-24-1600]] · [[flipkart-minutes-2026-05-24-1200]] · [[flipkart-minutes-2026-05-24-0900]] · [[flipkart-minutes-2026-05-23-1600]] · [[flipkart-minutes-2026-05-23-1200]] · [[flipkart-minutes-2026-05-22-1600]] · [[flipkart-minutes-2026-05-22-1200]] · [[flipkart-minutes-2026-05-22-0900]] · [[flipkart-minutes-2026-05-21-1305]]
 
-## Price history (120 observations)
+## Price history (139 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -154,6 +154,25 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-28-0551,2026-06-28,flipkart-minutes,Hyderabad,500092,729,1080,32.5,1
 2026-06-28-0551,2026-06-28,flipkart-minutes,Hyderabad,500110,729,1080,32.5,1
 2026-06-28-0551,2026-06-28,flipkart-minutes,Hyderabad,502032,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500001,270,270,0,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500003,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500011,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500016,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500019,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500024,270,270,0,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500029,270,270,0,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500034,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500045,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500048,729,729,0,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500055,729,729,0,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500075,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500076,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500079,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500087,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500089,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500092,729,1080,32.5,1
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,500110,729,729,0,0
+2026-06-29-0551,2026-06-29,flipkart-minutes,Hyderabad,502032,729,1080,32.5,1
 ```
 
 ---

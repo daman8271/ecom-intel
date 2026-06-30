@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,0.0,SWIGGY,,61891,219.99625,JAIPUR,16.0,2026-01-24,2026-02-07,JPAPO34293,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61891,2026-06-27
-1047.62,0.0,SWIGGY,,61892,1100.000833,JAIPUR,12.0,2026-01-24,2026-02-07,JPAPO34293,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61892,2026-06-27
-138.1,0.0,SWIGGY,,61893,145.00475,JAIPUR,40.0,2026-01-24,2026-02-07,JPAPO34293,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61893,2026-06-27
+209.52,0.0,SWIGGY,,61891,219.99625,JAIPUR,16.0,2026-01-24,2026-02-07,JPAPO34293,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61891,2026-06-30
+1047.62,0.0,SWIGGY,,61892,1100.000833,JAIPUR,12.0,2026-01-24,2026-02-07,JPAPO34293,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61892,2026-06-30
+138.1,0.0,SWIGGY,,61893,145.00475,JAIPUR,40.0,2026-01-24,2026-02-07,JPAPO34293,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:61893,2026-06-30
 ```
 
 ---

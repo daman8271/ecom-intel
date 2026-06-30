@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,75570,499.9994792,DELHI,96.0,2026-06-04,2026-06-12,GGNPO363743,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75570,2026-06-27
-149.52,0.0,SWIGGY,,75571,156.9961944,DELHI,1440.0,2026-06-04,2026-06-12,GGNPO363743,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75571,2026-06-27
+476.19,0.0,SWIGGY,,75570,499.9994792,DELHI,96.0,2026-06-04,2026-06-12,GGNPO363743,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75570,2026-06-30
+149.52,0.0,SWIGGY,,75571,156.9961944,DELHI,1440.0,2026-06-04,2026-06-12,GGNPO363743,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75571,2026-06-30
 ```
 
 ---

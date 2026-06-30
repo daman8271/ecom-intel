@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,32.0,SWIGGY,2026-06-25,76638,205.0,CHANDIGARH,32.0,2026-06-15,2026-06-27,PCHPO207953,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:76638,2026-06-27
-747.62,28.0,SWIGGY,2026-06-25,76639,785.0,CHANDIGARH,28.0,2026-06-15,2026-06-27,PCHPO207953,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:76639,2026-06-27
-200.0,16.0,SWIGGY,2026-06-25,76640,210.0,CHANDIGARH,16.0,2026-06-15,2026-06-27,PCHPO207953,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:76640,2026-06-27
+195.24,32.0,SWIGGY,2026-06-25,76638,205.0,CHANDIGARH,32.0,2026-06-15,2026-06-27,PCHPO207953,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:76638,2026-06-30
+747.62,28.0,SWIGGY,2026-06-25,76639,785.0,CHANDIGARH,28.0,2026-06-15,2026-06-27,PCHPO207953,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:76639,2026-06-30
+200.0,16.0,SWIGGY,2026-06-25,76640,210.0,CHANDIGARH,16.0,2026-06-15,2026-06-27,PCHPO207953,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:76640,2026-06-30
 ```
 
 ---

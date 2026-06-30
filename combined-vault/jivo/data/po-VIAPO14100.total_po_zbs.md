@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-190.48,0.0,SWIGGY,,54117,200.00375,VIZAG,16.0,2025-10-10,2025-10-26,VIAPO14100,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54117,2026-06-27
-133.33,0.0,SWIGGY,,54118,139.9966667,VIZAG,48.0,2025-10-10,2025-10-26,VIAPO14100,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54118,2026-06-27
+190.48,0.0,SWIGGY,,54117,200.00375,VIZAG,16.0,2025-10-10,2025-10-26,VIAPO14100,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54117,2026-06-30
+133.33,0.0,SWIGGY,,54118,139.9966667,VIZAG,48.0,2025-10-10,2025-10-26,VIAPO14100,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54118,2026-06-30
 ```
 
 ---

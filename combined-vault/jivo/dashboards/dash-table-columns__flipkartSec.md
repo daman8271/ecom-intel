@@ -40,23 +40,23 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
  ],
  "sample": {
   "Brand": "JIVO",
-  "Cancellation Amount": 501.0,
-  "Cancellation Units": 1,
+  "Cancellation Amount": 0.0,
+  "Cancellation Units": 0,
   "Category": "Gourmet",
-  "Final Sale Amount": 0.0,
-  "Final Sale Units": 0,
+  "Final Sale Amount": 3647.0,
+  "Final Sale Units": 4,
   "Fulfillment Type": "NON_FBF",
-  "GMV": 501.0,
-  "Gross Units": 1,
+  "GMV": 3647.0,
+  "Gross Units": 4,
   "Location Id": "LOCd11c4c8929a44e208e29b98274763dfd",
   "Order Date": "2026-06-01",
-  "Product Id": "EDOHGP27PXFNHZNZ",
+  "Product Id": "EDOFT6PR7QMYHGJH",
   "Return Amount": 0.0,
   "Return Units": 0,
-  "SKU ID": "Jivo_Extra Virgin_200ml_Pack_Of_3",
+  "SKU ID": "Extra light 1+1L",
   "Vertical": "OtherCookingOil",
-  "created_at": "2026-06-04T06:28:17.226215",
-  "id": 77244
+  "created_at": "2026-06-04T06:28:17.234785",
+  "id": 77252
  }
 }
 ```

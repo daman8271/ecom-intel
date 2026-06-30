@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0032
 product: "SUNFLOWER 2L"
 sap_codes:
   - FG0000133
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0032` |
 | Product | SUNFLOWER 2L |
 | JIVO SKU / SAP code | `FG0000133` |
 | canonical_sku(s) | `edoge62esbtmbrgf`, `jivo-cold-pressed-chemical-free-sunflower-oil-for-roasting-frying-baking-all-types-of-cuisines-high-in-antioxidants-tasteful-and-healthy-2-litre-2l` |
@@ -61,3 +63,11 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - SUNFLOWER]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - flipkart]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000133`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000133]]
+- **1 sap items:** [[quality-control__sap-items-FG0000133]]
+

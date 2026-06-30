@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-443.1,16.0,SWIGGY,2025-12-03,57428,465.255,KOCHI,16.0,2025-11-27,2025-12-14,KOCPO73373,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57428,2026-06-27
-146.67,64.0,SWIGGY,2025-12-03,57429,154.0032813,KOCHI,64.0,2025-11-27,2025-12-14,KOCPO73373,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57429,2026-06-27
+443.1,16.0,SWIGGY,2025-12-03,57428,465.255,KOCHI,16.0,2025-11-27,2025-12-14,KOCPO73373,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57428,2026-06-30
+146.67,64.0,SWIGGY,2025-12-03,57429,154.0032813,KOCHI,64.0,2025-11-27,2025-12-14,KOCPO73373,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57429,2026-06-30
 ```
 
 ---

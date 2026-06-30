@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0135
 product: "GROUNDNUT 5+1L"
 sap_codes:
   - FG0000399
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0135` |
 | Product | GROUNDNUT 5+1L |
 | JIVO SKU / SAP code | `FG0000399` |
 | canonical_sku(s) | `edogw6r828yya8xa`, `jivo-groundnut-oil-5-1-litre-cold-pressed-groundnut-oil-cold-pressed-oil-peanut-oil-ground-nut-oil-natural-cooking-oil-chemical-free-pack-6l`, `jivo-cold-pressed-groundnut-peanut-oil-51-litre-6l` |
@@ -62,3 +64,11 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - GROUNDNUT]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - flipkart]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000399`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000399]]
+- **1 sap items:** [[quality-control__sap-items-FG0000399]]
+

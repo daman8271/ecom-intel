@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-342.86,68.0,SWIGGY,2025-11-12,55073,360.0027941,BANGALORE,68.0,2025-10-30,2025-11-15,MBIPO279846,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55073,2026-06-27
+342.86,68.0,SWIGGY,2025-11-12,55073,360.0027941,BANGALORE,68.0,2025-10-30,2025-11-15,MBIPO279846,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55073,2026-06-30
 ```
 
 ---

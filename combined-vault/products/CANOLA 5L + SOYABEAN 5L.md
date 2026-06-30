@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0139
 product: "CANOLA 5L + SOYABEAN 5L"
 sap_codes:
   - SL0000016
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0139` |
 | Product | CANOLA 5L + SOYABEAN 5L |
 | JIVO SKU / SAP code | `SL0000016` |
 | canonical_sku(s) | `edoggx8c5qad2mpp`, `jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-5l`, `jivo-canola-cold-pressed-oil-5-litres-with-soyabean-edible-cooking-oil-5-litres-high-in-omega6-pufa-with-natural-antioxidant-suitable-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-na` |

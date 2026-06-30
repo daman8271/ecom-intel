@@ -1,0 +1,33 @@
+---
+type: factory-veh
+id: 50
+title: "HR58C0783"
+entity: Vehicle
+source_endpoint: /vehicle-management/vehicles/
+company: JIVO_MART
+tags:
+  - type/factory-veh
+  - source/factory
+  - company/JIVO_MART
+---
+# HR58C0783
+
+> Vehicle from `/vehicle-management/vehicles/` (Jivo Mart / JIVO_MART).
+
+## Fields
+- **id:** 50
+- **vehicle_number:** HR58C0783
+- **vehicle_type:**
+  ```json
+  {"id": 3, "name": "Truck"}
+  ```
+- **transporter:**
+  ```json
+  {"id": 8, "name": "ANSHIKA LOGISTICS", "contact_person": "ANSHIKA", "mobile_no": "9837141177", "gstin": "", "created_at": "2026-02-21T10:11:08.039689+05:30"}
+  ```
+- **capacity_ton:** 9.00
+- **created_at:** 2026-03-06T15:34:05.825045+05:30
+
+## Related
+- transporter -> [[trn-8]]
+- vehicle_type -> [[vty-3]]

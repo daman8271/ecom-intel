@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-809.52,0.0,SWIGGY,,72093,849.9961905,LUCKNOW,168.0,2026-05-07,2026-05-19,LKOPO168095,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72093,2026-06-27
+809.52,0.0,SWIGGY,,72093,849.9961905,LUCKNOW,168.0,2026-05-07,2026-05-19,LKOPO168095,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72093,2026-06-30
 ```
 
 ---

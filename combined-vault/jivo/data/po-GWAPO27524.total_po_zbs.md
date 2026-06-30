@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-116.19,0.0,SWIGGY,,68759,121.9995,GUWAHATI,80.0,2026-04-11,2026-04-27,GWAPO27524,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68759,2026-06-27
-2215.49,0.0,SWIGGY,,68760,2326.265,GUWAHATI,4.0,2026-04-11,2026-04-27,GWAPO27524,,79292,Jivo Pomace Olive Oil 5.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68760,2026-06-27
-146.67,0.0,SWIGGY,,68761,154.003125,GUWAHATI,16.0,2026-04-11,2026-04-27,GWAPO27524,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68761,2026-06-27
+116.19,0.0,SWIGGY,,68759,121.9995,GUWAHATI,80.0,2026-04-11,2026-04-27,GWAPO27524,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68759,2026-06-30
+2215.49,0.0,SWIGGY,,68760,2326.265,GUWAHATI,4.0,2026-04-11,2026-04-27,GWAPO27524,,79292,Jivo Pomace Olive Oil 5.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68760,2026-06-30
+146.67,0.0,SWIGGY,,68761,154.003125,GUWAHATI,16.0,2026-04-11,2026-04-27,GWAPO27524,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68761,2026-06-30
 ```
 
 ---

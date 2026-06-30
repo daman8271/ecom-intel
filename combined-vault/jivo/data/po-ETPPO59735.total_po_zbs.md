@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,0.0,SWIGGY,,73822,256.9981429,NOIDA,140.0,2026-05-20,2026-05-29,ETPPO59735,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73822,2026-06-27
-182.86,0.0,SWIGGY,,73823,192.0028571,NOIDA,112.0,2026-05-20,2026-05-29,ETPPO59735,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73823,2026-06-27
+244.76,0.0,SWIGGY,,73822,256.9981429,NOIDA,140.0,2026-05-20,2026-05-29,ETPPO59735,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73822,2026-06-30
+182.86,0.0,SWIGGY,,73823,192.0028571,NOIDA,112.0,2026-05-20,2026-05-29,ETPPO59735,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73823,2026-06-30
 ```
 
 ---

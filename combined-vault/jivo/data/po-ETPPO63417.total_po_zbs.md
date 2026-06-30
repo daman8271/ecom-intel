@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-890.48,24.0,SWIGGY,2026-06-07,75083,935.00375,NOIDA,24.0,2026-06-02,2026-06-10,ETPPO63417,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75083,2026-06-27
-154.29,100.0,SWIGGY,2026-06-07,75084,162.0042778,NOIDA,180.0,2026-06-02,2026-06-10,ETPPO63417,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75084,2026-06-27
+890.48,24.0,SWIGGY,2026-06-07,75083,935.00375,NOIDA,24.0,2026-06-02,2026-06-10,ETPPO63417,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75083,2026-06-30
+154.29,100.0,SWIGGY,2026-06-07,75084,162.0042778,NOIDA,180.0,2026-06-02,2026-06-10,ETPPO63417,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75084,2026-06-30
 ```
 
 ---

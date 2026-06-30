@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0009
 product: "CANOLA 2L"
 sap_codes:
   - FG0000022
@@ -21,12 +22,16 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0009` |
 | Product | CANOLA 2L |
 | JIVO SKU / SAP code | `FG0000022` |
 | canonical_sku(s) | `jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l`, `jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-recommended-by-indian-medical-association-2l` |
 | Category | [[Category - CANOLA\|CANOLA]] |
+| Sub-category | CANOLA |
+| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 2L |
+| Per-unit | 2.0 L |
 | Bridge class | new_confirmed |
 
 ## Competitor-price lens
@@ -60,3 +65,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - CANOLA]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000022`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000022]]
+

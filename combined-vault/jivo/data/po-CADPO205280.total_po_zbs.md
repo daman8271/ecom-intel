@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,20.0,SWIGGY,2026-06-03,74535,225.0045,AHMEDABAD,20.0,2026-05-26,2026-06-04,CADPO205280,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74535,2026-06-27
-1314.29,3.0,SWIGGY,2026-06-03,74536,1380.005,AHMEDABAD,6.0,2026-05-26,2026-06-04,CADPO205280,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74536,2026-06-27
-476.19,32.0,SWIGGY,2026-06-03,74537,499.999375,AHMEDABAD,32.0,2026-05-26,2026-06-04,CADPO205280,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74537,2026-06-27
+214.29,20.0,SWIGGY,2026-06-03,74535,225.0045,AHMEDABAD,20.0,2026-05-26,2026-06-04,CADPO205280,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74535,2026-06-30
+1314.29,3.0,SWIGGY,2026-06-03,74536,1380.005,AHMEDABAD,6.0,2026-05-26,2026-06-04,CADPO205280,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74536,2026-06-30
+476.19,32.0,SWIGGY,2026-06-03,74537,499.999375,AHMEDABAD,32.0,2026-05-26,2026-06-04,CADPO205280,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74537,2026-06-30
 ```
 
 ---

@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0150
 product: "SUNFLOWER 1L + 1L"
 category: "SUNFLOWER"
 tier: COMMODITY
@@ -19,6 +20,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0150` |
 | Product | SUNFLOWER 1L + 1L |
 | JIVO SKU / SAP code | — |
 | canonical_sku(s) | `jivo-cold-pressed-chemical-free-sunflower-oil-1-litre-ideal-for-roasting-frying-baking-all-types-of-cuisines-healthy-cooking-oil-for-daily-use-pack-of-2-litres-2l` |
@@ -28,11 +30,11 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 429 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 449 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

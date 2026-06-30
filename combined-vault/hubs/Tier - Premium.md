@@ -12,7 +12,7 @@ tags:
 
 Up: [[Home]]
 
-**64 matched products** in the Premium tier.
+**63 matched products** in the Premium tier.
 
 ## 2026 aggregate (target-history)
 - Secondary (L): **1,682,444**  ·  Primary (L): **1,855,826**
@@ -53,7 +53,6 @@ Up: [[Home]]
 - [[COCONUT 500ML]] — [[Category - COCONUT\|COCONUT]] · 500ML
 - [[DESI GHEE 1KG]] — [[Category - GHEE\|GHEE]] · 1KG
 - [[DESI GHEE 500GM]] — [[Category - GHEE\|GHEE]] · 500GM
-- [[DESI GHEE 500KG]] — [[Category - GHEE\|GHEE]] · 500KG
 - [[EXTRA LIGHT 1+1+1L]] — [[Category - OLIVE\|OLIVE]] · 1+1+1L
 - [[EXTRA LIGHT 1+1L]] — [[Category - OLIVE\|OLIVE]] · 1+1L
 - [[EXTRA LIGHT 1L]] — [[Category - OLIVE\|OLIVE]] · 1L

@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0093
 product: "WG GINGER ALE 200ML"
 sap_codes:
   - FG0000276
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0093` |
 | Product | WG GINGER ALE 200ML |
 | JIVO SKU / SAP code | `FG0000276` |
 | canonical_sku(s) | `ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml`, `jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml` |
@@ -34,11 +36,11 @@ Up: [[Home]]
 | Bridge class | new_confirmed |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 39 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 49 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 | [[Platform - bigbasket\|bigbasket]] | — | — | — | — | — | — |
 
 ## JIVO lens
@@ -53,3 +55,11 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - DRINKS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - bigbasket]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000276`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000276]]
+- **1 sap items:** [[quality-control__sap-items-FG0000276]]
+

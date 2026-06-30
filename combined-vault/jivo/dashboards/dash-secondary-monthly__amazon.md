@@ -1999,7 +1999,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
  "dashboard_title": "Amazon Secondary Monthly Dashboard",
  "defaulted_to_latest": true,
  "format": "AMAZON",
- "max_date": "2026-06-24",
+ "max_date": "2026-06-27",
  "mom_growth": [
   {
    "commodity_growth": 0.0,

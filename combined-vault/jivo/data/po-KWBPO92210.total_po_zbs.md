@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-366.67,48.0,SWIGGY,2026-06-08,74969,385.0033333,KOLKATA,48.0,2026-05-30,2026-06-11,KWBPO92210,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74969,2026-06-27
-761.9,10.0,SWIGGY,2026-06-08,74970,799.995,KOLKATA,10.0,2026-05-30,2026-06-11,KWBPO92210,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74970,2026-06-27
+366.67,48.0,SWIGGY,2026-06-08,74969,385.0033333,KOLKATA,48.0,2026-05-30,2026-06-11,KWBPO92210,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74969,2026-06-30
+761.9,10.0,SWIGGY,2026-06-08,74970,799.995,KOLKATA,10.0,2026-05-30,2026-06-11,KWBPO92210,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74970,2026-06-30
 ```
 
 ---

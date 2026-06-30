@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0012
 product: "CANOLA 1L"
 sap_codes:
   - FG0000032
@@ -27,6 +28,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0012` |
 | Product | CANOLA 1L |
 | JIVO SKU / SAP code | `FG0000032` |
 | canonical_sku(s) | `jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-1l`, `edogdtnzgdahuduj`, `jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l`, `jivo-cold-press-canola-oil-plastic-bottle-1l`, `jivo-cold-pressed-canola-oil-1l`, `canola-oil-cold-pressed-1l` |
@@ -39,16 +41,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 259 | 246 | -5.02 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - bigbasket\|bigbasket]] | 259 | 329.44 | 27.2 | 🔴 ABOVE | SVD | 2026-06-28 |
-| [[Platform - blinkit\|blinkit]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 259 | 332 | 28.19 | 🔴 ABOVE | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 269 | 246 | -8.55 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 269 | 246 | -8.55 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 269 | 239 | -11.15 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - bigbasket\|bigbasket]] | 269 | 329.44 | 22.47 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - blinkit\|blinkit]] | 269 | 260 | -3.35 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 269 | 332 | 23.42 | 🔴 ABOVE | BAU | 2026-06-29 |
 | [[Platform - flipkart\|flipkart-minutes]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-06-27 |
 
 ## JIVO lens
@@ -74,3 +76,13 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - CANOLA]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - blinkit]] · [[Platform - bigbasket]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000032`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000032]]
+- **689 boxes:** [[box-121196]] · [[box-121197]] · [[box-121198]] … +686 more (tag `bridge/FG0000032`)
+- **17 pallets:** [[pal-184]] · [[pal-200]] · [[pal-2519]] … +14 more (tag `bridge/FG0000032`)
+- **1 boxes:** [[barcode__dispatch__reports__boxes-9498]]
+

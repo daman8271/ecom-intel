@@ -2,7 +2,7 @@
 type: data
 entity: pf-amazon
 table: master_products
-rows: 187
+rows: 190
 chunk: 1/1
 source: app-master
 tags:
@@ -14,7 +14,7 @@ tags:
 # Raw `master_products` rows for [[pf-amazon]]
 
 Up: [[pf-amazon]]
-Canonical raw rows (187) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (190) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_name,sku_sap_code,sku_sap_name,tax_rate,uom
@@ -136,8 +136,11 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 ,AMAZON,B0B97QXPVW,EXTRA VIRGIN 5+1L,PREMIUM,6 LTR,6.0,Jivo Extra Virgin Olive Oil 5 litre with 1Litre Pack of 6L 100 natural and cold pressed cooking oil for Dressings Salad and Soups Dips Marina,,,0.05,LTR
 ,AMAZON,B0B945QDGY,EXTRA VIRGIN 5LTR +1LTR CANOLA,PREMIUM,5+1 LTR,6.0,"Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Cooking Oil for Daily use | (Pack of 6L)",,,0.05,LTR
 2,AMAZON,B0BKQ59RHB,EXTRA VIRGIN 5L + CANOLA 1L (BUNDLE),PREMIUM,5LTR + 1LTR (BUNDLE),6.0,"Jivo Extra Virgin olive oil 5 Litre with Cold Pressed Canola oil 1 Litre | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use | (Pack of 6L)",,,0.05,LTR
+,AMAZON,B0H5QFNW4L,FIRST PRESSED MUSTARD 1 LTR,PREMIUM,1 LTR,1.0,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",,,0.05,LTR
 2,AMAZON,B0GG7Z3Y9W,SESAME 1L + 1L VB (BUNDLE),PREMIUM,1LTR + 1LTR (BUNDLE),2.0,Jivo First Pressed Sesame Oil | 1L Bottle | Gingelly Oil | Contains MUFA (oleic acid) and Omega-6 PUFA (linoleic acid) | Natural Antioxidants (Lignans) | Ideal for Cooking (Pack of 2),,,0.05,LTR
 ,AMAZON,B0H2VF4NRN,YELLOW MUSTARD 1 LTR + SESAME 1 LTR,PREMIUM,1 LTR + 1 LTR,2.0,"Jivo First Pressed Sesame Oil 1Ltr + Yellow Mustard Oil 1Ltr Combo | Vitamin A, D, & E Fortified | Ideal for Indian Cooking",,,0.05,LTR
+,AMAZON,B0H5KGC6P7,FIRST PRESSED SUNFLOWER 1 LTR,PREMIUM,1 LTR,1.0,"Jivo First Pressed Sunflower Oil 1 Litre | MUFA-Rich Balanced with PUFA Omega-3 and 6 | Vitamin A and D Fortified Oil| Cholesterol and Trans Fat Free Oil | Ideal for Deep Frying, Roasting and Sautéing",,,0.05,LTR
+,AMAZON,B0GX19RGQH,YELLOW MUSTARD 1L + 1L,PREMIUM,1LTR + 1LTR,2.0,Jivo First Pressed Yellow Mustard Oil 1L + 1L Offer | Cooking Oil for Indian Dishes | Contains MUFA & PUFA | Fortified with Vitamins A&D,,,0.05,LTR
 2,AMAZON,B0GG7LVH12,YELLOW MUSTARD 1L + 1L (BUNDLE),COMMODITY,1LTR + 1LTR (BUNDLE),2.0,"JIVO First Pressed Yellow Mustard Oil 1 Litre | Pili Sarson Oil for Cooking | Chemical-Free | Ideal for Roasting, Frying, Baking | Omega-3 PUFA, Tocopherols & Added Vitamins A & D for Diverse Cuisines",,,0.05,LTR
 4,AMAZON,B0GWZXCFR6,GOLD 1L + 1L + 1L + 1L (BUNDLE),COMMODITY,1LTR + 1LTR + 1LTR + 1LTR (BUNDLE),4.0,Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil | Natural Antioxidants | 1 Litre Pack (Pack of 4),,,0.05,LTR
 2,AMAZON,B0FR4ZK68G,GOLD 5L + SUNFLOWER 5L (BUNDLE),COMMODITY,5LTR + 5LTR (BUNDLE),10.0,Jivo Gold Refined Oil 5L & Cold Pressed Sunflower Oil 5L,,,0.05,LTR
@@ -198,9 +201,9 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 2,AMAZON,B0FR48BGK9,SOYABEAN 5L + RICE BRAN 5L (BUNDLE),COMMODITY,5LTR + 1LTR (BUNDLE),6.0,JIVO Soyabean Cooking Oil 5L & Rice Bran Health Oil 5L,,,0.05,LTR
 2,AMAZON,B0DQ48N3JC,SOYABEAN 5L + 5L (BUNDLE),COMMODITY,5LTR + 5LTR (BUNDLE),10.0,JIVO Soyabean Cooking Oil 5 Ltr (Pack of 2),,,0.05,LTR
 ,AMAZON,B0GHRRY6C5,A2 500ML + MAKKI ATTA,PREMIUM,500 MLS,0.5,"Jivo Winter Wellness Combo: Pure A2 Desi Cow Ghee 500 ML + Premium Makki Atta (500g) | Gluten-Free, Traditional Taste | Perfect for Makki Ki Roti",,,0.05,LTR
-,AMAZON,B0GX19RGQH,YELLOW MUSTARD 1L + 1L,PREMIUM,1LTR + 1LTR,2.0,Jivo Yellow Mustard Oil,,,0.05,LTR
 ,AMAZON,B07D7TJLMB,SOYABEAN 5L,COMMODITY,5 LTR,5.0,Jmart-Soyabean-5L,,,0.05,LTR
 ,AMAZON,B09YH43YNX,JIVO POMACE 5L + EXTRA LIGHT 5L,PREMIUM,5 LTR + 5 LTR (BUNDLE),10.0,JM-Pomace5+EL-5,,,0.05,LTR
+,AMAZON,B09YH6LR7N,JIVO POMACE 5L + EXTRA VIRGIN 5L,PREMIUM,5 LTR + 5 LTR,10.0,JM-Pomace5L+EV-5L,,,0.05,LTR
 ,AMAZON,B0CPYBCZN5,SANO CANOLA 5 LTR X 2,PREMIUM,5 + 5,10.0,Sano Canola Oil Cooking Oil for Daily Use | Recommended for All Types of Cuisines | 5L - Pack of 2 | Ideal Choice for Cooking and Versatile Culinary Needs,,,0.05,LTR
 ,AMAZON,B0CZP4DS1Z,SANO CANOLA 1+1,PREMIUM,1LTR +1LTR,2.0,Sano Canola Oil Healthy Cooking Oil for Daily use|Recommended by for all type of Cuisines|Lowest in Saturated Fat- 1L (Pack of 2),,,0.05,LTR
 ,AMAZON,B0CZP48PGR,SANO POMACE 1+1,PREMIUM,1LTR +1LTR,2.0,"SANO Pomace Olive Oil 1L Pet Bottle - Ideal for Frying, Roasting & Sautéing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (1L) (Pack of 2)",,,0.05,LTR

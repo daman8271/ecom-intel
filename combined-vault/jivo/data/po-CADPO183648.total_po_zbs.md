@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,0.0,SWIGGY,,63053,219.99625,AHMEDABAD,32.0,2026-02-06,2026-02-15,CADPO183648,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63053,2026-06-27
-2619.05,0.0,SWIGGY,,63054,2750.0025,AHMEDABAD,12.0,2026-02-06,2026-02-15,CADPO183648,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63054,2026-06-27
+209.52,0.0,SWIGGY,,63053,219.99625,AHMEDABAD,32.0,2026-02-06,2026-02-15,CADPO183648,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63053,2026-06-30
+2619.05,0.0,SWIGGY,,63054,2750.0025,AHMEDABAD,12.0,2026-02-06,2026-02-15,CADPO183648,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63054,2026-06-30
 ```
 
 ---

@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,3.0,SWIGGY,2025-10-29,54263,1323.0,PUNE,3.0,2025-10-15,2025-11-01,CPDPO197187,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54263,2026-06-27
+1260.0,3.0,SWIGGY,2025-10-29,54263,1323.0,PUNE,3.0,2025-10-15,2025-11-01,CPDPO197187,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54263,2026-06-30
 ```
 
 ---

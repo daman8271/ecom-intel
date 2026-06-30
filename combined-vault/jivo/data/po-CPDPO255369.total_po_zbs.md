@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-152.38,0.0,SWIGGY,,66207,159.9990385,PUNE,260.0,2026-03-19,2026-03-29,CPDPO255369,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66207,2026-06-27
-828.57,0.0,SWIGGY,,66208,869.9986111,PUNE,72.0,2026-03-19,2026-03-29,CPDPO255369,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66208,2026-06-27
-173.33,0.0,SWIGGY,,66209,181.9966429,PUNE,140.0,2026-03-19,2026-03-29,CPDPO255369,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66209,2026-06-27
-2633.33,0.0,SWIGGY,,66210,2764.996667,PUNE,60.0,2026-03-19,2026-03-29,CPDPO255369,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66210,2026-06-27
+152.38,0.0,SWIGGY,,66207,159.9990385,PUNE,260.0,2026-03-19,2026-03-29,CPDPO255369,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66207,2026-06-30
+828.57,0.0,SWIGGY,,66208,869.9986111,PUNE,72.0,2026-03-19,2026-03-29,CPDPO255369,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66208,2026-06-30
+173.33,0.0,SWIGGY,,66209,181.9966429,PUNE,140.0,2026-03-19,2026-03-29,CPDPO255369,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66209,2026-06-30
+2633.33,0.0,SWIGGY,,66210,2764.996667,PUNE,60.0,2026-03-19,2026-03-29,CPDPO255369,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66210,2026-06-30
 ```
 
 ---

@@ -20,7 +20,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
 {
  "activeTrucks": 0,
  "inventory": 0,
- "openPOs": 1423,
+ "openPOs": 1433,
  "sells": 0
 }
 ```

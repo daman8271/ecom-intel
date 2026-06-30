@@ -25,7 +25,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 137441.0,
+    "ltrs": 137281.0,
     "name": "SUNFLOWER"
    },
    {
@@ -33,7 +33,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 42403.0,
+    "ltrs": 42398.0,
     "name": "BLENDED"
    },
    {
@@ -47,7 +47,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 137441.0,
+    "ltrs": 137281.0,
     "name": "SUNFLOWER"
    },
    {
@@ -55,7 +55,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 42403.0,
+    "ltrs": 42398.0,
     "name": "GOLD"
    },
    {
@@ -63,7 +63,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SOYABEAN"
    }
   ],
-  "total_ltrs": 449716.0
+  "total_ltrs": 449551.0
  },
  "errors": [],
  "month": 5,
@@ -79,7 +79,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "OLIVE"
    },
    {
-    "ltrs": 110528.0,
+    "ltrs": 110543.0,
     "name": "CANOLA"
    },
    {
@@ -105,7 +105,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 110528.0,
+    "ltrs": 110543.0,
     "name": "CANOLA"
    },
    {
@@ -141,7 +141,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "COCONUT"
    }
   ],
-  "total_ltrs": 488661.65
+  "total_ltrs": 488676.65
  },
  "source": "primary",
  "year": 2026

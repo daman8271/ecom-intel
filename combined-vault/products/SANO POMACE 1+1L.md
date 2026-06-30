@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0121
 product: "SANO POMACE 1+1L"
 sap_codes:
   - FG0000339
@@ -22,6 +23,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0121` |
 | Product | SANO POMACE 1+1L |
 | JIVO SKU / SAP code | `FG0000339`, `FG0000326` |
 | canonical_sku(s) | `sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l`, `sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-2l` |
@@ -60,3 +62,13 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000326`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000326]]
+
+**`FG0000339`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000339]]
+

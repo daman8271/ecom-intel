@@ -11,14 +11,13 @@ tags:
 
 Up: [[Home]]
 
-**5 matched products** · dominant tier [[Tier - Premium\|Premium]]
+**4 matched products** · dominant tier [[Tier - Premium\|Premium]]
 
 ## Member products
 - [[A2 GHEE 1L]] — Premium · 1L
 - [[A2 GHEE 500G]] — Premium · 500G
 - [[DESI GHEE 1KG]] — Premium · 1KG
 - [[DESI GHEE 500GM]] — Premium · 500GM
-- [[DESI GHEE 500KG]] — Premium · 500KG
 
 ## 2026 aggregate (tier-level proxy)
 *Category-level sales are not tracked; showing the dominant-tier (Premium) 2026 sell-through. See [[Tier - Premium]].*

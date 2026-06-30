@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-709.52,36.0,SWIGGY,2025-10-01,52553,744.9961111,MUMBAI,36.0,2025-09-23,2025-10-16,CMFPO228609,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52553,2026-06-27
+709.52,36.0,SWIGGY,2025-10-01,52553,744.9961111,MUMBAI,36.0,2025-09-23,2025-10-16,CMFPO228609,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52553,2026-06-30
 ```
 
 ---

@@ -8,23 +8,23 @@ tags:
 
 Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with ecom competitor price intelligence (canonical listings) via the SKU bridge.
 
-- **Matched products:** 153  ([[#Products]])
+- **Matched products:** 151  ([[#Products]])
 - **Category hubs:** 17
 - **Platform hubs:** 10
 - **Tier hubs:** 3 (Premium / Commodity / Other)
 - **Source vaults:** `jivo/` (app data) · `ecom/` (price intel)
 
 ## Tiers
-- [[Tier - Premium]] — 64 products
+- [[Tier - Premium]] — 63 products
 - [[Tier - Commodity]] — 29 products
-- [[Tier - Other]] — 60 products
+- [[Tier - Other]] — 59 products
 
 ## Platforms
-- [[Platform - amazon]] — 148 products
+- [[Platform - amazon]] — 146 products
 - [[Platform - swiggy]] — 0 products
 - [[Platform - blinkit]] — 9 products
 - [[Platform - zepto]] — 21 products
-- [[Platform - flipkart]] — 106 products
+- [[Platform - flipkart]] — 104 products
 - [[Platform - flipkart_grocery]] — 0 products
 - [[Platform - jiomart]] — 0 products
 - [[Platform - bigbasket]] — 29 products
@@ -35,8 +35,8 @@ Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with eco
 - [[Category - BLENDED]] — 5 products
 - [[Category - CANOLA]] — 17 products
 - [[Category - COCONUT]] — 3 products
-- [[Category - DRINKS]] — 24 products
-- [[Category - GHEE]] — 5 products
+- [[Category - DRINKS]] — 23 products
+- [[Category - GHEE]] — 4 products
 - [[Category - GROUNDNUT]] — 3 products
 - [[Category - HONEY]] — 2 products
 - [[Category - MUSTARD]] — 11 products
@@ -88,7 +88,6 @@ Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with eco
 - [[CUMIN SEEDS 100G]]
 - [[DESI GHEE 1KG]]
 - [[DESI GHEE 500GM]]
-- [[DESI GHEE 500KG]]
 - [[DRY FRUITS 200G]]
 - [[ENERGY DRINK 200ML]]
 - [[EXTRA LIGHT 1+1+1L]]
@@ -124,7 +123,6 @@ Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with eco
 - [[JIVO POMACE 2L]]
 - [[JIVO POMACE 5L]]
 - [[JIVO PUNJABI SHIKANJI 160 MLS]]
-- [[JIVO WATER 1L]]
 - [[JIVO WATER 250ML]]
 - [[JIVO WATER 500 MLS]]
 - [[JUMP ENERGY DRINK 200ML]]
@@ -223,3 +221,9 @@ JIVO SKUs the bridge could **not** map to an ecom listing (9 total) — no produ
 
 ## Vault notes
 - [[SESSION-MEMORY]] — JIVO vault session / handoff memory
+
+## Factory pillar — Jivo Mart (JIVO_MART)
+The 4th data pillar: a lossless capture of the `ji.jivo.in` factory app for **Jivo Mart** — gate, vehicles, quality control, GRPO, barcode traceability, dispatch, and SAP item master (49,462 notes). Bridged to products above by SAP item code (FG####) — see each product's **Factory lens**.
+
+- [[factory/_HOME|Factory — Home (Jivo Mart)]]
+

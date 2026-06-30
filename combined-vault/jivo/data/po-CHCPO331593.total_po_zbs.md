@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,,66084,38.5,HYDERABAD,24.0,2026-03-19,2026-04-03,CHCPO331593,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66084,2026-06-27
-27.5,0.0,SWIGGY,,66085,38.5,HYDERABAD,300.0,2026-03-19,2026-04-03,CHCPO331593,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66085,2026-06-27
+27.5,0.0,SWIGGY,,66084,38.5,HYDERABAD,24.0,2026-03-19,2026-04-03,CHCPO331593,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66084,2026-06-30
+27.5,0.0,SWIGGY,,66085,38.5,HYDERABAD,300.0,2026-03-19,2026-04-03,CHCPO331593,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66085,2026-06-30
 ```
 
 ---

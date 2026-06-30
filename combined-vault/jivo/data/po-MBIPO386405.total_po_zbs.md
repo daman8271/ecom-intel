@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,220.0,SWIGGY,2026-05-30,73800,256.9980909,BANGALORE,220.0,2026-05-20,2026-06-01,MBIPO386405,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:73800,2026-06-27
+244.76,220.0,SWIGGY,2026-05-30,73800,256.9980909,BANGALORE,220.0,2026-05-20,2026-06-01,MBIPO386405,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:73800,2026-06-30
 ```
 
 ---

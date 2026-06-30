@@ -233,6 +233,10 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-blinkit]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "MUSTARD KACCHI GHANI"
    },
    {
@@ -377,6 +381,10 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-blinkit]]
    },
    {
     "category": "SUNFLOWER",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
+   },
+   {
+    "category": "SUNFLOWER",
     "sub_category": "SUNFLOWER"
    },
    {
@@ -385,8 +393,8 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-blinkit]]
    }
   ]
  },
- "mapped_units": 21211.0,
- "mapped_value": 21211.0,
+ "mapped_units": 42073.0,
+ "mapped_value": 42073.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -397,105 +405,113 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-blinkit]]
  "states": [
   {
    "by_platform": {
-    "BLINKIT": 6512.0
+    "BLINKIT": 13127.0
    },
    "state": "PUNJAB",
-   "units": 6512.0,
-   "value": 6512.0
+   "units": 13127.0,
+   "value": 13127.0
   },
   {
    "by_platform": {
-    "BLINKIT": 4201.0
+    "BLINKIT": 8509.0
    },
    "state": "DELHI",
-   "units": 4201.0,
-   "value": 4201.0
+   "units": 8509.0,
+   "value": 8509.0
   },
   {
    "by_platform": {
-    "BLINKIT": 3294.0
+    "BLINKIT": 6434.0
    },
    "state": "HARYANA",
-   "units": 3294.0,
-   "value": 3294.0
+   "units": 6434.0,
+   "value": 6434.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1914.0
+    "BLINKIT": 3698.0
    },
    "state": "UTTAR PRADESH",
-   "units": 1914.0,
-   "value": 1914.0
+   "units": 3698.0,
+   "value": 3698.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1391.0
+    "BLINKIT": 2750.0
    },
    "state": "MAHARASHTRA",
-   "units": 1391.0,
-   "value": 1391.0
+   "units": 2750.0,
+   "value": 2750.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1182.0
-   },
-   "state": "KARNATAKA",
-   "units": 1182.0,
-   "value": 1182.0
-  },
-  {
-   "by_platform": {
-    "BLINKIT": 1116.0
+    "BLINKIT": 2301.0
    },
    "state": "CHANDIGARH",
-   "units": 1116.0,
-   "value": 1116.0
+   "units": 2301.0,
+   "value": 2301.0
   },
   {
    "by_platform": {
-    "BLINKIT": 665.0
+    "BLINKIT": 2290.0
+   },
+   "state": "KARNATAKA",
+   "units": 2290.0,
+   "value": 2290.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 1195.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 665.0,
-   "value": 665.0
+   "units": 1195.0,
+   "value": 1195.0
   },
   {
    "by_platform": {
-    "BLINKIT": 378.0
+    "BLINKIT": 758.0
    },
    "state": "UTTARAKHAND",
-   "units": 378.0,
-   "value": 378.0
+   "units": 758.0,
+   "value": 758.0
   },
   {
    "by_platform": {
-    "BLINKIT": 347.0
+    "BLINKIT": 626.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 347.0,
-   "value": 347.0
+   "units": 626.0,
+   "value": 626.0
   },
   {
    "by_platform": {
-    "BLINKIT": 103.0
-   },
-   "state": "WEST BENGAL",
-   "units": 103.0,
-   "value": 103.0
-  },
-  {
-   "by_platform": {
-    "BLINKIT": 97.0
+    "BLINKIT": 197.0
    },
    "state": "RAJASTHAN",
-   "units": 97.0,
-   "value": 97.0
+   "units": 197.0,
+   "value": 197.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 157.0
+   },
+   "state": "WEST BENGAL",
+   "units": 157.0,
+   "value": 157.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 20.0
+   },
+   "state": "GOA",
+   "units": 20.0,
+   "value": 20.0
   },
   {
    "by_platform": {
     "BLINKIT": 6.0
    },
-   "state": "GOA",
+   "state": "TAMIL NADU",
    "units": 6.0,
    "value": 6.0
   },
@@ -503,7 +519,7 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-blinkit]]
    "by_platform": {
     "BLINKIT": 4.0
    },
-   "state": "TAMIL NADU",
+   "state": "ANDHRA PRADESH",
    "units": 4.0,
    "value": 4.0
   },
@@ -511,14 +527,14 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-blinkit]]
    "by_platform": {
     "BLINKIT": 1.0
    },
-   "state": "ANDHRA PRADESH",
+   "state": "ASSAM",
    "units": 1.0,
    "value": 1.0
   }
  ],
  "sub_categories": [],
- "total_units": 21211.0,
- "total_value": 21211.0,
+ "total_units": 42073.0,
+ "total_value": 42073.0,
  "year": 2026
 }
 ```

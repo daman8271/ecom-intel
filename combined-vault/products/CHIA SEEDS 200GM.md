@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0054
 product: "CHIA SEEDS 200GM"
 sap_codes:
   - FG0000165
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0054` |
 | Product | CHIA SEEDS 200GM |
 | JIVO SKU / SAP code | `FG0000165` |
 | canonical_sku(s) | `edsh4ygygrwrqrgk`, `jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-200g-200ml` |
@@ -32,12 +34,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 99 | 99 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 99 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 99 | 99 | 0 | 🟦 MATCH | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 99 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -51,3 +53,11 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - SEEDS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - flipkart]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000165`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000165]]
+- **1 sap items:** [[quality-control__sap-items-FG0000165]]
+

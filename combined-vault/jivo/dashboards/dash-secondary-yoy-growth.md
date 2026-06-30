@@ -53,16 +53,16 @@ Up: [[dashboards-index]]
      "value": 43625083.39647204
     },
     "2026": {
-     "actual": 195294.2,
+     "actual": 223081.9,
      "days_in_month": 30,
-     "elapsed_day": 24,
-     "growth_pct": 0.15,
+     "elapsed_day": 27,
+     "growth_pct": 14.4,
      "has_data": true,
-     "max_date": "2026-06-24",
-     "projection": 244117.75,
+     "max_date": "2026-06-27",
+     "projection": 247868.78,
      "source": "amazon_sec_range_master_view",
-     "units": 114720.0,
-     "value": 44937655.844602235
+     "units": 131586.0,
+     "value": 51014261.79675856
     }
    }
   },
@@ -93,15 +93,15 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 4820.05,
+     "actual": 5073.5,
      "days_in_month": 30,
-     "elapsed_day": 25,
+     "elapsed_day": 28,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-06-25",
-     "projection": 5784.06,
+     "max_date": "2026-06-28",
+     "projection": 5435.89,
      "source": "amazon_mp_master",
-     "units": 1653.0,
+     "units": 1767.0,
      "value": null
     }
    }
@@ -135,16 +135,16 @@ Up: [[dashboards-index]]
      "value": 38947064.0
     },
     "2026": {
-     "actual": 69794.0,
+     "actual": 78698.0,
      "days_in_month": 30,
-     "elapsed_day": 25,
-     "growth_pct": 7.93,
+     "elapsed_day": 28,
+     "growth_pct": 21.7,
      "has_data": true,
-     "max_date": "2026-06-25",
-     "projection": 83752.8,
+     "max_date": "2026-06-28",
+     "projection": 84319.29,
      "source": "SecMaster",
-     "units": 54334.0,
-     "value": 16746484.0
+     "units": 61414.0,
+     "value": 18855840.0
     }
    }
   },
@@ -175,16 +175,16 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 146668.5,
+     "actual": 174375.75,
      "days_in_month": 30,
-     "elapsed_day": 25,
+     "elapsed_day": 28,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-06-25",
-     "projection": 176002.2,
+     "max_date": "2026-06-28",
+     "projection": 186831.16,
      "source": "SecMaster",
-     "units": 122457.0,
-     "value": 27531312.0
+     "units": 144681.0,
+     "value": 32441186.0
     }
    }
   },
@@ -215,16 +215,16 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 64852.40011473,
+     "actual": 75323.00013545156,
      "days_in_month": 30,
-     "elapsed_day": 25,
+     "elapsed_day": 28,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-06-25",
-     "projection": 77822.88,
+     "max_date": "2026-06-28",
+     "projection": 80703.21,
      "source": "SecMaster",
-     "units": 91653.0,
-     "value": 14836172.0
+     "units": 107168.0,
+     "value": 17263616.0
     }
    }
   },
@@ -253,19 +253,19 @@ Up: [[dashboards-index]]
      "projection": null,
      "source": "SecMaster",
      "units": 8185.0,
-     "value": 2816542.2
+     "value": 2816542.0
     },
     "2026": {
-     "actual": 9294.0,
+     "actual": 11151.0,
      "days_in_month": 30,
-     "elapsed_day": 25,
-     "growth_pct": -0.01,
+     "elapsed_day": 28,
+     "growth_pct": 19.97,
      "has_data": true,
-     "max_date": "2026-06-25",
-     "projection": 11152.8,
+     "max_date": "2026-06-28",
+     "projection": 11947.5,
      "source": "SecMaster",
-     "units": 6977.0,
-     "value": 1654469.1
+     "units": 8442.0,
+     "value": 1972716.6
     }
    }
   },
@@ -297,16 +297,16 @@ Up: [[dashboards-index]]
      "value": 6205145.0
     },
     "2026": {
-     "actual": 19286.0,
+     "actual": 21875.6,
      "days_in_month": 30,
-     "elapsed_day": 24,
-     "growth_pct": -28.51,
+     "elapsed_day": 27,
+     "growth_pct": -18.91,
      "has_data": true,
-     "max_date": "2026-06-24",
-     "projection": 24107.5,
+     "max_date": "2026-06-27",
+     "projection": 24306.22,
      "source": "flipkart_secondary_all",
-     "units": 5398.0,
-     "value": 5802470.0
+     "units": 6110.0,
+     "value": 6551669.0
     }
    }
   },
@@ -337,16 +337,16 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 16129.0,
+     "actual": 17986.0,
      "days_in_month": 30,
-     "elapsed_day": 24,
+     "elapsed_day": 27,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-06-24",
-     "projection": 20161.25,
+     "max_date": "2026-06-27",
+     "projection": 19984.44,
      "source": "flipkart_grocery_master",
-     "units": 15322.0,
-     "value": 2551462.8571428573
+     "units": 17128.0,
+     "value": 2851936.1904761903
     }
    }
   }
@@ -366,10 +366,10 @@ Up: [[dashboards-index]]
    "projection": null
   },
   "2026": {
-   "actual": 526138.15011473,
-   "growth_pct": 77.79,
+   "actual": 607564.7501354516,
+   "growth_pct": 105.3,
    "has_data": true,
-   "projection": 642901.24
+   "projection": 661396.4899999999
   }
  },
  "years": [

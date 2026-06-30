@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-24.29,0.0,SWIGGY,,65091,34.00416667,PUNE,36.0,2026-03-04,2026-03-14,CPDPO250346,,141307,Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65091,2026-06-27
-12.86,0.0,SWIGGY,,65092,18.00277778,PUNE,36.0,2026-03-04,2026-03-14,CPDPO250346,,210286,JivoÂ Fizzy club Soda 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65092,2026-06-27
-27.5,0.0,SWIGGY,,65093,38.5,PUNE,24.0,2026-03-04,2026-03-14,CPDPO250346,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65093,2026-06-27
-32.38,0.0,SWIGGY,,65094,33.99916667,PUNE,36.0,2026-03-04,2026-03-14,CPDPO250346,,577541,Jivo Healthy Wheatgrass Juice (Blueberry) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65094,2026-06-27
+24.29,0.0,SWIGGY,,65091,34.00416667,PUNE,36.0,2026-03-04,2026-03-14,CPDPO250346,,141307,Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65091,2026-06-30
+12.86,0.0,SWIGGY,,65092,18.00277778,PUNE,36.0,2026-03-04,2026-03-14,CPDPO250346,,210286,JivoÂ Fizzy club Soda 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65092,2026-06-30
+27.5,0.0,SWIGGY,,65093,38.5,PUNE,24.0,2026-03-04,2026-03-14,CPDPO250346,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65093,2026-06-30
+32.38,0.0,SWIGGY,,65094,33.99916667,PUNE,36.0,2026-03-04,2026-03-14,CPDPO250346,,577541,Jivo Healthy Wheatgrass Juice (Blueberry) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65094,2026-06-30
 ```
 
 ---

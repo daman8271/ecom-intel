@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,,SWIGGY,,77130,1290.0,MUMBAI,3.0,2026-06-18,2026-06-27,CMFPO332156,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77130,2026-06-27
-476.19,,SWIGGY,,77131,499.9995313,MUMBAI,64.0,2026-06-18,2026-06-27,CMFPO332156,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77131,2026-06-27
-738.1,,SWIGGY,,77132,775.005,MUMBAI,4.0,2026-06-18,2026-06-27,CMFPO332156,,766072,Jivo Ricebran Oil 5L 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77132,2026-06-27
+1228.57,3.0,SWIGGY,2026-06-27,77130,1290.0,MUMBAI,3.0,2026-06-18,2026-06-27,CMFPO332156,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77130,2026-06-30
+476.19,64.0,SWIGGY,2026-06-27,77131,499.9995313,MUMBAI,64.0,2026-06-18,2026-06-27,CMFPO332156,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77131,2026-06-30
+738.1,0.0,SWIGGY,2026-06-27,77132,775.005,MUMBAI,4.0,2026-06-18,2026-06-27,CMFPO332156,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77132,2026-06-30
 ```
 
 ---

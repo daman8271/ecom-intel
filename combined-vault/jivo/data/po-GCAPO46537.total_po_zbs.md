@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-866.67,0.0,SWIGGY,2026-04-04,66308,910.0035,CENTRAL GOA,20.0,2026-03-21,2026-04-06,GCAPO46537,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66308,2026-06-27
-173.33,80.0,SWIGGY,2026-04-04,66309,181.996625,CENTRAL GOA,80.0,2026-03-21,2026-04-06,GCAPO46537,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66309,2026-06-27
+866.67,0.0,SWIGGY,2026-04-04,66308,910.0035,CENTRAL GOA,20.0,2026-03-21,2026-04-06,GCAPO46537,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66308,2026-06-30
+173.33,80.0,SWIGGY,2026-04-04,66309,181.996625,CENTRAL GOA,80.0,2026-03-21,2026-04-06,GCAPO46537,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66309,2026-06-30
 ```
 
 ---

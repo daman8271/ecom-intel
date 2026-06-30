@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0022
 product: "SUNFLOWER 1L"
 sap_codes:
   - FG0000081
@@ -29,6 +30,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0022` |
 | Product | SUNFLOWER 1L |
 | JIVO SKU / SAP code | `FG0000081` |
 | canonical_sku(s) | `jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-1l`, `qwrgemp4hbfd4gf3`, `jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2`, `jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l`, `jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l`, `jivo-cold-pressed-sunflower-oil-1l`, `cold-pressed-sunflower-oil-1l` |
@@ -41,17 +43,17 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 219 | 175 | -20.09 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 219 | 175 | -20.09 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 219 | 175 | -20.09 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - bigbasket\|bigbasket]] | 219 | 175 | -20.09 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - blinkit\|blinkit]] | 219 | 195 | -10.96 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 219 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - zepto\|zepto]] | 219 | 192 | -12.33 | 🟢 BELOW | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 229 | 175 | -23.58 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 229 | 175 | -23.58 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 229 | 175 | -23.58 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - bigbasket\|bigbasket]] | 229 | 175 | -23.58 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - blinkit\|blinkit]] | 229 | 215 | -6.11 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 229 | — | — | ⚪ OOS | BAU | 2026-06-29 |
+| [[Platform - zepto\|zepto]] | 229 | 192 | -16.16 | 🟢 BELOW | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -75,3 +77,12 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - SUNFLOWER]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - zepto]] · [[Platform - blinkit]] · [[Platform - bigbasket]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000081`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000081]]
+- **1664 boxes:** [[box-127808]] · [[box-127809]] · [[box-127810]] … +1661 more (tag `bridge/FG0000081`)
+- **40 pallets:** [[pal-2658]] · [[pal-2659]] · [[pal-2666]] … +37 more (tag `bridge/FG0000081`)
+

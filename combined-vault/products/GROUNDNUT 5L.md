@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0042
 product: "GROUNDNUT 5L"
 sap_codes:
   - FG0000143
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0042` |
 | Product | GROUNDNUT 5L |
 | JIVO SKU / SAP code | `FG0000143` |
 | canonical_sku(s) | `jivo-groundnut-oil-5-litre-cold-pressed-unrefined-peanut-oil-for-cooking-vitamin-a-d-fortified-chemicalfree-ground-nut-oil-5l`, `edoh9p7nnnjuxgzp`, `jivo-cold-pressed-groundnut-oil-5-litre-5l` |
@@ -35,14 +37,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1169 | 913 | -21.9 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 1169 | 913 | -21.9 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 1169 | 913 | -21.9 | 🟢 BELOW | SVD | 2026-06-26 |
-| [[Platform - flipkart\|flipkart]] | 1169 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 1269 | 913 | -28.05 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 1269 | 1169 | -7.88 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 1269 | 1297 | 2.21 | 🔴 ABOVE | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 1269 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -67,3 +69,14 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - GROUNDNUT]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000143`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000143]]
+- **1851 boxes:** [[box-127802]] · [[box-127803]] · [[box-127804]] … +1848 more (tag `bridge/FG0000143`)
+- **46 pallets:** [[pal-1484]] · [[pal-1485]] · [[pal-1495]] … +43 more (tag `bridge/FG0000143`)
+- **10 boxes:** [[barcode__dispatch__reports__boxes-96825]] · [[barcode__dispatch__reports__boxes-96845]] · [[barcode__dispatch__reports__boxes-96846]] … +7 more (tag `bridge/FG0000143`)
+- **1 sap items:** [[quality-control__sap-items-FG0000143]]
+

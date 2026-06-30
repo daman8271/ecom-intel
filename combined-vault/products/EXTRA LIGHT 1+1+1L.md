@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0112
 product: "EXTRA LIGHT 1+1+1L"
 sap_codes:
   - FG0000310
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0112` |
 | Product | EXTRA LIGHT 1+1+1L |
 | JIVO SKU / SAP code | `FG0000310` |
 | canonical_sku(s) | `edoge5wygyxcrrmf`, `jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-3l`, `qwrgempjjgdryacc`, `edohyrpctwgrkwku` |
@@ -62,3 +64,11 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - flipkart]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000310`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000310]]
+- **1 sap items:** [[quality-control__sap-items-FG0000310]]
+

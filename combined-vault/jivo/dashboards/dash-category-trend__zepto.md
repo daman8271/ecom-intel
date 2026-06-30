@@ -63,11 +63,11 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 20148.0,
+   "commodity_ltrs": 21844.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 68451.2,
-   "total_ltrs": 88599.2,
+   "premium_ltrs": 80631.2,
+   "total_ltrs": 102475.2,
    "year": 2026
   }
  ],

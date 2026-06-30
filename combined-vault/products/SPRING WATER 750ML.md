@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0149
 product: "SPRING WATER 750ML"
 category: "DRINKS"
 tier: OTHER
@@ -21,6 +22,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0149` |
 | Product | SPRING WATER 750ML |
 | JIVO SKU / SAP code | — |
 | canonical_sku(s) | `jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml`, `fizzy-water-flavoured-with-peach-750ml` |
@@ -30,12 +32,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 50 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - bigbasket\|bigbasket]] | 50 | 55 | 10 | 🔴 ABOVE | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 50 | — | — | ⚪ OOS | BAU | 2026-06-29 |
+| [[Platform - bigbasket\|bigbasket]] | 50 | 55 | 10 | 🔴 ABOVE | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

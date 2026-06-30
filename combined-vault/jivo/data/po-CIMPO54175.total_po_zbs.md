@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-439.63,0.0,SWIGGY,,55240,461.6114286,MUMBAI,84.0,2025-11-01,2025-11-12,CIMPO54175,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55240,2026-06-27
-139.69,0.0,SWIGGY,,55241,146.674375,MUMBAI,16.0,2025-11-01,2025-11-12,CIMPO54175,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55241,2026-06-27
+439.63,0.0,SWIGGY,,55240,461.6114286,MUMBAI,84.0,2025-11-01,2025-11-12,CIMPO54175,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55240,2026-06-30
+139.69,0.0,SWIGGY,,55241,146.674375,MUMBAI,16.0,2025-11-01,2025-11-12,CIMPO54175,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55241,2026-06-30
 ```
 
 ---

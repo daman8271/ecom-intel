@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0143
 product: "EXTRA VIRGIN 3L"
 category: "OLIVE"
 tier: PREMIUM
@@ -19,6 +20,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0143` |
 | Product | EXTRA VIRGIN 3L |
 | JIVO SKU / SAP code | — |
 | canonical_sku(s) | `jivo-extra-virgin-olive-oil-3-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-3l` |
@@ -28,11 +30,11 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 2369 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 2429 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

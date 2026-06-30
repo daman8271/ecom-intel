@@ -233,6 +233,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "MUSTARD KACCHI GHANI"
    },
    {
@@ -377,6 +381,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
    },
    {
     "category": "SUNFLOWER",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
+   },
+   {
+    "category": "SUNFLOWER",
     "sub_category": "SUNFLOWER"
    },
    {
@@ -385,8 +393,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
    }
   ]
  },
- "mapped_units": 91653.0,
- "mapped_value": 91653.0,
+ "mapped_units": 107168.0,
+ "mapped_value": 107168.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -397,144 +405,144 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
  "states": [
   {
    "by_platform": {
-    "ZEPTO": 20829.0
+    "ZEPTO": 23810.0
    },
    "state": "MAHARASHTRA",
-   "units": 20829.0,
-   "value": 20829.0
+   "units": 23810.0,
+   "value": 23810.0
   },
   {
    "by_platform": {
-    "ZEPTO": 16850.0
-   },
-   "state": "DELHI",
-   "units": 16850.0,
-   "value": 16850.0
-  },
-  {
-   "by_platform": {
-    "ZEPTO": 16750.0
+    "ZEPTO": 19693.0
    },
    "state": "KARNATAKA",
-   "units": 16750.0,
-   "value": 16750.0
+   "units": 19693.0,
+   "value": 19693.0
   },
   {
    "by_platform": {
-    "ZEPTO": 9193.0
+    "ZEPTO": 18935.0
+   },
+   "state": "DELHI",
+   "units": 18935.0,
+   "value": 18935.0
+  },
+  {
+   "by_platform": {
+    "ZEPTO": 11707.0
    },
    "state": "TELANGANA",
-   "units": 9193.0,
-   "value": 9193.0
+   "units": 11707.0,
+   "value": 11707.0
   },
   {
    "by_platform": {
-    "ZEPTO": 8413.0
+    "ZEPTO": 9489.0
    },
    "state": "HARYANA",
-   "units": 8413.0,
-   "value": 8413.0
+   "units": 9489.0,
+   "value": 9489.0
   },
   {
    "by_platform": {
-    "ZEPTO": 8256.0
+    "ZEPTO": 9322.0
    },
    "state": "UTTAR PRADESH",
-   "units": 8256.0,
-   "value": 8256.0
+   "units": 9322.0,
+   "value": 9322.0
   },
   {
    "by_platform": {
-    "ZEPTO": 4936.0
+    "ZEPTO": 6778.0
    },
    "state": "TAMIL NADU",
-   "units": 4936.0,
-   "value": 4936.0
+   "units": 6778.0,
+   "value": 6778.0
   },
   {
    "by_platform": {
-    "ZEPTO": 2027.0
+    "ZEPTO": 2245.0
    },
    "state": "GUJARAT",
-   "units": 2027.0,
-   "value": 2027.0
+   "units": 2245.0,
+   "value": 2245.0
   },
   {
    "by_platform": {
-    "ZEPTO": 1388.0
+    "ZEPTO": 1638.0
    },
    "state": "PUNJAB",
-   "units": 1388.0,
-   "value": 1388.0
+   "units": 1638.0,
+   "value": 1638.0
   },
   {
    "by_platform": {
-    "ZEPTO": 1149.0
+    "ZEPTO": 1291.0
    },
    "state": "RAJASTHAN",
-   "units": 1149.0,
-   "value": 1149.0
+   "units": 1291.0,
+   "value": 1291.0
   },
   {
    "by_platform": {
-    "ZEPTO": 605.0
+    "ZEPTO": 688.0
    },
    "state": "UTTARAKHAND",
-   "units": 605.0,
-   "value": 605.0
+   "units": 688.0,
+   "value": 688.0
   },
   {
    "by_platform": {
-    "ZEPTO": 481.0
+    "ZEPTO": 542.0
    },
    "state": "MADHYA PRADESH",
-   "units": 481.0,
-   "value": 481.0
+   "units": 542.0,
+   "value": 542.0
   },
   {
    "by_platform": {
-    "ZEPTO": 299.0
+    "ZEPTO": 415.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 299.0,
-   "value": 299.0
+   "units": 415.0,
+   "value": 415.0
   },
   {
    "by_platform": {
-    "ZEPTO": 225.0
+    "ZEPTO": 272.0
    },
    "state": "KERALA",
-   "units": 225.0,
-   "value": 225.0
+   "units": 272.0,
+   "value": 272.0
   },
   {
    "by_platform": {
-    "ZEPTO": 163.0
+    "ZEPTO": 202.0
    },
    "state": "CHANDIGARH",
-   "units": 163.0,
-   "value": 163.0
+   "units": 202.0,
+   "value": 202.0
   },
   {
    "by_platform": {
-    "ZEPTO": 77.0
+    "ZEPTO": 121.0
    },
    "state": "PUDUCHERRY",
-   "units": 77.0,
-   "value": 77.0
+   "units": 121.0,
+   "value": 121.0
   },
   {
    "by_platform": {
-    "ZEPTO": 12.0
+    "ZEPTO": 20.0
    },
    "state": "WEST BENGAL",
-   "units": 12.0,
-   "value": 12.0
+   "units": 20.0,
+   "value": 20.0
   }
  ],
  "sub_categories": [],
- "total_units": 91653.0,
- "total_value": 91653.0,
+ "total_units": 107168.0,
+ "total_value": 107168.0,
  "year": 2026
 }
 ```

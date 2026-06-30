@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0084
 product: "WG MOJITO SF 200ML"
 sap_codes:
   - FG0000250
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0084` |
 | Product | WG MOJITO SF 200ML |
 | JIVO SKU / SAP code | `FG0000250` |
 | canonical_sku(s) | `mojito-healthy-wheatgrass-juice-sugar-free-200ml`, `jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200ml-200ml` |
@@ -53,3 +55,11 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - DRINKS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - bigbasket]] · [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000250`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000250]]
+- **1 sap items:** [[quality-control__sap-items-FG0000250]]
+

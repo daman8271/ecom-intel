@@ -37,7 +37,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "month": 5,
    "targets": 60000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -58,7 +58,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "month": 4,
    "targets": 40000.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   },
   {
@@ -79,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "month": 4,
    "targets": 30000.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   }
  ],

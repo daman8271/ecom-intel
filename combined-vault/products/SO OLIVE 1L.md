@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0074
 product: "SO OLIVE 1L"
 sap_codes:
   - FG0000228
@@ -25,6 +26,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0074` |
 | Product | SO OLIVE 1L |
 | JIVO SKU / SAP code | `FG0000228` |
 | canonical_sku(s) | `jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-1l`, `edoh5he7fczjwtaw`, `jivo-soolive-oil-1l-1l`, `jivo-soolive-blend-of-rice-bran-and-olive-oil-1l` |
@@ -37,14 +39,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 279 | 279 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 279 | 279 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 279 | 237 | -15.05 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - zepto\|zepto]] | 279 | 262 | -6.09 | 🟢 BELOW | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 289 | 279 | -3.46 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 289 | 279 | -3.46 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 289 | 237 | -17.99 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - zepto\|zepto]] | 289 | 262 | -9.34 | 🟢 BELOW | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -69,3 +71,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - BLENDED]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - zepto]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000228`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000228]]
+

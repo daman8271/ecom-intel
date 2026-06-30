@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,0.0,SWIGGY,,52982,529.998125,VIZAG,16.0,2025-09-27,2025-10-13,VIAPO11870,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52982,2026-06-27
-190.48,0.0,SWIGGY,,52983,200.00375,VIZAG,48.0,2025-09-27,2025-10-13,VIAPO11870,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52983,2026-06-27
-114.29,0.0,SWIGGY,,52984,120.0043333,VIZAG,60.0,2025-09-27,2025-10-13,VIAPO11870,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52984,2026-06-27
+504.76,0.0,SWIGGY,,52982,529.998125,VIZAG,16.0,2025-09-27,2025-10-13,VIAPO11870,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52982,2026-06-30
+190.48,0.0,SWIGGY,,52983,200.00375,VIZAG,48.0,2025-09-27,2025-10-13,VIAPO11870,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52983,2026-06-30
+114.29,0.0,SWIGGY,,52984,120.0043333,VIZAG,60.0,2025-09-27,2025-10-13,VIAPO11870,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52984,2026-06-30
 ```
 
 ---

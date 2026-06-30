@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,3.0,SWIGGY,2026-02-14,62236,1500.0,NOIDA,3.0,2026-01-29,2026-02-21,ETPPO25501,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62236,2026-06-27
-209.52,80.0,SWIGGY,2026-02-14,62237,219.9961364,NOIDA,88.0,2026-01-29,2026-02-21,ETPPO25501,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62237,2026-06-27
-138.1,120.0,SWIGGY,2026-02-14,62238,145.0047619,NOIDA,126.0,2026-01-29,2026-02-21,ETPPO25501,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62238,2026-06-27
+1428.57,3.0,SWIGGY,2026-02-14,62236,1500.0,NOIDA,3.0,2026-01-29,2026-02-21,ETPPO25501,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62236,2026-06-30
+209.52,80.0,SWIGGY,2026-02-14,62237,219.9961364,NOIDA,88.0,2026-01-29,2026-02-21,ETPPO25501,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62237,2026-06-30
+138.1,120.0,SWIGGY,2026-02-14,62238,145.0047619,NOIDA,126.0,2026-01-29,2026-02-21,ETPPO25501,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62238,2026-06-30
 ```
 
 ---

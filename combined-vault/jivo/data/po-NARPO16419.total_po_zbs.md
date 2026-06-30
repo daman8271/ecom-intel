@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,,SWIGGY,,77301,194.9957386,NAGPUR,176.0,2026-06-22,2026-07-01,NARPO16419,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77301,2026-06-27
-928.57,,SWIGGY,,77302,974.9985,NAGPUR,20.0,2026-06-22,2026-07-01,NARPO16419,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77302,2026-06-27
-149.52,,SWIGGY,,77303,156.9961667,NAGPUR,120.0,2026-06-22,2026-07-01,NARPO16419,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77303,2026-06-27
-154.29,,SWIGGY,,77304,162.00425,NAGPUR,80.0,2026-06-22,2026-07-01,NARPO16419,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77304,2026-06-27
+185.71,0.0,SWIGGY,,77301,195.0,NAGPUR,176.0,2026-06-22,2026-07-01,NARPO16419,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77301,2026-06-30
+928.57,0.0,SWIGGY,,77302,975.0,NAGPUR,20.0,2026-06-22,2026-07-01,NARPO16419,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77302,2026-06-30
+149.52,0.0,SWIGGY,,77303,157.0,NAGPUR,120.0,2026-06-22,2026-07-01,NARPO16419,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77303,2026-06-30
+154.29,0.0,SWIGGY,,77304,162.0,NAGPUR,80.0,2026-06-22,2026-07-01,NARPO16419,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77304,2026-06-30
 ```
 
 ---

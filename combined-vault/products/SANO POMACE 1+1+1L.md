@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0122
 product: "SANO POMACE 1+1+1L"
 sap_codes:
   - FG0000340
@@ -22,6 +23,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0122` |
 | Product | SANO POMACE 1+1+1L |
 | JIVO SKU / SAP code | `FG0000340`, `FG0000327` |
 | canonical_sku(s) | `edogtkkpp3twkysp` |
@@ -60,3 +62,13 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000327`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000327]]
+
+**`FG0000340`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000340]]
+

@@ -20,14 +20,14 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
 {
  "data": [
   {
-   "achieved_pct": 2.411571,
+   "achieved_pct": 2.685857,
    "created_at": "2026-06-04T08:30:02.955416+00:00",
-   "date": "2026-06-23",
-   "done_ltrs": 16881.0,
-   "dp_ltrs": 16881.0,
-   "drr": 733.96,
-   "est_ltr": 22018.7,
-   "est_ltr_pct": 3.145528,
+   "date": "2026-06-26",
+   "done_ltrs": 18801.0,
+   "dp_ltrs": 18801.0,
+   "drr": 723.12,
+   "est_ltr": 21693.46,
+   "est_ltr_pct": 3.099066,
    "format": "BIG BASKET",
    "id": 25,
    "item_head": "COMMODITY",
@@ -36,18 +36,18 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "require_drr": 0.0,
    "targets": 7000.0,
    "type": "prim",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-27T06:27:31.635505+00:00",
    "year": 2026
   },
   {
-   "achieved_pct": 1.1205,
+   "achieved_pct": 1.2225,
    "created_at": "2026-06-04T08:29:59.682672+00:00",
-   "date": "2026-06-24",
-   "done_ltrs": 2241.0,
-   "dp_ltrs": 2241.0,
-   "drr": 93.38,
-   "est_ltr": 2801.25,
-   "est_ltr_pct": 1.400625,
+   "date": "2026-06-26",
+   "done_ltrs": 2445.0,
+   "dp_ltrs": 2445.0,
+   "drr": 94.04,
+   "est_ltr": 2821.15,
+   "est_ltr_pct": 1.410577,
    "format": "BIG BASKET",
    "id": 24,
    "item_head": "PREMIUM",
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "require_drr": 0.0,
    "targets": 2000.0,
    "type": "prim",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-27T06:27:31.635505+00:00",
    "year": 2026
   },
   {
@@ -76,7 +76,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "require_drr": 5033.0,
    "targets": 12000.0,
    "type": "prim",
-   "updated_at": "2026-06-08T09:55:46.462453+00:00",
+   "updated_at": "2026-06-27T06:27:40.010678+00:00",
    "year": 2026
   },
   {
@@ -96,7 +96,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "require_drr": 3542.0,
    "targets": 5000.0,
    "type": "prim",
-   "updated_at": "2026-06-08T09:55:46.462453+00:00",
+   "updated_at": "2026-06-27T06:27:40.010678+00:00",
    "year": 2026
   }
  ],

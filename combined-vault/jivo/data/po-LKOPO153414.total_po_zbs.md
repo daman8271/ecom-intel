@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-2619.05,0.0,SWIGGY,,62491,2750.0025,LUCKNOW,12.0,2026-02-02,2026-02-14,LKOPO153414,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62491,2026-06-27
+2619.05,0.0,SWIGGY,,62491,2750.0025,LUCKNOW,12.0,2026-02-02,2026-02-14,LKOPO153414,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62491,2026-06-30
 ```
 
 ---

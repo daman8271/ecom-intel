@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,400.0,SWIGGY,2026-02-20,62062,219.9962,HYDERABAD,400.0,2026-01-27,2026-02-20,CHCPO313188,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62062,2026-06-27
-138.1,0.0,SWIGGY,2026-02-20,62063,145.0047576,HYDERABAD,660.0,2026-01-27,2026-02-20,CHCPO313188,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62063,2026-06-27
+209.52,400.0,SWIGGY,2026-02-20,62062,219.9962,HYDERABAD,400.0,2026-01-27,2026-02-20,CHCPO313188,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62062,2026-06-30
+138.1,0.0,SWIGGY,2026-02-20,62063,145.0047576,HYDERABAD,660.0,2026-01-27,2026-02-20,CHCPO313188,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62063,2026-06-30
 ```
 
 ---

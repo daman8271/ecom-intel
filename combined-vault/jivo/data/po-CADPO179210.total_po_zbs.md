@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,80.0,SWIGGY,2026-02-07,61730,219.99625,AHMEDABAD,80.0,2026-01-21,2026-02-10,CADPO179210,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61730,2026-06-27
-144.76,200.0,SWIGGY,2026-02-07,61731,151.9981,AHMEDABAD,200.0,2026-01-21,2026-02-10,CADPO179210,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61731,2026-06-27
-690.48,96.0,SWIGGY,2026-02-07,61732,725.00375,AHMEDABAD,112.0,2026-01-21,2026-02-10,CADPO179210,po revised by swiggy team,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61732,2026-06-27
-2047.62,8.0,SWIGGY,2026-02-07,61733,2150.00125,AHMEDABAD,8.0,2026-01-21,2026-02-10,CADPO179210,po revised by swiggy team,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61733,2026-06-27
+209.52,80.0,SWIGGY,2026-02-07,61730,219.99625,AHMEDABAD,80.0,2026-01-21,2026-02-10,CADPO179210,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61730,2026-06-30
+144.76,200.0,SWIGGY,2026-02-07,61731,151.9981,AHMEDABAD,200.0,2026-01-21,2026-02-10,CADPO179210,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61731,2026-06-30
+690.48,96.0,SWIGGY,2026-02-07,61732,725.00375,AHMEDABAD,112.0,2026-01-21,2026-02-10,CADPO179210,po revised by swiggy team,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61732,2026-06-30
+2047.62,8.0,SWIGGY,2026-02-07,61733,2150.00125,AHMEDABAD,8.0,2026-01-21,2026-02-10,CADPO179210,po revised by swiggy team,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61733,2026-06-30
 ```
 
 ---

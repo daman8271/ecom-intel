@@ -1069,6 +1069,45 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
     "pending_qty": 0.0,
     "pending_value": 0.0,
     "period": "2026-06-27"
+   },
+   {
+    "done_ltrs": 0.0,
+    "done_qty": 0.0,
+    "done_value": 0.0,
+    "label": "28 Jun",
+    "order_ltrs": 0.0,
+    "order_qty": 0.0,
+    "order_value": 0.0,
+    "pending_ltrs": 0.0,
+    "pending_qty": 0.0,
+    "pending_value": 0.0,
+    "period": "2026-06-28"
+   },
+   {
+    "done_ltrs": 0.0,
+    "done_qty": 0.0,
+    "done_value": 0.0,
+    "label": "29 Jun",
+    "order_ltrs": 0.0,
+    "order_qty": 0.0,
+    "order_value": 0.0,
+    "pending_ltrs": 0.0,
+    "pending_qty": 0.0,
+    "pending_value": 0.0,
+    "period": "2026-06-29"
+   },
+   {
+    "done_ltrs": 0.0,
+    "done_qty": 0.0,
+    "done_value": 0.0,
+    "label": "30 Jun",
+    "order_ltrs": 0.0,
+    "order_qty": 0.0,
+    "order_value": 0.0,
+    "pending_ltrs": 0.0,
+    "pending_qty": 0.0,
+    "pending_value": 0.0,
+    "period": "2026-06-30"
    }
   ],
   "month": [],

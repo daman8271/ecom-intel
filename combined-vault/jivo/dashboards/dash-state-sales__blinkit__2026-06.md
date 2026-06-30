@@ -233,6 +233,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "MUSTARD KACCHI GHANI"
    },
    {
@@ -377,6 +381,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
    },
    {
     "category": "SUNFLOWER",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
+   },
+   {
+    "category": "SUNFLOWER",
     "sub_category": "SUNFLOWER"
    },
    {
@@ -385,8 +393,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
    }
   ]
  },
- "mapped_units": 54328.0,
- "mapped_value": 54328.0,
+ "mapped_units": 61405.0,
+ "mapped_value": 61405.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -397,123 +405,123 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
  "states": [
   {
    "by_platform": {
-    "BLINKIT": 19009.0
+    "BLINKIT": 21442.0
    },
    "state": "PUNJAB",
-   "units": 19009.0,
-   "value": 19009.0
+   "units": 21442.0,
+   "value": 21442.0
   },
   {
    "by_platform": {
-    "BLINKIT": 8353.0
+    "BLINKIT": 9487.0
    },
    "state": "DELHI",
-   "units": 8353.0,
-   "value": 8353.0
+   "units": 9487.0,
+   "value": 9487.0
   },
   {
    "by_platform": {
-    "BLINKIT": 6735.0
+    "BLINKIT": 7623.0
    },
    "state": "HARYANA",
-   "units": 6735.0,
-   "value": 6735.0
+   "units": 7623.0,
+   "value": 7623.0
   },
   {
    "by_platform": {
-    "BLINKIT": 4186.0
+    "BLINKIT": 4684.0
    },
    "state": "MAHARASHTRA",
-   "units": 4186.0,
-   "value": 4186.0
+   "units": 4684.0,
+   "value": 4684.0
   },
   {
    "by_platform": {
-    "BLINKIT": 3767.0
+    "BLINKIT": 4341.0
    },
    "state": "CHANDIGARH",
-   "units": 3767.0,
-   "value": 3767.0
+   "units": 4341.0,
+   "value": 4341.0
   },
   {
    "by_platform": {
-    "BLINKIT": 3629.0
+    "BLINKIT": 4062.0
    },
    "state": "UTTAR PRADESH",
-   "units": 3629.0,
-   "value": 3629.0
+   "units": 4062.0,
+   "value": 4062.0
   },
   {
    "by_platform": {
-    "BLINKIT": 2986.0
+    "BLINKIT": 3433.0
    },
    "state": "KARNATAKA",
-   "units": 2986.0,
-   "value": 2986.0
+   "units": 3433.0,
+   "value": 3433.0
   },
   {
    "by_platform": {
-    "BLINKIT": 2281.0
+    "BLINKIT": 2554.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 2281.0,
-   "value": 2281.0
+   "units": 2554.0,
+   "value": 2554.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1677.0
+    "BLINKIT": 1860.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 1677.0,
-   "value": 1677.0
+   "units": 1860.0,
+   "value": 1860.0
   },
   {
    "by_platform": {
-    "BLINKIT": 900.0
+    "BLINKIT": 1012.0
    },
    "state": "UTTARAKHAND",
-   "units": 900.0,
-   "value": 900.0
+   "units": 1012.0,
+   "value": 1012.0
   },
   {
    "by_platform": {
-    "BLINKIT": 341.0
+    "BLINKIT": 372.0
    },
    "state": "RAJASTHAN",
-   "units": 341.0,
-   "value": 341.0
+   "units": 372.0,
+   "value": 372.0
   },
   {
    "by_platform": {
-    "BLINKIT": 227.0
+    "BLINKIT": 257.0
    },
    "state": "GOA",
-   "units": 227.0,
-   "value": 227.0
+   "units": 257.0,
+   "value": 257.0
   },
   {
    "by_platform": {
-    "BLINKIT": 194.0
+    "BLINKIT": 224.0
    },
    "state": "WEST BENGAL",
-   "units": 194.0,
-   "value": 194.0
+   "units": 224.0,
+   "value": 224.0
   },
   {
    "by_platform": {
-    "BLINKIT": 17.0
-   },
-   "state": "MADHYA PRADESH",
-   "units": 17.0,
-   "value": 17.0
-  },
-  {
-   "by_platform": {
-    "BLINKIT": 16.0
+    "BLINKIT": 25.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 16.0,
-   "value": 16.0
+   "units": 25.0,
+   "value": 25.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 18.0
+   },
+   "state": "MADHYA PRADESH",
+   "units": 18.0,
+   "value": 18.0
   },
   {
    "by_platform": {
@@ -525,11 +533,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   },
   {
    "by_platform": {
-    "BLINKIT": 3.0
+    "BLINKIT": 4.0
    },
    "state": "CHHATTISGARH",
-   "units": 3.0,
-   "value": 3.0
+   "units": 4.0,
+   "value": 4.0
   },
   {
    "by_platform": {
@@ -541,8 +549,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   }
  ],
  "sub_categories": [],
- "total_units": 54334.0,
- "total_value": 54334.0,
+ "total_units": 61414.0,
+ "total_value": 61414.0,
  "year": 2026
 }
 ```

@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,72256,499.999375,AHMEDABAD,16.0,2026-05-08,2026-05-17,CADPO201754,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72256,2026-06-27
-366.67,0.0,SWIGGY,,72257,385.0034375,AHMEDABAD,32.0,2026-05-08,2026-05-17,CADPO201754,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72257,2026-06-27
-147.62,0.0,SWIGGY,,72258,155.0009167,AHMEDABAD,120.0,2026-05-08,2026-05-17,CADPO201754,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72258,2026-06-27
+476.19,0.0,SWIGGY,,72256,499.999375,AHMEDABAD,16.0,2026-05-08,2026-05-17,CADPO201754,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72256,2026-06-30
+366.67,0.0,SWIGGY,,72257,385.0034375,AHMEDABAD,32.0,2026-05-08,2026-05-17,CADPO201754,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72257,2026-06-30
+147.62,0.0,SWIGGY,,72258,155.0009167,AHMEDABAD,120.0,2026-05-08,2026-05-17,CADPO201754,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72258,2026-06-30
 ```
 
 ---

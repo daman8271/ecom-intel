@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-128.57,20.0,SWIGGY,2025-08-29,49687,134.9985,CENTRAL GOA,20.0,2025-08-09,2025-08-30,GCAPO04978,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49687,2026-06-27
-141.9,0.0,SWIGGY,2025-08-29,49688,148.9966667,CENTRAL GOA,3.0,2025-08-09,2025-08-30,GCAPO04978,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49688,2026-06-27
+128.57,20.0,SWIGGY,2025-08-29,49687,134.9985,CENTRAL GOA,20.0,2025-08-09,2025-08-30,GCAPO04978,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49687,2026-06-30
+141.9,0.0,SWIGGY,2025-08-29,49688,148.9966667,CENTRAL GOA,3.0,2025-08-09,2025-08-30,GCAPO04978,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49688,2026-06-30
 ```
 
 ---

@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-761.9,16.0,SWIGGY,2025-10-22,54197,799.995,MUMBAI,16.0,2025-10-14,2025-10-25,CIMPO49791,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54197,2026-06-27
-666.67,48.0,SWIGGY,2025-10-22,54198,700.0033333,MUMBAI,48.0,2025-10-14,2025-10-25,CIMPO49791,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54198,2026-06-27
-2522.86,24.0,SWIGGY,2025-10-22,54199,2649.002917,MUMBAI,24.0,2025-10-14,2025-10-25,CIMPO49791,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54199,2026-06-27
+761.9,16.0,SWIGGY,2025-10-22,54197,799.995,MUMBAI,16.0,2025-10-14,2025-10-25,CIMPO49791,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54197,2026-06-30
+666.67,48.0,SWIGGY,2025-10-22,54198,700.0033333,MUMBAI,48.0,2025-10-14,2025-10-25,CIMPO49791,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54198,2026-06-30
+2522.86,24.0,SWIGGY,2025-10-22,54199,2649.002917,MUMBAI,24.0,2025-10-14,2025-10-25,CIMPO49791,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54199,2026-06-30
 ```
 
 ---

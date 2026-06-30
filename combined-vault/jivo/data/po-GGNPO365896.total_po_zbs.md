@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-15,76094,214.998,DELHI,20.0,2026-06-10,2026-06-19,GGNPO365896,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76094,2026-06-27
-154.29,144.0,SWIGGY,2026-06-15,76095,162.0043125,DELHI,160.0,2026-06-10,2026-06-19,GGNPO365896,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76095,2026-06-27
+204.76,20.0,SWIGGY,2026-06-15,76094,214.998,DELHI,20.0,2026-06-10,2026-06-19,GGNPO365896,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76094,2026-06-30
+154.29,144.0,SWIGGY,2026-06-15,76095,162.0043125,DELHI,160.0,2026-06-10,2026-06-19,GGNPO365896,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76095,2026-06-30
 ```
 
 ---

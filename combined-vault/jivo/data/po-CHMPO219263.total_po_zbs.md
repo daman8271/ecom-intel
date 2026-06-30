@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-199.54,0.0,SWIGGY,,55246,209.516875,HYDERABAD,16.0,2025-11-01,2025-11-17,CHMPO219263,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55246,2026-06-27
+199.54,0.0,SWIGGY,,55246,209.516875,HYDERABAD,16.0,2025-11-01,2025-11-17,CHMPO219263,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55246,2026-06-30
 ```
 
 ---

@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0027
 product: "SOYABEAN 1L POUCH"
 sap_codes:
   - FG0000109
@@ -24,6 +25,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0027` |
 | Product | SOYABEAN 1L POUCH |
 | JIVO SKU / SAP code | `FG0000109`, `FG0000194` |
 | canonical_sku(s) | `jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-ideal-for-roasting-frying-and-baking-high-in-omega3-and-low-in-saturated-fat-1l`, `jivo-soybean-oil-soyabean-oil-pouch-1l` |
@@ -36,11 +38,11 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 199 | 199 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 209 | 199 | -4.78 | 🟢 BELOW | BAU | 2026-06-29 |
 | [[Platform - flipkart\|flipkart-minutes]] | 199 | — | — | ⚪ OOS | SVD | 2026-06-27 |
 
 ## JIVO lens
@@ -65,3 +67,17 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - SOYABEAN]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000109`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000109]]
+- **1 sap items:** [[quality-control__sap-items-FG0000109]]
+
+**`FG0000194`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000194]]
+- **1583 boxes:** [[box-125525]] · [[box-125526]] · [[box-125527]] … +1580 more (tag `bridge/FG0000194`)
+- **445 boxes:** [[barcode__dispatch__reports__boxes-125525]] · [[barcode__dispatch__reports__boxes-125526]] · [[barcode__dispatch__reports__boxes-125527]] … +442 more (tag `bridge/FG0000194`)
+- **13 pallets:** [[pal-1903]] · [[pal-1954]] · [[pal-1955]] … +10 more (tag `bridge/FG0000194`)
+

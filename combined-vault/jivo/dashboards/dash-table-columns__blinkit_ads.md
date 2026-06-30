@@ -33,18 +33,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   "uploaded_at"
  ],
  "sample": {
-  "ad_spent": 2832.1999999999994,
-  "campaign_id": "121611",
-  "campaign_name": "Extra Light 1L",
-  "date": "2026-05-01",
-  "direct_gmv": 35879.0,
-  "direct_qty_sold": 52.0,
+  "ad_spent": 2174.400000000002,
+  "campaign_id": "45138",
+  "campaign_name": "Canola Oil 1L",
+  "date": "2026-01-01",
+  "direct_gmv": 42544.0,
+  "direct_qty_sold": 99.0,
   "format": "BLINKIT",
-  "id": 4,
-  "impression": 5873.0,
-  "indirect_gmv": 42209.0,
-  "indirect_qty_sold": 112.0,
-  "uploaded_at": "2026-05-20T13:09:49.417756Z"
+  "id": 4301,
+  "impression": 3222.0,
+  "indirect_gmv": 9915.0,
+  "indirect_qty_sold": 40.0,
+  "uploaded_at": "2026-06-29T08:14:00.034054Z"
  }
 }
 ```

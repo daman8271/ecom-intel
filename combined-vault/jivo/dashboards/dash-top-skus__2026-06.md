@@ -27,82 +27,82 @@ Up: [[dashboards-index]] · [[2026-06]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -24.6,
+   "delta_pct": -12.1,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 84108.0,
+   "ltrs": 98087.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 111558.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -29.9,
+   "delta_pct": -18.6,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 83361.0,
+   "ltrs": 96913.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 118991.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -21.2,
+   "delta_pct": -12.8,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 54411.0,
+   "ltrs": 60230.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 69064.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -48.4,
+   "delta_pct": -43.3,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 35270.0,
+   "ltrs": 38610.0,
    "name": "SUNFLOWER 5L",
-   "prev_ltrs": 68290.0
+   "prev_ltrs": 68130.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -51.2,
+   "delta_pct": -44.5,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 29000.0,
+   "ltrs": 32980.0,
    "name": "GROUNDNUT 5L",
    "prev_ltrs": 59465.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -71.1,
+   "delta_pct": -63.3,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 20400.0,
+   "ltrs": 25860.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 70515.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -65.9,
+   "delta_pct": -35.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 19394.0,
-   "name": "JIVO POMACE 1L",
-   "prev_ltrs": 56818.0
+   "ltrs": 22390.0,
+   "name": "JIVO POMACE 5L",
+   "prev_ltrs": 34455.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -55.1,
+   "delta_pct": -63.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 15465.0,
-   "name": "JIVO POMACE 5L",
-   "prev_ltrs": 34455.0
+   "ltrs": 20910.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 56818.0
   },
   {
    "brand": null,
@@ -117,12 +117,12 @@ Up: [[dashboards-index]] · [[2026-06]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -47.2,
+   "delta_pct": 48.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 11930.0,
-   "name": "EXTRA LIGHT 1L",
-   "prev_ltrs": 22602.0
+   "ltrs": 13965.0,
+   "name": "SANO POMACE 5L",
+   "prev_ltrs": 9390.0
   }
  ],
  "source": "primary",
@@ -139,10 +139,10 @@ Up: [[dashboards-index]] · [[2026-06]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 343.8,
+  "delta_pct": 793.8,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 35.5,
+  "ltrs": 71.5,
   "name": "EXTRA VIRGIN 500ML",
   "prev_ltrs": 8.0
  },

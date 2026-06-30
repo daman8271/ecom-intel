@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0133
 product: "EXTRA LIGHT 3L"
 sap_codes:
   - FG0000390
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0133` |
 | Product | EXTRA LIGHT 3L |
 | JIVO SKU / SAP code | `FG0000390` |
 | canonical_sku(s) | `jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-saturated-fat-3l`, `edohzyysyez2yvtm` |
@@ -32,12 +34,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1789 | 1559 | -12.86 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 1789 | 1515 | -15.32 | 🟢 BELOW | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 1849 | 1488 | -19.52 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 1849 | 1515 | -18.06 | 🟢 BELOW | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -62,3 +64,11 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000390`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000390]]
+- **1 sap items:** [[quality-control__sap-items-FG0000390]]
+

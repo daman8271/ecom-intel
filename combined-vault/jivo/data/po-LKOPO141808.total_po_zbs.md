@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-564.16,0.0,SWIGGY,,57762,592.368125,LUCKNOW,16.0,2025-12-02,2025-12-15,LKOPO141808,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57762,2026-06-27
-184.83,0.0,SWIGGY,,57763,194.0725,LUCKNOW,4.0,2025-12-02,2025-12-15,LKOPO141808,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57763,2026-06-27
-116.19,0.0,SWIGGY,,57764,121.9995,LUCKNOW,120.0,2025-12-02,2025-12-15,LKOPO141808,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57764,2026-06-27
+564.16,0.0,SWIGGY,,57762,592.368125,LUCKNOW,16.0,2025-12-02,2025-12-15,LKOPO141808,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57762,2026-06-30
+184.83,0.0,SWIGGY,,57763,194.0725,LUCKNOW,4.0,2025-12-02,2025-12-15,LKOPO141808,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57763,2026-06-30
+116.19,0.0,SWIGGY,,57764,121.9995,LUCKNOW,120.0,2025-12-02,2025-12-15,LKOPO141808,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57764,2026-06-30
 ```
 
 ---

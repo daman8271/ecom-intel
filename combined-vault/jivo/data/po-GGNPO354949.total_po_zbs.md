@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-809.52,300.0,SWIGGY,2026-05-20,72094,849.9962171,DELHI,304.0,2026-05-07,2026-05-24,GGNPO354949,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72094,2026-06-27
-738.1,0.0,SWIGGY,2026-05-20,72095,775.005,DELHI,8.0,2026-05-07,2026-05-24,GGNPO354949,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72095,2026-06-27
+809.52,300.0,SWIGGY,2026-05-20,72094,849.9962171,DELHI,304.0,2026-05-07,2026-05-24,GGNPO354949,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72094,2026-06-30
+738.1,0.0,SWIGGY,2026-05-20,72095,775.005,DELHI,8.0,2026-05-07,2026-05-24,GGNPO354949,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72095,2026-06-30
 ```
 
 ---

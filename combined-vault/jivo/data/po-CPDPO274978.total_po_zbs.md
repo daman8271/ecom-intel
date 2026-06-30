@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-178.1,512.0,SWIGGY,2026-06-08,74520,187.0047461,PUNE,512.0,2026-05-26,2026-06-09,CPDPO274978,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74520,2026-06-27
-890.48,32.0,SWIGGY,2026-06-08,74521,935.00375,PUNE,32.0,2026-05-26,2026-06-09,CPDPO274978,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74521,2026-06-27
+178.1,512.0,SWIGGY,2026-06-08,74520,187.0047461,PUNE,512.0,2026-05-26,2026-06-09,CPDPO274978,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74520,2026-06-30
+890.48,32.0,SWIGGY,2026-06-08,74521,935.00375,PUNE,32.0,2026-05-26,2026-06-09,CPDPO274978,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74521,2026-06-30
 ```
 
 ---

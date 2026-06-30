@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,,63033,1500.0,NOIDA,3.0,2026-02-06,2026-02-15,ETPPO27826,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63033,2026-06-27
-690.48,0.0,SWIGGY,,63034,725.0041667,NOIDA,12.0,2026-02-06,2026-02-15,ETPPO27826,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63034,2026-06-27
-761.9,0.0,SWIGGY,,63035,799.995,NOIDA,8.0,2026-02-06,2026-02-15,ETPPO27826,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63035,2026-06-27
+1428.57,0.0,SWIGGY,,63033,1500.0,NOIDA,3.0,2026-02-06,2026-02-15,ETPPO27826,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63033,2026-06-30
+690.48,0.0,SWIGGY,,63034,725.0041667,NOIDA,12.0,2026-02-06,2026-02-15,ETPPO27826,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63034,2026-06-30
+761.9,0.0,SWIGGY,,63035,799.995,NOIDA,8.0,2026-02-06,2026-02-15,ETPPO27826,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63035,2026-06-30
 ```
 
 ---

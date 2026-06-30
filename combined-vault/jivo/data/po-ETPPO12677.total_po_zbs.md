@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,32.0,SWIGGY,2025-12-26,58739,219.99625,NOIDA,32.0,2025-12-16,2026-01-07,ETPPO12677,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58739,2026-06-27
-761.9,4.0,SWIGGY,2025-12-26,58740,799.995,NOIDA,4.0,2025-12-16,2026-01-07,ETPPO12677,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58740,2026-06-27
+209.52,32.0,SWIGGY,2025-12-26,58739,219.99625,NOIDA,32.0,2025-12-16,2026-01-07,ETPPO12677,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58739,2026-06-30
+761.9,4.0,SWIGGY,2025-12-26,58740,799.995,NOIDA,4.0,2025-12-16,2026-01-07,ETPPO12677,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58740,2026-06-30
 ```
 
 ---

@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-147.62,48.0,SWIGGY,2026-06-01,71179,155.0010417,VIZAG,48.0,2026-05-01,2026-06-01,VIAPO61945,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71179,2026-06-27
+147.62,48.0,SWIGGY,2026-06-01,71179,155.0010417,VIZAG,48.0,2026-05-01,2026-06-01,VIAPO61945,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71179,2026-06-30
 ```
 
 ---

@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-142.86,0.0,SWIGGY,,63250,150.002875,NAGPUR,80.0,2026-02-10,2026-02-19,NARPO04452,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63250,2026-06-27
+142.86,0.0,SWIGGY,,63250,150.002875,NAGPUR,80.0,2026-02-10,2026-02-19,NARPO04452,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63250,2026-06-30
 ```
 
 ---

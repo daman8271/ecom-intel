@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-473.21,0.0,SWIGGY,,51105,529.996,MUMBAI,10.0,2025-09-04,2025-09-15,CMFPO215903,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51105,2026-06-27
-642.86,0.0,SWIGGY,,51106,675.0025,MUMBAI,4.0,2025-09-04,2025-09-15,CMFPO215903,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51106,2026-06-27
-709.52,0.0,SWIGGY,,51107,744.996125,MUMBAI,80.0,2025-09-04,2025-09-15,CMFPO215903,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51107,2026-06-27
+473.21,0.0,SWIGGY,,51105,529.996,MUMBAI,10.0,2025-09-04,2025-09-15,CMFPO215903,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51105,2026-06-30
+642.86,0.0,SWIGGY,,51106,675.0025,MUMBAI,4.0,2025-09-04,2025-09-15,CMFPO215903,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51106,2026-06-30
+709.52,0.0,SWIGGY,,51107,744.996125,MUMBAI,80.0,2025-09-04,2025-09-15,CMFPO215903,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51107,2026-06-30
 ```
 
 ---

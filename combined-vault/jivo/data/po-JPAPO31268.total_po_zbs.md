@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,20.0,SWIGGY,2026-01-20,60679,1100.001,JAIPUR,20.0,2026-01-08,2026-01-22,JPAPO31268,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60679,2026-06-27
-138.1,120.0,SWIGGY,2026-01-20,60680,145.00475,JAIPUR,120.0,2026-01-08,2026-01-22,JPAPO31268,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60680,2026-06-27
-142.86,16.0,SWIGGY,2026-01-20,60681,150.003125,JAIPUR,16.0,2026-01-08,2026-01-22,JPAPO31268,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60681,2026-06-27
+1047.62,20.0,SWIGGY,2026-01-20,60679,1100.001,JAIPUR,20.0,2026-01-08,2026-01-22,JPAPO31268,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60679,2026-06-30
+138.1,120.0,SWIGGY,2026-01-20,60680,145.00475,JAIPUR,120.0,2026-01-08,2026-01-22,JPAPO31268,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60680,2026-06-30
+142.86,16.0,SWIGGY,2026-01-20,60681,150.003125,JAIPUR,16.0,2026-01-08,2026-01-22,JPAPO31268,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60681,2026-06-30
 ```
 
 ---

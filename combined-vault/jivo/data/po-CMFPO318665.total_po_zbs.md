@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,16.0,SWIGGY,2026-05-11,72110,499.999375,MUMBAI,32.0,2026-05-07,2026-05-16,CMFPO318665,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72110,2026-06-27
-147.62,120.0,SWIGGY,2026-05-11,72111,155.0009167,MUMBAI,120.0,2026-05-07,2026-05-16,CMFPO318665,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72111,2026-06-27
-738.1,4.0,SWIGGY,2026-05-11,72112,775.005,MUMBAI,4.0,2026-05-07,2026-05-16,CMFPO318665,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72112,2026-06-27
-161.9,160.0,SWIGGY,2026-05-11,72113,169.99525,MUMBAI,160.0,2026-05-07,2026-05-16,CMFPO318665,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72113,2026-06-27
+476.19,16.0,SWIGGY,2026-05-11,72110,499.999375,MUMBAI,32.0,2026-05-07,2026-05-16,CMFPO318665,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72110,2026-06-30
+147.62,120.0,SWIGGY,2026-05-11,72111,155.0009167,MUMBAI,120.0,2026-05-07,2026-05-16,CMFPO318665,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72111,2026-06-30
+738.1,4.0,SWIGGY,2026-05-11,72112,775.005,MUMBAI,4.0,2026-05-07,2026-05-16,CMFPO318665,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72112,2026-06-30
+161.9,160.0,SWIGGY,2026-05-11,72113,169.99525,MUMBAI,160.0,2026-05-07,2026-05-16,CMFPO318665,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72113,2026-06-30
 ```
 
 ---

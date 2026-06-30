@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,6.0,SWIGGY,2025-08-27,49804,1323.0,CHANDIGARH,6.0,2025-08-16,2025-08-30,PCHPO131405,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:49804,2026-06-27
-166.67,20.0,SWIGGY,2025-08-27,49805,175.0035,CHANDIGARH,20.0,2025-08-16,2025-08-30,PCHPO131405,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:49805,2026-06-27
-709.52,4.0,SWIGGY,2025-08-27,49806,744.995,CHANDIGARH,4.0,2025-08-16,2025-08-30,PCHPO131405,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 L,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:49806,2026-06-27
+1260.0,6.0,SWIGGY,2025-08-27,49804,1323.0,CHANDIGARH,6.0,2025-08-16,2025-08-30,PCHPO131405,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:49804,2026-06-30
+166.67,20.0,SWIGGY,2025-08-27,49805,175.0035,CHANDIGARH,20.0,2025-08-16,2025-08-30,PCHPO131405,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:49805,2026-06-30
+709.52,4.0,SWIGGY,2025-08-27,49806,744.995,CHANDIGARH,4.0,2025-08-16,2025-08-30,PCHPO131405,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 L,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:49806,2026-06-30
 ```
 
 ---

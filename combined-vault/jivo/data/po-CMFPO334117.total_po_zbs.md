@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,0.0,SWIGGY,,77639,390.0,MUMBAI,32.0,2026-06-24,2026-07-03,CMFPO334117,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77639,2026-06-27
-185.71,0.0,SWIGGY,,77640,195.0,MUMBAI,32.0,2026-06-24,2026-07-03,CMFPO334117,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77640,2026-06-27
-676.19,0.0,SWIGGY,,77641,710.0,MUMBAI,16.0,2026-06-24,2026-07-03,CMFPO334117,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77641,2026-06-27
-771.43,0.0,SWIGGY,,77642,810.0,MUMBAI,60.0,2026-06-24,2026-07-03,CMFPO334117,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77642,2026-06-27
+371.43,32.0,SWIGGY,2026-06-28,77639,390.0,MUMBAI,32.0,2026-06-24,2026-07-03,CMFPO334117,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77639,2026-06-30
+185.71,0.0,SWIGGY,2026-06-28,77640,195.0,MUMBAI,32.0,2026-06-24,2026-07-03,CMFPO334117,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77640,2026-06-30
+676.19,16.0,SWIGGY,2026-06-28,77641,710.0,MUMBAI,16.0,2026-06-24,2026-07-03,CMFPO334117,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77641,2026-06-30
+771.43,60.0,SWIGGY,2026-06-28,77642,810.0,MUMBAI,60.0,2026-06-24,2026-07-03,CMFPO334117,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77642,2026-06-30
 ```
 
 ---

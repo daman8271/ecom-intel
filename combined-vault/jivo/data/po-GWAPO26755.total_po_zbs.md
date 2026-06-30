@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-241.32,0.0,SWIGGY,,68164,253.386,GUWAHATI,20.0,2026-04-04,2026-04-20,GWAPO26755,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68164,2026-06-27
-564.16,0.0,SWIGGY,,68165,592.368125,GUWAHATI,64.0,2026-04-04,2026-04-20,GWAPO26755,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68165,2026-06-27
-707.14,0.0,SWIGGY,,68166,742.4975,GUWAHATI,4.0,2026-04-04,2026-04-20,GWAPO26755,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68166,2026-06-27
+241.32,0.0,SWIGGY,,68164,253.386,GUWAHATI,20.0,2026-04-04,2026-04-20,GWAPO26755,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68164,2026-06-30
+564.16,0.0,SWIGGY,,68165,592.368125,GUWAHATI,64.0,2026-04-04,2026-04-20,GWAPO26755,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68165,2026-06-30
+707.14,0.0,SWIGGY,,68166,742.4975,GUWAHATI,4.0,2026-04-04,2026-04-20,GWAPO26755,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68166,2026-06-30
 ```
 
 ---

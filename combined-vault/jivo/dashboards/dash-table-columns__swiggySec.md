@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "tarnaka, nacharam & malkajigiri",
+  "AREA_NAME": "hsr",
   "BASE_MRP": 225.0,
   "BRAND": "jivo",
-  "CITY": "Hyderabad",
+  "CITY": "Bangalore",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
   "COMBO_UNITS_SOLD": null,
-  "GMV": 900.0,
-  "ITEM_CODE": "429981",
+  "GMV": 225.0,
+  "ITEM_CODE": "60711",
   "L1_CATEGORY": "edible oils and ghee",
   "L2_CATEGORY": "edible oils",
-  "L3_CATEGORY": "blended oil",
-  "ORDERED_DATE": "2026-03-08",
-  "PRODUCT_NAME": "jivo gold refined oil - blend of rice bran oil & sunflower oil",
-  "STORE_ID": "1396289",
-  "UNITS_SOLD": 4,
+  "L3_CATEGORY": "mustard oil",
+  "ORDERED_DATE": "2026-01-09",
+  "PRODUCT_NAME": "jivo cold press kachi ghani mustard oil",
+  "STORE_ID": "1403139",
+  "UNITS_SOLD": 1,
   "VARIANT": "1 ltr",
-  "id": 883179
+  "id": 616713
  }
 }
 ```

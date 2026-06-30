@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-690.48,20.0,SWIGGY,2026-02-27,63832,725.004,NOIDA,20.0,2026-02-18,2026-02-27,ETPPO30633,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63832,2026-06-27
-761.9,4.0,SWIGGY,2026-02-27,63833,799.995,NOIDA,4.0,2026-02-18,2026-02-27,ETPPO30633,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63833,2026-06-27
+690.48,20.0,SWIGGY,2026-02-27,63832,725.004,NOIDA,20.0,2026-02-18,2026-02-27,ETPPO30633,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63832,2026-06-30
+761.9,4.0,SWIGGY,2026-02-27,63833,799.995,NOIDA,4.0,2026-02-18,2026-02-27,ETPPO30633,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:63833,2026-06-30
 ```
 
 ---

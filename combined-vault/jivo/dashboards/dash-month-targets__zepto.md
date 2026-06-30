@@ -20,45 +20,45 @@ Up: [[dashboards-index]] · [[pf-zepto]]
 {
  "data": [
   {
-   "achieved_pct": 0.5323,
+   "achieved_pct": 0.5991,
    "created_at": "2026-06-04T08:03:59.227914+00:00",
-   "date": "2026-06-25",
-   "done_ltrs": 15970.0,
-   "done_value": 2862698.2,
-   "est_ltr": 19164.0,
-   "est_ltr_pct": 0.6388,
-   "est_value": 3435237.84,
+   "date": "2026-06-28",
+   "done_ltrs": 17972.0,
+   "done_value": 3223988.0,
+   "est_ltr": 19255.71,
+   "est_ltr_pct": 0.6419,
+   "est_value": 3454272.86,
    "format": "ZEPTO",
-   "growth": -6734.0,
-   "growth_pct": -0.26,
+   "growth": -6642.29,
+   "growth_pct": -0.2565,
    "id": 43,
    "item_head": "COMMODITY",
    "last_month": 25898.0,
    "month": 6,
    "targets": 30000.0,
    "type": "B2B",
-   "updated_at": "2026-06-26T07:10:43.209983+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
-   "achieved_pct": 0.8888,
+   "achieved_pct": 1.0427,
    "created_at": "2026-06-04T08:03:52.168373+00:00",
-   "date": "2026-06-25",
-   "done_ltrs": 48882.4,
-   "done_value": 11973474.0,
-   "est_ltr": 58658.88,
-   "est_ltr_pct": 1.0665,
-   "est_value": 14368168.8,
+   "date": "2026-06-28",
+   "done_ltrs": 57351.0,
+   "done_value": 14039628.0,
+   "est_ltr": 61447.5,
+   "est_ltr_pct": 1.1172,
+   "est_value": 15042458.57,
    "format": "ZEPTO",
-   "growth": 8130.88,
-   "growth_pct": 0.1609,
+   "growth": 10919.5,
+   "growth_pct": 0.2161,
    "id": 42,
    "item_head": "PREMIUM",
    "last_month": 50528.0,
    "month": 6,
    "targets": 55000.0,
    "type": "B2B",
-   "updated_at": "2026-06-26T07:10:43.209983+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
@@ -79,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "month": 5,
    "targets": 25000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -100,7 +100,7 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "month": 5,
    "targets": 67000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -121,7 +121,7 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "month": 4,
    "targets": 20000.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   },
   {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "month": 4,
    "targets": 8798.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   }
  ],

@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,140.0,SWIGGY,2026-06-21,76071,205.0019286,BANGALORE,140.0,2026-06-11,2026-06-22,MBLPO408741,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76071,2026-06-27
-200.0,16.0,SWIGGY,2026-06-21,76072,210.0,BANGALORE,16.0,2026-06-11,2026-06-22,MBLPO408741,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76072,2026-06-27
+195.24,140.0,SWIGGY,2026-06-21,76071,205.0019286,BANGALORE,140.0,2026-06-11,2026-06-22,MBLPO408741,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76071,2026-06-30
+200.0,16.0,SWIGGY,2026-06-21,76072,210.0,BANGALORE,16.0,2026-06-11,2026-06-22,MBLPO408741,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76072,2026-06-30
 ```
 
 ---

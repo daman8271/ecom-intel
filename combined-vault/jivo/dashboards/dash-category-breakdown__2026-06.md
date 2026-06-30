@@ -21,11 +21,11 @@ Up: [[dashboards-index]] · [[2026-06]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 104808.0,
+    "ltrs": 124247.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 89681.0,
+    "ltrs": 98840.0,
     "name": "SUNFLOWER"
    },
    {
@@ -33,21 +33,21 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 9776.0,
+    "ltrs": 12556.0,
     "name": "BLENDED"
    },
    {
-    "ltrs": 5027.0,
+    "ltrs": 7859.0,
     "name": "RICE BRAN"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 104808.0,
+    "ltrs": 124247.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 89681.0,
+    "ltrs": 98840.0,
     "name": "SUNFLOWER"
    },
    {
@@ -55,15 +55,15 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 9776.0,
+    "ltrs": 12556.0,
     "name": "GOLD"
    },
    {
-    "ltrs": 5027.0,
+    "ltrs": 7859.0,
     "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 225302.0
+  "total_ltrs": 259512.0
  },
  "errors": [],
  "month": 6,
@@ -71,23 +71,23 @@ Up: [[dashboards-index]] · [[2026-06]]
  "premium": {
   "categories": [
    {
-    "ltrs": 123669.2,
+    "ltrs": 141201.2,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 75372.5,
+    "ltrs": 92692.5,
     "name": "OLIVE"
    },
    {
-    "ltrs": 26809.0,
+    "ltrs": 29343.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 3680.0,
+    "ltrs": 4120.0,
     "name": "SESAME OIL"
    },
    {
-    "ltrs": 2837.0,
+    "ltrs": 4076.0,
     "name": "MUSTARD"
    },
    {
@@ -97,35 +97,35 @@ Up: [[dashboards-index]] · [[2026-06]]
   ],
   "sub_categories": [
    {
-    "ltrs": 123669.2,
+    "ltrs": 141201.2,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 35957.0,
+    "ltrs": 44558.0,
     "name": "JIVO POMACE"
    },
    {
-    "ltrs": 26809.0,
+    "ltrs": 29343.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 17045.0,
+    "ltrs": 23685.0,
     "name": "SANO POMACE"
    },
    {
-    "ltrs": 16061.0,
+    "ltrs": 17646.0,
     "name": "EXTRA LIGHT"
    },
    {
-    "ltrs": 6309.5,
+    "ltrs": 6803.5,
     "name": "EXTRA VIRGIN"
    },
    {
-    "ltrs": 3680.0,
+    "ltrs": 4120.0,
     "name": "SESAME OIL"
    },
    {
-    "ltrs": 2837.0,
+    "ltrs": 4076.0,
     "name": "YELLOW MUSTARD"
    },
    {
@@ -133,7 +133,7 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SO OLIVE"
    }
   ],
-  "total_ltrs": 233401.7
+  "total_ltrs": 272466.7
  },
  "source": "primary",
  "year": 2026

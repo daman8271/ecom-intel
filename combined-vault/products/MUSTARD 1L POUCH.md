@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0026
 product: "MUSTARD 1L POUCH"
 sap_codes:
   - FG0000106
@@ -21,6 +22,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0026` |
 | Product | MUSTARD 1L POUCH |
 | JIVO SKU / SAP code | `FG0000106` |
 | canonical_sku(s) | `jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-recommendable-for-roasting-frying-baking-all-type-of-cuisines-1l`, `jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l` |
@@ -33,12 +35,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 209 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 209 | 250 | 19.62 | 🔴 ABOVE | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 219 | — | — | ⚪ OOS | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 219 | 250 | 14.16 | 🔴 ABOVE | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -62,3 +64,12 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - MUSTARD]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000106`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000106]]
+- **338 boxes:** [[box-110572]] · [[box-110573]] · [[box-110574]] … +335 more (tag `bridge/FG0000106`)
+- **7 pallets:** [[pal-2274]] · [[pal-293]] · [[pal-305]] … +4 more (tag `bridge/FG0000106`)
+

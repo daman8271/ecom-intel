@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,,SWIGGY,,77173,194.9957813,LUCKNOW,64.0,2026-06-20,2026-07-02,LKOPO175699,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77173,2026-06-27
-149.52,,SWIGGY,,77174,156.99625,LUCKNOW,40.0,2026-06-20,2026-07-02,LKOPO175699,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77174,2026-06-27
-154.29,,SWIGGY,,77175,162.0045,LUCKNOW,20.0,2026-06-20,2026-07-02,LKOPO175699,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77175,2026-06-27
+185.71,0.0,SWIGGY,,77173,195.0,LUCKNOW,64.0,2026-06-20,2026-07-02,LKOPO175699,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77173,2026-06-30
+149.52,0.0,SWIGGY,,77174,157.0,LUCKNOW,40.0,2026-06-20,2026-07-02,LKOPO175699,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77174,2026-06-30
+154.29,0.0,SWIGGY,,77175,162.0,LUCKNOW,20.0,2026-06-20,2026-07-02,LKOPO175699,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77175,2026-06-30
 ```
 
 ---

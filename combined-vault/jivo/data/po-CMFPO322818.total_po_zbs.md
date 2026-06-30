@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,0.0,SWIGGY,,73934,256.998,MUMBAI,20.0,2026-05-21,2026-05-29,CMFPO322818,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73934,2026-06-27
-182.86,0.0,SWIGGY,,73935,192.0028125,MUMBAI,32.0,2026-05-21,2026-05-29,CMFPO322818,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73935,2026-06-27
+244.76,0.0,SWIGGY,,73934,256.998,MUMBAI,20.0,2026-05-21,2026-05-29,CMFPO322818,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73934,2026-06-30
+182.86,0.0,SWIGGY,,73935,192.0028125,MUMBAI,32.0,2026-05-21,2026-05-29,CMFPO322818,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73935,2026-06-30
 ```
 
 ---

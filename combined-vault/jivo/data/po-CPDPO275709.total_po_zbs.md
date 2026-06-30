@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,32.0,SWIGGY,2026-06-08,74692,499.999375,PUNE,32.0,2026-05-27,2026-06-09,CPDPO275709,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74692,2026-06-27
-366.67,0.0,SWIGGY,2026-06-08,74693,385.003125,PUNE,16.0,2026-05-27,2026-06-09,CPDPO275709,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74693,2026-06-27
+476.19,32.0,SWIGGY,2026-06-08,74692,499.999375,PUNE,32.0,2026-05-27,2026-06-09,CPDPO275709,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74692,2026-06-30
+366.67,0.0,SWIGGY,2026-06-08,74693,385.003125,PUNE,16.0,2026-05-27,2026-06-09,CPDPO275709,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74693,2026-06-30
 ```
 
 ---

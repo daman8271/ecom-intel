@@ -31,10 +31,10 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
  "detail_subtitle": "Excel rows 8-36 from SECONDARY DASHBOARD",
  "detail_total": {
   "last_month": 139099.0,
-  "per_liter_shpd": 196.78101981933767,
-  "shipped_ltr": 145741.5,
-  "shipped_units": 121530.0,
-  "shipped_value": 28679161.0
+  "per_liter_shpd": 194.96362457265914,
+  "shipped_ltr": 173090.75,
+  "shipped_units": 143396.0,
+  "shipped_value": 33746400.0
  },
  "details": [
   {
@@ -44,9 +44,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 27308.0,
    "per_liter_shpd": 195.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 51362.0,
-   "shipped_units": 51362.0,
-   "shipped_value": 10015590.0,
+   "shipped_ltr": 58608.0,
+   "shipped_units": 58608.0,
+   "shipped_value": 11428560.0,
    "sub_category": "GROUNDNUT"
   },
   {
@@ -56,9 +56,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 14485.0,
    "per_liter_shpd": 195.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 12800.0,
-   "shipped_units": 2560.0,
-   "shipped_value": 2496000.0,
+   "shipped_ltr": 15015.0,
+   "shipped_units": 3003.0,
+   "shipped_value": 2927925.0,
    "sub_category": "GROUNDNUT"
   },
   {
@@ -66,11 +66,11 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "format": "SWIGGY",
    "item_head": "PREMIUM",
    "last_month": 4481.0,
-   "per_liter_shpd": 529.6934865900383,
+   "per_liter_shpd": 530.3549571603427,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 3654.0,
-   "shipped_units": 3871.0,
-   "shipped_value": 1935500.0,
+   "shipped_ltr": 4085.0,
+   "shipped_units": 4333.0,
+   "shipped_value": 2166500.0,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -78,11 +78,11 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "format": "SWIGGY",
    "item_head": "PREMIUM",
    "last_month": 2689.0,
-   "per_liter_shpd": 216.802179379715,
+   "per_liter_shpd": 216.6834451901566,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 2386.0,
-   "shipped_units": 2406.0,
-   "shipped_value": 517290.0,
+   "shipped_ltr": 2682.0,
+   "shipped_units": 2703.0,
+   "shipped_value": 581145.0,
    "sub_category": "CANOLA"
   },
   {
@@ -92,9 +92,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 2405.0,
    "per_liter_shpd": 390.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 2187.0,
-   "shipped_units": 2187.0,
-   "shipped_value": 852930.0,
+   "shipped_ltr": 2447.0,
+   "shipped_units": 2447.0,
+   "shipped_value": 954330.0,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -104,9 +104,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 1290.0,
    "per_liter_shpd": 215.0,
    "per_ltr": "6 LTR",
-   "shipped_ltr": 1176.0,
-   "shipped_units": 196.0,
-   "shipped_value": 252840.0,
+   "shipped_ltr": 1302.0,
+   "shipped_units": 217.0,
+   "shipped_value": 279930.0,
    "sub_category": "CANOLA"
   },
   {
@@ -116,9 +116,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 905.0,
    "per_liter_shpd": 480.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 735.0,
-   "shipped_units": 147.0,
-   "shipped_value": 352800.0,
+   "shipped_ltr": 775.0,
+   "shipped_units": 155.0,
+   "shipped_value": 372000.0,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -128,9 +128,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 1082.0,
    "per_liter_shpd": 210.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 875.0,
-   "shipped_units": 875.0,
-   "shipped_value": 183750.0,
+   "shipped_ltr": 976.0,
+   "shipped_units": 976.0,
+   "shipped_value": 204960.0,
    "sub_category": "SO OLIVE"
   },
   {
@@ -140,9 +140,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 836.0,
    "per_liter_shpd": 490.0,
    "per_ltr": "2 LTR",
-   "shipped_ltr": 586.0,
-   "shipped_units": 293.0,
-   "shipped_value": 287140.0,
+   "shipped_ltr": 640.0,
+   "shipped_units": 320.0,
+   "shipped_value": 313600.0,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -152,9 +152,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 745.0,
    "per_liter_shpd": 380.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 540.0,
-   "shipped_units": 108.0,
-   "shipped_value": 205200.0,
+   "shipped_ltr": 605.0,
+   "shipped_units": 121.0,
+   "shipped_value": 229900.0,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -164,9 +164,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 844.0,
    "per_liter_shpd": 385.0,
    "per_ltr": "2 LTR",
-   "shipped_ltr": 592.0,
-   "shipped_units": 296.0,
-   "shipped_value": 227920.0,
+   "shipped_ltr": 660.0,
+   "shipped_units": 330.0,
+   "shipped_value": 254100.0,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -176,9 +176,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 573.0,
    "per_liter_shpd": 820.0,
    "per_ltr": "250 MLS",
-   "shipped_ltr": 535.5,
-   "shipped_units": 2142.0,
-   "shipped_value": 439110.0,
+   "shipped_ltr": 618.75,
+   "shipped_units": 2475.0,
+   "shipped_value": 507375.0,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -188,9 +188,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 272.0,
    "per_liter_shpd": 710.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 131.0,
-   "shipped_units": 131.0,
-   "shipped_value": 93010.0,
+   "shipped_ltr": 141.0,
+   "shipped_units": 141.0,
+   "shipped_value": 100110.0,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -200,9 +200,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 185.0,
    "per_liter_shpd": 210.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 155.0,
-   "shipped_units": 31.0,
-   "shipped_value": 32550.0,
+   "shipped_ltr": 165.0,
+   "shipped_units": 33.0,
+   "shipped_value": 34650.0,
    "sub_category": "SO OLIVE"
   },
   {
@@ -249,7 +249,7 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
    "shipped_ltr": 0.0,
-   "shipped_units": 163.0,
+   "shipped_units": 180.0,
    "shipped_value": 0.0,
    "sub_category": "MINERAL WATER"
   },
@@ -296,9 +296,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 15004.0,
    "per_liter_shpd": 152.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 6123.0,
-   "shipped_units": 6123.0,
-   "shipped_value": 930696.0,
+   "shipped_ltr": 6700.0,
+   "shipped_units": 6700.0,
+   "shipped_value": 1018400.0,
    "sub_category": "GOLD"
   },
   {
@@ -308,9 +308,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 21182.0,
    "per_liter_shpd": 157.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 25242.0,
-   "shipped_units": 25242.0,
-   "shipped_value": 3962994.0,
+   "shipped_ltr": 31915.0,
+   "shipped_units": 31915.0,
+   "shipped_value": 5010655.0,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -320,9 +320,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 16578.0,
    "per_liter_shpd": 162.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 18408.0,
-   "shipped_units": 18408.0,
-   "shipped_value": 2982096.0,
+   "shipped_ltr": 22590.0,
+   "shipped_units": 22590.0,
+   "shipped_value": 3659580.0,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -332,9 +332,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 13575.0,
    "per_liter_shpd": 162.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 11885.0,
-   "shipped_units": 2377.0,
-   "shipped_value": 1925370.0,
+   "shipped_ltr": 16120.0,
+   "shipped_units": 3224.0,
+   "shipped_value": 2611440.0,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -344,9 +344,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 5455.0,
    "per_liter_shpd": 152.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 1755.0,
-   "shipped_units": 351.0,
-   "shipped_value": 266760.0,
+   "shipped_ltr": 1915.0,
+   "shipped_units": 383.0,
+   "shipped_value": 291080.0,
    "sub_category": "GOLD"
   },
   {
@@ -356,9 +356,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 4560.0,
    "per_liter_shpd": 157.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 2020.0,
-   "shipped_units": 404.0,
-   "shipped_value": 317140.0,
+   "shipped_ltr": 2225.0,
+   "shipped_units": 445.0,
+   "shipped_value": 349325.0,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -368,9 +368,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 2530.0,
    "per_liter_shpd": 155.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 1668.0,
-   "shipped_units": 1668.0,
-   "shipped_value": 258540.0,
+   "shipped_ltr": 1890.0,
+   "shipped_units": 1890.0,
+   "shipped_value": 292950.0,
    "sub_category": "RICE BRAN"
   },
   {
@@ -380,9 +380,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "last_month": 2115.0,
    "per_liter_shpd": 155.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 925.0,
-   "shipped_units": 185.0,
-   "shipped_value": 143375.0,
+   "shipped_ltr": 1015.0,
+   "shipped_units": 203.0,
+   "shipped_value": 157325.0,
    "sub_category": "RICE BRAN"
   }
  ],
@@ -392,7 +392,7 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "units": "Qty",
   "value": "Value"
  },
- "max_date": "2026-06-25",
+ "max_date": "2026-06-28",
  "month": 6,
  "previous_month": 5,
  "previous_year": 2026,
@@ -404,23 +404,23 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
  "summary": [
   {
    "item_head": "PREMIUM",
-   "per_liter_shpd": 230.4245795848301,
-   "shipped_ltr": 78642.5,
-   "shipped_units": 67533.0,
-   "shipped_value": 18121165.0
+   "per_liter_shpd": 229.68299247548075,
+   "shipped_ltr": 90005.75,
+   "shipped_units": 77148.0,
+   "shipped_value": 20672790.0
   },
   {
    "item_head": "COMMODITY",
-   "per_liter_shpd": 158.5712962690736,
-   "shipped_ltr": 68026.0,
-   "shipped_units": 54758.0,
-   "shipped_value": 10786971.0
+   "per_liter_shpd": 158.71464975702264,
+   "shipped_ltr": 84370.0,
+   "shipped_units": 67350.0,
+   "shipped_value": 13390755.0
   },
   {
    "item_head": "OTHER",
    "per_liter_shpd": 0.0,
    "shipped_ltr": 0.0,
-   "shipped_units": 166.0,
+   "shipped_units": 183.0,
    "shipped_value": 0.0
   }
  ],
@@ -432,67 +432,67 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
  },
  "summary_note": "VALUE uses SecMaster.sales_amt to match workbook DATABASE column P.",
  "summary_total": {
-  "per_liter_shpd": 197.098463541933,
-  "shipped_ltr": 146668.5,
-  "shipped_units": 122457.0,
-  "shipped_value": 28908136.0
+  "per_liter_shpd": 195.3456544272928,
+  "shipped_ltr": 174375.75,
+  "shipped_units": 144681.0,
+  "shipped_value": 34063545.0
  },
  "top_items": [
   {
    "item": "GROUNDNUT 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 51362.0,
-   "shipped_units": 51362,
-   "shipped_value": 10015590.0
+   "shipped_ltr": 58608.0,
+   "shipped_units": 58608,
+   "shipped_value": 11428560.0
   },
   {
    "item": "MUSTARD 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 25242.0,
-   "shipped_units": 25242,
-   "shipped_value": 3962994.0
+   "shipped_ltr": 31915.0,
+   "shipped_units": 31915,
+   "shipped_value": 5010655.0
   },
   {
    "item": "SUNFLOWER 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 18408.0,
-   "shipped_units": 18408,
-   "shipped_value": 2982096.0
-  },
-  {
-   "item": "GROUNDNUT 5L",
-   "item_head": "PREMIUM",
-   "shipped_ltr": 12800.0,
-   "shipped_units": 2560,
-   "shipped_value": 2496000.0
+   "shipped_ltr": 22590.0,
+   "shipped_units": 22590,
+   "shipped_value": 3659580.0
   },
   {
    "item": "SUNFLOWER 5L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 11885.0,
-   "shipped_units": 2377,
-   "shipped_value": 1925370.0
+   "shipped_ltr": 16120.0,
+   "shipped_units": 3224,
+   "shipped_value": 2611440.0
+  },
+  {
+   "item": "GROUNDNUT 5L",
+   "item_head": "PREMIUM",
+   "shipped_ltr": 15015.0,
+   "shipped_units": 3003,
+   "shipped_value": 2927925.0
   },
   {
    "item": "GOLD 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 6123.0,
-   "shipped_units": 6123,
-   "shipped_value": 930696.0
+   "shipped_ltr": 6700.0,
+   "shipped_units": 6700,
+   "shipped_value": 1018400.0
   },
   {
    "item": "EXTRA LIGHT 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 3654.0,
-   "shipped_units": 3871,
-   "shipped_value": 1935500.0
+   "shipped_ltr": 4085.0,
+   "shipped_units": 4333,
+   "shipped_value": 2166500.0
   },
   {
    "item": "CANOLA 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 2386.0,
-   "shipped_units": 2406,
-   "shipped_value": 517290.0
+   "shipped_ltr": 2682.0,
+   "shipped_units": 2703,
+   "shipped_value": 581145.0
   }
  ],
  "value_source_note": "VALUE and DONE VALUE use SecMaster.sales_amt to match workbook DATABASE column P.",

@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-366.67,16.0,SWIGGY,2026-06-12,74988,385.003125,HYDERABAD,16.0,2026-05-30,2026-06-15,CHMPO300957,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74988,2026-06-27
-161.9,280.0,SWIGGY,2026-06-12,74989,169.99525,HYDERABAD,280.0,2026-05-30,2026-06-15,CHMPO300957,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74989,2026-06-27
+366.67,16.0,SWIGGY,2026-06-12,74988,385.003125,HYDERABAD,16.0,2026-05-30,2026-06-15,CHMPO300957,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74988,2026-06-30
+161.9,280.0,SWIGGY,2026-06-12,74989,169.99525,HYDERABAD,280.0,2026-05-30,2026-06-15,CHMPO300957,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74989,2026-06-30
 ```
 
 ---

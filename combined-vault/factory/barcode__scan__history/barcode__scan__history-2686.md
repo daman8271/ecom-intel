@@ -1,0 +1,33 @@
+---
+type: factory-barcode__scan__history
+id: 2686
+title: "History 2686"
+entity: History
+source_endpoint: /barcode/scan/history/
+company: JIVO_MART
+tags:
+  - type/factory-barcode__scan__history
+  - source/factory
+  - company/JIVO_MART
+---
+# History 2686
+
+> History from `/barcode/scan/history/` (Jivo Mart / JIVO_MART).
+
+## Fields
+- **id:** 2686
+- **scan_type:** SHIP
+- **barcode_raw:** BOX-20260611-XX-4807
+- **barcode_parsed:**
+  ```json
+  {"barcode": "BOX-20260611-XX-4807", "entity_type": "BOX"}
+  ```
+- **entity_type:** BOX
+- **entity_id:** 50211
+- **scan_result:** SUCCESS
+- **context_ref_type:** SALES_DISPATCH
+- **context_ref_id:** 101
+- **scanned_by:** 37
+- **scanned_by_name:** Sonu
+- **scanned_at:** 2026-06-22T18:46:03.479721+05:30
+- **device_info:** Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Mobile Safari/537.36

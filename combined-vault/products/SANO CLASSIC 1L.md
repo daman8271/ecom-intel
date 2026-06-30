@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0051
 product: "SANO CLASSIC 1L"
 sap_codes:
   - FG0000162
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0051` |
 | Product | SANO CLASSIC 1L |
 | JIVO SKU / SAP code | `FG0000162` |
 | canonical_sku(s) | `sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l`, `edogvef33gyxkhew` |
@@ -35,12 +37,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 559 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 559 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 589 | — | — | ⚪ OOS | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 589 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -65,3 +67,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000162`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000162]]
+

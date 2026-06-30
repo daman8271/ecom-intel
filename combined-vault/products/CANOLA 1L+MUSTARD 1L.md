@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0137
 product: "CANOLA 1L+MUSTARD 1L"
 sap_codes:
   - SL0000007
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0137` |
 | Product | CANOLA 1L+MUSTARD 1L |
 | JIVO SKU / SAP code | `SL0000007` |
 | canonical_sku(s) | `edoghesnhffugqb9`, `jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-1l`, `qwrgg9uacyscuxk9`, `jivo-kachi-ghani-mustard-oil-cold-pressed-canola-oil-1l-each-2l` |

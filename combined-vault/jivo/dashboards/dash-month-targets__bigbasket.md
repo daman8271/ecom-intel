@@ -20,45 +20,45 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
 {
  "data": [
   {
-   "achieved_pct": 0.6023,
+   "achieved_pct": 0.7378,
    "created_at": "2026-06-04T08:29:25.101910+00:00",
-   "date": "2026-06-25",
-   "done_ltrs": 7227.0,
-   "done_value": 1108382.6,
-   "est_ltr": 8672.4,
-   "est_ltr_pct": 0.7227,
-   "est_value": 1330059.12,
+   "date": "2026-06-28",
+   "done_ltrs": 8854.0,
+   "done_value": 1357885.5,
+   "est_ltr": 9486.43,
+   "est_ltr_pct": 0.7905,
+   "est_value": 1454877.32,
    "format": "BIG BASKET",
-   "growth": -3159.6,
-   "growth_pct": -0.267,
+   "growth": -2345.57,
+   "growth_pct": -0.1982,
    "id": 45,
    "item_head": "COMMODITY",
    "last_month": 11832.0,
    "month": 6,
    "targets": 12000.0,
    "type": "B2B",
-   "updated_at": "2026-06-26T05:29:55.379666+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
-   "achieved_pct": 0.4134,
+   "achieved_pct": 0.4594,
    "created_at": "2026-06-04T08:29:14.424517+00:00",
-   "date": "2026-06-25",
-   "done_ltrs": 2067.0,
-   "done_value": 496886.75,
-   "est_ltr": 2480.4,
-   "est_ltr_pct": 0.4961,
-   "est_value": 596264.1,
+   "date": "2026-06-28",
+   "done_ltrs": 2297.0,
+   "done_value": 560582.2,
+   "est_ltr": 2461.07,
+   "est_ltr_pct": 0.4922,
+   "est_value": 600623.79,
    "format": "BIG BASKET",
-   "growth": -479.6,
-   "growth_pct": -0.162,
+   "growth": -498.93,
+   "growth_pct": -0.1686,
    "id": 44,
    "item_head": "PREMIUM",
    "last_month": 2960.0,
    "month": 6,
    "targets": 5000.0,
    "type": "B2B",
-   "updated_at": "2026-06-26T05:29:55.379666+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
@@ -79,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "month": 5,
    "targets": 12000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -100,7 +100,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "month": 5,
    "targets": 5000.0,
    "type": "B2B",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -121,7 +121,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "month": 4,
    "targets": 33000.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   },
   {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "month": 4,
    "targets": 5000.0,
    "type": "B2B",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   }
  ],

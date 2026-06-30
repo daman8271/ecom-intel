@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0017
 product: "SUNFLOWER 5L"
 sap_codes:
   - FG0000053
@@ -28,28 +29,29 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0017` |
 | Product | SUNFLOWER 5L |
 | JIVO SKU / SAP code | `FG0000053`, `FG0000059` |
 | canonical_sku(s) | `jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-5l`, `edogdvfwgprvttms`, `jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l`, `jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l`, `sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l` |
 | Category | [[Category - SUNFLOWER\|SUNFLOWER]] |
 | Sub-category | SUNFLOWER |
-| Brand | JIVO |
+| Brand | SANO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 5L |
 | Per-unit | 5.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1049 | 1049 | 0 | 🟦 MATCH | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-fresh]] | 1049 | 831 | -20.78 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - amazon\|amazon-now]] | 1049 | 831 | -20.78 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - bigbasket\|bigbasket]] | 1049 | 882.83 | -15.84 | 🟢 BELOW | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 1049 | 1107 | 5.53 | 🔴 ABOVE | SVD | 2026-06-28 |
-| [[Platform - zepto\|zepto]] | 1049 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 1139 | 1049 | -7.9 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-fresh]] | 1139 | 831 | -27.04 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - amazon\|amazon-now]] | 1139 | 831 | -27.04 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - bigbasket\|bigbasket]] | 1139 | 882.83 | -22.49 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 1139 | 1107 | -2.81 | 🟢 BELOW | BAU | 2026-06-29 |
+| [[Platform - zepto\|zepto]] | 1139 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -73,3 +75,16 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - SUNFLOWER]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]] · [[Platform - zepto]] · [[Platform - bigbasket]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000053`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000053]]
+- **1794 boxes:** [[box-112466]] · [[box-112467]] · [[box-112468]] … +1791 more (tag `bridge/FG0000053`)
+- **128 boxes:** [[barcode__dispatch__reports__boxes-114947]] · [[barcode__dispatch__reports__boxes-114948]] · [[barcode__dispatch__reports__boxes-114949]] … +125 more (tag `bridge/FG0000053`)
+- **41 pallets:** [[pal-1034]] · [[pal-1035]] · [[pal-1036]] … +38 more (tag `bridge/FG0000053`)
+
+**`FG0000059`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000059]]
+

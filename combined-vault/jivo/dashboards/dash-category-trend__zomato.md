@@ -66,8 +66,8 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "commodity_ltrs": 0.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 26495.0,
-   "total_ltrs": 26495.0,
+   "premium_ltrs": 34476.0,
+   "total_ltrs": 34476.0,
    "year": 2026
   }
  ],

@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,656.0,SWIGGY,2026-06-19,75976,195.0,BANGALORE,656.0,2026-06-09,2026-06-21,MBDPO19742,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75976,2026-06-27
-344.76,0.0,SWIGGY,2026-06-19,75977,361.9981429,BANGALORE,70.0,2026-06-09,2026-06-21,MBDPO19742,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75977,2026-06-27
-771.43,28.0,SWIGGY,2026-06-19,75978,810.0014286,BANGALORE,28.0,2026-06-09,2026-06-21,MBDPO19742,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75978,2026-06-27
-154.29,280.0,SWIGGY,2026-06-19,75979,162.0042857,BANGALORE,280.0,2026-06-09,2026-06-21,MBDPO19742,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75979,2026-06-27
+185.71,656.0,SWIGGY,2026-06-19,75976,195.0,BANGALORE,656.0,2026-06-09,2026-06-21,MBDPO19742,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75976,2026-06-30
+344.76,0.0,SWIGGY,2026-06-19,75977,361.9981429,BANGALORE,70.0,2026-06-09,2026-06-21,MBDPO19742,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75977,2026-06-30
+771.43,28.0,SWIGGY,2026-06-19,75978,810.0014286,BANGALORE,28.0,2026-06-09,2026-06-21,MBDPO19742,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75978,2026-06-30
+154.29,280.0,SWIGGY,2026-06-19,75979,162.0042857,BANGALORE,280.0,2026-06-09,2026-06-21,MBDPO19742,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75979,2026-06-30
 ```
 
 ---

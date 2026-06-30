@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,16.0,SWIGGY,2026-06-10,75586,499.999375,JAIPUR,16.0,2026-06-04,2026-06-12,JPAPO55039,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75586,2026-06-27
-144.76,140.0,SWIGGY,2026-06-10,75587,151.9980714,JAIPUR,140.0,2026-06-04,2026-06-12,JPAPO55039,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75587,2026-06-27
-771.43,0.0,SWIGGY,2026-06-10,75588,810.0025,JAIPUR,4.0,2026-06-04,2026-06-12,JPAPO55039,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75588,2026-06-27
+476.19,16.0,SWIGGY,2026-06-10,75586,499.999375,JAIPUR,16.0,2026-06-04,2026-06-12,JPAPO55039,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75586,2026-06-30
+144.76,140.0,SWIGGY,2026-06-10,75587,151.9980714,JAIPUR,140.0,2026-06-04,2026-06-12,JPAPO55039,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75587,2026-06-30
+771.43,0.0,SWIGGY,2026-06-10,75588,810.0025,JAIPUR,4.0,2026-06-04,2026-06-12,JPAPO55039,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75588,2026-06-30
 ```
 
 ---

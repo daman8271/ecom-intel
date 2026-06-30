@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,0.0,SWIGGY,,59979,550.000625,CHENNAI,16.0,2025-12-30,2026-01-16,JCNPO234909,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59979,2026-06-27
-138.1,0.0,SWIGGY,,59980,145.0048333,CHENNAI,60.0,2025-12-30,2026-01-16,JCNPO234909,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59980,2026-06-27
-152.38,0.0,SWIGGY,,59981,159.999,CHENNAI,20.0,2025-12-30,2026-01-16,JCNPO234909,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59981,2026-06-27
+523.81,0.0,SWIGGY,,59979,550.000625,CHENNAI,16.0,2025-12-30,2026-01-16,JCNPO234909,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59979,2026-06-30
+138.1,0.0,SWIGGY,,59980,145.0048333,CHENNAI,60.0,2025-12-30,2026-01-16,JCNPO234909,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59980,2026-06-30
+152.38,0.0,SWIGGY,,59981,159.999,CHENNAI,20.0,2025-12-30,2026-01-16,JCNPO234909,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59981,2026-06-30
 ```
 
 ---

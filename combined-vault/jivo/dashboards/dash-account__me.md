@@ -18,9 +18,9 @@ Up: [[dashboards-index]]
 ```json
 {
  "user": {
-  "created_at": "2026-05-28T17:52:46.065314+05:30",
-  "email": "ecom4@jivo.in",
-  "first_name": "Punkirat",
+  "created_at": "2026-06-27T15:29:20.498732+05:30",
+  "email": "dp605702@jivo.in",
+  "first_name": "Daman",
   "groups": [
    "Super Admin",
    "Platform Admin",
@@ -28,16 +28,16 @@ Up: [[dashboards-index]]
    "Dispatch Operator",
    "Finance Analyst",
    "Viewer",
+   "Uploader",
    "Blinkit User",
    "Zepto User",
    "JioMart User",
    "Amazon User",
    "BigBasket User",
    "Swiggy User",
-   "Flipkart User",
-   "Uploader"
+   "Flipkart User"
   ],
-  "id": 18,
+  "id": 35,
   "is_active": true,
   "is_staff": true,
   "is_superuser": true,

@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,0.0,SWIGGY,,60682,219.99625,LUCKNOW,16.0,2026-01-08,2026-01-22,LKOPO148951,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60682,2026-06-27
-138.1,0.0,SWIGGY,,60683,145.0048333,LUCKNOW,60.0,2026-01-08,2026-01-22,LKOPO148951,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60683,2026-06-27
-690.48,0.0,SWIGGY,,60684,725.00375,LUCKNOW,16.0,2026-01-08,2026-01-22,LKOPO148951,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60684,2026-06-27
-761.91,0.0,SWIGGY,,60685,800.005,LUCKNOW,12.0,2026-01-08,2026-01-22,LKOPO148951,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60685,2026-06-27
+209.52,0.0,SWIGGY,,60682,219.99625,LUCKNOW,16.0,2026-01-08,2026-01-22,LKOPO148951,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60682,2026-06-30
+138.1,0.0,SWIGGY,,60683,145.0048333,LUCKNOW,60.0,2026-01-08,2026-01-22,LKOPO148951,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60683,2026-06-30
+690.48,0.0,SWIGGY,,60684,725.00375,LUCKNOW,16.0,2026-01-08,2026-01-22,LKOPO148951,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60684,2026-06-30
+761.91,0.0,SWIGGY,,60685,800.005,LUCKNOW,12.0,2026-01-08,2026-01-22,LKOPO148951,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60685,2026-06-30
 ```
 
 ---

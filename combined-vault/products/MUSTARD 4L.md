@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0107
 product: "MUSTARD 4L"
 sap_codes:
   - FG0000302
@@ -23,6 +24,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0107` |
 | Product | MUSTARD 4L |
 | JIVO SKU / SAP code | `FG0000302` |
 | canonical_sku(s) | `jivo-premium-cold-pressed-kachi-ghani-mustard-oil-4-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-4l`, `edohgwu9wapbehwk`, `jivo-cold-pressed-pure-cooking-mustard-oil-can-4l` |
@@ -35,12 +37,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 799 | — | — | ⚪ OOS | SVD | 2026-06-28 |
-| [[Platform - flipkart\|flipkart]] | 799 | — | — | ⚪ OOS | SVD | 2026-06-28 |
+| [[Platform - amazon\|amazon]] | 839 | — | — | ⚪ OOS | BAU | 2026-06-29 |
+| [[Platform - flipkart\|flipkart]] | 839 | — | — | ⚪ OOS | BAU | 2026-06-29 |
 | [[Platform - flipkart\|flipkart-minutes]] | 839 | — | — | ⚪ OOS | BAU | 2026-06-23 |
 
 ## JIVO lens
@@ -65,3 +67,10 @@ Cross-vault fusion by name / SKU match:
 - **Category:** [[Category - MUSTARD]]
 - **TIER:** [[Tier - Commodity]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
+
+## Factory lens (Jivo Mart manufacturing / supply)
+> Where this product's SAP item code(s) appear in the JIVO_MART factory (`ji.jivo.in`) — gate, traceability, QC, dispatch. Source: `factory/`.
+
+**`FG0000302`** — referenced by factory records:
+- **1 oitm:** [[oitm-FG0000302]]
+

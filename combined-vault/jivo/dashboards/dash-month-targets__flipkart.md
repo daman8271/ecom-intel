@@ -20,45 +20,45 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
 {
  "data": [
   {
-   "achieved_pct": 0.1383,
+   "achieved_pct": 0.1589,
    "created_at": "2026-06-04T08:31:46.309194+00:00",
-   "date": "2026-06-24",
-   "done_ltrs": 4840.0,
-   "done_value": 979761.0,
-   "est_ltr": 6050.0,
-   "est_ltr_pct": 0.1729,
-   "est_value": 1224701.25,
+   "date": "2026-06-27",
+   "done_ltrs": 5563.0,
+   "done_value": 1105186.0,
+   "est_ltr": 6181.11,
+   "est_ltr_pct": 0.1766,
+   "est_value": 1227984.44,
    "format": "FLIPKART",
-   "growth": -5839.53,
-   "growth_pct": -0.4911,
+   "growth": -5708.42,
+   "growth_pct": -0.4801,
    "id": 47,
    "item_head": "COMMODITY",
    "last_month": 11889.53,
    "month": 6,
    "targets": 35000.0,
    "type": "B2C",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
-   "achieved_pct": 0.5778,
+   "achieved_pct": 0.6525,
    "created_at": "2026-06-04T08:31:39.631496+00:00",
-   "date": "2026-06-24",
-   "done_ltrs": 14446.0,
-   "done_value": 4822709.0,
-   "est_ltr": 18057.5,
-   "est_ltr_pct": 0.7223,
-   "est_value": 6028386.25,
+   "date": "2026-06-27",
+   "done_ltrs": 16312.6,
+   "done_value": 5424067.0,
+   "est_ltr": 18125.11,
+   "est_ltr_pct": 0.725,
+   "est_value": 6026741.11,
    "format": "FLIPKART",
-   "growth": -14402.65,
-   "growth_pct": -0.4437,
+   "growth": -14335.04,
+   "growth_pct": -0.4416,
    "id": 46,
    "item_head": "PREMIUM",
    "last_month": 32460.15,
    "month": 6,
    "targets": 25000.0,
    "type": "B2C",
-   "updated_at": "2026-06-26T05:43:32.516507+00:00",
+   "updated_at": "2026-06-29T06:40:26.004404+00:00",
    "year": 2026
   },
   {
@@ -79,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "month": 5,
    "targets": 25000.0,
    "type": "B2C",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -100,7 +100,7 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "month": 5,
    "targets": 60000.0,
    "type": "B2C",
-   "updated_at": "2026-06-25T09:34:15.131195+00:00",
+   "updated_at": "2026-06-27T11:13:44.569521+00:00",
    "year": 2026
   },
   {
@@ -121,7 +121,7 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "month": 4,
    "targets": 56000.0,
    "type": "B2C",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   },
   {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "month": 4,
    "targets": 34000.0,
    "type": "B2C",
-   "updated_at": "2026-06-24T07:22:51.958764+00:00",
+   "updated_at": "2026-06-27T11:14:04.334913+00:00",
    "year": 2026
   }
  ],

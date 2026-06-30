@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,16.0,SWIGGY,2025-09-23,51677,529.998125,PUNE,16.0,2025-09-09,2025-10-10,CPDPO181158,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51677,2026-06-27
-114.29,280.0,SWIGGY,2025-09-23,51678,120.0042857,PUNE,280.0,2025-09-09,2025-10-10,CPDPO181158,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51678,2026-06-27
+504.76,16.0,SWIGGY,2025-09-23,51677,529.998125,PUNE,16.0,2025-09-09,2025-10-10,CPDPO181158,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51677,2026-06-30
+114.29,280.0,SWIGGY,2025-09-23,51678,120.0042857,PUNE,280.0,2025-09-09,2025-10-10,CPDPO181158,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51678,2026-06-30
 ```
 
 ---

@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0146
 product: "RICE BRAN 1L + 1L"
 category: "RICE BRAN"
 tier: COMMODITY
@@ -19,6 +20,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0146` |
 | Product | RICE BRAN 1L + 1L |
 | JIVO SKU / SAP code | — |
 | canonical_sku(s) | `edohbh2fp9es6gga` |
@@ -28,11 +30,11 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-28).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-29).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - flipkart\|flipkart]] | 369 | 403 | 9.21 | 🔴 ABOVE | SVD | 2026-06-28 |
+| [[Platform - flipkart\|flipkart]] | 389 | 403 | 3.6 | 🔴 ABOVE | BAU | 2026-06-29 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

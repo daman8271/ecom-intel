@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po`, embedded once here (verbatim, full column
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-2500.0,,ZOMATO,,14336,2625.0,Gurugram,30.0,2026-02-25,2026-02-27,ZHPHR26-PO-296512,,164406,"Jivo - Canola Refined Oil, 15 L Tin",CANCELLED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po:14336,2026-06-27
+2500.0,,ZOMATO,,14336,2625.0,Gurugram,30.0,2026-02-25,2026-02-27,ZHPHR26-PO-296512,,164406,"Jivo - Canola Refined Oil, 15 L Tin",CANCELLED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po:14336,2026-06-30
 ```
 
 ---

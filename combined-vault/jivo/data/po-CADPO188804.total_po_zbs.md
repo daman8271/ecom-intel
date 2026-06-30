@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,,64681,1499.998889,AHMEDABAD,9.0,2026-03-02,2026-03-11,CADPO188804,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64681,2026-06-27
-209.52,0.0,SWIGGY,,64682,219.9961806,AHMEDABAD,144.0,2026-03-02,2026-03-11,CADPO188804,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64682,2026-06-27
-819.05,0.0,SWIGGY,,64683,860.0025,AHMEDABAD,8.0,2026-03-02,2026-03-11,CADPO188804,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64683,2026-06-27
-2619.05,0.0,SWIGGY,,64684,2750.0025,AHMEDABAD,4.0,2026-03-02,2026-03-11,CADPO188804,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64684,2026-06-27
+1428.57,0.0,SWIGGY,,64681,1499.998889,AHMEDABAD,9.0,2026-03-02,2026-03-11,CADPO188804,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64681,2026-06-30
+209.52,0.0,SWIGGY,,64682,219.9961806,AHMEDABAD,144.0,2026-03-02,2026-03-11,CADPO188804,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64682,2026-06-30
+819.05,0.0,SWIGGY,,64683,860.0025,AHMEDABAD,8.0,2026-03-02,2026-03-11,CADPO188804,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64683,2026-06-30
+2619.05,0.0,SWIGGY,,64684,2750.0025,AHMEDABAD,4.0,2026-03-02,2026-03-11,CADPO188804,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64684,2026-06-30
 ```
 
 ---

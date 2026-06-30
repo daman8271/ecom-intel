@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-397.14,0.0,SWIGGY,,54418,416.996875,HYDERABAD,16.0,2025-10-20,2025-11-05,CHMPO214238,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54418,2026-06-27
+397.14,0.0,SWIGGY,,54418,416.996875,HYDERABAD,16.0,2025-10-20,2025-11-05,CHMPO214238,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54418,2026-06-30
 ```
 
 ---

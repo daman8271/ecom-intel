@@ -1,5 +1,6 @@
 ---
 type: product
+jid: JID-0140
 product: "CANOLA 1L+SOYABEAN 1L+MUSTARD 1L"
 sap_codes:
   - SL0000212
@@ -21,6 +22,7 @@ Up: [[Home]]
 ## Identity
 | Field | Value |
 |---|---|
+| Internal ID (JID) | `JID-0140` |
 | Product | CANOLA 1L+SOYABEAN 1L+MUSTARD 1L |
 | JIVO SKU / SAP code | `SL0000212` |
 | canonical_sku(s) | `edoggy5kcr8s7shk`, `qwrgjfz8m4eggs5f` |

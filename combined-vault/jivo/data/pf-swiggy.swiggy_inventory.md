@@ -18,7 +18,7 @@ Canonical raw rows (1) for `swiggy_inventory`, embedded once here (verbatim, ful
 
 ```csv
 business_category,city,days_on_hand,facility_name,id,inventory_date,l1,l2,open_po_quantity,open_pos,potential_gmv_loss,shelf_life_days,sku_code,sku_description,storage_type,uploaded_at,warehouse_qty_available,__first_seen,__key,__last_seen
-BusinessCategory,City,0,FacilityName,62051,2026-04-17,L1,L2,0,0,0.0,0,SkuCode,SkuDescription,StorageType,2026-04-17T05:19:32.770492Z,0,2026-06-27,swiggy_inventory:62051,2026-06-27
+BusinessCategory,City,0,FacilityName,62051,2026-04-17,L1,L2,0,0,0.0,0,SkuCode,SkuDescription,StorageType,2026-04-17T05:19:32.770492Z,0,2026-06-27,swiggy_inventory:62051,2026-06-30
 ```
 
 ---

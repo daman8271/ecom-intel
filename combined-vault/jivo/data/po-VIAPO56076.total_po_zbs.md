@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,0.0,SWIGGY,,67941,550.000625,VIZAG,16.0,2026-04-02,2026-04-18,VIAPO56076,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:67941,2026-06-27
-761.9,0.0,SWIGGY,,67942,799.9954167,VIZAG,24.0,2026-04-02,2026-04-18,VIAPO56076,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:67942,2026-06-27
+523.81,0.0,SWIGGY,,67941,550.000625,VIZAG,16.0,2026-04-02,2026-04-18,VIAPO56076,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:67941,2026-06-30
+761.9,0.0,SWIGGY,,67942,799.9954167,VIZAG,24.0,2026-04-02,2026-04-18,VIAPO56076,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:67942,2026-06-30
 ```
 
 ---

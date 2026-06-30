@@ -61,6 +61,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
  "by_po": [
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Bhiwandi",
    "open_ltrs": 1200.0,
    "open_pos": 1,
    "open_units": 880.0,
@@ -73,6 +74,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Bhiwandi",
    "open_ltrs": 450.0,
    "open_pos": 1,
    "open_units": 30.0,
@@ -85,6 +87,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "Hoskate Bangalore",
    "open_ltrs": 440.0,
    "open_pos": 1,
    "open_units": 280.0,

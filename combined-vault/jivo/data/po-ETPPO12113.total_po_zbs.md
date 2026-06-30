@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,16.0,SWIGGY,2025-12-26,58498,219.99625,NOIDA,16.0,2025-12-12,2026-01-04,ETPPO12113,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58498,2026-06-27
+209.52,16.0,SWIGGY,2025-12-26,58498,219.99625,NOIDA,16.0,2025-12-12,2026-01-04,ETPPO12113,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58498,2026-06-30
 ```
 
 ---

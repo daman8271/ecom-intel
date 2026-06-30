@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-149.52,360.0,SWIGGY,2026-06-24,75508,156.9961944,BANGALORE,360.0,2026-06-02,2026-06-14,MBJPO71623,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75508,2026-06-27
-154.29,120.0,SWIGGY,2026-06-24,75509,162.0043125,BANGALORE,160.0,2026-06-02,2026-06-14,MBJPO71623,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75509,2026-06-27
+149.52,360.0,SWIGGY,2026-06-24,75508,156.9961944,BANGALORE,360.0,2026-06-02,2026-06-14,MBJPO71623,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75508,2026-06-30
+154.29,120.0,SWIGGY,2026-06-24,75509,162.0043125,BANGALORE,160.0,2026-06-02,2026-06-14,MBJPO71623,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75509,2026-06-30
 ```
 
 ---

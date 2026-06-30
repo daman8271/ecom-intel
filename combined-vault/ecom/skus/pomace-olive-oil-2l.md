@@ -5,8 +5,8 @@ display_name: Pomace Olive Oil (2 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-28
-observations: 53
+last_seen: 2026-06-29
+observations: 54
 min_price: 1078
 max_price: 1100
 latest_price: 1099
@@ -24,10 +24,10 @@ Up: [[skus-index]]
 ## Sold on
 - [[bigbasket]] — latest ₹1099 (24.2% off)
 
-## Runs that observed this SKU (53)
-[[bigbasket-2026-06-28-1200]] · [[bigbasket-2026-06-27-1535]] · [[bigbasket-2026-06-26-1554]] · [[bigbasket-2026-06-25-1613]] · [[bigbasket-2026-06-24-1548]] · [[bigbasket-2026-06-23-1554]] · [[bigbasket-2026-06-22-1646]] · [[bigbasket-2026-06-21-1636]] · [[bigbasket-2026-06-20-1629]] · [[bigbasket-2026-06-19-1626]] · [[bigbasket-2026-06-18-1630]] · [[bigbasket-2026-06-17-1634]] · [[bigbasket-2026-06-16-1228]] · [[bigbasket-2026-06-16-0852]] · [[bigbasket-2026-06-15-1230]] · [[bigbasket-2026-06-15-0857]] · [[bigbasket-2026-06-14-1235]] · [[bigbasket-2026-06-14-0858]] · [[bigbasket-2026-06-13-1223]] · [[bigbasket-2026-06-13-0852]] · [[bigbasket-2026-06-12-1242]] · [[bigbasket-2026-06-12-0900]] · [[bigbasket-2026-06-11-1236]] · [[bigbasket-2026-06-11-0859]] · [[bigbasket-2026-06-10-1207]] · [[bigbasket-2026-06-10-0900]] · [[bigbasket-2026-06-09-1158]] · [[bigbasket-2026-06-09-0856]] · [[bigbasket-2026-06-08-1153]] · [[bigbasket-2026-06-08-0858]] · [[bigbasket-2026-06-07-1157]] · [[bigbasket-2026-06-07-0906]] · [[bigbasket-2026-06-06-1200]] · [[bigbasket-2026-06-06-1159]] · [[bigbasket-2026-06-06-1158]] · [[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1057]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (54)
+[[bigbasket-2026-06-29-1200]] · [[bigbasket-2026-06-28-1200]] · [[bigbasket-2026-06-27-1535]] · [[bigbasket-2026-06-26-1554]] · [[bigbasket-2026-06-25-1613]] · [[bigbasket-2026-06-24-1548]] · [[bigbasket-2026-06-23-1554]] · [[bigbasket-2026-06-22-1646]] · [[bigbasket-2026-06-21-1636]] · [[bigbasket-2026-06-20-1629]] · [[bigbasket-2026-06-19-1626]] · [[bigbasket-2026-06-18-1630]] · [[bigbasket-2026-06-17-1634]] · [[bigbasket-2026-06-16-1228]] · [[bigbasket-2026-06-16-0852]] · [[bigbasket-2026-06-15-1230]] · [[bigbasket-2026-06-15-0857]] · [[bigbasket-2026-06-14-1235]] · [[bigbasket-2026-06-14-0858]] · [[bigbasket-2026-06-13-1223]] · [[bigbasket-2026-06-13-0852]] · [[bigbasket-2026-06-12-1242]] · [[bigbasket-2026-06-12-0900]] · [[bigbasket-2026-06-11-1236]] · [[bigbasket-2026-06-11-0859]] · [[bigbasket-2026-06-10-1207]] · [[bigbasket-2026-06-10-0900]] · [[bigbasket-2026-06-09-1158]] · [[bigbasket-2026-06-09-0856]] · [[bigbasket-2026-06-08-1153]] · [[bigbasket-2026-06-08-0858]] · [[bigbasket-2026-06-07-1157]] · [[bigbasket-2026-06-07-0906]] · [[bigbasket-2026-06-06-1200]] · [[bigbasket-2026-06-06-1159]] · [[bigbasket-2026-06-06-1158]] · [[bigbasket-2026-06-06-0701]] · [[bigbasket-2026-06-06-0700]] · [[bigbasket-2026-06-06-0659]] · [[bigbasket-2026-06-05-1821]] · [[bigbasket-2026-06-05-1315]] · [[bigbasket-2026-06-05-1057]] · [[bigbasket-2026-06-05-1056]] · [[bigbasket-2026-06-05-0429]] · [[bigbasket-2026-06-05-0115]] · [[bigbasket-2026-06-05-0114]] · [[bigbasket-2026-06-05-0112]] · [[bigbasket-2026-06-04-1918]] · [[bigbasket-2026-06-04-1909]] · [[bigbasket-2026-06-04-1902]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (53 observations)
+## Price history (54 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -84,6 +84,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-26-1554,2026-06-26,bigbasket,All India,-,1099,1449,24.2,1
 2026-06-27-1535,2026-06-27,bigbasket,All India,-,1099,1449,24.2,1
 2026-06-28-1200,2026-06-28,bigbasket,All India,-,1099,1449,24.2,1
+2026-06-29-1200,2026-06-29,bigbasket,All India,-,1099,1449,24.2,1
 ```
 
 ---

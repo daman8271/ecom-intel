@@ -21,20 +21,20 @@ Up: [[dashboards-index]]
  "month": "JUNE",
  "platforms": [
   {
-   "delivered_ltrs": 125838.0,
+   "delivered_ltrs": 144207.0,
    "format": "SWIGGY"
   },
   {
-   "delivered_ltrs": 88599.2,
+   "delivered_ltrs": 102475.2,
    "format": "ZEPTO"
+  },
+  {
+   "delivered_ltrs": 34476.0,
+   "format": "ZOMATO"
   },
   {
    "delivered_ltrs": 30198.0,
    "format": "BLINKIT"
-  },
-  {
-   "delivered_ltrs": 26495.0,
-   "format": "ZOMATO"
   },
   {
    "delivered_ltrs": 21246.0,
@@ -49,7 +49,7 @@ Up: [[dashboards-index]]
    "format": "CITY MALL"
   },
   {
-   "delivered_ltrs": 128446.5,
+   "delivered_ltrs": 161495.5,
    "format": "AMAZON"
   }
  ],

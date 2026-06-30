@@ -233,6 +233,10 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-flipkart_grocery]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "MUSTARD KACCHI GHANI"
    },
    {
@@ -374,6 +378,10 @@ Up: [[dashboards-index]] · [[2026-04]] · [[pf-flipkart_grocery]]
    {
     "category": "SPICES",
     "sub_category": "SAFFRON"
+   },
+   {
+    "category": "SUNFLOWER",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
    },
    {
     "category": "SUNFLOWER",
