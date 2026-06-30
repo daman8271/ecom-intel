@@ -18,9 +18,11 @@ COMP_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT="$(cd "$COMP_DIR/../.." && pwd)"
 PDIR="$ROOT/platforms/$PLATFORM"
 SCRAPER="$PDIR/scrape.js"
+# amazon-now's competitor-enabled scraper is scrape.ctnow.js (scrape.js there is the frozen old one)
+[ "$PLATFORM" = "amazon-now" ] && SCRAPER="$PDIR/scrape.ctnow.js"
 
 [ -d "$PDIR" ] || { echo "[run_competitor] no such platform: $PLATFORM ($PDIR)" >&2; exit 1; }
-[ -f "$SCRAPER" ] || { echo "[run_competitor] no scrape.js for $PLATFORM ($SCRAPER)" >&2; exit 1; }
+[ -f "$SCRAPER" ] || { echo "[run_competitor] no scraper for $PLATFORM ($SCRAPER)" >&2; exit 1; }
 
 # Competitor mode + geography. PINCODES_FILE is overridable but defaults to the ~60-pin
 # competitor set; normalise to an absolute path (the scraper runs with cwd=$PDIR).
@@ -41,6 +43,19 @@ LOG="$ROOT/logs/competitor-${PLATFORM}-${RUN_ID}.log"
 echo "[run_competitor] platform=$PLATFORM COMPETITOR_MODE=1 date=$DATE_IST" >&2
 echo "[run_competitor] PINCODES_FILE=$PINCODES_FILE" >&2
 echo "[run_competitor] scraping (log: $LOG) ..." >&2
+
+# Amazon Now/Fresh set an account-GLOBAL delivery location, so hold the SAME per-account lock
+# the JIVO sweep uses (.amazon-now.lock / .amazon-fresh.lock). This guarantees a competitor run
+# can NEVER co-scrape the JIVO Amazon run (which would corrupt the shared account location for
+# both). Normally free — competitor fires only after the noon JIVO sweep completes — so this is
+# a safety net; if the JIVO Amazon run is somehow still active, we skip rather than contend.
+case "$PLATFORM" in
+  amazon-now|amazon-fresh)
+    exec 7>"$ROOT/.${PLATFORM}.lock"
+    flock -w 2700 7 || { echo "[run_competitor] $PLATFORM account lock busy (JIVO Amazon running?) — skipping" >&2; exit 0; }
+    echo "[run_competitor] $PLATFORM account lock acquired" >&2
+    ;;
+esac
 
 # Run the scraper from the platform dir so it resolves its own node_modules (matches run.sh).
 ( cd "$PDIR" && node "$SCRAPER" ) 2> "$LOG"

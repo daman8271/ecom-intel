@@ -34,7 +34,7 @@ export PINCODES_FILE="$ROOT/tools/competitor/pincodes_25.json"
 DATE_IST="$(TZ='Asia/Kolkata' date +%F)"
 echo "[comp-daily] START $(TZ='Asia/Kolkata' date '+%F %H:%M') date=$DATE_IST pins=$PINCODES_FILE"
 
-for P in blinkit zepto; do
+for P in blinkit zepto amazon-now amazon-fresh; do
   echo "[comp-daily] --- $P ---"
   if bash "$ROOT/tools/competitor/run_competitor.sh" "$P"; then
     echo "[comp-daily] $P ok"
