@@ -97,4 +97,26 @@ else
   echo "[$(date '+%F %T')] deadline_sweep($SLOT): downstream chain skipped (slot=$SLOT rc=$RUN_ALL_RC downstream=${SWEEP_DOWNSTREAM:-1})"
 fi
 
+# ---- EVENT-DRIVEN SITE REFRESH (goal #40, 2026-07-01) -----------------------
+# SITE-REFRESH-HOOK: the instant the noon sweep lands today's data (and the
+# competitor/data-bank chain above), regenerate + redeploy the 3 public
+# availability sites (ecom-availability-app, coverage-report-site,
+# eloo-bangalore-report) from the fresh ledger/history. Event-driven off the sweep
+# finishing — no fixed clock — so it auto-slides if the sweep runs late. Gated:
+# noon slot, production (no test overrides), sweep rc=0. Best-effort: can NEVER
+# change the sweep's exit. Kill switch SWEEP_SITES=0. refresh_sites.sh has its own
+# data-ready gate + Telegram notify on success/skip/fail.
+if [ "${SWEEP_SITES:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+   && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
+   && [ "$RUN_ALL_RC" = "0" ] && [ -x ./tools/sites/refresh_sites.sh ]; then
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): sweep DONE -> firing site refresh+deploy"
+  if ./tools/sites/refresh_sites.sh >> logs/sites_refresh.cron.log 2>&1; then
+    echo "[$(date '+%F %T')] deadline_sweep($SLOT): site refresh OK (3 sites redeployed)"
+  else
+    echo "[$(date '+%F %T')] deadline_sweep($SLOT): site refresh non-zero — see logs/sites_refresh.cron.log (sweep unaffected)"
+  fi
+else
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): site refresh skipped (slot=$SLOT rc=$RUN_ALL_RC sites=${SWEEP_SITES:-1})"
+fi
+
 exit "$RUN_ALL_RC"
