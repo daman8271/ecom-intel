@@ -37,7 +37,7 @@ Up: [[Home]]
 - [[CANOLA 3L]] — ref ₹799 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
-- [[CANOLA 5L]] — ref ₹1299 / live ₹1353 (🔴 ABOVE)
+- [[CANOLA 5L]] — ref ₹1299 / live ₹1270 (🟢 BELOW)
 - [[CANOLA 5L + SOYABEAN 5L]]
 - [[CANOLA 5L+ SOYABEAN 1L]]
 - [[CHIA SEEDS 200GM]] — ref ₹99 / live ₹— (⚪ OOS)
@@ -79,7 +79,7 @@ Up: [[Home]]
 - [[JIVO POMACE 1+1L]] — ref ₹869 / live ₹865 (🟢 BELOW)
 - [[JIVO POMACE 1L]] — ref ₹439 / live ₹576 (🔴 ABOVE)
 - [[JIVO POMACE 2L]] — ref ₹869 / live ₹865 (🟢 BELOW)
-- [[JIVO POMACE 5L]] — ref ₹2169 / live ₹— (⚪ OOS)
+- [[JIVO POMACE 5L]] — ref ₹2169 / live ₹1866 (🟢 BELOW)
 - [[MUSTARD 1+1L]] — ref ₹429 / live ₹412 (🟢 BELOW)
 - [[MUSTARD 1L]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹629 / live ₹— (⚪ OOS)

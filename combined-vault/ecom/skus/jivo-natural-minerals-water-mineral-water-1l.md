@@ -5,8 +5,8 @@ display_name: Jivo Natural Minerals Water Mineral Water 1l
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-23
-last_seen: 2026-06-27
-observations: 264
+last_seen: 2026-06-29
+observations: 266
 min_price: 20
 max_price: 24
 latest_price: 22
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Natural Minerals Water Mineral Water 1l**
 
 ## Sold on
-- [[flipkart-minutes]] — latest ₹22 (26.0% off)
+- [[flipkart-minutes]] — latest ₹22 (12.0% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Chennai]] · [[Delhi]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (9)
-[[flipkart-minutes-2026-06-27-1201]] · [[flipkart-minutes-2026-06-27-0832]] · [[flipkart-minutes-2026-06-26-1213]] · [[flipkart-minutes-2026-06-26-0832]] · [[flipkart-minutes-2026-06-25-0832]] · [[flipkart-minutes-2026-06-24-1208]] · [[flipkart-minutes-2026-06-24-0832]] · [[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]]
+## Runs that observed this SKU (10)
+[[flipkart-minutes-2026-06-29-1605]] · [[flipkart-minutes-2026-06-27-1201]] · [[flipkart-minutes-2026-06-27-0832]] · [[flipkart-minutes-2026-06-26-1213]] · [[flipkart-minutes-2026-06-26-0832]] · [[flipkart-minutes-2026-06-25-0832]] · [[flipkart-minutes-2026-06-24-1208]] · [[flipkart-minutes-2026-06-24-0832]] · [[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]]
 
-## Price history (264 observations)
+## Price history (266 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -298,6 +298,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-27-1201,2026-06-27,flipkart-minutes,Pune,411028,22,30,26,0
 2026-06-27-1201,2026-06-27,flipkart-minutes,Pune,411045,22,30,26,0
 2026-06-27-1201,2026-06-27,flipkart-minutes,Pune,411047,22,30,26,0
+2026-06-29-1605,2026-06-29,flipkart-minutes,Ahmedabad,380003,22,25,12,1
+2026-06-29-1605,2026-06-29,flipkart-minutes,Ahmedabad,380004,22,25,12,1
 ```
 
 ---

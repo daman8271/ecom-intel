@@ -2,12 +2,12 @@
   "aggregate_hash_method": "sha256 over sorted list of per-file SOURCE sha256 hex digests",
   "combined_vault": "/opt/ecom-intel/combined-vault",
   "design_note": "Source vaults are copied verbatim, then a '## Related' wikilink layer is APPENDED to source notes that reference a known SKU/canonical/product/platform/category. Therefore DEST bytes EXCEED SOURCE bytes BY DESIGN. Zero-loss is proven per file: each source file's original bytes are preserved as an EXACT BYTE-PREFIX of its combined-vault copy (n_altered=n_truncated=0). 'bytes_match' is intentionally NOT claimed; the honest signal is original_prefix_preserved_all.",
-  "generated_at": "2026-06-30T00:30:46.210917+00:00",
+  "generated_at": "2026-06-30T09:42:50.474393+00:00",
   "summary": {
-    "appended_link_layer_bytes": 1989211,
-    "combined_dest_notes": 86711,
-    "dest_bytes": 615249190,
-    "ecom_source_notes": 2293,
+    "appended_link_layer_bytes": 1999452,
+    "combined_dest_notes": 87293,
+    "dest_bytes": 629791624,
+    "ecom_source_notes": 2875,
     "factory_source_notes": 49462,
     "jivo_source_notes": 34956,
     "pillars": [
@@ -15,16 +15,16 @@
       "factory",
       "jivo"
     ],
-    "source_bytes": 613259979,
+    "source_bytes": 627792172,
     "zero_loss_ok": true
   },
   "tool": "/opt/ecom-intel/bin/combined_backbone.py",
   "vaults": {
     "ecom": {
-      "appended_link_layer_bytes": 206977,
+      "appended_link_layer_bytes": 230777,
       "dest": {
-        "bytes": 178259700,
-        "count": 2293
+        "bytes": 192815693,
+        "count": 2875
       },
       "dest_path": "/opt/ecom-intel/combined-vault/ecom",
       "lossless": {
@@ -37,9 +37,9 @@
         "original_prefix_preserved_all": true
       },
       "source": {
-        "aggregate_sha256": "25c7f6e6e2c9d5d790e638f6172f4fdf09c4e68e9eb16cd992b7d92f2e91134c",
-        "bytes": 178052723,
-        "count": 2293
+        "aggregate_sha256": "7716e49f60385591155b654e8ee5f8296ed466a04dfa03cd67cb1eb22dd876fa",
+        "bytes": 192584916,
+        "count": 2875
       },
       "source_path": "/opt/ecom-intel/vault"
     },
@@ -67,9 +67,9 @@
       "source_path": "/root/jivo-factory-intel/vault"
     },
     "jivo": {
-      "appended_link_layer_bytes": 1782234,
+      "appended_link_layer_bytes": 1768675,
       "dest": {
-        "bytes": 377515895,
+        "bytes": 377502336,
         "count": 34956
       },
       "dest_path": "/opt/ecom-intel/combined-vault/jivo",
