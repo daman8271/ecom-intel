@@ -23,7 +23,7 @@ SCRAPER="scrape.js"
 # subset) — we honor it. Either way a relative PINCODES_FILE is normalized to an absolute
 # path because the scraper runs with cwd=$PDIR. Flag unset = byte-for-byte unchanged
 # (anchor pincodes.json). This NEVER touches pincodes.json (the rollback anchor).
-if [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ]; then
+if [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ] || [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; then
   if [ -n "${PINCODES_FILE:-}" ]; then
     case "$PINCODES_FILE" in /*) ;; *) PINCODES_FILE="$DIR/$PINCODES_FILE";; esac
     export PINCODES_FILE
@@ -31,7 +31,9 @@ if [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ]; 
     export PINCODES_FILE="$PDIR/pincodes.full25.json"
   elif [ "${COVERAGE_DAILY:-0}" = "1" ] && [ -f "$PDIR/pincodes.daily.json" ]; then
     # DAILY mode: only the pincodes where Jivo is actually on sale (price-tracking set).
-    # blinkit 486 / zepto 693 / flipkart-minutes 340 — refreshed by the weekly full pass.
+    # blinkit 486 / zepto 693 / flipkart-minutes 340 / amazon-fresh 881 / amazon-now 132
+    # — refreshed by the weekly full pass. Amazon runs in its OWN nightly window (not the
+    # noon chain) so its slower per-pincode scrape still reports before noon.
     export PINCODES_FILE="$PDIR/pincodes.daily.json"
   fi
   [ -n "${PINCODES_FILE:-}" ] && echo "[$RUN_ID] $P PINCODES_FILE=$PINCODES_FILE"
