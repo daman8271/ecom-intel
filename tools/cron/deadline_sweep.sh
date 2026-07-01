@@ -78,6 +78,23 @@ echo "[$(date '+%F %T')] deadline_sweep($SLOT): launching run_all.sh SWEEP_ID=$S
 ./run_all.sh
 RUN_ALL_RC=$?
 
+# ---- EAGER price-scraper today/ FIRST (non-blocking rule, goal #52 2026-07-01) --
+# price-scraper's data is ready the INSTANT run_all returns (vault_build ran inside
+# the sweep, before the batch barrier). Advance its today/ slice NOW — BEFORE the
+# competitor scrape below — so price-scraper NEVER waits behind competitor. factory +
+# ecom-app already self-advanced at ~05:00/05:30, so re-running them here is a cheap
+# byte-unchanged no-op reconcile. competitors is deliberately NOT here: it self-advances
+# from its own producer (run_daily.sh, fired next) the moment the competitor scrape
+# finishes. Self-gates on readiness; can NEVER change the sweep's exit status.
+if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+   && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
+   && [ "$RUN_ALL_RC" = "0" ] && [ -x ./bin/advance_today_section.sh ]; then
+  for _s in price-scraper factory ecom-app; do
+    ./bin/advance_today_section.sh "$_s" >> logs/build_today.cron.log 2>&1 || true
+  done
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): price-scraper today/ advanced BEFORE competitor (no longer blocks behind it)"
+fi
+
 # ---- EVENT-DRIVEN DOWNSTREAM CHAIN (replaces the old fixed 12:15 competitor +
 #      13:30 data-bank crons; goal #35, 2026-07-01) ---------------------------
 # The instant the noon price sweep finishes, the ecom price vault is freshly
@@ -105,18 +122,19 @@ else
   echo "[$(date '+%F %T')] deadline_sweep($SLOT): downstream chain skipped (slot=$SLOT rc=$RUN_ALL_RC downstream=${SWEEP_DOWNSTREAM:-1})"
 fi
 
-# ---- EAGER per-section today/ advance (instant-per-source rule) -------------
-# Each source also self-advances from its own producer (factory_refresh,
-# competitor run_daily, jivo-intel run_daily). This noon-path pass is the
-# backstop and the primary trigger for price-scraper, whose producer is
-# vault_build inside the sweep. Every call self-gates on readiness and is a
-# no-op if that slice is byte-unchanged; it can NEVER change the sweep's status.
+# ---- FINAL per-section today/ reconcile backstop ----------------------------
+# By now every slice should already be current: price-scraper advanced ABOVE
+# (before competitor), competitors self-advanced from run_daily.sh's own hook the
+# moment the scrape finished, and factory + ecom-app self-advanced at ~05:00/05:30.
+# This final pass is a pure reconcile — it re-checks all four and advances any slice
+# whose own hook didn't fire. Every call self-gates on readiness and is a no-op if
+# that slice is byte-unchanged; it can NEVER change the sweep's status.
 if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ -z "${PLATFORMS_OVERRIDE:-}" ] \
    && [ -z "${RUNNER_OVERRIDE:-}" ] && [ "$RUN_ALL_RC" = "0" ] && [ -x ./bin/advance_today_section.sh ]; then
   for _s in price-scraper competitors factory ecom-app; do
     ./bin/advance_today_section.sh "$_s" >> logs/build_today.cron.log 2>&1 || true
   done
-  echo "[$(date '+%F %T')] deadline_sweep($SLOT): eager per-section today/ advance fired for all ready sources"
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): final per-section today/ reconcile backstop done"
 fi
 
 # ---- EVENT-DRIVEN SITE REFRESH (goal #40, 2026-07-01) -----------------------
