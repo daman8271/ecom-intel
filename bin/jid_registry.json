@@ -1013,7 +1013,7 @@
         "jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml",
         "scmh3fhauzysnuab"
       ],
-      "category": "SEEDS",
+      "category": "SPICES",
       "name": "CUMIN SEEDS 100G",
       "norm": "CUMINSEEDS100G",
       "saps": [
@@ -1027,7 +1027,7 @@
         "jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na",
         "ricge89buedda5u7"
       ],
-      "category": "OTHER",
+      "category": "RICE",
       "name": "RICE 1KG",
       "norm": "RICE1KG",
       "saps": [
@@ -1447,7 +1447,7 @@
       "canons": [
         "jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml"
       ],
-      "category": "SLICED OLIVE",
+      "category": "OLIVE",
       "name": "BLACK OLIVE 470G",
       "norm": "BLACKOLIVE470G",
       "saps": [
@@ -2198,5 +2198,5 @@
   },
   "next_serial": 152,
   "prefix": "JID-",
-  "updated_at": "2026-07-01T11:18:27.522552+00:00"
+  "updated_at": "2026-07-01T15:38:24.262388+00:00"
 }
