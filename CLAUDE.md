@@ -3,7 +3,7 @@
 Operator manual. Auto-loads when you run `claude` in this directory.
 
 ## What this is
-Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for daily cron runs — **two full sweeps (12:00 + 15:00 IST; morning moved 10:00→12:00 per owner order 2026-06-06) plus an 18:00 guardian deep-dive** — with an automated end-of-run review, auto-heal guardian, self-heal, and an **Amazon canonical auto-heal** (Claude merges truncated-title stub SKUs, identity-only — LIVE 2026-06-13). Pitched to Jivo's head of e-commerce.
+Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for daily cron runs — **one deadline-aligned sweep that lands the whole batch at 12:00 noon IST, plus an 18:00 guardian deep-dive** (cut from 2×/day to 1×/day 2026-06-28) — with an automated end-of-run review, auto-heal guardian, self-heal, and an **Amazon canonical auto-heal** (Claude merges truncated-title stub SKUs, identity-only — LIVE 2026-06-13). Pitched to Jivo's head of e-commerce.
 
 ## Architecture (the rule)
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
@@ -17,8 +17,8 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── run_all.sh             # one cron sweep: all 8 live platforms SERIALLY (~2h;  removed 2026-06-06) → per-scrape guardian auto-heal → self-heal
-├── setup_cron.sh          # installs the cron (12:00+15:00 deadline sweeps, 18:00 guardian deep-dive) + sets timezone
+├── run_all.sh             # one cron sweep: the 7 live platforms SERIALLY (~2h;  removed 2026-06-06) → per-scrape guardian auto-heal → self-heal
+├── setup_cron.sh          # installs the cron (12:00 deadline sweep, 18:00 guardian deep-dive) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
 │   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/ bigbasket/  # 7 LIVE, direct
@@ -88,11 +88,11 @@ scrape is then re-evaluated by the **guardian auto-heal** (below).
 ## Cron (IST) — DEADLINE-ALIGNED (owner requirement 2026-06-06)
 > **2026-06-30: the daily batch now runs `COVERAGE_DAILY=1`** — QC platforms scrape the Jivo-priced per-pincode subsets (blinkit 486 / zepto 693 / fkm 340) instead of anchors. Amazon stays on anchors (no daily config). First-run review may flag `SUSPECT` (row-count vs old baseline; non-blocking) until baselines are rescaled.
 
-Reports must all **LAND at the slot time (12:00 + 15:00 IST)** — the morning slot moved
-10:00→12:00 per the owner's 2026-06-06 order (crontab.proposed.txt; install = lead). The
-system is **LIVE and PROVEN as of 2026-06-06**: the first two real batches landed at exactly
-10:00:00 and 15:00:00 (chain ~2h25m, barrier ~55m). Cron fires
-`tools/cron/deadline_sweep.sh <slot>` at **08:30 / 11:30** (fire = slot − 3h30m); it predicts the chain runtime
+Reports must all **LAND at the slot time (12:00 noon IST)** — the pipeline was cut from
+2×/day to **one deadline-aligned sweep** on 2026-06-28 (the 15:00 sweep + 16:00 mailer were
+retired). The deadline mechanism is **LIVE and PROVEN since 2026-06-06**: batches land at the
+slot to the second (self-aligning chain + barrier). Cron fires
+`tools/cron/deadline_sweep.sh 12:00` **early in the small hours** (predicts its lead and sleeps to land at 12:00; the doctor.crontab.txt template fires `0 4`); it predicts the chain runtime
 (`tools/cron/predict_lead.py` — p90 of last 10 per-platform durations in
 `tools/cron/durations.jsonl`, self-learning, `LEAD_MAX=12600`), sleeps to `T − lead`, then
 runs `./run_all.sh` with `DEFER_DELIVERY=1 SWEEP_ID=… SWEEP_DEADLINE=…`. run.sh then SPOOLS
@@ -101,15 +101,17 @@ each OK report (`output/.batch/<sweep>/<p>.json`) instead of curling; after the 
 all summaries + Excels in canonical order, footer with held/late. BROKEN-run owner alerts
 still send immediately. Failures fall back to immediate send (a report can be early, never
 lost). Plain `./run_all.sh` without the env = old behavior. An **18:00 daily guardian
-deep-dive** (`./tools/guardian_daily.sh`) is unchanged. Each sweep scrapes the **8 live
+deep-dive** (`./tools/guardian_daily.sh`) is unchanged. The daily sweep scrapes the **7 live
 platforms SERIALLY — one platform at a time** (commit 8ef79d4), in this order:
-flipkart-minutes, flipkart, zepto, bigbasket, amazon, amazon-fresh,
-amazon-now, **blinkit LAST** (slowest). ** was REMOVED from the chain
+flipkart-minutes, flipkart, zepto, amazon, amazon-fresh,
+amazon-now, **blinkit LAST** (slowest). **BigBasket is NOT in this serial chain — it's a
+separate pincode job (`platforms/bigbasket/run_pincode.sh`) on its own 03:00 IST cron, spooled
+into the noon batch.** ** was REMOVED from the chain
 2026-06-06** (WAF-dead, ~40m heal-retry waste per sweep; rebuild pending — owner).
-Observed chain after removal (2026-06-06, both real sweeps): **~2h25m**; p90 lead ~3h18–21m
-→ the 12:00 sweep starts ~08:41 (drifts later as the durations ledger tightens). With slots
-3h apart, the morning barrier sleep + post-batch tail overlap the afternoon chain — analysis
-+ proposed `.sweep-chain.lock` mitigation in crontab.proposed.txt's comments.
+The sweep fires early in the small hours and self-aligns so the batch lands AT 12:00 noon.
+Now that there is a single daily sweep, the old two-sweep overlap concern is moot; the
+`.sweep-chain.lock` guard remains as a harmless backstop (see crontab.proposed.txt's comments
+for the historical two-slot analysis).
 SIM testing: `PLATFORMS_OVERRIDE`/`RUNNER_OVERRIDE` trip SIM MODE in run_all.sh
 (guardian/healthcheck/vault/git all skipped — never reaches live scrapes); see
 `tools/cron/tests/`.

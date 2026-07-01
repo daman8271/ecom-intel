@@ -3,10 +3,10 @@
 # an individual attachment, nothing merged or modified) to the ecom team list,
 # then post the same files to the WhatsApp "Ecom team" group.
 #
-# Slots: am (10:00 cron) waits up to 3h for the morning chain to finish
-# writing ALL of today's files (batches land ~12:00); pm (16:00 cron) expects
-# the 15:00 batch to be on disk already; test sends immediately with whatever
-# is present. A file counts as ready only when it exists AND its mtime is
+# Slots: am (10:00 cron, the ONLY scheduled slot) waits up to 3h for the daily
+# serial chain to finish writing ALL of today's files (the noon batch lands ~12:00).
+# pm/test are manual-only (pm was retired with the 15:00 sweep 2026-06-28) and send
+# with whatever is present. A file counts as ready only when it exists AND its mtime is
 # >=90s old (never attach a mid-write workbook). On wait timeout it sends the
 # files that ARE present and lists them in the body; if none exist for today
 # it sends nothing and exits non-zero.

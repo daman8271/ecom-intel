@@ -4,16 +4,17 @@ Design deep-dive. For operating instructions see the top-level
 [`README.md`](../README.md); for the live platform-coverage map see
 [`REPORT.md`](../REPORT.md).
 
-> **Status (2026-06-06):** the full pipeline is **WIRED and running on cron** —
+> **Status (updated 2026-06-28 — now 1×/day):** the full pipeline is **WIRED and running on cron** —
 > `scrape → build_excel → predict → review → vault/history → telegram → commit/push`
 > all execute inside `run.sh`, and `run_all.sh` drives a **SERIAL** sweep (one platform at
-> a time; ~2h chain after 's 2026-06-06 removal) of all **8 live platforms**, with a
+> a time; ~2h chain after 's 2026-06-06 removal) of the **7 live platforms** (bigbasket runs
+> as a separate 03:00 pincode job), with a
 > **per-scrape auto-heal guardian** and a self-heal backstop. Cron is **DEADLINE-ALIGNED**
-> (owner requirement 2026-06-06): `tools/cron/deadline_sweep.sh` fires at **08:30 / 11:30
-> IST** (fire = slot − 3h30m; morning slot moved 10:00→12:00 per the owner's same-day order —
-> `crontab.proposed.txt`, lead installs), predicts the chain runtime from per-platform
+> (owner requirement 2026-06-06): `tools/cron/deadline_sweep.sh` fires **early in the small
+> hours** (predicts its lead and sleeps so the batch lands at 12:00 — cut from 2×/day to one
+> sweep on 2026-06-28), predicts the chain runtime from per-platform
 > duration history, sleeps so the chain
-> **finishes by the slot (12:00 / 15:00 IST)**, spools each verdict-gated report
+> **finishes at the slot (12:00 noon IST)**, spools each verdict-gated report
 > (`DEFER_DELIVERY=1` → `output/.batch/<sweep>/`), and `tools/cron/send_batch.py` holds a
 > barrier until the deadline, then ships ONE batch (BROKEN-run owner alerts still immediate;
 > any spool failure falls back to immediate send). Plus an **18:00 guardian deep-dive**.
@@ -185,10 +186,10 @@ Serviceability* sheet on top of the standard layout.
 ## 5. Pipeline & orchestration
 
 ```
-cron (IST: fire 08:30 → slot 12:00, fire 11:30 → slot 15:00, 18:00 guardian deep-dive)
-  └─ tools/cron/deadline_sweep.sh <slot> — predict chain runtime (durations.jsonl p90),
+cron (IST: fire early → slot 12:00 noon; + 03:00 bigbasket pincode pull; 18:00 guardian deep-dive)
+  └─ tools/cron/deadline_sweep.sh 12:00 — predict chain runtime (durations.jsonl p90),
   │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE
-  └─ run_all.sh — scrape all 8 LIVE platforms SERIALLY ( removed 2026-06-06; ~2h chain)
+  └─ run_all.sh — scrape the 7 LIVE platforms SERIALLY ( removed 2026-06-06; ~2h chain)
        ├─ tools/cron/record_duration.sh <p> <secs>  (per platform — self-learning ledger)
        ├─ tools/cron/send_batch.py — barrier: sleep to deadline, deliver ALL reports as ONE batch
        └─ run.sh <platform>   (per platform, all steps WIRED)
@@ -296,12 +297,12 @@ rollups) — Python 3 stdlib only, deterministic, **no LLM**, safe inside the cr
 
 | Item | Installed & live (verified via `crontab -l`) |
 |---|---|
-| Scrape cadence | **2 full sweeps/day — 12:00 + 15:00 IST** (deadline-aligned; morning moved 10:00→12:00, owner order 2026-06-06) + an **18:00 guardian deep-dive** |
-| Driver | one `./run_all.sh` per sweep — scrapes all **8 live platforms SERIALLY** (one at a time, ~2h;  removed 2026-06-06) |
+| Scrape cadence | **1 deadline-aligned sweep/day — lands 12:00 noon IST** (cut from 2×/day 2026-06-28) + an **18:00 guardian deep-dive** |
+| Driver | one `./run_all.sh` per sweep — scrapes the **7 live platforms SERIALLY** (one at a time, ~2h;  removed 2026-06-06; bigbasket is a separate 03:00 pincode job) |
 | Auto-heal | inline per scrape (`tools/guardian.py --heal`) + the self-heal backstop at the sweep's end (`tools/selfheal.sh`) |
 | Timezone | `Asia/Kolkata` (set by `setup_cron.sh`) |
 
-The live crontab is two `run_all.sh` sweeps + one `tools/guardian_daily.sh` line.
+The live crontab is one `run_all.sh` sweep + one `tools/guardian_daily.sh` line (+ the 03:00 bigbasket pincode pull; the live line lives in `tools/cron/doctor.crontab.txt`).
 `run_all.sh` runs the platforms **serially** (commit 8ef79d4 — parallel starved the
 scrapers and thrashed the shared Amazon account/location) and holds the authoritative
 live-platform list; each `run.sh`'s git-push is `flock`-serialized so concurrent commits
@@ -329,8 +330,8 @@ co-runs with amazon-fresh (Amazon's delivery location is account-global server-s
 
 ## Status — what shipped, what's left
 
-The end-to-end system is **live in production** (9 platforms on a **serial** cron — two
-sweeps daily + an 18:00 guardian deep-dive). The items earlier drafts listed as "open for
+The end-to-end system is **live in production** (7 platforms on a **serial** cron — one
+deadline-aligned sweep daily + an 18:00 guardian deep-dive). The items earlier drafts listed as "open for
 the orchestrator" are done:
 
 - ✅ **Pipeline wired into `run.sh`** — `scrape → build_excel → predict → review →
@@ -342,7 +343,7 @@ the orchestrator" are done:
   rollups rebuilt by `tools/vault_rollup.py`.
 - ✅ **git-tracked backup** — `vault/`, `data/`, `reviews/`, `baselines/` are committed
   every run (not caught by the `*.xlsx`/`result.json` ignore patterns).
-- ✅ **Crontab applied + deadline mechanism PROVEN live (2026-06-06)** — the first two real deadline batches landed at exactly 10:00:00 and 15:00:00 IST (chain ~2h25m, barrier ~55m). The morning slot now moves to **12:00** (fire 08:30) per the owner's 2026-06-06 order — proposed in `crontab.proposed.txt` (incl. the 12:00/15:00 overlap analysis); installation is the lead's call. Plus the 18:00 `guardian_daily.sh` deep-dive.
+- ✅ **Crontab applied + deadline mechanism PROVEN live (2026-06-06)** — real deadline batches land at the slot to the second (chain + barrier self-aligning). Cut from 2×/day to a single **12:00 noon** sweep on 2026-06-28 (15:00 sweep + 16:00 mailer retired); the live cron line lives in `tools/cron/doctor.crontab.txt`. Plus the 18:00 `guardian_daily.sh` deep-dive.
 - ✅ **Auto-heal guardian** (2026-06-05) — inline per-scrape quarantine + bounded self-heal + owner alert, plus the daily 11-class deep-dive; review.py hardened (geo/block/per-litre/dup) and Telegram verdict-gated.
 
 Remaining / ongoing:

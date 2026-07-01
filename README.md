@@ -6,8 +6,8 @@ India's quick-commerce apps and marketplaces — at **national scale, hundreds o
 pincodes per quick-commerce platform** (≈332–798, scaled up from the original top-20
 cities) — and emits a clean **branded Excel report per platform** (6 sheets + an
 appended Predictions sheet) plus an **Obsidian-style Markdown "memory vault"**. Runs
-unattended on a Hostinger VPS via **cron — two full sweeps daily, DEADLINE-ALIGNED so all
-reports LAND together at 12:00 + 15:00 IST** (the serial chain starts early — per-platform
+unattended on a Hostinger VPS via **cron — one deadline-aligned sweep daily, so all
+reports LAND together at 12:00 noon IST** (the serial chain starts early — per-platform
 runtimes predicted from history — and finished reports wait at a barrier, then ship as ONE
 batch at the slot time) **plus an 18:00 guardian deep-dive** — with an automated review, an
 auto-heal guardian, self-heal, and verdict-gated Telegram delivery. Built and pitched to
@@ -286,27 +286,26 @@ report can be early, never lost.
 
 | Cron fire (IST) | Deadline slot | Job |
 |---|---|---|
-| **08:30** | **12:00** | `deadline_sweep.sh 12:00` → sleep to T−lead → `run_all.sh` (serial, spooled) → batch at 12:00 |
-| **11:30** | **15:00** | same → batch at 15:00 |
+| **early (small hours)** | **12:00** | `deadline_sweep.sh 12:00` → predict lead → sleep to T−lead → `run_all.sh` (serial, spooled) → batch at 12:00 |
 | **18:00** | — | `tools/guardian_daily.sh` — read-only 11-bug-class deep-dive over every platform → alert on NEW bug class |
 
-The morning slot moved **10:00 → 12:00** (fire 06:30 → 08:30; fire = slot − 3h30m) per the
-owner's 2026-06-06 order — see `crontab.proposed.txt` (the lead installs). The mechanism is
-**LIVE and PROVEN as of 2026-06-06**: the first two real batches landed at exactly 10:00:00
-and 15:00:00 IST, with the serial chain at ~2h25m and the barrier sleep ~55m.
-`LEAD_MAX=12600` (3h30m ceiling; observed p90 leads ~3h18–21m after 's 2026-06-06
-removal). Plain `./run_all.sh` with no env vars = the old immediate-delivery behavior,
-unchanged. With the slots now 3h apart, the morning sweep's barrier sleep + post-batch tail
-overlap the afternoon chain — the concrete analysis (and a proposed `.sweep-chain.lock`
-mitigation for the selfheal backstop) lives in `crontab.proposed.txt`'s comments.
+The pipeline was cut from 2×/day to **one deadline-aligned sweep** on 2026-06-28 (the 15:00
+sweep + 16:00 mailer were retired; the live cron line now lives in
+`tools/cron/doctor.crontab.txt`). The mechanism is **LIVE and PROVEN since 2026-06-06**:
+batches land at the slot to the second (self-aligning chain + barrier). The sweep fires early
+in the small hours and predicts its lead so the batch lands AT 12:00 (the doctor.crontab.txt
+template fires `0 4`; the live box was retuned to 00:30). Plain `./run_all.sh` with no env
+vars = the old immediate-delivery behavior, unchanged. With a single daily sweep the old
+two-sweep overlap concern is moot; the `.sweep-chain.lock` guard remains as a harmless
+backstop (the historical two-slot analysis lives in `crontab.proposed.txt`'s comments).
 
 > **Why serial, not parallel:** running all 9 at once **starved** each scraper
 > (CPU/network contention → thin, partial data the hardened review.py rejects) and made
 > the 3 Amazon storefronts thrash their one shared account/server-side location. Serial
 > gives each platform full resources + clean store re-resolution, and the Amazon trio runs
 > consecutively so it can never overlap. A full sweep is **~2h25m** (blinkit alone
-> ~69 min); the two windows are 3h apart (12:00 + 15:00), which still has the headroom —
-> the morning chain finishes ~11:06, before its 12:00 barrier. `run_all.sh` holds the
+> ~69 min); the single daily batch lands at 12:00, the serial chain finishing before its
+> 12:00 barrier. `run_all.sh` holds the
 > **authoritative** live-platform list and runs them in this order: ,
 > flipkart-minutes, flipkart, zepto, bigbasket, amazon, amazon-fresh, amazon-now, **blinkit
 > last**. Each `run.sh`'s git-push is `flock`-serialized (`.gitpush.lock`). Preview the cron
@@ -389,7 +388,7 @@ ecom-intel/
 ├── run.sh                 # ./run.sh <p> — scrape → Excel → predict → review → vault → telegram → push
 ├── run_all.sh             # one cron sweep: scrape all 8 live platforms SERIALLY (~2h;  removed 2026-06-06) → per-scrape guardian auto-heal → self-heal
 ├── healthcheck.sh         # self-heal: detect broken runs → Claude Code safe repair
-├── setup_cron.sh          # (re)install cron (idempotent: 12:00+15:00 deadline sweeps + 18:00 guardian deep-dive, IST), set timezone
+├── setup_cron.sh          # (re)install cron (idempotent: 12:00 deadline sweep + 18:00 guardian deep-dive, IST), set timezone
 ├── secrets.env            # Telegram creds (gitignored — recreate after wipe)
 ├── .gitignore             # node_modules/, output/, logs/, result.json, *.xlsx, secrets.env
 │
