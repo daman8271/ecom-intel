@@ -5,11 +5,11 @@ display_name: Jivo Gold Premium Refined Cooking Oil Perfect Blend o
 platforms:
   - amazon-now
 first_seen: 2026-06-01
-last_seen: 2026-06-30
-observations: 69
+last_seen: 2026-07-01
+observations: 70
 min_price: 173
 max_price: 191
-latest_price: 188
+latest_price: 182
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Gold Premium Refined Cooking Oil Perfect Blend o**
 
 ## Sold on
-- [[amazon-now]] — latest ₹188 (16.4% off)
+- [[amazon-now]] — latest ₹182 (19.1% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (12)
-[[amazon-now-2026-06-30-0928]] · [[amazon-now-2026-06-29-0903]] · [[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-01-1600]]
+## Runs that observed this SKU (13)
+[[amazon-now-2026-07-01-1440]] · [[amazon-now-2026-06-30-0928]] · [[amazon-now-2026-06-29-0903]] · [[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-01-1600]]
 
-## Price history (69 observations)
+## Price history (70 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -103,6 +103,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-30-0928,2026-06-30,amazon-now,Jaipur,302020,186,225,17.3,1
 2026-06-30-0928,2026-06-30,amazon-now,Kolkata,700058,186,225,17.3,1
 2026-06-30-0928,2026-06-30,amazon-now,Mumbai,400601,188,225,16.4,1
+2026-07-01-1440,2026-07-01,amazon-now,Delhi,110046,182,225,19.1,1
 ```
 
 ---
