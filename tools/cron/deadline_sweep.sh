@@ -27,6 +27,14 @@ DIR="$(cd "$(dirname "$0")/../.." && pwd)"   # tools/cron -> repo root
 cd "$DIR"
 mkdir -p logs
 
+# ---- LAUNCH MARKER (read by tools/cron/sweep_watchdog.sh) --------------------
+# Written NOW, before the long predict+sleep, so the catch-up watchdog can tell
+# "today's sweep is already armed" during the hours this process sleeps before
+# run_all. Without it, the watchdog would see no batch dir yet and double-launch.
+# Keyed per day+slot; stale files for past days are harmless.
+mkdir -p output/.batch
+: > "output/.batch/launched-$(date -d "today $SLOT" '+%Y-%m-%d' 2>/dev/null || date '+%Y-%m-%d')-$(printf '%s' "$SLOT" | tr -d ':')"
+
 LEAD_MAX="${LEAD_MAX:-7200}"
 NOW="$(date +%s)"
 # T = today's occurrence of HH:MM (cron fires us hours before the slot, so T is
