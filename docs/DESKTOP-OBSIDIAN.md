@@ -3,16 +3,16 @@
 **TL;DR — you do NOT install Obsidian on the VPS.** The VPS is headless (no screen),
 and Obsidian is a GUI viewer. A "vault" is just a folder of Markdown files. The VPS
 already *builds* that folder (`vault/`) from the scrape data and *pushes it to GitHub
-3×/day*. You install Obsidian on your **desktop**, point it at a clone of that folder,
+once a day (after the noon sweep)*. You install Obsidian on your **desktop**, point it at a clone of that folder,
 and let it auto-pull. That's the whole trick.
 
 ```
   VPS (terminal only)                         GitHub                 Your desktop
   ┌─────────────────────────┐                 ┌──────┐               ┌────────────────────┐
   │ scrape → data/*.csv      │                 │ ecom │               │ git clone           │
-  │ tools/vault_build.py     │  git push 3×/day│ intel│  Obsidian Git │ Obsidian opens      │
+  │ tools/vault_build.py     │  git push 1×/day│ intel│  Obsidian Git │ Obsidian opens      │
   │ → vault/ (1300+ .md)     │ ───────────────▶│ repo │ ─── pull ────▶│ vault/ as a vault   │
-  │ (cron 9/12/16 IST)       │                 └──────┘  every ~15min │ you SEE everything  │
+  │ (cron: noon sweep)       │                 └──────┘  every ~15min │ you SEE everything  │
   └─────────────────────────┘                                        └────────────────────┘
 ```
 

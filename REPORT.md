@@ -31,8 +31,8 @@ platform are in `output/`.
   fetch** calls the `listing-svc` JSON API. BigBasket "BB" prices Jivo
   **nationally**, so (like Flipkart) it scrapes once and tags rows "All India"
   (~27 SKUs, no proxy, no login).
-- All 9 live scrapers run on **3×/day parallel cron (09:00 / 12:00 / 16:00 IST)**
-  via `run_all.sh`, with a self-heal sweep at the end of each window.
+- All live scrapers run on a **1×/day serial deadline-aligned cron landing 12:00 noon IST**
+  via `run_all.sh`, with a self-heal sweep at the end of the sweep.
 
 ## Working platforms (current cron)
 
@@ -105,8 +105,8 @@ stays wired only as insurance if **Amazon** ever escalates from the interstitial
 to a captcha on the datacenter IP. See `docs/PROXY.md`.
 
 ## Operational state
-- **Cron (IST):** `run_all.sh` scrapes all 9 live platforms **in parallel** at
-  **09:00 / 12:00 / 16:00**, then runs the self-heal sweep at the end of each window
+- **Cron (IST):** `run_all.sh` scrapes the live platforms **serially** as one
+  **deadline-aligned sweep landing 12:00 noon**, then runs the self-heal sweep at the end of the sweep
   (flags any platform <20 rows / stale and re-runs once / escalates to Telegram).
   `amazon-now` runs too, serialized with `amazon-fresh` via the shared lock (see above).
 - **Amazon canonical auto-heal (LIVE 2026-06-13):** the recurring Amazon `shared_price_dup`

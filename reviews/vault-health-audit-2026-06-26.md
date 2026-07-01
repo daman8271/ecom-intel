@@ -1,3 +1,5 @@
+> **As of 2026-06-28 the pipeline is 1×/day; the 2×/day observations below are from that dated audit.**
+
 # Vault Deep-Dive Health Audit — 2026-06-26
 
 **Question asked:** "Check the 3 deep-dive agents / the vault we are making — is it working every day properly?
