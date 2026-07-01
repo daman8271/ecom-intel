@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 # setup_cron.sh — install the ecom-intel cron schedule (idempotent).
 #
-# NEW schedule: each LIVE platform runs 3x/day in three IST windows —
+# ⚠️ DEPRECATED (2026-06-28): this is NOT the live cron installer. The live schedule is a SINGLE
+# 12:00-noon deadline sweep defined in tools/cron/doctor.crontab.txt (installed via `crontab`).
+# The "3x/day 09/12/16" schedule described below is OBSOLETE and kept for reference only.
+#
+# LEGACY schedule: each LIVE platform runs 3x/day in three IST windows —
 #   morning 09:xx, midday 12:xx, evening 16:xx (user: 9am / 12pm / 4pm IST).
 # Platforms are STAGGERED a few minutes apart inside each window so four
 # Chromium scrapers don't launch the same second on one VPS:

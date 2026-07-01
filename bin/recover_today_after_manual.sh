@@ -9,6 +9,7 @@ set -uo pipefail
 
 ROOT="/opt/ecom-intel"
 DATE_IST="${1:-$(TZ=Asia/Kolkata date +%F)}"
+MAX_WAIT_SECONDS="${MAX_WAIT_SECONDS:-43200}"
 LOG="$ROOT/logs/recover_today_after_manual-${DATE_IST}-$(TZ=Asia/Kolkata date +%H%M%S).log"
 mkdir -p "$ROOT/logs"
 
@@ -38,9 +39,9 @@ git_commit_push_ecom() {
   ) || true
 }
 
-log "START date=$DATE_IST"
+log "START date=$DATE_IST max_wait_seconds=$MAX_WAIT_SECONDS"
 
-deadline=$(( $(date +%s) + 14400 ))
+deadline=$(( $(date +%s) + MAX_WAIT_SECONDS ))
 while true; do
   runs="$(active_platform_runs)"
   if [ -z "$runs" ]; then
@@ -98,4 +99,3 @@ if [ -f "$ROOT/today/_manifest.json" ] && grep -q "\"date\": \"${DATE_IST}\"" "$
 else
   log "DONE with HOLD: today/ did not advance to $DATE_IST; see build_today readiness messages above"
 fi
-

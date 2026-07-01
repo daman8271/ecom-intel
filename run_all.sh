@@ -11,6 +11,11 @@
 # a 2x/day window (10:00 + 15:00, 5h apart) has the headroom. Each ./run.sh is self-contained
 # (scrape -> excel -> predict -> review -> vault -> telegram[verdict-gated] -> git push);
 # per-platform stdout goes to logs/run-<p>.out.
+#
+# NOTE (2026-06-28): the pipeline is now 1×/day — a SINGLE 12:00-noon sweep. The "2x/day /
+# 10:00+15:00 / 12:00+15:00" framing in some comments below is retained as historical rationale
+# for the .sweep-chain.lock overlap guard, which now rarely engages (no afternoon sweep) but is
+# kept as an inert backstop.
 set -uo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
