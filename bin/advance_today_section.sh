@@ -96,16 +96,6 @@ if ! flock -n 9; then log "build_today.lock held — exiting"; exit 0; fi
 log "=== advance start (date=$DATE dry_run=$DRYRUN) ==="
 if ! src_ready; then log "not ready for $DATE — nothing to do"; exit 0; fi
 
-# already at DATE?  (skip if the data-bank subdir manifest already records it)
-cur="$(python3 - "$DB_TODAY/_manifest.json" "$SRC" <<'PY' 2>/dev/null || true
-import json,sys
-try:
-    d=json.load(open(sys.argv[1])); print(d.get("sources",{}).get(sys.argv[2],{}).get("date",""))
-except Exception: print("")
-PY
-)"
-if [ "$cur" = "$DATE" ] && [ "$DRYRUN" = "0" ]; then log "already at $DATE — no-op"; exit 0; fi
-
 # ---- diff window ------------------------------------------------------------
 base="$(TZ=Asia/Kolkata git -C "$REPO" rev-list -1 --before="$DATE 00:00:00" HEAD 2>/dev/null)"; [ -n "$base" ] || base="$EMPTY_TREE"
 if [ "$IS_TODAY" = "1" ]; then end="HEAD"; else
@@ -150,8 +140,17 @@ if [ "$DRYRUN" = "1" ]; then
   exit 0
 fi
 
-# ---- atomic per-subdir swap (data-bank) -------------------------------------
+# ---- idempotency: byte-identical to the live section? then no-op ------------
 DST="$DB_TODAY/$SRC"
+if [ -d "$DST" ]; then
+  ( cd "$TMP" && find . -type f -print0 | sort -z | xargs -0 sha256sum 2>/dev/null ) > "$WORK/staged.sha"
+  ( cd "$DST" && find . -type f -print0 | sort -z | xargs -0 sha256sum 2>/dev/null ) > "$WORK/live.sha"
+  if cmp -s "$WORK/staged.sha" "$WORK/live.sha"; then
+    log "unchanged vs live today/$SRC — no-op (skip swap/commit)"; rm -rf "$TMP"; exit 0
+  fi
+fi
+
+# ---- atomic per-subdir swap (data-bank) -------------------------------------
 rm -rf "$DST.prev" 2>/dev/null || true
 [ -d "$DST" ] && mv "$DST" "$DST.prev"
 mv "$TMP" "$DST" || abort "atomic subdir swap failed for $SRC"
@@ -205,6 +204,12 @@ out={"schema":"jivo-today/manifest@1",
 json.dump(out,open(p,"w"),indent=2)
 print("manifest: %s -> %s | section_dates=%s"%(src,date,sd))
 PY
+
+# tidy: drop rollback/staging dirs so they never enter git; belt-and-suspenders ignore
+rm -rf "$DB_TODAY"/*.prev "$DB_TODAY"/*.tmp 2>/dev/null || true
+for e in 'today/*.tmp/' 'today/*.prev/'; do
+  grep -qxF "$e" "$DB_REPO/.gitignore" 2>/dev/null || printf '%s\n' "$e" >> "$DB_REPO/.gitignore"
+done
 
 # ---- commit + push (best-effort; */15 push_all_repos.sh is the backstop) -----
 commit_push(){ local repo="$1"; shift

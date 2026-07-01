@@ -97,6 +97,20 @@ else
   echo "[$(date '+%F %T')] deadline_sweep($SLOT): downstream chain skipped (slot=$SLOT rc=$RUN_ALL_RC downstream=${SWEEP_DOWNSTREAM:-1})"
 fi
 
+# ---- EAGER per-section today/ advance (instant-per-source rule) -------------
+# Each source also self-advances from its own producer (factory_refresh,
+# competitor run_daily, jivo-intel run_daily). This noon-path pass is the
+# backstop and the primary trigger for price-scraper, whose producer is
+# vault_build inside the sweep. Every call self-gates on readiness and is a
+# no-op if that slice is byte-unchanged; it can NEVER change the sweep's status.
+if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ -z "${PLATFORMS_OVERRIDE:-}" ] \
+   && [ -z "${RUNNER_OVERRIDE:-}" ] && [ "$RUN_ALL_RC" = "0" ] && [ -x ./bin/advance_today_section.sh ]; then
+  for _s in price-scraper competitors factory ecom-app; do
+    ./bin/advance_today_section.sh "$_s" >> logs/build_today.cron.log 2>&1 || true
+  done
+  echo "[$(date '+%F %T')] deadline_sweep($SLOT): eager per-section today/ advance fired for all ready sources"
+fi
+
 # ---- EVENT-DRIVEN SITE REFRESH (goal #40, 2026-07-01) -----------------------
 # SITE-REFRESH-HOOK: the instant the noon sweep lands today's data (and the
 # competitor/data-bank chain above), regenerate + redeploy the 3 public

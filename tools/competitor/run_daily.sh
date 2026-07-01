@@ -74,3 +74,8 @@ if [ "${COMP_SKIP_DATABANK:-0}" != "1" ] && [ -x /root/jivo-data-bank/bin/run_da
 fi
 
 echo "[comp-daily] DONE $(TZ='Asia/Kolkata' date '+%H:%M'). reports: output/Competitor-Price-Watch-{Blinkit,Zepto,AllQcomm}-${DATE_IST}.xlsx"
+
+# --- eager today/ hook (instant-per-source rule): publish the competitors slice
+# into the data-bank today/ the moment its daily report is folded. Self-gates +
+# no-ops if unchanged; never blocks this run. ---
+/opt/ecom-intel/bin/advance_today_section.sh competitors --date "${DATE_IST}" >> /opt/ecom-intel/bin/build_today.log 2>&1 || true
