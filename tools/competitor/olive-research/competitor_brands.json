@@ -1,0 +1,4 @@
+{
+  "_doc": "OPEN olive-discovery config for goal #54 (Blinkit olive competitor availability). whitelist_regex deliberately matches ANY olive product so we discover EVERY olive seller (not a fixed brand list). Brand is derived in post-processing from the product name.",
+  "whitelist_regex": "(olive|jaitun|pomace)"
+}
