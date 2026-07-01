@@ -1,3 +1,5 @@
+> **HISTORICAL (2×/day era, pre-2026-06-28) — the live crontab is now a single 12:00 sweep.**
+
 # W3 — Go-Live Adversarial Gate: "nothing breaks tomorrow"
 
 **Verdict: ✅ PASS — both changes are safe to push + install.**

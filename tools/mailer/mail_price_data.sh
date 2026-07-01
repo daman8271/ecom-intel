@@ -33,7 +33,7 @@ alert() {
     -d text="⚠️ price-data mailer ($SLOT $D): $1" >/dev/null || true
 }
 
-# Ensure the WhatsApp gateway is CONNECTED before posting. The twice-daily
+# Ensure the WhatsApp gateway is CONNECTED before posting. A known
 # failure mode (Jun 12-14) was the gateway being down at cron time: a dead
 # :3001 returns an empty curl body, which fails the '"success":true' check and
 # flags every file as failed. Health-check it; if it's not connected, (re)start

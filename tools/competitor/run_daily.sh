@@ -2,12 +2,12 @@
 # Daily competitor price-watch (quick-commerce): Blinkit + Zepto across the 25-pin set,
 # then build the per-platform + combined Excel reports.
 #
-# Scheduled at 12:15 IST -- RIGHT AFTER the JIVO noon batch finishes (run_all "DONE" ~12:02),
-# so competitor prices are captured within ~15 min of the JIVO prices for a same-time,
+# Called EVENT-DRIVEN at the tail of the noon sweep (deadline_sweep.sh, ~12:02 IST), right
+# after run_all finishes -- so competitor prices are captured within ~15 min of the JIVO prices for a same-time,
 # apples-to-apples comparison (vs a ~10h gap if run overnight). It must run AFTER, never
 # DURING, the JIVO sweep: both scrape blinkit+zepto from the same VPS IP, so concurrent runs
 # would double the request rate and risk a bot soft-block on BOTH datasets. The sweep-lock
-# guard below enforces this -- if the JIVO sweep is somehow still scraping at 12:15 (a late
+# guard below enforces this -- if the JIVO sweep is somehow still scraping when this fires (a late
 # batch), this run skips itself rather than contend. NOT the JIVO pipeline; shares no state.
 # FKM excluded until its logged-in browser path is validated.
 #

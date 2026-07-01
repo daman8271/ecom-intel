@@ -6,7 +6,7 @@
 > regime.json overrides; ₹1 tolerance; modal in-stock basis; EVERY-store violation scan) →
 > per-platform "Price Match" sheet appended by run.sh (RED diff = live below agreed, GREEN =
 > above — owner's display rule) + `build_pricematch.py` master workbook (sheet 1 = Ecom Head
-> view) riding the daily 12:00/15:00 batches LAST. First real run: 85 BELOW, ₹5,804 exposure.
+> view) riding the daily 12:00 noon batch LAST. First real run: 85 BELOW, ₹5,804 exposure.
 > Status: **spec locked in brainstorm session, dry-run mapping validated + adversarially
 > verified (3-agent fleet), build not started.**
 > v1 of this doc assumed we'd invent a SKU master from scratch — superseded the day the

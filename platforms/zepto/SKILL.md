@@ -82,7 +82,7 @@ discount_pct, per_litre, eta_min, in_stock, cached, price_source}`
 
 ## Coverage / cron
 `pincodes.json` = 332 store-distinct coords. LIVE in the serial cron sweep (`run_all.sh`,
-10:00 + 15:00 IST), no Amazon lock needed (Zepto is account-independent).
+the daily 12:00 noon batch), no Amazon lock needed (Zepto is account-independent).
 
 ## Recon probes (kept for future debugging)
 `probe_cache.js` (CloudFront/edge cache check on the search POST — shows `x-cache: Miss`,

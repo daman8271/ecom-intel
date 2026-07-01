@@ -1,7 +1,7 @@
 # DEPLOY-DOCTOR.md — Ecom Doctor install runbook (LEAD)
 
-The **Ecom Doctor** is the self-healing watchdog. It runs in the evening (after both
-sweeps + the 18:00 guardian), gathers deterministic health signals
+The **Ecom Doctor** is the self-healing watchdog. It runs in the evening (after the noon
+sweep + the 18:00 guardian), gathers deterministic health signals
 (`tools/cron/health_snapshot.py`), and — only when something is wrong — invokes a bounded
 headless Claude agent to diagnose and alert the owner on Telegram.
 
@@ -18,13 +18,13 @@ It ships in **two stages**:
 
 In **both** stages the always-on denies hold: **no** `git push`, `run_all.sh`, `curl`,
 `crontab`, `rm -rf`, or `sudo`. The doctor never pushes, is flock-guarded against overlap,
-and a doctor crash can **never** touch the 12:00/15:00 sweeps or the 18:00 guardian.
+and a doctor crash can **never** touch the 12:00 noon sweep or the 18:00 guardian.
 
 ---
 
 ## PRIME DIRECTIVE
-The doctor must **never** affect the 12:00/15:00 sweeps. Its cron fires **18:30** — after
-both sweeps and the guardian. The merged crontab keeps the existing sweep + guardian lines
+The doctor must **never** affect the 12:00 noon sweep. Its cron fires **18:30** — after
+the sweep and the guardian. The merged crontab keeps the existing sweep + guardian lines
 **byte-identical**; it only ADDS 3 doctor lines (18:30 daily / Sun 19:00 weekly / 1st
 19:30 monthly).
 
@@ -62,7 +62,7 @@ This file IS the live crontab + the 3 doctor lines. The sweep + guardian lines a
 ```bash
 # 1) the 3 sweep+guardian lines are unchanged + the 3 doctor lines are present:
 crontab -l | grep -E '# ecom-intel'
-# expect 6 lines: deadline-batch 12:00, deadline-batch 15:00, guardian-daily,
+# expect 6 lines: bigbasket-pincode (03:00), deadline-batch 12:00, guardian-daily,
 #                 doctor-daily (18:30), doctor-weekly (Sun 19:00), doctor-monthly (1st 19:30)
 
 # 2) the doctor parses + the alert-only settings are correct (no install side-effects):

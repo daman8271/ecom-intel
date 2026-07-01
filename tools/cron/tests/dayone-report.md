@@ -1,3 +1,5 @@
+> **HISTORICAL (2×/day era, pre-2026-06-28).**
+
 # Day-one verification report — deadline system + post-deploy ID gates
 
 **Auditor:** W3 (read-only on production) · **Date:** 2026-06-06 · **Scope:** first two real

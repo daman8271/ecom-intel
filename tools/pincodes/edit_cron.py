@@ -15,6 +15,9 @@ Reads the LIVE crontab (`crontab -l`), applies these exact transforms, shows a d
 
 Backs up the live crontab to tools/cron/crontab.prepincode.bak before applying.
 Without --apply: dry run (prints the proposed crontab + diff, installs nothing).
+
+NOTE: the live 1x/day cron now lives in tools/cron/doctor.crontab.txt (single 12:00 sweep);
+this script performed the one-time 2x/day -> 1x/day cutover.
 """
 import subprocess, sys, os, re, difflib
 

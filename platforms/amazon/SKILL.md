@@ -17,7 +17,7 @@ button (and raw `/s?k=` requests get **503** throttles). So every run must:
 1. `goto https://www.amazon.in/`, then click the **"Continue shopping"** button
    (`getByRole('button', {name:/continue shopping/i})`).
 2. Then the site + search return 200 normally.
-⚠️ Risk: Amazon may escalate to a hard captcha if it sees this twice-daily from
+⚠️ Risk: Amazon may escalate to a hard captcha if it sees this daily from
 the same IP over time. If runs start returning 0 rows, that's the signal → move
 to a residential proxy (see REPORT.md).
 

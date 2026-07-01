@@ -1,3 +1,5 @@
+> **HISTORICAL (2×/day era, pre-2026-06-28) — the live crontab is now a single 12:00 sweep.**
+
 # Ecom Doctor — W3 end-to-end dry-run verdict
 
 **VERDICT: ✅ PASS — 41/41 assertions PASS, 0 FAIL, 0 SKIP** (with `--with-real-agent`;

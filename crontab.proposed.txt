@@ -1,3 +1,4 @@
+# SUPERSEDED — the live cron is a single 12:00 sweep (see tools/cron/doctor.crontab.txt); this two-slot proposal is historical.
 # crontab.proposed.txt — DEADLINE-ALIGNED sweeps (replaces the whole crontab).
 # DO NOT install by hand-editing crontab -e line by line; review, then:  crontab crontab.proposed.txt
 # (Installation is the LEAD's call after verification — W2 only proposes.)

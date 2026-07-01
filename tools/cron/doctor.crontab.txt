@@ -28,6 +28,8 @@
 # 12:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28). Fire 04:00; sweep
 # starts at 12:00 - predicted lead (~05:51 on the ~467-anchor chain) and the batch lands AT 12:00.
 # LEAD_MAX=27000 (7.5h ceiling) covers the longer chain after the tier-1 pincode expansion.
+# (This template fires 0 4 = 04:00; the LIVE box was later hand-retuned to fire 00:30. Either
+#  way the predict-and-sleep lands the batch AT 12:00 — the fire clock is not the landing time.)
 0 4 * * * cd /opt/ecom-intel && LEAD_MAX=27000 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
