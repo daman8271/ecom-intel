@@ -36,20 +36,23 @@ fire_downstream(){ ( cd "$SBX"
   fi ) ; }
 
 pass=0; fail=0
-check(){ # $1 label ; $2 expect(fire|no) ; runs with SLOT $3 rc $4 env $5
+check(){ # $1 label ; $2 expect(fire|no) ; $3 slot ; $4 rc ; $5.. env KEY=VAL
+  local label="$1" expect="$2" slot="$3" rc="$4"; shift 4
   : > "$FIRED"
-  env ${5:-} bash -c "$(declare -f fire_downstream); SWEEP_DOWNSTREAM=\${SWEEP_DOWNSTREAM:-1} fire_downstream '$3' '$4'" >/dev/null 2>&1
+  # run in a subshell so env assignments ($@) don't leak; fire_downstream's own
+  # inner subshell inherits them + still sees $SBX/$FIRED from this parent shell.
+  ( for kv in "$@"; do export "$kv"; done; fire_downstream "$slot" "$rc" ) >/dev/null 2>&1
   local got=no; [ -s "$FIRED" ] && got=fire
-  if [ "$got" = "$2" ]; then echo "PASS: $1 (expected $2)"; pass=$((pass+1))
-  else echo "FAIL: $1 (expected $2, got $got)"; fail=$((fail+1)); fi
+  if [ "$got" = "$expect" ]; then echo "PASS: $label (expected $expect)"; pass=$((pass+1))
+  else echo "FAIL: $label (expected $expect, got $got)"; fail=$((fail+1)); fi
 }
 
-check "normal noon sweep, rc=0 -> fires competitor"        fire 12:00 0 ""
-check "sweep failed (rc=1) -> does NOT fire"                no   12:00 1 ""
-check "wrong slot (15:00) -> does NOT fire"                 no   15:00 0 ""
-check "test-mode RUNNER_OVERRIDE set -> does NOT fire"      no   12:00 0 "RUNNER_OVERRIDE=/bin/true"
-check "test-mode PLATFORMS_OVERRIDE set -> does NOT fire"   no   12:00 0 "PLATFORMS_OVERRIDE=zepto"
-check "kill switch SWEEP_DOWNSTREAM=0 -> does NOT fire"     no   12:00 0 "SWEEP_DOWNSTREAM=0"
+check "normal noon sweep, rc=0 -> fires competitor"        fire 12:00 0
+check "sweep failed (rc=1) -> does NOT fire"                no   12:00 1
+check "wrong slot (15:00) -> does NOT fire"                 no   15:00 0
+check "test-mode RUNNER_OVERRIDE set -> does NOT fire"      no   12:00 0 RUNNER_OVERRIDE=/bin/true
+check "test-mode PLATFORMS_OVERRIDE set -> does NOT fire"   no   12:00 0 PLATFORMS_OVERRIDE=zepto
+check "kill switch SWEEP_DOWNSTREAM=0 -> does NOT fire"     no   12:00 0 SWEEP_DOWNSTREAM=0
 
 # prove ORDER: price-scraper advance is recorded BEFORE competitor
 : > "$FIRED"; fire_downstream 12:00 0 >/dev/null 2>&1
