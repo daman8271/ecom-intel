@@ -20,6 +20,51 @@ active_platform_runs() {
     | awk '{print $1 " " substr($0, index($0,$2))}' || true
 }
 
+verify_postbuild() {
+  local fail=0 f repo
+
+  log "verifying source markdown and today/ manifests"
+  for f in \
+    "$ROOT/vault/daily/${DATE_IST}.md" \
+    "$ROOT/vault/competitor/daily/Competitor-${DATE_IST}.md" \
+    "$ROOT/today/daily/${DATE_IST}.md" \
+    "$ROOT/today/competitor/daily/Competitor-${DATE_IST}.md" \
+    "/root/jivo-data-bank/today/price-scraper/daily/${DATE_IST}.md" \
+    "/root/jivo-data-bank/today/competitors/competitor/daily/Competitor-${DATE_IST}.md"
+  do
+    if [ -s "$f" ]; then
+      log "verify OK: $f"
+    else
+      log "verify MISSING: $f"
+      fail=1
+    fi
+  done
+
+  if git -C /root/jivo-intel log --grep="^daily ${DATE_IST}\$" -1 --format=%H 2>/dev/null | grep -q .; then
+    log "verify OK: /root/jivo-intel has daily ${DATE_IST} commit"
+  else
+    log "verify MISSING: /root/jivo-intel daily ${DATE_IST} commit"
+    fail=1
+  fi
+
+  for repo in "$ROOT" /root/jivo-factory-intel /root/jivo-intel /root/jivo-data-bank; do
+    f="$repo/today/_manifest.json"
+    if [ -s "$f" ] && grep -q "\"date\": \"${DATE_IST}\"" "$f"; then
+      log "verify OK: $f date=$DATE_IST"
+    else
+      log "verify MISSING/HOLD: $f date is not $DATE_IST"
+      fail=1
+    fi
+  done
+
+  if [ "$fail" -eq 0 ]; then
+    log "VERIFY PASS: today/ snapshot is complete for $DATE_IST"
+  else
+    log "VERIFY HOLD: today/ snapshot is not complete for $DATE_IST"
+  fi
+  return "$fail"
+}
+
 git_commit_push_ecom() {
   (
     set +e
@@ -48,7 +93,7 @@ while true; do
     break
   fi
   if [ "$(date +%s)" -gt "$deadline" ]; then
-    log "ABORT: platform runs still active after 4h:"
+    log "ABORT: platform runs still active after ${MAX_WAIT_SECONDS}s:"
     printf '%s\n' "$runs" | tee -a "$LOG"
     exit 1
   fi
@@ -99,3 +144,5 @@ if [ -f "$ROOT/today/_manifest.json" ] && grep -q "\"date\": \"${DATE_IST}\"" "$
 else
   log "DONE with HOLD: today/ did not advance to $DATE_IST; see build_today readiness messages above"
 fi
+
+verify_postbuild || true

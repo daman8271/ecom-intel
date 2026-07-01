@@ -29,7 +29,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-06-05]] · Week: [[2026-W23]] · Month: 
 
 ## SKUs seen
 - [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L) — ₹245 (34.0% off) · in 65 pincodes
-- [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 2l — ₹575 · in 2 pincodes
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L) — ₹575 · in 2 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L) — ₹677 (32.0% off) · in 4 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹960 (23.0% off) · in 21 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L) — ₹170 (33.0% off) · in 51 pincodes
