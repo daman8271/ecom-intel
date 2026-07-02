@@ -1,0 +1,100 @@
+{
+  "platform": "amazon-now",
+  "run_id": "2026-07-02-2111",
+  "verdict": "BROKEN",
+  "review_verdict": "BROKEN",
+  "review_reasons": [
+    "rows_vs_baseline: 100 rows is 8% of baseline 1183 (collapse)",
+    "pincode_coverage: 13 pincodes w/ Jivo is 11% of baseline 118 (collapsed)",
+    "priced_floor_block: 100 priced in-stock rows is 8% of baseline 1183 (collapse)"
+  ],
+  "deep_reasons": [],
+  "reasons": [
+    "rows_vs_baseline: 100 rows is 8% of baseline 1183 (collapse)",
+    "pincode_coverage: 13 pincodes w/ Jivo is 11% of baseline 118 (collapsed)",
+    "priced_floor_block: 100 priced in-stock rows is 8% of baseline 1183 (collapse)"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no price spans >6 cities (store_id sparse)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "19 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "100 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 100 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/100 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (100/100 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 0.0h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "amazon-now BROKEN (review.py): rows_vs_baseline: 100 rows is 8% of baseline 1183 (collapse); pincode_coverage: 13 pincodes w/ Jivo is 11% of baseline 118 (collapsed) | heal: see review.py reasons",
+  "quarantined": true,
+  "evaluated_at": "2026-07-02T21:11:15.106198+00:00",
+  "source_result": "/opt/ecom-intel/platforms/amazon-now/result.json"
+}
