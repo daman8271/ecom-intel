@@ -13,7 +13,7 @@ deterministic sanity checks first, and only OPTIONALLY make a single tiny
 LLM call (Claude Haiku) when model access is configured. The LLM layer is
 strictly optional and failure-proof: it can never crash the run.
 
-Reads:   platforms/<platform>/result.json   (handles both per-pincode and
+Reads:   platforms/<platform>/result*.json  (handles both per-pincode and
                                               national shapes)
 Writes:  reviews/<platform>-<RUN_ID>.json    (the verdict, per CONTRACT)
          baselines/<platform>.json           (rolling expected, OK runs only)
@@ -171,8 +171,18 @@ def log(msg):
 # --- data loading / shape normalization -------------------------------------
 def load_result(platform):
     path = os.path.join(PLATFORMS_DIR, platform, "result.json")
+    if platform == "bigbasket":
+        pincode_path = os.path.join(PLATFORMS_DIR, platform, "result_pincode.json")
+        if os.path.isfile(pincode_path):
+            path = pincode_path
     with open(path) as f:
         return json.load(f), path
+
+
+def baseline_platform_for(platform, result_file):
+    if platform == "bigbasket" and os.path.basename(result_file) == "result_pincode.json":
+        return "bigbasket-pincode"
+    return platform
 
 
 def extract_rows(data):
@@ -1097,6 +1107,8 @@ def check_freshness(captured_at, run_id):
         return False, "no captured_at in summary"
     try:
         cap = datetime.datetime.fromisoformat(str(captured_at).replace("Z", "+00:00"))
+        if cap.tzinfo is None:
+            cap = cap.replace(tzinfo=datetime.timezone.utc)
     except Exception:
         return False, f"unparseable captured_at={captured_at!r}"
 
@@ -1273,26 +1285,27 @@ def main(argv):
     os.makedirs(REVIEWS_DIR, exist_ok=True)
     os.makedirs(BASELINES_DIR, exist_ok=True)
 
-    # Load data. A missing/corrupt result.json is itself a BROKEN run.
+    # Load data. A missing/corrupt result artifact is itself a BROKEN run.
     try:
-        data, _ = load_result(platform)
+        data, result_file = load_result(platform)
     except Exception as e:
-        log(f"{platform}: cannot load result.json: {e}")
+        log(f"{platform}: cannot load result artifact: {e}")
         verdict_out = {
             "platform": platform, "run_id": run_id,
             "captured_at": None, "verdict": "BROKEN",
             "rows": 0, "unique_skus": 0, "pincodes_with_jivo": None,
             "baseline_rows": None,
             "checks": [{"name": "load_result", "pass": False,
-                        "detail": f"cannot load result.json: {e}"}],
-            "reasons": [f"cannot load result.json: {e}"],
+                        "detail": f"cannot load result artifact: {e}"}],
+            "reasons": [f"cannot load result artifact: {e}"],
             "llm_note": None,
         }
         write_verdict(platform, run_id, verdict_out)
-        print(f"[review] {platform} {run_id}: BROKEN (result.json unreadable)")
+        print(f"[review] {platform} {run_id}: BROKEN (result artifact unreadable)")
         return 2
 
     rows = extract_rows(data)
+    baseline_platform = baseline_platform_for(platform, result_file)
     per_pincode = is_per_pincode(data)
     summary = data.get("summary", {}) or {}
     captured_at = summary.get("captured_at")
@@ -1303,7 +1316,9 @@ def main(argv):
     priced_rows = sum(1 for r in rows
                       if r.get("in_stock") and (num(r.get("sale")) or 0) > 0)
 
-    expected = baseline_expected(normalize_baseline(platform, load_baseline(platform)))
+    expected = baseline_expected(
+        normalize_baseline(baseline_platform, load_baseline(baseline_platform))
+    )
     baseline_rows = round(expected["rows"]) if (expected and expected.get("rows")) else None
 
     checks, reasons, hard_broken, soft_suspect = run_checks(
@@ -1349,6 +1364,7 @@ def main(argv):
         "unique_skus": n_skus,
         "pincodes_with_jivo": pin_jivo if per_pincode else None,
         "baseline_rows": baseline_rows,
+        "source_result": result_file,
         "checks": checks,
         "reasons": reasons,
         "llm_note": llm_note,
@@ -1368,7 +1384,7 @@ def main(argv):
     if verdict == "OK" or staleness_only:
         if staleness_only:
             log(f"{platform} {run_id}: SUSPECT (staleness-only) — still seeding baseline")
-        update_baseline(platform, {
+        update_baseline(baseline_platform, {
             "run_id": run_id,
             "captured_at": captured_at,
             "rows": n_rows,

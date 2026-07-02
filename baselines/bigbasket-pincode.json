@@ -1,0 +1,14 @@
+{
+  "platform": "bigbasket-pincode",
+  "samples": [
+    {
+      "run_id": "2026-07-02-0303",
+      "captured_at": "2026-07-02T03:03:57.951279",
+      "rows": 1329,
+      "unique_skus": 27,
+      "pincodes_with_jivo": 133,
+      "priced_rows": 867
+    }
+  ],
+  "updated_at": "2026-07-02T16:10:30+00:00"
+}

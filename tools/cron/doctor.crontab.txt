@@ -11,8 +11,9 @@
 # Cron runs in system-local time = IST (the live `0 18` guardian is 18:00 IST — confirmed).
 #
 # ============================ LIVE SWEEPS + GUARDIAN (UNCHANGED) ============================
-# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY (lead window up to ~7.5h:
-# fire = 04:00, LEAD_MAX=27000). The script predicts the serial chain's
+# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY. The live box now
+# fires the 12:00 slot at 00:30 with LEAD_MAX=39600, and a watchdog polls every
+# 20 minutes from 00:00-09:00 to catch a missed launch tick. The script predicts the serial chain's
 # runtime from history (predict_lead.py), sleeps until <slot> - predicted_lead,
 # runs ./run_all.sh with DEFER_DELIVERY=1, and send_batch.py holds every
 # platform's report and delivers them as ONE batch AT the slot time ("everyone
@@ -25,12 +26,12 @@
 # price-match pins 110092/560006); ~6 min. Single PAID key.
 0 3 * * * cd /opt/ecom-intel && ./platforms/bigbasket/run_pincode.sh >> logs/cron.log 2>&1   # ecom-intel bigbasket-pincode daily
 
-# 12:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28). Fire 04:00; sweep
-# starts at 12:00 - predicted lead (~05:51 on the ~467-anchor chain) and the batch lands AT 12:00.
-# LEAD_MAX=27000 (7.5h ceiling) covers the longer chain after the tier-1 pincode expansion.
-# (This template fires 0 4 = 04:00; the LIVE box was later hand-retuned to fire 00:30. Either
-#  way the predict-and-sleep lands the batch AT 12:00 — the fire clock is not the landing time.)
-0 4 * * * cd /opt/ecom-intel && LEAD_MAX=27000 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
+# 12:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28). Fire 00:30;
+# sweep starts at 12:00 - predicted lead and the batch lands AT 12:00. LEAD_MAX=39600
+# covers the longer chain after the tier-1 pincode expansion. The watchdog guards the
+# single 00:30 cron launch tick and only launches a bounded catch-up if the primary did not start.
+30 0 * * * cd /opt/ecom-intel && LEAD_MAX=39600 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
+*/20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 12:00 >> logs/sweep_watchdog.cron.log 2>&1   # noon-sweep catch-up watchdog (guards the single 00:30 launch tick)
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
 # 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).

@@ -3,7 +3,7 @@
 tools/cron/health_snapshot.py [--scope daily|weekly|monthly] [--json]
 
 Ecom Doctor — deterministic health collector. Reads EXISTING artifacts only
-(reviews/, baselines/, logs/, platforms/<p>/result.json, tools/pricematch/*.summary.json,
+(reviews/, baselines/, logs/, platforms/<p>/result*.json, tools/pricematch/*.summary.json,
 tools/cron/durations.jsonl). NO scraping, NO network, pure stdlib.
 
 It emits one structured JSON health report (schema posted on the doctor bus). The
@@ -84,6 +84,14 @@ def ist_date_str():
 def jload(path):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def result_path(platform):
+    if platform == "bigbasket":
+        pincode_path = os.path.join(PLATFORMS_DIR, platform, "result_pincode.json")
+        if os.path.isfile(pincode_path):
+            return pincode_path
+    return os.path.join(PLATFORMS_DIR, platform, "result.json")
 
 
 def parse_iso(s):
@@ -236,8 +244,8 @@ def collect_platforms(scope):
                                     f"{round(base['unique_skus'])}",
                     })
 
-            # --- freshness: result.json captured_at age ----------------------
-            rj = os.path.join(PLATFORMS_DIR, p, "result.json")
+            # --- freshness: result artifact captured_at age ------------------
+            rj = result_path(p)
             cap = None
             try:
                 d = jload(rj)
@@ -254,7 +262,7 @@ def collect_platforms(scope):
                         "severity": "YELLOW",
                         "platform": p,
                         "signal": "freshness",
-                        "detail": f"{p} result.json is {age_h}h old "
+                        "detail": f"{p} {os.path.basename(rj)} is {age_h}h old "
                                   f"(> {FRESHNESS_MAX_AGE_H}h threshold)",
                         "evidence": f"captured_at={cap}",
                     })

@@ -41,7 +41,7 @@ Usage:
     --heal         on BROKEN, run the bounded self-heal (re-run ./run.sh). Off by
                    default so a bare evaluation never triggers a heavy re-scrape.
     --run-id ID    RUN_ID to label the review/verdict (default: derived).
-    --result PATH  evaluate an explicit result.json (for tests / quarantined copies).
+    --result PATH  evaluate an explicit result artifact (for tests / quarantined copies).
     --no-baseline  when forcing --review, restore baselines/<p>.json afterwards so a
                    diagnostic/test review can never pollute the rolling baseline.
     --json         print the full combined verdict as JSON to stdout.
@@ -114,7 +114,13 @@ def num(v):
 
 
 def result_path(platform, override=None):
-    return override or os.path.join(PLATFORMS_DIR, platform, "result.json")
+    if override:
+        return override
+    if platform == "bigbasket":
+        pincode_path = os.path.join(PLATFORMS_DIR, platform, "result_pincode.json")
+        if os.path.isfile(pincode_path):
+            return pincode_path
+    return os.path.join(PLATFORMS_DIR, platform, "result.json")
 
 
 def load_result(platform, override=None):
@@ -462,17 +468,26 @@ def newest_review(platform):
         return None
 
 
+def baseline_paths_for(platform):
+    paths = [os.path.join(BASELINES_DIR, f"{platform}.json")]
+    if platform == "bigbasket":
+        paths.append(os.path.join(BASELINES_DIR, "bigbasket-pincode.json"))
+    return paths
+
+
 def call_review(platform, run_id, no_baseline=False):
     """CALL tools/review.py (subprocess). Returns its verdict dict (or None).
 
-    When no_baseline=True we snapshot baselines/<p>.json and restore it after, so a
+    When no_baseline=True we snapshot baselines/<p>*.json and restore it after, so a
     diagnostic/forced review can never pollute the rolling baseline (review.py
     updates the baseline on an OK verdict)."""
-    bpath = os.path.join(BASELINES_DIR, f"{platform}.json")
-    saved = None
-    if no_baseline and os.path.isfile(bpath):
-        with open(bpath) as f:
-            saved = f.read()
+    baseline_snapshots = {}
+    if no_baseline:
+        for bpath in baseline_paths_for(platform):
+            baseline_snapshots[bpath] = None
+            if os.path.isfile(bpath):
+                with open(bpath) as f:
+                    baseline_snapshots[bpath] = f.read()
     try:
         r = subprocess.run(
             [sys.executable, os.path.join(ROOT, "tools", "review.py"),
@@ -484,14 +499,15 @@ def call_review(platform, run_id, no_baseline=False):
         log(f"{platform}: review.py call failed (ignored): {e}")
     finally:
         if no_baseline:
-            try:
-                if saved is not None:
-                    with open(bpath, "w") as f:
-                        f.write(saved)
-                elif os.path.isfile(bpath):
-                    os.remove(bpath)  # review.py created it during the diag run
-            except Exception as e:
-                log(f"{platform}: baseline restore failed: {e}")
+            for bpath, saved in baseline_snapshots.items():
+                try:
+                    if saved is not None:
+                        with open(bpath, "w") as f:
+                            f.write(saved)
+                    elif os.path.isfile(bpath):
+                        os.remove(bpath)  # review.py created it during the diag run
+                except Exception as e:
+                    log(f"{platform}: baseline restore failed for {bpath}: {e}")
     rp = os.path.join(REVIEWS_DIR, f"{platform}-{run_id}.json")
     try:
         with open(rp) as f:
@@ -521,7 +537,7 @@ def combine(review_verdict, deep):
 
 
 def snapshot_last_good(platform, data, override=None):
-    """Keep last-good: copy a non-broken result.json aside for fallback serving."""
+    """Keep last-good: copy a non-broken result artifact aside for fallback serving."""
     try:
         src = result_path(platform, override)
         dst = os.path.join(PLATFORMS_DIR, platform, "result.last-good.json")
@@ -667,7 +683,7 @@ def heal(platform):
 def evaluate(platform, run_id=None, override=None, force_review=False,
              no_baseline=False):
     run_id = run_id or now_utc().strftime("%Y-%m-%d-%H%M")
-    # 1) load data (a missing/corrupt result.json is itself BROKEN)
+    # 1) load data (a missing/corrupt result artifact is itself BROKEN)
     try:
         data = load_result(platform, override)
     except Exception as e:
@@ -675,8 +691,8 @@ def evaluate(platform, run_id=None, override=None, force_review=False,
         verdict_out = {
             "platform": platform, "run_id": run_id,
             "verdict": "BROKEN", "review_verdict": None,
-            "reasons": [f"cannot load result.json: {e}"],
-            "deep_checks": deep, "diagnosis": f"result.json unreadable: {e}",
+            "reasons": [f"cannot load result artifact: {e}"],
+            "deep_checks": deep, "diagnosis": f"result artifact unreadable: {e}",
             "evaluated_at": now_utc().isoformat(),
         }
         write_guardian_verdict(platform, run_id, verdict_out)
