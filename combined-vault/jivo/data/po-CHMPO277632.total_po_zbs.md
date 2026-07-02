@@ -17,11 +17,11 @@ Up: [[po-CHMPO277632]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.09,20.0,SWIGGY,2026-03-26,65675,249.995,HYDERABAD,20.0,2026-03-12,2026-03-28,CHMPO277632,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65675,2026-06-30
-523.81,16.0,SWIGGY,2026-03-26,65676,550.000625,HYDERABAD,16.0,2026-03-12,2026-03-28,CHMPO277632,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65676,2026-06-30
-138.1,120.0,SWIGGY,2026-03-26,65677,145.00475,HYDERABAD,120.0,2026-03-12,2026-03-28,CHMPO277632,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65677,2026-06-30
-142.86,32.0,SWIGGY,2026-03-26,65678,150.0028125,HYDERABAD,32.0,2026-03-12,2026-03-28,CHMPO277632,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65678,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.09,20.0,SWIGGY,,2026-03-26,65675,249.995,HYDERABAD,20.0,2026-03-12,2026-03-28,CHMPO277632,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65675,2026-07-01
+523.81,16.0,SWIGGY,,2026-03-26,65676,550.000625,HYDERABAD,16.0,2026-03-12,2026-03-28,CHMPO277632,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65676,2026-07-01
+138.1,120.0,SWIGGY,,2026-03-26,65677,145.00475,HYDERABAD,120.0,2026-03-12,2026-03-28,CHMPO277632,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65677,2026-07-01
+142.86,32.0,SWIGGY,,2026-03-26,65678,150.0028125,HYDERABAD,32.0,2026-03-12,2026-03-28,CHMPO277632,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65678,2026-07-01
 ```
 
 ---

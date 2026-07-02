@@ -17,15 +17,15 @@ Up: [[po-CMFPO333489]]
 Canonical raw rows (8) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77559,215.0,MUMBAI,20.0,2026-06-24,2026-07-02,CMFPO333489,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77559,2026-06-30
-1228.57,0.0,SWIGGY,,77560,1290.0,MUMBAI,3.0,2026-06-24,2026-07-02,CMFPO333489,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77560,2026-06-30
-185.71,0.0,SWIGGY,,77561,195.0,MUMBAI,496.0,2026-06-24,2026-07-02,CMFPO333489,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77561,2026-06-30
-928.57,0.0,SWIGGY,,77562,975.0,MUMBAI,32.0,2026-06-24,2026-07-02,CMFPO333489,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77562,2026-06-30
-149.52,0.0,SWIGGY,,77563,157.0,MUMBAI,220.0,2026-06-24,2026-07-02,CMFPO333489,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77563,2026-06-30
-771.43,0.0,SWIGGY,,77564,810.0,MUMBAI,44.0,2026-06-24,2026-07-02,CMFPO333489,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77564,2026-06-30
-154.29,0.0,SWIGGY,,77565,162.0,MUMBAI,340.0,2026-06-24,2026-07-02,CMFPO333489,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77565,2026-06-30
-200.0,0.0,SWIGGY,,77566,210.0,MUMBAI,16.0,2026-06-24,2026-07-02,CMFPO333489,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77566,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-29,77559,214.998,MUMBAI,20.0,2026-06-24,2026-07-02,CMFPO333489,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77559,2026-07-01
+1228.57,3.0,SWIGGY,,2026-06-29,77560,1289.9985,MUMBAI,3.0,2026-06-24,2026-07-02,CMFPO333489,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77560,2026-07-01
+185.71,496.0,SWIGGY,,2026-06-29,77561,194.9955,MUMBAI,496.0,2026-06-24,2026-07-02,CMFPO333489,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77561,2026-07-01
+928.57,32.0,SWIGGY,,2026-06-29,77562,974.9985,MUMBAI,32.0,2026-06-24,2026-07-02,CMFPO333489,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77562,2026-07-01
+149.52,160.0,SWIGGY,,2026-06-29,77563,156.996,MUMBAI,220.0,2026-06-24,2026-07-02,CMFPO333489,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77563,2026-07-01
+771.43,44.0,SWIGGY,,2026-06-29,77564,810.0015,MUMBAI,44.0,2026-06-24,2026-07-02,CMFPO333489,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77564,2026-07-01
+154.29,340.0,SWIGGY,,2026-06-29,77565,162.0045,MUMBAI,340.0,2026-06-24,2026-07-02,CMFPO333489,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77565,2026-07-01
+200.0,0.0,SWIGGY,,2026-06-29,77566,210.0,MUMBAI,16.0,2026-06-24,2026-07-02,CMFPO333489,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77566,2026-07-01
 ```
 
 ---

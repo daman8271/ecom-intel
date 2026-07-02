@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR67C1036"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR67C1036
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34304
-- **doc_num:** 705260897
-- **doc_date:** 2026-05-31
-- **doc_total:** 11275.00
+- **doc_entry:** 34489
+- **doc_num:** 706260210
+- **doc_date:** 2026-06-11
+- **doc_total:** 38264.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C HARYANA
-- **ship_to_address:** HARYANA-122001IN
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD SONEPAT
+- **ship_to_address:** VILLAGE DHATURI  53//1 2 3 8 9 10 26  54//5/2/21  5/2/2/3 6/1/1SONIPAT-131039IN
 - **place_of_supply:** HR
-- **bp_gstin:** 
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR67C1036
+- **transporter_name:** Mahaveer Transport
+- **bilty_no:** 3446
+- **bilty_date:** 2026-06-25
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, SL0000029 - COLD PRESS 5 LTR + 1 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000184 - SUNFLOWER 5 LTR, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
-- **base_refs:** 1505264746
-- **total_quantity:** 21.000
-- **total_litres:** 75.500
+- **warehouses:** DL-FG
+- **item_summary:** FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
+- **base_refs:** 1706264512
+- **total_quantity:** 48.000
+- **total_litres:** 240.000
 - **total_boxes:** 0.000
-- **total_weight:** 37.314
-- **line_count:** 12
+- **total_weight:** 235.800
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 34304, "sap_invoice_doc_num": "705260897", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 448, "sap_invoice_doc_entry": 34489, "sap_invoice_doc_num": "706260210", "invoice_number": "706260210", "eway_bill": "701645699467", "invoice_weight": "235.800", "invoice_amount": "38264.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "240.000", "effective_month": "2026-06", "budget_delivery_point": "SONIPAT", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 283, "transporter_id": 64, "driver_id": null, "linked_vehicle_entry_id": 1049, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-25T09:07:25.699480Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-24", "priority": "HIGH", "transporter_name": "MAHAVIR TRANSPORT COMPANY", "transporter_gstin": "06AOUPJ8083N1ZZ", "contact_person": "ABC", "mobile_no": "9588567100", "vehicle_no": "HR67C1036", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3446", "bilty_date": "2026-06-25", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-25_at_2.11.21_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-25 at 2.11.21 PM.jpeg", "freight": "198.68", "total_freight": "198.68", "kanta_weight": null, "remarks": "25/06/2026 03:00 PM IST", "created_at": "2026-06-19T18:56:02.897747+05:30", "updated_at": "2026-06-25T14:37:25.721045+05:30"}
   ```

@@ -17,12 +17,12 @@ Up: [[po-NARPO04536]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,0.0,SWIGGY,2026-02-20,63330,219.99625,NAGPUR,16.0,2026-02-11,2026-02-20,NARPO04536,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63330,2026-06-30
-1047.62,4.0,SWIGGY,2026-02-20,63331,1100.0,NAGPUR,4.0,2026-02-11,2026-02-20,NARPO04536,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63331,2026-06-30
-714.28,0.0,SWIGGY,2026-02-20,63332,749.995,NAGPUR,4.0,2026-02-11,2026-02-20,NARPO04536,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63332,2026-06-30
-819.05,0.0,SWIGGY,2026-02-20,63333,860.0025,NAGPUR,4.0,2026-02-11,2026-02-20,NARPO04536,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63333,2026-06-30
-163.81,0.0,SWIGGY,2026-02-20,63334,172.0005,NAGPUR,20.0,2026-02-11,2026-02-20,NARPO04536,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63334,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,0.0,SWIGGY,,2026-02-20,63330,219.99625,NAGPUR,16.0,2026-02-11,2026-02-20,NARPO04536,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63330,2026-07-01
+1047.62,4.0,SWIGGY,,2026-02-20,63331,1100.001,NAGPUR,4.0,2026-02-11,2026-02-20,NARPO04536,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63331,2026-07-01
+714.28,0.0,SWIGGY,,2026-02-20,63332,749.995,NAGPUR,4.0,2026-02-11,2026-02-20,NARPO04536,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63332,2026-07-01
+819.05,0.0,SWIGGY,,2026-02-20,63333,860.0025,NAGPUR,4.0,2026-02-11,2026-02-20,NARPO04536,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63333,2026-07-01
+163.81,0.0,SWIGGY,,2026-02-20,63334,172.0005,NAGPUR,20.0,2026-02-11,2026-02-20,NARPO04536,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63334,2026-07-01
 ```
 
 ---

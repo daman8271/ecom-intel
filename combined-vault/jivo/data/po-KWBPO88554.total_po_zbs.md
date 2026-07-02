@@ -17,9 +17,9 @@ Up: [[po-KWBPO88554]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-19.43,0.0,SWIGGY,,72895,20.40125,KOLKATA,24.0,2026-05-13,2026-05-25,KWBPO88554,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72895,2026-06-30
-22.79,0.0,SWIGGY,,72896,31.90416667,KOLKATA,12.0,2026-05-13,2026-05-25,KWBPO88554,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72896,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+19.43,0.0,SWIGGY,,,72895,20.40125,KOLKATA,24.0,2026-05-13,2026-05-25,KWBPO88554,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72895,2026-07-01
+22.79,0.0,SWIGGY,,,72896,31.90416667,KOLKATA,12.0,2026-05-13,2026-05-25,KWBPO88554,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72896,2026-07-01
 ```
 
 ---

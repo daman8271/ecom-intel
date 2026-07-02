@@ -17,9 +17,9 @@ Up: [[po-LKOPO176817]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,0.0,SWIGGY,,77879,195.0,LUCKNOW,112.0,2026-06-26,2026-07-08,LKOPO176817,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77879,2026-06-30
-149.52,0.0,SWIGGY,,77880,157.0,LUCKNOW,80.0,2026-06-26,2026-07-08,LKOPO176817,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77880,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+185.71,0.0,SWIGGY,,,77879,194.9955,LUCKNOW,112.0,2026-06-26,2026-07-08,LKOPO176817,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77879,2026-07-01
+149.52,0.0,SWIGGY,,,77880,156.996,LUCKNOW,80.0,2026-06-26,2026-07-08,LKOPO176817,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77880,2026-07-01
 ```
 
 ---

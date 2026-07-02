@@ -17,13 +17,13 @@ Up: [[po-LKOPO142077]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-241.32,0.0,SWIGGY,,57880,253.386,LUCKNOW,20.0,2025-12-04,2025-12-31,LKOPO142077,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57880,2026-06-30
-443.1,0.0,SWIGGY,,57881,465.2546875,LUCKNOW,64.0,2025-12-04,2025-12-31,LKOPO142077,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57881,2026-06-30
-209.52,0.0,SWIGGY,,57882,219.9961806,LUCKNOW,144.0,2025-12-04,2025-12-31,LKOPO142077,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57882,2026-06-30
-116.19,0.0,SWIGGY,,57883,121.99952,LUCKNOW,500.0,2025-12-04,2025-12-31,LKOPO142077,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57883,2026-06-30
-182.86,0.0,SWIGGY,,57884,192.002875,LUCKNOW,80.0,2025-12-04,2025-12-31,LKOPO142077,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57884,2026-06-30
-172.38,0.0,SWIGGY,,57885,180.999,LUCKNOW,20.0,2025-12-04,2025-12-31,LKOPO142077,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57885,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+241.32,0.0,SWIGGY,,,57880,253.386,LUCKNOW,20.0,2025-12-04,2025-12-31,LKOPO142077,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57880,2026-07-01
+443.1,0.0,SWIGGY,,,57881,465.2546875,LUCKNOW,64.0,2025-12-04,2025-12-31,LKOPO142077,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57881,2026-07-01
+209.52,0.0,SWIGGY,,,57882,219.9961806,LUCKNOW,144.0,2025-12-04,2025-12-31,LKOPO142077,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57882,2026-07-01
+116.19,0.0,SWIGGY,,,57883,121.99952,LUCKNOW,500.0,2025-12-04,2025-12-31,LKOPO142077,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57883,2026-07-01
+182.86,0.0,SWIGGY,,,57884,192.002875,LUCKNOW,80.0,2025-12-04,2025-12-31,LKOPO142077,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57884,2026-07-01
+172.38,0.0,SWIGGY,,,57885,180.999,LUCKNOW,20.0,2025-12-04,2025-12-31,LKOPO142077,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57885,2026-07-01
 ```
 
 ---

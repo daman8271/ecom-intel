@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "RJ11GD2865"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# RJ11GD2865
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34977
-- **doc_num:** 606260154
-- **doc_date:** 2026-06-19
-- **doc_total:** 4826568.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000592
-- **card_name:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED
-- **ship_to_code:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN
-- **ship_to_address:** ELECTRICITY CITY POSTBENGALURU-560100IN
-- **place_of_supply:** KT
-- **bp_gstin:** 29AAICK3556G1Z9
+- **doc_entry:** 35141
+- **doc_num:** 706260592
+- **doc_date:** 2026-06-22
+- **doc_total:** 46800.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000912
+- **card_name:** AMAZON (B2C -MAY-JULY)
+- **ship_to_code:** AMAZON B2C MAHARASHTRA
+- **ship_to_address:** -400101IN
+- **place_of_supply:** MH
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** RJ11GD2865
-- **transporter_name:** Abhiman Express
-- **bilty_no:** 1123
-- **bilty_date:** 2026-06-21
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000128 - JIVO GOLD 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000227 - RICE BRAN 1L 16 PCS, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, FG0000376 - SESAME OIL 1 LTR 20 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000015 - REFINED OIL 15 LTR
-- **base_refs:** 1706264572
-- **total_quantity:** 12192.000
-- **total_litres:** 19952.000
+- **warehouses:** DL-EC
+- **item_summary:** FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000010 - CANOLA 1 LTR PACK OF 3, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000012 - CANOLA 5 LTR + 2 LTR, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000026 - COLD PRESS 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000040 - COLD PRESS GROUDNUT 5 LTR + 1 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000041 - COLD PRESS GROUNDNUT 5 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000064 - EXTRA LIGHT 5 LTR + 1 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000069 - EXTRA VIRGIN 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000073 - EXTRA VIRGIN 2 LTR, FG0000155 - EXTRA VIRGIN 2 LTR 10 PCS HANDLE
+- **base_refs:** 1506264623
+- **total_quantity:** 78.000
+- **total_litres:** 190.800
 - **total_boxes:** 0.000
-- **total_weight:** 20587.295
-- **line_count:** 15
+- **total_weight:** 104.150
+- **line_count:** 25
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 492, "sap_invoice_doc_entry": 34977, "sap_invoice_doc_num": "606260154", "invoice_number": "606260154", "eway_bill": "322276218717", "invoice_weight": "20587.295", "invoice_amount": "4826568.00", "place_of_supply": "KT", "location": "", "product_variety": "Oil", "total_litres": "215015.000", "effective_month": "2026-06", "budget_delivery_point": "BENGALURU", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 296, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 901, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-21T09:13:20.048496Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-20", "priority": "", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ11GD2865", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "2256", "bilty_date": "2026-06-21", "bilty_attachment": "/media/sales_dispatch/attachments/LR-260466_1.pdf", "bilty_attachment_name": "LR-260466 (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-21T01:04:25.765578+05:30", "updated_at": "2026-06-21T14:43:20.060961+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35141, "sap_invoice_doc_num": "706260592", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

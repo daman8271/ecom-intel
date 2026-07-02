@@ -17,10 +17,10 @@ Up: [[po-JCEPO126657]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,9.0,SWIGGY,2025-09-16,50899,1323.0,COIMBATORE,9.0,2025-09-04,2025-09-19,JCEPO126657,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50899,2026-06-30
-141.9,60.0,SWIGGY,2025-09-16,50900,148.9951667,COIMBATORE,60.0,2025-09-04,2025-09-19,JCEPO126657,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50900,2026-06-30
-784.76,10.0,SWIGGY,2025-09-16,50901,823.998,COIMBATORE,10.0,2025-09-04,2025-09-19,JCEPO126657,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50901,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1260.0,9.0,SWIGGY,,2025-09-16,50899,1323.0,COIMBATORE,9.0,2025-09-04,2025-09-19,JCEPO126657,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50899,2026-07-01
+141.9,60.0,SWIGGY,,2025-09-16,50900,148.9951667,COIMBATORE,60.0,2025-09-04,2025-09-19,JCEPO126657,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50900,2026-07-01
+784.76,10.0,SWIGGY,,2025-09-16,50901,823.998,COIMBATORE,10.0,2025-09-04,2025-09-19,JCEPO126657,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50901,2026-07-01
 ```
 
 ---

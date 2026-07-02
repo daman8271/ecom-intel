@@ -17,11 +17,11 @@ Up: [[po-VIAPO58090]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-542.86,0.0,SWIGGY,2026-05-01,68868,570.0,VIZAG,1.0,2026-04-12,2026-05-10,VIAPO58090,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68868,2026-06-30
-914.29,20.0,SWIGGY,2026-05-01,68869,960.0045,VIZAG,20.0,2026-04-12,2026-05-10,VIAPO58090,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68869,2026-06-30
-809.52,4.0,SWIGGY,2026-05-01,68870,849.995,VIZAG,4.0,2026-04-12,2026-05-10,VIAPO58090,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68870,2026-06-30
-866.67,0.0,SWIGGY,2026-05-01,68871,910.003,VIZAG,10.0,2026-04-12,2026-05-10,VIAPO58090,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68871,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+542.86,0.0,SWIGGY,,2026-05-01,68868,570.003,VIZAG,1.0,2026-04-12,2026-05-10,VIAPO58090,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68868,2026-07-01
+914.29,20.0,SWIGGY,,2026-05-01,68869,960.0045,VIZAG,20.0,2026-04-12,2026-05-10,VIAPO58090,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68869,2026-07-01
+809.52,4.0,SWIGGY,,2026-05-01,68870,849.995,VIZAG,4.0,2026-04-12,2026-05-10,VIAPO58090,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68870,2026-07-01
+866.67,0.0,SWIGGY,,2026-05-01,68871,910.003,VIZAG,10.0,2026-04-12,2026-05-10,VIAPO58090,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68871,2026-07-01
 ```
 
 ---

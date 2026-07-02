@@ -17,13 +17,13 @@ Up: [[po-CMFPO219920]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-397.14,0.0,SWIGGY,,51879,416.9971875,MUMBAI,32.0,2025-09-11,2025-09-22,CMFPO219920,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 L,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51879,2026-06-30
-1023.81,0.0,SWIGGY,,51880,1075.0,MUMBAI,4.0,2025-09-11,2025-09-22,CMFPO219920,,333818,Jivo SO OLive Oil 5L 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51880,2026-06-30
-190.48,0.0,SWIGGY,,51881,200.00375,MUMBAI,48.0,2025-09-11,2025-09-22,CMFPO219920,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51881,2026-06-30
-642.86,0.0,SWIGGY,,51882,675.0025,MUMBAI,8.0,2025-09-11,2025-09-22,CMFPO219920,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51882,2026-06-30
-666.67,0.0,SWIGGY,,51883,700.0034375,MUMBAI,32.0,2025-09-11,2025-09-22,CMFPO219920,,766072,Jivo Ricebran Oil 5L 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51883,2026-06-30
-784.76,0.0,SWIGGY,,51884,823.998,MUMBAI,5.0,2025-09-11,2025-09-22,CMFPO219920,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51884,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+397.14,0.0,SWIGGY,,,51879,416.9971875,MUMBAI,32.0,2025-09-11,2025-09-22,CMFPO219920,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 L,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51879,2026-07-01
+1023.81,0.0,SWIGGY,,,51880,1075.0005,MUMBAI,4.0,2025-09-11,2025-09-22,CMFPO219920,,333818,Jivo SO OLive Oil 5L 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51880,2026-07-01
+190.48,0.0,SWIGGY,,,51881,200.00375,MUMBAI,48.0,2025-09-11,2025-09-22,CMFPO219920,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51881,2026-07-01
+642.86,0.0,SWIGGY,,,51882,675.0025,MUMBAI,8.0,2025-09-11,2025-09-22,CMFPO219920,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51882,2026-07-01
+666.67,0.0,SWIGGY,,,51883,700.0034375,MUMBAI,32.0,2025-09-11,2025-09-22,CMFPO219920,,766072,Jivo Ricebran Oil 5L 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51883,2026-07-01
+784.76,0.0,SWIGGY,,,51884,823.998,MUMBAI,5.0,2025-09-11,2025-09-22,CMFPO219920,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:51884,2026-07-01
 ```
 
 ---

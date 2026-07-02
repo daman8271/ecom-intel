@@ -17,10 +17,10 @@ Up: [[po-ETPPO21653]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,16.0,SWIGGY,2026-01-31,61252,550.000625,NOIDA,16.0,2026-01-15,2026-02-07,ETPPO21653,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61252,2026-06-30
-409.52,48.0,SWIGGY,2026-01-31,61253,429.99625,NOIDA,48.0,2026-01-15,2026-02-07,ETPPO21653,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61253,2026-06-30
-138.09,20.0,SWIGGY,2026-01-31,61254,144.995,NOIDA,20.0,2026-01-15,2026-02-07,ETPPO21653,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61254,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,16.0,SWIGGY,,2026-01-31,61252,550.000625,NOIDA,16.0,2026-01-15,2026-02-07,ETPPO21653,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61252,2026-07-01
+409.52,48.0,SWIGGY,,2026-01-31,61253,429.99625,NOIDA,48.0,2026-01-15,2026-02-07,ETPPO21653,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61253,2026-07-01
+138.09,20.0,SWIGGY,,2026-01-31,61254,144.995,NOIDA,20.0,2026-01-15,2026-02-07,ETPPO21653,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61254,2026-07-01
 ```
 
 ---

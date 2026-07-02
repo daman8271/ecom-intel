@@ -23,14 +23,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
  "platform": "swiggy",
  "series": [
   {
-   "commodity_ltrs": 80267.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 48710.75,
-   "total_ltrs": 128977.75,
-   "year": 2026
-  },
-  {
    "commodity_ltrs": 69079.0,
    "label": "Feb '26",
    "month": 2,
@@ -63,11 +55,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 74696.0,
+   "commodity_ltrs": 83163.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 69511.0,
-   "total_ltrs": 144207.0,
+   "premium_ltrs": 78422.0,
+   "total_ltrs": 161585.0,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

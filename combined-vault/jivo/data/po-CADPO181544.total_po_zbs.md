@@ -17,11 +17,11 @@ Up: [[po-CADPO181544]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,64.0,SWIGGY,2026-02-05,62165,219.99625,AHMEDABAD,64.0,2026-01-29,2026-02-06,CADPO181544,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62165,2026-06-30
-138.1,360.0,SWIGGY,2026-02-05,62166,145.00475,AHMEDABAD,360.0,2026-01-29,2026-02-06,CADPO181544,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62166,2026-06-30
-690.48,0.0,SWIGGY,2026-02-05,62167,725.0039286,AHMEDABAD,28.0,2026-01-29,2026-02-06,CADPO181544,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62167,2026-06-30
-2619.05,0.0,SWIGGY,2026-02-05,62168,2750.0025,AHMEDABAD,4.0,2026-01-29,2026-02-06,CADPO181544,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62168,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,64.0,SWIGGY,,2026-02-05,62165,219.99625,AHMEDABAD,64.0,2026-01-29,2026-02-06,CADPO181544,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62165,2026-07-01
+138.1,360.0,SWIGGY,,2026-02-05,62166,145.00475,AHMEDABAD,360.0,2026-01-29,2026-02-06,CADPO181544,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62166,2026-07-01
+690.48,0.0,SWIGGY,,2026-02-05,62167,725.0039286,AHMEDABAD,28.0,2026-01-29,2026-02-06,CADPO181544,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62167,2026-07-01
+2619.05,0.0,SWIGGY,,2026-02-05,62168,2750.0025,AHMEDABAD,4.0,2026-01-29,2026-02-06,CADPO181544,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62168,2026-07-01
 ```
 
 ---

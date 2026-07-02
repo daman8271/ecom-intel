@@ -17,10 +17,10 @@ Up: [[po-CIMPO83122]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,160.0,SWIGGY,2026-01-27,61886,219.9961875,MUMBAI,160.0,2026-01-24,2026-02-02,CIMPO83122,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61886,2026-06-30
-144.76,40.0,SWIGGY,2026-01-27,61887,151.998,MUMBAI,40.0,2026-01-24,2026-02-02,CIMPO83122,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61887,2026-06-30
-152.38,60.0,SWIGGY,2026-01-27,61888,159.999,MUMBAI,60.0,2026-01-24,2026-02-02,CIMPO83122,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61888,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,160.0,SWIGGY,,2026-01-27,61886,219.9961875,MUMBAI,160.0,2026-01-24,2026-02-02,CIMPO83122,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61886,2026-07-01
+144.76,40.0,SWIGGY,,2026-01-27,61887,151.998,MUMBAI,40.0,2026-01-24,2026-02-02,CIMPO83122,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61887,2026-07-01
+152.38,60.0,SWIGGY,,2026-01-27,61888,159.999,MUMBAI,60.0,2026-01-24,2026-02-02,CIMPO83122,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:61888,2026-07-01
 ```
 
 ---

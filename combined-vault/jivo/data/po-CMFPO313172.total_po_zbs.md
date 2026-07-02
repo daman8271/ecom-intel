@@ -17,12 +17,12 @@ Up: [[po-CMFPO313172]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-228.57,60.0,SWIGGY,2026-04-29,69902,239.9985,MUMBAI,60.0,2026-04-21,2026-04-30,CMFPO313172,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69902,2026-06-30
-514.29,16.0,SWIGGY,2026-04-29,69903,540.004375,MUMBAI,16.0,2026-04-21,2026-04-30,CMFPO313172,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69903,2026-06-30
-390.48,16.0,SWIGGY,2026-04-29,69904,410.00375,MUMBAI,16.0,2026-04-21,2026-04-30,CMFPO313172,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69904,2026-06-30
-738.1,8.0,SWIGGY,2026-04-29,69905,775.005,MUMBAI,8.0,2026-04-21,2026-04-30,CMFPO313172,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69905,2026-06-30
-761.9,10.0,SWIGGY,2026-04-29,69906,799.995,MUMBAI,10.0,2026-04-21,2026-04-30,CMFPO313172,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69906,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+228.57,60.0,SWIGGY,,2026-04-29,69902,239.9985,MUMBAI,60.0,2026-04-21,2026-04-30,CMFPO313172,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69902,2026-07-01
+514.29,16.0,SWIGGY,,2026-04-29,69903,540.004375,MUMBAI,16.0,2026-04-21,2026-04-30,CMFPO313172,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69903,2026-07-01
+390.48,16.0,SWIGGY,,2026-04-29,69904,410.00375,MUMBAI,16.0,2026-04-21,2026-04-30,CMFPO313172,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69904,2026-07-01
+738.1,8.0,SWIGGY,,2026-04-29,69905,775.005,MUMBAI,8.0,2026-04-21,2026-04-30,CMFPO313172,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69905,2026-07-01
+761.9,10.0,SWIGGY,,2026-04-29,69906,799.995,MUMBAI,10.0,2026-04-21,2026-04-30,CMFPO313172,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69906,2026-07-01
 ```
 
 ---

@@ -17,11 +17,11 @@ Up: [[po-CADPO182085]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,12.0,SWIGGY,2026-02-07,62431,1499.998333,AHMEDABAD,12.0,2026-01-31,2026-02-09,CADPO182085,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62431,2026-06-30
-409.52,32.0,SWIGGY,2026-02-07,62432,429.99625,AHMEDABAD,32.0,2026-01-31,2026-02-09,CADPO182085,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62432,2026-06-30
-138.1,240.0,SWIGGY,2026-02-07,62433,145.00475,AHMEDABAD,240.0,2026-01-31,2026-02-09,CADPO182085,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62433,2026-06-30
-819.05,0.0,SWIGGY,2026-02-07,62434,860.0022727,AHMEDABAD,22.0,2026-01-31,2026-02-09,CADPO182085,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62434,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1428.57,12.0,SWIGGY,,2026-02-07,62431,1499.998333,AHMEDABAD,12.0,2026-01-31,2026-02-09,CADPO182085,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62431,2026-07-01
+409.52,32.0,SWIGGY,,2026-02-07,62432,429.99625,AHMEDABAD,32.0,2026-01-31,2026-02-09,CADPO182085,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62432,2026-07-01
+138.1,240.0,SWIGGY,,2026-02-07,62433,145.00475,AHMEDABAD,240.0,2026-01-31,2026-02-09,CADPO182085,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62433,2026-07-01
+819.05,0.0,SWIGGY,,2026-02-07,62434,860.0022727,AHMEDABAD,22.0,2026-01-31,2026-02-09,CADPO182085,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62434,2026-07-01
 ```
 
 ---

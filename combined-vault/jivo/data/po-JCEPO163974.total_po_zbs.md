@@ -17,9 +17,9 @@ Up: [[po-JCEPO163974]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,16.0,SWIGGY,2026-04-27,65655,429.99625,COIMBATORE,16.0,2026-03-12,2026-04-29,JCEPO163974,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65655,2026-06-30
-690.48,44.0,SWIGGY,2026-04-27,65656,725.0038636,COIMBATORE,44.0,2026-03-12,2026-04-29,JCEPO163974,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65656,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,16.0,SWIGGY,,2026-04-27,65655,429.99625,COIMBATORE,16.0,2026-03-12,2026-04-29,JCEPO163974,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65655,2026-07-01
+690.48,44.0,SWIGGY,,2026-04-27,65656,725.0038636,COIMBATORE,44.0,2026-03-12,2026-04-29,JCEPO163974,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65656,2026-07-01
 ```
 
 ---

@@ -17,14 +17,14 @@ Up: [[po-PCHPO141581]]
 Canonical raw rows (7) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,0.0,SWIGGY,,52216,222.0015,CHANDIGARH,20.0,2025-09-18,2025-10-01,PCHPO141581,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52216,2026-06-30
-1260.0,0.0,SWIGGY,,52217,1323.0,CHANDIGARH,6.0,2025-09-18,2025-10-01,PCHPO141581,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52217,2026-06-30
-504.76,0.0,SWIGGY,,52218,529.998125,CHANDIGARH,16.0,2025-09-18,2025-10-01,PCHPO141581,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52218,2026-06-30
-397.14,0.0,SWIGGY,,52219,416.996875,CHANDIGARH,16.0,2025-09-18,2025-10-01,PCHPO141581,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52219,2026-06-30
-196.19,0.0,SWIGGY,,52220,206.0,CHANDIGARH,4.0,2025-09-18,2025-10-01,PCHPO141581,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52220,2026-06-30
-190.48,0.0,SWIGGY,,52221,200.00375,CHANDIGARH,16.0,2025-09-18,2025-10-01,PCHPO141581,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52221,2026-06-30
-114.29,0.0,SWIGGY,,52222,120.0042778,CHANDIGARH,180.0,2025-09-18,2025-10-01,PCHPO141581,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52222,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,0.0,SWIGGY,,,52216,222.0015,CHANDIGARH,20.0,2025-09-18,2025-10-01,PCHPO141581,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52216,2026-07-01
+1260.0,0.0,SWIGGY,,,52217,1323.0,CHANDIGARH,6.0,2025-09-18,2025-10-01,PCHPO141581,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52217,2026-07-01
+504.76,0.0,SWIGGY,,,52218,529.998125,CHANDIGARH,16.0,2025-09-18,2025-10-01,PCHPO141581,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52218,2026-07-01
+397.14,0.0,SWIGGY,,,52219,416.996875,CHANDIGARH,16.0,2025-09-18,2025-10-01,PCHPO141581,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52219,2026-07-01
+196.19,0.0,SWIGGY,,,52220,205.9995,CHANDIGARH,4.0,2025-09-18,2025-10-01,PCHPO141581,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52220,2026-07-01
+190.48,0.0,SWIGGY,,,52221,200.00375,CHANDIGARH,16.0,2025-09-18,2025-10-01,PCHPO141581,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52221,2026-07-01
+114.29,0.0,SWIGGY,,,52222,120.0042778,CHANDIGARH,180.0,2025-09-18,2025-10-01,PCHPO141581,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52222,2026-07-01
 ```
 
 ---

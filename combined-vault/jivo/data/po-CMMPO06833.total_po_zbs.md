@@ -17,9 +17,9 @@ Up: [[po-CMMPO06833]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-761.9,36.0,SWIGGY,2026-04-08,66660,799.99525,HYDERABAD,40.0,2026-03-26,2026-04-11,CMMPO06833,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66660,2026-06-30
-847.62,0.0,SWIGGY,2026-04-08,66661,890.001,HYDERABAD,90.0,2026-03-26,2026-04-11,CMMPO06833,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66661,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+761.9,36.0,SWIGGY,,2026-04-08,66660,799.99525,HYDERABAD,40.0,2026-03-26,2026-04-11,CMMPO06833,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66660,2026-07-01
+847.62,0.0,SWIGGY,,2026-04-08,66661,890.001,HYDERABAD,90.0,2026-03-26,2026-04-11,CMMPO06833,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66661,2026-07-01
 ```
 
 ---

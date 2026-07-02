@@ -108,10 +108,10 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 1.0,
+   "delta_pct": 8.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 14280.0,
+   "ltrs": 15260.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 14135.0
   },

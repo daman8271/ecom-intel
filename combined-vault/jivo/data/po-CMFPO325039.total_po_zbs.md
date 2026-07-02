@@ -17,8 +17,8 @@ Up: [[po-CMFPO325039]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1009.52,10.0,SWIGGY,2026-05-29,74699,1059.996,MUMBAI,10.0,2026-05-28,2026-06-06,CMFPO325039,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74699,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1009.52,10.0,SWIGGY,,2026-05-29,74699,1059.996,MUMBAI,10.0,2026-05-28,2026-06-06,CMFPO325039,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74699,2026-07-01
 ```
 
 ---

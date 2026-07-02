@@ -17,10 +17,10 @@ Up: [[po-GWAPO24011]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-564.16,0.0,SWIGGY,,65657,592.368125,GUWAHATI,32.0,2026-03-12,2026-03-28,GWAPO24011,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65657,2026-06-30
-209.52,0.0,SWIGGY,,65658,219.99625,GUWAHATI,32.0,2026-03-12,2026-03-28,GWAPO24011,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65658,2026-06-30
-182.86,0.0,SWIGGY,,65659,192.00275,GUWAHATI,40.0,2026-03-12,2026-03-28,GWAPO24011,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65659,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+564.16,0.0,SWIGGY,,,65657,592.368125,GUWAHATI,32.0,2026-03-12,2026-03-28,GWAPO24011,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65657,2026-07-01
+209.52,0.0,SWIGGY,,,65658,219.99625,GUWAHATI,32.0,2026-03-12,2026-03-28,GWAPO24011,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65658,2026-07-01
+182.86,0.0,SWIGGY,,,65659,192.00275,GUWAHATI,40.0,2026-03-12,2026-03-28,GWAPO24011,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65659,2026-07-01
 ```
 
 ---

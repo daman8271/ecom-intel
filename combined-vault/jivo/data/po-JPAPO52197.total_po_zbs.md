@@ -17,10 +17,10 @@ Up: [[po-JPAPO52197]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,0.0,SWIGGY,,73218,225.0045,JAIPUR,20.0,2026-05-16,2026-05-24,JPAPO52197,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73218,2026-06-30
-195.24,0.0,SWIGGY,,73219,205.0016667,JAIPUR,12.0,2026-05-16,2026-05-24,JPAPO52197,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73219,2026-06-30
-809.52,0.0,SWIGGY,,73220,849.99625,JAIPUR,32.0,2026-05-16,2026-05-24,JPAPO52197,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73220,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,0.0,SWIGGY,,,73218,225.0045,JAIPUR,20.0,2026-05-16,2026-05-24,JPAPO52197,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73218,2026-07-01
+195.24,0.0,SWIGGY,,,73219,205.0016667,JAIPUR,12.0,2026-05-16,2026-05-24,JPAPO52197,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73219,2026-07-01
+809.52,0.0,SWIGGY,,,73220,849.99625,JAIPUR,32.0,2026-05-16,2026-05-24,JPAPO52197,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73220,2026-07-01
 ```
 
 ---

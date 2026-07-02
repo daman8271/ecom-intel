@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-natural-minerals-water-mineral-water-na
-display_name: JIVO Natural Minerals Water Mineral Water
+display_name: Jivo Natural Minerals Water Mineral Water Na
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-25
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Natural Minerals Water Mineral Water**
+**Jivo Natural Minerals Water Mineral Water Na**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹22

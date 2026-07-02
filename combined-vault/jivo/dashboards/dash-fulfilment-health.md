@@ -29,54 +29,54 @@ Up: [[dashboards-index]]
    "slug": "citymall"
   },
   {
-   "fill_rate": 41.8,
-   "filled_ltrs": 187932.5,
+   "fill_rate": 50.1,
+   "filled_ltrs": 229629.0,
    "format": "AMAZON",
-   "miss_rate": 8.6,
-   "missed_ltrs": 38573.3,
-   "ordered_ltrs": 449088.81,
-   "po_count": 121,
+   "miss_rate": 5.6,
+   "missed_ltrs": 25482.5,
+   "ordered_ltrs": 457995.56,
+   "po_count": 124,
    "slug": "amazon"
   },
   {
-   "fill_rate": 57.2,
-   "filled_ltrs": 122326.0,
+   "fill_rate": 54.3,
+   "filled_ltrs": 137046.0,
    "format": "SWIGGY",
-   "miss_rate": 24.9,
-   "missed_ltrs": 53359.0,
-   "ordered_ltrs": 214020.0,
-   "po_count": 467,
+   "miss_rate": 21.8,
+   "missed_ltrs": 55095.0,
+   "ordered_ltrs": 252333.0,
+   "po_count": 516,
    "slug": "swiggy"
   },
   {
-   "fill_rate": 76.5,
-   "filled_ltrs": 17806.0,
-   "format": "FLIPKART GROCERY",
-   "miss_rate": 5.9,
-   "missed_ltrs": 1366.0,
-   "ordered_ltrs": 23288.0,
-   "po_count": 32,
-   "slug": "flipkart_grocery"
-  },
-  {
-   "fill_rate": 77.8,
-   "filled_ltrs": 38846.0,
+   "fill_rate": 79.0,
+   "filled_ltrs": 39762.0,
    "format": "BLINKIT",
-   "miss_rate": 20.3,
-   "missed_ltrs": 10128.0,
-   "ordered_ltrs": 49942.0,
-   "po_count": 121,
+   "miss_rate": 19.5,
+   "missed_ltrs": 9800.0,
+   "ordered_ltrs": 50306.0,
+   "po_count": 126,
    "slug": "blinkit"
   },
   {
-   "fill_rate": 82.8,
-   "filled_ltrs": 78139.8,
+   "fill_rate": 81.5,
+   "filled_ltrs": 87082.8,
    "format": "ZEPTO",
-   "miss_rate": 12.4,
-   "missed_ltrs": 11731.4,
-   "ordered_ltrs": 94340.6,
-   "po_count": 130,
+   "miss_rate": 11.7,
+   "missed_ltrs": 12531.4,
+   "ordered_ltrs": 106867.8,
+   "po_count": 148,
    "slug": "zepto"
+  },
+  {
+   "fill_rate": 82.4,
+   "filled_ltrs": 19626.0,
+   "format": "FLIPKART GROCERY",
+   "miss_rate": 9.2,
+   "missed_ltrs": 2182.0,
+   "ordered_ltrs": 23828.0,
+   "po_count": 40,
+   "slug": "flipkart_grocery"
   },
   {
    "fill_rate": 86.1,
@@ -102,17 +102,17 @@ Up: [[dashboards-index]]
  "errors": [],
  "platform": null,
  "total": {
-  "fill_rate": 53.0,
-  "filled_ltrs": 502754.3,
-  "miss_rate": 12.7,
-  "missed_ltrs": 120605.7,
-  "ordered_ltrs": 949244.41,
-  "po_count": 965
+  "fill_rate": 56.5,
+  "filled_ltrs": 570849.8,
+  "miss_rate": 10.9,
+  "missed_ltrs": 110538.9,
+  "ordered_ltrs": 1009895.36,
+  "po_count": 1048
  },
  "window": {
-  "end": "2026-06-23",
+  "end": "2026-06-24",
   "lag_days": 7,
-  "start": "2026-05-24",
+  "start": "2026-05-25",
   "window_days": 30
  }
 }

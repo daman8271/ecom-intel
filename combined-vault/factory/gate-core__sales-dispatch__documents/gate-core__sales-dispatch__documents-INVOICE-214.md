@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR63F7981"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR63F7981
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35299
-- **doc_num:** 706260689
-- **doc_date:** 2026-06-24
-- **doc_total:** 444378.00
+- **doc_entry:** 35452
+- **doc_num:** 706260780
+- **doc_date:** 2026-06-26
+- **doc_total:** 351036.00
 - **branch_id:** 1
 - **branch_name:** DELHI
 - **card_code:** CUSTA000048
 - **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD PUNE
-- **ship_to_address:** GATE NO. 185,186,188,189,190,197,198,200,201,202,  NDR BIGBOX PRIVATE LIMITED MAWAL SUDHAVADIPUNE-412109IN
-- **place_of_supply:** MH
-- **bp_gstin:** 27AAECR0564M1Z3
+- **ship_to_code:** RK WORLDINFOCOM PVT LTD HARYANA
+- **ship_to_address:** LLP VILLAGE- FARRUKHNAGAR TEHSIL-FARRUKH ESR SOHNA LOGISTICS PARK VILLAGE RAHAKA  BLOCK J2,FARUKHNAGAR LOGISTICS PARKS EMPORIUM INDUSTRIAL PARK INDIA PVT LTDGURUGRAM-122506IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR63F7981
+- **transporter_name:** Amazon vehicle pickup
+- **bilty_no:** 780
+- **bilty_date:** 2026-06-27
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** DL-FG
-- **item_summary:** FG0000106 - MUSTARD KACHHI GHANI 1 LTR POUCH 12 PCS, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN
-- **base_refs:** 1706264660
-- **total_quantity:** 1134.000
-- **total_litres:** 1952.000
+- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS
+- **base_refs:** 1706264698
+- **total_quantity:** 2100.000
+- **total_litres:** 2100.000
 - **total_boxes:** 0.000
-- **total_weight:** 1962.986
-- **line_count:** 12
+- **total_weight:** 2038.533
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 750, "sap_invoice_doc_entry": 35299, "sap_invoice_doc_num": "706260689", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "location": "R K WorldInfocom Pvt Ltd NDR BIGBOX PRIVATE LIMITED,Gat No. 185,186,188,189,190,197,198,200,201,202, Mawal Sudhavadi Pune 412109", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": "2026-06-29T14:28:51.449810Z", "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": "2026-06-30", "priority": "HIGH", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-29T19:58:51.444875+05:30", "updated_at": "2026-06-29T19:58:51.449810+05:30"}
+  {"id": 662, "sap_invoice_doc_entry": 35452, "sap_invoice_doc_num": "706260780", "invoice_number": "706260780", "eway_bill": "741646386643", "invoice_weight": "2038.533", "invoice_amount": "351036.00", "place_of_supply": "HR", "location": "Delivery Address: DED5 R K WorldInfocom Pvt Ltd Emporium Industrial Park India Pvt Ltd ESR Sohna Logistics Park, Village Rahaka GURUGRAM 122103 India", "product_variety": "Oil", "total_litres": "2100.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 333, "transporter_id": 81, "driver_id": null, "linked_vehicle_entry_id": 1176, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-27T12:00:52.016107Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-27", "priority": "HIGH", "transporter_name": "Amazon Freight (ASSPL)", "transporter_gstin": "29AAICA3918J1ZE", "contact_person": "rishabh", "mobile_no": "8802345622", "vehicle_no": "HR63F7981", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "na", "bilty_date": "2026-06-27", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260779.pdf", "bilty_attachment_name": "AR - 706260779.pdf", "freight": "576.22", "total_freight": "576.22", "kanta_weight": null, "remarks": "28/06/2026 04:00 PM IST", "created_at": "2026-06-26T19:30:50.710244+05:30", "updated_at": "2026-06-27T17:30:52.028048+05:30"}
   ```

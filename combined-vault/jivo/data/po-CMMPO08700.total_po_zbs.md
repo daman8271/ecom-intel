@@ -17,10 +17,10 @@ Up: [[po-CMMPO08700]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,32.0,SWIGGY,2026-05-14,71509,499.999375,HYDERABAD,32.0,2026-05-03,2026-05-19,CMMPO08700,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71509,2026-06-30
-738.1,56.0,SWIGGY,2026-05-14,71510,775.0048214,HYDERABAD,56.0,2026-05-03,2026-05-19,CMMPO08700,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71510,2026-06-30
-809.52,20.0,SWIGGY,2026-05-14,71511,849.996,HYDERABAD,20.0,2026-05-03,2026-05-19,CMMPO08700,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71511,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,32.0,SWIGGY,,2026-05-14,71509,499.999375,HYDERABAD,32.0,2026-05-03,2026-05-19,CMMPO08700,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71509,2026-07-01
+738.1,56.0,SWIGGY,,2026-05-14,71510,775.0048214,HYDERABAD,56.0,2026-05-03,2026-05-19,CMMPO08700,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71510,2026-07-01
+809.52,20.0,SWIGGY,,2026-05-14,71511,849.996,HYDERABAD,20.0,2026-05-03,2026-05-19,CMMPO08700,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71511,2026-07-01
 ```
 
 ---

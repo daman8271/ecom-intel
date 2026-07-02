@@ -17,10 +17,10 @@ Up: [[po-PCHPO151128]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,0.0,SWIGGY,2025-10-28,54305,529.9981013,CHANDIGARH,79.0,2025-10-17,2025-10-31,PCHPO151128,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54305,2026-06-30
-784.76,1.0,SWIGGY,2025-10-28,54306,824.0,CHANDIGARH,1.0,2025-10-17,2025-10-31,PCHPO151128,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54306,2026-06-30
-133.33,48.0,SWIGGY,2025-10-28,54307,139.9966667,CHANDIGARH,48.0,2025-10-17,2025-10-31,PCHPO151128,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54307,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+504.76,0.0,SWIGGY,,2025-10-28,54305,529.9981013,CHANDIGARH,79.0,2025-10-17,2025-10-31,PCHPO151128,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54305,2026-07-01
+784.76,1.0,SWIGGY,,2025-10-28,54306,823.998,CHANDIGARH,1.0,2025-10-17,2025-10-31,PCHPO151128,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54306,2026-07-01
+133.33,48.0,SWIGGY,,2025-10-28,54307,139.9966667,CHANDIGARH,48.0,2025-10-17,2025-10-31,PCHPO151128,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:54307,2026-07-01
 ```
 
 ---

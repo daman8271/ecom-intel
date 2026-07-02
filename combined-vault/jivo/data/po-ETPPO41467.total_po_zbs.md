@@ -17,10 +17,10 @@ Up: [[po-ETPPO41467]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,144.0,SWIGGY,2026-04-01,66503,219.9961806,NOIDA,144.0,2026-03-23,2026-04-01,ETPPO41467,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66503,2026-06-30
-1047.62,8.0,SWIGGY,2026-04-01,66504,1100.00125,NOIDA,8.0,2026-03-23,2026-04-01,ETPPO41467,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66504,2026-06-30
-761.9,0.0,SWIGGY,2026-04-01,66505,799.995,NOIDA,4.0,2026-03-23,2026-04-01,ETPPO41467,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66505,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,144.0,SWIGGY,,2026-04-01,66503,219.9961806,NOIDA,144.0,2026-03-23,2026-04-01,ETPPO41467,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66503,2026-07-01
+1047.62,8.0,SWIGGY,,2026-04-01,66504,1100.00125,NOIDA,8.0,2026-03-23,2026-04-01,ETPPO41467,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66504,2026-07-01
+761.9,0.0,SWIGGY,,2026-04-01,66505,799.995,NOIDA,4.0,2026-03-23,2026-04-01,ETPPO41467,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66505,2026-07-01
 ```
 
 ---

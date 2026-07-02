@@ -17,10 +17,10 @@ Up: [[po-CHCPO325172]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-714.28,4.0,SWIGGY,2026-03-07,64657,749.995,HYDERABAD,4.0,2026-02-28,2026-03-16,CHCPO325172,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64657,2026-06-30
-152.38,20.0,SWIGGY,2026-03-07,64658,159.999,HYDERABAD,20.0,2026-02-28,2026-03-16,CHCPO325172,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64658,2026-06-30
-761.9,16.0,SWIGGY,2026-03-07,64659,799.995,HYDERABAD,16.0,2026-02-28,2026-03-16,CHCPO325172,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64659,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+714.28,4.0,SWIGGY,,2026-03-07,64657,749.995,HYDERABAD,4.0,2026-02-28,2026-03-16,CHCPO325172,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64657,2026-07-01
+152.38,20.0,SWIGGY,,2026-03-07,64658,159.999,HYDERABAD,20.0,2026-02-28,2026-03-16,CHCPO325172,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64658,2026-07-01
+761.9,16.0,SWIGGY,,2026-03-07,64659,799.995,HYDERABAD,16.0,2026-02-28,2026-03-16,CHCPO325172,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64659,2026-07-01
 ```
 
 ---

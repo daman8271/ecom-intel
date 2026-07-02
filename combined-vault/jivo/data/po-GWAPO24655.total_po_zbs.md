@@ -17,11 +17,11 @@ Up: [[po-GWAPO24655]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-443.1,0.0,SWIGGY,,66107,465.2546875,GUWAHATI,32.0,2026-03-19,2026-04-04,GWAPO24655,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66107,2026-06-30
-116.19,0.0,SWIGGY,,66108,121.9995,GUWAHATI,60.0,2026-03-19,2026-04-04,GWAPO24655,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66108,2026-06-30
-2215.49,0.0,SWIGGY,,66109,2326.265,GUWAHATI,4.0,2026-03-19,2026-04-04,GWAPO24655,,79292,Jivo Pomace Olive Oil 5.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66109,2026-06-30
-146.67,0.0,SWIGGY,,66110,154.003125,GUWAHATI,16.0,2026-03-19,2026-04-04,GWAPO24655,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66110,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+443.1,0.0,SWIGGY,,,66107,465.2546875,GUWAHATI,32.0,2026-03-19,2026-04-04,GWAPO24655,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66107,2026-07-01
+116.19,0.0,SWIGGY,,,66108,121.9995,GUWAHATI,60.0,2026-03-19,2026-04-04,GWAPO24655,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66108,2026-07-01
+2215.49,0.0,SWIGGY,,,66109,2326.265,GUWAHATI,4.0,2026-03-19,2026-04-04,GWAPO24655,,79292,Jivo Pomace Olive Oil 5.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66109,2026-07-01
+146.67,0.0,SWIGGY,,,66110,154.003125,GUWAHATI,16.0,2026-03-19,2026-04-04,GWAPO24655,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:66110,2026-07-01
 ```
 
 ---

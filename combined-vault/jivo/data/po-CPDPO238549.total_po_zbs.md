@@ -17,14 +17,14 @@ Up: [[po-CPDPO238549]]
 Canonical raw rows (7) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.09,20.0,SWIGGY,2026-02-04,62107,249.995,PUNE,20.0,2026-01-29,2026-02-08,CPDPO238549,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62107,2026-06-30
-1428.57,3.0,SWIGGY,2026-02-04,62108,1500.0,PUNE,3.0,2026-01-29,2026-02-08,CPDPO238549,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62108,2026-06-30
-409.52,16.0,SWIGGY,2026-02-04,62109,429.99625,PUNE,16.0,2026-01-29,2026-02-08,CPDPO238549,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62109,2026-06-30
-209.52,0.0,SWIGGY,2026-02-04,62110,219.9961607,PUNE,112.0,2026-01-29,2026-02-08,CPDPO238549,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62110,2026-06-30
-138.1,120.0,SWIGGY,2026-02-04,62111,145.00475,PUNE,120.0,2026-01-29,2026-02-08,CPDPO238549,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62111,2026-06-30
-690.48,4.0,SWIGGY,2026-02-04,62112,725.005,PUNE,4.0,2026-01-29,2026-02-08,CPDPO238549,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62112,2026-06-30
-2619.05,8.0,SWIGGY,2026-02-04,62113,2750.0025,PUNE,8.0,2026-01-29,2026-02-08,CPDPO238549,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62113,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.09,20.0,SWIGGY,,2026-02-04,62107,249.995,PUNE,20.0,2026-01-29,2026-02-08,CPDPO238549,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62107,2026-07-01
+1428.57,3.0,SWIGGY,,2026-02-04,62108,1499.9985,PUNE,3.0,2026-01-29,2026-02-08,CPDPO238549,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62108,2026-07-01
+409.52,16.0,SWIGGY,,2026-02-04,62109,429.99625,PUNE,16.0,2026-01-29,2026-02-08,CPDPO238549,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62109,2026-07-01
+209.52,0.0,SWIGGY,,2026-02-04,62110,219.9961607,PUNE,112.0,2026-01-29,2026-02-08,CPDPO238549,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62110,2026-07-01
+138.1,120.0,SWIGGY,,2026-02-04,62111,145.00475,PUNE,120.0,2026-01-29,2026-02-08,CPDPO238549,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62111,2026-07-01
+690.48,4.0,SWIGGY,,2026-02-04,62112,725.005,PUNE,4.0,2026-01-29,2026-02-08,CPDPO238549,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62112,2026-07-01
+2619.05,8.0,SWIGGY,,2026-02-04,62113,2750.0025,PUNE,8.0,2026-01-29,2026-02-08,CPDPO238549,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62113,2026-07-01
 ```
 
 ---

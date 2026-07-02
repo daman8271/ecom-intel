@@ -17,10 +17,10 @@ Up: [[po-GCAPO19632]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,0.0,SWIGGY,,55018,529.998125,CENTRAL GOA,16.0,2025-10-30,2025-11-15,GCAPO19632,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55018,2026-06-30
-397.14,0.0,SWIGGY,,55019,416.9971875,CENTRAL GOA,32.0,2025-10-30,2025-11-15,GCAPO19632,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55019,2026-06-30
-160.0,0.0,SWIGGY,,55020,168.0,CENTRAL GOA,20.0,2025-10-30,2025-11-15,GCAPO19632,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55020,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+504.76,0.0,SWIGGY,,,55018,529.998125,CENTRAL GOA,16.0,2025-10-30,2025-11-15,GCAPO19632,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55018,2026-07-01
+397.14,0.0,SWIGGY,,,55019,416.9971875,CENTRAL GOA,32.0,2025-10-30,2025-11-15,GCAPO19632,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55019,2026-07-01
+160.0,0.0,SWIGGY,,,55020,168.0,CENTRAL GOA,20.0,2025-10-30,2025-11-15,GCAPO19632,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55020,2026-07-01
 ```
 
 ---

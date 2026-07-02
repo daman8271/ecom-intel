@@ -17,8 +17,8 @@ Up: [[po-JCNPO205492]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-666.67,4.0,SWIGGY,2025-10-27,54200,700.0025,CHENNAI,4.0,2025-10-14,2025-10-30,JCNPO205492,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54200,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+666.67,4.0,SWIGGY,,2025-10-27,54200,700.0025,CHENNAI,4.0,2025-10-14,2025-10-30,JCNPO205492,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54200,2026-07-01
 ```
 
 ---

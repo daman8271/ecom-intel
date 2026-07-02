@@ -17,9 +17,9 @@ Up: [[po-JCNPO243674]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-19.43,0.0,SWIGGY,,63586,20.40138889,CHENNAI,72.0,2026-02-14,2026-03-03,JCNPO243674,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63586,2026-06-30
-47.5,0.0,SWIGGY,,63587,66.5,CHENNAI,72.0,2026-02-14,2026-03-03,JCNPO243674,,421361,JivoÂ Indian Tonic Water 200.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63587,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+19.43,0.0,SWIGGY,,,63586,20.40138889,CHENNAI,72.0,2026-02-14,2026-03-03,JCNPO243674,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63586,2026-07-01
+47.5,0.0,SWIGGY,,,63587,66.5,CHENNAI,72.0,2026-02-14,2026-03-03,JCNPO243674,,421361,JivoÂ Indian Tonic Water 200.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63587,2026-07-01
 ```
 
 ---

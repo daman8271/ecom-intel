@@ -17,12 +17,12 @@ Up: [[po-CIMPO101326]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-261.91,20.0,SWIGGY,2026-04-27,69823,275.005,MUMBAI,20.0,2026-04-20,2026-04-29,CIMPO101326,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69823,2026-06-30
-547.62,48.0,SWIGGY,2026-04-27,69824,575.0010417,MUMBAI,48.0,2026-04-20,2026-04-29,CIMPO101326,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69824,2026-06-30
-200.0,336.0,SWIGGY,2026-04-27,69825,210.0,MUMBAI,336.0,2026-04-20,2026-04-29,CIMPO101326,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69825,2026-06-30
-1000.0,4.0,SWIGGY,2026-04-27,69826,1050.0,MUMBAI,32.0,2026-04-20,2026-04-29,CIMPO101326,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69826,2026-06-30
-182.86,180.0,SWIGGY,2026-04-27,69827,192.0028333,MUMBAI,180.0,2026-04-20,2026-04-29,CIMPO101326,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69827,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+261.91,20.0,SWIGGY,,2026-04-27,69823,275.005,MUMBAI,20.0,2026-04-20,2026-04-29,CIMPO101326,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69823,2026-07-01
+547.62,48.0,SWIGGY,,2026-04-27,69824,575.0010417,MUMBAI,48.0,2026-04-20,2026-04-29,CIMPO101326,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69824,2026-07-01
+200.0,336.0,SWIGGY,,2026-04-27,69825,210.0,MUMBAI,336.0,2026-04-20,2026-04-29,CIMPO101326,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69825,2026-07-01
+1000.0,4.0,SWIGGY,,2026-04-27,69826,1050.0,MUMBAI,32.0,2026-04-20,2026-04-29,CIMPO101326,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69826,2026-07-01
+182.86,180.0,SWIGGY,,2026-04-27,69827,192.0028333,MUMBAI,180.0,2026-04-20,2026-04-29,CIMPO101326,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69827,2026-07-01
 ```
 
 ---

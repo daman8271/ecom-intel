@@ -17,9 +17,9 @@ Up: [[po-CADPO210737]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-149.52,0.0,SWIGGY,,77662,157.0,AHMEDABAD,320.0,2026-06-24,2026-07-03,CADPO210737,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77662,2026-06-30
-154.29,0.0,SWIGGY,,77663,162.0,AHMEDABAD,280.0,2026-06-24,2026-07-03,CADPO210737,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77663,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+149.52,0.0,SWIGGY,,,77662,156.996,AHMEDABAD,320.0,2026-06-24,2026-07-03,CADPO210737,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77662,2026-07-01
+154.29,0.0,SWIGGY,,,77663,162.0045,AHMEDABAD,280.0,2026-06-24,2026-07-03,CADPO210737,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77663,2026-07-01
 ```
 
 ---

@@ -17,9 +17,9 @@ Up: [[po-MBJPO70310]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-344.76,0.0,SWIGGY,,74648,361.998,BANGALORE,40.0,2026-05-27,2026-06-08,MBJPO70310,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74648,2026-06-30
-27.5,0.0,SWIGGY,,74649,38.5,BANGALORE,4.0,2026-05-27,2026-06-08,MBJPO70310,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74649,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+344.76,0.0,SWIGGY,,,74648,361.998,BANGALORE,40.0,2026-05-27,2026-06-08,MBJPO70310,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74648,2026-07-01
+27.5,0.0,SWIGGY,,,74649,38.5,BANGALORE,4.0,2026-05-27,2026-06-08,MBJPO70310,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74649,2026-07-01
 ```
 
 ---

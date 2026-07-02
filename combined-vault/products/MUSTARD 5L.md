@@ -84,6 +84,7 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000011`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000011]]
-- **1278 boxes:** [[box-111240]] · [[box-111241]] · [[box-111242]] … +1275 more (tag `bridge/FG0000011`)
-- **33 pallets:** [[pal-1857]] · [[pal-1858]] · [[pal-1859]] … +30 more (tag `bridge/FG0000011`)
+- **250 boxes:** [[barcode__dispatch__reports__boxes-25909]] · [[barcode__dispatch__reports__boxes-25910]] · [[barcode__dispatch__reports__boxes-25911]] … +247 more (tag `bridge/FG0000011`)
+- **52 boxes:** [[box-111240]] · [[box-111241]] · [[box-111242]] … +49 more (tag `bridge/FG0000011`)
+- **37 pallets:** [[pal-1857]] · [[pal-1858]] · [[pal-1859]] … +34 more (tag `bridge/FG0000011`)
 

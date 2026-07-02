@@ -17,10 +17,10 @@ Up: [[po-MBJPO74222]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,48.0,SWIGGY,2026-06-24,76199,499.9995833,BANGALORE,48.0,2026-06-12,2026-06-24,MBJPO74222,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76199,2026-06-30
-371.43,16.0,SWIGGY,2026-06-24,76200,390.00125,BANGALORE,16.0,2026-06-12,2026-06-24,MBJPO74222,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76200,2026-06-30
-747.62,4.0,SWIGGY,2026-06-24,76201,785.0,BANGALORE,4.0,2026-06-12,2026-06-24,MBJPO74222,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76201,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,48.0,SWIGGY,,2026-06-24,76199,499.9995833,BANGALORE,48.0,2026-06-12,2026-06-24,MBJPO74222,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76199,2026-07-01
+371.43,16.0,SWIGGY,,2026-06-24,76200,390.00125,BANGALORE,16.0,2026-06-12,2026-06-24,MBJPO74222,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76200,2026-07-01
+747.62,4.0,SWIGGY,,2026-06-24,76201,785.001,BANGALORE,4.0,2026-06-12,2026-06-24,MBJPO74222,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76201,2026-07-01
 ```
 
 ---

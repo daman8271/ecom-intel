@@ -17,10 +17,10 @@ Up: [[po-JCEPO161595]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,0.0,SWIGGY,,64484,550.000625,COIMBATORE,16.0,2026-02-26,2026-03-20,JCEPO161595,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64484,2026-06-30
-209.52,0.0,SWIGGY,,64485,219.99625,COIMBATORE,16.0,2026-02-26,2026-03-20,JCEPO161595,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64485,2026-06-30
-1047.62,0.0,SWIGGY,,64486,1100.000962,COIMBATORE,52.0,2026-02-26,2026-03-20,JCEPO161595,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64486,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,0.0,SWIGGY,,,64484,550.000625,COIMBATORE,16.0,2026-02-26,2026-03-20,JCEPO161595,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64484,2026-07-01
+209.52,0.0,SWIGGY,,,64485,219.99625,COIMBATORE,16.0,2026-02-26,2026-03-20,JCEPO161595,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64485,2026-07-01
+1047.62,0.0,SWIGGY,,,64486,1100.000962,COIMBATORE,52.0,2026-02-26,2026-03-20,JCEPO161595,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64486,2026-07-01
 ```
 
 ---

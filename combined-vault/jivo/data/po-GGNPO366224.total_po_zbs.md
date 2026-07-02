@@ -17,10 +17,10 @@ Up: [[po-GGNPO366224]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,2026-06-15,76182,38.5,DELHI,12.0,2026-06-11,2026-06-20,GGNPO366224,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76182,2026-06-30
-344.76,0.0,SWIGGY,2026-06-15,76183,361.998,DELHI,20.0,2026-06-11,2026-06-20,GGNPO366224,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76183,2026-06-30
-242.86,80.0,SWIGGY,2026-06-15,76184,255.002875,DELHI,80.0,2026-06-11,2026-06-20,GGNPO366224,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76184,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+27.5,0.0,SWIGGY,,2026-06-15,76182,38.5,DELHI,12.0,2026-06-11,2026-06-20,GGNPO366224,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76182,2026-07-01
+344.76,0.0,SWIGGY,,2026-06-15,76183,361.998,DELHI,20.0,2026-06-11,2026-06-20,GGNPO366224,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76183,2026-07-01
+242.86,80.0,SWIGGY,,2026-06-15,76184,255.002875,DELHI,80.0,2026-06-11,2026-06-20,GGNPO366224,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76184,2026-07-01
 ```
 
 ---

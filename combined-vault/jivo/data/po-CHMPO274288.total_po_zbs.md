@@ -17,11 +17,11 @@ Up: [[po-CHMPO274288]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,160.0,SWIGGY,2026-03-06,64909,219.9961875,HYDERABAD,160.0,2026-03-04,2026-03-20,CHMPO274288,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64909,2026-06-30
-138.1,180.0,SWIGGY,2026-03-06,64910,145.0047778,HYDERABAD,180.0,2026-03-04,2026-03-20,CHMPO274288,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64910,2026-06-30
-144.76,40.0,SWIGGY,2026-03-06,64911,151.998,HYDERABAD,40.0,2026-03-04,2026-03-20,CHMPO274288,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64911,2026-06-30
-761.9,4.0,SWIGGY,2026-03-06,64912,799.995,HYDERABAD,4.0,2026-03-04,2026-03-20,CHMPO274288,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64912,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,160.0,SWIGGY,,2026-03-06,64909,219.9961875,HYDERABAD,160.0,2026-03-04,2026-03-20,CHMPO274288,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64909,2026-07-01
+138.1,180.0,SWIGGY,,2026-03-06,64910,145.0047778,HYDERABAD,180.0,2026-03-04,2026-03-20,CHMPO274288,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64910,2026-07-01
+144.76,40.0,SWIGGY,,2026-03-06,64911,151.998,HYDERABAD,40.0,2026-03-04,2026-03-20,CHMPO274288,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64911,2026-07-01
+761.9,4.0,SWIGGY,,2026-03-06,64912,799.995,HYDERABAD,4.0,2026-03-04,2026-03-20,CHMPO274288,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:64912,2026-07-01
 ```
 
 ---

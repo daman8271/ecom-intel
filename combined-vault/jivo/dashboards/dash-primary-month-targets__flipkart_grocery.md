@@ -36,7 +36,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "require_drr": 25974.57,
    "targets": 200000.0,
    "type": "prim",
-   "updated_at": "2026-06-27T06:27:31.635505+00:00",
+   "updated_at": "2026-06-30T05:24:23.498433+00:00",
    "year": 2026
   },
   {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "require_drr": 1.71,
    "targets": 2000.0,
    "type": "prim",
-   "updated_at": "2026-06-27T06:27:31.635505+00:00",
+   "updated_at": "2026-06-30T05:24:23.498433+00:00",
    "year": 2026
   },
   {

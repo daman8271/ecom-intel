@@ -17,12 +17,12 @@ Up: [[po-CIMPO54417]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1023.81,0.0,SWIGGY,,55249,1075.0,MUMBAI,4.0,2025-11-01,2025-11-03,CIMPO54417,,333818,Jivo SO OLive Oil 5L 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55249,2026-06-30
-504.76,0.0,SWIGGY,,55250,529.9975,MUMBAI,8.0,2025-11-01,2025-11-03,CIMPO54417,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55250,2026-06-30
-165.71,0.0,SWIGGY,,55251,173.9957,MUMBAI,100.0,2025-11-01,2025-11-03,CIMPO54417,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55251,2026-06-30
-642.86,0.0,SWIGGY,,55252,675.0025,MUMBAI,8.0,2025-11-01,2025-11-03,CIMPO54417,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55252,2026-06-30
-784.76,0.0,SWIGGY,,55253,823.9983333,MUMBAI,12.0,2025-11-01,2025-11-03,CIMPO54417,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55253,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1023.81,0.0,SWIGGY,,,55249,1075.0005,MUMBAI,4.0,2025-11-01,2025-11-03,CIMPO54417,,333818,Jivo SO OLive Oil 5L 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55249,2026-07-01
+504.76,0.0,SWIGGY,,,55250,529.9975,MUMBAI,8.0,2025-11-01,2025-11-03,CIMPO54417,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55250,2026-07-01
+165.71,0.0,SWIGGY,,,55251,173.9957,MUMBAI,100.0,2025-11-01,2025-11-03,CIMPO54417,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55251,2026-07-01
+642.86,0.0,SWIGGY,,,55252,675.0025,MUMBAI,8.0,2025-11-01,2025-11-03,CIMPO54417,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55252,2026-07-01
+784.76,0.0,SWIGGY,,,55253,823.9983333,MUMBAI,12.0,2025-11-01,2025-11-03,CIMPO54417,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:55253,2026-07-01
 ```
 
 ---

@@ -17,11 +17,11 @@ Up: [[po-PCHPO210771]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-178.1,0.0,SWIGGY,,77796,187.0,CHANDIGARH,672.0,2026-06-26,2026-07-08,PCHPO210771,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77796,2026-06-30
-890.48,0.0,SWIGGY,,77797,935.0,CHANDIGARH,28.0,2026-06-26,2026-07-08,PCHPO210771,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77797,2026-06-30
-149.52,0.0,SWIGGY,,77798,157.0,CHANDIGARH,2580.0,2026-06-26,2026-07-08,PCHPO210771,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77798,2026-06-30
-200.0,0.0,SWIGGY,,77799,210.0,CHANDIGARH,16.0,2026-06-26,2026-07-08,PCHPO210771,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77799,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+178.1,0.0,SWIGGY,,,77796,187.005,CHANDIGARH,672.0,2026-06-26,2026-07-08,PCHPO210771,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77796,2026-07-01
+890.48,0.0,SWIGGY,,,77797,935.004,CHANDIGARH,28.0,2026-06-26,2026-07-08,PCHPO210771,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77797,2026-07-01
+149.52,0.0,SWIGGY,,,77798,156.996,CHANDIGARH,2580.0,2026-06-26,2026-07-08,PCHPO210771,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77798,2026-07-01
+200.0,0.0,SWIGGY,,,77799,210.0,CHANDIGARH,16.0,2026-06-26,2026-07-08,PCHPO210771,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77799,2026-07-01
 ```
 
 ---

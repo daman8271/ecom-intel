@@ -17,14 +17,14 @@ Up: [[po-KWBPO96751]]
 Canonical raw rows (7) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77376,215.0,KOLKATA,40.0,2026-06-22,2026-07-04,KWBPO96751,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77376,2026-06-30
-476.19,0.0,SWIGGY,,77377,500.0,KOLKATA,64.0,2026-06-22,2026-07-04,KWBPO96751,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77377,2026-06-30
-185.71,0.0,SWIGGY,,77378,195.0,KOLKATA,64.0,2026-06-22,2026-07-04,KWBPO96751,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77378,2026-06-30
-149.52,0.0,SWIGGY,,77379,157.0,KOLKATA,260.0,2026-06-22,2026-07-04,KWBPO96751,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77379,2026-06-30
-771.43,0.0,SWIGGY,,77380,810.0,KOLKATA,4.0,2026-06-22,2026-07-04,KWBPO96751,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77380,2026-06-30
-154.29,0.0,SWIGGY,,77381,162.0,KOLKATA,120.0,2026-06-22,2026-07-04,KWBPO96751,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77381,2026-06-30
-147.62,0.0,SWIGGY,,77382,155.0,KOLKATA,48.0,2026-06-22,2026-07-04,KWBPO96751,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77382,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,40.0,SWIGGY,,2026-06-30,77376,214.998,KOLKATA,40.0,2026-06-22,2026-07-04,KWBPO96751,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77376,2026-07-01
+476.19,64.0,SWIGGY,,2026-06-30,77377,499.9995,KOLKATA,64.0,2026-06-22,2026-07-04,KWBPO96751,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77377,2026-07-01
+185.71,64.0,SWIGGY,,2026-06-30,77378,194.9955,KOLKATA,64.0,2026-06-22,2026-07-04,KWBPO96751,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77378,2026-07-01
+149.52,260.0,SWIGGY,,2026-06-30,77379,156.996,KOLKATA,260.0,2026-06-22,2026-07-04,KWBPO96751,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77379,2026-07-01
+771.43,4.0,SWIGGY,,2026-06-30,77380,810.0015,KOLKATA,4.0,2026-06-22,2026-07-04,KWBPO96751,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77380,2026-07-01
+154.29,120.0,SWIGGY,,2026-06-30,77381,162.0045,KOLKATA,120.0,2026-06-22,2026-07-04,KWBPO96751,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77381,2026-07-01
+147.62,48.0,SWIGGY,,2026-06-30,77382,155.001,KOLKATA,48.0,2026-06-22,2026-07-04,KWBPO96751,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:77382,2026-07-01
 ```
 
 ---

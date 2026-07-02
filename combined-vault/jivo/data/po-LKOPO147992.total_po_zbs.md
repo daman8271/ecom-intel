@@ -17,12 +17,12 @@ Up: [[po-LKOPO147992]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,0.0,SWIGGY,,60099,429.99625,LUCKNOW,64.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60099,2026-06-30
-196.19,0.0,SWIGGY,,60100,205.999375,LUCKNOW,16.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60100,2026-06-30
-690.48,0.0,SWIGGY,,60101,725.00375,LUCKNOW,16.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60101,2026-06-30
-761.9,0.0,SWIGGY,,60102,799.995,LUCKNOW,8.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60102,2026-06-30
-142.86,0.0,SWIGGY,,60103,150.0028125,LUCKNOW,32.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60103,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,0.0,SWIGGY,,,60099,429.99625,LUCKNOW,64.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60099,2026-07-01
+196.19,0.0,SWIGGY,,,60100,205.999375,LUCKNOW,16.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60100,2026-07-01
+690.48,0.0,SWIGGY,,,60101,725.00375,LUCKNOW,16.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60101,2026-07-01
+761.9,0.0,SWIGGY,,,60102,799.995,LUCKNOW,8.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60102,2026-07-01
+142.86,0.0,SWIGGY,,,60103,150.0028125,LUCKNOW,32.0,2026-01-03,2026-01-16,LKOPO147992,Appointment Done,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:60103,2026-07-01
 ```
 
 ---

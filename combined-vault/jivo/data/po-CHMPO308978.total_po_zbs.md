@@ -17,11 +17,11 @@ Up: [[po-CHMPO308978]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77741,215.0,HYDERABAD,20.0,2026-06-25,2026-07-27,CHMPO308978,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77741,2026-06-30
-928.57,0.0,SWIGGY,,77742,975.0,HYDERABAD,44.0,2026-06-25,2026-07-27,CHMPO308978,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77742,2026-06-30
-149.52,0.0,SWIGGY,,77743,157.0,HYDERABAD,160.0,2026-06-25,2026-07-27,CHMPO308978,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77743,2026-06-30
-154.29,0.0,SWIGGY,,77744,162.0,HYDERABAD,540.0,2026-06-25,2026-07-27,CHMPO308978,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77744,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,,77741,214.998,HYDERABAD,20.0,2026-06-25,2026-07-27,CHMPO308978,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77741,2026-07-01
+928.57,0.0,SWIGGY,,,77742,974.9985,HYDERABAD,44.0,2026-06-25,2026-07-27,CHMPO308978,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77742,2026-07-01
+149.52,0.0,SWIGGY,,,77743,156.996,HYDERABAD,160.0,2026-06-25,2026-07-27,CHMPO308978,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77743,2026-07-01
+154.29,0.0,SWIGGY,,,77744,162.0045,HYDERABAD,540.0,2026-06-25,2026-07-27,CHMPO308978,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77744,2026-07-01
 ```
 
 ---

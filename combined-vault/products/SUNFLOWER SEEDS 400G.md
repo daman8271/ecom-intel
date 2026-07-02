@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000300` |
 | canonical_sku(s) | `jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-clean-eating-nutrientrich-diets-400g-400ml`, `edsh66rre84eyvhc` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | SUNFLOWER SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 400G |
 | Bridge class | core (priced) |

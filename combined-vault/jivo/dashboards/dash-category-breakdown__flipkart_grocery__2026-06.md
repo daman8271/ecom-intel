@@ -22,17 +22,17 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart_grocery]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 18178.0,
+    "ltrs": 19818.0,
     "name": "MUSTARD"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 18178.0,
+    "ltrs": 19818.0,
     "name": "MUSTARD KACCHI GHANI"
    }
   ],
-  "total_ltrs": 18178.0
+  "total_ltrs": 19818.0
  },
  "errors": [],
  "month": 6,
@@ -40,7 +40,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart_grocery]]
  "premium": {
   "categories": [
    {
-    "ltrs": 1120.0,
+    "ltrs": 1300.0,
     "name": "CANOLA"
    },
    {
@@ -50,7 +50,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart_grocery]]
   ],
   "sub_categories": [
    {
-    "ltrs": 1120.0,
+    "ltrs": 1300.0,
     "name": "CANOLA"
    },
    {
@@ -62,7 +62,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart_grocery]]
     "name": "EXTRA LIGHT"
    }
   ],
-  "total_ltrs": 1988.0
+  "total_ltrs": 2168.0
  },
  "source": "primary",
  "year": 2026

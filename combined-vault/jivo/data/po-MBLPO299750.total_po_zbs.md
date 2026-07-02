@@ -17,11 +17,11 @@ Up: [[po-MBLPO299750]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-196.19,76.0,SWIGGY,2025-10-30,54365,205.9994737,BANGALORE,76.0,2025-10-17,2025-11-02,MBLPO299750,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54365,2026-06-30
-116.19,80.0,SWIGGY,2025-10-30,54366,121.9995,BANGALORE,80.0,2025-10-17,2025-11-02,MBLPO299750,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54366,2026-06-30
-165.71,140.0,SWIGGY,2025-10-30,54367,173.9957143,BANGALORE,140.0,2025-10-17,2025-11-02,MBLPO299750,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54367,2026-06-30
-2522.86,4.0,SWIGGY,2025-10-30,54368,2649.0025,BANGALORE,4.0,2025-10-17,2025-11-02,MBLPO299750,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54368,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+196.19,76.0,SWIGGY,,2025-10-30,54365,205.9994737,BANGALORE,76.0,2025-10-17,2025-11-02,MBLPO299750,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54365,2026-07-01
+116.19,80.0,SWIGGY,,2025-10-30,54366,121.9995,BANGALORE,80.0,2025-10-17,2025-11-02,MBLPO299750,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54366,2026-07-01
+165.71,140.0,SWIGGY,,2025-10-30,54367,173.9957143,BANGALORE,140.0,2025-10-17,2025-11-02,MBLPO299750,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54367,2026-07-01
+2522.86,4.0,SWIGGY,,2025-10-30,54368,2649.0025,BANGALORE,4.0,2025-10-17,2025-11-02,MBLPO299750,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54368,2026-07-01
 ```
 
 ---

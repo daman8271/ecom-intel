@@ -28,10 +28,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 125.6,
+   "delta_pct": 137.5,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 9952.0,
+   "ltrs": 10480.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 4412.0
   },
@@ -68,10 +68,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 77.8,
+   "delta_pct": 86.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 841.0,
+   "ltrs": 883.0,
    "name": "CANOLA 1L",
    "prev_ltrs": 473.0
   },
@@ -98,10 +98,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 108.1,
+   "delta_pct": 118.9,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 308.0,
+   "ltrs": 324.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 148.0
   },

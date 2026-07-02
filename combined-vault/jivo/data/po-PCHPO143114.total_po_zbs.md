@@ -17,12 +17,12 @@ Up: [[po-PCHPO143114]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,60.0,SWIGGY,2025-10-04,52615,222.0015,CHANDIGARH,60.0,2025-09-23,2025-10-07,PCHPO143114,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52615,2026-06-30
-1260.0,6.0,SWIGGY,2025-10-04,52616,1323.0,CHANDIGARH,6.0,2025-09-23,2025-10-07,PCHPO143114,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52616,2026-06-30
-504.76,16.0,SWIGGY,2025-10-04,52617,529.998125,CHANDIGARH,16.0,2025-09-23,2025-10-07,PCHPO143114,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52617,2026-06-30
-190.48,96.0,SWIGGY,2025-10-04,52618,200.0038542,CHANDIGARH,96.0,2025-09-23,2025-10-07,PCHPO143114,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52618,2026-06-30
-833.33,8.0,SWIGGY,2025-10-04,52619,874.99625,CHANDIGARH,8.0,2025-09-23,2025-10-07,PCHPO143114,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52619,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,60.0,SWIGGY,,2025-10-04,52615,222.0015,CHANDIGARH,60.0,2025-09-23,2025-10-07,PCHPO143114,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52615,2026-07-01
+1260.0,6.0,SWIGGY,,2025-10-04,52616,1323.0,CHANDIGARH,6.0,2025-09-23,2025-10-07,PCHPO143114,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52616,2026-07-01
+504.76,16.0,SWIGGY,,2025-10-04,52617,529.998125,CHANDIGARH,16.0,2025-09-23,2025-10-07,PCHPO143114,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52617,2026-07-01
+190.48,96.0,SWIGGY,,2025-10-04,52618,200.0038542,CHANDIGARH,96.0,2025-09-23,2025-10-07,PCHPO143114,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52618,2026-07-01
+833.33,8.0,SWIGGY,,2025-10-04,52619,874.99625,CHANDIGARH,8.0,2025-09-23,2025-10-07,PCHPO143114,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52619,2026-07-01
 ```
 
 ---

@@ -17,11 +17,11 @@ Up: [[po-CHMPO233366]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-241.32,20.0,SWIGGY,2025-12-12,57435,253.386,HYDERABAD,20.0,2025-11-27,2025-12-13,CHMPO233366,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57435,2026-06-30
-564.16,32.0,SWIGGY,2025-12-12,57436,592.368125,HYDERABAD,32.0,2025-11-27,2025-12-13,CHMPO233366,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57436,2026-06-30
-116.19,0.0,SWIGGY,2025-12-12,57437,121.9995,HYDERABAD,20.0,2025-11-27,2025-12-13,CHMPO233366,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57437,2026-06-30
-182.86,120.0,SWIGGY,2025-12-12,57438,192.0028333,HYDERABAD,120.0,2025-11-27,2025-12-13,CHMPO233366,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57438,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+241.32,20.0,SWIGGY,,2025-12-12,57435,253.386,HYDERABAD,20.0,2025-11-27,2025-12-13,CHMPO233366,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57435,2026-07-01
+564.16,32.0,SWIGGY,,2025-12-12,57436,592.368125,HYDERABAD,32.0,2025-11-27,2025-12-13,CHMPO233366,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57436,2026-07-01
+116.19,0.0,SWIGGY,,2025-12-12,57437,121.9995,HYDERABAD,20.0,2025-11-27,2025-12-13,CHMPO233366,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57437,2026-07-01
+182.86,120.0,SWIGGY,,2025-12-12,57438,192.0028333,HYDERABAD,120.0,2025-11-27,2025-12-13,CHMPO233366,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57438,2026-07-01
 ```
 
 ---

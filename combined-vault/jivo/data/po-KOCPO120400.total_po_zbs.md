@@ -17,12 +17,12 @@ Up: [[po-KOCPO120400]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,16.0,SWIGGY,2026-06-28,76782,499.999375,KOCHI,16.0,2026-06-16,2026-07-18,KOCPO120400,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76782,2026-06-30
-371.43,16.0,SWIGGY,2026-06-28,76783,390.00125,KOCHI,16.0,2026-06-16,2026-07-18,KOCPO120400,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76783,2026-06-30
-144.76,40.0,SWIGGY,2026-06-28,76784,151.998,KOCHI,40.0,2026-06-16,2026-07-18,KOCPO120400,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76784,2026-06-30
-723.81,8.0,SWIGGY,2026-06-28,76785,760.0,KOCHI,8.0,2026-06-16,2026-07-18,KOCPO120400,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76785,2026-06-30
-738.1,0.0,SWIGGY,2026-06-28,76786,775.005,KOCHI,8.0,2026-06-16,2026-07-18,KOCPO120400,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76786,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,16.0,SWIGGY,,2026-06-28,76782,499.999375,KOCHI,16.0,2026-06-16,2026-07-18,KOCPO120400,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76782,2026-07-01
+371.43,16.0,SWIGGY,,2026-06-28,76783,390.00125,KOCHI,16.0,2026-06-16,2026-07-18,KOCPO120400,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76783,2026-07-01
+144.76,40.0,SWIGGY,,2026-06-28,76784,151.998,KOCHI,40.0,2026-06-16,2026-07-18,KOCPO120400,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76784,2026-07-01
+723.81,8.0,SWIGGY,,2026-06-28,76785,760.0005,KOCHI,8.0,2026-06-16,2026-07-18,KOCPO120400,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76785,2026-07-01
+738.1,0.0,SWIGGY,,2026-06-28,76786,775.005,KOCHI,8.0,2026-06-16,2026-07-18,KOCPO120400,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76786,2026-07-01
 ```
 
 ---

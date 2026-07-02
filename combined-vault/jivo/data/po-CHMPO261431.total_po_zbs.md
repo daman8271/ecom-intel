@@ -17,11 +17,11 @@ Up: [[po-CHMPO261431]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,0.0,SWIGGY,,61903,429.99625,HYDERABAD,16.0,2026-01-24,2026-02-09,CHMPO261431,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61903,2026-06-30
-144.76,0.0,SWIGGY,,61904,151.998,HYDERABAD,40.0,2026-01-24,2026-02-09,CHMPO261431,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61904,2026-06-30
-690.48,0.0,SWIGGY,,61905,725.005,HYDERABAD,4.0,2026-01-24,2026-02-09,CHMPO261431,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61905,2026-06-30
-142.86,0.0,SWIGGY,,61906,150.0028125,HYDERABAD,32.0,2026-01-24,2026-02-09,CHMPO261431,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61906,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,0.0,SWIGGY,,,61903,429.99625,HYDERABAD,16.0,2026-01-24,2026-02-09,CHMPO261431,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61903,2026-07-01
+144.76,0.0,SWIGGY,,,61904,151.998,HYDERABAD,40.0,2026-01-24,2026-02-09,CHMPO261431,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61904,2026-07-01
+690.48,0.0,SWIGGY,,,61905,725.005,HYDERABAD,4.0,2026-01-24,2026-02-09,CHMPO261431,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61905,2026-07-01
+142.86,0.0,SWIGGY,,,61906,150.0028125,HYDERABAD,32.0,2026-01-24,2026-02-09,CHMPO261431,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61906,2026-07-01
 ```
 
 ---

@@ -2,7 +2,7 @@
 type: data
 entity: pf-flipkart
 table: master_products
-rows: 199
+rows: 202
 chunk: 1/1
 source: app-master
 tags:
@@ -14,7 +14,7 @@ tags:
 # Raw `master_products` rows for [[pf-flipkart]]
 
 Up: [[pf-flipkart]]
-Canonical raw rows (199) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (202) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_name,sku_sap_code,sku_sap_name,tax_rate,uom
@@ -104,6 +104,7 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 ,FLIPKART,EDOHHXANUW9SHPPJ,CANOLA 4+1L,PREMIUM,4+1 LTR,5.0,Jivo Canola Oil 4+1L,,,,LTR
 ,FLIPKART,SCMHCKZEKPQWVE5V,CLOVE 100G,OTHER,100 GMS,,Jivo_Clove_100g,,,,GMS
 ,FLIPKART,EDOHHZBQB9P4Z6WM,CANOLA 5+1L,PREMIUM,5+1 LTR,6.0,Jivo_Cold_Pressed_Canola_Oil_5+1L,,,,LTR
+,FLIPKART,EDOHZGJ7RMXZNUDB,EXTRA LIGHT 5L + EV 500 ML,PREMIUM,5L + 500ML,5.5,Jivo-EL-5L+EV-500ML,,,,LTR
 ,FLIPKART,EDOHZA22XYZSHFZK,EXTRA LIGHT 1L+1L+1L+1L,PREMIUM,1 LTR + 1LTR + 1LTR + 1LTR,4.0,Jivo-Extra-Light-1L+1L+1L+1L,,,,LTR
 ,FLIPKART,EDOHZYYSYEZ2YVTM,EXTRA LIGHT 3L,PREMIUM,3 LTR,3.0,Jivo-Extra-Light-3L,,,,LTR
 ,FLIPKART,EDOHZ8NQJGXGKW3G,EXTRA VIRGIN 200ML X 4,PREMIUM,200ML + 200ML + 200ML,0.8,Jivo-Extra-Virgin-200ml,,,,LTR
@@ -117,6 +118,7 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 ,FLIPKART,EDOGYJ7SYY4H2MDH,GOLD 1+1L,COMMODITY,1+1 LTR,2.0,Jivo Gold oil 1+1,,,,LTR
 ,FLIPKART,EDOGYJ7SWM6ZCTPX,GOLD 1+1+1L,COMMODITY,1+1+1 LTR,3.0,Jivo Gold oil 1+1+1,,,,LTR
 ,FLIPKART,EDOGYJTPRV6H6WGY,GOLD 5L+1L,COMMODITY,5+1 LTR,6.0,Jivo Gold oil 5+1,,,,LTR
+,FLIPKART,EDOHZNJZZND3Q9DZ,GROUNDNUT 5L + EV 200 ML,PREMIUM,5L + 200ML,5.2,Jivo-Groundnut-5L+Extra-Virgin-200ML,,,,LTR
 ,FLIPKART,EDOH9NDEPYZHGAHF,GROUNDNUT 5L,PREMIUM,5 LTR,5.0,Jivo_Groundnut_5L_With_Pro_lunch_box,,,,LTR
 ,FLIPKART,EDOH9P7NNNJUXGZP,GROUNDNUT 5L,PREMIUM,5 LTR,5.0,Jivo_Groundnut_5L_With_Rapture_flask,,,,LTR
 ,FLIPKART,CRLHYEWUPR4DRZZD,CASSEROLE 2200,OTHER,,,JIVO-INFI-CASSEROLE-2200,,,,LTR
@@ -129,6 +131,7 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 ,FLIPKART,BOTGZ9ZPVHFX8YYG,FLIP PRO,OTHER,,,JIVO Infinite Flip Pro Jizbag Black,,,,LTR
 ,FLIPKART,FLRHJ4DBVWCPKTHH,MAKKI ATTA 500 GM,OTHER,500 GM,,Jivo Makai Atta - 500gm,,,,
 ,FLIPKART,EDOH9PHGZG9H4GVT,MUSTARD 5L,COMMODITY,5 LTR,5.0,JIvo_Mustard_5L,,,,LTR
+,FLIPKART,EDOHZM2FJUC5FECM,MUSTARD 5L + EV 200 ML,COMMODITY,5L + 200ML,5.2,Jivo-Mustard-5L+Extra-Virgin-200ML,,,,LTR
 ,FLIPKART,EDOHMQ9UU6QJ83TA,JIVO POMACE 3L,PREMIUM,3 LTR,3.0,Jivo-Pomace-3L,,,,LTR
 ,FLIPKART,EDOHMWFQD23HGXND,JIVO POMACE 3L+ 3L,PREMIUM,3 LTR + 3 LTR,6.0,Jivo-Pomace-3L+3L,,,,LTR
 ,FLIPKART,EDOHZBRUZRHKHJYR,POMACE 3L + EXTRA VIRGIN 3L,PREMIUM,3L + 3L,6.0,Jivo-Pomace-3L + Jivo-Extra-Light-3L,,,,LTR

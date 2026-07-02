@@ -23,14 +23,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
  "platform": "zepto",
  "series": [
   {
-   "commodity_ltrs": 18280.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 14790.0,
-   "total_ltrs": 33070.0,
-   "year": 2026
-  },
-  {
    "commodity_ltrs": 23618.0,
    "label": "Feb '26",
    "month": 2,
@@ -63,11 +55,19 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 21844.0,
+   "commodity_ltrs": 23280.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 80631.2,
-   "total_ltrs": 102475.2,
+   "premium_ltrs": 85424.2,
+   "total_ltrs": 108704.2,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

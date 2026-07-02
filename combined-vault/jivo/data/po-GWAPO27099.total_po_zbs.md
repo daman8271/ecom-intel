@@ -17,11 +17,11 @@ Up: [[po-GWAPO27099]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,0.0,SWIGGY,,68419,1100.0,GUWAHATI,4.0,2026-04-07,2026-04-23,GWAPO27099,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68419,2026-06-30
-707.14,0.0,SWIGGY,,68420,742.4975,GUWAHATI,8.0,2026-04-07,2026-04-23,GWAPO27099,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68420,2026-06-30
-864.28,0.0,SWIGGY,,68421,907.495,GUWAHATI,4.0,2026-04-07,2026-04-23,GWAPO27099,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68421,2026-06-30
-146.67,0.0,SWIGGY,,68422,154.003125,GUWAHATI,16.0,2026-04-07,2026-04-23,GWAPO27099,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68422,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,0.0,SWIGGY,,,68419,1100.001,GUWAHATI,4.0,2026-04-07,2026-04-23,GWAPO27099,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68419,2026-07-01
+707.14,0.0,SWIGGY,,,68420,742.4975,GUWAHATI,8.0,2026-04-07,2026-04-23,GWAPO27099,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68420,2026-07-01
+864.28,0.0,SWIGGY,,,68421,907.495,GUWAHATI,4.0,2026-04-07,2026-04-23,GWAPO27099,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68421,2026-07-01
+146.67,0.0,SWIGGY,,,68422,154.003125,GUWAHATI,16.0,2026-04-07,2026-04-23,GWAPO27099,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:68422,2026-07-01
 ```
 
 ---

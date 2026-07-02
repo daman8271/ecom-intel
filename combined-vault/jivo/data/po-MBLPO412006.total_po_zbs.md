@@ -17,10 +17,10 @@ Up: [[po-MBLPO412006]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77245,215.0,BANGALORE,40.0,2026-06-20,2026-07-08,MBLPO412006,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77245,2026-06-30
-476.19,0.0,SWIGGY,,77246,500.0,BANGALORE,64.0,2026-06-20,2026-07-08,MBLPO412006,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77246,2026-06-30
-195.24,0.0,SWIGGY,,77247,205.0,BANGALORE,148.0,2026-06-20,2026-07-08,MBLPO412006,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77247,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,,77245,214.998,BANGALORE,40.0,2026-06-20,2026-07-08,MBLPO412006,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77245,2026-07-01
+476.19,0.0,SWIGGY,,,77246,499.9995,BANGALORE,64.0,2026-06-20,2026-07-08,MBLPO412006,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77246,2026-07-01
+195.24,0.0,SWIGGY,,,77247,205.002,BANGALORE,148.0,2026-06-20,2026-07-08,MBLPO412006,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77247,2026-07-01
 ```
 
 ---

@@ -17,11 +17,11 @@ Up: [[po-KOCPO121494]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,0.0,SWIGGY,,77153,390.0,KOCHI,32.0,2026-06-20,2026-07-21,KOCPO121494,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77153,2026-06-30
-144.76,0.0,SWIGGY,,77154,152.0,KOCHI,20.0,2026-06-20,2026-07-21,KOCPO121494,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77154,2026-06-30
-149.52,0.0,SWIGGY,,77155,157.0,KOCHI,40.0,2026-06-20,2026-07-21,KOCPO121494,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77155,2026-06-30
-723.81,0.0,SWIGGY,,77156,760.0,KOCHI,12.0,2026-06-20,2026-07-21,KOCPO121494,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77156,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+371.43,0.0,SWIGGY,,,77153,390.0015,KOCHI,32.0,2026-06-20,2026-07-21,KOCPO121494,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77153,2026-07-01
+144.76,0.0,SWIGGY,,,77154,151.998,KOCHI,20.0,2026-06-20,2026-07-21,KOCPO121494,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77154,2026-07-01
+149.52,0.0,SWIGGY,,,77155,156.996,KOCHI,40.0,2026-06-20,2026-07-21,KOCPO121494,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77155,2026-07-01
+723.81,0.0,SWIGGY,,,77156,760.0005,KOCHI,12.0,2026-06-20,2026-07-21,KOCPO121494,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77156,2026-07-01
 ```
 
 ---

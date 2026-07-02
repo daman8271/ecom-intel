@@ -21,6 +21,48 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
 {
  "brands": [],
  "categories": [],
+ "cities": [
+  {
+   "city": "Gurgaon",
+   "value": 2928.0
+  },
+  {
+   "city": "Hyderabad",
+   "value": 1557.0
+  },
+  {
+   "city": "Pune",
+   "value": 1031.0
+  },
+  {
+   "city": "Chandigarh Tricity",
+   "value": 946.0
+  },
+  {
+   "city": "Noida",
+   "value": 735.0
+  },
+  {
+   "city": "Bangalore",
+   "value": 415.0
+  },
+  {
+   "city": "Mumbai",
+   "value": 263.0
+  },
+  {
+   "city": "Lucknow-Kanpur",
+   "value": 196.0
+  },
+  {
+   "city": "Kolkata",
+   "value": 183.0
+  },
+  {
+   "city": "Agra",
+   "value": 117.0
+  }
+ ],
  "errors": [],
  "filter_options": {
   "brands": [
@@ -241,6 +283,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "MUSTARD KACHI GHANI"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "YELLOW MUSTARD"
    },
    {
@@ -393,8 +439,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    }
   ]
  },
- "mapped_units": 8442.0,
- "mapped_value": 8442.0,
+ "mapped_units": 9122.0,
+ "mapped_value": 9122.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -405,83 +451,83 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
  "states": [
   {
    "by_platform": {
-    "BIG BASKET": 2760.0
+    "BIG BASKET": 2949.0
    },
    "state": "HARYANA",
-   "units": 2760.0,
-   "value": 2760.0
+   "units": 2949.0,
+   "value": 2949.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 1549.0
+    "BIG BASKET": 1646.0
    },
    "state": "TELANGANA",
-   "units": 1549.0,
-   "value": 1549.0
+   "units": 1646.0,
+   "value": 1646.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 1246.0
+    "BIG BASKET": 1345.0
    },
    "state": "MAHARASHTRA",
-   "units": 1246.0,
-   "value": 1246.0
+   "units": 1345.0,
+   "value": 1345.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 1133.0
+    "BIG BASKET": 1229.0
    },
    "state": "UTTAR PRADESH",
-   "units": 1133.0,
-   "value": 1133.0
+   "units": 1229.0,
+   "value": 1229.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 817.0
+    "BIG BASKET": 946.0
    },
    "state": "CHANDIGARH",
-   "units": 817.0,
-   "value": 817.0
+   "units": 946.0,
+   "value": 946.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 421.0
+    "BIG BASKET": 457.0
    },
    "state": "KARNATAKA",
-   "units": 421.0,
-   "value": 421.0
+   "units": 457.0,
+   "value": 457.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 216.0
+    "BIG BASKET": 227.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 216.0,
-   "value": 216.0
+   "units": 227.0,
+   "value": 227.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 181.0
+    "BIG BASKET": 195.0
    },
    "state": "WEST BENGAL",
-   "units": 181.0,
-   "value": 181.0
+   "units": 195.0,
+   "value": 195.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 32.0
+    "BIG BASKET": 34.0
    },
    "state": "CHHATTISGARH",
-   "units": 32.0,
-   "value": 32.0
+   "units": 34.0,
+   "value": 34.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 25.0
+    "BIG BASKET": 30.0
    },
    "state": "UTTARAKHAND",
-   "units": 25.0,
-   "value": 25.0
+   "units": 30.0,
+   "value": 30.0
   },
   {
    "by_platform": {
@@ -509,11 +555,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   },
   {
    "by_platform": {
-    "BIG BASKET": 11.0
+    "BIG BASKET": 13.0
    },
    "state": "ASSAM",
-   "units": 11.0,
-   "value": 11.0
+   "units": 13.0,
+   "value": 13.0
   },
   {
    "by_platform": {
@@ -533,8 +579,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   }
  ],
  "sub_categories": [],
- "total_units": 8442.0,
- "total_value": 8442.0,
+ "total_units": 9122.0,
+ "total_value": 9122.0,
  "year": 2026
 }
 ```

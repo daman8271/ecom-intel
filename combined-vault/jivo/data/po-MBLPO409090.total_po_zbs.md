@@ -17,10 +17,10 @@ Up: [[po-MBLPO409090]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-928.57,0.0,SWIGGY,2026-06-21,76166,975.0,BANGALORE,40.0,2026-06-11,2026-06-23,MBLPO409090,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76166,2026-06-30
-723.81,0.0,SWIGGY,2026-06-21,76167,760.0,BANGALORE,4.0,2026-06-11,2026-06-23,MBLPO409090,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76167,2026-06-30
-733.33,10.0,SWIGGY,2026-06-21,76168,769.997,BANGALORE,10.0,2026-06-11,2026-06-23,MBLPO409090,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76168,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+928.57,0.0,SWIGGY,,2026-06-21,76166,974.9985,BANGALORE,40.0,2026-06-11,2026-06-23,MBLPO409090,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76166,2026-07-01
+723.81,0.0,SWIGGY,,2026-06-21,76167,760.0005,BANGALORE,4.0,2026-06-11,2026-06-23,MBLPO409090,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76167,2026-07-01
+733.33,10.0,SWIGGY,,2026-06-21,76168,769.997,BANGALORE,10.0,2026-06-11,2026-06-23,MBLPO409090,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76168,2026-07-01
 ```
 
 ---

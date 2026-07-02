@@ -17,10 +17,10 @@ Up: [[po-MBJPO75292]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,0.0,SWIGGY,2026-06-24,76787,194.9957083,BANGALORE,480.0,2026-06-16,2026-04-07,MBJPO75292,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76787,2026-06-30
-144.76,100.0,SWIGGY,2026-06-24,76788,151.9981,BANGALORE,100.0,2026-06-16,2026-04-07,MBJPO75292,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76788,2026-06-30
-771.43,8.0,SWIGGY,2026-06-24,76789,810.00125,BANGALORE,8.0,2026-06-16,2026-04-07,MBJPO75292,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76789,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+185.71,480.0,SWIGGY,,2026-06-30,76787,194.9957083,BANGALORE,480.0,2026-06-16,2026-04-07,MBJPO75292,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76787,2026-07-01
+144.76,100.0,SWIGGY,,2026-06-30,76788,151.9981,BANGALORE,100.0,2026-06-16,2026-04-07,MBJPO75292,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76788,2026-07-01
+771.43,8.0,SWIGGY,,2026-06-30,76789,810.00125,BANGALORE,8.0,2026-06-16,2026-04-07,MBJPO75292,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76789,2026-07-01
 ```
 
 ---

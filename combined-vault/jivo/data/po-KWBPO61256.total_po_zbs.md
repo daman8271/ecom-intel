@@ -17,9 +17,9 @@ Up: [[po-KWBPO61256]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,0.0,SWIGGY,2026-02-02,61815,219.99625,KOLKATA,16.0,2026-01-22,2026-02-03,KWBPO61256,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:61815,2026-06-30
-144.76,20.0,SWIGGY,2026-02-02,61816,151.998,KOLKATA,20.0,2026-01-22,2026-02-03,KWBPO61256,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:61816,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,0.0,SWIGGY,,2026-02-02,61815,219.99625,KOLKATA,16.0,2026-01-22,2026-02-03,KWBPO61256,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:61815,2026-07-01
+144.76,20.0,SWIGGY,,2026-02-02,61816,151.998,KOLKATA,20.0,2026-01-22,2026-02-03,KWBPO61256,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:61816,2026-07-01
 ```
 
 ---

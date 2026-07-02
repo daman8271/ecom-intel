@@ -2,7 +2,7 @@
 type: data
 entity: pf-amazon
 table: amazon_sec_daily_master_view
-rows: 4
+rows: 5
 chunk: 1/1
 source: raw-table
 tags:
@@ -14,14 +14,15 @@ tags:
 # Raw `amazon_sec_daily_master_view` rows for [[pf-amazon]]
 
 Up: [[pf-amazon]]
-Canonical raw rows (4) for `amazon_sec_daily_master_view`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (5) for `amazon_sec_daily_master_view`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 asin,brand,canceled_litres,canceled_units,canceled_value,category,category_head,distributor_margin,from_date,item,item_head,month,month_num,ordered_litres,ordered_revenue,ordered_units,per_unit,product_title,return_litres,return_units,return_value,sales_type,shipped_litres,shipped_revenue,shipped_revenue_2,shipped_units,sub_category,tax,to_date,unit_size,year,__first_seen,__key,__last_seen
-B0FFH8J5N9,JIVO,2.0,1.0,761.9,GROUNDNUT,OIL,,2026-06-09,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-09,2.0,761.9,1.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,0.0,RK JMPL,0.0,0.0,0.0,0.0,GROUNDNUT,0.05,2026-06-09,2.0,2026,2026-06-27,amazon_sec_daily_master_view:27a3b38ad3e5fe7623bb0a763a7a0c3e8a8fc40ca5b035c2d4d0afd248e740b1,2026-06-30
-B0FFH8J5N9,JIVO,2.0,1.0,761.9,GROUNDNUT,OIL,,2026-06-02,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-02,2.0,761.9,1.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,0.0,RK JMPL,0.0,0.0,0.0,0.0,GROUNDNUT,0.05,2026-06-02,2.0,2026,2026-06-27,amazon_sec_daily_master_view:b60b9ccce9a67c483e70ab6b2847b707642f8c6f3b7dfd7d7057fdfe66082438,2026-06-30
-B0FFH8J5N9,JIVO,2.0,1.0,761.9,GROUNDNUT,OIL,,2026-06-17,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-17,2.0,761.9,1.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,0.0,RK JMPL,0.0,0.0,0.0,0.0,GROUNDNUT,0.05,2026-06-17,2.0,2026,2026-06-27,amazon_sec_daily_master_view:c7c4a8d102e3a34abbd75a445edac2e31cf85c60f38190f5210d2dad8119e2da,2026-06-30
-B0FFH8J5N9,JIVO,0.0,0.0,0.0,GROUNDNUT,OIL,,2026-06-18,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-18,0.0,0.0,0.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,,RK JMPL,0.0,0.0,,0.0,GROUNDNUT,0.05,2026-06-18,2.0,2026,2026-06-27,amazon_sec_daily_master_view:fdf2078472cc301e3b8676242855c9fa09f6a597696d4c77d8fcce8254109b27,2026-06-30
+B0FFH8J5N9,JIVO,2.0,1.0,761.9,GROUNDNUT,OIL,,2026-06-09,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-09,2.0,761.9,1.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,0.0,RK JMPL,0.0,0.0,0.0,0.0,GROUNDNUT,0.05,2026-06-09,2.0,2026,2026-06-27,amazon_sec_daily_master_view:27a3b38ad3e5fe7623bb0a763a7a0c3e8a8fc40ca5b035c2d4d0afd248e740b1,2026-07-01
+B0FFH8J5N9,JIVO,2.0,1.0,761.9,GROUNDNUT,OIL,,2026-06-02,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-02,2.0,761.9,1.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,0.0,RK JMPL,0.0,0.0,0.0,0.0,GROUNDNUT,0.05,2026-06-02,2.0,2026,2026-06-27,amazon_sec_daily_master_view:b60b9ccce9a67c483e70ab6b2847b707642f8c6f3b7dfd7d7057fdfe66082438,2026-07-01
+B0FFH8J5N9,JIVO,2.0,1.0,761.9,GROUNDNUT,OIL,,2026-06-17,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-17,2.0,761.9,1.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,0.0,RK JMPL,0.0,0.0,0.0,0.0,GROUNDNUT,0.05,2026-06-17,2.0,2026,2026-06-27,amazon_sec_daily_master_view:c7c4a8d102e3a34abbd75a445edac2e31cf85c60f38190f5210d2dad8119e2da,2026-07-01
+B0FFH8J5N9,JIVO,-2.0,-1.0,-761.9,GROUNDNUT,OIL,,2026-06-28,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-28,-2.0,-761.9,-1.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold-Pressed, Unrefined Peanut Oil | Fortified with Vitamins A & D | Suitable for Everyday Cooking",0.0,0.0,0.0,RK JMPL,0.0,0.0,0.0,0.0,GROUNDNUT,0.05,2026-06-28,2.0,2026,2026-07-01,amazon_sec_daily_master_view:e7b9eaf24787fc75d3df6971d56b7268256cbeeef284f6bd1a6d9e80c4036e8d,2026-07-01
+B0FFH8J5N9,JIVO,0.0,0.0,0.0,GROUNDNUT,OIL,,2026-06-18,JIVO GROUNDNUT 2LTR,PREMIUM,JUNE,JUNE-18,0.0,0.0,0.0,2 LTR,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",0.0,0.0,,RK JMPL,0.0,0.0,,0.0,GROUNDNUT,0.05,2026-06-18,2.0,2026,2026-06-27,amazon_sec_daily_master_view:fdf2078472cc301e3b8676242855c9fa09f6a597696d4c77d8fcce8254109b27,2026-07-01
 ```
 
 ---

@@ -18,8 +18,8 @@ Canonical raw rows (2) for `amazon_price_data`, embedded once here (verbatim, fu
 
 ```csv
 art_price,asin,asp,bau_price,cost_without_tax,created_at,id,jm_price,margin_basis,margin_pct,mrp,product,rk_price,seller,stock_status,svd_price,tax_pct,updated_at,upload_date,url,url_price,__first_seen,__key,__last_seen
-2199.0,B0FQ2ZMFB9,2629.0,2349.0,1999.99,2026-05-14T07:45:03.464416Z,186,,ASP,20.0,4000.0,EXTRA VIRGIN 3L,,,Out of Stock,2299.0,5.0,2026-05-14T07:45:03.464416Z,2026-05-14,https://amz.cx/3b3r,,2026-06-27,amazon_price_data:186,2026-06-30
-2199.0,B0FQ2ZMFB9,2629.0,2349.0,1999.99,2026-05-12T11:38:26.330711Z,90,,ASP,20.0,4000.0,EXTRA VIRGIN 3L,,,Out of Stock,2299.0,5.0,2026-05-12T11:38:26.330711Z,2026-05-12,https://amz.cx/3b3r,,2026-06-27,amazon_price_data:90,2026-06-30
+2199.0,B0FQ2ZMFB9,2629.0,2349.0,1999.99,2026-05-14T07:45:03.464416Z,186,,ASP,20.0,4000.0,EXTRA VIRGIN 3L,,,Out of Stock,2299.0,5.0,2026-05-14T07:45:03.464416Z,2026-05-14,https://amz.cx/3b3r,,2026-06-27,amazon_price_data:186,2026-07-01
+2199.0,B0FQ2ZMFB9,2629.0,2349.0,1999.99,2026-05-12T11:38:26.330711Z,90,,ASP,20.0,4000.0,EXTRA VIRGIN 3L,,,Out of Stock,2299.0,5.0,2026-05-12T11:38:26.330711Z,2026-05-12,https://amz.cx/3b3r,,2026-06-27,amazon_price_data:90,2026-07-01
 ```
 
 ---

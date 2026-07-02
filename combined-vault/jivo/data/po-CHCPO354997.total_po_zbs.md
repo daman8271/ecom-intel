@@ -17,9 +17,9 @@ Up: [[po-CHCPO354997]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-771.43,0.0,SWIGGY,,75965,810.0,HYDERABAD,36.0,2026-06-10,2026-06-26,CHCPO354997,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75965,2026-06-30
-147.62,0.0,SWIGGY,,75966,155.0,HYDERABAD,32.0,2026-06-10,2026-06-26,CHCPO354997,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75966,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+771.43,0.0,SWIGGY,,,75965,810.0015,HYDERABAD,36.0,2026-06-10,2026-06-26,CHCPO354997,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75965,2026-07-01
+147.62,0.0,SWIGGY,,,75966,155.001,HYDERABAD,32.0,2026-06-10,2026-06-26,CHCPO354997,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75966,2026-07-01
 ```
 
 ---

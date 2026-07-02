@@ -17,12 +17,12 @@ Up: [[po-GCAPO08091]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,20.0,SWIGGY,2025-09-05,50356,222.0015,CENTRAL GOA,20.0,2025-08-23,2025-09-08,GCAPO08091,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50356,2026-06-30
-397.14,32.0,SWIGGY,2025-09-05,50357,416.9971875,CENTRAL GOA,32.0,2025-08-23,2025-09-08,GCAPO08091,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 L,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50357,2026-06-30
-190.48,16.0,SWIGGY,2025-09-05,50358,200.00375,CENTRAL GOA,16.0,2025-08-23,2025-09-08,GCAPO08091,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50358,2026-06-30
-952.38,4.0,SWIGGY,2025-09-05,50359,1000.0,CENTRAL GOA,4.0,2025-08-23,2025-09-08,GCAPO08091,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50359,2026-06-30
-166.67,20.0,SWIGGY,2025-09-05,50360,175.0035,CENTRAL GOA,20.0,2025-08-23,2025-09-08,GCAPO08091,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50360,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,20.0,SWIGGY,,2025-09-05,50356,222.0015,CENTRAL GOA,20.0,2025-08-23,2025-09-08,GCAPO08091,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50356,2026-07-01
+397.14,32.0,SWIGGY,,2025-09-05,50357,416.9971875,CENTRAL GOA,32.0,2025-08-23,2025-09-08,GCAPO08091,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 L,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50357,2026-07-01
+190.48,16.0,SWIGGY,,2025-09-05,50358,200.00375,CENTRAL GOA,16.0,2025-08-23,2025-09-08,GCAPO08091,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50358,2026-07-01
+952.38,4.0,SWIGGY,,2025-09-05,50359,999.999,CENTRAL GOA,4.0,2025-08-23,2025-09-08,GCAPO08091,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50359,2026-07-01
+166.67,20.0,SWIGGY,,2025-09-05,50360,175.0035,CENTRAL GOA,20.0,2025-08-23,2025-09-08,GCAPO08091,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50360,2026-07-01
 ```
 
 ---

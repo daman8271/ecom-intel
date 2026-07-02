@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000167` |
 | canonical_sku(s) | `edsh3fjv4pejdfan`, `jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | CHIA SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 800G |
 | Bridge class | core (priced) |

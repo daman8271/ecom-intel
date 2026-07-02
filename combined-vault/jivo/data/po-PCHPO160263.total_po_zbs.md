@@ -17,9 +17,9 @@ Up: [[po-PCHPO160263]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-146.67,16.0,SWIGGY,2025-12-09,56871,154.003125,CHANDIGARH,16.0,2025-11-20,2025-12-09,PCHPO160263,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:56871,2026-06-30
-116.19,1200.0,SWIGGY,2025-12-09,75232,121.9995167,CHANDIGARH,1200.0,2025-11-20,2025-12-09,PCHPO160263,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75232,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+146.67,16.0,SWIGGY,,2025-12-09,56871,154.003125,CHANDIGARH,16.0,2025-11-20,2025-12-09,PCHPO160263,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:56871,2026-07-01
+116.19,1200.0,SWIGGY,,2025-12-09,75232,121.9995167,CHANDIGARH,1200.0,2025-11-20,2025-12-09,PCHPO160263,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75232,2026-07-01
 ```
 
 ---

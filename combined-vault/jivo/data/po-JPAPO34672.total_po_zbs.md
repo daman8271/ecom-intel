@@ -17,12 +17,12 @@ Up: [[po-JPAPO34672]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.09,0.0,SWIGGY,,62041,249.995,JAIPUR,20.0,2026-01-26,2026-02-10,JPAPO34672,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62041,2026-06-30
-1428.57,0.0,SWIGGY,,62042,1500.0,JAIPUR,3.0,2026-01-26,2026-02-10,JPAPO34672,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62042,2026-06-30
-523.81,0.0,SWIGGY,,62043,550.000625,JAIPUR,16.0,2026-01-26,2026-02-10,JPAPO34672,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62043,2026-06-30
-196.19,0.0,SWIGGY,,62044,206.0,JAIPUR,8.0,2026-01-26,2026-02-10,JPAPO34672,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62044,2026-06-30
-1047.62,0.0,SWIGGY,,62045,1100.001071,JAIPUR,28.0,2026-01-26,2026-02-10,JPAPO34672,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62045,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.09,0.0,SWIGGY,,,62041,249.995,JAIPUR,20.0,2026-01-26,2026-02-10,JPAPO34672,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62041,2026-07-01
+1428.57,0.0,SWIGGY,,,62042,1499.9985,JAIPUR,3.0,2026-01-26,2026-02-10,JPAPO34672,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62042,2026-07-01
+523.81,0.0,SWIGGY,,,62043,550.000625,JAIPUR,16.0,2026-01-26,2026-02-10,JPAPO34672,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62043,2026-07-01
+196.19,0.0,SWIGGY,,,62044,205.9995,JAIPUR,8.0,2026-01-26,2026-02-10,JPAPO34672,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62044,2026-07-01
+1047.62,0.0,SWIGGY,,,62045,1100.001071,JAIPUR,28.0,2026-01-26,2026-02-10,JPAPO34672,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62045,2026-07-01
 ```
 
 ---

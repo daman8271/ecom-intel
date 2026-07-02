@@ -17,12 +17,12 @@ Up: [[po-VIAPO15452]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,0.0,SWIGGY,,54329,222.0015,VIZAG,40.0,2025-10-17,2025-11-02,VIAPO15452,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54329,2026-06-30
-504.76,0.0,SWIGGY,,54330,529.998125,VIZAG,16.0,2025-10-17,2025-11-02,VIAPO15452,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54330,2026-06-30
-397.14,0.0,SWIGGY,,54331,416.9971875,VIZAG,32.0,2025-10-17,2025-11-02,VIAPO15452,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54331,2026-06-30
-116.19,0.0,SWIGGY,,54332,121.9995,VIZAG,100.0,2025-10-17,2025-11-02,VIAPO15452,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54332,2026-06-30
-165.71,0.0,SWIGGY,,54333,173.99575,VIZAG,40.0,2025-10-17,2025-11-02,VIAPO15452,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54333,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,0.0,SWIGGY,,,54329,222.0015,VIZAG,40.0,2025-10-17,2025-11-02,VIAPO15452,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54329,2026-07-01
+504.76,0.0,SWIGGY,,,54330,529.998125,VIZAG,16.0,2025-10-17,2025-11-02,VIAPO15452,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54330,2026-07-01
+397.14,0.0,SWIGGY,,,54331,416.9971875,VIZAG,32.0,2025-10-17,2025-11-02,VIAPO15452,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54331,2026-07-01
+116.19,0.0,SWIGGY,,,54332,121.9995,VIZAG,100.0,2025-10-17,2025-11-02,VIAPO15452,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54332,2026-07-01
+165.71,0.0,SWIGGY,,,54333,173.99575,VIZAG,40.0,2025-10-17,2025-11-02,VIAPO15452,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54333,2026-07-01
 ```
 
 ---

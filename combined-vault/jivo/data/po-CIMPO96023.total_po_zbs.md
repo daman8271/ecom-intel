@@ -17,10 +17,10 @@ Up: [[po-CIMPO96023]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-538.1,0.0,SWIGGY,,66251,565.0046875,MUMBAI,32.0,2026-03-19,2026-03-28,CIMPO96023,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66251,2026-06-30
-160.0,0.0,SWIGGY,,66252,168.0,MUMBAI,40.0,2026-03-19,2026-03-28,CIMPO96023,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66252,2026-06-30
-828.57,0.0,SWIGGY,,66253,869.99875,MUMBAI,8.0,2026-03-19,2026-03-28,CIMPO96023,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66253,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+538.1,0.0,SWIGGY,,,66251,565.0046875,MUMBAI,32.0,2026-03-19,2026-03-28,CIMPO96023,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66251,2026-07-01
+160.0,0.0,SWIGGY,,,66252,168.0,MUMBAI,40.0,2026-03-19,2026-03-28,CIMPO96023,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66252,2026-07-01
+828.57,0.0,SWIGGY,,,66253,869.99875,MUMBAI,8.0,2026-03-19,2026-03-28,CIMPO96023,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66253,2026-07-01
 ```
 
 ---

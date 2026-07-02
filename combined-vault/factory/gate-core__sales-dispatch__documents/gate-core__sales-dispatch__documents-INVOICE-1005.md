@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR69E0935"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR69E0935
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 33984
-- **doc_num:** 705260805
-- **doc_date:** 2026-05-31
-- **doc_total:** 29509.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000912
-- **card_name:** AMAZON (B2C -MAY-JULY)
-- **ship_to_code:** AMAZON B2C UTTAR PRADESH
-- **ship_to_address:** -246761IN
-- **place_of_supply:** UP
-- **bp_gstin:** 
+- **doc_entry:** 34169
+- **doc_num:** 606260112
+- **doc_date:** 2026-06-04
+- **doc_total:** 1332480.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** CMUNITY INNOVATIONS PRIVATE LIMITED JHAJJAR
+- **ship_to_address:** VILLAGE ROHAD TEHSIL BAHADURGARH  KHASRA NO 55//2/2 3 4 5 6 7 8 9/1 NEAR TOLL PLAZAJHAJJAR-124507IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR69E0935
+- **transporter_name:** Bhargave Road Carrier
+- **bilty_no:** 1350
+- **bilty_date:** 2026-06-05
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** SL0000026 - COLD PRESS 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000073 - EXTRA VIRGIN 2 LTR, FG0000155 - EXTRA VIRGIN 2 LTR 10 PCS HANDLE, SL0000080 - EXTRA VIRGIN 5 LTR TIN 4 PCS IMPORTED, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS
-- **base_refs:** 1505264740
-- **total_quantity:** 29.000
-- **total_litres:** 118.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000402 - COLD PRESS SUNFLOWER 1 LTR 24 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000386 - JIVO GOLD 1 LTR 20 PCS ROUND BOTTLE, FG0000194 - SOYABEAN OIL 1 LTR POUCH 12 PCS
+- **base_refs:** 1705264743
+- **total_quantity:** 8308.000
+- **total_litres:** 8308.000
 - **total_boxes:** 0.000
-- **total_weight:** 60.382
-- **line_count:** 12
+- **total_weight:** 7968.878
+- **line_count:** 4
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 33984, "sap_invoice_doc_num": "705260805", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 34169, "sap_invoice_doc_num": "606260112", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

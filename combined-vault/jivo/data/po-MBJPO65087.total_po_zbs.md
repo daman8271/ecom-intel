@@ -17,11 +17,11 @@ Up: [[po-MBJPO65087]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,32.0,SWIGGY,2026-05-23,72297,499.999375,BANGALORE,32.0,2026-05-08,2026-06-07,MBJPO65087,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72297,2026-06-30
-195.24,8.0,SWIGGY,2026-05-23,72298,205.0025,BANGALORE,8.0,2026-05-08,2026-06-07,MBJPO65087,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72298,2026-06-30
-147.62,60.0,SWIGGY,2026-05-23,72299,155.001,BANGALORE,60.0,2026-05-08,2026-06-07,MBJPO65087,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72299,2026-06-30
-761.9,10.0,SWIGGY,2026-05-23,72300,799.995,BANGALORE,10.0,2026-05-08,2026-06-07,MBJPO65087,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72300,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,32.0,SWIGGY,,2026-05-23,72297,499.999375,BANGALORE,32.0,2026-05-08,2026-06-07,MBJPO65087,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72297,2026-07-01
+195.24,8.0,SWIGGY,,2026-05-23,72298,205.0025,BANGALORE,8.0,2026-05-08,2026-06-07,MBJPO65087,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72298,2026-07-01
+147.62,60.0,SWIGGY,,2026-05-23,72299,155.001,BANGALORE,60.0,2026-05-08,2026-06-07,MBJPO65087,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72299,2026-07-01
+761.9,10.0,SWIGGY,,2026-05-23,72300,799.995,BANGALORE,10.0,2026-05-08,2026-06-07,MBJPO65087,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72300,2026-07-01
 ```
 
 ---

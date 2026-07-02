@@ -25,20 +25,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.18,
-   "margin_tax_value": 74162.3365795872,
-   "margin_value": 58040.089497068235,
-   "net_realise_shpd": 201.03854661602583,
-   "order_ltr": 1192.0,
-   "order_units": 764.0,
-   "order_value": 311151.62,
-   "per_liter_shpd": 261.08902157925434,
-   "projection_ltr": 1372.2222222222222,
-   "return_ltr": 96.0,
-   "return_units": 36.0,
-   "return_value": 25264.652816967526,
-   "shipped_ltr": 1235.0,
-   "shipped_units": 783.0,
-   "shipped_value": 322444.9416503791,
+   "margin_tax_value": 80969.6171860435,
+   "margin_value": 63367.52649342535,
+   "net_realise_shpd": 201.3909336302523,
+   "order_ltr": 1287.0,
+   "order_units": 823.0,
+   "order_value": 336591.6,
+   "per_liter_shpd": 261.5466670522757,
+   "projection_ltr": 1392.4137931034484,
+   "return_ltr": 97.0,
+   "return_units": 37.0,
+   "return_value": 25550.475345193387,
+   "shipped_ltr": 1346.0,
+   "shipped_units": 858.0,
+   "shipped_value": 352041.8138523631,
    "sub_category": "SO OLIVE"
   },
   {
@@ -46,20 +46,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.25,
-   "margin_tax_value": 1712287.2528503598,
-   "margin_value": 1426906.0440419666,
-   "net_realise_shpd": 166.368391560171,
-   "order_ltr": 24069.0,
-   "order_units": 9888.0,
-   "order_value": 5720440.17,
-   "per_liter_shpd": 237.66913080024426,
-   "projection_ltr": 26683.333333333332,
-   "return_ltr": 638.0,
-   "return_units": 210.0,
-   "return_value": 151530.94262264099,
-   "shipped_ltr": 24015.0,
-   "shipped_units": 9853.0,
-   "shipped_value": 5707624.176167866,
+   "margin_tax_value": 1855565.926058161,
+   "margin_value": 1546304.938381801,
+   "net_realise_shpd": 166.28850587506403,
+   "order_ltr": 25931.0,
+   "order_units": 10641.0,
+   "order_value": 6159996.12,
+   "per_liter_shpd": 237.55500839294862,
+   "projection_ltr": 26934.827586206895,
+   "return_ltr": 705.0,
+   "return_units": 233.0,
+   "return_value": 167400.7186607433,
+   "shipped_ltr": 26037.0,
+   "shipped_units": 10669.0,
+   "shipped_value": 6185219.753527204,
    "sub_category": "CANOLA"
   },
   {
@@ -67,41 +67,41 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.25,
-   "margin_tax_value": 116632.80804573814,
-   "margin_value": 97194.00670478179,
-   "net_realise_shpd": 361.8925781561024,
-   "order_ltr": 735.0,
-   "order_units": 1082.0,
-   "order_value": 379987.17,
-   "per_liter_shpd": 516.9893973658606,
-   "projection_ltr": 835.5555555555555,
-   "return_ltr": 13.5,
-   "return_units": 21.0,
-   "return_value": 6977.703619091476,
-   "shipped_ltr": 752.0,
-   "shipped_units": 1107.0,
-   "shipped_value": 388776.02681912715,
+   "margin_tax_value": 124286.328199162,
+   "margin_value": 103571.94016596834,
+   "net_realise_shpd": 362.50179058088924,
+   "order_ltr": 784.5,
+   "order_units": 1154.0,
+   "order_value": 406261.53,
+   "per_liter_shpd": 517.8597008298417,
+   "projection_ltr": 827.5862068965516,
+   "return_ltr": 15.0,
+   "return_units": 24.0,
+   "return_value": 7767.5401146453205,
+   "shipped_ltr": 800.0,
+   "shipped_units": 1180.0,
+   "shipped_value": 414287.76066387334,
    "sub_category": "COCONUT"
   },
   {
    "category": "GHEE",
    "format": "AMAZON",
    "item_head": "PREMIUM",
-   "margin_pct": 0.2,
-   "margin_tax_value": 183.0975,
-   "margin_value": 146.478,
-   "net_realise_shpd": 1098.585,
-   "order_ltr": 1.0,
-   "order_units": 2.0,
-   "order_value": 1464.78,
-   "per_liter_shpd": 1464.78,
-   "projection_ltr": 0.5555555555555556,
+   "margin_pct": 0.19999999999999998,
+   "margin_tax_value": 351.9075,
+   "margin_value": 281.526,
+   "net_realise_shpd": 1055.7225,
+   "order_ltr": 2.0,
+   "order_units": 4.0,
+   "order_value": 2815.26,
+   "per_liter_shpd": 1407.63,
+   "projection_ltr": 1.0344827586206897,
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 0.5,
-   "shipped_units": 1.0,
-   "shipped_value": 732.39,
+   "shipped_ltr": 1.0,
+   "shipped_units": 2.0,
+   "shipped_value": 1407.63,
    "sub_category": "A2 GHEE"
   },
   {
@@ -116,7 +116,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "order_units": 2.0,
    "order_value": 849.52,
    "per_liter_shpd": 849.52,
-   "projection_ltr": 1.1111111111111112,
+   "projection_ltr": 1.0344827586206897,
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
@@ -129,42 +129,42 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "category": "GROUNDNUT",
    "format": "AMAZON",
    "item_head": "PREMIUM",
-   "margin_pct": 0.17999999999999997,
-   "margin_tax_value": 1988767.8058476446,
-   "margin_value": 1556426.978489461,
-   "net_realise_shpd": 145.0207736994626,
-   "order_ltr": 48223.0,
-   "order_units": 26580.0,
-   "order_value": 9093919.22,
-   "per_liter_shpd": 188.33866714215924,
-   "projection_ltr": 51012.22222222222,
-   "return_ltr": 2105.0,
-   "return_units": 1269.0,
-   "return_value": 395611.9379388524,
-   "shipped_ltr": 45911.0,
-   "shipped_units": 26143.0,
-   "shipped_value": 8646816.547163673,
+   "margin_pct": 0.18,
+   "margin_tax_value": 2168928.025204157,
+   "margin_value": 1697421.9327684706,
+   "net_realise_shpd": 145.03822753894153,
+   "order_ltr": 52028.0,
+   "order_units": 28598.0,
+   "order_value": 9808031.06,
+   "per_liter_shpd": 188.36133446615784,
+   "projection_ltr": 51790.34482758621,
+   "return_ltr": 2262.0,
+   "return_units": 1342.0,
+   "return_value": 425234.7816441529,
+   "shipped_ltr": 50064.0,
+   "shipped_units": 28112.0,
+   "shipped_value": 9430121.848713726,
    "sub_category": "GROUNDNUT"
   },
   {
    "category": "MUSTARD",
    "format": "AMAZON",
    "item_head": "PREMIUM",
-   "margin_pct": 0.2212540450560865,
-   "margin_tax_value": 130707.06821625441,
-   "margin_value": 106613.95871272085,
-   "net_realise_shpd": 176.54857810679587,
-   "order_ltr": 2004.0,
-   "order_units": 1080.0,
-   "order_value": 485421.18,
-   "per_liter_shpd": 242.26354453025206,
-   "projection_ltr": 2210.0,
+   "margin_pct": 0.22186267166461668,
+   "margin_tax_value": 139291.24506356276,
+   "margin_value": 113673.30270121458,
+   "net_realise_shpd": 176.72553395708235,
+   "order_ltr": 2109.0,
+   "order_units": 1121.0,
+   "order_value": 511800.25,
+   "per_liter_shpd": 242.709070225942,
+   "projection_ltr": 2183.793103448276,
    "return_ltr": 97.0,
    "return_units": 49.0,
-   "return_value": 23531.171695807137,
-   "shipped_ltr": 1989.0,
-   "shipped_units": 1065.0,
-   "shipped_value": 481862.1900706714,
+   "return_value": 23565.947955465588,
+   "shipped_ltr": 2111.0,
+   "shipped_units": 1115.0,
+   "shipped_value": 512358.8472469636,
    "sub_category": "YELLOW MUSTARD"
   },
   {
@@ -193,20 +193,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.25,
-   "margin_tax_value": 1901300.4318168166,
-   "margin_value": 1584417.0265140138,
-   "net_realise_shpd": 359.002037162795,
-   "order_ltr": 12329.0,
-   "order_units": 7289.0,
-   "order_value": 6316764.89,
-   "per_liter_shpd": 512.8600530897071,
-   "projection_ltr": 13730.555555555555,
-   "return_ltr": 306.0,
-   "return_units": 150.0,
-   "return_value": 157935.5295215621,
-   "shipped_ltr": 12357.5,
-   "shipped_units": 7234.0,
-   "shipped_value": 6337668.106056055,
+   "margin_tax_value": 2067575.9432343617,
+   "margin_value": 1722979.9526953015,
+   "net_realise_shpd": 359.5694915068081,
+   "order_ltr": 13234.5,
+   "order_units": 7830.0,
+   "order_value": 6790715.33,
+   "per_liter_shpd": 513.670702152583,
+   "projection_ltr": 13879.655172413792,
+   "return_ltr": 330.0,
+   "return_units": 163.0,
+   "return_value": 170606.8508368226,
+   "shipped_ltr": 13417.0,
+   "shipped_units": 7855.0,
+   "shipped_value": 6891919.810781206,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -214,20 +214,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.25,
-   "margin_tax_value": 495201.72683577676,
-   "margin_value": 412668.1056964806,
-   "net_realise_shpd": 522.152241832051,
-   "order_ltr": 2214.7,
-   "order_units": 2080.0,
-   "order_value": 1650985.33,
-   "per_liter_shpd": 745.9317740457872,
-   "projection_ltr": 2458.7777777777783,
-   "return_ltr": 52.4,
-   "return_units": 54.0,
-   "return_value": 39233.839324644134,
-   "shipped_ltr": 2212.9,
-   "shipped_units": 2120.0,
-   "shipped_value": 1650672.4227859224,
+   "margin_tax_value": 551841.4639679334,
+   "margin_value": 459867.8866399445,
+   "net_realise_shpd": 521.1178447496235,
+   "order_ltr": 2471.4,
+   "order_units": 2278.0,
+   "order_value": 1838428.56,
+   "per_liter_shpd": 744.4540639280335,
+   "projection_ltr": 2556.1034482758623,
+   "return_ltr": 59.4,
+   "return_units": 57.0,
+   "return_value": 44253.10875984214,
+   "shipped_ltr": 2470.9,
+   "shipped_units": 2311.0,
+   "shipped_value": 1839471.546559778,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -235,20 +235,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.25,
-   "margin_tax_value": 1936015.7659073826,
-   "margin_value": 1613346.4715894854,
-   "net_realise_shpd": 263.9113232722182,
-   "order_ltr": 17125.0,
-   "order_units": 9617.0,
-   "order_value": 6457006.9,
-   "per_liter_shpd": 377.0161761031689,
-   "projection_ltr": 19018.888888888887,
-   "return_ltr": 568.0,
-   "return_units": 293.0,
-   "return_value": 214968.11552520725,
-   "shipped_ltr": 17117.0,
-   "shipped_units": 9655.0,
-   "shipped_value": 6453385.886357942,
+   "margin_tax_value": 2094080.4638378492,
+   "margin_value": 1745067.0531982076,
+   "net_realise_shpd": 264.10398080941474,
+   "order_ltr": 18361.0,
+   "order_units": 10384.0,
+   "order_value": 6926525.17,
+   "per_liter_shpd": 377.29140115630673,
+   "projection_ltr": 19138.96551724138,
+   "return_ltr": 613.0,
+   "return_units": 314.0,
+   "return_value": 232275.75345935344,
+   "shipped_ltr": 18501.0,
+   "shipped_units": 10443.0,
+   "shipped_value": 6980268.212792831,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -256,20 +256,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.25,
-   "margin_tax_value": 137405.61785264924,
-   "margin_value": 114504.68154387438,
-   "net_realise_shpd": 261.51150760428084,
-   "order_ltr": 1174.0,
-   "order_units": 866.0,
-   "order_value": 438715.22,
-   "per_liter_shpd": 373.58786800611546,
-   "projection_ltr": 1362.2222222222222,
+   "margin_tax_value": 146245.39220717672,
+   "margin_value": 121871.16017264726,
+   "net_realise_shpd": 261.08588254277913,
+   "order_ltr": 1264.0,
+   "order_units": 928.0,
+   "order_value": 471459.9,
+   "per_liter_shpd": 372.9798322039702,
+   "projection_ltr": 1352.0689655172414,
    "return_ltr": 81.0,
    "return_units": 29.0,
-   "return_value": 29647.544809145227,
-   "shipped_ltr": 1226.0,
-   "shipped_units": 898.0,
-   "shipped_value": 458018.7261754975,
+   "return_value": 29471.527605506657,
+   "shipped_ltr": 1307.0,
+   "shipped_units": 959.0,
+   "shipped_value": 487484.64069058903,
    "sub_category": "SANO POMACE"
   },
   {
@@ -277,62 +277,62 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "PREMIUM",
    "margin_pct": 0.25,
-   "margin_tax_value": 41092.2649375,
-   "margin_value": 34243.554114583334,
-   "net_realise_shpd": 224.54789583333334,
-   "order_ltr": 432.0,
-   "order_units": 432.0,
-   "order_value": 138578.13,
-   "per_liter_shpd": 320.78270833333335,
-   "projection_ltr": 474.44444444444446,
+   "margin_tax_value": 47806.78906144068,
+   "margin_value": 39838.9908845339,
+   "net_realise_shpd": 224.44501906779664,
+   "order_ltr": 472.0,
+   "order_units": 472.0,
+   "order_value": 151340.07,
+   "per_liter_shpd": 320.6357415254238,
+   "projection_ltr": 514.1379310344828,
    "return_ltr": 13.0,
    "return_units": 13.0,
-   "return_value": 4170.175208333333,
-   "shipped_ltr": 427.0,
-   "shipped_units": 427.0,
-   "shipped_value": 136974.21645833334,
+   "return_value": 4168.264639830509,
+   "shipped_ltr": 497.0,
+   "shipped_units": 497.0,
+   "shipped_value": 159355.9635381356,
    "sub_category": "SESAME OIL"
   },
   {
    "category": "BLENDED",
    "format": "AMAZON",
    "item_head": "COMMODITY",
-   "margin_pct": 0.18,
-   "margin_tax_value": 264817.4875614511,
-   "margin_value": 207248.46852635304,
-   "net_realise_shpd": 132.165010903475,
-   "order_ltr": 6533.0,
-   "order_units": 3865.0,
-   "order_value": 1120406.59,
-   "per_liter_shpd": 171.6428713032143,
-   "projection_ltr": 7453.333333333334,
-   "return_ltr": 650.0,
-   "return_units": 350.0,
-   "return_value": 112062.21874135634,
-   "shipped_ltr": 6708.0,
-   "shipped_units": 3912.0,
-   "shipped_value": 1151380.3807019615,
+   "margin_pct": 0.18000000000000002,
+   "margin_tax_value": 277358.1549735416,
+   "margin_value": 217062.9038923369,
+   "net_realise_shpd": 132.36591114049213,
+   "order_ltr": 6770.0,
+   "order_units": 3994.0,
+   "order_value": 1162563.8,
+   "per_liter_shpd": 171.90378070193782,
+   "projection_ltr": 7256.896551724138,
+   "return_ltr": 700.0,
+   "return_units": 364.0,
+   "return_value": 121028.72494489564,
+   "shipped_ltr": 7015.0,
+   "shipped_units": 4063.0,
+   "shipped_value": 1205905.0216240939,
    "sub_category": "GOLD"
   },
   {
    "category": "MUSTARD",
    "format": "AMAZON",
    "item_head": "COMMODITY",
-   "margin_pct": 0.18,
-   "margin_tax_value": 1767024.9444801398,
-   "margin_value": 1382889.0869844572,
-   "net_realise_shpd": 133.24531399494361,
-   "order_ltr": 44532.0,
-   "order_units": 31820.0,
-   "order_value": 7693019.65,
-   "per_liter_shpd": 173.04586233109558,
-   "projection_ltr": 49330.0,
-   "return_ltr": 1904.0,
-   "return_units": 1000.0,
-   "return_value": 340767.73798663705,
-   "shipped_ltr": 44397.0,
-   "shipped_units": 31313.0,
-   "shipped_value": 7682717.149913651,
+   "margin_pct": 0.18000000000000002,
+   "margin_tax_value": 1896941.8777979712,
+   "margin_value": 1484563.2087114558,
+   "net_realise_shpd": 133.48393105625397,
+   "order_ltr": 47652.0,
+   "order_units": 33884.0,
+   "order_value": 8246418.22,
+   "per_liter_shpd": 173.35575461851164,
+   "projection_ltr": 49216.55172413793,
+   "return_ltr": 2065.0,
+   "return_units": 1089.0,
+   "return_value": 369813.1356262994,
+   "shipped_ltr": 47576.0,
+   "shipped_units": 33380.0,
+   "shipped_value": 8247573.38173031,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -340,62 +340,62 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "COMMODITY",
    "margin_pct": 0.18,
-   "margin_tax_value": 455378.6512581942,
-   "margin_value": 356383.29228902154,
-   "net_realise_shpd": 137.30780222689893,
-   "order_ltr": 11159.0,
-   "order_units": 5959.0,
-   "order_value": 1990017.18,
-   "per_liter_shpd": 178.3218210738947,
-   "projection_ltr": 12336.666666666666,
-   "return_ltr": 645.0,
-   "return_units": 261.0,
-   "return_value": 114490.59804820447,
-   "shipped_ltr": 11103.0,
-   "shipped_units": 5939.0,
-   "shipped_value": 1979907.179383453,
+   "margin_tax_value": 494127.0030120635,
+   "margin_value": 386708.0893137888,
+   "net_realise_shpd": 137.33925039048816,
+   "order_ltr": 11974.0,
+   "order_units": 6438.0,
+   "order_value": 2135972.03,
+   "per_liter_shpd": 178.3626628447898,
+   "projection_ltr": 12460.344827586208,
+   "return_ltr": 719.0,
+   "return_units": 279.0,
+   "return_value": 127558.58443926404,
+   "shipped_ltr": 12045.0,
+   "shipped_units": 6465.0,
+   "shipped_value": 2148378.2739654933,
    "sub_category": "RICE BRAN"
   },
   {
    "category": "SOYABEAN",
    "format": "AMAZON",
    "item_head": "COMMODITY",
-   "margin_pct": 0.18000000000000002,
-   "margin_tax_value": 26542.99113560437,
-   "margin_value": 20772.77567134255,
-   "net_realise_shpd": 146.87821181757357,
-   "order_ltr": 656.0,
-   "order_units": 404.0,
-   "order_value": 124477.25,
-   "per_liter_shpd": 190.75092443840725,
-   "projection_ltr": 672.2222222222223,
+   "margin_pct": 0.18,
+   "margin_tax_value": 28316.952104814573,
+   "margin_value": 22161.092951594015,
+   "net_realise_shpd": 146.74958352878733,
+   "order_ltr": 682.0,
+   "order_units": 454.0,
+   "order_value": 129583.19,
+   "per_liter_shpd": 190.5838747127108,
+   "projection_ltr": 668.2758620689655,
    "return_ltr": 135.0,
    "return_units": 71.0,
-   "return_value": 25521.513491079393,
-   "shipped_ltr": 605.0,
-   "shipped_units": 421.0,
-   "shipped_value": 115404.30928523639,
+   "return_value": 25476.719402732597,
+   "shipped_ltr": 646.0,
+   "shipped_units": 458.0,
+   "shipped_value": 123117.18306441119,
    "sub_category": "SOYABEAN"
   },
   {
    "category": "SUNFLOWER",
    "format": "AMAZON",
    "item_head": "COMMODITY",
-   "margin_pct": 0.18000000000000002,
-   "margin_tax_value": 2183234.4320868226,
-   "margin_value": 1708618.251198383,
-   "net_realise_shpd": 137.84232316231913,
-   "order_ltr": 52560.0,
-   "order_units": 30942.0,
-   "order_value": 9392356.91,
-   "per_liter_shpd": 179.01600410690796,
-   "projection_ltr": 58916.666666666664,
-   "return_ltr": 2101.0,
-   "return_units": 810.0,
-   "return_value": 387698.89347694546,
-   "shipped_ltr": 53025.0,
-   "shipped_units": 30630.0,
-   "shipped_value": 9492323.617768794,
+   "margin_pct": 0.18,
+   "margin_tax_value": 2366327.869391187,
+   "margin_value": 1851908.7673496248,
+   "net_realise_shpd": 137.3544311575016,
+   "order_ltr": 57373.0,
+   "order_units": 33917.0,
+   "order_value": 10213354.62,
+   "per_liter_shpd": 178.38237812662544,
+   "projection_ltr": 59664.8275862069,
+   "return_ltr": 2225.0,
+   "return_units": 914.0,
+   "return_value": 406998.75370976346,
+   "shipped_ltr": 57676.0,
+   "shipped_units": 33323.0,
+   "shipped_value": 10288382.04083125,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -529,20 +529,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "format": "AMAZON",
    "item_head": "OTHER",
    "margin_pct": 0.25,
-   "margin_tax_value": 481.137,
-   "margin_value": 400.9475,
+   "margin_tax_value": 517.995,
+   "margin_value": 431.6625,
    "net_realise_shpd": 0.0,
    "order_ltr": 0.0,
-   "order_units": 44.0,
-   "order_value": 1603.79,
+   "order_units": 47.0,
+   "order_value": 1726.65,
    "per_liter_shpd": 0.0,
    "projection_ltr": 0.0,
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
    "shipped_ltr": 0.0,
-   "shipped_units": 44.0,
-   "shipped_value": 1603.79,
+   "shipped_units": 47.0,
+   "shipped_value": 1726.65,
    "sub_category": "MANGO"
   },
   {
@@ -1051,25 +1051,25 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   }
  ],
  "category_total": {
-  "margin_pct": 0.209395815370976,
-  "margin_tax_value": 13232296.821911922,
-  "margin_value": 10681697.306073993,
-  "net_realise_shpd": 169.35346836675967,
-  "order_ltr": 224939.7,
-  "order_units": 132729.0,
-  "order_value": 51319901.870000005,
-  "per_liter_shpd": 228.669337659212,
-  "projection_ltr": 247868.77777777778,
-  "return_ltr": 9404.9,
-  "return_units": 4616.0,
-  "return_value": 2029412.5748264743,
-  "shipped_ltr": 223081.9,
-  "shipped_units": 131561.0,
-  "shipped_value": 51011990.316758566
+  "margin_pct": 0.20946976190391825,
+  "margin_tax_value": 14341593.955799427,
+  "margin_value": 11577959.023820315,
+  "net_realise_shpd": 169.47932653881378,
+  "order_ltr": 242396.4,
+  "order_units": 142982.0,
+  "order_value": 55297169.25,
+  "per_liter_shpd": 228.8621285398805,
+  "projection_ltr": 249838.8620689655,
+  "return_ltr": 10116.4,
+  "return_units": 4978.0,
+  "return_value": 2181170.887144511,
+  "shipped_ltr": 241510.9,
+  "shipped_units": 141753.0,
+  "shipped_value": 55272698.639582224
  },
- "cutoff_month_day": "27-JUNE",
+ "cutoff_month_day": "29-JUNE",
  "cutoff_month_day_keys": [
-  "27-JUNE"
+  "29-JUNE"
  ],
  "dashboard_title": "Amazon Secondary Dashboard",
  "days_in_month": 30,
@@ -1079,17 +1079,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   "margin_pct": 0.0,
   "margin_tax_value": 0.0,
   "margin_value": 0.0,
-  "net_realise_shpd": 228.67951992859378,
-  "order_ltr": 224939.7,
-  "order_units": 132753.0,
-  "order_value": 51322107.64,
-  "per_liter_shpd": 228.67951992859378,
-  "return_ltr": 9404.9,
-  "return_units": 4620.0,
-  "return_value": 2029789.7293719288,
-  "shipped_ltr": 223081.9,
-  "shipped_units": 131586.0,
-  "shipped_value": 51014261.79675856
+  "net_realise_shpd": 228.87153382966247,
+  "order_ltr": 242396.4,
+  "order_units": 143006.0,
+  "order_value": 55299375.02,
+  "per_liter_shpd": 228.87153382966247,
+  "return_ltr": 10116.4,
+  "return_units": 4982.0,
+  "return_value": 2181548.0416899654,
+  "shipped_ltr": 241510.9,
+  "shipped_units": 141778.0,
+  "shipped_value": 55274970.11958223
  },
  "details": [
   {
@@ -1097,17 +1097,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "PREMIUM",
-   "order_ltr": 657.0,
-   "order_units": 657.0,
-   "order_value": 169600.34,
-   "per_liter_shpd": 258.1435920852359,
+   "order_ltr": 707.0,
+   "order_units": 707.0,
+   "order_value": 183050.83,
+   "per_liter_shpd": 258.9120650636492,
    "per_ltr": "1 LTR",
-   "return_ltr": 21.0,
-   "return_units": 21.0,
-   "return_value": 5421.015433789954,
-   "shipped_ltr": 670.0,
-   "shipped_units": 670.0,
-   "shipped_value": 172956.20669710808,
+   "return_ltr": 22.0,
+   "return_units": 22.0,
+   "return_value": 5696.065431400283,
+   "shipped_ltr": 736.0,
+   "shipped_units": 736.0,
+   "shipped_value": 190559.27988684582,
    "sub_category": "SO OLIVE"
   },
   {
@@ -1115,17 +1115,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "PREMIUM",
-   "order_ltr": 535.0,
-   "order_units": 107.0,
-   "order_value": 141551.28,
-   "per_liter_shpd": 264.58183177570095,
+   "order_ltr": 580.0,
+   "order_units": 116.0,
+   "order_value": 153540.77,
+   "per_liter_shpd": 264.7254655172414,
    "per_ltr": "5 LTR",
    "return_ltr": 75.0,
    "return_units": 15.0,
-   "return_value": 19843.63738317757,
-   "shipped_ltr": 565.0,
-   "shipped_units": 113.0,
-   "shipped_value": 149488.73495327102,
+   "return_value": 19854.409913793104,
+   "shipped_ltr": 610.0,
+   "shipped_units": 122.0,
+   "shipped_value": 161482.53396551724,
    "sub_category": "SO OLIVE"
   },
   {
@@ -1133,17 +1133,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 1674.0,
-   "order_units": 837.0,
-   "order_value": 394592.05,
-   "per_liter_shpd": 235.7180704898447,
+   "order_ltr": 1884.0,
+   "order_units": 942.0,
+   "order_value": 442894.97,
+   "per_liter_shpd": 235.0822558386412,
    "per_ltr": "1+1 LTR",
-   "return_ltr": 48.0,
-   "return_units": 24.0,
-   "return_value": 11314.467383512545,
-   "shipped_ltr": 1668.0,
-   "shipped_units": 834.0,
-   "shipped_value": 393177.74157706095,
+   "return_ltr": 56.0,
+   "return_units": 28.0,
+   "return_value": 13164.606326963907,
+   "shipped_ltr": 1904.0,
+   "shipped_units": 952.0,
+   "shipped_value": 447596.6151167728,
    "sub_category": "CANOLA"
   },
   {
@@ -1151,17 +1151,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 5569.0,
-   "order_units": 5569.0,
-   "order_value": 1327335.31,
-   "per_liter_shpd": 238.3435643742144,
+   "order_ltr": 5960.0,
+   "order_units": 5960.0,
+   "order_value": 1418042.86,
+   "per_liter_shpd": 237.92665436241612,
    "per_ltr": "1 LTR",
-   "return_ltr": 82.0,
-   "return_units": 82.0,
-   "return_value": 19544.172278685583,
-   "shipped_ltr": 5518.0,
-   "shipped_units": 5518.0,
-   "shipped_value": 1315179.788216915,
+   "return_ltr": 89.0,
+   "return_units": 89.0,
+   "return_value": 21175.472238255035,
+   "shipped_ltr": 5939.0,
+   "shipped_units": 5939.0,
+   "shipped_value": 1413046.4002583893,
    "sub_category": "CANOLA"
   },
   {
@@ -1169,17 +1169,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 143.0,
-   "order_units": 143.0,
-   "order_value": 34234.97,
-   "per_liter_shpd": 239.4053846153846,
+   "order_ltr": 149.0,
+   "order_units": 149.0,
+   "order_value": 36015.93,
+   "per_liter_shpd": 241.7176510067114,
    "per_ltr": "1 LTR",
-   "return_ltr": 3.0,
-   "return_units": 3.0,
-   "return_value": 718.2161538461538,
-   "shipped_ltr": 166.0,
-   "shipped_units": 166.0,
-   "shipped_value": 39741.29384615384,
+   "return_ltr": 5.0,
+   "return_units": 5.0,
+   "return_value": 1208.588255033557,
+   "shipped_ltr": 171.0,
+   "shipped_units": 171.0,
+   "shipped_value": 41333.71832214765,
    "sub_category": "CANOLA"
   },
   {
@@ -1205,17 +1205,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 16675.0,
-   "order_units": 3335.0,
-   "order_value": 3962386.43,
-   "per_liter_shpd": 237.6243736131934,
+   "order_ltr": 17930.0,
+   "order_units": 3586.0,
+   "order_value": 4261150.95,
+   "per_liter_shpd": 237.6548215281651,
    "per_ltr": "5 LTR",
-   "return_ltr": 500.0,
-   "return_units": 100.0,
-   "return_value": 118812.1868065967,
-   "shipped_ltr": 16655.0,
-   "shipped_units": 3331.0,
-   "shipped_value": 3957633.942527736,
+   "return_ltr": 550.0,
+   "return_units": 110.0,
+   "return_value": 130710.1518404908,
+   "shipped_ltr": 18015.0,
+   "shipped_units": 3603.0,
+   "shipped_value": 4281351.609829894,
    "sub_category": "CANOLA"
   },
   {
@@ -1241,17 +1241,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "COCONUT",
    "item_head": "PREMIUM",
-   "order_ltr": 388.0,
-   "order_units": 388.0,
-   "order_value": 200860.58,
-   "per_liter_shpd": 517.6819072164949,
+   "order_ltr": 415.0,
+   "order_units": 415.0,
+   "order_value": 214949.14,
+   "per_liter_shpd": 517.9497349397591,
    "per_ltr": "1 LTR",
    "return_ltr": 6.0,
    "return_units": 6.0,
-   "return_value": 3106.091443298969,
-   "shipped_ltr": 397.0,
-   "shipped_units": 397.0,
-   "shipped_value": 205519.71716494847,
+   "return_value": 3107.698409638554,
+   "shipped_ltr": 420.0,
+   "shipped_units": 420.0,
+   "shipped_value": 217538.8886746988,
    "sub_category": "COCONUT"
   },
   {
@@ -1259,17 +1259,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "COCONUT",
    "item_head": "PREMIUM",
-   "order_ltr": 347.0,
-   "order_units": 694.0,
-   "order_value": 179126.59,
-   "per_liter_shpd": 516.2149567723343,
+   "order_ltr": 369.5,
+   "order_units": 739.0,
+   "order_value": 191312.39,
+   "per_liter_shpd": 517.7601894451963,
    "per_ltr": "500 MLS",
-   "return_ltr": 7.5,
-   "return_units": 15.0,
-   "return_value": 3871.612175792507,
-   "shipped_ltr": 355.0,
-   "shipped_units": 710.0,
-   "shipped_value": 183256.30965417868,
+   "return_ltr": 9.0,
+   "return_units": 18.0,
+   "return_value": 4659.841705006766,
+   "shipped_ltr": 380.0,
+   "shipped_units": 760.0,
+   "shipped_value": 196748.87198917457,
    "sub_category": "COCONUT"
   },
   {
@@ -1277,17 +1277,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GHEE",
    "item_head": "PREMIUM",
-   "order_ltr": 1.0,
-   "order_units": 2.0,
-   "order_value": 1464.78,
-   "per_liter_shpd": 1464.78,
+   "order_ltr": 2.0,
+   "order_units": 4.0,
+   "order_value": 2815.26,
+   "per_liter_shpd": 1407.63,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 0.5,
-   "shipped_units": 1.0,
-   "shipped_value": 732.39,
+   "shipped_ltr": 1.0,
+   "shipped_units": 2.0,
+   "shipped_value": 1407.63,
    "sub_category": "A2 GHEE"
   },
   {
@@ -1313,17 +1313,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GROUNDNUT",
    "item_head": "PREMIUM",
-   "order_ltr": 21167.0,
-   "order_units": 21167.0,
-   "order_value": 3877624.64,
-   "per_liter_shpd": 183.19197996881937,
+   "order_ltr": 22739.0,
+   "order_units": 22739.0,
+   "order_value": 4166764.56,
+   "per_liter_shpd": 183.24308720700117,
    "per_ltr": "1 LTR",
-   "return_ltr": 1060.0,
-   "return_units": 1060.0,
-   "return_value": 194183.49876694856,
-   "shipped_ltr": 21201.0,
-   "shipped_units": 21201.0,
-   "shipped_value": 3883853.1673189397,
+   "return_ltr": 1112.0,
+   "return_units": 1112.0,
+   "return_value": 203766.31297418533,
+   "shipped_ltr": 22624.0,
+   "shipped_units": 22624.0,
+   "shipped_value": 4145691.6049711946,
    "sub_category": "GROUNDNUT"
   },
   {
@@ -1331,9 +1331,9 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GROUNDNUT",
    "item_head": "PREMIUM",
-   "order_ltr": 6.0,
-   "order_units": 3.0,
-   "order_value": 2285.7,
+   "order_ltr": 4.0,
+   "order_units": 2.0,
+   "order_value": 1523.8,
    "per_liter_shpd": 0.0,
    "per_ltr": "2 LTR",
    "return_ltr": 0.0,
@@ -1349,17 +1349,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GROUNDNUT",
    "item_head": "PREMIUM",
-   "order_ltr": 27050.0,
-   "order_units": 5410.0,
-   "order_value": 5214008.88,
-   "per_liter_shpd": 192.75448724584103,
+   "order_ltr": 29285.0,
+   "order_units": 5857.0,
+   "order_value": 5639742.7,
+   "per_liter_shpd": 192.5812771043196,
    "per_ltr": "5 LTR",
-   "return_ltr": 1045.0,
-   "return_units": 209.0,
-   "return_value": 201428.43917190388,
-   "shipped_ltr": 24710.0,
-   "shipped_units": 4942.0,
-   "shipped_value": 4762963.379844732,
+   "return_ltr": 1150.0,
+   "return_units": 230.0,
+   "return_value": 221468.46866996755,
+   "shipped_ltr": 27440.0,
+   "shipped_units": 5488.0,
+   "shipped_value": 5284430.24374253,
    "sub_category": "GROUNDNUT"
   },
   {
@@ -1367,17 +1367,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "PREMIUM",
-   "order_ltr": 849.0,
-   "order_units": 849.0,
-   "order_value": 201438.83,
-   "per_liter_shpd": 237.2659952885748,
+   "order_ltr": 874.0,
+   "order_units": 874.0,
+   "order_value": 207851.23,
+   "per_liter_shpd": 237.81605263157894,
    "per_ltr": "1 LTR",
    "return_ltr": 37.0,
    "return_units": 37.0,
-   "return_value": 8778.841825677267,
-   "shipped_ltr": 834.0,
-   "shipped_units": 834.0,
-   "shipped_value": 197879.84007067137,
+   "return_value": 8799.193947368422,
+   "shipped_ltr": 866.0,
+   "shipped_units": 866.0,
+   "shipped_value": 205948.70157894737,
    "sub_category": "YELLOW MUSTARD"
   },
   {
@@ -1385,17 +1385,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "PREMIUM",
-   "order_ltr": 1155.0,
-   "order_units": 231.0,
-   "order_value": 283982.35,
-   "per_liter_shpd": 245.87216450216448,
+   "order_ltr": 1235.0,
+   "order_units": 247.0,
+   "order_value": 303949.02,
+   "per_liter_shpd": 246.11256680161947,
    "per_ltr": "5 LTR",
    "return_ltr": 60.0,
    "return_units": 12.0,
-   "return_value": 14752.32987012987,
-   "shipped_ltr": 1155.0,
-   "shipped_units": 231.0,
-   "shipped_value": 283982.35,
+   "return_value": 14766.754008097167,
+   "shipped_ltr": 1245.0,
+   "shipped_units": 249.0,
+   "shipped_value": 306410.1456680162,
    "sub_category": "YELLOW MUSTARD"
   },
   {
@@ -1403,17 +1403,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 4398.0,
-   "order_units": 4398.0,
-   "order_value": 2102327.86,
-   "per_liter_shpd": 478.01906775807186,
+   "order_ltr": 4734.0,
+   "order_units": 4734.0,
+   "order_value": 2262846.6,
+   "per_liter_shpd": 477.99885931558936,
    "per_ltr": "1 LTR",
-   "return_ltr": 77.0,
-   "return_units": 77.0,
-   "return_value": 36807.468217371534,
-   "shipped_ltr": 4275.0,
-   "shipped_units": 4275.0,
-   "shipped_value": 2043531.514665757,
+   "return_ltr": 83.0,
+   "return_units": 83.0,
+   "return_value": 39673.90532319392,
+   "shipped_ltr": 4650.0,
+   "shipped_units": 4650.0,
+   "shipped_value": 2222694.6958174906,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -1421,17 +1421,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 4144.0,
-   "order_units": 2072.0,
-   "order_value": 2210987.15,
-   "per_liter_shpd": 533.5393701737452,
+   "order_ltr": 4418.0,
+   "order_units": 2209.0,
+   "order_value": 2360563.54,
+   "per_liter_shpd": 534.3059167043912,
    "per_ltr": "2 LTR",
-   "return_ltr": 84.0,
-   "return_units": 42.0,
-   "return_value": 44817.307094594595,
-   "shipped_ltr": 4246.0,
-   "shipped_units": 2123.0,
-   "shipped_value": 2265408.165757722,
+   "return_ltr": 94.0,
+   "return_units": 47.0,
+   "return_value": 50224.756170212764,
+   "shipped_ltr": 4584.0,
+   "shipped_units": 2292.0,
+   "shipped_value": 2449258.322172929,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -1439,17 +1439,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 165.0,
-   "order_units": 55.0,
-   "order_value": 81774.31,
-   "per_liter_shpd": 495.60187878787883,
+   "order_ltr": 225.0,
+   "order_units": 75.0,
+   "order_value": 110049.49,
+   "per_liter_shpd": 489.10884444444446,
    "per_ltr": "3 LTR",
-   "return_ltr": 15.0,
-   "return_units": 5.0,
-   "return_value": 7434.028181818182,
-   "shipped_ltr": 198.0,
-   "shipped_units": 66.0,
-   "shipped_value": 98129.172,
+   "return_ltr": 18.0,
+   "return_units": 6.0,
+   "return_value": 8803.9592,
+   "shipped_ltr": 249.0,
+   "shipped_units": 83.0,
+   "shipped_value": 121788.10226666667,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -1457,17 +1457,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 22.0,
-   "order_units": 44.0,
-   "order_value": 14320.08,
-   "per_liter_shpd": 650.9127272727272,
+   "order_ltr": 22.5,
+   "order_units": 45.0,
+   "order_value": 14642.94,
+   "per_liter_shpd": 650.7973333333333,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 23.5,
-   "shipped_units": 47.0,
-   "shipped_value": 15296.449090909091,
+   "shipped_ltr": 24.0,
+   "shipped_units": 48.0,
+   "shipped_value": 15619.136,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -1475,17 +1475,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 3600.0,
-   "order_units": 720.0,
-   "order_value": 1907355.49,
-   "per_liter_shpd": 529.8209694444445,
+   "order_ltr": 3835.0,
+   "order_units": 767.0,
+   "order_value": 2042612.76,
+   "per_liter_shpd": 532.623926988266,
    "per_ltr": "5 LTR",
-   "return_ltr": 130.0,
-   "return_units": 26.0,
-   "return_value": 68876.72602777778,
-   "shipped_ltr": 3615.0,
-   "shipped_units": 723.0,
-   "shipped_value": 1915302.8045416668,
+   "return_ltr": 135.0,
+   "return_units": 27.0,
+   "return_value": 71904.2301434159,
+   "shipped_ltr": 3910.0,
+   "shipped_units": 782.0,
+   "shipped_value": 2082559.55452412,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -1493,17 +1493,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 1966.0,
-   "order_units": 1966.0,
-   "order_value": 1467070.13,
-   "per_liter_shpd": 746.2208189216684,
+   "order_ltr": 2147.0,
+   "order_units": 2147.0,
+   "order_value": 1603847.63,
+   "per_liter_shpd": 747.017992547741,
    "per_ltr": "1 LTR",
-   "return_ltr": 46.0,
-   "return_units": 46.0,
-   "return_value": 34326.157670396744,
-   "shipped_ltr": 2007.0,
-   "shipped_units": 2007.0,
-   "shipped_value": 1497665.1835757885,
+   "return_ltr": 48.0,
+   "return_units": 48.0,
+   "return_value": 35856.863642291566,
+   "shipped_ltr": 2179.0,
+   "shipped_units": 2179.0,
+   "shipped_value": 1627752.2057615276,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -1511,17 +1511,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 12.2,
-   "order_units": 61.0,
-   "order_value": 11018.08,
-   "per_liter_shpd": 903.1213114754098,
+   "order_ltr": 12.4,
+   "order_units": 62.0,
+   "order_value": 11198.08,
+   "per_liter_shpd": 903.0709677419355,
    "per_ltr": "200 MLS",
    "return_ltr": 1.4,
    "return_units": 7.0,
-   "return_value": 1264.3698360655737,
+   "return_value": 1264.2993548387096,
    "shipped_ltr": 13.4,
    "shipped_units": 67.0,
-   "shipped_value": 12101.825573770491,
+   "shipped_value": 12101.150967741936,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -1547,17 +1547,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 0.5,
-   "order_units": 1.0,
-   "order_value": 399.05,
+   "order_ltr": 1.0,
+   "order_units": 2.0,
+   "order_value": 798.1,
    "per_liter_shpd": 798.1,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 1.5,
-   "shipped_units": 3.0,
-   "shipped_value": 1197.15,
+   "shipped_ltr": 2.5,
+   "shipped_units": 5.0,
+   "shipped_value": 1995.25,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -1565,17 +1565,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 220.0,
-   "order_units": 44.0,
-   "order_value": 160305.72,
-   "per_liter_shpd": 728.6623636363636,
+   "order_ltr": 295.0,
+   "order_units": 59.0,
+   "order_value": 210392.4,
+   "per_liter_shpd": 713.1945762711865,
    "per_ltr": "5 LTR",
-   "return_ltr": 5.0,
-   "return_units": 1.0,
-   "return_value": 3643.311818181818,
-   "shipped_ltr": 175.0,
-   "shipped_units": 35.0,
-   "shipped_value": 127515.91363636364,
+   "return_ltr": 10.0,
+   "return_units": 2.0,
+   "return_value": 7131.9457627118645,
+   "shipped_ltr": 260.0,
+   "shipped_units": 52.0,
+   "shipped_value": 185430.58983050848,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -1583,17 +1583,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 7589.0,
-   "order_units": 7589.0,
-   "order_value": 2770451.7,
-   "per_liter_shpd": 365.06149690341283,
+   "order_ltr": 8229.0,
+   "order_units": 8229.0,
+   "order_value": 3002183.77,
+   "per_liter_shpd": 364.8297205006683,
    "per_ltr": "1 LTR",
-   "return_ltr": 218.0,
-   "return_units": 218.0,
-   "return_value": 79583.406324944,
-   "shipped_ltr": 7633.0,
-   "shipped_units": 7633.0,
-   "shipped_value": 2786514.4058637503,
+   "return_ltr": 233.0,
+   "return_units": 233.0,
+   "return_value": 85005.32487665572,
+   "shipped_ltr": 8260.0,
+   "shipped_units": 8260.0,
+   "shipped_value": 3013493.4913355205,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -1601,17 +1601,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 316.0,
-   "order_units": 158.0,
-   "order_value": 128781.22,
-   "per_liter_shpd": 407.5355063291139,
+   "order_ltr": 330.0,
+   "order_units": 165.0,
+   "order_value": 134613.59,
+   "per_liter_shpd": 407.9199696969697,
    "per_ltr": "2 LTR",
    "return_ltr": 14.0,
    "return_units": 7.0,
-   "return_value": 5705.497088607595,
-   "shipped_ltr": 332.0,
-   "shipped_units": 166.0,
-   "shipped_value": 135301.78810126582,
+   "return_value": 5710.879575757575,
+   "shipped_ltr": 348.0,
+   "shipped_units": 174.0,
+   "shipped_value": 141956.14945454546,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -1619,17 +1619,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 195.0,
-   "order_units": 65.0,
-   "order_value": 70936.49,
-   "per_liter_shpd": 363.7768717948718,
+   "order_ltr": 222.0,
+   "order_units": 74.0,
+   "order_value": 80742.43,
+   "per_liter_shpd": 363.7046396396396,
    "per_ltr": "3 LTR",
    "return_ltr": 6.0,
    "return_units": 2.0,
-   "return_value": 2182.6612307692308,
-   "shipped_ltr": 192.0,
-   "shipped_units": 64.0,
-   "shipped_value": 69845.15938461538,
+   "return_value": 2182.227837837838,
+   "shipped_ltr": 228.0,
+   "shipped_units": 76.0,
+   "shipped_value": 82924.65783783783,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -1637,17 +1637,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 9025.0,
-   "order_units": 1805.0,
-   "order_value": 3486837.49,
-   "per_liter_shpd": 386.35318448753463,
+   "order_ltr": 9580.0,
+   "order_units": 1916.0,
+   "order_value": 3708985.38,
+   "per_liter_shpd": 387.1592254697286,
    "per_ltr": "5 LTR",
-   "return_ltr": 330.0,
-   "return_units": 66.0,
-   "return_value": 127496.55088088643,
-   "shipped_ltr": 8960.0,
-   "shipped_units": 1792.0,
-   "shipped_value": 3461724.5330083105,
+   "return_ltr": 360.0,
+   "return_units": 72.0,
+   "return_value": 139377.3211691023,
+   "shipped_ltr": 9665.0,
+   "shipped_units": 1933.0,
+   "shipped_value": 3741893.914164927,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -1655,17 +1655,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 789.0,
-   "order_units": 789.0,
-   "order_value": 299027.67,
-   "per_liter_shpd": 378.9957794676806,
+   "order_ltr": 844.0,
+   "order_units": 844.0,
+   "order_value": 320258.06,
+   "per_liter_shpd": 379.45267772511846,
    "per_ltr": "1 LTR",
    "return_ltr": 16.0,
    "return_units": 16.0,
-   "return_value": 6063.93247148289,
-   "shipped_ltr": 816.0,
-   "shipped_units": 816.0,
-   "shipped_value": 309260.5560456274,
+   "return_value": 6071.242843601895,
+   "shipped_ltr": 872.0,
+   "shipped_units": 872.0,
+   "shipped_value": 330882.7349763033,
    "sub_category": "SANO POMACE"
   },
   {
@@ -1673,17 +1673,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 385.0,
-   "order_units": 77.0,
-   "order_value": 139687.55,
-   "per_liter_shpd": 362.82480519480515,
+   "order_ltr": 420.0,
+   "order_units": 84.0,
+   "order_value": 151201.84,
+   "per_liter_shpd": 360.0043809523809,
    "per_ltr": "5 LTR",
    "return_ltr": 65.0,
    "return_units": 13.0,
-   "return_value": 23583.612337662336,
-   "shipped_ltr": 410.0,
-   "shipped_units": 82.0,
-   "shipped_value": 148758.17012987012,
+   "return_value": 23400.28476190476,
+   "shipped_ltr": 435.0,
+   "shipped_units": 87.0,
+   "shipped_value": 156601.9057142857,
    "sub_category": "SANO POMACE"
   },
   {
@@ -1691,17 +1691,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SESAME OIL",
    "item_head": "PREMIUM",
-   "order_ltr": 432.0,
-   "order_units": 432.0,
-   "order_value": 138578.13,
-   "per_liter_shpd": 320.78270833333335,
+   "order_ltr": 472.0,
+   "order_units": 472.0,
+   "order_value": 151340.07,
+   "per_liter_shpd": 320.6357415254238,
    "per_ltr": "1 LTR",
    "return_ltr": 13.0,
    "return_units": 13.0,
-   "return_value": 4170.175208333333,
-   "shipped_ltr": 427.0,
-   "shipped_units": 427.0,
-   "shipped_value": 136974.21645833334,
+   "return_value": 4168.264639830509,
+   "shipped_ltr": 497.0,
+   "shipped_units": 497.0,
+   "shipped_value": 159355.9635381356,
    "sub_category": "SESAME OIL"
   },
   {
@@ -1746,16 +1746,16 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "category": "DRINKS",
    "item_head": "OTHER",
    "order_ltr": 0.0,
-   "order_units": 44.0,
-   "order_value": 1603.79,
+   "order_units": 47.0,
+   "order_value": 1726.65,
    "per_liter_shpd": 0.0,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
    "shipped_ltr": 0.0,
-   "shipped_units": 44.0,
-   "shipped_value": 1603.79,
+   "shipped_units": 47.0,
+   "shipped_value": 1726.65,
    "sub_category": "MANGO"
   },
   {
@@ -1907,17 +1907,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "COMMODITY",
-   "order_ltr": 3198.0,
-   "order_units": 3198.0,
-   "order_value": 526245.67,
-   "per_liter_shpd": 164.5546185115697,
+   "order_ltr": 3300.0,
+   "order_units": 3300.0,
+   "order_value": 543951.49,
+   "per_liter_shpd": 164.83378484848484,
    "per_ltr": "1 LTR",
-   "return_ltr": 275.0,
-   "return_units": 275.0,
-   "return_value": 45252.520090681675,
-   "shipped_ltr": 3213.0,
-   "shipped_units": 3213.0,
-   "shipped_value": 528713.9892776735,
+   "return_ltr": 280.0,
+   "return_units": 280.0,
+   "return_value": 46153.45975757576,
+   "shipped_ltr": 3325.0,
+   "shipped_units": 3325.0,
+   "shipped_value": 548072.3346212121,
    "sub_category": "GOLD"
   },
   {
@@ -1925,17 +1925,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "COMMODITY",
-   "order_ltr": 3335.0,
-   "order_units": 667.0,
-   "order_value": 594160.92,
-   "per_liter_shpd": 178.15919640179908,
+   "order_ltr": 3470.0,
+   "order_units": 694.0,
+   "order_value": 618612.31,
+   "per_liter_shpd": 178.27444092219022,
    "per_ltr": "5 LTR",
-   "return_ltr": 375.0,
-   "return_units": 75.0,
-   "return_value": 66809.69865067466,
-   "shipped_ltr": 3495.0,
-   "shipped_units": 699.0,
-   "shipped_value": 622666.3914242878,
+   "return_ltr": 420.0,
+   "return_units": 84.0,
+   "return_value": 74875.26518731989,
+   "shipped_ltr": 3690.0,
+   "shipped_units": 738.0,
+   "shipped_value": 657832.6870028819,
    "sub_category": "GOLD"
   },
   {
@@ -1943,17 +1943,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "COMMODITY",
-   "order_ltr": 28555.0,
-   "order_units": 28555.0,
-   "order_value": 4675831.45,
-   "per_liter_shpd": 163.74825599719838,
+   "order_ltr": 30353.0,
+   "order_units": 30353.0,
+   "order_value": 4975650.15,
+   "per_liter_shpd": 163.92614074391327,
    "per_ltr": "1 LTR",
-   "return_ltr": 751.0,
-   "return_units": 751.0,
-   "return_value": 122974.94025389598,
-   "shipped_ltr": 27950.0,
-   "shipped_units": 27950.0,
-   "shipped_value": 4576763.755121695,
+   "return_ltr": 822.0,
+   "return_units": 822.0,
+   "return_value": 134747.28769149672,
+   "shipped_ltr": 29736.0,
+   "shipped_units": 29736.0,
+   "shipped_value": 4874507.721161005,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -1961,17 +1961,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "MUSTARD",
    "item_head": "COMMODITY",
-   "order_ltr": 86.0,
-   "order_units": 86.0,
-   "order_value": 16517.81,
-   "per_liter_shpd": 192.0675581395349,
+   "order_ltr": 88.0,
+   "order_units": 88.0,
+   "order_value": 16896.85,
+   "per_liter_shpd": 192.0096590909091,
    "per_ltr": "1 LTR",
    "return_ltr": 23.0,
    "return_units": 23.0,
-   "return_value": 4417.553837209302,
-   "shipped_ltr": 91.0,
-   "shipped_units": 91.0,
-   "shipped_value": 17478.147790697676,
+   "return_value": 4416.222159090909,
+   "shipped_ltr": 94.0,
+   "shipped_units": 94.0,
+   "shipped_value": 18048.907954545455,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -1997,17 +1997,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "COMMODITY",
-   "order_ltr": 15890.0,
-   "order_units": 3178.0,
-   "order_value": 3000471.35,
-   "per_liter_shpd": 188.82764946507237,
+   "order_ltr": 17210.0,
+   "order_units": 3442.0,
+   "order_value": 3253672.18,
+   "per_liter_shpd": 189.0570703079605,
    "per_ltr": "5 LTR",
-   "return_ltr": 1130.0,
-   "return_units": 226.0,
-   "return_value": 213375.24389553178,
-   "shipped_ltr": 16355.0,
-   "shipped_units": 3271.0,
-   "shipped_value": 3088276.2070012586,
+   "return_ltr": 1220.0,
+   "return_units": 244.0,
+   "return_value": 230649.6257757118,
+   "shipped_ltr": 17745.0,
+   "shipped_units": 3549.0,
+   "shipped_value": 3354817.712614759,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -2015,17 +2015,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "RICE BRAN",
    "item_head": "COMMODITY",
-   "order_ltr": 4659.0,
-   "order_units": 4659.0,
-   "order_value": 844393.72,
-   "per_liter_shpd": 181.23926164412964,
+   "order_ltr": 5054.0,
+   "order_units": 5054.0,
+   "order_value": 916427.66,
+   "per_liter_shpd": 181.3271982588049,
    "per_ltr": "1 LTR",
-   "return_ltr": 165.0,
-   "return_units": 165.0,
-   "return_value": 29904.47817128139,
-   "shipped_ltr": 4648.0,
-   "shipped_units": 4648.0,
-   "shipped_value": 842400.0881219145,
+   "return_ltr": 169.0,
+   "return_units": 169.0,
+   "return_value": 30644.296505738028,
+   "shipped_ltr": 5070.0,
+   "shipped_units": 5070.0,
+   "shipped_value": 919328.8951721409,
    "sub_category": "RICE BRAN"
   },
   {
@@ -2051,17 +2051,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "RICE BRAN",
    "item_head": "COMMODITY",
-   "order_ltr": 6500.0,
-   "order_units": 1300.0,
-   "order_value": 1145437.04,
-   "per_liter_shpd": 176.22108307692307,
+   "order_ltr": 6920.0,
+   "order_units": 1384.0,
+   "order_value": 1219357.95,
+   "per_liter_shpd": 176.20779624277455,
    "per_ltr": "5 LTR",
-   "return_ltr": 480.0,
-   "return_units": 96.0,
-   "return_value": 84586.11987692308,
-   "shipped_ltr": 6455.0,
-   "shipped_units": 1291.0,
-   "shipped_value": 1137507.0912615384,
+   "return_ltr": 550.0,
+   "return_units": 110.0,
+   "return_value": 96914.28793352601,
+   "shipped_ltr": 6975.0,
+   "shipped_units": 1395.0,
+   "shipped_value": 1229049.3787933525,
    "sub_category": "RICE BRAN"
   },
   {
@@ -2069,17 +2069,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SOYABEAN",
    "item_head": "COMMODITY",
-   "order_ltr": 304.0,
-   "order_units": 304.0,
-   "order_value": 59343.97,
-   "per_liter_shpd": 195.21042763157897,
+   "order_ltr": 348.0,
+   "order_units": 348.0,
+   "order_value": 67836.63,
+   "per_liter_shpd": 194.9328448275862,
    "per_ltr": "1 LTR",
    "return_ltr": 52.0,
    "return_units": 52.0,
-   "return_value": 10150.942236842106,
-   "shipped_ltr": 338.0,
-   "shipped_units": 338.0,
-   "shipped_value": 65981.12453947369,
+   "return_value": 10136.507931034483,
+   "shipped_ltr": 364.0,
+   "shipped_units": 364.0,
+   "shipped_value": 70955.55551724137,
    "sub_category": "SOYABEAN"
   },
   {
@@ -2105,17 +2105,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SOYABEAN",
    "item_head": "COMMODITY",
-   "order_ltr": 27.0,
-   "order_units": 27.0,
-   "order_value": 5117.04,
-   "per_liter_shpd": 189.52,
+   "order_ltr": 39.0,
+   "order_units": 39.0,
+   "order_value": 7391.28,
+   "per_liter_shpd": 189.51999999999998,
    "per_ltr": "1 LTR POUCH",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 27.0,
-   "shipped_units": 27.0,
-   "shipped_value": 5117.04,
+   "shipped_ltr": 37.0,
+   "shipped_units": 37.0,
+   "shipped_value": 7012.24,
    "sub_category": "SOYABEAN"
   },
   {
@@ -2123,17 +2123,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SOYABEAN",
    "item_head": "COMMODITY",
-   "order_ltr": 295.0,
-   "order_units": 59.0,
-   "order_value": 54677.2,
-   "per_liter_shpd": 185.3464406779661,
+   "order_ltr": 265.0,
+   "order_units": 53.0,
+   "order_value": 49016.24,
+   "per_liter_shpd": 184.9669433962264,
    "per_ltr": "5 LTR",
    "return_ltr": 80.0,
    "return_units": 16.0,
-   "return_value": 14827.715254237288,
-   "shipped_ltr": 215.0,
-   "shipped_units": 43.0,
-   "shipped_value": 39849.48474576271,
+   "return_value": 14797.355471698113,
+   "shipped_ltr": 220.0,
+   "shipped_units": 44.0,
+   "shipped_value": 40692.72754716981,
    "sub_category": "SOYABEAN"
   },
   {
@@ -2159,17 +2159,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SUNFLOWER",
    "item_head": "COMMODITY",
-   "order_ltr": 25534.0,
-   "order_units": 25534.0,
-   "order_value": 4261083.34,
-   "per_liter_shpd": 166.87880238113888,
+   "order_ltr": 28048.0,
+   "order_units": 28048.0,
+   "order_value": 4681057.37,
+   "per_liter_shpd": 166.89451547347403,
    "per_ltr": "1 LTR",
-   "return_ltr": 487.0,
-   "return_units": 487.0,
-   "return_value": 81269.97675961463,
-   "shipped_ltr": 25029.0,
-   "shipped_units": 25029.0,
-   "shipped_value": 4176809.544797525,
+   "return_ltr": 586.0,
+   "return_units": 586.0,
+   "return_value": 97800.18606745578,
+   "shipped_ltr": 27231.0,
+   "shipped_units": 27231.0,
+   "shipped_value": 4544704.550858172,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -2195,17 +2195,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SUNFLOWER",
    "item_head": "COMMODITY",
-   "order_ltr": 40.0,
-   "order_units": 10.0,
-   "order_value": 7398.3,
-   "per_liter_shpd": 184.9575,
+   "order_ltr": 64.0,
+   "order_units": 16.0,
+   "order_value": 11816.94,
+   "per_liter_shpd": 184.6396875,
    "per_ltr": "4 LTR",
    "return_ltr": 4.0,
    "return_units": 1.0,
-   "return_value": 739.83,
-   "shipped_ltr": 20.0,
-   "shipped_units": 5.0,
-   "shipped_value": 3699.15,
+   "return_value": 738.55875,
+   "shipped_ltr": 44.0,
+   "shipped_units": 11.0,
+   "shipped_value": 8124.14625,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -2213,17 +2213,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SUNFLOWER",
    "item_head": "COMMODITY",
-   "order_ltr": 26975.0,
-   "order_units": 5395.0,
-   "order_value": 5121716.22,
-   "per_liter_shpd": 189.86899796107505,
+   "order_ltr": 29250.0,
+   "order_units": 5850.0,
+   "order_value": 5518321.26,
+   "per_liter_shpd": 188.6605558974359,
    "per_ltr": "5 LTR",
-   "return_ltr": 1610.0,
-   "return_units": 322.0,
-   "return_value": 305689.08671733085,
-   "shipped_ltr": 27970.0,
-   "shipped_units": 5594.0,
-   "shipped_value": 5310635.872971269,
+   "return_ltr": 1635.0,
+   "return_units": 327.0,
+   "return_value": 308460.0088923077,
+   "shipped_ltr": 30390.0,
+   "shipped_units": 6078.0,
+   "shipped_value": 5733394.293723077,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -2239,14 +2239,14 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 5.0,
-   "shipped_units": 1.0,
-   "shipped_value": 980.0,
+   "shipped_ltr": 10.0,
+   "shipped_units": 2.0,
+   "shipped_value": 1960.0,
    "sub_category": "SUNFLOWER"
   }
  ],
- "elapsed_day": 27,
- "max_date": "2026-06-27",
+ "elapsed_day": 29,
+ "max_date": "2026-06-29",
  "month": 6,
  "month_name": "JUNE",
  "notes": [
@@ -2255,22 +2255,22 @@ Up: [[dashboards-index]] · [[pf-amazon]]
  ],
  "period_row_count": 64,
  "rk_world_return_total": {
-  "return_ltr": 9404.9,
-  "return_units": 4620.0,
-  "return_value": 2029789.7293719288
+  "return_ltr": 10116.4,
+  "return_units": 4982.0,
+  "return_value": 2181548.0416899654
  },
  "rk_world_returns": [
   {
    "item_head": "PREMIUM",
-   "return_ltr": 3969.9,
-   "return_units": 2124.0,
-   "return_value": 1048871.6130822515
+   "return_ltr": 4272.4,
+   "return_units": 2261.0,
+   "return_value": 1130294.9690215557
   },
   {
    "item_head": "COMMODITY",
-   "return_ltr": 5435.0,
-   "return_units": 2492.0,
-   "return_value": 980540.9617442228
+   "return_ltr": 5844.0,
+   "return_units": 2717.0,
+   "return_value": 1050875.9181229551
   },
   {
    "item_head": "OTHER",
@@ -2282,75 +2282,75 @@ Up: [[dashboards-index]] · [[pf-amazon]]
  "rk_world_summary": [
   {
    "item_head": "PREMIUM",
-   "margin_pct": 0.22901711052813917,
-   "margin_tax_value": 8533968.55638971,
-   "margin_value": 7004677.298904436,
-   "net_realise_shpd": 205.62341161889637,
-   "order_ltr": 109499.7,
-   "order_units": 59682.0,
-   "order_value": 30995284.13,
-   "per_liter_shpd": 285.19873997220793,
-   "projection_ltr": 119159.88888888888,
-   "return_ltr": 3969.9,
-   "return_units": 2124.0,
-   "return_value": 1048871.6130822515,
-   "shipped_ltr": 107243.9,
-   "shipped_units": 59288.0,
-   "shipped_value": 30585825.149705466
+   "margin_pct": 0.22897202842812647,
+   "margin_tax_value": 9277155.481519848,
+   "margin_value": 7614416.114101514,
+   "net_realise_shpd": 205.72316833683954,
+   "order_ltr": 117945.4,
+   "order_units": 64235.0,
+   "order_value": 33404814.37,
+   "per_liter_shpd": 285.319261454384,
+   "projection_ltr": 120571.96551724136,
+   "return_ltr": 4272.4,
+   "return_units": 2261.0,
+   "return_value": 1130294.9690215557,
+   "shipped_ltr": 116552.9,
+   "shipped_units": 64003.0,
+   "shipped_value": 33254787.34836667
   },
   {
    "item_head": "COMMODITY",
    "margin_pct": 0.18,
-   "margin_tax_value": 4696998.506522212,
-   "margin_value": 3675911.8746695574,
-   "net_realise_shpd": 135.74763143813675,
-   "order_ltr": 115440.0,
-   "order_units": 72990.0,
-   "order_value": 20320277.58,
-   "per_liter_shpd": 176.29562524433345,
-   "projection_ltr": 128708.88888888889,
-   "return_ltr": 5435.0,
-   "return_units": 2492.0,
-   "return_value": 980540.9617442228,
-   "shipped_ltr": 115838.0,
-   "shipped_units": 72215.0,
-   "shipped_value": 20421732.6370531
+   "margin_tax_value": 5063071.857279578,
+   "margin_value": 3962404.0622188,
+   "net_realise_shpd": 135.64785002909758,
+   "order_ltr": 124451.0,
+   "order_units": 78687.0,
+   "order_value": 21887891.86,
+   "per_liter_shpd": 176.16603899882807,
+   "projection_ltr": 129266.89655172413,
+   "return_ltr": 5844.0,
+   "return_units": 2717.0,
+   "return_value": 1050875.9181229551,
+   "shipped_ltr": 124958.0,
+   "shipped_units": 77689.0,
+   "shipped_value": 22013355.901215557
   },
   {
    "item_head": "OTHER",
    "margin_pct": 0.25,
-   "margin_tax_value": 2011.203,
-   "margin_value": 1676.0025,
+   "margin_tax_value": 2048.061,
+   "margin_value": 1706.7175,
    "net_realise_shpd": 0.0,
    "order_ltr": 0.0,
-   "order_units": 81.0,
-   "order_value": 6545.93,
+   "order_units": 84.0,
+   "order_value": 6668.79,
    "per_liter_shpd": 0.0,
    "projection_ltr": 0.0,
    "return_ltr": 0.0,
    "return_units": 4.0,
    "return_value": 377.1545454545454,
    "shipped_ltr": 0.0,
-   "shipped_units": 83.0,
-   "shipped_value": 6704.01
+   "shipped_units": 86.0,
+   "shipped_value": 6826.87
   }
  ],
  "rk_world_total": {
-  "margin_pct": 0.2093976233280071,
-  "margin_tax_value": 13232978.265911922,
-  "margin_value": 10682265.176073993,
-  "net_realise_shpd": 169.36059595532691,
-  "order_ltr": 224939.7,
-  "order_units": 132753.0,
-  "order_value": 51322107.64,
-  "per_liter_shpd": 228.67951992859378,
-  "projection_ltr": 247868.77777777775,
-  "return_ltr": 9404.9,
-  "return_units": 4620.0,
-  "return_value": 2029789.7293719288,
-  "shipped_ltr": 223081.9,
-  "shipped_units": 131586.0,
-  "shipped_value": 51014261.79675856
+  "margin_pct": 0.20947142746113212,
+  "margin_tax_value": 14342275.399799427,
+  "margin_value": 11578526.893820314,
+  "net_realise_shpd": 169.48591024166114,
+  "order_ltr": 242396.4,
+  "order_units": 143006.0,
+  "order_value": 55299375.02,
+  "per_liter_shpd": 228.87153382966247,
+  "projection_ltr": 249838.8620689655,
+  "return_ltr": 10116.4,
+  "return_units": 4982.0,
+  "return_value": 2181548.0416899654,
+  "shipped_ltr": 241510.9,
+  "shipped_units": 141778.0,
+  "shipped_value": 55274970.11958223
  },
  "selected_date": null,
  "show_amazon_excel_columns": true,
@@ -2360,17 +2360,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "PREMIUM",
-   "order_ltr": 657.0,
-   "order_units": 657.0,
-   "order_value": 169600.34,
-   "per_liter_shpd": 258.1435920852359,
+   "order_ltr": 707.0,
+   "order_units": 707.0,
+   "order_value": 183050.83,
+   "per_liter_shpd": 258.9120650636492,
    "per_ltr": "1 LTR",
-   "return_ltr": 21.0,
-   "return_units": 21.0,
-   "return_value": 5421.015433789954,
-   "shipped_ltr": 670.0,
-   "shipped_units": 670.0,
-   "shipped_value": 172956.20669710808,
+   "return_ltr": 22.0,
+   "return_units": 22.0,
+   "return_value": 5696.065431400283,
+   "shipped_ltr": 736.0,
+   "shipped_units": 736.0,
+   "shipped_value": 190559.27988684582,
    "sub_category": "SO OLIVE"
   },
   {
@@ -2378,17 +2378,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "PREMIUM",
-   "order_ltr": 535.0,
-   "order_units": 107.0,
-   "order_value": 141551.28,
-   "per_liter_shpd": 264.58183177570095,
+   "order_ltr": 580.0,
+   "order_units": 116.0,
+   "order_value": 153540.77,
+   "per_liter_shpd": 264.7254655172414,
    "per_ltr": "5 LTR",
    "return_ltr": 75.0,
    "return_units": 15.0,
-   "return_value": 19843.63738317757,
-   "shipped_ltr": 565.0,
-   "shipped_units": 113.0,
-   "shipped_value": 149488.73495327102,
+   "return_value": 19854.409913793104,
+   "shipped_ltr": 610.0,
+   "shipped_units": 122.0,
+   "shipped_value": 161482.53396551724,
    "sub_category": "SO OLIVE"
   },
   {
@@ -2396,17 +2396,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 1674.0,
-   "order_units": 837.0,
-   "order_value": 394592.05,
-   "per_liter_shpd": 235.7180704898447,
+   "order_ltr": 1884.0,
+   "order_units": 942.0,
+   "order_value": 442894.97,
+   "per_liter_shpd": 235.0822558386412,
    "per_ltr": "1+1 LTR",
-   "return_ltr": 48.0,
-   "return_units": 24.0,
-   "return_value": 11314.467383512545,
-   "shipped_ltr": 1668.0,
-   "shipped_units": 834.0,
-   "shipped_value": 393177.74157706095,
+   "return_ltr": 56.0,
+   "return_units": 28.0,
+   "return_value": 13164.606326963907,
+   "shipped_ltr": 1904.0,
+   "shipped_units": 952.0,
+   "shipped_value": 447596.6151167728,
    "sub_category": "CANOLA"
   },
   {
@@ -2414,17 +2414,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 5569.0,
-   "order_units": 5569.0,
-   "order_value": 1327335.31,
-   "per_liter_shpd": 238.3435643742144,
+   "order_ltr": 5960.0,
+   "order_units": 5960.0,
+   "order_value": 1418042.86,
+   "per_liter_shpd": 237.92665436241612,
    "per_ltr": "1 LTR",
-   "return_ltr": 82.0,
-   "return_units": 82.0,
-   "return_value": 19544.172278685583,
-   "shipped_ltr": 5518.0,
-   "shipped_units": 5518.0,
-   "shipped_value": 1315179.788216915,
+   "return_ltr": 89.0,
+   "return_units": 89.0,
+   "return_value": 21175.472238255035,
+   "shipped_ltr": 5939.0,
+   "shipped_units": 5939.0,
+   "shipped_value": 1413046.4002583893,
    "sub_category": "CANOLA"
   },
   {
@@ -2432,17 +2432,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 143.0,
-   "order_units": 143.0,
-   "order_value": 34234.97,
-   "per_liter_shpd": 239.4053846153846,
+   "order_ltr": 149.0,
+   "order_units": 149.0,
+   "order_value": 36015.93,
+   "per_liter_shpd": 241.7176510067114,
    "per_ltr": "1 LTR",
-   "return_ltr": 3.0,
-   "return_units": 3.0,
-   "return_value": 718.2161538461538,
-   "shipped_ltr": 166.0,
-   "shipped_units": 166.0,
-   "shipped_value": 39741.29384615384,
+   "return_ltr": 5.0,
+   "return_units": 5.0,
+   "return_value": 1208.588255033557,
+   "shipped_ltr": 171.0,
+   "shipped_units": 171.0,
+   "shipped_value": 41333.71832214765,
    "sub_category": "CANOLA"
   },
   {
@@ -2468,17 +2468,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "CANOLA",
    "item_head": "PREMIUM",
-   "order_ltr": 16675.0,
-   "order_units": 3335.0,
-   "order_value": 3962386.43,
-   "per_liter_shpd": 237.6243736131934,
+   "order_ltr": 17930.0,
+   "order_units": 3586.0,
+   "order_value": 4261150.95,
+   "per_liter_shpd": 237.6548215281651,
    "per_ltr": "5 LTR",
-   "return_ltr": 500.0,
-   "return_units": 100.0,
-   "return_value": 118812.1868065967,
-   "shipped_ltr": 16655.0,
-   "shipped_units": 3331.0,
-   "shipped_value": 3957633.942527736,
+   "return_ltr": 550.0,
+   "return_units": 110.0,
+   "return_value": 130710.1518404908,
+   "shipped_ltr": 18015.0,
+   "shipped_units": 3603.0,
+   "shipped_value": 4281351.609829894,
    "sub_category": "CANOLA"
   },
   {
@@ -2504,17 +2504,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "COCONUT",
    "item_head": "PREMIUM",
-   "order_ltr": 388.0,
-   "order_units": 388.0,
-   "order_value": 200860.58,
-   "per_liter_shpd": 517.6819072164949,
+   "order_ltr": 415.0,
+   "order_units": 415.0,
+   "order_value": 214949.14,
+   "per_liter_shpd": 517.9497349397591,
    "per_ltr": "1 LTR",
    "return_ltr": 6.0,
    "return_units": 6.0,
-   "return_value": 3106.091443298969,
-   "shipped_ltr": 397.0,
-   "shipped_units": 397.0,
-   "shipped_value": 205519.71716494847,
+   "return_value": 3107.698409638554,
+   "shipped_ltr": 420.0,
+   "shipped_units": 420.0,
+   "shipped_value": 217538.8886746988,
    "sub_category": "COCONUT"
   },
   {
@@ -2522,17 +2522,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "COCONUT",
    "item_head": "PREMIUM",
-   "order_ltr": 347.0,
-   "order_units": 694.0,
-   "order_value": 179126.59,
-   "per_liter_shpd": 516.2149567723343,
+   "order_ltr": 369.5,
+   "order_units": 739.0,
+   "order_value": 191312.39,
+   "per_liter_shpd": 517.7601894451963,
    "per_ltr": "500 MLS",
-   "return_ltr": 7.5,
-   "return_units": 15.0,
-   "return_value": 3871.612175792507,
-   "shipped_ltr": 355.0,
-   "shipped_units": 710.0,
-   "shipped_value": 183256.30965417868,
+   "return_ltr": 9.0,
+   "return_units": 18.0,
+   "return_value": 4659.841705006766,
+   "shipped_ltr": 380.0,
+   "shipped_units": 760.0,
+   "shipped_value": 196748.87198917457,
    "sub_category": "COCONUT"
   },
   {
@@ -2540,17 +2540,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GHEE",
    "item_head": "PREMIUM",
-   "order_ltr": 1.0,
-   "order_units": 2.0,
-   "order_value": 1464.78,
-   "per_liter_shpd": 1464.78,
+   "order_ltr": 2.0,
+   "order_units": 4.0,
+   "order_value": 2815.26,
+   "per_liter_shpd": 1407.63,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 0.5,
-   "shipped_units": 1.0,
-   "shipped_value": 732.39,
+   "shipped_ltr": 1.0,
+   "shipped_units": 2.0,
+   "shipped_value": 1407.63,
    "sub_category": "A2 GHEE"
   },
   {
@@ -2576,17 +2576,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GROUNDNUT",
    "item_head": "PREMIUM",
-   "order_ltr": 21167.0,
-   "order_units": 21167.0,
-   "order_value": 3877624.64,
-   "per_liter_shpd": 183.19197996881937,
+   "order_ltr": 22739.0,
+   "order_units": 22739.0,
+   "order_value": 4166764.56,
+   "per_liter_shpd": 183.24308720700117,
    "per_ltr": "1 LTR",
-   "return_ltr": 1060.0,
-   "return_units": 1060.0,
-   "return_value": 194183.49876694856,
-   "shipped_ltr": 21201.0,
-   "shipped_units": 21201.0,
-   "shipped_value": 3883853.1673189397,
+   "return_ltr": 1112.0,
+   "return_units": 1112.0,
+   "return_value": 203766.31297418533,
+   "shipped_ltr": 22624.0,
+   "shipped_units": 22624.0,
+   "shipped_value": 4145691.6049711946,
    "sub_category": "GROUNDNUT"
   },
   {
@@ -2594,9 +2594,9 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GROUNDNUT",
    "item_head": "PREMIUM",
-   "order_ltr": 6.0,
-   "order_units": 3.0,
-   "order_value": 2285.7,
+   "order_ltr": 4.0,
+   "order_units": 2.0,
+   "order_value": 1523.8,
    "per_liter_shpd": 0.0,
    "per_ltr": "2 LTR",
    "return_ltr": 0.0,
@@ -2612,17 +2612,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GROUNDNUT",
    "item_head": "PREMIUM",
-   "order_ltr": 27050.0,
-   "order_units": 5410.0,
-   "order_value": 5214008.88,
-   "per_liter_shpd": 192.75448724584103,
+   "order_ltr": 29285.0,
+   "order_units": 5857.0,
+   "order_value": 5639742.7,
+   "per_liter_shpd": 192.5812771043196,
    "per_ltr": "5 LTR",
-   "return_ltr": 1045.0,
-   "return_units": 209.0,
-   "return_value": 201428.43917190388,
-   "shipped_ltr": 24710.0,
-   "shipped_units": 4942.0,
-   "shipped_value": 4762963.379844732,
+   "return_ltr": 1150.0,
+   "return_units": 230.0,
+   "return_value": 221468.46866996755,
+   "shipped_ltr": 27440.0,
+   "shipped_units": 5488.0,
+   "shipped_value": 5284430.24374253,
    "sub_category": "GROUNDNUT"
   },
   {
@@ -2630,17 +2630,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "PREMIUM",
-   "order_ltr": 849.0,
-   "order_units": 849.0,
-   "order_value": 201438.83,
-   "per_liter_shpd": 237.2659952885748,
+   "order_ltr": 874.0,
+   "order_units": 874.0,
+   "order_value": 207851.23,
+   "per_liter_shpd": 237.81605263157894,
    "per_ltr": "1 LTR",
    "return_ltr": 37.0,
    "return_units": 37.0,
-   "return_value": 8778.841825677267,
-   "shipped_ltr": 834.0,
-   "shipped_units": 834.0,
-   "shipped_value": 197879.84007067137,
+   "return_value": 8799.193947368422,
+   "shipped_ltr": 866.0,
+   "shipped_units": 866.0,
+   "shipped_value": 205948.70157894737,
    "sub_category": "YELLOW MUSTARD"
   },
   {
@@ -2648,17 +2648,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "PREMIUM",
-   "order_ltr": 1155.0,
-   "order_units": 231.0,
-   "order_value": 283982.35,
-   "per_liter_shpd": 245.87216450216448,
+   "order_ltr": 1235.0,
+   "order_units": 247.0,
+   "order_value": 303949.02,
+   "per_liter_shpd": 246.11256680161947,
    "per_ltr": "5 LTR",
    "return_ltr": 60.0,
    "return_units": 12.0,
-   "return_value": 14752.32987012987,
-   "shipped_ltr": 1155.0,
-   "shipped_units": 231.0,
-   "shipped_value": 283982.35,
+   "return_value": 14766.754008097167,
+   "shipped_ltr": 1245.0,
+   "shipped_units": 249.0,
+   "shipped_value": 306410.1456680162,
    "sub_category": "YELLOW MUSTARD"
   },
   {
@@ -2666,17 +2666,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 4398.0,
-   "order_units": 4398.0,
-   "order_value": 2102327.86,
-   "per_liter_shpd": 478.01906775807186,
+   "order_ltr": 4734.0,
+   "order_units": 4734.0,
+   "order_value": 2262846.6,
+   "per_liter_shpd": 477.99885931558936,
    "per_ltr": "1 LTR",
-   "return_ltr": 77.0,
-   "return_units": 77.0,
-   "return_value": 36807.468217371534,
-   "shipped_ltr": 4275.0,
-   "shipped_units": 4275.0,
-   "shipped_value": 2043531.514665757,
+   "return_ltr": 83.0,
+   "return_units": 83.0,
+   "return_value": 39673.90532319392,
+   "shipped_ltr": 4650.0,
+   "shipped_units": 4650.0,
+   "shipped_value": 2222694.6958174906,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -2684,17 +2684,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 4144.0,
-   "order_units": 2072.0,
-   "order_value": 2210987.15,
-   "per_liter_shpd": 533.5393701737452,
+   "order_ltr": 4418.0,
+   "order_units": 2209.0,
+   "order_value": 2360563.54,
+   "per_liter_shpd": 534.3059167043912,
    "per_ltr": "2 LTR",
-   "return_ltr": 84.0,
-   "return_units": 42.0,
-   "return_value": 44817.307094594595,
-   "shipped_ltr": 4246.0,
-   "shipped_units": 2123.0,
-   "shipped_value": 2265408.165757722,
+   "return_ltr": 94.0,
+   "return_units": 47.0,
+   "return_value": 50224.756170212764,
+   "shipped_ltr": 4584.0,
+   "shipped_units": 2292.0,
+   "shipped_value": 2449258.322172929,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -2702,17 +2702,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 165.0,
-   "order_units": 55.0,
-   "order_value": 81774.31,
-   "per_liter_shpd": 495.60187878787883,
+   "order_ltr": 225.0,
+   "order_units": 75.0,
+   "order_value": 110049.49,
+   "per_liter_shpd": 489.10884444444446,
    "per_ltr": "3 LTR",
-   "return_ltr": 15.0,
-   "return_units": 5.0,
-   "return_value": 7434.028181818182,
-   "shipped_ltr": 198.0,
-   "shipped_units": 66.0,
-   "shipped_value": 98129.172,
+   "return_ltr": 18.0,
+   "return_units": 6.0,
+   "return_value": 8803.9592,
+   "shipped_ltr": 249.0,
+   "shipped_units": 83.0,
+   "shipped_value": 121788.10226666667,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -2720,17 +2720,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 22.0,
-   "order_units": 44.0,
-   "order_value": 14320.08,
-   "per_liter_shpd": 650.9127272727272,
+   "order_ltr": 22.5,
+   "order_units": 45.0,
+   "order_value": 14642.94,
+   "per_liter_shpd": 650.7973333333333,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 23.5,
-   "shipped_units": 47.0,
-   "shipped_value": 15296.449090909091,
+   "shipped_ltr": 24.0,
+   "shipped_units": 48.0,
+   "shipped_value": 15619.136,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -2738,17 +2738,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 3600.0,
-   "order_units": 720.0,
-   "order_value": 1907355.49,
-   "per_liter_shpd": 529.8209694444445,
+   "order_ltr": 3835.0,
+   "order_units": 767.0,
+   "order_value": 2042612.76,
+   "per_liter_shpd": 532.623926988266,
    "per_ltr": "5 LTR",
-   "return_ltr": 130.0,
-   "return_units": 26.0,
-   "return_value": 68876.72602777778,
-   "shipped_ltr": 3615.0,
-   "shipped_units": 723.0,
-   "shipped_value": 1915302.8045416668,
+   "return_ltr": 135.0,
+   "return_units": 27.0,
+   "return_value": 71904.2301434159,
+   "shipped_ltr": 3910.0,
+   "shipped_units": 782.0,
+   "shipped_value": 2082559.55452412,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -2756,17 +2756,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 1966.0,
-   "order_units": 1966.0,
-   "order_value": 1467070.13,
-   "per_liter_shpd": 746.2208189216684,
+   "order_ltr": 2147.0,
+   "order_units": 2147.0,
+   "order_value": 1603847.63,
+   "per_liter_shpd": 747.017992547741,
    "per_ltr": "1 LTR",
-   "return_ltr": 46.0,
-   "return_units": 46.0,
-   "return_value": 34326.157670396744,
-   "shipped_ltr": 2007.0,
-   "shipped_units": 2007.0,
-   "shipped_value": 1497665.1835757885,
+   "return_ltr": 48.0,
+   "return_units": 48.0,
+   "return_value": 35856.863642291566,
+   "shipped_ltr": 2179.0,
+   "shipped_units": 2179.0,
+   "shipped_value": 1627752.2057615276,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -2774,17 +2774,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 12.2,
-   "order_units": 61.0,
-   "order_value": 11018.08,
-   "per_liter_shpd": 903.1213114754098,
+   "order_ltr": 12.4,
+   "order_units": 62.0,
+   "order_value": 11198.08,
+   "per_liter_shpd": 903.0709677419355,
    "per_ltr": "200 MLS",
    "return_ltr": 1.4,
    "return_units": 7.0,
-   "return_value": 1264.3698360655737,
+   "return_value": 1264.2993548387096,
    "shipped_ltr": 13.4,
    "shipped_units": 67.0,
-   "shipped_value": 12101.825573770491,
+   "shipped_value": 12101.150967741936,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -2810,17 +2810,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 0.5,
-   "order_units": 1.0,
-   "order_value": 399.05,
+   "order_ltr": 1.0,
+   "order_units": 2.0,
+   "order_value": 798.1,
    "per_liter_shpd": 798.1,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 1.5,
-   "shipped_units": 3.0,
-   "shipped_value": 1197.15,
+   "shipped_ltr": 2.5,
+   "shipped_units": 5.0,
+   "shipped_value": 1995.25,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -2828,17 +2828,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 220.0,
-   "order_units": 44.0,
-   "order_value": 160305.72,
-   "per_liter_shpd": 728.6623636363636,
+   "order_ltr": 295.0,
+   "order_units": 59.0,
+   "order_value": 210392.4,
+   "per_liter_shpd": 713.1945762711865,
    "per_ltr": "5 LTR",
-   "return_ltr": 5.0,
-   "return_units": 1.0,
-   "return_value": 3643.311818181818,
-   "shipped_ltr": 175.0,
-   "shipped_units": 35.0,
-   "shipped_value": 127515.91363636364,
+   "return_ltr": 10.0,
+   "return_units": 2.0,
+   "return_value": 7131.9457627118645,
+   "shipped_ltr": 260.0,
+   "shipped_units": 52.0,
+   "shipped_value": 185430.58983050848,
    "sub_category": "EXTRA VIRGIN"
   },
   {
@@ -2846,17 +2846,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 7589.0,
-   "order_units": 7589.0,
-   "order_value": 2770451.7,
-   "per_liter_shpd": 365.06149690341283,
+   "order_ltr": 8229.0,
+   "order_units": 8229.0,
+   "order_value": 3002183.77,
+   "per_liter_shpd": 364.8297205006683,
    "per_ltr": "1 LTR",
-   "return_ltr": 218.0,
-   "return_units": 218.0,
-   "return_value": 79583.406324944,
-   "shipped_ltr": 7633.0,
-   "shipped_units": 7633.0,
-   "shipped_value": 2786514.4058637503,
+   "return_ltr": 233.0,
+   "return_units": 233.0,
+   "return_value": 85005.32487665572,
+   "shipped_ltr": 8260.0,
+   "shipped_units": 8260.0,
+   "shipped_value": 3013493.4913355205,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -2864,17 +2864,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 316.0,
-   "order_units": 158.0,
-   "order_value": 128781.22,
-   "per_liter_shpd": 407.5355063291139,
+   "order_ltr": 330.0,
+   "order_units": 165.0,
+   "order_value": 134613.59,
+   "per_liter_shpd": 407.9199696969697,
    "per_ltr": "2 LTR",
    "return_ltr": 14.0,
    "return_units": 7.0,
-   "return_value": 5705.497088607595,
-   "shipped_ltr": 332.0,
-   "shipped_units": 166.0,
-   "shipped_value": 135301.78810126582,
+   "return_value": 5710.879575757575,
+   "shipped_ltr": 348.0,
+   "shipped_units": 174.0,
+   "shipped_value": 141956.14945454546,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -2882,17 +2882,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 195.0,
-   "order_units": 65.0,
-   "order_value": 70936.49,
-   "per_liter_shpd": 363.7768717948718,
+   "order_ltr": 222.0,
+   "order_units": 74.0,
+   "order_value": 80742.43,
+   "per_liter_shpd": 363.7046396396396,
    "per_ltr": "3 LTR",
    "return_ltr": 6.0,
    "return_units": 2.0,
-   "return_value": 2182.6612307692308,
-   "shipped_ltr": 192.0,
-   "shipped_units": 64.0,
-   "shipped_value": 69845.15938461538,
+   "return_value": 2182.227837837838,
+   "shipped_ltr": 228.0,
+   "shipped_units": 76.0,
+   "shipped_value": 82924.65783783783,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -2900,17 +2900,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 9025.0,
-   "order_units": 1805.0,
-   "order_value": 3486837.49,
-   "per_liter_shpd": 386.35318448753463,
+   "order_ltr": 9580.0,
+   "order_units": 1916.0,
+   "order_value": 3708985.38,
+   "per_liter_shpd": 387.1592254697286,
    "per_ltr": "5 LTR",
-   "return_ltr": 330.0,
-   "return_units": 66.0,
-   "return_value": 127496.55088088643,
-   "shipped_ltr": 8960.0,
-   "shipped_units": 1792.0,
-   "shipped_value": 3461724.5330083105,
+   "return_ltr": 360.0,
+   "return_units": 72.0,
+   "return_value": 139377.3211691023,
+   "shipped_ltr": 9665.0,
+   "shipped_units": 1933.0,
+   "shipped_value": 3741893.914164927,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -2918,17 +2918,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 789.0,
-   "order_units": 789.0,
-   "order_value": 299027.67,
-   "per_liter_shpd": 378.9957794676806,
+   "order_ltr": 844.0,
+   "order_units": 844.0,
+   "order_value": 320258.06,
+   "per_liter_shpd": 379.45267772511846,
    "per_ltr": "1 LTR",
    "return_ltr": 16.0,
    "return_units": 16.0,
-   "return_value": 6063.93247148289,
-   "shipped_ltr": 816.0,
-   "shipped_units": 816.0,
-   "shipped_value": 309260.5560456274,
+   "return_value": 6071.242843601895,
+   "shipped_ltr": 872.0,
+   "shipped_units": 872.0,
+   "shipped_value": 330882.7349763033,
    "sub_category": "SANO POMACE"
   },
   {
@@ -2936,17 +2936,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "OLIVE",
    "item_head": "PREMIUM",
-   "order_ltr": 385.0,
-   "order_units": 77.0,
-   "order_value": 139687.55,
-   "per_liter_shpd": 362.82480519480515,
+   "order_ltr": 420.0,
+   "order_units": 84.0,
+   "order_value": 151201.84,
+   "per_liter_shpd": 360.0043809523809,
    "per_ltr": "5 LTR",
    "return_ltr": 65.0,
    "return_units": 13.0,
-   "return_value": 23583.612337662336,
-   "shipped_ltr": 410.0,
-   "shipped_units": 82.0,
-   "shipped_value": 148758.17012987012,
+   "return_value": 23400.28476190476,
+   "shipped_ltr": 435.0,
+   "shipped_units": 87.0,
+   "shipped_value": 156601.9057142857,
    "sub_category": "SANO POMACE"
   },
   {
@@ -2954,17 +2954,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SESAME OIL",
    "item_head": "PREMIUM",
-   "order_ltr": 432.0,
-   "order_units": 432.0,
-   "order_value": 138578.13,
-   "per_liter_shpd": 320.78270833333335,
+   "order_ltr": 472.0,
+   "order_units": 472.0,
+   "order_value": 151340.07,
+   "per_liter_shpd": 320.6357415254238,
    "per_ltr": "1 LTR",
    "return_ltr": 13.0,
    "return_units": 13.0,
-   "return_value": 4170.175208333333,
-   "shipped_ltr": 427.0,
-   "shipped_units": 427.0,
-   "shipped_value": 136974.21645833334,
+   "return_value": 4168.264639830509,
+   "shipped_ltr": 497.0,
+   "shipped_units": 497.0,
+   "shipped_value": 159355.9635381356,
    "sub_category": "SESAME OIL"
   },
   {
@@ -3009,16 +3009,16 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "category": "DRINKS",
    "item_head": "OTHER",
    "order_ltr": 0.0,
-   "order_units": 44.0,
-   "order_value": 1603.79,
+   "order_units": 47.0,
+   "order_value": 1726.65,
    "per_liter_shpd": 0.0,
    "per_ltr": "500 MLS",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
    "shipped_ltr": 0.0,
-   "shipped_units": 44.0,
-   "shipped_value": 1603.79,
+   "shipped_units": 47.0,
+   "shipped_value": 1726.65,
    "sub_category": "MANGO"
   },
   {
@@ -3170,17 +3170,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "COMMODITY",
-   "order_ltr": 3198.0,
-   "order_units": 3198.0,
-   "order_value": 526245.67,
-   "per_liter_shpd": 164.5546185115697,
+   "order_ltr": 3300.0,
+   "order_units": 3300.0,
+   "order_value": 543951.49,
+   "per_liter_shpd": 164.83378484848484,
    "per_ltr": "1 LTR",
-   "return_ltr": 275.0,
-   "return_units": 275.0,
-   "return_value": 45252.520090681675,
-   "shipped_ltr": 3213.0,
-   "shipped_units": 3213.0,
-   "shipped_value": 528713.9892776735,
+   "return_ltr": 280.0,
+   "return_units": 280.0,
+   "return_value": 46153.45975757576,
+   "shipped_ltr": 3325.0,
+   "shipped_units": 3325.0,
+   "shipped_value": 548072.3346212121,
    "sub_category": "GOLD"
   },
   {
@@ -3188,17 +3188,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "item_head": "COMMODITY",
-   "order_ltr": 3335.0,
-   "order_units": 667.0,
-   "order_value": 594160.92,
-   "per_liter_shpd": 178.15919640179908,
+   "order_ltr": 3470.0,
+   "order_units": 694.0,
+   "order_value": 618612.31,
+   "per_liter_shpd": 178.27444092219022,
    "per_ltr": "5 LTR",
-   "return_ltr": 375.0,
-   "return_units": 75.0,
-   "return_value": 66809.69865067466,
-   "shipped_ltr": 3495.0,
-   "shipped_units": 699.0,
-   "shipped_value": 622666.3914242878,
+   "return_ltr": 420.0,
+   "return_units": 84.0,
+   "return_value": 74875.26518731989,
+   "shipped_ltr": 3690.0,
+   "shipped_units": 738.0,
+   "shipped_value": 657832.6870028819,
    "sub_category": "GOLD"
   },
   {
@@ -3206,17 +3206,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "COMMODITY",
-   "order_ltr": 28555.0,
-   "order_units": 28555.0,
-   "order_value": 4675831.45,
-   "per_liter_shpd": 163.74825599719838,
+   "order_ltr": 30353.0,
+   "order_units": 30353.0,
+   "order_value": 4975650.15,
+   "per_liter_shpd": 163.92614074391327,
    "per_ltr": "1 LTR",
-   "return_ltr": 751.0,
-   "return_units": 751.0,
-   "return_value": 122974.94025389598,
-   "shipped_ltr": 27950.0,
-   "shipped_units": 27950.0,
-   "shipped_value": 4576763.755121695,
+   "return_ltr": 822.0,
+   "return_units": 822.0,
+   "return_value": 134747.28769149672,
+   "shipped_ltr": 29736.0,
+   "shipped_units": 29736.0,
+   "shipped_value": 4874507.721161005,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -3224,17 +3224,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "MUSTARD",
    "item_head": "COMMODITY",
-   "order_ltr": 86.0,
-   "order_units": 86.0,
-   "order_value": 16517.81,
-   "per_liter_shpd": 192.0675581395349,
+   "order_ltr": 88.0,
+   "order_units": 88.0,
+   "order_value": 16896.85,
+   "per_liter_shpd": 192.0096590909091,
    "per_ltr": "1 LTR",
    "return_ltr": 23.0,
    "return_units": 23.0,
-   "return_value": 4417.553837209302,
-   "shipped_ltr": 91.0,
-   "shipped_units": 91.0,
-   "shipped_value": 17478.147790697676,
+   "return_value": 4416.222159090909,
+   "shipped_ltr": 94.0,
+   "shipped_units": 94.0,
+   "shipped_value": 18048.907954545455,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -3260,17 +3260,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "item_head": "COMMODITY",
-   "order_ltr": 15890.0,
-   "order_units": 3178.0,
-   "order_value": 3000471.35,
-   "per_liter_shpd": 188.82764946507237,
+   "order_ltr": 17210.0,
+   "order_units": 3442.0,
+   "order_value": 3253672.18,
+   "per_liter_shpd": 189.0570703079605,
    "per_ltr": "5 LTR",
-   "return_ltr": 1130.0,
-   "return_units": 226.0,
-   "return_value": 213375.24389553178,
-   "shipped_ltr": 16355.0,
-   "shipped_units": 3271.0,
-   "shipped_value": 3088276.2070012586,
+   "return_ltr": 1220.0,
+   "return_units": 244.0,
+   "return_value": 230649.6257757118,
+   "shipped_ltr": 17745.0,
+   "shipped_units": 3549.0,
+   "shipped_value": 3354817.712614759,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -3278,17 +3278,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "RICE BRAN",
    "item_head": "COMMODITY",
-   "order_ltr": 4659.0,
-   "order_units": 4659.0,
-   "order_value": 844393.72,
-   "per_liter_shpd": 181.23926164412964,
+   "order_ltr": 5054.0,
+   "order_units": 5054.0,
+   "order_value": 916427.66,
+   "per_liter_shpd": 181.3271982588049,
    "per_ltr": "1 LTR",
-   "return_ltr": 165.0,
-   "return_units": 165.0,
-   "return_value": 29904.47817128139,
-   "shipped_ltr": 4648.0,
-   "shipped_units": 4648.0,
-   "shipped_value": 842400.0881219145,
+   "return_ltr": 169.0,
+   "return_units": 169.0,
+   "return_value": 30644.296505738028,
+   "shipped_ltr": 5070.0,
+   "shipped_units": 5070.0,
+   "shipped_value": 919328.8951721409,
    "sub_category": "RICE BRAN"
   },
   {
@@ -3314,17 +3314,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "RICE BRAN",
    "item_head": "COMMODITY",
-   "order_ltr": 6500.0,
-   "order_units": 1300.0,
-   "order_value": 1145437.04,
-   "per_liter_shpd": 176.22108307692307,
+   "order_ltr": 6920.0,
+   "order_units": 1384.0,
+   "order_value": 1219357.95,
+   "per_liter_shpd": 176.20779624277455,
    "per_ltr": "5 LTR",
-   "return_ltr": 480.0,
-   "return_units": 96.0,
-   "return_value": 84586.11987692308,
-   "shipped_ltr": 6455.0,
-   "shipped_units": 1291.0,
-   "shipped_value": 1137507.0912615384,
+   "return_ltr": 550.0,
+   "return_units": 110.0,
+   "return_value": 96914.28793352601,
+   "shipped_ltr": 6975.0,
+   "shipped_units": 1395.0,
+   "shipped_value": 1229049.3787933525,
    "sub_category": "RICE BRAN"
   },
   {
@@ -3332,17 +3332,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SOYABEAN",
    "item_head": "COMMODITY",
-   "order_ltr": 304.0,
-   "order_units": 304.0,
-   "order_value": 59343.97,
-   "per_liter_shpd": 195.21042763157897,
+   "order_ltr": 348.0,
+   "order_units": 348.0,
+   "order_value": 67836.63,
+   "per_liter_shpd": 194.9328448275862,
    "per_ltr": "1 LTR",
    "return_ltr": 52.0,
    "return_units": 52.0,
-   "return_value": 10150.942236842106,
-   "shipped_ltr": 338.0,
-   "shipped_units": 338.0,
-   "shipped_value": 65981.12453947369,
+   "return_value": 10136.507931034483,
+   "shipped_ltr": 364.0,
+   "shipped_units": 364.0,
+   "shipped_value": 70955.55551724137,
    "sub_category": "SOYABEAN"
   },
   {
@@ -3368,17 +3368,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SOYABEAN",
    "item_head": "COMMODITY",
-   "order_ltr": 27.0,
-   "order_units": 27.0,
-   "order_value": 5117.04,
-   "per_liter_shpd": 189.52,
+   "order_ltr": 39.0,
+   "order_units": 39.0,
+   "order_value": 7391.28,
+   "per_liter_shpd": 189.51999999999998,
    "per_ltr": "1 LTR POUCH",
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 27.0,
-   "shipped_units": 27.0,
-   "shipped_value": 5117.04,
+   "shipped_ltr": 37.0,
+   "shipped_units": 37.0,
+   "shipped_value": 7012.24,
    "sub_category": "SOYABEAN"
   },
   {
@@ -3386,17 +3386,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SOYABEAN",
    "item_head": "COMMODITY",
-   "order_ltr": 295.0,
-   "order_units": 59.0,
-   "order_value": 54677.2,
-   "per_liter_shpd": 185.3464406779661,
+   "order_ltr": 265.0,
+   "order_units": 53.0,
+   "order_value": 49016.24,
+   "per_liter_shpd": 184.9669433962264,
    "per_ltr": "5 LTR",
    "return_ltr": 80.0,
    "return_units": 16.0,
-   "return_value": 14827.715254237288,
-   "shipped_ltr": 215.0,
-   "shipped_units": 43.0,
-   "shipped_value": 39849.48474576271,
+   "return_value": 14797.355471698113,
+   "shipped_ltr": 220.0,
+   "shipped_units": 44.0,
+   "shipped_value": 40692.72754716981,
    "sub_category": "SOYABEAN"
   },
   {
@@ -3422,17 +3422,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SUNFLOWER",
    "item_head": "COMMODITY",
-   "order_ltr": 25534.0,
-   "order_units": 25534.0,
-   "order_value": 4261083.34,
-   "per_liter_shpd": 166.87880238113888,
+   "order_ltr": 28048.0,
+   "order_units": 28048.0,
+   "order_value": 4681057.37,
+   "per_liter_shpd": 166.89451547347403,
    "per_ltr": "1 LTR",
-   "return_ltr": 487.0,
-   "return_units": 487.0,
-   "return_value": 81269.97675961463,
-   "shipped_ltr": 25029.0,
-   "shipped_units": 25029.0,
-   "shipped_value": 4176809.544797525,
+   "return_ltr": 586.0,
+   "return_units": 586.0,
+   "return_value": 97800.18606745578,
+   "shipped_ltr": 27231.0,
+   "shipped_units": 27231.0,
+   "shipped_value": 4544704.550858172,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -3458,17 +3458,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SUNFLOWER",
    "item_head": "COMMODITY",
-   "order_ltr": 40.0,
-   "order_units": 10.0,
-   "order_value": 7398.3,
-   "per_liter_shpd": 184.9575,
+   "order_ltr": 64.0,
+   "order_units": 16.0,
+   "order_value": 11816.94,
+   "per_liter_shpd": 184.6396875,
    "per_ltr": "4 LTR",
    "return_ltr": 4.0,
    "return_units": 1.0,
-   "return_value": 739.83,
-   "shipped_ltr": 20.0,
-   "shipped_units": 5.0,
-   "shipped_value": 3699.15,
+   "return_value": 738.55875,
+   "shipped_ltr": 44.0,
+   "shipped_units": 11.0,
+   "shipped_value": 8124.14625,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -3476,17 +3476,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SUNFLOWER",
    "item_head": "COMMODITY",
-   "order_ltr": 26975.0,
-   "order_units": 5395.0,
-   "order_value": 5121716.22,
-   "per_liter_shpd": 189.86899796107505,
+   "order_ltr": 29250.0,
+   "order_units": 5850.0,
+   "order_value": 5518321.26,
+   "per_liter_shpd": 188.6605558974359,
    "per_ltr": "5 LTR",
-   "return_ltr": 1610.0,
-   "return_units": 322.0,
-   "return_value": 305689.08671733085,
-   "shipped_ltr": 27970.0,
-   "shipped_units": 5594.0,
-   "shipped_value": 5310635.872971269,
+   "return_ltr": 1635.0,
+   "return_units": 327.0,
+   "return_value": 308460.0088923077,
+   "shipped_ltr": 30390.0,
+   "shipped_units": 6078.0,
+   "shipped_value": 5733394.293723077,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -3502,9 +3502,9 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "return_ltr": 0.0,
    "return_units": 0.0,
    "return_value": 0.0,
-   "shipped_ltr": 5.0,
-   "shipped_units": 1.0,
-   "shipped_value": 980.0,
+   "shipped_ltr": 10.0,
+   "shipped_units": 2.0,
+   "shipped_value": 1960.0,
    "sub_category": "SUNFLOWER"
   }
  ],
@@ -3512,109 +3512,109 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   "margin_pct": 0.0,
   "margin_tax_value": 0.0,
   "margin_value": 0.0,
-  "net_realise_shpd": 228.67951992859378,
-  "order_ltr": 224939.7,
-  "order_units": 132753.0,
-  "order_value": 51322107.64,
-  "per_liter_shpd": 228.67951992859378,
-  "return_ltr": 9404.9,
-  "return_units": 4620.0,
-  "return_value": 2029789.7293719288,
-  "shipped_ltr": 223081.9,
-  "shipped_units": 131586.0,
-  "shipped_value": 51014261.79675856
+  "net_realise_shpd": 228.87153382966247,
+  "order_ltr": 242396.4,
+  "order_units": 143006.0,
+  "order_value": 55299375.02,
+  "per_liter_shpd": 228.87153382966247,
+  "return_ltr": 10116.4,
+  "return_units": 4982.0,
+  "return_value": 2181548.0416899654,
+  "shipped_ltr": 241510.9,
+  "shipped_units": 141778.0,
+  "shipped_value": 55274970.11958223
  },
  "source": "amazon_sec_range_master_view",
  "summary": [
   {
    "item_head": "PREMIUM",
-   "margin_pct": 0.22901711052813917,
-   "margin_tax_value": 8533968.55638971,
-   "margin_value": 7004677.298904436,
-   "net_realise_shpd": 205.62341161889637,
-   "order_ltr": 109499.7,
-   "order_units": 59682.0,
-   "order_value": 30995284.13,
-   "per_liter_shpd": 285.19873997220793,
-   "projection_ltr": 119159.88888888888,
-   "return_ltr": 3969.9,
-   "return_units": 2124.0,
-   "return_value": 1048871.6130822515,
-   "shipped_ltr": 107243.9,
-   "shipped_units": 59288.0,
-   "shipped_value": 30585825.149705466
+   "margin_pct": 0.22897202842812647,
+   "margin_tax_value": 9277155.481519848,
+   "margin_value": 7614416.114101514,
+   "net_realise_shpd": 205.72316833683954,
+   "order_ltr": 117945.4,
+   "order_units": 64235.0,
+   "order_value": 33404814.37,
+   "per_liter_shpd": 285.319261454384,
+   "projection_ltr": 120571.96551724136,
+   "return_ltr": 4272.4,
+   "return_units": 2261.0,
+   "return_value": 1130294.9690215557,
+   "shipped_ltr": 116552.9,
+   "shipped_units": 64003.0,
+   "shipped_value": 33254787.34836667
   },
   {
    "item_head": "COMMODITY",
    "margin_pct": 0.18,
-   "margin_tax_value": 4696998.506522212,
-   "margin_value": 3675911.8746695574,
-   "net_realise_shpd": 135.74763143813675,
-   "order_ltr": 115440.0,
-   "order_units": 72990.0,
-   "order_value": 20320277.58,
-   "per_liter_shpd": 176.29562524433345,
-   "projection_ltr": 128708.88888888889,
-   "return_ltr": 5435.0,
-   "return_units": 2492.0,
-   "return_value": 980540.9617442228,
-   "shipped_ltr": 115838.0,
-   "shipped_units": 72215.0,
-   "shipped_value": 20421732.6370531
+   "margin_tax_value": 5063071.857279578,
+   "margin_value": 3962404.0622188,
+   "net_realise_shpd": 135.64785002909758,
+   "order_ltr": 124451.0,
+   "order_units": 78687.0,
+   "order_value": 21887891.86,
+   "per_liter_shpd": 176.16603899882807,
+   "projection_ltr": 129266.89655172413,
+   "return_ltr": 5844.0,
+   "return_units": 2717.0,
+   "return_value": 1050875.9181229551,
+   "shipped_ltr": 124958.0,
+   "shipped_units": 77689.0,
+   "shipped_value": 22013355.901215557
   },
   {
    "item_head": "OTHER",
    "margin_pct": 0.25,
-   "margin_tax_value": 2011.203,
-   "margin_value": 1676.0025,
+   "margin_tax_value": 2048.061,
+   "margin_value": 1706.7175,
    "net_realise_shpd": 0.0,
    "order_ltr": 0.0,
-   "order_units": 81.0,
-   "order_value": 6545.93,
+   "order_units": 84.0,
+   "order_value": 6668.79,
    "per_liter_shpd": 0.0,
    "projection_ltr": 0.0,
    "return_ltr": 0.0,
    "return_units": 4.0,
    "return_value": 377.1545454545454,
    "shipped_ltr": 0.0,
-   "shipped_units": 83.0,
-   "shipped_value": 6704.01
+   "shipped_units": 86.0,
+   "shipped_value": 6826.87
   }
  ],
  "summary_note": "Uses amazon_sec_range_master_view filtered by year and month_day built from the selected month's max date.",
  "summary_total": {
-  "margin_pct": 0.2093976233280071,
-  "margin_tax_value": 13232978.265911922,
-  "margin_value": 10682265.176073993,
-  "net_realise_shpd": 169.36059595532691,
-  "order_ltr": 224939.7,
-  "order_units": 132753.0,
-  "order_value": 51322107.64,
-  "per_liter_shpd": 228.67951992859378,
-  "projection_ltr": 247868.77777777775,
-  "return_ltr": 9404.9,
-  "return_units": 4620.0,
-  "return_value": 2029789.7293719288,
-  "shipped_ltr": 223081.9,
-  "shipped_units": 131586.0,
-  "shipped_value": 51014261.79675856
+  "margin_pct": 0.20947142746113212,
+  "margin_tax_value": 14342275.399799427,
+  "margin_value": 11578526.893820314,
+  "net_realise_shpd": 169.48591024166114,
+  "order_ltr": 242396.4,
+  "order_units": 143006.0,
+  "order_value": 55299375.02,
+  "per_liter_shpd": 228.87153382966247,
+  "projection_ltr": 249838.8620689655,
+  "return_ltr": 10116.4,
+  "return_units": 4982.0,
+  "return_value": 2181548.0416899654,
+  "shipped_ltr": 241510.9,
+  "shipped_units": 141778.0,
+  "shipped_value": 55274970.11958223
  },
  "visual_dashboard": {
   "cards": {
    "ltrs": {
-    "deliver": 223081.9,
-    "order": 224939.7,
-    "return": 9404.9
+    "deliver": 241510.9,
+    "order": 242396.4,
+    "return": 10116.4
    },
    "quantity": {
-    "deliver": 131586.0,
-    "order": 132753.0,
-    "return": 4620.0
+    "deliver": 141778.0,
+    "order": 143006.0,
+    "return": 4982.0
    },
    "values": {
-    "deliver": 51014261.79675856,
-    "order": 51322107.64,
-    "return": 2029789.7293719288
+    "deliver": 55274970.11958223,
+    "order": 55299375.02,
+    "return": 2181548.0416899654
    }
   },
   "item_head_split": [
@@ -3622,38 +3622,38 @@ Up: [[dashboards-index]] · [[pf-amazon]]
     "item_head": "PREMIUM",
     "label": "PREMIUM",
     "ltrs": {
-     "deliver": 107243.9,
-     "order": 109499.7,
-     "return": 3969.9
+     "deliver": 116552.9,
+     "order": 117945.4,
+     "return": 4272.4
     },
     "quantity": {
-     "deliver": 59288.0,
-     "order": 59682.0,
-     "return": 2124.0
+     "deliver": 64003.0,
+     "order": 64235.0,
+     "return": 2261.0
     },
     "values": {
-     "deliver": 30585825.149705466,
-     "order": 30995284.13,
-     "return": 1048871.6130822515
+     "deliver": 33254787.34836667,
+     "order": 33404814.37,
+     "return": 1130294.9690215557
     }
    },
    {
     "item_head": "COMMODITY",
     "label": "COMMODITY",
     "ltrs": {
-     "deliver": 115838.0,
-     "order": 115440.0,
-     "return": 5435.0
+     "deliver": 124958.0,
+     "order": 124451.0,
+     "return": 5844.0
     },
     "quantity": {
-     "deliver": 72215.0,
-     "order": 72990.0,
-     "return": 2492.0
+     "deliver": 77689.0,
+     "order": 78687.0,
+     "return": 2717.0
     },
     "values": {
-     "deliver": 20421732.6370531,
-     "order": 20320277.58,
-     "return": 980540.9617442228
+     "deliver": 22013355.901215557,
+     "order": 21887891.86,
+     "return": 1050875.9181229551
     }
    },
    {
@@ -3665,13 +3665,13 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "return": 0.0
     },
     "quantity": {
-     "deliver": 83.0,
-     "order": 81.0,
+     "deliver": 86.0,
+     "order": 84.0,
      "return": 4.0
     },
     "values": {
-     "deliver": 6704.01,
-     "order": 6545.93,
+     "deliver": 6826.87,
+     "order": 6668.79,
      "return": 377.1545454545454
     }
    }
@@ -3687,286 +3687,305 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "SUNFLOWER",
       "ltrs": {
-       "deliver": 53025.0,
-       "order": 52560.0,
-       "return": 2101.0
+       "deliver": 57676.0,
+       "order": 57373.0,
+       "return": 2225.0
       },
       "quantity": {
-       "deliver": 30630.0,
-       "order": 30942.0,
-       "return": 810.0
+       "deliver": 33323.0,
+       "order": 33917.0,
+       "return": 914.0
       },
       "sub_category": "SUNFLOWER",
       "values": {
-       "deliver": 9492323.617768794,
-       "order": 9392356.91,
-       "return": 387698.89347694546
+       "deliver": 10288382.04083125,
+       "order": 10213354.62,
+       "return": 406998.75370976346
       }
      },
      {
       "label": "GROUNDNUT",
       "ltrs": {
-       "deliver": 45911.0,
-       "order": 48223.0,
-       "return": 2105.0
+       "deliver": 50064.0,
+       "order": 52028.0,
+       "return": 2262.0
       },
       "quantity": {
-       "deliver": 26143.0,
-       "order": 26580.0,
-       "return": 1269.0
+       "deliver": 28112.0,
+       "order": 28598.0,
+       "return": 1342.0
       },
       "sub_category": "GROUNDNUT",
       "values": {
-       "deliver": 8646816.547163673,
-       "order": 9093919.22,
-       "return": 395611.9379388524
+       "deliver": 9430121.848713726,
+       "order": 9808031.06,
+       "return": 425234.7816441529
       }
      },
      {
       "label": "MUSTARD KACCHI GHANI",
       "ltrs": {
-       "deliver": 44397.0,
-       "order": 44532.0,
-       "return": 1904.0
+       "deliver": 47576.0,
+       "order": 47652.0,
+       "return": 2065.0
       },
       "quantity": {
-       "deliver": 31313.0,
-       "order": 31820.0,
-       "return": 1000.0
+       "deliver": 33380.0,
+       "order": 33884.0,
+       "return": 1089.0
       },
       "sub_category": "MUSTARD KACCHI GHANI",
       "values": {
-       "deliver": 7682717.149913651,
-       "order": 7693019.65,
-       "return": 340767.73798663705
+       "deliver": 8247573.38173031,
+       "order": 8246418.22,
+       "return": 369813.1356262994
       }
      },
      {
       "label": "CANOLA",
       "ltrs": {
-       "deliver": 24015.0,
-       "order": 24069.0,
-       "return": 638.0
+       "deliver": 26037.0,
+       "order": 25931.0,
+       "return": 705.0
       },
       "quantity": {
-       "deliver": 9853.0,
-       "order": 9888.0,
-       "return": 210.0
+       "deliver": 10669.0,
+       "order": 10641.0,
+       "return": 233.0
       },
       "sub_category": "CANOLA",
       "values": {
-       "deliver": 5707624.176167866,
-       "order": 5720440.17,
-       "return": 151530.94262264099
+       "deliver": 6185219.753527204,
+       "order": 6159996.12,
+       "return": 167400.7186607433
       }
      },
      {
       "label": "JIVO POMACE",
       "ltrs": {
-       "deliver": 17117.0,
-       "order": 17125.0,
-       "return": 568.0
+       "deliver": 18501.0,
+       "order": 18361.0,
+       "return": 613.0
       },
       "quantity": {
-       "deliver": 9655.0,
-       "order": 9617.0,
-       "return": 293.0
+       "deliver": 10443.0,
+       "order": 10384.0,
+       "return": 314.0
       },
       "sub_category": "JIVO POMACE",
       "values": {
-       "deliver": 6453385.886357942,
-       "order": 6457006.9,
-       "return": 214968.11552520725
+       "deliver": 6980268.212792831,
+       "order": 6926525.17,
+       "return": 232275.75345935344
       }
      },
      {
       "label": "EXTRA LIGHT",
       "ltrs": {
-       "deliver": 12357.5,
-       "order": 12329.0,
-       "return": 306.0
+       "deliver": 13417.0,
+       "order": 13234.5,
+       "return": 330.0
       },
       "quantity": {
-       "deliver": 7234.0,
-       "order": 7289.0,
-       "return": 150.0
+       "deliver": 7855.0,
+       "order": 7830.0,
+       "return": 163.0
       },
       "sub_category": "EXTRA LIGHT",
       "values": {
-       "deliver": 6337668.106056055,
-       "order": 6316764.89,
-       "return": 157935.5295215621
+       "deliver": 6891919.810781206,
+       "order": 6790715.33,
+       "return": 170606.8508368226
       }
      },
      {
       "label": "RICE BRAN",
       "ltrs": {
-       "deliver": 11103.0,
-       "order": 11159.0,
-       "return": 645.0
+       "deliver": 12045.0,
+       "order": 11974.0,
+       "return": 719.0
       },
       "quantity": {
-       "deliver": 5939.0,
-       "order": 5959.0,
-       "return": 261.0
+       "deliver": 6465.0,
+       "order": 6438.0,
+       "return": 279.0
       },
       "sub_category": "RICE BRAN",
       "values": {
-       "deliver": 1979907.179383453,
-       "order": 1990017.18,
-       "return": 114490.59804820447
+       "deliver": 2148378.2739654933,
+       "order": 2135972.03,
+       "return": 127558.58443926404
       }
      },
      {
       "label": "GOLD",
       "ltrs": {
-       "deliver": 6708.0,
-       "order": 6533.0,
-       "return": 650.0
+       "deliver": 7015.0,
+       "order": 6770.0,
+       "return": 700.0
       },
       "quantity": {
-       "deliver": 3912.0,
-       "order": 3865.0,
-       "return": 350.0
+       "deliver": 4063.0,
+       "order": 3994.0,
+       "return": 364.0
       },
       "sub_category": "GOLD",
       "values": {
-       "deliver": 1151380.3807019615,
-       "order": 1120406.59,
-       "return": 112062.21874135634
+       "deliver": 1205905.0216240939,
+       "order": 1162563.8,
+       "return": 121028.72494489564
       }
      },
      {
       "label": "EXTRA VIRGIN",
       "ltrs": {
-       "deliver": 2212.9,
-       "order": 2214.7,
-       "return": 52.4
+       "deliver": 2470.9,
+       "order": 2471.4,
+       "return": 59.4
       },
       "quantity": {
-       "deliver": 2120.0,
-       "order": 2080.0,
-       "return": 54.0
+       "deliver": 2311.0,
+       "order": 2278.0,
+       "return": 57.0
       },
       "sub_category": "EXTRA VIRGIN",
       "values": {
-       "deliver": 1650672.4227859224,
-       "order": 1650985.33,
-       "return": 39233.839324644134
+       "deliver": 1839471.546559778,
+       "order": 1838428.56,
+       "return": 44253.10875984214
       }
      },
      {
       "label": "YELLOW MUSTARD",
       "ltrs": {
-       "deliver": 1989.0,
-       "order": 2004.0,
+       "deliver": 2111.0,
+       "order": 2109.0,
        "return": 97.0
       },
       "quantity": {
-       "deliver": 1065.0,
-       "order": 1080.0,
+       "deliver": 1115.0,
+       "order": 1121.0,
        "return": 49.0
       },
       "sub_category": "YELLOW MUSTARD",
       "values": {
-       "deliver": 481862.1900706714,
-       "order": 485421.18,
-       "return": 23531.171695807137
+       "deliver": 512358.8472469636,
+       "order": 511800.25,
+       "return": 23565.947955465588
       }
      },
      {
       "label": "SO OLIVE",
       "ltrs": {
-       "deliver": 1235.0,
-       "order": 1192.0,
-       "return": 96.0
+       "deliver": 1346.0,
+       "order": 1287.0,
+       "return": 97.0
       },
       "quantity": {
-       "deliver": 783.0,
-       "order": 764.0,
-       "return": 36.0
+       "deliver": 858.0,
+       "order": 823.0,
+       "return": 37.0
       },
       "sub_category": "SO OLIVE",
       "values": {
-       "deliver": 322444.9416503791,
-       "order": 311151.62,
-       "return": 25264.652816967526
+       "deliver": 352041.8138523631,
+       "order": 336591.6,
+       "return": 25550.475345193387
       }
      },
      {
       "label": "SANO POMACE",
       "ltrs": {
-       "deliver": 1226.0,
-       "order": 1174.0,
+       "deliver": 1307.0,
+       "order": 1264.0,
        "return": 81.0
       },
       "quantity": {
-       "deliver": 898.0,
-       "order": 866.0,
+       "deliver": 959.0,
+       "order": 928.0,
        "return": 29.0
       },
       "sub_category": "SANO POMACE",
       "values": {
-       "deliver": 458018.7261754975,
-       "order": 438715.22,
-       "return": 29647.544809145227
+       "deliver": 487484.64069058903,
+       "order": 471459.9,
+       "return": 29471.527605506657
       }
      },
      {
       "label": "COCONUT",
       "ltrs": {
-       "deliver": 752.0,
-       "order": 735.0,
-       "return": 13.5
+       "deliver": 800.0,
+       "order": 784.5,
+       "return": 15.0
       },
       "quantity": {
-       "deliver": 1107.0,
-       "order": 1082.0,
-       "return": 21.0
+       "deliver": 1180.0,
+       "order": 1154.0,
+       "return": 24.0
       },
       "sub_category": "COCONUT",
       "values": {
-       "deliver": 388776.02681912715,
-       "order": 379987.17,
-       "return": 6977.703619091476
+       "deliver": 414287.76066387334,
+       "order": 406261.53,
+       "return": 7767.5401146453205
       }
      },
      {
       "label": "SOYABEAN",
       "ltrs": {
-       "deliver": 605.0,
-       "order": 656.0,
+       "deliver": 646.0,
+       "order": 682.0,
        "return": 135.0
       },
       "quantity": {
-       "deliver": 421.0,
-       "order": 404.0,
+       "deliver": 458.0,
+       "order": 454.0,
        "return": 71.0
       },
       "sub_category": "SOYABEAN",
       "values": {
-       "deliver": 115404.30928523639,
-       "order": 124477.25,
-       "return": 25521.513491079393
+       "deliver": 123117.18306441119,
+       "order": 129583.19,
+       "return": 25476.719402732597
       }
      },
      {
       "label": "SESAME OIL",
       "ltrs": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "quantity": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "sub_category": "SESAME OIL",
       "values": {
-       "deliver": 136974.21645833334,
-       "order": 138578.13,
-       "return": 4170.175208333333
+       "deliver": 159355.9635381356,
+       "order": 151340.07,
+       "return": 4168.264639830509
+      }
+     },
+     {
+      "label": "A2 GHEE",
+      "ltrs": {
+       "deliver": 1.0,
+       "order": 2.0,
+       "return": 0.0
+      },
+      "quantity": {
+       "deliver": 2.0,
+       "order": 4.0,
+       "return": 0.0
+      },
+      "sub_category": "A2 GHEE",
+      "values": {
+       "deliver": 1407.63,
+       "order": 2815.26,
+       "return": 0.0
       }
      },
      {
@@ -3985,25 +4004,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "values": {
        "deliver": 849.52,
        "order": 849.52,
-       "return": 0.0
-      }
-     },
-     {
-      "label": "A2 GHEE",
-      "ltrs": {
-       "deliver": 0.5,
-       "order": 1.0,
-       "return": 0.0
-      },
-      "quantity": {
-       "deliver": 1.0,
-       "order": 2.0,
-       "return": 0.0
-      },
-      "sub_category": "A2 GHEE",
-      "values": {
-       "deliver": 732.39,
-       "order": 1464.78,
        "return": 0.0
       }
      },
@@ -4110,14 +4110,14 @@ Up: [[dashboards-index]] · [[pf-amazon]]
        "return": 0.0
       },
       "quantity": {
-       "deliver": 44.0,
-       "order": 44.0,
+       "deliver": 47.0,
+       "order": 47.0,
        "return": 0.0
       },
       "sub_category": "MANGO",
       "values": {
-       "deliver": 1603.79,
-       "order": 1603.79,
+       "deliver": 1726.65,
+       "order": 1726.65,
        "return": 0.0
       }
      },
@@ -4164,286 +4164,286 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "MUSTARD KACCHI GHANI",
       "ltrs": {
-       "deliver": 44397.0,
-       "order": 44532.0,
-       "return": 1904.0
+       "deliver": 47576.0,
+       "order": 47652.0,
+       "return": 2065.0
       },
       "quantity": {
-       "deliver": 31313.0,
-       "order": 31820.0,
-       "return": 1000.0
+       "deliver": 33380.0,
+       "order": 33884.0,
+       "return": 1089.0
       },
       "sub_category": "MUSTARD KACCHI GHANI",
       "values": {
-       "deliver": 7682717.149913651,
-       "order": 7693019.65,
-       "return": 340767.73798663705
+       "deliver": 8247573.38173031,
+       "order": 8246418.22,
+       "return": 369813.1356262994
       }
      },
      {
       "label": "SUNFLOWER",
       "ltrs": {
-       "deliver": 53025.0,
-       "order": 52560.0,
-       "return": 2101.0
+       "deliver": 57676.0,
+       "order": 57373.0,
+       "return": 2225.0
       },
       "quantity": {
-       "deliver": 30630.0,
-       "order": 30942.0,
-       "return": 810.0
+       "deliver": 33323.0,
+       "order": 33917.0,
+       "return": 914.0
       },
       "sub_category": "SUNFLOWER",
       "values": {
-       "deliver": 9492323.617768794,
-       "order": 9392356.91,
-       "return": 387698.89347694546
+       "deliver": 10288382.04083125,
+       "order": 10213354.62,
+       "return": 406998.75370976346
       }
      },
      {
       "label": "GROUNDNUT",
       "ltrs": {
-       "deliver": 45911.0,
-       "order": 48223.0,
-       "return": 2105.0
+       "deliver": 50064.0,
+       "order": 52028.0,
+       "return": 2262.0
       },
       "quantity": {
-       "deliver": 26143.0,
-       "order": 26580.0,
-       "return": 1269.0
+       "deliver": 28112.0,
+       "order": 28598.0,
+       "return": 1342.0
       },
       "sub_category": "GROUNDNUT",
       "values": {
-       "deliver": 8646816.547163673,
-       "order": 9093919.22,
-       "return": 395611.9379388524
+       "deliver": 9430121.848713726,
+       "order": 9808031.06,
+       "return": 425234.7816441529
       }
      },
      {
       "label": "CANOLA",
       "ltrs": {
-       "deliver": 24015.0,
-       "order": 24069.0,
-       "return": 638.0
+       "deliver": 26037.0,
+       "order": 25931.0,
+       "return": 705.0
       },
       "quantity": {
-       "deliver": 9853.0,
-       "order": 9888.0,
-       "return": 210.0
+       "deliver": 10669.0,
+       "order": 10641.0,
+       "return": 233.0
       },
       "sub_category": "CANOLA",
       "values": {
-       "deliver": 5707624.176167866,
-       "order": 5720440.17,
-       "return": 151530.94262264099
+       "deliver": 6185219.753527204,
+       "order": 6159996.12,
+       "return": 167400.7186607433
       }
      },
      {
       "label": "JIVO POMACE",
       "ltrs": {
-       "deliver": 17117.0,
-       "order": 17125.0,
-       "return": 568.0
+       "deliver": 18501.0,
+       "order": 18361.0,
+       "return": 613.0
       },
       "quantity": {
-       "deliver": 9655.0,
-       "order": 9617.0,
-       "return": 293.0
+       "deliver": 10443.0,
+       "order": 10384.0,
+       "return": 314.0
       },
       "sub_category": "JIVO POMACE",
       "values": {
-       "deliver": 6453385.886357942,
-       "order": 6457006.9,
-       "return": 214968.11552520725
+       "deliver": 6980268.212792831,
+       "order": 6926525.17,
+       "return": 232275.75345935344
       }
      },
      {
       "label": "EXTRA LIGHT",
       "ltrs": {
-       "deliver": 12357.5,
-       "order": 12329.0,
-       "return": 306.0
+       "deliver": 13417.0,
+       "order": 13234.5,
+       "return": 330.0
       },
       "quantity": {
-       "deliver": 7234.0,
-       "order": 7289.0,
-       "return": 150.0
+       "deliver": 7855.0,
+       "order": 7830.0,
+       "return": 163.0
       },
       "sub_category": "EXTRA LIGHT",
       "values": {
-       "deliver": 6337668.106056055,
-       "order": 6316764.89,
-       "return": 157935.5295215621
+       "deliver": 6891919.810781206,
+       "order": 6790715.33,
+       "return": 170606.8508368226
       }
      },
      {
       "label": "RICE BRAN",
       "ltrs": {
-       "deliver": 11103.0,
-       "order": 11159.0,
-       "return": 645.0
+       "deliver": 12045.0,
+       "order": 11974.0,
+       "return": 719.0
       },
       "quantity": {
-       "deliver": 5939.0,
-       "order": 5959.0,
-       "return": 261.0
+       "deliver": 6465.0,
+       "order": 6438.0,
+       "return": 279.0
       },
       "sub_category": "RICE BRAN",
       "values": {
-       "deliver": 1979907.179383453,
-       "order": 1990017.18,
-       "return": 114490.59804820447
+       "deliver": 2148378.2739654933,
+       "order": 2135972.03,
+       "return": 127558.58443926404
       }
      },
      {
       "label": "GOLD",
       "ltrs": {
-       "deliver": 6708.0,
-       "order": 6533.0,
-       "return": 650.0
+       "deliver": 7015.0,
+       "order": 6770.0,
+       "return": 700.0
       },
       "quantity": {
-       "deliver": 3912.0,
-       "order": 3865.0,
-       "return": 350.0
+       "deliver": 4063.0,
+       "order": 3994.0,
+       "return": 364.0
       },
       "sub_category": "GOLD",
       "values": {
-       "deliver": 1151380.3807019615,
-       "order": 1120406.59,
-       "return": 112062.21874135634
+       "deliver": 1205905.0216240939,
+       "order": 1162563.8,
+       "return": 121028.72494489564
       }
      },
      {
       "label": "EXTRA VIRGIN",
       "ltrs": {
-       "deliver": 2212.9,
-       "order": 2214.7,
-       "return": 52.4
+       "deliver": 2470.9,
+       "order": 2471.4,
+       "return": 59.4
       },
       "quantity": {
-       "deliver": 2120.0,
-       "order": 2080.0,
-       "return": 54.0
+       "deliver": 2311.0,
+       "order": 2278.0,
+       "return": 57.0
       },
       "sub_category": "EXTRA VIRGIN",
       "values": {
-       "deliver": 1650672.4227859224,
-       "order": 1650985.33,
-       "return": 39233.839324644134
+       "deliver": 1839471.546559778,
+       "order": 1838428.56,
+       "return": 44253.10875984214
       }
      },
      {
       "label": "COCONUT",
       "ltrs": {
-       "deliver": 752.0,
-       "order": 735.0,
-       "return": 13.5
+       "deliver": 800.0,
+       "order": 784.5,
+       "return": 15.0
       },
       "quantity": {
-       "deliver": 1107.0,
-       "order": 1082.0,
-       "return": 21.0
+       "deliver": 1180.0,
+       "order": 1154.0,
+       "return": 24.0
       },
       "sub_category": "COCONUT",
       "values": {
-       "deliver": 388776.02681912715,
-       "order": 379987.17,
-       "return": 6977.703619091476
+       "deliver": 414287.76066387334,
+       "order": 406261.53,
+       "return": 7767.5401146453205
       }
      },
      {
       "label": "YELLOW MUSTARD",
       "ltrs": {
-       "deliver": 1989.0,
-       "order": 2004.0,
+       "deliver": 2111.0,
+       "order": 2109.0,
        "return": 97.0
       },
       "quantity": {
-       "deliver": 1065.0,
-       "order": 1080.0,
+       "deliver": 1115.0,
+       "order": 1121.0,
        "return": 49.0
       },
       "sub_category": "YELLOW MUSTARD",
       "values": {
-       "deliver": 481862.1900706714,
-       "order": 485421.18,
-       "return": 23531.171695807137
+       "deliver": 512358.8472469636,
+       "order": 511800.25,
+       "return": 23565.947955465588
       }
      },
      {
       "label": "SANO POMACE",
       "ltrs": {
-       "deliver": 1226.0,
-       "order": 1174.0,
+       "deliver": 1307.0,
+       "order": 1264.0,
        "return": 81.0
       },
       "quantity": {
-       "deliver": 898.0,
-       "order": 866.0,
+       "deliver": 959.0,
+       "order": 928.0,
        "return": 29.0
       },
       "sub_category": "SANO POMACE",
       "values": {
-       "deliver": 458018.7261754975,
-       "order": 438715.22,
-       "return": 29647.544809145227
+       "deliver": 487484.64069058903,
+       "order": 471459.9,
+       "return": 29471.527605506657
       }
      },
      {
       "label": "SO OLIVE",
       "ltrs": {
-       "deliver": 1235.0,
-       "order": 1192.0,
-       "return": 96.0
+       "deliver": 1346.0,
+       "order": 1287.0,
+       "return": 97.0
       },
       "quantity": {
-       "deliver": 783.0,
-       "order": 764.0,
-       "return": 36.0
+       "deliver": 858.0,
+       "order": 823.0,
+       "return": 37.0
       },
       "sub_category": "SO OLIVE",
       "values": {
-       "deliver": 322444.9416503791,
-       "order": 311151.62,
-       "return": 25264.652816967526
+       "deliver": 352041.8138523631,
+       "order": 336591.6,
+       "return": 25550.475345193387
       }
      },
      {
       "label": "SESAME OIL",
       "ltrs": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "quantity": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "sub_category": "SESAME OIL",
       "values": {
-       "deliver": 136974.21645833334,
-       "order": 138578.13,
-       "return": 4170.175208333333
+       "deliver": 159355.9635381356,
+       "order": 151340.07,
+       "return": 4168.264639830509
       }
      },
      {
       "label": "SOYABEAN",
       "ltrs": {
-       "deliver": 605.0,
-       "order": 656.0,
+       "deliver": 646.0,
+       "order": 682.0,
        "return": 135.0
       },
       "quantity": {
-       "deliver": 421.0,
-       "order": 404.0,
+       "deliver": 458.0,
+       "order": 454.0,
        "return": 71.0
       },
       "sub_category": "SOYABEAN",
       "values": {
-       "deliver": 115404.30928523639,
-       "order": 124477.25,
-       "return": 25521.513491079393
+       "deliver": 123117.18306441119,
+       "order": 129583.19,
+       "return": 25476.719402732597
       }
      },
      {
@@ -4454,14 +4454,14 @@ Up: [[dashboards-index]] · [[pf-amazon]]
        "return": 0.0
       },
       "quantity": {
-       "deliver": 44.0,
-       "order": 44.0,
+       "deliver": 47.0,
+       "order": 47.0,
        "return": 0.0
       },
       "sub_category": "MANGO",
       "values": {
-       "deliver": 1603.79,
-       "order": 1603.79,
+       "deliver": 1726.65,
+       "order": 1726.65,
        "return": 0.0
       }
      },
@@ -4542,6 +4542,25 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       }
      },
      {
+      "label": "A2 GHEE",
+      "ltrs": {
+       "deliver": 1.0,
+       "order": 2.0,
+       "return": 0.0
+      },
+      "quantity": {
+       "deliver": 2.0,
+       "order": 4.0,
+       "return": 0.0
+      },
+      "sub_category": "A2 GHEE",
+      "values": {
+       "deliver": 1407.63,
+       "order": 2815.26,
+       "return": 0.0
+      }
+     },
+     {
       "label": "DESI GHEE",
       "ltrs": {
        "deliver": 1.0,
@@ -4576,25 +4595,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "values": {
        "deliver": 950.48,
        "order": 950.48,
-       "return": 0.0
-      }
-     },
-     {
-      "label": "A2 GHEE",
-      "ltrs": {
-       "deliver": 0.5,
-       "order": 1.0,
-       "return": 0.0
-      },
-      "quantity": {
-       "deliver": 1.0,
-       "order": 2.0,
-       "return": 0.0
-      },
-      "sub_category": "A2 GHEE",
-      "values": {
-       "deliver": 732.39,
-       "order": 1464.78,
        "return": 0.0
       }
      },
@@ -4641,286 +4641,286 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "SUNFLOWER",
       "ltrs": {
-       "deliver": 53025.0,
-       "order": 52560.0,
-       "return": 2101.0
+       "deliver": 57676.0,
+       "order": 57373.0,
+       "return": 2225.0
       },
       "quantity": {
-       "deliver": 30630.0,
-       "order": 30942.0,
-       "return": 810.0
+       "deliver": 33323.0,
+       "order": 33917.0,
+       "return": 914.0
       },
       "sub_category": "SUNFLOWER",
       "values": {
-       "deliver": 9492323.617768794,
-       "order": 9392356.91,
-       "return": 387698.89347694546
+       "deliver": 10288382.04083125,
+       "order": 10213354.62,
+       "return": 406998.75370976346
       }
      },
      {
       "label": "GROUNDNUT",
       "ltrs": {
-       "deliver": 45911.0,
-       "order": 48223.0,
-       "return": 2105.0
+       "deliver": 50064.0,
+       "order": 52028.0,
+       "return": 2262.0
       },
       "quantity": {
-       "deliver": 26143.0,
-       "order": 26580.0,
-       "return": 1269.0
+       "deliver": 28112.0,
+       "order": 28598.0,
+       "return": 1342.0
       },
       "sub_category": "GROUNDNUT",
       "values": {
-       "deliver": 8646816.547163673,
-       "order": 9093919.22,
-       "return": 395611.9379388524
+       "deliver": 9430121.848713726,
+       "order": 9808031.06,
+       "return": 425234.7816441529
       }
      },
      {
       "label": "MUSTARD KACCHI GHANI",
       "ltrs": {
-       "deliver": 44397.0,
-       "order": 44532.0,
-       "return": 1904.0
+       "deliver": 47576.0,
+       "order": 47652.0,
+       "return": 2065.0
       },
       "quantity": {
-       "deliver": 31313.0,
-       "order": 31820.0,
-       "return": 1000.0
+       "deliver": 33380.0,
+       "order": 33884.0,
+       "return": 1089.0
       },
       "sub_category": "MUSTARD KACCHI GHANI",
       "values": {
-       "deliver": 7682717.149913651,
-       "order": 7693019.65,
-       "return": 340767.73798663705
+       "deliver": 8247573.38173031,
+       "order": 8246418.22,
+       "return": 369813.1356262994
       }
      },
      {
       "label": "JIVO POMACE",
       "ltrs": {
-       "deliver": 17117.0,
-       "order": 17125.0,
-       "return": 568.0
+       "deliver": 18501.0,
+       "order": 18361.0,
+       "return": 613.0
       },
       "quantity": {
-       "deliver": 9655.0,
-       "order": 9617.0,
-       "return": 293.0
+       "deliver": 10443.0,
+       "order": 10384.0,
+       "return": 314.0
       },
       "sub_category": "JIVO POMACE",
       "values": {
-       "deliver": 6453385.886357942,
-       "order": 6457006.9,
-       "return": 214968.11552520725
+       "deliver": 6980268.212792831,
+       "order": 6926525.17,
+       "return": 232275.75345935344
       }
      },
      {
       "label": "EXTRA LIGHT",
       "ltrs": {
-       "deliver": 12357.5,
-       "order": 12329.0,
-       "return": 306.0
+       "deliver": 13417.0,
+       "order": 13234.5,
+       "return": 330.0
       },
       "quantity": {
-       "deliver": 7234.0,
-       "order": 7289.0,
-       "return": 150.0
+       "deliver": 7855.0,
+       "order": 7830.0,
+       "return": 163.0
       },
       "sub_category": "EXTRA LIGHT",
       "values": {
-       "deliver": 6337668.106056055,
-       "order": 6316764.89,
-       "return": 157935.5295215621
+       "deliver": 6891919.810781206,
+       "order": 6790715.33,
+       "return": 170606.8508368226
       }
      },
      {
       "label": "CANOLA",
       "ltrs": {
-       "deliver": 24015.0,
-       "order": 24069.0,
-       "return": 638.0
+       "deliver": 26037.0,
+       "order": 25931.0,
+       "return": 705.0
       },
       "quantity": {
-       "deliver": 9853.0,
-       "order": 9888.0,
-       "return": 210.0
+       "deliver": 10669.0,
+       "order": 10641.0,
+       "return": 233.0
       },
       "sub_category": "CANOLA",
       "values": {
-       "deliver": 5707624.176167866,
-       "order": 5720440.17,
-       "return": 151530.94262264099
+       "deliver": 6185219.753527204,
+       "order": 6159996.12,
+       "return": 167400.7186607433
       }
      },
      {
       "label": "RICE BRAN",
       "ltrs": {
-       "deliver": 11103.0,
-       "order": 11159.0,
-       "return": 645.0
+       "deliver": 12045.0,
+       "order": 11974.0,
+       "return": 719.0
       },
       "quantity": {
-       "deliver": 5939.0,
-       "order": 5959.0,
-       "return": 261.0
+       "deliver": 6465.0,
+       "order": 6438.0,
+       "return": 279.0
       },
       "sub_category": "RICE BRAN",
       "values": {
-       "deliver": 1979907.179383453,
-       "order": 1990017.18,
-       "return": 114490.59804820447
+       "deliver": 2148378.2739654933,
+       "order": 2135972.03,
+       "return": 127558.58443926404
       }
      },
      {
       "label": "EXTRA VIRGIN",
       "ltrs": {
-       "deliver": 2212.9,
-       "order": 2214.7,
-       "return": 52.4
+       "deliver": 2470.9,
+       "order": 2471.4,
+       "return": 59.4
       },
       "quantity": {
-       "deliver": 2120.0,
-       "order": 2080.0,
-       "return": 54.0
+       "deliver": 2311.0,
+       "order": 2278.0,
+       "return": 57.0
       },
       "sub_category": "EXTRA VIRGIN",
       "values": {
-       "deliver": 1650672.4227859224,
-       "order": 1650985.33,
-       "return": 39233.839324644134
+       "deliver": 1839471.546559778,
+       "order": 1838428.56,
+       "return": 44253.10875984214
       }
      },
      {
       "label": "GOLD",
       "ltrs": {
-       "deliver": 6708.0,
-       "order": 6533.0,
-       "return": 650.0
+       "deliver": 7015.0,
+       "order": 6770.0,
+       "return": 700.0
       },
       "quantity": {
-       "deliver": 3912.0,
-       "order": 3865.0,
-       "return": 350.0
+       "deliver": 4063.0,
+       "order": 3994.0,
+       "return": 364.0
       },
       "sub_category": "GOLD",
       "values": {
-       "deliver": 1151380.3807019615,
-       "order": 1120406.59,
-       "return": 112062.21874135634
+       "deliver": 1205905.0216240939,
+       "order": 1162563.8,
+       "return": 121028.72494489564
       }
      },
      {
       "label": "YELLOW MUSTARD",
       "ltrs": {
-       "deliver": 1989.0,
-       "order": 2004.0,
+       "deliver": 2111.0,
+       "order": 2109.0,
        "return": 97.0
       },
       "quantity": {
-       "deliver": 1065.0,
-       "order": 1080.0,
+       "deliver": 1115.0,
+       "order": 1121.0,
        "return": 49.0
       },
       "sub_category": "YELLOW MUSTARD",
       "values": {
-       "deliver": 481862.1900706714,
-       "order": 485421.18,
-       "return": 23531.171695807137
+       "deliver": 512358.8472469636,
+       "order": 511800.25,
+       "return": 23565.947955465588
       }
      },
      {
       "label": "SANO POMACE",
       "ltrs": {
-       "deliver": 1226.0,
-       "order": 1174.0,
+       "deliver": 1307.0,
+       "order": 1264.0,
        "return": 81.0
       },
       "quantity": {
-       "deliver": 898.0,
-       "order": 866.0,
+       "deliver": 959.0,
+       "order": 928.0,
        "return": 29.0
       },
       "sub_category": "SANO POMACE",
       "values": {
-       "deliver": 458018.7261754975,
-       "order": 438715.22,
-       "return": 29647.544809145227
+       "deliver": 487484.64069058903,
+       "order": 471459.9,
+       "return": 29471.527605506657
       }
      },
      {
       "label": "COCONUT",
       "ltrs": {
-       "deliver": 752.0,
-       "order": 735.0,
-       "return": 13.5
+       "deliver": 800.0,
+       "order": 784.5,
+       "return": 15.0
       },
       "quantity": {
-       "deliver": 1107.0,
-       "order": 1082.0,
-       "return": 21.0
+       "deliver": 1180.0,
+       "order": 1154.0,
+       "return": 24.0
       },
       "sub_category": "COCONUT",
       "values": {
-       "deliver": 388776.02681912715,
-       "order": 379987.17,
-       "return": 6977.703619091476
+       "deliver": 414287.76066387334,
+       "order": 406261.53,
+       "return": 7767.5401146453205
       }
      },
      {
       "label": "SO OLIVE",
       "ltrs": {
-       "deliver": 1235.0,
-       "order": 1192.0,
-       "return": 96.0
+       "deliver": 1346.0,
+       "order": 1287.0,
+       "return": 97.0
       },
       "quantity": {
-       "deliver": 783.0,
-       "order": 764.0,
-       "return": 36.0
+       "deliver": 858.0,
+       "order": 823.0,
+       "return": 37.0
       },
       "sub_category": "SO OLIVE",
       "values": {
-       "deliver": 322444.9416503791,
-       "order": 311151.62,
-       "return": 25264.652816967526
+       "deliver": 352041.8138523631,
+       "order": 336591.6,
+       "return": 25550.475345193387
       }
      },
      {
       "label": "SESAME OIL",
       "ltrs": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "quantity": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "sub_category": "SESAME OIL",
       "values": {
-       "deliver": 136974.21645833334,
-       "order": 138578.13,
-       "return": 4170.175208333333
+       "deliver": 159355.9635381356,
+       "order": 151340.07,
+       "return": 4168.264639830509
       }
      },
      {
       "label": "SOYABEAN",
       "ltrs": {
-       "deliver": 605.0,
-       "order": 656.0,
+       "deliver": 646.0,
+       "order": 682.0,
        "return": 135.0
       },
       "quantity": {
-       "deliver": 421.0,
-       "order": 404.0,
+       "deliver": 458.0,
+       "order": 454.0,
        "return": 71.0
       },
       "sub_category": "SOYABEAN",
       "values": {
-       "deliver": 115404.30928523639,
-       "order": 124477.25,
-       "return": 25521.513491079393
+       "deliver": 123117.18306441119,
+       "order": 129583.19,
+       "return": 25476.719402732597
       }
      },
      {
@@ -4950,14 +4950,33 @@ Up: [[dashboards-index]] · [[pf-amazon]]
        "return": 0.0
       },
       "quantity": {
-       "deliver": 44.0,
-       "order": 44.0,
+       "deliver": 47.0,
+       "order": 47.0,
        "return": 0.0
       },
       "sub_category": "MANGO",
       "values": {
-       "deliver": 1603.79,
-       "order": 1603.79,
+       "deliver": 1726.65,
+       "order": 1726.65,
+       "return": 0.0
+      }
+     },
+     {
+      "label": "A2 GHEE",
+      "ltrs": {
+       "deliver": 1.0,
+       "order": 2.0,
+       "return": 0.0
+      },
+      "quantity": {
+       "deliver": 2.0,
+       "order": 4.0,
+       "return": 0.0
+      },
+      "sub_category": "A2 GHEE",
+      "values": {
+       "deliver": 1407.63,
+       "order": 2815.26,
        "return": 0.0
       }
      },
@@ -5034,25 +5053,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "values": {
        "deliver": 849.52,
        "order": 849.52,
-       "return": 0.0
-      }
-     },
-     {
-      "label": "A2 GHEE",
-      "ltrs": {
-       "deliver": 0.5,
-       "order": 1.0,
-       "return": 0.0
-      },
-      "quantity": {
-       "deliver": 1.0,
-       "order": 2.0,
-       "return": 0.0
-      },
-      "sub_category": "A2 GHEE",
-      "values": {
-       "deliver": 732.39,
-       "order": 1464.78,
        "return": 0.0
       }
      },
@@ -5120,96 +5120,96 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "SUNFLOWER",
       "ltrs": {
-       "deliver": 53025.0,
-       "order": 52560.0,
-       "return": 2101.0
+       "deliver": 57676.0,
+       "order": 57373.0,
+       "return": 2225.0
       },
       "quantity": {
-       "deliver": 30630.0,
-       "order": 30942.0,
-       "return": 810.0
+       "deliver": 33323.0,
+       "order": 33917.0,
+       "return": 914.0
       },
       "sub_category": "SUNFLOWER",
       "values": {
-       "deliver": 9492323.617768794,
-       "order": 9392356.91,
-       "return": 387698.89347694546
+       "deliver": 10288382.04083125,
+       "order": 10213354.62,
+       "return": 406998.75370976346
       }
      },
      {
       "label": "MUSTARD KACCHI GHANI",
       "ltrs": {
-       "deliver": 44397.0,
-       "order": 44532.0,
-       "return": 1904.0
+       "deliver": 47576.0,
+       "order": 47652.0,
+       "return": 2065.0
       },
       "quantity": {
-       "deliver": 31313.0,
-       "order": 31820.0,
-       "return": 1000.0
+       "deliver": 33380.0,
+       "order": 33884.0,
+       "return": 1089.0
       },
       "sub_category": "MUSTARD KACCHI GHANI",
       "values": {
-       "deliver": 7682717.149913651,
-       "order": 7693019.65,
-       "return": 340767.73798663705
+       "deliver": 8247573.38173031,
+       "order": 8246418.22,
+       "return": 369813.1356262994
       }
      },
      {
       "label": "RICE BRAN",
       "ltrs": {
-       "deliver": 11103.0,
-       "order": 11159.0,
-       "return": 645.0
+       "deliver": 12045.0,
+       "order": 11974.0,
+       "return": 719.0
       },
       "quantity": {
-       "deliver": 5939.0,
-       "order": 5959.0,
-       "return": 261.0
+       "deliver": 6465.0,
+       "order": 6438.0,
+       "return": 279.0
       },
       "sub_category": "RICE BRAN",
       "values": {
-       "deliver": 1979907.179383453,
-       "order": 1990017.18,
-       "return": 114490.59804820447
+       "deliver": 2148378.2739654933,
+       "order": 2135972.03,
+       "return": 127558.58443926404
       }
      },
      {
       "label": "GOLD",
       "ltrs": {
-       "deliver": 6708.0,
-       "order": 6533.0,
-       "return": 650.0
+       "deliver": 7015.0,
+       "order": 6770.0,
+       "return": 700.0
       },
       "quantity": {
-       "deliver": 3912.0,
-       "order": 3865.0,
-       "return": 350.0
+       "deliver": 4063.0,
+       "order": 3994.0,
+       "return": 364.0
       },
       "sub_category": "GOLD",
       "values": {
-       "deliver": 1151380.3807019615,
-       "order": 1120406.59,
-       "return": 112062.21874135634
+       "deliver": 1205905.0216240939,
+       "order": 1162563.8,
+       "return": 121028.72494489564
       }
      },
      {
       "label": "SOYABEAN",
       "ltrs": {
-       "deliver": 605.0,
-       "order": 656.0,
+       "deliver": 646.0,
+       "order": 682.0,
        "return": 135.0
       },
       "quantity": {
-       "deliver": 421.0,
-       "order": 404.0,
+       "deliver": 458.0,
+       "order": 454.0,
        "return": 71.0
       },
       "sub_category": "SOYABEAN",
       "values": {
-       "deliver": 115404.30928523639,
-       "order": 124477.25,
-       "return": 25521.513491079393
+       "deliver": 123117.18306441119,
+       "order": 129583.19,
+       "return": 25476.719402732597
       }
      }
     ],
@@ -5217,96 +5217,96 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "MUSTARD KACCHI GHANI",
       "ltrs": {
-       "deliver": 44397.0,
-       "order": 44532.0,
-       "return": 1904.0
+       "deliver": 47576.0,
+       "order": 47652.0,
+       "return": 2065.0
       },
       "quantity": {
-       "deliver": 31313.0,
-       "order": 31820.0,
-       "return": 1000.0
+       "deliver": 33380.0,
+       "order": 33884.0,
+       "return": 1089.0
       },
       "sub_category": "MUSTARD KACCHI GHANI",
       "values": {
-       "deliver": 7682717.149913651,
-       "order": 7693019.65,
-       "return": 340767.73798663705
+       "deliver": 8247573.38173031,
+       "order": 8246418.22,
+       "return": 369813.1356262994
       }
      },
      {
       "label": "SUNFLOWER",
       "ltrs": {
-       "deliver": 53025.0,
-       "order": 52560.0,
-       "return": 2101.0
+       "deliver": 57676.0,
+       "order": 57373.0,
+       "return": 2225.0
       },
       "quantity": {
-       "deliver": 30630.0,
-       "order": 30942.0,
-       "return": 810.0
+       "deliver": 33323.0,
+       "order": 33917.0,
+       "return": 914.0
       },
       "sub_category": "SUNFLOWER",
       "values": {
-       "deliver": 9492323.617768794,
-       "order": 9392356.91,
-       "return": 387698.89347694546
+       "deliver": 10288382.04083125,
+       "order": 10213354.62,
+       "return": 406998.75370976346
       }
      },
      {
       "label": "RICE BRAN",
       "ltrs": {
-       "deliver": 11103.0,
-       "order": 11159.0,
-       "return": 645.0
+       "deliver": 12045.0,
+       "order": 11974.0,
+       "return": 719.0
       },
       "quantity": {
-       "deliver": 5939.0,
-       "order": 5959.0,
-       "return": 261.0
+       "deliver": 6465.0,
+       "order": 6438.0,
+       "return": 279.0
       },
       "sub_category": "RICE BRAN",
       "values": {
-       "deliver": 1979907.179383453,
-       "order": 1990017.18,
-       "return": 114490.59804820447
+       "deliver": 2148378.2739654933,
+       "order": 2135972.03,
+       "return": 127558.58443926404
       }
      },
      {
       "label": "GOLD",
       "ltrs": {
-       "deliver": 6708.0,
-       "order": 6533.0,
-       "return": 650.0
+       "deliver": 7015.0,
+       "order": 6770.0,
+       "return": 700.0
       },
       "quantity": {
-       "deliver": 3912.0,
-       "order": 3865.0,
-       "return": 350.0
+       "deliver": 4063.0,
+       "order": 3994.0,
+       "return": 364.0
       },
       "sub_category": "GOLD",
       "values": {
-       "deliver": 1151380.3807019615,
-       "order": 1120406.59,
-       "return": 112062.21874135634
+       "deliver": 1205905.0216240939,
+       "order": 1162563.8,
+       "return": 121028.72494489564
       }
      },
      {
       "label": "SOYABEAN",
       "ltrs": {
-       "deliver": 605.0,
-       "order": 656.0,
+       "deliver": 646.0,
+       "order": 682.0,
        "return": 135.0
       },
       "quantity": {
-       "deliver": 421.0,
-       "order": 404.0,
+       "deliver": 458.0,
+       "order": 454.0,
        "return": 71.0
       },
       "sub_category": "SOYABEAN",
       "values": {
-       "deliver": 115404.30928523639,
-       "order": 124477.25,
-       "return": 25521.513491079393
+       "deliver": 123117.18306441119,
+       "order": 129583.19,
+       "return": 25476.719402732597
       }
      }
     ],
@@ -5314,96 +5314,96 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "SUNFLOWER",
       "ltrs": {
-       "deliver": 53025.0,
-       "order": 52560.0,
-       "return": 2101.0
+       "deliver": 57676.0,
+       "order": 57373.0,
+       "return": 2225.0
       },
       "quantity": {
-       "deliver": 30630.0,
-       "order": 30942.0,
-       "return": 810.0
+       "deliver": 33323.0,
+       "order": 33917.0,
+       "return": 914.0
       },
       "sub_category": "SUNFLOWER",
       "values": {
-       "deliver": 9492323.617768794,
-       "order": 9392356.91,
-       "return": 387698.89347694546
+       "deliver": 10288382.04083125,
+       "order": 10213354.62,
+       "return": 406998.75370976346
       }
      },
      {
       "label": "MUSTARD KACCHI GHANI",
       "ltrs": {
-       "deliver": 44397.0,
-       "order": 44532.0,
-       "return": 1904.0
+       "deliver": 47576.0,
+       "order": 47652.0,
+       "return": 2065.0
       },
       "quantity": {
-       "deliver": 31313.0,
-       "order": 31820.0,
-       "return": 1000.0
+       "deliver": 33380.0,
+       "order": 33884.0,
+       "return": 1089.0
       },
       "sub_category": "MUSTARD KACCHI GHANI",
       "values": {
-       "deliver": 7682717.149913651,
-       "order": 7693019.65,
-       "return": 340767.73798663705
+       "deliver": 8247573.38173031,
+       "order": 8246418.22,
+       "return": 369813.1356262994
       }
      },
      {
       "label": "RICE BRAN",
       "ltrs": {
-       "deliver": 11103.0,
-       "order": 11159.0,
-       "return": 645.0
+       "deliver": 12045.0,
+       "order": 11974.0,
+       "return": 719.0
       },
       "quantity": {
-       "deliver": 5939.0,
-       "order": 5959.0,
-       "return": 261.0
+       "deliver": 6465.0,
+       "order": 6438.0,
+       "return": 279.0
       },
       "sub_category": "RICE BRAN",
       "values": {
-       "deliver": 1979907.179383453,
-       "order": 1990017.18,
-       "return": 114490.59804820447
+       "deliver": 2148378.2739654933,
+       "order": 2135972.03,
+       "return": 127558.58443926404
       }
      },
      {
       "label": "GOLD",
       "ltrs": {
-       "deliver": 6708.0,
-       "order": 6533.0,
-       "return": 650.0
+       "deliver": 7015.0,
+       "order": 6770.0,
+       "return": 700.0
       },
       "quantity": {
-       "deliver": 3912.0,
-       "order": 3865.0,
-       "return": 350.0
+       "deliver": 4063.0,
+       "order": 3994.0,
+       "return": 364.0
       },
       "sub_category": "GOLD",
       "values": {
-       "deliver": 1151380.3807019615,
-       "order": 1120406.59,
-       "return": 112062.21874135634
+       "deliver": 1205905.0216240939,
+       "order": 1162563.8,
+       "return": 121028.72494489564
       }
      },
      {
       "label": "SOYABEAN",
       "ltrs": {
-       "deliver": 605.0,
-       "order": 656.0,
+       "deliver": 646.0,
+       "order": 682.0,
        "return": 135.0
       },
       "quantity": {
-       "deliver": 421.0,
-       "order": 404.0,
+       "deliver": 458.0,
+       "order": 454.0,
        "return": 71.0
       },
       "sub_category": "SOYABEAN",
       "values": {
-       "deliver": 115404.30928523639,
-       "order": 124477.25,
-       "return": 25521.513491079393
+       "deliver": 123117.18306441119,
+       "order": 129583.19,
+       "return": 25476.719402732597
       }
      }
     ]
@@ -5413,191 +5413,210 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "GROUNDNUT",
       "ltrs": {
-       "deliver": 45911.0,
-       "order": 48223.0,
-       "return": 2105.0
+       "deliver": 50064.0,
+       "order": 52028.0,
+       "return": 2262.0
       },
       "quantity": {
-       "deliver": 26143.0,
-       "order": 26580.0,
-       "return": 1269.0
+       "deliver": 28112.0,
+       "order": 28598.0,
+       "return": 1342.0
       },
       "sub_category": "GROUNDNUT",
       "values": {
-       "deliver": 8646816.547163673,
-       "order": 9093919.22,
-       "return": 395611.9379388524
+       "deliver": 9430121.848713726,
+       "order": 9808031.06,
+       "return": 425234.7816441529
       }
      },
      {
       "label": "CANOLA",
       "ltrs": {
-       "deliver": 24015.0,
-       "order": 24069.0,
-       "return": 638.0
+       "deliver": 26037.0,
+       "order": 25931.0,
+       "return": 705.0
       },
       "quantity": {
-       "deliver": 9853.0,
-       "order": 9888.0,
-       "return": 210.0
+       "deliver": 10669.0,
+       "order": 10641.0,
+       "return": 233.0
       },
       "sub_category": "CANOLA",
       "values": {
-       "deliver": 5707624.176167866,
-       "order": 5720440.17,
-       "return": 151530.94262264099
+       "deliver": 6185219.753527204,
+       "order": 6159996.12,
+       "return": 167400.7186607433
       }
      },
      {
       "label": "JIVO POMACE",
       "ltrs": {
-       "deliver": 17117.0,
-       "order": 17125.0,
-       "return": 568.0
+       "deliver": 18501.0,
+       "order": 18361.0,
+       "return": 613.0
       },
       "quantity": {
-       "deliver": 9655.0,
-       "order": 9617.0,
-       "return": 293.0
+       "deliver": 10443.0,
+       "order": 10384.0,
+       "return": 314.0
       },
       "sub_category": "JIVO POMACE",
       "values": {
-       "deliver": 6453385.886357942,
-       "order": 6457006.9,
-       "return": 214968.11552520725
+       "deliver": 6980268.212792831,
+       "order": 6926525.17,
+       "return": 232275.75345935344
       }
      },
      {
       "label": "EXTRA LIGHT",
       "ltrs": {
-       "deliver": 12357.5,
-       "order": 12329.0,
-       "return": 306.0
+       "deliver": 13417.0,
+       "order": 13234.5,
+       "return": 330.0
       },
       "quantity": {
-       "deliver": 7234.0,
-       "order": 7289.0,
-       "return": 150.0
+       "deliver": 7855.0,
+       "order": 7830.0,
+       "return": 163.0
       },
       "sub_category": "EXTRA LIGHT",
       "values": {
-       "deliver": 6337668.106056055,
-       "order": 6316764.89,
-       "return": 157935.5295215621
+       "deliver": 6891919.810781206,
+       "order": 6790715.33,
+       "return": 170606.8508368226
       }
      },
      {
       "label": "EXTRA VIRGIN",
       "ltrs": {
-       "deliver": 2212.9,
-       "order": 2214.7,
-       "return": 52.4
+       "deliver": 2470.9,
+       "order": 2471.4,
+       "return": 59.4
       },
       "quantity": {
-       "deliver": 2120.0,
-       "order": 2080.0,
-       "return": 54.0
+       "deliver": 2311.0,
+       "order": 2278.0,
+       "return": 57.0
       },
       "sub_category": "EXTRA VIRGIN",
       "values": {
-       "deliver": 1650672.4227859224,
-       "order": 1650985.33,
-       "return": 39233.839324644134
+       "deliver": 1839471.546559778,
+       "order": 1838428.56,
+       "return": 44253.10875984214
       }
      },
      {
       "label": "YELLOW MUSTARD",
       "ltrs": {
-       "deliver": 1989.0,
-       "order": 2004.0,
+       "deliver": 2111.0,
+       "order": 2109.0,
        "return": 97.0
       },
       "quantity": {
-       "deliver": 1065.0,
-       "order": 1080.0,
+       "deliver": 1115.0,
+       "order": 1121.0,
        "return": 49.0
       },
       "sub_category": "YELLOW MUSTARD",
       "values": {
-       "deliver": 481862.1900706714,
-       "order": 485421.18,
-       "return": 23531.171695807137
+       "deliver": 512358.8472469636,
+       "order": 511800.25,
+       "return": 23565.947955465588
       }
      },
      {
       "label": "SO OLIVE",
       "ltrs": {
-       "deliver": 1235.0,
-       "order": 1192.0,
-       "return": 96.0
+       "deliver": 1346.0,
+       "order": 1287.0,
+       "return": 97.0
       },
       "quantity": {
-       "deliver": 783.0,
-       "order": 764.0,
-       "return": 36.0
+       "deliver": 858.0,
+       "order": 823.0,
+       "return": 37.0
       },
       "sub_category": "SO OLIVE",
       "values": {
-       "deliver": 322444.9416503791,
-       "order": 311151.62,
-       "return": 25264.652816967526
+       "deliver": 352041.8138523631,
+       "order": 336591.6,
+       "return": 25550.475345193387
       }
      },
      {
       "label": "SANO POMACE",
       "ltrs": {
-       "deliver": 1226.0,
-       "order": 1174.0,
+       "deliver": 1307.0,
+       "order": 1264.0,
        "return": 81.0
       },
       "quantity": {
-       "deliver": 898.0,
-       "order": 866.0,
+       "deliver": 959.0,
+       "order": 928.0,
        "return": 29.0
       },
       "sub_category": "SANO POMACE",
       "values": {
-       "deliver": 458018.7261754975,
-       "order": 438715.22,
-       "return": 29647.544809145227
+       "deliver": 487484.64069058903,
+       "order": 471459.9,
+       "return": 29471.527605506657
       }
      },
      {
       "label": "COCONUT",
       "ltrs": {
-       "deliver": 752.0,
-       "order": 735.0,
-       "return": 13.5
+       "deliver": 800.0,
+       "order": 784.5,
+       "return": 15.0
       },
       "quantity": {
-       "deliver": 1107.0,
-       "order": 1082.0,
-       "return": 21.0
+       "deliver": 1180.0,
+       "order": 1154.0,
+       "return": 24.0
       },
       "sub_category": "COCONUT",
       "values": {
-       "deliver": 388776.02681912715,
-       "order": 379987.17,
-       "return": 6977.703619091476
+       "deliver": 414287.76066387334,
+       "order": 406261.53,
+       "return": 7767.5401146453205
       }
      },
      {
       "label": "SESAME OIL",
       "ltrs": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "quantity": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "sub_category": "SESAME OIL",
       "values": {
-       "deliver": 136974.21645833334,
-       "order": 138578.13,
-       "return": 4170.175208333333
+       "deliver": 159355.9635381356,
+       "order": 151340.07,
+       "return": 4168.264639830509
+      }
+     },
+     {
+      "label": "A2 GHEE",
+      "ltrs": {
+       "deliver": 1.0,
+       "order": 2.0,
+       "return": 0.0
+      },
+      "quantity": {
+       "deliver": 2.0,
+       "order": 4.0,
+       "return": 0.0
+      },
+      "sub_category": "A2 GHEE",
+      "values": {
+       "deliver": 1407.63,
+       "order": 2815.26,
+       "return": 0.0
       }
      },
      {
@@ -5616,25 +5635,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "values": {
        "deliver": 849.52,
        "order": 849.52,
-       "return": 0.0
-      }
-     },
-     {
-      "label": "A2 GHEE",
-      "ltrs": {
-       "deliver": 0.5,
-       "order": 1.0,
-       "return": 0.0
-      },
-      "quantity": {
-       "deliver": 1.0,
-       "order": 2.0,
-       "return": 0.0
-      },
-      "sub_category": "A2 GHEE",
-      "values": {
-       "deliver": 732.39,
-       "order": 1464.78,
        "return": 0.0
       }
      }
@@ -5643,191 +5643,210 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "GROUNDNUT",
       "ltrs": {
-       "deliver": 45911.0,
-       "order": 48223.0,
-       "return": 2105.0
+       "deliver": 50064.0,
+       "order": 52028.0,
+       "return": 2262.0
       },
       "quantity": {
-       "deliver": 26143.0,
-       "order": 26580.0,
-       "return": 1269.0
+       "deliver": 28112.0,
+       "order": 28598.0,
+       "return": 1342.0
       },
       "sub_category": "GROUNDNUT",
       "values": {
-       "deliver": 8646816.547163673,
-       "order": 9093919.22,
-       "return": 395611.9379388524
+       "deliver": 9430121.848713726,
+       "order": 9808031.06,
+       "return": 425234.7816441529
       }
      },
      {
       "label": "CANOLA",
       "ltrs": {
-       "deliver": 24015.0,
-       "order": 24069.0,
-       "return": 638.0
+       "deliver": 26037.0,
+       "order": 25931.0,
+       "return": 705.0
       },
       "quantity": {
-       "deliver": 9853.0,
-       "order": 9888.0,
-       "return": 210.0
+       "deliver": 10669.0,
+       "order": 10641.0,
+       "return": 233.0
       },
       "sub_category": "CANOLA",
       "values": {
-       "deliver": 5707624.176167866,
-       "order": 5720440.17,
-       "return": 151530.94262264099
+       "deliver": 6185219.753527204,
+       "order": 6159996.12,
+       "return": 167400.7186607433
       }
      },
      {
       "label": "JIVO POMACE",
       "ltrs": {
-       "deliver": 17117.0,
-       "order": 17125.0,
-       "return": 568.0
+       "deliver": 18501.0,
+       "order": 18361.0,
+       "return": 613.0
       },
       "quantity": {
-       "deliver": 9655.0,
-       "order": 9617.0,
-       "return": 293.0
+       "deliver": 10443.0,
+       "order": 10384.0,
+       "return": 314.0
       },
       "sub_category": "JIVO POMACE",
       "values": {
-       "deliver": 6453385.886357942,
-       "order": 6457006.9,
-       "return": 214968.11552520725
+       "deliver": 6980268.212792831,
+       "order": 6926525.17,
+       "return": 232275.75345935344
       }
      },
      {
       "label": "EXTRA LIGHT",
       "ltrs": {
-       "deliver": 12357.5,
-       "order": 12329.0,
-       "return": 306.0
+       "deliver": 13417.0,
+       "order": 13234.5,
+       "return": 330.0
       },
       "quantity": {
-       "deliver": 7234.0,
-       "order": 7289.0,
-       "return": 150.0
+       "deliver": 7855.0,
+       "order": 7830.0,
+       "return": 163.0
       },
       "sub_category": "EXTRA LIGHT",
       "values": {
-       "deliver": 6337668.106056055,
-       "order": 6316764.89,
-       "return": 157935.5295215621
+       "deliver": 6891919.810781206,
+       "order": 6790715.33,
+       "return": 170606.8508368226
       }
      },
      {
       "label": "EXTRA VIRGIN",
       "ltrs": {
-       "deliver": 2212.9,
-       "order": 2214.7,
-       "return": 52.4
+       "deliver": 2470.9,
+       "order": 2471.4,
+       "return": 59.4
       },
       "quantity": {
-       "deliver": 2120.0,
-       "order": 2080.0,
-       "return": 54.0
+       "deliver": 2311.0,
+       "order": 2278.0,
+       "return": 57.0
       },
       "sub_category": "EXTRA VIRGIN",
       "values": {
-       "deliver": 1650672.4227859224,
-       "order": 1650985.33,
-       "return": 39233.839324644134
+       "deliver": 1839471.546559778,
+       "order": 1838428.56,
+       "return": 44253.10875984214
       }
      },
      {
       "label": "COCONUT",
       "ltrs": {
-       "deliver": 752.0,
-       "order": 735.0,
-       "return": 13.5
+       "deliver": 800.0,
+       "order": 784.5,
+       "return": 15.0
       },
       "quantity": {
-       "deliver": 1107.0,
-       "order": 1082.0,
-       "return": 21.0
+       "deliver": 1180.0,
+       "order": 1154.0,
+       "return": 24.0
       },
       "sub_category": "COCONUT",
       "values": {
-       "deliver": 388776.02681912715,
-       "order": 379987.17,
-       "return": 6977.703619091476
+       "deliver": 414287.76066387334,
+       "order": 406261.53,
+       "return": 7767.5401146453205
       }
      },
      {
       "label": "YELLOW MUSTARD",
       "ltrs": {
-       "deliver": 1989.0,
-       "order": 2004.0,
+       "deliver": 2111.0,
+       "order": 2109.0,
        "return": 97.0
       },
       "quantity": {
-       "deliver": 1065.0,
-       "order": 1080.0,
+       "deliver": 1115.0,
+       "order": 1121.0,
        "return": 49.0
       },
       "sub_category": "YELLOW MUSTARD",
       "values": {
-       "deliver": 481862.1900706714,
-       "order": 485421.18,
-       "return": 23531.171695807137
+       "deliver": 512358.8472469636,
+       "order": 511800.25,
+       "return": 23565.947955465588
       }
      },
      {
       "label": "SANO POMACE",
       "ltrs": {
-       "deliver": 1226.0,
-       "order": 1174.0,
+       "deliver": 1307.0,
+       "order": 1264.0,
        "return": 81.0
       },
       "quantity": {
-       "deliver": 898.0,
-       "order": 866.0,
+       "deliver": 959.0,
+       "order": 928.0,
        "return": 29.0
       },
       "sub_category": "SANO POMACE",
       "values": {
-       "deliver": 458018.7261754975,
-       "order": 438715.22,
-       "return": 29647.544809145227
+       "deliver": 487484.64069058903,
+       "order": 471459.9,
+       "return": 29471.527605506657
       }
      },
      {
       "label": "SO OLIVE",
       "ltrs": {
-       "deliver": 1235.0,
-       "order": 1192.0,
-       "return": 96.0
+       "deliver": 1346.0,
+       "order": 1287.0,
+       "return": 97.0
       },
       "quantity": {
-       "deliver": 783.0,
-       "order": 764.0,
-       "return": 36.0
+       "deliver": 858.0,
+       "order": 823.0,
+       "return": 37.0
       },
       "sub_category": "SO OLIVE",
       "values": {
-       "deliver": 322444.9416503791,
-       "order": 311151.62,
-       "return": 25264.652816967526
+       "deliver": 352041.8138523631,
+       "order": 336591.6,
+       "return": 25550.475345193387
       }
      },
      {
       "label": "SESAME OIL",
       "ltrs": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "quantity": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "sub_category": "SESAME OIL",
       "values": {
-       "deliver": 136974.21645833334,
-       "order": 138578.13,
-       "return": 4170.175208333333
+       "deliver": 159355.9635381356,
+       "order": 151340.07,
+       "return": 4168.264639830509
+      }
+     },
+     {
+      "label": "A2 GHEE",
+      "ltrs": {
+       "deliver": 1.0,
+       "order": 2.0,
+       "return": 0.0
+      },
+      "quantity": {
+       "deliver": 2.0,
+       "order": 4.0,
+       "return": 0.0
+      },
+      "sub_category": "A2 GHEE",
+      "values": {
+       "deliver": 1407.63,
+       "order": 2815.26,
+       "return": 0.0
       }
      },
      {
@@ -5846,25 +5865,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "values": {
        "deliver": 849.52,
        "order": 849.52,
-       "return": 0.0
-      }
-     },
-     {
-      "label": "A2 GHEE",
-      "ltrs": {
-       "deliver": 0.5,
-       "order": 1.0,
-       "return": 0.0
-      },
-      "quantity": {
-       "deliver": 1.0,
-       "order": 2.0,
-       "return": 0.0
-      },
-      "sub_category": "A2 GHEE",
-      "values": {
-       "deliver": 732.39,
-       "order": 1464.78,
        "return": 0.0
       }
      }
@@ -5873,191 +5873,210 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "GROUNDNUT",
       "ltrs": {
-       "deliver": 45911.0,
-       "order": 48223.0,
-       "return": 2105.0
+       "deliver": 50064.0,
+       "order": 52028.0,
+       "return": 2262.0
       },
       "quantity": {
-       "deliver": 26143.0,
-       "order": 26580.0,
-       "return": 1269.0
+       "deliver": 28112.0,
+       "order": 28598.0,
+       "return": 1342.0
       },
       "sub_category": "GROUNDNUT",
       "values": {
-       "deliver": 8646816.547163673,
-       "order": 9093919.22,
-       "return": 395611.9379388524
+       "deliver": 9430121.848713726,
+       "order": 9808031.06,
+       "return": 425234.7816441529
       }
      },
      {
       "label": "JIVO POMACE",
       "ltrs": {
-       "deliver": 17117.0,
-       "order": 17125.0,
-       "return": 568.0
+       "deliver": 18501.0,
+       "order": 18361.0,
+       "return": 613.0
       },
       "quantity": {
-       "deliver": 9655.0,
-       "order": 9617.0,
-       "return": 293.0
+       "deliver": 10443.0,
+       "order": 10384.0,
+       "return": 314.0
       },
       "sub_category": "JIVO POMACE",
       "values": {
-       "deliver": 6453385.886357942,
-       "order": 6457006.9,
-       "return": 214968.11552520725
+       "deliver": 6980268.212792831,
+       "order": 6926525.17,
+       "return": 232275.75345935344
       }
      },
      {
       "label": "EXTRA LIGHT",
       "ltrs": {
-       "deliver": 12357.5,
-       "order": 12329.0,
-       "return": 306.0
+       "deliver": 13417.0,
+       "order": 13234.5,
+       "return": 330.0
       },
       "quantity": {
-       "deliver": 7234.0,
-       "order": 7289.0,
-       "return": 150.0
+       "deliver": 7855.0,
+       "order": 7830.0,
+       "return": 163.0
       },
       "sub_category": "EXTRA LIGHT",
       "values": {
-       "deliver": 6337668.106056055,
-       "order": 6316764.89,
-       "return": 157935.5295215621
+       "deliver": 6891919.810781206,
+       "order": 6790715.33,
+       "return": 170606.8508368226
       }
      },
      {
       "label": "CANOLA",
       "ltrs": {
-       "deliver": 24015.0,
-       "order": 24069.0,
-       "return": 638.0
+       "deliver": 26037.0,
+       "order": 25931.0,
+       "return": 705.0
       },
       "quantity": {
-       "deliver": 9853.0,
-       "order": 9888.0,
-       "return": 210.0
+       "deliver": 10669.0,
+       "order": 10641.0,
+       "return": 233.0
       },
       "sub_category": "CANOLA",
       "values": {
-       "deliver": 5707624.176167866,
-       "order": 5720440.17,
-       "return": 151530.94262264099
+       "deliver": 6185219.753527204,
+       "order": 6159996.12,
+       "return": 167400.7186607433
       }
      },
      {
       "label": "EXTRA VIRGIN",
       "ltrs": {
-       "deliver": 2212.9,
-       "order": 2214.7,
-       "return": 52.4
+       "deliver": 2470.9,
+       "order": 2471.4,
+       "return": 59.4
       },
       "quantity": {
-       "deliver": 2120.0,
-       "order": 2080.0,
-       "return": 54.0
+       "deliver": 2311.0,
+       "order": 2278.0,
+       "return": 57.0
       },
       "sub_category": "EXTRA VIRGIN",
       "values": {
-       "deliver": 1650672.4227859224,
-       "order": 1650985.33,
-       "return": 39233.839324644134
+       "deliver": 1839471.546559778,
+       "order": 1838428.56,
+       "return": 44253.10875984214
       }
      },
      {
       "label": "YELLOW MUSTARD",
       "ltrs": {
-       "deliver": 1989.0,
-       "order": 2004.0,
+       "deliver": 2111.0,
+       "order": 2109.0,
        "return": 97.0
       },
       "quantity": {
-       "deliver": 1065.0,
-       "order": 1080.0,
+       "deliver": 1115.0,
+       "order": 1121.0,
        "return": 49.0
       },
       "sub_category": "YELLOW MUSTARD",
       "values": {
-       "deliver": 481862.1900706714,
-       "order": 485421.18,
-       "return": 23531.171695807137
+       "deliver": 512358.8472469636,
+       "order": 511800.25,
+       "return": 23565.947955465588
       }
      },
      {
       "label": "SANO POMACE",
       "ltrs": {
-       "deliver": 1226.0,
-       "order": 1174.0,
+       "deliver": 1307.0,
+       "order": 1264.0,
        "return": 81.0
       },
       "quantity": {
-       "deliver": 898.0,
-       "order": 866.0,
+       "deliver": 959.0,
+       "order": 928.0,
        "return": 29.0
       },
       "sub_category": "SANO POMACE",
       "values": {
-       "deliver": 458018.7261754975,
-       "order": 438715.22,
-       "return": 29647.544809145227
+       "deliver": 487484.64069058903,
+       "order": 471459.9,
+       "return": 29471.527605506657
       }
      },
      {
       "label": "COCONUT",
       "ltrs": {
-       "deliver": 752.0,
-       "order": 735.0,
-       "return": 13.5
+       "deliver": 800.0,
+       "order": 784.5,
+       "return": 15.0
       },
       "quantity": {
-       "deliver": 1107.0,
-       "order": 1082.0,
-       "return": 21.0
+       "deliver": 1180.0,
+       "order": 1154.0,
+       "return": 24.0
       },
       "sub_category": "COCONUT",
       "values": {
-       "deliver": 388776.02681912715,
-       "order": 379987.17,
-       "return": 6977.703619091476
+       "deliver": 414287.76066387334,
+       "order": 406261.53,
+       "return": 7767.5401146453205
       }
      },
      {
       "label": "SO OLIVE",
       "ltrs": {
-       "deliver": 1235.0,
-       "order": 1192.0,
-       "return": 96.0
+       "deliver": 1346.0,
+       "order": 1287.0,
+       "return": 97.0
       },
       "quantity": {
-       "deliver": 783.0,
-       "order": 764.0,
-       "return": 36.0
+       "deliver": 858.0,
+       "order": 823.0,
+       "return": 37.0
       },
       "sub_category": "SO OLIVE",
       "values": {
-       "deliver": 322444.9416503791,
-       "order": 311151.62,
-       "return": 25264.652816967526
+       "deliver": 352041.8138523631,
+       "order": 336591.6,
+       "return": 25550.475345193387
       }
      },
      {
       "label": "SESAME OIL",
       "ltrs": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "quantity": {
-       "deliver": 427.0,
-       "order": 432.0,
+       "deliver": 497.0,
+       "order": 472.0,
        "return": 13.0
       },
       "sub_category": "SESAME OIL",
       "values": {
-       "deliver": 136974.21645833334,
-       "order": 138578.13,
-       "return": 4170.175208333333
+       "deliver": 159355.9635381356,
+       "order": 151340.07,
+       "return": 4168.264639830509
+      }
+     },
+     {
+      "label": "A2 GHEE",
+      "ltrs": {
+       "deliver": 1.0,
+       "order": 2.0,
+       "return": 0.0
+      },
+      "quantity": {
+       "deliver": 2.0,
+       "order": 4.0,
+       "return": 0.0
+      },
+      "sub_category": "A2 GHEE",
+      "values": {
+       "deliver": 1407.63,
+       "order": 2815.26,
+       "return": 0.0
       }
      },
      {
@@ -6076,25 +6095,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "values": {
        "deliver": 849.52,
        "order": 849.52,
-       "return": 0.0
-      }
-     },
-     {
-      "label": "A2 GHEE",
-      "ltrs": {
-       "deliver": 0.5,
-       "order": 1.0,
-       "return": 0.0
-      },
-      "quantity": {
-       "deliver": 1.0,
-       "order": 2.0,
-       "return": 0.0
-      },
-      "sub_category": "A2 GHEE",
-      "values": {
-       "deliver": 732.39,
-       "order": 1464.78,
        "return": 0.0
       }
      }
@@ -6108,190 +6108,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B0991VMDB1",
       "label": "SUNFLOWER 5 LTR",
       "ltrs": {
-       "deliver": 27970.0,
-       "order": 26975.0,
-       "return": 1610.0
+       "deliver": 30390.0,
+       "order": 29250.0,
+       "return": 1635.0
       },
       "quantity": {
-       "deliver": 5594.0,
-       "order": 5395.0,
-       "return": 322.0
+       "deliver": 6078.0,
+       "order": 5850.0,
+       "return": 327.0
       },
       "values": {
-       "deliver": 5310635.872971269,
-       "order": 5121716.22,
-       "return": 305689.08671733085
+       "deliver": 5733394.293723077,
+       "order": 5518321.26,
+       "return": 308460.0088923077
       }
      },
      {
       "asin": "B09NYCSQLF",
       "label": "MUSTARD KACCHI GHANI 1 LTR",
       "ltrs": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "quantity": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "values": {
-       "deliver": 4576763.755121695,
-       "order": 4675831.45,
-       "return": 122974.94025389598
-      }
-     },
-     {
-      "asin": "B0B4SJTNF2",
-      "label": "SUNFLOWER 1 LTR",
-      "ltrs": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
-      },
-      "quantity": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
-      },
-      "values": {
-       "deliver": 4176809.544797525,
-       "order": 4261083.34,
-       "return": 81269.97675961463
+       "deliver": 4874507.721161005,
+       "order": 4975650.15,
+       "return": 134747.28769149672
       }
      },
      {
       "asin": "B0CKFFGC31",
       "label": "GROUNDNUT 5 LTR",
       "ltrs": {
-       "deliver": 24710.0,
-       "order": 27050.0,
-       "return": 1045.0
+       "deliver": 27440.0,
+       "order": 29285.0,
+       "return": 1150.0
       },
       "quantity": {
-       "deliver": 4942.0,
-       "order": 5410.0,
-       "return": 209.0
+       "deliver": 5488.0,
+       "order": 5857.0,
+       "return": 230.0
       },
       "values": {
-       "deliver": 4762963.379844732,
-       "order": 5214008.88,
-       "return": 201428.43917190388
+       "deliver": 5284430.24374253,
+       "order": 5639742.7,
+       "return": 221468.46866996755
+      }
+     },
+     {
+      "asin": "B0B4SJTNF2",
+      "label": "SUNFLOWER 1 LTR",
+      "ltrs": {
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
+      },
+      "quantity": {
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
+      },
+      "values": {
+       "deliver": 4544704.550858172,
+       "order": 4681057.37,
+       "return": 97800.18606745578
       }
      },
      {
       "asin": "B0CKFFW9B6",
       "label": "GROUNDNUT 1 LTR",
       "ltrs": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "quantity": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "values": {
-       "deliver": 3883853.1673189397,
-       "order": 3877624.64,
-       "return": 194183.49876694856
+       "deliver": 4145691.6049711946,
+       "order": 4166764.56,
+       "return": 203766.31297418533
       }
      },
      {
       "asin": "B077ZN4G28",
       "label": "CANOLA 5 LTR",
       "ltrs": {
-       "deliver": 16655.0,
-       "order": 16675.0,
-       "return": 500.0
+       "deliver": 18015.0,
+       "order": 17930.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 3331.0,
-       "order": 3335.0,
-       "return": 100.0
+       "deliver": 3603.0,
+       "order": 3586.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 3957633.942527736,
-       "order": 3962386.43,
-       "return": 118812.1868065967
+       "deliver": 4281351.609829894,
+       "order": 4261150.95,
+       "return": 130710.1518404908
       }
      },
      {
       "asin": "B091XPD9J3",
       "label": "MUSTARD KACCHI GHANI 5 LTR",
       "ltrs": {
-       "deliver": 16355.0,
-       "order": 15890.0,
-       "return": 1130.0
+       "deliver": 17745.0,
+       "order": 17210.0,
+       "return": 1220.0
       },
       "quantity": {
-       "deliver": 3271.0,
-       "order": 3178.0,
-       "return": 226.0
+       "deliver": 3549.0,
+       "order": 3442.0,
+       "return": 244.0
       },
       "values": {
-       "deliver": 3088276.2070012586,
-       "order": 3000471.35,
-       "return": 213375.24389553178
+       "deliver": 3354817.712614759,
+       "order": 3253672.18,
+       "return": 230649.6257757118
       }
      },
      {
       "asin": "B07X53ZL6J",
       "label": "JIVO POMACE 5 LTR",
       "ltrs": {
-       "deliver": 8960.0,
-       "order": 9025.0,
-       "return": 330.0
+       "deliver": 9665.0,
+       "order": 9580.0,
+       "return": 360.0
       },
       "quantity": {
-       "deliver": 1792.0,
-       "order": 1805.0,
-       "return": 66.0
+       "deliver": 1933.0,
+       "order": 1916.0,
+       "return": 72.0
       },
       "values": {
-       "deliver": 3461724.5330083105,
-       "order": 3486837.49,
-       "return": 127496.55088088643
+       "deliver": 3741893.914164927,
+       "order": 3708985.38,
+       "return": 139377.3211691023
       }
      },
      {
       "asin": "B0821DNF2W",
       "label": "JIVO POMACE 1 LTR",
       "ltrs": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "quantity": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "values": {
-       "deliver": 2786514.4058637503,
-       "order": 2770451.7,
-       "return": 79583.406324944
+       "deliver": 3013493.4913355205,
+       "order": 3002183.77,
+       "return": 85005.32487665572
       }
      },
      {
       "asin": "B0DBJ13FKL",
       "label": "RICE BRAN 5 LTR",
       "ltrs": {
-       "deliver": 6455.0,
-       "order": 6500.0,
-       "return": 480.0
+       "deliver": 6975.0,
+       "order": 6920.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 1291.0,
-       "order": 1300.0,
-       "return": 96.0
+       "deliver": 1395.0,
+       "order": 1384.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 1137507.0912615384,
-       "order": 1145437.04,
-       "return": 84586.11987692308
+       "deliver": 1229049.3787933525,
+       "order": 1219357.95,
+       "return": 96914.28793352601
       }
      }
     ],
@@ -6300,190 +6300,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B09NYCSQLF",
       "label": "MUSTARD KACCHI GHANI 1 LTR",
       "ltrs": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "quantity": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "values": {
-       "deliver": 4576763.755121695,
-       "order": 4675831.45,
-       "return": 122974.94025389598
+       "deliver": 4874507.721161005,
+       "order": 4975650.15,
+       "return": 134747.28769149672
       }
      },
      {
       "asin": "B0B4SJTNF2",
       "label": "SUNFLOWER 1 LTR",
       "ltrs": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "quantity": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "values": {
-       "deliver": 4176809.544797525,
-       "order": 4261083.34,
-       "return": 81269.97675961463
+       "deliver": 4544704.550858172,
+       "order": 4681057.37,
+       "return": 97800.18606745578
       }
      },
      {
       "asin": "B0CKFFW9B6",
       "label": "GROUNDNUT 1 LTR",
       "ltrs": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "quantity": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "values": {
-       "deliver": 3883853.1673189397,
-       "order": 3877624.64,
-       "return": 194183.49876694856
+       "deliver": 4145691.6049711946,
+       "order": 4166764.56,
+       "return": 203766.31297418533
       }
      },
      {
       "asin": "B0821DNF2W",
       "label": "JIVO POMACE 1 LTR",
       "ltrs": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "quantity": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "values": {
-       "deliver": 2786514.4058637503,
-       "order": 2770451.7,
-       "return": 79583.406324944
+       "deliver": 3013493.4913355205,
+       "order": 3002183.77,
+       "return": 85005.32487665572
       }
      },
      {
       "asin": "B0991VMDB1",
       "label": "SUNFLOWER 5 LTR",
       "ltrs": {
-       "deliver": 27970.0,
-       "order": 26975.0,
-       "return": 1610.0
+       "deliver": 30390.0,
+       "order": 29250.0,
+       "return": 1635.0
       },
       "quantity": {
-       "deliver": 5594.0,
-       "order": 5395.0,
-       "return": 322.0
+       "deliver": 6078.0,
+       "order": 5850.0,
+       "return": 327.0
       },
       "values": {
-       "deliver": 5310635.872971269,
-       "order": 5121716.22,
-       "return": 305689.08671733085
+       "deliver": 5733394.293723077,
+       "order": 5518321.26,
+       "return": 308460.0088923077
       }
      },
      {
       "asin": "B09MJ6QDX7",
       "label": "CANOLA 1 LTR",
       "ltrs": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "quantity": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "values": {
-       "deliver": 1315179.788216915,
-       "order": 1327335.31,
-       "return": 19544.172278685583
+       "deliver": 1413046.4002583893,
+       "order": 1418042.86,
+       "return": 21175.472238255035
       }
      },
      {
       "asin": "B0CKFFGC31",
       "label": "GROUNDNUT 5 LTR",
       "ltrs": {
-       "deliver": 24710.0,
-       "order": 27050.0,
-       "return": 1045.0
+       "deliver": 27440.0,
+       "order": 29285.0,
+       "return": 1150.0
       },
       "quantity": {
-       "deliver": 4942.0,
-       "order": 5410.0,
-       "return": 209.0
+       "deliver": 5488.0,
+       "order": 5857.0,
+       "return": 230.0
       },
       "values": {
-       "deliver": 4762963.379844732,
-       "order": 5214008.88,
-       "return": 201428.43917190388
+       "deliver": 5284430.24374253,
+       "order": 5639742.7,
+       "return": 221468.46866996755
       }
      },
      {
       "asin": "B0DBHQ2QWW",
       "label": "RICE BRAN 1 LTR",
       "ltrs": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "quantity": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "values": {
-       "deliver": 842400.0881219145,
-       "order": 844393.72,
-       "return": 29904.47817128139
+       "deliver": 919328.8951721409,
+       "order": 916427.66,
+       "return": 30644.296505738028
       }
      },
      {
       "asin": "B09HZY97FR",
       "label": "EXTRA LIGHT 1 LTR",
       "ltrs": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "quantity": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "values": {
-       "deliver": 2043531.514665757,
-       "order": 2102327.86,
-       "return": 36807.468217371534
+       "deliver": 2222694.6958174906,
+       "order": 2262846.6,
+       "return": 39673.90532319392
       }
      },
      {
       "asin": "B077ZN4G28",
       "label": "CANOLA 5 LTR",
       "ltrs": {
-       "deliver": 16655.0,
-       "order": 16675.0,
-       "return": 500.0
+       "deliver": 18015.0,
+       "order": 17930.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 3331.0,
-       "order": 3335.0,
-       "return": 100.0
+       "deliver": 3603.0,
+       "order": 3586.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 3957633.942527736,
-       "order": 3962386.43,
-       "return": 118812.1868065967
+       "deliver": 4281351.609829894,
+       "order": 4261150.95,
+       "return": 130710.1518404908
       }
      }
     ],
@@ -6492,190 +6492,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B0991VMDB1",
       "label": "SUNFLOWER 5 LTR",
       "ltrs": {
-       "deliver": 27970.0,
-       "order": 26975.0,
-       "return": 1610.0
+       "deliver": 30390.0,
+       "order": 29250.0,
+       "return": 1635.0
       },
       "quantity": {
-       "deliver": 5594.0,
-       "order": 5395.0,
-       "return": 322.0
+       "deliver": 6078.0,
+       "order": 5850.0,
+       "return": 327.0
       },
       "values": {
-       "deliver": 5310635.872971269,
-       "order": 5121716.22,
-       "return": 305689.08671733085
+       "deliver": 5733394.293723077,
+       "order": 5518321.26,
+       "return": 308460.0088923077
       }
      },
      {
       "asin": "B0CKFFGC31",
       "label": "GROUNDNUT 5 LTR",
       "ltrs": {
-       "deliver": 24710.0,
-       "order": 27050.0,
-       "return": 1045.0
+       "deliver": 27440.0,
+       "order": 29285.0,
+       "return": 1150.0
       },
       "quantity": {
-       "deliver": 4942.0,
-       "order": 5410.0,
-       "return": 209.0
+       "deliver": 5488.0,
+       "order": 5857.0,
+       "return": 230.0
       },
       "values": {
-       "deliver": 4762963.379844732,
-       "order": 5214008.88,
-       "return": 201428.43917190388
+       "deliver": 5284430.24374253,
+       "order": 5639742.7,
+       "return": 221468.46866996755
       }
      },
      {
       "asin": "B09NYCSQLF",
       "label": "MUSTARD KACCHI GHANI 1 LTR",
       "ltrs": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "quantity": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "values": {
-       "deliver": 4576763.755121695,
-       "order": 4675831.45,
-       "return": 122974.94025389598
+       "deliver": 4874507.721161005,
+       "order": 4975650.15,
+       "return": 134747.28769149672
       }
      },
      {
       "asin": "B0B4SJTNF2",
       "label": "SUNFLOWER 1 LTR",
       "ltrs": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "quantity": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "values": {
-       "deliver": 4176809.544797525,
-       "order": 4261083.34,
-       "return": 81269.97675961463
+       "deliver": 4544704.550858172,
+       "order": 4681057.37,
+       "return": 97800.18606745578
       }
      },
      {
       "asin": "B077ZN4G28",
       "label": "CANOLA 5 LTR",
       "ltrs": {
-       "deliver": 16655.0,
-       "order": 16675.0,
-       "return": 500.0
+       "deliver": 18015.0,
+       "order": 17930.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 3331.0,
-       "order": 3335.0,
-       "return": 100.0
+       "deliver": 3603.0,
+       "order": 3586.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 3957633.942527736,
-       "order": 3962386.43,
-       "return": 118812.1868065967
+       "deliver": 4281351.609829894,
+       "order": 4261150.95,
+       "return": 130710.1518404908
       }
      },
      {
       "asin": "B0CKFFW9B6",
       "label": "GROUNDNUT 1 LTR",
       "ltrs": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "quantity": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "values": {
-       "deliver": 3883853.1673189397,
-       "order": 3877624.64,
-       "return": 194183.49876694856
+       "deliver": 4145691.6049711946,
+       "order": 4166764.56,
+       "return": 203766.31297418533
       }
      },
      {
       "asin": "B07X53ZL6J",
       "label": "JIVO POMACE 5 LTR",
       "ltrs": {
-       "deliver": 8960.0,
-       "order": 9025.0,
-       "return": 330.0
+       "deliver": 9665.0,
+       "order": 9580.0,
+       "return": 360.0
       },
       "quantity": {
-       "deliver": 1792.0,
-       "order": 1805.0,
-       "return": 66.0
+       "deliver": 1933.0,
+       "order": 1916.0,
+       "return": 72.0
       },
       "values": {
-       "deliver": 3461724.5330083105,
-       "order": 3486837.49,
-       "return": 127496.55088088643
+       "deliver": 3741893.914164927,
+       "order": 3708985.38,
+       "return": 139377.3211691023
       }
      },
      {
       "asin": "B091XPD9J3",
       "label": "MUSTARD KACCHI GHANI 5 LTR",
       "ltrs": {
-       "deliver": 16355.0,
-       "order": 15890.0,
-       "return": 1130.0
+       "deliver": 17745.0,
+       "order": 17210.0,
+       "return": 1220.0
       },
       "quantity": {
-       "deliver": 3271.0,
-       "order": 3178.0,
-       "return": 226.0
+       "deliver": 3549.0,
+       "order": 3442.0,
+       "return": 244.0
       },
       "values": {
-       "deliver": 3088276.2070012586,
-       "order": 3000471.35,
-       "return": 213375.24389553178
+       "deliver": 3354817.712614759,
+       "order": 3253672.18,
+       "return": 230649.6257757118
       }
      },
      {
       "asin": "B0821DNF2W",
       "label": "JIVO POMACE 1 LTR",
       "ltrs": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "quantity": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "values": {
-       "deliver": 2786514.4058637503,
-       "order": 2770451.7,
-       "return": 79583.406324944
+       "deliver": 3013493.4913355205,
+       "order": 3002183.77,
+       "return": 85005.32487665572
       }
      },
      {
       "asin": "B09NXCPZW1",
       "label": "EXTRA LIGHT 2 LTR",
       "ltrs": {
-       "deliver": 4246.0,
-       "order": 4144.0,
-       "return": 84.0
+       "deliver": 4584.0,
+       "order": 4418.0,
+       "return": 94.0
       },
       "quantity": {
-       "deliver": 2123.0,
-       "order": 2072.0,
-       "return": 42.0
+       "deliver": 2292.0,
+       "order": 2209.0,
+       "return": 47.0
       },
       "values": {
-       "deliver": 2265408.165757722,
-       "order": 2210987.15,
-       "return": 44817.307094594595
+       "deliver": 2449258.322172929,
+       "order": 2360563.54,
+       "return": 50224.756170212764
       }
      }
     ]
@@ -6686,190 +6686,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B0991VMDB1",
       "label": "SUNFLOWER 5 LTR",
       "ltrs": {
-       "deliver": 27970.0,
-       "order": 26975.0,
-       "return": 1610.0
+       "deliver": 30390.0,
+       "order": 29250.0,
+       "return": 1635.0
       },
       "quantity": {
-       "deliver": 5594.0,
-       "order": 5395.0,
-       "return": 322.0
+       "deliver": 6078.0,
+       "order": 5850.0,
+       "return": 327.0
       },
       "values": {
-       "deliver": 5310635.872971269,
-       "order": 5121716.22,
-       "return": 305689.08671733085
+       "deliver": 5733394.293723077,
+       "order": 5518321.26,
+       "return": 308460.0088923077
       }
      },
      {
       "asin": "B09NYCSQLF",
       "label": "MUSTARD KACCHI GHANI 1 LTR",
       "ltrs": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "quantity": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "values": {
-       "deliver": 4576763.755121695,
-       "order": 4675831.45,
-       "return": 122974.94025389598
+       "deliver": 4874507.721161005,
+       "order": 4975650.15,
+       "return": 134747.28769149672
       }
      },
      {
       "asin": "B0B4SJTNF2",
       "label": "SUNFLOWER 1 LTR",
       "ltrs": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "quantity": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "values": {
-       "deliver": 4176809.544797525,
-       "order": 4261083.34,
-       "return": 81269.97675961463
+       "deliver": 4544704.550858172,
+       "order": 4681057.37,
+       "return": 97800.18606745578
       }
      },
      {
       "asin": "B091XPD9J3",
       "label": "MUSTARD KACCHI GHANI 5 LTR",
       "ltrs": {
-       "deliver": 16355.0,
-       "order": 15890.0,
-       "return": 1130.0
+       "deliver": 17745.0,
+       "order": 17210.0,
+       "return": 1220.0
       },
       "quantity": {
-       "deliver": 3271.0,
-       "order": 3178.0,
-       "return": 226.0
+       "deliver": 3549.0,
+       "order": 3442.0,
+       "return": 244.0
       },
       "values": {
-       "deliver": 3088276.2070012586,
-       "order": 3000471.35,
-       "return": 213375.24389553178
+       "deliver": 3354817.712614759,
+       "order": 3253672.18,
+       "return": 230649.6257757118
       }
      },
      {
       "asin": "B0DBJ13FKL",
       "label": "RICE BRAN 5 LTR",
       "ltrs": {
-       "deliver": 6455.0,
-       "order": 6500.0,
-       "return": 480.0
+       "deliver": 6975.0,
+       "order": 6920.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 1291.0,
-       "order": 1300.0,
-       "return": 96.0
+       "deliver": 1395.0,
+       "order": 1384.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 1137507.0912615384,
-       "order": 1145437.04,
-       "return": 84586.11987692308
+       "deliver": 1229049.3787933525,
+       "order": 1219357.95,
+       "return": 96914.28793352601
       }
      },
      {
       "asin": "B0DBHQ2QWW",
       "label": "RICE BRAN 1 LTR",
       "ltrs": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "quantity": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "values": {
-       "deliver": 842400.0881219145,
-       "order": 844393.72,
-       "return": 29904.47817128139
+       "deliver": 919328.8951721409,
+       "order": 916427.66,
+       "return": 30644.296505738028
       }
      },
      {
       "asin": "B0C9Q1S6QG",
       "label": "GOLD 5 LTR",
       "ltrs": {
-       "deliver": 3495.0,
-       "order": 3335.0,
-       "return": 375.0
+       "deliver": 3690.0,
+       "order": 3470.0,
+       "return": 420.0
       },
       "quantity": {
-       "deliver": 699.0,
-       "order": 667.0,
-       "return": 75.0
+       "deliver": 738.0,
+       "order": 694.0,
+       "return": 84.0
       },
       "values": {
-       "deliver": 622666.3914242878,
-       "order": 594160.92,
-       "return": 66809.69865067466
+       "deliver": 657832.6870028819,
+       "order": 618612.31,
+       "return": 74875.26518731989
       }
      },
      {
       "asin": "B0CT5MYSDS",
       "label": "GOLD 1 LTR",
       "ltrs": {
-       "deliver": 3213.0,
-       "order": 3198.0,
-       "return": 275.0
+       "deliver": 3325.0,
+       "order": 3300.0,
+       "return": 280.0
       },
       "quantity": {
-       "deliver": 3213.0,
-       "order": 3198.0,
-       "return": 275.0
+       "deliver": 3325.0,
+       "order": 3300.0,
+       "return": 280.0
       },
       "values": {
-       "deliver": 528713.9892776735,
-       "order": 526245.67,
-       "return": 45252.520090681675
+       "deliver": 548072.3346212121,
+       "order": 543951.49,
+       "return": 46153.45975757576
       }
      },
      {
       "asin": "B0B6HNNL5B",
       "label": "SOYABEAN 1 LTR",
       "ltrs": {
-       "deliver": 338.0,
-       "order": 304.0,
+       "deliver": 364.0,
+       "order": 348.0,
        "return": 52.0
       },
       "quantity": {
-       "deliver": 338.0,
-       "order": 304.0,
+       "deliver": 364.0,
+       "order": 348.0,
        "return": 52.0
       },
       "values": {
-       "deliver": 65981.12453947369,
-       "order": 59343.97,
-       "return": 10150.942236842106
+       "deliver": 70955.55551724137,
+       "order": 67836.63,
+       "return": 10136.507931034483
       }
      },
      {
       "asin": "B0B6HPPMXL",
       "label": "SOYABEAN 5 LTR",
       "ltrs": {
-       "deliver": 215.0,
-       "order": 295.0,
+       "deliver": 220.0,
+       "order": 265.0,
        "return": 80.0
       },
       "quantity": {
-       "deliver": 43.0,
-       "order": 59.0,
+       "deliver": 44.0,
+       "order": 53.0,
        "return": 16.0
       },
       "values": {
-       "deliver": 39849.48474576271,
-       "order": 54677.2,
-       "return": 14827.715254237288
+       "deliver": 40692.72754716981,
+       "order": 49016.24,
+       "return": 14797.355471698113
       }
      }
     ],
@@ -6878,190 +6878,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B09NYCSQLF",
       "label": "MUSTARD KACCHI GHANI 1 LTR",
       "ltrs": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "quantity": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "values": {
-       "deliver": 4576763.755121695,
-       "order": 4675831.45,
-       "return": 122974.94025389598
+       "deliver": 4874507.721161005,
+       "order": 4975650.15,
+       "return": 134747.28769149672
       }
      },
      {
       "asin": "B0B4SJTNF2",
       "label": "SUNFLOWER 1 LTR",
       "ltrs": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "quantity": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "values": {
-       "deliver": 4176809.544797525,
-       "order": 4261083.34,
-       "return": 81269.97675961463
+       "deliver": 4544704.550858172,
+       "order": 4681057.37,
+       "return": 97800.18606745578
       }
      },
      {
       "asin": "B0991VMDB1",
       "label": "SUNFLOWER 5 LTR",
       "ltrs": {
-       "deliver": 27970.0,
-       "order": 26975.0,
-       "return": 1610.0
+       "deliver": 30390.0,
+       "order": 29250.0,
+       "return": 1635.0
       },
       "quantity": {
-       "deliver": 5594.0,
-       "order": 5395.0,
-       "return": 322.0
+       "deliver": 6078.0,
+       "order": 5850.0,
+       "return": 327.0
       },
       "values": {
-       "deliver": 5310635.872971269,
-       "order": 5121716.22,
-       "return": 305689.08671733085
+       "deliver": 5733394.293723077,
+       "order": 5518321.26,
+       "return": 308460.0088923077
       }
      },
      {
       "asin": "B0DBHQ2QWW",
       "label": "RICE BRAN 1 LTR",
       "ltrs": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "quantity": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "values": {
-       "deliver": 842400.0881219145,
-       "order": 844393.72,
-       "return": 29904.47817128139
+       "deliver": 919328.8951721409,
+       "order": 916427.66,
+       "return": 30644.296505738028
       }
      },
      {
       "asin": "B091XPD9J3",
       "label": "MUSTARD KACCHI GHANI 5 LTR",
       "ltrs": {
-       "deliver": 16355.0,
-       "order": 15890.0,
-       "return": 1130.0
+       "deliver": 17745.0,
+       "order": 17210.0,
+       "return": 1220.0
       },
       "quantity": {
-       "deliver": 3271.0,
-       "order": 3178.0,
-       "return": 226.0
+       "deliver": 3549.0,
+       "order": 3442.0,
+       "return": 244.0
       },
       "values": {
-       "deliver": 3088276.2070012586,
-       "order": 3000471.35,
-       "return": 213375.24389553178
+       "deliver": 3354817.712614759,
+       "order": 3253672.18,
+       "return": 230649.6257757118
       }
      },
      {
       "asin": "B0CT5MYSDS",
       "label": "GOLD 1 LTR",
       "ltrs": {
-       "deliver": 3213.0,
-       "order": 3198.0,
-       "return": 275.0
+       "deliver": 3325.0,
+       "order": 3300.0,
+       "return": 280.0
       },
       "quantity": {
-       "deliver": 3213.0,
-       "order": 3198.0,
-       "return": 275.0
+       "deliver": 3325.0,
+       "order": 3300.0,
+       "return": 280.0
       },
       "values": {
-       "deliver": 528713.9892776735,
-       "order": 526245.67,
-       "return": 45252.520090681675
+       "deliver": 548072.3346212121,
+       "order": 543951.49,
+       "return": 46153.45975757576
       }
      },
      {
       "asin": "B0DBJ13FKL",
       "label": "RICE BRAN 5 LTR",
       "ltrs": {
-       "deliver": 6455.0,
-       "order": 6500.0,
-       "return": 480.0
+       "deliver": 6975.0,
+       "order": 6920.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 1291.0,
-       "order": 1300.0,
-       "return": 96.0
+       "deliver": 1395.0,
+       "order": 1384.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 1137507.0912615384,
-       "order": 1145437.04,
-       "return": 84586.11987692308
+       "deliver": 1229049.3787933525,
+       "order": 1219357.95,
+       "return": 96914.28793352601
       }
      },
      {
       "asin": "B0C9Q1S6QG",
       "label": "GOLD 5 LTR",
       "ltrs": {
-       "deliver": 3495.0,
-       "order": 3335.0,
-       "return": 375.0
+       "deliver": 3690.0,
+       "order": 3470.0,
+       "return": 420.0
       },
       "quantity": {
-       "deliver": 699.0,
-       "order": 667.0,
-       "return": 75.0
+       "deliver": 738.0,
+       "order": 694.0,
+       "return": 84.0
       },
       "values": {
-       "deliver": 622666.3914242878,
-       "order": 594160.92,
-       "return": 66809.69865067466
+       "deliver": 657832.6870028819,
+       "order": 618612.31,
+       "return": 74875.26518731989
       }
      },
      {
       "asin": "B0B6HNNL5B",
       "label": "SOYABEAN 1 LTR",
       "ltrs": {
-       "deliver": 338.0,
-       "order": 304.0,
+       "deliver": 364.0,
+       "order": 348.0,
        "return": 52.0
       },
       "quantity": {
-       "deliver": 338.0,
-       "order": 304.0,
+       "deliver": 364.0,
+       "order": 348.0,
        "return": 52.0
       },
       "values": {
-       "deliver": 65981.12453947369,
-       "order": 59343.97,
-       "return": 10150.942236842106
+       "deliver": 70955.55551724137,
+       "order": 67836.63,
+       "return": 10136.507931034483
       }
      },
      {
       "asin": "B0C77PZ83B",
       "label": "MUSTARD KACCHI GHANI 1 LTR",
       "ltrs": {
-       "deliver": 91.0,
-       "order": 86.0,
+       "deliver": 94.0,
+       "order": 88.0,
        "return": 23.0
       },
       "quantity": {
-       "deliver": 91.0,
-       "order": 86.0,
+       "deliver": 94.0,
+       "order": 88.0,
        "return": 23.0
       },
       "values": {
-       "deliver": 17478.147790697676,
-       "order": 16517.81,
-       "return": 4417.553837209302
+       "deliver": 18048.907954545455,
+       "order": 16896.85,
+       "return": 4416.222159090909
       }
      }
     ],
@@ -7070,190 +7070,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B0991VMDB1",
       "label": "SUNFLOWER 5 LTR",
       "ltrs": {
-       "deliver": 27970.0,
-       "order": 26975.0,
-       "return": 1610.0
+       "deliver": 30390.0,
+       "order": 29250.0,
+       "return": 1635.0
       },
       "quantity": {
-       "deliver": 5594.0,
-       "order": 5395.0,
-       "return": 322.0
+       "deliver": 6078.0,
+       "order": 5850.0,
+       "return": 327.0
       },
       "values": {
-       "deliver": 5310635.872971269,
-       "order": 5121716.22,
-       "return": 305689.08671733085
+       "deliver": 5733394.293723077,
+       "order": 5518321.26,
+       "return": 308460.0088923077
       }
      },
      {
       "asin": "B09NYCSQLF",
       "label": "MUSTARD KACCHI GHANI 1 LTR",
       "ltrs": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "quantity": {
-       "deliver": 27950.0,
-       "order": 28555.0,
-       "return": 751.0
+       "deliver": 29736.0,
+       "order": 30353.0,
+       "return": 822.0
       },
       "values": {
-       "deliver": 4576763.755121695,
-       "order": 4675831.45,
-       "return": 122974.94025389598
+       "deliver": 4874507.721161005,
+       "order": 4975650.15,
+       "return": 134747.28769149672
       }
      },
      {
       "asin": "B0B4SJTNF2",
       "label": "SUNFLOWER 1 LTR",
       "ltrs": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "quantity": {
-       "deliver": 25029.0,
-       "order": 25534.0,
-       "return": 487.0
+       "deliver": 27231.0,
+       "order": 28048.0,
+       "return": 586.0
       },
       "values": {
-       "deliver": 4176809.544797525,
-       "order": 4261083.34,
-       "return": 81269.97675961463
+       "deliver": 4544704.550858172,
+       "order": 4681057.37,
+       "return": 97800.18606745578
       }
      },
      {
       "asin": "B091XPD9J3",
       "label": "MUSTARD KACCHI GHANI 5 LTR",
       "ltrs": {
-       "deliver": 16355.0,
-       "order": 15890.0,
-       "return": 1130.0
+       "deliver": 17745.0,
+       "order": 17210.0,
+       "return": 1220.0
       },
       "quantity": {
-       "deliver": 3271.0,
-       "order": 3178.0,
-       "return": 226.0
+       "deliver": 3549.0,
+       "order": 3442.0,
+       "return": 244.0
       },
       "values": {
-       "deliver": 3088276.2070012586,
-       "order": 3000471.35,
-       "return": 213375.24389553178
+       "deliver": 3354817.712614759,
+       "order": 3253672.18,
+       "return": 230649.6257757118
       }
      },
      {
       "asin": "B0DBJ13FKL",
       "label": "RICE BRAN 5 LTR",
       "ltrs": {
-       "deliver": 6455.0,
-       "order": 6500.0,
-       "return": 480.0
+       "deliver": 6975.0,
+       "order": 6920.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 1291.0,
-       "order": 1300.0,
-       "return": 96.0
+       "deliver": 1395.0,
+       "order": 1384.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 1137507.0912615384,
-       "order": 1145437.04,
-       "return": 84586.11987692308
+       "deliver": 1229049.3787933525,
+       "order": 1219357.95,
+       "return": 96914.28793352601
       }
      },
      {
       "asin": "B0DBHQ2QWW",
       "label": "RICE BRAN 1 LTR",
       "ltrs": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "quantity": {
-       "deliver": 4648.0,
-       "order": 4659.0,
-       "return": 165.0
+       "deliver": 5070.0,
+       "order": 5054.0,
+       "return": 169.0
       },
       "values": {
-       "deliver": 842400.0881219145,
-       "order": 844393.72,
-       "return": 29904.47817128139
+       "deliver": 919328.8951721409,
+       "order": 916427.66,
+       "return": 30644.296505738028
       }
      },
      {
       "asin": "B0C9Q1S6QG",
       "label": "GOLD 5 LTR",
       "ltrs": {
-       "deliver": 3495.0,
-       "order": 3335.0,
-       "return": 375.0
+       "deliver": 3690.0,
+       "order": 3470.0,
+       "return": 420.0
       },
       "quantity": {
-       "deliver": 699.0,
-       "order": 667.0,
-       "return": 75.0
+       "deliver": 738.0,
+       "order": 694.0,
+       "return": 84.0
       },
       "values": {
-       "deliver": 622666.3914242878,
-       "order": 594160.92,
-       "return": 66809.69865067466
+       "deliver": 657832.6870028819,
+       "order": 618612.31,
+       "return": 74875.26518731989
       }
      },
      {
       "asin": "B0CT5MYSDS",
       "label": "GOLD 1 LTR",
       "ltrs": {
-       "deliver": 3213.0,
-       "order": 3198.0,
-       "return": 275.0
+       "deliver": 3325.0,
+       "order": 3300.0,
+       "return": 280.0
       },
       "quantity": {
-       "deliver": 3213.0,
-       "order": 3198.0,
-       "return": 275.0
+       "deliver": 3325.0,
+       "order": 3300.0,
+       "return": 280.0
       },
       "values": {
-       "deliver": 528713.9892776735,
-       "order": 526245.67,
-       "return": 45252.520090681675
+       "deliver": 548072.3346212121,
+       "order": 543951.49,
+       "return": 46153.45975757576
       }
      },
      {
       "asin": "B0B6HNNL5B",
       "label": "SOYABEAN 1 LTR",
       "ltrs": {
-       "deliver": 338.0,
-       "order": 304.0,
+       "deliver": 364.0,
+       "order": 348.0,
        "return": 52.0
       },
       "quantity": {
-       "deliver": 338.0,
-       "order": 304.0,
+       "deliver": 364.0,
+       "order": 348.0,
        "return": 52.0
       },
       "values": {
-       "deliver": 65981.12453947369,
-       "order": 59343.97,
-       "return": 10150.942236842106
+       "deliver": 70955.55551724137,
+       "order": 67836.63,
+       "return": 10136.507931034483
       }
      },
      {
       "asin": "B0B6HPPMXL",
       "label": "SOYABEAN 5 LTR",
       "ltrs": {
-       "deliver": 215.0,
-       "order": 295.0,
+       "deliver": 220.0,
+       "order": 265.0,
        "return": 80.0
       },
       "quantity": {
-       "deliver": 43.0,
-       "order": 59.0,
+       "deliver": 44.0,
+       "order": 53.0,
        "return": 16.0
       },
       "values": {
-       "deliver": 39849.48474576271,
-       "order": 54677.2,
-       "return": 14827.715254237288
+       "deliver": 40692.72754716981,
+       "order": 49016.24,
+       "return": 14797.355471698113
       }
      }
     ]
@@ -7264,190 +7264,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B0CKFFGC31",
       "label": "GROUNDNUT 5 LTR",
       "ltrs": {
-       "deliver": 24710.0,
-       "order": 27050.0,
-       "return": 1045.0
+       "deliver": 27440.0,
+       "order": 29285.0,
+       "return": 1150.0
       },
       "quantity": {
-       "deliver": 4942.0,
-       "order": 5410.0,
-       "return": 209.0
+       "deliver": 5488.0,
+       "order": 5857.0,
+       "return": 230.0
       },
       "values": {
-       "deliver": 4762963.379844732,
-       "order": 5214008.88,
-       "return": 201428.43917190388
+       "deliver": 5284430.24374253,
+       "order": 5639742.7,
+       "return": 221468.46866996755
       }
      },
      {
       "asin": "B0CKFFW9B6",
       "label": "GROUNDNUT 1 LTR",
       "ltrs": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "quantity": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "values": {
-       "deliver": 3883853.1673189397,
-       "order": 3877624.64,
-       "return": 194183.49876694856
+       "deliver": 4145691.6049711946,
+       "order": 4166764.56,
+       "return": 203766.31297418533
       }
      },
      {
       "asin": "B077ZN4G28",
       "label": "CANOLA 5 LTR",
       "ltrs": {
-       "deliver": 16655.0,
-       "order": 16675.0,
-       "return": 500.0
+       "deliver": 18015.0,
+       "order": 17930.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 3331.0,
-       "order": 3335.0,
-       "return": 100.0
+       "deliver": 3603.0,
+       "order": 3586.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 3957633.942527736,
-       "order": 3962386.43,
-       "return": 118812.1868065967
+       "deliver": 4281351.609829894,
+       "order": 4261150.95,
+       "return": 130710.1518404908
       }
      },
      {
       "asin": "B07X53ZL6J",
       "label": "JIVO POMACE 5 LTR",
       "ltrs": {
-       "deliver": 8960.0,
-       "order": 9025.0,
-       "return": 330.0
+       "deliver": 9665.0,
+       "order": 9580.0,
+       "return": 360.0
       },
       "quantity": {
-       "deliver": 1792.0,
-       "order": 1805.0,
-       "return": 66.0
+       "deliver": 1933.0,
+       "order": 1916.0,
+       "return": 72.0
       },
       "values": {
-       "deliver": 3461724.5330083105,
-       "order": 3486837.49,
-       "return": 127496.55088088643
+       "deliver": 3741893.914164927,
+       "order": 3708985.38,
+       "return": 139377.3211691023
       }
      },
      {
       "asin": "B0821DNF2W",
       "label": "JIVO POMACE 1 LTR",
       "ltrs": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "quantity": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "values": {
-       "deliver": 2786514.4058637503,
-       "order": 2770451.7,
-       "return": 79583.406324944
+       "deliver": 3013493.4913355205,
+       "order": 3002183.77,
+       "return": 85005.32487665572
       }
      },
      {
       "asin": "B09MJ6QDX7",
       "label": "CANOLA 1 LTR",
       "ltrs": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "quantity": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "values": {
-       "deliver": 1315179.788216915,
-       "order": 1327335.31,
-       "return": 19544.172278685583
+       "deliver": 1413046.4002583893,
+       "order": 1418042.86,
+       "return": 21175.472238255035
       }
      },
      {
       "asin": "B09HZY97FR",
       "label": "EXTRA LIGHT 1 LTR",
       "ltrs": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "quantity": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "values": {
-       "deliver": 2043531.514665757,
-       "order": 2102327.86,
-       "return": 36807.468217371534
+       "deliver": 2222694.6958174906,
+       "order": 2262846.6,
+       "return": 39673.90532319392
       }
      },
      {
       "asin": "B09NXCPZW1",
       "label": "EXTRA LIGHT 2 LTR",
       "ltrs": {
-       "deliver": 4246.0,
-       "order": 4144.0,
-       "return": 84.0
+       "deliver": 4584.0,
+       "order": 4418.0,
+       "return": 94.0
       },
       "quantity": {
-       "deliver": 2123.0,
-       "order": 2072.0,
-       "return": 42.0
+       "deliver": 2292.0,
+       "order": 2209.0,
+       "return": 47.0
       },
       "values": {
-       "deliver": 2265408.165757722,
-       "order": 2210987.15,
-       "return": 44817.307094594595
+       "deliver": 2449258.322172929,
+       "order": 2360563.54,
+       "return": 50224.756170212764
       }
      },
      {
       "asin": "B07MNWTBDT",
       "label": "EXTRA LIGHT 5 LTR",
       "ltrs": {
-       "deliver": 3615.0,
-       "order": 3600.0,
-       "return": 130.0
+       "deliver": 3910.0,
+       "order": 3835.0,
+       "return": 135.0
       },
       "quantity": {
-       "deliver": 723.0,
-       "order": 720.0,
-       "return": 26.0
+       "deliver": 782.0,
+       "order": 767.0,
+       "return": 27.0
       },
       "values": {
-       "deliver": 1915302.8045416668,
-       "order": 1907355.49,
-       "return": 68876.72602777778
+       "deliver": 2082559.55452412,
+       "order": 2042612.76,
+       "return": 71904.2301434159
       }
      },
      {
       "asin": "B093BMGPQC",
       "label": "EXTRA VIRGIN 1 LTR",
       "ltrs": {
-       "deliver": 2007.0,
-       "order": 1966.0,
-       "return": 46.0
+       "deliver": 2179.0,
+       "order": 2147.0,
+       "return": 48.0
       },
       "quantity": {
-       "deliver": 2007.0,
-       "order": 1966.0,
-       "return": 46.0
+       "deliver": 2179.0,
+       "order": 2147.0,
+       "return": 48.0
       },
       "values": {
-       "deliver": 1497665.1835757885,
-       "order": 1467070.13,
-       "return": 34326.157670396744
+       "deliver": 1627752.2057615276,
+       "order": 1603847.63,
+       "return": 35856.863642291566
       }
      }
     ],
@@ -7456,190 +7456,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B0CKFFW9B6",
       "label": "GROUNDNUT 1 LTR",
       "ltrs": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "quantity": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "values": {
-       "deliver": 3883853.1673189397,
-       "order": 3877624.64,
-       "return": 194183.49876694856
+       "deliver": 4145691.6049711946,
+       "order": 4166764.56,
+       "return": 203766.31297418533
       }
      },
      {
       "asin": "B0821DNF2W",
       "label": "JIVO POMACE 1 LTR",
       "ltrs": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "quantity": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "values": {
-       "deliver": 2786514.4058637503,
-       "order": 2770451.7,
-       "return": 79583.406324944
+       "deliver": 3013493.4913355205,
+       "order": 3002183.77,
+       "return": 85005.32487665572
       }
      },
      {
       "asin": "B09MJ6QDX7",
       "label": "CANOLA 1 LTR",
       "ltrs": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "quantity": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "values": {
-       "deliver": 1315179.788216915,
-       "order": 1327335.31,
-       "return": 19544.172278685583
+       "deliver": 1413046.4002583893,
+       "order": 1418042.86,
+       "return": 21175.472238255035
       }
      },
      {
       "asin": "B0CKFFGC31",
       "label": "GROUNDNUT 5 LTR",
       "ltrs": {
-       "deliver": 24710.0,
-       "order": 27050.0,
-       "return": 1045.0
+       "deliver": 27440.0,
+       "order": 29285.0,
+       "return": 1150.0
       },
       "quantity": {
-       "deliver": 4942.0,
-       "order": 5410.0,
-       "return": 209.0
+       "deliver": 5488.0,
+       "order": 5857.0,
+       "return": 230.0
       },
       "values": {
-       "deliver": 4762963.379844732,
-       "order": 5214008.88,
-       "return": 201428.43917190388
+       "deliver": 5284430.24374253,
+       "order": 5639742.7,
+       "return": 221468.46866996755
       }
      },
      {
       "asin": "B09HZY97FR",
       "label": "EXTRA LIGHT 1 LTR",
       "ltrs": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "quantity": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "values": {
-       "deliver": 2043531.514665757,
-       "order": 2102327.86,
-       "return": 36807.468217371534
+       "deliver": 2222694.6958174906,
+       "order": 2262846.6,
+       "return": 39673.90532319392
       }
      },
      {
       "asin": "B077ZN4G28",
       "label": "CANOLA 5 LTR",
       "ltrs": {
-       "deliver": 16655.0,
-       "order": 16675.0,
-       "return": 500.0
+       "deliver": 18015.0,
+       "order": 17930.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 3331.0,
-       "order": 3335.0,
-       "return": 100.0
+       "deliver": 3603.0,
+       "order": 3586.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 3957633.942527736,
-       "order": 3962386.43,
-       "return": 118812.1868065967
+       "deliver": 4281351.609829894,
+       "order": 4261150.95,
+       "return": 130710.1518404908
       }
      },
      {
       "asin": "B09NXCPZW1",
       "label": "EXTRA LIGHT 2 LTR",
       "ltrs": {
-       "deliver": 4246.0,
-       "order": 4144.0,
-       "return": 84.0
+       "deliver": 4584.0,
+       "order": 4418.0,
+       "return": 94.0
       },
       "quantity": {
-       "deliver": 2123.0,
-       "order": 2072.0,
-       "return": 42.0
+       "deliver": 2292.0,
+       "order": 2209.0,
+       "return": 47.0
       },
       "values": {
-       "deliver": 2265408.165757722,
-       "order": 2210987.15,
-       "return": 44817.307094594595
+       "deliver": 2449258.322172929,
+       "order": 2360563.54,
+       "return": 50224.756170212764
       }
      },
      {
       "asin": "B093BMGPQC",
       "label": "EXTRA VIRGIN 1 LTR",
       "ltrs": {
-       "deliver": 2007.0,
-       "order": 1966.0,
-       "return": 46.0
+       "deliver": 2179.0,
+       "order": 2147.0,
+       "return": 48.0
       },
       "quantity": {
-       "deliver": 2007.0,
-       "order": 1966.0,
-       "return": 46.0
+       "deliver": 2179.0,
+       "order": 2147.0,
+       "return": 48.0
       },
       "values": {
-       "deliver": 1497665.1835757885,
-       "order": 1467070.13,
-       "return": 34326.157670396744
+       "deliver": 1627752.2057615276,
+       "order": 1603847.63,
+       "return": 35856.863642291566
       }
      },
      {
       "asin": "B07X53ZL6J",
       "label": "JIVO POMACE 5 LTR",
       "ltrs": {
-       "deliver": 8960.0,
-       "order": 9025.0,
-       "return": 330.0
+       "deliver": 9665.0,
+       "order": 9580.0,
+       "return": 360.0
       },
       "quantity": {
-       "deliver": 1792.0,
-       "order": 1805.0,
-       "return": 66.0
+       "deliver": 1933.0,
+       "order": 1916.0,
+       "return": 72.0
       },
       "values": {
-       "deliver": 3461724.5330083105,
-       "order": 3486837.49,
-       "return": 127496.55088088643
+       "deliver": 3741893.914164927,
+       "order": 3708985.38,
+       "return": 139377.3211691023
       }
      },
      {
       "asin": "B0152TWWSQ",
       "label": "CANOLA 1+1 LTR",
       "ltrs": {
-       "deliver": 1668.0,
-       "order": 1674.0,
-       "return": 48.0
+       "deliver": 1904.0,
+       "order": 1884.0,
+       "return": 56.0
       },
       "quantity": {
-       "deliver": 834.0,
-       "order": 837.0,
-       "return": 24.0
+       "deliver": 952.0,
+       "order": 942.0,
+       "return": 28.0
       },
       "values": {
-       "deliver": 393177.74157706095,
-       "order": 394592.05,
-       "return": 11314.467383512545
+       "deliver": 447596.6151167728,
+       "order": 442894.97,
+       "return": 13164.606326963907
       }
      }
     ],
@@ -7648,190 +7648,190 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "asin": "B0CKFFGC31",
       "label": "GROUNDNUT 5 LTR",
       "ltrs": {
-       "deliver": 24710.0,
-       "order": 27050.0,
-       "return": 1045.0
+       "deliver": 27440.0,
+       "order": 29285.0,
+       "return": 1150.0
       },
       "quantity": {
-       "deliver": 4942.0,
-       "order": 5410.0,
-       "return": 209.0
+       "deliver": 5488.0,
+       "order": 5857.0,
+       "return": 230.0
       },
       "values": {
-       "deliver": 4762963.379844732,
-       "order": 5214008.88,
-       "return": 201428.43917190388
+       "deliver": 5284430.24374253,
+       "order": 5639742.7,
+       "return": 221468.46866996755
       }
      },
      {
       "asin": "B077ZN4G28",
       "label": "CANOLA 5 LTR",
       "ltrs": {
-       "deliver": 16655.0,
-       "order": 16675.0,
-       "return": 500.0
+       "deliver": 18015.0,
+       "order": 17930.0,
+       "return": 550.0
       },
       "quantity": {
-       "deliver": 3331.0,
-       "order": 3335.0,
-       "return": 100.0
+       "deliver": 3603.0,
+       "order": 3586.0,
+       "return": 110.0
       },
       "values": {
-       "deliver": 3957633.942527736,
-       "order": 3962386.43,
-       "return": 118812.1868065967
+       "deliver": 4281351.609829894,
+       "order": 4261150.95,
+       "return": 130710.1518404908
       }
      },
      {
       "asin": "B0CKFFW9B6",
       "label": "GROUNDNUT 1 LTR",
       "ltrs": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "quantity": {
-       "deliver": 21201.0,
-       "order": 21167.0,
-       "return": 1060.0
+       "deliver": 22624.0,
+       "order": 22739.0,
+       "return": 1112.0
       },
       "values": {
-       "deliver": 3883853.1673189397,
-       "order": 3877624.64,
-       "return": 194183.49876694856
+       "deliver": 4145691.6049711946,
+       "order": 4166764.56,
+       "return": 203766.31297418533
       }
      },
      {
       "asin": "B07X53ZL6J",
       "label": "JIVO POMACE 5 LTR",
       "ltrs": {
-       "deliver": 8960.0,
-       "order": 9025.0,
-       "return": 330.0
+       "deliver": 9665.0,
+       "order": 9580.0,
+       "return": 360.0
       },
       "quantity": {
-       "deliver": 1792.0,
-       "order": 1805.0,
-       "return": 66.0
+       "deliver": 1933.0,
+       "order": 1916.0,
+       "return": 72.0
       },
       "values": {
-       "deliver": 3461724.5330083105,
-       "order": 3486837.49,
-       "return": 127496.55088088643
+       "deliver": 3741893.914164927,
+       "order": 3708985.38,
+       "return": 139377.3211691023
       }
      },
      {
       "asin": "B0821DNF2W",
       "label": "JIVO POMACE 1 LTR",
       "ltrs": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "quantity": {
-       "deliver": 7633.0,
-       "order": 7589.0,
-       "return": 218.0
+       "deliver": 8260.0,
+       "order": 8229.0,
+       "return": 233.0
       },
       "values": {
-       "deliver": 2786514.4058637503,
-       "order": 2770451.7,
-       "return": 79583.406324944
+       "deliver": 3013493.4913355205,
+       "order": 3002183.77,
+       "return": 85005.32487665572
       }
      },
      {
       "asin": "B09NXCPZW1",
       "label": "EXTRA LIGHT 2 LTR",
       "ltrs": {
-       "deliver": 4246.0,
-       "order": 4144.0,
-       "return": 84.0
+       "deliver": 4584.0,
+       "order": 4418.0,
+       "return": 94.0
       },
       "quantity": {
-       "deliver": 2123.0,
-       "order": 2072.0,
-       "return": 42.0
+       "deliver": 2292.0,
+       "order": 2209.0,
+       "return": 47.0
       },
       "values": {
-       "deliver": 2265408.165757722,
-       "order": 2210987.15,
-       "return": 44817.307094594595
+       "deliver": 2449258.322172929,
+       "order": 2360563.54,
+       "return": 50224.756170212764
       }
      },
      {
       "asin": "B09HZY97FR",
       "label": "EXTRA LIGHT 1 LTR",
       "ltrs": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "quantity": {
-       "deliver": 4275.0,
-       "order": 4398.0,
-       "return": 77.0
+       "deliver": 4650.0,
+       "order": 4734.0,
+       "return": 83.0
       },
       "values": {
-       "deliver": 2043531.514665757,
-       "order": 2102327.86,
-       "return": 36807.468217371534
+       "deliver": 2222694.6958174906,
+       "order": 2262846.6,
+       "return": 39673.90532319392
       }
      },
      {
       "asin": "B07MNWTBDT",
       "label": "EXTRA LIGHT 5 LTR",
       "ltrs": {
-       "deliver": 3615.0,
-       "order": 3600.0,
-       "return": 130.0
+       "deliver": 3910.0,
+       "order": 3835.0,
+       "return": 135.0
       },
       "quantity": {
-       "deliver": 723.0,
-       "order": 720.0,
-       "return": 26.0
+       "deliver": 782.0,
+       "order": 767.0,
+       "return": 27.0
       },
       "values": {
-       "deliver": 1915302.8045416668,
-       "order": 1907355.49,
-       "return": 68876.72602777778
+       "deliver": 2082559.55452412,
+       "order": 2042612.76,
+       "return": 71904.2301434159
       }
      },
      {
       "asin": "B093BMGPQC",
       "label": "EXTRA VIRGIN 1 LTR",
       "ltrs": {
-       "deliver": 2007.0,
-       "order": 1966.0,
-       "return": 46.0
+       "deliver": 2179.0,
+       "order": 2147.0,
+       "return": 48.0
       },
       "quantity": {
-       "deliver": 2007.0,
-       "order": 1966.0,
-       "return": 46.0
+       "deliver": 2179.0,
+       "order": 2147.0,
+       "return": 48.0
       },
       "values": {
-       "deliver": 1497665.1835757885,
-       "order": 1467070.13,
-       "return": 34326.157670396744
+       "deliver": 1627752.2057615276,
+       "order": 1603847.63,
+       "return": 35856.863642291566
       }
      },
      {
       "asin": "B09MJ6QDX7",
       "label": "CANOLA 1 LTR",
       "ltrs": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "quantity": {
-       "deliver": 5518.0,
-       "order": 5569.0,
-       "return": 82.0
+       "deliver": 5939.0,
+       "order": 5960.0,
+       "return": 89.0
       },
       "values": {
-       "deliver": 1315179.788216915,
-       "order": 1327335.31,
-       "return": 19544.172278685583
+       "deliver": 1413046.4002583893,
+       "order": 1418042.86,
+       "return": 21175.472238255035
       }
      }
     ]
@@ -8412,20 +8412,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "day": 28,
       "label": "28",
       "ltrs": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 10028.0,
+       "order": 10373.7,
+       "return": 310.5
       },
       "period": "2026-06-28",
       "quantity": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 5538.0,
+       "order": 5786.0,
+       "return": 148.0
       },
       "values": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 2263261.6553733633,
+       "order": 2306786.5,
+       "return": 68815.91019998473
       }
      },
      {
@@ -8433,20 +8433,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "day": 29,
       "label": "29",
       "ltrs": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 8401.0,
+       "order": 7083.0,
+       "return": 394.0
       },
       "period": "2026-06-29",
       "quantity": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 4654.0,
+       "order": 4467.0,
+       "return": 208.0
       },
       "values": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 2035272.1584746935,
+       "order": 1670480.8800000001,
+       "return": 83180.40898928157
       }
      },
      {
@@ -9044,20 +9044,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "day": 28,
       "label": "28",
       "ltrs": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 5236.0,
+       "order": 5022.0,
+       "return": 134.0
       },
       "period": "2026-06-28",
       "quantity": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 3108.0,
+       "order": 3176.0,
+       "return": 78.0
       },
       "values": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 899951.1445088659,
+       "order": 859068.1,
+       "return": 23281.44235432845
       }
      },
      {
@@ -9065,20 +9065,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "day": 29,
       "label": "29",
       "ltrs": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 3884.0,
+       "order": 3989.0,
+       "return": 277.0
       },
       "period": "2026-06-29",
       "quantity": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 2366.0,
+       "order": 2521.0,
+       "return": 145.0
       },
       "values": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 689610.9815210307,
+       "order": 708546.18,
+       "return": 49746.29178215394
       }
      },
      {
@@ -9676,20 +9676,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "day": 28,
       "label": "28",
       "ltrs": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 4792.0,
+       "order": 5351.7,
+       "return": 176.5
       },
       "period": "2026-06-28",
       "quantity": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 2429.0,
+       "order": 2609.0,
+       "return": 70.0
       },
       "values": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 1363277.1708644973,
+       "order": 1447685.06,
+       "return": 45534.46784565629
       }
      },
      {
@@ -9697,20 +9697,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
       "day": 29,
       "label": "29",
       "ltrs": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 4517.0,
+       "order": 3094.0,
+       "return": 117.0
       },
       "period": "2026-06-29",
       "quantity": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 2286.0,
+       "order": 1944.0,
+       "return": 63.0
       },
       "values": {
-       "deliver": 0.0,
-       "order": 0.0,
-       "return": 0.0
+       "deliver": 1345571.6569536629,
+       "order": 961845.18,
+       "return": 33434.11720712762
       }
      },
      {
@@ -9841,21 +9841,21 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "JUN",
       "ltrs": {
-       "deliver": 223081.9,
-       "order": 224939.7,
-       "return": 9126.4
+       "deliver": 241510.9,
+       "order": 242396.4,
+       "return": 9830.9
       },
       "month": 6,
       "period": "2026-06-01",
       "quantity": {
-       "deliver": 131586.0,
-       "order": 132753.0,
-       "return": 4513.0
+       "deliver": 141778.0,
+       "order": 143006.0,
+       "return": 4869.0
       },
       "values": {
-       "deliver": 50946009.26553252,
-       "order": 51322107.64,
-       "return": 1968634.9347688996
+       "deliver": 55244543.07938057,
+       "order": 55299375.019999996,
+       "return": 2120631.2539581656
       }
      }
     ],
@@ -9963,21 +9963,21 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "JUN",
       "ltrs": {
-       "deliver": 115838.0,
-       "order": 115440.0,
-       "return": 5230.0
+       "deliver": 124958.0,
+       "order": 124451.0,
+       "return": 5641.0
       },
       "month": 6,
       "period": "2026-06-01",
       "quantity": {
-       "deliver": 72215.0,
-       "order": 72990.0,
-       "return": 2411.0
+       "deliver": 77689.0,
+       "order": 78687.0,
+       "return": 2634.0
       },
       "values": {
-       "deliver": 20391301.09684436,
-       "order": 20320277.58,
-       "return": 943880.9661750481
+       "deliver": 21980863.222874258,
+       "order": 21887891.86,
+       "return": 1016908.7003115305
       }
      }
     ],
@@ -10085,21 +10085,21 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "JUN",
       "ltrs": {
-       "deliver": 107243.9,
-       "order": 109499.7,
-       "return": 3896.4
+       "deliver": 116552.9,
+       "order": 117945.4,
+       "return": 4189.9
       },
       "month": 6,
       "period": "2026-06-01",
       "quantity": {
-       "deliver": 59288.0,
-       "order": 59682.0,
-       "return": 2098.0
+       "deliver": 64003.0,
+       "order": 64235.0,
+       "return": 2231.0
       },
       "values": {
-       "deliver": 30550868.228688158,
-       "order": 30995284.13,
-       "return": 1024565.3885938515
+       "deliver": 33259717.056506317,
+       "order": 33404814.37,
+       "return": 1103533.9736466354
       }
      }
     ]
@@ -10109,20 +10109,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "2026",
       "ltrs": {
-       "deliver": 551497.4,
-       "order": 544760.2,
-       "return": 23469.5
+       "deliver": 569926.4,
+       "order": 562216.9,
+       "return": 24174.0
       },
       "period": "2026",
       "quantity": {
-       "deliver": 286741.0,
-       "order": 286719.0,
-       "return": 10602.0
+       "deliver": 296933.0,
+       "order": 296972.0,
+       "return": 10958.0
       },
       "values": {
-       "deliver": 123712633.84352079,
-       "order": 124218158.01,
-       "return": 5051961.489694335
+       "deliver": 128011167.65736887,
+       "order": 128195425.38999999,
+       "return": 5203957.8088836
       },
       "year": 2026
      }
@@ -10131,20 +10131,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "2026",
       "ltrs": {
-       "deliver": 296694.0,
-       "order": 297080.0,
-       "return": 13264.0
+       "deliver": 305814.0,
+       "order": 306091.0,
+       "return": 13675.0
       },
       "period": "2026",
       "quantity": {
-       "deliver": 160284.0,
-       "order": 161237.0,
-       "return": 5728.0
+       "deliver": 165758.0,
+       "order": 166934.0,
+       "return": 5951.0
       },
       "values": {
-       "deliver": 51499249.34376103,
-       "order": 51325591.59,
-       "return": 2347901.8334215605
+       "deliver": 53088811.46979093,
+       "order": 52893205.87,
+       "return": 2420929.5675580427
       },
       "year": 2026
      }
@@ -10153,20 +10153,20 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      {
       "label": "2026",
       "ltrs": {
-       "deliver": 254803.4,
-       "order": 247680.2,
-       "return": 10205.5
+       "deliver": 264112.4,
+       "order": 256125.9,
+       "return": 10499.0
       },
       "period": "2026",
       "quantity": {
-       "deliver": 126163.0,
-       "order": 125190.0,
-       "return": 4857.0
+       "deliver": 130878.0,
+       "order": 129743.0,
+       "return": 4990.0
       },
       "values": {
-       "deliver": 72194235.52117261,
-       "order": 72862966.93,
-       "return": 2703130.2262727735
+       "deliver": 74903084.34899078,
+       "order": 75272497.17,
+       "return": 2782098.811325557
       },
       "year": 2026
      }

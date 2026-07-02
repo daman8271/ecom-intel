@@ -17,10 +17,10 @@ Up: [[po-LKOPO119140]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-473.21,0.0,SWIGGY,,50516,529.9956667,LUCKNOW,30.0,2025-08-26,2025-09-09,LKOPO119140,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:50516,2026-06-30
-833.33,0.0,SWIGGY,,50517,874.9966667,LUCKNOW,96.0,2025-08-26,2025-09-09,LKOPO119140,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:50517,2026-06-30
-204.76,0.0,SWIGGY,,50518,214.998125,LUCKNOW,144.0,2025-08-26,2025-09-09,LKOPO119140,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:50518,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+473.21,0.0,SWIGGY,,,50516,529.9956667,LUCKNOW,30.0,2025-08-26,2025-09-09,LKOPO119140,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:50516,2026-07-01
+833.33,0.0,SWIGGY,,,50517,874.9966667,LUCKNOW,96.0,2025-08-26,2025-09-09,LKOPO119140,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:50517,2026-07-01
+204.76,0.0,SWIGGY,,,50518,214.998125,LUCKNOW,144.0,2025-08-26,2025-09-09,LKOPO119140,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:50518,2026-07-01
 ```
 
 ---

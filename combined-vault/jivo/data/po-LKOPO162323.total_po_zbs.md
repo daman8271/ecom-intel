@@ -17,9 +17,9 @@ Up: [[po-LKOPO162323]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-152.38,0.0,SWIGGY,,66780,159.999,LUCKNOW,80.0,2026-03-31,2026-04-12,LKOPO162323,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66780,2026-06-30
-2690.48,0.0,SWIGGY,,66781,2825.00375,LUCKNOW,8.0,2026-03-31,2026-04-12,LKOPO162323,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66781,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+152.38,0.0,SWIGGY,,,66780,159.999,LUCKNOW,80.0,2026-03-31,2026-04-12,LKOPO162323,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66780,2026-07-01
+2690.48,0.0,SWIGGY,,,66781,2825.00375,LUCKNOW,8.0,2026-03-31,2026-04-12,LKOPO162323,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66781,2026-07-01
 ```
 
 ---

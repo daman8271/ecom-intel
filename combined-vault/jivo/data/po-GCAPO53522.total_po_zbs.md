@@ -17,9 +17,9 @@ Up: [[po-GCAPO53522]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-366.67,0.0,SWIGGY,2026-05-13,72114,385.003125,CENTRAL GOA,16.0,2026-05-07,2026-05-24,GCAPO53522,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72114,2026-06-30
-200.0,16.0,SWIGGY,2026-05-13,72115,210.0,CENTRAL GOA,16.0,2026-05-07,2026-05-24,GCAPO53522,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72115,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+366.67,0.0,SWIGGY,,2026-05-13,72114,385.003125,CENTRAL GOA,16.0,2026-05-07,2026-05-24,GCAPO53522,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72114,2026-07-01
+200.0,16.0,SWIGGY,,2026-05-13,72115,210.0,CENTRAL GOA,16.0,2026-05-07,2026-05-24,GCAPO53522,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72115,2026-07-01
 ```
 
 ---

@@ -18,38 +18,10 @@ Up: [[dashboards-index]]
 ```json
 {
  "errors": [],
- "month": "JUNE",
+ "month": "JULY",
  "platforms": [
   {
-   "delivered_ltrs": 144207.0,
-   "format": "SWIGGY"
-  },
-  {
-   "delivered_ltrs": 102475.2,
-   "format": "ZEPTO"
-  },
-  {
-   "delivered_ltrs": 34476.0,
-   "format": "ZOMATO"
-  },
-  {
-   "delivered_ltrs": 30198.0,
-   "format": "BLINKIT"
-  },
-  {
-   "delivered_ltrs": 21246.0,
-   "format": "BIG BASKET"
-  },
-  {
-   "delivered_ltrs": 20166.0,
-   "format": "FLIPKART GROCERY"
-  },
-  {
-   "delivered_ltrs": 17715.0,
-   "format": "CITY MALL"
-  },
-  {
-   "delivered_ltrs": 161495.5,
+   "delivered_ltrs": 0.0,
    "format": "AMAZON"
   }
  ],

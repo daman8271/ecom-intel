@@ -17,11 +17,11 @@ Up: [[po-MBIPO257130]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,20.0,SWIGGY,2025-10-07,52829,222.0015,BANGALORE,20.0,2025-09-25,2025-10-10,MBIPO257130,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52829,2026-06-30
-190.48,64.0,SWIGGY,2025-10-07,52830,200.00375,BANGALORE,64.0,2025-09-25,2025-10-10,MBIPO257130,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52830,2026-06-30
-114.29,20.0,SWIGGY,2025-10-07,52831,120.0045,BANGALORE,20.0,2025-09-25,2025-10-10,MBIPO257130,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52831,2026-06-30
-709.52,12.0,SWIGGY,2025-10-07,52832,744.9958333,BANGALORE,12.0,2025-09-25,2025-10-10,MBIPO257130,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52832,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,20.0,SWIGGY,,2025-10-07,52829,222.0015,BANGALORE,20.0,2025-09-25,2025-10-10,MBIPO257130,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52829,2026-07-01
+190.48,64.0,SWIGGY,,2025-10-07,52830,200.00375,BANGALORE,64.0,2025-09-25,2025-10-10,MBIPO257130,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52830,2026-07-01
+114.29,20.0,SWIGGY,,2025-10-07,52831,120.0045,BANGALORE,20.0,2025-09-25,2025-10-10,MBIPO257130,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52831,2026-07-01
+709.52,12.0,SWIGGY,,2025-10-07,52832,744.9958333,BANGALORE,12.0,2025-09-25,2025-10-10,MBIPO257130,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52832,2026-07-01
 ```
 
 ---

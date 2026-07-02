@@ -17,9 +17,9 @@ Up: [[po-KWBPO89377]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-161.9,0.0,SWIGGY,,73289,169.9951667,KOLKATA,60.0,2026-05-16,2026-05-28,KWBPO89377,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:73289,2026-06-30
-761.9,0.0,SWIGGY,,73290,799.995,KOLKATA,10.0,2026-05-16,2026-05-28,KWBPO89377,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:73290,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+161.9,0.0,SWIGGY,,,73289,169.9951667,KOLKATA,60.0,2026-05-16,2026-05-28,KWBPO89377,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:73289,2026-07-01
+761.9,0.0,SWIGGY,,,73290,799.995,KOLKATA,10.0,2026-05-16,2026-05-28,KWBPO89377,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:73290,2026-07-01
 ```
 
 ---

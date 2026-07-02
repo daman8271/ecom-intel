@@ -17,10 +17,10 @@ Up: [[po-CPDPO238094]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,64.0,SWIGGY,2026-02-04,62074,219.9961979,PUNE,192.0,2026-01-27,2026-02-06,CPDPO238094,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62074,2026-06-30
-138.1,420.0,SWIGGY,2026-02-04,62075,145.0047619,PUNE,420.0,2026-01-27,2026-02-06,CPDPO238094,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62075,2026-06-30
-152.38,120.0,SWIGGY,2026-02-04,62076,159.9990833,PUNE,120.0,2026-01-27,2026-02-06,CPDPO238094,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62076,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,64.0,SWIGGY,,2026-02-04,62074,219.9961979,PUNE,192.0,2026-01-27,2026-02-06,CPDPO238094,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62074,2026-07-01
+138.1,420.0,SWIGGY,,2026-02-04,62075,145.0047619,PUNE,420.0,2026-01-27,2026-02-06,CPDPO238094,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62075,2026-07-01
+152.38,120.0,SWIGGY,,2026-02-04,62076,159.9990833,PUNE,120.0,2026-01-27,2026-02-06,CPDPO238094,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62076,2026-07-01
 ```
 
 ---

@@ -17,12 +17,12 @@ Up: [[po-KOCPO117334]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,16.0,SWIGGY,2026-06-28,75671,500.0,KOCHI,16.0,2026-06-04,2026-07-02,KOCPO117334,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75671,2026-06-30
-928.57,4.0,SWIGGY,2026-06-28,75672,975.0,KOCHI,4.0,2026-06-04,2026-07-02,KOCPO117334,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75672,2026-06-30
-738.1,0.0,SWIGGY,2026-06-28,75673,775.0,KOCHI,4.0,2026-06-04,2026-07-02,KOCPO117334,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75673,2026-06-30
-733.33,10.0,SWIGGY,2026-06-28,75674,770.0,KOCHI,10.0,2026-06-04,2026-07-02,KOCPO117334,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75674,2026-06-30
-200.0,0.0,SWIGGY,2026-06-28,75675,210.0,KOCHI,32.0,2026-06-04,2026-07-02,KOCPO117334,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75675,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,16.0,SWIGGY,,2026-06-28,75671,499.9995,KOCHI,16.0,2026-06-04,2026-07-02,KOCPO117334,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75671,2026-07-01
+928.57,4.0,SWIGGY,,2026-06-28,75672,974.9985,KOCHI,4.0,2026-06-04,2026-07-02,KOCPO117334,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75672,2026-07-01
+738.1,0.0,SWIGGY,,2026-06-28,75673,775.005,KOCHI,4.0,2026-06-04,2026-07-02,KOCPO117334,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75673,2026-07-01
+733.33,10.0,SWIGGY,,2026-06-28,75674,769.9965,KOCHI,10.0,2026-06-04,2026-07-02,KOCPO117334,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75674,2026-07-01
+200.0,0.0,SWIGGY,,2026-06-28,75675,210.0,KOCHI,32.0,2026-06-04,2026-07-02,KOCPO117334,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75675,2026-07-01
 ```
 
 ---

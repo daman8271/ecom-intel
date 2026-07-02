@@ -17,10 +17,10 @@ Up: [[po-GCAPO45441]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-160.0,0.0,SWIGGY,2026-03-28,65794,168.0,CENTRAL GOA,100.0,2026-03-14,2026-03-30,GCAPO45441,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65794,2026-06-30
-173.33,100.0,SWIGGY,2026-03-28,65795,181.9967,CENTRAL GOA,100.0,2026-03-14,2026-03-30,GCAPO45441,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65795,2026-06-30
-219.05,16.0,SWIGGY,2026-03-28,65796,230.0025,CENTRAL GOA,16.0,2026-03-14,2026-03-30,GCAPO45441,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65796,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+160.0,0.0,SWIGGY,,2026-03-28,65794,168.0,CENTRAL GOA,100.0,2026-03-14,2026-03-30,GCAPO45441,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65794,2026-07-01
+173.33,100.0,SWIGGY,,2026-03-28,65795,181.9967,CENTRAL GOA,100.0,2026-03-14,2026-03-30,GCAPO45441,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65795,2026-07-01
+219.05,16.0,SWIGGY,,2026-03-28,65796,230.0025,CENTRAL GOA,16.0,2026-03-14,2026-03-30,GCAPO45441,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65796,2026-07-01
 ```
 
 ---

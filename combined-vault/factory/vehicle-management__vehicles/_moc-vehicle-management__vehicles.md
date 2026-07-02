@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Vehicle (340)
+title: Vehicle (346)
 tags:
   - moc
   - source/factory
 ---
 
-# Vehicle — 340 records
+# Vehicle — 346 records
 
 From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 
@@ -76,6 +76,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-243]] — DL01LAR8338
 - [[veh-338]] — DL01LAR9378
 - [[veh-247]] — DL01LAT0540
+- [[veh-349]] — DL01LAT0779
 - [[veh-74]] — DL01LT0430
 - [[veh-237]] — DL01LTA1291
 - [[veh-48]] — DL01LV1760
@@ -93,6 +94,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-222]] — DL01MA5409
 - [[veh-223]] — DL01MA5532
 - [[veh-200]] — DL01MA5590
+- [[veh-351]] — DL01MA5762
 - [[veh-202]] — DL01MA6176
 - [[veh-192]] — DL01MA8487
 - [[veh-198]] — DL01MB2623
@@ -111,11 +113,14 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-267]] — DL1LAM8606
 - [[veh-240]] — DL1LAM9973
 - [[veh-286]] — DL1LAN0395
+- [[veh-350]] — DL1LAN2488
+- [[veh-347]] — DL1LAN7988
 - [[veh-261]] — DL1LAQ4445
 - [[veh-288]] — DL1LAQ7967
 - [[veh-233]] — DL1LAQ8493
 - [[veh-138]] — DL1LAR1244
 - [[veh-52]] — DL1LAR2907
+- [[veh-346]] — DL1LAR7208
 - [[veh-171]] — DL1LB6032
 - [[veh-144]] — DL1LX1624
 - [[veh-92]] — DL1LY3059
@@ -253,6 +258,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-32]] — HR69E2681
 - [[veh-126]] — HR69E4548
 - [[veh-108]] — HR69E4685
+- [[veh-348]] — HR69E5924
 - [[veh-45]] — HR69E6007
 - [[veh-210]] — HR69E6626
 - [[veh-65]] — HR69E6805

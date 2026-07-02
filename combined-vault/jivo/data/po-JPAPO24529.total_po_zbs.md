@@ -17,9 +17,9 @@ Up: [[po-JPAPO24529]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,2025-12-18,58341,1499.99875,JAIPUR,24.0,2025-12-09,2025-12-23,JPAPO24529,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:58341,2026-06-30
-2619.05,20.0,SWIGGY,2025-12-18,58342,2750.0025,JAIPUR,20.0,2025-12-09,2025-12-23,JPAPO24529,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:58342,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1428.57,0.0,SWIGGY,,2025-12-18,58341,1499.99875,JAIPUR,24.0,2025-12-09,2025-12-23,JPAPO24529,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:58341,2026-07-01
+2619.05,20.0,SWIGGY,,2025-12-18,58342,2750.0025,JAIPUR,20.0,2025-12-09,2025-12-23,JPAPO24529,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:58342,2026-07-01
 ```
 
 ---

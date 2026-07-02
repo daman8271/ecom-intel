@@ -72,6 +72,5 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000192`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000192]]
-- **440 boxes:** [[box-51130]] · [[box-51131]] · [[box-51132]] … +437 more (tag `bridge/FG0000192`)
 - **11 pallets:** [[pal-1106]] · [[pal-1120]] · [[pal-1121]] … +8 more (tag `bridge/FG0000192`)
 

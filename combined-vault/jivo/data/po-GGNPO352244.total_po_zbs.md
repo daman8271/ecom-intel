@@ -17,12 +17,12 @@ Up: [[po-GGNPO352244]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,0.0,SWIGGY,,71091,225.00425,DELHI,40.0,2026-04-30,2026-05-09,GGNPO352244,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71091,2026-06-30
-195.24,0.0,SWIGGY,,71092,205.001875,DELHI,16.0,2026-04-30,2026-05-09,GGNPO352244,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71092,2026-06-30
-147.62,0.0,SWIGGY,,71093,155.001,DELHI,60.0,2026-04-30,2026-05-09,GGNPO352244,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71093,2026-06-30
-809.52,0.0,SWIGGY,,71094,849.99625,DELHI,24.0,2026-04-30,2026-05-09,GGNPO352244,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71094,2026-06-30
-147.62,0.0,SWIGGY,,71095,155.0009375,DELHI,64.0,2026-04-30,2026-05-09,GGNPO352244,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71095,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,0.0,SWIGGY,,,71091,225.00425,DELHI,40.0,2026-04-30,2026-05-09,GGNPO352244,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71091,2026-07-01
+195.24,0.0,SWIGGY,,,71092,205.001875,DELHI,16.0,2026-04-30,2026-05-09,GGNPO352244,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71092,2026-07-01
+147.62,0.0,SWIGGY,,,71093,155.001,DELHI,60.0,2026-04-30,2026-05-09,GGNPO352244,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71093,2026-07-01
+809.52,0.0,SWIGGY,,,71094,849.99625,DELHI,24.0,2026-04-30,2026-05-09,GGNPO352244,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71094,2026-07-01
+147.62,0.0,SWIGGY,,,71095,155.0009375,DELHI,64.0,2026-04-30,2026-05-09,GGNPO352244,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71095,2026-07-01
 ```
 
 ---

@@ -17,10 +17,10 @@ Up: [[po-CHMPO265574]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,4.0,SWIGGY,2026-02-19,63036,1100.0,HYDERABAD,4.0,2026-02-06,2026-02-22,CHMPO265574,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63036,2026-06-30
-138.1,0.0,SWIGGY,2026-02-19,63037,145.0048,HYDERABAD,100.0,2026-02-06,2026-02-22,CHMPO265574,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63037,2026-06-30
-761.9,4.0,SWIGGY,2026-02-19,63038,799.995,HYDERABAD,4.0,2026-02-06,2026-02-22,CHMPO265574,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63038,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,4.0,SWIGGY,,2026-02-19,63036,1100.001,HYDERABAD,4.0,2026-02-06,2026-02-22,CHMPO265574,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63036,2026-07-01
+138.1,0.0,SWIGGY,,2026-02-19,63037,145.0048,HYDERABAD,100.0,2026-02-06,2026-02-22,CHMPO265574,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63037,2026-07-01
+761.9,4.0,SWIGGY,,2026-02-19,63038,799.995,HYDERABAD,4.0,2026-02-06,2026-02-22,CHMPO265574,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63038,2026-07-01
 ```
 
 ---

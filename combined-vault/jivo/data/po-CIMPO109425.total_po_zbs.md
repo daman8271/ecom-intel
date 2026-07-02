@@ -17,9 +17,9 @@ Up: [[po-CIMPO109425]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-154.29,0.0,SWIGGY,,75737,162.0042813,MUMBAI,320.0,2026-06-06,2026-06-14,CIMPO109425,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75737,2026-06-30
-147.62,0.0,SWIGGY,,75738,155.00125,MUMBAI,16.0,2026-06-06,2026-06-14,CIMPO109425,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75738,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+154.29,0.0,SWIGGY,,,75737,162.0042813,MUMBAI,320.0,2026-06-06,2026-06-14,CIMPO109425,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75737,2026-07-01
+147.62,0.0,SWIGGY,,,75738,155.00125,MUMBAI,16.0,2026-06-06,2026-06-14,CIMPO109425,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75738,2026-07-01
 ```
 
 ---

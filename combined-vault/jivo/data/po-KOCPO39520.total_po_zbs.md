@@ -17,10 +17,10 @@ Up: [[po-KOCPO39520]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1023.81,28.0,SWIGGY,2025-09-08,50513,1075.000357,KOCHI,28.0,2025-08-26,2025-09-11,KOCPO39520,,333818,Jivo SO OLive Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50513,2026-06-30
-166.67,20.0,SWIGGY,2025-09-08,50514,175.0035,KOCHI,20.0,2025-08-26,2025-09-11,KOCPO39520,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50514,2026-06-30
-133.33,16.0,SWIGGY,2025-09-08,50515,139.996875,KOCHI,16.0,2025-08-26,2025-09-11,KOCPO39520,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50515,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1023.81,28.0,SWIGGY,,2025-09-08,50513,1075.000357,KOCHI,28.0,2025-08-26,2025-09-11,KOCPO39520,,333818,Jivo SO OLive Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50513,2026-07-01
+166.67,20.0,SWIGGY,,2025-09-08,50514,175.0035,KOCHI,20.0,2025-08-26,2025-09-11,KOCPO39520,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50514,2026-07-01
+133.33,16.0,SWIGGY,,2025-09-08,50515,139.996875,KOCHI,16.0,2025-08-26,2025-09-11,KOCPO39520,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:50515,2026-07-01
 ```
 
 ---

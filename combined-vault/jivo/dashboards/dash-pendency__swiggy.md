@@ -21,224 +21,237 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
  "by_city": [
   {
    "city": "HYDERABAD",
-   "open_ltrs": 25002.0,
-   "open_pos": 21,
-   "open_units": 17975.0,
-   "order_value": 4297086.03,
-   "pending_ltrs": 25002.0,
-   "pending_units": 17975.0
+   "open_ltrs": 31110.0,
+   "open_pos": 24,
+   "open_units": 21939.0,
+   "order_value": 5306496.95,
+   "pending_ltrs": 31110.0,
+   "pending_units": 21939.0
   },
   {
    "city": "BENGALURU",
-   "open_ltrs": 17708.0,
-   "open_pos": 35,
-   "open_units": 14346.0,
-   "order_value": 3530570.88,
-   "pending_ltrs": 17708.0,
-   "pending_units": 14346.0
-  },
-  {
-   "city": "MUMBAI",
-   "open_ltrs": 9798.0,
-   "open_pos": 12,
-   "open_units": 7771.0,
-   "order_value": 1723174.07,
-   "pending_ltrs": 9798.0,
-   "pending_units": 7771.0
-  },
-  {
-   "city": "DELHI",
-   "open_ltrs": 9763.0,
-   "open_pos": 7,
-   "open_units": 8952.0,
-   "order_value": 1639125.12,
-   "pending_ltrs": 9763.0,
-   "pending_units": 8952.0
-  },
-  {
-   "city": "PUNE",
-   "open_ltrs": 9644.0,
-   "open_pos": 8,
-   "open_units": 8316.0,
-   "order_value": 1660833.8,
-   "pending_ltrs": 9644.0,
-   "pending_units": 8316.0
+   "open_ltrs": 19370.0,
+   "open_pos": 37,
+   "open_units": 15522.0,
+   "order_value": 3750206.16,
+   "pending_ltrs": 19370.0,
+   "pending_units": 15522.0
   },
   {
    "city": "CHANDIGARH",
-   "open_ltrs": 9442.0,
-   "open_pos": 4,
-   "open_units": 8828.0,
-   "order_value": 1485567.24,
-   "pending_ltrs": 9442.0,
-   "pending_units": 8828.0
+   "open_ltrs": 13865.0,
+   "open_pos": 5,
+   "open_units": 13050.0,
+   "order_value": 2181051.16,
+   "pending_ltrs": 13865.0,
+   "pending_units": 13050.0
   },
   {
    "city": "CHENNAI",
-   "open_ltrs": 9385.0,
+   "open_ltrs": 12477.0,
+   "open_pos": 10,
+   "open_units": 10809.0,
+   "order_value": 2244294.57,
+   "pending_ltrs": 12477.0,
+   "pending_units": 10809.0
+  },
+  {
+   "city": "MUMBAI",
+   "open_ltrs": 10858.0,
+   "open_pos": 12,
+   "open_units": 8863.0,
+   "order_value": 1870762.11,
+   "pending_ltrs": 10858.0,
+   "pending_units": 8863.0
+  },
+  {
+   "city": "PUNE",
+   "open_ltrs": 10584.0,
    "open_pos": 9,
-   "open_units": 8117.0,
-   "order_value": 1719364.21,
-   "pending_ltrs": 9385.0,
-   "pending_units": 8117.0
+   "open_units": 8504.0,
+   "order_value": 1805862.64,
+   "pending_ltrs": 10584.0,
+   "pending_units": 8504.0
+  },
+  {
+   "city": "DELHI",
+   "open_ltrs": 8132.0,
+   "open_pos": 6,
+   "open_units": 7096.0,
+   "order_value": 1427636.8,
+   "pending_ltrs": 8132.0,
+   "pending_units": 7096.0
   },
   {
    "city": "KOLKATA",
-   "open_ltrs": 4928.0,
-   "open_pos": 5,
-   "open_units": 4532.0,
-   "order_value": 869753.58,
-   "pending_ltrs": 4928.0,
-   "pending_units": 4532.0
+   "open_ltrs": 5128.0,
+   "open_pos": 4,
+   "open_units": 4616.0,
+   "order_value": 863104.94,
+   "pending_ltrs": 5128.0,
+   "pending_units": 4616.0
   },
   {
    "city": "AHMEDABAD",
-   "open_ltrs": 4656.0,
-   "open_pos": 7,
-   "open_units": 3470.0,
-   "order_value": 829378.88,
-   "pending_ltrs": 4656.0,
-   "pending_units": 3470.0
-  },
-  {
-   "city": "NOIDA",
-   "open_ltrs": 4545.0,
-   "open_pos": 6,
-   "open_units": 4073.0,
-   "order_value": 782017.73,
-   "pending_ltrs": 4545.0,
-   "pending_units": 4073.0
+   "open_ltrs": 5076.0,
+   "open_pos": 8,
+   "open_units": 3554.0,
+   "order_value": 894179.0,
+   "pending_ltrs": 5076.0,
+   "pending_units": 3554.0
   },
   {
    "city": "COIMBATORE",
-   "open_ltrs": 3577.0,
-   "open_pos": 12,
-   "open_units": 2879.0,
-   "order_value": 738232.51,
-   "pending_ltrs": 3577.0,
-   "pending_units": 2879.0
-  },
-  {
-   "city": "JAIPUR",
-   "open_ltrs": 2963.0,
-   "open_pos": 6,
-   "open_units": 2362.0,
-   "order_value": 523733.36,
-   "pending_ltrs": 2963.0,
-   "pending_units": 2362.0
-  },
-  {
-   "city": "NAGPUR",
-   "open_ltrs": 2780.0,
-   "open_pos": 5,
-   "open_units": 2058.0,
-   "order_value": 483141.34,
-   "pending_ltrs": 2780.0,
-   "pending_units": 2058.0
-  },
-  {
-   "city": "VIZAG",
-   "open_ltrs": 2244.0,
-   "open_pos": 7,
-   "open_units": 1338.0,
-   "order_value": 380762.18,
-   "pending_ltrs": 2244.0,
-   "pending_units": 1338.0
-  },
-  {
-   "city": "CENTRAL GOA",
-   "open_ltrs": 1940.0,
-   "open_pos": 6,
-   "open_units": 1740.0,
-   "order_value": 347211.6,
-   "pending_ltrs": 1940.0,
-   "pending_units": 1740.0
-  },
-  {
-   "city": "LUCKNOW",
-   "open_ltrs": 1854.0,
-   "open_pos": 7,
-   "open_units": 1617.0,
-   "order_value": 330537.69,
-   "pending_ltrs": 1854.0,
-   "pending_units": 1617.0
-  },
-  {
-   "city": "GUWAHATI",
-   "open_ltrs": 1596.0,
-   "open_pos": 6,
-   "open_units": 1446.0,
-   "order_value": 322767.3,
-   "pending_ltrs": 1596.0,
-   "pending_units": 1446.0
+   "open_ltrs": 4427.0,
+   "open_pos": 13,
+   "open_units": 3536.0,
+   "order_value": 888659.34,
+   "pending_ltrs": 4427.0,
+   "pending_units": 3536.0
   },
   {
    "city": "GURUGRAM",
-   "open_ltrs": 924.0,
-   "open_pos": 2,
-   "open_units": 914.0,
-   "order_value": 174703.54,
-   "pending_ltrs": 924.0,
-   "pending_units": 914.0
+   "open_ltrs": 4220.0,
+   "open_pos": 6,
+   "open_units": 4052.0,
+   "order_value": 665019.04,
+   "pending_ltrs": 4220.0,
+   "pending_units": 4052.0
+  },
+  {
+   "city": "NAGPUR",
+   "open_ltrs": 3240.0,
+   "open_pos": 6,
+   "open_units": 2374.0,
+   "order_value": 558435.46,
+   "pending_ltrs": 3240.0,
+   "pending_units": 2374.0
+  },
+  {
+   "city": "GUWAHATI",
+   "open_ltrs": 3052.0,
+   "open_pos": 6,
+   "open_units": 2778.0,
+   "order_value": 606433.38,
+   "pending_ltrs": 3052.0,
+   "pending_units": 2778.0
+  },
+  {
+   "city": "NOIDA",
+   "open_ltrs": 2747.0,
+   "open_pos": 3,
+   "open_units": 2495.0,
+   "order_value": 474859.51,
+   "pending_ltrs": 2747.0,
+   "pending_units": 2495.0
+  },
+  {
+   "city": "VIZAG",
+   "open_ltrs": 2736.0,
+   "open_pos": 8,
+   "open_units": 1622.0,
+   "order_value": 458591.42,
+   "pending_ltrs": 2736.0,
+   "pending_units": 1622.0
+  },
+  {
+   "city": "LUCKNOW",
+   "open_ltrs": 2334.0,
+   "open_pos": 8,
+   "open_units": 2097.0,
+   "order_value": 414555.89,
+   "pending_ltrs": 2334.0,
+   "pending_units": 2097.0
+  },
+  {
+   "city": "CENTRAL GOA",
+   "open_ltrs": 2224.0,
+   "open_pos": 7,
+   "open_units": 2040.0,
+   "order_value": 410203.9,
+   "pending_ltrs": 2224.0,
+   "pending_units": 2040.0
+  },
+  {
+   "city": "JAIPUR",
+   "open_ltrs": 2052.0,
+   "open_pos": 4,
+   "open_units": 1696.0,
+   "order_value": 360280.36,
+   "pending_ltrs": 2052.0,
+   "pending_units": 1696.0
   },
   {
    "city": "KOCHI",
-   "open_ltrs": 868.0,
-   "open_pos": 6,
-   "open_units": 602.0,
-   "order_value": 159406.66,
-   "pending_ltrs": 868.0,
-   "pending_units": 602.0
+   "open_ltrs": 1228.0,
+   "open_pos": 7,
+   "open_units": 898.0,
+   "order_value": 215445.42,
+   "pending_ltrs": 1228.0,
+   "pending_units": 898.0
   }
  ],
  "by_distributor": [
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "open_ltrs": 60380.0,
-   "open_pos": 96,
-   "open_units": 46703.0,
-   "order_value": 11148189.77,
-   "pending_ltrs": 60380.0,
-   "pending_units": 46703.0
+   "open_ltrs": 72804.0,
+   "open_pos": 104,
+   "open_units": 55658.0,
+   "order_value": 13147360.02,
+   "pending_ltrs": 72804.0,
+   "pending_units": 55658.0
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "open_ltrs": 28818.0,
-   "open_pos": 38,
-   "open_units": 23355.0,
-   "order_value": 5043739.69,
-   "pending_ltrs": 28818.0,
-   "pending_units": 23355.0
+   "open_ltrs": 31982.0,
+   "open_pos": 42,
+   "open_units": 25335.0,
+   "order_value": 5539443.11,
+   "pending_ltrs": 31982.0,
+   "pending_units": 25335.0
   },
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "open_ltrs": 20049.0,
-   "open_pos": 28,
-   "open_units": 17918.0,
-   "order_value": 3450117.44,
-   "pending_ltrs": 20049.0,
-   "pending_units": 17918.0
+   "open_ltrs": 19485.0,
+   "open_pos": 27,
+   "open_units": 17436.0,
+   "order_value": 3342351.6,
+   "pending_ltrs": 19485.0,
+   "pending_units": 17436.0
   },
   {
    "distributor": "EVARA ENTERPRISES",
-   "open_ltrs": 9442.0,
-   "open_pos": 4,
-   "open_units": 8828.0,
-   "order_value": 1485567.24,
-   "pending_ltrs": 9442.0,
-   "pending_units": 8828.0
+   "open_ltrs": 13865.0,
+   "open_pos": 5,
+   "open_units": 13050.0,
+   "order_value": 2181051.16,
+   "pending_ltrs": 13865.0,
+   "pending_units": 13050.0
   },
   {
    "distributor": "BABA LOKENATH TRADERS",
-   "open_ltrs": 4928.0,
+   "open_ltrs": 6724.0,
    "open_pos": 5,
-   "open_units": 4532.0,
-   "order_value": 869753.58,
-   "pending_ltrs": 4928.0,
-   "pending_units": 4532.0
+   "open_units": 6062.0,
+   "order_value": 1185872.16,
+   "pending_ltrs": 6724.0,
+   "pending_units": 6062.0
   }
  ],
  "by_po": [
+  {
+   "distributor": "EVARA ENTERPRISES",
+   "location": "CHANDIGARH",
+   "open_ltrs": 4423.0,
+   "open_pos": 1,
+   "open_units": 4222.0,
+   "order_value": 695483.92,
+   "pending_ltrs": 4423.0,
+   "pending_units": 4222.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "11-07-2026",
+   "po_number": "PCHPO211205"
+  },
   {
    "distributor": "EVARA ENTERPRISES",
    "location": "CHANDIGARH",
@@ -266,6 +279,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "GGNPO370247"
   },
   {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "CHENNAI",
+   "open_ltrs": 3092.0,
+   "open_pos": 1,
+   "open_units": 2692.0,
+   "order_value": 524930.36,
+   "pending_ltrs": 3092.0,
+   "pending_units": 2692.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "JCNPO272698"
+  },
+  {
    "distributor": "EVARA ENTERPRISES",
    "location": "CHANDIGARH",
    "open_ltrs": 3080.0,
@@ -277,6 +303,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "25-06-2026",
    "po_expiry_date": "07-07-2026",
    "po_number": "PCHPO210532"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "HYDERABAD",
+   "open_ltrs": 3028.0,
+   "open_pos": 1,
+   "open_units": 2196.0,
+   "order_value": 510283.72,
+   "pending_ltrs": 3028.0,
+   "pending_units": 2196.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "CHMPO309733"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -372,15 +411,15 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
    "location": "DELHI",
-   "open_ltrs": 2140.0,
+   "open_ltrs": 2045.0,
    "open_pos": 1,
-   "open_units": 2028.0,
-   "order_value": 320282.0,
-   "pending_ltrs": 2140.0,
-   "pending_units": 2028.0,
-   "po_date": "02-06-2026",
-   "po_expiry_date": "11-06-2026",
-   "po_number": "GGNPO363218"
+   "open_units": 1708.0,
+   "order_value": 369816.72,
+   "pending_ltrs": 2045.0,
+   "pending_units": 1708.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "GGNPO371343"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -422,6 +461,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CHMPO309453"
   },
   {
+   "distributor": "BABA LOKENATH TRADERS",
+   "location": "KOLKATA",
+   "open_ltrs": 1872.0,
+   "open_pos": 1,
+   "open_units": 1672.0,
+   "order_value": 297088.92,
+   "pending_ltrs": 1872.0,
+   "pending_units": 1672.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "11-07-2026",
+   "po_number": "KWBPO98374"
+  },
+  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "CHENNAI",
    "open_ltrs": 1858.0,
@@ -450,6 +502,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "HYDERABAD",
+   "open_ltrs": 1720.0,
+   "open_pos": 1,
+   "open_units": 1016.0,
+   "order_value": 278649.56,
+   "pending_ltrs": 1720.0,
+   "pending_units": 1016.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "CMMPO12205"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "HYDERABAD",
    "open_ltrs": 1700.0,
    "open_pos": 1,
    "open_units": 1498.0,
@@ -459,6 +524,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "24-06-2026",
    "po_expiry_date": "26-07-2026",
    "po_number": "CHMPO308762"
+  },
+  {
+   "distributor": "BABA LOKENATH TRADERS",
+   "location": "GUWAHATI",
+   "open_ltrs": 1596.0,
+   "open_pos": 1,
+   "open_units": 1446.0,
+   "order_value": 322767.22,
+   "pending_ltrs": 1596.0,
+   "pending_units": 1446.0,
+   "po_date": "30-06-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "GWAPO36850"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -474,17 +552,17 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CHCPO359000"
   },
   {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "DELHI",
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "MUMBAI",
    "open_ltrs": 1536.0,
    "open_pos": 1,
-   "open_units": 1536.0,
-   "order_value": 261023.04,
+   "open_units": 896.0,
+   "order_value": 270796.88,
    "pending_ltrs": 1536.0,
-   "pending_units": 1536.0,
-   "po_date": "04-06-2026",
-   "po_expiry_date": "12-06-2026",
-   "po_number": "GGNPO363743"
+   "pending_units": 896.0,
+   "po_date": "26-06-2026",
+   "po_expiry_date": "05-07-2026",
+   "po_number": "CI3PO70122"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -500,19 +578,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CHMPO307156"
   },
   {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "MUMBAI",
-   "open_ltrs": 1490.0,
-   "open_pos": 1,
-   "open_units": 1171.0,
-   "order_value": 252103.23,
-   "pending_ltrs": 1490.0,
-   "pending_units": 1171.0,
-   "po_date": "24-06-2026",
-   "po_expiry_date": "02-07-2026",
-   "po_number": "CMFPO333489"
-  },
-  {
    "distributor": "BABA LOKENATH TRADERS",
    "location": "KOLKATA",
    "open_ltrs": 1408.0,
@@ -524,6 +589,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "26-06-2026",
    "po_expiry_date": "08-07-2026",
    "po_number": "KWBPO97883"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "GURGAON",
+   "open_ltrs": 1400.0,
+   "open_pos": 1,
+   "open_units": 1390.0,
+   "order_value": 217197.3,
+   "pending_ltrs": 1400.0,
+   "pending_units": 1390.0,
+   "po_date": "26-06-2026",
+   "po_expiry_date": "05-07-2026",
+   "po_number": "FC5PO411524"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -565,6 +643,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "MBDPO21275"
   },
   {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "HYDERABAD",
+   "open_ltrs": 1360.0,
+   "open_pos": 1,
+   "open_units": 752.0,
+   "order_value": 220477.64,
+   "pending_ltrs": 1360.0,
+   "pending_units": 752.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "CHCPO360735"
+  },
+  {
    "distributor": "BABA LOKENATH TRADERS",
    "location": "KOLKATA",
    "open_ltrs": 1348.0,
@@ -576,6 +667,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "26-06-2026",
    "po_expiry_date": "08-07-2026",
    "po_number": "KWBPO97673"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "MUMBAI",
+   "open_ltrs": 1340.0,
+   "open_pos": 1,
+   "open_units": 1340.0,
+   "order_value": 235251.84,
+   "pending_ltrs": 1340.0,
+   "pending_units": 1340.0,
+   "po_date": "27-06-2026",
+   "po_expiry_date": "06-07-2026",
+   "po_number": "CI3PO70373"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -617,6 +721,32 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "JCNPO271840"
   },
   {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "GURGAON",
+   "open_ltrs": 1248.0,
+   "open_pos": 1,
+   "open_units": 1248.0,
+   "order_value": 201023.68,
+   "pending_ltrs": 1248.0,
+   "pending_units": 1248.0,
+   "po_date": "24-06-2026",
+   "po_expiry_date": "03-07-2026",
+   "po_number": "FC5PO410868"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "BANGALORE",
+   "open_ltrs": 1200.0,
+   "open_pos": 1,
+   "open_units": 992.0,
+   "order_value": 195139.16,
+   "pending_ltrs": 1200.0,
+   "pending_units": 992.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "17-07-2026",
+   "po_number": "MBLPO415077"
+  },
+  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "PUNE",
    "open_ltrs": 1176.0,
@@ -628,19 +758,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "20-06-2026",
    "po_expiry_date": "29-06-2026",
    "po_number": "CPDPO282376"
-  },
-  {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "MUMBAI",
-   "open_ltrs": 1150.0,
-   "open_pos": 1,
-   "open_units": 769.0,
-   "order_value": 220024.13,
-   "pending_ltrs": 1150.0,
-   "pending_units": 769.0,
-   "po_date": "22-06-2026",
-   "po_expiry_date": "01-07-2026",
-   "po_number": "CMFPO333236"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -695,43 +812,17 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "MBLPO414542"
   },
   {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "MUMBAI",
-   "open_ltrs": 1080.0,
-   "open_pos": 1,
-   "open_units": 824.0,
-   "order_value": 165105.52,
-   "pending_ltrs": 1080.0,
-   "pending_units": 824.0,
-   "po_date": "25-06-2026",
-   "po_expiry_date": "04-07-2026",
-   "po_number": "CMFPO334415"
-  },
-  {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "NOIDA",
-   "open_ltrs": 1060.0,
+   "location": "GURGAON",
+   "open_ltrs": 1052.0,
    "open_pos": 1,
-   "open_units": 1012.0,
-   "order_value": 186169.56,
-   "pending_ltrs": 1060.0,
-   "pending_units": 1012.0,
-   "po_date": "27-06-2026",
-   "po_expiry_date": "06-07-2026",
-   "po_number": "ETPPO71970"
-  },
-  {
-   "distributor": "BABA LOKENATH TRADERS",
-   "location": "KOLKATA",
-   "open_ltrs": 1056.0,
-   "open_pos": 1,
-   "open_units": 988.0,
-   "order_value": 185624.08,
-   "pending_ltrs": 1056.0,
-   "pending_units": 988.0,
+   "open_units": 958.0,
+   "order_value": 166263.1,
+   "pending_ltrs": 1052.0,
+   "pending_units": 958.0,
    "po_date": "24-06-2026",
-   "po_expiry_date": "06-07-2026",
-   "po_number": "KWBPO97007"
+   "po_expiry_date": "03-07-2026",
+   "po_number": "FC5PO410336"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -745,6 +836,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "25-06-2026",
    "po_expiry_date": "27-07-2026",
    "po_number": "CMMPO12051"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "MUMBAI",
+   "open_ltrs": 1040.0,
+   "open_pos": 1,
+   "open_units": 800.0,
+   "order_value": 167143.08,
+   "pending_ltrs": 1040.0,
+   "pending_units": 800.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "CIMPO113200"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -838,6 +942,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CHMPO308978"
   },
   {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "PUNE",
+   "open_ltrs": 940.0,
+   "open_pos": 1,
+   "open_units": 188.0,
+   "order_value": 145028.84,
+   "pending_ltrs": 940.0,
+   "pending_units": 188.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "09-07-2026",
+   "po_number": "CPDPO284826"
+  },
+  {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
    "location": "JAIPUR",
    "open_ltrs": 924.0,
@@ -916,19 +1033,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "MBDPO21394"
   },
   {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "GURGAON",
-   "open_ltrs": 860.0,
-   "open_pos": 1,
-   "open_units": 850.0,
-   "order_value": 165255.86,
-   "pending_ltrs": 860.0,
-   "pending_units": 850.0,
-   "po_date": "22-06-2026",
-   "po_expiry_date": "01-07-2026",
-   "po_number": "FC5PO409855"
-  },
-  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "BANGALORE",
    "open_ltrs": 856.0,
@@ -940,6 +1044,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "22-06-2026",
    "po_expiry_date": "10-07-2026",
    "po_number": "MBDPO20973"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "COIMBATORE",
+   "open_ltrs": 850.0,
+   "open_pos": 1,
+   "open_units": 657.0,
+   "order_value": 150426.83,
+   "pending_ltrs": 850.0,
+   "pending_units": 657.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "JCEPO181497"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -1020,6 +1137,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "MBDPO20421"
   },
   {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "MUMBAI",
+   "open_ltrs": 738.0,
+   "open_pos": 1,
+   "open_units": 705.0,
+   "order_value": 121944.45,
+   "pending_ltrs": 738.0,
+   "pending_units": 705.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "CI3PO70667"
+  },
+  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "BANGALORE",
    "open_ltrs": 704.0,
@@ -1059,19 +1189,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CPDPO284569"
   },
   {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "JAIPUR",
-   "open_ltrs": 684.0,
-   "open_pos": 1,
-   "open_units": 524.0,
-   "order_value": 127236.52,
-   "pending_ltrs": 684.0,
-   "pending_units": 524.0,
-   "po_date": "26-06-2026",
-   "po_expiry_date": "05-07-2026",
-   "po_number": "JPAPO58937"
-  },
-  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "AHMEDABAD",
    "open_ltrs": 684.0,
@@ -1099,32 +1216,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "MUMBAI",
-   "open_ltrs": 674.0,
-   "open_pos": 1,
-   "open_units": 515.0,
-   "order_value": 139782.19,
-   "pending_ltrs": 674.0,
-   "pending_units": 515.0,
-   "po_date": "22-06-2026",
-   "po_expiry_date": "01-07-2026",
-   "po_number": "CI3PO68763"
-  },
-  {
-   "distributor": "BABA LOKENATH TRADERS",
-   "location": "KOLKATA",
-   "open_ltrs": 616.0,
-   "open_pos": 1,
-   "open_units": 600.0,
-   "order_value": 118113.48,
-   "pending_ltrs": 616.0,
-   "pending_units": 600.0,
-   "po_date": "22-06-2026",
-   "po_expiry_date": "04-07-2026",
-   "po_number": "KWBPO96751"
-  },
-  {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "NAGPUR",
    "open_ltrs": 616.0,
    "open_pos": 1,
@@ -1135,6 +1226,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "24-06-2026",
    "po_expiry_date": "02-07-2026",
    "po_number": "NARPO16549"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "BANGALORE",
+   "open_ltrs": 616.0,
+   "open_pos": 1,
+   "open_units": 328.0,
+   "order_value": 101429.6,
+   "pending_ltrs": 616.0,
+   "pending_units": 328.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "17-07-2026",
+   "po_number": "MBEPO32822"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -1187,6 +1291,32 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "26-06-2026",
    "po_expiry_date": "05-07-2026",
    "po_number": "CMFPO334809"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "MUMBAI",
+   "open_ltrs": 600.0,
+   "open_pos": 1,
+   "open_units": 344.0,
+   "order_value": 91237.12,
+   "pending_ltrs": 600.0,
+   "pending_units": 344.0,
+   "po_date": "24-06-2026",
+   "po_expiry_date": "03-07-2026",
+   "po_number": "CI3PO69593"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "MUMBAI",
+   "open_ltrs": 588.0,
+   "open_pos": 1,
+   "open_units": 556.0,
+   "order_value": 109712.4,
+   "pending_ltrs": 588.0,
+   "pending_units": 556.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "CMFPO335538"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -1252,19 +1382,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "26-06-2026",
    "po_expiry_date": "05-07-2026",
    "po_number": "CIMPO112867"
-  },
-  {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "NOIDA",
-   "open_ltrs": 552.0,
-   "open_pos": 1,
-   "open_units": 502.0,
-   "order_value": 85941.02,
-   "pending_ltrs": 552.0,
-   "pending_units": 502.0,
-   "po_date": "22-06-2026",
-   "po_expiry_date": "01-07-2026",
-   "po_number": "ETPPO70159"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -1346,16 +1463,29 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "BANGALORE",
-   "open_ltrs": 486.0,
+   "location": "VIZAG",
+   "open_ltrs": 492.0,
    "open_pos": 1,
-   "open_units": 396.0,
-   "order_value": 115999.16,
-   "pending_ltrs": 486.0,
-   "pending_units": 396.0,
-   "po_date": "24-06-2026",
-   "po_expiry_date": "12-07-2026",
-   "po_number": "MBJPO77247"
+   "open_units": 284.0,
+   "order_value": 77829.24,
+   "pending_ltrs": 492.0,
+   "pending_units": 284.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "VIAPO75739"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "LUCKNOW",
+   "open_ltrs": 480.0,
+   "open_pos": 1,
+   "open_units": 480.0,
+   "order_value": 84018.2,
+   "pending_ltrs": 480.0,
+   "pending_units": 480.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "11-07-2026",
+   "po_number": "LKOPO177299"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -1395,6 +1525,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "24-06-2026",
    "po_expiry_date": "03-07-2026",
    "po_number": "NARPO16740"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "NAGPUR",
+   "open_ltrs": 460.0,
+   "open_pos": 1,
+   "open_units": 316.0,
+   "order_value": 75294.12,
+   "pending_ltrs": 460.0,
+   "pending_units": 316.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "NARPO17418"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -1460,6 +1603,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "06-06-2026",
    "po_expiry_date": "23-06-2026",
    "po_number": "GCAPO58722"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "AHMEDABAD",
+   "open_ltrs": 420.0,
+   "open_pos": 1,
+   "open_units": 84.0,
+   "order_value": 64800.12,
+   "pending_ltrs": 420.0,
+   "pending_units": 84.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "CADPO211375"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -1566,19 +1722,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CPDPO280148"
   },
   {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "JAIPUR",
-   "open_ltrs": 368.0,
-   "open_pos": 1,
-   "open_units": 304.0,
-   "order_value": 57656.6,
-   "pending_ltrs": 368.0,
-   "pending_units": 304.0,
-   "po_date": "24-06-2026",
-   "po_expiry_date": "03-07-2026",
-   "po_number": "JPAPO58578"
-  },
-  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "CENTRAL GOA",
    "open_ltrs": 364.0,
@@ -1590,6 +1733,32 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "22-06-2026",
    "po_expiry_date": "09-07-2026",
    "po_number": "GCAPO61817"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "GURGAON",
+   "open_ltrs": 360.0,
+   "open_pos": 1,
+   "open_units": 360.0,
+   "order_value": 55544.4,
+   "pending_ltrs": 360.0,
+   "pending_units": 360.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "FC5PO412167"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "KOCHI",
+   "open_ltrs": 360.0,
+   "open_pos": 1,
+   "open_units": 296.0,
+   "order_value": 56038.76,
+   "pending_ltrs": 360.0,
+   "pending_units": 296.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "KOCPO123813"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -1710,6 +1879,32 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "BANGALORE",
+   "open_ltrs": 304.0,
+   "open_pos": 1,
+   "open_units": 208.0,
+   "order_value": 50951.72,
+   "pending_ltrs": 304.0,
+   "pending_units": 208.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "17-07-2026",
+   "po_number": "MBJPO78732"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "JAIPUR",
+   "open_ltrs": 298.0,
+   "open_pos": 1,
+   "open_units": 304.0,
+   "order_value": 49370.4,
+   "pending_ltrs": 298.0,
+   "pending_units": 304.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "JPAPO59390"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "CHENNAI",
    "open_ltrs": 296.0,
    "open_pos": 1,
@@ -1748,6 +1943,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CMMPO11741"
   },
   {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "CENTRAL GOA",
+   "open_ltrs": 284.0,
+   "open_pos": 1,
+   "open_units": 300.0,
+   "order_value": 62992.3,
+   "pending_ltrs": 284.0,
+   "pending_units": 300.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "GCAPO63100"
+  },
+  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "BANGALORE",
    "open_ltrs": 284.0,
@@ -1772,6 +1980,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "16-06-2026",
    "po_expiry_date": "18-07-2026",
    "po_number": "JCEPO179050"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "BANGALORE",
+   "open_ltrs": 276.0,
+   "open_pos": 1,
+   "open_units": 132.0,
+   "order_value": 45599.64,
+   "pending_ltrs": 276.0,
+   "pending_units": 132.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "17-07-2026",
+   "po_number": "MBDPO21542"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -1878,17 +2099,17 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "VIAPO70790"
   },
   {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "BANGALORE",
-   "open_ltrs": 248.0,
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "NOIDA",
+   "open_ltrs": 237.0,
    "open_pos": 1,
-   "open_units": 88.0,
-   "order_value": 57485.68,
-   "pending_ltrs": 248.0,
-   "pending_units": 88.0,
-   "po_date": "24-06-2026",
-   "po_expiry_date": "12-07-2026",
-   "po_number": "MBJPO77754"
+   "open_units": 120.0,
+   "order_value": 48381.0,
+   "pending_ltrs": 237.0,
+   "pending_units": 120.0,
+   "po_date": "29-06-2026",
+   "po_expiry_date": "08-07-2026",
+   "po_number": "ETPPO72630"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -1930,32 +2151,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "MBDPO20850"
   },
   {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "MUMBAI",
-   "open_ltrs": 218.0,
-   "open_pos": 1,
-   "open_units": 199.0,
-   "order_value": 40588.59,
-   "pending_ltrs": 218.0,
-   "pending_units": 199.0,
-   "po_date": "20-06-2026",
-   "po_expiry_date": "29-06-2026",
-   "po_number": "CMFPO332467"
-  },
-  {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "NOIDA",
-   "open_ltrs": 217.0,
-   "open_pos": 1,
-   "open_units": 92.0,
-   "order_value": 38990.52,
-   "pending_ltrs": 217.0,
-   "pending_units": 92.0,
-   "po_date": "24-06-2026",
-   "po_expiry_date": "03-07-2026",
-   "po_number": "ETPPO70990"
-  },
-  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "HYDERABAD",
    "open_ltrs": 212.0,
@@ -1969,32 +2164,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "CHCPO354997"
   },
   {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "NOIDA",
-   "open_ltrs": 206.0,
-   "open_pos": 1,
-   "open_units": 92.0,
-   "order_value": 44438.12,
-   "pending_ltrs": 206.0,
-   "pending_units": 92.0,
-   "po_date": "26-06-2026",
-   "po_expiry_date": "05-07-2026",
-   "po_number": "ETPPO71695"
-  },
-  {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "LUCKNOW",
-   "open_ltrs": 204.0,
-   "open_pos": 1,
-   "open_units": 204.0,
-   "order_value": 35904.24,
-   "pending_ltrs": 204.0,
-   "pending_units": 204.0,
-   "po_date": "18-06-2026",
-   "po_expiry_date": "30-06-2026",
-   "po_number": "LKOPO175495"
-  },
-  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "BANGALORE",
    "open_ltrs": 204.0,
@@ -2006,6 +2175,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "18-06-2026",
    "po_expiry_date": "06-07-2026",
    "po_number": "MBDPO20669"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "LUCKNOW",
+   "open_ltrs": 204.0,
+   "open_pos": 1,
+   "open_units": 204.0,
+   "order_value": 35904.24,
+   "pending_ltrs": 204.0,
+   "pending_units": 204.0,
+   "po_date": "18-06-2026",
+   "po_expiry_date": "18-07-2026",
+   "po_number": "LKOPO175495"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -2138,19 +2320,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "KOCPO122289"
   },
   {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "MUMBAI",
-   "open_ltrs": 170.0,
-   "open_pos": 1,
-   "open_units": 71.0,
-   "order_value": 30894.07,
-   "pending_ltrs": 170.0,
-   "pending_units": 71.0,
-   "po_date": "20-06-2026",
-   "po_expiry_date": "29-06-2026",
-   "po_number": "CMFPO332759"
-  },
-  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "BANGALORE",
    "open_ltrs": 160.0,
@@ -2162,19 +2331,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "20-06-2026",
    "po_expiry_date": "08-07-2026",
    "po_number": "MBEPO31038"
-  },
-  {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "AHMEDABAD",
-   "open_ltrs": 160.0,
-   "open_pos": 1,
-   "open_units": 32.0,
-   "order_value": 29714.24,
-   "pending_ltrs": 160.0,
-   "pending_units": 32.0,
-   "po_date": "20-06-2026",
-   "po_expiry_date": "28-06-2026",
-   "po_number": "CADPO209785"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -2190,17 +2346,17 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_number": "JCEPO181318"
   },
   {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "JAIPUR",
-   "open_ltrs": 157.0,
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "AHMEDABAD",
+   "open_ltrs": 160.0,
    "open_pos": 1,
-   "open_units": 142.0,
-   "order_value": 27930.28,
-   "pending_ltrs": 157.0,
-   "pending_units": 142.0,
-   "po_date": "22-06-2026",
-   "po_expiry_date": "01-07-2026",
-   "po_number": "JPAPO58095"
+   "open_units": 32.0,
+   "order_value": 29714.24,
+   "pending_ltrs": 160.0,
+   "pending_units": 32.0,
+   "po_date": "20-06-2026",
+   "po_expiry_date": "28-06-2026",
+   "po_number": "CADPO209785"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -2295,19 +2451,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "GUWAHATI",
-   "open_ltrs": 140.0,
-   "open_pos": 1,
-   "open_units": 114.0,
-   "order_value": 39101.14,
-   "pending_ltrs": 140.0,
-   "pending_units": 114.0,
-   "po_date": "24-06-2026",
-   "po_expiry_date": "25-07-2026",
-   "po_number": "GWAPO36188"
-  },
-  {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "COIMBATORE",
    "open_ltrs": 139.0,
    "open_pos": 1,
@@ -2370,6 +2513,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "18-06-2026",
    "po_expiry_date": "27-06-2026",
    "po_number": "GGNPO368486"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "GURGAON",
+   "open_ltrs": 96.0,
+   "open_pos": 1,
+   "open_units": 32.0,
+   "order_value": 15542.88,
+   "pending_ltrs": 96.0,
+   "pending_units": 32.0,
+   "po_date": "26-06-2026",
+   "po_expiry_date": "05-07-2026",
+   "po_number": "FC5PO411264"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -2438,19 +2594,6 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "GUWAHATI",
-   "open_ltrs": 20.0,
-   "open_pos": 1,
-   "open_units": 20.0,
-   "order_value": 4095.2,
-   "pending_ltrs": 20.0,
-   "pending_units": 20.0,
-   "po_date": "12-06-2026",
-   "po_expiry_date": "14-07-2026",
-   "po_number": "GWAPO34976"
-  },
-  {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "BANGALORE",
    "open_ltrs": 20.0,
    "open_pos": 1,
@@ -2461,90 +2604,103 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "po_date": "18-06-2026",
    "po_expiry_date": "06-07-2026",
    "po_number": "MBEPO30206"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "GUWAHATI",
+   "open_ltrs": 20.0,
+   "open_pos": 1,
+   "open_units": 20.0,
+   "order_value": 4095.2,
+   "pending_ltrs": 20.0,
+   "pending_units": 20.0,
+   "po_date": "12-06-2026",
+   "po_expiry_date": "14-07-2026",
+   "po_number": "GWAPO34976"
   }
  ],
  "by_sku": [
   {
    "item": "GROUNDNUT 1L",
-   "open_ltrs": 35408.0,
-   "open_pos": 88,
-   "open_units": 35408.0,
-   "order_value": 6474924.16,
-   "pending_ltrs": 35408.0,
-   "pending_units": 35408.0,
+   "open_ltrs": 41024.0,
+   "open_pos": 93,
+   "open_units": 41024.0,
+   "order_value": 7485605.12,
+   "pending_ltrs": 41024.0,
+   "pending_units": 41024.0,
    "sku_code": "390730",
    "sku_name": "Jivo Cold Pressed oil Groundnut Oil 1.0 ltr"
   },
   {
    "item": "MUSTARD 1L",
-   "open_ltrs": 25560.0,
-   "open_pos": 78,
-   "open_units": 25560.0,
-   "order_value": 3821731.2,
-   "pending_ltrs": 25560.0,
-   "pending_units": 25560.0,
+   "open_ltrs": 32360.0,
+   "open_pos": 90,
+   "open_units": 32360.0,
+   "order_value": 4838467.2,
+   "pending_ltrs": 32360.0,
+   "pending_units": 32360.0,
    "sku_code": "60711",
    "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr"
   },
   {
    "item": "SUNFLOWER 1L",
-   "open_ltrs": 23020.0,
-   "open_pos": 87,
-   "open_units": 23020.0,
-   "order_value": 3551755.8,
-   "pending_ltrs": 23020.0,
-   "pending_units": 23020.0,
+   "open_ltrs": 25500.0,
+   "open_pos": 89,
+   "open_units": 25500.0,
+   "order_value": 3934395.0,
+   "pending_ltrs": 25500.0,
+   "pending_units": 25500.0,
    "sku_code": "83633",
    "sku_name": "Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr"
   },
   {
-   "item": "GROUNDNUT 5L",
-   "open_ltrs": 14940.0,
-   "open_pos": 92,
-   "open_units": 2988.0,
-   "order_value": 2766492.08,
-   "pending_ltrs": 14940.0,
-   "pending_units": 2988.0,
-   "sku_code": "401502",
-   "sku_name": "Jivo Cold Pressed oil Groundnut Oil 5.0 ltr"
-  },
-  {
    "item": "SUNFLOWER 5L",
-   "open_ltrs": 12000.0,
-   "open_pos": 70,
-   "open_units": 2400.0,
-   "order_value": 1851432.0,
-   "pending_ltrs": 12000.0,
-   "pending_units": 2400.0,
+   "open_ltrs": 16800.0,
+   "open_pos": 80,
+   "open_units": 3360.0,
+   "order_value": 2592004.8,
+   "pending_ltrs": 16800.0,
+   "pending_units": 3360.0,
    "sku_code": "685793",
    "sku_name": "Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr"
   },
   {
+   "item": "GROUNDNUT 5L",
+   "open_ltrs": 16700.0,
+   "open_pos": 96,
+   "open_units": 3340.0,
+   "order_value": 3092282.2,
+   "pending_ltrs": 16700.0,
+   "pending_units": 3340.0,
+   "sku_code": "401502",
+   "sku_name": "Jivo Cold Pressed oil Groundnut Oil 5.0 ltr"
+  },
+  {
    "item": "EXTRA LIGHT 1L",
-   "open_ltrs": 1984.0,
-   "open_pos": 45,
-   "open_units": 1984.0,
-   "order_value": 944760.96,
-   "pending_ltrs": 1984.0,
-   "pending_units": 1984.0,
+   "open_ltrs": 1760.0,
+   "open_pos": 42,
+   "open_units": 1760.0,
+   "order_value": 838094.4,
+   "pending_ltrs": 1760.0,
+   "pending_units": 1760.0,
    "sku_code": "15687",
    "sku_name": "Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr"
   },
   {
    "item": "GOLD 1L",
-   "open_ltrs": 1620.0,
-   "open_pos": 22,
-   "open_units": 1620.0,
-   "order_value": 234511.2,
-   "pending_ltrs": 1620.0,
-   "pending_units": 1620.0,
+   "open_ltrs": 1660.0,
+   "open_pos": 25,
+   "open_units": 1660.0,
+   "order_value": 240301.6,
+   "pending_ltrs": 1660.0,
+   "pending_units": 1660.0,
    "sku_code": "429981",
    "sku_name": "Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr"
   },
   {
    "item": "GROUNDNUT 2L",
    "open_ltrs": 1320.0,
-   "open_pos": 12,
+   "open_pos": 13,
    "open_units": 660.0,
    "order_value": 227541.6,
    "pending_ltrs": 1320.0,
@@ -2554,41 +2710,41 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   },
   {
    "item": "JIVO POMACE 1L",
-   "open_ltrs": 1088.0,
-   "open_pos": 39,
-   "open_units": 1088.0,
-   "order_value": 404115.84,
-   "pending_ltrs": 1088.0,
-   "pending_units": 1088.0,
+   "open_ltrs": 1120.0,
+   "open_pos": 40,
+   "open_units": 1120.0,
+   "order_value": 416001.6,
+   "pending_ltrs": 1120.0,
+   "pending_units": 1120.0,
    "sku_code": "21709",
    "sku_name": "Jivo Daily Cooking Pomace Olive Oil 1.0 ltr"
   },
   {
    "item": "CANOLA 1L",
-   "open_ltrs": 940.0,
-   "open_pos": 39,
-   "open_units": 940.0,
-   "order_value": 192474.4,
-   "pending_ltrs": 940.0,
-   "pending_units": 940.0,
+   "open_ltrs": 1000.0,
+   "open_pos": 40,
+   "open_units": 1000.0,
+   "order_value": 204760.0,
+   "pending_ltrs": 1000.0,
+   "pending_units": 1000.0,
    "sku_code": "15685",
    "sku_name": "Jivo Canola Cold Press Edible Oil 1.0 ltr"
   },
   {
    "item": "GOLD 5L",
-   "open_ltrs": 940.0,
-   "open_pos": 16,
-   "open_units": 188.0,
-   "order_value": 136076.28,
-   "pending_ltrs": 940.0,
-   "pending_units": 188.0,
+   "open_ltrs": 920.0,
+   "open_pos": 15,
+   "open_units": 184.0,
+   "order_value": 133181.04,
+   "pending_ltrs": 920.0,
+   "pending_units": 184.0,
    "sku_code": "615911",
    "sku_name": "Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr"
   },
   {
    "item": "RICE BRAN 1L",
    "open_ltrs": 880.0,
-   "open_pos": 28,
+   "open_pos": 27,
    "open_units": 880.0,
    "order_value": 129905.6,
    "pending_ltrs": 880.0,
@@ -2598,124 +2754,113 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   },
   {
    "item": "SO OLIVE 1L",
-   "open_ltrs": 624.0,
-   "open_pos": 34,
-   "open_units": 624.0,
-   "order_value": 124800.0,
-   "pending_ltrs": 624.0,
-   "pending_units": 624.0,
+   "open_ltrs": 720.0,
+   "open_pos": 36,
+   "open_units": 720.0,
+   "order_value": 144000.0,
+   "pending_ltrs": 720.0,
+   "pending_units": 720.0,
    "sku_code": "968589",
    "sku_name": "Jivo SO OLive Oil 1L 1.0 ltr"
   },
   {
-   "item": "MUSTARD 5L",
-   "open_ltrs": 600.0,
-   "open_pos": 17,
-   "open_units": 120.0,
-   "order_value": 89714.4,
-   "pending_ltrs": 600.0,
-   "pending_units": 120.0,
-   "sku_code": "904426",
-   "sku_name": "Jivo Cold Pressed Mustard Oil 5L 5.0 ltr"
-  },
-  {
    "item": "JIVO POMACE 2L",
-   "open_ltrs": 520.0,
+   "open_ltrs": 560.0,
    "open_pos": 25,
-   "open_units": 260.0,
-   "order_value": 190665.8,
-   "pending_ltrs": 520.0,
-   "pending_units": 260.0,
+   "open_units": 280.0,
+   "order_value": 205332.4,
+   "pending_ltrs": 560.0,
+   "pending_units": 280.0,
    "sku_code": "88218",
    "sku_name": "Jivo Pomace Daily Cooking Olive Oil 2.0 ltr"
   },
   {
+   "item": "MUSTARD 5L",
+   "open_ltrs": 500.0,
+   "open_pos": 17,
+   "open_units": 100.0,
+   "order_value": 74762.0,
+   "pending_ltrs": 500.0,
+   "pending_units": 100.0,
+   "sku_code": "904426",
+   "sku_name": "Jivo Cold Pressed Mustard Oil 5L 5.0 ltr"
+  },
+  {
    "item": "EXTRA VIRGIN 250ML",
-   "open_ltrs": 501.0,
+   "open_ltrs": 494.0,
    "open_pos": 32,
-   "open_units": 2004.0,
-   "order_value": 391260.96,
-   "pending_ltrs": 501.0,
-   "pending_units": 2004.0,
+   "open_units": 1976.0,
+   "order_value": 385794.24,
+   "pending_ltrs": 494.0,
+   "pending_units": 1976.0,
    "sku_code": "240878",
    "sku_name": "Jivo Extra Virgin Olive Oil 250.0 ml"
   },
   {
    "item": "CANOLA 5+1L",
-   "open_ltrs": 432.0,
-   "open_pos": 19,
-   "open_units": 72.0,
-   "order_value": 88457.04,
-   "pending_ltrs": 432.0,
-   "pending_units": 72.0,
+   "open_ltrs": 378.0,
+   "open_pos": 16,
+   "open_units": 63.0,
+   "order_value": 77399.91,
+   "pending_ltrs": 378.0,
+   "pending_units": 63.0,
    "sku_code": "15686",
    "sku_name": "Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr"
   },
   {
-   "item": "RICE BRAN 5L",
-   "open_ltrs": 380.0,
-   "open_pos": 12,
-   "open_units": 76.0,
-   "order_value": 56095.48,
-   "pending_ltrs": 380.0,
-   "pending_units": 76.0,
-   "sku_code": "766072",
-   "sku_name": "Jivo Ricebran Oil 5L 5.0 ltr"
-  },
-  {
    "item": "EXTRA LIGHT 2L",
-   "open_ltrs": 320.0,
-   "open_pos": 15,
-   "open_units": 160.0,
-   "order_value": 149332.8,
-   "pending_ltrs": 320.0,
-   "pending_units": 160.0,
+   "open_ltrs": 340.0,
+   "open_pos": 16,
+   "open_units": 170.0,
+   "order_value": 158666.1,
+   "pending_ltrs": 340.0,
+   "pending_units": 170.0,
    "sku_code": "449236",
    "sku_name": "Jivo Extra Light Olive Oil 2.0 ltr"
   },
   {
+   "item": "RICE BRAN 5L",
+   "open_ltrs": 340.0,
+   "open_pos": 12,
+   "open_units": 68.0,
+   "order_value": 50190.68,
+   "pending_ltrs": 340.0,
+   "pending_units": 68.0,
+   "sku_code": "766072",
+   "sku_name": "Jivo Ricebran Oil 5L 5.0 ltr"
+  },
+  {
    "item": "YELLOW MUSTARD 1L",
-   "open_ltrs": 288.0,
-   "open_pos": 8,
-   "open_units": 288.0,
-   "order_value": 52113.6,
-   "pending_ltrs": 288.0,
-   "pending_units": 288.0,
+   "open_ltrs": 208.0,
+   "open_pos": 6,
+   "open_units": 208.0,
+   "order_value": 37637.6,
+   "pending_ltrs": 208.0,
+   "pending_units": 208.0,
    "sku_code": "98631",
    "sku_name": "Jivo First Pressed Yellow Mustard Oil 1.0 ltr"
+  },
+  {
+   "item": "EXTRA LIGHT 5L",
+   "open_ltrs": 140.0,
+   "open_pos": 5,
+   "open_units": 28.0,
+   "order_value": 64000.0,
+   "pending_ltrs": 140.0,
+   "pending_units": 28.0,
+   "sku_code": "95788",
+   "sku_name": "Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr"
   },
   {
    "item": "SESAME OIL 1L",
    "open_ltrs": 100.0,
    "open_pos": 2,
    "open_units": 100.0,
-   "order_value": 24438.0,
+   "order_value": 24476.0,
    "pending_ltrs": 100.0,
    "pending_units": 100.0,
    "sku_code": "952130",
    "sku_name": "Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr"
-  },
-  {
-   "item": "EXTRA LIGHT 5L",
-   "open_ltrs": 100.0,
-   "open_pos": 4,
-   "open_units": 20.0,
-   "order_value": 45714.32,
-   "pending_ltrs": 100.0,
-   "pending_units": 20.0,
-   "sku_code": "95788",
-   "sku_name": "Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr"
-  },
-  {
-   "item": "EXTRA VIRGIN 1L",
-   "open_ltrs": 32.0,
-   "open_pos": 2,
-   "open_units": 32.0,
-   "order_value": 21638.08,
-   "pending_ltrs": 32.0,
-   "pending_units": 32.0,
-   "sku_code": "67229",
-   "sku_name": "Jivo Extra Virgin Olive Oil 1.0 ltr"
   },
   {
    "item": "JIVO POMACE 5L",
@@ -2729,11 +2874,33 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "sku_name": "Jivo Pomace Olive Oil 5.0 ltr"
   },
   {
+   "item": "EXTRA VIRGIN 1L",
+   "open_ltrs": 16.0,
+   "open_pos": 1,
+   "open_units": 16.0,
+   "order_value": 10819.04,
+   "pending_ltrs": 16.0,
+   "pending_units": 16.0,
+   "sku_code": "67229",
+   "sku_name": "Jivo Extra Virgin Olive Oil 1.0 ltr"
+  },
+  {
+   "item": "SODA LEMON 750 ML",
+   "open_ltrs": 0.0,
+   "open_pos": 7,
+   "open_units": 300.0,
+   "order_value": 7967.4,
+   "pending_ltrs": 0.0,
+   "pending_units": 300.0,
+   "sku_code": "900724",
+   "sku_name": "Jivo  Fizzy Flavoured Soda (Lemon) 750.0 ml"
+  },
+  {
    "item": "SODA PEACH 750ML",
    "open_ltrs": 0.0,
    "open_pos": 6,
    "open_units": 300.0,
-   "order_value": 7628.28,
+   "order_value": 7571.76,
    "pending_ltrs": 0.0,
    "pending_units": 300.0,
    "sku_code": "278756",
@@ -2742,24 +2909,13 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   {
    "item": "WATER 1L",
    "open_ltrs": 0.0,
-   "open_pos": 9,
-   "open_units": 252.0,
-   "order_value": 5081.88,
+   "open_pos": 10,
+   "open_units": 288.0,
+   "order_value": 5815.68,
    "pending_ltrs": 0.0,
-   "pending_units": 252.0,
+   "pending_units": 288.0,
    "sku_code": "149270",
    "sku_name": "JIVO NATURAL MINERALS WATER 1.0 ltr"
-  },
-  {
-   "item": "SODA LEMON 750 ML",
-   "open_ltrs": 0.0,
-   "open_pos": 6,
-   "open_units": 216.0,
-   "order_value": 5600.88,
-   "pending_ltrs": 0.0,
-   "pending_units": 216.0,
-   "sku_code": "900724",
-   "sku_name": "Jivo  Fizzy Flavoured Soda (Lemon) 750.0 ml"
   },
   {
    "item": "SODA LEMON 750 ML",
@@ -2786,190 +2942,190 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
  ],
  "by_warehouse": [
   {
-   "open_ltrs": 25002.0,
-   "open_pos": 21,
-   "open_units": 17975.0,
-   "order_value": 4297086.03,
-   "pending_ltrs": 25002.0,
-   "pending_units": 17975.0,
+   "open_ltrs": 31110.0,
+   "open_pos": 24,
+   "open_units": 21939.0,
+   "order_value": 5306496.95,
+   "pending_ltrs": 31110.0,
+   "pending_units": 21939.0,
    "warehouse": "HYDERABAD"
   },
   {
-   "open_ltrs": 17708.0,
-   "open_pos": 35,
-   "open_units": 14346.0,
-   "order_value": 3530570.88,
-   "pending_ltrs": 17708.0,
-   "pending_units": 14346.0,
+   "open_ltrs": 19370.0,
+   "open_pos": 37,
+   "open_units": 15522.0,
+   "order_value": 3750206.16,
+   "pending_ltrs": 19370.0,
+   "pending_units": 15522.0,
    "warehouse": "BANGALORE"
   },
   {
-   "open_ltrs": 9798.0,
-   "open_pos": 12,
-   "open_units": 7771.0,
-   "order_value": 1723174.07,
-   "pending_ltrs": 9798.0,
-   "pending_units": 7771.0,
-   "warehouse": "MUMBAI"
-  },
-  {
-   "open_ltrs": 9763.0,
-   "open_pos": 7,
-   "open_units": 8952.0,
-   "order_value": 1639125.12,
-   "pending_ltrs": 9763.0,
-   "pending_units": 8952.0,
-   "warehouse": "DELHI"
-  },
-  {
-   "open_ltrs": 9644.0,
-   "open_pos": 8,
-   "open_units": 8316.0,
-   "order_value": 1660833.8,
-   "pending_ltrs": 9644.0,
-   "pending_units": 8316.0,
-   "warehouse": "PUNE"
-  },
-  {
-   "open_ltrs": 9442.0,
-   "open_pos": 4,
-   "open_units": 8828.0,
-   "order_value": 1485567.24,
-   "pending_ltrs": 9442.0,
-   "pending_units": 8828.0,
+   "open_ltrs": 13865.0,
+   "open_pos": 5,
+   "open_units": 13050.0,
+   "order_value": 2181051.16,
+   "pending_ltrs": 13865.0,
+   "pending_units": 13050.0,
    "warehouse": "CHANDIGARH"
   },
   {
-   "open_ltrs": 9385.0,
-   "open_pos": 9,
-   "open_units": 8117.0,
-   "order_value": 1719364.21,
-   "pending_ltrs": 9385.0,
-   "pending_units": 8117.0,
+   "open_ltrs": 12477.0,
+   "open_pos": 10,
+   "open_units": 10809.0,
+   "order_value": 2244294.57,
+   "pending_ltrs": 12477.0,
+   "pending_units": 10809.0,
    "warehouse": "CHENNAI"
   },
   {
-   "open_ltrs": 4928.0,
-   "open_pos": 5,
-   "open_units": 4532.0,
-   "order_value": 869753.58,
-   "pending_ltrs": 4928.0,
-   "pending_units": 4532.0,
+   "open_ltrs": 10858.0,
+   "open_pos": 12,
+   "open_units": 8863.0,
+   "order_value": 1870762.11,
+   "pending_ltrs": 10858.0,
+   "pending_units": 8863.0,
+   "warehouse": "MUMBAI"
+  },
+  {
+   "open_ltrs": 10584.0,
+   "open_pos": 9,
+   "open_units": 8504.0,
+   "order_value": 1805862.64,
+   "pending_ltrs": 10584.0,
+   "pending_units": 8504.0,
+   "warehouse": "PUNE"
+  },
+  {
+   "open_ltrs": 8132.0,
+   "open_pos": 6,
+   "open_units": 7096.0,
+   "order_value": 1427636.8,
+   "pending_ltrs": 8132.0,
+   "pending_units": 7096.0,
+   "warehouse": "DELHI"
+  },
+  {
+   "open_ltrs": 5128.0,
+   "open_pos": 4,
+   "open_units": 4616.0,
+   "order_value": 863104.94,
+   "pending_ltrs": 5128.0,
+   "pending_units": 4616.0,
    "warehouse": "KOLKATA"
   },
   {
-   "open_ltrs": 4656.0,
-   "open_pos": 7,
-   "open_units": 3470.0,
-   "order_value": 829378.88,
-   "pending_ltrs": 4656.0,
-   "pending_units": 3470.0,
+   "open_ltrs": 5076.0,
+   "open_pos": 8,
+   "open_units": 3554.0,
+   "order_value": 894179.0,
+   "pending_ltrs": 5076.0,
+   "pending_units": 3554.0,
    "warehouse": "AHMEDABAD"
   },
   {
-   "open_ltrs": 4545.0,
-   "open_pos": 6,
-   "open_units": 4073.0,
-   "order_value": 782017.73,
-   "pending_ltrs": 4545.0,
-   "pending_units": 4073.0,
-   "warehouse": "NOIDA"
-  },
-  {
-   "open_ltrs": 3577.0,
-   "open_pos": 12,
-   "open_units": 2879.0,
-   "order_value": 738232.51,
-   "pending_ltrs": 3577.0,
-   "pending_units": 2879.0,
+   "open_ltrs": 4427.0,
+   "open_pos": 13,
+   "open_units": 3536.0,
+   "order_value": 888659.34,
+   "pending_ltrs": 4427.0,
+   "pending_units": 3536.0,
    "warehouse": "COIMBATORE"
   },
   {
-   "open_ltrs": 2963.0,
+   "open_ltrs": 4220.0,
    "open_pos": 6,
-   "open_units": 2362.0,
-   "order_value": 523733.36,
-   "pending_ltrs": 2963.0,
-   "pending_units": 2362.0,
-   "warehouse": "JAIPUR"
-  },
-  {
-   "open_ltrs": 2780.0,
-   "open_pos": 5,
-   "open_units": 2058.0,
-   "order_value": 483141.34,
-   "pending_ltrs": 2780.0,
-   "pending_units": 2058.0,
-   "warehouse": "NAGPUR"
-  },
-  {
-   "open_ltrs": 2244.0,
-   "open_pos": 7,
-   "open_units": 1338.0,
-   "order_value": 380762.18,
-   "pending_ltrs": 2244.0,
-   "pending_units": 1338.0,
-   "warehouse": "VIZAG"
-  },
-  {
-   "open_ltrs": 1940.0,
-   "open_pos": 6,
-   "open_units": 1740.0,
-   "order_value": 347211.6,
-   "pending_ltrs": 1940.0,
-   "pending_units": 1740.0,
-   "warehouse": "CENTRAL GOA"
-  },
-  {
-   "open_ltrs": 1854.0,
-   "open_pos": 7,
-   "open_units": 1617.0,
-   "order_value": 330537.69,
-   "pending_ltrs": 1854.0,
-   "pending_units": 1617.0,
-   "warehouse": "LUCKNOW"
-  },
-  {
-   "open_ltrs": 1596.0,
-   "open_pos": 6,
-   "open_units": 1446.0,
-   "order_value": 322767.3,
-   "pending_ltrs": 1596.0,
-   "pending_units": 1446.0,
-   "warehouse": "GUWAHATI"
-  },
-  {
-   "open_ltrs": 924.0,
-   "open_pos": 2,
-   "open_units": 914.0,
-   "order_value": 174703.54,
-   "pending_ltrs": 924.0,
-   "pending_units": 914.0,
+   "open_units": 4052.0,
+   "order_value": 665019.04,
+   "pending_ltrs": 4220.0,
+   "pending_units": 4052.0,
    "warehouse": "GURGAON"
   },
   {
-   "open_ltrs": 868.0,
+   "open_ltrs": 3240.0,
    "open_pos": 6,
-   "open_units": 602.0,
-   "order_value": 159406.66,
-   "pending_ltrs": 868.0,
-   "pending_units": 602.0,
+   "open_units": 2374.0,
+   "order_value": 558435.46,
+   "pending_ltrs": 3240.0,
+   "pending_units": 2374.0,
+   "warehouse": "NAGPUR"
+  },
+  {
+   "open_ltrs": 3052.0,
+   "open_pos": 6,
+   "open_units": 2778.0,
+   "order_value": 606433.38,
+   "pending_ltrs": 3052.0,
+   "pending_units": 2778.0,
+   "warehouse": "GUWAHATI"
+  },
+  {
+   "open_ltrs": 2747.0,
+   "open_pos": 3,
+   "open_units": 2495.0,
+   "order_value": 474859.51,
+   "pending_ltrs": 2747.0,
+   "pending_units": 2495.0,
+   "warehouse": "NOIDA"
+  },
+  {
+   "open_ltrs": 2736.0,
+   "open_pos": 8,
+   "open_units": 1622.0,
+   "order_value": 458591.42,
+   "pending_ltrs": 2736.0,
+   "pending_units": 1622.0,
+   "warehouse": "VIZAG"
+  },
+  {
+   "open_ltrs": 2334.0,
+   "open_pos": 8,
+   "open_units": 2097.0,
+   "order_value": 414555.89,
+   "pending_ltrs": 2334.0,
+   "pending_units": 2097.0,
+   "warehouse": "LUCKNOW"
+  },
+  {
+   "open_ltrs": 2224.0,
+   "open_pos": 7,
+   "open_units": 2040.0,
+   "order_value": 410203.9,
+   "pending_ltrs": 2224.0,
+   "pending_units": 2040.0,
+   "warehouse": "CENTRAL GOA"
+  },
+  {
+   "open_ltrs": 2052.0,
+   "open_pos": 4,
+   "open_units": 1696.0,
+   "order_value": 360280.36,
+   "pending_ltrs": 2052.0,
+   "pending_units": 1696.0,
+   "warehouse": "JAIPUR"
+  },
+  {
+   "open_ltrs": 1228.0,
+   "open_pos": 7,
+   "open_units": 898.0,
+   "order_value": 215445.42,
+   "pending_ltrs": 1228.0,
+   "pending_units": 898.0,
    "warehouse": "KOCHI"
   }
  ],
  "defaulted_to_latest": true,
  "format": "SWIGGY",
- "max_po_date": "27-06-2026",
- "min_po_date": "02-06-2026",
+ "max_po_date": "30-06-2026",
+ "min_po_date": "06-06-2026",
  "platform": "swiggy",
  "po_month": "JUNE",
  "totals": {
-  "open_ltrs": 123617.0,
-  "open_pos": 171,
-  "open_units": 101336.0,
-  "pending_ltrs": 123617.0,
-  "pending_units": 101336.0,
-  "rows": 814
+  "open_ltrs": 144860.0,
+  "open_pos": 183,
+  "open_units": 117541.0,
+  "pending_ltrs": 144860.0,
+  "pending_units": 117541.0,
+  "rows": 848
  },
  "year": 2026
 }

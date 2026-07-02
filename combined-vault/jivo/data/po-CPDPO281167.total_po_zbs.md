@@ -17,12 +17,12 @@ Up: [[po-CPDPO281167]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-178.1,0.0,SWIGGY,2026-06-24,76764,187.0047685,PUNE,864.0,2026-06-16,2026-06-26,CPDPO281167,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76764,2026-06-30
-144.76,20.0,SWIGGY,2026-06-24,76765,151.998,PUNE,20.0,2026-06-16,2026-06-26,CPDPO281167,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76765,2026-06-30
-149.52,0.0,SWIGGY,2026-06-24,76766,156.9961667,PUNE,60.0,2026-06-16,2026-06-26,CPDPO281167,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76766,2026-06-30
-723.81,12.0,SWIGGY,2026-06-24,76767,760.0008333,PUNE,12.0,2026-06-16,2026-06-26,CPDPO281167,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76767,2026-06-30
-771.43,92.0,SWIGGY,2026-06-24,76768,810.001413,PUNE,92.0,2026-06-16,2026-06-26,CPDPO281167,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76768,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+178.1,0.0,SWIGGY,,2026-06-24,76764,187.0047685,PUNE,864.0,2026-06-16,2026-06-26,CPDPO281167,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76764,2026-07-01
+144.76,20.0,SWIGGY,,2026-06-24,76765,151.998,PUNE,20.0,2026-06-16,2026-06-26,CPDPO281167,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76765,2026-07-01
+149.52,0.0,SWIGGY,,2026-06-24,76766,156.9961667,PUNE,60.0,2026-06-16,2026-06-26,CPDPO281167,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76766,2026-07-01
+723.81,12.0,SWIGGY,,2026-06-24,76767,760.0008333,PUNE,12.0,2026-06-16,2026-06-26,CPDPO281167,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76767,2026-07-01
+771.43,92.0,SWIGGY,,2026-06-24,76768,810.001413,PUNE,92.0,2026-06-16,2026-06-26,CPDPO281167,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76768,2026-07-01
 ```
 
 ---

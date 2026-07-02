@@ -17,10 +17,10 @@ Up: [[po-MBJPO30464]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.1,40.0,SWIGGY,2026-01-06,59516,250.00475,BANGALORE,40.0,2025-12-25,2026-01-06,MBJPO30464,GRN DONE,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59516,2026-06-30
-523.81,16.0,SWIGGY,2026-01-06,59517,550.000625,BANGALORE,16.0,2025-12-25,2026-01-06,MBJPO30464,GRN DONE,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59517,2026-06-30
-2619.05,12.0,SWIGGY,2026-01-06,59518,2750.0025,BANGALORE,12.0,2025-12-25,2026-01-06,MBJPO30464,GRN DONE,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59518,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.1,40.0,SWIGGY,,2026-01-06,59516,250.00475,BANGALORE,40.0,2025-12-25,2026-01-06,MBJPO30464,GRN DONE,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59516,2026-07-01
+523.81,16.0,SWIGGY,,2026-01-06,59517,550.000625,BANGALORE,16.0,2025-12-25,2026-01-06,MBJPO30464,GRN DONE,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59517,2026-07-01
+2619.05,12.0,SWIGGY,,2026-01-06,59518,2750.0025,BANGALORE,12.0,2025-12-25,2026-01-06,MBJPO30464,GRN DONE,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59518,2026-07-01
 ```
 
 ---

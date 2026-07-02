@@ -17,10 +17,10 @@ Up: [[po-CMMPO11663]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-26,77109,214.998,HYDERABAD,20.0,2026-06-18,2026-07-20,CMMPO11663,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77109,2026-06-30
-928.57,36.0,SWIGGY,2026-06-26,77110,974.9986111,HYDERABAD,36.0,2026-06-18,2026-07-20,CMMPO11663,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77110,2026-06-30
-747.62,,SWIGGY,2026-06-26,77111,785.00125,HYDERABAD,8.0,2026-06-18,2026-07-20,CMMPO11663,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77111,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-26,77109,214.998,HYDERABAD,20.0,2026-06-18,2026-07-20,CMMPO11663,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77109,2026-07-01
+928.57,36.0,SWIGGY,,2026-06-26,77110,974.9986111,HYDERABAD,36.0,2026-06-18,2026-07-20,CMMPO11663,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77110,2026-07-01
+747.62,,SWIGGY,,2026-06-26,77111,785.00125,HYDERABAD,8.0,2026-06-18,2026-07-20,CMMPO11663,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77111,2026-07-01
 ```
 
 ---

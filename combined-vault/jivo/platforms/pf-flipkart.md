@@ -23,7 +23,7 @@ Up: [[platforms-index]]
 ## Complete data
 Full raw rows (embedded once here — this is the canonical home):
 - `flipkartSec`: [[pf-flipkart.flipkartSec.1]] · [[pf-flipkart.flipkartSec.2]] · [[pf-flipkart.flipkartSec.3]] · [[pf-flipkart.flipkartSec.4]]
-- `flipkart_ads`: [[pf-flipkart.flipkart_ads.1]] · [[pf-flipkart.flipkart_ads.2]] · [[pf-flipkart.flipkart_ads.3]] · [[pf-flipkart.flipkart_ads.4]]
+- `flipkart_ads`: [[pf-flipkart.flipkart_ads.1]] · [[pf-flipkart.flipkart_ads.2]] · [[pf-flipkart.flipkart_ads.3]] · [[pf-flipkart.flipkart_ads.4]] · [[pf-flipkart.flipkart_ads.5]] · [[pf-flipkart.flipkart_ads.6]] · [[pf-flipkart.flipkart_ads.7]] · [[pf-flipkart.flipkart_ads.8]]
 - `flipkart_secondary_all`: [[pf-flipkart.flipkart_secondary_all.1]] · [[pf-flipkart.flipkart_secondary_all.2]] · [[pf-flipkart.flipkart_secondary_all.3]] · [[pf-flipkart.flipkart_secondary_all.4]] · [[pf-flipkart.flipkart_secondary_all.5]] · [[pf-flipkart.flipkart_secondary_all.6]]
 - `master_products`: [[pf-flipkart.master_products]]
 

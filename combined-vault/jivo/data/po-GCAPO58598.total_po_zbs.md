@@ -17,11 +17,11 @@ Up: [[po-GCAPO58598]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,2026-06-13,75758,214.998,CENTRAL GOA,20.0,2026-06-06,2026-06-23,GCAPO58598,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75758,2026-06-30
-154.29,0.0,SWIGGY,2026-06-13,75759,162.0042895,CENTRAL GOA,380.0,2026-06-06,2026-06-23,GCAPO58598,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75759,2026-06-30
-242.86,40.0,SWIGGY,2026-06-13,75760,255.00275,CENTRAL GOA,40.0,2026-06-06,2026-06-23,GCAPO58598,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75760,2026-06-30
-180.95,0.0,SWIGGY,2026-06-13,75761,189.9975,CENTRAL GOA,16.0,2026-06-06,2026-06-23,GCAPO58598,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75761,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,2026-06-13,75758,214.998,CENTRAL GOA,20.0,2026-06-06,2026-06-23,GCAPO58598,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75758,2026-07-01
+154.29,0.0,SWIGGY,,2026-06-13,75759,162.0042895,CENTRAL GOA,380.0,2026-06-06,2026-06-23,GCAPO58598,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75759,2026-07-01
+242.86,40.0,SWIGGY,,2026-06-13,75760,255.00275,CENTRAL GOA,40.0,2026-06-06,2026-06-23,GCAPO58598,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75760,2026-07-01
+180.95,0.0,SWIGGY,,2026-06-13,75761,189.9975,CENTRAL GOA,16.0,2026-06-06,2026-06-23,GCAPO58598,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75761,2026-07-01
 ```
 
 ---

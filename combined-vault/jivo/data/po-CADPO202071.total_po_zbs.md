@@ -17,11 +17,11 @@ Up: [[po-CADPO202071]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,72634,499.999375,AHMEDABAD,16.0,2026-05-12,2026-05-20,CADPO202071,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72634,2026-06-30
-147.62,0.0,SWIGGY,,72635,155.0009375,AHMEDABAD,160.0,2026-05-12,2026-05-20,CADPO202071,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72635,2026-06-30
-761.9,0.0,SWIGGY,,72636,799.995,AHMEDABAD,10.0,2026-05-12,2026-05-20,CADPO202071,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72636,2026-06-30
-147.62,0.0,SWIGGY,,72637,155.00125,AHMEDABAD,16.0,2026-05-12,2026-05-20,CADPO202071,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72637,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,0.0,SWIGGY,,,72634,499.999375,AHMEDABAD,16.0,2026-05-12,2026-05-20,CADPO202071,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72634,2026-07-01
+147.62,0.0,SWIGGY,,,72635,155.0009375,AHMEDABAD,160.0,2026-05-12,2026-05-20,CADPO202071,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72635,2026-07-01
+761.9,0.0,SWIGGY,,,72636,799.995,AHMEDABAD,10.0,2026-05-12,2026-05-20,CADPO202071,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72636,2026-07-01
+147.62,0.0,SWIGGY,,,72637,155.00125,AHMEDABAD,16.0,2026-05-12,2026-05-20,CADPO202071,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72637,2026-07-01
 ```
 
 ---

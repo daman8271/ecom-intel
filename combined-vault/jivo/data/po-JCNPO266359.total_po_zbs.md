@@ -17,10 +17,10 @@ Up: [[po-JCNPO266359]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-15,75074,204.76,CHENNAI,20.0,2026-06-02,2026-06-18,JCNPO266359,,15685,Jivo Canola Cold Press Edible Oil,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75074,2026-06-30
-371.43,32.0,SWIGGY,2026-06-15,75075,371.43,CHENNAI,32.0,2026-06-02,2026-06-18,JCNPO266359,,21709,Jivo Daily Cooking Pomace Olive Oil,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75075,2026-06-30
-154.29,96.0,SWIGGY,2026-06-10,75076,162.0043,CHENNAI,100.0,2026-06-02,2026-06-18,JCNPO266359,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75076,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-15,75074,204.76,CHENNAI,20.0,2026-06-02,2026-06-18,JCNPO266359,,15685,Jivo Canola Cold Press Edible Oil,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75074,2026-07-01
+371.43,32.0,SWIGGY,,2026-06-15,75075,371.43,CHENNAI,32.0,2026-06-02,2026-06-18,JCNPO266359,,21709,Jivo Daily Cooking Pomace Olive Oil,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75075,2026-07-01
+154.29,96.0,SWIGGY,,2026-06-10,75076,162.0043,CHENNAI,100.0,2026-06-02,2026-06-18,JCNPO266359,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75076,2026-07-01
 ```
 
 ---

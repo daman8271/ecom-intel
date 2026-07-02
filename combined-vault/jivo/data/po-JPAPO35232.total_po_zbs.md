@@ -17,13 +17,13 @@ Up: [[po-JPAPO35232]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,0.0,SWIGGY,,62316,219.99625,JAIPUR,48.0,2026-01-31,2026-02-14,JPAPO35232,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62316,2026-06-30
-138.1,0.0,SWIGGY,,62317,145.0047667,JAIPUR,600.0,2026-01-31,2026-02-14,JPAPO35232,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62317,2026-06-30
-144.76,0.0,SWIGGY,,62318,151.998,JAIPUR,20.0,2026-01-31,2026-02-14,JPAPO35232,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62318,2026-06-30
-690.48,0.0,SWIGGY,,62319,725.0038889,JAIPUR,36.0,2026-01-31,2026-02-14,JPAPO35232,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62319,2026-06-30
-152.38,0.0,SWIGGY,,62320,159.999,JAIPUR,20.0,2026-01-31,2026-02-14,JPAPO35232,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62320,2026-06-30
-142.86,0.0,SWIGGY,,62321,150.003125,JAIPUR,16.0,2026-01-31,2026-02-14,JPAPO35232,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62321,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,0.0,SWIGGY,,,62316,219.99625,JAIPUR,48.0,2026-01-31,2026-02-14,JPAPO35232,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62316,2026-07-01
+138.1,0.0,SWIGGY,,,62317,145.0047667,JAIPUR,600.0,2026-01-31,2026-02-14,JPAPO35232,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62317,2026-07-01
+144.76,0.0,SWIGGY,,,62318,151.998,JAIPUR,20.0,2026-01-31,2026-02-14,JPAPO35232,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62318,2026-07-01
+690.48,0.0,SWIGGY,,,62319,725.0038889,JAIPUR,36.0,2026-01-31,2026-02-14,JPAPO35232,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62319,2026-07-01
+152.38,0.0,SWIGGY,,,62320,159.999,JAIPUR,20.0,2026-01-31,2026-02-14,JPAPO35232,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62320,2026-07-01
+142.86,0.0,SWIGGY,,,62321,150.003125,JAIPUR,16.0,2026-01-31,2026-02-14,JPAPO35232,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:62321,2026-07-01
 ```
 
 ---

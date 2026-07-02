@@ -1,7 +1,7 @@
 ---
 type: vendor
 vendor: BABA LOKENATH TRADERS- Kolkata
-po_count: 6
+po_count: 7
 skus: 0
 tags:
   - type/vendor
@@ -13,7 +13,7 @@ tags:
 Up: [[vendors-index]]
 
 - **Platforms:** _none_
-- **POs:** [[po-P3792827]] · [[po-P3792992]] · [[po-P4289846]] · [[po-P4289851]] · [[po-P4701459]] · [[po-P4743573]]
+- **POs:** [[po-P3792827]] · [[po-P3792992]] · [[po-P4289846]] · [[po-P4289851]] · [[po-P4701459]] · [[po-P4743573]] · [[po-P4801271]]
 
 ## SKUs shipped (0)
 _none_

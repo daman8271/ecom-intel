@@ -4,7 +4,7 @@ jid: JID-0067
 product: "CUMIN SEEDS 100G"
 sap_codes:
   - FG0000199
-category: "SEEDS"
+category: "SPICES"
 tier: OTHER
 platforms:
   - amazon
@@ -12,7 +12,7 @@ platforms:
 tags:
   - type/product
   - tier/OTHER
-  - category/SEEDS
+  - category/SPICES
   - platform/amazon
   - platform/flipkart
 ---
@@ -28,7 +28,9 @@ Up: [[Home]]
 | Product | CUMIN SEEDS 100G |
 | JIVO SKU / SAP code | `FG0000199` |
 | canonical_sku(s) | `jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml`, `scmh3fhauzysnuab` |
-| Category | [[Category - SEEDS\|SEEDS]] |
+| Category | [[Category - SPICES\|SPICES]] |
+| Sub-category | CUMIN SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 100G |
 | Bridge class | core (priced) |
@@ -50,7 +52,7 @@ _OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
 Cross-vault fusion by name / SKU match:
 - **JIVO source notes:** [[sku-FG0000199]]
 - **Ecom source notes:** [[jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml]] · [[scmh3fhauzysnuab]]
-- **Category:** [[Category - SEEDS]]
+- **Category:** [[Category - SPICES]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
 

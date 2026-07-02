@@ -17,11 +17,11 @@ Up: [[po-JPAPO16886]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,0.0,SWIGGY,,54249,1323.0,JAIPUR,6.0,2025-10-15,2025-10-29,JPAPO16886,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54249,2026-06-30
-196.19,0.0,SWIGGY,,54250,206.0,JAIPUR,8.0,2025-10-15,2025-10-29,JPAPO16886,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54250,2026-06-30
-642.86,0.0,SWIGGY,,54251,675.0025,JAIPUR,4.0,2025-10-15,2025-10-29,JPAPO16886,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54251,2026-06-30
-1960.95,0.0,SWIGGY,,54252,2058.9975,JAIPUR,4.0,2025-10-15,2025-10-29,JPAPO16886,,79292,Jivo Pomace Olive Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54252,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1260.0,0.0,SWIGGY,,,54249,1323.0,JAIPUR,6.0,2025-10-15,2025-10-29,JPAPO16886,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54249,2026-07-01
+196.19,0.0,SWIGGY,,,54250,205.9995,JAIPUR,8.0,2025-10-15,2025-10-29,JPAPO16886,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54250,2026-07-01
+642.86,0.0,SWIGGY,,,54251,675.0025,JAIPUR,4.0,2025-10-15,2025-10-29,JPAPO16886,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54251,2026-07-01
+1960.95,0.0,SWIGGY,,,54252,2058.9975,JAIPUR,4.0,2025-10-15,2025-10-29,JPAPO16886,,79292,Jivo Pomace Olive Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54252,2026-07-01
 ```
 
 ---

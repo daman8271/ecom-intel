@@ -17,11 +17,11 @@ Up: [[po-GGNPO302381]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,0.0,SWIGGY,,59971,550.000625,DELHI,16.0,2025-12-30,2026-01-08,GGNPO302381,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59971,2026-06-30
-409.52,0.0,SWIGGY,,59972,429.99625,DELHI,16.0,2025-12-30,2026-01-08,GGNPO302381,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59972,2026-06-30
-138.1,0.0,SWIGGY,,59973,145.0048333,DELHI,60.0,2025-12-30,2026-01-08,GGNPO302381,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59973,2026-06-30
-142.86,0.0,SWIGGY,,59974,150.003125,DELHI,16.0,2025-12-30,2026-01-08,GGNPO302381,Appointment Done,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59974,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,0.0,SWIGGY,,,59971,550.000625,DELHI,16.0,2025-12-30,2026-01-08,GGNPO302381,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59971,2026-07-01
+409.52,0.0,SWIGGY,,,59972,429.99625,DELHI,16.0,2025-12-30,2026-01-08,GGNPO302381,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59972,2026-07-01
+138.1,0.0,SWIGGY,,,59973,145.0048333,DELHI,60.0,2025-12-30,2026-01-08,GGNPO302381,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59973,2026-07-01
+142.86,0.0,SWIGGY,,,59974,150.003125,DELHI,16.0,2025-12-30,2026-01-08,GGNPO302381,Appointment Done,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59974,2026-07-01
 ```
 
 ---

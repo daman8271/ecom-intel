@@ -22,7 +22,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 15237.0,
+    "ltrs": 15765.0,
     "name": "SUNFLOWER"
    },
    {
@@ -32,7 +32,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   ],
   "sub_categories": [
    {
-    "ltrs": 15237.0,
+    "ltrs": 15765.0,
     "name": "SUNFLOWER"
    },
    {
@@ -40,7 +40,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
     "name": "MUSTARD KACCHI GHANI"
    }
   ],
-  "total_ltrs": 18801.0
+  "total_ltrs": 19329.0
  },
  "errors": [],
  "month": 6,
@@ -48,21 +48,21 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
  "premium": {
   "categories": [
    {
-    "ltrs": 1501.0,
+    "ltrs": 1543.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 944.0,
+    "ltrs": 960.0,
     "name": "OLIVE"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 1501.0,
+    "ltrs": 1543.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 488.0,
+    "ltrs": 504.0,
     "name": "EXTRA LIGHT"
    },
    {
@@ -70,7 +70,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
     "name": "JIVO POMACE"
    }
   ],
-  "total_ltrs": 2445.0
+  "total_ltrs": 2503.0
  },
  "source": "primary",
  "year": 2026

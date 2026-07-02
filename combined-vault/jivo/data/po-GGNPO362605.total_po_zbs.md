@@ -17,9 +17,9 @@ Up: [[po-GGNPO362605]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-154.29,540.0,SWIGGY,2026-06-08,74993,162.0042963,DELHI,540.0,2026-05-30,2026-06-08,GGNPO362605,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74993,2026-06-30
-161.9,264.0,SWIGGY,2026-06-08,74994,169.99525,DELHI,280.0,2026-05-30,2026-06-08,GGNPO362605,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74994,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+154.29,540.0,SWIGGY,,2026-06-08,74993,162.0042963,DELHI,540.0,2026-05-30,2026-06-08,GGNPO362605,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74993,2026-07-01
+161.9,264.0,SWIGGY,,2026-06-08,74994,169.99525,DELHI,280.0,2026-05-30,2026-06-08,GGNPO362605,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74994,2026-07-01
 ```
 
 ---

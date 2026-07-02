@@ -17,10 +17,10 @@ Up: [[po-JCNPO235611]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-196.19,56.0,SWIGGY,2026-01-19,60126,205.9994643,CHENNAI,56.0,2026-01-03,2026-01-20,JCNPO235611,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60126,2026-06-30
-138.1,0.0,SWIGGY,2026-01-19,60127,145.00475,CHENNAI,120.0,2026-01-03,2026-01-20,JCNPO235611,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60127,2026-06-30
-533.33,0.0,SWIGGY,2026-01-19,60128,559.9966102,CHENNAI,59.0,2026-01-03,2026-01-20,JCNPO235611,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60128,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+196.19,56.0,SWIGGY,,2026-01-19,60126,205.9994643,CHENNAI,56.0,2026-01-03,2026-01-20,JCNPO235611,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60126,2026-07-01
+138.1,0.0,SWIGGY,,2026-01-19,60127,145.00475,CHENNAI,120.0,2026-01-03,2026-01-20,JCNPO235611,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60127,2026-07-01
+533.33,0.0,SWIGGY,,2026-01-19,60128,559.9966102,CHENNAI,59.0,2026-01-03,2026-01-20,JCNPO235611,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60128,2026-07-01
 ```
 
 ---

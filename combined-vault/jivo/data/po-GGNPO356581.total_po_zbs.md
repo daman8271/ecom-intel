@@ -17,10 +17,10 @@ Up: [[po-GGNPO356581]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-366.67,0.0,SWIGGY,,72760,385.0034375,DELHI,32.0,2026-05-12,2026-05-14,GGNPO356581,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72760,2026-06-30
-147.62,0.0,SWIGGY,,72761,155.0009444,DELHI,180.0,2026-05-12,2026-05-14,GGNPO356581,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72761,2026-06-30
-147.62,0.0,SWIGGY,,72762,155.0009375,DELHI,64.0,2026-05-12,2026-05-14,GGNPO356581,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72762,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+366.67,0.0,SWIGGY,,,72760,385.0034375,DELHI,32.0,2026-05-12,2026-05-14,GGNPO356581,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72760,2026-07-01
+147.62,0.0,SWIGGY,,,72761,155.0009444,DELHI,180.0,2026-05-12,2026-05-14,GGNPO356581,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72761,2026-07-01
+147.62,0.0,SWIGGY,,,72762,155.0009375,DELHI,64.0,2026-05-12,2026-05-14,GGNPO356581,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72762,2026-07-01
 ```
 
 ---

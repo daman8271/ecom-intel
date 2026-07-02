@@ -17,13 +17,13 @@ Up: [[po-KWBPO95516]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-19.43,0.0,SWIGGY,2026-06-24,76813,20.40138889,KOLKATA,72.0,2026-06-16,2026-06-28,KWBPO95516,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76813,2026-06-30
-185.71,48.0,SWIGGY,2026-06-24,76814,194.995625,KOLKATA,48.0,2026-06-16,2026-06-28,KWBPO95516,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76814,2026-06-30
-344.76,0.0,SWIGGY,2026-06-24,76815,361.9980833,KOLKATA,120.0,2026-06-16,2026-06-28,KWBPO95516,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76815,2026-06-30
-771.43,0.0,SWIGGY,2026-06-24,76816,810.0014286,KOLKATA,28.0,2026-06-16,2026-06-28,KWBPO95516,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76816,2026-06-30
-154.29,0.0,SWIGGY,2026-06-24,76817,162.0045,KOLKATA,20.0,2026-06-16,2026-06-28,KWBPO95516,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76817,2026-06-30
-147.62,0.0,SWIGGY,2026-06-24,76818,155.0010417,KOLKATA,48.0,2026-06-16,2026-06-28,KWBPO95516,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76818,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+19.43,0.0,SWIGGY,,2026-06-24,76813,20.40138889,KOLKATA,72.0,2026-06-16,2026-06-28,KWBPO95516,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76813,2026-07-01
+185.71,48.0,SWIGGY,,2026-06-24,76814,194.995625,KOLKATA,48.0,2026-06-16,2026-06-28,KWBPO95516,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76814,2026-07-01
+344.76,0.0,SWIGGY,,2026-06-24,76815,361.9980833,KOLKATA,120.0,2026-06-16,2026-06-28,KWBPO95516,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76815,2026-07-01
+771.43,0.0,SWIGGY,,2026-06-24,76816,810.0014286,KOLKATA,28.0,2026-06-16,2026-06-28,KWBPO95516,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76816,2026-07-01
+154.29,0.0,SWIGGY,,2026-06-24,76817,162.0045,KOLKATA,20.0,2026-06-16,2026-06-28,KWBPO95516,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76817,2026-07-01
+147.62,0.0,SWIGGY,,2026-06-24,76818,155.0010417,KOLKATA,48.0,2026-06-16,2026-06-28,KWBPO95516,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76818,2026-07-01
 ```
 
 ---

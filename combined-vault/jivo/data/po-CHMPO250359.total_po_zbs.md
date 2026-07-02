@@ -17,10 +17,10 @@ Up: [[po-CHMPO250359]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-7.62,0.0,SWIGGY,2026-01-08,59546,8.001,HYDERABAD,180.0,2025-12-27,2026-01-11,CHMPO250359,GRN DONE,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59546,2026-06-30
-12.44,180.0,SWIGGY,2026-01-08,59547,17.41672222,HYDERABAD,180.0,2025-12-27,2026-01-11,CHMPO250359,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59547,2026-06-30
-12.44,180.0,SWIGGY,2026-01-08,59548,17.41672222,HYDERABAD,180.0,2025-12-27,2026-01-11,CHMPO250359,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59548,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+7.62,0.0,SWIGGY,,2026-01-08,59546,8.001,HYDERABAD,180.0,2025-12-27,2026-01-11,CHMPO250359,GRN DONE,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59546,2026-07-01
+12.44,180.0,SWIGGY,,2026-01-08,59547,17.41672222,HYDERABAD,180.0,2025-12-27,2026-01-11,CHMPO250359,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59547,2026-07-01
+12.44,180.0,SWIGGY,,2026-01-08,59548,17.41672222,HYDERABAD,180.0,2025-12-27,2026-01-11,CHMPO250359,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59548,2026-07-01
 ```
 
 ---

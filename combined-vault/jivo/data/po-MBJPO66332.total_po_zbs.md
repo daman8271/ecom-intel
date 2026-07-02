@@ -17,10 +17,10 @@ Up: [[po-MBJPO66332]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,,72892,38.5,BANGALORE,12.0,2026-05-13,2026-05-25,MBJPO66332,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72892,2026-06-30
-244.76,0.0,SWIGGY,,72893,256.998,BANGALORE,20.0,2026-05-13,2026-05-25,MBJPO66332,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72893,2026-06-30
-182.86,0.0,SWIGGY,,72894,192.003125,BANGALORE,16.0,2026-05-13,2026-05-25,MBJPO66332,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72894,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+27.5,0.0,SWIGGY,,,72892,38.5,BANGALORE,12.0,2026-05-13,2026-05-25,MBJPO66332,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72892,2026-07-01
+244.76,0.0,SWIGGY,,,72893,256.998,BANGALORE,20.0,2026-05-13,2026-05-25,MBJPO66332,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72893,2026-07-01
+182.86,0.0,SWIGGY,,,72894,192.003125,BANGALORE,16.0,2026-05-13,2026-05-25,MBJPO66332,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72894,2026-07-01
 ```
 
 ---

@@ -17,12 +17,12 @@ Up: [[po-MBJPO73039]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,75806,214.998,BANGALORE,20.0,2026-06-08,2026-06-20,MBJPO73039,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75806,2026-06-30
-371.43,0.0,SWIGGY,,75807,390.00125,BANGALORE,16.0,2026-06-08,2026-06-20,MBJPO73039,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75807,2026-06-30
-27.5,0.0,SWIGGY,,75808,38.5,BANGALORE,12.0,2026-06-08,2026-06-20,MBJPO73039,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75808,2026-06-30
-144.76,0.0,SWIGGY,,75809,151.998125,BANGALORE,80.0,2026-06-08,2026-06-20,MBJPO73039,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75809,2026-06-30
-771.43,0.0,SWIGGY,,75810,810.0016667,BANGALORE,12.0,2026-06-08,2026-06-20,MBJPO73039,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75810,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,,75806,214.998,BANGALORE,20.0,2026-06-08,2026-06-20,MBJPO73039,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75806,2026-07-01
+371.43,0.0,SWIGGY,,,75807,390.00125,BANGALORE,16.0,2026-06-08,2026-06-20,MBJPO73039,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75807,2026-07-01
+27.5,0.0,SWIGGY,,,75808,38.5,BANGALORE,12.0,2026-06-08,2026-06-20,MBJPO73039,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75808,2026-07-01
+144.76,0.0,SWIGGY,,,75809,151.998125,BANGALORE,80.0,2026-06-08,2026-06-20,MBJPO73039,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75809,2026-07-01
+771.43,0.0,SWIGGY,,,75810,810.0016667,BANGALORE,12.0,2026-06-08,2026-06-20,MBJPO73039,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75810,2026-07-01
 ```
 
 ---

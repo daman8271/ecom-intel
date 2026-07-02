@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000195` |
 | canonical_sku(s) | `jivo-black-cardamom-badi-elaichi-sabut-moti-kali-elaichi-whole-organic-black-cardamom-perfect-for-cooking-baking-seasoning-adds-flavor-to-dishes-no-artificial-colours-or-preservatives-100g-100ml`, `scmh4h8hzj8ahq9g` |
 | Category | [[Category - SPICES\|SPICES]] |
+| Sub-category | BLACK CARDAMOM |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 100G |
 | Bridge class | core (priced) |

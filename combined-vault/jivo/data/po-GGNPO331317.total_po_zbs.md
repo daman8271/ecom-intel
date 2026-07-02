@@ -17,10 +17,10 @@ Up: [[po-GGNPO331317]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,48.0,SWIGGY,2026-03-05,64443,550.0004167,DELHI,48.0,2026-02-24,2026-03-05,GGNPO331317,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64443,2026-06-30
-409.52,16.0,SWIGGY,2026-03-05,64444,429.99625,DELHI,16.0,2026-02-24,2026-03-05,GGNPO331317,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64444,2026-06-30
-761.9,4.0,SWIGGY,2026-03-05,64445,799.995,DELHI,4.0,2026-02-24,2026-03-05,GGNPO331317,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64445,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,48.0,SWIGGY,,2026-03-05,64443,550.0004167,DELHI,48.0,2026-02-24,2026-03-05,GGNPO331317,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64443,2026-07-01
+409.52,16.0,SWIGGY,,2026-03-05,64444,429.99625,DELHI,16.0,2026-02-24,2026-03-05,GGNPO331317,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64444,2026-07-01
+761.9,4.0,SWIGGY,,2026-03-05,64445,799.995,DELHI,4.0,2026-02-24,2026-03-05,GGNPO331317,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64445,2026-07-01
 ```
 
 ---

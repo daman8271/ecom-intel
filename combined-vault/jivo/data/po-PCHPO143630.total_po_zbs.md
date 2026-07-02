@@ -17,13 +17,13 @@ Up: [[po-PCHPO143630]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,12.0,SWIGGY,2025-10-05,52833,1323.0,CHANDIGARH,12.0,2025-09-25,2025-10-08,PCHPO143630,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52833,2026-06-30
-504.76,16.0,SWIGGY,2025-10-05,52834,529.998125,CHANDIGARH,16.0,2025-09-25,2025-10-08,PCHPO143630,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52834,2026-06-30
-190.48,32.0,SWIGGY,2025-10-05,52835,200.00375,CHANDIGARH,32.0,2025-09-25,2025-10-08,PCHPO143630,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52835,2026-06-30
-642.86,8.0,SWIGGY,2025-10-05,52836,675.0025,CHANDIGARH,8.0,2025-09-25,2025-10-08,PCHPO143630,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52836,2026-06-30
-141.91,20.0,SWIGGY,2025-10-05,52837,149.005,CHANDIGARH,20.0,2025-09-25,2025-10-08,PCHPO143630,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52837,2026-06-30
-833.33,8.0,SWIGGY,2025-10-05,52838,874.99625,CHANDIGARH,8.0,2025-09-25,2025-10-08,PCHPO143630,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52838,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1260.0,12.0,SWIGGY,,2025-10-05,52833,1323.0,CHANDIGARH,12.0,2025-09-25,2025-10-08,PCHPO143630,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52833,2026-07-01
+504.76,16.0,SWIGGY,,2025-10-05,52834,529.998125,CHANDIGARH,16.0,2025-09-25,2025-10-08,PCHPO143630,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52834,2026-07-01
+190.48,32.0,SWIGGY,,2025-10-05,52835,200.00375,CHANDIGARH,32.0,2025-09-25,2025-10-08,PCHPO143630,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52835,2026-07-01
+642.86,8.0,SWIGGY,,2025-10-05,52836,675.0025,CHANDIGARH,8.0,2025-09-25,2025-10-08,PCHPO143630,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52836,2026-07-01
+141.91,20.0,SWIGGY,,2025-10-05,52837,149.005,CHANDIGARH,20.0,2025-09-25,2025-10-08,PCHPO143630,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52837,2026-07-01
+833.33,8.0,SWIGGY,,2025-10-05,52838,874.99625,CHANDIGARH,8.0,2025-09-25,2025-10-08,PCHPO143630,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52838,2026-07-01
 ```
 
 ---

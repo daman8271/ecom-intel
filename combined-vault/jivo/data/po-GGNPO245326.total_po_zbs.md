@@ -17,12 +17,12 @@ Up: [[po-GGNPO245326]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-196.19,0.0,SWIGGY,,54189,206.0,DELHI,8.0,2025-10-13,2025-10-23,GGNPO245326,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54189,2026-06-30
-165.71,0.0,SWIGGY,,54190,173.9956667,DELHI,60.0,2025-10-13,2025-10-23,GGNPO245326,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54190,2026-06-30
-642.86,0.0,SWIGGY,,54191,675.0025,DELHI,8.0,2025-10-13,2025-10-23,GGNPO245326,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54191,2026-06-30
-666.67,0.0,SWIGGY,,54192,700.0035,DELHI,20.0,2025-10-13,2025-10-23,GGNPO245326,,766072,Jivo Ricebran Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54192,2026-06-30
-133.33,0.0,SWIGGY,,54193,139.9967188,DELHI,64.0,2025-10-13,2025-10-23,GGNPO245326,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54193,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+196.19,0.0,SWIGGY,,,54189,205.9995,DELHI,8.0,2025-10-13,2025-10-23,GGNPO245326,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54189,2026-07-01
+165.71,0.0,SWIGGY,,,54190,173.9956667,DELHI,60.0,2025-10-13,2025-10-23,GGNPO245326,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54190,2026-07-01
+642.86,0.0,SWIGGY,,,54191,675.0025,DELHI,8.0,2025-10-13,2025-10-23,GGNPO245326,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54191,2026-07-01
+666.67,0.0,SWIGGY,,,54192,700.0035,DELHI,20.0,2025-10-13,2025-10-23,GGNPO245326,,766072,Jivo Ricebran Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54192,2026-07-01
+133.33,0.0,SWIGGY,,,54193,139.9967188,DELHI,64.0,2025-10-13,2025-10-23,GGNPO245326,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54193,2026-07-01
 ```
 
 ---

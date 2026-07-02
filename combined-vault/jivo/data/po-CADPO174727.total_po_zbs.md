@@ -17,10 +17,10 @@ Up: [[po-CADPO174727]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-7.62,0.0,SWIGGY,,59859,8.00099359,AHMEDABAD,312.0,2025-12-30,2026-01-08,CADPO174727,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59859,2026-06-30
-12.44,0.0,SWIGGY,,59860,17.41669872,AHMEDABAD,312.0,2025-12-30,2026-01-08,CADPO174727,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59860,2026-06-30
-12.44,0.0,SWIGGY,,59861,17.41669872,AHMEDABAD,312.0,2025-12-30,2026-01-08,CADPO174727,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59861,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+7.62,0.0,SWIGGY,,,59859,8.00099359,AHMEDABAD,312.0,2025-12-30,2026-01-08,CADPO174727,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59859,2026-07-01
+12.44,0.0,SWIGGY,,,59860,17.41669872,AHMEDABAD,312.0,2025-12-30,2026-01-08,CADPO174727,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59860,2026-07-01
+12.44,0.0,SWIGGY,,,59861,17.41669872,AHMEDABAD,312.0,2025-12-30,2026-01-08,CADPO174727,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59861,2026-07-01
 ```
 
 ---

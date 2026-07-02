@@ -17,11 +17,11 @@ Up: [[po-MBJPO78379]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77990,215.0,BANGALORE,20.0,2026-06-27,2026-07-15,MBJPO78379,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77990,2026-06-30
-371.43,0.0,SWIGGY,,77991,390.0,BANGALORE,16.0,2026-06-27,2026-07-15,MBJPO78379,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77991,2026-06-30
-149.52,0.0,SWIGGY,,77992,157.0,BANGALORE,300.0,2026-06-27,2026-07-15,MBJPO78379,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77992,2026-06-30
-154.29,0.0,SWIGGY,,77993,162.0,BANGALORE,180.0,2026-06-27,2026-07-15,MBJPO78379,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77993,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,,77990,214.998,BANGALORE,20.0,2026-06-27,2026-07-15,MBJPO78379,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77990,2026-07-01
+371.43,0.0,SWIGGY,,,77991,390.0015,BANGALORE,16.0,2026-06-27,2026-07-15,MBJPO78379,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77991,2026-07-01
+149.52,0.0,SWIGGY,,,77992,156.996,BANGALORE,300.0,2026-06-27,2026-07-15,MBJPO78379,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77992,2026-07-01
+154.29,0.0,SWIGGY,,,77993,162.0045,BANGALORE,180.0,2026-06-27,2026-07-15,MBJPO78379,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77993,2026-07-01
 ```
 
 ---

@@ -33,25 +33,27 @@ Up: [[dashboards-index]]
   "landing_rate",
   "location",
   "format",
-  "remark"
+  "remark",
+  "grn_code"
  ],
  "sample": {
-  "basic_rate": 141.9,
+  "basic_rate": 185.71,
   "delivered_qty": 0.0,
-  "format": "ZEPTO",
+  "format": "SWIGGY",
+  "grn_code": null,
   "grn_date": null,
-  "id": 33512,
-  "landing_rate": 149.0,
-  "location": "MUM-DRY-MH-SHAKTI",
-  "order_qty": 160.0,
-  "po_date": "2025-08-14",
-  "po_expiry_date": "2025-09-04",
-  "po_number": "P1705798",
-  "remark": "",
-  "sku_code": "06C8F55B-13A5-4D9B-8990-A418E63C89AD",
-  "sku_name": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil - 1 pc (1 L)",
-  "status": "EXPIRED",
-  "vendor_name": "CHIRAG ENTERPRISES"
+  "id": 77312,
+  "landing_rate": 194.9955,
+  "location": "COIMBATORE",
+  "order_qty": 112.0,
+  "po_date": "2026-06-22",
+  "po_expiry_date": "2026-07-24",
+  "po_number": "JCEPO180223",
+  "remark": null,
+  "sku_code": "390730",
+  "sku_name": "Jivo Cold Pressed oil Groundnut Oil 1.0 ltr",
+  "status": "CONFIRMED",
+  "vendor_name": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED"
  }
 }
 ```

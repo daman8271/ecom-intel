@@ -17,12 +17,12 @@ Up: [[po-PCHPO197175]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,60.0,SWIGGY,2026-05-11,71361,225.0043333,CHANDIGARH,60.0,2026-05-02,2026-05-14,PCHPO197175,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71361,2026-06-30
-1314.29,6.0,SWIGGY,2026-05-11,71362,1380.005,CHANDIGARH,6.0,2026-05-02,2026-05-14,PCHPO197175,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71362,2026-06-30
-476.19,48.0,SWIGGY,2026-05-11,71363,499.9995833,CHANDIGARH,48.0,2026-05-02,2026-05-14,PCHPO197175,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71363,2026-06-30
-195.24,20.0,SWIGGY,2026-05-11,71364,205.002,CHANDIGARH,20.0,2026-05-02,2026-05-14,PCHPO197175,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71364,2026-06-30
-147.62,600.0,SWIGGY,2026-05-11,71365,155.00095,CHANDIGARH,600.0,2026-05-02,2026-05-14,PCHPO197175,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71365,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,60.0,SWIGGY,,2026-05-11,71361,225.0043333,CHANDIGARH,60.0,2026-05-02,2026-05-14,PCHPO197175,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71361,2026-07-01
+1314.29,6.0,SWIGGY,,2026-05-11,71362,1380.005,CHANDIGARH,6.0,2026-05-02,2026-05-14,PCHPO197175,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71362,2026-07-01
+476.19,48.0,SWIGGY,,2026-05-11,71363,499.9995833,CHANDIGARH,48.0,2026-05-02,2026-05-14,PCHPO197175,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71363,2026-07-01
+195.24,20.0,SWIGGY,,2026-05-11,71364,205.002,CHANDIGARH,20.0,2026-05-02,2026-05-14,PCHPO197175,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71364,2026-07-01
+147.62,600.0,SWIGGY,,2026-05-11,71365,155.00095,CHANDIGARH,600.0,2026-05-02,2026-05-14,PCHPO197175,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:71365,2026-07-01
 ```
 
 ---

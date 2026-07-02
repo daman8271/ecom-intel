@@ -17,10 +17,10 @@ Up: [[po-CMFPO329609]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,32.0,SWIGGY,2026-06-18,76196,390.0015625,MUMBAI,32.0,2026-06-12,2026-06-21,CMFPO329609,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76196,2026-06-30
-147.62,16.0,SWIGGY,2026-06-18,76197,155.0009375,MUMBAI,32.0,2026-06-12,2026-06-21,CMFPO329609,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76197,2026-06-30
-180.95,0.0,SWIGGY,2026-06-18,76198,189.9975,MUMBAI,16.0,2026-06-12,2026-06-21,CMFPO329609,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76198,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+371.43,32.0,SWIGGY,,2026-06-18,76196,390.0015625,MUMBAI,32.0,2026-06-12,2026-06-21,CMFPO329609,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76196,2026-07-01
+147.62,16.0,SWIGGY,,2026-06-18,76197,155.0009375,MUMBAI,32.0,2026-06-12,2026-06-21,CMFPO329609,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76197,2026-07-01
+180.95,0.0,SWIGGY,,2026-06-18,76198,189.9975,MUMBAI,16.0,2026-06-12,2026-06-21,CMFPO329609,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76198,2026-07-01
 ```
 
 ---

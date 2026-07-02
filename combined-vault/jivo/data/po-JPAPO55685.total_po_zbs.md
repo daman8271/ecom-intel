@@ -17,11 +17,11 @@ Up: [[po-JPAPO55685]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,0.0,SWIGGY,,75848,390.00125,JAIPUR,16.0,2026-06-08,2026-06-17,JPAPO55685,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75848,2026-06-30
-185.71,0.0,SWIGGY,,75849,195.0,JAIPUR,320.0,2026-06-08,2026-06-17,JPAPO55685,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75849,2026-06-30
-723.81,0.0,SWIGGY,,75850,760.0,JAIPUR,4.0,2026-06-08,2026-06-17,JPAPO55685,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75850,2026-06-30
-200.0,0.0,SWIGGY,,75851,210.0,JAIPUR,16.0,2026-06-08,2026-06-17,JPAPO55685,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75851,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+371.43,0.0,SWIGGY,,,75848,390.00125,JAIPUR,16.0,2026-06-08,2026-06-17,JPAPO55685,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75848,2026-07-01
+185.71,0.0,SWIGGY,,,75849,194.9955,JAIPUR,320.0,2026-06-08,2026-06-17,JPAPO55685,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75849,2026-07-01
+723.81,0.0,SWIGGY,,,75850,760.0005,JAIPUR,4.0,2026-06-08,2026-06-17,JPAPO55685,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75850,2026-07-01
+200.0,0.0,SWIGGY,,,75851,210.0,JAIPUR,16.0,2026-06-08,2026-06-17,JPAPO55685,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75851,2026-07-01
 ```
 
 ---

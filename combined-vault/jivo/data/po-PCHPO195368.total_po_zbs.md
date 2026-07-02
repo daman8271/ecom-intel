@@ -17,13 +17,13 @@ Up: [[po-PCHPO195368]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-228.57,20.0,SWIGGY,2026-05-06,70513,239.9985,CHANDIGARH,20.0,2026-04-24,2026-05-06,PCHPO195368,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70513,2026-06-30
-514.29,16.0,SWIGGY,2026-05-06,70514,540.004375,CHANDIGARH,16.0,2026-04-24,2026-05-06,PCHPO195368,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70514,2026-06-30
-390.48,16.0,SWIGGY,2026-05-06,70515,410.00375,CHANDIGARH,16.0,2026-04-24,2026-05-06,PCHPO195368,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70515,2026-06-30
-147.62,20.0,SWIGGY,2026-05-06,70516,155.001,CHANDIGARH,20.0,2026-04-24,2026-05-06,PCHPO195368,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70516,2026-06-30
-161.9,260.0,SWIGGY,2026-05-06,70517,169.9952308,CHANDIGARH,260.0,2026-04-24,2026-05-06,PCHPO195368,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70517,2026-06-30
-738.1,0.0,SWIGGY,2026-05-06,70518,775.005,CHANDIGARH,4.0,2026-04-24,2026-05-06,PCHPO195368,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70518,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+228.57,20.0,SWIGGY,,2026-05-06,70513,239.9985,CHANDIGARH,20.0,2026-04-24,2026-05-06,PCHPO195368,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70513,2026-07-01
+514.29,16.0,SWIGGY,,2026-05-06,70514,540.004375,CHANDIGARH,16.0,2026-04-24,2026-05-06,PCHPO195368,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70514,2026-07-01
+390.48,16.0,SWIGGY,,2026-05-06,70515,410.00375,CHANDIGARH,16.0,2026-04-24,2026-05-06,PCHPO195368,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70515,2026-07-01
+147.62,20.0,SWIGGY,,2026-05-06,70516,155.001,CHANDIGARH,20.0,2026-04-24,2026-05-06,PCHPO195368,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70516,2026-07-01
+161.9,260.0,SWIGGY,,2026-05-06,70517,169.9952308,CHANDIGARH,260.0,2026-04-24,2026-05-06,PCHPO195368,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70517,2026-07-01
+738.1,0.0,SWIGGY,,2026-05-06,70518,775.005,CHANDIGARH,4.0,2026-04-24,2026-05-06,PCHPO195368,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70518,2026-07-01
 ```
 
 ---

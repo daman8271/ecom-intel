@@ -17,10 +17,10 @@ Up: [[po-CHCPO262478]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-564.16,64.0,SWIGGY,2025-11-14,55237,592.368125,HYDERABAD,64.0,2025-11-01,2025-11-17,CHCPO262478,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55237,2026-06-30
-733.33,4.0,SWIGGY,2025-11-14,55238,769.9975,HYDERABAD,4.0,2025-11-01,2025-11-17,CHCPO262478,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55238,2026-06-30
-199.54,48.0,SWIGGY,2025-11-14,55239,209.5170833,HYDERABAD,48.0,2025-11-01,2025-11-17,CHCPO262478,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55239,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+564.16,64.0,SWIGGY,,2025-11-14,55237,592.368125,HYDERABAD,64.0,2025-11-01,2025-11-17,CHCPO262478,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55237,2026-07-01
+733.33,4.0,SWIGGY,,2025-11-14,55238,769.9975,HYDERABAD,4.0,2025-11-01,2025-11-17,CHCPO262478,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55238,2026-07-01
+199.54,48.0,SWIGGY,,2025-11-14,55239,209.5170833,HYDERABAD,48.0,2025-11-01,2025-11-17,CHCPO262478,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:55239,2026-07-01
 ```
 
 ---

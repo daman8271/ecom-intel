@@ -17,9 +17,9 @@ Up: [[po-VIAPO71520]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,256.0,SWIGGY,2026-06-25,76069,195.0,VIZAG,256.0,2026-06-11,2026-06-26,VIAPO71520,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76069,2026-06-30
-723.81,0.0,SWIGGY,2026-06-25,76070,760.0,VIZAG,12.0,2026-06-11,2026-06-26,VIAPO71520,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76070,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+185.71,256.0,SWIGGY,,2026-06-25,76069,194.9955,VIZAG,256.0,2026-06-11,2026-06-26,VIAPO71520,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76069,2026-07-01
+723.81,0.0,SWIGGY,,2026-06-25,76070,760.0005,VIZAG,12.0,2026-06-11,2026-06-26,VIAPO71520,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76070,2026-07-01
 ```
 
 ---

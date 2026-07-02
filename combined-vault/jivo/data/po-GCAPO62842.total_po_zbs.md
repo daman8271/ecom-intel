@@ -17,13 +17,13 @@ Up: [[po-GCAPO62842]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77981,215.0,CENTRAL GOA,20.0,2026-06-27,2026-07-14,GCAPO62842,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77981,2026-06-30
-476.19,0.0,SWIGGY,,77982,500.0,CENTRAL GOA,16.0,2026-06-27,2026-07-14,GCAPO62842,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77982,2026-06-30
-27.5,0.0,SWIGGY,,77983,38.5,CENTRAL GOA,48.0,2026-06-27,2026-07-14,GCAPO62842,,278756,Jivo  Fizzy Flavoured Soda (Peach) 750.0 ml,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77983,2026-06-30
-933.33,0.0,SWIGGY,,77984,980.0,CENTRAL GOA,10.0,2026-06-27,2026-07-14,GCAPO62842,,449236,Jivo Extra Light Olive Oil 2.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77984,2026-06-30
-733.33,0.0,SWIGGY,,77985,770.0,CENTRAL GOA,10.0,2026-06-27,2026-07-14,GCAPO62842,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77985,2026-06-30
-147.62,0.0,SWIGGY,,77986,155.0,CENTRAL GOA,16.0,2026-06-27,2026-07-14,GCAPO62842,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77986,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,,77981,214.998,CENTRAL GOA,20.0,2026-06-27,2026-07-14,GCAPO62842,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77981,2026-07-01
+476.19,0.0,SWIGGY,,,77982,499.9995,CENTRAL GOA,16.0,2026-06-27,2026-07-14,GCAPO62842,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77982,2026-07-01
+27.5,0.0,SWIGGY,,,77983,38.5,CENTRAL GOA,48.0,2026-06-27,2026-07-14,GCAPO62842,,278756,Jivo  Fizzy Flavoured Soda (Peach) 750.0 ml,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77983,2026-07-01
+933.33,0.0,SWIGGY,,,77984,979.9965,CENTRAL GOA,10.0,2026-06-27,2026-07-14,GCAPO62842,,449236,Jivo Extra Light Olive Oil 2.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77984,2026-07-01
+733.33,0.0,SWIGGY,,,77985,769.9965,CENTRAL GOA,10.0,2026-06-27,2026-07-14,GCAPO62842,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77985,2026-07-01
+147.62,0.0,SWIGGY,,,77986,155.001,CENTRAL GOA,16.0,2026-06-27,2026-07-14,GCAPO62842,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77986,2026-07-01
 ```
 
 ---

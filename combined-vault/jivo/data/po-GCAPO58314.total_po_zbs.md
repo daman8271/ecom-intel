@@ -17,10 +17,10 @@ Up: [[po-GCAPO58314]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-723.81,16.0,SWIGGY,2026-06-13,75583,760.000625,CENTRAL GOA,16.0,2026-06-04,2026-06-20,GCAPO58314,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75583,2026-06-30
-771.43,16.0,SWIGGY,2026-06-13,75584,810.00125,CENTRAL GOA,16.0,2026-06-04,2026-06-20,GCAPO58314,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75584,2026-06-30
-733.33,10.0,SWIGGY,2026-06-13,75585,769.997,CENTRAL GOA,10.0,2026-06-04,2026-06-20,GCAPO58314,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75585,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+723.81,16.0,SWIGGY,,2026-06-13,75583,760.000625,CENTRAL GOA,16.0,2026-06-04,2026-06-20,GCAPO58314,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75583,2026-07-01
+771.43,16.0,SWIGGY,,2026-06-13,75584,810.00125,CENTRAL GOA,16.0,2026-06-04,2026-06-20,GCAPO58314,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75584,2026-07-01
+733.33,10.0,SWIGGY,,2026-06-13,75585,769.997,CENTRAL GOA,10.0,2026-06-04,2026-06-20,GCAPO58314,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75585,2026-07-01
 ```
 
 ---

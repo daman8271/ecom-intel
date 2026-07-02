@@ -17,13 +17,13 @@ Up: [[po-CPDPO280336]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-24.09,0.0,SWIGGY,,76396,25.29,PUNE,48.0,2026-06-13,2026-06-23,CPDPO280336,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76396,2026-06-30
-476.19,0.0,SWIGGY,,76397,500.0,PUNE,16.0,2026-06-13,2026-06-23,CPDPO280336,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76397,2026-06-30
-178.1,0.0,SWIGGY,,76398,187.0,PUNE,128.0,2026-06-13,2026-06-23,CPDPO280336,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76398,2026-06-30
-928.57,0.0,SWIGGY,,76399,975.0,PUNE,28.0,2026-06-13,2026-06-23,CPDPO280336,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76399,2026-06-30
-149.52,0.0,SWIGGY,,76400,157.0,PUNE,120.0,2026-06-13,2026-06-23,CPDPO280336,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76400,2026-06-30
-154.29,0.0,SWIGGY,,76401,162.0,PUNE,500.0,2026-06-13,2026-06-23,CPDPO280336,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76401,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+24.09,0.0,SWIGGY,,,76396,25.29,PUNE,48.0,2026-06-13,2026-06-23,CPDPO280336,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76396,2026-07-01
+476.19,0.0,SWIGGY,,,76397,499.9995,PUNE,16.0,2026-06-13,2026-06-23,CPDPO280336,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76397,2026-07-01
+178.1,0.0,SWIGGY,,,76398,187.005,PUNE,128.0,2026-06-13,2026-06-23,CPDPO280336,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76398,2026-07-01
+928.57,0.0,SWIGGY,,,76399,974.9985,PUNE,28.0,2026-06-13,2026-06-23,CPDPO280336,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76399,2026-07-01
+149.52,0.0,SWIGGY,,,76400,156.996,PUNE,120.0,2026-06-13,2026-06-23,CPDPO280336,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76400,2026-07-01
+154.29,0.0,SWIGGY,,,76401,162.0045,PUNE,500.0,2026-06-13,2026-06-23,CPDPO280336,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76401,2026-07-01
 ```
 
 ---

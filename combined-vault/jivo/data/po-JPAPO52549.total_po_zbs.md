@@ -17,11 +17,11 @@ Up: [[po-JPAPO52549]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-178.09,0.0,SWIGGY,,73485,186.995,JAIPUR,16.0,2026-05-18,2026-05-27,JPAPO52549,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73485,2026-06-30
-147.62,0.0,SWIGGY,,73486,155.0009545,JAIPUR,220.0,2026-05-18,2026-05-27,JPAPO52549,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73486,2026-06-30
-809.52,0.0,SWIGGY,,73487,849.9961111,JAIPUR,36.0,2026-05-18,2026-05-27,JPAPO52549,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73487,2026-06-30
-809.52,0.0,SWIGGY,,73488,849.995,JAIPUR,4.0,2026-05-18,2026-05-27,JPAPO52549,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73488,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+178.09,0.0,SWIGGY,,,73485,186.995,JAIPUR,16.0,2026-05-18,2026-05-27,JPAPO52549,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73485,2026-07-01
+147.62,0.0,SWIGGY,,,73486,155.0009545,JAIPUR,220.0,2026-05-18,2026-05-27,JPAPO52549,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73486,2026-07-01
+809.52,0.0,SWIGGY,,,73487,849.9961111,JAIPUR,36.0,2026-05-18,2026-05-27,JPAPO52549,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73487,2026-07-01
+809.52,0.0,SWIGGY,,,73488,849.995,JAIPUR,4.0,2026-05-18,2026-05-27,JPAPO52549,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73488,2026-07-01
 ```
 
 ---

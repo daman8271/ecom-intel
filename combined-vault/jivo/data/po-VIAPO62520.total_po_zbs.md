@@ -17,9 +17,9 @@ Up: [[po-VIAPO62520]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,0.0,SWIGGY,,71676,256.998,VIZAG,20.0,2026-05-05,2026-06-04,VIAPO62520,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71676,2026-06-30
-182.86,0.0,SWIGGY,,71677,192.003125,VIZAG,16.0,2026-05-05,2026-06-04,VIAPO62520,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71677,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+244.76,0.0,SWIGGY,,,71676,256.998,VIZAG,20.0,2026-05-05,2026-06-04,VIAPO62520,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71676,2026-07-01
+182.86,0.0,SWIGGY,,,71677,192.003125,VIZAG,16.0,2026-05-05,2026-06-04,VIAPO62520,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71677,2026-07-01
 ```
 
 ---

@@ -17,10 +17,10 @@ Up: [[po-CHCPO296629]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,32.0,SWIGGY,2026-01-08,59462,219.99625,HYDERABAD,32.0,2025-12-23,2026-01-08,CHCPO296629,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59462,2026-06-30
-138.1,80.0,SWIGGY,2026-01-08,59463,145.00475,HYDERABAD,80.0,2025-12-23,2026-01-08,CHCPO296629,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59463,2026-06-30
-2619.05,8.0,SWIGGY,2026-01-08,59464,2750.0025,HYDERABAD,8.0,2025-12-23,2026-01-08,CHCPO296629,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59464,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,32.0,SWIGGY,,2026-01-08,59462,219.99625,HYDERABAD,32.0,2025-12-23,2026-01-08,CHCPO296629,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59462,2026-07-01
+138.1,80.0,SWIGGY,,2026-01-08,59463,145.00475,HYDERABAD,80.0,2025-12-23,2026-01-08,CHCPO296629,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59463,2026-07-01
+2619.05,8.0,SWIGGY,,2026-01-08,59464,2750.0025,HYDERABAD,8.0,2025-12-23,2026-01-08,CHCPO296629,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:59464,2026-07-01
 ```
 
 ---

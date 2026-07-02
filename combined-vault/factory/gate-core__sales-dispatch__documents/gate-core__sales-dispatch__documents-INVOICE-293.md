@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR69F7125"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,38 +10,38 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR69F7125
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35177
-- **doc_num:** 706260616
-- **doc_date:** 2026-06-22
-- **doc_total:** 400.00
+- **doc_entry:** 35338
+- **doc_num:** 706260711
+- **doc_date:** 2026-06-25
+- **doc_total:** 875000.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000930
-- **card_name:** SANTOSH JHA
-- **ship_to_code:** SANTOSH JHA DELHI
-- **ship_to_address:** WAZIR NAGAR KOTLA MUBARAKPUR LODHI ROAD  1465 A THIRD FLOOR GALI NO-7NEW DELHI-110003IN
-- **place_of_supply:** DL
-- **bp_gstin:** 
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
+- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR69F7125
+- **transporter_name:** Jivo Vehicle
+- **bilty_no:** NA
+- **bilty_date:** 2026-06-25
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-MP
-- **item_summary:** FG0000403 - PET BOTTLE 250 ML JIVO NATURAL MINERAL SPECIAL EDITION ARSHDEEP * (24 PCS)
-- **base_refs:** 1506264655
-- **total_quantity:** 120.000
-- **total_litres:** 30.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS
+- **base_refs:** 1706264672
+- **total_quantity:** 1000.000
+- **total_litres:** 5000.000
 - **total_boxes:** 0.000
-- **total_weight:** 32.875
+- **total_weight:** 4912.500
 - **line_count:** 1
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35177, "sap_invoice_doc_num": "706260616", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 613, "sap_invoice_doc_entry": 35338, "sap_invoice_doc_num": "706260711", "invoice_number": "706260711", "eway_bill": "711645843661", "invoice_weight": "4912.500", "invoice_amount": "875000.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "5000.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 266, "transporter_id": 22, "driver_id": null, "linked_vehicle_entry_id": 1086, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-25T14:48:20.221123Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-25", "priority": "", "transporter_name": "JIVO WELLNESS PVT LTD", "transporter_gstin": "", "contact_person": "Jivo Wellness", "mobile_no": "1234567891", "vehicle_no": "HR69F7125", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "NA", "bilty_date": "2026-06-25", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260708__-.pdf", "bilty_attachment_name": "AR - 706260708  -.pdf", "freight": "0.45", "total_freight": "0.45", "kanta_weight": null, "remarks": "", "created_at": "2026-06-25T17:21:44.366890+05:30", "updated_at": "2026-06-25T20:18:20.230819+05:30"}
   ```

@@ -17,11 +17,11 @@ Up: [[po-VIAPO75489]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-723.81,0.0,SWIGGY,,78005,760.0,VIZAG,4.0,2026-06-27,2026-07-29,VIAPO75489,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78005,2026-06-30
-771.43,0.0,SWIGGY,,78006,810.0,VIZAG,36.0,2026-06-27,2026-07-29,VIAPO75489,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78006,2026-06-30
-154.29,0.0,SWIGGY,,78007,162.0,VIZAG,140.0,2026-06-27,2026-07-29,VIAPO75489,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78007,2026-06-30
-747.62,0.0,SWIGGY,,78008,785.0,VIZAG,4.0,2026-06-27,2026-07-29,VIAPO75489,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78008,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+723.81,0.0,SWIGGY,,,78005,760.0005,VIZAG,4.0,2026-06-27,2026-07-29,VIAPO75489,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78005,2026-07-01
+771.43,0.0,SWIGGY,,,78006,810.0015,VIZAG,36.0,2026-06-27,2026-07-29,VIAPO75489,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78006,2026-07-01
+154.29,0.0,SWIGGY,,,78007,162.0045,VIZAG,140.0,2026-06-27,2026-07-29,VIAPO75489,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78007,2026-07-01
+747.62,0.0,SWIGGY,,,78008,785.001,VIZAG,4.0,2026-06-27,2026-07-29,VIAPO75489,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78008,2026-07-01
 ```
 
 ---

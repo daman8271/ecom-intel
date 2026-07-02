@@ -56,7 +56,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   "realise",
   "business",
   "shipped_cogs",
-  "margin_category"
+  "margin_category",
+  "total_distributor_commission"
  ],
  "sample": {
   "asin": "B0152TWWSQ",
@@ -95,6 +96,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   "source_shipped_revenue": 4919.06,
   "sub_category": "CANOLA",
   "to_date": "2026-05-12",
+  "total_distributor_commission": 102529.95645631068,
   "unit_size": 2.0,
   "year": 2026
  }

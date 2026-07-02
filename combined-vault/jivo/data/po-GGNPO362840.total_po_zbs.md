@@ -17,10 +17,10 @@ Up: [[po-GGNPO362840]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,2026-06-08,75041,38.5,DELHI,12.0,2026-06-02,2026-06-10,GGNPO362840,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75041,2026-06-30
-244.76,0.0,SWIGGY,2026-06-08,75042,256.998125,DELHI,80.0,2026-06-02,2026-06-10,GGNPO362840,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75042,2026-06-30
-182.86,80.0,SWIGGY,2026-06-08,75043,192.002875,DELHI,80.0,2026-06-02,2026-06-10,GGNPO362840,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75043,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+27.5,0.0,SWIGGY,,2026-06-08,75041,38.5,DELHI,12.0,2026-06-02,2026-06-10,GGNPO362840,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75041,2026-07-01
+244.76,0.0,SWIGGY,,2026-06-08,75042,256.998125,DELHI,80.0,2026-06-02,2026-06-10,GGNPO362840,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75042,2026-07-01
+182.86,80.0,SWIGGY,,2026-06-08,75043,192.002875,DELHI,80.0,2026-06-02,2026-06-10,GGNPO362840,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75043,2026-07-01
 ```
 
 ---

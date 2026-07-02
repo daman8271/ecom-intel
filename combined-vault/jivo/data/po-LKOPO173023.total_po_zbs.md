@@ -17,8 +17,8 @@ Up: [[po-LKOPO173023]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1809.52,48.0,SWIGGY,2026-06-13,75653,1899.99625,LUCKNOW,48.0,2026-06-04,2026-06-16,LKOPO173023,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75653,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1809.52,48.0,SWIGGY,,2026-06-13,75653,1899.99625,LUCKNOW,48.0,2026-06-04,2026-06-16,LKOPO173023,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:75653,2026-07-01
 ```
 
 ---

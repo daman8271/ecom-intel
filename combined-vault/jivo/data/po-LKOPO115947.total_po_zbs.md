@@ -17,9 +17,9 @@ Up: [[po-LKOPO115947]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-196.19,0.0,SWIGGY,,49781,205.9995833,LUCKNOW,72.0,2025-08-15,2025-09-06,LKOPO115947,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:49781,2026-06-30
-141.9,0.0,SWIGGY,,49782,148.9957143,LUCKNOW,7.0,2025-08-15,2025-09-06,LKOPO115947,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:49782,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+196.19,0.0,SWIGGY,,,49781,205.9995833,LUCKNOW,72.0,2025-08-15,2025-09-06,LKOPO115947,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:49781,2026-07-01
+141.9,0.0,SWIGGY,,,49782,148.9957143,LUCKNOW,7.0,2025-08-15,2025-09-06,LKOPO115947,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:49782,2026-07-01
 ```
 
 ---

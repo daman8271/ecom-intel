@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "NLOIAC6821"
+title: "RJ11GD2629"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,38 +10,38 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# NLOIAC6821
+# RJ11GD2629
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35025
-- **doc_num:** 606260158
-- **doc_date:** 2026-06-20
-- **doc_total:** 90000.00
+- **doc_entry:** 35178
+- **doc_num:** 606260166
+- **doc_date:** 2026-06-22
+- **doc_total:** 984000.00
 - **branch_id:** 2
 - **branch_name:** HARYANA
-- **card_code:** CUSTA000900
-- **card_name:** BABA LOKENATH TRADERS
-- **ship_to_code:** BABA LOKENATH TRADERS KOLKATA
-- **ship_to_address:** LAHABAGAN LAKETOWN  1013/1 DAKSHINDARI ROADKOLKATA-700048IN
-- **place_of_supply:** WB
-- **bp_gstin:** 19AKIPB9263G1ZZ
+- **card_code:** CUSTA000592
+- **card_name:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED
+- **ship_to_code:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN
+- **ship_to_address:** ELECTRICITY CITY POSTBENGALURU-560100IN
+- **place_of_supply:** KT
+- **bp_gstin:** 29AAICK3556G1Z9
 - **eway_bill:** 
-- **vehicle_no:** NLOIAC6821
+- **vehicle_no:** RJ11GD2629
 - **transporter_name:** Abhiman Express
-- **bilty_no:** 260440
-- **bilty_date:** 2026-06-20
+- **bilty_no:** 1126
+- **bilty_date:** 2026-06-23
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** BH-FGM
-- **item_summary:** FG0000004 - COLD PRESS 5 LTR 4 PCS
-- **base_refs:** 1706264612
-- **total_quantity:** 80.000
-- **total_litres:** 400.000
+- **item_summary:** FG0000028 - POMACE OLIVE 1 LTR 16 PCS
+- **base_refs:** 1706264616
+- **total_quantity:** 2400.000
+- **total_litres:** 2400.000
 - **total_boxes:** 0.000
-- **total_weight:** 396.656
+- **total_weight:** 2387.970
 - **line_count:** 1
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": 468, "sap_invoice_doc_entry": 35025, "sap_invoice_doc_num": "606260158", "invoice_number": "606260158", "eway_bill": "352272958704", "invoice_weight": "396.656", "invoice_amount": "90000.00", "place_of_supply": "WB", "location": "", "product_variety": "Oil", "total_litres": "1600.000", "effective_month": "2026-06", "budget_delivery_point": "KOLKATA", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 294, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 884, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-20T14:45:20.942406Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-20", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "NLOIAC6821", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260440", "bilty_date": "2026-06-20", "bilty_attachment": "/media/sales_dispatch/attachments/GR_260463_1.pdf", "bilty_attachment_name": "GR 260463 (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-20T11:42:51.595860+05:30", "updated_at": "2026-06-20T20:15:20.952620+05:30"}
+  {"id": 517, "sap_invoice_doc_entry": 35178, "sap_invoice_doc_num": "606260166", "invoice_number": "606260166", "eway_bill": "372277512556", "invoice_weight": "2387.970", "invoice_amount": "984000.00", "place_of_supply": "KT", "location": "", "product_variety": "Oil", "total_litres": "38400.000", "effective_month": "2026-06", "budget_delivery_point": "BENGALURU", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 305, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 958, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-23T13:22:00.783588Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-22", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ11GD2629", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1126", "bilty_date": "2026-06-22", "bilty_attachment": "/media/sales_dispatch/attachments/GR_260465.pdf", "bilty_attachment_name": "GR 260465.pdf", "freight": "19916.93", "total_freight": "19916.93", "kanta_weight": null, "remarks": "", "created_at": "2026-06-22T16:56:29.168165+05:30", "updated_at": "2026-06-23T18:52:00.803236+05:30"}
   ```

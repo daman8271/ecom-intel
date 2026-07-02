@@ -17,11 +17,11 @@ Up: [[po-CHMPO303760]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-17,76018,214.998,HYDERABAD,20.0,2026-06-09,2026-06-25,CHMPO303760,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76018,2026-06-30
-928.57,0.0,SWIGGY,2026-06-17,76019,974.9985417,HYDERABAD,48.0,2026-06-09,2026-06-25,CHMPO303760,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76019,2026-06-30
-738.09,0.0,SWIGGY,2026-06-17,76020,774.995,HYDERABAD,12.0,2026-06-09,2026-06-25,CHMPO303760,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76020,2026-06-30
-147.62,48.0,SWIGGY,2026-06-17,76021,155.0010417,HYDERABAD,48.0,2026-06-09,2026-06-25,CHMPO303760,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76021,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-17,76018,214.998,HYDERABAD,20.0,2026-06-09,2026-06-25,CHMPO303760,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76018,2026-07-01
+928.57,0.0,SWIGGY,,2026-06-17,76019,974.9985417,HYDERABAD,48.0,2026-06-09,2026-06-25,CHMPO303760,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76019,2026-07-01
+738.09,0.0,SWIGGY,,2026-06-17,76020,774.995,HYDERABAD,12.0,2026-06-09,2026-06-25,CHMPO303760,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76020,2026-07-01
+147.62,48.0,SWIGGY,,2026-06-17,76021,155.0010417,HYDERABAD,48.0,2026-06-09,2026-06-25,CHMPO303760,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76021,2026-07-01
 ```
 
 ---

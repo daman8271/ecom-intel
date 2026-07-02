@@ -17,11 +17,11 @@ Up: [[po-CPDPO278999]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-19,76041,214.998,PUNE,20.0,2026-06-09,2026-06-19,CPDPO278999,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76041,2026-06-30
-476.19,32.0,SWIGGY,2026-06-19,76042,499.999375,PUNE,32.0,2026-06-09,2026-06-19,CPDPO278999,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76042,2026-06-30
-371.43,32.0,SWIGGY,2026-06-19,76043,390.0015625,PUNE,32.0,2026-06-09,2026-06-19,CPDPO278999,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76043,2026-06-30
-344.76,0.0,SWIGGY,2026-06-19,76044,361.9980909,PUNE,110.0,2026-06-09,2026-06-19,CPDPO278999,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76044,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-19,76041,214.998,PUNE,20.0,2026-06-09,2026-06-19,CPDPO278999,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76041,2026-07-01
+476.19,32.0,SWIGGY,,2026-06-19,76042,499.999375,PUNE,32.0,2026-06-09,2026-06-19,CPDPO278999,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76042,2026-07-01
+371.43,32.0,SWIGGY,,2026-06-19,76043,390.0015625,PUNE,32.0,2026-06-09,2026-06-19,CPDPO278999,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76043,2026-07-01
+344.76,0.0,SWIGGY,,2026-06-19,76044,361.9980909,PUNE,110.0,2026-06-09,2026-06-19,CPDPO278999,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76044,2026-07-01
 ```
 
 ---

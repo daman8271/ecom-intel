@@ -17,10 +17,10 @@ Up: [[po-CADPO210852]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-19.43,0.0,SWIGGY,,77826,20.4,AHMEDABAD,48.0,2026-06-25,2026-07-04,CADPO210852,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77826,2026-06-30
-928.57,0.0,SWIGGY,,77827,975.0,AHMEDABAD,40.0,2026-06-25,2026-07-04,CADPO210852,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77827,2026-06-30
-344.76,0.0,SWIGGY,,77828,362.0,AHMEDABAD,30.0,2026-06-25,2026-07-04,CADPO210852,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77828,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+19.43,0.0,SWIGGY,,,77826,20.4,AHMEDABAD,48.0,2026-06-25,2026-07-04,CADPO210852,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77826,2026-07-01
+928.57,0.0,SWIGGY,,,77827,974.9985,AHMEDABAD,40.0,2026-06-25,2026-07-04,CADPO210852,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77827,2026-07-01
+344.76,0.0,SWIGGY,,,77828,361.998,AHMEDABAD,30.0,2026-06-25,2026-07-04,CADPO210852,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77828,2026-07-01
 ```
 
 ---

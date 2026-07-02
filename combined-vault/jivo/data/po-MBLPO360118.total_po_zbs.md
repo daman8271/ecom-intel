@@ -17,9 +17,9 @@ Up: [[po-MBLPO360118]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,16.0,SWIGGY,2026-01-28,61864,219.99625,BANGALORE,16.0,2026-01-24,2026-02-05,MBLPO360118,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61864,2026-06-30
-533.33,0.0,SWIGGY,2026-01-28,61865,559.9967,BANGALORE,100.0,2026-01-24,2026-02-05,MBLPO360118,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61865,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,16.0,SWIGGY,,2026-01-28,61864,219.99625,BANGALORE,16.0,2026-01-24,2026-02-05,MBLPO360118,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61864,2026-07-01
+533.33,0.0,SWIGGY,,2026-01-28,61865,559.9967,BANGALORE,100.0,2026-01-24,2026-02-05,MBLPO360118,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61865,2026-07-01
 ```
 
 ---

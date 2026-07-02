@@ -17,11 +17,11 @@ Up: [[po-ETPPO25145]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.1,20.0,SWIGGY,2026-02-14,62161,250.00475,NOIDA,40.0,2026-01-29,2026-02-20,ETPPO25145,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62161,2026-06-30
-196.19,4.0,SWIGGY,2026-02-14,62162,206.0,NOIDA,4.0,2026-01-29,2026-02-20,ETPPO25145,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62162,2026-06-30
-209.52,208.0,SWIGGY,2026-02-14,62163,219.9962019,NOIDA,208.0,2026-01-29,2026-02-20,ETPPO25145,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62163,2026-06-30
-138.1,420.0,SWIGGY,2026-02-14,62164,145.0047619,NOIDA,420.0,2026-01-29,2026-02-20,ETPPO25145,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62164,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.1,20.0,SWIGGY,,2026-02-14,62161,250.00475,NOIDA,40.0,2026-01-29,2026-02-20,ETPPO25145,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62161,2026-07-01
+196.19,4.0,SWIGGY,,2026-02-14,62162,205.9995,NOIDA,4.0,2026-01-29,2026-02-20,ETPPO25145,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62162,2026-07-01
+209.52,208.0,SWIGGY,,2026-02-14,62163,219.9962019,NOIDA,208.0,2026-01-29,2026-02-20,ETPPO25145,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62163,2026-07-01
+138.1,420.0,SWIGGY,,2026-02-14,62164,145.0047619,NOIDA,420.0,2026-01-29,2026-02-20,ETPPO25145,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:62164,2026-07-01
 ```
 
 ---

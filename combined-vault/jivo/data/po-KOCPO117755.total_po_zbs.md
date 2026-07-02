@@ -17,12 +17,12 @@ Up: [[po-KOCPO117755]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-28,75781,215.0,KOCHI,20.0,2026-06-06,2026-07-02,KOCPO117755,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75781,2026-06-30
-476.19,16.0,SWIGGY,2026-06-28,75782,500.0,KOCHI,16.0,2026-06-06,2026-07-02,KOCPO117755,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75782,2026-06-30
-738.1,0.0,SWIGGY,2026-06-28,75783,775.0,KOCHI,4.0,2026-06-06,2026-07-02,KOCPO117755,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75783,2026-06-30
-747.62,4.0,SWIGGY,2026-06-28,75784,785.0,KOCHI,4.0,2026-06-06,2026-07-02,KOCPO117755,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75784,2026-06-30
-147.62,32.0,SWIGGY,2026-06-28,75785,155.0,KOCHI,32.0,2026-06-06,2026-07-02,KOCPO117755,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75785,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-28,75781,214.998,KOCHI,20.0,2026-06-06,2026-07-02,KOCPO117755,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75781,2026-07-01
+476.19,16.0,SWIGGY,,2026-06-28,75782,499.9995,KOCHI,16.0,2026-06-06,2026-07-02,KOCPO117755,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75782,2026-07-01
+738.1,0.0,SWIGGY,,2026-06-28,75783,775.005,KOCHI,4.0,2026-06-06,2026-07-02,KOCPO117755,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75783,2026-07-01
+747.62,4.0,SWIGGY,,2026-06-28,75784,785.001,KOCHI,4.0,2026-06-06,2026-07-02,KOCPO117755,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75784,2026-07-01
+147.62,32.0,SWIGGY,,2026-06-28,75785,155.001,KOCHI,32.0,2026-06-06,2026-07-02,KOCPO117755,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75785,2026-07-01
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "DL01GE5049"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# DL01GE5049
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35229
-- **doc_num:** 706260647
-- **doc_date:** 2026-06-23
-- **doc_total:** 2260.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000661
-- **card_name:** DEL DEEPAK BHARDWAJ
-- **ship_to_code:** DEL DEEPAK BHARDWAJ DELHI
-- **ship_to_address:** UTTAM NAGARNEW DELHI-110059IN
-- **place_of_supply:** DL
-- **bp_gstin:** 
+- **doc_entry:** 35394
+- **doc_num:** 606260177
+- **doc_date:** 2026-06-26
+- **doc_total:** 553740.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
+- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** DL01GE5049
+- **transporter_name:** Bhargave Road Carrier
+- **bilty_no:** 1491
+- **bilty_date:** 2026-06-27
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-MP
-- **item_summary:** FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
-- **base_refs:** 1506264647
-- **total_quantity:** 3.000
-- **total_litres:** 11.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS
+- **base_refs:** 1706264647
+- **total_quantity:** 1080.000
+- **total_litres:** 3480.000
 - **total_boxes:** 0.000
-- **total_weight:** 10.825
-- **line_count:** 3
+- **total_weight:** 3421.270
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35229, "sap_invoice_doc_num": "706260647", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 641, "sap_invoice_doc_entry": 35394, "sap_invoice_doc_num": "606260177", "invoice_number": "606260177", "eway_bill": "382280125807", "invoice_weight": "3421.270", "invoice_amount": "553740.00", "place_of_supply": "HR", "location": "FARIDABAD", "product_variety": "Oil", "total_litres": "3480.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 325, "transporter_id": 50, "driver_id": null, "linked_vehicle_entry_id": 1148, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-27T10:52:05.063161Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-26", "priority": "High", "transporter_name": "Bhargave Road Carrier", "transporter_gstin": "07BZQPP0903H1Z8", "contact_person": "Pardeep", "mobile_no": "8708270230", "vehicle_no": "DL01GE5049", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1491", "bilty_date": "2026-06-27", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-27_at_4.06.57_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-27 at 4.06.57 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-26T12:06:35.379814+05:30", "updated_at": "2026-06-27T16:22:05.075598+05:30"}
   ```

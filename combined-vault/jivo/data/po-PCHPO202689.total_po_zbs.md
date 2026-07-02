@@ -17,10 +17,10 @@ Up: [[po-PCHPO202689]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-366.67,0.0,SWIGGY,,74177,385.0033333,CHANDIGARH,48.0,2026-05-23,2026-06-03,PCHPO202689,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:74177,2026-06-30
-195.24,0.0,SWIGGY,,74178,205.0025,CHANDIGARH,8.0,2026-05-23,2026-06-03,PCHPO202689,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:74178,2026-06-30
-161.9,0.0,SWIGGY,,74179,169.9952308,CHANDIGARH,520.0,2026-05-23,2026-06-03,PCHPO202689,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:74179,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+366.67,0.0,SWIGGY,,,74177,385.0033333,CHANDIGARH,48.0,2026-05-23,2026-06-03,PCHPO202689,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:74177,2026-07-01
+195.24,0.0,SWIGGY,,,74178,205.0025,CHANDIGARH,8.0,2026-05-23,2026-06-03,PCHPO202689,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:74178,2026-07-01
+161.9,0.0,SWIGGY,,,74179,169.9952308,CHANDIGARH,520.0,2026-05-23,2026-06-03,PCHPO202689,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:74179,2026-07-01
 ```
 
 ---

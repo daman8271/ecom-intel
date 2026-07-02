@@ -17,12 +17,12 @@ Up: [[po-VIAPO10451]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,0.0,SWIGGY,,52198,529.998125,VIZAG,16.0,2025-09-18,2025-10-20,VIAPO10451,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52198,2026-06-30
-190.48,0.0,SWIGGY,,52199,200.00375,VIZAG,48.0,2025-09-18,2025-10-20,VIAPO10451,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52199,2026-06-30
-114.29,0.0,SWIGGY,,52200,120.0045,VIZAG,20.0,2025-09-18,2025-10-20,VIAPO10451,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52200,2026-06-30
-141.9,0.0,SWIGGY,,52201,148.99525,VIZAG,40.0,2025-09-18,2025-10-20,VIAPO10451,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52201,2026-06-30
-133.33,0.0,SWIGGY,,52202,139.996875,VIZAG,16.0,2025-09-18,2025-10-20,VIAPO10451,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52202,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+504.76,0.0,SWIGGY,,,52198,529.998125,VIZAG,16.0,2025-09-18,2025-10-20,VIAPO10451,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52198,2026-07-01
+190.48,0.0,SWIGGY,,,52199,200.00375,VIZAG,48.0,2025-09-18,2025-10-20,VIAPO10451,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52199,2026-07-01
+114.29,0.0,SWIGGY,,,52200,120.0045,VIZAG,20.0,2025-09-18,2025-10-20,VIAPO10451,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52200,2026-07-01
+141.9,0.0,SWIGGY,,,52201,148.99525,VIZAG,40.0,2025-09-18,2025-10-20,VIAPO10451,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52201,2026-07-01
+133.33,0.0,SWIGGY,,,52202,139.996875,VIZAG,16.0,2025-09-18,2025-10-20,VIAPO10451,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52202,2026-07-01
 ```
 
 ---

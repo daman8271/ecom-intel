@@ -17,10 +17,10 @@ Up: [[po-MBLPO413035]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,77586,500.0,BANGALORE,80.0,2026-06-24,2026-07-12,MBLPO413035,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77586,2026-06-30
-185.71,0.0,SWIGGY,,77587,195.0,BANGALORE,512.0,2026-06-24,2026-07-12,MBLPO413035,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77587,2026-06-30
-200.0,0.0,SWIGGY,,77588,210.0,BANGALORE,16.0,2026-06-24,2026-07-12,MBLPO413035,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77588,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,0.0,SWIGGY,,,77586,499.9995,BANGALORE,80.0,2026-06-24,2026-07-12,MBLPO413035,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77586,2026-07-01
+185.71,0.0,SWIGGY,,,77587,194.9955,BANGALORE,512.0,2026-06-24,2026-07-12,MBLPO413035,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77587,2026-07-01
+200.0,0.0,SWIGGY,,,77588,210.0,BANGALORE,16.0,2026-06-24,2026-07-12,MBLPO413035,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77588,2026-07-01
 ```
 
 ---

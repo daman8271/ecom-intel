@@ -29,8 +29,6 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000231` |
 | canonical_sku(s) | `jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml`, `fizzy-water-flavoured-with-lemon-750ml` |
 | Category | [[Category - DRINKS\|DRINKS]] |
-| Sub-category | SODA |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 750ML |
 | Bridge class | core (priced) |

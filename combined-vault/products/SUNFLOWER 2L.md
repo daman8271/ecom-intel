@@ -29,8 +29,11 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000133` |
 | canonical_sku(s) | `edoge62esbtmbrgf`, `jivo-cold-pressed-chemical-free-sunflower-oil-for-roasting-frying-baking-all-types-of-cuisines-high-in-antioxidants-tasteful-and-healthy-2-litre-2l` |
 | Category | [[Category - SUNFLOWER\|SUNFLOWER]] |
+| Sub-category | SUNFLOWER |
+| Brand | JIVO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 2L |
+| Per-unit | 2.0 L |
 | Bridge class | new_confirmed |
 
 ## Competitor-price lens

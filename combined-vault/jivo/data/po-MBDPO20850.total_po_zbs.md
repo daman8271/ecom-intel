@@ -17,11 +17,11 @@ Up: [[po-MBDPO20850]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77241,215.0,BANGALORE,40.0,2026-06-20,2026-07-08,MBDPO20850,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77241,2026-06-30
-195.24,0.0,SWIGGY,,77242,205.0,BANGALORE,112.0,2026-06-20,2026-07-08,MBDPO20850,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77242,2026-06-30
-928.57,0.0,SWIGGY,,77243,975.0,BANGALORE,28.0,2026-06-20,2026-07-08,MBDPO20850,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77243,2026-06-30
-733.33,0.0,SWIGGY,,77244,770.0,BANGALORE,10.0,2026-06-20,2026-07-08,MBDPO20850,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77244,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,,77241,214.998,BANGALORE,40.0,2026-06-20,2026-07-08,MBDPO20850,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77241,2026-07-01
+195.24,0.0,SWIGGY,,,77242,205.002,BANGALORE,112.0,2026-06-20,2026-07-08,MBDPO20850,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77242,2026-07-01
+928.57,0.0,SWIGGY,,,77243,974.9985,BANGALORE,28.0,2026-06-20,2026-07-08,MBDPO20850,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77243,2026-07-01
+733.33,0.0,SWIGGY,,,77244,769.9965,BANGALORE,10.0,2026-06-20,2026-07-08,MBDPO20850,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77244,2026-07-01
 ```
 
 ---

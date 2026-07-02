@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "DL1MA1972"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# DL1MA1972
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34782
-- **doc_num:** 706260386
-- **doc_date:** 2026-06-17
-- **doc_total:** 70068.00
+- **doc_entry:** 34956
+- **doc_num:** 706260490
+- **doc_date:** 2026-06-19
+- **doc_total:** 10950.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD HMH4 KALYAN MAHARASHTRA
-- **ship_to_address:** BHIWANDIKALYAN-421302IN
-- **place_of_supply:** MH
-- **bp_gstin:** 27AAECR0564M1Z3
+- **card_code:** CUSTA000645
+- **card_name:** DEL SAHIL
+- **ship_to_code:** DEL SAHIL DELHI
+- **ship_to_address:** NEW DELHI-110034IN
+- **place_of_supply:** DL
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** DL1MA1972
-- **transporter_name:** PICK & SHIP
-- **bilty_no:** 2516
-- **bilty_date:** 2026-06-20
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000227 - RICE BRAN 1L 16 PCS, FG0000192 - SOYABEAN OIL 5 LTR 4 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS
-- **base_refs:** 1706264515
-- **total_quantity:** 86.000
-- **total_litres:** 250.000
-- **total_boxes:** 0.000
-- **total_weight:** 286.451
-- **line_count:** 3
+- **warehouses:** DL-MP
+- **item_summary:** FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
+- **base_refs:** 1506264625
+- **total_quantity:** 34.000
+- **total_litres:** 41.000
+- **total_boxes:** 32.000
+- **total_weight:** 39.497
+- **line_count:** 5
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 382, "sap_invoice_doc_entry": 34782, "sap_invoice_doc_num": "706260386", "invoice_number": "706260386", "eway_bill": "342274212580", "invoice_weight": "286.451", "invoice_amount": "70068.00", "place_of_supply": "MH", "location": "", "product_variety": "Oil", "total_litres": "1000.000", "effective_month": "2026-06", "budget_delivery_point": "KALYAN", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 295, "transporter_id": 85, "driver_id": null, "linked_vehicle_entry_id": 885, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-20T15:27:12.592097Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-18", "priority": "HIGH", "transporter_name": "PICK & SHIP", "transporter_gstin": "09AAQCP4145A1ZF", "contact_person": "shukla", "mobile_no": "9958007610", "vehicle_no": "DL01MA1972", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "2517", "bilty_date": "2026-06-20", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-20_at_7_8YkTokC.03.35_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-20 at 7.03.35 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "Please Dispatch Tomorrow", "created_at": "2026-06-17T16:56:22.013110+05:30", "updated_at": "2026-06-20T20:57:12.614590+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 34956, "sap_invoice_doc_num": "706260490", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

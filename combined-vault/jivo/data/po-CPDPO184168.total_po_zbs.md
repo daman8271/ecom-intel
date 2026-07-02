@@ -17,10 +17,10 @@ Up: [[po-CPDPO184168]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-190.48,0.0,SWIGGY,2025-09-30,52149,200.003875,PUNE,80.0,2025-09-16,2025-10-03,CPDPO184168,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52149,2026-06-30
-166.67,20.0,SWIGGY,2025-09-30,52150,175.0035,PUNE,20.0,2025-09-16,2025-10-03,CPDPO184168,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52150,2026-06-30
-133.33,32.0,SWIGGY,2025-09-30,52151,139.9965625,PUNE,32.0,2025-09-16,2025-10-03,CPDPO184168,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52151,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+190.48,0.0,SWIGGY,,2025-09-30,52149,200.003875,PUNE,80.0,2025-09-16,2025-10-03,CPDPO184168,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52149,2026-07-01
+166.67,20.0,SWIGGY,,2025-09-30,52150,175.0035,PUNE,20.0,2025-09-16,2025-10-03,CPDPO184168,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52150,2026-07-01
+133.33,32.0,SWIGGY,,2025-09-30,52151,139.9965625,PUNE,32.0,2025-09-16,2025-10-03,CPDPO184168,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52151,2026-07-01
 ```
 
 ---

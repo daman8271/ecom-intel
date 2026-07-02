@@ -17,9 +17,9 @@ Up: [[po-JPAPO18904]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-397.14,0.0,SWIGGY,,54951,416.9971875,JAIPUR,32.0,2025-10-30,2025-11-13,JPAPO18904,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54951,2026-06-30
-2522.86,0.0,SWIGGY,,54952,2649.003125,JAIPUR,16.0,2025-10-30,2025-11-13,JPAPO18904,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54952,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+397.14,0.0,SWIGGY,,,54951,416.9971875,JAIPUR,32.0,2025-10-30,2025-11-13,JPAPO18904,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54951,2026-07-01
+2522.86,0.0,SWIGGY,,,54952,2649.003125,JAIPUR,16.0,2025-10-30,2025-11-13,JPAPO18904,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:54952,2026-07-01
 ```
 
 ---

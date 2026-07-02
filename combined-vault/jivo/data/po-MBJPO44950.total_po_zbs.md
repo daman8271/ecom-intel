@@ -17,10 +17,10 @@ Up: [[po-MBJPO44950]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,96.0,SWIGGY,2026-02-21,63662,219.9961458,BANGALORE,96.0,2026-02-17,2026-03-01,MBJPO44950,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63662,2026-06-30
-533.33,0.0,SWIGGY,2026-02-21,63663,559.9966667,BANGALORE,42.0,2026-02-17,2026-03-01,MBJPO44950,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63663,2026-06-30
-761.9,4.0,SWIGGY,2026-02-21,63664,799.995,BANGALORE,4.0,2026-02-17,2026-03-01,MBJPO44950,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63664,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,96.0,SWIGGY,,2026-02-21,63662,219.9961458,BANGALORE,96.0,2026-02-17,2026-03-01,MBJPO44950,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63662,2026-07-01
+533.33,0.0,SWIGGY,,2026-02-21,63663,559.9966667,BANGALORE,42.0,2026-02-17,2026-03-01,MBJPO44950,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63663,2026-07-01
+761.9,4.0,SWIGGY,,2026-02-21,63664,799.995,BANGALORE,4.0,2026-02-17,2026-03-01,MBJPO44950,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:63664,2026-07-01
 ```
 
 ---

@@ -17,12 +17,12 @@ Up: [[po-GGNPO370247]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,0.0,SWIGGY,,77648,205.0,DELHI,16.0,2026-06-24,2026-07-03,GGNPO370247,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77648,2026-06-30
-178.1,0.0,SWIGGY,,77649,187.0,DELHI,1184.0,2026-06-24,2026-07-03,GGNPO370247,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77649,2026-06-30
-928.57,0.0,SWIGGY,,77650,975.0,DELHI,52.0,2026-06-24,2026-07-03,GGNPO370247,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77650,2026-06-30
-149.52,0.0,SWIGGY,,77651,157.0,DELHI,1520.0,2026-06-24,2026-07-03,GGNPO370247,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77651,2026-06-30
-154.29,0.0,SWIGGY,,77652,162.0,DELHI,420.0,2026-06-24,2026-07-03,GGNPO370247,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77652,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+195.24,0.0,SWIGGY,,,77648,205.002,DELHI,16.0,2026-06-24,2026-07-03,GGNPO370247,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77648,2026-07-01
+178.1,0.0,SWIGGY,,,77649,187.005,DELHI,1184.0,2026-06-24,2026-07-03,GGNPO370247,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77649,2026-07-01
+928.57,0.0,SWIGGY,,,77650,974.9985,DELHI,52.0,2026-06-24,2026-07-03,GGNPO370247,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77650,2026-07-01
+149.52,0.0,SWIGGY,,,77651,156.996,DELHI,1520.0,2026-06-24,2026-07-03,GGNPO370247,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77651,2026-07-01
+154.29,0.0,SWIGGY,,,77652,162.0045,DELHI,420.0,2026-06-24,2026-07-03,GGNPO370247,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77652,2026-07-01
 ```
 
 ---

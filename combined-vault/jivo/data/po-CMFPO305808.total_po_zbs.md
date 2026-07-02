@@ -17,13 +17,13 @@ Up: [[po-CMFPO305808]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-24.29,0.0,SWIGGY,,66944,34.00425926,MUMBAI,108.0,2026-04-02,2026-04-11,CMFPO305808,,141307,Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66944,2026-06-30
-19.43,0.0,SWIGGY,,67929,20.40166667,MUMBAI,12.0,2026-04-02,2026-04-11,CMFPO305808,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67929,2026-06-30
-12.86,0.0,SWIGGY,,67930,18.00283333,MUMBAI,120.0,2026-04-02,2026-04-11,CMFPO305808,,210286,JivoÂ Fizzy club Soda 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67930,2026-06-30
-27.5,0.0,SWIGGY,,67931,38.5,MUMBAI,12.0,2026-04-02,2026-04-11,CMFPO305808,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67931,2026-06-30
-32.38,0.0,SWIGGY,,67932,33.99907407,MUMBAI,108.0,2026-04-02,2026-04-11,CMFPO305808,,577541,Jivo Healthy Wheatgrass Juice (Blueberry) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67932,2026-06-30
-27.5,0.0,SWIGGY,,67933,38.5,MUMBAI,12.0,2026-04-02,2026-04-11,CMFPO305808,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67933,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+24.29,0.0,SWIGGY,,,66944,34.00425926,MUMBAI,108.0,2026-04-02,2026-04-11,CMFPO305808,,141307,Jivo Healthy Wheatgrass Juice (Mojito) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:66944,2026-07-01
+19.43,0.0,SWIGGY,,,67929,20.40166667,MUMBAI,12.0,2026-04-02,2026-04-11,CMFPO305808,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67929,2026-07-01
+12.86,0.0,SWIGGY,,,67930,18.00283333,MUMBAI,120.0,2026-04-02,2026-04-11,CMFPO305808,,210286,JivoÂ Fizzy club Soda 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67930,2026-07-01
+27.5,0.0,SWIGGY,,,67931,38.5,MUMBAI,12.0,2026-04-02,2026-04-11,CMFPO305808,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67931,2026-07-01
+32.38,0.0,SWIGGY,,,67932,33.99907407,MUMBAI,108.0,2026-04-02,2026-04-11,CMFPO305808,,577541,Jivo Healthy Wheatgrass Juice (Blueberry) - Sugar Free 200.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67932,2026-07-01
+27.5,0.0,SWIGGY,,,67933,38.5,MUMBAI,12.0,2026-04-02,2026-04-11,CMFPO305808,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:67933,2026-07-01
 ```
 
 ---

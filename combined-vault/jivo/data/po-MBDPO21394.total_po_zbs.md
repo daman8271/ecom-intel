@@ -17,11 +17,11 @@ Up: [[po-MBDPO21394]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,0.0,SWIGGY,,77901,390.0,BANGALORE,32.0,2026-06-26,2026-07-14,MBDPO21394,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77901,2026-06-30
-185.71,0.0,SWIGGY,,77902,195.0,BANGALORE,672.0,2026-06-26,2026-07-14,MBDPO21394,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77902,2026-06-30
-771.43,0.0,SWIGGY,,77903,810.0,BANGALORE,32.0,2026-06-26,2026-07-14,MBDPO21394,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77903,2026-06-30
-200.0,0.0,SWIGGY,,77904,210.0,BANGALORE,16.0,2026-06-26,2026-07-14,MBDPO21394,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77904,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+371.43,0.0,SWIGGY,,,77901,390.0015,BANGALORE,32.0,2026-06-26,2026-07-14,MBDPO21394,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77901,2026-07-01
+185.71,0.0,SWIGGY,,,77902,194.9955,BANGALORE,672.0,2026-06-26,2026-07-14,MBDPO21394,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77902,2026-07-01
+771.43,0.0,SWIGGY,,,77903,810.0015,BANGALORE,32.0,2026-06-26,2026-07-14,MBDPO21394,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77903,2026-07-01
+200.0,0.0,SWIGGY,,,77904,210.0,BANGALORE,16.0,2026-06-26,2026-07-14,MBDPO21394,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77904,2026-07-01
 ```
 
 ---

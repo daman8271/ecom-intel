@@ -17,12 +17,12 @@ Up: [[po-CPDPO262913]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-161.9,80.0,SWIGGY,2026-04-24,69371,169.99525,PUNE,80.0,2026-04-15,2026-04-25,CPDPO262913,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69371,2026-06-30
-1095.24,10.0,SWIGGY,2026-04-24,69372,1150.002,PUNE,10.0,2026-04-15,2026-04-25,CPDPO262913,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69372,2026-06-30
-175.0,40.0,SWIGGY,2026-04-24,69373,183.75,PUNE,40.0,2026-04-15,2026-04-25,CPDPO262913,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69373,2026-06-30
-182.86,60.0,SWIGGY,2026-04-24,69374,192.0028333,PUNE,60.0,2026-04-15,2026-04-25,CPDPO262913,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69374,2026-06-30
-161.9,32.0,SWIGGY,2026-04-24,69375,169.9953125,PUNE,32.0,2026-04-15,2026-04-25,CPDPO262913,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69375,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+161.9,80.0,SWIGGY,,2026-04-24,69371,169.99525,PUNE,80.0,2026-04-15,2026-04-25,CPDPO262913,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69371,2026-07-01
+1095.24,10.0,SWIGGY,,2026-04-24,69372,1150.002,PUNE,10.0,2026-04-15,2026-04-25,CPDPO262913,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69372,2026-07-01
+175.0,40.0,SWIGGY,,2026-04-24,69373,183.75,PUNE,40.0,2026-04-15,2026-04-25,CPDPO262913,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69373,2026-07-01
+182.86,60.0,SWIGGY,,2026-04-24,69374,192.0028333,PUNE,60.0,2026-04-15,2026-04-25,CPDPO262913,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69374,2026-07-01
+161.9,32.0,SWIGGY,,2026-04-24,69375,169.9953125,PUNE,32.0,2026-04-15,2026-04-25,CPDPO262913,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69375,2026-07-01
 ```
 
 ---

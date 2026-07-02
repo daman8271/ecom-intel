@@ -17,10 +17,10 @@ Up: [[po-CHCPO306829]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,144.0,SWIGGY,2026-01-26,60978,219.9961806,HYDERABAD,144.0,2026-01-12,2026-01-28,CHCPO306829,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60978,2026-06-30
-142.86,80.0,SWIGGY,2026-01-26,60979,150.002875,HYDERABAD,80.0,2026-01-12,2026-01-28,CHCPO306829,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60979,2026-06-30
-209.52,32.0,SWIGGY,2026-01-26,60980,219.99625,HYDERABAD,32.0,2026-01-12,2026-01-28,CHCPO306829,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60980,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,144.0,SWIGGY,,2026-01-26,60978,219.9961806,HYDERABAD,144.0,2026-01-12,2026-01-28,CHCPO306829,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60978,2026-07-01
+142.86,80.0,SWIGGY,,2026-01-26,60979,150.002875,HYDERABAD,80.0,2026-01-12,2026-01-28,CHCPO306829,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60979,2026-07-01
+209.52,32.0,SWIGGY,,2026-01-26,60980,219.99625,HYDERABAD,32.0,2026-01-12,2026-01-28,CHCPO306829,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60980,2026-07-01
 ```
 
 ---

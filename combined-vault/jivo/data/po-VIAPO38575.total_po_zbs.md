@@ -17,12 +17,12 @@ Up: [[po-VIAPO38575]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.09,20.0,SWIGGY,2026-01-28,61553,249.995,VIZAG,20.0,2026-01-20,2026-02-05,VIAPO38575,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61553,2026-06-30
-952.38,4.0,SWIGGY,2026-01-28,61554,1000.0,VIZAG,4.0,2026-01-20,2026-02-05,VIAPO38575,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61554,2026-06-30
-761.9,8.0,SWIGGY,2026-01-28,61555,799.995,VIZAG,8.0,2026-01-20,2026-02-05,VIAPO38575,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61555,2026-06-30
-819.05,0.0,SWIGGY,2026-01-28,61556,860.0,VIZAG,1.0,2026-01-20,2026-02-05,VIAPO38575,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61556,2026-06-30
-2619.05,4.0,SWIGGY,2026-01-28,61557,2750.0025,VIZAG,4.0,2026-01-20,2026-02-05,VIAPO38575,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61557,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.09,20.0,SWIGGY,,2026-01-28,61553,249.995,VIZAG,20.0,2026-01-20,2026-02-05,VIAPO38575,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61553,2026-07-01
+952.38,4.0,SWIGGY,,2026-01-28,61554,999.999,VIZAG,4.0,2026-01-20,2026-02-05,VIAPO38575,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61554,2026-07-01
+761.9,8.0,SWIGGY,,2026-01-28,61555,799.995,VIZAG,8.0,2026-01-20,2026-02-05,VIAPO38575,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61555,2026-07-01
+819.05,0.0,SWIGGY,,2026-01-28,61556,860.0025,VIZAG,1.0,2026-01-20,2026-02-05,VIAPO38575,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61556,2026-07-01
+2619.05,4.0,SWIGGY,,2026-01-28,61557,2750.0025,VIZAG,4.0,2026-01-20,2026-02-05,VIAPO38575,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61557,2026-07-01
 ```
 
 ---

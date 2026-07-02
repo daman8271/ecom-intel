@@ -4,14 +4,14 @@ jid: JID-0097
 product: "BLACK OLIVE 470G"
 sap_codes:
   - FG0000288
-category: "SLICED OLIVE"
+category: "OLIVE"
 tier: PREMIUM
 platforms:
   - amazon
 tags:
   - type/product
   - tier/PREMIUM
-  - category/SLICED-OLIVE
+  - category/OLIVE
   - platform/amazon
 ---
 
@@ -26,9 +26,7 @@ Up: [[Home]]
 | Product | BLACK OLIVE 470G |
 | JIVO SKU / SAP code | `FG0000288` |
 | canonical_sku(s) | `jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml` |
-| Category | [[Category - SLICED OLIVE\|SLICED OLIVE]] |
-| Sub-category | BLACK OLIVE |
-| Brand | JIVO |
+| Category | [[Category - OLIVE\|OLIVE]] |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 470G |
 | Bridge class | core (priced) |
@@ -60,7 +58,7 @@ Up: [[Home]]
 Cross-vault fusion by name / SKU match:
 - **JIVO source notes:** [[sku-FG0000288]]
 - **Ecom source notes:** [[jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml]]
-- **Category:** [[Category - SLICED OLIVE]]
+- **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]
 - **Platforms:** [[Platform - amazon]]
 

@@ -17,8 +17,8 @@ Up: [[po-KOCPO44873]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-784.76,0.0,SWIGGY,,51903,824.0,KOCHI,1.0,2025-09-11,2025-10-20,KOCPO44873,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:51903,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+784.76,0.0,SWIGGY,,,51903,823.998,KOCHI,1.0,2025-09-11,2025-10-20,KOCPO44873,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:51903,2026-07-01
 ```
 
 ---

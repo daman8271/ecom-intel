@@ -17,10 +17,10 @@ Up: [[po-MBLPO396793]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,20.0,SWIGGY,2026-05-16,71798,225.0045,BANGALORE,20.0,2026-05-06,2026-05-17,MBLPO396793,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71798,2026-06-30
-147.62,140.0,SWIGGY,2026-05-16,71799,155.0009286,BANGALORE,140.0,2026-05-06,2026-05-17,MBLPO396793,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71799,2026-06-30
-809.52,8.0,SWIGGY,2026-05-16,71800,849.99625,BANGALORE,8.0,2026-05-06,2026-05-17,MBLPO396793,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71800,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,20.0,SWIGGY,,2026-05-16,71798,225.0045,BANGALORE,20.0,2026-05-06,2026-05-17,MBLPO396793,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71798,2026-07-01
+147.62,140.0,SWIGGY,,2026-05-16,71799,155.0009286,BANGALORE,140.0,2026-05-06,2026-05-17,MBLPO396793,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71799,2026-07-01
+809.52,8.0,SWIGGY,,2026-05-16,71800,849.99625,BANGALORE,8.0,2026-05-06,2026-05-17,MBLPO396793,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71800,2026-07-01
 ```
 
 ---

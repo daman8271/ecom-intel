@@ -14,7 +14,7 @@ Up: [[Home]]
 - **Retired/merged JIDs (kept, never reused):** 0
 - **Highest serial minted:** JID-0151
 - **Identity conflicts to review:** 14
-- **Generated:** 2026-06-30T19:20:05.418263+00:00
+- **Generated:** 2026-07-01T15:38:24.277530+00:00
 
 ## Registry — JID ↔ product ↔ external keys
 | JID | Product (our canonical) | SAP code(s) — app/factory | Ecom canonical listing(s) | Category | Tier |
@@ -85,8 +85,8 @@ Up: [[Home]]
 | `JID-0064` | [[BLACK PEPPER 100G]] | `FG0000196` | `jivo-black-pepper-whole-natural-peppercorns-premium-kali-mirch-perfect-for-cooking-baking-seasoning-no-artificial-colors-preservatives-or-taste-enhancers-pepper-100g-100ml`, `scmh2hmc2u7pqmnv` | SPICES | OTHER |
 | `JID-0065` | [[GREEN CARDAMOM 100G]] | `FG0000197` | `jivo-green-cardamom-8mm-elaichi-whole-natural-spices-no-artificial-colors-or-preservatives-distinctive-flavor-aroma-premium-idukki-cardamom-for-cooking-baking-tea-100g-100ml`, `scmh4h8nch2pkywv` | SPICES | OTHER |
 | `JID-0066` | [[CINNAMON 100G]] | `FG0000198` | `scmh4h8snyfgcykm`, `jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml` | SPICES | OTHER |
-| `JID-0067` | [[CUMIN SEEDS 100G]] | `FG0000199` | `jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml`, `scmh3fhauzysnuab` | SEEDS | OTHER |
-| `JID-0068` | [[RICE 1KG]] | `FG0000201` | `jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na`, `ricge89buedda5u7` | OTHER | OTHER |
+| `JID-0067` | [[CUMIN SEEDS 100G]] | `FG0000199` | `jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml`, `scmh3fhauzysnuab` | SPICES | OTHER |
+| `JID-0068` | [[RICE 1KG]] | `FG0000201` | `jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na`, `ricge89buedda5u7` | RICE | OTHER |
 | `JID-0069` | [[SANO HONEY 1KG]] | `FG0000216` | `hnygqtuw5db6rxqd`, `sano-pure-honey-1-kg-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-1-kg-na`, `hnyhyrsbgkzhhfdz` | HONEY | OTHER |
 | `JID-0070` | [[SANO HONEY 500G]] | `FG0000217` | `hnygqtnabyzxtf6e`, `sano-pure-honey-500g-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-500g-500ml`, `hnyhyrsyjpmyegux` | HONEY | OTHER |
 | `JID-0071` | [[DESI GHEE 1KG]] | `FG0000223`, `SL0000089` | `ghegwgqh84yszn6f`, `jivo-desi-ghee-1-litre-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-1l`, `gheh6b93zb66sekq` … +1 | GHEE | PREMIUM |
@@ -115,7 +115,7 @@ Up: [[Home]]
 | `JID-0094` | [[WATER PEACH 750ML]] | `FG0000277` | `fizzy-water-flavoured-with-peach-750ml`, `jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml` | DRINKS | OTHER |
 | `JID-0095` | [[LEMON 750ML]] | `FG0000278` | `fizzy-water-flavoured-with-lemon-750ml`, `jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml` | DRINKS | OTHER |
 | `JID-0096` | [[SODA 750ML]] | `FG0000282` | `jivo-extra-fizzy-soda-750-ml-soda-750ml` | DRINKS | OTHER |
-| `JID-0097` | [[BLACK OLIVE 470G]] | `FG0000288` | `jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml` | SLICED OLIVE | PREMIUM |
+| `JID-0097` | [[BLACK OLIVE 470G]] | `FG0000288` | `jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml` | OLIVE | PREMIUM |
 | `JID-0098` | [[FLAX SEEDS 400 GM]] | `FG0000290` | `jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml`, `edsh5avfzrhq43rz` | SEEDS | OTHER |
 | `JID-0099` | [[DRY FRUITS 200G]] | `FG0000291` | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` | OTHER | OTHER |
 | `JID-0100` | [[PUNJABI JEERA 160ML]] | `FG0000293` | `jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml` | DRINKS | OTHER |

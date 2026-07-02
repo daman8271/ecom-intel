@@ -17,11 +17,11 @@ Up: [[po-GGNPO232815]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,80.0,SWIGGY,2025-09-26,52888,222.001375,DELHI,80.0,2025-09-25,2025-09-27,GGNPO232815,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52888,2026-06-30
-397.14,16.0,SWIGGY,2025-09-26,52889,416.996875,DELHI,16.0,2025-09-25,2025-09-27,GGNPO232815,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52889,2026-06-30
-1960.95,12.0,SWIGGY,2025-09-26,52890,2059.0,DELHI,12.0,2025-09-25,2025-09-27,GGNPO232815,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52890,2026-06-30
-2522.86,4.0,SWIGGY,2025-09-26,52891,2649.0025,DELHI,4.0,2025-09-25,2025-09-27,GGNPO232815,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52891,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,80.0,SWIGGY,,2025-09-26,52888,222.001375,DELHI,80.0,2025-09-25,2025-09-27,GGNPO232815,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52888,2026-07-01
+397.14,16.0,SWIGGY,,2025-09-26,52889,416.996875,DELHI,16.0,2025-09-25,2025-09-27,GGNPO232815,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52889,2026-07-01
+1960.95,12.0,SWIGGY,,2025-09-26,52890,2058.9975,DELHI,12.0,2025-09-25,2025-09-27,GGNPO232815,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52890,2026-07-01
+2522.86,4.0,SWIGGY,,2025-09-26,52891,2649.0025,DELHI,4.0,2025-09-25,2025-09-27,GGNPO232815,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:52891,2026-07-01
 ```
 
 ---

@@ -17,13 +17,13 @@ Up: [[po-CPDPO219781]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.1,40.0,SWIGGY,2025-12-23,58626,250.00475,PUNE,40.0,2025-12-13,2025-12-23,CPDPO219781,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58626,2026-06-30
-523.81,16.0,SWIGGY,2025-12-23,58627,550.000625,PUNE,16.0,2025-12-13,2025-12-23,CPDPO219781,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58627,2026-06-30
-409.52,16.0,SWIGGY,2025-12-23,58628,429.99625,PUNE,16.0,2025-12-13,2025-12-23,CPDPO219781,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58628,2026-06-30
-761.9,24.0,SWIGGY,2025-12-23,58629,799.9954167,PUNE,24.0,2025-12-13,2025-12-23,CPDPO219781,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58629,2026-06-30
-152.38,40.0,SWIGGY,2025-12-23,58630,159.999,PUNE,40.0,2025-12-13,2025-12-23,CPDPO219781,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58630,2026-06-30
-819.05,0.0,SWIGGY,2025-12-23,58631,860.0025,PUNE,4.0,2025-12-13,2025-12-23,CPDPO219781,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58631,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.1,40.0,SWIGGY,,2025-12-23,58626,250.00475,PUNE,40.0,2025-12-13,2025-12-23,CPDPO219781,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58626,2026-07-01
+523.81,16.0,SWIGGY,,2025-12-23,58627,550.000625,PUNE,16.0,2025-12-13,2025-12-23,CPDPO219781,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58627,2026-07-01
+409.52,16.0,SWIGGY,,2025-12-23,58628,429.99625,PUNE,16.0,2025-12-13,2025-12-23,CPDPO219781,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58628,2026-07-01
+761.9,24.0,SWIGGY,,2025-12-23,58629,799.9954167,PUNE,24.0,2025-12-13,2025-12-23,CPDPO219781,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58629,2026-07-01
+152.38,40.0,SWIGGY,,2025-12-23,58630,159.999,PUNE,40.0,2025-12-13,2025-12-23,CPDPO219781,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58630,2026-07-01
+819.05,0.0,SWIGGY,,2025-12-23,58631,860.0025,PUNE,4.0,2025-12-13,2025-12-23,CPDPO219781,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58631,2026-07-01
 ```
 
 ---

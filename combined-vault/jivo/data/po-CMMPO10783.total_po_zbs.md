@@ -17,8 +17,8 @@ Up: [[po-CMMPO10783]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,720.0,SWIGGY,2026-06-16,75582,195.0,HYDERABAD,720.0,2026-06-04,2026-06-19,CMMPO10783,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75582,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+185.71,720.0,SWIGGY,,2026-06-16,75582,194.9955,HYDERABAD,720.0,2026-06-04,2026-06-19,CMMPO10783,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75582,2026-07-01
 ```
 
 ---

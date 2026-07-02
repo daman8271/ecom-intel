@@ -17,13 +17,13 @@ Up: [[po-ETPPO22201]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,33.0,SWIGGY,2026-01-31,61516,1499.998485,NOIDA,33.0,2026-01-17,2026-02-09,ETPPO22201,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61516,2026-06-30
-523.81,112.0,SWIGGY,2026-01-31,61517,550.0004464,NOIDA,112.0,2026-01-17,2026-02-09,ETPPO22201,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61517,2026-06-30
-409.52,96.0,SWIGGY,2026-01-31,61518,429.9961458,NOIDA,96.0,2026-01-17,2026-02-09,ETPPO22201,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61518,2026-06-30
-209.52,16.0,SWIGGY,2026-01-31,61519,219.99625,NOIDA,16.0,2026-01-17,2026-02-09,ETPPO22201,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61519,2026-06-30
-138.1,440.0,SWIGGY,2026-01-31,61520,145.00475,NOIDA,440.0,2026-01-17,2026-02-09,ETPPO22201,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61520,2026-06-30
-690.48,4.0,SWIGGY,2026-01-31,61521,725.00375,NOIDA,24.0,2026-01-17,2026-02-09,ETPPO22201,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61521,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1428.57,33.0,SWIGGY,,2026-01-31,61516,1499.998485,NOIDA,33.0,2026-01-17,2026-02-09,ETPPO22201,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61516,2026-07-01
+523.81,112.0,SWIGGY,,2026-01-31,61517,550.0004464,NOIDA,112.0,2026-01-17,2026-02-09,ETPPO22201,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61517,2026-07-01
+409.52,96.0,SWIGGY,,2026-01-31,61518,429.9961458,NOIDA,96.0,2026-01-17,2026-02-09,ETPPO22201,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61518,2026-07-01
+209.52,16.0,SWIGGY,,2026-01-31,61519,219.99625,NOIDA,16.0,2026-01-17,2026-02-09,ETPPO22201,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61519,2026-07-01
+138.1,440.0,SWIGGY,,2026-01-31,61520,145.00475,NOIDA,440.0,2026-01-17,2026-02-09,ETPPO22201,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61520,2026-07-01
+690.48,4.0,SWIGGY,,2026-01-31,61521,725.00375,NOIDA,24.0,2026-01-17,2026-02-09,ETPPO22201,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:61521,2026-07-01
 ```
 
 ---

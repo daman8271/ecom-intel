@@ -17,9 +17,9 @@ Up: [[po-KOCPO46229]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-114.29,0.0,SWIGGY,,52061,120.0042857,KOCHI,140.0,2025-09-16,2025-10-20,KOCPO46229,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52061,2026-06-30
-642.86,0.0,SWIGGY,,52062,675.0025,KOCHI,4.0,2025-09-16,2025-10-20,KOCPO46229,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52062,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+114.29,0.0,SWIGGY,,,52061,120.0042857,KOCHI,140.0,2025-09-16,2025-10-20,KOCPO46229,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52061,2026-07-01
+642.86,0.0,SWIGGY,,,52062,675.0025,KOCHI,4.0,2025-09-16,2025-10-20,KOCPO46229,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:52062,2026-07-01
 ```
 
 ---

@@ -17,12 +17,12 @@ Up: [[po-KOCPO119681]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-28,76402,215.0,KOCHI,20.0,2026-06-13,2026-07-15,KOCPO119681,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76402,2026-06-30
-195.24,104.0,SWIGGY,2026-06-28,76403,205.0,KOCHI,104.0,2026-06-13,2026-07-15,KOCPO119681,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76403,2026-06-30
-723.81,8.0,SWIGGY,2026-06-28,76404,760.0,KOCHI,8.0,2026-06-13,2026-07-15,KOCPO119681,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76404,2026-06-30
-747.62,4.0,SWIGGY,2026-06-28,76405,785.0,KOCHI,4.0,2026-06-13,2026-07-15,KOCPO119681,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76405,2026-06-30
-200.0,0.0,SWIGGY,2026-06-28,76406,210.0,KOCHI,32.0,2026-06-13,2026-07-15,KOCPO119681,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76406,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-28,76402,214.998,KOCHI,20.0,2026-06-13,2026-07-15,KOCPO119681,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76402,2026-07-01
+195.24,104.0,SWIGGY,,2026-06-28,76403,205.002,KOCHI,104.0,2026-06-13,2026-07-15,KOCPO119681,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76403,2026-07-01
+723.81,8.0,SWIGGY,,2026-06-28,76404,760.0005,KOCHI,8.0,2026-06-13,2026-07-15,KOCPO119681,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76404,2026-07-01
+747.62,4.0,SWIGGY,,2026-06-28,76405,785.001,KOCHI,4.0,2026-06-13,2026-07-15,KOCPO119681,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76405,2026-07-01
+200.0,0.0,SWIGGY,,2026-06-28,76406,210.0,KOCHI,32.0,2026-06-13,2026-07-15,KOCPO119681,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76406,2026-07-01
 ```
 
 ---

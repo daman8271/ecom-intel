@@ -27,8 +27,6 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000296` |
 | canonical_sku(s) | `jivo-raw-basil-seeds-for-weight-loss-400gm-sabja-seed-takmuria-seeds-400g-high-fibre-and-omega-3-400ml` |
 | Category | [[Category - SEEDS\|SEEDS]] |
-| Sub-category | BASIL SEEDS |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 400G |
 | Bridge class | core (priced) |

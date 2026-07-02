@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000290` |
 | canonical_sku(s) | `jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml`, `edsh5avfzrhq43rz` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | FLAX SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 400 GM |
 | Bridge class | core (priced) |

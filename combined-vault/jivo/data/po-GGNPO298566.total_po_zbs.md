@@ -17,13 +17,13 @@ Up: [[po-GGNPO298566]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.09,0.0,SWIGGY,,59711,249.995,DELHI,20.0,2025-12-27,2026-01-05,GGNPO298566,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59711,2026-06-30
-196.19,0.0,SWIGGY,,59712,205.999375,DELHI,16.0,2025-12-27,2026-01-05,GGNPO298566,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59712,2026-06-30
-952.38,0.0,SWIGGY,,59713,1000.0,DELHI,4.0,2025-12-27,2026-01-05,GGNPO298566,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59713,2026-06-30
-690.48,0.0,SWIGGY,,59714,725.00375,DELHI,16.0,2025-12-27,2026-01-05,GGNPO298566,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59714,2026-06-30
-714.29,0.0,SWIGGY,,59715,750.0041667,DELHI,12.0,2025-12-27,2026-01-05,GGNPO298566,,766072,Jivo Ricebran Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59715,2026-06-30
-2619.05,0.0,SWIGGY,,59716,2750.0025,DELHI,8.0,2025-12-27,2026-01-05,GGNPO298566,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59716,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.09,0.0,SWIGGY,,,59711,249.995,DELHI,20.0,2025-12-27,2026-01-05,GGNPO298566,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59711,2026-07-01
+196.19,0.0,SWIGGY,,,59712,205.999375,DELHI,16.0,2025-12-27,2026-01-05,GGNPO298566,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59712,2026-07-01
+952.38,0.0,SWIGGY,,,59713,999.999,DELHI,4.0,2025-12-27,2026-01-05,GGNPO298566,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59713,2026-07-01
+690.48,0.0,SWIGGY,,,59714,725.00375,DELHI,16.0,2025-12-27,2026-01-05,GGNPO298566,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59714,2026-07-01
+714.29,0.0,SWIGGY,,,59715,750.0041667,DELHI,12.0,2025-12-27,2026-01-05,GGNPO298566,,766072,Jivo Ricebran Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59715,2026-07-01
+2619.05,0.0,SWIGGY,,,59716,2750.0025,DELHI,8.0,2025-12-27,2026-01-05,GGNPO298566,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59716,2026-07-01
 ```
 
 ---

@@ -17,10 +17,10 @@ Up: [[po-CPDPO262330]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-19.43,36.0,SWIGGY,2026-04-24,69182,20.40138889,PUNE,36.0,2026-04-14,2026-04-24,CPDPO262330,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69182,2026-06-30
-27.5,0.0,SWIGGY,2026-04-24,69183,38.5,PUNE,12.0,2026-04-14,2026-04-24,CPDPO262330,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69183,2026-06-30
-27.5,0.0,SWIGGY,2026-04-24,69184,38.5,PUNE,12.0,2026-04-14,2026-04-24,CPDPO262330,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69184,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+19.43,36.0,SWIGGY,,2026-04-24,69182,20.40138889,PUNE,36.0,2026-04-14,2026-04-24,CPDPO262330,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69182,2026-07-01
+27.5,0.0,SWIGGY,,2026-04-24,69183,38.5,PUNE,12.0,2026-04-14,2026-04-24,CPDPO262330,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69183,2026-07-01
+27.5,0.0,SWIGGY,,2026-04-24,69184,38.5,PUNE,12.0,2026-04-14,2026-04-24,CPDPO262330,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69184,2026-07-01
 ```
 
 ---

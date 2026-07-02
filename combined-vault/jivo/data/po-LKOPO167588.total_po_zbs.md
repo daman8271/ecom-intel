@@ -17,12 +17,12 @@ Up: [[po-LKOPO167588]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1314.29,0.0,SWIGGY,,71714,1380.004444,LUCKNOW,9.0,2026-05-05,2026-05-17,LKOPO167588,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71714,2026-06-30
-178.09,0.0,SWIGGY,,71715,186.995,LUCKNOW,16.0,2026-05-05,2026-05-17,LKOPO167588,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71715,2026-06-30
-890.48,0.0,SWIGGY,,71716,935.0041667,LUCKNOW,12.0,2026-05-05,2026-05-17,LKOPO167588,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71716,2026-06-30
-809.52,0.0,SWIGGY,,71717,849.9958333,LUCKNOW,12.0,2026-05-05,2026-05-17,LKOPO167588,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71717,2026-06-30
-161.91,0.0,SWIGGY,,71718,170.005,LUCKNOW,20.0,2026-05-05,2026-05-17,LKOPO167588,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71718,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1314.29,0.0,SWIGGY,,,71714,1380.004444,LUCKNOW,9.0,2026-05-05,2026-05-17,LKOPO167588,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71714,2026-07-01
+178.09,0.0,SWIGGY,,,71715,186.995,LUCKNOW,16.0,2026-05-05,2026-05-17,LKOPO167588,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71715,2026-07-01
+890.48,0.0,SWIGGY,,,71716,935.0041667,LUCKNOW,12.0,2026-05-05,2026-05-17,LKOPO167588,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71716,2026-07-01
+809.52,0.0,SWIGGY,,,71717,849.9958333,LUCKNOW,12.0,2026-05-05,2026-05-17,LKOPO167588,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71717,2026-07-01
+161.91,0.0,SWIGGY,,,71718,170.005,LUCKNOW,20.0,2026-05-05,2026-05-17,LKOPO167588,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:71718,2026-07-01
 ```
 
 ---

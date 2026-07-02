@@ -36,7 +36,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "require_drr": 6304.62,
    "targets": 150000.0,
    "type": "prim",
-   "updated_at": "2026-06-27T06:27:31.635505+00:00",
+   "updated_at": "2026-06-30T05:24:23.498433+00:00",
    "year": 2026
   },
   {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "require_drr": 89.9,
    "targets": 2000.0,
    "type": "prim",
-   "updated_at": "2026-06-27T06:27:31.635505+00:00",
+   "updated_at": "2026-06-30T05:24:23.498433+00:00",
    "year": 2026
   },
   {

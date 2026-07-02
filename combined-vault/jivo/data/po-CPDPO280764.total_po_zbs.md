@@ -17,11 +17,11 @@ Up: [[po-CPDPO280764]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-178.1,0.0,SWIGGY,2026-06-24,76520,187.0,PUNE,128.0,2026-06-15,2026-06-25,CPDPO280764,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76520,2026-06-30
-928.57,0.0,SWIGGY,2026-06-24,76521,975.0,PUNE,16.0,2026-06-15,2026-06-25,CPDPO280764,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76521,2026-06-30
-771.43,36.0,SWIGGY,2026-06-24,76522,810.0,PUNE,36.0,2026-06-15,2026-06-25,CPDPO280764,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76522,2026-06-30
-180.95,0.0,SWIGGY,2026-06-24,76523,190.0,PUNE,16.0,2026-06-15,2026-06-25,CPDPO280764,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76523,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+178.1,0.0,SWIGGY,,2026-06-24,76520,187.005,PUNE,128.0,2026-06-15,2026-06-25,CPDPO280764,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76520,2026-07-01
+928.57,0.0,SWIGGY,,2026-06-24,76521,974.9985,PUNE,16.0,2026-06-15,2026-06-25,CPDPO280764,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76521,2026-07-01
+771.43,36.0,SWIGGY,,2026-06-24,76522,810.0015,PUNE,36.0,2026-06-15,2026-06-25,CPDPO280764,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76522,2026-07-01
+180.95,0.0,SWIGGY,,2026-06-24,76523,189.9975,PUNE,16.0,2026-06-15,2026-06-25,CPDPO280764,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76523,2026-07-01
 ```
 
 ---

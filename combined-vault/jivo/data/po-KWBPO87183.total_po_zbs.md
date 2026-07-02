@@ -17,12 +17,12 @@ Up: [[po-KWBPO87183]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,20.0,SWIGGY,2026-05-18,72026,225.0045,KOLKATA,20.0,2026-05-07,2026-05-19,KWBPO87183,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72026,2026-06-30
-366.67,32.0,SWIGGY,2026-05-18,72027,385.0034375,KOLKATA,32.0,2026-05-07,2026-05-19,KWBPO87183,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72027,2026-06-30
-178.1,0.0,SWIGGY,2026-05-18,72028,187.0047577,KOLKATA,784.0,2026-05-07,2026-05-19,KWBPO87183,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72028,2026-06-30
-147.62,0.0,SWIGGY,2026-05-18,72029,155.0010417,KOLKATA,48.0,2026-05-07,2026-05-19,KWBPO87183,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72029,2026-06-30
-147.62,1000.0,SWIGGY,2026-05-18,75305,155.00095,KOLKATA,1000.0,2026-05-07,2026-05-19,KWBPO87183,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:75305,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,20.0,SWIGGY,,2026-05-18,72026,225.0045,KOLKATA,20.0,2026-05-07,2026-05-19,KWBPO87183,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72026,2026-07-01
+366.67,32.0,SWIGGY,,2026-05-18,72027,385.0034375,KOLKATA,32.0,2026-05-07,2026-05-19,KWBPO87183,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72027,2026-07-01
+178.1,0.0,SWIGGY,,2026-05-18,72028,187.0047577,KOLKATA,784.0,2026-05-07,2026-05-19,KWBPO87183,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72028,2026-07-01
+147.62,0.0,SWIGGY,,2026-05-18,72029,155.0010417,KOLKATA,48.0,2026-05-07,2026-05-19,KWBPO87183,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:72029,2026-07-01
+147.62,1000.0,SWIGGY,,2026-05-18,75305,155.00095,KOLKATA,1000.0,2026-05-07,2026-05-19,KWBPO87183,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:75305,2026-07-01
 ```
 
 ---

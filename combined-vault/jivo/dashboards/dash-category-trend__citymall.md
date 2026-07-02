@@ -23,14 +23,6 @@ Up: [[dashboards-index]] · [[pf-citymall]]
  "platform": "citymall",
  "series": [
   {
-   "commodity_ltrs": 58486.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 1048.0,
-   "total_ltrs": 59534.0,
-   "year": 2026
-  },
-  {
    "commodity_ltrs": 65772.0,
    "label": "Feb '26",
    "month": 2,
@@ -68,6 +60,14 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "month": 6,
    "premium_ltrs": 112.0,
    "total_ltrs": 17715.0,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

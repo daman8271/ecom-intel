@@ -17,12 +17,12 @@ Up: [[po-JPAPO48090]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-202.14,4.0,SWIGGY,2026-04-23,69613,212.2475,JAIPUR,4.0,2026-04-18,2026-04-26,JPAPO48090,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69613,2026-06-30
-200.0,240.0,SWIGGY,2026-04-23,69614,210.0,JAIPUR,240.0,2026-04-18,2026-04-26,JPAPO48090,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69614,2026-06-30
-1000.0,0.0,SWIGGY,2026-04-23,69615,1050.0,JAIPUR,56.0,2026-04-18,2026-04-26,JPAPO48090,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69615,2026-06-30
-161.9,80.0,SWIGGY,2026-04-23,69616,169.99525,JAIPUR,80.0,2026-04-18,2026-04-26,JPAPO48090,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69616,2026-06-30
-175.0,40.0,SWIGGY,2026-04-23,69617,183.75,JAIPUR,40.0,2026-04-18,2026-04-26,JPAPO48090,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69617,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+202.14,4.0,SWIGGY,,2026-04-23,69613,212.2475,JAIPUR,4.0,2026-04-18,2026-04-26,JPAPO48090,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69613,2026-07-01
+200.0,240.0,SWIGGY,,2026-04-23,69614,210.0,JAIPUR,240.0,2026-04-18,2026-04-26,JPAPO48090,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69614,2026-07-01
+1000.0,0.0,SWIGGY,,2026-04-23,69615,1050.0,JAIPUR,56.0,2026-04-18,2026-04-26,JPAPO48090,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69615,2026-07-01
+161.9,80.0,SWIGGY,,2026-04-23,69616,169.99525,JAIPUR,80.0,2026-04-18,2026-04-26,JPAPO48090,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69616,2026-07-01
+175.0,40.0,SWIGGY,,2026-04-23,69617,183.75,JAIPUR,40.0,2026-04-18,2026-04-26,JPAPO48090,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:69617,2026-07-01
 ```
 
 ---

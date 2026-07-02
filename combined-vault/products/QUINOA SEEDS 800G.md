@@ -27,8 +27,6 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000374` |
 | canonical_sku(s) | `jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-800g-800ml` |
 | Category | [[Category - SEEDS\|SEEDS]] |
-| Sub-category | QUINOA SEEDS |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 800G |
 | Bridge class | core (priced) |

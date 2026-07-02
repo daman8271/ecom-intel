@@ -17,12 +17,12 @@ Up: [[po-GGNPO287901]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,0.0,SWIGGY,,58569,429.99625,DELHI,16.0,2025-12-13,2025-12-21,GGNPO287901,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58569,2026-06-30
-196.19,0.0,SWIGGY,,58570,205.999375,DELHI,32.0,2025-12-13,2025-12-21,GGNPO287901,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58570,2026-06-30
-952.38,0.0,SWIGGY,,58571,999.9991071,DELHI,56.0,2025-12-13,2025-12-21,GGNPO287901,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58571,2026-06-30
-761.9,0.0,SWIGGY,,58572,799.995,DELHI,4.0,2025-12-13,2025-12-21,GGNPO287901,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58572,2026-06-30
-761.9,0.0,SWIGGY,,58573,799.995,DELHI,8.0,2025-12-13,2025-12-21,GGNPO287901,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58573,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,0.0,SWIGGY,,,58569,429.99625,DELHI,16.0,2025-12-13,2025-12-21,GGNPO287901,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58569,2026-07-01
+196.19,0.0,SWIGGY,,,58570,205.999375,DELHI,32.0,2025-12-13,2025-12-21,GGNPO287901,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58570,2026-07-01
+952.38,0.0,SWIGGY,,,58571,999.9991071,DELHI,56.0,2025-12-13,2025-12-21,GGNPO287901,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58571,2026-07-01
+761.9,0.0,SWIGGY,,,58572,799.995,DELHI,4.0,2025-12-13,2025-12-21,GGNPO287901,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58572,2026-07-01
+761.9,0.0,SWIGGY,,,58573,799.995,DELHI,8.0,2025-12-13,2025-12-21,GGNPO287901,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:58573,2026-07-01
 ```
 
 ---

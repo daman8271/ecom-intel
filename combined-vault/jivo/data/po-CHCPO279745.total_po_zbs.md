@@ -17,9 +17,9 @@ Up: [[po-CHCPO279745]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,4.0,SWIGGY,2025-12-25,57635,1100.0,HYDERABAD,4.0,2025-11-28,2025-12-25,CHCPO279745,,333818,Jivo SO OLive Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57635,2026-06-30
-182.86,20.0,SWIGGY,2025-12-25,57636,192.003,HYDERABAD,20.0,2025-11-28,2025-12-25,CHCPO279745,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57636,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,4.0,SWIGGY,,2025-12-25,57635,1100.001,HYDERABAD,4.0,2025-11-28,2025-12-25,CHCPO279745,,333818,Jivo SO OLive Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57635,2026-07-01
+182.86,20.0,SWIGGY,,2025-12-25,57636,192.003,HYDERABAD,20.0,2025-11-28,2025-12-25,CHCPO279745,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57636,2026-07-01
 ```
 
 ---

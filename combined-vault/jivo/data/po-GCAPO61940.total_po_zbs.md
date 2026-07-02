@@ -17,12 +17,12 @@ Up: [[po-GCAPO61940]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-178.1,0.0,SWIGGY,,77542,187.0,CENTRAL GOA,96.0,2026-06-24,2026-07-10,GCAPO61940,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77542,2026-06-30
-928.57,0.0,SWIGGY,,77543,975.0,CENTRAL GOA,16.0,2026-06-24,2026-07-10,GCAPO61940,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77543,2026-06-30
-771.43,0.0,SWIGGY,,77544,810.0,CENTRAL GOA,12.0,2026-06-24,2026-07-10,GCAPO61940,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77544,2026-06-30
-154.29,0.0,SWIGGY,,77545,162.0,CENTRAL GOA,40.0,2026-06-24,2026-07-10,GCAPO61940,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77545,2026-06-30
-200.0,0.0,SWIGGY,,77546,210.0,CENTRAL GOA,16.0,2026-06-24,2026-07-10,GCAPO61940,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77546,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+178.1,0.0,SWIGGY,,,77542,187.005,CENTRAL GOA,96.0,2026-06-24,2026-07-10,GCAPO61940,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77542,2026-07-01
+928.57,0.0,SWIGGY,,,77543,974.9985,CENTRAL GOA,16.0,2026-06-24,2026-07-10,GCAPO61940,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77543,2026-07-01
+771.43,0.0,SWIGGY,,,77544,810.0015,CENTRAL GOA,12.0,2026-06-24,2026-07-10,GCAPO61940,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77544,2026-07-01
+154.29,0.0,SWIGGY,,,77545,162.0045,CENTRAL GOA,40.0,2026-06-24,2026-07-10,GCAPO61940,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77545,2026-07-01
+200.0,0.0,SWIGGY,,,77546,210.0,CENTRAL GOA,16.0,2026-06-24,2026-07-10,GCAPO61940,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77546,2026-07-01
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "DL01MB2623"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# DL01MB2623
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34553
-- **doc_num:** 706260250
-- **doc_date:** 2026-06-12
-- **doc_total:** 3008.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C DADRA & NAGAR HAVELI
-- **ship_to_address:** DADRA & NAGAR HAVELI AND DAMAN & DIU-396230IN
-- **place_of_supply:** DN
-- **bp_gstin:** 
+- **doc_entry:** 34706
+- **doc_num:** 606260140
+- **doc_date:** 2026-06-15
+- **doc_total:** 1040000.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
+- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** DL01MB2623
+- **transporter_name:** Arnav Transport
+- **bilty_no:** 7015
+- **bilty_date:** 2026-06-17
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS
-- **base_refs:** 1506264559
-- **total_quantity:** 12.000
-- **total_litres:** 44.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS
+- **base_refs:** 1706264581
+- **total_quantity:** 800.000
+- **total_litres:** 4000.000
 - **total_boxes:** 0.000
-- **total_weight:** 23.540
-- **line_count:** 3
+- **total_weight:** 4080.640
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 34553, "sap_invoice_doc_num": "706260250", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 328, "sap_invoice_doc_entry": 34706, "sap_invoice_doc_num": "606260140", "invoice_number": "606260140", "eway_bill": "322273544251", "invoice_weight": "4080.640", "invoice_amount": "1040000.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "16000.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 198, "transporter_id": 54, "driver_id": null, "linked_vehicle_entry_id": 714, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-17T10:07:11.639254Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-16", "priority": "", "transporter_name": "Arnav Transport Service", "transporter_gstin": "", "contact_person": "Lalit Kumar", "mobile_no": "9718077490", "vehicle_no": "DL01MB2623", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7020", "bilty_date": "2026-06-17", "bilty_attachment": "/media/sales_dispatch/attachments/New_Doc_06-17-2026_14.38.pdf", "bilty_attachment_name": "New Doc 06-17-2026 14.38.pdf", "freight": "1103.45", "total_freight": "1103.45", "kanta_weight": null, "remarks": "", "created_at": "2026-06-16T12:23:56.954512+05:30", "updated_at": "2026-06-17T15:37:11.659991+05:30"}
   ```

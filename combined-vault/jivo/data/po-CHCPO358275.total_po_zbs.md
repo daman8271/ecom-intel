@@ -17,10 +17,10 @@ Up: [[po-CHCPO358275]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,16.0,SWIGGY,2026-06-28,77228,500.0,HYDERABAD,16.0,2026-06-20,2026-07-21,CHCPO358275,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77228,2026-06-30
-928.57,36.0,SWIGGY,2026-06-28,77229,975.0,HYDERABAD,36.0,2026-06-20,2026-07-21,CHCPO358275,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77229,2026-06-30
-149.52,40.0,SWIGGY,2026-06-28,77230,157.0,HYDERABAD,40.0,2026-06-20,2026-07-21,CHCPO358275,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77230,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,16.0,SWIGGY,,2026-06-28,77228,499.9995,HYDERABAD,16.0,2026-06-20,2026-07-21,CHCPO358275,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77228,2026-07-01
+928.57,36.0,SWIGGY,,2026-06-28,77229,974.9985,HYDERABAD,36.0,2026-06-20,2026-07-21,CHCPO358275,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77229,2026-07-01
+149.52,40.0,SWIGGY,,2026-06-28,77230,156.996,HYDERABAD,40.0,2026-06-20,2026-07-21,CHCPO358275,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77230,2026-07-01
 ```
 
 ---

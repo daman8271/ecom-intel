@@ -17,11 +17,11 @@ Up: [[po-JCEPO154310]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-196.19,0.0,SWIGGY,2026-01-31,60738,205.9995,COIMBATORE,80.0,2026-01-09,2026-02-01,JCEPO154310,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60738,2026-06-30
-138.1,480.0,SWIGGY,2026-01-31,60739,145.00475,COIMBATORE,480.0,2026-01-09,2026-02-01,JCEPO154310,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60739,2026-06-30
-152.38,60.0,SWIGGY,2026-01-31,60740,159.999,COIMBATORE,60.0,2026-01-09,2026-02-01,JCEPO154310,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60740,2026-06-30
-819.05,20.0,SWIGGY,2026-01-31,60741,860.0025,COIMBATORE,20.0,2026-01-09,2026-02-01,JCEPO154310,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60741,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+196.19,0.0,SWIGGY,,2026-01-31,60738,205.9995,COIMBATORE,80.0,2026-01-09,2026-02-01,JCEPO154310,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60738,2026-07-01
+138.1,480.0,SWIGGY,,2026-01-31,60739,145.00475,COIMBATORE,480.0,2026-01-09,2026-02-01,JCEPO154310,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60739,2026-07-01
+152.38,60.0,SWIGGY,,2026-01-31,60740,159.999,COIMBATORE,60.0,2026-01-09,2026-02-01,JCEPO154310,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60740,2026-07-01
+819.05,20.0,SWIGGY,,2026-01-31,60741,860.0025,COIMBATORE,20.0,2026-01-09,2026-02-01,JCEPO154310,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60741,2026-07-01
 ```
 
 ---

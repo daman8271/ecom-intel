@@ -17,11 +17,11 @@ Up: [[po-MBIPO336865]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,32.0,SWIGGY,2026-02-02,61872,219.99625,BANGALORE,32.0,2026-01-24,2026-02-05,MBIPO336865,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61872,2026-06-30
-952.38,16.0,SWIGGY,2026-02-02,61873,999.999375,BANGALORE,16.0,2026-01-24,2026-02-05,MBIPO336865,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61873,2026-06-30
-152.38,160.0,SWIGGY,2026-02-02,61874,159.9990625,BANGALORE,160.0,2026-01-24,2026-02-05,MBIPO336865,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61874,2026-06-30
-784.76,15.0,SWIGGY,2026-02-02,61875,823.998,BANGALORE,15.0,2026-01-24,2026-02-05,MBIPO336865,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61875,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,32.0,SWIGGY,,2026-02-02,61872,219.99625,BANGALORE,32.0,2026-01-24,2026-02-05,MBIPO336865,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61872,2026-07-01
+952.38,16.0,SWIGGY,,2026-02-02,61873,999.999375,BANGALORE,16.0,2026-01-24,2026-02-05,MBIPO336865,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61873,2026-07-01
+152.38,160.0,SWIGGY,,2026-02-02,61874,159.9990625,BANGALORE,160.0,2026-01-24,2026-02-05,MBIPO336865,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61874,2026-07-01
+784.76,15.0,SWIGGY,,2026-02-02,61875,823.998,BANGALORE,15.0,2026-01-24,2026-02-05,MBIPO336865,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61875,2026-07-01
 ```
 
 ---

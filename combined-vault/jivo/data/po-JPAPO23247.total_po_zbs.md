@@ -17,11 +17,11 @@ Up: [[po-JPAPO23247]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-184.83,4.0,SWIGGY,2025-12-16,57972,194.0725,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57972,2026-06-30
-707.14,0.0,SWIGGY,2025-12-16,57973,742.4975,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57973,2026-06-30
-2215.49,4.0,SWIGGY,2025-12-16,57974,2326.265,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57974,2026-06-30
-887.01,0.0,SWIGGY,2025-12-16,57975,931.36,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57975,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+184.83,4.0,SWIGGY,,2025-12-16,57972,194.0725,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57972,2026-07-01
+707.14,0.0,SWIGGY,,2025-12-16,57973,742.4975,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57973,2026-07-01
+2215.49,4.0,SWIGGY,,2025-12-16,57974,2326.265,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57974,2026-07-01
+887.01,0.0,SWIGGY,,2025-12-16,57975,931.36,JAIPUR,4.0,2025-12-04,2025-12-18,JPAPO23247,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:57975,2026-07-01
 ```
 
 ---

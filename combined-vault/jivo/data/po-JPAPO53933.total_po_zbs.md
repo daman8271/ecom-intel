@@ -17,10 +17,10 @@ Up: [[po-JPAPO53933]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,74670,499.999375,JAIPUR,16.0,2026-05-27,2026-06-05,JPAPO53933,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74670,2026-06-30
-195.24,0.0,SWIGGY,,74671,205.0025,JAIPUR,8.0,2026-05-27,2026-06-05,JPAPO53933,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74671,2026-06-30
-147.62,0.0,SWIGGY,,74672,155.0009375,JAIPUR,32.0,2026-05-27,2026-06-05,JPAPO53933,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74672,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,0.0,SWIGGY,,,74670,499.999375,JAIPUR,16.0,2026-05-27,2026-06-05,JPAPO53933,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74670,2026-07-01
+195.24,0.0,SWIGGY,,,74671,205.0025,JAIPUR,8.0,2026-05-27,2026-06-05,JPAPO53933,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74671,2026-07-01
+147.62,0.0,SWIGGY,,,74672,155.0009375,JAIPUR,32.0,2026-05-27,2026-06-05,JPAPO53933,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74672,2026-07-01
 ```
 
 ---

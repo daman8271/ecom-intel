@@ -17,11 +17,11 @@ Up: [[po-GCAPO45226]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,0.0,SWIGGY,2026-03-28,65642,1100.00125,CENTRAL GOA,16.0,2026-03-12,2026-03-29,GCAPO45226,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65642,2026-06-30
-819.05,0.0,SWIGGY,2026-03-28,65643,860.0025,CENTRAL GOA,16.0,2026-03-12,2026-03-29,GCAPO45226,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65643,2026-06-30
-163.81,40.0,SWIGGY,2026-03-28,65644,172.0005,CENTRAL GOA,40.0,2026-03-12,2026-03-29,GCAPO45226,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65644,2026-06-30
-209.52,0.0,SWIGGY,2026-03-28,65645,219.9966667,CENTRAL GOA,6.0,2026-03-12,2026-03-29,GCAPO45226,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65645,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,0.0,SWIGGY,,2026-03-28,65642,1100.00125,CENTRAL GOA,16.0,2026-03-12,2026-03-29,GCAPO45226,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65642,2026-07-01
+819.05,0.0,SWIGGY,,2026-03-28,65643,860.0025,CENTRAL GOA,16.0,2026-03-12,2026-03-29,GCAPO45226,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65643,2026-07-01
+163.81,40.0,SWIGGY,,2026-03-28,65644,172.0005,CENTRAL GOA,40.0,2026-03-12,2026-03-29,GCAPO45226,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65644,2026-07-01
+209.52,0.0,SWIGGY,,2026-03-28,65645,219.9966667,CENTRAL GOA,6.0,2026-03-12,2026-03-29,GCAPO45226,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:65645,2026-07-01
 ```
 
 ---

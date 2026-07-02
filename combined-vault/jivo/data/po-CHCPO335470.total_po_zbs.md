@@ -17,10 +17,10 @@ Up: [[po-CHCPO335470]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-199.76,0.0,SWIGGY,,68291,209.7483333,HYDERABAD,12.0,2026-04-07,2026-04-23,CHCPO335470,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68291,2026-06-30
-542.86,0.0,SWIGGY,,68292,570.0025,HYDERABAD,4.0,2026-04-07,2026-04-23,CHCPO335470,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68292,2026-06-30
-847.62,0.0,SWIGGY,,68293,890.001,HYDERABAD,10.0,2026-04-07,2026-04-23,CHCPO335470,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68293,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+199.76,0.0,SWIGGY,,,68291,209.7483333,HYDERABAD,12.0,2026-04-07,2026-04-23,CHCPO335470,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68291,2026-07-01
+542.86,0.0,SWIGGY,,,68292,570.0025,HYDERABAD,4.0,2026-04-07,2026-04-23,CHCPO335470,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68292,2026-07-01
+847.62,0.0,SWIGGY,,,68293,890.001,HYDERABAD,10.0,2026-04-07,2026-04-23,CHCPO335470,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68293,2026-07-01
 ```
 
 ---

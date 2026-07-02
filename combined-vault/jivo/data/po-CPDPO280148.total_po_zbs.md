@@ -17,12 +17,12 @@ Up: [[po-CPDPO280148]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,76224,215.0,PUNE,20.0,2026-06-13,2026-06-23,CPDPO280148,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76224,2026-06-30
-149.52,0.0,SWIGGY,,76225,157.0,PUNE,260.0,2026-06-13,2026-06-23,CPDPO280148,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76225,2026-06-30
-22.79,0.0,SWIGGY,,76226,31.9,PUNE,12.0,2026-06-13,2026-06-23,CPDPO280148,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76226,2026-06-30
-147.62,0.0,SWIGGY,,76227,155.0,PUNE,64.0,2026-06-13,2026-06-23,CPDPO280148,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76227,2026-06-30
-180.95,0.0,SWIGGY,,76228,190.0,PUNE,32.0,2026-06-13,2026-06-23,CPDPO280148,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76228,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,,76224,214.998,PUNE,20.0,2026-06-13,2026-06-23,CPDPO280148,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76224,2026-07-01
+149.52,0.0,SWIGGY,,,76225,156.996,PUNE,260.0,2026-06-13,2026-06-23,CPDPO280148,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76225,2026-07-01
+22.79,0.0,SWIGGY,,,76226,31.9,PUNE,12.0,2026-06-13,2026-06-23,CPDPO280148,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76226,2026-07-01
+147.62,0.0,SWIGGY,,,76227,155.001,PUNE,64.0,2026-06-13,2026-06-23,CPDPO280148,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76227,2026-07-01
+180.95,0.0,SWIGGY,,,76228,189.9975,PUNE,32.0,2026-06-13,2026-06-23,CPDPO280148,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76228,2026-07-01
 ```
 
 ---

@@ -17,11 +17,11 @@ Up: [[po-KOCPO76226]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-443.1,0.0,SWIGGY,,57976,465.2546875,KOCHI,32.0,2025-12-04,2025-12-26,KOCPO76226,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57976,2026-06-30
-184.83,0.0,SWIGGY,,57977,194.07125,KOCHI,8.0,2025-12-04,2025-12-26,KOCPO76226,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57977,2026-06-30
-209.52,0.0,SWIGGY,,57978,219.99625,KOCHI,16.0,2025-12-04,2025-12-26,KOCPO76226,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57978,2026-06-30
-209.52,0.0,SWIGGY,,57979,219.99625,KOCHI,32.0,2025-12-04,2025-12-26,KOCPO76226,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57979,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+443.1,0.0,SWIGGY,,,57976,465.2546875,KOCHI,32.0,2025-12-04,2025-12-26,KOCPO76226,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57976,2026-07-01
+184.83,0.0,SWIGGY,,,57977,194.07125,KOCHI,8.0,2025-12-04,2025-12-26,KOCPO76226,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57977,2026-07-01
+209.52,0.0,SWIGGY,,,57978,219.99625,KOCHI,16.0,2025-12-04,2025-12-26,KOCPO76226,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57978,2026-07-01
+209.52,0.0,SWIGGY,,,57979,219.99625,KOCHI,32.0,2025-12-04,2025-12-26,KOCPO76226,,968589,Jivo SO OLive Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:57979,2026-07-01
 ```
 
 ---

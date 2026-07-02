@@ -17,10 +17,10 @@ Up: [[po-GWAPO21103]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-443.1,0.0,SWIGGY,,64182,465.255,GUWAHATI,16.0,2026-02-21,2026-03-08,GWAPO21103,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:64182,2026-06-30
-116.19,0.0,SWIGGY,,64183,121.9995,GUWAHATI,80.0,2026-02-21,2026-03-08,GWAPO21103,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:64183,2026-06-30
-707.14,0.0,SWIGGY,,64184,742.4975,GUWAHATI,12.0,2026-02-21,2026-03-08,GWAPO21103,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:64184,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+443.1,0.0,SWIGGY,,,64182,465.255,GUWAHATI,16.0,2026-02-21,2026-03-08,GWAPO21103,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:64182,2026-07-01
+116.19,0.0,SWIGGY,,,64183,121.9995,GUWAHATI,80.0,2026-02-21,2026-03-08,GWAPO21103,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:64183,2026-07-01
+707.14,0.0,SWIGGY,,,64184,742.4975,GUWAHATI,12.0,2026-02-21,2026-03-08,GWAPO21103,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:64184,2026-07-01
 ```
 
 ---

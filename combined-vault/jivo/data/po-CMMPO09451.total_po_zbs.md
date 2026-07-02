@@ -17,10 +17,10 @@ Up: [[po-CMMPO09451]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-809.52,0.0,SWIGGY,,72992,849.99625,HYDERABAD,8.0,2026-05-14,2026-05-15,CMMPO09451,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72992,2026-06-30
-161.9,0.0,SWIGGY,,72993,169.99525,HYDERABAD,120.0,2026-05-14,2026-05-15,CMMPO09451,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72993,2026-06-30
-761.9,0.0,SWIGGY,,72994,799.995,HYDERABAD,10.0,2026-05-14,2026-05-15,CMMPO09451,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72994,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+809.52,0.0,SWIGGY,,,72992,849.99625,HYDERABAD,8.0,2026-05-14,2026-05-15,CMMPO09451,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72992,2026-07-01
+161.9,0.0,SWIGGY,,,72993,169.99525,HYDERABAD,120.0,2026-05-14,2026-05-15,CMMPO09451,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72993,2026-07-01
+761.9,0.0,SWIGGY,,,72994,799.995,HYDERABAD,10.0,2026-05-14,2026-05-15,CMMPO09451,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72994,2026-07-01
 ```
 
 ---

@@ -17,11 +17,11 @@ Up: [[po-ETPPO71262]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-149.52,0.0,SWIGGY,,77804,157.0,NOIDA,840.0,2026-06-25,2026-07-04,ETPPO71262,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77804,2026-06-30
-771.43,0.0,SWIGGY,,77805,810.0,NOIDA,12.0,2026-06-25,2026-07-04,ETPPO71262,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77805,2026-06-30
-154.29,0.0,SWIGGY,,77806,162.0,NOIDA,220.0,2026-06-25,2026-07-04,ETPPO71262,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77806,2026-06-30
-733.33,0.0,SWIGGY,,77807,770.0,NOIDA,10.0,2026-06-25,2026-07-04,ETPPO71262,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77807,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+149.52,0.0,SWIGGY,,,77804,156.996,NOIDA,840.0,2026-06-25,2026-07-04,ETPPO71262,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77804,2026-07-01
+771.43,0.0,SWIGGY,,,77805,810.0015,NOIDA,12.0,2026-06-25,2026-07-04,ETPPO71262,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77805,2026-07-01
+154.29,0.0,SWIGGY,,,77806,162.0045,NOIDA,220.0,2026-06-25,2026-07-04,ETPPO71262,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77806,2026-07-01
+733.33,0.0,SWIGGY,,,77807,769.9965,NOIDA,10.0,2026-06-25,2026-07-04,ETPPO71262,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77807,2026-07-01
 ```
 
 ---

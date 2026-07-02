@@ -156,7 +156,7 @@ as best-effort enrichment for SKU display names).
 - **Live pipeline:** `run.sh` (per platform, in parallel) scrapes and **appends the run's rows to
   `history.csv`**; `run_all.sh` then runs `tools/vault_build.py` **once** after the sweep + heal
   pass (single process, so the whole-graph rebuild never races the parallel platforms) and
-  git-pushes. Cron: 09:00 / 12:00 / 16:00 IST.
+  git-pushes. Cron: one deadline-aligned sweep landing 12:00 noon + 18:00 guardian.
 
 `tools/vault_note.py` / `tools/vault_rollup.py` (v1) remain in `run.sh` as the per-run CSV-append +
 provisional notes; `vault_build.py` is the authority and overwrites them with the complete,

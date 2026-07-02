@@ -17,11 +17,11 @@ Up: [[po-PCHPO209585]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,15.0,SWIGGY,2026-06-25,77259,1290.0,CHANDIGARH,15.0,2026-06-22,2026-07-04,PCHPO209585,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77259,2026-06-30
-371.43,32.0,SWIGGY,2026-06-25,77260,390.0,CHANDIGARH,32.0,2026-06-22,2026-07-04,PCHPO209585,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77260,2026-06-30
-344.76,0.0,SWIGGY,2026-06-25,77261,362.0,CHANDIGARH,70.0,2026-06-22,2026-07-04,PCHPO209585,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77261,2026-06-30
-149.52,1280.0,SWIGGY,2026-06-25,77262,157.0,CHANDIGARH,1280.0,2026-06-22,2026-07-04,PCHPO209585,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77262,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1228.57,15.0,SWIGGY,,2026-06-25,77259,1289.9985,CHANDIGARH,15.0,2026-06-22,2026-07-04,PCHPO209585,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77259,2026-07-01
+371.43,32.0,SWIGGY,,2026-06-25,77260,390.0015,CHANDIGARH,32.0,2026-06-22,2026-07-04,PCHPO209585,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77260,2026-07-01
+344.76,0.0,SWIGGY,,2026-06-25,77261,361.998,CHANDIGARH,70.0,2026-06-22,2026-07-04,PCHPO209585,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77261,2026-07-01
+149.52,1280.0,SWIGGY,,2026-06-25,77262,156.996,CHANDIGARH,1280.0,2026-06-22,2026-07-04,PCHPO209585,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77262,2026-07-01
 ```
 
 ---

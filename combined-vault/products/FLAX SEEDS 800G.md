@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000298` |
 | canonical_sku(s) | `jivo-organic-flax-seeds-raw-alsi-seeds-for-smoothies-cereals-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-800g-800ml`, `edsh5bx4umfr4xyf` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | FLAX SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 800G |
 | Bridge class | core (priced) |

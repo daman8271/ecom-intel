@@ -17,13 +17,13 @@ Up: [[po-ETPPO69496]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,0.0,SWIGGY,2026-06-26,77167,205.0,NOIDA,36.0,2026-06-20,2026-06-28,ETPPO69496,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77167,2026-06-30
-185.71,80.0,SWIGGY,2026-06-26,77168,195.0,NOIDA,80.0,2026-06-20,2026-06-28,ETPPO69496,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77168,2026-06-30
-344.76,0.0,SWIGGY,2026-06-26,77169,362.0,NOIDA,60.0,2026-06-20,2026-06-28,ETPPO69496,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77169,2026-06-30
-149.52,360.0,SWIGGY,2026-06-26,77170,157.0,NOIDA,360.0,2026-06-20,2026-06-28,ETPPO69496,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77170,2026-06-30
-147.62,0.0,SWIGGY,2026-06-26,77171,155.0,NOIDA,16.0,2026-06-20,2026-06-28,ETPPO69496,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77171,2026-06-30
-200.0,0.0,SWIGGY,2026-06-26,77172,210.0,NOIDA,16.0,2026-06-20,2026-06-28,ETPPO69496,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77172,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+195.24,0.0,SWIGGY,,2026-06-26,77167,205.002,NOIDA,36.0,2026-06-20,2026-06-28,ETPPO69496,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77167,2026-07-01
+185.71,80.0,SWIGGY,,2026-06-26,77168,194.9955,NOIDA,80.0,2026-06-20,2026-06-28,ETPPO69496,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77168,2026-07-01
+344.76,0.0,SWIGGY,,2026-06-26,77169,361.998,NOIDA,60.0,2026-06-20,2026-06-28,ETPPO69496,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77169,2026-07-01
+149.52,360.0,SWIGGY,,2026-06-26,77170,156.996,NOIDA,360.0,2026-06-20,2026-06-28,ETPPO69496,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77170,2026-07-01
+147.62,0.0,SWIGGY,,2026-06-26,77171,155.001,NOIDA,16.0,2026-06-20,2026-06-28,ETPPO69496,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77171,2026-07-01
+200.0,0.0,SWIGGY,,2026-06-26,77172,210.0,NOIDA,16.0,2026-06-20,2026-06-28,ETPPO69496,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77172,2026-07-01
 ```
 
 ---

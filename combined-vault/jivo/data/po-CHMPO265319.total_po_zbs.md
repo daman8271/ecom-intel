@@ -17,11 +17,11 @@ Up: [[po-CHMPO265319]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,4.0,SWIGGY,2026-02-19,62983,1100.0,HYDERABAD,4.0,2026-02-05,2026-02-21,CHMPO265319,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62983,2026-06-30
-138.1,0.0,SWIGGY,2026-02-19,62984,145.0048333,HYDERABAD,60.0,2026-02-05,2026-02-21,CHMPO265319,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62984,2026-06-30
-761.9,4.0,SWIGGY,2026-02-19,62985,799.995,HYDERABAD,4.0,2026-02-05,2026-02-21,CHMPO265319,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62985,2026-06-30
-2619.05,4.0,SWIGGY,2026-02-19,62986,2750.0025,HYDERABAD,4.0,2026-02-05,2026-02-21,CHMPO265319,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62986,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,4.0,SWIGGY,,2026-02-19,62983,1100.001,HYDERABAD,4.0,2026-02-05,2026-02-21,CHMPO265319,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62983,2026-07-01
+138.1,0.0,SWIGGY,,2026-02-19,62984,145.0048333,HYDERABAD,60.0,2026-02-05,2026-02-21,CHMPO265319,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62984,2026-07-01
+761.9,4.0,SWIGGY,,2026-02-19,62985,799.995,HYDERABAD,4.0,2026-02-05,2026-02-21,CHMPO265319,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62985,2026-07-01
+2619.05,4.0,SWIGGY,,2026-02-19,62986,2750.0025,HYDERABAD,4.0,2026-02-05,2026-02-21,CHMPO265319,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:62986,2026-07-01
 ```
 
 ---

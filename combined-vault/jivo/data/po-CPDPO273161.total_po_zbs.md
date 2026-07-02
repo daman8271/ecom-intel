@@ -17,10 +17,10 @@ Up: [[po-CPDPO273161]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-22.79,0.0,SWIGGY,2026-05-30,73928,31.90416667,PUNE,12.0,2026-05-21,2026-05-30,CPDPO273161,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73928,2026-06-30
-244.76,0.0,SWIGGY,2026-05-30,73929,256.9981667,PUNE,60.0,2026-05-21,2026-05-30,CPDPO273161,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73929,2026-06-30
-182.86,20.0,SWIGGY,2026-05-30,73930,192.0028125,PUNE,32.0,2026-05-21,2026-05-30,CPDPO273161,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73930,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+22.79,0.0,SWIGGY,,2026-05-30,73928,31.90416667,PUNE,12.0,2026-05-21,2026-05-30,CPDPO273161,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73928,2026-07-01
+244.76,0.0,SWIGGY,,2026-05-30,73929,256.9981667,PUNE,60.0,2026-05-21,2026-05-30,CPDPO273161,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73929,2026-07-01
+182.86,20.0,SWIGGY,,2026-05-30,73930,192.0028125,PUNE,32.0,2026-05-21,2026-05-30,CPDPO273161,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:73930,2026-07-01
 ```
 
 ---

@@ -17,12 +17,12 @@ Up: [[po-KOCPO115331]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,16.0,SWIGGY,2026-06-28,74684,500.0,KOCHI,16.0,2026-05-27,2026-07-03,KOCPO115331,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74684,2026-06-30
-366.67,16.0,SWIGGY,2026-06-28,74685,385.0,KOCHI,16.0,2026-05-27,2026-07-03,KOCPO115331,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74685,2026-06-30
-195.24,64.0,SWIGGY,2026-06-28,74686,205.0,KOCHI,64.0,2026-05-27,2026-07-03,KOCPO115331,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74686,2026-06-30
-147.62,32.0,SWIGGY,2026-06-28,74687,155.0,KOCHI,32.0,2026-05-27,2026-07-03,KOCPO115331,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74687,2026-06-30
-200.0,0.0,SWIGGY,2026-06-28,74688,210.0,KOCHI,32.0,2026-05-27,2026-07-03,KOCPO115331,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74688,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,16.0,SWIGGY,,2026-06-28,74684,499.9995,KOCHI,16.0,2026-05-27,2026-07-03,KOCPO115331,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74684,2026-07-01
+366.67,16.0,SWIGGY,,2026-06-28,74685,385.0035,KOCHI,16.0,2026-05-27,2026-07-03,KOCPO115331,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74685,2026-07-01
+195.24,64.0,SWIGGY,,2026-06-28,74686,205.002,KOCHI,64.0,2026-05-27,2026-07-03,KOCPO115331,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74686,2026-07-01
+147.62,32.0,SWIGGY,,2026-06-28,74687,155.001,KOCHI,32.0,2026-05-27,2026-07-03,KOCPO115331,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74687,2026-07-01
+200.0,0.0,SWIGGY,,2026-06-28,74688,210.0,KOCHI,32.0,2026-05-27,2026-07-03,KOCPO115331,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74688,2026-07-01
 ```
 
 ---

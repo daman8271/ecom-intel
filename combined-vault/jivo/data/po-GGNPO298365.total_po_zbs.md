@@ -17,10 +17,10 @@ Up: [[po-GGNPO298365]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-7.62,0.0,SWIGGY,,59646,8.001018519,DELHI,108.0,2025-12-27,2026-01-05,GGNPO298365,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59646,2026-06-30
-12.44,0.0,SWIGGY,,59647,17.41675926,DELHI,108.0,2025-12-27,2026-01-05,GGNPO298365,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59647,2026-06-30
-12.44,0.0,SWIGGY,,59648,17.41675926,DELHI,108.0,2025-12-27,2026-01-05,GGNPO298365,Appointment Done,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59648,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+7.62,0.0,SWIGGY,,,59646,8.001018519,DELHI,108.0,2025-12-27,2026-01-05,GGNPO298365,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59646,2026-07-01
+12.44,0.0,SWIGGY,,,59647,17.41675926,DELHI,108.0,2025-12-27,2026-01-05,GGNPO298365,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59647,2026-07-01
+12.44,0.0,SWIGGY,,,59648,17.41675926,DELHI,108.0,2025-12-27,2026-01-05,GGNPO298365,Appointment Done,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59648,2026-07-01
 ```
 
 ---

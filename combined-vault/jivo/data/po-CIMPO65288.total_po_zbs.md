@@ -17,11 +17,11 @@ Up: [[po-CIMPO65288]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,10.0,SWIGGY,2025-12-14,58141,1100.001,MUMBAI,10.0,2025-12-06,2025-12-31,CIMPO65288,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58141,2026-06-30
-714.29,0.0,SWIGGY,2025-12-14,58142,750.0045,MUMBAI,20.0,2025-12-06,2025-12-31,CIMPO65288,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58142,2026-06-30
-152.38,20.0,SWIGGY,2025-12-14,58143,159.999,MUMBAI,20.0,2025-12-06,2025-12-31,CIMPO65288,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58143,2026-06-30
-209.52,16.0,SWIGGY,2025-12-14,58144,219.99625,MUMBAI,16.0,2025-12-06,2025-12-31,CIMPO65288,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58144,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,10.0,SWIGGY,,2025-12-14,58141,1100.001,MUMBAI,10.0,2025-12-06,2025-12-31,CIMPO65288,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58141,2026-07-01
+714.29,0.0,SWIGGY,,2025-12-14,58142,750.0045,MUMBAI,20.0,2025-12-06,2025-12-31,CIMPO65288,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58142,2026-07-01
+152.38,20.0,SWIGGY,,2025-12-14,58143,159.999,MUMBAI,20.0,2025-12-06,2025-12-31,CIMPO65288,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58143,2026-07-01
+209.52,16.0,SWIGGY,,2025-12-14,58144,219.99625,MUMBAI,16.0,2025-12-06,2025-12-31,CIMPO65288,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58144,2026-07-01
 ```
 
 ---

@@ -17,8 +17,8 @@ Up: [[po-JCNPO265212]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,520.0,SWIGGY,2026-06-25,74646,256.9980962,CHENNAI,520.0,2026-05-27,2026-06-26,JCNPO265212,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74646,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+244.76,520.0,SWIGGY,,2026-06-25,74646,256.9980962,CHENNAI,520.0,2026-05-27,2026-06-26,JCNPO265212,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:74646,2026-07-01
 ```
 
 ---

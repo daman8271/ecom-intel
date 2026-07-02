@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35019
-- **doc_num:** 706260515
-- **doc_date:** 2026-06-20
-- **doc_total:** 12495.00
+- **doc_entry:** 35173
+- **doc_num:** 706260613
+- **doc_date:** 2026-06-22
+- **doc_total:** 45575.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000645
-- **card_name:** DEL SAHIL
-- **ship_to_code:** DEL SAHIL DELHI
-- **ship_to_address:** NEW DELHI-110034IN
-- **place_of_supply:** DL
+- **card_code:** CUSTA000912
+- **card_name:** AMAZON (B2C -MAY-JULY)
+- **ship_to_code:** AMAZON B2C UTTAR PRADESH
+- **ship_to_address:** -246761IN
+- **place_of_supply:** UP
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-MP
-- **item_summary:** FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
-- **base_refs:** 1506264633
-- **total_quantity:** 33.000
-- **total_litres:** 37.500
-- **total_boxes:** 112.000
-- **total_weight:** 33.768
-- **line_count:** 7
+- **warehouses:** DL-EC
+- **item_summary:** FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000380 - EXTRA VIRGIN COCONUT OIL 200 MLS 6 PCS, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000017 - CANOLA 2 LTR, FG0000070 - COLD PRESS 2 LTR 10 PCS HANDLE, SL0000026 - COLD PRESS 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000040 - COLD PRESS GROUDNUT 5 LTR + 1 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000061 - EXTRA LIGHT 2 LTR, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000064 - EXTRA LIGHT 5 LTR + 1 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000073 - EXTRA VIRGIN 2 LTR, FG0000155 - EXTRA VIRGIN 2 LTR 10 PCS HANDLE, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000136 - POMACE 2 LTR, FG0000114 - POMACE OLIVE 2 LTR 10 PCS HANDLE, SL0000154 - SANO POMACE 1 LTR PACK OF 2, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000157 - SANO POMACE 5 LTR, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS, SL0000222 - SOYABEAN 5 LTR + SUNFLOWER 1 LTR PACK OF 3, FG0000192 - SOYABEAN OIL 5 LTR 4 PCS
+- **base_refs:** 1506264623
+- **total_quantity:** 101.000
+- **total_litres:** 176.600
+- **total_boxes:** 0.000
+- **total_weight:** 95.237
+- **line_count:** 32
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35019, "sap_invoice_doc_num": "706260515", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 35173, "sap_invoice_doc_num": "706260613", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

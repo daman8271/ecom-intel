@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Transporter (88)
+title: Transporter (89)
 tags:
   - moc
   - source/factory
 ---
 
-# Transporter — 88 records
+# Transporter — 89 records
 
 From `/vehicle-management/transporters/`. Up: [[_HOME]]
 
@@ -81,6 +81,7 @@ From `/vehicle-management/transporters/`. Up: [[_HOME]]
 - [[trn-21]] — ROHTAS TRANSPORT SERVICE
 - [[trn-19]] — ROYALPRIME
 - [[trn-6]] — SANGRUR GOODS CARRIER
+- [[trn-91]] — SELF VEHCILE
 - [[trn-28]] — Shekhawati Road Lines
 - [[trn-14]] — Shree Ram rmc
 - [[trn-29]] — Shree shyam express

@@ -70,5 +70,8 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000390`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000390]]
+- **35 boxes:** [[box-157267]] · [[box-157268]] · [[box-157269]] … +32 more (tag `bridge/FG0000390`)
+- **35 boxes:** [[barcode__dispatch__reports__boxes-157267]] · [[barcode__dispatch__reports__boxes-157268]] · [[barcode__dispatch__reports__boxes-157269]] … +32 more (tag `bridge/FG0000390`)
+- **1 pallets:** [[pal-3297]]
 - **1 sap items:** [[quality-control__sap-items-FG0000390]]
 

@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35463
-- **doc_num:** 706260785
-- **doc_date:** 2026-06-27
-- **doc_total:** 49891.00
+- **doc_entry:** 35604
+- **doc_num:** 706260882
+- **doc_date:** 2026-06-30
+- **doc_total:** 39103.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000912
-- **card_name:** AMAZON (B2C -MAY-JULY)
-- **ship_to_code:** AMAZON B2C KARNATAKA
-- **ship_to_address:** -560050IN
-- **place_of_supply:** KT
+- **card_code:** CUSTA000910
+- **card_name:** FLIPKART  (B2C-MAY-JULY)
+- **ship_to_code:** FLIPKART B2C PUNJAB
+- **ship_to_address:** PUNJAB-146001IN
+- **place_of_supply:** PB
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -36,18 +36,18 @@ tags:
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** DL-EC
-- **item_summary:** FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000026 - COLD PRESS 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000040 - COLD PRESS GROUDNUT 5 LTR + 1 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000053 - EXTRA LIGHT 1 LTR, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000064 - EXTRA LIGHT 5 LTR + 1 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000067 - EXTRA LIGHT 5 LTR + POMACE 1 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS
-- **base_refs:** 1506264673
-- **total_quantity:** 62.000
-- **total_litres:** 178.800
+- **item_summary:** FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000397 - CANOLA 5 + 1 LTR SET, SL0000009 - CANOLA 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000043 - COLD PRESS GROUNDNUT  1 LTR, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000044 - COLD PRESS GROUNDNUT  1 LTR PACK OF 2, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000050 - DESI GHEE 500 ML 1 PCS, FG0000082 - DESI GHEE A2 500 MLS 16 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000075 - EXTRA VIRGIN 5 LTR, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000094 - JIVO GOLD 1 LTR PACK OF 2, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000096 - JIVO GOLD  5 LTR + 1 LTR, FG0000128 - JIVO GOLD 5 LTR 4 PCS, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000154 - SANO POMACE 1 LTR PACK OF 2, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, SL0000210 - SO OLIVE OIL 1 LTR 16 PCS, FG0000228 - SO OLIVE 1L 16 PCS
+- **base_refs:** 1506264697
+- **total_quantity:** 106.000
+- **total_litres:** 251.500
 - **total_boxes:** 0.000
-- **total_weight:** 95.092
-- **line_count:** 19
+- **total_weight:** 163.129
+- **line_count:** 38
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35463, "sap_invoice_doc_num": "706260785", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 35604, "sap_invoice_doc_num": "706260882", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

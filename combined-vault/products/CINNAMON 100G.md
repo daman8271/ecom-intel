@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000198` |
 | canonical_sku(s) | `scmh4h8snyfgcykm`, `jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml` |
 | Category | [[Category - SPICES\|SPICES]] |
+| Sub-category | CINNAMON |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 100G |
 | Bridge class | new_confirmed |

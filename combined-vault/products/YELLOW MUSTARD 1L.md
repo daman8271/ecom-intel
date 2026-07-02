@@ -76,8 +76,8 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000328`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000328]]
-- **163 boxes:** [[box-135354]] · [[box-135355]] · [[box-135356]] … +160 more (tag `bridge/FG0000328`)
-- **19 boxes:** [[barcode__dispatch__reports__boxes-135354]] · [[barcode__dispatch__reports__boxes-135355]] · [[barcode__dispatch__reports__boxes-135356]] … +16 more (tag `bridge/FG0000328`)
+- **166 boxes:** [[box-135353]] · [[box-135354]] · [[box-135355]] … +163 more (tag `bridge/FG0000328`)
+- **22 boxes:** [[barcode__dispatch__reports__boxes-135353]] · [[barcode__dispatch__reports__boxes-135354]] · [[barcode__dispatch__reports__boxes-135355]] … +19 more (tag `bridge/FG0000328`)
 - **4 pallets:** [[pal-2825]] · [[pal-2826]] · [[pal-2827]] … +1 more (tag `bridge/FG0000328`)
 
 **`FG0000329`** — referenced by factory records:

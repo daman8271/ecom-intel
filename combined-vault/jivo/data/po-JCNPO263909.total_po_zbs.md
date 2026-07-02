@@ -17,9 +17,9 @@ Up: [[po-JCNPO263909]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,220.0,SWIGGY,2026-06-04,73900,256.9980909,CHENNAI,220.0,2026-05-20,2026-06-06,JCNPO263909,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:73900,2026-06-30
-182.86,32.0,SWIGGY,2026-06-04,73901,192.0028125,CHENNAI,32.0,2026-05-20,2026-06-06,JCNPO263909,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:73901,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+244.76,220.0,SWIGGY,,2026-06-04,73900,256.9980909,CHENNAI,220.0,2026-05-20,2026-06-06,JCNPO263909,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:73900,2026-07-01
+182.86,32.0,SWIGGY,,2026-06-04,73901,192.0028125,CHENNAI,32.0,2026-05-20,2026-06-06,JCNPO263909,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:73901,2026-07-01
 ```
 
 ---

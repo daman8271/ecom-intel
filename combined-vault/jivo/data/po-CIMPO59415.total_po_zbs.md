@@ -17,11 +17,11 @@ Up: [[po-CIMPO59415]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-241.32,0.0,SWIGGY,,56856,253.38625,MUMBAI,40.0,2025-11-20,2025-11-29,CIMPO59415,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56856,2026-06-30
-443.1,0.0,SWIGGY,,56857,465.2547917,MUMBAI,48.0,2025-11-20,2025-11-29,CIMPO59415,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56857,2026-06-30
-116.19,0.0,SWIGGY,,56858,121.9995,MUMBAI,80.0,2025-11-20,2025-11-29,CIMPO59415,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56858,2026-06-30
-492.38,0.0,SWIGGY,,56859,516.999,MUMBAI,10.0,2025-11-20,2025-11-29,CIMPO59415,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56859,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+241.32,0.0,SWIGGY,,,56856,253.38625,MUMBAI,40.0,2025-11-20,2025-11-29,CIMPO59415,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56856,2026-07-01
+443.1,0.0,SWIGGY,,,56857,465.2547917,MUMBAI,48.0,2025-11-20,2025-11-29,CIMPO59415,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56857,2026-07-01
+116.19,0.0,SWIGGY,,,56858,121.9995,MUMBAI,80.0,2025-11-20,2025-11-29,CIMPO59415,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56858,2026-07-01
+492.38,0.0,SWIGGY,,,56859,516.999,MUMBAI,10.0,2025-11-20,2025-11-29,CIMPO59415,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:56859,2026-07-01
 ```
 
 ---

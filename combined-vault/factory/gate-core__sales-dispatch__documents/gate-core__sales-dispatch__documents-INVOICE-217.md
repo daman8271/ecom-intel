@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "DL01LAD1397"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# DL01LAD1397
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35296
-- **doc_num:** 706260686
-- **doc_date:** 2026-06-24
-- **doc_total:** 46028.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C MADHYA PRADESH
-- **ship_to_address:** MADHYA PRADESH-476115IN
+- **doc_entry:** 35447
+- **doc_num:** 606260182
+- **doc_date:** 2026-06-26
+- **doc_total:** 48000.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000860
+- **card_name:** TOATS PRIVATE LIMITED (AAJCT2944G)
+- **ship_to_code:** TOATS PRIVATE LIMITED BHOPAL
+- **ship_to_address:** NEW BYPASS ROAD  KANHASAIYA  BHOPALBHOPAL-462022IN
 - **place_of_supply:** MP
-- **bp_gstin:** 
+- **bp_gstin:** 09AAJCT2944G1Z3
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** DL01LAD1397
+- **transporter_name:** Pick & Ship
+- **bilty_no:** 2674
+- **bilty_date:** 2026-06-27
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000005 - CANOLA 1 LTR, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000024 - COCONUT  1 LTR, FG0000116 - EXTRA VIRGIN COCONUT OIL 1 LTR 16 PCS, SL0000043 - COLD PRESS GROUNDNUT  1 LTR, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000083 - EXTRA VIRGIN COCONUT  500 ML, FG0000157 - EXTRA VIRGIN COCONUT OIL 500 MLS 24 PCS, SL0000096 - JIVO GOLD  5 LTR + 1 LTR, FG0000128 - JIVO GOLD 5 LTR 4 PCS, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000122 - MUSTARD 5 LTR + CANOLA 1 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000127 - POMACE 1 LTR PACK OF 3, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000136 - POMACE 2 LTR, FG0000114 - POMACE OLIVE 2 LTR 10 PCS HANDLE, SL0000222 - SOYABEAN 5 LTR + SUNFLOWER 1 LTR PACK OF 3, FG0000192 - SOYABEAN OIL 5 LTR 4 PCS, SL0000184 - SUNFLOWER 5 LTR, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, SL0000213 - JIVO RICE BRAIN OIL 1 LTR, FG0000227 - RICE BRAN 1L 16 PCS
-- **base_refs:** 1506264631
-- **total_quantity:** 204.000
-- **total_litres:** 381.300
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000004 - COLD PRESS 5 LTR 4 PCS
+- **base_refs:** 1706264650
+- **total_quantity:** 40.000
+- **total_litres:** 200.000
 - **total_boxes:** 0.000
-- **total_weight:** 193.266
-- **line_count:** 41
+- **total_weight:** 198.328
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35296, "sap_invoice_doc_num": "706260686", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 657, "sap_invoice_doc_entry": 35447, "sap_invoice_doc_num": "606260182", "invoice_number": "606260182", "eway_bill": "771646381944", "invoice_weight": "198.328", "invoice_amount": "48000.00", "place_of_supply": "MP", "location": "Bhopal", "product_variety": "Oil", "total_litres": "200.000", "effective_month": "2026-06", "budget_delivery_point": "BHOPAL", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 334, "transporter_id": 85, "driver_id": null, "linked_vehicle_entry_id": 1174, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-27T14:04:16.287006Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-27", "priority": "High", "transporter_name": "PICK & SHIP", "transporter_gstin": "09AAQCP4145A1ZF", "contact_person": "shukla", "mobile_no": "9958007610", "vehicle_no": "DL01LAD1397", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "2674", "bilty_date": "2026-06-27", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260627.pdf", "bilty_attachment_name": "AR - 706260627.pdf", "freight": "1.00", "total_freight": "1.00", "kanta_weight": null, "remarks": "", "created_at": "2026-06-26T18:42:49.675535+05:30", "updated_at": "2026-06-27T19:34:16.296717+05:30"}
   ```

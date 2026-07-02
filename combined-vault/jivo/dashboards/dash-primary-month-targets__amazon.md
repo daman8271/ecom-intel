@@ -18,44 +18,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
 
 ```json
 {
- "data": [
-  {
-   "achieved_pct": 0.670274375,
-   "date": "2026-06-29",
-   "done_ltrs": 107243.9,
-   "dp_ltrs": 160000.0,
-   "drr": 3698.0655172413794,
-   "est_ltr": 110941.96551724138,
-   "est_ltr_pct": 0.6933872844827587,
-   "format": "AMAZON",
-   "id": null,
-   "item_head": "PREMIUM",
-   "month": 6,
-   "pending_ltr": 52756.1,
-   "require_drr": 52756.1,
-   "targets": 160000.0,
-   "type": "sec",
-   "year": 2026
-  },
-  {
-   "achieved_pct": 0.6435444444444445,
-   "date": "2026-06-29",
-   "done_ltrs": 115838.0,
-   "dp_ltrs": 180000.0,
-   "drr": 3994.4137931034484,
-   "est_ltr": 119832.41379310345,
-   "est_ltr_pct": 0.6657356321839081,
-   "format": "AMAZON",
-   "id": null,
-   "item_head": "COMMODITY",
-   "month": 6,
-   "pending_ltr": 64162.0,
-   "require_drr": 64162.0,
-   "targets": 180000.0,
-   "type": "sec",
-   "year": 2026
-  }
- ],
+ "data": [],
  "format": "AMAZON",
  "source": "master_po",
  "type": "prim"

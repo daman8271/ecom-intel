@@ -17,12 +17,12 @@ Up: [[po-CMMPO11223]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-16,76202,214.998,HYDERABAD,20.0,2026-06-12,2026-06-28,CMMPO11223,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76202,2026-06-30
-371.43,16.0,SWIGGY,2026-06-16,76203,390.00125,HYDERABAD,16.0,2026-06-12,2026-06-28,CMMPO11223,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76203,2026-06-30
-185.71,1136.0,SWIGGY,2026-06-16,76204,195.0,HYDERABAD,1136.0,2026-06-12,2026-06-28,CMMPO11223,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76204,2026-06-30
-149.52,20.0,SWIGGY,2026-06-16,76205,156.996,HYDERABAD,20.0,2026-06-12,2026-06-28,CMMPO11223,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76205,2026-06-30
-771.43,32.0,SWIGGY,2026-06-16,76206,810.0015625,HYDERABAD,32.0,2026-06-12,2026-06-28,CMMPO11223,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76206,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-16,76202,214.998,HYDERABAD,20.0,2026-06-12,2026-06-28,CMMPO11223,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76202,2026-07-01
+371.43,16.0,SWIGGY,,2026-06-16,76203,390.00125,HYDERABAD,16.0,2026-06-12,2026-06-28,CMMPO11223,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76203,2026-07-01
+185.71,1136.0,SWIGGY,,2026-06-16,76204,194.9955,HYDERABAD,1136.0,2026-06-12,2026-06-28,CMMPO11223,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76204,2026-07-01
+149.52,20.0,SWIGGY,,2026-06-16,76205,156.996,HYDERABAD,20.0,2026-06-12,2026-06-28,CMMPO11223,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76205,2026-07-01
+771.43,32.0,SWIGGY,,2026-06-16,76206,810.0015625,HYDERABAD,32.0,2026-06-12,2026-06-28,CMMPO11223,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76206,2026-07-01
 ```
 
 ---

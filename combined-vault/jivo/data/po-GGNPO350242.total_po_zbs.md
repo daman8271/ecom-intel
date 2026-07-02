@@ -17,10 +17,10 @@ Up: [[po-GGNPO350242]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,32.0,SWIGGY,2026-04-30,70463,205.0019444,DELHI,36.0,2026-04-24,2026-05-02,GGNPO350242,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:70463,2026-06-30
-823.81,0.0,SWIGGY,2026-04-30,70464,865.0008333,DELHI,12.0,2026-04-24,2026-05-02,GGNPO350242,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:70464,2026-06-30
-809.52,0.0,SWIGGY,2026-04-30,70465,849.99625,DELHI,16.0,2026-04-24,2026-05-02,GGNPO350242,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:70465,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+195.24,32.0,SWIGGY,,2026-04-30,70463,205.0019444,DELHI,36.0,2026-04-24,2026-05-02,GGNPO350242,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:70463,2026-07-01
+823.81,0.0,SWIGGY,,2026-04-30,70464,865.0008333,DELHI,12.0,2026-04-24,2026-05-02,GGNPO350242,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:70464,2026-07-01
+809.52,0.0,SWIGGY,,2026-04-30,70465,849.99625,DELHI,16.0,2026-04-24,2026-05-02,GGNPO350242,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:70465,2026-07-01
 ```
 
 ---

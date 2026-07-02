@@ -17,11 +17,11 @@ Up: [[po-PCHPO195146]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1009.52,10.0,SWIGGY,2026-05-02,70466,1059.996,CHANDIGARH,10.0,2026-04-24,2026-05-05,PCHPO195146,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70466,2026-06-30
-161.9,100.0,SWIGGY,2026-05-02,70467,169.9952,CHANDIGARH,100.0,2026-04-24,2026-05-05,PCHPO195146,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70467,2026-06-30
-1952.38,4.0,SWIGGY,2026-05-02,70468,2050.0,CHANDIGARH,4.0,2026-04-24,2026-05-05,PCHPO195146,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70468,2026-06-30
-761.9,10.0,SWIGGY,2026-05-02,70469,799.995,CHANDIGARH,10.0,2026-04-24,2026-05-05,PCHPO195146,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70469,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1009.52,10.0,SWIGGY,,2026-05-02,70466,1059.996,CHANDIGARH,10.0,2026-04-24,2026-05-05,PCHPO195146,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70466,2026-07-01
+161.9,100.0,SWIGGY,,2026-05-02,70467,169.9952,CHANDIGARH,100.0,2026-04-24,2026-05-05,PCHPO195146,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70467,2026-07-01
+1952.38,4.0,SWIGGY,,2026-05-02,70468,2049.999,CHANDIGARH,4.0,2026-04-24,2026-05-05,PCHPO195146,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70468,2026-07-01
+761.9,10.0,SWIGGY,,2026-05-02,70469,799.995,CHANDIGARH,10.0,2026-04-24,2026-05-05,PCHPO195146,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:70469,2026-07-01
 ```
 
 ---

@@ -17,10 +17,10 @@ Up: [[po-PCHPO172340]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.1,0.0,SWIGGY,2026-01-15,60759,250.00475,CHANDIGARH,40.0,2026-01-10,2026-01-21,PCHPO172340,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:60759,2026-06-30
-761.9,4.0,SWIGGY,2026-01-15,60760,799.995,CHANDIGARH,4.0,2026-01-10,2026-01-21,PCHPO172340,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:60760,2026-06-30
-761.9,8.0,SWIGGY,2026-01-15,60761,799.995,CHANDIGARH,8.0,2026-01-10,2026-01-21,PCHPO172340,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:60761,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.1,0.0,SWIGGY,,2026-01-15,60759,250.00475,CHANDIGARH,40.0,2026-01-10,2026-01-21,PCHPO172340,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:60759,2026-07-01
+761.9,4.0,SWIGGY,,2026-01-15,60760,799.995,CHANDIGARH,4.0,2026-01-10,2026-01-21,PCHPO172340,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:60760,2026-07-01
+761.9,8.0,SWIGGY,,2026-01-15,60761,799.995,CHANDIGARH,8.0,2026-01-10,2026-01-21,PCHPO172340,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:60761,2026-07-01
 ```
 
 ---

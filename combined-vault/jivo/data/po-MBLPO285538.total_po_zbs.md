@@ -17,11 +17,11 @@ Up: [[po-MBLPO285538]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,48.0,SWIGGY,2025-10-10,53032,529.998125,BANGALORE,48.0,2025-09-27,2025-10-13,MBLPO285538,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53032,2026-06-30
-196.19,0.0,SWIGGY,2025-10-10,53033,205.9995,BANGALORE,60.0,2025-09-27,2025-10-13,MBLPO285538,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53033,2026-06-30
-709.52,0.0,SWIGGY,2025-10-10,53034,744.99625,BANGALORE,16.0,2025-09-27,2025-10-13,MBLPO285538,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53034,2026-06-30
-2522.86,12.0,SWIGGY,2025-10-10,53035,2649.0025,BANGALORE,12.0,2025-09-27,2025-10-13,MBLPO285538,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53035,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+504.76,48.0,SWIGGY,,2025-10-10,53032,529.998125,BANGALORE,48.0,2025-09-27,2025-10-13,MBLPO285538,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53032,2026-07-01
+196.19,0.0,SWIGGY,,2025-10-10,53033,205.9995,BANGALORE,60.0,2025-09-27,2025-10-13,MBLPO285538,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53033,2026-07-01
+709.52,0.0,SWIGGY,,2025-10-10,53034,744.99625,BANGALORE,16.0,2025-09-27,2025-10-13,MBLPO285538,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53034,2026-07-01
+2522.86,12.0,SWIGGY,,2025-10-10,53035,2649.0025,BANGALORE,12.0,2025-09-27,2025-10-13,MBLPO285538,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53035,2026-07-01
 ```
 
 ---

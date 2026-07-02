@@ -17,10 +17,10 @@ Up: [[po-MBDPO21467]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,78009,500.0,BANGALORE,64.0,2026-06-27,2026-07-15,MBDPO21467,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78009,2026-06-30
-149.52,0.0,SWIGGY,,78010,157.0,BANGALORE,480.0,2026-06-27,2026-07-15,MBDPO21467,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78010,2026-06-30
-154.29,0.0,SWIGGY,,78011,162.0,BANGALORE,480.0,2026-06-27,2026-07-15,MBDPO21467,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78011,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,0.0,SWIGGY,,,78009,499.9995,BANGALORE,64.0,2026-06-27,2026-07-15,MBDPO21467,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78009,2026-07-01
+149.52,0.0,SWIGGY,,,78010,156.996,BANGALORE,480.0,2026-06-27,2026-07-15,MBDPO21467,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78010,2026-07-01
+154.29,0.0,SWIGGY,,,78011,162.0045,BANGALORE,480.0,2026-06-27,2026-07-15,MBDPO21467,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:78011,2026-07-01
 ```
 
 ---

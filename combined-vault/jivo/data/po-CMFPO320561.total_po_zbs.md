@@ -17,10 +17,10 @@ Up: [[po-CMFPO320561]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,48.0,SWIGGY,2026-05-15,72920,499.9995833,MUMBAI,48.0,2026-05-13,2026-05-22,CMFPO320561,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72920,2026-06-30
-890.48,20.0,SWIGGY,2026-05-15,72921,935.004,MUMBAI,20.0,2026-05-13,2026-05-22,CMFPO320561,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72921,2026-06-30
-161.9,140.0,SWIGGY,2026-05-15,72922,169.9952143,MUMBAI,140.0,2026-05-13,2026-05-22,CMFPO320561,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72922,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,48.0,SWIGGY,,2026-05-15,72920,499.9995833,MUMBAI,48.0,2026-05-13,2026-05-22,CMFPO320561,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72920,2026-07-01
+890.48,20.0,SWIGGY,,2026-05-15,72921,935.004,MUMBAI,20.0,2026-05-13,2026-05-22,CMFPO320561,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72921,2026-07-01
+161.9,140.0,SWIGGY,,2026-05-15,72922,169.9952143,MUMBAI,140.0,2026-05-13,2026-05-22,CMFPO320561,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:72922,2026-07-01
 ```
 
 ---

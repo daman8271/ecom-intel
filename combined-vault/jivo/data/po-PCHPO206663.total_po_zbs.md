@@ -17,14 +17,14 @@ Up: [[po-PCHPO206663]]
 Canonical raw rows (7) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,100.0,SWIGGY,2026-06-19,75942,215.0,CHANDIGARH,100.0,2026-06-10,2026-06-22,PCHPO206663,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75942,2026-06-30
-1228.57,9.0,SWIGGY,2026-06-19,75943,1290.0,CHANDIGARH,9.0,2026-06-10,2026-06-22,PCHPO206663,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75943,2026-06-30
-476.19,48.0,SWIGGY,2026-06-19,75944,500.0,CHANDIGARH,48.0,2026-06-10,2026-06-22,PCHPO206663,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75944,2026-06-30
-371.43,48.0,SWIGGY,2026-06-19,75945,390.0,CHANDIGARH,48.0,2026-06-10,2026-06-22,PCHPO206663,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75945,2026-06-30
-933.33,10.0,SWIGGY,2026-06-19,75946,980.0,CHANDIGARH,10.0,2026-06-10,2026-06-22,PCHPO206663,,449236,Jivo Extra Light Olive Oil 2.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75946,2026-06-30
-344.76,0.0,SWIGGY,2026-06-19,75947,362.0,CHANDIGARH,90.0,2026-06-10,2026-06-22,PCHPO206663,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75947,2026-06-30
-149.52,1560.0,SWIGGY,2026-06-19,75948,157.0,CHANDIGARH,1680.0,2026-06-10,2026-06-22,PCHPO206663,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75948,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,100.0,SWIGGY,,2026-06-19,75942,214.998,CHANDIGARH,100.0,2026-06-10,2026-06-22,PCHPO206663,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75942,2026-07-01
+1228.57,9.0,SWIGGY,,2026-06-19,75943,1289.9985,CHANDIGARH,9.0,2026-06-10,2026-06-22,PCHPO206663,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75943,2026-07-01
+476.19,48.0,SWIGGY,,2026-06-19,75944,499.9995,CHANDIGARH,48.0,2026-06-10,2026-06-22,PCHPO206663,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75944,2026-07-01
+371.43,48.0,SWIGGY,,2026-06-19,75945,390.0015,CHANDIGARH,48.0,2026-06-10,2026-06-22,PCHPO206663,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75945,2026-07-01
+933.33,10.0,SWIGGY,,2026-06-19,75946,979.9965,CHANDIGARH,10.0,2026-06-10,2026-06-22,PCHPO206663,,449236,Jivo Extra Light Olive Oil 2.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75946,2026-07-01
+344.76,0.0,SWIGGY,,2026-06-19,75947,361.998,CHANDIGARH,90.0,2026-06-10,2026-06-22,PCHPO206663,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75947,2026-07-01
+149.52,1560.0,SWIGGY,,2026-06-19,75948,156.996,CHANDIGARH,1680.0,2026-06-10,2026-06-22,PCHPO206663,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75948,2026-07-01
 ```
 
 ---

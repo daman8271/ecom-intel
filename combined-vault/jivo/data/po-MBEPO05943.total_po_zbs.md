@@ -17,9 +17,9 @@ Up: [[po-MBEPO05943]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,16.0,SWIGGY,2026-01-24,61156,550.000625,BANGALORE,16.0,2026-01-13,2026-01-25,MBEPO05943,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61156,2026-06-30
-138.1,0.0,SWIGGY,2026-01-24,61157,145.0047857,BANGALORE,140.0,2026-01-13,2026-01-25,MBEPO05943,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61157,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,16.0,SWIGGY,,2026-01-24,61156,550.000625,BANGALORE,16.0,2026-01-13,2026-01-25,MBEPO05943,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61156,2026-07-01
+138.1,0.0,SWIGGY,,2026-01-24,61157,145.0047857,BANGALORE,140.0,2026-01-13,2026-01-25,MBEPO05943,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61157,2026-07-01
 ```
 
 ---

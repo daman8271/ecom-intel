@@ -17,11 +17,11 @@ Up: [[po-JCEPO163274]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,0.0,SWIGGY,,65447,550.000625,COIMBATORE,16.0,2026-03-10,2026-04-02,JCEPO163274,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65447,2026-06-30
-196.19,0.0,SWIGGY,,65448,206.0,COIMBATORE,4.0,2026-03-10,2026-04-02,JCEPO163274,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65448,2026-06-30
-209.52,0.0,SWIGGY,,65449,219.9961719,COIMBATORE,128.0,2026-03-10,2026-04-02,JCEPO163274,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65449,2026-06-30
-138.1,0.0,SWIGGY,,65450,145.00475,COIMBATORE,240.0,2026-03-10,2026-04-02,JCEPO163274,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65450,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,0.0,SWIGGY,,,65447,550.000625,COIMBATORE,16.0,2026-03-10,2026-04-02,JCEPO163274,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65447,2026-07-01
+196.19,0.0,SWIGGY,,,65448,205.9995,COIMBATORE,4.0,2026-03-10,2026-04-02,JCEPO163274,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65448,2026-07-01
+209.52,0.0,SWIGGY,,,65449,219.9961719,COIMBATORE,128.0,2026-03-10,2026-04-02,JCEPO163274,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65449,2026-07-01
+138.1,0.0,SWIGGY,,,65450,145.00475,COIMBATORE,240.0,2026-03-10,2026-04-02,JCEPO163274,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65450,2026-07-01
 ```
 
 ---

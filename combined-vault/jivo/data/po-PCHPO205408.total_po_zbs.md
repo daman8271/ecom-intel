@@ -17,10 +17,10 @@ Up: [[po-PCHPO205408]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,60.0,SWIGGY,2026-06-12,75606,214.9981667,CHANDIGARH,60.0,2026-06-04,2026-06-16,PCHPO205408,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75606,2026-06-30
-1228.57,18.0,SWIGGY,2026-06-12,75607,1289.998333,CHANDIGARH,18.0,2026-06-04,2026-06-16,PCHPO205408,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75607,2026-06-30
-1809.53,4.0,SWIGGY,2026-06-12,75608,1900.005,CHANDIGARH,4.0,2026-06-04,2026-06-16,PCHPO205408,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75608,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,60.0,SWIGGY,,2026-06-12,75606,214.9981667,CHANDIGARH,60.0,2026-06-04,2026-06-16,PCHPO205408,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75606,2026-07-01
+1228.57,18.0,SWIGGY,,2026-06-12,75607,1289.998333,CHANDIGARH,18.0,2026-06-04,2026-06-16,PCHPO205408,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75607,2026-07-01
+1809.53,4.0,SWIGGY,,2026-06-12,75608,1900.005,CHANDIGARH,4.0,2026-06-04,2026-06-16,PCHPO205408,,79292,Jivo Pomace Olive Oil 5.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:75608,2026-07-01
 ```
 
 ---

@@ -21,6 +21,48 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
 {
  "brands": [],
  "categories": [],
+ "cities": [
+  {
+   "city": "Delhi",
+   "value": 10195.0
+  },
+  {
+   "city": "Mumbai",
+   "value": 4035.0
+  },
+  {
+   "city": "Gurgaon",
+   "value": 3720.0
+  },
+  {
+   "city": "Chandigarh",
+   "value": 3703.0
+  },
+  {
+   "city": "Ludhiana",
+   "value": 3528.0
+  },
+  {
+   "city": "Ghaziabad",
+   "value": 3362.0
+  },
+  {
+   "city": "Bengaluru",
+   "value": 3167.0
+  },
+  {
+   "city": "Mohali",
+   "value": 2998.0
+  },
+  {
+   "city": "Amritsar",
+   "value": 2918.0
+  },
+  {
+   "city": "Jalandhar",
+   "value": 2831.0
+  }
+ ],
  "errors": [],
  "filter_options": {
   "brands": [
@@ -241,6 +283,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "MUSTARD KACHI GHANI"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "YELLOW MUSTARD"
    },
    {
@@ -393,8 +439,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
    }
   ]
  },
- "mapped_units": 61405.0,
- "mapped_value": 61405.0,
+ "mapped_units": 66043.0,
+ "mapped_value": 66043.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -405,115 +451,115 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
  "states": [
   {
    "by_platform": {
-    "BLINKIT": 21442.0
+    "BLINKIT": 23049.0
    },
    "state": "PUNJAB",
-   "units": 21442.0,
-   "value": 21442.0
+   "units": 23049.0,
+   "value": 23049.0
   },
   {
    "by_platform": {
-    "BLINKIT": 9487.0
+    "BLINKIT": 10195.0
    },
    "state": "DELHI",
-   "units": 9487.0,
-   "value": 9487.0
+   "units": 10195.0,
+   "value": 10195.0
   },
   {
    "by_platform": {
-    "BLINKIT": 7623.0
+    "BLINKIT": 8215.0
    },
    "state": "HARYANA",
-   "units": 7623.0,
-   "value": 7623.0
+   "units": 8215.0,
+   "value": 8215.0
   },
   {
    "by_platform": {
-    "BLINKIT": 4684.0
+    "BLINKIT": 5033.0
    },
    "state": "MAHARASHTRA",
-   "units": 4684.0,
-   "value": 4684.0
+   "units": 5033.0,
+   "value": 5033.0
   },
   {
    "by_platform": {
-    "BLINKIT": 4341.0
+    "BLINKIT": 4664.0
    },
    "state": "CHANDIGARH",
-   "units": 4341.0,
-   "value": 4341.0
+   "units": 4664.0,
+   "value": 4664.0
   },
   {
    "by_platform": {
-    "BLINKIT": 4062.0
+    "BLINKIT": 4388.0
    },
    "state": "UTTAR PRADESH",
-   "units": 4062.0,
-   "value": 4062.0
+   "units": 4388.0,
+   "value": 4388.0
   },
   {
    "by_platform": {
-    "BLINKIT": 3433.0
+    "BLINKIT": 3678.0
    },
    "state": "KARNATAKA",
-   "units": 3433.0,
-   "value": 3433.0
+   "units": 3678.0,
+   "value": 3678.0
   },
   {
    "by_platform": {
-    "BLINKIT": 2554.0
+    "BLINKIT": 2764.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 2554.0,
-   "value": 2554.0
+   "units": 2764.0,
+   "value": 2764.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1860.0
+    "BLINKIT": 1984.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 1860.0,
-   "value": 1860.0
+   "units": 1984.0,
+   "value": 1984.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1012.0
+    "BLINKIT": 1100.0
    },
    "state": "UTTARAKHAND",
-   "units": 1012.0,
-   "value": 1012.0
+   "units": 1100.0,
+   "value": 1100.0
   },
   {
    "by_platform": {
-    "BLINKIT": 372.0
+    "BLINKIT": 405.0
    },
    "state": "RAJASTHAN",
-   "units": 372.0,
-   "value": 372.0
+   "units": 405.0,
+   "value": 405.0
   },
   {
    "by_platform": {
-    "BLINKIT": 257.0
+    "BLINKIT": 272.0
    },
    "state": "GOA",
-   "units": 257.0,
-   "value": 257.0
+   "units": 272.0,
+   "value": 272.0
   },
   {
    "by_platform": {
-    "BLINKIT": 224.0
+    "BLINKIT": 236.0
    },
    "state": "WEST BENGAL",
-   "units": 224.0,
-   "value": 224.0
+   "units": 236.0,
+   "value": 236.0
   },
   {
    "by_platform": {
-    "BLINKIT": 25.0
+    "BLINKIT": 28.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 25.0,
-   "value": 25.0
+   "units": 28.0,
+   "value": 28.0
   },
   {
    "by_platform": {
@@ -525,19 +571,19 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   },
   {
    "by_platform": {
-    "BLINKIT": 5.0
+    "BLINKIT": 7.0
    },
    "state": "GUJARAT",
-   "units": 5.0,
-   "value": 5.0
+   "units": 7.0,
+   "value": 7.0
   },
   {
    "by_platform": {
-    "BLINKIT": 4.0
+    "BLINKIT": 5.0
    },
    "state": "CHHATTISGARH",
-   "units": 4.0,
-   "value": 4.0
+   "units": 5.0,
+   "value": 5.0
   },
   {
    "by_platform": {
@@ -549,8 +595,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   }
  ],
  "sub_categories": [],
- "total_units": 61414.0,
- "total_value": 61414.0,
+ "total_units": 66064.0,
+ "total_value": 66064.0,
  "year": 2026
 }
 ```

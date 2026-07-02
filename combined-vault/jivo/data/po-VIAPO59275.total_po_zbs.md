@@ -17,11 +17,11 @@ Up: [[po-VIAPO59275]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-547.62,16.0,SWIGGY,2026-05-01,69543,575.000625,VIZAG,16.0,2026-04-18,2026-05-03,VIAPO59275,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69543,2026-06-30
-809.52,2.0,SWIGGY,2026-05-01,69544,849.995,VIZAG,4.0,2026-04-18,2026-05-03,VIAPO59275,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69544,2026-06-30
-809.52,4.0,SWIGGY,2026-05-01,69545,849.995,VIZAG,4.0,2026-04-18,2026-05-03,VIAPO59275,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69545,2026-06-30
-866.67,0.0,SWIGGY,2026-05-01,69546,910.00325,VIZAG,40.0,2026-04-18,2026-05-03,VIAPO59275,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69546,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+547.62,16.0,SWIGGY,,2026-05-01,69543,575.000625,VIZAG,16.0,2026-04-18,2026-05-03,VIAPO59275,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69543,2026-07-01
+809.52,2.0,SWIGGY,,2026-05-01,69544,849.995,VIZAG,4.0,2026-04-18,2026-05-03,VIAPO59275,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69544,2026-07-01
+809.52,4.0,SWIGGY,,2026-05-01,69545,849.995,VIZAG,4.0,2026-04-18,2026-05-03,VIAPO59275,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69545,2026-07-01
+866.67,0.0,SWIGGY,,2026-05-01,69546,910.00325,VIZAG,40.0,2026-04-18,2026-05-03,VIAPO59275,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69546,2026-07-01
 ```
 
 ---

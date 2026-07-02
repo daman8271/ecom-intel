@@ -17,11 +17,11 @@ Up: [[po-GCAPO36850]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,32.0,SWIGGY,2026-02-05,62118,429.99625,CENTRAL GOA,32.0,2026-01-29,2026-02-15,GCAPO36850,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62118,2026-06-30
-209.52,48.0,SWIGGY,2026-02-05,62119,219.99625,CENTRAL GOA,48.0,2026-01-29,2026-02-15,GCAPO36850,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62119,2026-06-30
-152.38,40.0,SWIGGY,2026-02-05,62120,159.999,CENTRAL GOA,40.0,2026-01-29,2026-02-15,GCAPO36850,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62120,2026-06-30
-819.05,9.0,SWIGGY,2026-02-05,62121,860.002,CENTRAL GOA,10.0,2026-01-29,2026-02-15,GCAPO36850,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62121,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,32.0,SWIGGY,,2026-02-05,62118,429.99625,CENTRAL GOA,32.0,2026-01-29,2026-02-15,GCAPO36850,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62118,2026-07-01
+209.52,48.0,SWIGGY,,2026-02-05,62119,219.99625,CENTRAL GOA,48.0,2026-01-29,2026-02-15,GCAPO36850,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62119,2026-07-01
+152.38,40.0,SWIGGY,,2026-02-05,62120,159.999,CENTRAL GOA,40.0,2026-01-29,2026-02-15,GCAPO36850,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62120,2026-07-01
+819.05,9.0,SWIGGY,,2026-02-05,62121,860.002,CENTRAL GOA,10.0,2026-01-29,2026-02-15,GCAPO36850,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62121,2026-07-01
 ```
 
 ---

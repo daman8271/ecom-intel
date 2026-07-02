@@ -17,10 +17,10 @@ Up: [[po-MBIPO312547]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-7.62,0.0,SWIGGY,,58732,8.001,BANGALORE,60.0,2025-12-16,2025-12-27,MBIPO312547,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58732,2026-06-30
-12.44,0.0,SWIGGY,,58733,17.41666667,BANGALORE,60.0,2025-12-16,2025-12-27,MBIPO312547,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58733,2026-06-30
-12.44,0.0,SWIGGY,,58734,17.41666667,BANGALORE,60.0,2025-12-16,2025-12-27,MBIPO312547,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58734,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+7.62,0.0,SWIGGY,,,58732,8.001,BANGALORE,60.0,2025-12-16,2025-12-27,MBIPO312547,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58732,2026-07-01
+12.44,0.0,SWIGGY,,,58733,17.41666667,BANGALORE,60.0,2025-12-16,2025-12-27,MBIPO312547,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58733,2026-07-01
+12.44,0.0,SWIGGY,,,58734,17.41666667,BANGALORE,60.0,2025-12-16,2025-12-27,MBIPO312547,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58734,2026-07-01
 ```
 
 ---

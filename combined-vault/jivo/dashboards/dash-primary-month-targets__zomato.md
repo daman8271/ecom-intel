@@ -20,23 +20,23 @@ Up: [[dashboards-index]] · [[pf-zomato]]
 {
  "data": [
   {
-   "achieved_pct": 0.662375,
+   "achieved_pct": 0.8619,
    "created_at": "2026-06-04T09:10:20.276264+00:00",
-   "date": "2026-06-26",
-   "done_ltrs": 26495.0,
+   "date": "2026-06-27",
+   "done_ltrs": 34476.0,
    "dp_ltrs": 40000.0,
-   "drr": 1019.04,
-   "est_ltr": 30571.15,
-   "est_ltr_pct": 0.764279,
+   "drr": 1276.89,
+   "est_ltr": 38306.67,
+   "est_ltr_pct": 0.957667,
    "format": "ZOMATO",
    "id": 28,
    "item_head": "PREMIUM",
    "month": 6,
-   "pending_ltr": 13505.0,
-   "require_drr": 3376.25,
+   "pending_ltr": 5524.0,
+   "require_drr": 1841.33,
    "targets": 40000.0,
    "type": "prim",
-   "updated_at": "2026-06-27T06:27:31.635505+00:00",
+   "updated_at": "2026-06-30T05:24:23.498433+00:00",
    "year": 2026
   },
   {

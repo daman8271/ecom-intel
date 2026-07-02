@@ -17,13 +17,13 @@ Up: [[po-ETPPO56773]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,0.0,SWIGGY,,72687,225.00425,NOIDA,40.0,2026-05-12,2026-05-20,ETPPO56773,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72687,2026-06-30
-1314.29,0.0,SWIGGY,,72688,1380.003333,NOIDA,3.0,2026-05-12,2026-05-20,ETPPO56773,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72688,2026-06-30
-195.24,0.0,SWIGGY,,72689,205.0019444,NOIDA,36.0,2026-05-12,2026-05-20,ETPPO56773,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72689,2026-06-30
-178.1,0.0,SWIGGY,,72690,187.00475,NOIDA,240.0,2026-05-12,2026-05-20,ETPPO56773,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72690,2026-06-30
-161.9,0.0,SWIGGY,,72691,169.99525,NOIDA,40.0,2026-05-12,2026-05-20,ETPPO56773,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72691,2026-06-30
-809.52,0.0,SWIGGY,,72692,849.9958333,NOIDA,12.0,2026-05-12,2026-05-20,ETPPO56773,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72692,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,0.0,SWIGGY,,,72687,225.00425,NOIDA,40.0,2026-05-12,2026-05-20,ETPPO56773,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72687,2026-07-01
+1314.29,0.0,SWIGGY,,,72688,1380.003333,NOIDA,3.0,2026-05-12,2026-05-20,ETPPO56773,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72688,2026-07-01
+195.24,0.0,SWIGGY,,,72689,205.0019444,NOIDA,36.0,2026-05-12,2026-05-20,ETPPO56773,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72689,2026-07-01
+178.1,0.0,SWIGGY,,,72690,187.00475,NOIDA,240.0,2026-05-12,2026-05-20,ETPPO56773,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72690,2026-07-01
+161.9,0.0,SWIGGY,,,72691,169.99525,NOIDA,40.0,2026-05-12,2026-05-20,ETPPO56773,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72691,2026-07-01
+809.52,0.0,SWIGGY,,,72692,849.9958333,NOIDA,12.0,2026-05-12,2026-05-20,ETPPO56773,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:72692,2026-07-01
 ```
 
 ---

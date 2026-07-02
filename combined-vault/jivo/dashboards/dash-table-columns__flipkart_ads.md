@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
   "uploaded_at"
  ],
  "sample": {
-  "ad_spend": 0.0,
+  "ad_spend": 18.0,
   "budgeting_type": "TOTAL_BUDGET",
-  "campaign_budget": 2000.0,
-  "campaign_id": "041CMSCEMNEO",
-  "campaign_name": "Choco flakes CPC",
-  "campaign_status": "ABORTED",
+  "campaign_budget": 1000.0,
+  "campaign_id": "0A9M1T2YMW3E",
+  "campaign_name": "Extra Virgin 5L_ROI",
+  "campaign_status": "LIVE",
   "campaign_type": "PLA",
-  "click_through_rate": 0.0,
-  "clicks": 0.0,
+  "click_through_rate": 0.0157480315,
+  "clicks": 12.0,
   "conversion_rate": 0.0,
-  "date": "2026-05-01",
+  "date": "2026-06-01",
   "format": "FLIPKART",
-  "id": 309,
+  "id": 9774,
   "roi": 0.0,
   "total_converted_units": 0.0,
   "total_revenue": 0.0,
-  "uploaded_at": "2026-06-18T06:46:26.155145Z",
-  "views": 0.0
+  "uploaded_at": "2026-07-01T06:41:57.346060Z",
+  "views": 762.0
  }
 }
 ```

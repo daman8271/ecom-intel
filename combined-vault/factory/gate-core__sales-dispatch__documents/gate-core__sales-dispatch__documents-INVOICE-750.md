@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34429
-- **doc_num:** 706260189
-- **doc_date:** 2026-06-10
-- **doc_total:** 10899.00
+- **doc_entry:** 34609
+- **doc_num:** 706260291
+- **doc_date:** 2026-06-13
+- **doc_total:** 9786.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000125
-- **card_name:** DEL KAWALJEET SINGH
-- **ship_to_code:** DEL KAWALJEET SINGH DELHI
-- **ship_to_address:** NEW DELHI-110059IN
-- **place_of_supply:** DL
+- **card_code:** CUSTA000912
+- **card_name:** AMAZON (B2C -MAY-JULY)
+- **ship_to_code:** AMAZON B2C HARYANA
+- **ship_to_address:** -125001IN
+- **place_of_supply:** HR
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -35,13 +35,13 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-MP
-- **item_summary:** FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS
-- **base_refs:** 1505264717
-- **total_quantity:** 26.000
-- **total_litres:** 40.000
-- **total_boxes:** 64.000
-- **total_weight:** 37.490
+- **warehouses:** DL-EC
+- **item_summary:** SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000060 - EXTRA LIGHT 1 LTR PACK OF 3, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS
+- **base_refs:** 1506264568
+- **total_quantity:** 17.000
+- **total_litres:** 33.000
+- **total_boxes:** 0.000
+- **total_weight:** 19.195
 - **line_count:** 6
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 34429, "sap_invoice_doc_num": "706260189", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 34609, "sap_invoice_doc_num": "706260291", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

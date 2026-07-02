@@ -17,10 +17,10 @@ Up: [[po-JCNPO262237]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,84.0,SWIGGY,2026-06-10,72780,205.0019048,CHENNAI,84.0,2026-05-12,2026-06-11,JCNPO262237,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72780,2026-06-30
-738.1,4.0,SWIGGY,2026-06-10,72781,775.005,CHENNAI,4.0,2026-05-12,2026-06-11,JCNPO262237,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72781,2026-06-30
-200.0,32.0,SWIGGY,2026-06-10,72782,210.0,CHENNAI,32.0,2026-05-12,2026-06-11,JCNPO262237,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72782,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+195.24,84.0,SWIGGY,,2026-06-10,72780,205.0019048,CHENNAI,84.0,2026-05-12,2026-06-11,JCNPO262237,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72780,2026-07-01
+738.1,4.0,SWIGGY,,2026-06-10,72781,775.005,CHENNAI,4.0,2026-05-12,2026-06-11,JCNPO262237,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72781,2026-07-01
+200.0,32.0,SWIGGY,,2026-06-10,72782,210.0,CHENNAI,32.0,2026-05-12,2026-06-11,JCNPO262237,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72782,2026-07-01
 ```
 
 ---

@@ -17,12 +17,12 @@ Up: [[po-GCAPO61817]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,0.0,SWIGGY,,77317,390.0,CENTRAL GOA,32.0,2026-06-22,2026-07-09,GCAPO61817,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77317,2026-06-30
-178.1,0.0,SWIGGY,,77318,187.0,CENTRAL GOA,112.0,2026-06-22,2026-07-09,GCAPO61817,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77318,2026-06-30
-928.57,0.0,SWIGGY,,77319,975.0,CENTRAL GOA,12.0,2026-06-22,2026-07-09,GCAPO61817,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77319,2026-06-30
-149.52,0.0,SWIGGY,,77320,157.0,CENTRAL GOA,40.0,2026-06-22,2026-07-09,GCAPO61817,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77320,2026-06-30
-154.29,0.0,SWIGGY,,77321,162.0,CENTRAL GOA,120.0,2026-06-22,2026-07-09,GCAPO61817,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77321,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+371.43,0.0,SWIGGY,,,77317,390.0015,CENTRAL GOA,32.0,2026-06-22,2026-07-09,GCAPO61817,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77317,2026-07-01
+178.1,0.0,SWIGGY,,,77318,187.005,CENTRAL GOA,112.0,2026-06-22,2026-07-09,GCAPO61817,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77318,2026-07-01
+928.57,0.0,SWIGGY,,,77319,974.9985,CENTRAL GOA,12.0,2026-06-22,2026-07-09,GCAPO61817,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77319,2026-07-01
+149.52,0.0,SWIGGY,,,77320,156.996,CENTRAL GOA,40.0,2026-06-22,2026-07-09,GCAPO61817,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77320,2026-07-01
+154.29,0.0,SWIGGY,,,77321,162.0045,CENTRAL GOA,120.0,2026-06-22,2026-07-09,GCAPO61817,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77321,2026-07-01
 ```
 
 ---

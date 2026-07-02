@@ -17,12 +17,12 @@ Up: [[po-VIAPO72481]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-344.76,0.0,SWIGGY,2026-06-25,76515,362.0,VIZAG,120.0,2026-06-15,2026-07-17,VIAPO72481,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76515,2026-06-30
-723.81,0.0,SWIGGY,2026-06-25,76516,760.0,VIZAG,12.0,2026-06-15,2026-07-17,VIAPO72481,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76516,2026-06-30
-733.33,10.0,SWIGGY,2026-06-25,76517,770.0,VIZAG,10.0,2026-06-15,2026-07-17,VIAPO72481,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76517,2026-06-30
-747.62,0.0,SWIGGY,2026-06-25,76518,785.0,VIZAG,4.0,2026-06-15,2026-07-17,VIAPO72481,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76518,2026-06-30
-147.62,32.0,SWIGGY,2026-06-25,76519,155.0,VIZAG,32.0,2026-06-15,2026-07-17,VIAPO72481,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76519,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+344.76,0.0,SWIGGY,,2026-06-25,76515,361.998,VIZAG,120.0,2026-06-15,2026-07-17,VIAPO72481,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76515,2026-07-01
+723.81,0.0,SWIGGY,,2026-06-25,76516,760.0005,VIZAG,12.0,2026-06-15,2026-07-17,VIAPO72481,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76516,2026-07-01
+733.33,10.0,SWIGGY,,2026-06-25,76517,769.9965,VIZAG,10.0,2026-06-15,2026-07-17,VIAPO72481,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76517,2026-07-01
+747.62,0.0,SWIGGY,,2026-06-25,76518,785.001,VIZAG,4.0,2026-06-15,2026-07-17,VIAPO72481,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76518,2026-07-01
+147.62,32.0,SWIGGY,,2026-06-25,76519,155.001,VIZAG,32.0,2026-06-15,2026-07-17,VIAPO72481,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76519,2026-07-01
 ```
 
 ---

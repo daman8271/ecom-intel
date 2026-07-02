@@ -17,9 +17,9 @@ Up: [[po-CADPO176582]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,6.0,SWIGGY,2026-01-17,60706,1499.998333,AHMEDABAD,6.0,2026-01-08,2026-01-17,CADPO176582,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60706,2026-06-30
-690.48,104.0,SWIGGY,2026-01-17,60707,725.0038462,AHMEDABAD,104.0,2026-01-08,2026-01-17,CADPO176582,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60707,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1428.57,6.0,SWIGGY,,2026-01-17,60706,1499.998333,AHMEDABAD,6.0,2026-01-08,2026-01-17,CADPO176582,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60706,2026-07-01
+690.48,104.0,SWIGGY,,2026-01-17,60707,725.0038462,AHMEDABAD,104.0,2026-01-08,2026-01-17,CADPO176582,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60707,2026-07-01
 ```
 
 ---

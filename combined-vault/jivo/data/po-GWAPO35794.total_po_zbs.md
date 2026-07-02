@@ -17,12 +17,12 @@ Up: [[po-GWAPO35794]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,77195,500.0,GUWAHATI,16.0,2026-06-20,2026-07-21,GWAPO35794,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77195,2026-06-30
-371.43,0.0,SWIGGY,,77196,390.0,GUWAHATI,16.0,2026-06-20,2026-07-21,GWAPO35794,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77196,2026-06-30
-144.76,0.0,SWIGGY,,77197,152.0,GUWAHATI,80.0,2026-06-20,2026-07-21,GWAPO35794,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77197,2026-06-30
-27.5,0.0,SWIGGY,,77198,38.5,GUWAHATI,12.0,2026-06-20,2026-07-21,GWAPO35794,,900724,Jivo  Fizzy Flavoured Soda (Lemon) 750.0 ml,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77198,2026-06-30
-2285.72,0.0,SWIGGY,,77199,2400.0,GUWAHATI,4.0,2026-06-20,2026-07-21,GWAPO35794,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77199,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,0.0,SWIGGY,,,77195,499.9995,GUWAHATI,16.0,2026-06-20,2026-07-21,GWAPO35794,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77195,2026-07-01
+371.43,0.0,SWIGGY,,,77196,390.0015,GUWAHATI,16.0,2026-06-20,2026-07-21,GWAPO35794,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77196,2026-07-01
+144.76,0.0,SWIGGY,,,77197,151.998,GUWAHATI,80.0,2026-06-20,2026-07-21,GWAPO35794,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77197,2026-07-01
+27.5,0.0,SWIGGY,,,77198,38.5,GUWAHATI,12.0,2026-06-20,2026-07-21,GWAPO35794,,900724,Jivo  Fizzy Flavoured Soda (Lemon) 750.0 ml,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77198,2026-07-01
+2285.72,0.0,SWIGGY,,,77199,2400.006,GUWAHATI,4.0,2026-06-20,2026-07-21,GWAPO35794,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77199,2026-07-01
 ```
 
 ---

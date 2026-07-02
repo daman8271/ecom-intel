@@ -17,12 +17,12 @@ Up: [[po-CIMPO69059]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,2025-12-20,58608,1500.0,MUMBAI,3.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58608,2026-06-30
-409.52,64.0,SWIGGY,2025-12-20,58609,429.99625,MUMBAI,64.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58609,2026-06-30
-1047.62,0.0,SWIGGY,2025-12-20,58610,1100.000833,MUMBAI,24.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58610,2026-06-30
-533.33,0.0,SWIGGY,2025-12-20,58611,559.9968182,MUMBAI,22.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58611,2026-06-30
-209.52,32.0,SWIGGY,2025-12-20,58612,219.99625,MUMBAI,32.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58612,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1428.57,0.0,SWIGGY,,2025-12-20,58608,1499.9985,MUMBAI,3.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58608,2026-07-01
+409.52,64.0,SWIGGY,,2025-12-20,58609,429.99625,MUMBAI,64.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58609,2026-07-01
+1047.62,0.0,SWIGGY,,2025-12-20,58610,1100.000833,MUMBAI,24.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58610,2026-07-01
+533.33,0.0,SWIGGY,,2025-12-20,58611,559.9968182,MUMBAI,22.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58611,2026-07-01
+209.52,32.0,SWIGGY,,2025-12-20,58612,219.99625,MUMBAI,32.0,2025-12-13,2025-12-22,CIMPO69059,Appointment Done,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58612,2026-07-01
 ```
 
 ---

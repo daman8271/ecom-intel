@@ -17,12 +17,12 @@ Up: [[po-ETPPO39792]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,0.0,SWIGGY,,66179,1100.0,NOIDA,4.0,2026-03-19,2026-03-28,ETPPO39792,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66179,2026-06-30
-533.33,0.0,SWIGGY,,66180,559.9967213,NOIDA,61.0,2026-03-19,2026-03-28,ETPPO39792,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66180,2026-06-30
-147.62,0.0,SWIGGY,,66181,155.001,NOIDA,40.0,2026-03-19,2026-03-28,ETPPO39792,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66181,2026-06-30
-761.9,0.0,SWIGGY,,66182,799.995,NOIDA,4.0,2026-03-19,2026-03-28,ETPPO39792,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66182,2026-06-30
-2047.62,0.0,SWIGGY,,66183,2150.001071,NOIDA,28.0,2026-03-19,2026-03-28,ETPPO39792,,79292,Jivo Pomace Olive Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66183,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,0.0,SWIGGY,,,66179,1100.001,NOIDA,4.0,2026-03-19,2026-03-28,ETPPO39792,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66179,2026-07-01
+533.33,0.0,SWIGGY,,,66180,559.9967213,NOIDA,61.0,2026-03-19,2026-03-28,ETPPO39792,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66180,2026-07-01
+147.62,0.0,SWIGGY,,,66181,155.001,NOIDA,40.0,2026-03-19,2026-03-28,ETPPO39792,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66181,2026-07-01
+761.9,0.0,SWIGGY,,,66182,799.995,NOIDA,4.0,2026-03-19,2026-03-28,ETPPO39792,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66182,2026-07-01
+2047.62,0.0,SWIGGY,,,66183,2150.001071,NOIDA,28.0,2026-03-19,2026-03-28,ETPPO39792,,79292,Jivo Pomace Olive Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:66183,2026-07-01
 ```
 
 ---

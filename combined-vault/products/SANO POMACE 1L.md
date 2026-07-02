@@ -73,6 +73,5 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000150`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000150]]
-- **3 boxes:** [[box-16604]] · [[box-16639]] · [[box-16645]]
 - **1 boxes:** [[barcode__dispatch__reports__boxes-16639]]
 

@@ -17,12 +17,12 @@ Up: [[po-JPAPO59160]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,0.0,SWIGGY,,78012,195.0,JAIPUR,528.0,2026-06-27,2026-07-06,JPAPO59160,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78012,2026-06-30
-890.48,0.0,SWIGGY,,78013,935.0,JAIPUR,48.0,2026-06-27,2026-07-06,JPAPO59160,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78013,2026-06-30
-771.43,0.0,SWIGGY,,78014,810.0,JAIPUR,24.0,2026-06-27,2026-07-06,JPAPO59160,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78014,2026-06-30
-154.29,0.0,SWIGGY,,78015,162.0,JAIPUR,20.0,2026-06-27,2026-07-06,JPAPO59160,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78015,2026-06-30
-200.0,0.0,SWIGGY,,78016,210.0,JAIPUR,16.0,2026-06-27,2026-07-06,JPAPO59160,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78016,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+185.71,0.0,SWIGGY,,,78012,194.9955,JAIPUR,528.0,2026-06-27,2026-07-06,JPAPO59160,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78012,2026-07-01
+890.48,0.0,SWIGGY,,,78013,935.004,JAIPUR,48.0,2026-06-27,2026-07-06,JPAPO59160,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78013,2026-07-01
+771.43,0.0,SWIGGY,,,78014,810.0015,JAIPUR,24.0,2026-06-27,2026-07-06,JPAPO59160,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78014,2026-07-01
+154.29,0.0,SWIGGY,,,78015,162.0045,JAIPUR,20.0,2026-06-27,2026-07-06,JPAPO59160,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78015,2026-07-01
+200.0,0.0,SWIGGY,,,78016,210.0,JAIPUR,16.0,2026-06-27,2026-07-06,JPAPO59160,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:78016,2026-07-01
 ```
 
 ---

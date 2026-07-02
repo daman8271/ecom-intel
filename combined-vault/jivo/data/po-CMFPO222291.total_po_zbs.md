@@ -17,8 +17,8 @@ Up: [[po-CMFPO222291]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-642.86,0.0,SWIGGY,,52048,675.0025,MUMBAI,4.0,2025-09-13,2025-09-24,CMFPO222291,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52048,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+642.86,0.0,SWIGGY,,,52048,675.0025,MUMBAI,4.0,2025-09-13,2025-09-24,CMFPO222291,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52048,2026-07-01
 ```
 
 ---

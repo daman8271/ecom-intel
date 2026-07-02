@@ -17,10 +17,10 @@ Up: [[po-VIAPO62857]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,20.0,SWIGGY,2026-06-01,71835,225.0045,VIZAG,20.0,2026-05-06,2026-06-04,VIAPO62857,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71835,2026-06-30
-178.1,0.0,SWIGGY,2026-06-01,71836,187.00475,VIZAG,80.0,2026-05-06,2026-06-04,VIAPO62857,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71836,2026-06-30
-147.62,48.0,SWIGGY,2026-06-01,71837,155.0010417,VIZAG,48.0,2026-05-06,2026-06-04,VIAPO62857,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71837,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,20.0,SWIGGY,,2026-06-01,71835,225.0045,VIZAG,20.0,2026-05-06,2026-06-04,VIAPO62857,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71835,2026-07-01
+178.1,0.0,SWIGGY,,2026-06-01,71836,187.00475,VIZAG,80.0,2026-05-06,2026-06-04,VIAPO62857,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71836,2026-07-01
+147.62,48.0,SWIGGY,,2026-06-01,71837,155.0010417,VIZAG,48.0,2026-05-06,2026-06-04,VIAPO62857,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71837,2026-07-01
 ```
 
 ---

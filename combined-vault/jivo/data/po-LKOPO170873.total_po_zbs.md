@@ -17,10 +17,10 @@ Up: [[po-LKOPO170873]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-890.48,0.0,SWIGGY,,74180,935.00375,LUCKNOW,24.0,2026-05-23,2026-06-03,LKOPO170873,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74180,2026-06-30
-809.52,0.0,SWIGGY,,74181,849.995,LUCKNOW,4.0,2026-05-23,2026-06-03,LKOPO170873,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74181,2026-06-30
-1952.38,0.0,SWIGGY,,74182,2049.998864,LUCKNOW,44.0,2026-05-23,2026-06-03,LKOPO170873,,79292,Jivo Pomace Olive Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74182,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+890.48,0.0,SWIGGY,,,74180,935.00375,LUCKNOW,24.0,2026-05-23,2026-06-03,LKOPO170873,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74180,2026-07-01
+809.52,0.0,SWIGGY,,,74181,849.995,LUCKNOW,4.0,2026-05-23,2026-06-03,LKOPO170873,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74181,2026-07-01
+1952.38,0.0,SWIGGY,,,74182,2049.998864,LUCKNOW,44.0,2026-05-23,2026-06-03,LKOPO170873,,79292,Jivo Pomace Olive Oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74182,2026-07-01
 ```
 
 ---

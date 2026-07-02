@@ -17,12 +17,12 @@ Up: [[po-CMFPO307739]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-190.48,48.0,SWIGGY,2026-04-16,68414,200.00375,MUMBAI,48.0,2026-04-07,2026-04-16,CMFPO307739,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68414,2026-06-30
-1076.19,10.0,SWIGGY,2026-04-16,68415,1129.999,MUMBAI,10.0,2026-04-07,2026-04-16,CMFPO307739,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68415,2026-06-30
-542.86,0.0,SWIGGY,2026-04-16,68416,570.0033333,MUMBAI,3.0,2026-04-07,2026-04-16,CMFPO307739,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68416,2026-06-30
-173.33,0.0,SWIGGY,2026-04-16,68417,181.9966667,MUMBAI,60.0,2026-04-07,2026-04-16,CMFPO307739,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68417,2026-06-30
-2690.47,4.0,SWIGGY,2026-04-16,68418,2824.995,MUMBAI,4.0,2026-04-07,2026-04-16,CMFPO307739,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68418,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+190.48,48.0,SWIGGY,,2026-04-16,68414,200.00375,MUMBAI,48.0,2026-04-07,2026-04-16,CMFPO307739,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68414,2026-07-01
+1076.19,10.0,SWIGGY,,2026-04-16,68415,1129.999,MUMBAI,10.0,2026-04-07,2026-04-16,CMFPO307739,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68415,2026-07-01
+542.86,0.0,SWIGGY,,2026-04-16,68416,570.0033333,MUMBAI,3.0,2026-04-07,2026-04-16,CMFPO307739,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68416,2026-07-01
+173.33,0.0,SWIGGY,,2026-04-16,68417,181.9966667,MUMBAI,60.0,2026-04-07,2026-04-16,CMFPO307739,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68417,2026-07-01
+2690.47,4.0,SWIGGY,,2026-04-16,68418,2824.995,MUMBAI,4.0,2026-04-07,2026-04-16,CMFPO307739,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:68418,2026-07-01
 ```
 
 ---

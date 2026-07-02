@@ -17,8 +17,8 @@ Up: [[po-ETPPO14226]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-533.33,0.0,SWIGGY,,59096,559.9967347,NOIDA,49.0,2025-12-19,2026-01-11,ETPPO14226,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59096,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+533.33,0.0,SWIGGY,,,59096,559.9967347,NOIDA,49.0,2025-12-19,2026-01-11,ETPPO14226,,570572,Jivo Desi Ghee 1KG 1.0 kg,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:59096,2026-07-01
 ```
 
 ---

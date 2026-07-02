@@ -21,6 +21,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart_grocery]]
 {
  "brands": [],
  "categories": [],
+ "cities": [],
  "errors": [],
  "filter_options": {
   "brands": [
@@ -238,6 +239,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart_grocery]]
    {
     "category": "MUSTARD",
     "sub_category": "MUSTARD KACCHI GHANI"
+   },
+   {
+    "category": "MUSTARD",
+    "sub_category": "MUSTARD KACHI GHANI"
    },
    {
     "category": "MUSTARD",

@@ -17,11 +17,11 @@ Up: [[po-CADPO180220]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,16.0,SWIGGY,2026-02-05,62029,429.99625,AHMEDABAD,16.0,2026-01-26,2026-02-05,CADPO180220,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62029,2026-06-30
-209.52,112.0,SWIGGY,2026-02-05,62030,219.9961719,AHMEDABAD,128.0,2026-01-26,2026-02-05,CADPO180220,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62030,2026-06-30
-1047.62,12.0,SWIGGY,2026-02-05,62031,1100.000833,AHMEDABAD,12.0,2026-01-26,2026-02-05,CADPO180220,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62031,2026-06-30
-2619.05,0.0,SWIGGY,2026-02-05,62032,2750.0025,AHMEDABAD,16.0,2026-01-26,2026-02-05,CADPO180220,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62032,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,16.0,SWIGGY,,2026-02-05,62029,429.99625,AHMEDABAD,16.0,2026-01-26,2026-02-05,CADPO180220,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62029,2026-07-01
+209.52,112.0,SWIGGY,,2026-02-05,62030,219.9961719,AHMEDABAD,128.0,2026-01-26,2026-02-05,CADPO180220,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62030,2026-07-01
+1047.62,12.0,SWIGGY,,2026-02-05,62031,1100.000833,AHMEDABAD,12.0,2026-01-26,2026-02-05,CADPO180220,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62031,2026-07-01
+2619.05,0.0,SWIGGY,,2026-02-05,62032,2750.0025,AHMEDABAD,16.0,2026-01-26,2026-02-05,CADPO180220,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:62032,2026-07-01
 ```
 
 ---

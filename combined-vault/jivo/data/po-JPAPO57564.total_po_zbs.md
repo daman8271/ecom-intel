@@ -17,10 +17,10 @@ Up: [[po-JPAPO57564]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,,SWIGGY,,77141,390.00125,JAIPUR,16.0,2026-06-18,2026-06-27,JPAPO57564,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77141,2026-06-30
-195.24,,SWIGGY,,77142,205.0025,JAIPUR,8.0,2026-06-18,2026-06-27,JPAPO57564,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77142,2026-06-30
-185.71,,SWIGGY,,77143,194.9957176,JAIPUR,432.0,2026-06-18,2026-06-27,JPAPO57564,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77143,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+371.43,,SWIGGY,,,77141,390.00125,JAIPUR,16.0,2026-06-18,2026-06-27,JPAPO57564,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77141,2026-07-01
+195.24,,SWIGGY,,,77142,205.0025,JAIPUR,8.0,2026-06-18,2026-06-27,JPAPO57564,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77142,2026-07-01
+185.71,,SWIGGY,,,77143,194.9957176,JAIPUR,432.0,2026-06-18,2026-06-27,JPAPO57564,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77143,2026-07-01
 ```
 
 ---

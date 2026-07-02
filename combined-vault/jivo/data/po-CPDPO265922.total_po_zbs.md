@@ -17,11 +17,11 @@ Up: [[po-CPDPO265922]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1314.29,27.0,SWIGGY,2026-05-04,70504,1380.004444,PUNE,27.0,2026-04-24,2026-05-04,CPDPO265922,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70504,2026-06-30
-514.29,16.0,SWIGGY,2026-05-04,70505,540.004375,PUNE,16.0,2026-04-24,2026-05-04,CPDPO265922,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70505,2026-06-30
-200.0,608.0,SWIGGY,2026-05-04,70506,210.0,PUNE,608.0,2026-04-24,2026-05-04,CPDPO265922,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70506,2026-06-30
-161.9,40.0,SWIGGY,2026-05-04,70507,169.99525,PUNE,40.0,2026-04-24,2026-05-04,CPDPO265922,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70507,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1314.29,27.0,SWIGGY,,2026-05-04,70504,1380.004444,PUNE,27.0,2026-04-24,2026-05-04,CPDPO265922,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70504,2026-07-01
+514.29,16.0,SWIGGY,,2026-05-04,70505,540.004375,PUNE,16.0,2026-04-24,2026-05-04,CPDPO265922,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70505,2026-07-01
+200.0,608.0,SWIGGY,,2026-05-04,70506,210.0,PUNE,608.0,2026-04-24,2026-05-04,CPDPO265922,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70506,2026-07-01
+161.9,40.0,SWIGGY,,2026-05-04,70507,169.99525,PUNE,40.0,2026-04-24,2026-05-04,CPDPO265922,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:70507,2026-07-01
 ```
 
 ---

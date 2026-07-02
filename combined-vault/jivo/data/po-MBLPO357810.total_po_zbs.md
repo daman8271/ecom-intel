@@ -17,10 +17,10 @@ Up: [[po-MBLPO357810]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-144.76,240.0,SWIGGY,2026-01-28,61512,151.9980833,BANGALORE,240.0,2026-01-17,2026-01-29,MBLPO357810,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61512,2026-06-30
-761.91,12.0,SWIGGY,2026-01-28,61513,800.005,BANGALORE,12.0,2026-01-17,2026-01-29,MBLPO357810,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61513,2026-06-30
-209.52,16.0,SWIGGY,2026-01-28,61514,219.99625,BANGALORE,16.0,2026-01-17,2026-01-29,MBLPO357810,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61514,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+144.76,240.0,SWIGGY,,2026-01-28,61512,151.9980833,BANGALORE,240.0,2026-01-17,2026-01-29,MBLPO357810,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61512,2026-07-01
+761.91,12.0,SWIGGY,,2026-01-28,61513,800.005,BANGALORE,12.0,2026-01-17,2026-01-29,MBLPO357810,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61513,2026-07-01
+209.52,16.0,SWIGGY,,2026-01-28,61514,219.99625,BANGALORE,16.0,2026-01-17,2026-01-29,MBLPO357810,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:61514,2026-07-01
 ```
 
 ---

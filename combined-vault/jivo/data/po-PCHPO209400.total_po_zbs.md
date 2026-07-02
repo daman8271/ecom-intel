@@ -17,12 +17,12 @@ Up: [[po-PCHPO209400]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,12.0,SWIGGY,2026-06-25,77248,1290.0,CHANDIGARH,12.0,2026-06-20,2026-07-02,PCHPO209400,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77248,2026-06-30
-476.19,0.0,SWIGGY,2026-06-25,77249,500.0,CHANDIGARH,16.0,2026-06-20,2026-07-02,PCHPO209400,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77249,2026-06-30
-195.24,16.0,SWIGGY,2026-06-25,77250,205.0,CHANDIGARH,28.0,2026-06-20,2026-07-02,PCHPO209400,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77250,2026-06-30
-733.33,10.0,SWIGGY,2026-06-25,77251,770.0,CHANDIGARH,10.0,2026-06-20,2026-07-02,PCHPO209400,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77251,2026-06-30
-200.0,16.0,SWIGGY,2026-06-25,77252,210.0,CHANDIGARH,16.0,2026-06-20,2026-07-02,PCHPO209400,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77252,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1228.57,12.0,SWIGGY,,2026-06-25,77248,1289.9985,CHANDIGARH,12.0,2026-06-20,2026-07-02,PCHPO209400,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77248,2026-07-01
+476.19,0.0,SWIGGY,,2026-06-25,77249,499.9995,CHANDIGARH,16.0,2026-06-20,2026-07-02,PCHPO209400,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77249,2026-07-01
+195.24,16.0,SWIGGY,,2026-06-25,77250,205.002,CHANDIGARH,28.0,2026-06-20,2026-07-02,PCHPO209400,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77250,2026-07-01
+733.33,10.0,SWIGGY,,2026-06-25,77251,769.9965,CHANDIGARH,10.0,2026-06-20,2026-07-02,PCHPO209400,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77251,2026-07-01
+200.0,16.0,SWIGGY,,2026-06-25,77252,210.0,CHANDIGARH,16.0,2026-06-20,2026-07-02,PCHPO209400,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-27,total_po_zbs:77252,2026-07-01
 ```
 
 ---

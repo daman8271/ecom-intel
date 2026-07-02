@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR63F9826"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR63F9826
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35219
-- **doc_num:** 706260637
-- **doc_date:** 2026-06-23
-- **doc_total:** 48360.00
+- **doc_entry:** 35374
+- **doc_num:** 706260738
+- **doc_date:** 2026-06-25
+- **doc_total:** 1278730.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C ANDHRA PRADESH
-- **ship_to_address:** ANDHRA PRADESH-522403IN
-- **place_of_supply:** AP
-- **bp_gstin:** 
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
+- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR63F9826
+- **transporter_name:** Amazon vehicle pickup
+- **bilty_no:** 1235
+- **bilty_date:** 2026-06-26
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, FG0000376 - SESAME OIL 1 LTR 20 PCS, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000005 - CANOLA 1 LTR, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000009 - CANOLA 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000024 - COCONUT  1 LTR, FG0000116 - EXTRA VIRGIN COCONUT OIL 1 LTR 16 PCS, SL0000038 - COLD PRESS 5 LTR + POMACE 1 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000040 - COLD PRESS GROUDNUT 5 LTR + 1 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000043 - COLD PRESS GROUNDNUT  1 LTR, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000061 - EXTRA LIGHT 2 LTR, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000075 - EXTRA VIRGIN 5 LTR, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000083 - EXTRA VIRGIN COCONUT  500 ML, FG0000157 - EXTRA VIRGIN COCONUT OIL 500 MLS 24 PCS, SL0000096 - JIVO GOLD  5 LTR + 1 LTR, FG0000128 - JIVO GOLD 5 LTR 4 PCS, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000122 - MUSTARD 5 LTR + CANOLA 1 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000125 - POMACE 1 LTR, FG0000028 - POMACE OLIVE 1 LTR 16 PCS
-- **base_refs:** 1506264631
-- **total_quantity:** 269.000
-- **total_litres:** 401.900
+- **warehouses:** DL-FG
+- **item_summary:** FG0000385 - YELLOW MUSTARD OIL 5 LTR TIN 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS
+- **base_refs:** 1706264675
+- **total_quantity:** 1851.000
+- **total_litres:** 6759.000
 - **total_boxes:** 0.000
-- **total_weight:** 206.656
-- **line_count:** 43
+- **total_weight:** 6652.716
+- **line_count:** 5
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35219, "sap_invoice_doc_num": "706260637", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 618, "sap_invoice_doc_entry": 35374, "sap_invoice_doc_num": "706260738", "invoice_number": "706260738", "eway_bill": "771646206689", "invoice_weight": "6652.716", "invoice_amount": "1278730.00", "place_of_supply": "HR", "location": "Delivery Address: DED5 R K WorldInfocom Pvt Ltd Emporium Industrial Park India Pvt Ltd ESR Sohna Logistics Park, Village Rahaka GURUGRAM 122103 India", "product_variety": "Oil", "total_litres": "6759.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 322, "transporter_id": 81, "driver_id": null, "linked_vehicle_entry_id": 1136, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-26T15:31:38.952277Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-26", "priority": "HIGH", "transporter_name": "Amazon Freight (ASSPL)", "transporter_gstin": "29AAICA3918J1ZE", "contact_person": "rishabh", "mobile_no": "8802345622", "vehicle_no": "HR63F9826", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1235", "bilty_date": "2026-06-26", "bilty_attachment": "/media/sales_dispatch/attachments/HR63F9826--GRN.pdf", "bilty_attachment_name": "HR63F9826--GRN.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-25T18:41:17.994456+05:30", "updated_at": "2026-06-26T21:01:38.962162+05:30"}
   ```

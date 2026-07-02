@@ -20,6 +20,14 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
 {
  "available_dates": [
   {
+   "date": "2026-07-01",
+   "rows": 719
+  },
+  {
+   "date": "2026-06-30",
+   "rows": 721
+  },
+  {
    "date": "2026-06-29",
    "rows": 721
   },
@@ -130,212 +138,204 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   {
    "date": "2026-05-25",
    "rows": 635
-  },
-  {
-   "date": "2026-05-23",
-   "rows": 633
-  },
-  {
-   "date": "2026-05-22",
-   "rows": 632
   }
  ],
  "dashboard_title": "Swiggy SOH/DOH Dashboard",
  "defaulted_to_latest": true,
- "effective_date": "2026-06-29",
- "elapsed_day": 28,
+ "effective_date": "2026-07-01",
+ "elapsed_day": 0,
  "format": "SWIGGY",
- "max_sales_date": "2026-06-28",
- "month_start": "2026-06-01",
+ "max_sales_date": null,
+ "month_start": "2026-07-01",
  "platform": "swiggy",
- "requested_date": "2026-06-29",
+ "requested_date": "2026-07-01",
  "rows": [
   {
-   "doh": 14.8960414354421,
-   "drr_ltr": 95.78571428571429,
-   "drr_units": 96.53571428571429,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "CANOLA 1L",
    "item": "CANOLA 1L",
-   "ltr_sold": 2682.0,
-   "quantity": 2703.0,
-   "soh_ltr": 1438.0,
-   "soh_units": 1438.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 1429.0,
+   "soh_units": 1429.0
   },
   {
-   "doh": 39.096774193548384,
-   "drr_ltr": 46.5,
-   "drr_units": 7.75,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "CANOLA 5+1L",
    "item": "CANOLA 5+1L",
-   "ltr_sold": 1302.0,
-   "quantity": 217.0,
-   "soh_ltr": 1818.0,
-   "soh_units": 303.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 1914.0,
+   "soh_units": 319.0
   },
   {
-   "doh": 476.0,
-   "drr_ltr": 0.03571428571428571,
-   "drr_units": 0.03571428571428571,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "DESI GHEE 1L",
    "item": "DESI GHEE 1L",
-   "ltr_sold": 1.0,
-   "quantity": 1.0,
-   "soh_ltr": 17.0,
-   "soh_units": 17.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 18.0,
+   "soh_units": 18.0
   },
   {
-   "doh": 15.54119547657512,
-   "drr_ltr": 145.89285714285714,
-   "drr_units": 154.75,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "EXTRA LIGHT 1L",
    "item": "EXTRA LIGHT 1L",
-   "ltr_sold": 4085.0,
-   "quantity": 4333.0,
-   "soh_ltr": 2405.0,
-   "soh_units": 2405.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 2330.0,
+   "soh_units": 2330.0
   },
   {
-   "doh": 22.4,
-   "drr_ltr": 22.857142857142858,
-   "drr_units": 11.428571428571429,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "EXTRA LIGHT 2L",
    "item": "EXTRA LIGHT 2L",
-   "ltr_sold": 640.0,
-   "quantity": 320.0,
-   "soh_ltr": 512.0,
-   "soh_units": 256.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 546.0,
+   "soh_units": 273.0
   },
   {
-   "doh": 248.20645161290324,
-   "drr_ltr": 27.678571428571427,
-   "drr_units": 5.535714285714286,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "EXTRA LIGHT 5L",
    "item": "EXTRA LIGHT 5L",
-   "ltr_sold": 775.0,
-   "quantity": 155.0,
-   "soh_ltr": 6870.0,
-   "soh_units": 1374.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 6865.0,
+   "soh_units": 1373.0
   },
   {
-   "doh": 115.77304964539007,
-   "drr_ltr": 5.035714285714286,
-   "drr_units": 5.035714285714286,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "EXTRA VIRGIN 1L",
    "item": "EXTRA VIRGIN 1L",
-   "ltr_sold": 141.0,
-   "quantity": 141.0,
-   "soh_ltr": 583.0,
-   "soh_units": 583.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 609.0,
+   "soh_units": 609.0
   },
   {
-   "doh": 20.703030303030303,
-   "drr_ltr": 22.098214285714285,
-   "drr_units": 88.39285714285714,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "EXTRA VIRGIN 250ML",
    "item": "EXTRA VIRGIN 250ML",
-   "ltr_sold": 618.75,
-   "quantity": 2475.0,
-   "soh_ltr": 457.5,
-   "soh_units": 1830.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 396.75,
+   "soh_units": 1587.0
   },
   {
-   "doh": 32.44238805970149,
-   "drr_ltr": 239.28571428571428,
-   "drr_units": 239.28571428571428,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "GOLD 1L",
    "item": "GOLD 1L",
-   "ltr_sold": 6700.0,
-   "quantity": 6700.0,
-   "soh_ltr": 7763.0,
-   "soh_units": 7763.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 7477.0,
+   "soh_units": 7477.0
   },
   {
-   "doh": 43.27937336814621,
-   "drr_ltr": 68.39285714285714,
-   "drr_units": 13.678571428571429,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "GOLD 5L",
    "item": "GOLD 5L",
-   "ltr_sold": 1915.0,
-   "quantity": 383.0,
-   "soh_ltr": 2960.0,
-   "soh_units": 592.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 2620.0,
+   "soh_units": 524.0
   },
   {
-   "doh": 10.209049959049958,
-   "drr_ltr": 2093.1428571428573,
-   "drr_units": 2093.1428571428573,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "GROUNDNUT 1L",
    "item": "GROUNDNUT 1L",
-   "ltr_sold": 58608.0,
-   "quantity": 58608.0,
-   "soh_ltr": 21369.0,
-   "soh_units": 21369.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 24630.0,
+   "soh_units": 24630.0
   },
   {
-   "doh": 7.235431235431236,
-   "drr_ltr": 536.25,
-   "drr_units": 107.25,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "GROUNDNUT 5L",
    "item": "GROUNDNUT 5L",
-   "ltr_sold": 15015.0,
-   "quantity": 3003.0,
-   "soh_ltr": 3880.0,
-   "soh_units": 776.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 4400.0,
+   "soh_units": 880.0
   },
   {
-   "doh": 12.827135267674704,
-   "drr_ltr": 87.39285714285714,
-   "drr_units": 87.39285714285714,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "JIVO POMACE 1L",
    "item": "JIVO POMACE 1L",
-   "ltr_sold": 2447.0,
-   "quantity": 2447.0,
-   "soh_ltr": 1121.0,
-   "soh_units": 1121.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 1085.0,
+   "soh_units": 1085.0
   },
   {
-   "doh": 40.72727272727273,
-   "drr_ltr": 23.571428571428573,
-   "drr_units": 11.785714285714286,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "JIVO POMACE 2L",
    "item": "JIVO POMACE 2L",
-   "ltr_sold": 660.0,
-   "quantity": 330.0,
-   "soh_ltr": 960.0,
-   "soh_units": 480.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 912.0,
+   "soh_units": 456.0
   },
   {
-   "doh": 137.68595041322314,
-   "drr_ltr": 21.607142857142858,
-   "drr_units": 4.321428571428571,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "JIVO POMACE 5L",
    "item": "JIVO POMACE 5L",
-   "ltr_sold": 605.0,
-   "quantity": 121.0,
-   "soh_ltr": 2975.0,
-   "soh_units": 595.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 2965.0,
+   "soh_units": 593.0
   },
   {
-   "doh": 8.653987153376155,
-   "drr_ltr": 1139.8214285714287,
-   "drr_units": 1139.8214285714287,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "MUSTARD 1L",
    "item": "MUSTARD 1L",
-   "ltr_sold": 31915.0,
-   "quantity": 31915.0,
-   "soh_ltr": 9864.0,
-   "soh_units": 9864.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 9710.0,
+   "soh_units": 9710.0
   },
   {
-   "doh": 28.692134831460674,
-   "drr_ltr": 79.46428571428571,
-   "drr_units": 15.892857142857142,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "MUSTARD 5L",
    "item": "MUSTARD 5L",
-   "ltr_sold": 2225.0,
-   "quantity": 445.0,
-   "soh_ltr": 2280.0,
-   "soh_units": 456.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 2090.0,
+   "soh_units": 418.0
   },
   {
    "doh": 0.0,
@@ -349,37 +349,37 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "soh_units": 70.0
   },
   {
-   "doh": 26.355555555555554,
-   "drr_ltr": 67.5,
-   "drr_units": 67.5,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "RICE BRAN 1L",
    "item": "RICE BRAN 1L",
-   "ltr_sold": 1890.0,
-   "quantity": 1890.0,
-   "soh_ltr": 1779.0,
-   "soh_units": 1779.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 1719.0,
+   "soh_units": 1719.0
   },
   {
-   "doh": 19.724137931034484,
-   "drr_ltr": 36.25,
-   "drr_units": 7.25,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "RICE BRAN 5L",
    "item": "RICE BRAN 5L",
-   "ltr_sold": 1015.0,
-   "quantity": 203.0,
-   "soh_ltr": 715.0,
-   "soh_units": 143.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 700.0,
+   "soh_units": 140.0
   },
   {
-   "doh": 67.66874443455032,
-   "drr_ltr": 40.107142857142854,
-   "drr_units": 40.107142857142854,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "SESAME OIL 1L",
    "item": "SESAME OIL 1L",
-   "ltr_sold": 1123.0,
-   "quantity": 1123.0,
-   "soh_ltr": 2714.0,
-   "soh_units": 2714.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 2311.0,
+   "soh_units": 2311.0
   },
   {
    "doh": 0.0,
@@ -401,51 +401,51 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "ltr_sold": 0.0,
    "quantity": 0.0,
    "soh_ltr": 0.0,
-   "soh_units": 154.0
+   "soh_units": 149.0
   },
   {
-   "doh": 6.225409836065574,
-   "drr_ltr": 34.857142857142854,
-   "drr_units": 34.857142857142854,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "SO OLIVE 1L",
    "item": "SO OLIVE 1L",
-   "ltr_sold": 976.0,
-   "quantity": 976.0,
-   "soh_ltr": 217.0,
-   "soh_units": 217.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 187.0,
+   "soh_units": 187.0
   },
   {
-   "doh": 277.45454545454544,
-   "drr_ltr": 5.892857142857143,
-   "drr_units": 1.1785714285714286,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "SO OLIVE 5L",
    "item": "SO OLIVE 5L",
-   "ltr_sold": 165.0,
-   "quantity": 33.0,
-   "soh_ltr": 1635.0,
-   "soh_units": 327.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 1630.0,
+   "soh_units": 326.0
   },
   {
-   "doh": 8.175652943780433,
-   "drr_ltr": 806.7857142857143,
-   "drr_units": 806.7857142857143,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "SUNFLOWER 1L",
    "item": "SUNFLOWER 1L",
-   "ltr_sold": 22590.0,
-   "quantity": 22590.0,
-   "soh_ltr": 6596.0,
-   "soh_units": 6596.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 6067.0,
+   "soh_units": 6067.0
   },
   {
-   "doh": 13.426799007444169,
-   "drr_ltr": 575.7142857142857,
-   "drr_units": 115.14285714285714,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "SUNFLOWER 5L",
    "item": "SUNFLOWER 5L",
-   "ltr_sold": 16120.0,
-   "quantity": 3224.0,
-   "soh_ltr": 7730.0,
-   "soh_units": 1546.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 6190.0,
+   "soh_units": 1238.0
   },
   {
    "doh": 0.0,
@@ -459,52 +459,52 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "soh_units": 71.0
   },
   {
-   "doh": 19.288888888888888,
+   "doh": 0.0,
    "drr_ltr": 0.0,
-   "drr_units": 6.428571428571429,
+   "drr_units": 0.0,
    "inventory_item": "WATER 1L",
    "item": "WATER 1L",
    "ltr_sold": 0.0,
-   "quantity": 180.0,
+   "quantity": 0.0,
    "soh_ltr": 0.0,
-   "soh_units": 124.0
+   "soh_units": 123.0
   },
   {
-   "doh": 46.66666666666667,
+   "doh": 0.0,
    "drr_ltr": 0.0,
-   "drr_units": 0.10714285714285714,
+   "drr_units": 0.0,
    "inventory_item": "WG MOJITO 200ML",
    "item": "WG MOJITO 200ML",
    "ltr_sold": 0.0,
-   "quantity": 3.0,
+   "quantity": 0.0,
    "soh_ltr": 0.0,
    "soh_units": 5.0
   },
   {
-   "doh": 275.85185185185185,
-   "drr_ltr": 5.785714285714286,
-   "drr_units": 5.785714285714286,
+   "doh": 0.0,
+   "drr_ltr": 0.0,
+   "drr_units": 0.0,
    "inventory_item": "YELLOW MUSTARD 1L",
    "item": "YELLOW MUSTARD 1L",
-   "ltr_sold": 162.0,
-   "quantity": 162.0,
-   "soh_ltr": 1596.0,
-   "soh_units": 1596.0
+   "ltr_sold": 0.0,
+   "quantity": 0.0,
+   "soh_ltr": 1512.0,
+   "soh_units": 1512.0
   }
  ],
- "sales_max_date": "2026-06-28",
+ "sales_max_date": null,
  "source": {
   "inventory": "all_platform_inventory",
   "sales": "SecMaster"
  },
  "total": {
-  "doh": 12.88672320484376,
-  "drr_ltr": 6227.705357142857,
-  "drr_units": 5167.178571428572,
-  "ltr_sold": 174375.75,
-  "quantity": 144681.0,
-  "soh_ltr": 90254.5,
-  "soh_units": 66588.0
+  "doh": 0.0,
+  "drr_ltr": 0.0,
+  "drr_units": 0.0,
+  "ltr_sold": 0.0,
+  "quantity": 0.0,
+  "soh_ltr": 90312.75,
+  "soh_units": 67653.0
  }
 }
 ```

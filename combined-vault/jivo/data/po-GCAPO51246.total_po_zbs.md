@@ -17,9 +17,9 @@ Up: [[po-GCAPO51246]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,,69742,38.5,CENTRAL GOA,36.0,2026-04-20,2026-05-07,GCAPO51246,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69742,2026-06-30
-27.5,0.0,SWIGGY,,69743,38.5,CENTRAL GOA,24.0,2026-04-20,2026-05-07,GCAPO51246,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69743,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+27.5,0.0,SWIGGY,,,69742,38.5,CENTRAL GOA,36.0,2026-04-20,2026-05-07,GCAPO51246,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69742,2026-07-01
+27.5,0.0,SWIGGY,,,69743,38.5,CENTRAL GOA,24.0,2026-04-20,2026-05-07,GCAPO51246,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:69743,2026-07-01
 ```
 
 ---

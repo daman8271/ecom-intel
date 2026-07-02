@@ -17,10 +17,10 @@ Up: [[po-KOCPO51931]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-397.14,16.0,SWIGGY,2025-10-13,53123,416.996875,KOCHI,16.0,2025-09-30,2025-10-16,KOCPO51931,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53123,2026-06-30
-166.67,20.0,SWIGGY,2025-10-13,53124,175.0035,KOCHI,20.0,2025-09-30,2025-10-16,KOCPO51931,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53124,2026-06-30
-784.76,3.0,SWIGGY,2025-10-13,53125,823.9966667,KOCHI,3.0,2025-09-30,2025-10-16,KOCPO51931,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53125,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+397.14,16.0,SWIGGY,,2025-10-13,53123,416.996875,KOCHI,16.0,2025-09-30,2025-10-16,KOCPO51931,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53123,2026-07-01
+166.67,20.0,SWIGGY,,2025-10-13,53124,175.0035,KOCHI,20.0,2025-09-30,2025-10-16,KOCPO51931,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53124,2026-07-01
+784.76,3.0,SWIGGY,,2025-10-13,53125,823.9966667,KOCHI,3.0,2025-09-30,2025-10-16,KOCPO51931,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53125,2026-07-01
 ```
 
 ---

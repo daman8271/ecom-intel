@@ -24,14 +24,6 @@ Up: [[dashboards-index]] · [[pf-jiomart]]
  "series": [
   {
    "commodity_ltrs": 0.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 0.0,
-   "total_ltrs": 0.0,
-   "year": 2026
-  },
-  {
-   "commodity_ltrs": 0.0,
    "label": "Feb '26",
    "month": 2,
    "premium_ltrs": 0.0,
@@ -66,6 +58,14 @@ Up: [[dashboards-index]] · [[pf-jiomart]]
    "commodity_ltrs": 0.0,
    "label": "Jun '26",
    "month": 6,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
    "premium_ltrs": 0.0,
    "total_ltrs": 0.0,
    "year": 2026

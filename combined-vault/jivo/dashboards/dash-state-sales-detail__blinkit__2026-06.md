@@ -21,6 +21,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
 {
  "brands": [],
  "categories": [],
+ "cities": [],
  "errors": [],
  "limit": 50,
  "metric": "units",
@@ -29,13 +30,16 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
  "mode": "single",
  "month": 6,
  "offset": 0,
- "platform": "blinkit",
+ "platforms": [
+  "blinkit"
+ ],
  "rows": [],
+ "skus": [],
  "state": null,
  "sub_categories": [],
  "total_rows": 0,
- "total_units": 0,
- "total_value": 0,
+ "total_units": 0.0,
+ "total_value": 0.0,
  "year": 2026
 }
 ```

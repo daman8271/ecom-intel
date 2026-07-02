@@ -17,12 +17,12 @@ Up: [[po-JPAPO56400]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,2026-06-20,76207,38.5,JAIPUR,12.0,2026-06-12,2026-06-21,JPAPO56400,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76207,2026-06-30
-738.1,4.0,SWIGGY,2026-06-20,76208,775.005,JAIPUR,4.0,2026-06-12,2026-06-21,JPAPO56400,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76208,2026-06-30
-154.29,48.0,SWIGGY,2026-06-20,76209,162.0043333,JAIPUR,60.0,2026-06-12,2026-06-21,JPAPO56400,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76209,2026-06-30
-242.86,20.0,SWIGGY,2026-06-20,76210,255.003,JAIPUR,20.0,2026-06-12,2026-06-21,JPAPO56400,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76210,2026-06-30
-147.62,16.0,SWIGGY,2026-06-20,76211,155.00125,JAIPUR,16.0,2026-06-12,2026-06-21,JPAPO56400,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76211,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+27.5,0.0,SWIGGY,,2026-06-20,76207,38.5,JAIPUR,12.0,2026-06-12,2026-06-21,JPAPO56400,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76207,2026-07-01
+738.1,4.0,SWIGGY,,2026-06-20,76208,775.005,JAIPUR,4.0,2026-06-12,2026-06-21,JPAPO56400,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76208,2026-07-01
+154.29,48.0,SWIGGY,,2026-06-20,76209,162.0043333,JAIPUR,60.0,2026-06-12,2026-06-21,JPAPO56400,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76209,2026-07-01
+242.86,20.0,SWIGGY,,2026-06-20,76210,255.003,JAIPUR,20.0,2026-06-12,2026-06-21,JPAPO56400,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76210,2026-07-01
+147.62,16.0,SWIGGY,,2026-06-20,76211,155.00125,JAIPUR,16.0,2026-06-12,2026-06-21,JPAPO56400,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76211,2026-07-01
 ```
 
 ---

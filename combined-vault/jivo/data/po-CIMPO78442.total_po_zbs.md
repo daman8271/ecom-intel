@@ -17,10 +17,10 @@ Up: [[po-CIMPO78442]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,48.0,SWIGGY,2026-01-10,60242,550.0004167,MUMBAI,48.0,2026-01-06,2026-01-14,CIMPO78442,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60242,2026-06-30
-1047.62,10.0,SWIGGY,2026-01-10,60243,1100.001,MUMBAI,10.0,2026-01-06,2026-01-14,CIMPO78442,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60243,2026-06-30
-819.05,0.0,SWIGGY,2026-01-10,60244,860.0025,MUMBAI,8.0,2026-01-06,2026-01-14,CIMPO78442,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60244,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,48.0,SWIGGY,,2026-01-10,60242,550.0004167,MUMBAI,48.0,2026-01-06,2026-01-14,CIMPO78442,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60242,2026-07-01
+1047.62,10.0,SWIGGY,,2026-01-10,60243,1100.001,MUMBAI,10.0,2026-01-06,2026-01-14,CIMPO78442,,449236,Jivo Extra Light Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60243,2026-07-01
+819.05,0.0,SWIGGY,,2026-01-10,60244,860.0025,MUMBAI,8.0,2026-01-06,2026-01-14,CIMPO78442,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:60244,2026-07-01
 ```
 
 ---

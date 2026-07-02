@@ -17,11 +17,11 @@ Up: [[po-CADPO189153]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,32.0,SWIGGY,2026-03-12,64844,429.99625,AHMEDABAD,32.0,2026-03-03,2026-03-12,CADPO189153,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64844,2026-06-30
-209.52,80.0,SWIGGY,2026-03-12,64845,219.99625,AHMEDABAD,80.0,2026-03-03,2026-03-12,CADPO189153,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64845,2026-06-30
-819.05,24.0,SWIGGY,2026-03-12,64846,860.0025,AHMEDABAD,24.0,2026-03-03,2026-03-12,CADPO189153,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64846,2026-06-30
-142.86,16.0,SWIGGY,2026-03-12,64847,150.003125,AHMEDABAD,16.0,2026-03-03,2026-03-12,CADPO189153,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64847,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,32.0,SWIGGY,,2026-03-12,64844,429.99625,AHMEDABAD,32.0,2026-03-03,2026-03-12,CADPO189153,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64844,2026-07-01
+209.52,80.0,SWIGGY,,2026-03-12,64845,219.99625,AHMEDABAD,80.0,2026-03-03,2026-03-12,CADPO189153,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64845,2026-07-01
+819.05,24.0,SWIGGY,,2026-03-12,64846,860.0025,AHMEDABAD,24.0,2026-03-03,2026-03-12,CADPO189153,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64846,2026-07-01
+142.86,16.0,SWIGGY,,2026-03-12,64847,150.003125,AHMEDABAD,16.0,2026-03-03,2026-03-12,CADPO189153,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:64847,2026-07-01
 ```
 
 ---

@@ -160,8 +160,8 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "date": "2026-06-24",
    "display_date": "24-06-2026",
-   "ltr": 665.0,
-   "ops": 107993.33333333333
+   "ltr": 664.0,
+   "ops": 107774.28571428571
   },
   {
    "date": "2026-06-25",
@@ -178,8 +178,20 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "date": "2026-06-27",
    "display_date": "27-06-2026",
-   "ltr": 575.0,
-   "ops": 92156.19047619047
+   "ltr": 572.0,
+   "ops": 91636.19047619047
+  },
+  {
+   "date": "2026-06-28",
+   "display_date": "28-06-2026",
+   "ltr": 1045.0,
+   "ops": 167996.19047619047
+  },
+  {
+   "date": "2026-06-29",
+   "display_date": "29-06-2026",
+   "ltr": 657.0,
+   "ops": 104324.76190476191
   }
  ],
  "daily_groups": [
@@ -329,8 +341,8 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    {
     "date": "2026-06-24",
     "display_date": "24-06-2026",
-    "ltr": 665.0,
-    "ops": 107993.33333333333
+    "ltr": 664.0,
+    "ops": 107774.28571428571
    },
    {
     "date": "2026-06-25",
@@ -347,36 +359,50 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    {
     "date": "2026-06-27",
     "display_date": "27-06-2026",
-    "ltr": 575.0,
-    "ops": 92156.19047619047
+    "ltr": 572.0,
+    "ops": 91636.19047619047
+   }
+  ],
+  [
+   {
+    "date": "2026-06-28",
+    "display_date": "28-06-2026",
+    "ltr": 1045.0,
+    "ops": 167996.19047619047
+   },
+   {
+    "date": "2026-06-29",
+    "display_date": "29-06-2026",
+    "ltr": 657.0,
+    "ops": 104324.76190476191
    }
   ]
  ],
  "days_in_month": 30,
  "defaulted_to_latest": true,
- "elapsed_days": 27,
+ "elapsed_days": 29,
  "items": [
   {
-   "drr_liters": 30.925925925925927,
-   "drr_qty": 30.925925925925927,
-   "drr_value": 6774.250440917107,
-   "estimated_liters": 927.7777777777778,
+   "drr_liters": 31.275862068965516,
+   "drr_qty": 31.275862068965516,
+   "drr_value": 6850.903119868637,
+   "estimated_liters": 938.2758620689655,
    "item": "CANOLA 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 182904.7619047619,
-   "liters": 835.0,
-   "qty": 835.0
+   "landing_amt": 198676.19047619047,
+   "liters": 907.0,
+   "qty": 907.0
   },
   {
-   "drr_liters": 1.1111111111111112,
-   "drr_qty": 0.5555555555555556,
-   "drr_value": 555.5555555555555,
-   "estimated_liters": 33.333333333333336,
+   "drr_liters": 1.103448275862069,
+   "drr_qty": 0.5517241379310345,
+   "drr_value": 551.7241379310345,
+   "estimated_liters": 33.10344827586207,
    "item": "EXTRA LIGHT 2L",
    "item_head": "PREMIUM",
-   "landing_amt": 15000.0,
-   "liters": 30.0,
-   "qty": 15.0
+   "landing_amt": 16000.0,
+   "liters": 32.0,
+   "qty": 16.0
   },
   {
    "drr_liters": 0.0,
@@ -390,21 +416,21 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "qty": 0.0
   },
   {
-   "drr_liters": 9.62962962962963,
-   "drr_qty": 9.62962962962963,
-   "drr_value": 3897.7072310405642,
-   "estimated_liters": 288.8888888888889,
+   "drr_liters": 10.206896551724139,
+   "drr_qty": 10.206896551724139,
+   "drr_value": 4131.36288998358,
+   "estimated_liters": 306.2068965517242,
    "item": "JIVO POMACE 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 105238.09523809524,
-   "liters": 260.0,
-   "qty": 260.0
+   "landing_amt": 119809.52380952382,
+   "liters": 296.0,
+   "qty": 296.0
   },
   {
-   "drr_liters": 0.14814814814814814,
-   "drr_qty": 0.07407407407407407,
-   "drr_value": 59.9647266313933,
-   "estimated_liters": 4.444444444444445,
+   "drr_liters": 0.13793103448275862,
+   "drr_qty": 0.06896551724137931,
+   "drr_value": 55.82922824302135,
+   "estimated_liters": 4.137931034482759,
    "item": "JIVO POMACE 2L",
    "item_head": "PREMIUM",
    "landing_amt": 1619.047619047619,
@@ -412,48 +438,48 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "qty": 2.0
   },
   {
-   "drr_liters": 1.2962962962962963,
-   "drr_qty": 0.25925925925925924,
-   "drr_value": 512.3456790123457,
-   "estimated_liters": 38.888888888888886,
+   "drr_liters": 1.3793103448275863,
+   "drr_qty": 0.27586206896551724,
+   "drr_value": 545.1559934318554,
+   "estimated_liters": 41.37931034482759,
    "item": "JIVO POMACE 5L",
    "item_head": "PREMIUM",
-   "landing_amt": 13833.333333333334,
-   "liters": 35.0,
-   "qty": 7.0
+   "landing_amt": 15809.52380952381,
+   "liters": 40.0,
+   "qty": 8.0
   },
   {
-   "drr_liters": 570.1481481481482,
-   "drr_qty": 570.1481481481482,
-   "drr_value": 85793.721340388,
-   "estimated_liters": 17104.444444444445,
+   "drr_liters": 582.7586206896551,
+   "drr_qty": 582.7586206896551,
+   "drr_value": 87691.29720853858,
+   "estimated_liters": 17482.758620689652,
    "item": "MUSTARD 1L",
    "item_head": "COMMODITY",
-   "landing_amt": 2316430.476190476,
-   "liters": 15394.0,
-   "qty": 15394.0
+   "landing_amt": 2543047.619047619,
+   "liters": 16900.0,
+   "qty": 16900.0
   },
   {
-   "drr_liters": 8.592592592592593,
-   "drr_qty": 2.1481481481481484,
-   "drr_value": 1292.9805996472662,
-   "estimated_liters": 257.7777777777778,
+   "drr_liters": 8.413793103448276,
+   "drr_qty": 2.103448275862069,
+   "drr_value": 1266.0755336617406,
+   "estimated_liters": 252.41379310344828,
    "item": "MUSTARD 4L",
    "item_head": "COMMODITY",
-   "landing_amt": 34910.47619047619,
-   "liters": 232.0,
-   "qty": 58.0
+   "landing_amt": 36716.19047619047,
+   "liters": 244.0,
+   "qty": 61.0
   },
   {
-   "drr_liters": 20.925925925925927,
-   "drr_qty": 4.185185185185185,
-   "drr_value": 3148.8536155202823,
-   "estimated_liters": 627.7777777777778,
+   "drr_liters": 20.862068965517242,
+   "drr_qty": 4.172413793103448,
+   "drr_value": 3139.2446633825944,
+   "estimated_liters": 625.8620689655172,
    "item": "MUSTARD 5L",
    "item_head": "COMMODITY",
-   "landing_amt": 85019.04761904762,
-   "liters": 565.0,
-   "qty": 113.0
+   "landing_amt": 91038.09523809524,
+   "liters": 605.0,
+   "qty": 121.0
   },
   {
    "drr_liters": 0.0,
@@ -467,66 +493,55 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "qty": 0.0
   },
   {
-   "drr_liters": 7.62962962962963,
-   "drr_qty": 7.62962962962963,
-   "drr_value": 1017.283950617284,
-   "estimated_liters": 228.88888888888889,
+   "drr_liters": 7.413793103448276,
+   "drr_qty": 7.413793103448276,
+   "drr_value": 988.5057471264369,
+   "estimated_liters": 222.41379310344828,
    "item": "SOYABEAN 1L POUCH",
    "item_head": "COMMODITY",
-   "landing_amt": 27466.666666666668,
-   "liters": 206.0,
-   "qty": 206.0
+   "landing_amt": 28666.666666666668,
+   "liters": 215.0,
+   "qty": 215.0
   },
   {
-   "drr_liters": 15.555555555555555,
-   "drr_qty": 3.888888888888889,
-   "drr_value": 2548.1481481481483,
-   "estimated_liters": 466.6666666666667,
+   "drr_liters": 15.03448275862069,
+   "drr_qty": 3.7586206896551726,
+   "drr_value": 2462.791461412151,
+   "estimated_liters": 451.0344827586207,
    "item": "SUNFLOWER 4L",
    "item_head": "COMMODITY",
-   "landing_amt": 68800.0,
-   "liters": 420.0,
-   "qty": 105.0
+   "landing_amt": 71420.95238095238,
+   "liters": 436.0,
+   "qty": 109.0
   },
   {
    "drr_liters": 0.0,
-   "drr_qty": 1.1481481481481481,
+   "drr_qty": 1.103448275862069,
    "drr_value": 0.0,
    "estimated_liters": 0.0,
    "item": "WATER 1L",
    "item_head": "OTHER",
    "landing_amt": 0.0,
    "liters": 0.0,
-   "qty": 31.0
+   "qty": 32.0
   },
   {
    "drr_liters": 0.0,
-   "drr_qty": 0.9259259259259259,
+   "drr_qty": 0.9310344827586207,
    "drr_value": 0.0,
    "estimated_liters": 0.0,
    "item": "WG APPLE JUICE 200 ML",
    "item_head": "OTHER",
    "landing_amt": 0.0,
    "liters": 0.0,
-   "qty": 25.0
+   "qty": 27.0
   },
   {
    "drr_liters": 0.0,
-   "drr_qty": 0.8888888888888888,
+   "drr_qty": 0.896551724137931,
    "drr_value": 0.0,
    "estimated_liters": 0.0,
    "item": "WG BLUEBERRY JUICE 200ML",
-   "item_head": "OTHER",
-   "landing_amt": 0.0,
-   "liters": 0.0,
-   "qty": 24.0
-  },
-  {
-   "drr_liters": 0.0,
-   "drr_qty": 0.9629629629629629,
-   "drr_value": 0.0,
-   "estimated_liters": 0.0,
-   "item": "WG GINGER ALE 200ML",
    "item_head": "OTHER",
    "landing_amt": 0.0,
    "liters": 0.0,
@@ -534,7 +549,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   },
   {
    "drr_liters": 0.0,
-   "drr_qty": 0.1111111111111111,
+   "drr_qty": 1.0344827586206897,
+   "drr_value": 0.0,
+   "estimated_liters": 0.0,
+   "item": "WG GINGER ALE 200ML",
+   "item_head": "OTHER",
+   "landing_amt": 0.0,
+   "liters": 0.0,
+   "qty": 30.0
+  },
+  {
+   "drr_liters": 0.0,
+   "drr_qty": 0.10344827586206896,
    "drr_value": 0.0,
    "estimated_liters": 0.0,
    "item": "WG JEERA 200ML",
@@ -545,7 +571,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   },
   {
    "drr_liters": 0.0,
-   "drr_qty": 0.8518518518518519,
+   "drr_qty": 0.7931034482758621,
    "drr_value": 0.0,
    "estimated_liters": 0.0,
    "item": "WG MOJITO 200ML",
@@ -566,10 +592,10 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "qty": 0.0
   },
   {
-   "drr_liters": 0.18518518518518517,
-   "drr_qty": 0.037037037037037035,
-   "drr_value": 26.455026455026456,
-   "estimated_liters": 5.555555555555555,
+   "drr_liters": 0.1724137931034483,
+   "drr_qty": 0.034482758620689655,
+   "drr_value": 24.630541871921185,
+   "estimated_liters": 5.172413793103448,
    "item": "GOLD 5L",
    "item_head": "COMMODITY",
    "landing_amt": 714.2857142857143,
@@ -588,18 +614,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "qty": 0.0
   }
  ],
- "max_date": "2026-06-27",
+ "max_date": "2026-06-29",
  "month": 6,
  "sales_of": "ALL",
  "source": "flipkart_grocery_master",
  "totals": {
-  "drr_liters": 666.1481481481482,
-  "drr_qty": 634.3703703703703,
-  "drr_value": 105627.26631393297,
-  "estimated_liters": 19984.444444444445,
-  "landing_amt": 2851936.1904761903,
-  "liters": 17986.0,
-  "qty": 17128.0
+  "drr_liters": 678.7586206896551,
+  "drr_qty": 647.4827586206897,
+  "drr_value": 107707.52052545156,
+  "estimated_liters": 20362.758620689652,
+  "landing_amt": 3123518.095238095,
+  "liters": 19684.0,
+  "qty": 18777.0
  },
  "year": 2026
 }

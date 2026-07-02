@@ -17,12 +17,12 @@ Up: [[po-KWBPO86439]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,40.0,SWIGGY,2026-05-09,71512,225.00425,KOLKATA,40.0,2026-05-03,2026-05-15,KWBPO86439,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71512,2026-06-30
-476.19,80.0,SWIGGY,2026-05-09,71513,499.9995,KOLKATA,80.0,2026-05-03,2026-05-15,KWBPO86439,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71513,2026-06-30
-761.9,10.0,SWIGGY,2026-05-09,71514,799.995,KOLKATA,10.0,2026-05-03,2026-05-15,KWBPO86439,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71514,2026-06-30
-2571.43,28.0,SWIGGY,2026-05-09,71515,2700.001429,KOLKATA,28.0,2026-05-03,2026-05-15,KWBPO86439,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71515,2026-06-30
-147.62,48.0,SWIGGY,2026-05-09,71516,155.0010417,KOLKATA,48.0,2026-05-03,2026-05-15,KWBPO86439,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71516,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,40.0,SWIGGY,,2026-05-09,71512,225.00425,KOLKATA,40.0,2026-05-03,2026-05-15,KWBPO86439,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71512,2026-07-01
+476.19,80.0,SWIGGY,,2026-05-09,71513,499.9995,KOLKATA,80.0,2026-05-03,2026-05-15,KWBPO86439,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71513,2026-07-01
+761.9,10.0,SWIGGY,,2026-05-09,71514,799.995,KOLKATA,10.0,2026-05-03,2026-05-15,KWBPO86439,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71514,2026-07-01
+2571.43,28.0,SWIGGY,,2026-05-09,71515,2700.001429,KOLKATA,28.0,2026-05-03,2026-05-15,KWBPO86439,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71515,2026-07-01
+147.62,48.0,SWIGGY,,2026-05-09,71516,155.0010417,KOLKATA,48.0,2026-05-03,2026-05-15,KWBPO86439,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:71516,2026-07-01
 ```
 
 ---

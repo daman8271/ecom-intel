@@ -17,10 +17,10 @@ Up: [[po-KWBPO90582]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-214.29,24.0,SWIGGY,2026-06-15,74211,225.00425,KOLKATA,40.0,2026-05-23,2026-06-15,KWBPO90582,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74211,2026-06-30
-154.29,0.0,SWIGGY,2026-06-15,74212,162.0043333,KOLKATA,60.0,2026-05-23,2026-06-15,KWBPO90582,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74212,2026-06-30
-147.62,32.0,SWIGGY,2026-06-15,74213,155.0009375,KOLKATA,64.0,2026-05-23,2026-06-15,KWBPO90582,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74213,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+214.29,24.0,SWIGGY,,2026-06-15,74211,225.00425,KOLKATA,40.0,2026-05-23,2026-06-15,KWBPO90582,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74211,2026-07-01
+154.29,0.0,SWIGGY,,2026-06-15,74212,162.0043333,KOLKATA,60.0,2026-05-23,2026-06-15,KWBPO90582,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74212,2026-07-01
+147.62,32.0,SWIGGY,,2026-06-15,74213,155.0009375,KOLKATA,64.0,2026-05-23,2026-06-15,KWBPO90582,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:74213,2026-07-01
 ```
 
 ---

@@ -17,10 +17,10 @@ Up: [[po-CMFPO327718]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,0.0,SWIGGY,,75753,1289.998333,MUMBAI,6.0,2026-06-06,2026-06-14,CMFPO327718,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75753,2026-06-30
-928.57,0.0,SWIGGY,,75754,974.9985714,MUMBAI,28.0,2026-06-06,2026-06-14,CMFPO327718,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75754,2026-06-30
-933.33,0.0,SWIGGY,,75755,979.997,MUMBAI,10.0,2026-06-06,2026-06-14,CMFPO327718,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75755,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1228.57,0.0,SWIGGY,,,75753,1289.998333,MUMBAI,6.0,2026-06-06,2026-06-14,CMFPO327718,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75753,2026-07-01
+928.57,0.0,SWIGGY,,,75754,974.9985714,MUMBAI,28.0,2026-06-06,2026-06-14,CMFPO327718,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75754,2026-07-01
+933.33,0.0,SWIGGY,,,75755,979.997,MUMBAI,10.0,2026-06-06,2026-06-14,CMFPO327718,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75755,2026-07-01
 ```
 
 ---

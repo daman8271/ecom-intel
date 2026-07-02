@@ -17,9 +17,9 @@ Up: [[po-KOWPO239170]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.1,80.0,SWIGGY,2026-01-06,59812,250.00475,KOLKATA,80.0,2025-12-30,2026-01-11,KOWPO239170,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59812,2026-06-30
-138.1,840.0,SWIGGY,2026-01-06,59813,145.0047619,KOLKATA,840.0,2025-12-30,2026-01-11,KOWPO239170,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59813,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.1,80.0,SWIGGY,,2026-01-06,59812,250.00475,KOLKATA,80.0,2025-12-30,2026-01-11,KOWPO239170,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59812,2026-07-01
+138.1,840.0,SWIGGY,,2026-01-06,59813,145.0047619,KOLKATA,840.0,2025-12-30,2026-01-11,KOWPO239170,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:59813,2026-07-01
 ```
 
 ---

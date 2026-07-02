@@ -17,11 +17,11 @@ Up: [[po-ETPPO39244]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1047.62,8.0,SWIGGY,2026-03-19,65915,1100.00125,NOIDA,8.0,2026-03-17,2026-03-26,ETPPO39244,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65915,2026-06-30
-819.05,10.0,SWIGGY,2026-03-19,65916,860.002,NOIDA,10.0,2026-03-17,2026-03-26,ETPPO39244,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65916,2026-06-30
-761.91,12.0,SWIGGY,2026-03-19,65917,800.005,NOIDA,12.0,2026-03-17,2026-03-26,ETPPO39244,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65917,2026-06-30
-2619.05,32.0,SWIGGY,2026-03-19,65918,2750.0025,NOIDA,32.0,2026-03-17,2026-03-26,ETPPO39244,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65918,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1047.62,8.0,SWIGGY,,2026-03-19,65915,1100.00125,NOIDA,8.0,2026-03-17,2026-03-26,ETPPO39244,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65915,2026-07-01
+819.05,10.0,SWIGGY,,2026-03-19,65916,860.002,NOIDA,10.0,2026-03-17,2026-03-26,ETPPO39244,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65916,2026-07-01
+761.91,12.0,SWIGGY,,2026-03-19,65917,800.005,NOIDA,12.0,2026-03-17,2026-03-26,ETPPO39244,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65917,2026-07-01
+2619.05,32.0,SWIGGY,,2026-03-19,65918,2750.0025,NOIDA,32.0,2026-03-17,2026-03-26,ETPPO39244,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:65918,2026-07-01
 ```
 
 ---

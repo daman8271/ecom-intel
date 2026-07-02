@@ -17,10 +17,10 @@ Up: [[po-ETRPO00697]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-7.62,0.0,SWIGGY,,59215,8.001011905,AHMEDABAD,336.0,2025-12-23,2026-01-01,ETRPO00697,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59215,2026-06-30
-12.44,0.0,SWIGGY,,59216,17.41672619,AHMEDABAD,336.0,2025-12-23,2026-01-01,ETRPO00697,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59216,2026-06-30
-12.44,0.0,SWIGGY,,59217,17.41672619,AHMEDABAD,336.0,2025-12-23,2026-01-01,ETRPO00697,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59217,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+7.62,0.0,SWIGGY,,,59215,8.001011905,AHMEDABAD,336.0,2025-12-23,2026-01-01,ETRPO00697,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59215,2026-07-01
+12.44,0.0,SWIGGY,,,59216,17.41672619,AHMEDABAD,336.0,2025-12-23,2026-01-01,ETRPO00697,,278756,JivoÃ‚ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59216,2026-07-01
+12.44,0.0,SWIGGY,,,59217,17.41672619,AHMEDABAD,336.0,2025-12-23,2026-01-01,ETRPO00697,,900724,JivoÃ‚ Fizzy Flavoured Soda (Lemon) 750.0 ml,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:59217,2026-07-01
 ```
 
 ---

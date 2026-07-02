@@ -1,22 +1,22 @@
 ---
 type: moc
-title: Users (62)
+title: Users (63)
 tags:
   - moc
   - source/factory
 ---
 
-# Users — 62 records
+# Users — 63 records
 
 From `/accounts/users/`. Up: [[_HOME]]
 
 - [[accounts__users-9]] — Quality manager
-- [[accounts__users-2]] — test
 - [[accounts__users-10]] — grpo
 - [[accounts__users-21]] — Ravinder singh
 - [[accounts__users-7]] — Quality check
 - [[accounts__users-39]] — Saleem
 - [[accounts__users-27]] — Preshit
+- [[accounts__users-1]] — nk
 - [[accounts__users-3]] — Test Notif User
 - [[accounts__users-4]] — Test User 2
 - [[accounts__users-14]] — Jasmeet Singh
@@ -27,7 +27,7 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-8]] — Quality chemist
 - [[accounts__users-18]] — Naresh Kumar
 - [[accounts__users-17]] — Shahrukh Khan
-- [[accounts__users-1]] — nk
+- [[accounts__users-2]] — test
 - [[accounts__users-13]] — tajinderjit
 - [[accounts__users-23]] — Atul
 - [[accounts__users-29]] — Production QC
@@ -72,3 +72,4 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-58]] — Requester (Operator)
 - [[accounts__users-55]] — Yashin
 - [[accounts__users-62]] — Bunty
+- [[accounts__users-63]] — Arvinder Singh

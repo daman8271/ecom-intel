@@ -17,11 +17,11 @@ Up: [[po-CIMPO109256]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-08,75659,214.998,MUMBAI,40.0,2026-06-04,2026-06-13,CIMPO109256,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75659,2026-06-30
-476.19,32.0,SWIGGY,2026-06-08,75660,499.999375,MUMBAI,32.0,2026-06-04,2026-06-13,CIMPO109256,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75660,2026-06-30
-371.43,16.0,SWIGGY,2026-06-08,75661,390.00125,MUMBAI,16.0,2026-06-04,2026-06-13,CIMPO109256,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75661,2026-06-30
-147.62,16.0,SWIGGY,2026-06-08,75662,155.00125,MUMBAI,16.0,2026-06-04,2026-06-13,CIMPO109256,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75662,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-08,75659,214.998,MUMBAI,40.0,2026-06-04,2026-06-13,CIMPO109256,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75659,2026-07-01
+476.19,32.0,SWIGGY,,2026-06-08,75660,499.999375,MUMBAI,32.0,2026-06-04,2026-06-13,CIMPO109256,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75660,2026-07-01
+371.43,16.0,SWIGGY,,2026-06-08,75661,390.00125,MUMBAI,16.0,2026-06-04,2026-06-13,CIMPO109256,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75661,2026-07-01
+147.62,16.0,SWIGGY,,2026-06-08,75662,155.00125,MUMBAI,16.0,2026-06-04,2026-06-13,CIMPO109256,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75662,2026-07-01
 ```
 
 ---

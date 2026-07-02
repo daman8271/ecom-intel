@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000179` |
 | canonical_sku(s) | `jivo-flax-seeds-raw-alsi-seeds-for-eating-high-in-protein-iron-dietary-fibre-rich-in-essential-nutrients-ideal-for-adding-to-smoothies-salads-yogurt-baking-healthy-snack-option-200g-200ml`, `edsh4zgfwpsuy7rh` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | FLAX SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 200G |
 | Bridge class | core (priced) |

@@ -25,10 +25,10 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
  "detail_subtitle": "Excel rows 12-20 from SECONDARY DASHBOARD",
  "detail_total": {
   "last_month": 76199.0,
-  "per_liter_shpd": 307.0283803621226,
-  "shipped_ltr": 78698.0,
-  "shipped_units": 61414.0,
-  "shipped_value": 18855840.9515594
+  "per_liter_shpd": 306.4435496758295,
+  "shipped_ltr": 84585.0,
+  "shipped_units": 66064.0,
+  "shipped_value": 20244886.665784
  },
  "details": [
   {
@@ -36,11 +36,11 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "format": "BLINKIT",
    "item_head": "PREMIUM",
    "last_month": 12644,
-   "per_liter_shpd": 203.80952380000002,
+   "per_liter_shpd": 203.8095238,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 10488.0,
-   "shipped_units": 10488.0,
-   "shipped_value": 2137554.2856144,
+   "shipped_ltr": 11374.0,
+   "shipped_units": 11374.0,
+   "shipped_value": 2318129.5237012,
    "sub_category": "CANOLA"
   },
   {
@@ -48,11 +48,11 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "format": "BLINKIT",
    "item_head": "PREMIUM",
    "last_month": 6255,
-   "per_liter_shpd": 961.9047618999999,
+   "per_liter_shpd": 961.9047619,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 6480.0,
-   "shipped_units": 1296.0,
-   "shipped_value": 1246628.5714224,
+   "shipped_ltr": 6890.0,
+   "shipped_units": 1378.0,
+   "shipped_value": 1325504.7618982,
    "sub_category": "CANOLA"
   },
   {
@@ -62,9 +62,9 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "last_month": 3948,
    "per_liter_shpd": 497.1428571,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 4052.0,
-   "shipped_units": 4052.0,
-   "shipped_value": 2014422.8569692,
+   "shipped_ltr": 4323.0,
+   "shipped_units": 4323.0,
+   "shipped_value": 2149148.5712433,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -74,9 +74,9 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "last_month": 5232,
    "per_liter_shpd": 914.2857143,
    "per_ltr": "2 LTR",
-   "shipped_ltr": 4248.0,
-   "shipped_units": 2124.0,
-   "shipped_value": 1941942.8571732,
+   "shipped_ltr": 4514.0,
+   "shipped_units": 2257.0,
+   "shipped_value": 2063542.8571751,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -84,11 +84,11 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "format": "BLINKIT",
    "item_head": "PREMIUM",
    "last_month": 12774,
-   "per_liter_shpd": 323.8095238,
+   "per_liter_shpd": 323.80952379999997,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 15766.0,
-   "shipped_units": 15766.0,
-   "shipped_value": 5105180.9522308,
+   "shipped_ltr": 16920.0,
+   "shipped_units": 16920.0,
+   "shipped_value": 5478857.142696,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -98,9 +98,9 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "last_month": 3740,
    "per_liter_shpd": 1761.9047620000001,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 3510.0,
-   "shipped_units": 702.0,
-   "shipped_value": 1236857.142924,
+   "shipped_ltr": 3810.0,
+   "shipped_units": 762.0,
+   "shipped_value": 1342571.428644,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -110,9 +110,9 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "last_month": 15382,
    "per_liter_shpd": 147.6190476,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 20763.0,
-   "shipped_units": 20763.0,
-   "shipped_value": 3065014.2853188,
+   "shipped_ltr": 22347.0,
+   "shipped_units": 22347.0,
+   "shipped_value": 3298842.8567172,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -122,9 +122,9 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "last_month": 13310,
    "per_liter_shpd": 771.4285714,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 8960.0,
-   "shipped_units": 1792.0,
-   "shipped_value": 1382399.9999488,
+   "shipped_ltr": 9630.0,
+   "shipped_units": 1926.0,
+   "shipped_value": 1485771.4285164,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -132,17 +132,17 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "format": "BLINKIT",
    "item_head": "COMMODITY",
    "last_month": 2914,
-   "per_liter_shpd": 163.8095238,
+   "per_liter_shpd": 163.80952380000002,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 4431.0,
-   "shipped_units": 4431.0,
-   "shipped_value": 725839.9999578,
+   "shipped_ltr": 4777.0,
+   "shipped_units": 4777.0,
+   "shipped_value": 782518.0951926,
    "sub_category": "SUNFLOWER"
   }
  ],
- "elapsed_day": 28,
+ "elapsed_day": 30,
  "format": "BLINKIT",
- "max_date": "2026-06-28",
+ "max_date": "2026-06-30",
  "month": 6,
  "sec_trend": {
   "day": {
@@ -740,18 +740,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
      "day": 29,
      "label": "29",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 2713.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-06-29",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 2090.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 637468.5714022,
       "order": 0.0,
       "return": 0.0
      }
@@ -761,18 +761,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
      "day": 30,
      "label": "30",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 3174.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-06-30",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 2560.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 751577.1428224001,
       "order": 0.0,
       "return": 0.0
      }
@@ -1372,18 +1372,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
      "day": 29,
      "label": "29",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1187.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-06-29",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 919.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 179853.3333166,
       "order": 0.0,
       "return": 0.0
      }
@@ -1393,18 +1393,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
      "day": 30,
      "label": "30",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1413.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-06-30",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 1145.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 214024.7618842,
       "order": 0.0,
       "return": 0.0
      }
@@ -2004,18 +2004,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
      "day": 29,
      "label": "29",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1526.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-06-29",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 1171.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 457615.2380856,
       "order": 0.0,
       "return": 0.0
      }
@@ -2025,18 +2025,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
      "day": 30,
      "label": "30",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1761.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-06-30",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 1415.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 537552.3809382,
       "order": 0.0,
       "return": 0.0
      }
@@ -2148,19 +2148,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
     {
      "label": "JUN",
      "ltrs": {
-      "deliver": 78698.0,
+      "deliver": 84585.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 6,
      "period": "2026-06-01",
      "quantity": {
-      "deliver": 61414.0,
+      "deliver": 66064.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 18855840.951559402,
+      "deliver": 20244886.665784005,
       "order": 0.0,
       "return": 0.0
      }
@@ -2270,19 +2270,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
     {
      "label": "JUN",
      "ltrs": {
-      "deliver": 34154.0,
+      "deliver": 36754.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 6,
      "period": "2026-06-01",
      "quantity": {
-      "deliver": 26986.0,
+      "deliver": 29050.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 5173254.2852254,
+      "deliver": 5567132.3804262,
       "order": 0.0,
       "return": 0.0
      }
@@ -2392,19 +2392,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
     {
      "label": "JUN",
      "ltrs": {
-      "deliver": 44544.0,
+      "deliver": 47831.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 6,
      "period": "2026-06-01",
      "quantity": {
-      "deliver": 34428.0,
+      "deliver": 37014.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 13682586.666334001,
+      "deliver": 14677754.285357801,
       "order": 0.0,
       "return": 0.0
      }
@@ -2456,18 +2456,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 427913.0,
+      "deliver": 433800.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 327786.0,
+      "deliver": 332436.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 56821650.47536893,
+      "deliver": 58210696.18959353,
       "order": 0.0,
       "return": 0.0
      },
@@ -2518,18 +2518,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 169503.0,
+      "deliver": 172103.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 129571.0,
+      "deliver": 131635.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 12655178.094749218,
+      "deliver": 13049056.189950017,
       "order": 0.0,
       "return": 0.0
      },
@@ -2580,18 +2580,18 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 258410.0,
+      "deliver": 261697.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 198215.0,
+      "deliver": 200801.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 44166472.38061972,
+      "deliver": 45161639.99964352,
       "order": 0.0,
       "return": 0.0
      },
@@ -2607,17 +2607,17 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
  "summary": [
   {
    "item_head": "PREMIUM",
-   "per_liter_shpd": 397.4261260117927,
-   "shipped_ltr": 44544.0,
-   "shipped_units": 34428.0,
-   "shipped_value": 13682586.666334
+   "per_liter_shpd": 396.5460173274383,
+   "shipped_ltr": 47831.0,
+   "shipped_units": 37014.0,
+   "shipped_value": 14677754.2853578
   },
   {
    "item_head": "COMMODITY",
-   "per_liter_shpd": 191.70141129568665,
-   "shipped_ltr": 34154.0,
-   "shipped_units": 26986.0,
-   "shipped_value": 5173254.2852254
+   "per_liter_shpd": 191.63966886148708,
+   "shipped_ltr": 36754.0,
+   "shipped_units": 29050.0,
+   "shipped_value": 5567132.3804262
   },
   {
    "item_head": "OTHER",
@@ -2628,67 +2628,67 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   }
  ],
  "summary_total": {
-  "per_liter_shpd": 307.0283803621226,
-  "shipped_ltr": 78698.0,
-  "shipped_units": 61414.0,
-  "shipped_value": 18855840.9515594
+  "per_liter_shpd": 306.4435496758295,
+  "shipped_ltr": 84585.0,
+  "shipped_units": 66064.0,
+  "shipped_value": 20244886.665784
  },
  "top_items": [
   {
    "item": "MUSTARD 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 20763.0,
-   "shipped_units": 20763.0,
-   "shipped_value": 3065014.2853188
+   "shipped_ltr": 22347.0,
+   "shipped_units": 22347.0,
+   "shipped_value": 3298842.8567172
   },
   {
    "item": "JIVO POMACE 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 15766.0,
-   "shipped_units": 15766.0,
-   "shipped_value": 5105180.9522308
+   "shipped_ltr": 16920.0,
+   "shipped_units": 16920.0,
+   "shipped_value": 5478857.142696
   },
   {
    "item": "CANOLA 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 10488.0,
-   "shipped_units": 10488.0,
-   "shipped_value": 2137554.2856144
+   "shipped_ltr": 11374.0,
+   "shipped_units": 11374.0,
+   "shipped_value": 2318129.5237012
   },
   {
    "item": "MUSTARD 5L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 8960.0,
-   "shipped_units": 1792.0,
-   "shipped_value": 1382399.9999488
+   "shipped_ltr": 9630.0,
+   "shipped_units": 1926.0,
+   "shipped_value": 1485771.4285164
   },
   {
    "item": "CANOLA 5L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 6480.0,
-   "shipped_units": 1296.0,
-   "shipped_value": 1246628.5714224
+   "shipped_ltr": 6890.0,
+   "shipped_units": 1378.0,
+   "shipped_value": 1325504.7618982
   },
   {
    "item": "SUNFLOWER 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 4431.0,
-   "shipped_units": 4431.0,
-   "shipped_value": 725839.9999578
+   "shipped_ltr": 4777.0,
+   "shipped_units": 4777.0,
+   "shipped_value": 782518.0951926
   },
   {
    "item": "EXTRA LIGHT 2L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 4248.0,
-   "shipped_units": 2124.0,
-   "shipped_value": 1941942.8571732
+   "shipped_ltr": 4514.0,
+   "shipped_units": 2257.0,
+   "shipped_value": 2063542.8571751
   },
   {
    "item": "EXTRA LIGHT 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 4052.0,
-   "shipped_units": 4052.0,
-   "shipped_value": 2014422.8569692
+   "shipped_ltr": 4323.0,
+   "shipped_units": 4323.0,
+   "shipped_value": 2149148.5712433
   }
  ],
  "trends": {

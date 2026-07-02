@@ -17,10 +17,10 @@ Up: [[po-MBEPO16291]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-547.62,48.0,SWIGGY,2026-04-25,69334,575.0010417,BANGALORE,48.0,2026-04-15,2026-04-27,MBEPO16291,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69334,2026-06-30
-202.14,100.0,SWIGGY,2026-04-25,69335,212.2471,BANGALORE,100.0,2026-04-15,2026-04-27,MBEPO16291,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69335,2026-06-30
-542.86,0.0,SWIGGY,2026-04-25,69336,570.0033333,BANGALORE,3.0,2026-04-15,2026-04-27,MBEPO16291,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69336,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+547.62,48.0,SWIGGY,,2026-04-25,69334,575.0010417,BANGALORE,48.0,2026-04-15,2026-04-27,MBEPO16291,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69334,2026-07-01
+202.14,100.0,SWIGGY,,2026-04-25,69335,212.2471,BANGALORE,100.0,2026-04-15,2026-04-27,MBEPO16291,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69335,2026-07-01
+542.86,0.0,SWIGGY,,2026-04-25,69336,570.0033333,BANGALORE,3.0,2026-04-15,2026-04-27,MBEPO16291,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:69336,2026-07-01
 ```
 
 ---

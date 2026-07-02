@@ -17,9 +17,9 @@ Up: [[po-KOCPO57332]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-784.76,0.0,SWIGGY,,54256,824.0,KOCHI,1.0,2025-10-15,2025-10-31,KOCPO57332,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54256,2026-06-30
-133.33,0.0,SWIGGY,,54257,139.9965625,KOCHI,32.0,2025-10-15,2025-10-31,KOCPO57332,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54257,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+784.76,0.0,SWIGGY,,,54256,823.998,KOCHI,1.0,2025-10-15,2025-10-31,KOCPO57332,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54256,2026-07-01
+133.33,0.0,SWIGGY,,,54257,139.9965625,KOCHI,32.0,2025-10-15,2025-10-31,KOCPO57332,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54257,2026-07-01
 ```
 
 ---

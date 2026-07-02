@@ -21,6 +21,48 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
 {
  "brands": [],
  "categories": [],
+ "cities": [
+  {
+   "city": "Bengaluru",
+   "value": 20604.0
+  },
+  {
+   "city": "Delhi",
+   "value": 20097.0
+  },
+  {
+   "city": "Mumbai",
+   "value": 19083.0
+  },
+  {
+   "city": "Hyderabad",
+   "value": 12860.0
+  },
+  {
+   "city": "Gurugram",
+   "value": 7615.0
+  },
+  {
+   "city": "Chennai",
+   "value": 7259.0
+  },
+  {
+   "city": "Noida",
+   "value": 5224.0
+  },
+  {
+   "city": "Pune",
+   "value": 5154.0
+  },
+  {
+   "city": "Ghaziabad",
+   "value": 3969.0
+  },
+  {
+   "city": "Faridabad",
+   "value": 1578.0
+  }
+ ],
  "errors": [],
  "filter_options": {
   "brands": [
@@ -241,6 +283,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
    },
    {
     "category": "MUSTARD",
+    "sub_category": "MUSTARD KACHI GHANI"
+   },
+   {
+    "category": "MUSTARD",
     "sub_category": "YELLOW MUSTARD"
    },
    {
@@ -393,8 +439,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
    }
   ]
  },
- "mapped_units": 107168.0,
- "mapped_value": 107168.0,
+ "mapped_units": 115428.0,
+ "mapped_value": 115428.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -405,144 +451,144 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
  "states": [
   {
    "by_platform": {
-    "ZEPTO": 23810.0
+    "ZEPTO": 25247.0
    },
    "state": "MAHARASHTRA",
-   "units": 23810.0,
-   "value": 23810.0
+   "units": 25247.0,
+   "value": 25247.0
   },
   {
    "by_platform": {
-    "ZEPTO": 19693.0
+    "ZEPTO": 21313.0
    },
    "state": "KARNATAKA",
-   "units": 19693.0,
-   "value": 19693.0
+   "units": 21313.0,
+   "value": 21313.0
   },
   {
    "by_platform": {
-    "ZEPTO": 18935.0
+    "ZEPTO": 20097.0
    },
    "state": "DELHI",
-   "units": 18935.0,
-   "value": 18935.0
+   "units": 20097.0,
+   "value": 20097.0
   },
   {
    "by_platform": {
-    "ZEPTO": 11707.0
+    "ZEPTO": 13064.0
    },
    "state": "TELANGANA",
-   "units": 11707.0,
-   "value": 11707.0
+   "units": 13064.0,
+   "value": 13064.0
   },
   {
    "by_platform": {
-    "ZEPTO": 9489.0
+    "ZEPTO": 10110.0
    },
    "state": "HARYANA",
-   "units": 9489.0,
-   "value": 9489.0
+   "units": 10110.0,
+   "value": 10110.0
   },
   {
    "by_platform": {
-    "ZEPTO": 9322.0
+    "ZEPTO": 9902.0
    },
    "state": "UTTAR PRADESH",
-   "units": 9322.0,
-   "value": 9322.0
+   "units": 9902.0,
+   "value": 9902.0
   },
   {
    "by_platform": {
-    "ZEPTO": 6778.0
+    "ZEPTO": 7700.0
    },
    "state": "TAMIL NADU",
-   "units": 6778.0,
-   "value": 6778.0
+   "units": 7700.0,
+   "value": 7700.0
   },
   {
    "by_platform": {
-    "ZEPTO": 2245.0
+    "ZEPTO": 2351.0
    },
    "state": "GUJARAT",
-   "units": 2245.0,
-   "value": 2245.0
+   "units": 2351.0,
+   "value": 2351.0
   },
   {
    "by_platform": {
-    "ZEPTO": 1638.0
+    "ZEPTO": 1802.0
    },
    "state": "PUNJAB",
-   "units": 1638.0,
-   "value": 1638.0
+   "units": 1802.0,
+   "value": 1802.0
   },
   {
    "by_platform": {
-    "ZEPTO": 1291.0
+    "ZEPTO": 1367.0
    },
    "state": "RAJASTHAN",
-   "units": 1291.0,
-   "value": 1291.0
+   "units": 1367.0,
+   "value": 1367.0
   },
   {
    "by_platform": {
-    "ZEPTO": 688.0
+    "ZEPTO": 730.0
    },
    "state": "UTTARAKHAND",
-   "units": 688.0,
-   "value": 688.0
+   "units": 730.0,
+   "value": 730.0
   },
   {
    "by_platform": {
-    "ZEPTO": 542.0
+    "ZEPTO": 570.0
    },
    "state": "MADHYA PRADESH",
-   "units": 542.0,
-   "value": 542.0
+   "units": 570.0,
+   "value": 570.0
   },
   {
    "by_platform": {
-    "ZEPTO": 415.0
+    "ZEPTO": 476.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 415.0,
-   "value": 415.0
+   "units": 476.0,
+   "value": 476.0
   },
   {
    "by_platform": {
-    "ZEPTO": 272.0
+    "ZEPTO": 292.0
    },
    "state": "KERALA",
-   "units": 272.0,
-   "value": 272.0
+   "units": 292.0,
+   "value": 292.0
   },
   {
    "by_platform": {
-    "ZEPTO": 202.0
+    "ZEPTO": 223.0
    },
    "state": "CHANDIGARH",
-   "units": 202.0,
-   "value": 202.0
+   "units": 223.0,
+   "value": 223.0
   },
   {
    "by_platform": {
-    "ZEPTO": 121.0
+    "ZEPTO": 130.0
    },
    "state": "PUDUCHERRY",
-   "units": 121.0,
-   "value": 121.0
+   "units": 130.0,
+   "value": 130.0
   },
   {
    "by_platform": {
-    "ZEPTO": 20.0
+    "ZEPTO": 54.0
    },
    "state": "WEST BENGAL",
-   "units": 20.0,
-   "value": 20.0
+   "units": 54.0,
+   "value": 54.0
   }
  ],
  "sub_categories": [],
- "total_units": 107168.0,
- "total_value": 107168.0,
+ "total_units": 115428.0,
+ "total_value": 115428.0,
  "year": 2026
 }
 ```

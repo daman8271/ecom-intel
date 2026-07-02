@@ -17,11 +17,11 @@ Up: [[po-CHMPO285741]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-261.91,0.0,SWIGGY,,68858,275.005,HYDERABAD,20.0,2026-04-12,2026-05-12,CHMPO285741,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68858,2026-06-30
-200.0,0.0,SWIGGY,,68859,210.0,HYDERABAD,80.0,2026-04-12,2026-05-12,CHMPO285741,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68859,2026-06-30
-1000.0,0.0,SWIGGY,,68860,1050.0,HYDERABAD,24.0,2026-04-12,2026-05-12,CHMPO285741,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68860,2026-06-30
-785.71,0.0,SWIGGY,,68861,824.995625,HYDERABAD,16.0,2026-04-12,2026-05-12,CHMPO285741,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68861,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+261.91,0.0,SWIGGY,,,68858,275.005,HYDERABAD,20.0,2026-04-12,2026-05-12,CHMPO285741,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68858,2026-07-01
+200.0,0.0,SWIGGY,,,68859,210.0,HYDERABAD,80.0,2026-04-12,2026-05-12,CHMPO285741,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68859,2026-07-01
+1000.0,0.0,SWIGGY,,,68860,1050.0,HYDERABAD,24.0,2026-04-12,2026-05-12,CHMPO285741,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68860,2026-07-01
+785.71,0.0,SWIGGY,,,68861,824.995625,HYDERABAD,16.0,2026-04-12,2026-05-12,CHMPO285741,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68861,2026-07-01
 ```
 
 ---

@@ -28,50 +28,50 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -49.5,
+   "delta_pct": -41.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 37518.0,
+   "ltrs": 43678.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 74327.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -20.7,
+   "delta_pct": -7.9,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 26736.0,
+   "ltrs": 31056.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 33715.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 1.6,
+   "delta_pct": 11.9,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 21489.0,
+   "ltrs": 23657.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 21150.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -33.8,
+   "delta_pct": -24.1,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 12380.0,
+   "ltrs": 14180.0,
    "name": "GROUNDNUT 5L",
    "prev_ltrs": 18690.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -45.8,
+   "delta_pct": -37.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 10075.0,
+   "ltrs": 11710.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 18580.0
   },
@@ -88,40 +88,40 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 23.5,
+   "delta_pct": 33.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 4032.0,
+   "ltrs": 4368.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 3264.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 2.5,
+   "delta_pct": 3.1,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 3620.0,
+   "ltrs": 3640.0,
    "name": "GOLD 5L",
    "prev_ltrs": 3530.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 162.8,
+   "delta_pct": 164.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 3540.0,
+   "ltrs": 3560.0,
    "name": "SESAME OIL 1L",
    "prev_ltrs": 1347.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 0.7,
+   "delta_pct": 6.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 3040.0,
+   "ltrs": 3200.0,
    "name": "CANOLA 1L",
    "prev_ltrs": 3020.0
   }
@@ -140,10 +140,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 162.8,
+  "delta_pct": 164.3,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 3540.0,
+  "ltrs": 3560.0,
   "name": "SESAME OIL 1L",
   "prev_ltrs": 1347.0
  },

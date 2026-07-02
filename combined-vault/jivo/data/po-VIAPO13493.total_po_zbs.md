@@ -17,9 +17,9 @@ Up: [[po-VIAPO13493]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-116.19,0.0,SWIGGY,,53929,121.9995,VIZAG,20.0,2025-10-09,2025-10-25,VIAPO13493,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53929,2026-06-30
-133.33,0.0,SWIGGY,,53930,139.996875,VIZAG,16.0,2025-10-09,2025-10-25,VIAPO13493,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53930,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+116.19,0.0,SWIGGY,,,53929,121.9995,VIZAG,20.0,2025-10-09,2025-10-25,VIAPO13493,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53929,2026-07-01
+133.33,0.0,SWIGGY,,,53930,139.996875,VIZAG,16.0,2025-10-09,2025-10-25,VIAPO13493,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:53930,2026-07-01
 ```
 
 ---

@@ -18,10 +18,10 @@ Up: [[dashboards-index]]
 ```json
 {
  "defaulted": false,
- "month": 6,
- "month_label": "JUNE",
+ "month": 7,
+ "month_label": "JULY",
  "source": "calendar",
- "source_date": "2026-06-01",
+ "source_date": "2026-07-01",
  "year": 2026
 }
 ```

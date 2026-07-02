@@ -17,10 +17,10 @@ Up: [[po-CMFPO209016]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-473.21,0.0,SWIGGY,2025-08-31,50387,529.995,MUMBAI,6.0,2025-08-23,2025-09-03,CMFPO209016,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50387,2026-06-30
-833.33,16.0,SWIGGY,2025-08-31,50388,874.996875,MUMBAI,16.0,2025-08-23,2025-09-03,CMFPO209016,,904426,JIVO COLD PRESSED MUSTARD OIL 5L 5.00 LTRS,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50388,2026-06-30
-133.33,16.0,SWIGGY,2025-08-31,50389,139.996875,MUMBAI,16.0,2025-08-23,2025-09-03,CMFPO209016,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50389,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+473.21,0.0,SWIGGY,,2025-08-31,50387,529.995,MUMBAI,6.0,2025-08-23,2025-09-03,CMFPO209016,,570572,Jivo Desi Ghee 1KG 1.0 kg,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50387,2026-07-01
+833.33,16.0,SWIGGY,,2025-08-31,50388,874.996875,MUMBAI,16.0,2025-08-23,2025-09-03,CMFPO209016,,904426,JIVO COLD PRESSED MUSTARD OIL 5L 5.00 LTRS,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50388,2026-07-01
+133.33,16.0,SWIGGY,,2025-08-31,50389,139.996875,MUMBAI,16.0,2025-08-23,2025-09-03,CMFPO209016,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50389,2026-07-01
 ```
 
 ---

@@ -17,13 +17,13 @@ Up: [[po-KOCPO119478]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-344.76,0.0,SWIGGY,2026-06-28,76276,361.998,KOCHI,10.0,2026-06-12,2026-07-14,KOCPO119478,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76276,2026-06-30
-149.52,60.0,SWIGGY,2026-06-28,76277,156.9961667,KOCHI,60.0,2026-06-12,2026-07-14,KOCPO119478,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76277,2026-06-30
-154.29,40.0,SWIGGY,2026-06-28,76278,162.00425,KOCHI,40.0,2026-06-12,2026-07-14,KOCPO119478,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76278,2026-06-30
-747.62,8.0,SWIGGY,2026-06-28,76279,785.00125,KOCHI,8.0,2026-06-12,2026-07-14,KOCPO119478,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76279,2026-06-30
-242.86,20.0,SWIGGY,2026-06-28,76280,255.003,KOCHI,20.0,2026-06-12,2026-07-14,KOCPO119478,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76280,2026-06-30
-180.95,0.0,SWIGGY,2026-06-28,76281,189.9975,KOCHI,16.0,2026-06-12,2026-07-14,KOCPO119478,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76281,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+344.76,0.0,SWIGGY,,2026-06-28,76276,361.998,KOCHI,10.0,2026-06-12,2026-07-14,KOCPO119478,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76276,2026-07-01
+149.52,60.0,SWIGGY,,2026-06-28,76277,156.9961667,KOCHI,60.0,2026-06-12,2026-07-14,KOCPO119478,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76277,2026-07-01
+154.29,40.0,SWIGGY,,2026-06-28,76278,162.00425,KOCHI,40.0,2026-06-12,2026-07-14,KOCPO119478,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76278,2026-07-01
+747.62,8.0,SWIGGY,,2026-06-28,76279,785.00125,KOCHI,8.0,2026-06-12,2026-07-14,KOCPO119478,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76279,2026-07-01
+242.86,20.0,SWIGGY,,2026-06-28,76280,255.003,KOCHI,20.0,2026-06-12,2026-07-14,KOCPO119478,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76280,2026-07-01
+180.95,0.0,SWIGGY,,2026-06-28,76281,189.9975,KOCHI,16.0,2026-06-12,2026-07-14,KOCPO119478,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76281,2026-07-01
 ```
 
 ---

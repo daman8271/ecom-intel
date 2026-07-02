@@ -16,10 +16,10 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34556
-- **doc_num:** 706260253
-- **doc_date:** 2026-06-12
-- **doc_total:** 700.00
+- **doc_entry:** 34709
+- **doc_num:** 706260351
+- **doc_date:** 2026-06-15
+- **doc_total:** 2000.00
 - **branch_id:** 1
 - **branch_name:** DELHI
 - **card_code:** CUSTA000930
@@ -36,12 +36,12 @@ tags:
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** DL-MP
-- **item_summary:** FG0000192 - SOYABEAN OIL 5 LTR 4 PCS
-- **base_refs:** 1506264582
-- **total_quantity:** 1.000
-- **total_litres:** 5.000
+- **item_summary:** FG0000403 - PET BOTTLE 250 ML JIVO NATURAL MINERAL SPECIAL EDITION ARSHDEEP * (24 PCS)
+- **base_refs:** 1506264610
+- **total_quantity:** 600.000
+- **total_litres:** 150.000
 - **total_boxes:** 0.000
-- **total_weight:** 4.967
+- **total_weight:** 164.375
 - **line_count:** 1
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 34556, "sap_invoice_doc_num": "706260253", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 34709, "sap_invoice_doc_num": "706260351", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

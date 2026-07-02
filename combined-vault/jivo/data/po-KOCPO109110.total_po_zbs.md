@@ -17,9 +17,9 @@ Up: [[po-KOCPO109110]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,0.0,SWIGGY,,71023,256.9981136,KOCHI,440.0,2026-04-29,2026-05-30,KOCPO109110,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71023,2026-06-30
-182.86,0.0,SWIGGY,,71024,192.0028704,KOCHI,432.0,2026-04-29,2026-05-30,KOCPO109110,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71024,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+244.76,0.0,SWIGGY,,,71023,256.9981136,KOCHI,440.0,2026-04-29,2026-05-30,KOCPO109110,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71023,2026-07-01
+182.86,0.0,SWIGGY,,,71024,192.0028704,KOCHI,432.0,2026-04-29,2026-05-30,KOCPO109110,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71024,2026-07-01
 ```
 
 ---

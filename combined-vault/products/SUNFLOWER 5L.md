@@ -35,7 +35,7 @@ Up: [[Home]]
 | canonical_sku(s) | `jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-5l`, `edogdvfwgprvttms`, `jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l`, `jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l`, `sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l` |
 | Category | [[Category - SUNFLOWER\|SUNFLOWER]] |
 | Sub-category | SUNFLOWER |
-| Brand | SANO |
+| Brand | JIVO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 5L |
 | Per-unit | 5.0 L |
@@ -81,9 +81,9 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000053`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000053]]
-- **1794 boxes:** [[box-112466]] · [[box-112467]] · [[box-112468]] … +1791 more (tag `bridge/FG0000053`)
-- **128 boxes:** [[barcode__dispatch__reports__boxes-114947]] · [[barcode__dispatch__reports__boxes-114948]] · [[barcode__dispatch__reports__boxes-114949]] … +125 more (tag `bridge/FG0000053`)
-- **41 pallets:** [[pal-1034]] · [[pal-1035]] · [[pal-1036]] … +38 more (tag `bridge/FG0000053`)
+- **126 boxes:** [[barcode__dispatch__reports__boxes-114947]] · [[barcode__dispatch__reports__boxes-114948]] · [[barcode__dispatch__reports__boxes-114949]] … +123 more (tag `bridge/FG0000053`)
+- **121 boxes:** [[box-112466]] · [[box-112467]] · [[box-112468]] … +118 more (tag `bridge/FG0000053`)
+- **42 pallets:** [[pal-1034]] · [[pal-1035]] · [[pal-1036]] … +39 more (tag `bridge/FG0000053`)
 
 **`FG0000059`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000059]]

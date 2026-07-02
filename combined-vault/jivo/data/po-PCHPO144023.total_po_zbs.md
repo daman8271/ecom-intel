@@ -17,10 +17,10 @@ Up: [[po-PCHPO144023]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,16.0,SWIGGY,2025-10-07,52909,529.998125,CHANDIGARH,16.0,2025-09-26,2025-10-10,PCHPO144023,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52909,2026-06-30
-141.91,20.0,SWIGGY,2025-10-07,52910,149.005,CHANDIGARH,20.0,2025-09-26,2025-10-10,PCHPO144023,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52910,2026-06-30
-133.33,16.0,SWIGGY,2025-10-07,52911,139.996875,CHANDIGARH,16.0,2025-09-26,2025-10-10,PCHPO144023,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52911,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+504.76,16.0,SWIGGY,,2025-10-07,52909,529.998125,CHANDIGARH,16.0,2025-09-26,2025-10-10,PCHPO144023,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52909,2026-07-01
+141.91,20.0,SWIGGY,,2025-10-07,52910,149.005,CHANDIGARH,20.0,2025-09-26,2025-10-10,PCHPO144023,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52910,2026-07-01
+133.33,16.0,SWIGGY,,2025-10-07,52911,139.996875,CHANDIGARH,16.0,2025-09-26,2025-10-10,PCHPO144023,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52911,2026-07-01
 ```
 
 ---

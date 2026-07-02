@@ -17,11 +17,11 @@ Up: [[po-VIAPO14591]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,0.0,SWIGGY,,54169,529.998125,VIZAG,16.0,2025-10-13,2025-10-29,VIAPO14591,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54169,2026-06-30
-190.48,0.0,SWIGGY,,54170,200.00375,VIZAG,48.0,2025-10-13,2025-10-29,VIAPO14591,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54170,2026-06-30
-160.0,0.0,SWIGGY,,54171,168.0,VIZAG,40.0,2025-10-13,2025-10-29,VIAPO14591,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54171,2026-06-30
-133.33,0.0,SWIGGY,,54172,139.996875,VIZAG,16.0,2025-10-13,2025-10-29,VIAPO14591,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54172,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+504.76,0.0,SWIGGY,,,54169,529.998125,VIZAG,16.0,2025-10-13,2025-10-29,VIAPO14591,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54169,2026-07-01
+190.48,0.0,SWIGGY,,,54170,200.00375,VIZAG,48.0,2025-10-13,2025-10-29,VIAPO14591,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54170,2026-07-01
+160.0,0.0,SWIGGY,,,54171,168.0,VIZAG,40.0,2025-10-13,2025-10-29,VIAPO14591,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54171,2026-07-01
+133.33,0.0,SWIGGY,,,54172,139.996875,VIZAG,16.0,2025-10-13,2025-10-29,VIAPO14591,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54172,2026-07-01
 ```
 
 ---

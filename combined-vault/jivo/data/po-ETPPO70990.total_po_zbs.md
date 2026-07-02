@@ -17,13 +17,13 @@ Up: [[po-ETPPO70990]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,,77633,215.0,NOIDA,20.0,2026-06-24,2026-07-03,ETPPO70990,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77633,2026-06-30
-195.24,0.0,SWIGGY,,77634,205.0,NOIDA,4.0,2026-06-24,2026-07-03,ETPPO70990,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77634,2026-06-30
-928.57,0.0,SWIGGY,,77635,975.0,NOIDA,20.0,2026-06-24,2026-07-03,ETPPO70990,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77635,2026-06-30
-771.43,0.0,SWIGGY,,77636,810.0,NOIDA,12.0,2026-06-24,2026-07-03,ETPPO70990,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77636,2026-06-30
-154.29,0.0,SWIGGY,,77637,162.0,NOIDA,20.0,2026-06-24,2026-07-03,ETPPO70990,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77637,2026-06-30
-200.0,0.0,SWIGGY,,77638,210.0,NOIDA,16.0,2026-06-24,2026-07-03,ETPPO70990,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77638,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-30,77633,214.998,NOIDA,20.0,2026-06-24,2026-07-03,ETPPO70990,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77633,2026-07-01
+195.24,0.0,SWIGGY,,2026-06-30,77634,205.002,NOIDA,4.0,2026-06-24,2026-07-03,ETPPO70990,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77634,2026-07-01
+928.57,20.0,SWIGGY,,2026-06-30,77635,974.9985,NOIDA,20.0,2026-06-24,2026-07-03,ETPPO70990,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77635,2026-07-01
+771.43,10.0,SWIGGY,,2026-06-30,77636,810.0015,NOIDA,12.0,2026-06-24,2026-07-03,ETPPO70990,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77636,2026-07-01
+154.29,20.0,SWIGGY,,2026-06-30,77637,162.0045,NOIDA,20.0,2026-06-24,2026-07-03,ETPPO70990,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77637,2026-07-01
+200.0,0.0,SWIGGY,,2026-06-30,77638,210.0,NOIDA,16.0,2026-06-24,2026-07-03,ETPPO70990,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77638,2026-07-01
 ```
 
 ---

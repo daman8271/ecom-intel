@@ -17,11 +17,11 @@ Up: [[po-VIAPO28151]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-209.52,80.0,SWIGGY,2025-12-18,58031,219.99625,VIZAG,80.0,2025-12-04,2025-12-20,VIAPO28151,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58031,2026-06-30
-952.38,0.0,SWIGGY,2025-12-18,58032,999.9991667,VIZAG,12.0,2025-12-04,2025-12-20,VIAPO28151,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58032,2026-06-30
-2824.05,4.0,SWIGGY,2025-12-18,58033,2965.2525,VIZAG,4.0,2025-12-04,2025-12-20,VIAPO28151,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58033,2026-06-30
-209.52,16.0,SWIGGY,2025-12-18,58034,219.99625,VIZAG,16.0,2025-12-04,2025-12-20,VIAPO28151,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58034,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+209.52,80.0,SWIGGY,,2025-12-18,58031,219.99625,VIZAG,80.0,2025-12-04,2025-12-20,VIAPO28151,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58031,2026-07-01
+952.38,0.0,SWIGGY,,2025-12-18,58032,999.9991667,VIZAG,12.0,2025-12-04,2025-12-20,VIAPO28151,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58032,2026-07-01
+2824.05,4.0,SWIGGY,,2025-12-18,58033,2965.2525,VIZAG,4.0,2025-12-04,2025-12-20,VIAPO28151,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58033,2026-07-01
+209.52,16.0,SWIGGY,,2025-12-18,58034,219.99625,VIZAG,16.0,2025-12-04,2025-12-20,VIAPO28151,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:58034,2026-07-01
 ```
 
 ---

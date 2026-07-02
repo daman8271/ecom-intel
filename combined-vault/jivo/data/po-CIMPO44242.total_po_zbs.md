@@ -17,9 +17,9 @@ Up: [[po-CIMPO44242]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-190.48,176.0,SWIGGY,2025-10-01,52529,200.0038068,MUMBAI,176.0,2025-09-23,2025-10-16,CIMPO44242,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52529,2026-06-30
-114.29,100.0,SWIGGY,2025-10-01,52530,120.0043,MUMBAI,100.0,2025-09-23,2025-10-16,CIMPO44242,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52530,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+190.48,176.0,SWIGGY,,2025-10-01,52529,200.0038068,MUMBAI,176.0,2025-09-23,2025-10-16,CIMPO44242,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52529,2026-07-01
+114.29,100.0,SWIGGY,,2025-10-01,52530,120.0043,MUMBAI,100.0,2025-09-23,2025-10-16,CIMPO44242,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:52530,2026-07-01
 ```
 
 ---

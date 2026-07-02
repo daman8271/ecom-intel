@@ -17,10 +17,10 @@ Up: [[po-CHMPO283805]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-538.1,48.0,SWIGGY,2026-04-23,68285,565.0047917,HYDERABAD,48.0,2026-04-07,2026-04-23,CHMPO283805,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68285,2026-06-30
-952.38,40.0,SWIGGY,2026-04-23,68286,999.999,HYDERABAD,40.0,2026-04-07,2026-04-23,CHMPO283805,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68286,2026-06-30
-152.38,20.0,SWIGGY,2026-04-23,68287,159.999,HYDERABAD,20.0,2026-04-07,2026-04-23,CHMPO283805,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68287,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+538.1,48.0,SWIGGY,,2026-04-23,68285,565.0047917,HYDERABAD,48.0,2026-04-07,2026-04-23,CHMPO283805,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68285,2026-07-01
+952.38,40.0,SWIGGY,,2026-04-23,68286,999.999,HYDERABAD,40.0,2026-04-07,2026-04-23,CHMPO283805,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68286,2026-07-01
+152.38,20.0,SWIGGY,,2026-04-23,68287,159.999,HYDERABAD,20.0,2026-04-07,2026-04-23,CHMPO283805,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:68287,2026-07-01
 ```
 
 ---

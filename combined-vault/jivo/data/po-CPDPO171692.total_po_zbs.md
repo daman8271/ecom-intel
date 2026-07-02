@@ -17,14 +17,14 @@ Up: [[po-CPDPO171692]]
 Canonical raw rows (7) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,0.0,SWIGGY,,49797,222.0015,PUNE,40.0,2025-08-15,2025-09-01,CPDPO171692,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49797,2026-06-30
-504.76,0.0,SWIGGY,,49798,529.998125,PUNE,64.0,2025-08-15,2025-09-01,CPDPO171692,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49798,2026-06-30
-397.14,0.0,SWIGGY,,49799,416.9971875,PUNE,32.0,2025-08-15,2025-09-01,CPDPO171692,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 L,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49799,2026-06-30
-190.48,0.0,SWIGGY,,49800,200.0038542,PUNE,96.0,2025-08-15,2025-09-01,CPDPO171692,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49800,2026-06-30
-952.38,0.0,SWIGGY,,49801,999.9991667,PUNE,12.0,2025-08-15,2025-09-01,CPDPO171692,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49801,2026-06-30
-166.67,0.0,SWIGGY,,49802,175.0035,PUNE,20.0,2025-08-15,2025-09-01,CPDPO171692,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49802,2026-06-30
-709.52,0.0,SWIGGY,,49803,744.99625,PUNE,32.0,2025-08-15,2025-09-01,CPDPO171692,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49803,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,0.0,SWIGGY,,,49797,222.0015,PUNE,40.0,2025-08-15,2025-09-01,CPDPO171692,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49797,2026-07-01
+504.76,0.0,SWIGGY,,,49798,529.998125,PUNE,64.0,2025-08-15,2025-09-01,CPDPO171692,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49798,2026-07-01
+397.14,0.0,SWIGGY,,,49799,416.9971875,PUNE,32.0,2025-08-15,2025-09-01,CPDPO171692,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 L,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49799,2026-07-01
+190.48,0.0,SWIGGY,,,49800,200.0038542,PUNE,96.0,2025-08-15,2025-09-01,CPDPO171692,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49800,2026-07-01
+952.38,0.0,SWIGGY,,,49801,999.9991667,PUNE,12.0,2025-08-15,2025-09-01,CPDPO171692,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49801,2026-07-01
+166.67,0.0,SWIGGY,,,49802,175.0035,PUNE,20.0,2025-08-15,2025-09-01,CPDPO171692,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49802,2026-07-01
+709.52,0.0,SWIGGY,,,49803,744.99625,PUNE,32.0,2025-08-15,2025-09-01,CPDPO171692,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:49803,2026-07-01
 ```
 
 ---

@@ -17,15 +17,15 @@ Up: [[po-CADPO156870]]
 Canonical raw rows (8) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1260.0,0.0,SWIGGY,,54387,1323.0,AHMEDABAD,3.0,2025-10-20,2025-11-05,CADPO156870,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54387,2026-06-30
-190.48,0.0,SWIGGY,,54388,200.00375,AHMEDABAD,16.0,2025-10-20,2025-11-05,CADPO156870,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54388,2026-06-30
-116.19,0.0,SWIGGY,,54389,121.9995,AHMEDABAD,20.0,2025-10-20,2025-11-05,CADPO156870,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54389,2026-06-30
-165.71,0.0,SWIGGY,,54390,173.9956667,AHMEDABAD,60.0,2025-10-20,2025-11-05,CADPO156870,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54390,2026-06-30
-642.86,0.0,SWIGGY,,54391,675.0025,AHMEDABAD,12.0,2025-10-20,2025-11-05,CADPO156870,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54391,2026-06-30
-800.0,0.0,SWIGGY,,54392,840.0,AHMEDABAD,12.0,2025-10-20,2025-11-05,CADPO156870,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54392,2026-06-30
-784.76,0.0,SWIGGY,,54393,823.998,AHMEDABAD,15.0,2025-10-20,2025-11-05,CADPO156870,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54393,2026-06-30
-133.33,0.0,SWIGGY,,54394,139.9965625,AHMEDABAD,32.0,2025-10-20,2025-11-05,CADPO156870,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54394,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1260.0,0.0,SWIGGY,,,54387,1323.0,AHMEDABAD,3.0,2025-10-20,2025-11-05,CADPO156870,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54387,2026-07-01
+190.48,0.0,SWIGGY,,,54388,200.00375,AHMEDABAD,16.0,2025-10-20,2025-11-05,CADPO156870,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54388,2026-07-01
+116.19,0.0,SWIGGY,,,54389,121.9995,AHMEDABAD,20.0,2025-10-20,2025-11-05,CADPO156870,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54389,2026-07-01
+165.71,0.0,SWIGGY,,,54390,173.9956667,AHMEDABAD,60.0,2025-10-20,2025-11-05,CADPO156870,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54390,2026-07-01
+642.86,0.0,SWIGGY,,,54391,675.0025,AHMEDABAD,12.0,2025-10-20,2025-11-05,CADPO156870,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54391,2026-07-01
+800.0,0.0,SWIGGY,,,54392,840.0,AHMEDABAD,12.0,2025-10-20,2025-11-05,CADPO156870,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54392,2026-07-01
+784.76,0.0,SWIGGY,,,54393,823.998,AHMEDABAD,15.0,2025-10-20,2025-11-05,CADPO156870,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54393,2026-07-01
+133.33,0.0,SWIGGY,,,54394,139.9965625,AHMEDABAD,32.0,2025-10-20,2025-11-05,CADPO156870,,958164,Jivo Ricebran Oil 1L 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:54394,2026-07-01
 ```
 
 ---

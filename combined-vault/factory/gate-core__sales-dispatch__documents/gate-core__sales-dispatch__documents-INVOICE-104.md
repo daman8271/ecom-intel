@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "DL01MA5409"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# DL01MA5409
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35460
-- **doc_num:** 706260783
-- **doc_date:** 2026-06-27
-- **doc_total:** 25821.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000912
-- **card_name:** AMAZON (B2C -MAY-JULY)
-- **ship_to_code:** AMAZON B2C JAMMU & KASHMIR
-- **ship_to_address:** -180013IN
-- **place_of_supply:** JK
-- **bp_gstin:** 
+- **doc_entry:** 35601
+- **doc_num:** 606260194
+- **doc_date:** 2026-06-30
+- **doc_total:** 3970000.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000927
+- **card_name:** ANTIZE FOODS PRIVATE LIMITED
+- **ship_to_code:** ANTIZE FOODS PRIVATE LIMITED DELHI
+- **ship_to_address:** LAL DORA VILLAGE ALIPUR  KH NO. 393 - 394 404-406 EXTENDEDNORTH DELHI-110036IN
+- **place_of_supply:** DL
+- **bp_gstin:** 07AAMCA6026F1ZS
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** DL01MA5409
+- **transporter_name:** Bhargave Road Carrier
+- **bilty_no:** 1521
+- **bilty_date:** 2026-06-30
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** SL0000040 - COLD PRESS GROUDNUT 5 LTR + 1 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000073 - EXTRA VIRGIN 2 LTR, FG0000155 - EXTRA VIRGIN 2 LTR 10 PCS HANDLE, SL0000076 - EXTRA VIRGIN 5 LTR + 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000079 - EXTRA VIRGIN 5 LTR + POMACE 5 LTR, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000080 - EXTRA VIRGIN 5 LTR TIN 4 PCS IMPORTED, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS
-- **base_refs:** 1506264673
-- **total_quantity:** 32.000
-- **total_litres:** 81.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, FG0000028 - POMACE OLIVE 1 LTR 16 PCS
+- **base_refs:** 1706264736
+- **total_quantity:** 7600.000
+- **total_litres:** 9600.000
 - **total_boxes:** 0.000
-- **total_weight:** 43.773
-- **line_count:** 16
+- **total_weight:** 10158.508
+- **line_count:** 4
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35460, "sap_invoice_doc_num": "706260783", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 758, "sap_invoice_doc_entry": 35601, "sap_invoice_doc_num": "606260194", "invoice_number": "606260194", "eway_bill": "302277582376", "invoice_weight": "10158.509", "invoice_amount": "3970000.00", "place_of_supply": "DL", "location": "", "product_variety": "Oil", "total_litres": "9600.000", "effective_month": "2026-06", "budget_delivery_point": "NORTH DELHI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 222, "transporter_id": 50, "driver_id": null, "linked_vehicle_entry_id": 1297, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-30T13:33:44.318162Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-30", "priority": "High", "transporter_name": "Bhargave Road Carrier", "transporter_gstin": "07BZQPP0903H1Z8", "contact_person": "Pardeep", "mobile_no": "8708270230", "vehicle_no": "DL01MA5409", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1521", "bilty_date": "2026-06-30", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-30_at_6.55.59_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-30 at 6.55.59 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-30T10:52:44.744210+05:30", "updated_at": "2026-06-30T19:03:44.329543+05:30"}
   ```

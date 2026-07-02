@@ -17,13 +17,13 @@ Up: [[po-GCAPO08760]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-504.76,16.0,SWIGGY,2025-09-10,50637,529.998125,CENTRAL GOA,16.0,2025-08-28,2025-09-24,GCAPO08760,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50637,2026-06-30
-952.38,8.0,SWIGGY,2025-09-10,50638,999.99875,CENTRAL GOA,8.0,2025-08-28,2025-09-24,GCAPO08760,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50638,2026-06-30
-114.29,220.0,SWIGGY,2025-09-10,50639,120.0042727,CENTRAL GOA,220.0,2025-08-28,2025-09-24,GCAPO08760,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50639,2026-06-30
-141.9,20.0,SWIGGY,2025-09-10,50640,148.9954545,CENTRAL GOA,22.0,2025-08-28,2025-09-24,GCAPO08760,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50640,2026-06-30
-784.76,0.0,SWIGGY,2025-09-10,50641,823.9985714,CENTRAL GOA,7.0,2025-08-28,2025-09-24,GCAPO08760,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50641,2026-06-30
-2522.86,4.0,SWIGGY,2025-09-10,50642,2649.0025,CENTRAL GOA,4.0,2025-08-28,2025-09-24,GCAPO08760,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50642,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+504.76,16.0,SWIGGY,,2025-09-10,50637,529.998125,CENTRAL GOA,16.0,2025-08-28,2025-09-24,GCAPO08760,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50637,2026-07-01
+952.38,8.0,SWIGGY,,2025-09-10,50638,999.99875,CENTRAL GOA,8.0,2025-08-28,2025-09-24,GCAPO08760,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50638,2026-07-01
+114.29,220.0,SWIGGY,,2025-09-10,50639,120.0042727,CENTRAL GOA,220.0,2025-08-28,2025-09-24,GCAPO08760,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50639,2026-07-01
+141.9,20.0,SWIGGY,,2025-09-10,50640,148.9954545,CENTRAL GOA,22.0,2025-08-28,2025-09-24,GCAPO08760,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50640,2026-07-01
+784.76,0.0,SWIGGY,,2025-09-10,50641,823.9985714,CENTRAL GOA,7.0,2025-08-28,2025-09-24,GCAPO08760,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50641,2026-07-01
+2522.86,4.0,SWIGGY,,2025-09-10,50642,2649.0025,CENTRAL GOA,4.0,2025-08-28,2025-09-24,GCAPO08760,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:50642,2026-07-01
 ```
 
 ---

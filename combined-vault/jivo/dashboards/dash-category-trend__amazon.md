@@ -24,14 +24,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
  "series": [
   {
    "commodity_ltrs": 0.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 0.0,
-   "total_ltrs": 0.0,
-   "year": 2026
-  },
-  {
-   "commodity_ltrs": 0.0,
    "label": "Feb '26",
    "month": 2,
    "premium_ltrs": 0.0,
@@ -58,16 +50,24 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "commodity_ltrs": 201825.0,
    "label": "May '26",
    "month": 5,
-   "premium_ltrs": 173125.5,
-   "total_ltrs": 374950.5,
+   "premium_ltrs": 174414.5,
+   "total_ltrs": 376239.5,
    "year": 2026
   },
   {
-   "commodity_ltrs": 94686.0,
+   "commodity_ltrs": 117608.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 66809.5,
-   "total_ltrs": 161495.5,
+   "premium_ltrs": 84955.0,
+   "total_ltrs": 202563.0,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

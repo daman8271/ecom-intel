@@ -23,14 +23,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
  "platform": "bigbasket",
  "series": [
   {
-   "commodity_ltrs": 8980.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 3855.0,
-   "total_ltrs": 12835.0,
-   "year": 2026
-  },
-  {
    "commodity_ltrs": 8112.0,
    "label": "Feb '26",
    "month": 2,
@@ -63,11 +55,19 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 18801.0,
+   "commodity_ltrs": 19329.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 2445.0,
-   "total_ltrs": 21246.0,
+   "premium_ltrs": 2503.0,
+   "total_ltrs": 21832.0,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

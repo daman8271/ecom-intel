@@ -17,11 +17,11 @@ Up: [[po-VIAPO70264]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,48.0,SWIGGY,2026-06-25,75762,499.9995833,VIZAG,48.0,2026-06-06,2026-06-22,VIAPO70264,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75762,2026-06-30
-371.43,16.0,SWIGGY,2026-06-25,75763,390.00125,VIZAG,16.0,2026-06-06,2026-06-22,VIAPO70264,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75763,2026-06-30
-242.86,0.0,SWIGGY,2026-06-25,75764,255.00275,VIZAG,40.0,2026-06-06,2026-06-22,VIAPO70264,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75764,2026-06-30
-180.95,48.0,SWIGGY,2026-06-25,75765,189.9977083,VIZAG,48.0,2026-06-06,2026-06-22,VIAPO70264,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75765,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,48.0,SWIGGY,,2026-06-25,75762,499.9995833,VIZAG,48.0,2026-06-06,2026-06-22,VIAPO70264,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75762,2026-07-01
+371.43,16.0,SWIGGY,,2026-06-25,75763,390.00125,VIZAG,16.0,2026-06-06,2026-06-22,VIAPO70264,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75763,2026-07-01
+242.86,0.0,SWIGGY,,2026-06-25,75764,255.00275,VIZAG,40.0,2026-06-06,2026-06-22,VIAPO70264,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75764,2026-07-01
+180.95,48.0,SWIGGY,,2026-06-25,75765,189.9977083,VIZAG,48.0,2026-06-06,2026-06-22,VIAPO70264,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75765,2026-07-01
 ```
 
 ---

@@ -17,9 +17,9 @@ Up: [[po-CIMPO62402]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-241.32,20.0,SWIGGY,2025-12-06,57637,253.386,MUMBAI,20.0,2025-11-28,2025-12-07,CIMPO62402,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:57637,2026-06-30
-209.52,0.0,SWIGGY,2025-12-06,57638,219.99625,MUMBAI,48.0,2025-11-28,2025-12-07,CIMPO62402,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:57638,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+241.32,20.0,SWIGGY,,2025-12-06,57637,253.386,MUMBAI,20.0,2025-11-28,2025-12-07,CIMPO62402,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:57637,2026-07-01
+209.52,0.0,SWIGGY,,2025-12-06,57638,219.99625,MUMBAI,48.0,2025-11-28,2025-12-07,CIMPO62402,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:57638,2026-07-01
 ```
 
 ---

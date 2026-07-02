@@ -17,11 +17,11 @@ Up: [[po-JCEPO177986]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,0.0,SWIGGY,2026-06-23,76008,1290.0,COIMBATORE,3.0,2026-06-09,2026-07-02,JCEPO177986,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76008,2026-06-30
-476.19,64.0,SWIGGY,2026-06-23,76009,499.9995313,COIMBATORE,64.0,2026-06-09,2026-07-02,JCEPO177986,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76009,2026-06-30
-371.43,16.0,SWIGGY,2026-06-23,76010,390.00125,COIMBATORE,16.0,2026-06-09,2026-07-02,JCEPO177986,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76010,2026-06-30
-723.81,0.0,SWIGGY,2026-06-23,76011,760.0,COIMBATORE,8.0,2026-06-09,2026-07-02,JCEPO177986,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76011,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1228.57,0.0,SWIGGY,,2026-06-23,76008,1289.9985,COIMBATORE,3.0,2026-06-09,2026-07-02,JCEPO177986,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76008,2026-07-01
+476.19,64.0,SWIGGY,,2026-06-23,76009,499.9995313,COIMBATORE,64.0,2026-06-09,2026-07-02,JCEPO177986,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76009,2026-07-01
+371.43,16.0,SWIGGY,,2026-06-23,76010,390.00125,COIMBATORE,16.0,2026-06-09,2026-07-02,JCEPO177986,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76010,2026-07-01
+723.81,0.0,SWIGGY,,2026-06-23,76011,760.0005,COIMBATORE,8.0,2026-06-09,2026-07-02,JCEPO177986,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76011,2026-07-01
 ```
 
 ---

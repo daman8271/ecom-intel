@@ -17,10 +17,10 @@ Up: [[po-GWAPO24154]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-241.32,0.0,SWIGGY,,65772,253.386,GUWAHATI,20.0,2026-03-13,2026-03-29,GWAPO24154,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65772,2026-06-30
-184.83,0.0,SWIGGY,,65773,194.0725,GUWAHATI,4.0,2026-03-13,2026-03-29,GWAPO24154,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65773,2026-06-30
-1129.13,0.0,SWIGGY,,65774,1185.587,GUWAHATI,10.0,2026-03-13,2026-03-29,GWAPO24154,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65774,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+241.32,0.0,SWIGGY,,,65772,253.386,GUWAHATI,20.0,2026-03-13,2026-03-29,GWAPO24154,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65772,2026-07-01
+184.83,0.0,SWIGGY,,,65773,194.0725,GUWAHATI,4.0,2026-03-13,2026-03-29,GWAPO24154,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65773,2026-07-01
+1129.13,0.0,SWIGGY,,,65774,1185.587,GUWAHATI,10.0,2026-03-13,2026-03-29,GWAPO24154,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:65774,2026-07-01
 ```
 
 ---

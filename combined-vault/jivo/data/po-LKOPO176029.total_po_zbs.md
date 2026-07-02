@@ -17,12 +17,12 @@ Up: [[po-LKOPO176029]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,0.0,SWIGGY,,77322,1290.0,LUCKNOW,6.0,2026-06-22,2026-07-04,LKOPO176029,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77322,2026-06-30
-185.71,0.0,SWIGGY,,77323,195.0,LUCKNOW,64.0,2026-06-22,2026-07-04,LKOPO176029,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77323,2026-06-30
-344.76,0.0,SWIGGY,,77324,362.0,LUCKNOW,80.0,2026-06-22,2026-07-04,LKOPO176029,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77324,2026-06-30
-149.52,0.0,SWIGGY,,77325,157.0,LUCKNOW,100.0,2026-06-22,2026-07-04,LKOPO176029,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77325,2026-06-30
-154.29,0.0,SWIGGY,,77326,162.0,LUCKNOW,20.0,2026-06-22,2026-07-04,LKOPO176029,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77326,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+1228.57,0.0,SWIGGY,,,77322,1289.9985,LUCKNOW,6.0,2026-06-22,2026-07-04,LKOPO176029,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77322,2026-07-01
+185.71,0.0,SWIGGY,,,77323,194.9955,LUCKNOW,64.0,2026-06-22,2026-07-04,LKOPO176029,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77323,2026-07-01
+344.76,0.0,SWIGGY,,,77324,361.998,LUCKNOW,80.0,2026-06-22,2026-07-04,LKOPO176029,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77324,2026-07-01
+149.52,0.0,SWIGGY,,,77325,156.996,LUCKNOW,100.0,2026-06-22,2026-07-04,LKOPO176029,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77325,2026-07-01
+154.29,0.0,SWIGGY,,,77326,162.0045,LUCKNOW,20.0,2026-06-22,2026-07-04,LKOPO176029,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77326,2026-07-01
 ```
 
 ---

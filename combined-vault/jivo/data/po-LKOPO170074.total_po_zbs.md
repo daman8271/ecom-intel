@@ -17,9 +17,9 @@ Up: [[po-LKOPO170074]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-244.76,0.0,SWIGGY,2026-05-20,73770,256.9981429,LUCKNOW,140.0,2026-05-20,2026-05-21,LKOPO170074,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73770,2026-06-30
-182.86,140.0,SWIGGY,2026-05-20,73771,192.0028472,LUCKNOW,144.0,2026-05-20,2026-05-21,LKOPO170074,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73771,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+244.76,0.0,SWIGGY,,2026-05-20,73770,256.9981429,LUCKNOW,140.0,2026-05-20,2026-05-21,LKOPO170074,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73770,2026-07-01
+182.86,140.0,SWIGGY,,2026-05-20,73771,192.0028472,LUCKNOW,144.0,2026-05-20,2026-05-21,LKOPO170074,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:73771,2026-07-01
 ```
 
 ---

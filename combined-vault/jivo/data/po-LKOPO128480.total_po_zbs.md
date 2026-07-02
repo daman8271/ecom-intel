@@ -17,11 +17,11 @@ Up: [[po-LKOPO128480]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-211.43,0.0,SWIGGY,,53455,222.0015,LUCKNOW,20.0,2025-10-03,2025-10-25,LKOPO128480,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53455,2026-06-30
-1260.0,0.0,SWIGGY,,53456,1323.0,LUCKNOW,3.0,2025-10-03,2025-10-25,LKOPO128480,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53456,2026-06-30
-1009.52,0.0,SWIGGY,,53457,1059.996,LUCKNOW,10.0,2025-10-03,2025-10-25,LKOPO128480,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53457,2026-06-30
-642.86,0.0,SWIGGY,,53458,675.0025,LUCKNOW,4.0,2025-10-03,2025-10-25,LKOPO128480,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53458,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+211.43,0.0,SWIGGY,,,53455,222.0015,LUCKNOW,20.0,2025-10-03,2025-10-25,LKOPO128480,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53455,2026-07-01
+1260.0,0.0,SWIGGY,,,53456,1323.0,LUCKNOW,3.0,2025-10-03,2025-10-25,LKOPO128480,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53456,2026-07-01
+1009.52,0.0,SWIGGY,,,53457,1059.996,LUCKNOW,10.0,2025-10-03,2025-10-25,LKOPO128480,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53457,2026-07-01
+642.86,0.0,SWIGGY,,,53458,675.0025,LUCKNOW,4.0,2025-10-03,2025-10-25,LKOPO128480,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:53458,2026-07-01
 ```
 
 ---

@@ -17,15 +17,15 @@ Up: [[po-GCAPO59288]]
 Canonical raw rows (8) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,32.0,SWIGGY,2026-06-24,75996,499.999375,CENTRAL GOA,32.0,2026-06-09,2026-06-26,GCAPO59288,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75996,2026-06-30
-371.43,0.0,SWIGGY,2026-06-24,75997,390.00125,CENTRAL GOA,16.0,2026-06-09,2026-06-26,GCAPO59288,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75997,2026-06-30
-928.57,0.0,SWIGGY,2026-06-24,75998,975.0,CENTRAL GOA,8.0,2026-06-09,2026-06-26,GCAPO59288,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75998,2026-06-30
-933.33,0.0,SWIGGY,2026-06-24,75999,979.997,CENTRAL GOA,10.0,2026-06-09,2026-06-26,GCAPO59288,,449236,Jivo Extra Light Olive Oil 2.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75999,2026-06-30
-149.52,100.0,SWIGGY,2026-06-24,76000,156.9962,CENTRAL GOA,100.0,2026-06-09,2026-06-26,GCAPO59288,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76000,2026-06-30
-723.81,12.0,SWIGGY,2026-06-24,76001,760.0008333,CENTRAL GOA,12.0,2026-06-09,2026-06-26,GCAPO59288,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76001,2026-06-30
-147.62,0.0,SWIGGY,2026-06-24,76002,155.00125,CENTRAL GOA,16.0,2026-06-09,2026-06-26,GCAPO59288,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76002,2026-06-30
-180.95,0.0,SWIGGY,2026-06-24,76003,189.9975,CENTRAL GOA,32.0,2026-06-09,2026-06-26,GCAPO59288,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76003,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,32.0,SWIGGY,,2026-06-24,75996,499.999375,CENTRAL GOA,32.0,2026-06-09,2026-06-26,GCAPO59288,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75996,2026-07-01
+371.43,0.0,SWIGGY,,2026-06-24,75997,390.00125,CENTRAL GOA,16.0,2026-06-09,2026-06-26,GCAPO59288,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75997,2026-07-01
+928.57,0.0,SWIGGY,,2026-06-24,75998,974.9985,CENTRAL GOA,8.0,2026-06-09,2026-06-26,GCAPO59288,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75998,2026-07-01
+933.33,0.0,SWIGGY,,2026-06-24,75999,979.997,CENTRAL GOA,10.0,2026-06-09,2026-06-26,GCAPO59288,,449236,Jivo Extra Light Olive Oil 2.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75999,2026-07-01
+149.52,100.0,SWIGGY,,2026-06-24,76000,156.9962,CENTRAL GOA,100.0,2026-06-09,2026-06-26,GCAPO59288,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76000,2026-07-01
+723.81,12.0,SWIGGY,,2026-06-24,76001,760.0008333,CENTRAL GOA,12.0,2026-06-09,2026-06-26,GCAPO59288,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76001,2026-07-01
+147.62,0.0,SWIGGY,,2026-06-24,76002,155.00125,CENTRAL GOA,16.0,2026-06-09,2026-06-26,GCAPO59288,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76002,2026-07-01
+180.95,0.0,SWIGGY,,2026-06-24,76003,189.9975,CENTRAL GOA,32.0,2026-06-09,2026-06-26,GCAPO59288,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76003,2026-07-01
 ```
 
 ---

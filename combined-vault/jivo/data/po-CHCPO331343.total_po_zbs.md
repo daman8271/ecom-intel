@@ -17,10 +17,10 @@ Up: [[po-CHCPO331343]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-252.38,0.0,SWIGGY,,66001,264.999,HYDERABAD,20.0,2026-03-18,2026-04-02,CHCPO331343,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66001,2026-06-30
-173.33,0.0,SWIGGY,,66002,181.9966667,HYDERABAD,60.0,2026-03-18,2026-04-02,CHCPO331343,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66002,2026-06-30
-152.38,0.0,SWIGGY,,66003,159.9989583,HYDERABAD,48.0,2026-03-18,2026-04-02,CHCPO331343,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66003,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+252.38,0.0,SWIGGY,,,66001,264.999,HYDERABAD,20.0,2026-03-18,2026-04-02,CHCPO331343,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66001,2026-07-01
+173.33,0.0,SWIGGY,,,66002,181.9966667,HYDERABAD,60.0,2026-03-18,2026-04-02,CHCPO331343,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66002,2026-07-01
+152.38,0.0,SWIGGY,,,66003,159.9989583,HYDERABAD,48.0,2026-03-18,2026-04-02,CHCPO331343,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:66003,2026-07-01
 ```
 
 ---

@@ -17,12 +17,12 @@ Up: [[po-CPDPO276996]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-24.09,0.0,SWIGGY,2026-06-11,75464,25.29416667,PUNE,36.0,2026-06-02,2026-06-12,CPDPO276996,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75464,2026-06-30
-371.43,16.0,SWIGGY,2026-06-11,75465,390.00125,PUNE,16.0,2026-06-02,2026-06-12,CPDPO276996,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75465,2026-06-30
-890.48,0.0,SWIGGY,2026-06-11,75466,935.0039286,PUNE,28.0,2026-06-02,2026-06-12,CPDPO276996,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75466,2026-06-30
-154.29,0.0,SWIGGY,2026-06-11,75467,162.0042969,PUNE,640.0,2026-06-02,2026-06-12,CPDPO276996,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75467,2026-06-30
-733.33,10.0,SWIGGY,2026-06-11,75468,769.997,PUNE,10.0,2026-06-02,2026-06-12,CPDPO276996,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75468,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+24.09,0.0,SWIGGY,,2026-06-11,75464,25.29416667,PUNE,36.0,2026-06-02,2026-06-12,CPDPO276996,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75464,2026-07-01
+371.43,16.0,SWIGGY,,2026-06-11,75465,390.00125,PUNE,16.0,2026-06-02,2026-06-12,CPDPO276996,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75465,2026-07-01
+890.48,0.0,SWIGGY,,2026-06-11,75466,935.0039286,PUNE,28.0,2026-06-02,2026-06-12,CPDPO276996,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75466,2026-07-01
+154.29,0.0,SWIGGY,,2026-06-11,75467,162.0042969,PUNE,640.0,2026-06-02,2026-06-12,CPDPO276996,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75467,2026-07-01
+733.33,10.0,SWIGGY,,2026-06-11,75468,769.997,PUNE,10.0,2026-06-02,2026-06-12,CPDPO276996,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:75468,2026-07-01
 ```
 
 ---

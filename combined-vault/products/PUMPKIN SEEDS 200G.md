@@ -29,6 +29,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000182` |
 | canonical_sku(s) | `jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-200g-200ml`, `edsh5avcxwvgycyt` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | PUMPKIN SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 200G |
 | Bridge class | core (priced) |

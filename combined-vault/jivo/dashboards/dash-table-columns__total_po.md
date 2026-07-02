@@ -39,19 +39,19 @@ Up: [[dashboards-index]]
   "basic_rate": 32.38,
   "delivered_qty": null,
   "format": "BIG BASKET",
-  "grn_date": null,
-  "id": 16442,
-  "landing_rate": 34.0,
-  "location": "Noida",
-  "order_qty": 96.0,
-  "po_date": "2026-05-15",
-  "po_expiry_date": "2026-05-30",
-  "po_number": "IRA37959442",
-  "remark": "STOCK ISSUE",
-  "sku_code": "40335334",
-  "sku_name": "Jivo Apple Healthy Wheatgrass Juice 200 ml",
-  "status": "CANCELLED",
-  "vendor_name": "SUSTAINQUEST PRIVATE LIMITED"
+  "grn_date": "2026-06-30",
+  "id": 17464,
+  "landing_rate": 33.999,
+  "location": "Hyderabad",
+  "order_qty": 72.0,
+  "po_date": "2026-06-29",
+  "po_expiry_date": "2026-07-14",
+  "po_number": "IRA40156603",
+  "remark": "",
+  "sku_code": "40335335",
+  "sku_name": "Jivo Blueberry Healthy Wheatgrass Juice 200 ml",
+  "status": "Fulfilled",
+  "vendor_name": "SHIV SHAKTI"
  }
 }
 ```

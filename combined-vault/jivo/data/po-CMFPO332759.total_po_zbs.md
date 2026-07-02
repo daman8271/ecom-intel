@@ -17,11 +17,11 @@ Up: [[po-CMFPO332759]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-16.57,0.0,SWIGGY,,77255,17.4,MUMBAI,12.0,2026-06-20,2026-06-29,CMFPO332759,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77255,2026-06-30
-1228.57,0.0,SWIGGY,,77256,1290.0,MUMBAI,3.0,2026-06-20,2026-06-29,CMFPO332759,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77256,2026-06-30
-928.57,0.0,SWIGGY,,77257,975.0,MUMBAI,24.0,2026-06-20,2026-06-29,CMFPO332759,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77257,2026-06-30
-147.62,0.0,SWIGGY,,77258,155.0,MUMBAI,32.0,2026-06-20,2026-06-29,CMFPO332759,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77258,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+16.57,0.0,SWIGGY,,2026-06-29,77255,17.39833333,MUMBAI,12.0,2026-06-20,2026-06-29,CMFPO332759,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77255,2026-07-01
+1228.57,3.0,SWIGGY,,2026-06-29,77256,1289.9985,MUMBAI,3.0,2026-06-20,2026-06-29,CMFPO332759,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77256,2026-07-01
+928.57,24.0,SWIGGY,,2026-06-29,77257,974.99875,MUMBAI,24.0,2026-06-20,2026-06-29,CMFPO332759,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77257,2026-07-01
+147.62,32.0,SWIGGY,,2026-06-29,77258,155.0009375,MUMBAI,32.0,2026-06-20,2026-06-29,CMFPO332759,,958164,Jivo Ricebran Oil 1L 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77258,2026-07-01
 ```
 
 ---

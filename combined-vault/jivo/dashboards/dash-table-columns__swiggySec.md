@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "banjara hills",
-  "BASE_MRP": 375.0,
+  "AREA_NAME": "dahisar",
+  "BASE_MRP": 1799.0,
   "BRAND": "jivo",
-  "CITY": "Hyderabad",
+  "CITY": "Mumbai",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
   "COMBO_UNITS_SOLD": null,
-  "GMV": 375.0,
-  "ITEM_CODE": "15685",
+  "GMV": 1799.0,
+  "ITEM_CODE": "67229",
   "L1_CATEGORY": "edible oils and ghee",
-  "L2_CATEGORY": "edible oils",
-  "L3_CATEGORY": "canola cold pressed oil",
-  "ORDERED_DATE": "2025-11-20",
-  "PRODUCT_NAME": "jivo canola cold press edible oil",
-  "STORE_ID": "1267913",
+  "L2_CATEGORY": "olive oil",
+  "L3_CATEGORY": "extra virgin olive oil",
+  "ORDERED_DATE": "2025-12-10",
+  "PRODUCT_NAME": "jivo extra virgin olive oil",
+  "STORE_ID": "1237261",
   "UNITS_SOLD": 1,
   "VARIANT": "1 ltr",
-  "id": 378434
+  "id": 89225
  }
 }
 ```

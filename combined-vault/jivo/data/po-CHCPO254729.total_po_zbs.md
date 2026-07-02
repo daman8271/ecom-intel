@@ -17,10 +17,10 @@ Up: [[po-CHCPO254729]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-397.14,0.0,SWIGGY,,54362,416.9971875,HYDERABAD,96.0,2025-10-17,2025-11-02,CHCPO254729,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54362,2026-06-30
-116.19,0.0,SWIGGY,,54363,121.9995357,HYDERABAD,280.0,2025-10-17,2025-11-02,CHCPO254729,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54363,2026-06-30
-165.71,0.0,SWIGGY,,54364,173.99575,HYDERABAD,120.0,2025-10-17,2025-11-02,CHCPO254729,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54364,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+397.14,0.0,SWIGGY,,,54362,416.9971875,HYDERABAD,96.0,2025-10-17,2025-11-02,CHCPO254729,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54362,2026-07-01
+116.19,0.0,SWIGGY,,,54363,121.9995357,HYDERABAD,280.0,2025-10-17,2025-11-02,CHCPO254729,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54363,2026-07-01
+165.71,0.0,SWIGGY,,,54364,173.99575,HYDERABAD,120.0,2025-10-17,2025-11-02,CHCPO254729,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,EXPIRED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:54364,2026-07-01
 ```
 
 ---

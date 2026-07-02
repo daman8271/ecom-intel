@@ -17,11 +17,11 @@ Up: [[po-CPDPO282376]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-24.09,0.0,SWIGGY,,77221,25.29,PUNE,36.0,2026-06-20,2026-06-29,CPDPO282376,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77221,2026-06-30
-178.1,0.0,SWIGGY,,77222,187.0,PUNE,976.0,2026-06-20,2026-06-29,CPDPO282376,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77222,2026-06-30
-928.57,0.0,SWIGGY,,77223,975.0,PUNE,32.0,2026-06-20,2026-06-29,CPDPO282376,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77223,2026-06-30
-747.62,0.0,SWIGGY,,77224,785.0,PUNE,8.0,2026-06-20,2026-06-29,CPDPO282376,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77224,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+24.09,0.0,SWIGGY,,,77221,25.29,PUNE,36.0,2026-06-20,2026-06-29,CPDPO282376,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77221,2026-07-01
+178.1,0.0,SWIGGY,,,77222,187.005,PUNE,976.0,2026-06-20,2026-06-29,CPDPO282376,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77222,2026-07-01
+928.57,0.0,SWIGGY,,,77223,974.9985,PUNE,32.0,2026-06-20,2026-06-29,CPDPO282376,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77223,2026-07-01
+747.62,0.0,SWIGGY,,,77224,785.001,PUNE,8.0,2026-06-20,2026-06-29,CPDPO282376,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77224,2026-07-01
 ```
 
 ---

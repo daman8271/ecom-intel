@@ -23,14 +23,6 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  "platform": "flipkart_grocery",
  "series": [
   {
-   "commodity_ltrs": 43170.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 1835.0,
-   "total_ltrs": 45005.0,
-   "year": 2026
-  },
-  {
    "commodity_ltrs": 69404.0,
    "label": "Feb '26",
    "month": 2,
@@ -63,11 +55,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 18178.0,
+   "commodity_ltrs": 19818.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 1988.0,
-   "total_ltrs": 20166.0,
+   "premium_ltrs": 2168.0,
+   "total_ltrs": 21986.0,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

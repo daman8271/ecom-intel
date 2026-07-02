@@ -17,12 +17,12 @@ Up: [[po-VIAPO71765]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,0.0,SWIGGY,2026-06-25,76143,214.998,VIZAG,20.0,2026-06-11,2026-06-27,VIAPO71765,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76143,2026-06-30
-185.71,528.0,SWIGGY,2026-06-25,76144,195.0,VIZAG,560.0,2026-06-11,2026-06-27,VIAPO71765,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76144,2026-06-30
-154.29,312.0,SWIGGY,2026-06-25,76145,162.0042813,VIZAG,320.0,2026-06-11,2026-06-27,VIAPO71765,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76145,2026-06-30
-242.86,0.0,SWIGGY,2026-06-25,76146,255.0029,VIZAG,100.0,2026-06-11,2026-06-27,VIAPO71765,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76146,2026-06-30
-180.95,48.0,SWIGGY,2026-06-25,76147,189.9977083,VIZAG,48.0,2026-06-11,2026-06-27,VIAPO71765,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76147,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,0.0,SWIGGY,,2026-06-25,76143,214.998,VIZAG,20.0,2026-06-11,2026-06-27,VIAPO71765,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76143,2026-07-01
+185.71,528.0,SWIGGY,,2026-06-25,76144,194.9955,VIZAG,560.0,2026-06-11,2026-06-27,VIAPO71765,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76144,2026-07-01
+154.29,312.0,SWIGGY,,2026-06-25,76145,162.0042813,VIZAG,320.0,2026-06-11,2026-06-27,VIAPO71765,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76145,2026-07-01
+242.86,0.0,SWIGGY,,2026-06-25,76146,255.0029,VIZAG,100.0,2026-06-11,2026-06-27,VIAPO71765,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76146,2026-07-01
+180.95,48.0,SWIGGY,,2026-06-25,76147,189.9977083,VIZAG,48.0,2026-06-11,2026-06-27,VIAPO71765,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:76147,2026-07-01
 ```
 
 ---

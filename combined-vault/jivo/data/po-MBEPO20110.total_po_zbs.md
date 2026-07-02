@@ -17,10 +17,10 @@ Up: [[po-MBEPO20110]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-366.67,16.0,SWIGGY,2026-05-09,71622,385.003125,BANGALORE,16.0,2026-05-05,2026-05-17,MBEPO20110,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71622,2026-06-30
-890.48,0.0,SWIGGY,2026-05-09,71623,935.0041667,BANGALORE,12.0,2026-05-05,2026-05-17,MBEPO20110,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71623,2026-06-30
-147.62,260.0,SWIGGY,2026-05-09,71624,155.0009615,BANGALORE,260.0,2026-05-05,2026-05-17,MBEPO20110,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71624,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+366.67,16.0,SWIGGY,,2026-05-09,71622,385.003125,BANGALORE,16.0,2026-05-05,2026-05-17,MBEPO20110,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71622,2026-07-01
+890.48,0.0,SWIGGY,,2026-05-09,71623,935.0041667,BANGALORE,12.0,2026-05-05,2026-05-17,MBEPO20110,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71623,2026-07-01
+147.62,260.0,SWIGGY,,2026-05-09,71624,155.0009615,BANGALORE,260.0,2026-05-05,2026-05-17,MBEPO20110,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:71624,2026-07-01
 ```
 
 ---

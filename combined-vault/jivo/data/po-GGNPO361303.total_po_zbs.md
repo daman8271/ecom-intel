@@ -17,11 +17,11 @@ Up: [[po-GGNPO361303]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,24.0,SWIGGY,2026-06-02,74522,205.0020833,DELHI,24.0,2026-05-26,2026-06-04,GGNPO361303,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74522,2026-06-30
-890.48,36.0,SWIGGY,2026-06-02,74523,935.0038889,DELHI,36.0,2026-05-26,2026-06-04,GGNPO361303,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74523,2026-06-30
-738.1,4.0,SWIGGY,2026-06-02,74524,775.005,DELHI,4.0,2026-05-26,2026-06-04,GGNPO361303,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74524,2026-06-30
-147.62,96.0,SWIGGY,2026-06-02,74525,155.0009375,DELHI,96.0,2026-05-26,2026-06-04,GGNPO361303,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74525,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+195.24,24.0,SWIGGY,,2026-06-02,74522,205.0020833,DELHI,24.0,2026-05-26,2026-06-04,GGNPO361303,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74522,2026-07-01
+890.48,36.0,SWIGGY,,2026-06-02,74523,935.0038889,DELHI,36.0,2026-05-26,2026-06-04,GGNPO361303,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74523,2026-07-01
+738.1,4.0,SWIGGY,,2026-06-02,74524,775.005,DELHI,4.0,2026-05-26,2026-06-04,GGNPO361303,,766072,Jivo Ricebran Oil 5L 5.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74524,2026-07-01
+147.62,96.0,SWIGGY,,2026-06-02,74525,155.0009375,DELHI,96.0,2026-05-26,2026-06-04,GGNPO361303,,958164,Jivo Ricebran Oil 1L 1.0 ltr,COMPLETED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:74525,2026-07-01
 ```
 
 ---

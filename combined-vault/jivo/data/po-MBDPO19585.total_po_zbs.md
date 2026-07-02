@@ -17,11 +17,11 @@ Up: [[po-MBDPO19585]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,40.0,SWIGGY,2026-06-19,75811,214.998,BANGALORE,40.0,2026-06-08,2026-06-20,MBDPO19585,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75811,2026-06-30
-476.19,64.0,SWIGGY,2026-06-19,75812,499.9995313,BANGALORE,64.0,2026-06-08,2026-06-20,MBDPO19585,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75812,2026-06-30
-27.5,0.0,SWIGGY,2026-06-19,75813,38.5,BANGALORE,60.0,2026-06-08,2026-06-20,MBDPO19585,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75813,2026-06-30
-723.81,0.0,SWIGGY,2026-06-19,75814,760.0,BANGALORE,4.0,2026-06-08,2026-06-20,MBDPO19585,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75814,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,40.0,SWIGGY,,2026-06-19,75811,214.998,BANGALORE,40.0,2026-06-08,2026-06-20,MBDPO19585,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75811,2026-07-01
+476.19,64.0,SWIGGY,,2026-06-19,75812,499.9995313,BANGALORE,64.0,2026-06-08,2026-06-20,MBDPO19585,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75812,2026-07-01
+27.5,0.0,SWIGGY,,2026-06-19,75813,38.5,BANGALORE,60.0,2026-06-08,2026-06-20,MBDPO19585,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75813,2026-07-01
+723.81,0.0,SWIGGY,,2026-06-19,75814,760.0005,BANGALORE,4.0,2026-06-08,2026-06-20,MBDPO19585,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75814,2026-07-01
 ```
 
 ---

@@ -17,9 +17,9 @@ Up: [[po-PCHPO142943]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-114.29,860.0,SWIGGY,2025-10-03,52501,120.0042907,CHANDIGARH,860.0,2025-09-23,2025-10-16,PCHPO142943,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52501,2026-06-30
-166.67,600.0,SWIGGY,2025-10-03,52502,175.0033333,CHANDIGARH,600.0,2025-09-23,2025-10-16,PCHPO142943,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52502,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+114.29,860.0,SWIGGY,,2025-10-03,52501,120.0042907,CHANDIGARH,860.0,2025-09-23,2025-10-16,PCHPO142943,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52501,2026-07-01
+166.67,600.0,SWIGGY,,2025-10-03,52502,175.0033333,CHANDIGARH,600.0,2025-09-23,2025-10-16,PCHPO142943,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,EVARA ENTERPRISES,2026-06-27,total_po_zbs:52502,2026-07-01
 ```
 
 ---

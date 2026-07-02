@@ -20,6 +20,48 @@ Up: [[dashboards-index]] · [[2026-05]]
 {
  "brands": [],
  "categories": [],
+ "cities": [
+  {
+   "city": "Delhi",
+   "value": 45168.0
+  },
+  {
+   "city": "Mumbai",
+   "value": 30220.0
+  },
+  {
+   "city": "Hyderabad",
+   "value": 17441.0
+  },
+  {
+   "city": "Bangalore",
+   "value": 16505.0
+  },
+  {
+   "city": "Bengaluru",
+   "value": 13675.0
+  },
+  {
+   "city": "Gurgaon",
+   "value": 11394.0
+  },
+  {
+   "city": "Pune",
+   "value": 10702.0
+  },
+  {
+   "city": "Chandigarh",
+   "value": 9204.0
+  },
+  {
+   "city": "Noida",
+   "value": 8863.0
+  },
+  {
+   "city": "Ghaziabad",
+   "value": 8709.0
+  }
+ ],
  "errors": [],
  "filter_options": {
   "brands": [
@@ -237,6 +279,10 @@ Up: [[dashboards-index]] · [[2026-05]]
    {
     "category": "MUSTARD",
     "sub_category": "MUSTARD KACCHI GHANI"
+   },
+   {
+    "category": "MUSTARD",
+    "sub_category": "MUSTARD KACHI GHANI"
    },
    {
     "category": "MUSTARD",

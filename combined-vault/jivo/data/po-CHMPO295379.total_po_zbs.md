@@ -17,11 +17,11 @@ Up: [[po-CHMPO295379]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-261.91,20.0,SWIGGY,2026-05-13,72868,275.005,HYDERABAD,20.0,2026-05-13,2026-05-15,CHMPO295379,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72868,2026-06-30
-200.0,0.0,SWIGGY,2026-05-13,72869,210.0,HYDERABAD,80.0,2026-05-13,2026-05-15,CHMPO295379,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72869,2026-06-30
-1000.0,0.0,SWIGGY,2026-05-13,72870,1050.0,HYDERABAD,24.0,2026-05-13,2026-05-15,CHMPO295379,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72870,2026-06-30
-785.71,16.0,SWIGGY,2026-05-13,72871,824.995625,HYDERABAD,16.0,2026-05-13,2026-05-15,CHMPO295379,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72871,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+261.91,20.0,SWIGGY,,2026-05-13,72868,275.005,HYDERABAD,20.0,2026-05-13,2026-05-15,CHMPO295379,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72868,2026-07-01
+200.0,0.0,SWIGGY,,2026-05-13,72869,210.0,HYDERABAD,80.0,2026-05-13,2026-05-15,CHMPO295379,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72869,2026-07-01
+1000.0,0.0,SWIGGY,,2026-05-13,72870,1050.0,HYDERABAD,24.0,2026-05-13,2026-05-15,CHMPO295379,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72870,2026-07-01
+785.71,16.0,SWIGGY,,2026-05-13,72871,824.995625,HYDERABAD,16.0,2026-05-13,2026-05-15,CHMPO295379,,67229,Jivo Extra Virgin Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:72871,2026-07-01
 ```
 
 ---

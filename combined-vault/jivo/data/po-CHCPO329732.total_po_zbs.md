@@ -17,11 +17,11 @@ Up: [[po-CHCPO329732]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-523.81,0.0,SWIGGY,,65663,550.000625,HYDERABAD,32.0,2026-03-12,2026-03-28,CHCPO329732,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65663,2026-06-30
-690.48,0.0,SWIGGY,,65664,725.00375,HYDERABAD,8.0,2026-03-12,2026-03-28,CHCPO329732,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65664,2026-06-30
-152.38,0.0,SWIGGY,,65665,159.999,HYDERABAD,20.0,2026-03-12,2026-03-28,CHCPO329732,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65665,2026-06-30
-142.86,0.0,SWIGGY,,65666,150.0029167,HYDERABAD,48.0,2026-03-12,2026-03-28,CHCPO329732,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65666,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+523.81,0.0,SWIGGY,,,65663,550.000625,HYDERABAD,32.0,2026-03-12,2026-03-28,CHCPO329732,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65663,2026-07-01
+690.48,0.0,SWIGGY,,,65664,725.00375,HYDERABAD,8.0,2026-03-12,2026-03-28,CHCPO329732,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65664,2026-07-01
+152.38,0.0,SWIGGY,,,65665,159.999,HYDERABAD,20.0,2026-03-12,2026-03-28,CHCPO329732,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65665,2026-07-01
+142.86,0.0,SWIGGY,,,65666,150.0029167,HYDERABAD,48.0,2026-03-12,2026-03-28,CHCPO329732,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CANCELLED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:65666,2026-07-01
 ```
 
 ---

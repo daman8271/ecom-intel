@@ -17,12 +17,12 @@ Up: [[po-KWBPO94885]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,48.0,SWIGGY,2026-06-24,76258,214.9981667,KOLKATA,60.0,2026-06-12,2026-06-24,KWBPO94885,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76258,2026-06-30
-476.19,0.0,SWIGGY,2026-06-24,76259,499.9995,KOLKATA,80.0,2026-06-12,2026-06-24,KWBPO94885,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76259,2026-06-30
-178.1,96.0,SWIGGY,2026-06-24,76260,187.0047917,KOLKATA,96.0,2026-06-12,2026-06-24,KWBPO94885,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76260,2026-06-30
-154.29,0.0,SWIGGY,2026-06-24,76261,162.0045,KOLKATA,20.0,2026-06-12,2026-06-24,KWBPO94885,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76261,2026-06-30
-22.79,0.0,SWIGGY,2026-06-24,76262,31.90416667,KOLKATA,24.0,2026-06-12,2026-06-24,KWBPO94885,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76262,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,48.0,SWIGGY,,2026-06-24,76258,214.9981667,KOLKATA,60.0,2026-06-12,2026-06-24,KWBPO94885,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76258,2026-07-01
+476.19,0.0,SWIGGY,,2026-06-24,76259,499.9995,KOLKATA,80.0,2026-06-12,2026-06-24,KWBPO94885,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76259,2026-07-01
+178.1,96.0,SWIGGY,,2026-06-24,76260,187.0047917,KOLKATA,96.0,2026-06-12,2026-06-24,KWBPO94885,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76260,2026-07-01
+154.29,0.0,SWIGGY,,2026-06-24,76261,162.0045,KOLKATA,20.0,2026-06-12,2026-06-24,KWBPO94885,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76261,2026-07-01
+22.79,0.0,SWIGGY,,2026-06-24,76262,31.90416667,KOLKATA,24.0,2026-06-12,2026-06-24,KWBPO94885,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,Fulfilled,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:76262,2026-07-01
 ```
 
 ---

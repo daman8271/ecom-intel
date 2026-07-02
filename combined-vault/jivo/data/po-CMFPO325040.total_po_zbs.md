@@ -17,11 +17,11 @@ Up: [[po-CMFPO325040]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-16.57,0.0,SWIGGY,2026-06-04,74700,17.39875,MUMBAI,24.0,2026-05-28,2026-06-06,CMFPO325040,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74700,2026-06-30
-344.76,0.0,SWIGGY,2026-06-04,74701,361.998,MUMBAI,50.0,2026-05-28,2026-06-06,CMFPO325040,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74701,2026-06-30
-244.76,20.0,SWIGGY,2026-06-04,74702,256.998,MUMBAI,20.0,2026-05-28,2026-06-06,CMFPO325040,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74702,2026-06-30
-182.86,0.0,SWIGGY,2026-06-04,74703,192.003125,MUMBAI,16.0,2026-05-28,2026-06-06,CMFPO325040,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74703,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+16.57,0.0,SWIGGY,,2026-06-04,74700,17.39875,MUMBAI,24.0,2026-05-28,2026-06-06,CMFPO325040,,149270,JIVO NATURAL MINERALS WATER 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74700,2026-07-01
+344.76,0.0,SWIGGY,,2026-06-04,74701,361.998,MUMBAI,50.0,2026-05-28,2026-06-06,CMFPO325040,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74701,2026-07-01
+244.76,20.0,SWIGGY,,2026-06-04,74702,256.998,MUMBAI,20.0,2026-05-28,2026-06-06,CMFPO325040,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74702,2026-07-01
+182.86,0.0,SWIGGY,,2026-06-04,74703,192.003125,MUMBAI,16.0,2026-05-28,2026-06-06,CMFPO325040,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:74703,2026-07-01
 ```
 
 ---

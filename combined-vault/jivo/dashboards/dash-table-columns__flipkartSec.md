@@ -43,20 +43,20 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
   "Cancellation Amount": 0.0,
   "Cancellation Units": 0,
   "Category": "Gourmet",
-  "Final Sale Amount": 3647.0,
-  "Final Sale Units": 4,
+  "Final Sale Amount": 2316.0,
+  "Final Sale Units": 2,
   "Fulfillment Type": "NON_FBF",
-  "GMV": 3647.0,
-  "Gross Units": 4,
+  "GMV": 2316.0,
+  "Gross Units": 2,
   "Location Id": "LOCd11c4c8929a44e208e29b98274763dfd",
   "Order Date": "2026-06-01",
-  "Product Id": "EDOFT6PR7QMYHGJH",
+  "Product Id": "EDOGNZ7EGKQPZ3Y9",
   "Return Amount": 0.0,
   "Return Units": 0,
-  "SKU ID": "Extra light 1+1L",
+  "SKU ID": "ExtraLight1Ltr-Pomace1Ltr-Pomace1Ltr",
   "Vertical": "OtherCookingOil",
-  "created_at": "2026-06-04T06:28:17.234785",
-  "id": 77252
+  "created_at": "2026-06-04T06:28:17.225422",
+  "id": 77243
  }
 }
 ```

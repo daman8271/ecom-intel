@@ -17,10 +17,10 @@ Up: [[po-VIAPO70416]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,48.0,SWIGGY,2026-06-25,75793,499.9995833,VIZAG,48.0,2026-06-06,2026-06-22,VIAPO70416,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75793,2026-06-30
-185.71,144.0,SWIGGY,2026-06-25,75794,195.0,VIZAG,144.0,2026-06-06,2026-06-22,VIAPO70416,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75794,2026-06-30
-928.57,0.0,SWIGGY,2026-06-25,75795,975.0,VIZAG,24.0,2026-06-06,2026-06-22,VIAPO70416,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75795,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,48.0,SWIGGY,,2026-06-25,75793,499.9995833,VIZAG,48.0,2026-06-06,2026-06-22,VIAPO70416,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75793,2026-07-01
+185.71,144.0,SWIGGY,,2026-06-25,75794,194.9955,VIZAG,144.0,2026-06-06,2026-06-22,VIAPO70416,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75794,2026-07-01
+928.57,0.0,SWIGGY,,2026-06-25,75795,974.9985,VIZAG,24.0,2026-06-06,2026-06-22,VIAPO70416,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:75795,2026-07-01
 ```
 
 ---

@@ -17,10 +17,10 @@ Up: [[po-CHMPO253688]]
 Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-409.52,16.0,SWIGGY,2026-01-15,60205,429.99625,HYDERABAD,16.0,2026-01-05,2026-01-21,CHMPO253688,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60205,2026-06-30
-819.05,13.0,SWIGGY,2026-01-15,60206,860.0023077,HYDERABAD,13.0,2026-01-05,2026-01-21,CHMPO253688,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60206,2026-06-30
-209.52,32.0,SWIGGY,2026-01-15,60207,219.99625,HYDERABAD,32.0,2026-01-05,2026-01-21,CHMPO253688,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60207,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+409.52,16.0,SWIGGY,,2026-01-15,60205,429.99625,HYDERABAD,16.0,2026-01-05,2026-01-21,CHMPO253688,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60205,2026-07-01
+819.05,13.0,SWIGGY,,2026-01-15,60206,860.0023077,HYDERABAD,13.0,2026-01-05,2026-01-21,CHMPO253688,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60206,2026-07-01
+209.52,32.0,SWIGGY,,2026-01-15,60207,219.99625,HYDERABAD,32.0,2026-01-05,2026-01-21,CHMPO253688,,968589,Jivo SO OLive Oil 1L 1.0 ltr,COMPLETED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:60207,2026-07-01
 ```
 
 ---

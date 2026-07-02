@@ -17,11 +17,11 @@ Up: [[po-CMFPO331108]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,16.0,SWIGGY,2026-06-20,76809,499.9995833,MUMBAI,48.0,2026-06-16,2026-06-25,CMFPO331108,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76809,2026-06-30
-185.71,0.0,SWIGGY,2026-06-20,76810,194.99575,MUMBAI,80.0,2026-06-16,2026-06-25,CMFPO331108,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76810,2026-06-30
-144.76,100.0,SWIGGY,2026-06-20,76811,151.9981,MUMBAI,100.0,2026-06-16,2026-06-25,CMFPO331108,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76811,2026-06-30
-154.29,320.0,SWIGGY,2026-06-20,76812,162.0042813,MUMBAI,320.0,2026-06-16,2026-06-25,CMFPO331108,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76812,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+476.19,16.0,SWIGGY,,2026-06-20,76809,499.9995833,MUMBAI,48.0,2026-06-16,2026-06-25,CMFPO331108,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76809,2026-07-01
+185.71,0.0,SWIGGY,,2026-06-20,76810,194.99575,MUMBAI,80.0,2026-06-16,2026-06-25,CMFPO331108,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76810,2026-07-01
+144.76,100.0,SWIGGY,,2026-06-20,76811,151.9981,MUMBAI,100.0,2026-06-16,2026-06-25,CMFPO331108,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76811,2026-07-01
+154.29,320.0,SWIGGY,,2026-06-20,76812,162.0042813,MUMBAI,320.0,2026-06-16,2026-06-25,CMFPO331108,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:76812,2026-07-01
 ```
 
 ---

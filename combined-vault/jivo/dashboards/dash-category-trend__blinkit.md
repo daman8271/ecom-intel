@@ -23,14 +23,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
  "platform": "blinkit",
  "series": [
   {
-   "commodity_ltrs": 17250.0,
-   "label": "Jan '26",
-   "month": 1,
-   "premium_ltrs": 38362.0,
-   "total_ltrs": 55612.0,
-   "year": 2026
-  },
-  {
    "commodity_ltrs": 31660.0,
    "label": "Feb '26",
    "month": 2,
@@ -63,11 +55,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 13704.0,
+   "commodity_ltrs": 14384.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 16494.0,
-   "total_ltrs": 30198.0,
+   "premium_ltrs": 16770.0,
+   "total_ltrs": 31154.0,
+   "year": 2026
+  },
+  {
+   "commodity_ltrs": 0.0,
+   "label": "Jul '26",
+   "month": 7,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

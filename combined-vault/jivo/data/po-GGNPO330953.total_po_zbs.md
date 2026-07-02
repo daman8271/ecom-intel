@@ -17,8 +17,8 @@ Up: [[po-GGNPO330953]]
 Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-27.5,0.0,SWIGGY,,64390,38.5,DELHI,12.0,2026-02-23,2026-03-04,GGNPO330953,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64390,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+27.5,0.0,SWIGGY,,,64390,38.5,DELHI,12.0,2026-02-23,2026-03-04,GGNPO330953,,278756,JivoÂ Fizzy Flavoured Soda (Peach) 750.0 ml,EXPIRED,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:64390,2026-07-01
 ```
 
 ---

@@ -17,13 +17,13 @@ Up: [[po-CADPO184379]]
 Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.09,20.0,SWIGGY,2026-02-17,63199,249.995,AHMEDABAD,20.0,2026-02-10,2026-02-18,CADPO184379,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63199,2026-06-30
-209.52,128.0,SWIGGY,2026-02-17,63200,219.9961719,AHMEDABAD,128.0,2026-02-10,2026-02-18,CADPO184379,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63200,2026-06-30
-144.76,0.0,SWIGGY,2026-02-17,63201,151.998,AHMEDABAD,20.0,2026-02-10,2026-02-18,CADPO184379,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63201,2026-06-30
-761.91,0.0,SWIGGY,2026-02-17,63202,800.005,AHMEDABAD,12.0,2026-02-10,2026-02-18,CADPO184379,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63202,2026-06-30
-163.81,20.0,SWIGGY,2026-02-17,63203,172.0005,AHMEDABAD,20.0,2026-02-10,2026-02-18,CADPO184379,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63203,2026-06-30
-2619.05,4.0,SWIGGY,2026-02-17,63204,2750.0025,AHMEDABAD,4.0,2026-02-10,2026-02-18,CADPO184379,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63204,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.09,20.0,SWIGGY,,2026-02-17,63199,249.995,AHMEDABAD,20.0,2026-02-10,2026-02-18,CADPO184379,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63199,2026-07-01
+209.52,128.0,SWIGGY,,2026-02-17,63200,219.9961719,AHMEDABAD,128.0,2026-02-10,2026-02-18,CADPO184379,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63200,2026-07-01
+144.76,0.0,SWIGGY,,2026-02-17,63201,151.998,AHMEDABAD,20.0,2026-02-10,2026-02-18,CADPO184379,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63201,2026-07-01
+761.91,0.0,SWIGGY,,2026-02-17,63202,800.005,AHMEDABAD,12.0,2026-02-10,2026-02-18,CADPO184379,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63202,2026-07-01
+163.81,20.0,SWIGGY,,2026-02-17,63203,172.0005,AHMEDABAD,20.0,2026-02-10,2026-02-18,CADPO184379,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63203,2026-07-01
+2619.05,4.0,SWIGGY,,2026-02-17,63204,2750.0025,AHMEDABAD,4.0,2026-02-10,2026-02-18,CADPO184379,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,COMPLETED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:63204,2026-07-01
 ```
 
 ---

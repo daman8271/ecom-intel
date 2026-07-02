@@ -29,5 +29,4 @@ tags:
 - **removed_from_pallet:** False
 
 ## Related
-- box_id -> [[box-9498]]
 - item -> [[oitm-FG0000032]]

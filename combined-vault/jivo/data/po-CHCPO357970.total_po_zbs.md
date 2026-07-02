@@ -17,11 +17,11 @@ Up: [[po-CHCPO357970]]
 Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,2026-06-28,77103,214.998,HYDERABAD,20.0,2026-06-18,2026-07-20,CHCPO357970,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77103,2026-06-30
-1228.57,3.0,SWIGGY,2026-06-28,77104,1290.0,HYDERABAD,3.0,2026-06-18,2026-07-20,CHCPO357970,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77104,2026-06-30
-185.71,,SWIGGY,2026-06-28,77105,194.9957031,HYDERABAD,768.0,2026-06-18,2026-07-20,CHCPO357970,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77105,2026-06-30
-733.33,,SWIGGY,2026-06-28,77106,769.997,HYDERABAD,10.0,2026-06-18,2026-07-20,CHCPO357970,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77106,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+204.76,20.0,SWIGGY,,2026-06-28,77103,214.998,HYDERABAD,20.0,2026-06-18,2026-07-20,CHCPO357970,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77103,2026-07-01
+1228.57,3.0,SWIGGY,,2026-06-28,77104,1289.9985,HYDERABAD,3.0,2026-06-18,2026-07-20,CHCPO357970,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77104,2026-07-01
+185.71,,SWIGGY,,2026-06-28,77105,194.9957031,HYDERABAD,768.0,2026-06-18,2026-07-20,CHCPO357970,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77105,2026-07-01
+733.33,,SWIGGY,,2026-06-28,77106,769.997,HYDERABAD,10.0,2026-06-18,2026-07-20,CHCPO357970,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-27,total_po_zbs:77106,2026-07-01
 ```
 
 ---

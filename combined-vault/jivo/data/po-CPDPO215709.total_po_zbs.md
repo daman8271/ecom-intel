@@ -17,12 +17,12 @@ Up: [[po-CPDPO215709]]
 Canonical raw rows (5) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-564.16,0.0,SWIGGY,,58005,592.368125,PUNE,16.0,2025-12-04,2025-12-13,CPDPO215709,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58005,2026-06-30
-443.1,0.0,SWIGGY,,58006,465.2546875,PUNE,32.0,2025-12-04,2025-12-13,CPDPO215709,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58006,2026-06-30
-1129.13,0.0,SWIGGY,,58007,1185.587,PUNE,10.0,2025-12-04,2025-12-13,CPDPO215709,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58007,2026-06-30
-887.01,0.0,SWIGGY,,58008,931.36,PUNE,5.0,2025-12-04,2025-12-13,CPDPO215709,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58008,2026-06-30
-2824.05,0.0,SWIGGY,,58009,2965.2525,PUNE,8.0,2025-12-04,2025-12-13,CPDPO215709,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58009,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+564.16,0.0,SWIGGY,,,58005,592.368125,PUNE,16.0,2025-12-04,2025-12-13,CPDPO215709,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58005,2026-07-01
+443.1,0.0,SWIGGY,,,58006,465.2546875,PUNE,32.0,2025-12-04,2025-12-13,CPDPO215709,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58006,2026-07-01
+1129.13,0.0,SWIGGY,,,58007,1185.587,PUNE,10.0,2025-12-04,2025-12-13,CPDPO215709,,449236,Jivo Extra Light Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58007,2026-07-01
+887.01,0.0,SWIGGY,,,58008,931.36,PUNE,5.0,2025-12-04,2025-12-13,CPDPO215709,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58008,2026-07-01
+2824.05,0.0,SWIGGY,,,58009,2965.2525,PUNE,8.0,2025-12-04,2025-12-13,CPDPO215709,,95788,Jivo Extra Light Edible Olive Oil Ideal for Everyday Indian Cooking 5.0 ltr,EXPIRED,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:58009,2026-07-01
 ```
 
 ---

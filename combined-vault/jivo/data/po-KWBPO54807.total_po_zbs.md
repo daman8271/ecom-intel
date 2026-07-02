@@ -17,9 +17,9 @@ Up: [[po-KWBPO54807]]
 Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
-basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-238.09,20.0,SWIGGY,2026-01-09,60175,249.995,KOLKATA,20.0,2026-01-03,2026-01-14,KWBPO54807,Appointment Done,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:60175,2026-06-30
-409.52,32.0,SWIGGY,2026-01-09,60176,429.99625,KOLKATA,32.0,2026-01-03,2026-01-14,KWBPO54807,Appointment Done,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:60176,2026-06-30
+basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
+238.09,20.0,SWIGGY,,2026-01-09,60175,249.995,KOLKATA,20.0,2026-01-03,2026-01-14,KWBPO54807,Appointment Done,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:60175,2026-07-01
+409.52,32.0,SWIGGY,,2026-01-09,60176,429.99625,KOLKATA,32.0,2026-01-03,2026-01-14,KWBPO54807,Appointment Done,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,COMPLETED,BABA LOKENATH TRADERS,2026-06-27,total_po_zbs:60176,2026-07-01
 ```
 
 ---
