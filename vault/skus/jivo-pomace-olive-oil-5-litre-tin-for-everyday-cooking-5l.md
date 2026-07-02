@@ -7,11 +7,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-30
-observations: 11531
-min_price: 1897
+last_seen: 2026-07-02
+observations: 11624
+min_price: 1699
 max_price: 2701
-latest_price: 1917
+latest_price: 1699
 tags:
   - type/sku-hub
   - platform/amazon
@@ -28,15 +28,15 @@ Up: [[skus-index]]
 ## Sold on
 - [[amazon]] — latest ₹2099 (58.0% off)
 - [[amazon-fresh]] — latest ₹1917 (61.7% off)
-- [[amazon-now]] — latest ₹1917 (61.7% off)
+- [[amazon-now]] — latest ₹1699 (66.0% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Hyderabad]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (116)
-[[amazon-now-2026-06-30-0928]] · [[amazon-now-2026-06-29-0903]] · [[amazon-now-2026-06-28-0905]] · [[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-27-1014]] · [[amazon-now-2026-06-26-1405]] · [[amazon-now-2026-06-26-1020]] · [[amazon-now-2026-06-25-1425]] · [[amazon-now-2026-06-25-1018]] · [[amazon-now-2026-06-24-1400]] · [[amazon-now-2026-06-24-1018]] · [[amazon-now-2026-06-23-1403]] · [[amazon-now-2026-06-23-1024]] · [[amazon-now-2026-06-22-1410]] · [[amazon-now-2026-06-22-1021]] · [[amazon-now-2026-06-21-1404]] · [[amazon-now-2026-06-21-1020]] · [[amazon-now-2026-06-20-1400]] · [[amazon-now-2026-06-20-1016]] · [[amazon-now-2026-06-19-1354]] · [[amazon-now-2026-06-19-1019]] · [[amazon-now-2026-06-18-1357]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-17-1405]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-15-1352]] · [[amazon-now-2026-06-15-1019]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1407]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-11-1403]] · [[amazon-now-2026-06-11-1022]] · [[amazon-now-2026-06-10-1336]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-05-0131]] · [[amazon-now-2026-06-05-0112]] · [[amazon-now-2026-06-04-1417]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-29-0710]] · [[amazon-fresh-2026-06-28-0710]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]] · [[amazon-fresh-2026-06-26-1250]] · [[amazon-fresh-2026-06-26-0904]] · [[amazon-fresh-2026-06-25-1310]] · [[amazon-fresh-2026-06-25-0904]] · [[amazon-fresh-2026-06-24-1243]] · [[amazon-fresh-2026-06-24-0904]] · [[amazon-fresh-2026-06-23-1246]] · [[amazon-fresh-2026-06-23-0908]] · [[amazon-fresh-2026-06-22-1252]] · [[amazon-fresh-2026-06-22-0906]] · [[amazon-fresh-2026-06-21-1247]] · [[amazon-fresh-2026-06-21-0904]] · [[amazon-fresh-2026-06-20-1243]] · [[amazon-fresh-2026-06-20-0902]] · [[amazon-fresh-2026-06-19-1241]] · [[amazon-fresh-2026-06-19-0909]] · [[amazon-fresh-2026-06-18-1246]] · [[amazon-fresh-2026-06-18-0902]] · [[amazon-fresh-2026-06-17-1254]] · [[amazon-fresh-2026-06-17-0912]] · [[amazon-fresh-2026-06-16-1239]] · [[amazon-fresh-2026-06-16-0903]] · [[amazon-fresh-2026-06-15-1241]] · [[amazon-fresh-2026-06-15-0909]] · [[amazon-fresh-2026-06-14-1246]] · [[amazon-fresh-2026-06-14-0910]] · [[amazon-fresh-2026-06-13-1234]] · [[amazon-fresh-2026-06-13-0904]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-11-1248]] · [[amazon-fresh-2026-06-11-0910]] · [[amazon-fresh-2026-06-10-1219]] · [[amazon-fresh-2026-06-10-0911]] · [[amazon-fresh-2026-06-09-1210]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]] · [[amazon-fresh-2026-06-05-0504]] · [[amazon-fresh-2026-06-05-0112]] · [[amazon-fresh-2026-06-04-1417]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (117)
+[[amazon-now-2026-07-02-1219]] · [[amazon-now-2026-06-30-0928]] · [[amazon-now-2026-06-29-0903]] · [[amazon-now-2026-06-28-0905]] · [[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-27-1014]] · [[amazon-now-2026-06-26-1405]] · [[amazon-now-2026-06-26-1020]] · [[amazon-now-2026-06-25-1425]] · [[amazon-now-2026-06-25-1018]] · [[amazon-now-2026-06-24-1400]] · [[amazon-now-2026-06-24-1018]] · [[amazon-now-2026-06-23-1403]] · [[amazon-now-2026-06-23-1024]] · [[amazon-now-2026-06-22-1410]] · [[amazon-now-2026-06-22-1021]] · [[amazon-now-2026-06-21-1404]] · [[amazon-now-2026-06-21-1020]] · [[amazon-now-2026-06-20-1400]] · [[amazon-now-2026-06-20-1016]] · [[amazon-now-2026-06-19-1354]] · [[amazon-now-2026-06-19-1019]] · [[amazon-now-2026-06-18-1357]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-17-1405]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-15-1352]] · [[amazon-now-2026-06-15-1019]] · [[amazon-now-2026-06-14-1356]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1407]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-11-1403]] · [[amazon-now-2026-06-11-1022]] · [[amazon-now-2026-06-10-1336]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]] · [[amazon-now-2026-06-08-1221]] · [[amazon-now-2026-06-08-0925]] · [[amazon-now-2026-06-07-1225]] · [[amazon-now-2026-06-07-0934]] · [[amazon-now-2026-06-06-1228]] · [[amazon-now-2026-06-06-0729]] · [[amazon-now-2026-06-05-1630]] · [[amazon-now-2026-06-05-1125]] · [[amazon-now-2026-06-05-0131]] · [[amazon-now-2026-06-05-0112]] · [[amazon-now-2026-06-04-1417]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-29-0710]] · [[amazon-fresh-2026-06-28-0710]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]] · [[amazon-fresh-2026-06-26-1250]] · [[amazon-fresh-2026-06-26-0904]] · [[amazon-fresh-2026-06-25-1310]] · [[amazon-fresh-2026-06-25-0904]] · [[amazon-fresh-2026-06-24-1243]] · [[amazon-fresh-2026-06-24-0904]] · [[amazon-fresh-2026-06-23-1246]] · [[amazon-fresh-2026-06-23-0908]] · [[amazon-fresh-2026-06-22-1252]] · [[amazon-fresh-2026-06-22-0906]] · [[amazon-fresh-2026-06-21-1247]] · [[amazon-fresh-2026-06-21-0904]] · [[amazon-fresh-2026-06-20-1243]] · [[amazon-fresh-2026-06-20-0902]] · [[amazon-fresh-2026-06-19-1241]] · [[amazon-fresh-2026-06-19-0909]] · [[amazon-fresh-2026-06-18-1246]] · [[amazon-fresh-2026-06-18-0902]] · [[amazon-fresh-2026-06-17-1254]] · [[amazon-fresh-2026-06-17-0912]] · [[amazon-fresh-2026-06-16-1239]] · [[amazon-fresh-2026-06-16-0903]] · [[amazon-fresh-2026-06-15-1241]] · [[amazon-fresh-2026-06-15-0909]] · [[amazon-fresh-2026-06-14-1246]] · [[amazon-fresh-2026-06-14-0910]] · [[amazon-fresh-2026-06-13-1234]] · [[amazon-fresh-2026-06-13-0904]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-11-1248]] · [[amazon-fresh-2026-06-11-0910]] · [[amazon-fresh-2026-06-10-1219]] · [[amazon-fresh-2026-06-10-0911]] · [[amazon-fresh-2026-06-09-1210]] · [[amazon-fresh-2026-06-09-0908]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]] · [[amazon-fresh-2026-06-07-1209]] · [[amazon-fresh-2026-06-07-0918]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]] · [[amazon-fresh-2026-06-05-0504]] · [[amazon-fresh-2026-06-05-0112]] · [[amazon-fresh-2026-06-04-1417]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (11531 observations)
+## Price history (11624 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -11571,6 +11571,99 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-30-0928,2026-06-30,amazon-now,Noida,201307,1917,4999,61.7,1
 2026-06-30-0928,2026-06-30,amazon-now,Noida,201309,1917,4999,61.7,1
 2026-06-30-0928,2026-06-30,amazon-now,Noida,201310,1917,4999,61.7,1
+2026-07-02-1219,2026-07-02,amazon-now,Ahmedabad,382428,1899,4999,62,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560001,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560002,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560003,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560004,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560005,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560006,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560007,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560008,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560009,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560010,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560011,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560013,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560015,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560016,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560017,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560018,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560020,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560021,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560022,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560023,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560024,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560025,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560026,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560027,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560029,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560030,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560032,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560033,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560034,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560035,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560036,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560037,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560038,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560040,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560041,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560042,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560046,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560048,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560050,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560051,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560053,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560054,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560055,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560056,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560057,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560058,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560059,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560061,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560063,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560064,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560065,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560066,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560068,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560070,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560071,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560072,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560075,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560078,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560079,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560080,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560084,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560085,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560086,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560087,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560090,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560091,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560092,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560093,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560094,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560095,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560096,1783,4999,64.3,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560097,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560098,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560103,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560104,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560108,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560109,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560110,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,562125,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Delhi,110045,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Delhi,110046,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Delhi,110059,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400058,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400072,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400075,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400077,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400085,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400088,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400089,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400101,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Mumbai,400102,1699,4999,66,1
+2026-07-02-1219,2026-07-02,amazon-now,Pune,411057,1699,4999,66,1
 ```
 
 ---

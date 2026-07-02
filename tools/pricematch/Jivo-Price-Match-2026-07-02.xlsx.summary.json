@@ -1,0 +1,21 @@
+{
+ "date": "2026-07-02",
+ "regime": "SVD",
+ "kpis": {
+  "skus_tracked": 113,
+  "platforms": 8,
+  "compliant": 8,
+  "below": 129,
+  "above": 42,
+  "oos": 112,
+  "pending": 0,
+  "not_listed": 613,
+  "exposure": 12478,
+  "listings": 904,
+  "mapped": 291,
+  "listed_skus": 113
+ },
+ "store_violations": 7416,
+ "summary_md": "*Jivo Price Match — master* 🎯\n2026-07-02 · SVD day\n🔴 Below ref: 129 listings · ₹12,478 exposure\nTop offenders: EXTRA VIRGIN 5L (Flipkart −₹885) · EXTRA VIRGIN 2L (Flipkart −₹548) · EXTRA VIRGIN 5L (Amazon −₹540)\n🟢 Above: 42 · Match: 8 · OOS: 112 · Pending: 0\nCoverage: 113 SKUs × 8 platforms (613 not listed)",
+ "caption": "Jivo Price Match · 2026-07-02 · SVD day"
+}

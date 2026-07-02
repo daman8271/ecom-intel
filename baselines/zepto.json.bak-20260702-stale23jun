@@ -1,0 +1,86 @@
+{
+  "platform": "zepto",
+  "samples": [
+    {
+      "run_id": "2026-06-23-0842",
+      "captured_at": "2026-06-23T03:26:11.001Z",
+      "rows": 1517,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 67,
+      "priced_rows": 714
+    },
+    {
+      "run_id": "2026-06-23-1224",
+      "captured_at": "2026-06-23T07:05:32.382Z",
+      "rows": 1215,
+      "unique_skus": 24,
+      "pincodes_with_jivo": 53,
+      "priced_rows": 570
+    },
+    {
+      "run_id": "2026-06-24-0841",
+      "captured_at": "2026-06-24T03:22:50.739Z",
+      "rows": 1157,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 51,
+      "priced_rows": 534
+    },
+    {
+      "run_id": "2026-06-24-1217",
+      "captured_at": "2026-06-24T07:01:37.395Z",
+      "rows": 1564,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 69,
+      "priced_rows": 721
+    },
+    {
+      "run_id": "2026-06-25-0842",
+      "captured_at": "2026-06-25T03:23:06.865Z",
+      "rows": 1156,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 51,
+      "priced_rows": 557
+    },
+    {
+      "run_id": "2026-06-25-1247",
+      "captured_at": "2026-06-25T07:28:39.717Z",
+      "rows": 1199,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 53,
+      "priced_rows": 555
+    },
+    {
+      "run_id": "2026-06-26-0842",
+      "captured_at": "2026-06-26T03:23:23.045Z",
+      "rows": 1178,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 52,
+      "priced_rows": 430
+    },
+    {
+      "run_id": "2026-06-26-1222",
+      "captured_at": "2026-06-26T07:09:22.129Z",
+      "rows": 1751,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 77,
+      "priced_rows": 837
+    },
+    {
+      "run_id": "2026-06-27-0841",
+      "captured_at": "2026-06-27T03:19:39.215Z",
+      "rows": 981,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 44,
+      "priced_rows": 417
+    },
+    {
+      "run_id": "2026-06-27-1211",
+      "captured_at": "2026-06-27T06:50:35.525Z",
+      "rows": 981,
+      "unique_skus": 23,
+      "pincodes_with_jivo": 44,
+      "priced_rows": 412
+    }
+  ],
+  "updated_at": "2026-06-27T06:51:07.010365+00:00"
+}

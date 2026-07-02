@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-30
-observations: 184
+last_seen: 2026-07-02
+observations: 192
 latest_status: NOT_LISTED
-below_days: 3
+below_days: 4
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-canola-oil-cooking-oil-for-daily-use-recommended-for-all-type
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-30) — ref ₹259 vs live ₹-
-- **Days below reference:** 3 of 23
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-02) — ref ₹249 vs live ₹-
+- **Days below reference:** 4 of 24
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]]
 
-## Ref-vs-live history (184 observations)
+## Ref-vs-live history (192 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -229,6 +229,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-30,flipkart,OOS,BAU,259,,,,,,0,false
 2026-06-30,flipkart-minutes,NOT_LISTED,BAU,259,,,,,,0,false
 2026-06-30,zepto,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-02,amazon,BELOW,SVD,249,239,239,239,-10,-4.02,1,true
+2026-07-02,amazon-fresh,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-02,amazon-now,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-02,bigbasket,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-02,blinkit,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-02,flipkart,OOS,SVD,249,,,,,,0,false
+2026-07-02,flipkart-minutes,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-02,zepto,NOT_LISTED,SVD,249,,,,,,0,false
 ```
 
 ---
