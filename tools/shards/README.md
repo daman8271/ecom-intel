@@ -58,3 +58,31 @@ That wrapper:
 
 No launchd schedule is installed yet.
 
+## Verified Smoke Tests
+
+These checks were completed on 2026-07-03 IST with `BLINKIT_SIM=1`:
+
+- Mac local staged run: produced one Blinkit shard result under `/Users/danny./Jibo/ecom-intel/current/shards/runs/<run_id>/blinkit/shard-1-of-2/`.
+- Mac-to-VPS staged sync: pushed the same artifact shape to `/tmp/ecom-shard-smoke-sync/<run_id>/blinkit/shard-1-of-2/`.
+- VPS split/merge simulation: merged shard `0-of-2` and shard `1-of-2` only after manifest and pincode coverage validation.
+
+For a non-production Mac sync smoke:
+
+```sh
+ssh macpro 'BLINKIT_SIM=1 CONFIG=/tmp/blinkit-two-pins-mac.json SHARD_TOTAL=2 SHARD_INDEX=1 SYNC_DEST=root@187.127.129.132:/tmp/ecom-shard-smoke-sync /Users/danny./Jibo/workload-sharing/run_blinkit_half_to_vps.sh'
+```
+
+For a real manual worker run after Swiggy is finished:
+
+```sh
+ssh macpro '/Users/danny./Jibo/workload-sharing/run_blinkit_half_to_vps.sh'
+```
+
+The real worker run still writes only staged artifacts. Promotion into live results remains a separate VPS-controlled decision.
+
+## Guardrails
+
+- Do not install a launchd schedule for this wrapper until a human approves the timing.
+- Do not point `SYNC_DEST` at a final report/result path.
+- Do not use this lane for BigBasket without explicit paid-credit approval.
+- Do not split Amazon Fresh/Now until account/session ownership is designed.

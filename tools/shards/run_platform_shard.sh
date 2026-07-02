@@ -67,10 +67,12 @@ fi
 SCRAPER="scrape.js"
 [ "$PLATFORM" = "flipkart-minutes" ] && SCRAPER="scrape.js"
 
-echo "[$(date -Is)] shard START platform=$PLATFORM run_id=$RUN_ID shard=$SHARD_INDEX/$SHARD_TOTAL config=$SHARD_CONFIG"
+ts() { date -u '+%Y-%m-%dT%H:%M:%SZ'; }
+
+echo "[$(ts)] shard START platform=$PLATFORM run_id=$RUN_ID shard=$SHARD_INDEX/$SHARD_TOTAL config=$SHARD_CONFIG"
 PINCODES_FILE="$SHARD_CONFIG" OUT_FILE="$RESULT" node "$SCRAPER" \
   > "$LOG_DIR/stdout.log" 2> "$LOG_DIR/stderr.log"
-echo "[$(date -Is)] shard DONE result=$RESULT manifest=$MANIFEST"
+echo "[$(ts)] shard DONE result=$RESULT manifest=$MANIFEST"
 
 python3 - "$MANIFEST" "$RESULT" <<'PY'
 import json, sys
@@ -84,7 +86,17 @@ print(json.dumps({"ok": True, "summary": r.get("summary", {}), "pincodes": len(p
 PY
 
 if [ -n "${SYNC_DEST:-}" ]; then
+  DEST_PATH="$SYNC_DEST/$RUN_ID/$PLATFORM/shard-${SHARD_INDEX}-of-${SHARD_TOTAL}"
+  case "$SYNC_DEST" in
+    *:*)
+      REMOTE_HOST="${SYNC_DEST%%:*}"
+      REMOTE_BASE="${SYNC_DEST#*:}"
+      ssh -o BatchMode=yes "$REMOTE_HOST" "mkdir -p '$REMOTE_BASE/$RUN_ID/$PLATFORM/shard-${SHARD_INDEX}-of-${SHARD_TOTAL}'"
+      ;;
+    *)
+      mkdir -p "$DEST_PATH"
+      ;;
+  esac
   rsync -az --partial "$RUN_DIR/" "$SYNC_DEST/$RUN_ID/$PLATFORM/shard-${SHARD_INDEX}-of-${SHARD_TOTAL}/"
-  echo "[$(date -Is)] synced shard to $SYNC_DEST/$RUN_ID/$PLATFORM/shard-${SHARD_INDEX}-of-${SHARD_TOTAL}/"
+  echo "[$(ts)] synced shard to $SYNC_DEST/$RUN_ID/$PLATFORM/shard-${SHARD_INDEX}-of-${SHARD_TOTAL}/"
 fi
-
