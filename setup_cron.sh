@@ -2,7 +2,8 @@
 # setup_cron.sh — install the ecom-intel cron schedule (idempotent).
 #
 # ⚠️ DEPRECATED (2026-06-28): this is NOT the live cron installer. The live schedule is a SINGLE
-# 12:00-noon deadline sweep defined in tools/cron/doctor.crontab.txt (installed via `crontab`).
+# 12:00-noon deadline sweep defined in tools/cron/doctor.crontab.txt. That file is an
+# ecom-intel block; do not install it as the whole root crontab on shared hosts.
 # The "3x/day 09/12/16" schedule described below is OBSOLETE and kept for reference only.
 #
 # LEGACY schedule: each LIVE platform runs 3x/day in three IST windows —

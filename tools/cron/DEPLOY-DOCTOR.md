@@ -51,12 +51,14 @@ EOF
 > Owner alerts go to `TELEGRAM_OWNER_CHAT_ID` if set, else fall back to the existing
 > `TELEGRAM_CHAT_ID` (already in `secrets.env`) — no extra Telegram config needed.
 
-### (b) Install the merged crontab
+### (b) Merge the ecom-intel cron block
 ```bash
 cd /opt/ecom-intel
-crontab tools/cron/doctor.crontab.txt
+crontab -l > /tmp/root.crontab.before-ecom-doctor
 ```
-This file IS the live crontab + the 3 doctor lines. The sweep + guardian lines are verbatim.
+`tools/cron/doctor.crontab.txt` is the ecom-intel cron block, not the whole root crontab.
+Merge its ecom lines into the live crontab while preserving other repo schedules on the host.
+Do not run `crontab tools/cron/doctor.crontab.txt` on a shared root crontab.
 
 ### (c) Verify the install
 ```bash

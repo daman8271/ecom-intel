@@ -292,10 +292,10 @@ report can be early, never lost.
 The pipeline was cut from 2×/day to **one deadline-aligned sweep** on 2026-06-28 (the 15:00
 sweep + 16:00 mailer were retired; the live cron line now lives in
 `tools/cron/doctor.crontab.txt`). The mechanism is **LIVE and PROVEN since 2026-06-06**:
-batches land at the slot to the second (self-aligning chain + barrier). The sweep fires early
-in the small hours and predicts its lead so the batch lands AT 12:00 (the doctor.crontab.txt
-template fires `0 4`; the live box was retuned to 00:30). Plain `./run_all.sh` with no env
-vars = the old immediate-delivery behavior, unchanged. With a single daily sweep the old
+batches land at the slot to the second (self-aligning chain + barrier). The sweep fires at
+00:30 with `LEAD_MAX=39600` and predicts its lead so the batch lands AT 12:00; a watchdog
+polls from 00:00-09:00 and only takes over after the 00:35 primary-launch grace. Plain
+`./run_all.sh` with no env vars = the old immediate-delivery behavior, unchanged. With a single daily sweep the old
 two-sweep overlap concern is moot; the `.sweep-chain.lock` guard remains as a harmless
 backstop (the historical two-slot analysis lives in `crontab.proposed.txt`'s comments).
 

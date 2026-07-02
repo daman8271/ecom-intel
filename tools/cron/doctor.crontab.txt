@@ -1,12 +1,9 @@
-# doctor.crontab.txt — FULL MERGED crontab: the LIVE deadline sweeps + 18:00 guardian
-# (UNCHANGED, copied verbatim from crontab.proposed.txt) PLUS the additive "Ecom Doctor"
-# self-healing watchdog lines (daily 18:30 / weekly Sun 19:00 / monthly 1st 19:30 IST).
+# doctor.crontab.txt — ecom-intel cron block: deadline sweep + guardian + doctor + mailer
+# plus the self-healing noon sweep watchdog and post-batch layout gate.
 #
-# This is the ONE file the LEAD installs in a single shot:   crontab tools/cron/doctor.crontab.txt
-# (Installation is the LEAD's call after W3 PASS — W3 only proposes. The doctor section is
-#  ADDITIVE: the sweep + guardian lines below are byte-for-byte the live crontab; nothing
-#  about the live pipeline changes. setup_cron.sh only touches "# ecom-intel"-tagged lines,
-#  so it stays re-runnable over this file.)
+# This is NOT the whole root crontab on shared hosts. Merge these ecom-intel lines
+# into the live crontab while preserving other repo schedules (jivo-intel, data-bank,
+# competitor warroom, pincode app, push-all, Hermes, etc.).
 #
 # Cron runs in system-local time = IST (the live `0 18` guardian is 18:00 IST — confirmed).
 #
@@ -79,8 +76,9 @@
 # - doctor.sh is fully fail-safe: if ECOM_DOCTOR_ENABLE!=1 it no-ops; any internal error still
 #   fires an owner alert and exits 0; it has no path that can abort or modify the sweep crons.
 #
-# Dropped vs the live crontab: nothing. This file is the live crontab + the 3 doctor lines.
+# Scope: ecom-intel cron lines only. The live root crontab also contains other repo schedules.
 # ===========================================================================================
+10 12 * * * cd /opt/ecom-intel && python3 tools/cron/check_layout.py >> logs/layout_gate.log 2>&1   # ecom-intel layout gate (post 12:00 batch)
 
 # ============================== PRICE-DATA MAILER (ADDITIVE) ===============================
 # Emails the day's 9 report files AS-IS (each .xlsx an individual attachment, unmodified) to

@@ -94,10 +94,11 @@ agent launches with no permission prompts and writes its output, and (ii) the sc
 
 ---
 
-## Deliverable: the merged crontab the LEAD installs (one shot)
-The full file is **`tools/cron/doctor.crontab.txt`** — install with `crontab tools/cron/doctor.crontab.txt`.
-It is the **live crontab byte-for-byte** (12:00 + 15:00 deadline sweeps + 18:00 guardian, UNCHANGED)
-**plus** these three additive doctor lines (IST; cron runs in system-local = IST):
+## Deliverable: the ecom-intel cron block the LEAD merges
+The ecom block is **`tools/cron/doctor.crontab.txt`**. Merge it into the live root crontab
+while preserving non-ecom repo schedules; do not install it as the whole crontab on shared hosts.
+It contains the live ecom deadline sweep, guardian, watchdog, layout gate, mailer, and these
+three additive doctor lines (IST; cron runs in system-local = IST):
 
 ```cron
 # Ecom Doctor — daily 18:30 (after both sweeps land + the 18:00 guardian: sees the whole day)

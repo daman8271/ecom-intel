@@ -123,12 +123,12 @@ is provably additive. The lead installs.
 - Holds **only** `logs/.doctor.lock` (`flock -n`, single-flight) — **never** the sweep-chain lock, `run_all.sh`, or `deadline_sweep.sh`.
 - `run_all` / `result.json` appear in doctor.sh **only** inside deny-rules and prompt text (read-context) — no write path to either.
 - Fail-safe: `ECOM_DOCTOR_ENABLE!=1` ⇒ no-op `exit 0` (kill switch verified); any internal error ⇒ owner alert ⇒ `exit 0`. No path can abort or modify the sweep crons.
-- `DEPLOY-DOCTOR.md` runbook present: append `ECOM_DOCTOR_ENABLE=1`+`DOCTOR_AUTOFIX=0` to secrets.env · `crontab doctor.crontab.txt` · verify via `crontab -l | grep '# ecom-intel'` · stage-2 flip · kill switch.
+- `DEPLOY-DOCTOR.md` runbook present: append `ECOM_DOCTOR_ENABLE=1`+`DOCTOR_AUTOFIX=0` to secrets.env · merge the ecom-intel block while preserving other repo crons · verify via `crontab -l | grep '# ecom-intel'` · stage-2 flip · kill switch.
 
 ---
 
 ## Lead action items (only on this PASS)
 1. Push W1 `8bf79b60` + W2 `2f008518`.
 2. Append to `secrets.env`: `ECOM_DOCTOR_ENABLE=1`, `DOCTOR_AUTOFIX=0`.
-3. `crontab tools/cron/doctor.crontab.txt`; verify `crontab -l` shows the 3 sweep+guardian lines unchanged + 3 doctor lines.
+3. Merge `tools/cron/doctor.crontab.txt` into the live root crontab, preserving non-ecom repo lines; verify `crontab -l` shows the sweep+guardian lines unchanged + doctor lines.
 4. Housekeeping (non-blocking): an empty stray file `platforms/amazon-now/8` (W1 flock artifact, 17:18 IST) can be `rm`'d.

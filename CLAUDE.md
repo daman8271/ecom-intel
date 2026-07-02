@@ -92,9 +92,9 @@ Reports must all **LAND at the slot time (12:00 noon IST)** — the pipeline was
 2×/day to **one deadline-aligned sweep** on 2026-06-28 (the 15:00 sweep + 16:00 mailer were
 retired). The deadline mechanism is **LIVE and PROVEN since 2026-06-06**: batches land at the
 slot to the second (self-aligning chain + barrier). Cron fires
-`tools/cron/deadline_sweep.sh 12:00` **early in the small hours** (predicts its lead and sleeps to land at 12:00; the doctor.crontab.txt template fires `0 4`); it predicts the chain runtime
+`tools/cron/deadline_sweep.sh 12:00` at **00:30 IST** (predicts its lead and sleeps to land at 12:00; the watchdog polls from 00:00-09:00 and only takes over after the 00:35 primary-launch grace); it predicts the chain runtime
 (`tools/cron/predict_lead.py` — p90 of last 10 per-platform durations in
-`tools/cron/durations.jsonl`, self-learning, `LEAD_MAX=12600`), sleeps to `T − lead`, then
+`tools/cron/durations.jsonl`, self-learning, `LEAD_MAX=39600`), sleeps to `T − lead`, then
 runs `./run_all.sh` with `DEFER_DELIVERY=1 SWEEP_ID=… SWEEP_DEADLINE=…`. run.sh then SPOOLS
 each OK report (`output/.batch/<sweep>/<p>.json`) instead of curling; after the loop
 `tools/cron/send_batch.py` sleeps until the deadline (barrier) and ships ONE batch — header,
