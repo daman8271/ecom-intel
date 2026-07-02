@@ -15,18 +15,6 @@ cd "$PDIR"
 # (0 real minute ETAs, ~8% catalog); it is frozen. See ROOTCAUSE-AmazonNow-2026-06-01.md.
 SCRAPER="scrape.js"
 [ "$P" = "amazon-now" ] && SCRAPER="scrape.ctnow.js"
-SCRAPE_TIMEOUT_SECS="${SCRAPE_TIMEOUT_SECS:-}"
-case "$P" in
-  amazon-fresh) SCRAPE_TIMEOUT_SECS="${AMAZON_FRESH_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-28800}}" ;;
-  amazon-now) SCRAPE_TIMEOUT_SECS="${AMAZON_NOW_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-7200}}" ;;
-esac
-run_scraper() {
-  if [ -n "${SCRAPE_TIMEOUT_SECS:-}" ] && command -v timeout >/dev/null 2>&1; then
-    timeout --foreground "${SCRAPE_TIMEOUT_SECS}s" node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
-  else
-    node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
-  fi
-}
 
 # ---- Per-pincode coverage (Wave-1 QC: blinkit/zepto/flipkart-minutes). Opt-in via COVERAGE_FULL=1. ----
 # When COVERAGE_FULL=1 and no explicit PINCODES_FILE is set, point the scraper at the
@@ -63,10 +51,10 @@ if { [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; } && command -v flock
   (
     flock -w 2700 8 || { echo "[$RUN_ID] $P: per-account lock not acquired in 45m; skipping this window"; exit 75; }
     echo "[$RUN_ID] $P: per-account lock (.${P}.lock) acquired; scraping ..."
-    run_scraper
+    node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
   ) 8>"$DIR/.${P}.lock"
 else
-  run_scraper
+  node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
 fi
 echo "[$RUN_ID] building excel ..."
 python3 build_excel.py

@@ -50,19 +50,7 @@ const LIMIT = parseInt(process.env.LIMIT || '0', 10);
 const OFFSET = parseInt(process.env.OFFSET || '0', 10);
 const UA = process.env.UA ||
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36';
-const FETCH_TIMEOUT_MS = parseInt(process.env.AMAZON_FETCH_TIMEOUT_MS || '45000', 10);
-const SET_LOCATION_TIMEOUT_MS = parseInt(process.env.AMAZON_SET_LOCATION_TIMEOUT_MS || '20000', 10);
-const DIRECT_FETCH_TIMEOUT_MS = parseInt(process.env.AMAZON_DIRECT_FETCH_TIMEOUT_MS || '25000', 10);
-const PINCODE_TIMEOUT_MS = parseInt(process.env.AMAZON_PINCODE_TIMEOUT_MS || '90000', 10);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-function withTimeout(promise, ms, label) {
-  let timer;
-  const timeout = new Promise((_, reject) => {
-    timer = setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
-  });
-  return Promise.race([promise, timeout]).finally(() => clearTimeout(timer));
-}
 
 let PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
 if (OFFSET) PINCODES = PINCODES.slice(OFFSET);
@@ -420,23 +408,14 @@ async function mintToken(page, seedPin) {
 
 // Raw set + Fresh search for one pincode (no page render).
 async function fastSetAndSearch(page, pin, token, query, index) {
-  return page.evaluate(async ({ pin, token, query, index, setTimeoutMs, fetchTimeoutMs }) => {
-    async function fetchWithTimeout(url, options, timeoutMs) {
-      const ctl = new AbortController();
-      const id = setTimeout(() => ctl.abort(), timeoutMs);
-      try {
-        return await fetch(url, { ...(options || {}), signal: ctl.signal });
-      } finally {
-        clearTimeout(id);
-      }
-    }
-    const set = await fetchWithTimeout('/portal-migration/hz/glow/address-change?actionSource=glow', {
+  return page.evaluate(async ({ pin, token, query, index }) => {
+    const set = await fetch('/portal-migration/hz/glow/address-change?actionSource=glow', {
       method: 'POST',
       headers: { 'content-type': 'application/json', 'anti-csrftoken-a2z': token, 'x-requested-with': 'XMLHttpRequest' },
       body: JSON.stringify({ locationType: 'LOCATION_INPUT', zipCode: pin, deviceType: 'web', storeContext: 'generic', pageType: 'Gateway', actionSource: 'glow' }),
-    }, setTimeoutMs).catch(() => null);
+    }).catch(() => null);
     const setStatus = set ? set.status : 0;
-    const r = await fetchWithTimeout('/s?k=' + encodeURIComponent(query) + '&i=' + index, { headers: { accept: 'text/html' } }, fetchTimeoutMs);
+    const r = await fetch('/s?k=' + encodeURIComponent(query) + '&i=' + index, { headers: { accept: 'text/html' } });
     const html = await r.text();
     const doc = new DOMParser().parseFromString(html, 'text/html');
     const T = (el) => el ? (el.textContent || '').replace(/\s+/g, ' ').trim() : '';
@@ -452,7 +431,7 @@ async function fastSetAndSearch(page, pin, token, query, index) {
       isJivo: /jivo/i.test(T(c)),   // textContent glues brand ("JIVOCold…") so \b would miss it
     }));
     return { setStatus, glow: (html.match(/glow-ingress-line2[^>]*>\s*([^<]+?)\s*</) || [])[1] || '', total: cards.length, cards: out };
-  }, { pin, token, query, index, setTimeoutMs: SET_LOCATION_TIMEOUT_MS, fetchTimeoutMs: FETCH_TIMEOUT_MS });
+  }, { pin, token, query, index });
 }
 
 // DIRECT-ASIN freshstore lookup for ONE asin (no page render, raw fetch — same cost profile
@@ -460,17 +439,8 @@ async function fastSetAndSearch(page, pin, token, query, index) {
 // emits (so toRow + the Fresh gate apply identically), or null. Location is NOT re-set here —
 // the caller has already located the page to this pincode.
 async function directFreshCard(page, asin, index) {
-  return page.evaluate(async ({ asin, index, fetchTimeoutMs }) => {
-    async function fetchWithTimeout(url, options, timeoutMs) {
-      const ctl = new AbortController();
-      const id = setTimeout(() => ctl.abort(), timeoutMs);
-      try {
-        return await fetch(url, { ...(options || {}), signal: ctl.signal });
-      } finally {
-        clearTimeout(id);
-      }
-    }
-    const r = await fetchWithTimeout('/s?k=' + encodeURIComponent(asin) + '&i=' + index, { headers: { accept: 'text/html' } }, fetchTimeoutMs).catch(() => null);
+  return page.evaluate(async ({ asin, index }) => {
+    const r = await fetch('/s?k=' + encodeURIComponent(asin) + '&i=' + index, { headers: { accept: 'text/html' } }).catch(() => null);
     if (!r) return null;
     const html = await r.text();
     const doc = new DOMParser().parseFromString(html, 'text/html');
@@ -487,7 +457,7 @@ async function directFreshCard(page, asin, index) {
       oos: /currently unavailable|out of stock|sold out/i.test(T(c)),
       isJivo: /jivo/i.test(T(c)),
     };
-  }, { asin, index, fetchTimeoutMs: DIRECT_FETCH_TIMEOUT_MS });
+  }, { asin, index });
 }
 
 function toRow(card, rec) {
@@ -621,10 +591,10 @@ if (require.main === module) (async () => {
     const ts = Date.now();
     let res;
     try {
-      res = await withTimeout(fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX), PINCODE_TIMEOUT_MS, `amazon-fresh ${rec.pincode}`);
+      res = await fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX);
       if (!res.glow.includes(rec.pincode)) {
         await mintToken(page, rec.pincode);
-        res = await withTimeout(fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX), PINCODE_TIMEOUT_MS, `amazon-fresh ${rec.pincode} retry`);
+        res = await fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX);
       }
     } catch (e) {
       // Transient Chromium death ("Target page/context/browser has been closed") — relaunch
@@ -635,7 +605,7 @@ if (require.main === module) (async () => {
       try {
         ({ browser, ctx, page } = await openBrowser());
         await mintToken(page, rec.pincode);
-        res = await withTimeout(fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX), PINCODE_TIMEOUT_MS, `amazon-fresh ${rec.pincode} recovery`);
+        res = await fastSetAndSearch(page, rec.pincode, token, QUERY, INDEX);
       } catch (e2) {
         process.stderr.write(`[skip] ${rec.city} ${rec.pincode}: recovery failed (${String(e2.message).slice(0, 50)})\n`);
         perPin.push({ ...rec, store_id: null, store_name: 'Amazon Fresh', serviceable: false, location_ok: false, glow: '', matched: false, cards_total: 0, dropped_marketplace: 0, error: true, rows: [] });
