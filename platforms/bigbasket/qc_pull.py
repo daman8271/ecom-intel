@@ -35,7 +35,7 @@ else:
             break
     PINS = PINS[:LIMIT]
 
-MIN_PINS = min(len(PINS), max(1, int(os.environ.get('QC_MIN_PINCODES', max(20, round(len(PINS) * 0.75))))))
+MIN_PINS = min(len(PINS), max(1, int(os.environ.get('QC_MIN_PINCODES', max(20, round(len(PINS) * 0.75)))))) if PINS else 1
 ALLOW_PARTIAL = os.environ.get('QC_ALLOW_PARTIAL', '').lower() in ('1', 'true', 'yes')
 
 
