@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
-# Daily BigBasket PINCODE-WISE Jivo pull via the licensed QuickCommerce API (PAID key).
-# Pulls ONCE/day (03:00) the 227 Jivo pincodes (pincodes_jivo.json, incl. price-match pins +
-# the 2026-06-28 tier-1 expansion), builds the report, copies it to output/. Delivery is NOT done
-# here — run_all.sh spools this report into the noon deadline batch (12:00) so it lands WITH the
-# other platforms on Telegram, and the mailer ships it on WhatsApp + Gmail (10:00). Single PAID key only.
+# RETIRED: old BigBasket PINCODE-WISE pull via the licensed QuickCommerce API.
+# BigBasket now runs off-box on the Mac Pro/residential IP and drops JSON to
+# platforms/bigbasket/ingest.sh. This script is kept only as an explicit emergency
+# diagnostic path and refuses to call the paid API unless ALLOW_BIGBASKET_QC_API=1.
 set -uo pipefail
 cd "$(dirname "$0")"
 LOG=/opt/ecom-intel/logs/bigbasket-pincode.log
 echo "[$(date '+%F %T')] bigbasket-pincode START" >> "$LOG"
+
+if [ "${ALLOW_BIGBASKET_QC_API:-0}" != "1" ]; then
+  echo "[$(date '+%F %T')] REFUSED: QuickCommerce API path is retired; use Mac Pro -> platforms/bigbasket/ingest.sh" >> "$LOG"
+  echo "BigBasket QuickCommerce API path is retired. Use Mac Pro browser runner -> platforms/bigbasket/ingest.sh." >&2
+  exit 2
+fi
 
 PINCODES_FILE="${PINCODES_FILE:-pincodes_jivo.json}" QC_LIMIT="${QC_LIMIT:-999}" python3 qc_pull.py >> "$LOG" 2>&1 || { echo "[$(date '+%F %T')] qc_pull FAILED" >> "$LOG"; exit 1; }
 python3 build_excel_pincode.py >> "$LOG" 2>&1 || { echo "[$(date '+%F %T')] build_excel FAILED" >> "$LOG"; exit 1; }

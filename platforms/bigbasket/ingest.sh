@@ -37,6 +37,25 @@ else:
 PY
 )"
 
+python3 - "$STAGED" "$SHAPE" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1]))
+shape = sys.argv[2]
+s = d.get("summary") or {}
+rows = d.get("allRows") or []
+if shape == "national":
+    if not s.get("session_ok") or len(rows) == 0:
+        raise SystemExit(
+            f"Refusing failed BigBasket browser drop: session_ok={s.get('session_ok')} rows={len(rows)}"
+        )
+else:
+    if int(s.get("pincodes_total") or 0) < int(s.get("min_pincodes_required") or 20):
+        raise SystemExit(
+            f"Refusing under-covered BigBasket pincode drop: "
+            f"{s.get('pincodes_total')}/{s.get('pincodes_target', '?')} pincodes"
+        )
+PY
+
 cd "$PDIR"
 if [ "$SHAPE" = "pincode" ]; then
   cp "$STAGED" "$PDIR/result_pincode.json"

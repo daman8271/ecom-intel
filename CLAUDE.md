@@ -104,9 +104,9 @@ lost). Plain `./run_all.sh` without the env = old behavior. An **18:00 daily gua
 deep-dive** (`./tools/guardian_daily.sh`) is unchanged. The daily sweep scrapes the **7 live
 platforms SERIALLY — one platform at a time** (commit 8ef79d4), in this order:
 flipkart-minutes, flipkart, zepto, amazon, amazon-fresh,
-amazon-now, **blinkit LAST** (slowest). **BigBasket is NOT in this serial chain — it's a
-separate pincode job (`platforms/bigbasket/run_pincode.sh`) on its own 03:00 IST cron, spooled
-into the noon batch.** ** was REMOVED from the chain
+amazon-now, **blinkit LAST** (slowest). **BigBasket is NOT in this serial chain — it runs
+off-box on the Mac Pro/residential IP and drops JSON into `platforms/bigbasket/ingest.sh`,
+then the noon batch spools the resulting workbook.** ** was REMOVED from the chain
 2026-06-06** (WAF-dead, ~40m heal-retry waste per sweep; rebuild pending — owner).
 The sweep fires early in the small hours and self-aligns so the batch lands AT 12:00 noon.
 Now that there is a single daily sweep, the old two-sweep overlap concern is moot; the

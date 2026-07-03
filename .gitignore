@@ -37,6 +37,7 @@ platforms/instamart/validation/*.out
 platforms/bigbasket/header_api.json
 platforms/bigbasket/listing_raw.json
 platforms/bigbasket/listing_inpage.json
+platforms/bigbasket/mac-drops/
 
 # guardian transient "latest" pointers (regenerated every eval; dated reports +
 # per-run verdicts + state-<date>.json ARE committed as the audit trail)
