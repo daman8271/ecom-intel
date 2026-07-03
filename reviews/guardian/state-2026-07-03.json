@@ -1,0 +1,16 @@
+{
+  "blinkit": [],
+  "flipkart-minutes": [],
+  "flipkart": [],
+  "amazon": [
+    "4:shared_price_dup"
+  ],
+  "zepto": [],
+  "amazon-fresh": [
+    "2:geo_price_identity"
+  ],
+  "amazon-now": [
+    "4:shared_price_dup"
+  ],
+  "bigbasket": []
+}
