@@ -12,6 +12,17 @@ from openpyxl.formatting.rule import ColorScaleRule
 HERE = os.path.dirname(os.path.abspath(__file__))
 d = json.load(open(os.path.join(HERE, os.environ.get('PIN_RESULT', 'result_pincode.json'))))
 rows, per, summary = d['allRows'], d['perPin'], d['summary']
+MIN_REPORT_PINS = int(os.environ.get('BB_PINCODE_MIN_REPORT_PINS', '20'))
+ALLOW_PARTIAL_REPORT = os.environ.get('BB_ALLOW_PARTIAL_PINCODE_REPORT', '').lower() in ('1', 'true', 'yes')
+target_pins = summary.get('pincodes_target')
+target_pins = int(target_pins) if target_pins is not None else None
+required_pins = min(target_pins, MIN_REPORT_PINS) if target_pins is not None else MIN_REPORT_PINS
+if not ALLOW_PARTIAL_REPORT and int(summary.get('pincodes_total') or len(per) or 0) < required_pins:
+    raise SystemExit(
+        f"Refusing under-covered BigBasket pincode report: "
+        f"{summary.get('pincodes_total', len(per))}/{target_pins or '?'} pincodes; "
+        f"minimum required {required_pins}. Set BB_ALLOW_PARTIAL_PINCODE_REPORT=1 only for diagnostics."
+    )
 PRICEMATCH = {'110092', '560006'}  # the active price-match pins — always highlighted
 
 GREEN_H = "008B3A"
@@ -61,7 +72,10 @@ plabel = lambda p: f"{p['pincode']} {p['city']}"
 # ---------------- Sheet 1: Summary ----------------
 ws = wb.active; ws.title = "Summary"
 ws["A1"] = "Jivo × BigBasket — PINCODE-WISE Pricing Intelligence"; ws["A1"].font = TITLE; ws.merge_cells("A1:H1")
+surveyed = (f"{summary['pincodes_total']}/{summary['pincodes_target']} pincodes surveyed   |   "
+            if summary.get('pincodes_target') and summary.get('pincodes_target') != summary.get('pincodes_total') else "")
 ws["A2"] = (f"Captured {summary.get('captured_at','')[:16].replace('T',' ')} IST   |   "
+            f"{surveyed}"
             f"{summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo   |   "
             f"{summary['unique_skus']} SKUs   |   {summary['total_rows']} datapoints   |   source: {summary.get('source','')}")
 ws["A2"].font = SUB; ws.merge_cells("A2:H2")

@@ -3,7 +3,7 @@ Multi-key: rotates through secrets/qc_keys.txt (one key per line) as each runs l
 one-time full-332 survey completes across available credits. NOTE: for the ongoing daily
 cron use a single PAID key — rotating trial keys daily is neither reliable nor right.
 Writes result_pincode.json in the scraper schema. Brand == 'Jivo' only."""
-import json, urllib.request, urllib.parse, urllib.error, time, os, re, datetime
+import json, urllib.request, urllib.parse, urllib.error, time, os, re, datetime, shutil
 from collections import defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -34,6 +34,9 @@ else:
         if len(PINS) >= LIMIT:
             break
     PINS = PINS[:LIMIT]
+
+MIN_PINS = min(len(PINS), max(1, int(os.environ.get('QC_MIN_PINCODES', max(20, round(len(PINS) * 0.75))))))
+ALLOW_PARTIAL = os.environ.get('QC_ALLOW_PARTIAL', '').lower() in ('1', 'true', 'yes')
 
 
 def vol_ml(q):
@@ -117,10 +120,23 @@ for p in perPin:
     for r in p['rows']:
         byid.setdefault(r['sku_id'] or r['canonical'], set()).add(r['sale'])
 pv = sum(1 for s in byid.values() if len(s) > 1)
-summary = {'pincodes_total': len(perPin), 'pincodes_with_jivo': sum(1 for p in perPin if p['rows']),
+coverage_ok = len(perPin) >= MIN_PINS
+summary = {'pincodes_total': len(perPin), 'pincodes_target': len(PINS),
+           'pincodes_with_jivo': sum(1 for p in perPin if p['rows']),
            'unique_skus': len({r['canonical'] for r in allRows}), 'total_rows': len(allRows),
            'skus_with_price_variance': pv, 'verdict': ('HYPERLOCAL — Jivo price varies by pincode' if pv > 0 else 'uniform across sampled pincodes'),
            'source': 'QuickCommerce API (licensed)', 'credits_remaining_last_key': credits, 'wall_s': round(time.time() - t0),
-           'captured_at': datetime.datetime.now().isoformat()}
-json.dump({'summary': summary, 'perPin': perPin, 'allRows': allRows}, open(os.path.join(HERE, 'result_pincode.json'), 'w'), indent=2)
+           'captured_at': datetime.datetime.now().isoformat(),
+           'pincode_pull_complete': len(perPin) == len(PINS), 'min_pincodes_required': MIN_PINS,
+           'coverage_ok': coverage_ok}
+result = {'summary': summary, 'perPin': perPin, 'allRows': allRows}
+out_path = os.path.join(HERE, 'result_pincode.json')
+if not coverage_ok and not ALLOW_PARTIAL:
+    failed_path = os.path.join(HERE, 'result_pincode.failed.json')
+    json.dump(result, open(failed_path, 'w'), indent=2)
+    print('COVERAGE_FAIL', json.dumps(summary))
+    print(f'WROTE_FAILED_ONLY {failed_path}; kept existing result_pincode.json intact')
+    raise SystemExit(2)
+json.dump(result, open(out_path, 'w'), indent=2)
+shutil.copyfile(out_path, os.path.join(HERE, 'result.last-good.json'))
 print('SUMMARY', json.dumps(summary))
