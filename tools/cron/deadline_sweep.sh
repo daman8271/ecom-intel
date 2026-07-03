@@ -86,7 +86,7 @@ RUN_ALL_RC=$?
 # byte-unchanged no-op reconcile. competitors is deliberately NOT here: it self-advances
 # from its own producer (run_daily.sh, fired next) the moment the competitor scrape
 # finishes. Self-gates on readiness; can NEVER change the sweep's exit status.
-if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ "$SLOT" = "10:00" ] \
    && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
    && [ "$RUN_ALL_RC" = "0" ] && [ -x ./bin/advance_today_section.sh ]; then
   for _s in price-scraper factory ecom-app; do
@@ -97,19 +97,19 @@ fi
 
 # ---- EVENT-DRIVEN DOWNSTREAM CHAIN (replaces the old fixed 12:15 competitor +
 #      13:30 data-bank crons; goal #35, 2026-07-01) ---------------------------
-# The instant the noon price sweep finishes, the ecom price vault is freshly
+# The instant the 10:00 price sweep finishes, the ecom price vault is freshly
 # rebuilt AND the sweep-chain scrape lock was already released (run_all drops it
-# BEFORE the 12:00 batch barrier), so JIVO is done hitting Blinkit/Zepto and it is
+# BEFORE the 10:00 batch barrier), so JIVO is done hitting Blinkit/Zepto and it is
 # safe to scrape competitor prices now. tools/competitor/run_daily.sh scrapes
 # Blinkit+Zepto, folds today's capture into the ecom vault, pushes ecom-intel,
 # then triggers the JIVO data-bank fusion + push. Net effect: the data bank lands
-# ~12:20 (right after the sweep) instead of waiting for a fixed 13:30 clock, and
+# right after the sweep finishes (~07:30) instead of waiting for a fixed clock, and
 # it auto-slides later if the sweep ever runs late — no timing to tune.
 #
-# Guards: noon (12:00) slot only; production only (skip W2/W4 test + sim runs);
+# Guards: 10:00 slot only; production only (skip W2/W4 test + sim runs);
 # only when the sweep itself succeeded (rc=0, so the vault is fresh); kill switch
 # SWEEP_DOWNSTREAM=0. This block can NEVER change the sweep's own exit status.
-if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ "$SLOT" = "10:00" ] \
    && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
    && [ "$RUN_ALL_RC" = "0" ] && [ -x ./tools/competitor/run_daily.sh ]; then
   echo "[$(date '+%F %T')] deadline_sweep($SLOT): sweep DONE (rc=0) -> firing downstream competitor + data-bank chain"
@@ -138,15 +138,15 @@ if [ "${SWEEP_DOWNSTREAM:-1}" = "1" ] && [ -z "${PLATFORMS_OVERRIDE:-}" ] \
 fi
 
 # ---- EVENT-DRIVEN SITE REFRESH (goal #40, 2026-07-01) -----------------------
-# SITE-REFRESH-HOOK: the instant the noon sweep lands today's data (and the
+# SITE-REFRESH-HOOK: the instant the 10:00 sweep lands today's data (and the
 # competitor/data-bank chain above), regenerate + redeploy the 3 public
 # availability sites (ecom-availability-app, coverage-report-site,
 # eloo-bangalore-report) from the fresh ledger/history. Event-driven off the sweep
 # finishing — no fixed clock — so it auto-slides if the sweep runs late. Gated:
-# noon slot, production (no test overrides), sweep rc=0. Best-effort: can NEVER
+# 10:00 slot, production (no test overrides), sweep rc=0. Best-effort: can NEVER
 # change the sweep's exit. Kill switch SWEEP_SITES=0. refresh_sites.sh has its own
 # data-ready gate + Telegram notify on success/skip/fail.
-if [ "${SWEEP_SITES:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+if [ "${SWEEP_SITES:-1}" = "1" ] && [ "$SLOT" = "10:00" ] \
    && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
    && [ "$RUN_ALL_RC" = "0" ] && [ -x ./tools/sites/refresh_sites.sh ]; then
   echo "[$(date '+%F %T')] deadline_sweep($SLOT): sweep DONE -> firing site refresh+deploy"
@@ -160,17 +160,17 @@ else
 fi
 
 # ---- EVENT-DRIVEN today/ SNAPSHOT (jivo-today, 2026-07-01) ------------------
-# jivo-today: the instant the noon sweep lands today's data AND the downstream
+# jivo-today: the instant the 10:00 sweep lands today's data AND the downstream
 # competitor + data-bank chain above has committed vault/competitor/<DATE>, take
 # the verbatim per-day `today/` MD snapshot across all 4 vaults (bin/build_today.sh).
 # Event-driven off the sweep finishing — no fixed clock — so it auto-slides if the
-# sweep ever runs late. Gated identically to the two blocks above: noon (12:00)
+# sweep ever runs late. Gated identically to the two blocks above: 10:00
 # slot only; production only (skip W2/W4 test + sim runs); only when the sweep
 # itself succeeded (rc=0, vault fresh). build_today self-gates (ready-signal) so an
 # early/duplicate call is a safe no-op, and the */20 12-16 poller is the backstop.
 # Best-effort (|| true): this block can NEVER change the sweep's own exit status.
 # Kill switch SWEEP_TODAY=0.
-if [ "${SWEEP_TODAY:-1}" = "1" ] && [ "$SLOT" = "12:00" ] \
+if [ "${SWEEP_TODAY:-1}" = "1" ] && [ "$SLOT" = "10:00" ] \
    && [ -z "${PLATFORMS_OVERRIDE:-}" ] && [ -z "${RUNNER_OVERRIDE:-}" ] \
    && [ "$RUN_ALL_RC" = "0" ] && [ -x ./bin/build_today.sh ]; then
   echo "[$(date '+%F %T')] deadline_sweep($SLOT): sweep DONE -> firing today/ snapshot (build_today.sh)"

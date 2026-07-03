@@ -178,14 +178,14 @@ build_fixture() { # <root-dir> <scenario: yellow|red-broken|red-batch|green>
   local rdir="$root/reviews" p
   for p in $LIVE_PLATFORMS; do
     write_review "$rdir" "$p" "$TODAY-1500" "OK" ""
-    write_review "$rdir" "$p" "$TODAY-1200" "OK" ""
-    write_review "$rdir" "$p" "2026-06-07-1200" "OK" ""
+    write_review "$rdir" "$p" "$TODAY-1000" "OK" ""
+    write_review "$rdir" "$p" "2026-06-07-1000" "OK" ""
   done
   # batch-delivered lines (both slots), so missing-batch never falsely fires — UNLESS red-batch.
   local clog="$root/logs/cron.log"
   if [ "$scen" != "red-batch" ]; then
     {
-      echo "send_batch: sweep $TODAY-1200: batch delivered (8 reports, 0 held, 0 missing)"
+      echo "send_batch: sweep $TODAY-1000: batch delivered (8 reports, 0 held, 0 missing)"
       echo "send_batch: sweep $TODAY-1500: batch delivered (8 reports, 0 held, 0 missing)"
     } > "$clog"
   else
@@ -193,12 +193,12 @@ build_fixture() { # <root-dir> <scenario: yellow|red-broken|red-batch|green>
   fi
   case "$scen" in
     yellow)
-      write_review "$rdir" flipkart "$TODAY-1200" "SUSPECT" "shared_price_dup"
+      write_review "$rdir" flipkart "$TODAY-1000" "SUSPECT" "shared_price_dup"
       write_review "$rdir" flipkart "$TODAY-1500" "SUSPECT" "shared_price_dup"
-      write_review "$rdir" zepto    "$TODAY-1200" "SUSPECT" "price_staleness"
+      write_review "$rdir" zepto    "$TODAY-1000" "SUSPECT" "price_staleness"
       write_review "$rdir" zepto    "$TODAY-1500" "SUSPECT" "price_staleness" ;;
     red-broken)
-      write_review "$rdir" bigbasket "$TODAY-1200" "BROKEN" "BB_SESSION_EXPIRED"
+      write_review "$rdir" bigbasket "$TODAY-1000" "BROKEN" "BB_SESSION_EXPIRED"
       write_review "$rdir" bigbasket "$TODAY-1500" "BROKEN" "BB_SESSION_EXPIRED" ;;
     red-batch|green) : ;;
   esac
@@ -233,7 +233,7 @@ RBT="$(snap_json daily "$FIX/red_batch")"; echo "$RBT" > "$SANDBOX/red_batch.hea
 if [ -n "$RBT" ]; then
   assert_eq       "1.RED(missing batch) overall" "RED" "$(printf '%s' "$RBT" | jget 'd["overall"]')"
   assert_contains "1.RED(missing batch) flags a batch_delivery signal" "$RBT" "batch_delivery"
-  assert_contains "1.RED(missing batch) names the missing slot id" "$RBT" "batch_missing:$TODAY-1200"
+  assert_contains "1.RED(missing batch) names the missing slot id" "$RBT" "batch_missing:$TODAY-1000"
 else fail "1.RED-batch no JSON"; fi
 
 build_fixture "$FIX/green" green

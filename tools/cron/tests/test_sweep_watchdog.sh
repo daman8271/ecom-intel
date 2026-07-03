@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# test_sweep_watchdog.sh — behavioural test for the noon-sweep catch-up watchdog.
+# test_sweep_watchdog.sh — behavioural test for the 10:00-sweep catch-up watchdog.
 # Runs the real script in DRYRUN (no sweep launched, no Telegram) with a faked
 # "now", asserts the decision in each scenario, and never touches production state
 # beyond a throwaway launched-marker it cleans up.
@@ -8,14 +8,14 @@ cd "$(cd "$(dirname "$0")/../../.." && pwd)"   # -> repo root
 WD=tools/cron/sweep_watchdog.sh
 LOG=logs/sweep_watchdog.log
 TODAY="$(date +%F)"
-MARK="output/.batch/launched-${TODAY}-1200"
+MARK="output/.batch/launched-${TODAY}-1000"
 pass=0; fail=0
 
 epoch(){ date -d "$TODAY $1" +%s; }   # today at HH:MM -> epoch
 run(){ # $1=now HH:MM ; extra env in $2 -> returns last-line-of-log via $VERDICT
   local nowhm="$1"; local extra="${2:-}"
   : > "$LOG"
-  env $extra WATCHDOG_DRYRUN=1 WATCHDOG_NOW_OVERRIDE="$(epoch "$nowhm")" bash "$WD" 12:00 >/dev/null 2>&1
+  env $extra WATCHDOG_DRYRUN=1 WATCHDOG_NOW_OVERRIDE="$(epoch "$nowhm")" bash "$WD" 10:00 >/dev/null 2>&1
   VERDICT="$(tail -n 3 "$LOG" | tr '\n' '|')"
 }
 check(){ # $1=label $2=needle
@@ -39,13 +39,13 @@ rm -f "$MARK"
 run 01:00; check "marker present -> already armed" "already armed"
 rm -f "$MARK"
 
-# 4) 10:00, not armed, too late -> best-effort launch still happens (alarm path)
+# 4) 08:00, not armed, too late for a clean finish -> best-effort launch still happens (alarm path)
 rm -f "$MARK"
-run 10:00; check "10:00 unarmed -> best-effort launch (too-late path)" "would LAUNCH"
+run 08:00; check "08:00 unarmed -> best-effort launch (too-late path)" "would LAUNCH"
 rm -f "$MARK"
 
 # 5) sent- dir present -> armed (simulate delivered), no launch
-sentdir="output/.batch/sent-${TODAY}-1200"; had_sent=0; [ -d "$sentdir" ] && had_sent=1
+sentdir="output/.batch/sent-${TODAY}-1000"; had_sent=0; [ -d "$sentdir" ] && had_sent=1
 mkdir -p "$sentdir"
 run 01:00; check "delivered (sent- dir) -> already armed" "already armed"
 [ "$had_sent" = 0 ] && rmdir "$sentdir" 2>/dev/null || true

@@ -9,7 +9,7 @@
 #
 # ============================ LIVE SWEEPS + GUARDIAN (UNCHANGED) ============================
 # Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY. The live box now
-# fires the 12:00 slot at 00:30 with LEAD_MAX=39600, and a watchdog polls every
+# fires the 10:00 slot at 00:30 with LEAD_MAX=32400, and a watchdog polls every
 # 20 minutes from 00:00-09:00 to catch a missed launch tick. The script predicts the serial chain's
 # runtime from history (predict_lead.py), sleeps until <slot> - predicted_lead,
 # runs ./run_all.sh with DEFER_DELIVERY=1, and send_batch.py holds every
@@ -21,12 +21,14 @@
 # delivered through platforms/<platform>/ingest.sh. The old BigBasket paid
 # QuickCommerce API cron is retired.
 
-# 12:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28). Fire 00:30;
-# sweep starts at 12:00 - predicted lead and the batch lands AT 12:00. LEAD_MAX=39600
-# covers the longer chain after the tier-1 pincode expansion. The watchdog guards the
-# single 00:30 cron launch tick and only launches a bounded catch-up if the primary did not start.
-30 0 * * * cd /opt/ecom-intel && LEAD_MAX=39600 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 12:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 12:00
-*/20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 12:00 >> logs/sweep_watchdog.cron.log 2>&1   # noon-sweep catch-up watchdog (guards the single 00:30 launch tick)
+# 10:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28; moved
+# 12:00 -> 10:00 goal #60 2026-07-03). Fire 00:30; LEAD_MAX=32400 pins the chain
+# START to ~01:02 IST (the SAME proven start as the old 12:00 batch, so the Mac-fed
+# q-commerce spools land exactly as before) and the batch lands AT 10:00 instead of
+# 12:00. The watchdog guards the single 00:30 cron launch tick and only launches a
+# bounded catch-up if the primary did not start.
+30 0 * * * cd /opt/ecom-intel && LEAD_MAX=32400 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
+*/20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 10:00 >> logs/sweep_watchdog.cron.log 2>&1   # 10:00-sweep catch-up watchdog (guards the single 00:30 launch tick)
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
 # 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).
@@ -76,7 +78,7 @@
 #
 # Scope: ecom-intel cron lines only. The live root crontab also contains other repo schedules.
 # ===========================================================================================
-10 12 * * * cd /opt/ecom-intel && python3 tools/cron/check_layout.py >> logs/layout_gate.log 2>&1   # ecom-intel layout gate (post 12:00 batch)
+10 10 * * * cd /opt/ecom-intel && python3 tools/cron/check_layout.py >> logs/layout_gate.log 2>&1   # ecom-intel layout gate (post 10:00 batch)
 
 # ============================== PRICE-DATA MAILER (ADDITIVE) ===============================
 # Emails the day's 9 report files AS-IS (each .xlsx an individual attachment, unmodified) to

@@ -52,7 +52,7 @@ LIVE_PLATFORMS = [
 ]
 
 # ---- deadline slots (IST) the cron must land; used to detect missing batch --
-SWEEP_SLOTS = ["1200"]           # single noon batch (owner cut 2x->1x 2026-06-28; was 1200+1500)
+SWEEP_SLOTS = ["1000"]           # single 10:00 batch (moved 1200->1000 goal #60 2026-07-03; owner cut 2x->1x 2026-06-28, was 1200+1500)
 SLOT_GRACE_MIN = 30              # only flag a slot missing this long after its time
 
 # ---- thresholds -------------------------------------------------------------
@@ -279,7 +279,7 @@ def collect_platforms(scope):
 
 
 def collect_batches(scope):
-    """Did today's 12:00 batch deliver? Parse logs/cron.log send_batch lines."""
+    """Did today's 10:00 batch deliver? Parse logs/cron.log send_batch lines."""
     issues = []
     batches = {}
     today = ist_date_str()
