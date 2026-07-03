@@ -11,6 +11,16 @@ TODAY="$(date +%F)"
 MARK="output/.batch/launched-${TODAY}-1000"
 pass=0; fail=0
 
+# HERMETIC GUARD (2026-07-04, goal #61): this test manipulates output/.batch/launched-<today>-1000
+# (it rm -f's that exact path). If a REAL 10:00 sweep is armed/running today, running the test
+# would CLOBBER the live launch marker (and false-fail because armed()'s pgrep sees the real
+# process). So skip cleanly whenever a live sweep is present — run it any time no sweep is active.
+if pgrep -f "deadline_sweep.sh 10:00" >/dev/null 2>&1 || pgrep -f "run_all.sh" >/dev/null 2>&1 \
+   || [ -e "$MARK" ] || [ -d "output/.batch/${TODAY}-1000" ] || [ -d "output/.batch/sent-${TODAY}-1000" ]; then
+  echo "SKIP: a real 10:00 sweep is armed/running today — not running (would clobber the live launch marker)."
+  exit 0
+fi
+
 epoch(){ date -d "$TODAY $1" +%s; }   # today at HH:MM -> epoch
 run(){ # $1=now HH:MM ; extra env in $2 -> returns last-line-of-log via $VERDICT
   local nowhm="$1"; local extra="${2:-}"

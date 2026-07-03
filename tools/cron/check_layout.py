@@ -32,6 +32,14 @@ AMAZON_FAMILY = ["amazon", "amazon-fresh", "amazon-now"]
 BAU_MARKERS = ("price plan", "Below reference", "BELOW reference",
                "below reference", "agreed price")
 
+# BUG#1 PERMANENT GUARD (2026-07-04, goal #61): a cell with a percent number_format must
+# hold a FRACTION (0.363 → "36.3%"), never a raw percent (36.3 → "3630%"). This scanner
+# catches a regression before it ships: (a) quoted-percent formats like 0.0"%" (the old
+# buggy style), and (b) a %-formatted cell whose value is >= PCT_INFLATION_CEIL, i.e.
+# >= 2000% — unambiguous inflation. Real gaps/ratios (e.g. a 161% price gap = 1.61) stay
+# far below the ceiling, so this does not false-alarm on legitimate large percentages.
+PCT_INFLATION_CEIL = 20.0
+
 
 def newest_book(platform, date):
     pat = os.path.join(ROOT, "platforms", platform, f"Jivo-*{date}*.xlsx")
@@ -65,6 +73,50 @@ def check_book(platform, path):
         wb.close()
 
 
+def check_percent_inflation(date, books_dir=None):
+    """Scan today's delivered workbooks (<books_dir>/*<date>*.xlsx — platform reports AND the
+    competitor/price-watch books) for the percent-inflation bug. Returns a list of problem
+    strings (empty = clean). Alert-only, like the rest of this gate. books_dir defaults to
+    output/ (production); tests pass a temp dir."""
+    import openpyxl
+    problems = []
+    books_dir = books_dir or os.path.join(ROOT, "output")
+    books = sorted(glob.glob(os.path.join(books_dir, f"*{date}*.xlsx")),
+                   key=os.path.getmtime)
+    for path in books:
+        base = os.path.basename(path)
+        try:
+            wb = openpyxl.load_workbook(path, read_only=True, data_only=True)
+        except Exception:
+            continue
+        try:
+            for ws in wb.worksheets:
+                hits = 0
+                for row in ws.iter_rows():
+                    for c in row:
+                        nf = c.number_format or ""
+                        if "%" not in nf:
+                            continue
+                        if '"%"' in nf or "'%'" in nf:
+                            problems.append(f"{base}[{ws.title}] {c.coordinate}: quoted-percent "
+                                            f"format {nf!r} — use 0.0% on a fraction")
+                            hits += 1
+                        else:
+                            v = c.value
+                            if isinstance(v, (int, float)) and abs(v) >= PCT_INFLATION_CEIL:
+                                problems.append(f"{base}[{ws.title}] {c.coordinate}: value {v} in "
+                                                f"{nf!r} renders {v * 100:.0f}% — raw value, "
+                                                f"should be a fraction")
+                                hits += 1
+                        if hits >= 3:
+                            break
+                    if hits >= 3:
+                        break               # a few examples per sheet is enough
+        finally:
+            wb.close()
+    return problems
+
+
 def telegram(text):
     tok = chat = None
     try:
@@ -96,15 +148,24 @@ def main(argv):
         checked += 1
         problems.extend(check_book(p, path))
 
-    if problems:
-        msg = ("🚨 LAYOUT GATE FAIL — today's batch violates the Amazon-only "
-               "rule:\n" + "\n".join("• " + q for q in problems[:10])
-               + (f"\n(books missing: {', '.join(missing)})" if missing else ""))
+    pct_problems = check_percent_inflation(date)
+
+    if problems or pct_problems:
+        parts = ["🚨 BATCH GATE FAIL — today's books have issues:"]
+        if problems:
+            parts.append("Amazon-only rule:\n"
+                         + "\n".join("• " + q for q in problems[:8]))
+        if pct_problems:
+            parts.append("Percent inflation (bug#1 guard):\n"
+                         + "\n".join("• " + q for q in pct_problems[:8]))
+        if missing:
+            parts.append(f"(books missing: {', '.join(missing)})")
+        msg = "\n".join(parts)
         print(msg)
         if not dry:
             telegram(msg)
         return 0
-    note = (f"layout gate PASS — {checked} book(s) compliant"
+    note = (f"layout+percent gate PASS — {checked} book(s) compliant, no percent inflation"
             + (f" ({', '.join(missing)} not built yet)" if missing else ""))
     print(note)
     # bootstrap ping only on a FULL pass (all 8 books present) — a late chain

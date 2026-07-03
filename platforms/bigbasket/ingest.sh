@@ -37,10 +37,11 @@ else:
 PY
 )"
 
-python3 - "$STAGED" "$SHAPE" <<'PY'
-import json, sys
+python3 - "$STAGED" "$SHAPE" "$PDIR" <<'PY'
+import json, sys, os, math
 d = json.load(open(sys.argv[1]))
 shape = sys.argv[2]
+pdir = sys.argv[3]
 s = d.get("summary") or {}
 rows = d.get("allRows") or []
 if shape == "national":
@@ -49,10 +50,27 @@ if shape == "national":
             f"Refusing failed BigBasket browser drop: session_ok={s.get('session_ok')} rows={len(rows)}"
         )
 else:
-    if int(s.get("pincodes_total") or 0) < int(s.get("min_pincodes_required") or 20):
+    # BUG#2 PERMANENT GUARD (2026-07-04, goal #61): a partial/collapsed pincode pull
+    # (e.g. the 2026-07-03 Bengaluru-only 1-pin drop) must NEVER silently overwrite the
+    # good report. The floor is anchored to LAST-GOOD (which the VPS controls) so it holds
+    # even if the drop lies about — or omits — its own `min_pincodes_required`.
+    new_pins = int(s.get("pincodes_total") or 0)
+    declared_min = int(s.get("min_pincodes_required") or 0)
+    lg_pins = 0
+    lgf = os.path.join(pdir, "result.last-good.json")
+    if os.path.exists(lgf):
+        try:
+            lg_pins = int((json.load(open(lgf)).get("summary") or {}).get("pincodes_total") or 0)
+        except Exception:
+            lg_pins = 0
+    anchored = math.ceil(0.75 * lg_pins) if lg_pins else 0
+    required = max(declared_min, anchored, 20)   # absolute floor 20, else 75%-of-last-good, else the drop's own min
+    if new_pins < required:
         raise SystemExit(
-            f"Refusing under-covered BigBasket pincode drop: "
-            f"{s.get('pincodes_total')}/{s.get('pincodes_target', '?')} pincodes"
+            f"Refusing under-covered BigBasket pincode drop: {new_pins} pincodes "
+            f"< required {required} (declared_min={declared_min}, 75%-of-last-good={anchored}, "
+            f"last-good={lg_pins}, target={s.get('pincodes_target', '?')}). "
+            f"Keeping last-good — investigate the Mac scrape."
         )
 PY
 
