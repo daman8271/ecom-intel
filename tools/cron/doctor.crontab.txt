@@ -17,11 +17,8 @@
 # comes at the timing, not starts at it"). If the chain overruns, the batch goes
 # out as soon as it's done, marked "(late by Xm)".
 
-# BigBasket pincode-wise (licensed QuickCommerce API) — runs 03:00, BEFORE the sweep, so
-# result_pincode.json is fresh when build_pricematch reads it for the BigBasket column / Pin Spread.
-# Pulls 227 pincodes (Jivo cities + the 2026-06-28 tier-1 expansion Hyd/Chn/Ahd/Kol/Pune; incl.
-# price-match pins 110092/560006); ~6 min. Single PAID key.
-0 3 * * * cd /opt/ecom-intel && ./platforms/bigbasket/run_pincode.sh >> logs/cron.log 2>&1   # ecom-intel bigbasket-pincode daily
+# BigBasket is produced off-box on the Mac Pro/residential IP and delivered through
+# platforms/bigbasket/ingest.sh. The old paid QuickCommerce API cron is retired.
 
 # 12:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28). Fire 00:30;
 # sweep starts at 12:00 - predicted lead and the batch lands AT 12:00. LEAD_MAX=39600
