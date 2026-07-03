@@ -5,11 +5,11 @@ display_name: "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO C
 platforms:
   - amazon-fresh
 first_seen: 2026-06-27
-last_seen: 2026-06-30
-observations: 127
-min_price: 1734
+last_seen: 2026-07-03
+observations: 175
+min_price: 1548
 max_price: 1784
-latest_price: 1784
+latest_price: 1548
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹1784 (25.7% off)
+- [[amazon-fresh]] — latest ₹1548 (35.5% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Pune]]
+[[Bengaluru]] · [[Bhubaneswar]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kochi]] · [[Lucknow]] · [[Pune]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
 
-## Price history (127 observations)
+## Price history (175 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -161,6 +161,54 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-30-0728,2026-06-30,amazon-fresh,Pune,411051,1784,2400,25.7,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Pune,412101,1784,2400,25.7,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Pune,412114,1784,2400,25.7,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Bhubaneswar,751009,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Bhubaneswar,751019,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Bhubaneswar,751030,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110001,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110004,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110005,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110017,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110031,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110063,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110069,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110084,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Delhi,110094,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Kochi,682040,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Kochi,682041,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Kochi,682042,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Lucknow,226022,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411001,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411002,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411004,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411005,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411006,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411009,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411011,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411013,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411014,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411015,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411016,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411024,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411026,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411027,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411028,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411030,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411032,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411036,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411037,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411038,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411040,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411041,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411042,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411043,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411047,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411048,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411051,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411052,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411058,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,411060,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,412101,1548,2400,35.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Pune,412307,1548,2400,35.5,1
 ```
 
 ---
