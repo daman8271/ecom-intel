@@ -55,6 +55,11 @@ def autosize(ws, maxw=42):
         w = max((len(str(c.value)) for c in col if c.value is not None), default=8)
         ws.column_dimensions[L].width = min(maxw, max(10, w + 2))
 
+def pct_fraction(v):
+    if v is None:
+        return None
+    return round(float(v) / 100.0, 4)
+
 # ---------- Sheet 1: Executive Summary ----------
 ws = wb.active; ws.title = "Summary"
 ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TITLE_FONT
@@ -83,9 +88,10 @@ for s in skus:
     if not cand: cand = [x for x in rows if x['canonical'] == s]
     if not cand: continue
     b = min(cand, key=lambda x: x['sale'])
-    for j, v in enumerate([label(s), b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], b['discount_pct']], 1):
+    for j, v in enumerate([label(s), b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], pct_fraction(b['discount_pct'])], 1):
         cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
         if j >= 5: cell.alignment = CEN
+        if j == 7: cell.number_format = '0.0%'
     rr += 1
 # distribution gaps
 rr += 1
@@ -114,7 +120,7 @@ cols = ["City", "Pincode", "Locality", "Store", "SKU", "FK PID", "SAP Code", "Pa
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     ws.append([x['city'], x['pincode'], x.get('locality',''), x['store_name'], x['sku_raw'], x.get('fk_pid'), SAP_OF.get(x.get('fk_pid') or '', ''), x['pack'], x['vol_ml'],
-               x['sale'], x['mrp'], x['discount_pct'], x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No"])
+               x['sale'], x['mrp'], pct_fraction(x['discount_pct']), x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
@@ -122,10 +128,10 @@ for row in ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
         if cell.column in (10, 11): cell.number_format = '"Rs"#,##0'
-        if cell.column == 12: cell.number_format = '0.0"%"'
+        if cell.column == 12: cell.number_format = '0.0%'
     sc = row[9].value
     if row[14].value == "No": row[14].fill = RED
-    if isinstance(row[11].value, (int, float)) and row[11].value and row[11].value >= 40: row[11].fill = GREEN
+    if isinstance(row[11].value, (int, float)) and row[11].value and row[11].value >= 0.40: row[11].fill = GREEN
 autosize(ws)
 
 # ---------- Matrix builder ----------
@@ -165,20 +171,20 @@ def modal_price(cands):
 matrix("Pricing Matrix", modal_price, '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
-    pct = round(100 * sum(x['in_stock'] for x in c) / len(c))
+    pct = round(sum(x['in_stock'] for x in c) / len(c), 4)
     return pct
-wsS = matrix("Stock Status", stock_cell, '0"%"')
+wsS = matrix("Stock Status", stock_cell, '0%')
 for row in wsS.iter_rows(min_row=2):
     for cell in row:
         if cell.column > 1 and isinstance(cell.value, (int, float)):
-            cell.fill = GREEN if cell.value == 100 else (RED if cell.value == 0 else YEL)
+            cell.fill = GREEN if cell.value == 1 else (RED if cell.value == 0 else YEL)
 # Sheet 5: Discount Analysis (modal disc per city) - higher = greener
 def modal_disc(cands):
     vals = [x['discount_pct'] for x in cands if x['discount_pct'] is not None]
     if not vals: return None
     cnt = Counter(vals); top = max(cnt.values())
-    return round(min(v for v, n in cnt.items() if n == top), 1)
-matrix("Discount Analysis", modal_disc, '0.0"%"', scale=True, scale_rev=True)
+    return pct_fraction(round(min(v for v, n in cnt.items() if n == top), 1))
+matrix("Discount Analysis", modal_disc, '0.0%', scale=True, scale_rev=True)
 
 # ---------- Sheet 6: Coverage / Gaps ----------
 ws = wb.create_sheet("Coverage & Gaps")

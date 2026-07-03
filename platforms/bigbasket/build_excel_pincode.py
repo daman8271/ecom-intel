@@ -21,7 +21,7 @@ RED = PatternFill("solid", fgColor="F4CCCC"); GREEN = PatternFill("solid", fgCol
 YEL = PatternFill("solid", fgColor="FFF2CC"); BLUE = PatternFill("solid", fgColor="CFE2F3")
 thin = Side(style="thin", color="D0D0D0"); BORDER = Border(left=thin, right=thin, top=thin, bottom=thin)
 CEN = Alignment(horizontal="center", vertical="center")
-RS = '"₹"#,##0.00'; PCT = '0.0"%"'
+RS = '"₹"#,##0.00'; PCT = '0.0%'
 wb = Workbook()
 
 
@@ -45,6 +45,12 @@ def widths(ws, spec):
             ws.column_dimensions[L].width = spec[i]; continue
         w = max((len(str(c.value)) for c in col if c.value is not None), default=8)
         ws.column_dimensions[L].width = min(46, max(11, w + 3))
+
+
+def pct_fraction(v):
+    if v is None:
+        return None
+    return round(float(v) / 100.0, 4)
 
 
 skus = sorted(set(r['canonical'] for r in rows))
@@ -83,7 +89,7 @@ for s in skus:
     if not cand:
         continue
     b = min(cand, key=lambda x: x['sale'])
-    for j, v in enumerate([label(s), b['pincode'], b['city'], b['sale'], b['mrp'], b['discount_pct']], 1):
+    for j, v in enumerate([label(s), b['pincode'], b['city'], b['sale'], b['mrp'], pct_fraction(b['discount_pct'])], 1):
         cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
         if j == 4 or j == 5:
             cell.number_format = RS
@@ -104,7 +110,7 @@ cols = ["City", "Pincode", "Locality", "SKU", "Pack", "Vol (ml)", "Sale", "MRP",
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     ws.append([x['city'], x['pincode'], x.get('locality', ''), x['sku_raw'], x['pack'], x['vol_ml'], x['sale'], x['mrp'],
-               x['discount_pct'], x['per_litre'], "Yes" if x['in_stock'] else "No", "★" if str(x['pincode']) in PRICEMATCH else ""])
+               pct_fraction(x['discount_pct']), x['per_litre'], "Yes" if x['in_stock'] else "No", "★" if str(x['pincode']) in PRICEMATCH else ""])
 style_header(ws); ws.freeze_panes = "A2"; ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row:
@@ -112,7 +118,7 @@ for row in ws.iter_rows(min_row=2):
     row[6].number_format = RS; row[7].number_format = RS; row[8].number_format = PCT; row[9].number_format = RS
     if row[10].value == "No":
         row[10].fill = RED
-    if isinstance(row[8].value, (int, float)) and row[8].value >= 40:
+    if isinstance(row[8].value, (int, float)) and row[8].value >= 0.40:
         row[8].fill = GREEN
     if row[11].value:
         row[1].fill = BLUE
@@ -169,13 +175,13 @@ def matrix(name, valfn, fmt=None, scale=False, scale_rev=False, only_with=True):
 # Sheet 4: Pricing Matrix (avg sale per pincode) — green cheap -> red dear
 matrix("Pricing Matrix", lambda c: round(statistics.mean([x['sale'] for x in c]), 2), RS, scale=True)
 # Sheet 5: Stock Status (% in-stock per pincode/SKU)
-wsS = matrix("Stock Status", lambda c: round(100 * sum(x['in_stock'] for x in c) / len(c)), '0"%"')
+wsS = matrix("Stock Status", lambda c: round(sum(x['in_stock'] for x in c) / len(c), 4), '0%')
 for row in wsS.iter_rows(min_row=2):
     for cell in row:
         if cell.column > 1 and isinstance(cell.value, (int, float)):
-            cell.fill = GREEN if cell.value == 100 else (RED if cell.value == 0 else YEL)
+            cell.fill = GREEN if cell.value == 1 else (RED if cell.value == 0 else YEL)
 # Sheet 6: Discount Analysis (avg disc per pincode/SKU) — higher = greener
-matrix("Discount Analysis", lambda c: round(statistics.mean([x['discount_pct'] for x in c]), 1), PCT, scale=True, scale_rev=True)
+matrix("Discount Analysis", lambda c: pct_fraction(round(statistics.mean([x['discount_pct'] for x in c]), 1)), PCT, scale=True, scale_rev=True)
 
 fname = os.path.join(HERE, f"Jivo-BigBasket-Pincode-Report-{datetime.date.today()}.xlsx")
 wb.save(fname)

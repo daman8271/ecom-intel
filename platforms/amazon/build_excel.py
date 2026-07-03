@@ -59,6 +59,12 @@ def med(xs):
     return statistics.median(xs) if xs else None
 
 
+def pct_fraction(v):
+    if v is None:
+        return None
+    return round(float(v) / 100.0, 4)
+
+
 def label(canon):
     parts = str(canon).rsplit('-', 1)
     name = parts[0].replace('-', ' ').title()
@@ -89,8 +95,8 @@ BORDER = Border(left=_thin, right=_thin, top=_thin, bottom=_thin)
 CEN = Alignment(horizontal="center", vertical="center")
 LEFT = Alignment(horizontal="left", vertical="center")
 MONEY = '"₹"#,##0'
-PCT = '0.0"%"'
-PCT0 = '0"%"'
+PCT = '0.0%'
+PCT0 = '0%'
 
 
 def title_block(ws, title, subtitle, span=8):
@@ -194,7 +200,7 @@ if HAS_SELLER:
     header_at(ws, ["SKU / Product", "Retailer (Sold by)", "Sale ₹", "MRP ₹", "Disc %"], r)
     r += 1
     for i, x in enumerate(sorted(instk_rows, key=lambda x: -(x.get('discount_pct') or 0))[:10]):
-        vals = [x['sku_raw'], gv(x, 'seller') or "—", x.get('sale'), x.get('mrp'), x.get('discount_pct')]
+        vals = [x['sku_raw'], gv(x, 'seller') or "—", x.get('sale'), x.get('mrp'), pct_fraction(x.get('discount_pct'))]
         for j, v in enumerate(vals, 1):
             cell = ws.cell(row=r, column=j, value=v); cell.border = BORDER
             cell.alignment = LEFT if j in (1, 2) else CEN
@@ -205,7 +211,7 @@ if HAS_SELLER:
             if i % 2:
                 cell.fill = BAND
         dcell = ws.cell(row=r, column=5)
-        if isinstance(dcell.value, (int, float)) and dcell.value >= 40:
+        if isinstance(dcell.value, (int, float)) and dcell.value >= 0.40:
             dcell.fill = GREEN
         r += 1
     autosize(ws)
@@ -230,7 +236,7 @@ if HAS_SELLER:
         seller = gv(x, 'seller') or "—"
         vals = [x['sku_raw'], gv(x, 'asin'), gv(x, 'category'), pt, seller, gv(x, 'ships_from'),
                 instk, gv(x, 'availability_text'), x.get('units_left'),
-                x.get('sale'), x.get('mrp'), x.get('discount_pct'), gv(x, 'pack'), x.get('per_litre')]
+                x.get('sale'), x.get('mrp'), pct_fraction(x.get('discount_pct')), gv(x, 'pack'), x.get('per_litre')]
         for j, v in enumerate(vals, 1):
             cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
             cell.alignment = LEFT if j in (1, 5, 8, 13) else CEN
@@ -251,7 +257,7 @@ if HAS_SELLER:
         if seller == "—":
             ws.cell(row=rr, column=5).fill = YEL
         dcell = ws.cell(row=rr, column=12)
-        if isinstance(dcell.value, (int, float)) and dcell.value >= 40:
+        if isinstance(dcell.value, (int, float)) and dcell.value >= 0.40:
             dcell.fill = GREEN
         rr += 1
     ws.freeze_panes = "A4"
@@ -274,7 +280,7 @@ if HAS_SELLER:
         ins = sum(1 for x in grp if x['in_stock'])
         mis = sum(1 for x in grp if _missing(x))
         cat_rows.append((cat, len(grp), ins, len(grp) - ins - mis, mis,
-                         round(100 * ins / len(grp)) if grp else 0))
+                         round(ins / len(grp), 4) if grp else 0))
     cat_rows.sort(key=lambda t: t[5])
     rr = 5
     for row_vals in cat_rows:
@@ -284,10 +290,10 @@ if HAS_SELLER:
             if j == 6:
                 cell.number_format = PCT0
         pc = ws.cell(row=rr, column=6)
-        pc.fill = GREEN if row_vals[5] >= 80 else (RED if row_vals[5] <= 20 else YEL)
+        pc.fill = GREEN if row_vals[5] >= 0.80 else (RED if row_vals[5] <= 0.20 else YEL)
         rr += 1
     first_data, last_data = 5, rr - 1
-    tot = ["ALL CATEGORIES", n_total, n_instk, n_oos, n_miss, round(100 * n_instk / n_total) if n_total else 0]
+    tot = ["ALL CATEGORIES", n_total, n_instk, n_oos, n_miss, round(n_instk / n_total, 4) if n_total else 0]
     for j, v in enumerate(tot, 1):
         cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER; cell.font = BOLD
         cell.alignment = LEFT if j == 1 else CEN
@@ -296,7 +302,7 @@ if HAS_SELLER:
     try:
         ws.conditional_formatting.add("F%d:F%d" % (first_data, last_data),
                                       DataBarRule(start_type="num", start_value=0,
-                                                  end_type="num", end_value=100, color="63BE7B"))
+                                                  end_type="num", end_value=1, color="63BE7B"))
     except Exception:
         pass
     rr += 2
@@ -308,21 +314,21 @@ if HAS_SELLER:
     for nm, grp in (("Combo", combos), ("Single", singles)):
         ins = sum(1 for x in grp if x['in_stock'])
         mis = sum(1 for x in grp if _missing(x))
-        pct = round(100 * ins / len(grp)) if grp else 0
+        pct = round(ins / len(grp), 4) if grp else 0
         vals = [nm, len(grp), ins, len(grp) - ins - mis, pct]
         for j, v in enumerate(vals, 1):
             cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
             cell.alignment = LEFT if j == 1 else CEN
             if j == 5:
                 cell.number_format = PCT0
-        ws.cell(row=rr, column=5).fill = GREEN if pct >= 80 else (RED if pct <= 20 else YEL)
+        ws.cell(row=rr, column=5).fill = GREEN if pct >= 0.80 else (RED if pct <= 0.20 else YEL)
         rr += 1
     rr += 1
     if cat_rows:
         w = cat_rows[0]
         ws.cell(row=rr, column=1,
                 value="Note: lowest availability is %s — %d%% in stock (%d of %d ASINs)."
-                % (w[0], w[5], w[2], w[1])).font = NOTE_FONT
+                % (w[0], round(w[5] * 100), w[2], w[1])).font = NOTE_FONT
     autosize(ws)
 
     # ---------------- Sheet 4: Retailers ----------------
@@ -361,7 +367,7 @@ if HAS_SELLER:
     rr = 4
     for i, x in enumerate(sorted(instk_rows, key=lambda x: (-(x.get('discount_pct') or 0), x.get('sale') or 0))):
         vals = [x['sku_raw'], gv(x, 'category'), gv(x, 'seller') or "—",
-                x.get('sale'), x.get('mrp'), x.get('discount_pct'), x.get('per_litre')]
+                x.get('sale'), x.get('mrp'), pct_fraction(x.get('discount_pct')), x.get('per_litre')]
         for j, v in enumerate(vals, 1):
             cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
             cell.alignment = LEFT if j in (1, 2, 3) else CEN
@@ -373,7 +379,7 @@ if HAS_SELLER:
                 cell.fill = BAND
         dcell = ws.cell(row=rr, column=6)
         if isinstance(dcell.value, (int, float)):
-            dcell.fill = GREEN if dcell.value >= 40 else (RED if dcell.value <= 5 else YEL)
+            dcell.fill = GREEN if dcell.value >= 0.40 else (RED if dcell.value <= 0.05 else YEL)
         rr += 1
     ws.freeze_panes = "A4"
     ws.auto_filter.ref = "A3:G%d" % (rr - 1)
@@ -390,7 +396,7 @@ if HAS_SELLER:
 
     def grp_stats(grp):
         ins = sum(1 for x in grp if x['in_stock'])
-        pct = round(100 * ins / len(grp)) if grp else 0
+        pct = round(ins / len(grp), 4) if grp else 0
         msale = med([x['sale'] for x in grp if x.get('sale') is not None])
         mdisc = med([x['discount_pct'] for x in grp if x['in_stock'] and x.get('discount_pct') is not None])
         return ins, pct, msale, mdisc
@@ -400,7 +406,7 @@ if HAS_SELLER:
         ins, pct, msale, mdisc = grp_stats(grp)
         vals = [nm, len(grp), ins, pct,
                 round(msale) if msale is not None else None,
-                round(mdisc, 1) if mdisc is not None else None]
+                pct_fraction(round(mdisc, 1)) if mdisc is not None else None]
         for j, v in enumerate(vals, 1):
             cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
             cell.alignment = LEFT if j == 1 else CEN
@@ -423,7 +429,7 @@ if HAS_SELLER:
         for i, x in enumerate(sorted(grp, key=lambda r: (not r['in_stock'], r.get('sale') or 1e9))):
             instk = "Yes" if x['in_stock'] else "No"
             vals = [x['sku_raw'], gv(x, 'pack') or "—", gv(x, 'seller') or "—",
-                    x.get('sale'), x.get('mrp'), x.get('discount_pct'), instk]
+                    x.get('sale'), x.get('mrp'), pct_fraction(x.get('discount_pct')), instk]
             for j, v in enumerate(vals, 1):
                 cell = ws.cell(row=rw, column=j, value=v); cell.border = BORDER
                 cell.alignment = LEFT if j in (1, 2, 3) else CEN
@@ -455,7 +461,7 @@ else:
                     "Disc %", "₹ / L", "In Stock?"], 1)
     for x in sorted(rows, key=lambda r: (gv(r, 'city'), gv(r, 'pincode'), gv(r, 'canonical'))):
         ws2.append([gv(x, 'city'), gv(x, 'pincode'), gv(x, 'store_name'), gv(x, 'sku_raw'), gv(x, 'pack'),
-                    x.get('sale'), x.get('mrp'), x.get('discount_pct'), x.get('per_litre'),
+                    x.get('sale'), x.get('mrp'), pct_fraction(x.get('discount_pct')), x.get('per_litre'),
                     "Yes" if x.get('in_stock') else "No"])
     ws2.freeze_panes = "A2"
     autosize(ws2)

@@ -334,6 +334,12 @@ def autosize(ws, maxw=46):
         ws.column_dimensions[L].width = min(maxw, max(10, w + 2))
 
 
+def pct_fraction(v):
+    if v is None:
+        return None
+    return round(float(v) / 100.0, 4)
+
+
 # ---- workbook builder ---------------------------------------------------------
 def annotate(rows, platform):
     for r in rows:
@@ -412,7 +418,7 @@ def build_workbook(captures, label, date, out_dir):
             vals = ([p.replace('-', ' ').title()] if multi else []) + [
                 a.get('jivo_example', a['key']),
                 f"{a['oil_type']} / {a['grade']} / {anchor_pack_label(a)}",
-                jpl, src, len(rivals), cheap_br, cheap_pl, gap, gap_pct, v]
+                jpl, src, len(rivals), cheap_br, cheap_pl, gap, pct_fraction(gap_pct), v]
             for j, val in enumerate(vals, 1):
                 cell = ws.cell(row=rr, column=j, value=val)
                 cell.border = BORDER
@@ -421,7 +427,7 @@ def build_workbook(captures, label, date, out_dir):
             base = 1 if multi else 0
             for col in (base + 3, base + 8):  # Rs/L, Gap Rs/L
                 ws.cell(row=rr, column=col).number_format = '"Rs"#,##0'
-            ws.cell(row=rr, column=base + 9).number_format = '0.0"%"'
+            ws.cell(row=rr, column=base + 9).number_format = '0.0%'
             vc = ws.cell(row=rr, column=base + 10)
             gc = ws.cell(row=rr, column=base + 8)
             if "THREAT" in v:
@@ -456,6 +462,8 @@ def build_workbook(captures, label, date, out_dir):
     def write_row(values, fill=None, bold=False):
         nonlocal rr
         for j, val in enumerate(values, 1):
+            if j in (base + 7, base + 10) and isinstance(val, (int, float)):
+                val = pct_fraction(val)
             cell = ws.cell(row=rr, column=j, value=val)
             cell.border = BORDER
             if j >= (3 if multi else 2):
@@ -466,8 +474,8 @@ def build_workbook(captures, label, date, out_dir):
                 cell.fill = fill
         for col in money_cols:
             ws.cell(row=rr, column=col).number_format = '"Rs"#,##0'
-        ws.cell(row=rr, column=base + 7).number_format = '0.0"%"'   # Discount %
-        ws.cell(row=rr, column=base + 10).number_format = '0.0"%"'  # Gap %
+        ws.cell(row=rr, column=base + 7).number_format = '0.0%'   # Discount %
+        ws.cell(row=rr, column=base + 10).number_format = '0.0%'  # Gap %
         rr += 1
 
     for idx, a in enumerate(ANCHORS, 1):
@@ -536,7 +544,7 @@ def build_workbook(captures, label, date, out_dir):
             "Yes" if x.get('_oil') == 'blend' else "",
             x.get('city'), x.get('pincode'), x.get('store_id'),
             x.get('name'), x.get('pack'), x.get('vol_ml'), x.get('mrp'), x.get('sale'),
-            x.get('per_litre'), x.get('discount_pct'),
+            x.get('per_litre'), pct_fraction(x.get('discount_pct')),
             "Yes" if x.get('in_stock') else "No", x.get('rank'),
             "Yes" if x.get('is_ad') else "", (x.get('captured_at') or '')[:16].replace('T', ' '),
         ])
@@ -549,7 +557,7 @@ def build_workbook(captures, label, date, out_dir):
             if cell.column in (15, 16, 17):
                 cell.number_format = '"Rs"#,##0'
             if cell.column == 18:
-                cell.number_format = '0.0"%"'
+                cell.number_format = '0.0%'
         if row[2].value == "Yes":
             row[1].fill = JIVO_FILL
         if row[7].value == "Yes":
