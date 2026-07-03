@@ -456,13 +456,13 @@ def build_workbook(captures, label, date, out_dir):
     style_header(ws, 1, ncol)
     ws.freeze_panes = "A2"
     base = 1 if multi else 0
-    money_cols = [base + 5, base + 6, base + 8, base + 9]   # MRP, Sale, Rs/L, Gap Rs/L
+    money_cols = [base + 6, base + 7, base + 9, base + 10]  # MRP, Sale, Rs/L, Gap Rs/L
     rr = 2
 
     def write_row(values, fill=None, bold=False):
         nonlocal rr
         for j, val in enumerate(values, 1):
-            if j in (base + 7, base + 10) and isinstance(val, (int, float)):
+            if j in (base + 8, base + 11) and isinstance(val, (int, float)):
                 val = pct_fraction(val)
             cell = ws.cell(row=rr, column=j, value=val)
             cell.border = BORDER
@@ -474,8 +474,8 @@ def build_workbook(captures, label, date, out_dir):
                 cell.fill = fill
         for col in money_cols:
             ws.cell(row=rr, column=col).number_format = '"Rs"#,##0'
-        ws.cell(row=rr, column=base + 7).number_format = '0.0%'   # Discount %
-        ws.cell(row=rr, column=base + 10).number_format = '0.0%'  # Gap %
+        ws.cell(row=rr, column=base + 8).number_format = '0.0%'   # Discount %
+        ws.cell(row=rr, column=base + 11).number_format = '0.0%'  # Gap %
         rr += 1
 
     for idx, a in enumerate(ANCHORS, 1):
