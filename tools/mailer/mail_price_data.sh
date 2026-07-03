@@ -4,7 +4,7 @@
 # then post the same files to the WhatsApp "Ecom team" group.
 #
 # Slots: am (10:00 cron, the ONLY scheduled slot) waits up to 3h for the daily
-# serial chain to finish writing ALL of today's files (the noon batch lands ~12:00).
+# serial chain to finish writing ALL of today's files (xlsx ready ~06:17; the batch lands ~10:00 since 2026-07-03, was noon).
 # pm/test are manual-only (pm was retired with the 15:00 sweep 2026-06-28) and send
 # with whatever is present. A file counts as ready only when it exists AND its mtime is
 # >=90s old (never attach a mid-write workbook). On wait timeout it sends the

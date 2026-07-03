@@ -42,7 +42,8 @@ if [ -n "${PLATFORMS_OVERRIDE:-}" ] || [ -n "${RUNNER_OVERRIDE:-}" ]; then
   echo "[$(date '+%F %T')] run_all: SIM MODE (override set) — guardian/healthcheck/vault/git SKIPPED"
 fi
 # ---- SWEEP-CHAIN LOCK (W2 mitigation, LEAD-approved 2026-06-06) --------------
-# Deadline slots 12:00 + 15:00 are only 3h apart: an overrunning prior chain
+# Historically the deadline slots 12:00 + 15:00 were only 3h apart (now a single
+# 10:00 slot, 2026-07-03): an overrunning prior chain
 # (in-chain guardian heal re-runs are not priced into the p90 lead) could still
 # be scraping when this sweep's chain starts — two serial chains co-running
 # defeats the whole serial design. One mechanism guards both that and the
