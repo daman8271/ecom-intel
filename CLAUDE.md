@@ -3,7 +3,7 @@
 Operator manual. Auto-loads when you run `claude` in this directory.
 
 ## What this is
-Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for daily cron runs — **one deadline-aligned sweep that lands the whole batch at 12:00 noon IST, plus an 18:00 guardian deep-dive** (cut from 2×/day to 1×/day 2026-06-28) — with an automated end-of-run review, auto-heal guardian, self-heal, and an **Amazon canonical auto-heal** (Claude merges truncated-title stub SKUs, identity-only — LIVE 2026-06-13). Pitched to Jivo's head of e-commerce.
+Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at national scale (hundreds of pincodes per quick-comm platform, ≈332–798), and produces a clean branded Excel report per platform (6 sheets + an appended Predictions sheet). Built for daily cron runs — **one deadline-aligned sweep that lands the whole batch at 10:00 AM IST, plus an 18:00 guardian deep-dive** (cut from 2×/day to 1×/day 2026-06-28) — with an automated end-of-run review, auto-heal guardian, self-heal, and an **Amazon canonical auto-heal** (Claude merges truncated-title stub SKUs, identity-only — LIVE 2026-06-13). Pitched to Jivo's head of e-commerce.
 
 ## Architecture (the rule)
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
@@ -18,7 +18,7 @@ ecom-intel/
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
 ├── run_all.sh             # one cron sweep: VPS platforms only; Blinkit/BigBasket/Swiggy are Mac/drop-fed
-├── setup_cron.sh          # installs the cron (12:00 deadline sweep, 18:00 guardian deep-dive) + sets timezone
+├── setup_cron.sh          # installs the cron (10:00 deadline sweep, 18:00 guardian deep-dive) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
 │   ├── blinkit/ / bigbasket/  # LIVE, Mac Pro residential-IP runners -> ingest.sh
@@ -52,7 +52,7 @@ COVERAGE_FULL=1 ./run.sh zepto               # uses platforms/<p>/pincodes.full2
 COVERAGE_FULL=1 PINCODES_FILE=platforms/zepto/pincodes.zerocities.json ./run.sh zepto
 python3 tools/coverage/coverage_report.py $(date +%F)   # honest per-city x per-platform matrix
 ```
-- **The daily cron (`deadline_sweep 12:00`) now runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) → QC scrapes the Jivo-priced subsets, NOT anchors. Amazon platforms have no `pincodes.daily.json` → stay on anchors. Rollback: `crontab -e`, remove `COVERAGE_DAILY=1` (backup in `backups/crontab.pre-daily-coverage.*`).
+- **The daily cron (`deadline_sweep 10:00`) now runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) → QC scrapes the Jivo-priced subsets, NOT anchors. Amazon platforms have no `pincodes.daily.json` → stay on anchors. Rollback: `crontab -e`, remove `COVERAGE_DAILY=1` (backup in `backups/crontab.pre-daily-coverage.*`).
 - **Daily set goes stale** unless refreshed: a **weekly `COVERAGE_FULL` pass** rebuilds `pincodes.daily.json` (= price_captured pincodes from the fresh census). Regenerate the daily configs from the ledger after a full run.
 - Configs: `pincodes.daily.json` (daily) · `pincodes.full25.json` (full; regen `python3 tools/pincodes/gen_full_configs.py`). NEVER edit `pincodes.json` (anchor = rollback).
 - Ledger: `data/coverage/ledger.csv` — status per `(platform,pincode)`: `price_captured|serviceable_no_jivo|not_serviceable|error`.
@@ -89,13 +89,13 @@ scrape is then re-evaluated by the **guardian auto-heal** (below).
 ## Cron (IST) — DEADLINE-ALIGNED (owner requirement 2026-06-06)
 > **2026-06-30: the daily batch now runs `COVERAGE_DAILY=1`** — QC platforms scrape the Jivo-priced per-pincode subsets (blinkit 486 / zepto 693 / fkm 340) instead of anchors. Amazon stays on anchors (no daily config). First-run review may flag `SUSPECT` (row-count vs old baseline; non-blocking) until baselines are rescaled.
 
-Reports must all **LAND at the slot time (12:00 noon IST)** — the pipeline was cut from
+Reports must all **LAND at the slot time (10:00 AM IST)** — the pipeline was cut from
 2×/day to **one deadline-aligned sweep** on 2026-06-28 (the 15:00 sweep + 16:00 mailer were
 retired). The deadline mechanism is **LIVE and PROVEN since 2026-06-06**: batches land at the
 slot to the second (self-aligning chain + barrier). Cron fires
-`tools/cron/deadline_sweep.sh 12:00` at **00:30 IST** (predicts its lead and sleeps to land at 12:00; the watchdog polls from 00:00-09:00 and only takes over after the 00:35 primary-launch grace); it predicts the chain runtime
+`tools/cron/deadline_sweep.sh 10:00` at **00:30 IST** (predicts its lead and sleeps to land at 10:00; the watchdog polls from 00:00-09:00 and only takes over after the 00:35 primary-launch grace); it predicts the chain runtime
 (`tools/cron/predict_lead.py` — p90 of last 10 per-platform durations in
-`tools/cron/durations.jsonl`, self-learning, `LEAD_MAX=39600`), sleeps to `T − lead`, then
+`tools/cron/durations.jsonl`, self-learning, `LEAD_MAX=32400`), sleeps to `T − lead`, then
 runs `./run_all.sh` with `DEFER_DELIVERY=1 SWEEP_ID=… SWEEP_DEADLINE=…`. run.sh then SPOOLS
 each OK report (`output/.batch/<sweep>/<p>.json`) instead of curling; after the loop
 `tools/cron/send_batch.py` sleeps until the deadline (barrier) and ships ONE batch — header,
@@ -106,10 +106,10 @@ deep-dive** (`./tools/guardian_daily.sh`) is unchanged. The daily sweep scrapes 
 platforms SERIALLY — one platform at a time — in this order:
 flipkart-minutes, flipkart, zepto, amazon, amazon-fresh, amazon-now.
 **Blinkit, BigBasket, and Swiggy are NOT in this serial chain — they run off-box on the
-Mac Pro/residential IP and drop JSON into their `ingest.sh`; the noon batch spools the
+Mac Pro/residential IP and drop JSON into their `ingest.sh`; the 10:00 batch spools the
 resulting workbooks from `output/`.** ** was REMOVED from the chain
 2026-06-06** (WAF-dead, ~40m heal-retry waste per sweep; rebuild pending — owner).
-The sweep fires early in the small hours and self-aligns so the batch lands AT 12:00 noon.
+The sweep fires early in the small hours and self-aligns so the batch lands AT 10:00 AM.
 Now that there is a single daily sweep, the old two-sweep overlap concern is moot; the
 `.sweep-chain.lock` guard remains as a harmless backstop (see crontab.proposed.txt's comments
 for the historical two-slot analysis).
