@@ -1,13 +1,13 @@
 ---
 type: moc
 title: SKUs
-sku_count: 996
+sku_count: 998
 tags:
   - moc
   - type/sku-moc
 ---
 
-# SKUs — Map of Content (996 unique)
+# SKUs — Map of Content (998 unique)
 
 Up: [[index]]
 
@@ -256,7 +256,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-1-ltr-5l]] — Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 1 Ltr 5l
 - [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-5l]] — Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 2 Ltr 5l
 - [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-ideal-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-2l]] — Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 2 Ltr Ideal For Roasting Frying Baking All Type Of Cuisines Low Saturated Fat Low Saturated Fat 2l
-- [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-ideal-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-7l]] — Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 2 LTR (Pet Bottle) | | Ideal for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat (5 + 2 LTR)
+- [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-ideal-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-7l]] — Jivo Extra Light Olive Oil 5 Litre with 2 Litre Pet Bottle | Imported from Spain | MUFA-Rich Cooking Oil | Cholesterol & Trans Fat Free | High Smoke Point | Ideal for Indian Cooking, Frying, Roasting, Grilling, & Baking (5 + 2 LTR)
 - [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-tin-1-ltr-pet-bottle-recommendable-for-roasting-frying-baking-all-type-of-cuisines-low-sat-1l]] — Jivo Extra Light Daily Cooking Olive Oil 5 Ltr Tin 1 Ltr Pet Bottle Recommendable For Roasting Frying Baking All Type Of Cuisines Low Sat 1l
 - [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-tin-1-ltr-pet-bottle-recommendable-for-roasting-frying-baking-all-type-of-cuisines-low-sat-6l]] — Jivo Extra Light Daily Cooking Olive Oil 5 LTR (Tin) + 1 LTR (Pet Bottle) | | Recommendable for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat (Pack of 2) (5+1 LTR)
 - [[jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-cooking-dressings-salad-soups-dips-and-marinades-all-culinary-uses-light-flavorful-high-mufa-rich-in-antioxidants-1l]] — Jivo Extra Light Olive Oil 1 Litre | Imported from Spain | Everyday Cooking, Dressings, Salad, Soups, Dips, and Marinades All Culinary Uses | Light, Flavorful High MUFA & Rich in Antioxidants (1 LTR)
@@ -276,7 +276,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-light-olive-oil-2l-1l-3l]] — Jivo Extra Light Olive Oil 2L & 1L (2LTR + 1LTR (BUNDLE))
 - [[jivo-extra-light-olive-oil-3-litre-3l]] — Jivo Extra Light Olive Oil 3 Litre 3l
 - [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-1l]] — Jivo Extra Light Olive Oil 3 Litre Imported From Spain Recommended For Daily Cooking Roasting Frying Baking All Types Of Cuisines Low In 1l
-- [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-3l]] — Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking – Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat (1+1+1 LTR)
+- [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-3l]] — Jivo Extra Light Olive Oil 1 Litre (Pack of 3) | Imported from Spain | MUFA-Rich Cooking Oil | Cholesterol & Trans Fat Free | High Smoke Point | Ideal for Indian Cooking, Frying, Roasting, Grilling, & Baking (1+1+1 LTR)
 - [[jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-saturated-fat-3l]] — Jivo Extra Light Olive Oil - 3 Litre | Imported from Spain | Recommended for Daily Cooking – Roasting, Frying, Baking & All Types of Cuisines | Low in Saturated Fat (3 LTR)
 - [[jivo-extra-light-olive-oil-5-litre-tin-5l]] — Jivo Extra Light Olive Oil 5 Litre Tin 5l
 - [[jivo-extra-light-olive-oil-5-litre-tin-imported-from-spain-recommendable-daily-cooking-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-5l]] — Jivo Extra Light Olive Oil 5 Litre TIN | Imported from Spain | Recommendable Daily Cooking for Roasting, Frying, Baking All type of Cuisines| Low Saturated Fat, Low Saturated Fat | (5 LTR)
@@ -304,7 +304,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-virgin-olive-oil-1-litre-with-extra-light-olive-oil-1-litre-healthy-cooking-oils-for-everyday-use-ideal-for-roasting-frying-and-bakin-na]] — Jivo Extra Virgin Olive Oil 1 Litre With Extra Light Olive Oil 1 Litre | Healthy Cooking Oils for Everyday Use | Ideal for Roasting, Frying, and Baking | Pack of 2 Litres (1 + 1 EL)
 - [[jivo-extra-virgin-olive-oil-1l-jivo-extra-light-olive-oil-1l-for-cooking-1l]] — Jivo Extra Virgin Olive Oil 1l Jivo Extra Light Olive Oil 1l For Cooking 1l
 - [[jivo-extra-virgin-olive-oil-1l-jivo-extra-light-olive-oil-1l-for-cooking-2l]] — Jivo Extra Virgin Olive Oil, 1L &Jivo Extra Light Olive Oil, 1L for Cooking (1LTR + 1LTR (BUNDLE))
-- [[jivo-extra-virgin-olive-oil-2-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-2l]] — Jivo Extra Virgin Olive Oil 2 litre | Imported from Spain | Contains Vitamin E | Low in Saturated Fat | Natural and Cold Pressed Cooking Oil | Ideal for Dressings, Salad and Soups, Dips & Marinades (2 LTR)
+- [[jivo-extra-virgin-olive-oil-2-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-2l]] — Jivo Extra Virgin Olive Oil 2 Litre | Imported from Spain | MUFA-Rich Olive Oil | Vitamin E Fortified | Low in Saturated Fat | Ideal for Salads, Dressings, Soups, Dips & Marinades (2 LTR)
 - [[jivo-extra-virgin-olive-oil-2-litres-ideal-for-dressings-salads-soups-dips-and-marinades-perfect-for-healthy-cooking-and-gourmet-delights-1l]] — Jivo Extra Virgin Olive Oil 2 Litres Ideal For Dressings Salads Soups Dips And Marinades Perfect For Healthy Cooking And Gourmet Delights 1l
 - [[jivo-extra-virgin-olive-oil-2-litres-ideal-for-dressings-salads-soups-dips-and-marinades-perfect-for-healthy-cooking-and-gourmet-delights-2l]] — Jivo Extra Virgin Olive Oil, 2 Litres - Ideal for Dressings, Salads, Soups, Dips, and Marinades. Perfect for Healthy Cooking and Gourmet Delights (1+1 LTR)
 - [[jivo-extra-virgin-olive-oil-200-ml-extra-light-olive-oil-1-litre-200ml]] — Jivo Extra Virgin Olive Oil 200 Ml Extra Light Olive Oil 1 Litre 200ml
@@ -317,7 +317,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-virgin-olive-oil-200ml-200ml]] — Jivo Extra Virgin Olive Oil 200ml 200ml
 - [[jivo-extra-virgin-olive-oil-200ml-imported-from-spain-rich-in-mufa-to-maintain-cholesterol-contains-polyphenols-cooking-oil-for-dressings-marinades-200ml]] — Jivo Extra Virgin Olive Oil 200ml Imported From Spain Rich In Mufa To Maintain Cholesterol Contains Polyphenols Cooking Oil For Dressings Marinades 200ml
 - [[jivo-extra-virgin-olive-oil-200ml-imported-from-spain-rich-in-mufa-to-maintain-cholesterol-contains-polyphenols-cooking-oil-for-dressings-marinades-400ml]] — Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades (0.2 + 0.2 LTR)
-- [[jivo-extra-virgin-olive-oil-200ml-pack-of-2-imported-from-spain-rich-in-mufa-to-maintain-cholesterol-contains-polyphenols-natural-antioxidant-200ml]] — Jivo Extra Virgin Olive Oil 200Ml (Pack of 2) | Imported from Spain | Rich in MUFA to Maintain Cholesterol | Contains Polyphenols (Natural Antioxidants) | Cooking Oil for Dressings & Marinades (200 MLS)
+- [[jivo-extra-virgin-olive-oil-200ml-pack-of-2-imported-from-spain-rich-in-mufa-to-maintain-cholesterol-contains-polyphenols-natural-antioxidant-200ml]] — Jivo Extra Virgin Olive Oil 200 ML (Pack of 2) | Imported from Spain | MUFA-Rich Olive Oil | Vitamin E Fortified | Low in Saturated Fat | Ideal for Salads, Dressings, Soups, Dips & Marinades (200 MLS)
 - [[jivo-extra-virgin-olive-oil-200ml-pet-bottle-pomace-olive-oil-1-litre-200ml]] — Jivo Extra Virgin Olive Oil 200ml Pet Bottle Pomace Olive Oil 1 Litre 200ml
 - [[jivo-extra-virgin-olive-oil-200ml-pet-bottle-pomace-olive-oil-1-litre-imported-from-spain-rich-in-mufa-low-saturated-fat-ideal-for-cooking-frying-salads-1.2l]] — Jivo Extra Virgin Olive Oil 200ml Pet Bottle + Pomace Olive Oil 1 Litre | Imported from Spain | Rich in MUFA | Low Saturated Fat | Ideal for Cooking, Frying & Salads (Combo Pack) (200 ML + 1LTR (BUNDLE))
 - [[jivo-extra-virgin-olive-oil-200ml-pet-bottle-pomace-olive-oil-1-litre-imported-from-spain-rich-in-mufa-low-saturated-fat-ideal-for-cooking-frying-salads-200ml]] — Jivo Extra Virgin Olive Oil 200ml Pet Bottle Pomace Olive Oil 1 Litre Imported From Spain Rich In Mufa Low Saturated Fat Ideal For Cooking Frying Salads 200ml
@@ -577,7 +577,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sano-canola-oil-healthy-cooking-oil-for-daily-userecommended-by-for-all-type-of-cuisineslowest-in-saturated-fat-1l-2l]] — Sano Canola Oil Healthy Cooking Oil for Daily use|Recommended by for all type of Cuisines|Lowest in Saturated Fat- 1L (Pack of 2) (1LTR +1LTR)
 - [[sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-healthy-cooking-oil-5l]] — Sano Classic Olive Oil 5 Litre | Ideal for All Indian and Western Cuisines | Perfect for Cooking, Frying, Roasting, Grilling, and Baking | Versatile and Healthy Cooking Oil (5 LTR)
 - [[sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l]] — Sano Extra Light Olive Oil 1 Litre | Product of Spain | Ideal for All Indian and Western Cuisines | Perfect for Cooking, Frying, Roasting, Grilling, and Baking | Versatile and Smart Cooking Oil (1 LTR)
-- [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-roasting-high-smoke-point-cooking-oil-for-indian-kitchen-1000ml-1l]] — Sano Pomace Olive Oil 1L Pet Bottle | Spain-Imported Edible Oil | Ideal for Deep Frying, Sautéing & Roasting | High Smoke Point Cooking Oil for Indian Kitchen | 1000ml (1 LTR)
+- [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-roasting-high-smoke-point-cooking-oil-for-indian-kitchen-1000ml-1l]] — SANO Pomace Olive Oil 1Litre | Imported from Spain | MUFA-Rich Edible Oil | High Smoke Point | Cholesterol and Trans Fat-Free | Ideal for Deep Frying, Frying, Roasting, Grilling and Baking (1 LTR)
 - [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-1l]] — Sano Pomace Olive Oil 1l Pet Bottle Ideal For Frying Roasting Sauting Rich Flavour High Smoke Point Versatile Cooking Oil For Indian Cuisine 1l
 - [[sano-pomace-olive-oil-1l-pet-bottle-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-2l]] — SANO Pomace Olive Oil 1L Pet Bottle - Ideal for Frying, Roasting & Sautéing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (1L) (Pack of 2) (1LTR +1LTR)
 - [[sano-pomace-olive-oil-2l-pet-bottle-ideal-for-frying-roasting-sauteing-rich-flavour-high-smoke-point-versatile-cooking-edible-oil-for-indian-cuis-1l]] — Sano Pomace Olive Oil 2l Pet Bottle Ideal For Frying Roasting Sauteing Rich Flavour High Smoke Point Versatile Cooking Edible Oil For Indian Cuis 1l
@@ -586,8 +586,8 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sano-pomace-olive-oil-51l-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-1l]] — Sano Pomace Olive Oil 51l Ideal For Frying Roasting Sauting Rich Flavour High Smoke Point Versatile Cooking Oil For Indian Cuisine 1l
 - [[sano-pomace-olive-oil-51l-ideal-for-frying-roasting-sauting-rich-flavour-high-smoke-point-versatile-cooking-oil-for-indian-cuisine-6l]] — sano Pomace Olive Oil 5+1L- Ideal for Frying, Roasting & Sautéing - Rich Flavour & High Smoke Point - Versatile Cooking Oil for Indian Cuisine (Pack of 2) (5 + 1 LTR)
 - [[sano-pomace-olive-oil-5l-ideal-for-frying-roasting-sauting-rich-neutral-flavour-high-smoke-point-versatile-edible-cooking-oil-for-indian-cuisine-5l]] — sano Pomace Olive Oil 5L Ideal for Frying, Roasting & Sautéing Rich Neutral Flavour & High Smoke Point Versatile Edible Cooking Oil for Indian Cuisine (5 LTR)
-- [[sano-pure-and-aromatic-kachi-ghani-mustard-oil-5l-pet-bottle-100-natural-ideal-for-cooking-pickling-and-health-benefits-edible-oil-5l]] — Sano Pure and Aromatic Kachi Ghani Mustard Oil - 5L Pet Bottle, 100% Natural, Ideal for Cooking, Pickling, and Health Benefits - Edible Oil (Pack of 1) (5 LTR)
-- [[sano-pure-fresh-kachi-ghani-mustard-oil-1-litre-pet-bottle-high-pungency-rich-in-omega3-100-natural-authentic-indian-cooking-oil-boosts-heart-health-1l]] — Sano Pure & Fresh Kachi Ghani Mustard Oil - 1 Litre Pet Bottle | High Pungency | Rich in Omega-3 | 100% Natural | Authentic Indian Cooking Oil | Boosts Heart Health (1 LTR)
+- [[sano-pure-and-aromatic-kachi-ghani-mustard-oil-5l-pet-bottle-100-natural-ideal-for-cooking-pickling-and-health-benefits-edible-oil-5l]] — SANO Kachi Ghani Mustard Oil 5 Ltr | High in Monounsaturated Fats (MUFA) | Vitamin A and D Fortified Oil | Cholesterol and Trans Fat Free | Ideal for Frying, Roasting, Tempering, and Pickling | Indian Cooking
+- [[sano-pure-fresh-kachi-ghani-mustard-oil-1-litre-pet-bottle-high-pungency-rich-in-omega3-100-natural-authentic-indian-cooking-oil-boosts-heart-health-1l]] — SANO Kachi Ghani Mustard Oil 1 Ltr | High in Monounsaturated Fats (MUFA) | Vitamin A and D Fortified Oil | Cholesterol and Trans Fat Free | Ideal for Frying, Roasting, Tempering, and Pickling | Indian Cooking
 - [[sano-pure-honey-1-kg-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-1-kg-na]] — Sano Pure Honey 1 kg | 100% Natural, Organic & Unadulterated | No Sugar Adulteration | Rich in Antioxidants | Healthy Sweetener for Tea & Desserts | Syed 1 Kg (1 KGS)
 - [[sano-pure-honey-500g-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-500g-500ml]] — Sano Pure Honey 500g | 100% Natural, Organic & Unadulterated | No Sugar Adulteration | Rich in Antioxidants | Healthy Sweetener for Tea & Desserts | Syed 500g (Pack of 1) (500 GMS)
 - [[sano-soyabean-oil-1-ltr-pet-bottle-pure-natural-nutrientrich-cooking-oil-ideal-for-healthy-delights-in-cooking-frying-and-baking-perfect-for-indian-and-international-cuisines-1l]] — Sano Soyabean Oil 1 Ltr Pet Bottle - Pure, Natural, Nutrient-Rich Cooking Oil | Ideal for Healthy Delights in Cooking, Frying, and Baking | Perfect for Indian and International Cuisines
@@ -595,19 +595,21 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l]] — Sano Sunflower Oil 1 Litre Pet Bottle - Pure, Nutrient-Rich sunflower Cooking Oil with High Smoke Point - Ideal for Frying, Sautéing, and Baking(Pack of 1) (1 LTR)
 - [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l]] — sano Sunflower Oil 5 Ltr Pet Bottle Pure, Nutrient Rich Cooking Oil with High Smoke Point Ideal for Frying, Sautéing, and Baking All type of Cuisines|
 
-## [[amazon-fresh]] (99)
+## [[amazon-fresh]] (101)
 - [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil 1l
 - [[jivo-canola-cold-press-edible-oil-5-litre-jivo-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Kachi Ghani mustard Oil 5 Litre
 - [[jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l]] — Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)
 - [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l]] — Jivo Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l
-- [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil for Daily Use, Ideal for Roasting, Frying, Baking & All Types of Cuisines
-- [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] — Jivo Canola Cold Pressed Edible Oil 1+1 Litres
+- [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking Oil For Daily Use Ideal For Roasting Frying Baking All Types Of Cuisines 1l
+- [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] — Jivo Canola Cold Pressed Edible Oil 11 Litres 1l
 - [[jivo-canola-cold-pressed-edible-oil-5-litres-5l]] — Jivo Canola Cold Pressed Edible Oil 5 Litres 5l
+- [[jivo-canola-cold-pressed-oil-1-liters-indian-cooking-oils-na]] — Jivo Canola Cold Pressed Oil 1 Liters Indian Cooking Oils
+- [[jivo-canola-cold-pressed-oil-11-liters-indian-cooking-oils-na]] — Jivo Canola Cold Pressed Oil 1+1 Liters Indian Cooking Oils
 - [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l]] — Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use 1l
 - [[jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l]] — Jivo Canola oil2 Litre Cold Press Cooking Oil For Daily Use 2l
 - [[jivo-cold-pressed-canola-oil-5-litre-5l]] — Jivo Cold Pressed Canola Oil 5 Litre
-- [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre
+- [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre 1l
 - [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
@@ -618,12 +620,12 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] — Jivo Cold Pressed Kachi Ghani Mustard Oil 1l With Makki Atta 500g 1l
 - [[jivo-cold-pressed-sunflower-oil-combo-pack-5l]] — Jivo Cold Pressed Sunflower Oil Combo Pack (5 Litre + 1 Litre)
 - [[jivo-cold-pressed-sunflower-soyabean-oil-1l-each-1l]] — Jivo Cold Pressed Sunflower & Soyabean Oil 1L Each (Pack of 2) (1 l)
-- [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
+- [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] — Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0h111xbjq]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 - [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres
 - [[jivo-cooking-edible-soyabean-oil-1-litre-1l]] — Jivo Cooking Edible Soyabean Oil 1 Litre
-- [[jivo-cooking-edible-soyabean-oil-5-litre-5l]] — Jivo Cooking Edible Soyabean Oil 5 Litre 5l
+- [[jivo-cooking-edible-soyabean-oil-5-litre-5l]] — Jivo Cooking Edible Soyabean Oil 5 Litre
 - [[jivo-cooking-oil-canola-oil-1l-bottle-1l]] — Jivo Cooking Oil - Canola Oil, 1L Bottle (1 l)
 - [[jivo-daily-cooking-pomace-olive-oil-1-litre-1l]] — Jivo Daily Cooking Pomace Olive Oil 1 Litre
 - [[jivo-daily-cooking-pomace-olive-oil-1l]] — Jivo Daily Cooking Pomace Olive Oil 1l
@@ -632,7 +634,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-everyday-cooking-pomace-olive-oil-3-litre-3l]] — Jivo Everyday Cooking Pomace Olive Oil 3 Litre 3l
 - [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-1-ltr-5l]] — Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 1 Ltr 5l
 - [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-5l]] — Jivo Extra Light Daily Cooking Olive Oil 5 Ltr 2 Ltr 5l
-- [[jivo-extra-light-olive-oil-1-litre-1l]] — Jivo Extra Light Olive Oil 1 Litre
+- [[jivo-extra-light-olive-oil-1-litre-1l]] — Jivo Extra Light Olive Oil 1 Litre 1l
 - [[jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l]] — Jivo Extra Light Olive Oil 1l For Cooking Dressings Salad And Soups Dips Marinades 1l
 - [[jivo-extra-light-olive-oil-2-litre-2l]] — Jivo Extra Light Olive Oil 2 Litre
 - [[jivo-extra-light-olive-oil-3-litre-3l]] — Jivo Extra Light Olive Oil 3 Litre 3l
@@ -646,12 +648,12 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-virgin-olive-oil-200ml-200ml]] — Jivo Extra Virgin Olive Oil 200ml 200ml
 - [[jivo-extra-virgin-olive-oil-250-ml-250ml]] — Jivo Extra Virgin Olive Oil 250 Ml 250ml
 - [[jivo-extra-virgin-olive-oil-5-litre-with-1litre-100-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-5l]] — Jivo Extra Virgin Olive Oil 5 Litre With 1litre 100 Natural And Cold Pressed Cooking Oil For Dressings Salad And Soups Dips Marinades 5l
-- [[jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l]] — Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage
+- [[jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l]] — Jivo First Pressed Sesame Oil 1 Litre Cholesterol Free With Rich Aroma Flavour Of Sesame Seeds Unrefined Daily Cooking With Multipurpose Usage 1l
 - [[jivo-first-pressed-sesame-oil-1l]] — Jivo First Pressed Sesame Oil 1l
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
 - [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] — Jivo First Pressed Yellow Mustard Oil 5 Litre 5l
-- [[jivo-first-pressed-yellow-mustard-oil-5l-5l]] — Jivo First Pressed Yellow Mustard Oil 5L (5 l)
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
+- [[jivo-first-pressed-yellow-mustard-oil-5l-5l]] — Jivo First Pressed Yellow Mustard Oil 5l 5l
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
 - [[jivo-groundnut-oil-1-litre-1l]] — Jivo Groundnut Oil 1 Litre 1l
 - [[jivo-groundnut-oil-1-litre-1l-b0ckffw9b6]] — Jivo Groundnut Oil 1 Litre 1l b0ckffw9b6
@@ -662,7 +664,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml]] — Jivo Healthy Wheatgrass Juice With Mango Flavor Body Detox Immunity Booster Natural Ingredients 500ml Mango 500ml
 - [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] — Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre with JIVO Chemical free sunflower Oil 5 Litre
 - [[jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml]] — Jivo Koffie Instant Smooth Premium Coffee 100 Gm 100ml
-- [[jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-pomace-olive-oil-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre Tin & Jivo Daily Cooking Pomace Olive Oil
+- [[jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-pomace-olive-oil-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre Tin Jivo Daily Cooking Pomace Olive Oil 5l
 - [[jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre With Extra Light Olive Oil 5 Litre 5l
 - [[jivo-pomace-cooking-olive-oil-pack-of-7-litres-7l]] — Jivo Pomace Cooking Olive Oil Pack Of 7 Litres 7l
 - [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l]] — Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cookin 5l
@@ -670,7 +672,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre
 - [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] — Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter
 - [[jivo-premium-quinoa-gluten-free-na]] — Jivo Premium Quinoa Gluten Free Na
-- [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] — Jivo Pure Extra Virgin Coconut Oil 1 Litre
+- [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] — Jivo Pure Extra Virgin Coconut Oil 1 Litre 1l
 - [[jivo-pure-extra-virgin-coconut-oil-500-ml-500ml]] — Jivo Pure Extra Virgin Coconut Oil 500 Ml 500ml
 - [[jivo-raw-basil-seeds-for-weight-loss-200gm-200ml]] — Jivo Raw Basil Seeds For Weight Loss 200gm 200ml
 - [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] — Jivo Rice Bran Oil 1 Litre Cooking Oil
@@ -723,7 +725,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre
 - [[jivo-cold-pressed-groundnut-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre 1 Litre Combo Pack 5l
 - [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre
-- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch 1l
 - [[jivo-cold-pressed-sunflower-oil-5l-gold-premium-refined-oil-5l-5l]] — Jivo Cold Pressed Sunflower Oil 5l Gold Premium Refined Oil 5l 5l
@@ -739,9 +741,9 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-light-olive-oil-1-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Extra Light Olive Oil 1 Litre Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l
 - [[jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l]] — Jivo Extra Light Olive Oil 1l For Cooking Dressings Salad And Soups Dips Marinades 1l
 - [[jivo-extra-light-olive-oil-1l-for-cooking-jivo-olive-oil-extra-light-daily-cooking-5-litre-1l]] — Jivo Extra Light Olive Oil 1l For Cooking Jivo Olive Oil Extra Light Daily Cooking 5 Litre 1l
-- [[jivo-extra-light-olive-oil-2-litre-2l]] — Jivo Extra Light Olive Oil 2 Litre 2l
+- [[jivo-extra-light-olive-oil-2-litre-2l]] — Jivo Extra Light Olive Oil 2 Litre
 - [[jivo-extra-light-olive-oil-2l-1l-2l]] — Jivo Extra Light Olive Oil 2l 1l 2l
-- [[jivo-extra-light-olive-oil-5-litre-tin-5l]] — Jivo Extra Light Olive Oil 5 Litre Tin 5l
+- [[jivo-extra-light-olive-oil-5-litre-tin-5l]] — Jivo Extra Light Olive Oil 5 Litre TIN
 - [[jivo-extra-light-olive-oil-5-litre-with-extra-virgin-olive-oil-1-litre-5l]] — Jivo Extra Light Olive Oil 5 Litre With Extra Virgin Olive Oil 1 Litre 5l
 - [[jivo-extra-light-olive-oil-500ml-500ml]] — Jivo Extra Light Olive Oil 500ml 500ml
 - [[jivo-extra-light-olive-oil-5l-2l-5l]] — Jivo Extra Light Olive Oil 5l 2l 5l
@@ -758,7 +760,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
 - [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] — Jivo First Pressed Yellow Mustard Oil 5 Litre 5l
 - [[jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend o
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
 - [[jivo-gold-refined-oil-1l]] — Jivo Gold Refined Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-s-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran S Na
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
@@ -779,7 +781,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-lobansambrani-cups-na]] — Jivo Lobansambrani Cups Na
 - [[jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-pomace-olive-oil-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre Tin Jivo Daily Cooking Pomace Olive Oil 5l
 - [[jivo-pomace-cooking-olive-oil-5-litre-with-jivo-cold-pressed-canola-oil-1-litre-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre With Jivo Cold Pressed Canola Oil 1 Litre 5l
-- [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] — Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cooking 5l
+- [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] — Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking
 - [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre
 - [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil 5 Na
 - [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] — Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil 5 Litre Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Liter 5l
