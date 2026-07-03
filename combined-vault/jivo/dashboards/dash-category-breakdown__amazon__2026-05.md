@@ -30,7 +30,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 40153.0,
+    "ltrs": 40152.0,
     "name": "RICE BRAN"
    },
    {
@@ -52,7 +52,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 40153.0,
+    "ltrs": 40152.0,
     "name": "RICE BRAN"
    },
    {
@@ -64,7 +64,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SOYABEAN"
    }
   ],
-  "total_ltrs": 201825.0
+  "total_ltrs": 201824.0
  },
  "errors": [],
  "month": 5,
@@ -88,7 +88,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 3097.0,
+    "ltrs": 3081.0,
     "name": "BLENDED"
    },
    {
@@ -130,7 +130,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SANO POMACE"
    },
    {
-    "ltrs": 3097.0,
+    "ltrs": 3081.0,
     "name": "SO OLIVE"
    },
    {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SESAME OIL"
    }
   ],
-  "total_ltrs": 174414.5
+  "total_ltrs": 174398.5
  },
  "source": "primary",
  "year": 2026

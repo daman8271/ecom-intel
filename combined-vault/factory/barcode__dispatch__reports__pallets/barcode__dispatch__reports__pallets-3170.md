@@ -17,10 +17,10 @@ tags:
 ## Fields
 - **pallet_id:** 3170
 - **pallet_barcode:** PLT-20260629-XX-095
-- **pallet_status:** CLEARED
-- **total_boxes:** 0
+- **pallet_status:** ACTIVE
+- **total_boxes:** 24
 - **dispatched_boxes:** 0
-- **remaining_boxes:** 0
+- **remaining_boxes:** 24
 - **dispatch_session_id:** None
 - **bill_number:** 
 - **dispatched_time:** None

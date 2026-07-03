@@ -38,7 +38,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
   },
   {
    "category": "BLENDED",
-   "ltrs": 3097.0
+   "ltrs": 3081.0
   },
   {
    "category": "COCONUT",
@@ -53,7 +53,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
  "head": "premium",
  "month": 5,
  "platform": "amazon",
- "total_ltrs": 174414.5,
+ "total_ltrs": 174398.5,
  "year": 2026
 }
 ```

@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR69F6098"
+title: "RJ11GB7865"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR69F6098
+# RJ11GB7865
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35077
-- **doc_num:** 706260558
-- **doc_date:** 2026-06-20
-- **doc_total:** 539264.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
-- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **doc_entry:** 35179
+- **doc_num:** 606260167
+- **doc_date:** 2026-06-22
+- **doc_total:** 393600.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000354
+- **card_name:** CHIRAG ENTERPRISES MUMBAI
+- **ship_to_code:** CHIRAG ENTERPRISES MUMBAI BHIWANDI
+- **ship_to_address:** ANJUR MANKOLI ROAD DAPODA ROADBHIWANDI-421302IN
+- **place_of_supply:** MH
+- **bp_gstin:** 27AAAPH2173D1Z8
 - **eway_bill:** 
-- **vehicle_no:** HR69F6098
-- **transporter_name:** Jivo Vehicle
-- **bilty_no:** NA
+- **vehicle_no:** RJ11GB7865
+- **transporter_name:** Abhiman Express
+- **bilty_no:** 1125
 - **bilty_date:** 2026-06-22
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000385 - YELLOW MUSTARD OIL 5 LTR TIN 4 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
-- **base_refs:** 1706264621
-- **total_quantity:** 1372.000
-- **total_litres:** 2884.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000028 - POMACE OLIVE 1 LTR 16 PCS
+- **base_refs:** 1706264617
+- **total_quantity:** 960.000
+- **total_litres:** 960.000
 - **total_boxes:** 0.000
-- **total_weight:** 2842.851
-- **line_count:** 5
+- **total_weight:** 955.188
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 480, "sap_invoice_doc_entry": 35077, "sap_invoice_doc_num": "706260558", "invoice_number": "706260558", "eway_bill": "711644870842", "invoice_weight": "2842.851", "invoice_amount": "539264.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "26160.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 266, "transporter_id": 22, "driver_id": null, "linked_vehicle_entry_id": 937, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-22T14:45:14.886516Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-22", "priority": "HIGH", "transporter_name": "JIVO WELLNESS PVT LTD", "transporter_gstin": "", "contact_person": "Jivo Wellness", "mobile_no": "1234567891", "vehicle_no": "HR69F7125", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "NA", "bilty_date": "2026-06-22", "bilty_attachment": "/media/sales_dispatch/attachments/e-way_bill_-_706260561_VcGfm4W.pdf", "bilty_attachment_name": "e-way bill - 706260561.pdf", "freight": "0.20", "total_freight": "0.20", "kanta_weight": null, "remarks": "23/06/2026 08:30 AM IST", "created_at": "2026-06-20T18:35:42.348246+05:30", "updated_at": "2026-06-22T20:15:14.902705+05:30"}
+  {"id": 516, "sap_invoice_doc_entry": 35179, "sap_invoice_doc_num": "606260167", "invoice_number": "606260167", "eway_bill": "362276883351", "invoice_weight": "955.188", "invoice_amount": "393600.00", "place_of_supply": "MH", "location": "", "product_variety": "Oil", "total_litres": "15360.000", "effective_month": "2026-06", "budget_delivery_point": "BHIWANDI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 299, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 918, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-22T14:30:25.661900Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-22", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ11GB7865", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260478", "bilty_date": "2026-06-22", "bilty_attachment": "/media/sales_dispatch/attachments/GR_260478.pdf", "bilty_attachment_name": "GR 260478.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-22T16:54:59.486155+05:30", "updated_at": "2026-06-22T20:00:25.675283+05:30"}
   ```

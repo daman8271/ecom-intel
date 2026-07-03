@@ -37,7 +37,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "month": 6,
    "targets": 35000.0,
    "type": "B2B",
-   "updated_at": "2026-07-01T08:06:57.173011+00:00",
+   "updated_at": "2026-07-02T06:12:32.680166+00:00",
    "year": 2026
   },
   {
@@ -58,7 +58,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "month": 6,
    "targets": 60000.0,
    "type": "B2B",
-   "updated_at": "2026-07-01T08:06:57.173011+00:00",
+   "updated_at": "2026-07-02T06:12:32.680166+00:00",
    "year": 2026
   },
   {

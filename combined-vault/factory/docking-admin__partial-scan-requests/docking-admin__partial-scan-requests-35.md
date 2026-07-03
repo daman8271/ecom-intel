@@ -24,7 +24,7 @@ tags:
 - **document_type:** INVOICE
 - **dispatch_status:** DISPATCHED
 - **scanned_boxes:** 162
-- **expected_boxes:** 0
+- **expected_boxes:** 204
 - **reason:** MART VEHICLE 
 HALF BOX SACNNED OLD & NEW
 - **status:** APPROVED

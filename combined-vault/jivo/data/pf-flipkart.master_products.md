@@ -2,7 +2,7 @@
 type: data
 entity: pf-flipkart
 table: master_products
-rows: 202
+rows: 203
 chunk: 1/1
 source: app-master
 tags:
@@ -14,7 +14,7 @@ tags:
 # Raw `master_products` rows for [[pf-flipkart]]
 
 Up: [[pf-flipkart]]
-Canonical raw rows (202) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (203) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_name,sku_sap_code,sku_sap_name,tax_rate,uom
@@ -111,6 +111,7 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 ,FLIPKART,EDOHGPF2ZQ9RQPB3,EXTRA VIRGIN 200ML,PREMIUM,200 MLS,0.2,Jivo_Extra Virgin_200ml,,,,MLS
 2,FLIPKART,EDOHGP2YUDANTUXG,EXTRA VIRGIN 200ML,PREMIUM,200 MLS,0.2,Jivo_Extra Virgin_200ml_Pack_Of_2,,,,MLS
 3,FLIPKART,EDOHGP27PXFNHZNZ,EXTRA VIRGIN 200ML,PREMIUM,200 MLS,0.2,Jivo_Extra Virgin_200ml_Pack_Of_3,,,,MLS
+,FLIPKART,Jivo-Extra-Virgin-700ML,EXTRA VIRGIN 700ML,PREMIUM,700 ML,0.7,Jivo-Extra-Virgin-700ML,,,,LTR
 ,FLIPKART,EDOHZ2ZJJ6DQTAME,EXTRA VIRGIN 500ML X3,PREMIUM,500 ML + 500 ML + 500 ML,1.5,JIVO Extra Virgin All Purpose Olive Oil PET Bottle,,,,LTR
 ,FLIPKART,EDOGWGZ7TQ6ZZT3H,EXTRA VIRGIN 500ML,PREMIUM,500 MLS,0.5,Jivo Extra Virgin Olive oil 500ml,,,,LTR
 ,FLIPKART,EDOHDGCREHEZ8KPZ,SESAME OIL 1L,PREMIUM,1 LTR,1.0,Jivo_First_Prssed_Sesame_Oil_1L,,,,LTR

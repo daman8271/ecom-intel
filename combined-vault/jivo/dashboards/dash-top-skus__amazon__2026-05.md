@@ -121,7 +121,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    "delta_pct": 221.9,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 13738.0,
+   "ltrs": 13737.0,
    "name": "RICE BRAN 1L",
    "prev_ltrs": 4268.0
   }

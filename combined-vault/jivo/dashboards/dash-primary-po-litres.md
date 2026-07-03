@@ -21,6 +21,14 @@ Up: [[dashboards-index]]
  "month": "JULY",
  "platforms": [
   {
+   "delivered_ltrs": 9144.0,
+   "format": "CITY MALL"
+  },
+  {
+   "delivered_ltrs": 644.0,
+   "format": "BIG BASKET"
+  },
+  {
    "delivered_ltrs": 0.0,
    "format": "AMAZON"
   }

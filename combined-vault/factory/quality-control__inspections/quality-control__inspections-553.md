@@ -38,8 +38,6 @@ tags:
   ```
 - **qc_stage:** NOT_STARTED
 - **qc_decision:** None
-- **factory_head_decision:** 
-- **factory_head_decided_at:** None
 - **material_type_name:** None
 - **rejected_qc_return_entry_id:** None
 - **rejected_qc_return_entry_no:** None

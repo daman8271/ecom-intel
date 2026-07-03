@@ -24,7 +24,7 @@ tags:
 - **document_type:** INVOICE
 - **dispatch_status:** DISPATCHED
 - **scanned_boxes:** 383
-- **expected_boxes:** 0
+- **expected_boxes:** 516
 - **reason:** MART VEHICLE  &HALF OLD &HALF NEW
 - **status:** APPROVED
 - **requested_by:** 25

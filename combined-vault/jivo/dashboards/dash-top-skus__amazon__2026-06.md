@@ -28,20 +28,20 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 43.8,
+   "delta_pct": 53.4,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 34140.0,
+   "ltrs": 36420.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 23742.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -32.1,
+   "delta_pct": -29.2,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 30425.0,
+   "ltrs": 31740.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 44815.0
   },
@@ -51,79 +51,79 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
    "delta_pct": 4.9,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 27369.0,
+   "ltrs": 27365.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 26080.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 46.1,
+   "delta_pct": 47.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 26779.0,
+   "ltrs": 26971.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 18328.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -45.5,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 22240.0,
-   "name": "GROUNDNUT 5L",
-   "prev_ltrs": 40775.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -55.7,
+   "delta_pct": -39.1,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 18220.0,
+   "ltrs": 25040.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 41095.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -44.9,
+   "delta_pct": -41.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 5584.0,
+   "ltrs": 23750.0,
+   "name": "GROUNDNUT 5L",
+   "prev_ltrs": 40775.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -71.6,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 7500.0,
+   "name": "RICE BRAN 5L",
+   "prev_ltrs": 26415.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -36.1,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 6480.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 10142.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -67.2,
+   "delta_pct": -58.7,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 5671.0,
+   "name": "RICE BRAN 1L",
+   "prev_ltrs": 13737.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -67.1,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 5005.0,
+   "ltrs": 5025.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 15260.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -34.8,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 4550.0,
-   "name": "CANOLA 1L",
-   "prev_ltrs": 6977.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": 558.4,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 3700.0,
-   "name": "CANOLA 1+1L",
-   "prev_ltrs": 562.0
   }
  ],
  "source": "primary",
@@ -140,10 +140,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 558.4,
+  "delta_pct": 647.3,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 3700.0,
+  "ltrs": 4200.0,
   "name": "CANOLA 1+1L",
   "prev_ltrs": 562.0
  },

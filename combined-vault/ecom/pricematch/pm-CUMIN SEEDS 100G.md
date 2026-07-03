@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-06-30
-observations: 184
+last_seen: 2026-07-03
+observations: 200
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-06-30) — ref ₹75 vs live ₹-
-- **Days below reference:** 0 of 23
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-03) — ref ₹75 vs live ₹-
+- **Days below reference:** 0 of 25
 
-## Ref-vs-live history (184 observations)
+## Ref-vs-live history (200 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -228,6 +228,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-06-30,flipkart,OOS,BAU,75,,,,,,0,false
 2026-06-30,flipkart-minutes,NOT_LISTED,BAU,75,,,,,,0,false
 2026-06-30,zepto,NOT_LISTED,BAU,75,,,,,,0,false
+2026-07-02,amazon,OOS,SVD,75,,,,,,0,false
+2026-07-02,amazon-fresh,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-02,amazon-now,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-02,bigbasket,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-02,blinkit,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-02,flipkart,OOS,SVD,75,,,,,,0,false
+2026-07-02,flipkart-minutes,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-02,zepto,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-03,amazon,OOS,SVD,75,,,,,,0,false
+2026-07-03,amazon-fresh,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-03,amazon-now,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-03,bigbasket,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-03,blinkit,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-03,flipkart,OOS,SVD,75,,,,,,0,false
+2026-07-03,flipkart-minutes,NOT_LISTED,SVD,75,,,,,,0,false
+2026-07-03,zepto,NOT_LISTED,SVD,75,,,,,,0,false
 ```
 
 ---

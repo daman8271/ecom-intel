@@ -28,7 +28,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   },
   {
    "city": "Hyderabad",
-   "value": 1557.0
+   "value": 1595.0
   },
   {
    "city": "Pune",
@@ -40,7 +40,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   },
   {
    "city": "Noida",
-   "value": 735.0
+   "value": 713.0
   },
   {
    "city": "Bangalore",
@@ -439,8 +439,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    }
   ]
  },
- "mapped_units": 9122.0,
- "mapped_value": 9122.0,
+ "mapped_units": 9138.0,
+ "mapped_value": 9138.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -459,11 +459,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   },
   {
    "by_platform": {
-    "BIG BASKET": 1646.0
+    "BIG BASKET": 1684.0
    },
    "state": "TELANGANA",
-   "units": 1646.0,
-   "value": 1646.0
+   "units": 1684.0,
+   "value": 1684.0
   },
   {
    "by_platform": {
@@ -475,11 +475,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   },
   {
    "by_platform": {
-    "BIG BASKET": 1229.0
+    "BIG BASKET": 1207.0
    },
    "state": "UTTAR PRADESH",
-   "units": 1229.0,
-   "value": 1229.0
+   "units": 1207.0,
+   "value": 1207.0
   },
   {
    "by_platform": {
@@ -579,8 +579,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
   }
  ],
  "sub_categories": [],
- "total_units": 9122.0,
- "total_value": 9122.0,
+ "total_units": 9138.0,
+ "total_value": 9138.0,
  "year": 2026
 }
 ```

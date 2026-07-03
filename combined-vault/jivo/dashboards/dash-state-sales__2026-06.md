@@ -23,19 +23,19 @@ Up: [[dashboards-index]] · [[2026-06]]
  "cities": [
   {
    "city": "Delhi",
-   "value": 46635.0
+   "value": 46637.0
   },
   {
    "city": "Mumbai",
-   "value": 41779.0
+   "value": 41791.0
   },
   {
    "city": "Hyderabad",
-   "value": 32430.0
+   "value": 32490.0
   },
   {
    "city": "Bangalore",
-   "value": 27700.0
+   "value": 27739.0
   },
   {
    "city": "Bengaluru",
@@ -43,11 +43,11 @@ Up: [[dashboards-index]] · [[2026-06]]
   },
   {
    "city": "Chennai",
-   "value": 16576.0
+   "value": 16629.0
   },
   {
    "city": "Pune",
-   "value": 14843.0
+   "value": 14851.0
   },
   {
    "city": "Gurgaon",
@@ -59,7 +59,7 @@ Up: [[dashboards-index]] · [[2026-06]]
   },
   {
    "city": "Noida",
-   "value": 7842.0
+   "value": 7828.0
   }
  ],
  "errors": [],
@@ -438,8 +438,8 @@ Up: [[dashboards-index]] · [[2026-06]]
    }
   ]
  },
- "mapped_units": 1517031.0,
- "mapped_value": 1517031.0,
+ "mapped_units": 1517217.0,
+ "mapped_value": 1517217.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -453,58 +453,58 @@ Up: [[dashboards-index]] · [[2026-06]]
     "AMAZON": 187440.0,
     "BIG BASKET": 1345.0,
     "BLINKIT": 5033.0,
-    "SWIGGY": 28751.0,
+    "SWIGGY": 28772.0,
     "ZEPTO": 25247.0
    },
    "state": "MAHARASHTRA",
-   "units": 247816.0,
-   "value": 247816.0
+   "units": 247837.0,
+   "value": 247837.0
   },
   {
    "by_platform": {
     "AMAZON": 126993.0,
     "BIG BASKET": 457.0,
     "BLINKIT": 3678.0,
-    "SWIGGY": 29218.0,
+    "SWIGGY": 29258.0,
     "ZEPTO": 21313.0
    },
    "state": "KARNATAKA",
-   "units": 181659.0,
-   "value": 181659.0
+   "units": 181699.0,
+   "value": 181699.0
   },
   {
    "by_platform": {
     "AMAZON": 110150.0,
     "BLINKIT": 10195.0,
-    "SWIGGY": 16343.0,
+    "SWIGGY": 16345.0,
     "ZEPTO": 20097.0
    },
    "state": "DELHI",
-   "units": 156785.0,
-   "value": 156785.0
+   "units": 156787.0,
+   "value": 156787.0
   },
   {
    "by_platform": {
     "AMAZON": 131713.0,
-    "BIG BASKET": 1229.0,
+    "BIG BASKET": 1207.0,
     "BLINKIT": 4388.0,
-    "SWIGGY": 7404.0,
+    "SWIGGY": 7421.0,
     "ZEPTO": 9902.0
    },
    "state": "UTTAR PRADESH",
-   "units": 154636.0,
-   "value": 154636.0
+   "units": 154631.0,
+   "value": 154631.0
   },
   {
    "by_platform": {
     "AMAZON": 84642.0,
-    "BIG BASKET": 1646.0,
-    "SWIGGY": 18603.0,
+    "BIG BASKET": 1684.0,
+    "SWIGGY": 18625.0,
     "ZEPTO": 13064.0
    },
    "state": "TELANGANA",
-   "units": 117955.0,
-   "value": 117955.0
+   "units": 118015.0,
+   "value": 118015.0
   },
   {
    "by_platform": {
@@ -523,12 +523,12 @@ Up: [[dashboards-index]] · [[2026-06]]
     "AMAZON": 83986.0,
     "BIG BASKET": 195.0,
     "BLINKIT": 236.0,
-    "SWIGGY": 2710.0,
+    "SWIGGY": 2713.0,
     "ZEPTO": 54.0
    },
    "state": "WEST BENGAL",
-   "units": 87181.0,
-   "value": 87181.0
+   "units": 87184.0,
+   "value": 87184.0
   },
   {
    "by_platform": {
@@ -546,34 +546,34 @@ Up: [[dashboards-index]] · [[2026-06]]
     "AMAZON": 35117.0,
     "BIG BASKET": 2.0,
     "BLINKIT": 2.0,
-    "SWIGGY": 12984.0,
+    "SWIGGY": 13040.0,
     "ZEPTO": 7700.0
    },
    "state": "TAMIL NADU",
-   "units": 55805.0,
-   "value": 55805.0
+   "units": 55861.0,
+   "value": 55861.0
   },
   {
    "by_platform": {
     "AMAZON": 37426.0,
     "BIG BASKET": 227.0,
     "BLINKIT": 28.0,
-    "SWIGGY": 2978.0,
+    "SWIGGY": 2979.0,
     "ZEPTO": 476.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 41135.0,
-   "value": 41135.0
+   "units": 41136.0,
+   "value": 41136.0
   },
   {
    "by_platform": {
     "AMAZON": 31010.0,
     "BIG BASKET": 14.0,
-    "SWIGGY": 1059.0
+    "SWIGGY": 1062.0
    },
    "state": "ODISHA",
-   "units": 32083.0,
-   "value": 32083.0
+   "units": 32086.0,
+   "value": 32086.0
   },
   {
    "by_platform": {
@@ -611,12 +611,12 @@ Up: [[dashboards-index]] · [[2026-06]]
    "by_platform": {
     "AMAZON": 20234.0,
     "BLINKIT": 7.0,
-    "SWIGGY": 3445.0,
+    "SWIGGY": 3448.0,
     "ZEPTO": 2351.0
    },
    "state": "GUJARAT",
-   "units": 26037.0,
-   "value": 26037.0
+   "units": 26040.0,
+   "value": 26040.0
   },
   {
    "by_platform": {
@@ -705,11 +705,11 @@ Up: [[dashboards-index]] · [[2026-06]]
    "by_platform": {
     "AMAZON": 6716.0,
     "BLINKIT": 272.0,
-    "SWIGGY": 2072.0
+    "SWIGGY": 2074.0
    },
    "state": "GOA",
-   "units": 9060.0,
-   "value": 9060.0
+   "units": 9062.0,
+   "value": 9062.0
   },
   {
    "by_platform": {
@@ -803,8 +803,8 @@ Up: [[dashboards-index]] · [[2026-06]]
   }
  ],
  "sub_categories": [],
- "total_units": 1517301.0,
- "total_value": 1517301.0,
+ "total_units": 1517487.0,
+ "total_value": 1517487.0,
  "year": 2026
 }
 ```

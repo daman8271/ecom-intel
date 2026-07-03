@@ -5,8 +5,8 @@ display_name: JIVO Extra Light Olive Oil Plastic Bottle (1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-12
-last_seen: 2026-07-01
-observations: 6
+last_seen: 2026-07-03
+observations: 8
 min_price: 999
 max_price: 1499
 latest_price: 999
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Lucknow]]
 
-## Runs that observed this SKU (6)
-[[flipkart-minutes-2026-07-01-1549]] · [[flipkart-minutes-2026-06-30-0549]] · [[flipkart-minutes-2026-06-13-1205]] · [[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]]
+## Runs that observed this SKU (8)
+[[flipkart-minutes-2026-07-03-0102]] · [[flipkart-minutes-2026-07-02-1158]] · [[flipkart-minutes-2026-07-01-1549]] · [[flipkart-minutes-2026-06-30-0549]] · [[flipkart-minutes-2026-06-13-1205]] · [[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]]
 
-## Price history (6 observations)
+## Price history (8 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -40,6 +40,8 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-13-1205,2026-06-13,flipkart-minutes,Delhi,110083,1499,,,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,Lucknow,226030,1499,1499,0,1
 2026-07-01-1549,2026-07-01,flipkart-minutes,Lucknow,226030,999,,,1
+2026-07-02-1158,2026-07-02,flipkart-minutes,Lucknow,226030,999,,,1
+2026-07-03-0102,2026-07-03,flipkart-minutes,Lucknow,226030,999,,,1
 ```
 
 ---

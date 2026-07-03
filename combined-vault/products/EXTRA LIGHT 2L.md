@@ -43,18 +43,18 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-30).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1229 | 1169 | -4.88 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - amazon\|amazon-fresh]] | 1229 | 1150 | -6.43 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - amazon\|amazon-now]] | 1229 | 1139 | -7.32 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - bigbasket\|bigbasket]] | 1229 | 1343 | 9.28 | 🔴 ABOVE | BAU | 2026-06-30 |
-| [[Platform - blinkit\|blinkit]] | 1229 | 1139 | -7.32 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - flipkart\|flipkart]] | 1229 | 1055 | -14.16 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - flipkart\|flipkart-minutes]] | 1189 | 1903 | 60.05 | 🔴 ABOVE | SVD | 2026-06-27 |
-| [[Platform - zepto\|zepto]] | 1229 | 1171 | -4.72 | 🟢 BELOW | BAU | 2026-06-30 |
+| [[Platform - amazon\|amazon]] | 1189 | 1169 | -1.68 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon-fresh]] | 1189 | 1150 | -3.28 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon-now]] | 1189 | 1089 | -8.41 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - bigbasket\|bigbasket]] | 1189 | 1316 | 10.68 | 🔴 ABOVE | SVD | 2026-07-03 |
+| [[Platform - blinkit\|blinkit]] | 1189 | 1139 | -4.21 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - flipkart\|flipkart]] | 1189 | 1072 | -9.84 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - flipkart\|flipkart-minutes]] | 1189 | 2084 | 75.27 | 🔴 ABOVE | SVD | 2026-07-03 |
+| [[Platform - zepto\|zepto]] | 1189 | 1120 | -5.8 | 🟢 BELOW | SVD | 2026-07-03 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -85,6 +85,6 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000064`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000064]]
-- **575 boxes:** [[box-117114]] · [[box-117115]] · [[box-123960]] … +572 more (tag `bridge/FG0000064`)
+- **803 boxes:** [[box-117114]] · [[box-117115]] · [[box-123960]] … +800 more (tag `bridge/FG0000064`)
 - **21 pallets:** [[pal-1486]] · [[pal-1487]] · [[pal-1512]] … +18 more (tag `bridge/FG0000064`)
 

@@ -24,7 +24,7 @@ tags:
 - **document_type:** INVOICE
 - **dispatch_status:** DISPATCHED
 - **scanned_boxes:** 626
-- **expected_boxes:** 0
+- **expected_boxes:** 881
 - **reason:** Old scanners and some boxes not transferred
 - **status:** APPROVED
 - **requested_by:** 37

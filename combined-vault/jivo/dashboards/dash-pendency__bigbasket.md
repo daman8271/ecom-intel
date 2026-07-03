@@ -38,15 +38,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "pending_units": 1140.0
   },
   {
-   "city": "BENGALURU",
-   "open_ltrs": 784.0,
-   "open_pos": 6,
-   "open_units": 1078.0,
-   "order_value": 172091.2,
-   "pending_ltrs": 784.0,
-   "pending_units": 1078.0
-  },
-  {
    "city": "PUNE",
    "open_ltrs": 460.0,
    "open_pos": 1,
@@ -65,13 +56,13 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "pending_units": 211.0
   },
   {
-   "city": "KOLKATA",
-   "open_ltrs": 110.0,
-   "open_pos": 1,
-   "open_units": 980.0,
-   "order_value": 69811.88,
-   "pending_ltrs": 110.0,
-   "pending_units": 980.0
+   "city": "BENGALURU",
+   "open_ltrs": 232.0,
+   "open_pos": 3,
+   "open_units": 176.0,
+   "order_value": 50423.84,
+   "pending_ltrs": 232.0,
+   "pending_units": 176.0
   }
  ],
  "by_distributor": [
@@ -85,15 +76,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "pending_units": 4105.0
   },
   {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "open_ltrs": 784.0,
-   "open_pos": 6,
-   "open_units": 1078.0,
-   "order_value": 172091.2,
-   "pending_ltrs": 784.0,
-   "pending_units": 1078.0
-  },
-  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "open_ltrs": 460.0,
    "open_pos": 1,
@@ -103,13 +85,13 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "pending_units": 753.0
   },
   {
-   "distributor": "BABA LOKENATH TRADERS",
-   "open_ltrs": 110.0,
-   "open_pos": 1,
-   "open_units": 980.0,
-   "order_value": 69811.88,
-   "pending_ltrs": 110.0,
-   "pending_units": 980.0
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "open_ltrs": 232.0,
+   "open_pos": 3,
+   "open_units": 176.0,
+   "order_value": 50423.84,
+   "pending_ltrs": 232.0,
+   "pending_units": 176.0
   }
  ],
  "by_po": [
@@ -166,19 +148,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "po_number": "IRA40209517"
   },
   {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "Bengaluru",
-   "open_ltrs": 312.0,
-   "open_pos": 1,
-   "open_units": 758.0,
-   "order_value": 81383.36,
-   "pending_ltrs": 312.0,
-   "pending_units": 758.0,
-   "po_date": "16-06-2026",
-   "po_expiry_date": "04-07-2026",
-   "po_number": "IRA39509180"
-  },
-  {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
    "location": "Lucknow",
    "open_ltrs": 234.0,
@@ -220,45 +189,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "Bengaluru",
-   "open_ltrs": 120.0,
-   "open_pos": 1,
-   "open_units": 120.0,
-   "order_value": 20919.36,
-   "pending_ltrs": 120.0,
-   "pending_units": 120.0,
-   "po_date": "23-06-2026",
-   "po_expiry_date": "08-07-2026",
-   "po_number": "IRA39855445"
-  },
-  {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "Bengaluru",
-   "open_ltrs": 120.0,
-   "open_pos": 1,
-   "open_units": 24.0,
-   "order_value": 19364.64,
-   "pending_ltrs": 120.0,
-   "pending_units": 24.0,
-   "po_date": "30-06-2026",
-   "po_expiry_date": "15-07-2026",
-   "po_number": "IRA40208282"
-  },
-  {
-   "distributor": "BABA LOKENATH TRADERS",
-   "location": "Kolkata",
-   "open_ltrs": 110.0,
-   "open_pos": 1,
-   "open_units": 980.0,
-   "order_value": 69811.88,
-   "pending_ltrs": 110.0,
-   "pending_units": 980.0,
-   "po_date": "26-06-2026",
-   "po_expiry_date": "11-07-2026",
-   "po_number": "IRA40005330"
-  },
-  {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "Bengaluru",
    "open_ltrs": 96.0,
    "open_pos": 1,
    "open_units": 96.0,
@@ -286,25 +216,14 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
  "by_sku": [
   {
    "item": "SUNFLOWER 1L",
-   "open_ltrs": 1820.0,
-   "open_pos": 8,
-   "open_units": 1820.0,
-   "order_value": 274080.8,
-   "pending_ltrs": 1820.0,
-   "pending_units": 1820.0,
+   "open_ltrs": 1560.0,
+   "open_pos": 6,
+   "open_units": 1560.0,
+   "order_value": 232122.0,
+   "pending_ltrs": 1560.0,
+   "pending_units": 1560.0,
    "sku_code": "40249993",
    "sku_name": "Jivo Cold Pressed Sunflower Oil 1 L Bottle"
-  },
-  {
-   "item": "SUNFLOWER 5L",
-   "open_ltrs": 820.0,
-   "open_pos": 7,
-   "open_units": 164.0,
-   "order_value": 128684.48,
-   "pending_ltrs": 820.0,
-   "pending_units": 164.0,
-   "sku_code": "40249992",
-   "sku_name": "Jivo Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free 5 L Jar"
   },
   {
    "item": "MUSTARD 1L",
@@ -318,13 +237,24 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 1 L Bottle"
   },
   {
+   "item": "SUNFLOWER 5L",
+   "open_ltrs": 560.0,
+   "open_pos": 4,
+   "open_units": 112.0,
+   "order_value": 86727.76,
+   "pending_ltrs": 560.0,
+   "pending_units": 112.0,
+   "sku_code": "40249992",
+   "sku_name": "Jivo Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free 5 L Jar"
+  },
+  {
    "item": "CANOLA 1L",
-   "open_ltrs": 350.0,
-   "open_pos": 6,
-   "open_units": 350.0,
-   "order_value": 76655.32,
-   "pending_ltrs": 350.0,
-   "pending_units": 350.0,
+   "open_ltrs": 272.0,
+   "open_pos": 5,
+   "open_units": 272.0,
+   "order_value": 59570.2,
+   "pending_ltrs": 272.0,
+   "pending_units": 272.0,
    "sku_code": "282779",
    "sku_name": "Jivo Canola Oil - Cold Pressed 1 L"
   },
@@ -351,24 +281,13 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "sku_name": "Jivo Canola Oil - Cold Pressed 5 L Bottle"
   },
   {
-   "item": "EXTRA LIGHT 1L",
-   "open_ltrs": 140.0,
-   "open_pos": 7,
-   "open_units": 140.0,
-   "order_value": 73955.24,
-   "pending_ltrs": 140.0,
-   "pending_units": 140.0,
-   "sku_code": "40166398",
-   "sku_name": "Jivo Extra Light Olive Oil 1 L Bottle"
-  },
-  {
    "item": "JIVO POMACE 1L",
-   "open_ltrs": 128.0,
-   "open_pos": 4,
-   "open_units": 128.0,
-   "order_value": 52437.12,
-   "pending_ltrs": 128.0,
-   "pending_units": 128.0,
+   "open_ltrs": 112.0,
+   "open_pos": 3,
+   "open_units": 112.0,
+   "order_value": 45884.8,
+   "pending_ltrs": 112.0,
+   "pending_units": 112.0,
    "sku_code": "40197820",
    "sku_name": "Jivo Pomace Olive Oil 1 L"
   },
@@ -382,6 +301,17 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "pending_units": 20.0,
    "sku_code": "40166396",
    "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 5 L Bottle"
+  },
+  {
+   "item": "EXTRA LIGHT 1L",
+   "open_ltrs": 92.0,
+   "open_pos": 5,
+   "open_units": 92.0,
+   "order_value": 48202.92,
+   "pending_ltrs": 92.0,
+   "pending_units": 92.0,
+   "sku_code": "40166398",
+   "sku_name": "Jivo Extra Light Olive Oil 1 L Bottle"
   },
   {
    "item": "EXTRA LIGHT 2L",
@@ -408,132 +338,132 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "item": "WG GINGER ALE 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 6,
-   "open_units": 394.0,
-   "order_value": 12757.72,
+   "open_pos": 4,
+   "open_units": 262.0,
+   "order_value": 8483.56,
    "pending_ltrs": 0.0,
-   "pending_units": 394.0,
+   "pending_units": 262.0,
    "sku_code": "40335330",
    "sku_name": "Jivo Ginger Ale Healthy Wheatgrass Juice - Sugar Free 200 ml"
   },
   {
    "item": "WG APPLE JUICE SF 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 6,
-   "open_units": 356.0,
-   "order_value": 12624.56,
+   "open_pos": 3,
+   "open_units": 224.0,
+   "order_value": 7253.12,
    "pending_ltrs": 0.0,
-   "pending_units": 356.0,
+   "pending_units": 224.0,
    "sku_code": "40335329",
    "sku_name": "Jivo Apple Healthy Wheatgrass Juice - Sugar Free 200 ml"
   },
   {
-   "item": "WG BLUEBERRY JUICE 200ML",
-   "open_ltrs": 0.0,
-   "open_pos": 6,
-   "open_units": 352.0,
-   "order_value": 11398.72,
-   "pending_ltrs": 0.0,
-   "pending_units": 352.0,
-   "sku_code": "40335335",
-   "sku_name": "Jivo Blueberry Healthy Wheatgrass Juice 200 ml"
-  },
-  {
    "item": "WG MOJITO 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 5,
-   "open_units": 333.0,
-   "order_value": 11883.42,
+   "open_pos": 3,
+   "open_units": 213.0,
+   "order_value": 6900.54,
    "pending_ltrs": 0.0,
-   "pending_units": 333.0,
+   "pending_units": 213.0,
    "sku_code": "40335337",
    "sku_name": "Jivo Mojito Healthy Wheatgrass Juice 200 ml"
   },
   {
+   "item": "WG BLUEBERRY JUICE 200ML",
+   "open_ltrs": 0.0,
+   "open_pos": 4,
+   "open_units": 208.0,
+   "order_value": 6736.0,
+   "pending_ltrs": 0.0,
+   "pending_units": 208.0,
+   "sku_code": "40335335",
+   "sku_name": "Jivo Blueberry Healthy Wheatgrass Juice 200 ml"
+  },
+  {
    "item": "WG MOJITO SF 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 5,
-   "open_units": 324.0,
-   "order_value": 11960.88,
+   "open_pos": 3,
+   "open_units": 204.0,
+   "order_value": 8075.28,
    "pending_ltrs": 0.0,
-   "pending_units": 324.0,
+   "pending_units": 204.0,
    "sku_code": "40335331",
    "sku_name": "Jivo Mojito Healthy Wheatgrass Juice - Sugar Free 200 ml"
   },
   {
    "item": "WG MANGO JUICE 500ML",
    "open_ltrs": 0.0,
-   "open_pos": 5,
-   "open_units": 304.0,
-   "order_value": 23804.0,
+   "open_pos": 3,
+   "open_units": 196.0,
+   "order_value": 13004.0,
    "pending_ltrs": 0.0,
-   "pending_units": 304.0,
+   "pending_units": 196.0,
    "sku_code": "40335340",
    "sku_name": "Jivo Mango Healthy Wheatgrass Juice 500 ml"
   },
   {
    "item": "WG ROSE 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 7,
-   "open_units": 279.0,
-   "order_value": 10134.18,
+   "open_pos": 4,
+   "open_units": 159.0,
+   "order_value": 5151.3,
    "pending_ltrs": 0.0,
-   "pending_units": 279.0,
+   "pending_units": 159.0,
    "sku_code": "40335338",
    "sku_name": "Jivo Rose Healthy Wheatgrass Juice 200 ml"
   },
   {
    "item": "WG MANGO JUICE 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 7,
-   "open_units": 277.0,
-   "order_value": 10066.18,
+   "open_pos": 4,
+   "open_units": 157.0,
+   "order_value": 5083.3,
    "pending_ltrs": 0.0,
-   "pending_units": 277.0,
+   "pending_units": 157.0,
    "sku_code": "40335336",
    "sku_name": "Jivo Mango Healthy Wheatgrass Juice 200 ml"
   },
   {
    "item": "LEMON 750ML",
    "open_ltrs": 0.0,
-   "open_pos": 5,
-   "open_units": 277.0,
-   "order_value": 7541.14,
+   "open_pos": 3,
+   "open_units": 133.0,
+   "order_value": 3578.26,
    "pending_ltrs": 0.0,
-   "pending_units": 277.0,
+   "pending_units": 133.0,
    "sku_code": "40335332",
    "sku_name": "Jivo Fizzy Water Flavoured With Lemon 750 ml"
   },
   {
    "item": "WATER PEACH 750ML",
    "open_ltrs": 0.0,
-   "open_pos": 5,
-   "open_units": 253.0,
-   "order_value": 6892.81,
+   "open_pos": 3,
+   "open_units": 121.0,
+   "order_value": 3250.45,
    "pending_ltrs": 0.0,
-   "pending_units": 253.0,
+   "pending_units": 121.0,
    "sku_code": "40335333",
    "sku_name": "Jivo Fizzy Water Flavoured With Peach 750 ml"
   },
   {
    "item": "WG APPLE JUICE 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 4,
-   "open_units": 192.0,
-   "order_value": 7135.56,
+   "open_pos": 1,
+   "open_units": 84.0,
+   "order_value": 2724.12,
    "pending_ltrs": 0.0,
-   "pending_units": 192.0,
+   "pending_units": 84.0,
    "sku_code": "40335334",
    "sku_name": "Jivo Apple Healthy Wheatgrass Juice 200 ml"
   },
   {
    "item": "TONIC WATER 200ML",
    "open_ltrs": 0.0,
-   "open_pos": 3,
-   "open_units": 82.0,
-   "order_value": 3405.72,
+   "open_pos": 2,
+   "open_units": 34.0,
+   "order_value": 1191.0,
    "pending_ltrs": 0.0,
-   "pending_units": 82.0,
+   "pending_units": 34.0,
    "sku_code": "40335339",
    "sku_name": "Jivo Indian Tonic Water 200 ml"
   }
@@ -558,15 +488,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "warehouse": "Noida"
   },
   {
-   "open_ltrs": 784.0,
-   "open_pos": 6,
-   "open_units": 1078.0,
-   "order_value": 172091.2,
-   "pending_ltrs": 784.0,
-   "pending_units": 1078.0,
-   "warehouse": "Bengaluru"
-  },
-  {
    "open_ltrs": 460.0,
    "open_pos": 1,
    "open_units": 753.0,
@@ -585,13 +506,13 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "warehouse": "Lucknow"
   },
   {
-   "open_ltrs": 110.0,
-   "open_pos": 1,
-   "open_units": 980.0,
-   "order_value": 69811.88,
-   "pending_ltrs": 110.0,
-   "pending_units": 980.0,
-   "warehouse": "Kolkata"
+   "open_ltrs": 232.0,
+   "open_pos": 3,
+   "open_units": 176.0,
+   "order_value": 50423.84,
+   "pending_ltrs": 232.0,
+   "pending_units": 176.0,
+   "warehouse": "Bengaluru"
   }
  ],
  "defaulted_to_latest": true,
@@ -601,12 +522,12 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
  "platform": "bigbasket",
  "po_month": "JUNE",
  "totals": {
-  "open_ltrs": 4393.0,
-  "open_pos": 13,
-  "open_units": 6916.0,
-  "pending_ltrs": 4393.0,
-  "pending_units": 6916.0,
-  "rows": 114
+  "open_ltrs": 3731.0,
+  "open_pos": 9,
+  "open_units": 5034.0,
+  "pending_ltrs": 3731.0,
+  "pending_units": 5034.0,
+  "rows": 78
  },
  "year": 2026
 }

@@ -39,15 +39,15 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-30).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 989 | 982 | -0.71 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - amazon\|amazon-fresh]] | 989 | 982 | -0.71 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - amazon\|amazon-now]] | 989 | 982 | -0.71 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - flipkart\|flipkart]] | 989 | — | — | ⚪ OOS | BAU | 2026-06-30 |
-| [[Platform - zepto\|zepto]] | 989 | — | — | ⚪ OOS | BAU | 2026-06-30 |
+| [[Platform - amazon\|amazon]] | 939 | 859 | -8.52 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon-fresh]] | 939 | 951 | 1.28 | 🔴 ABOVE | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon-now]] | 939 | 859 | -8.52 | 🟢 BELOW | SVD | 2026-07-02 |
+| [[Platform - flipkart\|flipkart]] | 939 | 810 | -13.74 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - zepto\|zepto]] | 939 | — | — | ⚪ OOS | SVD | 2026-07-03 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -77,6 +77,6 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000128`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000128]]
-- **53 boxes:** [[barcode__dispatch__reports__boxes-38624]] · [[barcode__dispatch__reports__boxes-38625]] · [[barcode__dispatch__reports__boxes-38626]] … +50 more (tag `bridge/FG0000128`)
+- **194 boxes:** [[box-38065]] · [[box-38072]] · [[box-38073]] … +191 more (tag `bridge/FG0000128`)
 - **3 pallets:** [[pal-835]] · [[pal-846]] · [[pal-847]]
 

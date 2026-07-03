@@ -24,7 +24,7 @@ tags:
 - **document_type:** INVOICE
 - **dispatch_status:** DISPATCHED
 - **scanned_boxes:** 657
-- **expected_boxes:** 0
+- **expected_boxes:** 945
 - **reason:** Old barcode
 - **status:** APPROVED
 - **requested_by:** 37

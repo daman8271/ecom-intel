@@ -37,7 +37,7 @@ Up: [[dashboards-index]] · [[2026-05]]
   },
   {
    "category": "BLENDED",
-   "ltrs": 4478.0
+   "ltrs": 4462.0
   },
   {
    "category": "SESAME OIL",
@@ -52,7 +52,7 @@ Up: [[dashboards-index]] · [[2026-05]]
  "head": "premium",
  "month": 5,
  "platform": null,
- "total_ltrs": 489965.65,
+ "total_ltrs": 489949.65,
  "year": 2026
 }
 ```

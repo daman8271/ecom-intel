@@ -24,27 +24,27 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "cities": [
   {
    "city": "Bangalore",
-   "value": 27285.0
+   "value": 27324.0
   },
   {
    "city": "Mumbai",
-   "value": 18398.0
+   "value": 18410.0
   },
   {
    "city": "Hyderabad",
-   "value": 18013.0
+   "value": 18035.0
   },
   {
    "city": "Delhi",
-   "value": 16343.0
+   "value": 16345.0
   },
   {
    "city": "Chennai",
-   "value": 9314.0
+   "value": 9367.0
   },
   {
    "city": "Pune",
-   "value": 8068.0
+   "value": 8076.0
   },
   {
    "city": "Chandigarh",
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "city": "Noida 1",
-   "value": 2644.0
+   "value": 2651.0
   },
   {
    "city": "Jaipur",
@@ -439,8 +439,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
    }
   ]
  },
- "mapped_units": 157325.0,
- "mapped_value": 157325.0,
+ "mapped_units": 157495.0,
+ "mapped_value": 157495.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -451,43 +451,51 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "states": [
   {
    "by_platform": {
-    "SWIGGY": 29218.0
+    "SWIGGY": 29258.0
    },
    "state": "KARNATAKA",
-   "units": 29218.0,
-   "value": 29218.0
+   "units": 29258.0,
+   "value": 29258.0
   },
   {
    "by_platform": {
-    "SWIGGY": 28751.0
+    "SWIGGY": 28772.0
    },
    "state": "MAHARASHTRA",
-   "units": 28751.0,
-   "value": 28751.0
+   "units": 28772.0,
+   "value": 28772.0
   },
   {
    "by_platform": {
-    "SWIGGY": 18603.0
+    "SWIGGY": 18625.0
    },
    "state": "TELANGANA",
-   "units": 18603.0,
-   "value": 18603.0
+   "units": 18625.0,
+   "value": 18625.0
   },
   {
    "by_platform": {
-    "SWIGGY": 16343.0
+    "SWIGGY": 16345.0
    },
    "state": "DELHI",
-   "units": 16343.0,
-   "value": 16343.0
+   "units": 16345.0,
+   "value": 16345.0
   },
   {
    "by_platform": {
-    "SWIGGY": 12984.0
+    "SWIGGY": 13040.0
    },
    "state": "TAMIL NADU",
-   "units": 12984.0,
-   "value": 12984.0
+   "units": 13040.0,
+   "value": 13040.0
+  },
+  {
+   "by_platform": {
+    "SWIGGY": 7421.0
+   },
+   "state": "UTTAR PRADESH",
+   "units": 7421.0,
+   "value": 7421.0
   },
   {
    "by_platform": {
@@ -496,14 +504,6 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
    "state": "CHANDIGARH",
    "units": 7418.0,
    "value": 7418.0
-  },
-  {
-   "by_platform": {
-    "SWIGGY": 7404.0
-   },
-   "state": "UTTAR PRADESH",
-   "units": 7404.0,
-   "value": 7404.0
   },
   {
    "by_platform": {
@@ -531,11 +531,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "by_platform": {
-    "SWIGGY": 3445.0
+    "SWIGGY": 3448.0
    },
    "state": "GUJARAT",
-   "units": 3445.0,
-   "value": 3445.0
+   "units": 3448.0,
+   "value": 3448.0
   },
   {
    "by_platform": {
@@ -547,19 +547,19 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "by_platform": {
-    "SWIGGY": 2978.0
+    "SWIGGY": 2979.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 2978.0,
-   "value": 2978.0
+   "units": 2979.0,
+   "value": 2979.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2710.0
+    "SWIGGY": 2713.0
    },
    "state": "WEST BENGAL",
-   "units": 2710.0,
-   "value": 2710.0
+   "units": 2713.0,
+   "value": 2713.0
   },
   {
    "by_platform": {
@@ -571,11 +571,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "by_platform": {
-    "SWIGGY": 2072.0
+    "SWIGGY": 2074.0
    },
    "state": "GOA",
-   "units": 2072.0,
-   "value": 2072.0
+   "units": 2074.0,
+   "value": 2074.0
   },
   {
    "by_platform": {
@@ -587,11 +587,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "by_platform": {
-    "SWIGGY": 1059.0
+    "SWIGGY": 1062.0
    },
    "state": "ODISHA",
-   "units": 1059.0,
-   "value": 1059.0
+   "units": 1062.0,
+   "value": 1062.0
   },
   {
    "by_platform": {
@@ -627,8 +627,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   }
  ],
  "sub_categories": [],
- "total_units": 157325.0,
- "total_value": 157325.0,
+ "total_units": 157495.0,
+ "total_value": 157495.0,
  "year": 2026
 }
 ```

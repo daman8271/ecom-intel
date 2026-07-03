@@ -29,7 +29,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 52693.0,
+    "ltrs": 52692.0,
     "name": "RICE BRAN"
    },
    {
@@ -51,7 +51,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 52693.0,
+    "ltrs": 52692.0,
     "name": "RICE BRAN"
    },
    {
@@ -63,7 +63,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SOYABEAN"
    }
   ],
-  "total_ltrs": 449551.0
+  "total_ltrs": 449550.0
  },
  "errors": [],
  "month": 5,
@@ -87,7 +87,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 4478.0,
+    "ltrs": 4462.0,
     "name": "BLENDED"
    },
    {
@@ -129,7 +129,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "YELLOW MUSTARD"
    },
    {
-    "ltrs": 4478.0,
+    "ltrs": 4462.0,
     "name": "SO OLIVE"
    },
    {
@@ -141,7 +141,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "COCONUT"
    }
   ],
-  "total_ltrs": 489965.65
+  "total_ltrs": 489949.65
  },
  "source": "primary",
  "year": 2026

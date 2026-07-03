@@ -37,14 +37,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-06-30).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1269 | 913 | -28.05 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - amazon\|amazon-fresh]] | 1269 | 913 | -28.05 | 🟢 BELOW | BAU | 2026-06-30 |
-| [[Platform - amazon\|amazon-now]] | 1269 | 1269 | 0 | 🟦 MATCH | BAU | 2026-06-30 |
-| [[Platform - flipkart\|flipkart]] | 1269 | — | — | ⚪ OOS | BAU | 2026-06-30 |
+| [[Platform - amazon\|amazon]] | 1169 | 1139 | -2.57 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon-fresh]] | 1169 | 1269 | 8.55 | 🔴 ABOVE | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon-now]] | 1169 | 1139 | -2.57 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - flipkart\|flipkart]] | 1169 | — | — | ⚪ OOS | SVD | 2026-07-03 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -75,8 +75,8 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000143`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000143]]
-- **46 pallets:** [[pal-1484]] · [[pal-1485]] · [[pal-1495]] … +43 more (tag `bridge/FG0000143`)
-- **40 boxes:** [[box-127802]] · [[box-127803]] · [[box-127804]] … +37 more (tag `bridge/FG0000143`)
-- **1 boxes:** [[barcode__dispatch__reports__boxes-82894]]
+- **2477 boxes:** [[box-127802]] · [[box-127803]] · [[box-127804]] … +2474 more (tag `bridge/FG0000143`)
+- **128 boxes:** [[barcode__dispatch__reports__boxes-155994]] · [[barcode__dispatch__reports__boxes-155996]] · [[barcode__dispatch__reports__boxes-155997]] … +125 more (tag `bridge/FG0000143`)
+- **58 pallets:** [[pal-1484]] · [[pal-1485]] · [[pal-1495]] … +55 more (tag `bridge/FG0000143`)
 - **1 sap items:** [[quality-control__sap-items-FG0000143]]
 

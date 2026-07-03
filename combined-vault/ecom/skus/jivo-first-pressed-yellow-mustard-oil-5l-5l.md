@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-yellow-mustard-oil-5l-5l
-display_name: Jivo First Pressed Yellow Mustard Oil 5L (5 l)
+display_name: Jivo First Pressed Yellow Mustard Oil 5l 5l
 platforms:
   - amazon-fresh
 first_seen: 2026-06-30
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo First Pressed Yellow Mustard Oil 5L (5 l)**
+**Jivo First Pressed Yellow Mustard Oil 5l 5l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1329 (26.0% off)

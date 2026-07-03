@@ -11,28 +11,28 @@ tags:
 Lossless capture of the ji.jivo.in factory app for **JIVO_MART** — one note per record, linked by foreign keys. Bridges to product nodes via SAP item code (FG####).
 
 
-- **Notes:** 16938  ·  **Entity types:** 46  ·  **SAP-bridged item codes:** 421
+- **Notes:** 61323  ·  **Entity types:** 46  ·  **SAP-bridged item codes:** 421
 
 
 ## Entity hubs by domain
 
 
 ### accounts
-- [[_moc-accounts__users|Users]] (63)
+- [[_moc-accounts__users|Users]] (65)
 
 ### barcode
-- [[_moc-barcode__boxes-001|Barcode Box]] (8500)
+- [[_moc-barcode__boxes-001|Barcode Box]] (30565)
 - [[_moc-barcode__dispatch__reports|Reports]] (57)
 - [[_moc-barcode__dispatch__reports__boxes|Boxes]] (1000)
-- [[_moc-barcode__dispatch__reports__pallets|Pallets]] (592)
+- [[_moc-barcode__dispatch__reports__pallets|Pallets]] (642)
 - [[_moc-barcode__dispatch__reports__rejected-scans|Rejected Scans]] (962)
 - [[_moc-barcode__dispatch__sessions__active|Active]] (55)
 - [[_moc-barcode__dispatch__sessions__completed|Completed]] (2)
 - [[_moc-barcode__items__oitm|SAP Item (OITM)]] (420)
 - [[_moc-barcode__loose|Loose]] (7)
-- [[_moc-barcode__pallets|Pallet]] (592)
-- [[_moc-barcode__print__history|History]] (16)
-- [[_moc-barcode__scan__history-001|History]] (1100)
+- [[_moc-barcode__pallets|Pallet]] (642)
+- [[_moc-barcode__print__history|History]] (143)
+- [[_moc-barcode__scan__history-001|History]] (23030)
 
 ### company
 - [[_moc-company__companies|Company]] (3)
@@ -44,37 +44,37 @@ Lossless capture of the ji.jivo.in factory app for **JIVO_MART** — one note pe
 - [[_moc-dispatch__bilty-grpo__pending|Pending]] (8)
 
 ### docking-admin
-- [[_moc-docking-admin__partial-scan-requests|Partial Scan Requests]] (26)
+- [[_moc-docking-admin__partial-scan-requests|Partial Scan Requests]] (35)
 - [[_moc-docking-admin__scan-skip-requests|Scan Skip Requests]] (12)
 
 ### driver-management
-- [[_moc-driver-management__drivers|Driver]] (303)
+- [[_moc-driver-management__drivers|Driver]] (324)
 
 ### gate-core
-- [[_moc-gate-core__arrivals|Gate Arrival]] (139)
+- [[_moc-gate-core__arrivals|Gate Arrival]] (181)
 - [[_moc-gate-core__bst-outs__sap-transfers|Sap Transfers]] (50)
-- [[_moc-gate-core__empty-vehicle-ins|Empty Vehicle Ins]] (41)
-- [[_moc-gate-core__empty-vehicle-ins__reasons|Reasons]] (5)
-- [[_moc-gate-core__empty-vehicle-outs|Empty Vehicle Outs]] (1)
-- [[_moc-gate-core__empty-vehicle-outs__eligible-entries|Eligible Entries]] (48)
-- [[_moc-gate-core__sales-dispatch|Sales Dispatch]] (43)
-- [[_moc-gate-core__sales-dispatch__documents-001|Documents]] (1236)
+- [[_moc-gate-core__empty-vehicle-ins|Empty Vehicle Ins]] (54)
+- [[_moc-gate-core__empty-vehicle-ins__reasons|Reasons]] (4)
+- [[_moc-gate-core__empty-vehicle-outs|Empty Vehicle Outs]] (3)
+- [[_moc-gate-core__empty-vehicle-outs__eligible-entries|Eligible Entries]] (58)
+- [[_moc-gate-core__sales-dispatch|Sales Dispatch]] (54)
+- [[_moc-gate-core__sales-dispatch__documents-001|Documents]] (1225)
 
 ### grpo
 - [[_moc-grpo__all-entries|All Entries]] (5)
 - [[_moc-grpo__service__pending|Pending]] (8)
 
 ### notifications
-- [[_moc-notifications|Notifications]] (144)
+- [[_moc-notifications|Notifications]] (166)
 - [[_moc-notifications__preferences|Preferences]] (39)
 
 ### person-gatein
 - [[_moc-person-gatein__contractors|Contractors]] (2)
-- [[_moc-person-gatein__entries|Entries]] (211)
+- [[_moc-person-gatein__entries|Entries]] (222)
 - [[_moc-person-gatein__gates|Gate]] (1)
 - [[_moc-person-gatein__labours|Labours]] (3)
 - [[_moc-person-gatein__person-types|Person Type]] (2)
-- [[_moc-person-gatein__visitors|Visitor]] (154)
+- [[_moc-person-gatein__visitors|Visitor]] (163)
 
 ### po
 - [[_moc-po__vendors|Vendor]] (212)
@@ -89,9 +89,9 @@ Lossless capture of the ji.jivo.in factory app for **JIVO_MART** — one note pe
 - [[_moc-quality-control__sap-items|Sap Items]] (193)
 
 ### vehicle-management
-- [[_moc-vehicle-management__transporters|Transporter]] (89)
+- [[_moc-vehicle-management__transporters|Transporter]] (90)
 - [[_moc-vehicle-management__vehicle-types|Vehicle Type]] (7)
-- [[_moc-vehicle-management__vehicles|Vehicle]] (346)
+- [[_moc-vehicle-management__vehicles|Vehicle]] (368)
 
 ## Empty for Jivo Mart (not configured on the retail arm)
 

@@ -2,29 +2,29 @@
   "aggregate_hash_method": "sha256 over sorted list of per-file SOURCE sha256 hex digests",
   "combined_vault": "/opt/ecom-intel/combined-vault",
   "design_note": "Source vaults are copied verbatim, then a '## Related' wikilink layer is APPENDED to source notes that reference a known SKU/canonical/product/platform/category. Therefore DEST bytes EXCEED SOURCE bytes BY DESIGN. Zero-loss is proven per file: each source file's original bytes are preserved as an EXACT BYTE-PREFIX of its combined-vault copy (n_altered=n_truncated=0). 'bytes_match' is intentionally NOT claimed; the honest signal is original_prefix_preserved_all.",
-  "generated_at": "2026-07-01T15:38:18.634796+00:00",
+  "generated_at": "2026-07-03T01:28:42.697007+00:00",
   "summary": {
-    "appended_link_layer_bytes": 2058974,
-    "combined_dest_notes": 55196,
-    "dest_bytes": 611138936,
-    "ecom_source_notes": 2915,
-    "factory_source_notes": 16996,
-    "jivo_source_notes": 35285,
+    "appended_link_layer_bytes": 2083875,
+    "combined_dest_notes": 99913,
+    "dest_bytes": 682565978,
+    "ecom_source_notes": 3168,
+    "factory_source_notes": 61425,
+    "jivo_source_notes": 35320,
     "pillars": [
       "ecom",
       "factory",
       "jivo"
     ],
-    "source_bytes": 609079962,
+    "source_bytes": 680482103,
     "zero_loss_ok": true
   },
   "tool": "/opt/ecom-intel/bin/combined_backbone.py",
   "vaults": {
     "ecom": {
-      "appended_link_layer_bytes": 262187,
+      "appended_link_layer_bytes": 286024,
       "dest": {
-        "bytes": 203219067,
-        "count": 2915
+        "bytes": 224735950,
+        "count": 3168
       },
       "dest_path": "/opt/ecom-intel/combined-vault/ecom",
       "lossless": {
@@ -37,17 +37,17 @@
         "original_prefix_preserved_all": true
       },
       "source": {
-        "aggregate_sha256": "71c6279e1ebe038cc912193d9d5b489f5a8992e602b8a5922d59737ee078139c",
-        "bytes": 202956880,
-        "count": 2915
+        "aggregate_sha256": "6d1eb5a00a6be3047c04a7f63ab3ef0a96e5fc7c8761ec229b2c81cd758ee1a7",
+        "bytes": 224449926,
+        "count": 3168
       },
       "source_path": "/opt/ecom-intel/vault"
     },
     "factory": {
       "appended_link_layer_bytes": 0,
       "dest": {
-        "bytes": 25023515,
-        "count": 16996
+        "bytes": 71907199,
+        "count": 61425
       },
       "dest_path": "/opt/ecom-intel/combined-vault/factory",
       "lossless": {
@@ -60,17 +60,17 @@
         "original_prefix_preserved_all": true
       },
       "source": {
-        "aggregate_sha256": "cabbde6e9ba75b6fd1e6100934bc98cad2e71ab3f26e66f9323cb0fbd1541324",
-        "bytes": 25023515,
-        "count": 16996
+        "aggregate_sha256": "8c936aa1774d661a3ba3536b913b36e1cd9ded1e47a40fd320c9b5bde6832a65",
+        "bytes": 71907199,
+        "count": 61425
       },
       "source_path": "/root/jivo-factory-intel/vault"
     },
     "jivo": {
-      "appended_link_layer_bytes": 1796787,
+      "appended_link_layer_bytes": 1797851,
       "dest": {
-        "bytes": 382896354,
-        "count": 35285
+        "bytes": 385922829,
+        "count": 35320
       },
       "dest_path": "/opt/ecom-intel/combined-vault/jivo",
       "lossless": {
@@ -83,9 +83,9 @@
         "original_prefix_preserved_all": true
       },
       "source": {
-        "aggregate_sha256": "352f18f7f1982318d54e1eb8d2e519baca493088fc6999500894ded2dbfdde87",
-        "bytes": 381099567,
-        "count": 35285
+        "aggregate_sha256": "7493f4399d1070a9bd970a6716bc09b984763097dc9d75ea514632a38f62a342",
+        "bytes": 384124978,
+        "count": 35320
       },
       "source_path": "/root/jivo-intel/vault"
     }

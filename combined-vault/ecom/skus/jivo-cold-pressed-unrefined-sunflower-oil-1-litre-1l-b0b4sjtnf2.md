@@ -5,11 +5,11 @@ display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-08
-last_seen: 2026-06-30
-observations: 829
+last_seen: 2026-07-03
+observations: 834
 min_price: 166
 max_price: 207
-latest_price: 175
+latest_price: 172
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹175 (36.4% off)
+- [[amazon-fresh]] — latest ₹172 (37.5% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (11)
-[[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-29-0710]] · [[amazon-fresh-2026-06-28-0710]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]] · [[amazon-fresh-2026-06-25-0904]] · [[amazon-fresh-2026-06-24-1243]] · [[amazon-fresh-2026-06-18-1246]] · [[amazon-fresh-2026-06-18-0902]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]]
+## Runs that observed this SKU (12)
+[[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-29-0710]] · [[amazon-fresh-2026-06-28-0710]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]] · [[amazon-fresh-2026-06-25-0904]] · [[amazon-fresh-2026-06-24-1243]] · [[amazon-fresh-2026-06-18-1246]] · [[amazon-fresh-2026-06-18-0902]] · [[amazon-fresh-2026-06-08-1204]] · [[amazon-fresh-2026-06-08-0909]]
 
-## Price history (829 observations)
+## Price history (834 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -863,6 +863,11 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-30-0728,2026-06-30,amazon-fresh,Pune,411015,175,275,36.4,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Pune,411036,175,275,36.4,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Pune,411045,175,275,36.4,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Bengaluru,560035,195,275,29.1,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Bengaluru,560102,195,275,29.1,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Mumbai,400058,172,275,37.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Mumbai,400101,172,275,37.5,1
+2026-07-03-0507,2026-07-03,amazon-fresh,Mumbai,400102,172,275,37.5,1
 ```
 
 ---

@@ -37,7 +37,7 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "month": 6,
    "targets": 30000.0,
    "type": "B2B",
-   "updated_at": "2026-07-01T08:06:57.173011+00:00",
+   "updated_at": "2026-07-02T06:12:32.680166+00:00",
    "year": 2026
   },
   {
@@ -58,7 +58,7 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "month": 6,
    "targets": 55000.0,
    "type": "B2B",
-   "updated_at": "2026-07-01T08:06:57.173011+00:00",
+   "updated_at": "2026-07-02T06:12:32.680166+00:00",
    "year": 2026
   },
   {
