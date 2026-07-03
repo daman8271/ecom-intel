@@ -21,14 +21,15 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$DIR"
 echo "[$(date '+%F %T')] run_all: START (serial — accuracy first)"
 # Order: quick/light platforms first so their clean reports land early; the Amazon trio runs
-# consecutively (serial guarantees no shared-account overlap); blinkit LAST (slowest — its
-# per-pincode store re-resolution is intentionally patient for full clean coverage).
+# consecutively (serial guarantees no shared-account overlap). Blinkit is no longer in this
+# VPS chain; it runs off-box on the Mac Pro/residential IP and feeds the batch through
+# platforms/blinkit/ingest.sh.
 #
 # Overrides (for the cron-deadline simulation harness ONLY — both UNSET in production, which
 # leaves the loop byte-for-byte identical to before):
 #   PLATFORMS_OVERRIDE — space-separated platform list replacing the default 9
 #   RUNNER_OVERRIDE    — command run instead of ./run.sh (word-split on purpose: may carry args)
-PLATFORMS="${PLATFORMS_OVERRIDE:-flipkart-minutes flipkart zepto amazon amazon-fresh amazon-now blinkit}"  # bigbasket runs off-box on Mac Pro and feeds the batch through platforms/bigbasket/ingest.sh
+PLATFORMS="${PLATFORMS_OVERRIDE:-flipkart-minutes flipkart zepto amazon amazon-fresh amazon-now}"  # bigbasket/blinkit run off-box on Mac Pro and feed the batch through ingest.sh
 RUNNER="${RUNNER_OVERRIDE:-./run.sh}"
 # SIM MODE hard gate (LEAD ruling): ANY override set => this is the simulation harness, NOT a
 # production sweep. Skip everything that touches live platforms or shared state: the per-platform
@@ -196,6 +197,37 @@ SISPOOL
     echo "[$(date '+%F %T')] run_all: swiggy-instamart spooled for batch -> $SIDIR/swiggy-instamart.json (sweep ${SWEEP_ID})"
   else
     echo "[$(date '+%F %T')] run_all: swiggy-instamart report not in output/ — skipped (residential drop late/absent)"
+  fi
+fi
+
+# Blinkit — scraped OFF-BOX on the Mac Pro/residential IP and dropped+ingested into
+# output/. It used to be the slowest platform in the VPS serial chain; keep it out of
+# that chain, but spool the vetted Mac workbook into this deadline batch if present.
+if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
+  BI_RPT="$DIR/output/Jivo-Blinkit-Live-Report-$(date +%F).xlsx"
+  if [ -n "$BI_RPT" ] && [ -f "$BI_RPT" ]; then
+    BIDIR="$DIR/output/.batch/${SWEEP_ID}"; mkdir -p "$BIDIR" 2>>logs/telegram.log
+    BI_RPT="$BI_RPT" BI_SUM="$DIR/platforms/blinkit/result.json" python3 - "$BIDIR/blinkit.json" 2>>logs/telegram.log <<'BISPOOL'
+import json, os, sys, time
+out = sys.argv[1]; xlsx = os.path.abspath(os.environ["BI_RPT"])
+s = {}
+try:
+    s = json.load(open(os.environ["BI_SUM"], encoding="utf-8"))["summary"]
+except Exception:
+    pass
+date = (s.get("captured_at", "") or "")[:10] or time.strftime("%Y-%m-%d")
+summ = (f"*Blinkit — Mac Pro residential-IP collector*\n{date}\n"
+        f"{s.get('pincodes_with_jivo','?')}/{s.get('pincodes_total','?')} pincodes carry Jivo · "
+        f"{s.get('unique_skus','?')} SKUs · {s.get('total_rows','?')} datapoints")
+tmp = out + ".tmp"
+json.dump({"platform": "blinkit", "verdict": "OK", "summary": summ, "xlsx": xlsx,
+           "caption": f"Jivo x Blinkit · {date}", "ts": int(time.time())},
+          open(tmp, "w"), ensure_ascii=False)
+os.replace(tmp, out)
+BISPOOL
+    echo "[$(date '+%F %T')] run_all: blinkit spooled for batch -> $BIDIR/blinkit.json (sweep ${SWEEP_ID})"
+  else
+    echo "[$(date '+%F %T')] run_all: blinkit report not in output/ — skipped (Mac drop late/absent)"
   fi
 fi
 

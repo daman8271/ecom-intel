@@ -17,8 +17,9 @@
 # comes at the timing, not starts at it"). If the chain overruns, the batch goes
 # out as soon as it's done, marked "(late by Xm)".
 
-# BigBasket is produced off-box on the Mac Pro/residential IP and delivered through
-# platforms/bigbasket/ingest.sh. The old paid QuickCommerce API cron is retired.
+# BigBasket and Blinkit are produced off-box on the Mac Pro/residential IP and
+# delivered through platforms/<platform>/ingest.sh. The old BigBasket paid
+# QuickCommerce API cron is retired.
 
 # 12:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28). Fire 00:30;
 # sweep starts at 12:00 - predicted lead and the batch lands AT 12:00. LEAD_MAX=39600

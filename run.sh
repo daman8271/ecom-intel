@@ -5,6 +5,20 @@ P="${1:?usage: ./run.sh <platform>  (blinkit|zepto|flipkart-minutes|amazon-now|f
 DIR="$(cd "$(dirname "$0")" && pwd)"
 PDIR="$DIR/platforms/$P"
 [ -d "$PDIR" ] || { echo "no such platform: $P"; exit 1; }
+case "$P" in
+  blinkit)
+    if [ "${ALLOW_BLINKIT_VPS:-0}" != "1" ]; then
+      echo "Blinkit VPS/datacenter run path is retired. Use Mac Pro runner -> platforms/blinkit/ingest.sh. Set ALLOW_BLINKIT_VPS=1 only for an explicit emergency diagnostic." >&2
+      exit 2
+    fi
+    ;;
+  bigbasket)
+    if [ "${ALLOW_BIGBASKET_VPS_BROWSER:-0}" != "1" ]; then
+      echo "BigBasket VPS/datacenter run path is retired. Use Mac Pro runner -> platforms/bigbasket/ingest.sh. Set ALLOW_BIGBASKET_VPS_BROWSER=1 only for an explicit emergency diagnostic." >&2
+      exit 2
+    fi
+    ;;
+esac
 mkdir -p "$DIR/output" "$DIR/logs"
 RUN_ID="$(date +%Y-%m-%d-%H%M)"
 

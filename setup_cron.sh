@@ -10,7 +10,7 @@
 #   morning 09:xx, midday 12:xx, evening 16:xx (user: 9am / 12pm / 4pm IST).
 # Platforms are STAGGERED a few minutes apart inside each window so four
 # Chromium scrapers don't launch the same second on one VPS:
-#   blinkit :00 · flipkart-minutes :04 · flipkart :08 · amazon :12
+#   flipkart-minutes :04 · flipkart :08 · amazon :12
 # The self-heal/healthcheck runs at :30 of each window — AFTER the batch — so it
 # catches and fixes a failure in the same session.
 #
@@ -27,17 +27,17 @@ DIR="$(cd "$(dirname "$0")" && pwd)"
 # Make cron times mean IST.
 timedatectl set-timezone Asia/Kolkata 2>/dev/null || true
 
-# LIVE platforms in the parallel sweep. amazon-fresh went live 2026-05-30 (logged-in
+# VPS-run platforms in the legacy parallel sweep. amazon-fresh went live 2026-05-30 (logged-in
 # session, i=freshstore — the rich Fresh catalog; see platforms/amazon-fresh/SKILL.md).
 # amazon-now joined the cron 2026-05-31: it shares amazon-fresh's account + server-side
 # delivery location, so run.sh serializes exactly this pair behind a shared
 # .amazon-account.lock (they never scrape at the same time). The plain `amazon` scraper is
 # guest /dp and does NOT set account location, so it's safe alongside both.
 # (run_all.sh holds the authoritative list; this is a doc mirror.)
-PLATFORMS="blinkit flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now"  # bigbasket runs off-box on Mac Pro and ingests via platforms/bigbasket/ingest.sh
+PLATFORMS="flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now"  # bigbasket/blinkit run off-box on Mac Pro and ingest via platforms/*/ingest.sh
 
 # Per-platform minute offset within each window (stagger to avoid concurrent Chromium).
-declare -A OFFSET=( [blinkit]=0 [flipkart-minutes]=4 [flipkart]=8 [amazon]=12 )
+declare -A OFFSET=( [flipkart-minutes]=4 [flipkart]=8 [amazon]=12 )
 
 # Run windows (hours, IST): 9am, 12pm, 4pm.
 HOURS="9 12 16"

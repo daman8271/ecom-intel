@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # tools/selfheal.sh — ecom-intel self-healing routine.
 #
-# For each LIVE platform, decide if its latest run is broken/degraded using
+# For each VPS-run platform, decide if its latest run is broken/degraded using
 # THREE independent signals, then attempt ONE automatic recovery (re-run via
 # ./run.sh <platform>), re-check, and escalate to Telegram if still broken.
 #
@@ -16,6 +16,9 @@
 #
 # Recovery:  ./run.sh <platform> ONCE (RETRY_CAP=1), guarded by a per-platform
 #            lock file so overlapping cron fires never double-run a scraper.
+#            Off-box Mac/drop platforms such as Blinkit, BigBasket, and Swiggy
+#            are intentionally excluded so the backstop cannot fall back to the
+#            VPS/datacenter path.
 # Escalate:  if STILL broken after the retry, send a Telegram alert (same
 #            secrets.env TELEGRAM_BOT_TOKEN/TELEGRAM_CHAT_ID pattern as run.sh)
 #            naming the platform + reason, and append to logs/health.log.
@@ -34,7 +37,7 @@ cd "$DIR" || exit 0
 mkdir -p logs reviews baselines 2>/dev/null || true
 
 # ---- config -----------------------------------------------------------------
-PLATFORMS="${ECOM_PLATFORMS:-blinkit flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now bigbasket}"  # keep in sync with run_all.sh (authoritative)
+PLATFORMS="${ECOM_PLATFORMS:-flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now}"  # keep in sync with run_all.sh (authoritative); off-box Mac/drop platforms are not VPS-healed
 MIN_ROWS="${ECOM_MIN_ROWS:-20}"          # absolute floor; healthy runs return ~60-160
 COLLAPSE_FRAC="${ECOM_COLLAPSE_FRAC:-0.5}" # rows <= baseline*this  => collapse
 MAX_AGE_H="${ECOM_MAX_AGE_H:-15}"        # result.json older than this = stale

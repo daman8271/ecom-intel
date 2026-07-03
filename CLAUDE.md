@@ -17,11 +17,12 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── run_all.sh             # one cron sweep: the 7 live platforms SERIALLY (~2h;  removed 2026-06-06) → per-scrape guardian auto-heal → self-heal
+├── run_all.sh             # one cron sweep: VPS platforms only; Blinkit/BigBasket/Swiggy are Mac/drop-fed
 ├── setup_cron.sh          # installs the cron (12:00 deadline sweep, 18:00 guardian deep-dive) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
-│   ├── blinkit/ / flipkart-minutes/ flipkart/ amazon/ zepto/ bigbasket/  # 7 LIVE, direct
+│   ├── blinkit/ / bigbasket/  # LIVE, Mac Pro residential-IP runners -> ingest.sh
+│   ├── flipkart-minutes/ flipkart/ amazon/ zepto/  # LIVE, direct VPS/data path
 │   ├── amazon-fresh/      # 8th LIVE — logged-in (cookie transplant), i=freshstore, in cron
 │   ├── amazon-now/        # 9th LIVE — logged-in (own dedicated account), genuine Now via scrape.ctnow.js (almBrandId=ctnow); lock kept w/ fresh pending a concurrency test
 │   └── <p>/{SKILL.md, scrape.js, build_excel.py, pincodes.json}
@@ -35,7 +36,7 @@ ecom-intel/
 
 ## Run a platform
 ```bash
-./run.sh blinkit            # scrape + build excel; blinkit now ~69 min (patient per-pincode store re-resolution — see below)
+ssh macpro '/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh'  # Blinkit scrape/drop/ingest
 cat platforms/blinkit/result.json | python3 -m json.tool | head   # raw data
 ls output/                  # the Excel
 ```
@@ -43,8 +44,8 @@ ls output/                  # the Excel
 ### Per-pincode coverage modes (Wave 1: blinkit / zepto / flipkart-minutes)
 True per-pincode ground truth over the 25-city universe (1,885 pincodes). **Three modes, gated, non-breaking** (flag unset = old anchor `pincodes.json`, untouched):
 ```bash
-# DAILY (the cron now uses this): only pincodes where Jivo is on sale — blinkit 486 / zepto 693 / fkm 340
-COVERAGE_DAILY=1 ./run.sh blinkit            # uses platforms/<p>/pincodes.daily.json
+# DAILY (the cron now uses this for VPS-run platforms): only pincodes where Jivo is on sale — zepto 693 / fkm 340.
+# Blinkit uses the same daily config from the Mac Pro runner and is promoted only through platforms/blinkit/ingest.sh.
 # FULL census: every one of the 1,885 pincodes (weekly / discovery)
 COVERAGE_FULL=1 ./run.sh zepto               # uses platforms/<p>/pincodes.full25.json
 # subset (relative path auto-normalized):
@@ -68,14 +69,14 @@ python3 tools/coverage/coverage_report.py $(date +%F)   # honest per-city x per-
 ## Block-risk map (datacenter VPS IP) — 8 LIVE in the cron chain, no proxy ( REMOVED 2026-06-06, rebuild pending)
 | Platform | Status | Notes |
 |---|---|---|
-| blinkit | ✅ LIVE | localStorage location override; 332 store coords / 798 pincodes. **2026-06-05 fix (0537fbf):** scrape is gated on VERIFIED store re-resolution — the active store must be a real local store near the requested coords, else 0 rows are recorded (never the Gurgaon default). Kills the default-store contamination. This patience is why a run is now ~69 min (vs the old ~10 min, which was the contamination skipping the check). CONCURRENCY default 2 (≥3 loses re-resolution). **Known gap:** ~40% of pincodes have bad coordinates that never re-resolve → recorded as 0 rows (a geocoding follow-up, NOT a scraper bug). |
+| blinkit | ✅ LIVE (Mac/drop) | Runs on the Mac Pro residential IP via `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`, drops JSON to `platforms/blinkit/ingest.sh`, and is spooled by `run_all.sh` from `output/`. The VPS `./run.sh blinkit` path refuses unless `ALLOW_BLINKIT_VPS=1`. Scrape is gated on verified store re-resolution; ingest rejects partial, wrong-config, low-row, low-store, or blocked drops. |
 |  | ❌ REMOVED from cron chain 2026-06-06 (was ⚠️ BLOCKED) | stealth context + POST to /api//search/v2 (WAF bypass). **2026-06-05 (c0bc409):** now paginates by offset (full Jivo catalogue, not just page 0); 403 fail-safe preserved (first-page non-200 → 0 rows + "search status" marker → review BROKEN). **STILL blocked by an IP-level 403** (currently 0 rows) — needs a residential proxy OR a logged-in  session (parked; see docs/PROXY.md + platforms//LOGIN-COOKIES.md). |
 | zepto | ✅ LIVE | reached via bff-gateway.zeptonow.com BFF API (CloudFront on website still 403s) |
 | flipkart-minutes | ✅ LIVE | HYPERLOCAL store; GPS "use my location"; scaled to 345 pincodes |
 | flipkart | ✅ LIVE | marketplace, national pricing, 1 row/SKU |
 | amazon | ✅ LIVE | guest interstitial bypass on /dp; targeted scrape of 314 ASINs; NO account location |
 | amazon-fresh | ✅ LIVE | logged-in (cookie transplant), i=freshstore raw POST+HTML; 332 pincodes, ~63 SKUs, ~13k rows; in cron |
-| bigbasket | ✅ LIVE | stealth browser past Akamai + in-page listing-svc API; **LOGGED-IN member** (cookie transplant, `secrets/bb_cookies.json` gitignored) → captures **MEMBER prices** (what a logged-in customer pays, not guest public prices — the "wrong SP" fix, 2026-06-04). Session is localized to the member's address → real per-hub availability + ~23 SKUs (vs ~27 guest), tagged "All India". Expired cookies → `BB_SESSION_EXPIRED` marker + 0 rows (BROKEN, never publishes guest-as-member). no proxy; in cron. See platforms/bigbasket/SKILL.md "LOGGED-IN MEMBER MODE". |
+| bigbasket | ✅ LIVE (Mac/drop) | Runs on the Mac Pro residential IP via `/Users/danny./VPS-Migration/scripts/run_bigbasket_mac_to_vps.sh`, drops JSON to `platforms/bigbasket/ingest.sh`, and is spooled from `output/`. Old QuickCommerce pincode API and VPS browser paths refuse unless explicitly emergency-enabled. |
 | amazon-now | ✅ LIVE | logged-in on its OWN dedicated account; **genuine Amazon Now** via `scrape.ctnow.js` (`/s?k=jivo&almBrandId=ctnow`, real "in 10 min"/overnight/tomorrow speed tiers). The old `i=nowstore` surface (legacy Prime-Now/marketplace SEARCH, 0 real ETAs) is FROZEN — see ROOTCAUSE-AmazonNow-2026-06-01.md. Now's account is now distinct from Fresh's (proven by cookie compare), so they CAN in principle run in parallel, but the shared .amazon-account.lock is KEPT until a supervised concurrent run proves non-interference. Cron PAUSED during rebuild; rebuilt + scale-validated 2026-06-03 (65-pincode representative run, 42 serviceable, badge-gated, no marketplace contamination). |
 
 ## Pipeline (run.sh, per platform)
@@ -101,12 +102,12 @@ each OK report (`output/.batch/<sweep>/<p>.json`) instead of curling; after the 
 all summaries + Excels in canonical order, footer with held/late. BROKEN-run owner alerts
 still send immediately. Failures fall back to immediate send (a report can be early, never
 lost). Plain `./run_all.sh` without the env = old behavior. An **18:00 daily guardian
-deep-dive** (`./tools/guardian_daily.sh`) is unchanged. The daily sweep scrapes the **7 live
-platforms SERIALLY — one platform at a time** (commit 8ef79d4), in this order:
-flipkart-minutes, flipkart, zepto, amazon, amazon-fresh,
-amazon-now, **blinkit LAST** (slowest). **BigBasket is NOT in this serial chain — it runs
-off-box on the Mac Pro/residential IP and drops JSON into `platforms/bigbasket/ingest.sh`,
-then the noon batch spools the resulting workbook.** ** was REMOVED from the chain
+deep-dive** (`./tools/guardian_daily.sh`) is unchanged. The daily sweep scrapes the VPS-run
+platforms SERIALLY — one platform at a time — in this order:
+flipkart-minutes, flipkart, zepto, amazon, amazon-fresh, amazon-now.
+**Blinkit, BigBasket, and Swiggy are NOT in this serial chain — they run off-box on the
+Mac Pro/residential IP and drop JSON into their `ingest.sh`; the noon batch spools the
+resulting workbooks from `output/`.** ** was REMOVED from the chain
 2026-06-06** (WAF-dead, ~40m heal-retry waste per sweep; rebuild pending — owner).
 The sweep fires early in the small hours and self-aligns so the batch lands AT 12:00 noon.
 Now that there is a single daily sweep, the old two-sweep overlap concern is moot; the
