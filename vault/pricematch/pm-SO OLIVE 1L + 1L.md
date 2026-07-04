@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-03
-observations: 200
+last_seen: 2026-07-04
+observations: 208
 latest_status: NOT_LISTED
-below_days: 21
+below_days: 22
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[edohbh2urwdmhpxc]]
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-03) — ref ₹549 vs live ₹-
-- **Days below reference:** 21 of 25
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-04) — ref ₹549 vs live ₹-
+- **Days below reference:** 22 of 26
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]]
 
-## Ref-vs-live history (200 observations)
+## Ref-vs-live history (208 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -245,6 +245,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-03,flipkart,BELOW,SVD,549,474,474,474,-75,-13.66,1,true
 2026-07-03,flipkart-minutes,NOT_LISTED,SVD,549,,,,,,0,false
 2026-07-03,zepto,NOT_LISTED,SVD,549,,,,,,0,false
+2026-07-04,amazon,OOS,SVD,549,,,,,,0,false
+2026-07-04,amazon-fresh,NOT_LISTED,SVD,549,,,,,,0,false
+2026-07-04,amazon-now,NOT_LISTED,SVD,549,,,,,,0,false
+2026-07-04,bigbasket,NOT_LISTED,SVD,549,,,,,,0,false
+2026-07-04,blinkit,NOT_LISTED,SVD,549,,,,,,0,false
+2026-07-04,flipkart,BELOW,SVD,549,388,388,388,-161,-29.33,1,true
+2026-07-04,flipkart-minutes,NOT_LISTED,SVD,549,,,,,,0,false
+2026-07-04,zepto,NOT_LISTED,SVD,549,,,,,,0,false
 ```
 
 ---
