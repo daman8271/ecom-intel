@@ -1,0 +1,109 @@
+{
+  "platform": "amazon-now",
+  "run_id": "2026-07-04-1041",
+  "captured_at": "2026-07-04T05:52:59.944Z",
+  "verdict": "SUSPECT",
+  "rows": 457,
+  "unique_skus": 16,
+  "pincodes_with_jivo": 129,
+  "baseline_rows": 1183,
+  "source_result": "/opt/ecom-intel/platforms/amazon-now/result.json",
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "457 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "457 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": false,
+      "detail": "457 rows is 39% of baseline 1183"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "16 unique SKUs vs baseline 24 (66%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "129 pincodes w/ Jivo vs baseline 118 (110%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-07-04T05:52:59.944Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; 2 SKU(s) price-stable across 9 runs path proven live by 14 SKU(s) that moved (e.g. jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l, jivo-cold-pressed-groundnut-oil-5-litre-5l, jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l) -> genuinely stable; 14 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": true,
+      "detail": "no resolved store_id on rows; geo check n/a"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": false,
+      "detail": "457 priced in-stock rows is 39% of baseline 1183"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": false,
+      "detail": "SUSPECT \u2014 row count collapsed 61% vs baseline (457 vs 1183); product names, prices, MRPs, and discounts all sensible."
+    }
+  ],
+  "reasons": [
+    "rows_vs_baseline: 457 rows is 39% of baseline 1183",
+    "priced_floor_block: 457 priced in-stock rows is 39% of baseline 1183",
+    "llm_judgment: SUSPECT \u2014 row count collapsed 61% vs baseline (457 vs 1183); product names, prices, MRPs, and discounts all sensible."
+  ],
+  "llm_note": "SUSPECT \u2014 row count collapsed 61% vs baseline (457 vs 1183); product names, prices, MRPs, and discounts all sensible."
+}
