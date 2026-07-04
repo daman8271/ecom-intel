@@ -28,40 +28,30 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -53.1,
+   "delta_pct": 0.2,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 7008.0,
+   "ltrs": 14988.0,
    "name": "SOYABEAN 1L POUCH",
    "prev_ltrs": 14951.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -50.0,
+   "delta_pct": 50.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 500.0,
+   "ltrs": 1500.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 1000.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": null,
-   "head": "COMMODITY",
-   "is_new": true,
-   "ltrs": 480.0,
-   "name": "SOYABEAN 5L",
-   "prev_ltrs": 0.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": 32.0,
+   "delta_pct": 196.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 396.0,
+   "ltrs": 888.0,
    "name": "MUSTARD POUCH 1L",
    "prev_ltrs": 300.0
   },
@@ -71,8 +61,18 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
    "delta_pct": null,
    "head": "COMMODITY",
    "is_new": true,
-   "ltrs": 320.0,
+   "ltrs": 820.0,
    "name": "RICE BRAN 5L",
+   "prev_ltrs": 0.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": null,
+   "head": "COMMODITY",
+   "is_new": true,
+   "ltrs": 480.0,
+   "name": "SOYABEAN 5L",
    "prev_ltrs": 0.0
   },
   {
@@ -88,6 +88,16 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
   {
    "brand": null,
    "code": null,
+   "delta_pct": 42.9,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 160.0,
+   "name": "GROUNDNUT 1L",
+   "prev_ltrs": 112.0
+  },
+  {
+   "brand": null,
+   "code": null,
    "delta_pct": -50.0,
    "head": "COMMODITY",
    "is_new": false,
@@ -98,21 +108,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -28.6,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 80.0,
-   "name": "GROUNDNUT 1L",
-   "prev_ltrs": 112.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -87.5,
+   "delta_pct": -75.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 40.0,
-   "name": "GOLD 1L",
+   "ltrs": 80.0,
+   "name": "SUNFLOWER 1L",
    "prev_ltrs": 320.0
   },
   {
@@ -121,7 +121,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
    "delta_pct": null,
    "head": "PREMIUM",
    "is_new": true,
-   "ltrs": 20.0,
+   "ltrs": 40.0,
    "name": "CANOLA 1L",
    "prev_ltrs": 0.0
   }
@@ -140,10 +140,10 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 32.0,
+  "delta_pct": 196.0,
   "head": "COMMODITY",
   "is_new": false,
-  "ltrs": 396.0,
+  "ltrs": 888.0,
   "name": "MUSTARD POUCH 1L",
   "prev_ltrs": 300.0
  },

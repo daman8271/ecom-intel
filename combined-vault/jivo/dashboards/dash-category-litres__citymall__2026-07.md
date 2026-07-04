@@ -22,18 +22,18 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 80.0
+   "ltrs": 160.0
   },
   {
    "category": "CANOLA",
-   "ltrs": 20.0
+   "ltrs": 40.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "citymall",
- "total_ltrs": 100.0,
+ "total_ltrs": 200.0,
  "year": 2026
 }
 ```

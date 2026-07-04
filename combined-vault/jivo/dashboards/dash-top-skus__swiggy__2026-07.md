@@ -24,9 +24,119 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "platform": "swiggy",
  "prev_month": 6,
  "prev_year": 2026,
- "skus": [],
+ "skus": [
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -86.0,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 5984.0,
+   "name": "GROUNDNUT 1L",
+   "prev_ltrs": 42766.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -87.6,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 3840.0,
+   "name": "MUSTARD 1L",
+   "prev_ltrs": 30856.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -88.7,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 2564.0,
+   "name": "SUNFLOWER 1L",
+   "prev_ltrs": 22637.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -88.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 1660.0,
+   "name": "GROUNDNUT 5L",
+   "prev_ltrs": 14120.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -93.2,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 775.0,
+   "name": "SUNFLOWER 5L",
+   "prev_ltrs": 11370.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -92.1,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 500.0,
+   "name": "GOLD 1L",
+   "prev_ltrs": 6340.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -90.0,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 432.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 4304.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -89.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 320.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 2960.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -94.3,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 180.0,
+   "name": "CANOLA 1L",
+   "prev_ltrs": 3160.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -92.0,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 180.0,
+   "name": "MUSTARD 5L",
+   "prev_ltrs": 2240.0
+  }
+ ],
  "source": "primary",
- "top_faller": null,
+ "top_faller": {
+  "brand": null,
+  "code": null,
+  "delta_pct": -98.9,
+  "head": "COMMODITY",
+  "is_new": false,
+  "ltrs": 40.0,
+  "name": "GOLD 5L",
+  "prev_ltrs": 3640.0
+ },
  "top_riser": null,
  "year": 2026
 }

@@ -80,6 +80,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-blinkit]]
    "DRINKS",
    "ELEGANCE",
    "FERRERO",
+   "FIRST PRESSED",
    "FLIPPRO",
    "GHEE",
    "GIFT PACK",
@@ -238,6 +239,14 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-blinkit]]
     "sub_category": "FERRERO"
    },
    {
+    "category": "FIRST PRESSED",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "FIRST PRESSED",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
+   },
+   {
     "category": "FLIPPRO",
     "sub_category": "FLIPPRO"
    },
@@ -272,10 +281,6 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-blinkit]]
    {
     "category": "MAKKI ATTA",
     "sub_category": "MAKKI ATTA"
-   },
-   {
-    "category": "MUSTARD",
-    "sub_category": "FIRST PRESSED MUSTARD"
    },
    {
     "category": "MUSTARD",
@@ -424,10 +429,6 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-blinkit]]
    {
     "category": "SPICES",
     "sub_category": "SAFFRON"
-   },
-   {
-    "category": "SUNFLOWER",
-    "sub_category": "FIRST PRESSED SUNFLOWER"
    },
    {
     "category": "SUNFLOWER",

@@ -29,17 +29,20 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000135` |
 | canonical_sku(s) | `sano-canola-cooking-oil-for-daily-use-recommended-for-all-types-of-cuisines-lowest-in-saturated-fat-content-ideal-for-healthconscious-cooking-5-litre-smart-cooking-choice-5l`, `edogw3gwc36phwky` |
 | Category | [[Category - CANOLA\|CANOLA]] |
+| Sub-category | CANOLA |
+| Brand | SANO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 5L |
+| Per-unit | 5.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1199 | — | — | ⚪ OOS | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 1199 | — | — | ⚪ OOS | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 1199 | — | — | ⚪ OOS | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 1199 | — | — | ⚪ OOS | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

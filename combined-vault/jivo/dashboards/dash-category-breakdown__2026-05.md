@@ -83,7 +83,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 6160.0,
+    "ltrs": 6175.0,
     "name": "MUSTARD"
    },
    {
@@ -125,7 +125,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "EXTRA VIRGIN"
    },
    {
-    "ltrs": 6160.0,
+    "ltrs": 6175.0,
     "name": "YELLOW MUSTARD"
    },
    {
@@ -141,7 +141,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "COCONUT"
    }
   ],
-  "total_ltrs": 489949.65
+  "total_ltrs": 489964.65
  },
  "source": "primary",
  "year": 2026

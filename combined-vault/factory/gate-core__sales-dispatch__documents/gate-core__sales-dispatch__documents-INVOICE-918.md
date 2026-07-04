@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR69E4548"
+title: "HR67F8513"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR69E4548
+# HR67F8513
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34438
-- **doc_num:** 706260192
-- **doc_date:** 2026-06-10
-- **doc_total:** 492586.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** RK WORLDINFOCOM PVT LTD HARYANA
-- **ship_to_address:** LLP VILLAGE- FARRUKHNAGAR TEHSIL-FARRUKH ESR SOHNA LOGISTICS PARK VILLAGE RAHAKA  BLOCK J2,FARUKHNAGAR LOGISTICS PARKS EMPORIUM INDUSTRIAL PARK INDIA PVT LTDGURUGRAM-122506IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **doc_entry:** 34477
+- **doc_num:** 606260129
+- **doc_date:** 2026-06-11
+- **doc_total:** 1382600.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000906
+- **card_name:** EVARA ENTERPRISES
+- **ship_to_code:** EVARA ENTERPRISES PUNJAB
+- **ship_to_address:** VILLAGE SARINH  NEAR SINGH MOTORS MALERKOTLA ROADLUDHIANA-141116IN
+- **place_of_supply:** PB
+- **bp_gstin:** 03AALFE9594L1ZR
 - **eway_bill:** 
-- **vehicle_no:** HR69E4548
-- **transporter_name:** Jivo Vehicle
-- **bilty_no:** NA
+- **vehicle_no:** HR67F8513
+- **transporter_name:** Delhi Punjab
+- **bilty_no:** 11317
 - **bilty_date:** 2026-06-11
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000376 - SESAME OIL 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000394 - COLD PRESS SUNFLOWER 5LTR 5 PCS
-- **base_refs:** 1706264554
-- **total_quantity:** 904.000
-- **total_litres:** 1544.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS
+- **base_refs:** 1706264510
+- **total_quantity:** 7320.000
+- **total_litres:** 8920.000
 - **total_boxes:** 0.000
-- **total_weight:** 1479.908
-- **line_count:** 3
+- **total_weight:** 8682.452
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 34438, "sap_invoice_doc_num": "706260192", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 34477, "sap_invoice_doc_num": "606260129", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

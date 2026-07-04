@@ -10,8 +10,8 @@ tags:
 
 From `/grpo/service/pending/`. Up: [[_HOME]]
 
-- [[grpo__service__pending-844]] — RJ11GD2869
-- [[grpo__service__pending-808]] — RJ11GD2869
+- [[grpo__service__pending-878]] — RJ11GD2869
+- [[grpo__service__pending-839]] — RJ11GD2869
 - [[grpo__service__pending-619]] — DL01LAD1397
 - [[grpo__service__pending-620]] — DL01LAD1397
 - [[grpo__service__pending-623]] — DL01LAD1397

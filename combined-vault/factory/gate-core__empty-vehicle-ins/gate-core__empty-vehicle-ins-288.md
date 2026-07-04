@@ -44,11 +44,11 @@ tags:
 - **sap_comments:** 
 - **sap_line_count:** 0
 - **sap_total_quantity:** 0.000
-- **document_reference:** Dispatch 606260209, 607260104
-- **document_notes:** Weight: 6237.152 kg
+- **document_reference:** Dispatch 606260209, 607260104, 607260106
+- **document_notes:** Weight: 13416.092 kg
 - **pipeline_status:**
   ```json
-  {"stage": "DOCKED", "stage_label": "Docked", "stage_at": "2026-07-02T06:53:14.454727Z", "counts": {"total": 2, "rejected": 0}, "module": "dock", "module_status": "scanning", "module_label": "scanning at dock"}
+  {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-03T09:08:35.971563Z", "counts": {"total": 3, "rejected": 0}, "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}
   ```
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 
@@ -61,7 +61,7 @@ tags:
 - **security_name:** Sachin
 - **remarks:** 
 - **created_at:** 2026-07-02T11:17:43.590643+05:30
-- **updated_at:** 2026-07-02T11:19:06.415316+05:30
+- **updated_at:** 2026-07-03T14:38:35.988243+05:30
 
 ## Related
 - company -> [[comp-2]]

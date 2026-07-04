@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Transporter (90)
+title: Transporter (91)
 tags:
   - moc
   - source/factory
 ---
 
-# Transporter — 90 records
+# Transporter — 91 records
 
 From `/vehicle-management/transporters/`. Up: [[_HOME]]
 
@@ -82,6 +82,7 @@ From `/vehicle-management/transporters/`. Up: [[_HOME]]
 - [[trn-19]] — ROYALPRIME
 - [[trn-6]] — SANGRUR GOODS CARRIER
 - [[trn-91]] — SELF VEHCILE
+- [[trn-93]] — Shambhu roadways
 - [[trn-28]] — Shekhawati Road Lines
 - [[trn-92]] — Shree bholenath carriers
 - [[trn-14]] — Shree Ram rmc

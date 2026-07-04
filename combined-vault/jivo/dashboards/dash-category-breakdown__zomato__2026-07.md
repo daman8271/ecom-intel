@@ -28,9 +28,27 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
  "month": 7,
  "platform": "zomato",
  "premium": {
-  "categories": [],
-  "sub_categories": [],
-  "total_ltrs": 0
+  "categories": [
+   {
+    "ltrs": 623.0,
+    "name": "OLIVE"
+   }
+  ],
+  "sub_categories": [
+   {
+    "ltrs": 288.0,
+    "name": "JIVO POMACE"
+   },
+   {
+    "ltrs": 175.0,
+    "name": "SANO POMACE"
+   },
+   {
+    "ltrs": 160.0,
+    "name": "EXTRA VIRGIN"
+   }
+  ],
+  "total_ltrs": 623.0
  },
  "source": "primary",
  "year": 2026

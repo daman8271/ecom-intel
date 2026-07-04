@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR63E5410"
+title: "RJ11GD3150"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR63E5410
+# RJ11GD3150
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35668
-- **doc_num:** 706260932
+- **doc_entry:** 35696
+- **doc_num:** 606260209
 - **doc_date:** 2026-06-30
-- **doc_total:** 301190.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
-- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **doc_total:** 1116750.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000592
+- **card_name:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED
+- **ship_to_code:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN
+- **ship_to_address:** ELECTRICITY CITY POSTBENGALURU-560100IN
+- **place_of_supply:** KT
+- **bp_gstin:** 29AAICK3556G1Z9
 - **eway_bill:** 
-- **vehicle_no:** HR63E5410
-- **transporter_name:** Amazon vehicle pickup
-- **bilty_no:** 5727855593
+- **vehicle_no:** RJ11GD3150
+- **transporter_name:** Abhiman Express
+- **bilty_no:** 1126
 - **bilty_date:** 2026-07-02
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
-- **base_refs:** 1706264767
-- **total_quantity:** 1440.000
-- **total_litres:** 1440.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS
+- **base_refs:** 1706264723
+- **total_quantity:** 1640.000
+- **total_litres:** 5800.000
 - **total_boxes:** 0.000
-- **total_weight:** 1435.788
-- **line_count:** 1
+- **total_weight:** 5555.852
+- **line_count:** 5
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 812, "sap_invoice_doc_entry": 35668, "sap_invoice_doc_num": "706260932", "invoice_number": "706260932", "eway_bill": "771647937647", "invoice_weight": "1435.788", "invoice_amount": "301190.00", "place_of_supply": "HR", "location": "Delivery Address: DED3 R K WorldInfocom Pvt Ltd Block J2, Farukhnagar Logistics Parks, LLP  Village- Farrukhnagar, Tehsil- Farrukhanagar Gurgaon 122506", "product_variety": "Oil", "total_litres": "1440.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 368, "transporter_id": 81, "driver_id": null, "linked_vehicle_entry_id": 1404, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-02T15:32:23.599758Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-02", "priority": "HIGH", "transporter_name": "Amazon Freight (ASSPL)", "transporter_gstin": "29AAICA3918J1ZE", "contact_person": "rishabh", "mobile_no": "8802345622", "vehicle_no": "HR63E3409", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "5727855593", "bilty_date": "2026-07-02", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260929.pdf", "bilty_attachment_name": "AR - 706260929.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "2026/07/02 16:00 IST", "created_at": "2026-07-01T19:15:51.738445+05:30", "updated_at": "2026-07-02T21:02:23.618167+05:30"}
+  {"id": 808, "sap_invoice_doc_entry": 35696, "sap_invoice_doc_num": "606260209", "invoice_number": "606260209", "eway_bill": "312283913774", "invoice_weight": "5555.852", "invoice_amount": "1116750.00", "place_of_supply": "KT", "location": "", "product_variety": "Oil", "total_litres": "5800.000", "effective_month": "2026-06", "budget_delivery_point": "BENGALURU", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 365, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 1385, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-03T09:08:35.971563Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-02", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ11GD2869", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1126", "bilty_date": "2026-07-02", "bilty_attachment": "/media/sales_dispatch/attachments/GR_260533.pdf", "bilty_attachment_name": "GR 260533.pdf", "freight": "63906.29", "total_freight": "63906.29", "kanta_weight": null, "remarks": "", "created_at": "2026-07-01T18:44:35.844159+05:30", "updated_at": "2026-07-03T14:38:35.987421+05:30"}
   ```

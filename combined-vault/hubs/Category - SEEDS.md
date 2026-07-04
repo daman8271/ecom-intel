@@ -11,7 +11,7 @@ tags:
 
 Up: [[Home]]
 
-**18 matched products** · dominant tier [[Tier - Other\|Other]]
+**19 matched products** · dominant tier [[Tier - Other\|Other]]
 
 ## Member products
 - [[BASIL SEEDS 200 GM]] — Other · 200 GM
@@ -20,6 +20,7 @@ Up: [[Home]]
 - [[CHIA SEEDS 200GM]] — Other · 200GM
 - [[CHIA SEEDS 400G]] — Other · 400G
 - [[CHIASEEDS 800G]] — Other · 800G
+- [[CUMIN SEEDS 100G]] — Other · 100G
 - [[FLAX SEEDS 200G]] — Other · 200G
 - [[FLAX SEEDS 400 GM]] — Other · 400 GM
 - [[FLAX SEEDS 800G]] — Other · 800G

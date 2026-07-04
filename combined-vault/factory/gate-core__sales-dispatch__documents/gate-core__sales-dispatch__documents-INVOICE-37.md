@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35786
-- **doc_num:** 706260979
-- **doc_date:** 2026-06-30
-- **doc_total:** 8296.00
+- **doc_entry:** 35812
+- **doc_num:** 707260110
+- **doc_date:** 2026-07-02
+- **doc_total:** 2285.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000912
-- **card_name:** AMAZON (B2C -MAY-JULY)
-- **ship_to_code:** AMAZON B2C TELANGANA
-- **ship_to_address:** -500080IN
-- **place_of_supply:** TE
+- **card_code:** CUSTA000645
+- **card_name:** DEL SAHIL
+- **ship_to_code:** DEL SAHIL DELHI
+- **ship_to_address:** NEW DELHI-110034IN
+- **place_of_supply:** DL
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** SL0000080 - EXTRA VIRGIN 5 LTR TIN 4 PCS IMPORTED, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000084 - EXTRA VIRGIN COCONUT  500 ML PACK OF 2, FG0000157 - EXTRA VIRGIN COCONUT OIL 500 MLS 24 PCS
-- **base_refs:** 1506264699
-- **total_quantity:** 9.000
-- **total_litres:** 22.500
+- **warehouses:** DL-MP
+- **item_summary:** FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000116 - EXTRA VIRGIN COCONUT OIL 1 LTR 16 PCS, FG0000387 - CHAI 250 GMS 40 PCS
+- **base_refs:** 1507264501
+- **total_quantity:** 12.000
+- **total_litres:** 11.000
 - **total_boxes:** 0.000
-- **total_weight:** 11.737
-- **line_count:** 6
+- **total_weight:** 11.106
+- **line_count:** 4
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35786, "sap_invoice_doc_num": "706260979", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 35812, "sap_invoice_doc_num": "707260110", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

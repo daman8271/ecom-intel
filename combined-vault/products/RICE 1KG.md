@@ -4,7 +4,7 @@ jid: JID-0068
 product: "RICE 1KG"
 sap_codes:
   - FG0000201
-category: "RICE"
+category: "OTHER"
 tier: OTHER
 platforms:
   - amazon
@@ -12,7 +12,7 @@ platforms:
 tags:
   - type/product
   - tier/OTHER
-  - category/RICE
+  - category/OTHER
   - platform/amazon
   - platform/flipkart
 ---
@@ -28,9 +28,7 @@ Up: [[Home]]
 | Product | RICE 1KG |
 | JIVO SKU / SAP code | `FG0000201` |
 | canonical_sku(s) | `jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na`, `ricge89buedda5u7` |
-| Category | [[Category - RICE\|RICE]] |
-| Sub-category | BASMATI |
-| Brand | JIVO |
+| Category | [[Category - OTHER\|OTHER]] |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 1KG |
 | Bridge class | new_confirmed |
@@ -52,7 +50,7 @@ _OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
 Cross-vault fusion by name / SKU match:
 - **JIVO source notes:** [[sku-FG0000201]]
 - **Ecom source notes:** [[jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na]] · [[ricge89buedda5u7]]
-- **Category:** [[Category - RICE]]
+- **Category:** [[Category - OTHER]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
 

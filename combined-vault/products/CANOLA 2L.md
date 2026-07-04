@@ -27,11 +27,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000022` |
 | canonical_sku(s) | `jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-2l`, `jivo-canola-oil2-litre-cold-press-cooking-oil-for-daily-use-recommended-by-indian-medical-association-2l` |
 | Category | [[Category - CANOLA\|CANOLA]] |
-| Sub-category | CANOLA |
-| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 2L |
-| Per-unit | 2.0 L |
 | Bridge class | new_confirmed |
 
 ## Competitor-price lens

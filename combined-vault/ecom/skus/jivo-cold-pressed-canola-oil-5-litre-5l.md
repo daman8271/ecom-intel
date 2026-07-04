@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-5-litre-5l
-display_name: Jivo Cold Pressed Canola Oil 5 Litre
+display_name: Jivo Cold Pressed Canola Oil 5 Litre 5l
 platforms:
   - amazon-fresh
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Canola Oil 5 Litre**
+**Jivo Cold Pressed Canola Oil 5 Litre 5l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1099 (33.4% off)

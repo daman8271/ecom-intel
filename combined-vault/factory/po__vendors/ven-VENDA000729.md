@@ -1,7 +1,7 @@
 ---
 type: factory-ven
 id: VENDA000729
-title: "SWIGGY INSTAMART PRIVATE LIMITED"
+title: "SWIGGY LIMITED"
 entity: Vendor
 source_endpoint: /po/vendors/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# SWIGGY INSTAMART PRIVATE LIMITED
+# SWIGGY LIMITED
 
 > Vendor from `/po/vendors/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **vendor_code:** VENDA000729
-- **vendor_name:** SWIGGY INSTAMART PRIVATE LIMITED
+- **vendor_name:** SWIGGY LIMITED
 
 ## Related
 - vendor_code -> [[ven-VENDA000729]]

@@ -27,16 +27,19 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000139` |
 | canonical_sku(s) | `sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l` |
 | Category | [[Category - SUNFLOWER\|SUNFLOWER]] |
+| Sub-category | SUNFLOWER |
+| Brand | SANO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 5L |
+| Per-unit | 5.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1029 | 929 | -9.72 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 1029 | 889 | -13.61 | 🟢 BELOW | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

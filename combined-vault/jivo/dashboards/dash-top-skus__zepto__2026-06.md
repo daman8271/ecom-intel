@@ -28,10 +28,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 47.1,
+   "delta_pct": 47.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 37968.0,
+   "ltrs": 37936.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 25808.0
   },
@@ -68,10 +68,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 13.0,
+   "delta_pct": 10.7,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 9932.0,
+   "ltrs": 9728.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 8787.0
   },

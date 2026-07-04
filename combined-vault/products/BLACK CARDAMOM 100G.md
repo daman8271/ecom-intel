@@ -29,19 +29,17 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000195` |
 | canonical_sku(s) | `jivo-black-cardamom-badi-elaichi-sabut-moti-kali-elaichi-whole-organic-black-cardamom-perfect-for-cooking-baking-seasoning-adds-flavor-to-dishes-no-artificial-colours-or-preservatives-100g-100ml`, `scmh4h8hzj8ahq9g` |
 | Category | [[Category - SPICES\|SPICES]] |
-| Sub-category | BLACK CARDAMOM |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 100G |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 289 | — | — | ⚪ OOS | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 289 | — | — | ⚪ OOS | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 289 | — | — | ⚪ OOS | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 289 | — | — | ⚪ OOS | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

@@ -4,7 +4,7 @@ jid: JID-0067
 product: "CUMIN SEEDS 100G"
 sap_codes:
   - FG0000199
-category: "SPICES"
+category: "SEEDS"
 tier: OTHER
 platforms:
   - amazon
@@ -12,7 +12,7 @@ platforms:
 tags:
   - type/product
   - tier/OTHER
-  - category/SPICES
+  - category/SEEDS
   - platform/amazon
   - platform/flipkart
 ---
@@ -28,20 +28,18 @@ Up: [[Home]]
 | Product | CUMIN SEEDS 100G |
 | JIVO SKU / SAP code | `FG0000199` |
 | canonical_sku(s) | `jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml`, `scmh3fhauzysnuab` |
-| Category | [[Category - SPICES\|SPICES]] |
-| Sub-category | CUMIN SEEDS |
-| Brand | JIVO |
+| Category | [[Category - SEEDS\|SEEDS]] |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 100G |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 75 | — | — | ⚪ OOS | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 75 | — | — | ⚪ OOS | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 75 | — | — | ⚪ OOS | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 75 | — | — | ⚪ OOS | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -52,7 +50,7 @@ _OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
 Cross-vault fusion by name / SKU match:
 - **JIVO source notes:** [[sku-FG0000199]]
 - **Ecom source notes:** [[jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml]] · [[scmh3fhauzysnuab]]
-- **Category:** [[Category - SPICES]]
+- **Category:** [[Category - SEEDS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - flipkart]]
 

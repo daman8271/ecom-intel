@@ -20,17 +20,53 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
 ```json
 {
  "commodity": {
-  "categories": [],
-  "sub_categories": [],
-  "total_ltrs": 0
+  "categories": [
+   {
+    "ltrs": 350.0,
+    "name": "MUSTARD"
+   }
+  ],
+  "sub_categories": [
+   {
+    "ltrs": 350.0,
+    "name": "MUSTARD KACCHI GHANI"
+   }
+  ],
+  "total_ltrs": 350.0
  },
  "errors": [],
  "month": 7,
  "platform": "zepto",
  "premium": {
-  "categories": [],
-  "sub_categories": [],
-  "total_ltrs": 0
+  "categories": [
+   {
+    "ltrs": 2528.0,
+    "name": "OLIVE"
+   },
+   {
+    "ltrs": 1451.4,
+    "name": "GROUNDNUT"
+   }
+  ],
+  "sub_categories": [
+   {
+    "ltrs": 1866.0,
+    "name": "JIVO POMACE"
+   },
+   {
+    "ltrs": 1451.4,
+    "name": "GROUNDNUT"
+   },
+   {
+    "ltrs": 548.0,
+    "name": "EXTRA LIGHT"
+   },
+   {
+    "ltrs": 114.0,
+    "name": "EXTRA VIRGIN"
+   }
+  ],
+  "total_ltrs": 3979.4
  },
  "source": "primary",
  "year": 2026

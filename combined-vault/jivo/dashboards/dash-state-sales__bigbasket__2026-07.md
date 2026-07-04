@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "cities": [
   {
    "city": "Gurgaon",
-   "value": 222.0
-  },
-  {
-   "city": "Chandigarh Tricity",
-   "value": 78.0
+   "value": 464.0
   },
   {
    "city": "Hyderabad",
-   "value": 78.0
+   "value": 183.0
+  },
+  {
+   "city": "Chandigarh Tricity",
+   "value": 145.0
   },
   {
    "city": "Noida",
-   "value": 50.0
+   "value": 94.0
   },
   {
    "city": "Bangalore",
-   "value": 37.0
+   "value": 74.0
   },
   {
    "city": "Lucknow-Kanpur",
-   "value": 20.0
+   "value": 36.0
+  },
+  {
+   "city": "Noida Rural",
+   "value": 24.0
   },
   {
    "city": "Kolkata",
-   "value": 14.0
+   "value": 21.0
   },
   {
    "city": "Pune",
-   "value": 11.0
-  },
-  {
-   "city": "Hyderabad Rural",
-   "value": 7.0
+   "value": 20.0
   },
   {
    "city": "Vijayawada-Guntur",
-   "value": 7.0
+   "value": 13.0
   }
  ],
  "errors": [],
@@ -80,6 +80,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    "DRINKS",
    "ELEGANCE",
    "FERRERO",
+   "FIRST PRESSED",
    "FLIPPRO",
    "GHEE",
    "GIFT PACK",
@@ -238,6 +239,14 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
     "sub_category": "FERRERO"
    },
    {
+    "category": "FIRST PRESSED",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "FIRST PRESSED",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
+   },
+   {
     "category": "FLIPPRO",
     "sub_category": "FLIPPRO"
    },
@@ -272,10 +281,6 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    {
     "category": "MAKKI ATTA",
     "sub_category": "MAKKI ATTA"
-   },
-   {
-    "category": "MUSTARD",
-    "sub_category": "FIRST PRESSED MUSTARD"
    },
    {
     "category": "MUSTARD",
@@ -427,10 +432,6 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    },
    {
     "category": "SUNFLOWER",
-    "sub_category": "FIRST PRESSED SUNFLOWER"
-   },
-   {
-    "category": "SUNFLOWER",
     "sub_category": "SUNFLOWER"
    },
    {
@@ -439,8 +440,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    }
   ]
  },
- "mapped_units": 555.0,
- "mapped_value": 555.0,
+ "mapped_units": 1150.0,
+ "mapped_value": 1150.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -451,75 +452,83 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "states": [
   {
    "by_platform": {
-    "BIG BASKET": 222.0
+    "BIG BASKET": 464.0
    },
    "state": "HARYANA",
-   "units": 222.0,
-   "value": 222.0
+   "units": 464.0,
+   "value": 464.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 85.0
+    "BIG BASKET": 192.0
    },
    "state": "TELANGANA",
-   "units": 85.0,
-   "value": 85.0
+   "units": 192.0,
+   "value": 192.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 79.0
+    "BIG BASKET": 172.0
    },
    "state": "UTTAR PRADESH",
-   "units": 79.0,
-   "value": 79.0
+   "units": 172.0,
+   "value": 172.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 78.0
+    "BIG BASKET": 145.0
    },
    "state": "CHANDIGARH",
-   "units": 78.0,
-   "value": 78.0
+   "units": 145.0,
+   "value": 145.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 38.0
+    "BIG BASKET": 82.0
    },
    "state": "KARNATAKA",
-   "units": 38.0,
-   "value": 38.0
+   "units": 82.0,
+   "value": 82.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 15.0
+    "BIG BASKET": 35.0
    },
    "state": "MAHARASHTRA",
-   "units": 15.0,
-   "value": 15.0
+   "units": 35.0,
+   "value": 35.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 14.0
-   },
-   "state": "WEST BENGAL",
-   "units": 14.0,
-   "value": 14.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 13.0
+    "BIG BASKET": 22.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 13.0,
-   "value": 13.0
+   "units": 22.0,
+   "value": 22.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 5.0
+    "BIG BASKET": 21.0
+   },
+   "state": "WEST BENGAL",
+   "units": 21.0,
+   "value": 21.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 7.0
    },
    "state": "UTTARAKHAND",
-   "units": 5.0,
-   "value": 5.0
+   "units": 7.0,
+   "value": 7.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 3.0
+   },
+   "state": "CHHATTISGARH",
+   "units": 3.0,
+   "value": 3.0
   },
   {
    "by_platform": {
@@ -531,40 +540,32 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   },
   {
    "by_platform": {
+    "BIG BASKET": 2.0
+   },
+   "state": "JHARKHAND",
+   "units": 2.0,
+   "value": 2.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 2.0
+   },
+   "state": "ODISHA",
+   "units": 2.0,
+   "value": 2.0
+  },
+  {
+   "by_platform": {
     "BIG BASKET": 1.0
    },
    "state": "BIHAR",
    "units": 1.0,
    "value": 1.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 1.0
-   },
-   "state": "CHHATTISGARH",
-   "units": 1.0,
-   "value": 1.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 1.0
-   },
-   "state": "JHARKHAND",
-   "units": 1.0,
-   "value": 1.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 1.0
-   },
-   "state": "ODISHA",
-   "units": 1.0,
-   "value": 1.0
   }
  ],
  "sub_categories": [],
- "total_units": 555.0,
- "total_value": 555.0,
+ "total_units": 1150.0,
+ "total_value": 1150.0,
  "year": 2026
 }
 ```

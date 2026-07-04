@@ -22,8 +22,8 @@ tags:
 - **click_action_url:** /gate/visitor-labour
 - **reference_type:** person_entry
 - **reference_id:** 224
-- **is_read:** False
-- **read_at:** None
+- **is_read:** True
+- **read_at:** 2026-07-03T14:39:38.046862+05:30
 - **extra_data:**
   ```json
   {"name": "Aziz 9813790770", "status": "OUT", "gate_in": "Front gate", "gate_out": "Front gate", "vehicle_no": "", "person_type": "visitor", "reference_id": "224", "reference_type": "person_entry"}

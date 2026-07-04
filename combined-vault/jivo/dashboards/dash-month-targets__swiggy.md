@@ -20,6 +20,48 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
 {
  "data": [
   {
+   "achieved_pct": 0.12,
+   "created_at": "2026-07-03T07:44:25.819890+00:00",
+   "date": "2026-07-02",
+   "done_ltrs": 11995.0,
+   "done_value": 3107035.0,
+   "est_ltr": 185922.5,
+   "est_ltr_pct": 1.8592,
+   "est_value": 48159042.5,
+   "format": "SWIGGY",
+   "growth": 92025.5,
+   "growth_pct": 0.9801,
+   "id": 53,
+   "item_head": "COMMODITY",
+   "last_month": 93897.0,
+   "month": 7,
+   "targets": 100000.0,
+   "type": "B2B",
+   "updated_at": "2026-07-03T12:44:23.464366+00:00",
+   "year": 2026
+  },
+  {
+   "achieved_pct": 0.0586,
+   "created_at": "2026-07-03T07:43:49.387385+00:00",
+   "date": "2026-07-02",
+   "done_ltrs": 8785.5,
+   "done_value": 5527892.0,
+   "est_ltr": 136175.25,
+   "est_ltr_pct": 0.9078,
+   "est_value": 85682326.0,
+   "format": "SWIGGY",
+   "growth": 39508.75,
+   "growth_pct": 0.4087,
+   "id": 52,
+   "item_head": "PREMIUM",
+   "last_month": 96666.5,
+   "month": 7,
+   "targets": 150000.0,
+   "type": "B2B",
+   "updated_at": "2026-07-03T12:44:23.464366+00:00",
+   "year": 2026
+  },
+  {
    "achieved_pct": 1.1737,
    "created_at": "2026-06-04T07:46:28.646874+00:00",
    "date": "2026-06-30",
@@ -37,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "month": 6,
    "targets": 80000.0,
    "type": "B2B",
-   "updated_at": "2026-07-02T06:12:32.680166+00:00",
+   "updated_at": "2026-07-03T07:42:45.736651+00:00",
    "year": 2026
   },
   {
@@ -58,7 +100,7 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "month": 6,
    "targets": 60000.0,
    "type": "B2B",
-   "updated_at": "2026-07-02T06:12:32.680166+00:00",
+   "updated_at": "2026-07-03T07:42:45.736651+00:00",
    "year": 2026
   },
   {

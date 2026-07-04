@@ -22,7 +22,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
  "brands": [],
  "categories": [],
  "cities": [],
- "errors": [],
+ "errors": [
+  {
+   "error": "column a.state does not exist\nLINE 2:             SELECT COALESCE(a.state::text, '') AS state,\n                                    ^",
+   "source": "amazon_sec_state"
+  }
+ ],
  "filter_options": {
   "brands": [
    "JIVO",
@@ -39,6 +44,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    "DRINKS",
    "ELEGANCE",
    "FERRERO",
+   "FIRST PRESSED",
    "FLIPPRO",
    "GHEE",
    "GIFT PACK",
@@ -197,6 +203,14 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
     "sub_category": "FERRERO"
    },
    {
+    "category": "FIRST PRESSED",
+    "sub_category": "FIRST PRESSED MUSTARD"
+   },
+   {
+    "category": "FIRST PRESSED",
+    "sub_category": "FIRST PRESSED SUNFLOWER"
+   },
+   {
     "category": "FLIPPRO",
     "sub_category": "FLIPPRO"
    },
@@ -231,10 +245,6 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "category": "MAKKI ATTA",
     "sub_category": "MAKKI ATTA"
-   },
-   {
-    "category": "MUSTARD",
-    "sub_category": "FIRST PRESSED MUSTARD"
    },
    {
     "category": "MUSTARD",
@@ -383,10 +393,6 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "category": "SPICES",
     "sub_category": "SAFFRON"
-   },
-   {
-    "category": "SUNFLOWER",
-    "sub_category": "FIRST PRESSED SUNFLOWER"
    },
    {
     "category": "SUNFLOWER",

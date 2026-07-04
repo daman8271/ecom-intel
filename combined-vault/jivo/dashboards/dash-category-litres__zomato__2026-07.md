@@ -19,12 +19,17 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
 
 ```json
 {
- "categories": [],
+ "categories": [
+  {
+   "category": "OLIVE",
+   "ltrs": 623.0
+  }
+ ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "zomato",
- "total_ltrs": 0,
+ "total_ltrs": 623.0,
  "year": 2026
 }
 ```

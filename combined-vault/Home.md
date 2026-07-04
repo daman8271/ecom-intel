@@ -35,19 +35,19 @@ Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with eco
 - [[Category - BLENDED]] — 5 products
 - [[Category - CANOLA]] — 17 products
 - [[Category - COCONUT]] — 3 products
-- [[Category - DRINKS]] — 23 products
+- [[Category - COFFEE]] — 1 products
+- [[Category - DRINKS]] — 22 products
 - [[Category - GHEE]] — 4 products
 - [[Category - GROUNDNUT]] — 3 products
 - [[Category - HONEY]] — 2 products
 - [[Category - MUSTARD]] — 11 products
 - [[Category - OLIVE]] — 29 products
-- [[Category - OTHER]] — 5 products
-- [[Category - RICE]] — 1 products
+- [[Category - OTHER]] — 6 products
 - [[Category - RICE BRAN]] — 4 products
-- [[Category - SEEDS]] — 18 products
+- [[Category - SEEDS]] — 19 products
 - [[Category - SESAME OIL]] — 2 products
 - [[Category - SOYABEAN]] — 6 products
-- [[Category - SPICES]] — 10 products
+- [[Category - SPICES]] — 9 products
 - [[Category - SUNFLOWER]] — 8 products
 
 ## Products
@@ -223,7 +223,7 @@ JIVO SKUs the bridge could **not** map to an ecom listing (9 total) — no produ
 - [[SESSION-MEMORY]] — JIVO vault session / handoff memory
 
 ## Factory pillar — Jivo Mart (JIVO_MART)
-The 4th data pillar: a lossless capture of the `ji.jivo.in` factory app for **Jivo Mart** — gate, vehicles, quality control, GRPO, barcode traceability, dispatch, and SAP item master (61,425 notes). Bridged to products above by SAP item code (FG####) — see each product's **Factory lens**.
+The 4th data pillar: a lossless capture of the `ji.jivo.in` factory app for **Jivo Mart** — gate, vehicles, quality control, GRPO, barcode traceability, dispatch, and SAP item master (63,603 notes). Bridged to products above by SAP item code (FG####) — see each product's **Factory lens**.
 
 - [[factory/_HOME|Factory — Home (Jivo Mart)]]
 

@@ -19,12 +19,29 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
 
 ```json
 {
- "categories": [],
+ "categories": [
+  {
+   "category": "GROUNDNUT",
+   "ltrs": 7644.0
+  },
+  {
+   "category": "OLIVE",
+   "ltrs": 1048.0
+  },
+  {
+   "category": "CANOLA",
+   "ltrs": 228.0
+  },
+  {
+   "category": "BLENDED",
+   "ltrs": 16.0
+  }
+ ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "swiggy",
- "total_ltrs": 0,
+ "total_ltrs": 8936.0,
  "year": 2026
 }
 ```

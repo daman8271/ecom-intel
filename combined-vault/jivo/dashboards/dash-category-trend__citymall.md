@@ -63,11 +63,11 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 9044.0,
+   "commodity_ltrs": 19096.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 100.0,
-   "total_ltrs": 9144.0,
+   "premium_ltrs": 200.0,
+   "total_ltrs": 19296.0,
    "year": 2026
   }
  ],

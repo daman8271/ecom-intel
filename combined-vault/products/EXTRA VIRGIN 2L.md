@@ -29,17 +29,20 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000155` |
 | canonical_sku(s) | `jivo-extra-virgin-olive-oil-2-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-2l`, `edog2nmphjzh6gjc` |
 | Category | [[Category - OLIVE\|OLIVE]] |
+| Sub-category | EXTRA VIRGIN |
+| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 2L |
+| Per-unit | 2.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1589 | 1359 | -14.47 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 1589 | 992 | -37.57 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 1589 | 1359 | -14.47 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 1589 | 992 | -37.57 | 🟢 BELOW | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

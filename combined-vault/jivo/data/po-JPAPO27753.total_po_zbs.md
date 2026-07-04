@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1428.57,0.0,SWIGGY,,,59221,1499.9985,JAIPUR,3.0,2025-12-23,2026-01-06,JPAPO27753,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:59221,2026-07-03
-196.19,0.0,SWIGGY,,,59222,205.9995,JAIPUR,4.0,2025-12-23,2026-01-06,JPAPO27753,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:59222,2026-07-03
-138.1,0.0,SWIGGY,,,59223,145.00475,JAIPUR,160.0,2025-12-23,2026-01-06,JPAPO27753,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:59223,2026-07-03
+1428.57,0.0,SWIGGY,,,59221,1499.9985,JAIPUR,3.0,2025-12-23,2026-01-06,JPAPO27753,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:59221,2026-07-04
+196.19,0.0,SWIGGY,,,59222,205.9995,JAIPUR,4.0,2025-12-23,2026-01-06,JPAPO27753,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:59222,2026-07-04
+138.1,0.0,SWIGGY,,,59223,145.00475,JAIPUR,160.0,2025-12-23,2026-01-06,JPAPO27753,,429981,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr,EXPIRED,JIVO MART PRIVATE LIMITED,2026-06-27,total_po_zbs:59223,2026-07-04
 ```
 
 ---

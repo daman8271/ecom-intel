@@ -22,16 +22,20 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 7588.0,
+    "ltrs": 15568.0,
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 1096.0,
+    "ltrs": 2588.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 320.0,
+    "ltrs": 820.0,
     "name": "RICE BRAN"
+   },
+   {
+    "ltrs": 80.0,
+    "name": "SUNFLOWER"
    },
    {
     "ltrs": 40.0,
@@ -40,23 +44,27 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
   ],
   "sub_categories": [
    {
-    "ltrs": 7588.0,
+    "ltrs": 15568.0,
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 1096.0,
+    "ltrs": 2588.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 320.0,
+    "ltrs": 820.0,
     "name": "RICE BRAN"
+   },
+   {
+    "ltrs": 80.0,
+    "name": "SUNFLOWER"
    },
    {
     "ltrs": 40.0,
     "name": "GOLD"
    }
   ],
-  "total_ltrs": 9044.0
+  "total_ltrs": 19096.0
  },
  "errors": [],
  "month": 7,
@@ -64,25 +72,25 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-citymall]]
  "premium": {
   "categories": [
    {
-    "ltrs": 80.0,
+    "ltrs": 160.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 20.0,
+    "ltrs": 40.0,
     "name": "CANOLA"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 80.0,
+    "ltrs": 160.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 20.0,
+    "ltrs": 40.0,
     "name": "CANOLA"
    }
   ],
-  "total_ltrs": 100.0
+  "total_ltrs": 200.0
  },
  "source": "primary",
  "year": 2026

@@ -39,13 +39,13 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 3939 | 3399 | -13.71 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 3939 | 2879 | -26.91 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - zepto\|zepto]] | 3939 | 7999 | 103.07 | 🔴 ABOVE | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 3939 | 3154 | -19.93 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 3939 | 3043 | -22.75 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - zepto\|zepto]] | 3939 | 7999 | 103.07 | 🔴 ABOVE | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

@@ -33,7 +33,7 @@ Up: [[dashboards-index]] · [[2026-05]]
   },
   {
    "category": "MUSTARD",
-   "ltrs": 6160.0
+   "ltrs": 6175.0
   },
   {
    "category": "BLENDED",
@@ -52,7 +52,7 @@ Up: [[dashboards-index]] · [[2026-05]]
  "head": "premium",
  "month": 5,
  "platform": null,
- "total_ltrs": 489949.65,
+ "total_ltrs": 489964.65,
  "year": 2026
 }
 ```

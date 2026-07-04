@@ -84,7 +84,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 5196.0,
+    "ltrs": 5211.0,
     "name": "MUSTARD"
    },
    {
@@ -118,7 +118,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "EXTRA LIGHT"
    },
    {
-    "ltrs": 5196.0,
+    "ltrs": 5211.0,
     "name": "YELLOW MUSTARD"
    },
    {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SESAME OIL"
    }
   ],
-  "total_ltrs": 174398.5
+  "total_ltrs": 174413.5
  },
  "source": "primary",
  "year": 2026

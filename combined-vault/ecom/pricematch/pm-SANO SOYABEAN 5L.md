@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-03
-observations: 200
+last_seen: 2026-07-04
+observations: 208
 latest_status: NOT_LISTED
-below_days: 4
+below_days: 5
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-03) — ref ₹899 vs live ₹-
-- **Days below reference:** 4 of 25
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-04) — ref ₹899 vs live ₹-
+- **Days below reference:** 5 of 26
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]]
 
-## Ref-vs-live history (200 observations)
+## Ref-vs-live history (208 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -245,6 +245,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-03,flipkart,NOT_LISTED,SVD,899,,,,,,0,false
 2026-07-03,flipkart-minutes,NOT_LISTED,SVD,899,,,,,,0,false
 2026-07-03,zepto,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-04,amazon,BELOW,SVD,899,839,839,839,-60,-6.67,1,true
+2026-07-04,amazon-fresh,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-04,amazon-now,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-04,bigbasket,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-04,blinkit,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-04,flipkart,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-04,flipkart-minutes,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-04,zepto,NOT_LISTED,SVD,899,,,,,,0,false
 ```
 
 ---

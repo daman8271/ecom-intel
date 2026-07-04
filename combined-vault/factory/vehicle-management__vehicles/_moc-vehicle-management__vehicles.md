@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Vehicle (368)
+title: Vehicle (371)
 tags:
   - moc
   - source/factory
 ---
 
-# Vehicle — 368 records
+# Vehicle — 371 records
 
 From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 
@@ -139,6 +139,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-186]] — GJ12BV9221
 - [[veh-330]] — GJ12BV9421
 - [[veh-371]] — GJ12BV9556
+- [[veh-376]] — GJ12BW3510
 - [[veh-86]] — GJ12BX1999
 - [[veh-179]] — GJ12BX2999
 - [[veh-307]] — GJ12BX3999
@@ -227,6 +228,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-268]] — HR63G3533
 - [[veh-242]] — HR65B0175
 - [[veh-226]] — HR65D1401
+- [[veh-375]] — HR67B9919
 - [[veh-283]] — HR67C1036
 - [[veh-134]] — HR67C1357
 - [[veh-203]] — HR67C3102
@@ -352,6 +354,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-185]] — RJ14GQ1756
 - [[veh-110]] — RJ14GQ8986
 - [[veh-336]] — RJ18GC8499
+- [[veh-374]] — RJ27GE3204
 - [[veh-340]] — RJ32GD2788
 - [[veh-182]] — RJ47GA1756
 - [[veh-178]] — RJ47GA1956

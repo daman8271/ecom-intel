@@ -29,19 +29,17 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000367` |
 | canonical_sku(s) | `jivo-pure-kashmiri-saffron-a-grade-kesar-rich-in-antioxidants-boosts-immunity-skin-glow-overall-wellness-1ml`, `scmhg4hdys45ycaz` |
 | Category | [[Category - SPICES\|SPICES]] |
-| Sub-category | SAFFRON |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 1GMS |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 499 | — | — | ⚪ OOS | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 499 | — | — | ⚪ OOS | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 499 | — | — | ⚪ OOS | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 499 | — | — | ⚪ OOS | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

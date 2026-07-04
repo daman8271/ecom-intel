@@ -20,6 +20,10 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
 {
  "available_dates": [
   {
+   "date": "2026-07-03",
+   "rows": 347
+  },
+  {
    "date": "2026-07-02",
    "rows": 348
   },
@@ -134,76 +138,72 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "date": "2026-05-30",
    "rows": 358
-  },
-  {
-   "date": "2026-05-29",
-   "rows": 34
   }
  ],
  "dashboard_title": "BigBasket SOH/DOH Dashboard",
  "defaulted_to_latest": true,
- "effective_date": "2026-07-02",
- "elapsed_day": 1,
+ "effective_date": "2026-07-03",
+ "elapsed_day": 2,
  "format": "BIG BASKET",
- "max_sales_date": "2026-07-01",
+ "max_sales_date": "2026-07-02",
  "month_start": "2026-07-01",
  "platform": "bigbasket",
- "requested_date": "2026-07-02",
+ "requested_date": "2026-07-03",
  "rows": [
   {
-   "doh": 18.195652173913043,
-   "drr_ltr": 46.0,
-   "drr_units": 46.0,
+   "doh": 19.43820224719101,
+   "drr_ltr": 44.5,
+   "drr_units": 44.5,
    "inventory_item": "CANOLA 1L",
    "item": "CANOLA 1L",
-   "ltr_sold": 46.0,
-   "quantity": 46.0,
-   "soh_ltr": 837.0,
-   "soh_units": 837.0
+   "ltr_sold": 89.0,
+   "quantity": 89.0,
+   "soh_ltr": 865.0,
+   "soh_units": 865.0
   },
   {
-   "doh": 0.0,
-   "drr_ltr": 0.0,
-   "drr_units": 0.0,
+   "doh": 113.0,
+   "drr_ltr": 1.0,
+   "drr_units": 1.0,
    "inventory_item": "CANOLA 1L POUCH",
    "item": "CANOLA 1L POUCH",
-   "ltr_sold": 0.0,
-   "quantity": 0.0,
-   "soh_ltr": 115.0,
-   "soh_units": 115.0
+   "ltr_sold": 2.0,
+   "quantity": 2.0,
+   "soh_ltr": 113.0,
+   "soh_units": 113.0
   },
   {
-   "doh": 141.6,
-   "drr_ltr": 25.0,
-   "drr_units": 5.0,
+   "doh": 284.0,
+   "drr_ltr": 12.5,
+   "drr_units": 2.5,
    "inventory_item": "CANOLA 5L",
    "item": "CANOLA 5L",
    "ltr_sold": 25.0,
    "quantity": 5.0,
-   "soh_ltr": 3540.0,
-   "soh_units": 708.0
+   "soh_ltr": 3550.0,
+   "soh_units": 710.0
   },
   {
-   "doh": 87.16666666666667,
-   "drr_ltr": 12.0,
-   "drr_units": 12.0,
+   "doh": 80.76923076923077,
+   "drr_ltr": 13.0,
+   "drr_units": 13.0,
    "inventory_item": "EXTRA LIGHT 1L",
    "item": "EXTRA LIGHT 1L",
-   "ltr_sold": 12.0,
-   "quantity": 12.0,
-   "soh_ltr": 1046.0,
-   "soh_units": 1046.0
+   "ltr_sold": 26.0,
+   "quantity": 26.0,
+   "soh_ltr": 1050.0,
+   "soh_units": 1050.0
   },
   {
-   "doh": 76.66666666666667,
-   "drr_ltr": 12.0,
-   "drr_units": 6.0,
+   "doh": 70.15384615384616,
+   "drr_ltr": 13.0,
+   "drr_units": 6.5,
    "inventory_item": "EXTRA LIGHT 2L",
    "item": "EXTRA LIGHT 2L",
-   "ltr_sold": 12.0,
-   "quantity": 6.0,
-   "soh_ltr": 920.0,
-   "soh_units": 460.0
+   "ltr_sold": 26.0,
+   "quantity": 13.0,
+   "soh_ltr": 912.0,
+   "soh_units": 456.0
   },
   {
    "doh": 0.0,
@@ -217,9 +217,9 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "soh_units": 124.0
   },
   {
-   "doh": 250.0,
-   "drr_ltr": 1.0,
-   "drr_units": 1.0,
+   "doh": 500.0,
+   "drr_ltr": 0.5,
+   "drr_units": 0.5,
    "inventory_item": "EXTRA VIRGIN 1L",
    "item": "EXTRA VIRGIN 1L",
    "ltr_sold": 1.0,
@@ -239,26 +239,26 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "soh_units": 114.0
   },
   {
-   "doh": 28.444444444444443,
-   "drr_ltr": 27.0,
-   "drr_units": 27.0,
+   "doh": 32.59574468085106,
+   "drr_ltr": 23.5,
+   "drr_units": 23.5,
    "inventory_item": "JIVO POMACE 1L",
    "item": "JIVO POMACE 1L",
-   "ltr_sold": 27.0,
-   "quantity": 27.0,
-   "soh_ltr": 768.0,
-   "soh_units": 768.0
+   "ltr_sold": 47.0,
+   "quantity": 47.0,
+   "soh_ltr": 766.0,
+   "soh_units": 766.0
   },
   {
-   "doh": 165.0,
-   "drr_ltr": 2.0,
-   "drr_units": 1.0,
+   "doh": 106.66666666666667,
+   "drr_ltr": 3.0,
+   "drr_units": 1.5,
    "inventory_item": "JIVO POMACE 2L",
    "item": "JIVO POMACE 2L",
-   "ltr_sold": 2.0,
-   "quantity": 1.0,
-   "soh_ltr": 330.0,
-   "soh_units": 165.0
+   "ltr_sold": 6.0,
+   "quantity": 3.0,
+   "soh_ltr": 320.0,
+   "soh_units": 160.0
   },
   {
    "doh": 0.0,
@@ -272,37 +272,37 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "soh_units": 108.0
   },
   {
-   "doh": 0.0,
+   "doh": 76.0,
    "drr_ltr": 0.0,
-   "drr_units": 0.0,
+   "drr_units": 1.0,
    "inventory_item": "LEMON 750ML",
    "item": "LEMON 750ML",
    "ltr_sold": 0.0,
-   "quantity": 0.0,
+   "quantity": 2.0,
    "soh_ltr": 0.0,
-   "soh_units": 78.0
+   "soh_units": 76.0
   },
   {
-   "doh": 5.034090909090909,
-   "drr_ltr": 88.0,
-   "drr_units": 88.0,
+   "doh": 2.8275862068965516,
+   "drr_ltr": 101.5,
+   "drr_units": 101.5,
    "inventory_item": "MUSTARD 1L",
    "item": "MUSTARD 1L",
-   "ltr_sold": 88.0,
-   "quantity": 88.0,
-   "soh_ltr": 443.0,
-   "soh_units": 443.0
+   "ltr_sold": 203.0,
+   "quantity": 203.0,
+   "soh_ltr": 287.0,
+   "soh_units": 287.0
   },
   {
-   "doh": 118.8,
-   "drr_ltr": 25.0,
-   "drr_units": 5.0,
+   "doh": 73.375,
+   "drr_ltr": 40.0,
+   "drr_units": 8.0,
    "inventory_item": "MUSTARD 5L",
    "item": "MUSTARD 5L",
-   "ltr_sold": 25.0,
-   "quantity": 5.0,
-   "soh_ltr": 2970.0,
-   "soh_units": 594.0
+   "ltr_sold": 80.0,
+   "quantity": 16.0,
+   "soh_ltr": 2935.0,
+   "soh_units": 587.0
   },
   {
    "doh": 0.0,
@@ -323,8 +323,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "item": "SOYABEAN 5L",
    "ltr_sold": 0.0,
    "quantity": 0.0,
-   "soh_ltr": 1290.0,
-   "soh_units": 258.0
+   "soh_ltr": 1295.0,
+   "soh_units": 259.0
   },
   {
    "doh": 0.0,
@@ -338,59 +338,59 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "soh_units": 3.0
   },
   {
-   "doh": 15.015873015873016,
-   "drr_ltr": 315.0,
-   "drr_units": 315.0,
+   "doh": 13.64319248826291,
+   "drr_ltr": 319.5,
+   "drr_units": 319.5,
    "inventory_item": "SUNFLOWER 1L",
    "item": "SUNFLOWER 1L",
-   "ltr_sold": 315.0,
-   "quantity": 315.0,
-   "soh_ltr": 4730.0,
-   "soh_units": 4730.0
+   "ltr_sold": 639.0,
+   "quantity": 639.0,
+   "soh_ltr": 4359.0,
+   "soh_units": 4359.0
   },
   {
-   "doh": 24.818181818181817,
-   "drr_ltr": 220.0,
-   "drr_units": 44.0,
+   "doh": 22.64516129032258,
+   "drr_ltr": 232.5,
+   "drr_units": 46.5,
    "inventory_item": "SUNFLOWER 5L",
    "item": "SUNFLOWER 5L",
-   "ltr_sold": 220.0,
-   "quantity": 44.0,
-   "soh_ltr": 5460.0,
-   "soh_units": 1092.0
+   "ltr_sold": 465.0,
+   "quantity": 93.0,
+   "soh_ltr": 5265.0,
+   "soh_units": 1053.0
   },
   {
-   "doh": 0.0,
+   "doh": 576.0,
    "drr_ltr": 0.0,
-   "drr_units": 0.0,
+   "drr_units": 0.5,
    "inventory_item": "TONIC WATER 200ML",
    "item": "TONIC WATER 200ML",
    "ltr_sold": 0.0,
-   "quantity": 0.0,
+   "quantity": 1.0,
    "soh_ltr": 0.0,
-   "soh_units": 289.0
+   "soh_units": 288.0
   },
   {
-   "doh": 98.0,
+   "doh": 97.0,
    "drr_ltr": 0.0,
    "drr_units": 1.0,
    "inventory_item": "WATER PEACH 750ML",
    "item": "WATER PEACH 750ML",
    "ltr_sold": 0.0,
-   "quantity": 1.0,
+   "quantity": 2.0,
    "soh_ltr": 0.0,
-   "soh_units": 98.0
+   "soh_units": 97.0
   },
   {
-   "doh": 225.0,
+   "doh": 452.0,
    "drr_ltr": 0.0,
-   "drr_units": 1.0,
+   "drr_units": 0.5,
    "inventory_item": "WG APPLE JUICE 200ML",
    "item": "WG APPLE JUICE 200ML",
    "ltr_sold": 0.0,
    "quantity": 1.0,
    "soh_ltr": 0.0,
-   "soh_units": 225.0
+   "soh_units": 226.0
   },
   {
    "doh": 0.0,
@@ -415,20 +415,20 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "soh_units": 63.0
   },
   {
-   "doh": 46.5,
+   "doh": 36.0,
    "drr_ltr": 0.0,
-   "drr_units": 2.0,
+   "drr_units": 2.5,
    "inventory_item": "WG GINGER ALE 200ML",
    "item": "WG GINGER ALE 200ML",
    "ltr_sold": 0.0,
-   "quantity": 2.0,
+   "quantity": 5.0,
    "soh_ltr": 0.0,
-   "soh_units": 93.0
+   "soh_units": 90.0
   },
   {
-   "doh": 149.0,
+   "doh": 298.0,
    "drr_ltr": 0.0,
-   "drr_units": 1.0,
+   "drr_units": 0.5,
    "inventory_item": "WG MANGO JUICE 200ML",
    "item": "WG MANGO JUICE 200ML",
    "ltr_sold": 0.0,
@@ -448,15 +448,15 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "soh_units": 11.0
   },
   {
-   "doh": 0.0,
+   "doh": 264.0,
    "drr_ltr": 0.0,
-   "drr_units": 0.0,
+   "drr_units": 0.5,
    "inventory_item": "WG MOJITO 200ML",
    "item": "WG MOJITO 200ML",
    "ltr_sold": 0.0,
-   "quantity": 0.0,
+   "quantity": 1.0,
    "soh_ltr": 0.0,
-   "soh_units": 133.0
+   "soh_units": 132.0
   },
   {
    "doh": 0.0,
@@ -481,19 +481,19 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "soh_units": 141.0
   }
  ],
- "sales_max_date": "2026-07-01",
+ "sales_max_date": "2026-07-02",
  "source": {
   "inventory": "all_platform_inventory",
   "sales": "SecMaster"
  },
  "total": {
-  "doh": 24.15135135135135,
-  "drr_ltr": 773.0,
-  "drr_units": 555.0,
-  "ltr_sold": 773.0,
-  "quantity": 555.0,
-  "soh_ltr": 24713.0,
-  "soh_units": 13404.0
+  "doh": 22.340869565217393,
+  "drr_ltr": 804.5,
+  "drr_units": 575.0,
+  "ltr_sold": 1609.0,
+  "quantity": 1150.0,
+  "soh_ltr": 23981.0,
+  "soh_units": 12846.0
  }
 }
 ```

@@ -20,6 +20,48 @@ Up: [[dashboards-index]] · [[pf-amazon]]
 {
  "data": [
   {
+   "achieved_pct": 0.032,
+   "created_at": "2026-07-03T07:46:14.421963+00:00",
+   "date": "2026-07-01",
+   "done_ltrs": 5761.0,
+   "done_value": 982093.15,
+   "est_ltr": 178591.0,
+   "est_ltr_pct": 0.9922,
+   "est_value": 30444887.59,
+   "format": "AMAZON",
+   "growth": 49452.0,
+   "growth_pct": 0.3829,
+   "id": 58,
+   "item_head": "COMMODITY",
+   "last_month": 129139.0,
+   "month": 7,
+   "targets": 180000.0,
+   "type": "B2C",
+   "updated_at": "2026-07-03T12:44:28.013871+00:00",
+   "year": 2026
+  },
+  {
+   "achieved_pct": 0.0269,
+   "created_at": "2026-07-03T07:45:44.041906+00:00",
+   "date": "2026-07-01",
+   "done_ltrs": 5378.1,
+   "done_value": 1439266.41,
+   "est_ltr": 166721.1,
+   "est_ltr_pct": 0.8336,
+   "est_value": 44617258.57,
+   "format": "AMAZON",
+   "growth": 45672.7,
+   "growth_pct": 0.3773,
+   "id": 56,
+   "item_head": "PREMIUM",
+   "last_month": 121048.4,
+   "month": 7,
+   "targets": 200000.0,
+   "type": "B2C",
+   "updated_at": "2026-07-03T12:44:28.013871+00:00",
+   "year": 2026
+  },
+  {
    "achieved_pct": 0.7174,
    "created_at": "2026-06-04T07:43:27.255263+00:00",
    "date": "2026-06-30",
@@ -37,7 +79,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "month": 6,
    "targets": 180000.0,
    "type": "B2C",
-   "updated_at": "2026-07-02T06:12:32.680166+00:00",
+   "updated_at": "2026-07-03T07:42:45.736651+00:00",
    "year": 2026
   },
   {
@@ -58,7 +100,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "month": 6,
    "targets": 160000.0,
    "type": "B2C",
-   "updated_at": "2026-07-02T06:12:32.680166+00:00",
+   "updated_at": "2026-07-03T07:42:45.736651+00:00",
    "year": 2026
   },
   {

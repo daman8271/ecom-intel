@@ -1013,7 +1013,7 @@
         "jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml",
         "scmh3fhauzysnuab"
       ],
-      "category": "SPICES",
+      "category": "SEEDS",
       "name": "CUMIN SEEDS 100G",
       "norm": "CUMINSEEDS100G",
       "saps": [
@@ -1027,7 +1027,7 @@
         "jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na",
         "ricge89buedda5u7"
       ],
-      "category": "RICE",
+      "category": "OTHER",
       "name": "RICE 1KG",
       "norm": "RICE1KG",
       "saps": [
@@ -1379,7 +1379,7 @@
         "jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-coffee-powder-easy-to-prepare-with-rich-aroma-and-taste-coffee-for-daily-use-100ml",
         "cfegmj5gje7hd3dq"
       ],
-      "category": "DRINKS",
+      "category": "COFFEE",
       "name": "COFFEE",
       "norm": "COFFEE",
       "saps": [
@@ -2198,5 +2198,5 @@
   },
   "next_serial": 152,
   "prefix": "JID-",
-  "updated_at": "2026-07-03T01:29:01.866088+00:00"
+  "updated_at": "2026-07-04T06:37:55.332795+00:00"
 }

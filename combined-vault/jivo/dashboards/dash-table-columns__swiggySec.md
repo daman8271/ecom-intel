@@ -39,10 +39,10 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "tarabai park",
+  "AREA_NAME": "hsr",
   "BASE_MRP": 225.0,
   "BRAND": "jivo",
-  "CITY": "Kolhapur",
+  "CITY": "Bangalore",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
   "COMBO_UNITS_SOLD": null,
@@ -50,13 +50,13 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "ITEM_CODE": "429981",
   "L1_CATEGORY": "edible oils and ghee",
   "L2_CATEGORY": "edible oils",
-  "L3_CATEGORY": "sunflower oil",
-  "ORDERED_DATE": "2025-12-03",
+  "L3_CATEGORY": "blended oil",
+  "ORDERED_DATE": "2026-04-30",
   "PRODUCT_NAME": "jivo gold refined oil - blend of rice bran oil & sunflower oil",
-  "STORE_ID": "1403724",
+  "STORE_ID": "1386090",
   "UNITS_SOLD": 2,
   "VARIANT": "1 ltr",
-  "id": 73102
+  "id": 1312194
  }
 }
 ```

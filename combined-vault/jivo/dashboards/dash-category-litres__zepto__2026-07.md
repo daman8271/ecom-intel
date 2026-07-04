@@ -19,12 +19,21 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
 
 ```json
 {
- "categories": [],
+ "categories": [
+  {
+   "category": "OLIVE",
+   "ltrs": 2528.0
+  },
+  {
+   "category": "GROUNDNUT",
+   "ltrs": 1451.4
+  }
+ ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "zepto",
- "total_ltrs": 0,
+ "total_ltrs": 3979.4,
  "year": 2026
 }
 ```

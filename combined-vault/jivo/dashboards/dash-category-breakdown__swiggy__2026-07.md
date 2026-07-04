@@ -20,17 +20,93 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
 ```json
 {
  "commodity": {
-  "categories": [],
-  "sub_categories": [],
-  "total_ltrs": 0
+  "categories": [
+   {
+    "ltrs": 4020.0,
+    "name": "MUSTARD"
+   },
+   {
+    "ltrs": 3339.0,
+    "name": "SUNFLOWER"
+   },
+   {
+    "ltrs": 540.0,
+    "name": "BLENDED"
+   },
+   {
+    "ltrs": 100.0,
+    "name": "RICE BRAN"
+   }
+  ],
+  "sub_categories": [
+   {
+    "ltrs": 4020.0,
+    "name": "MUSTARD KACCHI GHANI"
+   },
+   {
+    "ltrs": 3339.0,
+    "name": "SUNFLOWER"
+   },
+   {
+    "ltrs": 540.0,
+    "name": "GOLD"
+   },
+   {
+    "ltrs": 100.0,
+    "name": "RICE BRAN"
+   }
+  ],
+  "total_ltrs": 7999.0
  },
  "errors": [],
  "month": 7,
  "platform": "swiggy",
  "premium": {
-  "categories": [],
-  "sub_categories": [],
-  "total_ltrs": 0
+  "categories": [
+   {
+    "ltrs": 7644.0,
+    "name": "GROUNDNUT"
+   },
+   {
+    "ltrs": 1048.0,
+    "name": "OLIVE"
+   },
+   {
+    "ltrs": 228.0,
+    "name": "CANOLA"
+   },
+   {
+    "ltrs": 16.0,
+    "name": "BLENDED"
+   }
+  ],
+  "sub_categories": [
+   {
+    "ltrs": 7644.0,
+    "name": "GROUNDNUT"
+   },
+   {
+    "ltrs": 512.0,
+    "name": "EXTRA LIGHT"
+   },
+   {
+    "ltrs": 380.0,
+    "name": "JIVO POMACE"
+   },
+   {
+    "ltrs": 228.0,
+    "name": "CANOLA"
+   },
+   {
+    "ltrs": 156.0,
+    "name": "EXTRA VIRGIN"
+   },
+   {
+    "ltrs": 16.0,
+    "name": "SO OLIVE"
+   }
+  ],
+  "total_ltrs": 8936.0
  },
  "source": "primary",
  "year": 2026

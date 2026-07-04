@@ -21,49 +21,49 @@ Up: [[dashboards-index]] · [[2026-07]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 7588.0,
+    "ltrs": 15568.0,
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 1096.0,
+    "ltrs": 7158.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 520.0,
+    "ltrs": 4014.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 320.0,
+    "ltrs": 920.0,
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 40.0,
+    "ltrs": 580.0,
     "name": "BLENDED"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 7588.0,
+    "ltrs": 15568.0,
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 1096.0,
+    "ltrs": 7158.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 520.0,
+    "ltrs": 4014.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 320.0,
+    "ltrs": 920.0,
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 40.0,
+    "ltrs": 580.0,
     "name": "GOLD"
    }
   ],
-  "total_ltrs": 9564.0
+  "total_ltrs": 28240.0
  },
  "errors": [],
  "month": 7,
@@ -71,37 +71,53 @@ Up: [[dashboards-index]] · [[2026-07]]
  "premium": {
   "categories": [
    {
-    "ltrs": 80.0,
-    "name": "CANOLA"
-   },
-   {
-    "ltrs": 80.0,
+    "ltrs": 9255.4,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 64.0,
+    "ltrs": 4367.0,
     "name": "OLIVE"
+   },
+   {
+    "ltrs": 408.0,
+    "name": "CANOLA"
+   },
+   {
+    "ltrs": 16.0,
+    "name": "BLENDED"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 80.0,
-    "name": "CANOLA"
-   },
-   {
-    "ltrs": 80.0,
+    "ltrs": 9255.4,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 48.0,
+    "ltrs": 2634.0,
+    "name": "JIVO POMACE"
+   },
+   {
+    "ltrs": 1128.0,
     "name": "EXTRA LIGHT"
    },
    {
+    "ltrs": 430.0,
+    "name": "EXTRA VIRGIN"
+   },
+   {
+    "ltrs": 408.0,
+    "name": "CANOLA"
+   },
+   {
+    "ltrs": 175.0,
+    "name": "SANO POMACE"
+   },
+   {
     "ltrs": 16.0,
-    "name": "JIVO POMACE"
+    "name": "SO OLIVE"
    }
   ],
-  "total_ltrs": 224.0
+  "total_ltrs": 14046.4
  },
  "source": "primary",
  "year": 2026

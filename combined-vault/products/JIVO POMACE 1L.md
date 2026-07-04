@@ -43,18 +43,18 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - amazon\|amazon-fresh]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - amazon\|amazon-now]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - bigbasket\|bigbasket]] | 429 | 387 | -9.79 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - blinkit\|blinkit]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 429 | 509 | 18.65 | 🔴 ABOVE | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart-minutes]] | 429 | 394 | -8.16 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - zepto\|zepto]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - amazon\|amazon-fresh]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - amazon\|amazon-now]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - bigbasket\|bigbasket]] | 429 | 387 | -9.79 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - blinkit\|blinkit]] | 429 | 387 | -9.79 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 429 | 509 | 18.65 | 🔴 ABOVE | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart-minutes]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - zepto\|zepto]] | 429 | 379 | -11.66 | 🟢 BELOW | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -87,5 +87,4 @@ Cross-vault fusion by name / SKU match:
 - **1 oitm:** [[oitm-FG0000028]]
 - **758 boxes:** [[box-101360]] · [[box-101361]] · [[box-101362]] … +755 more (tag `bridge/FG0000028`)
 - **14 pallets:** [[pal-1531]] · [[pal-1628]] · [[pal-1629]] … +11 more (tag `bridge/FG0000028`)
-- **2 boxes:** [[barcode__dispatch__reports__boxes-145955]] · [[barcode__dispatch__reports__boxes-145957]]
 

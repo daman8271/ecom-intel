@@ -16,18 +16,18 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35193
-- **doc_num:** 706260624
-- **doc_date:** 2026-06-22
-- **doc_total:** 623061.00
+- **doc_entry:** 35217
+- **doc_num:** 706260635
+- **doc_date:** 2026-06-23
+- **doc_total:** 7659.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD DADRI TOE
-- **ship_to_address:** NIMANA ROAD METL DADRI TOE  B 300B HADBAST NO 273DADRI TOE-124103IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **card_code:** CUSTA000125
+- **card_name:** DEL KAWALJEET SINGH
+- **ship_to_code:** DEL KAWALJEET SINGH DELHI
+- **ship_to_address:** NEW DELHI-110059IN
+- **place_of_supply:** DL
+- **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
 - **transporter_name:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN
-- **base_refs:** 1706264630
-- **total_quantity:** 1698.000
-- **total_litres:** 2554.000
+- **warehouses:** DL-MP
+- **item_summary:** FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000227 - RICE BRAN 1L 16 PCS, FG0000149 - JIVO GOLD 1 LTR 20 PCS
+- **base_refs:** 1506264571
+- **total_quantity:** 21.000
+- **total_litres:** 24.000
 - **total_boxes:** 0.000
-- **total_weight:** 2634.429
-- **line_count:** 8
+- **total_weight:** 28.842
+- **line_count:** 6
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 843, "sap_invoice_doc_entry": 35193, "sap_invoice_doc_num": "706260624", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "location": "B 300B, Hadbast No 273 Nimana Road, METL, Dadri Toe Dadri Toe 124103", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": "2026-07-02T12:00:22.876542Z", "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": "2026-07-02", "priority": "HIGH", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "03/07/2026 12:30 PM IST", "created_at": "2026-07-02T17:03:40.862961+05:30", "updated_at": "2026-07-02T17:30:22.876542+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35217, "sap_invoice_doc_num": "706260635", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

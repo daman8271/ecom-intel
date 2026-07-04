@@ -26,7 +26,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 9932.0,
+    "ltrs": 9728.0,
     "name": "SUNFLOWER"
    },
    {
@@ -40,7 +40,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 9932.0,
+    "ltrs": 9728.0,
     "name": "SUNFLOWER"
    },
    {
@@ -48,7 +48,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
     "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 23280.0
+  "total_ltrs": 23076.0
  },
  "errors": [],
  "month": 6,
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
  "premium": {
   "categories": [
    {
-    "ltrs": 49276.2,
+    "ltrs": 49244.2,
     "name": "GROUNDNUT"
    },
    {
@@ -70,7 +70,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
   ],
   "sub_categories": [
    {
-    "ltrs": 49276.2,
+    "ltrs": 49244.2,
     "name": "GROUNDNUT"
    },
    {
@@ -90,7 +90,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
     "name": "EXTRA VIRGIN"
    }
   ],
-  "total_ltrs": 85424.2
+  "total_ltrs": 85392.2
  },
  "source": "primary",
  "year": 2026

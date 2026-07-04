@@ -43,12 +43,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 1061.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 6.0,
+     "shipped_ltr": 2.0
     },
     "JUNE": {
      "order_ltr": 92.0,
-     "shipped_ltr": 80.0
+     "shipped_ltr": 78.0
     },
     "MARCH": {
      "order_ltr": 981.0,
@@ -98,12 +98,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 12467.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 236.0,
+     "shipped_ltr": 226.0
     },
     "JUNE": {
      "order_ltr": 6953.0,
-     "shipped_ltr": 6255.0
+     "shipped_ltr": 6214.0
     },
     "MARCH": {
      "order_ltr": 9540.0,
@@ -153,8 +153,8 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 550.5
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 7.5,
+     "shipped_ltr": 7.0
     },
     "JUNE": {
      "order_ltr": 171.0,
@@ -318,12 +318,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 5886.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 198.2,
+     "shipped_ltr": 198.2
     },
     "JUNE": {
      "order_ltr": 2567.2,
-     "shipped_ltr": 2292.2
+     "shipped_ltr": 2283.2
     },
     "MARCH": {
      "order_ltr": 4448.0,
@@ -428,12 +428,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 5948.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 169.0,
+     "shipped_ltr": 169.0
     },
     "JUNE": {
      "order_ltr": 3706.5,
-     "shipped_ltr": 3504.5
+     "shipped_ltr": 3489.5
     },
     "MARCH": {
      "order_ltr": 4310.0,
@@ -483,12 +483,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 1289.05
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 86.6,
+     "shipped_ltr": 85.6
     },
     "JUNE": {
      "order_ltr": 1212.85,
-     "shipped_ltr": 1086.7
+     "shipped_ltr": 1081.95
     },
     "MARCH": {
      "order_ltr": 938.05,
@@ -538,12 +538,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 5870.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 205.0,
+     "shipped_ltr": 205.0
     },
     "JUNE": {
      "order_ltr": 4546.0,
-     "shipped_ltr": 4064.0
+     "shipped_ltr": 4043.0
     },
     "MARCH": {
      "order_ltr": 3288.0,
@@ -648,8 +648,8 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 1141.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 46.0,
+     "shipped_ltr": 46.0
     },
     "JUNE": {
      "order_ltr": 975.0,
@@ -813,12 +813,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 4703.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 23.0,
+     "shipped_ltr": 23.0
     },
     "JUNE": {
      "order_ltr": 609.0,
-     "shipped_ltr": 535.0
+     "shipped_ltr": 529.0
     },
     "MARCH": {
      "order_ltr": 5991.0,
@@ -868,12 +868,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 15009.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 138.0,
+     "shipped_ltr": 132.0
     },
     "JUNE": {
      "order_ltr": 2767.0,
-     "shipped_ltr": 2307.0
+     "shipped_ltr": 2296.0
     },
     "MARCH": {
      "order_ltr": 7581.0,
@@ -923,12 +923,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 2250.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 78.0,
+     "shipped_ltr": 74.0
     },
     "JUNE": {
      "order_ltr": 1903.0,
-     "shipped_ltr": 1744.0
+     "shipped_ltr": 1729.0
     },
     "MARCH": {
      "order_ltr": 3332.0,
@@ -978,8 +978,8 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 1158.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 23.0,
+     "shipped_ltr": 23.0
     },
     "JUNE": {
      "order_ltr": 805.0,
@@ -1088,12 +1088,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
     "shipped_ltr": 57568.55
    },
    "JULY": {
-    "order_ltr": 0.0,
-    "shipped_ltr": 0.0
+    "order_ltr": 1216.3,
+    "shipped_ltr": 1190.8
    },
    "JUNE": {
     "order_ltr": 26441.05,
-    "shipped_ltr": 23678.4
+    "shipped_ltr": 23553.65
    },
    "MARCH": {
     "order_ltr": 43721.55,
@@ -1120,7 +1120,7 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
  "dashboard_title": "Flipkart Month Sale",
  "defaulted_to_latest": true,
  "format": "FLIPKART",
- "max_date": "2026-06-30",
+ "max_date": "2026-07-01",
  "mom_growth": [
   {
    "commodity_growth": 0.0,
@@ -1163,27 +1163,27 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "premium_ltr": 48171.8
   },
   {
-   "commodity_growth": -0.2973865839472663,
-   "commodity_ltr": 18120.4,
+   "commodity_growth": -0.298821248545948,
+   "commodity_ltr": 18083.4,
    "label": "June",
    "month": "JUNE",
-   "premium_growth": -0.30514533399208665,
-   "premium_ltr": 33472.4
+   "premium_growth": -0.3070707343300437,
+   "premium_ltr": 33379.65
   },
   {
-   "commodity_growth": -0.39670205955718424,
-   "commodity_ltr": 10932.0,
+   "commodity_growth": -0.37654423393830805,
+   "commodity_ltr": 11274.2,
    "label": "July",
    "month": "JULY",
-   "premium_growth": -0.4948375377923304,
-   "premium_ltr": 16909.0
+   "premium_growth": -0.4652789948366745,
+   "premium_ltr": 17848.8
   },
   {
-   "commodity_growth": -0.38474204171240395,
+   "commodity_growth": -0.4034166504053503,
    "commodity_ltr": 6726.0,
    "label": "August",
    "month": "AUGUST",
-   "premium_growth": -0.39038381926784554,
+   "premium_growth": -0.4224821836762135,
    "premium_ltr": 10308.0
   },
   {
@@ -1310,12 +1310,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 34507.55
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 955.3,
+     "shipped_ltr": 939.8
     },
     "JUNE": {
      "order_ltr": 20374.05,
-     "shipped_ltr": 18490.4
+     "shipped_ltr": 18397.65
     },
     "MARCH": {
      "order_ltr": 25093.55,
@@ -1363,12 +1363,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_ltr": 26611.0
     },
     "JULY": {
-     "order_ltr": 0.0,
-     "shipped_ltr": 0.0
+     "order_ltr": 352.2,
+     "shipped_ltr": 342.2
     },
     "JUNE": {
      "order_ltr": 7123.4,
-     "shipped_ltr": 6124.4
+     "shipped_ltr": 6087.4
     },
     "MARCH": {
      "order_ltr": 23071.0,
@@ -1418,12 +1418,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_value": 10243532.0
     },
     "JULY": {
-     "order_value": 0.0,
-     "shipped_value": 0.0
+     "order_value": 325295.0,
+     "shipped_value": 320869.0
     },
     "JUNE": {
      "order_value": 6757488.0,
-     "shipped_value": 6147277.0
+     "shipped_value": 6117572.0
     },
     "MARCH": {
      "order_value": 7921439.0,
@@ -1471,12 +1471,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
      "shipped_value": 4552697.0
     },
     "JULY": {
-     "order_value": 0.0,
-     "shipped_value": 0.0
+     "order_value": 71296.0,
+     "shipped_value": 69400.0
     },
     "JUNE": {
      "order_value": 1420300.0,
-     "shipped_value": 1217344.0
+     "shipped_value": 1209701.0
     },
     "MARCH": {
      "order_value": 4126200.0,
@@ -1525,12 +1525,12 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
     "shipped_value": 14796229.0
    },
    "JULY": {
-    "order_value": 0.0,
-    "shipped_value": 0.0
+    "order_value": 396591.0,
+    "shipped_value": 390269.0
    },
    "JUNE": {
     "order_value": 8177788.0,
-    "shipped_value": 7364621.0
+    "shipped_value": 7327273.0
    },
    "MARCH": {
     "order_value": 12047639.0,

@@ -24,9 +24,69 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
  "platform": "zomato",
  "prev_month": 6,
  "prev_year": 2026,
- "skus": [],
+ "skus": [
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -95.1,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 240.0,
+   "name": "JIVO POMACE 5L",
+   "prev_ltrs": 4945.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -96.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 160.0,
+   "name": "EXTRA VIRGIN 1L",
+   "prev_ltrs": 4256.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -99.0,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 135.0,
+   "name": "SANO POMACE 5L",
+   "prev_ltrs": 13165.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -97.3,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 48.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 1808.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -99.5,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 40.0,
+   "name": "SANO POMACE 1L",
+   "prev_ltrs": 8732.0
+  }
+ ],
  "source": "primary",
- "top_faller": null,
+ "top_faller": {
+  "brand": null,
+  "code": null,
+  "delta_pct": -99.5,
+  "head": "PREMIUM",
+  "is_new": false,
+  "ltrs": 40.0,
+  "name": "SANO POMACE 1L",
+  "prev_ltrs": 8732.0
+ },
  "top_riser": null,
  "year": 2026
 }

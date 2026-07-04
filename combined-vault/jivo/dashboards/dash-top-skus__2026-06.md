@@ -27,40 +27,40 @@ Up: [[dashboards-index]] · [[2026-06]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -0.5,
+   "delta_pct": 0.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 111006.0,
+   "ltrs": 111566.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 111558.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -8.6,
+   "delta_pct": -8.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 108729.0,
+   "ltrs": 108601.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 118991.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 8.2,
+   "delta_pct": 6.4,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 74738.0,
+   "ltrs": 73514.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 69064.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -28.5,
+   "delta_pct": -26.8,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 48735.0,
+   "ltrs": 49875.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 68130.0
   },
@@ -70,37 +70,37 @@ Up: [[dashboards-index]] · [[2026-06]]
    "delta_pct": -36.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 37930.0,
+   "ltrs": 37950.0,
    "name": "GROUNDNUT 5L",
    "prev_ltrs": 59465.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -53.4,
+   "delta_pct": -50.7,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 32860.0,
+   "ltrs": 34740.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 70515.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -23.5,
+   "delta_pct": -23.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 27115.0,
+   "ltrs": 27215.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 35435.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -57.1,
+   "delta_pct": -57.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 24386.0,
+   "ltrs": 24322.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 56818.0
   },
@@ -117,10 +117,10 @@ Up: [[dashboards-index]] · [[2026-06]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -33.8,
+   "delta_pct": -33.9,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 14965.0,
+   "ltrs": 14933.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 22602.0
   }
@@ -139,10 +139,10 @@ Up: [[dashboards-index]] · [[2026-06]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 259.0,
+  "delta_pct": 260.0,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 6612.0,
+  "ltrs": 6632.0,
   "name": "CANOLA 1+1L",
   "prev_ltrs": 1842.0
  },

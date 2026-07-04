@@ -29,17 +29,20 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000082` |
 | canonical_sku(s) | `ghegeugzhghgf5xh`, `jivo-a2-ghee-500-ml-500ml`, `ghehhzbqjbnvzggq`, `iomgg4yn5wgxgqcw`, `jivo-a2-ghee-500-ml-bilona-method-traditionally-prepared-from-a2-cow-milk-suitable-for-cooking-frying-baking-indian-recipes-rich-aroma-and-distinct-flavour-for-diverse-culinary-applications-500ml` |
 | Category | [[Category - GHEE\|GHEE]] |
+| Sub-category | A2 GHEE |
+| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 500G |
+| Per-unit | 0.5 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-03).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-04).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 709 | 699 | -1.41 | 🟢 BELOW | SVD | 2026-07-03 |
-| [[Platform - flipkart\|flipkart]] | 709 | — | — | ⚪ OOS | SVD | 2026-07-03 |
+| [[Platform - amazon\|amazon]] | 709 | 649 | -8.46 | 🟢 BELOW | SVD | 2026-07-04 |
+| [[Platform - flipkart\|flipkart]] | 709 | — | — | ⚪ OOS | SVD | 2026-07-04 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

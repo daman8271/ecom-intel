@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "DL01MA6176"
+title: "DL01MA4151"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,38 +10,38 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# DL01MA6176
+# DL01MA4151
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35567
-- **doc_num:** 606260188
+- **doc_entry:** 35579
+- **doc_num:** 706260867
 - **doc_date:** 2026-06-29
-- **doc_total:** 1575000.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000907
-- **card_name:** SUSTAINQUEST PRIVATE LIMITED
-- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
-- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06ABOCS2792M1ZK
+- **doc_total:** 218880.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD PUNE
+- **ship_to_address:** GATE NO. 185,186,188,189,190,197,198,200,201,202,  NDR BIGBOX PRIVATE LIMITED MAWAL SUDHAVADIPUNE-412109IN
+- **place_of_supply:** MH
+- **bp_gstin:** 27AAECR0564M1Z3
 - **eway_bill:** 
-- **vehicle_no:** DL01MA6176
-- **transporter_name:** Arnav Transport
-- **bilty_no:** 7097
-- **bilty_date:** 2026-06-30
+- **vehicle_no:** DL01MA4151
+- **transporter_name:** Pick & Ship
+- **bilty_no:** 1125
+- **bilty_date:** 2026-07-01
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS
-- **base_refs:** 1706264727
-- **total_quantity:** 10000.000
-- **total_litres:** 10000.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
+- **base_refs:** 1706264732
+- **total_quantity:** 1368.000
+- **total_litres:** 1368.000
 - **total_boxes:** 0.000
-- **total_weight:** 9707.300
+- **total_weight:** 1350.243
 - **line_count:** 1
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": 708, "sap_invoice_doc_entry": 35567, "sap_invoice_doc_num": "606260188", "invoice_number": "606260188", "eway_bill": "372283074714", "invoice_weight": "9707.300", "invoice_amount": "1575000.00", "place_of_supply": "HR", "location": "FARIDABAD", "product_variety": "Oil", "total_litres": "10000.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 202, "transporter_id": 54, "driver_id": null, "linked_vehicle_entry_id": 1347, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-01T11:05:34.986117Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-29", "priority": "High", "transporter_name": "Arnav Transport Service", "transporter_gstin": "", "contact_person": "Lalit Kumar", "mobile_no": "9718077490", "vehicle_no": "DL01MA6176", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7097", "bilty_date": "2026-06-30", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-01_at_4.20.02_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-01 at 4.20.02 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "Faridabad", "created_at": "2026-06-29T16:40:47.938513+05:30", "updated_at": "2026-07-01T16:35:34.996317+05:30"}
+  {"id": 752, "sap_invoice_doc_entry": 35579, "sap_invoice_doc_num": "706260867", "invoice_number": "706260867", "eway_bill": "302277582376", "invoice_weight": "1350.243", "invoice_amount": "218880.00", "place_of_supply": "MH", "location": "R K WorldInfocom Pvt Ltd NDR BIGBOX PRIVATE LIMITED,Gat No. 185,186,188,189,190,197,198,200,201,202, Mawal Sudhavadi Pune 412109", "product_variety": "Oil", "total_litres": "1368.000", "effective_month": "2026-06", "budget_delivery_point": "PUNE", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 357, "transporter_id": 85, "driver_id": null, "linked_vehicle_entry_id": 1345, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-01T14:38:27.911049Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-30", "priority": "HIGH", "transporter_name": "PICK & SHIP", "transporter_gstin": "09AAQCP4145A1ZF", "contact_person": "shukla", "mobile_no": "9958007610", "vehicle_no": "DL01MA4151", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1125", "bilty_date": "2026-07-01", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-01_at_7.16.01_PM_1.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-01 at 7.16.01 PM (1).jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-29T19:59:48.716430+05:30", "updated_at": "2026-07-01T20:08:27.924332+05:30"}
   ```

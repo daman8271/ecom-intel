@@ -20,15 +20,6 @@ Up: [[dashboards-index]] · [[pf-citymall]]
 {
  "by_city": [
   {
-   "city": "Dadri",
-   "open_ltrs": 11484.0,
-   "open_pos": 1,
-   "open_units": 9884.0,
-   "order_value": 1632663.76,
-   "pending_ltrs": 11484.0,
-   "pending_units": 9884.0
-  },
-  {
    "city": "GURUGRAM",
    "open_ltrs": 10520.0,
    "open_pos": 1,
@@ -59,28 +50,15 @@ Up: [[dashboards-index]] · [[pf-citymall]]
  "by_distributor": [
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "open_ltrs": 41972.0,
-   "open_pos": 4,
-   "open_units": 36836.0,
-   "order_value": 5988699.12,
-   "pending_ltrs": 41972.0,
-   "pending_units": 36836.0
+   "open_ltrs": 30488.0,
+   "open_pos": 3,
+   "open_units": 26952.0,
+   "order_value": 4356035.36,
+   "pending_ltrs": 30488.0,
+   "pending_units": 26952.0
   }
  ],
  "by_po": [
-  {
-   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "Dadri",
-   "open_ltrs": 11484.0,
-   "open_pos": 1,
-   "open_units": 9884.0,
-   "order_value": 1632663.76,
-   "pending_ltrs": 11484.0,
-   "pending_units": 9884.0,
-   "po_date": "21-06-2026",
-   "po_expiry_date": "29-06-2026",
-   "po_number": "PO-1420774"
-  },
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
    "location": "Gurugram",
@@ -124,78 +102,78 @@ Up: [[dashboards-index]] · [[pf-citymall]]
  "by_sku": [
   {
    "item": "SOYABEAN 1L POUCH",
-   "open_ltrs": 28524.0,
-   "open_pos": 4,
-   "open_units": 28524.0,
-   "order_value": 3911781.36,
-   "pending_ltrs": 28524.0,
-   "pending_units": 28524.0,
+   "open_ltrs": 20520.0,
+   "open_pos": 3,
+   "open_units": 20520.0,
+   "order_value": 2814112.8,
+   "pending_ltrs": 20520.0,
+   "pending_units": 20520.0,
    "sku_code": "CM02456490",
    "sku_name": "Jivo Soyabean Oil 1 L (Pouch)"
   },
   {
-   "item": "MUSTARD 5L",
-   "open_ltrs": 2500.0,
-   "open_pos": 4,
-   "open_units": 500.0,
-   "order_value": 380950.0,
-   "pending_ltrs": 2500.0,
-   "pending_units": 500.0,
-   "sku_code": "CM02456487",
-   "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 5 L (Jar)"
-  },
-  {
    "item": "MUSTARD POUCH 1L",
-   "open_ltrs": 2400.0,
-   "open_pos": 4,
-   "open_units": 2400.0,
-   "order_value": 361152.0,
-   "pending_ltrs": 2400.0,
-   "pending_units": 2400.0,
+   "open_ltrs": 1900.0,
+   "open_pos": 3,
+   "open_units": 1900.0,
+   "order_value": 285912.0,
+   "pending_ltrs": 1900.0,
+   "pending_units": 1900.0,
    "sku_code": "CM02975981",
    "sku_name": "Jivo Cold Press Kachi Ghani"
   },
   {
+   "item": "MUSTARD 5L",
+   "open_ltrs": 1500.0,
+   "open_pos": 3,
+   "open_units": 300.0,
+   "order_value": 228570.0,
+   "pending_ltrs": 1500.0,
+   "pending_units": 300.0,
+   "sku_code": "CM02456487",
+   "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 5 L (Jar)"
+  },
+  {
    "item": "SOYABEAN 1L",
-   "open_ltrs": 1740.0,
-   "open_pos": 4,
-   "open_units": 1740.0,
-   "order_value": 265141.2,
-   "pending_ltrs": 1740.0,
-   "pending_units": 1740.0,
+   "open_ltrs": 1340.0,
+   "open_pos": 3,
+   "open_units": 1340.0,
+   "order_value": 204189.2,
+   "pending_ltrs": 1340.0,
+   "pending_units": 1340.0,
    "sku_code": "CM02456486",
    "sku_name": "Jivo Soyabean Oil 1 L (Bottle)"
   },
   {
    "item": "SOYABEAN 5L",
-   "open_ltrs": 1600.0,
-   "open_pos": 4,
-   "open_units": 320.0,
-   "order_value": 243808.0,
-   "pending_ltrs": 1600.0,
-   "pending_units": 320.0,
+   "open_ltrs": 1100.0,
+   "open_pos": 3,
+   "open_units": 220.0,
+   "order_value": 167618.0,
+   "pending_ltrs": 1100.0,
+   "pending_units": 220.0,
    "sku_code": "CM02456495",
    "sku_name": "Jivo Soyabean Oil 5 L (Jar)"
   },
   {
    "item": "RICE BRAN 5L",
-   "open_ltrs": 1560.0,
-   "open_pos": 4,
-   "open_units": 312.0,
-   "order_value": 234742.56,
-   "pending_ltrs": 1560.0,
-   "pending_units": 312.0,
+   "open_ltrs": 1060.0,
+   "open_pos": 3,
+   "open_units": 212.0,
+   "order_value": 159504.56,
+   "pending_ltrs": 1060.0,
+   "pending_units": 212.0,
    "sku_code": "CM02456488",
    "sku_name": "Jivo Rice Bran Oil 5 L (Jar)"
   },
   {
    "item": "RICE BRAN 1L",
-   "open_ltrs": 992.0,
-   "open_pos": 4,
-   "open_units": 992.0,
-   "order_value": 149276.16,
-   "pending_ltrs": 992.0,
-   "pending_units": 992.0,
+   "open_ltrs": 784.0,
+   "open_pos": 3,
+   "open_units": 784.0,
+   "order_value": 117976.32,
+   "pending_ltrs": 784.0,
+   "pending_units": 784.0,
    "sku_code": "CM02456496",
    "sku_name": "Jivo Rice Bran Oil 1 L (Bottle)"
   },
@@ -212,34 +190,34 @@ Up: [[dashboards-index]] · [[pf-citymall]]
   },
   {
    "item": "MUSTARD 1L",
-   "open_ltrs": 580.0,
-   "open_pos": 3,
-   "open_units": 580.0,
-   "order_value": 85619.6,
-   "pending_ltrs": 580.0,
-   "pending_units": 580.0,
+   "open_ltrs": 500.0,
+   "open_pos": 2,
+   "open_units": 500.0,
+   "order_value": 73810.0,
+   "pending_ltrs": 500.0,
+   "pending_units": 500.0,
    "sku_code": "CM02456493",
    "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 1 L (Bottle)"
   },
   {
    "item": "SUNFLOWER 1L",
-   "open_ltrs": 480.0,
-   "open_pos": 4,
-   "open_units": 480.0,
-   "order_value": 76800.0,
-   "pending_ltrs": 480.0,
-   "pending_units": 480.0,
+   "open_ltrs": 320.0,
+   "open_pos": 3,
+   "open_units": 320.0,
+   "order_value": 51200.0,
+   "pending_ltrs": 320.0,
+   "pending_units": 320.0,
    "sku_code": "CM02456491",
    "sku_name": "Jivo Cold Press Sunflower Oil 1 L (Bottle)"
   },
   {
    "item": "GROUNDNUT 1L",
-   "open_ltrs": 352.0,
-   "open_pos": 4,
-   "open_units": 352.0,
-   "order_value": 70400.0,
-   "pending_ltrs": 352.0,
-   "pending_units": 352.0,
+   "open_ltrs": 272.0,
+   "open_pos": 3,
+   "open_units": 272.0,
+   "order_value": 54400.0,
+   "pending_ltrs": 272.0,
+   "pending_units": 272.0,
    "sku_code": "CM02456489",
    "sku_name": "Jivo Cold Press Groundnut Oil 1 L"
   },
@@ -255,26 +233,26 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "sku_name": "Jivo Gold Multisource Oil 1 L"
   },
   {
-   "item": "SO OLIVE 1L",
-   "open_ltrs": 112.0,
-   "open_pos": 4,
-   "open_units": 112.0,
-   "order_value": 21333.76,
-   "pending_ltrs": 112.0,
-   "pending_units": 112.0,
-   "sku_code": "CM02456500",
-   "sku_name": "Jivo So-Olive Multisource Olive Oil 1 L (Bottle)"
-  },
-  {
    "item": "CANOLA 1L",
-   "open_ltrs": 100.0,
-   "open_pos": 3,
-   "open_units": 100.0,
-   "order_value": 20952.0,
-   "pending_ltrs": 100.0,
-   "pending_units": 100.0,
+   "open_ltrs": 80.0,
+   "open_pos": 2,
+   "open_units": 80.0,
+   "order_value": 16761.6,
+   "pending_ltrs": 80.0,
+   "pending_units": 80.0,
    "sku_code": "CM02456498",
    "sku_name": "Jivo Cold Press Canola Oil 1 L (Bottle)"
+  },
+  {
+   "item": "SO OLIVE 1L",
+   "open_ltrs": 80.0,
+   "open_pos": 3,
+   "open_units": 80.0,
+   "order_value": 15238.4,
+   "pending_ltrs": 80.0,
+   "pending_units": 80.0,
+   "sku_code": "CM02456500",
+   "sku_name": "Jivo So-Olive Multisource Olive Oil 1 L (Bottle)"
   },
   {
    "item": "JIVO POMACE 1L",
@@ -289,15 +267,6 @@ Up: [[dashboards-index]] · [[pf-citymall]]
   }
  ],
  "by_warehouse": [
-  {
-   "open_ltrs": 11484.0,
-   "open_pos": 1,
-   "open_units": 9884.0,
-   "order_value": 1632663.76,
-   "pending_ltrs": 11484.0,
-   "pending_units": 9884.0,
-   "warehouse": "Dadri"
-  },
   {
    "open_ltrs": 10520.0,
    "open_pos": 1,
@@ -333,12 +302,12 @@ Up: [[dashboards-index]] · [[pf-citymall]]
  "platform": "citymall",
  "po_month": "JUNE",
  "totals": {
-  "open_ltrs": 41972.0,
-  "open_pos": 4,
-  "open_units": 36836.0,
-  "pending_ltrs": 41972.0,
-  "pending_units": 36836.0,
-  "rows": 52
+  "open_ltrs": 30488.0,
+  "open_pos": 3,
+  "open_units": 26952.0,
+  "pending_ltrs": 30488.0,
+  "pending_units": 26952.0,
+  "rows": 40
  },
  "year": 2026
 }

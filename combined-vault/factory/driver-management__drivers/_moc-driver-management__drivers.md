@@ -1,15 +1,19 @@
 ---
 type: moc
-title: Driver (324)
+title: Driver (328)
 tags:
   - moc
   - source/factory
 ---
 
-# Driver — 324 records
+# Driver — 328 records
 
 From `/driver-management/drivers/`. Up: [[_HOME]]
 
+- [[drv-338]] — Suthra ram 9898818398
+- [[drv-337]] — Ekram 989813064527
+- [[drv-336]] — Raju 8950622775
+- [[drv-335]] — Pardeep 99920556814
 - [[drv-334]] — Virender 9813925218
 - [[drv-333]] — Bagicha singh 7508431138
 - [[drv-332]] — Kailash singh 9461114376

@@ -20,23 +20,27 @@ Up: [[dashboards-index]] · [[2026-07]]
 {
  "categories": [
   {
-   "category": "CANOLA",
-   "ltrs": 80.0
-  },
-  {
    "category": "GROUNDNUT",
-   "ltrs": 80.0
+   "ltrs": 9255.4
   },
   {
    "category": "OLIVE",
-   "ltrs": 64.0
+   "ltrs": 4367.0
+  },
+  {
+   "category": "CANOLA",
+   "ltrs": 408.0
+  },
+  {
+   "category": "BLENDED",
+   "ltrs": 16.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": null,
- "total_ltrs": 224.0,
+ "total_ltrs": 14046.4,
  "year": 2026
 }
 ```

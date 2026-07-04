@@ -18,12 +18,12 @@ Up: [[dashboards-index]] · [[pf-zomato]]
 
 ```json
 {
- "count": 1433,
+ "count": 1438,
  "data": [
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -639,7 +639,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -975,7 +975,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -1255,7 +1255,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -1927,7 +1927,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -2151,7 +2151,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -2431,7 +2431,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -2767,7 +2767,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 1510.0,
    "brand": "JIVO",
-   "case_pack": 4,
+   "case_pack": 1,
    "category": "OLIVE",
    "category_head": "OIL",
    "city": "Ghevara",

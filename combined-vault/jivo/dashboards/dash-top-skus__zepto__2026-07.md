@@ -24,10 +24,89 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
  "platform": "zepto",
  "prev_month": 6,
  "prev_year": 2026,
- "skus": [],
+ "skus": [
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -75.4,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 1866.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 7570.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -96.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 1429.0,
+   "name": "GROUNDNUT 1L",
+   "prev_ltrs": 37936.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -91.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 548.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 6239.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -80.8,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 350.0,
+   "name": "MUSTARD 5L",
+   "prev_ltrs": 1820.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": 307.1,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 114.0,
+   "name": "EXTRA VIRGIN 200ML",
+   "prev_ltrs": 28.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -99.8,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 22.4,
+   "name": "GROUNDNUT 200ML",
+   "prev_ltrs": 11308.2
+  }
+ ],
  "source": "primary",
- "top_faller": null,
- "top_riser": null,
+ "top_faller": {
+  "brand": null,
+  "code": null,
+  "delta_pct": -99.8,
+  "head": "PREMIUM",
+  "is_new": false,
+  "ltrs": 22.4,
+  "name": "GROUNDNUT 200ML",
+  "prev_ltrs": 11308.2
+ },
+ "top_riser": {
+  "brand": null,
+  "code": null,
+  "delta_pct": 307.1,
+  "head": "PREMIUM",
+  "is_new": false,
+  "ltrs": 114.0,
+  "name": "EXTRA VIRGIN 200ML",
+  "prev_ltrs": 28.0
+ },
  "year": 2026
 }
 ```
