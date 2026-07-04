@@ -31,7 +31,14 @@ SCRAPER="scrape.js"
 [ "$P" = "amazon-now" ] && SCRAPER="scrape.ctnow.js"
 SCRAPE_TIMEOUT_SECS="${SCRAPE_TIMEOUT_SECS:-}"
 case "$P" in
-  amazon-fresh) SCRAPE_TIMEOUT_SECS="${AMAZON_FRESH_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-28800}}" ;;
+  # FAIL-FAST (2026-07-04, after the throttled-night incident): amazon-fresh normally
+  # does 973 pins in ~47m (worst normal ~2h). On 2026-07-04 Amazon throttled it to
+  # ~31s/pin -> it ran 8h33m into its old 28800s cap and the WHOLE serial chain missed
+  # the 10:00 batch by 83m. A throttled night never recovers mid-run, so cap at 3h:
+  # normal runs untouched, a throttled run dies at ~05:10, the batch still lands AT
+  # 10:00 (amazon-fresh reported missing; team gets last-good on request; healcheck
+  # backstop retries later). Override per-run with AMAZON_FRESH_TIMEOUT_SECS.
+  amazon-fresh) SCRAPE_TIMEOUT_SECS="${AMAZON_FRESH_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-10800}}" ;;
   amazon-now) SCRAPE_TIMEOUT_SECS="${AMAZON_NOW_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-7200}}" ;;
 esac
 run_scraper() {
