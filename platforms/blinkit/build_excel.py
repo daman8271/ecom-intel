@@ -10,6 +10,29 @@ rows = d['allRows']
 per = d['perPin']
 summary = d['summary']
 
+IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+
+
+def clean_name(s):
+    """Repair a scrape-truncated listing title that ends in a dangling '(' —
+    e.g. 'Jivo Cold Pressed Canola Oil (' -> 'Jivo Cold Pressed Canola Oil'."""
+    s = str(s or "").strip()
+    while s.endswith("("):
+        s = s[:-1].rstrip()
+    return s
+
+
+def captured_ist(cap):
+    """Format an ISO-8601 UTC captured_at as real IST ('YYYY-MM-DD HH:MM IST'),
+    not the UTC clock mislabelled IST (matches tools/report_dashboard.py)."""
+    try:
+        dt = datetime.datetime.fromisoformat(str(cap).replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=datetime.timezone.utc)
+        return dt.astimezone(IST).strftime("%Y-%m-%d %H:%M IST")
+    except Exception:
+        return f"{str(cap)[:16].replace('T', ' ')} IST"
+
 # platform name derived from the folder this runs in (blinkit, zepto, ...)
 PLATFORM = os.path.basename(os.getcwd()).replace('-', ' ').title()
 
@@ -64,7 +87,7 @@ def pct_fraction(v):
 ws = wb.active; ws.title = "Summary"
 ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TITLE_FONT
 ws.merge_cells("A1:G1")
-ws["A2"] = f"Captured {summary['captured_at'][:16].replace('T',' ')} IST  -  {summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo  -  {summary['unique_skus']} unique SKUs  -  {summary['total_rows']} datapoints  -  scrape {summary['wall_s']}s"
+ws["A2"] = f"Captured {captured_ist(summary['captured_at'])}  -  {summary['pincodes_with_jivo']}/{summary['pincodes_total']} pincodes carry Jivo  -  {summary['unique_skus']} unique SKUs  -  {summary['total_rows']} datapoints  -  scrape {summary['wall_s']}s"
 ws["A2"].font = SUB_FONT; ws.merge_cells("A2:G2")
 
 # KPI cards
@@ -106,7 +129,7 @@ ws = wb.create_sheet("Master Data")
 cols = ["City", "Pincode", "Locality", "Store", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "ETA min", "In stock"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
-    ws.append([x['city'], x['pincode'], x.get('locality',''), x['store_name'], x['sku_raw'], x['pack'], x['vol_ml'],
+    ws.append([x['city'], x['pincode'], x.get('locality',''), x['store_name'], clean_name(x['sku_raw']), x['pack'], x['vol_ml'],
                x['sale'], x['mrp'], pct_fraction(x['discount_pct']), x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"

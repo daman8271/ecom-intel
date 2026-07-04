@@ -111,6 +111,8 @@ def display_name(row, platform):
     fk_name; bigbasket card titles drop the brand prefix."""
     name = row.get("fk_name") or row.get("sku_raw") or row.get("canonical") or "?"
     name = str(name).strip()
+    while name.endswith("("):          # repair scrape-truncated titles (e.g. '...Oil (')
+        name = name[:-1].rstrip()
     if platform == "bigbasket" and not name.lower().startswith("jivo"):
         name = "Jivo " + name
     return name
