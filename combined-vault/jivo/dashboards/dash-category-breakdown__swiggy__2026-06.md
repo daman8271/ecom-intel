@@ -22,15 +22,15 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 34007.0,
+    "ltrs": 35799.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 33096.0,
+    "ltrs": 33356.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 9980.0,
+    "ltrs": 10220.0,
     "name": "BLENDED"
    },
    {
@@ -40,15 +40,15 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   ],
   "sub_categories": [
    {
-    "ltrs": 34007.0,
+    "ltrs": 35799.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 33096.0,
+    "ltrs": 33356.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 9980.0,
+    "ltrs": 10220.0,
     "name": "GOLD"
    },
    {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
     "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 81343.0
+  "total_ltrs": 83635.0
  },
  "errors": [],
  "month": 6,
@@ -64,15 +64,15 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "premium": {
   "categories": [
    {
-    "ltrs": 56886.0,
+    "ltrs": 59934.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 9940.0,
+    "ltrs": 10187.0,
     "name": "OLIVE"
    },
    {
-    "ltrs": 4252.0,
+    "ltrs": 4292.0,
     "name": "CANOLA"
    },
    {
@@ -84,25 +84,25 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 1018.0,
+    "ltrs": 1034.0,
     "name": "BLENDED"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 56886.0,
+    "ltrs": 59934.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 4759.0,
+    "ltrs": 4855.0,
     "name": "EXTRA LIGHT"
    },
    {
-    "ltrs": 4252.0,
+    "ltrs": 4292.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 4158.0,
+    "ltrs": 4258.0,
     "name": "JIVO POMACE"
    },
    {
@@ -114,15 +114,15 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
     "name": "YELLOW MUSTARD"
    },
    {
-    "ltrs": 1023.0,
+    "ltrs": 1074.0,
     "name": "EXTRA VIRGIN"
    },
    {
-    "ltrs": 1018.0,
+    "ltrs": 1034.0,
     "name": "SO OLIVE"
    }
   ],
-  "total_ltrs": 77213.0
+  "total_ltrs": 80564.0
  },
  "source": "primary",
  "year": 2026

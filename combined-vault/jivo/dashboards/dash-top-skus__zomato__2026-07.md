@@ -28,10 +28,40 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -95.1,
+   "delta_pct": -81.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 240.0,
+   "ltrs": 1660.0,
+   "name": "SANO POMACE 1L",
+   "prev_ltrs": 9116.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -93.5,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 860.0,
+   "name": "SANO POMACE 5L",
+   "prev_ltrs": 13165.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": 400.0,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 750.0,
+   "name": "CANOLA 15L",
+   "prev_ltrs": 150.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -91.1,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 440.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 4945.0
   },
@@ -48,12 +78,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -99.0,
+   "delta_pct": 250.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 135.0,
-   "name": "SANO POMACE 5L",
-   "prev_ltrs": 13165.0
+   "ltrs": 140.0,
+   "name": "EXTRA LIGHT 5L",
+   "prev_ltrs": 40.0
   },
   {
    "brand": null,
@@ -68,26 +98,35 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -99.5,
+   "delta_pct": -60.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 40.0,
-   "name": "SANO POMACE 1L",
-   "prev_ltrs": 8732.0
+   "ltrs": 32.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 80.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -99.5,
+  "delta_pct": -97.3,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 40.0,
-  "name": "SANO POMACE 1L",
-  "prev_ltrs": 8732.0
+  "ltrs": 48.0,
+  "name": "JIVO POMACE 1L",
+  "prev_ltrs": 1808.0
  },
- "top_riser": null,
+ "top_riser": {
+  "brand": null,
+  "code": null,
+  "delta_pct": 400.0,
+  "head": "PREMIUM",
+  "is_new": false,
+  "ltrs": 750.0,
+  "name": "CANOLA 15L",
+  "prev_ltrs": 150.0
+ },
  "year": 2026
 }
 ```

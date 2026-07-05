@@ -18,7 +18,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
 
 ```json
 {
- "count": 1433,
+ "count": 1434,
  "data": [
   {
    "basic_rate": 776.19,

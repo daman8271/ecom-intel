@@ -22,15 +22,15 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 4020.0,
+    "ltrs": 13979.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 3339.0,
+    "ltrs": 4161.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 540.0,
+    "ltrs": 420.0,
     "name": "BLENDED"
    },
    {
@@ -40,15 +40,15 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
   ],
   "sub_categories": [
    {
-    "ltrs": 4020.0,
+    "ltrs": 13979.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 3339.0,
+    "ltrs": 4161.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 540.0,
+    "ltrs": 420.0,
     "name": "GOLD"
    },
    {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
     "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 7999.0
+  "total_ltrs": 18660.0
  },
  "errors": [],
  "month": 7,
@@ -64,16 +64,20 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "premium": {
   "categories": [
    {
-    "ltrs": 7644.0,
+    "ltrs": 9824.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 1048.0,
+    "ltrs": 1348.0,
     "name": "OLIVE"
    },
    {
-    "ltrs": 228.0,
+    "ltrs": 232.0,
     "name": "CANOLA"
+   },
+   {
+    "ltrs": 80.0,
+    "name": "SESAME OIL"
    },
    {
     "ltrs": 16.0,
@@ -82,31 +86,35 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
   ],
   "sub_categories": [
    {
-    "ltrs": 7644.0,
+    "ltrs": 9824.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 512.0,
+    "ltrs": 732.0,
     "name": "EXTRA LIGHT"
    },
    {
-    "ltrs": 380.0,
+    "ltrs": 452.0,
     "name": "JIVO POMACE"
    },
    {
-    "ltrs": 228.0,
+    "ltrs": 232.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 156.0,
+    "ltrs": 164.0,
     "name": "EXTRA VIRGIN"
+   },
+   {
+    "ltrs": 80.0,
+    "name": "SESAME OIL"
    },
    {
     "ltrs": 16.0,
     "name": "SO OLIVE"
    }
   ],
-  "total_ltrs": 8936.0
+  "total_ltrs": 11500.0
  },
  "source": "primary",
  "year": 2026

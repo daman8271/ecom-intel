@@ -24,10 +24,79 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-flipkart_grocery]]
  "platform": "flipkart_grocery",
  "prev_month": 6,
  "prev_year": 2026,
- "skus": [],
+ "skus": [
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -89.0,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 2140.0,
+   "name": "MUSTARD 1L",
+   "prev_ltrs": 19458.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": 33.3,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 480.0,
+   "name": "MUSTARD 5L",
+   "prev_ltrs": 360.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -76.9,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 300.0,
+   "name": "CANOLA 1L",
+   "prev_ltrs": 1300.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -70.8,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 224.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 768.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -33.3,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 40.0,
+   "name": "EXTRA LIGHT 2L",
+   "prev_ltrs": 60.0
+  }
+ ],
  "source": "primary",
- "top_faller": null,
- "top_riser": null,
+ "top_faller": {
+  "brand": null,
+  "code": null,
+  "delta_pct": -89.0,
+  "head": "COMMODITY",
+  "is_new": false,
+  "ltrs": 2140.0,
+  "name": "MUSTARD 1L",
+  "prev_ltrs": 19458.0
+ },
+ "top_riser": {
+  "brand": null,
+  "code": null,
+  "delta_pct": 33.3,
+  "head": "COMMODITY",
+  "is_new": false,
+  "ltrs": 480.0,
+  "name": "MUSTARD 5L",
+  "prev_ltrs": 360.0
+ },
  "year": 2026
 }
 ```

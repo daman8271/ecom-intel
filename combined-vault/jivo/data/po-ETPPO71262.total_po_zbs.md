@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-149.52,840.0,SWIGGY,,2026-07-02,77804,156.996,NOIDA,840.0,2026-06-25,2026-07-04,ETPPO71262,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77804,2026-07-04
-771.43,10.0,SWIGGY,,2026-07-02,77805,810.0015,NOIDA,12.0,2026-06-25,2026-07-04,ETPPO71262,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77805,2026-07-04
-154.29,168.0,SWIGGY,,2026-07-02,77806,162.0045,NOIDA,220.0,2026-06-25,2026-07-04,ETPPO71262,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77806,2026-07-04
-733.33,10.0,SWIGGY,,2026-07-02,77807,769.9965,NOIDA,10.0,2026-06-25,2026-07-04,ETPPO71262,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77807,2026-07-04
+149.52,840.0,SWIGGY,,2026-07-02,77804,156.996,NOIDA,840.0,2026-06-25,2026-07-04,ETPPO71262,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77804,2026-07-05
+771.43,10.0,SWIGGY,,2026-07-02,77805,810.0015,NOIDA,12.0,2026-06-25,2026-07-04,ETPPO71262,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77805,2026-07-05
+154.29,168.0,SWIGGY,,2026-07-02,77806,162.0045,NOIDA,220.0,2026-06-25,2026-07-04,ETPPO71262,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77806,2026-07-05
+733.33,10.0,SWIGGY,,2026-07-02,77807,769.9965,NOIDA,10.0,2026-06-25,2026-07-04,ETPPO71262,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77807,2026-07-05
 ```
 
 ---

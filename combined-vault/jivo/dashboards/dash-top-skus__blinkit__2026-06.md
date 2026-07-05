@@ -48,40 +48,40 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -88.0,
+   "delta_pct": -87.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 4304.0,
+   "ltrs": 4400.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 35854.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -86.8,
+   "delta_pct": -86.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 3210.0,
+   "ltrs": 3230.0,
    "name": "CANOLA 1L",
    "prev_ltrs": 24260.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -62.6,
+   "delta_pct": -62.3,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 2984.0,
+   "ltrs": 3008.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 7975.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -87.3,
+   "delta_pct": -87.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 2820.0,
+   "ltrs": 2840.0,
    "name": "CANOLA 5L",
    "prev_ltrs": 22205.0
   },

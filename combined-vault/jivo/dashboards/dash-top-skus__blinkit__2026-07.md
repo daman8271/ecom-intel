@@ -24,9 +24,59 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "platform": "blinkit",
  "prev_month": 6,
  "prev_year": 2026,
- "skus": [],
+ "skus": [
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -84.7,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 1740.0,
+   "name": "MUSTARD 1L",
+   "prev_ltrs": 11400.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -98.6,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 40.0,
+   "name": "CANOLA 5L",
+   "prev_ltrs": 2840.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -95.1,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 40.0,
+   "name": "EXTRA LIGHT 2L",
+   "prev_ltrs": 820.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -99.6,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 20.0,
+   "name": "JIVO POMACE 5L",
+   "prev_ltrs": 4780.0
+  }
+ ],
  "source": "primary",
- "top_faller": null,
+ "top_faller": {
+  "brand": null,
+  "code": null,
+  "delta_pct": -99.6,
+  "head": "PREMIUM",
+  "is_new": false,
+  "ltrs": 20.0,
+  "name": "JIVO POMACE 5L",
+  "prev_ltrs": 4780.0
+ },
  "top_riser": null,
  "year": 2026
 }

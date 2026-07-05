@@ -54,19 +54,19 @@ Up: [[dashboards-index]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 319316.0,
+   "commodity_ltrs": 339611.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 314797.2,
-   "total_ltrs": 634113.2,
+   "premium_ltrs": 353215.7,
+   "total_ltrs": 692826.7,
    "year": 2026
   },
   {
-   "commodity_ltrs": 28240.0,
+   "commodity_ltrs": 43247.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 14046.4,
-   "total_ltrs": 42286.4,
+   "premium_ltrs": 20036.4,
+   "total_ltrs": 63283.4,
    "year": 2026
   }
  ],

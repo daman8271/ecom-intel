@@ -27,11 +27,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000039` |
 | canonical_sku(s) | `jivo-extra-light-olive-oil-500ml-imported-from-spain-everyday-use-for-cooking-dressings-salad-soups-dips-and-marinades-light-flavorful-high-mufa-rich-in-antioxidants-500ml` |
 | Category | [[Category - OLIVE\|OLIVE]] |
-| Sub-category | EXTRA LIGHT |
-| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 500ML |
-| Per-unit | 0.5 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens

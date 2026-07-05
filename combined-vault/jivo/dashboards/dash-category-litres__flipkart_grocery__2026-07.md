@@ -19,12 +19,21 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-flipkart_grocery]]
 
 ```json
 {
- "categories": [],
+ "categories": [
+  {
+   "category": "CANOLA",
+   "ltrs": 300.0
+  },
+  {
+   "category": "OLIVE",
+   "ltrs": 264.0
+  }
+ ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "flipkart_grocery",
- "total_ltrs": 0,
+ "total_ltrs": 564.0,
  "year": 2026
 }
 ```

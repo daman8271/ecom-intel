@@ -22,34 +22,34 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 51617.0
+   "ltrs": 64525.0
   },
   {
    "category": "OLIVE",
-   "ltrs": 25038.0
+   "ltrs": 35663.5
   },
   {
    "category": "CANOLA",
-   "ltrs": 13900.0
+   "ltrs": 19319.0
   },
   {
    "category": "MUSTARD",
-   "ltrs": 4034.0
+   "ltrs": 5191.0
   },
   {
    "category": "FIRST PRESSED",
-   "ltrs": 1000.0
+   "ltrs": 5000.0
   },
   {
    "category": "SESAME OIL",
-   "ltrs": 574.0
+   "ltrs": 664.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 6,
  "platform": "amazon",
- "total_ltrs": 96163.0,
+ "total_ltrs": 130362.5,
  "year": 2026
 }
 ```

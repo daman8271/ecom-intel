@@ -20,108 +20,42 @@ Up: [[dashboards-index]] · [[pf-zomato]]
 {
  "by_city": [
   {
-   "city": "Bhiwandi",
-   "open_ltrs": 1650.0,
-   "open_pos": 2,
-   "open_units": 910.0,
-   "order_value": 339000.0,
-   "pending_ltrs": 1650.0,
-   "pending_units": 910.0
-  },
-  {
    "city": "BENGALURU",
-   "open_ltrs": 440.0,
+   "open_ltrs": 546.0,
    "open_pos": 1,
-   "open_units": 280.0,
-   "order_value": 96800.0,
-   "pending_ltrs": 440.0,
-   "pending_units": 280.0
+   "open_units": 62.0,
+   "order_value": 121061.76,
+   "pending_ltrs": 546.0,
+   "pending_units": 62.0
   }
  ],
  "by_distributor": [
   {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "open_ltrs": 1650.0,
-   "open_pos": 2,
-   "open_units": 910.0,
-   "order_value": 339000.0,
-   "pending_ltrs": 1650.0,
-   "pending_units": 910.0
-  },
-  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "open_ltrs": 440.0,
+   "open_ltrs": 546.0,
    "open_pos": 1,
-   "open_units": 280.0,
-   "order_value": 96800.0,
-   "pending_ltrs": 440.0,
-   "pending_units": 280.0
+   "open_units": 62.0,
+   "order_value": 121061.76,
+   "pending_ltrs": 546.0,
+   "pending_units": 62.0
   }
  ],
  "by_po": [
   {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "Bhiwandi",
-   "open_ltrs": 1200.0,
-   "open_pos": 1,
-   "open_units": 880.0,
-   "order_value": 264000.0,
-   "pending_ltrs": 1200.0,
-   "pending_units": 880.0,
-   "po_date": "08-06-2026",
-   "po_expiry_date": "25-06-2026",
-   "po_number": "ZHPMH27-PO-3576788"
-  },
-  {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "Bhiwandi",
-   "open_ltrs": 450.0,
-   "open_pos": 1,
-   "open_units": 30.0,
-   "order_value": 75000.0,
-   "pending_ltrs": 450.0,
-   "pending_units": 30.0,
-   "po_date": "18-06-2026",
-   "po_expiry_date": "29-06-2026",
-   "po_number": "ZHPMH27-PO-3638877"
-  },
-  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "Hoskate Bangalore",
-   "open_ltrs": 440.0,
+   "open_ltrs": 546.0,
    "open_pos": 1,
-   "open_units": 280.0,
-   "order_value": 96800.0,
-   "pending_ltrs": 440.0,
-   "pending_units": 280.0,
-   "po_date": "11-06-2026",
-   "po_expiry_date": "29-06-2026",
-   "po_number": "ZHPKA27-PO-3594996"
+   "open_units": 62.0,
+   "order_value": 121061.76,
+   "pending_ltrs": 546.0,
+   "pending_units": 62.0,
+   "po_date": "04-07-2026",
+   "po_expiry_date": "20-07-2026",
+   "po_number": "ZHPKA27-PO-3744894"
   }
  ],
  "by_sku": [
-  {
-   "item": "SANO POMACE 1L",
-   "open_ltrs": 1040.0,
-   "open_pos": 2,
-   "open_units": 1040.0,
-   "order_value": 228800.0,
-   "pending_ltrs": 1040.0,
-   "pending_units": 1040.0,
-   "sku_code": "146831",
-   "sku_name": "Sano - Pomace Olive Oil, 1 L"
-  },
-  {
-   "item": "SANO POMACE 5L",
-   "open_ltrs": 600.0,
-   "open_pos": 2,
-   "open_units": 120.0,
-   "order_value": 132000.0,
-   "pending_ltrs": 600.0,
-   "pending_units": 120.0,
-   "sku_code": "146832",
-   "sku_name": "Sano - Pomace Olive Oil, 5 L"
-  },
   {
    "item": "CANOLA 15L",
    "open_ltrs": 450.0,
@@ -132,41 +66,54 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "pending_units": 30.0,
    "sku_code": "136246",
    "sku_name": "Jivo - Canola Refined Oil, 15 L Tin"
+  },
+  {
+   "item": "EXTRA LIGHT 5L",
+   "open_ltrs": 80.0,
+   "open_pos": 1,
+   "open_units": 16.0,
+   "order_value": 38384.8,
+   "pending_ltrs": 80.0,
+   "pending_units": 16.0,
+   "sku_code": "136713",
+   "sku_name": "Jivo - Extra Light Olive Oil, 5 L"
+  },
+  {
+   "item": "EXTRA LIGHT 1L",
+   "open_ltrs": 16.0,
+   "open_pos": 1,
+   "open_units": 16.0,
+   "order_value": 7676.96,
+   "pending_ltrs": 16.0,
+   "pending_units": 16.0,
+   "sku_code": "136712",
+   "sku_name": "Jivo - Extra Light Olive Oil, 1 L"
   }
  ],
  "by_warehouse": [
   {
-   "open_ltrs": 1650.0,
-   "open_pos": 2,
-   "open_units": 910.0,
-   "order_value": 339000.0,
-   "pending_ltrs": 1650.0,
-   "pending_units": 910.0,
-   "warehouse": "Bhiwandi"
-  },
-  {
-   "open_ltrs": 440.0,
+   "open_ltrs": 546.0,
    "open_pos": 1,
-   "open_units": 280.0,
-   "order_value": 96800.0,
-   "pending_ltrs": 440.0,
-   "pending_units": 280.0,
+   "open_units": 62.0,
+   "order_value": 121061.76,
+   "pending_ltrs": 546.0,
+   "pending_units": 62.0,
    "warehouse": "Hoskate Bangalore"
   }
  ],
  "defaulted_to_latest": true,
  "format": "ZOMATO",
- "max_po_date": "18-06-2026",
- "min_po_date": "08-06-2026",
+ "max_po_date": "04-07-2026",
+ "min_po_date": "04-07-2026",
  "platform": "zomato",
- "po_month": "JUNE",
+ "po_month": "JULY",
  "totals": {
-  "open_ltrs": 2090.0,
-  "open_pos": 3,
-  "open_units": 1190.0,
-  "pending_ltrs": 2090.0,
-  "pending_units": 1190.0,
-  "rows": 5
+  "open_ltrs": 546.0,
+  "open_pos": 1,
+  "open_units": 62.0,
+  "pending_ltrs": 546.0,
+  "pending_units": 62.0,
+  "rows": 3
  },
  "year": 2026
 }

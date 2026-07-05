@@ -1,13 +1,13 @@
 ---
 type: moc
 title: App dashboards
-count: 3012
+count: 3013
 tags:
   - moc
   - type/dashboard-moc
 ---
 
-# App dashboards — Map of Content (3012)
+# App dashboards — Map of Content (3013)
 
 Up: [[index]]
 
@@ -2515,6 +2515,7 @@ The app's OWN computed aggregates, captured verbatim (labelled `source: app-dash
 - [[dash-table-columns__amazon_coupon]]
 - [[dash-table-columns__amazon_inventory]]
 - [[dash-table-columns__amazon_price_data]]
+- [[dash-table-columns__amazon_sec_city]]
 - [[dash-table-columns__amazon_sec_daily]]
 - [[dash-table-columns__amazon_sec_daily_master_view]]
 - [[dash-table-columns__amazon_sec_range]]

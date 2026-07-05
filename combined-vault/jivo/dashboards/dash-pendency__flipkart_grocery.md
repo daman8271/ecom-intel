@@ -27,17 +27,44 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "order_value": 367142.85714285716,
    "pending_ltrs": 2240.0,
    "pending_units": 2220.0
+  },
+  {
+   "city": "LUCKNOW",
+   "open_ltrs": 1720.0,
+   "open_pos": 1,
+   "open_units": 1720.0,
+   "order_value": 255142.85714285713,
+   "pending_ltrs": 1720.0,
+   "pending_units": 1720.0
+  },
+  {
+   "city": "LUDHIANA",
+   "open_ltrs": 580.0,
+   "open_pos": 1,
+   "open_units": 580.0,
+   "order_value": 86857.14285714286,
+   "pending_ltrs": 580.0,
+   "pending_units": 580.0
   }
  ],
  "by_distributor": [
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "open_ltrs": 2240.0,
+   "open_ltrs": 3960.0,
+   "open_pos": 2,
+   "open_units": 3940.0,
+   "order_value": 622285.7142857143,
+   "pending_ltrs": 3960.0,
+   "pending_units": 3940.0
+  },
+  {
+   "distributor": "EVARA ENTERPRISES",
+   "open_ltrs": 580.0,
    "open_pos": 1,
-   "open_units": 2220.0,
-   "order_value": 367142.85714285716,
-   "pending_ltrs": 2240.0,
-   "pending_units": 2220.0
+   "open_units": 580.0,
+   "order_value": 86857.14285714286,
+   "pending_ltrs": 580.0,
+   "pending_units": 580.0
   }
  ],
  "by_po": [
@@ -53,28 +80,54 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "po_date": "01-07-2026",
    "po_expiry_date": "17-07-2026",
    "po_number": "FLS104D90C6B"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "Lucknow",
+   "open_ltrs": 1720.0,
+   "open_pos": 1,
+   "open_units": 1720.0,
+   "order_value": 255142.85714285713,
+   "pending_ltrs": 1720.0,
+   "pending_units": 1720.0,
+   "po_date": "03-07-2026",
+   "po_expiry_date": "13-07-2026",
+   "po_number": "FLSE02D00CF0"
+  },
+  {
+   "distributor": "EVARA ENTERPRISES",
+   "location": "Ludhiana",
+   "open_ltrs": 580.0,
+   "open_pos": 1,
+   "open_units": 580.0,
+   "order_value": 86857.14285714286,
+   "pending_ltrs": 580.0,
+   "pending_units": 580.0,
+   "po_date": "03-07-2026",
+   "po_expiry_date": "13-07-2026",
+   "po_number": "FLGWN08368718"
   }
  ],
  "by_sku": [
   {
    "item": "MUSTARD 1L",
-   "open_ltrs": 2020.0,
-   "open_pos": 1,
-   "open_units": 2020.0,
-   "order_value": 298190.4761904762,
-   "pending_ltrs": 2020.0,
-   "pending_units": 2020.0,
+   "open_ltrs": 4280.0,
+   "open_pos": 3,
+   "open_units": 4280.0,
+   "order_value": 631809.5238095238,
+   "pending_ltrs": 4280.0,
+   "pending_units": 4280.0,
    "sku_code": "EDOGDVWYGJNDYRQP",
    "sku_name": "JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil 1 L Plastic Bottle"
   },
   {
    "item": "CANOLA 1L",
-   "open_ltrs": 100.0,
-   "open_pos": 1,
-   "open_units": 100.0,
-   "order_value": 20952.38095238095,
-   "pending_ltrs": 100.0,
-   "pending_units": 100.0,
+   "open_ltrs": 140.0,
+   "open_pos": 3,
+   "open_units": 140.0,
+   "order_value": 29333.333333333332,
+   "pending_ltrs": 140.0,
+   "pending_units": 140.0,
    "sku_code": "EDOG9BP8GEWFW9XC",
    "sku_name": "JIVO Cold Press Canola Oil 1 L Plastic Bottle"
   },
@@ -110,21 +163,39 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "pending_ltrs": 2240.0,
    "pending_units": 2220.0,
    "warehouse": "Sonipat"
+  },
+  {
+   "open_ltrs": 1720.0,
+   "open_pos": 1,
+   "open_units": 1720.0,
+   "order_value": 255142.85714285713,
+   "pending_ltrs": 1720.0,
+   "pending_units": 1720.0,
+   "warehouse": "Lucknow"
+  },
+  {
+   "open_ltrs": 580.0,
+   "open_pos": 1,
+   "open_units": 580.0,
+   "order_value": 86857.14285714286,
+   "pending_ltrs": 580.0,
+   "pending_units": 580.0,
+   "warehouse": "Ludhiana"
   }
  ],
  "defaulted_to_latest": true,
  "format": "FLIPKART GROCERY",
- "max_po_date": "01-07-2026",
+ "max_po_date": "03-07-2026",
  "min_po_date": "01-07-2026",
  "platform": "flipkart_grocery",
  "po_month": "JULY",
  "totals": {
-  "open_ltrs": 2240.0,
-  "open_pos": 1,
-  "open_units": 2220.0,
-  "pending_ltrs": 2240.0,
-  "pending_units": 2220.0,
-  "rows": 4
+  "open_ltrs": 4540.0,
+  "open_pos": 3,
+  "open_units": 4520.0,
+  "pending_ltrs": 4540.0,
+  "pending_units": 4520.0,
+  "rows": 8
  },
  "year": 2026
 }

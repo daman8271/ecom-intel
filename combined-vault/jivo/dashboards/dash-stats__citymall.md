@@ -20,7 +20,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
 {
  "activeTrucks": 0,
  "inventory": 0,
- "openPOs": 1433,
+ "openPOs": 1434,
  "sells": 0
 }
 ```

@@ -22,17 +22,25 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 350.0,
+    "ltrs": 236.0,
+    "name": "SUNFLOWER"
+   },
+   {
+    "ltrs": 100.0,
     "name": "MUSTARD"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 350.0,
+    "ltrs": 236.0,
+    "name": "SUNFLOWER"
+   },
+   {
+    "ltrs": 100.0,
     "name": "MUSTARD KACCHI GHANI"
    }
   ],
-  "total_ltrs": 350.0
+  "total_ltrs": 336.0
  },
  "errors": [],
  "month": 7,
@@ -40,33 +48,29 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
  "premium": {
   "categories": [
    {
-    "ltrs": 2528.0,
+    "ltrs": 2397.0,
     "name": "OLIVE"
    },
    {
-    "ltrs": 1451.4,
+    "ltrs": 877.4,
     "name": "GROUNDNUT"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 1866.0,
+    "ltrs": 2109.0,
     "name": "JIVO POMACE"
    },
    {
-    "ltrs": 1451.4,
+    "ltrs": 877.4,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 548.0,
+    "ltrs": 288.0,
     "name": "EXTRA LIGHT"
-   },
-   {
-    "ltrs": 114.0,
-    "name": "EXTRA VIRGIN"
    }
   ],
-  "total_ltrs": 3979.4
+  "total_ltrs": 3274.4
  },
  "source": "primary",
  "year": 2026

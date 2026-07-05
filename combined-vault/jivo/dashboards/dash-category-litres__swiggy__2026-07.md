@@ -22,15 +22,19 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 7644.0
+   "ltrs": 9824.0
   },
   {
    "category": "OLIVE",
-   "ltrs": 1048.0
+   "ltrs": 1348.0
   },
   {
    "category": "CANOLA",
-   "ltrs": 228.0
+   "ltrs": 232.0
+  },
+  {
+   "category": "SESAME OIL",
+   "ltrs": 80.0
   },
   {
    "category": "BLENDED",
@@ -41,7 +45,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "head": "premium",
  "month": 7,
  "platform": "swiggy",
- "total_ltrs": 8936.0,
+ "total_ltrs": 11500.0,
  "year": 2026
 }
 ```

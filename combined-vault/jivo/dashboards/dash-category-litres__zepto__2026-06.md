@@ -26,7 +26,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
   },
   {
    "category": "OLIVE",
-   "ltrs": 28086.0
+   "ltrs": 28434.0
   },
   {
    "category": "CANOLA",
@@ -37,7 +37,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
  "head": "premium",
  "month": 6,
  "platform": "zepto",
- "total_ltrs": 85392.2,
+ "total_ltrs": 85740.2,
  "year": 2026
 }
 ```

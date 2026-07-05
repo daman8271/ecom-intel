@@ -28,85 +28,76 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -75.4,
+   "delta_pct": -72.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 1866.0,
+   "ltrs": 2109.0,
    "name": "JIVO POMACE 1L",
-   "prev_ltrs": 7570.0
+   "prev_ltrs": 7730.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -96.2,
+   "delta_pct": -98.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 1429.0,
+   "ltrs": 775.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 37936.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -91.2,
+   "delta_pct": -95.4,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 548.0,
+   "ltrs": 288.0,
    "name": "EXTRA LIGHT 1L",
-   "prev_ltrs": 6239.0
+   "prev_ltrs": 6287.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -80.8,
+   "delta_pct": -97.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 350.0,
-   "name": "MUSTARD 5L",
-   "prev_ltrs": 1820.0
+   "ltrs": 236.0,
+   "name": "SUNFLOWER 1L",
+   "prev_ltrs": 9728.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 307.1,
+   "delta_pct": -99.1,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 114.0,
-   "name": "EXTRA VIRGIN 200ML",
-   "prev_ltrs": 28.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -99.8,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 22.4,
+   "ltrs": 102.4,
    "name": "GROUNDNUT 200ML",
    "prev_ltrs": 11308.2
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -94.5,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 100.0,
+   "name": "MUSTARD 5L",
+   "prev_ltrs": 1820.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -99.8,
+  "delta_pct": -99.1,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 22.4,
+  "ltrs": 102.4,
   "name": "GROUNDNUT 200ML",
   "prev_ltrs": 11308.2
  },
- "top_riser": {
-  "brand": null,
-  "code": null,
-  "delta_pct": 307.1,
-  "head": "PREMIUM",
-  "is_new": false,
-  "ltrs": 114.0,
-  "name": "EXTRA VIRGIN 200ML",
-  "prev_ltrs": 28.0
- },
+ "top_riser": null,
  "year": 2026
 }
 ```

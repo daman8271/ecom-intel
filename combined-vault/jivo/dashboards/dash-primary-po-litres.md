@@ -21,24 +21,32 @@ Up: [[dashboards-index]]
  "month": "JULY",
  "platforms": [
   {
+   "delivered_ltrs": 30160.0,
+   "format": "SWIGGY"
+  },
+  {
    "delivered_ltrs": 19296.0,
    "format": "CITY MALL"
   },
   {
-   "delivered_ltrs": 16935.0,
-   "format": "SWIGGY"
+   "delivered_ltrs": 4090.0,
+   "format": "ZOMATO"
   },
   {
-   "delivered_ltrs": 4329.4,
+   "delivered_ltrs": 3610.4,
    "format": "ZEPTO"
+  },
+  {
+   "delivered_ltrs": 3184.0,
+   "format": "FLIPKART GROCERY"
+  },
+  {
+   "delivered_ltrs": 1840.0,
+   "format": "BLINKIT"
   },
   {
    "delivered_ltrs": 1103.0,
    "format": "BIG BASKET"
-  },
-  {
-   "delivered_ltrs": 623.0,
-   "format": "ZOMATO"
   },
   {
    "delivered_ltrs": 0.0,

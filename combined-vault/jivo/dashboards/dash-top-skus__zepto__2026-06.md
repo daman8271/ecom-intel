@@ -38,10 +38,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 2388.5,
+   "delta_pct": 2417.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 11945.0,
+   "ltrs": 12085.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 480.0
   },
@@ -78,20 +78,20 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 36.4,
+   "delta_pct": 39.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 7570.0,
+   "ltrs": 7730.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 5548.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 59.8,
+   "delta_pct": 61.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 6239.0,
+   "ltrs": 6287.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 3904.0
   },
@@ -140,10 +140,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-zepto]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 2388.5,
+  "delta_pct": 2417.7,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 11945.0,
+  "ltrs": 12085.0,
   "name": "JIVO POMACE 5L",
   "prev_ltrs": 480.0
  },

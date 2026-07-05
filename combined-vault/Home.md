@@ -9,7 +9,7 @@ tags:
 Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with ecom competitor price intelligence (canonical listings) via the SKU bridge.
 
 - **Matched products:** 151  ([[#Products]])
-- **Category hubs:** 17
+- **Category hubs:** 18
 - **Platform hubs:** 10
 - **Tier hubs:** 3 (Premium / Commodity / Other)
 - **Source vaults:** `jivo/` (app data) · `ecom/` (price intel)
@@ -42,7 +42,8 @@ Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with eco
 - [[Category - HONEY]] — 2 products
 - [[Category - MUSTARD]] — 11 products
 - [[Category - OLIVE]] — 29 products
-- [[Category - OTHER]] — 6 products
+- [[Category - OTHER]] — 5 products
+- [[Category - RICE]] — 1 products
 - [[Category - RICE BRAN]] — 4 products
 - [[Category - SEEDS]] — 19 products
 - [[Category - SESAME OIL]] — 2 products

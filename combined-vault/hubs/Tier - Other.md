@@ -52,7 +52,7 @@ Up: [[Home]]
 - [[QUINOA SEEDS 200G]] — [[Category - SEEDS\|SEEDS]] · 200G
 - [[QUINOA SEEDS 400G]] — [[Category - SEEDS\|SEEDS]] · 400G
 - [[QUINOA SEEDS 800G]] — [[Category - SEEDS\|SEEDS]] · 800G
-- [[RICE 1KG]] — [[Category - OTHER\|OTHER]] · 1KG
+- [[RICE 1KG]] — [[Category - RICE\|RICE]] · 1KG
 - [[ROSE FLAVOR 200ML]] — [[Category - OTHER\|OTHER]] · 200ML
 - [[ROSEMARY LEAVES 150G]] — [[Category - SPICES\|SPICES]] · 150G
 - [[SAFFRON 1GMS]] — [[Category - SPICES\|SPICES]] · 1GMS

@@ -30,25 +30,37 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
  "premium": {
   "categories": [
    {
-    "ltrs": 623.0,
+    "ltrs": 3340.0,
     "name": "OLIVE"
+   },
+   {
+    "ltrs": 750.0,
+    "name": "CANOLA"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 288.0,
+    "ltrs": 2520.0,
+    "name": "SANO POMACE"
+   },
+   {
+    "ltrs": 750.0,
+    "name": "CANOLA"
+   },
+   {
+    "ltrs": 488.0,
     "name": "JIVO POMACE"
    },
    {
-    "ltrs": 175.0,
-    "name": "SANO POMACE"
+    "ltrs": 172.0,
+    "name": "EXTRA LIGHT"
    },
    {
     "ltrs": 160.0,
     "name": "EXTRA VIRGIN"
    }
   ],
-  "total_ltrs": 623.0
+  "total_ltrs": 4090.0
  },
  "source": "primary",
  "year": 2026

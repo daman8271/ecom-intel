@@ -14,7 +14,7 @@ Up: [[Home]]
 - **Retired/merged JIDs (kept, never reused):** 0
 - **Highest serial minted:** JID-0151
 - **Identity conflicts to review:** 14
-- **Generated:** 2026-07-05T05:41:37.031798+00:00
+- **Generated:** 2026-07-05T10:15:49.938706+00:00
 
 ## Registry — JID ↔ product ↔ external keys
 | JID | Product (our canonical) | SAP code(s) — app/factory | Ecom canonical listing(s) | Category | Tier |
@@ -86,7 +86,7 @@ Up: [[Home]]
 | `JID-0065` | [[GREEN CARDAMOM 100G]] | `FG0000197` | `jivo-green-cardamom-8mm-elaichi-whole-natural-spices-no-artificial-colors-or-preservatives-distinctive-flavor-aroma-premium-idukki-cardamom-for-cooking-baking-tea-100g-100ml`, `scmh4h8nch2pkywv` | SPICES | OTHER |
 | `JID-0066` | [[CINNAMON 100G]] | `FG0000198` | `scmh4h8snyfgcykm`, `jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml` | SPICES | OTHER |
 | `JID-0067` | [[CUMIN SEEDS 100G]] | `FG0000199` | `jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml`, `scmh3fhauzysnuab` | SEEDS | OTHER |
-| `JID-0068` | [[RICE 1KG]] | `FG0000201` | `jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na`, `ricge89buedda5u7` | OTHER | OTHER |
+| `JID-0068` | [[RICE 1KG]] | `FG0000201` | `jivo-long-grain-basmati-rice-1kg-ideal-for-pulao-biryani-and-fried-rice-trusted-for-daily-use-jivo-basmati-rice-1-kg-per-packet-na`, `ricge89buedda5u7` | RICE | OTHER |
 | `JID-0069` | [[SANO HONEY 1KG]] | `FG0000216` | `hnygqtuw5db6rxqd`, `sano-pure-honey-1-kg-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-1-kg-na`, `hnyhyrsbgkzhhfdz` | HONEY | OTHER |
 | `JID-0070` | [[SANO HONEY 500G]] | `FG0000217` | `hnygqtnabyzxtf6e`, `sano-pure-honey-500g-100-natural-organic-unadulterated-no-sugar-adulteration-rich-in-antioxidants-healthy-sweetener-for-tea-desserts-syed-500g-500ml`, `hnyhyrsyjpmyegux` | HONEY | OTHER |
 | `JID-0071` | [[DESI GHEE 1KG]] | `FG0000223`, `SL0000089` | `ghegwgqh84yszn6f`, `jivo-desi-ghee-1-litre-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-1l`, `gheh6b93zb66sekq` … +1 | GHEE | PREMIUM |

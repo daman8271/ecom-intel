@@ -27,8 +27,11 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000383` |
 | canonical_sku(s) | `jivo-rice-bran-oil-4-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-4l` |
 | Category | [[Category - RICE BRAN\|RICE BRAN]] |
+| Sub-category | RICE BRAN |
+| Brand | JIVO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 4L |
+| Per-unit | 4.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens

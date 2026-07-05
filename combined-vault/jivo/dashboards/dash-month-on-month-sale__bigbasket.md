@@ -53,12 +53,12 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
  "dashboard_title": "Big Basket Month On Month Analysis",
  "days_in_month": 31,
  "defaulted_to_latest": true,
- "elapsed_days": 2,
+ "elapsed_days": 3,
  "estimation_note": "Estimated LTR uses Excel formula: Done LTR / day(max date) * 30.",
  "format": "BIG BASKET",
  "grand_total": {
-  "current_done_ltr": 1609.0,
-  "estimated_ltr": 24135.0,
+  "current_done_ltr": 2382.0,
+  "estimated_ltr": 23820.0,
   "previous_1_ltr": 12156.0,
   "previous_2_ltr": 14792.0,
   "previous_3_ltr": 12466.0,
@@ -69,8 +69,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "rows": [
     {
-     "current_done_ltr": 89.0,
-     "estimated_ltr": 1335.0,
+     "current_done_ltr": 122.0,
+     "estimated_ltr": 1220.0,
      "item": "CANOLA 1L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 871.0,
@@ -81,8 +81,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
      "target": 1000.0
     },
     {
-     "current_done_ltr": 2.0,
-     "estimated_ltr": 30.0,
+     "current_done_ltr": 4.0,
+     "estimated_ltr": 40.0,
      "item": "CANOLA 1L POUCH",
      "item_head": "PREMIUM",
      "previous_1_ltr": 61.0,
@@ -93,8 +93,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
      "target": 500.0
     },
     {
-     "current_done_ltr": 25.0,
-     "estimated_ltr": 375.0,
+     "current_done_ltr": 55.0,
+     "estimated_ltr": 550.0,
      "item": "CANOLA 5L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 615.0,
@@ -107,8 +107,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    ],
    "sub_category": "CANOLA",
    "total": {
-    "current_done_ltr": 116.0,
-    "estimated_ltr": 1740.0,
+    "current_done_ltr": 181.0,
+    "estimated_ltr": 1810.0,
     "previous_1_ltr": 1547.0,
     "previous_2_ltr": 1824.0,
     "previous_3_ltr": 1675.0,
@@ -119,8 +119,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "rows": [
     {
-     "current_done_ltr": 26.0,
-     "estimated_ltr": 390.0,
+     "current_done_ltr": 50.0,
+     "estimated_ltr": 500.00000000000006,
      "item": "EXTRA LIGHT 1L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 297.0,
@@ -131,8 +131,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
      "target": 800.0
     },
     {
-     "current_done_ltr": 26.0,
-     "estimated_ltr": 390.0,
+     "current_done_ltr": 32.0,
+     "estimated_ltr": 320.0,
      "item": "EXTRA LIGHT 2L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 174.0,
@@ -157,8 +157,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    ],
    "sub_category": "EXTRA LIGHT",
    "total": {
-    "current_done_ltr": 52.0,
-    "estimated_ltr": 780.0,
+    "current_done_ltr": 82.0,
+    "estimated_ltr": 820.0,
     "previous_1_ltr": 481.0,
     "previous_2_ltr": 610.0,
     "previous_3_ltr": 592.0,
@@ -170,7 +170,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "rows": [
     {
      "current_done_ltr": 1.0,
-     "estimated_ltr": 15.0,
+     "estimated_ltr": 10.0,
      "item": "EXTRA VIRGIN 1L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 19.0,
@@ -196,7 +196,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "sub_category": "EXTRA VIRGIN",
    "total": {
     "current_done_ltr": 1.0,
-    "estimated_ltr": 15.0,
+    "estimated_ltr": 10.0,
     "previous_1_ltr": 19.0,
     "previous_2_ltr": 19.0,
     "previous_3_ltr": 22.0,
@@ -207,8 +207,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "rows": [
     {
-     "current_done_ltr": 47.0,
-     "estimated_ltr": 705.0,
+     "current_done_ltr": 77.0,
+     "estimated_ltr": 770.0,
      "item": "JIVO POMACE 1L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 346.0,
@@ -220,7 +220,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
     },
     {
      "current_done_ltr": 6.0,
-     "estimated_ltr": 90.0,
+     "estimated_ltr": 60.0,
      "item": "JIVO POMACE 2L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 44.0,
@@ -245,8 +245,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    ],
    "sub_category": "JIVO POMACE",
    "total": {
-    "current_done_ltr": 53.0,
-    "estimated_ltr": 795.0,
+    "current_done_ltr": 83.0,
+    "estimated_ltr": 830.0,
     "previous_1_ltr": 440.0,
     "previous_2_ltr": 507.0,
     "previous_3_ltr": 493.0,
@@ -257,8 +257,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "rows": [
     {
-     "current_done_ltr": 203.0,
-     "estimated_ltr": 3045.0,
+     "current_done_ltr": 286.0,
+     "estimated_ltr": 2860.0,
      "item": "MUSTARD 1L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 870.0,
@@ -269,8 +269,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
      "target": 1000.0
     },
     {
-     "current_done_ltr": 80.0,
-     "estimated_ltr": 1200.0,
+     "current_done_ltr": 165.0,
+     "estimated_ltr": 1650.0,
      "item": "MUSTARD 5L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 1205.0,
@@ -283,8 +283,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    ],
    "sub_category": "MUSTARD KACCHI GHANI",
    "total": {
-    "current_done_ltr": 283.0,
-    "estimated_ltr": 4245.0,
+    "current_done_ltr": 451.0,
+    "estimated_ltr": 4510.0,
     "previous_1_ltr": 2075.0,
     "previous_2_ltr": 1973.0,
     "previous_3_ltr": 1312.0,
@@ -333,8 +333,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   {
    "rows": [
     {
-     "current_done_ltr": 639.0,
-     "estimated_ltr": 9585.0,
+     "current_done_ltr": 919.0,
+     "estimated_ltr": 9190.0,
      "item": "SUNFLOWER 1L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 5424.0,
@@ -345,8 +345,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
      "target": 6500.0
     },
     {
-     "current_done_ltr": 465.0,
-     "estimated_ltr": 6975.0,
+     "current_done_ltr": 665.0,
+     "estimated_ltr": 6650.0,
      "item": "SUNFLOWER 5L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 2170.0,
@@ -359,8 +359,8 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    ],
    "sub_category": "SUNFLOWER",
    "total": {
-    "current_done_ltr": 1104.0,
-    "estimated_ltr": 16560.0,
+    "current_done_ltr": 1584.0,
+    "estimated_ltr": 15840.0,
     "previous_1_ltr": 7594.0,
     "previous_2_ltr": 9859.0,
     "previous_3_ltr": 8372.0,
@@ -369,7 +369,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    }
   }
  ],
- "max_date": "2026-07-02",
+ "max_date": "2026-07-03",
  "month": 7,
  "projection_days": 30,
  "source": "SecMaster",

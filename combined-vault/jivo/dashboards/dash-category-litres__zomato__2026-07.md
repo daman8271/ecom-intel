@@ -22,14 +22,18 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
  "categories": [
   {
    "category": "OLIVE",
-   "ltrs": 623.0
+   "ltrs": 3340.0
+  },
+  {
+   "category": "CANOLA",
+   "ltrs": 750.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "zomato",
- "total_ltrs": 623.0,
+ "total_ltrs": 4090.0,
  "year": 2026
 }
 ```
