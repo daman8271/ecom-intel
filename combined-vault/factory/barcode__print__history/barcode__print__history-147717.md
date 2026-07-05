@@ -23,5 +23,6 @@ tags:
 - **reprint_reason:** 0
 - **printed_by:** 34
 - **printed_by_name:** Barcode
+- **printed_by_email:** barcode@jivo.in
 - **printed_at:** 2026-06-27T12:33:34.181790+05:30
 - **printer_name:** TSC DA310

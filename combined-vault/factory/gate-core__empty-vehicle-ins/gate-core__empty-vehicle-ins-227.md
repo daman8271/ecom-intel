@@ -20,6 +20,8 @@ tags:
 - **company:** 2
 - **company_code:** JIVO_MART
 - **company_name:** Jivo Mart
+- **arrival:** 110
+- **arrival_no:** ARV-20260629-0015
 - **vehicle_entry:** 1237
 - **vehicle_entry_no:** EVGI-20260629-0016
 - **vehicle_entry_status:** COMPLETED
@@ -65,6 +67,7 @@ Weight: 9127.267 kg
 - **updated_at:** 2026-06-29T19:50:02.787507+05:30
 
 ## Related
+- arrival -> [[arr-110]]
 - company -> [[comp-2]]
 - driver -> [[drv-250]]
 - vehicle -> [[veh-53]]

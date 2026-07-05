@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Vehicle (371)
+title: Vehicle (380)
 tags:
   - moc
   - source/factory
 ---
 
-# Vehicle — 371 records
+# Vehicle — 380 records
 
 From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 
@@ -60,6 +60,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-132]] — DL01LAM7515
 - [[veh-264]] — DL01LAM8606
 - [[veh-116]] — DL01LAM9096
+- [[veh-382]] — DL01LAM9328
 - [[veh-259]] — DL01LAN0395
 - [[veh-158]] — DL01LAN0982
 - [[veh-236]] — DL01LAN2488
@@ -192,6 +193,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-320]] — HR55AX7276
 - [[veh-265]] — HR55BA1942
 - [[veh-201]] — HR55BA2092
+- [[veh-381]] — HR55BC0448
 - [[veh-287]] — HR55BC9226
 - [[veh-41]] — HR55X3163
 - [[veh-127]] — HR55Y7113
@@ -210,6 +212,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-163]] — HR61D1025
 - [[veh-123]] — HR63C9074
 - [[veh-64]] — HR63C9094
+- [[veh-377]] — HR63D1997
 - [[veh-239]] — HR63D2759
 - [[veh-364]] — HR63D4208
 - [[veh-317]] — HR63D4510
@@ -247,9 +250,12 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-252]] — HR67E7648
 - [[veh-282]] — HR67E9670
 - [[veh-263]] — HR67F0199
+- [[veh-379]] — HR67F2288
+- [[veh-380]] — HR67F2289
 - [[veh-219]] — HR67F7934
 - [[veh-159]] — HR67F8513
 - [[veh-17]] — HR69C1420
+- [[veh-384]] — HR69C5193
 - [[veh-209]] — HR69C7545
 - [[veh-14]] — HR69C9824
 - [[veh-130]] — HR69D1080
@@ -293,6 +299,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-359]] — HR69F3420
 - [[veh-51]] — HR69F3501
 - [[veh-102]] — HR69F3674
+- [[veh-385]] — HR69F3756
 - [[veh-218]] — HR69F6039
 - [[veh-53]] — HR69F6098
 - [[veh-266]] — HR69F7125
@@ -362,11 +369,13 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-184]] — RJ47GA6771
 - [[veh-176]] — RJ47GA7522
 - [[veh-316]] — RJ47GA7523
+- [[veh-378]] — RJ47GA7911
 - [[veh-183]] — RJ47GA8216
 - [[veh-355]] — RJ47GA8217
 - [[veh-162]] — RJ47GA8856
 - [[veh-353]] — RJ47GB0956
 - [[veh-181]] — RJ47GB3056
+- [[veh-383]] — RJ47GB3356
 - [[veh-135]] — TN7BV4083
 - [[veh-78]] — TS08UF8476
 - [[veh-113]] — TS08UF9811

@@ -23,5 +23,6 @@ tags:
 - **reprint_reason:** DISMANTLE
 - **printed_by:** 34
 - **printed_by_name:** Barcode
+- **printed_by_email:** barcode@jivo.in
 - **printed_at:** 2026-06-24T15:37:36.674401+05:30
 - **printer_name:** TSC DA310

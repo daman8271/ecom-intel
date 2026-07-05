@@ -1,15 +1,18 @@
 ---
 type: moc
-title: Eligible Entries (62)
+title: Eligible Entries (65)
 tags:
   - moc
   - source/factory
 ---
 
-# Eligible Entries — 62 records
+# Eligible Entries — 65 records
 
 From `/gate-core/empty-vehicle-outs/eligible-entries/`. Up: [[_HOME]]
 
+- [[gate-core__empty-vehicle-outs__eligible-entries-1509]] — DL01MB2623
+- [[gate-core__empty-vehicle-outs__eligible-entries-1495]] — HR67C4904
+- [[gate-core__empty-vehicle-outs__eligible-entries-1472]] — HR67C1036
 - [[gate-core__empty-vehicle-outs__eligible-entries-1448]] — HR69E4548
 - [[gate-core__empty-vehicle-outs__eligible-entries-1438]] — HR67C1036
 - [[gate-core__empty-vehicle-outs__eligible-entries-1436]] — RJ11GD2869

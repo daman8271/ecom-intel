@@ -21,6 +21,7 @@ tags:
 - **company_code:** JIVO_MART
 - **company_name:** Jivo Mart
 - **arrival:** None
+- **arrival_no:** None
 - **arrival_status:** None
 - **arrival_company_count:** 0
 - **arrival_can_depart:** False

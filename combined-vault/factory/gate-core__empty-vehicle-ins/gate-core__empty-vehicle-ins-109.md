@@ -20,6 +20,8 @@ tags:
 - **company:** 2
 - **company_code:** JIVO_MART
 - **company_name:** Jivo Mart
+- **arrival:** 12
+- **arrival_no:** ARV-20260623-0009
 - **vehicle_entry:** 957
 - **vehicle_entry_no:** EVGI-20260623-0008
 - **vehicle_entry_status:** COMPLETED

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-plastic-bottle-1l
-display_name: JIVO Extra Light Olive Oil Plastic Bottle (1 L)
+display_name: Jivo Extra Light Olive Oil Plastic Bottle 1l
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-12
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Extra Light Olive Oil Plastic Bottle (1 L)**
+**Jivo Extra Light Olive Oil Plastic Bottle 1l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹1499

@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Users (65)
+title: Users (66)
 tags:
   - moc
   - source/factory
 ---
 
-# Users — 65 records
+# Users — 66 records
 
 From `/accounts/users/`. Up: [[_HOME]]
 
@@ -75,3 +75,4 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-63]] — Arvinder Singh
 - [[accounts__users-52]] — Charanjeet Singh
 - [[accounts__users-70]] — Ekam Singh
+- [[accounts__users-72]] — labour

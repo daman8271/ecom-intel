@@ -16,8 +16,8 @@ tags:
 
 ## Fields
 - **document_type:** STOCK_TRANSFER
-- **doc_entry:** 3103
-- **doc_num:** 626674661
+- **doc_entry:** 3118
+- **doc_num:** 626674667
 - **doc_date:** 2026-06-24
 - **doc_total:** None
 - **branch_id:** 1
@@ -38,11 +38,11 @@ tags:
 - **warehouses:** 
 - **item_summary:** 
 - **base_refs:** 
-- **total_quantity:** 2403.000
+- **total_quantity:** -5520.000
 - **total_litres:** None
 - **total_boxes:** None
 - **total_weight:** None
-- **line_count:** 9
+- **line_count:** 5
 - **items:**
   ```json
   []

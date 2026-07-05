@@ -16,18 +16,18 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35836
-- **doc_num:** 707260117
-- **doc_date:** 2026-07-02
-- **doc_total:** 874706.00
+- **doc_entry:** 35922
+- **doc_num:** 707260143
+- **doc_date:** 2026-07-04
+- **doc_total:** 80.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
-- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **card_code:** CUSTA000930
+- **card_name:** SANTOSH JHA
+- **ship_to_code:** SANTOSH JHA DELHI
+- **ship_to_address:** WAZIR NAGAR KOTLA MUBARAKPUR LODHI ROAD  1465 A THIRD FLOOR GALI NO-7NEW DELHI-110003IN
+- **place_of_supply:** DL
+- **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
 - **transporter_name:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000227 - RICE BRAN 1L 16 PCS
-- **base_refs:** 1707264515
-- **total_quantity:** 2609.000
-- **total_litres:** 1749.000
+- **warehouses:** DL-MP
+- **item_summary:** FG0000403 - PET BOTTLE 250 ML JIVO NATURAL MINERAL SPECIAL EDITION ARSHDEEP * (24 PCS)
+- **base_refs:** 1507264532
+- **total_quantity:** 24.000
+- **total_litres:** 6.000
 - **total_boxes:** 0.000
-- **total_weight:** 2933.099
-- **line_count:** 4
+- **total_weight:** 6.575
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 856, "sap_invoice_doc_entry": 35836, "sap_invoice_doc_num": "707260117", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "location": "Delivery Address: DED3 R K WorldInfocom Pvt Ltd Block J2, Farukhnagar Logistics Parks, LLP  Village- Farrukhnagar, Tehsil- Farrukhanagar Gurgaon 122506", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": "2026-07-02T13:23:44.709690Z", "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": "2026-07-03", "priority": "HIGH", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "04/07/2026 08:30 AM IST", "created_at": "2026-07-02T18:53:44.700832+05:30", "updated_at": "2026-07-02T18:53:44.709690+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35922, "sap_invoice_doc_num": "707260143", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

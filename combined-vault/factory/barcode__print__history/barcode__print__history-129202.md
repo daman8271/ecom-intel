@@ -23,5 +23,6 @@ tags:
 - **reprint_reason:** Dismatle
 - **printed_by:** 19
 - **printed_by_name:** Bhupinder Singh
+- **printed_by_email:** bhupinder@jivo.in
 - **printed_at:** 2026-06-24T14:52:53.590613+05:30
 - **printer_name:** TSC DA310

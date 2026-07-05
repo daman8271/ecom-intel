@@ -1,15 +1,18 @@
 ---
 type: moc
-title: Partial Scan Requests (38)
+title: Partial Scan Requests (41)
 tags:
   - moc
   - source/factory
 ---
 
-# Partial Scan Requests — 38 records
+# Partial Scan Requests — 41 records
 
 From `/docking-admin/partial-scan-requests/`. Up: [[_HOME]]
 
+- [[docking-admin__partial-scan-requests-73]] — DL01MB2623
+- [[docking-admin__partial-scan-requests-71]] — HR67C1036
+- [[docking-admin__partial-scan-requests-70]] — HR67C4904
 - [[docking-admin__partial-scan-requests-68]] — HR69E4548
 - [[docking-admin__partial-scan-requests-67]] — HR67C1036
 - [[docking-admin__partial-scan-requests-66]] — RJ11GD2869

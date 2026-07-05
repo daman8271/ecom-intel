@@ -20,6 +20,8 @@ tags:
 - **company:** 2
 - **company_code:** JIVO_MART
 - **company_name:** Jivo Mart
+- **arrival:** None
+- **arrival_no:** None
 - **vehicle_entry:** 745
 - **vehicle_entry_no:** EVGI-20260618-0006
 - **vehicle_entry_status:** COMPLETED

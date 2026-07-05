@@ -24,9 +24,9 @@ Up: [[Home]]
 
 ## Member products
 - [[A2 GHEE 1L]] — ref ₹1309 / live ₹— (⚪ OOS)
-- [[A2 GHEE 500G]] — ref ₹709 / live ₹649 (🟢 BELOW)
+- [[A2 GHEE 500G]] — ref ₹709 / live ₹— (⚪ OOS)
 - [[BASIL SEEDS 200 GM]] — ref ₹69 / live ₹— (⚪ OOS)
-- [[BASIL SEEDS 400G]] — ref ₹189 / live ₹179 (🟢 BELOW)
+- [[BASIL SEEDS 400G]] — ref ₹189 / live ₹— (⚪ OOS)
 - [[BASIL SEEDS 800 GM]] — ref ₹329 / live ₹— (⚪ OOS)
 - [[BLACK CARDAMOM 100G]] — ref ₹289 / live ₹— (⚪ OOS)
 - [[BLACK OLIVE 470G]] — ref ₹209 / live ₹— (⚪ OOS)
@@ -54,7 +54,7 @@ Up: [[Home]]
 - [[CLOVE 100G]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[COCONUT 1L]] — ref ₹539 / live ₹— (⚪ OOS)
 - [[COCONUT 200ML]] — ref ₹129 / live ₹— (⚪ OOS)
-- [[COCONUT 500ML]] — ref ₹279 / live ₹295 (🔴 ABOVE)
+- [[COCONUT 500ML]] — ref ₹279 / live ₹— (⚪ OOS)
 - [[COFFEE]] — ref ₹239 / live ₹199 (🟢 BELOW)
 - [[CUMIN SEEDS 100G]] — ref ₹75 / live ₹— (⚪ OOS)
 - [[DESI GHEE 1KG]]
@@ -65,12 +65,12 @@ Up: [[Home]]
 - [[EXTRA LIGHT 1+1L]] — ref ₹1189 / live ₹1169 (🟢 BELOW)
 - [[EXTRA LIGHT 1L]] — ref ₹599 / live ₹499 (🟢 BELOW)
 - [[EXTRA LIGHT 2L]] — ref ₹1189 / live ₹1169 (🟢 BELOW)
-- [[EXTRA LIGHT 3L]] — ref ₹1789 / live ₹1499 (🟢 BELOW)
+- [[EXTRA LIGHT 3L]] — ref ₹1789 / live ₹1461 (🟢 BELOW)
 - [[EXTRA LIGHT 500ML]] — ref ₹339 / live ₹269 (🟢 BELOW)
 - [[EXTRA LIGHT 5L]] — ref ₹2969 / live ₹2445 (🟢 BELOW)
 - [[EXTRA VIRGIN 1+1L]] — ref ₹1589 / live ₹1478 (🟢 BELOW)
 - [[EXTRA VIRGIN 1L]] — ref ₹789 / live ₹739 (🟢 BELOW)
-- [[EXTRA VIRGIN 200ML]] — ref ₹189 / live ₹189 (🟦 MATCH)
+- [[EXTRA VIRGIN 200ML]] — ref ₹189 / live ₹169 (🟢 BELOW)
 - [[EXTRA VIRGIN 250ML]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 2L]] — ref ₹1589 / live ₹1359 (🟢 BELOW)
 - [[EXTRA VIRGIN 3L]] — ref ₹2369 / live ₹— (⚪ OOS)
@@ -91,7 +91,7 @@ Up: [[Home]]
 - [[JIVO POMACE 1+1+1L]]
 - [[JIVO POMACE 1+1L]] — ref ₹849 / live ₹758 (🟢 BELOW)
 - [[JIVO POMACE 1L]] — ref ₹429 / live ₹379 (🟢 BELOW)
-- [[JIVO POMACE 2L]] — ref ₹849 / live ₹789 (🟢 BELOW)
+- [[JIVO POMACE 2L]] — ref ₹849 / live ₹849 (🟦 MATCH)
 - [[JIVO POMACE 5L]] — ref ₹2119 / live ₹1549 (🟢 BELOW)
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO WATER 250ML]] — ref ₹109 / live ₹— (⚪ OOS)
@@ -99,11 +99,11 @@ Up: [[Home]]
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
 - [[MUSTARD 1+1L]] — ref ₹409 / live ₹— (⚪ OOS)
-- [[MUSTARD 1L]] — ref ₹209 / live ₹— (⚪ OOS)
+- [[MUSTARD 1L]] — ref ₹209 / live ₹163 (🟢 BELOW)
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹679 (🟢 BELOW)
-- [[MUSTARD 5L]] — ref ₹999 / live ₹910 (🟢 BELOW)
+- [[MUSTARD 5L]] — ref ₹999 / live ₹873 (🟢 BELOW)
 - [[POMACE 3L]] — ref ₹1279 / live ₹1149 (🟢 BELOW)
 - [[PUMPKIN SEEDS 200G]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[PUMPKIN SEEDS 400G]] — ref ₹389 / live ₹— (⚪ OOS)
@@ -146,7 +146,7 @@ Up: [[Home]]
 - [[SOYABEAN 1L POUCH]] — ref ₹199 / live ₹168 (🟢 BELOW)
 - [[SOYABEAN 5L]] — ref ₹949 / live ₹819 (🟢 BELOW)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 1L]] — ref ₹219 / live ₹189 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹219 / live ₹172 (🟢 BELOW)
 - [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹649 / live ₹— (⚪ OOS)
@@ -168,4 +168,4 @@ Up: [[Home]]
 - [[WG MOJITO SF 200ML]]
 - [[WG ROSE 200ML]]
 - [[YELLOW MUSTARD 1L]] — ref ₹259 / live ₹239 (🟢 BELOW)
-- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹999 (🟢 BELOW)
+- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹— (⚪ OOS)

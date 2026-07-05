@@ -21,6 +21,7 @@ tags:
 - **company_code:** JIVO_MART
 - **company_name:** Jivo Mart
 - **arrival:** 12
+- **arrival_no:** ARV-20260623-0009
 - **arrival_status:** LOADING
 - **arrival_company_count:** 1
 - **arrival_can_depart:** True
@@ -131,7 +132,6 @@ tags:
 - **updated_at:** 2026-06-23T14:07:26.643407+05:30
 
 ## Related
-- arrival -> [[arr-12]]
 - company -> [[comp-2]]
 - driver -> [[drv-247]]
 - transporter -> [[trn-64]]

@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Pallet (663)
+title: Pallet (665)
 tags:
   - moc
   - source/factory
 ---
 
-# Pallet — 663 records
+# Pallet — 665 records
 
 From `/barcode/pallets/`. Up: [[_HOME]]
 
@@ -27,6 +27,7 @@ From `/barcode/pallets/`. Up: [[_HOME]]
 - [[pal-3282]] — COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
 - [[pal-3280]] — POMACE OLIVE 1 LTR 16 PCS
 - [[pal-3275]] — SANO POMACE OLIVE 5 LTR TIN 4 PCS
+- [[pal-3273]] — SANO POMACE OLIVE 1 LTR 16 PCS
 - [[pal-3269]] — COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
 - [[pal-3261]] — COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
 - [[pal-3253]] — COLD PRESS 5 LTR 4 PCS
@@ -45,6 +46,7 @@ From `/barcode/pallets/`. Up: [[_HOME]]
 - [[pal-3050]] — FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS
 - [[pal-3037]] — FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS
 - [[pal-3026]] — FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS
+- [[pal-3018]] — POMACE OLIVE 1 LTR 16 PCS
 - [[pal-3016]] — COLD PRESS SUNFLOWER 5 LTR 4 PCS
 - [[pal-3015]] — COLD PRESS SUNFLOWER 5 LTR 4 PCS
 - [[pal-2999]] — COLD PRESS SOYABEAN 5 LTR 4 PCS

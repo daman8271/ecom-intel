@@ -20,6 +20,8 @@ tags:
 - **company:** 2
 - **company_code:** JIVO_MART
 - **company_name:** Jivo Mart
+- **arrival:** 94
+- **arrival_no:** ARV-20260627-0019
 - **vehicle_entry:** 1192
 - **vehicle_entry_no:** EVGI-20260627-0021
 - **vehicle_entry_status:** COMPLETED
@@ -64,6 +66,7 @@ tags:
 - **updated_at:** 2026-06-27T22:49:46.864544+05:30
 
 ## Related
+- arrival -> [[arr-94]]
 - company -> [[comp-2]]
 - driver -> [[drv-297]]
 - vehicle -> [[veh-336]]

@@ -21,6 +21,7 @@ tags:
 - **company_code:** JIVO_MART
 - **company_name:** Jivo Mart
 - **arrival:** 94
+- **arrival_no:** ARV-20260627-0019
 - **arrival_status:** DEPARTED
 - **arrival_company_count:** 2
 - **arrival_can_depart:** False

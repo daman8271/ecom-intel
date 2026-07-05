@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-04
-observations: 208
+last_seen: 2026-07-05
+observations: 216
 latest_status: ABOVE
-below_days: 15
+below_days: 16
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-v
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-04) — ref ₹789 vs live ₹800
-- **Days below reference:** 15 of 26
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]]
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-05) — ref ₹789 vs live ₹800
+- **Days below reference:** 16 of 27
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]]
 
-## Ref-vs-live history (208 observations)
+## Ref-vs-live history (216 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -253,6 +253,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-04,flipkart,BELOW,SVD,789,765,765,765,-24,-3.04,1,true
 2026-07-04,flipkart-minutes,NOT_LISTED,SVD,789,,,,,,0,false
 2026-07-04,zepto,ABOVE,SVD,789,800,789,1044,11,1.39,0,true
+2026-07-05,amazon,BELOW,SVD,789,739,739,739,-50,-6.34,1,true
+2026-07-05,amazon-fresh,BELOW,SVD,789,739,739,739,-50,-6.34,123,true
+2026-07-05,amazon-now,BELOW,SVD,789,739,739,739,-50,-6.34,10,true
+2026-07-05,bigbasket,ABOVE,SVD,789,1012,1012,1060,223,28.26,0,true
+2026-07-05,blinkit,NOT_LISTED,SVD,789,,,,,,0,false
+2026-07-05,flipkart,BELOW,SVD,789,725,725,725,-64,-8.11,1,true
+2026-07-05,flipkart-minutes,NOT_LISTED,SVD,789,,,,,,0,false
+2026-07-05,zepto,ABOVE,SVD,789,800,789,1044,11,1.39,0,true
 ```
 
 ---

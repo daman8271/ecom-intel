@@ -23,5 +23,6 @@ tags:
 - **reprint_reason:** DISMANTLE
 - **printed_by:** 41
 - **printed_by_name:** Jassi
+- **printed_by_email:** jassi@jivo.in
 - **printed_at:** 2026-06-24T14:55:17.619284+05:30
 - **printer_name:** TSC DA310

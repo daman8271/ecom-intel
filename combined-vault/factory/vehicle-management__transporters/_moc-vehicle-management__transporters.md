@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Transporter (91)
+title: Transporter (93)
 tags:
   - moc
   - source/factory
 ---
 
-# Transporter — 91 records
+# Transporter — 93 records
 
 From `/vehicle-management/transporters/`. Up: [[_HOME]]
 
@@ -41,6 +41,7 @@ From `/vehicle-management/transporters/`. Up: [[_HOME]]
 - [[trn-13]] — Echo plast
 - [[trn-67]] — Echo plast india
 - [[trn-16]] — ECHO PLAST INDIA
+- [[trn-95]] — Ecokrin hygiene products
 - [[trn-24]] — Frsystal PET
 - [[trn-73]] — Grover cargo
 - [[trn-60]] — Gurmukh Cargo Service
@@ -68,6 +69,7 @@ From `/vehicle-management/transporters/`. Up: [[_HOME]]
 - [[trn-83]] — nile india
 - [[trn-5]] — OHLAN ROAD CARRIER
 - [[trn-41]] — PAHAL ROAD CARRIER
+- [[trn-94]] — Paramba polymer
 - [[trn-85]] — PICK & SHIP
 - [[trn-75]] — PS ROADLINES INDIA PVT. LTD.
 - [[trn-7]] — Radhey radhey transport co.

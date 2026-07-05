@@ -23,5 +23,6 @@ tags:
 - **reprint_reason:** 33
 - **printed_by:** 41
 - **printed_by_name:** Jassi
+- **printed_by_email:** jassi@jivo.in
 - **printed_at:** 2026-06-29T15:54:02.854108+05:30
 - **printer_name:** TSC DA310
