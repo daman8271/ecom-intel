@@ -95,4 +95,5 @@ echo "[bb-ingest] built $(basename "$XLSX") from $SHAPE drop"
 if [ "$DELIVER" = "--deliver" ]; then
   cp "$XLSX" "$ROOT/output/$(basename "$XLSX")"
   echo "[bb-ingest] delivered -> output/$(basename "$XLSX")"
+  "$ROOT/tools/cron/spool_into_batch.sh" bigbasket "BigBasket" "$ROOT/output/$(basename "$XLSX")" || true
 fi

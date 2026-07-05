@@ -209,4 +209,5 @@ echo "[blinkit-ingest] built $(basename "$XLSX") from Mac drop; review=$VERDICT"
 if [ "$DELIVER" = "--deliver" ]; then
   cp "$XLSX" "$ROOT/output/$(basename "$XLSX")"
   echo "[blinkit-ingest] delivered -> output/$(basename "$XLSX")"
+  "$ROOT/tools/cron/spool_into_batch.sh" blinkit "Blinkit" "$ROOT/output/$(basename "$XLSX")" || true
 fi

@@ -62,4 +62,5 @@ fi
 if [ "$DELIVER" = "--deliver" ]; then
   cp "$XLSX" "$ROOT/output/$(basename "$XLSX")"
   echo "[ingest] delivered -> output/$(basename "$XLSX")"
+  "$ROOT/tools/cron/spool_into_batch.sh" swiggy-instamart "SwiggyInstamart" "$ROOT/output/$(basename "$XLSX")" || true
 fi

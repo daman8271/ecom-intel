@@ -63,7 +63,7 @@ ensure_gateway() {
 }
 
 case "$SLOT" in
-  am) MAX_WAIT=10800 ;;
+  am) MAX_WAIT=1800 ;;   # 30 min cap (owner 2026-07-05): send by ~10:30 with present files; 3h wait made mail slip to 1 PM when a platform failed
   pm) MAX_WAIT=1200 ;;
   *)  MAX_WAIT=60 ;;
 esac
