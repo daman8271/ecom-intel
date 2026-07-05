@@ -672,6 +672,16 @@ if (require.main === module) (async () => {
   // (that would reintroduce the crash). Still write result.json — review.py's baseline/row-collapse
   // check then correctly marks it SUSPECT/BROKEN — but emit a loud alarm so logs show it.
   if (failedPins > PINCODES.length / 2) process.stderr.write('[ALARM] majority of pincodes failed\n');
+  // Persist rotated session cookies back to disk (atomic, 0600) so the transplanted jar
+  // doesn't lose Amazon's server-side rotation race (2026-07-05, goal #66). The caller
+  // holds .amazon-now.lock for the whole run, so this write is single-flight.
+  try {
+    await ctx.storageState({ path: STATE + '.tmp' });
+    fs.copyFileSync(STATE, STATE + '.prev');
+    fs.renameSync(STATE + '.tmp', STATE);
+    fs.chmodSync(STATE, 0o600);
+    process.stderr.write('[session] storageState persisted back (rotation-safe)\n');
+  } catch (e) { process.stderr.write('[session] storageState persist failed (non-fatal): ' + String(e.message).slice(0, 60) + '\n'); }
   await browser.close().catch(() => {});
 
   const allRows = perPin.flatMap((p) => p.rows);

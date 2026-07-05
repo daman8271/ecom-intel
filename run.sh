@@ -81,11 +81,28 @@ echo "[$RUN_ID] scraping $P ($SCRAPER) ..."
 # scrapers drop any row whose resolved location != requested pincode, so even an
 # unexpected collision yields reduced coverage, never wrong prices.
 if { [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; } && command -v flock >/dev/null 2>&1; then
+  SCRAPE_RC=0
   (
     flock -w 2700 8 || { echo "[$RUN_ID] $P: per-account lock not acquired in 45m; skipping this window"; exit 75; }
     echo "[$RUN_ID] $P: per-account lock (.${P}.lock) acquired; scraping ..."
     run_scraper
-  ) 8>"$DIR/.${P}.lock"
+  ) 8>"$DIR/.${P}.lock" || SCRAPE_RC=$?
+  # Alert-on-first-exit-3 (2026-07-05, goal #66): scrape.js exits 3 on SESSION EXPIRED.
+  # Previously the owner only heard about it from the 10:00 selfheal — the 2026-07-05
+  # death at 02:08 wasn't re-imported until 16:04 (14h Fresh data gap). Best-effort.
+  if [ "$SCRAPE_RC" -eq 3 ]; then
+    (
+      set +e
+      [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
+      TG_ALERT_CHAT="${TELEGRAM_OWNER_CHAT_ID:-${TELEGRAM_CHAT_ID:-}}"
+      if [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "$TG_ALERT_CHAT" ]; then
+        curl -s --max-time 30 -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+          --data-urlencode "chat_id=${TG_ALERT_CHAT}" \
+          --data-urlencode "text=🛑 ${P}: Amazon session EXPIRED at $(date '+%d %b %I:%M %p') — scrape aborted (exit 3). Recovery: Cookie-Editor export on a clean IP, then paste it to Claude or run: node platforms/amazon-now/import_cookies.js <export.json> (for fresh: move the output to platforms/amazon-fresh/secrets/amazon-fresh.storageState.json), then ./run.sh ${P}" >/dev/null
+      fi
+    ) || true
+  fi
+  if [ "$SCRAPE_RC" -ne 0 ]; then exit "$SCRAPE_RC"; fi
 else
   run_scraper
 fi

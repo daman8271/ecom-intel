@@ -741,6 +741,16 @@ if (require.main === module) (async () => {
     process.stderr.write(`[ok] ${rec.city} ${rec.pincode} ${matched ? '' : '(GLOW MISMATCH→SKIP) '}freshSvc=${serviceable} -> ${rows.length} fresh (dropped ${dropped_marketplace} mkt${recovered_direct ? `, +${recovered_direct} direct` : ''}) (${((Date.now() - ts) / 1000).toFixed(1)}s) [${i + 1}/${PINCODES.length}]\n`);
     await sleep(300 + Math.random() * 400);
   }
+  // Persist rotated session cookies back to disk (atomic, 0600) so the transplanted jar
+  // doesn't lose Amazon's server-side rotation race (2026-07-05, goal #66). The caller
+  // holds .amazon-fresh.lock for the whole run, so this write is single-flight.
+  try {
+    await ctx.storageState({ path: STATE + '.tmp' });
+    fs.copyFileSync(STATE, STATE + '.prev');
+    fs.renameSync(STATE + '.tmp', STATE);
+    fs.chmodSync(STATE, 0o600);
+    process.stderr.write('[session] storageState persisted back (rotation-safe)\n');
+  } catch (e) { process.stderr.write('[session] storageState persist failed (non-fatal): ' + String(e.message).slice(0, 60) + '\n'); }
   await browser.close().catch(() => {});
 
   // Competitor canonicals are brand-tagged + cross-brand distinct already, so the jivo-only
