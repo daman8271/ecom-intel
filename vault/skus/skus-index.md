@@ -722,7 +722,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-canola-oil-5-litre-with-pomace-olive-oil-1l-5l]] — Jivo Cold Pressed Canola Oil 5 Litre With Pomace Olive Oil 1l 5l
 - [[jivo-cold-pressed-canola-soyabean-oil-1l-each-1l]] — Jivo Cold Pressed Canola Soyabean Oil 1l Each 1l
 - [[jivo-cold-pressed-extra-virgin-coconut-cooking-edible-oil-1-litre-1l]] — Jivo Cold Pressed Extra Virgin Coconut Cooking Edible Oil 1 Litre 1l
-- [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre 1l
+- [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre
 - [[jivo-cold-pressed-groundnut-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre 1 Litre Combo Pack 5l
 - [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
@@ -764,7 +764,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-gold-refined-oil-1l]] — Jivo Gold Refined Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-s-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran S Na
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
-- [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
+- [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran Sunflower Oil 5l
 - [[jivo-green-cardamom-8mm-elaichi-na]] — Jivo Green Cardamom 8mm Elaichi Na
 - [[jivo-groundnut-oil-1-litre-1l]] — Jivo Groundnut Oil 1 Litre 1l
 - [[jivo-groundnut-oil-5-litre-5l]] — Jivo Groundnut Oil 5 Litre 5l
@@ -793,11 +793,11 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-rice-bran-health-oil-5l-kachi-ghani-mustard-oil-5l-5l]] — Jivo Rice Bran Health Oil 5l Kachi Ghani Mustard Oil 5l 5l
 - [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] — Jivo Rice Bran Oil 1 Litre Cooking Oil
 - [[jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Rice Bran Oil 5 Litre 1 Litre Combo Pack 5l
-- [[jivo-rice-bran-oil-5-litre-5l]] — Jivo Rice Bran Oil 5 Litre
+- [[jivo-rice-bran-oil-5-litre-5l]] — Jivo Rice Bran Oil 5 Litre 5l
 - [[jivo-so-olive-oil-1-litre-1l]] — Jivo So Olive Oil 1 Litre 1l
 - [[jivo-so-olive-oil-5-litre-5l]] — Jivo So Olive Oil 5 Litre 5l
 - [[jivo-so-olive-oil-51-liter-na]] — Jivo So Olive Oil 51 Liter Na
-- [[jivo-soolive-oil-1l-1l]] — Jivo So-Olive Oil 1L (1 l)
+- [[jivo-soolive-oil-1l-1l]] — Jivo Soolive Oil 1l 1l
 - [[jivo-soyabean-cooking-oil-5l-kachi-ghani-mustard-oil-5l-5l]] — Jivo Soyabean Cooking Oil 5l Kachi Ghani Mustard Oil 5l 5l
 - [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-f-1l]] — Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l
 - [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-fo-1l]] — Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil Fo 1l
@@ -1129,7 +1129,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L)
 - [[jivo-cooking-sunflower-oil-can-4l]] — JIVO Cooking Sunflower Oil Can (4 L)
 - [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L)
-- [[jivo-extra-light-olive-oil-plastic-bottle-1l]] — JIVO Extra Light Olive Oil Plastic Bottle (1 L)
+- [[jivo-extra-light-olive-oil-plastic-bottle-1l]] — Jivo Extra Light Olive Oil Plastic Bottle 1l
 - [[jivo-healthy-wheatgrass-apple-drink-sugar-free-200ml]] — Jivo Healthy Wheatgrass Apple Drink Sugar Free 200ml
 - [[jivo-healthy-wheatgrass-blueberry-drink-sugar-free-200ml]] — Jivo Healthy Wheatgrass Blueberry Drink Sugar Free 200ml
 - [[jivo-healthy-wheatgrass-ginger-ale-drink-sugar-free-200ml]] — Jivo Healthy Wheatgrass Ginger Ale Drink Sugar Free 200ml
