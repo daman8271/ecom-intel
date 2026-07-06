@@ -9,9 +9,10 @@ appended Predictions sheet) plus an **Obsidian-style Markdown "memory vault"**. 
 unattended on a Hostinger VPS via **cron — one deadline-aligned sweep daily, so all
 reports LAND together at 10:00 AM IST** (the serial chain starts early — per-platform
 runtimes predicted from history — and finished reports wait at a barrier, then ship as ONE
-batch at the slot time) **plus an 18:00 guardian deep-dive** — with an automated review, an
-auto-heal guardian, self-heal, and verdict-gated Telegram delivery. Built and pitched to
-Jivo's head of e-commerce.
+batch at the slot time; residential-required collectors such as Blinkit feed the same
+batch from the Mac Pro) **plus an 18:00 guardian deep-dive** — with an automated review,
+an auto-heal guardian, self-heal, and verdict-gated Telegram delivery. Built and pitched
+to Jivo's head of e-commerce.
 
 > Companion docs: [`CLAUDE.md`](CLAUDE.md) (operator quick-reference, auto-loads in
 > Claude Code) · [`REPORT.md`](REPORT.md) (platform-coverage map) ·
@@ -49,7 +50,7 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 
 | Platform | Type | Status | Coverage | Jivo SKUs | Notes |
 |---|---|---|---|---|---|
-| **Blinkit** | quick-comm | ✅ LIVE | 161/332 stores carry Jivo (≈798 pincodes) | ~8 | `localStorage` location override, no proxy |
+| **Blinkit** | quick-comm | ✅ LIVE | 902 daily pincodes / 468 Jivo-priced pins in the 2026-07-06 auth-corrected run | ~8 | Mac Pro residential collector; authenticated Blinkit session required; no anonymous fallback |
 | **** | quick-comm | ⚠️ BLOCKED | 332 pincodes | ~8 | stealth POST to `/search/v2`, now **offset-paginated** for the full catalogue; but the DC IP is **403-blocked again (0 rows, 2026-06-05)** → needs a residential proxy or a logged-in  session (`platforms//LOGIN-COOKIES.md`). 403 fail-safe → review BROKEN, never ships. |
 | **Zepto** | quick-comm | ✅ LIVE | 332 pincodes | ~11 | reached via `bff-gateway.zeptonow.com` BFF API (the CloudFront website still 403s — gateway is direct), no proxy |
 | **Flipkart Minutes** | quick-comm | ✅ LIVE | 345 pincodes | ~10 | `HYPERLOCAL` store; GPS "use my location" |
@@ -91,13 +92,23 @@ pincode-wise QC platforms — **Blinkit, Zepto, Flipkart-minutes** — across th
 the canonical India Post directory; see [`docs/pincodes/india-pincode-universe.md`](docs/pincodes/india-pincode-universe.md)
 and `tools/pincodes/universe25.py`).
 
-- **Three modes (gated, non-breaking):** `COVERAGE_DAILY=1` → daily Jivo-priced subsets
-  (`pincodes.daily.json`, blinkit 486 / zepto 693 / fkm 340); `COVERAGE_FULL=1` → full
-  1,885-pincode census (`pincodes.full25.json`); flag unset → old anchor `pincodes.json`
-  (never touched — the rollback).
+- **Three modes (gated, non-breaking):** `COVERAGE_DAILY=1` → daily
+  serviceable/Jivo-priced configs (`pincodes.daily.json`; Blinkit auth-corrected
+  run on 2026-07-06 used 902 pins, resolved 870, and found 468 Jivo-priced pins;
+  zepto 693 / fkm 340); `COVERAGE_FULL=1` → full 1,885-pincode census
+  (`pincodes.full25.json`); flag unset → old anchor `pincodes.json` (never
+  touched — the rollback).
 - **The daily cron now runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) — QC scrapes the
   Jivo-priced subsets, not anchors. Amazon stays on anchors. The **weekly full census**
   refreshes which pincodes qualify for the daily set.
+- **Blinkit daily run is off-box on the Mac Pro at 03:45 IST** via
+  `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`, installed as
+  LaunchAgent `com.danny.blinkit-mac-to-vps`. It requires saved login/auth state
+  at `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, exports
+  `BLINKIT_REQUIRE_AUTH=1`, and VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`.
+  The result summary must include `auth_session` and `auth_required`;
+  unauthenticated Blinkit drops are rejected because anonymous sessions can produce
+  false Out of Stock rows.
 - **Configs:** `platforms/<p>/pincodes.daily.json` + `pincodes.full25.json` (regen via
   `tools/pincodes/gen_full_configs.py`).
 - **Honest coverage ledger:** `data/coverage/ledger.csv` records, per
@@ -119,16 +130,18 @@ and `tools/pincodes/universe25.py`).
 ## How to run
 
 ```bash
-./run.sh <platform>     # blinkit |  | zepto | flipkart-minutes | flipkart
-                        # | amazon | amazon-fresh | amazon-now | bigbasket   (9 in the serial cron sweep)
+./run.sh <platform>     # zepto | flipkart-minutes | flipkart
+                        # | amazon | amazon-fresh | amazon-now   (VPS-hosted serial sweep)
                         # the serial sweep guarantees amazon-now never co-runs with amazon-fresh
-                        #  is in the loop but currently 403-blocked (0 rows → held back)
+                        # blinkit and bigbasket are Mac-only in production; their
+                        # ./run.sh paths are guarded unless an explicit diagnostic
+                        # env var is set
 ```
 
 Examples:
 
 ```bash
-./run.sh blinkit                       # scrape + build Excel + deliver, ~100s
+ssh macpro '$HOME/VPS-Migration/scripts/run_blinkit_mac_to_vps.sh'  # Blinkit full Mac run + VPS ingest/delivery
 ./run.sh amazon                        # marketplace catalog, ~30s
 cat platforms/blinkit/result.json | python3 -m json.tool | head   # raw data
 ls output/                             # the generated Excel reports
@@ -299,16 +312,15 @@ polls from 00:00-09:00 and only takes over after the 00:35 primary-launch grace.
 two-sweep overlap concern is moot; the `.sweep-chain.lock` guard remains as a harmless
 backstop (the historical two-slot analysis lives in `crontab.proposed.txt`'s comments).
 
-> **Why serial, not parallel:** running all 9 at once **starved** each scraper
+> **Why serial, not parallel:** running all VPS-hosted scrapers at once **starved** each scraper
 > (CPU/network contention → thin, partial data the hardened review.py rejects) and made
 > the 3 Amazon storefronts thrash their one shared account/server-side location. Serial
 > gives each platform full resources + clean store re-resolution, and the Amazon trio runs
-> consecutively so it can never overlap. A full sweep is **~2h25m** (blinkit alone
-> ~69 min); the single daily batch lands at 10:00, the serial chain finishing before its
-> 10:00 barrier. `run_all.sh` holds the
-> **authoritative** live-platform list and runs them in this order: ,
-> flipkart-minutes, flipkart, zepto, bigbasket, amazon, amazon-fresh, amazon-now, **blinkit
-> last**. Each `run.sh`'s git-push is `flock`-serialized (`.gitpush.lock`). Preview the cron
+> consecutively so it can never overlap. Blinkit is no longer a VPS serial-sweep member:
+> the Mac Pro LaunchAgent runs the authenticated collector at 03:45 IST and VPS ingest
+> accepts only auth-marked drops. The single daily batch lands at 10:00, the serial chain
+> finishing before its 10:00 barrier. `run_all.sh` holds the authoritative VPS-hosted
+> platform list. Each `run.sh`'s git-push is `flock`-serialized (`.gitpush.lock`). Preview the cron
 > block via `./setup_cron.sh --print` (or `DRY_RUN=1`); the script is idempotent (rewrites
 > only `# ecom-intel` lines) and sets the timezone (`timedatectl set-timezone
 > Asia/Kolkata`). **amazon-now is in the serial sweep** but never co-runs with amazon-fresh
@@ -339,8 +351,8 @@ crontab -l                # inspect what's actually installed
 git clone https://github.com/daman8271/ecom-intel.git /opt/ecom-intel
 cd /opt/ecom-intel
 
-# 2. Per-platform deps — Node packages + the Chromium browser binary
-for p in blinkit  flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now; do
+# 2. VPS-hosted platform deps — Node packages + the Chromium browser binary
+for p in flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now; do
   ( cd "platforms/$p" && npm install && npx playwright install chromium )
 done
 # (also: sudo npx playwright install-deps  — system libs for headless Chromium)
@@ -357,11 +369,17 @@ chmod 600 secrets.env
 #     node platforms/amazon-now/import_cookies.js   (writes the shared storageState;
 #     amazon-fresh.storageState.json is a symlink to it). Valid ~1 year.
 
+# 3c. Blinkit production is Mac/drop-fed and auth-required:
+#     Mac auth state: /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
+#     VPS emergency/shard auth state: /opt/ecom-intel/secrets/blinkit-auth-state.json
+#     Mac wrapper: /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
+#     LaunchAgent: com.danny.blinkit-mac-to-vps at 03:45 IST
+
 # 4. Install cron (sets TZ to Asia/Kolkata, schedules runs + healthcheck)
 ./setup_cron.sh
 
-# 5. Smoke-test one platform
-./run.sh blinkit
+# 5. Smoke-test one VPS-hosted platform
+./run.sh amazon
 ```
 
 **Prerequisites on a fresh box:** Node (tested on **v22**), Python 3 with
@@ -384,9 +402,9 @@ and restore via the runbook above, never via the Hostinger catalog.
 ecom-intel/
 ├── README.md              # this file
 ├── CLAUDE.md              # operator quick-reference (auto-loads in Claude Code)
-├── REPORT.md              # platform-coverage map (9 in the serial cron sweep;  403-blocked)
+├── REPORT.md              # platform-coverage map
 ├── run.sh                 # ./run.sh <p> — scrape → Excel → predict → review → vault → telegram → push
-├── run_all.sh             # one cron sweep: scrape all 8 live platforms SERIALLY (~2h;  removed 2026-06-06) → per-scrape guardian auto-heal → self-heal
+├── run_all.sh             # one cron sweep: VPS-hosted platforms serially; off-box Mac collectors spool vetted reports
 ├── healthcheck.sh         # self-heal: detect broken runs → Claude Code safe repair
 ├── setup_cron.sh          # (re)install cron (idempotent: 10:00 deadline sweep + 18:00 guardian deep-dive, IST), set timezone
 ├── secrets.env            # Telegram creds (gitignored — recreate after wipe)
@@ -403,8 +421,8 @@ ecom-intel/
 │   └── proxy.js           # residential-proxy helper (see docs/PROXY.md)
 │
 ├── platforms/
-│   ├── blinkit/                  # ✅ LIVE — proven reference implementation
-│   │   ├── SKILL.md              # the scraping recipe: selectors, location trick, quirks
+│   ├── blinkit/                  # ✅ LIVE — Mac/drop auth-required collector + ingest
+│   │   ├── SKILL.md              # the scraping recipe: auth guard, selectors, location trick, quirks
 │   │   ├── scrape.js             # Playwright scraper → result.json (deterministic, no LLM)
 │   │   ├── build_excel.py        # result.json → 6-sheet branded Excel
 │   │   ├── pincodes.json         # 332 store coords covering 798 pincodes

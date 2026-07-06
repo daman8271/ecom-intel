@@ -5,6 +5,10 @@ checkpoint/resume, block-detection + exponential backoff, and partial-run tolera
 **No proxies, no WAF-evasion** — on a block we only wait and retry politely, then record
 `0 rows` and flag the run `partial`. (Owner hard rule.)
 
+2026-07-06 update: authenticated availability is now a required correctness condition.
+Anonymous Blinkit sessions can return false Out of Stock for live SKUs, so production
+runs fail closed unless `BLINKIT_REQUIRE_AUTH=1` has a valid auth state.
+
 ## Code map (line numbers as of this commit)
 
 | Concern | Location |
@@ -33,6 +37,10 @@ checkpoint/resume, block-detection + exponential backoff, and partial-run tolera
 3. **Partial tolerance** — one pincode can never throw out of the loop (errors are caught
    in `scrapeOne`; the loop body never rethrows). The run always writes `result.json` with
    a top-level `partial` flag (and `summary.partial` / `summary.pincodes_blocked`).
+4. **Auth-required fail-closed mode** — `BLINKIT_REQUIRE_AUTH=1` exits before scraping
+   if no Blinkit token is available. Authenticated runs mark `summary.auth_session=1`
+   and `summary.auth_required=1`; downstream ingest rejects unauthenticated drops by
+   default.
 
 SIM hooks for hermetic tests (inert in production — only active when the env var is set):
 `BLINKIT_SIM=1` returns a synthetic resolved row with no browser; `BLINKIT_BLOCK_SIM=1`
@@ -72,6 +80,29 @@ Observed (2026-06-28):
 
 Conclusion: blocks back off, then degrade honestly to 0 rows + `partial=true` and exit 0;
 the run is never killed and no fabricated rows are recorded.
+
+## Fault-injection test 3 — auth-required fail closed  ✅ PASS
+
+Steps (hermetic, SIM mode; no live Blinkit calls):
+
+```sh
+# Missing auth must fail before scraping.
+BLINKIT_SIM=1 BLINKIT_REQUIRE_AUTH=1 PINCODES_FILE=test3.json \
+  OUT_FILE=res-noauth.json node scrape.js ; echo "exit=$?"
+
+# Valid auth state must mark the summary as authenticated.
+BLINKIT_SIM=1 BLINKIT_REQUIRE_AUTH=1 \
+  BLINKIT_AUTH_STATE_FILE=/opt/ecom-intel/secrets/blinkit-auth-state.json \
+  PINCODES_FILE=test3.json OUT_FILE=res-auth.json node scrape.js
+```
+
+Observed (2026-07-06):
+- Missing auth exited `3` with `[auth] BLINKIT_REQUIRE_AUTH=1 but no Blinkit access token was provided`.
+- Valid auth wrote `result.json` with `summary.auth_session: 1` and
+  `summary.auth_required: 1`.
+
+Conclusion: the scraper cannot silently fall back to anonymous Blinkit when auth is
+required, which prevents the 2026-07-06 false-OOS class from recurring.
 
 ## Known caveat
 The checkpoint filename uses the **UTC** date (`new Date().toISOString()`), while

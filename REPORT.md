@@ -1,17 +1,24 @@
 # ecom-intel — platform coverage report
 
-**Last updated:** 2026-05-31 · **Run from:** Hostinger VPS (datacenter IP) · **Brand:** Jivo
+**Last updated:** 2026-07-06 · **Run from:** Hostinger VPS + Mac Pro residential collectors · **Brand:** Jivo
 
-This is the "does the datacenter IP catch us" map across all target platforms,
-plus where Jivo actually has presence. Generated Excel reports for every live
-platform are in `output/`.
+This is the operating coverage map across all target platforms, plus where Jivo
+actually has presence. Generated Excel reports for every live platform are in
+`output/`.
 
-## TL;DR (2026-05-31)
-- **9 platforms are LIVE** and running on cron: Blinkit, , Zepto,
+## TL;DR (2026-07-06)
+- **9 platforms are LIVE** in the daily system: Blinkit, , Zepto,
   Flipkart Minutes, Flipkart, Amazon, **Amazon Fresh**, **Amazon Now**, **BigBasket**.
-- **7 of the 9 run DIRECT** from this VPS IP with **no proxy and no login**:
-  Blinkit, , Zepto, Flipkart Minutes, Flipkart, Amazon, BigBasket
-  (BigBasket needs a stealth browser past Akamai, but no login and no proxy).
+- **Blinkit is Mac/drop-fed and auth-required.** It runs on the Mac Pro residential
+  session via `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`
+  under LaunchAgent `com.danny.blinkit-mac-to-vps` at **03:45 IST**. The wrapper
+  uses `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, exports
+  `BLINKIT_REQUIRE_AUTH=1`, and VPS ingest rejects unauthenticated drops by default
+  with `BLINKIT_REQUIRE_AUTH_DROP=1`.
+- **VPS emergency/manual Blinkit auth state** lives at
+  `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Do not publish or accept
+  anonymous Blinkit stock data; `summary.auth_session` and `summary.auth_required`
+  must be present/truthy for auth-required production drops.
 - **Amazon Fresh** went LIVE **2026-05-30** — it does need a **logged-in session**
   (cookies transplanted from a clean IP, see below), but no proxy. It is the
   `i=freshstore` storefront and is **~7× richer than Amazon Now** (~63 Jivo SKUs
@@ -31,14 +38,15 @@ platform are in `output/`.
   fetch** calls the `listing-svc` JSON API. BigBasket "BB" prices Jivo
   **nationally**, so (like Flipkart) it scrapes once and tags rows "All India"
   (~27 SKUs, no proxy, no login).
-- All live scrapers run on a **1×/day serial deadline-aligned cron landing 12:00 noon IST**
-  via `run_all.sh`, with a self-heal sweep at the end of the sweep.
+- VPS-hosted scrapers run in a **1×/day serial deadline-aligned cron landing
+  10:00 IST** via `run_all.sh`; Mac collectors feed vetted outputs into the same
+  batch/ingest path.
 
 ## Working platforms (current cron)
 
 | Platform | Type | Coverage | Jivo SKUs | Notes |
 |---|---|---|---|---|
-| **Blinkit** | quick-comm | 161/332 stores · ~798 pincodes | ~8 | `localStorage` location override |
+| **Blinkit** | quick-comm | 2026-07-06 auth-corrected daily: 902 pins, 870 resolved, 468 Jivo pins, 1915 rows, 0 blocked, 303 stores | ~8 | Mac Pro residential collector; saved Blinkit login/auth cookie state required; no anonymous fallback |
 | **** | quick-comm | 332 pincodes | ~8 | stealth POST to `/api//search/v2` |
 | **Zepto** | quick-comm | 332 pincodes (≈100 carry Jivo) | ~11 | reached via `bff-gateway.zeptonow.com` BFF API |
 | **Flipkart Minutes** | quick-comm | 345 pincodes | ~10 | HYPERLOCAL store; GPS "use my location" |
@@ -48,22 +56,27 @@ platform are in `output/`.
 | **Amazon Now** | quick-comm | ~317/332 pincodes serviceable | ~23 | logged-in (same session as Fresh); `i=nowstore`; per-pincode `now_slot` delivery windows; ~1.7k rows/run; SERIALIZED with Fresh via shared lock |
 | **BigBasket** | grocery (national) | national (single "All India") | ~27 | stealth browser past Akamai + in-page `listing-svc` JSON API; national pricing → 1 row/SKU; no proxy, no login |
 
-## Per-pincode coverage (Wave 1 — 2026-06-29)
+## Per-pincode coverage (Wave 1, auth-corrected 2026-07-06)
 
 True per-pincode ground truth across the **25 target cities (1,885 distinct pincodes)**, replacing
 anchor extrapolation. Honest status per `(platform,pincode)` in `data/coverage/ledger.csv`
-(`price_captured | serviceable_no_jivo | not_serviceable | error`). **Full 5-platform census — latest as of 2026-06-30.**
+(`price_captured | serviceable_no_jivo | not_serviceable | error`). Blinkit values
+below are superseded by the authenticated 2026-07-06 corrected daily run.
 
 | Platform | Serviceable (of 1,885) | Jivo on sale | Notes |
 |---|--:|--:|---|
 | **Amazon Fresh** | **973** | **881** | widest network; richest catalog (39 SKUs). 92-pincode gap (Nagpur 27, TVM 19). Only Nashik dark. |
-| **Blinkit** | **902** | **486** | all 25 cities; **416-pincode delivers-but-no-Jivo gap** (Chennai 49, Kochi 46, Ahmedabad 41). |
+| **Blinkit** | **902 configured** / **870 resolved** | **468** | auth-corrected daily run; 1915 rows, 0 blocked, 303 stores. Saved login/auth state required. |
 | **Zepto** | **693** | 693 | Jivo everywhere it serves; ⚠ only 33% in-stock (2/3 OOS). 0 in Vizag/Bhubaneswar/TVM. |
 | **Flipkart-minutes** | **340** | 340 | metro-led; reaches Vizag (4) where Zepto is 0. Cookies expire ~daily → browser fallback. |
 | **Amazon Now** | **132** | 132 | narrowest; 88% just Bengaluru+Chennai. 0 in 19 cities — metro express lane only. |
 | **Combined (any platform)** | **1,173 / 1,885 (62%)** | **1,071 (57%)** | was 234 (12%) on the old anchor model — ~5× real coverage. |
 
-- **Daily cron runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) → QC scrapes the **Jivo-priced subsets** (blinkit 486 / zepto 693 / fkm 340), not anchors. Weekly full census refreshes the set.
+- **Daily cron runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) → QC scrapes
+  serviceable/Jivo-priced daily configs, not anchors. Blinkit is off-box and
+  auth-required: 902 configured pins, 870 resolved, 468 Jivo-priced pins in the
+  2026-07-06 corrected run. VPS-run Zepto/FKM use zepto 693 / fkm 340. Weekly
+  full census refreshes the set.
 - **Amazon Wave 2 COMPLETE** — amazon-fresh (acct 259, 973) + amazon-now (acct 520, 132), **separate accounts, never summed/co-scraped**; full per-pincode via `tools/coverage/amazon_chunked.sh` → `amazon_merge.py` → `amazon_ledger.py`. Live HTML: `darkstore-dashboard.vercel.app` (5-platform).
 
 ## Amazon Fresh — how the logged-in scrape works (no proxy)
@@ -105,10 +118,15 @@ stays wired only as insurance if **Amazon** ever escalates from the interstitial
 to a captcha on the datacenter IP. See `docs/PROXY.md`.
 
 ## Operational state
-- **Cron (IST):** `run_all.sh` scrapes the live platforms **serially** as one
-  **deadline-aligned sweep landing 12:00 noon**, then runs the self-heal sweep at the end of the sweep
-  (flags any platform <20 rows / stale and re-runs once / escalates to Telegram).
-  `amazon-now` runs too, serialized with `amazon-fresh` via the shared lock (see above).
+- **Cron (IST):** `run_all.sh` scrapes VPS-hosted platforms **serially** as one
+  **deadline-aligned sweep landing 10:00**, then runs the self-heal sweep at the
+  end of the sweep (flags any platform <20 rows / stale and re-runs once /
+  escalates to Telegram). `amazon-now` runs too, serialized with `amazon-fresh`
+  via the shared lock (see above). Blinkit is not anonymous and not part of the
+  VPS serial scrape: the Mac Pro LaunchAgent `com.danny.blinkit-mac-to-vps` runs
+  `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` at 03:45 IST,
+  using `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` and
+  `BLINKIT_REQUIRE_AUTH=1`; VPS ingest uses `BLINKIT_REQUIRE_AUTH_DROP=1`.
 - **Amazon canonical auto-heal (LIVE 2026-06-13):** the recurring Amazon `shared_price_dup`
   hold — a *truncated* product title minting a duplicate "stub" SKU at the same ASIN/price — is
   now auto-fixed in `run.sh`: Claude merges each stub into its real product (identity-only,
@@ -132,7 +150,7 @@ the logged-in cookie-transplant session.
 
 | Platform | Type | Coverage | Jivo SKUs | Rows | Time | Notes |
 |---|---|---|---|---|---|---|
-| **Blinkit** | quick-comm | 28/40 pincodes carry Jivo | 8 | 126 | 98s | proven; localStorage location |
+| **Blinkit** | quick-comm | 28/40 pincodes carry Jivo | 8 | 126 | 98s | historical launch snapshot; current production is Mac/drop auth-required |
 | **Flipkart Minutes** | quick-comm | 26/40 pincodes carry Jivo | 10 | 72 | ~3 min | HYPERLOCAL store; GPS "use my location" click |
 | **Flipkart** | marketplace | national | 61 | 61 | 16s | national pricing; 1 row per SKU |
 | **Amazon** | marketplace | national | 163 | 163 | 27s | richest catalog; needs interstitial bypass |

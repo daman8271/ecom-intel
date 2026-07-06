@@ -4,11 +4,13 @@ Design deep-dive. For operating instructions see the top-level
 [`README.md`](../README.md); for the live platform-coverage map see
 [`REPORT.md`](../REPORT.md).
 
-> **Status (updated 2026-06-28 — now 1×/day):** the full pipeline is **WIRED and running on cron** —
+> **Status (updated 2026-07-06 — now 1×/day):** the full pipeline is **WIRED and running on cron** —
 > `scrape → build_excel → predict → review → vault/history → telegram → commit/push`
-> all execute inside `run.sh`, and `run_all.sh` drives a **SERIAL** sweep (one platform at
-> a time; ~2h chain after 's 2026-06-06 removal) of the **7 live platforms** (bigbasket runs
-> as a separate 03:00 pincode job), with a
+> all execute inside `run.sh` for VPS-hosted platforms, and `run_all.sh` drives a
+> **SERIAL** sweep (one platform at a time; ~2h chain after 's 2026-06-06 removal).
+> Off-box Mac collectors feed vetted outputs into the same delivery batch where required:
+> Blinkit runs on the Mac Pro residential session at **03:45 IST** with authenticated
+> Blinkit state, while bigbasket runs as a separate 03:00 pincode job. The sweep has a
 > **per-scrape auto-heal guardian** and a self-heal backstop. Cron is **DEADLINE-ALIGNED**
 > (owner requirement 2026-06-06): `tools/cron/deadline_sweep.sh` fires **early in the small
 > hours** (predicts its lead and sleeps so the batch lands at 10:00 — cut from 2×/day to one
@@ -125,7 +127,15 @@ This is the single biggest source of per-platform code difference:
   *hyperlocal* — price/stock depend on the dark store serving a pincode, so we **loop
   every pincode** (332–798 depending on platform, scaled up from the original top-20-city
   set) and set the delivery location each time:
-  - **Blinkit** — write `localStorage.location` directly, no login. (Proven reference.)
+  - **Blinkit** — Mac Pro/residential Playwright collector. It must hydrate an
+    authenticated Blinkit session (`localStorage.auth`, `localStorage.deviceId`, and
+    `gr_1_accessToken` / `gr_1_deviceId` cookies) before writing
+    `localStorage.location`; anonymous/headless Blinkit can return false Out of Stock
+    for live SKUs. Production runs with `BLINKIT_REQUIRE_AUTH=1` using
+    `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` on the Mac collector
+    or `/opt/ecom-intel/secrets/blinkit-auth-state.json` for VPS emergency/manual
+    shards. Summaries must carry `auth_session` and `auth_required`; ingest defaults
+    to `BLINKIT_REQUIRE_AUTH_DROP=1` and rejects unauthenticated drops.
   - **** — stealth POST to its public search API `/api//search/v2`
     (now **offset-paginated** for the full Jivo catalogue, c0bc409), location in the
     request body — no page render. **Currently 403-blocked at the IP level (0 rows,
@@ -186,10 +196,14 @@ Serviceability* sheet on top of the standard layout.
 ## 5. Pipeline & orchestration
 
 ```
-cron (IST: fire early → slot 10:00 AM; + 03:00 bigbasket pincode pull; 18:00 guardian deep-dive)
+cron (IST: fire early → slot 10:00 AM; + 03:00 bigbasket pull; + 03:45 Blinkit Mac collector; 18:00 guardian deep-dive)
+  ├─ Mac Pro launchd com.danny.blinkit-mac-to-vps
+  │    └─ /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
+  │       ├─ BLINKIT_REQUIRE_AUTH=1 with /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
+  │       └─ VPS ingest with BLINKIT_REQUIRE_AUTH_DROP=1 → build/review/deliver
   └─ tools/cron/deadline_sweep.sh 10:00 — predict chain runtime (durations.jsonl p90),
   │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE
-  └─ run_all.sh — scrape the 7 LIVE platforms SERIALLY ( removed 2026-06-06; ~2h chain)
+  └─ run_all.sh — scrape VPS-hosted LIVE platforms SERIALLY ( removed 2026-06-06; ~2h chain)
        ├─ tools/cron/record_duration.sh <p> <secs>  (per platform — self-learning ledger)
        ├─ tools/cron/send_batch.py — barrier: sleep to deadline, deliver ALL reports as ONE batch
        └─ run.sh <platform>   (per platform, all steps WIRED)
@@ -211,12 +225,14 @@ cron (IST: fire early → slot 10:00 AM; + 03:00 bigbasket pincode pull; 18:00 g
        + alert on any NEW bug class vs yesterday
 ```
 
-**Why serial (not parallel):** running all 9 at once starved each scraper (CPU/network
+**Why serial (not parallel):** running all VPS-hosted scrapers at once starved each scraper (CPU/network
 contention → thin, partial data the hardened review.py rejects) and made the 3 Amazon
 storefronts thrash their one shared account/server-side location. Serial gives each
 platform full resources + clean store re-resolution, and the Amazon trio runs
 consecutively so it can never overlap. Order: light platforms first, the Amazon trio
-consecutive, **blinkit last** (slowest — its patient per-pincode store re-resolution).
+consecutive. Blinkit is no longer a VPS serial-sweep member; the full authenticated
+collector runs off-box on the Mac Pro residential session and the vetted output enters
+the delivery path only after auth/session validation.
 
 > Every step after `scrape.js` is best-effort (`|| true`) and can never fail the run.
 > `healthcheck.sh` is the older self-heal variant (`rows<20` / `>15h` stale → `claude -p`

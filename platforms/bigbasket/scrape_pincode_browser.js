@@ -31,7 +31,7 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
 const QUERIES = (process.env.BB_QUERIES
   ? process.env.BB_QUERIES.split(',')
-  : ['jivo', 'jivo oil', 'jivo olive oil', 'jivo juice', 'jivo vinegar', 'jivo honey']
+  : ['jivo']
 ).map((s) => s.trim()).filter(Boolean);
 
 function sleep(ms) {
@@ -185,17 +185,26 @@ async function setPincode(page, pin) {
     const predictions = (auto && auto.predictions) || [];
     const pick = pickPrediction(predictions, pincode, pin.city);
     const placeId = pick && (pick.placeId || pick.place_id || pick.id);
-    if (!placeId) return { ok: false, stage: 'autocomplete', status: autoResp.status, detail: 'no placeId' };
-
-    const detResp = await fetch(`/places/v1/places/details/?placeId=${encodeURIComponent(placeId)}&token=${token}&xArm=1004&yArm=252`, {
-      headers: { ...common, 'x-entry-context': 'bb-b2c', 'x-entry-context-id': '100' },
-    });
-    const det = await readJson(detResp);
-    if (!detResp.ok) return { ok: false, stage: 'details', status: detResp.status, detail: det };
-    const loc = det && det.geometry && det.geometry.location;
-    const lat = loc && (loc.lat || loc.latitude);
-    const lng = loc && (loc.lng || loc.longitude);
-    if (lat == null || lng == null) return { ok: false, stage: 'details', status: detResp.status, detail: 'no lat/lng' };
+    let lat = null;
+    let lng = null;
+    let chosen = pick && pick.description;
+    if (placeId) {
+      const detResp = await fetch(`/places/v1/places/details/?placeId=${encodeURIComponent(placeId)}&token=${token}&xArm=1004&yArm=252`, {
+        headers: { ...common, 'x-entry-context': 'bb-b2c', 'x-entry-context-id': '100' },
+      });
+      const det = await readJson(detResp);
+      if (!detResp.ok) return { ok: false, stage: 'details', status: detResp.status, detail: det };
+      const loc = det && det.geometry && det.geometry.location;
+      lat = Number(loc && (loc.lat || loc.latitude));
+      lng = Number(loc && (loc.lng || loc.longitude));
+    } else {
+      lat = Number(pin.lat);
+      lng = Number(pin.lon != null ? pin.lon : pin.lng);
+      chosen = `config:${pincode}`;
+    }
+    if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+      return { ok: false, stage: 'details', status: placeId ? 200 : autoResp.status, detail: 'no lat/lng' };
+    }
 
     const before = parseCookies();
     const serviceResp = await fetch(`/ui-svc/v1/serviceable/?lat=${encodeURIComponent(lat)}&lng=${encodeURIComponent(lng)}&send_all_serviceability=true`, {
@@ -224,6 +233,19 @@ async function setPincode(page, pin) {
     const addr = await readJson(addrResp);
     if (!addrResp.ok) return { ok: false, stage: 'address', status: addrResp.status, detail: addr };
 
+    const responseCookies = (addr && addr.cookies) || {};
+    const locationCookieNames = new Set([
+      '_bb_cid', '_bb_pin_code', '_bb_lat_long', '_bb_sa_ids', '_bb_cda_sa_info',
+      '_bb_addressinfo', '_bb_visaddr', '_bb_hid', '_bb_nhid', '_bb_dsid',
+      '_bb_dsevid', '_bb_locSrc', 'xentrycontext', 'xentrycontextid',
+      'jentrycontextid', 'is_global', 'is_integrated_sa', 'is_subscribe_sa',
+      'isintegratedsa',
+    ]);
+    for (const [name, value] of Object.entries(responseCookies)) {
+      if (!locationCookieNames.has(name) || value == null || value === '') continue;
+      document.cookie = `${encodeURIComponent(name)}=${encodeURIComponent(String(value))}; path=/; domain=.bigbasket.com`;
+    }
+
     await new Promise((resolve) => setTimeout(resolve, 1200));
     const after = parseCookies();
     const places = (service && service.places_info) || {};
@@ -231,15 +253,16 @@ async function setPincode(page, pin) {
       ok: true,
       stage: 'done',
       status: addrResp.status,
-      chosen: pick.description || `${pincode}`,
+      chosen: chosen || `${pincode}`,
       lat,
       lng,
       city: addr && (addr.city_name || addr.city) || places.city || pin.city,
-      pincode: addr && (addr.pin || addr.pincode) || places.pincode || pincode,
+      pincode,
+      resolved_pincode: addr && (addr.pin || addr.pincode) || places.pincode || pincode,
       locality: addr && addr.area || places.area || places.locTitle || pin.locality || '',
-      serving_sa: after._bb_sa_ids || '',
-      entry_context: after.xentrycontext || '',
-      entry_context_id: after.xentrycontextid || '',
+      serving_sa: responseCookies._bb_sa_ids || after._bb_sa_ids || '',
+      entry_context: responseCookies.xentrycontext || after.xentrycontext || '',
+      entry_context_id: responseCookies.xentrycontextid || after.xentrycontextid || '',
     };
   }, { pin });
 }
@@ -262,6 +285,7 @@ async function fetchRowsForPin(page, loc) {
         ...r,
         city: loc.city || '',
         pincode: String(loc.pincode || ''),
+        resolved_pincode: loc.resolved_pincode || '',
         locality: loc.locality || '',
         store_id: loc.serving_sa || '',
         store_name: 'BigBasket',
@@ -329,6 +353,7 @@ const watchdog = setTimeout(() => {
           base.set_status = 'ok';
           base.city = loc.city || base.city;
           base.pincode = String(loc.pincode || base.pincode);
+          base.resolved_pincode = loc.resolved_pincode || '';
           base.locality = loc.locality || base.locality;
           base.store_id = loc.serving_sa || '';
           base.serving_sa = loc.serving_sa || '';

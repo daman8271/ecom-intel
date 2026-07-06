@@ -9,7 +9,9 @@ Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at na
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
 - LLM is used only — later — for validation (cheap model) + narrative report (Sonnet).
 - Each platform is self-contained under `platforms/<name>/`.
-- `cron` triggers `./run.sh <platform>`.
+- `cron` triggers `./run_all.sh` for VPS-hosted platforms. Blinkit, BigBasket, and
+  Swiggy run off-box on the Mac Pro/residential session and enter the batch through
+  their `ingest.sh` paths.
 
 ## Layout
 ```
@@ -36,7 +38,7 @@ ecom-intel/
 
 ## Run a platform
 ```bash
-ssh macpro '/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh'  # Blinkit scrape/drop/ingest
+ssh macpro '/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh'  # Blinkit auth-required scrape/drop/ingest
 cat platforms/blinkit/result.json | python3 -m json.tool | head   # raw data
 ls output/                  # the Excel
 ```
@@ -45,7 +47,8 @@ ls output/                  # the Excel
 True per-pincode ground truth over the 25-city universe (1,885 pincodes). **Three modes, gated, non-breaking** (flag unset = old anchor `pincodes.json`, untouched):
 ```bash
 # DAILY (the cron now uses this for VPS-run platforms): only pincodes where Jivo is on sale — zepto 693 / fkm 340.
-# Blinkit uses the same daily config from the Mac Pro runner and is promoted only through platforms/blinkit/ingest.sh.
+# Blinkit uses its Mac Pro daily config (902 pins in the 2026-07-06 auth-corrected run)
+# and is promoted only through platforms/blinkit/ingest.sh.
 # FULL census: every one of the 1,885 pincodes (weekly / discovery)
 COVERAGE_FULL=1 ./run.sh zepto               # uses platforms/<p>/pincodes.full25.json
 # subset (relative path auto-normalized):
@@ -66,10 +69,10 @@ python3 tools/coverage/coverage_report.py $(date +%F)   # honest per-city x per-
 4. If it returns 0 rows / captcha / 403 → that platform blocks the datacenter IP → needs a residential proxy.
 5. Commit + push.
 
-## Block-risk map (datacenter VPS IP) — 8 LIVE in the cron chain, no proxy ( REMOVED 2026-06-06, rebuild pending)
+## Route/risk map — VPS serial chain plus Mac/drop collectors
 | Platform | Status | Notes |
 |---|---|---|
-| blinkit | ✅ LIVE (Mac/drop) | Runs on the Mac Pro residential IP via `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`, drops JSON to `platforms/blinkit/ingest.sh`, and is spooled by `run_all.sh` from `output/`. The VPS `./run.sh blinkit` path refuses unless `ALLOW_BLINKIT_VPS=1`. Scrape is gated on verified store re-resolution; ingest rejects partial, wrong-config, low-row, low-store, or blocked drops. |
+| blinkit | ✅ LIVE (Mac/drop, auth-required) | Runs on the Mac Pro residential IP via `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`, drops JSON to `platforms/blinkit/ingest.sh`, and is spooled by `run_all.sh` from `output/`. Auth state must exist at `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`; the wrapper exports `BLINKIT_REQUIRE_AUTH=1`, and ingest runs with `BLINKIT_REQUIRE_AUTH_DROP=1`. The VPS `./run.sh blinkit` path refuses unless `ALLOW_BLINKIT_VPS=1`. Scrape is gated on verified store re-resolution; ingest rejects unauthenticated, partial, wrong-config, low-row, low-store, or blocked drops. |
 |  | ❌ REMOVED from cron chain 2026-06-06 (was ⚠️ BLOCKED) | stealth context + POST to /api//search/v2 (WAF bypass). **2026-06-05 (c0bc409):** now paginates by offset (full Jivo catalogue, not just page 0); 403 fail-safe preserved (first-page non-200 → 0 rows + "search status" marker → review BROKEN). **STILL blocked by an IP-level 403** (currently 0 rows) — needs a residential proxy OR a logged-in  session (parked; see docs/PROXY.md + platforms//LOGIN-COOKIES.md). |
 | zepto | ✅ LIVE | reached via bff-gateway.zeptonow.com BFF API (CloudFront on website still 403s) |
 | flipkart-minutes | ✅ LIVE | HYPERLOCAL store; GPS "use my location"; scaled to 345 pincodes |
@@ -87,7 +90,7 @@ history, and review verdicts/baselines are what get committed each run. In `run_
 scrape is then re-evaluated by the **guardian auto-heal** (below).
 
 ## Cron (IST) — DEADLINE-ALIGNED (owner requirement 2026-06-06)
-> **2026-06-30: the daily batch now runs `COVERAGE_DAILY=1`** — QC platforms scrape the Jivo-priced per-pincode subsets (blinkit 486 / zepto 693 / fkm 340) instead of anchors. Amazon stays on anchors (no daily config). First-run review may flag `SUSPECT` (row-count vs old baseline; non-blocking) until baselines are rescaled.
+> **2026-06-30: the daily batch now runs `COVERAGE_DAILY=1`** — QC platforms scrape the Jivo-priced per-pincode subsets instead of anchors. Blinkit runs off-box from the Mac Pro daily config (902 pins in the 2026-07-06 auth-corrected run); VPS-run Zepto/FKM use zepto 693 / fkm 340. Amazon stays on anchors (no daily config). First-run review may flag `SUSPECT` (row-count vs old baseline; non-blocking) until baselines are rescaled.
 
 Reports must all **LAND at the slot time (10:00 AM IST)** — the pipeline was cut from
 2×/day to **one deadline-aligned sweep** on 2026-06-28 (the 15:00 sweep + 16:00 mailer were
@@ -117,7 +120,7 @@ SIM testing: `PLATFORMS_OVERRIDE`/`RUNNER_OVERRIDE` trip SIM MODE in run_all.sh
 (guardian/healthcheck/vault/git all skipped — never reaches live scrapes); see
 `tools/cron/tests/`.
 
-**Why serial, not parallel:** running all 9 at once STARVED each scraper (CPU/network
+**Why serial, not parallel:** running all VPS-hosted scrapers at once STARVED each scraper (CPU/network
 contention → thin, partial data the hardened review.py correctly rejects) and made the
 3 Amazon storefronts thrash their one shared account/server-side location. Serial gives
 each platform full resources + correct store re-resolution, and the Amazon trio
@@ -179,9 +182,15 @@ Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE
 logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;
 SUSPECT is recorded (reviews/ + vault note) but NOT re-run. Escalates to Telegram + logs/health.log if still broken.
 
-Blinkit pincodes: pincodes.json = 332 distinct store coordinates covering 798 pincodes
-(deduped from PinCode-blinkit.xlsx; pincodes.full.json = all 798, pincodes.coverage.md =
-geocoding report). Geocoding is region-level (free datasets), so coords are metro-accurate, not street-accurate.
+Blinkit production is Mac/drop-fed and auth-required. The Mac wrapper
+`/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` runs under LaunchAgent
+`com.danny.blinkit-mac-to-vps` at 03:45 IST, loads
+`/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, and exports
+`BLINKIT_REQUIRE_AUTH=1`. VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`; drops
+must carry `summary.auth_session` and `summary.auth_required`, and unauthenticated
+Blinkit drops are rejected. VPS emergency/manual shards use
+`/opt/ecom-intel/secrets/blinkit-auth-state.json`. Corrected 2026-07-06 run: 902 pins,
+870 resolved, 468 Jivo pins, 1915 rows, 0 blocked, 303 stores.
 
 ## Review (tools/review.py) — never ship garbage, stay cheap
 Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,
@@ -216,10 +225,12 @@ Notes link into an Obsidian graph via body [[wikilinks]]; generators are determi
 stdlib-only, idempotent per RUN_ID. Design + conventions: vault/VAULT-SPEC.md.
 
 ## Proxy (residential Indian IPs) — see docs/PROXY.md
-**NOT bought** — the other platforms run with no proxy from the datacenter IP (run
-direct/no-login or on a transplanted logged-in cookie session). Zepto was unlocked
-2026-05-29 via its bff-gateway.zeptonow.com BFF API (the CloudFront-fronted website still
-403s the DC IP, but the gateway is reachable direct). **'s stealth-POST path is
+**NOT bought** — VPS-hosted platforms run without a paid proxy from the datacenter IP
+(direct/no-login or on a transplanted logged-in cookie session). Blinkit is the exception:
+it runs from the Mac Pro residential session with saved Blinkit auth state, not
+anonymously from the VPS. Zepto was unlocked 2026-05-29 via its
+bff-gateway.zeptonow.com BFF API (the CloudFront-fronted website still 403s the DC IP,
+but the gateway is reachable direct). **'s stealth-POST path is
 now IP-blocked again (403 → 0 rows, 2026-06-05): it is the one platform that now WANTS a
 proxy** — a residential Indian IP OR a logged-in  session (see
 platforms//LOGIN-COOKIES.md). tools/proxy.js + setup remain wired (the zepto
@@ -228,10 +239,13 @@ public proxies are OFF-LIMITS (MITM risk). Provider plan if ever needed: IPRoyal
 residential, pay-as-you-go (~$10–25/mo at ~8 GB/month). amazon-now's hold-back is a
 manual-only/account constraint, not an IP block.
 
-## Known gaps (2026-06-05)
-- **blinkit bad-coord pincodes (~40%)** — coordinates that never re-resolve off the default
-  store are (correctly) recorded as 0 rows rather than contaminated. This is a **geocoding
-  follow-up**, not a scraper bug.
+## Known gaps (2026-07-06)
+- **Blinkit auth freshness** — stock correctness depends on the saved Blinkit login/auth
+  state. If the auth file is missing or expires, the run must fail before scraping and
+  alert; it must not fall back to anonymous Blinkit.
+- **Blinkit unresolved pins** — the corrected auth run resolved 870 of 902 configured
+  pins. Any unresolved pins are recorded honestly rather than contaminated with a default
+  store.
 - ** IP-level 403** — currently 0 rows; the WAF blocks the datacenter IP at the
   network level. Needs a residential proxy OR a logged-in  session (parked; see
   docs/PROXY.md + platforms//LOGIN-COOKIES.md).

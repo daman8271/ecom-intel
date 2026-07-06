@@ -16,11 +16,13 @@ absent while rivals are present" picture. You handle **1,586 pincodes**; the VPS
 ---
 
 ## 🚫 Hard rules (do not violate)
-1. **Blinkit only. Guest mode (NO login).** The catalog is location-based; login unlocks nothing.
+1. **Blinkit only, authenticated.** Use the saved Blinkit auth state at
+   `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`; do not print or copy
+   token values. Anonymous Blinkit can produce false Out of Stock rows.
 2. **CONCURRENCY = 2. Never higher.** Blinkit rate-limits per IP; at ≥3 pincodes stop resolving
    and you silently lose coverage. 2 is the accuracy-preserving max.
-3. **No proxies, no anti-bot / WAF evasion, no fingerprint spoofing.** Owner boundary. Plain guest
-   requests from your normal residential IP only.
+3. **No proxies, no anti-bot / WAF evasion, no fingerprint spoofing.** Owner boundary.
+   Plain authenticated requests from your normal residential IP only.
 4. **Stay isolated.** Work entirely under `~/olive-mac`. Do **not** modify or run the live
    ecom-intel pipeline (its cron, `result.json`, `tools/competitor/data/` live files, the mailer).
 5. **One scraper process at a time.** You may use sub-agents for monitoring/QA, but only ONE
@@ -82,7 +84,8 @@ cd "$BASE/platforms/blinkit"
 LOG="$BASE/logs/scrape-$TAG.log"
 N=$(python3 -c "import json;print(len(json.load(open('$PF'))))")
 echo "[run_shard] $(date '+%F %T %Z') START tag=$TAG pincodes=$N conc=$CONC fast-fail" | tee -a "$LOG"
-COMPETITOR_MODE=1 PINCODES_FILE="$PF" COMPETITOR_DATE="$TAG" CONCURRENCY="$CONC" \
+BLINKIT_REQUIRE_AUTH=1 BLINKIT_AUTH_STATE_FILE="/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json" \
+  COMPETITOR_MODE=1 PINCODES_FILE="$PF" COMPETITOR_DATE="$TAG" CONCURRENCY="$CONC" \
   RESOLVE_ATTEMPTS=2 RESOLVE_POLLS=3 BLINKIT_BLOCK_RETRIES=2 \
   node scrape.js >> "$LOG" 2>&1
 echo "[run_shard] $(date '+%F %T %Z') DONE tag=$TAG -> tools/competitor/data/blinkit_competitor_$TAG.json" | tee -a "$LOG"
@@ -99,7 +102,8 @@ cat > ~/olive-mac/smoke2.json <<'JSON'
  {"city":"Bengaluru","pincode":"560001","locality":"Bengaluru GPO","lat":12.9716,"lon":77.5946,"landmark":"Bengaluru GPO"}]
 JSON
 cd ~/olive-mac/platforms/blinkit
-COMPETITOR_MODE=1 PINCODES_FILE=~/olive-mac/smoke2.json COMPETITOR_DATE=smoke-mac CONCURRENCY=2 \
+BLINKIT_REQUIRE_AUTH=1 BLINKIT_AUTH_STATE_FILE="/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json" \
+  COMPETITOR_MODE=1 PINCODES_FILE=~/olive-mac/smoke2.json COMPETITOR_DATE=smoke-mac CONCURRENCY=2 \
   RESOLVE_ATTEMPTS=2 RESOLVE_POLLS=3 node scrape.js 2>&1 | grep -E "\[ok:comp\]|\[unresolved\]|\[blocked\]|SUMMARY"
 python3 -c "import json;d=json.load(open('$HOME/olive-mac/tools/competitor/data/blinkit_competitor_smoke-mac.json'));r=d.get('allRows') or [];print('rows:',len(r),'| brands:',sorted(set((x.get('name') or '').split()[0] for x in r))[:12])"
 ```

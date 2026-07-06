@@ -1,6 +1,6 @@
 # SKILL: scrape Blinkit (PROVEN)
 
-How the Blinkit scraper works. Status: **working** (332 store-coords, residential + datacenter IP both OK).
+How the Blinkit scraper works. Status: **working in production via the Mac Pro residential collector**. An authenticated Blinkit session is required for stock correctness.
 
 ## 2026-06-05 fix — default-store contamination (0537fbf)
 The scrape is now **gated on VERIFIED store re-resolution**: the active store (read from
@@ -19,13 +19,47 @@ giving up to 0 rows.
 - **Known gap:** **~40% of pincodes have bad coordinates** that never re-resolve → recorded
   as 0 rows. This is a **geocoding follow-up** (fix the coords), NOT a scraper bug.
 
+## 2026-07-06 fix — authenticated availability is mandatory
+
+Anonymous/headless Blinkit can show false Out of Stock while the logged-in web/app
+session shows ADD for the same pincode/store/SKU. The confirmed regression row was
+Delhi `110013`, Jivo Pomace Olive Oil 5 L, PRID `407561`: anonymous output marked
+`No`, while the authenticated session showed live stock and the corrected run marked
+it `Yes`.
+
+Production must run fail-closed with:
+
+```sh
+BLINKIT_REQUIRE_AUTH=1
+BLINKIT_AUTH_STATE_FILE=/path/to/blinkit-auth-state.json
+```
+
+Current auth state locations:
+
+- Mac daily collector: `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`
+- VPS emergency/manual shards: `/opt/ecom-intel/secrets/blinkit-auth-state.json`
+
+The scraper hydrates the Blinkit session before pincode work by setting
+`localStorage.auth`, `localStorage.deviceId`, and cookies `gr_1_accessToken` /
+`gr_1_deviceId`. If `BLINKIT_REQUIRE_AUTH=1` and no token is available, it exits `3`
+before any scrape. Summaries now include `auth_session` and `auth_required`, and
+`ingest.sh` defaults to `BLINKIT_REQUIRE_AUTH_DROP=1` so unauthenticated Blinkit
+drops are rejected before build/delivery and old false-OOS data cannot be delivered
+again.
+
 ## The trick
-Blinkit picks a dark store from your delivery location, stored in `localStorage.location`. There is **no login needed** — override the location, search, scrape.
+Blinkit picks a dark store from your authenticated delivery session and
+`localStorage.location`. Hydrate auth first, override the delivery location, verify the
+local store, then search and scrape.
 
 ## Procedure (per pincode)
+0. Load the auth state (`BLINKIT_AUTH_STATE_FILE` or direct env token/device id). In
+   production keep `BLINKIT_REQUIRE_AUTH=1`.
 1. `goto https://blinkit.com/` (domcontentloaded), wait ~2.5s for hydration.
-2. Inject location via `page.evaluate`:
+2. Inject auth + location via `page.evaluate`:
    ```js
+   localStorage.setItem('auth', JSON.stringify({ accessToken }));
+   localStorage.setItem('deviceId', deviceId);
    localStorage.setItem('location', JSON.stringify({
      coords: { isDefault:false, lat, lon, locality, id:1, isTopCity:true, cityName, landmark, addressId:null }
    }));
@@ -43,7 +77,7 @@ Blinkit picks a dark store from your delivery location, stored in `localStorage.
 - ~28/40 pincodes carry Jivo; the other 12 genuinely have zero Jivo stock (real distribution-gap intel, not a bug). Hyderabad / Chennai / Ahmedabad = currently zero Jivo on Blinkit.
 
 ## Output shape (keep this for build_excel.py to work)
-Each row: `{city, pincode, locality, store_id, store_name, sku_raw, canonical, pack, vol_ml, sale, mrp, discount_pct, per_litre, eta_min, in_stock}`. Written to `result.json` as `{summary, perPin, allRows}`.
+Each row: `{city, pincode, locality, store_id, store_name, sku_raw, canonical, pack, vol_ml, sale, mrp, discount_pct, per_litre, eta_min, in_stock}`. Written to `result.json` as `{summary, perPin, allRows}`. Blinkit `summary` must also carry `auth_session: 1` and `auth_required: 1` in production/auth-required runs.
 
 ## When to adapt for a new platform
 Copy this whole folder, then change: the base URL, the location-setting mechanism (Zepto/Amazon-Now store location differently), and the card selectors. Keep the output row shape identical.
