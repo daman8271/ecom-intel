@@ -1,6 +1,6 @@
 import os, unittest
 from universe25 import build_universe
-from gen_full_configs import gen_config, is_india_coordinate, load_centroids
+from gen_full_configs import gen_config, is_india_coordinate, is_plausible_pincode_coordinate, load_centroids
 
 CSV = os.path.join(os.path.dirname(__file__), "..", "..", "docs", "pincodes", "drr_pincode.csv")
 
@@ -11,6 +11,8 @@ class TestGen(unittest.TestCase):
         self.assertFalse(is_india_coordinate(38.278, 67.503))
         self.assertFalse(is_india_coordinate(18.599, 64.390))
         self.assertFalse(is_india_coordinate(77.307889, 28.503718))
+        self.assertFalse(is_plausible_pincode_coordinate("110010", 77.13, 28.48))
+        self.assertTrue(is_plausible_pincode_coordinate("110010", 28.5957222, 77.1364444))
 
     def test_one_entry_per_pincode_in_universe(self):
         cp, pc = build_universe(CSV)
@@ -36,6 +38,12 @@ class TestGen(unittest.TestCase):
         self.assertLess(delhi["lat"], 29.0)
         self.assertGreater(delhi["lon"], 77.0)
         self.assertLess(delhi["lon"], 78.0)
+
+        cantt = by_pin["110010"]
+        self.assertGreater(cantt["lat"], 28.0)
+        self.assertLess(cantt["lat"], 29.0)
+        self.assertGreater(cantt["lon"], 77.0)
+        self.assertLess(cantt["lon"], 78.0)
 
         pune = by_pin["410401"]
         self.assertEqual(pune["city"], "Pune")

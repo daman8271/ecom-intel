@@ -13,6 +13,16 @@ def is_india_coordinate(lat, lon):
         and INDIA_LON_BOUNDS[0] <= lon <= INDIA_LON_BOUNDS[1]
     )
 
+def is_plausible_pincode_coordinate(pincode, lat, lon):
+    if not is_india_coordinate(lat, lon):
+        return False
+    # DRR has a few Delhi rows with latitude/longitude swapped or otherwise
+    # contaminated. They are still inside the India-wide bbox, so guard the
+    # known 110xxx Delhi pincode family with a city-level box before averaging.
+    if str(pincode).startswith("110"):
+        return 28.0 <= lat <= 29.0 and 76.8 <= lon <= 77.6
+    return True
+
 def load_centroids(csv_path):
     acc = defaultdict(lambda: [0.0, 0.0, 0])
     for r in csv.DictReader(open(csv_path, newline="", encoding="utf-8", errors="replace")):
@@ -23,7 +33,7 @@ def load_centroids(csv_path):
             continue
         if not p or lat == 0.0 or lon == 0.0:
             continue
-        if not is_india_coordinate(lat, lon):
+        if not is_plausible_pincode_coordinate(p, lat, lon):
             continue
         a = acc[p]; a[0] += lat; a[1] += lon; a[2] += 1
     return {p: (a[0]/a[2], a[1]/a[2]) for p, a in acc.items() if a[2]}

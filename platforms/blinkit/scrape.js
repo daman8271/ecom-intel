@@ -52,6 +52,17 @@ const OOS_PROBE_OFFSETS = [
   { label: 'southwest', dlat: -0.012, dlon: -0.012 },
   { label: 'southeast', dlat: -0.012, dlon: 0.012 },
 ];
+const DELHI_WIDE_OOS_PROBE_OFFSETS = [
+  { label: 'wide-east', dlat: 0, dlon: 0.05 },
+  { label: 'wide-west', dlat: 0, dlon: -0.05 },
+  { label: 'wide-south', dlat: -0.03, dlon: 0 },
+  { label: 'wide-north', dlat: 0.03, dlon: 0 },
+  { label: 'wide-southeast', dlat: -0.03, dlon: 0.05 },
+  { label: 'wide-northeast', dlat: 0.03, dlon: 0.05 },
+  { label: 'wide-southwest', dlat: -0.03, dlon: -0.05 },
+  { label: 'wide-northwest', dlat: 0.03, dlon: -0.05 },
+];
+const DELHI_NEIGHBOR_OOS_PROBE_LIMIT = parseInt(process.env.BLINKIT_DELHI_NEIGHBOR_OOS_PROBE_LIMIT || '6', 10);
 const BLINKIT_PDP_OOS_PROBE = process.env.BLINKIT_PDP_OOS_PROBE !== '0';
 const BLINKIT_PDP_OOS_NEARBY = process.env.BLINKIT_PDP_OOS_NEARBY === '1';
 // Keep PDP price verification targeted: the user's screenshot failures were
@@ -60,6 +71,7 @@ const BLINKIT_PDP_OOS_NEARBY = process.env.BLINKIT_PDP_OOS_NEARBY === '1';
 // visits and miss the 10:00 delivery window.
 const BLINKIT_PDP_PRICE_PROBE = process.env.BLINKIT_PDP_PRICE_PROBE !== '0';
 const BLINKIT_DEBUG_PDP = process.env.BLINKIT_DEBUG_PDP === '1';
+const BLINKIT_DEBUG_PROBE = process.env.BLINKIT_DEBUG_PROBE === '1';
 const DEFAULT_PDP_PRICE_CANARIES = '110094:407561,110012:407851,110012:406593';
 const PDP_PRICE_CANARIES = new Set(
   (process.env.BLINKIT_PDP_PRICE_CANARIES || DEFAULT_PDP_PRICE_CANARIES)
@@ -208,6 +220,10 @@ function debugPdp(message) {
   if (BLINKIT_DEBUG_PDP) process.stderr.write(`[pdp-debug] ${message}\n`);
 }
 
+function debugProbe(message) {
+  if (BLINKIT_DEBUG_PROBE) process.stderr.write(`[probe-debug] ${message}\n`);
+}
+
 // A request is genuinely near the Gurgaon default store, so resolving to it
 // (id 31719 / "Nirvana Country") is a LEGITIMATE nearest-store fallback, not the
 // contamination bug. Delhi/Gurgaon/Faridabad/Ghaziabad/Noida fall in this box.
@@ -274,12 +290,41 @@ function locationCookieSpecs(rec) {
 }
 
 function probeRecords(rec) {
-  return OOS_PROBE_OFFSETS.map((o) => ({
+  const offsets = [...OOS_PROBE_OFFSETS];
+  const out = offsets.map((o) => ({
     ...rec,
     lat: Math.round((Number(rec.lat) + o.dlat) * 1e7) / 1e7,
     lon: Math.round((Number(rec.lon) + o.dlon) * 1e7) / 1e7,
     probe_label: o.label,
   }));
+  if (String(rec.city || '').toLowerCase() === 'delhi') {
+    const lat = Number(rec.lat);
+    const lon = Number(rec.lon);
+    const neighbors = PINCODES
+      .filter((p) => String(p.city || '').toLowerCase() === 'delhi' && String(p.pincode) !== String(rec.pincode))
+      .map((p) => ({ ...p, _dist: Math.hypot(Number(p.lat) - lat, Number(p.lon) - lon) }))
+      .filter((p) => Number.isFinite(p._dist) && p._dist > 0 && p._dist <= 0.12)
+      .sort((a, b) => a._dist - b._dist)
+      .slice(0, DELHI_NEIGHBOR_OOS_PROBE_LIMIT);
+    for (const p of neighbors) {
+      out.push({
+        ...rec,
+        lat: Number(p.lat),
+        lon: Number(p.lon),
+        probe_label: `neighbor-${p.pincode}`,
+        probe_source_pincode: p.pincode,
+      });
+    }
+    for (const o of DELHI_WIDE_OOS_PROBE_OFFSETS) {
+      out.push({
+        ...rec,
+        lat: Math.round((Number(rec.lat) + o.dlat) * 1e7) / 1e7,
+        lon: Math.round((Number(rec.lon) + o.dlon) * 1e7) / 1e7,
+        probe_label: o.label,
+      });
+    }
+  }
+  return out;
 }
 
 function shouldPdpPriceProbe(rec, row) {
@@ -985,14 +1030,27 @@ async function scrapeOne(browser, rec) {
           ({ loc: probeLoc, m: probeStore } = await readState());
           probeResolved = storeResolved(probeLoc, probeStore, probeRec);
         }
-        if (!probeResolved) continue;
+        if (!probeResolved) {
+          debugProbe(`${rec.pincode} ${probeRec.probe_label}: location did not resolve store=${probeStore.id || ''}`);
+          continue;
+        }
         await injectLocation(probeRec);
         await page.goto('https://blinkit.com/s/?q=jivo', { waitUntil: 'domcontentloaded', timeout: 30000 });
         await page.waitForTimeout(3500);
         ({ loc: probeLoc, m: probeStore } = await readState());
-        if (!storeResolved(probeLoc, probeStore, probeRec)) continue;
+        if (!storeResolved(probeLoc, probeStore, probeRec)) {
+          debugProbe(`${rec.pincode} ${probeRec.probe_label}: search store mismatch store=${probeStore.id || ''}`);
+          continue;
+        }
 
         const probeRows = parseJivoCards(await extractJivoCards(page), rec, probeStore);
+        if (BLINKIT_DEBUG_PROBE) {
+          const useful = probeRows
+            .filter((r) => ['406593', '407561', '407851'].includes(String(r.prid || '')) || /canola|pomace/i.test(String(r.sku_raw || '')))
+            .slice(0, 8)
+            .map((r) => `${r.prid || ''}:${r.sku_raw || ''}:${r.pack || ''}:stock=${r.in_stock}:sale=${r.sale}`);
+          debugProbe(`${rec.pincode} ${probeRec.probe_label}: store=${probeStore.id || ''} rows=${probeRows.length} useful=${JSON.stringify(useful)}`);
+        }
         let flips = 0;
         for (const candidate of probeRows) {
           if (!candidate.in_stock) continue;
