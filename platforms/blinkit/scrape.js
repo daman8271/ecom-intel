@@ -53,11 +53,13 @@ const OOS_PROBE_OFFSETS = [
   { label: 'southeast', dlat: -0.012, dlon: 0.012 },
 ];
 const BLINKIT_PDP_OOS_PROBE = process.env.BLINKIT_PDP_OOS_PROBE !== '0';
+const BLINKIT_PDP_OOS_NEARBY = process.env.BLINKIT_PDP_OOS_NEARBY === '1';
 // Keep PDP price verification targeted: the user's screenshot failures were
 // specific pincode/SKU rows where search showed a stale/base price but PDP showed
 // a lower effective price. Probing every listed row would add thousands of PDP
 // visits and miss the 10:00 delivery window.
 const BLINKIT_PDP_PRICE_PROBE = process.env.BLINKIT_PDP_PRICE_PROBE !== '0';
+const BLINKIT_DEBUG_PDP = process.env.BLINKIT_DEBUG_PDP === '1';
 const DEFAULT_PDP_PRICE_CANARIES = '110094:407561,110012:407851,110012:406593';
 const PDP_PRICE_CANARIES = new Set(
   (process.env.BLINKIT_PDP_PRICE_CANARIES || DEFAULT_PDP_PRICE_CANARIES)
@@ -201,6 +203,10 @@ const DEFAULT_STORE_ID = 31719;       // "Super Store - Gurgaon Nirvana Country 
 const DEFAULT_COORDS = { lat: 28.4133, lon: 77.0728 }; // Gurugram, the default fallback
 const COORD_EPS = 0.02;               // ~2 km — injected vs active-location coord tolerance
 const NCR_BOX = 0.5;                  // ~55 km — pincodes this close to Gurugram may legitimately use the default store
+
+function debugPdp(message) {
+  if (BLINKIT_DEBUG_PDP) process.stderr.write(`[pdp-debug] ${message}\n`);
+}
 
 // A request is genuinely near the Gurgaon default store, so resolving to it
 // (id 31719 / "Nirvana Country") is a LEGITIMATE nearest-store fallback, not the
@@ -760,17 +766,33 @@ async function scrapeOne(browser, rec) {
     return { resolved: false, loc: probeLoc, store: probeStore };
   };
   const verifyPdpRow = async (r, row, label) => {
-    if (!row.listing_url) return null;
+    if (!row.listing_url) {
+      debugPdp(`${rec.pincode} ${row.sku_raw} ${row.pack || ''} ${label}: missing listing_url`);
+      return null;
+    }
     const resolvedPdpLoc = await resolveLocationFor(r, 4);
-    if (!resolvedPdpLoc.resolved) return null;
+    if (!resolvedPdpLoc.resolved) {
+      debugPdp(`${rec.pincode} ${row.sku_raw} ${row.pack || ''} ${label}: location did not resolve before PDP store=${(resolvedPdpLoc.store && resolvedPdpLoc.store.id) || ''}`);
+      return null;
+    }
     await injectLocation(r);
     await page.goto(row.listing_url, { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(3500);
     const { loc: pdpLoc, m: pdpStore } = await readState();
-    if (!storeResolved(pdpLoc, pdpStore, r)) return null;
+    if (!storeResolved(pdpLoc, pdpStore, r)) {
+      debugPdp(`${rec.pincode} ${row.sku_raw} ${row.pack || ''} ${label}: PDP store mismatch store=${(pdpStore && pdpStore.id) || ''}`);
+      return null;
+    }
     const text = await page.evaluate(() => document.body.innerText || '');
     const parsed = parsePdpProductText(text, row);
-    if (!parsed) return null;
+    if (!parsed) {
+      const body = String(text || '').replace(/\s+/g, ' ').trim();
+      const needle = cleanProductName(row.sku_raw);
+      const idx = body.toLowerCase().indexOf(needle.toLowerCase());
+      const snippet = (idx >= 0 ? body.slice(idx, idx + 320) : body.slice(0, 320)).replace(/\s+/g, ' ');
+      debugPdp(`${rec.pincode} ${row.sku_raw} ${row.pack || ''} ${label}: parse null snippet=${snippet}`);
+      return null;
+    }
     return {
       ...parsed,
       store: pdpStore,
@@ -1020,7 +1042,9 @@ async function scrapeOne(browser, rec) {
         const prev = rows[idx];
         let checked = false;
         let checkedPdp = null;
-        const pdpRecs = [{ ...rec, probe_label: 'primary' }, ...probeRecords(rec)];
+        const pdpRecs = BLINKIT_PDP_OOS_NEARBY
+          ? [{ ...rec, probe_label: 'primary' }, ...probeRecords(rec)]
+          : [{ ...rec, probe_label: 'primary' }];
         for (const pdpRec of pdpRecs) {
           const pdp = await verifyPdpRow(pdpRec, prev, pdpRec.probe_label || 'primary');
           if (!pdp) continue;
@@ -1041,6 +1065,8 @@ async function scrapeOne(browser, rec) {
             listing_status: 'listed_in_stock',
             stock_source: 'pdp_probe',
             price_source: priceSource('pdp', pdp),
+            pdp_checked: 1,
+            pdp_in_stock: 1,
             search_in_stock: prev.in_stock,
             search_sale: prev.sale,
             search_mrp: prev.mrp,

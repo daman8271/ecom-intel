@@ -53,3 +53,16 @@ until 10:45 IST. The normal cron monitor still runs separately and can alert.
 For daily runs, cron starts `tools/cron/start_blinkit_live_watch.sh` at 06:25
 IST. The starter is idempotent: if `blinkit-live-watch-YYYYMMDD` already exists, it
 does nothing.
+
+## 04:00 Hotfix
+
+The first restarted run was stopped because a 5 L Pomace row picked up a 1 L
+PDP/related-card price. The hotfix rejects PDP price updates unless the PDP-detected
+pack/volume before the first price matches the row volume, then the Blinkit run was
+restarted from a clean progress file.
+
+A second stop happened when repeated nearby PDP checks hit Blinkit's access-denied
+page and left `400006 / Canola 1 L` as `Listed - Stock unverified`. PDP OOS
+verification now defaults to the primary PDP only; nearby same-pincode search probes
+still handle false-OOS flips. The isolated `400006` repro then passed with
+`unverified_oos=0`.

@@ -73,12 +73,16 @@ quality monitor requires `summary.pdp_price_probe_enabled=1`. Screenshot canarie
 include `110094:407561`, `110012:407851`, and `110012:406593`; the default probe
 mode also verifies 5 L high-value/plain-search rows that have no offer/PDP evidence
 so the stale-search-price class is not limited to the three canaries without turning
-the full run into a PDP visit for every row.
+the full run into a PDP visit for every row. PDP price updates are accepted only
+when the PDP-detected pack/volume before the first price matches the target row
+volume; related/variant cards on the PDP must not overwrite a different pack size.
 
 An unverified search-card OOS is not a final `No`. If the nearby/PDP probes cannot
 verify the row, the scraper marks it `stock_unverified`; workbook code renders it as
 `Listed - Stock unverified`, and ingest/quality gates fail closed so it cannot be
-delivered.
+delivered. Nearby same-pincode search probes do the cross-coordinate false-OOS
+recovery; PDP OOS verification defaults to the primary PDP only so the scraper does
+not open many PDP pages and trigger access-denied responses.
 
 Checkpoint/resume files are keyed by IST date (`.progress.YYYY-MM-DD.json`), not UTC.
 This matters for manual/early-morning IST starts: a July 7 run must not reuse a July 6

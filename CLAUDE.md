@@ -205,7 +205,12 @@ whose PDP/nearby probes verified no stock; treat `Not listed` as an expected SKU
 absent from that resolved store. Treat `Listed - Stock unverified` as a fail-closed
 intermediate state only: it may appear in raw/workbook diagnostics, but ingest and
 quality delivery reject it. PDP price probing covers the screenshot canaries plus
-5 L high-value/plain-search rows without offer evidence so stale card prices do not ship.
+5 L high-value/plain-search rows without offer evidence so stale card prices do not
+ship. The PDP parser must reject price updates when the PDP-detected pack/volume
+before the first price does not match the row volume; otherwise a related 1 L card
+on a 5 L PDP can overwrite the 5 L row. PDP OOS verification is primary-PDP by
+default; nearby same-pincode search probes handle false-OOS flips without opening
+many PDP pages and tripping Blinkit access-denied responses.
 The main workbook includes both `Listing Status`
 and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `917703818227@s.whatsapp.net` only after the main Blinkit workbook passes quality.

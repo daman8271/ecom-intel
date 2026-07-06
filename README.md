@@ -123,9 +123,10 @@ set, not part of the Wave 1 config generator.
   any-pincode unverified-auth, or unprobed Blinkit drops are rejected
   because anonymous/search-only sessions can produce false Out of Stock rows and
   stale search-card prices. PDP price probing covers the screenshot canaries plus
-  5 L high-value/plain-search rows without offer evidence. Any search-card OOS that
-  cannot be PDP/nearby verified is marked `Listed - Stock unverified` and fails
-  ingest/quality delivery. Blinkit output separates `Listed - Out of stock` from
+  5 L high-value/plain-search rows without offer evidence, and rejects PDP price
+  updates when the PDP-detected pack/volume does not match the row volume. Any
+  search-card OOS that cannot be PDP/nearby verified is marked
+  `Listed - Stock unverified` and fails ingest/quality delivery. Blinkit output separates `Listed - Out of stock` from
   `Not listed`; a standalone `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`
   is direct-sent to `917703818227@s.whatsapp.net` by
   `tools/whatsapp/send_blinkit_not_listed_direct.sh` only after the main Blinkit
@@ -137,8 +138,8 @@ set, not part of the Wave 1 config generator.
   injected latitude/longitude and account session; two nearby coordinates can show
   the same pincode/header but different listing, stock, ETA, or offer price. The
   scraper therefore treats a search-card `Out of stock` as provisional, probes
-  nearby same-pincode coordinates, verifies hard OOS rows on the PDP, and writes
-  `Not listed` separately when the expected SKU is absent for that resolved store.
+  nearby same-pincode coordinates, verifies hard OOS rows on the primary PDP, and
+  writes `Not listed` separately when the expected SKU is absent for that resolved store.
   The cron monitor polls and alerts; delivery callers run it with
   `BLINKIT_MONITOR_EXIT_CODE=1` so bad Blinkit artifacts are held back.
 - **Configs:** `platforms/<p>/pincodes.daily.json` + `pincodes.full25.json` (regen via
