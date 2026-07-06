@@ -33,13 +33,58 @@ env_common=(
 env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$FIXTURE" >/tmp/blinkit-ingest-good.out
 
 bad="$(mktemp)"
-trap 'rm -f "$bad"' EXIT
-python3 - "$FIXTURE" "$bad" <<'PY'
+bad_pomace_stale="$(mktemp)"
+bad_canola_stale="$(mktemp)"
+trap 'rm -f "$bad" "$bad_pomace_stale" "$bad_canola_stale"' EXIT
+python3 - "$FIXTURE" "$bad" "$bad_pomace_stale" "$bad_canola_stale" <<'PY'
 import json, sys
-d = json.load(open(sys.argv[1], encoding="utf-8"))
+src, bad_path, bad_pomace_path, bad_canola_path = sys.argv[1:]
+d = json.load(open(src, encoding="utf-8"))
 d["allRows"][0]["per_litre"] = 375.2
 d["perPin"][0]["rows"][0]["per_litre"] = 375.2
-json.dump(d, open(sys.argv[2], "w", encoding="utf-8"))
+json.dump(d, open(bad_path, "w", encoding="utf-8"))
+
+pomace = json.load(open(src, encoding="utf-8"))
+for row in [pomace["allRows"][0], pomace["perPin"][0]["rows"][0]]:
+    row["sale"] = 1876
+    row.pop("base_sale", None)
+    row.pop("offer_sale", None)
+    row["discount_pct"] = 62.5
+    row["per_litre"] = 375.2
+    row["price_source"] = "search_card"
+    row["stock_source"] = "search_card"
+    row["pdp_checked"] = 0
+json.dump(pomace, open(bad_pomace_path, "w", encoding="utf-8"))
+
+canola = json.load(open(src, encoding="utf-8"))
+row = json.loads(json.dumps(canola["allRows"][0]))
+row.update({
+    "city": "Delhi",
+    "pincode": "110012",
+    "locality": "IARI SO",
+    "sku_raw": "Jivo Cold Pressed Canola Oil",
+    "canonical": "jivo-cold-pressed-canola-oil-5l",
+    "pack": "5 l",
+    "vol_ml": 5000,
+    "sale": 1198,
+    "base_sale": None,
+    "offer_sale": None,
+    "mrp": 1650,
+    "discount_pct": 27.4,
+    "per_litre": 239.6,
+    "in_stock": 1,
+    "listing_status": "listed_in_stock",
+    "stock_source": "search_card",
+    "price_source": "search_card",
+    "search_sale": 1198,
+    "pdp_checked": 0,
+    "pdp_in_stock": None,
+    "pdp_sale": None,
+    "prid": "406593",
+    "listing_url": "https://blinkit.com/prn/jivo-cold-pressed-canola-oil-5-l/prid/406593",
+})
+canola["allRows"].append(row)
+json.dump(canola, open(bad_canola_path, "w", encoding="utf-8"))
 PY
 
 if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad" >/tmp/blinkit-ingest-bad.out 2>&1; then
@@ -47,5 +92,19 @@ if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad" >/tmp/blink
   exit 1
 fi
 grep -q "Refusing Blinkit bad price math" /tmp/blinkit-ingest-bad.out
+
+if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_pomace_stale" >/tmp/blinkit-ingest-pomace-stale.out 2>&1; then
+  echo "expected stale Pomace canary fixture to fail" >&2
+  exit 1
+fi
+grep -q "Refusing Blinkit screenshot-canary regression" /tmp/blinkit-ingest-pomace-stale.out
+grep -q "Pomace 5L stale price" /tmp/blinkit-ingest-pomace-stale.out
+
+if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_canola_stale" >/tmp/blinkit-ingest-canola-stale.out 2>&1; then
+  echo "expected stale Canola canary fixture to fail" >&2
+  exit 1
+fi
+grep -q "Refusing Blinkit screenshot-canary regression" /tmp/blinkit-ingest-canola-stale.out
+grep -q "Canola 5L stale price" /tmp/blinkit-ingest-canola-stale.out
 
 echo "PASS blinkit false-OOS effective-price ingest regression"

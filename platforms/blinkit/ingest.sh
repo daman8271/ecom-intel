@@ -54,6 +54,7 @@ BLINKIT_MAX_MISSING_PRID_RATIO="${BLINKIT_MAX_MISSING_PRID_RATIO:-0}"
 BLINKIT_MAX_MISSING_LISTING_URL_RATIO="${BLINKIT_MAX_MISSING_LISTING_URL_RATIO:-0}"
 BLINKIT_MAX_BAD_LISTING_URL_RATIO="${BLINKIT_MAX_BAD_LISTING_URL_RATIO:-0}"
 BLINKIT_MAX_BAD_PRICE_ROWS="${BLINKIT_MAX_BAD_PRICE_ROWS:-0}"
+BLINKIT_REQUIRE_SCREENSHOT_CANARIES="${BLINKIT_REQUIRE_SCREENSHOT_CANARIES:-1}"
 BLINKIT_PRICE_MATH_PER_LITRE_EPS="${BLINKIT_PRICE_MATH_PER_LITRE_EPS:-0.05}"
 BLINKIT_PRICE_MATH_DISCOUNT_EPS="${BLINKIT_PRICE_MATH_DISCOUNT_EPS:-0.2}"
 BLINKIT_INDIA_BBOX="${BLINKIT_INDIA_BBOX:-6.0,68.0,38.5,98.5}"  # min_lat,min_lon,max_lat,max_lon
@@ -67,7 +68,7 @@ export BLINKIT_MIN_STORES_OVERRIDE BLINKIT_MIN_STORES_ABS BLINKIT_MIN_PERPIN_STO
 export BLINKIT_MIN_ETA_PCT BLINKIT_MAX_FLIP_PCT BLINKIT_MAX_WALL_S BLINKIT_REQUIRE_AUTH_DROP BLINKIT_STORE_LEDGER BLINKIT_VALIDATE_ONLY
 export BLINKIT_REQUIRE_OOS_PROBE_ENABLED BLINKIT_REQUIRE_PDP_OOS_PROBE_ENABLED BLINKIT_ALLOW_LEGACY_REPAIRED_OOS
 export BLINKIT_MAX_UNVERIFIED_OOS BLINKIT_MAX_MISSING_PRID_RATIO BLINKIT_MAX_MISSING_LISTING_URL_RATIO BLINKIT_MAX_BAD_LISTING_URL_RATIO
-export BLINKIT_MAX_BAD_PRICE_ROWS BLINKIT_PRICE_MATH_PER_LITRE_EPS BLINKIT_PRICE_MATH_DISCOUNT_EPS
+export BLINKIT_MAX_BAD_PRICE_ROWS BLINKIT_REQUIRE_SCREENSHOT_CANARIES BLINKIT_PRICE_MATH_PER_LITRE_EPS BLINKIT_PRICE_MATH_DISCOUNT_EPS
 export BLINKIT_INDIA_BBOX BLINKIT_REQUIRE_CONFIG_COORDS BLINKIT_CONFIG_COORD_ALLOWLIST BLINKIT_MAX_BAD_CONFIG_COORDS
 
 python3 - "$STAGED" <<'PY'
@@ -404,6 +405,47 @@ if len(bad_price_rows) > max_bad_price_rows:
         f"Refusing Blinkit bad price math: bad_rows={len(bad_price_rows)} "
         f"max={max_bad_price_rows} sample={bad_price_rows[:8]}"
     )
+
+# ---- screenshot canaries: block known false-OOS / stale-price signatures --------
+if env_bool("BLINKIT_REQUIRE_SCREENSHOT_CANARIES", "1"):
+    def row_matches(row, pin, prid):
+        return str(row.get("pincode")) == pin and str(row.get("prid")) == prid
+
+    def verified_oos(row):
+        return pdp_verified_oos(row) or str(row.get("stock_source") or "").strip().lower() == "pdp_probe"
+
+    def price_evidence(row):
+        return str(row.get("price_source") or "").strip().lower()
+
+    def has_offer_or_pdp_evidence(row):
+        src = price_evidence(row)
+        return has_value(row.get("offer_sale")) or "offer" in src or "pdp" in src
+
+    canary_failures = []
+
+    pomace = [r for r in rows if row_matches(r, "110094", "407561")]
+    for r in pomace:
+        sale = parse_float(r.get("sale"))
+        if is_oos_row(r) and sale == 1876 and not verified_oos(r):
+            canary_failures.append(f"110094 Pomace 5L old false-OOS signature: {row_label(r)}")
+        if not is_oos_row(r) and sale == 1876 and not has_offer_or_pdp_evidence(r):
+            canary_failures.append(f"110094 Pomace 5L stale price without PDP/offer evidence: {row_label(r)}")
+
+    canola_1l = [r for r in rows if row_matches(r, "110012", "407851")]
+    for r in canola_1l:
+        if is_oos_row(r) and not verified_oos(r):
+            canary_failures.append(f"110012 Canola 1L unverified OOS signature: {row_label(r)}")
+
+    canola_5l = [r for r in rows if row_matches(r, "110012", "406593")]
+    for r in canola_5l:
+        sale = parse_float(r.get("sale"))
+        if is_oos_row(r) and not verified_oos(r):
+            canary_failures.append(f"110012 Canola 5L unverified OOS signature: {row_label(r)}")
+        if not is_oos_row(r) and sale == 1198 and not has_offer_or_pdp_evidence(r):
+            canary_failures.append(f"110012 Canola 5L stale price without PDP/offer evidence: {row_label(r)}")
+
+    if canary_failures:
+        raise SystemExit(f"Refusing Blinkit screenshot-canary regression: sample={canary_failures[:5]}")
 
 # ---- scrape-health guards (2026-07-05, goal #66) ----------------------------
 # The 258-store run was a degraded scrape (7.4x wall time, eta extraction collapse,
