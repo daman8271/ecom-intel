@@ -56,9 +56,9 @@ Mac progress counts (`done/resolved/auth_ok/blocked/rows/stock_unverified`), lat
 Mac run-log tail, today-dated workbook presence, and dry-run quality-monitor output
 until 10:45 IST. The normal cron monitor still runs separately and can alert.
 
-For daily runs, cron starts `tools/cron/start_blinkit_live_watch.sh` at 06:25
-IST. The starter is idempotent: if `blinkit-live-watch-YYYYMMDD` already exists, it
-does nothing.
+For daily runs, cron starts `tools/cron/start_blinkit_live_watch.sh` at 05:00 IST
+and again at 06:25 IST. The starter is idempotent: if
+`blinkit-live-watch-YYYYMMDD` already exists, it does nothing.
 
 ## 04:00 Hotfix
 

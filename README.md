@@ -132,8 +132,9 @@ set, not part of the Wave 1 config generator.
   `tools/whatsapp/send_blinkit_not_listed_direct.sh` only after the main Blinkit
   workbook passes quality. Ingest calls it immediately; the 10:00 mailer and
   `*/15 6-12` cron retry it idempotently if no sent marker exists. A daily live
-  watcher starts at 06:25 IST and records Mac process status, progress counts,
-  workbook presence, and dry-run quality-monitor output until 10:45 IST.
+  watcher starts idempotently at 05:00 IST and again at 06:25 IST, then records
+  Mac process status, progress counts, workbook presence, and dry-run
+  quality-monitor output until 10:45 IST.
 - **Blinkit pincode labels are not enough.** Blinkit resolves a dark store from the
   injected latitude/longitude and account session; two nearby coordinates can show
   the same pincode/header but different listing, stock, ETA, or offer price. The

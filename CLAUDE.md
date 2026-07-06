@@ -222,9 +222,9 @@ and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `tools/whatsapp/send_blinkit_not_listed_direct.sh` immediately, and the 10:00
 mailer plus `*/15 6-12` cron retry idempotently if
 `logs/blinkit-not-listed-wa-YYYY-MM-DD.sent` is absent. Cron starts
-`tools/cron/start_blinkit_live_watch.sh` at 06:25 IST; it opens a once-per-day tmux
-watcher that logs the Mac process, progress counts, workbook presence, and dry-run
-quality-monitor output through 10:45 IST.
+`tools/cron/start_blinkit_live_watch.sh` idempotently at 05:00 IST and 06:25 IST;
+it opens a once-per-day tmux watcher that logs the Mac process, progress counts,
+workbook presence, and dry-run quality-monitor output through 10:45 IST.
 
 ## Review (tools/review.py) — never ship garbage, stay cheap
 Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,

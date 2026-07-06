@@ -92,8 +92,8 @@ Checkpoint/resume files are keyed by IST date (`.progress.YYYY-MM-DD.json`), not
 This matters for manual/early-morning IST starts: a July 7 run must not reuse a July 6
 UTC-date cache and skip the fresh per-pincode auth/PDP checks.
 
-`tools/cron/start_blinkit_live_watch.sh` is installed for 06:25 IST. It starts an
-idempotent tmux watcher that logs Mac process status, progress counts
+`tools/cron/start_blinkit_live_watch.sh` is installed for 05:00 IST and 06:25 IST.
+It starts an idempotent tmux watcher that logs Mac process status, progress counts
 (`done/resolved/auth_ok/blocked/rows/stock_unverified`), workbook presence, and
 dry-run quality-monitor output until 10:45 IST.
 
