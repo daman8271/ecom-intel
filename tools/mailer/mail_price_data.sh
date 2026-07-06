@@ -86,7 +86,6 @@ EXPECTED=(
 # stall the whole team's batch. So it lives in EXTRA, not EXPECTED.
 EXTRA=(
   "output/Jivo-SwiggyInstamart-Live-Report-$D.xlsx"
-  "output/Jivo-BigBasket-Pincode-Report-$D.xlsx"
 )
 
 deadline=$(( $(date +%s) + MAX_WAIT ))

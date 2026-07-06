@@ -260,10 +260,14 @@ async function setPincode(page, pin) {
       chosen: chosen || `${pincode}`,
       lat,
       lng,
-      city: addr && (addr.city_name || addr.city) || places.city || pin.city,
+      requested_city: pin.city || '',
+      resolved_city: addr && (addr.city_name || addr.city) || places.city || '',
+      city: pin.city || addr && (addr.city_name || addr.city) || places.city || '',
       pincode,
       resolved_pincode: addr && (addr.pin || addr.pincode) || places.pincode || pincode,
-      locality: addr && addr.area || places.area || places.locTitle || pin.locality || '',
+      requested_locality: pin.locality || '',
+      resolved_locality: addr && addr.area || places.area || places.locTitle || '',
+      locality: pin.locality || addr && addr.area || places.area || places.locTitle || '',
       serving_sa: responseCookies._bb_sa_ids || after._bb_sa_ids || '',
       entry_context: responseCookies.xentrycontext || after.xentrycontext || '',
       entry_context_id: responseCookies.xentrycontextid || after.xentrycontextid || '',
@@ -289,7 +293,11 @@ async function fetchRowsForPin(page, loc) {
         ...r,
         city: loc.city || '',
         pincode: String(loc.pincode || ''),
+        requested_city: loc.requested_city || loc.city || '',
+        resolved_city: loc.resolved_city || '',
         resolved_pincode: loc.resolved_pincode || '',
+        requested_locality: loc.requested_locality || loc.locality || '',
+        resolved_locality: loc.resolved_locality || '',
         locality: loc.locality || '',
         store_id: loc.serving_sa || '',
         store_name: 'BigBasket',
@@ -355,14 +363,21 @@ const watchdog = setTimeout(() => {
           process.stderr.write(`[warn] ${pincode} location set failed: ${base.set_status}\n`);
         } else {
           base.set_status = 'ok';
-          base.city = loc.city || base.city;
+          base.requested_city = pin.city || base.city;
+          base.resolved_city = loc.resolved_city || '';
+          base.city = pin.city || base.city;
           base.pincode = String(loc.pincode || base.pincode);
           base.resolved_pincode = loc.resolved_pincode || '';
-          base.locality = loc.locality || base.locality;
+          base.requested_locality = pin.locality || base.locality;
+          base.resolved_locality = loc.resolved_locality || '';
+          base.locality = pin.locality || base.locality;
           base.store_id = loc.serving_sa || '';
           base.serving_sa = loc.serving_sa || '';
           base.entry_context = loc.entry_context || '';
           base.entry_context_id = loc.entry_context_id || '';
+          if (base.resolved_pincode && base.resolved_pincode !== base.pincode) {
+            process.stderr.write(`[warn] ${pincode} resolved as ${base.resolved_pincode}${base.resolved_city ? ` ${base.resolved_city}` : ''}; keeping requested pincode for report\n`);
+          }
           base.rows = await fetchRowsForPin(session.page, base);
           base.fetch_ok = true;
           process.stderr.write(`[ok] ${pincode} -> ${base.rows.length} Jivo rows (sa=${base.serving_sa || '-'})\n`);

@@ -69,6 +69,27 @@ pins_with = [p for p in per if p['rows']]
 pins_zero = [p for p in per if not p['rows']]
 plabel = lambda p: f"{p['pincode']} {p['city']}"
 
+
+def location_issue(p):
+    status = str(p.get('set_status') or '')
+    pin = str(p.get('pincode') or '')
+    rpin = str(p.get('resolved_pincode') or '')
+    city = str(p.get('city') or p.get('requested_city') or '')
+    rcity = str(p.get('resolved_city') or '')
+    issues = []
+    if status and status != 'ok':
+        issues.append(status)
+    if rpin and rpin != pin:
+        issues.append(f"resolved pin {rpin}")
+    if rcity and city and rcity.lower() != city.lower():
+        issues.append(f"resolved city {rcity}")
+    if not p.get('rows'):
+        issues.append("zero Jivo rows")
+    return "; ".join(issues)
+
+
+loc_issues = [p for p in per if location_issue(p)]
+
 # ---------------- Sheet 1: Summary ----------------
 ws = wb.active; ws.title = "Summary"
 ws["A1"] = "Jivo × BigBasket — PINCODE-WISE Pricing Intelligence"; ws["A1"].font = TITLE; ws.merge_cells("A1:H1")
@@ -93,6 +114,7 @@ for pin in sorted(PRICEMATCH):
     pe = next((p for p in per if str(p['pincode']) == pin), None)
     pm.append(f"{pin} ({pe['city']}): {len(pe['rows'])} Jivo SKUs" if pe else f"{pin}: not surveyed")
 ws["A8"] = "Price-match pins: " + "   |   ".join(pm); ws["A8"].font = Font(bold=True, color="1155CC", size=10); ws.merge_cells("A8:H8")
+ws["A9"] = f"Location audit: {len(loc_issues)} pincodes have a zero-row, failed, or resolved-location warning"; ws["A9"].font = Font(bold=True, color="CC0000" if loc_issues else GREEN_H, size=10); ws.merge_cells("A9:H9")
 # cheapest pincode per SKU
 ws.cell(row=10, column=1, value="Cheapest pincode per SKU (in-stock)").font = Font(bold=True, size=12)
 for j, h in enumerate(["SKU", "Pincode", "City", "Sale", "MRP", "Disc %"], 1):
@@ -120,44 +142,72 @@ widths(ws, {1: 34, 2: 11, 3: 13, 4: 12, 5: 12, 6: 9, 7: 10, 8: 10})
 
 # ---------------- Sheet 2: Master Data ----------------
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Locality", "SKU", "Pack", "Vol (ml)", "Sale", "MRP", "Disc %", "₹/L", "In stock", "PM pin"]
+cols = ["City", "Pincode", "Resolved Pin", "Locality", "SKU", "Pack", "Vol (ml)", "Sale", "MRP", "Disc %", "₹/L", "In stock", "PM pin"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
-    ws.append([x['city'], x['pincode'], x.get('locality', ''), x['sku_raw'], x['pack'], x['vol_ml'], x['sale'], x['mrp'],
+    ws.append([x['city'], x['pincode'], x.get('resolved_pincode', ''), x.get('locality', ''), x['sku_raw'], x['pack'], x['vol_ml'], x['sale'], x['mrp'],
                pct_fraction(x['discount_pct']), x['per_litre'], "Yes" if x['in_stock'] else "No", "★" if str(x['pincode']) in PRICEMATCH else ""])
 style_header(ws); ws.freeze_panes = "A2"; ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
-    row[6].number_format = RS; row[7].number_format = RS; row[8].number_format = PCT; row[9].number_format = RS
-    if row[10].value == "No":
-        row[10].fill = RED
-    if isinstance(row[8].value, (int, float)) and row[8].value >= 0.40:
-        row[8].fill = GREEN
-    if row[11].value:
+    row[7].number_format = RS; row[8].number_format = RS; row[9].number_format = PCT; row[10].number_format = RS
+    if row[11].value == "No":
+        row[11].fill = RED
+    if isinstance(row[9].value, (int, float)) and row[9].value >= 0.40:
+        row[9].fill = GREEN
+    if row[12].value:
         row[1].fill = BLUE
-widths(ws, {1: 13, 3: 22, 4: 40, 6: 9, 7: 13, 8: 13, 9: 9, 10: 11, 11: 9, 12: 7})
+    if row[2].value and str(row[2].value) != str(row[1].value):
+        row[2].fill = YEL
+widths(ws, {1: 13, 2: 11, 3: 12, 4: 22, 5: 40, 7: 9, 8: 13, 9: 13, 10: 9, 11: 11, 12: 9, 13: 7})
 
 # ---------------- Sheet 3: Pincode Coverage ----------------
 ws = wb.create_sheet("Pincode Coverage")
-ws.append(["City", "Pincode", "Locality", "PM pin", "Jivo SKUs", "In-stock", "OOS", "Avg Sale", "Min Sale"])
+ws.append(["City", "Pincode", "Resolved City", "Resolved Pin", "Locality", "PM pin", "Jivo SKUs", "In-stock", "OOS", "Avg Sale", "Min Sale", "Issue"])
 for p in sorted(per, key=lambda p: (-len(p['rows']), p['city'], p['pincode'])):
     pr = p['rows']; ins = sum(1 for r in pr if r['in_stock']); sales = [r['sale'] for r in pr if r.get('sale') is not None]
-    ws.append([p['city'], p['pincode'], p.get('locality', ''), "★" if str(p['pincode']) in PRICEMATCH else "",
-               len(pr), ins, len(pr) - ins, round(statistics.mean(sales)) if sales else None, min(sales) if sales else None])
-style_header(ws); ws.freeze_panes = "A2"; ws.auto_filter.ref = f"A1:I{ws.max_row}"
+    ws.append([p['city'], p['pincode'], p.get('resolved_city', ''), p.get('resolved_pincode', ''),
+               p.get('locality', ''), "★" if str(p['pincode']) in PRICEMATCH else "",
+               len(pr), ins, len(pr) - ins, round(statistics.mean(sales)) if sales else None, min(sales) if sales else None,
+               location_issue(p)])
+style_header(ws); ws.freeze_panes = "A2"; ws.auto_filter.ref = f"A1:L{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
-    row[4].fill = RED if row[4].value == 0 else GREEN
-    if isinstance(row[6].value, int) and row[6].value > 0:
-        row[6].fill = YEL
-    row[7].number_format = RS; row[8].number_format = RS
-    if row[3].value:
+    row[6].fill = RED if row[6].value == 0 else GREEN
+    if isinstance(row[8].value, int) and row[8].value > 0:
+        row[8].fill = YEL
+    row[9].number_format = RS; row[10].number_format = RS
+    if row[5].value:
         row[1].fill = BLUE
-widths(ws, {1: 13, 3: 22, 4: 7, 5: 10, 6: 9, 7: 6, 8: 12, 9: 12})
+    if row[11].value:
+        row[11].fill = YEL
+widths(ws, {1: 13, 2: 11, 3: 14, 4: 12, 5: 22, 6: 7, 7: 10, 8: 9, 9: 6, 10: 12, 11: 12, 12: 34})
 
-# ---------------- Sheet 4: SKU City Coverage ----------------
+# ---------------- Sheet 4: Location Audit ----------------
+ws = wb.create_sheet("Location Audit")
+ws.append(["City", "Pincode", "Locality", "Resolved City", "Resolved Pin", "Resolved Locality", "Status", "Jivo SKUs", "Store/SA", "Issue"])
+for p in sorted(per, key=lambda p: (p['city'], p['pincode'])):
+    issue = location_issue(p)
+    ws.append([
+        p.get('city', ''), p.get('pincode', ''), p.get('locality', ''),
+        p.get('resolved_city', ''), p.get('resolved_pincode', ''), p.get('resolved_locality', ''),
+        p.get('set_status', ''), len(p.get('rows') or []), p.get('serving_sa') or p.get('store_id', ''), issue,
+    ])
+style_header(ws); ws.freeze_panes = "A2"; ws.auto_filter.ref = f"A1:J{ws.max_row}"
+for row in ws.iter_rows(min_row=2):
+    for cell in row:
+        cell.border = BORDER
+    if row[9].value:
+        row[9].fill = YEL
+    if row[6].value != 'ok':
+        row[6].fill = RED
+    elif row[7].value:
+        row[7].fill = GREEN
+widths(ws, {1: 14, 2: 11, 3: 24, 4: 14, 5: 12, 6: 24, 7: 20, 8: 10, 9: 22, 10: 42})
+
+# ---------------- Sheet 5: SKU City Coverage ----------------
 ws = wb.create_sheet("SKU City Coverage")
 ws.append([
     "SKU", "Pack", "Alive Cities", "Alive City List", "Alive Pincodes",
