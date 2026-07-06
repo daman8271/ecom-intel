@@ -167,9 +167,15 @@ if sum(1 for r in rows if not r.get("in_stock")):
     if s.get("pdp_oos_probe_enabled") != 1:
         issue("pdp_probe_disabled", "OOS rows exist but summary.pdp_oos_probe_enabled != 1")
 
-unverified = s.get("unverified_oos")
-if unverified is None:
-    unverified = sum(1 for r in rows if not r.get("in_stock") and not r.get("pdp_checked") and r.get("stock_source") not in ("pdp", "pdp_probe"))
+calculated_unverified_oos = sum(1 for r in rows if not r.get("in_stock") and not r.get("pdp_checked") and r.get("stock_source") not in ("pdp", "pdp_probe"))
+summary_unverified_oos = s.get("unverified_oos")
+try:
+    summary_unverified_oos = int(summary_unverified_oos) if summary_unverified_oos is not None else None
+except Exception:
+    summary_unverified_oos = None
+unverified = calculated_unverified_oos if summary_unverified_oos is None else max(summary_unverified_oos, calculated_unverified_oos)
+facts["summary_unverified_oos"] = summary_unverified_oos
+facts["calculated_unverified_oos"] = calculated_unverified_oos
 facts["computed_unverified_oos"] = unverified
 if unverified > max_unverified_oos:
     issue("unverified_oos_high", f"unverified_oos={unverified} > {max_unverified_oos}")
@@ -213,6 +219,28 @@ if pomace:
         issue("canary_110094_old_price", "110094 Pomace 5L is in stock but still shows old ₹1876 without offer/effective-price evidence")
 else:
     warn("canary_absent", "110094/407561 not present in current rows; cannot canary-check screenshot case")
+
+def canary_compact(row):
+    return {k: row.get(k) for k in ("sale", "base_sale", "offer_sale", "mrp", "in_stock", "store_id", "listing_status", "stock_probe_label", "stock_source", "price_source", "search_sale", "pdp_checked")}
+
+def verified_oos(row):
+    return bool(row.get("pdp_checked")) or str(row.get("stock_source") or "").strip().lower() in ("pdp", "pdp_probe")
+
+for pin, prid, label, stale_sale in (
+    ("110012", "407851", "Canola 1L", None),
+    ("110012", "406593", "Canola 5L", 1198),
+):
+    matches = [r for r in rows if str(r.get("pincode")) == pin and str(r.get("prid")) == prid]
+    fact_key = f"canary_{pin}_{prid}"
+    if not matches:
+        warn(f"{fact_key}_absent", f"{pin}/{prid} {label} not present in current rows; cannot canary-check user screenshot case")
+        continue
+    best = sorted(matches, key=lambda r: (1 if r.get("in_stock") else 0, 1 if "pdp" in str(r.get("price_source") or "") or "offer" in str(r.get("price_source") or "") else 0), reverse=True)[0]
+    facts[fact_key] = canary_compact(best)
+    if not best.get("in_stock") and not verified_oos(best):
+        issue(f"{fact_key}_unverified_oos", f"{pin} {label} is OOS without PDP verification; this matches the false-OOS class from the user screenshots")
+    if stale_sale is not None and best.get("in_stock") and best.get("sale") == stale_sale and not best.get("offer_sale") and "pdp" not in str(best.get("price_source") or "") and "offer" not in str(best.get("price_source") or ""):
+        issue(f"{fact_key}_stale_price", f"{pin} {label} is in stock but still shows stale/search price ₹{stale_sale} without PDP/offer evidence")
 
 coord_bad = []
 if os.path.exists(config_path):

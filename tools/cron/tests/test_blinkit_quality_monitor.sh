@@ -8,14 +8,18 @@ MONITOR="$ROOT/tools/cron/blinkit_quality_monitor.sh"
 GOOD="$(mktemp)"
 BAD="$(mktemp)"
 BAD_UNVERIFIED="$(mktemp)"
+BAD_CANOLA_OOS="$(mktemp)"
+BAD_CANOLA_PRICE="$(mktemp)"
 GOOD_OUT="$(mktemp)"
 BAD_OUT="$(mktemp)"
 BAD_UNVERIFIED_OUT="$(mktemp)"
-trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$GOOD_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
+BAD_CANOLA_OOS_OUT="$(mktemp)"
+BAD_CANOLA_PRICE_OUT="$(mktemp)"
+trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$GOOD_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
 
-python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" <<'PY'
+python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" <<'PY'
 import json, sys
-src, good_path, bad_path, bad_unverified_path = sys.argv[1:]
+src, good_path, bad_path, bad_unverified_path, bad_canola_oos_path, bad_canola_price_path = sys.argv[1:]
 good = json.load(open(src, encoding="utf-8"))
 good["summary"]["captured_at"] = "2099-01-01T04:00:00.000Z"
 json.dump(good, open(good_path, "w", encoding="utf-8"))
@@ -38,6 +42,56 @@ for row in [bad_unverified["allRows"][0], bad_unverified["perPin"][0]["rows"][0]
     row["stock_source"] = "search_card_oos"
     row["pdp_checked"] = 0
 json.dump(bad_unverified, open(bad_unverified_path, "w", encoding="utf-8"))
+
+def canola_row(prid, pack, vol_ml, sale, mrp):
+    row = json.loads(json.dumps(good["allRows"][0]))
+    row.update({
+        "city": "Delhi",
+        "pincode": "110012",
+        "locality": "IARI SO",
+        "sku_raw": "Jivo Cold Pressed Canola Oil",
+        "canonical": f"jivo-cold-pressed-canola-oil-{pack.replace(' ', '')}",
+        "pack": pack,
+        "vol_ml": vol_ml,
+        "sale": sale,
+        "base_sale": None,
+        "offer_sale": None,
+        "mrp": mrp,
+        "discount_pct": round((mrp - sale) * 100 / mrp, 1),
+        "per_litre": round(sale / (vol_ml / 1000), 2),
+        "prid": prid,
+        "listing_url": f"https://blinkit.com/prn/jivo-cold-pressed-canola-oil/prid/{prid}",
+        "search_sale": sale,
+        "pdp_sale": None,
+    })
+    return row
+
+bad_canola_oos = json.loads(json.dumps(good))
+bad_canola_oos["summary"]["unverified_oos"] = 0
+row = canola_row("407851", "1 l", 1000, 239, 375)
+row.update({
+    "in_stock": 0,
+    "listing_status": "listed_out_of_stock",
+    "stock_source": "search_card_oos",
+    "price_source": "search_card_oos",
+    "pdp_checked": 0,
+    "pdp_in_stock": 0,
+})
+bad_canola_oos["allRows"].append(row)
+json.dump(bad_canola_oos, open(bad_canola_oos_path, "w", encoding="utf-8"))
+
+bad_canola_price = json.loads(json.dumps(good))
+row = canola_row("406593", "5 l", 5000, 1198, 1650)
+row.update({
+    "in_stock": 1,
+    "listing_status": "listed_in_stock",
+    "stock_source": "search_card",
+    "price_source": "search_card",
+    "pdp_checked": 0,
+    "pdp_in_stock": None,
+})
+bad_canola_price["allRows"].append(row)
+json.dump(bad_canola_price, open(bad_canola_price_path, "w", encoding="utf-8"))
 PY
 
 cd "$ROOT"
@@ -65,5 +119,22 @@ BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
   "$MONITOR" test > "$BAD_UNVERIFIED_OUT"
 grep -q '"ok": false' "$BAD_UNVERIFIED_OUT"
 grep -q 'unverified_oos_high' "$BAD_UNVERIFIED_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$BAD_CANOLA_OOS" \
+BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
+  "$MONITOR" test > "$BAD_CANOLA_OOS_OUT"
+grep -q '"ok": false' "$BAD_CANOLA_OOS_OUT"
+grep -q 'canary_110012_407851_unverified_oos' "$BAD_CANOLA_OOS_OUT"
+grep -q 'unverified_oos_high' "$BAD_CANOLA_OOS_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$BAD_CANOLA_PRICE" \
+BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
+  "$MONITOR" test > "$BAD_CANOLA_PRICE_OUT"
+grep -q '"ok": false' "$BAD_CANOLA_PRICE_OUT"
+grep -q 'canary_110012_406593_stale_price' "$BAD_CANOLA_PRICE_OUT"
 
 echo "PASS blinkit quality monitor canary regression"
