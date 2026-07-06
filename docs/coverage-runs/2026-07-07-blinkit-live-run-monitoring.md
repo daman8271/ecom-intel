@@ -15,7 +15,8 @@ export:
 - `BLINKIT_PDP_PRICE_PROBE=1`
 
 VPS ingest must keep `BLINKIT_REQUIRE_AUTH_DROP=1`; accepted drops must carry
-`summary.auth_session=1`, `summary.auth_required=1`, and `summary.auth_verified=1`.
+`summary.auth_session=1`, `summary.auth_required=1`, `summary.auth_verified=1`, and
+`summary.auth_verified_pincodes == summary.pincodes_total`.
 
 ## Data Semantics
 

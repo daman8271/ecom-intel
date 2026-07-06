@@ -38,10 +38,11 @@ bad_pomace_stale="$(mktemp)"
 bad_canola_stale="$(mktemp)"
 bad_missing_price_probe="$(mktemp)"
 bad_auth_unverified="$(mktemp)"
-trap 'rm -f "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified"' EXIT
-python3 - "$FIXTURE" "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified" <<'PY'
+bad_perpin_auth="$(mktemp)"
+trap 'rm -f "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified" "$bad_perpin_auth"' EXIT
+python3 - "$FIXTURE" "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified" "$bad_perpin_auth" <<'PY'
 import json, sys
-src, bad_path, bad_pomace_path, bad_canola_path, bad_missing_price_probe_path, bad_auth_unverified_path = sys.argv[1:]
+src, bad_path, bad_pomace_path, bad_canola_path, bad_missing_price_probe_path, bad_auth_unverified_path, bad_perpin_auth_path = sys.argv[1:]
 d = json.load(open(src, encoding="utf-8"))
 d["allRows"][0]["per_litre"] = 375.2
 d["perPin"][0]["rows"][0]["per_litre"] = 375.2
@@ -51,6 +52,10 @@ auth_unverified = json.load(open(src, encoding="utf-8"))
 auth_unverified["summary"].pop("auth_verified", None)
 auth_unverified["summary"].pop("auth_verified_pincodes", None)
 json.dump(auth_unverified, open(bad_auth_unverified_path, "w", encoding="utf-8"))
+
+perpin_auth = json.load(open(src, encoding="utf-8"))
+perpin_auth["perPin"][0].pop("auth_accepted", None)
+json.dump(perpin_auth, open(bad_perpin_auth_path, "w", encoding="utf-8"))
 
 missing_price_probe = json.load(open(src, encoding="utf-8"))
 for key in ("pdp_price_probe_enabled", "pdp_price_probe_checked", "pdp_price_probe_updates"):
@@ -111,6 +116,12 @@ if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_auth_unverif
   exit 1
 fi
 grep -q "Refusing unverified Blinkit auth drop" /tmp/blinkit-ingest-auth-unverified.out
+
+if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_perpin_auth" >/tmp/blinkit-ingest-perpin-auth.out 2>&1; then
+  echo "expected per-pincode unverified auth fixture to fail" >&2
+  exit 1
+fi
+grep -q "Refusing per-pincode unverified Blinkit auth" /tmp/blinkit-ingest-perpin-auth.out
 
 if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_missing_price_probe" >/tmp/blinkit-ingest-missing-price-probe.out 2>&1; then
   echo "expected missing PDP price probe fixture to fail" >&2

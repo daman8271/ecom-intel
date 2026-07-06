@@ -136,10 +136,11 @@ This is the single biggest source of per-platform code difference:
     for live SKUs. Production runs with `BLINKIT_REQUIRE_AUTH=1` using
     `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` on the Mac collector
     or `/opt/ecom-intel/secrets/blinkit-auth-state.json` for VPS emergency/manual
-    shards. Summaries must carry `auth_session`, `auth_required`, and
-    `auth_verified`; ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1` and rejects
-    unauthenticated or unverified-auth drops. The accepted run also requires search
-    + PDP OOS probes and PDP price-probe canaries so
+    shards. Summaries must carry `auth_session`, `auth_required`, `auth_verified`,
+    and `auth_verified_pincodes` for all pincodes; ingest defaults to
+    `BLINKIT_REQUIRE_AUTH_DROP=1` and rejects unauthenticated or any-pincode
+    unverified-auth drops. The accepted run also requires search + PDP OOS probes
+    and PDP price-probe canaries so
     search-only false OOS and stale search-card prices are held before delivery.
     The visible pincode is only a label; Blinkit availability comes from the
     coordinate-resolved dark store. `Listed - Out of stock` means a listed SKU was

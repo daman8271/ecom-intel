@@ -41,9 +41,10 @@ the auth state from:
 
 It exports `BLINKIT_REQUIRE_AUTH=1` and exits `3` if no auth state is available. The
 merge step preserves Blinkit auth metadata: merged `summary.auth_session` and
-`summary.auth_verified` are `1` only when every shard was authenticated and accepted
-in-page, and `summary.auth_required` is `1` if any shard required auth. Downstream
-Blinkit ingest rejects unauthenticated or unverified-auth drops by default.
+`summary.auth_verified` are `1` only when every shard was authenticated and every
+pincode accepted auth in-page, `summary.auth_verified_pincodes` is summed, and
+`summary.auth_required` is `1` if any shard required auth. Downstream Blinkit ingest
+rejects unauthenticated or any-pincode unverified-auth drops by default.
 
 ## Merge On VPS
 

@@ -22,8 +22,8 @@ actually has presence. Generated Excel reports for every live platform are in
 - **VPS emergency/manual Blinkit auth state** lives at
   `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Do not publish or accept
   anonymous Blinkit stock data; `summary.auth_session`, `summary.auth_required`,
-  and `summary.auth_verified` must be present/truthy for auth-required production
-  drops.
+  `summary.auth_verified`, and `summary.auth_verified_pincodes == pincodes_total`
+  must be present/truthy for auth-required production drops.
 - **Amazon Fresh** went LIVE **2026-05-30** — it does need a **logged-in session**
   (cookies transplanted from a clean IP, see below), but no proxy. It is the
   `i=freshstore` storefront and is **~7× richer than Amazon Now** (~63 Jivo SKUs

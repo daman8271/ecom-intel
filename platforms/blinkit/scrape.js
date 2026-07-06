@@ -1151,6 +1151,7 @@ if (require.main === module) (async () => {
   if (browser) await browser.close();
   const allRows = perPin.flatMap((p) => p.rows);
   const authAcceptedPincodes = perPin.filter((p) => p.auth_accepted).length;
+  const authVerified = BLINKIT_AUTH && (!BLINKIT_REQUIRE_AUTH || authAcceptedPincodes === perPin.length);
   const summary = {
     pincodes_total: PINCODES.length,
     pincodes_resolved: perPin.filter((p) => p.resolved).length,
@@ -1163,7 +1164,7 @@ if (require.main === module) (async () => {
     partial,
     auth_session: BLINKIT_AUTH ? 1 : 0,
     auth_required: BLINKIT_REQUIRE_AUTH ? 1 : 0,
-    auth_verified: BLINKIT_AUTH && authAcceptedPincodes > 0 ? 1 : 0,
+    auth_verified: authVerified ? 1 : 0,
     auth_verified_pincodes: authAcceptedPincodes,
     oos_probe_enabled: BLINKIT_OOS_PROBE ? 1 : 0,
     oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode').length,

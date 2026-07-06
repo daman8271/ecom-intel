@@ -56,8 +56,9 @@ today's expected workbooks, and the read-only quality monitor result.
 4. **Auth-required fail-closed mode** — `BLINKIT_REQUIRE_AUTH=1` exits before scraping
    if no Blinkit token is available. The page must also populate logged-in state
    (`localStorage.user`/`authKey`) after hydration; accepted runs mark
-   `summary.auth_session=1`, `summary.auth_required=1`, and `summary.auth_verified=1`.
-   Downstream ingest rejects unauthenticated or unverified-auth drops by default.
+   `summary.auth_session=1`, `summary.auth_required=1`, `summary.auth_verified=1`,
+   and `summary.auth_verified_pincodes == summary.pincodes_total`.
+   Downstream ingest rejects unauthenticated or any-pincode unverified-auth drops by default.
 5. **Ingest validation gates** — `ingest.sh` validates identity coverage, OOS probe
    evidence, unverified OOS count, price math, and expected-config coordinates before
    writing `result.json`, building Excel, reviewing, or delivering.
@@ -119,7 +120,8 @@ BLINKIT_SIM=1 BLINKIT_REQUIRE_AUTH=1 \
 Observed (2026-07-06):
 - Missing auth exited `3` with `[auth] BLINKIT_REQUIRE_AUTH=1 but no Blinkit access token was provided`.
 - Valid auth wrote `result.json` with `summary.auth_session: 1`,
-  `summary.auth_required: 1`, and `summary.auth_verified: 1`.
+  `summary.auth_required: 1`, `summary.auth_verified: 1`, and
+  `summary.auth_verified_pincodes == summary.pincodes_total`.
 
 Conclusion: the scraper cannot silently fall back to anonymous Blinkit when auth is
 required, which prevents the 2026-07-06 false-OOS class from recurring.

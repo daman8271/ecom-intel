@@ -270,6 +270,7 @@ unique_skus = as_int("unique_skus")
 per_pins = {str(p.get("pincode")) for p in per if p.get("pincode") is not None}
 per_cities = {str(p.get("city") or "").strip() for p in per if p.get("city")}
 bad_perpin_blocks = [p.get("pincode") for p in per if truthy(p.get("blocked")) or truthy(p.get("partial_block"))]
+bad_perpin_auth = [p.get("pincode") for p in per if not flag_is_one(p.get("auth_accepted"))]
 store_ids = {str(r.get("store_id") or "").strip() for r in rows if r.get("store_id")}
 
 if partial:
@@ -278,6 +279,8 @@ if os.environ.get("BLINKIT_REQUIRE_AUTH_DROP", "1") == "1" and not auth_session:
     raise SystemExit("Refusing unauthenticated Blinkit drop: summary.auth_session is not set")
 if os.environ.get("BLINKIT_REQUIRE_AUTH_DROP", "1") == "1" and not flag_is_one(s.get("auth_verified")):
     raise SystemExit(f"Refusing unverified Blinkit auth drop: summary.auth_verified={s.get('auth_verified')!r}")
+if os.environ.get("BLINKIT_REQUIRE_AUTH_DROP", "1") == "1" and bad_perpin_auth:
+    raise SystemExit(f"Refusing per-pincode unverified Blinkit auth: perPin auth_accepted missing/false={bad_perpin_auth[:10]}")
 if blocked > blocked_max:
     raise SystemExit(f"Refusing blocked Blinkit drop: pincodes_blocked={blocked} max={blocked_max}")
 if bad_perpin_blocks:

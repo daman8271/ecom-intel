@@ -136,6 +136,7 @@ facts.update({
     "total_rows": len(rows),
     "pincodes_total": s.get("pincodes_total"),
     "pincodes_resolved": s.get("pincodes_resolved"),
+    "auth_verified_pincodes": s.get("auth_verified_pincodes", None),
     "oos_rows": sum(1 for r in rows if not r.get("in_stock")),
     "oos_probe_flips": s.get("oos_probe_flips", 0),
     "pdp_oos_probe_flips": s.get("pdp_oos_probe_flips", 0),
@@ -163,6 +164,8 @@ else:
 
 if s.get("auth_session") != 1 or s.get("auth_required") != 1 or s.get("auth_verified") != 1:
     issue("auth_not_enforced", f"auth_session={s.get('auth_session')} auth_required={s.get('auth_required')} auth_verified={s.get('auth_verified')}")
+if s.get("auth_required") == 1 and s.get("auth_verified_pincodes") != s.get("pincodes_total"):
+    issue("auth_not_all_pincodes", f"auth_verified_pincodes={s.get('auth_verified_pincodes')} pincodes_total={s.get('pincodes_total')}")
 
 if sum(1 for r in rows if not r.get("in_stock")):
     if s.get("oos_probe_enabled") != 1:

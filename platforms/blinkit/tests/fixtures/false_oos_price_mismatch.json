@@ -37,6 +37,7 @@
       "store_name": "Blinkit Store 38610",
       "resolved": true,
       "blocked": null,
+      "auth_accepted": 1,
       "rows": [
         {
           "city": "Delhi",
