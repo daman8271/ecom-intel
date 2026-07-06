@@ -155,9 +155,13 @@ BODY="Today's price data reports attached (${#PRESENT[@]}/$(( ${#EXPECTED[@]} + 
 ATTACH=()
 for f in "${PRESENT[@]}"; do ATTACH+=(--attach "$f"); done
 
-python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
-  --subject "$SUBJ" --body "$BODY" "${ATTACH[@]}" \
-  || { echo "ERROR: send failed"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
+if [ "${MAILER_DRY_RUN_SEND:-0}" = "1" ]; then
+  echo "DRYRUN email: to=$TO subject=$SUBJ files=${#PRESENT[@]}"
+else
+  python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
+    --subject "$SUBJ" --body "$BODY" "${ATTACH[@]}" \
+    || { echo "ERROR: send failed"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
+fi
 
 # Also post the same files to the WhatsApp "Ecom team" group via the Hermes
 # gateway bridge (127.0.0.1:3001 — the live WhatsApp pipe, owner-approved;
@@ -165,27 +169,31 @@ python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
 # as its own document. Best-effort: a WhatsApp failure never undoes the
 # already-sent email — it just alerts the owner. Make sure the gateway is up
 # first so a dead :3001 at cron time doesn't silently drop every file.
-ensure_gateway || true
 WA_GROUP="120363047864912511@g.us"
 WA_FAIL=0
-R=$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send \
-  -H 'Content-Type: application/json' \
-  -d "$(python3 -c 'import json,sys; print(json.dumps({"chatId": sys.argv[1], "message": sys.argv[2]}))' "$WA_GROUP" "$SUBJ")")
-echo "WhatsApp header: $R"
-echo "$R" | grep -q '"success":true' || WA_FAIL=1
-for f in "${PRESENT[@]}"; do
-  B=$(python3 -c 'import json,sys; p=sys.argv[1]; print(json.dumps({"chatId": sys.argv[2], "filePath": p, "mediaType": "document", "fileName": p.rsplit("/",1)[-1]}))' "$PWD/$f" "$WA_GROUP")
-  R=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
-    -H 'Content-Type: application/json' -d "$B")
-  echo "WhatsApp doc $(basename "$f"): $R"
-  echo "$R" | grep -q '"success":true' || WA_FAIL=1
-  sleep 2
-done
-if [ "$WA_FAIL" -eq 0 ]; then
-  echo "WhatsApp: posted ${#PRESENT[@]} reports to Ecom team group"
+if [ "${MAILER_TEST_MODE:-0}" = "1" ] || [ "${MAILER_DRY_RUN_SEND:-0}" = "1" ]; then
+  echo "TEST WhatsApp group: $WA_GROUP ${#PRESENT[@]} files"
 else
-  echo "ERROR: some WhatsApp posts failed"
-  alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"
+  ensure_gateway || true
+  R=$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send \
+    -H 'Content-Type: application/json' \
+    -d "$(python3 -c 'import json,sys; print(json.dumps({"chatId": sys.argv[1], "message": sys.argv[2]}))' "$WA_GROUP" "$SUBJ")")
+  echo "WhatsApp header: $R"
+  echo "$R" | grep -q '"success":true' || WA_FAIL=1
+  for f in "${PRESENT[@]}"; do
+    B=$(python3 -c 'import json,sys; p=sys.argv[1]; print(json.dumps({"chatId": sys.argv[2], "filePath": p, "mediaType": "document", "fileName": p.rsplit("/",1)[-1]}))' "$PWD/$f" "$WA_GROUP")
+    R=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
+      -H 'Content-Type: application/json' -d "$B")
+    echo "WhatsApp doc $(basename "$f"): $R"
+    echo "$R" | grep -q '"success":true' || WA_FAIL=1
+    sleep 2
+  done
+  if [ "$WA_FAIL" -eq 0 ]; then
+    echo "WhatsApp: posted ${#PRESENT[@]} reports to Ecom team group"
+  else
+    echo "ERROR: some WhatsApp posts failed"
+    alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"
+  fi
 fi
 
 # Send Blinkit's not-listed pincode/SKU workbook separately to the requested
