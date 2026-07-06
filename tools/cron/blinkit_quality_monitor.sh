@@ -218,13 +218,17 @@ if pomace:
     facts["canary_110094_407561"] = {k: best.get(k) for k in ("sale", "base_sale", "offer_sale", "mrp", "in_stock", "store_id", "stock_probe_label", "stock_source", "price_source", "search_sale")}
     if not best.get("in_stock") and best.get("sale") == 1876 and best.get("stock_source") not in ("pdp", "pdp_probe"):
         issue("canary_110094_old_failure", "110094 Pomace 5L still looks like old 1876/search-OOS failure")
+    price_source = str(best.get("price_source") or "").strip().lower()
+    price_verified = bool(best.get("pdp_price_checked")) or bool(best.get("pdp_checked")) or "pdp" in price_source or "offer" in price_source
+    if best.get("in_stock") and not price_verified:
+        issue("canary_110094_407561_unverified_price", "110094 Pomace 5L is in stock but price is not PDP/offer verified; this can repeat the stale-search-price class from the user screenshots")
     if best.get("in_stock") and best.get("sale") == 1876 and not best.get("offer_sale") and "offer" not in str(best.get("price_source") or ""):
         issue("canary_110094_old_price", "110094 Pomace 5L is in stock but still shows old ₹1876 without offer/effective-price evidence")
 else:
     warn("canary_absent", "110094/407561 not present in current rows; cannot canary-check screenshot case")
 
 def canary_compact(row):
-    return {k: row.get(k) for k in ("sale", "base_sale", "offer_sale", "mrp", "in_stock", "store_id", "listing_status", "stock_probe_label", "stock_source", "price_source", "search_sale", "pdp_checked")}
+    return {k: row.get(k) for k in ("sale", "base_sale", "offer_sale", "mrp", "in_stock", "store_id", "listing_status", "stock_probe_label", "stock_source", "price_source", "search_sale", "pdp_checked", "pdp_price_checked")}
 
 def verified_oos(row):
     return bool(row.get("pdp_checked")) or str(row.get("stock_source") or "").strip().lower() in ("pdp", "pdp_probe")
@@ -242,6 +246,10 @@ for pin, prid, label, stale_sale in (
     facts[fact_key] = canary_compact(best)
     if not best.get("in_stock") and not verified_oos(best):
         issue(f"{fact_key}_unverified_oos", f"{pin} {label} is OOS without PDP verification; this matches the false-OOS class from the user screenshots")
+    price_source = str(best.get("price_source") or "").strip().lower()
+    price_verified = bool(best.get("pdp_price_checked")) or bool(best.get("pdp_checked")) or "pdp" in price_source or "offer" in price_source
+    if best.get("in_stock") and not price_verified:
+        issue(f"{fact_key}_unverified_price", f"{pin} {label} is in stock but price is not PDP/offer verified; this can repeat the stale-search-price class from the user screenshots")
     if stale_sale is not None and best.get("in_stock") and best.get("sale") == stale_sale and not best.get("offer_sale") and "pdp" not in str(best.get("price_source") or "") and "offer" not in str(best.get("price_source") or ""):
         issue(f"{fact_key}_stale_price", f"{pin} {label} is in stock but still shows stale/search price ₹{stale_sale} without PDP/offer evidence")
 

@@ -357,6 +357,7 @@ function parsePdpProductText(text, row) {
   const name = cleanProductName(row.sku_raw);
   if (!name) return null;
   const candidates = [];
+  const packVariants = pdpPackVariants(row).map((pack) => String(pack).toLowerCase());
   for (const pack of pdpPackVariants(row)) {
     const needle = `${name} ${pack}`.toLowerCase();
     let idx = lower.indexOf(needle);
@@ -364,6 +365,14 @@ function parsePdpProductText(text, row) {
       candidates.push(idx);
       idx = lower.indexOf(needle, idx + 1);
     }
+  }
+  let nameIdx = lower.indexOf(name.toLowerCase());
+  while (nameIdx >= 0) {
+    const nearby = lower.slice(nameIdx, nameIdx + 220);
+    if (packVariants.some((pack) => nearby.includes(pack) || nearby.includes(`(${pack})`))) {
+      candidates.push(nameIdx);
+    }
+    nameIdx = lower.indexOf(name.toLowerCase(), nameIdx + 1);
   }
   if (!candidates.length) return null;
   let segment = '';
@@ -1000,6 +1009,47 @@ async function scrapeOne(browser, rec) {
         }
       }
     }
+    if (BLINKIT_PDP_PRICE_PROBE) {
+      for (let idx = 0; idx < rows.length; idx++) {
+        if (!shouldPdpPriceProbe(rec, rows[idx])) continue;
+        const prev = rows[idx];
+        const pdp = await verifyPdpRow({ ...rec, probe_label: 'price-canary' }, prev, 'price-canary');
+        if (!pdp) continue;
+        const changed = (
+          (pdp.sale != null && pdp.sale !== prev.sale) ||
+          (pdp.mrp != null && pdp.mrp !== prev.mrp) ||
+          (pdp.offer_sale != null && pdp.offer_sale !== prev.offer_sale)
+        );
+        rows[idx] = {
+          ...prev,
+          store_id: pdp.store.id || prev.store_id,
+          store_name: pdp.store.name || prev.store_name,
+          sale: pdp.sale ?? prev.sale,
+          mrp: pdp.mrp ?? prev.mrp,
+          base_sale: pdp.base_sale ?? prev.base_sale,
+          offer_sale: pdp.offer_sale ?? prev.offer_sale,
+          discount_pct: pdp.discount_pct ?? prev.discount_pct,
+          per_litre: pdp.per_litre ?? prev.per_litre,
+          in_stock: pdp.in_stock ? 1 : 0,
+          listing_status: pdp.in_stock ? 'listed_in_stock' : 'listed_out_of_stock',
+          stock_source: pdp.in_stock ? prev.stock_source : 'pdp_price_probe',
+          price_source: priceSource('pdp_price_probe', pdp),
+          pdp_checked: 1,
+          pdp_in_stock: pdp.in_stock ? 1 : 0,
+          pdp_sale: pdp.sale,
+          pdp_mrp: pdp.mrp,
+          pdp_snippet: pdp.snippet,
+          pdp_price_checked: 1,
+          pdp_price_changed: changed ? 1 : 0,
+          price_probe: 'pdp_canary',
+          search_sale: prev.search_sale ?? prev.sale,
+          search_mrp: prev.search_mrp ?? prev.mrp,
+        };
+        if (changed) {
+          process.stderr.write(`[pdp-price] ${rec.city} ${rec.pincode} -> updated ${prev.sku_raw} sale=${prev.sale || 'n/a'}=>${pdp.sale || 'n/a'} via PDP\n`);
+        }
+      }
+    }
     if (BLINKIT_OOS_PROBE || BLINKIT_PDP_OOS_PROBE) {
       store = primaryStore;
     }
@@ -1038,7 +1088,7 @@ async function pool(items, n, fn) {
 
 // Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
 // only runs when invoked directly, so `require`-ing this file never launches a browser.
-module.exports = { parseVolMl, canonical, priceInfo, buyAtPrice };
+module.exports = { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe };
 
 // Scrape one pincode with block-aware exponential backoff. A blocked attempt backs
 // off and retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag
@@ -1094,6 +1144,9 @@ if (require.main === module) (async () => {
     oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode').length,
     pdp_oos_probe_enabled: BLINKIT_PDP_OOS_PROBE ? 1 : 0,
     pdp_oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode_pdp').length,
+    pdp_price_probe_enabled: BLINKIT_PDP_PRICE_PROBE ? 1 : 0,
+    pdp_price_probe_checked: allRows.filter((r) => r.pdp_price_checked).length,
+    pdp_price_probe_updates: allRows.filter((r) => r.pdp_price_changed).length,
     unverified_oos: allRows.filter((r) => !r.in_stock && !r.pdp_checked && r.stock_source !== 'pdp').length,
     captured_at: new Date().toISOString(),
   };

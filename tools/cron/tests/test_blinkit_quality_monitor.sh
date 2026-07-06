@@ -10,6 +10,7 @@ BAD="$(mktemp)"
 BAD_UNVERIFIED="$(mktemp)"
 BAD_CANOLA_OOS="$(mktemp)"
 BAD_CANOLA_PRICE="$(mktemp)"
+BAD_CANOLA_UNVERIFIED_PRICE="$(mktemp)"
 GOOD_WORKBOOK="$(mktemp --suffix=.xlsx)"
 GOOD_NOT_LISTED_WORKBOOK="$(mktemp --suffix=.xlsx)"
 BAD_MAIN_MISSING_NL="$(mktemp --suffix=.xlsx)"
@@ -24,12 +25,13 @@ BAD_OUT="$(mktemp)"
 BAD_UNVERIFIED_OUT="$(mktemp)"
 BAD_CANOLA_OOS_OUT="$(mktemp)"
 BAD_CANOLA_PRICE_OUT="$(mktemp)"
+BAD_CANOLA_UNVERIFIED_PRICE_OUT="$(mktemp)"
 BAD_WORKBOOK_OUT="$(mktemp)"
-trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_MAIN_MISSING_NL" "$BAD_NOT_LISTED_WORKBOOK" "$BAD_WORKBOOK" "$GOOD_OUT" "$GOOD_WORKBOOK_OUT" "$MISSING_NOT_LISTED_OUT" "$BAD_MAIN_MISSING_NL_OUT" "$BAD_NOT_LISTED_WORKBOOK_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
+trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_CANOLA_UNVERIFIED_PRICE" "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_MAIN_MISSING_NL" "$BAD_NOT_LISTED_WORKBOOK" "$BAD_WORKBOOK" "$GOOD_OUT" "$GOOD_WORKBOOK_OUT" "$MISSING_NOT_LISTED_OUT" "$BAD_MAIN_MISSING_NL_OUT" "$BAD_NOT_LISTED_WORKBOOK_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_CANOLA_UNVERIFIED_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
 
-python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" <<'PY'
+python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_CANOLA_UNVERIFIED_PRICE" <<'PY'
 import json, sys
-src, good_path, bad_path, bad_unverified_path, bad_canola_oos_path, bad_canola_price_path = sys.argv[1:]
+src, good_path, bad_path, bad_unverified_path, bad_canola_oos_path, bad_canola_price_path, bad_canola_unverified_price_path = sys.argv[1:]
 good = json.load(open(src, encoding="utf-8"))
 good["summary"]["captured_at"] = "2099-01-01T04:00:00.000Z"
 json.dump(good, open(good_path, "w", encoding="utf-8"))
@@ -102,6 +104,20 @@ row.update({
 })
 bad_canola_price["allRows"].append(row)
 json.dump(bad_canola_price, open(bad_canola_price_path, "w", encoding="utf-8"))
+
+bad_canola_unverified_price = json.loads(json.dumps(good))
+row = canola_row("406593", "5 l", 5000, 1193, 1650)
+row.update({
+    "in_stock": 1,
+    "listing_status": "listed_in_stock",
+    "stock_source": "search_card",
+    "price_source": "search_card",
+    "pdp_checked": 0,
+    "pdp_price_checked": 0,
+    "pdp_in_stock": None,
+})
+bad_canola_unverified_price["allRows"].append(row)
+json.dump(bad_canola_unverified_price, open(bad_canola_unverified_price_path, "w", encoding="utf-8"))
 PY
 
 python3 - "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_MAIN_MISSING_NL" "$BAD_NOT_LISTED_WORKBOOK" <<'PY'
@@ -208,6 +224,14 @@ BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
   "$MONITOR" test > "$BAD_CANOLA_PRICE_OUT"
 grep -q '"ok": false' "$BAD_CANOLA_PRICE_OUT"
 grep -q 'canary_110012_406593_stale_price' "$BAD_CANOLA_PRICE_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$BAD_CANOLA_UNVERIFIED_PRICE" \
+BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
+  "$MONITOR" test > "$BAD_CANOLA_UNVERIFIED_PRICE_OUT"
+grep -q '"ok": false' "$BAD_CANOLA_UNVERIFIED_PRICE_OUT"
+grep -q 'canary_110012_406593_unverified_price' "$BAD_CANOLA_UNVERIFIED_PRICE_OUT"
 
 printf 'not a workbook\n' > "$BAD_WORKBOOK"
 BLINKIT_MONITOR_DRYRUN=1 \

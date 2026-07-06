@@ -2,7 +2,7 @@
 // Ports the zepto 2026-06-10 combo fix: combo packs render in BOTH orders ("1 L X 2" at some
 // stores, "2 x 1 L" at others); the parser must read both, before the single-quantity fallback.
 // Run: node platforms/blinkit/test_volparse.js
-const { parseVolMl, canonical, priceInfo, buyAtPrice } = require('./scrape.js');
+const { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe } = require('./scrape.js');
 
 const CASES = [
   // multiplier-FIRST combos ("M x N unit")
@@ -74,6 +74,42 @@ for (const [input, want] of CASES) {
   const ok = got === 1687;
   if (!ok) fail++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  buyAtPrice(get it at) = ${got} (want 1687)`);
+}
+
+{
+  const got = shouldPdpPriceProbe(
+    { pincode: '110094' },
+    { in_stock: 1, prid: '407561', listing_url: 'https://blinkit.com/prn/jivo-pomace-olive-oil/prid/407561' }
+  );
+  const ok = got === true;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  shouldPdpPriceProbe(canary) = ${got} (want true)`);
+}
+
+{
+  const got = shouldPdpPriceProbe(
+    { pincode: '110094' },
+    { in_stock: 1, prid: '528706', listing_url: 'https://blinkit.com/prn/jivo-pomace-olive-oil/prid/528706' }
+  );
+  const ok = got === false;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  shouldPdpPriceProbe(non-canary) = ${got} (want false)`);
+}
+
+{
+  const row = { sku_raw: 'Jivo Pomace Olive Oil', pack: '5 l', vol_ml: 5000 };
+  const got = parsePdpProductText('Home / Oil / Jivo Pomace Olive Oil Jivo Pomace Olive Oil 5 ltr ₹1,875 MRP ₹4,999 Buy at ₹1,687 Apply Code: TEST Add to cart Why shop from blinkit?', row);
+  const ok = got && got.in_stock === 1 && got.sale === 1687 && got.base_sale === 1875 && got.offer_sale === 1687 && got.mrp === 4999;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(Buy at) = ${JSON.stringify(got)} (want sale=1687 base=1875 offer=1687 mrp=4999)`);
+}
+
+{
+  const row = { sku_raw: 'Jivo Cold Pressed Canola Oil', pack: '5 l', vol_ml: 5000 };
+  const got = parsePdpProductText('Home / Oil / Jivo Cold Pressed Canola Oil (5 l) Jivo Cold Pressed Canola Oil (5 l) 5 ltr ₹1,193 MRP ₹1,650 27% OFF Add to cart Why shop from blinkit?', row);
+  const ok = got && got.in_stock === 1 && got.sale === 1193 && got.mrp === 1650;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(parenthesized pack) = ${JSON.stringify(got)} (want sale=1193 mrp=1650)`);
 }
 
 if (fail) { console.error(`\n${fail} FAILED`); process.exit(1); }
