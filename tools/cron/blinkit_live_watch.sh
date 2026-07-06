@@ -24,7 +24,7 @@ end_epoch() {
 
 mac_status() {
   ssh -o BatchMode=yes -o ConnectTimeout=10 macpro \
-    "pgrep -af 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' || true; tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.out 2>/dev/null || true; tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.err 2>/dev/null || true" \
+    "ps -axo pid,command | grep -E 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' | grep -v grep || true; tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.out 2>/dev/null || true; tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.err 2>/dev/null || true" \
     2>&1 | sed 's/^/[mac] /' | tee -a "$LOG" >/dev/null
 }
 
