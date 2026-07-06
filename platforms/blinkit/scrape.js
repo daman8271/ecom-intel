@@ -290,14 +290,16 @@ function locationCookieSpecs(rec) {
 }
 
 function probeRecords(rec) {
-  const offsets = [...OOS_PROBE_OFFSETS];
-  const out = offsets.map((o) => ({
+  const offsetRecords = OOS_PROBE_OFFSETS.map((o) => ({
     ...rec,
     lat: Math.round((Number(rec.lat) + o.dlat) * 1e7) / 1e7,
     lon: Math.round((Number(rec.lon) + o.dlon) * 1e7) / 1e7,
     probe_label: o.label,
   }));
-  if (String(rec.city || '').toLowerCase() === 'delhi') {
+  if (String(rec.city || '').toLowerCase() !== 'delhi') return offsetRecords;
+
+  const out = [];
+  {
     const lat = Number(rec.lat);
     const lon = Number(rec.lon);
     const neighbors = PINCODES
@@ -309,12 +311,17 @@ function probeRecords(rec) {
     for (const p of neighbors) {
       out.push({
         ...rec,
+        pincode: p.pincode,
+        locality: p.locality || rec.locality,
         lat: Number(p.lat),
         lon: Number(p.lon),
         probe_label: `neighbor-${p.pincode}`,
         probe_source_pincode: p.pincode,
+        report_pincode: rec.pincode,
+        report_locality: rec.locality,
       });
     }
+    out.push(...offsetRecords);
     for (const o of DELHI_WIDE_OOS_PROBE_OFFSETS) {
       out.push({
         ...rec,
@@ -1081,6 +1088,7 @@ async function scrapeOne(browser, rec) {
             search_mrp: prev.mrp,
             stock_probe: 'nearby_same_pincode',
             stock_probe_label: probeRec.probe_label,
+            stock_probe_source_pincode: probeRec.probe_source_pincode || null,
             stock_probe_lat: probeRec.lat,
             stock_probe_lon: probeRec.lon,
             primary_store_id: prev.store_id,
@@ -1167,35 +1175,53 @@ async function scrapeOne(browser, rec) {
       for (let idx = 0; idx < rows.length; idx++) {
         if (!shouldPdpPriceProbe(rec, rows[idx])) continue;
         const prev = rows[idx];
-        const pdp = await verifyPdpRow({ ...rec, probe_label: 'price-canary' }, prev, 'price-canary');
+        const stockProbeLat = Number(prev.stock_probe_lat);
+        const stockProbeLon = Number(prev.stock_probe_lon);
+        const sourcePin = PINCODES.find((p) => String(p.pincode) === String(prev.stock_probe_source_pincode || ''));
+        const priceRec = (prev.stock_source === 'search_probe' && Number.isFinite(stockProbeLat) && Number.isFinite(stockProbeLon))
+          ? {
+              ...rec,
+              ...(sourcePin || {}),
+              lat: stockProbeLat,
+              lon: stockProbeLon,
+              probe_label: `price-canary-${prev.stock_probe_label || 'stock-probe'}`,
+            }
+          : { ...rec, probe_label: 'price-canary' };
+        const pdp = await verifyPdpRow(priceRec, prev, priceRec.probe_label || 'price-canary');
         if (!pdp) continue;
         const changed = (
           (pdp.sale != null && pdp.sale !== prev.sale) ||
           (pdp.mrp != null && pdp.mrp !== prev.mrp) ||
           (pdp.offer_sale != null && pdp.offer_sale !== prev.offer_sale)
         );
+        const hasPdpPrice = pdp.sale != null || pdp.mrp != null || pdp.offer_sale != null;
         rows[idx] = {
           ...prev,
-          store_id: pdp.store.id || prev.store_id,
-          store_name: pdp.store.name || prev.store_name,
+          store_id: prev.store_id,
+          store_name: prev.store_name,
           sale: pdp.sale ?? prev.sale,
           mrp: pdp.mrp ?? prev.mrp,
           base_sale: pdp.base_sale ?? prev.base_sale,
           offer_sale: pdp.offer_sale ?? prev.offer_sale,
           discount_pct: pdp.discount_pct ?? prev.discount_pct,
           per_litre: pdp.per_litre ?? prev.per_litre,
-          in_stock: pdp.in_stock ? 1 : 0,
-          listing_status: pdp.in_stock ? 'listed_in_stock' : 'listed_out_of_stock',
-          stock_source: pdp.in_stock ? prev.stock_source : 'pdp_price_probe',
-          price_source: priceSource('pdp_price_probe', pdp),
+          in_stock: prev.in_stock,
+          listing_status: prev.listing_status,
+          stock_source: prev.stock_source,
+          price_source: hasPdpPrice ? priceSource('pdp_price_probe', pdp) : prev.price_source,
           pdp_checked: 1,
-          pdp_in_stock: pdp.in_stock ? 1 : 0,
+          pdp_price_in_stock: pdp.in_stock ? 1 : 0,
           pdp_sale: pdp.sale,
           pdp_mrp: pdp.mrp,
           pdp_snippet: pdp.snippet,
           pdp_price_checked: 1,
           pdp_price_changed: changed ? 1 : 0,
           price_probe: 'pdp_canary',
+          pdp_price_probe_label: pdp.probe_label,
+          pdp_price_probe_lat: pdp.probe_lat,
+          pdp_price_probe_lon: pdp.probe_lon,
+          pdp_price_store_id: pdp.store.id || '',
+          pdp_price_store_name: pdp.store.name || '',
           search_sale: prev.search_sale ?? prev.sale,
           search_mrp: prev.search_mrp ?? prev.mrp,
         };
