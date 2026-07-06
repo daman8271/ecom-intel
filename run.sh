@@ -38,12 +38,19 @@ case "$P" in
   # normal runs untouched, a throttled run dies at ~05:10, the batch still lands AT
   # 10:00 (amazon-fresh reported missing; team gets last-good on request; healcheck
   # backstop retries later). Override per-run with AMAZON_FRESH_TIMEOUT_SECS.
-  amazon-fresh) SCRAPE_TIMEOUT_SECS="${AMAZON_FRESH_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-10800}}" ;;
+  # 2026-07-07 Option C: daily set cut 973 -> 169 pins (see platforms/amazon-fresh/
+  # PINCODES-OPTC.md). Tarpit worst case ~24.4s/serviceable pin = ~70m for 169 pins;
+  # normal ~10-20m. 2h cap = ~1.7x tarpit headroom yet still dies hours before the
+  # 10:00 batch. (Was 3h for the 973 set; with -k below the cap is now actually hard.)
+  amazon-fresh) SCRAPE_TIMEOUT_SECS="${AMAZON_FRESH_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-7200}}" ;;
   amazon-now) SCRAPE_TIMEOUT_SECS="${AMAZON_NOW_TIMEOUT_SECS:-${SCRAPE_TIMEOUT_SECS:-7200}}" ;;
 esac
 run_scraper() {
   if [ -n "${SCRAPE_TIMEOUT_SECS:-}" ] && command -v timeout >/dev/null 2>&1; then
-    timeout --foreground "${SCRAPE_TIMEOUT_SECS}s" node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
+    # -k 60: node ignores SIGTERM (2026-07-06: the 3h cap fired, node kept running
+    # 6h46m and the output was discarded anyway). --kill-after sends SIGKILL 60s
+    # after SIGTERM, making every platform cap actually enforceable.
+    timeout --foreground -k 60 "${SCRAPE_TIMEOUT_SECS}s" node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
   else
     node "$SCRAPER" 2> "$DIR/logs/${P}-${RUN_ID}.log"
   fi

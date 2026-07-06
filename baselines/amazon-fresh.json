@@ -2,85 +2,53 @@
   "platform": "amazon-fresh",
   "samples": [
     {
-      "run_id": "2026-06-25-1310",
-      "captured_at": "2026-06-25T08:54:46.113Z",
-      "rows": 1927,
-      "unique_skus": 29,
-      "pincodes_with_jivo": 180,
-      "priced_rows": 1927
-    },
-    {
-      "run_id": "2026-06-26-0904",
-      "captured_at": "2026-06-26T04:50:23.920Z",
-      "rows": 1885,
-      "unique_skus": 30,
-      "pincodes_with_jivo": 176,
-      "priced_rows": 1885
-    },
-    {
-      "run_id": "2026-06-26-1250",
-      "captured_at": "2026-06-26T08:34:46.214Z",
-      "rows": 2074,
+      "run_id": "rebaseline-fresh169-1",
+      "captured_at": "2026-07-08T05:00:00.000Z",
+      "rows": 1299,
       "unique_skus": 32,
-      "pincodes_with_jivo": 180,
-      "priced_rows": 2074
+      "pincodes_with_jivo": 109,
+      "priced_rows": 1299
     },
     {
-      "run_id": "2026-06-27-0900",
-      "captured_at": "2026-06-27T04:43:43.090Z",
-      "rows": 2317,
-      "unique_skus": 35,
-      "pincodes_with_jivo": 177,
-      "priced_rows": 2317
-    },
-    {
-      "run_id": "2026-06-27-1231",
-      "captured_at": "2026-06-27T08:15:56.520Z",
-      "rows": 2519,
-      "unique_skus": 36,
-      "pincodes_with_jivo": 181,
-      "priced_rows": 2519
-    },
-    {
-      "run_id": "2026-06-28-0710",
-      "captured_at": "2026-06-28T03:34:38.932Z",
-      "rows": 3350,
-      "unique_skus": 34,
-      "pincodes_with_jivo": 286,
-      "priced_rows": 3350
-    },
-    {
-      "run_id": "2026-06-29-0710",
-      "captured_at": "2026-06-29T03:32:18.954Z",
-      "rows": 3395,
-      "unique_skus": 34,
-      "pincodes_with_jivo": 285,
-      "priced_rows": 3395
-    },
-    {
-      "run_id": "2026-06-30-0728",
-      "captured_at": "2026-06-30T03:58:23.909Z",
-      "rows": 3275,
-      "unique_skus": 38,
-      "pincodes_with_jivo": 284,
-      "priced_rows": 3275
-    },
-    {
-      "run_id": "2026-07-03-0507",
-      "captured_at": "2026-07-03T00:24:46.594Z",
-      "rows": 4141,
+      "run_id": "rebaseline-fresh169-2",
+      "captured_at": "2026-07-08T05:00:00.000Z",
+      "rows": 1299,
       "unique_skus": 32,
-      "pincodes_with_jivo": 857,
-      "priced_rows": 4141
+      "pincodes_with_jivo": 109,
+      "priced_rows": 1299
     },
     {
-      "run_id": "2026-07-05-1604",
-      "captured_at": "2026-07-05T12:46:48.069Z",
-      "rows": 1805,
-      "unique_skus": 31,
-      "pincodes_with_jivo": 264,
-      "priced_rows": 1805
+      "run_id": "rebaseline-fresh169-3",
+      "captured_at": "2026-07-08T05:00:00.000Z",
+      "rows": 1299,
+      "unique_skus": 32,
+      "pincodes_with_jivo": 109,
+      "priced_rows": 1299
+    },
+    {
+      "run_id": "rebaseline-fresh169-4",
+      "captured_at": "2026-07-08T05:00:00.000Z",
+      "rows": 1299,
+      "unique_skus": 32,
+      "pincodes_with_jivo": 109,
+      "priced_rows": 1299
+    },
+    {
+      "run_id": "rebaseline-fresh169-5",
+      "captured_at": "2026-07-08T05:00:00.000Z",
+      "rows": 1299,
+      "unique_skus": 32,
+      "pincodes_with_jivo": 109,
+      "priced_rows": 1299
+    },
+    {
+      "run_id": "rebaseline-fresh169-6",
+      "captured_at": "2026-07-08T05:00:00.000Z",
+      "rows": 1299,
+      "unique_skus": 32,
+      "pincodes_with_jivo": 109,
+      "priced_rows": 1299
     }
   ],
-  "updated_at": "2026-07-05T12:47:23.652417+00:00"
+  "updated_at": "2026-07-06T20:38:04.234709+00:00"
 }
