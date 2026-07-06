@@ -137,7 +137,9 @@ to a captcha on the datacenter IP. See `docs/PROXY.md`.
   stale-price canaries. VPS ingest uses `BLINKIT_REQUIRE_AUTH_DROP=1`. The workbook
   separates `Listed - Out of stock` from `Not listed`; a separate
   `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx` is sent only to the configured
-  direct WhatsApp contact after the main Blinkit workbook passes quality.
+  direct WhatsApp contact after the main Blinkit workbook passes quality. Ingest
+  sends it immediately and the 10:00 mailer retries only if the per-date sent
+  marker is absent.
   Blinkit availability is coordinate/dark-store based, not pincode-label based:
   the same header pincode can resolve to a different store from a nearby coordinate,
   so hard OOS rows require nearby and PDP verification before publishing.

@@ -59,9 +59,11 @@ Do not collapse listing absence into stock absence. Blinkit output now separates
 
 `build_excel.py` writes both a `Listing Status` sheet and a `Not Listed Pincodes`
 sheet in the main workbook, and also emits
-`Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`. The mailer direct-sends that
-standalone workbook to the configured WhatsApp contact only after the main Blinkit
-workbook passes quality.
+`Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`. The ingest path and mailer use
+`tools/whatsapp/send_blinkit_not_listed_direct.sh` to direct-send that standalone
+workbook to the configured WhatsApp contact only after the main Blinkit workbook
+passes quality; the helper writes a per-date sent marker so retries do not
+double-send.
 
 Price correctness also has a PDP guard. Search cards can show a base/stale price
 while the PDP shows a lower effective price such as `Buy at`, `Buy for`, `Effective

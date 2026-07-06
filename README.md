@@ -124,8 +124,10 @@ set, not part of the Wave 1 config generator.
   because anonymous/search-only sessions can produce false Out of Stock rows and
   stale search-card prices. Blinkit output separates `Listed - Out of stock` from
   `Not listed`; a standalone `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`
-  is direct-sent to `917703818227@s.whatsapp.net` only after the main Blinkit
-  workbook passes quality.
+  is direct-sent to `917703818227@s.whatsapp.net` by
+  `tools/whatsapp/send_blinkit_not_listed_direct.sh` only after the main Blinkit
+  workbook passes quality. Ingest calls it immediately; the 10:00 mailer retries
+  idempotently if no sent marker exists.
 - **Blinkit pincode labels are not enough.** Blinkit resolves a dark store from the
   injected latitude/longitude and account session; two nearby coordinates can show
   the same pincode/header but different listing, stock, ETA, or offer price. The

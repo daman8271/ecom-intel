@@ -27,6 +27,9 @@ cleanup() {
   rm -f "$ROOT/logs/blinkit_quality_monitor-${DATE}.log" "$ROOT/logs/blinkit_quality_monitor-${DATE}.state"
   rm -f "$ROOT/logs/blinkit_quality_monitor-${MISSING_MAIN_DATE}.log" "$ROOT/logs/blinkit_quality_monitor-${MISSING_MAIN_DATE}.state"
   rm -f "$ROOT/logs/blinkit_quality_monitor-${HELD_DATE}.log" "$ROOT/logs/blinkit_quality_monitor-${HELD_DATE}.state"
+  rm -f "$ROOT/logs/blinkit-not-listed-wa-${DATE}.sent"
+  rm -f "$ROOT/logs/blinkit-not-listed-wa-${MISSING_MAIN_DATE}.sent"
+  rm -f "$ROOT/logs/blinkit-not-listed-wa-${HELD_DATE}.sent"
 }
 trap cleanup EXIT
 

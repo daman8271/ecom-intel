@@ -579,4 +579,9 @@ if [ "$DELIVER" = "--deliver" ]; then
   cp "$NOT_LISTED_XLSX" "$ROOT/output/$(basename "$NOT_LISTED_XLSX")"
   echo "[blinkit-ingest] delivered -> output/$(basename "$NOT_LISTED_XLSX")"
   "$ROOT/tools/cron/spool_into_batch.sh" blinkit "Blinkit" "$ROOT/output/$(basename "$XLSX")" || true
+  BLINKIT_NOT_LISTED_DATE="$(date +%F)" \
+  BLINKIT_MONITOR_REPORT="$ROOT/output/$(basename "$XLSX")" \
+  BLINKIT_MONITOR_NOT_LISTED_REPORT="$ROOT/output/$(basename "$NOT_LISTED_XLSX")" \
+    "$ROOT/tools/whatsapp/send_blinkit_not_listed_direct.sh" ingest \
+    >> "$ROOT/logs/blinkit-not-listed-wa.log" 2>&1 || true
 fi

@@ -220,7 +220,7 @@ cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; 
   │       ├─ BLINKIT_REQUIRE_AUTH=1 with /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
   │       ├─ BLINKIT_OOS_PROBE=1, BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
   │       └─ VPS ingest with BLINKIT_REQUIRE_AUTH_DROP=1 → build/review/deliver
-  │          └─ main workbook + not-listed workbook; direct not-listed WhatsApp only after quality OK
+  │          └─ main workbook + not-listed workbook; immediate idempotent direct not-listed WhatsApp only after quality OK
   └─ tools/cron/deadline_sweep.sh 10:00 — predict chain runtime (durations.jsonl p90),
   │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE
   └─ run_all.sh — scrape VPS-hosted LIVE platforms SERIALLY ( removed 2026-06-06; ~2h chain)

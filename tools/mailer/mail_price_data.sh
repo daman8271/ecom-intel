@@ -205,23 +205,12 @@ fi
 BLINKIT_NOT_LISTED_REPORT="output/Jivo-Blinkit-Not-Listed-Pincodes-$D.xlsx"
 BLINKIT_NOT_LISTED_WA_CHAT="${BLINKIT_NOT_LISTED_WA_CHAT:-917703818227@s.whatsapp.net}"
 if [ "${BLINKIT_SEND_NOT_LISTED_WA:-1}" = "1" ] && [ "$BLINKIT_READY" -eq 1 ] && [ -f "$BLINKIT_NOT_LISTED_REPORT" ]; then
-  NL_SUBJ="Blinkit not-listed pincodes/SKUs — $D"
-  if [ "${MAILER_TEST_MODE:-0}" = "1" ]; then
-    echo "TEST WhatsApp direct not-listed: $BLINKIT_NOT_LISTED_WA_CHAT $(basename "$BLINKIT_NOT_LISTED_REPORT")"
-  else
-    ensure_gateway || true
-    R=$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send \
-      -H 'Content-Type: application/json' \
-      -d "$(python3 -c 'import json,sys; print(json.dumps({"chatId": sys.argv[1], "message": sys.argv[2]}))' "$BLINKIT_NOT_LISTED_WA_CHAT" "$NL_SUBJ")")
-    echo "WhatsApp direct not-listed header: $R"
-    B=$(python3 -c 'import json,sys; p=sys.argv[1]; print(json.dumps({"chatId": sys.argv[2], "filePath": p, "mediaType": "document", "fileName": p.rsplit("/",1)[-1]}))' "$PWD/$BLINKIT_NOT_LISTED_REPORT" "$BLINKIT_NOT_LISTED_WA_CHAT")
-    R=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
-      -H 'Content-Type: application/json' -d "$B")
-    echo "WhatsApp direct not-listed doc $(basename "$BLINKIT_NOT_LISTED_REPORT"): $R"
-    if ! echo "$R" | grep -q '"success":true'; then
-      alert "Blinkit not-listed WhatsApp send failed for $BLINKIT_NOT_LISTED_WA_CHAT"
-    fi
-  fi
+  BLINKIT_NOT_LISTED_DATE="$D" \
+  BLINKIT_MONITOR_REPORT="$BLINKIT_REPORT" \
+  BLINKIT_MONITOR_NOT_LISTED_REPORT="$BLINKIT_NOT_LISTED_REPORT" \
+  BLINKIT_NOT_LISTED_WA_CHAT="$BLINKIT_NOT_LISTED_WA_CHAT" \
+    ./tools/whatsapp/send_blinkit_not_listed_direct.sh mailer \
+    || alert "Blinkit not-listed WhatsApp send failed for $BLINKIT_NOT_LISTED_WA_CHAT"
 elif [ -f "$BLINKIT_NOT_LISTED_REPORT" ] && [ "$BLINKIT_HELD" -eq 1 ]; then
   echo "Blinkit not-listed direct WhatsApp skipped because main Blinkit report was held by quality gate"
 elif [ -f "$BLINKIT_NOT_LISTED_REPORT" ] && [ "$BLINKIT_READY" -ne 1 ]; then
