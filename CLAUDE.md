@@ -193,8 +193,9 @@ Blinkit production is Mac/drop-fed and auth-required. The Mac wrapper
 `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, and exports
 `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
 `BLINKIT_PDP_OOS_PROBE=1`, plus `BLINKIT_PDP_PRICE_PROBE=1`. VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`; drops
-must carry `summary.auth_session` and `summary.auth_required`, and unauthenticated
-Blinkit drops are rejected. VPS emergency/manual shards use
+must carry `summary.auth_session`, `summary.auth_required`, and
+`summary.auth_verified`, and unauthenticated/unverified-auth Blinkit drops are
+rejected. VPS emergency/manual shards use
 `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Corrected 2026-07-06 run: 902 pins,
 870 resolved, 468 Jivo pins, 1915 rows, 0 blocked, 303 stores.
 

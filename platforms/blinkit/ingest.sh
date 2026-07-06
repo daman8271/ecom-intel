@@ -276,6 +276,8 @@ if partial:
     raise SystemExit("Refusing partial Blinkit drop: partial=true")
 if os.environ.get("BLINKIT_REQUIRE_AUTH_DROP", "1") == "1" and not auth_session:
     raise SystemExit("Refusing unauthenticated Blinkit drop: summary.auth_session is not set")
+if os.environ.get("BLINKIT_REQUIRE_AUTH_DROP", "1") == "1" and not flag_is_one(s.get("auth_verified")):
+    raise SystemExit(f"Refusing unverified Blinkit auth drop: summary.auth_verified={s.get('auth_verified')!r}")
 if blocked > blocked_max:
     raise SystemExit(f"Refusing blocked Blinkit drop: pincodes_blocked={blocked} max={blocked_max}")
 if bad_perpin_blocks:

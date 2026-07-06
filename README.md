@@ -117,8 +117,9 @@ set, not part of the Wave 1 config generator.
   `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
   `BLINKIT_PDP_OOS_PROBE=1`, and `BLINKIT_PDP_PRICE_PROBE=1`; VPS ingest defaults
   to `BLINKIT_REQUIRE_AUTH_DROP=1`. The result summary must include
-  `auth_session`, `auth_required`, `oos_probe_enabled`, `pdp_oos_probe_enabled`, and
-  `pdp_price_probe_enabled`; unauthenticated or unprobed Blinkit drops are rejected
+  `auth_session`, `auth_required`, `auth_verified`, `oos_probe_enabled`,
+  `pdp_oos_probe_enabled`, and `pdp_price_probe_enabled`; unauthenticated,
+  unverified-auth, or unprobed Blinkit drops are rejected
   because anonymous/search-only sessions can produce false Out of Stock rows and
   stale search-card prices. Blinkit output separates `Listed - Out of stock` from
   `Not listed`; a standalone `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`

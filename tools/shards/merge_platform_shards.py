@@ -53,6 +53,8 @@ def recompute_summary(platform: str, results: list[dict], per_pin: list[dict], a
     if platform == "blinkit":
         summary["auth_session"] = 1 if summaries and all(bool(s.get("auth_session")) for s in summaries) else 0
         summary["auth_required"] = 1 if any(bool(s.get("auth_required")) for s in summaries) else 0
+        summary["auth_verified"] = 1 if summaries and all(bool(s.get("auth_verified")) for s in summaries) else 0
+        summary["auth_verified_pincodes"] = sum(int(s.get("auth_verified_pincodes") or 0) for s in summaries)
         summary["oos_probe_enabled"] = 1 if summaries and all(bool(s.get("oos_probe_enabled")) for s in summaries) else 0
         summary["oos_probe_flips"] = sum(int(s.get("oos_probe_flips") or 0) for s in summaries)
         summary["pdp_oos_probe_enabled"] = 1 if summaries and all(bool(s.get("pdp_oos_probe_enabled")) for s in summaries) else 0

@@ -161,8 +161,8 @@ if cap:
 else:
     issue("missing_captured_at", "Blinkit summary.captured_at missing/unparseable")
 
-if s.get("auth_session") != 1 or s.get("auth_required") != 1:
-    issue("auth_not_enforced", f"auth_session={s.get('auth_session')} auth_required={s.get('auth_required')}")
+if s.get("auth_session") != 1 or s.get("auth_required") != 1 or s.get("auth_verified") != 1:
+    issue("auth_not_enforced", f"auth_session={s.get('auth_session')} auth_required={s.get('auth_required')} auth_verified={s.get('auth_verified')}")
 
 if sum(1 for r in rows if not r.get("in_stock")):
     if s.get("oos_probe_enabled") != 1:

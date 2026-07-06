@@ -620,7 +620,7 @@ async function scrapeOne(browser, rec) {
       canonical: 'jivo-sim-oil-1l', pack: '1 l', vol_ml: 1000, sale: 199, mrp: 250,
       discount_pct: 20, per_litre: 199, eta_min: 10, in_stock: 1,
     }];
-    return { ...rec, store_id: 'sim', store_name: 'sim-store', resolved: true, blocked: null, rows };
+    return { ...rec, store_id: 'sim', store_name: 'sim-store', resolved: true, blocked: null, auth_accepted: BLINKIT_AUTH ? 1 : 0, rows };
   }
   const ctx = await browser.newContext({
     userAgent: UA,
@@ -660,6 +660,7 @@ async function scrapeOne(browser, rec) {
   let store = {};
   let resolved = false;
   let blocked = null;
+  let authAccepted = false;
   const injectLocation = async (r) => {
     try { await ctx.addCookies(locationCookieSpecs(r)); } catch (_) { /* cookie location is best-effort */ }
     return page.evaluate((rr) => {
@@ -682,6 +683,21 @@ async function scrapeOne(browser, rec) {
     const loc = JSON.parse((await page.evaluate(() => localStorage.getItem('location'))) || '{}');
     const m = JSON.parse((await page.evaluate(() => localStorage.getItem('merchant'))) || '{}');
     return { loc, m };
+  };
+  const waitForAuthAccepted = async () => {
+    if (!BLINKIT_AUTH) return false;
+    for (let poll = 0; poll < 8; poll++) {
+      const ok = await page.evaluate(() => {
+        const authKey = localStorage.getItem('authKey') || localStorage.getItem('authKeyITS');
+        let user = null;
+        try { user = JSON.parse(localStorage.getItem('user') || '{}'); } catch (_) { user = null; }
+        const profile = user && typeof user === 'object' ? user.profile : null;
+        return Boolean(authKey || (profile && Object.keys(profile).length));
+      }).catch(() => false);
+      if (ok) return true;
+      await page.waitForTimeout(500);
+    }
+    return false;
   };
   const resolveLocationFor = async (r, polls = 4) => {
     let probeLoc = {};
@@ -726,6 +742,12 @@ async function scrapeOne(browser, rec) {
       await ctx.close();
       return { ...rec, store_id: '', store_name: '', resolved: false, blocked, rows: [] };
     }
+    authAccepted = await waitForAuthAccepted();
+    if (BLINKIT_REQUIRE_AUTH && !authAccepted) {
+      process.stderr.write(`[auth] ${rec.city} ${rec.pincode} -> Blinkit did not accept hydrated auth session\n`);
+      await ctx.close();
+      return { ...rec, store_id: '', store_name: '', resolved: false, blocked: 'auth-not-accepted', auth_accepted: 0, rows: [] };
+    }
     // Inject the pincode's location, then re-load HOME (this is what makes
     // Blinkit re-resolve the dark store from the new coords) and POLL the
     // merchant until it leaves the Gurgaon default — search-page navigation
@@ -752,7 +774,7 @@ async function scrapeOne(browser, rec) {
       // genuinely serviceable pincode with no Jivo stock still resolves here
       // (rows just end up empty); only the default fallback is rejected.
       process.stderr.write(`[unresolved] ${rec.city} ${rec.pincode} -> store did not re-resolve (active store=${store.name || 'n/a'} id=${store.id || ''}); recording 0 rows\n`);
-      return { ...rec, store_id: '', store_name: '', resolved: false, rows: [] };
+      return { ...rec, store_id: '', store_name: '', resolved: false, auth_accepted: authAccepted ? 1 : 0, rows: [] };
     }
     // ===== COMPETITOR_MODE branch (env-gated, ADDITIVE; the original jivo path below is
     // left fully intact and runs verbatim whenever COMPETITOR_MODE is unset). Loops over
@@ -864,7 +886,7 @@ async function scrapeOne(browser, rec) {
       }
       rows = [...ddc.values()];
       process.stderr.write(`[ok:comp] ${rec.city} ${rec.pincode} -> ${rows.length} competitor SKUs across ${COMPETITOR_TERMS.length} queries (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${store.name || 'n/a'}\n`);
-      return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, blocked, rows };
+      return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, blocked, auth_accepted: authAccepted ? 1 : 0, rows };
     }
     // Resolved on home — now run the Jivo search, then RE-VERIFY the active
     // store didn't revert during the search navigation before trusting cards.
@@ -874,7 +896,7 @@ async function scrapeOne(browser, rec) {
     ({ loc: activeLoc, m: store } = await readState());
     if (!storeResolved(activeLoc, store, rec)) {
       process.stderr.write(`[unresolved] ${rec.city} ${rec.pincode} -> store reverted on search (active store=${store.name || 'n/a'} id=${store.id || ''}); recording 0 rows\n`);
-      return { ...rec, store_id: '', store_name: '', resolved: false, rows: [] };
+      return { ...rec, store_id: '', store_name: '', resolved: false, auth_accepted: authAccepted ? 1 : 0, rows: [] };
     }
     const cards = await extractJivoCards(page);
     rows.push(...parseJivoCards(cards, rec, store));
@@ -1069,7 +1091,7 @@ async function scrapeOne(browser, rec) {
     try { await ctx.close(); } catch (_) { /* context may already be closed */ }
   }
   process.stderr.write(`[ok] ${rec.city} ${rec.pincode} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${store.name || 'n/a'}\n`);
-  return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, blocked, rows };
+  return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, blocked, auth_accepted: authAccepted ? 1 : 0, rows };
 }
 
 async function pool(items, n, fn) {
@@ -1128,6 +1150,7 @@ if (require.main === module) (async () => {
   });
   if (browser) await browser.close();
   const allRows = perPin.flatMap((p) => p.rows);
+  const authAcceptedPincodes = perPin.filter((p) => p.auth_accepted).length;
   const summary = {
     pincodes_total: PINCODES.length,
     pincodes_resolved: perPin.filter((p) => p.resolved).length,
@@ -1140,6 +1163,8 @@ if (require.main === module) (async () => {
     partial,
     auth_session: BLINKIT_AUTH ? 1 : 0,
     auth_required: BLINKIT_REQUIRE_AUTH ? 1 : 0,
+    auth_verified: BLINKIT_AUTH && authAcceptedPincodes > 0 ? 1 : 0,
+    auth_verified_pincodes: authAcceptedPincodes,
     oos_probe_enabled: BLINKIT_OOS_PROBE ? 1 : 0,
     oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode').length,
     pdp_oos_probe_enabled: BLINKIT_PDP_OOS_PROBE ? 1 : 0,

@@ -1,0 +1,21 @@
+{
+ "date": "2026-07-07",
+ "regime": "SVD",
+ "kpis": {
+  "skus_tracked": 113,
+  "platforms": 8,
+  "compliant": 4,
+  "below": 90,
+  "above": 37,
+  "oos": 145,
+  "pending": 0,
+  "not_listed": 628,
+  "exposure": 8576,
+  "listings": 904,
+  "mapped": 276,
+  "listed_skus": 112
+ },
+ "store_violations": 6347,
+ "summary_md": "*Jivo Price Match — master* 🎯\n2026-07-07 · SVD day\n🔴 Below ref: 90 listings · ₹8,576 exposure\nTop offenders: EXTRA VIRGIN 5L (Amazon −₹540) · JIVO POMACE 5L (Blinkit −₹432) · JIVO POMACE 5L (Zepto −₹420)\n🟢 Above: 37 · Match: 4 · OOS: 145 · Pending: 0\nCoverage: 113 SKUs × 8 platforms (628 not listed)",
+ "caption": "Jivo Price Match · 2026-07-07 · SVD day"
+}

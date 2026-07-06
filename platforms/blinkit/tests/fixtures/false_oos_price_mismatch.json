@@ -11,6 +11,8 @@
     "partial": false,
     "auth_session": 1,
     "auth_required": 1,
+    "auth_verified": 1,
+    "auth_verified_pincodes": 1,
     "oos_probe_enabled": 1,
     "oos_probe_flips": 0,
     "pdp_oos_probe_enabled": 1,

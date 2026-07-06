@@ -16,12 +16,14 @@ actually has presence. Generated Excel reports for every live platform are in
   uses `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, exports
   `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
   `BLINKIT_PDP_OOS_PROBE=1`, and `BLINKIT_PDP_PRICE_PROBE=1`. VPS ingest rejects
-  unauthenticated drops by default with `BLINKIT_REQUIRE_AUTH_DROP=1`, and the
-  quality monitor rejects drops missing PDP price-probe metadata.
+  unauthenticated/unverified-auth drops by default with
+  `BLINKIT_REQUIRE_AUTH_DROP=1`, and the quality monitor rejects drops missing PDP
+  price-probe metadata.
 - **VPS emergency/manual Blinkit auth state** lives at
   `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Do not publish or accept
-  anonymous Blinkit stock data; `summary.auth_session` and `summary.auth_required`
-  must be present/truthy for auth-required production drops.
+  anonymous Blinkit stock data; `summary.auth_session`, `summary.auth_required`,
+  and `summary.auth_verified` must be present/truthy for auth-required production
+  drops.
 - **Amazon Fresh** went LIVE **2026-05-30** — it does need a **logged-in session**
   (cookies transplanted from a clean IP, see below), but no proxy. It is the
   `i=freshstore` storefront and is **~7× richer than Amazon Now** (~63 Jivo SKUs

@@ -52,6 +52,8 @@ class TestShards(unittest.TestCase):
                 "partial": False,
                 "auth_session": 1,
                 "auth_required": 1,
+                "auth_verified": 1,
+                "auth_verified_pincodes": len(per),
                 "oos_probe_enabled": 1,
                 "oos_probe_flips": idx,
                 "pdp_oos_probe_enabled": 1,
@@ -91,6 +93,8 @@ class TestShards(unittest.TestCase):
         self.assertEqual(merged["summary"]["pincodes_with_jivo"], 2)
         self.assertEqual(merged["summary"]["unique_skus"], 2)
         self.assertEqual(merged["summary"]["auth_session"], 1)
+        self.assertEqual(merged["summary"]["auth_verified"], 1)
+        self.assertEqual(merged["summary"]["auth_verified_pincodes"], 4)
         self.assertEqual(merged["summary"]["oos_probe_enabled"], 1)
         self.assertEqual(merged["summary"]["pdp_oos_probe_enabled"], 1)
         self.assertEqual(merged["summary"]["pdp_price_probe_enabled"], 1)

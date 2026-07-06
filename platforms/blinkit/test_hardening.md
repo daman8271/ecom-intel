@@ -7,7 +7,8 @@ checkpoint/resume, block-detection + exponential backoff, and partial-run tolera
 
 2026-07-06 update: authenticated availability is now a required correctness condition.
 Anonymous Blinkit sessions can return false Out of Stock for live SKUs, so production
-runs fail closed unless `BLINKIT_REQUIRE_AUTH=1` has a valid auth state.
+runs fail closed unless `BLINKIT_REQUIRE_AUTH=1` has a valid auth state and Blinkit
+accepts it in-page.
 
 2026-07-07 update: ingest now rejects raw drops before promotion when OOS rows are
 present without both search and PDP OOS probe summary flags, when OOS rows remain
@@ -53,9 +54,10 @@ today's expected workbooks, and the read-only quality monitor result.
    in `scrapeOne`; the loop body never rethrows). The run always writes `result.json` with
    a top-level `partial` flag (and `summary.partial` / `summary.pincodes_blocked`).
 4. **Auth-required fail-closed mode** — `BLINKIT_REQUIRE_AUTH=1` exits before scraping
-   if no Blinkit token is available. Authenticated runs mark `summary.auth_session=1`
-   and `summary.auth_required=1`; downstream ingest rejects unauthenticated drops by
-   default.
+   if no Blinkit token is available. The page must also populate logged-in state
+   (`localStorage.user`/`authKey`) after hydration; accepted runs mark
+   `summary.auth_session=1`, `summary.auth_required=1`, and `summary.auth_verified=1`.
+   Downstream ingest rejects unauthenticated or unverified-auth drops by default.
 5. **Ingest validation gates** — `ingest.sh` validates identity coverage, OOS probe
    evidence, unverified OOS count, price math, and expected-config coordinates before
    writing `result.json`, building Excel, reviewing, or delivering.
@@ -116,8 +118,8 @@ BLINKIT_SIM=1 BLINKIT_REQUIRE_AUTH=1 \
 
 Observed (2026-07-06):
 - Missing auth exited `3` with `[auth] BLINKIT_REQUIRE_AUTH=1 but no Blinkit access token was provided`.
-- Valid auth wrote `result.json` with `summary.auth_session: 1` and
-  `summary.auth_required: 1`.
+- Valid auth wrote `result.json` with `summary.auth_session: 1`,
+  `summary.auth_required: 1`, and `summary.auth_verified: 1`.
 
 Conclusion: the scraper cannot silently fall back to anonymous Blinkit when auth is
 required, which prevents the 2026-07-06 false-OOS class from recurring.

@@ -46,12 +46,13 @@ Blinkit production must now run authenticated and fail closed:
 - Mac daily auth state: `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`
 - VPS emergency/shard auth state: `/opt/ecom-intel/secrets/blinkit-auth-state.json`
 - Scraper env: `BLINKIT_REQUIRE_AUTH=1`
-- Scraper summary fields: `auth_session`, `auth_required`
+- Scraper summary fields: `auth_session`, `auth_required`, `auth_verified`
 - VPS ingest guard: `BLINKIT_REQUIRE_AUTH_DROP=1`
 - Missing auth exits before scrape with code `3`
 - Unauthenticated Blinkit drops are rejected before build/delivery
 - Shard runner auto-discovers the auth state and exits `3` if missing
-- Shard merge sets merged `auth_session=1` only when every shard was authenticated
+- Shard merge sets merged `auth_session=1` and `auth_verified=1` only when every
+  shard was authenticated and accepted in-page
 - Mac LaunchAgent: `com.danny.blinkit-mac-to-vps`
 - Daily schedule: `06:30` IST
 - Mac wrapper: `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`
