@@ -87,7 +87,25 @@ echo "[$RUN_ID] scraping $P ($SCRAPER) ..."
 # that one account's location. Cross-platform they are fully parallel. Safety net: both
 # scrapers drop any row whose resolved location != requested pincode, so even an
 # unexpected collision yields reduced coverage, never wrong prices.
-if { [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; } && command -v flock >/dev/null 2>&1; then
+# ---- OFF-BOX DEAD-DROP HOOK (Phase 2 split, 2026-07-07) -----------------------
+# When SCRAPE_RESULT_DROP is set (tools/cron/kvm1_ingest.sh: the KVM1 store-open
+# trio feeder, house pattern = platforms/blinkit/ingest.sh), the platform was
+# ALREADY scraped off-box and the caller hands us its result.json. Skip the local
+# scrape, promote the drop, and run the rest of the pipeline UNCHANGED (excel ->
+# enrichers -> review VERDICT GATE -> history/coverage -> delivery/spool) — so an
+# off-box run faces exactly the gates a local run faces. Env unset = byte-for-byte
+# the old behavior.
+if [ -n "${SCRAPE_RESULT_DROP:-}" ]; then
+  echo "[$RUN_ID] $P: OFF-BOX DROP mode — ingesting $SCRAPE_RESULT_DROP (no local scrape)"
+  [ -s "$SCRAPE_RESULT_DROP" ] || { echo "[$RUN_ID] $P: drop missing/empty: $SCRAPE_RESULT_DROP"; exit 1; }
+  python3 - "$SCRAPE_RESULT_DROP" <<'DROPPY' || { echo "[$RUN_ID] $P: drop is not valid JSON with a summary — refused"; exit 1; }
+import json, sys
+d = json.load(open(sys.argv[1], encoding="utf-8"))
+if not isinstance(d.get("summary"), dict):
+    raise SystemExit("no summary object in drop")
+DROPPY
+  cp "$SCRAPE_RESULT_DROP" "$PDIR/result.json"
+elif { [ "$P" = "amazon-fresh" ] || [ "$P" = "amazon-now" ]; } && command -v flock >/dev/null 2>&1; then
   SCRAPE_RC=0
   (
     flock -w 2700 8 || { echo "[$RUN_ID] $P: per-account lock not acquired in 45m; skipping this window"; exit 75; }

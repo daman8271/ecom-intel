@@ -103,7 +103,10 @@ launch(){ # start the real sweep, detached, same env as the primary cron line
     return 0
   fi
   say "LAUNCHING catch-up sweep (remain=${REMAIN}s pred=${PRED}s need=${NEED}s)"
-  setsid env LEAD_MAX="${LEAD_MAX:-32400}" COVERAGE_DAILY="${COVERAGE_DAILY:-1}" \
+  # LEAD_MAX 11820 (PHASE 2, 2026-07-07): the chain is now fkm + the Amazon family
+  # only (flipkart/zepto scrape on KVM1 at 07:30) and must START at ~06:45 IST
+  # (store-open hours), not ~01:02 — keep this in sync with the 00:30 cron line.
+  setsid env LEAD_MAX="${LEAD_MAX:-11820}" COVERAGE_DAILY="${COVERAGE_DAILY:-1}" \
     ./tools/cron/deadline_sweep.sh "$SLOT" >> logs/cron.log 2>&1 &
   say "catch-up sweep launched (pid $!)"
 }

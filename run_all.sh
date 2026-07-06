@@ -29,7 +29,17 @@ echo "[$(date '+%F %T')] run_all: START (serial — accuracy first)"
 # leaves the loop byte-for-byte identical to before):
 #   PLATFORMS_OVERRIDE — space-separated platform list replacing the default 9
 #   RUNNER_OVERRIDE    — command run instead of ./run.sh (word-split on purpose: may carry args)
-PLATFORMS="${PLATFORMS_OVERRIDE:-flipkart-minutes flipkart zepto amazon amazon-fresh amazon-now}"  # bigbasket/blinkit run off-box on Mac Pro and feed the batch through ingest.sh
+# PHASE 2 SPLIT (owner-approved 2026-07-07): flipkart + zepto now scrape OFF-BOX on
+# KVM1 at store-open hours (~07:30 IST; tools/cron/kvm1_trio_launch.sh fires the box,
+# bin/kvm1_run_trio.sh there scrapes serially and dead-drops results back through
+# tools/cron/kvm1_ingest.sh -> run.sh SCRAPE_RESULT_DROP -> the same review gates +
+# batch spool). flipkart-minutes STAYS in this chain (its logged-in Flipkart API is
+# DC-bound: from KVM1's IP the northern pincodes 302 to another DC and return 0 rows
+# — smoke-tested 2026-07-07). It runs FIRST (fast, ~2m, store-open hours), then the
+# Amazon family serially on this ONE IP so the Amazon tarpit is never poked from
+# multiple addresses. Fallbacks if KVM1 dies: tools/cron/kvm1_watchdog.sh +
+# flipkart_batch_guard.sh re-run the missing platforms locally (this box still can).
+PLATFORMS="${PLATFORMS_OVERRIDE:-flipkart-minutes amazon amazon-fresh amazon-now}"  # kvm1: flipkart zepto · macpro: blinkit bigbasket swiggy (ingest.sh feeders)
 RUNNER="${RUNNER_OVERRIDE:-./run.sh}"
 # SIM MODE hard gate (LEAD ruling): ANY override set => this is the simulation harness, NOT a
 # production sweep. Skip everything that touches live platforms or shared state: the per-platform

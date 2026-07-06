@@ -30,6 +30,15 @@
 # 09:35 with a 1320s timeout => worst finish ~09:57, before send_batch reads the
 # spool at 10:00. Later starts run in immediate-send mode instead (selfheal parity).
 # Test hook: GUARD_DRYRUN=1 -> decisions logged, no scrape, no Telegram.
+#
+# PHASE 2 SPLIT (2026-07-07): the schedule this guard was built to patch is gone —
+# flipkart now scrapes OFF-BOX on KVM1 at ~07:30 IST (store-open) and
+# flipkart-minutes runs FIRST in the VPS chain at ~06:45 (store-open). This guard
+# is now the FALLBACK layer: it must not double-run a platform whose healthy owner
+# simply hasn't run yet, but it keeps its full local-rescue power for when the
+# owner is dead/failed (KVM1 down, chain never launched, run held by review).
+# See the ownership gates after the NEEDY scan below + tools/cron/kvm1_watchdog.sh
+# (which owns zepto rescue and general KVM1 liveness).
 set -u
 DIR=/opt/ecom-intel
 cd "$DIR" || exit 0
@@ -113,10 +122,55 @@ for P in flipkart flipkart-minutes; do
 done
 [ -n "$NEEDY" ] || { LOG "all covered — nothing to do"; exit 0; }
 
+# ---- PHASE 2 ownership gates (2026-07-07) ------------------------------------
+# Don't rescue a platform whose healthy owner hasn't run yet:
+#   flipkart-minutes -> owned by the armed VPS chain (runs FIRST, ~06:45)
+#   flipkart         -> owned by KVM1 (bin/kvm1_run_trio.sh, ~07:30)
+# Owner dead/failed => fall through to the unchanged local-rescue path below.
+KSSH="ssh -o BatchMode=yes -o ConnectTimeout=10 kvm1"
+kvm1_alive(){ timeout 20 $KSSH true >/dev/null 2>&1; }
+trio_running(){ # rc 0 = KVM1 trio lock is HELD (mid-run)
+  timeout 20 $KSSH "flock -n /opt/ecom-intel/logs/.trio.lock -c true 2>/dev/null && exit 1 || exit 0" 2>/dev/null; }
+chain_pending(){ pgrep -f "deadline_sweep\.sh 10:00" >/dev/null 2>&1 || pgrep -f "run_all\.sh" >/dev/null 2>&1; }
+
+FILTERED=""
+for P in $NEEDY; do
+  case "$P" in
+    flipkart-minutes)
+      # no review yet today + the sweep is armed/running => the chain just hasn't
+      # reached it (it runs first at ~06:45); a HELD run (review exists) still
+      # falls through to rescue exactly as before.
+      if [ -z "$(verdict_file "$P")" ] && chain_pending; then
+        LOG "$P: owned by the armed VPS chain (store-open run ~06:45 pending) — deferring to it"
+        continue
+      fi ;;
+    flipkart)
+      if [ "$PASS" = "early" ] && kvm1_alive; then
+        LOG "$P: owned by KVM1 (trio due 07:30 IST, box alive) — early pass defers to it"
+        continue
+      fi
+      if [ "$PASS" = "late" ] && [ "$DRY" != "1" ] && trio_running; then
+        LOG "$P: KVM1 trio still mid-run — waiting for its drop (until 09:20) before rescuing"
+        WAIT_DEADLINE="$(date -d "$TODAY 09:20" +%s)"
+        while [ "$(date +%s)" -lt "$WAIT_DEADLINE" ]; do
+          sleep 60
+          if ! needs_rescue "$P"; then LOG "$P: KVM1 drop landed during wait — no rescue needed"; continue 2; fi
+          trio_running || break
+        done
+        if ! needs_rescue "$P"; then LOG "$P: covered after trio finished"; continue; fi
+        LOG "$P: still missing after KVM1 wait — proceeding with local rescue"
+      fi ;;
+  esac
+  FILTERED="$FILTERED $P"
+done
+NEEDY="$FILTERED"
+[ -n "${NEEDY// /}" ] || { LOG "all covered/deferred to owners — nothing to do"; exit 0; }
+
 # ---- sweep-chain lock: NEVER scrape concurrently with the chain --------------
 CHAIN_LOCK="$DIR/logs/.sweep-chain.lock"
 exec 7>"$CHAIN_LOCK"
 if [ "$PASS" = "late" ] && [ "$DRY" != "1" ]; then
+  NOW="$(date +%s)"                 # refresh: the KVM1 wait above may have consumed time
   WAIT_END=$((T - 1680))            # 09:32 IST — leave runway for a defer-mode run
   W=$((WAIT_END - NOW)); [ "$W" -lt 0 ] && W=0
   if ! flock -w "$W" 7; then
@@ -144,7 +198,7 @@ for P in $NEEDY; do
   [ -n "$SID" ] && [ "$NOW" -le "$DEFER_CUTOFF" ] && MODE=defer
   LOG "$P: HELD/missing for $TODAY -> re-running at store-open hours (mode=$MODE)"
   if [ "$DRY" = "1" ]; then LOG "[DRYRUN] would run: mode=$MODE COVERAGE_DAILY=1 ./run.sh $P"; continue; fi
-  tg "🛠 Flipkart guard ($PASS): $P was HELD at the ~01:00 night run (priced-rows collapse) — re-running now at store-open hours (mode=$MODE)."
+  tg "🛠 Flipkart guard ($PASS): $P is HELD/missing for today (owner run failed, held by review, or KVM1 down) — re-running locally at store-open hours (mode=$MODE)."
   RC=0
   if [ "$MODE" = "defer" ]; then
     DEFER_DELIVERY=1 SWEEP_ID="$SID" COVERAGE_DAILY=1 timeout 1320 ./run.sh "$P" >> logs/flipkart_guard_runs.log 2>&1 || RC=$?
