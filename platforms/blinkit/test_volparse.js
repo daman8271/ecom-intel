@@ -2,7 +2,7 @@
 // Ports the zepto 2026-06-10 combo fix: combo packs render in BOTH orders ("1 L X 2" at some
 // stores, "2 x 1 L" at others); the parser must read both, before the single-quantity fallback.
 // Run: node platforms/blinkit/test_volparse.js
-const { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe } = require('./scrape.js');
+const { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe, istDateString } = require('./scrape.js');
 
 const CASES = [
   // multiplier-FIRST combos ("M x N unit")
@@ -37,6 +37,13 @@ for (const [input, want] of CASES) {
   const ok = got === 'jivo-extra-light-olive-oil-2l';
   if (!ok) fail++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  canonical(olive, '2 x 1 l') = ${got} (want jivo-extra-light-olive-oil-2l)`);
+}
+
+{
+  const got = istDateString(new Date('2026-07-06T22:15:00.000Z'));
+  const ok = got === '2026-07-07';
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  istDateString(early IST run) = ${got} (want 2026-07-07)`);
 }
 
 {

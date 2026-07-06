@@ -2,6 +2,10 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path');
 
+function istDateString(d = new Date()) {
+  return new Date(d.getTime() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+}
+
 // ---- COMPETITOR_MODE (env-gated, ADDITIVE — see task brief) ----------------------------
 // Everything competitor-related activates ONLY when process.env.COMPETITOR_MODE === '1'.
 // When it is unset, COMPETITOR_MODE is false, every const below collapses to a harmless
@@ -10,7 +14,7 @@ const path = require('path');
 // is written ONLY under tools/competitor/ (never under data/ vault/ reviews/ baselines/).
 const COMPETITOR_MODE = process.env.COMPETITOR_MODE === '1';
 const COMP_DIR = path.join(__dirname, '..', '..', 'tools', 'competitor');
-const COMP_DATE = process.env.COMPETITOR_DATE || new Date(Date.now() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+const COMP_DATE = process.env.COMPETITOR_DATE || istDateString();
 
 const PFILE = process.env.PINCODES_FILE || (__dirname + '/pincodes.json');
 const PINCODES = JSON.parse(fs.readFileSync(PFILE, 'utf8'));
@@ -79,7 +83,7 @@ const PDP_PRICE_PROBE_MIN_VOL_ML = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_
 // tests in test_hardening.md without launching a browser or hitting Blinkit live.
 const PROG = process.env.BLINKIT_PROGRESS_FILE || (COMPETITOR_MODE
   ? `${COMP_DIR}/data/.progress.competitor.${path.basename(__dirname)}.${COMP_DATE}.json`
-  : `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`);
+  : `${__dirname}/.progress.${istDateString()}.json`);
 const MAX_BLOCK_RETRIES = parseInt(process.env.BLINKIT_BLOCK_RETRIES || '4', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could appear in legitimate page text) — HTTP status carries those.
@@ -1145,7 +1149,7 @@ async function pool(items, n, fn) {
 
 // Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
 // only runs when invoked directly, so `require`-ing this file never launches a browser.
-module.exports = { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe };
+module.exports = { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe, istDateString };
 
 // Scrape one pincode with block-aware exponential backoff. A blocked attempt backs
 // off and retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag
