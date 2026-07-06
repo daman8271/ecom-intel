@@ -142,25 +142,25 @@ widths(ws, {1: 34, 2: 11, 3: 13, 4: 12, 5: 12, 6: 9, 7: 10, 8: 10})
 
 # ---------------- Sheet 2: Master Data ----------------
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Resolved Pin", "Locality", "SKU", "Pack", "Vol (ml)", "Sale", "MRP", "Disc %", "₹/L", "In stock", "PM pin"]
+cols = ["City", "Pincode", "Resolved Pin", "Locality", "SKU", "SKU Code", "Pack", "Vol (ml)", "Sale", "MRP", "Disc %", "₹/L", "In stock", "PM pin"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
-    ws.append([x['city'], x['pincode'], x.get('resolved_pincode', ''), x.get('locality', ''), x['sku_raw'], x['pack'], x['vol_ml'], x['sale'], x['mrp'],
+    ws.append([x['city'], x['pincode'], x.get('resolved_pincode', ''), x.get('locality', ''), x['sku_raw'], str(x.get('sku_id') or ''), x['pack'], x['vol_ml'], x['sale'], x['mrp'],
                pct_fraction(x['discount_pct']), x['per_litre'], "Yes" if x['in_stock'] else "No", "★" if str(x['pincode']) in PRICEMATCH else ""])
 style_header(ws); ws.freeze_panes = "A2"; ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
-    row[7].number_format = RS; row[8].number_format = RS; row[9].number_format = PCT; row[10].number_format = RS
-    if row[11].value == "No":
-        row[11].fill = RED
-    if isinstance(row[9].value, (int, float)) and row[9].value >= 0.40:
-        row[9].fill = GREEN
-    if row[12].value:
+    row[8].number_format = RS; row[9].number_format = RS; row[10].number_format = PCT; row[11].number_format = RS
+    if row[12].value == "No":
+        row[12].fill = RED
+    if isinstance(row[10].value, (int, float)) and row[10].value >= 0.40:
+        row[10].fill = GREEN
+    if row[13].value:
         row[1].fill = BLUE
     if row[2].value and str(row[2].value) != str(row[1].value):
         row[2].fill = YEL
-widths(ws, {1: 13, 2: 11, 3: 12, 4: 22, 5: 40, 7: 9, 8: 13, 9: 13, 10: 9, 11: 11, 12: 9, 13: 7})
+widths(ws, {1: 13, 2: 11, 3: 12, 4: 22, 5: 40, 6: 11, 8: 9, 9: 13, 10: 13, 11: 9, 12: 11, 13: 9, 14: 7})
 
 # ---------------- Sheet 3: Pincode Coverage ----------------
 ws = wb.create_sheet("Pincode Coverage")

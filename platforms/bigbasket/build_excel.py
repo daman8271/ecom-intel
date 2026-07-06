@@ -103,10 +103,10 @@ autosize(ws)
 
 # ---------- Sheet 2: Master Data ----------
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Locality", "Store", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "ETA min", "In stock"]
+cols = ["City", "Pincode", "Locality", "Store", "SKU", "SKU Code", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "ETA min", "In stock"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
-    ws.append([x['city'], x['pincode'], x['locality'], x['store_name'], x['sku_raw'], x['pack'], x['vol_ml'],
+    ws.append([x['city'], x['pincode'], x['locality'], x['store_name'], x['sku_raw'], str(x.get('sku_id') or ''), x['pack'], x['vol_ml'],
                x['sale'], x['mrp'], pct_fraction(x['discount_pct']), x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No"])
 style_header(ws)
 ws.freeze_panes = "A2"
@@ -114,11 +114,11 @@ ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
 for row in ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
-        if cell.column in (8, 9): cell.number_format = '"Rs"#,##0'
-        if cell.column == 10: cell.number_format = '0.0%'
-    sc = row[7].value
-    if row[12].value == "No": row[12].fill = RED
-    if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 0.40: row[9].fill = GREEN
+        if cell.column in (9, 10): cell.number_format = '"Rs"#,##0'
+        if cell.column == 11: cell.number_format = '0.0%'
+    sc = row[8].value
+    if row[13].value == "No": row[13].fill = RED
+    if isinstance(row[10].value, (int, float)) and row[10].value and row[10].value >= 0.40: row[10].fill = GREEN
 autosize(ws)
 
 # ---------- Matrix builder ----------
