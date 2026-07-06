@@ -28,16 +28,24 @@ show different stock or price if the coordinate resolves to another nearby store
 OOS state survived the required search/PDP probes. `Not listed` means the expected SKU
 was absent for that resolved store; it is not an OOS row.
 
+`Listed - Stock unverified` is not publishable stock data. It means search text looked
+OOS but PDP/nearby verification did not complete; ingest and delivery quality gates
+reject that state. PDP price probing now covers the screenshot canaries plus
+high-value/plain-search rows without offer evidence, because Blinkit can put the lower
+effective price only on the PDP/offer block.
+
 ## Delivery Gate
 
 The main workbook must include `Listing Status` and `Not Listed Pincodes`. The
 standalone `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx` is delivered to
 `917703818227@s.whatsapp.net` only after the main Blinkit workbook passes the quality
 monitor. If the main workbook is held, the not-listed direct WhatsApp is skipped too.
+The monitor's cron poll alerts; delivery callers run it with
+`BLINKIT_MONITOR_EXIT_CODE=1` to block shipping.
 
 ## Live Watch
 
-For the 2026-07-07 run, `tools/cron/blinkit_live_watch.sh` is running in tmux and logs
+For the 2026-07-07 run, `tools/cron/blinkit_live_watch.sh` runs in tmux and logs
 Mac process status, today-dated workbook presence, and dry-run quality-monitor output
 until 10:45 IST. The normal cron monitor still runs separately and can alert.
 

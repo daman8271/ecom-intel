@@ -202,7 +202,11 @@ and unauthenticated/any-pincode unverified-auth Blinkit drops are rejected. VPS 
 Blinkit stock and price are determined by the resolved dark store from coordinates,
 not just the visible pincode string. Treat `Listed - Out of stock` as a listed SKU
 whose PDP/nearby probes verified no stock; treat `Not listed` as an expected SKU
-absent from that resolved store. The main workbook includes both `Listing Status`
+absent from that resolved store. Treat `Listed - Stock unverified` as a fail-closed
+intermediate state only: it may appear in raw/workbook diagnostics, but ingest and
+quality delivery reject it. PDP price probing covers the screenshot canaries plus
+high-value/plain-search rows without offer evidence so stale card prices do not ship.
+The main workbook includes both `Listing Status`
 and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `917703818227@s.whatsapp.net` only after the main Blinkit workbook passes quality.
 `platforms/blinkit/ingest.sh --deliver` calls
@@ -261,6 +265,9 @@ manual-only/account constraint, not an IP block.
 - **Blinkit auth freshness** — stock correctness depends on the saved Blinkit login/auth
   state. If the auth file is missing or expires, the run must fail before scraping and
   alert; it must not fall back to anonymous Blinkit.
+- **Blinkit delivery gating nuance** — `blinkit_quality_monitor.sh poll` alerts on its
+  own; batch/mailer/WhatsApp callers set `BLINKIT_MONITOR_EXIT_CODE=1` so the same
+  checks become hard delivery blockers.
 - **Blinkit unresolved pins** — the corrected auth run resolved 870 of 902 configured
   pins. Any unresolved pins are recorded honestly rather than contaminated with a default
   store.
