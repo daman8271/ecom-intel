@@ -1471,9 +1471,9 @@
     "pincodes": [
       "110044"
     ],
-    "lat": 38.27802904,
-    "lon": 67.50290039,
-    "locality": "Badarpur SO South Delhi"
+    "lat": 28.5027,
+    "lon": 77.3084,
+    "locality": "Badarpur"
   },
   {
     "city": "Delhi",
@@ -4255,9 +4255,9 @@
     "pincodes": [
       "410401"
     ],
-    "lat": 18.5986732,
-    "lon": 64.3900541,
-    "locality": "Ambavane B.O"
+    "lat": 18.7528,
+    "lon": 73.4057,
+    "locality": "Ambavane"
   },
   {
     "city": "Pune",

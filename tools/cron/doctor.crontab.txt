@@ -32,6 +32,7 @@
 # bounded catch-up if the primary did not start.
 30 0 * * * cd /opt/ecom-intel && LEAD_MAX=32400 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
 */20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 10:00 >> logs/sweep_watchdog.cron.log 2>&1   # 10:00-sweep catch-up watchdog (guards the single 00:30 launch tick)
+*/15 5-10 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor false-OOS guard
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
 # 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).

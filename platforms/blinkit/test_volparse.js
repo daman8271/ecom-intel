@@ -2,7 +2,7 @@
 // Ports the zepto 2026-06-10 combo fix: combo packs render in BOTH orders ("1 L X 2" at some
 // stores, "2 x 1 L" at others); the parser must read both, before the single-quantity fallback.
 // Run: node platforms/blinkit/test_volparse.js
-const { parseVolMl, canonical } = require('./scrape.js');
+const { parseVolMl, canonical, priceInfo, buyAtPrice } = require('./scrape.js');
 
 const CASES = [
   // multiplier-FIRST combos ("M x N unit")
@@ -37,6 +37,22 @@ for (const [input, want] of CASES) {
   const ok = got === 'jivo-extra-light-olive-oil-2l';
   if (!ok) fail++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  canonical(olive, '2 x 1 l') = ${got} (want jivo-extra-light-olive-oil-2l)`);
+}
+
+{
+  const txt = 'Jivo Pomace Olive Oil 5 l ₹1,876 MRP ₹4,999 62% OFF Buy at ₹1,688 Apply Code: AXISNEO ADD';
+  const p = priceInfo(txt, 5000);
+  const ok = p.sale === 1688 && p.base_sale === 1876 && p.offer_sale === 1688 &&
+    p.mrp === 4999 && p.per_litre === 337.6;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  priceInfo(Buy at) = ${JSON.stringify(p)} (want sale=1688 base=1876 offer=1688 mrp=4999)`);
+}
+
+{
+  const got = buyAtPrice('Buy at ₹1,687 Apply Code: TEST');
+  const ok = got === 1687;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  buyAtPrice(...) = ${got} (want 1687)`);
 }
 
 if (fail) { console.error(`\n${fail} FAILED`); process.exit(1); }

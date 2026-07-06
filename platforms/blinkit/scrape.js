@@ -120,6 +120,58 @@ function parseVolMl(pack) {
   return toMl(parseFloat(m[1]), m[2]);
 }
 
+function parseRs(value) {
+  const n = parseInt(String(value || '').replace(/,/g, ''), 10);
+  return Number.isFinite(n) ? n : null;
+}
+
+function rupeePrices(text) {
+  return [...String(text || '').matchAll(/₹\s*([\d,]+)/g)]
+    .map((m) => parseRs(m[1]))
+    .filter((n) => n != null);
+}
+
+function buyAtPrice(text) {
+  const body = String(text || '').replace(/\s+/g, ' ').trim();
+  const patterns = [
+    /\bbuy\s+at\s*₹\s*([\d,]+)/ig,
+    /\bbuy\s+for\s*₹\s*([\d,]+)/ig,
+    /\beffective(?:\s+price)?\s*₹\s*([\d,]+)/ig,
+    /\bget\s+it\s+at\s*₹\s*([\d,]+)/ig,
+  ];
+  const vals = [];
+  for (const re of patterns) {
+    let m;
+    while ((m = re.exec(body))) {
+      const n = parseRs(m[1]);
+      if (n != null) vals.push(n);
+    }
+  }
+  return vals.length ? Math.min(...vals) : null;
+}
+
+function priceInfo(text, volMl, disc = null) {
+  const body = String(text || '');
+  const prices = rupeePrices(body);
+  const mrpMatch = body.match(/MRP\s*₹\s*([\d,]+)/i);
+  const baseSale = prices.length ? prices[0] : null;
+  const mrp = mrpMatch ? parseRs(mrpMatch[1]) : (prices.length > 1 ? prices[1] : baseSale);
+  const offerSale = buyAtPrice(body);
+  const sale = (offerSale != null && (baseSale == null || offerSale <= baseSale)) ? offerSale : baseSale;
+  return {
+    sale,
+    mrp,
+    base_sale: baseSale,
+    offer_sale: (offerSale != null && baseSale != null && offerSale < baseSale) ? offerSale : null,
+    discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : (disc ? parseFloat(disc) : null),
+    per_litre: volMl && sale ? Math.round((sale / (volMl / 1000)) * 100) / 100 : null,
+  };
+}
+
+function priceSource(source, info) {
+  return info && info.offer_sale ? `${source}_offer` : source;
+}
+
 // Blinkit's DEFAULT/fallback dark store, served whenever our injected location
 // has NOT re-resolved yet. When this fallback is active, Blinkit reverts
 // localStorage.location to its own default (coords.isDefault=true, Gurugram
@@ -213,9 +265,6 @@ function parseJivoCards(cards, rec, store) {
     const inStock = !/out of stock/i.test(c);
     const eta = (c.match(/(\d+)\s*MINS?/i) || [])[1];
     const disc = (c.match(/(\d+)%\s*OFF/i) || [])[1];
-    const prices = [...c.matchAll(/₹\s*([\d,]+)/g)].map((m) => parseInt(m[1].replace(/,/g, ''), 10));
-    const sale = prices.length ? prices[0] : null;
-    const mrp = prices.length > 1 ? prices[1] : sale;
     // name: between the MINS/OFF prefix and the first ₹ / pack
     let name = c.replace(/^\d+%\s*OFF\s*/i, '').replace(/^.*?\d+\s*MINS?\s*/i, '');
     name = name.replace(/Out of Stock/i, '').trim();
@@ -224,7 +273,9 @@ function parseJivoCards(cards, rec, store) {
     name = name.replace(/₹.*$/, '').replace(/ADD\s*$/i, '');
     if (pack) name = name.split(pack)[0];
     name = name.trim();
-    if (!/jivo/i.test(name) || !sale) continue;
+    const volMl = parseVolMl(pack);
+    const price = priceInfo(c, volMl, disc);
+    if (!/jivo/i.test(name) || !price.sale) continue;
     // listing identity (additive, fail-safe): prid + constructed PDP url. Prefer the
     // real anchor slug; else slugify the parsed name (Blinkit routes PDPs on prid —
     // the slug segment is cosmetic). On any error the row is built exactly as before.
@@ -236,19 +287,19 @@ function parseJivoCards(cards, rec, store) {
         identity = { prid, listing_url: `https://blinkit.com/prn/${slug}/prid/${prid}` };
       }
     } catch (_) { identity = {}; }
-    const volMl = parseVolMl(pack);
     out.push({
       city: rec.city, pincode: rec.pincode, locality: rec.locality,
       store_id: store.id || '', store_name: store.name || '',
       sku_raw: name, canonical: canonical(name, pack), pack: pack || '',
-      vol_ml: volMl, sale, mrp,
-      discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : (disc ? parseFloat(disc) : null),
-      per_litre: volMl ? Math.round((sale / (volMl / 1000)) * 100) / 100 : null,
+      vol_ml: volMl, sale: price.sale, mrp: price.mrp,
+      base_sale: price.base_sale, offer_sale: price.offer_sale,
+      discount_pct: price.discount_pct,
+      per_litre: price.per_litre,
       eta_min: eta ? parseInt(eta, 10) : null,
       in_stock: inStock ? 1 : 0,
       listing_status: inStock ? 'listed_in_stock' : 'listed_out_of_stock',
       stock_source: 'search_card',
-      price_source: inStock ? 'search_card' : 'search_card_oos',
+      price_source: priceSource(inStock ? 'search_card' : 'search_card_oos', price),
       ...identity,
     });
   }
@@ -274,10 +325,16 @@ function pdpPackVariants(row) {
   return [...variants].filter(Boolean);
 }
 
+function cleanProductName(name) {
+  let out = String(name || '').replace(/\s+/g, ' ').trim();
+  while (out.endsWith('(')) out = out.slice(0, -1).trim();
+  return out;
+}
+
 function parsePdpProductText(text, row) {
   const body = String(text || '').replace(/\s+/g, ' ').trim();
   const lower = body.toLowerCase();
-  const name = String(row.sku_raw || '').replace(/\s+/g, ' ').trim();
+  const name = cleanProductName(row.sku_raw);
   if (!name) return null;
   const candidates = [];
   for (const pack of pdpPackVariants(row)) {
@@ -301,16 +358,15 @@ function parsePdpProductText(text, row) {
   if (!segment) segment = body.slice(candidates[0], candidates[0] + 450).split(/Why shop from blinkit\?/i)[0];
   const out = /out of stock/i.test(segment);
   const hasAdd = /add to cart|\bADD\b/i.test(segment);
-  const prices = [...segment.matchAll(/₹\s*([\d,]+)/g)].map((m) => parseInt(m[1].replace(/,/g, ''), 10)).filter(Number.isFinite);
-  const sale = prices.length ? prices[0] : null;
-  const mrpMatch = segment.match(/MRP\s*₹\s*([\d,]+)/i);
-  const mrp = mrpMatch ? parseInt(mrpMatch[1].replace(/,/g, ''), 10) : (prices.length > 1 ? prices[1] : sale);
+  const price = priceInfo(segment, row.vol_ml);
   return {
     in_stock: hasAdd && !out ? 1 : 0,
-    sale,
-    mrp,
-    discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : null,
-    per_litre: row.vol_ml && sale ? Math.round((sale / (row.vol_ml / 1000)) * 100) / 100 : null,
+    sale: price.sale,
+    mrp: price.mrp,
+    base_sale: price.base_sale,
+    offer_sale: price.offer_sale,
+    discount_pct: price.discount_pct,
+    per_litre: price.per_litre,
     snippet: segment.slice(0, 240),
   };
 }
@@ -319,12 +375,24 @@ async function extractJivoCards(page) {
   return page.evaluate(() => {
     const out = [];
     const seen = new Set();
+    const isVisibleCard = (el) => {
+      const r = el.getBoundingClientRect();
+      if (r.width < 100 || r.width > 420) return false;
+      if (r.height < 180 || r.height > 620) return false;
+      if (r.bottom < 0 || r.top > window.innerHeight * 3) return false;
+      let cur = el;
+      while (cur && cur !== document.documentElement) {
+        const st = window.getComputedStyle(cur);
+        if (st.display === 'none' || st.visibility === 'hidden' || Number(st.opacity || 1) === 0) return false;
+        if (cur.getAttribute && cur.getAttribute('aria-hidden') === 'true') return false;
+        cur = cur.parentElement;
+      }
+      return true;
+    };
     document.querySelectorAll('div').forEach((el) => {
       const t = el.innerText || '';
       if (!/jivo/i.test(t) || !/₹/.test(t)) return;
-      const r = el.getBoundingClientRect();
-      if (r.width < 100 || r.width > 420) return;
-      if (r.height < 180 || r.height > 620) return;
+      if (!isVisibleCard(el)) return;
       const key = t.slice(0, 90);
       if (seen.has(key)) return;
       seen.add(key);
@@ -820,13 +888,15 @@ async function scrapeOne(browser, rec) {
             store_name: candidate.store_name,
             sale: candidate.sale,
             mrp: candidate.mrp,
+            base_sale: candidate.base_sale,
+            offer_sale: candidate.offer_sale,
             discount_pct: candidate.discount_pct,
             per_litre: candidate.per_litre,
             eta_min: candidate.eta_min,
             in_stock: 1,
             listing_status: 'listed_in_stock',
             stock_source: 'search_probe',
-            price_source: 'search_probe',
+            price_source: priceSource('search_probe', candidate),
             search_in_stock: prev.in_stock,
             search_sale: prev.sale,
             search_mrp: prev.mrp,
@@ -844,57 +914,73 @@ async function scrapeOne(browser, rec) {
           process.stderr.write(`[oos-probe] ${rec.city} ${rec.pincode} ${probeRec.probe_label} -> flipped ${flips} OOS row(s) via store=${probeStore.name || 'n/a'} id=${probeStore.id || ''}\n`);
         }
       }
-      if (BLINKIT_PDP_OOS_PROBE && rows.some((r) => !r.in_stock)) {
-        for (let idx = 0; idx < rows.length; idx++) {
-          if (rows[idx].in_stock) continue;
-          const prev = rows[idx];
-          let checked = false;
-          const pdpRecs = [{ ...rec, probe_label: 'primary' }, ...probeRecords(rec)];
-          for (const pdpRec of pdpRecs) {
-            const pdp = await verifyPdpRow(pdpRec, prev, pdpRec.probe_label || 'primary');
-            if (!pdp) continue;
-            checked = true;
-            if (!pdp.in_stock) continue;
-            rows[idx] = {
-              ...prev,
-              store_id: pdp.store.id || prev.store_id,
-              store_name: pdp.store.name || prev.store_name,
-              sale: pdp.sale ?? prev.sale,
-              mrp: pdp.mrp ?? prev.mrp,
-              discount_pct: pdp.discount_pct ?? prev.discount_pct,
-              per_litre: pdp.per_litre ?? prev.per_litre,
-              in_stock: 1,
-              listing_status: 'listed_in_stock',
-              stock_source: 'pdp_probe',
-              price_source: 'pdp',
-              search_in_stock: prev.in_stock,
-              search_sale: prev.sale,
-              search_mrp: prev.mrp,
-              pdp_sale: pdp.sale,
-              pdp_mrp: pdp.mrp,
-              pdp_snippet: pdp.snippet,
-              stock_probe: 'nearby_same_pincode_pdp',
-              stock_probe_label: pdp.probe_label,
-              stock_probe_lat: pdp.probe_lat,
-              stock_probe_lon: pdp.probe_lon,
-              primary_store_id: prev.primary_store_id || prev.store_id,
-              primary_store_name: prev.primary_store_name || prev.store_name,
-              primary_eta_min: prev.primary_eta_min || prev.eta_min,
-            };
-            process.stderr.write(`[pdp-probe] ${rec.city} ${rec.pincode} ${pdp.probe_label} -> flipped ${prev.sku_raw} via store=${pdp.store.name || 'n/a'} id=${pdp.store.id || ''} sale=${pdp.sale || 'n/a'}\n`);
-            break;
-          }
-          if (!rows[idx].in_stock && checked) {
-            rows[idx] = {
-              ...rows[idx],
-              listing_status: 'listed_out_of_stock',
-              stock_source: rows[idx].stock_source === 'search_card' ? 'pdp' : rows[idx].stock_source,
-              pdp_checked: 1,
-              pdp_in_stock: 0,
-            };
-          }
+    }
+    if (BLINKIT_PDP_OOS_PROBE && rows.some((r) => !r.in_stock)) {
+      for (let idx = 0; idx < rows.length; idx++) {
+        if (rows[idx].in_stock) continue;
+        const prev = rows[idx];
+        let checked = false;
+        let checkedPdp = null;
+        const pdpRecs = [{ ...rec, probe_label: 'primary' }, ...probeRecords(rec)];
+        for (const pdpRec of pdpRecs) {
+          const pdp = await verifyPdpRow(pdpRec, prev, pdpRec.probe_label || 'primary');
+          if (!pdp) continue;
+          checked = true;
+          checkedPdp = pdp;
+          if (!pdp.in_stock) continue;
+          rows[idx] = {
+            ...prev,
+            store_id: pdp.store.id || prev.store_id,
+            store_name: pdp.store.name || prev.store_name,
+            sale: pdp.sale ?? prev.sale,
+            mrp: pdp.mrp ?? prev.mrp,
+            base_sale: pdp.base_sale ?? prev.base_sale,
+            offer_sale: pdp.offer_sale ?? prev.offer_sale,
+            discount_pct: pdp.discount_pct ?? prev.discount_pct,
+            per_litre: pdp.per_litre ?? prev.per_litre,
+            in_stock: 1,
+            listing_status: 'listed_in_stock',
+            stock_source: 'pdp_probe',
+            price_source: priceSource('pdp', pdp),
+            search_in_stock: prev.in_stock,
+            search_sale: prev.sale,
+            search_mrp: prev.mrp,
+            pdp_sale: pdp.sale,
+            pdp_mrp: pdp.mrp,
+            pdp_snippet: pdp.snippet,
+            stock_probe: 'nearby_same_pincode_pdp',
+            stock_probe_label: pdp.probe_label,
+            stock_probe_lat: pdp.probe_lat,
+            stock_probe_lon: pdp.probe_lon,
+            primary_store_id: prev.primary_store_id || prev.store_id,
+            primary_store_name: prev.primary_store_name || prev.store_name,
+            primary_eta_min: prev.primary_eta_min || prev.eta_min,
+          };
+          process.stderr.write(`[pdp-probe] ${rec.city} ${rec.pincode} ${pdp.probe_label} -> flipped ${prev.sku_raw} via store=${pdp.store.name || 'n/a'} id=${pdp.store.id || ''} sale=${pdp.sale || 'n/a'}\n`);
+          break;
+        }
+        if (!rows[idx].in_stock && checked) {
+          rows[idx] = {
+            ...rows[idx],
+            sale: checkedPdp && checkedPdp.sale != null ? checkedPdp.sale : rows[idx].sale,
+            mrp: checkedPdp && checkedPdp.mrp != null ? checkedPdp.mrp : rows[idx].mrp,
+            base_sale: checkedPdp && checkedPdp.base_sale != null ? checkedPdp.base_sale : rows[idx].base_sale,
+            offer_sale: checkedPdp && checkedPdp.offer_sale != null ? checkedPdp.offer_sale : rows[idx].offer_sale,
+            discount_pct: checkedPdp && checkedPdp.discount_pct != null ? checkedPdp.discount_pct : rows[idx].discount_pct,
+            per_litre: checkedPdp && checkedPdp.per_litre != null ? checkedPdp.per_litre : rows[idx].per_litre,
+            listing_status: 'listed_out_of_stock',
+            stock_source: rows[idx].stock_source === 'search_card' ? 'pdp' : rows[idx].stock_source,
+            price_source: checkedPdp && checkedPdp.sale != null ? priceSource('pdp', checkedPdp) : rows[idx].price_source,
+            pdp_checked: 1,
+            pdp_in_stock: 0,
+            pdp_sale: checkedPdp ? checkedPdp.sale : rows[idx].pdp_sale,
+            pdp_mrp: checkedPdp ? checkedPdp.mrp : rows[idx].pdp_mrp,
+            pdp_snippet: checkedPdp ? checkedPdp.snippet : rows[idx].pdp_snippet,
+          };
         }
       }
+    }
+    if (BLINKIT_OOS_PROBE || BLINKIT_PDP_OOS_PROBE) {
       store = primaryStore;
     }
     // dedup on (store_id, canonical)
@@ -932,7 +1018,7 @@ async function pool(items, n, fn) {
 
 // Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
 // only runs when invoked directly, so `require`-ing this file never launches a browser.
-module.exports = { parseVolMl, canonical };
+module.exports = { parseVolMl, canonical, priceInfo, buyAtPrice };
 
 // Scrape one pincode with block-aware exponential backoff. A blocked attempt backs
 // off and retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag

@@ -9,6 +9,13 @@ checkpoint/resume, block-detection + exponential backoff, and partial-run tolera
 Anonymous Blinkit sessions can return false Out of Stock for live SKUs, so production
 runs fail closed unless `BLINKIT_REQUIRE_AUTH=1` has a valid auth state.
 
+2026-07-07 update: ingest now rejects raw drops before promotion when OOS rows are
+present without both search and PDP OOS probe summary flags, when OOS rows remain
+unverified, when PRID/listing URLs regress, when price arithmetic is inconsistent,
+or when the expected pincode config has coordinates outside the India bounding box.
+The current promoted repaired artifact is grandfathered with
+`BLINKIT_ALLOW_LEGACY_REPAIRED_OOS=1`; new raw drops still fail closed by default.
+
 ## Code map (line numbers as of this commit)
 
 | Concern | Location |
@@ -41,6 +48,9 @@ runs fail closed unless `BLINKIT_REQUIRE_AUTH=1` has a valid auth state.
    if no Blinkit token is available. Authenticated runs mark `summary.auth_session=1`
    and `summary.auth_required=1`; downstream ingest rejects unauthenticated drops by
    default.
+5. **Ingest validation gates** — `ingest.sh` validates identity coverage, OOS probe
+   evidence, unverified OOS count, price math, and expected-config coordinates before
+   writing `result.json`, building Excel, reviewing, or delivering.
 
 SIM hooks for hermetic tests (inert in production — only active when the env var is set):
 `BLINKIT_SIM=1` returns a synthetic resolved row with no browser; `BLINKIT_BLOCK_SIM=1`
@@ -103,6 +113,67 @@ Observed (2026-07-06):
 
 Conclusion: the scraper cannot silently fall back to anonymous Blinkit when auth is
 required, which prevents the 2026-07-06 false-OOS class from recurring.
+
+## Fault-injection test 4 - ingest gates fail closed  PASS
+
+Steps (validate-only; no promotion/build/delivery):
+
+```sh
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh platforms/blinkit/result.last-good.json
+
+jq 'del(.oos_repair_merge) | del(.summary.correction) | .summary.oos_probe_enabled = 0 | .summary.pdp_oos_probe_enabled = 1 | .summary.unverified_oos = 0' \
+  platforms/blinkit/result.last-good.json > /tmp/blinkit-no-oos-probe.json
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh /tmp/blinkit-no-oos-probe.json
+
+jq 'del(.oos_repair_merge) | del(.summary.correction) | .summary.oos_probe_enabled = 1 | .summary.pdp_oos_probe_enabled = 0 | .summary.unverified_oos = 0' \
+  platforms/blinkit/result.last-good.json > /tmp/blinkit-no-pdp-probe.json
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh /tmp/blinkit-no-pdp-probe.json
+
+jq 'del(.oos_repair_merge) | del(.summary.correction) | .summary.oos_probe_enabled = 1 | .summary.pdp_oos_probe_enabled = 1 | .summary.unverified_oos = 5' \
+  platforms/blinkit/result.last-good.json > /tmp/blinkit-unverified-oos.json
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh /tmp/blinkit-unverified-oos.json
+
+jq '.allRows[0].prid = "" | .allRows[0].listing_url = ""' \
+  platforms/blinkit/result.last-good.json > /tmp/blinkit-missing-identity.json
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh /tmp/blinkit-missing-identity.json
+
+jq '.allRows[0].listing_url = ""' \
+  platforms/blinkit/result.last-good.json > /tmp/blinkit-missing-listing-url.json
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh /tmp/blinkit-missing-listing-url.json
+
+jq '.allRows[0].listing_url = "https://blinkit.com/prn/jivo-pomace-olive-oil"' \
+  platforms/blinkit/result.last-good.json > /tmp/blinkit-bad-listing-url.json
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh /tmp/blinkit-bad-listing-url.json
+
+jq '.allRows[0].per_litre = 1' \
+  platforms/blinkit/result.last-good.json > /tmp/blinkit-bad-price.json
+BLINKIT_VALIDATE_ONLY=1 platforms/blinkit/ingest.sh /tmp/blinkit-bad-price.json
+
+jq '.[0].lat = 0' platforms/blinkit/pincodes.daily.json > /tmp/blinkit-bad-config.json
+BLINKIT_VALIDATE_ONLY=1 BLINKIT_EXPECTED_CONFIG=/tmp/blinkit-bad-config.json \
+  platforms/blinkit/ingest.sh platforms/blinkit/result.last-good.json
+```
+
+Observed (2026-07-07):
+- Current `result.last-good.json` passed validate-only with the legacy repaired-OOS
+  compatibility exemption.
+- Missing `summary.oos_probe_enabled` failed with `Refusing unprobed Blinkit OOS drop`.
+- Missing `summary.pdp_oos_probe_enabled` failed with `Refusing unverified Blinkit OOS drop`.
+- Unverified OOS failed with `Refusing excessive unverified Blinkit OOS`.
+- Missing PRID, missing listing URL, and malformed listing URL failed with
+  `Refusing Blinkit row identity regression`.
+- Bad price arithmetic failed with `Refusing Blinkit bad price math`.
+- Bad expected-config coordinates failed with
+  `Refusing invalid Blinkit expected-config coordinates`.
+
+Default thresholds are fail-closed. Operational overrides are:
+`BLINKIT_REQUIRE_OOS_PROBE_ENABLED`, `BLINKIT_REQUIRE_PDP_OOS_PROBE_ENABLED`,
+`BLINKIT_MAX_UNVERIFIED_OOS`, `BLINKIT_MAX_MISSING_PRID_RATIO`,
+`BLINKIT_MAX_MISSING_LISTING_URL_RATIO`, `BLINKIT_MAX_BAD_LISTING_URL_RATIO`,
+`BLINKIT_MAX_BAD_PRICE_ROWS`, `BLINKIT_PRICE_MATH_PER_LITRE_EPS`,
+`BLINKIT_PRICE_MATH_DISCOUNT_EPS`, `BLINKIT_INDIA_BBOX`,
+`BLINKIT_REQUIRE_CONFIG_COORDS`, `BLINKIT_CONFIG_COORD_ALLOWLIST`, and
+`BLINKIT_MAX_BAD_CONFIG_COORDS`.
 
 ## Known caveat
 The checkpoint filename uses the **UTC** date (`new Date().toISOString()`), while
