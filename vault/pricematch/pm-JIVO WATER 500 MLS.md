@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-06
-observations: 224
+last_seen: 2026-07-07
+observations: 232
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-natural-mineral-water-himalayan-origin-nonro-unprocessed-nonc
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-06) — ref ₹10 vs live ₹-
-- **Days below reference:** 0 of 28
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-07) — ref ₹10 vs live ₹-
+- **Days below reference:** 0 of 29
 
-## Ref-vs-live history (224 observations)
+## Ref-vs-live history (232 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -268,6 +268,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-06,flipkart,NOT_LISTED,SVD,10,,,,,,0,false
 2026-07-06,flipkart-minutes,NOT_LISTED,SVD,10,,,,,,0,false
 2026-07-06,zepto,NOT_LISTED,SVD,10,,,,,,0,false
+2026-07-07,amazon,OOS,SVD,10,,,,,,0,false
+2026-07-07,amazon-fresh,NOT_LISTED,SVD,10,,,,,,0,false
+2026-07-07,amazon-now,NOT_LISTED,SVD,10,,,,,,0,false
+2026-07-07,bigbasket,NOT_LISTED,SVD,10,,,,,,0,false
+2026-07-07,blinkit,NOT_LISTED,SVD,10,,,,,,0,false
+2026-07-07,flipkart,NOT_LISTED,SVD,10,,,,,,0,false
+2026-07-07,flipkart-minutes,NOT_LISTED,SVD,10,,,,,,0,false
+2026-07-07,zepto,NOT_LISTED,SVD,10,,,,,,0,false
 ```
 
 ---
