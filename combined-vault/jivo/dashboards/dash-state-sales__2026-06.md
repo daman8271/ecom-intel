@@ -23,7 +23,7 @@ Up: [[dashboards-index]] · [[2026-06]]
  "cities": [
   {
    "city": "Bengaluru",
-   "value": 65269.0
+   "value": 65270.0
   },
   {
    "city": "Mumbai",
@@ -39,7 +39,7 @@ Up: [[dashboards-index]] · [[2026-06]]
   },
   {
    "city": "Gurugram",
-   "value": 24498.0
+   "value": 24504.0
   },
   {
    "city": "Pune",
@@ -2981,8 +2981,8 @@ Up: [[dashboards-index]] · [[2026-06]]
    }
   ]
  },
- "mapped_units": 491751.0,
- "mapped_value": 491751.0,
+ "mapped_units": 491778.0,
+ "mapped_value": 491778.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3008,12 +3008,12 @@ Up: [[dashboards-index]] · [[2026-06]]
     "AMAZON": 15875.0,
     "BIG BASKET": 457.0,
     "BLINKIT": 3678.0,
-    "SWIGGY": 29258.0,
+    "SWIGGY": 29260.0,
     "ZEPTO": 21313.0
    },
    "state": "KARNATAKA",
-   "units": 70581.0,
-   "value": 70581.0
+   "units": 70583.0,
+   "value": 70583.0
   },
   {
    "by_platform": {
@@ -3053,24 +3053,24 @@ Up: [[dashboards-index]] · [[2026-06]]
    "by_platform": {
     "AMAZON": 9596.0,
     "BIG BASKET": 2949.0,
-    "BLINKIT": 8215.0,
-    "SWIGGY": 7302.0,
+    "BLINKIT": 8226.0,
+    "SWIGGY": 7309.0,
     "ZEPTO": 10110.0
    },
    "state": "HARYANA",
-   "units": 38172.0,
-   "value": 38172.0
+   "units": 38190.0,
+   "value": 38190.0
   },
   {
    "by_platform": {
     "AMAZON": 3576.0,
-    "BLINKIT": 23049.0,
+    "BLINKIT": 23053.0,
     "SWIGGY": 4222.0,
     "ZEPTO": 1802.0
    },
    "state": "PUNJAB",
-   "units": 32649.0,
-   "value": 32649.0
+   "units": 32653.0,
+   "value": 32653.0
   },
   {
    "by_platform": {
@@ -3157,24 +3157,24 @@ Up: [[dashboards-index]] · [[2026-06]]
    "by_platform": {
     "AMAZON": 1772.0,
     "BIG BASKET": 2.0,
-    "SWIGGY": 3337.0,
+    "SWIGGY": 3339.0,
     "ZEPTO": 292.0
    },
    "state": "KERALA",
-   "units": 5403.0,
-   "value": 5403.0
+   "units": 5405.0,
+   "value": 5405.0
   },
   {
    "by_platform": {
     "AMAZON": 1293.0,
     "BIG BASKET": 30.0,
-    "BLINKIT": 1100.0,
+    "BLINKIT": 1101.0,
     "SWIGGY": 1630.0,
     "ZEPTO": 730.0
    },
    "state": "UTTARAKHAND",
-   "units": 4783.0,
-   "value": 4783.0
+   "units": 4784.0,
+   "value": 4784.0
   },
   {
    "by_platform": {
@@ -3338,8 +3338,8 @@ Up: [[dashboards-index]] · [[2026-06]]
   }
  ],
  "sub_categories": [],
- "total_units": 494807.0,
- "total_value": 494807.0,
+ "total_units": 494818.0,
+ "total_value": 494818.0,
  "year": 2026
 }
 ```

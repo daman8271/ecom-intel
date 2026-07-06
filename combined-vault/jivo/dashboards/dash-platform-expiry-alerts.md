@@ -22,27 +22,35 @@ Up: [[dashboards-index]]
  "platforms": [
   {
    "format": "SWIGGY",
-   "po_count": 32,
+   "po_count": 38,
    "slug": "swiggy",
-   "total_litrs": 25346.0,
-   "total_order_units": 18246.0,
-   "total_units": 4343939.74
+   "total_litrs": 34594.0,
+   "total_order_units": 25610.0,
+   "total_units": 5949907.4
   },
   {
    "format": "BLINKIT",
-   "po_count": 34,
+   "po_count": 41,
    "slug": "blinkit",
-   "total_litrs": 10754.0,
-   "total_order_units": 10166.0,
-   "total_units": 1953242.84
+   "total_litrs": 10066.0,
+   "total_order_units": 9468.0,
+   "total_units": 1959373.86
   },
   {
    "format": "FLIPKART GROCERY",
-   "po_count": 1,
+   "po_count": 2,
    "slug": "flipkart_grocery",
-   "total_litrs": 1680.0,
-   "total_order_units": 1680.0,
-   "total_units": 252952.38095238095
+   "total_litrs": 2220.0,
+   "total_order_units": 2220.0,
+   "total_units": 338857.14285714284
+  },
+  {
+   "format": "ZEPTO",
+   "po_count": 3,
+   "slug": "zepto",
+   "total_litrs": 785.6,
+   "total_order_units": 568.0,
+   "total_units": 265865.92
   },
   {
    "format": "BIG BASKET",
@@ -51,14 +59,6 @@ Up: [[dashboards-index]]
    "total_litrs": 136.0,
    "total_order_units": 80.0,
    "total_units": 28827.68
-  },
-  {
-   "format": "ZEPTO",
-   "po_count": 1,
-   "slug": "zepto",
-   "total_litrs": 43.2,
-   "total_order_units": 216.0,
-   "total_units": 12342.24
   },
   {
    "format": "AMAZON",

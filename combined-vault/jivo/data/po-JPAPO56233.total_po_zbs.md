@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-344.76,0.0,SWIGGY,,2026-06-20,76074,361.998,JAIPUR,30.0,2026-06-11,2026-06-20,JPAPO56233,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76074,2026-07-05
-771.43,0.0,SWIGGY,,2026-06-20,76075,810.0015,JAIPUR,4.0,2026-06-11,2026-06-20,JPAPO56233,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76075,2026-07-05
-738.1,8.0,SWIGGY,,2026-06-20,76076,775.005,JAIPUR,8.0,2026-06-11,2026-06-20,JPAPO56233,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76076,2026-07-05
-242.86,20.0,SWIGGY,,2026-06-20,76077,255.003,JAIPUR,20.0,2026-06-11,2026-06-20,JPAPO56233,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76077,2026-07-05
+344.76,0.0,SWIGGY,,2026-06-20,76074,361.998,JAIPUR,30.0,2026-06-11,2026-06-20,JPAPO56233,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76074,2026-07-06
+771.43,0.0,SWIGGY,,2026-06-20,76075,810.0015,JAIPUR,4.0,2026-06-11,2026-06-20,JPAPO56233,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76075,2026-07-06
+738.1,8.0,SWIGGY,,2026-06-20,76076,775.005,JAIPUR,8.0,2026-06-11,2026-06-20,JPAPO56233,,766072,Jivo Ricebran Oil 5L 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76076,2026-07-06
+242.86,20.0,SWIGGY,,2026-06-20,76077,255.003,JAIPUR,20.0,2026-06-11,2026-06-20,JPAPO56233,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:76077,2026-07-06
 ```
 
 ---

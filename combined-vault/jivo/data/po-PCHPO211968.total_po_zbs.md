@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-149.52,0.0,SWIGGY,,,78458,156.996,CHANDIGARH,440.0,2026-07-01,2026-07-13,PCHPO211968,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-04,total_po_zbs:78458,2026-07-05
-200.0,0.0,SWIGGY,,,78459,210.0,CHANDIGARH,16.0,2026-07-01,2026-07-13,PCHPO211968,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-04,total_po_zbs:78459,2026-07-05
+149.52,0.0,SWIGGY,,,78458,156.996,CHANDIGARH,440.0,2026-07-01,2026-07-13,PCHPO211968,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-04,total_po_zbs:78458,2026-07-06
+200.0,0.0,SWIGGY,,,78459,210.0,CHANDIGARH,16.0,2026-07-01,2026-07-13,PCHPO211968,,968589,Jivo SO OLive Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-04,total_po_zbs:78459,2026-07-06
 ```
 
 ---

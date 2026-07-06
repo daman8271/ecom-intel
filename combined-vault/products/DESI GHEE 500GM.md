@@ -30,11 +30,8 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000352`, `SL0000090` |
 | canonical_sku(s) | `ghegwgyyfw9edubs`, `jivo-desi-ghee-500-ml-500ml`, `jivo-desi-ghee-500-ml-traditional-preparation-from-desi-cow-milk-suitable-for-cooking-frying-baking-authentic-aroma-and-flavor-ideal-for-indian-and-continental-recipes-500ml` |
 | Category | [[Category - GHEE\|GHEE]] |
-| Sub-category | DESI GHEE |
-| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 500GM |
-| Per-unit | 0.5 L |
 | Bridge class | new_confirmed |
 
 ## Competitor-price lens

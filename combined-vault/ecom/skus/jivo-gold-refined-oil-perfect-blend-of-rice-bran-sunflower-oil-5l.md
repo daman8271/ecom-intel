@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l
-display_name: Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
+display_name: Jivo Gold Refined Oil Perfect Blend Of Rice Bran Sunflower Oil 5l
 platforms:
   - amazon-fresh
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)**
+**Jivo Gold Refined Oil Perfect Blend Of Rice Bran Sunflower Oil 5l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹859 (18.2% off)

@@ -25,8 +25,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
  "detail_subtitle": "Excel rows 14-47; grand total follows rows 14-42",
  "detail_total": {
   "per_liter_shpd": 0.0,
-  "shipped_ltr": 11221.0,
-  "shipped_units": 10206.0,
+  "shipped_ltr": 14695.0,
+  "shipped_units": 13361.0,
   "shipped_value": 0.0
  },
  "detail_total_note": "Detail grand total excludes OTHER rows to match Excel F48:I48.",
@@ -38,8 +38,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 6128.0,
-   "shipped_units": 6128.0,
+   "shipped_ltr": 7967.0,
+   "shipped_units": 7967.0,
    "shipped_value": 0.0,
    "sub_category": "GROUNDNUT"
   },
@@ -50,8 +50,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 850.0,
-   "shipped_units": 850.0,
+   "shipped_ltr": 1172.0,
+   "shipped_units": 1172.0,
    "shipped_value": 0.0,
    "sub_category": "JIVO POMACE"
   },
@@ -62,8 +62,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "2 LTR",
-   "shipped_ltr": 186.0,
-   "shipped_units": 93.0,
+   "shipped_ltr": 278.0,
+   "shipped_units": 139.0,
    "shipped_value": 0.0,
    "sub_category": "CANOLA"
   },
@@ -74,8 +74,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "2 LTR",
-   "shipped_ltr": 164.0,
-   "shipped_units": 82.0,
+   "shipped_ltr": 202.0,
+   "shipped_units": 101.0,
    "shipped_value": 0.0,
    "sub_category": "EXTRA LIGHT"
   },
@@ -86,8 +86,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 588.0,
-   "shipped_units": 588.0,
+   "shipped_ltr": 790.0,
+   "shipped_units": 790.0,
    "shipped_value": 0.0,
    "sub_category": "EXTRA LIGHT"
   },
@@ -98,8 +98,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 530.0,
-   "shipped_units": 106.0,
+   "shipped_ltr": 680.0,
+   "shipped_units": 136.0,
    "shipped_value": 0.0,
    "sub_category": "JIVO POMACE"
   },
@@ -110,8 +110,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 95.0,
-   "shipped_units": 19.0,
+   "shipped_ltr": 165.0,
+   "shipped_units": 33.0,
    "shipped_value": 0.0,
    "sub_category": "CANOLA"
   },
@@ -122,8 +122,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 19.0,
-   "shipped_units": 19.0,
+   "shipped_ltr": 25.0,
+   "shipped_units": 25.0,
    "shipped_value": 0.0,
    "sub_category": "EXTRA VIRGIN"
   },
@@ -134,8 +134,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "2 LTR",
-   "shipped_ltr": 28.0,
-   "shipped_units": 14.0,
+   "shipped_ltr": 40.0,
+   "shipped_units": 20.0,
    "shipped_value": 0.0,
    "sub_category": "JIVO POMACE"
   },
@@ -158,8 +158,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 4.0,
-   "shipped_units": 4.0,
+   "shipped_ltr": 5.0,
+   "shipped_units": 5.0,
    "shipped_value": 0.0,
    "sub_category": "SO OLIVE"
   },
@@ -254,8 +254,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 1067.0,
-   "shipped_units": 1067.0,
+   "shipped_ltr": 1334.0,
+   "shipped_units": 1334.0,
    "shipped_value": 0.0,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
@@ -266,8 +266,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 1157.0,
-   "shipped_units": 1157.0,
+   "shipped_ltr": 1540.0,
+   "shipped_units": 1540.0,
    "shipped_value": 0.0,
    "sub_category": "SUNFLOWER"
   },
@@ -278,8 +278,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.0,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 385.0,
-   "shipped_units": 77.0,
+   "shipped_ltr": 475.0,
+   "shipped_units": 95.0,
    "shipped_value": 0.0,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
@@ -290,8 +290,8 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 0.0,
-   "shipped_units": 0.0,
+   "shipped_ltr": 2.0,
+   "shipped_units": 2.0,
    "shipped_value": 0.0,
    "sub_category": "RICE BRAN"
   },
@@ -440,9 +440,9 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "sub_category": "SODA"
   }
  ],
- "elapsed_day": 3,
+ "elapsed_day": 4,
  "format": "ZEPTO",
- "max_date": "2026-07-03",
+ "max_date": "2026-07-04",
  "month": 7,
  "ratio_label": "PER LTR(SHPD)",
  "sec_trend": {
@@ -495,13 +495,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
      "day": 3,
      "label": "03",
      "ltrs": {
-      "deliver": 4045.60000371933,
+      "deliver": 4078.0000037401915,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-03",
      "quantity": {
-      "deliver": 4605.0,
+      "deliver": 4635.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -516,13 +516,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
      "day": 4,
      "label": "04",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 3683.200003579259,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-04",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 4333.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -1148,13 +1148,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
      "day": 3,
      "label": "03",
      "ltrs": {
-      "deliver": 876.0,
+      "deliver": 886.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-03",
      "quantity": {
-      "deliver": 732.0,
+      "deliver": 738.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -1169,13 +1169,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
      "day": 4,
      "label": "04",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 732.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-04",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 664.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -1801,13 +1801,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
      "day": 3,
      "label": "03",
      "ltrs": {
-      "deliver": 3169.60000371933,
+      "deliver": 3192.0000037401915,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-03",
      "quantity": {
-      "deliver": 3873.0,
+      "deliver": 3897.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -1822,13 +1822,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
      "day": 4,
      "label": "04",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 2951.200003579259,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-04",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 3669.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -2532,14 +2532,14 @@ Up: [[dashboards-index]] · [[pf-zepto]]
     {
      "label": "JUL",
      "ltrs": {
-      "deliver": 12059.400012493134,
+      "deliver": 15775.000016093254,
       "order": 0.0,
       "return": 0.0
      },
      "month": 7,
      "period": "2026-07-01",
      "quantity": {
-      "deliver": 14398.0,
+      "deliver": 18761.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -2674,14 +2674,14 @@ Up: [[dashboards-index]] · [[pf-zepto]]
     {
      "label": "JUL",
      "ltrs": {
-      "deliver": 2609.0,
+      "deliver": 3351.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 7,
      "period": "2026-07-01",
      "quantity": {
-      "deliver": 2301.0,
+      "deliver": 2971.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -2816,14 +2816,14 @@ Up: [[dashboards-index]] · [[pf-zepto]]
     {
      "label": "JUL",
      "ltrs": {
-      "deliver": 9450.400012493134,
+      "deliver": 12424.000016093254,
       "order": 0.0,
       "return": 0.0
      },
      "month": 7,
      "period": "2026-07-01",
      "quantity": {
-      "deliver": 12097.0,
+      "deliver": 15790.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -2860,13 +2860,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 350730.30020065606,
+      "deliver": 354445.9002042562,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 378203.0,
+      "deliver": 382566.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -2902,13 +2902,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 126973.0,
+      "deliver": 127715.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 118869.0,
+      "deliver": 119539.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -2944,13 +2944,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 223757.30020065606,
+      "deliver": 226730.90020425618,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 259171.0,
+      "deliver": 262864.0,
       "order": 0.0,
       "return": 0.0
      },
@@ -2971,15 +2971,15 @@ Up: [[dashboards-index]] · [[pf-zepto]]
   {
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.0,
-   "shipped_ltr": 9450.400012493134,
-   "shipped_units": 12097.0,
+   "shipped_ltr": 12424.000016093254,
+   "shipped_units": 15790.0,
    "shipped_value": 0.0
   },
   {
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.0,
-   "shipped_ltr": 2609.0,
-   "shipped_units": 2301.0,
+   "shipped_ltr": 3351.0,
+   "shipped_units": 2971.0,
    "shipped_value": 0.0
   },
   {
@@ -2992,65 +2992,65 @@ Up: [[dashboards-index]] · [[pf-zepto]]
  ],
  "summary_total": {
   "per_liter_shpd": 0.0,
-  "shipped_ltr": 12059.400012493134,
-  "shipped_units": 14398.0,
+  "shipped_ltr": 15775.000016093254,
+  "shipped_units": 18761.0,
   "shipped_value": 0.0
  },
  "top_items": [
   {
    "item": "GROUNDNUT 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 6128.0,
-   "shipped_units": 6128.0,
+   "shipped_ltr": 7967.0,
+   "shipped_units": 7967.0,
    "shipped_value": 0.0
   },
   {
    "item": "SUNFLOWER 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 1157.0,
-   "shipped_units": 1157.0,
+   "shipped_ltr": 1540.0,
+   "shipped_units": 1540.0,
    "shipped_value": 0.0
   },
   {
    "item": "MUSTARD 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 1067.0,
-   "shipped_units": 1067.0,
+   "shipped_ltr": 1334.0,
+   "shipped_units": 1334.0,
    "shipped_value": 0.0
   },
   {
    "item": "JIVO POMACE 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 850.0,
-   "shipped_units": 850.0,
+   "shipped_ltr": 1172.0,
+   "shipped_units": 1172.0,
    "shipped_value": 0.0
   },
   {
    "item": "GROUNDNUT 200ML",
    "item_head": "PREMIUM",
-   "shipped_ltr": 833.600012421608,
-   "shipped_units": 4168.0,
+   "shipped_ltr": 1072.4000159800053,
+   "shipped_units": 5362.0,
    "shipped_value": 0.0
   },
   {
    "item": "EXTRA LIGHT 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 588.0,
-   "shipped_units": 588.0,
+   "shipped_ltr": 790.0,
+   "shipped_units": 790.0,
    "shipped_value": 0.0
   },
   {
    "item": "JIVO POMACE 5L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 530.0,
-   "shipped_units": 106.0,
+   "shipped_ltr": 680.0,
+   "shipped_units": 136.0,
    "shipped_value": 0.0
   },
   {
    "item": "MUSTARD 5L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 385.0,
-   "shipped_units": 77.0,
+   "shipped_ltr": 475.0,
+   "shipped_units": 95.0,
    "shipped_value": 0.0
   }
  ],

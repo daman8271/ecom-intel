@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "ramamurthy nagar",
-  "BASE_MRP": 2800.0,
+  "AREA_NAME": "hathibarkala",
+  "BASE_MRP": 255.0,
   "BRAND": "jivo",
-  "CITY": "bangalore",
+  "CITY": "Dehradun",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
-  "COMBO_UNITS_SOLD": 0,
-  "GMV": 2800.0,
-  "ITEM_CODE": "401502",
+  "COMBO_UNITS_SOLD": null,
+  "GMV": 765.0,
+  "ITEM_CODE": "60711",
   "L1_CATEGORY": "edible oils and ghee",
   "L2_CATEGORY": "edible oils",
-  "L3_CATEGORY": "groundnut oil",
-  "ORDERED_DATE": "2026-06-25",
-  "PRODUCT_NAME": "Jivo Cold Pressed oil Groundnut Oil",
-  "STORE_ID": "1404679",
-  "UNITS_SOLD": 1,
-  "VARIANT": "5 ltr",
-  "id": 2063251
+  "L3_CATEGORY": "mustard oil",
+  "ORDERED_DATE": "2026-03-01",
+  "PRODUCT_NAME": "jivo cold press kachi ghani mustard oil",
+  "STORE_ID": "1403178",
+  "UNITS_SOLD": 3,
+  "VARIANT": "1 ltr",
+  "id": 836811
  }
 }
 ```

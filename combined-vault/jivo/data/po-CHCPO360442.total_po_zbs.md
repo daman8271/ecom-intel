@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-771.43,0.0,SWIGGY,,,77966,810.0015,HYDERABAD,76.0,2026-06-27,2026-07-29,CHCPO360442,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77966,2026-07-05
-154.29,0.0,SWIGGY,,,77967,162.0045,HYDERABAD,440.0,2026-06-27,2026-07-29,CHCPO360442,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77967,2026-07-05
+771.43,0.0,SWIGGY,,,77966,810.0015,HYDERABAD,76.0,2026-06-27,2026-07-29,CHCPO360442,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77966,2026-07-06
+154.29,0.0,SWIGGY,,,77967,162.0045,HYDERABAD,440.0,2026-06-27,2026-07-29,CHCPO360442,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77967,2026-07-06
 ```
 
 ---

@@ -24,7 +24,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "cities": [
   {
    "city": "Bengaluru",
-   "value": 27324.0
+   "value": 27325.0
   },
   {
    "city": "Mumbai",
@@ -52,7 +52,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "city": "Gurugram",
-   "value": 5042.0
+   "value": 5048.0
   },
   {
    "city": "Noida 1",
@@ -2982,8 +2982,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
    }
   ]
  },
- "mapped_units": 157495.0,
- "mapped_value": 157495.0,
+ "mapped_units": 157506.0,
+ "mapped_value": 157506.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -2994,11 +2994,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "states": [
   {
    "by_platform": {
-    "SWIGGY": 29258.0
+    "SWIGGY": 29260.0
    },
    "state": "KARNATAKA",
-   "units": 29258.0,
-   "value": 29258.0
+   "units": 29260.0,
+   "value": 29260.0
   },
   {
    "by_platform": {
@@ -3050,11 +3050,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "by_platform": {
-    "SWIGGY": 7302.0
+    "SWIGGY": 7309.0
    },
    "state": "HARYANA",
-   "units": 7302.0,
-   "value": 7302.0
+   "units": 7309.0,
+   "value": 7309.0
   },
   {
    "by_platform": {
@@ -3082,11 +3082,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   },
   {
    "by_platform": {
-    "SWIGGY": 3337.0
+    "SWIGGY": 3339.0
    },
    "state": "KERALA",
-   "units": 3337.0,
-   "value": 3337.0
+   "units": 3339.0,
+   "value": 3339.0
   },
   {
    "by_platform": {
@@ -3170,8 +3170,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   }
  ],
  "sub_categories": [],
- "total_units": 157495.0,
- "total_value": 157495.0,
+ "total_units": 157506.0,
+ "total_value": 157506.0,
  "year": 2026
 }
 ```

@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "cities": [
   {
    "city": "Delhi",
-   "value": 1228.0
+   "value": 1619.0
   },
   {
    "city": "Chandigarh",
-   "value": 736.0
-  },
-  {
-   "city": "Amritsar",
-   "value": 673.0
+   "value": 1018.0
   },
   {
    "city": "Mumbai",
-   "value": 673.0
+   "value": 862.0
+  },
+  {
+   "city": "Amritsar",
+   "value": 800.0
   },
   {
    "city": "Ludhiana",
-   "value": 657.0
-  },
-  {
-   "city": "Jammu",
-   "value": 509.0
-  },
-  {
-   "city": "Jalandhar",
-   "value": 485.0
+   "value": 765.0
   },
   {
    "city": "Mohali",
-   "value": 480.0
+   "value": 686.0
+  },
+  {
+   "city": "Jammu",
+   "value": 656.0
   },
   {
    "city": "Gurugram",
-   "value": 447.0
+   "value": 614.0
+  },
+  {
+   "city": "Jalandhar",
+   "value": 612.0
   },
   {
    "city": "Ghaziabad",
-   "value": 424.0
+   "value": 554.0
   }
  ],
  "errors": [],
@@ -2982,127 +2982,143 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    }
   ]
  },
- "mapped_units": 10615.0,
- "mapped_value": 10615.0,
+ "mapped_units": 13714.0,
+ "mapped_value": 13714.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
  "mode": "single",
  "month": 7,
- "pct_mapped": 99.7,
+ "pct_mapped": 100.0,
  "platform": "blinkit",
  "states": [
   {
    "by_platform": {
-    "BLINKIT": 4448.0
+    "BLINKIT": 5491.0
    },
    "state": "PUNJAB",
-   "units": 4448.0,
-   "value": 4448.0
+   "units": 5491.0,
+   "value": 5491.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1228.0
+    "BLINKIT": 1619.0
    },
    "state": "DELHI",
-   "units": 1228.0,
-   "value": 1228.0
+   "units": 1619.0,
+   "value": 1619.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1119.0
+    "BLINKIT": 1539.0
    },
    "state": "HARYANA",
-   "units": 1119.0,
-   "value": 1119.0
+   "units": 1539.0,
+   "value": 1539.0
   },
   {
    "by_platform": {
-    "BLINKIT": 894.0
+    "BLINKIT": 1249.0
    },
    "state": "CHANDIGARH",
-   "units": 894.0,
-   "value": 894.0
+   "units": 1249.0,
+   "value": 1249.0
   },
   {
    "by_platform": {
-    "BLINKIT": 770.0
+    "BLINKIT": 1012.0
    },
    "state": "MAHARASHTRA",
-   "units": 770.0,
-   "value": 770.0
+   "units": 1012.0,
+   "value": 1012.0
   },
   {
    "by_platform": {
-    "BLINKIT": 536.0
+    "BLINKIT": 705.0
    },
    "state": "UTTAR PRADESH",
-   "units": 536.0,
-   "value": 536.0
+   "units": 705.0,
+   "value": 705.0
   },
   {
    "by_platform": {
-    "BLINKIT": 509.0
+    "BLINKIT": 656.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 509.0,
-   "value": 509.0
+   "units": 656.0,
+   "value": 656.0
   },
   {
    "by_platform": {
-    "BLINKIT": 426.0
-   },
-   "state": "HIMACHAL PRADESH",
-   "units": 426.0,
-   "value": 426.0
-  },
-  {
-   "by_platform": {
-    "BLINKIT": 417.0
+    "BLINKIT": 556.0
    },
    "state": "KARNATAKA",
-   "units": 417.0,
-   "value": 417.0
+   "units": 556.0,
+   "value": 556.0
   },
   {
    "by_platform": {
-    "BLINKIT": 153.0
+    "BLINKIT": 539.0
+   },
+   "state": "HIMACHAL PRADESH",
+   "units": 539.0,
+   "value": 539.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 191.0
    },
    "state": "UTTARAKHAND",
-   "units": 153.0,
-   "value": 153.0
+   "units": 191.0,
+   "value": 191.0
   },
   {
    "by_platform": {
-    "BLINKIT": 42.0
-   },
-   "state": "WEST BENGAL",
-   "units": 42.0,
-   "value": 42.0
-  },
-  {
-   "by_platform": {
-    "BLINKIT": 38.0
+    "BLINKIT": 53.0
    },
    "state": "RAJASTHAN",
-   "units": 38.0,
-   "value": 38.0
+   "units": 53.0,
+   "value": 53.0
   },
   {
    "by_platform": {
-    "BLINKIT": 30.0
+    "BLINKIT": 52.0
+   },
+   "state": "WEST BENGAL",
+   "units": 52.0,
+   "value": 52.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 41.0
    },
    "state": "GOA",
-   "units": 30.0,
-   "value": 30.0
+   "units": 41.0,
+   "value": 41.0
   },
   {
    "by_platform": {
-    "BLINKIT": 3.0
+    "BLINKIT": 4.0
+   },
+   "state": "ANDHRA PRADESH",
+   "units": 4.0,
+   "value": 4.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 4.0
    },
    "state": "MADHYA PRADESH",
-   "units": 3.0,
-   "value": 3.0
+   "units": 4.0,
+   "value": 4.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 2.0
+   },
+   "state": "GUJARAT",
+   "units": 2.0,
+   "value": 2.0
   },
   {
    "by_platform": {
@@ -3111,19 +3127,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    "state": "CHHATTISGARH",
    "units": 1.0,
    "value": 1.0
-  },
-  {
-   "by_platform": {
-    "BLINKIT": 1.0
-   },
-   "state": "GUJARAT",
-   "units": 1.0,
-   "value": 1.0
   }
  ],
  "sub_categories": [],
- "total_units": 10650.0,
- "total_value": 10650.0,
+ "total_units": 13717.0,
+ "total_value": 13717.0,
  "year": 2026
 }
 ```

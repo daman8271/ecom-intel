@@ -11,7 +11,7 @@ tags:
 Lossless capture of the ji.jivo.in factory app for **JIVO_MART** — one note per record, linked by foreign keys. Bridges to product nodes via SAP item code (FG####).
 
 
-- **Notes:** 64695  ·  **Entity types:** 47  ·  **SAP-bridged item codes:** 421
+- **Notes:** 64680  ·  **Entity types:** 47  ·  **SAP-bridged item codes:** 421
 
 
 ## Entity hubs by domain
@@ -58,7 +58,7 @@ Lossless capture of the ji.jivo.in factory app for **JIVO_MART** — one note pe
 - [[_moc-gate-core__empty-vehicle-outs|Empty Vehicle Outs]] (3)
 - [[_moc-gate-core__empty-vehicle-outs__eligible-entries|Eligible Entries]] (65)
 - [[_moc-gate-core__sales-dispatch|Sales Dispatch]] (59)
-- [[_moc-gate-core__sales-dispatch__documents-001|Documents]] (1199)
+- [[_moc-gate-core__sales-dispatch__documents-001|Documents]] (1182)
 - [[_moc-gate-core__sales-dispatch__pending-bookings|Pending Bookings]] (1)
 
 ### grpo
@@ -66,7 +66,7 @@ Lossless capture of the ji.jivo.in factory app for **JIVO_MART** — one note pe
 - [[_moc-grpo__service__pending|Pending]] (8)
 
 ### notifications
-- [[_moc-notifications|Notifications]] (177)
+- [[_moc-notifications|Notifications]] (179)
 - [[_moc-notifications__preferences|Preferences]] (39)
 
 ### person-gatein

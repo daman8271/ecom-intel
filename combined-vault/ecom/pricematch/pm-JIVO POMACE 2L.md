@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-05
-observations: 216
+last_seen: 2026-07-06
+observations: 224
 latest_status: ABOVE
 below_days: 24
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-05) — ref ₹849 vs live ₹870
-- **Days below reference:** 24 of 27
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-06) — ref ₹849 vs live ₹870
+- **Days below reference:** 24 of 28
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]]
 
-## Ref-vs-live history (216 observations)
+## Ref-vs-live history (224 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -261,6 +261,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-05,flipkart,BELOW,SVD,849,650,650,650,-199,-23.44,1,true
 2026-07-05,flipkart-minutes,NOT_LISTED,SVD,849,,,,,,0,false
 2026-07-05,zepto,ABOVE,SVD,849,870,856,1449,21,2.47,0,true
+2026-07-06,amazon,MATCH,SVD,849,849,849,849,0,0,0,true
+2026-07-06,amazon-fresh,NOT_LISTED,SVD,849,,,,,,0,false
+2026-07-06,amazon-now,NOT_LISTED,SVD,849,,,,,,0,false
+2026-07-06,bigbasket,ABOVE,SVD,849,1066,963.37,1106,217,25.56,0,true
+2026-07-06,blinkit,NOT_LISTED,SVD,849,,,,,,0,false
+2026-07-06,flipkart,OOS,SVD,849,,,,,,0,false
+2026-07-06,flipkart-minutes,NOT_LISTED,SVD,849,,,,,,0,false
+2026-07-06,zepto,ABOVE,SVD,849,870,856,1449,21,2.47,0,true
 ```
 
 ---

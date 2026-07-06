@@ -2982,8 +2982,8 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
    }
   ]
  },
- "mapped_units": 66043.0,
- "mapped_value": 66043.0,
+ "mapped_units": 66059.0,
+ "mapped_value": 66059.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -2994,11 +2994,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
  "states": [
   {
    "by_platform": {
-    "BLINKIT": 23049.0
+    "BLINKIT": 23053.0
    },
    "state": "PUNJAB",
-   "units": 23049.0,
-   "value": 23049.0
+   "units": 23053.0,
+   "value": 23053.0
   },
   {
    "by_platform": {
@@ -3010,11 +3010,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   },
   {
    "by_platform": {
-    "BLINKIT": 8215.0
+    "BLINKIT": 8226.0
    },
    "state": "HARYANA",
-   "units": 8215.0,
-   "value": 8215.0
+   "units": 8226.0,
+   "value": 8226.0
   },
   {
    "by_platform": {
@@ -3066,11 +3066,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   },
   {
    "by_platform": {
-    "BLINKIT": 1100.0
+    "BLINKIT": 1101.0
    },
    "state": "UTTARAKHAND",
-   "units": 1100.0,
-   "value": 1100.0
+   "units": 1101.0,
+   "value": 1101.0
   },
   {
    "by_platform": {

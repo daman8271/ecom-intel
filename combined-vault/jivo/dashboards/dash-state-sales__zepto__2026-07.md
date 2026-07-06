@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
  "cities": [
   {
    "city": "Bengaluru",
-   "value": 2629.0
+   "value": 3527.0
   },
   {
    "city": "Mumbai",
-   "value": 2402.0
+   "value": 3100.0
   },
   {
    "city": "Hyderabad",
-   "value": 2110.0
+   "value": 2718.0
   },
   {
    "city": "Delhi",
-   "value": 1999.0
+   "value": 2618.0
   },
   {
    "city": "Chennai",
-   "value": 1379.0
+   "value": 1748.0
   },
   {
    "city": "Gurugram",
-   "value": 700.0
+   "value": 939.0
   },
   {
    "city": "Noida",
-   "value": 668.0
+   "value": 890.0
   },
   {
    "city": "Ghaziabad",
-   "value": 488.0
+   "value": 604.0
   },
   {
    "city": "Pune",
-   "value": 334.0
+   "value": 439.0
   },
   {
    "city": "Faridabad",
-   "value": 187.0
+   "value": 228.0
   }
  ],
  "errors": [],
@@ -2982,8 +2982,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
    }
   ]
  },
- "mapped_units": 14398.0,
- "mapped_value": 14398.0,
+ "mapped_units": 18761.0,
+ "mapped_value": 18761.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -2994,144 +2994,144 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
  "states": [
   {
    "by_platform": {
-    "ZEPTO": 2870.0
-   },
-   "state": "MAHARASHTRA",
-   "units": 2870.0,
-   "value": 2870.0
-  },
-  {
-   "by_platform": {
-    "ZEPTO": 2815.0
+    "ZEPTO": 3752.0
    },
    "state": "KARNATAKA",
-   "units": 2815.0,
-   "value": 2815.0
+   "units": 3752.0,
+   "value": 3752.0
   },
   {
    "by_platform": {
-    "ZEPTO": 2157.0
+    "ZEPTO": 3715.0
+   },
+   "state": "MAHARASHTRA",
+   "units": 3715.0,
+   "value": 3715.0
+  },
+  {
+   "by_platform": {
+    "ZEPTO": 2785.0
    },
    "state": "TELANGANA",
-   "units": 2157.0,
-   "value": 2157.0
+   "units": 2785.0,
+   "value": 2785.0
   },
   {
    "by_platform": {
-    "ZEPTO": 1999.0
+    "ZEPTO": 2618.0
    },
    "state": "DELHI",
-   "units": 1999.0,
-   "value": 1999.0
+   "units": 2618.0,
+   "value": 2618.0
   },
   {
    "by_platform": {
-    "ZEPTO": 1460.0
+    "ZEPTO": 1848.0
    },
    "state": "TAMIL NADU",
-   "units": 1460.0,
-   "value": 1460.0
+   "units": 1848.0,
+   "value": 1848.0
   },
   {
    "by_platform": {
-    "ZEPTO": 1228.0
+    "ZEPTO": 1588.0
    },
    "state": "UTTAR PRADESH",
-   "units": 1228.0,
-   "value": 1228.0
+   "units": 1588.0,
+   "value": 1588.0
   },
   {
    "by_platform": {
-    "ZEPTO": 976.0
+    "ZEPTO": 1284.0
    },
    "state": "HARYANA",
-   "units": 976.0,
-   "value": 976.0
+   "units": 1284.0,
+   "value": 1284.0
   },
   {
    "by_platform": {
-    "ZEPTO": 224.0
+    "ZEPTO": 294.0
    },
    "state": "PUNJAB",
-   "units": 224.0,
-   "value": 224.0
+   "units": 294.0,
+   "value": 294.0
   },
   {
    "by_platform": {
-    "ZEPTO": 173.0
+    "ZEPTO": 237.0
    },
    "state": "GUJARAT",
-   "units": 173.0,
-   "value": 173.0
+   "units": 237.0,
+   "value": 237.0
   },
   {
    "by_platform": {
-    "ZEPTO": 112.0
+    "ZEPTO": 138.0
    },
    "state": "RAJASTHAN",
-   "units": 112.0,
-   "value": 112.0
+   "units": 138.0,
+   "value": 138.0
   },
   {
    "by_platform": {
-    "ZEPTO": 84.0
-   },
-   "state": "UTTARAKHAND",
-   "units": 84.0,
-   "value": 84.0
-  },
-  {
-   "by_platform": {
-    "ZEPTO": 80.0
+    "ZEPTO": 105.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 80.0,
-   "value": 80.0
+   "units": 105.0,
+   "value": 105.0
   },
   {
    "by_platform": {
-    "ZEPTO": 75.0
+    "ZEPTO": 105.0
    },
    "state": "WEST BENGAL",
-   "units": 75.0,
-   "value": 75.0
+   "units": 105.0,
+   "value": 105.0
   },
   {
    "by_platform": {
-    "ZEPTO": 56.0
+    "ZEPTO": 102.0
+   },
+   "state": "UTTARAKHAND",
+   "units": 102.0,
+   "value": 102.0
+  },
+  {
+   "by_platform": {
+    "ZEPTO": 67.0
    },
    "state": "MADHYA PRADESH",
-   "units": 56.0,
-   "value": 56.0
+   "units": 67.0,
+   "value": 67.0
   },
   {
    "by_platform": {
-    "ZEPTO": 40.0
+    "ZEPTO": 58.0
    },
    "state": "CHANDIGARH",
-   "units": 40.0,
-   "value": 40.0
+   "units": 58.0,
+   "value": 58.0
   },
   {
    "by_platform": {
-    "ZEPTO": 39.0
+    "ZEPTO": 50.0
    },
    "state": "KERALA",
-   "units": 39.0,
-   "value": 39.0
+   "units": 50.0,
+   "value": 50.0
   },
   {
    "by_platform": {
-    "ZEPTO": 10.0
+    "ZEPTO": 15.0
    },
    "state": "PUDUCHERRY",
-   "units": 10.0,
-   "value": 10.0
+   "units": 15.0,
+   "value": 15.0
   }
  ],
  "sub_categories": [],
- "total_units": 14398.0,
- "total_value": 14398.0,
+ "total_units": 18761.0,
+ "total_value": 18761.0,
  "year": 2026
 }
 ```

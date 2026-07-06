@@ -52,12 +52,12 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  ],
  "days_in_month": 31,
  "defaulted_to_latest": true,
- "elapsed_days": 1,
+ "elapsed_days": 3,
  "grand_total": {
-  "current_done_ltr": 1300.0,
-  "estimated_ltr": 40300.0,
+  "current_done_ltr": 3582.0,
+  "estimated_ltr": 37014.0,
   "previous_1_ltr": 20597.0,
-  "previous_2_ltr": 21660.0,
+  "previous_2_ltr": 21192.0,
   "previous_3_ltr": 15186.0,
   "previous_4_ltr": 36442.0,
   "target": 54000.0
@@ -66,12 +66,12 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "rows": [
     {
-     "current_done_ltr": 40.0,
-     "estimated_ltr": 1240.0,
+     "current_done_ltr": 131.0,
+     "estimated_ltr": 1353.6666666666665,
      "item": "CANOLA 1L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 939.0,
-     "previous_2_ltr": 1178.0,
+     "previous_2_ltr": 1139.0,
      "previous_3_ltr": 599.0,
      "previous_4_ltr": 629.0,
      "sub_category": "CANOLA",
@@ -80,10 +80,10 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    ],
    "sub_category": "CANOLA",
    "total": {
-    "current_done_ltr": 40.0,
-    "estimated_ltr": 1240.0,
+    "current_done_ltr": 131.0,
+    "estimated_ltr": 1353.6666666666665,
     "previous_1_ltr": 939.0,
-    "previous_2_ltr": 1178.0,
+    "previous_2_ltr": 1139.0,
     "previous_3_ltr": 599.0,
     "previous_4_ltr": 629.0,
     "target": 1000.0
@@ -93,11 +93,11 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "rows": [
     {
      "current_done_ltr": 4.0,
-     "estimated_ltr": 124.0,
+     "estimated_ltr": 41.33333333333333,
      "item": "EXTRA LIGHT 2L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 34.0,
-     "previous_2_ltr": 38.0,
+     "previous_2_ltr": 36.0,
      "previous_3_ltr": 10.0,
      "previous_4_ltr": 40.0,
      "sub_category": "EXTRA LIGHT",
@@ -107,9 +107,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "sub_category": "EXTRA LIGHT",
    "total": {
     "current_done_ltr": 4.0,
-    "estimated_ltr": 124.0,
+    "estimated_ltr": 41.33333333333333,
     "previous_1_ltr": 34.0,
-    "previous_2_ltr": 38.0,
+    "previous_2_ltr": 36.0,
     "previous_3_ltr": 10.0,
     "previous_4_ltr": 40.0,
     "target": 200.0
@@ -123,7 +123,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "item": "GOLD 5L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 5.0,
-     "previous_2_ltr": 45.0,
+     "previous_2_ltr": 40.0,
      "previous_3_ltr": 0.0,
      "previous_4_ltr": 0.0,
      "sub_category": "GOLD",
@@ -135,7 +135,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     "current_done_ltr": 0.0,
     "estimated_ltr": 0.0,
     "previous_1_ltr": 5.0,
-    "previous_2_ltr": 45.0,
+    "previous_2_ltr": 40.0,
     "previous_3_ltr": 0.0,
     "previous_4_ltr": 0.0,
     "target": 0.0
@@ -144,12 +144,12 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "rows": [
     {
-     "current_done_ltr": 22.0,
-     "estimated_ltr": 682.0,
+     "current_done_ltr": 57.0,
+     "estimated_ltr": 589.0,
      "item": "JIVO POMACE 1L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 303.0,
-     "previous_2_ltr": 662.0,
+     "previous_2_ltr": 640.0,
      "previous_3_ltr": 264.0,
      "previous_4_ltr": 192.0,
      "sub_category": "JIVO POMACE",
@@ -157,11 +157,11 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     },
     {
      "current_done_ltr": 5.0,
-     "estimated_ltr": 155.0,
+     "estimated_ltr": 51.66666666666667,
      "item": "JIVO POMACE 5L",
      "item_head": "PREMIUM",
      "previous_1_ltr": 40.0,
-     "previous_2_ltr": 90.0,
+     "previous_2_ltr": 85.0,
      "previous_3_ltr": 15.0,
      "previous_4_ltr": 190.0,
      "sub_category": "JIVO POMACE",
@@ -170,10 +170,10 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    ],
    "sub_category": "JIVO POMACE",
    "total": {
-    "current_done_ltr": 27.0,
-    "estimated_ltr": 837.0,
+    "current_done_ltr": 62.0,
+    "estimated_ltr": 640.6666666666666,
     "previous_1_ltr": 343.0,
-    "previous_2_ltr": 752.0,
+    "previous_2_ltr": 725.0,
     "previous_3_ltr": 279.0,
     "previous_4_ltr": 382.0,
     "target": 800.0
@@ -182,36 +182,36 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "rows": [
     {
-     "current_done_ltr": 1170.0,
-     "estimated_ltr": 36270.0,
+     "current_done_ltr": 3183.0,
+     "estimated_ltr": 32891.0,
      "item": "MUSTARD 1L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 17712.0,
-     "previous_2_ltr": 16225.0,
+     "previous_2_ltr": 15916.0,
      "previous_3_ltr": 11704.0,
      "previous_4_ltr": 31303.0,
      "sub_category": "MUSTARD KACHI GHANI",
      "target": 45000.0
     },
     {
-     "current_done_ltr": 0.0,
-     "estimated_ltr": 0.0,
+     "current_done_ltr": 8.0,
+     "estimated_ltr": 82.66666666666666,
      "item": "MUSTARD 4L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 248.0,
-     "previous_2_ltr": 952.0,
+     "previous_2_ltr": 900.0,
      "previous_3_ltr": 760.0,
      "previous_4_ltr": 2516.0,
      "sub_category": "MUSTARD KACHI GHANI",
      "target": 4500.0
     },
     {
-     "current_done_ltr": 55.0,
-     "estimated_ltr": 1705.0,
+     "current_done_ltr": 150.0,
+     "estimated_ltr": 1550.0,
      "item": "MUSTARD 5L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 660.0,
-     "previous_2_ltr": 915.0,
+     "previous_2_ltr": 900.0,
      "previous_3_ltr": 525.0,
      "previous_4_ltr": 730.0,
      "sub_category": "MUSTARD KACHI GHANI",
@@ -220,10 +220,10 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    ],
    "sub_category": "MUSTARD KACHI GHANI",
    "total": {
-    "current_done_ltr": 1225.0,
-    "estimated_ltr": 37975.0,
+    "current_done_ltr": 3341.0,
+    "estimated_ltr": 34523.666666666664,
     "previous_1_ltr": 18620.0,
-    "previous_2_ltr": 18092.0,
+    "previous_2_ltr": 17716.0,
     "previous_3_ltr": 12989.0,
     "previous_4_ltr": 34549.0,
     "target": 50500.0
@@ -237,7 +237,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "item": "SOYABEAN 1L POUCH",
      "item_head": "COMMODITY",
      "previous_1_ltr": 216.0,
-     "previous_2_ltr": 1391.0,
+     "previous_2_ltr": 1376.0,
      "previous_3_ltr": 1209.0,
      "previous_4_ltr": 810.0,
      "sub_category": "SOYABEAN",
@@ -249,7 +249,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     "current_done_ltr": 0.0,
     "estimated_ltr": 0.0,
     "previous_1_ltr": 216.0,
-    "previous_2_ltr": 1391.0,
+    "previous_2_ltr": 1376.0,
     "previous_3_ltr": 1209.0,
     "previous_4_ltr": 810.0,
     "target": 1000.0
@@ -258,12 +258,12 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "rows": [
     {
-     "current_done_ltr": 4.0,
-     "estimated_ltr": 124.0,
+     "current_done_ltr": 44.0,
+     "estimated_ltr": 454.66666666666663,
      "item": "SUNFLOWER 4L",
      "item_head": "COMMODITY",
      "previous_1_ltr": 440.0,
-     "previous_2_ltr": 164.0,
+     "previous_2_ltr": 160.0,
      "previous_3_ltr": 100.0,
      "previous_4_ltr": 32.0,
      "sub_category": "SUNFLOWER",
@@ -272,17 +272,17 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    ],
    "sub_category": "SUNFLOWER",
    "total": {
-    "current_done_ltr": 4.0,
-    "estimated_ltr": 124.0,
+    "current_done_ltr": 44.0,
+    "estimated_ltr": 454.66666666666663,
     "previous_1_ltr": 440.0,
-    "previous_2_ltr": 164.0,
+    "previous_2_ltr": 160.0,
     "previous_3_ltr": 100.0,
     "previous_4_ltr": 32.0,
     "target": 500.0
    }
   }
  ],
- "max_date": "2026-07-01",
+ "max_date": "2026-07-03",
  "month": 7,
  "source": "flipkart_grocery_master",
  "target_summary": [

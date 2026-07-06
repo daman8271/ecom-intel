@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Documents (1199)
+title: Documents (1182)
 tags:
   - moc
   - source/factory
 ---
 
-# Documents — 1199 records (page 1/2)
+# Documents — 1182 records (page 1/2)
 
 From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 

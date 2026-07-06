@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-yellow-mustard-oil-5l-5l
-display_name: Jivo First Pressed Yellow Mustard Oil 5l 5l
+display_name: Jivo First Pressed Yellow Mustard Oil 5L (5 l)
 platforms:
   - amazon-fresh
 first_seen: 2026-06-30
-last_seen: 2026-06-30
-observations: 8
-min_price: 1329
+last_seen: 2026-07-05
+observations: 20
+min_price: 999
 max_price: 1329
-latest_price: 1329
+latest_price: 999
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo First Pressed Yellow Mustard Oil 5l 5l**
+**Jivo First Pressed Yellow Mustard Oil 5L (5 l)**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹1329 (26.0% off)
+- [[amazon-fresh]] — latest ₹999 (44.3% off)
 
 ## Available in cities
-[[Delhi]]
+[[Delhi]] · [[Kolkata]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (8 observations)
+## Price history (20 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -42,6 +42,18 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110054,1329,1795,26,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110055,1329,1795,26,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110091,1329,1795,26,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700001,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700002,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700005,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700006,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700015,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700019,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700058,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700067,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700069,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700100,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700107,999,1795,44.3,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700108,999,1795,44.3,1
 ```
 
 ---

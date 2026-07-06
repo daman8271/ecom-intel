@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-195.24,0.0,SWIGGY,,2026-06-30,77814,205.002,NOIDA,40.0,2026-06-26,2026-07-05,ETPPO71695,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77814,2026-07-05
-928.57,36.0,SWIGGY,,2026-06-30,77815,974.9985,NOIDA,36.0,2026-06-26,2026-07-05,ETPPO71695,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77815,2026-07-05
-200.0,0.0,SWIGGY,,2026-06-30,77816,210.0,NOIDA,16.0,2026-06-26,2026-07-05,ETPPO71695,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77816,2026-07-05
+195.24,0.0,SWIGGY,,2026-06-30,77814,205.002,NOIDA,40.0,2026-06-26,2026-07-05,ETPPO71695,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77814,2026-07-06
+928.57,36.0,SWIGGY,,2026-06-30,77815,974.9985,NOIDA,36.0,2026-06-26,2026-07-05,ETPPO71695,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77815,2026-07-06
+200.0,0.0,SWIGGY,,2026-06-30,77816,210.0,NOIDA,16.0,2026-06-26,2026-07-05,ETPPO71695,,968589,Jivo SO OLive Oil 1L 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-30,total_po_zbs:77816,2026-07-06
 ```
 
 ---

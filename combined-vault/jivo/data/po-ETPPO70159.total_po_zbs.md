@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,4.0,SWIGGY,,2026-06-30,77263,1289.9985,NOIDA,6.0,2026-06-22,2026-07-01,ETPPO70159,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77263,2026-07-05
-344.76,0.0,SWIGGY,,2026-06-30,77264,361.998,NOIDA,20.0,2026-06-22,2026-07-01,ETPPO70159,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77264,2026-07-05
-149.52,180.0,SWIGGY,,2026-06-30,77265,156.996,NOIDA,460.0,2026-06-22,2026-07-01,ETPPO70159,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77265,2026-07-05
-180.95,0.0,SWIGGY,,2026-06-30,77266,189.9975,NOIDA,16.0,2026-06-22,2026-07-01,ETPPO70159,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77266,2026-07-05
+1228.57,4.0,SWIGGY,,2026-06-30,77263,1289.9985,NOIDA,6.0,2026-06-22,2026-07-01,ETPPO70159,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77263,2026-07-06
+344.76,0.0,SWIGGY,,2026-06-30,77264,361.998,NOIDA,20.0,2026-06-22,2026-07-01,ETPPO70159,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77264,2026-07-06
+149.52,180.0,SWIGGY,,2026-06-30,77265,156.996,NOIDA,460.0,2026-06-22,2026-07-01,ETPPO70159,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77265,2026-07-06
+180.95,0.0,SWIGGY,,2026-06-30,77266,189.9975,NOIDA,16.0,2026-06-22,2026-07-01,ETPPO70159,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-06-27,total_po_zbs:77266,2026-07-06
 ```
 
 ---

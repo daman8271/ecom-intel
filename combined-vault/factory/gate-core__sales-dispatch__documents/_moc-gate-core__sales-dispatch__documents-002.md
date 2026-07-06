@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Documents (1199)
+title: Documents (1182)
 tags:
   - moc
   - source/factory
 ---
 
-# Documents — 1199 records (page 2/2)
+# Documents — 1182 records (page 2/2)
 
 From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 
@@ -92,23 +92,6 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1080]] — RJ11GC4078
 - [[gate-core__sales-dispatch__documents-INVOICE-1081]] — HR69F7125
 - [[gate-core__sales-dispatch__documents-INVOICE-1082]] — HR69F7125
-- [[gate-core__sales-dispatch__documents-INVOICE-1083]] — HR69F7125
-- [[gate-core__sales-dispatch__documents-INVOICE-1084]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1085]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1086]] — HR69F7125
-- [[gate-core__sales-dispatch__documents-INVOICE-1087]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1088]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1089]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1090]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1091]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1092]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1093]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1094]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1095]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1096]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1097]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1098]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1099]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-STOCK_TRANSFER]] — Documents STOCK_TRANSFER
 - [[gate-core__sales-dispatch__documents-STOCK_TRANSFER-2]] — Documents STOCK_TRANSFER
 - [[gate-core__sales-dispatch__documents-STOCK_TRANSFER-3]] — Documents STOCK_TRANSFER

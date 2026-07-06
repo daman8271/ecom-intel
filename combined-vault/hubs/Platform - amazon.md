@@ -70,7 +70,7 @@ Up: [[Home]]
 - [[EXTRA LIGHT 5L]] — ref ₹2969 / live ₹2445 (🟢 BELOW)
 - [[EXTRA VIRGIN 1+1L]] — ref ₹1589 / live ₹1478 (🟢 BELOW)
 - [[EXTRA VIRGIN 1L]] — ref ₹789 / live ₹739 (🟢 BELOW)
-- [[EXTRA VIRGIN 200ML]] — ref ₹189 / live ₹169 (🟢 BELOW)
+- [[EXTRA VIRGIN 200ML]] — ref ₹189 / live ₹189 (🟦 MATCH)
 - [[EXTRA VIRGIN 250ML]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 2L]] — ref ₹1589 / live ₹1359 (🟢 BELOW)
 - [[EXTRA VIRGIN 3L]] — ref ₹2369 / live ₹— (⚪ OOS)
@@ -99,7 +99,7 @@ Up: [[Home]]
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
 - [[MUSTARD 1+1L]] — ref ₹409 / live ₹— (⚪ OOS)
-- [[MUSTARD 1L]] — ref ₹209 / live ₹163 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹679 (🟢 BELOW)
@@ -135,8 +135,8 @@ Up: [[Home]]
 - [[SANO SUNFLOWER 1L]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[SANO SUNFLOWER 5L]] — ref ₹1029 / live ₹889 (🟢 BELOW)
 - [[SESAME 1L + 1L]] — ref ₹649 / live ₹— (⚪ OOS)
-- [[SESAME OIL 1L]] — ref ₹329 / live ₹299 (🟢 BELOW)
-- [[SO OLIVE 1L]] — ref ₹279 / live ₹209 (🟢 BELOW)
+- [[SESAME OIL 1L]] — ref ₹329 / live ₹449 (🔴 ABOVE)
+- [[SO OLIVE 1L]] — ref ₹279 / live ₹— (⚪ OOS)
 - [[SO OLIVE 5L]] — ref ₹1369 / live ₹999 (🟢 BELOW)
 - [[SODA 750ML]] — ref ₹15 / live ₹— (⚪ OOS)
 - [[SODA LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
@@ -168,4 +168,4 @@ Up: [[Home]]
 - [[WG MOJITO SF 200ML]]
 - [[WG ROSE 200ML]]
 - [[YELLOW MUSTARD 1L]] — ref ₹259 / live ₹239 (🟢 BELOW)
-- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹— (⚪ OOS)
+- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹999 (🟢 BELOW)

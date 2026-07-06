@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,0.0,SWIGGY,,,78723,390.0015,NOIDA,32.0,2026-07-01,2026-07-10,ETPPO73888,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-04,total_po_zbs:78723,2026-07-05
-771.43,0.0,SWIGGY,,,78724,810.0015,NOIDA,28.0,2026-07-01,2026-07-10,ETPPO73888,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-04,total_po_zbs:78724,2026-07-05
+371.43,0.0,SWIGGY,,,78723,390.0015,NOIDA,32.0,2026-07-01,2026-07-10,ETPPO73888,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-04,total_po_zbs:78723,2026-07-06
+771.43,0.0,SWIGGY,,,78724,810.0015,NOIDA,28.0,2026-07-01,2026-07-10,ETPPO73888,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-04,total_po_zbs:78724,2026-07-06
 ```
 
 ---

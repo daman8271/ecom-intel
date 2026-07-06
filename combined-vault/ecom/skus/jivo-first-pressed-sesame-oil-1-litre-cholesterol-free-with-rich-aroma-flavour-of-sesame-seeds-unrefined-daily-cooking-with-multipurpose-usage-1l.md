@@ -1,16 +1,16 @@
 ---
 type: sku-hub
 canonical_sku: jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l
-display_name: Jivo First Pressed Sesame Oil 1 Litre Cholesterol Free With Rich Aroma Flavour Of Sesame Seeds Unrefined Daily Cooking With Multipurpose Usage 1l
+display_name: "Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage"
 platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-06-30
-observations: 76
-min_price: 329
+last_seen: 2026-07-05
+observations: 104
+min_price: 318
 max_price: 349
-latest_price: 349
+latest_price: 318
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -21,19 +21,19 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo First Pressed Sesame Oil 1 Litre Cholesterol Free With Rich Aroma Flavour Of Sesame Seeds Unrefined Daily Cooking With Multipurpose Usage 1l**
+**Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹349 (41.8% off)
+- [[amazon-fresh]] — latest ₹318 (47.0% off)
 - [[amazon-now]] — latest ₹329 (45.2% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]]
+[[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (76 observations)
+## Price history (104 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -113,6 +113,34 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110054,349,600,41.8,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110055,349,600,41.8,1
 2026-06-30-0728,2026-06-30,amazon-fresh,Delhi,110091,349,600,41.8,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110001,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110002,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110003,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110004,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110006,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110013,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110014,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110016,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110017,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110021,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110024,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110025,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110031,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110037,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110044,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110048,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110053,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110054,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110055,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110061,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110062,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110065,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110067,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110070,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110076,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110091,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Gurgaon,122001,318,600,47,1
+2026-07-05-1604,2026-07-05,amazon-fresh,Gurgaon,122010,318,600,47,1
 ```
 
 ---
