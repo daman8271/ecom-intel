@@ -17,6 +17,12 @@ Current facts:
   `secrets/bb_cookies.pincode.json`.
 - Worker output is merged by `merge_team_pincode.py` into `result_pincode.json`.
 - `build_excel_pincode.py` creates `Jivo-BigBasket-Pincode-Report-YYYY-MM-DD.xlsx`.
+- Both workbooks' **Master Data** sheets carry a **SKU Code** column (2026-07-06) —
+  BigBasket's own product id (`sku_id`, the BB equivalent of an ASIN), captured by
+  the scrapers on every row. The owner's 32-code SKU master is checked in as
+  `bb_sku_master.xlsx` / `bb_sku_master.json` (code → SAP code + item name) for
+  cross-referencing; the 2026-07-06 run matched it 27/27 (pincode) and 21/21
+  (national) with zero blanks.
 - The pincode workbook is copied to `output/private-no-group/`, removed from normal
   `output/`, and direct-sent only from `BB_TEAM_DIRECT_JID` or the gitignored
   `secrets/bigbasket-direct-jid` file.

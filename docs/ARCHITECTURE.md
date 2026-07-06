@@ -178,7 +178,9 @@ Amazon storefronts never overlap.
    datapoints, cities with zero Jivo), cheapest-pincode-per-SKU table, and a
    **whitespace** callout listing cities with *zero* Jivo (distribution-gap intel).
 2. **Master Data** — every row, auto-filtered, frozen header; out-of-stock cells
-   shaded red, high discounts shaded green.
+   shaded red, high discounts shaded green. BigBasket's variant adds a **SKU Code**
+   column (the platform product id from `sku_id`, BB's ASIN-equivalent) after the
+   SKU name — cross-checkable against `platforms/bigbasket/bb_sku_master.json`.
 3. **Pricing Matrix** — avg sale price per SKU × city, green→red color scale.
 4. **Stock Status** — % in-stock per SKU × city (green/yellow/red).
 5. **Discount Analysis** — avg discount % per SKU × city (higher = greener).

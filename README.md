@@ -68,7 +68,9 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
   catalogue/price diagnostic, while the pincode workbook is produced by
   `platforms/bigbasket/team_run_pincode.sh` at 03:00 IST across VPS + Mac Pro + KVM1
   and is delivered only through `output/private-no-group/` plus the configured direct
-  recipient.
+  recipient. Both BigBasket workbooks' Master Data sheets include a **SKU Code**
+  column (BB product id per row, added 2026-07-06); the owner's SKU master lives at
+  `platforms/bigbasket/bb_sku_master.{xlsx,json}`.
 - **Zepto** went live 2026-05-29 — the public website is CloudFront-fronted and
   hard-403s the datacenter IP, but the app's BFF API gateway is reachable directly.
   No proxy needed. See `platforms/zepto/SKILL.md`.
