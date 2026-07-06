@@ -1,5 +1,32 @@
 # BigBasket — Integration Spec
 
+## Current production contract — 2026-07-06
+
+BigBasket is already integrated. The old sections below are retained as build
+history, but the production pincode path is now:
+
+```bash
+cd /opt/ecom-intel/platforms/bigbasket
+./team_run_pincode.sh run
+```
+
+Current facts:
+- Pincode scrape is universal/team-run: VPS + Mac Pro + KVM1, default weights
+  `5:4:1`, worker sessions detached in `tmux`.
+- Inputs are `pincodes_jivo.json` plus logged-in member cookies from
+  `secrets/bb_cookies.pincode.json`.
+- Worker output is merged by `merge_team_pincode.py` into `result_pincode.json`.
+- `build_excel_pincode.py` creates `Jivo-BigBasket-Pincode-Report-YYYY-MM-DD.xlsx`.
+- The pincode workbook is copied to `output/private-no-group/`, removed from normal
+  `output/`, and direct-sent only from `BB_TEAM_DIRECT_JID` or the gitignored
+  `secrets/bigbasket-direct-jid` file.
+- The national `scrape.js` / `build_excel.py` flow is separate and produces the
+  smaller `Jivo-Bigbasket-Live-Report-YYYY-MM-DD.xlsx` workbook.
+
+Do not re-add BigBasket pincode to `run_all.sh` or the Ecom group batch. The live
+cron source is `tools/cron/doctor.crontab.txt`; the installed root crontab runs
+the team runner at 03:00 IST.
+
 **Purpose:** Precise contracts and build checklist for adding BigBasket as the 8th
 live platform in the ecom-intel pipeline. Do NOT write the scraper until this spec
 is digested. Two agents can build independently against it without guessing.

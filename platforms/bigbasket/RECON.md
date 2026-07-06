@@ -2,6 +2,20 @@
 
 Status: POC WORKING (poc.js returns real Jivo rows from DC IP).
 
+## 2026-07-06 production update
+
+The original 2026-05-31 conclusion that BigBasket should be scraped as a single
+national session is **superseded for production**. The live pincode workflow now
+uses `team_run_pincode.sh` across VPS + Mac Pro + KVM1, with logged-in cookies and
+`scrape_pincode_browser.js`. It sets address/serviceability per requested pincode,
+then calls `listing-svc` from the stealth page context. The national `scrape.js`
+path remains only for the smaller national workbook/diagnostic.
+
+The current pincode report records requested pincode, resolved location/service
+area, serviceability failures, zero-row pins, Jivo rows, and member/session status.
+Private/direct delivery is intentional: the pincode workbook is written to
+`output/private-no-group/` and is not a group-batch attachment.
+
 ---
 
 ## 1. Anti-Bot Verdict
@@ -35,7 +49,10 @@ chromium.use(StealthPlugin());
 
 ## 2. Location / Serviceability Mechanism
 
-**BigBasket is SCHEDULED delivery (BB), NOT hyperlocal.** Prices are national — the same catalog and pricing applies across all cities. This is unlike Blinkit//Zepto which are hyperlocal with per-dark-store pricing.
+**Historical note:** the first recon treated BigBasket scheduled delivery (BB) as
+national for Jivo pricing. Production now treats BigBasket as a pincode-wise
+availability source because serviceability and stock can vary by location even when
+many prices match nationally.
 
 **How location works:**
 - On first page load, BB sets cookies that determine the delivery city/hub:
@@ -48,7 +65,9 @@ chromium.use(StealthPlugin());
   - `x-channel=web` — channel identifier (required in cookies)
   - `csrftoken=…` — Django CSRF token
 
-- The listing-svc search endpoint is **not location-aware** for pricing — it returns national catalog pricing. The `visibility.sa_id` on each product reflects the serving hub (19224 = Bangalore) but prices are identical across cities.
+- The pincode runner sets address/serviceability before calling listing-svc and
+  records the resolved service area. Treat listing rows as location-scoped member
+  results, not a pure national view.
 
 - The `_bb_nhid` cookie can be overwritten with a known hub ID for a different city before calling the listing API, but empirically it makes no difference to prices or product availability in the catalog.
 
@@ -61,7 +80,8 @@ chromium.use(StealthPlugin());
 
 - **Location via UI**: The header API `/ui-svc/v2/header/?send_door_info=true&send_address_set_by_user=true` returns `sa_list` with available store areas. The default (no saved address) always resolves to Bangalore hub.
 
-**Recommendation**: For price-intel purposes, a single session (any city) captures the full national Jivo catalog with correct pricing. No per-city scraping is needed.
+**Recommendation**: Use `team_run_pincode.sh` for production pincode coverage and
+`node scrape.js` only for the national BigBasket workbook/diagnostic.
 
 ---
 
@@ -154,7 +174,9 @@ No explicit `csrftoken` / `csurftoken` header needed for GET requests. The cooki
 
 ## 5. BB vs BB Now
 
-- **BB (BigBasket scheduled)** = what the main `www.bigbasket.com` storefront serves. Scheduled delivery (next-day / 2hr slots). National pricing. **This is what we scrape.**
+- **BB (BigBasket scheduled)** = what the main `www.bigbasket.com` storefront serves.
+  The national diagnostic still uses this path; the production pincode runner sets
+  location per requested pincode before calling the same listing service.
 - **BB Now** = express 10-minute delivery (`bbnow` entry context, `entry_context_id: 10` in `sa_list`). Shares the same site and `sa_id: 19224` but uses a different dark-store inventory. The cookie `xentrycontext=bbnow` is set by default for new sessions. The listing-svc returns BB Now pricing when `entry_context_id: 10` is active.
   - In practice, prices are identical between BB and BB Now for Jivo products (same catalog, same pricing engine).
   - The `availability.show_express: false` flag on products indicates BB Now express availability.
@@ -167,7 +189,8 @@ No explicit `csrftoken` / `csurftoken` header needed for GET requests. The cooki
 
 2. **One session per run** — load homepage once, then call listing-svc. No need for multiple browser contexts or page navigations. Total time ≈ 15s per run.
 
-3. **National pricing = single scrape** — BB pricing is not city-specific for Jivo (unlike Blinkit/). One stealth session captures the full national catalog. No per-pincode loop needed.
+3. **Production is pincode-wise** — run the team runner for coverage/availability.
+   A single stealth session is only acceptable for the national diagnostic workbook.
 
 4. **bucket_id=32 is required** — without it, the API returns 400. This is the web app's default search bucket. If it ever changes, intercept the XHR from the search page to get the new value.
 

@@ -27,7 +27,7 @@ const BLINKIT_AUTH = (() => {
   const deviceId = process.env.BLINKIT_DEVICE_ID || process.env.BLINKIT_AUTH_DEVICE_ID || fileAuth.deviceId || '';
   return { accessToken, deviceId };
 })();
-const BLINKIT_REQUIRE_AUTH = process.env.BLINKIT_REQUIRE_AUTH === '1';
+const BLINKIT_REQUIRE_AUTH = process.env.BLINKIT_REQUIRE_AUTH !== '0';
 // NOTE: keep this LOW (2). Blinkit rate-limits dark-store geocode/resolution per
 // IP; at concurrency >=3 from the datacenter IP many pincodes never re-resolve
 // off the Gurgaon default and get (correctly) dropped as unresolved — tanking

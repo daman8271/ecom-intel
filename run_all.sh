@@ -130,18 +130,13 @@ else
 fi
 
 # ---- PRICE-MATCH master workbook (SHEETS-B) ----------------------------------
-# BigBasket — scraped off-box on the Mac Pro/residential IP and ingested into output/.
-# Prefer the pincode workbook if a vetted manual/Mac pincode drop exists, otherwise use
-# the Mac browser live workbook. Do not run the old paid QuickCommerce API job here.
+# BigBasket national workbook — scraped off-box and ingested into output/.
+# The pincode workbook is private/direct-only and must not be spooled into the
+# Ecom group batch, even if a stale copy appears in output/.
 if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
-  BB_RPT="$DIR/output/Jivo-BigBasket-Pincode-Report-$(date +%F).xlsx"   # optional pincode report
-  BB_SUM="$DIR/platforms/bigbasket/result_pincode.json"
-  BB_KIND="pincode-wise"
-  if [ ! -f "$BB_RPT" ]; then
-    BB_RPT="$DIR/output/Jivo-Bigbasket-Live-Report-$(date +%F).xlsx"    # Mac browser report
-    BB_SUM="$DIR/platforms/bigbasket/result.json"
-    BB_KIND="Mac browser"
-  fi
+  BB_RPT="$DIR/output/Jivo-Bigbasket-Live-Report-$(date +%F).xlsx"
+  BB_SUM="$DIR/platforms/bigbasket/result.json"
+  BB_KIND="national"
   if [ -n "$BB_RPT" ] && [ -f "$BB_RPT" ]; then
     BBDIR="$DIR/output/.batch/${SWEEP_ID}"; mkdir -p "$BBDIR" 2>>logs/telegram.log
     BB_RPT="$BB_RPT" BB_SUM="$BB_SUM" BB_KIND="$BB_KIND" python3 - "$BBDIR/bigbasket.json" 2>>logs/telegram.log <<'BBSPOOL'

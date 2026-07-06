@@ -16,6 +16,9 @@ PDIR="$ROOT/platforms/bigbasket"
 PINS_FILE="${BB_TEAM_PINS_FILE:-$PDIR/pincodes_jivo.json}"
 SHARD_ROOT="${BB_TEAM_SHARD_ROOT:-$ROOT/shards/bigbasket}"
 PRIVATE_OUT="${BB_TEAM_PRIVATE_OUT:-$ROOT/output/private-no-group}"
+DIRECT_JID_FILE="${BB_TEAM_DIRECT_JID_FILE:-$ROOT/secrets/bigbasket-direct-jid}"
+GW_HEALTH="${BB_TEAM_WA_HEALTH:-http://127.0.0.1:3001/health}"
+GW_SEND_MEDIA="${BB_TEAM_WA_SEND_MEDIA:-http://127.0.0.1:3001/send-media}"
 
 MAC_HOST="${BB_TEAM_MAC_HOST:-macpro}"
 KVM_HOST="${BB_TEAM_KVM_HOST:-kvm1}"
@@ -45,6 +48,7 @@ Usage:
 
 Weights default to VPS=$VPS_WEIGHT Mac=$MAC_WEIGHT KVM1=$KVM_WEIGHT.
 Override with BB_TEAM_VPS_WEIGHT, BB_TEAM_MAC_WEIGHT, BB_TEAM_KVM_WEIGHT.
+Optional direct delivery reads BB_TEAM_DIRECT_JID or $DIRECT_JID_FILE.
 EOF
 }
 
@@ -56,6 +60,65 @@ session_prefix="bb_${run_id//[^A-Za-z0-9_]/_}"
 remote_sh() {
   local host="$1" script="$2"
   ssh "$host" "bash -lc $(printf '%q' "$script")"
+}
+
+resolve_direct_jid() {
+  if [ -n "${BB_TEAM_DIRECT_JID:-}" ]; then
+    printf '%s\n' "$BB_TEAM_DIRECT_JID"
+    return 0
+  fi
+  if [ -f "$DIRECT_JID_FILE" ]; then
+    tr -d '[:space:]' < "$DIRECT_JID_FILE"
+    printf '\n'
+  fi
+}
+
+ensure_gateway() {
+  export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/0}"
+  export DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS:-unix:path=/run/user/0/bus}"
+  if curl -s --max-time 5 "$GW_HEALTH" 2>/dev/null | grep -q '"connected"'; then
+    return 0
+  fi
+  systemctl --user reset-failed hermes-gateway-wa-test.service 2>/dev/null || true
+  systemctl --user start hermes-gateway-wa-test.service 2>/dev/null || true
+  for _ in $(seq 1 30); do
+    if curl -s --max-time 3 "$GW_HEALTH" 2>/dev/null | grep -q '"connected"'; then
+      return 0
+    fi
+    sleep 1
+  done
+  return 1
+}
+
+send_direct() {
+  local workbook="$1" jid body response
+  jid="$(resolve_direct_jid || true)"
+  if [ -z "$jid" ]; then
+    echo "[bb-team] direct WhatsApp skipped: no BB_TEAM_DIRECT_JID or $DIRECT_JID_FILE"
+    return 0
+  fi
+  if [[ "$jid" != *@s.whatsapp.net ]]; then
+    echo "[bb-team] direct WhatsApp skipped: invalid JID '$jid'" >&2
+    return 1
+  fi
+  if ! ensure_gateway; then
+    echo "[bb-team] direct WhatsApp failed: gateway not connected" >&2
+    return 1
+  fi
+  body="$(python3 - "$jid" "$workbook" <<'PY'
+import json, os, sys
+jid, path = sys.argv[1], os.path.abspath(sys.argv[2])
+print(json.dumps({
+    "chatId": jid,
+    "filePath": path,
+    "mediaType": "document",
+    "fileName": os.path.basename(path),
+}))
+PY
+)"
+  response="$(curl -s --max-time 120 -X POST "$GW_SEND_MEDIA" -H 'Content-Type: application/json' -d "$body" || true)"
+  echo "[bb-team] direct WhatsApp response: $response"
+  echo "$response" | grep -q '"success":true'
 }
 
 worker_base() {
@@ -154,7 +217,7 @@ push_shard() {
 }
 
 launch_worker() {
-  local name="$1" host base remote_run session launch_cmd
+  local name="$1" host base remote_run session local_runner remote_runner
   host="$(worker_host "$name")"
   base="$(worker_base "$name")"
   session="${session_prefix}_${name}"
@@ -165,33 +228,39 @@ launch_worker() {
     remote_run="$base/team-runs/$run_id"
   fi
 
-  launch_cmd="
-    set +e
-    cd '$base' || exit 10
-    mkdir -p '$remote_run'
-    if [ ! -d node_modules/playwright-extra ]; then npm ci; fi
-    OUT_FILE='$remote_run/$name.json' \
-    PINCODES_FILE='$remote_run/pincodes.$name.json' \
-    BB_COOKIE_PATH='$base/secrets/bb_cookies.pincode.json' \
-    BB_QUERIES='$BB_QUERIES_DEFAULT' \
-    BB_PINCODE_MIN_REQUIRED=1 \
-    BB_PINCODE_DELAY_MS='$PIN_DELAY_MS' \
-    BB_PINCODE_QUERY_DELAY_MS='$QUERY_DELAY_MS' \
-    BB_PINCODE_WATCHDOG_MS='$WATCHDOG_MS' \
-      node scrape_pincode_browser.js >'$remote_run/$name.stdout' 2>'$remote_run/$name.log'
-    rc=\$?
-    echo \$rc > '$remote_run/$name.rc'
-    date -u +%FT%TZ > '$remote_run/$name.done'
-    exit \$rc
-  "
+  local_runner="$run_dir/$name.run.sh"
+  remote_runner="$remote_run/$name.run.sh"
+  cat > "$local_runner" <<EOF
+#!/usr/bin/env bash
+set +e
+cd '$base' || exit 10
+mkdir -p '$remote_run'
+if [ ! -d node_modules/playwright-extra ]; then npm ci; fi
+OUT_FILE='$remote_run/$name.json' \\
+PINCODES_FILE='$remote_run/pincodes.$name.json' \\
+BB_COOKIE_PATH='$base/secrets/bb_cookies.pincode.json' \\
+BB_QUERIES='$BB_QUERIES_DEFAULT' \\
+BB_PINCODE_MIN_REQUIRED=1 \\
+BB_PINCODE_DELAY_MS='$PIN_DELAY_MS' \\
+BB_PINCODE_QUERY_DELAY_MS='$QUERY_DELAY_MS' \\
+BB_PINCODE_WATCHDOG_MS='$WATCHDOG_MS' \\
+  node scrape_pincode_browser.js >'$remote_run/$name.stdout' 2>'$remote_run/$name.log'
+rc=\$?
+printf '%s\\n' "\$rc" > '$remote_run/$name.rc'
+date -u +%FT%TZ > '$remote_run/$name.done'
+exit "\$rc"
+EOF
+  chmod +x "$local_runner"
 
   if [ "$name" = "vps" ]; then
     tmux kill-session -t "$session" 2>/dev/null || true
-    tmux new-session -d -s "$session" "bash -lc $(printf '%q' "$launch_cmd")"
+    tmux new-session -d -s "$session" "bash '$local_runner'"
   else
+    remote_sh "$host" "mkdir -p '$remote_run'"
+    rsync -az "$local_runner" "$host:$remote_runner"
     remote_sh "$host" "
       tmux kill-session -t '$session' 2>/dev/null || true
-      tmux new-session -d -s '$session' \"bash -lc $(printf '%q' "$launch_cmd")\"
+      tmux new-session -d -s '$session' \"bash '$remote_runner'\"
     "
   fi
 }
@@ -296,6 +365,7 @@ build_run() {
   cp -f "$xlsx" "$PRIVATE_OUT/$(basename "$xlsx")"
   rm -f "$ROOT/output/$(basename "$xlsx")"
   echo "[bb-team] private workbook: $PRIVATE_OUT/$(basename "$xlsx")"
+  send_direct "$PRIVATE_OUT/$(basename "$xlsx")" || echo "[bb-team] direct WhatsApp send failed; private workbook kept"
 }
 
 case "$cmd" in

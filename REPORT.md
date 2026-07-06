@@ -4,7 +4,8 @@
 
 This is the operating coverage map across all target platforms, plus where Jivo
 actually has presence. Generated Excel reports for every live platform are in
-`output/`.
+`output/`; BigBasket pincode-wise workbooks are intentionally kept in
+`output/private-no-group/` for direct-only delivery.
 
 ## TL;DR (2026-07-06)
 - **9 platforms are LIVE** in the daily system: Blinkit, , Zepto,
@@ -33,11 +34,12 @@ actually has presence. Generated Excel reports for every live platform are in
   `.amazon-account.lock` (one waits while the other runs; the guest `amazon` scraper sets
   no account location, so it is unaffected). Login is the same cookie transplant as Fresh;
   it's a thinner catalog than Fresh (~23 SKUs). See `platforms/amazon-now/PLAN.md`.
-- **BigBasket** went LIVE **2026-05-31** — `www.bigbasket.com` is behind Akamai
-  (plain HTTP → 403), so a **stealth browser** loads the session and an **in-page
-  fetch** calls the `listing-svc` JSON API. BigBasket "BB" prices Jivo
-  **nationally**, so (like Flipkart) it scrapes once and tags rows "All India"
-  (~27 SKUs, no proxy, no login).
+- **BigBasket** now has two live outputs. The national workbook still comes from the
+  stealth browser + in-page `listing-svc` flow. The pincode-wise workbook is produced
+  by `platforms/bigbasket/team_run_pincode.sh` across VPS + Mac Pro + KVM1 with
+  logged-in member cookies; the 2026-07-06 cleaned run covered 227 pins, 155 pins
+  with Jivo, 1,903 rows, and 27 SKUs. Pincode delivery is private/direct-only, not
+  an Ecom group attachment.
 - VPS-hosted scrapers run in a **1×/day serial deadline-aligned cron landing
   10:00 IST** via `run_all.sh`; Mac collectors feed vetted outputs into the same
   batch/ingest path.
@@ -54,7 +56,7 @@ actually has presence. Generated Excel reports for every live platform are in
 | **Amazon** | marketplace | national (314 ASINs targeted) | ~163 in-stock | guest `/dp` scrape; interstitial bypass; no account location |
 | **Amazon Fresh** | quick-comm | 332/332 pincodes serviceable | ~63 | logged-in session (cookie transplant); `i=freshstore` raw POST+HTML; ~13.2k rows/run, ~22 min |
 | **Amazon Now** | quick-comm | ~317/332 pincodes serviceable | ~23 | logged-in (same session as Fresh); `i=nowstore`; per-pincode `now_slot` delivery windows; ~1.7k rows/run; SERIALIZED with Fresh via shared lock |
-| **BigBasket** | grocery (national) | national (single "All India") | ~27 | stealth browser past Akamai + in-page `listing-svc` JSON API; national pricing → 1 row/SKU; no proxy, no login |
+| **BigBasket** | grocery national + pincode-wise | national workbook + pincode team run: 227 pins, 155 Jivo pins in 2026-07-06 cleaned run | ~27 | stealth browser past Akamai + in-page `listing-svc`; pincode runner uses logged-in member cookies on VPS+Mac Pro+KVM1 and writes private/direct-only workbook |
 
 ## Per-pincode coverage (Wave 1, auth-corrected 2026-07-06)
 
@@ -127,6 +129,11 @@ to a captcha on the datacenter IP. See `docs/PROXY.md`.
   `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` at 03:45 IST,
   using `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` and
   `BLINKIT_REQUIRE_AUTH=1`; VPS ingest uses `BLINKIT_REQUIRE_AUTH_DROP=1`.
+- **BigBasket pincode cron (IST):** root crontab runs
+  `platforms/bigbasket/team_run_pincode.sh run` at **03:00** in tmux. It shards the
+  run across VPS + Mac Pro + KVM1, merges `result_pincode.json`, builds the pincode
+  workbook under `output/private-no-group/`, removes any normal `output/` pincode
+  copy, and direct-sends only via the configured direct-recipient secret.
 - **Amazon canonical auto-heal (LIVE 2026-06-13):** the recurring Amazon `shared_price_dup`
   hold — a *truncated* product title minting a duplicate "stub" SKU at the same ASIN/price — is
   now auto-fixed in `run.sh`: Claude merges each stub into its real product (identity-only,

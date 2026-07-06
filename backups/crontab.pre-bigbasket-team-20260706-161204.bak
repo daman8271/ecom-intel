@@ -1,0 +1,116 @@
+# doctor.crontab.txt — FULL MERGED crontab: the LIVE deadline sweeps + 18:00 guardian
+# (UNCHANGED, copied verbatim from crontab.proposed.txt) PLUS the additive "Ecom Doctor"
+# self-healing watchdog lines (daily 18:30 / weekly Sun 19:00 / monthly 1st 19:30 IST).
+#
+# This is the ONE file the LEAD installs in a single shot:   crontab tools/cron/doctor.crontab.txt
+# (Installation is the LEAD's call after W3 PASS — W3 only proposes. The doctor section is
+#  ADDITIVE: the sweep + guardian lines below are byte-for-byte the live crontab; nothing
+#  about the live pipeline changes. setup_cron.sh only touches "# ecom-intel"-tagged lines,
+#  so it stays re-runnable over this file.)
+# Cron runs in system-local time = IST (the live `0 18` guardian is 18:00 IST — confirmed).
+# ============================ LIVE SWEEPS + GUARDIAN (UNCHANGED) ============================
+# Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY (00:30 tick). The
+# script predicts the serial chain's runtime from history (predict_lead.py), sleeps
+# until <slot> - predicted_lead (LEAD_MAX caps the lead so the START never drifts
+# earlier than ~01:02 IST — the proven timing that lets the Mac-fed q-commerce
+# spools land), runs ./run_all.sh with DEFER_DELIVERY=1, and send_batch.py holds
+# every platform's report and delivers them as ONE batch AT the slot time ("everyone
+# comes at the timing, not starts at it"). If the chain overruns, the batch goes
+# out as soon as it's done, marked "(late by Xm)".
+
+# 10:00 IST slot — fire 00:30; LEAD_MAX=32400 pins the chain START to ~01:02 IST (the
+# SAME proven start as the old 12:00 batch), so the Mac-fed q-commerce spools land
+# exactly as before — only the batch RELEASE moves 12:00 -> 10:00 (goal #60, 2026-07-03).
+# SWEEP_SITES=0 disables the 3 availability-site auto-redeploys (owner 2026-07-04, goal #61):
+# only jivo-pincode-app.vercel.app is refreshed daily now (its own data-bank hook ~07:00 + 16:30 cron).
+30 0 * * * cd /opt/ecom-intel && SWEEP_SITES=0 LEAD_MAX=32400 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
+*/20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 10:00 >> logs/sweep_watchdog.cron.log 2>&1   # 10:00-sweep catch-up watchdog (guards the single 00:30 launch tick — 2026-07-01 fix)
+# 15:00 IST slot — fire 11:30, same mechanics, batch lands AT 15:00.
+# 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
+# 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).
+0 18 * * * cd /opt/ecom-intel && ./tools/guardian_daily.sh >> logs/guardian.log 2>&1   # ecom-intel guardian-daily (paused w/ sweeps; un-pause together)
+# ================================ ECOM DOCTOR (ADDITIVE) ====================================
+# Self-healing watchdog. After BOTH daily sweeps have landed (12:00 + 15:00) and the 18:00
+# guardian deep-dive has run, the doctor gathers deterministic health signals
+# (tools/cron/health_snapshot.py) and — ONLY if something is wrong — invokes a bounded headless
+# Claude agent (tools/cron/doctor_prompt.md + the vetted tools/cron/safe_fixes/ menu) to
+# diagnose, auto-apply a VETTED-SAFE fix or PROPOSE-only, and ALWAYS alert the owner. It never
+# pushes, only runs when ECOM_DOCTOR_ENABLE=1 (kill switch = unset it in secrets.env), and is
+# flock-guarded so two doctors never overlap. A doctor crash can NEVER touch the sweeps above.
+# WHY 18:30 daily: it must see the WHOLE day — both sweep batches (15:00 + its post-batch tail
+# done ~15:01) AND the 18:00 guardian's fresh health-<date>.md. 18:30 is the first slot strictly
+# after the guardian finishes (guardian is read-only/seconds), so the doctor reads the complete,
+# settled signal set. The headline signal it exists to catch — a platform HELD N sweeps in a row
+# (the 2-day silent flipkart/zepto false-positive hold) — is only fully visible once both of the
+# day's sweeps are in reviews/.
+30 18 * * * cd /opt/ecom-intel && ./tools/cron/doctor.sh daily >> logs/doctor.log 2>&1   # ecom-intel doctor-daily
+# WHY Sunday 19:00 weekly: a 7-day trend pass (held-platform frequency, recurring SUSPECT
+# reasons, prediction-vs-actual drift, coverage trends) — runs after Sunday's daily doctor
+# (18:30) so it never races it; 30m apart, both are short unless the agent is invoked (lock
+# serializes that anyway).
+0 19 * * 0 cd /opt/ecom-intel && ./tools/cron/doctor.sh weekly >> logs/doctor.log 2>&1   # ecom-intel doctor-weekly
+# WHY 1st 19:30 monthly: a 30-day rollup — runs after the daily (18:30) and (when the 1st is a
+# Sunday) after the weekly (19:00), each 30m apart and lock-serialized so they never overlap.
+30 19 1 * * cd /opt/ecom-intel && ./tools/cron/doctor.sh monthly >> logs/doctor.log 2>&1   # ecom-intel doctor-monthly
+# ===========================================================================================
+# OVERLAP / SAFETY NOTES (doctor lines)
+# - The three doctor lines are mutually exclusive in practice (18:30 / 19:00 / 19:30, ≥30m
+#   apart) and additionally serialized by logs/.doctor.lock (flock -n in doctor.sh) — a long
+#   agent run from the daily can never be clobbered by the weekly/monthly; the later one logs
+#   "another doctor holds the lock" and exits.
+# - All three run in the EVENING (18:30–19:30), well clear of the single sweep chain
+#   (~01:02 start, batch spooled ~02:53, downstream done ~07:31, released AT 10:00) and the
+#   18:00 guardian (read-only, seconds). No sweep/guardian overlap by construction.
+# - The doctor reads artifacts only and (when it acts) calls vetted safe_fixes/ scripts that are
+#   themselves lock-guarded (sweep-chain / amazon-account / .heal-<p>) and refuse during a live
+#   sweep window — so even a safe-fix re-run can't collide with a sweep.
+# - doctor.sh is fully fail-safe: if ECOM_DOCTOR_ENABLE!=1 it no-ops; any internal error still
+#   fires an owner alert and exits 0; it has no path that can abort or modify the sweep crons.
+# Dropped vs the live crontab: nothing. This file is the live crontab + the 3 doctor lines.
+10 10 * * * cd /opt/ecom-intel && python3 tools/cron/check_layout.py >> logs/layout_gate.log 2>&1   # ecom-intel layout gate (post 10:00 batch)
+# Telegram-alerts the owner on any failure. Built 2026-06-11.
+0 10 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "mailgw-am-$(date +\%Y\%m\%d)" './tools/mailer/mail_price_data.sh am'   # ecom-mailer price-data am
+30 5 * * * /root/jivo-factory-intel/bin/factory_refresh.sh >> /root/jivo-factory-intel/daily.log 2>&1   # jivo-factory daily source refresh (05:30 IST; feeds event-driven data-bank fusion after noon)
+# >>> jivo-intel source-refresh feeder (managed by Claude 2026-06-30; owner authorized .env auto-refresh) >>>
+# Refresh the JIVO app (ecom.jivo.in) source vault before same-day event-driven data-bank fusion.
+# auth.sh re-logins daily using creds in /root/jivo-intel/.env (0600, gitignored). Fail-closed:
+# any failure does NOT commit and alerts; source-only. Data-bank fusion is event-driven after the noon
+# ecom/competitor chain, not a fixed 06:00 cron.
+CRON_TZ=Asia/Kolkata
+0 5 * * * /root/jivo-intel/bin/run_daily.sh >> /root/jivo-intel/logs/cron.log 2>&1   # jivo-intel source refresh (05:00 IST feeder for data-bank fusion)
+# <<< jivo-intel source-refresh feeder <<<
+# >>> jivo push-all (auto GitHub sync; managed by Claude 2026-07-01) >>>
+# Every 15 min: commit crawler/scraper output in the data vaults + push ALL
+# owner (daman8271) repos that have unpushed commits. ASAP cadence.
+*/15 * * * * COMMIT_VAULTS=1 QUIET=1 /root/bin/push_all_repos.sh >> /var/log/jivo-pushall/cron.log 2>&1
+# <<< jivo push-all (auto GitHub sync) <<<
+0 */12 * * * /root/jivo-data-bank/bin/coverage_12h.sh >> /var/log/jivo-data-bank/coverage_sync.log 2>&1   # coverage 12h sync (ecom-intel ledger -> data bank, push if missing)
+0 3 * * * /root/jivo-competitor-warroom/refresh.sh >> /root/jivo-competitor-warroom/refresh.log 2>&1   # jivo-competitor-warroom nightly
+# competitor scrape + data-bank fusion are now EVENT-DRIVEN off the noon sweep (goal #35, 2026-07-01) — removed fixed 12:15 competitor + 13:30 data-bank lines
+# >>> jivo-data-bank schedule (managed by install_cron.sh) >>>
+# Auto-generated by install_cron.sh on 2026-07-01 01:10:09 IST.
+# Edit schedules via JDB_DAILY_CRON / JDB_WEEKLY_CRON env, then re-run install.
+# Remove with: /root/jivo-data-bank/bin/install_cron.sh --uninstall
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/root/go/bin
+# (daily run is event-driven via ecom-intel deadline_sweep.sh -> competitor -> run_daily.sh; set JDB_DAILY_CRON to re-add a fixed line)
+0 15 * * 0 /root/jivo-data-bank/bin/weekly_semantic.sh >> /var/log/jivo-data-bank/cron.log 2>&1
+# <<< jivo-data-bank schedule (managed by install_cron.sh) <<<
+30 16 * * * /root/jivo-pincode-app/build_and_deploy.sh >> /root/jivo-pincode-app/build_deploy.log 2>&1   # jivo-pincode-app safety-net redeploy
+# >>> jivo-today snapshot (managed by Claude 2026-07-01) >>>
+# Safety-net poller for the daily verbatim today/ MD snapshot (build_today.sh).
+# The REAL completion hook is event-driven at the tail of deadline_sweep.sh 10:00
+# (fires the instant the 10:00 sweep + competitor/data-bank chain finishes, kill
+# switch SWEEP_TODAY=0). This poller is the backstop for a late/missed source over
+# the 10:00-16:00 IST landing window: build_today self-gates (ready-signal) and is
+# single-flight (flock), so every extra run is a safe no-op. CRON_TZ already IST.
+*/20 10-16 * * * /opt/ecom-intel/bin/build_today.sh >> /opt/ecom-intel/logs/build_today.cron.log 2>&1   # jivo-today safety-net poller
+# <<< jivo-today snapshot <<<
+*/15 * * * * /root/.hermes/scripts/manav_continuous_learn.sh >/tmp/manav_continuous_cron.out 2>/tmp/manav_continuous_cron.err
+*/10 * * * * /root/check_macpro_worker_health.sh >> /var/log/macpro-worker/health.cron.log 2>&1   # macpro-worker-health
+# olive-atlas goal#59 one-shot Amazon Now shards (remove after 2026-07-05)
+35 13 4 7 * /root/olive-atlas/bundles/amazon-now/run_shard_amazon_now.sh /root/olive-atlas/bundles/amazon-now/pins.chunkA.json full25A >> /root/olive-atlas/logs/amazon-now-chunkA.log 2>&1
+35 13 5 7 * /root/olive-atlas/bundles/amazon-now/run_shard_amazon_now.sh /root/olive-atlas/bundles/amazon-now/pins.chunkB.json full25B >> /root/olive-atlas/logs/amazon-now-chunkB.log 2>&1
+50 13 4 7 * /root/olive-atlas/bundles/amazon-now-B/run_shard_amazon_now_B.sh /root/olive-atlas/bundles/amazon-now/pins.chunkB.json full25B >> /root/olive-atlas/logs/amazon-now-chunkB.log 2>&1
+# olive-atlas goal#59 one-shot FKM VPS olive shard (remove after run)
+# olive-atlas goal#59 — Amazon chunk A self-healing watchdog (remove once A shard exists)
+*/12 * * * * /root/olive-atlas/bin/amazon_a_watchdog.sh >/dev/null 2>&1

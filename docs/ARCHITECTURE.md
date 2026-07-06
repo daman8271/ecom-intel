@@ -8,9 +8,11 @@ Design deep-dive. For operating instructions see the top-level
 > `scrape → build_excel → predict → review → vault/history → telegram → commit/push`
 > all execute inside `run.sh` for VPS-hosted platforms, and `run_all.sh` drives a
 > **SERIAL** sweep (one platform at a time; ~2h chain after 's 2026-06-06 removal).
-> Off-box Mac collectors feed vetted outputs into the same delivery batch where required:
+> Off-box/team collectors feed vetted outputs where required:
 > Blinkit runs on the Mac Pro residential session at **03:45 IST** with authenticated
-> Blinkit state, while bigbasket runs as a separate 03:00 pincode job. The sweep has a
+> Blinkit state, while BigBasket pincode runs at **03:00 IST** through the
+> `team_run_pincode.sh` VPS + Mac Pro + KVM1 runner and writes private/direct-only
+> output. The sweep has a
 > **per-scrape auto-heal guardian** and a self-heal backstop. Cron is **DEADLINE-ALIGNED**
 > (owner requirement 2026-06-06): `tools/cron/deadline_sweep.sh` fires **early in the small
 > hours** (predicts its lead and sleeps so the batch lands at 10:00 — cut from 2×/day to one
@@ -196,7 +198,13 @@ Serviceability* sheet on top of the standard layout.
 ## 5. Pipeline & orchestration
 
 ```
-cron (IST: fire early → slot 10:00 AM; + 03:00 bigbasket pull; + 03:45 Blinkit Mac collector; 18:00 guardian deep-dive)
+cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; + 03:45 Blinkit Mac collector; 18:00 guardian deep-dive)
+  ├─ BigBasket team runner at 03:00
+  │    └─ platforms/bigbasket/team_run_pincode.sh run
+  │       ├─ shards pincodes_jivo.json across VPS + Mac Pro + KVM1 (default 5:4:1)
+  │       ├─ each worker runs scrape_pincode_browser.js in tmux with logged-in cookies
+  │       ├─ merge_team_pincode.py → result_pincode.json
+  │       └─ build_excel_pincode.py → output/private-no-group/ + direct-only send
   ├─ Mac Pro launchd com.danny.blinkit-mac-to-vps
   │    └─ /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
   │       ├─ BLINKIT_REQUIRE_AUTH=1 with /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
@@ -232,7 +240,10 @@ platform full resources + clean store re-resolution, and the Amazon trio runs
 consecutively so it can never overlap. Order: light platforms first, the Amazon trio
 consecutive. Blinkit is no longer a VPS serial-sweep member; the full authenticated
 collector runs off-box on the Mac Pro residential session and the vetted output enters
-the delivery path only after auth/session validation.
+the delivery path only after auth/session validation. BigBasket pincode is also outside
+the VPS serial sweep: its team runner uses the VPS, Mac Pro, and KVM1 in parallel, then
+keeps the pincode workbook private/direct-only while the smaller national workbook can
+still enter the normal batch.
 
 > Every step after `scrape.js` is best-effort (`|| true`) and can never fail the run.
 > `healthcheck.sh` is the older self-heal variant (`rows<20` / `>15h` stale → `claude -p`
@@ -314,11 +325,13 @@ rollups) — Python 3 stdlib only, deterministic, **no LLM**, safe inside the cr
 | Item | Installed & live (verified via `crontab -l`) |
 |---|---|
 | Scrape cadence | **1 deadline-aligned sweep/day — lands 10:00 AM IST** (cut from 2×/day 2026-06-28) + an **18:00 guardian deep-dive** |
-| Driver | one `./run_all.sh` per sweep — scrapes the **7 live platforms SERIALLY** (one at a time, ~2h;  removed 2026-06-06; bigbasket is a separate 03:00 pincode job) |
+| Driver | one `./run_all.sh` per sweep — scrapes the **7 live platforms SERIALLY** (one at a time, ~2h;  removed 2026-06-06); BigBasket pincode is a separate 03:00 team runner |
 | Auto-heal | inline per scrape (`tools/guardian.py --heal`) + the self-heal backstop at the sweep's end (`tools/selfheal.sh`) |
 | Timezone | `Asia/Kolkata` (set by `setup_cron.sh`) |
 
-The live crontab is one `run_all.sh` sweep + one `tools/guardian_daily.sh` line (+ the 03:00 bigbasket pincode pull; the live line lives in `tools/cron/doctor.crontab.txt`).
+The live crontab is one `run_all.sh` sweep + one `tools/guardian_daily.sh` line
+(+ the 03:00 BigBasket pincode team runner; the live line lives in
+`tools/cron/doctor.crontab.txt` and the root crontab).
 `run_all.sh` runs the platforms **serially** (commit 8ef79d4 — parallel starved the
 scrapers and thrashed the shared Amazon account/location) and holds the authoritative
 live-platform list; each `run.sh`'s git-push is `flock`-serialized so concurrent commits
