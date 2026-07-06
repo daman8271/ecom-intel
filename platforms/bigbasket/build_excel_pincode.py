@@ -157,6 +157,37 @@ for row in ws.iter_rows(min_row=2):
         row[1].fill = BLUE
 widths(ws, {1: 13, 3: 22, 4: 7, 5: 10, 6: 9, 7: 6, 8: 12, 9: 12})
 
+# ---------------- Sheet 4: SKU City Coverage ----------------
+ws = wb.create_sheet("SKU City Coverage")
+ws.append([
+    "SKU", "Pack", "Alive Cities", "Alive City List", "Alive Pincodes",
+    "Listed Cities", "Listed Pincodes", "In-stock Rows", "OOS Rows",
+])
+sku_city_rows = []
+for s in skus:
+    sku_rows = [r for r in rows if r['canonical'] == s]
+    alive_rows = [r for r in sku_rows if r.get('in_stock')]
+    alive_cities = sorted({str(r.get('city', '')) for r in alive_rows if r.get('city')})
+    listed_cities = sorted({str(r.get('city', '')) for r in sku_rows if r.get('city')})
+    alive_pins = sorted({str(r.get('pincode', '')) for r in alive_rows if r.get('pincode')})
+    listed_pins = sorted({str(r.get('pincode', '')) for r in sku_rows if r.get('pincode')})
+    sample = sku_rows[0] if sku_rows else {}
+    sku_city_rows.append((
+        len(alive_cities), len(alive_pins), label(s), sample.get('pack', ''),
+        ", ".join(alive_cities), len(listed_cities), len(listed_pins),
+        len(alive_rows), len(sku_rows) - len(alive_rows),
+    ))
+for alive_city_n, alive_pin_n, sku_label, pack, alive_city_list, listed_city_n, listed_pin_n, in_rows, oos_rows in sorted(
+        sku_city_rows, key=lambda x: (-x[0], -x[1], x[2])):
+    ws.append([sku_label, pack, alive_city_n, alive_city_list, alive_pin_n, listed_city_n, listed_pin_n, in_rows, oos_rows])
+style_header(ws); ws.freeze_panes = "A2"; ws.auto_filter.ref = f"A1:I{ws.max_row}"
+for row in ws.iter_rows(min_row=2):
+    for cell in row:
+        cell.border = BORDER
+    row[2].fill = GREEN if row[2].value else RED
+    row[4].fill = GREEN if row[4].value else RED
+widths(ws, {1: 42, 2: 14, 3: 12, 4: 46, 5: 14, 6: 13, 7: 14, 8: 13, 9: 10})
+
 
 # ---------------- Matrix helper (pincode rows x SKU cols) ----------------
 def matrix(name, valfn, fmt=None, scale=False, scale_rev=False, only_with=True):
