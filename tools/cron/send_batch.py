@@ -2,8 +2,10 @@
 """send_batch.py <sweep_id> <deadline_epoch> — the delivery barrier.
 
 Called by run_all.sh after the serial platform loop (W2's hook, DEFER_DELIVERY=1).
-Reads the spool dir output/.batch/<sweep_id>/ written by run.sh's defer mode and
-delivers EVERYTHING as one batch AT the deadline ("everyone comes at the timing"):
+Reads the spool dir output/.batch/<sweep_id>/ written by run.sh's defer mode after
+the deadline barrier, so late off-box spools that land while this process is
+sleeping still join the batch. Delivers EVERYTHING as one batch AT the deadline
+("everyone comes at the timing"):
 
   - now < deadline  -> sleep until the deadline (the barrier), then send;
   - chain overran   -> send immediately, header marked "(late by Xm)".
@@ -167,7 +169,27 @@ def main():
         log(f"no spool dir {spool} — nothing to deliver (not a defer sweep?)")
         return
 
+    # ---- the barrier: wait for the deadline ----------------------------------
+    wait = deadline - now()
+    if wait > 0:
+        log(f"sweep {sweep_id}: chain done early — holding batch {wait}s until "
+            f"{datetime.fromtimestamp(deadline).strftime('%H:%M:%S')}")
+        while True:
+            remaining = deadline - now()
+            if remaining <= 0:
+                break
+            time.sleep(min(remaining, 60))
+        log(f"sweep {sweep_id}: woke at deadline — releasing batch")
+
+    late_secs = now() - deadline
+    late_note = f" (late by {max(1, round(late_secs / 60))}m)" if late_secs > 60 else ""
+    if late_secs > 60:
+        log(f"sweep {sweep_id}: LATE path — chain overran deadline by "
+            f"{round(late_secs / 60)}m, sending immediately")
+
     # ---- load spooled records (schema v1) -----------------------------------
+    # Load after the barrier so off-box collectors that land while send_batch is
+    # sleeping (Blinkit/Mac, Swiggy, etc.) still join the deadline batch.
     records = {}
     for p in platforms():
         f = os.path.join(spool, p + ".json")
@@ -187,24 +209,6 @@ def main():
     held_ps = [p for p in platforms()
                if records.get(p, {}).get("held") and not records[p].get("_already_sent")]
     missing_ps = [p for p in platforms() if p not in records]
-
-    # ---- the barrier: wait for the deadline ----------------------------------
-    wait = deadline - now()
-    if wait > 0:
-        log(f"sweep {sweep_id}: chain done early — holding batch {wait}s until "
-            f"{datetime.fromtimestamp(deadline).strftime('%H:%M:%S')}")
-        while True:
-            remaining = deadline - now()
-            if remaining <= 0:
-                break
-            time.sleep(min(remaining, 60))
-        log(f"sweep {sweep_id}: woke at deadline — releasing batch")
-
-    late_secs = now() - deadline
-    late_note = f" (late by {max(1, round(late_secs / 60))}m)" if late_secs > 60 else ""
-    if late_secs > 60:
-        log(f"sweep {sweep_id}: LATE path — chain overran deadline by "
-            f"{round(late_secs / 60)}m, sending immediately")
 
     # ---- creds ----------------------------------------------------------------
     sec = read_secrets()
