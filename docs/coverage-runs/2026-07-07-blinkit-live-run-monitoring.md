@@ -45,10 +45,11 @@ The monitor's cron poll alerts; delivery callers run it with
 
 ## Live Watch
 
-For the 2026-07-07 run, `tools/cron/blinkit_live_watch.sh` runs in tmux and logs
-Mac process status, today-dated workbook presence, and dry-run quality-monitor output
+`tools/cron/blinkit_live_watch.sh` runs in tmux and logs Mac process status,
+Mac progress counts (`done/resolved/auth_ok/blocked/rows/stock_unverified`), latest
+Mac run-log tail, today-dated workbook presence, and dry-run quality-monitor output
 until 10:45 IST. The normal cron monitor still runs separately and can alert.
 
-For future daily runs, cron starts `tools/cron/start_blinkit_live_watch.sh` at 06:25
+For daily runs, cron starts `tools/cron/start_blinkit_live_watch.sh` at 06:25
 IST. The starter is idempotent: if `blinkit-live-watch-YYYYMMDD` already exists, it
 does nothing.

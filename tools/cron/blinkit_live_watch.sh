@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# blinkit_live_watch.sh — temporary live observer for the 2026-07-07 Blinkit run.
+# blinkit_live_watch.sh — live observer for the daily authenticated Blinkit run.
 #
 # This does not scrape or deliver. It records Mac process status, expected output
 # files, and the read-only Blinkit quality monitor during the live run window.
@@ -23,8 +23,38 @@ end_epoch() {
 }
 
 mac_status() {
+  local progress_file="/Users/danny./VPS-Migration/imported/ecom-intel/platforms/blinkit/.progress.${TODAY}.json"
   ssh -o BatchMode=yes -o ConnectTimeout=10 macpro \
-    "ps -axo pid,command | grep -E 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' | grep -v grep || true; tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.out 2>/dev/null || true; tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.err 2>/dev/null || true" \
+    "ps -axo pid,etime,command | grep -E 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' | grep -v grep || true
+python3 - <<'PY' '$progress_file' 2>/dev/null || true
+import json, os, sys
+p = sys.argv[1]
+if not os.path.exists(p):
+    print(f'progress missing: {p}')
+    raise SystemExit(0)
+d = json.load(open(p, encoding='utf-8'))
+items = list(d.items()) if isinstance(d, dict) else []
+rows = [r for _, pin in items for r in (pin.get('rows') or []) if isinstance(pin, dict)]
+stock_unverified = sum(
+    1 for r in rows
+    if r.get('stock_unverified')
+    or str(r.get('listing_status') or '').strip().lower() == 'stock_unverified'
+    or str(r.get('stock_source') or '').strip().lower().endswith('_unverified')
+)
+print('progress done={done} resolved={resolved} auth_ok={auth_ok} blocked={blocked} rows={rows} stock_unverified={stock_unverified} last={last}'.format(
+    done=len(items),
+    resolved=sum(1 for _, pin in items if isinstance(pin, dict) and pin.get('resolved')),
+    auth_ok=sum(1 for _, pin in items if isinstance(pin, dict) and pin.get('auth_accepted')),
+    blocked=sum(1 for _, pin in items if isinstance(pin, dict) and pin.get('blocked')),
+    rows=len(rows),
+    stock_unverified=stock_unverified,
+    last=','.join([pin for pin, _ in items[-5:]]),
+))
+PY
+latest=\$(ls -t /Users/danny./VPS-Migration/logs/blinkit/run-*.log 2>/dev/null | head -1)
+[ -n \"\$latest\" ] && { echo \"latest_run_log=\$latest\"; tail -12 \"\$latest\"; }
+tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.out 2>/dev/null || true
+tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.err 2>/dev/null || true" \
     2>&1 | sed 's/^/[mac] /' | tee -a "$LOG" >/dev/null
 }
 
