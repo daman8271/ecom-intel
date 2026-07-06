@@ -202,6 +202,13 @@ fi
 if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
   BI_RPT="$DIR/output/Jivo-Blinkit-Live-Report-$(date +%F).xlsx"
   if [ -n "$BI_RPT" ] && [ -f "$BI_RPT" ]; then
+    if ! BLINKIT_MONITOR_DRYRUN=1 \
+         BLINKIT_MONITOR_EXIT_CODE=1 \
+         BLINKIT_MONITOR_DATE="$(date +%F)" \
+         BLINKIT_MONITOR_REPORT="$BI_RPT" \
+         ./tools/cron/blinkit_quality_monitor.sh pre-batch; then
+      echo "[$(date '+%F %T')] run_all: blinkit quality gate failed — skipped batch spool for $BI_RPT"
+    else
     BIDIR="$DIR/output/.batch/${SWEEP_ID}"; mkdir -p "$BIDIR" 2>>logs/telegram.log
     BI_RPT="$BI_RPT" BI_SUM="$DIR/platforms/blinkit/result.json" python3 - "$BIDIR/blinkit.json" 2>>logs/telegram.log <<'BISPOOL'
 import json, os, sys, time
@@ -222,6 +229,7 @@ json.dump({"platform": "blinkit", "verdict": "OK", "summary": summ, "xlsx": xlsx
 os.replace(tmp, out)
 BISPOOL
     echo "[$(date '+%F %T')] run_all: blinkit spooled for batch -> $BIDIR/blinkit.json (sweep ${SWEEP_ID})"
+    fi
   else
     echo "[$(date '+%F %T')] run_all: blinkit report not in output/ — skipped (Mac drop late/absent)"
   fi

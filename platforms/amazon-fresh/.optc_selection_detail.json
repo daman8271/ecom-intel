@@ -1,0 +1,441 @@
+{
+ "selected": {
+  "Ahmedabad": [
+   "380008",
+   "380024"
+  ],
+  "Bengaluru": [
+   "560040",
+   "560001",
+   "560006",
+   "560036",
+   "560029",
+   "560035",
+   "560067",
+   "560072",
+   "560087",
+   "560002",
+   "560003",
+   "560004"
+  ],
+  "Bhubaneswar": [
+   "751004",
+   "751009"
+  ],
+  "Chandigarh": [
+   "160030",
+   "160002"
+  ],
+  "Chennai": [
+   "600016",
+   "600083",
+   "600025",
+   "600060",
+   "600118",
+   "600002",
+   "600003",
+   "600005",
+   "600006",
+   "600011",
+   "600013",
+   "600017"
+  ],
+  "Coimbatore": [
+   "641031",
+   "641041"
+  ],
+  "Delhi": [
+   "110055",
+   "110052",
+   "110003",
+   "110091",
+   "110031",
+   "110008",
+   "110013",
+   "110037",
+   "110035",
+   "110075",
+   "110059",
+   "110044",
+   "110048",
+   "110028",
+   "110001",
+   "110002",
+   "110004",
+   "110006",
+   "110007",
+   "110009",
+   "110014",
+   "110016",
+   "110017",
+   "110018",
+   "110021",
+   "110024",
+   "110025",
+   "110026",
+   "110032",
+   "110033"
+  ],
+  "Gurugram": [
+   "122001",
+   "122051",
+   "122010",
+   "122101",
+   "122003",
+   "122002",
+   "122007",
+   "122012"
+  ],
+  "Hyderabad": [
+   "500001",
+   "500003",
+   "500024",
+   "500066",
+   "500002",
+   "500006"
+  ],
+  "Indore": [
+   "452001",
+   "452002"
+  ],
+  "Jaipur": [
+   "302020",
+   "302033",
+   "302017",
+   "302026"
+  ],
+  "Kochi": [
+   "682040",
+   "682011"
+  ],
+  "Kolkata": [
+   "700100",
+   "700107",
+   "700009",
+   "700037",
+   "700001",
+   "700015",
+   "700019",
+   "700022",
+   "700024",
+   "700040",
+   "700053",
+   "700069"
+  ],
+  "Lucknow": [
+   "226011",
+   "226022"
+  ],
+  "Mumbai": [
+   "400012",
+   "400003",
+   "400067",
+   "400017",
+   "400004",
+   "400058",
+   "400013",
+   "400049",
+   "400075",
+   "400001",
+   "400007",
+   "400011",
+   "400015",
+   "400018",
+   "400019",
+   "400020",
+   "400030",
+   "400033",
+   "400005",
+   "400006",
+   "400010",
+   "400021",
+   "400025",
+   "400026",
+   "400002",
+   "400008",
+   "400009",
+   "400014",
+   "400016",
+   "400022"
+  ],
+  "Mysuru": [
+   "570016",
+   "570004"
+  ],
+  "Nagpur": [
+   "440001",
+   "440002"
+  ],
+  "Noida": [
+   "201304",
+   "201301",
+   "201309",
+   "201310",
+   "201009",
+   "201303",
+   "201305",
+   "201306",
+   "201307",
+   "201311",
+   "201312",
+   "201318"
+  ],
+  "Pune": [
+   "411012",
+   "411001",
+   "411033",
+   "411057",
+   "411003",
+   "411011",
+   "411004",
+   "411005",
+   "411006",
+   "411014",
+   "411015",
+   "411020",
+   "411028",
+   "411030",
+   "411035"
+  ],
+  "Surat": [
+   "394101",
+   "394107"
+  ],
+  "Thiruvananthapuram": [
+   "695001",
+   "695002"
+  ],
+  "Vadodara": [
+   "390001",
+   "390002"
+  ],
+  "Vijayawada": [
+   "520001",
+   "520002"
+  ],
+  "Visakhapatnam": [
+   "530002",
+   "530001"
+  ]
+ },
+ "detail": {
+  "Ahmedabad": {
+   "mode": "set-cover",
+   "cover_pins": 2,
+   "price_points_top3": 48,
+   "price_points_canonical": 13,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 45,
+   "quota": 2
+  },
+  "Bengaluru": {
+   "mode": "set-cover",
+   "cover_pins": 8,
+   "price_points_top3": 58,
+   "price_points_canonical": 16,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 77,
+   "quota": 12
+  },
+  "Bhubaneswar": {
+   "mode": "set-cover",
+   "cover_pins": 2,
+   "price_points_top3": 11,
+   "price_points_canonical": 11,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 23,
+   "quota": 2
+  },
+  "Chandigarh": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 3,
+   "price_points_canonical": 0,
+   "canonical_run": "2026-06-30-0728",
+   "canonical_cov": 1,
+   "quota": 2
+  },
+  "Chennai": {
+   "mode": "set-cover",
+   "cover_pins": 5,
+   "price_points_top3": 59,
+   "price_points_canonical": 14,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 79,
+   "quota": 12
+  },
+  "Coimbatore": {
+   "mode": "DEAD (gap evidence)",
+   "zones": 0,
+   "canonical_run": null,
+   "quota": 2
+  },
+  "Delhi": {
+   "mode": "set-cover",
+   "cover_pins": 14,
+   "price_points_top3": 126,
+   "price_points_canonical": 31,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 91,
+   "quota": 30
+  },
+  "Gurugram": {
+   "mode": "set-cover",
+   "cover_pins": 8,
+   "price_points_top3": 71,
+   "price_points_canonical": 20,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 18,
+   "quota": 2
+  },
+  "Hyderabad": {
+   "mode": "set-cover",
+   "cover_pins": 4,
+   "price_points_top3": 51,
+   "price_points_canonical": 9,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 55,
+   "quota": 6
+  },
+  "Indore": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 3,
+   "price_points_canonical": 1,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 15,
+   "quota": 2
+  },
+  "Jaipur": {
+   "mode": "set-cover",
+   "cover_pins": 4,
+   "price_points_top3": 43,
+   "price_points_canonical": 4,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 19,
+   "quota": 2
+  },
+  "Kochi": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 5,
+   "price_points_canonical": 5,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 46,
+   "quota": 2
+  },
+  "Kolkata": {
+   "mode": "set-cover",
+   "cover_pins": 4,
+   "price_points_top3": 59,
+   "price_points_canonical": 13,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 73,
+   "quota": 12
+  },
+  "Lucknow": {
+   "mode": "set-cover",
+   "cover_pins": 2,
+   "price_points_top3": 10,
+   "price_points_canonical": 10,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 31,
+   "quota": 2
+  },
+  "Mumbai": {
+   "mode": "set-cover",
+   "cover_pins": 9,
+   "price_points_top3": 74,
+   "price_points_canonical": 20,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 72,
+   "quota": 30
+  },
+  "Mysuru": {
+   "mode": "set-cover",
+   "cover_pins": 2,
+   "price_points_top3": 30,
+   "price_points_canonical": 3,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 27,
+   "quota": 2
+  },
+  "Nagpur": {
+   "mode": "DEAD (gap evidence)",
+   "zones": 0,
+   "canonical_run": null,
+   "quota": 2
+  },
+  "Noida": {
+   "mode": "set-cover",
+   "cover_pins": 6,
+   "price_points_top3": 72,
+   "price_points_canonical": 18,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 12,
+   "quota": 12
+  },
+  "Pune": {
+   "mode": "set-cover",
+   "cover_pins": 6,
+   "price_points_top3": 60,
+   "price_points_canonical": 13,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 53,
+   "quota": 15
+  },
+  "Surat": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 6,
+   "price_points_canonical": 6,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 18,
+   "quota": 2
+  },
+  "Thiruvananthapuram": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 1,
+   "price_points_canonical": 1,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 37,
+   "quota": 2
+  },
+  "Vadodara": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 1,
+   "price_points_canonical": 1,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 25,
+   "quota": 2
+  },
+  "Vijayawada": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 2,
+   "price_points_canonical": 2,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 17,
+   "quota": 2
+  },
+  "Visakhapatnam": {
+   "mode": "set-cover",
+   "cover_pins": 1,
+   "price_points_top3": 6,
+   "price_points_canonical": 6,
+   "canonical_run": "2026-07-03-0507",
+   "canonical_cov": 24,
+   "quota": 2
+  }
+ },
+ "total": 169,
+ "config_jaccard_vs_now": 0.067,
+ "seed": {
+  "rows": 1299,
+  "with_jivo": 109,
+  "skus": 32,
+  "from_run": "2026-07-03-0507"
+ }
+}
