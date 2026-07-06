@@ -389,6 +389,12 @@ function cleanProductName(name) {
   return out;
 }
 
+function pdpSegmentHead(segment) {
+  return String(segment || '')
+    .split(/₹|MRP|out of stock|add to cart|\bADD\b|Why shop from blinkit\?/i)[0]
+    .slice(0, 180);
+}
+
 function parsePdpProductText(text, row) {
   const body = String(text || '').replace(/\s+/g, ' ').trim();
   const lower = body.toLowerCase();
@@ -406,7 +412,7 @@ function parsePdpProductText(text, row) {
   }
   let nameIdx = lower.indexOf(name.toLowerCase());
   while (nameIdx >= 0) {
-    const nearby = lower.slice(nameIdx, nameIdx + 220);
+    const nearby = pdpSegmentHead(lower.slice(nameIdx, nameIdx + 220));
     if (packVariants.some((pack) => nearby.includes(pack) || nearby.includes(`(${pack})`))) {
       candidates.push(nameIdx);
     }
@@ -423,6 +429,9 @@ function parsePdpProductText(text, row) {
     }
   }
   if (!segment) segment = body.slice(candidates[0], candidates[0] + 450).split(/Why shop from blinkit\?/i)[0];
+  const rowVolMl = Number(row.vol_ml || parseVolMl(row.pack) || 0);
+  const segmentVolMl = parseVolMl(pdpSegmentHead(segment));
+  if (rowVolMl && (!segmentVolMl || Math.abs(rowVolMl - segmentVolMl) > 1)) return null;
   const out = /out of stock/i.test(segment);
   const hasAdd = /add to cart|\bADD\b/i.test(segment);
   const price = priceInfo(segment, row.vol_ml);
@@ -434,6 +443,7 @@ function parsePdpProductText(text, row) {
     offer_sale: price.offer_sale,
     discount_pct: price.discount_pct,
     per_litre: price.per_litre,
+    matched_vol_ml: segmentVolMl || null,
     snippet: segment.slice(0, 240),
   };
 }

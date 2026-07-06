@@ -147,6 +147,17 @@ for (const [input, want] of CASES) {
 }
 
 {
+  const row = { sku_raw: 'Jivo Pomace Olive Oil', pack: '5 l', vol_ml: 5000 };
+  const got = parsePdpProductText(
+    'Jivo Pomace Olive Oil 1 ltr ₹387 ₹1,049 ADD 49% OFF Allegro Pomace Olive Oil 5 ltr ₹3,307 ₹6,500 ADD',
+    row
+  );
+  const ok = got === null;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(reject wrong PDP variant) = ${JSON.stringify(got)} (want null)`);
+}
+
+{
   const row = { sku_raw: 'Jivo Cold Pressed Canola Oil', pack: '5 l', vol_ml: 5000 };
   const got = parsePdpProductText('Home / Oil / Jivo Cold Pressed Canola Oil (5 l) Jivo Cold Pressed Canola Oil (5 l) 5 ltr ₹1,193 MRP ₹1,650 27% OFF Add to cart Why shop from blinkit?', row);
   const ok = got && got.in_stock === 1 && got.sale === 1193 && got.mrp === 1650;
