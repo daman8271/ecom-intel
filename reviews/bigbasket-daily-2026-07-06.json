@@ -1,0 +1,107 @@
+{
+  "platform": "bigbasket",
+  "run_id": "daily-2026-07-06",
+  "captured_at": "2026-07-06T11:35:06Z",
+  "verdict": "SUSPECT",
+  "rows": 1364,
+  "unique_skus": 29,
+  "pincodes_with_jivo": 130,
+  "baseline_rows": 1329,
+  "source_result": "/opt/ecom-intel/platforms/bigbasket/result_pincode.json",
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "1364 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "1364 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "1364 rows vs baseline 1329 (103%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "29 unique SKUs vs baseline 27 (107%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "130 pincodes w/ Jivo vs baseline 133 (98%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-07-06T11:35:06Z is 0.9h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; 16 SKU(s) price-stable across 9 runs path proven live by 7 SKU(s) that moved (e.g. canola-oil-cold-pressed-1l, canola-oil-cold-pressed-5l, cold-press-kachi-ghani-mustard-oil-1l) -> genuinely stable; 7 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": false,
+      "detail": "store_id 21579,23921,24556 spans 3 distinct cities (Bengaluru, Chandigarh, Delhi) across 41 rows, identical modal sale \u20b950 \u2014 default/fallback-store contamination"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": true,
+      "detail": "777 priced in-stock rows, vs baseline 867; 0 block/error-marked rows"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK \u2014 realistic Jivo oils/juices, sane pricing (\u20b950\u20131350), MRP\u2265sale, 1364 rows (2.6% growth), no blockers."
+    }
+  ],
+  "reasons": [
+    "geo_consistency: store_id 21579,23921,24556 spans 3 distinct cities (Bengaluru, Chandigarh, Delhi) across 41 rows, identical modal sale \u20b950 \u2014 default/fallback-store contamination"
+  ],
+  "llm_note": "OK \u2014 realistic Jivo oils/juices, sane pricing (\u20b950\u20131350), MRP\u2265sale, 1364 rows (2.6% growth), no blockers."
+}
