@@ -207,7 +207,8 @@ and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `917703818227@s.whatsapp.net` only after the main Blinkit workbook passes quality.
 `platforms/blinkit/ingest.sh --deliver` calls
 `tools/whatsapp/send_blinkit_not_listed_direct.sh` immediately, and the 10:00
-mailer retries idempotently if `logs/blinkit-not-listed-wa-YYYY-MM-DD.sent` is absent.
+mailer plus `*/15 6-12` cron retry idempotently if
+`logs/blinkit-not-listed-wa-YYYY-MM-DD.sent` is absent.
 
 ## Review (tools/review.py) — never ship garbage, stay cheap
 Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,

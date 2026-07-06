@@ -63,7 +63,8 @@ sheet in the main workbook, and also emits
 `tools/whatsapp/send_blinkit_not_listed_direct.sh` to direct-send that standalone
 workbook to the configured WhatsApp contact only after the main Blinkit workbook
 passes quality; the helper writes a per-date sent marker so retries do not
-double-send.
+double-send. Cron runs the helper every 15 minutes from 06:00-12:59 IST as a
+backstop for late or failed immediate sends.
 
 Price correctness also has a PDP guard. Search cards can show a base/stale price
 while the PDP shows a lower effective price such as `Buy at`, `Buy for`, `Effective
