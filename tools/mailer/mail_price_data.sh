@@ -16,16 +16,19 @@
 set -u
 cd /opt/ecom-intel
 mkdir -p logs output/mail
-exec >> logs/mailer.log 2>&1
+if [ "${MAILER_NO_REDIRECT:-0}" != "1" ]; then
+  exec >> logs/mailer.log 2>&1
+fi
 
 SLOT="${1:-test}"
-D=$(date +%F)
+D="${PRICE_MAIL_DATE:-$(date +%F)}"
 echo "=== $(date '+%F %T') mailer start slot=$SLOT date=$D ==="
 
 set -a; . ./secrets.env; set +a
 
 # Best-effort owner alert on failure (same philosophy as run.sh delivery).
 alert() {
+  [ "${MAILER_TEST_MODE:-0}" = "1" ] && { echo "TEST alert: $1"; return 0; }
   [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ] || return 0
   curl -s --max-time 30 -X POST \
     "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
@@ -67,6 +70,7 @@ case "$SLOT" in
   pm) MAX_WAIT=1200 ;;
   *)  MAX_WAIT=60 ;;
 esac
+[ "${MAILER_SKIP_WAIT:-0}" = "1" ] && MAX_WAIT=0
 
 EXPECTED=(
   "output/Jivo-Amazon-Live-Report-$D.xlsx"
@@ -106,10 +110,38 @@ done
 
 PRESENT=()
 for f in "${EXPECTED[@]}" "${EXTRA[@]}"; do [ -f "$f" ] && PRESENT+=("$f"); done
+
+# Blinkit is Mac/drop-fed and has stricter false-OOS/effective-price gates. The
+# ingest path should already refuse bad drops, but the mailer is a final delivery
+# surface: if a bad or stale Blinkit workbook somehow exists in output/, hold it
+# back from both email and WhatsApp instead of shipping it.
+BLINKIT_REPORT="output/Jivo-Blinkit-Live-Report-$D.xlsx"
+if [ -f "$BLINKIT_REPORT" ]; then
+  if ! BLINKIT_MONITOR_DRYRUN=1 \
+       BLINKIT_MONITOR_EXIT_CODE=1 \
+       BLINKIT_MONITOR_DATE="$D" \
+       BLINKIT_MONITOR_REPORT="$BLINKIT_REPORT" \
+       ./tools/cron/blinkit_quality_monitor.sh pre-whatsapp; then
+    echo "WARN: Blinkit quality gate failed; holding back $BLINKIT_REPORT from email/WhatsApp"
+    alert "Blinkit report held back from email/WhatsApp: quality gate failed"
+    FILTERED=()
+    for f in "${PRESENT[@]}"; do
+      [ "$f" = "$BLINKIT_REPORT" ] && continue
+      FILTERED+=("$f")
+    done
+    PRESENT=("${FILTERED[@]}")
+  fi
+fi
+
 if [ ${#PRESENT[@]} -eq 0 ]; then
   echo "ERROR: no report files for $D — nothing sent"
   alert "no report files for $D — nothing sent"
   exit 1
+fi
+
+if [ "${MAILER_LIST_ONLY:-0}" = "1" ]; then
+  printf '%s\n' "${PRESENT[@]}"
+  exit 0
 fi
 
 # Ecom team distribution list (owner-specified 2026-06-11); PRICE_MAIL_TO in

@@ -22,6 +22,7 @@ MAX_COORD_ERRORS="${BLINKIT_MONITOR_MAX_COORD_ERRORS:-0}"
 STALE_ALERT_AFTER="${BLINKIT_MONITOR_STALE_ALERT_AFTER:-09:15}"
 REPORT_ALERT_AFTER="${BLINKIT_MONITOR_REPORT_ALERT_AFTER:-10:05}"
 DRY="${BLINKIT_MONITOR_DRYRUN:-0}"
+EXIT_CODE="${BLINKIT_MONITOR_EXIT_CODE:-0}"
 
 mkdir -p "$LOG_DIR"
 
@@ -342,5 +343,8 @@ import json, sys
 d=json.loads(sys.argv[1])
 print("-".join(i.get("code","issue") for i in d.get("issues", [])[:4]) or "unknown")
 PY
-)" "$(cat /tmp/blinkit-monitor-msg.txt)"
+	)" "$(cat /tmp/blinkit-monitor-msg.txt)"
+  if [ "$EXIT_CODE" = "1" ]; then
+    exit 1
+  fi
 fi

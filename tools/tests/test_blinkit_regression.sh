@@ -6,10 +6,11 @@ cd "$ROOT"
 
 (cd platforms/blinkit && npm test)
 tools/cron/tests/test_blinkit_quality_monitor.sh
+bash tools/mailer/tests/test_blinkit_quality_holdback.sh
 python3 -m unittest discover -s tools/pricematch/tests
 
 node -c platforms/blinkit/scrape.js
 python3 -m py_compile platforms/blinkit/build_excel.py tools/pricematch/pricematch_core.py
-bash -n platforms/blinkit/ingest.sh tools/cron/blinkit_quality_monitor.sh tools/cron/tests/test_blinkit_quality_monitor.sh
+bash -n platforms/blinkit/ingest.sh tools/cron/blinkit_quality_monitor.sh tools/cron/tests/test_blinkit_quality_monitor.sh tools/mailer/mail_price_data.sh tools/mailer/tests/test_blinkit_quality_holdback.sh
 
 echo "PASS blinkit regression suite"
