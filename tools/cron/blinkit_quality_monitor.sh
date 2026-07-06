@@ -57,7 +57,7 @@ alert_once(){
 
 mac_running(){
   ssh -o BatchMode=yes -o ConnectTimeout=10 macpro \
-    "pgrep -f 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' >/dev/null" \
+    "pgrep -f 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js|node scrape.js' >/dev/null" \
     >/dev/null 2>&1
 }
 

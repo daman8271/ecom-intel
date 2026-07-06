@@ -25,7 +25,7 @@ end_epoch() {
 mac_status() {
   local progress_file="/Users/danny./VPS-Migration/imported/ecom-intel/platforms/blinkit/.progress.${TODAY}.json"
   ssh -o BatchMode=yes -o ConnectTimeout=10 macpro \
-    "ps -axo pid,etime,command | grep -E 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' | grep -v grep || true
+    "ps -axo pid,etime,command | grep -E 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js|node scrape.js' | grep -v grep || true
 python3 - <<'PY' '$progress_file' 2>/dev/null || true
 import json, os, sys
 p = sys.argv[1]
@@ -65,7 +65,7 @@ while [ "$(date +%s)" -le "$(end_epoch)" ]; do
   [ -f "$REPORT" ] && log "main report present: $(stat -c '%y %s' "$REPORT" 2>/dev/null)" || log "main report missing"
   [ -f "$NOT_LISTED" ] && log "not-listed report present: $(stat -c '%y %s' "$NOT_LISTED" 2>/dev/null)" || log "not-listed report missing"
   mac_status
-  BLINKIT_MONITOR_DRYRUN=1 "$DIR/tools/cron/blinkit_quality_monitor.sh" watch >> "$LOG" 2>&1 || true
+  BLINKIT_MONITOR_DRYRUN=1 "$DIR/tools/cron/blinkit_quality_monitor.sh" poll >> "$LOG" 2>&1 || true
   sleep "${BLINKIT_WATCH_INTERVAL:-300}"
 done
 log "done"
