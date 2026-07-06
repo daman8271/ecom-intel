@@ -1,0 +1,30 @@
+{
+  "run_id": "bb-smoke-20260706-155909",
+  "created_at": "2026-07-06T10:29:09Z",
+  "pins_total": 3,
+  "weights": {
+    "vps": 1,
+    "macpro": 1,
+    "kvm1": 1
+  },
+  "workers": [
+    {
+      "name": "vps",
+      "weight": 1,
+      "pins": 1,
+      "result": "vps.json"
+    },
+    {
+      "name": "macpro",
+      "weight": 1,
+      "pins": 1,
+      "result": "macpro.json"
+    },
+    {
+      "name": "kvm1",
+      "weight": 1,
+      "pins": 1,
+      "result": "kvm1.json"
+    }
+  ]
+}
