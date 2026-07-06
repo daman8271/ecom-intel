@@ -27,7 +27,6 @@ const BLINKIT_AUTH = (() => {
   const deviceId = process.env.BLINKIT_DEVICE_ID || process.env.BLINKIT_AUTH_DEVICE_ID || fileAuth.deviceId || '';
   return { accessToken, deviceId };
 })();
-const BLINKIT_REQUIRE_AUTH = process.env.BLINKIT_REQUIRE_AUTH === '1';
 // NOTE: keep this LOW (2). Blinkit rate-limits dark-store geocode/resolution per
 // IP; at concurrency >=3 from the datacenter IP many pincodes never re-resolve
 // off the Gurgaon default and get (correctly) dropped as unresolved — tanking
@@ -670,10 +669,6 @@ async function scrapeWithBackoff(browser, rec) {
 }
 
 if (require.main === module) (async () => {
-  if (BLINKIT_REQUIRE_AUTH && !BLINKIT_AUTH) {
-    process.stderr.write('[auth] BLINKIT_REQUIRE_AUTH=1 but no Blinkit access token was provided\n');
-    process.exit(3);
-  }
   const browser = process.env.BLINKIT_SIM === '1' ? null : await chromium.launch({ headless: true });
   const t0 = Date.now();
   // Resume: reload any per-pincode results already captured for TODAY and skip them.
@@ -701,8 +696,6 @@ if (require.main === module) (async () => {
     unique_skus: new Set(allRows.map((r) => r.canonical)).size,
     wall_s: Math.round((Date.now() - t0) / 1000),
     partial,
-    auth_session: BLINKIT_AUTH ? 1 : 0,
-    auth_required: BLINKIT_REQUIRE_AUTH ? 1 : 0,
     captured_at: new Date().toISOString(),
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');

@@ -403,7 +403,7 @@ const watchdog = (require.main !== module) ? null : setTimeout(() => {
 
 // Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
 // only runs when invoked directly, so `require`-ing this file never launches a browser.
-module.exports = { parseVolMl, canonical, volMl };
+module.exports = { parseVolMl, canonical, volMl, parseProducts, fetchQuery, verifyMember };
 
 if (require.main === module) (async () => {
   const browser = await chromium.launch({

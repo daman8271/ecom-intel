@@ -50,6 +50,10 @@ def recompute_summary(platform: str, results: list[dict], per_pin: list[dict], a
     if any("serviceable" in p for p in per_pin):
         summary["pincodes_serviceable"] = sum(1 for p in per_pin if p.get("serviceable"))
 
+    if platform == "blinkit":
+        summary["auth_session"] = 1 if summaries and all(bool(s.get("auth_session")) for s in summaries) else 0
+        summary["auth_required"] = 1 if any(bool(s.get("auth_required")) for s in summaries) else 0
+
     if platform == "zepto" or any("freshness" in s for s in summaries):
         summary["rows_in_stock"] = sum(1 for r in all_rows if r.get("in_stock"))
         summary["rows_oos"] = sum(1 for r in all_rows if not r.get("in_stock"))

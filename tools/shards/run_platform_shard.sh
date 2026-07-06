@@ -67,6 +67,26 @@ fi
 SCRAPER="scrape.js"
 [ "$PLATFORM" = "flipkart-minutes" ] && SCRAPER="scrape.js"
 
+if [ "$PLATFORM" = "blinkit" ]; then
+  if [ -z "${BLINKIT_AUTH_STATE_FILE:-}" ]; then
+    for candidate in \
+      "$ROOT/secrets/blinkit-auth-state.json" \
+      "/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json"
+    do
+      if [ -s "$candidate" ]; then
+        BLINKIT_AUTH_STATE_FILE="$candidate"
+        break
+      fi
+    done
+  fi
+  if [ -z "${BLINKIT_AUTH_STATE_FILE:-}" ] || [ ! -s "$BLINKIT_AUTH_STATE_FILE" ]; then
+    echo "missing Blinkit auth state; set BLINKIT_AUTH_STATE_FILE or install secrets/blinkit-auth-state.json" >&2
+    exit 3
+  fi
+  export BLINKIT_AUTH_STATE_FILE
+  export BLINKIT_REQUIRE_AUTH="${BLINKIT_REQUIRE_AUTH:-1}"
+fi
+
 ts() { date -u '+%Y-%m-%dT%H:%M:%SZ'; }
 
 echo "[$(ts)] shard START platform=$PLATFORM run_id=$RUN_ID shard=$SHARD_INDEX/$SHARD_TOTAL config=$SHARD_CONFIG"

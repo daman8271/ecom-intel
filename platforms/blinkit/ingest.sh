@@ -43,13 +43,14 @@ BLINKIT_MIN_PERPIN_STORES="${BLINKIT_MIN_PERPIN_STORES:-455}"   # 90% of the 502
 BLINKIT_MIN_ETA_PCT="${BLINKIT_MIN_ETA_PCT:-90}"            # rows with numeric eta_min (healthy runs: ~98%)
 BLINKIT_MAX_FLIP_PCT="${BLINKIT_MAX_FLIP_PCT:-10}"          # same-pin store flips vs last-good (baseline <=2%)
 BLINKIT_MAX_WALL_S="${BLINKIT_MAX_WALL_S:-2500}"            # healthy runs ~700s; the degraded 2026-07-05 run took 5218s
+BLINKIT_REQUIRE_AUTH_DROP="${BLINKIT_REQUIRE_AUTH_DROP:-1}"  # fail-closed after 2026-07-06 false-OOS incident
 BLINKIT_STORE_LEDGER="${BLINKIT_STORE_LEDGER:-$ROOT/data/blinkit/store_counts.csv}"
 BLINKIT_MAX_BLOCKED="${BLINKIT_MAX_BLOCKED:-0}"
 export BLINKIT_EXPECTED_CONFIG BLINKIT_BASELINE_RESULT BLINKIT_MIN_PINCODES
 export BLINKIT_MIN_WITH_JIVO BLINKIT_MIN_RESOLVED BLINKIT_MAX_UNRESOLVED
 export BLINKIT_MIN_ROWS BLINKIT_MIN_SKUS BLINKIT_MIN_STORES BLINKIT_MAX_BLOCKED
 export BLINKIT_MIN_STORES_OVERRIDE BLINKIT_MIN_STORES_ABS BLINKIT_MIN_PERPIN_STORES
-export BLINKIT_MIN_ETA_PCT BLINKIT_MAX_FLIP_PCT BLINKIT_MAX_WALL_S BLINKIT_STORE_LEDGER BLINKIT_VALIDATE_ONLY
+export BLINKIT_MIN_ETA_PCT BLINKIT_MAX_FLIP_PCT BLINKIT_MAX_WALL_S BLINKIT_REQUIRE_AUTH_DROP BLINKIT_STORE_LEDGER BLINKIT_VALIDATE_ONLY
 
 python3 - "$STAGED" <<'PY'
 import json
@@ -143,6 +144,7 @@ max_unresolved = int(os.environ.get("BLINKIT_MAX_UNRESOLVED", "45"))
 blocked_max = int(os.environ.get("BLINKIT_MAX_BLOCKED", "0"))
 
 partial = bool(d.get("partial") or s.get("partial"))
+auth_session = bool(s.get("auth_session"))
 blocked = as_int("pincodes_blocked")
 summary_total = as_int("pincodes_total")
 summary_rows = as_int("total_rows")
@@ -157,6 +159,8 @@ store_ids = {str(r.get("store_id") or "").strip() for r in rows if r.get("store_
 
 if partial:
     raise SystemExit("Refusing partial Blinkit drop: partial=true")
+if os.environ.get("BLINKIT_REQUIRE_AUTH_DROP", "1") == "1" and not auth_session:
+    raise SystemExit("Refusing unauthenticated Blinkit drop: summary.auth_session is not set")
 if blocked > blocked_max:
     raise SystemExit(f"Refusing blocked Blinkit drop: pincodes_blocked={blocked} max={blocked_max}")
 if bad_perpin_blocks:
