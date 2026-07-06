@@ -1,0 +1,30 @@
+{
+  "run_id": "bb-team-20260707-030001",
+  "created_at": "2026-07-06T21:30:01Z",
+  "pins_total": 227,
+  "weights": {
+    "vps": 5,
+    "macpro": 4,
+    "kvm1": 1
+  },
+  "workers": [
+    {
+      "name": "vps",
+      "weight": 5,
+      "pins": 115,
+      "result": "vps.json"
+    },
+    {
+      "name": "macpro",
+      "weight": 4,
+      "pins": 90,
+      "result": "macpro.json"
+    },
+    {
+      "name": "kvm1",
+      "weight": 1,
+      "pins": 22,
+      "result": "kvm1.json"
+    }
+  ]
+}
