@@ -8,6 +8,7 @@ MONITOR="$ROOT/tools/cron/blinkit_quality_monitor.sh"
 GOOD="$(mktemp)"
 BAD="$(mktemp)"
 BAD_UNVERIFIED="$(mktemp)"
+BAD_PRICE_PROBE_DISABLED="$(mktemp)"
 BAD_CANOLA_OOS="$(mktemp)"
 BAD_CANOLA_PRICE="$(mktemp)"
 BAD_CANOLA_UNVERIFIED_PRICE="$(mktemp)"
@@ -23,17 +24,21 @@ BAD_MAIN_MISSING_NL_OUT="$(mktemp)"
 BAD_NOT_LISTED_WORKBOOK_OUT="$(mktemp)"
 BAD_OUT="$(mktemp)"
 BAD_UNVERIFIED_OUT="$(mktemp)"
+BAD_PRICE_PROBE_DISABLED_OUT="$(mktemp)"
 BAD_CANOLA_OOS_OUT="$(mktemp)"
 BAD_CANOLA_PRICE_OUT="$(mktemp)"
 BAD_CANOLA_UNVERIFIED_PRICE_OUT="$(mktemp)"
 BAD_WORKBOOK_OUT="$(mktemp)"
-trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_CANOLA_UNVERIFIED_PRICE" "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_MAIN_MISSING_NL" "$BAD_NOT_LISTED_WORKBOOK" "$BAD_WORKBOOK" "$GOOD_OUT" "$GOOD_WORKBOOK_OUT" "$MISSING_NOT_LISTED_OUT" "$BAD_MAIN_MISSING_NL_OUT" "$BAD_NOT_LISTED_WORKBOOK_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_CANOLA_UNVERIFIED_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
+trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_PRICE_PROBE_DISABLED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_CANOLA_UNVERIFIED_PRICE" "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_MAIN_MISSING_NL" "$BAD_NOT_LISTED_WORKBOOK" "$BAD_WORKBOOK" "$GOOD_OUT" "$GOOD_WORKBOOK_OUT" "$MISSING_NOT_LISTED_OUT" "$BAD_MAIN_MISSING_NL_OUT" "$BAD_NOT_LISTED_WORKBOOK_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_PRICE_PROBE_DISABLED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_CANOLA_UNVERIFIED_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
 
-python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_CANOLA_UNVERIFIED_PRICE" <<'PY'
+python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_PRICE_PROBE_DISABLED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_CANOLA_UNVERIFIED_PRICE" <<'PY'
 import json, sys
-src, good_path, bad_path, bad_unverified_path, bad_canola_oos_path, bad_canola_price_path, bad_canola_unverified_price_path = sys.argv[1:]
+src, good_path, bad_path, bad_unverified_path, bad_price_probe_disabled_path, bad_canola_oos_path, bad_canola_price_path, bad_canola_unverified_price_path = sys.argv[1:]
 good = json.load(open(src, encoding="utf-8"))
 good["summary"]["captured_at"] = "2099-01-01T04:00:00.000Z"
+good["summary"]["pdp_price_probe_enabled"] = 1
+good["summary"]["pdp_price_probe_checked"] = 1
+good["summary"]["pdp_price_probe_updates"] = 0
 json.dump(good, open(good_path, "w", encoding="utf-8"))
 
 bad = json.loads(json.dumps(good))
@@ -54,6 +59,12 @@ for row in [bad_unverified["allRows"][0], bad_unverified["perPin"][0]["rows"][0]
     row["stock_source"] = "search_card_oos"
     row["pdp_checked"] = 0
 json.dump(bad_unverified, open(bad_unverified_path, "w", encoding="utf-8"))
+
+bad_price_probe_disabled = json.loads(json.dumps(good))
+bad_price_probe_disabled["summary"].pop("pdp_price_probe_enabled", None)
+bad_price_probe_disabled["summary"].pop("pdp_price_probe_checked", None)
+bad_price_probe_disabled["summary"].pop("pdp_price_probe_updates", None)
+json.dump(bad_price_probe_disabled, open(bad_price_probe_disabled_path, "w", encoding="utf-8"))
 
 def canola_row(prid, pack, vol_ml, sale, mrp):
     row = json.loads(json.dumps(good["allRows"][0]))
@@ -207,6 +218,14 @@ BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
   "$MONITOR" test > "$BAD_UNVERIFIED_OUT"
 grep -q '"ok": false' "$BAD_UNVERIFIED_OUT"
 grep -q 'unverified_oos_high' "$BAD_UNVERIFIED_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$BAD_PRICE_PROBE_DISABLED" \
+BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
+  "$MONITOR" test > "$BAD_PRICE_PROBE_DISABLED_OUT"
+grep -q '"ok": false' "$BAD_PRICE_PROBE_DISABLED_OUT"
+grep -q 'pdp_price_probe_disabled' "$BAD_PRICE_PROBE_DISABLED_OUT"
 
 BLINKIT_MONITOR_DRYRUN=1 \
 BLINKIT_MONITOR_DATE=2099-01-01 \

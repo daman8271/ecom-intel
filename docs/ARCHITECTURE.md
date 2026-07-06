@@ -137,7 +137,9 @@ This is the single biggest source of per-platform code difference:
     `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` on the Mac collector
     or `/opt/ecom-intel/secrets/blinkit-auth-state.json` for VPS emergency/manual
     shards. Summaries must carry `auth_session` and `auth_required`; ingest defaults
-    to `BLINKIT_REQUIRE_AUTH_DROP=1` and rejects unauthenticated drops.
+    to `BLINKIT_REQUIRE_AUTH_DROP=1` and rejects unauthenticated drops. The accepted
+    run also requires search + PDP OOS probes and PDP price-probe canaries so
+    search-only false OOS and stale search-card prices are held before delivery.
   - **** — stealth POST to its public search API `/api//search/v2`
     (now **offset-paginated** for the full Jivo catalogue, c0bc409), location in the
     request body — no page render. **Currently 403-blocked at the IP level (0 rows,
@@ -210,7 +212,7 @@ cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; 
   ├─ Mac Pro launchd com.danny.blinkit-mac-to-vps
   │    └─ /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
   │       ├─ BLINKIT_REQUIRE_AUTH=1 with /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
-  │       ├─ BLINKIT_OOS_PROBE=1 and BLINKIT_PDP_OOS_PROBE=1
+  │       ├─ BLINKIT_OOS_PROBE=1, BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
   │       └─ VPS ingest with BLINKIT_REQUIRE_AUTH_DROP=1 → build/review/deliver
   └─ tools/cron/deadline_sweep.sh 10:00 — predict chain runtime (durations.jsonl p90),
   │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE

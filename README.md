@@ -50,7 +50,7 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 
 | Platform | Type | Status | Coverage | Jivo SKUs | Notes |
 |---|---|---|---|---|---|
-| **Blinkit** | quick-comm | ✅ LIVE | 902 daily pincodes / 468 Jivo-priced pins in the 2026-07-06 auth-corrected run | ~8 | Mac Pro residential collector; authenticated Blinkit session required; no anonymous fallback |
+| **Blinkit** | quick-comm | ✅ LIVE | 902 daily pincodes / 468 Jivo-priced pins in the 2026-07-06 auth-corrected run | ~9 expected | Mac Pro residential collector; authenticated Blinkit session required; PDP OOS + price canaries required; no anonymous fallback |
 | **** | quick-comm | ⚠️ BLOCKED | 332 pincodes | ~8 | stealth POST to `/search/v2`, now **offset-paginated** for the full catalogue; but the DC IP is **403-blocked again (0 rows, 2026-06-05)** → needs a residential proxy or a logged-in  session (`platforms//LOGIN-COOKIES.md`). 403 fail-safe → review BROKEN, never ships. |
 | **Zepto** | quick-comm | ✅ LIVE | 332 pincodes | ~11 | reached via `bff-gateway.zeptonow.com` BFF API (the CloudFront website still 403s — gateway is direct), no proxy |
 | **Flipkart Minutes** | quick-comm | ✅ LIVE | 345 pincodes | ~10 | `HYPERLOCAL` store; GPS "use my location" |
@@ -115,10 +115,15 @@ set, not part of the Wave 1 config generator.
   LaunchAgent `com.danny.blinkit-mac-to-vps`. It requires saved login/auth state
   at `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, exports
   `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
-  `BLINKIT_PDP_OOS_PROBE=1`; VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`.
-  The result summary must include `auth_session` and `auth_required`;
-  unauthenticated Blinkit drops are rejected because anonymous sessions can produce
-  false Out of Stock rows.
+  `BLINKIT_PDP_OOS_PROBE=1`, and `BLINKIT_PDP_PRICE_PROBE=1`; VPS ingest defaults
+  to `BLINKIT_REQUIRE_AUTH_DROP=1`. The result summary must include
+  `auth_session`, `auth_required`, `oos_probe_enabled`, `pdp_oos_probe_enabled`, and
+  `pdp_price_probe_enabled`; unauthenticated or unprobed Blinkit drops are rejected
+  because anonymous/search-only sessions can produce false Out of Stock rows and
+  stale search-card prices. Blinkit output separates `Listed - Out of stock` from
+  `Not listed`; a standalone `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`
+  is direct-sent to `917703818227@s.whatsapp.net` only after the main Blinkit
+  workbook passes quality.
 - **Configs:** `platforms/<p>/pincodes.daily.json` + `pincodes.full25.json` (regen via
   `tools/pincodes/gen_full_configs.py`).
 - **Honest coverage ledger:** `data/coverage/ledger.csv` records, per
@@ -383,6 +388,8 @@ chmod 600 secrets.env
 #     VPS emergency/shard auth state: /opt/ecom-intel/secrets/blinkit-auth-state.json
 #     Mac wrapper: /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
 #     LaunchAgent: com.danny.blinkit-mac-to-vps at 06:30 IST
+#     Required flags: BLINKIT_REQUIRE_AUTH=1, BLINKIT_OOS_PROBE=1,
+#     BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
 
 # 4. Install cron (sets TZ to Asia/Kolkata, schedules runs + healthcheck)
 ./setup_cron.sh

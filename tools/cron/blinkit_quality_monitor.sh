@@ -170,6 +170,9 @@ if sum(1 for r in rows if not r.get("in_stock")):
     if s.get("pdp_oos_probe_enabled") != 1:
         issue("pdp_probe_disabled", "OOS rows exist but summary.pdp_oos_probe_enabled != 1")
 
+if s.get("pdp_price_probe_enabled") != 1:
+    issue("pdp_price_probe_disabled", f"summary.pdp_price_probe_enabled={s.get('pdp_price_probe_enabled')} != 1")
+
 calculated_unverified_oos = sum(1 for r in rows if not r.get("in_stock") and not r.get("pdp_checked") and r.get("stock_source") not in ("pdp", "pdp_probe"))
 summary_unverified_oos = s.get("unverified_oos")
 try:

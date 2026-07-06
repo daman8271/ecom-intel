@@ -15,8 +15,9 @@ actually has presence. Generated Excel reports for every live platform are in
   under LaunchAgent `com.danny.blinkit-mac-to-vps` at **06:30 IST**. The wrapper
   uses `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, exports
   `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
-  `BLINKIT_PDP_OOS_PROBE=1`, and VPS ingest rejects unauthenticated drops by default
-  with `BLINKIT_REQUIRE_AUTH_DROP=1`.
+  `BLINKIT_PDP_OOS_PROBE=1`, and `BLINKIT_PDP_PRICE_PROBE=1`. VPS ingest rejects
+  unauthenticated drops by default with `BLINKIT_REQUIRE_AUTH_DROP=1`, and the
+  quality monitor rejects drops missing PDP price-probe metadata.
 - **VPS emergency/manual Blinkit auth state** lives at
   `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Do not publish or accept
   anonymous Blinkit stock data; `summary.auth_session` and `summary.auth_required`
@@ -130,7 +131,11 @@ to a captcha on the datacenter IP. See `docs/PROXY.md`.
   `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` at 06:30 IST,
   using `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` and
   `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
-  `BLINKIT_PDP_OOS_PROBE=1`; VPS ingest uses `BLINKIT_REQUIRE_AUTH_DROP=1`.
+  `BLINKIT_PDP_OOS_PROBE=1`, plus `BLINKIT_PDP_PRICE_PROBE=1` for screenshot-class
+  stale-price canaries. VPS ingest uses `BLINKIT_REQUIRE_AUTH_DROP=1`. The workbook
+  separates `Listed - Out of stock` from `Not listed`; a separate
+  `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx` is sent only to the configured
+  direct WhatsApp contact after the main Blinkit workbook passes quality.
 - **BigBasket pincode cron (IST):** root crontab runs
   `platforms/bigbasket/team_run_pincode.sh run` at **03:00** in tmux. It shards the
   run across VPS + Mac Pro + KVM1, merges `result_pincode.json`, builds the pincode

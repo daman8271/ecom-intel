@@ -69,10 +69,14 @@ LaunchAgent:
 com.danny.blinkit-mac-to-vps
 ```
 
-Schedule: `03:45` IST. The wrapper uses the persistent auth state at
+Schedule: `06:30` IST. The wrapper uses the persistent auth state at
 `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, fails before scraping if
 that file is missing/invalid, uploads the full result to the VPS, and invokes Blinkit
-ingest with `BLINKIT_REQUIRE_AUTH_DROP=1`.
+ingest with `BLINKIT_REQUIRE_AUTH_DROP=1`. It exports `BLINKIT_REQUIRE_AUTH=1`,
+`BLINKIT_OOS_PROBE=1`, `BLINKIT_PDP_OOS_PROBE=1`, and
+`BLINKIT_PDP_PRICE_PROBE=1`. The daily workbook separates `Not listed` from
+`Listed - Out of stock`; the standalone not-listed workbook is delivered only after
+the main Blinkit quality gate passes.
 
 For a manual shard worker on the Mac, run from the current tree:
 

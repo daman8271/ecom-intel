@@ -16,6 +16,14 @@ or when the expected pincode config has coordinates outside the India bounding b
 The current promoted repaired artifact is grandfathered with
 `BLINKIT_ALLOW_LEGACY_REPAIRED_OOS=1`; new raw drops still fail closed by default.
 
+2026-07-07 live-run correction: the Mac Pro collector copy was synced to the VPS
+scraper hash before the 06:30 run, and the Mac wrapper now exports
+`BLINKIT_PDP_PRICE_PROBE=1`. The quality monitor rejects any accepted Blinkit result
+missing `summary.pdp_price_probe_enabled=1`. A temporary live watcher can be started
+with `tools/cron/blinkit_live_watch.sh`; it writes
+`logs/blinkit_live_watch-YYYY-MM-DD.log` and repeatedly records Mac process status,
+today's expected workbooks, and the read-only quality monitor result.
+
 ## Code map (line numbers as of this commit)
 
 | Concern | Location |
@@ -159,6 +167,8 @@ Observed (2026-07-07):
   compatibility exemption.
 - Missing `summary.oos_probe_enabled` failed with `Refusing unprobed Blinkit OOS drop`.
 - Missing `summary.pdp_oos_probe_enabled` failed with `Refusing unverified Blinkit OOS drop`.
+- Missing `summary.pdp_price_probe_enabled` failed in `tools/cron/blinkit_quality_monitor.sh`
+  with `pdp_price_probe_disabled`.
 - Unverified OOS failed with `Refusing excessive unverified Blinkit OOS`.
 - Missing PRID, missing listing URL, and malformed listing URL failed with
   `Refusing Blinkit row identity regression`.

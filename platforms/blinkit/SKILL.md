@@ -47,6 +47,26 @@ before any scrape. Summaries now include `auth_session` and `auth_required`, and
 drops are rejected before build/delivery and old false-OOS data cannot be delivered
 again.
 
+## 2026-07-07 fix — not-listed and PDP price verification
+
+Do not collapse listing absence into stock absence. Blinkit output now separates:
+
+- `Listed - In stock`: product card/PDP exists and is available.
+- `Listed - Out of stock`: product is listed, but PDP/search verification says no stock.
+- `Not listed`: expected Jivo SKU/PRID is absent from the resolved pincode/store search.
+
+`build_excel.py` writes both a `Listing Status` sheet and a `Not Listed Pincodes`
+sheet in the main workbook, and also emits
+`Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`. The mailer direct-sends that
+standalone workbook to the configured WhatsApp contact only after the main Blinkit
+workbook passes quality.
+
+Price correctness also has a PDP guard. Search cards can show a base/stale price
+while the PDP shows a lower effective price such as `Buy at`, `Buy for`, `Effective
+price`, or `Get it at`. Production runs keep `BLINKIT_PDP_PRICE_PROBE=1`, and the
+quality monitor requires `summary.pdp_price_probe_enabled=1`. Current screenshot
+canaries include `110094:407561`, `110012:407851`, and `110012:406593`.
+
 ## The trick
 Blinkit picks a dark store from your authenticated delivery session and
 `localStorage.location`. Hydrate auth first, override the delivery location, verify the
@@ -77,7 +97,7 @@ local store, then search and scrape.
 - ~28/40 pincodes carry Jivo; the other 12 genuinely have zero Jivo stock (real distribution-gap intel, not a bug). Hyderabad / Chennai / Ahmedabad = currently zero Jivo on Blinkit.
 
 ## Output shape (keep this for build_excel.py to work)
-Each row: `{city, pincode, locality, store_id, store_name, sku_raw, canonical, pack, vol_ml, sale, mrp, discount_pct, per_litre, eta_min, in_stock}`. Written to `result.json` as `{summary, perPin, allRows}`. Blinkit `summary` must also carry `auth_session: 1` and `auth_required: 1` in production/auth-required runs.
+Each row: `{city, pincode, locality, store_id, store_name, sku_raw, canonical, pack, vol_ml, sale, mrp, discount_pct, per_litre, eta_min, in_stock}` plus probe metadata such as `listing_status`, `stock_source`, `price_source`, `base_sale`, `offer_sale`, `pdp_checked`, and `pdp_price_checked` when applicable. Written to `result.json` as `{summary, perPin, allRows}`. Blinkit `summary` must carry `auth_session: 1`, `auth_required: 1`, `oos_probe_enabled: 1`, `pdp_oos_probe_enabled: 1`, and `pdp_price_probe_enabled: 1` in production/auth-required runs.
 
 ## When to adapt for a new platform
 Copy this whole folder, then change: the base URL, the location-setting mechanism (Zepto/Amazon-Now store location differently), and the card selectors. Keep the output row shape identical.
