@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-05
-observations: 216
+last_seen: 2026-07-06
+observations: 224
 latest_status: NOT_LISTED
-below_days: 7
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-500ml-imported-from-spain-everyday-use-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-05) — ref ₹339 vs live ₹-
-- **Days below reference:** 7 of 27
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-06) — ref ₹339 vs live ₹-
+- **Days below reference:** 8 of 28
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]]
 
-## Ref-vs-live history (216 observations)
+## Ref-vs-live history (224 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -261,6 +261,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-05,flipkart,NOT_LISTED,SVD,339,,,,,,0,false
 2026-07-05,flipkart-minutes,NOT_LISTED,SVD,339,,,,,,0,false
 2026-07-05,zepto,NOT_LISTED,SVD,339,,,,,,0,false
+2026-07-06,amazon,BELOW,SVD,339,269,269,269,-70,-20.65,1,true
+2026-07-06,amazon-fresh,NOT_LISTED,SVD,339,,,,,,0,false
+2026-07-06,amazon-now,NOT_LISTED,SVD,339,,,,,,0,false
+2026-07-06,bigbasket,NOT_LISTED,SVD,339,,,,,,0,false
+2026-07-06,blinkit,NOT_LISTED,SVD,339,,,,,,0,false
+2026-07-06,flipkart,NOT_LISTED,SVD,339,,,,,,0,false
+2026-07-06,flipkart-minutes,NOT_LISTED,SVD,339,,,,,,0,false
+2026-07-06,zepto,NOT_LISTED,SVD,339,,,,,,0,false
 ```
 
 ---
