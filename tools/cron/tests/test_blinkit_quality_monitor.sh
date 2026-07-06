@@ -10,12 +10,14 @@ BAD="$(mktemp)"
 BAD_UNVERIFIED="$(mktemp)"
 BAD_CANOLA_OOS="$(mktemp)"
 BAD_CANOLA_PRICE="$(mktemp)"
+BAD_WORKBOOK="$(mktemp --suffix=.xlsx)"
 GOOD_OUT="$(mktemp)"
 BAD_OUT="$(mktemp)"
 BAD_UNVERIFIED_OUT="$(mktemp)"
 BAD_CANOLA_OOS_OUT="$(mktemp)"
 BAD_CANOLA_PRICE_OUT="$(mktemp)"
-trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$GOOD_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
+BAD_WORKBOOK_OUT="$(mktemp)"
+trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_WORKBOOK" "$GOOD_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
 
 python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" <<'PY'
 import json, sys
@@ -136,5 +138,14 @@ BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
   "$MONITOR" test > "$BAD_CANOLA_PRICE_OUT"
 grep -q '"ok": false' "$BAD_CANOLA_PRICE_OUT"
 grep -q 'canary_110012_406593_stale_price' "$BAD_CANOLA_PRICE_OUT"
+
+printf 'not a workbook\n' > "$BAD_WORKBOOK"
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$GOOD" \
+BLINKIT_MONITOR_REPORT="$BAD_WORKBOOK" \
+  "$MONITOR" test > "$BAD_WORKBOOK_OUT"
+grep -q '"ok": false' "$BAD_WORKBOOK_OUT"
+grep -q 'workbook_check_failed' "$BAD_WORKBOOK_OUT"
 
 echo "PASS blinkit quality monitor canary regression"

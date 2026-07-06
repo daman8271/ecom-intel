@@ -283,7 +283,7 @@ if os.path.exists(report_path):
                 if h not in header:
                     issue("missing_master_column", f"Master Data missing {h}")
     except Exception as e:
-        warn("workbook_check_failed", str(e))
+        issue("workbook_check_failed", str(e))
 else:
     if after_cutoff(report_alert_after):
         issue("workbook_missing_after_cutoff", f"{report_path} missing after {report_alert_after} IST")
