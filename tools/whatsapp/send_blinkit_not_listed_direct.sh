@@ -20,6 +20,11 @@ if [ "${BLINKIT_SEND_NOT_LISTED_WA:-1}" != "1" ]; then
   exit 0
 fi
 
+if [ -f "$MARKER" ]; then
+  echo "Blinkit not-listed direct WhatsApp already sent for $DATE_IST: $MARKER"
+  exit 0
+fi
+
 if [ ! -f "$NOT_LISTED" ]; then
   echo "Blinkit not-listed direct WhatsApp skipped because not-listed workbook is missing: $NOT_LISTED"
   exit 0
@@ -36,11 +41,6 @@ if ! BLINKIT_MONITOR_DRYRUN=1 \
      BLINKIT_MONITOR_NOT_LISTED_REPORT="$NOT_LISTED" \
      "$ROOT/tools/cron/blinkit_quality_monitor.sh" "$PASS" >/dev/null; then
   echo "Blinkit not-listed direct WhatsApp skipped because main Blinkit report was held by quality gate"
-  exit 0
-fi
-
-if [ -f "$MARKER" ]; then
-  echo "Blinkit not-listed direct WhatsApp already sent for $DATE_IST: $MARKER"
   exit 0
 fi
 

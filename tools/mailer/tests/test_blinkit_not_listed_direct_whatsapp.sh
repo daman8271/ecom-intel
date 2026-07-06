@@ -94,6 +94,20 @@ grep -q "DRYRUN email:" "$OUT_GOOD"
 grep -q "TEST WhatsApp group:" "$OUT_GOOD"
 grep -q "TEST WhatsApp direct not-listed: 917703818227@s.whatsapp.net Jivo-Blinkit-Not-Listed-Pincodes-${DATE}.xlsx" "$OUT_GOOD"
 
+printf 'already sent\n' > "$ROOT/logs/blinkit-not-listed-wa-${DATE}.sent"
+MARKER_OUT="$(BLINKIT_NOT_LISTED_DATE="$DATE" \
+  BLINKIT_MONITOR_RESULT=/does/not/exist.json \
+  BLINKIT_MONITOR_REPORT="$BLINKIT_FILE" \
+  BLINKIT_MONITOR_NOT_LISTED_REPORT="$NOT_LISTED_FILE" \
+  MAILER_TEST_MODE=1 \
+  "$ROOT/tools/whatsapp/send_blinkit_not_listed_direct.sh" test)"
+echo "$MARKER_OUT" | grep -q "already sent for ${DATE}"
+if echo "$MARKER_OUT" | grep -q "TEST WhatsApp direct not-listed:"; then
+  echo "expected marker to suppress duplicate direct not-listed send" >&2
+  echo "$MARKER_OUT" >&2
+  exit 1
+fi
+
 PRICE_MAIL_DATE="$MISSING_MAIN_DATE" \
 MAILER_NO_REDIRECT=1 \
 MAILER_TEST_MODE=1 \
