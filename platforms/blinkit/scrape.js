@@ -49,6 +49,18 @@ const OOS_PROBE_OFFSETS = [
   { label: 'southeast', dlat: -0.012, dlon: 0.012 },
 ];
 const BLINKIT_PDP_OOS_PROBE = process.env.BLINKIT_PDP_OOS_PROBE !== '0';
+// Keep PDP price verification targeted: the user's screenshot failures were
+// specific pincode/SKU rows where search showed a stale/base price but PDP showed
+// a lower effective price. Probing every listed row would add thousands of PDP
+// visits and miss the 10:00 delivery window.
+const BLINKIT_PDP_PRICE_PROBE = process.env.BLINKIT_PDP_PRICE_PROBE !== '0';
+const DEFAULT_PDP_PRICE_CANARIES = '110094:407561,110012:407851,110012:406593';
+const PDP_PRICE_CANARIES = new Set(
+  (process.env.BLINKIT_PDP_PRICE_CANARIES || DEFAULT_PDP_PRICE_CANARIES)
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean)
+);
 
 // ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
 // At 1,885 pincodes a run is long, so it MUST survive interruption and rate-limiting
@@ -255,6 +267,14 @@ function probeRecords(rec) {
     lon: Math.round((Number(rec.lon) + o.dlon) * 1e7) / 1e7,
     probe_label: o.label,
   }));
+}
+
+function shouldPdpPriceProbe(rec, row) {
+  if (!BLINKIT_PDP_PRICE_PROBE) return false;
+  if (!row || !row.in_stock || !row.listing_url || !row.prid) return false;
+  const pin = String(rec && rec.pincode || row.pincode || '').trim();
+  const prid = String(row.prid || '').trim();
+  return PDP_PRICE_CANARIES.has(`${pin}:${prid}`) || PDP_PRICE_CANARIES.has(`*:${prid}`);
 }
 
 function parseJivoCards(cards, rec, store) {

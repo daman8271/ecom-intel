@@ -2026,17 +2026,5 @@
   "lat": 17.710815925,
   "lon": 83.304892275,
   "locality": "Maharanipeta S.O"
- },
- {
-  "city": "Delhi",
-  "pincode": "110092",
-  "tier": 1,
-  "represents": 1,
-  "pincodes": [
-   "110092"
-  ],
-  "lat": 28.657012344444443,
-  "lon": 77.29079936666666,
-  "locality": "Laxmi Nagar SO East Delhi"
  }
 ]

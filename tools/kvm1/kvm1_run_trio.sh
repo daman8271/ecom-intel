@@ -97,8 +97,12 @@ for P in $PLATFORMS; do
   LOG "$P: scraping (timeout $(scrape_timeout "$P")s, log $PLOG)"
   RC=0
   case "$P" in
-    flipkart)  # national listing set — scrape.js reads skus.master.tsv + its own pincodes.json
-      ( cd "$PDIR" && OUT_FILE="$OUT" timeout "$(scrape_timeout "$P")" node scrape.js ) >>"$PLOG" 2>&1 || RC=$? ;;
+    flipkart)  # national listing set — scrape.js reads skus.master.tsv + its own pincodes.json.
+               # NOTE: flipkart's scrape.js does NOT honor OUT_FILE (verified 2026-07-07);
+               # it writes $PDIR/result.json — copy that out afterwards.
+      rm -f "$PDIR/result.json"
+      ( cd "$PDIR" && timeout "$(scrape_timeout "$P")" node scrape.js ) >>"$PLOG" 2>&1 || RC=$?
+      [ -s "$PDIR/result.json" ] && cp "$PDIR/result.json" "$OUT" ;;
     *)         # per-pincode platforms use the DAILY price-tracking config (COVERAGE_DAILY parity)
       ( cd "$PDIR" && PINCODES_FILE="$PDIR/pincodes.daily.json" OUT_FILE="$OUT" \
           timeout "$(scrape_timeout "$P")" node scrape.js ) >>"$PLOG" 2>&1 || RC=$? ;;
