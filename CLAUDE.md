@@ -9,9 +9,10 @@ Tracks Jivo SKU prices/stock across quick-commerce + marketplace platforms at na
 - **Scraping = deterministic Node + Playwright scripts. ZERO LLM in the scrape loop.** (LLM in the loop = 100–10000× the cost; never do it.)
 - LLM is used only — later — for validation (cheap model) + narrative report (Sonnet).
 - Each platform is self-contained under `platforms/<name>/`.
-- `cron` triggers `./run_all.sh` for VPS-hosted platforms. Blinkit, BigBasket, and
-  Swiggy run off-box on the Mac Pro/residential session and enter the batch through
-  their `ingest.sh` paths.
+- `cron` triggers `./run_all.sh` for VPS-hosted platforms. Blinkit and Swiggy run
+  off-box and enter the batch through ingest paths. BigBasket pincode runs separately
+  at 03:00 through `platforms/bigbasket/team_run_pincode.sh` across VPS + Mac Pro +
+  KVM1; its pincode workbook is private/direct-only.
 
 ## Layout
 ```
@@ -19,11 +20,11 @@ ecom-intel/
 ├── CLAUDE.md              # this file (operator manual)
 ├── README.md              # repo overview · docs/ARCHITECTURE.md · docs/PROXY.md
 ├── run.sh                 # ./run.sh <p>  (scrape→excel→review→vault→telegram→push)
-├── run_all.sh             # one cron sweep: VPS platforms only; Blinkit/BigBasket/Swiggy are Mac/drop-fed
+├── run_all.sh             # one cron sweep: VPS platforms only; Blinkit/Swiggy drop-fed; BigBasket pincode separate
 ├── setup_cron.sh          # installs the cron (10:00 deadline sweep, 18:00 guardian deep-dive) + sets timezone
 ├── healthcheck.sh         # → tools/selfheal.sh (detect → re-run once → Telegram-escalate)
 ├── platforms/             # one self-contained dir per platform
-│   ├── blinkit/ / bigbasket/  # LIVE, Mac Pro residential-IP runners -> ingest.sh
+│   ├── blinkit/ / bigbasket/  # LIVE; Blinkit Mac/drop, BigBasket national + pincode team runner
 │   ├── flipkart-minutes/ flipkart/ amazon/ zepto/  # LIVE, direct VPS/data path
 │   ├── amazon-fresh/      # 8th LIVE — logged-in (cookie transplant), i=freshstore, in cron
 │   ├── amazon-now/        # 9th LIVE — logged-in (own dedicated account), genuine Now via scrape.ctnow.js (almBrandId=ctnow); lock kept w/ fresh pending a concurrency test
@@ -39,6 +40,7 @@ ecom-intel/
 ## Run a platform
 ```bash
 ssh macpro '/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh'  # Blinkit auth-required scrape/drop/ingest
+cd platforms/bigbasket && ./team_run_pincode.sh run                         # BigBasket pincode team run
 cat platforms/blinkit/result.json | python3 -m json.tool | head   # raw data
 ls output/                  # the Excel
 ```
@@ -79,7 +81,7 @@ python3 tools/coverage/coverage_report.py $(date +%F)   # honest per-city x per-
 | flipkart | ✅ LIVE | marketplace, national pricing, 1 row/SKU |
 | amazon | ✅ LIVE | guest interstitial bypass on /dp; targeted scrape of 314 ASINs; NO account location |
 | amazon-fresh | ✅ LIVE | logged-in (cookie transplant), i=freshstore raw POST+HTML; 332 pincodes, ~63 SKUs, ~13k rows; in cron |
-| bigbasket | ✅ LIVE (Mac/drop) | Runs on the Mac Pro residential IP via `/Users/danny./VPS-Migration/scripts/run_bigbasket_mac_to_vps.sh`, drops JSON to `platforms/bigbasket/ingest.sh`, and is spooled from `output/`. Old QuickCommerce pincode API and VPS browser paths refuse unless explicitly emergency-enabled. |
+| bigbasket | ✅ LIVE (national + pincode team) | National workbook is the small `Jivo-Bigbasket-Live` diagnostic. Pincode production runs `platforms/bigbasket/team_run_pincode.sh` at 03:00 across VPS + Mac Pro + KVM1 with logged-in cookies, merges `result_pincode.json`, writes `Jivo-BigBasket-Pincode-Report` only to `output/private-no-group/`, and direct-sends from the configured direct-recipient secret. It must not be attached to the Ecom group batch. |
 | amazon-now | ✅ LIVE | logged-in on its OWN dedicated account; **genuine Amazon Now** via `scrape.ctnow.js` (`/s?k=jivo&almBrandId=ctnow`, real "in 10 min"/overnight/tomorrow speed tiers). The old `i=nowstore` surface (legacy Prime-Now/marketplace SEARCH, 0 real ETAs) is FROZEN — see ROOTCAUSE-AmazonNow-2026-06-01.md. Now's account is now distinct from Fresh's (proven by cookie compare), so they CAN in principle run in parallel, but the shared .amazon-account.lock is KEPT until a supervised concurrent run proves non-interference. Cron PAUSED during rebuild; rebuilt + scale-validated 2026-06-03 (65-pincode representative run, 42 serviceable, badge-gated, no marketplace contamination). |
 
 ## Pipeline (run.sh, per platform)
@@ -108,9 +110,12 @@ lost). Plain `./run_all.sh` without the env = old behavior. An **18:00 daily gua
 deep-dive** (`./tools/guardian_daily.sh`) is unchanged. The daily sweep scrapes the VPS-run
 platforms SERIALLY — one platform at a time — in this order:
 flipkart-minutes, flipkart, zepto, amazon, amazon-fresh, amazon-now.
-**Blinkit, BigBasket, and Swiggy are NOT in this serial chain — they run off-box on the
+**Blinkit and Swiggy are NOT in this serial chain — they run off-box on the
 Mac Pro/residential IP and drop JSON into their `ingest.sh`; the 10:00 batch spools the
-resulting workbooks from `output/`.** ** was REMOVED from the chain
+resulting workbooks from `output/`. BigBasket pincode is also outside the serial chain:
+root cron runs `team_run_pincode.sh run` at 03:00 in tmux across VPS + Mac Pro + KVM1,
+then keeps the pincode workbook private/direct-only. The smaller national BigBasket
+workbook can still be spooled from `output/`.** ** was REMOVED from the chain
 2026-06-06** (WAF-dead, ~40m heal-retry waste per sweep; rebuild pending — owner).
 The sweep fires early in the small hours and self-aligns so the batch lands AT 10:00 AM.
 Now that there is a single daily sweep, the old two-sweep overlap concern is moot; the

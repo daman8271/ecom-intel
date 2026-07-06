@@ -86,6 +86,16 @@ const QUERIES = (process.env.BB_QUERIES
   ? process.env.BB_QUERIES.split(',')
   : ['jivo', 'jivo oil', 'jivo olive oil', 'jivo juice', 'jivo vinegar', 'jivo honey']
 ).map((s) => s.trim()).filter(Boolean);
+const DEFAULT_EXTRA_PRODUCT_URLS = [
+  // BB search hides these from the broad "jivo" result, but the product pages
+  // carry the same product JSON and location-scoped pricing/availability.
+  'https://www.bigbasket.com/pd/40304419/jivo-cold-pressed-soyabean-oil-5-l-can/',
+  'https://www.bigbasket.com/pd/40309978/jivo-cold-pressed-soyabean-oil-1-l-pouch/',
+];
+const EXTRA_PRODUCT_URLS = (process.env.BB_EXTRA_PRODUCT_URLS != null
+  ? process.env.BB_EXTRA_PRODUCT_URLS.split(',')
+  : DEFAULT_EXTRA_PRODUCT_URLS
+).map((s) => s.trim()).filter(Boolean);
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
 
 // --- price/pack helpers (same conventions as the other platforms) ----------
@@ -214,6 +224,76 @@ function parseProducts(json) {
     }
   }
   return out;
+}
+
+function productObjectsFromDetails(details) {
+  const out = [];
+  const seen = new Set();
+  function walk(p) {
+    if (!p || typeof p !== 'object') return;
+    if (p.id && p.desc && p.pricing) {
+      const key = String(p.id);
+      if (!seen.has(key)) {
+        seen.add(key);
+        out.push(p);
+      }
+    }
+    for (const c of (p.children || [])) walk(c);
+  }
+  walk(details);
+  for (const c of ((details && details.children) || [])) walk(c);
+  return out;
+}
+
+async function fetchProductDetailRows(page, url) {
+  const res = await page.evaluate(async ({ url }) => {
+    const ctrl = new AbortController();
+    const tid = setTimeout(() => ctrl.abort(), 20000);
+    try {
+      const r = await fetch(url, {
+        signal: ctrl.signal,
+        headers: {
+          accept: 'text/html,application/xhtml+xml',
+          'x-requested-with': 'XMLHttpRequest',
+        },
+      });
+      const text = await r.text();
+      if (r.status !== 200) return { __err: 'HTTP ' + r.status, __status: r.status, url: r.url };
+      const m = text.match(/<script id="__NEXT_DATA__" type="application\/json">([\s\S]*?)<\/script>/);
+      if (!m) return { __err: 'missing __NEXT_DATA__', __status: r.status, url: r.url };
+      const data = JSON.parse(m[1]);
+      return {
+        url: r.url,
+        productDetails: data && data.props && data.props.pageProps && data.props.pageProps.productDetails,
+      };
+    } catch (e) {
+      return { __err: e.message, __status: 0, url };
+    } finally {
+      clearTimeout(tid);
+    }
+  }, { url });
+
+  if (!res || res.__err) {
+    process.stderr.write(`[warn] product detail ${url}: ${res ? res.__err : 'empty response'}\n`);
+    return [];
+  }
+  const rows = [];
+  for (const p of productObjectsFromDetails(res.productDetails)) {
+    const row = buildRow(p);
+    if (row) rows.push(row);
+  }
+  process.stderr.write(`[ok] product detail ${url} -> +${rows.length} jivo\n`);
+  return rows;
+}
+
+async function fetchExtraProductRows(page) {
+  const rows = [];
+  for (const url of EXTRA_PRODUCT_URLS) {
+    const got = await fetchProductDetailRows(page, url);
+    rows.push(...got);
+    await page.waitForTimeout(700 + Math.random() * 800);
+  }
+  return rows;
 }
 
 // One raw page fetch via the in-page session. Returns parsed JSON, or
@@ -415,7 +495,7 @@ const watchdog = (require.main !== module) ? null : setTimeout(() => {
 
 // Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
 // only runs when invoked directly, so `require`-ing this file never launches a browser.
-module.exports = { parseVolMl, canonical, volMl, parseProducts, fetchQuery, verifyMember };
+module.exports = { parseVolMl, canonical, volMl, parseProducts, fetchQuery, fetchExtraProductRows, verifyMember };
 
 if (require.main === module) (async () => {
   const browser = await chromium.launch({
@@ -480,6 +560,15 @@ if (require.main === module) (async () => {
         // limit in the FIRST place (the primary fix; the per-page retry is the safety
         // net). Reliability > speed — the cron is serial and has the time.
         await page.waitForTimeout(3000 + Math.random() * 2500);
+      }
+      try {
+        for (const r of await fetchExtraProductRows(page)) {
+          const key = r.sku_id || r.canonical;
+          if (seen.has(key)) continue;
+          seen.add(key); rows.push(r);
+        }
+      } catch (e) {
+        process.stderr.write(`[err] extra product fallback: ${e.message}\n`);
       }
     } else {
       process.stderr.write('[err] could not load BigBasket homepage (Akamai block?) — emitting empty result\n');

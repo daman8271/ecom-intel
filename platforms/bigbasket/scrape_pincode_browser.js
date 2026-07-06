@@ -13,7 +13,7 @@ const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const fs = require('fs');
 const path = require('path');
 const { loadBBCookies, DEFAULT_COOKIE_PATH } = require('./import_cookies');
-const { fetchQuery, verifyMember } = require('./scrape');
+const { fetchQuery, fetchExtraProductRows, verifyMember } = require('./scrape');
 
 chromium.use(StealthPlugin());
 
@@ -304,6 +304,28 @@ async function fetchRowsForPin(page, loc) {
       });
     }
     await page.waitForTimeout(QUERY_DELAY_MS + Math.random() * 1000);
+  }
+  try {
+    for (const r of await fetchExtraProductRows(page)) {
+      const key = r.sku_id || r.canonical;
+      if (seen.has(key)) continue;
+      seen.add(key);
+      rows.push({
+        ...r,
+        city: loc.city || '',
+        pincode: String(loc.pincode || ''),
+        requested_city: loc.requested_city || loc.city || '',
+        resolved_city: loc.resolved_city || '',
+        resolved_pincode: loc.resolved_pincode || '',
+        requested_locality: loc.requested_locality || loc.locality || '',
+        resolved_locality: loc.resolved_locality || '',
+        locality: loc.locality || '',
+        store_id: loc.serving_sa || '',
+        store_name: 'BigBasket',
+      });
+    }
+  } catch (e) {
+    process.stderr.write(`[err] ${loc.pincode} extra product fallback: ${e.message}\n`);
   }
   return rows;
 }

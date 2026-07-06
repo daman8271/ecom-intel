@@ -16,7 +16,7 @@ New here? Read [[VAULT-SPEC]] for the design + Obsidian conventions.
 - [[amazon]] — marketplace · national
 - [[amazon-fresh]] — marketplace · national
 - [[amazon-now]] — marketplace · national
-- [[bigbasket]] — marketplace · national
+- [[bigbasket]] — grocery · national + pincode team
 - [[blinkit]] — quick-commerce · per-pincode
 - [[flipkart]] — marketplace · national
 - [[flipkart-minutes]] — quick-commerce · per-pincode

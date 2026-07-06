@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "pincodes_total": 1,
+    "pincodes_with_jivo": 0,
+    "unique_skus": 0,
+    "total_rows": 0,
+    "skus_with_price_variance": 0,
+    "verdict": "NO PRICE VARIANCE DETECTED in captured pincodes",
+    "source": "BigBasket logged-in browser pincode",
+    "queries": [
+      "jivo"
+    ],
+    "session_ok": true,
+    "member": true,
+    "pricing_mode": "member",
+    "member_id": 107517719,
+    "member_email": "",
+    "member_is_bbstar": false,
+    "wall_s": 12,
+    "captured_at": "2026-07-06T10:59:55.547Z",
+    "pincodes_target": 115,
+    "pincode_pull_complete": false,
+    "min_pincodes_required": 1,
+    "coverage_ok": true
+  },
+  "perPin": [
+    {
+      "city": "Bengaluru",
+      "pincode": "560006",
+      "locality": "J.C. Nagar",
+      "tier": 1,
+      "store_id": "21584,22669,30929",
+      "store_name": "BigBasket",
+      "set_status": "ok",
+      "fetch_ok": true,
+      "serving_sa": "21584,22669,30929",
+      "rows": [],
+      "requested_city": "Bengaluru",
+      "resolved_city": "Bangalore",
+      "resolved_pincode": 560006,
+      "requested_locality": "J.C. Nagar",
+      "resolved_locality": "Jayamahal",
+      "entry_context": "bbnow",
+      "entry_context_id": "10"
+    }
+  ],
+  "allRows": []
+}

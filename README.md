@@ -9,8 +9,8 @@ appended Predictions sheet) plus an **Obsidian-style Markdown "memory vault"**. 
 unattended on a Hostinger VPS via **cron — one deadline-aligned sweep daily, so all
 reports LAND together at 10:00 AM IST** (the serial chain starts early — per-platform
 runtimes predicted from history — and finished reports wait at a barrier, then ship as ONE
-batch at the slot time; residential-required collectors such as Blinkit feed the same
-batch from the Mac Pro) **plus an 18:00 guardian deep-dive** — with an automated review,
+batch at the slot time; residential/team collectors such as Blinkit and BigBasket
+feed separate vetted outputs) **plus an 18:00 guardian deep-dive** — with an automated review,
 an auto-heal guardian, self-heal, and verdict-gated Telegram delivery. Built and pitched
 to Jivo's head of e-commerce.
 
@@ -57,13 +57,18 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 | **Flipkart** | marketplace | ✅ LIVE | national | ~61 | national pricing → 1 row/SKU, tagged "All India" |
 | **Amazon** | marketplace | ✅ LIVE | national | ~314 ASINs | guest `/dp` scrape with interstitial bypass; richest catalog; sets no account location |
 | **Amazon Fresh** | quick-comm | ✅ LIVE | 332/332 pincodes serviceable | ~63 | logged-in (cookie transplant); `i=freshstore` raw POST+HTML; ~13k rows/run, ~7× richer than Now; no proxy; in cron |
-| **BigBasket** | grocery (national) | ✅ LIVE | national (single "All India") | ~27 | stealth browser past Akamai + in-page `listing-svc` JSON API; national pricing → 1 row/SKU; no proxy, no login; in cron |
+| **BigBasket** | grocery national + pincode-wise | ✅ LIVE | national workbook + pincode team run: 227 pins / 155 Jivo pins in the 2026-07-06 cleaned run | ~27 | stealth browser past Akamai + in-page `listing-svc`; pincode runner uses logged-in member cookies on VPS+Mac Pro+KVM1; pincode workbook is private/direct-only |
 | **Amazon Now** | quick-comm | ✅ LIVE | — | 0–14 | genuine Amazon Now via `scrape.ctnow.js` (`almBrandId=ctnow`). **Now in the serial cron sweep** — the serial loop (one platform at a time) is what guarantees it never co-runs with amazon-fresh (Amazon's delivery location is account-global server-side). Thinner catalog than Fresh. See `platforms/amazon-now/PLAN.md` |
 
 - **Marketplaces (Flipkart / Amazon)** price nationally, so we scrape the catalog
   once and tag rows "All India" rather than looping pincodes. Their value is
   **catalog breadth + price/MRP/discount** (Amazon tracks 314 ASINs vs ~8–11 on
   quick-comm). That's why their Excel city-matrix is a single column *by design*.
+- **BigBasket has two outputs:** the national workbook remains a small
+  catalogue/price diagnostic, while the pincode workbook is produced by
+  `platforms/bigbasket/team_run_pincode.sh` at 03:00 IST across VPS + Mac Pro + KVM1
+  and is delivered only through `output/private-no-group/` plus the configured direct
+  recipient.
 - **Zepto** went live 2026-05-29 — the public website is CloudFront-fronted and
   hard-403s the datacenter IP, but the app's BFF API gateway is reachable directly.
   No proxy needed. See `platforms/zepto/SKILL.md`.
@@ -86,11 +91,13 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 
 The quick-commerce platforms historically scraped a small set of **anchor**
 pincodes and *extrapolated* coverage to ~1,200 "represented" pincodes. Wave 1
-replaces that with **true per-pincode ground truth** for the 3 genuinely
+replaces that with **true per-pincode ground truth** for the 3 core
 pincode-wise QC platforms — **Blinkit, Zepto, Flipkart-minutes** — across the
 **25 target cities = 1,885 distinct pincodes** (the exact universe, computed from
 the canonical India Post directory; see [`docs/pincodes/india-pincode-universe.md`](docs/pincodes/india-pincode-universe.md)
 and `tools/pincodes/universe25.py`).
+BigBasket pincode is a separate logged-in team-run path over its `pincodes_jivo.json`
+set, not part of the Wave 1 config generator.
 
 - **Three modes (gated, non-breaking):** `COVERAGE_DAILY=1` → daily
   serviceable/Jivo-priced configs (`pincodes.daily.json`; Blinkit auth-corrected
@@ -133,9 +140,8 @@ and `tools/pincodes/universe25.py`).
 ./run.sh <platform>     # zepto | flipkart-minutes | flipkart
                         # | amazon | amazon-fresh | amazon-now   (VPS-hosted serial sweep)
                         # the serial sweep guarantees amazon-now never co-runs with amazon-fresh
-                        # blinkit and bigbasket are Mac-only in production; their
-                        # ./run.sh paths are guarded unless an explicit diagnostic
-                        # env var is set
+                        # blinkit is Mac/drop auth-required; bigbasket pincode uses
+                        # platforms/bigbasket/team_run_pincode.sh on VPS+Mac+KVM
 ```
 
 Examples:
@@ -434,7 +440,7 @@ ecom-intel/
 │   ├── flipkart/                 # ✅ LIVE — marketplace, national pricing
 │   ├── amazon/                   # ✅ LIVE — marketplace, interstitial bypass, 314 ASINs (guest, no account location)
 │   ├── amazon-fresh/             # ✅ LIVE — logged-in (cookie transplant), i=freshstore raw POST+HTML; ~63 SKUs, ~13k rows; in cron
-│   ├── bigbasket/                # ✅ LIVE — stealth browser past Akamai + in-page listing-svc API; NATIONAL pricing, ~27 SKUs, "All India"; in cron
+│   ├── bigbasket/                # ✅ LIVE — national workbook + pincode team runner; pincode output is private/direct-only
 │   └── amazon-now/               # ✅ LIVE — genuine Now (scrape.ctnow.js, almBrandId=ctnow); in the serial sweep (never co-runs with amazon-fresh); PLAN.md
 │
 ├── output/                # generated Excel (gitignored)
