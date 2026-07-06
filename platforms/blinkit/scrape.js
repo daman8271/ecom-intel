@@ -62,8 +62,8 @@ const PDP_PRICE_CANARIES = new Set(
     .filter(Boolean)
 );
 const PDP_PRICE_PROBE_MODE = (process.env.BLINKIT_PDP_PRICE_PROBE_MODE || 'expanded').trim().toLowerCase();
-const PDP_PRICE_PROBE_MIN_SALE = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_SALE || '900', 10);
-const PDP_PRICE_PROBE_MIN_VOL_ML = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_VOL_ML || '2000', 10);
+const PDP_PRICE_PROBE_MIN_SALE = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_SALE || '1100', 10);
+const PDP_PRICE_PROBE_MIN_VOL_ML = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_VOL_ML || '5000', 10);
 
 // ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
 // At 1,885 pincodes a run is long, so it MUST survive interruption and rate-limiting
@@ -289,7 +289,7 @@ function shouldPdpPriceProbe(rec, row) {
   const vol = Number(row.vol_ml || parseVolMl(row.pack) || 0);
   const plainSearch = source === '' || source === 'search_card' || source === 'search_probe';
   const highValue = (
-    (Number.isFinite(sale) && sale >= PDP_PRICE_PROBE_MIN_SALE) ||
+    (Number.isFinite(sale) && sale >= PDP_PRICE_PROBE_MIN_SALE) &&
     (Number.isFinite(vol) && vol >= PDP_PRICE_PROBE_MIN_VOL_ML)
   );
   return plainSearch && highValue;

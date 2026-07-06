@@ -205,7 +205,7 @@ whose PDP/nearby probes verified no stock; treat `Not listed` as an expected SKU
 absent from that resolved store. Treat `Listed - Stock unverified` as a fail-closed
 intermediate state only: it may appear in raw/workbook diagnostics, but ingest and
 quality delivery reject it. PDP price probing covers the screenshot canaries plus
-high-value/plain-search rows without offer evidence so stale card prices do not ship.
+5 L high-value/plain-search rows without offer evidence so stale card prices do not ship.
 The main workbook includes both `Listing Status`
 and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `917703818227@s.whatsapp.net` only after the main Blinkit workbook passes quality.

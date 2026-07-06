@@ -104,7 +104,7 @@ for (const [input, want] of CASES) {
       prid: '528706',
       listing_url: 'https://blinkit.com/prn/jivo-extra-light-olive-oil/prid/528706',
       sale: 1499,
-      vol_ml: 2000,
+      vol_ml: 5000,
       price_source: 'search_card',
     }
   );
@@ -121,7 +121,7 @@ for (const [input, want] of CASES) {
       prid: '528706',
       listing_url: 'https://blinkit.com/prn/jivo-extra-light-olive-oil/prid/528706',
       sale: 1499,
-      vol_ml: 2000,
+      vol_ml: 5000,
       offer_sale: 1399,
       price_source: 'search_card_offer',
     }

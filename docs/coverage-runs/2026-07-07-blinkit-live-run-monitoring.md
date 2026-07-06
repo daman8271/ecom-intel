@@ -31,7 +31,7 @@ was absent for that resolved store; it is not an OOS row.
 `Listed - Stock unverified` is not publishable stock data. It means search text looked
 OOS but PDP/nearby verification did not complete; ingest and delivery quality gates
 reject that state. PDP price probing now covers the screenshot canaries plus
-high-value/plain-search rows without offer evidence, because Blinkit can put the lower
+5 L high-value/plain-search rows without offer evidence, because Blinkit can put the lower
 effective price only on the PDP/offer block.
 
 ## Delivery Gate

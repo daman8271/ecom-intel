@@ -71,8 +71,9 @@ while the PDP shows a lower effective price such as `Buy at`, `Buy for`, `Effect
 price`, or `Get it at`. Production runs keep `BLINKIT_PDP_PRICE_PROBE=1`, and the
 quality monitor requires `summary.pdp_price_probe_enabled=1`. Screenshot canaries
 include `110094:407561`, `110012:407851`, and `110012:406593`; the default probe
-mode also verifies high-value/plain-search rows that have no offer/PDP evidence so
-the stale-search-price class is not limited to the three canaries.
+mode also verifies 5 L high-value/plain-search rows that have no offer/PDP evidence
+so the stale-search-price class is not limited to the three canaries without turning
+the full run into a PDP visit for every row.
 
 An unverified search-card OOS is not a final `No`. If the nearby/PDP probes cannot
 verify the row, the scraper marks it `stock_unverified`; workbook code renders it as

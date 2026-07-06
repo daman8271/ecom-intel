@@ -123,7 +123,7 @@ set, not part of the Wave 1 config generator.
   any-pincode unverified-auth, or unprobed Blinkit drops are rejected
   because anonymous/search-only sessions can produce false Out of Stock rows and
   stale search-card prices. PDP price probing covers the screenshot canaries plus
-  high-value/plain-search rows without offer evidence. Any search-card OOS that
+  5 L high-value/plain-search rows without offer evidence. Any search-card OOS that
   cannot be PDP/nearby verified is marked `Listed - Stock unverified` and fails
   ingest/quality delivery. Blinkit output separates `Listed - Out of stock` from
   `Not listed`; a standalone `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`
