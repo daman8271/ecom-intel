@@ -4,6 +4,14 @@ from universe25 import build_universe
 
 WAVE1 = ["blinkit", "zepto", "flipkart-minutes", "amazon-fresh", "amazon-now"]
 BASE = os.path.join(os.path.dirname(__file__), "..", "..")
+INDIA_LAT_BOUNDS = (6.0, 37.6)
+INDIA_LON_BOUNDS = (68.0, 98.0)
+
+def is_india_coordinate(lat, lon):
+    return (
+        INDIA_LAT_BOUNDS[0] <= lat <= INDIA_LAT_BOUNDS[1]
+        and INDIA_LON_BOUNDS[0] <= lon <= INDIA_LON_BOUNDS[1]
+    )
 
 def load_centroids(csv_path):
     acc = defaultdict(lambda: [0.0, 0.0, 0])
@@ -14,6 +22,8 @@ def load_centroids(csv_path):
         except (ValueError, KeyError):
             continue
         if not p or lat == 0.0 or lon == 0.0:
+            continue
+        if not is_india_coordinate(lat, lon):
             continue
         a = acc[p]; a[0] += lat; a[1] += lon; a[2] += 1
     return {p: (a[0]/a[2], a[1]/a[2]) for p, a in acc.items() if a[2]}

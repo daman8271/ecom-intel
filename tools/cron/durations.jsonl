@@ -444,3 +444,4 @@
 {"platform":"amazon-fresh","secs":24375,"sweep":"2026-07-06-1000","ts":"2026-07-06T09:10:20+0530"}
 {"platform":"amazon-now","secs":2276,"sweep":"2026-07-06-1000","ts":"2026-07-06T09:48:16+0530"}
 {"platform":"flipkart-minutes","secs":178,"sweep":"2026-07-07-1000","ts":"2026-07-07T00:58:15+0530"}
+{"platform":"flipkart","secs":1700,"sweep":"2026-07-07-1000","ts":"2026-07-07T01:26:35+0530"}
