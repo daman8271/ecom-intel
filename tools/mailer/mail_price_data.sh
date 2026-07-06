@@ -117,6 +117,7 @@ for f in "${EXPECTED[@]}" "${EXTRA[@]}"; do [ -f "$f" ] && PRESENT+=("$f"); done
 # back from both email and WhatsApp instead of shipping it.
 BLINKIT_REPORT="output/Jivo-Blinkit-Live-Report-$D.xlsx"
 BLINKIT_HELD=0
+BLINKIT_READY=0
 if [ -f "$BLINKIT_REPORT" ]; then
   if ! BLINKIT_MONITOR_DRYRUN=1 \
        BLINKIT_MONITOR_EXIT_CODE=1 \
@@ -132,6 +133,8 @@ if [ -f "$BLINKIT_REPORT" ]; then
       FILTERED+=("$f")
     done
     PRESENT=("${FILTERED[@]}")
+  else
+    BLINKIT_READY=1
   fi
 fi
 
@@ -201,7 +204,7 @@ fi
 # the main Blinkit workbook was held back by the quality gate.
 BLINKIT_NOT_LISTED_REPORT="output/Jivo-Blinkit-Not-Listed-Pincodes-$D.xlsx"
 BLINKIT_NOT_LISTED_WA_CHAT="${BLINKIT_NOT_LISTED_WA_CHAT:-917703818227@s.whatsapp.net}"
-if [ "${BLINKIT_SEND_NOT_LISTED_WA:-1}" = "1" ] && [ "$BLINKIT_HELD" -eq 0 ] && [ -f "$BLINKIT_NOT_LISTED_REPORT" ]; then
+if [ "${BLINKIT_SEND_NOT_LISTED_WA:-1}" = "1" ] && [ "$BLINKIT_READY" -eq 1 ] && [ -f "$BLINKIT_NOT_LISTED_REPORT" ]; then
   NL_SUBJ="Blinkit not-listed pincodes/SKUs — $D"
   if [ "${MAILER_TEST_MODE:-0}" = "1" ]; then
     echo "TEST WhatsApp direct not-listed: $BLINKIT_NOT_LISTED_WA_CHAT $(basename "$BLINKIT_NOT_LISTED_REPORT")"
@@ -221,6 +224,8 @@ if [ "${BLINKIT_SEND_NOT_LISTED_WA:-1}" = "1" ] && [ "$BLINKIT_HELD" -eq 0 ] && 
   fi
 elif [ -f "$BLINKIT_NOT_LISTED_REPORT" ] && [ "$BLINKIT_HELD" -eq 1 ]; then
   echo "Blinkit not-listed direct WhatsApp skipped because main Blinkit report was held by quality gate"
+elif [ -f "$BLINKIT_NOT_LISTED_REPORT" ] && [ "$BLINKIT_READY" -ne 1 ]; then
+  echo "Blinkit not-listed direct WhatsApp skipped because main Blinkit report was not accepted"
 fi
 
 echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group (${#PRESENT[@]} files) ==="

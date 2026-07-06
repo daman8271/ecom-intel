@@ -117,8 +117,10 @@ def load_expected_sku_meta(rows):
     map_path = root / "tools" / "pricematch" / "sku_map.json"
     try:
         sku_map = json.load(open(map_path, encoding="utf-8")).get("skus") or {}
-    except Exception:
-        sku_map = {}
+    except Exception as e:
+        raise RuntimeError(f"Blinkit expected-SKU map is unreadable: {map_path}: {e}") from e
+    if not sku_map:
+        raise RuntimeError(f"Blinkit expected-SKU map is empty: {map_path}")
 
     for master_name, rec in sku_map.items():
         b = (rec.get("platforms") or {}).get("blinkit") or {}
@@ -209,7 +211,7 @@ ws["A2"] = f"Captured {captured_ist(summary['captured_at'])}  -  {summary['pinco
 ws["A2"].font = SUB_FONT; ws.merge_cells("A2:G2")
 
 # KPI cards
-kpis = [("Unique SKUs", summary['unique_skus']), ("Pincodes w/ Jivo", f"{summary['pincodes_with_jivo']}/{summary['pincodes_total']}"),
+kpis = [("Live SKUs", summary['unique_skus']), ("Expected SKUs", len(skus)), ("Pincodes w/ Jivo", f"{summary['pincodes_with_jivo']}/{summary['pincodes_total']}"),
         ("Datapoints", summary['total_rows']), ("Cities w/ ZERO Jivo", len(cities_without))]
 r = 4
 for i, (k, v) in enumerate(kpis):

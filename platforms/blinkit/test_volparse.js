@@ -55,5 +55,26 @@ for (const [input, want] of CASES) {
   console.log(`${ok ? 'PASS' : 'FAIL'}  buyAtPrice(...) = ${got} (want 1687)`);
 }
 
+{
+  const got = buyAtPrice('Buy for ₹1,687 after wallet offer');
+  const ok = got === 1687;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  buyAtPrice(buy for) = ${got} (want 1687)`);
+}
+
+{
+  const got = buyAtPrice('Effective price ₹1,687 with bank offer');
+  const ok = got === 1687;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  buyAtPrice(effective price) = ${got} (want 1687)`);
+}
+
+{
+  const got = buyAtPrice('Get it at ₹1,687 after coupon');
+  const ok = got === 1687;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  buyAtPrice(get it at) = ${got} (want 1687)`);
+}
+
 if (fail) { console.error(`\n${fail} FAILED`); process.exit(1); }
 console.log('\nALL PASS');

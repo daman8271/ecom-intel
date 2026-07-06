@@ -12,16 +12,20 @@ BAD_CANOLA_OOS="$(mktemp)"
 BAD_CANOLA_PRICE="$(mktemp)"
 GOOD_WORKBOOK="$(mktemp --suffix=.xlsx)"
 GOOD_NOT_LISTED_WORKBOOK="$(mktemp --suffix=.xlsx)"
+BAD_MAIN_MISSING_NL="$(mktemp --suffix=.xlsx)"
+BAD_NOT_LISTED_WORKBOOK="$(mktemp --suffix=.xlsx)"
 BAD_WORKBOOK="$(mktemp --suffix=.xlsx)"
 GOOD_OUT="$(mktemp)"
 GOOD_WORKBOOK_OUT="$(mktemp)"
 MISSING_NOT_LISTED_OUT="$(mktemp)"
+BAD_MAIN_MISSING_NL_OUT="$(mktemp)"
+BAD_NOT_LISTED_WORKBOOK_OUT="$(mktemp)"
 BAD_OUT="$(mktemp)"
 BAD_UNVERIFIED_OUT="$(mktemp)"
 BAD_CANOLA_OOS_OUT="$(mktemp)"
 BAD_CANOLA_PRICE_OUT="$(mktemp)"
 BAD_WORKBOOK_OUT="$(mktemp)"
-trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_WORKBOOK" "$GOOD_OUT" "$GOOD_WORKBOOK_OUT" "$MISSING_NOT_LISTED_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
+trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_MAIN_MISSING_NL" "$BAD_NOT_LISTED_WORKBOOK" "$BAD_WORKBOOK" "$GOOD_OUT" "$GOOD_WORKBOOK_OUT" "$MISSING_NOT_LISTED_OUT" "$BAD_MAIN_MISSING_NL_OUT" "$BAD_NOT_LISTED_WORKBOOK_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
 
 python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" <<'PY'
 import json, sys
@@ -100,11 +104,11 @@ bad_canola_price["allRows"].append(row)
 json.dump(bad_canola_price, open(bad_canola_price_path, "w", encoding="utf-8"))
 PY
 
-python3 - "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" <<'PY'
+python3 - "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_MAIN_MISSING_NL" "$BAD_NOT_LISTED_WORKBOOK" <<'PY'
 import sys
 from openpyxl import Workbook
 
-main_path, not_listed_path = sys.argv[1:]
+main_path, not_listed_path, bad_main_path, bad_not_listed_path = sys.argv[1:]
 wb = Workbook()
 ws = wb.active
 ws.title = "Master Data"
@@ -117,6 +121,14 @@ nl = Workbook()
 nl.active.title = "Not Listed Pincodes"
 nl.active.append(["City", "Pincode", "SKU", "Source"])
 nl.save(not_listed_path)
+
+bad = Workbook()
+bad.active.title = "Master Data"
+bad.active.append(["Product status", "Stock source", "Price source", "Base Sale Rs", "Offer Rs"])
+bad.create_sheet("Listing Status").append(["City", "Pincode", "SKU", "Product status", "Source"])
+bad.save(bad_main_path)
+
+open(bad_not_listed_path, "w", encoding="utf-8").write("not a workbook\n")
 PY
 
 cd "$ROOT"
@@ -145,6 +157,24 @@ BLINKIT_MONITOR_NOT_LISTED_REPORT=/tmp/no-such-blinkit-not-listed.xlsx \
   "$MONITOR" test > "$MISSING_NOT_LISTED_OUT"
 grep -q '"ok": false' "$MISSING_NOT_LISTED_OUT"
 grep -q 'missing_not_listed_workbook' "$MISSING_NOT_LISTED_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$GOOD" \
+BLINKIT_MONITOR_REPORT="$BAD_MAIN_MISSING_NL" \
+BLINKIT_MONITOR_NOT_LISTED_REPORT="$GOOD_NOT_LISTED_WORKBOOK" \
+  "$MONITOR" test > "$BAD_MAIN_MISSING_NL_OUT"
+grep -q '"ok": false' "$BAD_MAIN_MISSING_NL_OUT"
+grep -q 'missing_not_listed_sheet' "$BAD_MAIN_MISSING_NL_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$GOOD" \
+BLINKIT_MONITOR_REPORT="$GOOD_WORKBOOK" \
+BLINKIT_MONITOR_NOT_LISTED_REPORT="$BAD_NOT_LISTED_WORKBOOK" \
+  "$MONITOR" test > "$BAD_NOT_LISTED_WORKBOOK_OUT"
+grep -q '"ok": false' "$BAD_NOT_LISTED_WORKBOOK_OUT"
+grep -q 'not_listed_workbook_check_failed' "$BAD_NOT_LISTED_WORKBOOK_OUT"
 
 BLINKIT_MONITOR_DRYRUN=1 \
 BLINKIT_MONITOR_DATE=2099-01-01 \

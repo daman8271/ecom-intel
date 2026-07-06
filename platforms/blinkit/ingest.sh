@@ -536,7 +536,8 @@ cp "$STAGED" "$PDIR/result.json"
 python3 build_excel.py
 XLSX="$(ls -t "$PDIR"/Jivo-Blinkit-Live-Report-*.xlsx 2>/dev/null | head -1)"
 [ -n "$XLSX" ] || { restore_old_result; echo "[blinkit-ingest] build_excel produced no report" >&2; exit 1; }
-NOT_LISTED_XLSX="$(ls -t "$PDIR"/Jivo-Blinkit-Not-Listed-Pincodes-*.xlsx 2>/dev/null | head -1 || true)"
+NOT_LISTED_XLSX="$PDIR/Jivo-Blinkit-Not-Listed-Pincodes-$(date +%F).xlsx"
+[ -f "$NOT_LISTED_XLSX" ] || { restore_old_result; echo "[blinkit-ingest] build_excel produced no not-listed report: $NOT_LISTED_XLSX" >&2; exit 1; }
 
 python3 "$ROOT/tools/predict.py" blinkit "$XLSX" || echo "[blinkit-ingest] predict skipped"
 python3 "$ROOT/tools/pricematch/add_pricematch_sheet.py" blinkit "$XLSX" || echo "[blinkit-ingest] price-match skipped"
@@ -564,9 +565,7 @@ echo "[blinkit-ingest] built $(basename "$XLSX") from Mac drop; review=$VERDICT"
 if [ "$DELIVER" = "--deliver" ]; then
   cp "$XLSX" "$ROOT/output/$(basename "$XLSX")"
   echo "[blinkit-ingest] delivered -> output/$(basename "$XLSX")"
-  if [ -n "$NOT_LISTED_XLSX" ] && [ -f "$NOT_LISTED_XLSX" ]; then
-    cp "$NOT_LISTED_XLSX" "$ROOT/output/$(basename "$NOT_LISTED_XLSX")"
-    echo "[blinkit-ingest] delivered -> output/$(basename "$NOT_LISTED_XLSX")"
-  fi
+  cp "$NOT_LISTED_XLSX" "$ROOT/output/$(basename "$NOT_LISTED_XLSX")"
+  echo "[blinkit-ingest] delivered -> output/$(basename "$NOT_LISTED_XLSX")"
   "$ROOT/tools/cron/spool_into_batch.sh" blinkit "Blinkit" "$ROOT/output/$(basename "$XLSX")" || true
 fi
