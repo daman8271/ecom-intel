@@ -116,6 +116,7 @@ for f in "${EXPECTED[@]}" "${EXTRA[@]}"; do [ -f "$f" ] && PRESENT+=("$f"); done
 # surface: if a bad or stale Blinkit workbook somehow exists in output/, hold it
 # back from both email and WhatsApp instead of shipping it.
 BLINKIT_REPORT="output/Jivo-Blinkit-Live-Report-$D.xlsx"
+BLINKIT_HELD=0
 if [ -f "$BLINKIT_REPORT" ]; then
   if ! BLINKIT_MONITOR_DRYRUN=1 \
        BLINKIT_MONITOR_EXIT_CODE=1 \
@@ -124,6 +125,7 @@ if [ -f "$BLINKIT_REPORT" ]; then
        ./tools/cron/blinkit_quality_monitor.sh pre-whatsapp; then
     echo "WARN: Blinkit quality gate failed; holding back $BLINKIT_REPORT from email/WhatsApp"
     alert "Blinkit report held back from email/WhatsApp: quality gate failed"
+    BLINKIT_HELD=1
     FILTERED=()
     for f in "${PRESENT[@]}"; do
       [ "$f" = "$BLINKIT_REPORT" ] && continue
@@ -184,6 +186,33 @@ if [ "$WA_FAIL" -eq 0 ]; then
 else
   echo "ERROR: some WhatsApp posts failed"
   alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"
+fi
+
+# Send Blinkit's not-listed pincode/SKU workbook separately to the requested
+# direct WhatsApp contact. Keep it out of the team batch, and never send it when
+# the main Blinkit workbook was held back by the quality gate.
+BLINKIT_NOT_LISTED_REPORT="output/Jivo-Blinkit-Not-Listed-Pincodes-$D.xlsx"
+BLINKIT_NOT_LISTED_WA_CHAT="${BLINKIT_NOT_LISTED_WA_CHAT:-917703818227@s.whatsapp.net}"
+if [ "${BLINKIT_SEND_NOT_LISTED_WA:-1}" = "1" ] && [ "$BLINKIT_HELD" -eq 0 ] && [ -f "$BLINKIT_NOT_LISTED_REPORT" ]; then
+  NL_SUBJ="Blinkit not-listed pincodes/SKUs — $D"
+  if [ "${MAILER_TEST_MODE:-0}" = "1" ]; then
+    echo "TEST WhatsApp direct not-listed: $BLINKIT_NOT_LISTED_WA_CHAT $(basename "$BLINKIT_NOT_LISTED_REPORT")"
+  else
+    ensure_gateway || true
+    R=$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send \
+      -H 'Content-Type: application/json' \
+      -d "$(python3 -c 'import json,sys; print(json.dumps({"chatId": sys.argv[1], "message": sys.argv[2]}))' "$BLINKIT_NOT_LISTED_WA_CHAT" "$NL_SUBJ")")
+    echo "WhatsApp direct not-listed header: $R"
+    B=$(python3 -c 'import json,sys; p=sys.argv[1]; print(json.dumps({"chatId": sys.argv[2], "filePath": p, "mediaType": "document", "fileName": p.rsplit("/",1)[-1]}))' "$PWD/$BLINKIT_NOT_LISTED_REPORT" "$BLINKIT_NOT_LISTED_WA_CHAT")
+    R=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
+      -H 'Content-Type: application/json' -d "$B")
+    echo "WhatsApp direct not-listed doc $(basename "$BLINKIT_NOT_LISTED_REPORT"): $R"
+    if ! echo "$R" | grep -q '"success":true'; then
+      alert "Blinkit not-listed WhatsApp send failed for $BLINKIT_NOT_LISTED_WA_CHAT"
+    fi
+  fi
+elif [ -f "$BLINKIT_NOT_LISTED_REPORT" ] && [ "$BLINKIT_HELD" -eq 1 ]; then
+  echo "Blinkit not-listed direct WhatsApp skipped because main Blinkit report was held by quality gate"
 fi
 
 echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group (${#PRESENT[@]} files) ==="

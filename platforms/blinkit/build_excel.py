@@ -99,6 +99,20 @@ def row_preference(x):
         1 if x.get('stock_probe') else 0,
     )
 
+not_listed_rows = []
+
+def collect_not_listed_row(p, sku):
+    return {
+        "city": p['city'],
+        "pincode": p['pincode'],
+        "locality": p.get('locality', ''),
+        "store_name": p.get('store_name', ''),
+        "sku": label(sku),
+        "canonical": sku,
+        "source": "search_absent",
+        "note": "SKU was not listed for this resolved Blinkit pincode/store; this is not an out-of-stock row.",
+    }
+
 # ---------- Sheet 1: Executive Summary ----------
 ws = wb.active; ws.title = "Summary"
 ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TITLE_FONT
@@ -182,6 +196,7 @@ for p in sorted(per, key=lambda r: (r['city'], r['pincode'])):
                        "Yes" if x.get('in_stock') else "No", x.get('sale'), x.get('base_sale'), x.get('offer_sale'), x.get('mrp'),
                        x.get('store_name',''), x.get('prid',''), x.get('stock_source','')])
         else:
+            not_listed_rows.append(collect_not_listed_row(p, s))
             ws.append([p['city'], p['pincode'], p.get('locality',''), label(s), "Not listed",
                        "", None, None, None, None, p.get('store_name',''), "", "search_absent"])
 style_header(ws)
@@ -198,6 +213,21 @@ for row in ws.iter_rows(min_row=2):
         row[4].fill = RED
     elif status == "Not listed":
         row[4].fill = YEL
+autosize(ws)
+
+# ---------- Sheet 2c: Not Listed Pincodes ----------
+ws = wb.create_sheet("Not Listed Pincodes")
+not_listed_cols = ["City", "Pincode", "Locality", "Store", "SKU", "Canonical", "Source", "Note"]
+ws.append(not_listed_cols)
+for x in sorted(not_listed_rows, key=lambda r: (r["city"], r["pincode"], r["sku"])):
+    ws.append([x["city"], x["pincode"], x["locality"], x["store_name"], x["sku"], x["canonical"], x["source"], x["note"]])
+style_header(ws)
+ws.freeze_panes = "A2"
+ws.auto_filter.ref = f"A1:{get_column_letter(len(not_listed_cols))}{max(ws.max_row, 1)}"
+for row in ws.iter_rows(min_row=2):
+    for cell in row:
+        cell.border = BORDER
+    row[6].fill = YEL
 autosize(ws)
 
 # ---------- Matrix builder ----------
@@ -268,3 +298,21 @@ fname = f"Jivo-{PLATFORM.replace(' ', '')}-Live-Report-{datetime.date.today()}.x
 wb.save(fname)
 print("SAVED:", fname)
 print("Sheets:", wb.sheetnames)
+
+nl_wb = Workbook()
+nl_ws = nl_wb.active
+nl_ws.title = "Not Listed Pincodes"
+nl_ws.append(not_listed_cols)
+for x in sorted(not_listed_rows, key=lambda r: (r["city"], r["pincode"], r["sku"])):
+    nl_ws.append([x["city"], x["pincode"], x["locality"], x["store_name"], x["sku"], x["canonical"], x["source"], x["note"]])
+style_header(nl_ws)
+nl_ws.freeze_panes = "A2"
+nl_ws.auto_filter.ref = f"A1:{get_column_letter(len(not_listed_cols))}{max(nl_ws.max_row, 1)}"
+for row in nl_ws.iter_rows(min_row=2):
+    for cell in row:
+        cell.border = BORDER
+    row[6].fill = YEL
+autosize(nl_ws)
+nl_name = f"Jivo-{PLATFORM.replace(' ', '')}-Not-Listed-Pincodes-{datetime.date.today()}.xlsx"
+nl_wb.save(nl_name)
+print("SAVED:", nl_name)

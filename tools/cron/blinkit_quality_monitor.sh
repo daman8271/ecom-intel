@@ -17,6 +17,7 @@ STATE_FILE="$LOG_DIR/blinkit_quality_monitor-${TODAY}.state"
 RESULT="${BLINKIT_MONITOR_RESULT:-$DIR/platforms/blinkit/result.json}"
 CONFIG="${BLINKIT_EXPECTED_CONFIG:-$DIR/platforms/blinkit/pincodes.daily.json}"
 REPORT="${BLINKIT_MONITOR_REPORT:-$DIR/output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx}"
+NOT_LISTED_REPORT="${BLINKIT_MONITOR_NOT_LISTED_REPORT:-$DIR/output/Jivo-Blinkit-Not-Listed-Pincodes-${TODAY}.xlsx}"
 MAX_UNVERIFIED_OOS="${BLINKIT_MONITOR_MAX_UNVERIFIED_OOS:-0}"
 MAX_COORD_ERRORS="${BLINKIT_MONITOR_MAX_COORD_ERRORS:-0}"
 STALE_ALERT_AFTER="${BLINKIT_MONITOR_STALE_ALERT_AFTER:-09:15}"
@@ -74,7 +75,7 @@ if [ ! -f "$REPORT" ]; then
 fi
 
 VALIDATION_JSON="$(
-  RESULT="$RESULT" CONFIG="$CONFIG" REPORT="$REPORT" TODAY="$TODAY" \
+  RESULT="$RESULT" CONFIG="$CONFIG" REPORT="$REPORT" NOT_LISTED_REPORT="$NOT_LISTED_REPORT" TODAY="$TODAY" \
   MAX_UNVERIFIED_OOS="$MAX_UNVERIFIED_OOS" MAX_COORD_ERRORS="$MAX_COORD_ERRORS" \
   PASS="$PASS" STALE_ALERT_AFTER="$STALE_ALERT_AFTER" REPORT_ALERT_AFTER="$REPORT_ALERT_AFTER" \
   python3 - <<'PY'
@@ -83,6 +84,7 @@ import json, os, sys, datetime, math
 result_path = os.environ["RESULT"]
 config_path = os.environ["CONFIG"]
 report_path = os.environ["REPORT"]
+not_listed_report_path = os.environ.get("NOT_LISTED_REPORT") or ""
 today = os.environ["TODAY"]
 max_unverified_oos = int(os.environ.get("MAX_UNVERIFIED_OOS") or 0)
 max_coord_errors = int(os.environ.get("MAX_COORD_ERRORS") or 0)
@@ -276,6 +278,8 @@ if os.path.exists(report_path):
         facts["workbook_sheets"] = wb.sheetnames
         if "Listing Status" not in wb.sheetnames:
             issue("missing_listing_status_sheet", "Workbook missing Listing Status sheet")
+        if "Not Listed Pincodes" not in wb.sheetnames:
+            issue("missing_not_listed_sheet", "Workbook missing Not Listed Pincodes sheet")
         if "Master Data" in wb.sheetnames:
             ws = wb["Master Data"]
             header = [c.value for c in next(ws.iter_rows(min_row=1, max_row=1))]
@@ -284,6 +288,17 @@ if os.path.exists(report_path):
                     issue("missing_master_column", f"Master Data missing {h}")
     except Exception as e:
         issue("workbook_check_failed", str(e))
+    if not_listed_report_path:
+        if os.path.exists(not_listed_report_path):
+            try:
+                nl_wb = load_workbook(not_listed_report_path, read_only=True, data_only=True)
+                facts["not_listed_workbook_sheets"] = nl_wb.sheetnames
+                if "Not Listed Pincodes" not in nl_wb.sheetnames:
+                    issue("not_listed_workbook_missing_sheet", f"{not_listed_report_path} missing Not Listed Pincodes sheet")
+            except Exception as e:
+                issue("not_listed_workbook_check_failed", f"{not_listed_report_path}: {e}")
+        else:
+            issue("missing_not_listed_workbook", f"{not_listed_report_path} missing")
 else:
     if after_cutoff(report_alert_after):
         issue("workbook_missing_after_cutoff", f"{report_path} missing after {report_alert_after} IST")

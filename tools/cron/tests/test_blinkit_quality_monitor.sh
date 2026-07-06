@@ -10,14 +10,18 @@ BAD="$(mktemp)"
 BAD_UNVERIFIED="$(mktemp)"
 BAD_CANOLA_OOS="$(mktemp)"
 BAD_CANOLA_PRICE="$(mktemp)"
+GOOD_WORKBOOK="$(mktemp --suffix=.xlsx)"
+GOOD_NOT_LISTED_WORKBOOK="$(mktemp --suffix=.xlsx)"
 BAD_WORKBOOK="$(mktemp --suffix=.xlsx)"
 GOOD_OUT="$(mktemp)"
+GOOD_WORKBOOK_OUT="$(mktemp)"
+MISSING_NOT_LISTED_OUT="$(mktemp)"
 BAD_OUT="$(mktemp)"
 BAD_UNVERIFIED_OUT="$(mktemp)"
 BAD_CANOLA_OOS_OUT="$(mktemp)"
 BAD_CANOLA_PRICE_OUT="$(mktemp)"
 BAD_WORKBOOK_OUT="$(mktemp)"
-trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$BAD_WORKBOOK" "$GOOD_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
+trap 'rm -f "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" "$BAD_WORKBOOK" "$GOOD_OUT" "$GOOD_WORKBOOK_OUT" "$MISSING_NOT_LISTED_OUT" "$BAD_OUT" "$BAD_UNVERIFIED_OUT" "$BAD_CANOLA_OOS_OUT" "$BAD_CANOLA_PRICE_OUT" "$BAD_WORKBOOK_OUT" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.log" "$ROOT/logs/blinkit_quality_monitor-2099-01-01.state"' EXIT
 
 python3 - "$FIXTURE" "$GOOD" "$BAD" "$BAD_UNVERIFIED" "$BAD_CANOLA_OOS" "$BAD_CANOLA_PRICE" <<'PY'
 import json, sys
@@ -96,6 +100,25 @@ bad_canola_price["allRows"].append(row)
 json.dump(bad_canola_price, open(bad_canola_price_path, "w", encoding="utf-8"))
 PY
 
+python3 - "$GOOD_WORKBOOK" "$GOOD_NOT_LISTED_WORKBOOK" <<'PY'
+import sys
+from openpyxl import Workbook
+
+main_path, not_listed_path = sys.argv[1:]
+wb = Workbook()
+ws = wb.active
+ws.title = "Master Data"
+ws.append(["Product status", "Stock source", "Price source", "Base Sale Rs", "Offer Rs"])
+wb.create_sheet("Listing Status").append(["City", "Pincode", "SKU", "Product status", "Source"])
+wb.create_sheet("Not Listed Pincodes").append(["City", "Pincode", "SKU", "Source"])
+wb.save(main_path)
+
+nl = Workbook()
+nl.active.title = "Not Listed Pincodes"
+nl.active.append(["City", "Pincode", "SKU", "Source"])
+nl.save(not_listed_path)
+PY
+
 cd "$ROOT"
 
 BLINKIT_MONITOR_DRYRUN=1 \
@@ -105,6 +128,23 @@ BLINKIT_MONITOR_REPORT=/tmp/no-such-blinkit-report.xlsx \
   "$MONITOR" test > "$GOOD_OUT"
 grep -q '"ok": true' "$GOOD_OUT"
 grep -q 'quality OK for 2099-01-01' "$GOOD_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$GOOD" \
+BLINKIT_MONITOR_REPORT="$GOOD_WORKBOOK" \
+BLINKIT_MONITOR_NOT_LISTED_REPORT="$GOOD_NOT_LISTED_WORKBOOK" \
+  "$MONITOR" test > "$GOOD_WORKBOOK_OUT"
+grep -q '"ok": true' "$GOOD_WORKBOOK_OUT"
+
+BLINKIT_MONITOR_DRYRUN=1 \
+BLINKIT_MONITOR_DATE=2099-01-01 \
+BLINKIT_MONITOR_RESULT="$GOOD" \
+BLINKIT_MONITOR_REPORT="$GOOD_WORKBOOK" \
+BLINKIT_MONITOR_NOT_LISTED_REPORT=/tmp/no-such-blinkit-not-listed.xlsx \
+  "$MONITOR" test > "$MISSING_NOT_LISTED_OUT"
+grep -q '"ok": false' "$MISSING_NOT_LISTED_OUT"
+grep -q 'missing_not_listed_workbook' "$MISSING_NOT_LISTED_OUT"
 
 BLINKIT_MONITOR_DRYRUN=1 \
 BLINKIT_MONITOR_DATE=2099-01-01 \

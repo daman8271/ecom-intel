@@ -106,9 +106,12 @@ def test_listing_status_distinguishes_not_listed_from_oos():
         (tmp_path / "result.json").write_text(json.dumps(result), encoding="utf-8")
         subprocess.run([sys.executable, str(BUILDER)], cwd=tmp_path, check=True, capture_output=True, text=True)
         workbook = tmp_path / f"Jivo-{tmp_path.name.title()}-Live-Report-{datetime.date.today()}.xlsx"
+        not_listed_workbook = tmp_path / f"Jivo-{tmp_path.name.title()}-Not-Listed-Pincodes-{datetime.date.today()}.xlsx"
         assert workbook.exists()
+        assert not_listed_workbook.exists()
 
         wb = load_workbook(workbook, read_only=True, data_only=True)
+        assert "Not Listed Pincodes" in wb.sheetnames
         ws = wb["Listing Status"]
         headers = [cell.value for cell in next(ws.iter_rows(min_row=1, max_row=1))]
         records = [dict(zip(headers, [cell.value for cell in row])) for row in ws.iter_rows(min_row=2)]
@@ -128,6 +131,28 @@ def test_listing_status_distinguishes_not_listed_from_oos():
         assert not_listed["Product status"] == "Not listed"
         assert not_listed["In stock"] is None
         assert not_listed["Source"] == "search_absent"
+
+        ws_not_listed = wb["Not Listed Pincodes"]
+        nl_headers = [cell.value for cell in next(ws_not_listed.iter_rows(min_row=1, max_row=1))]
+        nl_records = [dict(zip(nl_headers, [cell.value for cell in row])) for row in ws_not_listed.iter_rows(min_row=2)]
+        assert any(
+            str(r["Pincode"]) == "110002"
+            and r["SKU"] == "Jivo Test Missing Oil 1 L"
+            and r["Source"] == "search_absent"
+            for r in nl_records
+        )
+
+        nl_wb = load_workbook(not_listed_workbook, read_only=True, data_only=True)
+        assert nl_wb.sheetnames == ["Not Listed Pincodes"]
+        nl_ws = nl_wb["Not Listed Pincodes"]
+        nl_file_headers = [cell.value for cell in next(nl_ws.iter_rows(min_row=1, max_row=1))]
+        nl_file_records = [dict(zip(nl_file_headers, [cell.value for cell in row])) for row in nl_ws.iter_rows(min_row=2)]
+        assert any(
+            str(r["Pincode"]) == "110002"
+            and r["SKU"] == "Jivo Test Missing Oil 1 L"
+            and r["Source"] == "search_absent"
+            for r in nl_file_records
+        )
 
 
 if __name__ == "__main__":
