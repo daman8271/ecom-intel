@@ -74,7 +74,7 @@ python3 tools/coverage/coverage_report.py $(date +%F)   # honest per-city x per-
 ## Route/risk map — VPS serial chain plus Mac/drop collectors
 | Platform | Status | Notes |
 |---|---|---|
-| blinkit | ✅ LIVE (Mac/drop, auth-required) | Runs on the Mac Pro residential IP via `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`, drops JSON to `platforms/blinkit/ingest.sh`, and is spooled by `run_all.sh` from `output/`. Auth state must exist at `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`; the wrapper exports `BLINKIT_REQUIRE_AUTH=1`, and ingest runs with `BLINKIT_REQUIRE_AUTH_DROP=1`. The VPS `./run.sh blinkit` path refuses unless `ALLOW_BLINKIT_VPS=1`. Scrape is gated on verified store re-resolution; ingest rejects unauthenticated, partial, wrong-config, low-row, low-store, or blocked drops. |
+| blinkit | ✅ LIVE (Mac/drop, auth-required) | Runs on the Mac Pro residential IP via `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`, drops JSON to `platforms/blinkit/ingest.sh`, and is spooled by `run_all.sh` from `output/`. Auth state must exist at `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`; the wrapper exports `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and `BLINKIT_PDP_OOS_PROBE=1`, and ingest runs with `BLINKIT_REQUIRE_AUTH_DROP=1`. The VPS `./run.sh blinkit` path refuses unless `ALLOW_BLINKIT_VPS=1`. Scrape is gated on verified store re-resolution; ingest rejects unauthenticated, partial, wrong-config, low-row, low-store, or blocked drops. |
 |  | ❌ REMOVED from cron chain 2026-06-06 (was ⚠️ BLOCKED) | stealth context + POST to /api//search/v2 (WAF bypass). **2026-06-05 (c0bc409):** now paginates by offset (full Jivo catalogue, not just page 0); 403 fail-safe preserved (first-page non-200 → 0 rows + "search status" marker → review BROKEN). **STILL blocked by an IP-level 403** (currently 0 rows) — needs a residential proxy OR a logged-in  session (parked; see docs/PROXY.md + platforms//LOGIN-COOKIES.md). |
 | zepto | ✅ LIVE | reached via bff-gateway.zeptonow.com BFF API (CloudFront on website still 403s) |
 | flipkart-minutes | ✅ LIVE | HYPERLOCAL store; GPS "use my location"; scaled to 345 pincodes |
@@ -189,9 +189,10 @@ SUSPECT is recorded (reviews/ + vault note) but NOT re-run. Escalates to Telegra
 
 Blinkit production is Mac/drop-fed and auth-required. The Mac wrapper
 `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` runs under LaunchAgent
-`com.danny.blinkit-mac-to-vps` at 03:45 IST, loads
+`com.danny.blinkit-mac-to-vps` at 06:30 IST, loads
 `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, and exports
-`BLINKIT_REQUIRE_AUTH=1`. VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`; drops
+`BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
+`BLINKIT_PDP_OOS_PROBE=1`. VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`; drops
 must carry `summary.auth_session` and `summary.auth_required`, and unauthenticated
 Blinkit drops are rejected. VPS emergency/manual shards use
 `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Corrected 2026-07-06 run: 902 pins,

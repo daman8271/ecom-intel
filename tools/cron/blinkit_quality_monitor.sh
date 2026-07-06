@@ -14,9 +14,9 @@ PASS="${1:-poll}"
 LOG_DIR="$DIR/logs"
 LOG_FILE="$LOG_DIR/blinkit_quality_monitor-${TODAY}.log"
 STATE_FILE="$LOG_DIR/blinkit_quality_monitor-${TODAY}.state"
-RESULT="$DIR/platforms/blinkit/result.json"
+RESULT="${BLINKIT_MONITOR_RESULT:-$DIR/platforms/blinkit/result.json}"
 CONFIG="${BLINKIT_EXPECTED_CONFIG:-$DIR/platforms/blinkit/pincodes.daily.json}"
-REPORT="$DIR/output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
+REPORT="${BLINKIT_MONITOR_REPORT:-$DIR/output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx}"
 MAX_UNVERIFIED_OOS="${BLINKIT_MONITOR_MAX_UNVERIFIED_OOS:-5}"
 MAX_COORD_ERRORS="${BLINKIT_MONITOR_MAX_COORD_ERRORS:-0}"
 STALE_ALERT_AFTER="${BLINKIT_MONITOR_STALE_ALERT_AFTER:-09:15}"
@@ -38,6 +38,11 @@ tg(){ ( set +e
 
 alert_once(){
   local key="$1" msg="$2"
+  if [ "$DRY" = "1" ]; then
+    log "DRYRUN ALERT $key: ${msg//$'\n'/ }"
+    tg "$msg"
+    return 0
+  fi
   touch "$STATE_FILE"
   if grep -qxF "$key" "$STATE_FILE" 2>/dev/null; then
     log "already alerted $key"
@@ -201,9 +206,11 @@ pomace = [
 ]
 if pomace:
     best = sorted(pomace, key=lambda r: (1 if r.get("in_stock") else 0, -abs(float(r.get("sale") or 0) - 1766)), reverse=True)[0]
-    facts["canary_110094_407561"] = {k: best.get(k) for k in ("sale", "mrp", "in_stock", "store_id", "stock_probe_label", "stock_source", "price_source", "search_sale")}
+    facts["canary_110094_407561"] = {k: best.get(k) for k in ("sale", "base_sale", "offer_sale", "mrp", "in_stock", "store_id", "stock_probe_label", "stock_source", "price_source", "search_sale")}
     if not best.get("in_stock") and best.get("sale") == 1876 and best.get("stock_source") not in ("pdp", "pdp_probe"):
         issue("canary_110094_old_failure", "110094 Pomace 5L still looks like old 1876/search-OOS failure")
+    if best.get("in_stock") and best.get("sale") == 1876 and not best.get("offer_sale") and "offer" not in str(best.get("price_source") or ""):
+        issue("canary_110094_old_price", "110094 Pomace 5L is in stock but still shows old ₹1876 without offer/effective-price evidence")
 else:
     warn("canary_absent", "110094/407561 not present in current rows; cannot canary-check screenshot case")
 
@@ -277,6 +284,11 @@ PY
 if [ "$OK" = "1" ]; then
   if [ "$PASS" = "poll" ] && [ ! -f "$REPORT" ]; then
     log "quality checks are waiting for workbook: $REPORT"
+    exit 0
+  fi
+  if [ "$DRY" = "1" ]; then
+    log "quality OK for $TODAY (dry-run; state not written)"
+    tg "✅ Blinkit quality monitor: ${TODAY} result passed auth + OOS/PDP + coordinate/report checks."
     exit 0
   fi
   if ! grep -qxF "ok" "$STATE_FILE" 2>/dev/null; then

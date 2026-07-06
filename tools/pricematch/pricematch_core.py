@@ -362,6 +362,11 @@ def platform_comparison(ctx, platform):
                 listing, rows = alt, arows
 
         rec = _base_record(sku, platform, regime, ref, mrp_official, listing)
+        if not rows:
+            rec["status"] = "NOT_LISTED"
+            records.append(rec)
+            continue
+
         in_rows = [r for r in rows if r.get("in_stock") and _num(r.get("sale")) is not None]
         # verdict basis: rows at the basis pincode when one is set (national
         # platforms carry one all-India price, so they are never narrowed)

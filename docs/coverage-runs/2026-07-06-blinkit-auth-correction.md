@@ -53,7 +53,7 @@ Blinkit production must now run authenticated and fail closed:
 - Shard runner auto-discovers the auth state and exits `3` if missing
 - Shard merge sets merged `auth_session=1` only when every shard was authenticated
 - Mac LaunchAgent: `com.danny.blinkit-mac-to-vps`
-- Daily schedule: `03:45` IST
+- Daily schedule: `06:30` IST
 - Mac wrapper: `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`
 
 Operational rule: do not publish or accept Blinkit stock data from an anonymous session.

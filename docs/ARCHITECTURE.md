@@ -9,7 +9,7 @@ Design deep-dive. For operating instructions see the top-level
 > all execute inside `run.sh` for VPS-hosted platforms, and `run_all.sh` drives a
 > **SERIAL** sweep (one platform at a time; ~2h chain after 's 2026-06-06 removal).
 > Off-box/team collectors feed vetted outputs where required:
-> Blinkit runs on the Mac Pro residential session at **03:45 IST** with authenticated
+> Blinkit runs on the Mac Pro residential session at **06:30 IST** with authenticated
 > Blinkit state, while BigBasket pincode runs at **03:00 IST** through the
 > `team_run_pincode.sh` VPS + Mac Pro + KVM1 runner and writes private/direct-only
 > output. The sweep has a
@@ -200,7 +200,7 @@ Serviceability* sheet on top of the standard layout.
 ## 5. Pipeline & orchestration
 
 ```
-cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; + 03:45 Blinkit Mac collector; 18:00 guardian deep-dive)
+cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; + 06:30 Blinkit Mac collector; 18:00 guardian deep-dive)
   ├─ BigBasket team runner at 03:00
   │    └─ platforms/bigbasket/team_run_pincode.sh run
   │       ├─ shards pincodes_jivo.json across VPS + Mac Pro + KVM1 (default 5:4:1)
@@ -210,6 +210,7 @@ cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; 
   ├─ Mac Pro launchd com.danny.blinkit-mac-to-vps
   │    └─ /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
   │       ├─ BLINKIT_REQUIRE_AUTH=1 with /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
+  │       ├─ BLINKIT_OOS_PROBE=1 and BLINKIT_PDP_OOS_PROBE=1
   │       └─ VPS ingest with BLINKIT_REQUIRE_AUTH_DROP=1 → build/review/deliver
   └─ tools/cron/deadline_sweep.sh 10:00 — predict chain runtime (durations.jsonl p90),
   │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE

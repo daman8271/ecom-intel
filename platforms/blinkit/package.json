@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test_volparse.js && bash tests/test_ingest_false_oos_price.sh"
   },
   "keywords": [],
   "author": "",
