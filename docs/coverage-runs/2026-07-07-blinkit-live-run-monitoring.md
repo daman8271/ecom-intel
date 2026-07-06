@@ -34,6 +34,12 @@ reject that state. PDP price probing now covers the screenshot canaries plus
 5 L high-value/plain-search rows without offer evidence, because Blinkit can put the lower
 effective price only on the PDP/offer block.
 
+For Delhi, false-OOS recovery includes close neighbor-pincode coordinate probes,
+not just tiny offsets around the same stored coordinate. If that probe proves stock,
+the row's stock/store proof stays attached to that probe location. Later PDP price
+checks are price-only: they may update sale/MRP diagnostics, but they must not
+rewrite `in_stock`, `listing_status`, `stock_source`, `store_id`, or `store_name`.
+
 ## Delivery Gate
 
 The main workbook must include `Listing Status` and `Not Listed Pincodes`. The
@@ -66,3 +72,14 @@ page and left `400006 / Canola 1 L` as `Listed - Stock unverified`. PDP OOS
 verification now defaults to the primary PDP only; nearby same-pincode search probes
 still handle false-OOS flips. The isolated `400006` repro then passed with
 `unverified_oos=0`.
+
+## 05:15 Hotfix
+
+The `110012 / IARI SO` repro showed the core coordinate issue directly. Primary
+search saw Canola 1 L as live but treated Canola 5 L and Pomace 5 L as OOS; the
+close `110011` coordinate resolved store `30790` and showed both 5 L SKUs live.
+The first patch flipped them live, but the later PDP price probe rechecked the
+primary location and could overwrite the stock proof. The fix now runs PDP price
+checks for probe-flipped rows against the same neighbor coordinate and preserves
+the stock fields. The focused 3-pincode repro passed with `unverified_oos=0`,
+`110012 / 406593` live at `1193/1650`, and `110012 / 407561` live at `1687/4999`.

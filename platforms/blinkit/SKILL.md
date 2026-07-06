@@ -80,9 +80,13 @@ volume; related/variant cards on the PDP must not overwrite a different pack siz
 An unverified search-card OOS is not a final `No`. If the nearby/PDP probes cannot
 verify the row, the scraper marks it `stock_unverified`; workbook code renders it as
 `Listed - Stock unverified`, and ingest/quality gates fail closed so it cannot be
-delivered. Nearby same-pincode search probes do the cross-coordinate false-OOS
-recovery; PDP OOS verification defaults to the primary PDP only so the scraper does
-not open many PDP pages and trigger access-denied responses.
+delivered. Nearby same-pincode search probes and close Delhi neighbor-pincode probes
+do the cross-coordinate false-OOS recovery; PDP OOS verification defaults to the
+primary PDP only so the scraper does not open many PDP pages and trigger
+access-denied responses. If a neighbor probe flips a row live, preserve that
+neighbor store/coordinate as the stock evidence. Later PDP price probes must run
+against the same proof location and update only price/PDP diagnostic fields, never
+`in_stock`, `listing_status`, `stock_source`, `store_id`, or `store_name`.
 
 Checkpoint/resume files are keyed by IST date (`.progress.YYYY-MM-DD.json`), not UTC.
 This matters for manual/early-morning IST starts: a July 7 run must not reuse a July 6

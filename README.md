@@ -138,8 +138,11 @@ set, not part of the Wave 1 config generator.
   injected latitude/longitude and account session; two nearby coordinates can show
   the same pincode/header but different listing, stock, ETA, or offer price. The
   scraper therefore treats a search-card `Out of stock` as provisional, probes
-  nearby same-pincode coordinates, verifies hard OOS rows on the primary PDP, and
-  writes `Not listed` separately when the expected SKU is absent for that resolved store.
+  nearby same-pincode coordinates plus close Delhi neighbor-pincode coordinates,
+  verifies hard OOS rows on the primary PDP, and writes `Not listed` separately
+  when the expected SKU is absent for that resolved store. If a neighbor-coordinate
+  probe proves stock, later PDP price checks must use that same probe location and
+  must not rewrite `in_stock`, `Listing Status`, or the stock-evidence store.
   The cron monitor polls and alerts; delivery callers run it with
   `BLINKIT_MONITOR_EXIT_CODE=1` so bad Blinkit artifacts are held back.
 - **Configs:** `platforms/<p>/pincodes.daily.json` + `pincodes.full25.json` (regen via

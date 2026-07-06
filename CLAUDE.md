@@ -209,8 +209,12 @@ quality delivery reject it. PDP price probing covers the screenshot canaries plu
 ship. The PDP parser must reject price updates when the PDP-detected pack/volume
 before the first price does not match the row volume; otherwise a related 1 L card
 on a 5 L PDP can overwrite the 5 L row. PDP OOS verification is primary-PDP by
-default; nearby same-pincode search probes handle false-OOS flips without opening
-many PDP pages and tripping Blinkit access-denied responses.
+default; nearby same-pincode search probes and close Delhi neighbor-pincode probes
+handle false-OOS flips without opening many PDP pages and tripping Blinkit
+access-denied responses. When a neighbor-coordinate probe proves stock, subsequent
+PDP price checks must run against that same proof location and preserve the
+stock-evidence fields (`in_stock`, `listing_status`, `stock_source`, `store_id`,
+`store_name`); the PDP pass is price-only.
 The main workbook includes both `Listing Status`
 and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `917703818227@s.whatsapp.net` only after the main Blinkit workbook passes quality.
