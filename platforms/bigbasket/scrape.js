@@ -224,11 +224,23 @@ async function fetchPageOnce(page, slug, pg) {
     const tid = setTimeout(() => ctrl.abort(), 20000); // never let a single fetch hang the run
     try {
       const url = `/listing-svc/v2/products?type=ps&slug=${slug}&page=${pg}&bucket_id=${bucket}`;
+      const cookies = Object.fromEntries(document.cookie.split(';').map((s) => {
+        const i = s.indexOf('=');
+        if (i < 0) return [s.trim(), ''];
+        return [decodeURIComponent(s.slice(0, i).trim()), decodeURIComponent(s.slice(i + 1))];
+      }).filter((x) => x[0]));
       const r = await fetch(url, {
         signal: ctrl.signal,
         headers: {
           accept: 'application/json, text/plain, */*',
+          'content-type': 'application/json',
+          'common-client-static-version': '101',
+          'x-caller': 'UI-KIRK',
+          'x-channel': 'BB-WEB',
+          'x-entry-context': cookies.xentrycontext || 'bb-b2c',
+          'x-entry-context-id': cookies.xentrycontextid || '100',
           'x-requested-with': 'XMLHttpRequest',
+          'x-csurftoken': cookies.csurftoken || cookies.csrftoken || '',
           referer: `https://www.bigbasket.com/ps/?q=${slug}`,
         },
       });

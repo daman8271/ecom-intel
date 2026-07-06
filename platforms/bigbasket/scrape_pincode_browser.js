@@ -134,7 +134,11 @@ async function openSession(browser) {
   if (ok) await page.waitForTimeout(2500);
 
   const v = ok ? await verifyMember(page) : { member: false, info: null };
-  if (!v.member) throw new Error('BigBasket cookie file did not produce a logged-in member session');
+  if (!v.member) {
+    if (!loaded.loggedIn) throw new Error('BigBasket cookie file did not include the logged-in auth token');
+    process.stderr.write('[member] header check did not return member_info; continuing with auth cookies and validating through address POST per pincode\n');
+    return { ctx, page, ok, member: true, memberInfo: null };
+  }
   return { ctx, page, ok, member: v.member, memberInfo: v.info };
 }
 

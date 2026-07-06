@@ -34,6 +34,16 @@ const BLINKIT_REQUIRE_AUTH = process.env.BLINKIT_REQUIRE_AUTH === '1';
 // genuine coverage. Concurrency 2 keeps resolution ~complete. See blinkit.fix.md.
 const CONCURRENCY = parseInt(process.env.CONCURRENCY || '2', 10);
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36';
+// Blinkit stock is address/dark-store sensitive even when the header shows the same
+// pincode. Treat a first-pass OOS card as provisional and probe nearby coordinates
+// before publishing a hard "No".
+const BLINKIT_OOS_PROBE = process.env.BLINKIT_OOS_PROBE !== '0';
+const OOS_PROBE_OFFSETS = [
+  { label: 'west', dlat: 0, dlon: -0.012 },
+  { label: 'east', dlat: 0, dlon: 0.012 },
+  { label: 'north', dlat: 0.012, dlon: 0 },
+  { label: 'south', dlat: -0.012, dlon: 0 },
+];
 
 // ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
 // At 1,885 pincodes a run is long, so it MUST survive interruption and rate-limiting
@@ -47,9 +57,9 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 //       gets written with a top-level `partial` flag so the batch wrapper sees it.
 // SIM hooks (BLINKIT_SIM / BLINKIT_BLOCK_SIM) drive the hermetic fault-injection
 // tests in test_hardening.md without launching a browser or hitting Blinkit live.
-const PROG = COMPETITOR_MODE
+const PROG = process.env.BLINKIT_PROGRESS_FILE || (COMPETITOR_MODE
   ? `${COMP_DIR}/data/.progress.competitor.${path.basename(__dirname)}.${COMP_DATE}.json`
-  : `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`;
+  : `${__dirname}/.progress.${new Date().toISOString().slice(0, 10)}.json`);
 const MAX_BLOCK_RETRIES = parseInt(process.env.BLINKIT_BLOCK_RETRIES || '4', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could appear in legitimate page text) — HTTP status carries those.
@@ -157,6 +167,124 @@ function canonical(name, pack, brand) {
   // brandTag is '' and the returned canonical is byte-for-byte identical to before.
   const brandTag = brand ? (String(brand).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') + '-') : '';
   return `${brandTag}${base}-${volTag}`.replace(/--+/g, '-');
+}
+
+function locationLabel(rec) {
+  if (rec.landmark) return rec.landmark;
+  if (rec.city === 'Delhi') return `New Delhi, Delhi ${rec.pincode}, India`;
+  return `${rec.locality || rec.city}, ${rec.city} ${rec.pincode}, India`;
+}
+
+function locationLocality(rec) {
+  if (rec.city === 'Delhi') return 'New Delhi';
+  return rec.locality || rec.city;
+}
+
+function locationCookieSpecs(rec) {
+  const locality = locationLocality(rec);
+  const landmark = locationLabel(rec);
+  return [
+    { name: 'gr_1_lat', value: String(rec.lat), domain: 'blinkit.com', path: '/' },
+    { name: 'gr_1_lon', value: String(rec.lon), domain: 'blinkit.com', path: '/' },
+    { name: 'gr_1_locality', value: encodeURIComponent(locality), domain: 'blinkit.com', path: '/' },
+    { name: 'gr_1_landmark', value: encodeURIComponent(landmark), domain: 'blinkit.com', path: '/' },
+  ];
+}
+
+function probeRecords(rec) {
+  return OOS_PROBE_OFFSETS.map((o) => ({
+    ...rec,
+    lat: Math.round((Number(rec.lat) + o.dlat) * 1e7) / 1e7,
+    lon: Math.round((Number(rec.lon) + o.dlon) * 1e7) / 1e7,
+    probe_label: o.label,
+  }));
+}
+
+function parseJivoCards(cards, rec, store) {
+  const out = [];
+  for (const card of cards) {
+    const c = (card && typeof card === 'object') ? (card.text || '') : (card || '');
+    // pattern: [disc% OFF] [eta MINS] NAME PACK ₹SALE ₹MRP ADD/OutofStock
+    const inStock = !/out of stock/i.test(c);
+    const eta = (c.match(/(\d+)\s*MINS?/i) || [])[1];
+    const disc = (c.match(/(\d+)%\s*OFF/i) || [])[1];
+    const prices = [...c.matchAll(/₹\s*([\d,]+)/g)].map((m) => parseInt(m[1].replace(/,/g, ''), 10));
+    const sale = prices.length ? prices[0] : null;
+    const mrp = prices.length > 1 ? prices[1] : sale;
+    // name: between the MINS/OFF prefix and the first ₹ / pack
+    let name = c.replace(/^\d+%\s*OFF\s*/i, '').replace(/^.*?\d+\s*MINS?\s*/i, '');
+    name = name.replace(/Out of Stock/i, '').trim();
+    const packM = name.match(/(\d[\d.]*\s*(?:ml|l|ltr|litre|kg|g))/i);
+    const pack = packM ? packM[1] : '';
+    name = name.replace(/₹.*$/, '').replace(/ADD\s*$/i, '');
+    if (pack) name = name.split(pack)[0];
+    name = name.trim();
+    if (!/jivo/i.test(name) || !sale) continue;
+    // listing identity (additive, fail-safe): prid + constructed PDP url. Prefer the
+    // real anchor slug; else slugify the parsed name (Blinkit routes PDPs on prid —
+    // the slug segment is cosmetic). On any error the row is built exactly as before.
+    let identity = {};
+    try {
+      const prid = (card && typeof card === 'object' && card.prid) ? String(card.prid) : '';
+      if (prid) {
+        const slug = (card.slug || name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')) || 'p';
+        identity = { prid, listing_url: `https://blinkit.com/prn/${slug}/prid/${prid}` };
+      }
+    } catch (_) { identity = {}; }
+    const volMl = parseVolMl(pack);
+    out.push({
+      city: rec.city, pincode: rec.pincode, locality: rec.locality,
+      store_id: store.id || '', store_name: store.name || '',
+      sku_raw: name, canonical: canonical(name, pack), pack: pack || '',
+      vol_ml: volMl, sale, mrp,
+      discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : (disc ? parseFloat(disc) : null),
+      per_litre: volMl ? Math.round((sale / (volMl / 1000)) * 100) / 100 : null,
+      eta_min: eta ? parseInt(eta, 10) : null,
+      in_stock: inStock ? 1 : 0,
+      ...identity,
+    });
+  }
+  return out;
+}
+
+async function extractJivoCards(page) {
+  return page.evaluate(() => {
+    const out = [];
+    const seen = new Set();
+    document.querySelectorAll('div').forEach((el) => {
+      const t = el.innerText || '';
+      if (!/jivo/i.test(t) || !/₹/.test(t)) return;
+      const r = el.getBoundingClientRect();
+      if (r.width < 100 || r.width > 420) return;
+      if (r.height < 180 || r.height > 620) return;
+      const key = t.slice(0, 90);
+      if (seen.has(key)) return;
+      seen.add(key);
+      // ---- listing identity (ADDITIVE, fail-safe): numeric prid + PDP slug ----
+      // Blinkit PDP urls are /prn/<slug>/prid/<prid> (owner-blessed form, see
+      // tools/pricematch/fragments/map-qcom.json). Defensive: try a PDP anchor inside
+      // or wrapping the card first; else a numeric id/data attribute on the card or a
+      // close ancestor/descendant (SPA cards without hrefs). On ANY error the card is
+      // recorded exactly as before (prid/slug just stay empty).
+      let prid = '';
+      let slug = '';
+      try {
+        const a = el.querySelector('a[href*="/prid/"]') || (el.closest ? el.closest('a[href*="/prid/"]') : null);
+        const href = (a && a.getAttribute('href')) || '';
+        const m = href.match(/\/prn\/([^/?#]+)\/prid\/(\d+)/);
+        if (m) { slug = m[1]; prid = m[2]; }
+        if (!prid) {
+          const cand = [el, el.parentElement, el.closest ? el.closest('[id]') : null, el.querySelector('[id]')].filter(Boolean);
+          for (const c2 of cand) {
+            const idv = (c2.getAttribute && (c2.getAttribute('data-pid') || c2.getAttribute('data-product-id') || c2.getAttribute('id'))) || '';
+            if (/^\d{4,8}$/.test(idv)) { prid = idv; break; }
+          }
+        }
+      } catch (_) { prid = ''; slug = ''; }
+      out.push({ text: t.replace(/\s+/g, ' ').trim(), prid, slug });
+    });
+    return out;
+  });
 }
 
 // ======================= COMPETITOR_MODE helpers (env-gated) =======================
@@ -367,11 +495,24 @@ async function scrapeOne(browser, rec) {
   let store = {};
   let resolved = false;
   let blocked = null;
-  const injectLocation = (r) => page.evaluate((rr) => {
+  const injectLocation = async (r) => {
+    try { await ctx.addCookies(locationCookieSpecs(r)); } catch (_) { /* cookie location is best-effort */ }
+    return page.evaluate((rr) => {
     localStorage.setItem('location', JSON.stringify({
-      coords: { isDefault: false, lat: rr.lat, lon: rr.lon, locality: rr.locality, id: 1, isTopCity: true, cityName: rr.city, landmark: rr.landmark, addressId: null }
+      coords: {
+        isDefault: false,
+        lat: rr.lat,
+        lon: rr.lon,
+        locality: rr.locationLocality,
+        id: 1,
+        isTopCity: true,
+        cityName: rr.city,
+        landmark: rr.locationLabel,
+        addressId: null,
+      }
     }));
-  }, r);
+    }, { ...r, locationLocality: locationLocality(r), locationLabel: locationLabel(r) });
+  };
   const readState = async () => {
     const loc = JSON.parse((await page.evaluate(() => localStorage.getItem('location'))) || '{}');
     const m = JSON.parse((await page.evaluate(() => localStorage.getItem('merchant'))) || '{}');
@@ -538,83 +679,66 @@ async function scrapeOne(browser, rec) {
       process.stderr.write(`[unresolved] ${rec.city} ${rec.pincode} -> store reverted on search (active store=${store.name || 'n/a'} id=${store.id || ''}); recording 0 rows\n`);
       return { ...rec, store_id: '', store_name: '', resolved: false, rows: [] };
     }
-    const cards = await page.evaluate(() => {
-      const out = [];
-      const seen = new Set();
-      document.querySelectorAll('div').forEach((el) => {
-        const t = el.innerText || '';
-        if (!/jivo/i.test(t) || !/₹/.test(t)) return;
-        const r = el.getBoundingClientRect();
-        if (r.width < 100 || r.width > 420) return;
-        if (r.height < 180 || r.height > 620) return;
-        const key = t.slice(0, 90);
-        if (seen.has(key)) return;
-        seen.add(key);
-        // ---- listing identity (ADDITIVE, fail-safe): numeric prid + PDP slug ----
-        // Blinkit PDP urls are /prn/<slug>/prid/<prid> (owner-blessed form, see
-        // tools/pricematch/fragments/map-qcom.json). Defensive: try a PDP anchor inside
-        // or wrapping the card first; else a numeric id/data attribute on the card or a
-        // close ancestor/descendant (SPA cards without hrefs). On ANY error the card is
-        // recorded exactly as before (prid/slug just stay empty).
-        let prid = '';
-        let slug = '';
-        try {
-          const a = el.querySelector('a[href*="/prid/"]') || (el.closest ? el.closest('a[href*="/prid/"]') : null);
-          const href = (a && a.getAttribute('href')) || '';
-          const m = href.match(/\/prn\/([^/?#]+)\/prid\/(\d+)/);
-          if (m) { slug = m[1]; prid = m[2]; }
-          if (!prid) {
-            const cand = [el, el.parentElement, el.closest ? el.closest('[id]') : null, el.querySelector('[id]')].filter(Boolean);
-            for (const c2 of cand) {
-              const idv = (c2.getAttribute && (c2.getAttribute('data-pid') || c2.getAttribute('data-product-id') || c2.getAttribute('id'))) || '';
-              if (/^\d{4,8}$/.test(idv)) { prid = idv; break; }
-            }
-          }
-        } catch (_) { prid = ''; slug = ''; }
-        out.push({ text: t.replace(/\s+/g, ' ').trim(), prid, slug });
-      });
-      return out;
-    });
-    for (const card of cards) {
-      const c = (card && typeof card === 'object') ? (card.text || '') : (card || '');
-      // pattern: [disc% OFF] [eta MINS] NAME PACK ₹SALE ₹MRP ADD/OutofStock
-      const inStock = !/out of stock/i.test(c);
-      const eta = (c.match(/(\d+)\s*MINS?/i) || [])[1];
-      const disc = (c.match(/(\d+)%\s*OFF/i) || [])[1];
-      const prices = [...c.matchAll(/₹\s*([\d,]+)/g)].map((m) => parseInt(m[1].replace(/,/g, ''), 10));
-      const sale = prices.length ? prices[0] : null;
-      const mrp = prices.length > 1 ? prices[1] : sale;
-      // name: between the MINS/OFF prefix and the first ₹ / pack
-      let name = c.replace(/^\d+%\s*OFF\s*/i, '').replace(/^.*?\d+\s*MINS?\s*/i, '');
-      name = name.replace(/Out of Stock/i, '').trim();
-      const packM = name.match(/(\d[\d.]*\s*(?:ml|l|ltr|litre|kg|g))/i);
-      const pack = packM ? packM[1] : '';
-      name = name.replace(/₹.*$/, '').replace(/ADD\s*$/i, '');
-      if (pack) name = name.split(pack)[0];
-      name = name.trim();
-      if (!/jivo/i.test(name) || !sale) continue;
-      // listing identity (additive, fail-safe): prid + constructed PDP url. Prefer the
-      // real anchor slug; else slugify the parsed name (Blinkit routes PDPs on prid —
-      // the slug segment is cosmetic). On any error the row is built exactly as before.
-      let identity = {};
-      try {
-        const prid = (card && typeof card === 'object' && card.prid) ? String(card.prid) : '';
-        if (prid) {
-          const slug = (card.slug || name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '')) || 'p';
-          identity = { prid, listing_url: `https://blinkit.com/prn/${slug}/prid/${prid}` };
+    const cards = await extractJivoCards(page);
+    rows.push(...parseJivoCards(cards, rec, store));
+    const primaryStore = { ...store };
+
+    if (BLINKIT_OOS_PROBE && rows.some((r) => !r.in_stock)) {
+      for (const probeRec of probeRecords(rec)) {
+        if (!rows.some((r) => !r.in_stock)) break;
+        let probeResolved = false;
+        let probeLoc = {};
+        let probeStore = {};
+        await injectLocation(probeRec);
+        await page.goto('https://blinkit.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+        for (let poll = 0; poll < 4 && !probeResolved; poll++) {
+          await page.waitForTimeout(900);
+          ({ loc: probeLoc, m: probeStore } = await readState());
+          probeResolved = storeResolved(probeLoc, probeStore, probeRec);
         }
-      } catch (_) { identity = {}; }
-      rows.push({
-        city: rec.city, pincode: rec.pincode, locality: rec.locality,
-        store_id: store.id || '', store_name: store.name || '',
-        sku_raw: name, canonical: canonical(name, pack), pack: pack || '',
-        vol_ml: parseVolMl(pack), sale, mrp,
-        discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : (disc ? parseFloat(disc) : null),
-        per_litre: parseVolMl(pack) ? Math.round((sale / (parseVolMl(pack) / 1000)) * 100) / 100 : null,
-        eta_min: eta ? parseInt(eta, 10) : null,
-        in_stock: inStock ? 1 : 0,
-        ...identity,
-      });
+        if (!probeResolved) continue;
+        await injectLocation(probeRec);
+        await page.goto('https://blinkit.com/s/?q=jivo', { waitUntil: 'domcontentloaded', timeout: 30000 });
+        await page.waitForTimeout(3500);
+        ({ loc: probeLoc, m: probeStore } = await readState());
+        if (!storeResolved(probeLoc, probeStore, probeRec)) continue;
+
+        const probeRows = parseJivoCards(await extractJivoCards(page), rec, probeStore);
+        let flips = 0;
+        for (const candidate of probeRows) {
+          if (!candidate.in_stock) continue;
+          const idx = rows.findIndex((r) => {
+            if (r.in_stock) return false;
+            if (r.prid && candidate.prid) return String(r.prid) === String(candidate.prid);
+            return r.canonical === candidate.canonical;
+          });
+          if (idx < 0) continue;
+          const prev = rows[idx];
+          rows[idx] = {
+            ...prev,
+            store_id: candidate.store_id,
+            store_name: candidate.store_name,
+            sale: candidate.sale,
+            mrp: candidate.mrp,
+            discount_pct: candidate.discount_pct,
+            per_litre: candidate.per_litre,
+            eta_min: candidate.eta_min,
+            in_stock: 1,
+            stock_probe: 'nearby_same_pincode',
+            stock_probe_label: probeRec.probe_label,
+            stock_probe_lat: probeRec.lat,
+            stock_probe_lon: probeRec.lon,
+            primary_store_id: prev.store_id,
+            primary_store_name: prev.store_name,
+            primary_eta_min: prev.eta_min,
+          };
+          flips++;
+        }
+        if (flips) {
+          process.stderr.write(`[oos-probe] ${rec.city} ${rec.pincode} ${probeRec.probe_label} -> flipped ${flips} OOS row(s) via store=${probeStore.name || 'n/a'} id=${probeStore.id || ''}\n`);
+        }
+      }
+      store = primaryStore;
     }
     // dedup on (store_id, canonical)
     const dd = new Map();
@@ -703,6 +827,8 @@ if (require.main === module) (async () => {
     partial,
     auth_session: BLINKIT_AUTH ? 1 : 0,
     auth_required: BLINKIT_REQUIRE_AUTH ? 1 : 0,
+    oos_probe_enabled: BLINKIT_OOS_PROBE ? 1 : 0,
+    oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode').length,
     captured_at: new Date().toISOString(),
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
