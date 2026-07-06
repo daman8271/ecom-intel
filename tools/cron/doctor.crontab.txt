@@ -25,13 +25,14 @@
 0 3 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # ecom-intel bigbasket-pincode team daily private-direct
 
 # 10:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28; moved
-# 12:00 -> 10:00 goal #60 2026-07-03). Fire 00:30; LEAD_MAX=32400 pins the chain
-# START to ~01:02 IST (the SAME proven start as the old 12:00 batch, so the Mac-fed
-# q-commerce spools land exactly as before) and the batch lands AT 10:00 instead of
-# 12:00. The watchdog guards the single 00:30 cron launch tick and only launches a
-# bounded catch-up if the primary did not start.
-30 0 * * * cd /opt/ecom-intel && LEAD_MAX=32400 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
+# 12:00 -> 10:00 goal #60 2026-07-03). Fire 00:30; LEAD_MAX=11820 is the current
+# phase-2 live value. The watchdog guards the single 00:30 cron launch tick and only
+# launches a bounded catch-up if the primary did not start.
+30 0 * * * cd /opt/ecom-intel && LEAD_MAX=11820 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
 */20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 10:00 >> logs/sweep_watchdog.cron.log 2>&1   # 10:00-sweep catch-up watchdog (guards the single 00:30 launch tick)
+25 6 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter
+35 6 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 10:00-batch guard early
+45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 10:00-batch guard late
 */15 5-10 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor false-OOS guard
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only

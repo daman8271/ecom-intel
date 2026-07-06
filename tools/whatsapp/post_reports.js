@@ -10,6 +10,7 @@
 // manifest.json shape: {"summary": "...", "files": [{"path","caption"}, ...]}
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process');
 const { openSocket, delay } = require('./_sock');
 
 const TARGET_FILE = path.join(__dirname, '..', '..', 'secrets', 'whatsapp-target.json');
@@ -33,6 +34,29 @@ if (!jid) {
   jid = JSON.parse(fs.readFileSync(TARGET_FILE, 'utf8')).jid;
 }
 
+function runBlinkitGate(filePath, passName) {
+  const base = path.basename(filePath);
+  const m = base.match(/(\d{4}-\d{2}-\d{2})/);
+  const env = {
+    ...process.env,
+    BLINKIT_MONITOR_DRYRUN: '1',
+    BLINKIT_MONITOR_EXIT_CODE: '1',
+    BLINKIT_MONITOR_DATE: m ? m[1] : '',
+  };
+  if (/Jivo-Blinkit-Live-Report-\d{4}-\d{2}-\d{2}\.xlsx$/.test(base)) {
+    env.BLINKIT_MONITOR_REPORT = filePath;
+  }
+  if (/Jivo-Blinkit-Not-Listed-Pincodes-\d{4}-\d{2}-\d{2}\.xlsx$/.test(base)) {
+    env.BLINKIT_MONITOR_REPORT = path.join(path.dirname(filePath), `Jivo-Blinkit-Live-Report-${m ? m[1] : ''}.xlsx`);
+    env.BLINKIT_MONITOR_NOT_LISTED_REPORT = filePath;
+  }
+  const gate = spawnSync(path.join(__dirname, '..', 'cron', 'blinkit_quality_monitor.sh'), [passName], {
+    env,
+    stdio: 'inherit',
+  });
+  return gate.status === 0;
+}
+
 (async () => {
   let sock;
   try { sock = await openSocket(); }
@@ -49,6 +73,23 @@ if (!jid) {
   const files = manifest.files || [];
   for (const f of files) {
     if (!fs.existsSync(f.path)) { console.error('skip missing:', f.path); continue; }
+    if (/Jivo-Blinkit-Live-Report-\d{4}-\d{2}-\d{2}\.xlsx$/.test(path.basename(f.path))) {
+      if (!runBlinkitGate(f.path, 'pre-whatsapp-post-reports')) {
+        console.error('skip Blinkit report; quality gate failed:', f.path);
+        continue;
+      }
+    }
+    if (/Jivo-Blinkit-Not-Listed-Pincodes-\d{4}-\d{2}-\d{2}\.xlsx$/.test(path.basename(f.path))) {
+      const allowed = process.env.BLINKIT_NOT_LISTED_WA_CHAT || '917703818227@s.whatsapp.net';
+      if (jid !== allowed) {
+        console.error('skip Blinkit not-listed workbook; direct recipient required:', allowed);
+        continue;
+      }
+      if (!runBlinkitGate(f.path, 'pre-whatsapp-post-reports-not-listed')) {
+        console.error('skip Blinkit not-listed workbook; quality gate failed:', f.path);
+        continue;
+      }
+    }
     await sock.sendMessage(jid, {
       document: fs.readFileSync(f.path),
       fileName: path.basename(f.path),

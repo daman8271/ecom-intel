@@ -124,6 +124,12 @@ set, not part of the Wave 1 config generator.
   `Not listed`; a standalone `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`
   is direct-sent to `917703818227@s.whatsapp.net` only after the main Blinkit
   workbook passes quality.
+- **Blinkit pincode labels are not enough.** Blinkit resolves a dark store from the
+  injected latitude/longitude and account session; two nearby coordinates can show
+  the same pincode/header but different listing, stock, ETA, or offer price. The
+  scraper therefore treats a search-card `Out of stock` as provisional, probes
+  nearby same-pincode coordinates, verifies hard OOS rows on the PDP, and writes
+  `Not listed` separately when the expected SKU is absent for that resolved store.
 - **Configs:** `platforms/<p>/pincodes.daily.json` + `pincodes.full25.json` (regen via
   `tools/pincodes/gen_full_configs.py`).
 - **Honest coverage ledger:** `data/coverage/ledger.csv` records, per
@@ -203,9 +209,11 @@ Step by step:
    delivery location, extracts Jivo product cards, writes `result.json` as
    `{summary, perPin, allRows}`. Pure deterministic JS, no LLM.
 2. **Build Excel** — `platforms/<p>/build_excel.py` (openpyxl) turns `result.json`
-   into a branded **6-sheet** workbook: *Summary · Master Data · Pricing Matrix ·
-   Stock Status · Discount Analysis · Coverage & Gaps*. Platform name is derived
-   from the folder, so the script is identical across platforms (Amazon Fresh ships
+   into a branded workbook with the core sheets *Summary · Master Data · Pricing
+   Matrix · Stock Status · Discount Analysis · Coverage & Gaps*, plus any
+   platform-specific gates/sheets. Blinkit also writes `Listing Status`,
+   `Not Listed Pincodes`, and the standalone not-listed workbook. Platform name is
+   derived from the folder, so the script is shared across platforms (Amazon Fresh ships
    a Fresh-specific variant with a *Now Serviceability* sheet).
 3. **Predictions** — `tools/predict.py <platform> <xlsx>` opens the just-built
    workbook and **appends a "Predictions" sheet** computed from `data/<p>/history.csv`
@@ -390,6 +398,8 @@ chmod 600 secrets.env
 #     LaunchAgent: com.danny.blinkit-mac-to-vps at 06:30 IST
 #     Required flags: BLINKIT_REQUIRE_AUTH=1, BLINKIT_OOS_PROBE=1,
 #     BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
+#     Pincode text is only a label; coordinates resolve the Blinkit dark store.
+#     Do not merge Not listed with Listed - Out of stock.
 
 # 4. Install cron (sets TZ to Asia/Kolkata, schedules runs + healthcheck)
 ./setup_cron.sh

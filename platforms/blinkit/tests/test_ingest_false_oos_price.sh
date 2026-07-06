@@ -22,6 +22,7 @@ env_common=(
   BLINKIT_REQUIRE_AUTH_DROP=1
   BLINKIT_REQUIRE_OOS_PROBE_ENABLED=1
   BLINKIT_REQUIRE_PDP_OOS_PROBE_ENABLED=1
+  BLINKIT_REQUIRE_PDP_PRICE_PROBE_ENABLED=1
   BLINKIT_MAX_UNVERIFIED_OOS=0
   BLINKIT_MAX_MISSING_PRID_RATIO=0
   BLINKIT_MAX_MISSING_LISTING_URL_RATIO=0
@@ -35,14 +36,20 @@ env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$FIXTURE" >/tmp/blin
 bad="$(mktemp)"
 bad_pomace_stale="$(mktemp)"
 bad_canola_stale="$(mktemp)"
-trap 'rm -f "$bad" "$bad_pomace_stale" "$bad_canola_stale"' EXIT
-python3 - "$FIXTURE" "$bad" "$bad_pomace_stale" "$bad_canola_stale" <<'PY'
+bad_missing_price_probe="$(mktemp)"
+trap 'rm -f "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe"' EXIT
+python3 - "$FIXTURE" "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" <<'PY'
 import json, sys
-src, bad_path, bad_pomace_path, bad_canola_path = sys.argv[1:]
+src, bad_path, bad_pomace_path, bad_canola_path, bad_missing_price_probe_path = sys.argv[1:]
 d = json.load(open(src, encoding="utf-8"))
 d["allRows"][0]["per_litre"] = 375.2
 d["perPin"][0]["rows"][0]["per_litre"] = 375.2
 json.dump(d, open(bad_path, "w", encoding="utf-8"))
+
+missing_price_probe = json.load(open(src, encoding="utf-8"))
+for key in ("pdp_price_probe_enabled", "pdp_price_probe_checked", "pdp_price_probe_updates"):
+    missing_price_probe["summary"].pop(key, None)
+json.dump(missing_price_probe, open(bad_missing_price_probe_path, "w", encoding="utf-8"))
 
 pomace = json.load(open(src, encoding="utf-8"))
 for row in [pomace["allRows"][0], pomace["perPin"][0]["rows"][0]]:
@@ -92,6 +99,12 @@ if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad" >/tmp/blink
   exit 1
 fi
 grep -q "Refusing Blinkit bad price math" /tmp/blinkit-ingest-bad.out
+
+if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_missing_price_probe" >/tmp/blinkit-ingest-missing-price-probe.out 2>&1; then
+  echo "expected missing PDP price probe fixture to fail" >&2
+  exit 1
+fi
+grep -q "Refusing unpriced Blinkit drop" /tmp/blinkit-ingest-missing-price-probe.out
 
 if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_pomace_stale" >/tmp/blinkit-ingest-pomace-stale.out 2>&1; then
   echo "expected stale Pomace canary fixture to fail" >&2

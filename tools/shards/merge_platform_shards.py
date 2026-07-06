@@ -53,6 +53,20 @@ def recompute_summary(platform: str, results: list[dict], per_pin: list[dict], a
     if platform == "blinkit":
         summary["auth_session"] = 1 if summaries and all(bool(s.get("auth_session")) for s in summaries) else 0
         summary["auth_required"] = 1 if any(bool(s.get("auth_required")) for s in summaries) else 0
+        summary["oos_probe_enabled"] = 1 if summaries and all(bool(s.get("oos_probe_enabled")) for s in summaries) else 0
+        summary["oos_probe_flips"] = sum(int(s.get("oos_probe_flips") or 0) for s in summaries)
+        summary["pdp_oos_probe_enabled"] = 1 if summaries and all(bool(s.get("pdp_oos_probe_enabled")) for s in summaries) else 0
+        summary["pdp_oos_probe_flips"] = sum(int(s.get("pdp_oos_probe_flips") or 0) for s in summaries)
+        summary["pdp_price_probe_enabled"] = 1 if summaries and all(bool(s.get("pdp_price_probe_enabled")) for s in summaries) else 0
+        summary["pdp_price_probe_checked"] = sum(int(s.get("pdp_price_probe_checked") or 0) for s in summaries)
+        summary["pdp_price_probe_updates"] = sum(int(s.get("pdp_price_probe_updates") or 0) for s in summaries)
+        summary["unverified_oos"] = sum(
+            1
+            for row in all_rows
+            if not row.get("in_stock")
+            and not row.get("pdp_checked")
+            and str(row.get("stock_source") or "").strip().lower() not in {"pdp", "pdp_probe"}
+        )
 
     if platform == "zepto" or any("freshness" in s for s in summaries):
         summary["rows_in_stock"] = sum(1 for r in all_rows if r.get("in_stock"))

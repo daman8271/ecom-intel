@@ -46,7 +46,23 @@ class TestShards(unittest.TestCase):
                 row["rows"] = [{"pincode": pin, "canonical": f"sku-{pin}", "in_stock": 1}]
                 rows.extend(row["rows"])
             per.append(row)
-        result = {"summary": {"wall_s": idx + 1, "partial": False}, "perPin": per, "allRows": rows}
+        result = {
+            "summary": {
+                "wall_s": idx + 1,
+                "partial": False,
+                "auth_session": 1,
+                "auth_required": 1,
+                "oos_probe_enabled": 1,
+                "oos_probe_flips": idx,
+                "pdp_oos_probe_enabled": 1,
+                "pdp_oos_probe_flips": idx + 1,
+                "pdp_price_probe_enabled": 1,
+                "pdp_price_probe_checked": idx + 2,
+                "pdp_price_probe_updates": idx,
+            },
+            "perPin": per,
+            "allRows": rows,
+        }
         path = os.path.join(shard_dir, "result.json")
         with open(path, "w") as f:
             json.dump(result, f)
@@ -74,6 +90,15 @@ class TestShards(unittest.TestCase):
         self.assertEqual(merged["summary"]["pincodes_total"], 4)
         self.assertEqual(merged["summary"]["pincodes_with_jivo"], 2)
         self.assertEqual(merged["summary"]["unique_skus"], 2)
+        self.assertEqual(merged["summary"]["auth_session"], 1)
+        self.assertEqual(merged["summary"]["oos_probe_enabled"], 1)
+        self.assertEqual(merged["summary"]["pdp_oos_probe_enabled"], 1)
+        self.assertEqual(merged["summary"]["pdp_price_probe_enabled"], 1)
+        self.assertEqual(merged["summary"]["oos_probe_flips"], 1)
+        self.assertEqual(merged["summary"]["pdp_oos_probe_flips"], 3)
+        self.assertEqual(merged["summary"]["pdp_price_probe_checked"], 5)
+        self.assertEqual(merged["summary"]["pdp_price_probe_updates"], 1)
+        self.assertEqual(merged["summary"]["unverified_oos"], 0)
         self.assertEqual([p["pincode"] for p in merged["perPin"]], ["100001", "100002", "100003", "100004"])
 
 

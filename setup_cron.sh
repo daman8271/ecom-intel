@@ -24,6 +24,12 @@
 set -euo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
+if [ "${1:-}" != "--print" ] && [ "${DRY_RUN:-0}" != "1" ] && [ "${ALLOW_LEGACY_SETUP_CRON:-0}" != "1" ]; then
+  echo "setup_cron.sh is deprecated and no longer installs the live schedule." >&2
+  echo "Use tools/cron/doctor.crontab.txt as the reviewed reference, or set ALLOW_LEGACY_SETUP_CRON=1 for the obsolete legacy block." >&2
+  exit 2
+fi
+
 # Make cron times mean IST.
 timedatectl set-timezone Asia/Kolkata 2>/dev/null || true
 

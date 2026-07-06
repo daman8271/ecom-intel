@@ -58,6 +58,22 @@ ready_file() {
   [ $(( now - $(stat -c %Y "$f") )) -ge "$MIN_AGE_SECONDS" ]
 }
 
+quality_ok() {
+  local f="$1"
+  case "$(basename "$f")" in
+    Jivo-Blinkit-Live-Report-*.xlsx)
+      BLINKIT_MONITOR_DRYRUN=1 \
+      BLINKIT_MONITOR_EXIT_CODE=1 \
+      BLINKIT_MONITOR_DATE="$DATE_IST" \
+      BLINKIT_MONITOR_REPORT="$f" \
+      "$ROOT/tools/cron/blinkit_quality_monitor.sh" pre-whatsapp-pending >/dev/null
+      ;;
+    *)
+      return 0
+      ;;
+  esac
+}
+
 FILES=(
   "output/Jivo-Blinkit-Live-Report-${DATE_IST}.xlsx"
   "output/Jivo-AmazonFresh-Live-Report-${DATE_IST}.xlsx"
@@ -71,6 +87,11 @@ while [ ${#sent[@]} -lt ${#FILES[@]} ]; do
   for f in "${FILES[@]}"; do
     case " ${sent[*]} " in *" $f "*) continue ;; esac
     if ready_file "$f"; then
+      if ! quality_ok "$f"; then
+        log "SKIP $(basename "$f"): Blinkit quality gate failed"
+        sent+=("$f")
+        continue
+      fi
       log "sending $(basename "$f")"
       r="$(send_text "Jivo Price Data — late Excel sheet ready — $(basename "$f")")"
       log "header: $r"

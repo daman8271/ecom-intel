@@ -136,6 +136,9 @@ to a captcha on the datacenter IP. See `docs/PROXY.md`.
   separates `Listed - Out of stock` from `Not listed`; a separate
   `Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx` is sent only to the configured
   direct WhatsApp contact after the main Blinkit workbook passes quality.
+  Blinkit availability is coordinate/dark-store based, not pincode-label based:
+  the same header pincode can resolve to a different store from a nearby coordinate,
+  so hard OOS rows require nearby and PDP verification before publishing.
 - **BigBasket pincode cron (IST):** root crontab runs
   `platforms/bigbasket/team_run_pincode.sh run` at **03:00** in tmux. It shards the
   run across VPS + Mac Pro + KVM1, merges `result_pincode.json`, builds the pincode

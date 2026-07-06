@@ -140,6 +140,10 @@ This is the single biggest source of per-platform code difference:
     to `BLINKIT_REQUIRE_AUTH_DROP=1` and rejects unauthenticated drops. The accepted
     run also requires search + PDP OOS probes and PDP price-probe canaries so
     search-only false OOS and stale search-card prices are held before delivery.
+    The visible pincode is only a label; Blinkit availability comes from the
+    coordinate-resolved dark store. `Listed - Out of stock` means a listed SKU was
+    verified unavailable, while `Not listed` means an expected SKU was absent for
+    that resolved store and is reported in a separate not-listed workbook.
   - **** — stealth POST to its public search API `/api//search/v2`
     (now **offset-paginated** for the full Jivo catalogue, c0bc409), location in the
     request body — no page render. **Currently 403-blocked at the IP level (0 rows,
@@ -171,7 +175,7 @@ Amazon storefronts never overlap.
 
 ---
 
-## 4. The report: 6-sheet Excel
+## 4. The report: Excel workbook
 
 `build_excel.py` (openpyxl) produces a Jivo-branded workbook
 `Jivo-<Platform>-Live-Report-<date>.xlsx`:
@@ -214,6 +218,7 @@ cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; 
   │       ├─ BLINKIT_REQUIRE_AUTH=1 with /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
   │       ├─ BLINKIT_OOS_PROBE=1, BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
   │       └─ VPS ingest with BLINKIT_REQUIRE_AUTH_DROP=1 → build/review/deliver
+  │          └─ main workbook + not-listed workbook; direct not-listed WhatsApp only after quality OK
   └─ tools/cron/deadline_sweep.sh 10:00 — predict chain runtime (durations.jsonl p90),
   │    sleep to T−lead, export DEFER_DELIVERY=1 SWEEP_ID SWEEP_DEADLINE
   └─ run_all.sh — scrape VPS-hosted LIVE platforms SERIALLY ( removed 2026-06-06; ~2h chain)
@@ -245,7 +250,8 @@ platform full resources + clean store re-resolution, and the Amazon trio runs
 consecutively so it can never overlap. Order: light platforms first, the Amazon trio
 consecutive. Blinkit is no longer a VPS serial-sweep member; the full authenticated
 collector runs off-box on the Mac Pro residential session and the vetted output enters
-the delivery path only after auth/session validation. BigBasket pincode is also outside
+the delivery path only after auth/session validation, OOS/PDP price gates, and workbook
+checks. BigBasket pincode is also outside
 the VPS serial sweep: its team runner uses the VPS, Mac Pro, and KVM1 in parallel, then
 keeps the pincode workbook private/direct-only while the smaller national workbook can
 still enter the normal batch.

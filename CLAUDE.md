@@ -198,6 +198,13 @@ Blinkit drops are rejected. VPS emergency/manual shards use
 `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Corrected 2026-07-06 run: 902 pins,
 870 resolved, 468 Jivo pins, 1915 rows, 0 blocked, 303 stores.
 
+Blinkit stock and price are determined by the resolved dark store from coordinates,
+not just the visible pincode string. Treat `Listed - Out of stock` as a listed SKU
+whose PDP/nearby probes verified no stock; treat `Not listed` as an expected SKU
+absent from that resolved store. The main workbook includes both `Listing Status`
+and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
+`917703818227@s.whatsapp.net` only after the main Blinkit workbook passes quality.
+
 ## Review (tools/review.py) — never ship garbage, stay cheap
 Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,
 captcha/403 markers, coverage collapse vs baseline, schema, freshness — these alone

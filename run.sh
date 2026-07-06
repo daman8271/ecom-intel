@@ -56,6 +56,17 @@ run_scraper() {
   fi
 }
 
+latest_primary_workbook() {
+  case "$P" in
+    blinkit)
+      ls -t "$PDIR"/Jivo-Blinkit-Live-Report-*.xlsx 2>/dev/null | head -1
+      ;;
+    *)
+      ls -t "$PDIR"/Jivo-*.xlsx 2>/dev/null | head -1
+      ;;
+  esac
+}
+
 # ---- Per-pincode coverage (Wave-1 QC: blinkit/zepto/flipkart-minutes). Opt-in via COVERAGE_FULL=1. ----
 # When COVERAGE_FULL=1 and no explicit PINCODES_FILE is set, point the scraper at the
 # full 25-city per-pincode config (pincodes.full25.json, 1,885 pins) instead of the
@@ -133,28 +144,30 @@ else
 fi
 echo "[$RUN_ID] building excel ..."
 python3 build_excel.py
+PRIMARY_XLSX="$(latest_primary_workbook)"
+[ -n "$PRIMARY_XLSX" ] || { echo "[$RUN_ID] $P: no primary workbook produced"; exit 1; }
 cp Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 
 # ---- Predictions sheet: append to the workbook before delivery (best-effort). ----
 echo "[$RUN_ID] adding predictions sheet ..."
-python3 "$DIR/tools/predict.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
+python3 "$DIR/tools/predict.py" "$P" "$PRIMARY_XLSX" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
 cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 
 # ---- Price Match sheet: live vs our reference for today's regime (best-effort). ----
 # Guarded: if the tool is absent this is a no-op and behavior is exactly as before.
-[ -f "$DIR/tools/pricematch/add_pricematch_sheet.py" ] && python3 "$DIR/tools/pricematch/add_pricematch_sheet.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
+[ -f "$DIR/tools/pricematch/add_pricematch_sheet.py" ] && python3 "$DIR/tools/pricematch/add_pricematch_sheet.py" "$P" "$PRIMARY_XLSX" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
 
 # ---- Availability sheet: list EVERY serviceable pincode marked Jivo Yes/No, so the ----
 # "delivers but Jivo NOT available" pincodes are visible (the availability-tracker's point).
 # Per-pincode platforms only; best-effort. Runs before the Leadership View regen below.
 case "$P" in blinkit|zepto|flipkart-minutes|amazon-fresh|amazon-now)
-  [ -f "$DIR/tools/availability/add_availability_sheet.py" ] && python3 "$DIR/tools/availability/add_availability_sheet.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true ;;
+  [ -f "$DIR/tools/availability/add_availability_sheet.py" ] && python3 "$DIR/tools/availability/add_availability_sheet.py" "$P" "$PRIMARY_XLSX" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true ;;
 esac
 
 # ---- Leadership View: regenerate the FIRST sheet LAST (best-effort). ----
 # MUST stay the final workbook-touching step: it redraws the chart-free durable
 # dashboard so no earlier openpyxl round-trip / viewer quirk can blank page 1.
-[ -f "$DIR/tools/report_dashboard.py" ] && python3 "$DIR/tools/report_dashboard.py" "$P" "$(ls -t "$PDIR"/Jivo-*.xlsx | head -1)" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
+[ -f "$DIR/tools/report_dashboard.py" ] && python3 "$DIR/tools/report_dashboard.py" "$P" "$PRIMARY_XLSX" 2>>"$DIR/logs/${P}-${RUN_ID}.log" || true
 cp "$PDIR"/Jivo-*.xlsx "$DIR/output/" 2>/dev/null || true
 
 # ---- Review: deterministic checks + optional cheap LLM. Never fail the run. ----

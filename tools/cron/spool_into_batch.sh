@@ -18,6 +18,18 @@ BROOT="$ROOT/output/.batch"
 
 [ -f "$XLSX" ] || exit 0
 TODAY="$(date +%F)"
+
+if [ "$P" = "blinkit" ]; then
+  BLINKIT_MONITOR_DRYRUN=1 \
+  BLINKIT_MONITOR_EXIT_CODE=1 \
+  BLINKIT_MONITOR_DATE="$TODAY" \
+  BLINKIT_MONITOR_REPORT="$XLSX" \
+  "$ROOT/tools/cron/blinkit_quality_monitor.sh" pre-spool >/dev/null || {
+    echo "[spool_into_batch] blinkit quality gate failed; not spooling $XLSX" >&2
+    exit 0
+  }
+fi
+
 PENDING=""
 for l in "$BROOT"/launched-"$TODAY"-*; do
   [ -e "$l" ] || continue
