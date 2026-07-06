@@ -208,6 +208,14 @@ if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:
          BLINKIT_MONITOR_REPORT="$BI_RPT" \
          ./tools/cron/blinkit_quality_monitor.sh pre-batch; then
       echo "[$(date '+%F %T')] run_all: blinkit quality gate failed — skipped batch spool for $BI_RPT"
+      (
+        set +e
+        [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
+        TG="${TELEGRAM_BOT_TOKEN:-}"; OC="${TELEGRAM_OWNER_CHAT_ID:-${TELEGRAM_CHAT_ID:-}}"
+        [ -n "$TG" ] && [ -n "$OC" ] && curl -s --max-time 60 -X POST "https://api.telegram.org/bot${TG}/sendMessage" \
+          --data-urlencode "chat_id=${OC}" \
+          --data-urlencode "text=⚠️ Blinkit held back from ${SWEEP_ID:-deadline} batch: quality gate failed for $(basename "$BI_RPT"). It was not spooled for send_batch/WhatsApp." >/dev/null
+      ) || true
     else
     BIDIR="$DIR/output/.batch/${SWEEP_ID}"; mkdir -p "$BIDIR" 2>>logs/telegram.log
     BI_RPT="$BI_RPT" BI_SUM="$DIR/platforms/blinkit/result.json" python3 - "$BIDIR/blinkit.json" 2>>logs/telegram.log <<'BISPOOL'
