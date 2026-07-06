@@ -80,6 +80,10 @@ verify the row, the scraper marks it `stock_unverified`; workbook code renders i
 `Listed - Stock unverified`, and ingest/quality gates fail closed so it cannot be
 delivered.
 
+Checkpoint/resume files are keyed by IST date (`.progress.YYYY-MM-DD.json`), not UTC.
+This matters for manual/early-morning IST starts: a July 7 run must not reuse a July 6
+UTC-date cache and skip the fresh per-pincode auth/PDP checks.
+
 ## The trick
 Blinkit picks a dark store from your authenticated delivery session and
 `localStorage.location`. Hydrate auth first, override the delivery location, verify the
