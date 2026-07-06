@@ -43,7 +43,12 @@ const OOS_PROBE_OFFSETS = [
   { label: 'east', dlat: 0, dlon: 0.012 },
   { label: 'north', dlat: 0.012, dlon: 0 },
   { label: 'south', dlat: -0.012, dlon: 0 },
+  { label: 'northwest', dlat: 0.012, dlon: -0.012 },
+  { label: 'northeast', dlat: 0.012, dlon: 0.012 },
+  { label: 'southwest', dlat: -0.012, dlon: -0.012 },
+  { label: 'southeast', dlat: -0.012, dlon: 0.012 },
 ];
+const BLINKIT_PDP_OOS_PROBE = process.env.BLINKIT_PDP_OOS_PROBE !== '0';
 
 // ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
 // At 1,885 pincodes a run is long, so it MUST survive interruption and rate-limiting
@@ -241,10 +246,73 @@ function parseJivoCards(cards, rec, store) {
       per_litre: volMl ? Math.round((sale / (volMl / 1000)) * 100) / 100 : null,
       eta_min: eta ? parseInt(eta, 10) : null,
       in_stock: inStock ? 1 : 0,
+      listing_status: inStock ? 'listed_in_stock' : 'listed_out_of_stock',
+      stock_source: 'search_card',
+      price_source: inStock ? 'search_card' : 'search_card_oos',
       ...identity,
     });
   }
   return out;
+}
+
+function pdpPackVariants(row) {
+  const variants = new Set();
+  if (row.pack) variants.add(String(row.pack).replace(/\s+/g, ' ').trim());
+  const vol = Number(row.vol_ml || parseVolMl(row.pack));
+  if (vol) {
+    if (vol >= 1000) {
+      const litres = vol / 1000;
+      const s = Number.isInteger(litres) ? String(litres) : String(litres).replace(/\.0+$/, '');
+      variants.add(`${s} l`);
+      variants.add(`${s} ltr`);
+      variants.add(`${s} litre`);
+      variants.add(`${s} liter`);
+    } else {
+      variants.add(`${vol} ml`);
+    }
+  }
+  return [...variants].filter(Boolean);
+}
+
+function parsePdpProductText(text, row) {
+  const body = String(text || '').replace(/\s+/g, ' ').trim();
+  const lower = body.toLowerCase();
+  const name = String(row.sku_raw || '').replace(/\s+/g, ' ').trim();
+  if (!name) return null;
+  const candidates = [];
+  for (const pack of pdpPackVariants(row)) {
+    const needle = `${name} ${pack}`.toLowerCase();
+    let idx = lower.indexOf(needle);
+    while (idx >= 0) {
+      candidates.push(idx);
+      idx = lower.indexOf(needle, idx + 1);
+    }
+  }
+  if (!candidates.length) return null;
+  let segment = '';
+  for (const idx of candidates) {
+    const snip = body.slice(idx, idx + 650);
+    const head = snip.split(/Why shop from blinkit\?/i)[0];
+    if (/out of stock|add to cart|\bADD\b|₹/.test(head)) {
+      segment = head;
+      break;
+    }
+  }
+  if (!segment) segment = body.slice(candidates[0], candidates[0] + 450).split(/Why shop from blinkit\?/i)[0];
+  const out = /out of stock/i.test(segment);
+  const hasAdd = /add to cart|\bADD\b/i.test(segment);
+  const prices = [...segment.matchAll(/₹\s*([\d,]+)/g)].map((m) => parseInt(m[1].replace(/,/g, ''), 10)).filter(Number.isFinite);
+  const sale = prices.length ? prices[0] : null;
+  const mrpMatch = segment.match(/MRP\s*₹\s*([\d,]+)/i);
+  const mrp = mrpMatch ? parseInt(mrpMatch[1].replace(/,/g, ''), 10) : (prices.length > 1 ? prices[1] : sale);
+  return {
+    in_stock: hasAdd && !out ? 1 : 0,
+    sale,
+    mrp,
+    discount_pct: (mrp && sale && mrp >= sale) ? Math.round(((mrp - sale) / mrp) * 1000) / 10 : null,
+    per_litre: row.vol_ml && sale ? Math.round((sale / (row.vol_ml / 1000)) * 100) / 100 : null,
+    snippet: segment.slice(0, 240),
+  };
 }
 
 async function extractJivoCards(page) {
@@ -518,6 +586,38 @@ async function scrapeOne(browser, rec) {
     const m = JSON.parse((await page.evaluate(() => localStorage.getItem('merchant'))) || '{}');
     return { loc, m };
   };
+  const resolveLocationFor = async (r, polls = 4) => {
+    let probeLoc = {};
+    let probeStore = {};
+    await injectLocation(r);
+    await page.goto('https://blinkit.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+    for (let poll = 0; poll < polls; poll++) {
+      await page.waitForTimeout(900);
+      ({ loc: probeLoc, m: probeStore } = await readState());
+      if (storeResolved(probeLoc, probeStore, r)) return { resolved: true, loc: probeLoc, store: probeStore };
+    }
+    return { resolved: false, loc: probeLoc, store: probeStore };
+  };
+  const verifyPdpRow = async (r, row, label) => {
+    if (!row.listing_url) return null;
+    const resolvedPdpLoc = await resolveLocationFor(r, 4);
+    if (!resolvedPdpLoc.resolved) return null;
+    await injectLocation(r);
+    await page.goto(row.listing_url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+    await page.waitForTimeout(3500);
+    const { loc: pdpLoc, m: pdpStore } = await readState();
+    if (!storeResolved(pdpLoc, pdpStore, r)) return null;
+    const text = await page.evaluate(() => document.body.innerText || '');
+    const parsed = parsePdpProductText(text, row);
+    if (!parsed) return null;
+    return {
+      ...parsed,
+      store: pdpStore,
+      probe_label: label,
+      probe_lat: r.lat,
+      probe_lon: r.lon,
+    };
+  };
   try {
     const firstResp = await page.goto('https://blinkit.com/', { waitUntil: 'domcontentloaded', timeout: 30000 });
     await page.waitForTimeout(2000);
@@ -724,6 +824,12 @@ async function scrapeOne(browser, rec) {
             per_litre: candidate.per_litre,
             eta_min: candidate.eta_min,
             in_stock: 1,
+            listing_status: 'listed_in_stock',
+            stock_source: 'search_probe',
+            price_source: 'search_probe',
+            search_in_stock: prev.in_stock,
+            search_sale: prev.sale,
+            search_mrp: prev.mrp,
             stock_probe: 'nearby_same_pincode',
             stock_probe_label: probeRec.probe_label,
             stock_probe_lat: probeRec.lat,
@@ -736,6 +842,57 @@ async function scrapeOne(browser, rec) {
         }
         if (flips) {
           process.stderr.write(`[oos-probe] ${rec.city} ${rec.pincode} ${probeRec.probe_label} -> flipped ${flips} OOS row(s) via store=${probeStore.name || 'n/a'} id=${probeStore.id || ''}\n`);
+        }
+      }
+      if (BLINKIT_PDP_OOS_PROBE && rows.some((r) => !r.in_stock)) {
+        for (let idx = 0; idx < rows.length; idx++) {
+          if (rows[idx].in_stock) continue;
+          const prev = rows[idx];
+          let checked = false;
+          const pdpRecs = [{ ...rec, probe_label: 'primary' }, ...probeRecords(rec)];
+          for (const pdpRec of pdpRecs) {
+            const pdp = await verifyPdpRow(pdpRec, prev, pdpRec.probe_label || 'primary');
+            if (!pdp) continue;
+            checked = true;
+            if (!pdp.in_stock) continue;
+            rows[idx] = {
+              ...prev,
+              store_id: pdp.store.id || prev.store_id,
+              store_name: pdp.store.name || prev.store_name,
+              sale: pdp.sale ?? prev.sale,
+              mrp: pdp.mrp ?? prev.mrp,
+              discount_pct: pdp.discount_pct ?? prev.discount_pct,
+              per_litre: pdp.per_litre ?? prev.per_litre,
+              in_stock: 1,
+              listing_status: 'listed_in_stock',
+              stock_source: 'pdp_probe',
+              price_source: 'pdp',
+              search_in_stock: prev.in_stock,
+              search_sale: prev.sale,
+              search_mrp: prev.mrp,
+              pdp_sale: pdp.sale,
+              pdp_mrp: pdp.mrp,
+              pdp_snippet: pdp.snippet,
+              stock_probe: 'nearby_same_pincode_pdp',
+              stock_probe_label: pdp.probe_label,
+              stock_probe_lat: pdp.probe_lat,
+              stock_probe_lon: pdp.probe_lon,
+              primary_store_id: prev.primary_store_id || prev.store_id,
+              primary_store_name: prev.primary_store_name || prev.store_name,
+              primary_eta_min: prev.primary_eta_min || prev.eta_min,
+            };
+            process.stderr.write(`[pdp-probe] ${rec.city} ${rec.pincode} ${pdp.probe_label} -> flipped ${prev.sku_raw} via store=${pdp.store.name || 'n/a'} id=${pdp.store.id || ''} sale=${pdp.sale || 'n/a'}\n`);
+            break;
+          }
+          if (!rows[idx].in_stock && checked) {
+            rows[idx] = {
+              ...rows[idx],
+              listing_status: 'listed_out_of_stock',
+              stock_source: rows[idx].stock_source === 'search_card' ? 'pdp' : rows[idx].stock_source,
+              pdp_checked: 1,
+              pdp_in_stock: 0,
+            };
+          }
         }
       }
       store = primaryStore;
@@ -829,6 +986,9 @@ if (require.main === module) (async () => {
     auth_required: BLINKIT_REQUIRE_AUTH ? 1 : 0,
     oos_probe_enabled: BLINKIT_OOS_PROBE ? 1 : 0,
     oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode').length,
+    pdp_oos_probe_enabled: BLINKIT_PDP_OOS_PROBE ? 1 : 0,
+    pdp_oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode_pdp').length,
+    unverified_oos: allRows.filter((r) => !r.in_stock && !r.pdp_checked && r.stock_source !== 'pdp').length,
     captured_at: new Date().toISOString(),
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');

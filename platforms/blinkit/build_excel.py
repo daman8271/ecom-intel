@@ -83,6 +83,14 @@ def pct_fraction(v):
         return None
     return round(float(v) / 100.0, 4)
 
+def product_status(x):
+    s = x.get('listing_status')
+    if s == 'listed_in_stock' or x.get('in_stock') == 1:
+        return "Listed - In stock"
+    if s == 'listed_out_of_stock' or x.get('in_stock') == 0:
+        return "Listed - Out of stock"
+    return str(s or "Listed").replace("_", " ").title()
+
 # ---------- Sheet 1: Executive Summary ----------
 ws = wb.active; ws.title = "Summary"
 ws["A1"] = f"Jivo x {PLATFORM} - Live Pricing Intelligence"; ws["A1"].font = TITLE_FONT
@@ -126,11 +134,12 @@ autosize(ws)
 
 # ---------- Sheet 2: Master Data ----------
 ws = wb.create_sheet("Master Data")
-cols = ["City", "Pincode", "Locality", "Store", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "ETA min", "In stock"]
+cols = ["City", "Pincode", "Locality", "Store", "SKU", "Pack", "Vol (ml)", "Sale Rs", "MRP Rs", "Disc %", "Rs/L", "ETA min", "In stock", "Product status", "Stock source", "Price source"]
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     ws.append([x['city'], x['pincode'], x.get('locality',''), x['store_name'], clean_name(x['sku_raw']), x['pack'], x['vol_ml'],
-               x['sale'], x['mrp'], pct_fraction(x['discount_pct']), x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No"])
+               x['sale'], x['mrp'], pct_fraction(x['discount_pct']), x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No",
+               product_status(x), x.get('stock_source',''), x.get('price_source','')])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
@@ -142,6 +151,39 @@ for row in ws.iter_rows(min_row=2):
     sc = row[7].value
     if row[12].value == "No": row[12].fill = RED
     if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 0.40: row[9].fill = GREEN
+autosize(ws)
+
+# ---------- Sheet 2b: Listing Status ----------
+ws = wb.create_sheet("Listing Status")
+cols = ["City", "Pincode", "Locality", "SKU", "Product status", "In stock", "Sale Rs", "MRP Rs", "Store", "PRID", "Source"]
+ws.append(cols)
+for p in sorted(per, key=lambda r: (r['city'], r['pincode'])):
+    if not p.get('resolved'):
+        continue
+    by_sku = {x.get('canonical'): x for x in (p.get('rows') or []) if x.get('canonical')}
+    for s in skus:
+        x = by_sku.get(s)
+        if x:
+            ws.append([p['city'], p['pincode'], p.get('locality',''), label(s), product_status(x),
+                       "Yes" if x.get('in_stock') else "No", x.get('sale'), x.get('mrp'),
+                       x.get('store_name',''), x.get('prid',''), x.get('stock_source','')])
+        else:
+            ws.append([p['city'], p['pincode'], p.get('locality',''), label(s), "Not listed",
+                       "", None, None, p.get('store_name',''), "", "search_absent"])
+style_header(ws)
+ws.freeze_panes = "A2"
+ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
+for row in ws.iter_rows(min_row=2):
+    for cell in row:
+        cell.border = BORDER
+        if cell.column in (7, 8): cell.number_format = '"Rs"#,##0'
+    status = row[4].value
+    if status == "Listed - In stock":
+        row[4].fill = GREEN
+    elif status == "Listed - Out of stock":
+        row[4].fill = RED
+    elif status == "Not listed":
+        row[4].fill = YEL
 autosize(ws)
 
 # ---------- Matrix builder ----------
