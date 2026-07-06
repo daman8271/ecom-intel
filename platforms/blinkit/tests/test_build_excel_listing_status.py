@@ -132,12 +132,26 @@ def test_listing_status_distinguishes_not_listed_from_oos():
         assert not_listed["In stock"] is None
         assert not_listed["Source"] == "search_absent"
 
+        mapped_absent = [
+            r for r in records
+            if str(r["Pincode"]) == "110001" and r["SKU"] == "Jivo Pomace Olive Oil 5 L"
+        ][0]
+        assert mapped_absent["Product status"] == "Not listed"
+        assert mapped_absent["Source"] == "search_absent"
+
         ws_not_listed = wb["Not Listed Pincodes"]
         nl_headers = [cell.value for cell in next(ws_not_listed.iter_rows(min_row=1, max_row=1))]
         nl_records = [dict(zip(nl_headers, [cell.value for cell in row])) for row in ws_not_listed.iter_rows(min_row=2)]
         assert any(
             str(r["Pincode"]) == "110002"
             and r["SKU"] == "Jivo Test Missing Oil 1 L"
+            and r["Source"] == "search_absent"
+            for r in nl_records
+        )
+        assert any(
+            str(r["Pincode"]) == "110001"
+            and r["SKU"] == "Jivo Pomace Olive Oil 5 L"
+            and str(r["PRID"]) == "407561"
             and r["Source"] == "search_absent"
             for r in nl_records
         )
@@ -150,6 +164,13 @@ def test_listing_status_distinguishes_not_listed_from_oos():
         assert any(
             str(r["Pincode"]) == "110002"
             and r["SKU"] == "Jivo Test Missing Oil 1 L"
+            and r["Source"] == "search_absent"
+            for r in nl_file_records
+        )
+        assert any(
+            str(r["Pincode"]) == "110001"
+            and r["SKU"] == "Jivo Pomace Olive Oil 5 L"
+            and str(r["PRID"]) == "407561"
             and r["Source"] == "search_absent"
             for r in nl_file_records
         )

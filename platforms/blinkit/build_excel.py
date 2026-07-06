@@ -1,4 +1,5 @@
-import json, datetime, statistics, os
+import json, datetime, statistics, os, re
+from pathlib import Path
 from collections import defaultdict, OrderedDict, Counter
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
@@ -58,7 +59,91 @@ def label(canon):
     pack = parts[1].upper().replace('ML', ' ml').replace('L', ' L') if len(parts) > 1 else ''
     return f"{name} {pack}".strip()
 
-skus = sorted(set(r['canonical'] for r in rows))
+def parse_vol_ml(pack):
+    if not pack:
+        return None
+    s = str(pack).lower()
+    def to_ml(n, u):
+        if u in ('ml', 'g'):
+            return n
+        if u in ('l', 'ltr', 'litre', 'kg'):
+            return n * 1000
+        return None
+    m = re.search(r'([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b\s*[x×]\s*([\d.]+)', s)
+    if m:
+        base = to_ml(float(m.group(1)), m.group(2))
+        return base * float(m.group(3)) if base is not None else None
+    m = re.search(r'([\d.]+)\s*[x×]\s*([\d.]+)\s*(ml|l|ltr|litre|kg|g)\b', s)
+    if m:
+        base = to_ml(float(m.group(2)), m.group(3))
+        return float(m.group(1)) * base if base is not None else None
+    m = re.search(r'([\d.]+)\s*(ml|l|ltr|litre|kg|g)', s)
+    if not m:
+        return None
+    return to_ml(float(m.group(1)), m.group(2))
+
+def canonical_py(name, pack):
+    base = re.sub(r'\(.*?\)', '', str(name or '').lower())
+    base = re.sub(r'[^a-z0-9 ]', '', base)
+    base = re.sub(r'\s+', ' ', base).strip().replace(' ', '-')
+    vol = parse_vol_ml(pack)
+    if vol:
+        vol_tag = f"{vol / 1000:g}l" if vol >= 1000 else f"{vol:g}ml"
+    else:
+        vol_tag = "na"
+    return re.sub(r'--+', '-', f"{base}-{vol_tag}")
+
+def pack_from_name(name):
+    m = re.search(r'(\d+(?:\.\d+)?)\s*(ml|l|ltr|litre|kg|g)\b', str(name or ''), re.I)
+    if not m:
+        return ""
+    unit = m.group(2).lower()
+    if unit == "ltr":
+        unit = "l"
+    return f"{m.group(1)} {unit}"
+
+def load_expected_sku_meta(rows):
+    meta = {}
+    by_prid = {}
+    for r in rows:
+        canon = r.get('canonical')
+        if not canon:
+            continue
+        meta.setdefault(canon, {"canonical": canon, "label": label(canon), "prid": r.get('prid', ''), "url": r.get('listing_url', '')})
+        if r.get('prid'):
+            by_prid[str(r.get('prid'))] = r
+
+    root = Path(__file__).resolve().parents[2]
+    map_path = root / "tools" / "pricematch" / "sku_map.json"
+    try:
+        sku_map = json.load(open(map_path, encoding="utf-8")).get("skus") or {}
+    except Exception:
+        sku_map = {}
+
+    for master_name, rec in sku_map.items():
+        b = (rec.get("platforms") or {}).get("blinkit") or {}
+        if not b:
+            continue
+        prid = str(b.get("id") or "").strip()
+        live = by_prid.get(prid)
+        if live and live.get('canonical'):
+            canon = live['canonical']
+        else:
+            canon = canonical_py(clean_name(b.get("title") or master_name), pack_from_name(master_name))
+        meta.setdefault(canon, {
+            "canonical": canon,
+            "label": label(canon),
+            "prid": prid,
+            "url": b.get("url", ""),
+        })
+        if prid and not meta[canon].get("prid"):
+            meta[canon]["prid"] = prid
+        if b.get("url") and not meta[canon].get("url"):
+            meta[canon]["url"] = b.get("url")
+    return meta
+
+sku_meta = load_expected_sku_meta(rows)
+skus = sorted(sku_meta)
 cities_with = sorted(set(r['city'] for r in rows))
 all_cities = OrderedDict()
 for p in per:
@@ -102,13 +187,16 @@ def row_preference(x):
 not_listed_rows = []
 
 def collect_not_listed_row(p, sku):
+    meta = sku_meta.get(sku) or {}
     return {
         "city": p['city'],
         "pincode": p['pincode'],
         "locality": p.get('locality', ''),
         "store_name": p.get('store_name', ''),
-        "sku": label(sku),
+        "sku": meta.get("label") or label(sku),
         "canonical": sku,
+        "prid": meta.get("prid", ""),
+        "listing_url": meta.get("url", ""),
         "source": "search_absent",
         "note": "SKU was not listed for this resolved Blinkit pincode/store; this is not an out-of-stock row.",
     }
@@ -217,17 +305,17 @@ autosize(ws)
 
 # ---------- Sheet 2c: Not Listed Pincodes ----------
 ws = wb.create_sheet("Not Listed Pincodes")
-not_listed_cols = ["City", "Pincode", "Locality", "Store", "SKU", "Canonical", "Source", "Note"]
+not_listed_cols = ["City", "Pincode", "Locality", "Store", "SKU", "Canonical", "PRID", "Listing URL", "Source", "Note"]
 ws.append(not_listed_cols)
 for x in sorted(not_listed_rows, key=lambda r: (r["city"], r["pincode"], r["sku"])):
-    ws.append([x["city"], x["pincode"], x["locality"], x["store_name"], x["sku"], x["canonical"], x["source"], x["note"]])
+    ws.append([x["city"], x["pincode"], x["locality"], x["store_name"], x["sku"], x["canonical"], x["prid"], x["listing_url"], x["source"], x["note"]])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(not_listed_cols))}{max(ws.max_row, 1)}"
 for row in ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
-    row[6].fill = YEL
+    row[8].fill = YEL
 autosize(ws)
 
 # ---------- Matrix builder ----------
@@ -304,14 +392,14 @@ nl_ws = nl_wb.active
 nl_ws.title = "Not Listed Pincodes"
 nl_ws.append(not_listed_cols)
 for x in sorted(not_listed_rows, key=lambda r: (r["city"], r["pincode"], r["sku"])):
-    nl_ws.append([x["city"], x["pincode"], x["locality"], x["store_name"], x["sku"], x["canonical"], x["source"], x["note"]])
+    nl_ws.append([x["city"], x["pincode"], x["locality"], x["store_name"], x["sku"], x["canonical"], x["prid"], x["listing_url"], x["source"], x["note"]])
 style_header(nl_ws)
 nl_ws.freeze_panes = "A2"
 nl_ws.auto_filter.ref = f"A1:{get_column_letter(len(not_listed_cols))}{max(nl_ws.max_row, 1)}"
 for row in nl_ws.iter_rows(min_row=2):
     for cell in row:
         cell.border = BORDER
-    row[6].fill = YEL
+    row[8].fill = YEL
 autosize(nl_ws)
 nl_name = f"Jivo-{PLATFORM.replace(' ', '')}-Not-Listed-Pincodes-{datetime.date.today()}.xlsx"
 nl_wb.save(nl_name)
