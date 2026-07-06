@@ -9,7 +9,7 @@
 #
 # ============================ LIVE SWEEPS + GUARDIAN (UNCHANGED) ============================
 # Model: cron fires tools/cron/deadline_sweep.sh <slot> EARLY. The live box now
-# fires the 10:00 slot at 00:30 with LEAD_MAX=32400, and a watchdog polls every
+# fires the 10:00 slot at 00:30 with LEAD_MAX=11820, and a watchdog polls every
 # 20 minutes from 00:00-09:00 to catch a missed launch tick. The script predicts the serial chain's
 # runtime from history (predict_lead.py), sleeps until <slot> - predicted_lead,
 # runs ./run_all.sh with DEFER_DELIVERY=1, and send_batch.py holds every

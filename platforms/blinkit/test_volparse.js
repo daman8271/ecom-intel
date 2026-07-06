@@ -93,7 +93,42 @@ for (const [input, want] of CASES) {
   );
   const ok = got === false;
   if (!ok) fail++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  shouldPdpPriceProbe(non-canary) = ${got} (want false)`);
+  console.log(`${ok ? 'PASS' : 'FAIL'}  shouldPdpPriceProbe(non-canary low-info) = ${got} (want false)`);
+}
+
+{
+  const got = shouldPdpPriceProbe(
+    { pincode: '110094' },
+    {
+      in_stock: 1,
+      prid: '528706',
+      listing_url: 'https://blinkit.com/prn/jivo-extra-light-olive-oil/prid/528706',
+      sale: 1499,
+      vol_ml: 2000,
+      price_source: 'search_card',
+    }
+  );
+  const ok = got === true;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  shouldPdpPriceProbe(high-value search row) = ${got} (want true)`);
+}
+
+{
+  const got = shouldPdpPriceProbe(
+    { pincode: '110094' },
+    {
+      in_stock: 1,
+      prid: '528706',
+      listing_url: 'https://blinkit.com/prn/jivo-extra-light-olive-oil/prid/528706',
+      sale: 1499,
+      vol_ml: 2000,
+      offer_sale: 1399,
+      price_source: 'search_card_offer',
+    }
+  );
+  const ok = got === false;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  shouldPdpPriceProbe(offer-evidence row) = ${got} (want false)`);
 }
 
 {

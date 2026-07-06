@@ -61,6 +61,17 @@ def test_listing_status_distinguishes_not_listed_from_oos():
         200,
         "100002",
     )
+    sku_unverified = row(
+        "stock_unverified",
+        "Jivo Test Unverified Oil",
+        "jivo-test-unverified-oil-1l",
+        "110001",
+        None,
+        "search_card_oos_unverified",
+        300,
+        "100003",
+    )
+    sku_unverified["stock_unverified"] = 1
     sku_other_pin = row(
         "listed_in_stock",
         "Jivo Test Listed Oil",
@@ -76,11 +87,11 @@ def test_listing_status_distinguishes_not_listed_from_oos():
             "captured_at": "2099-01-01T04:00:00.000Z",
             "pincodes_total": 2,
             "pincodes_with_jivo": 2,
-            "unique_skus": 2,
-            "total_rows": 3,
+            "unique_skus": 3,
+            "total_rows": 4,
             "wall_s": 1,
         },
-        "allRows": [sku_seen, sku_oos, sku_other_pin],
+        "allRows": [sku_seen, sku_oos, sku_unverified, sku_other_pin],
         "perPin": [
             {
                 "city": "Delhi",
@@ -88,7 +99,7 @@ def test_listing_status_distinguishes_not_listed_from_oos():
                 "locality": "Locality 110001",
                 "resolved": True,
                 "store_name": "Store 110001",
-                "rows": [sku_seen, sku_oos],
+                "rows": [sku_seen, sku_oos, sku_unverified],
             },
             {
                 "city": "Delhi",
@@ -131,6 +142,14 @@ def test_listing_status_distinguishes_not_listed_from_oos():
         assert not_listed["Product status"] == "Not listed"
         assert not_listed["In stock"] is None
         assert not_listed["Source"] == "search_absent"
+
+        unverified = [
+            r for r in records
+            if str(r["Pincode"]) == "110001" and r["SKU"] == "Jivo Test Unverified Oil 1 L"
+        ][0]
+        assert unverified["Product status"] == "Listed - Stock unverified"
+        assert unverified["In stock"] == "Unverified"
+        assert unverified["Source"] == "search_card_oos_unverified"
 
         mapped_absent = [
             r for r in records

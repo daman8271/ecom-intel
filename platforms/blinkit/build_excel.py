@@ -172,11 +172,22 @@ def pct_fraction(v):
 
 def product_status(x):
     s = x.get('listing_status')
+    if s == 'stock_unverified' or x.get('stock_unverified') or 'unverified' in str(x.get('stock_source') or ''):
+        return "Listed - Stock unverified"
     if s == 'listed_in_stock' or x.get('in_stock') == 1:
         return "Listed - In stock"
     if s == 'listed_out_of_stock' or x.get('in_stock') == 0:
         return "Listed - Out of stock"
     return str(s or "Listed").replace("_", " ").title()
+
+def stock_label(x):
+    if product_status(x) == "Listed - Stock unverified":
+        return "Unverified"
+    if x.get('in_stock') == 1:
+        return "Yes"
+    if x.get('in_stock') == 0:
+        return "No"
+    return ""
 
 def row_preference(x):
     """Pick the clearest row when multiple stores survive for one pincode/SKU."""
@@ -250,7 +261,7 @@ cols = ["City", "Pincode", "Locality", "Store", "SKU", "Pack", "Vol (ml)", "Sale
 ws.append(cols)
 for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     ws.append([x['city'], x['pincode'], x.get('locality',''), x['store_name'], clean_name(x['sku_raw']), x['pack'], x['vol_ml'],
-               x['sale'], x.get('base_sale'), x.get('offer_sale'), x['mrp'], pct_fraction(x['discount_pct']), x['per_litre'], x['eta_min'], "Yes" if x['in_stock'] else "No",
+               x['sale'], x.get('base_sale'), x.get('offer_sale'), x['mrp'], pct_fraction(x['discount_pct']), x['per_litre'], x['eta_min'], stock_label(x),
                product_status(x), x.get('stock_source',''), x.get('price_source','')])
 style_header(ws)
 ws.freeze_panes = "A2"
@@ -262,6 +273,7 @@ for row in ws.iter_rows(min_row=2):
         if cell.column == 12: cell.number_format = '0.0%'
     sc = row[7].value
     if row[14].value == "No": row[14].fill = RED
+    if row[14].value == "Unverified": row[14].fill = YEL
     if isinstance(row[11].value, (int, float)) and row[11].value and row[11].value >= 0.40: row[11].fill = GREEN
 autosize(ws)
 
@@ -283,7 +295,7 @@ for p in sorted(per, key=lambda r: (r['city'], r['pincode'])):
         x = by_sku.get(s)
         if x:
             ws.append([p['city'], p['pincode'], p.get('locality',''), label(s), product_status(x),
-                       "Yes" if x.get('in_stock') else "No", x.get('sale'), x.get('base_sale'), x.get('offer_sale'), x.get('mrp'),
+                       stock_label(x), x.get('sale'), x.get('base_sale'), x.get('offer_sale'), x.get('mrp'),
                        x.get('store_name',''), x.get('prid',''), x.get('stock_source','')])
         else:
             not_listed_rows.append(collect_not_listed_row(p, s))
@@ -301,7 +313,7 @@ for row in ws.iter_rows(min_row=2):
         row[4].fill = GREEN
     elif status == "Listed - Out of stock":
         row[4].fill = RED
-    elif status == "Not listed":
+    elif status in ("Not listed", "Listed - Stock unverified"):
         row[4].fill = YEL
 autosize(ws)
 
@@ -357,8 +369,10 @@ def modal_price(cands):
 matrix("Pricing Matrix", modal_price, '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
-    pct = round(sum(x['in_stock'] for x in c) / len(c), 4)
-    return pct
+    vals = [x.get('in_stock') for x in c if x.get('in_stock') in (0, 1)]
+    if not vals:
+        return None
+    return round(sum(vals) / len(vals), 4)
 wsS = matrix("Stock Status", stock_cell, '0%')
 for row in wsS.iter_rows(min_row=2):
     for cell in row:

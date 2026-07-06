@@ -61,6 +61,9 @@ const PDP_PRICE_CANARIES = new Set(
     .map((s) => s.trim())
     .filter(Boolean)
 );
+const PDP_PRICE_PROBE_MODE = (process.env.BLINKIT_PDP_PRICE_PROBE_MODE || 'expanded').trim().toLowerCase();
+const PDP_PRICE_PROBE_MIN_SALE = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_SALE || '900', 10);
+const PDP_PRICE_PROBE_MIN_VOL_ML = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_VOL_ML || '2000', 10);
 
 // ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
 // At 1,885 pincodes a run is long, so it MUST survive interruption and rate-limiting
@@ -274,7 +277,38 @@ function shouldPdpPriceProbe(rec, row) {
   if (!row || !row.in_stock || !row.listing_url || !row.prid) return false;
   const pin = String(rec && rec.pincode || row.pincode || '').trim();
   const prid = String(row.prid || '').trim();
-  return PDP_PRICE_CANARIES.has(`${pin}:${prid}`) || PDP_PRICE_CANARIES.has(`*:${prid}`);
+  if (PDP_PRICE_CANARIES.has(`${pin}:${prid}`) || PDP_PRICE_CANARIES.has(`*:${prid}`)) return true;
+  if (PDP_PRICE_PROBE_MODE === 'canary') return false;
+  if (PDP_PRICE_PROBE_MODE === 'all') return true;
+
+  const source = String(row.price_source || row.stock_source || '').trim().toLowerCase();
+  const hasOfferEvidence = row.offer_sale != null || source.includes('offer') || source.includes('pdp');
+  if (hasOfferEvidence) return false;
+
+  const sale = Number(row.sale || 0);
+  const vol = Number(row.vol_ml || parseVolMl(row.pack) || 0);
+  const plainSearch = source === '' || source === 'search_card' || source === 'search_probe';
+  const highValue = (
+    (Number.isFinite(sale) && sale >= PDP_PRICE_PROBE_MIN_SALE) ||
+    (Number.isFinite(vol) && vol >= PDP_PRICE_PROBE_MIN_VOL_ML)
+  );
+  return plainSearch && highValue;
+}
+
+function markUnverifiedOosRows(rows) {
+  return rows.map((row) => {
+    if (!row || row.in_stock !== 0) return row;
+    const stockSource = String(row.stock_source || '').trim().toLowerCase();
+    const verified = row.pdp_checked || stockSource === 'pdp' || stockSource === 'pdp_probe';
+    if (verified) return row;
+    return {
+      ...row,
+      in_stock: null,
+      listing_status: 'stock_unverified',
+      stock_source: stockSource ? `${stockSource}_unverified` : 'search_card_oos_unverified',
+      stock_unverified: 1,
+    };
+  });
 }
 
 function parseJivoCards(cards, rec, store) {
@@ -1072,6 +1106,7 @@ async function scrapeOne(browser, rec) {
         }
       }
     }
+    rows = markUnverifiedOosRows(rows);
     if (BLINKIT_OOS_PROBE || BLINKIT_PDP_OOS_PROBE) {
       store = primaryStore;
     }

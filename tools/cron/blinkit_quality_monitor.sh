@@ -143,6 +143,16 @@ facts.update({
     "unverified_oos": s.get("unverified_oos", None),
 })
 
+stock_unverified_rows = [
+    r for r in rows
+    if r.get("stock_unverified")
+    or str(r.get("listing_status") or "").strip().lower() == "stock_unverified"
+    or str(r.get("stock_source") or "").strip().lower().endswith("_unverified")
+]
+facts["stock_unverified_rows"] = len(stock_unverified_rows)
+if stock_unverified_rows:
+    issue("stock_unverified_rows", f"{len(stock_unverified_rows)} rows are search-OOS but not PDP verified")
+
 cap = parse_dt(s.get("captured_at"))
 if cap:
     ist_date = cap.astimezone(IST).date().isoformat()

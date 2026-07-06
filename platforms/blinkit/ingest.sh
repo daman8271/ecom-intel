@@ -323,7 +323,18 @@ def is_oos_row(row):
     status = str(row.get("listing_status") or row.get("status") or row.get("availability") or "").lower()
     return "out_of_stock" in status or "out of stock" in status or status == "oos"
 
+def is_stock_unverified_row(row):
+    status = str(row.get("listing_status") or "").strip().lower()
+    source = str(row.get("stock_source") or "").strip().lower()
+    return bool(row.get("stock_unverified")) or status == "stock_unverified" or source.endswith("_unverified")
+
 oos_rows = [r for r in rows if is_oos_row(r)]
+stock_unverified_rows = [r for r in rows if is_stock_unverified_row(r)]
+if stock_unverified_rows:
+    raise SystemExit(
+        f"Refusing Blinkit unverified stock rows: rows={len(stock_unverified_rows)} "
+        f"sample={[row_label(r) for r in stock_unverified_rows[:5]]}"
+    )
 legacy_repaired_oos = bool(d.get("oos_repair_merge")) or str(s.get("correction") or "") == "full_oos_same_pincode_probe"
 allow_legacy_repaired_oos = env_bool("BLINKIT_ALLOW_LEGACY_REPAIRED_OOS", "1")
 if oos_rows:

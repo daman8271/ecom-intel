@@ -39,10 +39,11 @@ bad_canola_stale="$(mktemp)"
 bad_missing_price_probe="$(mktemp)"
 bad_auth_unverified="$(mktemp)"
 bad_perpin_auth="$(mktemp)"
-trap 'rm -f "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified" "$bad_perpin_auth"' EXIT
-python3 - "$FIXTURE" "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified" "$bad_perpin_auth" <<'PY'
+bad_stock_unverified="$(mktemp)"
+trap 'rm -f "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified" "$bad_perpin_auth" "$bad_stock_unverified"' EXIT
+python3 - "$FIXTURE" "$bad" "$bad_pomace_stale" "$bad_canola_stale" "$bad_missing_price_probe" "$bad_auth_unverified" "$bad_perpin_auth" "$bad_stock_unverified" <<'PY'
 import json, sys
-src, bad_path, bad_pomace_path, bad_canola_path, bad_missing_price_probe_path, bad_auth_unverified_path, bad_perpin_auth_path = sys.argv[1:]
+src, bad_path, bad_pomace_path, bad_canola_path, bad_missing_price_probe_path, bad_auth_unverified_path, bad_perpin_auth_path, bad_stock_unverified_path = sys.argv[1:]
 d = json.load(open(src, encoding="utf-8"))
 d["allRows"][0]["per_litre"] = 375.2
 d["perPin"][0]["rows"][0]["per_litre"] = 375.2
@@ -56,6 +57,15 @@ json.dump(auth_unverified, open(bad_auth_unverified_path, "w", encoding="utf-8")
 perpin_auth = json.load(open(src, encoding="utf-8"))
 perpin_auth["perPin"][0].pop("auth_accepted", None)
 json.dump(perpin_auth, open(bad_perpin_auth_path, "w", encoding="utf-8"))
+
+stock_unverified = json.load(open(src, encoding="utf-8"))
+for row in [stock_unverified["allRows"][0], stock_unverified["perPin"][0]["rows"][0]]:
+    row["in_stock"] = None
+    row["listing_status"] = "stock_unverified"
+    row["stock_source"] = "search_card_oos_unverified"
+    row["stock_unverified"] = 1
+    row["pdp_checked"] = 0
+json.dump(stock_unverified, open(bad_stock_unverified_path, "w", encoding="utf-8"))
 
 missing_price_probe = json.load(open(src, encoding="utf-8"))
 for key in ("pdp_price_probe_enabled", "pdp_price_probe_checked", "pdp_price_probe_updates"):
@@ -122,6 +132,12 @@ if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_perpin_auth"
   exit 1
 fi
 grep -q "Refusing per-pincode unverified Blinkit auth" /tmp/blinkit-ingest-perpin-auth.out
+
+if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_stock_unverified" >/tmp/blinkit-ingest-stock-unverified.out 2>&1; then
+  echo "expected stock-unverified fixture to fail" >&2
+  exit 1
+fi
+grep -q "Refusing Blinkit unverified stock rows" /tmp/blinkit-ingest-stock-unverified.out
 
 if env "${env_common[@]}" "$ROOT/platforms/blinkit/ingest.sh" "$bad_missing_price_probe" >/tmp/blinkit-ingest-missing-price-probe.out 2>&1; then
   echo "expected missing PDP price probe fixture to fail" >&2
