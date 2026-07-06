@@ -2,69 +2,53 @@
   "platform": "amazon-now",
   "samples": [
     {
-      "run_id": "rebaseline-2026-07-04-1",
-      "captured_at": "2026-07-04T05:52:00.000Z",
-      "rows": 457,
+      "run_id": "rebaseline-now376-1",
+      "captured_at": "2026-07-07T05:00:00.000Z",
+      "rows": 1246,
       "unique_skus": 16,
-      "pincodes_with_jivo": 129,
-      "priced_rows": 457
+      "pincodes_with_jivo": 289,
+      "priced_rows": 1227
     },
     {
-      "run_id": "rebaseline-2026-07-04-2",
-      "captured_at": "2026-07-04T05:40:00.000Z",
-      "rows": 460,
-      "unique_skus": 18,
-      "pincodes_with_jivo": 128,
-      "priced_rows": 460
-    },
-    {
-      "run_id": "rebaseline-2026-07-04-3",
-      "captured_at": "2026-07-04T05:20:00.000Z",
-      "rows": 452,
-      "unique_skus": 19,
-      "pincodes_with_jivo": 126,
-      "priced_rows": 452
-    },
-    {
-      "run_id": "rebaseline-2026-07-04-4",
-      "captured_at": "2026-07-04T05:00:00.000Z",
-      "rows": 448,
-      "unique_skus": 18,
-      "pincodes_with_jivo": 124,
-      "priced_rows": 448
-    },
-    {
-      "run_id": "rebaseline-2026-07-04-5",
-      "captured_at": "2026-07-04T04:40:00.000Z",
-      "rows": 445,
-      "unique_skus": 20,
-      "pincodes_with_jivo": 122,
-      "priced_rows": 445
-    },
-    {
-      "run_id": "rebaseline-2026-07-04-6",
-      "captured_at": "2026-07-04T04:20:00.000Z",
-      "rows": 438,
-      "unique_skus": 17,
-      "pincodes_with_jivo": 120,
-      "priced_rows": 438
-    },
-    {
-      "run_id": "platforms/amazon-now/result.json",
-      "captured_at": "2026-07-04T05:52:59.944Z",
-      "rows": 457,
+      "run_id": "rebaseline-now376-2",
+      "captured_at": "2026-07-07T05:00:00.000Z",
+      "rows": 1246,
       "unique_skus": 16,
-      "pincodes_with_jivo": 129,
-      "priced_rows": 457
+      "pincodes_with_jivo": 289,
+      "priced_rows": 1227
     },
     {
-      "run_id": "2026-07-05-1000",
-      "captured_at": "2026-07-05T05:08:11.448Z",
-      "rows": 611,
-      "unique_skus": 14,
-      "pincodes_with_jivo": 129,
-      "priced_rows": 611
+      "run_id": "rebaseline-now376-3",
+      "captured_at": "2026-07-07T05:00:00.000Z",
+      "rows": 1246,
+      "unique_skus": 16,
+      "pincodes_with_jivo": 289,
+      "priced_rows": 1227
+    },
+    {
+      "run_id": "rebaseline-now376-4",
+      "captured_at": "2026-07-07T05:00:00.000Z",
+      "rows": 1246,
+      "unique_skus": 16,
+      "pincodes_with_jivo": 289,
+      "priced_rows": 1227
+    },
+    {
+      "run_id": "rebaseline-now376-5",
+      "captured_at": "2026-07-07T05:00:00.000Z",
+      "rows": 1246,
+      "unique_skus": 16,
+      "pincodes_with_jivo": 289,
+      "priced_rows": 1227
+    },
+    {
+      "run_id": "rebaseline-now376-6",
+      "captured_at": "2026-07-07T05:00:00.000Z",
+      "rows": 1246,
+      "unique_skus": 16,
+      "pincodes_with_jivo": 289,
+      "priced_rows": 1227
     }
   ],
-  "updated_at": "2026-07-05T05:08:50.511292+00:00"
+  "updated_at": "2026-07-06T20:06:26.296703+00:00"
 }
