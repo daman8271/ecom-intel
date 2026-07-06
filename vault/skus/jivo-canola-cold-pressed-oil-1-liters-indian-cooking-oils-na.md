@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-oil-1-liters-indian-cooking-oils-na
-display_name: Jivo Canola Cold Pressed Oil 1 Liters Indian Cooking Oils
+display_name: Jivo Canola Cold Pressed Oil 1 Liters Indian Cooking Oils Na
 platforms:
   - amazon-fresh
 first_seen: 2026-07-03
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Pressed Oil 1 Liters Indian Cooking Oils**
+**Jivo Canola Cold Pressed Oil 1 Liters Indian Cooking Oils Na**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹239 (36.3% off)
