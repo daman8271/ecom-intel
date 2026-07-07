@@ -174,6 +174,16 @@ if cap:
                 "facts": facts,
             }, ensure_ascii=False))
             raise SystemExit(0)
+        if monitor_pass == "poll" and not os.path.exists(report_path) and not after_cutoff(report_alert_after):
+            warn("stale_result_report_missing", f"Blinkit result is still {ist_date}; today's workbook is not present yet, waiting until {report_alert_after} IST")
+            print(json.dumps({
+                "ok": True,
+                "waiting": True,
+                "issues": issues,
+                "warnings": warnings,
+                "facts": facts,
+            }, ensure_ascii=False))
+            raise SystemExit(0)
         if monitor_pass == "poll" and not after_cutoff(stale_alert_after):
             warn("stale_result_grace", f"Blinkit result is still {ist_date}; waiting until {stale_alert_after} IST for today's drop")
             print(json.dumps({

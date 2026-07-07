@@ -73,6 +73,11 @@ keeps returning a waiting state instead of alerting on yesterday's `result.json`
 That prevents a slow authenticated run from being misclassified as a stale report
 while it is still producing today's drop.
 
+If the VPS-to-Mac reverse tunnel is down while the workbook is still missing, the
+monitor also waits until the workbook cutoff (`10:05`) instead of treating the old
+`result.json` as final at `09:15`. A present workbook is still validated normally,
+and a missing workbook after `10:05` is still a delivery failure.
+
 ## 04:00 Hotfix
 
 The first restarted run was stopped because a 5 L Pomace row picked up a 1 L
