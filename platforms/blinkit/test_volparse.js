@@ -165,5 +165,21 @@ for (const [input, want] of CASES) {
   console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(parenthesized pack) = ${JSON.stringify(got)} (want sale=1193 mrp=1650)`);
 }
 
+{
+  const row = { sku_raw: 'Jivo Cold Pressed Canola Oil (Canola Enne)', pack: '1 l', vol_ml: 1000 };
+  const got = parsePdpProductText('Home / Oil / Jivo Cold Pressed Canola Oil Jivo Cold Pressed Canola Oil 1 ltr ₹233 MRP ₹375 Out of Stock Why shop from blinkit?', row);
+  const ok = got && got.in_stock === 0 && got.sale === 233 && got.mrp === 375 && got.matched_vol_ml === 1000;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(localized suffix OOS) = ${JSON.stringify(got)} (want in_stock=0 sale=233 mrp=375)`);
+}
+
+{
+  const row = { sku_raw: 'Jivo Extra Light Olive Oil (Olive Enne)', pack: '2 l', vol_ml: 2000 };
+  const got = parsePdpProductText('Jivo Extra Light Olive Oil (Olive Enne) 1 ltr ₹564 ₹1,499 ADD Jivo Extra Light Olive Oil (Olive Enne) 2 ltr ₹1,090 MRP ₹2,799 Out of Stock Why shop from blinkit?', row);
+  const ok = got && got.in_stock === 0 && got.sale === 1090 && got.mrp === 2799 && got.matched_vol_ml === 2000;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(localized suffix skips wrong pack) = ${JSON.stringify(got)} (want 2l OOS sale=1090)`);
+}
+
 if (fail) { console.error(`\n${fail} FAILED`); process.exit(1); }
 console.log('\nALL PASS');

@@ -144,6 +144,9 @@ set, not part of the Wave 1 config generator.
   when the expected SKU is absent for that resolved store. If a neighbor-coordinate
   probe proves stock, later PDP price checks must use that same probe location and
   must not rewrite `in_stock`, `Listing Status`, or the stock-evidence store.
+  PDP matching also normalizes localized suffixes such as `(Canola Enne)` /
+  `(Olive Enne)` while keeping the row-volume guard, so Bengaluru localized rows do
+  not fall into `Listed - Stock unverified`.
   The cron monitor polls and alerts; delivery callers run it with
   `BLINKIT_MONITOR_EXIT_CODE=1` so bad Blinkit artifacts are held back.
 - **Configs:** `platforms/<p>/pincodes.daily.json` + `pincodes.full25.json` (regen via

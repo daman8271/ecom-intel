@@ -214,7 +214,10 @@ handle false-OOS flips without opening many PDP pages and tripping Blinkit
 access-denied responses. When a neighbor-coordinate probe proves stock, subsequent
 PDP price checks must run against that same proof location and preserve the
 stock-evidence fields (`in_stock`, `listing_status`, `stock_source`, `store_id`,
-`store_name`); the PDP pass is price-only.
+`store_name`); the PDP pass is price-only. PDP parsing must tolerate localized
+Blinkit suffixes such as `(Canola Enne)` / `(Olive Enne)` by trying both the
+displayed title and base English title, while still requiring the PDP segment
+volume to match the row volume.
 The main workbook includes both `Listing Status`
 and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `917703818227@s.whatsapp.net` only after the main Blinkit workbook passes quality.

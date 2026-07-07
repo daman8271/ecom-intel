@@ -444,7 +444,19 @@ function pdpPackVariants(row) {
 function cleanProductName(name) {
   let out = String(name || '').replace(/\s+/g, ' ').trim();
   while (out.endsWith('(')) out = out.slice(0, -1).trim();
+  out = out.replace(/\s*\((?!\s*\d+(?:[\d.]*\s*)?(?:ml|l|ltr|litre|liter|kg|g)\b)[^)]*\)\s*$/i, '').trim();
   return out;
+}
+
+function pdpNameVariants(name) {
+  const raw = String(name || '').replace(/\s+/g, ' ').trim();
+  const out = new Set();
+  if (raw) out.add(raw);
+  const cleaned = cleanProductName(raw);
+  if (cleaned) out.add(cleaned);
+  const noDanglingParen = raw.replace(/\s+\($/, '').trim();
+  if (noDanglingParen) out.add(noDanglingParen);
+  return [...out].filter(Boolean);
 }
 
 function pdpSegmentHead(segment) {
@@ -456,29 +468,32 @@ function pdpSegmentHead(segment) {
 function parsePdpProductText(text, row) {
   const body = String(text || '').replace(/\s+/g, ' ').trim();
   const lower = body.toLowerCase();
-  const name = cleanProductName(row.sku_raw);
-  if (!name) return null;
-  const candidates = [];
+  const names = pdpNameVariants(row.sku_raw);
+  if (!names.length) return null;
+  const candidates = new Set();
   const packVariants = pdpPackVariants(row).map((pack) => String(pack).toLowerCase());
-  for (const pack of pdpPackVariants(row)) {
-    const needle = `${name} ${pack}`.toLowerCase();
-    let idx = lower.indexOf(needle);
-    while (idx >= 0) {
-      candidates.push(idx);
-      idx = lower.indexOf(needle, idx + 1);
+  for (const name of names) {
+    for (const pack of pdpPackVariants(row)) {
+      const needle = `${name} ${pack}`.toLowerCase();
+      let idx = lower.indexOf(needle);
+      while (idx >= 0) {
+        candidates.add(idx);
+        idx = lower.indexOf(needle, idx + 1);
+      }
+    }
+    let nameIdx = lower.indexOf(name.toLowerCase());
+    while (nameIdx >= 0) {
+      const nearby = pdpSegmentHead(lower.slice(nameIdx, nameIdx + 220));
+      if (packVariants.some((pack) => nearby.includes(pack) || nearby.includes(`(${pack})`))) {
+        candidates.add(nameIdx);
+      }
+      nameIdx = lower.indexOf(name.toLowerCase(), nameIdx + 1);
     }
   }
-  let nameIdx = lower.indexOf(name.toLowerCase());
-  while (nameIdx >= 0) {
-    const nearby = pdpSegmentHead(lower.slice(nameIdx, nameIdx + 220));
-    if (packVariants.some((pack) => nearby.includes(pack) || nearby.includes(`(${pack})`))) {
-      candidates.push(nameIdx);
-    }
-    nameIdx = lower.indexOf(name.toLowerCase(), nameIdx + 1);
-  }
-  if (!candidates.length) return null;
+  const candidateList = [...candidates].sort((a, b) => a - b);
+  if (!candidateList.length) return null;
   let segment = '';
-  for (const idx of candidates) {
+  for (const idx of candidateList) {
     const snip = body.slice(idx, idx + 650);
     const head = snip.split(/Why shop from blinkit\?/i)[0];
     if (/out of stock|add to cart|\bADD\b|₹/.test(head)) {
@@ -486,10 +501,22 @@ function parsePdpProductText(text, row) {
       break;
     }
   }
-  if (!segment) segment = body.slice(candidates[0], candidates[0] + 450).split(/Why shop from blinkit\?/i)[0];
+  if (!segment) segment = body.slice(candidateList[0], candidateList[0] + 450).split(/Why shop from blinkit\?/i)[0];
   const rowVolMl = Number(row.vol_ml || parseVolMl(row.pack) || 0);
   const segmentVolMl = parseVolMl(pdpSegmentHead(segment));
-  if (rowVolMl && (!segmentVolMl || Math.abs(rowVolMl - segmentVolMl) > 1)) return null;
+  if (rowVolMl && (!segmentVolMl || Math.abs(rowVolMl - segmentVolMl) > 1)) {
+    for (const idx of candidateList) {
+      const snip = body.slice(idx, idx + 650);
+      const head = snip.split(/Why shop from blinkit\?/i)[0];
+      const vol = parseVolMl(pdpSegmentHead(head));
+      if (vol && Math.abs(rowVolMl - vol) <= 1 && /out of stock|add to cart|\bADD\b|₹/.test(head)) {
+        segment = head;
+        break;
+      }
+    }
+  }
+  const finalVolMl = parseVolMl(pdpSegmentHead(segment));
+  if (rowVolMl && (!finalVolMl || Math.abs(rowVolMl - finalVolMl) > 1)) return null;
   const out = /out of stock/i.test(segment);
   const hasAdd = /add to cart|\bADD\b/i.test(segment);
   const price = priceInfo(segment, row.vol_ml);
@@ -501,7 +528,7 @@ function parsePdpProductText(text, row) {
     offer_sale: price.offer_sale,
     discount_pct: price.discount_pct,
     per_litre: price.per_litre,
-    matched_vol_ml: segmentVolMl || null,
+    matched_vol_ml: finalVolMl || null,
     snippet: segment.slice(0, 240),
   };
 }

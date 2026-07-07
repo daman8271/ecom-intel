@@ -83,3 +83,15 @@ primary location and could overwrite the stock proof. The fix now runs PDP price
 checks for probe-flipped rows against the same neighbor coordinate and preserves
 the stock fields. The focused 3-pincode repro passed with `unverified_oos=0`,
 `110012 / 406593` live at `1193/1650`, and `110012 / 407561` live at `1687/4999`.
+
+## 06:15 Hotfix
+
+The clean full run was stopped at Bengaluru because localized card titles such as
+`Jivo Cold Pressed Canola Oil (Canola Enne)` and
+`Jivo Extra Light Olive Oil (Olive Enne)` left a few search-card OOS rows as
+`stock_unverified`. The primary PDP parser was matching the localized title too
+strictly, and the wrong-pack guard correctly rejected nearby 1 L/2 L segments when
+they did not match the row volume. The fix now tries both the displayed localized
+title and the base English title, then still accepts stock/price only when the PDP
+segment volume matches the row. Offline tests and the 4-pincode Bengaluru repro
+passed with `unverified_oos=0`.

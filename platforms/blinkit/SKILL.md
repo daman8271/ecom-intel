@@ -76,6 +76,11 @@ so the stale-search-price class is not limited to the three canaries without tur
 the full run into a PDP visit for every row. PDP price updates are accepted only
 when the PDP-detected pack/volume before the first price matches the target row
 volume; related/variant cards on the PDP must not overwrite a different pack size.
+PDP matching must also tolerate localized Blinkit card suffixes such as
+`(Canola Enne)` / `(Olive Enne)`: try the displayed title and the base English
+title, but accept stock/price only when the PDP segment's pack volume matches the
+row. This prevents Bengaluru rows from falling to `stock_unverified` while keeping
+the wrong-pack guard intact.
 
 An unverified search-card OOS is not a final `No`. If the nearby/PDP probes cannot
 verify the row, the scraper marks it `stock_unverified`; workbook code renders it as
