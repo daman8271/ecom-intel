@@ -66,7 +66,9 @@ def recompute_summary(platform: str, results: list[dict], per_pin: list[dict], a
         summary["pdp_oos_probe_enabled"] = 1 if summaries and all(bool(s.get("pdp_oos_probe_enabled")) for s in summaries) else 0
         summary["pdp_oos_probe_flips"] = sum(int(s.get("pdp_oos_probe_flips") or 0) for s in summaries)
         summary["pdp_price_probe_enabled"] = 1 if summaries and all(bool(s.get("pdp_price_probe_enabled")) for s in summaries) else 0
+        summary["pdp_price_probe_attempted"] = sum(int(s.get("pdp_price_probe_attempted") or 0) for s in summaries)
         summary["pdp_price_probe_checked"] = sum(int(s.get("pdp_price_probe_checked") or 0) for s in summaries)
+        summary["pdp_price_probe_failed"] = sum(int(s.get("pdp_price_probe_failed") or 0) for s in summaries)
         summary["pdp_price_probe_updates"] = sum(int(s.get("pdp_price_probe_updates") or 0) for s in summaries)
         summary["unverified_oos"] = sum(
             1

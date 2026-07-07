@@ -353,6 +353,13 @@ if env_bool("BLINKIT_REQUIRE_PDP_PRICE_PROBE_ENABLED", "1") and not flag_is_one(
     raise SystemExit(
         f"Refusing unpriced Blinkit drop: summary.pdp_price_probe_enabled={s.get('pdp_price_probe_enabled')!r}"
     )
+pdp_price_probe_failed = parse_int(s.get("pdp_price_probe_failed"), 0)
+max_pdp_price_probe_failed = env_int("BLINKIT_MAX_PDP_PRICE_PROBE_FAILED", "0")
+if pdp_price_probe_failed > max_pdp_price_probe_failed:
+    raise SystemExit(
+        f"Refusing unverified Blinkit PDP price probes: "
+        f"pdp_price_probe_failed={pdp_price_probe_failed} max={max_pdp_price_probe_failed}"
+    )
 
 def pdp_verified_oos(row):
     return flag_is_one(row.get("pdp_checked")) or str(row.get("stock_source") or "").strip().lower() == "pdp"
@@ -589,6 +596,11 @@ if [ "$DELIVER" = "--deliver" ]; then
   echo "[blinkit-ingest] delivered -> output/$(basename "$XLSX")"
   cp "$NOT_LISTED_XLSX" "$ROOT/output/$(basename "$NOT_LISTED_XLSX")"
   echo "[blinkit-ingest] delivered -> output/$(basename "$NOT_LISTED_XLSX")"
+  BLINKIT_MAIN_WA_DATE="$(date +%F)" \
+  BLINKIT_MONITOR_REPORT="$ROOT/output/$(basename "$XLSX")" \
+  BLINKIT_MONITOR_NOT_LISTED_REPORT="$ROOT/output/$(basename "$NOT_LISTED_XLSX")" \
+    "$ROOT/tools/whatsapp/send_blinkit_main_direct.sh" ingest \
+    >> "$ROOT/logs/blinkit-main-wa.log" 2>&1 || true
   "$ROOT/tools/cron/spool_into_batch.sh" blinkit "Blinkit" "$ROOT/output/$(basename "$XLSX")" || true
   BLINKIT_NOT_LISTED_DATE="$(date +%F)" \
   BLINKIT_MONITOR_REPORT="$ROOT/output/$(basename "$XLSX")" \

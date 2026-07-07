@@ -20,6 +20,10 @@ BROOT="$ROOT/output/.batch"
 TODAY="$(date +%F)"
 
 if [ "$P" = "blinkit" ]; then
+  if [ -f "$ROOT/logs/blinkit-main-wa-${TODAY}.sent" ]; then
+    echo "[spool_into_batch] blinkit already sent direct WhatsApp for ${TODAY}; not spooling $XLSX"
+    exit 0
+  fi
   BLINKIT_MONITOR_DRYRUN=1 \
   BLINKIT_MONITOR_EXIT_CODE=1 \
   BLINKIT_MONITOR_DATE="$TODAY" \

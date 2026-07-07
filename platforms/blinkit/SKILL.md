@@ -59,18 +59,24 @@ Do not collapse listing absence into stock absence. Blinkit output now separates
 
 `build_excel.py` writes both a `Listing Status` sheet and a `Not Listed Pincodes`
 sheet in the main workbook, and also emits
-`Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`. The ingest path and mailer use
+`Jivo-Blinkit-Not-Listed-Pincodes-YYYY-MM-DD.xlsx`. The ingest path uses
+`tools/whatsapp/send_blinkit_main_direct.sh` to direct-send the accepted main
+workbook to the Ecom WhatsApp group after quality passes; it writes
+`logs/blinkit-main-wa-YYYY-MM-DD.sent`, and batch/mail retry paths skip duplicate
+WhatsApp group documents once that marker exists. The ingest path and mailer use
 `tools/whatsapp/send_blinkit_not_listed_direct.sh` to direct-send that standalone
 workbook to the configured WhatsApp contact only after the main Blinkit workbook
 passes quality; the helper writes a per-date sent marker so retries do not
 double-send. Cron runs the helper every 15 minutes from 06:00-12:59 IST as a
-backstop for late or failed immediate sends.
+backstop for late or failed immediate sends. Cron also retries the main direct
+sender over the same window.
 
 Price correctness also has a PDP guard. Search cards can show a base/stale price
 while the PDP shows a lower effective price such as `Buy at`, `Buy for`, `Effective
 price`, or `Get it at`. Production runs keep `BLINKIT_PDP_PRICE_PROBE=1`, and the
-quality monitor requires `summary.pdp_price_probe_enabled=1`. Screenshot canaries
-include `110094:407561`, `110012:407851`, and `110012:406593`; the default probe
+quality monitor requires `summary.pdp_price_probe_enabled=1` and
+`summary.pdp_price_probe_failed=0` by default. Screenshot canaries include
+`110094:407561`, `110012:407851`, and `110012:406593`; the default probe
 mode also verifies 5 L high-value/plain-search rows that have no offer/PDP evidence
 so the stale-search-price class is not limited to the three canaries without turning
 the full run into a PDP visit for every row. PDP price updates are accepted only
@@ -92,6 +98,10 @@ access-denied responses. If a neighbor probe flips a row live, preserve that
 neighbor store/coordinate as the stock evidence. Later PDP price probes must run
 against the same proof location and update only price/PDP diagnostic fields, never
 `in_stock`, `listing_status`, `stock_source`, `store_id`, or `store_name`.
+If a targeted PDP price probe cannot resolve/parse, the row carries
+`pdp_price_probe_attempted=1` and `pdp_price_probe_failed=1`; ingest and the quality
+monitor fail closed unless `BLINKIT_MAX_PDP_PRICE_PROBE_FAILED` /
+`BLINKIT_MONITOR_MAX_PDP_PRICE_PROBE_FAILED` is explicitly raised.
 
 Checkpoint/resume files are keyed by IST date (`.progress.YYYY-MM-DD.json`), not UTC.
 This matters for manual/early-morning IST starts: a July 7 run must not reuse a July 6
@@ -101,10 +111,13 @@ authenticated/probed scraper and already passes the same quality expectations: n
 `stock_unverified` rows, no stale canary prices, all pincodes auth-accepted, and no bad
 coordinates. Move older or suspect checkpoints aside and restart cleanly.
 
-`tools/cron/start_blinkit_live_watch.sh` is installed for 05:00 IST and 06:25 IST.
-It starts an idempotent tmux watcher that logs Mac process status, progress counts
+`tools/cron/start_blinkit_live_watch.sh` starts an idempotent tmux watcher that
+logs Mac process status, progress counts
 (`done/resolved/auth_ok/blocked/rows/stock_unverified`), workbook presence, and
-dry-run quality-monitor output until 10:45 IST.
+dry-run quality-monitor output until 10:45 IST. Cron starts the watcher at 05:00
+IST and 06:25 IST, the read-only quality monitor polls every 15 minutes from 05:00-10:59 IST,
+and the main/not-listed WhatsApp retry helpers poll every 15 minutes from
+06:00-12:59 IST.
 
 ## The trick
 Blinkit picks a dark store from your authenticated delivery session and
@@ -136,7 +149,7 @@ local store, then search and scrape.
 - ~28/40 pincodes carry Jivo; the other 12 genuinely have zero Jivo stock (real distribution-gap intel, not a bug). Hyderabad / Chennai / Ahmedabad = currently zero Jivo on Blinkit.
 
 ## Output shape (keep this for build_excel.py to work)
-Each row: `{city, pincode, locality, store_id, store_name, sku_raw, canonical, pack, vol_ml, sale, mrp, discount_pct, per_litre, eta_min, in_stock}` plus probe metadata such as `listing_status`, `stock_source`, `price_source`, `base_sale`, `offer_sale`, `pdp_checked`, `pdp_price_checked`, and `stock_unverified` when applicable. Written to `result.json` as `{summary, perPin, allRows}`. Blinkit `summary` must carry `auth_session: 1`, `auth_required: 1`, `auth_verified: 1`, `auth_verified_pincodes == pincodes_total`, `oos_probe_enabled: 1`, `pdp_oos_probe_enabled: 1`, and `pdp_price_probe_enabled: 1` in production/auth-required runs.
+Each row: `{city, pincode, locality, store_id, store_name, sku_raw, canonical, pack, vol_ml, sale, mrp, discount_pct, per_litre, eta_min, in_stock}` plus probe metadata such as `listing_status`, `stock_source`, `price_source`, `base_sale`, `offer_sale`, `pdp_checked`, `pdp_price_checked`, `pdp_price_probe_attempted`, `pdp_price_probe_failed`, and `stock_unverified` when applicable. Written to `result.json` as `{summary, perPin, allRows}`. Blinkit `summary` must carry `auth_session: 1`, `auth_required: 1`, `auth_verified: 1`, `auth_verified_pincodes == pincodes_total`, `oos_probe_enabled: 1`, `pdp_oos_probe_enabled: 1`, `pdp_price_probe_enabled: 1`, and `pdp_price_probe_failed: 0` in production/auth-required runs.
 
 ## When to adapt for a new platform
 Copy this whole folder, then change: the base URL, the location-setting mechanism (Zepto/Amazon-Now store location differently), and the card selectors. Keep the output row shape identical.

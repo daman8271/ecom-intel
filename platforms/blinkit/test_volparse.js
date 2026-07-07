@@ -2,7 +2,17 @@
 // Ports the zepto 2026-06-10 combo fix: combo packs render in BOTH orders ("1 L X 2" at some
 // stores, "2 x 1 L" at others); the parser must read both, before the single-quantity fallback.
 // Run: node platforms/blinkit/test_volparse.js
-const { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe, istDateString } = require('./scrape.js');
+const {
+  parseVolMl,
+  canonical,
+  priceInfo,
+  buyAtPrice,
+  parsePdpProductText,
+  shouldPdpPriceProbe,
+  istDateString,
+  cardUnavailable,
+  applyPdpPriceProbe,
+} = require('./scrape.js');
 
 const CASES = [
   // multiplier-FIRST combos ("M x N unit")
@@ -174,11 +184,71 @@ for (const [input, want] of CASES) {
 }
 
 {
+  const ok = cardUnavailable('Jivo Cold Pressed Canola Oil 1 ltr ₹239 MRP ₹375 Notify me') &&
+    cardUnavailable('Jivo Cold Pressed Canola Oil 1 ltr ₹239 MRP ₹375 Sold out') &&
+    cardUnavailable('Currently unavailable');
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  cardUnavailable(extra copy variants) = ${ok} (want true)`);
+}
+
+{
+  const row = { sku_raw: 'Jivo Cold Pressed Canola Oil', pack: '1 l', vol_ml: 1000 };
+  const got = parsePdpProductText('Home / Oil / Jivo Cold Pressed Canola Oil Jivo Cold Pressed Canola Oil 1 ltr ₹239 MRP ₹375 Notify me Why shop from blinkit?', row);
+  const ok = got && got.in_stock === 0 && got.sale === 239 && got.mrp === 375 && got.matched_vol_ml === 1000;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(Notify me unavailable) = ${JSON.stringify(got)} (want in_stock=0 sale=239 mrp=375)`);
+}
+
+{
   const row = { sku_raw: 'Jivo Extra Light Olive Oil (Olive Enne)', pack: '2 l', vol_ml: 2000 };
   const got = parsePdpProductText('Jivo Extra Light Olive Oil (Olive Enne) 1 ltr ₹564 ₹1,499 ADD Jivo Extra Light Olive Oil (Olive Enne) 2 ltr ₹1,090 MRP ₹2,799 Out of Stock Why shop from blinkit?', row);
   const ok = got && got.in_stock === 0 && got.sale === 1090 && got.mrp === 2799 && got.matched_vol_ml === 2000;
   if (!ok) fail++;
   console.log(`${ok ? 'PASS' : 'FAIL'}  parsePdpProductText(localized suffix skips wrong pack) = ${JSON.stringify(got)} (want 2l OOS sale=1090)`);
+}
+
+{
+  const prev = {
+    store_id: '38610',
+    store_name: 'Blinkit Store 38610',
+    in_stock: 1,
+    listing_status: 'listed_in_stock',
+    stock_source: 'search_probe',
+    stock_probe_label: 'neighbor-110090',
+    sale: 1876,
+    mrp: 4999,
+    vol_ml: 5000,
+  };
+  const pdp = {
+    in_stock: 1,
+    sale: 1766,
+    mrp: 4999,
+    discount_pct: 64.7,
+    per_litre: 353.2,
+    probe_label: 'price-canary-neighbor-110090',
+    probe_lat: 28.7,
+    probe_lon: 77.3,
+    store: { id: '38699', name: 'Price Store' },
+  };
+  const got = applyPdpPriceProbe(prev, pdp);
+  const ok = got.sale === 1766 &&
+    got.pdp_price_changed === 1 &&
+    got.pdp_price_probe_attempted === 1 &&
+    got.pdp_price_probe_failed === 0 &&
+    got.store_id === '38610' &&
+    got.store_name === 'Blinkit Store 38610' &&
+    got.stock_source === 'search_probe' &&
+    got.stock_probe_label === 'neighbor-110090';
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  applyPdpPriceProbe(preserve stock proof) = ${JSON.stringify(got)} (want price update only)`);
+}
+
+{
+  const prev = { sale: 1198, mrp: 1650, in_stock: 1, listing_status: 'listed_in_stock', stock_source: 'search_card' };
+  const got = applyPdpPriceProbe(prev, null);
+  const ok = got.sale === 1198 && got.pdp_price_probe_attempted === 1 && got.pdp_price_probe_failed === 1 && !got.pdp_price_checked;
+  if (!ok) fail++;
+  console.log(`${ok ? 'PASS' : 'FAIL'}  applyPdpPriceProbe(failure marker) = ${JSON.stringify(got)} (want attempted+failed, price unchanged)`);
 }
 
 if (fail) { console.error(`\n${fail} FAILED`); process.exit(1); }

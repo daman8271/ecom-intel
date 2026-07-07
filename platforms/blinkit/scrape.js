@@ -82,6 +82,9 @@ const PDP_PRICE_CANARIES = new Set(
 const PDP_PRICE_PROBE_MODE = (process.env.BLINKIT_PDP_PRICE_PROBE_MODE || 'expanded').trim().toLowerCase();
 const PDP_PRICE_PROBE_MIN_SALE = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_SALE || '1100', 10);
 const PDP_PRICE_PROBE_MIN_VOL_ML = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_MIN_VOL_ML || '5000', 10);
+const UNAVAILABLE_COPY = 'out\\s*of\\s*stock|sold\\s*out|notify\\s*me|currently\\s*unavailable|temporarily\\s*unavailable|unavailable';
+const UNAVAILABLE_RE = new RegExp(`\\b(?:${UNAVAILABLE_COPY})\\b`, 'i');
+const PDP_SEGMENT_STOP_RE = new RegExp(`₹|MRP|${UNAVAILABLE_COPY}|add to cart|\\bADD\\b|Why shop from blinkit\\?`, 'i');
 
 // ---- Hardening (Wave-1 coverage pilot, 2026-06-29) -------------------------------
 // At 1,885 pincodes a run is long, so it MUST survive interruption and rate-limiting
@@ -204,6 +207,58 @@ function priceInfo(text, volMl, disc = null) {
 
 function priceSource(source, info) {
   return info && info.offer_sale ? `${source}_offer` : source;
+}
+
+function cardUnavailable(text) {
+  return UNAVAILABLE_RE.test(String(text || ''));
+}
+
+function applyPdpPriceProbe(prev, pdp) {
+  if (!pdp) {
+    return {
+      ...prev,
+      pdp_price_probe_attempted: 1,
+      pdp_price_probe_failed: 1,
+    };
+  }
+  const changed = (
+    (pdp.sale != null && pdp.sale !== prev.sale) ||
+    (pdp.mrp != null && pdp.mrp !== prev.mrp) ||
+    (pdp.offer_sale != null && pdp.offer_sale !== prev.offer_sale)
+  );
+  const hasPdpPrice = pdp.sale != null || pdp.mrp != null || pdp.offer_sale != null;
+  return {
+    ...prev,
+    store_id: prev.store_id,
+    store_name: prev.store_name,
+    sale: pdp.sale ?? prev.sale,
+    mrp: pdp.mrp ?? prev.mrp,
+    base_sale: pdp.base_sale ?? prev.base_sale,
+    offer_sale: pdp.offer_sale ?? prev.offer_sale,
+    discount_pct: pdp.discount_pct ?? prev.discount_pct,
+    per_litre: pdp.per_litre ?? prev.per_litre,
+    in_stock: prev.in_stock,
+    listing_status: prev.listing_status,
+    stock_source: prev.stock_source,
+    price_source: hasPdpPrice ? priceSource('pdp_price_probe', pdp) : prev.price_source,
+    pdp_checked: 1,
+    pdp_price_in_stock: pdp.in_stock ? 1 : 0,
+    pdp_sale: pdp.sale,
+    pdp_mrp: pdp.mrp,
+    pdp_snippet: pdp.snippet,
+    pdp_price_probe_attempted: 1,
+    pdp_price_probe_failed: 0,
+    pdp_price_checked: 1,
+    pdp_price_changed: changed ? 1 : 0,
+    price_probe: 'pdp_canary',
+    pdp_price_probe_label: pdp.probe_label,
+    pdp_price_probe_lat: pdp.probe_lat,
+    pdp_price_probe_lon: pdp.probe_lon,
+    pdp_price_store_id: pdp.store.id || '',
+    pdp_price_store_name: pdp.store.name || '',
+    search_sale: prev.search_sale ?? prev.sale,
+    search_mrp: prev.search_mrp ?? prev.mrp,
+  };
 }
 
 // Blinkit's DEFAULT/fallback dark store, served whenever our injected location
@@ -379,12 +434,12 @@ function parseJivoCards(cards, rec, store) {
   for (const card of cards) {
     const c = (card && typeof card === 'object') ? (card.text || '') : (card || '');
     // pattern: [disc% OFF] [eta MINS] NAME PACK ₹SALE ₹MRP ADD/OutofStock
-    const inStock = !/out of stock/i.test(c);
+    const inStock = cardUnavailable(c) ? 0 : 1;
     const eta = (c.match(/(\d+)\s*MINS?/i) || [])[1];
     const disc = (c.match(/(\d+)%\s*OFF/i) || [])[1];
     // name: between the MINS/OFF prefix and the first ₹ / pack
     let name = c.replace(/^\d+%\s*OFF\s*/i, '').replace(/^.*?\d+\s*MINS?\s*/i, '');
-    name = name.replace(/Out of Stock/i, '').trim();
+    name = name.replace(UNAVAILABLE_RE, '').trim();
     const packM = name.match(/(\d[\d.]*\s*(?:ml|l|ltr|litre|kg|g))/i);
     const pack = packM ? packM[1] : '';
     name = name.replace(/₹.*$/, '').replace(/ADD\s*$/i, '');
@@ -462,7 +517,7 @@ function pdpNameVariants(name) {
 
 function pdpSegmentHead(segment) {
   return String(segment || '')
-    .split(/₹|MRP|out of stock|add to cart|\bADD\b|Why shop from blinkit\?/i)[0]
+    .split(PDP_SEGMENT_STOP_RE)[0]
     .slice(0, 180);
 }
 
@@ -497,7 +552,7 @@ function parsePdpProductText(text, row) {
   for (const idx of candidateList) {
     const snip = body.slice(idx, idx + 650);
     const head = snip.split(/Why shop from blinkit\?/i)[0];
-    if (/out of stock|add to cart|\bADD\b|₹/.test(head)) {
+    if (cardUnavailable(head) || /add to cart|\bADD\b|₹/i.test(head)) {
       segment = head;
       break;
     }
@@ -510,7 +565,7 @@ function parsePdpProductText(text, row) {
       const snip = body.slice(idx, idx + 650);
       const head = snip.split(/Why shop from blinkit\?/i)[0];
       const vol = parseVolMl(pdpSegmentHead(head));
-      if (vol && Math.abs(rowVolMl - vol) <= 1 && /out of stock|add to cart|\bADD\b|₹/.test(head)) {
+      if (vol && Math.abs(rowVolMl - vol) <= 1 && (cardUnavailable(head) || /add to cart|\bADD\b|₹/i.test(head))) {
         segment = head;
         break;
       }
@@ -518,7 +573,7 @@ function parsePdpProductText(text, row) {
   }
   const finalVolMl = parseVolMl(pdpSegmentHead(segment));
   if (rowVolMl && (!finalVolMl || Math.abs(rowVolMl - finalVolMl) > 1)) return null;
-  const out = /out of stock/i.test(segment);
+  const out = cardUnavailable(segment);
   const hasAdd = /add to cart|\bADD\b/i.test(segment);
   const price = priceInfo(segment, row.vol_ml);
   return {
@@ -978,14 +1033,14 @@ async function scrapeOne(browser, rec) {
         }, COMPETITOR_RE.source);
         for (const card of cards) {
           const c = (card && typeof card === 'object') ? (card.text || '') : (card || '');
-          const inStock = !/out of stock/i.test(c);
+          const inStock = cardUnavailable(c) ? 0 : 1;
           const eta = (c.match(/(\d+)\s*MINS?/i) || [])[1];
           const disc = (c.match(/(\d+)%\s*OFF/i) || [])[1];
           const prices = [...c.matchAll(/₹\s*([\d,]+)/g)].map((m) => parseInt(m[1].replace(/,/g, ''), 10));
           const sale = prices.length ? prices[0] : null;
           const mrp = prices.length > 1 ? prices[1] : sale;
           let name = c.replace(/^\d+%\s*OFF\s*/i, '').replace(/^.*?\d+\s*MINS?\s*/i, '');
-          name = name.replace(/Out of Stock/i, '').trim();
+          name = name.replace(UNAVAILABLE_RE, '').trim();
           const packM = name.match(/(\d[\d.]*\s*(?:ml|l|ltr|litre|kg|g))/i);
           const pack = packM ? packM[1] : '';
           name = name.replace(/₹.*$/, '').replace(/ADD\s*$/i, '');
@@ -1216,44 +1271,12 @@ async function scrapeOne(browser, rec) {
             }
           : { ...rec, probe_label: 'price-canary' };
         const pdp = await verifyPdpRow(priceRec, prev, priceRec.probe_label || 'price-canary');
-        if (!pdp) continue;
-        const changed = (
-          (pdp.sale != null && pdp.sale !== prev.sale) ||
-          (pdp.mrp != null && pdp.mrp !== prev.mrp) ||
-          (pdp.offer_sale != null && pdp.offer_sale !== prev.offer_sale)
-        );
-        const hasPdpPrice = pdp.sale != null || pdp.mrp != null || pdp.offer_sale != null;
-        rows[idx] = {
-          ...prev,
-          store_id: prev.store_id,
-          store_name: prev.store_name,
-          sale: pdp.sale ?? prev.sale,
-          mrp: pdp.mrp ?? prev.mrp,
-          base_sale: pdp.base_sale ?? prev.base_sale,
-          offer_sale: pdp.offer_sale ?? prev.offer_sale,
-          discount_pct: pdp.discount_pct ?? prev.discount_pct,
-          per_litre: pdp.per_litre ?? prev.per_litre,
-          in_stock: prev.in_stock,
-          listing_status: prev.listing_status,
-          stock_source: prev.stock_source,
-          price_source: hasPdpPrice ? priceSource('pdp_price_probe', pdp) : prev.price_source,
-          pdp_checked: 1,
-          pdp_price_in_stock: pdp.in_stock ? 1 : 0,
-          pdp_sale: pdp.sale,
-          pdp_mrp: pdp.mrp,
-          pdp_snippet: pdp.snippet,
-          pdp_price_checked: 1,
-          pdp_price_changed: changed ? 1 : 0,
-          price_probe: 'pdp_canary',
-          pdp_price_probe_label: pdp.probe_label,
-          pdp_price_probe_lat: pdp.probe_lat,
-          pdp_price_probe_lon: pdp.probe_lon,
-          pdp_price_store_id: pdp.store.id || '',
-          pdp_price_store_name: pdp.store.name || '',
-          search_sale: prev.search_sale ?? prev.sale,
-          search_mrp: prev.search_mrp ?? prev.mrp,
-        };
-        if (changed) {
+        rows[idx] = applyPdpPriceProbe(prev, pdp);
+        if (!pdp) {
+          process.stderr.write(`[pdp-price] ${rec.city} ${rec.pincode} -> failed ${prev.sku_raw} ${prev.pack || ''} via PDP\n`);
+          continue;
+        }
+        if (rows[idx].pdp_price_changed) {
           process.stderr.write(`[pdp-price] ${rec.city} ${rec.pincode} -> updated ${prev.sku_raw} sale=${prev.sale || 'n/a'}=>${pdp.sale || 'n/a'} via PDP\n`);
         }
       }
@@ -1302,7 +1325,17 @@ async function pool(items, n, fn) {
 
 // Exported for the offline volparse test (same pattern as zepto/amazon-fresh); the scrape
 // only runs when invoked directly, so `require`-ing this file never launches a browser.
-module.exports = { parseVolMl, canonical, priceInfo, buyAtPrice, parsePdpProductText, shouldPdpPriceProbe, istDateString };
+module.exports = {
+  parseVolMl,
+  canonical,
+  priceInfo,
+  buyAtPrice,
+  parsePdpProductText,
+  shouldPdpPriceProbe,
+  istDateString,
+  cardUnavailable,
+  applyPdpPriceProbe,
+};
 
 // Scrape one pincode with block-aware exponential backoff. A blocked attempt backs
 // off and retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag
@@ -1363,7 +1396,9 @@ if (require.main === module) (async () => {
     pdp_oos_probe_enabled: BLINKIT_PDP_OOS_PROBE ? 1 : 0,
     pdp_oos_probe_flips: allRows.filter((r) => r.stock_probe === 'nearby_same_pincode_pdp').length,
     pdp_price_probe_enabled: BLINKIT_PDP_PRICE_PROBE ? 1 : 0,
+    pdp_price_probe_attempted: allRows.filter((r) => r.pdp_price_probe_attempted).length,
     pdp_price_probe_checked: allRows.filter((r) => r.pdp_price_checked).length,
+    pdp_price_probe_failed: allRows.filter((r) => r.pdp_price_probe_failed).length,
     pdp_price_probe_updates: allRows.filter((r) => r.pdp_price_changed).length,
     unverified_oos: allRows.filter((r) => !r.in_stock && !r.pdp_checked && r.stock_source !== 'pdp').length,
     captured_at: new Date().toISOString(),

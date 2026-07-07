@@ -19,6 +19,7 @@ CONFIG="${BLINKIT_EXPECTED_CONFIG:-$DIR/platforms/blinkit/pincodes.daily.json}"
 REPORT="${BLINKIT_MONITOR_REPORT:-$DIR/output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx}"
 NOT_LISTED_REPORT="${BLINKIT_MONITOR_NOT_LISTED_REPORT:-$DIR/output/Jivo-Blinkit-Not-Listed-Pincodes-${TODAY}.xlsx}"
 MAX_UNVERIFIED_OOS="${BLINKIT_MONITOR_MAX_UNVERIFIED_OOS:-0}"
+MAX_PDP_PRICE_PROBE_FAILED="${BLINKIT_MONITOR_MAX_PDP_PRICE_PROBE_FAILED:-0}"
 MAX_COORD_ERRORS="${BLINKIT_MONITOR_MAX_COORD_ERRORS:-0}"
 STALE_ALERT_AFTER="${BLINKIT_MONITOR_STALE_ALERT_AFTER:-09:15}"
 REPORT_ALERT_AFTER="${BLINKIT_MONITOR_REPORT_ALERT_AFTER:-10:05}"
@@ -81,7 +82,7 @@ fi
 
 VALIDATION_JSON="$(
   RESULT="$RESULT" CONFIG="$CONFIG" REPORT="$REPORT" NOT_LISTED_REPORT="$NOT_LISTED_REPORT" TODAY="$TODAY" MAC_ACTIVE="$MAC_ACTIVE" \
-  MAX_UNVERIFIED_OOS="$MAX_UNVERIFIED_OOS" MAX_COORD_ERRORS="$MAX_COORD_ERRORS" \
+  MAX_UNVERIFIED_OOS="$MAX_UNVERIFIED_OOS" MAX_PDP_PRICE_PROBE_FAILED="$MAX_PDP_PRICE_PROBE_FAILED" MAX_COORD_ERRORS="$MAX_COORD_ERRORS" \
   PASS="$PASS" STALE_ALERT_AFTER="$STALE_ALERT_AFTER" REPORT_ALERT_AFTER="$REPORT_ALERT_AFTER" \
   python3 - <<'PY'
 import json, os, sys, datetime, math
@@ -93,6 +94,7 @@ not_listed_report_path = os.environ.get("NOT_LISTED_REPORT") or ""
 today = os.environ["TODAY"]
 mac_active = os.environ.get("MAC_ACTIVE") == "1"
 max_unverified_oos = int(os.environ.get("MAX_UNVERIFIED_OOS") or 0)
+max_pdp_price_probe_failed = int(os.environ.get("MAX_PDP_PRICE_PROBE_FAILED") or 0)
 max_coord_errors = int(os.environ.get("MAX_COORD_ERRORS") or 0)
 monitor_pass = os.environ.get("PASS") or "poll"
 stale_alert_after = os.environ.get("STALE_ALERT_AFTER") or "09:15"
@@ -146,6 +148,9 @@ facts.update({
     "oos_rows": sum(1 for r in rows if not r.get("in_stock")),
     "oos_probe_flips": s.get("oos_probe_flips", 0),
     "pdp_oos_probe_flips": s.get("pdp_oos_probe_flips", 0),
+    "pdp_price_probe_attempted": s.get("pdp_price_probe_attempted", 0),
+    "pdp_price_probe_checked": s.get("pdp_price_probe_checked", 0),
+    "pdp_price_probe_failed": s.get("pdp_price_probe_failed", 0),
     "unverified_oos": s.get("unverified_oos", None),
 })
 
@@ -211,6 +216,9 @@ if sum(1 for r in rows if not r.get("in_stock")):
 
 if s.get("pdp_price_probe_enabled") != 1:
     issue("pdp_price_probe_disabled", f"summary.pdp_price_probe_enabled={s.get('pdp_price_probe_enabled')} != 1")
+pdp_price_probe_failed = int(s.get("pdp_price_probe_failed") or 0)
+if pdp_price_probe_failed > max_pdp_price_probe_failed:
+    issue("pdp_price_probe_failed", f"summary.pdp_price_probe_failed={pdp_price_probe_failed} > {max_pdp_price_probe_failed}")
 
 calculated_unverified_oos = sum(1 for r in rows if not r.get("in_stock") and not r.get("pdp_checked") and r.get("stock_source") not in ("pdp", "pdp_probe"))
 summary_unverified_oos = s.get("unverified_oos")

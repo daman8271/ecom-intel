@@ -30,10 +30,12 @@
 # launches a bounded catch-up if the primary did not start.
 30 0 * * * cd /opt/ecom-intel && LEAD_MAX=11820 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
 */20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 10:00 >> logs/sweep_watchdog.cron.log 2>&1   # 10:00-sweep catch-up watchdog (guards the single 00:30 launch tick)
+0 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter early
 25 6 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter
 35 6 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 10:00-batch guard early
 45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 10:00-batch guard late
 */15 5-10 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor false-OOS guard
+*/15 6-12 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry
 */15 6-12 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_not_listed_direct.sh cron >> logs/blinkit-not-listed-wa.log 2>&1   # blinkit not-listed direct WhatsApp retry
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only

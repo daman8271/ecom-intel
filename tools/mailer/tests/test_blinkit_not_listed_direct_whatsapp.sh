@@ -42,7 +42,9 @@ src, good_result_path, bad_result_path, blinkit_path, not_listed_path, missing_m
 d = json.load(open(src, encoding="utf-8"))
 d["summary"]["captured_at"] = "2099-01-02T04:00:00.000Z"
 d["summary"]["pdp_price_probe_enabled"] = 1
+d["summary"]["pdp_price_probe_attempted"] = 1
 d["summary"]["pdp_price_probe_checked"] = 1
+d["summary"]["pdp_price_probe_failed"] = 0
 d["summary"]["pdp_price_probe_updates"] = 0
 json.dump(d, open(good_result_path, "w", encoding="utf-8"))
 

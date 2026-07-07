@@ -25,6 +25,15 @@ with `tools/cron/blinkit_live_watch.sh`; it writes
 `logs/blinkit_live_watch-YYYY-MM-DD.log` and repeatedly records Mac process status,
 today's expected workbooks, and the read-only quality monitor result.
 
+2026-07-07 post-run hardening: targeted PDP price probes now record
+`pdp_price_probe_attempted` and `pdp_price_probe_failed`. Ingest and
+`tools/cron/blinkit_quality_monitor.sh` default to `0` allowed failed PDP price
+probes, so a stale search-card price cannot be silently delivered when a canary or
+high-value PDP probe fails to resolve/parse. The accepted main Blinkit workbook is
+also direct-sent to the Ecom WhatsApp group by
+`tools/whatsapp/send_blinkit_main_direct.sh`; retry cron and batch spool paths use
+`logs/blinkit-main-wa-YYYY-MM-DD.sent` to avoid duplicate group documents.
+
 ## Code map (line numbers as of this commit)
 
 | Concern | Location |
@@ -68,6 +77,13 @@ today's expected workbooks, and the read-only quality monitor result.
 5. **Ingest validation gates** — `ingest.sh` validates identity coverage, OOS probe
    evidence, unverified OOS count, price math, and expected-config coordinates before
    writing `result.json`, building Excel, reviewing, or delivering.
+6. **PDP price-probe failure gate** — targeted PDP price checks set attempted/failed
+   counters. `BLINKIT_MAX_PDP_PRICE_PROBE_FAILED` and
+   `BLINKIT_MONITOR_MAX_PDP_PRICE_PROBE_FAILED` default to `0`, forcing a holdback
+   when the run cannot verify a targeted stale-price risk row.
+7. **Late main WhatsApp direct send** — accepted Blinkit drops immediately direct-send
+   the main workbook to the Ecom WhatsApp group and separately send the not-listed
+   workbook to the configured direct contact. Both are idempotent by date marker.
 
 SIM hooks for hermetic tests (inert in production — only active when the env var is set):
 `BLINKIT_SIM=1` returns a synthetic resolved row with no browser; `BLINKIT_BLOCK_SIM=1`
@@ -179,6 +195,9 @@ Observed (2026-07-07):
 - Missing `summary.pdp_oos_probe_enabled` failed with `Refusing unverified Blinkit OOS drop`.
 - Missing `summary.pdp_price_probe_enabled` failed in `tools/cron/blinkit_quality_monitor.sh`
   with `pdp_price_probe_disabled`.
+- `summary.pdp_price_probe_failed=1` failed in `tools/cron/blinkit_quality_monitor.sh`
+  with `pdp_price_probe_failed`, and ingest rejects the same class via
+  `BLINKIT_MAX_PDP_PRICE_PROBE_FAILED=0`.
 - Unverified OOS failed with `Refusing excessive unverified Blinkit OOS`.
 - Missing PRID, missing listing URL, and malformed listing URL failed with
   `Refusing Blinkit row identity regression`.
@@ -190,10 +209,10 @@ Default thresholds are fail-closed. Operational overrides are:
 `BLINKIT_REQUIRE_OOS_PROBE_ENABLED`, `BLINKIT_REQUIRE_PDP_OOS_PROBE_ENABLED`,
 `BLINKIT_MAX_UNVERIFIED_OOS`, `BLINKIT_MAX_MISSING_PRID_RATIO`,
 `BLINKIT_MAX_MISSING_LISTING_URL_RATIO`, `BLINKIT_MAX_BAD_LISTING_URL_RATIO`,
-`BLINKIT_MAX_BAD_PRICE_ROWS`, `BLINKIT_PRICE_MATH_PER_LITRE_EPS`,
-`BLINKIT_PRICE_MATH_DISCOUNT_EPS`, `BLINKIT_INDIA_BBOX`,
-`BLINKIT_REQUIRE_CONFIG_COORDS`, `BLINKIT_CONFIG_COORD_ALLOWLIST`, and
-`BLINKIT_MAX_BAD_CONFIG_COORDS`.
+`BLINKIT_MAX_BAD_PRICE_ROWS`, `BLINKIT_MAX_PDP_PRICE_PROBE_FAILED`,
+`BLINKIT_PRICE_MATH_PER_LITRE_EPS`, `BLINKIT_PRICE_MATH_DISCOUNT_EPS`,
+`BLINKIT_INDIA_BBOX`, `BLINKIT_REQUIRE_CONFIG_COORDS`,
+`BLINKIT_CONFIG_COORD_ALLOWLIST`, and `BLINKIT_MAX_BAD_CONFIG_COORDS`.
 
 ## Current caveat
 The checkpoint filename now uses the **IST** date, matching the daily business date

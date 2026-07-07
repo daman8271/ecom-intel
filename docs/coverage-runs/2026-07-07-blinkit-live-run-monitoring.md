@@ -232,3 +232,40 @@ The standalone not-listed workbook was sent separately to
 
 - Header message id: `3EB03CAD5D61A67203FEFE`
 - Not-listed workbook document id: `3EB05E1F0ED6C4A70BED98`
+
+## Post-Run Hardening
+
+The multi-agent audit after the corrected workbook found no remaining mismatch in
+the user screenshot canaries inside the accepted workbook:
+
+- `110094 / 407561` is `Listed - In stock`, sale `1766`, with neighbor stock proof
+  and PDP price source.
+- `110012 / 407851` and `110012 / 406593` are `Listed - In stock`, with PDP price
+  checks.
+- `Not listed` rows are separated from `Listed - Out of stock`; the standalone
+  not-listed workbook matches the embedded `Not Listed Pincodes` sheet.
+
+Hardening applied after that audit:
+
+- `tools/whatsapp/send_blinkit_main_direct.sh` now sends the accepted main Blinkit
+  workbook directly to the Ecom WhatsApp group after ingest quality passes, and writes
+  `logs/blinkit-main-wa-YYYY-MM-DD.sent`.
+- `tools/whatsapp/send_blinkit_not_listed_direct.sh` continues to send the standalone
+  not-listed workbook to `917703818227@s.whatsapp.net` after the same main-report
+  quality gate.
+- Batch/mail retry paths skip duplicate Blinkit WhatsApp group documents once the
+  main direct-send marker exists.
+- Targeted PDP price probes now record attempted/failed counters. `ingest.sh` and
+  `tools/cron/blinkit_quality_monitor.sh` fail closed when
+  `summary.pdp_price_probe_failed > 0` unless an explicit override is supplied.
+- Search/PDP unavailable parsing now treats `Out of Stock`, `Sold out`, `Notify me`,
+  and `Unavailable` text as unavailable.
+- A checkpoint-resume regression test verifies completed checkpoint hits skip the
+  normal per-pincode jitter delay and resume quickly.
+
+Tomorrow's live monitoring path is:
+
+- `tools/cron/blinkit_quality_monitor.sh poll` every 15 minutes from 05:00-10:59 IST.
+- `tools/cron/start_blinkit_live_watch.sh` at 05:00 and 06:25 IST, writing
+  `logs/blinkit_live_watch-YYYY-MM-DD.log`.
+- Main and not-listed WhatsApp retry helpers every 15 minutes from 06:00-12:59 IST.

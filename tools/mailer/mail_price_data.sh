@@ -174,8 +174,21 @@ fi
 # first so a dead :3001 at cron time doesn't silently drop every file.
 WA_GROUP="120363047864912511@g.us"
 WA_FAIL=0
-if [ "${MAILER_TEST_MODE:-0}" = "1" ] || [ "${MAILER_DRY_RUN_SEND:-0}" = "1" ]; then
-  echo "TEST WhatsApp group: $WA_GROUP ${#PRESENT[@]} files"
+WA_PRESENT=("${PRESENT[@]}")
+BLINKIT_MAIN_WA_MARKER="logs/blinkit-main-wa-$D.sent"
+if [ -f "$BLINKIT_MAIN_WA_MARKER" ]; then
+  WA_FILTERED=()
+  for f in "${WA_PRESENT[@]}"; do
+    [ "$f" = "$BLINKIT_REPORT" ] && continue
+    WA_FILTERED+=("$f")
+  done
+  WA_PRESENT=("${WA_FILTERED[@]}")
+  echo "WhatsApp group: Blinkit main already sent direct ($BLINKIT_MAIN_WA_MARKER); skipping duplicate group document"
+fi
+if [ ${#WA_PRESENT[@]} -eq 0 ]; then
+  echo "WhatsApp group: no files to post after direct-send filtering; skipped"
+elif [ "${MAILER_TEST_MODE:-0}" = "1" ] || [ "${MAILER_DRY_RUN_SEND:-0}" = "1" ]; then
+  echo "TEST WhatsApp group: $WA_GROUP ${#WA_PRESENT[@]} files"
 else
   ensure_gateway || true
   R=$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send \
@@ -183,7 +196,7 @@ else
     -d "$(python3 -c 'import json,sys; print(json.dumps({"chatId": sys.argv[1], "message": sys.argv[2]}))' "$WA_GROUP" "$SUBJ")")
   echo "WhatsApp header: $R"
   echo "$R" | grep -q '"success":true' || WA_FAIL=1
-  for f in "${PRESENT[@]}"; do
+  for f in "${WA_PRESENT[@]}"; do
     B=$(python3 -c 'import json,sys; p=sys.argv[1]; print(json.dumps({"chatId": sys.argv[2], "filePath": p, "mediaType": "document", "fileName": p.rsplit("/",1)[-1]}))' "$PWD/$f" "$WA_GROUP")
     R=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
       -H 'Content-Type: application/json' -d "$B")
@@ -192,7 +205,7 @@ else
     sleep 2
   done
   if [ "$WA_FAIL" -eq 0 ]; then
-    echo "WhatsApp: posted ${#PRESENT[@]} reports to Ecom team group"
+    echo "WhatsApp: posted ${#WA_PRESENT[@]} reports to Ecom team group"
   else
     echo "ERROR: some WhatsApp posts failed"
     alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"

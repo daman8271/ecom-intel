@@ -212,7 +212,10 @@ fi
 if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
   BI_RPT="$DIR/output/Jivo-Blinkit-Live-Report-$(date +%F).xlsx"
   if [ -n "$BI_RPT" ] && [ -f "$BI_RPT" ]; then
-    if ! BLINKIT_MONITOR_DRYRUN=1 \
+    BI_SENT="$DIR/logs/blinkit-main-wa-$(date +%F).sent"
+    if [ -f "$BI_SENT" ]; then
+      echo "[$(date '+%F %T')] run_all: blinkit already sent direct WhatsApp ($BI_SENT) — skipped batch spool for $BI_RPT"
+    elif ! BLINKIT_MONITOR_DRYRUN=1 \
          BLINKIT_MONITOR_EXIT_CODE=1 \
          BLINKIT_MONITOR_DATE="$(date +%F)" \
          BLINKIT_MONITOR_REPORT="$BI_RPT" \

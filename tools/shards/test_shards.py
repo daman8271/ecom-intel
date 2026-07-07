@@ -59,7 +59,9 @@ class TestShards(unittest.TestCase):
                 "pdp_oos_probe_enabled": 1,
                 "pdp_oos_probe_flips": idx + 1,
                 "pdp_price_probe_enabled": 1,
+                "pdp_price_probe_attempted": idx + 3,
                 "pdp_price_probe_checked": idx + 2,
+                "pdp_price_probe_failed": idx,
                 "pdp_price_probe_updates": idx,
             },
             "perPin": per,
@@ -100,7 +102,9 @@ class TestShards(unittest.TestCase):
         self.assertEqual(merged["summary"]["pdp_price_probe_enabled"], 1)
         self.assertEqual(merged["summary"]["oos_probe_flips"], 1)
         self.assertEqual(merged["summary"]["pdp_oos_probe_flips"], 3)
+        self.assertEqual(merged["summary"]["pdp_price_probe_attempted"], 7)
         self.assertEqual(merged["summary"]["pdp_price_probe_checked"], 5)
+        self.assertEqual(merged["summary"]["pdp_price_probe_failed"], 1)
         self.assertEqual(merged["summary"]["pdp_price_probe_updates"], 1)
         self.assertEqual(merged["summary"]["unverified_oos"], 0)
         self.assertEqual([p["pincode"] for p in merged["perPin"]], ["100001", "100002", "100003", "100004"])
