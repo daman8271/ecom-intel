@@ -225,10 +225,15 @@ and `Not Listed Pincodes`; the standalone not-listed workbook is direct-sent to
 `platforms/blinkit/ingest.sh --deliver` calls
 `tools/whatsapp/send_blinkit_not_listed_direct.sh` immediately, and the 10:00
 mailer plus `*/15 6-12` cron retry idempotently if
-`logs/blinkit-not-listed-wa-YYYY-MM-DD.sent` is absent. Cron starts
-`tools/cron/start_blinkit_live_watch.sh` idempotently at 05:00 IST and 06:25 IST;
-it opens a once-per-day tmux watcher that logs the Mac process, progress counts,
-workbook presence, and dry-run quality-monitor output through 10:45 IST.
+`logs/blinkit-not-listed-wa-YYYY-MM-DD.sent` is absent. A dedicated 09:00 IST
+`tools/cron/blinkit_whatsapp_delivery_sweep.sh` checkpoint also runs both direct
+send helpers after the same quality gate and marker checks. Cron starts
+`tools/cron/start_blinkit_live_watch.sh` idempotently at 05:00 IST and 06:25 IST,
+with a `*/10 5-10` watchdog; it opens a once-per-day tmux watcher that logs the
+Mac process, progress counts, workbook presence, and dry-run quality-monitor output
+through 10:45 IST. `tools/cron/start_blinkit_supervisor.sh` runs from 05:05 with
+the same watchdog window and triggers the guarded fallback if reports are missing
+after the store-open window.
 If the Mac is unreachable at the Blinkit guard checks, `blinkit_batch_guard.sh`
 launches `tools/cron/blinkit_vps_kvm_fallback.sh`, which prepares KVM1, runs
 authenticated VPS+KVM1 shards, merges on the VPS, and promotes only through

@@ -268,4 +268,10 @@ Tomorrow's live monitoring path is:
 - `tools/cron/blinkit_quality_monitor.sh poll` every 15 minutes from 05:00-10:59 IST.
 - `tools/cron/start_blinkit_live_watch.sh` at 05:00 and 06:25 IST, writing
   `logs/blinkit_live_watch-YYYY-MM-DD.log`.
+- `tools/cron/start_blinkit_supervisor.sh` from 05:05 plus a 10-minute watchdog
+  through 10:59 IST; after 06:35 it triggers the guarded Mac/VPS/KVM fallback if
+  the reports are still missing and no Blinkit worker is active.
 - Main and not-listed WhatsApp retry helpers every 15 minutes from 06:00-12:59 IST.
+- `tools/cron/blinkit_whatsapp_delivery_sweep.sh` at 09:00 IST as an explicit
+  delivery checkpoint; it is quality-gated and marker-safe, so it will not duplicate
+  files already sent by the normal retry path.
