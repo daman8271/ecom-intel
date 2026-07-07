@@ -76,6 +76,36 @@ prepare_kvm1() {
   return 0
 }
 
+kvm1_busy_with_other_browser_work() {
+  ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 \
+    "python3 - <<'PY'
+import os
+busy = []
+for pid in filter(str.isdigit, os.listdir('/proc')):
+    try:
+        with open(f'/proc/{pid}/cmdline', 'rb') as f:
+            cmd = f.read().replace(b'\0', b' ').decode('utf-8', 'ignore')
+    except OSError:
+        continue
+    low = cmd.lower()
+    if 'blinkit' in low:
+        continue
+    if any(x in low for x in [
+        'bigbasket',
+        'scrape_pincode_browser.js',
+        'kvm1_run_trio.sh',
+        'platforms/flipkart',
+        'platforms/zepto',
+        'run_platform_shard.sh',
+    ]):
+        busy.append(f'{pid} {cmd[:180]}')
+if busy:
+    print('\\n'.join(busy[:20]))
+    raise SystemExit(0)
+raise SystemExit(1)
+PY" >>"$LOG_FILE" 2>&1
+}
+
 run_local_shard() {
   local total="$1" index="$2" role="$3"
   log "local shard start index=${index}/${total} role=$role run_id=$RUN_ID"
@@ -176,7 +206,11 @@ fi
 
 TOTAL=2
 KVM_OK=0
-if prepare_kvm1; then
+if kvm1_busy_with_other_browser_work; then
+  TOTAL=1
+  log "KVM1 has active non-Blinkit browser work; using one full authenticated VPS shard to avoid contention"
+  tg "[WARN] Blinkit fallback: KVM1 is busy with other browser work, so ${TODAY} will run as one authenticated VPS shard to avoid quality risk."
+elif prepare_kvm1; then
   KVM_OK=1
 else
   TOTAL=1
