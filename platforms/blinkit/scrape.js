@@ -98,6 +98,7 @@ const PDP_PRICE_PROBE_MIN_VOL_ML = parseInt(process.env.BLINKIT_PDP_PRICE_PROBE_
 const PROG = process.env.BLINKIT_PROGRESS_FILE || (COMPETITOR_MODE
   ? `${COMP_DIR}/data/.progress.competitor.${path.basename(__dirname)}.${COMP_DATE}.json`
   : `${__dirname}/.progress.${istDateString()}.json`);
+const CHECKPOINT_HIT = Symbol('checkpointHit');
 const MAX_BLOCK_RETRIES = parseInt(process.env.BLINKIT_BLOCK_RETRIES || '4', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could appear in legitimate page text) — HTTP status carries those.
@@ -1286,8 +1287,13 @@ async function pool(items, n, fn) {
   async function worker() {
     while (i < items.length) {
       const idx = i++;
-      results[idx] = await fn(items[idx], idx);
-      await new Promise((r) => setTimeout(r, 800 + Math.random() * 1500));
+      const res = await fn(items[idx], idx);
+      const checkpointHit = Boolean(res && res[CHECKPOINT_HIT]);
+      if (checkpointHit) delete res[CHECKPOINT_HIT];
+      results[idx] = res;
+      if (!checkpointHit) {
+        await new Promise((r) => setTimeout(r, 800 + Math.random() * 1500));
+      }
     }
   }
   await Promise.all(Array.from({ length: Math.min(n, items.length) }, worker));
@@ -1327,7 +1333,7 @@ if (require.main === module) (async () => {
   if (doneCount) process.stderr.write(`[resume] ${doneCount} pincodes already done in ${PROG}; resuming\n`);
   let partial = false;
   const perPin = await pool(PINCODES, CONCURRENCY, async (rec) => {
-    if (done[rec.pincode]) return done[rec.pincode];          // checkpoint hit — skip
+    if (done[rec.pincode]) return { ...done[rec.pincode], [CHECKPOINT_HIT]: true }; // checkpoint hit — skip fast
     const res = await scrapeWithBackoff(browser, rec);
     if (res.blocked || res.partial_block) partial = true;     // any unresolved block => partial run
     done[rec.pincode] = res;

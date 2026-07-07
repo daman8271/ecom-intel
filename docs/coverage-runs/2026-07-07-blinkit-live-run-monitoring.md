@@ -68,6 +68,12 @@ The live-run hook for tomorrow is therefore:
 - `*/15 06-12`: retry the standalone not-listed WhatsApp send only after the main
   Blinkit workbook passes quality and no sent marker exists.
 
+Operationally, the watcher is the activation hook: once the Mac scrape starts, it
+records live progress side by side and the quality monitor blocks stale, anonymous,
+unprobed, stock-unverified, or missing-workbook output from WhatsApp. Manual action
+is only needed when the watcher shows no progress, an SSH/tunnel outage, or a hard
+quality failure.
+
 If the Mac scrape is still active after the stale-result cutoff, the quality monitor
 keeps returning a waiting state instead of alerting on yesterday's `result.json`.
 That prevents a slow authenticated run from being misclassified as a stale report
@@ -155,3 +161,35 @@ and keeps `unverified_oos=0`, but it also showed VPS/datacenter price/store beha
 can differ from the Mac residential session. Therefore VPS canary output is useful
 diagnostically only; it must not replace the production Mac-auth Blinkit workbook
 unless the full drop passes the normal hard gates.
+
+## 09:46-09:51 Late Resume
+
+The Mac reverse tunnel recovered at `09:45 IST`. A late Mac run started at
+`09:46:37 IST` with the same production wrapper, auth state, and probe flags:
+
+- `BLINKIT_REQUIRE_AUTH=1`
+- `BLINKIT_OOS_PROBE=1`
+- `BLINKIT_PDP_OOS_PROBE=1`
+- `BLINKIT_PDP_PRICE_PROBE=1`
+
+The run resumed from the existing `.progress.2026-07-07.json` checkpoint containing
+`626/902` pincodes. That checkpoint was from the corrected authenticated run after
+the 04:00, 05:15, and 06:15 fixes; prior live checks showed `0` stock-unverified rows
+and clean Delhi/Bengaluru canaries. Resume is acceptable in this case because the
+partial checkpoint had already passed the false-OOS guardrails. If a checkpoint was
+created before the auth/probe fixes, or contains `stock_unverified` rows, stale
+canary prices, unauthenticated pincodes, or bad coordinates, it must be moved aside
+and the Mac run must restart cleanly.
+
+The first late process showed that checkpoint hits were still paying the normal
+per-pincode jitter before reaching new work. `platforms/blinkit/scrape.js` now marks
+checkpoint hits internally and skips that delay, so resumed runs jump straight to the
+remaining pincodes while real fresh pincode scrapes keep the normal jitter. The
+patched scraper was synced to the Mac, the idle late process was replaced, and the
+new `09:51:05 IST` run moved past the checkpoint immediately, completing
+`160017` and `160018` by `09:51:48 IST`.
+
+No Blinkit workbook should be delivered until the final Mac drop is ingested and the
+quality monitor accepts the main workbook. If the final drop misses the cutoff or
+fails quality, the 10:00 batch must exclude Blinkit and the not-listed WhatsApp must
+remain unsent.

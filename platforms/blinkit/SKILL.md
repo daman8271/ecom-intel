@@ -96,6 +96,10 @@ against the same proof location and update only price/PDP diagnostic fields, nev
 Checkpoint/resume files are keyed by IST date (`.progress.YYYY-MM-DD.json`), not UTC.
 This matters for manual/early-morning IST starts: a July 7 run must not reuse a July 6
 UTC-date cache and skip the fresh per-pincode auth/PDP checks.
+Resume is acceptable only when the existing checkpoint was created by the current
+authenticated/probed scraper and already passes the same quality expectations: no
+`stock_unverified` rows, no stale canary prices, all pincodes auth-accepted, and no bad
+coordinates. Move older or suspect checkpoints aside and restart cleanly.
 
 `tools/cron/start_blinkit_live_watch.sh` is installed for 05:00 IST and 06:25 IST.
 It starts an idempotent tmux watcher that logs Mac process status, progress counts

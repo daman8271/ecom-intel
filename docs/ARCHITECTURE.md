@@ -219,6 +219,8 @@ cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; 
   │    └─ /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
   │       ├─ BLINKIT_REQUIRE_AUTH=1 with /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
   │       ├─ BLINKIT_OOS_PROBE=1, BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
+  │       ├─ tools/cron/start_blinkit_live_watch.sh starts at 05:00 + 06:25 to monitor live progress
+  │       ├─ tools/cron/blinkit_quality_monitor.sh polls 05:00-10:00 and holds stale/dirty/missing output
   │       └─ VPS ingest with BLINKIT_REQUIRE_AUTH_DROP=1 → build/review/deliver
   │          └─ main workbook + not-listed workbook; immediate idempotent direct not-listed WhatsApp only after quality OK
   └─ tools/cron/deadline_sweep.sh 10:00 — predict chain runtime (durations.jsonl p90),

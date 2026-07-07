@@ -39,11 +39,17 @@ today's expected workbooks, and the read-only quality monitor result.
 
 ## What was added
 
-1. **Checkpoint/resume** — `.progress.<UTC-date>.json` holds the full per-pincode result
+1. **Checkpoint/resume** — `.progress.<IST-date>.json` holds the full per-pincode result
    keyed by pincode, rewritten after every pincode (`saveProgress`). On start,
    `loadProgress()` reloads it and the loop body `if (done[rec.pincode]) return done[...]`
    skips finished pincodes, logging `[resume] N pincodes already done … resuming`.
    Result.json is therefore complete even across a kill/restart, with no duplicate work.
+   A resumed production checkpoint is publishable only if it was produced by the
+   current authenticated/probed code path and has no `stock_unverified`, stale canary
+   price, auth, or coordinate failures. Older or suspect checkpoints must be moved
+   aside before rerun. Checkpoint hits skip the normal per-pincode jitter delay, so
+   an interrupted full run can resume quickly while fresh pincode scrapes still keep
+   the polite pacing.
 2. **Block-detection + exponential backoff** — `BLOCK_RE` matches `access denied / akamai /
    reference #N / too many requests / rate-limit / captcha / forbidden` in the page body,
    and HTTP `403/429/503` on the navigation response. A blocked attempt triggers
@@ -189,9 +195,9 @@ Default thresholds are fail-closed. Operational overrides are:
 `BLINKIT_REQUIRE_CONFIG_COORDS`, `BLINKIT_CONFIG_COORD_ALLOWLIST`, and
 `BLINKIT_MAX_BAD_CONFIG_COORDS`.
 
-## Known caveat
-The checkpoint filename uses the **UTC** date (`new Date().toISOString()`), while
-`run.sh`'s ledger `date_ist` uses the local (IST) date. They differ only for a run that
-spans UTC midnight (~05:30 IST); such a run would start a fresh checkpoint file mid-way
-(re-scraping, never corrupting). Acceptable for the daily pilot; revisit if runs straddle
-05:30 IST.
+## Current caveat
+The checkpoint filename now uses the **IST** date, matching the daily business date
+and the Mac wrapper. That avoids the old UTC/IST split around 05:30. The remaining
+operator risk is semantic, not date-based: do not resume from a checkpoint created
+before the current auth/OOS/PDP-price fixes, or from any checkpoint that the live
+watcher/quality monitor has already shown to be dirty.
