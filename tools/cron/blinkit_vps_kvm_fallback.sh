@@ -135,6 +135,27 @@ raise SystemExit(1)
 PY
 }
 
+refresh_host_busy_state() {
+  LOCAL_BUSY=0
+  KVM_BUSY=0
+  local_busy_with_other_browser_work && LOCAL_BUSY=1
+  kvm1_busy_with_other_browser_work && KVM_BUSY=1
+}
+
+wait_for_less_contention() {
+  local max_wait="${BLINKIT_FALLBACK_BUSY_WAIT:-900}"
+  local step="${BLINKIT_FALLBACK_BUSY_WAIT_STEP:-60}"
+  local waited=0
+  [ "$max_wait" -gt 0 ] || return 0
+  [ "$step" -gt 0 ] || step=60
+  while [ "$LOCAL_BUSY" -eq 1 ] && [ "$KVM_BUSY" -eq 1 ] && [ "$waited" -lt "$max_wait" ]; do
+    log "both VPS and KVM1 have active non-Blinkit browser work; waiting ${step}s before choosing fallback host"
+    sleep "$step"
+    waited=$((waited + step))
+    refresh_host_busy_state
+  done
+}
+
 run_local_shard() {
   local total="$1" index="$2" role="$3"
   log "local shard start index=${index}/${total} role=$role run_id=$RUN_ID"
@@ -239,8 +260,8 @@ START_LOCAL=1
 START_REMOTE=0
 LOCAL_BUSY=0
 KVM_BUSY=0
-local_busy_with_other_browser_work && LOCAL_BUSY=1
-kvm1_busy_with_other_browser_work && KVM_BUSY=1
+refresh_host_busy_state
+wait_for_less_contention
 
 if [ "$LOCAL_BUSY" -eq 0 ] && [ "$KVM_BUSY" -eq 0 ] && prepare_kvm1; then
   KVM_OK=1
