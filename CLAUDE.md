@@ -187,7 +187,8 @@ Self-heal (tools/selfheal.sh, at the end of each sweep): re-runs a platform ONCE
 logs/.heal-<p>.lock) only on a BROKEN verdict / staleness / row-collapse vs baseline;
 SUSPECT is recorded (reviews/ + vault note) but NOT re-run. Escalates to Telegram + logs/health.log if still broken.
 
-Blinkit production is Mac/drop-fed and auth-required. The Mac wrapper
+Blinkit production is Mac/drop-fed and auth-required, with a strict VPS+KVM1
+authenticated shard fallback only when the Mac is unreachable. The Mac wrapper
 `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` runs under LaunchAgent
 `com.danny.blinkit-mac-to-vps` at 06:30 IST, loads
 `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, and exports
@@ -195,7 +196,7 @@ Blinkit production is Mac/drop-fed and auth-required. The Mac wrapper
 `BLINKIT_PDP_OOS_PROBE=1`, plus `BLINKIT_PDP_PRICE_PROBE=1`. VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`; drops
 must carry `summary.auth_session`, `summary.auth_required`, and
 `summary.auth_verified` with `summary.auth_verified_pincodes == summary.pincodes_total`,
-and unauthenticated/any-pincode unverified-auth Blinkit drops are rejected. VPS emergency/manual shards use
+and unauthenticated/any-pincode unverified-auth Blinkit drops are rejected. VPS emergency/manual/fallback shards use
 `/opt/ecom-intel/secrets/blinkit-auth-state.json`. Corrected 2026-07-06 run: 902 pins,
 870 resolved, 468 Jivo pins, 1915 rows, 0 blocked, 303 stores.
 
@@ -228,6 +229,10 @@ mailer plus `*/15 6-12` cron retry idempotently if
 `tools/cron/start_blinkit_live_watch.sh` idempotently at 05:00 IST and 06:25 IST;
 it opens a once-per-day tmux watcher that logs the Mac process, progress counts,
 workbook presence, and dry-run quality-monitor output through 10:45 IST.
+If the Mac is unreachable at the Blinkit guard checks, `blinkit_batch_guard.sh`
+launches `tools/cron/blinkit_vps_kvm_fallback.sh`, which prepares KVM1, runs
+authenticated VPS+KVM1 shards, merges on the VPS, and promotes only through
+`platforms/blinkit/ingest.sh --deliver`.
 
 ## Review (tools/review.py) — never ship garbage, stay cheap
 Deterministic checks ALWAYS run (free): zero/low rows, price/MRP/discount sanity,

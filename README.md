@@ -50,7 +50,7 @@ catch us?"* Current state (see [`REPORT.md`](REPORT.md) for the full map):
 
 | Platform | Type | Status | Coverage | Jivo SKUs | Notes |
 |---|---|---|---|---|---|
-| **Blinkit** | quick-comm | ✅ LIVE | 902 daily pincodes / 468 Jivo-priced pins in the 2026-07-06 auth-corrected run | ~9 expected | Mac Pro residential collector; authenticated Blinkit session required; PDP OOS + price canaries required; no anonymous fallback |
+| **Blinkit** | quick-comm | ✅ LIVE | 902 daily pincodes / 468 Jivo-priced pins in the 2026-07-06 auth-corrected run | ~9 expected | Mac Pro residential collector; authenticated VPS+KVM1 shard fallback when Mac is unreachable; PDP OOS + price canaries required; no anonymous fallback |
 | **** | quick-comm | ⚠️ BLOCKED | 332 pincodes | ~8 | stealth POST to `/search/v2`, now **offset-paginated** for the full catalogue; but the DC IP is **403-blocked again (0 rows, 2026-06-05)** → needs a residential proxy or a logged-in  session (`platforms//LOGIN-COOKIES.md`). 403 fail-safe → review BROKEN, never ships. |
 | **Zepto** | quick-comm | ✅ LIVE | 332 pincodes | ~11 | reached via `bff-gateway.zeptonow.com` BFF API (the CloudFront website still 403s — gateway is direct), no proxy |
 | **Flipkart Minutes** | quick-comm | ✅ LIVE | 345 pincodes | ~10 | `HYPERLOCAL` store; GPS "use my location" |
@@ -134,7 +134,10 @@ set, not part of the Wave 1 config generator.
   `*/15 6-12` cron retry it idempotently if no sent marker exists. A daily live
   watcher starts idempotently at 05:00 IST and again at 06:25 IST, then records
   Mac process status, progress counts, workbook presence, and dry-run
-  quality-monitor output until 10:45 IST.
+  quality-monitor output until 10:45 IST. If the Mac is unreachable at the
+  store-open guard checks, `tools/cron/blinkit_vps_kvm_fallback.sh` prepares KVM1,
+  splits the same daily config across VPS+KVM1 authenticated shards, merges on the
+  VPS, and promotes only through `platforms/blinkit/ingest.sh --deliver`.
 - **Blinkit pincode labels are not enough.** Blinkit resolves a dark store from the
   injected latitude/longitude and account session; two nearby coordinates can show
   the same pincode/header but different listing, stock, ETA, or offer price. The
@@ -415,6 +418,7 @@ chmod 600 secrets.env
 #     VPS emergency/shard auth state: /opt/ecom-intel/secrets/blinkit-auth-state.json
 #     Mac wrapper: /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
 #     LaunchAgent: com.danny.blinkit-mac-to-vps at 06:30 IST
+#     Mac-down fallback: tools/cron/blinkit_vps_kvm_fallback.sh via blinkit_batch_guard.sh
 #     Required flags: BLINKIT_REQUIRE_AUTH=1, BLINKIT_OOS_PROBE=1,
 #     BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
 #     Pincode text is only a label; coordinates resolve the Blinkit dark store.

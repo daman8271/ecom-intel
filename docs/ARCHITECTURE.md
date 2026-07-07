@@ -9,7 +9,7 @@ Design deep-dive. For operating instructions see the top-level
 > all execute inside `run.sh` for VPS-hosted platforms, and `run_all.sh` drives a
 > **SERIAL** sweep (one platform at a time; ~2h chain after 's 2026-06-06 removal).
 > Off-box/team collectors feed vetted outputs where required:
-> Blinkit runs on the Mac Pro residential session at **06:30 IST** with authenticated
+> Blinkit normally runs on the Mac Pro residential session at **06:30 IST** with authenticated
 > Blinkit state, while BigBasket pincode runs at **03:00 IST** through the
 > `team_run_pincode.sh` VPS + Mac Pro + KVM1 runner and writes private/direct-only
 > output. The sweep has a
@@ -129,14 +129,15 @@ This is the single biggest source of per-platform code difference:
   *hyperlocal* — price/stock depend on the dark store serving a pincode, so we **loop
   every pincode** (332–798 depending on platform, scaled up from the original top-20-city
   set) and set the delivery location each time:
-  - **Blinkit** — Mac Pro/residential Playwright collector. It must hydrate an
+  - **Blinkit** — Mac Pro/residential Playwright collector, with a strict
+    VPS+KVM1 authenticated shard fallback when the Mac is unreachable. It must hydrate an
     authenticated Blinkit session (`localStorage.auth`, `localStorage.deviceId`, and
     `gr_1_accessToken` / `gr_1_deviceId` cookies) before writing
     `localStorage.location`; anonymous/headless Blinkit can return false Out of Stock
     for live SKUs. Production runs with `BLINKIT_REQUIRE_AUTH=1` using
     `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` on the Mac collector
-    or `/opt/ecom-intel/secrets/blinkit-auth-state.json` for VPS emergency/manual
-    shards. Summaries must carry `auth_session`, `auth_required`, `auth_verified`,
+    or `/opt/ecom-intel/secrets/blinkit-auth-state.json` for VPS emergency/manual/
+    fallback shards. Summaries must carry `auth_session`, `auth_required`, `auth_verified`,
     and `auth_verified_pincodes` for all pincodes; ingest defaults to
     `BLINKIT_REQUIRE_AUTH_DROP=1` and rejects unauthenticated or any-pincode
     unverified-auth drops. The accepted run also requires search + PDP OOS probes
@@ -221,6 +222,7 @@ cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; 
   │       ├─ BLINKIT_OOS_PROBE=1, BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1
   │       ├─ tools/cron/start_blinkit_live_watch.sh starts at 05:00 + 06:25 to monitor live progress
   │       ├─ tools/cron/blinkit_quality_monitor.sh polls 05:00-10:00 and holds stale/dirty/missing output
+  │       ├─ tools/cron/blinkit_batch_guard.sh launches VPS+KVM1 fallback if Mac is unreachable
   │       └─ VPS ingest with BLINKIT_REQUIRE_AUTH_DROP=1 → build/review/deliver
   │          └─ main workbook + not-listed workbook; immediate idempotent direct not-listed WhatsApp only after quality OK
   └─ tools/cron/deadline_sweep.sh 10:00 — predict chain runtime (durations.jsonl p90),

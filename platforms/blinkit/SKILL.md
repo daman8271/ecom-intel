@@ -1,6 +1,6 @@
 # SKILL: scrape Blinkit (PROVEN)
 
-How the Blinkit scraper works. Status: **working in production via the Mac Pro residential collector**. An authenticated Blinkit session is required for stock correctness.
+How the Blinkit scraper works. Status: **working in production via the Mac Pro residential collector**, with a strict authenticated VPS+KVM1 shard fallback when the Mac is unavailable. An authenticated Blinkit session is required for stock correctness.
 
 ## 2026-06-05 fix — default-store contamination (0537fbf)
 The scrape is now **gated on VERIFIED store re-resolution**: the active store (read from
@@ -37,7 +37,7 @@ BLINKIT_AUTH_STATE_FILE=/path/to/blinkit-auth-state.json
 Current auth state locations:
 
 - Mac daily collector: `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`
-- VPS emergency/manual shards: `/opt/ecom-intel/secrets/blinkit-auth-state.json`
+- VPS emergency/manual/fallback shards: `/opt/ecom-intel/secrets/blinkit-auth-state.json`
 
 The scraper hydrates the Blinkit session before pincode work by setting
 `localStorage.auth`, `localStorage.deviceId`, and cookies `gr_1_accessToken` /
@@ -118,6 +118,14 @@ dry-run quality-monitor output until 10:45 IST. Cron starts the watcher at 05:00
 IST and 06:25 IST, the read-only quality monitor polls every 15 minutes from 05:00-10:59 IST,
 and the main/not-listed WhatsApp retry helpers poll every 15 minutes from
 06:00-12:59 IST.
+
+If the Mac Pro is unreachable during the store-open guard window,
+`tools/cron/blinkit_batch_guard.sh` launches
+`tools/cron/blinkit_vps_kvm_fallback.sh`. The fallback prepares KVM1 with the
+current Blinkit scraper and auth state, runs authenticated shards across VPS+KVM1,
+merges them on the VPS, and calls `platforms/blinkit/ingest.sh --deliver`. It does
+not bypass any production gate: the merged result still must pass auth, store,
+OOS/PDP, price, review, workbook, not-listed, batch, and WhatsApp checks.
 
 ## The trick
 Blinkit picks a dark store from your authenticated delivery session and
