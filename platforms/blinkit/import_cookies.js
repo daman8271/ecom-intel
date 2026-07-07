@@ -15,6 +15,29 @@ function cookieValue(cookies, name) {
   return row ? String(row.value).trim() : '';
 }
 
+function sameSite(value) {
+  const v = String(value || '').trim().toLowerCase();
+  if (v === 'lax') return 'Lax';
+  if (v === 'strict') return 'Strict';
+  if (v === 'none' || v === 'no_restriction') return 'None';
+  return undefined;
+}
+
+function normalizeCookie(c) {
+  const out = {
+    name: String(c.name),
+    value: String(c.value),
+    domain: c.domain || (String(c.name).startsWith('_') ? '.blinkit.com' : 'blinkit.com'),
+    path: c.path || '/',
+  };
+  if (typeof c.expirationDate === 'number' && Number.isFinite(c.expirationDate)) out.expires = Math.floor(c.expirationDate);
+  if (c.httpOnly != null) out.httpOnly = Boolean(c.httpOnly);
+  if (c.secure != null) out.secure = Boolean(c.secure);
+  const ss = sameSite(c.sameSite);
+  if (ss) out.sameSite = ss;
+  return out;
+}
+
 let cookies;
 try {
   cookies = JSON.parse(readInput());
@@ -34,9 +57,15 @@ if (!accessToken || !deviceId) {
   process.exit(3);
 }
 
+const keepNames = new Set(['gr_1_accessToken', 'gr_1_deviceId', '__cf_bm', '_cfuvid']);
+const sessionCookies = cookies
+  .filter((c) => c && keepNames.has(c.name) && String(c.value || '').trim())
+  .map(normalizeCookie);
+
 const out = {
   accessToken,
   deviceId,
+  cookies: sessionCookies,
   updatedAt: new Date().toISOString(),
   source: 'cookie-export',
 };
@@ -54,4 +83,5 @@ console.log(JSON.stringify({
   output: outputPath,
   hasAccessToken: true,
   hasDeviceId: true,
+  cookies: sessionCookies.map((c) => c.name),
 }, null, 2));

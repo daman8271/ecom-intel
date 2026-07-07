@@ -29,7 +29,8 @@ const BLINKIT_AUTH = (() => {
   let accessToken = rawToken;
   try { accessToken = decodeURIComponent(rawToken); } catch (_) { /* keep raw */ }
   const deviceId = process.env.BLINKIT_DEVICE_ID || process.env.BLINKIT_AUTH_DEVICE_ID || fileAuth.deviceId || '';
-  return { accessToken, deviceId };
+  const cookies = Array.isArray(fileAuth.cookies) ? fileAuth.cookies : [];
+  return { accessToken, deviceId, cookies };
 })();
 const BLINKIT_REQUIRE_AUTH = process.env.BLINKIT_REQUIRE_AUTH !== '0';
 // NOTE: keep this LOW (2). Blinkit rate-limits dark-store geocode/resolution per
@@ -836,6 +837,21 @@ async function scrapeOne(browser, rec) {
       domain: 'blinkit.com',
       path: '/',
     });
+    for (const c of BLINKIT_AUTH.cookies || []) {
+      if (!c || !c.name || !c.value) continue;
+      if (['gr_1_lat', 'gr_1_lon', 'gr_1_locality', 'gr_1_landmark', 'gr_1_accessToken', 'gr_1_deviceId'].includes(c.name)) continue;
+      if (c.expires && Number(c.expires) <= Math.floor(Date.now() / 1000)) continue;
+      cookies.push({
+        name: c.name,
+        value: String(c.value),
+        domain: c.domain || (String(c.name).startsWith('_') ? '.blinkit.com' : 'blinkit.com'),
+        path: c.path || '/',
+        ...(c.expires ? { expires: c.expires } : {}),
+        ...(c.httpOnly != null ? { httpOnly: Boolean(c.httpOnly) } : {}),
+        ...(c.secure != null ? { secure: Boolean(c.secure) } : {}),
+        ...(c.sameSite ? { sameSite: c.sameSite } : {}),
+      });
+    }
     await ctx.addCookies(cookies);
   }
   const page = await ctx.newPage();
