@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "pincodes_total": 1,
+    "pincodes_with_jivo": 0,
+    "unique_skus": 0,
+    "total_rows": 0,
+    "skus_with_price_variance": 0,
+    "verdict": "NO PRICE VARIANCE DETECTED in captured pincodes",
+    "source": "BigBasket logged-in browser pincode",
+    "queries": [
+      "jivo"
+    ],
+    "session_ok": true,
+    "member": true,
+    "pricing_mode": "member",
+    "member_id": 107517719,
+    "member_email": "",
+    "member_is_bbstar": false,
+    "wall_s": 21,
+    "captured_at": "2026-07-07T21:59:00.252Z",
+    "pincodes_target": 22,
+    "pincode_pull_complete": false,
+    "min_pincodes_required": 1,
+    "coverage_ok": true
+  },
+  "perPin": [
+    {
+      "city": "Delhi",
+      "pincode": "110006",
+      "locality": "Hauz Qazi",
+      "tier": 1,
+      "store_id": "20499,23973",
+      "store_name": "BigBasket",
+      "set_status": "ok",
+      "fetch_ok": true,
+      "serving_sa": "20499,23973",
+      "rows": [],
+      "requested_city": "Delhi",
+      "resolved_city": "Delhi",
+      "resolved_pincode": 110006,
+      "requested_locality": "Hauz Qazi",
+      "resolved_locality": "Old Delhi",
+      "entry_context": "bbnow",
+      "entry_context_id": "10"
+    }
+  ],
+  "allRows": []
+}

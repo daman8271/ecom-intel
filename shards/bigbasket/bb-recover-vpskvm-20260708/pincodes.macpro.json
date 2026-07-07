@@ -1,0 +1,812 @@
+[
+  {
+    "city": "Chandigarh",
+    "pincode": "160021",
+    "locality": "Chandigarh",
+    "lat": 30.724,
+    "lon": 76.7754,
+    "tier": 2,
+    "pricematch": false
+  },
+  {
+    "city": "Chandigarh",
+    "pincode": "160035",
+    "locality": "Chandigarh",
+    "lat": 30.7254,
+    "lon": 76.7592,
+    "tier": 2,
+    "pricematch": false
+  },
+  {
+    "city": "Chandigarh",
+    "pincode": "160043",
+    "locality": "Chandigarh",
+    "lat": 30.708,
+    "lon": 76.7621,
+    "tier": 2,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110004",
+    "locality": "Rashtrapati Bhawan",
+    "lat": 28.6455,
+    "lon": 77.205,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110017",
+    "locality": "Distt. Court Complex, Saket",
+    "lat": 28.5189,
+    "lon": 77.2131,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110018",
+    "locality": "Ashok Nagar",
+    "lat": 28.6396,
+    "lon": 77.0884,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110021",
+    "locality": "Anand Niketan",
+    "lat": 28.5818,
+    "lon": 77.1793,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110024",
+    "locality": "Amar Colony",
+    "lat": 28.5724,
+    "lon": 77.2365,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110044",
+    "locality": "Badarpur",
+    "lat": 28.5027,
+    "lon": 77.3084,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110048",
+    "locality": "Greater Kailash",
+    "lat": 28.5589,
+    "lon": 77.2531,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110051",
+    "locality": "Azad Nagar",
+    "lat": 28.6292,
+    "lon": 77.298,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110065",
+    "locality": "East Of Kailash Phase-I",
+    "lat": 28.5619,
+    "lon": 77.2553,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110092",
+    "locality": "Anand Vihar",
+    "lat": 28.6266,
+    "lon": 77.2794,
+    "tier": 1,
+    "pricematch": true
+  },
+  {
+    "city": "Faridabad",
+    "pincode": "121011",
+    "locality": "Gurukul Indraprashtha",
+    "lat": 28.3759,
+    "lon": 77.3185,
+    "tier": 2,
+    "pricematch": false
+  },
+  {
+    "city": "Ghaziabad",
+    "pincode": "201005",
+    "locality": "Pasonda",
+    "lat": 28.6713,
+    "lon": 77.3718,
+    "tier": 2,
+    "pricematch": false
+  },
+  {
+    "city": "Ghaziabad",
+    "pincode": "201009",
+    "locality": "Arya Nagar",
+    "lat": 28.6472,
+    "lon": 77.4282,
+    "tier": 2,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700001",
+    "locality": "Council House street",
+    "lat": 22.5553,
+    "lon": 88.3558,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700015",
+    "locality": "Sales Tax building",
+    "lat": 22.55,
+    "lon": 88.3833,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700019",
+    "locality": "Ballygunge",
+    "lat": 22.529,
+    "lon": 88.368,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700040",
+    "locality": "Netaji Nagar",
+    "lat": 22.5333,
+    "lon": 88.3917,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400007",
+    "locality": "Grant Road",
+    "lat": 18.9636,
+    "lon": 72.8193,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400010",
+    "locality": "Mazgaon",
+    "lat": 18.9681,
+    "lon": 72.845,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400011",
+    "locality": "Jacob Circle",
+    "lat": 18.9833,
+    "lon": 72.8333,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400013",
+    "locality": "Delisle Road",
+    "lat": 19.0073,
+    "lon": 72.8421,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400026",
+    "locality": "Cumballa Hill",
+    "lat": 18.9667,
+    "lon": 72.8,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400030",
+    "locality": "PMG's Off",
+    "lat": 19.0031,
+    "lon": 72.8456,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400033",
+    "locality": "Hutatma Chowk",
+    "lat": 18.9896,
+    "lon": 72.8411,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400041",
+    "locality": "Poonam Nagar - Jogeshwari",
+    "lat": 19.1429,
+    "lon": 72.8552,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Noida",
+    "pincode": "201310",
+    "locality": "Alpha Greater Noida",
+    "lat": 28.4793,
+    "lon": 77.5734,
+    "tier": 2,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "410506",
+    "locality": "Adhale Bk",
+    "lat": 18.735,
+    "lon": 73.6756,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411004",
+    "locality": "A.R. shala",
+    "lat": 18.5148,
+    "lon": 73.8358,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411005",
+    "locality": "Congress House road",
+    "lat": 18.5247,
+    "lon": 73.8471,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411028",
+    "locality": "Hadapsar",
+    "lat": 18.5167,
+    "lon": 73.9167,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411035",
+    "locality": "Akurdi",
+    "lat": 18.6532,
+    "lon": 73.7896,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411036",
+    "locality": "Mundhva",
+    "lat": 18.5348,
+    "lon": 73.9306,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411045",
+    "locality": "Baner Gaon",
+    "lat": 18.5586,
+    "lon": 73.7794,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "380006",
+    "locality": "Ellisbridge",
+    "lat": 23.02155,
+    "lon": 72.56292,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "380008",
+    "locality": "Daxini Society",
+    "lat": 22.99713,
+    "lon": 72.60821,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "380019",
+    "locality": "Railway Colony (Ahmedabad)",
+    "lat": 23.10371,
+    "lon": 72.57027,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "380024",
+    "locality": "Asarwa Ext South",
+    "lat": 23.03314,
+    "lon": 72.61842,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382021",
+    "locality": "(Gandhinagar) Sector 19",
+    "lat": 23.22964,
+    "lon": 72.6609,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382028",
+    "locality": "(Gandhinagar) Sector 28",
+    "lat": 23.248,
+    "lon": 72.65934,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382042",
+    "locality": "Alampur",
+    "lat": 23.25131,
+    "lon": 72.70839,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382110",
+    "locality": "Sanand",
+    "lat": 22.98725,
+    "lon": 72.33585,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382427",
+    "locality": "Jetalpur",
+    "lat": 22.90403,
+    "lon": 72.58723,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382430",
+    "locality": "Bakrol",
+    "lat": 23.02724,
+    "lon": 72.7169,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382475",
+    "locality": "Sardarnagar",
+    "lat": 23.08313,
+    "lon": 72.62422,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "382610",
+    "locality": "Pethapur",
+    "lat": 23.29812,
+    "lon": 72.67,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600006",
+    "locality": "Shastri Bhavan",
+    "lat": 13.06294,
+    "lon": 80.24912,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600011",
+    "locality": "Perambur",
+    "lat": 13.11012,
+    "lon": 80.24376,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600013",
+    "locality": "Rayapuram",
+    "lat": 12.85968,
+    "lon": 80.11687,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600015",
+    "locality": "Guindy North",
+    "lat": 13.02137,
+    "lon": 80.22142,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600030",
+    "locality": "Aminjikarai",
+    "lat": 13.07724,
+    "lon": 80.228,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600031",
+    "locality": "Chetput",
+    "lat": 12.95825,
+    "lon": 80.18677,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600037",
+    "locality": "Mogappair",
+    "lat": 13.08275,
+    "lon": 80.17151,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600038",
+    "locality": "Icf Colony",
+    "lat": 13.10043,
+    "lon": 80.20873,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600062",
+    "locality": "Vellanur",
+    "lat": 13.13931,
+    "lon": 80.12574,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600072",
+    "locality": "Kolappancheri",
+    "lat": 13.1171,
+    "lon": 80.06684,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600074",
+    "locality": "Polichalur",
+    "lat": 12.97677,
+    "lon": 80.13776,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600077",
+    "locality": "Ayapakkam",
+    "lat": 13.07067,
+    "lon": 80.12688,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600118",
+    "locality": "Kodungaiyur",
+    "lat": 13.12555,
+    "lon": 80.24568,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600120",
+    "locality": "Vallur",
+    "lat": 13.25764,
+    "lon": 80.2819,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600122",
+    "locality": "Mangadu",
+    "lat": 13.01441,
+    "lon": 80.1325,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600126",
+    "locality": "Mappedu",
+    "lat": 12.90136,
+    "lon": 80.16031,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500007",
+    "locality": "Tarnaka",
+    "lat": 17.41775,
+    "lon": 78.53041,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500011",
+    "locality": "Bowenpally",
+    "lat": 17.46906,
+    "lon": 78.47583,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500013",
+    "locality": "Hyderabad Public School",
+    "lat": 17.39492,
+    "lon": 78.52695,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500014",
+    "locality": "Hakimpet",
+    "lat": 17.54389,
+    "lon": 78.47182,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500048",
+    "locality": "Hyderguda",
+    "lat": 17.3744,
+    "lon": 78.41666,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500049",
+    "locality": "Miyapur",
+    "lat": 17.49887,
+    "lon": 78.35722,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500052",
+    "locality": "Gaganpahad",
+    "lat": 17.34309,
+    "lon": 78.42585,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500054",
+    "locality": "HMT Township",
+    "lat": 17.56147,
+    "lon": 78.22147,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500074",
+    "locality": "L B Nagar",
+    "lat": 17.34581,
+    "lon": 78.55224,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500075",
+    "locality": "Kokapet",
+    "lat": 17.39043,
+    "lon": 78.32964,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500076",
+    "locality": "Mallapur",
+    "lat": 17.43874,
+    "lon": 78.56145,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500079",
+    "locality": "Vaishalinagar",
+    "lat": 17.33659,
+    "lon": 78.5349,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "501506",
+    "locality": "Gungal",
+    "lat": 17.20536,
+    "lon": 78.65408,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "502032",
+    "locality": "Mig Colony",
+    "lat": 17.50807,
+    "lon": 78.30127,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700002",
+    "locality": "Cossipore H.O",
+    "lat": 22.62045,
+    "lon": 88.37888,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700005",
+    "locality": "Ahritola",
+    "lat": 22.61888,
+    "lon": 88.39966,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700083",
+    "locality": "Basudebpur",
+    "lat": 22.66729,
+    "lon": 88.39426,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700091",
+    "locality": "Temporary P.O. (W.B.B.S.E)",
+    "lat": 22.57688,
+    "lon": 88.43003,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700096",
+    "locality": "Brahmapur",
+    "lat": 22.46019,
+    "lon": 88.36551,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700100",
+    "locality": "Vip Nagar",
+    "lat": 22.52493,
+    "lon": 88.4041,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700120",
+    "locality": "Barrackpore Govt.Housing",
+    "lat": 22.75814,
+    "lon": 88.36993,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700124",
+    "locality": "Barasat Bazar",
+    "lat": 22.71599,
+    "lon": 88.49196,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700126",
+    "locality": "Jagannathpur",
+    "lat": 22.71902,
+    "lon": 88.45839,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700129",
+    "locality": "Madhyamgram",
+    "lat": 22.6983,
+    "lon": 88.46562,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411033",
+    "locality": "Thergaon",
+    "lat": 18.62426,
+    "lon": 73.77272,
+    "tier": 1,
+    "pricematch": false
+  },
+  {
+    "city": "Pune",
+    "pincode": "411067",
+    "locality": "Aundh (Pune)",
+    "lat": 18.5634,
+    "lon": 73.82151,
+    "tier": 1,
+    "pricematch": false
+  }
+]
