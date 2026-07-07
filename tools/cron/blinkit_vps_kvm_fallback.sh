@@ -19,6 +19,7 @@ NOT_LISTED="$DIR/output/Jivo-Blinkit-Not-Listed-Pincodes-${TODAY}.xlsx"
 SOURCE_CONFIG="$DIR/platforms/blinkit/pincodes.daily.json"
 AUTH_FILE="$DIR/secrets/blinkit-auth-state.json"
 SHARD_TIMEOUT="${BLINKIT_FALLBACK_SHARD_TIMEOUT:-7200}"
+EFFECTIVE_CONCURRENCY="${BLINKIT_FALLBACK_CONCURRENCY:-2}"
 mkdir -p "$DIR/logs" "$DIR/shards/runs"
 
 log() {
@@ -106,6 +107,34 @@ raise SystemExit(1)
 PY" >>"$LOG_FILE" 2>&1
 }
 
+local_busy_with_other_browser_work() {
+  python3 - <<'PY' >>"$LOG_FILE" 2>&1
+import os
+busy = []
+for pid in filter(str.isdigit, os.listdir('/proc')):
+    try:
+        with open(f'/proc/{pid}/cmdline', 'rb') as f:
+            cmd = f.read().replace(b'\0', b' ').decode('utf-8', 'ignore')
+    except OSError:
+        continue
+    low = cmd.lower()
+    if 'blinkit' in low:
+        continue
+    if any(x in low for x in [
+        'bigbasket',
+        'scrape_pincode_browser.js',
+        'platforms/flipkart',
+        'platforms/zepto',
+        'run_platform_shard.sh',
+    ]):
+        busy.append(f'{pid} {cmd[:180]}')
+if busy:
+    print('\n'.join(busy[:20]))
+    raise SystemExit(0)
+raise SystemExit(1)
+PY
+}
+
 run_local_shard() {
   local total="$1" index="$2" role="$3"
   log "local shard start index=${index}/${total} role=$role run_id=$RUN_ID"
@@ -116,7 +145,7 @@ run_local_shard() {
     BLINKIT_OOS_PROBE=1 \
     BLINKIT_PDP_OOS_PROBE=1 \
     BLINKIT_PDP_PRICE_PROBE=1 \
-    CONCURRENCY="${BLINKIT_FALLBACK_CONCURRENCY:-2}" \
+    CONCURRENCY="$EFFECTIVE_CONCURRENCY" \
     timeout --foreground -k 60 "${SHARD_TIMEOUT}s" \
       "$DIR/tools/shards/run_platform_shard.sh" blinkit "$SOURCE_CONFIG" "$total" "$index" "$RUN_ID" \
       >>"$LOG_FILE" 2>&1
@@ -126,7 +155,7 @@ run_kvm1_shard() {
   local total="$1" index="$2"
   log "KVM1 shard start index=${index}/${total} run_id=$RUN_ID"
   timeout --foreground -k 60 "${SHARD_TIMEOUT}s" ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 \
-    "cd /opt/ecom-intel && env SHARD_ROLE=kvm1 SYNC_DEST='vps:/opt/ecom-intel/shards/runs' BLINKIT_AUTH_STATE_FILE=/opt/ecom-intel/secrets/blinkit-auth-state.json BLINKIT_REQUIRE_AUTH=1 BLINKIT_OOS_PROBE=1 BLINKIT_PDP_OOS_PROBE=1 BLINKIT_PDP_PRICE_PROBE=1 CONCURRENCY='${BLINKIT_FALLBACK_CONCURRENCY:-2}' ./tools/shards/run_platform_shard.sh blinkit platforms/blinkit/pincodes.daily.json '$total' '$index' '$RUN_ID'" \
+    "cd /opt/ecom-intel && env SHARD_ROLE=kvm1 SYNC_DEST='vps:/opt/ecom-intel/shards/runs' BLINKIT_AUTH_STATE_FILE=/opt/ecom-intel/secrets/blinkit-auth-state.json BLINKIT_REQUIRE_AUTH=1 BLINKIT_OOS_PROBE=1 BLINKIT_PDP_OOS_PROBE=1 BLINKIT_PDP_PRICE_PROBE=1 CONCURRENCY='$EFFECTIVE_CONCURRENCY' ./tools/shards/run_platform_shard.sh blinkit platforms/blinkit/pincodes.daily.json '$total' '$index' '$RUN_ID'" \
     >>"$LOG_FILE" 2>&1
 }
 
@@ -206,12 +235,32 @@ fi
 
 TOTAL=2
 KVM_OK=0
-if kvm1_busy_with_other_browser_work; then
+START_LOCAL=1
+START_REMOTE=0
+LOCAL_BUSY=0
+KVM_BUSY=0
+local_busy_with_other_browser_work && LOCAL_BUSY=1
+kvm1_busy_with_other_browser_work && KVM_BUSY=1
+
+if [ "$LOCAL_BUSY" -eq 0 ] && [ "$KVM_BUSY" -eq 0 ] && prepare_kvm1; then
+  KVM_OK=1
+  START_REMOTE=1
+elif [ "$LOCAL_BUSY" -eq 1 ] && [ "$KVM_BUSY" -eq 0 ] && prepare_kvm1; then
+  TOTAL=1
+  KVM_OK=1
+  START_LOCAL=0
+  START_REMOTE=1
+  log "VPS has active non-Blinkit browser work; using one full authenticated KVM1 shard to avoid local contention"
+  tg "[WARN] Blinkit fallback: VPS is busy with other browser work, so ${TODAY} will run as one authenticated KVM1 shard to avoid quality risk."
+elif [ "$KVM_BUSY" -eq 1 ] && [ "$LOCAL_BUSY" -eq 0 ]; then
   TOTAL=1
   log "KVM1 has active non-Blinkit browser work; using one full authenticated VPS shard to avoid contention"
   tg "[WARN] Blinkit fallback: KVM1 is busy with other browser work, so ${TODAY} will run as one authenticated VPS shard to avoid quality risk."
-elif prepare_kvm1; then
-  KVM_OK=1
+elif [ "$LOCAL_BUSY" -eq 1 ] && [ "$KVM_BUSY" -eq 1 ]; then
+  TOTAL=1
+  EFFECTIVE_CONCURRENCY="${BLINKIT_FALLBACK_BUSY_CONCURRENCY:-1}"
+  log "both VPS and KVM1 have active non-Blinkit browser work; using one low-concurrency authenticated VPS shard"
+  tg "[WARN] Blinkit fallback: both VPS and KVM1 are busy with other browser work, so ${TODAY} will run as one low-concurrency authenticated VPS shard."
 else
   TOTAL=1
   log "KVM1 preparation failed; falling back to one full authenticated VPS shard"
@@ -219,24 +268,34 @@ else
 fi
 
 log "fallback run start run_id=$RUN_ID total_shards=$TOTAL"
-if [ "$KVM_OK" -eq 1 ]; then
+if [ "$START_LOCAL" -eq 1 ] && [ "$START_REMOTE" -eq 1 ]; then
   tg "[START] Blinkit fallback started for ${TODAY}: Mac unavailable, running authenticated 2-shard scrape on VPS + KVM1."
+elif [ "$START_REMOTE" -eq 1 ]; then
+  tg "[START] Blinkit fallback started for ${TODAY}: Mac unavailable, running authenticated scrape on KVM1 only."
 else
   tg "[START] Blinkit fallback started for ${TODAY}: Mac unavailable, running authenticated scrape on VPS only."
 fi
 
 LOCAL_RC=0
 REMOTE_RC=0
-run_local_shard "$TOTAL" 0 "vps" &
-LOCAL_PID=$!
-if [ "$KVM_OK" -eq 1 ]; then
-  run_kvm1_shard "$TOTAL" 1 &
+LOCAL_PID=""
+REMOTE_PID=""
+if [ "$START_LOCAL" -eq 1 ]; then
+  run_local_shard "$TOTAL" 0 "vps" &
+  LOCAL_PID=$!
+fi
+if [ "$START_REMOTE" -eq 1 ]; then
+  if [ "$START_LOCAL" -eq 1 ]; then
+    run_kvm1_shard "$TOTAL" 1 &
+  else
+    run_kvm1_shard "$TOTAL" 0 &
+  fi
   REMOTE_PID=$!
-else
-  REMOTE_PID=""
 fi
 
-wait "$LOCAL_PID" || LOCAL_RC=$?
+if [ -n "$LOCAL_PID" ]; then
+  wait "$LOCAL_PID" || LOCAL_RC=$?
+fi
 if [ -n "$REMOTE_PID" ]; then
   wait "$REMOTE_PID" || REMOTE_RC=$?
 fi
