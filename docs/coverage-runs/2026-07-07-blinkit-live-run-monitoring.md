@@ -193,3 +193,42 @@ No Blinkit workbook should be delivered until the final Mac drop is ingested and
 quality monitor accepts the main workbook. If the final drop misses the cutoff or
 fails quality, the 10:00 batch must exclude Blinkit and the not-listed WhatsApp must
 remain unsent.
+
+## 10:35 Completion
+
+The late Mac run completed at `10:35 IST` and dropped
+`blinkit-20260707-095105.json` to VPS ingest. Final scrape summary:
+
+- `902/902` pincodes processed.
+- `876` resolved.
+- `902` auth-verified pincodes.
+- `481` pincodes with Jivo rows.
+- `1977` rows.
+- `0` blocked.
+- `0` unverified OOS.
+- `0` stock-unverified rows.
+- `216` OOS rows flipped live by probes.
+- `354` PDP price probes, `2` PDP price updates.
+
+VPS ingest accepted the drop, built `Jivo-Blinkit-Live-Report-2026-07-07.xlsx`
+and `Jivo-Blinkit-Not-Listed-Pincodes-2026-07-07.xlsx`, and the quality monitor
+passed with no issues. The key screenshot canaries were green:
+
+- `110094 / 407561` Pomace 5 L: live, sale `1766`, stock proof
+  `neighbor-110090`, price source `pdp_price_probe`.
+- `110012 / 407851` Canola 1 L: live, sale `239`, PDP price checked.
+- `110012 / 406593` Canola 5 L: live, sale `1193`, PDP price checked.
+
+The 10:00 batch had already been released without Blinkit (`8` reports sent,
+`2` missing), so no stale or partial Blinkit workbook was sent in the batch.
+After quality passed, the late corrected main Blinkit workbook was sent to the
+Ecom team WhatsApp group:
+
+- Header message id: `3EB07A1EAF4BE43C9AB1EE`
+- Main workbook document id: `3EB0B8660A2BA960CC855F`
+
+The standalone not-listed workbook was sent separately to
+`917703818227@s.whatsapp.net`:
+
+- Header message id: `3EB03CAD5D61A67203FEFE`
+- Not-listed workbook document id: `3EB05E1F0ED6C4A70BED98`
