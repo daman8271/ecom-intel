@@ -126,6 +126,9 @@ current Blinkit scraper and auth state, runs authenticated shards across VPS+KVM
 merges them on the VPS, and calls `platforms/blinkit/ingest.sh --deliver`. It does
 not bypass any production gate: the merged result still must pass auth, store,
 OOS/PDP, price, review, workbook, not-listed, batch, and WhatsApp checks.
+Use `node platforms/blinkit/import_cookies.js <cookie-export.json>` to refresh the
+VPS auth state from a Cookie-Editor export; it extracts only `gr_1_accessToken` and
+`gr_1_deviceId` so pincode location remains controlled by the scraper config.
 
 ## The trick
 Blinkit picks a dark store from your authenticated delivery session and
