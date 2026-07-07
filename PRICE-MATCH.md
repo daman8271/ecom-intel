@@ -25,6 +25,17 @@ The e-com dept maintains a master price sheet (96 SKUs) with three **agreed pric
 The calendar is a default, not a law — owner can shift regimes (e.g. SVD on a Monday); a
 `regime.json` override file captures announcements.
 
+> **Agreed-price updates (SVD/BAU are refreshed here, not one-off):** these live in
+> `tools/pricematch/master_v2.json`, the single source of truth the daily build reads
+> (`pricematch_core.py`). When the e-com team sends a new Amazon price pass
+> (`amazon_price_updated` format), overwrite **only** `svd`/`bau` for the listed ASINs in
+> `master_v2.json` — the next daily run picks them up automatically, no code change.
+> Leave `art`/`asp`/`mrp` alone unless told. If you ever re-run `extend_map.py` (full
+> master rebuild from a team sheet), feed it the *latest* sheet or it will clobber these.
+> _Last refresh: **2026-07-07** — SVD/BAU for 18 Amazon SKUs. Provenance:_
+> `tools/pricematch/amazon_svd_bau_update_2026-07-07.xlsx`. _Prior backup:_
+> `master_v2.json.bak-2026-07-07`.
+
 **The deliverable:** every run, for every SKU × platform — does the live price match the
 agreed price for *today's regime*? Below agreed = **red, −loss** (we fund that gap → MAP
 violation, e.g. gave Amazon ₹249, it lists ₹239). Above = **blue, +diff**. Plus the
