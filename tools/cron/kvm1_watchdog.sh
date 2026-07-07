@@ -91,9 +91,26 @@ kvm1_alive(){ timeout 20 $KSSH true >/dev/null 2>&1; }
 trio_running(){ # rc 0 = the trio flock is HELD on KVM1 (running)
   timeout 20 $KSSH "flock -n /opt/ecom-intel/logs/.trio.lock -c true 2>/dev/null && exit 1 || exit 0" 2>/dev/null; }
 trio_done(){ timeout 20 $KSSH "[ -f /opt/ecom-intel/logs/trio-done-$TODAY ]" 2>/dev/null; }
+kvm_blinkit_active(){
+  timeout 20 $KSSH "pgrep -f 'run_platform_shard.sh blinkit' >/dev/null 2>&1 && exit 0
+for p in /proc/[0-9]*/cwd; do
+  cwd=\$(readlink \"\$p\" 2>/dev/null || true)
+  case \"\$cwd\" in */platforms/blinkit|*/work/blinkit) exit 0 ;; esac
+done
+exit 1" 2>/dev/null; }
 
 ALIVE=0; kvm1_alive && ALIVE=1
-if [ "$ALIVE" = "1" ]; then
+BLINKIT_BUSY=0
+if [ "$ALIVE" = "1" ] && kvm_blinkit_active; then
+  if [ "$NOW" -lt "$(date -d "$TODAY 08:40" +%s)" ]; then
+    LOG "KVM1 is busy with priority Blinkit fallback — waiting before trio rescue"
+    exit 0
+  fi
+  BLINKIT_BUSY=1
+  LOG "KVM1 is still busy with priority Blinkit fallback — local rescue for$NEEDY"
+fi
+
+if [ "$ALIVE" = "1" ] && [ "$BLINKIT_BUSY" != "1" ]; then
   if trio_running; then
     if [ "$NOW" -ge "$(date -d "$TODAY 09:00" +%s)" ]; then
       LOG "trio still running on KVM1 at $(date +%H:%M) — overrun"
@@ -119,8 +136,12 @@ if [ "$ALIVE" = "1" ]; then
     LOG "trio done on KVM1 but$NEEDY still missing (scrape/push/ingest failure) — local rescue"
   fi
 else
-  LOG "KVM1 UNREACHABLE — local rescue"
-  tg "🛑 KVM1 is unreachable at $(date +%H:%M) IST — re-running$NEEDY on the VPS (fallback chain)."
+  if [ "$BLINKIT_BUSY" = "1" ]; then
+    tg "[WARN] KVM1 is busy with priority Blinkit fallback at $(date +%H:%M) IST — re-running$NEEDY on the VPS instead."
+  else
+    LOG "KVM1 UNREACHABLE — local rescue"
+    tg "🛑 KVM1 is unreachable at $(date +%H:%M) IST — re-running$NEEDY on the VPS (fallback chain)."
+  fi
 fi
 
 # ---- LOCAL RESCUE (serial, under the sweep-chain lock) ------------------------

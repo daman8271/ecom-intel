@@ -37,6 +37,26 @@ tg(){ ( set +e
     --data-urlencode "chat_id=${CH}" \
     --data-urlencode "text=$1" >/dev/null ) || true; }
 
+# Blinkit has priority on this box. Its fallback shard may still be running when
+# the 07:30 Flipkart/Zepto trio launch fires; do not contend for Playwright.
+blinkit_active(){
+  pgrep -f 'run_platform_shard.sh blinkit' >/dev/null 2>&1 && return 0
+  local cwd
+  for p in /proc/[0-9]*/cwd; do
+    cwd="$(readlink "$p" 2>/dev/null || true)"
+    case "$cwd" in
+      */platforms/blinkit|*/work/blinkit) return 0 ;;
+    esac
+  done
+  return 1
+}
+
+if [ "${TRIO_ALLOW_DURING_BLINKIT:-0}" != "1" ] && blinkit_active; then
+  LOG "Blinkit fallback shard active on KVM1 — deferring Flipkart/Zepto trio"
+  tg "[WARN] KVM1 trio deferred on $DATE: Blinkit fallback shard is active and has priority. VPS watchdog will retry/rescue Flipkart/Zepto later."
+  exit 0
+fi
+
 # ---- single-flight: one trio at a time (backup cron + VPS trigger overlap) ---
 exec 9>"$ROOT/logs/.trio.lock"
 if ! flock -n 9; then LOG "another trio run holds logs/.trio.lock — exit"; exit 0; fi

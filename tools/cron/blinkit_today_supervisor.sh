@@ -32,15 +32,25 @@ main_sent="$DIR/logs/blinkit-main-wa-${TODAY}.sent"
 not_listed_sent="$DIR/logs/blinkit-not-listed-wa-${TODAY}.sent"
 
 local_worker_active() {
-  ps -eo command \
-    | grep -E 'blinkit_vps_kvm_fallback.sh|run_platform_shard.sh blinkit|node scrape.js' \
-    | grep -v grep \
-    | grep -v blinkit_today_supervisor.sh >/dev/null 2>&1
+  pgrep -f 'blinkit_vps_kvm_fallback.sh|run_platform_shard.sh blinkit' >/dev/null 2>&1 && return 0
+  local cwd
+  for p in /proc/[0-9]*/cwd; do
+    cwd="$(readlink "$p" 2>/dev/null || true)"
+    case "$cwd" in
+      */platforms/blinkit|*/work/blinkit) return 0 ;;
+    esac
+  done
+  return 1
 }
 
 kvm_worker_active() {
   ssh -o BatchMode=yes -o ConnectTimeout=8 kvm1 \
-    "ps -eo command | grep -E 'run_platform_shard.sh blinkit|node scrape.js' | grep -v grep >/dev/null" \
+    "pgrep -f 'run_platform_shard.sh blinkit' >/dev/null 2>&1 && exit 0
+for p in /proc/[0-9]*/cwd; do
+  cwd=\$(readlink \"\$p\" 2>/dev/null || true)
+  case \"\$cwd\" in */platforms/blinkit|*/work/blinkit) exit 0 ;; esac
+done
+exit 1" \
     >/dev/null 2>&1
 }
 

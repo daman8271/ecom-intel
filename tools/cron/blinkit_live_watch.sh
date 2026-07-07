@@ -62,8 +62,17 @@ fallback_status() {
   {
     echo "local fallback processes:"
     ps -eo pid,etime,command \
-      | grep -E 'blinkit_vps_kvm_fallback.sh|run_platform_shard.sh blinkit|node scrape.js' \
+      | grep -E 'blinkit_vps_kvm_fallback.sh|run_platform_shard.sh blinkit' \
       | grep -v grep || true
+    for p in /proc/[0-9]*/cwd; do
+      cwd="$(readlink "$p" 2>/dev/null || true)"
+      case "$cwd" in
+        */platforms/blinkit|*/work/blinkit)
+          pid="${p#/proc/}"; pid="${pid%/cwd}"
+          ps -p "$pid" -o pid,etime,command --no-headers 2>/dev/null || true
+          ;;
+      esac
+    done
     latest_run="$(ls -td "$DIR"/shards/runs/*blinkit-vps-kvm 2>/dev/null | head -1)"
     if [ -n "$latest_run" ]; then
       echo "latest_run=$latest_run"
@@ -77,7 +86,15 @@ fallback_status() {
   } 2>&1 | sed 's/^/[fallback] /' | tee -a "$LOG" >/dev/null
 
   ssh -o BatchMode=yes -o ConnectTimeout=8 kvm1 \
-    "ps -eo pid,etime,command | grep -E 'run_platform_shard.sh blinkit|node scrape.js' | grep -v grep || true" \
+    "ps -eo pid,etime,command | grep -E 'run_platform_shard.sh blinkit' | grep -v grep || true
+for p in /proc/[0-9]*/cwd; do
+  cwd=\$(readlink \"\$p\" 2>/dev/null || true)
+  case \"\$cwd\" in */platforms/blinkit|*/work/blinkit)
+    pid=\${p#/proc/}; pid=\${pid%/cwd}
+    ps -p \"\$pid\" -o pid,etime,command --no-headers 2>/dev/null || true
+    ;;
+  esac
+done" \
     2>&1 | sed 's/^/[kvm1] /' | tee -a "$LOG" >/dev/null
 }
 
