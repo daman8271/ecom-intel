@@ -60,6 +60,19 @@ For daily runs, cron starts `tools/cron/start_blinkit_live_watch.sh` at 05:00 IS
 and again at 06:25 IST. The starter is idempotent: if
 `blinkit-live-watch-YYYYMMDD` already exists, it does nothing.
 
+The live-run hook for tomorrow is therefore:
+
+- `05:00` and `06:25`: start the once-per-day tmux watcher.
+- `*/15 05-10`: run `blinkit_quality_monitor.sh poll` and wait if the Mac job is
+  still active.
+- `*/15 06-12`: retry the standalone not-listed WhatsApp send only after the main
+  Blinkit workbook passes quality and no sent marker exists.
+
+If the Mac scrape is still active after the stale-result cutoff, the quality monitor
+keeps returning a waiting state instead of alerting on yesterday's `result.json`.
+That prevents a slow authenticated run from being misclassified as a stale report
+while it is still producing today's drop.
+
 ## 04:00 Hotfix
 
 The first restarted run was stopped because a 5 L Pomace row picked up a 1 L
@@ -95,3 +108,21 @@ they did not match the row volume. The fix now tries both the displayed localize
 title and the base English title, then still accepts stock/price only when the PDP
 segment volume matches the row. Offline tests and the 4-pincode Bengaluru repro
 passed with `unverified_oos=0`.
+
+## 08:22 Live Checkpoint
+
+The clean full run restarted from the Mac at `2026-07-07 06:21:57 IST` with
+`auth=required`, `BLINKIT_OOS_PROBE=1`, `BLINKIT_PDP_OOS_PROBE=1`, and
+`BLINKIT_PDP_PRICE_PROBE=1`. At `08:22:49 IST`, progress was:
+
+- `570/902` pincodes touched.
+- `545` resolved.
+- `570` auth accepted.
+- `0` blocked.
+- `1526` rows.
+- `0` `stock_unverified`.
+- `0` bad low 5 L prices.
+
+The VPS quality monitor correctly waited because the 2026-07-07 workbook had not
+landed yet and the Mac process was still active. It did not send the stale
+2026-07-06 workbook.

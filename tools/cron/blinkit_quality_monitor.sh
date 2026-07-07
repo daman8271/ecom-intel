@@ -66,8 +66,13 @@ if [ ! -f "$RESULT" ]; then
   exit 0
 fi
 
+MAC_ACTIVE=0
+if mac_running; then
+  MAC_ACTIVE=1
+fi
+
 if [ ! -f "$REPORT" ]; then
-  if mac_running; then
+  if [ "$MAC_ACTIVE" = "1" ]; then
     log "report not present yet; Mac Blinkit job appears active"
   else
     log "report not present and no Mac Blinkit process detected"
@@ -75,7 +80,7 @@ if [ ! -f "$REPORT" ]; then
 fi
 
 VALIDATION_JSON="$(
-  RESULT="$RESULT" CONFIG="$CONFIG" REPORT="$REPORT" NOT_LISTED_REPORT="$NOT_LISTED_REPORT" TODAY="$TODAY" \
+  RESULT="$RESULT" CONFIG="$CONFIG" REPORT="$REPORT" NOT_LISTED_REPORT="$NOT_LISTED_REPORT" TODAY="$TODAY" MAC_ACTIVE="$MAC_ACTIVE" \
   MAX_UNVERIFIED_OOS="$MAX_UNVERIFIED_OOS" MAX_COORD_ERRORS="$MAX_COORD_ERRORS" \
   PASS="$PASS" STALE_ALERT_AFTER="$STALE_ALERT_AFTER" REPORT_ALERT_AFTER="$REPORT_ALERT_AFTER" \
   python3 - <<'PY'
@@ -86,6 +91,7 @@ config_path = os.environ["CONFIG"]
 report_path = os.environ["REPORT"]
 not_listed_report_path = os.environ.get("NOT_LISTED_REPORT") or ""
 today = os.environ["TODAY"]
+mac_active = os.environ.get("MAC_ACTIVE") == "1"
 max_unverified_oos = int(os.environ.get("MAX_UNVERIFIED_OOS") or 0)
 max_coord_errors = int(os.environ.get("MAX_COORD_ERRORS") or 0)
 monitor_pass = os.environ.get("PASS") or "poll"
@@ -158,6 +164,16 @@ if cap:
     ist_date = cap.astimezone(IST).date().isoformat()
     facts["captured_ist_date"] = ist_date
     if ist_date != today:
+        if monitor_pass == "poll" and mac_active:
+            warn("stale_result_mac_active", f"Blinkit result is still {ist_date}; Mac scrape is active, waiting for today's drop")
+            print(json.dumps({
+                "ok": True,
+                "waiting": True,
+                "issues": issues,
+                "warnings": warnings,
+                "facts": facts,
+            }, ensure_ascii=False))
+            raise SystemExit(0)
         if monitor_pass == "poll" and not after_cutoff(stale_alert_after):
             warn("stale_result_grace", f"Blinkit result is still {ist_date}; waiting until {stale_alert_after} IST for today's drop")
             print(json.dumps({
