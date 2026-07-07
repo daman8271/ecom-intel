@@ -58,6 +58,29 @@ tail -5 /Users/danny./VPS-Migration/logs/blinkit-launchd.err 2>/dev/null || true
     2>&1 | sed 's/^/[mac] /' | tee -a "$LOG" >/dev/null
 }
 
+fallback_status() {
+  {
+    echo "local fallback processes:"
+    ps -eo pid,etime,command \
+      | grep -E 'blinkit_vps_kvm_fallback.sh|run_platform_shard.sh blinkit|node scrape.js' \
+      | grep -v grep || true
+    latest_run="$(ls -td "$DIR"/shards/runs/*blinkit-vps-kvm 2>/dev/null | head -1)"
+    if [ -n "$latest_run" ]; then
+      echo "latest_run=$latest_run"
+      find "$latest_run/blinkit" -maxdepth 2 -type f \( -name 'result.json' -o -name 'merged-result.json' \) \
+        -printf '%TY-%Tm-%Td %TH:%TM:%TS %p\n' 2>/dev/null | sort || true
+    fi
+    if [ -f "$DIR/logs/blinkit-vps-kvm-fallback-${TODAY}.log" ]; then
+      echo "fallback_log_tail:"
+      tail -8 "$DIR/logs/blinkit-vps-kvm-fallback-${TODAY}.log"
+    fi
+  } 2>&1 | sed 's/^/[fallback] /' | tee -a "$LOG" >/dev/null
+
+  ssh -o BatchMode=yes -o ConnectTimeout=8 kvm1 \
+    "ps -eo pid,etime,command | grep -E 'run_platform_shard.sh blinkit|node scrape.js' | grep -v grep || true" \
+    2>&1 | sed 's/^/[kvm1] /' | tee -a "$LOG" >/dev/null
+}
+
 log "start; watching until ${TODAY} ${END_HHMM} IST"
 while [ "$(date +%s)" -le "$(end_epoch)" ]; do
   REPORT="$DIR/output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
@@ -65,6 +88,7 @@ while [ "$(date +%s)" -le "$(end_epoch)" ]; do
   [ -f "$REPORT" ] && log "main report present: $(stat -c '%y %s' "$REPORT" 2>/dev/null)" || log "main report missing"
   [ -f "$NOT_LISTED" ] && log "not-listed report present: $(stat -c '%y %s' "$NOT_LISTED" 2>/dev/null)" || log "not-listed report missing"
   mac_status
+  fallback_status
   BLINKIT_MONITOR_DRYRUN=1 "$DIR/tools/cron/blinkit_quality_monitor.sh" poll >> "$LOG" 2>&1 || true
   sleep "${BLINKIT_WATCH_INTERVAL:-300}"
 done
