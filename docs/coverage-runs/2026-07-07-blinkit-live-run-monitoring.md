@@ -131,3 +131,27 @@ The clean full run restarted from the Mac at `2026-07-07 06:21:57 IST` with
 The VPS quality monitor correctly waited because the 2026-07-07 workbook had not
 landed yet and the Mac process was still active. It did not send the stale
 2026-07-06 workbook.
+
+## 08:32 Tunnel Outage
+
+The VPS-to-Mac reverse tunnel on `127.0.0.1:22022` dropped after the last clean
+Mac progress checkpoint. Last direct progress before the outage was clean:
+
+- `612/902` pincodes touched.
+- `587` resolved.
+- `612` auth accepted.
+- `0` blocked.
+- `1526` rows.
+- `0` `stock_unverified`.
+
+The `08:45` Blinkit batch guard saw no 2026-07-07 workbook and attempted a Mac
+rerun, but the trigger failed because SSH was unreachable. Health remained failed
+at `08:50`. The VPS monitor is deliberately holding delivery and waiting for either
+a fresh Mac drop or the `10:05` missing-workbook cutoff.
+
+A small VPS emergency canary against `110012`, `110013`, `110094`, `400006`, and
+Bengaluru localized rows verified that the scraper logic still flips false OOS rows
+and keeps `unverified_oos=0`, but it also showed VPS/datacenter price/store behavior
+can differ from the Mac residential session. Therefore VPS canary output is useful
+diagnostically only; it must not replace the production Mac-auth Blinkit workbook
+unless the full drop passes the normal hard gates.
