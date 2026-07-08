@@ -1,0 +1,5293 @@
+[
+  {
+    "city": "Kochi",
+    "pincode": "680667",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "680667"
+    ],
+    "lat": 10.191981466666666,
+    "lon": 76.21044443333334
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682001"
+    ],
+    "lat": 9.9655556,
+    "lon": 76.2414167
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682002"
+    ],
+    "lat": 9.960648166666667,
+    "lon": 76.25930553333333
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682003",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682003"
+    ],
+    "lat": 9.9495556,
+    "lon": 76.2774722
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682004"
+    ],
+    "lat": 9.9345278,
+    "lon": 76.7508889
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682005"
+    ],
+    "lat": 9.9353889,
+    "lon": 76.2584167
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682006",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682006"
+    ],
+    "lat": 9.91621035,
+    "lon": 76.2754829
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682007",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682007"
+    ],
+    "lat": 9.8829844,
+    "lon": 76.28663764999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682008",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682008"
+    ],
+    "lat": 9.8550594,
+    "lon": 76.267625925
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682009",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682009"
+    ],
+    "lat": 9.9685833,
+    "lon": 76.2585278
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682010",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682010"
+    ],
+    "lat": 9.9020556,
+    "lon": 76.2998333
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682011",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682011"
+    ],
+    "lat": 9.9718611,
+    "lon": 76.2823056
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682012",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682012"
+    ],
+    "lat": 10.0015833,
+    "lon": 76.2820556
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682013",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682013"
+    ],
+    "lat": 9.9385556,
+    "lon": 76.2963333
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682015",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682015"
+    ],
+    "lat": 9.9495278,
+    "lon": 76.2924444
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682016",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682016"
+    ],
+    "lat": 9.9857778,
+    "lon": 76.2862222
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682017",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682017"
+    ],
+    "lat": 9.9957222,
+    "lon": 76.2920556
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682018",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682018"
+    ],
+    "lat": 9.9914167,
+    "lon": 76.2814167
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682019",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682019"
+    ],
+    "lat": 9.9666111,
+    "lon": 76.3179444
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682020",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682020"
+    ],
+    "lat": 9.9662222,
+    "lon": 76.2991667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682021",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682021"
+    ],
+    "lat": 10.031657766666667,
+    "lon": 76.3438212
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682022",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682022"
+    ],
+    "lat": 9.7508889,
+    "lon": 76.3675278
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682023",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682023"
+    ],
+    "lat": 10.0231111,
+    "lon": 76.2731944
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682024",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682024"
+    ],
+    "lat": 10.03062765,
+    "lon": 76.30118355
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682025",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682025"
+    ],
+    "lat": 10.0021667,
+    "lon": 76.3043889
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682026",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682026"
+    ],
+    "lat": 10.0188611,
+    "lon": 76.0234167
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682027",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682027"
+    ],
+    "lat": 10.0486031,
+    "lon": 76.26752105
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682028",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682028"
+    ],
+    "lat": 9.9966111,
+    "lon": 76.3189722
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682029",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682029"
+    ],
+    "lat": 9.939864,
+    "lon": 76.268267
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682030",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682030"
+    ],
+    "lat": 10.2264902,
+    "lon": 76.327085925
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682031",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682031"
+    ],
+    "lat": 9.982777800000001,
+    "lon": 76.27944445
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682032",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682032"
+    ],
+    "lat": 9.9842222,
+    "lon": 76.3123056
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682033",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682033"
+    ],
+    "lat": 10.0405556,
+    "lon": 76.3180556
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682034",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682034"
+    ],
+    "lat": 10.05725,
+    "lon": 76.2871111
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682035",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682035"
+    ],
+    "lat": 9.9823889,
+    "lon": 76.2693056
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682036",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682036"
+    ],
+    "lat": 9.9629444,
+    "lon": 76.2971667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682037",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682037"
+    ],
+    "lat": 10.0081667,
+    "lon": 76.34425
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682038",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682038"
+    ],
+    "lat": 9.95075,
+    "lon": 76.3334722
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682039",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682039"
+    ],
+    "lat": 10.1102222,
+    "lon": 76.3595833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682040",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682040"
+    ],
+    "lat": 9.9280278,
+    "lon": 76.32225
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682041",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682041"
+    ],
+    "lat": 10.1102222,
+    "lon": 76.3595833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682042",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682042"
+    ],
+    "lat": 9.9718611,
+    "lon": 76.2823056
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682050",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682050"
+    ],
+    "lat": 9.981636,
+    "lon": 76.299884
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682051",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682051"
+    ],
+    "lat": 9.9704,
+    "lon": 76.2991
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682052",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682052"
+    ],
+    "lat": 10.0212,
+    "lon": 76.3438
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682301",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682301"
+    ],
+    "lat": 9.929170025,
+    "lon": 76.448497925
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682302",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682302"
+    ],
+    "lat": 9.9763056,
+    "lon": 76.3851944
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682303",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682303"
+    ],
+    "lat": 9.990432433333334,
+    "lon": 76.39101570000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682304",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682304"
+    ],
+    "lat": 9.9378333,
+    "lon": 76.3233611
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682305",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682305"
+    ],
+    "lat": 9.93595645,
+    "lon": 76.3798283
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682306",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682306"
+    ],
+    "lat": 10.013617866666666,
+    "lon": 76.34197723333334
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682307",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682307"
+    ],
+    "lat": 9.838918275000001,
+    "lon": 76.42290825
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682308",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682308"
+    ],
+    "lat": 9.947380477777777,
+    "lon": 76.43439576666667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682309",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682309"
+    ],
+    "lat": 10.1102222,
+    "lon": 76.3595833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682310",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682310"
+    ],
+    "lat": 9.992787499999999,
+    "lon": 76.42884526666667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682311",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682311"
+    ],
+    "lat": 9.977309316666668,
+    "lon": 76.48094956666667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682312",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682312"
+    ],
+    "lat": 10.1813151,
+    "lon": 76.34934340000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682313",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682313"
+    ],
+    "lat": 9.868867839999998,
+    "lon": 76.44014494000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682314",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682314"
+    ],
+    "lat": 9.783111616666666,
+    "lon": 76.40181386666667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682315",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682315"
+    ],
+    "lat": 9.860538575,
+    "lon": 76.41010407499999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682316",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682316"
+    ],
+    "lat": 9.6897245,
+    "lon": 76.52017624999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682317",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682317"
+    ],
+    "lat": 9.857605,
+    "lon": 76.4169931
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682501",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682501"
+    ],
+    "lat": 10.1125278,
+    "lon": 76.2018611
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682502",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682502"
+    ],
+    "lat": 10.09425,
+    "lon": 76.2068056
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682503",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682503"
+    ],
+    "lat": 10.0192778,
+    "lon": 76.2274167
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682504",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682504"
+    ],
+    "lat": 10.0075732,
+    "lon": 76.25375149999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682505",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682505"
+    ],
+    "lat": 10.0473056,
+    "lon": 76.2175556
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682506",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682506"
+    ],
+    "lat": 10.00871,
+    "lon": 76.33269920000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682507",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682507"
+    ],
+    "lat": 9.92349715,
+    "lon": 76.25687895
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682508",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682508"
+    ],
+    "lat": 9.9933223,
+    "lon": 76.23197859999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682509",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682509"
+    ],
+    "lat": 10.06627435,
+    "lon": 76.21699885000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682511",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682511"
+    ],
+    "lat": 10.1102222,
+    "lon": 76.3595833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683101"
+    ],
+    "lat": 26.665530725,
+    "lon": 59.794463775
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683102",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683102"
+    ],
+    "lat": 9.581709199999999,
+    "lon": 76.36559525000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683104",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683104"
+    ],
+    "lat": 10.484093933333334,
+    "lon": 76.19212026666668
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683105",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683105"
+    ],
+    "lat": 10.105962233333335,
+    "lon": 76.39781986666667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683106",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683106"
+    ],
+    "lat": 10.43,
+    "lon": 76.96
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683108",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683108"
+    ],
+    "lat": 10.1078786,
+    "lon": 76.34572105000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683110",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683110"
+    ],
+    "lat": 10.05809785,
+    "lon": 76.3992279
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683111",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683111"
+    ],
+    "lat": 10.1102222,
+    "lon": 76.3595833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683112",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683112"
+    ],
+    "lat": 10.1102222,
+    "lon": 76.3595833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683501",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683501"
+    ],
+    "lat": 10.074061266666666,
+    "lon": 76.2998775
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683502",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683502"
+    ],
+    "lat": 10.71,
+    "lon": 76.54
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683503",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683503"
+    ],
+    "lat": 10.0430833,
+    "lon": 76.3285833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683511",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683511"
+    ],
+    "lat": 11.427956380000001,
+    "lon": 76.2241994
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683512",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683512"
+    ],
+    "lat": 10.1722778,
+    "lon": 76.2368056
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683513",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683513"
+    ],
+    "lat": 10.27479108,
+    "lon": 76.35995141999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683514",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683514"
+    ],
+    "lat": 10.1391111,
+    "lon": 76.1934444
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683515",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683515"
+    ],
+    "lat": 10.1729722,
+    "lon": 76.1767222
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683516",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683516"
+    ],
+    "lat": 10.185935500000001,
+    "lon": 76.201044
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683517",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683517"
+    ],
+    "lat": 10.070478900000001,
+    "lon": 76.27586065
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683518",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683518"
+    ],
+    "lat": 10.427198449999999,
+    "lon": 76.26933545
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683519",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683519"
+    ],
+    "lat": 10.47966495,
+    "lon": 76.51825595
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683520",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683520"
+    ],
+    "lat": 10.141380700000001,
+    "lon": 76.26176846666665
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683521",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683521"
+    ],
+    "lat": 10.1783611,
+    "lon": 76.2246944
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683522",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683522"
+    ],
+    "lat": 10.1628476,
+    "lon": 76.20219839999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683541",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683541"
+    ],
+    "lat": 12.833180550000002,
+    "lon": 76.498195825
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683542",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683542"
+    ],
+    "lat": 10.1154167,
+    "lon": 76.4764722
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683543",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683543"
+    ],
+    "lat": 10.97,
+    "lon": 76.59
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683544",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683544"
+    ],
+    "lat": 10.166753971428573,
+    "lon": 76.51204285714286
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683545",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683545"
+    ],
+    "lat": 13.771079633333335,
+    "lon": 76.35633539999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683546",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683546"
+    ],
+    "lat": 10.54861112,
+    "lon": 76.02754444000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683547",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683547"
+    ],
+    "lat": 12.8518111,
+    "lon": 76.41674165
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683548",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683548"
+    ],
+    "lat": 10.1154167,
+    "lon": 76.4764722
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683549",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683549"
+    ],
+    "lat": 13.0517,
+    "lon": 76.37195
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683550",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683550"
+    ],
+    "lat": 10.31,
+    "lon": 76.98
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683556",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683556"
+    ],
+    "lat": 10.129104175,
+    "lon": 76.616872225
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683561",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683561"
+    ],
+    "lat": 10.108330599999999,
+    "lon": 76.37929545
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683562",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683562"
+    ],
+    "lat": 10.27763785,
+    "lon": 76.464733
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683563",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683563"
+    ],
+    "lat": 10.1102222,
+    "lon": 76.3595833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683565",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683565"
+    ],
+    "lat": 10.0340334,
+    "lon": 76.40056287499999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683571",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683571"
+    ],
+    "lat": 10.1258889,
+    "lon": 76.3854444
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683572",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683572"
+    ],
+    "lat": 13.182767457142859,
+    "lon": 76.40616824285713
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683573",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683573"
+    ],
+    "lat": 10.1761111,
+    "lon": 76.3753056
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683574",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683574"
+    ],
+    "lat": 10.142187942857143,
+    "lon": 76.43146677142856
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683575",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683575"
+    ],
+    "lat": 10.144712,
+    "lon": 76.42816583333332
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683576",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683576"
+    ],
+    "lat": 10.242938800000001,
+    "lon": 76.39361245
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683577",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683577"
+    ],
+    "lat": 10.746978,
+    "lon": 76.1704677
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683578",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683578"
+    ],
+    "lat": 10.155096666666665,
+    "lon": 76.32042650000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683579",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683579"
+    ],
+    "lat": 10.185312675,
+    "lon": 76.32590875
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683580",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683580"
+    ],
+    "lat": 10.13292615,
+    "lon": 76.39924905000001
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683581",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683581"
+    ],
+    "lat": 10.72317974,
+    "lon": 76.3114602
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683585",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683585"
+    ],
+    "lat": 10.1283581,
+    "lon": 76.35646645
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683587",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683587"
+    ],
+    "lat": 10.1835556,
+    "lon": 76.5034167
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683589",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683589"
+    ],
+    "lat": 10.1618889,
+    "lon": 76.3689722
+  },
+  {
+    "city": "Kochi",
+    "pincode": "683594",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "683594"
+    ],
+    "lat": 10.3632228,
+    "lon": 76.41443236666667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686661",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686661"
+    ],
+    "lat": 9.9801667,
+    "lon": 76.5805
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686662",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686662"
+    ],
+    "lat": 10.88179249,
+    "lon": 77.48467207
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686663",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686663"
+    ],
+    "lat": 9.936562275,
+    "lon": 76.49131944999999
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686664",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686664"
+    ],
+    "lat": 12.327154757142855,
+    "lon": 76.48988884285714
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686665",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686665"
+    ],
+    "lat": 9.711804299999999,
+    "lon": 76.679454
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686666",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686666"
+    ],
+    "lat": 10.05375,
+    "lon": 76.61925
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686667",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686667"
+    ],
+    "lat": 10.856526483333333,
+    "lon": 76.46456743333333
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686668",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686668"
+    ],
+    "lat": 9.971952949999999,
+    "lon": 76.67825751666668
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686669",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686669"
+    ],
+    "lat": 9.901033625,
+    "lon": 76.5045184
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686670",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686670"
+    ],
+    "lat": 10.727589283333332,
+    "lon": 76.68143973333333
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686671",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686671"
+    ],
+    "lat": 10.001559542857143,
+    "lon": 76.5357914142857
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686672",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686672"
+    ],
+    "lat": 9.812997450000001,
+    "lon": 76.459574175
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686673",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686673"
+    ],
+    "lat": 9.990987923076924,
+    "lon": 76.5849140923077
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686681",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686681"
+    ],
+    "lat": 13.46514814,
+    "lon": 77.94617517999998
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686691",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686691"
+    ],
+    "lat": 11.48066222,
+    "lon": 76.71374833
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686692",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686692"
+    ],
+    "lat": 12.851612266666665,
+    "lon": 76.63840836666667
+  },
+  {
+    "city": "Kochi",
+    "pincode": "686693",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "686693"
+    ],
+    "lat": 14.158936112500001,
+    "lon": 76.74435347500001
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751001"
+    ],
+    "lat": 20.270794725000002,
+    "lon": 85.8313815
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751002"
+    ],
+    "lat": 20.237015107692308,
+    "lon": 85.8342736076923
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751003",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751003"
+    ],
+    "lat": 20.2875185,
+    "lon": 85.77998976666667
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751004"
+    ],
+    "lat": 20.2996944,
+    "lon": 85.8385278
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751005"
+    ],
+    "lat": 20.1866944,
+    "lon": 85.62175
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751006",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751006"
+    ],
+    "lat": 20.2623866,
+    "lon": 85.8498803
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751007",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751007"
+    ],
+    "lat": 20.29305353333333,
+    "lon": 85.8488283
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751008",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751008"
+    ],
+    "lat": 20.2702,
+    "lon": 85.8178783
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751009",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751009"
+    ],
+    "lat": 20.233543400000002,
+    "lon": 85.76224346666667
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751010",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751010"
+    ],
+    "lat": 21.3025,
+    "lon": 85.8560556
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751011",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751011"
+    ],
+    "lat": 20.2858333,
+    "lon": 85.8040278
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751012",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751012"
+    ],
+    "lat": 20.2772778,
+    "lon": 85.8181667
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751013",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751013"
+    ],
+    "lat": 20.3,
+    "lon": 85.8305555
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751014",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751014"
+    ],
+    "lat": 20.2529167,
+    "lon": 85.8407639
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751015",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751015"
+    ],
+    "lat": 20.2923333,
+    "lon": 85.8083889
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751016",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751016"
+    ],
+    "lat": 20.3288611,
+    "lon": 85.8202222
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751017",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751017"
+    ],
+    "lat": 20.319710925000003,
+    "lon": 85.840959075
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751018",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751018"
+    ],
+    "lat": 21.2491944,
+    "lon": 85.8537778
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751019",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751019"
+    ],
+    "lat": 20.22899107142857,
+    "lon": 85.75996335714287
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751020",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751020"
+    ],
+    "lat": 20.32682,
+    "lon": 85.86119903333332
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751021",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751021"
+    ],
+    "lat": 20.3341666,
+    "lon": 85.8091666
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751022",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751022"
+    ],
+    "lat": 20.291337366666667,
+    "lon": 85.83324369999998
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751023",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751023"
+    ],
+    "lat": 20.3183889,
+    "lon": 85.8134444
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751024",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751024"
+    ],
+    "lat": 20.346949549999998,
+    "lon": 85.8322855
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751025",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751025"
+    ],
+    "lat": 20.1866944,
+    "lon": 85.62175
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751026",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751026"
+    ],
+    "lat": 20.2797266,
+    "lon": 85.8524016
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751027",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751027"
+    ],
+    "lat": 20.272465,
+    "lon": 85.8338883
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751028",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751028"
+    ],
+    "lat": 20.2386,
+    "lon": 85.7455
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751029",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751029"
+    ],
+    "lat": 20.2908,
+    "lon": 85.7772
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751030",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751030"
+    ],
+    "lat": 20.262477,
+    "lon": 85.782045
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751031",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751031"
+    ],
+    "lat": 20.273626,
+    "lon": 85.834157
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751032",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751032"
+    ],
+    "lat": 20.3474,
+    "lon": 85.8864
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751033",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751033"
+    ],
+    "lat": 20.2766,
+    "lon": 85.7954
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751034",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751034"
+    ],
+    "lat": 20.3025,
+    "lon": 85.8559
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752018",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752018"
+    ],
+    "lat": 20.061211716666666,
+    "lon": 85.58554676666667
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752019",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752019"
+    ],
+    "lat": 19.97405432,
+    "lon": 85.55882894999999
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752020",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752020"
+    ],
+    "lat": 20.039818154545454,
+    "lon": 85.52102540909091
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752021",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752021"
+    ],
+    "lat": 19.973561633333336,
+    "lon": 85.46831329999999
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752022",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752022"
+    ],
+    "lat": 19.891926599999998,
+    "lon": 85.40303415
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752023",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752023"
+    ],
+    "lat": 19.917748566666663,
+    "lon": 85.37479356666665
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752027",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752027"
+    ],
+    "lat": 19.86049428,
+    "lon": 85.35208164
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752030",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752030"
+    ],
+    "lat": 19.68773995,
+    "lon": 85.22602710000001
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752031",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752031"
+    ],
+    "lat": 19.788619293749996,
+    "lon": 85.15450265625
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752034",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752034"
+    ],
+    "lat": 19.828106066666667,
+    "lon": 85.28923681111111
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752035",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752035"
+    ],
+    "lat": 19.84815305714286,
+    "lon": 85.16438497142857
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752037",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752037"
+    ],
+    "lat": 19.68628,
+    "lon": 85.1871416
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752038",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752038"
+    ],
+    "lat": 20.07943068333333,
+    "lon": 85.41833181666665
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752050",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752050"
+    ],
+    "lat": 20.155233677777776,
+    "lon": 85.70871995555555
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752054",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752054"
+    ],
+    "lat": 20.246143899999996,
+    "lon": 85.70848719166666
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752055",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752055"
+    ],
+    "lat": 20.1866674,
+    "lon": 85.6218522
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752056",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752056"
+    ],
+    "lat": 20.154855427272725,
+    "lon": 85.58155246363634
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752057",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752057"
+    ],
+    "lat": 20.20963327333334,
+    "lon": 85.59379302000002
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752060",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752060"
+    ],
+    "lat": 33.20299038,
+    "lon": 85.62984639999999
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752061",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752061"
+    ],
+    "lat": 20.243361241666666,
+    "lon": 85.47323610833335
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752062",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752062"
+    ],
+    "lat": 20.18747444,
+    "lon": 85.45020281
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752064",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752064"
+    ],
+    "lat": 20.199378814285716,
+    "lon": 85.38717395714285
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752066",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752066"
+    ],
+    "lat": 20.187879413333334,
+    "lon": 85.27734676
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752100",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752100"
+    ],
+    "lat": 20.23625363,
+    "lon": 85.92434931
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752101"
+    ],
+    "lat": 20.295371799999998,
+    "lon": 85.8978468
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752102",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752102"
+    ],
+    "lat": 24.585656786666664,
+    "lon": 81.56820066
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752103",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752103"
+    ],
+    "lat": 20.15712338888889,
+    "lon": 85.97250886666666
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752104",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752104"
+    ],
+    "lat": 20.11226484117648,
+    "lon": 85.82232663529412
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752106",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752106"
+    ],
+    "lat": 20.062491886666667,
+    "lon": 86.00338547333335
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752114",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752114"
+    ],
+    "lat": 20.095711253846154,
+    "lon": 85.92889147692307
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "752115",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "752115"
+    ],
+    "lat": 20.164873,
+    "lon": 85.679443
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "754001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "754001"
+    ],
+    "lat": 20.347271644444444,
+    "lon": 85.90357964444445
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "754004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "754004"
+    ],
+    "lat": 20.125730646153848,
+    "lon": 86.08813563846154
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "754005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "754005"
+    ],
+    "lat": 20.3997145875,
+    "lon": 85.82414412499999
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "754012",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "754012"
+    ],
+    "lat": 20.3384,
+    "lon": 85.742116
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422001"
+    ],
+    "lat": 20.0082,
+    "lon": 73.80645
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422002"
+    ],
+    "lat": 19.9967445,
+    "lon": 73.7787375
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422003",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422003"
+    ],
+    "lat": 20.100277638095235,
+    "lon": 73.8368864380952
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422004"
+    ],
+    "lat": 20.182332275,
+    "lon": 73.8231021
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422005"
+    ],
+    "lat": 19.988439,
+    "lon": 73.720725
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422006",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422006"
+    ],
+    "lat": 20.00505,
+    "lon": 73.78625
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422007",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422007"
+    ],
+    "lat": 20.18018141578947,
+    "lon": 73.7608048
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422008",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422008"
+    ],
+    "lat": 19.98615,
+    "lon": 73.7862
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422009",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422009"
+    ],
+    "lat": 19.9396483,
+    "lon": 74.53971025
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422010",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422010"
+    ],
+    "lat": 19.78720174,
+    "lon": 74.47394688
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422011",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422011"
+    ],
+    "lat": 19.988439,
+    "lon": 73.720725
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422012",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422012"
+    ],
+    "lat": 19.988439,
+    "lon": 73.720725
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422013",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422013"
+    ],
+    "lat": 20.00758,
+    "lon": 73.75300666666668
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422101"
+    ],
+    "lat": 19.9652785,
+    "lon": 73.86073950000001
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422102",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422102"
+    ],
+    "lat": 19.90791372727273,
+    "lon": 73.92807387272728
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422103",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422103"
+    ],
+    "lat": 19.857806036842106,
+    "lon": 74.04897088421053
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422104",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422104"
+    ],
+    "lat": 19.83483612857143,
+    "lon": 74.19589572857141
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422105",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422105"
+    ],
+    "lat": 19.941645700000002,
+    "lon": 73.83484485
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422112",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422112"
+    ],
+    "lat": 19.83991262,
+    "lon": 74.16305526
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422113",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422113"
+    ],
+    "lat": 19.9122326,
+    "lon": 73.91203065
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422201",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422201"
+    ],
+    "lat": 20.0358261,
+    "lon": 73.972186
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422202",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422202"
+    ],
+    "lat": 20.23295520000001,
+    "lon": 73.84156062499999
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422203",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422203"
+    ],
+    "lat": 19.829525266666664,
+    "lon": 73.67131377500002
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422204",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422204"
+    ],
+    "lat": 20.033849831250002,
+    "lon": 73.46479014374998
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422205",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422205"
+    ],
+    "lat": 20.273920249999996,
+    "lon": 73.9688640375
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422206",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422206"
+    ],
+    "lat": 20.07853,
+    "lon": 74.1048596
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422207",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422207"
+    ],
+    "lat": 20.14013177,
+    "lon": 73.86572961
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422208",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422208"
+    ],
+    "lat": 20.286148177777775,
+    "lon": 73.49285487777779
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422209",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422209"
+    ],
+    "lat": 20.22900668666667,
+    "lon": 74.02871986666666
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422210",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422210"
+    ],
+    "lat": 20.057724999999998,
+    "lon": 74.0632178
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422211",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422211"
+    ],
+    "lat": 20.508067809523805,
+    "lon": 73.61523727619044
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422212",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422212"
+    ],
+    "lat": 19.894983899999993,
+    "lon": 73.53178695
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422213",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422213"
+    ],
+    "lat": 19.9848034,
+    "lon": 73.58007938571428
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422214",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422214"
+    ],
+    "lat": 19.826595866666665,
+    "lon": 73.46040863333333
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422215",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422215"
+    ],
+    "lat": 20.327027972727276,
+    "lon": 73.77346540909092
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422221",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422221"
+    ],
+    "lat": 19.988439,
+    "lon": 73.720725
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422222",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422222"
+    ],
+    "lat": 19.96224,
+    "lon": 73.86842
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422301",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422301"
+    ],
+    "lat": 19.96224,
+    "lon": 73.86842
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422302",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422302"
+    ],
+    "lat": 19.96224,
+    "lon": 73.86842
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422303",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422303"
+    ],
+    "lat": 20.10507011,
+    "lon": 74.14832084000003
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422304",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422304"
+    ],
+    "lat": 20.263548333333333,
+    "lon": 74.25168066666667
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422305",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422305"
+    ],
+    "lat": 20.165432374999998,
+    "lon": 74.235020225
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422306",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422306"
+    ],
+    "lat": 20.160514914285717,
+    "lon": 74.1703138142857
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422308",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422308"
+    ],
+    "lat": 20.0806782,
+    "lon": 73.9971408
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422401",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422401"
+    ],
+    "lat": 19.8354598,
+    "lon": 73.97074951999998
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422402",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422402"
+    ],
+    "lat": 19.685689975000003,
+    "lon": 73.57974484166665
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422403",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422403"
+    ],
+    "lat": 19.655067120000002,
+    "lon": 73.58307197333333
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422501",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422501"
+    ],
+    "lat": 19.9272324,
+    "lon": 73.8330674
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422502",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422502"
+    ],
+    "lat": 19.80738380909091,
+    "lon": 73.7341513
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422606",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422606"
+    ],
+    "lat": 19.746517590000003,
+    "lon": 74.14601937
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423101"
+    ],
+    "lat": 20.323187404761903,
+    "lon": 74.2888530142857
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423102",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423102"
+    ],
+    "lat": 20.46760785,
+    "lon": 74.22303350714286
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423104",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423104"
+    ],
+    "lat": 20.345375595000004,
+    "lon": 74.43486340000001
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423105",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423105"
+    ],
+    "lat": 20.571920637500003,
+    "lon": 74.6077362625
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423106",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423106"
+    ],
+    "lat": 20.334542633333328,
+    "lon": 74.57942406190477
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423108",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423108"
+    ],
+    "lat": 20.510512666666667,
+    "lon": 74.37382133333334
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423110",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423110"
+    ],
+    "lat": 20.426791100000003,
+    "lon": 74.30388565
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423111",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423111"
+    ],
+    "lat": 20.362122749999997,
+    "lon": 74.20502775
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423117",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423117"
+    ],
+    "lat": 20.341974500000003,
+    "lon": 74.22065038333334
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423201",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423201"
+    ],
+    "lat": 20.53972966,
+    "lon": 74.45768532
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423202",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423202"
+    ],
+    "lat": 20.562186966666665,
+    "lon": 74.46878133333333
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423203",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423203"
+    ],
+    "lat": 20.63081345,
+    "lon": 74.69149119999999
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423204",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423204"
+    ],
+    "lat": 20.59795491,
+    "lon": 74.37865464
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423205",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423205"
+    ],
+    "lat": 20.480865266666665,
+    "lon": 74.49768988888889
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423206",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423206"
+    ],
+    "lat": 20.5737634,
+    "lon": 74.55123668750001
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423208",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423208"
+    ],
+    "lat": 20.470836369999997,
+    "lon": 74.46152519999998
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423212",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423212"
+    ],
+    "lat": 20.5188572125,
+    "lon": 74.56973225
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423213",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423213"
+    ],
+    "lat": 20.56765006,
+    "lon": 74.3060667
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423301",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423301"
+    ],
+    "lat": 20.607245731249996,
+    "lon": 74.21333802500001
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423302",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423302"
+    ],
+    "lat": 20.587248272727273,
+    "lon": 74.22719672727273
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423303",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423303"
+    ],
+    "lat": 20.656953400000003,
+    "lon": 74.2742312
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423401",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423401"
+    ],
+    "lat": 20.111726875,
+    "lon": 74.41193900000003
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423402",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423402"
+    ],
+    "lat": 19.871448166666667,
+    "lon": 74.92536583333334
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423403",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423403"
+    ],
+    "lat": 20.1743570875,
+    "lon": 74.4626681125
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423501",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423501"
+    ],
+    "lat": 20.5043256,
+    "lon": 74.06828625
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423502",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423502"
+    ],
+    "lat": 20.564484333333336,
+    "lon": 74.14711241666667
+  },
+  {
+    "city": "Nashik",
+    "pincode": "424109",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "424109"
+    ],
+    "lat": 20.347226139999997,
+    "lon": 74.49293498
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "509132",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "509132"
+    ],
+    "lat": 16.2685689,
+    "lon": 78.00306059999998
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520001"
+    ],
+    "lat": 16.52216666,
+    "lon": 80.61916668
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520002"
+    ],
+    "lat": 16.511583325,
+    "lon": 80.62679165
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520003",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520003"
+    ],
+    "lat": 16.5668835,
+    "lon": 80.6716638
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520004"
+    ],
+    "lat": 16.65255555,
+    "lon": 80.75795835
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520007",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520007"
+    ],
+    "lat": 27.20000945,
+    "lon": 69.9753377
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520008",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520008"
+    ],
+    "lat": 16.51597963333333,
+    "lon": 80.67186296666667
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520010",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520010"
+    ],
+    "lat": 16.449666633333333,
+    "lon": 80.63794443333333
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520011",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520011"
+    ],
+    "lat": 16.598916666666668,
+    "lon": 80.70272223333335
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520012",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520012"
+    ],
+    "lat": 16.5813994,
+    "lon": 80.61998453333334
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520013",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520013"
+    ],
+    "lat": 16.5056111,
+    "lon": 80.62325
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520015",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520015"
+    ],
+    "lat": 16.5385892,
+    "lon": 80.6477978
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521101"
+    ],
+    "lat": 16.586452858333335,
+    "lon": 80.78238273333334
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521102",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521102"
+    ],
+    "lat": 16.5276617,
+    "lon": 80.76741163333332
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521104",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521104"
+    ],
+    "lat": 16.50495666666667,
+    "lon": 80.74155569999999
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521107",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521107"
+    ],
+    "lat": 16.660445199999998,
+    "lon": 80.78871505000001
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521108",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521108"
+    ],
+    "lat": 16.5174436,
+    "lon": 80.69329164999999
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521109",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521109"
+    ],
+    "lat": 16.5947946,
+    "lon": 80.89010936666666
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521110",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521110"
+    ],
+    "lat": 16.551354614285717,
+    "lon": 80.96927860000001
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521134",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521134"
+    ],
+    "lat": 16.42076875,
+    "lon": 80.6465094
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521137",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521137"
+    ],
+    "lat": 16.4791944,
+    "lon": 80.7079167
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521139",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521139"
+    ],
+    "lat": 16.456069566666667,
+    "lon": 80.71881939999999
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521151",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521151"
+    ],
+    "lat": 16.432482991666664,
+    "lon": 80.70497685000001
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521153",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521153"
+    ],
+    "lat": 16.4321389,
+    "lon": 80.7945556
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521163",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521163"
+    ],
+    "lat": 16.333473899999998,
+    "lon": 80.79118645000001
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521164",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521164"
+    ],
+    "lat": 16.425194,
+    "lon": 80.86121539999999
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521165",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521165"
+    ],
+    "lat": 16.353147625,
+    "lon": 80.8338060375
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521170",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521170"
+    ],
+    "lat": 16.82621,
+    "lon": 80.39941895
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521175",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521175"
+    ],
+    "lat": 22.566714672727272,
+    "lon": 80.36824816363637
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521178",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521178"
+    ],
+    "lat": 16.85446067777778,
+    "lon": 80.17905544444444
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521180",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521180"
+    ],
+    "lat": 16.658896079999998,
+    "lon": 80.43230582999999
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521181",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521181"
+    ],
+    "lat": 16.79929834444444,
+    "lon": 80.52543125555556
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521182",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521182"
+    ],
+    "lat": 16.683087336363638,
+    "lon": 80.21341046363636
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521183",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521183"
+    ],
+    "lat": 16.673045066666663,
+    "lon": 80.37915401666667
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521184",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521184"
+    ],
+    "lat": 16.7829337,
+    "lon": 80.3291263
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521185",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521185"
+    ],
+    "lat": 16.702125957142858,
+    "lon": 80.30851857857144
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521190",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521190"
+    ],
+    "lat": 16.899185542857143,
+    "lon": 80.24227597857144
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521211",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521211"
+    ],
+    "lat": 16.691745223076925,
+    "lon": 80.79833905384615
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521212",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521212"
+    ],
+    "lat": 16.603916599999998,
+    "lon": 80.74836036000002
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521225",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521225"
+    ],
+    "lat": 16.5398611,
+    "lon": 80.5766944
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521226",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521226"
+    ],
+    "lat": 16.877613099999998,
+    "lon": 80.706784525
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521227",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521227"
+    ],
+    "lat": 16.996821736363636,
+    "lon": 80.65955464545455
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521228",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521228"
+    ],
+    "lat": 16.63150645,
+    "lon": 80.56019316666668
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521229",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521229"
+    ],
+    "lat": 16.65316883,
+    "lon": 80.62051159
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521230",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521230"
+    ],
+    "lat": 16.783000171428576,
+    "lon": 80.66036522142858
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521231",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521231"
+    ],
+    "lat": 16.31,
+    "lon": 80.39
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521235",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521235"
+    ],
+    "lat": 17.073654389999998,
+    "lon": 80.57270118
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521241",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521241"
+    ],
+    "lat": 16.584213025,
+    "lon": 80.5608055
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521245",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521245"
+    ],
+    "lat": 16.39836222,
+    "lon": 80.81658808
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521246",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521246"
+    ],
+    "lat": 16.544009199999998,
+    "lon": 80.86662204999999
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521247",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521247"
+    ],
+    "lat": 16.256610587500003,
+    "lon": 80.839088675
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521250",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521250"
+    ],
+    "lat": 16.27081815714286,
+    "lon": 80.87013622857144
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521256",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521256"
+    ],
+    "lat": 16.350576662500004,
+    "lon": 80.89041365
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521286",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521286"
+    ],
+    "lat": 16.577678679999998,
+    "lon": 80.84285766
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521401",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521401"
+    ],
+    "lat": 16.9812319,
+    "lon": 80.4398055375
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521402",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521402"
+    ],
+    "lat": 16.95129567,
+    "lon": 80.27399847
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521403",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521403"
+    ],
+    "lat": 17.00092488888889,
+    "lon": 80.52514851111111
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521456",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521456"
+    ],
+    "lat": 16.585228385714284,
+    "lon": 80.3630219
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521457",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521457"
+    ],
+    "lat": 16.83258425,
+    "lon": 80.127453675
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695001"
+    ],
+    "lat": 8.6653889,
+    "lon": 76.556625
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695002"
+    ],
+    "lat": 8.46656945,
+    "lon": 76.97456945
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695003",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695003"
+    ],
+    "lat": 8.415005,
+    "lon": 76.76893335
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695004"
+    ],
+    "lat": 8.9985463,
+    "lon": 76.7499352
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695005"
+    ],
+    "lat": 8.42954055,
+    "lon": 76.77148335000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695006",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695006"
+    ],
+    "lat": 8.6653889,
+    "lon": 76.586625
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695007",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695007"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695008",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695008"
+    ],
+    "lat": 8.424367775,
+    "lon": 76.835263325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695009",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695009"
+    ],
+    "lat": 8.6329028,
+    "lon": 76.893875
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695010",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695010"
+    ],
+    "lat": 8.5120278,
+    "lon": 76.9707222
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695011",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695011"
+    ],
+    "lat": 8.59384416,
+    "lon": 76.76600380000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695012",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695012"
+    ],
+    "lat": 8.5356726,
+    "lon": 76.57423200000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695013",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695013"
+    ],
+    "lat": 8.524311119999998,
+    "lon": 76.99715
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695014",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695014"
+    ],
+    "lat": 8.476225933333334,
+    "lon": 76.43925
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695015",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695015"
+    ],
+    "lat": 8.5526528,
+    "lon": 76.9375139
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695016",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695016"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695017",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695017"
+    ],
+    "lat": 8.5524167,
+    "lon": 76.9153611
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695018",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695018"
+    ],
+    "lat": 8.4710278,
+    "lon": 76.98
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695019",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695019"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695020",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695020"
+    ],
+    "lat": 8.440965275,
+    "lon": 77.02528472499999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695021",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695021"
+    ],
+    "lat": 8.6168556,
+    "lon": 76.65387966666667
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695022",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695022"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695023",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695023"
+    ],
+    "lat": 8.38371,
+    "lon": 76.75324499999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695024",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695024"
+    ],
+    "lat": 8.44366945,
+    "lon": 76.546705
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695025",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695025"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695026",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695026"
+    ],
+    "lat": 9.103181800000002,
+    "lon": 76.5108898
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695027",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695027"
+    ],
+    "lat": 8.43066665,
+    "lon": 76.95481945
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695028",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695028"
+    ],
+    "lat": 8.517785,
+    "lon": 76.811985
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695029",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695029"
+    ],
+    "lat": 8.5,
+    "lon": 76.92
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695030",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695030"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695032",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695032"
+    ],
+    "lat": 8.479864,
+    "lon": 77.001323
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695033",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695033"
+    ],
+    "lat": 8.505379633333334,
+    "lon": 76.94792589999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695034",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695034"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695035",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695035"
+    ],
+    "lat": 8.49120835,
+    "lon": 76.94170835
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695036",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695036"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695038",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695038"
+    ],
+    "lat": 7.523255,
+    "lon": 75.37438
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695040",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695040"
+    ],
+    "lat": 8.7918889,
+    "lon": 76.7857222
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695042",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695042"
+    ],
+    "lat": 8.432444,
+    "lon": 77.014704
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695043",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695043"
+    ],
+    "lat": 8.653592600000001,
+    "lon": 76.69775
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695051",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695051"
+    ],
+    "lat": 8.48479,
+    "lon": 76.9427
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695099",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695099"
+    ],
+    "lat": 8.8307778,
+    "lon": 76.16325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695101"
+    ],
+    "lat": 8.6858333,
+    "lon": 76.8023056
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695102",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695102"
+    ],
+    "lat": 8.72470226,
+    "lon": 76.82099281999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695103",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695103"
+    ],
+    "lat": 35.90978199999999,
+    "lon": 49.519849799999996
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695104",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695104"
+    ],
+    "lat": 42.704009333333325,
+    "lon": 42.689616
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695121",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695121"
+    ],
+    "lat": 8.323236099999999,
+    "lon": 76.06175
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695122",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695122"
+    ],
+    "lat": 22.40989242,
+    "lon": 77.09540494
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695123",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695123"
+    ],
+    "lat": 8.4906414,
+    "lon": 77.0378575
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695124",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695124"
+    ],
+    "lat": 8.433927780000001,
+    "lon": 77.12992222
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695125",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695125"
+    ],
+    "lat": 8.483199066666666,
+    "lon": 77.14679166666666
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695126",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695126"
+    ],
+    "lat": 8.5692639,
+    "lon": 77.11991665
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695132",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695132"
+    ],
+    "lat": 8.368762,
+    "lon": 77.104447
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695133",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695133"
+    ],
+    "lat": 8.361866666666666,
+    "lon": 77.08076666666666
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695134",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695134"
+    ],
+    "lat": 8.362619,
+    "lon": 77.09242
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695141",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695141"
+    ],
+    "lat": 25.733242849999996,
+    "lon": 59.724093075
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695142",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695142"
+    ],
+    "lat": 8.432657,
+    "lon": 76.451358
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695143",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695143"
+    ],
+    "lat": 31.413684,
+    "lon": 54.09119723333333
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695144",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695144"
+    ],
+    "lat": 53.97057966666667,
+    "lon": 31.324456666666663
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695145",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695145"
+    ],
+    "lat": 54.07510186666667,
+    "lon": 31.418388899999997
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695146",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695146"
+    ],
+    "lat": 8.521491,
+    "lon": 76.58219199999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695301",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695301"
+    ],
+    "lat": 31.329245733333334,
+    "lon": 54.09746356666667
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695302",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695302"
+    ],
+    "lat": 8.363951,
+    "lon": 76.49519
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695303",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695303"
+    ],
+    "lat": 42.582398,
+    "lon": 42.551299
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695304",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695304"
+    ],
+    "lat": 54.080620366666665,
+    "lon": 31.365481466666665
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695305",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695305"
+    ],
+    "lat": 54.08299073333333,
+    "lon": 31.364083333333337
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695306",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695306"
+    ],
+    "lat": 63.15571112,
+    "lon": 22.298099999999998
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695307",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695307"
+    ],
+    "lat": 8.546597,
+    "lon": 76.594401
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695308",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695308"
+    ],
+    "lat": 8.241236,
+    "lon": 76.46271
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695309",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695309"
+    ],
+    "lat": 42.586219,
+    "lon": 42.556472
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695310",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695310"
+    ],
+    "lat": 8.7583111,
+    "lon": 76.73435115000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695311",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695311"
+    ],
+    "lat": 8.76526834,
+    "lon": 76.69631954
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695312",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695312"
+    ],
+    "lat": 8.70087615,
+    "lon": 76.76410179999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695313",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695313"
+    ],
+    "lat": 42.505,
+    "lon": 42.435
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695316",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695316"
+    ],
+    "lat": 8.5935077,
+    "lon": 76.8560255
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695317",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695317"
+    ],
+    "lat": 8.381508,
+    "lon": 76.504614
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695318",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695318"
+    ],
+    "lat": 8.83,
+    "lon": 76.28
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695501",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695501"
+    ],
+    "lat": 8.5887536125,
+    "lon": 76.98133732500001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695502",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695502"
+    ],
+    "lat": 8.325148133333334,
+    "lon": 77.14831480000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695503",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695503"
+    ],
+    "lat": 8.5259861,
+    "lon": 77.1828889
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695504",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695504"
+    ],
+    "lat": 8.401888900000001,
+    "lon": 77.180104175
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695505",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695505"
+    ],
+    "lat": 8.497873736363637,
+    "lon": 77.18594697272728
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695506",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695506"
+    ],
+    "lat": 8.31954075,
+    "lon": 77.10610050000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695507",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695507"
+    ],
+    "lat": 8.4594167,
+    "lon": 77.0618611
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695508",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695508"
+    ],
+    "lat": 8.3719862,
+    "lon": 77.1413265
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695512",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695512"
+    ],
+    "lat": 8.433633133333332,
+    "lon": 77.10446673333333
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695513",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695513"
+    ],
+    "lat": 9.215521,
+    "lon": 76.496792
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695521",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695521"
+    ],
+    "lat": 8.377462966666668,
+    "lon": 77.00278703333333
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695522",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695522"
+    ],
+    "lat": 9.320859200000001,
+    "lon": 76.8715562
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695523",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695523"
+    ],
+    "lat": 8.968527,
+    "lon": 76.89281899999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695524",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695524"
+    ],
+    "lat": 8.38458335,
+    "lon": 77.09163889999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695525",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695525"
+    ],
+    "lat": 8.332477666666668,
+    "lon": 77.08043233333335
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695526",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695526"
+    ],
+    "lat": 8.343625,
+    "lon": 77.04930555000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695527",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695527"
+    ],
+    "lat": 8.39125575,
+    "lon": 76.97935915
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695528",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695528"
+    ],
+    "lat": 8.44025,
+    "lon": 77.0329722
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695541",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695541"
+    ],
+    "lat": 8.61829321111111,
+    "lon": 77.03366975555555
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695542",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695542"
+    ],
+    "lat": 8.63824722,
+    "lon": 77.08878333
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695543",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695543"
+    ],
+    "lat": 8.559099728571429,
+    "lon": 77.05603611428572
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695547",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695547"
+    ],
+    "lat": 8.371372,
+    "lon": 77.015726
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695551",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695551"
+    ],
+    "lat": 8.685319439999999,
+    "lon": 77.10833056
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695561",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695561"
+    ],
+    "lat": 8.632562499999999,
+    "lon": 76.98686805
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695562",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695562"
+    ],
+    "lat": 8.722152775000001,
+    "lon": 77.02024305
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695563",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695563"
+    ],
+    "lat": 8.6799453,
+    "lon": 77.0144791857143
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695564",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695564"
+    ],
+    "lat": 8.56907,
+    "lon": 77.00340933333332
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695568",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695568"
+    ],
+    "lat": 8.683676333333333,
+    "lon": 76.98386266666667
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695570",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695570"
+    ],
+    "lat": 8.5106,
+    "lon": 77.0519
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695571",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695571"
+    ],
+    "lat": 8.485018833333333,
+    "lon": 77.0332566
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695572",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695572"
+    ],
+    "lat": 8.508447533333332,
+    "lon": 77.12010802222223
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695573",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695573"
+    ],
+    "lat": 8.55917778,
+    "lon": 76.96713888000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695574",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695574"
+    ],
+    "lat": 8.561385,
+    "lon": 77.12740325000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695575",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695575"
+    ],
+    "lat": 8.543146666666667,
+    "lon": 77.08984766666667
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695581",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695581"
+    ],
+    "lat": 8.563416700000001,
+    "lon": 76.898799325
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695582",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695582"
+    ],
+    "lat": 8.5615833,
+    "lon": 76.8714722
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695583",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695583"
+    ],
+    "lat": 8.52204205,
+    "lon": 76.88210939999999
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695584",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695584"
+    ],
+    "lat": 65.50798148333332,
+    "lon": 19.989263883333333
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695585",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695585"
+    ],
+    "lat": 8.5736782,
+    "lon": 76.8741213
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695586",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695586"
+    ],
+    "lat": 54.0912255,
+    "lon": 31.323170933333333
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695587",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695587"
+    ],
+    "lat": 8.340653,
+    "lon": 76.543952
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695588",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695588"
+    ],
+    "lat": 8.5736733,
+    "lon": 76.8495128
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695589",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695589"
+    ],
+    "lat": 42.17129,
+    "lon": 41.937055
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695601",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695601"
+    ],
+    "lat": 8.767329322222222,
+    "lon": 76.85884981111111
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695602",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695602"
+    ],
+    "lat": 8.808964333333334,
+    "lon": 76.82453346666667
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695603",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695603"
+    ],
+    "lat": 8.790564925,
+    "lon": 76.77605915
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695604",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695604"
+    ],
+    "lat": 8.756240400000001,
+    "lon": 76.7340668
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695605",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695605"
+    ],
+    "lat": 8.7534217,
+    "lon": 76.80216902500001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695606",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695606"
+    ],
+    "lat": 8.715849283333334,
+    "lon": 76.89808783333332
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695607",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695607"
+    ],
+    "lat": 51.32902752500001,
+    "lon": 34.2654566125
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695608",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695608"
+    ],
+    "lat": 8.754320074999999,
+    "lon": 76.931682625
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695609",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695609"
+    ],
+    "lat": 8.6768202,
+    "lon": 76.990206
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695610",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695610"
+    ],
+    "lat": 8.621646666666667,
+    "lon": 76.82243166666667
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695611",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695611"
+    ],
+    "lat": 8.322446,
+    "lon": 76.435025
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695612",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695612"
+    ],
+    "lat": 8.754462766666668,
+    "lon": 76.88523400000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695614",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695614"
+    ],
+    "lat": 8.687905333333333,
+    "lon": 76.76272300000001
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695615",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695615"
+    ],
+    "lat": 63.2264308,
+    "lon": 22.2182516
+  }
+]
