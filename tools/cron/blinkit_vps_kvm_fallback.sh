@@ -253,6 +253,136 @@ print("ok")
 PY
 }
 
+write_targeted_repair_config() {
+  local total="$1" index="$2" out_config="$3" out_pins="$4" result shard_config
+  result="$(shard_result "$total" "$index")"
+  shard_config="$DIR/shards/runs/$RUN_ID/blinkit/shard-${index}-of-${total}/pincodes.${index}-of-${total}.json"
+  python3 - "$result" "$shard_config" "$out_config" "$out_pins" <<'PY'
+import json, os, sys
+
+result_path, shard_config_path, out_config_path, out_pins_path = sys.argv[1:5]
+d = json.load(open(result_path, encoding="utf-8"))
+source = json.load(open(shard_config_path, encoding="utf-8"))
+per = d.get("perPin") or []
+rows = d.get("allRows") or []
+
+def pin(value):
+    return str(value or "").strip()
+
+def flag(value):
+    if value is True:
+        return True
+    if isinstance(value, (int, float)) and not isinstance(value, bool):
+        return value == 1
+    return str(value).strip().lower() in {"1", "true", "yes", "y"}
+
+bad = set()
+for rec in per:
+    p = pin(rec.get("pincode"))
+    if p and not flag(rec.get("auth_accepted")):
+        bad.add(p)
+
+for row in rows:
+    p = pin(row.get("pincode"))
+    if not p:
+        continue
+    stock_source = str(row.get("stock_source") or "").strip().lower()
+    if row.get("pdp_price_probe_failed"):
+        bad.add(p)
+    if not row.get("in_stock") and not row.get("pdp_checked") and stock_source not in {"pdp", "pdp_probe"}:
+        bad.add(p)
+
+if not bad:
+    raise SystemExit("no targetable bad pincodes found")
+
+target = [row for row in source if pin(row.get("pincode")) in bad]
+target_pins = [pin(row.get("pincode")) for row in target]
+missing = sorted(bad - set(target_pins))
+if missing:
+    raise SystemExit(f"bad pincodes not found in shard config: {missing[:10]}")
+
+os.makedirs(os.path.dirname(out_config_path), exist_ok=True)
+with open(out_config_path, "w", encoding="utf-8") as f:
+    json.dump(target, f, indent=2, ensure_ascii=False)
+    f.write("\n")
+with open(out_pins_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(sorted(target_pins)) + "\n")
+
+print(json.dumps({"count": len(target), "pincodes": sorted(target_pins)}, sort_keys=True))
+PY
+}
+
+run_local_targeted_repair() {
+  local target_config="$1" target_run_id="$2" role="$3"
+  log "local targeted repair start run_id=$target_run_id config=$target_config"
+  env \
+    SHARD_ROLE="$role" \
+    BLINKIT_AUTH_STATE_FILE="$AUTH_FILE" \
+    BLINKIT_REQUIRE_AUTH=1 \
+    BLINKIT_OOS_PROBE=1 \
+    BLINKIT_PDP_OOS_PROBE=1 \
+    BLINKIT_PDP_PRICE_PROBE=1 \
+    CONCURRENCY="$EFFECTIVE_CONCURRENCY" \
+    timeout --foreground -k 60 "${SHARD_TIMEOUT}s" \
+      "$DIR/tools/shards/run_platform_shard.sh" blinkit "$target_config" 1 0 "$target_run_id" \
+      >>"$LOG_FILE" 2>&1
+}
+
+run_kvm1_targeted_repair() {
+  local target_config="$1" target_run_id="$2" remote_dir
+  remote_dir="$(dirname "$target_config")"
+  log "KVM1 targeted repair start run_id=$target_run_id config=$target_config"
+  ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 "mkdir -p '$remote_dir'" >>"$LOG_FILE" 2>&1 || return 1
+  rsync -az "$target_config" "kvm1:$target_config" >>"$LOG_FILE" 2>&1 || return 1
+  timeout --foreground -k 60 "${SHARD_TIMEOUT}s" ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 \
+    "cd /opt/ecom-intel && env SHARD_ROLE=kvm1-targeted-repair SYNC_DEST='vps:/opt/ecom-intel/shards/runs' BLINKIT_AUTH_STATE_FILE=/opt/ecom-intel/secrets/blinkit-auth-state.json BLINKIT_REQUIRE_AUTH=1 BLINKIT_OOS_PROBE=1 BLINKIT_PDP_OOS_PROBE=1 BLINKIT_PDP_PRICE_PROBE=1 CONCURRENCY='$EFFECTIVE_CONCURRENCY' ./tools/shards/run_platform_shard.sh blinkit '$target_config' 1 0 '$target_run_id'" \
+    >>"$LOG_FILE" 2>&1
+}
+
+try_targeted_shard_repair() {
+  local total="$1" index="$2" target_run_id target_dir target_config target_pins target_result base_result patched_result backup reason
+  target_run_id="${RUN_ID}-targeted-repair-${index}-$(TZ=Asia/Kolkata date +%H%M%S)"
+  target_dir="$DIR/shards/runs/$target_run_id/blinkit"
+  target_config="$target_dir/target-pincodes.json"
+  target_pins="$target_dir/target-pincodes.txt"
+  target_result="$DIR/shards/runs/$target_run_id/blinkit/shard-0-of-1/result.json"
+  base_result="$(shard_result "$total" "$index")"
+  patched_result="${base_result}.targeted-repaired"
+  backup="${base_result}.pre-targeted-repair"
+
+  if ! reason="$(write_targeted_repair_config "$total" "$index" "$target_config" "$target_pins" 2>&1)"; then
+    log "shard ${index}/${total} targeted repair not possible: $reason"
+    return 1
+  fi
+  log "shard ${index}/${total} targeted repair pins: $reason"
+
+  if [ "$KVM_OK" -ne 1 ]; then
+    if prepare_kvm1; then
+      KVM_OK=1
+    fi
+  fi
+
+  if [ "$KVM_OK" -eq 1 ]; then
+    run_kvm1_targeted_repair "$target_config" "$target_run_id" || return 1
+  else
+    run_local_targeted_repair "$target_config" "$target_run_id" "vps-targeted-repair" || return 1
+  fi
+
+  [ -s "$target_result" ] || { log "targeted repair result missing: $target_result"; return 1; }
+
+  python3 "$DIR/tools/cron/blinkit_apply_targeted_shard_repair.py" \
+    "$base_result" "$target_result" "$patched_result" >>"$LOG_FILE" 2>&1 || return 1
+  cp -f "$base_result" "$backup"
+  mv -f "$patched_result" "$base_result"
+
+  if reason="$(validate_shard_quality "$total" "$index" 2>&1)"; then
+    log "shard ${index}/${total} quality OK after targeted repair"
+    return 0
+  fi
+  log "shard ${index}/${total} still failed after targeted repair: $reason"
+  return 1
+}
+
 repair_shard_quality_if_needed() {
   local total="$1" index="$2" preferred_role="$3" reason
   if reason="$(validate_shard_quality "$total" "$index" 2>&1)"; then
@@ -261,7 +391,14 @@ repair_shard_quality_if_needed() {
   fi
 
   log "shard ${index}/${total} failed quality before merge: $reason"
-  tg "[WARN] Blinkit fallback: shard ${index}/${total} failed auth/OOS quality (${reason}); rerunning once before merge."
+  tg "[WARN] Blinkit fallback: shard ${index}/${total} failed auth/OOS quality (${reason}); repairing bad pincodes before merge."
+
+  if try_targeted_shard_repair "$total" "$index"; then
+    return 0
+  fi
+
+  log "targeted repair could not clear shard ${index}/${total}; falling back to one full shard rerun"
+  tg "[WARN] Blinkit fallback: targeted repair could not clear shard ${index}/${total}; rerunning the full shard once."
 
   if [ "$KVM_OK" -ne 1 ]; then
     if prepare_kvm1; then

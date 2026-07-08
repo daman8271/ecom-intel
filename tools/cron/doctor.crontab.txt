@@ -38,9 +38,10 @@
 35 6 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 10:00-batch guard early
 45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 10:00-batch guard late
 */15 5-10 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor false-OOS guard
-*/15 6-12 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry
-*/15 6-12 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_not_listed_direct.sh cron >> logs/blinkit-not-listed-wa.log 2>&1   # blinkit not-listed direct WhatsApp retry
+*/15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry
+*/15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_not_listed_direct.sh cron >> logs/blinkit-not-listed-wa.log 2>&1   # blinkit not-listed direct WhatsApp retry
 0 9 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_whatsapp_delivery_sweep.sh cron >> logs/blinkit_whatsapp_delivery_sweep.cron.log 2>&1   # blinkit 09:00 WhatsApp delivery sweep
+*/5 10-16 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_whatsapp_delivery_sweep.sh watchdog >> logs/blinkit_whatsapp_delivery_sweep.cron.log 2>&1   # blinkit post-10:00 immediate WhatsApp watchdog
 
 # 18:00 IST daily guardian deep-dive — UNCHANGED from the live crontab (read-only
 # 11-bug-class audit + trend; Telegram-alerts only on a NEW bug class vs yesterday).
