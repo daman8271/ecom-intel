@@ -1,0 +1,15 @@
+{
+  "name": "blinkit-jivo-scrape",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test_volparse.js && bash tests/test_ingest_false_oos_price.sh && bash tests/test_checkpoint_resume_fast.sh && python3 tests/test_build_excel_listing_status.py"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "playwright": "^1.60.0"
+  }
+}
