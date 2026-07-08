@@ -5,10 +5,10 @@ display_name: Jivo First Pressed Yellow Mustard Oil 5L (5 l)
 platforms:
   - amazon-fresh
 first_seen: 2026-06-30
-last_seen: 2026-07-05
-observations: 20
+last_seen: 2026-07-08
+observations: 87
 min_price: 999
-max_price: 1329
+max_price: 1795
 latest_price: 999
 tags:
   - type/sku-hub
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹999 (44.3% off)
 
 ## Available in cities
-[[Delhi]] · [[Kolkata]]
+[[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (20 observations)
+## Price history (87 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -54,6 +54,73 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700100,999,1795,44.3,1
 2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700107,999,1795,44.3,1
 2026-07-05-1604,2026-07-05,amazon-fresh,Kolkata,700108,999,1795,44.3,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Bengaluru,560001,1795,,,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Bengaluru,560003,1795,,,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Bengaluru,560006,1795,,,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Bengaluru,560040,1795,,,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Bengaluru,560072,1795,,,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600016,999,1795,44.3,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110001,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110003,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110004,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110006,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110013,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110016,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110017,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110021,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110024,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110025,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110031,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110037,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110044,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110048,1062,1795,40.8,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110055,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110091,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Gurugram,122001,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Gurugram,122002,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Gurugram,122003,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Gurugram,122007,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Gurugram,122010,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Gurugram,122012,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Kolkata,700001,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Kolkata,700009,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Kolkata,700015,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Kolkata,700019,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Kolkata,700069,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Kolkata,700100,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Kolkata,700107,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Noida,201301,1662,1795,7.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Noida,201303,1662,1795,7.4,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560001,1795,,,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560003,1795,,,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560006,1795,,,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560036,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560072,1795,,,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600016,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110003,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110013,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110014,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110016,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110017,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110021,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110024,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110025,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110037,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110044,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Delhi,110048,1062,1795,40.8,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Gurugram,122001,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Gurugram,122002,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Gurugram,122003,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Gurugram,122007,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Gurugram,122010,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Gurugram,122012,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700001,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700009,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700015,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700019,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700069,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700100,999,1795,44.3,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700107,999,1795,44.3,1
 ```
 
 ---
