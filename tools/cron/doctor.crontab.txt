@@ -32,6 +32,8 @@
 */20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 10:00 >> logs/sweep_watchdog.cron.log 2>&1   # 10:00-sweep catch-up watchdog (guards the single 00:30 launch tick)
 0 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter early
 */10 5-10 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher watchdog
+0 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_agent_watch.sh >> logs/blinkit_agent_watch.cron.log 2>&1   # blinkit production agent starter
+*/10 5-16 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_agent_watch.sh >> logs/blinkit_agent_watch.cron.log 2>&1   # blinkit production agent watchdog
 5 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_supervisor.sh >> logs/blinkit_supervisor.cron.log 2>&1   # blinkit active supervisor starter
 */10 5-10 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_supervisor.sh >> logs/blinkit_supervisor.cron.log 2>&1   # blinkit active supervisor watchdog
 25 6 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter

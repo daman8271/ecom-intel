@@ -107,6 +107,8 @@ class TestShards(unittest.TestCase):
         self.assertEqual(merged["summary"]["pdp_price_probe_failed"], 1)
         self.assertEqual(merged["summary"]["pdp_price_probe_updates"], 1)
         self.assertEqual(merged["summary"]["unverified_oos"], 0)
+        self.assertEqual(merged["summary"]["wall_s"], 2)
+        self.assertEqual(merged["summary"]["shard_wall_s_total"], 3)
         self.assertEqual([p["pincode"] for p in merged["perPin"]], ["100001", "100002", "100003", "100004"])
 
 

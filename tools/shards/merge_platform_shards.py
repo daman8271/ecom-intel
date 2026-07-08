@@ -31,13 +31,17 @@ def pincode(x: dict) -> str:
 
 def recompute_summary(platform: str, results: list[dict], per_pin: list[dict], all_rows: list[dict]) -> dict:
     summaries = [r.get("summary", {}) for r in results]
+    wall_values = [int(s.get("wall_s") or 0) for s in summaries]
     summary = {
         "pincodes_total": len(per_pin),
         "pincodes_with_jivo": sum(1 for p in per_pin if p.get("rows")),
         "pincodes_blocked": sum(1 for p in per_pin if p.get("blocked") or p.get("partial_block")),
         "total_rows": len(all_rows),
         "unique_skus": len({r.get("canonical") for r in all_rows if r.get("canonical")}),
-        "wall_s": sum(int(s.get("wall_s") or 0) for s in summaries),
+        # Shards are run in parallel by the production fallback, so the merged
+        # wall clock should reflect the slowest shard, not the sum of all shards.
+        "wall_s": max(wall_values) if wall_values else 0,
+        "shard_wall_s_total": sum(wall_values),
         "partial": any(bool(r.get("partial") or r.get("summary", {}).get("partial")) for r in results),
         "captured_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "merged_shards": len(results),

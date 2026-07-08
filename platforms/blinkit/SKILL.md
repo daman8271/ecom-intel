@@ -117,7 +117,13 @@ logs Mac process status, progress counts
 dry-run quality-monitor output until 10:45 IST. Cron starts the watcher at 05:00
 IST and 06:25 IST, the read-only quality monitor polls every 15 minutes from 05:00-10:59 IST,
 and the main/not-listed WhatsApp retry helpers poll every 15 minutes from
-06:00-12:59 IST.
+06:00-16:59 IST. `tools/cron/start_blinkit_agent_watch.sh` starts the production
+Blinkit agent watchdog from 05:00-16:05 IST. That hook snapshots the run, triggers
+the guard/fallback idempotently after the store-open window, reruns quality and
+WhatsApp delivery as soon as accepted workbooks exist, and escalates to read-only
+Codex diagnosis only for unresolved late/quality-held states. The post-10:00
+delivery sweep runs every 5 minutes until 16:59 IST so a late accepted workbook is
+sent as soon as it appears.
 
 If the Mac Pro is unreachable during the store-open guard window,
 `tools/cron/blinkit_batch_guard.sh` launches

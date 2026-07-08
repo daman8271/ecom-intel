@@ -607,4 +607,5 @@ if [ "$DELIVER" = "--deliver" ]; then
   BLINKIT_MONITOR_NOT_LISTED_REPORT="$ROOT/output/$(basename "$NOT_LISTED_XLSX")" \
     "$ROOT/tools/whatsapp/send_blinkit_not_listed_direct.sh" ingest \
     >> "$ROOT/logs/blinkit-not-listed-wa.log" 2>&1 || true
+  "$ROOT/tools/cron/blinkit_agent_hook.sh" report-ready >> "$ROOT/logs/blinkit-agent-hook.cron.log" 2>&1 || true
 fi
