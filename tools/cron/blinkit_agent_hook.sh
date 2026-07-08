@@ -109,7 +109,7 @@ invoke_readonly_codex() {
   codex_bin="${CODEX_BIN:-$(command -v codex || echo /root/.local/bin/codex)}"
   log "invoking read-only Codex escalation key=$key bin=$codex_bin"
   timeout "${BLINKIT_AGENT_LLM_TIMEOUT_S:-900}" \
-    "$codex_bin" exec --cd "$ROOT" --sandbox read-only --ask-for-approval never "$(cat "$prompt")" \
+    "$codex_bin" exec -C "$ROOT" --sandbox read-only --ephemeral --color never -c 'approval_policy="never"' - <"$prompt" \
     >"$out" 2>&1
   rc=$?
   log "read-only Codex escalation finished rc=$rc out=$out"
