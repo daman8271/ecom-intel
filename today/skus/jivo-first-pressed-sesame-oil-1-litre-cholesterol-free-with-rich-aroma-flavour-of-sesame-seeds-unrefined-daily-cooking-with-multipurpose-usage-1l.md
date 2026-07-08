@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-07-05
-observations: 104
-min_price: 318
-max_price: 349
-latest_price: 318
+last_seen: 2026-07-08
+observations: 145
+min_price: 299
+max_price: 449
+latest_price: 299
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹318 (47.0% off)
+- [[amazon-fresh]] — latest ₹299 (50.2% off)
 - [[amazon-now]] — latest ₹329 (45.2% off)
 
 ## Available in cities
-[[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]]
+[[Bengaluru]] · [[Chandigarh]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Noida]]
 
-## Runs that observed this SKU (3)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (5)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (104 observations)
+## Price history (145 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -141,6 +141,47 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-05-1604,2026-07-05,amazon-fresh,Delhi,110091,318,600,47,1
 2026-07-05-1604,2026-07-05,amazon-fresh,Gurgaon,122001,318,600,47,1
 2026-07-05-1604,2026-07-05,amazon-fresh,Gurgaon,122010,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Bengaluru,560036,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600002,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600003,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600005,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600006,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600016,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600017,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600025,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Chennai,600083,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110001,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110002,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110003,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110004,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110006,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110013,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110014,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110016,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110017,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110024,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110025,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110031,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110044,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110048,318,600,47,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110055,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110091,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Noida,201301,449,600,25.2,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Noida,201303,449,600,25.2,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560001,318,600,47,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560003,318,600,47,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560006,318,600,47,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560036,318,600,47,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560040,318,600,47,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Bengaluru,560072,318,600,47,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600002,299,600,50.2,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600003,299,600,50.2,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600005,299,600,50.2,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600006,299,600,50.2,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600016,318,600,47,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600017,299,600,50.2,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600025,299,600,50.2,1
+2026-07-08-0700,2026-07-08,amazon-fresh,Chennai,600083,299,600,50.2,1
 ```
 
 ---

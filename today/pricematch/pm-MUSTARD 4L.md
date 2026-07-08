@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-06
-observations: 224
+last_seen: 2026-07-08
+observations: 240
 latest_status: NOT_LISTED
 below_days: 3
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-4-litre-contains
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-06) — ref ₹799 vs live ₹-
-- **Days below reference:** 3 of 28
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-08) — ref ₹839 vs live ₹-
+- **Days below reference:** 3 of 30
 - **Below on:** [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]]
 
-## Ref-vs-live history (224 observations)
+## Ref-vs-live history (240 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -269,6 +269,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-06,flipkart,OOS,SVD,799,,,,,,0,false
 2026-07-06,flipkart-minutes,OOS,SVD,799,,,,,,0,false
 2026-07-06,zepto,NOT_LISTED,SVD,799,,,,,,0,false
+2026-07-07,amazon,OOS,SVD,799,,,,,,0,false
+2026-07-07,amazon-fresh,NOT_LISTED,SVD,799,,,,,,0,false
+2026-07-07,amazon-now,NOT_LISTED,SVD,799,,,,,,0,false
+2026-07-07,bigbasket,NOT_LISTED,SVD,799,,,,,,0,false
+2026-07-07,blinkit,NOT_LISTED,SVD,799,,,,,,0,false
+2026-07-07,flipkart,OOS,SVD,799,,,,,,0,false
+2026-07-07,flipkart-minutes,OOS,SVD,799,,,,,,0,false
+2026-07-07,zepto,NOT_LISTED,SVD,799,,,,,,0,false
+2026-07-08,amazon,OOS,BAU,839,,,,,,0,false
+2026-07-08,amazon-fresh,NOT_LISTED,BAU,839,,,,,,0,false
+2026-07-08,amazon-now,NOT_LISTED,BAU,839,,,,,,0,false
+2026-07-08,bigbasket,NOT_LISTED,BAU,839,,,,,,0,false
+2026-07-08,blinkit,NOT_LISTED,BAU,839,,,,,,0,false
+2026-07-08,flipkart,OOS,BAU,839,,,,,,0,false
+2026-07-08,flipkart-minutes,OOS,BAU,839,,,,,,0,false
+2026-07-08,zepto,NOT_LISTED,BAU,839,,,,,,0,false
 ```
 
 ---
