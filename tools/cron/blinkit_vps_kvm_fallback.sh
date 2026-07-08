@@ -202,6 +202,87 @@ ensure_shard_present() {
   [ -s "$result" ] && [ -s "$manifest" ]
 }
 
+validate_shard_quality() {
+  local total="$1" index="$2" result
+  result="$(shard_result "$total" "$index")"
+  python3 - "$result" <<'PY'
+import json, sys
+
+path = sys.argv[1]
+try:
+    d = json.load(open(path, encoding="utf-8"))
+except Exception as e:
+    raise SystemExit(f"cannot read shard result: {e}")
+s = d.get("summary") or {}
+rows = d.get("allRows") or []
+
+def as_int(v, default=0):
+    try:
+        if v is None or isinstance(v, bool):
+            return default
+        return int(v)
+    except Exception:
+        return default
+
+issues = []
+if as_int(s.get("auth_session")) != 1 or as_int(s.get("auth_required")) != 1 or as_int(s.get("auth_verified")) != 1:
+    issues.append(
+        f"auth session={s.get('auth_session')} required={s.get('auth_required')} verified={s.get('auth_verified')}"
+    )
+if as_int(s.get("auth_verified_pincodes")) != as_int(s.get("pincodes_total")):
+    issues.append(
+        f"auth_pincodes={s.get('auth_verified_pincodes')}/{s.get('pincodes_total')}"
+    )
+if as_int(s.get("pdp_price_probe_failed")) > 0:
+    issues.append(f"pdp_price_probe_failed={s.get('pdp_price_probe_failed')}")
+calc_unverified = sum(
+    1 for row in rows
+    if not row.get("in_stock")
+    and not row.get("pdp_checked")
+    and str(row.get("stock_source") or "").strip().lower() not in {"pdp", "pdp_probe"}
+)
+summary_unverified = as_int(s.get("unverified_oos"), calc_unverified)
+unverified = max(calc_unverified, summary_unverified)
+if unverified > 0:
+    issues.append(f"unverified_oos={unverified}")
+
+if issues:
+    print("; ".join(issues))
+    raise SystemExit(1)
+print("ok")
+PY
+}
+
+repair_shard_quality_if_needed() {
+  local total="$1" index="$2" preferred_role="$3" reason
+  if reason="$(validate_shard_quality "$total" "$index" 2>&1)"; then
+    log "shard ${index}/${total} quality OK"
+    return 0
+  fi
+
+  log "shard ${index}/${total} failed quality before merge: $reason"
+  tg "[WARN] Blinkit fallback: shard ${index}/${total} failed auth/OOS quality (${reason}); rerunning once before merge."
+
+  if [ "$KVM_OK" -ne 1 ]; then
+    if prepare_kvm1; then
+      KVM_OK=1
+    fi
+  fi
+
+  if [ "$KVM_OK" -eq 1 ]; then
+    run_kvm1_shard "$total" "$index" || return 1
+  else
+    run_local_shard "$total" "$index" "$preferred_role-quality-rescue" || return 1
+  fi
+
+  if reason="$(validate_shard_quality "$total" "$index" 2>&1)"; then
+    log "shard ${index}/${total} quality OK after rescue"
+    return 0
+  fi
+  log "shard ${index}/${total} still failed quality after rescue: $reason"
+  return 1
+}
+
 merge_and_ingest() {
   local total="$1" merged pairs=() i
   merged="$DIR/shards/runs/$RUN_ID/blinkit/merged-result.json"
@@ -332,6 +413,14 @@ if [ "$TOTAL" -gt 1 ] && ! ensure_shard_present "$TOTAL" 1 "kvm1"; then
   tg "[FAIL] Blinkit fallback failed: KVM1 shard missing after local rescue for ${TODAY}."
   exit 1
 fi
+
+for i in $(seq 0 "$((TOTAL - 1))"); do
+  if ! repair_shard_quality_if_needed "$TOTAL" "$i" "vps"; then
+    log "shard ${i}/${TOTAL} failed quality and could not be rescued"
+    tg "[FAIL] Blinkit fallback failed: shard ${i}/${TOTAL} could not pass auth/OOS quality for ${TODAY}."
+    exit 1
+  fi
+done
 
 if merge_and_ingest "$TOTAL"; then
   log "fallback PASS; report=$REPORT not_listed=$NOT_LISTED"
