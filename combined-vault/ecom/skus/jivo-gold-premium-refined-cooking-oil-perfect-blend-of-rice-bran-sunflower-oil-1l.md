@@ -6,8 +6,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-31
-last_seen: 2026-07-02
-observations: 490
+last_seen: 2026-07-07
+observations: 501
 min_price: 167
 max_price: 225
 latest_price: 169
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹191 (15.1% off)
+- [[amazon-fresh]] — latest ₹169 (24.9% off)
 - [[amazon-now]] — latest ₹169 (24.9% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (34)
-[[amazon-now-2026-07-02-1219]] · [[amazon-now-2026-07-01-1440]] · [[amazon-now-2026-06-30-0928]] · [[amazon-now-2026-06-29-0903]] · [[amazon-now-2026-06-28-0905]] · [[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-27-1014]] · [[amazon-now-2026-06-26-1405]] · [[amazon-now-2026-06-26-1020]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-29-0710]] · [[amazon-fresh-2026-06-28-0710]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]] · [[amazon-fresh-2026-06-26-1250]] · [[amazon-fresh-2026-06-16-1239]] · [[amazon-fresh-2026-06-16-0903]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (36)
+[[amazon-now-2026-07-07-0730]] · [[amazon-now-2026-07-02-1219]] · [[amazon-now-2026-07-01-1440]] · [[amazon-now-2026-06-30-0928]] · [[amazon-now-2026-06-29-0903]] · [[amazon-now-2026-06-28-0905]] · [[amazon-now-2026-06-27-1346]] · [[amazon-now-2026-06-27-1014]] · [[amazon-now-2026-06-26-1405]] · [[amazon-now-2026-06-26-1020]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-01-1600]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-29-0710]] · [[amazon-fresh-2026-06-28-0710]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]] · [[amazon-fresh-2026-06-26-1250]] · [[amazon-fresh-2026-06-16-1239]] · [[amazon-fresh-2026-06-16-0903]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-03-1200]] · [[amazon-fresh-2026-06-03-0900]] · [[amazon-fresh-2026-06-02-1600]] · [[amazon-fresh-2026-06-02-1200]] · [[amazon-fresh-2026-06-02-0900]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (490 observations)
+## Price history (501 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -527,6 +527,17 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560078,169,225,24.9,1
 2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560104,169,225,24.9,1
 2026-07-02-1219,2026-07-02,amazon-now,Bengaluru,560109,169,225,24.9,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110003,169,225,24.9,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110013,179,225,20.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110016,179,225,20.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110017,179,225,20.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110024,179,225,20.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110025,179,225,20.4,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110044,169,225,24.9,1
+2026-07-07-0608,2026-07-07,amazon-fresh,Delhi,110048,169,225,24.9,1
+2026-07-07-0730,2026-07-07,amazon-now,Delhi,110003,169,225,24.9,1
+2026-07-07-0730,2026-07-07,amazon-now,Delhi,110044,169,225,24.9,1
+2026-07-07-0730,2026-07-07,amazon-now,Delhi,110065,169,225,24.9,1
 ```
 
 ---

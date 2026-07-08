@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR69E9959"
+title: "DL01MA5762"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,38 +10,38 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR69E9959
+# DL01MA5762
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35256
-- **doc_num:** 706260666
-- **doc_date:** 2026-06-23
-- **doc_total:** 114220.00
+- **doc_entry:** 35430
+- **doc_num:** 706260769
+- **doc_date:** 2026-06-26
+- **doc_total:** 44530.00
 - **branch_id:** 1
 - **branch_name:** DELHI
 - **card_code:** CUSTA000048
 - **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD SONIPAT 2
-- **ship_to_address:** VILLAGE BIGHAN  29 10 11 12 13 18 19 20 21 23/1 24/1 41//4/1/1SONIPAT-131039IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD HOOGLY
+- **ship_to_address:** SERAMPORE DUNKUNI  MALLICPARA SATGHARAHOOGLY-712203IN
+- **place_of_supply:** WB
+- **bp_gstin:** 19AAECR0564M1Z0
 - **eway_bill:** 
-- **vehicle_no:** HR69E9959
-- **transporter_name:** Jivo Vehicle
-- **bilty_no:** NA
-- **bilty_date:** 2026-06-29
+- **vehicle_no:** DL01MA5762
+- **transporter_name:** Pick & Ship
+- **bilty_no:** 2723
+- **bilty_date:** 2026-06-30
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** DL-FG
-- **item_summary:** FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS
-- **base_refs:** 1706264654
-- **total_quantity:** 168.000
-- **total_litres:** 552.000
+- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS
+- **base_refs:** 1706264679
+- **total_quantity:** 124.000
+- **total_litres:** 172.000
 - **total_boxes:** 0.000
-- **total_weight:** 544.310
+- **total_weight:** 168.933
 - **line_count:** 5
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": 692, "sap_invoice_doc_entry": 35256, "sap_invoice_doc_num": "706260666", "invoice_number": "706260666", "eway_bill": "322273544251", "invoice_weight": "544.310", "invoice_amount": "114220.00", "place_of_supply": "HR", "location": "Khasra No.20//11/2/3,12,19,20/1/2,21,22,,39//1,2/29,10,11,12,13,18,19,20,21,23/1,24/1,41//4/1/1,Village Bighan, Sonepat, Haryana-131039", "product_variety": "Oil", "total_litres": "552.000", "effective_month": "2026-06", "budget_delivery_point": "SONIPAT", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 27, "transporter_id": 20, "driver_id": null, "linked_vehicle_entry_id": 1239, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-29T15:28:48.032351Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-29", "priority": "HIGH", "transporter_name": "Jivo Wellness", "transporter_gstin": "", "contact_person": "Mikha singh", "mobile_no": "1234567891", "vehicle_no": "HR69E9959", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "001", "bilty_date": "2026-06-29", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-29_at_7.10.37_PM_1.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-29 at 7.10.37 PM (1).jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "30/06/2026 11:30 AM IST", "created_at": "2026-06-27T18:56:38.162498+05:30", "updated_at": "2026-06-29T20:58:48.042243+05:30"}
+  {"id": 746, "sap_invoice_doc_entry": 35430, "sap_invoice_doc_num": "706260769", "invoice_number": "706260769", "eway_bill": "342273910362", "invoice_weight": "168.933", "invoice_amount": "44530.00", "place_of_supply": "WB", "location": "Mallickpara Satghara Serampore ,Dankuni ,Hooghly KOLKATA 712203", "product_variety": "Oil", "total_litres": "172.000", "effective_month": "2026-06", "budget_delivery_point": "HOOGLY", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 351, "transporter_id": 85, "driver_id": null, "linked_vehicle_entry_id": 1304, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-30T14:33:33.700593Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-30", "priority": "HIGH", "transporter_name": "PICK & SHIP", "transporter_gstin": "09AAQCP4145A1ZF", "contact_person": "shukla", "mobile_no": "9958007610", "vehicle_no": "DL01MA5762", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "2722", "bilty_date": "2026-06-30", "bilty_attachment": "/media/sales_dispatch/attachments/EwaybillPrint_-_706260773_1.pdf", "bilty_attachment_name": "EwaybillPrint - 706260773 (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-29T19:56:48.054152+05:30", "updated_at": "2026-06-30T20:03:33.714919+05:30"}
   ```

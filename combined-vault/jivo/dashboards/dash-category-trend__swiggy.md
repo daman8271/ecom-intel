@@ -55,19 +55,19 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 83635.0,
+   "commodity_ltrs": 81655.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 80564.0,
-   "total_ltrs": 164199.0,
+   "premium_ltrs": 77245.0,
+   "total_ltrs": 158900.0,
    "year": 2026
   },
   {
-   "commodity_ltrs": 18660.0,
+   "commodity_ltrs": 28446.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 11500.0,
-   "total_ltrs": 30160.0,
+   "premium_ltrs": 25163.0,
+   "total_ltrs": 53609.0,
    "year": 2026
   }
  ],

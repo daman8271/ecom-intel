@@ -20,100 +20,122 @@ Up: [[dashboards-index]] · [[pf-zomato]]
 {
  "by_city": [
   {
-   "city": "BENGALURU",
-   "open_ltrs": 546.0,
+   "city": "KOLKATA",
+   "open_ltrs": 720.0,
    "open_pos": 1,
-   "open_units": 62.0,
-   "order_value": 121061.76,
-   "pending_ltrs": 546.0,
-   "pending_units": 62.0
+   "open_units": 400.0,
+   "order_value": 207089.8,
+   "pending_ltrs": 720.0,
+   "pending_units": 400.0
   }
  ],
  "by_distributor": [
   {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "open_ltrs": 546.0,
+   "distributor": "BABA LOKENATH TRADERS",
+   "open_ltrs": 720.0,
    "open_pos": 1,
-   "open_units": 62.0,
-   "order_value": 121061.76,
-   "pending_ltrs": 546.0,
-   "pending_units": 62.0
+   "open_units": 400.0,
+   "order_value": 207089.8,
+   "pending_ltrs": 720.0,
+   "pending_units": 400.0
   }
  ],
  "by_po": [
   {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "Hoskate Bangalore",
-   "open_ltrs": 546.0,
+   "distributor": "BABA LOKENATH TRADERS",
+   "location": "Kolkata",
+   "open_ltrs": 720.0,
    "open_pos": 1,
-   "open_units": 62.0,
-   "order_value": 121061.76,
-   "pending_ltrs": 546.0,
-   "pending_units": 62.0,
-   "po_date": "04-07-2026",
-   "po_expiry_date": "20-07-2026",
-   "po_number": "ZHPKA27-PO-3744894"
+   "open_units": 400.0,
+   "order_value": 207089.8,
+   "pending_ltrs": 720.0,
+   "pending_units": 400.0,
+   "po_date": "06-07-2026",
+   "po_expiry_date": "13-07-2026",
+   "po_number": "ZHPWB27-PO-3754556"
   }
  ],
  "by_sku": [
   {
-   "item": "CANOLA 15L",
-   "open_ltrs": 450.0,
+   "item": "SANO POMACE 5L",
+   "open_ltrs": 300.0,
    "open_pos": 1,
-   "open_units": 30.0,
-   "order_value": 75000.0,
-   "pending_ltrs": 450.0,
-   "pending_units": 30.0,
-   "sku_code": "136246",
-   "sku_name": "Jivo - Canola Refined Oil, 15 L Tin"
+   "open_units": 60.0,
+   "order_value": 66000.0,
+   "pending_ltrs": 300.0,
+   "pending_units": 60.0,
+   "sku_code": "146832",
+   "sku_name": "Sano - Pomace Olive Oil, 5 L"
   },
   {
-   "item": "EXTRA LIGHT 5L",
-   "open_ltrs": 80.0,
+   "item": "SANO POMACE 1L",
+   "open_ltrs": 160.0,
    "open_pos": 1,
-   "open_units": 16.0,
-   "order_value": 38384.8,
-   "pending_ltrs": 80.0,
-   "pending_units": 16.0,
-   "sku_code": "136713",
-   "sku_name": "Jivo - Extra Light Olive Oil, 5 L"
+   "open_units": 160.0,
+   "order_value": 35200.0,
+   "pending_ltrs": 160.0,
+   "pending_units": 160.0,
+   "sku_code": "146831",
+   "sku_name": "Sano - Pomace Olive Oil, 1 L"
   },
   {
-   "item": "EXTRA LIGHT 1L",
-   "open_ltrs": 16.0,
+   "item": "EXTRA VIRGIN 1L",
+   "open_ltrs": 140.0,
    "open_pos": 1,
-   "open_units": 16.0,
-   "order_value": 7676.96,
-   "pending_ltrs": 16.0,
-   "pending_units": 16.0,
-   "sku_code": "136712",
-   "sku_name": "Jivo - Extra Light Olive Oil, 1 L"
+   "open_units": 140.0,
+   "order_value": 80000.2,
+   "pending_ltrs": 140.0,
+   "pending_units": 140.0,
+   "sku_code": "136710",
+   "sku_name": "Jivo - Extra Virgin Olive Oil, 1 L"
+  },
+  {
+   "item": "CANOLA 5L",
+   "open_ltrs": 100.0,
+   "open_pos": 1,
+   "open_units": 20.0,
+   "order_value": 19809.6,
+   "pending_ltrs": 100.0,
+   "pending_units": 20.0,
+   "sku_code": "137069",
+   "sku_name": "Jivo - Cold Press Canola Oil, 5 L"
+  },
+  {
+   "item": "JIVO POMACE 1L",
+   "open_ltrs": 20.0,
+   "open_pos": 1,
+   "open_units": 20.0,
+   "order_value": 6080.0,
+   "pending_ltrs": 20.0,
+   "pending_units": 20.0,
+   "sku_code": "133173",
+   "sku_name": "Jivo - Pomace Olive Oil, 1 L"
   }
  ],
  "by_warehouse": [
   {
-   "open_ltrs": 546.0,
+   "open_ltrs": 720.0,
    "open_pos": 1,
-   "open_units": 62.0,
-   "order_value": 121061.76,
-   "pending_ltrs": 546.0,
-   "pending_units": 62.0,
-   "warehouse": "Hoskate Bangalore"
+   "open_units": 400.0,
+   "order_value": 207089.8,
+   "pending_ltrs": 720.0,
+   "pending_units": 400.0,
+   "warehouse": "Kolkata"
   }
  ],
  "defaulted_to_latest": true,
  "format": "ZOMATO",
- "max_po_date": "04-07-2026",
- "min_po_date": "04-07-2026",
+ "max_po_date": "06-07-2026",
+ "min_po_date": "06-07-2026",
  "platform": "zomato",
  "po_month": "JULY",
  "totals": {
-  "open_ltrs": 546.0,
+  "open_ltrs": 720.0,
   "open_pos": 1,
-  "open_units": 62.0,
-  "pending_ltrs": 546.0,
-  "pending_units": 62.0,
-  "rows": 3
+  "open_units": 400.0,
+  "pending_ltrs": 720.0,
+  "pending_units": 400.0,
+  "rows": 5
  },
  "year": 2026
 }

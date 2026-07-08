@@ -16,11 +16,11 @@ tags:
 
 ## Fields
 - **document_type:** STOCK_TRANSFER
-- **doc_entry:** 3121
-- **doc_num:** 626674669
-- **doc_date:** 2026-06-25
+- **doc_entry:** 3146
+- **doc_num:** 626674683
+- **doc_date:** 2026-06-26
 - **doc_total:** None
-- **branch_id:** 1
+- **branch_id:** 2
 - **branch_name:** 
 - **card_code:** 
 - **card_name:** 
@@ -33,16 +33,16 @@ tags:
 - **transporter_name:** 
 - **bilty_no:** 
 - **bilty_date:** None
-- **from_warehouse:** DL-MP
-- **to_warehouse:** DL-GG
+- **from_warehouse:** BH-FGM
+- **to_warehouse:** DL-INT
 - **warehouses:** 
 - **item_summary:** 
 - **base_refs:** 
-- **total_quantity:** 2.000
+- **total_quantity:** 17640.000
 - **total_litres:** None
 - **total_boxes:** None
 - **total_weight:** None
-- **line_count:** 1
+- **line_count:** 4
 - **items:**
   ```json
   []

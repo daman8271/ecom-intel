@@ -28,22 +28,22 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
+   "delta_pct": -95.4,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 480.0,
+   "name": "SUNFLOWER 1L",
+   "prev_ltrs": 10480.0
+  },
+  {
+   "brand": null,
+   "code": null,
    "delta_pct": -93.7,
    "head": "COMMODITY",
    "is_new": false,
    "ltrs": 335.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 5285.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -97.5,
-   "head": "COMMODITY",
-   "is_new": false,
-   "ltrs": 260.0,
-   "name": "SUNFLOWER 1L",
-   "prev_ltrs": 10480.0
   },
   {
    "brand": null,
@@ -58,10 +58,10 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -84.1,
+   "delta_pct": -79.6,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 140.0,
+   "ltrs": 180.0,
    "name": "CANOLA 1L",
    "prev_ltrs": 883.0
   },
@@ -110,10 +110,10 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -97.5,
+  "delta_pct": -95.4,
   "head": "COMMODITY",
   "is_new": false,
-  "ltrs": 260.0,
+  "ltrs": 480.0,
   "name": "SUNFLOWER 1L",
   "prev_ltrs": 10480.0
  },

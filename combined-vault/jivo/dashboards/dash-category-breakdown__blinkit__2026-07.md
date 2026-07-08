@@ -22,17 +22,25 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 1740.0,
+    "ltrs": 4160.0,
     "name": "MUSTARD"
+   },
+   {
+    "ltrs": 160.0,
+    "name": "SUNFLOWER"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 1740.0,
+    "ltrs": 4160.0,
     "name": "MUSTARD KACCHI GHANI"
+   },
+   {
+    "ltrs": 160.0,
+    "name": "SUNFLOWER"
    }
   ],
-  "total_ltrs": 1740.0
+  "total_ltrs": 4320.0
  },
  "errors": [],
  "month": 7,
@@ -40,29 +48,29 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "premium": {
   "categories": [
    {
-    "ltrs": 60.0,
+    "ltrs": 554.0,
     "name": "OLIVE"
    },
    {
-    "ltrs": 40.0,
+    "ltrs": 180.0,
     "name": "CANOLA"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 40.0,
+    "ltrs": 488.0,
+    "name": "JIVO POMACE"
+   },
+   {
+    "ltrs": 180.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 40.0,
+    "ltrs": 66.0,
     "name": "EXTRA LIGHT"
-   },
-   {
-    "ltrs": 20.0,
-    "name": "JIVO POMACE"
    }
   ],
-  "total_ltrs": 100.0
+  "total_ltrs": 734.0
  },
  "source": "primary",
  "year": 2026

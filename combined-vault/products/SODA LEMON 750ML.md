@@ -29,17 +29,19 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000231` |
 | canonical_sku(s) | `jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml`, `fizzy-water-flavoured-with-lemon-750ml` |
 | Category | [[Category - DRINKS\|DRINKS]] |
+| Sub-category | SODA |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 750ML |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-06).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 45 | — | — | ⚪ OOS | SVD | 2026-07-06 |
-| [[Platform - bigbasket\|bigbasket]] | 45 | 55 | 22.22 | 🔴 ABOVE | SVD | 2026-07-06 |
+| [[Platform - amazon\|amazon]] | 45 | — | — | ⚪ OOS | BAU | 2026-07-08 |
+| [[Platform - bigbasket\|bigbasket]] | 45 | 55 | 22.22 | 🔴 ABOVE | BAU | 2026-07-08 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

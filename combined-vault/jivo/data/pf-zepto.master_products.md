@@ -2,7 +2,7 @@
 type: data
 entity: pf-zepto
 table: master_products
-rows: 2
+rows: 1
 chunk: 1/1
 source: app-master
 tags:
@@ -14,11 +14,10 @@ tags:
 # Raw `master_products` rows for [[pf-zepto]]
 
 Up: [[pf-zepto]]
-Canonical raw rows (2) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (1) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_name,sku_sap_code,sku_sap_name,tax_rate,uom
-,ZEPTO,CF896675-3AC9-4A40-B134-603931BBA8E7,GROUNDNUT 200ML,PREMIUM,200 MLS,0.2,Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil - 1 Pack(200 m),,,,MLS
 ,ZEPTO,56266F28-18E4-4A38-9124-05801C53B6F2,EXTRA VIRGIN 200ML,PREMIUM,200 MLS,0.2,Jivo Olive Oil Extra Virgin - 1 pack (200 ml),,,,MLS
 ```
 

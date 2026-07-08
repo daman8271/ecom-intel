@@ -28,9 +28,19 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
  "month": 7,
  "platform": "amazon",
  "premium": {
-  "categories": [],
-  "sub_categories": [],
-  "total_ltrs": 0
+  "categories": [
+   {
+    "ltrs": 9580.0,
+    "name": "GROUNDNUT"
+   }
+  ],
+  "sub_categories": [
+   {
+    "ltrs": 9580.0,
+    "name": "GROUNDNUT"
+   }
+  ],
+  "total_ltrs": 9580.0
  },
  "source": "primary",
  "year": 2026

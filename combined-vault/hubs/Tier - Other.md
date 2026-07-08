@@ -12,7 +12,7 @@ tags:
 
 Up: [[Home]]
 
-**59 matched products** in the Other tier.
+**60 matched products** in the Other tier.
 
 ## 2026 aggregate (target-history)
 - _OTHER tier not tracked in target-history (PREMIUM/COMMODITY only)._
@@ -30,7 +30,7 @@ Up: [[Home]]
 - [[CINNAMON 100G]] — [[Category - SPICES\|SPICES]] · 100G
 - [[CINNAMON BARK 100G]] — [[Category - SPICES\|SPICES]] · 100G
 - [[CLOVE 100G]] — [[Category - SPICES\|SPICES]] · 100G
-- [[COFFEE]] — [[Category - COFFEE\|COFFEE]] · —
+- [[COFFEE]] — [[Category - DRINKS\|DRINKS]] · —
 - [[CUMIN SEEDS 100G]] — [[Category - SEEDS\|SEEDS]] · 100G
 - [[DRY FRUITS 200G]] — [[Category - OTHER\|OTHER]] · 200G
 - [[ENERGY DRINK 200ML]] — [[Category - OTHER\|OTHER]] · 200ML
@@ -56,6 +56,7 @@ Up: [[Home]]
 - [[ROSE FLAVOR 200ML]] — [[Category - OTHER\|OTHER]] · 200ML
 - [[ROSEMARY LEAVES 150G]] — [[Category - SPICES\|SPICES]] · 150G
 - [[SAFFRON 1GMS]] — [[Category - SPICES\|SPICES]] · 1GMS
+- [[SANO CLASSIC 1L]] — [[Category - OTHER\|OTHER]] · 1L
 - [[SANO HONEY 1KG]] — [[Category - HONEY\|HONEY]] · 1KG
 - [[SANO HONEY 500G]] — [[Category - HONEY\|HONEY]] · 500G
 - [[SODA 750ML]] — [[Category - DRINKS\|DRINKS]] · 750ML

@@ -788,14 +788,14 @@
         "sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l",
         "edogvef33gyxkhew"
       ],
-      "category": "OLIVE",
+      "category": "OTHER",
       "name": "SANO CLASSIC 1L",
       "norm": "SANOCLASSIC1L",
       "saps": [
         "FG0000162"
       ],
       "status": "active",
-      "tier": "PREMIUM"
+      "tier": "OTHER"
     },
     "JID-0052": {
       "canons": [
@@ -1379,7 +1379,7 @@
         "jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-coffee-powder-easy-to-prepare-with-rich-aroma-and-taste-coffee-for-daily-use-100ml",
         "cfegmj5gje7hd3dq"
       ],
-      "category": "COFFEE",
+      "category": "DRINKS",
       "name": "COFFEE",
       "norm": "COFFEE",
       "saps": [
@@ -1447,7 +1447,7 @@
       "canons": [
         "jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml"
       ],
-      "category": "OLIVE",
+      "category": "SLICED OLIVE",
       "name": "BLACK OLIVE 470G",
       "norm": "BLACKOLIVE470G",
       "saps": [
@@ -2198,5 +2198,5 @@
   },
   "next_serial": 152,
   "prefix": "JID-",
-  "updated_at": "2026-07-06T05:21:31.056585+00:00"
+  "updated_at": "2026-07-08T06:00:47.456968+00:00"
 }

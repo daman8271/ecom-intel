@@ -23,12 +23,12 @@ Up: [[Home]]
 | [[Tier - Commodity\|Commodity]] | 158,007 | 168,288 |
 
 ## Member products
-- [[CANOLA 1L]] — ref ₹259 / live ₹239 (🟢 BELOW)
-- [[CANOLA 5L]] — ref ₹1249 / live ₹1193 (🟢 BELOW)
+- [[CANOLA 1L]] — ref ₹249 / live ₹233 (🟢 BELOW)
+- [[CANOLA 5L]] — ref ₹1159 / live ₹1193 (🔴 ABOVE)
 - [[EXTRA LIGHT 1L]] — ref ₹599 / live ₹564 (🟢 BELOW)
-- [[EXTRA LIGHT 2L]] — ref ₹1189 / live ₹1139 (🟢 BELOW)
-- [[JIVO POMACE 1L]] — ref ₹429 / live ₹387 (🟢 BELOW)
-- [[JIVO POMACE 5L]] — ref ₹2119 / live ₹1687 (🟢 BELOW)
-- [[MUSTARD 1L]] — ref ₹209 / live ₹158 (🟢 BELOW)
+- [[EXTRA LIGHT 2L]] — ref ₹1159 / live ₹1100 (🟢 BELOW)
+- [[JIVO POMACE 1L]] — ref ₹429 / live ₹379 (🟢 BELOW)
+- [[JIVO POMACE 5L]] — ref ₹1999 / live ₹1687 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹209 / live ₹171 (🟢 BELOW)
 - [[MUSTARD 5L]] — ref ₹999 / live ₹868 (🟢 BELOW)
-- [[SUNFLOWER 1L]] — ref ₹219 / live ₹195 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹209 / live ₹195 (🟢 BELOW)

@@ -27,20 +27,20 @@ tags:
 - **weighbridge_slip_no:** 
 - **security_name:** Sachin
 - **remarks:** 
-- **status:** LOADING
-- **gate_out_date:** None
-- **out_time:** None
-- **departed_at:** None
+- **status:** DEPARTED
+- **gate_out_date:** 2026-07-07
+- **out_time:** 15:45:50
+- **departed_at:** 2026-07-07T15:45:35.770710+05:30
 - **gatepass_no:** None
 - **gatepass_printed_at:** None
 - **gatepass_committed_at:** None
 - **gate_ins:**
   ```json
-  [{"id": 179, "entry_no": "EVGI-20260626-0009", "company_id": 1, "company_code": "JIVO_OIL", "company_name": "Jivo Oil", "retired_at": null, "cover_count": 3}]
+  [{"id": 368, "entry_no": "EVGI-20260707-0010", "company_id": 3, "company_code": "JIVO_BEVERAGES", "company_name": "Jivo Beverages", "retired_at": "2026-07-07T15:45:44.606852+05:30", "cover_count": 2}, {"id": 179, "entry_no": "EVGI-20260626-0009", "company_id": 1, "company_code": "JIVO_OIL", "company_name": "Jivo Oil", "retired_at": "2026-07-07T15:45:38.145372+05:30", "cover_count": 7}]
   ```
 - **gate_outs:**
   ```json
-  [{"id": 172, "entry_no": "DOCK-20260626-0006", "company_id": 1, "company_code": "JIVO_OIL", "company_name": "Jivo Oil", "status": "DOCKED", "gatepass_no": null, "sap_doc_num": "626060447"}, {"id": 171, "entry_no": "DOCK-20260626-0005", "company_id": 1, "company_code": "JIVO_OIL", "company_name": "Jivo Oil", "status": "DISPATCHED", "gatepass_no": "DCK/JIVO_OIL/2026-27/000041", "sap_doc_num": "626060452, 626060466"}]
+  [{"id": 172, "entry_no": "DOCK-20260626-0006", "company_id": 1, "company_code": "JIVO_OIL", "company_name": "Jivo Oil", "status": "CANCELLED", "gatepass_no": null, "sap_doc_num": "626060447, 626070235, 626070226, 626070193, 626070189"}, {"id": 171, "entry_no": "DOCK-20260626-0005", "company_id": 1, "company_code": "JIVO_OIL", "company_name": "Jivo Oil", "status": "DISPATCHED", "gatepass_no": "DCK/JIVO_OIL/2026-27/000041", "sap_doc_num": "626060452, 626060466"}]
   ```
 
 ## Related

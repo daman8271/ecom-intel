@@ -63,11 +63,11 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 2620.0,
+   "commodity_ltrs": 5220.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 564.0,
-   "total_ltrs": 3184.0,
+   "premium_ltrs": 764.0,
+   "total_ltrs": 5984.0,
    "year": 2026
   }
  ],

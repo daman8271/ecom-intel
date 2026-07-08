@@ -2,7 +2,7 @@
 type: platform-hub
 platform: zepto
 archetype: B_qcomm
-skus_listed: 36
+skus_listed: 37
 sell_out_empty: false
 tags:
   - type/platform-hub
@@ -17,8 +17,8 @@ Up: [[platforms-index]]
 
 **Archetype B — Quick-commerce (availability battleground)**
 
-## SKUs listed here (36)
-[[sku-FG0000004]] · [[sku-FG0000005]] · [[sku-FG0000008]] · [[sku-FG0000009]] · [[sku-FG0000011]] · [[sku-FG0000015]] · [[sku-FG0000021]] · [[sku-FG0000026]] · [[sku-FG0000028]] · [[sku-FG0000030]] · [[sku-FG0000032]] · [[sku-FG0000042]] · [[sku-FG0000053]] · [[sku-FG0000064]] · [[sku-FG0000074]] · [[sku-FG0000081]] · [[sku-FG0000082]] · [[sku-FG0000083]] · [[sku-FG0000088]] · [[sku-FG0000114]] · [[sku-FG0000128]] · [[sku-FG0000142]] · [[sku-FG0000143]] · [[sku-FG0000149]] · [[sku-FG0000191]] · [[sku-FG0000227]] · [[sku-FG0000228]] · [[sku-FG0000229]] · [[sku-FG0000230]] · [[sku-FG0000250]] · [[sku-FG0000270]] · [[sku-FG0000278]] · [[sku-FG0000279]] · [[sku-FG0000292]] · [[sku-FG0000293]] · [[sku-FG0000309]]
+## SKUs listed here (37)
+[[sku-FG0000004]] · [[sku-FG0000005]] · [[sku-FG0000008]] · [[sku-FG0000009]] · [[sku-FG0000011]] · [[sku-FG0000015]] · [[sku-FG0000021]] · [[sku-FG0000026]] · [[sku-FG0000028]] · [[sku-FG0000030]] · [[sku-FG0000032]] · [[sku-FG0000042]] · [[sku-FG0000053]] · [[sku-FG0000064]] · [[sku-FG0000074]] · [[sku-FG0000081]] · [[sku-FG0000082]] · [[sku-FG0000083]] · [[sku-FG0000088]] · [[sku-FG0000114]] · [[sku-FG0000128]] · [[sku-FG0000142]] · [[sku-FG0000143]] · [[sku-FG0000149]] · [[sku-FG0000191]] · [[sku-FG0000227]] · [[sku-FG0000228]] · [[sku-FG0000229]] · [[sku-FG0000230]] · [[sku-FG0000250]] · [[sku-FG0000270]] · [[sku-FG0000278]] · [[sku-FG0000279]] · [[sku-FG0000292]] · [[sku-FG0000293]] · [[sku-FG0000309]] · [[sku-FG0000393]]
 
 ## Complete data
 Full raw rows (embedded once here — this is the canonical home):

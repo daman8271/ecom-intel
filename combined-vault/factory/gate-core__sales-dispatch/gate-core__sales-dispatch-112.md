@@ -22,9 +22,9 @@ tags:
 - **company_name:** Jivo Mart
 - **arrival:** 12
 - **arrival_no:** ARV-20260623-0009
-- **arrival_status:** LOADING
+- **arrival_status:** DEPARTED
 - **arrival_company_count:** 1
-- **arrival_can_depart:** True
+- **arrival_can_depart:** False
 - **gatepass_print_locked:** False
 - **gatepass_lock_reason:** 
 - **vehicle_entry:** 959

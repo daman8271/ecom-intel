@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,16.0,SWIGGY,,2026-07-03,78180,390.0015,JAIPUR,16.0,2026-06-29,2026-07-08,JPAPO59390,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-01,total_po_zbs:78180,2026-07-06
-195.24,0.0,SWIGGY,,2026-07-03,78181,205.002,JAIPUR,8.0,2026-06-29,2026-07-08,JPAPO59390,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-01,total_po_zbs:78181,2026-07-06
-149.52,280.0,SWIGGY,,2026-07-03,78182,156.996,JAIPUR,280.0,2026-06-29,2026-07-08,JPAPO59390,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-01,total_po_zbs:78182,2026-07-06
+371.43,16.0,SWIGGY,,2026-07-03,78180,390.0015,JAIPUR,16.0,2026-06-29,2026-07-08,JPAPO59390,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-07-01,total_po_zbs:78180,2026-07-08
+195.24,0.0,SWIGGY,,2026-07-03,78181,205.002,JAIPUR,8.0,2026-06-29,2026-07-08,JPAPO59390,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-07-01,total_po_zbs:78181,2026-07-08
+149.52,280.0,SWIGGY,,2026-07-03,78182,156.996,JAIPUR,280.0,2026-06-29,2026-07-08,JPAPO59390,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,SUSTAINQUEST PRIVATE LIMITED,2026-07-01,total_po_zbs:78182,2026-07-08
 ```
 
 ---

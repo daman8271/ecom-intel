@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Preferences (39)
+title: Preferences (42)
 tags:
   - moc
   - source/factory
 ---
 
-# Preferences — 39 records
+# Preferences — 42 records
 
 From `/notifications/preferences/`. Up: [[_HOME]]
 
@@ -48,4 +48,7 @@ From `/notifications/preferences/`. Up: [[_HOME]]
 - [[notifications__preferences-36]] — Stock Level Alert
 - [[notifications__preferences-37]] — Docking Scan Skip Requested
 - [[notifications__preferences-38]] — Docking Scan Skip Reviewed
-- [[notifications__preferences-39]] — General Announcement
+- [[notifications__preferences-39]] — Work Permit Submitted for Approval
+- [[notifications__preferences-40]] — Work Permit Approved
+- [[notifications__preferences-41]] — Work Permit Expired
+- [[notifications__preferences-42]] — General Announcement

@@ -14,7 +14,7 @@ Up: [[Home]]
 - **Retired/merged JIDs (kept, never reused):** 0
 - **Highest serial minted:** JID-0151
 - **Identity conflicts to review:** 14
-- **Generated:** 2026-07-06T05:21:31.072808+00:00
+- **Generated:** 2026-07-08T06:00:47.475588+00:00
 
 ## Registry — JID ↔ product ↔ external keys
 | JID | Product (our canonical) | SAP code(s) — app/factory | Ecom canonical listing(s) | Category | Tier |
@@ -69,7 +69,7 @@ Up: [[Home]]
 | `JID-0048` | [[COCONUT 500ML]] | `FG0000157` | `jivo-pure-extra-virgin-coconut-oil-500-ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-500ml`, `edohf5f6bs3mehjd`, `jivo-pure-extra-virgin-coconut-oil-500-ml-500ml` | COCONUT | PREMIUM |
 | `JID-0049` | [[CANOLA 4L]] | `FG0000160` | `jivo-canola-cold-pressed-edible-oil-4-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-4l` | CANOLA | PREMIUM |
 | `JID-0050` | [[EXTRA VIRGIN 500ML]] | `FG0000161` | `jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-500ml`, `edogwgz7tq6zzt3h` | OLIVE | PREMIUM |
-| `JID-0051` | [[SANO CLASSIC 1L]] | `FG0000162` | `sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l`, `edogvef33gyxkhew` | OLIVE | PREMIUM |
+| `JID-0051` | [[SANO CLASSIC 1L]] | `FG0000162` | `sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l`, `edogvef33gyxkhew` | OTHER | OTHER |
 | `JID-0052` | [[COCONUT 200ML]] | `FG0000163` | `jivo-pure-extra-virgin-coconut-oil-200ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-200ml` | COCONUT | PREMIUM |
 | `JID-0053` | [[EXTRA VIRGIN 200ML]] | `FG0000164` | `jivo-extra-virgin-olive-oil-200-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-ideal-use-for-dressings-salad-and-soups-dips-marinades-200ml`, `edohgpf2zq9rqpb3` | OLIVE | PREMIUM |
 | `JID-0054` | [[CHIA SEEDS 200GM]] | `FG0000165` | `edsh4ygygrwrqrgk`, `jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-200g-200ml` | SEEDS | OTHER |
@@ -110,12 +110,12 @@ Up: [[Home]]
 | `JID-0089` | [[WATER 1L]] | `FG0000266` | `jivo-natural-mineral-1l-1l`, `jivo-natural-minerals-water-mineral-water-1l`, `jivo-mineral-water-1l` | DRINKS | OTHER |
 | `JID-0090` | [[JIVO WATER 250ML]] | `FG0000268` | `jivo-mineral-water-250ml-250ml` | DRINKS | OTHER |
 | `JID-0091` | [[SODA PEACH 750ML]] | `FG0000270` | `fizzy-water-flavoured-with-peach-750ml`, `jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml` | DRINKS | OTHER |
-| `JID-0092` | [[COFFEE]] | `FG0000271` | `jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-coffee-powder-easy-to-prepare-with-rich-aroma-and-taste-coffee-for-daily-use-100ml`, `cfegmj5gje7hd3dq` | COFFEE | OTHER |
+| `JID-0092` | [[COFFEE]] | `FG0000271` | `jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-coffee-powder-easy-to-prepare-with-rich-aroma-and-taste-coffee-for-daily-use-100ml`, `cfegmj5gje7hd3dq` | DRINKS | OTHER |
 | `JID-0093` | [[WG GINGER ALE 200ML]] | `FG0000276` | `ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml`, `jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml` | DRINKS | OTHER |
 | `JID-0094` | [[WATER PEACH 750ML]] | `FG0000277` | `fizzy-water-flavoured-with-peach-750ml`, `jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml` | DRINKS | OTHER |
 | `JID-0095` | [[LEMON 750ML]] | `FG0000278` | `fizzy-water-flavoured-with-lemon-750ml`, `jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml` | DRINKS | OTHER |
 | `JID-0096` | [[SODA 750ML]] | `FG0000282` | `jivo-extra-fizzy-soda-750-ml-soda-750ml` | DRINKS | OTHER |
-| `JID-0097` | [[BLACK OLIVE 470G]] | `FG0000288` | `jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml` | OLIVE | PREMIUM |
+| `JID-0097` | [[BLACK OLIVE 470G]] | `FG0000288` | `jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml` | SLICED OLIVE | PREMIUM |
 | `JID-0098` | [[FLAX SEEDS 400 GM]] | `FG0000290` | `jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml`, `edsh5avfzrhq43rz` | SEEDS | OTHER |
 | `JID-0099` | [[DRY FRUITS 200G]] | `FG0000291` | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` | OTHER | OTHER |
 | `JID-0100` | [[PUNJABI JEERA 160ML]] | `FG0000293` | `jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml` | DRINKS | OTHER |

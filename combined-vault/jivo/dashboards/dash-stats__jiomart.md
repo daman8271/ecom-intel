@@ -19,7 +19,7 @@ Up: [[dashboards-index]] · [[pf-jiomart]]
 ```json
 {
  "activeTrucks": 0,
- "inventory": 2223,
+ "inventory": 22,
  "openPOs": 0,
  "sells": 0
 }

@@ -11,11 +11,11 @@ tags:
 **Home MOC.** Lossless, deterministic projection of the zero-loss SSOT. Every raw row is embedded ONCE (as ```csv) under its single canonical entity; every other dimension is a body wikilink. The SKU hub is THE convergence node.
 
 ## Maps of Content
-- [[skus-index]] — 168 SKU hubs
+- [[skus-index]] — 169 SKU hubs
 - [[platforms-index]] — 11 platforms
 - [[taxonomy-index]] — tiers · brands · categories · sub-categories
 - [[vendors-index]] — 19 distributors
-- [[pos-index]] — 10219 purchase orders
+- [[pos-index]] — 10284 purchase orders
 - [[locations-index]] — 19 FCs · 0 cities
 - [[months-index]] — 31 months
 - [[dashboards-index]] — 3013 app dashboards

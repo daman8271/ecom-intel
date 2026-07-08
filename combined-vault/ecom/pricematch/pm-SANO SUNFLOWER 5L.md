@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-06
-observations: 224
+last_seen: 2026-07-08
+observations: 240
 latest_status: NOT_LISTED
-below_days: 6
+below_days: 7
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-06) — ref ₹1029 vs live ₹-
-- **Days below reference:** 6 of 28
-- **Below on:** [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-08) — ref ₹1069 vs live ₹-
+- **Days below reference:** 7 of 30
+- **Below on:** [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]]
 
-## Ref-vs-live history (224 observations)
+## Ref-vs-live history (240 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -269,6 +269,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-06,flipkart,NOT_LISTED,SVD,1029,,,,,,0,false
 2026-07-06,flipkart-minutes,NOT_LISTED,SVD,1029,,,,,,0,false
 2026-07-06,zepto,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-07,amazon,ABOVE,SVD,1029,1400,1400,1400,371,36.05,0,true
+2026-07-07,amazon-fresh,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-07,amazon-now,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-07,bigbasket,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-07,blinkit,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-07,flipkart,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-07,flipkart-minutes,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-07,zepto,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-07-08,amazon,BELOW,BAU,1069,889,889,889,-180,-16.84,1,true
+2026-07-08,amazon-fresh,NOT_LISTED,BAU,1069,,,,,,0,false
+2026-07-08,amazon-now,NOT_LISTED,BAU,1069,,,,,,0,false
+2026-07-08,bigbasket,NOT_LISTED,BAU,1069,,,,,,0,false
+2026-07-08,blinkit,NOT_LISTED,BAU,1069,,,,,,0,false
+2026-07-08,flipkart,NOT_LISTED,BAU,1069,,,,,,0,false
+2026-07-08,flipkart-minutes,NOT_LISTED,BAU,1069,,,,,,0,false
+2026-07-08,zepto,NOT_LISTED,BAU,1069,,,,,,0,false
 ```
 
 ---

@@ -39,14 +39,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-06).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 239 | 193 | -19.25 | 🟢 BELOW | SVD | 2026-07-06 |
-| [[Platform - amazon\|amazon-now]] | 239 | 193 | -19.25 | 🟢 BELOW | SVD | 2026-07-06 |
-| [[Platform - flipkart\|flipkart]] | 239 | — | — | ⚪ OOS | SVD | 2026-07-06 |
-| [[Platform - zepto\|zepto]] | 239 | 199 | -16.74 | 🟢 BELOW | SVD | 2026-07-06 |
+| [[Platform - amazon\|amazon]] | 239 | 194 | -18.83 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon-now]] | 239 | 194 | -18.83 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - flipkart\|flipkart]] | 239 | 224 | -6.28 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - zepto\|zepto]] | 239 | 199 | -16.74 | 🟢 BELOW | BAU | 2026-07-08 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -77,8 +77,8 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000142`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000142]]
-- **4592 boxes:** [[box-113022]] · [[box-113023]] · [[box-113024]] … +4589 more (tag `bridge/FG0000142`)
-- **401 boxes:** [[barcode__dispatch__reports__boxes-113480]] · [[barcode__dispatch__reports__boxes-113481]] · [[barcode__dispatch__reports__boxes-113482]] … +398 more (tag `bridge/FG0000142`)
-- **88 pallets:** [[pal-2326]] · [[pal-2327]] · [[pal-2336]] … +85 more (tag `bridge/FG0000142`)
+- **5042 boxes:** [[box-113022]] · [[box-113023]] · [[box-113024]] … +5039 more (tag `bridge/FG0000142`)
+- **450 boxes:** [[barcode__dispatch__reports__boxes-179602]] · [[barcode__dispatch__reports__boxes-179603]] · [[barcode__dispatch__reports__boxes-179604]] … +447 more (tag `bridge/FG0000142`)
+- **98 pallets:** [[pal-2326]] · [[pal-2327]] · [[pal-2336]] … +95 more (tag `bridge/FG0000142`)
 - **1 sap items:** [[quality-control__sap-items-FG0000142]]
 

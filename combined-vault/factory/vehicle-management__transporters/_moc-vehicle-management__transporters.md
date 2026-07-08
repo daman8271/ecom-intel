@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Transporter (93)
+title: Transporter (94)
 tags:
   - moc
   - source/factory
 ---
 
-# Transporter — 93 records
+# Transporter — 94 records
 
 From `/vehicle-management/transporters/`. Up: [[_HOME]]
 
@@ -25,6 +25,7 @@ From `/vehicle-management/transporters/`. Up: [[_HOME]]
 - [[trn-72]] — Bharat logistics
 - [[trn-50]] — Bhargave Road Carrier
 - [[trn-86]] — Bhumika roadline pvt ltd
+- [[trn-96]] — Bombey Srinagar
 - [[trn-35]] — B.R Agrotech ltd
 - [[trn-63]] — B. R AGROTECH LTD
 - [[trn-26]] — By Hand

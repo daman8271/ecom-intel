@@ -52,6 +52,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    "RICE",
    "RICE BRAN",
    "ROSEMARY LEAVES",
+   "SEASAME OIL",
    "SEEDS",
    "SESAME OIL",
    "SLICED OLIVE",
@@ -99,7 +100,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "BASIL SEEDS 200G",
-    "sub_category": "BASIL SEEDS"
+    "sub_category": "BASIL"
    },
    {
     "category": "SEEDS",
@@ -109,12 +110,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "BASIL SEEDS 400G",
-    "sub_category": "BASIL SEEDS"
+    "sub_category": "BASIL"
    },
    {
     "category": "SEEDS",
     "item": "BASIL SEEDS 800G",
-    "sub_category": "BASIL SEEDS"
+    "sub_category": "BASIL"
    },
    {
     "category": "SEEDS",
@@ -127,6 +128,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
     "sub_category": "BLACK CARDAMOM"
    },
    {
+    "category": "SPICES",
+    "item": "BLACK CARDAMOM 100G",
+    "sub_category": "CARDAMOM"
+   },
+   {
     "category": "SLICED OLIVE",
     "item": "BLACK OLIVE 470G",
     "sub_category": "BLACK OLIVE"
@@ -135,6 +141,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
     "category": "SLICED OLIVE",
     "item": "BLACK OLIVES 3KG",
     "sub_category": "BLACK OLIVE"
+   },
+   {
+    "category": "SPICES",
+    "item": "BLACK PAPER 100G",
+    "sub_category": "BLACK PEPPER"
    },
    {
     "category": "SPICES",
@@ -358,6 +369,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "CANOLA",
+    "item": "CANOLA 5L + EV 200 ML",
+    "sub_category": "CANOLA"
+   },
+   {
+    "category": "CANOLA",
     "item": "CANOLA 5L + EXTRA LIGHT 1L",
     "sub_category": "CANOLA"
    },
@@ -493,6 +509,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "CANOLA",
+    "item": "CANOLA 5 LTR + EXTRA VIRGIN 200 ML",
+    "sub_category": "CANOLA"
+   },
+   {
+    "category": "CANOLA",
     "item": "CANOLA 5LTR + MUSTARD 1LTR",
     "sub_category": "CANOLA"
    },
@@ -524,7 +545,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "CHIA SEEDS 200G",
-    "sub_category": "CHIA SEEDS"
+    "sub_category": "CHIA"
    },
    {
     "category": "SEEDS",
@@ -534,7 +555,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "CHIA SEEDS 400G",
-    "sub_category": "CHIA SEEDS"
+    "sub_category": "CHIA"
    },
    {
     "category": "SEEDS",
@@ -549,7 +570,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "CHIA SEEDS 800G",
-    "sub_category": "CHIA SEEDS"
+    "sub_category": "CHIA"
    },
    {
     "category": "SEEDS",
@@ -569,12 +590,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "CLOVE"
+    "sub_category": "JIVO CLOVE"
    },
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "JIVO CLOVE"
+    "sub_category": "CLOVE"
    },
    {
     "category": "COCONUT",
@@ -808,6 +829,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "OLIVE",
+    "item": "EXTRA LIGHT 4L + EV 200 ML",
+    "sub_category": "EXTRA LIGHT"
+   },
+   {
+    "category": "OLIVE",
     "item": "EXTRA LIGHT 500ML",
     "sub_category": "EXTRA LIGHT"
    },
@@ -869,6 +895,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "OLIVE",
     "item": "EXTRA LIGHT 5L + EXTRA VIRGIN 1L (BUNDLE)",
+    "sub_category": "EXTRA LIGHT"
+   },
+   {
+    "category": "OLIVE",
+    "item": "EXTRA LIGHT 5L + EXTRA VIRGIN 200 ML",
     "sub_category": "EXTRA LIGHT"
    },
    {
@@ -1068,7 +1099,22 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "OLIVE",
+    "item": "EXTRA VIRGIN 5 LTR + 200 ML",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
+    "item": "EXTRA VIRGIN 700 ML",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
     "item": "EXTRA VIRGIN 700ML",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
+    "item": "EXTRA VIRGIN 900 ML",
     "sub_category": "EXTRA VIRGIN"
    },
    {
@@ -1089,7 +1135,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "FLAX SEEDS 200G",
-    "sub_category": "FLAX SEEDS"
+    "sub_category": "FLAX"
    },
    {
     "category": "SEEDS",
@@ -1099,7 +1145,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "FLAX SEEDS 400G",
-    "sub_category": "FLAX SEEDS"
+    "sub_category": "FLAX"
    },
    {
     "category": "SEEDS",
@@ -1109,7 +1155,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "FLAX SEEDS 800G",
-    "sub_category": "FLAX SEEDS"
+    "sub_category": "FLAX"
    },
    {
     "category": "SEEDS",
@@ -1384,12 +1430,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "JIVO POMACE"
+    "sub_category": "POMACE"
    },
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "POMACE"
+    "sub_category": "JIVO POMACE"
    },
    {
     "category": "OLIVE",
@@ -1399,6 +1445,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 3L+ 3L",
+    "sub_category": "JIVO POMACE"
+   },
+   {
+    "category": "OLIVE",
+    "item": "JIVO POMACE 3L + EL 1L",
     "sub_category": "JIVO POMACE"
    },
    {
@@ -1513,16 +1564,6 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "DRINKS",
-    "item": "JIVO WATER 1L",
-    "sub_category": "MINERAL WATER"
-   },
-   {
-    "category": "DRINKS",
-    "item": "JIVO WATER 250ML",
-    "sub_category": "MINERAL WATER"
-   },
-   {
-    "category": "DRINKS",
     "item": "JIVO WATER 500 MLS",
     "sub_category": "MINERAL WATER"
    },
@@ -1574,11 +1615,6 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "MUSTARD",
     "item": "MUSTARD 1L",
-    "sub_category": "MUSTARD KACCHI GHANI"
-   },
-   {
-    "category": "MUSTARD",
-    "item": "MUSTARD 1L + 1L",
     "sub_category": "MUSTARD KACCHI GHANI"
    },
    {
@@ -1753,6 +1789,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "OLIVE",
+    "item": "POMACE 3L",
+    "sub_category": "JIVO POMACE"
+   },
+   {
+    "category": "OLIVE",
     "item": "POMACE 3L + EXTRA VIRGIN 3L",
     "sub_category": "EXTRA VIRGIN"
    },
@@ -1764,7 +1805,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "PUMPKIN SEEDS 200G",
-    "sub_category": "PUMPKIN SEEDS"
+    "sub_category": "PUMPKIN"
    },
    {
     "category": "SEEDS",
@@ -1774,7 +1815,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "PUMPKIN SEEDS 400G",
-    "sub_category": "PUMPKIN SEEDS"
+    "sub_category": "PUMPKIN"
    },
    {
     "category": "SEEDS",
@@ -1784,7 +1825,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SEEDS",
     "item": "PUMPKIN SEEDS 800G",
-    "sub_category": "PUMPKIN SEEDS"
+    "sub_category": "PUMPKIN"
    },
    {
     "category": "SEEDS",
@@ -1829,12 +1870,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "RICE"
+    "sub_category": "BASMATI"
    },
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "BASMATI"
+    "sub_category": "RICE"
    },
    {
     "category": "RICE",
@@ -1958,11 +1999,6 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "OLIVE",
-    "item": "SANO CLASSIC 1L",
-    "sub_category": "CLASSIC"
-   },
-   {
-    "category": "OLIVE",
     "item": "SANO CLASSIC 5L",
     "sub_category": "CLASSIC"
    },
@@ -1972,14 +2008,19 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
     "sub_category": "CLASSIC"
    },
    {
-    "category": "HONEY",
-    "item": "SANO HONEY 1KG",
-    "sub_category": "HONEY"
+    "category": "OLIVE",
+    "item": "SANO EXTRA LIGHT 1L",
+    "sub_category": "EXTRA LIGHT"
    },
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
     "sub_category": "NATURAL HONEY"
+   },
+   {
+    "category": "HONEY",
+    "item": "SANO HONEY 1KG",
+    "sub_category": "HONEY"
    },
    {
     "category": "HONEY",
@@ -2097,6 +2138,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
     "sub_category": "SESAME OIL"
    },
    {
+    "category": "SEASAME OIL",
+    "item": "SESAME OIL 1L",
+    "sub_category": "SEASAME OIL"
+   },
+   {
     "category": "SESAME OIL",
     "item": "SESAME OIL 1L",
     "sub_category": "SESAME OIL"
@@ -2168,7 +2214,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "SOYABEAN",
-    "item": "SOYABEAN 1L + 1L",
+    "item": "SOYABEAN-1L+1L",
     "sub_category": "SOYABEAN"
    },
    {
@@ -2282,11 +2328,6 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
     "sub_category": "SOYABEAN"
    },
    {
-    "category": "DRINKS",
-    "item": "SPRING WATER 750ML",
-    "sub_category": "SODA"
-   },
-   {
     "category": "SUNFLOWER",
     "item": "SUNFLOWER 15L",
     "sub_category": "SUNFLOWER"
@@ -2294,11 +2335,6 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "SUNFLOWER",
     "item": "SUNFLOWER 1L",
-    "sub_category": "SUNFLOWER"
-   },
-   {
-    "category": "SUNFLOWER",
-    "item": "SUNFLOWER 1L + 1L",
     "sub_category": "SUNFLOWER"
    },
    {
@@ -2463,6 +2499,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "DRINKS",
+    "item": "WATER 250ML",
+    "sub_category": "MINERAL WATER"
+   },
+   {
+    "category": "DRINKS",
     "item": "WATER PEACH 750ML",
     "sub_category": "SODA"
    },
@@ -2599,6 +2640,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    {
     "category": "MUSTARD",
     "item": "YELLOW MUSTARD 5L",
+    "sub_category": "YELLOW MUSTARD"
+   },
+   {
+    "category": "MUSTARD",
+    "item": "YELLOW MUSTARD 5L + 5L",
     "sub_category": "YELLOW MUSTARD"
    }
   ],
@@ -2840,12 +2886,24 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
     "sub_category": "ROSEMARY LEAVES"
    },
    {
+    "category": "SEASAME OIL",
+    "sub_category": "SEASAME OIL"
+   },
+   {
     "category": "SEEDS",
     "sub_category": "ALL SEEDS"
    },
    {
     "category": "SEEDS",
+    "sub_category": "BASIL"
+   },
+   {
+    "category": "SEEDS",
     "sub_category": "BASIL SEEDS"
+   },
+   {
+    "category": "SEEDS",
+    "sub_category": "CHIA"
    },
    {
     "category": "SEEDS",
@@ -2857,11 +2915,19 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "SEEDS",
+    "sub_category": "FLAX"
+   },
+   {
+    "category": "SEEDS",
     "sub_category": "FLAX SEED"
    },
    {
     "category": "SEEDS",
     "sub_category": "FLAX SEEDS"
+   },
+   {
+    "category": "SEEDS",
+    "sub_category": "PUMPKIN"
    },
    {
     "category": "SEEDS",
@@ -2905,6 +2971,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    },
    {
     "category": "SPICES",
+    "sub_category": "CARDAMOM"
+   },
+   {
+    "category": "SPICES",
     "sub_category": "CINNAMON"
    },
    {
@@ -2941,19 +3011,292 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-flipkart]]
    }
   ]
  },
- "mapped_units": 0,
- "mapped_value": 0,
+ "mapped_units": 7410.0,
+ "mapped_value": 7410.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
  "mode": "single",
  "month": 6,
- "pct_mapped": 0,
+ "pct_mapped": 100.0,
  "platform": "flipkart",
- "states": [],
+ "states": [
+  {
+   "by_platform": {
+    "FLIPKART": 743.0
+   },
+   "state": "UTTAR PRADESH",
+   "units": 743.0,
+   "value": 743.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 612.0
+   },
+   "state": "WEST BENGAL",
+   "units": 612.0,
+   "value": 612.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 526.0
+   },
+   "state": "MAHARASHTRA",
+   "units": 526.0,
+   "value": 526.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 513.0
+   },
+   "state": "DELHI",
+   "units": 513.0,
+   "value": 513.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 469.0
+   },
+   "state": "HARYANA",
+   "units": 469.0,
+   "value": 469.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 450.0
+   },
+   "state": "ASSAM",
+   "units": 450.0,
+   "value": 450.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 393.0
+   },
+   "state": "PUNJAB",
+   "units": 393.0,
+   "value": 393.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 388.0
+   },
+   "state": "KARNATAKA",
+   "units": 388.0,
+   "value": 388.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 326.0
+   },
+   "state": "ODISHA",
+   "units": 326.0,
+   "value": 326.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 298.0
+   },
+   "state": "TELANGANA",
+   "units": 298.0,
+   "value": 298.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 288.0
+   },
+   "state": "MIZORAM",
+   "units": 288.0,
+   "value": 288.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 286.0
+   },
+   "state": "BIHAR",
+   "units": 286.0,
+   "value": 286.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 279.0
+   },
+   "state": "ANDHRA PRADESH",
+   "units": 279.0,
+   "value": 279.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 205.0
+   },
+   "state": "KERALA",
+   "units": 205.0,
+   "value": 205.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 192.0
+   },
+   "state": "TAMIL NADU",
+   "units": 192.0,
+   "value": 192.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 179.0
+   },
+   "state": "MADHYA PRADESH",
+   "units": 179.0,
+   "value": 179.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 150.0
+   },
+   "state": "RAJASTHAN",
+   "units": 150.0,
+   "value": 150.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 139.0
+   },
+   "state": "JHARKHAND",
+   "units": 139.0,
+   "value": 139.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 129.0
+   },
+   "state": "GUJARAT",
+   "units": 129.0,
+   "value": 129.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 108.0
+   },
+   "state": "UTTARAKHAND",
+   "units": 108.0,
+   "value": 108.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 96.0
+   },
+   "state": "NAGALAND",
+   "units": 96.0,
+   "value": 96.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 95.0
+   },
+   "state": "JAMMU AND KASHMIR",
+   "units": 95.0,
+   "value": 95.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 94.0
+   },
+   "state": "CHHATTISGARH",
+   "units": 94.0,
+   "value": 94.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 86.0
+   },
+   "state": "HIMACHAL PRADESH",
+   "units": 86.0,
+   "value": 86.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 77.0
+   },
+   "state": "MANIPUR",
+   "units": 77.0,
+   "value": 77.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 74.0
+   },
+   "state": "TRIPURA",
+   "units": 74.0,
+   "value": 74.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 60.0
+   },
+   "state": "GOA",
+   "units": 60.0,
+   "value": 60.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 51.0
+   },
+   "state": "MEGHALAYA",
+   "units": 51.0,
+   "value": 51.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 47.0
+   },
+   "state": "CHANDIGARH",
+   "units": 47.0,
+   "value": 47.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 24.0
+   },
+   "state": "SIKKIM",
+   "units": 24.0,
+   "value": 24.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 23.0
+   },
+   "state": "ARUNACHAL PRADESH",
+   "units": 23.0,
+   "value": 23.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 6.0
+   },
+   "state": "PUDUCHERRY",
+   "units": 6.0,
+   "value": 6.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 3.0
+   },
+   "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
+   "units": 3.0,
+   "value": 3.0
+  },
+  {
+   "by_platform": {
+    "FLIPKART": 1.0
+   },
+   "state": "LADAKH",
+   "units": 1.0,
+   "value": 1.0
+  }
+ ],
  "sub_categories": [],
- "total_units": 0.0,
- "total_value": 0.0,
+ "total_units": 7410.0,
+ "total_value": 7410.0,
  "year": 2026
 }
 ```

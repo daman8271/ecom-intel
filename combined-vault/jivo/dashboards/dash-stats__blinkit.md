@@ -19,9 +19,9 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
 ```json
 {
  "activeTrucks": 0,
- "inventory": 27069,
+ "inventory": 328,
  "openPOs": 0,
- "sells": 0
+ "sells": 19646
 }
 ```
 

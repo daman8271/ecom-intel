@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po`, embedded once here (verbatim, full column
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-147.61904761904762,,FLIPKART GROCERY,,17545,155.0,Lucknow,1700.0,2026-07-03,2026-07-13,FLSE02D00CF0,,EDOGDVWYGJNDYRQP,JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil 1 L Plastic Bottle,PENDING,SUSTAINQUEST PRIVATE LIMITED,2026-07-05,total_po:17545,2026-07-06
-209.52380952380952,,FLIPKART GROCERY,,17546,220.0,Lucknow,20.0,2026-07-03,2026-07-13,FLSE02D00CF0,,EDOG9BP8GEWFW9XC,JIVO Cold Press Canola Oil 1 L Plastic Bottle,PENDING,SUSTAINQUEST PRIVATE LIMITED,2026-07-05,total_po:17546,2026-07-06
+147.61904761904762,,FLIPKART GROCERY,,17545,155.0,Lucknow,1700.0,2026-07-03,2026-07-13,FLSE02D00CF0,,EDOGDVWYGJNDYRQP,JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil 1 L Plastic Bottle,PENDING,SUSTAINQUEST PRIVATE LIMITED,2026-07-05,total_po:17545,2026-07-08
+209.52380952380952,,FLIPKART GROCERY,,17546,220.0,Lucknow,20.0,2026-07-03,2026-07-13,FLSE02D00CF0,,EDOG9BP8GEWFW9XC,JIVO Cold Press Canola Oil 1 L Plastic Bottle,PENDING,SUSTAINQUEST PRIVATE LIMITED,2026-07-05,total_po:17546,2026-07-08
 ```
 
 ---

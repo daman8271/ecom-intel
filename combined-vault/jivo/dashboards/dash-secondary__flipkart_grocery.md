@@ -21,10 +21,10 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  "defaulted_to_latest": true,
  "detail_rows_fixed": true,
  "detail_total": {
-  "per_liter_shpd": 0.9537861915367484,
-  "shipped_ltr": 3592.0,
-  "shipped_units": 3426.0,
-  "shipped_value": 567834.2857142857
+  "per_liter_shpd": 0.9546470776109869,
+  "shipped_ltr": 6262.0,
+  "shipped_units": 5978.0,
+  "shipped_value": 992414.2857142858
  },
  "details": [
   {
@@ -32,9 +32,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 1.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 131.0,
-   "shipped_units": 131.0,
-   "shipped_value": 28695.238095238095,
+   "shipped_ltr": 245.0,
+   "shipped_units": 245.0,
+   "shipped_value": 53666.666666666664,
    "sub_category": "CANOLA"
   },
   {
@@ -52,9 +52,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.5,
    "per_ltr": "2 LTR",
-   "shipped_ltr": 4.0,
-   "shipped_units": 2.0,
-   "shipped_value": 2000.0,
+   "shipped_ltr": 6.0,
+   "shipped_units": 3.0,
+   "shipped_value": 3000.0,
    "sub_category": "EXTRA LIGHT"
   },
   {
@@ -62,9 +62,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 1.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 57.0,
-   "shipped_units": 57.0,
-   "shipped_value": 23071.428571428572,
+   "shipped_ltr": 107.0,
+   "shipped_units": 107.0,
+   "shipped_value": 43309.52380952381,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -82,9 +82,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "PREMIUM",
    "per_liter_shpd": 0.2,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 5.0,
-   "shipped_units": 1.0,
-   "shipped_value": 1976.1904761904761,
+   "shipped_ltr": 10.0,
+   "shipped_units": 2.0,
+   "shipped_value": 3952.3809523809523,
    "sub_category": "JIVO POMACE"
   },
   {
@@ -100,11 +100,11 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "category": "BLENDED",
    "item_head": "COMMODITY",
-   "per_liter_shpd": null,
+   "per_liter_shpd": 0.2,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 0.0,
-   "shipped_units": 0.0,
-   "shipped_value": 0.0,
+   "shipped_ltr": 5.0,
+   "shipped_units": 1.0,
+   "shipped_value": 714.2857142857143,
    "sub_category": "GOLD"
   },
   {
@@ -112,9 +112,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 1.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 3183.0,
-   "shipped_units": 3183.0,
-   "shipped_value": 478965.71428571426,
+   "shipped_ltr": 5530.0,
+   "shipped_units": 5530.0,
+   "shipped_value": 832133.3333333334,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -122,9 +122,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.25,
    "per_ltr": "4 LTR",
-   "shipped_ltr": 8.0,
-   "shipped_units": 2.0,
-   "shipped_value": 1203.8095238095239,
+   "shipped_ltr": 16.0,
+   "shipped_units": 4.0,
+   "shipped_value": 2407.6190476190477,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
@@ -132,19 +132,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.2,
    "per_ltr": "5 LTR",
-   "shipped_ltr": 150.0,
-   "shipped_units": 30.0,
-   "shipped_value": 22571.428571428572,
+   "shipped_ltr": 255.0,
+   "shipped_units": 51.0,
+   "shipped_value": 38371.42857142857,
    "sub_category": "MUSTARD KACCHI GHANI"
   },
   {
    "category": "SOYABEAN",
    "item_head": "COMMODITY",
-   "per_liter_shpd": null,
+   "per_liter_shpd": 1.0,
    "per_ltr": "1 LTR",
-   "shipped_ltr": 0.0,
-   "shipped_units": 0.0,
-   "shipped_value": 0.0,
+   "shipped_ltr": 2.0,
+   "shipped_units": 2.0,
+   "shipped_value": 266.6666666666667,
    "sub_category": "SOYABEAN"
   },
   {
@@ -152,9 +152,9 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "item_head": "COMMODITY",
    "per_liter_shpd": 0.25,
    "per_ltr": "4 LTR",
-   "shipped_ltr": 44.0,
-   "shipped_units": 11.0,
-   "shipped_value": 7207.619047619048,
+   "shipped_ltr": 76.0,
+   "shipped_units": 19.0,
+   "shipped_value": 12449.52380952381,
    "sub_category": "SUNFLOWER"
   },
   {
@@ -163,7 +163,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "per_liter_shpd": null,
    "per_ltr": "200 MLS",
    "shipped_ltr": 0.0,
-   "shipped_units": 1.0,
+   "shipped_units": 2.0,
    "shipped_value": 0.0,
    "sub_category": "APPLE SF"
   },
@@ -173,7 +173,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "per_liter_shpd": null,
    "per_ltr": "200 MLS",
    "shipped_ltr": 0.0,
-   "shipped_units": 1.0,
+   "shipped_units": 2.0,
    "shipped_value": 0.0,
    "sub_category": "BLUEBERRY"
   },
@@ -183,7 +183,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "per_liter_shpd": null,
    "per_ltr": "200 MLS",
    "shipped_ltr": 0.0,
-   "shipped_units": 1.0,
+   "shipped_units": 3.0,
    "shipped_value": 0.0,
    "sub_category": "GINGER ALE SF"
   },
@@ -233,12 +233,12 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "per_liter_shpd": null,
    "per_ltr": "200 MLS",
    "shipped_ltr": 0.0,
-   "shipped_units": 3.0,
+   "shipped_units": 4.0,
    "shipped_value": 0.0,
    "sub_category": "MOJITO"
   }
  ],
- "max_date": "2026-07-03",
+ "max_date": "2026-07-05",
  "month": 7,
  "sec_trend": {
   "day": {
@@ -290,18 +290,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 3,
      "label": "03",
      "ltrs": {
-      "deliver": 1349.0,
+      "deliver": 1364.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-03",
      "quantity": {
-      "deliver": 1275.0,
+      "deliver": 1286.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 210766.6666666667,
+      "deliver": 212985.7142857143,
       "order": 0.0,
       "return": 0.0
      }
@@ -311,18 +311,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 4,
      "label": "04",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1250.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-04",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 1199.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 198720.9523809524,
       "order": 0.0,
       "return": 0.0
      }
@@ -332,18 +332,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 5,
      "label": "05",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1405.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-05",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 1342.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 223640.0,
       "order": 0.0,
       "return": 0.0
      }
@@ -943,18 +943,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 3,
      "label": "03",
      "ltrs": {
-      "deliver": 1281.0,
+      "deliver": 1296.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-03",
      "quantity": {
-      "deliver": 1210.0,
+      "deliver": 1221.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 193133.33333333334,
+      "deliver": 195352.38095238095,
       "order": 0.0,
       "return": 0.0
      }
@@ -964,18 +964,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 4,
      "label": "04",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1162.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-04",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 1109.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 175173.33333333334,
       "order": 0.0,
       "return": 0.0
      }
@@ -985,18 +985,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 5,
      "label": "05",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 1322.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-05",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 1261.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 199001.90476190476,
       "order": 0.0,
       "return": 0.0
      }
@@ -1617,18 +1617,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 4,
      "label": "04",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 88.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-04",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 88.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 23547.619047619046,
       "order": 0.0,
       "return": 0.0
      }
@@ -1638,18 +1638,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
      "day": 5,
      "label": "05",
      "ltrs": {
-      "deliver": 0.0,
+      "deliver": 83.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026-07-05",
      "quantity": {
-      "deliver": 0.0,
+      "deliver": 78.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 0.0,
+      "deliver": 24638.095238095237,
       "order": 0.0,
       "return": 0.0
      }
@@ -2287,19 +2287,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "MAY",
      "ltrs": {
-      "deliver": 21215.0,
+      "deliver": 20638.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 5,
      "period": "2026-05-01",
      "quantity": {
-      "deliver": 19933.0,
+      "deliver": 19385.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 3446746.666666667,
+      "deliver": 3351894.2857142864,
       "order": 0.0,
       "return": 0.0
      }
@@ -2307,19 +2307,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "JUN",
      "ltrs": {
-      "deliver": 20601.0,
+      "deliver": 20600.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 6,
      "period": "2026-06-01",
      "quantity": {
-      "deliver": 19646.0,
+      "deliver": 19645.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 3266214.285714285,
+      "deliver": 3266063.809523809,
       "order": 0.0,
       "return": 0.0
      }
@@ -2327,19 +2327,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "JUL",
      "ltrs": {
-      "deliver": 3592.0,
+      "deliver": 6262.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 7,
      "period": "2026-07-01",
      "quantity": {
-      "deliver": 3426.0,
+      "deliver": 5978.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 567834.2857142857,
+      "deliver": 992414.2857142857,
       "order": 0.0,
       "return": 0.0
      }
@@ -2429,19 +2429,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "MAY",
      "ltrs": {
-      "deliver": 19296.0,
+      "deliver": 18784.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 5,
      "period": "2026-05-01",
      "quantity": {
-      "deliver": 17749.0,
+      "deliver": 17280.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 2881775.2380952383,
+      "deliver": 2805070.4761904767,
       "order": 0.0,
       "return": 0.0
      }
@@ -2449,19 +2449,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "JUN",
      "ltrs": {
-      "deliver": 19281.0,
+      "deliver": 19280.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 6,
      "period": "2026-06-01",
      "quantity": {
-      "deliver": 18233.0,
+      "deliver": 18232.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 2903457.1428571423,
+      "deliver": 2903306.666666666,
       "order": 0.0,
       "return": 0.0
      }
@@ -2469,19 +2469,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "JUL",
      "ltrs": {
-      "deliver": 3385.0,
+      "deliver": 5884.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 7,
      "period": "2026-07-01",
      "quantity": {
-      "deliver": 3226.0,
+      "deliver": 5607.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 509948.5714285714,
+      "deliver": 886342.857142857,
       "order": 0.0,
       "return": 0.0
      }
@@ -2571,19 +2571,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "MAY",
      "ltrs": {
-      "deliver": 1919.0,
+      "deliver": 1854.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 5,
      "period": "2026-05-01",
      "quantity": {
-      "deliver": 1819.0,
+      "deliver": 1756.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 564971.4285714284,
+      "deliver": 546823.8095238094,
       "order": 0.0,
       "return": 0.0
      }
@@ -2611,19 +2611,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "JUL",
      "ltrs": {
-      "deliver": 207.0,
+      "deliver": 378.0,
       "order": 0.0,
       "return": 0.0
      },
      "month": 7,
      "period": "2026-07-01",
      "quantity": {
-      "deliver": 193.0,
+      "deliver": 359.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 57885.714285714275,
+      "deliver": 106071.42857142855,
       "order": 0.0,
       "return": 0.0
      }
@@ -2655,18 +2655,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 183505.0,
+      "deliver": 185597.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 170586.0,
+      "deliver": 172589.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 28738636.31857142,
+      "deliver": 29068213.461428564,
       "order": 0.0,
       "return": 0.0
      },
@@ -2697,18 +2697,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 174930.0,
+      "deliver": 176916.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 159995.0,
+      "deliver": 161906.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 26251594.3795238,
+      "deliver": 26551133.427142847,
       "order": 0.0,
       "return": 0.0
      },
@@ -2739,18 +2739,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     {
      "label": "2026",
      "ltrs": {
-      "deliver": 8575.0,
+      "deliver": 8681.0,
       "order": 0.0,
       "return": 0.0
      },
      "period": "2026",
      "quantity": {
-      "deliver": 7829.0,
+      "deliver": 7932.0,
       "order": 0.0,
       "return": 0.0
      },
      "values": {
-      "deliver": 2484204.349523809,
+      "deliver": 2514242.4447619035,
       "order": 0.0,
       "return": 0.0
      },
@@ -2764,67 +2764,81 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  "summary": [
   {
    "item_head": "PREMIUM",
-   "per_liter_shpd": 0.9323671497584541,
-   "shipped_ltr": 207.0,
-   "shipped_units": 193.0,
-   "shipped_value": 57885.71428571428
+   "per_liter_shpd": 0.9497354497354498,
+   "shipped_ltr": 378.0,
+   "shipped_units": 359.0,
+   "shipped_value": 106071.42857142857
   },
   {
    "item_head": "COMMODITY",
-   "per_liter_shpd": 0.9530280649926145,
-   "shipped_ltr": 3385.0,
-   "shipped_units": 3226.0,
-   "shipped_value": 509948.5714285714
+   "per_liter_shpd": 0.9529231815091774,
+   "shipped_ltr": 5884.0,
+   "shipped_units": 5607.0,
+   "shipped_value": 886342.8571428572
   },
   {
    "item_head": "OTHER",
    "per_liter_shpd": null,
    "shipped_ltr": 0.0,
-   "shipped_units": 7.0,
+   "shipped_units": 12.0,
    "shipped_value": 0.0
   }
  ],
  "summary_total": {
-  "per_liter_shpd": 0.9537861915367484,
-  "shipped_ltr": 3592.0,
-  "shipped_units": 3426.0,
-  "shipped_value": 567834.2857142857
+  "per_liter_shpd": 0.9546470776109869,
+  "shipped_ltr": 6262.0,
+  "shipped_units": 5978.0,
+  "shipped_value": 992414.2857142857
  },
  "top_items": [
   {
    "item": "MUSTARD 1L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 3183.0,
-   "shipped_units": 3183.0,
-   "shipped_value": 478965.71428571426
+   "shipped_ltr": 5530.0,
+   "shipped_units": 5530.0,
+   "shipped_value": 832133.3333333334
   },
   {
    "item": "MUSTARD 5L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 150.0,
-   "shipped_units": 30.0,
-   "shipped_value": 22571.428571428572
+   "shipped_ltr": 255.0,
+   "shipped_units": 51.0,
+   "shipped_value": 38371.42857142857
   },
   {
    "item": "CANOLA 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 131.0,
-   "shipped_units": 131.0,
-   "shipped_value": 28695.238095238095
+   "shipped_ltr": 245.0,
+   "shipped_units": 245.0,
+   "shipped_value": 53666.666666666664
   },
   {
    "item": "JIVO POMACE 1L",
    "item_head": "PREMIUM",
-   "shipped_ltr": 57.0,
-   "shipped_units": 57.0,
-   "shipped_value": 23071.428571428572
+   "shipped_ltr": 107.0,
+   "shipped_units": 107.0,
+   "shipped_value": 43309.52380952381
   },
   {
    "item": "SUNFLOWER 4L",
    "item_head": "COMMODITY",
-   "shipped_ltr": 44.0,
-   "shipped_units": 11.0,
-   "shipped_value": 7207.619047619048
+   "shipped_ltr": 76.0,
+   "shipped_units": 19.0,
+   "shipped_value": 12449.52380952381
+  },
+  {
+   "item": "MUSTARD 4L",
+   "item_head": "COMMODITY",
+   "shipped_ltr": 16.0,
+   "shipped_units": 4.0,
+   "shipped_value": 2407.6190476190477
+  },
+  {
+   "item": "JIVO POMACE 5L",
+   "item_head": "PREMIUM",
+   "shipped_ltr": 10.0,
+   "shipped_units": 2.0,
+   "shipped_value": 3952.3809523809523
   },
   {
    "item": "CANOLA 5L",
@@ -2834,18 +2848,18 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "shipped_value": 2142.8571428571427
   },
   {
-   "item": "MUSTARD 4L",
-   "item_head": "COMMODITY",
-   "shipped_ltr": 8.0,
-   "shipped_units": 2.0,
-   "shipped_value": 1203.8095238095239
+   "item": "EXTRA LIGHT 2L",
+   "item_head": "PREMIUM",
+   "shipped_ltr": 6.0,
+   "shipped_units": 3.0,
+   "shipped_value": 3000.0
   },
   {
-   "item": "JIVO POMACE 5L",
-   "item_head": "PREMIUM",
+   "item": "GOLD 5L",
+   "item_head": "COMMODITY",
    "shipped_ltr": 5.0,
    "shipped_units": 1.0,
-   "shipped_value": 1976.1904761904761
+   "shipped_value": 714.2857142857143
   }
  ],
  "year": 2026

@@ -97,7 +97,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    },
    {
     "ltrs": 481.0,
-    "name": "SESAME OIL"
+    "name": "SEASAME OIL"
    }
   ],
   "sub_categories": [
@@ -139,7 +139,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    },
    {
     "ltrs": 481.0,
-    "name": "SESAME OIL"
+    "name": "SEASAME OIL"
    }
   ],
   "total_ltrs": 174413.5

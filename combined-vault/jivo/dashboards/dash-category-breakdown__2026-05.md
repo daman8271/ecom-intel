@@ -91,12 +91,16 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "BLENDED"
    },
    {
-    "ltrs": 1828.0,
+    "ltrs": 1347.0,
     "name": "SESAME OIL"
    },
    {
     "ltrs": 796.0,
     "name": "COCONUT"
+   },
+   {
+    "ltrs": 481.0,
+    "name": "SEASAME OIL"
    }
   ],
   "sub_categories": [
@@ -133,12 +137,16 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SO OLIVE"
    },
    {
-    "ltrs": 1828.0,
+    "ltrs": 1347.0,
     "name": "SESAME OIL"
    },
    {
     "ltrs": 796.0,
     "name": "COCONUT"
+   },
+   {
+    "ltrs": 481.0,
+    "name": "SEASAME OIL"
    }
   ],
   "total_ltrs": 489964.65

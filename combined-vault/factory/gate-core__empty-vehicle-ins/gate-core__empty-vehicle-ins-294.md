@@ -46,12 +46,12 @@ tags:
 - **sap_comments:** 
 - **sap_line_count:** 0
 - **sap_total_quantity:** 0.000
-- **document_reference:** Dispatch 706260932, 706260933, 706260934, 706260950, 706260951
+- **document_reference:** Dispatch 706260932, 706260933, 706260950, 706260951
 - **document_notes:** Customers: R K WORLDINFOCOM PVT LTD
-Weight: 17046.600 kg
+Weight: 9118.850 kg
 - **pipeline_status:**
   ```json
-  {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-02T15:32:23.599758Z", "counts": {"total": 5, "rejected": 0}, "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}
+  {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-02T15:32:23.599758Z", "counts": {"total": 4, "rejected": 0}, "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}
   ```
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 

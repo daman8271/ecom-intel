@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-06
-observations: 224
+last_seen: 2026-07-08
+observations: 240
 latest_status: BELOW
-below_days: 28
+below_days: 30
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-06) — ref ₹209 vs live ₹184
-- **Days below reference:** 28 of 28
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-08) — ref ₹209 vs live ₹184
+- **Days below reference:** 30 of 30
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]]
 
-## Ref-vs-live history (224 observations)
+## Ref-vs-live history (240 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -269,6 +269,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-06,flipkart,OOS,SVD,209,,,,,,0,false
 2026-07-06,flipkart-minutes,BELOW,SVD,209,178,178,189,-31,-14.83,40,true
 2026-07-06,zepto,BELOW,SVD,209,184,182,212,-25,-11.96,419,true
+2026-07-07,amazon,OOS,SVD,209,,,,,,0,false
+2026-07-07,amazon-fresh,BELOW,SVD,209,163,163,179,-46,-22.01,14,true
+2026-07-07,amazon-now,BELOW,SVD,209,179,179,179,-30,-14.35,1,true
+2026-07-07,bigbasket,BELOW,SVD,209,202.1,202.08,215.86,-6.9,-3.3,9,true
+2026-07-07,blinkit,BELOW,SVD,209,171,158,171,-38,-18.18,21,true
+2026-07-07,flipkart,OOS,SVD,209,,,,,,0,false
+2026-07-07,flipkart-minutes,BELOW,SVD,209,178,167,189,-31,-14.83,47,true
+2026-07-07,zepto,BELOW,SVD,209,184,163,212,-25,-11.96,417,true
+2026-07-08,amazon,OOS,BAU,209,,,,,,0,false
+2026-07-08,amazon-fresh,BELOW,BAU,209,179,163,179,-30,-14.35,51,true
+2026-07-08,amazon-now,BELOW,BAU,209,179,163,179,-30,-14.35,115,true
+2026-07-08,bigbasket,BELOW,BAU,209,202.1,202.08,215.86,-6.9,-3.3,11,true
+2026-07-08,blinkit,BELOW,BAU,209,171,168,171,-38,-18.18,21,true
+2026-07-08,flipkart,OOS,BAU,209,,,,,,0,false
+2026-07-08,flipkart-minutes,BELOW,BAU,209,178,167,189,-31,-14.83,76,true
+2026-07-08,zepto,BELOW,BAU,209,184,163,212,-25,-11.96,414,true
 ```
 
 ---

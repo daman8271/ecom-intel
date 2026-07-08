@@ -41,11 +41,15 @@ Up: [[dashboards-index]] · [[2026-05]]
   },
   {
    "category": "SESAME OIL",
-   "ltrs": 1828.0
+   "ltrs": 1347.0
   },
   {
    "category": "COCONUT",
    "ltrs": 796.0
+  },
+  {
+   "category": "SEASAME OIL",
+   "ltrs": 481.0
   }
  ],
  "errors": [],

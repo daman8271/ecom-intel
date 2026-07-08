@@ -28,12 +28,22 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-flipkart_grocery]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -89.0,
+   "delta_pct": -75.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 2140.0,
+   "ltrs": 4740.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 19458.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -61.5,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 500.0,
+   "name": "CANOLA 1L",
+   "prev_ltrs": 1300.0
   },
   {
    "brand": null,
@@ -44,16 +54,6 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-flipkart_grocery]]
    "ltrs": 480.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 360.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -76.9,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 300.0,
-   "name": "CANOLA 1L",
-   "prev_ltrs": 1300.0
   },
   {
    "brand": null,
@@ -80,10 +80,10 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-flipkart_grocery]]
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -89.0,
+  "delta_pct": -75.6,
   "head": "COMMODITY",
   "is_new": false,
-  "ltrs": 2140.0,
+  "ltrs": 4740.0,
   "name": "MUSTARD 1L",
   "prev_ltrs": 19458.0
  },

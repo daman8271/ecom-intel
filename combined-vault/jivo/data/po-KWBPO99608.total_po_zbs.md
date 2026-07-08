@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-185.71,,SWIGGY,,,78799,194.9957031,KOLKATA,128.0,2026-07-04,2026-07-15,KWBPO99608,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78799,2026-07-06
-344.76,,SWIGGY,,,78800,361.9981667,KOLKATA,60.0,2026-07-04,2026-07-15,KWBPO99608,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78800,2026-07-06
-723.81,,SWIGGY,,,78801,760.0008333,KOLKATA,12.0,2026-07-04,2026-07-15,KWBPO99608,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78801,2026-07-06
-22.79,,SWIGGY,,,78802,31.904375,KOLKATA,48.0,2026-07-04,2026-07-15,KWBPO99608,,900724,JivoÂ Fizzy Flavoured Soda (Lemon) 750.0 ml,CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78802,2026-07-06
+185.71,0.0,SWIGGY,,,78799,194.9955,KOLKATA,128.0,2026-07-04,2026-07-15,KWBPO99608,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78799,2026-07-08
+344.76,0.0,SWIGGY,,,78800,361.998,KOLKATA,60.0,2026-07-04,2026-07-15,KWBPO99608,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78800,2026-07-08
+723.81,0.0,SWIGGY,,,78801,760.0005,KOLKATA,12.0,2026-07-04,2026-07-15,KWBPO99608,,615911,Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 5.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78801,2026-07-08
+22.79,0.0,SWIGGY,,,78802,31.9,KOLKATA,48.0,2026-07-04,2026-07-15,KWBPO99608,,900724,Jivo  Fizzy Flavoured Soda (Lemon) 750.0 ml,CONFIRMED,BABA LOKENATH TRADERS,2026-07-05,total_po_zbs:78802,2026-07-08
 ```
 
 ---

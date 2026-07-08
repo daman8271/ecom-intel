@@ -28,54 +28,94 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -84.7,
+   "delta_pct": -63.5,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 1740.0,
+   "ltrs": 4160.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 11400.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -98.6,
+   "delta_pct": -89.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 40.0,
+   "ltrs": 448.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 4400.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -94.7,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 160.0,
+   "name": "SUNFLOWER 1L",
+   "prev_ltrs": 3008.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -96.5,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 100.0,
    "name": "CANOLA 5L",
    "prev_ltrs": 2840.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -95.1,
+   "delta_pct": -97.5,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 40.0,
+   "ltrs": 80.0,
+   "name": "CANOLA 1L",
+   "prev_ltrs": 3230.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -92.7,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 60.0,
    "name": "EXTRA LIGHT 2L",
    "prev_ltrs": 820.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -99.6,
+   "delta_pct": -99.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 20.0,
+   "ltrs": 40.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 4780.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -99.3,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 6.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 836.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -99.6,
+  "delta_pct": -99.3,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 20.0,
-  "name": "JIVO POMACE 5L",
-  "prev_ltrs": 4780.0
+  "ltrs": 6.0,
+  "name": "EXTRA LIGHT 1L",
+  "prev_ltrs": 836.0
  },
  "top_riser": null,
  "year": 2026

@@ -18,7 +18,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
 
 ```json
 {
- "count": 1851,
+ "count": 1860,
  "data": [
   {
    "basic_rate": 57.14285714,
@@ -471,7 +471,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "BENGALURU",
@@ -583,7 +583,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "BENGALURU",
@@ -639,7 +639,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "BENGALURU",
@@ -695,7 +695,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "BENGALURU",
@@ -751,7 +751,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "BENGALURU",
@@ -807,7 +807,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "BENGALURU",
@@ -863,7 +863,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "BENGALURU",
@@ -919,7 +919,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "Kheda",
@@ -1983,7 +1983,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   {
    "basic_rate": 20.0,
    "brand": "JIVO",
-   "case_pack": 1,
+   "case_pack": 12,
    "category": "DRINKS",
    "category_head": "BEVERAGE",
    "city": "Kheda",

@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "DL01MB2623"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# DL01MB2623
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35562
-- **doc_num:** 706260854
-- **doc_date:** 2026-06-29
-- **doc_total:** 32214.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C DELHI
-- **ship_to_address:** INDUSTRIAL AREA PHASE 1 MAYAPURIDELHI-110064IN
-- **place_of_supply:** DL
-- **bp_gstin:** 
+- **doc_entry:** 35718
+- **doc_num:** 606260219
+- **doc_date:** 2026-06-30
+- **doc_total:** 2430125.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
+- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** DL01MB2623
+- **transporter_name:** Arnav Transport
+- **bilty_no:** 7115
+- **bilty_date:** 2026-07-04
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000018 - COLD PRESS 5 LTR + COLD PRESS 1 LTR 3 PCS SHRINKED, SL0000009 - CANOLA 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000029 - COLD PRESS 5 LTR + 1 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000041 - COLD PRESS GROUNDNUT 5 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, SL0000053 - EXTRA LIGHT 1 LTR, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000060 - EXTRA LIGHT 1 LTR PACK OF 3, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000062 - EXTRA LIGHT 3 LTR, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000083 - EXTRA VIRGIN COCONUT  500 ML, FG0000157 - EXTRA VIRGIN COCONUT OIL 500 MLS 24 PCS, SL0000094 - JIVO GOLD 1 LTR PACK OF 2, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000155 - SANO POMACE 1 LTR PACK OF 3, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, SL0000213 - JIVO RICE BRAIN OIL 1 LTR, FG0000227 - RICE BRAN 1L 16 PCS
-- **base_refs:** 1506264701
-- **total_quantity:** 117.000
-- **total_litres:** 190.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS
+- **base_refs:** 1706264626
+- **total_quantity:** 6627.000
+- **total_litres:** 7535.000
 - **total_boxes:** 0.000
-- **total_weight:** 115.072
-- **line_count:** 28
+- **total_weight:** 7530.718
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35562, "sap_invoice_doc_num": "706260854", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 890, "sap_invoice_doc_entry": 35718, "sap_invoice_doc_num": "606260219", "invoice_number": "606260219", "eway_bill": "352285206856", "invoice_weight": "7530.718", "invoice_amount": "2430125.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "7535.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 198, "transporter_id": 54, "driver_id": null, "linked_vehicle_entry_id": 1504, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-04T15:03:20.889884Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-04", "priority": "High", "transporter_name": "Arnav Transport Service", "transporter_gstin": "", "contact_person": "Lalit Kumar", "mobile_no": "9718077490", "vehicle_no": "DL01MB2623", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7115", "bilty_date": "2026-07-04", "bilty_attachment": "/media/sales_dispatch/attachments/606260217_1.pdf", "bilty_attachment_name": "606260217 (1).pdf", "freight": "3430.95", "total_freight": "3430.95", "kanta_weight": null, "remarks": "", "created_at": "2026-07-03T18:45:20.554882+05:30", "updated_at": "2026-07-04T20:33:20.900695+05:30"}
   ```

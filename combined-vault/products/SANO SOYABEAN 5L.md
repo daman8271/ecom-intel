@@ -27,16 +27,19 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000141` |
 | canonical_sku(s) | `sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-oil-with-a-high-omega3-content-and-a-low-saturated-fat-content-ideal-for-delicious-and-healthful-meals-5l` |
 | Category | [[Category - SOYABEAN\|SOYABEAN]] |
+| Sub-category | SOYABEAN |
+| Brand | SANO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 5L |
+| Per-unit | 5.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-06).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 899 | 839 | -6.67 | 🟢 BELOW | SVD | 2026-07-06 |
+| [[Platform - amazon\|amazon]] | 949 | 839 | -11.59 | 🟢 BELOW | BAU | 2026-07-08 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

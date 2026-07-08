@@ -22,7 +22,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-flipkart_grocery]]
  "categories": [
   {
    "category": "CANOLA",
-   "ltrs": 300.0
+   "ltrs": 500.0
   },
   {
    "category": "OLIVE",
@@ -33,7 +33,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-flipkart_grocery]]
  "head": "premium",
  "month": 7,
  "platform": "flipkart_grocery",
- "total_ltrs": 564.0,
+ "total_ltrs": 764.0,
  "year": 2026
 }
 ```

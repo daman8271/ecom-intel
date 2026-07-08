@@ -22,7 +22,7 @@ tags:
 - **company_name:** Jivo Mart
 - **arrival:** 205
 - **arrival_no:** ARV-20260704-0011
-- **arrival_status:** LOADING
+- **arrival_status:** DEPARTED
 - **arrival_company_count:** 3
 - **arrival_can_depart:** False
 - **gatepass_print_locked:** False

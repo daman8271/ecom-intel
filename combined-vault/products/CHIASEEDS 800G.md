@@ -29,19 +29,17 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000167` |
 | canonical_sku(s) | `edsh3fjv4pejdfan`, `jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml` |
 | Category | [[Category - SEEDS\|SEEDS]] |
-| Sub-category | CHIA SEEDS |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 800G |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-06).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 339 | — | — | ⚪ OOS | SVD | 2026-07-06 |
-| [[Platform - flipkart\|flipkart]] | 339 | — | — | ⚪ OOS | SVD | 2026-07-06 |
+| [[Platform - amazon\|amazon]] | 349 | — | — | ⚪ OOS | BAU | 2026-07-08 |
+| [[Platform - flipkart\|flipkart]] | 349 | — | — | ⚪ OOS | BAU | 2026-07-08 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

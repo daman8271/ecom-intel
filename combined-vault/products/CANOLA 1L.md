@@ -41,17 +41,17 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-06).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 259 | 229 | -11.58 | 🟢 BELOW | SVD | 2026-07-06 |
-| [[Platform - amazon\|amazon-fresh]] | 259 | 229 | -11.58 | 🟢 BELOW | SVD | 2026-07-06 |
-| [[Platform - amazon\|amazon-now]] | 259 | 229 | -11.58 | 🟢 BELOW | SVD | 2026-07-06 |
-| [[Platform - bigbasket\|bigbasket]] | 259 | 305 | 17.76 | 🔴 ABOVE | SVD | 2026-07-06 |
-| [[Platform - blinkit\|blinkit]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-07-06 |
-| [[Platform - flipkart\|flipkart]] | 259 | — | — | ⚪ OOS | SVD | 2026-07-06 |
-| [[Platform - flipkart\|flipkart-minutes]] | 259 | 252 | -2.7 | 🟢 BELOW | SVD | 2026-07-06 |
+| [[Platform - amazon\|amazon]] | 249 | 229 | -8.03 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon-fresh]] | 249 | 229 | -8.03 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon-now]] | 249 | 229 | -8.03 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - bigbasket\|bigbasket]] | 249 | 288.65 | 15.92 | 🔴 ABOVE | BAU | 2026-07-08 |
+| [[Platform - blinkit\|blinkit]] | 249 | 233 | -6.43 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - flipkart\|flipkart]] | 249 | 256 | 2.81 | 🔴 ABOVE | BAU | 2026-07-08 |
+| [[Platform - flipkart\|flipkart-minutes]] | 249 | 251 | 0.8 | 🔴 ABOVE | BAU | 2026-07-08 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -82,6 +82,7 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000032`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000032]]
-- **715 boxes:** [[box-121196]] · [[box-121197]] · [[box-121198]] … +712 more (tag `bridge/FG0000032`)
-- **17 pallets:** [[pal-184]] · [[pal-200]] · [[pal-2519]] … +14 more (tag `bridge/FG0000032`)
+- **857 boxes:** [[box-121196]] · [[box-121197]] · [[box-121198]] … +854 more (tag `bridge/FG0000032`)
+- **29 boxes:** [[barcode__dispatch__reports__boxes-137484]] · [[barcode__dispatch__reports__boxes-137501]] · [[barcode__dispatch__reports__boxes-137502]] … +26 more (tag `bridge/FG0000032`)
+- **20 pallets:** [[pal-184]] · [[pal-200]] · [[pal-2519]] … +17 more (tag `bridge/FG0000032`)
 

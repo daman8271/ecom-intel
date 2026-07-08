@@ -4,15 +4,17 @@ canonical_sku: jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l
 display_name: Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cookin 5l
 platforms:
   - amazon-fresh
+  - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-06-04
-observations: 4
-min_price: 1926
+last_seen: 2026-07-08
+observations: 41
+min_price: 1699
 max_price: 1950
-latest_price: 1926
+latest_price: 1699
 tags:
   - type/sku-hub
   - platform/amazon-fresh
+  - platform/amazon-now
 ---
 
 # jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l
@@ -23,14 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1926 (61.5% off)
+- [[amazon-now]] — latest ₹1699 (66.0% off)
 
 ## Available in cities
-[[Delhi]] · [[Jaipur]]
+[[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Jaipur]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-04-1417]]
+## Runs that observed this SKU (2)
+[[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
 
-## Price history (4 observations)
+## Price history (41 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -38,6 +41,43 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110040,1950,4999,61,1
 2026-06-04-1417,2026-06-04,amazon-fresh,Delhi,110076,1950,4999,61,1
 2026-06-04-1417,2026-06-04,amazon-fresh,Jaipur,302033,1926,4999,61.5,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560002,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560006,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560007,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560009,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560010,1783,4999,64.3,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560017,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560021,1783,4999,64.3,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560022,1783,4999,64.3,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560029,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560030,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560032,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560035,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560036,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560046,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560057,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560066,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,560093,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Bengaluru,562125,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Delhi,110027,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Delhi,110063,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Delhi,110087,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Delhi,110089,1783,4999,64.3,1
+2026-07-08-0800,2026-07-08,amazon-now,Delhi,110096,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Gurugram,122005,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Gurugram,122006,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Gurugram,122009,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Gurugram,122011,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Gurugram,122012,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Gurugram,122016,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Mumbai,400003,1783,4999,64.3,1
+2026-07-08-0800,2026-07-08,amazon-now,Mumbai,400033,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Mumbai,400075,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Noida,201309,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Pune,411030,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Pune,411039,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Pune,411048,1699,4999,66,1
+2026-07-08-0800,2026-07-08,amazon-now,Pune,411058,1699,4999,66,1
 ```
 
 ---

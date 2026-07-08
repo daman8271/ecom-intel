@@ -55,19 +55,19 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 161742.0,
+   "commodity_ltrs": 162667.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 130362.5,
-   "total_ltrs": 292104.5,
+   "premium_ltrs": 140407.5,
+   "total_ltrs": 303074.5,
    "year": 2026
   },
   {
    "commodity_ltrs": 0.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 0.0,
-   "total_ltrs": 0.0,
+   "premium_ltrs": 9580.0,
+   "total_ltrs": 9580.0,
    "year": 2026
   }
  ],

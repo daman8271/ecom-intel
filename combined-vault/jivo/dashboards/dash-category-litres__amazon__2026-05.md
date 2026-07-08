@@ -45,7 +45,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    "ltrs": 796.0
   },
   {
-   "category": "SESAME OIL",
+   "category": "SEASAME OIL",
    "ltrs": 481.0
   }
  ],

@@ -22,9 +22,9 @@ tags:
 - **company_name:** Jivo Mart
 - **arrival:** 19
 - **arrival_no:** ARV-20260623-0016
-- **arrival_status:** LOADING
+- **arrival_status:** DEPARTED
 - **arrival_company_count:** 1
-- **arrival_can_depart:** True
+- **arrival_can_depart:** False
 - **gatepass_print_locked:** False
 - **gatepass_lock_reason:** 
 - **vehicle_entry:** 981
@@ -132,7 +132,6 @@ tags:
 - **updated_at:** 2026-06-23T19:21:16.058766+05:30
 
 ## Related
-- arrival -> [[arr-19]]
 - company -> [[comp-2]]
 - driver -> [[drv-251]]
 - transporter -> [[trn-47]]

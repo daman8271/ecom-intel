@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR63E5410"
+title: "DL01MA6176"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,38 +10,38 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR63E5410
+# DL01MA6176
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35736
-- **doc_num:** 706260950
-- **doc_date:** 2026-06-30
-- **doc_total:** 809325.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
-- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
+- **doc_entry:** 35941
+- **doc_num:** 607260113
+- **doc_date:** 2026-07-04
+- **doc_total:** 326004.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
+- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
 - **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** HR63E5410
-- **transporter_name:** Amazon vehicle pickup
-- **bilty_no:** 5727855593
-- **bilty_date:** 2026-07-02
+- **vehicle_no:** DL01MA6176
+- **transporter_name:** Arnav Transport
+- **bilty_no:** 7128
+- **bilty_date:** 2026-07-07
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
-- **base_refs:** 1706264765
-- **total_quantity:** 900.000
-- **total_litres:** 4500.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000395 - SOYABEAN OIL 1 LTR 20 PCS ROUND BOTTLE
+- **base_refs:** 1707264524
+- **total_quantity:** 2000.000
+- **total_litres:** 2000.000
 - **total_boxes:** 0.000
-- **total_weight:** 4466.205
+- **total_weight:** 1937.360
 - **line_count:** 1
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": 815, "sap_invoice_doc_entry": 35736, "sap_invoice_doc_num": "706260950", "invoice_number": "706260950", "eway_bill": "771647937647", "invoice_weight": "4466.205", "invoice_amount": "809325.00", "place_of_supply": "HR", "location": "Delivery Address: DED3 R K WorldInfocom Pvt Ltd Block J2, Farukhnagar Logistics Parks, LLP  Village- Farrukhnagar, Tehsil- Farrukhanagar Gurgaon 122506", "product_variety": "Oil", "total_litres": "4500.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 368, "transporter_id": 81, "driver_id": null, "linked_vehicle_entry_id": 1404, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-02T15:32:23.599758Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-02", "priority": "HIGH", "transporter_name": "Amazon Freight (ASSPL)", "transporter_gstin": "29AAICA3918J1ZE", "contact_person": "rishabh", "mobile_no": "8802345622", "vehicle_no": "HR63E3409", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "5727855593", "bilty_date": "2026-07-02", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260929.pdf", "bilty_attachment_name": "AR - 706260929.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "2026/07/02 16:00 IST", "created_at": "2026-07-01T19:17:43.409176+05:30", "updated_at": "2026-07-02T21:02:23.612193+05:30"}
+  {"id": 926, "sap_invoice_doc_entry": 35941, "sap_invoice_doc_num": "607260113", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "location": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": "2026-07-04T11:48:39.108922Z", "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": "2026-07-06", "priority": "High", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-04T17:18:39.103926+05:30", "updated_at": "2026-07-04T17:18:39.108922+05:30"}
   ```

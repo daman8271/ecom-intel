@@ -1,15 +1,18 @@
 ---
 type: moc
-title: Empty Vehicle Ins (60)
+title: Empty Vehicle Ins (63)
 tags:
   - moc
   - source/factory
 ---
 
-# Empty Vehicle Ins — 60 records
+# Empty Vehicle Ins — 63 records
 
 From `/gate-core/empty-vehicle-ins/`. Up: [[_HOME]]
 
+- [[gate-core__empty-vehicle-ins-378]] — DL01MA8008
+- [[gate-core__empty-vehicle-ins-370]] — HR55AL2787
+- [[gate-core__empty-vehicle-ins-363]] — HR67E3663
 - [[gate-core__empty-vehicle-ins-332]] — DL01MB2623
 - [[gate-core__empty-vehicle-ins-323]] — HR67C4904
 - [[gate-core__empty-vehicle-ins-322]] — HR67C1036

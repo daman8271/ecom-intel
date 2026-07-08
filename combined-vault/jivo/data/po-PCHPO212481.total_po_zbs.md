@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,,SWIGGY,,,78803,214.998125,CHANDIGARH,80.0,2026-07-04,2026-07-15,PCHPO212481,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-05,total_po_zbs:78803,2026-07-06
-371.43,,SWIGGY,,,78804,390.0015625,CHANDIGARH,32.0,2026-07-04,2026-07-15,PCHPO212481,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-05,total_po_zbs:78804,2026-07-06
-147.62,,SWIGGY,,,78805,155.0009375,CHANDIGARH,32.0,2026-07-04,2026-07-15,PCHPO212481,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-05,total_po_zbs:78805,2026-07-06
+204.76,0.0,SWIGGY,,,78803,214.998,CHANDIGARH,80.0,2026-07-04,2026-07-15,PCHPO212481,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-05,total_po_zbs:78803,2026-07-08
+371.43,0.0,SWIGGY,,,78804,390.0015,CHANDIGARH,32.0,2026-07-04,2026-07-15,PCHPO212481,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-05,total_po_zbs:78804,2026-07-08
+147.62,0.0,SWIGGY,,,78805,155.001,CHANDIGARH,32.0,2026-07-04,2026-07-15,PCHPO212481,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-05,total_po_zbs:78805,2026-07-08
 ```
 
 ---

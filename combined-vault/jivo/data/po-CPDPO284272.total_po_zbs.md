@@ -18,10 +18,10 @@ Canonical raw rows (4) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,,77800,499.9995,PUNE,32.0,2026-06-26,2026-07-06,CPDPO284272,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77800,2026-07-06
-178.1,0.0,SWIGGY,,,77801,187.005,PUNE,1232.0,2026-06-26,2026-07-06,CPDPO284272,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77801,2026-07-06
-771.43,0.0,SWIGGY,,,77802,810.0015,PUNE,76.0,2026-06-26,2026-07-06,CPDPO284272,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77802,2026-07-06
-154.29,0.0,SWIGGY,,,77803,162.0045,PUNE,780.0,2026-06-26,2026-07-06,CPDPO284272,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77803,2026-07-06
+476.19,32.0,SWIGGY,,2026-07-06,77800,499.9995,PUNE,32.0,2026-06-26,2026-07-06,CPDPO284272,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77800,2026-07-08
+178.1,0.0,SWIGGY,,2026-07-06,77801,187.005,PUNE,1232.0,2026-06-26,2026-07-06,CPDPO284272,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77801,2026-07-08
+771.43,0.0,SWIGGY,,2026-07-06,77802,810.0015,PUNE,76.0,2026-06-26,2026-07-06,CPDPO284272,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77802,2026-07-08
+154.29,780.0,SWIGGY,,2026-07-06,77803,162.0045,PUNE,780.0,2026-06-26,2026-07-06,CPDPO284272,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77803,2026-07-08
 ```
 
 ---

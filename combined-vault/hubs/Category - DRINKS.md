@@ -11,9 +11,10 @@ tags:
 
 Up: [[Home]]
 
-**22 matched products** · dominant tier [[Tier - Other\|Other]]
+**23 matched products** · dominant tier [[Tier - Other\|Other]]
 
 ## Member products
+- [[COFFEE]] — Other · —
 - [[GINGER ALE 200ML]] — Other · 200ML
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — Other · 160 MLS
 - [[JIVO WATER 250ML]] — Other · 250ML

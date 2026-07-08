@@ -12,7 +12,7 @@ tags:
 
 Up: [[Home]]
 
-**63 matched products** in the Premium tier.
+**62 matched products** in the Premium tier.
 
 ## 2026 aggregate (target-history)
 - Secondary (L): **1,682,444**  ·  Primary (L): **1,855,826**
@@ -32,7 +32,7 @@ Up: [[Home]]
 ## Member products
 - [[A2 GHEE 1L]] — [[Category - GHEE\|GHEE]] · 1L
 - [[A2 GHEE 500G]] — [[Category - GHEE\|GHEE]] · 500G
-- [[BLACK OLIVE 470G]] — [[Category - OLIVE\|OLIVE]] · 470G
+- [[BLACK OLIVE 470G]] — [[Category - SLICED OLIVE\|SLICED OLIVE]] · 470G
 - [[CANOLA 1+1+1L]] — [[Category - CANOLA\|CANOLA]] · 1+1+1L
 - [[CANOLA 1+1L]] — [[Category - CANOLA\|CANOLA]] · 1+1L
 - [[CANOLA 15L]] — [[Category - CANOLA\|CANOLA]] · 15L
@@ -79,7 +79,6 @@ Up: [[Home]]
 - [[POMACE 3L]] — [[Category - OLIVE\|OLIVE]] · 3L
 - [[SANO CANOLA 1L]] — [[Category - CANOLA\|CANOLA]] · 1L
 - [[SANO CANOLA 5L]] — [[Category - CANOLA\|CANOLA]] · 5L
-- [[SANO CLASSIC 1L]] — [[Category - OLIVE\|OLIVE]] · 1L
 - [[SANO CLASSIC 5L]] — [[Category - OLIVE\|OLIVE]] · 5L
 - [[SANO POMACE 1+1+1L]] — [[Category - OLIVE\|OLIVE]] · 1+1+1L
 - [[SANO POMACE 1+1L]] — [[Category - OLIVE\|OLIVE]] · 1+1L

@@ -1,13 +1,13 @@
 ---
 type: moc
 title: SKUs
-count: 168
+count: 169
 tags:
   - moc
   - type/sku-moc
 ---
 
-# SKUs — Map of Content (168 hubs)
+# SKUs — Map of Content (169 hubs)
 
 Up: [[index]]
 
@@ -36,8 +36,7 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000067]] — MUSTARD 3L (COMMODITY)
 - [[sku-FG0000071]] — EXTRA VIRGIN 1L (PREMIUM)
 - [[sku-FG0000074]] — EXTRA VIRGIN 5L (PREMIUM)
-- [[sku-FG0000075]] — EXTRA VIRGIN 1+1L (PREMIUM)
-- [[sku-FG0000081]] — SUNFLOWER 1L + 1L (COMMODITY)
+- [[sku-FG0000081]] — SUNFLOWER 1L (COMMODITY)
 - [[sku-FG0000082]] — A2 GHEE 500ML (PREMIUM)
 - [[sku-FG0000083]] — A2 GHEE 1L (PREMIUM)
 - [[sku-FG0000088]] — CANOLA 1+1L (PREMIUM)
@@ -61,6 +60,7 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000141]] — SANO SOYABEAN 5L (COMMODITY)
 - [[sku-FG0000142]] — GROUNDNUT 1L (PREMIUM)
 - [[sku-FG0000143]] — GROUNDNUT 5L (PREMIUM)
+- [[sku-FG0000147]] — SANO EXTRA LIGHT 1L (PREMIUM)
 - [[sku-FG0000149]] — GOLD 1L (COMMODITY)
 - [[sku-FG0000150]] — SANO POMACE 1L (PREMIUM)
 - [[sku-FG0000151]] — SANO POMACE 5L (PREMIUM)
@@ -70,7 +70,6 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000158]] — COTTON SEED OIL (COMMODITY)
 - [[sku-FG0000160]] — CANOLA 4L (PREMIUM)
 - [[sku-FG0000161]] — EXTRA VIRGIN 500ML (PREMIUM)
-- [[sku-FG0000162]] — SANO CLASSIC 1L (PREMIUM)
 - [[sku-FG0000163]] — COCONUT 200ML (PREMIUM)
 - [[sku-FG0000164]] — EXTRA VIRGIN 200ML (PREMIUM)
 - [[sku-FG0000165]] — CHIA SEEDS 200G (OTHER)
@@ -83,10 +82,10 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000190]] — BLACK OLIVES 3KG (OTHER)
 - [[sku-FG0000191]] — SOYABEAN 15L (COMMODITY)
 - [[sku-FG0000192]] — SOYABEAN 5L (COMMODITY)
-- [[sku-FG0000193]] — SOYABEAN 1L (COMMODITY)
+- [[sku-FG0000193]] — SOYABEAN 1L POUCH (COMMODITY)
 - [[sku-FG0000194]] — SOYABEAN 1L POUCH (COMMODITY)
 - [[sku-FG0000195]] — BLACK CARDAMOM 100G (OTHER)
-- [[sku-FG0000196]] — BLACK PEPPER 100G (OTHER)
+- [[sku-FG0000196]] — BLACK PAPER 100G (OTHER)
 - [[sku-FG0000197]] — GREEN CARDAMOM 100G (OTHER)
 - [[sku-FG0000198]] — CINNAMON BARK 100G (OTHER)
 - [[sku-FG0000199]] — CUMIN SEEDS 100G (OTHER)
@@ -94,7 +93,7 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000216]] — SANO HONEY 1KG (OTHER)
 - [[sku-FG0000217]] — SANO HONEY 500G (OTHER)
 - [[sku-FG0000223]] — DESI GHEE 1L (PREMIUM)
-- [[sku-FG0000226]] — WG MANGO JUICE 500ML (OTHER)
+- [[sku-FG0000226]] — WG MANGO JUICE 200ML (OTHER)
 - [[sku-FG0000227]] — RICE BRAN 1L (COMMODITY)
 - [[sku-FG0000228]] — SO OLIVE 1L (PREMIUM)
 - [[sku-FG0000229]] — SO OLIVE 5L (PREMIUM)
@@ -117,13 +116,13 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000262]] — WG MANGO JUICE 200ML (OTHER)
 - [[sku-FG0000263]] — ROSE FLAVOR 200ML (OTHER)
 - [[sku-FG0000264]] — TONIC WATER 200ML (OTHER)
-- [[sku-FG0000266]] — JIVO WATER 1L (OTHER)
-- [[sku-FG0000268]] — JIVO WATER 250ML (OTHER)
+- [[sku-FG0000266]] — WATER 1L (OTHER)
+- [[sku-FG0000268]] — WATER 250ML (OTHER)
 - [[sku-FG0000270]] — SODA PEACH 750ML (OTHER)
 - [[sku-FG0000271]] — COFFEE (OTHER)
-- [[sku-FG0000275]] — MUSTARD 1L + 1L (COMMODITY)
+- [[sku-FG0000275]] — MUSTARD 1L (COMMODITY)
 - [[sku-FG0000276]] — WG GINGER ALE 200ML (OTHER)
-- [[sku-FG0000277]] — SPRING WATER 750ML (OTHER)
+- [[sku-FG0000277]] — SODA PEACH 750ML (OTHER)
 - [[sku-FG0000278]] — SODA LEMON 750 ML (OTHER)
 - [[sku-FG0000279]] — WG MANGO JUICE 500ML (OTHER)
 - [[sku-FG0000282]] — SODA 750ML (OTHER)
@@ -146,9 +145,10 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000310]] — EXTRA LIGHT 1+1+1L (PREMIUM)
 - [[sku-FG0000311]] — JIVO POMACE 1+1+1L (PREMIUM)
 - [[sku-FG0000313]] — EXTRA LIGHT 1+1L (PREMIUM)
+- [[sku-FG0000315]] — EXTRA VIRGIN 1+1L (PREMIUM)
 - [[sku-FG0000316]] — SUNFLOWER 3L (COMMODITY)
 - [[sku-FG0000317]] — CANOLA 3L (PREMIUM)
-- [[sku-FG0000320]] — JIVO POMACE 1+1L (PREMIUM)
+- [[sku-FG0000320]] — JIVO POMACE 2L (PREMIUM)
 - [[sku-FG0000321]] — GOLD 1+1 (COMMODITY)
 - [[sku-FG0000325]] — ENERGY DRINK 200ML (OTHER)
 - [[sku-FG0000326]] — SANO POMACE 1L+1L (PREMIUM)
@@ -168,7 +168,8 @@ Every internal SKU hub — the convergence nodes where all platform listings mee
 - [[sku-FG0000383]] — RICE BRAN 4L (COMMODITY)
 - [[sku-FG0000385]] — YELLOW MUSTARD 5L (PREMIUM)
 - [[sku-FG0000390]] — EXTRA LIGHT 3L (PREMIUM)
-- [[sku-FG0000392]] — JIVO POMACE 3L (PREMIUM)
+- [[sku-FG0000392]] — POMACE 3L (PREMIUM)
+- [[sku-FG0000393]] — GROUNDNUT 200ML (PREMIUM)
 - [[sku-FG0000399]] — GROUNDNUT 5+1L (PREMIUM)
 - [[sku-FG0000410]] — SESAME 1L + 1L (PREMIUM)
 - [[sku-SL0000007]] — Canola1L+Mustard1L (PREMIUM)

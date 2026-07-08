@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-06
-observations: 224
+last_seen: 2026-07-08
+observations: 240
 latest_status: NOT_LISTED
-below_days: 7
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cooking-edible-soyabean-oil-5-litre-high-in-omega6-pufa-conta
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-06) — ref ₹949 vs live ₹-
-- **Days below reference:** 7 of 28
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-08) — ref ₹999 vs live ₹-
+- **Days below reference:** 8 of 30
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]]
 
-## Ref-vs-live history (224 observations)
+## Ref-vs-live history (240 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -269,6 +269,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-06,flipkart,OOS,SVD,949,,,,,,0,false
 2026-07-06,flipkart-minutes,NOT_LISTED,SVD,949,,,,,,0,false
 2026-07-06,zepto,NOT_LISTED,SVD,949,,,,,,0,false
+2026-07-07,amazon,ABOVE,SVD,949,1100,1100,1100,151,15.91,0,true
+2026-07-07,amazon-fresh,NOT_LISTED,SVD,949,,,,,,0,false
+2026-07-07,amazon-now,NOT_LISTED,SVD,949,,,,,,0,false
+2026-07-07,bigbasket,NOT_LISTED,SVD,949,,,,,,0,false
+2026-07-07,blinkit,NOT_LISTED,SVD,949,,,,,,0,false
+2026-07-07,flipkart,OOS,SVD,949,,,,,,0,false
+2026-07-07,flipkart-minutes,NOT_LISTED,SVD,949,,,,,,0,false
+2026-07-07,zepto,NOT_LISTED,SVD,949,,,,,,0,false
+2026-07-08,amazon,BELOW,BAU,999,819,819,819,-180,-18.02,1,true
+2026-07-08,amazon-fresh,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-08,amazon-now,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-08,bigbasket,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-08,blinkit,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-08,flipkart,OOS,BAU,999,,,,,,0,false
+2026-07-08,flipkart-minutes,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-08,zepto,NOT_LISTED,BAU,999,,,,,,0,false
 ```
 
 ---
