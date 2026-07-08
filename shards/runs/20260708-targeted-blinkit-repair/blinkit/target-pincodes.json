@@ -1,0 +1,98 @@
+[
+  {
+    "city": "Mumbai",
+    "pincode": "400019",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "400019"
+    ],
+    "lat": 19.02808,
+    "lon": 72.852298,
+    "locality": "Matunga SO"
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110025",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "110025"
+    ],
+    "lat": 28.557827780000004,
+    "lon": 77.27961668,
+    "locality": "New Friends Colony SO"
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110054",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "110054"
+    ],
+    "lat": 28.687274659999996,
+    "lon": 77.22421464,
+    "locality": "Civil Lines SO North Delhi"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560004"
+    ],
+    "lat": 12.948536025,
+    "lon": 77.573275025,
+    "locality": "Basavanagudi H.O"
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422011",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422011"
+    ],
+    "lat": 19.988439,
+    "lon": 73.720725,
+    "locality": "Dwarka Corner S.O"
+  },
+  {
+    "city": "Mysuru",
+    "pincode": "570014",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "570014"
+    ],
+    "lat": 12.3141667,
+    "lon": 76.6565556,
+    "locality": "Jayanagar S.O (Mysuru)"
+  },
+  {
+    "city": "Mysuru",
+    "pincode": "571604",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "571604"
+    ],
+    "lat": 12.3141667,
+    "lon": 76.6565556,
+    "locality": "Ballur B.O"
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520013",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520013"
+    ],
+    "lat": 16.5056111,
+    "lon": 80.62325,
+    "locality": "Krishnalanka S.O"
+  }
+]

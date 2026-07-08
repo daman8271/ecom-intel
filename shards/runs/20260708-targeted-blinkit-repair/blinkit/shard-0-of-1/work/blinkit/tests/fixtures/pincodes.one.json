@@ -1,0 +1,12 @@
+[
+  {
+    "city": "Delhi",
+    "pincode": "110094",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": ["110094"],
+    "lat": 28.696148133333335,
+    "lon": 77.29725,
+    "locality": "Gokal Puri SO"
+  }
+]
