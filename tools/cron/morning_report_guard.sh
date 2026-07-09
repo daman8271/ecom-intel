@@ -52,6 +52,7 @@ alert(){ LOG "ALERT: $1"; tg "${TAG}$1"; wa "${TAG}$1"; }
 # ---------- detection ----------
 NAT_RPT="output/Jivo-Bigbasket-Live-Report-${TODAY}.xlsx"
 PIN_RPT="output/Jivo-BigBasket-Pincode-Report-${TODAY}.xlsx"
+PIN_MARK="logs/bigbasket-pincode-wa-${TODAY}.sent"
 NAT_MARK="logs/.national-guard-spooled-${TODAY}"
 
 national_spooled(){    # did BB national make today's batch (run_all's spool OR ours)?
@@ -59,11 +60,21 @@ national_spooled(){    # did BB national make today's batch (run_all's spool OR 
   [ -f "$NAT_MARK" ] && return 0
   return 1
 }
-pincode_routed(){ [ -f "$PIN_RPT" ]; }  # output/ copy is the group/batch handoff
+pincode_routed(){ [ -f "$PIN_RPT" ] && [ -f "$PIN_MARK" ]; }
 blinkit_sent(){ [ -f "logs/blinkit-main-wa-${TODAY}.sent" ]; }
 
 # ======================================================================= EARLY
 if [ "$PASS" = "early" ]; then
+  if ! pincode_routed && [ -f "$PIN_RPT" ]; then
+    LOG "BB pincode workbook present without Ecom-group sent marker -> retrying delivery"
+    if [ "$DRY" = "1" ]; then
+      LOG "[dryrun] would retry Ecom-group delivery for $PIN_RPT"
+    elif ./platforms/bigbasket/team_run_pincode.sh deliver "$DIR/$PIN_RPT" >>logs/morning_report_guard.log 2>&1; then
+      LOG "BB pincode Ecom-group delivery retry succeeded"
+    else
+      alert "[WARN] Morning guard: BB pincode workbook exists but Ecom-group delivery retry failed for ${TODAY}."
+    fi
+  fi
   if national_spooled; then
     LOG "BB national already spooled into today's batch — OK"
     exit 0
@@ -100,33 +111,42 @@ national_spooled && NAT_OK=1
 pincode_routed   && PIN_OK=1
 blinkit_sent     && BLK_OK=1
 
-emoji(){ [ "$1" = "1" ] && echo "✅" || echo "❌"; }
-SUMMARY="Morning report check ${TODAY}:
-$(emoji $NAT_OK) BigBasket national (10:00 batch)
-$(emoji $PIN_OK) BigBasket pincode-wise (Ecom group/batch)
-$(emoji $BLK_OK) Blinkit (Ecom group)"
-
 # --- auto-catch-up: BB pincode (Mac shard re-routed to KVM1), single-flight ---
+PIN_NOTE=""
 if [ "$PIN_OK" != "1" ]; then
-  if [ "$DRY" = "1" ]; then
+  if [ -f "$PIN_RPT" ]; then
+    LOG "BB pincode workbook exists but sent marker is absent -> retrying Ecom-group delivery"
+    if [ "$DRY" = "1" ]; then
+      PIN_NOTE="[dryrun] would retry BB pincode Ecom-group delivery."
+    elif ./platforms/bigbasket/team_run_pincode.sh deliver "$DIR/$PIN_RPT" >>logs/morning_report_guard.log 2>&1 && pincode_routed; then
+      PIN_OK=1
+      PIN_NOTE="BB pincode Ecom-group delivery was retried successfully."
+    else
+      PIN_NOTE="[WARN] BB pincode workbook exists but Ecom-group delivery retry failed."
+    fi
+  elif [ "$DRY" = "1" ]; then
     LOG "[dryrun] would launch KVM-rerouted pincode re-run"
-    SUMMARY="$SUMMARY
-↳ [dryrun] would re-run BB pincode via KVM1 for Ecom group/batch output."
+    PIN_NOTE="[dryrun] would re-run BB pincode via KVM1 for Ecom group delivery."
   elif pgrep -f 'team_run_pincode.sh (run|collect|merge|build)' >/dev/null 2>&1 || [ -f logs/.bb-finisher.lock ]; then
     LOG "pincode job already running — not double-triggering"
-    SUMMARY="$SUMMARY
-↳ BB pincode re-run already in progress."
+    PIN_NOTE="BB pincode re-run already in progress."
   else
     LOG "BB pincode missing from output/ -> launching KVM-rerouted team re-run in tmux"
     RUNID="bb-guard-$(date +%Y%m%d-%H%M%S)"
     /usr/bin/tmux new-session -d -s "$RUNID" \
       "cd $DIR && BB_TEAM_MAC_HOST=kvm1 flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1" 2>/dev/null \
-      && SUMMARY="$SUMMARY
-↳ Re-running BB pincode now (Mac→KVM1); expect Ecom group/batch output ~1:30 PM." \
-      || SUMMARY="$SUMMARY
-↳ [WARN] could not launch BB pincode re-run — check logs."
+      && PIN_NOTE="Re-running BB pincode now (Mac->KVM1); Ecom-group delivery will follow the build." \
+      || PIN_NOTE="[WARN] could not launch BB pincode re-run - check logs."
   fi
 fi
+
+emoji(){ [ "$1" = "1" ] && echo "✅" || echo "❌"; }
+SUMMARY="Morning report check ${TODAY}:
+$(emoji $NAT_OK) BigBasket national (10:00 batch)
+$(emoji $PIN_OK) BigBasket pincode-wise (Ecom group)
+$(emoji $BLK_OK) Blinkit (Ecom group)"
+[ -n "$PIN_NOTE" ] && SUMMARY="$SUMMARY
+↳ $PIN_NOTE"
 
 # --- Blinkit is Mac-only: cannot be validly reproduced on the VPS -> alert only ---
 if [ "$BLK_OK" != "1" ]; then

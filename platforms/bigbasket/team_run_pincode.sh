@@ -17,7 +17,9 @@ PINS_FILE="${BB_TEAM_PINS_FILE:-$PDIR/pincodes_jivo.json}"
 SHARD_ROOT="${BB_TEAM_SHARD_ROOT:-$ROOT/shards/bigbasket}"
 PRIVATE_OUT="${BB_TEAM_PRIVATE_OUT:-$ROOT/output/private-no-group}"
 DIRECT_JID_FILE="${BB_TEAM_DIRECT_JID_FILE:-$ROOT/secrets/bigbasket-direct-jid}"
+GROUP_JID_FILE="${BB_TEAM_GROUP_JID_FILE:-$ROOT/secrets/whatsapp-target.json}"
 GW_HEALTH="${BB_TEAM_WA_HEALTH:-http://127.0.0.1:3001/health}"
+GW_SEND="${BB_TEAM_WA_SEND:-http://127.0.0.1:3001/send}"
 GW_SEND_MEDIA="${BB_TEAM_WA_SEND_MEDIA:-http://127.0.0.1:3001/send-media}"
 
 MAC_HOST="${BB_TEAM_MAC_HOST:-macpro}"
@@ -45,6 +47,7 @@ Usage:
   $0 collect <run-id>   Pull remote worker outputs to VPS
   $0 merge <run-id>     Merge shard JSON into result_pincode.json
   $0 build <run-id>     Build workbook for the Ecom batch/group
+  $0 deliver [xlsx]     Retry Ecom WhatsApp group delivery for a built workbook
 
 Weights default to VPS=$VPS_WEIGHT Mac=$MAC_WEIGHT KVM1=$KVM_WEIGHT.
 Override with BB_TEAM_VPS_WEIGHT, BB_TEAM_MAC_WEIGHT, BB_TEAM_KVM_WEIGHT.
@@ -73,6 +76,21 @@ resolve_direct_jid() {
   fi
 }
 
+resolve_group_jid() {
+  [ -f "$GROUP_JID_FILE" ] || return 1
+  python3 - "$GROUP_JID_FILE" <<'PY'
+import json, sys
+
+try:
+    jid = str(json.load(open(sys.argv[1], encoding="utf-8")).get("jid", "")).strip()
+except Exception:
+    raise SystemExit(1)
+if not jid.endswith("@g.us"):
+    raise SystemExit(1)
+print(jid)
+PY
+}
+
 ensure_gateway() {
   export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/0}"
   export DBUS_SESSION_BUS_ADDRESS="${DBUS_SESSION_BUS_ADDRESS:-unix:path=/run/user/0/bus}"
@@ -88,6 +106,66 @@ ensure_gateway() {
     sleep 1
   done
   return 1
+}
+
+send_group() {
+  local workbook="$1" jid report_date marker header body response
+  [ -f "$workbook" ] || {
+    echo "[bb-team] Ecom group delivery failed: workbook missing: $workbook" >&2
+    return 1
+  }
+  report_date="$(basename "$workbook" | sed -nE 's/.*([0-9]{4}-[0-9]{2}-[0-9]{2})\.xlsx$/\1/p')"
+  report_date="${report_date:-$(date +%F)}"
+  marker="$ROOT/logs/bigbasket-pincode-wa-${report_date}.sent"
+  if [ -f "$marker" ]; then
+    echo "[bb-team] Ecom group delivery already marked sent: $marker"
+    return 0
+  fi
+  jid="$(resolve_group_jid || true)"
+  if [ -z "$jid" ]; then
+    echo "[bb-team] Ecom group delivery failed: missing/invalid group target in $GROUP_JID_FILE" >&2
+    return 1
+  fi
+  if [ "${BB_TEAM_WA_DRYRUN:-0}" = "1" ]; then
+    echo "[bb-team] [dryrun] would send $(basename "$workbook") to configured Ecom group"
+    return 0
+  fi
+  if ! ensure_gateway; then
+    echo "[bb-team] Ecom group delivery failed: gateway not connected" >&2
+    return 1
+  fi
+
+  header="$(printf 'Jivo x BigBasket pincode-wise - %s\nReport attached.' "$report_date")"
+  body="$(python3 - "$jid" "$header" <<'PY'
+import json, sys
+print(json.dumps({"chatId": sys.argv[1], "message": sys.argv[2]}))
+PY
+)"
+  response="$(curl -s --max-time 60 -X POST "$GW_SEND" -H 'Content-Type: application/json' -d "$body" || true)"
+  echo "$response" | grep -q '"success":true' || {
+    echo "[bb-team] Ecom group header send failed: $response" >&2
+    return 1
+  }
+
+  body="$(python3 - "$jid" "$workbook" <<'PY'
+import json, os, sys
+jid, path = sys.argv[1], os.path.abspath(sys.argv[2])
+print(json.dumps({
+    "chatId": jid,
+    "filePath": path,
+    "mediaType": "document",
+    "fileName": os.path.basename(path),
+}))
+PY
+)"
+  response="$(curl -s --max-time 120 -X POST "$GW_SEND_MEDIA" -H 'Content-Type: application/json' -d "$body" || true)"
+  echo "$response" | grep -q '"success":true' || {
+    echo "[bb-team] Ecom group workbook send failed: $response" >&2
+    return 1
+  }
+  mkdir -p "$ROOT/logs"
+  touch "$marker"
+  echo "[bb-team] Ecom group workbook sent; marker: $marker"
 }
 
 send_direct() {
@@ -369,6 +447,7 @@ build_run() {
   echo "[bb-team] Ecom batch/group workbook: $public_xlsx"
   cp -f "$xlsx" "$private_xlsx"
   echo "[bb-team] secondary private copy: $private_xlsx"
+  send_group "$public_xlsx" || echo "[bb-team] Ecom group send failed; guards will retry the built workbook"
   send_direct "$public_xlsx" || echo "[bb-team] direct WhatsApp send failed; Ecom batch/group workbook kept"
 }
 
@@ -395,6 +474,10 @@ case "$cmd" in
     ;;
   build)
     build_run
+    ;;
+  deliver)
+    workbook="${2:-$ROOT/output/Jivo-BigBasket-Pincode-Report-$(date +%F).xlsx}"
+    send_group "$workbook"
     ;;
   *)
     usage

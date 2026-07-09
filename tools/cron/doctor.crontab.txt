@@ -22,7 +22,7 @@
 # team runner across VPS + Mac Pro + KVM1; it writes only to output/private-no-group
 # and direct-sends from a gitignored direct-recipient secret. The old BigBasket
 # paid QuickCommerce API cron is retired.
-0 3 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # ecom-intel bigbasket-pincode team daily private-direct
+0 3 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # ecom-intel bigbasket-pincode team daily Ecom-group + optional direct
 
 # 10:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28; moved
 # 12:00 -> 10:00 goal #60 2026-07-03). Fire 00:30; LEAD_MAX=11820 is the current

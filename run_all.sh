@@ -142,8 +142,9 @@ fi
 
 # ---- PRICE-MATCH master workbook (SHEETS-B) ----------------------------------
 # BigBasket national workbook — scraped off-box and ingested into output/.
-# The pincode workbook is private/direct-only and must not be spooled into the
-# Ecom group batch, even if a stale copy appears in output/.
+# The pincode team runner delivers its separate workbook to the Ecom WhatsApp
+# group. Keep this Telegram batch slot on the national workbook so one does not
+# overwrite the other under the canonical `bigbasket` spool key.
 if [ "$SIM_MODE" != "1" ] && [ "$CHAIN_SKIPPED" != "1" ] && [ "${DEFER_DELIVERY:-}" = "1" ] && [ -n "${SWEEP_ID:-}" ]; then
   BB_RPT="$DIR/output/Jivo-Bigbasket-Live-Report-$(date +%F).xlsx"
   BB_SUM="$DIR/platforms/bigbasket/result.json"

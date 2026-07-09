@@ -14,7 +14,8 @@ path remains only for the smaller national workbook/diagnostic.
 The current pincode report records requested pincode, resolved location/service
 area, serviceability failures, zero-row pins, Jivo rows, and member/session status.
 Private/direct delivery is intentional: the pincode workbook is written to
-`output/private-no-group/` and is not a group-batch attachment.
+`output/`, sends it to the configured Ecom WhatsApp group, and keeps a secondary
+archive copy under `output/private-no-group/`.
 
 ---
 

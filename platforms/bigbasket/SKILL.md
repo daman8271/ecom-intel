@@ -25,12 +25,14 @@ member session. The runner can be resumed with:
 
 Outputs:
 - `result_pincode.json` is the current pincode ground-truth result.
-- `Jivo-BigBasket-Pincode-Report-YYYY-MM-DD.xlsx` is copied only to
+- `Jivo-BigBasket-Pincode-Report-YYYY-MM-DD.xlsx` is copied to `output/` for the
+  normal reporting handoff, with a secondary archive copy in
   `output/private-no-group/`.
-- The normal `output/` pincode copy is removed so the Ecom group batch cannot pick
-  it up.
-- Direct WhatsApp delivery is explicit only: `BB_TEAM_DIRECT_JID` or the gitignored
-  `secrets/bigbasket-direct-jid` file. There is no group fallback.
+- The runner sends the workbook to the configured Ecom WhatsApp group and writes
+  `logs/bigbasket-pincode-wa-YYYY-MM-DD.sent` only after the document succeeds.
+- `morning_report_guard.sh` retries a built-but-unsent workbook at 08:40 and 10:35
+  without repeating the scrape. Optional direct delivery remains secondary via
+  `BB_TEAM_DIRECT_JID` or `secrets/bigbasket-direct-jid`.
 
 The older national `scrape.js` path still exists for the small national
 `Jivo-Bigbasket-Live-Report-YYYY-MM-DD.xlsx` workbook. Use it as a national
