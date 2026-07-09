@@ -20,6 +20,10 @@ WRAPPER="/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh"
 PASS="${1:-early}"
 LOG(){ echo "[$(date '+%F %T')] blinkit_guard($PASS): $*"; }
 
+mac_blinkit_running(){
+  ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "pgrep -f run_blinkit_mac_to_vps.sh >/dev/null" 2>/dev/null
+}
+
 tg(){ ( set +e
   [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
   [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "${TELEGRAM_CHAT_ID:-}" ] || exit 0
@@ -31,6 +35,18 @@ if [ -f "$REPORT" ]; then
   LOG "today's report present — OK"
   exit 0
 fi
+
+case "$PASS" in
+  drycheck|status)
+    latest_drop="$(ls -t platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"*.json platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"T*.json 2>/dev/null | head -1 || true)"
+    if mac_blinkit_running; then
+      LOG "report missing; Mac scrape running; latest_drop=$(basename "${latest_drop:-none}")"
+    else
+      LOG "report missing; Mac scrape not running; latest_drop=$(basename "${latest_drop:-none}")"
+    fi
+    exit 0
+    ;;
+esac
 
 attempt_held_drop_repair(){
   local before after
@@ -67,7 +83,7 @@ if [ -f "$DIR/logs/.mac-offline" ]; then
   fi
 fi
 
-if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "pgrep -f run_blinkit_mac_to_vps.sh >/dev/null" 2>/dev/null; then
+if mac_blinkit_running; then
   LOG "Mac scrape already running — not double-triggering"
   [ "$PASS" = "late" ] && tg "⏳ Blinkit guard 08:45: scrape still running — report may land close to the 10:00 batch. Watching."
   exit 0

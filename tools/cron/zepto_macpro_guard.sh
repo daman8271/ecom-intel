@@ -13,10 +13,12 @@ mkdir -p logs
 
 PASS="${1:-launch}"
 TODAY="$(date +%F)"
+TODAY_COMPACT="$(date +%Y%m%d)"
 NOW="$(date +%s)"
 BATCH_TS="$(date -d "$TODAY 10:00" +%s)"
 REPORT="output/Jivo-Zepto-Live-Report-${TODAY}.xlsx"
 WRAPPER="/Users/danny./VPS-Migration/scripts/run_zepto_mac_to_vps.sh"
+MAC_STALE_RUNNING_S="${ZEPTO_MAC_STALE_RUNNING_S:-18000}"
 LOG(){ echo "[$(date '+%F %T')] zepto_macpro_guard($PASS): $*"; }
 
 tg(){ ( set +e
@@ -42,6 +44,31 @@ mac_reachable(){ ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "true" >/dev/n
 mac_running(){
   ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
     "pgrep -f 'run_zepto_mac_to_vps.sh|platforms/zepto/scrape.js' >/dev/null" >/dev/null 2>&1
+}
+
+mac_stale_previous_run(){
+  ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
+    "TODAY_COMPACT='$TODAY_COMPACT' STALE_S='$MAC_STALE_RUNNING_S' python3 - <<'PY'
+import os
+import subprocess
+import sys
+import time
+
+cmds = subprocess.check_output(
+    \"ps -eo command | grep -E 'run_zepto_mac_to_vps.sh|platforms/zepto|OUT_FILE=.*zepto-' | grep -v grep || true\",
+    shell=True,
+    text=True,
+)
+if not cmds.strip():
+    sys.exit(1)
+if f\"zepto-{os.environ['TODAY_COMPACT']}\" in cmds:
+    sys.exit(1)
+lock = '/tmp/com.danny.zepto-mac-to-vps.lock'
+if not os.path.exists(lock):
+    sys.exit(1)
+age = int(time.time() - os.path.getmtime(lock))
+sys.exit(0 if age >= int(os.environ['STALE_S']) else 1)
+PY" >/dev/null 2>&1
 }
 
 trigger_mac(){
@@ -82,7 +109,16 @@ fi
 
 case "$PASS" in
   launch)
-    if mac_running; then LOG "Mac Pro Zepto already running"; exit 0; fi
+    if mac_running; then
+      if mac_stale_previous_run; then
+        LOG "stale previous-day Mac Pro Zepto run still active; using VPS fallback instead of waiting"
+        tg "⚠️ Zepto guard: previous-day Mac Pro Zepto is still active at $(date +%H:%M) IST; using VPS fallback for today's report. KVM1 remains disabled."
+        local_vps_rescue
+        exit 0
+      fi
+      LOG "Mac Pro Zepto already running"
+      exit 0
+    fi
     if trigger_mac; then
       LOG "Mac Pro Zepto trigger sent"
     else
@@ -92,7 +128,16 @@ case "$PASS" in
     fi
     ;;
   watchdog|late)
-    if mac_running; then LOG "Mac Pro Zepto still running — waiting"; exit 0; fi
+    if mac_running; then
+      if mac_stale_previous_run; then
+        LOG "stale previous-day Mac Pro Zepto run still active; using VPS fallback instead of waiting"
+        tg "⚠️ Zepto guard: previous-day Mac Pro Zepto is still active at $(date +%H:%M) IST; using VPS fallback for today's report. KVM1 remains disabled."
+        local_vps_rescue
+        exit 0
+      fi
+      LOG "Mac Pro Zepto still running — waiting"
+      exit 0
+    fi
     if mac_reachable && [ "$NOW" -lt "$(date -d "$TODAY 09:00" +%s)" ]; then
       if trigger_mac; then LOG "Mac Pro Zepto watchdog trigger sent"; exit 0; fi
     fi
