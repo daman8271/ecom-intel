@@ -203,7 +203,10 @@ python3 "$ROOT/tools/cron/blinkit_apply_targeted_shard_repair.py" \
   "$BASE_DROP" "$TARGET_RESULT" "$PATCHED_DROP" >>"$LOG" 2>&1 || exit 1
 
 log "ingesting patched drop through normal Blinkit gates"
-BLINKIT_MAX_WALL_S="${BLINKIT_MAX_WALL_S:-9000}" BLINKIT_REQUIRE_AUTH_DROP=1 \
+# Repair keeps auth/OOS/price gates strict. ETA is non-price metadata and Blinkit
+# sometimes omits it on otherwise healthy in-stock search cards; allow a bounded
+# repair-only floor instead of fabricating ETA values.
+BLINKIT_MAX_WALL_S="${BLINKIT_MAX_WALL_S:-9000}" BLINKIT_REQUIRE_AUTH_DROP=1 BLINKIT_MIN_ETA_PCT="${BLINKIT_REPAIR_MIN_ETA_PCT:-85}" \
   "$ROOT/platforms/blinkit/ingest.sh" "$PATCHED_DROP" --deliver >>"$LOG" 2>&1 || exit 1
 
 log "done"
