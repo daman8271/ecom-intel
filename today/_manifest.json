@@ -1,7 +1,7 @@
 {
   "schema": "jivo-today/manifest@1",
   "date": "2026-07-09",
-  "generated_at": "2026-07-09 13:40:21 IST",
+  "generated_at": "2026-07-09 14:00:23 IST",
   "mode": "live",
   "dry_run": false,
   "total_files": 1532,
@@ -9,13 +9,13 @@
     "price-scraper": {
       "repo": "/opt/ecom-intel",
       "base_commit": "33ed0a32db5eab25162ac9510a0f97b701cb5ba1",
-      "end_commit": "ba612eebf94c117b275d71c8c592dc2a090ce70c",
+      "end_commit": "5acc35e4cdc60a1fcd81fa73d88367caa82c2bf6",
       "files": 1530
     },
     "competitors": {
       "repo": "/opt/ecom-intel",
       "base_commit": "33ed0a32db5eab25162ac9510a0f97b701cb5ba1",
-      "end_commit": "ba612eebf94c117b275d71c8c592dc2a090ce70c",
+      "end_commit": "5acc35e4cdc60a1fcd81fa73d88367caa82c2bf6",
       "files": 2
     }
   }
