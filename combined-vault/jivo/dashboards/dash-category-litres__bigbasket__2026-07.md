@@ -22,18 +22,18 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "categories": [
   {
    "category": "CANOLA",
-   "ltrs": 180.0
+   "ltrs": 240.0
   },
   {
    "category": "OLIVE",
-   "ltrs": 168.0
+   "ltrs": 200.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "bigbasket",
- "total_ltrs": 348.0,
+ "total_ltrs": 440.0,
  "year": 2026
 }
 ```

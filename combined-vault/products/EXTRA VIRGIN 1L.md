@@ -42,16 +42,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 799 | 739 | -7.51 | 🟢 BELOW | BAU | 2026-07-08 |
-| [[Platform - amazon\|amazon-fresh]] | 799 | 739 | -7.51 | 🟢 BELOW | BAU | 2026-07-08 |
-| [[Platform - amazon\|amazon-now]] | 799 | 739 | -7.51 | 🟢 BELOW | BAU | 2026-07-08 |
-| [[Platform - bigbasket\|bigbasket]] | 799 | 1012 | 26.66 | 🔴 ABOVE | BAU | 2026-07-08 |
-| [[Platform - flipkart\|flipkart]] | 799 | 725 | -9.26 | 🟢 BELOW | BAU | 2026-07-08 |
-| [[Platform - zepto\|zepto]] | 799 | 800 | 0.13 | 🟦 MATCH | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon]] | 799 | 739 | -7.51 | 🟢 BELOW | BAU | 2026-07-09 |
+| [[Platform - amazon\|amazon-fresh]] | 799 | 739 | -7.51 | 🟢 BELOW | BAU | 2026-07-09 |
+| [[Platform - amazon\|amazon-now]] | 799 | 739 | -7.51 | 🟢 BELOW | BAU | 2026-07-09 |
+| [[Platform - bigbasket\|bigbasket]] | 799 | 1012 | 26.66 | 🔴 ABOVE | BAU | 2026-07-09 |
+| [[Platform - flipkart\|flipkart]] | 799 | 725 | -9.26 | 🟢 BELOW | BAU | 2026-07-09 |
+| [[Platform - zepto\|zepto]] | 799 | 800 | 0.13 | 🟦 MATCH | BAU | 2026-07-09 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -84,7 +84,6 @@ Cross-vault fusion by name / SKU match:
 - **1 oitm:** [[oitm-FG0000042]]
 - **523 boxes:** [[box-117536]] · [[box-117537]] · [[box-117538]] … +520 more (tag `bridge/FG0000042`)
 - **11 pallets:** [[pal-1691]] · [[pal-1692]] · [[pal-1696]] … +8 more (tag `bridge/FG0000042`)
-- **2 boxes:** [[barcode__dispatch__reports__boxes-92537]] · [[barcode__dispatch__reports__boxes-92557]]
 
 **`FG0000071`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000071]]

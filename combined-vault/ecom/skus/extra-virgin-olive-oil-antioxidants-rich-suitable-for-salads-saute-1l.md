@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: extra-virgin-olive-oil-antioxidants-rich-suitable-for-salads-saute-1l
-display_name: "Extra Virgin Olive Oil - Antioxidants Rich, Suitable For Salads, Saute (1 L)"
+display_name: Extra Virgin Olive Oil Antioxidants Rich Suitable For Salads Saute 1l
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Extra Virgin Olive Oil - Antioxidants Rich, Suitable For Salads, Saute (1 L)**
+**Extra Virgin Olive Oil Antioxidants Rich Suitable For Salads Saute 1l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹1012 (43.7% off)

@@ -22,19 +22,19 @@ Up: [[dashboards-index]]
  "platforms": [
   {
    "format": "SWIGGY",
-   "po_count": 41,
+   "po_count": 46,
    "slug": "swiggy",
-   "total_litrs": 45169.0,
-   "total_order_units": 32676.0,
-   "total_units": 7589039.5
+   "total_litrs": 54163.0,
+   "total_order_units": 39646.0,
+   "total_units": 9136272.88
   },
   {
    "format": "BLINKIT",
-   "po_count": 41,
+   "po_count": 42,
    "slug": "blinkit",
-   "total_litrs": 8642.0,
-   "total_order_units": 8050.0,
-   "total_units": 1725438.64
+   "total_litrs": 12912.0,
+   "total_order_units": 10418.0,
+   "total_units": 2501709.98
   },
   {
    "format": "ZEPTO",
@@ -46,11 +46,27 @@ Up: [[dashboards-index]]
   },
   {
    "format": "BIG BASKET",
-   "po_count": 3,
+   "po_count": 2,
    "slug": "bigbasket",
    "total_litrs": 1806.0,
-   "total_order_units": 2192.0,
-   "total_units": 334312.02
+   "total_order_units": 2168.0,
+   "total_units": 333534.9
+  },
+  {
+   "format": "FLIPKART GROCERY",
+   "po_count": 1,
+   "slug": "flipkart_grocery",
+   "total_litrs": 1720.0,
+   "total_order_units": 1720.0,
+   "total_units": 255142.85714285713
+  },
+  {
+   "format": "ZOMATO",
+   "po_count": 1,
+   "slug": "zomato",
+   "total_litrs": 720.0,
+   "total_order_units": 400.0,
+   "total_units": 207089.8
   },
   {
    "format": "CITY MALL",

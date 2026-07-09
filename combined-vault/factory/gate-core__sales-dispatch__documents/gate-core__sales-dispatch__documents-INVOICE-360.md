@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "DL01MA6176"
+title: "DL01MB2623"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,16 +10,16 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# DL01MA6176
+# DL01MB2623
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35567
-- **doc_num:** 606260188
-- **doc_date:** 2026-06-29
-- **doc_total:** 1575000.00
+- **doc_entry:** 35718
+- **doc_num:** 606260219
+- **doc_date:** 2026-06-30
+- **doc_total:** 2430125.00
 - **branch_id:** 2
 - **branch_name:** HARYANA
 - **card_code:** CUSTA000907
@@ -29,25 +29,25 @@ tags:
 - **place_of_supply:** HR
 - **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** DL01MA6176
+- **vehicle_no:** DL01MB2623
 - **transporter_name:** Arnav Transport
-- **bilty_no:** 7097
-- **bilty_date:** 2026-06-30
+- **bilty_no:** 7115
+- **bilty_date:** 2026-07-04
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** BH-FGM
-- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS
-- **base_refs:** 1706264727
-- **total_quantity:** 10000.000
-- **total_litres:** 10000.000
+- **item_summary:** FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS
+- **base_refs:** 1706264626
+- **total_quantity:** 6627.000
+- **total_litres:** 7535.000
 - **total_boxes:** 0.000
-- **total_weight:** 9707.300
-- **line_count:** 1
+- **total_weight:** 7530.718
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 708, "sap_invoice_doc_entry": 35567, "sap_invoice_doc_num": "606260188", "invoice_number": "606260188", "eway_bill": "372283074714", "invoice_weight": "9707.300", "invoice_amount": "1575000.00", "place_of_supply": "HR", "location": "FARIDABAD", "product_variety": "Oil", "total_litres": "10000.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 202, "transporter_id": 54, "driver_id": null, "linked_vehicle_entry_id": 1347, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-01T11:05:34.986117Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-29", "priority": "High", "transporter_name": "Arnav Transport Service", "transporter_gstin": "", "contact_person": "Lalit Kumar", "mobile_no": "9718077490", "vehicle_no": "DL01MA6176", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7097", "bilty_date": "2026-06-30", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-01_at_4.20.02_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-01 at 4.20.02 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "Faridabad", "created_at": "2026-06-29T16:40:47.938513+05:30", "updated_at": "2026-07-01T16:35:34.996317+05:30"}
+  {"id": 890, "sap_invoice_doc_entry": 35718, "sap_invoice_doc_num": "606260219", "invoice_number": "606260219", "eway_bill": "352285206856", "invoice_weight": "7530.718", "invoice_amount": "2430125.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "7535.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 198, "transporter_id": 54, "driver_id": null, "linked_vehicle_entry_id": 1504, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-04T15:03:20.889884Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-04", "priority": "High", "transporter_name": "Arnav Transport Service", "transporter_gstin": "", "contact_person": "Lalit Kumar", "mobile_no": "9718077490", "vehicle_no": "DL01MB2623", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7115", "bilty_date": "2026-07-04", "bilty_attachment": "/media/sales_dispatch/attachments/606260217_1.pdf", "bilty_attachment_name": "606260217 (1).pdf", "freight": "3430.95", "total_freight": "3430.95", "kanta_weight": null, "remarks": "", "created_at": "2026-07-03T18:45:20.554882+05:30", "updated_at": "2026-07-04T20:33:20.900695+05:30"}
   ```

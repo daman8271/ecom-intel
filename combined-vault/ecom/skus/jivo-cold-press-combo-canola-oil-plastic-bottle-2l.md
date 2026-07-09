@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-combo-canola-oil-plastic-bottle-2l
-display_name: JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L)
+display_name: Jivo Cold Press Combo Canola Oil Plastic Bottle 2l
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L)**
+**Jivo Cold Press Combo Canola Oil Plastic Bottle 2l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹937

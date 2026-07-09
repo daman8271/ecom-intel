@@ -48,6 +48,16 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
+   "delta_pct": -75.1,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 220.0,
+   "name": "CANOLA 1L",
+   "prev_ltrs": 883.0
+  },
+  {
+   "brand": null,
+   "code": null,
    "delta_pct": -83.7,
    "head": "COMMODITY",
    "is_new": false,
@@ -58,32 +68,32 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -79.6,
+   "delta_pct": -76.9,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 180.0,
-   "name": "CANOLA 1L",
-   "prev_ltrs": 883.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -80.8,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 80.0,
+   "ltrs": 96.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 416.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -85.2,
+   "delta_pct": -80.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 48.0,
+   "ltrs": 64.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 324.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -97.0,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 20.0,
+   "name": "CANOLA 5L",
+   "prev_ltrs": 660.0
   },
   {
    "brand": null,
@@ -110,12 +120,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -95.4,
-  "head": "COMMODITY",
+  "delta_pct": -97.0,
+  "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 480.0,
-  "name": "SUNFLOWER 1L",
-  "prev_ltrs": 10480.0
+  "ltrs": 20.0,
+  "name": "CANOLA 5L",
+  "prev_ltrs": 660.0
  },
  "top_riser": null,
  "year": 2026

@@ -22,41 +22,41 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 18359.0,
+    "ltrs": 19899.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 9036.0,
+    "ltrs": 12711.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 915.0,
+    "ltrs": 1275.0,
     "name": "BLENDED"
    },
    {
-    "ltrs": 136.0,
+    "ltrs": 200.0,
     "name": "RICE BRAN"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 18359.0,
+    "ltrs": 19899.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 9036.0,
+    "ltrs": 12711.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 915.0,
+    "ltrs": 1275.0,
     "name": "GOLD"
    },
    {
-    "ltrs": 136.0,
+    "ltrs": 200.0,
     "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 28446.0
+  "total_ltrs": 34085.0
  },
  "errors": [],
  "month": 7,
@@ -64,19 +64,19 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "premium": {
   "categories": [
    {
-    "ltrs": 22472.0,
+    "ltrs": 24388.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 1977.0,
+    "ltrs": 2391.75,
     "name": "OLIVE"
    },
    {
-    "ltrs": 582.0,
+    "ltrs": 818.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 80.0,
+    "ltrs": 160.0,
     "name": "SESAME OIL"
    },
    {
@@ -90,27 +90,27 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
   ],
   "sub_categories": [
    {
-    "ltrs": 22472.0,
+    "ltrs": 24388.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 1080.0,
+    "ltrs": 1312.0,
     "name": "EXTRA LIGHT"
    },
    {
-    "ltrs": 696.0,
-    "name": "JIVO POMACE"
-   },
-   {
-    "ltrs": 582.0,
+    "ltrs": 818.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 201.0,
+    "ltrs": 804.0,
+    "name": "JIVO POMACE"
+   },
+   {
+    "ltrs": 275.75,
     "name": "EXTRA VIRGIN"
    },
    {
-    "ltrs": 80.0,
+    "ltrs": 160.0,
     "name": "SESAME OIL"
    },
    {
@@ -122,7 +122,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
     "name": "YELLOW MUSTARD"
    }
   ],
-  "total_ltrs": 25163.0
+  "total_ltrs": 27809.75
  },
  "source": "primary",
  "year": 2026

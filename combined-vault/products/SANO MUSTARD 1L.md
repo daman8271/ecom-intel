@@ -27,16 +27,19 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000136` |
 | canonical_sku(s) | `sano-pure-fresh-kachi-ghani-mustard-oil-1-litre-pet-bottle-high-pungency-rich-in-omega3-100-natural-authentic-indian-cooking-oil-boosts-heart-health-1l` |
 | Category | [[Category - MUSTARD\|MUSTARD]] |
+| Sub-category | MUSTARD KACCHI GHANI |
+| Brand | SANO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 1L |
+| Per-unit | 1.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 209 | — | — | ⚪ OOS | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon]] | 209 | — | — | ⚪ OOS | BAU | 2026-07-09 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

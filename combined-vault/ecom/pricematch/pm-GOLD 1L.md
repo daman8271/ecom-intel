@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-08
-observations: 240
+last_seen: 2026-07-09
+observations: 248
 latest_status: OOS
-below_days: 15
+below_days: 16
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-s
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-07-08) — ref ₹199 vs live ₹-
-- **Days below reference:** 15 of 30
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-08]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-07-09) — ref ₹199 vs live ₹-
+- **Days below reference:** 16 of 31
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-08]] · [[2026-07-09]]
 
-## Ref-vs-live history (240 observations)
+## Ref-vs-live history (248 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -285,6 +285,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-08,flipkart,ABOVE,BAU,199,211,211,211,12,6.03,0,true
 2026-07-08,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
 2026-07-08,zepto,OOS,BAU,199,,,,,,0,false
+2026-07-09,amazon,BELOW,BAU,199,169,169,169,-30,-15.08,1,true
+2026-07-09,amazon-fresh,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-09,amazon-now,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-09,bigbasket,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-09,blinkit,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-09,flipkart,ABOVE,BAU,199,211,211,211,12,6.03,0,true
+2026-07-09,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-09,zepto,OOS,BAU,199,,,,,,0,false
 ```
 
 ---

@@ -31,21 +31,18 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000313` |
 | canonical_sku(s) | `jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l`, `qwrggc46ukqkvces`, `jivo-extra-light-olive-oil-combo-2l` |
 | Category | [[Category - OLIVE\|OLIVE]] |
-| Sub-category | EXTRA LIGHT |
-| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 1+1L |
-| Per-unit | 2.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 1229 | 1169 | -4.88 | 🟢 BELOW | BAU | 2026-07-08 |
-| [[Platform - flipkart\|flipkart]] | 1229 | — | — | ⚪ OOS | BAU | 2026-07-08 |
-| [[Platform - zepto\|zepto]] | 1229 | 998 | -18.8 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon]] | 1229 | 1169 | -4.88 | 🟢 BELOW | BAU | 2026-07-09 |
+| [[Platform - flipkart\|flipkart]] | 1229 | — | — | ⚪ OOS | BAU | 2026-07-09 |
+| [[Platform - zepto\|zepto]] | 1229 | 998 | -18.8 | 🟢 BELOW | BAU | 2026-07-09 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

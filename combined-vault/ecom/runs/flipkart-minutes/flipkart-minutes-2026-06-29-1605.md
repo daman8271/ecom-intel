@@ -29,7 +29,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-06-29]] · Week: [[2026-W27]] · Month: 
 
 ## SKUs seen
 - [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L) — ₹234 (37.0% off) · in 144 pincodes
-- [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — JIVO Cold Press Combo Canola Oil Plastic Bottle (2 x 1 L) — ₹563 · in 5 pincodes
+- [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 2l — ₹563 · in 5 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L) — ₹698 (30.0% off) · in 1 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹932 (25.0% off) · in 31 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L) — ₹168 (34.0% off) · in 99 pincodes
@@ -40,7 +40,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-06-29]] · Week: [[2026-W27]] · Month: 
 - [[jivo-healthy-wheatgrass-ginger-ale-drink-sugar-free-200ml]] — Jivo Healthy Wheatgrass Ginger Ale Drink Sugar Free 200ml — ₹33 (34.0% off) · in 66 pincodes
 - [[jivo-healthy-wheatgrass-jeera-drink-sugar-free-200ml]] — Jivo Healthy Wheatgrass Jeera Drink Sugar Free 200ml — ₹25 (50.0% off) · in 9 pincodes
 - [[jivo-healthy-wheatgrass-mojito-drink-sugar-free-200ml]] — Jivo Healthy Wheatgrass Mojito Drink Sugar Free 200ml — ₹34 (32.0% off) · in 33 pincodes
-- [[jivo-natural-minerals-water-mineral-water-1l]] — JIVO Natural Minerals Water Mineral Water (1000 ml) — ₹22 (12.0% off) · in 2 pincodes
+- [[jivo-natural-minerals-water-mineral-water-1l]] — Jivo Natural Minerals Water Mineral Water 1l — ₹22 (12.0% off) · in 2 pincodes
 - [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L) — ₹379 (63.0% off) · in 45 pincodes
 - [[jivo-pomace-olive-oil-tin-5l]] — JIVO Pomace Olive Oil Tin (5 L) — ₹2132 (57.0% off) · in 18 pincodes
 - [[jivo-soybean-oil-soyabean-oil-pouch-1l]] — JIVO Soybean Oil Soyabean Oil Pouch (1 L) — ₹163 (18.0% off) · in 11 pincodes

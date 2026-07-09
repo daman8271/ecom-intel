@@ -27,16 +27,18 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000373` |
 | canonical_sku(s) | `jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-200g-200ml` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | QUINOA SEEDS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 200G |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 119 | 110 | -7.56 | 🟢 BELOW | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon]] | 119 | 110 | -7.56 | 🟢 BELOW | BAU | 2026-07-09 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

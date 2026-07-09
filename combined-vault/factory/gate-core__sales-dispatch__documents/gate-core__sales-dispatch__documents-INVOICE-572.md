@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR67C1036"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR67C1036
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35254
-- **doc_num:** 706260664
-- **doc_date:** 2026-06-23
-- **doc_total:** 747250.00
+- **doc_entry:** 35424
+- **doc_num:** 706260763
+- **doc_date:** 2026-06-26
+- **doc_total:** 48556.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURGAON
-- **ship_to_address:** AHAZOUR (FAIZABAD) BADLI JHAJJAR  B 1200GURGAON-124105IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **card_code:** CUSTA000912
+- **card_name:** AMAZON (B2C -MAY-JULY)
+- **ship_to_code:** AMAZON B2C ASSAM
+- **ship_to_address:** -788819IN
+- **place_of_supply:** AS
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** HR67C1036
-- **transporter_name:** Mahaveer Transport
-- **bilty_no:** 3656
-- **bilty_date:** 2026-06-30
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000279 - PET BOTTLE 500 MLS MANGO 18 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS
-- **base_refs:** 1706264652
-- **total_quantity:** 3064.000
-- **total_litres:** 3240.000
+- **warehouses:** DL-EC
+- **item_summary:** FG0000376 - SESAME OIL 1 LTR 20 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000070 - EXTRA VIRGIN 1 LTR + EXTRA LIGHT 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000073 - EXTRA VIRGIN 2 LTR, FG0000155 - EXTRA VIRGIN 2 LTR 10 PCS HANDLE, SL0000076 - EXTRA VIRGIN 5 LTR + 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000080 - EXTRA VIRGIN 5 LTR TIN 4 PCS IMPORTED, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000136 - POMACE 2 LTR, FG0000114 - POMACE OLIVE 2 LTR 10 PCS HANDLE, SL0000154 - SANO POMACE 1 LTR PACK OF 2, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS
+- **base_refs:** 1506264673
+- **total_quantity:** 68.000
+- **total_litres:** 175.000
 - **total_boxes:** 0.000
-- **total_weight:** 3156.342
-- **line_count:** 7
+- **total_weight:** 92.625
+- **line_count:** 24
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 741, "sap_invoice_doc_entry": 35254, "sap_invoice_doc_num": "706260664", "invoice_number": "706260664", "eway_bill": "731647124276", "invoice_weight": "3156.342", "invoice_amount": "747250.00", "place_of_supply": "HR", "location": "Delivery Address: HHS1 R K WorldInfocom Pvt Ltd B 1200, Pahazour (Faizabad) Badli, Jhajjar Gurgaon 124105", "product_variety": "Oil", "total_litres": "3240.000", "effective_month": "2026-06", "budget_delivery_point": "GURGAON", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 283, "transporter_id": 64, "driver_id": null, "linked_vehicle_entry_id": 1266, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-30T07:05:11.481783Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-30", "priority": "HIGH", "transporter_name": "MAHAVIR TRANSPORT COMPANY", "transporter_gstin": "06AOUPJ8083N1ZZ", "contact_person": "ABC", "mobile_no": "9588567100", "vehicle_no": "HR67C1036", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3656", "bilty_date": "2026-06-30", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-30_at_11.57.07_AM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-30 at 11.57.07 AM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "01/07/2026 01:30 PM IST", "created_at": "2026-06-29T19:13:22.244374+05:30", "updated_at": "2026-06-30T12:35:11.492048+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35424, "sap_invoice_doc_num": "706260763", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

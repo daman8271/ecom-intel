@@ -8,7 +8,7 @@ platforms:
   - zepto
 pincodes: 26
 skus: 27
-observations: 990
+observations: 992
 tags:
   - type/city-hub
   - platform/amazon-fresh
@@ -30,15 +30,17 @@ Up: [[locations-index]]
 ## SKUs available in Vadodara (27)
 [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-pressed-canola-oil-1l]] · [[jivo-cold-pressed-sunflower-oil-1l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-healthy-wheatgrass-ginger-ale-drink-sugar-free-200ml]] · [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]]
 
-## Observations (990 rows)
+## Observations (992 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390001,1730,2600,33.5,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390001,1730,2600,33.5,1
+2026-07-09-0726,2026-07-09,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390001,1730,2600,33.5,1
 2026-06-29-1605,2026-06-29,flipkart-minutes,jivo-healthy-wheatgrass-ginger-ale-drink-sugar-free-200ml,390002,33,50,34,1
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390002,1730,2600,33.5,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390002,1730,2600,33.5,1
+2026-07-09-0726,2026-07-09,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390002,1730,2600,33.5,1
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390003,1730,2600,33.5,1
 2026-06-29-1605,2026-06-29,flipkart-minutes,jivo-healthy-wheatgrass-ginger-ale-drink-sugar-free-200ml,390006,33,50,34,1
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l,390006,1730,2600,33.5,1

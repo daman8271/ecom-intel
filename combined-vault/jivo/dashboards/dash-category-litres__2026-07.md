@@ -21,19 +21,19 @@ Up: [[dashboards-index]] · [[2026-07]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 38248.2
+   "ltrs": 41821.4
   },
   {
    "category": "OLIVE",
-   "ltrs": 12896.0
+   "ltrs": 13752.75
   },
   {
    "category": "CANOLA",
-   "ltrs": 3798.0
+   "ltrs": 5014.0
   },
   {
    "category": "SESAME OIL",
-   "ltrs": 80.0
+   "ltrs": 160.0
   },
   {
    "category": "BLENDED",
@@ -48,7 +48,7 @@ Up: [[dashboards-index]] · [[2026-07]]
  "head": "premium",
  "month": 7,
  "platform": null,
- "total_ltrs": 55074.2,
+ "total_ltrs": 60800.15,
  "year": 2026
 }
 ```

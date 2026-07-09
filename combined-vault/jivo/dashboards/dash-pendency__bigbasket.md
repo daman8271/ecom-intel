@@ -56,15 +56,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "pending_units": 1200.0
   },
   {
-   "city": "KOLKATA",
-   "open_ltrs": 100.0,
-   "open_pos": 1,
-   "open_units": 84.0,
-   "order_value": 29732.72,
-   "pending_ltrs": 100.0,
-   "pending_units": 84.0
-  },
-  {
    "city": "LUCKNOW",
    "open_ltrs": 71.0,
    "open_pos": 1,
@@ -101,15 +92,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "order_value": 92480.88,
    "pending_ltrs": 340.0,
    "pending_units": 1200.0
-  },
-  {
-   "distributor": "BABA LOKENATH TRADERS",
-   "open_ltrs": 100.0,
-   "open_pos": 1,
-   "open_units": 84.0,
-   "order_value": 29732.72,
-   "pending_ltrs": 100.0,
-   "pending_units": 84.0
   }
  ],
  "by_po": [
@@ -179,19 +161,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "po_number": "IRA40546128"
   },
   {
-   "distributor": "BABA LOKENATH TRADERS",
-   "location": "Kolkata",
-   "open_ltrs": 100.0,
-   "open_pos": 1,
-   "open_units": 84.0,
-   "order_value": 29732.72,
-   "pending_ltrs": 100.0,
-   "pending_units": 84.0,
-   "po_date": "03-07-2026",
-   "po_expiry_date": "18-07-2026",
-   "po_number": "IRA40365361"
-  },
-  {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
    "location": "Lucknow",
    "open_ltrs": 71.0,
@@ -253,17 +222,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 1 L Bottle"
   },
   {
-   "item": "CANOLA 1L",
-   "open_ltrs": 289.0,
-   "open_pos": 4,
-   "open_units": 289.0,
-   "order_value": 63297.01,
-   "pending_ltrs": 289.0,
-   "pending_units": 289.0,
-   "sku_code": "282779",
-   "sku_name": "Jivo Canola Oil - Cold Pressed 1 L"
-  },
-  {
    "item": "MUSTARD 5L",
    "open_ltrs": 265.0,
    "open_pos": 3,
@@ -275,15 +233,15 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "sku_name": "Jivo Cold Press Kachi Ghani Mustard Oil 5 L Bottle"
   },
   {
-   "item": "JIVO POMACE 1L",
-   "open_ltrs": 112.0,
+   "item": "CANOLA 1L",
+   "open_ltrs": 241.0,
    "open_pos": 3,
-   "open_units": 112.0,
-   "order_value": 39649.28,
-   "pending_ltrs": 112.0,
-   "pending_units": 112.0,
-   "sku_code": "40197820",
-   "sku_name": "Jivo Pomace Olive Oil 1 L"
+   "open_units": 241.0,
+   "order_value": 52783.09,
+   "pending_ltrs": 241.0,
+   "pending_units": 241.0,
+   "sku_code": "282779",
+   "sku_name": "Jivo Canola Oil - Cold Pressed 1 L"
   },
   {
    "item": "CANOLA 1L POUCH",
@@ -297,24 +255,35 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "sku_name": "Jivo Canola Omega-3 Rich Cooking Oil 1 L 1 L Pouch"
   },
   {
+   "item": "JIVO POMACE 1L",
+   "open_ltrs": 96.0,
+   "open_pos": 2,
+   "open_units": 96.0,
+   "order_value": 33096.96,
+   "pending_ltrs": 96.0,
+   "pending_units": 96.0,
+   "sku_code": "40197820",
+   "sku_name": "Jivo Pomace Olive Oil 1 L"
+  },
+  {
    "item": "CANOLA 5L",
-   "open_ltrs": 90.0,
-   "open_pos": 3,
-   "open_units": 18.0,
-   "order_value": 19523.76,
-   "pending_ltrs": 90.0,
-   "pending_units": 18.0,
+   "open_ltrs": 70.0,
+   "open_pos": 2,
+   "open_units": 14.0,
+   "order_value": 15238.08,
+   "pending_ltrs": 70.0,
+   "pending_units": 14.0,
    "sku_code": "282780",
    "sku_name": "Jivo Canola Oil - Cold Pressed 5 L Bottle"
   },
   {
    "item": "EXTRA LIGHT 1L",
-   "open_ltrs": 76.0,
-   "open_pos": 3,
-   "open_units": 76.0,
-   "order_value": 39212.4,
-   "pending_ltrs": 76.0,
-   "pending_units": 76.0,
+   "open_ltrs": 60.0,
+   "open_pos": 2,
+   "open_units": 60.0,
+   "order_value": 30831.6,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0,
    "sku_code": "40166398",
    "sku_name": "Jivo Extra Light Olive Oil 1 L Bottle"
   },
@@ -511,15 +480,6 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "warehouse": "Bengaluru"
   },
   {
-   "open_ltrs": 100.0,
-   "open_pos": 1,
-   "open_units": 84.0,
-   "order_value": 29732.72,
-   "pending_ltrs": 100.0,
-   "pending_units": 84.0,
-   "warehouse": "Kolkata"
-  },
-  {
    "open_ltrs": 71.0,
    "open_pos": 1,
    "open_units": 27.0,
@@ -536,12 +496,12 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
  "platform": "bigbasket",
  "po_month": "JULY",
  "totals": {
-  "open_ltrs": 4367.0,
-  "open_pos": 8,
-  "open_units": 4909.0,
-  "pending_ltrs": 4367.0,
-  "pending_units": 4909.0,
-  "rows": 71
+  "open_ltrs": 4267.0,
+  "open_pos": 7,
+  "open_units": 4825.0,
+  "pending_ltrs": 4267.0,
+  "pending_units": 4825.0,
+  "rows": 67
  },
  "year": 2026
 }

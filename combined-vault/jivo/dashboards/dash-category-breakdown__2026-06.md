@@ -21,15 +21,15 @@ Up: [[dashboards-index]] · [[2026-06]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 158730.0,
+    "ltrs": 158949.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 125953.0,
+    "ltrs": 126661.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 20303.0,
+    "ltrs": 20351.0,
     "name": "RICE BRAN"
    },
    {
@@ -37,21 +37,21 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 13406.0,
+    "ltrs": 13386.0,
     "name": "BLENDED"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 158730.0,
+    "ltrs": 158949.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 125953.0,
+    "ltrs": 126661.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 20303.0,
+    "ltrs": 20351.0,
     "name": "RICE BRAN"
    },
    {
@@ -59,11 +59,11 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SOYABEAN"
    },
    {
-    "ltrs": 13406.0,
+    "ltrs": 13386.0,
     "name": "GOLD"
    }
   ],
-  "total_ltrs": 338556.0
+  "total_ltrs": 339511.0
  },
  "errors": [],
  "month": 6,
@@ -71,15 +71,15 @@ Up: [[dashboards-index]] · [[2026-06]]
  "premium": {
   "categories": [
    {
-    "ltrs": 179404.2,
+    "ltrs": 181123.2,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 121170.5,
+    "ltrs": 121249.5,
     "name": "OLIVE"
    },
    {
-    "ltrs": 42376.0,
+    "ltrs": 42836.0,
     "name": "CANOLA"
    },
    {
@@ -105,27 +105,27 @@ Up: [[dashboards-index]] · [[2026-06]]
   ],
   "sub_categories": [
    {
-    "ltrs": 179404.2,
+    "ltrs": 181123.2,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 59632.0,
+    "ltrs": 59662.0,
     "name": "JIVO POMACE"
    },
    {
-    "ltrs": 42376.0,
+    "ltrs": 42836.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 27031.5,
+    "ltrs": 27083.5,
     "name": "EXTRA LIGHT"
    },
    {
-    "ltrs": 25682.0,
+    "ltrs": 25662.0,
     "name": "SANO POMACE"
    },
    {
-    "ltrs": 8825.0,
+    "ltrs": 8842.0,
     "name": "EXTRA VIRGIN"
    },
    {
@@ -149,7 +149,7 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SEASAME OIL"
    }
   ],
-  "total_ltrs": 359941.7
+  "total_ltrs": 362199.7
  },
  "source": "primary",
  "year": 2026

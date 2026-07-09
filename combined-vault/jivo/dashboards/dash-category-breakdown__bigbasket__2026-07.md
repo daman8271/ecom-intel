@@ -48,29 +48,29 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "premium": {
   "categories": [
    {
-    "ltrs": 180.0,
+    "ltrs": 240.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 168.0,
+    "ltrs": 200.0,
     "name": "OLIVE"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 180.0,
+    "ltrs": 240.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 100.0,
+    "ltrs": 116.0,
     "name": "JIVO POMACE"
    },
    {
-    "ltrs": 68.0,
+    "ltrs": 84.0,
     "name": "EXTRA LIGHT"
    }
   ],
-  "total_ltrs": 348.0
+  "total_ltrs": 440.0
  },
  "source": "primary",
  "year": 2026

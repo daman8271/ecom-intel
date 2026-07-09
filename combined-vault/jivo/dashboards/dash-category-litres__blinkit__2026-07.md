@@ -22,18 +22,18 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "categories": [
   {
    "category": "OLIVE",
-   "ltrs": 554.0
+   "ltrs": 1096.0
   },
   {
    "category": "CANOLA",
-   "ltrs": 180.0
+   "ltrs": 840.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "blinkit",
- "total_ltrs": 734.0,
+ "total_ltrs": 1936.0,
  "year": 2026
 }
 ```

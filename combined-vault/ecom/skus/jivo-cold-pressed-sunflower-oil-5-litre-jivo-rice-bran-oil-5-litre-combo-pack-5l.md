@@ -4,15 +4,17 @@ canonical_sku: jivo-cold-pressed-sunflower-oil-5-litre-jivo-rice-bran-oil-5-litr
 display_name: Jivo Cold Pressed Sunflower Oil 5 Litre Jivo Rice Bran Oil 5 Litre Combo Pack 5l
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
-min_price: 1128
+last_seen: 2026-07-09
+observations: 2
+min_price: 991
 max_price: 1128
-latest_price: 1128
+latest_price: 991
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-cold-pressed-sunflower-oil-5-litre-jivo-rice-bran-oil-5-litre-combo-pack-5l
@@ -23,15 +25,20 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹1128 (33.6% off)
+- [[amazon-fresh]] — latest ₹991 (41.7% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Kolkata]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-07-09-0726]] · [[amazon-2026-05-21-1330]]
+
+## Price history (2 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,1128,1700,33.6,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700053,991,1700,41.7,1
 ```
 
 ---

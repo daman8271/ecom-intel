@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR67C4904"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR67C4904
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35638
-- **doc_num:** 706260906
-- **doc_date:** 2026-06-30
-- **doc_total:** 23157.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C KARNATAKA
-- **ship_to_address:** KARNATAKA-560050IN
-- **place_of_supply:** KT
-- **bp_gstin:** 
+- **doc_entry:** 35798
+- **doc_num:** 607260102
+- **doc_date:** 2026-07-01
+- **doc_total:** 121253.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000874
+- **card_name:** JIVO MART PVT LTD - DL
+- **ship_to_code:** JIVO MART PVT LTD  MAYAPURI
+- **ship_to_address:** PHASE 1 MAYAPURI  A/35-1 MAYAPURI INDUSTRIAL AREANEW DELHI-110064IN
+- **place_of_supply:** DL
+- **bp_gstin:** 07AAFCJ4102J1ZS
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR67C4904
+- **transporter_name:** Mahaveer Transport
+- **bilty_no:** 7106
+- **bilty_date:** 2026-07-02
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000018 - COLD PRESS 5 LTR + COLD PRESS 1 LTR 3 PCS SHRINKED, SL0000029 - COLD PRESS 5 LTR + 1 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000041 - COLD PRESS GROUNDNUT 5 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000069 - EXTRA VIRGIN 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000083 - EXTRA VIRGIN COCONUT  500 ML, FG0000157 - EXTRA VIRGIN COCONUT OIL 500 MLS 24 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000154 - SANO POMACE 1 LTR PACK OF 2, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000183 - SUNFLOWER 1 LTR PACK OF 3, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, SL0000184 - SUNFLOWER 5 LTR, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
-- **base_refs:** 1506264702
-- **total_quantity:** 60.000
-- **total_litres:** 175.000
+- **warehouses:** DP-HR
+- **item_summary:** FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000422 - COLD PRESS 1 LTR (NIRMAL RISHI )20PCS
+- **base_refs:** 
+- **total_quantity:** 4755.000
+- **total_litres:** 9775.000
 - **total_boxes:** 0.000
-- **total_weight:** 96.090
-- **line_count:** 27
+- **total_weight:** 8757.049
+- **line_count:** 9
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35638, "sap_invoice_doc_num": "706260906", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 806, "sap_invoice_doc_entry": 35798, "sap_invoice_doc_num": "607260102", "invoice_number": "607260102", "eway_bill": "322283888897", "invoice_weight": "8757.049", "invoice_amount": "121253.00", "place_of_supply": "DL", "location": "", "product_variety": "Oil", "total_litres": "9775.000", "effective_month": "2026-07", "budget_delivery_point": "NEW DELHI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 213, "transporter_id": 50, "driver_id": null, "linked_vehicle_entry_id": 1406, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-02T13:57:28.199550Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-02", "priority": "High", "transporter_name": "Bhargave Road Carrier", "transporter_gstin": "07BZQPP0903H1Z8", "contact_person": "Pardeep", "mobile_no": "8708270230", "vehicle_no": "HR67C4904", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7106", "bilty_date": "2026-07-02", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-02_at_6.52.46_PM_1.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-02 at 6.52.46 PM (1).jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-01T18:44:02.667070+05:30", "updated_at": "2026-07-02T19:27:28.209497+05:30"}
   ```

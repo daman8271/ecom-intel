@@ -5,8 +5,8 @@ display_name: Jivo First Pressed Yellow Mustard Oil 5L (5 l)
 platforms:
   - amazon-fresh
 first_seen: 2026-06-30
-last_seen: 2026-07-08
-observations: 87
+last_seen: 2026-07-09
+observations: 116
 min_price: 999
 max_price: 1795
 latest_price: 999
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (4)
-[[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (5)
+[[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (87 observations)
+## Price history (116 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -121,6 +121,35 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700069,999,1795,44.3,1
 2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700100,999,1795,44.3,1
 2026-07-08-0700,2026-07-08,amazon-fresh,Kolkata,700107,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Bengaluru,560001,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Bengaluru,560003,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Bengaluru,560006,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Bengaluru,560040,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Bengaluru,560072,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Chennai,600016,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110003,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110007,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110009,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110013,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110014,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110016,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110017,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110018,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110024,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110025,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110028,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110033,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110035,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110044,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110048,1062,1795,40.8,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Delhi,110052,1795,,,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700001,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700009,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700015,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700019,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700069,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700100,999,1795,44.3,1
+2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700107,999,1795,44.3,1
 ```
 
 ---

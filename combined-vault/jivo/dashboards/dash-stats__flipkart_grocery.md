@@ -20,7 +20,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
 {
  "activeTrucks": 0,
  "inventory": 0,
- "openPOs": 1860,
+ "openPOs": 1863,
  "sells": 0
 }
 ```

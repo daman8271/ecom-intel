@@ -16,9 +16,9 @@ tags:
 
 ## Fields
 - **document_type:** STOCK_TRANSFER
-- **doc_entry:** 3192
-- **doc_num:** 726674505
-- **doc_date:** 2026-07-01
+- **doc_entry:** 3210
+- **doc_num:** 726674517
+- **doc_date:** 2026-07-03
 - **doc_total:** None
 - **branch_id:** 1
 - **branch_name:** 
@@ -33,8 +33,8 @@ tags:
 - **transporter_name:** 
 - **bilty_no:** 
 - **bilty_date:** None
-- **from_warehouse:** DL-INT
-- **to_warehouse:** DL-FG
+- **from_warehouse:** DL-FG
+- **to_warehouse:** BH-INT
 - **warehouses:** 
 - **item_summary:** 
 - **base_refs:** 

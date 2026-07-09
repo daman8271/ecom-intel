@@ -21,15 +21,15 @@ Up: [[dashboards-index]] · [[2026-06]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 179404.2
+   "ltrs": 181123.2
   },
   {
    "category": "OLIVE",
-   "ltrs": 121170.5
+   "ltrs": 121249.5
   },
   {
    "category": "CANOLA",
-   "ltrs": 42376.0
+   "ltrs": 42836.0
   },
   {
    "category": "MUSTARD",
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-06]]
  "head": "premium",
  "month": 6,
  "platform": null,
- "total_ltrs": 359941.7,
+ "total_ltrs": 362199.7,
  "year": 2026
 }
 ```

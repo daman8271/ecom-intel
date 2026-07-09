@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-natural-minerals-water-mineral-water-1l
-display_name: JIVO Natural Minerals Water Mineral Water (1000 ml)
+display_name: Jivo Natural Minerals Water Mineral Water 1l
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-23
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Natural Minerals Water Mineral Water (1000 ml)**
+**Jivo Natural Minerals Water Mineral Water 1l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹22 (26.0% off)

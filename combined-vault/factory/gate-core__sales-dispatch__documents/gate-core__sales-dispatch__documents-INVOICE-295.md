@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35650
-- **doc_num:** 706260917
+- **doc_entry:** 35817
+- **doc_num:** 706260992
 - **doc_date:** 2026-06-30
-- **doc_total:** 8945.00
+- **doc_total:** 42983.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C MANIPUR
-- **ship_to_address:** MANIPUR-795142IN
-- **place_of_supply:** MN
+- **card_code:** CUSTA000484
+- **card_name:** ONLINE SALE WEBSITE
+- **ship_to_code:** ONLINE SALE WEBSITE DELHI
+- **ship_to_address:** NEW DELHI-IN
+- **place_of_supply:** DL
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000018 - COLD PRESS 5 LTR + COLD PRESS 1 LTR 3 PCS SHRINKED, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000096 - JIVO GOLD  5 LTR + 1 LTR, FG0000128 - JIVO GOLD 5 LTR 4 PCS, FG0000149 - JIVO GOLD 1 LTR 20 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000122 - MUSTARD 5 LTR + CANOLA 1 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS
-- **base_refs:** 1506264702
-- **total_quantity:** 24.000
-- **total_litres:** 80.500
+- **warehouses:** DL-FG
+- **item_summary:** SL0000097 - JIVO GOLD REFINED 5 LTR, FG0000128 - JIVO GOLD 5 LTR 4 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000153 - SANO POMACE 1 LTR, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000157 - SANO POMACE 5 LTR, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS
+- **base_refs:** 1506264675
+- **total_quantity:** 116.000
+- **total_litres:** 540.000
 - **total_boxes:** 0.000
-- **total_weight:** 45.191
-- **line_count:** 20
+- **total_weight:** 268.153
+- **line_count:** 10
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35650, "sap_invoice_doc_num": "706260917", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 35817, "sap_invoice_doc_num": "706260992", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

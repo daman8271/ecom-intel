@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-928.57,32.0,SWIGGY,,2026-07-03,77774,974.9985,BANGALORE,32.0,2026-06-26,2026-07-14,MBEPO32400,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77774,2026-07-08
-733.33,10.0,SWIGGY,,2026-07-03,77775,769.9965,BANGALORE,10.0,2026-06-26,2026-07-14,MBEPO32400,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77775,2026-07-08
+928.57,32.0,SWIGGY,,2026-07-03,77774,974.9985,BANGALORE,32.0,2026-06-26,2026-07-14,MBEPO32400,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77774,2026-07-09
+733.33,10.0,SWIGGY,,2026-07-03,77775,769.9965,BANGALORE,10.0,2026-06-26,2026-07-14,MBEPO32400,,88218,Jivo Pomace Daily Cooking Olive Oil 2.0 ltr,Fulfilled,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-06-30,total_po_zbs:77775,2026-07-09
 ```
 
 ---

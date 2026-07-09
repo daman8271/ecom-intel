@@ -37,23 +37,23 @@ Up: [[dashboards-index]]
   "grn_code"
  ],
  "sample": {
-  "basic_rate": 185.71,
+  "basic_rate": 133.32,
   "delivered_qty": 0.0,
-  "format": "SWIGGY",
+  "format": "ZEPTO",
   "grn_code": null,
   "grn_date": null,
-  "id": 77312,
-  "landing_rate": 194.9955,
-  "location": "COIMBATORE",
-  "order_qty": 112.0,
-  "po_date": "2026-06-22",
-  "po_expiry_date": "2026-07-24",
-  "po_number": "JCEPO180223",
-  "remark": null,
-  "sku_code": "390730",
-  "sku_name": "Jivo Cold Pressed oil Groundnut Oil 1.0 ltr",
-  "status": "CONFIRMED",
-  "vendor_name": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED"
+  "id": 33515,
+  "landing_rate": 139.99,
+  "location": "MUM-DRY-MH-SHAKTI",
+  "order_qty": 16.0,
+  "po_date": "2025-08-14",
+  "po_expiry_date": "2025-09-04",
+  "po_number": "P1705798",
+  "remark": "",
+  "sku_code": "4ACB73BC-1E89-47D8-8625-05E6A34B698B",
+  "sku_name": "Jivo Rice Bran Daily Cooking Oil - 1 pack (1 L)",
+  "status": "EXPIRED",
+  "vendor_name": "CHIRAG ENTERPRISES"
  }
 }
 ```

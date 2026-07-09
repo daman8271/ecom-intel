@@ -29,18 +29,21 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000157` |
 | canonical_sku(s) | `jivo-pure-extra-virgin-coconut-oil-500-ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-500ml`, `edohf5f6bs3mehjd`, `jivo-pure-extra-virgin-coconut-oil-500-ml-500ml` |
 | Category | [[Category - COCONUT\|COCONUT]] |
+| Sub-category | COCONUT |
+| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 500ML |
+| Per-unit | 0.5 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-08).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 259 | — | — | ⚪ OOS | BAU | 2026-07-08 |
+| [[Platform - amazon\|amazon]] | 259 | — | — | ⚪ OOS | BAU | 2026-07-09 |
 | [[Platform - amazon\|amazon-fresh]] | 289 | 289 | 0 | 🟦 MATCH | BAU | 2026-06-18 |
-| [[Platform - flipkart\|flipkart]] | 259 | — | — | ⚪ OOS | BAU | 2026-07-08 |
+| [[Platform - flipkart\|flipkart]] | 259 | — | — | ⚪ OOS | BAU | 2026-07-09 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

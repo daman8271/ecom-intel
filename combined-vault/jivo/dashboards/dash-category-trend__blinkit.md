@@ -63,11 +63,11 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 4320.0,
+   "commodity_ltrs": 4492.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 734.0,
-   "total_ltrs": 5054.0,
+   "premium_ltrs": 1936.0,
+   "total_ltrs": 6428.0,
    "year": 2026
   }
  ],

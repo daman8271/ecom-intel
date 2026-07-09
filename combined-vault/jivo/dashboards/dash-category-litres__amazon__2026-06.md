@@ -22,15 +22,15 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 73162.0
+   "ltrs": 74881.0
   },
   {
    "category": "OLIVE",
-   "ltrs": 36510.5
+   "ltrs": 36589.5
   },
   {
    "category": "CANOLA",
-   "ltrs": 19879.0
+   "ltrs": 20339.0
   },
   {
    "category": "MUSTARD",
@@ -49,7 +49,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
  "head": "premium",
  "month": 6,
  "platform": "amazon",
- "total_ltrs": 140407.5,
+ "total_ltrs": 142665.5,
  "year": 2026
 }
 ```

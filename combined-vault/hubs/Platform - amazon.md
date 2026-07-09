@@ -103,7 +103,7 @@ Up: [[Home]]
 - [[MUSTARD 1L POUCH]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹629 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹839 / live ₹— (⚪ OOS)
-- [[MUSTARD 5L]] — ref ₹999 / live ₹873 (🟢 BELOW)
+- [[MUSTARD 5L]] — ref ₹999 / live ₹919 (🟢 BELOW)
 - [[POMACE 3L]] — ref ₹1309 / live ₹1149 (🟢 BELOW)
 - [[PUMPKIN SEEDS 200G]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[PUMPKIN SEEDS 400G]] — ref ₹399 / live ₹— (⚪ OOS)
@@ -129,7 +129,7 @@ Up: [[Home]]
 - [[SANO MUSTARD 5L]] — ref ₹999 / live ₹— (⚪ OOS)
 - [[SANO POMACE 1+1L]]
 - [[SANO POMACE 1L]] — ref ₹419 / live ₹355 (🟢 BELOW)
-- [[SANO POMACE 5L]] — ref ₹2069 / live ₹1499 (🟢 BELOW)
+- [[SANO POMACE 5L]] — ref ₹2069 / live ₹1899 (🟢 BELOW)
 - [[SANO SOYABEAN 1L]] — ref ₹199 / live ₹169 (🟢 BELOW)
 - [[SANO SOYABEAN 5L]] — ref ₹949 / live ₹839 (🟢 BELOW)
 - [[SANO SUNFLOWER 1L]] — ref ₹219 / live ₹— (⚪ OOS)
@@ -146,7 +146,7 @@ Up: [[Home]]
 - [[SOYABEAN 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[SOYABEAN 5L]] — ref ₹999 / live ₹819 (🟢 BELOW)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 1L]] — ref ₹209 / live ₹189 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹209 / live ₹172 (🟢 BELOW)
 - [[SUNFLOWER 1L + 1L]] — ref ₹449 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹679 / live ₹— (⚪ OOS)

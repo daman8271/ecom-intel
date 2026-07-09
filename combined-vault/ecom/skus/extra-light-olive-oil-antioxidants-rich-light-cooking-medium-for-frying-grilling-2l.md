@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: extra-light-olive-oil-antioxidants-rich-light-cooking-medium-for-frying-grilling-2l
-display_name: "Extra Light Olive Oil - Antioxidants Rich, Light Cooking Medium, For Frying, Grilling (2 L)"
+display_name: Extra Light Olive Oil Antioxidants Rich Light Cooking Medium For Frying Grilling 2l
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Extra Light Olive Oil - Antioxidants Rich, Light Cooking Medium, For Frying, Grilling (2 L)**
+**Extra Light Olive Oil Antioxidants Rich Light Cooking Medium For Frying Grilling 2l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹1343 (52.0% off)

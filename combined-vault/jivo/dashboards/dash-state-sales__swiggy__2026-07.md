@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "cities": [
   {
    "city": "Bengaluru",
-   "value": 7185.0
+   "value": 8344.0
   },
   {
    "city": "Delhi",
-   "value": 6028.0
+   "value": 6917.0
   },
   {
    "city": "Hyderabad",
-   "value": 5870.0
+   "value": 6649.0
   },
   {
    "city": "Mumbai",
-   "value": 5429.0
+   "value": 6079.0
   },
   {
    "city": "Chennai",
-   "value": 3297.0
+   "value": 3716.0
   },
   {
    "city": "Kolkata",
-   "value": 2239.0
+   "value": 2497.0
   },
   {
    "city": "Chandigarh",
-   "value": 1533.0
+   "value": 1866.0
   },
   {
    "city": "Gurugram",
-   "value": 1318.0
-  },
-  {
-   "city": "Pune",
-   "value": 899.0
+   "value": 1499.0
   },
   {
    "city": "Jaipur",
-   "value": 870.0
+   "value": 1037.0
+  },
+  {
+   "city": "Pune",
+   "value": 1025.0
   }
  ],
  "errors": [],
@@ -3052,8 +3052,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    }
   ]
  },
- "mapped_units": 49846.0,
- "mapped_value": 49846.0,
+ "mapped_units": 57493.0,
+ "mapped_value": 57493.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,184 +3064,184 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "states": [
   {
    "by_platform": {
-    "SWIGGY": 7912.0
+    "SWIGGY": 9225.0
    },
    "state": "KARNATAKA",
-   "units": 7912.0,
-   "value": 7912.0
+   "units": 9225.0,
+   "value": 9225.0
   },
   {
    "by_platform": {
-    "SWIGGY": 7102.0
+    "SWIGGY": 7956.0
    },
    "state": "MAHARASHTRA",
-   "units": 7102.0,
-   "value": 7102.0
+   "units": 7956.0,
+   "value": 7956.0
   },
   {
    "by_platform": {
-    "SWIGGY": 6158.0
+    "SWIGGY": 6972.0
    },
    "state": "TELANGANA",
-   "units": 6158.0,
-   "value": 6158.0
+   "units": 6972.0,
+   "value": 6972.0
   },
   {
    "by_platform": {
-    "SWIGGY": 6028.0
+    "SWIGGY": 6917.0
    },
    "state": "DELHI",
-   "units": 6028.0,
-   "value": 6028.0
+   "units": 6917.0,
+   "value": 6917.0
   },
   {
    "by_platform": {
-    "SWIGGY": 4737.0
+    "SWIGGY": 5371.0
    },
    "state": "TAMIL NADU",
-   "units": 4737.0,
-   "value": 4737.0
+   "units": 5371.0,
+   "value": 5371.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2335.0
+    "SWIGGY": 2596.0
    },
    "state": "WEST BENGAL",
-   "units": 2335.0,
-   "value": 2335.0
+   "units": 2596.0,
+   "value": 2596.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2192.0
+    "SWIGGY": 2575.0
    },
    "state": "UTTAR PRADESH",
-   "units": 2192.0,
-   "value": 2192.0
+   "units": 2575.0,
+   "value": 2575.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2146.0
+    "SWIGGY": 2503.0
    },
    "state": "HARYANA",
-   "units": 2146.0,
-   "value": 2146.0
+   "units": 2503.0,
+   "value": 2503.0
   },
   {
    "by_platform": {
-    "SWIGGY": 1634.0
-   },
-   "state": "ANDHRA PRADESH",
-   "units": 1634.0,
-   "value": 1634.0
-  },
-  {
-   "by_platform": {
-    "SWIGGY": 1533.0
+    "SWIGGY": 1866.0
    },
    "state": "CHANDIGARH",
-   "units": 1533.0,
-   "value": 1533.0
+   "units": 1866.0,
+   "value": 1866.0
   },
   {
    "by_platform": {
-    "SWIGGY": 1434.0
+    "SWIGGY": 1856.0
    },
-   "state": "RAJASTHAN",
-   "units": 1434.0,
-   "value": 1434.0
+   "state": "ANDHRA PRADESH",
+   "units": 1856.0,
+   "value": 1856.0
   },
   {
    "by_platform": {
-    "SWIGGY": 1405.0
+    "SWIGGY": 1800.0
    },
    "state": "PUNJAB",
-   "units": 1405.0,
-   "value": 1405.0
+   "units": 1800.0,
+   "value": 1800.0
   },
   {
    "by_platform": {
-    "SWIGGY": 1293.0
+    "SWIGGY": 1721.0
+   },
+   "state": "RAJASTHAN",
+   "units": 1721.0,
+   "value": 1721.0
+  },
+  {
+   "by_platform": {
+    "SWIGGY": 1511.0
    },
    "state": "KERALA",
-   "units": 1293.0,
-   "value": 1293.0
+   "units": 1511.0,
+   "value": 1511.0
   },
   {
    "by_platform": {
-    "SWIGGY": 939.0
+    "SWIGGY": 1040.0
    },
    "state": "GUJARAT",
-   "units": 939.0,
-   "value": 939.0
+   "units": 1040.0,
+   "value": 1040.0
   },
   {
    "by_platform": {
-    "SWIGGY": 640.0
+    "SWIGGY": 761.0
    },
    "state": "MADHYA PRADESH",
-   "units": 640.0,
-   "value": 640.0
+   "units": 761.0,
+   "value": 761.0
   },
   {
    "by_platform": {
-    "SWIGGY": 580.0
+    "SWIGGY": 687.0
    },
    "state": "UTTARAKHAND",
-   "units": 580.0,
-   "value": 580.0
+   "units": 687.0,
+   "value": 687.0
   },
   {
    "by_platform": {
-    "SWIGGY": 528.0
+    "SWIGGY": 638.0
    },
    "state": "ODISHA",
-   "units": 528.0,
-   "value": 528.0
+   "units": 638.0,
+   "value": 638.0
   },
   {
    "by_platform": {
-    "SWIGGY": 415.0
+    "SWIGGY": 499.0
    },
    "state": "GOA",
-   "units": 415.0,
-   "value": 415.0
+   "units": 499.0,
+   "value": 499.0
   },
   {
    "by_platform": {
-    "SWIGGY": 368.0
+    "SWIGGY": 438.0
    },
    "state": "BIHAR",
-   "units": 368.0,
-   "value": 368.0
+   "units": 438.0,
+   "value": 438.0
   },
   {
    "by_platform": {
-    "SWIGGY": 358.0
+    "SWIGGY": 420.0
    },
    "state": "JHARKHAND",
-   "units": 358.0,
-   "value": 358.0
+   "units": 420.0,
+   "value": 420.0
   },
   {
    "by_platform": {
-    "SWIGGY": 105.0
+    "SWIGGY": 135.0
    },
    "state": "CHHATTISGARH",
-   "units": 105.0,
-   "value": 105.0
+   "units": 135.0,
+   "value": 135.0
   },
   {
    "by_platform": {
-    "SWIGGY": 4.0
+    "SWIGGY": 6.0
    },
    "state": "ASSAM",
-   "units": 4.0,
-   "value": 4.0
+   "units": 6.0,
+   "value": 6.0
   }
  ],
  "sub_categories": [],
- "total_units": 49846.0,
- "total_value": 49846.0,
+ "total_units": 57493.0,
+ "total_value": 57493.0,
  "year": 2026
 }
 ```

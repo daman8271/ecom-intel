@@ -27,22 +27,32 @@ Up: [[dashboards-index]] · [[2026-07]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -76.9,
+   "delta_pct": -75.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 27859.0,
+   "ltrs": 29539.0,
    "name": "MUSTARD 1L",
-   "prev_ltrs": 120839.0
+   "prev_ltrs": 121058.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -81.4,
+   "delta_pct": -79.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 22273.0,
+   "ltrs": 24871.0,
    "name": "GROUNDNUT 1L",
-   "prev_ltrs": 119666.0
+   "prev_ltrs": 120145.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -69.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 15280.0,
+   "name": "GROUNDNUT 5L",
+   "prev_ltrs": 49670.0
   },
   {
    "brand": null,
@@ -57,72 +67,62 @@ Up: [[dashboards-index]] · [[2026-07]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -70.4,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 14340.0,
-   "name": "GROUNDNUT 5L",
-   "prev_ltrs": 48430.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -87.6,
+   "delta_pct": -83.7,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 9176.0,
+   "ltrs": 12056.0,
    "name": "SUNFLOWER 1L",
-   "prev_ltrs": 73848.0
+   "prev_ltrs": 73896.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -71.0,
+   "delta_pct": -86.4,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 3052.0,
+   "ltrs": 3612.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 26628.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -93.3,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 3550.0,
+   "name": "SUNFLOWER 5L",
+   "prev_ltrs": 52765.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -67.7,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 3404.0,
    "name": "SANO POMACE 1L",
    "prev_ltrs": 10527.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -89.0,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 2914.0,
-   "name": "JIVO POMACE 1L",
-   "prev_ltrs": 26578.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -92.5,
+   "delta_pct": -92.2,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 2820.0,
+   "ltrs": 2940.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 37455.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -94.8,
-   "head": "COMMODITY",
-   "is_new": false,
-   "ltrs": 2735.0,
-   "name": "SUNFLOWER 5L",
-   "prev_ltrs": 52105.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -93.7,
+   "delta_pct": -86.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 1995.0,
-   "name": "JIVO POMACE 5L",
-   "prev_ltrs": 31760.0
+   "ltrs": 2208.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 16711.0
   }
  ],
  "source": "primary",

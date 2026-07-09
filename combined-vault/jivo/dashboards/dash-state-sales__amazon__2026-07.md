@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
  "cities": [
   {
    "city": "Delhi",
-   "value": 5362.0
+   "value": 6593.0
   },
   {
    "city": "Bengaluru",
-   "value": 3290.0
+   "value": 3993.0
   },
   {
    "city": "Hyderabad",
-   "value": 2870.0
+   "value": 3572.0
   },
   {
    "city": "Gurugram",
-   "value": 1660.0
+   "value": 2049.0
   },
   {
    "city": "Mumbai",
-   "value": 1548.0
-  },
-  {
-   "city": "Noida",
-   "value": 1102.0
+   "value": 1806.0
   },
   {
    "city": "Kolkata",
-   "value": 1092.0
+   "value": 1375.0
   },
   {
-   "city": "Pune",
-   "value": 1047.0
+   "city": "Noida",
+   "value": 1319.0
   },
   {
    "city": "Ghaziabad",
-   "value": 1003.0
+   "value": 1266.0
+  },
+  {
+   "city": "Pune",
+   "value": 1245.0
   },
   {
    "city": "Chennai",
-   "value": 675.0
+   "value": 834.0
   }
  ],
  "errors": [],
@@ -3052,8 +3052,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    }
   ]
  },
- "mapped_units": 48346.0,
- "mapped_value": 48346.0,
+ "mapped_units": 60049.0,
+ "mapped_value": 60049.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,259 +3064,259 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
  "states": [
   {
    "by_platform": {
-    "AMAZON": 5818.0
+    "AMAZON": 7180.0
    },
    "state": "UTTAR PRADESH",
-   "units": 5818.0,
-   "value": 5818.0
+   "units": 7180.0,
+   "value": 7180.0
   },
   {
    "by_platform": {
-    "AMAZON": 5486.0
+    "AMAZON": 6754.0
    },
    "state": "DELHI",
-   "units": 5486.0,
-   "value": 5486.0
+   "units": 6754.0,
+   "value": 6754.0
   },
   {
    "by_platform": {
-    "AMAZON": 4948.0
-   },
-   "state": "MAHARASHTRA",
-   "units": 4948.0,
-   "value": 4948.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 4682.0
+    "AMAZON": 6090.0
    },
    "state": "WEST BENGAL",
-   "units": 4682.0,
-   "value": 4682.0
+   "units": 6090.0,
+   "value": 6090.0
   },
   {
    "by_platform": {
-    "AMAZON": 3961.0
+    "AMAZON": 5956.0
+   },
+   "state": "MAHARASHTRA",
+   "units": 5956.0,
+   "value": 5956.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 4815.0
    },
    "state": "KARNATAKA",
-   "units": 3961.0,
-   "value": 3961.0
+   "units": 4815.0,
+   "value": 4815.0
   },
   {
    "by_platform": {
-    "AMAZON": 3680.0
+    "AMAZON": 4590.0
    },
    "state": "TELANGANA",
-   "units": 3680.0,
-   "value": 3680.0
+   "units": 4590.0,
+   "value": 4590.0
   },
   {
    "by_platform": {
-    "AMAZON": 3468.0
+    "AMAZON": 4309.0
    },
    "state": "HARYANA",
-   "units": 3468.0,
-   "value": 3468.0
+   "units": 4309.0,
+   "value": 4309.0
   },
   {
    "by_platform": {
-    "AMAZON": 1796.0
+    "AMAZON": 2204.0
    },
    "state": "BIHAR",
-   "units": 1796.0,
-   "value": 1796.0
+   "units": 2204.0,
+   "value": 2204.0
   },
   {
    "by_platform": {
-    "AMAZON": 1629.0
+    "AMAZON": 2120.0
    },
    "state": "PUNJAB",
-   "units": 1629.0,
-   "value": 1629.0
+   "units": 2120.0,
+   "value": 2120.0
   },
   {
    "by_platform": {
-    "AMAZON": 1499.0
+    "AMAZON": 1880.0
    },
    "state": "ODISHA",
-   "units": 1499.0,
-   "value": 1499.0
+   "units": 1880.0,
+   "value": 1880.0
   },
   {
    "by_platform": {
-    "AMAZON": 1446.0
+    "AMAZON": 1846.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 1446.0,
-   "value": 1446.0
+   "units": 1846.0,
+   "value": 1846.0
   },
   {
    "by_platform": {
-    "AMAZON": 1371.0
+    "AMAZON": 1702.0
    },
    "state": "TAMIL NADU",
-   "units": 1371.0,
-   "value": 1371.0
+   "units": 1702.0,
+   "value": 1702.0
   },
   {
    "by_platform": {
-    "AMAZON": 1226.0
+    "AMAZON": 1593.0
    },
    "state": "MADHYA PRADESH",
-   "units": 1226.0,
-   "value": 1226.0
+   "units": 1593.0,
+   "value": 1593.0
   },
   {
    "by_platform": {
-    "AMAZON": 1122.0
+    "AMAZON": 1390.0
    },
    "state": "JHARKHAND",
-   "units": 1122.0,
-   "value": 1122.0
+   "units": 1390.0,
+   "value": 1390.0
   },
   {
    "by_platform": {
-    "AMAZON": 1019.0
-   },
-   "state": "ASSAM",
-   "units": 1019.0,
-   "value": 1019.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 916.0
+    "AMAZON": 1203.0
    },
    "state": "RAJASTHAN",
-   "units": 916.0,
-   "value": 916.0
+   "units": 1203.0,
+   "value": 1203.0
   },
   {
    "by_platform": {
-    "AMAZON": 871.0
+    "AMAZON": 1147.0
    },
    "state": "GUJARAT",
-   "units": 871.0,
-   "value": 871.0
+   "units": 1147.0,
+   "value": 1147.0
   },
   {
    "by_platform": {
-    "AMAZON": 513.0
+    "AMAZON": 1136.0
    },
-   "state": "MIZORAM",
-   "units": 513.0,
-   "value": 513.0
+   "state": "ASSAM",
+   "units": 1136.0,
+   "value": 1136.0
   },
   {
    "by_platform": {
-    "AMAZON": 490.0
+    "AMAZON": 622.0
    },
    "state": "KERALA",
-   "units": 490.0,
-   "value": 490.0
+   "units": 622.0,
+   "value": 622.0
   },
   {
    "by_platform": {
-    "AMAZON": 490.0
+    "AMAZON": 601.0
    },
    "state": "UTTARAKHAND",
-   "units": 490.0,
-   "value": 490.0
+   "units": 601.0,
+   "value": 601.0
   },
   {
    "by_platform": {
-    "AMAZON": 449.0
+    "AMAZON": 573.0
+   },
+   "state": "MIZORAM",
+   "units": 573.0,
+   "value": 573.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 529.0
    },
    "state": "CHHATTISGARH",
-   "units": 449.0,
-   "value": 449.0
+   "units": 529.0,
+   "value": 529.0
   },
   {
    "by_platform": {
-    "AMAZON": 394.0
+    "AMAZON": 496.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 394.0,
-   "value": 394.0
+   "units": 496.0,
+   "value": 496.0
   },
   {
    "by_platform": {
-    "AMAZON": 203.0
-   },
-   "state": "JAMMU AND KASHMIR",
-   "units": 203.0,
-   "value": 203.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 195.0
+    "AMAZON": 251.0
    },
    "state": "GOA",
-   "units": 195.0,
-   "value": 195.0
+   "units": 251.0,
+   "value": 251.0
   },
   {
    "by_platform": {
-    "AMAZON": 178.0
+    "AMAZON": 248.0
+   },
+   "state": "JAMMU AND KASHMIR",
+   "units": 248.0,
+   "value": 248.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 202.0
    },
    "state": "TRIPURA",
-   "units": 178.0,
-   "value": 178.0
+   "units": 202.0,
+   "value": 202.0
   },
   {
    "by_platform": {
-    "AMAZON": 130.0
+    "AMAZON": 167.0
    },
    "state": "CHANDIGARH",
-   "units": 130.0,
-   "value": 130.0
+   "units": 167.0,
+   "value": 167.0
   },
   {
    "by_platform": {
-    "AMAZON": 120.0
+    "AMAZON": 139.0
    },
    "state": "MEGHALAYA",
-   "units": 120.0,
-   "value": 120.0
+   "units": 139.0,
+   "value": 139.0
   },
   {
    "by_platform": {
-    "AMAZON": 107.0
+    "AMAZON": 129.0
    },
    "state": "NAGALAND",
-   "units": 107.0,
-   "value": 107.0
+   "units": 129.0,
+   "value": 129.0
   },
   {
    "by_platform": {
-    "AMAZON": 42.0
-   },
-   "state": "ARUNACHAL PRADESH",
-   "units": 42.0,
-   "value": 42.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 39.0
+    "AMAZON": 58.0
    },
    "state": "PUDUCHERRY",
-   "units": 39.0,
-   "value": 39.0
+   "units": 58.0,
+   "value": 58.0
   },
   {
    "by_platform": {
-    "AMAZON": 39.0
+    "AMAZON": 49.0
    },
    "state": "SIKKIM",
-   "units": 39.0,
-   "value": 39.0
+   "units": 49.0,
+   "value": 49.0
   },
   {
    "by_platform": {
-    "AMAZON": 14.0
+    "AMAZON": 47.0
+   },
+   "state": "ARUNACHAL PRADESH",
+   "units": 47.0,
+   "value": 47.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 16.0
    },
    "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
-   "units": 14.0,
-   "value": 14.0
+   "units": 16.0,
+   "value": 16.0
   },
   {
    "by_platform": {
@@ -3328,16 +3328,16 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
   },
   {
    "by_platform": {
-    "AMAZON": 1.0
+    "AMAZON": 3.0
    },
    "state": "ANDAMAN AND NICOBAR ISLANDS",
-   "units": 1.0,
-   "value": 1.0
+   "units": 3.0,
+   "value": 3.0
   }
  ],
  "sub_categories": [],
- "total_units": 50102.0,
- "total_value": 50102.0,
+ "total_units": 62249.0,
+ "total_value": 62249.0,
  "year": 2026
 }
 ```

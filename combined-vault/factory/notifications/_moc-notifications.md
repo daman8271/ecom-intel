@@ -1,15 +1,22 @@
 ---
 type: moc
-title: Notifications (199)
+title: Notifications (206)
 tags:
   - moc
   - source/factory
 ---
 
-# Notifications — 199 records
+# Notifications — 206 records
 
 From `/notifications/`. Up: [[_HOME]]
 
+- [[notifications-35402]] — Person Gate Entry
+- [[notifications-35395]] — Person Gate Entry
+- [[notifications-35388]] — Person Gate Entry
+- [[notifications-35381]] — Person Gate Exit
+- [[notifications-35374]] — Person Gate Exit
+- [[notifications-35367]] — Person Gate Exit
+- [[notifications-35360]] — Person Gate Exit
 - [[notifications-34856]] — Person Gate Exit
 - [[notifications-34818]] — Person Gate Exit
 - [[notifications-34777]] — Person Gate Entry

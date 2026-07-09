@@ -1,15 +1,22 @@
 ---
 type: moc
-title: Driver (347)
+title: Driver (354)
 tags:
   - moc
   - source/factory
 ---
 
-# Driver — 347 records
+# Driver — 354 records
 
 From `/driver-management/drivers/`. Up: [[_HOME]]
 
+- [[drv-364]] — Gaurav 9568312022
+- [[drv-363]] — Hafiz khan 8950340681
+- [[drv-362]] — Javed 7357891398
+- [[drv-361]] — Pritam 9756766651
+- [[drv-360]] — Jaswant singh 9779121875
+- [[drv-359]] — Javed 9518494067
+- [[drv-358]] — Sham singh 9622229598
 - [[drv-357]] — Rahul 7827917284
 - [[drv-356]] — Shanu 9354218659
 - [[drv-355]] — Sudhir 8954552817

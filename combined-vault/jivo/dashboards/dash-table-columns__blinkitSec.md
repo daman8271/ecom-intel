@@ -33,15 +33,15 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
  ],
  "sample": {
   "category": "Dry Fruits, Masala & Oil",
-  "city_id": 110,
-  "city_name": "Mohali",
+  "city_id": 357,
+  "city_name": "Dharamshala",
   "date": "2026-02-01",
-  "id": 121301,
-  "item_id": 10048295,
-  "item_name": "Jivo Cold Pressed Canola Oil (5 l)(Pack)",
+  "id": 121397,
+  "item_id": 10143020,
+  "item_name": "Jivo Pomace Olive Oil(Bottle)",
   "manufacturer_id": 176,
   "manufacturer_name": "Jivo Wellness Pvt. Ltd.",
-  "mrp": 1650,
+  "mrp": 1049,
   "qty_sold": 1
  }
 }

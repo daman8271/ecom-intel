@@ -21,7 +21,7 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
  "activeTrucks": 0,
  "inventory": 0,
  "openPOs": 0,
- "sells": 3985
+ "sells": 5185
 }
 ```
 

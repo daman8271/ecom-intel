@@ -28,10 +28,10 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -66.5,
+   "delta_pct": -62.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 3052.0,
+   "ltrs": 3404.0,
    "name": "SANO POMACE 1L",
    "prev_ltrs": 9116.0
   },

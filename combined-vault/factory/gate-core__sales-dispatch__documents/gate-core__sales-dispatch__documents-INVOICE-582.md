@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "RJ18GC8499"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# RJ18GC8499
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35236
-- **doc_num:** 706260654
-- **doc_date:** 2026-06-23
-- **doc_total:** 14475.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000645
-- **card_name:** DEL SAHIL
-- **ship_to_code:** DEL SAHIL DELHI
-- **ship_to_address:** NEW DELHI-110034IN
-- **place_of_supply:** DL
-- **bp_gstin:** 
+- **doc_entry:** 35413
+- **doc_num:** 606260180
+- **doc_date:** 2026-06-26
+- **doc_total:** 1884259.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000354
+- **card_name:** CHIRAG ENTERPRISES MUMBAI
+- **ship_to_code:** CHIRAG ENTERPRISES MUMBAI BHIWANDI
+- **ship_to_address:** ANJUR MANKOLI ROAD DAPODA ROADBHIWANDI-421302IN
+- **place_of_supply:** MH
+- **bp_gstin:** 27AAAPH2173D1Z8
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** RJ18GC8499
+- **transporter_name:** Abhiman Express
+- **bilty_no:** 260503
+- **bilty_date:** 2026-06-27
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-MP
-- **item_summary:** FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
-- **base_refs:** 1506264660
-- **total_quantity:** 23.000
-- **total_litres:** 32.500
-- **total_boxes:** 80.000
-- **total_weight:** 30.110
-- **line_count:** 4
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000015 - REFINED OIL 15 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
+- **base_refs:** 1706264664
+- **total_quantity:** 4935.000
+- **total_litres:** 7985.000
+- **total_boxes:** 0.000
+- **total_weight:** 7937.624
+- **line_count:** 5
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35236, "sap_invoice_doc_num": "706260654", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 648, "sap_invoice_doc_entry": 35413, "sap_invoice_doc_num": "606260180", "invoice_number": "606260180", "eway_bill": "312280622266", "invoice_weight": "7937.624", "invoice_amount": "1884259.00", "place_of_supply": "MH", "location": "Mumbai", "product_variety": "Oil", "total_litres": "7985.000", "effective_month": "2026-06", "budget_delivery_point": "BHIWANDI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 336, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 1192, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-27T17:19:46.854796Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-26", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ18GC8499", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260503", "bilty_date": "2026-06-27", "bilty_attachment": "/media/sales_dispatch/attachments/LR-260502.pdf", "bilty_attachment_name": "LR-260502.pdf", "freight": "75000.00", "total_freight": "75000.00", "kanta_weight": null, "remarks": "", "created_at": "2026-06-26T13:53:20.754402+05:30", "updated_at": "2026-06-27T22:49:46.863652+05:30"}
   ```
