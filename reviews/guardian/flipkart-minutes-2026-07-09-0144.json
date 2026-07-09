@@ -1,0 +1,96 @@
+{
+  "platform": "flipkart-minutes",
+  "run_id": "2026-07-09-0144",
+  "verdict": "SUSPECT",
+  "review_verdict": "SUSPECT",
+  "review_reasons": [
+    "llm_judgment: SUSPECT: all in_stock=0 across 260 pincodes suggests systematic scrape failure; missing pack size for water."
+  ],
+  "deep_reasons": [],
+  "reasons": [
+    "llm_judgment: SUSPECT: all in_stock=0 across 260 pincodes suggests systematic scrape failure; missing pack size for water."
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no store spans >2 cities (200 stores, 19 cities, 96% rows carry a store_id)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "13 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "363 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 363 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "12/363 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (363/547 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 0.0h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "flipkart-minutes SUSPECT (review.py): llm_judgment: SUSPECT: all in_stock=0 across 260 pincodes suggests systematic scrape failure; missing pack size for water. | heal: see review.py reasons",
+  "quarantined": false,
+  "evaluated_at": "2026-07-09T01:44:35.639843+00:00",
+  "source_result": "/opt/ecom-intel/platforms/flipkart-minutes/result.json"
+}
