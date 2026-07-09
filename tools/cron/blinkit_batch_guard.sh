@@ -32,6 +32,22 @@ if [ -f "$REPORT" ]; then
   exit 0
 fi
 
+attempt_held_drop_repair(){
+  local before after
+  before="$(ls -t platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"*.json platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"T*.json 2>/dev/null | head -1 || true)"
+  [ -n "$before" ] || return 1
+  LOG "today's Mac drop exists but report missing -> trying targeted repair before rerun ($(basename "$before"))"
+  "$DIR/tools/cron/blinkit_repair_held_mac_drop.sh" >> logs/blinkit_guard.log 2>&1 || true
+  if [ -f "$REPORT" ]; then
+    LOG "targeted repair produced report — triggering direct WhatsApp sweep"
+    "$DIR/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "guard-$PASS-repair" >> logs/blinkit_guard.log 2>&1 || true
+    return 0
+  fi
+  after="$(ls -t platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"*.json platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"T*.json 2>/dev/null | head -1 || true)"
+  LOG "targeted repair did not produce report (latest_drop=$(basename "${after:-none}"))"
+  return 1
+}
+
 # Mac Pro known-offline sentinel: skip the doomed ssh re-run and go straight to
 # the strict VPS+KVM1 fallback. If the marker is stale and the Mac is reachable
 # again, remove it and fall through to the normal Mac path.
@@ -54,6 +70,10 @@ fi
 if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "pgrep -f run_blinkit_mac_to_vps.sh >/dev/null" 2>/dev/null; then
   LOG "Mac scrape already running — not double-triggering"
   [ "$PASS" = "late" ] && tg "⏳ Blinkit guard 08:45: scrape still running — report may land close to the 10:00 batch. Watching."
+  exit 0
+fi
+
+if attempt_held_drop_repair; then
   exit 0
 fi
 
