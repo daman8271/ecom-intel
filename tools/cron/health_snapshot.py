@@ -50,6 +50,7 @@ LIVE_PLATFORMS = [
     "flipkart-minutes", "flipkart", "zepto", "bigbasket",
     "amazon", "amazon-fresh", "amazon-now", "blinkit",
 ]
+BATCH_PLATFORMS = LIVE_PLATFORMS + ["swiggy-instamart", "price-match"]
 
 # ---- deadline slots (IST) the cron must land; used to detect missing batch --
 SWEEP_SLOTS = ["1000"]           # single 10:00 batch (moved 1200->1000 goal #60 2026-07-03; owner cut 2x->1x 2026-06-28, was 1200+1500)
@@ -60,6 +61,7 @@ HELD_STREAK_FLAG = 2            # >= 2 consecutive non-OK sweeps = YELLOW
 ROWS_COLLAPSE_PCT = 50         # latest rows < 50% of baseline mean = collapse
 SKUS_COLLAPSE_PCT = 70         # latest SKUs  < 70% of baseline mean = collapse
 FRESHNESS_MAX_AGE_H = 15       # matches review.py / healthcheck.sh
+BIGBASKET_PINCODE_FRESHNESS_MAX_AGE_H = 24  # 03:00 daily team job, judged by date not evening age
 SWEEP_RUNID_RE = re.compile(r"^\d{4}-\d{2}-\d{2}-\d{4}$")  # real sweep run-ids only
 
 IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
@@ -92,6 +94,36 @@ def result_path(platform):
         if os.path.isfile(pincode_path):
             return pincode_path
     return os.path.join(PLATFORMS_DIR, platform, "result.json")
+
+
+def sent_batch_dir(sweep_id):
+    return os.path.join(ROOT, "output", ".batch", "sent-" + sweep_id)
+
+
+def batch_missing_platforms(sweep_id):
+    """Platforms absent from the moved send_batch spool, if the sent dir exists."""
+    sent_dir = sent_batch_dir(sweep_id)
+    if not os.path.isdir(sent_dir):
+        return []
+    present = set()
+    for name in os.listdir(sent_dir):
+        if name.startswith("."):
+            continue
+        base = name
+        if base.endswith(".sent"):
+            base = base[:-5]
+        if base.endswith(".json"):
+            present.add(base[:-5])
+    return [p for p in BATCH_PLATFORMS if p not in present]
+
+
+def late_direct_delivery_resolved(platform, date_s):
+    """Known post-batch direct WhatsApp deliveries that should clear batch-missing."""
+    if platform != "blinkit":
+        return False
+    report = os.path.join(ROOT, "output", f"Jivo-Blinkit-Live-Report-{date_s}.xlsx")
+    sent = os.path.join(LOGS_DIR, f"blinkit-main-wa-{date_s}.sent")
+    return os.path.isfile(report) and os.path.isfile(sent)
 
 
 def parse_iso(s):
@@ -256,14 +288,17 @@ def collect_platforms(scope):
             if cdt is not None:
                 age_h = round((now_utc() - cdt).total_seconds() / 3600.0, 1)
                 st["captured_age_h"] = age_h
-                if age_h > FRESHNESS_MAX_AGE_H:
+                freshness_max_age_h = FRESHNESS_MAX_AGE_H
+                if p == "bigbasket" and os.path.basename(rj) == "result_pincode.json":
+                    freshness_max_age_h = BIGBASKET_PINCODE_FRESHNESS_MAX_AGE_H
+                if age_h > freshness_max_age_h:
                     issues.append({
                         "id": f"freshness:{p}",
                         "severity": "YELLOW",
                         "platform": p,
                         "signal": "freshness",
                         "detail": f"{p} {os.path.basename(rj)} is {age_h}h old "
-                                  f"(> {FRESHNESS_MAX_AGE_H}h threshold)",
+                                  f"(> {freshness_max_age_h}h threshold)",
                         "evidence": f"captured_at={cap}",
                     })
         except Exception as e:
@@ -328,13 +363,33 @@ def collect_batches(scope):
                                          "held": None, "missing": None}
             else:
                 if b["missing"] and b["missing"] > 0:
+                    missing_ps = batch_missing_platforms(sweep_id)
+                    late_resolved = [
+                        p for p in missing_ps
+                        if late_direct_delivery_resolved(p, today)
+                    ]
+                    remaining_missing = [
+                        p for p in missing_ps
+                        if p not in late_resolved
+                    ]
+                    if not missing_ps:
+                        remaining_missing = [f"{b['missing']} unknown report(s)"]
+                    b["missing_platforms"] = missing_ps
+                    b["late_resolved_missing"] = late_resolved
+                    b["remaining_missing"] = remaining_missing
+                    if not remaining_missing:
+                        continue
                     issues.append({
                         "id": f"batch_missing_reports:{sweep_id}",
                         "severity": "RED",
                         "platform": None,
                         "signal": "batch_delivery",
-                        "detail": f"sweep {sweep_id} delivered but {b['missing']} report(s) MISSING",
-                        "evidence": f"reports={b['reports']} held={b['held']} missing={b['missing']}",
+                        "detail": f"sweep {sweep_id} delivered but "
+                                  f"{len(remaining_missing)} report(s) still MISSING: "
+                                  f"{', '.join(remaining_missing)}",
+                        "evidence": f"reports={b['reports']} held={b['held']} "
+                                    f"batch_missing={b['missing']} "
+                                    f"late_resolved={late_resolved}",
                     })
                 elif b["held"] and b["held"] > 0:
                     issues.append({
