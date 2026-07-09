@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# kvm1_trio_launch.sh — VPS cron 07:30 IST: fire the KVM1 store-open trio.
+# kvm1_trio_launch.sh — VPS cron 07:30 IST: fire the KVM1 store-open Flipkart run.
 #
 # Phase 2 split (2026-07-07). Launch is DETACHED on KVM1 (setsid + nohup), so an
 # ssh drop after launch cannot kill the trio; the runner has its own flock and a
@@ -32,15 +32,15 @@ done
 
 for i in 1 2 3; do
   if timeout 60 ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 \
-      "setsid nohup env SWEEP_ID='$SID' /opt/ecom-intel/bin/kvm1_run_trio.sh >> /opt/ecom-intel/logs/trio.log 2>&1 & echo LAUNCHED-\$!"; then
-    LOG "trio launched on KVM1 (attempt $i, sweep=${SID:-auto})"
+      "setsid nohup env SWEEP_ID='$SID' TRIO_PLATFORMS=flipkart /opt/ecom-intel/bin/kvm1_run_trio.sh >> /opt/ecom-intel/logs/trio.log 2>&1 & echo LAUNCHED-\$!"; then
+    LOG "Flipkart launched on KVM1 (attempt $i, sweep=${SID:-auto})"
     exit 0
   fi
   LOG "launch attempt $i failed; retrying in 45s"
   sleep 45
 done
 
-LOG "KVM1 UNREACHABLE — trio NOT launched"
+LOG "KVM1 UNREACHABLE — Flipkart run NOT launched"
 : > logs/.kvm1_launch_failed-"$TODAY"
-tg "🛑 KVM1 trio launch FAILED at $(date +%H:%M) IST — box unreachable from the VPS. Backup: KVM1's own 07:40 cron (if the box is alive) or the 08:10/08:40 watchdog will re-run flipkart-minutes/flipkart/zepto on the VPS."
+tg "🛑 KVM1 Flipkart launch FAILED at $(date +%H:%M) IST — box unreachable from the VPS. Backup: KVM1's own 07:40 cron (if the box is alive) or the 08:10/08:40 watchdog will re-run Flipkart on the VPS."
 exit 1

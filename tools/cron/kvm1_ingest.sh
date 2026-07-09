@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# kvm1_ingest.sh <platform> <drop.json> — VPS-side ingest for KVM1 trio dead-drops.
+# kvm1_ingest.sh <platform> <drop.json> — VPS-side ingest for KVM1 dead-drops.
 #
-# Phase 2 split (2026-07-07): flipkart-minutes/flipkart/zepto scrape on KVM1
-# (bin/kvm1_run_trio.sh there) and rsync their result.json here, exactly like
-# the Mac Pro blinkit feeder. This script replays the NORMAL run.sh pipeline on
+# Phase 2 split (2026-07-07): Flipkart scrapes on KVM1 and rsyncs result.json
+# here, exactly like the Mac Pro feeders. Zepto was moved off KVM1 on 2026-07-09
+# after repeat 429 pressure; do not accept Zepto KVM1 drops. This script replays the NORMAL run.sh pipeline on
 # the drop via the SCRAPE_RESULT_DROP hook (run.sh skips the local scrape and
 # copies the drop into platforms/<p>/result.json, then does excel -> predict ->
 # pricematch -> availability -> dashboard -> review VERDICT GATE -> history ->
@@ -18,11 +18,15 @@
 set -uo pipefail
 DIR=/opt/ecom-intel
 cd "$DIR" || exit 1
-P="${1:?usage: kvm1_ingest.sh <flipkart-minutes|flipkart|zepto> <drop.json>}"
+P="${1:?usage: kvm1_ingest.sh <flipkart-minutes|flipkart> <drop.json>}"
 DROP="${2:?drop json path}"
 LOG(){ echo "[$(date '+%F %T')] kvm1_ingest($P): $*"; }
 
-case "$P" in flipkart-minutes|flipkart|zepto) : ;; *) LOG "refusing platform '$P' (trio only)"; exit 2 ;; esac
+case "$P" in
+  flipkart-minutes|flipkart) : ;;
+  zepto) LOG "refusing Zepto from KVM1; Zepto is Mac Pro primary"; exit 2 ;;
+  *) LOG "refusing platform '$P' (KVM1 accepts Flipkart-family drops only)"; exit 2 ;;
+esac
 [ -s "$DROP" ] || { LOG "drop missing/empty: $DROP"; exit 1; }
 python3 - "$DROP" <<'PY' || { LOG "drop is not valid JSON / has no summary — refused"; exit 1; }
 import json, sys

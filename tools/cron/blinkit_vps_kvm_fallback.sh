@@ -20,6 +20,8 @@ SOURCE_CONFIG="$DIR/platforms/blinkit/pincodes.daily.json"
 AUTH_FILE="$DIR/secrets/blinkit-auth-state.json"
 SHARD_TIMEOUT="${BLINKIT_FALLBACK_SHARD_TIMEOUT:-7200}"
 EFFECTIVE_CONCURRENCY="${BLINKIT_FALLBACK_CONCURRENCY:-2}"
+KVM_PROXY_CHECKED=0
+KVM_PROXY_OK=0
 mkdir -p "$DIR/logs" "$DIR/shards/runs"
 
 log() {
@@ -47,6 +49,10 @@ store_open_window() {
 }
 
 prepare_kvm1() {
+  if ! kvm1_blinkit_proxy_healthy; then
+    log "KVM1 Blinkit proxy health failed; refusing KVM1 Blinkit path"
+    return 1
+  fi
   log "preparing KVM1 Blinkit runtime"
   ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 \
     "mkdir -p /opt/ecom-intel/platforms/blinkit /opt/ecom-intel/tools/shards /opt/ecom-intel/secrets /opt/ecom-intel/shards/runs /opt/ecom-intel/logs && chmod 700 /opt/ecom-intel/secrets" \
@@ -75,6 +81,26 @@ prepare_kvm1() {
     "chmod 600 /opt/ecom-intel/secrets/blinkit-auth-state.json && test -x /root/.cache/ms-playwright/chromium-1223/chrome-linux64/chrome" \
     >>"$LOG_FILE" 2>&1 || return 1
   return 0
+}
+
+kvm1_blinkit_proxy_healthy() {
+  if [ "$KVM_PROXY_CHECKED" -eq 1 ]; then
+    [ "$KVM_PROXY_OK" -eq 1 ]
+    return $?
+  fi
+  KVM_PROXY_CHECKED=1
+  if [ "${BLINKIT_FALLBACK_SKIP_KVM_PROXY_CHECK:-0}" = "1" ]; then
+    KVM_PROXY_OK=1
+    return 0
+  fi
+  log "checking KVM1 Blinkit proxy health"
+  if ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 \
+      "scrape-proxy-check && blinkit-probe" >>"$LOG_FILE" 2>&1; then
+    KVM_PROXY_OK=1
+    return 0
+  fi
+  KVM_PROXY_OK=0
+  return 1
 }
 
 kvm1_busy_with_other_browser_work() {
@@ -471,6 +497,11 @@ if ! store_open_window; then
   log "before 06:30 IST store-open window; refusing full fallback unless BLINKIT_FALLBACK_EARLY_OK=1"
   exit 0
 fi
+if ! kvm1_blinkit_proxy_healthy; then
+  log "KVM1 Mac Air SOCKS/Blinkit proxy is unavailable; refusing invalid VPS-direct fallback"
+  tg "[FAIL] Blinkit fallback cannot start for ${TODAY}: KVM1 Mac Air SOCKS/Blinkit proxy health failed. VPS-direct Blinkit is disabled to avoid bad auth/OOS data."
+  exit 1
+fi
 
 TOTAL=2
 KVM_OK=0
@@ -481,7 +512,24 @@ KVM_BUSY=0
 refresh_host_busy_state
 wait_for_less_contention
 
-if [ "$LOCAL_BUSY" -eq 0 ] && [ "$KVM_BUSY" -eq 0 ] && prepare_kvm1; then
+if [ "${BLINKIT_ALLOW_VPS_DIRECT_FALLBACK:-0}" != "1" ]; then
+  TOTAL=1
+  START_LOCAL=0
+  START_REMOTE=1
+  if [ "$KVM_BUSY" -eq 1 ]; then
+    log "KVM1 has active non-Blinkit browser work; refusing VPS-direct Blinkit fallback"
+    tg "[FAIL] Blinkit fallback cannot start for ${TODAY}: KVM1 is busy and VPS-direct Blinkit fallback is disabled."
+    exit 1
+  fi
+  if prepare_kvm1; then
+    KVM_OK=1
+    log "VPS-direct Blinkit fallback disabled; using one authenticated KVM1 proxy-backed shard"
+  else
+    log "KVM1 preparation failed after proxy health passed; refusing VPS-direct Blinkit fallback"
+    tg "[FAIL] Blinkit fallback cannot start for ${TODAY}: KVM1 preparation failed and VPS-direct Blinkit fallback is disabled."
+    exit 1
+  fi
+elif [ "$LOCAL_BUSY" -eq 0 ] && [ "$KVM_BUSY" -eq 0 ] && prepare_kvm1; then
   KVM_OK=1
   START_REMOTE=1
 elif [ "$LOCAL_BUSY" -eq 1 ] && [ "$KVM_BUSY" -eq 0 ] && prepare_kvm1; then

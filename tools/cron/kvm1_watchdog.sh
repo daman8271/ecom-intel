@@ -1,18 +1,18 @@
 #!/usr/bin/env bash
-# kvm1_watchdog.sh — VPS-side liveness + fallback for the KVM1 store-open trio.
+# kvm1_watchdog.sh — VPS-side liveness + fallback for the KVM1 store-open Flipkart run.
 #
-# Phase 2 split (2026-07-07): flipkart/zepto scrape on KVM1 at ~07:30 IST and
+# Phase 2 split (2026-07-07): flipkart scraped on KVM1 at ~07:30 IST and
 # dead-drop into today's 10:00 batch (flipkart-minutes stayed in the VPS chain —
-# DC-bound API, see run_all.sh). THIS script is the safety
+# DC-bound API, see run_all.sh). Zepto moved to Mac Pro primary on 2026-07-09
+# after KVM1 showed repeat 429 pressure. THIS script is the safety
 # net (model: sweep_watchdog.sh + check_macpro_worker_health.sh). Cron ticks at
 # 08:10 / 08:40 / 09:05 IST. Each tick:
-#   - every trio platform already OK in the pending batch spool -> quiet no-op
-#   - trio still RUNNING on KVM1 -> no-op (09:05 tick: overrun alert — the late
+#   - Flipkart already OK in the pending batch spool -> quiet no-op
+#   - KVM1 run still RUNNING -> no-op (09:05 tick: overrun alert — the late
 #     platform joins the batch if its ingest lands by 10:00, else ships late)
 #   - KVM1 alive but trio never started (both launch paths missed) -> relaunch
 #     it remotely ONCE (08:10 tick), else fall through to local rescue
-#   - KVM1 dead / trio failed a platform -> LOCAL RESCUE: re-run the missing
-#     platforms serially on the VPS (flipkart -> zepto), holding the
+#   - KVM1 dead / Flipkart failed -> LOCAL RESCUE: re-run Flipkart on the VPS, holding the
 #     sweep-chain lock (cardinal rule: never scrape concurrently with a chain),
 #     in DEFER mode when the run can still land by ~09:55, else leave it to the
 #     post-batch selfheal (~10:01) and say so. Review gates never loosened.
@@ -79,10 +79,10 @@ needs_rescue(){ local p="$1" f
 }
 
 NEEDY=""
-for P in flipkart zepto; do
+for P in flipkart; do
   needs_rescue "$P" && NEEDY="$NEEDY $P"
 done
-[ -n "$NEEDY" ] || { LOG "trio fully covered for $TODAY — nothing to do"; exit 0; }
+[ -n "$NEEDY" ] || { LOG "KVM1 Flipkart run covered for $TODAY — nothing to do"; exit 0; }
 LOG "needy:$NEEDY (sid=${SID:-none})"
 
 # ---- KVM1 state ---------------------------------------------------------------

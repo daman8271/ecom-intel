@@ -81,6 +81,14 @@ delivery_complete() {
   [ -s "$ROOT/logs/blinkit-main-wa-${DATE_IST}.sent" ] && [ -s "$ROOT/logs/blinkit-not-listed-wa-${DATE_IST}.sent" ]
 }
 
+repair_held_mac_drop() {
+  log "attempting deterministic held Mac-drop repair"
+  "$ROOT/tools/cron/blinkit_repair_held_mac_drop.sh" >>"$LOG" 2>&1
+  local rc=$?
+  log "held Mac-drop repair finished rc=$rc"
+  return "$rc"
+}
+
 invoke_readonly_codex() {
   local snap="$1" key="$2" throttle="$LOG_DIR/llm-${DATE_IST}-${key}.stamp" now last prompt out codex_bin
   [ "${BLINKIT_AGENT_LLM_ENABLE:-1}" = "1" ] || { log "read-only Codex escalation disabled"; return 0; }
@@ -142,12 +150,21 @@ case "$state" in
     exit 0
     ;;
   quality_hold)
-    log "quality hold detected; deterministic fallback should targeted-repair bad pincodes"
-    invoke_readonly_codex "$snap" "quality-hold"
+    log "quality hold detected; running deterministic targeted repair before LLM escalation"
+    if repair_held_mac_drop; then
+      "$ROOT/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "agent-repair" >>"$LOG" 2>&1 || true
+    else
+      invoke_readonly_codex "$snap" "quality-hold"
+    fi
     exit 0
     ;;
   missing_after_1000)
     log "report missing after 10:00"
+    repair_held_mac_drop || true
+    if [ -f "$ROOT/output/Jivo-Blinkit-Live-Report-${DATE_IST}.xlsx" ]; then
+      "$ROOT/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "agent-repair" >>"$LOG" 2>&1 || true
+      exit 0
+    fi
     "$ROOT/tools/cron/blinkit_batch_guard.sh" "agent-$PHASE" >>"$LOG" 2>&1 || true
     "$ROOT/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "agent-$PHASE" >>"$LOG" 2>&1 || true
     invoke_readonly_codex "$snap" "missing-after-1000"

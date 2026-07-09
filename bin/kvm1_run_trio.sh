@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# kvm1_run_trio.sh — KVM1 store-open serial duo: flipkart -> zepto.
+# kvm1_run_trio.sh — KVM1 store-open Flipkart runner.
 #
 # Phase 2 split (owner-approved 2026-07-07): the VPS keeps flipkart-minutes (its
 # logged-in Flipkart API is DC-BOUND — from this box's IP northern pincodes 302
 # to another DC and return 0 rows; smoke-tested 2026-07-07) + the Amazon family +
-# all orchestration/ingest/batch; THIS box scrapes flipkart + zepto at store-open
-# hours (~07:30 IST start) from its own IP and dead-drops each result.json back
+# all orchestration/ingest/batch; THIS box scrapes Flipkart at store-open
+# hours (~07:30 IST start) from its own IP and dead-drops result.json back
 # to the VPS, exactly like the Mac Pro blinkit/swiggy feeders:
 #     scrape (PINCODES_FILE/OUT_FILE) -> rsync drop -> ssh vps kvm1_ingest.sh
 # The VPS-side ingest (tools/cron/kvm1_ingest.sh) replays the normal run.sh
@@ -38,7 +38,7 @@ tg(){ ( set +e
     --data-urlencode "text=$1" >/dev/null ) || true; }
 
 # Blinkit has priority on this box. Its fallback shard may still be running when
-# the 07:30 Flipkart/Zepto trio launch fires; do not contend for Playwright.
+# the 07:30 Flipkart launch fires; do not contend for Playwright.
 blinkit_active(){
   pgrep -f 'run_platform_shard.sh blinkit' >/dev/null 2>&1 && return 0
   local cwd
@@ -52,8 +52,8 @@ blinkit_active(){
 }
 
 if [ "${TRIO_ALLOW_DURING_BLINKIT:-0}" != "1" ] && blinkit_active; then
-  LOG "Blinkit fallback shard active on KVM1 — deferring Flipkart/Zepto trio"
-  tg "[WARN] KVM1 trio deferred on $DATE: Blinkit fallback shard is active and has priority. VPS watchdog will retry/rescue Flipkart/Zepto later."
+  LOG "Blinkit fallback shard active on KVM1 — deferring Flipkart run"
+  tg "[WARN] KVM1 Flipkart run deferred on $DATE: Blinkit fallback shard is active and has priority. VPS watchdog will retry/rescue Flipkart later."
   exit 0
 fi
 
@@ -68,7 +68,14 @@ if [ -f "$DONE_MARK" ] && [ "${TRIO_FORCE:-0}" != "1" ]; then
   exit 0
 fi
 
-PLATFORMS="${TRIO_PLATFORMS:-flipkart zepto}"
+PLATFORMS="${TRIO_PLATFORMS:-flipkart}"
+for P in $PLATFORMS; do
+  if [ "$P" = "zepto" ]; then
+    LOG "REFUSING Zepto on KVM1: Zepto is Mac Pro primary per 2026-07-09 owner instruction"
+    tg "[WARN] KVM1 refused Zepto on $DATE: Zepto is Mac Pro primary now."
+    exit 2
+  fi
+done
 LOG "START (serial: $PLATFORMS) sweep=${SWEEP_ID:-auto}"
 STATUS=""
 

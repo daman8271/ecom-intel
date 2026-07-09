@@ -1,0 +1,74 @@
+[
+  {
+    "city": "Delhi",
+    "pincode": "110008",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "110008"
+    ],
+    "lat": 28.64263888,
+    "lon": 77.1754,
+    "locality": "Patel Nagar SO Central Delhi"
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400078",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "400078"
+    ],
+    "lat": 19.14622222,
+    "lon": 72.93459444,
+    "locality": "Bhandup West SO"
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400103",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "400103"
+    ],
+    "lat": 19.2454722,
+    "lon": 72.8639167,
+    "locality": "Mandapeshwar SO"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560018",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560018"
+    ],
+    "lat": 12.96048845,
+    "lon": 77.56056025000001,
+    "locality": "Chamrajpet S.O (Bengaluru)"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560062",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560062"
+    ],
+    "lat": 12.90703085,
+    "lon": 77.57482425,
+    "locality": "Doddakallasandra S.O"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560091",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560091"
+    ],
+    "lat": 12.993755333333333,
+    "lon": 77.48054766666667,
+    "locality": "Bapagrama B.O"
+  }
+]

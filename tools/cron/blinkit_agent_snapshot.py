@@ -140,6 +140,17 @@ def latest_fallback_runs(limit: int = 3) -> list[dict[str, Any]]:
     return out
 
 
+def latest_mac_drop(date_ist: str) -> dict[str, Any]:
+    compact = date_ist.replace("-", "")
+    base = ROOT / "platforms/blinkit/mac-drops"
+    paths = list(base.glob(f"blinkit-{compact}-*.json")) + list(base.glob(f"blinkit-{compact}T*.json"))
+    paths = [p for p in paths if p.is_file()]
+    paths.sort(key=lambda p: p.stat().st_mtime, reverse=True)
+    if not paths:
+        return {"exists": False, "path": str(base), "summary": {}, "bad_pins": []}
+    return summarize_result(paths[0])
+
+
 def local_blinkit_processes() -> list[str]:
     try:
         proc = subprocess.run(
@@ -164,7 +175,7 @@ def local_blinkit_processes() -> list[str]:
     return lines[:30]
 
 
-def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], result: dict[str, Any], fallback_runs: list[dict[str, Any]], processes: list[str]) -> str:
+def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], result: dict[str, Any], fallback_runs: list[dict[str, Any]], processes: list[str], mac_drop: dict[str, Any]) -> str:
     main_exists = reports["main"]["exists"]
     not_listed_exists = reports["not_listed"]["exists"]
     main_sent = reports["main_sent"]["exists"]
@@ -175,6 +186,14 @@ def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], resul
         return "accepted_pending_send"
     if processes:
         return "running"
+    mac_summary = mac_drop.get("summary") or {}
+    if mac_drop.get("exists") and (
+        mac_drop.get("bad_pins")
+        or mac_summary.get("auth_verified") != 1
+        or int(mac_summary.get("unverified_oos") or 0) > 0
+        or int(mac_summary.get("pdp_price_probe_failed") or 0) > 0
+    ):
+        return "quality_hold"
     latest_bad: list[str] = []
     if fallback_runs:
         merged = fallback_runs[0].get("merged") or {}
@@ -209,6 +228,7 @@ def main() -> int:
         "not_listed_sent": file_info(ROOT / "logs" / f"blinkit-not-listed-wa-{date_ist}.sent"),
     }
     fallback_runs = latest_fallback_runs()
+    mac_drop = latest_mac_drop(date_ist)
     result = summarize_result(ROOT / "platforms/blinkit/result.json")
     processes = local_blinkit_processes()
     snapshot = {
@@ -217,10 +237,11 @@ def main() -> int:
         "expected_pincodes": expected_pincodes(),
         "reports": reports,
         "result": result,
+        "latest_mac_drop": mac_drop,
         "latest_fallback_runs": fallback_runs,
         "local_blinkit_processes": processes,
     }
-    snapshot["state"] = derive_state(now, date_ist, reports, result, fallback_runs, processes)
+    snapshot["state"] = derive_state(now, date_ist, reports, result, fallback_runs, processes, mac_drop)
     print(json.dumps(snapshot, indent=2, sort_keys=True))
     return 0
 
