@@ -1,12 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: ginger-ale-healthy-wheatgrass-juice-sugar-free-200ml
-display_name: Ginger Ale Healthy Wheatgrass Juice Sugar Free 200ml
+display_name: Ginger Ale Healthy Wheatgrass Juice - Sugar Free (200 ml)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
-last_seen: 2026-06-04
-observations: 4
+last_seen: 2026-07-08
+observations: 5
 min_price: 50
 max_price: 50
 latest_price: 50
@@ -19,15 +19,15 @@ tags:
 
 Up: [[skus-index]]
 
-**Ginger Ale Healthy Wheatgrass Juice Sugar Free 200ml**
+**Ginger Ale Healthy Wheatgrass Juice - Sugar Free (200 ml)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹50
 
-## Runs that observed this SKU (4)
-[[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
+## Runs that observed this SKU (5)
+[[bigbasket-2026-07-08-1316]] · [[bigbasket-2026-06-04-1417]] · [[bigbasket-2026-06-01-1600]] · [[bigbasket-2026-06-01-1200]] · [[bigbasket-2026-06-01-0900]]
 
-## Price history (4 observations)
+## Price history (5 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -35,6 +35,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,bigbasket,All India,-,50,50,0,1
 2026-06-01-1600,2026-06-01,bigbasket,All India,-,50,50,0,1
 2026-06-04-1417,2026-06-04,bigbasket,All India,-,50,50,0,1
+2026-07-08-1316,2026-07-08,bigbasket,All India,-,50,50,0,0
 ```
 
 ---

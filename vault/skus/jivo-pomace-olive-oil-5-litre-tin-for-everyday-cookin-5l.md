@@ -6,8 +6,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-07-08
-observations: 41
+last_seen: 2026-07-09
+observations: 57
 min_price: 1699
 max_price: 1950
 latest_price: 1699
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Jaipur]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
 
-## Price history (41 observations)
+## Price history (57 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -78,6 +78,22 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-08-0800,2026-07-08,amazon-now,Pune,411039,1699,4999,66,1
 2026-07-08-0800,2026-07-08,amazon-now,Pune,411048,1699,4999,66,1
 2026-07-08-0800,2026-07-08,amazon-now,Pune,411058,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560006,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560021,1783,4999,64.3,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560022,1783,4999,64.3,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560024,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560050,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560084,1783,4999,64.3,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560097,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560108,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560109,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560110,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Mumbai,400018,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Mumbai,400028,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411030,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411035,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411040,1699,4999,66,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411042,1699,4999,66,1
 ```
 
 ---
