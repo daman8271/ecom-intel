@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # morning_report_guard.sh — owner rule 2026-07-08 (goal #2 this session):
-# BigBasket NATIONAL + BigBasket PINCODE + BLINKIT must reach the owner every
-# morning. Root cause of the 2026-07-08 triple miss: the Mac Pro was powered off
+# BigBasket NATIONAL + BigBasket PINCODE + BLINKIT must reach the morning
+# group/batch path. Root cause of the 2026-07-08 triple miss: the Mac Pro was powered off
 # all night, so (a) run_all never got the Mac `bigbasket.json` drop -> BB national
 # was "skipped (Mac drop late/absent)" from the 10:00 batch; (b) the 3 AM pincode
 # team run lost its Mac shard (ssh 127.0.0.1:22022 refused) and delivered degraded/
@@ -18,7 +18,7 @@
 #            - Mac drop absent (Mac down)                              -> VPS national
 #              scrape (scrape.js) -> ingest.sh --deliver (session/rows gate + spool).
 #   check  (~10:35 IST, after the 10:00 batch + 10:30 Blinkit deadline): verify all
-#          three delivered today, send the owner a completeness summary on Telegram +
+#          three routed today, send the owner a completeness summary on Telegram +
 #          WhatsApp, auto-catch-up BB pincode (Mac shard re-routed to KVM1) if missing,
 #          and alert (Mac-only) for a missing Blinkit.
 #
@@ -51,7 +51,7 @@ alert(){ LOG "ALERT: $1"; tg "${TAG}$1"; wa "${TAG}$1"; }
 
 # ---------- detection ----------
 NAT_RPT="output/Jivo-Bigbasket-Live-Report-${TODAY}.xlsx"
-PIN_RPT="output/private-no-group/Jivo-BigBasket-Pincode-Report-${TODAY}.xlsx"
+PIN_RPT="output/Jivo-BigBasket-Pincode-Report-${TODAY}.xlsx"
 NAT_MARK="logs/.national-guard-spooled-${TODAY}"
 
 national_spooled(){    # did BB national make today's batch (run_all's spool OR ours)?
@@ -59,11 +59,7 @@ national_spooled(){    # did BB national make today's batch (run_all's spool OR 
   [ -f "$NAT_MARK" ] && return 0
   return 1
 }
-pincode_sent(){        # today's pincode workbook built AND a WhatsApp success logged for it
-  [ -f "$PIN_RPT" ] || return 1
-  grep -hA3 "Pincode-Report-${TODAY}" logs/bigbasket-team-pincode.log logs/bb-recover-finisher.log 2>/dev/null \
-    | grep -q '"success":true'
-}
+pincode_routed(){ [ -f "$PIN_RPT" ]; }  # output/ copy is the group/batch handoff
 blinkit_sent(){ [ -f "logs/blinkit-main-wa-${TODAY}.sent" ]; }
 
 # ======================================================================= EARLY
@@ -101,13 +97,13 @@ fi
 # Completeness summary + auto-catch-up for anything still missing after the batch.
 NAT_OK=0; PIN_OK=0; BLK_OK=0
 national_spooled && NAT_OK=1
-pincode_sent     && PIN_OK=1
+pincode_routed   && PIN_OK=1
 blinkit_sent     && BLK_OK=1
 
 emoji(){ [ "$1" = "1" ] && echo "✅" || echo "❌"; }
 SUMMARY="Morning report check ${TODAY}:
 $(emoji $NAT_OK) BigBasket national (10:00 batch)
-$(emoji $PIN_OK) BigBasket pincode-wise (direct)
+$(emoji $PIN_OK) BigBasket pincode-wise (Ecom group/batch)
 $(emoji $BLK_OK) Blinkit (Ecom group)"
 
 # --- auto-catch-up: BB pincode (Mac shard re-routed to KVM1), single-flight ---
@@ -115,18 +111,18 @@ if [ "$PIN_OK" != "1" ]; then
   if [ "$DRY" = "1" ]; then
     LOG "[dryrun] would launch KVM-rerouted pincode re-run"
     SUMMARY="$SUMMARY
-↳ [dryrun] would re-run BB pincode via KVM1."
+↳ [dryrun] would re-run BB pincode via KVM1 for Ecom group/batch output."
   elif pgrep -f 'team_run_pincode.sh (run|collect|merge|build)' >/dev/null 2>&1 || [ -f logs/.bb-finisher.lock ]; then
     LOG "pincode job already running — not double-triggering"
     SUMMARY="$SUMMARY
 ↳ BB pincode re-run already in progress."
   else
-    LOG "BB pincode missing -> launching KVM-rerouted team re-run in tmux"
+    LOG "BB pincode missing from output/ -> launching KVM-rerouted team re-run in tmux"
     RUNID="bb-guard-$(date +%Y%m%d-%H%M%S)"
     /usr/bin/tmux new-session -d -s "$RUNID" \
       "cd $DIR && BB_TEAM_MAC_HOST=kvm1 flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1" 2>/dev/null \
       && SUMMARY="$SUMMARY
-↳ Re-running BB pincode now (Mac→KVM1); expect delivery ~1:30 PM." \
+↳ Re-running BB pincode now (Mac→KVM1); expect Ecom group/batch output ~1:30 PM." \
       || SUMMARY="$SUMMARY
 ↳ [WARN] could not launch BB pincode re-run — check logs."
   fi
@@ -139,8 +135,8 @@ if [ "$BLK_OK" != "1" ]; then
 fi
 
 if [ "$NAT_OK" = "1" ] && [ "$PIN_OK" = "1" ] && [ "$BLK_OK" = "1" ]; then
-  LOG "all three delivered — OK"
-  alert "✅ All 3 morning reports delivered for ${TODAY} (BB national, BB pincode, Blinkit)."
+  LOG "all three routed — OK"
+  alert "✅ All 3 morning reports routed for ${TODAY} (BB national, BB pincode, Blinkit)."
 else
   alert "⚠️ $SUMMARY"
 fi

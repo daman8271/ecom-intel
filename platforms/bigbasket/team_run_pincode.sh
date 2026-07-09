@@ -44,11 +44,11 @@ Usage:
   $0 status <run-id>    Show worker state
   $0 collect <run-id>   Pull remote worker outputs to VPS
   $0 merge <run-id>     Merge shard JSON into result_pincode.json
-  $0 build <run-id>     Build private no-group workbook
+  $0 build <run-id>     Build workbook for the Ecom batch/group
 
 Weights default to VPS=$VPS_WEIGHT Mac=$MAC_WEIGHT KVM1=$KVM_WEIGHT.
 Override with BB_TEAM_VPS_WEIGHT, BB_TEAM_MAC_WEIGHT, BB_TEAM_KVM_WEIGHT.
-Optional direct delivery reads BB_TEAM_DIRECT_JID or $DIRECT_JID_FILE.
+Optional secondary direct delivery reads BB_TEAM_DIRECT_JID or $DIRECT_JID_FILE.
 EOF
 }
 
@@ -359,13 +359,17 @@ merge_run() {
 build_run() {
   cd "$PDIR"
   BB_ALLOW_PARTIAL_PINCODE_REPORT=1 python3 build_excel_pincode.py
-  mkdir -p "$PRIVATE_OUT"
-  local xlsx
+  mkdir -p "$ROOT/output" "$PRIVATE_OUT"
+  local xlsx base public_xlsx private_xlsx
   xlsx="$(ls -t "$PDIR"/Jivo-BigBasket-Pincode-Report-*.xlsx | head -1)"
-  cp -f "$xlsx" "$PRIVATE_OUT/$(basename "$xlsx")"
-  rm -f "$ROOT/output/$(basename "$xlsx")"
-  echo "[bb-team] private workbook: $PRIVATE_OUT/$(basename "$xlsx")"
-  send_direct "$PRIVATE_OUT/$(basename "$xlsx")" || echo "[bb-team] direct WhatsApp send failed; private workbook kept"
+  base="$(basename "$xlsx")"
+  public_xlsx="$ROOT/output/$base"
+  private_xlsx="$PRIVATE_OUT/$base"
+  cp -f "$xlsx" "$public_xlsx"
+  echo "[bb-team] Ecom batch/group workbook: $public_xlsx"
+  cp -f "$xlsx" "$private_xlsx"
+  echo "[bb-team] secondary private copy: $private_xlsx"
+  send_direct "$public_xlsx" || echo "[bb-team] direct WhatsApp send failed; Ecom batch/group workbook kept"
 }
 
 case "$cmd" in
