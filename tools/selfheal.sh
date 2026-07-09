@@ -42,10 +42,10 @@ MIN_ROWS="${ECOM_MIN_ROWS:-20}"          # absolute floor; healthy runs return ~
 COLLAPSE_FRAC="${ECOM_COLLAPSE_FRAC:-0.5}" # rows <= baseline*this  => collapse
 MAX_AGE_H="${ECOM_MAX_AGE_H:-15}"        # result.json older than this = stale
 RETRY_CAP="${ECOM_RETRY_CAP:-1}"         # auto re-runs per platform per invocation
-RUN_TIMEOUT="${ECOM_RUN_TIMEOUT:-2400}"  # seconds; hard cap on a single ./run.sh recovery.
-                                         # 40m so heavy per-pincode platforms (amazon-fresh,
-                                         # amazon-now ~20-30m over 332 pincodes) can actually
-                                         # finish a recovery instead of being killed mid-scrape.
+RUN_TIMEOUT="${ECOM_RUN_TIMEOUT:-2400}"  # seconds; default hard cap on a single ./run.sh recovery.
+                                         # Platform overrides below keep daily rescue parity with
+                                         # the deadline sweep without letting every small platform
+                                         # inherit a multi-hour timeout.
 HEALTH_LOG="$DIR/logs/health.log"
 LOCKDIR="$DIR/logs"                       # lock files live here (logs/ is gitignored)
 TODAY="$(date +%Y-%m-%d)"
@@ -208,6 +208,18 @@ assess() {
 # returns 0 if a re-run was attempted, 1 if skipped (lock held).
 recover() {
   local P="$1"
+  local run_timeout="$RUN_TIMEOUT"
+  local daily_env=0
+  case "$P" in
+    flipkart-minutes|zepto|amazon-fresh|amazon-now)
+      daily_env=1
+      ;;
+  esac
+  case "$P" in
+    zepto) run_timeout="${ECOM_ZEPTO_RUN_TIMEOUT:-7200}" ;;
+    amazon-fresh) run_timeout="${ECOM_AMAZON_FRESH_RUN_TIMEOUT:-7800}" ;;
+    amazon-now) run_timeout="${ECOM_AMAZON_NOW_RUN_TIMEOUT:-7800}" ;;
+  esac
   local lock="$LOCKDIR/.heal-${P}.lock"
   # Non-blocking lock: if another fire is already healing this platform, skip.
   exec {LFD}>"$lock" 2>/dev/null || { log "$P: cannot open lock $lock; skipping recover"; return 1; }
@@ -216,12 +228,16 @@ recover() {
     eval "exec ${LFD}>&-" 2>/dev/null || true
     return 1
   fi
-  log "$P: lock acquired; re-running ./run.sh $P (retry cap=$RETRY_CAP)"
+  log "$P: lock acquired; re-running ./run.sh $P (retry cap=$RETRY_CAP timeout=${run_timeout}s daily_env=$daily_env)"
   local attempt=0 ok=1
   while [ "$attempt" -lt "$RETRY_CAP" ]; do
     attempt=$((attempt+1))
     log "$P: recovery attempt $attempt/$RETRY_CAP -> ./run.sh $P"
-    timeout "$RUN_TIMEOUT" ./run.sh "$P" >> "$DIR/logs/cron.log" 2>&1
+    if [ "$daily_env" = "1" ]; then
+      timeout "$run_timeout" env COVERAGE_DAILY=1 ./run.sh "$P" >> "$DIR/logs/cron.log" 2>&1
+    else
+      timeout "$run_timeout" ./run.sh "$P" >> "$DIR/logs/cron.log" 2>&1
+    fi
     rc=$?
     log "$P: ./run.sh exited rc=$rc"
     [ "$rc" -eq 0 ] && { ok=0; break; }
