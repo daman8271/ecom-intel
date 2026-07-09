@@ -5,8 +5,8 @@ display_name: "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5"
 platforms:
   - amazon-now
 first_seen: 2026-06-09
-last_seen: 2026-07-08
-observations: 133
+last_seen: 2026-07-09
+observations: 166
 min_price: 870
 max_price: 1049
 latest_price: 873
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹873 (30.2% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (13)
-[[amazon-now-2026-07-08-0800]] · [[amazon-now-2026-07-06-0910]] · [[amazon-now-2026-07-05-0218]] · [[amazon-now-2026-07-05-0208]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
+## Runs that observed this SKU (14)
+[[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-now-2026-07-06-0910]] · [[amazon-now-2026-07-05-0218]] · [[amazon-now-2026-07-05-0208]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
 
-## Price history (133 observations)
+## Price history (166 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -167,6 +167,39 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-08-0800,2026-07-08,amazon-now,Noida,201309,870,1250,30.4,1
 2026-07-08-0800,2026-07-08,amazon-now,Pune,411039,873,1250,30.2,1
 2026-07-08-0800,2026-07-08,amazon-now,Pune,411058,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560004,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560006,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560021,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560022,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560024,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560030,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560043,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560050,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560053,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560065,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560084,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560097,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560108,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560109,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Bengaluru,560110,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Delhi,110022,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Delhi,110029,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Delhi,110044,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Delhi,110078,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Delhi,110087,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Hyderabad,500001,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Hyderabad,500018,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Hyderabad,500025,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Hyderabad,500061,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Lucknow,226024,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Mumbai,400018,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Mumbai,400028,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411009,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411011,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411012,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411030,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411035,873,1250,30.2,1
+2026-07-09-0826,2026-07-09,amazon-now,Pune,411042,873,1250,30.2,1
 ```
 
 ---

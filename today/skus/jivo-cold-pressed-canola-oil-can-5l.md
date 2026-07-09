@@ -5,8 +5,8 @@ display_name: JIVO Cold Pressed Canola Oil Can (5000 ml)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-08
-last_seen: 2026-07-08
-observations: 1
+last_seen: 2026-07-09
+observations: 2
 min_price: 1650
 max_price: 1650
 latest_price: 1650
@@ -27,14 +27,15 @@ Up: [[skus-index]]
 ## Available in cities
 [[Jaipur]]
 
-## Runs that observed this SKU (1)
-[[flipkart-minutes-2026-07-08-0645]]
+## Runs that observed this SKU (2)
+[[flipkart-minutes-2026-07-09-0645]] · [[flipkart-minutes-2026-07-08-0645]]
 
-## Price history (1 observations)
+## Price history (2 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-08-0645,2026-07-08,flipkart-minutes,Jaipur,302044,1650,,,1
+2026-07-09-0645,2026-07-09,flipkart-minutes,Jaipur,302044,1650,1650,0,1
 ```
 
 ---
