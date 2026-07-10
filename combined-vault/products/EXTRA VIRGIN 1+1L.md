@@ -59,7 +59,7 @@ Up: [[Home]]
 
 ## Connections
 Cross-vault fusion by name / SKU match:
-- **JIVO source notes:** [[sku-FG0000075]]
+- **JIVO source notes:** `sku-FG0000075` *(delisted from app)*
 - **Ecom source notes:** [[edog2nmphjzh6gjc]] · [[jivo-extra-virgin-olive-oil-1-litre-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-for-dressings-salad-and-soups-dips-marinades-pack-of-2-2l]] · [[qwrgemns9zpzgwjh]]
 - **Category:** [[Category - OLIVE]]
 - **TIER:** [[Tier - Premium]]

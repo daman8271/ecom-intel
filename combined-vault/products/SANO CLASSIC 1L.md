@@ -48,7 +48,7 @@ _OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
 
 ## Connections
 Cross-vault fusion by name / SKU match:
-- **JIVO source notes:** [[sku-FG0000162]]
+- **JIVO source notes:** `sku-FG0000162` *(delisted from app)*
 - **Ecom source notes:** [[sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l]] · [[edogvef33gyxkhew]]
 - **Category:** [[Category - OTHER]]
 - **TIER:** [[Tier - Other]]
