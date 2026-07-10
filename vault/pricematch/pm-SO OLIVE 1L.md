@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-09
-observations: 248
+last_seen: 2026-07-10
+observations: 256
 latest_status: ABOVE
 below_days: 31
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-09) — ref ₹239 vs live ₹265
-- **Days below reference:** 31 of 31
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-10) — ref ₹229 vs live ₹273
+- **Days below reference:** 31 of 32
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]]
 
-## Ref-vs-live history (248 observations)
+## Ref-vs-live history (256 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -293,6 +293,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-09,flipkart,BELOW,BAU,239,228,228,228,-11,-4.6,1,true
 2026-07-09,flipkart-minutes,NOT_LISTED,BAU,239,,,,,,0,false
 2026-07-09,zepto,ABOVE,BAU,239,265,234,265,26,10.88,5,true
+2026-07-10,amazon,OOS,SVD,229,,,,,,0,false
+2026-07-10,amazon-fresh,ABOVE,SVD,229,239,239,239,10,4.37,0,true
+2026-07-10,amazon-now,NOT_LISTED,SVD,229,,,,,,0,false
+2026-07-10,bigbasket,NOT_LISTED,SVD,229,,,,,,0,false
+2026-07-10,blinkit,NOT_LISTED,SVD,229,,,,,,0,false
+2026-07-10,flipkart,ABOVE,SVD,229,258,258,258,29,12.66,0,true
+2026-07-10,flipkart-minutes,NOT_LISTED,SVD,229,,,,,,0,false
+2026-07-10,zepto,ABOVE,SVD,229,273,226,273,44,19.21,1,true
 ```
 
 ---

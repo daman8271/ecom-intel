@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-combo-10l
-display_name: Jivo Pomace Olive Oil Combo 10l
+display_name: Jivo Pomace Olive Oil Combo (5 L X 2)
 platforms:
   - zepto
 first_seen: 2026-06-17
-last_seen: 2026-06-23
-observations: 88
-min_price: 4152
+last_seen: 2026-07-10
+observations: 92
+min_price: 3398
 max_price: 9500
-latest_price: 4152
+latest_price: 3398
 tags:
   - type/sku-hub
   - platform/zepto
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Olive Oil Combo 10l**
+**Jivo Pomace Olive Oil Combo (5 L X 2)**
 
 ## Sold on
-- [[zepto]] — latest ₹4152 (58.5% off)
+- [[zepto]] — latest ₹3398 (66.0% off)
 
 ## Available in cities
 [[Mumbai]]
 
-## Runs that observed this SKU (8)
-[[zepto-2026-06-23-1224]] · [[zepto-2026-06-22-1224]] · [[zepto-2026-06-21-1221]] · [[zepto-2026-06-21-0842]] · [[zepto-2026-06-20-1217]] · [[zepto-2026-06-18-1211]] · [[zepto-2026-06-17-1223]] · [[zepto-2026-06-17-0843]]
+## Runs that observed this SKU (9)
+[[zepto-2026-07-10-0139]] · [[zepto-2026-06-23-1224]] · [[zepto-2026-06-22-1224]] · [[zepto-2026-06-21-1221]] · [[zepto-2026-06-21-0842]] · [[zepto-2026-06-20-1217]] · [[zepto-2026-06-18-1211]] · [[zepto-2026-06-17-1223]] · [[zepto-2026-06-17-0843]]
 
-## Price history (88 observations)
+## Price history (92 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -122,6 +122,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-23-1224,2026-06-23,zepto,Mumbai,400019,4152,9998,58.5,0
 2026-06-23-1224,2026-06-23,zepto,Mumbai,400020,4152,9998,58.5,0
 2026-06-23-1224,2026-06-23,zepto,Mumbai,400021,4152,9998,58.5,0
+2026-07-10-0139,2026-07-10,zepto,Mumbai,400005,3398,9998,66,1
+2026-07-10-0139,2026-07-10,zepto,Mumbai,400057,3398,9998,66,1
+2026-07-10-0139,2026-07-10,zepto,Mumbai,400088,3398,9998,66,1
+2026-07-10-0139,2026-07-10,zepto,Mumbai,400094,3398,9998,66,1
 ```
 
 ---

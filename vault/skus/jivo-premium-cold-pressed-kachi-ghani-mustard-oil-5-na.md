@@ -5,11 +5,11 @@ display_name: "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5"
 platforms:
   - amazon-now
 first_seen: 2026-06-09
-last_seen: 2026-07-09
-observations: 166
+last_seen: 2026-07-10
+observations: 190
 min_price: 870
 max_price: 1049
-latest_price: 873
+latest_price: 999
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5**
 
 ## Sold on
-- [[amazon-now]] — latest ₹873 (30.2% off)
+- [[amazon-now]] — latest ₹999 (20.1% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (14)
-[[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-now-2026-07-06-0910]] · [[amazon-now-2026-07-05-0218]] · [[amazon-now-2026-07-05-0208]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
+## Runs that observed this SKU (15)
+[[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-now-2026-07-06-0910]] · [[amazon-now-2026-07-05-0218]] · [[amazon-now-2026-07-05-0208]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
 
-## Price history (166 observations)
+## Price history (190 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -200,6 +200,30 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-09-0826,2026-07-09,amazon-now,Pune,411030,873,1250,30.2,1
 2026-07-09-0826,2026-07-09,amazon-now,Pune,411035,873,1250,30.2,1
 2026-07-09-0826,2026-07-09,amazon-now,Pune,411042,873,1250,30.2,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560006,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560024,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560025,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560033,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560038,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560055,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560064,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560070,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560079,999,1250,20.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Bengaluru,560097,949,1250,24.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Delhi,110021,916,1250,26.7,1
+2026-07-10-0758,2026-07-10,amazon-now,Delhi,110061,916,1250,26.7,1
+2026-07-10-0758,2026-07-10,amazon-now,Delhi,110078,916,1250,26.7,1
+2026-07-10-0758,2026-07-10,amazon-now,Delhi,110087,916,1250,26.7,1
+2026-07-10-0758,2026-07-10,amazon-now,Gurugram,122015,916,1250,26.7,1
+2026-07-10-0758,2026-07-10,amazon-now,Mumbai,400010,919,1250,26.5,1
+2026-07-10-0758,2026-07-10,amazon-now,Mumbai,400016,919,1250,26.5,1
+2026-07-10-0758,2026-07-10,amazon-now,Mumbai,400026,919,1250,26.5,1
+2026-07-10-0758,2026-07-10,amazon-now,Mumbai,400082,919,1250,26.5,1
+2026-07-10-0758,2026-07-10,amazon-now,Noida,201310,870,1250,30.4,1
+2026-07-10-0758,2026-07-10,amazon-now,Pune,411030,999,1250,20.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Pune,411036,999,1250,20.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Pune,411043,999,1250,20.1,1
+2026-07-10-0758,2026-07-10,amazon-now,Pune,411051,999,1250,20.1,1
 ```
 
 ---
