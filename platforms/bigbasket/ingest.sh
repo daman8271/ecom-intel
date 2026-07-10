@@ -49,6 +49,26 @@ if shape == "national":
         raise SystemExit(
             f"Refusing failed BigBasket browser drop: session_ok={s.get('session_ok')} rows={len(rows)}"
         )
+    # NATIONAL FLOOR (2026-07-11 incident): a 429/303-rate-limited search still returns
+    # session_ok=true with a couple of product-detail fallback rows (2026-07-10 shipped a
+    # 2-SKU "OK" report). Anchor to last-good national rows, same fail-closed philosophy
+    # as the pincode floor below — a refusal leaves no report, so morning_report_guard's
+    # 08:40 VPS catch-up scrape takes over.
+    lg_rows = 0
+    lgf = os.path.join(pdir, "result.national.last-good.json")
+    if os.path.exists(lgf):
+        try:
+            lg_rows = len(json.load(open(lgf)).get("allRows") or [])
+        except Exception:
+            lg_rows = 0
+    anchored = math.ceil(0.75 * lg_rows) if lg_rows else 0
+    required = max(anchored, 8)   # absolute floor 8 rows (healthy national = ~15)
+    if len(rows) < required:
+        raise SystemExit(
+            f"Refusing collapsed BigBasket national drop: rows={len(rows)} < required {required} "
+            f"(75%-of-last-good={anchored}, last-good={lg_rows}). Keeping last-good — "
+            f"investigate the Mac scrape (429/303 search rate-limit?)."
+        )
 else:
     # BUG#2 PERMANENT GUARD (2026-07-04, goal #61): a partial/collapsed pincode pull
     # (e.g. the 2026-07-03 Bengaluru-only 1-pin drop) must NEVER silently overwrite the
@@ -85,6 +105,7 @@ else
   python3 build_excel.py
   XLSX=$(ls -t "$PDIR"/Jivo-Bigbasket-Live-Report-*.xlsx 2>/dev/null | head -1)
   [ -n "$XLSX" ] || { echo "[bb-ingest] build_excel produced no report" >&2; exit 1; }
+  cp "$STAGED" "$PDIR/result.national.last-good.json"   # anchor for the national floor
   python3 "$ROOT/tools/predict.py"          bigbasket "$XLSX" || echo "[bb-ingest] predict skipped"
   python3 "$ROOT/tools/report_dashboard.py" bigbasket "$XLSX" || echo "[bb-ingest] dashboard skipped"
 fi

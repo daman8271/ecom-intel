@@ -63,6 +63,28 @@ probs = cl.check_percent_inflation("2099-01-02", d)
 assert len(probs) >= 2, f"dirty book must flag both, got {probs}"
 PY
 
+# ---- Bug 2b: NATIONAL floor — a rate-limited (429/303) near-empty national drop must be
+# refused, not shipped as OK (2026-07-10 incident: session_ok=true, rows=2 sailed through).
+# Mirrors the national guard in platforms/bigbasket/ingest.sh (keep in sync).
+python3 - <<'PY' && ok "bug2b: national floor refuses collapsed drop, accepts full" || no "bug2b: national floor predicate wrong"
+import math
+def accept(new_rows, lg_rows):
+    required = max(math.ceil(0.75 * lg_rows) if lg_rows else 0, 8)
+    return new_rows >= required
+assert accept(15, 15) is True,  "full national pull must pass"
+assert accept(12, 15) is True,  "12/15 (=75%) must pass"
+assert accept(2,  15) is False, "2026-07-10-style 2-row collapse must be refused"
+assert accept(0,  15) is False, "empty must be refused"
+assert accept(10, 0)  is True,  "no last-good -> absolute floor 8 only"
+assert accept(5,  0)  is False, "below absolute floor 8 refused even w/o last-good"
+PY
+if grep -q "result.national.last-good.json" platforms/bigbasket/ingest.sh \
+   && grep -q "0.75 \* lg_rows" platforms/bigbasket/ingest.sh; then
+  ok "bug2b: ingest.sh carries the national last-good-anchored floor"
+else
+  no "bug2b: ingest.sh missing the national floor"
+fi
+
 echo "-----"
 echo "bug-guard tests: $pass passed, $fail failed"
 [ "$fail" -eq 0 ]
