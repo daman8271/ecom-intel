@@ -1,13 +1,4 @@
 {
-  "queries": [
-    "olive oil",
-    "mustard oil",
-    "sunflower oil",
-    "canola oil",
-    "rice bran oil",
-    "groundnut oil",
-    "soyabean oil",
-    "blended oil"
-  ],
-  "keep_jivo_query": true
+  "queries": ["ghee", "pure ghee", "cow ghee", "buffalo ghee", "desi ghee", "a2 ghee"],
+  "keep_jivo_query": false
 }

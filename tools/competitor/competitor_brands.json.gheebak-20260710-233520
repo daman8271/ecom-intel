@@ -1,0 +1,48 @@
+{
+  "_doc": "JIVO competitor brand whitelist for q-commerce V1",
+  "ours": ["Jivo", "Sano"],
+  "brands": [
+    {"brand": "Fortune", "categories": ["mustard", "sunflower", "rice_bran", "soyabean", "groundnut", "canola"], "aliases": ["fortune", "fortune soya", "fortune xpert", "fortune vivo"]},
+    {"brand": "Saffola", "categories": ["soyabean", "rice_bran"], "aliases": ["saffola", "saffola gold", "saffola total", "saffola active", "saffola tasty", "saffola oryza"]},
+    {"brand": "Sundrop", "categories": ["sunflower", "soyabean"], "aliases": ["sundrop"]},
+    {"brand": "Dhara", "categories": ["mustard", "sunflower", "soyabean", "groundnut"], "aliases": ["dhara"]},
+    {"brand": "Oleev", "categories": ["olive", "soyabean"], "aliases": ["oleev"]},
+    {"brand": "Figaro", "categories": ["olive"], "aliases": ["figaro"]},
+    {"brand": "Borges", "categories": ["olive", "canola"], "aliases": ["borges"]},
+    {"brand": "Del Monte", "categories": ["olive"], "aliases": ["del monte", "delmonte"]},
+    {"brand": "Leonardo", "categories": ["olive"], "aliases": ["leonardo"]},
+    {"brand": "DiSano", "categories": ["olive"], "aliases": ["disano", "di sano"]},
+    {"brand": "Rafael Salgado", "categories": ["olive"], "aliases": ["rafael salgado", "rafael", "salgado"]},
+    {"brand": "bb Royal", "categories": ["olive", "canola"], "aliases": ["bb royal", "bbroyal"]},
+    {"brand": "Patanjali", "categories": ["mustard"], "aliases": ["patanjali"]},
+    {"brand": "Emami Healthy & Tasty", "categories": ["mustard"], "aliases": ["emami", "emami healthy & tasty", "healthy & tasty", "healthy and tasty"]},
+    {"brand": "P Mark", "categories": ["mustard"], "aliases": ["p mark", "pmark"]},
+    {"brand": "Engine", "categories": ["mustard"], "aliases": ["engine"]},
+    {"brand": "Gemini", "categories": ["mustard", "sunflower"], "aliases": ["gemini"]},
+    {"brand": "Tata", "categories": ["mustard", "groundnut", "sesame"], "aliases": ["tata", "tata simply", "tata sampann", "simply", "sampann"]},
+    {"brand": "Gold Winner", "categories": ["sunflower", "groundnut", "sesame"], "aliases": ["gold winner", "goldwinner"]},
+    {"brand": "Sunpure", "categories": ["sunflower"], "aliases": ["sunpure"]},
+    {"brand": "Freedom", "categories": ["sunflower"], "aliases": ["freedom"]},
+    {"brand": "Nature Fresh", "categories": ["sunflower", "soyabean"], "aliases": ["nature fresh", "naturefresh"]},
+    {"brand": "Ricela", "categories": ["rice_bran"], "aliases": ["ricela"]},
+    {"brand": "Idhayam", "categories": ["sesame"], "aliases": ["idhayam"]},
+    {"brand": "Gulab", "categories": ["groundnut"], "aliases": ["gulab"]},
+    {"brand": "Natureland", "categories": ["mustard", "groundnut", "sunflower"], "aliases": ["natureland", "natureland organics"]}
+  ],
+  "by_category": {
+    "olive": ["Figaro", "Borges", "Del Monte", "Oleev", "Leonardo", "DiSano", "Rafael Salgado", "bb Royal"],
+    "mustard": ["Fortune", "Dhara", "Patanjali", "Emami Healthy & Tasty", "P Mark", "Engine", "Gemini", "Tata"],
+    "sunflower": ["Fortune", "Sundrop", "Gold Winner", "Sunpure", "Freedom", "Gemini", "Dhara", "Nature Fresh"],
+    "soyabean": ["Fortune", "Saffola", "Sundrop", "Nature Fresh", "Dhara", "Oleev"],
+    "rice_bran": ["Fortune", "Saffola", "Ricela"],
+    "groundnut": ["Dhara", "Fortune", "Gold Winner", "Tata", "Gulab"],
+    "sesame": ["Idhayam", "Tata", "Gold Winner"],
+    "canola": ["Fortune", "bb Royal", "Borges"]
+  },
+  "_excluded_v1": {
+    "_note": "ghee + coconut are out of scope for V1 (q-commerce-thin); listed here for reference only, NOT part of the active whitelist or regex",
+    "ghee": ["Amul", "Patanjali", "Gowardhan", "Aashirvaad", "Mother Dairy"],
+    "coconut": ["Parachute", "KLF Nirmal", "Coco Soul", "Maxcare"]
+  },
+  "whitelist_regex": "(jivo|sano|fortune|saffola|dhara|oleev|figaro|borges|del ?monte|gold ?winner|sunpure|freedom|gemini|sundrop|nature ?fresh|tata|patanjali|emami|leonardo|disano|ricela|idhayam|gulab|natureland|p ?mark|engine|bb ?royal|rafael ?salgado)"
+}
