@@ -1,0 +1,105 @@
+{
+  "platform": "amazon-fresh",
+  "run_id": "2026-07-10-0658",
+  "captured_at": "2026-07-10T02:28:03.437Z",
+  "verdict": "OK",
+  "rows": 1850,
+  "unique_skus": 41,
+  "pincodes_with_jivo": 161,
+  "baseline_rows": 1527,
+  "source_result": "/opt/ecom-intel/platforms/amazon-fresh/result.json",
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "1850 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "1850 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "1850 rows vs baseline 1527 (121%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "41 unique SKUs vs baseline 34 (119%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "161 pincodes w/ Jivo vs baseline 126 (128%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-07-10T02:28:03.437Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; 2 SKU(s) price-stable across 9 runs path proven live by 34 SKU(s) that moved (e.g. jivo-canola-cold-press-edible-oil-5-litre-jivo-kachi-ghani-mustard-oil-5-litre-5l, jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l, jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l) -> genuinely stable; 34 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": true,
+      "detail": "no resolved store_id on rows; geo check n/a"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": true,
+      "detail": "1849 priced in-stock rows, vs baseline 1527; 0 block/error-marked rows"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK, legitimate oils/olive oils at sane INR prices, MRP\u2265sale consistent, 21% row increase from baseline is structurally sound."
+    }
+  ],
+  "reasons": [],
+  "llm_note": "OK, legitimate oils/olive oils at sane INR prices, MRP\u2265sale consistent, 21% row increase from baseline is structurally sound."
+}
