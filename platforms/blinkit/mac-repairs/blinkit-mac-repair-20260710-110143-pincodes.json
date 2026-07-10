@@ -1,0 +1,14 @@
+[
+  {
+    "city": "Mumbai",
+    "pincode": "400001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "400001"
+    ],
+    "lat": 18.935871116666668,
+    "lon": 72.83409186666667,
+    "locality": "Mumbai GPO"
+  }
+]
