@@ -130,8 +130,8 @@ From `/quality-control/sap-items/`. Up: [[_HOME]]
 - [[quality-control__sap-items-FG0000381]] — EXTRA VIRGIN OLIVE 200 MLS 35 PCS
 - [[quality-control__sap-items-FG0000391]] — EXTRA VIRGIN OLIVE 3 LTR TIN 6 PCS
 - [[quality-control__sap-items-FG0000363]] — GLASS BOTTLE 200 MLS BLUEBERRY SUGAR FREE 12 PCS
-- [[quality-control__sap-items-FG0000325]] — GLASS BOTTLE 200 MLS ENERGY DRINK SUGAR FREE 12 PCS
 - [[quality-control__sap-items-FG0000309]] — GLASS BOTTLE 200 MLS ENERGY DRINK SUGAR FREE 12 PCS
+- [[quality-control__sap-items-FG0000325]] — GLASS BOTTLE 200 MLS ENERGY DRINK SUGAR FREE 12 PCS
 - [[quality-control__sap-items-FG0000375]] — GLASS BOTTLE 200 MLS JEERA SUGAR FREE 12 PCS
 - [[quality-control__sap-items-FG0000319]] — GROUNDNUT 1 + 1 LTR
 - [[quality-control__sap-items-FG0000399]] — GROUNDNUT 5+1 LTR
@@ -164,6 +164,7 @@ From `/quality-control/sap-items/`. Up: [[_HOME]]
 - [[quality-control__sap-items-FG0000422]] — COLD PRESS 1 LTR (NIRMAL RISHI )20PCS
 - [[quality-control__sap-items-FG0000420]] — COLD PRESS GROUNDNUT 200 MLS 70 PCS - BH
 - [[quality-control__sap-items-FG0000416]] — COLD PRESS GROUNDNUT OIL 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000426]] — COLD PRESS GROUNDNUT OIL 2 LTR 10 PCS HANDLE
 - [[quality-control__sap-items-FG0000404]] — COLD PRESS SUNFLOWER 1 LTR +1 LTR COMBO 10 SET
 - [[quality-control__sap-items-FG0000402]] — COLD PRESS SUNFLOWER 1 LTR 24 PCS
 - [[quality-control__sap-items-FG0000400]] — EXTRA LIGHT 1+1+1 LTR
@@ -202,4 +203,3 @@ From `/quality-control/sap-items/`. Up: [[_HOME]]
 - [[quality-control__sap-items-SL0000213]] — JIVO RICE BRAIN OIL 1 LTR
 - [[quality-control__sap-items-SL0000195]] — JIVO RICE BRAIN OIL 5  LTR
 - [[quality-control__sap-items-SL0000221]] — JIVO SOYABEAN OIL POUCH 1 LTR
-- [[quality-control__sap-items-SC0000037]] — KUMKUMADI OIL

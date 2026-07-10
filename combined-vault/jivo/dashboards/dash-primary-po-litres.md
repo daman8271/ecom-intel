@@ -34,7 +34,7 @@ Up: [[dashboards-index]]
    "format": "CITY MALL"
   },
   {
-   "delivered_ltrs": 15298.4,
+   "delivered_ltrs": 17188.8,
    "format": "ZEPTO"
   },
   {

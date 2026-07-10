@@ -4,7 +4,7 @@ jid: JID-0078
 product: "BLUEBERRY 200ML"
 sap_codes:
   - FG0000232
-category: "OTHER"
+category: "DRINKS"
 tier: OTHER
 platforms:
   - bigbasket
@@ -12,7 +12,7 @@ platforms:
 tags:
   - type/product
   - tier/OTHER
-  - category/OTHER
+  - category/DRINKS
   - platform/bigbasket
   - platform/amazon
 ---
@@ -28,7 +28,9 @@ Up: [[Home]]
 | Product | BLUEBERRY 200ML |
 | JIVO SKU / SAP code | `FG0000232` |
 | canonical_sku(s) | `blueberry-healthy-wheatgrass-juice-200ml`, `jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml` |
-| Category | [[Category - OTHER\|OTHER]] |
+| Category | [[Category - DRINKS\|DRINKS]] |
+| Sub-category | BLUEBERRY |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 200ML |
 | Bridge class | new_confirmed |
@@ -50,7 +52,7 @@ _OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
 Cross-vault fusion by name / SKU match:
 - **JIVO source notes:** [[sku-FG0000232]]
 - **Ecom source notes:** [[blueberry-healthy-wheatgrass-juice-200ml]] · [[jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml]]
-- **Category:** [[Category - OTHER]]
+- **Category:** [[Category - DRINKS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - bigbasket]] · [[Platform - amazon]]
 

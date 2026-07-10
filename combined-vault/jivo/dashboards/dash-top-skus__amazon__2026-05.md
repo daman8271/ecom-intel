@@ -31,7 +31,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    "delta_pct": 48.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 44815.0,
+   "ltrs": 44805.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 30155.0
   },

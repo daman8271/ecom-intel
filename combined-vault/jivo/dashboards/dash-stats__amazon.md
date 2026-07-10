@@ -19,9 +19,9 @@ Up: [[dashboards-index]] · [[pf-amazon]]
 ```json
 {
  "activeTrucks": 0,
- "inventory": 146,
+ "inventory": 117,
  "openPOs": 0,
- "sells": 56969
+ "sells": 67523
 }
 ```
 

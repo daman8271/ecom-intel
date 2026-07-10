@@ -25,7 +25,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 137281.0,
+    "ltrs": 137271.0,
     "name": "SUNFLOWER"
    },
    {
@@ -47,7 +47,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 137281.0,
+    "ltrs": 137271.0,
     "name": "SUNFLOWER"
    },
    {
@@ -63,7 +63,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SOYABEAN"
    }
   ],
-  "total_ltrs": 449550.0
+  "total_ltrs": 449540.0
  },
  "errors": [],
  "month": 5,

@@ -21,19 +21,19 @@ Up: [[dashboards-index]] · [[2026-06]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 158949.0,
+    "ltrs": 159030.0,
     "name": "MUSTARD"
    },
    {
-    "ltrs": 126661.0,
+    "ltrs": 126654.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 20351.0,
+    "ltrs": 20361.0,
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 20164.0,
+    "ltrs": 20172.0,
     "name": "SOYABEAN"
    },
    {
@@ -43,19 +43,19 @@ Up: [[dashboards-index]] · [[2026-06]]
   ],
   "sub_categories": [
    {
-    "ltrs": 158949.0,
+    "ltrs": 159030.0,
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 126661.0,
+    "ltrs": 126654.0,
     "name": "SUNFLOWER"
    },
    {
-    "ltrs": 20351.0,
+    "ltrs": 20361.0,
     "name": "RICE BRAN"
    },
    {
-    "ltrs": 20164.0,
+    "ltrs": 20172.0,
     "name": "SOYABEAN"
    },
    {
@@ -63,7 +63,7 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "GOLD"
    }
   ],
-  "total_ltrs": 339511.0
+  "total_ltrs": 339603.0
  },
  "errors": [],
  "month": 6,
@@ -71,11 +71,11 @@ Up: [[dashboards-index]] · [[2026-06]]
  "premium": {
   "categories": [
    {
-    "ltrs": 181123.2,
+    "ltrs": 181121.2,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 121249.5,
+    "ltrs": 121252.5,
     "name": "OLIVE"
    },
    {
@@ -105,7 +105,7 @@ Up: [[dashboards-index]] · [[2026-06]]
   ],
   "sub_categories": [
    {
-    "ltrs": 181123.2,
+    "ltrs": 181121.2,
     "name": "GROUNDNUT"
    },
    {
@@ -117,7 +117,7 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 27083.5,
+    "ltrs": 27089.5,
     "name": "EXTRA LIGHT"
    },
    {
@@ -125,7 +125,7 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SANO POMACE"
    },
    {
-    "ltrs": 8842.0,
+    "ltrs": 8839.0,
     "name": "EXTRA VIRGIN"
    },
    {
@@ -149,7 +149,7 @@ Up: [[dashboards-index]] · [[2026-06]]
     "name": "SEASAME OIL"
    }
   ],
-  "total_ltrs": 362199.7
+  "total_ltrs": 362200.7
  },
  "source": "primary",
  "year": 2026

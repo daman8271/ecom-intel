@@ -4,7 +4,7 @@ jid: JID-0079
 product: "ROSE FLAVOR 200ML"
 sap_codes:
   - FG0000234
-category: "OTHER"
+category: "DRINKS"
 tier: OTHER
 platforms:
   - amazon
@@ -12,7 +12,7 @@ platforms:
 tags:
   - type/product
   - tier/OTHER
-  - category/OTHER
+  - category/DRINKS
   - platform/amazon
   - platform/bigbasket
 ---
@@ -28,7 +28,9 @@ Up: [[Home]]
 | Product | ROSE FLAVOR 200ML |
 | JIVO SKU / SAP code | `FG0000234` |
 | canonical_sku(s) | `jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml`, `rose-healthy-wheatgrass-juice-200ml` |
-| Category | [[Category - OTHER\|OTHER]] |
+| Category | [[Category - DRINKS\|DRINKS]] |
+| Sub-category | ROSE |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 200ML |
 | Bridge class | new_confirmed |
@@ -50,7 +52,7 @@ _OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
 Cross-vault fusion by name / SKU match:
 - **JIVO source notes:** [[sku-FG0000234]]
 - **Ecom source notes:** [[jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml]] · [[rose-healthy-wheatgrass-juice-200ml]]
-- **Category:** [[Category - OTHER]]
+- **Category:** [[Category - DRINKS]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - amazon]] · [[Platform - bigbasket]]
 

@@ -25,7 +25,7 @@ Up: [[dashboards-index]] · [[2026-07]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 15606.0,
+    "ltrs": 15678.0,
     "name": "SUNFLOWER"
    },
    {
@@ -47,7 +47,7 @@ Up: [[dashboards-index]] · [[2026-07]]
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 15606.0,
+    "ltrs": 15678.0,
     "name": "SUNFLOWER"
    },
    {
@@ -63,7 +63,7 @@ Up: [[dashboards-index]] · [[2026-07]]
     "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 66908.0
+  "total_ltrs": 66980.0
  },
  "errors": [],
  "month": 7,
@@ -71,11 +71,11 @@ Up: [[dashboards-index]] · [[2026-07]]
  "premium": {
   "categories": [
    {
-    "ltrs": 41821.4,
+    "ltrs": 43016.6,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 13752.75,
+    "ltrs": 14375.95,
     "name": "OLIVE"
    },
    {
@@ -97,7 +97,7 @@ Up: [[dashboards-index]] · [[2026-07]]
   ],
   "sub_categories": [
    {
-    "ltrs": 41821.4,
+    "ltrs": 43016.6,
     "name": "GROUNDNUT"
    },
    {
@@ -113,11 +113,11 @@ Up: [[dashboards-index]] · [[2026-07]]
     "name": "SANO POMACE"
    },
    {
-    "ltrs": 3086.0,
+    "ltrs": 3562.0,
     "name": "EXTRA LIGHT"
    },
    {
-    "ltrs": 755.75,
+    "ltrs": 902.95,
     "name": "EXTRA VIRGIN"
    },
    {
@@ -133,7 +133,7 @@ Up: [[dashboards-index]] · [[2026-07]]
     "name": "YELLOW MUSTARD"
    }
   ],
-  "total_ltrs": 60800.15
+  "total_ltrs": 62618.55
  },
  "source": "primary",
  "year": 2026

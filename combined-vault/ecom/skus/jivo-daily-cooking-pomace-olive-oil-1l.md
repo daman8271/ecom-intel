@@ -1,13 +1,13 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-cooking-pomace-olive-oil-1l
-display_name: Jivo Daily Cooking Pomace Olive Oil 1l
+display_name: Jivo Daily Cooking Pomace Olive Oil (1 l)
 platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-31
-last_seen: 2026-06-04
-observations: 2170
+last_seen: 2026-07-10
+observations: 2171
 min_price: 758
 max_price: 878
 latest_price: 758
@@ -21,19 +21,19 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Daily Cooking Pomace Olive Oil 1l**
+**Jivo Daily Cooking Pomace Olive Oil (1 l)**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹810 (37.6% off)
+- [[amazon-fresh]] — latest ₹758 (41.6% off)
 - [[amazon-now]] — latest ₹758 (41.6% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (7)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (8)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (2170 observations)
+## Price history (2171 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -2207,6 +2207,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Pune,412114,758,1298,41.6,1
 2026-06-04-1417,2026-06-04,amazon-now,Surat,394185,758,1298,41.6,1
 2026-06-04-1417,2026-06-04,amazon-now,Surat,394510,758,1298,41.6,1
+2026-07-10-0658,2026-07-10,amazon-fresh,Mumbai,400017,758,1298,41.6,1
 ```
 
 ---

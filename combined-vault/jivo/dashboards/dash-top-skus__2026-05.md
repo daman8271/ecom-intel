@@ -67,10 +67,10 @@ Up: [[dashboards-index]] · [[2026-05]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 40.4,
+   "delta_pct": 40.3,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 68130.0,
+   "ltrs": 68120.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 48540.0
   },

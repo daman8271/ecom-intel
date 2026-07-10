@@ -24,7 +24,7 @@ Up: [[platforms-index]]
 Full raw rows (embedded once here — this is the canonical home):
 - `all_platform_inventory`: [[pf-zepto.all_platform_inventory]]
 - `master_products`: [[pf-zepto.master_products]]
-- `zeptoSec`: [[pf-zepto.zeptoSec]]
+- `zeptoSec`: [[pf-zepto.zeptoSec.1]] · [[pf-zepto.zeptoSec.2]]
 - `zepto_ads`: [[pf-zepto.zepto_ads]]
 - `zepto_brandfund`: [[pf-zepto.zepto_brandfund]]
 - `zepto_inventory`: [[pf-zepto.zepto_inventory.1]] · [[pf-zepto.zepto_inventory.2]]

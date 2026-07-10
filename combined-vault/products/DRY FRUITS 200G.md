@@ -4,14 +4,14 @@ jid: JID-0099
 product: "DRY FRUITS 200G"
 sap_codes:
   - FG0000291
-category: "OTHER"
+category: "GIFT PACK"
 tier: OTHER
 platforms:
   - amazon
 tags:
   - type/product
   - tier/OTHER
-  - category/OTHER
+  - category/GIFT-PACK
   - platform/amazon
 ---
 
@@ -26,7 +26,9 @@ Up: [[Home]]
 | Product | DRY FRUITS 200G |
 | JIVO SKU / SAP code | `FG0000291` |
 | canonical_sku(s) | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` |
-| Category | [[Category - OTHER\|OTHER]] |
+| Category | [[Category - GIFT PACK\|GIFT PACK]] |
+| Sub-category | DRY FRUITS |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 200G |
 | Bridge class | new_confirmed |
@@ -47,7 +49,7 @@ _OTHER tier is not tracked in target-history (PREMIUM/COMMODITY only)._
 Cross-vault fusion by name / SKU match:
 - **JIVO source notes:** [[sku-FG0000291]]
 - **Ecom source notes:** [[jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml]]
-- **Category:** [[Category - OTHER]]
+- **Category:** [[Category - GIFT PACK]]
 - **TIER:** [[Tier - Other]]
 - **Platforms:** [[Platform - amazon]]
 

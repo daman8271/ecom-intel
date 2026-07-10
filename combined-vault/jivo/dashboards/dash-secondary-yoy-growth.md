@@ -53,16 +53,16 @@ Up: [[dashboards-index]]
      "value": 54160941.06669587
     },
     "2026": {
-     "actual": 122409.0,
+     "actual": 144561.9,
      "days_in_month": 31,
-     "elapsed_day": 6,
-     "growth_pct": -48.59,
+     "elapsed_day": 7,
+     "growth_pct": -39.28,
      "has_data": true,
-     "max_date": "2026-07-06",
-     "projection": 632446.5,
+     "max_date": "2026-07-07",
+     "projection": 640202.7,
      "source": "amazon_sec_range_master_view",
-     "units": 62249.0,
-     "value": 24647119.498380233
+     "units": 72803.0,
+     "value": 29146210.66509353
     }
    }
   },
@@ -93,15 +93,15 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 1424.7,
+     "actual": 1485.0,
      "days_in_month": 31,
-     "elapsed_day": 7,
+     "elapsed_day": 8,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-07-07",
-     "projection": 6309.39,
+     "max_date": "2026-07-08",
+     "projection": 5754.38,
      "source": "amazon_mp_master",
-     "units": 487.0,
+     "units": 528.0,
      "value": null
     }
    }
@@ -135,16 +135,16 @@ Up: [[dashboards-index]]
      "value": 39220036.0
     },
     "2026": {
-     "actual": 27919.0,
+     "actual": 30978.0,
      "days_in_month": 31,
-     "elapsed_day": 7,
-     "growth_pct": -54.29,
+     "elapsed_day": 8,
+     "growth_pct": -49.28,
      "has_data": true,
-     "max_date": "2026-07-07",
-     "projection": 123641.29,
+     "max_date": "2026-07-08",
+     "projection": 120039.75,
      "source": "SecMaster",
-     "units": 22104.0,
-     "value": 15337805.0
+     "units": 24577.0,
+     "value": 17210992.0
     }
    }
   },
@@ -175,16 +175,16 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 72230.75,
+     "actual": 82497.0,
      "days_in_month": 31,
-     "elapsed_day": 7,
+     "elapsed_day": 8,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-07-07",
-     "projection": 319879.04,
+     "max_date": "2026-07-08",
+     "projection": 319675.88,
      "source": "SecMaster",
-     "units": 57493.0,
-     "value": 30066826.0
+     "units": 65832.0,
+     "value": 34303812.0
     }
    }
   },
@@ -215,16 +215,16 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 27601.800027742982,
+     "actual": 31309.400031536818,
      "days_in_month": 31,
-     "elapsed_day": 7,
+     "elapsed_day": 8,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-07-07",
-     "projection": 122236.54,
+     "max_date": "2026-07-08",
+     "projection": 121323.93,
      "source": "SecMaster",
-     "units": 32555.0,
-     "value": 17255492.0
+     "units": 36951.0,
+     "value": 19560666.0
     }
    }
   },
@@ -253,19 +253,19 @@ Up: [[dashboards-index]]
      "projection": null,
      "source": "SecMaster",
      "units": 8763.0,
-     "value": 3164788.2
+     "value": 3164788.5
     },
     "2026": {
-     "actual": 4739.0,
+     "actual": 5158.0,
      "days_in_month": 31,
-     "elapsed_day": 7,
-     "growth_pct": -56.91,
+     "elapsed_day": 8,
+     "growth_pct": -53.1,
      "has_data": true,
-     "max_date": "2026-07-07",
-     "projection": 20987.0,
+     "max_date": "2026-07-08",
+     "projection": 19987.25,
      "source": "SecMaster",
-     "units": 3308.0,
-     "value": 1041303.0
+     "units": 3628.0,
+     "value": 1135937.5
     }
    }
   },
@@ -337,16 +337,16 @@ Up: [[dashboards-index]]
      "value": null
     },
     "2026": {
-     "actual": 6262.0,
+     "actual": 8250.0,
      "days_in_month": 31,
-     "elapsed_day": 5,
+     "elapsed_day": 7,
      "growth_pct": null,
      "has_data": true,
-     "max_date": "2026-07-05",
-     "projection": 38824.4,
+     "max_date": "2026-07-07",
+     "projection": 36535.71,
      "source": "flipkart_grocery_master",
-     "units": 5978.0,
-     "value": 992414.2857142857
+     "units": 7870.0,
+     "value": 1311460.9523809524
     }
    }
   }
@@ -366,10 +366,10 @@ Up: [[dashboards-index]]
    "projection": null
   },
   "2026": {
-   "actual": 283033.050027743,
-   "growth_pct": -16.26,
+   "actual": 324686.10003153683,
+   "growth_pct": -3.94,
    "has_data": true,
-   "projection": 1354874.27
+   "projection": 1354069.71
   }
  },
  "years": [

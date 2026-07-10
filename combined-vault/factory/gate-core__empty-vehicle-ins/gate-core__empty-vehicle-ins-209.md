@@ -66,7 +66,6 @@ tags:
 - **updated_at:** 2026-06-27T22:49:46.864544+05:30
 
 ## Related
-- arrival -> [[arr-94]]
 - company -> [[comp-2]]
 - driver -> [[drv-297]]
 - vehicle -> [[veh-336]]

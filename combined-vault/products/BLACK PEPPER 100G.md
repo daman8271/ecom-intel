@@ -29,19 +29,17 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000196` |
 | canonical_sku(s) | `jivo-black-pepper-whole-natural-peppercorns-premium-kali-mirch-perfect-for-cooking-baking-seasoning-no-artificial-colors-preservatives-or-taste-enhancers-pepper-100g-100ml`, `scmh2hmc2u7pqmnv` |
 | Category | [[Category - SPICES\|SPICES]] |
-| Sub-category | BLACK PEPPER |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 100G |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-10).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 145 | — | — | ⚪ OOS | BAU | 2026-07-09 |
-| [[Platform - flipkart\|flipkart]] | 145 | — | — | ⚪ OOS | BAU | 2026-07-09 |
+| [[Platform - amazon\|amazon]] | 135 | — | — | ⚪ OOS | SVD | 2026-07-10 |
+| [[Platform - flipkart\|flipkart]] | 135 | — | — | ⚪ OOS | SVD | 2026-07-10 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

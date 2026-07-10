@@ -29,17 +29,19 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000297` |
 | canonical_sku(s) | `edsh4yk7vc4zcnpu`, `jivo-raw-basil-seeds-for-weight-loss-sabja-seeds-tukmaria-seeds-high-in-fiber-omega3-nutrients-ideal-for-smoothies-drinks-and-baking-100-natural-vegan-glutenfree-800g-800ml` |
 | Category | [[Category - SEEDS\|SEEDS]] |
+| Sub-category | BASIL |
+| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 800 GM |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-10).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 349 | — | — | ⚪ OOS | BAU | 2026-07-09 |
-| [[Platform - flipkart\|flipkart]] | 349 | — | — | ⚪ OOS | BAU | 2026-07-09 |
+| [[Platform - amazon\|amazon]] | 329 | — | — | ⚪ OOS | SVD | 2026-07-10 |
+| [[Platform - flipkart\|flipkart]] | 329 | — | — | ⚪ OOS | SVD | 2026-07-10 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR69F6098"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR69F6098
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34807
-- **doc_num:** 706260406
-- **doc_date:** 2026-06-17
-- **doc_total:** 18427.00
+- **doc_entry:** 34924
+- **doc_num:** 706260476
+- **doc_date:** 2026-06-18
+- **doc_total:** 210425.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C UTTRAKHAND
-- **ship_to_address:** UTTARAKHAND-249204IN
-- **place_of_supply:** UK
-- **bp_gstin:** 
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
+- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR69F6098
+- **transporter_name:** Jivo Vehicle
+- **bilty_no:** NA
+- **bilty_date:** 2026-06-19
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, FG0000397 - CANOLA 5 + 1 LTR SET, SL0000005 - CANOLA 1 LTR, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000043 - COLD PRESS GROUNDNUT  1 LTR, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
-- **base_refs:** 1506264566
-- **total_quantity:** 66.000
-- **total_litres:** 65.200
+- **warehouses:** DL-FG
+- **item_summary:** FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
+- **base_refs:** 1706264603
+- **total_quantity:** 234.000
+- **total_litres:** 1170.000
 - **total_boxes:** 0.000
-- **total_weight:** 115.057
-- **line_count:** 6
+- **total_weight:** 1161.213
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 34807, "sap_invoice_doc_num": "706260406", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 428, "sap_invoice_doc_entry": 34924, "sap_invoice_doc_num": "706260476", "invoice_number": "706260476", "eway_bill": "731644170186", "invoice_weight": "1161.213", "invoice_amount": "210425.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "4680.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 53, "transporter_id": 31, "driver_id": null, "linked_vehicle_entry_id": 838, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-19T13:38:02.932319Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-19", "priority": "HIGH", "transporter_name": "Jivo", "transporter_gstin": "", "contact_person": "Vicky veer ji", "mobile_no": "0000000000", "vehicle_no": "HR69F6098", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "NA", "bilty_date": "2026-06-19", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-19_at_4_2U6icEK.52.13_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-19 at 4.52.13 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "20/06/2026 08:30 AM IST", "created_at": "2026-06-18T18:52:26.894191+05:30", "updated_at": "2026-06-19T19:08:02.949365+05:30"}
   ```

@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Documents (1330)
+title: Documents (1371)
 tags:
   - moc
   - source/factory
 ---
 
-# Documents — 1330 records (page 2/2)
+# Documents — 1371 records (page 2/2)
 
 From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 
@@ -18,9 +18,9 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1006]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1007]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1008]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1009]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1009]] — na
 - [[gate-core__sales-dispatch__documents-INVOICE-1010]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1011]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1011]] — RJ11GC6279
 - [[gate-core__sales-dispatch__documents-INVOICE-1012]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1013]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1014]] — Documents INVOICE
@@ -30,12 +30,12 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1018]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1019]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1020]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1021]] — DL01MB2623
+- [[gate-core__sales-dispatch__documents-INVOICE-1021]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1022]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1023]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1024]] — DL01MB2623
+- [[gate-core__sales-dispatch__documents-INVOICE-1024]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1025]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1026]] — DL01MB2623
+- [[gate-core__sales-dispatch__documents-INVOICE-1026]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1027]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1028]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1029]] — Documents INVOICE
@@ -48,37 +48,37 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1036]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1037]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1038]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1039]] — HR69F6098
+- [[gate-core__sales-dispatch__documents-INVOICE-1039]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1040]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1041]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1042]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1043]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1044]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1045]] — HR63G3533
+- [[gate-core__sales-dispatch__documents-INVOICE-1045]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1046]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1047]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1048]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1049]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1050]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1048]] — DL01LAC8007
+- [[gate-core__sales-dispatch__documents-INVOICE-1049]] — DL1MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1050]] — HR67C1036
 - [[gate-core__sales-dispatch__documents-INVOICE-1051]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1052]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1053]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1054]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1055]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1052]] — DL01MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1053]] — DL01MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1054]] — DL1MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1055]] — DL01LAR7060
 - [[gate-core__sales-dispatch__documents-INVOICE-1056]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1057]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1058]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1059]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1058]] — RJ11GC6279
+- [[gate-core__sales-dispatch__documents-INVOICE-1059]] — HR63G3533
 - [[gate-core__sales-dispatch__documents-INVOICE-1060]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1061]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1062]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1063]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1064]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1065]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1061]] — RJ11GC6279
+- [[gate-core__sales-dispatch__documents-INVOICE-1062]] — RJ11GC6279
+- [[gate-core__sales-dispatch__documents-INVOICE-1063]] — HR69F7125
+- [[gate-core__sales-dispatch__documents-INVOICE-1064]] — HR69F7125
+- [[gate-core__sales-dispatch__documents-INVOICE-1065]] — HR63G3533
 - [[gate-core__sales-dispatch__documents-INVOICE-1066]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1067]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1067]] — DL01MA1972
 - [[gate-core__sales-dispatch__documents-INVOICE-1068]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1069]] — HR69F6098
+- [[gate-core__sales-dispatch__documents-INVOICE-1069]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1070]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1071]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1072]] — Documents INVOICE
@@ -86,27 +86,27 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1074]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1075]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1076]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1077]] — HR69E4548
+- [[gate-core__sales-dispatch__documents-INVOICE-1077]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1078]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1079]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1080]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1081]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1082]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1083]] — HR55AX5946
-- [[gate-core__sales-dispatch__documents-INVOICE-1084]] — HR69F6098
+- [[gate-core__sales-dispatch__documents-INVOICE-1083]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1084]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1085]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1086]] — HR55AX5946
-- [[gate-core__sales-dispatch__documents-INVOICE-1087]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1086]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1087]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1088]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1089]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1090]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1091]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1092]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1092]] — DL01MB2623
 - [[gate-core__sales-dispatch__documents-INVOICE-1093]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1094]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1095]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1095]] — DL01MB2623
 - [[gate-core__sales-dispatch__documents-INVOICE-1096]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1097]] — HR69F9627
+- [[gate-core__sales-dispatch__documents-INVOICE-1097]] — DL01MB2623
 - [[gate-core__sales-dispatch__documents-INVOICE-1098]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1099]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1100]] — Documents INVOICE
@@ -119,20 +119,20 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1107]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1108]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1109]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1110]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1110]] — HR69F6098
 - [[gate-core__sales-dispatch__documents-INVOICE-1111]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1112]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1113]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1114]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1115]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1116]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1116]] — HR63G3533
 - [[gate-core__sales-dispatch__documents-INVOICE-1117]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1118]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1119]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1119]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1120]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1121]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1121]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1122]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1123]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1123]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1124]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1125]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1126]] — Documents INVOICE
@@ -149,25 +149,25 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1137]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1138]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1139]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1140]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1140]] — HR69F6098
 - [[gate-core__sales-dispatch__documents-INVOICE-1141]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1142]] — HR69F9627
+- [[gate-core__sales-dispatch__documents-INVOICE-1142]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1143]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1144]] — HR69F9627
+- [[gate-core__sales-dispatch__documents-INVOICE-1144]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1145]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1146]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1147]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1148]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1148]] — HR69E4548
 - [[gate-core__sales-dispatch__documents-INVOICE-1149]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1150]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1151]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1152]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1153]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1154]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1155]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1154]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1155]] — HR69F6098
 - [[gate-core__sales-dispatch__documents-INVOICE-1156]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1157]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1158]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1157]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1158]] — HR55AX5946
 - [[gate-core__sales-dispatch__documents-INVOICE-1159]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1160]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1161]] — Documents INVOICE
@@ -177,43 +177,43 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1165]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1166]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1167]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1168]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1169]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1170]] — HR69F7125
+- [[gate-core__sales-dispatch__documents-INVOICE-1168]] — HR69F9627
+- [[gate-core__sales-dispatch__documents-INVOICE-1169]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1170]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1171]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1172]] — DL1MA1972
-- [[gate-core__sales-dispatch__documents-INVOICE-1173]] — HR67C1036
-- [[gate-core__sales-dispatch__documents-INVOICE-1174]] — DL01MA1972
-- [[gate-core__sales-dispatch__documents-INVOICE-1175]] — DL01LAC8007
-- [[gate-core__sales-dispatch__documents-INVOICE-1176]] — HR69F7125
+- [[gate-core__sales-dispatch__documents-INVOICE-1172]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1173]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1174]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1175]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1176]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1177]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1178]] — HR67F8513
-- [[gate-core__sales-dispatch__documents-INVOICE-1179]] — DL01MA1972
-- [[gate-core__sales-dispatch__documents-INVOICE-1180]] — HR67F8513
+- [[gate-core__sales-dispatch__documents-INVOICE-1178]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1179]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1180]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1181]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1182]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1183]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1184]] — DL1MA1972
-- [[gate-core__sales-dispatch__documents-INVOICE-1185]] — HR67C4904
+- [[gate-core__sales-dispatch__documents-INVOICE-1184]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1185]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1186]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1187]] — HR67C4904
-- [[gate-core__sales-dispatch__documents-INVOICE-1188]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1189]] — DL01LAR7060
-- [[gate-core__sales-dispatch__documents-INVOICE-1190]] — HR69F7125
-- [[gate-core__sales-dispatch__documents-INVOICE-1191]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1192]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1193]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1194]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1187]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1188]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1189]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1190]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1191]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1192]] — HR55AX5946
+- [[gate-core__sales-dispatch__documents-INVOICE-1193]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1194]] — HR55AX5946
 - [[gate-core__sales-dispatch__documents-INVOICE-1195]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1196]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1197]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1198]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1199]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1200]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1201]] — GJ27TD9843
+- [[gate-core__sales-dispatch__documents-INVOICE-1201]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1202]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1203]] — DL01MB4563
-- [[gate-core__sales-dispatch__documents-INVOICE-1204]] — GJ27TD9843
+- [[gate-core__sales-dispatch__documents-INVOICE-1203]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1204]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1205]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1206]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1207]] — Documents INVOICE
@@ -222,9 +222,9 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1210]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1211]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1212]] — Documents INVOICE
-- [[gate-core__sales-dispatch__documents-INVOICE-1213]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1214]] — HR69E4548
-- [[gate-core__sales-dispatch__documents-INVOICE-1215]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1213]] — HR69F9627
+- [[gate-core__sales-dispatch__documents-INVOICE-1214]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1215]] — HR69F9627
 - [[gate-core__sales-dispatch__documents-INVOICE-1216]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1217]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1218]] — Documents INVOICE
@@ -240,6 +240,47 @@ From `/gate-core/sales-dispatch/documents/`. Up: [[_HOME]]
 - [[gate-core__sales-dispatch__documents-INVOICE-1228]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1229]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-INVOICE-1230]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1231]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1232]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1233]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1234]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1235]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1236]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1237]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1238]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1239]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1240]] — HR69E4548
+- [[gate-core__sales-dispatch__documents-INVOICE-1241]] — HR69F7125
+- [[gate-core__sales-dispatch__documents-INVOICE-1242]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1243]] — DL1MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1244]] — HR67C1036
+- [[gate-core__sales-dispatch__documents-INVOICE-1245]] — DL01MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1246]] — DL01LAC8007
+- [[gate-core__sales-dispatch__documents-INVOICE-1247]] — HR69F7125
+- [[gate-core__sales-dispatch__documents-INVOICE-1248]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1249]] — HR67F8513
+- [[gate-core__sales-dispatch__documents-INVOICE-1250]] — DL01MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1251]] — HR67F8513
+- [[gate-core__sales-dispatch__documents-INVOICE-1252]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1253]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1254]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1255]] — DL1MA1972
+- [[gate-core__sales-dispatch__documents-INVOICE-1256]] — HR67C4904
+- [[gate-core__sales-dispatch__documents-INVOICE-1257]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1258]] — HR67C4904
+- [[gate-core__sales-dispatch__documents-INVOICE-1259]] — HR69E4548
+- [[gate-core__sales-dispatch__documents-INVOICE-1260]] — DL01LAR7060
+- [[gate-core__sales-dispatch__documents-INVOICE-1261]] — HR69F7125
+- [[gate-core__sales-dispatch__documents-INVOICE-1262]] — HR69E4548
+- [[gate-core__sales-dispatch__documents-INVOICE-1263]] — HR69E4548
+- [[gate-core__sales-dispatch__documents-INVOICE-1264]] — HR69E4548
+- [[gate-core__sales-dispatch__documents-INVOICE-1265]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1266]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1267]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1268]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1269]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1270]] — Documents INVOICE
+- [[gate-core__sales-dispatch__documents-INVOICE-1271]] — Documents INVOICE
 - [[gate-core__sales-dispatch__documents-STOCK_TRANSFER]] — Documents STOCK_TRANSFER
 - [[gate-core__sales-dispatch__documents-STOCK_TRANSFER-2]] — Documents STOCK_TRANSFER
 - [[gate-core__sales-dispatch__documents-STOCK_TRANSFER-3]] — Documents STOCK_TRANSFER

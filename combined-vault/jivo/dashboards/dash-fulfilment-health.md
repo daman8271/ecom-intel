@@ -19,82 +19,82 @@ Up: [[dashboards-index]]
 {
  "by_platform": [
   {
-   "fill_rate": 37.3,
+   "fill_rate": 37.0,
    "filled_ltrs": 19296.0,
    "format": "CITY MALL",
    "miss_rate": 3.8,
    "missed_ltrs": 1972.0,
-   "ordered_ltrs": 51756.0,
-   "po_count": 5,
+   "ordered_ltrs": 52216.0,
+   "po_count": 6,
    "slug": "citymall"
   },
   {
-   "fill_rate": 45.5,
-   "filled_ltrs": 171067.75,
+   "fill_rate": 44.3,
+   "filled_ltrs": 154932.75,
    "format": "SWIGGY",
-   "miss_rate": 18.9,
-   "missed_ltrs": 70940.25,
-   "ordered_ltrs": 375893.0,
-   "po_count": 543,
+   "miss_rate": 17.4,
+   "missed_ltrs": 60777.25,
+   "ordered_ltrs": 349595.0,
+   "po_count": 493,
    "slug": "swiggy"
   },
   {
-   "fill_rate": 53.8,
-   "filled_ltrs": 247317.5,
+   "fill_rate": 50.9,
+   "filled_ltrs": 247413.5,
    "format": "AMAZON",
-   "miss_rate": 4.3,
-   "missed_ltrs": 19751.5,
-   "ordered_ltrs": 459951.36,
-   "po_count": 130,
+   "miss_rate": 4.0,
+   "missed_ltrs": 19561.5,
+   "ordered_ltrs": 485803.8,
+   "po_count": 135,
    "slug": "amazon"
   },
   {
-   "fill_rate": 70.2,
-   "filled_ltrs": 9080.0,
+   "fill_rate": 62.7,
+   "filled_ltrs": 9600.0,
    "format": "BLINKIT",
-   "miss_rate": 14.0,
-   "missed_ltrs": 1814.0,
-   "ordered_ltrs": 12926.0,
-   "po_count": 100,
+   "miss_rate": 18.2,
+   "missed_ltrs": 2790.0,
+   "ordered_ltrs": 15314.0,
+   "po_count": 112,
    "slug": "blinkit"
   },
   {
    "fill_rate": 70.9,
-   "filled_ltrs": 33546.0,
+   "filled_ltrs": 33530.0,
    "format": "ZOMATO",
    "miss_rate": 9.9,
    "missed_ltrs": 4696.0,
-   "ordered_ltrs": 47332.0,
-   "po_count": 41,
+   "ordered_ltrs": 47316.0,
+   "po_count": 40,
    "slug": "zomato"
   },
   {
-   "fill_rate": 74.0,
-   "filled_ltrs": 82068.8,
-   "format": "ZEPTO",
-   "miss_rate": 9.8,
-   "missed_ltrs": 10810.2,
-   "ordered_ltrs": 110839.8,
-   "po_count": 160,
-   "slug": "zepto"
-  },
-  {
-   "fill_rate": 81.2,
-   "filled_ltrs": 18368.0,
+   "fill_rate": 76.0,
+   "filled_ltrs": 18144.0,
    "format": "BIG BASKET",
-   "miss_rate": 6.0,
-   "missed_ltrs": 1367.0,
-   "ordered_ltrs": 22616.0,
-   "po_count": 37,
+   "miss_rate": 5.8,
+   "missed_ltrs": 1375.0,
+   "ordered_ltrs": 23888.0,
+   "po_count": 36,
    "slug": "bigbasket"
   },
   {
-   "fill_rate": 85.1,
-   "filled_ltrs": 20738.0,
+   "fill_rate": 77.2,
+   "filled_ltrs": 87383.2,
+   "format": "ZEPTO",
+   "miss_rate": 10.7,
+   "missed_ltrs": 12107.4,
+   "ordered_ltrs": 113149.8,
+   "po_count": 163,
+   "slug": "zepto"
+  },
+  {
+   "fill_rate": 78.7,
+   "filled_ltrs": 19791.0,
    "format": "FLIPKART GROCERY",
-   "miss_rate": 5.7,
-   "missed_ltrs": 1398.0,
-   "ordered_ltrs": 24376.0,
+   "miss_rate": 5.6,
+   "missed_ltrs": 1397.0,
+   "ordered_ltrs": 25148.0,
    "po_count": 36,
    "slug": "flipkart_grocery"
   }
@@ -102,17 +102,17 @@ Up: [[dashboards-index]]
  "errors": [],
  "platform": null,
  "total": {
-  "fill_rate": 54.4,
-  "filled_ltrs": 601482.05,
-  "miss_rate": 10.2,
-  "missed_ltrs": 112748.95,
-  "ordered_ltrs": 1105690.16,
-  "po_count": 1052
+  "fill_rate": 53.0,
+  "filled_ltrs": 590090.45,
+  "miss_rate": 9.4,
+  "missed_ltrs": 104676.15,
+  "ordered_ltrs": 1112430.6,
+  "po_count": 1021
  },
  "window": {
-  "end": "2026-07-02",
+  "end": "2026-07-03",
   "lag_days": 7,
-  "start": "2026-06-02",
+  "start": "2026-06-03",
   "window_days": 30
  }
 }

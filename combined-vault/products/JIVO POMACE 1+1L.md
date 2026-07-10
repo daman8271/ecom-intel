@@ -31,18 +31,21 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000320` |
 | canonical_sku(s) | `edogyzhgusaddg9b`, `jivo-pomace-olive-oil-1l-for-cooking-recommendable-for-roasting-dressings-salad-and-soups-dips-marinades-healthy-oil-for-daily-use-baking-all-type-of-cuisines-2l`, `jivo-pomace-olive-oil-combo-2l`, `edogterwcwcgywch`, `edohyrrpj3h7nhhn`, `qwrgemqj8tqrhasy`, `jivo-daily-cooking-pomace-olive-oil-1-litre-rich-in-mufa-low-in-saturated-fat-2l` |
 | Category | [[Category - OLIVE\|OLIVE]] |
+| Sub-category | JIVO POMACE |
+| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 1+1L |
+| Per-unit | 6.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-10).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 869 | 758 | -12.77 | 🟢 BELOW | BAU | 2026-07-09 |
-| [[Platform - flipkart\|flipkart]] | 869 | 650 | -25.2 | 🟢 BELOW | BAU | 2026-07-09 |
-| [[Platform - zepto\|zepto]] | 869 | 758 | -12.77 | 🟢 BELOW | BAU | 2026-07-09 |
+| [[Platform - amazon\|amazon]] | 849 | 758 | -10.72 | 🟢 BELOW | SVD | 2026-07-10 |
+| [[Platform - flipkart\|flipkart]] | 849 | 777 | -8.48 | 🟢 BELOW | SVD | 2026-07-10 |
+| [[Platform - zepto\|zepto]] | 849 | 758 | -10.72 | 🟢 BELOW | SVD | 2026-07-10 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

@@ -28,10 +28,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 96.6,
+   "delta_pct": 96.7,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 46672.0,
+   "ltrs": 46693.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 23742.0
   },
@@ -41,7 +41,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
    "delta_pct": 114.6,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 39331.0,
+   "ltrs": 39329.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 18328.0
   },
@@ -53,7 +53,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
    "is_new": false,
    "ltrs": 36110.0,
    "name": "SUNFLOWER 5L",
-   "prev_ltrs": 44815.0
+   "prev_ltrs": 44805.0
   },
   {
    "brand": null,
@@ -68,10 +68,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -27.7,
+   "delta_pct": -27.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 29695.0,
+   "ltrs": 29755.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 41095.0
   },
@@ -81,7 +81,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
    "delta_pct": 5.1,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 27411.0,
+   "ltrs": 27404.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 26080.0
   },
@@ -121,7 +121,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
    "delta_pct": -68.2,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 8400.0,
+   "ltrs": 8410.0,
    "name": "RICE BRAN 5L",
    "prev_ltrs": 26415.0
   }

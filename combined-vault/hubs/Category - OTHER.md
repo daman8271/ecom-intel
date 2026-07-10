@@ -11,14 +11,11 @@ tags:
 
 Up: [[Home]]
 
-**6 matched products** · dominant tier [[Tier - Other\|Other]]
+**3 matched products** · dominant tier [[Tier - Other\|Other]]
 
 ## Member products
-- [[BLUEBERRY 200ML]] — Other · 200ML
-- [[DRY FRUITS 200G]] — Other · 200G
 - [[ENERGY DRINK 200ML]] — Other · 200ML
 - [[JUMP ENERGY DRINK 200ML]] — Other · 200ML
-- [[ROSE FLAVOR 200ML]] — Other · 200ML
 - [[SANO CLASSIC 1L]] — Other · 1L
 
 ## 2026 aggregate (tier-level proxy)

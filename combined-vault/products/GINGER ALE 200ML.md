@@ -27,18 +27,16 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000238` |
 | canonical_sku(s) | `jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml` |
 | Category | [[Category - DRINKS\|DRINKS]] |
-| Sub-category | GINGER ALE SF |
-| Brand | JIVO |
 | TIER | [[Tier - Other\|Other]] *(name-token derived)* |
 | Pack(s) | 200ML |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-10).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 49 | — | — | ⚪ OOS | BAU | 2026-07-09 |
+| [[Platform - amazon\|amazon]] | 39 | — | — | ⚪ OOS | SVD | 2026-07-10 |
 
 ## JIVO lens
 *TIER-LEVEL (Other) 2026 sell-through from target-history — shared across all Other products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

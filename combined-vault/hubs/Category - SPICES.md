@@ -11,7 +11,7 @@ tags:
 
 Up: [[Home]]
 
-**9 matched products** · dominant tier [[Tier - Other\|Other]]
+**8 matched products** · dominant tier [[Tier - Other\|Other]]
 
 ## Member products
 - [[BLACK CARDAMOM 100G]] — Other · 100G
@@ -20,7 +20,6 @@ Up: [[Home]]
 - [[CINNAMON BARK 100G]] — Other · 100G
 - [[CLOVE 100G]] — Other · 100G
 - [[GREEN CARDAMOM 100G]] — Other · 100G
-- [[JEERA JUICE]] — Other · —
 - [[ROSEMARY LEAVES 150G]] — Other · 150G
 - [[SAFFRON 1GMS]] — Other · 1GMS
 

@@ -9,7 +9,7 @@ tags:
 Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with ecom competitor price intelligence (canonical listings) via the SKU bridge.
 
 - **Matched products:** 151  ([[#Products]])
-- **Category hubs:** 18
+- **Category hubs:** 19
 - **Platform hubs:** 10
 - **Tier hubs:** 3 (Premium / Commodity / Other)
 - **Source vaults:** `jivo/` (app data) · `ecom/` (price intel)
@@ -35,20 +35,21 @@ Cross-vault fusion layer linking JIVO app data (sell-through, SAP SKUs) with eco
 - [[Category - BLENDED]] — 5 products
 - [[Category - CANOLA]] — 17 products
 - [[Category - COCONUT]] — 3 products
-- [[Category - DRINKS]] — 23 products
+- [[Category - DRINKS]] — 26 products
 - [[Category - GHEE]] — 4 products
+- [[Category - GIFT PACK]] — 1 products
 - [[Category - GROUNDNUT]] — 3 products
 - [[Category - HONEY]] — 2 products
 - [[Category - MUSTARD]] — 11 products
 - [[Category - OLIVE]] — 27 products
-- [[Category - OTHER]] — 6 products
+- [[Category - OTHER]] — 3 products
 - [[Category - RICE]] — 1 products
 - [[Category - RICE BRAN]] — 4 products
 - [[Category - SEEDS]] — 19 products
 - [[Category - SESAME OIL]] — 2 products
 - [[Category - SLICED OLIVE]] — 1 products
 - [[Category - SOYABEAN]] — 6 products
-- [[Category - SPICES]] — 9 products
+- [[Category - SPICES]] — 8 products
 - [[Category - SUNFLOWER]] — 8 products
 
 ## Products
@@ -224,7 +225,7 @@ JIVO SKUs the bridge could **not** map to an ecom listing (9 total) — no produ
 - [[SESSION-MEMORY]] — JIVO vault session / handoff memory
 
 ## Factory pillar — Jivo Mart (JIVO_MART)
-The 4th data pillar: a lossless capture of the `ji.jivo.in` factory app for **Jivo Mart** — gate, vehicles, quality control, GRPO, barcode traceability, dispatch, and SAP item master (72,714 notes). Bridged to products above by SAP item code (FG####) — see each product's **Factory lens**.
+The 4th data pillar: a lossless capture of the `ji.jivo.in` factory app for **Jivo Mart** — gate, vehicles, quality control, GRPO, barcode traceability, dispatch, and SAP item master (77,348 notes). Bridged to products above by SAP item code (FG####) — see each product's **Factory lens**.
 
 - [[factory/_HOME|Factory — Home (Jivo Mart)]]
 

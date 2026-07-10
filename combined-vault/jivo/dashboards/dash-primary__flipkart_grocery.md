@@ -764,6 +764,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
     "pending_qty": 0.0,
     "pending_value": 0.0,
     "period": "2026-07-09"
+   },
+   {
+    "done_ltrs": 0.0,
+    "done_qty": 0.0,
+    "done_value": 0.0,
+    "label": "10 Jul",
+    "order_ltrs": 0.0,
+    "order_qty": 0.0,
+    "order_value": 0.0,
+    "pending_ltrs": 0.0,
+    "pending_qty": 0.0,
+    "pending_value": 0.0,
+    "period": "2026-07-10"
    }
   ],
   "month": [],

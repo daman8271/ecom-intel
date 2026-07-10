@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,3.0,SWIGGY,,2026-07-04,77913,1289.9985,NAGPUR,3.0,2026-06-26,2026-07-05,NARPO17206,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77913,2026-07-09
-185.71,192.0,SWIGGY,,2026-07-04,77914,194.9955,NAGPUR,240.0,2026-06-26,2026-07-05,NARPO17206,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77914,2026-07-09
-771.43,0.0,SWIGGY,,2026-07-04,77915,810.0015,NAGPUR,32.0,2026-06-26,2026-07-05,NARPO17206,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77915,2026-07-09
+1228.57,3.0,SWIGGY,,2026-07-04,77913,1289.9985,NAGPUR,3.0,2026-06-26,2026-07-05,NARPO17206,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77913,2026-07-10
+185.71,192.0,SWIGGY,,2026-07-04,77914,194.9955,NAGPUR,240.0,2026-06-26,2026-07-05,NARPO17206,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77914,2026-07-10
+771.43,0.0,SWIGGY,,2026-07-04,77915,810.0015,NAGPUR,32.0,2026-06-26,2026-07-05,NARPO17206,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-30,total_po_zbs:77915,2026-07-10
 ```
 
 ---

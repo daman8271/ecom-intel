@@ -19,9 +19,9 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
 ```json
 {
  "activeTrucks": 0,
- "inventory": 726,
+ "inventory": 724,
  "openPOs": 0,
- "sells": 57493
+ "sells": 65832
 }
 ```
 

@@ -16,8 +16,8 @@ tags:
 
 ## Fields
 - **document_type:** STOCK_TRANSFER
-- **doc_entry:** 3224
-- **doc_num:** 726674527
+- **doc_entry:** 3231
+- **doc_num:** 726674531
 - **doc_date:** 2026-07-04
 - **doc_total:** None
 - **branch_id:** 1
@@ -34,15 +34,15 @@ tags:
 - **bilty_no:** 
 - **bilty_date:** None
 - **from_warehouse:** DL-INT
-- **to_warehouse:** DL-MP
+- **to_warehouse:** DL-FG
 - **warehouses:** 
 - **item_summary:** 
 - **base_refs:** 
-- **total_quantity:** 4755.000
+- **total_quantity:** 120.000
 - **total_litres:** None
 - **total_boxes:** None
 - **total_weight:** None
-- **line_count:** 9
+- **line_count:** 1
 - **items:**
   ```json
   []

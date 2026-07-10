@@ -23,43 +23,43 @@ Up: [[dashboards-index]] · [[2026-07]]
  "cities": [
   {
    "city": "Delhi",
-   "value": 20950.0
+   "value": 24111.0
   },
   {
    "city": "Bengaluru",
-   "value": 19456.0
+   "value": 22145.0
   },
   {
    "city": "Hyderabad",
-   "value": 15679.0
+   "value": 18105.0
   },
   {
    "city": "Mumbai",
-   "value": 14781.0
+   "value": 16749.0
   },
   {
    "city": "Gurugram",
-   "value": 7394.0
+   "value": 8403.0
   },
   {
    "city": "Chennai",
-   "value": 7340.0
+   "value": 8128.0
   },
   {
    "city": "Kolkata",
-   "value": 4185.0
+   "value": 4797.0
   },
   {
    "city": "Noida",
-   "value": 3877.0
+   "value": 4482.0
   },
   {
    "city": "Chandigarh",
-   "value": 3432.0
+   "value": 3951.0
   },
   {
    "city": "Pune",
-   "value": 3331.0
+   "value": 3725.0
   }
  ],
  "errors": [],
@@ -3051,343 +3051,351 @@ Up: [[dashboards-index]] · [[2026-07]]
    }
   ]
  },
- "mapped_units": 175501.0,
- "mapped_value": 175501.0,
+ "mapped_units": 201168.0,
+ "mapped_value": 201168.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
  "mode": "single",
  "month": 7,
- "pct_mapped": 98.8,
+ "pct_mapped": 98.7,
  "platform": null,
  "states": [
   {
    "by_platform": {
-    "AMAZON": 5956.0,
-    "BIG BASKET": 327.0,
-    "BLINKIT": 1707.0,
-    "SWIGGY": 7956.0,
-    "ZEPTO": 6358.0
+    "AMAZON": 6858.0,
+    "BIG BASKET": 341.0,
+    "BLINKIT": 1892.0,
+    "SWIGGY": 9049.0,
+    "ZEPTO": 7127.0
    },
    "state": "MAHARASHTRA",
-   "units": 22304.0,
-   "value": 22304.0
+   "units": 25267.0,
+   "value": 25267.0
   },
   {
    "by_platform": {
-    "AMAZON": 4815.0,
-    "BIG BASKET": 217.0,
-    "BLINKIT": 901.0,
-    "SWIGGY": 9225.0,
-    "ZEPTO": 6535.0
+    "AMAZON": 5549.0,
+    "BIG BASKET": 237.0,
+    "BLINKIT": 1014.0,
+    "SWIGGY": 10466.0,
+    "ZEPTO": 7416.0
    },
    "state": "KARNATAKA",
-   "units": 21693.0,
-   "value": 21693.0
+   "units": 24682.0,
+   "value": 24682.0
   },
   {
    "by_platform": {
-    "AMAZON": 6754.0,
-    "BLINKIT": 2867.0,
-    "SWIGGY": 6917.0,
-    "ZEPTO": 4573.0
+    "AMAZON": 7738.0,
+    "BLINKIT": 3282.0,
+    "SWIGGY": 7975.0,
+    "ZEPTO": 5312.0
    },
    "state": "DELHI",
-   "units": 21111.0,
-   "value": 21111.0
+   "units": 24307.0,
+   "value": 24307.0
   },
   {
    "by_platform": {
-    "AMAZON": 4590.0,
-    "BIG BASKET": 568.0,
-    "SWIGGY": 6972.0,
-    "ZEPTO": 5029.0
+    "AMAZON": 5569.0,
+    "BIG BASKET": 700.0,
+    "SWIGGY": 7901.0,
+    "ZEPTO": 5708.0
    },
    "state": "TELANGANA",
-   "units": 17159.0,
-   "value": 17159.0
+   "units": 19878.0,
+   "value": 19878.0
   },
   {
    "by_platform": {
-    "AMAZON": 7180.0,
-    "BIG BASKET": 480.0,
-    "BLINKIT": 1198.0,
-    "SWIGGY": 2575.0,
-    "ZEPTO": 2786.0
+    "AMAZON": 8301.0,
+    "BIG BASKET": 541.0,
+    "BLINKIT": 1369.0,
+    "SWIGGY": 2995.0,
+    "ZEPTO": 3189.0
    },
    "state": "UTTAR PRADESH",
-   "units": 14219.0,
-   "value": 14219.0
+   "units": 16395.0,
+   "value": 16395.0
   },
   {
    "by_platform": {
-    "AMAZON": 2120.0,
-    "BLINKIT": 8557.0,
-    "SWIGGY": 1800.0,
-    "ZEPTO": 529.0
+    "AMAZON": 2520.0,
+    "BLINKIT": 9413.0,
+    "SWIGGY": 2218.0,
+    "ZEPTO": 607.0
    },
    "state": "PUNJAB",
-   "units": 13006.0,
-   "value": 13006.0
+   "units": 14758.0,
+   "value": 14758.0
   },
   {
    "by_platform": {
-    "AMAZON": 4309.0,
-    "BIG BASKET": 1097.0,
-    "BLINKIT": 2574.0,
-    "SWIGGY": 2503.0,
-    "ZEPTO": 2285.0
+    "AMAZON": 4881.0,
+    "BIG BASKET": 1141.0,
+    "BLINKIT": 2909.0,
+    "SWIGGY": 2939.0,
+    "ZEPTO": 2640.0
    },
    "state": "HARYANA",
-   "units": 12768.0,
-   "value": 12768.0
+   "units": 14510.0,
+   "value": 14510.0
   },
   {
    "by_platform": {
-    "AMAZON": 1702.0,
+    "AMAZON": 1978.0,
     "BIG BASKET": 1.0,
-    "SWIGGY": 5371.0,
-    "ZEPTO": 2980.0
+    "SWIGGY": 5936.0,
+    "ZEPTO": 3257.0
    },
    "state": "TAMIL NADU",
-   "units": 10054.0,
-   "value": 10054.0
+   "units": 11172.0,
+   "value": 11172.0
   },
   {
    "by_platform": {
-    "AMAZON": 6090.0,
-    "BIG BASKET": 80.0,
-    "BLINKIT": 82.0,
-    "SWIGGY": 2596.0,
-    "ZEPTO": 160.0
+    "AMAZON": 7355.0,
+    "BIG BASKET": 87.0,
+    "BLINKIT": 86.0,
+    "SWIGGY": 2997.0,
+    "ZEPTO": 173.0
    },
    "state": "WEST BENGAL",
-   "units": 9008.0,
-   "value": 9008.0
+   "units": 10698.0,
+   "value": 10698.0
   },
   {
    "by_platform": {
-    "AMAZON": 167.0,
-    "BIG BASKET": 420.0,
-    "BLINKIT": 1836.0,
-    "SWIGGY": 1866.0,
-    "ZEPTO": 86.0
+    "AMAZON": 192.0,
+    "BIG BASKET": 454.0,
+    "BLINKIT": 2002.0,
+    "SWIGGY": 2236.0,
+    "ZEPTO": 98.0
    },
    "state": "CHANDIGARH",
-   "units": 4375.0,
-   "value": 4375.0
+   "units": 4982.0,
+   "value": 4982.0
   },
   {
    "by_platform": {
-    "AMAZON": 1846.0,
-    "BIG BASKET": 70.0,
+    "AMAZON": 2172.0,
+    "BIG BASKET": 72.0,
     "BLINKIT": 10.0,
-    "SWIGGY": 1856.0,
-    "ZEPTO": 192.0
+    "SWIGGY": 2078.0,
+    "ZEPTO": 218.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 3974.0,
-   "value": 3974.0
+   "units": 4550.0,
+   "value": 4550.0
   },
   {
    "by_platform": {
-    "AMAZON": 1203.0,
-    "BLINKIT": 94.0,
-    "SWIGGY": 1721.0,
-    "ZEPTO": 208.0
+    "AMAZON": 1467.0,
+    "BLINKIT": 112.0,
+    "SWIGGY": 2040.0,
+    "ZEPTO": 244.0
    },
    "state": "RAJASTHAN",
-   "units": 3226.0,
-   "value": 3226.0
+   "units": 3863.0,
+   "value": 3863.0
   },
   {
    "by_platform": {
-    "AMAZON": 2204.0,
-    "BIG BASKET": 2.0,
-    "SWIGGY": 438.0
-   },
-   "state": "BIHAR",
-   "units": 2644.0,
-   "value": 2644.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 1147.0,
-    "BLINKIT": 4.0,
-    "SWIGGY": 1040.0,
-    "ZEPTO": 447.0
+    "AMAZON": 1385.0,
+    "BLINKIT": 5.0,
+    "SWIGGY": 1152.0,
+    "ZEPTO": 518.0
    },
    "state": "GUJARAT",
-   "units": 2638.0,
-   "value": 2638.0
+   "units": 3060.0,
+   "value": 3060.0
   },
   {
    "by_platform": {
-    "AMAZON": 1880.0,
-    "BIG BASKET": 4.0,
-    "SWIGGY": 638.0
+    "AMAZON": 2527.0,
+    "BIG BASKET": 2.0,
+    "SWIGGY": 496.0
+   },
+   "state": "BIHAR",
+   "units": 3025.0,
+   "value": 3025.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 2221.0,
+    "BIG BASKET": 6.0,
+    "SWIGGY": 714.0
    },
    "state": "ODISHA",
-   "units": 2522.0,
-   "value": 2522.0
+   "units": 2941.0,
+   "value": 2941.0
   },
   {
    "by_platform": {
-    "AMAZON": 1593.0,
+    "AMAZON": 1904.0,
     "BLINKIT": 9.0,
-    "SWIGGY": 761.0,
-    "ZEPTO": 115.0
+    "SWIGGY": 847.0,
+    "ZEPTO": 124.0
    },
    "state": "MADHYA PRADESH",
-   "units": 2478.0,
-   "value": 2478.0
+   "units": 2884.0,
+   "value": 2884.0
   },
   {
    "by_platform": {
-    "AMAZON": 622.0,
+    "AMAZON": 702.0,
     "BIG BASKET": 2.0,
-    "SWIGGY": 1511.0,
-    "ZEPTO": 79.0
+    "SWIGGY": 1710.0,
+    "ZEPTO": 96.0
    },
    "state": "KERALA",
-   "units": 2214.0,
-   "value": 2214.0
+   "units": 2510.0,
+   "value": 2510.0
   },
   {
    "by_platform": {
-    "AMAZON": 1390.0,
-    "BIG BASKET": 5.0,
-    "SWIGGY": 420.0
-   },
-   "state": "JHARKHAND",
-   "units": 1815.0,
-   "value": 1815.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 601.0,
-    "BIG BASKET": 23.0,
-    "BLINKIT": 334.0,
-    "SWIGGY": 687.0,
-    "ZEPTO": 164.0
+    "AMAZON": 692.0,
+    "BIG BASKET": 26.0,
+    "BLINKIT": 370.0,
+    "SWIGGY": 850.0,
+    "ZEPTO": 192.0
    },
    "state": "UTTARAKHAND",
-   "units": 1809.0,
-   "value": 1809.0
+   "units": 2130.0,
+   "value": 2130.0
   },
   {
    "by_platform": {
-    "AMAZON": 496.0,
-    "BLINKIT": 847.0
+    "AMAZON": 1625.0,
+    "BIG BASKET": 6.0,
+    "SWIGGY": 488.0
+   },
+   "state": "JHARKHAND",
+   "units": 2119.0,
+   "value": 2119.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 563.0,
+    "BLINKIT": 913.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 1343.0,
-   "value": 1343.0
+   "units": 1476.0,
+   "value": 1476.0
   },
   {
    "by_platform": {
-    "AMAZON": 248.0,
-    "BLINKIT": 1022.0
+    "AMAZON": 284.0,
+    "BLINKIT": 1123.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 1270.0,
-   "value": 1270.0
+   "units": 1407.0,
+   "value": 1407.0
   },
   {
    "by_platform": {
-    "AMAZON": 1136.0,
+    "AMAZON": 1293.0,
     "BIG BASKET": 7.0,
     "SWIGGY": 6.0
    },
    "state": "ASSAM",
-   "units": 1149.0,
-   "value": 1149.0
+   "units": 1306.0,
+   "value": 1306.0
   },
   {
    "by_platform": {
-    "AMAZON": 251.0,
-    "BLINKIT": 53.0,
-    "SWIGGY": 499.0
+    "AMAZON": 296.0,
+    "BLINKIT": 57.0,
+    "SWIGGY": 582.0
    },
    "state": "GOA",
-   "units": 803.0,
-   "value": 803.0
+   "units": 935.0,
+   "value": 935.0
   },
   {
    "by_platform": {
-    "AMAZON": 529.0,
+    "AMAZON": 666.0,
     "BIG BASKET": 5.0,
-    "BLINKIT": 1.0,
-    "SWIGGY": 135.0
+    "BLINKIT": 2.0,
+    "SWIGGY": 157.0
    },
    "state": "CHHATTISGARH",
-   "units": 670.0,
-   "value": 670.0
+   "units": 830.0,
+   "value": 830.0
   },
   {
    "by_platform": {
-    "AMAZON": 573.0
+    "AMAZON": 648.0
    },
    "state": "MIZORAM",
-   "units": 573.0,
-   "value": 573.0
+   "units": 648.0,
+   "value": 648.0
   },
   {
    "by_platform": {
-    "AMAZON": 202.0
+    "AMAZON": 275.0
    },
    "state": "TRIPURA",
-   "units": 202.0,
-   "value": 202.0
+   "units": 275.0,
+   "value": 275.0
   },
   {
    "by_platform": {
-    "AMAZON": 139.0
+    "AMAZON": 165.0
    },
    "state": "MEGHALAYA",
-   "units": 139.0,
-   "value": 139.0
+   "units": 165.0,
+   "value": 165.0
   },
   {
    "by_platform": {
-    "AMAZON": 129.0
+    "AMAZON": 154.0
    },
    "state": "NAGALAND",
-   "units": 129.0,
-   "value": 129.0
+   "units": 154.0,
+   "value": 154.0
   },
   {
    "by_platform": {
-    "AMAZON": 58.0,
-    "ZEPTO": 29.0
+    "AMAZON": 71.0,
+    "ZEPTO": 32.0
    },
    "state": "PUDUCHERRY",
-   "units": 87.0,
-   "value": 87.0
+   "units": 103.0,
+   "value": 103.0
   },
   {
    "by_platform": {
-    "AMAZON": 49.0
+    "AMAZON": 61.0
    },
    "state": "SIKKIM",
-   "units": 49.0,
-   "value": 49.0
+   "units": 61.0,
+   "value": 61.0
   },
   {
    "by_platform": {
-    "AMAZON": 47.0
+    "AMAZON": 50.0
    },
    "state": "ARUNACHAL PRADESH",
-   "units": 47.0,
-   "value": 47.0
+   "units": 50.0,
+   "value": 50.0
   },
   {
    "by_platform": {
-    "AMAZON": 16.0
+    "AMAZON": 19.0
    },
    "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
-   "units": 16.0,
-   "value": 16.0
+   "units": 19.0,
+   "value": 19.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 4.0
+   },
+   "state": "ANDAMAN AND NICOBAR ISLANDS",
+   "units": 4.0,
+   "value": 4.0
   },
   {
    "by_platform": {
@@ -3396,19 +3404,11 @@ Up: [[dashboards-index]] · [[2026-07]]
    "state": "MANIPUR",
    "units": 4.0,
    "value": 4.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 3.0
-   },
-   "state": "ANDAMAN AND NICOBAR ISLANDS",
-   "units": 3.0,
-   "value": 3.0
   }
  ],
  "sub_categories": [],
- "total_units": 177709.0,
- "total_value": 177709.0,
+ "total_units": 203791.0,
+ "total_value": 203791.0,
  "year": 2026
 }
 ```

@@ -14,7 +14,7 @@ Up: [[Home]]
 - **Retired/merged JIDs (kept, never reused):** 0
 - **Highest serial minted:** JID-0151
 - **Identity conflicts to review:** 14
-- **Generated:** 2026-07-09T06:12:16.356410+00:00
+- **Generated:** 2026-07-10T05:12:14.528239+00:00
 
 ## Registry — JID ↔ product ↔ external keys
 | JID | Product (our canonical) | SAP code(s) — app/factory | Ecom canonical listing(s) | Category | Tier |
@@ -96,12 +96,12 @@ Up: [[Home]]
 | `JID-0075` | [[SO OLIVE 5L]] | `FG0000229` | `jivo-so-olive-oil-5-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-5l`, `edoh5hehthkwthyy` | BLENDED | PREMIUM |
 | `JID-0076` | [[RICE BRAN 5L]] | `FG0000230` | `jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-5l`, `edoh3yz46gfvhepb`, `jivo-rice-bran-oil-5-litre-5l` | RICE BRAN | COMMODITY |
 | `JID-0077` | [[SODA LEMON 750ML]] | `FG0000231` | `jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml`, `fizzy-water-flavoured-with-lemon-750ml` | DRINKS | OTHER |
-| `JID-0078` | [[BLUEBERRY 200ML]] | `FG0000232` | `blueberry-healthy-wheatgrass-juice-200ml`, `jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml` | OTHER | OTHER |
-| `JID-0079` | [[ROSE FLAVOR 200ML]] | `FG0000234` | `jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml`, `rose-healthy-wheatgrass-juice-200ml` | OTHER | OTHER |
+| `JID-0078` | [[BLUEBERRY 200ML]] | `FG0000232` | `blueberry-healthy-wheatgrass-juice-200ml`, `jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml` | DRINKS | OTHER |
+| `JID-0079` | [[ROSE FLAVOR 200ML]] | `FG0000234` | `jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml`, `rose-healthy-wheatgrass-juice-200ml` | DRINKS | OTHER |
 | `JID-0080` | [[WG MANGO JUICE 200ML]] | `FG0000236`, `FG0000262` | `mango-healthy-wheatgrass-juice-200ml`, `jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml` | DRINKS | OTHER |
 | `JID-0081` | [[GINGER ALE 200ML]] | `FG0000238` | `jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml` | DRINKS | OTHER |
 | `JID-0082` | [[WG MOJITO 200ML]] | `FG0000244` | `mojito-healthy-wheatgrass-juice-200ml`, `jivo-healthy-wheatgrass-juice-with-mojito-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml`, `dajh7vuw7j7dzn7q` | DRINKS | OTHER |
-| `JID-0083` | [[JEERA JUICE]] | `FG0000245` | `jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml` | SPICES | OTHER |
+| `JID-0083` | [[JEERA JUICE]] | `FG0000245` | `jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml` | DRINKS | OTHER |
 | `JID-0084` | [[WG MOJITO SF 200ML]] | `FG0000250` | `mojito-healthy-wheatgrass-juice-sugar-free-200ml`, `jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200ml-200ml` | DRINKS | OTHER |
 | `JID-0085` | [[TONIC WATER 200ML]] | `FG0000252`, `FG0000264` | `indian-tonic-water-200ml`, `jivo-indian-citric-tonic-water-premium-gt-mixer-low-calorie-flavoured-drink-100-natural-ingredients-200ml` | DRINKS | OTHER |
 | `JID-0086` | [[WG APPLE JUICE 200ML]] | `FG0000258`, `FG0000251` | `apple-healthy-wheatgrass-juice-200ml`, `dajh7wyzhzayakgn`, `jivo-healthy-wheatgrass-juice-with-apple-boosts-immunity-detox-200ml-200ml` | DRINKS | OTHER |
@@ -117,7 +117,7 @@ Up: [[Home]]
 | `JID-0096` | [[SODA 750ML]] | `FG0000282` | `jivo-extra-fizzy-soda-750-ml-soda-750ml` | DRINKS | OTHER |
 | `JID-0097` | [[BLACK OLIVE 470G]] | `FG0000288` | `jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml` | SLICED OLIVE | PREMIUM |
 | `JID-0098` | [[FLAX SEEDS 400 GM]] | `FG0000290` | `jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml`, `edsh5avfzrhq43rz` | SEEDS | OTHER |
-| `JID-0099` | [[DRY FRUITS 200G]] | `FG0000291` | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` | OTHER | OTHER |
+| `JID-0099` | [[DRY FRUITS 200G]] | `FG0000291` | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` | GIFT PACK | OTHER |
 | `JID-0100` | [[PUNJABI JEERA 160ML]] | `FG0000293` | `jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml` | DRINKS | OTHER |
 | `JID-0101` | [[BASIL SEEDS 400G]] | `FG0000296` | `jivo-raw-basil-seeds-for-weight-loss-400gm-sabja-seed-takmuria-seeds-400g-high-fibre-and-omega-3-400ml` | SEEDS | OTHER |
 | `JID-0102` | [[BASIL SEEDS 800 GM]] | `FG0000297` | `edsh4yk7vc4zcnpu`, `jivo-raw-basil-seeds-for-weight-loss-sabja-seeds-tukmaria-seeds-high-in-fiber-omega3-nutrients-ideal-for-smoothies-drinks-and-baking-100-natural-vegan-glutenfree-800g-800ml` | SEEDS | OTHER |

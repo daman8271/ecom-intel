@@ -51,7 +51,7 @@ tags:
 Weight: 8757.354 kg
 - **pipeline_status:**
   ```json
-  {"stage": "READY_TO_DOCK", "stage_label": "Ready to Dock", "stage_at": "2026-07-03T09:14:18.904788Z", "counts": {"total": 2, "rejected": 0}, "module": "dock", "module_status": "pending", "module_label": "pending at dock"}
+  {"stage": "DOCKED", "stage_label": "Docked", "stage_at": "2026-07-09T09:02:20.084744Z", "counts": {"total": 2, "rejected": 0}, "module": "dock", "module_status": "docked", "module_label": "docked at dock"}
   ```
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 

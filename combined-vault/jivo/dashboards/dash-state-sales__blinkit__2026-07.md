@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "cities": [
   {
    "city": "Delhi",
-   "value": 2867.0
+   "value": 3282.0
   },
   {
    "city": "Chandigarh",
-   "value": 1480.0
+   "value": 1617.0
   },
   {
    "city": "Mumbai",
-   "value": 1452.0
+   "value": 1609.0
   },
   {
    "city": "Amritsar",
-   "value": 1207.0
+   "value": 1340.0
   },
   {
    "city": "Ludhiana",
-   "value": 1131.0
+   "value": 1231.0
   },
   {
    "city": "Gurugram",
-   "value": 1065.0
+   "value": 1218.0
   },
   {
    "city": "Mohali",
-   "value": 1045.0
+   "value": 1170.0
   },
   {
    "city": "Jammu",
-   "value": 1022.0
+   "value": 1123.0
   },
   {
    "city": "Jalandhar",
-   "value": 972.0
+   "value": 1070.0
   },
   {
    "city": "Ghaziabad",
-   "value": 929.0
+   "value": 1057.0
   }
  ],
  "errors": [],
@@ -3052,8 +3052,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    }
   ]
  },
- "mapped_units": 22096.0,
- "mapped_value": 22096.0,
+ "mapped_units": 24568.0,
+ "mapped_value": 24568.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,107 +3064,107 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "states": [
   {
    "by_platform": {
-    "BLINKIT": 8557.0
+    "BLINKIT": 9413.0
    },
    "state": "PUNJAB",
-   "units": 8557.0,
-   "value": 8557.0
+   "units": 9413.0,
+   "value": 9413.0
   },
   {
    "by_platform": {
-    "BLINKIT": 2867.0
+    "BLINKIT": 3282.0
    },
    "state": "DELHI",
-   "units": 2867.0,
-   "value": 2867.0
+   "units": 3282.0,
+   "value": 3282.0
   },
   {
    "by_platform": {
-    "BLINKIT": 2574.0
+    "BLINKIT": 2909.0
    },
    "state": "HARYANA",
-   "units": 2574.0,
-   "value": 2574.0
+   "units": 2909.0,
+   "value": 2909.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1836.0
+    "BLINKIT": 2002.0
    },
    "state": "CHANDIGARH",
-   "units": 1836.0,
-   "value": 1836.0
+   "units": 2002.0,
+   "value": 2002.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1707.0
+    "BLINKIT": 1892.0
    },
    "state": "MAHARASHTRA",
-   "units": 1707.0,
-   "value": 1707.0
+   "units": 1892.0,
+   "value": 1892.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1198.0
+    "BLINKIT": 1369.0
    },
    "state": "UTTAR PRADESH",
-   "units": 1198.0,
-   "value": 1198.0
+   "units": 1369.0,
+   "value": 1369.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1022.0
+    "BLINKIT": 1123.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 1022.0,
-   "value": 1022.0
+   "units": 1123.0,
+   "value": 1123.0
   },
   {
    "by_platform": {
-    "BLINKIT": 901.0
+    "BLINKIT": 1014.0
    },
    "state": "KARNATAKA",
-   "units": 901.0,
-   "value": 901.0
+   "units": 1014.0,
+   "value": 1014.0
   },
   {
    "by_platform": {
-    "BLINKIT": 847.0
+    "BLINKIT": 913.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 847.0,
-   "value": 847.0
+   "units": 913.0,
+   "value": 913.0
   },
   {
    "by_platform": {
-    "BLINKIT": 334.0
+    "BLINKIT": 370.0
    },
    "state": "UTTARAKHAND",
-   "units": 334.0,
-   "value": 334.0
+   "units": 370.0,
+   "value": 370.0
   },
   {
    "by_platform": {
-    "BLINKIT": 94.0
+    "BLINKIT": 112.0
    },
    "state": "RAJASTHAN",
-   "units": 94.0,
-   "value": 94.0
+   "units": 112.0,
+   "value": 112.0
   },
   {
    "by_platform": {
-    "BLINKIT": 82.0
+    "BLINKIT": 86.0
    },
    "state": "WEST BENGAL",
-   "units": 82.0,
-   "value": 82.0
+   "units": 86.0,
+   "value": 86.0
   },
   {
    "by_platform": {
-    "BLINKIT": 53.0
+    "BLINKIT": 57.0
    },
    "state": "GOA",
-   "units": 53.0,
-   "value": 53.0
+   "units": 57.0,
+   "value": 57.0
   },
   {
    "by_platform": {
@@ -3184,24 +3184,24 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
   },
   {
    "by_platform": {
-    "BLINKIT": 4.0
+    "BLINKIT": 5.0
    },
    "state": "GUJARAT",
-   "units": 4.0,
-   "value": 4.0
+   "units": 5.0,
+   "value": 5.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1.0
+    "BLINKIT": 2.0
    },
    "state": "CHHATTISGARH",
-   "units": 1.0,
-   "value": 1.0
+   "units": 2.0,
+   "value": 2.0
   }
  ],
  "sub_categories": [],
- "total_units": 22104.0,
- "total_value": 22104.0,
+ "total_units": 24577.0,
+ "total_value": 24577.0,
  "year": 2026
 }
 ```

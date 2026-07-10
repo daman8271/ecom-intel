@@ -22,7 +22,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 70982.0,
+    "ltrs": 70972.0,
     "name": "SUNFLOWER"
    },
    {
@@ -44,7 +44,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
   ],
   "sub_categories": [
    {
-    "ltrs": 70982.0,
+    "ltrs": 70972.0,
     "name": "SUNFLOWER"
    },
    {
@@ -64,7 +64,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SOYABEAN"
    }
   ],
-  "total_ltrs": 201824.0
+  "total_ltrs": 201814.0
  },
  "errors": [],
  "month": 5,

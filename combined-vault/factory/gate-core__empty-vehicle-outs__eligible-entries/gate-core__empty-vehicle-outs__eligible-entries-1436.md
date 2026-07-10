@@ -28,7 +28,7 @@ tags:
 - **driver_mobile:** 6006814214
 - **remarks:** 
 - **release_invoice_count:** 2
-- **release_cancels_docking:** False
+- **release_cancels_docking:** True
 
 ## Related
 - driver_id -> [[drv-327]]

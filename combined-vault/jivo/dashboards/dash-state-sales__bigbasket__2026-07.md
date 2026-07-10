@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "cities": [
   {
    "city": "Gurugram",
-   "value": 1097.0
+   "value": 1141.0
   },
   {
    "city": "Hyderabad",
-   "value": 540.0
+   "value": 667.0
   },
   {
    "city": "Chandigarh Tricity",
-   "value": 420.0
+   "value": 454.0
   },
   {
    "city": "Noida",
-   "value": 285.0
+   "value": 314.0
   },
   {
    "city": "Pune",
-   "value": 243.0
+   "value": 249.0
   },
   {
    "city": "Bengaluru",
-   "value": 201.0
+   "value": 216.0
   },
   {
    "city": "Lucknow-Kanpur",
-   "value": 85.0
+   "value": 102.0
   },
   {
    "city": "Kolkata",
-   "value": 79.0
+   "value": 86.0
   },
   {
    "city": "Mumbai",
-   "value": 61.0
+   "value": 65.0
   },
   {
    "city": "Noida Rural",
-   "value": 44.0
+   "value": 49.0
   }
  ],
  "errors": [],
@@ -3052,8 +3052,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    }
   ]
  },
- "mapped_units": 3308.0,
- "mapped_value": 3308.0,
+ "mapped_units": 3628.0,
+ "mapped_value": 3628.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,75 +3064,75 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "states": [
   {
    "by_platform": {
-    "BIG BASKET": 1097.0
+    "BIG BASKET": 1141.0
    },
    "state": "HARYANA",
-   "units": 1097.0,
-   "value": 1097.0
+   "units": 1141.0,
+   "value": 1141.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 568.0
+    "BIG BASKET": 700.0
    },
    "state": "TELANGANA",
-   "units": 568.0,
-   "value": 568.0
+   "units": 700.0,
+   "value": 700.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 480.0
+    "BIG BASKET": 541.0
    },
    "state": "UTTAR PRADESH",
-   "units": 480.0,
-   "value": 480.0
+   "units": 541.0,
+   "value": 541.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 420.0
+    "BIG BASKET": 454.0
    },
    "state": "CHANDIGARH",
-   "units": 420.0,
-   "value": 420.0
+   "units": 454.0,
+   "value": 454.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 327.0
+    "BIG BASKET": 341.0
    },
    "state": "MAHARASHTRA",
-   "units": 327.0,
-   "value": 327.0
+   "units": 341.0,
+   "value": 341.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 217.0
+    "BIG BASKET": 237.0
    },
    "state": "KARNATAKA",
-   "units": 217.0,
-   "value": 217.0
+   "units": 237.0,
+   "value": 237.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 80.0
+    "BIG BASKET": 87.0
    },
    "state": "WEST BENGAL",
-   "units": 80.0,
-   "value": 80.0
+   "units": 87.0,
+   "value": 87.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 70.0
+    "BIG BASKET": 72.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 70.0,
-   "value": 70.0
+   "units": 72.0,
+   "value": 72.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 23.0
+    "BIG BASKET": 26.0
    },
    "state": "UTTARAKHAND",
-   "units": 23.0,
-   "value": 23.0
+   "units": 26.0,
+   "value": 26.0
   },
   {
    "by_platform": {
@@ -3144,27 +3144,27 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   },
   {
    "by_platform": {
+    "BIG BASKET": 6.0
+   },
+   "state": "JHARKHAND",
+   "units": 6.0,
+   "value": 6.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 6.0
+   },
+   "state": "ODISHA",
+   "units": 6.0,
+   "value": 6.0
+  },
+  {
+   "by_platform": {
     "BIG BASKET": 5.0
    },
    "state": "CHHATTISGARH",
    "units": 5.0,
    "value": 5.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 5.0
-   },
-   "state": "JHARKHAND",
-   "units": 5.0,
-   "value": 5.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 4.0
-   },
-   "state": "ODISHA",
-   "units": 4.0,
-   "value": 4.0
   },
   {
    "by_platform": {
@@ -3192,8 +3192,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   }
  ],
  "sub_categories": [],
- "total_units": 3308.0,
- "total_value": 3308.0,
+ "total_units": 3628.0,
+ "total_value": 3628.0,
  "year": 2026
 }
 ```

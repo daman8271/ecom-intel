@@ -32,7 +32,7 @@ Up: [[dashboards-index]] · [[2026-07]]
    "is_new": false,
    "ltrs": 29539.0,
    "name": "MUSTARD 1L",
-   "prev_ltrs": 121058.0
+   "prev_ltrs": 121079.0
   },
   {
    "brand": null,
@@ -42,7 +42,7 @@ Up: [[dashboards-index]] · [[2026-07]]
    "is_new": false,
    "ltrs": 24871.0,
    "name": "GROUNDNUT 1L",
-   "prev_ltrs": 120145.0
+   "prev_ltrs": 120143.0
   },
   {
    "brand": null,
@@ -67,12 +67,12 @@ Up: [[dashboards-index]] · [[2026-07]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -83.7,
+   "delta_pct": -83.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 12056.0,
+   "ltrs": 12128.0,
    "name": "SUNFLOWER 1L",
-   "prev_ltrs": 73896.0
+   "prev_ltrs": 73889.0
   },
   {
    "brand": null,
@@ -112,17 +112,17 @@ Up: [[dashboards-index]] · [[2026-07]]
    "is_new": false,
    "ltrs": 2940.0,
    "name": "MUSTARD 5L",
-   "prev_ltrs": 37455.0
+   "prev_ltrs": 37515.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -86.8,
+   "delta_pct": -74.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 2208.0,
-   "name": "EXTRA LIGHT 1L",
-   "prev_ltrs": 16711.0
+   "ltrs": 2865.6,
+   "name": "GROUNDNUT 200ML",
+   "prev_ltrs": 11308.2
   }
  ],
  "source": "primary",
@@ -139,12 +139,12 @@ Up: [[dashboards-index]] · [[2026-07]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 196.0,
-  "head": "COMMODITY",
+  "delta_pct": 268.0,
+  "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 888.0,
-  "name": "MUSTARD POUCH 1L",
-  "prev_ltrs": 300.0
+  "ltrs": 147.2,
+  "name": "EXTRA VIRGIN 200ML",
+  "prev_ltrs": 40.0
  },
  "year": 2026
 }

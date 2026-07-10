@@ -46,27 +46,27 @@ Up: [[dashboards-index]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 449550.0,
+   "commodity_ltrs": 449540.0,
    "label": "May '26",
    "month": 5,
    "premium_ltrs": 489964.65,
-   "total_ltrs": 939514.65,
+   "total_ltrs": 939504.65,
    "year": 2026
   },
   {
-   "commodity_ltrs": 339511.0,
+   "commodity_ltrs": 339603.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 362199.7,
-   "total_ltrs": 701710.7,
+   "premium_ltrs": 362200.7,
+   "total_ltrs": 701803.7,
    "year": 2026
   },
   {
-   "commodity_ltrs": 66908.0,
+   "commodity_ltrs": 66980.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 60800.15,
-   "total_ltrs": 127708.15,
+   "premium_ltrs": 62618.55,
+   "total_ltrs": 129598.55,
    "year": 2026
   }
  ],

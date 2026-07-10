@@ -30,7 +30,7 @@ Up: [[dashboards-index]] · [[2026-06]]
    "delta_pct": 8.5,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 121058.0,
+   "ltrs": 121079.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 111558.0
   },
@@ -40,7 +40,7 @@ Up: [[dashboards-index]] · [[2026-06]]
    "delta_pct": 1.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 120145.0,
+   "ltrs": 120143.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 118991.0
   },
@@ -50,19 +50,19 @@ Up: [[dashboards-index]] · [[2026-06]]
    "delta_pct": 7.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 73896.0,
+   "ltrs": 73889.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 69064.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -22.6,
+   "delta_pct": -22.5,
    "head": "COMMODITY",
    "is_new": false,
    "ltrs": 52765.0,
    "name": "SUNFLOWER 5L",
-   "prev_ltrs": 68130.0
+   "prev_ltrs": 68120.0
   },
   {
    "brand": null,
@@ -77,10 +77,10 @@ Up: [[dashboards-index]] · [[2026-06]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -46.9,
+   "delta_pct": -46.8,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 37455.0,
+   "ltrs": 37515.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 70515.0
   },

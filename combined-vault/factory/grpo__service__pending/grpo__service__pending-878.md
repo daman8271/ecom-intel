@@ -32,5 +32,5 @@ tags:
 - **freight:** None
 - **total_freight:** None
 - **created_at:** 2026-07-03T14:22:27.727052+05:30
-- **updated_at:** 2026-07-03T14:44:18.910881+05:30
+- **updated_at:** 2026-07-09T14:32:20.100259+05:30
 - **invoice_count:** 1

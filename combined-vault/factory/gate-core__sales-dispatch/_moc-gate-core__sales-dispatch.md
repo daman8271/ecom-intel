@@ -1,15 +1,19 @@
 ---
 type: moc
-title: Sales Dispatch (65)
+title: Sales Dispatch (69)
 tags:
   - moc
   - source/factory
 ---
 
-# Sales Dispatch — 65 records
+# Sales Dispatch — 69 records
 
 From `/gate-core/sales-dispatch/`. Up: [[_HOME]]
 
+- [[gate-core__sales-dispatch-409]] — RJ11GD2843
+- [[gate-core__sales-dispatch-408]] — RJ11GD2869
+- [[gate-core__sales-dispatch-404]] — HR67C4904
+- [[gate-core__sales-dispatch-401]] — DL01MB2623
 - [[gate-core__sales-dispatch-392]] — HR67D9270
 - [[gate-core__sales-dispatch-391]] — HR55AZ4229
 - [[gate-core__sales-dispatch-383]] — DL01MA6176

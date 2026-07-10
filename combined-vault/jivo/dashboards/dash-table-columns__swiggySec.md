@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "lalbagh",
-  "BASE_MRP": 225.0,
+  "AREA_NAME": "budh bazar",
+  "BASE_MRP": 255.0,
   "BRAND": "jivo",
-  "CITY": "Mangaluru",
+  "CITY": "Moradabad",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
   "COMBO_UNITS_SOLD": null,
-  "GMV": 450.0,
-  "ITEM_CODE": "429981",
+  "GMV": 255.0,
+  "ITEM_CODE": "60711",
   "L1_CATEGORY": "edible oils and ghee",
   "L2_CATEGORY": "edible oils",
-  "L3_CATEGORY": "sunflower oil",
-  "ORDERED_DATE": "2025-11-01",
-  "PRODUCT_NAME": "jivo gold refined oil - blend of rice bran oil & sunflower oil",
-  "STORE_ID": "1398444",
-  "UNITS_SOLD": 2,
+  "L3_CATEGORY": "mustard oil",
+  "ORDERED_DATE": "2026-04-24",
+  "PRODUCT_NAME": "jivo cold press kachi ghani mustard oil",
+  "STORE_ID": "1401290",
+  "UNITS_SOLD": 1,
   "VARIANT": "1 ltr",
-  "id": 348017
+  "id": 1303442
  }
 }
 ```

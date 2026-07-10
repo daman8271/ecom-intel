@@ -21,7 +21,7 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
  "activeTrucks": 0,
  "inventory": 323,
  "openPOs": 0,
- "sells": 22104
+ "sells": 24577
 }
 ```
 

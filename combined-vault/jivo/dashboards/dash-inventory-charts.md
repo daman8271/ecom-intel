@@ -20,83 +20,83 @@ Up: [[dashboards-index]]
  "city_distribution": [
   {
    "city": "Hyderabad",
-   "qty": 33095
+   "qty": 31825
   },
   {
    "city": "Bengaluru",
-   "qty": 24122
-  },
-  {
-   "city": "Chennai",
-   "qty": 13718
+   "qty": 25267
   },
   {
    "city": "Gurugram",
-   "qty": 12835
+   "qty": 12118
+  },
+  {
+   "city": "Chennai",
+   "qty": 11869
   },
   {
    "city": "Mumbai",
-   "qty": 11761
+   "qty": 10385
   },
   {
    "city": "Delhi",
-   "qty": 8286
+   "qty": 7786
   },
   {
    "city": "Noida",
-   "qty": 5902
+   "qty": 5389
   },
   {
    "city": "Kolkata",
-   "qty": 5064
-  },
-  {
-   "city": "Chandigarh",
-   "qty": 4739
+   "qty": 5003
   },
   {
    "city": "Kochi",
-   "qty": 3809
+   "qty": 3734
+  },
+  {
+   "city": "Chandigarh",
+   "qty": 3365
   },
   {
    "city": "Ahmedabad",
-   "qty": 3493
-  },
-  {
-   "city": "Faridabad",
-   "qty": 3338
-  },
-  {
-   "city": "Coimbatore",
-   "qty": 3188
+   "qty": 3300
   },
   {
    "city": "Pune",
-   "qty": 3139
+   "qty": 2903
+  },
+  {
+   "city": "Faridabad",
+   "qty": 2887
+  },
+  {
+   "city": "Coimbatore",
+   "qty": 2693
   },
   {
    "city": "Jhajjar",
-   "qty": 2192
+   "qty": 2334
   }
  ],
  "platform_totals": [
   {
    "color": "#ff9900",
    "platform": "amazon",
-   "sku_count": 146,
-   "total_qty": 159641
+   "sku_count": 117,
+   "total_qty": 97558
   },
   {
    "color": "#7b2ff7",
    "platform": "zepto",
-   "sku_count": 445,
-   "total_qty": 76243
+   "sku_count": 449,
+   "total_qty": 73087
   },
   {
    "color": "#fc8019",
    "platform": "swiggy",
-   "sku_count": 726,
-   "total_qty": 68317
+   "sku_count": 724,
+   "total_qty": 62742
   },
   {
    "color": "#f5c518",
@@ -107,8 +107,8 @@ Up: [[dashboards-index]]
   {
    "color": "#84c225",
    "platform": "bigbasket",
-   "sku_count": 347,
-   "total_qty": 11060
+   "sku_count": 346,
+   "total_qty": 10874
   },
   {
    "color": "#0078ad",
@@ -122,55 +122,43 @@ Up: [[dashboards-index]]
    "color": "#7b2ff7",
    "platform": "zepto",
    "product": "Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil 200.0 MILLILITRE",
-   "qty": 36674
-  },
-  {
-   "color": "#ff9900",
-   "platform": "amazon",
-   "product": "Jivo Groundnut Oil 1 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vi",
-   "qty": 29510
-  },
-  {
-   "color": "#ff9900",
-   "platform": "amazon",
-   "product": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre |",
-   "qty": 28564
+   "qty": 33998
   },
   {
    "color": "#fc8019",
    "platform": "swiggy",
    "product": "Jivo Cold Pressed oil Groundnut Oil 1.0 ltr",
-   "qty": 25473
+   "qty": 24082
+  },
+  {
+   "color": "#ff9900",
+   "platform": "amazon",
+   "product": "Jivo Groundnut Oil 1 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Vi",
+   "qty": 13057
+  },
+  {
+   "color": "#ff9900",
+   "platform": "amazon",
+   "product": "JIVO Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre |",
+   "qty": 12422
   },
   {
    "color": "#fc8019",
    "platform": "swiggy",
    "product": "Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr",
-   "qty": 13564
-  },
-  {
-   "color": "#ff9900",
-   "platform": "amazon",
-   "product": "Jivo Rice Bran Oil 1 Litre Cooking Oil | Rich in Antioxidants | Ideal for Deep F",
-   "qty": 12742
+   "qty": 11644
   },
   {
    "color": "#7b2ff7",
    "platform": "zepto",
    "product": "Jivo Groundnut (Peanut) Cold Pressed Oil | Healthy Cooking Oil 1.0 LITER",
-   "qty": 11221
+   "qty": 11424
   },
   {
    "color": "#7b2ff7",
    "platform": "zepto",
    "product": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil 1.0 LIT",
-   "qty": 7906
-  },
-  {
-   "color": "#ff9900",
-   "platform": "amazon",
-   "product": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre | Chemical-Free Oil for Cook",
-   "qty": 7126
+   "qty": 7844
   },
   {
    "color": "#f5c518",
@@ -182,19 +170,13 @@ Up: [[dashboards-index]]
    "color": "#ff9900",
    "platform": "amazon",
    "product": "Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres | Chemical-Free Oil for Coo",
-   "qty": 6506
+   "qty": 5989
   },
   {
-   "color": "#fc8019",
-   "platform": "swiggy",
-   "product": "Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr",
-   "qty": 6069
-  },
-  {
-   "color": "#fc8019",
-   "platform": "swiggy",
-   "product": "Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr",
-   "qty": 5872
+   "color": "#ff9900",
+   "platform": "amazon",
+   "product": "Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre | Chemical-Free Oil for Cook",
+   "qty": 5828
   },
   {
    "color": "#f5c518",
@@ -203,10 +185,28 @@ Up: [[dashboards-index]]
    "qty": 5701
   },
   {
+   "color": "#ff9900",
+   "platform": "amazon",
+   "product": "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre | Contains Omega-3 (A",
+   "qty": 5695
+  },
+  {
+   "color": "#fc8019",
+   "platform": "swiggy",
+   "product": "Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil 1.0 ltr",
+   "qty": 5455
+  },
+  {
    "color": "#7b2ff7",
    "platform": "zepto",
    "product": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil 1.0 LITER",
-   "qty": 5456
+   "qty": 5200
+  },
+  {
+   "color": "#fc8019",
+   "platform": "swiggy",
+   "product": "Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr",
+   "qty": 5067
   }
  ]
 }

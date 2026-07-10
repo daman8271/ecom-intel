@@ -38,16 +38,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-09).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-10).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 529 | 439 | -17.01 | 🟢 BELOW | BAU | 2026-07-09 |
-| [[Platform - amazon\|amazon-fresh]] | 529 | 439 | -17.01 | 🟢 BELOW | BAU | 2026-07-09 |
-| [[Platform - amazon\|amazon-now]] | 529 | 439 | -17.01 | 🟢 BELOW | BAU | 2026-07-09 |
-| [[Platform - flipkart\|flipkart]] | 529 | 482 | -8.88 | 🟢 BELOW | BAU | 2026-07-09 |
-| [[Platform - flipkart\|flipkart-minutes]] | 529 | 600 | 13.42 | 🔴 ABOVE | BAU | 2026-07-08 |
-| [[Platform - zepto\|zepto]] | 529 | 485 | -8.32 | 🟢 BELOW | BAU | 2026-07-09 |
+| [[Platform - amazon\|amazon]] | 509 | 469 | -7.86 | 🟢 BELOW | SVD | 2026-07-10 |
+| [[Platform - amazon\|amazon-fresh]] | 509 | 469 | -7.86 | 🟢 BELOW | SVD | 2026-07-10 |
+| [[Platform - amazon\|amazon-now]] | 509 | 469 | -7.86 | 🟢 BELOW | SVD | 2026-07-10 |
+| [[Platform - flipkart\|flipkart]] | 509 | 518 | 1.77 | 🔴 ABOVE | SVD | 2026-07-10 |
+| [[Platform - flipkart\|flipkart-minutes]] | 509 | 600 | 17.88 | 🔴 ABOVE | SVD | 2026-07-10 |
+| [[Platform - zepto\|zepto]] | 509 | 500 | -1.77 | 🟢 BELOW | SVD | 2026-07-10 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -80,7 +80,6 @@ Cross-vault fusion by name / SKU match:
 - **1 oitm:** [[oitm-FG0000088]]
 - **258 boxes:** [[box-116477]] · [[box-116478]] · [[box-116479]] … +255 more (tag `bridge/FG0000088`)
 - **7 pallets:** [[pal-1884]] · [[pal-2396]] · [[pal-2398]] … +4 more (tag `bridge/FG0000088`)
-- **5 boxes:** [[barcode__dispatch__reports__boxes-167169]] · [[barcode__dispatch__reports__boxes-167170]] · [[barcode__dispatch__reports__boxes-167171]] … +2 more (tag `bridge/FG0000088`)
 
 **`FG0000123`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000123]]
