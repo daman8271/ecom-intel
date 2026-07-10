@@ -257,6 +257,12 @@ with open(TARGET_F) as fh:
 def ecom_note_exists(canon):
     return os.path.exists(os.path.join(ECOM_DIR, "skus", canon + ".md"))
 
+# same guard for JIVO sku notes: the app can delist a SKU (e.g. FG0000075/FG0000162 on
+# 2026-07-08), removing jivo/skus/sku-<SAP>.md while the sku-bridge still carries the SAP.
+# A dead [[sku-...]] wikilink fails verify_databank and aborts the whole daily fusion.
+def jivo_sku_note_exists(sap):
+    return os.path.exists(os.path.join(JIVO_DIR, "skus", f"sku-{sap}.md"))
+
 # cache ecom note frontmatter platforms for new_confirmed canonicals
 def ecom_note_platforms(canon):
     p = os.path.join(ECOM_DIR, "skus", canon + ".md")
@@ -503,7 +509,8 @@ for name, m in PRODUCT_MODEL.items():
     # Connections (cross-vault fusion)
     L.append("## Connections")
     L.append("Cross-vault fusion by name / SKU match:")
-    jivo_links = [f"[[sku-{s}]]" for s in m["saps"]]
+    jivo_links = [f"[[sku-{s}]]" if jivo_sku_note_exists(s) else f"`sku-{s}` *(delisted from app)*"
+                  for s in m["saps"]]
     ecom_links = [f"[[{c}]]" for c in m["ecom_notes"]]
     L.append(f"- **JIVO source notes:** {' · '.join(jivo_links) if jivo_links else '_(none found)_'}")
     L.append(f"- **Ecom source notes:** {' · '.join(ecom_links) if ecom_links else '_(none found)_'}")
@@ -674,14 +681,16 @@ L.append("")
 L.append(f"**No ecom match ({len(no_ecom)}):**")
 for nm in sorted(no_ecom):
     saps = name2saps.get(nm, [])
-    cell = " · ".join(f"[[sku-{s}|{nm}]]" for s in saps) if saps else nm
+    cell = " · ".join(f"[[sku-{s}|{nm}]]" if jivo_sku_note_exists(s) else f"{nm} (`sku-{s}` delisted)"
+                      for s in saps) if saps else nm
     L.append(f"- {cell}")
 L.append("")
 L.append(f"**Needs review ({len(needs_help)}):**")
 for item in needs_help:
     nm = item.get("jivo", "")
     saps = name2saps.get(nm, [])
-    cell = " · ".join(f"[[sku-{s}|{nm}]]" for s in saps) if saps else nm
+    cell = " · ".join(f"[[sku-{s}|{nm}]]" if jivo_sku_note_exists(s) else f"{nm} (`sku-{s}` delisted)"
+                      for s in saps) if saps else nm
     reason = str(item.get("reason", "")).replace("[[", "").replace("]]", "")
     L.append(f"- {cell} — _{item.get('conf', '')} confidence_: {reason}")
 L.append("")
