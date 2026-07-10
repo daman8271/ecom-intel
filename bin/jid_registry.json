@@ -1179,7 +1179,7 @@
         "blueberry-healthy-wheatgrass-juice-200ml",
         "jivo-healthy-wheatgrass-juice-with-blue-berry-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml"
       ],
-      "category": "OTHER",
+      "category": "DRINKS",
       "name": "BLUEBERRY 200ML",
       "norm": "BLUEBERRY200ML",
       "saps": [
@@ -1193,7 +1193,7 @@
         "jivo-healthy-wheatgrass-juice-with-rose-flavor-body-detox-immunity-booster-natural-ingredients-200ml-200ml",
         "rose-healthy-wheatgrass-juice-200ml"
       ],
-      "category": "OTHER",
+      "category": "DRINKS",
       "name": "ROSE FLAVOR 200ML",
       "norm": "ROSEFLAVOR200ML",
       "saps": [
@@ -1249,7 +1249,7 @@
       "canons": [
         "jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml"
       ],
-      "category": "SPICES",
+      "category": "DRINKS",
       "name": "JEERA JUICE",
       "norm": "JEERAJUICE",
       "saps": [
@@ -1474,7 +1474,7 @@
       "canons": [
         "jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml"
       ],
-      "category": "OTHER",
+      "category": "GIFT PACK",
       "name": "DRY FRUITS 200G",
       "norm": "DRYFRUITS200G",
       "saps": [
@@ -2198,5 +2198,5 @@
   },
   "next_serial": 152,
   "prefix": "JID-",
-  "updated_at": "2026-07-09T06:12:16.339926+00:00"
+  "updated_at": "2026-07-10T05:12:14.510367+00:00"
 }
