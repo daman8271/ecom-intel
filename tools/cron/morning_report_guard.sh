@@ -179,9 +179,14 @@ if [ "$BLK_OK" != "1" ]; then
 ↳ Blinkit needs the Mac (residential auth). If the Mac is down it can't be recovered on the VPS — power the Mac on."
 fi
 
+QUIET_OK="${GUARD_QUIET_OK:-0}"   # midday re-check (12:30) runs with GUARD_QUIET_OK=1: stay silent when all-OK
 if [ "$NAT_OK" = "1" ] && [ "$PIN_OK" = "1" ] && [ "$BLK_OK" = "1" ] && [ "$BATCH_OK" = "1" ]; then
-  LOG "all four routed — OK"
-  alert "✅ All 4 morning reports routed for ${TODAY} (BB national, BB pincode, Blinkit, price-data batch)."
+  if [ "$QUIET_OK" = "1" ]; then
+    LOG "all four routed — OK (quiet)"
+  else
+    LOG "all four routed — OK"
+    alert "✅ All 4 morning reports routed for ${TODAY} (BB national, BB pincode, Blinkit, price-data batch)."
+  fi
 else
   alert "⚠️ $SUMMARY"
 fi
