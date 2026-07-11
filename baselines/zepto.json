@@ -2,14 +2,6 @@
   "platform": "zepto",
   "samples": [
     {
-      "run_id": "2026-06-30-0633",
-      "captured_at": "2026-06-30T06:33:00Z",
-      "rows": 14835,
-      "unique_skus": 23,
-      "pincodes_with_jivo": 645,
-      "priced_rows": 4919
-    },
-    {
       "run_id": "2026-07-01-1440",
       "captured_at": "2026-07-01T14:40:00Z",
       "rows": 14833,
@@ -80,7 +72,15 @@
       "unique_skus": 25,
       "pincodes_with_jivo": 645,
       "priced_rows": 4627
+    },
+    {
+      "run_id": "2026-07-11-1505",
+      "captured_at": "2026-07-11T05:14:35.079Z",
+      "rows": 14891,
+      "unique_skus": 26,
+      "pincodes_with_jivo": 645,
+      "priced_rows": 4835
     }
   ],
-  "updated_at": "2026-07-09T20:09:55.884355+00:00"
+  "updated_at": "2026-07-11T09:36:27.522140+00:00"
 }
