@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-# mail_price_data.sh <slot> — email today's report workbooks AS-IS (each .xlsx
-# an individual attachment, nothing merged or modified) to the ecom team list,
-# then post the same files to the WhatsApp "Ecom team" group.
+# mail_price_data.sh <slot> — post today's report workbooks AS-IS (each .xlsx
+# an individual document, nothing merged or modified) to the WhatsApp "Ecom team"
+# group. The email leg to the 13-address team list was CUT by owner directive
+# 2026-07-11 (Gmail app password revoked + "cut the email thing"); it only runs
+# with an explicit MAILER_SKIP_EMAIL=0.
 #
 # Slots: am (10:00 cron, the ONLY scheduled slot) waits up to 3h for the daily
 # serial chain to finish writing ALL of today's files (xlsx ready ~06:17; the batch lands ~10:00 since 2026-07-03, was noon).
@@ -162,11 +164,15 @@ for f in "${PRESENT[@]}"; do ATTACH+=(--attach "$f"); done
 # Gmail app password 535'd here and the exit 1 silently dropped the whole
 # Ecom-group batch). Record the failure, alert, and keep going.
 EMAIL_FAIL=0
+EMAIL_SKIPPED=0
 if [ "${MAILER_DRY_RUN_SEND:-0}" = "1" ]; then
   echo "DRYRUN email: to=$TO subject=$SUBJ files=${#PRESENT[@]}"
-elif [ "${MAILER_SKIP_EMAIL:-0}" = "1" ]; then
-  # WhatsApp-only mode for guard retries: never risk double-emailing the team list.
-  echo "email: skipped (MAILER_SKIP_EMAIL=1)"
+elif [ "${MAILER_SKIP_EMAIL:-1}" = "1" ]; then
+  EMAIL_SKIPPED=1
+  # OWNER DIRECTIVE 2026-07-11 ("cut the email thing"): the email leg is CUT —
+  # the WhatsApp Ecom-team group is the only delivery channel. Email goes out
+  # ONLY if MAILER_SKIP_EMAIL=0 is set explicitly.
+  echo "email: skipped (email leg cut per owner 2026-07-11)"
 else
   python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
     --subject "$SUBJ" --body "$BODY" "${ATTACH[@]}" \
@@ -245,4 +251,8 @@ if [ "$EMAIL_FAIL" -eq 1 ]; then
   echo "=== $(date '+%F %T') mailer done WITH EMAIL FAILURE -> WhatsApp group only (${#PRESENT[@]} files) ==="
   exit 1
 fi
-echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group (${#PRESENT[@]} files) ==="
+if [ "$EMAIL_SKIPPED" -eq 1 ]; then
+  echo "=== $(date '+%F %T') mailer done -> WhatsApp group only, email leg cut (${#PRESENT[@]} files) ==="
+else
+  echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group (${#PRESENT[@]} files) ==="
+fi
