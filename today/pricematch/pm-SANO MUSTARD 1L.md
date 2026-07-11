@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-10
-observations: 256
+last_seen: 2026-07-11
+observations: 264
 latest_status: NOT_LISTED
-below_days: 8
+below_days: 9
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-pure-fresh-kachi-ghani-mustard-oil-1-litre-pet-bottle-high-pu
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-10) — ref ₹199 vs live ₹-
-- **Days below reference:** 8 of 32
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹199 vs live ₹-
+- **Days below reference:** 9 of 33
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-11]]
 
-## Ref-vs-live history (256 observations)
+## Ref-vs-live history (264 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -301,6 +301,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-10,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
 2026-07-10,flipkart-minutes,NOT_LISTED,SVD,199,,,,,,0,false
 2026-07-10,zepto,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-11,amazon,BELOW,SVD,199,189,189,189,-10,-5.03,1,true
+2026-07-11,amazon-fresh,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-11,amazon-now,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-11,bigbasket,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-11,blinkit,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-11,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-11,flipkart-minutes,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-11,zepto,NOT_LISTED,SVD,199,,,,,,0,false
 ```
 
 ---

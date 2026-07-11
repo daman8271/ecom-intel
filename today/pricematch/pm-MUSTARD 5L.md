@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-10
-observations: 256
+last_seen: 2026-07-11
+observations: 264
 latest_status: BELOW
-below_days: 32
+below_days: 33
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-contains
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-10) — ref ₹949 vs live ₹919
-- **Days below reference:** 32 of 32
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-11) — ref ₹949 vs live ₹919
+- **Days below reference:** 33 of 33
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]]
 
-## Ref-vs-live history (256 observations)
+## Ref-vs-live history (264 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -301,6 +301,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-10,flipkart,OOS,SVD,949,,,,,,0,false
 2026-07-10,flipkart-minutes,BELOW,SVD,949,888,888,936,-61,-6.43,14,true
 2026-07-10,zepto,BELOW,SVD,949,919,888,919,-30,-3.16,101,true
+2026-07-11,amazon,BELOW,SVD,949,919,919,919,-30,-3.16,1,true
+2026-07-11,amazon-fresh,BELOW,SVD,949,919,870,964,-30,-3.16,75,true
+2026-07-11,amazon-now,BELOW,SVD,949,873,870,964,-76,-8.01,214,true
+2026-07-11,bigbasket,ABOVE,SVD,949,981.13,981.13,998.75,32.13,3.39,0,true
+2026-07-11,blinkit,BELOW,SVD,949,868,868,868,-81,-8.54,15,true
+2026-07-11,flipkart,OOS,SVD,949,,,,,,0,false
+2026-07-11,flipkart-minutes,BELOW,SVD,949,888,888,888,-61,-6.43,11,true
+2026-07-11,zepto,BELOW,SVD,949,919,888,919,-30,-3.16,101,true
 ```
 
 ---

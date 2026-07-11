@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: fizzy-water-flavoured-with-peach-750ml
-display_name: Fizzy Water Flavoured With Peach 750ml
+display_name: Fizzy Water Flavoured With Peach (750 ml)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Fizzy Water Flavoured With Peach 750ml**
+**Fizzy Water Flavoured With Peach (750 ml)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹55
