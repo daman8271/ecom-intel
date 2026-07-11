@@ -29,63 +29,63 @@ Up: [[dashboards-index]]
    "slug": "citymall"
   },
   {
-   "fill_rate": 44.3,
-   "filled_ltrs": 154932.75,
+   "fill_rate": 43.9,
+   "filled_ltrs": 161653.75,
    "format": "SWIGGY",
-   "miss_rate": 17.4,
-   "missed_ltrs": 60777.25,
-   "ordered_ltrs": 349595.0,
-   "po_count": 493,
+   "miss_rate": 17.6,
+   "missed_ltrs": 64612.25,
+   "ordered_ltrs": 367817.0,
+   "po_count": 528,
    "slug": "swiggy"
   },
   {
-   "fill_rate": 50.9,
-   "filled_ltrs": 247413.5,
+   "fill_rate": 49.8,
+   "filled_ltrs": 241048.5,
    "format": "AMAZON",
-   "miss_rate": 4.0,
-   "missed_ltrs": 19561.5,
-   "ordered_ltrs": 485803.8,
-   "po_count": 135,
+   "miss_rate": 4.2,
+   "missed_ltrs": 20135.5,
+   "ordered_ltrs": 483681.55,
+   "po_count": 133,
    "slug": "amazon"
   },
   {
-   "fill_rate": 62.7,
-   "filled_ltrs": 9600.0,
+   "fill_rate": 72.1,
+   "filled_ltrs": 18420.0,
+   "format": "BIG BASKET",
+   "miss_rate": 6.1,
+   "missed_ltrs": 1559.0,
+   "ordered_ltrs": 25536.0,
+   "po_count": 37,
+   "slug": "bigbasket"
+  },
+  {
+   "fill_rate": 75.3,
+   "filled_ltrs": 15457.0,
    "format": "BLINKIT",
-   "miss_rate": 18.2,
-   "missed_ltrs": 2790.0,
-   "ordered_ltrs": 15314.0,
-   "po_count": 112,
+   "miss_rate": 9.9,
+   "missed_ltrs": 2029.0,
+   "ordered_ltrs": 20536.0,
+   "po_count": 122,
    "slug": "blinkit"
   },
   {
-   "fill_rate": 70.9,
-   "filled_ltrs": 33530.0,
+   "fill_rate": 75.7,
+   "filled_ltrs": 36052.0,
    "format": "ZOMATO",
    "miss_rate": 9.9,
-   "missed_ltrs": 4696.0,
-   "ordered_ltrs": 47316.0,
+   "missed_ltrs": 4716.0,
+   "ordered_ltrs": 47638.0,
    "po_count": 40,
    "slug": "zomato"
   },
   {
-   "fill_rate": 76.0,
-   "filled_ltrs": 18144.0,
-   "format": "BIG BASKET",
-   "miss_rate": 5.8,
-   "missed_ltrs": 1375.0,
-   "ordered_ltrs": 23888.0,
-   "po_count": 36,
-   "slug": "bigbasket"
-  },
-  {
-   "fill_rate": 77.2,
-   "filled_ltrs": 87383.2,
+   "fill_rate": 77.7,
+   "filled_ltrs": 80819.8,
    "format": "ZEPTO",
-   "miss_rate": 10.7,
-   "missed_ltrs": 12107.4,
-   "ordered_ltrs": 113149.8,
-   "po_count": 163,
+   "miss_rate": 12.8,
+   "missed_ltrs": 13357.6,
+   "ordered_ltrs": 103967.8,
+   "po_count": 153,
    "slug": "zepto"
   },
   {
@@ -102,17 +102,17 @@ Up: [[dashboards-index]]
  "errors": [],
  "platform": null,
  "total": {
-  "fill_rate": 53.0,
-  "filled_ltrs": 590090.45,
-  "miss_rate": 9.4,
-  "missed_ltrs": 104676.15,
-  "ordered_ltrs": 1112430.6,
-  "po_count": 1021
+  "fill_rate": 52.6,
+  "filled_ltrs": 592538.05,
+  "miss_rate": 9.7,
+  "missed_ltrs": 109778.35,
+  "ordered_ltrs": 1126540.35,
+  "po_count": 1055
  },
  "window": {
-  "end": "2026-07-03",
+  "end": "2026-07-04",
   "lag_days": 7,
-  "start": "2026-06-03",
+  "start": "2026-06-04",
   "window_days": 30
  }
 }

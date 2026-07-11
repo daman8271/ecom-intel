@@ -21,48 +21,48 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
  "by_city": [
   {
    "city": "RAJPURA",
-   "open_ltrs": 6500.0,
-   "open_pos": 5,
-   "open_units": 5204.0,
-   "order_value": 1019719.12,
-   "pending_ltrs": 6500.0,
-   "pending_units": 5204.0
-  },
-  {
-   "city": "LUDHIANA",
-   "open_ltrs": 4696.0,
+   "open_ltrs": 4684.0,
    "open_pos": 4,
-   "open_units": 3688.0,
-   "order_value": 746955.72,
-   "pending_ltrs": 4696.0,
-   "pending_units": 3688.0
+   "open_units": 3916.0,
+   "order_value": 761375.0,
+   "pending_ltrs": 4684.0,
+   "pending_units": 3916.0
   },
   {
    "city": "MUMBAI",
-   "open_ltrs": 2272.0,
-   "open_pos": 14,
-   "open_units": 2132.0,
-   "order_value": 502088.72,
-   "pending_ltrs": 2272.0,
-   "pending_units": 2132.0
+   "open_ltrs": 3116.0,
+   "open_pos": 18,
+   "open_units": 2866.0,
+   "order_value": 732030.46,
+   "pending_ltrs": 3116.0,
+   "pending_units": 2866.0
+  },
+  {
+   "city": "LUDHIANA",
+   "open_ltrs": 3000.0,
+   "open_pos": 3,
+   "open_units": 1848.0,
+   "order_value": 495430.24,
+   "pending_ltrs": 3000.0,
+   "pending_units": 1848.0
   },
   {
    "city": "BENGALURU",
-   "open_ltrs": 934.0,
-   "open_pos": 3,
-   "open_units": 934.0,
-   "order_value": 213723.32,
-   "pending_ltrs": 934.0,
-   "pending_units": 934.0
+   "open_ltrs": 1200.0,
+   "open_pos": 4,
+   "open_units": 1200.0,
+   "order_value": 271752.96,
+   "pending_ltrs": 1200.0,
+   "pending_units": 1200.0
   },
   {
    "city": "FARUKHNAGAR",
-   "open_ltrs": 928.0,
-   "open_pos": 6,
-   "open_units": 908.0,
-   "order_value": 334948.52,
-   "pending_ltrs": 928.0,
-   "pending_units": 908.0
+   "open_ltrs": 1092.0,
+   "open_pos": 8,
+   "open_units": 1022.0,
+   "order_value": 409706.7,
+   "pending_ltrs": 1092.0,
+   "pending_units": 1022.0
   },
   {
    "city": "Faridabad - Feeder Warehouse",
@@ -75,21 +75,48 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   },
   {
    "city": "Kundli - Feeder Warehouse",
-   "open_ltrs": 422.0,
-   "open_pos": 4,
-   "open_units": 422.0,
-   "order_value": 136087.6,
-   "pending_ltrs": 422.0,
-   "pending_units": 422.0
+   "open_ltrs": 666.0,
+   "open_pos": 6,
+   "open_units": 666.0,
+   "order_value": 212057.16,
+   "pending_ltrs": 666.0,
+   "pending_units": 666.0
   },
   {
    "city": "DASNA",
-   "open_ltrs": 386.0,
-   "open_pos": 7,
-   "open_units": 386.0,
-   "order_value": 115630.24,
-   "pending_ltrs": 386.0,
-   "pending_units": 386.0
+   "open_ltrs": 394.0,
+   "open_pos": 8,
+   "open_units": 384.0,
+   "order_value": 136407.26,
+   "pending_ltrs": 394.0,
+   "pending_units": 384.0
+  },
+  {
+   "city": "NOIDA",
+   "open_ltrs": 286.0,
+   "open_pos": 3,
+   "open_units": 180.0,
+   "order_value": 85184.62,
+   "pending_ltrs": 286.0,
+   "pending_units": 180.0
+  },
+  {
+   "city": "Dehradun - Feeder Warehouse",
+   "open_ltrs": 284.0,
+   "open_pos": 6,
+   "open_units": 254.0,
+   "order_value": 99962.14,
+   "pending_ltrs": 284.0,
+   "pending_units": 254.0
+  },
+  {
+   "city": "Visakhapatnam V1 - Feeder Warehouse",
+   "open_ltrs": 280.0,
+   "open_pos": 2,
+   "open_units": 140.0,
+   "order_value": 128000.6,
+   "pending_ltrs": 280.0,
+   "pending_units": 140.0
   },
   {
    "city": "PUNE",
@@ -110,15 +137,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "pending_units": 200.0
   },
   {
-   "city": "Dehradun - Feeder Warehouse",
-   "open_ltrs": 216.0,
-   "open_pos": 6,
-   "open_units": 196.0,
-   "order_value": 75276.36,
-   "pending_ltrs": 216.0,
-   "pending_units": 196.0
-  },
-  {
    "city": "Goa G2 - Feeder Warehouse",
    "open_ltrs": 164.0,
    "open_pos": 3,
@@ -126,24 +144,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "order_value": 50704.84,
    "pending_ltrs": 164.0,
    "pending_units": 164.0
-  },
-  {
-   "city": "NOIDA",
-   "open_ltrs": 162.0,
-   "open_pos": 2,
-   "open_units": 72.0,
-   "order_value": 55660.78,
-   "pending_ltrs": 162.0,
-   "pending_units": 72.0
-  },
-  {
-   "city": "Visakhapatnam V1 - Feeder Warehouse",
-   "open_ltrs": 140.0,
-   "open_pos": 1,
-   "open_units": 70.0,
-   "order_value": 64000.3,
-   "pending_ltrs": 140.0,
-   "pending_units": 70.0
   },
   {
    "city": "Nagpur N1 - Feeder Warehouse",
@@ -183,50 +183,50 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   },
   {
    "city": "KOLKATA",
-   "open_ltrs": 20.0,
-   "open_pos": 1,
-   "open_units": 10.0,
-   "order_value": 9142.9,
-   "pending_ltrs": 20.0,
-   "pending_units": 10.0
+   "open_ltrs": 40.0,
+   "open_pos": 2,
+   "open_units": 20.0,
+   "order_value": 18285.8,
+   "pending_ltrs": 40.0,
+   "pending_units": 20.0
   }
  ],
  "by_distributor": [
   {
    "distributor": "EVARA ENTERPRISES",
-   "open_ltrs": 11196.0,
-   "open_pos": 9,
-   "open_units": 8892.0,
-   "order_value": 1766674.84,
-   "pending_ltrs": 11196.0,
-   "pending_units": 8892.0
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "open_ltrs": 2834.0,
-   "open_pos": 26,
-   "open_units": 2128.0,
-   "order_value": 856117.1,
-   "pending_ltrs": 2834.0,
-   "pending_units": 2128.0
+   "open_ltrs": 7684.0,
+   "open_pos": 7,
+   "open_units": 5764.0,
+   "order_value": 1256805.24,
+   "pending_ltrs": 7684.0,
+   "pending_units": 5764.0
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "open_ltrs": 2808.0,
-   "open_pos": 22,
-   "open_units": 2502.0,
-   "order_value": 695346.18,
-   "pending_ltrs": 2808.0,
-   "pending_units": 2502.0
+   "open_ltrs": 3652.0,
+   "open_pos": 26,
+   "open_units": 3236.0,
+   "order_value": 925287.92,
+   "pending_ltrs": 3652.0,
+   "pending_units": 3236.0
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "open_ltrs": 3442.0,
+   "open_pos": 32,
+   "open_units": 2650.0,
+   "order_value": 1081831.48,
+   "pending_ltrs": 3442.0,
+   "pending_units": 2650.0
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "open_ltrs": 1314.0,
-   "open_pos": 5,
-   "open_units": 1204.0,
-   "order_value": 340199.22,
-   "pending_ltrs": 1314.0,
-   "pending_units": 1204.0
+   "open_ltrs": 1720.0,
+   "open_pos": 7,
+   "open_units": 1540.0,
+   "order_value": 462229.16,
+   "pending_ltrs": 1720.0,
+   "pending_units": 1540.0
   },
   {
    "distributor": "JIVO MART PRIVATE LIMITED",
@@ -239,53 +239,27 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   },
   {
    "distributor": "BABA LOKENATH TRADERS",
-   "open_ltrs": 20.0,
-   "open_pos": 1,
-   "open_units": 10.0,
-   "order_value": 9142.9,
-   "pending_ltrs": 20.0,
-   "pending_units": 10.0
+   "open_ltrs": 40.0,
+   "open_pos": 2,
+   "open_units": 20.0,
+   "order_value": 18285.8,
+   "pending_ltrs": 40.0,
+   "pending_units": 20.0
   }
  ],
  "by_po": [
   {
    "distributor": "EVARA ENTERPRISES",
-   "location": "Ludhiana L2 - Feeder Warehouse",
-   "open_ltrs": 2252.0,
-   "open_pos": 1,
-   "open_units": 2252.0,
-   "order_value": 352821.12,
-   "pending_ltrs": 2252.0,
-   "pending_units": 2252.0,
-   "po_date": "04-07-2026",
-   "po_expiry_date": "09-07-2026",
-   "po_number": "3226810033973"
-  },
-  {
-   "distributor": "EVARA ENTERPRISES",
    "location": "Rajpura R2 - Feeder Warehouse",
-   "open_ltrs": 2128.0,
+   "open_ltrs": 1980.0,
    "open_pos": 1,
-   "open_units": 2128.0,
-   "order_value": 323240.08,
-   "pending_ltrs": 2128.0,
-   "pending_units": 2128.0,
-   "po_date": "04-07-2026",
-   "po_expiry_date": "09-07-2026",
-   "po_number": "43886010051919"
-  },
-  {
-   "distributor": "EVARA ENTERPRISES",
-   "location": "Rajpura R2 - Feeder Warehouse",
-   "open_ltrs": 1644.0,
-   "open_pos": 1,
-   "open_units": 732.0,
-   "order_value": 264305.48,
-   "pending_ltrs": 1644.0,
-   "pending_units": 732.0,
-   "po_date": "07-07-2026",
-   "po_expiry_date": "12-07-2026",
-   "po_number": "43886010053014"
+   "open_units": 1596.0,
+   "order_value": 314725.28,
+   "pending_ltrs": 1980.0,
+   "pending_units": 1596.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "14-07-2026",
+   "po_number": "43886010054127"
   },
   {
    "distributor": "EVARA ENTERPRISES",
@@ -303,15 +277,28 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   {
    "distributor": "EVARA ENTERPRISES",
    "location": "Rajpura R2 - Feeder Warehouse",
-   "open_ltrs": 1264.0,
+   "open_ltrs": 1240.0,
    "open_pos": 1,
-   "open_units": 1264.0,
-   "order_value": 200134.44,
-   "pending_ltrs": 1264.0,
-   "pending_units": 1264.0,
-   "po_date": "06-07-2026",
-   "po_expiry_date": "11-07-2026",
-   "po_number": "43886010052598"
+   "open_units": 1240.0,
+   "order_value": 214610.6,
+   "pending_ltrs": 1240.0,
+   "pending_units": 1240.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "15-07-2026",
+   "po_number": "43886010054660"
+  },
+  {
+   "distributor": "EVARA ENTERPRISES",
+   "location": "Ludhiana L2 - Feeder Warehouse",
+   "open_ltrs": 876.0,
+   "open_pos": 1,
+   "open_units": 732.0,
+   "order_value": 151124.44,
+   "pending_ltrs": 876.0,
+   "pending_units": 732.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "14-07-2026",
+   "po_number": "3226810035253"
   },
   {
    "distributor": "EVARA ENTERPRISES",
@@ -405,19 +392,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "49990010053679"
   },
   {
-   "distributor": "EVARA ENTERPRISES",
-   "location": "Ludhiana L2 - Feeder Warehouse",
-   "open_ltrs": 320.0,
-   "open_pos": 1,
-   "open_units": 320.0,
-   "order_value": 49828.8,
-   "pending_ltrs": 320.0,
-   "pending_units": 320.0,
-   "po_date": "06-07-2026",
-   "po_expiry_date": "11-07-2026",
-   "po_number": "3226810034313"
-  },
-  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "Bengaluru B3 - Feeder Warehouse",
    "open_ltrs": 272.0,
@@ -445,6 +419,32 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "Bengaluru B5 - Feeder Warehouse",
+   "open_ltrs": 266.0,
+   "open_pos": 1,
+   "open_units": 266.0,
+   "order_value": 58029.64,
+   "pending_ltrs": 266.0,
+   "pending_units": 266.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "49990010054882"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Mumbai M11 - Feeder Warehouse",
+   "open_ltrs": 240.0,
+   "open_pos": 1,
+   "open_units": 210.0,
+   "order_value": 71199.9,
+   "pending_ltrs": 240.0,
+   "pending_units": 210.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "19-07-2026",
+   "po_number": "5625710046571"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "Vijayawada - Feeder Warehouse",
    "open_ltrs": 240.0,
    "open_pos": 1,
@@ -455,6 +455,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "06-07-2026",
    "po_expiry_date": "13-07-2026",
    "po_number": "51388610005419"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Mumbai M10 - Feeder Warehouse",
+   "open_ltrs": 236.0,
+   "open_pos": 1,
+   "open_units": 216.0,
+   "order_value": 52608.76,
+   "pending_ltrs": 236.0,
+   "pending_units": 216.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "19-07-2026",
+   "po_number": "2273910086497"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -470,17 +483,30 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "1736010075727"
   },
   {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Farukhnagar F2 - Feeder Warehouse",
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Mumbai M10 - Feeder Warehouse",
    "open_ltrs": 216.0,
    "open_pos": 1,
-   "open_units": 216.0,
-   "order_value": 74102.88,
+   "open_units": 176.0,
+   "order_value": 61180.56,
    "pending_ltrs": 216.0,
-   "pending_units": 216.0,
-   "po_date": "04-07-2026",
-   "po_expiry_date": "10-07-2026",
-   "po_number": "5383910053966"
+   "pending_units": 176.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "18-07-2026",
+   "po_number": "2273910086200"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Farukhnagar F2 - Feeder Warehouse",
+   "open_ltrs": 214.0,
+   "open_pos": 1,
+   "open_units": 194.0,
+   "order_value": 79828.64,
+   "pending_ltrs": 214.0,
+   "pending_units": 194.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "5383910056121"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -548,6 +574,32 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "5625710045001"
   },
   {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Mumbai M11 - Feeder Warehouse",
+   "open_ltrs": 152.0,
+   "open_pos": 1,
+   "open_units": 132.0,
+   "order_value": 44952.52,
+   "pending_ltrs": 152.0,
+   "pending_units": 132.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "18-07-2026",
+   "po_number": "5625710046130"
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "location": "Visakhapatnam V1 - Feeder Warehouse",
+   "open_ltrs": 140.0,
+   "open_pos": 1,
+   "open_units": 70.0,
+   "order_value": 64000.3,
+   "pending_ltrs": 140.0,
+   "pending_units": 70.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "17-07-2026",
+   "po_number": "2888510036785"
+  },
+  {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
    "location": "Visakhapatnam V1 - Feeder Warehouse",
    "open_ltrs": 140.0,
@@ -574,6 +626,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "2011710074427"
   },
   {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Kundli - Feeder Warehouse",
+   "open_ltrs": 132.0,
+   "open_pos": 1,
+   "open_units": 132.0,
+   "order_value": 40022.88,
+   "pending_ltrs": 132.0,
+   "pending_units": 132.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "2011710075785"
+  },
+  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "Pune P3 - Feeder Warehouse",
    "open_ltrs": 128.0,
@@ -585,6 +650,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "08-07-2026",
    "po_expiry_date": "17-07-2026",
    "po_number": "43886110051846"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Mumbai M10 - Feeder Warehouse",
+   "open_ltrs": 120.0,
+   "open_pos": 1,
+   "open_units": 120.0,
+   "order_value": 19428.0,
+   "pending_ltrs": 120.0,
+   "pending_units": 120.0,
+   "po_date": "07-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "2273910085442"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -600,17 +678,17 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "50033210018046"
   },
   {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "Mumbai M10 - Feeder Warehouse",
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Farukhnagar F2 - Feeder Warehouse",
    "open_ltrs": 120.0,
    "open_pos": 1,
-   "open_units": 120.0,
-   "order_value": 19428.0,
+   "open_units": 110.0,
+   "order_value": 47763.78,
    "pending_ltrs": 120.0,
-   "pending_units": 120.0,
-   "po_date": "07-07-2026",
-   "po_expiry_date": "16-07-2026",
-   "po_number": "2273910085442"
+   "pending_units": 110.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "15-07-2026",
+   "po_number": "5383910055650"
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
@@ -639,6 +717,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "50033210020761"
   },
   {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Kundli - Feeder Warehouse",
+   "open_ltrs": 112.0,
+   "open_pos": 1,
+   "open_units": 112.0,
+   "order_value": 35946.68,
+   "pending_ltrs": 112.0,
+   "pending_units": 112.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "15-07-2026",
+   "po_number": "2011710075206"
+  },
+  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "Mumbai M10 - Feeder Warehouse",
    "open_ltrs": 112.0,
@@ -650,19 +741,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "04-07-2026",
    "po_expiry_date": "13-07-2026",
    "po_number": "2273910084658"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Farukhnagar - SR Feeder Warehouse",
-   "open_ltrs": 108.0,
-   "open_pos": 1,
-   "open_units": 108.0,
-   "order_value": 37051.44,
-   "pending_ltrs": 108.0,
-   "pending_units": 108.0,
-   "po_date": "06-07-2026",
-   "po_expiry_date": "12-07-2026",
-   "po_number": "1735210063745"
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
@@ -689,6 +767,32 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "08-07-2026",
    "po_expiry_date": "14-07-2026",
    "po_number": "1735210064223"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Farukhnagar - SR Feeder Warehouse",
+   "open_ltrs": 100.0,
+   "open_pos": 1,
+   "open_units": 80.0,
+   "order_value": 39794.36,
+   "pending_ltrs": 100.0,
+   "pending_units": 80.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "1735210065069"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Noida N1 - Feeder Warehouse",
+   "open_ltrs": 98.0,
+   "open_pos": 1,
+   "open_units": 82.0,
+   "order_value": 25344.76,
+   "pending_ltrs": 98.0,
+   "pending_units": 82.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "15-07-2026",
+   "po_number": "2867410079322"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -730,6 +834,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "2273910085927"
   },
   {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Dehradun - Feeder Warehouse",
+   "open_ltrs": 84.0,
+   "open_pos": 1,
+   "open_units": 74.0,
+   "order_value": 29866.74,
+   "pending_ltrs": 84.0,
+   "pending_units": 74.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "2173110033042"
+  },
+  {
    "distributor": "JIVO MART PRIVATE LIMITED",
    "location": "Bhubaneswar B1 - Feeder Warehouse",
    "open_ltrs": 80.0,
@@ -769,6 +886,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "1735210063978"
   },
   {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Noida N1 - Feeder Warehouse",
+   "open_ltrs": 70.0,
+   "open_pos": 1,
+   "open_units": 54.0,
+   "order_value": 23158.04,
+   "pending_ltrs": 70.0,
+   "pending_units": 54.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "14-07-2026",
+   "po_number": "2867410078855"
+  },
+  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "Pune P2 - Feeder Warehouse",
    "open_ltrs": 64.0,
@@ -780,6 +910,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "06-07-2026",
    "po_expiry_date": "15-07-2026",
    "po_number": "1723710047089"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Kundli - Feeder Warehouse",
+   "open_ltrs": 64.0,
+   "open_pos": 1,
+   "open_units": 64.0,
+   "order_value": 20723.84,
+   "pending_ltrs": 64.0,
+   "pending_units": 64.0,
+   "po_date": "04-07-2026",
+   "po_expiry_date": "10-07-2026",
+   "po_number": "2011710072916"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -796,42 +939,16 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Kundli - Feeder Warehouse",
-   "open_ltrs": 64.0,
+   "location": "Dasna D3 - Feeder Warehouse",
+   "open_ltrs": 62.0,
    "open_pos": 1,
-   "open_units": 64.0,
-   "order_value": 20723.84,
-   "pending_ltrs": 64.0,
-   "pending_units": 64.0,
-   "po_date": "04-07-2026",
-   "po_expiry_date": "10-07-2026",
-   "po_number": "2011710072916"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Super Store Dasna 2 - Warehouse",
-   "open_ltrs": 60.0,
-   "open_pos": 1,
-   "open_units": 60.0,
-   "order_value": 12228.6,
-   "pending_ltrs": 60.0,
-   "pending_units": 60.0,
-   "po_date": "06-07-2026",
-   "po_expiry_date": "16-07-2026",
-   "po_number": "1724010040075"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Kundli - Feeder Warehouse",
-   "open_ltrs": 60.0,
-   "open_pos": 1,
-   "open_units": 60.0,
-   "order_value": 21508.56,
-   "pending_ltrs": 60.0,
-   "pending_units": 60.0,
-   "po_date": "06-07-2026",
-   "po_expiry_date": "13-07-2026",
-   "po_number": "2011710073510"
+   "open_units": 52.0,
+   "order_value": 30022.78,
+   "pending_ltrs": 62.0,
+   "pending_units": 52.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "15-07-2026",
+   "po_number": "2576310054276"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -848,6 +965,32 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Kundli - Feeder Warehouse",
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 60.0,
+   "order_value": 21508.56,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0,
+   "po_date": "06-07-2026",
+   "po_expiry_date": "13-07-2026",
+   "po_number": "2011710073510"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Super Store Dasna 2 - Warehouse",
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 60.0,
+   "order_value": 12228.6,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0,
+   "po_date": "06-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "1724010040075"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
    "location": "Super Store Dasna 2 - Warehouse",
    "open_ltrs": 60.0,
    "open_pos": 1,
@@ -858,19 +1001,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "07-07-2026",
    "po_expiry_date": "17-07-2026",
    "po_number": "1724010040500"
-  },
-  {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "Pune P3 - Feeder Warehouse",
-   "open_ltrs": 60.0,
-   "open_pos": 1,
-   "open_units": 30.0,
-   "order_value": 27428.7,
-   "pending_ltrs": 60.0,
-   "pending_units": 30.0,
-   "po_date": "03-07-2026",
-   "po_expiry_date": "12-07-2026",
-   "po_number": "43886110049770"
   },
   {
    "distributor": "JIVO MART PRIVATE LIMITED",
@@ -884,6 +1014,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "06-07-2026",
    "po_expiry_date": "16-07-2026",
    "po_number": "7165810025505"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Pune P3 - Feeder Warehouse",
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 30.0,
+   "order_value": 27428.7,
+   "pending_ltrs": 60.0,
+   "pending_units": 30.0,
+   "po_date": "03-07-2026",
+   "po_expiry_date": "12-07-2026",
+   "po_number": "43886110049770"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -912,6 +1055,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "2549710038835"
   },
   {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Farukhnagar - SR Feeder Warehouse",
+   "open_ltrs": 54.0,
+   "open_pos": 1,
+   "open_units": 54.0,
+   "order_value": 18525.72,
+   "pending_ltrs": 54.0,
+   "pending_units": 54.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "15-07-2026",
+   "po_number": "1735210064732"
+  },
+  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "Goa G2 - Feeder Warehouse",
    "open_ltrs": 52.0,
@@ -923,32 +1079,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "08-07-2026",
    "po_expiry_date": "17-07-2026",
    "po_number": "41315210031847"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Super Store Dasna 2 - Warehouse",
-   "open_ltrs": 52.0,
-   "open_pos": 1,
-   "open_units": 52.0,
-   "order_value": 14118.08,
-   "pending_ltrs": 52.0,
-   "pending_units": 52.0,
-   "po_date": "03-07-2026",
-   "po_expiry_date": "13-07-2026",
-   "po_number": "1724010039433"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Super Store Dasna 2 - Warehouse",
-   "open_ltrs": 52.0,
-   "open_pos": 1,
-   "open_units": 52.0,
-   "order_value": 14118.08,
-   "pending_ltrs": 52.0,
-   "pending_units": 52.0,
-   "po_date": "01-07-2026",
-   "po_expiry_date": "11-07-2026",
-   "po_number": "1724010038981"
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
@@ -988,19 +1118,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "03-07-2026",
    "po_expiry_date": "12-07-2026",
    "po_number": "41315210030874"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Noida N1 - Feeder Warehouse",
-   "open_ltrs": 44.0,
-   "open_pos": 1,
-   "open_units": 28.0,
-   "order_value": 18978.96,
-   "pending_ltrs": 44.0,
-   "pending_units": 28.0,
-   "po_date": "06-07-2026",
-   "po_expiry_date": "11-07-2026",
-   "po_number": "2867410077397"
   },
   {
    "distributor": "JIVO MART PRIVATE LIMITED",
@@ -1050,19 +1167,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "order_value": 10361.92,
    "pending_ltrs": 32.0,
    "pending_units": 32.0,
-   "po_date": "04-07-2026",
-   "po_expiry_date": "11-07-2026",
-   "po_number": "2173110032020"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Dehradun - Feeder Warehouse",
-   "open_ltrs": 32.0,
-   "open_pos": 1,
-   "open_units": 32.0,
-   "order_value": 10361.92,
-   "pending_ltrs": 32.0,
-   "pending_units": 32.0,
    "po_date": "07-07-2026",
    "po_expiry_date": "14-07-2026",
    "po_number": "2173110032597"
@@ -1081,6 +1185,45 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "2173110032733"
   },
   {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Dehradun - Feeder Warehouse",
+   "open_ltrs": 32.0,
+   "open_pos": 1,
+   "open_units": 32.0,
+   "order_value": 10361.92,
+   "pending_ltrs": 32.0,
+   "pending_units": 32.0,
+   "po_date": "04-07-2026",
+   "po_expiry_date": "11-07-2026",
+   "po_number": "2173110032020"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Super Store Dasna 2 - Warehouse",
+   "open_ltrs": 26.0,
+   "open_pos": 1,
+   "open_units": 26.0,
+   "order_value": 7059.04,
+   "pending_ltrs": 26.0,
+   "pending_units": 26.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "19-07-2026",
+   "po_number": "1724010041093"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "Dasna D3 - Feeder Warehouse",
+   "open_ltrs": 24.0,
+   "open_pos": 1,
+   "open_units": 24.0,
+   "order_value": 11931.36,
+   "pending_ltrs": 24.0,
+   "pending_units": 24.0,
+   "po_date": "09-07-2026",
+   "po_expiry_date": "14-07-2026",
+   "po_number": "2576310053830"
+  },
+  {
    "distributor": "BABA LOKENATH TRADERS",
    "location": "Kolkata K6 - Feeder Warehouse",
    "open_ltrs": 20.0,
@@ -1094,6 +1237,19 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_number": "48287510040219"
   },
   {
+   "distributor": "BABA LOKENATH TRADERS",
+   "location": "Kolkata K6 - Feeder Warehouse",
+   "open_ltrs": 20.0,
+   "open_pos": 1,
+   "open_units": 10.0,
+   "order_value": 9142.9,
+   "pending_ltrs": 20.0,
+   "pending_units": 10.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "16-07-2026",
+   "po_number": "48287510042136"
+  },
+  {
    "distributor": "ANTIZE FOODS PVT LTD",
    "location": "Dasna D3 - Feeder Warehouse",
    "open_ltrs": 18.0,
@@ -1105,149 +1261,154 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "po_date": "08-07-2026",
    "po_expiry_date": "13-07-2026",
    "po_number": "2576310053402"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "Dehradun - Feeder Warehouse",
-   "open_ltrs": 16.0,
-   "open_pos": 1,
-   "open_units": 16.0,
-   "order_value": 5180.96,
-   "pending_ltrs": 16.0,
-   "pending_units": 16.0,
-   "po_date": "02-07-2026",
-   "po_expiry_date": "09-07-2026",
-   "po_number": "2173110031522"
   }
  ],
  "by_sku": [
   {
    "item": "MUSTARD 1L",
-   "open_ltrs": 7120.0,
-   "open_pos": 9,
-   "open_units": 7120.0,
-   "order_value": 1051054.4,
-   "pending_ltrs": 7120.0,
-   "pending_units": 7120.0,
+   "open_ltrs": 4280.0,
+   "open_pos": 7,
+   "open_units": 4280.0,
+   "order_value": 631813.6,
+   "pending_ltrs": 4280.0,
+   "pending_units": 4280.0,
    "sku_code": "10150509",
    "sku_name": "Jivo Kachi Ghani Cold Pressed Mustard Oil(PET Bottle)"
   },
   {
-   "item": "MUSTARD 5L",
-   "open_ltrs": 2880.0,
-   "open_pos": 4,
-   "open_units": 576.0,
-   "order_value": 444343.68,
-   "pending_ltrs": 2880.0,
-   "pending_units": 576.0,
-   "sku_code": "10150634",
-   "sku_name": "Jivo Kachi Ghani Cold Pressed Mustard Oil(Bottle)"
-  },
-  {
    "item": "SUNFLOWER 1L",
-   "open_ltrs": 2760.0,
-   "open_pos": 25,
-   "open_units": 2760.0,
-   "order_value": 447913.6,
-   "pending_ltrs": 2760.0,
-   "pending_units": 2760.0,
+   "open_ltrs": 2880.0,
+   "open_pos": 26,
+   "open_units": 2880.0,
+   "order_value": 466539.4,
+   "pending_ltrs": 2880.0,
+   "pending_units": 2880.0,
    "sku_code": "10201963",
    "sku_name": "Jivo Cold Pressed Sunflower Oil(Bottle)"
   },
   {
    "item": "JIVO POMACE 1L",
-   "open_ltrs": 2304.0,
-   "open_pos": 41,
-   "open_units": 2304.0,
-   "order_value": 746058.24,
-   "pending_ltrs": 2304.0,
-   "pending_units": 2304.0,
+   "open_ltrs": 2864.0,
+   "open_pos": 51,
+   "open_units": 2864.0,
+   "order_value": 927391.84,
+   "pending_ltrs": 2864.0,
+   "pending_units": 2864.0,
    "sku_code": "10143020",
    "sku_name": "Jivo Pomace Olive Oil(Bottle)"
   },
   {
+   "item": "MUSTARD 5L",
+   "open_ltrs": 2400.0,
+   "open_pos": 5,
+   "open_units": 480.0,
+   "order_value": 370286.4,
+   "pending_ltrs": 2400.0,
+   "pending_units": 480.0,
+   "sku_code": "10150634",
+   "sku_name": "Jivo Kachi Ghani Cold Pressed Mustard Oil(Bottle)"
+  },
+  {
    "item": "EXTRA LIGHT 2L",
-   "open_ltrs": 980.0,
-   "open_pos": 15,
-   "open_units": 490.0,
-   "order_value": 448002.1,
-   "pending_ltrs": 980.0,
-   "pending_units": 490.0,
+   "open_ltrs": 1500.0,
+   "open_pos": 26,
+   "open_units": 750.0,
+   "order_value": 685717.5,
+   "pending_ltrs": 1500.0,
+   "pending_units": 750.0,
    "sku_code": "10153585",
    "sku_name": "Jivo Extra Light Olive Oil"
   },
   {
    "item": "CANOLA 1L",
-   "open_ltrs": 940.0,
-   "open_pos": 21,
-   "open_units": 940.0,
-   "order_value": 191581.4,
-   "pending_ltrs": 940.0,
-   "pending_units": 940.0,
+   "open_ltrs": 1280.0,
+   "open_pos": 27,
+   "open_units": 1280.0,
+   "order_value": 260876.8,
+   "pending_ltrs": 1280.0,
+   "pending_units": 1280.0,
    "sku_code": "10049199",
    "sku_name": "Jivo Cold Pressed Canola Oil(Pack)"
   },
   {
    "item": "CANOLA 5L",
-   "open_ltrs": 780.0,
-   "open_pos": 2,
-   "open_units": 156.0,
-   "order_value": 150056.4,
-   "pending_ltrs": 780.0,
-   "pending_units": 156.0,
+   "open_ltrs": 820.0,
+   "open_pos": 4,
+   "open_units": 164.0,
+   "order_value": 157751.6,
+   "pending_ltrs": 820.0,
+   "pending_units": 164.0,
    "sku_code": "10048295",
    "sku_name": "Jivo Cold Pressed Canola Oil (5 l)(Pack)"
   },
   {
    "item": "EXTRA LIGHT 1L",
-   "open_ltrs": 468.0,
-   "open_pos": 18,
-   "open_units": 468.0,
-   "order_value": 232661.52,
-   "pending_ltrs": 468.0,
-   "pending_units": 468.0,
+   "open_ltrs": 594.0,
+   "open_pos": 25,
+   "open_units": 594.0,
+   "order_value": 295301.16,
+   "pending_ltrs": 594.0,
+   "pending_units": 594.0,
    "sku_code": "10048294",
    "sku_name": "Jivo Extra Light Olive Oil(Pack)"
   },
   {
    "item": "JIVO POMACE 5L",
-   "open_ltrs": 160.0,
-   "open_pos": 4,
-   "open_units": 32.0,
-   "order_value": 56380.8,
-   "pending_ltrs": 160.0,
-   "pending_units": 32.0,
+   "open_ltrs": 140.0,
+   "open_pos": 3,
+   "open_units": 28.0,
+   "order_value": 49333.2,
+   "pending_ltrs": 140.0,
+   "pending_units": 28.0,
    "sku_code": "10049041",
    "sku_name": "Jivo Pomace Olive Oil(Tin)"
   }
  ],
  "by_warehouse": [
   {
-   "open_ltrs": 6500.0,
-   "open_pos": 5,
-   "open_units": 5204.0,
-   "order_value": 1019719.12,
-   "pending_ltrs": 6500.0,
-   "pending_units": 5204.0,
+   "open_ltrs": 4684.0,
+   "open_pos": 4,
+   "open_units": 3916.0,
+   "order_value": 761375.0,
+   "pending_ltrs": 4684.0,
+   "pending_units": 3916.0,
    "warehouse": "Rajpura R2 - Feeder Warehouse"
   },
   {
-   "open_ltrs": 4696.0,
-   "open_pos": 4,
-   "open_units": 3688.0,
-   "order_value": 746955.72,
-   "pending_ltrs": 4696.0,
-   "pending_units": 3688.0,
+   "open_ltrs": 3000.0,
+   "open_pos": 3,
+   "open_units": 1848.0,
+   "order_value": 495430.24,
+   "pending_ltrs": 3000.0,
+   "pending_units": 1848.0,
    "warehouse": "Ludhiana L2 - Feeder Warehouse"
   },
   {
-   "open_ltrs": 1196.0,
-   "open_pos": 5,
-   "open_units": 1056.0,
-   "order_value": 296035.36,
-   "pending_ltrs": 1196.0,
-   "pending_units": 1056.0,
+   "open_ltrs": 1588.0,
+   "open_pos": 7,
+   "open_units": 1398.0,
+   "order_value": 412187.78,
+   "pending_ltrs": 1588.0,
+   "pending_units": 1398.0,
    "warehouse": "Mumbai M11 - Feeder Warehouse"
+  },
+  {
+   "open_ltrs": 1040.0,
+   "open_pos": 7,
+   "open_units": 980.0,
+   "order_value": 229711.0,
+   "pending_ltrs": 1040.0,
+   "pending_units": 980.0,
+   "warehouse": "Mumbai M10 - Feeder Warehouse"
+  },
+  {
+   "open_ltrs": 760.0,
+   "open_pos": 4,
+   "open_units": 720.0,
+   "order_value": 285881.84,
+   "pending_ltrs": 760.0,
+   "pending_units": 720.0,
+   "warehouse": "Farukhnagar F2 - Feeder Warehouse"
   },
   {
    "open_ltrs": 720.0,
@@ -1259,22 +1420,22 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "warehouse": "Faridabad - Feeder Warehouse"
   },
   {
-   "open_ltrs": 642.0,
-   "open_pos": 3,
-   "open_units": 632.0,
-   "order_value": 232392.3,
-   "pending_ltrs": 642.0,
-   "pending_units": 632.0,
-   "warehouse": "Farukhnagar F2 - Feeder Warehouse"
+   "open_ltrs": 694.0,
+   "open_pos": 2,
+   "open_units": 694.0,
+   "order_value": 149921.84,
+   "pending_ltrs": 694.0,
+   "pending_units": 694.0,
+   "warehouse": "Bengaluru B5 - Feeder Warehouse"
   },
   {
-   "open_ltrs": 588.0,
-   "open_pos": 5,
-   "open_units": 588.0,
-   "order_value": 115921.68,
-   "pending_ltrs": 588.0,
-   "pending_units": 588.0,
-   "warehouse": "Mumbai M10 - Feeder Warehouse"
+   "open_ltrs": 666.0,
+   "open_pos": 6,
+   "open_units": 666.0,
+   "order_value": 212057.16,
+   "pending_ltrs": 666.0,
+   "pending_units": 666.0,
+   "warehouse": "Kundli - Feeder Warehouse"
   },
   {
    "open_ltrs": 506.0,
@@ -1295,40 +1456,49 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "warehouse": "Mumbai M12 - Feeder Warehouse"
   },
   {
-   "open_ltrs": 428.0,
-   "open_pos": 1,
-   "open_units": 428.0,
-   "order_value": 91892.2,
-   "pending_ltrs": 428.0,
-   "pending_units": 428.0,
-   "warehouse": "Bengaluru B5 - Feeder Warehouse"
-  },
-  {
-   "open_ltrs": 422.0,
+   "open_ltrs": 332.0,
    "open_pos": 4,
-   "open_units": 422.0,
-   "order_value": 136087.6,
-   "pending_ltrs": 422.0,
-   "pending_units": 422.0,
-   "warehouse": "Kundli - Feeder Warehouse"
+   "open_units": 302.0,
+   "order_value": 123824.86,
+   "pending_ltrs": 332.0,
+   "pending_units": 302.0,
+   "warehouse": "Farukhnagar - SR Feeder Warehouse"
   },
   {
-   "open_ltrs": 368.0,
-   "open_pos": 6,
-   "open_units": 368.0,
-   "order_value": 106681.72,
-   "pending_ltrs": 368.0,
-   "pending_units": 368.0,
+   "open_ltrs": 290.0,
+   "open_pos": 5,
+   "open_units": 290.0,
+   "order_value": 85504.6,
+   "pending_ltrs": 290.0,
+   "pending_units": 290.0,
    "warehouse": "Super Store Dasna 2 - Warehouse"
   },
   {
    "open_ltrs": 286.0,
    "open_pos": 3,
-   "open_units": 276.0,
-   "order_value": 102556.22,
+   "open_units": 180.0,
+   "order_value": 85184.62,
    "pending_ltrs": 286.0,
-   "pending_units": 276.0,
-   "warehouse": "Farukhnagar - SR Feeder Warehouse"
+   "pending_units": 180.0,
+   "warehouse": "Noida N1 - Feeder Warehouse"
+  },
+  {
+   "open_ltrs": 284.0,
+   "open_pos": 6,
+   "open_units": 254.0,
+   "order_value": 99962.14,
+   "pending_ltrs": 284.0,
+   "pending_units": 254.0,
+   "warehouse": "Dehradun - Feeder Warehouse"
+  },
+  {
+   "open_ltrs": 280.0,
+   "open_pos": 2,
+   "open_units": 140.0,
+   "order_value": 128000.6,
+   "pending_ltrs": 280.0,
+   "pending_units": 140.0,
+   "warehouse": "Visakhapatnam V1 - Feeder Warehouse"
   },
   {
    "open_ltrs": 240.0,
@@ -1338,15 +1508,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "pending_ltrs": 240.0,
    "pending_units": 200.0,
    "warehouse": "Vijayawada - Feeder Warehouse"
-  },
-  {
-   "open_ltrs": 216.0,
-   "open_pos": 6,
-   "open_units": 196.0,
-   "order_value": 75276.36,
-   "pending_ltrs": 216.0,
-   "pending_units": 196.0,
-   "warehouse": "Dehradun - Feeder Warehouse"
   },
   {
    "open_ltrs": 188.0,
@@ -1367,24 +1528,6 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "warehouse": "Goa G2 - Feeder Warehouse"
   },
   {
-   "open_ltrs": 162.0,
-   "open_pos": 2,
-   "open_units": 72.0,
-   "order_value": 55660.78,
-   "pending_ltrs": 162.0,
-   "pending_units": 72.0,
-   "warehouse": "Noida N1 - Feeder Warehouse"
-  },
-  {
-   "open_ltrs": 140.0,
-   "open_pos": 1,
-   "open_units": 70.0,
-   "order_value": 64000.3,
-   "pending_ltrs": 140.0,
-   "pending_units": 70.0,
-   "warehouse": "Visakhapatnam V1 - Feeder Warehouse"
-  },
-  {
    "open_ltrs": 120.0,
    "open_pos": 2,
    "open_units": 24.0,
@@ -1392,6 +1535,15 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
    "pending_ltrs": 120.0,
    "pending_units": 24.0,
    "warehouse": "Nagpur N1 - Feeder Warehouse"
+  },
+  {
+   "open_ltrs": 104.0,
+   "open_pos": 3,
+   "open_units": 94.0,
+   "order_value": 50902.66,
+   "pending_ltrs": 104.0,
+   "pending_units": 94.0,
+   "warehouse": "Dasna D3 - Feeder Warehouse"
   },
   {
    "open_ltrs": 100.0,
@@ -1422,45 +1574,36 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   },
   {
    "open_ltrs": 40.0,
+   "open_pos": 2,
+   "open_units": 20.0,
+   "order_value": 18285.8,
+   "pending_ltrs": 40.0,
+   "pending_units": 20.0,
+   "warehouse": "Kolkata K6 - Feeder Warehouse"
+  },
+  {
+   "open_ltrs": 40.0,
    "open_pos": 1,
    "open_units": 20.0,
    "order_value": 18285.8,
    "pending_ltrs": 40.0,
    "pending_units": 20.0,
    "warehouse": "Guwahati G2 - Feeder Warehouse"
-  },
-  {
-   "open_ltrs": 20.0,
-   "open_pos": 1,
-   "open_units": 10.0,
-   "order_value": 9142.9,
-   "pending_ltrs": 20.0,
-   "pending_units": 10.0,
-   "warehouse": "Kolkata K6 - Feeder Warehouse"
-  },
-  {
-   "open_ltrs": 18.0,
-   "open_pos": 1,
-   "open_units": 18.0,
-   "order_value": 8948.52,
-   "pending_ltrs": 18.0,
-   "pending_units": 18.0,
-   "warehouse": "Dasna D3 - Feeder Warehouse"
   }
  ],
  "defaulted_to_latest": true,
  "format": "BLINKIT",
- "max_po_date": "08-07-2026",
+ "max_po_date": "10-07-2026",
  "min_po_date": "01-07-2026",
  "platform": "blinkit",
  "po_month": "JULY",
  "totals": {
-  "open_ltrs": 18392.0,
-  "open_pos": 67,
-  "open_units": 14846.0,
-  "pending_ltrs": 18392.0,
-  "pending_units": 14846.0,
-  "rows": 139
+  "open_ltrs": 16758.0,
+  "open_pos": 78,
+  "open_units": 13320.0,
+  "pending_ltrs": 16758.0,
+  "pending_units": 13320.0,
+  "rows": 174
  },
  "year": 2026
 }

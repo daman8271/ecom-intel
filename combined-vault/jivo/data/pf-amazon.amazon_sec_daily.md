@@ -2,7 +2,7 @@
 type: data
 entity: pf-amazon
 table: amazon_sec_daily
-rows: 12
+rows: 13
 chunk: 1/1
 source: raw-table
 tags:
@@ -14,22 +14,23 @@ tags:
 # Raw `amazon_sec_daily` rows for [[pf-amazon]]
 
 Up: [[pf-amazon]]
-Canonical raw rows (12) for `amazon_sec_daily`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (13) for `amazon_sec_daily`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 asin,brand,business,created_at,customer_returns,id,ordered_revenue,ordered_units,product_title,report_date,shipped_cogs,shipped_revenue,shipped_units,__first_seen,__key,__last_seen
-B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-04T05:30:37.749231,,6857,761.9,1,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-02,,,,2026-06-27,amazon_sec_daily:6857,2026-07-10
-B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-11T05:46:47.753135,,7314,761.9,1,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-09,,,,2026-06-27,amazon_sec_daily:7314,2026-07-10
-B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-19T05:22:51.341581,,7662,761.9,1,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-17,,,,2026-06-27,amazon_sec_daily:7662,2026-07-10
-B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-20T05:18:27.381124,,7733,0.0,0,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-18,,,,2026-06-27,amazon_sec_daily:7733,2026-07-10
-B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-30T05:37:38.347177,,8728,-761.9,-1,"Jivo Groundnut Oil 2 Litre | Cold-Pressed, Unrefined Peanut Oil | Fortified with Vitamins A & D | Suitable for Everyday Cooking",2026-06-28,,,,2026-07-01,amazon_sec_daily:8728,2026-07-10
-B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-04T05:28:07.583604,,8953,970.35,5,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-02,,,,2026-07-05,amazon_sec_daily:8953,2026-07-10
-B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-05T13:51:38.812427,,9003,776.28,4,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-03,,,,2026-07-06,amazon_sec_daily:9003,2026-07-10
-B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-07T05:26:24.810778,,9056,742.36,4,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-04,,,,2026-07-08,amazon_sec_daily:9056,2026-07-10
-B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-07-07T05:26:24.810778,,9065,-761.9,-1,"Jivo Groundnut Oil 2 Litre | Cold-Pressed, Unrefined Peanut Oil | Fortified with Vitamins A & D | Suitable for Everyday Cooking",2026-07-04,,,,2026-07-08,amazon_sec_daily:9065,2026-07-10
-B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-07T05:26:36.152814,,9111,2412.67,13,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-05,,,,2026-07-08,amazon_sec_daily:9111,2026-07-10
-B0H5QFNW4L,JIVO,Jivo Mart Private Limited.,2026-07-08T13:27:07.225557,,9195,3526.27,19,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-06,0.0,0.0,6,2026-07-09,amazon_sec_daily:9195,2026-07-10
-B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-09T05:32:51.134568,,9248,1299.13,7,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-07,0.0,0.0,7,2026-07-10,amazon_sec_daily:9248,2026-07-10
+B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-04T05:30:37.749231,,6857,761.9,1,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-02,,,,2026-06-27,amazon_sec_daily:6857,2026-07-11
+B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-11T05:46:47.753135,,7314,761.9,1,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-09,,,,2026-06-27,amazon_sec_daily:7314,2026-07-11
+B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-19T05:22:51.341581,,7662,761.9,1,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-17,,,,2026-06-27,amazon_sec_daily:7662,2026-07-11
+B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-20T05:18:27.381124,,7733,0.0,0,"Jivo Groundnut Oil 2 Litre | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour | Healthy Cold Press.",2026-06-18,,,,2026-06-27,amazon_sec_daily:7733,2026-07-11
+B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-06-30T05:37:38.347177,,8728,-761.9,-1,"Jivo Groundnut Oil 2 Litre | Cold-Pressed, Unrefined Peanut Oil | Fortified with Vitamins A & D | Suitable for Everyday Cooking",2026-06-28,,,,2026-07-01,amazon_sec_daily:8728,2026-07-11
+B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-04T05:28:07.583604,,8953,970.35,5,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-02,,,,2026-07-05,amazon_sec_daily:8953,2026-07-11
+B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-05T13:51:38.812427,,9003,776.28,4,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-03,,,,2026-07-06,amazon_sec_daily:9003,2026-07-11
+B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-07T05:26:24.810778,,9056,742.36,4,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-04,,,,2026-07-08,amazon_sec_daily:9056,2026-07-11
+B0FFH8J5N9,JIVO,Jivo Mart Private Limited,2026-07-07T05:26:24.810778,,9065,-761.9,-1,"Jivo Groundnut Oil 2 Litre | Cold-Pressed, Unrefined Peanut Oil | Fortified with Vitamins A & D | Suitable for Everyday Cooking",2026-07-04,,,,2026-07-08,amazon_sec_daily:9065,2026-07-11
+B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-07T05:26:36.152814,,9111,2412.67,13,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-05,,,,2026-07-08,amazon_sec_daily:9111,2026-07-11
+B0H5QFNW4L,JIVO,Jivo Mart Private Limited.,2026-07-08T13:27:07.225557,,9195,3526.27,19,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-06,0.0,0.0,6,2026-07-09,amazon_sec_daily:9195,2026-07-11
+B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-09T05:32:51.134568,,9248,1299.13,7,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-07,0.0,0.0,7,2026-07-10,amazon_sec_daily:9248,2026-07-11
+B0H5QFNW4L,JIVO,Jivo Mart Private Limited,2026-07-10T05:59:13.934662,,9295,1855.92,10,"Jivo First Pressed Mustard Oil 1 Litre | Vitamin A and D Fortified | MUFA-Rich with Balanced Omega 3 and 6 |Cholesterol and Trans Fat Free Oil| Ideal for Frying, Pickling, Sautéing, Baking, and More",2026-07-08,0.0,0.0,5,2026-07-11,amazon_sec_daily:9295,2026-07-11
 ```
 
 ---

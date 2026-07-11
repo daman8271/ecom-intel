@@ -37,7 +37,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "month": 7,
    "targets": 30000.0,
    "type": "B2B",
-   "updated_at": "2026-07-09T05:27:54.293508+00:00",
+   "updated_at": "2026-07-10T09:37:29.666525+00:00",
    "year": 2026
   },
   {
@@ -58,7 +58,7 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "month": 7,
    "targets": 5000.0,
    "type": "B2B",
-   "updated_at": "2026-07-09T05:27:54.293508+00:00",
+   "updated_at": "2026-07-10T09:37:29.666525+00:00",
    "year": 2026
   },
   {

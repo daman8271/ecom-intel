@@ -16,7 +16,7 @@ tags:
 
 ## Fields
 - **id:** 33
-- **email:** JP@jivo.in
+- **email:** jp@jivo.in
 - **full_name:** JP Production
 - **employee_code:** EP0983
 - **is_active:** True

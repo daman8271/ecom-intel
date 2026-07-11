@@ -2,7 +2,7 @@
 type: data
 entity: pf-amazon
 table: master_products
-rows: 194
+rows: 195
 chunk: 1/1
 source: app-master
 tags:
@@ -14,7 +14,7 @@ tags:
 # Raw `master_products` rows for [[pf-amazon]]
 
 Up: [[pf-amazon]]
-Canonical raw rows (194) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (195) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_name,sku_sap_code,sku_sap_name,tax_rate,uom
@@ -179,6 +179,7 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 ,AMAZON,B0B8ZM849L,JIVO POMACE 5 + 2 LTR,PREMIUM,5 + 1 + 1 LTR,7.0,"Jivo Pomace Cooking Olive Oil Pack of 7 Litres (5L Tin with 2L bottle) | Ideal for Roasting, Frying, Baking All type of Cuisines| Healthy Cooking Oil for Daily use |",,,0.05,LTR
 3,AMAZON,B0917B9DCL,POMACE 1+1+1,PREMIUM,3 LTR,3.0,"Jivo Pomace Edible Olive Oil Cooking Daily Use | Rich in MUFA | Low in Saturated Fat|| Recommendable for Roasting, Frying, Baking All type of Cuisines (Pack of 3) PET Bottles",,,0.05,LTR
 ,AMAZON,B09Y9C34J3,JIVO POMACE 5LTR + CANOLA 5LTR,PREMIUM,5 + 5 CANOLA,10.0,Jivo Pomace Olive Oil 5 Litre & Canola Cold Press Edible Oil 5 Litre | Cooking Oil for Daily use and suitable for all types of cooking,,,0.05,LTR
+,AMAZON,B0B77MJQ8T,MUSTARD 5L+1L,COMMODITY,,6.0,Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil 5 Litre + 1 Litre,,,5.0,LTR
 2,AMAZON,B0BGPGRP4Z,MUSTARD 5L + 1L (BUNDLE),COMMODITY,5LTR + 1LTR (BUNDLE),6.0,"Jivo Premium Cold Pressed Kachi Ghani Pure Mustard Oil, 5 Litre &JIVO Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Liter",,,0.05,LTR
 ,AMAZON,B0FQC831P8,GIFT BOX,OTHER,GN,,"Jivo Premium Dry Fruits Gift Box with First Pressed Groundnut Oil | Roasted Cashews, Almonds, Pistachios & Black Raisins | Gift Hamper for Diwali, Festivals, Family, Friends & Corporate Gifting.",,,0.05,GMS
 ,AMAZON,B0FQ62GQNL,GIFT BOX,OTHER,KESAR,,"Jivo Premium Dry Fruits Gift Box with Pure Kashmiri Saffron (Kesar) | Roasted Cashews,Almonds,Pistachios & Black Raisins | Gift Hamper for Diwali, Festivals, Family, Friends & Corporate Gifting.",,,0.05,GMS

@@ -28,10 +28,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -42.5,
+   "delta_pct": -42.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 42766.0,
+   "ltrs": 42558.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 74327.0
   },
@@ -58,20 +58,20 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -24.5,
+   "delta_pct": -25.1,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 14120.0,
+   "ltrs": 14000.0,
    "name": "GROUNDNUT 5L",
    "prev_ltrs": 18690.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -38.8,
+   "delta_pct": -39.1,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 11370.0,
+   "ltrs": 11310.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 18580.0
   },
@@ -88,10 +88,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 32.8,
+   "delta_pct": 31.4,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 4336.0,
+   "ltrs": 4288.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 3264.0
   },

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: pomace-olive-oil-5l
-display_name: Pomace Olive Oil 5l
+display_name: Pomace Olive Oil (5 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Pomace Olive Oil 5l**
+**Pomace Olive Oil (5 L)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹2562 (48.7% off)

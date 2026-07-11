@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
  "cities": [
   {
    "city": "Delhi",
-   "value": 7542.0
+   "value": 8366.0
   },
   {
    "city": "Bengaluru",
-   "value": 4606.0
+   "value": 5101.0
   },
   {
    "city": "Hyderabad",
-   "value": 4353.0
+   "value": 4882.0
   },
   {
    "city": "Gurugram",
-   "value": 2326.0
+   "value": 2654.0
   },
   {
    "city": "Mumbai",
-   "value": 2142.0
-  },
-  {
-   "city": "Kolkata",
-   "value": 1572.0
+   "value": 2495.0
   },
   {
    "city": "Noida",
-   "value": 1530.0
+   "value": 1727.0
+  },
+  {
+   "city": "Kolkata",
+   "value": 1726.0
   },
   {
    "city": "Ghaziabad",
-   "value": 1461.0
+   "value": 1644.0
   },
   {
    "city": "Pune",
-   "value": 1380.0
+   "value": 1567.0
   },
   {
    "city": "Chennai",
-   "value": 952.0
+   "value": 1033.0
   }
  ],
  "errors": [],
@@ -166,12 +166,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "BLACK CARDAMOM"
+    "sub_category": "CARDAMOM"
    },
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "CARDAMOM"
+    "sub_category": "BLACK CARDAMOM"
    },
    {
     "category": "SLICED OLIVE",
@@ -631,12 +631,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "JIVO CLOVE"
+    "sub_category": "CLOVE"
    },
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "CLOVE"
+    "sub_category": "JIVO CLOVE"
    },
    {
     "category": "COCONUT",
@@ -1065,6 +1065,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    },
    {
     "category": "OLIVE",
+    "item": "EXTRA VIRGIN 2L + 2L",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
     "item": "EXTRA VIRGIN 3L",
     "sub_category": "EXTRA VIRGIN"
    },
@@ -1471,12 +1476,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "POMACE"
+    "sub_category": "JIVO POMACE"
    },
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "JIVO POMACE"
+    "sub_category": "POMACE"
    },
    {
     "category": "OLIVE",
@@ -1911,12 +1916,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "BASMATI"
+    "sub_category": "RICE"
    },
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "RICE"
+    "sub_category": "BASMATI"
    },
    {
     "category": "RICE",
@@ -2056,12 +2061,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "NATURAL HONEY"
+    "sub_category": "HONEY"
    },
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "HONEY"
+    "sub_category": "NATURAL HONEY"
    },
    {
     "category": "HONEY",
@@ -2179,14 +2184,14 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
     "sub_category": "SESAME OIL"
    },
    {
-    "category": "SEASAME OIL",
-    "item": "SESAME OIL 1L",
-    "sub_category": "SEASAME OIL"
-   },
-   {
     "category": "SESAME OIL",
     "item": "SESAME OIL 1L",
     "sub_category": "SESAME OIL"
+   },
+   {
+    "category": "SEASAME OIL",
+    "item": "SESAME OIL 1L",
+    "sub_category": "SEASAME OIL"
    },
    {
     "category": "DRINKS",
@@ -3052,8 +3057,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    }
   ]
  },
- "mapped_units": 70189.0,
- "mapped_value": 70189.0,
+ "mapped_units": 78765.0,
+ "mapped_value": 78765.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,267 +3069,267 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
  "states": [
   {
    "by_platform": {
-    "AMAZON": 8301.0
+    "AMAZON": 9317.0
    },
    "state": "UTTAR PRADESH",
-   "units": 8301.0,
-   "value": 8301.0
+   "units": 9317.0,
+   "value": 9317.0
   },
   {
    "by_platform": {
-    "AMAZON": 7738.0
+    "AMAZON": 8583.0
    },
    "state": "DELHI",
-   "units": 7738.0,
-   "value": 7738.0
+   "units": 8583.0,
+   "value": 8583.0
   },
   {
    "by_platform": {
-    "AMAZON": 7355.0
+    "AMAZON": 7968.0
    },
    "state": "WEST BENGAL",
-   "units": 7355.0,
-   "value": 7355.0
+   "units": 7968.0,
+   "value": 7968.0
   },
   {
    "by_platform": {
-    "AMAZON": 6858.0
+    "AMAZON": 7882.0
    },
    "state": "MAHARASHTRA",
-   "units": 6858.0,
-   "value": 6858.0
+   "units": 7882.0,
+   "value": 7882.0
   },
   {
    "by_platform": {
-    "AMAZON": 5569.0
+    "AMAZON": 6233.0
    },
    "state": "TELANGANA",
-   "units": 5569.0,
-   "value": 5569.0
+   "units": 6233.0,
+   "value": 6233.0
   },
   {
    "by_platform": {
-    "AMAZON": 5549.0
+    "AMAZON": 6187.0
    },
    "state": "KARNATAKA",
-   "units": 5549.0,
-   "value": 5549.0
+   "units": 6187.0,
+   "value": 6187.0
   },
   {
    "by_platform": {
-    "AMAZON": 4881.0
+    "AMAZON": 5486.0
    },
    "state": "HARYANA",
-   "units": 4881.0,
-   "value": 4881.0
+   "units": 5486.0,
+   "value": 5486.0
   },
   {
    "by_platform": {
-    "AMAZON": 2527.0
-   },
-   "state": "BIHAR",
-   "units": 2527.0,
-   "value": 2527.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 2520.0
+    "AMAZON": 2831.0
    },
    "state": "PUNJAB",
-   "units": 2520.0,
-   "value": 2520.0
+   "units": 2831.0,
+   "value": 2831.0
   },
   {
    "by_platform": {
-    "AMAZON": 2221.0
+    "AMAZON": 2750.0
    },
-   "state": "ODISHA",
-   "units": 2221.0,
-   "value": 2221.0
+   "state": "BIHAR",
+   "units": 2750.0,
+   "value": 2750.0
   },
   {
    "by_platform": {
-    "AMAZON": 2172.0
+    "AMAZON": 2535.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 2172.0,
-   "value": 2172.0
+   "units": 2535.0,
+   "value": 2535.0
   },
   {
    "by_platform": {
-    "AMAZON": 1978.0
+    "AMAZON": 2431.0
+   },
+   "state": "ODISHA",
+   "units": 2431.0,
+   "value": 2431.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 2191.0
    },
    "state": "TAMIL NADU",
-   "units": 1978.0,
-   "value": 1978.0
+   "units": 2191.0,
+   "value": 2191.0
   },
   {
    "by_platform": {
-    "AMAZON": 1904.0
+    "AMAZON": 2189.0
    },
    "state": "MADHYA PRADESH",
-   "units": 1904.0,
-   "value": 1904.0
+   "units": 2189.0,
+   "value": 2189.0
   },
   {
    "by_platform": {
-    "AMAZON": 1625.0
+    "AMAZON": 1804.0
    },
    "state": "JHARKHAND",
-   "units": 1625.0,
-   "value": 1625.0
+   "units": 1804.0,
+   "value": 1804.0
   },
   {
    "by_platform": {
-    "AMAZON": 1467.0
+    "AMAZON": 1673.0
    },
    "state": "RAJASTHAN",
-   "units": 1467.0,
-   "value": 1467.0
+   "units": 1673.0,
+   "value": 1673.0
   },
   {
    "by_platform": {
-    "AMAZON": 1385.0
+    "AMAZON": 1587.0
    },
    "state": "GUJARAT",
-   "units": 1385.0,
-   "value": 1385.0
+   "units": 1587.0,
+   "value": 1587.0
   },
   {
    "by_platform": {
-    "AMAZON": 1293.0
+    "AMAZON": 1447.0
    },
    "state": "ASSAM",
-   "units": 1293.0,
-   "value": 1293.0
+   "units": 1447.0,
+   "value": 1447.0
   },
   {
    "by_platform": {
-    "AMAZON": 702.0
+    "AMAZON": 850.0
    },
    "state": "KERALA",
-   "units": 702.0,
-   "value": 702.0
+   "units": 850.0,
+   "value": 850.0
   },
   {
    "by_platform": {
-    "AMAZON": 692.0
-   },
-   "state": "UTTARAKHAND",
-   "units": 692.0,
-   "value": 692.0
-  },
-  {
-   "by_platform": {
-    "AMAZON": 666.0
+    "AMAZON": 794.0
    },
    "state": "CHHATTISGARH",
-   "units": 666.0,
-   "value": 666.0
+   "units": 794.0,
+   "value": 794.0
   },
   {
    "by_platform": {
-    "AMAZON": 648.0
+    "AMAZON": 793.0
    },
    "state": "MIZORAM",
-   "units": 648.0,
-   "value": 648.0
+   "units": 793.0,
+   "value": 793.0
   },
   {
    "by_platform": {
-    "AMAZON": 563.0
+    "AMAZON": 785.0
+   },
+   "state": "UTTARAKHAND",
+   "units": 785.0,
+   "value": 785.0
+  },
+  {
+   "by_platform": {
+    "AMAZON": 636.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 563.0,
-   "value": 563.0
+   "units": 636.0,
+   "value": 636.0
   },
   {
    "by_platform": {
-    "AMAZON": 296.0
+    "AMAZON": 353.0
    },
    "state": "GOA",
-   "units": 296.0,
-   "value": 296.0
+   "units": 353.0,
+   "value": 353.0
   },
   {
    "by_platform": {
-    "AMAZON": 284.0
+    "AMAZON": 334.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 284.0,
-   "value": 284.0
+   "units": 334.0,
+   "value": 334.0
   },
   {
    "by_platform": {
-    "AMAZON": 275.0
+    "AMAZON": 313.0
    },
    "state": "TRIPURA",
-   "units": 275.0,
-   "value": 275.0
+   "units": 313.0,
+   "value": 313.0
   },
   {
    "by_platform": {
-    "AMAZON": 192.0
+    "AMAZON": 201.0
    },
    "state": "CHANDIGARH",
-   "units": 192.0,
-   "value": 192.0
+   "units": 201.0,
+   "value": 201.0
   },
   {
    "by_platform": {
-    "AMAZON": 165.0
+    "AMAZON": 196.0
    },
    "state": "MEGHALAYA",
-   "units": 165.0,
-   "value": 165.0
+   "units": 196.0,
+   "value": 196.0
   },
   {
    "by_platform": {
-    "AMAZON": 154.0
+    "AMAZON": 182.0
    },
    "state": "NAGALAND",
-   "units": 154.0,
-   "value": 154.0
+   "units": 182.0,
+   "value": 182.0
   },
   {
    "by_platform": {
-    "AMAZON": 71.0
+    "AMAZON": 81.0
    },
    "state": "PUDUCHERRY",
-   "units": 71.0,
-   "value": 71.0
+   "units": 81.0,
+   "value": 81.0
   },
   {
    "by_platform": {
-    "AMAZON": 61.0
+    "AMAZON": 64.0
    },
    "state": "SIKKIM",
-   "units": 61.0,
-   "value": 61.0
+   "units": 64.0,
+   "value": 64.0
   },
   {
    "by_platform": {
-    "AMAZON": 50.0
+    "AMAZON": 54.0
    },
    "state": "ARUNACHAL PRADESH",
-   "units": 50.0,
-   "value": 50.0
+   "units": 54.0,
+   "value": 54.0
   },
   {
    "by_platform": {
-    "AMAZON": 19.0
+    "AMAZON": 21.0
    },
    "state": "DADRA AND NAGAR HAVELI AND DAMAN AND DIU",
-   "units": 19.0,
-   "value": 19.0
+   "units": 21.0,
+   "value": 21.0
   },
   {
    "by_platform": {
-    "AMAZON": 4.0
+    "AMAZON": 10.0
    },
    "state": "ANDAMAN AND NICOBAR ISLANDS",
-   "units": 4.0,
-   "value": 4.0
+   "units": 10.0,
+   "value": 10.0
   },
   {
    "by_platform": {
@@ -3336,8 +3341,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
   }
  ],
  "sub_categories": [],
- "total_units": 72803.0,
- "total_value": 72803.0,
+ "total_units": 81737.0,
+ "total_value": 81737.0,
  "year": 2026
 }
 ```

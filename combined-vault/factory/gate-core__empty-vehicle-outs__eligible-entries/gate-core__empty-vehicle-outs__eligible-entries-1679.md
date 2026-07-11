@@ -27,9 +27,15 @@ tags:
 - **driver_name:** Binder
 - **driver_mobile:** 8950357509
 - **remarks:** 
+- **company_id:** 2
+- **company_code:** JIVO_MART
+- **company_name:** Jivo Mart
+- **arrival:** None
+- **arrival_no:** None
 - **release_invoice_count:** 0
 - **release_cancels_docking:** False
 
 ## Related
+- company_id -> [[comp-2]]
 - driver_id -> [[drv-251]]
 - vehicle_id -> [[veh-217]]

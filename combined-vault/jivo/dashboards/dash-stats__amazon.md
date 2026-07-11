@@ -21,7 +21,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
  "activeTrucks": 0,
  "inventory": 117,
  "openPOs": 0,
- "sells": 67523
+ "sells": 76457
 }
 ```
 

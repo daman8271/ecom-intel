@@ -22,50 +22,50 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
   {
    "date": "2026-07-01",
    "display_date": "01-07-2026",
-   "ltr": 1235.2,
-   "ops": 377632.0
+   "ltr": 1223.2,
+   "ops": 373782.0
   },
   {
    "date": "2026-07-02",
    "display_date": "02-07-2026",
-   "ltr": 1263.8,
-   "ops": 380433.0
+   "ltr": 1260.8,
+   "ops": 379381.0
   },
   {
    "date": "2026-07-03",
    "display_date": "03-07-2026",
-   "ltr": 2918.7,
-   "ops": 822525.0
+   "ltr": 2887.7,
+   "ops": 812477.0
   },
   {
    "date": "2026-07-04",
    "display_date": "04-07-2026",
-   "ltr": 5800.8,
-   "ops": 1515196.0
+   "ltr": 5792.3,
+   "ops": 1512095.0
   },
   {
    "date": "2026-07-05",
    "display_date": "05-07-2026",
-   "ltr": 4230.0,
-   "ops": 1090785.0
+   "ltr": 4233.0,
+   "ops": 1090075.0
   },
   {
    "date": "2026-07-06",
    "display_date": "06-07-2026",
-   "ltr": 2522.9,
+   "ltr": 2526.9,
    "ops": 696656.0
   },
   {
    "date": "2026-07-07",
    "display_date": "07-07-2026",
-   "ltr": 2475.4,
-   "ops": 621951.0
+   "ltr": 2466.9,
+   "ops": 620011.0
   },
   {
    "date": "2026-07-08",
    "display_date": "08-07-2026",
-   "ltr": 0.0,
-   "ops": 0.0
+   "ltr": 2674.6,
+   "ops": 665796.0
   },
   {
    "date": "2026-07-09",
@@ -211,50 +211,50 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    {
     "date": "2026-07-01",
     "display_date": "01-07-2026",
-    "ltr": 1235.2,
-    "ops": 377632.0
+    "ltr": 1223.2,
+    "ops": 373782.0
    },
    {
     "date": "2026-07-02",
     "display_date": "02-07-2026",
-    "ltr": 1263.8,
-    "ops": 380433.0
+    "ltr": 1260.8,
+    "ops": 379381.0
    },
    {
     "date": "2026-07-03",
     "display_date": "03-07-2026",
-    "ltr": 2918.7,
-    "ops": 822525.0
+    "ltr": 2887.7,
+    "ops": 812477.0
    },
    {
     "date": "2026-07-04",
     "display_date": "04-07-2026",
-    "ltr": 5800.8,
-    "ops": 1515196.0
+    "ltr": 5792.3,
+    "ops": 1512095.0
    },
    {
     "date": "2026-07-05",
     "display_date": "05-07-2026",
-    "ltr": 4230.0,
-    "ops": 1090785.0
+    "ltr": 4233.0,
+    "ops": 1090075.0
    },
    {
     "date": "2026-07-06",
     "display_date": "06-07-2026",
-    "ltr": 2522.9,
+    "ltr": 2526.9,
     "ops": 696656.0
    },
    {
     "date": "2026-07-07",
     "display_date": "07-07-2026",
-    "ltr": 2475.4,
-    "ops": 621951.0
+    "ltr": 2466.9,
+    "ops": 620011.0
    },
    {
     "date": "2026-07-08",
     "display_date": "08-07-2026",
-    "ltr": 0.0,
-    "ops": 0.0
+    "ltr": 2674.6,
+    "ops": 665796.0
    },
    {
     "date": "2026-07-09",
@@ -404,26 +404,26 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
  ],
  "days_in_month": 31,
  "defaulted_to_latest": true,
- "elapsed_days": 7,
+ "elapsed_days": 8,
  "format": "FLIPKART",
  "item_label": "Product",
  "item_table_subtitle": "Month-to-date shipped totals",
  "items": [
   {
-   "drr_liters": 21.428571428571427,
-   "drr_qty": 10.714285714285714,
-   "drr_value": 5190.142857142857,
+   "drr_liters": 20.25,
+   "drr_qty": 10.125,
+   "drr_value": 4900.375,
    "estimated_liters": null,
    "item": "CANOLA 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 36331.0,
-   "liters": 150.0,
-   "qty": 75.0
+   "landing_amt": 39203.0,
+   "liters": 162.0,
+   "qty": 81.0
   },
   {
-   "drr_liters": 1.7142857142857142,
-   "drr_qty": 0.5714285714285714,
-   "drr_value": 510.85714285714283,
+   "drr_liters": 1.5,
+   "drr_qty": 0.5,
+   "drr_value": 447.0,
    "estimated_liters": null,
    "item": "CANOLA 1+1L + EXTRA VIRGIN 1L",
    "item_head": "PREMIUM",
@@ -432,20 +432,20 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 4.0
   },
   {
-   "drr_liters": 2.857142857142857,
-   "drr_qty": 2.857142857142857,
-   "drr_value": 757.0,
+   "drr_liters": 2.75,
+   "drr_qty": 2.75,
+   "drr_value": 730.875,
    "estimated_liters": null,
    "item": "CANOLA 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 5299.0,
-   "liters": 20.0,
-   "qty": 20.0
+   "landing_amt": 5847.0,
+   "liters": 22.0,
+   "qty": 22.0
   },
   {
-   "drr_liters": 1.1428571428571428,
-   "drr_qty": 0.2857142857142857,
-   "drr_value": 382.85714285714283,
+   "drr_liters": 1.0,
+   "drr_qty": 0.25,
+   "drr_value": 335.0,
    "estimated_liters": null,
    "item": "CANOLA 2L + EXTRA LIGHT 1L + JIVO POMACE 1L",
    "item_head": "PREMIUM",
@@ -454,9 +454,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 2.0
   },
   {
-   "drr_liters": 11.428571428571429,
-   "drr_qty": 2.2857142857142856,
-   "drr_value": 2543.0,
+   "drr_liters": 10.0,
+   "drr_qty": 2.0,
+   "drr_value": 2225.125,
    "estimated_liters": null,
    "item": "CANOLA 4+1L",
    "item_head": "PREMIUM",
@@ -465,42 +465,42 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 16.0
   },
   {
-   "drr_liters": 462.85714285714283,
-   "drr_qty": 77.14285714285714,
-   "drr_value": 92628.0,
+   "drr_liters": 465.75,
+   "drr_qty": 77.625,
+   "drr_value": 93112.75,
    "estimated_liters": null,
    "item": "CANOLA 5+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 648396.0,
-   "liters": 3240.0,
-   "qty": 540.0
+   "landing_amt": 744902.0,
+   "liters": 3726.0,
+   "qty": 621.0
   },
   {
-   "drr_liters": 30.0,
-   "drr_qty": 6.0,
-   "drr_value": 7108.0,
+   "drr_liters": 28.75,
+   "drr_qty": 5.75,
+   "drr_value": 6788.5,
    "estimated_liters": null,
    "item": "CANOLA 5L",
    "item_head": "PREMIUM",
-   "landing_amt": 49756.0,
-   "liters": 210.0,
-   "qty": 42.0
+   "landing_amt": 54308.0,
+   "liters": 230.0,
+   "qty": 46.0
   },
   {
-   "drr_liters": 14.857142857142858,
-   "drr_qty": 2.857142857142857,
-   "drr_value": 2997.285714285714,
+   "drr_liters": 15.6,
+   "drr_qty": 3.0,
+   "drr_value": 3159.875,
    "estimated_liters": null,
    "item": "CANOLA 5L + EV 200 ML",
    "item_head": "PREMIUM",
-   "landing_amt": 20981.0,
-   "liters": 104.0,
-   "qty": 20.0
+   "landing_amt": 25279.0,
+   "liters": 124.8,
+   "qty": 24.0
   },
   {
-   "drr_liters": 2.5714285714285716,
-   "drr_qty": 0.42857142857142855,
-   "drr_value": 716.1428571428571,
+   "drr_liters": 2.25,
+   "drr_qty": 0.375,
+   "drr_value": 626.625,
    "estimated_liters": null,
    "item": "CANOLA 5L + EXTRA LIGHT 1L",
    "item_head": "PREMIUM",
@@ -509,9 +509,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 3.0
   },
   {
-   "drr_liters": 1.7142857142857142,
-   "drr_qty": 0.2857142857142857,
-   "drr_value": 423.42857142857144,
+   "drr_liters": 1.5,
+   "drr_qty": 0.25,
+   "drr_value": 370.5,
    "estimated_liters": null,
    "item": "CANOLA 5L + JIVO POMACE 1L",
    "item_head": "PREMIUM",
@@ -520,9 +520,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 2.0
   },
   {
-   "drr_liters": 1.2857142857142858,
-   "drr_qty": 1.2857142857142858,
-   "drr_value": 675.5714285714286,
+   "drr_liters": 1.125,
+   "drr_qty": 1.125,
+   "drr_value": 591.125,
    "estimated_liters": null,
    "item": "COCONUT 1L",
    "item_head": "PREMIUM",
@@ -531,9 +531,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 9.0
   },
   {
-   "drr_liters": 3.0,
-   "drr_qty": 6.0,
-   "drr_value": 1276.7142857142858,
+   "drr_liters": 2.625,
+   "drr_qty": 5.25,
+   "drr_value": 1117.125,
    "estimated_liters": null,
    "item": "COCONUT 500ML",
    "item_head": "PREMIUM",
@@ -542,53 +542,53 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 42.0
   },
   {
-   "drr_liters": 13.928571428571429,
-   "drr_qty": 9.285714285714286,
-   "drr_value": 4590.285714285715,
+   "drr_liters": 13.875,
+   "drr_qty": 9.25,
+   "drr_value": 4582.625,
    "estimated_liters": null,
    "item": "COCONUT 500ML * 3",
    "item_head": "PREMIUM",
-   "landing_amt": 32132.0,
-   "liters": 97.5,
-   "qty": 65.0
+   "landing_amt": 36661.0,
+   "liters": 111.0,
+   "qty": 74.0
   },
   {
-   "drr_liters": 198.42857142857142,
-   "drr_qty": 66.14285714285714,
-   "drr_value": 79322.57142857143,
+   "drr_liters": 187.875,
+   "drr_qty": 62.625,
+   "drr_value": 74998.875,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 1+1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 555258.0,
-   "liters": 1389.0,
-   "qty": 463.0
+   "landing_amt": 599991.0,
+   "liters": 1503.0,
+   "qty": 501.0
   },
   {
-   "drr_liters": 3.4285714285714284,
-   "drr_qty": 1.7142857142857142,
-   "drr_value": 1854.857142857143,
+   "drr_liters": 3.25,
+   "drr_qty": 1.625,
+   "drr_value": 1727.625,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 12984.0,
-   "liters": 24.0,
-   "qty": 12.0
+   "landing_amt": 13821.0,
+   "liters": 26.0,
+   "qty": 13.0
   },
   {
-   "drr_liters": 100.57142857142857,
-   "drr_qty": 25.142857142857142,
-   "drr_value": 37146.857142857145,
+   "drr_liters": 103.0,
+   "drr_qty": 25.75,
+   "drr_value": 38060.125,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 1L+1L+1L+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 260028.0,
-   "liters": 704.0,
-   "qty": 176.0
+   "landing_amt": 304481.0,
+   "liters": 824.0,
+   "qty": 206.0
   },
   {
-   "drr_liters": 0.2857142857142857,
-   "drr_qty": 0.14285714285714285,
-   "drr_value": 160.28571428571428,
+   "drr_liters": 0.25,
+   "drr_qty": 0.125,
+   "drr_value": 140.25,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 1L+EXTRA VIRGIN 1L",
    "item_head": "PREMIUM",
@@ -597,75 +597,75 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 1.0
   },
   {
-   "drr_liters": 20.142857142857142,
-   "drr_qty": 6.714285714285714,
-   "drr_value": 7159.142857142857,
+   "drr_liters": 22.5,
+   "drr_qty": 7.5,
+   "drr_value": 7905.875,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 1L+POMACE 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 50114.0,
-   "liters": 141.0,
-   "qty": 47.0
+   "landing_amt": 63247.0,
+   "liters": 180.0,
+   "qty": 60.0
   },
   {
-   "drr_liters": 9.428571428571429,
-   "drr_qty": 3.142857142857143,
-   "drr_value": 3909.8571428571427,
+   "drr_liters": 10.875,
+   "drr_qty": 3.625,
+   "drr_value": 4506.0,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 1L+POMACE 1L+EXTRA VIRGIN 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 27369.0,
-   "liters": 66.0,
-   "qty": 22.0
+   "landing_amt": 36048.0,
+   "liters": 87.0,
+   "qty": 29.0
   },
   {
-   "drr_liters": 1.4285714285714286,
-   "drr_qty": 0.7142857142857143,
-   "drr_value": 799.1428571428571,
+   "drr_liters": 1.75,
+   "drr_qty": 0.875,
+   "drr_value": 975.25,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 2L",
    "item_head": "PREMIUM",
-   "landing_amt": 5594.0,
-   "liters": 10.0,
-   "qty": 5.0
+   "landing_amt": 7802.0,
+   "liters": 14.0,
+   "qty": 7.0
   },
   {
-   "drr_liters": 12.0,
-   "drr_qty": 4.0,
-   "drr_value": 4678.571428571428,
+   "drr_liters": 10.875,
+   "drr_qty": 3.625,
+   "drr_value": 4243.375,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 3L",
    "item_head": "PREMIUM",
-   "landing_amt": 32750.0,
-   "liters": 84.0,
-   "qty": 28.0
+   "landing_amt": 33947.0,
+   "liters": 87.0,
+   "qty": 29.0
   },
   {
-   "drr_liters": 76.28571428571429,
-   "drr_qty": 12.714285714285714,
-   "drr_value": 27661.285714285714,
+   "drr_liters": 72.75,
+   "drr_qty": 12.125,
+   "drr_value": 26224.625,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 3L+3L",
    "item_head": "PREMIUM",
-   "landing_amt": 193629.0,
-   "liters": 534.0,
-   "qty": 89.0
+   "landing_amt": 209797.0,
+   "liters": 582.0,
+   "qty": 97.0
   },
   {
-   "drr_liters": 10.799999999999999,
-   "drr_qty": 2.5714285714285716,
-   "drr_value": 3062.8571428571427,
+   "drr_liters": 12.6,
+   "drr_qty": 3.0,
+   "drr_value": 3566.5,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 4L + EV 200 ML",
    "item_head": "PREMIUM",
-   "landing_amt": 21440.0,
-   "liters": 75.6,
-   "qty": 18.0
+   "landing_amt": 28532.0,
+   "liters": 100.8,
+   "qty": 24.0
   },
   {
-   "drr_liters": 8.571428571428571,
-   "drr_qty": 1.7142857142857142,
-   "drr_value": 4542.0,
+   "drr_liters": 7.5,
+   "drr_qty": 1.5,
+   "drr_value": 3974.25,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 5L",
    "item_head": "PREMIUM",
@@ -674,20 +674,20 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 12.0
   },
   {
-   "drr_liters": 41.642857142857146,
-   "drr_qty": 7.571428571428571,
-   "drr_value": 15273.42857142857,
+   "drr_liters": 38.5,
+   "drr_qty": 7.0,
+   "drr_value": 14101.375,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 5L + EV 500 ML",
    "item_head": "PREMIUM",
-   "landing_amt": 106914.0,
-   "liters": 291.5,
-   "qty": 53.0
+   "landing_amt": 112811.0,
+   "liters": 308.0,
+   "qty": 56.0
   },
   {
-   "drr_liters": 6.0,
-   "drr_qty": 0.8571428571428571,
-   "drr_value": 3014.5714285714284,
+   "drr_liters": 5.25,
+   "drr_qty": 0.75,
+   "drr_value": 2637.75,
    "estimated_liters": null,
    "item": "EXTRA LIGHT 5L + EXTRA LIGHT 2L",
    "item_head": "PREMIUM",
@@ -696,42 +696,42 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 6.0
   },
   {
-   "drr_liters": 38.857142857142854,
-   "drr_qty": 19.428571428571427,
-   "drr_value": 19358.85714285714,
+   "drr_liters": 34.0,
+   "drr_qty": 17.0,
+   "drr_value": 16938.75,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 135512.0,
+   "landing_amt": 135510.0,
    "liters": 272.0,
    "qty": 136.0
   },
   {
-   "drr_liters": 11.857142857142858,
-   "drr_qty": 11.857142857142858,
-   "drr_value": 8857.714285714286,
+   "drr_liters": 11.25,
+   "drr_qty": 11.25,
+   "drr_value": 8386.875,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 62004.0,
-   "liters": 83.0,
-   "qty": 83.0
+   "landing_amt": 67095.0,
+   "liters": 90.0,
+   "qty": 90.0
   },
   {
-   "drr_liters": 2.4857142857142853,
-   "drr_qty": 12.428571428571429,
-   "drr_value": 3361.4285714285716,
+   "drr_liters": 2.5,
+   "drr_qty": 12.5,
+   "drr_value": 3469.625,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 200ML",
    "item_head": "PREMIUM",
-   "landing_amt": 23530.0,
-   "liters": 17.4,
-   "qty": 87.0
+   "landing_amt": 27757.0,
+   "liters": 20.0,
+   "qty": 100.0
   },
   {
-   "drr_liters": 2.2857142857142856,
-   "drr_qty": 2.857142857142857,
-   "drr_value": 1572.7142857142858,
+   "drr_liters": 2.0,
+   "drr_qty": 2.5,
+   "drr_value": 1376.125,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 200ML X 4",
    "item_head": "PREMIUM",
@@ -740,64 +740,75 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 20.0
   },
   {
-   "drr_liters": 13.357142857142858,
-   "drr_qty": 26.714285714285715,
-   "drr_value": 9527.42857142857,
+   "drr_liters": 1.0,
+   "drr_qty": 0.25,
+   "drr_value": 475.625,
+   "estimated_liters": null,
+   "item": "EXTRA VIRGIN 2L + 2L",
+   "item_head": "PREMIUM",
+   "landing_amt": 3805.0,
+   "liters": 8.0,
+   "qty": 2.0
+  },
+  {
+   "drr_liters": 13.3125,
+   "drr_qty": 26.625,
+   "drr_value": 9502.0,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 500ML",
    "item_head": "PREMIUM",
-   "landing_amt": 66692.0,
-   "liters": 93.5,
-   "qty": 187.0
+   "landing_amt": 76016.0,
+   "liters": 106.5,
+   "qty": 213.0
   },
   {
-   "drr_liters": 15.428571428571429,
-   "drr_qty": 10.285714285714286,
-   "drr_value": 7993.571428571428,
+   "drr_liters": 14.8125,
+   "drr_qty": 9.875,
+   "drr_value": 7653.875,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 500ML X3",
    "item_head": "PREMIUM",
-   "landing_amt": 55955.0,
-   "liters": 108.0,
-   "qty": 72.0
+   "landing_amt": 61231.0,
+   "liters": 118.5,
+   "qty": 79.0
   },
   {
-   "drr_liters": 20.0,
-   "drr_qty": 4.0,
-   "drr_value": 11530.42857142857,
+   "drr_liters": 18.75,
+   "drr_qty": 3.75,
+   "drr_value": 10869.625,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 5L",
    "item_head": "PREMIUM",
-   "landing_amt": 80713.0,
-   "liters": 140.0,
-   "qty": 28.0
+   "landing_amt": 86957.0,
+   "liters": 150.0,
+   "qty": 30.0
   },
   {
-   "drr_liters": 57.199999999999996,
-   "drr_qty": 11.0,
-   "drr_value": 27019.14285714286,
+   "drr_liters": 53.3,
+   "drr_qty": 10.25,
+   "drr_value": 25215.0,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 5L + EV 200ML",
    "item_head": "PREMIUM",
-   "landing_amt": 189134.0,
-   "liters": 400.4,
-   "qty": 77.0
+   "landing_amt": 201720.0,
+   "liters": 426.4,
+   "qty": 82.0
   },
   {
-   "drr_liters": 4.8999999999999995,
-   "drr_qty": 7.0,
-   "drr_value": 3203.0,
+   "drr_liters": 4.375,
+   "drr_qty": 6.25,
+   "drr_value": 2857.875,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 700 ML",
    "item_head": "PREMIUM",
-   "landing_amt": 22421.0,
-   "liters": 34.3,
-   "qty": 49.0
+   "landing_amt": 22863.0,
+   "liters": 35.0,
+   "qty": 50.0
   },
   {
-   "drr_liters": 0.2571428571428572,
-   "drr_qty": 0.2857142857142857,
-   "drr_value": 226.0,
+   "drr_liters": 0.225,
+   "drr_qty": 0.25,
+   "drr_value": 197.75,
    "estimated_liters": null,
    "item": "EXTRA VIRGIN 900 ML",
    "item_head": "PREMIUM",
@@ -806,9 +817,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 2.0
   },
   {
-   "drr_liters": 2.142857142857143,
-   "drr_qty": 0.7142857142857143,
-   "drr_value": 395.85714285714283,
+   "drr_liters": 1.875,
+   "drr_qty": 0.625,
+   "drr_value": 346.375,
    "estimated_liters": null,
    "item": "GOLD 1+1+1L",
    "item_head": "COMMODITY",
@@ -817,9 +828,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 5.0
   },
   {
-   "drr_liters": 15.714285714285714,
-   "drr_qty": 7.857142857142857,
-   "drr_value": 2675.285714285714,
+   "drr_liters": 13.75,
+   "drr_qty": 6.875,
+   "drr_value": 2340.875,
    "estimated_liters": null,
    "item": "GOLD 1+1L",
    "item_head": "COMMODITY",
@@ -828,9 +839,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 55.0
   },
   {
-   "drr_liters": 0.14285714285714285,
-   "drr_qty": 0.14285714285714285,
-   "drr_value": 35.714285714285715,
+   "drr_liters": 0.125,
+   "drr_qty": 0.125,
+   "drr_value": 31.25,
    "estimated_liters": null,
    "item": "GOLD 1L",
    "item_head": "COMMODITY",
@@ -839,9 +850,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 1.0
   },
   {
-   "drr_liters": 35.0,
-   "drr_qty": 7.0,
-   "drr_value": 5724.714285714285,
+   "drr_liters": 30.625,
+   "drr_qty": 6.125,
+   "drr_value": 5009.125,
    "estimated_liters": null,
    "item": "GOLD 5L",
    "item_head": "COMMODITY",
@@ -850,75 +861,75 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 49.0
   },
   {
-   "drr_liters": 11.142857142857142,
-   "drr_qty": 1.8571428571428572,
-   "drr_value": 1994.142857142857,
+   "drr_liters": 12.0,
+   "drr_qty": 2.0,
+   "drr_value": 2140.5,
    "estimated_liters": null,
    "item": "GOLD 5L+1L",
    "item_head": "COMMODITY",
-   "landing_amt": 13959.0,
-   "liters": 78.0,
-   "qty": 13.0
+   "landing_amt": 17124.0,
+   "liters": 96.0,
+   "qty": 16.0
   },
   {
-   "drr_liters": 34.0,
-   "drr_qty": 17.0,
-   "drr_value": 8267.142857142857,
+   "drr_liters": 33.25,
+   "drr_qty": 16.625,
+   "drr_value": 8110.0,
    "estimated_liters": null,
    "item": "GROUNDNUT 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 57870.0,
-   "liters": 238.0,
-   "qty": 119.0
+   "landing_amt": 64880.0,
+   "liters": 266.0,
+   "qty": 133.0
   },
   {
-   "drr_liters": 14.428571428571429,
-   "drr_qty": 14.428571428571429,
-   "drr_value": 3464.0,
+   "drr_liters": 14.375,
+   "drr_qty": 14.375,
+   "drr_value": 3427.75,
    "estimated_liters": null,
    "item": "GROUNDNUT 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 24248.0,
-   "liters": 101.0,
-   "qty": 101.0
+   "landing_amt": 27422.0,
+   "liters": 115.0,
+   "qty": 115.0
   },
   {
-   "drr_liters": 175.71428571428572,
-   "drr_qty": 29.285714285714285,
-   "drr_value": 32462.571428571428,
+   "drr_liters": 186.75,
+   "drr_qty": 31.125,
+   "drr_value": 34735.5,
    "estimated_liters": null,
    "item": "GROUNDNUT 5+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 227238.0,
-   "liters": 1230.0,
-   "qty": 205.0
+   "landing_amt": 277884.0,
+   "liters": 1494.0,
+   "qty": 249.0
   },
   {
-   "drr_liters": 172.14285714285714,
-   "drr_qty": 34.42857142857143,
-   "drr_value": 36701.857142857145,
+   "drr_liters": 153.75,
+   "drr_qty": 30.75,
+   "drr_value": 32914.25,
    "estimated_liters": null,
    "item": "GROUNDNUT 5L",
    "item_head": "PREMIUM",
-   "landing_amt": 256913.0,
-   "liters": 1205.0,
-   "qty": 241.0
+   "landing_amt": 263314.0,
+   "liters": 1230.0,
+   "qty": 246.0
   },
   {
-   "drr_liters": 46.05714285714286,
-   "drr_qty": 8.857142857142858,
-   "drr_value": 9386.285714285714,
+   "drr_liters": 51.35,
+   "drr_qty": 9.875,
+   "drr_value": 10443.5,
    "estimated_liters": null,
    "item": "GROUNDNUT 5L + EV 200 ML",
    "item_head": "PREMIUM",
-   "landing_amt": 65704.0,
-   "liters": 322.4,
-   "qty": 62.0
+   "landing_amt": 83548.0,
+   "liters": 410.8,
+   "qty": 79.0
   },
   {
-   "drr_liters": 0.8571428571428571,
-   "drr_qty": 0.2857142857142857,
-   "drr_value": 401.85714285714283,
+   "drr_liters": 0.75,
+   "drr_qty": 0.25,
+   "drr_value": 351.625,
    "estimated_liters": null,
    "item": "JIVO EXTRA LIGHT 1L+EXTRA VIRGIN 1L+POMACE 1L",
    "item_head": "PREMIUM",
@@ -927,64 +938,64 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 2.0
   },
   {
-   "drr_liters": 27.428571428571427,
-   "drr_qty": 13.714285714285714,
-   "drr_value": 5219.142857142857,
+   "drr_liters": 25.5,
+   "drr_qty": 12.75,
+   "drr_value": 4867.125,
    "estimated_liters": null,
    "item": "JIVO MUSTARD 1+1L",
    "item_head": "COMMODITY",
-   "landing_amt": 36534.0,
-   "liters": 192.0,
-   "qty": 96.0
+   "landing_amt": 38937.0,
+   "liters": 204.0,
+   "qty": 102.0
   },
   {
-   "drr_liters": 10.285714285714286,
-   "drr_qty": 3.4285714285714284,
-   "drr_value": 3458.714285714286,
+   "drr_liters": 9.375,
+   "drr_qty": 3.125,
+   "drr_value": 3141.375,
    "estimated_liters": null,
    "item": "JIVO POMACE 1+1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 24211.0,
-   "liters": 72.0,
-   "qty": 24.0
+   "landing_amt": 25131.0,
+   "liters": 75.0,
+   "qty": 25.0
   },
   {
-   "drr_liters": 18.0,
-   "drr_qty": 9.0,
-   "drr_value": 6127.571428571428,
+   "drr_liters": 19.75,
+   "drr_qty": 9.875,
+   "drr_value": 6633.125,
    "estimated_liters": null,
    "item": "JIVO POMACE 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 42893.0,
-   "liters": 126.0,
-   "qty": 63.0
+   "landing_amt": 53065.0,
+   "liters": 158.0,
+   "qty": 79.0
   },
   {
-   "drr_liters": 3.7142857142857144,
-   "drr_qty": 3.7142857142857144,
-   "drr_value": 1876.857142857143,
+   "drr_liters": 3.75,
+   "drr_qty": 3.75,
+   "drr_value": 1887.75,
    "estimated_liters": null,
    "item": "JIVO POMACE 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 13138.0,
-   "liters": 26.0,
-   "qty": 26.0
+   "landing_amt": 15102.0,
+   "liters": 30.0,
+   "qty": 30.0
   },
   {
-   "drr_liters": 5.571428571428571,
-   "drr_qty": 1.8571428571428572,
-   "drr_value": 1932.857142857143,
+   "drr_liters": 6.0,
+   "drr_qty": 2.0,
+   "drr_value": 2043.625,
    "estimated_liters": null,
    "item": "JIVO POMACE 3L",
    "item_head": "PREMIUM",
-   "landing_amt": 13530.0,
-   "liters": 39.0,
-   "qty": 13.0
+   "landing_amt": 16349.0,
+   "liters": 48.0,
+   "qty": 16.0
   },
   {
-   "drr_liters": 16.285714285714285,
-   "drr_qty": 2.7142857142857144,
-   "drr_value": 5424.285714285715,
+   "drr_liters": 14.25,
+   "drr_qty": 2.375,
+   "drr_value": 4746.25,
    "estimated_liters": null,
    "item": "JIVO POMACE 3L+ 3L",
    "item_head": "PREMIUM",
@@ -993,9 +1004,9 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 19.0
   },
   {
-   "drr_liters": 0.5714285714285714,
-   "drr_qty": 0.14285714285714285,
-   "drr_value": 165.85714285714286,
+   "drr_liters": 0.5,
+   "drr_qty": 0.125,
+   "drr_value": 145.125,
    "estimated_liters": null,
    "item": "JIVO POMACE 3L + EL 1L",
    "item_head": "PREMIUM",
@@ -1004,31 +1015,31 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 1.0
   },
   {
-   "drr_liters": 306.0,
-   "drr_qty": 51.0,
-   "drr_value": 84942.28571428571,
+   "drr_liters": 301.5,
+   "drr_qty": 50.25,
+   "drr_value": 83480.5,
    "estimated_liters": null,
    "item": "JIVO POMACE 5+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 594596.0,
-   "liters": 2142.0,
-   "qty": 357.0
+   "landing_amt": 667844.0,
+   "liters": 2412.0,
+   "qty": 402.0
   },
   {
-   "drr_liters": 100.0,
-   "drr_qty": 20.0,
-   "drr_value": 33516.28571428572,
+   "drr_liters": 92.5,
+   "drr_qty": 18.5,
+   "drr_value": 31129.625,
    "estimated_liters": null,
    "item": "JIVO POMACE 5L",
    "item_head": "PREMIUM",
-   "landing_amt": 234614.0,
-   "liters": 700.0,
-   "qty": 140.0
+   "landing_amt": 249037.0,
+   "liters": 740.0,
+   "qty": 148.0
   },
   {
-   "drr_liters": 3.5714285714285716,
-   "drr_qty": 0.7142857142857143,
-   "drr_value": 771.7142857142857,
+   "drr_liters": 3.125,
+   "drr_qty": 0.625,
+   "drr_value": 675.25,
    "estimated_liters": null,
    "item": "MUSTARD 5L",
    "item_head": "COMMODITY",
@@ -1037,20 +1048,20 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 5.0
   },
   {
-   "drr_liters": 111.42857142857143,
-   "drr_qty": 18.571428571428573,
-   "drr_value": 20970.85714285714,
+   "drr_liters": 102.75,
+   "drr_qty": 17.125,
+   "drr_value": 19346.75,
    "estimated_liters": null,
    "item": "MUSTARD 5L+1L",
    "item_head": "COMMODITY",
-   "landing_amt": 146796.0,
-   "liters": 780.0,
-   "qty": 130.0
+   "landing_amt": 154774.0,
+   "liters": 822.0,
+   "qty": 137.0
   },
   {
-   "drr_liters": 4.285714285714286,
-   "drr_qty": 0.7142857142857143,
-   "drr_value": 846.5714285714286,
+   "drr_liters": 3.75,
+   "drr_qty": 0.625,
+   "drr_value": 740.75,
    "estimated_liters": null,
    "item": "MUSTARD 5L+CANOLA 1L",
    "item_head": "COMMODITY",
@@ -1059,20 +1070,20 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 5.0
   },
   {
-   "drr_liters": 283.7714285714286,
-   "drr_qty": 54.57142857142857,
-   "drr_value": 50121.142857142855,
+   "drr_liters": 317.85,
+   "drr_qty": 61.125,
+   "drr_value": 56128.375,
    "estimated_liters": null,
    "item": "MUSTARD 5L + EV 200 ML",
    "item_head": "COMMODITY",
-   "landing_amt": 350848.0,
-   "liters": 1986.4,
-   "qty": 382.0
+   "landing_amt": 449027.0,
+   "liters": 2542.8,
+   "qty": 489.0
   },
   {
-   "drr_liters": 2.5714285714285716,
-   "drr_qty": 0.8571428571428571,
-   "drr_value": 689.0,
+   "drr_liters": 2.25,
+   "drr_qty": 0.75,
+   "drr_value": 602.875,
    "estimated_liters": null,
    "item": "POMACE 1L+CANOLA 1+1L",
    "item_head": "PREMIUM",
@@ -1081,97 +1092,108 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 6.0
   },
   {
-   "drr_liters": 3.4285714285714284,
-   "drr_qty": 0.5714285714285714,
-   "drr_value": 1129.0,
+   "drr_liters": 0.25,
+   "drr_qty": 0.125,
+   "drr_value": 76.125,
+   "estimated_liters": null,
+   "item": "POMACE 1L+CANOLA 1L",
+   "item_head": "PREMIUM",
+   "landing_amt": 609.0,
+   "liters": 2.0,
+   "qty": 1.0
+  },
+  {
+   "drr_liters": 3.75,
+   "drr_qty": 0.625,
+   "drr_value": 1234.25,
    "estimated_liters": null,
    "item": "POMACE 3L + EXTRA VIRGIN 3L",
    "item_head": "PREMIUM",
-   "landing_amt": 7903.0,
-   "liters": 24.0,
-   "qty": 4.0
+   "landing_amt": 9874.0,
+   "liters": 30.0,
+   "qty": 5.0
   },
   {
-   "drr_liters": 0.5714285714285714,
-   "drr_qty": 0.5714285714285714,
-   "drr_value": 121.0,
+   "drr_liters": 0.625,
+   "drr_qty": 0.625,
+   "drr_value": 131.5,
    "estimated_liters": null,
    "item": "RICE BRAN 1L",
    "item_head": "COMMODITY",
-   "landing_amt": 847.0,
-   "liters": 4.0,
-   "qty": 4.0
+   "landing_amt": 1052.0,
+   "liters": 5.0,
+   "qty": 5.0
   },
   {
-   "drr_liters": 18.571428571428573,
-   "drr_qty": 9.285714285714286,
-   "drr_value": 3061.8571428571427,
+   "drr_liters": 17.5,
+   "drr_qty": 8.75,
+   "drr_value": 2876.875,
    "estimated_liters": null,
    "item": "RICE BRAN 2L",
    "item_head": "COMMODITY",
-   "landing_amt": 21433.0,
-   "liters": 130.0,
-   "qty": 65.0
+   "landing_amt": 23015.0,
+   "liters": 140.0,
+   "qty": 70.0
   },
   {
-   "drr_liters": 95.71428571428571,
-   "drr_qty": 19.142857142857142,
-   "drr_value": 18252.0,
+   "drr_liters": 92.5,
+   "drr_qty": 18.5,
+   "drr_value": 17744.25,
    "estimated_liters": null,
    "item": "RICE BRAN 5L",
    "item_head": "COMMODITY",
-   "landing_amt": 127764.0,
-   "liters": 670.0,
-   "qty": 134.0
+   "landing_amt": 141954.0,
+   "liters": 740.0,
+   "qty": 148.0
   },
   {
-   "drr_liters": 13.714285714285714,
-   "drr_qty": 4.571428571428571,
-   "drr_value": 4439.0,
+   "drr_liters": 13.875,
+   "drr_qty": 4.625,
+   "drr_value": 4516.75,
    "estimated_liters": null,
    "item": "SANO POMACE 1+1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 31073.0,
-   "liters": 96.0,
-   "qty": 32.0
+   "landing_amt": 36134.0,
+   "liters": 111.0,
+   "qty": 37.0
   },
   {
-   "drr_liters": 9.428571428571429,
-   "drr_qty": 4.714285714285714,
-   "drr_value": 2990.0,
+   "drr_liters": 9.0,
+   "drr_qty": 4.5,
+   "drr_value": 2867.875,
    "estimated_liters": null,
    "item": "SANO POMACE 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 20930.0,
-   "liters": 66.0,
-   "qty": 33.0
+   "landing_amt": 22943.0,
+   "liters": 72.0,
+   "qty": 36.0
   },
   {
-   "drr_liters": 0.2857142857142857,
-   "drr_qty": 0.2857142857142857,
-   "drr_value": 108.85714285714286,
+   "drr_liters": 0.375,
+   "drr_qty": 0.375,
+   "drr_value": 140.375,
    "estimated_liters": null,
    "item": "SANO POMACE 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 762.0,
-   "liters": 2.0,
-   "qty": 2.0
+   "landing_amt": 1123.0,
+   "liters": 3.0,
+   "qty": 3.0
   },
   {
-   "drr_liters": 62.857142857142854,
-   "drr_qty": 12.571428571428571,
-   "drr_value": 18310.571428571428,
+   "drr_liters": 57.5,
+   "drr_qty": 11.5,
+   "drr_value": 16742.625,
    "estimated_liters": null,
    "item": "SANO POMACE 5L",
    "item_head": "PREMIUM",
-   "landing_amt": 128174.0,
-   "liters": 440.0,
-   "qty": 88.0
+   "landing_amt": 133941.0,
+   "liters": 460.0,
+   "qty": 92.0
   },
   {
-   "drr_liters": 2.142857142857143,
-   "drr_qty": 2.142857142857143,
-   "drr_value": 679.7142857142857,
+   "drr_liters": 1.875,
+   "drr_qty": 1.875,
+   "drr_value": 594.75,
    "estimated_liters": null,
    "item": "SESAME OIL 1L",
    "item_head": "PREMIUM",
@@ -1180,96 +1202,85 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
    "qty": 15.0
   },
   {
-   "drr_liters": 10.285714285714286,
-   "drr_qty": 5.142857142857143,
-   "drr_value": 1987.142857142857,
+   "drr_liters": 10.0,
+   "drr_qty": 5.0,
+   "drr_value": 1932.75,
    "estimated_liters": null,
    "item": "SO OLIVE 1+1L",
    "item_head": "PREMIUM",
-   "landing_amt": 13910.0,
-   "liters": 72.0,
-   "qty": 36.0
+   "landing_amt": 15462.0,
+   "liters": 80.0,
+   "qty": 40.0
   },
   {
-   "drr_liters": 0.8571428571428571,
-   "drr_qty": 0.8571428571428571,
-   "drr_value": 204.42857142857142,
+   "drr_liters": 0.875,
+   "drr_qty": 0.875,
+   "drr_value": 206.0,
    "estimated_liters": null,
    "item": "SO OLIVE 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 1431.0,
-   "liters": 6.0,
-   "qty": 6.0
+   "landing_amt": 1648.0,
+   "liters": 7.0,
+   "qty": 7.0
   },
   {
-   "drr_liters": 2.142857142857143,
-   "drr_qty": 0.42857142857142855,
-   "drr_value": 381.14285714285717,
+   "drr_liters": 1.25,
+   "drr_qty": 0.25,
+   "drr_value": 226.625,
    "estimated_liters": null,
    "item": "SOYABEAN 5L",
    "item_head": "COMMODITY",
-   "landing_amt": 2668.0,
-   "liters": 15.0,
-   "qty": 3.0
+   "landing_amt": 1813.0,
+   "liters": 10.0,
+   "qty": 2.0
   },
   {
-   "drr_liters": 9.428571428571429,
-   "drr_qty": 1.5714285714285714,
-   "drr_value": 1717.857142857143,
+   "drr_liters": 8.25,
+   "drr_qty": 1.375,
+   "drr_value": 1512.625,
    "estimated_liters": null,
    "item": "SOYABEAN 5L + 1L",
    "item_head": "COMMODITY",
-   "landing_amt": 12025.0,
+   "landing_amt": 12101.0,
    "liters": 66.0,
    "qty": 11.0
   },
   {
-   "drr_liters": 2.5714285714285716,
-   "drr_qty": 0.8571428571428571,
-   "drr_value": 529.5714285714286,
+   "drr_liters": 3.375,
+   "drr_qty": 1.125,
+   "drr_value": 697.75,
    "estimated_liters": null,
    "item": "SUNFLOWER OIL 1L+1L+1L",
    "item_head": "COMMODITY",
-   "landing_amt": 3707.0,
-   "liters": 18.0,
-   "qty": 6.0
+   "landing_amt": 5582.0,
+   "liters": 27.0,
+   "qty": 9.0
   },
   {
-   "drr_liters": 58.57142857142857,
-   "drr_qty": 11.714285714285714,
-   "drr_value": 12209.714285714286,
+   "drr_liters": 55.625,
+   "drr_qty": 11.125,
+   "drr_value": 11574.625,
    "estimated_liters": null,
    "item": "SUNFLOWER OIL 5L",
    "item_head": "COMMODITY",
-   "landing_amt": 85468.0,
-   "liters": 410.0,
-   "qty": 82.0
+   "landing_amt": 92597.0,
+   "liters": 445.0,
+   "qty": 89.0
   },
   {
-   "drr_liters": 0.0,
-   "drr_qty": 0.2857142857142857,
-   "drr_value": 543.5714285714286,
-   "estimated_liters": null,
-   "item": "UNMAPPED",
-   "item_head": "OTHER",
-   "landing_amt": 3805.0,
-   "liters": 0.0,
-   "qty": 2.0
-  },
-  {
-   "drr_liters": 5.142857142857143,
-   "drr_qty": 5.142857142857143,
-   "drr_value": 1181.0,
+   "drr_liters": 5.625,
+   "drr_qty": 5.625,
+   "drr_value": 1296.625,
    "estimated_liters": null,
    "item": "YELLOW MUSTARD 1L",
    "item_head": "PREMIUM",
-   "landing_amt": 8267.0,
-   "liters": 36.0,
-   "qty": 36.0
+   "landing_amt": 10373.0,
+   "liters": 45.0,
+   "qty": 45.0
   }
  ],
  "liters_label": "Shipped LTRS",
- "max_date": "2026-07-07",
+ "max_date": "2026-07-08",
  "month": 7,
  "normalization_note": "Case-only duplicate product names are normalized so totals reconcile with daily source totals.",
  "qty_label": "Shipped QTY",
@@ -1284,13 +1295,13 @@ Up: [[dashboards-index]] · [[pf-flipkart]]
  "source": "flipkart_secondary_all",
  "summary_note": "Uses flipkart_secondary_all to match the Excel DRR formulas.",
  "totals": {
-  "drr_liters": 2920.9714285714285,
-  "drr_qty": 741.7142857142857,
-  "drr_value": 786454.0,
+  "drr_liters": 2883.175,
+  "drr_qty": 727.5,
+  "drr_value": 768784.125,
   "estimated_liters": null,
-  "landing_amt": 5505178.0,
-  "liters": 20446.8,
-  "qty": 5192.0
+  "landing_amt": 6150273.0,
+  "liters": 23065.4,
+  "qty": 5820.0
  },
  "value_label": "Shipped Value",
  "year": 2026

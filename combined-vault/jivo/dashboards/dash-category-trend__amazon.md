@@ -31,43 +31,43 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 154569.0,
+   "commodity_ltrs": 0.0,
    "label": "Mar '26",
    "month": 3,
-   "premium_ltrs": 127772.6,
-   "total_ltrs": 282341.6,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   },
   {
-   "commodity_ltrs": 87238.0,
+   "commodity_ltrs": 0.0,
    "label": "Apr '26",
    "month": 4,
-   "premium_ltrs": 87386.4,
-   "total_ltrs": 174624.4,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   },
   {
-   "commodity_ltrs": 201814.0,
+   "commodity_ltrs": 0.0,
    "label": "May '26",
    "month": 5,
-   "premium_ltrs": 174413.5,
-   "total_ltrs": 376227.5,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   },
   {
-   "commodity_ltrs": 163714.0,
+   "commodity_ltrs": 0.0,
    "label": "Jun '26",
    "month": 6,
-   "premium_ltrs": 142666.5,
-   "total_ltrs": 306380.5,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   },
   {
    "commodity_ltrs": 0.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 9580.0,
-   "total_ltrs": 9580.0,
+   "premium_ltrs": 0.0,
+   "total_ltrs": 0.0,
    "year": 2026
   }
  ],

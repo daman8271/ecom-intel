@@ -2,7 +2,7 @@
 type: data
 entity: pf-flipkart
 table: master_products
-rows: 208
+rows: 209
 chunk: 1/1
 source: app-master
 tags:
@@ -14,7 +14,7 @@ tags:
 # Raw `master_products` rows for [[pf-flipkart]]
 
 Up: [[pf-flipkart]]
-Canonical raw rows (208) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
+Canonical raw rows (209) for `master_products`, embedded once here (verbatim, full column set). Other dimensions are links on the parent.
 
 ```csv
 case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_name,sku_sap_code,sku_sap_name,tax_rate,uom
@@ -64,6 +64,7 @@ case_pack,format,format_sku_code,item,item_head,per_unit,per_unit_value,product_
 ,FLIPKART,QWRGEMNS9ZPZGWJH,Extra Virgin 1+1L,PREMIUM,1+1 LTR,2.0,Extra Virgin 1+1L_Shopsy,,,,LTR
 ,FLIPKART,QWRGEMQRYJBYZFUH,EXTRA VIRGIN 1L,PREMIUM,1 LTR,1.0,Extra Virgin 1L_Shopsy,,,,LTR
 ,FLIPKART,EDOGNPBFT55YKGPR,JIVO EXTRA VIRGIN 1L + POMACE 1+1L,PREMIUM,1+1+1 LTR,3.0,ExtraVirgin1Ltr-Pomace1Ltr-1Ltr,,,,LTR
+,FLIPKART,EDOHZKAG7ZSU8GUJ,EXTRA VIRGIN 2L + 2L,PREMIUM,2 LTR + 2 LTR,4.0,Extra-Virgin-2+2L,,,,LTR
 ,FLIPKART,EDOHZ93JKPEAJMRY,EXTRA VIRGIN 5L + EV 200ML,PREMIUM,5L + 200ML,5.2,Extra-Virgin-5L+200ml,,,,LTR
 ,FLIPKART,EDOHZBRUZRHKHJYR,POMACE 3L + EXTRA VIRGIN 3L,PREMIUM,3L + 3L,6.0,Extra-Virgin-5L+200ml,,,,LTR
 ,FLIPKART,QWRGEMZZBATNNPZD,Extra Virgin 5L,PREMIUM,5 LTR,5.0,Extra Virgin 5L_Shopsy,,,,LTR

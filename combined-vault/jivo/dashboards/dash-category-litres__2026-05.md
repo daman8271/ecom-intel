@@ -25,7 +25,7 @@ Up: [[dashboards-index]] · [[2026-05]]
   },
   {
    "category": "OLIVE",
-   "ltrs": 178550.25
+   "ltrs": 178665.25
   },
   {
    "category": "CANOLA",
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-05]]
  "head": "premium",
  "month": 5,
  "platform": null,
- "total_ltrs": 489964.65,
+ "total_ltrs": 490079.65,
  "year": 2026
 }
 ```

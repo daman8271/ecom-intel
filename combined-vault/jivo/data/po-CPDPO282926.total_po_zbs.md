@@ -18,13 +18,13 @@ Canonical raw rows (7) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-204.76,20.0,SWIGGY,,2026-07-01,77339,214.998,PUNE,20.0,2026-06-22,2026-07-02,CPDPO282926,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77339,2026-07-10
-371.43,32.0,SWIGGY,,2026-07-01,77340,390.0015,PUNE,32.0,2026-06-22,2026-07-02,CPDPO282926,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77340,2026-07-10
-928.57,40.0,SWIGGY,,2026-07-01,77341,974.9985,PUNE,40.0,2026-06-22,2026-07-02,CPDPO282926,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77341,2026-07-10
-344.76,0.0,SWIGGY,,2026-07-01,77342,361.998,PUNE,100.0,2026-06-22,2026-07-02,CPDPO282926,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77342,2026-07-10
-149.52,0.0,SWIGGY,,2026-07-01,77343,156.996,PUNE,60.0,2026-06-22,2026-07-02,CPDPO282926,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77343,2026-07-10
-22.79,0.0,SWIGGY,,2026-07-01,77344,31.9,PUNE,12.0,2026-06-22,2026-07-02,CPDPO282926,,900724,Jivo  Fizzy Flavoured Soda (Lemon) 750.0 ml,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77344,2026-07-10
-747.62,4.0,SWIGGY,,2026-07-01,77345,785.001,PUNE,4.0,2026-06-22,2026-07-02,CPDPO282926,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77345,2026-07-10
+204.76,20.0,SWIGGY,,2026-07-01,77339,214.998,PUNE,20.0,2026-06-22,2026-07-02,CPDPO282926,,15685,Jivo Canola Cold Press Edible Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77339,2026-07-11
+371.43,32.0,SWIGGY,,2026-07-01,77340,390.0015,PUNE,32.0,2026-06-22,2026-07-02,CPDPO282926,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77340,2026-07-11
+928.57,40.0,SWIGGY,,2026-07-01,77341,974.9985,PUNE,40.0,2026-06-22,2026-07-02,CPDPO282926,,401502,Jivo Cold Pressed oil Groundnut Oil 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77341,2026-07-11
+344.76,0.0,SWIGGY,,2026-07-01,77342,361.998,PUNE,100.0,2026-06-22,2026-07-02,CPDPO282926,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77342,2026-07-11
+149.52,0.0,SWIGGY,,2026-07-01,77343,156.996,PUNE,60.0,2026-06-22,2026-07-02,CPDPO282926,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77343,2026-07-11
+22.79,0.0,SWIGGY,,2026-07-01,77344,31.9,PUNE,12.0,2026-06-22,2026-07-02,CPDPO282926,,900724,Jivo  Fizzy Flavoured Soda (Lemon) 750.0 ml,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77344,2026-07-11
+747.62,4.0,SWIGGY,,2026-07-01,77345,785.001,PUNE,4.0,2026-06-22,2026-07-02,CPDPO282926,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,Fulfilled,CHIRAG ENTERPRISES,2026-06-27,total_po_zbs:77345,2026-07-11
 ```
 
 ---

@@ -28,24 +28,44 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -73.1,
+   "delta_pct": -74.3,
    "head": "PREMIUM",
    "is_new": false,
    "ltrs": 9580.0,
    "name": "GROUNDNUT 5L",
-   "prev_ltrs": 35550.0
+   "prev_ltrs": 37250.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -71.8,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 2500.0,
+   "name": "CANOLA 5L",
+   "prev_ltrs": 8870.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -98.8,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 360.0,
+   "name": "MUSTARD 5L",
+   "prev_ltrs": 30315.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -73.1,
-  "head": "PREMIUM",
+  "delta_pct": -98.8,
+  "head": "COMMODITY",
   "is_new": false,
-  "ltrs": 9580.0,
-  "name": "GROUNDNUT 5L",
-  "prev_ltrs": 35550.0
+  "ltrs": 360.0,
+  "name": "MUSTARD 5L",
+  "prev_ltrs": 30315.0
  },
  "top_riser": null,
  "year": 2026

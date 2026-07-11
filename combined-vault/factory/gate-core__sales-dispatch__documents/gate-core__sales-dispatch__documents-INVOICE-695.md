@@ -16,18 +16,18 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35352
-- **doc_num:** 706260720
-- **doc_date:** 2026-06-25
-- **doc_total:** 11696.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000607
-- **card_name:** DEL PINTU SINGH
-- **ship_to_code:** DEL PINTU SINGH DELHI
-- **ship_to_address:** NEW DELHI-110027IN
+- **doc_entry:** 35450
+- **doc_num:** 606260183
+- **doc_date:** 2026-06-26
+- **doc_total:** 161637.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000874
+- **card_name:** JIVO MART PVT LTD - DL
+- **ship_to_code:** JIVO MART PVT LTD  MAYAPURI
+- **ship_to_address:** PHASE 1 MAYAPURI  A/35-1 MAYAPURI INDUSTRIAL AREANEW DELHI-110064IN
 - **place_of_supply:** DL
-- **bp_gstin:** 
+- **bp_gstin:** 07AAFCJ4102J1ZS
 - **eway_bill:** 
 - **vehicle_no:** 
 - **transporter_name:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-MP
-- **item_summary:** FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000128 - JIVO GOLD 5 LTR 4 PCS, FG0000116 - EXTRA VIRGIN COCONUT OIL 1 LTR 16 PCS
-- **base_refs:** 1506264671
-- **total_quantity:** 27.000
-- **total_litres:** 47.500
-- **total_boxes:** 112.000
-- **total_weight:** 43.485
-- **line_count:** 7
+- **warehouses:** DP-HR
+- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS
+- **base_refs:** 
+- **total_quantity:** 17640.000
+- **total_litres:** 17640.000
+- **total_boxes:** 0.000
+- **total_weight:** 16143.707
+- **line_count:** 4
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35352, "sap_invoice_doc_num": "706260720", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 35450, "sap_invoice_doc_num": "606260183", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR67C1036"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR67C1036
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35191
-- **doc_num:** 706260623
-- **doc_date:** 2026-06-22
-- **doc_total:** 861292.00
+- **doc_entry:** 35300
+- **doc_num:** 706260690
+- **doc_date:** 2026-06-24
+- **doc_total:** 15667.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURGAON
-- **ship_to_address:** AHAZOUR (FAIZABAD) BADLI JHAJJAR  B 1200GURGAON-124105IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **card_code:** CUSTA000910
+- **card_name:** FLIPKART  (B2C-MAY-JULY)
+- **ship_to_code:** FLIPKART B2C TRIPURA
+- **ship_to_address:** TRIPURA-799205IN
+- **place_of_supply:** TR
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** HR67C1036
-- **transporter_name:** Mahaveer Transport
-- **bilty_no:** 3662
-- **bilty_date:** 2026-07-04
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN
-- **base_refs:** 1706264635
-- **total_quantity:** 2538.000
-- **total_litres:** 3450.000
+- **warehouses:** DL-EC
+- **item_summary:** FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, FG0000376 - SESAME OIL 1 LTR 20 PCS, SL0000005 - CANOLA 1 LTR, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000043 - COLD PRESS GROUNDNUT  1 LTR, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000125 - POMACE 1 LTR, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000184 - SUNFLOWER 5 LTR, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, SL0000213 - JIVO RICE BRAIN OIL 1 LTR, FG0000227 - RICE BRAN 1L 16 PCS, SL0000222 - SOYABEAN 5 LTR + SUNFLOWER 1 LTR PACK OF 3, FG0000192 - SOYABEAN OIL 5 LTR 4 PCS
+- **base_refs:** 1506264631
+- **total_quantity:** 75.000
+- **total_litres:** 160.000
 - **total_boxes:** 0.000
-- **total_weight:** 3571.403
-- **line_count:** 8
+- **total_weight:** 80.794
+- **line_count:** 26
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 891, "sap_invoice_doc_entry": 35191, "sap_invoice_doc_num": "706260623", "invoice_number": "706260623", "eway_bill": "711648527311", "invoice_weight": "3571.403", "invoice_amount": "861292.00", "place_of_supply": "HR", "location": "Delivery Address: HHS1 R K WorldInfocom Pvt Ltd B 1200, Pahazour (Faizabad) Badli, Jhajjar Gurgaon 124105", "product_variety": "Oil", "total_litres": "3450.000", "effective_month": "2026-06", "budget_delivery_point": "GURGAON", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 283, "transporter_id": 64, "driver_id": null, "linked_vehicle_entry_id": 1470, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-04T11:12:55.108127Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-04", "priority": "HIGH", "transporter_name": "MAHAVIR TRANSPORT COMPANY", "transporter_gstin": "06AOUPJ8083N1ZZ", "contact_person": "ABC", "mobile_no": "9588567100", "vehicle_no": "HR67C1036", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3662", "bilty_date": "2026-07-04", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260623.pdf", "bilty_attachment_name": "AR - 706260623.pdf", "freight": "0.55", "total_freight": "0.55", "kanta_weight": null, "remarks": "05/07/2026 09:00 AM IST", "created_at": "2026-07-03T18:50:42.511696+05:30", "updated_at": "2026-07-04T16:42:55.124531+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35300, "sap_invoice_doc_num": "706260690", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

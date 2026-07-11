@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "cities": [
   {
    "city": "Gurugram",
-   "value": 1141.0
+   "value": 1688.0
   },
   {
    "city": "Hyderabad",
-   "value": 667.0
+   "value": 752.0
   },
   {
    "city": "Chandigarh Tricity",
-   "value": 454.0
-  },
-  {
-   "city": "Noida",
-   "value": 314.0
+   "value": 483.0
   },
   {
    "city": "Pune",
-   "value": 249.0
+   "value": 421.0
+  },
+  {
+   "city": "Noida",
+   "value": 406.0
   },
   {
    "city": "Bengaluru",
-   "value": 216.0
+   "value": 230.0
   },
   {
    "city": "Lucknow-Kanpur",
-   "value": 102.0
+   "value": 114.0
   },
   {
    "city": "Kolkata",
-   "value": 86.0
+   "value": 89.0
   },
   {
    "city": "Mumbai",
-   "value": 65.0
+   "value": 75.0
   },
   {
    "city": "Noida Rural",
-   "value": 49.0
+   "value": 51.0
   }
  ],
  "errors": [],
@@ -166,12 +166,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "BLACK CARDAMOM"
+    "sub_category": "CARDAMOM"
    },
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "CARDAMOM"
+    "sub_category": "BLACK CARDAMOM"
    },
    {
     "category": "SLICED OLIVE",
@@ -631,12 +631,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "JIVO CLOVE"
+    "sub_category": "CLOVE"
    },
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "CLOVE"
+    "sub_category": "JIVO CLOVE"
    },
    {
     "category": "COCONUT",
@@ -1065,6 +1065,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    },
    {
     "category": "OLIVE",
+    "item": "EXTRA VIRGIN 2L + 2L",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
     "item": "EXTRA VIRGIN 3L",
     "sub_category": "EXTRA VIRGIN"
    },
@@ -1471,12 +1476,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "POMACE"
+    "sub_category": "JIVO POMACE"
    },
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "JIVO POMACE"
+    "sub_category": "POMACE"
    },
    {
     "category": "OLIVE",
@@ -1911,12 +1916,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "BASMATI"
+    "sub_category": "RICE"
    },
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "RICE"
+    "sub_category": "BASMATI"
    },
    {
     "category": "RICE",
@@ -2056,12 +2061,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "NATURAL HONEY"
+    "sub_category": "HONEY"
    },
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "HONEY"
+    "sub_category": "NATURAL HONEY"
    },
    {
     "category": "HONEY",
@@ -2179,14 +2184,14 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
     "sub_category": "SESAME OIL"
    },
    {
-    "category": "SEASAME OIL",
-    "item": "SESAME OIL 1L",
-    "sub_category": "SEASAME OIL"
-   },
-   {
     "category": "SESAME OIL",
     "item": "SESAME OIL 1L",
     "sub_category": "SESAME OIL"
+   },
+   {
+    "category": "SEASAME OIL",
+    "item": "SESAME OIL 1L",
+    "sub_category": "SEASAME OIL"
    },
    {
     "category": "DRINKS",
@@ -3052,8 +3057,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    }
   ]
  },
- "mapped_units": 3628.0,
- "mapped_value": 3628.0,
+ "mapped_units": 4620.0,
+ "mapped_value": 4620.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,99 +3069,99 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "states": [
   {
    "by_platform": {
-    "BIG BASKET": 1141.0
+    "BIG BASKET": 1688.0
    },
    "state": "HARYANA",
-   "units": 1141.0,
-   "value": 1141.0
+   "units": 1688.0,
+   "value": 1688.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 700.0
+    "BIG BASKET": 790.0
    },
    "state": "TELANGANA",
-   "units": 700.0,
-   "value": 700.0
+   "units": 790.0,
+   "value": 790.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 541.0
+    "BIG BASKET": 651.0
    },
    "state": "UTTAR PRADESH",
-   "units": 541.0,
-   "value": 541.0
+   "units": 651.0,
+   "value": 651.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 454.0
-   },
-   "state": "CHANDIGARH",
-   "units": 454.0,
-   "value": 454.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 341.0
+    "BIG BASKET": 523.0
    },
    "state": "MAHARASHTRA",
-   "units": 341.0,
-   "value": 341.0
+   "units": 523.0,
+   "value": 523.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 237.0
+    "BIG BASKET": 483.0
+   },
+   "state": "CHANDIGARH",
+   "units": 483.0,
+   "value": 483.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 253.0
    },
    "state": "KARNATAKA",
-   "units": 237.0,
-   "value": 237.0
+   "units": 253.0,
+   "value": 253.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 87.0
+    "BIG BASKET": 90.0
    },
    "state": "WEST BENGAL",
-   "units": 87.0,
-   "value": 87.0
+   "units": 90.0,
+   "value": 90.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 72.0
+    "BIG BASKET": 81.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 72.0,
-   "value": 72.0
+   "units": 81.0,
+   "value": 81.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 26.0
+    "BIG BASKET": 29.0
    },
    "state": "UTTARAKHAND",
-   "units": 26.0,
-   "value": 26.0
+   "units": 29.0,
+   "value": 29.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 8.0
+   },
+   "state": "ASSAM",
+   "units": 8.0,
+   "value": 8.0
   },
   {
    "by_platform": {
     "BIG BASKET": 7.0
    },
-   "state": "ASSAM",
+   "state": "JHARKHAND",
    "units": 7.0,
    "value": 7.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 6.0
-   },
-   "state": "JHARKHAND",
-   "units": 6.0,
-   "value": 6.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 6.0
+    "BIG BASKET": 7.0
    },
    "state": "ODISHA",
-   "units": 6.0,
-   "value": 6.0
+   "units": 7.0,
+   "value": 7.0
   },
   {
    "by_platform": {
@@ -3192,8 +3197,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   }
  ],
  "sub_categories": [],
- "total_units": 3628.0,
- "total_value": 3628.0,
+ "total_units": 4620.0,
+ "total_value": 4620.0,
  "year": 2026
 }
 ```

@@ -63,11 +63,11 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
    "year": 2026
   },
   {
-   "commodity_ltrs": 1015.0,
+   "commodity_ltrs": 1275.0,
    "label": "Jul '26",
    "month": 7,
-   "premium_ltrs": 440.0,
-   "total_ltrs": 1455.0,
+   "premium_ltrs": 456.0,
+   "total_ltrs": 1731.0,
    "year": 2026
   }
  ],

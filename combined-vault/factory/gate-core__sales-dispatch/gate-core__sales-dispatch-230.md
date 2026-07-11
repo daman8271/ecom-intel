@@ -132,7 +132,6 @@ tags:
 - **updated_at:** 2026-06-29T20:58:48.032703+05:30
 
 ## Related
-- arrival -> [[arr-112]]
 - company -> [[comp-2]]
 - driver -> [[drv-265]]
 - transporter -> [[trn-20]]

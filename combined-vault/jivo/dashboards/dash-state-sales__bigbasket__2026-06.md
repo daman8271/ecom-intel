@@ -166,12 +166,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "BLACK CARDAMOM"
+    "sub_category": "CARDAMOM"
    },
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "CARDAMOM"
+    "sub_category": "BLACK CARDAMOM"
    },
    {
     "category": "SLICED OLIVE",
@@ -631,12 +631,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "JIVO CLOVE"
+    "sub_category": "CLOVE"
    },
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "CLOVE"
+    "sub_category": "JIVO CLOVE"
    },
    {
     "category": "COCONUT",
@@ -1065,6 +1065,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    },
    {
     "category": "OLIVE",
+    "item": "EXTRA VIRGIN 2L + 2L",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
     "item": "EXTRA VIRGIN 3L",
     "sub_category": "EXTRA VIRGIN"
    },
@@ -1471,12 +1476,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "POMACE"
+    "sub_category": "JIVO POMACE"
    },
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "JIVO POMACE"
+    "sub_category": "POMACE"
    },
    {
     "category": "OLIVE",
@@ -1911,12 +1916,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "BASMATI"
+    "sub_category": "RICE"
    },
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "RICE"
+    "sub_category": "BASMATI"
    },
    {
     "category": "RICE",
@@ -2056,12 +2061,12 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "NATURAL HONEY"
+    "sub_category": "HONEY"
    },
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "HONEY"
+    "sub_category": "NATURAL HONEY"
    },
    {
     "category": "HONEY",
@@ -2179,14 +2184,14 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-bigbasket]]
     "sub_category": "SESAME OIL"
    },
    {
-    "category": "SEASAME OIL",
-    "item": "SESAME OIL 1L",
-    "sub_category": "SEASAME OIL"
-   },
-   {
     "category": "SESAME OIL",
     "item": "SESAME OIL 1L",
     "sub_category": "SESAME OIL"
+   },
+   {
+    "category": "SEASAME OIL",
+    "item": "SESAME OIL 1L",
+    "sub_category": "SEASAME OIL"
    },
    {
     "category": "DRINKS",

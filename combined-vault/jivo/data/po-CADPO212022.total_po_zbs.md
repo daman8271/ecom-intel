@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,0.0,SWIGGY,,,78460,1289.9985,AHMEDABAD,3.0,2026-07-01,2026-07-10,CADPO212022,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78460,2026-07-10
-185.71,0.0,SWIGGY,,,78461,194.9955,AHMEDABAD,640.0,2026-07-01,2026-07-10,CADPO212022,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78461,2026-07-10
-771.43,0.0,SWIGGY,,,78462,810.0015,AHMEDABAD,108.0,2026-07-01,2026-07-10,CADPO212022,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78462,2026-07-10
+1228.57,0.0,SWIGGY,,,78460,1289.9985,AHMEDABAD,3.0,2026-07-01,2026-07-10,CADPO212022,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78460,2026-07-11
+185.71,0.0,SWIGGY,,,78461,194.9955,AHMEDABAD,640.0,2026-07-01,2026-07-10,CADPO212022,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78461,2026-07-11
+771.43,0.0,SWIGGY,,,78462,810.0015,AHMEDABAD,108.0,2026-07-01,2026-07-10,CADPO212022,,685793,Jivo Cold Pressed Chemical Free Sunflower Oil 5.0 ltr,CANCELLED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78462,2026-07-11
 ```
 
 ---

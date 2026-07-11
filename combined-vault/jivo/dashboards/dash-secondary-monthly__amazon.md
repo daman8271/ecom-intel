@@ -43,8 +43,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 1745.0
     },
     "JULY": {
-     "order_ltr": 1530.0,
-     "shipped_ltr": 1049.0
+     "order_ltr": 1638.0,
+     "shipped_ltr": 1289.0
     },
     "JUNE": {
      "order_ltr": 1350.0,
@@ -98,8 +98,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 28131.0
     },
     "JULY": {
-     "order_ltr": 23923.0,
-     "shipped_ltr": 20300.0
+     "order_ltr": 25375.0,
+     "shipped_ltr": 22695.0
     },
     "JUNE": {
      "order_ltr": 26824.0,
@@ -153,8 +153,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 768.0
     },
     "JULY": {
-     "order_ltr": 193.0,
-     "shipped_ltr": 165.5
+     "order_ltr": 203.0,
+     "shipped_ltr": 176.5
     },
     "JUNE": {
      "order_ltr": 802.5,
@@ -318,8 +318,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 13500.0
     },
     "JULY": {
-     "order_ltr": 19043.0,
-     "shipped_ltr": 17474.0
+     "order_ltr": 20897.0,
+     "shipped_ltr": 20117.0
     },
     "JUNE": {
      "order_ltr": 53634.0,
@@ -373,8 +373,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 1411.0
     },
     "JULY": {
-     "order_ltr": 2583.0,
-     "shipped_ltr": 1632.0
+     "order_ltr": 2696.0,
+     "shipped_ltr": 1798.0
     },
     "JUNE": {
      "order_ltr": 2157.0,
@@ -483,8 +483,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 17077.0
     },
     "JULY": {
-     "order_ltr": 6540.5,
-     "shipped_ltr": 5810.5
+     "order_ltr": 7204.5,
+     "shipped_ltr": 6561.5
     },
     "JUNE": {
      "order_ltr": 13627.0,
@@ -538,8 +538,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 3648.45
     },
     "JULY": {
-     "order_ltr": 1328.7,
-     "shipped_ltr": 1130.9
+     "order_ltr": 1550.0,
+     "shipped_ltr": 1290.3
     },
     "JUNE": {
      "order_ltr": 2557.1,
@@ -593,8 +593,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 22383.0
     },
     "JULY": {
-     "order_ltr": 13439.0,
-     "shipped_ltr": 11603.0
+     "order_ltr": 14503.0,
+     "shipped_ltr": 13045.0
     },
     "JUNE": {
      "order_ltr": 18884.0,
@@ -648,8 +648,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 4272.0
     },
     "JULY": {
-     "order_ltr": 921.0,
-     "shipped_ltr": 826.0
+     "order_ltr": 1124.0,
+     "shipped_ltr": 962.0
     },
     "JUNE": {
      "order_ltr": 1394.0,
@@ -703,8 +703,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 11460.0
     },
     "JULY": {
-     "order_ltr": 4249.0,
-     "shipped_ltr": 3450.0
+     "order_ltr": 4801.0,
+     "shipped_ltr": 3892.0
     },
     "JUNE": {
      "order_ltr": 6865.0,
@@ -758,8 +758,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 55426.0
     },
     "JULY": {
-     "order_ltr": 45690.0,
-     "shipped_ltr": 37865.0
+     "order_ltr": 48831.0,
+     "shipped_ltr": 42292.0
     },
     "JUNE": {
      "order_ltr": 49069.0,
@@ -813,8 +813,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 9786.0
     },
     "JULY": {
-     "order_ltr": 12787.0,
-     "shipped_ltr": 10353.0
+     "order_ltr": 13937.0,
+     "shipped_ltr": 12032.0
     },
     "JUNE": {
      "order_ltr": 12346.0,
@@ -868,8 +868,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 4798.0
     },
     "JULY": {
-     "order_ltr": 2288.0,
-     "shipped_ltr": 1264.0
+     "order_ltr": 2557.0,
+     "shipped_ltr": 1546.0
     },
     "JUNE": {
      "order_ltr": 715.0,
@@ -923,8 +923,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 53388.0
     },
     "JULY": {
-     "order_ltr": 36708.0,
-     "shipped_ltr": 31410.0
+     "order_ltr": 40227.0,
+     "shipped_ltr": 35699.0
     },
     "JUNE": {
      "order_ltr": 59746.0,
@@ -978,8 +978,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
     "shipped_ltr": 227931.95
    },
    "JULY": {
-    "order_ltr": 171225.2,
-    "shipped_ltr": 144333.9
+    "order_ltr": 185545.5,
+    "shipped_ltr": 163396.3
    },
    "JUNE": {
     "order_ltr": 249974.1,
@@ -1032,8 +1032,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 402818.11356190377
     },
     "JULY": {
-     "order_value": 307690.87,
-     "shipped_value": 211884.351535037
+     "order_value": 328311.78,
+     "shipped_value": 259128.33084318362
     },
     "JUNE": {
      "order_value": 353604.95,
@@ -1087,8 +1087,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 6813322.728297299
     },
     "JULY": {
-     "order_value": 4612859.19,
-     "shipped_value": 3919521.8496146747
+     "order_value": 4917623.2,
+     "shipped_value": 4402731.930563677
     },
     "JUNE": {
      "order_value": 6373822.46,
@@ -1142,8 +1142,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 429700.3358986454
     },
     "JULY": {
-     "order_value": 82285.15,
-     "shipped_value": 70283.51580951177
+     "order_value": 86085.15,
+     "shipped_value": 74607.10592278719
     },
     "JUNE": {
      "order_value": 415914.85,
@@ -1307,8 +1307,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 3024969.0353408693
     },
     "JULY": {
-     "order_value": 3640334.8,
-     "shipped_value": 3347144.2469380633
+     "order_value": 3992440.15,
+     "shipped_value": 3852649.099165076
     },
     "JUNE": {
      "order_value": 10118037.7,
@@ -1362,8 +1362,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 345678.14180316584
     },
     "JULY": {
-     "order_value": 529385.67,
-     "shipped_value": 339772.4576037606
+     "order_value": 553833.34,
+     "shipped_value": 374020.196214931
     },
     "JUNE": {
      "order_value": 524086.02,
@@ -1472,8 +1472,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 9011409.465596125
     },
     "JULY": {
-     "order_value": 3134935.84,
-     "shipped_value": 2786595.6086440044
+     "order_value": 3447593.47,
+     "shipped_value": 3141456.0113532385
     },
     "JUNE": {
      "order_value": 6992690.1,
@@ -1527,8 +1527,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 2732932.642474007
     },
     "JULY": {
-     "order_value": 903322.28,
-     "shipped_value": 771266.7615778367
+     "order_value": 1051346.02,
+     "shipped_value": 875014.8192399518
     },
     "JUNE": {
      "order_value": 1902014.24,
@@ -1582,8 +1582,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 8596995.708053403
     },
     "JULY": {
-     "order_value": 4264360.56,
-     "shipped_value": 3688253.648705034
+     "order_value": 4619472.07,
+     "shipped_value": 4161338.3944031917
     },
     "JUNE": {
      "order_value": 7121859.63,
@@ -1637,8 +1637,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 1456608.6396685224
     },
     "JULY": {
-     "order_value": 308553.92,
-     "shipped_value": 276913.4552586898
+     "order_value": 369374.22,
+     "shipped_value": 317672.5577805344
     },
     "JUNE": {
      "order_value": 517141.84,
@@ -1692,8 +1692,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 1760187.2070509107
     },
     "JULY": {
-     "order_value": 679463.21,
-     "shipped_value": 551952.0294644808
+     "order_value": 765782.21,
+     "shipped_value": 621009.7754329781
     },
     "JUNE": {
      "order_value": 1179932.3,
@@ -1747,8 +1747,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 9551359.557665177
     },
     "JULY": {
-     "order_value": 7361682.61,
-     "shipped_value": 6102734.845471783
+     "order_value": 7877873.8,
+     "shipped_value": 6823512.595863728
     },
     "JUNE": {
      "order_value": 8506422.09,
@@ -1802,8 +1802,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 1708503.410185758
     },
     "JULY": {
-     "order_value": 2064631.85,
-     "shipped_value": 1673120.6671365118
+     "order_value": 2245068.78,
+     "shipped_value": 1939735.215106518
     },
     "JUNE": {
      "order_value": 2204297.17,
@@ -1857,8 +1857,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 749833.1881689094
     },
     "JULY": {
-     "order_value": 363189.3,
-     "shipped_value": 201883.31604478968
+     "order_value": 404675.34,
+     "shipped_value": 245862.6685884936
     },
     "JUNE": {
      "order_value": 136474.58,
@@ -1912,8 +1912,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 9329887.173533775
     },
     "JULY": {
-     "order_value": 6000764.02,
-     "shipped_value": 5135070.651289352
+     "order_value": 6576937.09,
+     "shipped_value": 5837897.099642726
     },
     "JUNE": {
      "order_value": 10628224.55,
@@ -1967,8 +1967,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
     "shipped_value": 56075144.677669525
    },
    "JULY": {
-    "order_value": 34254988.79,
-    "shipped_value": 29077119.30509353
+    "order_value": 37237946.14,
+    "shipped_value": 32927357.700121015
    },
    "JUNE": {
     "order_value": 56978910.12,
@@ -1999,7 +1999,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
  "dashboard_title": "Amazon Secondary Monthly Dashboard",
  "defaulted_to_latest": true,
  "format": "AMAZON",
- "max_date": "2026-07-07",
+ "max_date": "2026-07-08",
  "mom_growth": [
   {
    "commodity_growth": 0.0,
@@ -2056,21 +2056,21 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "premium_ltr": 243101.5
   },
   {
-   "commodity_growth": -0.7346066708621775,
-   "commodity_ltr": 84342.0,
+   "commodity_growth": -0.6996192573945877,
+   "commodity_ltr": 95461.0,
    "label": "JULY",
    "month": "JULY",
-   "month_day": "07-JULY",
-   "premium_growth": -0.7522849509361317,
-   "premium_ltr": 60219.9
+   "month_day": "08-JULY",
+   "premium_growth": -0.7195068726437311,
+   "premium_ltr": 68188.3
   },
   {
-   "commodity_growth": 0.9947831448151573,
+   "commodity_growth": 0.7624370161636689,
    "commodity_ltr": 168244.0,
    "label": "AUGUST",
    "month": "AUGUST",
    "month_day": "31-AUGUST",
-   "premium_growth": 1.4164520366191242,
+   "premium_growth": 1.13406845455892,
    "premium_ltr": 145518.5
   },
   {
@@ -2155,11 +2155,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "month_day": "30-JUNE"
   },
   {
-   "day": 7,
+   "day": 8,
    "key": "JULY",
    "label": "JULY",
    "month": 7,
-   "month_day": "07-JULY"
+   "month_day": "08-JULY"
   },
   {
    "day": 31,
@@ -2237,8 +2237,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 93147.95
     },
     "JULY": {
-     "order_ltr": 69813.2,
-     "shipped_ltr": 60219.9
+     "order_ltr": 75525.5,
+     "shipped_ltr": 68188.3
     },
     "JUNE": {
      "order_ltr": 121737.1,
@@ -2290,8 +2290,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_ltr": 134858.0
     },
     "JULY": {
-     "order_ltr": 101722.0,
-     "shipped_ltr": 84342.0
+     "order_ltr": 110353.0,
+     "shipped_ltr": 95461.0
     },
     "JUNE": {
      "order_ltr": 128741.0,
@@ -2344,8 +2344,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
     "shipped_ltr": 228005.95
    },
    "JULY": {
-    "order_ltr": 171535.2,
-    "shipped_ltr": 144561.9
+    "order_ltr": 185878.5,
+    "shipped_ltr": 163649.3
    },
    "JUNE": {
     "order_ltr": 250478.1,
@@ -2397,8 +2397,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 32999820.568188287
     },
     "JULY": {
-     "order_value": 17871574.11,
-     "shipped_value": 15478613.935686613
+     "order_value": 19459501.13,
+     "shipped_value": 17532343.991334684
     },
     "JUNE": {
      "order_value": 34485535.66,
@@ -2450,8 +2450,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
      "shipped_value": 23099770.536604527
     },
     "JULY": {
-     "order_value": 16469730.99,
-     "shipped_value": 13664761.509406917
+     "order_value": 17870337.22,
+     "shipped_value": 15468017.354634443
     },
     "JUNE": {
      "order_value": 22655350.69,
@@ -2504,8 +2504,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
     "shipped_value": 56224671.54020308
    },
    "JULY": {
-    "order_value": 34344613.66,
-    "shipped_value": 29146210.66509353
+    "order_value": 37333146.91,
+    "shipped_value": 33003537.52596913
    },
    "JUNE": {
     "order_value": 57147743.72,

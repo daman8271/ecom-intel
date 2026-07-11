@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Barcode Box (39041)
+title: Barcode Box (42770)
 tags:
   - moc
   - source/factory
 ---
 
-# Barcode Box — 39041 records (page 1/40)
+# Barcode Box — 42770 records (page 1/43)
 
 From `/barcode/boxes/`. Up: [[_HOME]]
 

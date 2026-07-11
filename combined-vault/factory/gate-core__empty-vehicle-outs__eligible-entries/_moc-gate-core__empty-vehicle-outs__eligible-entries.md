@@ -1,15 +1,19 @@
 ---
 type: moc
-title: Eligible Entries (75)
+title: Eligible Entries (80)
 tags:
   - moc
   - source/factory
 ---
 
-# Eligible Entries — 75 records
+# Eligible Entries — 80 records
 
 From `/gate-core/empty-vehicle-outs/eligible-entries/`. Up: [[_HOME]]
 
+- [[gate-core__empty-vehicle-outs__eligible-entries-1790]] — DL01MB2623
+- [[gate-core__empty-vehicle-outs__eligible-entries-1779]] — HR67E7648
+- [[gate-core__empty-vehicle-outs__eligible-entries-1759]] — HR69F6098
+- [[gate-core__empty-vehicle-outs__eligible-entries-1754]] — UP44CT8185
 - [[gate-core__empty-vehicle-outs__eligible-entries-1721]] — RJ11GD2843
 - [[gate-core__empty-vehicle-outs__eligible-entries-1711]] — HR67C4904
 - [[gate-core__empty-vehicle-outs__eligible-entries-1703]] — DL01MB2623
@@ -58,6 +62,7 @@ From `/gate-core/empty-vehicle-outs/eligible-entries/`. Up: [[_HOME]]
 - [[gate-core__empty-vehicle-outs__eligible-entries-1129]] — HR55AX7276
 - [[gate-core__empty-vehicle-outs__eligible-entries-1087]] — HR69F7125
 - [[gate-core__empty-vehicle-outs__eligible-entries-1055]] — HR67C1036
+- [[gate-core__empty-vehicle-outs__eligible-entries-1029]] — HR69F9627
 - [[gate-core__empty-vehicle-outs__eligible-entries-987]] — HR67C4904
 - [[gate-core__empty-vehicle-outs__eligible-entries-981]] — HR67D9270
 - [[gate-core__empty-vehicle-outs__eligible-entries-975]] — DL01MB2623

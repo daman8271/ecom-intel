@@ -19,9 +19,9 @@ Up: [[dashboards-index]] · [[pf-zepto]]
 ```json
 {
  "activeTrucks": 0,
- "inventory": 449,
+ "inventory": 448,
  "openPOs": 0,
- "sells": 36951
+ "sells": 41176
 }
 ```
 

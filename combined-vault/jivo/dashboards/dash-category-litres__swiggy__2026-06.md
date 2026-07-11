@@ -22,11 +22,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 56886.0
+   "ltrs": 56558.0
   },
   {
    "category": "OLIVE",
-   "ltrs": 9972.0
+   "ltrs": 9890.0
   },
   {
    "category": "CANOLA",
@@ -49,7 +49,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "head": "premium",
  "month": 6,
  "platform": "swiggy",
- "total_ltrs": 77245.0,
+ "total_ltrs": 76835.0,
  "year": 2026
 }
 ```

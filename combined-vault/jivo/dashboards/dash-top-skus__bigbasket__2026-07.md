@@ -28,10 +28,10 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -95.4,
+   "delta_pct": -92.9,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 480.0,
+   "ltrs": 740.0,
    "name": "SUNFLOWER 1L",
    "prev_ltrs": 10480.0
   },
@@ -78,10 +78,10 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -80.2,
+   "delta_pct": -75.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 64.0,
+   "ltrs": 80.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 324.0
   },

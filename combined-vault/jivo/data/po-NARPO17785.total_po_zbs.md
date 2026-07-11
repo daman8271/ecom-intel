@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-371.43,0.0,SWIGGY,,,78622,390.0015,NAGPUR,16.0,2026-07-02,2026-07-11,NARPO17785,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78622,2026-07-10
-185.71,0.0,SWIGGY,,,78623,194.9955,NAGPUR,336.0,2026-07-02,2026-07-11,NARPO17785,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78623,2026-07-10
-149.52,0.0,SWIGGY,,,78624,156.996,NAGPUR,420.0,2026-07-02,2026-07-11,NARPO17785,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78624,2026-07-10
+371.43,0.0,SWIGGY,,,78622,390.0015,NAGPUR,16.0,2026-07-02,2026-07-11,NARPO17785,,21709,Jivo Daily Cooking Pomace Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78622,2026-07-11
+185.71,0.0,SWIGGY,,,78623,194.9955,NAGPUR,336.0,2026-07-02,2026-07-11,NARPO17785,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78623,2026-07-11
+149.52,0.0,SWIGGY,,,78624,156.996,NAGPUR,420.0,2026-07-02,2026-07-11,NARPO17785,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-04,total_po_zbs:78624,2026-07-11
 ```
 
 ---

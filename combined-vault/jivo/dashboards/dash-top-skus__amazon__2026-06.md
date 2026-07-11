@@ -28,22 +28,32 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 96.7,
+   "delta_pct": 103.7,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 46693.0,
+   "ltrs": 48354.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 23742.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 114.6,
+   "delta_pct": 115.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 39329.0,
+   "ltrs": 39441.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 18328.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -8.6,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 37250.0,
+   "name": "GROUNDNUT 5L",
+   "prev_ltrs": 40775.0
   },
   {
    "brand": null,
@@ -58,20 +68,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -12.8,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 35550.0,
-   "name": "GROUNDNUT 5L",
-   "prev_ltrs": 40775.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -27.6,
+   "delta_pct": -26.2,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 29755.0,
+   "ltrs": 30315.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 41095.0
   },
@@ -88,12 +88,22 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -37.7,
+   "delta_pct": -37.9,
    "head": "PREMIUM",
    "is_new": false,
    "ltrs": 9510.0,
    "name": "JIVO POMACE 5L",
-   "prev_ltrs": 15260.0
+   "prev_ltrs": 15315.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -9.7,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 9163.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 10142.0
   },
   {
    "brand": null,
@@ -108,20 +118,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -15.7,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 8546.0,
-   "name": "JIVO POMACE 1L",
-   "prev_ltrs": 10142.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -68.2,
+   "delta_pct": -68.1,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 8410.0,
+   "ltrs": 8415.0,
    "name": "RICE BRAN 5L",
    "prev_ltrs": 26415.0
   }
@@ -140,10 +140,10 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 917.8,
+  "delta_pct": 921.4,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 5720.0,
+  "ltrs": 5740.0,
   "name": "CANOLA 1+1L",
   "prev_ltrs": 562.0
  },

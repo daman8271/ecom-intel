@@ -27,20 +27,20 @@ Up: [[dashboards-index]] · [[2026-06]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 8.5,
+   "delta_pct": 10.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 121079.0,
+   "ltrs": 122740.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 111558.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 1.0,
+   "delta_pct": 0.9,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 120143.0,
+   "ltrs": 120047.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 118991.0
   },
@@ -57,60 +57,60 @@ Up: [[dashboards-index]] · [[2026-06]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -22.5,
+   "delta_pct": -22.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 52765.0,
+   "ltrs": 52705.0,
    "name": "SUNFLOWER 5L",
    "prev_ltrs": 68120.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -16.5,
+   "delta_pct": -13.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 49670.0,
+   "ltrs": 51250.0,
    "name": "GROUNDNUT 5L",
    "prev_ltrs": 59465.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -46.8,
+   "delta_pct": -46.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 37515.0,
+   "ltrs": 38075.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 70515.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -10.4,
+   "delta_pct": -10.6,
    "head": "PREMIUM",
    "is_new": false,
    "ltrs": 31740.0,
    "name": "JIVO POMACE 5L",
-   "prev_ltrs": 35435.0
+   "prev_ltrs": 35490.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -53.1,
+   "delta_pct": -52.1,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 26628.0,
+   "ltrs": 27229.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 56818.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -26.1,
+   "delta_pct": -24.5,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 16711.0,
+   "ltrs": 17063.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 22602.0
   },
@@ -139,10 +139,10 @@ Up: [[dashboards-index]] · [[2026-06]]
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 341.5,
+  "delta_pct": 342.6,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 8132.0,
+  "ltrs": 8152.0,
   "name": "CANOLA 1+1L",
   "prev_ltrs": 1842.0
  },

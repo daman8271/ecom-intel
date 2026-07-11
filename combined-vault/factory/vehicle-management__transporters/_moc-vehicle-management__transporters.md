@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Transporter (94)
+title: Transporter (95)
 tags:
   - moc
   - source/factory
 ---
 
-# Transporter — 94 records
+# Transporter — 95 records
 
 From `/vehicle-management/transporters/`. Up: [[_HOME]]
 
@@ -98,6 +98,7 @@ From `/vehicle-management/transporters/`. Up: [[_HOME]]
 - [[trn-76]] — S.m plast
 - [[trn-82]] — S.n industries
 - [[trn-37]] — sree shyam express
+- [[trn-97]] — S s water tech
 - [[trn-9]] — SSY CONTAINER
 - [[trn-84]] — Translogics
 - [[trn-69]] — Uflex

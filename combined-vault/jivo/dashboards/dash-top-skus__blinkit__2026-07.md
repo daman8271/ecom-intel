@@ -28,22 +28,42 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -63.5,
+   "delta_pct": -9.0,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 4160.0,
+   "ltrs": 10379.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 11400.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -80.7,
+   "delta_pct": -58.5,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 848.0,
+   "ltrs": 1824.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 4400.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": null,
+   "head": "COMMODITY",
+   "is_new": true,
+   "ltrs": 1140.0,
+   "name": "MUSTARD 5L",
+   "prev_ltrs": 0.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -73.0,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 812.0,
+   "name": "SUNFLOWER 1L",
+   "prev_ltrs": 3008.0
   },
   {
    "brand": null,
@@ -58,22 +78,22 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -89.0,
-   "head": "COMMODITY",
+   "delta_pct": -88.2,
+   "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 332.0,
-   "name": "SUNFLOWER 1L",
-   "prev_ltrs": 3008.0
+   "ltrs": 380.0,
+   "name": "CANOLA 1L",
+   "prev_ltrs": 3230.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -90.7,
+   "delta_pct": -82.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 300.0,
-   "name": "CANOLA 1L",
-   "prev_ltrs": 3230.0
+   "ltrs": 148.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 836.0
   },
   {
    "brand": null,
@@ -88,32 +108,22 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -98.3,
+   "delta_pct": -97.9,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 80.0,
+   "ltrs": 100.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 4780.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -94.3,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 48.0,
-   "name": "EXTRA LIGHT 1L",
-   "prev_ltrs": 836.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -98.3,
+  "delta_pct": -97.9,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 80.0,
+  "ltrs": 100.0,
   "name": "JIVO POMACE 5L",
   "prev_ltrs": 4780.0
  },

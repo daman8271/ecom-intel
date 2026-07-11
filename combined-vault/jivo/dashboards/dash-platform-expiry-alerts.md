@@ -22,35 +22,35 @@ Up: [[dashboards-index]]
  "platforms": [
   {
    "format": "SWIGGY",
-   "po_count": 47,
+   "po_count": 40,
    "slug": "swiggy",
-   "total_litrs": 52233.0,
-   "total_order_units": 40136.0,
-   "total_units": 8874230.06
+   "total_litrs": 48376.0,
+   "total_order_units": 38263.0,
+   "total_units": 8260397.09
   },
   {
    "format": "BLINKIT",
-   "po_count": 42,
+   "po_count": 46,
    "slug": "blinkit",
-   "total_litrs": 10710.0,
-   "total_order_units": 7552.0,
-   "total_units": 2250001.74
+   "total_litrs": 11898.0,
+   "total_order_units": 9050.0,
+   "total_units": 2515811.84
   },
   {
    "format": "ZEPTO",
-   "po_count": 5,
+   "po_count": 4,
    "slug": "zepto",
-   "total_litrs": 2350.4,
-   "total_order_units": 8360.0,
-   "total_units": 722472.2
+   "total_litrs": 1428.0,
+   "total_order_units": 836.0,
+   "total_units": 496570.64
   },
   {
    "format": "BIG BASKET",
-   "po_count": 3,
+   "po_count": 4,
    "slug": "bigbasket",
-   "total_litrs": 1902.0,
-   "total_order_units": 2264.0,
-   "total_units": 355131.06
+   "total_litrs": 2051.0,
+   "total_order_units": 2349.0,
+   "total_units": 382890.65
   },
   {
    "format": "FLIPKART GROCERY",
@@ -78,11 +78,11 @@ Up: [[dashboards-index]]
   },
   {
    "format": "AMAZON",
-   "po_count": 30,
+   "po_count": 21,
    "slug": "amazon",
-   "total_litrs": 37464.95,
-   "total_order_units": 23884.0,
-   "total_units": 23884.0
+   "total_litrs": 21223.35,
+   "total_order_units": 13944.0,
+   "total_units": 13944.0
   }
  ],
  "year": 2026

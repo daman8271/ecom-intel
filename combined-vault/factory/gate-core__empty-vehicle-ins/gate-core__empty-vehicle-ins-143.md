@@ -51,7 +51,7 @@ tags:
 Weight: 15898.180 kg
 - **pipeline_status:**
   ```json
-  {"stage": "PRINT_COMMITTED", "stage_label": "Print Committed", "stage_at": "2026-06-24T14:12:00.286486Z", "counts": {"total": 3, "rejected": 0}, "module": "sales dispatch out", "module_status": "pending", "module_label": "pending at sales dispatch out"}
+  {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-10T05:36:46.685629Z", "counts": {"total": 3, "rejected": 0}, "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}
   ```
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 
@@ -62,9 +62,9 @@ Weight: 15898.180 kg
   []
   ```
 - **security_name:** Sachin
-- **remarks:** 
+- **remarks:** Due to software error. Vehicle dispatch out on (24/6/2026)
 - **created_at:** 2026-06-24T14:45:24.699370+05:30
-- **updated_at:** 2026-06-24T14:47:17.295859+05:30
+- **updated_at:** 2026-07-10T11:22:30.424101+05:30
 
 ## Related
 - company -> [[comp-2]]

@@ -75,7 +75,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 178550.25,
+    "ltrs": 178665.25,
     "name": "OLIVE"
    },
    {
@@ -113,7 +113,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 94450.0,
+    "ltrs": 94505.0,
     "name": "JIVO POMACE"
    },
    {
@@ -125,7 +125,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SANO POMACE"
    },
    {
-    "ltrs": 11018.75,
+    "ltrs": 11078.75,
     "name": "EXTRA VIRGIN"
    },
    {
@@ -149,7 +149,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SEASAME OIL"
    }
   ],
-  "total_ltrs": 489964.65
+  "total_ltrs": 490079.65
  },
  "source": "primary",
  "year": 2026

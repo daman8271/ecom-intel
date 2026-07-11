@@ -27,9 +27,16 @@ tags:
 - **driver_name:** Fareed 6006814214
 - **driver_mobile:** 6006814214
 - **remarks:** 
+- **company_id:** 2
+- **company_code:** JIVO_MART
+- **company_name:** Jivo Mart
+- **arrival:** 190
+- **arrival_no:** ARV-20260703-0009
 - **release_invoice_count:** 2
 - **release_cancels_docking:** True
 
 ## Related
+- arrival -> [[arr-190]]
+- company_id -> [[comp-2]]
 - driver_id -> [[drv-327]]
 - vehicle_id -> [[veh-365]]

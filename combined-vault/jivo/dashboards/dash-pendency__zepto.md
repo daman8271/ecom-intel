@@ -20,6 +20,15 @@ Up: [[dashboards-index]] · [[pf-zepto]]
 {
  "by_city": [
   {
+   "city": "JJR-DRY-MH-LUHARI",
+   "open_ltrs": 9036.4,
+   "open_pos": 9,
+   "open_units": 7034.0,
+   "order_value": 2796472.62,
+   "pending_ltrs": 9036.4,
+   "pending_units": 7034.0
+  },
+  {
    "city": "MUM-DRY-MH-SHAKTI",
    "open_ltrs": 7035.6,
    "open_pos": 3,
@@ -27,33 +36,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "order_value": 1769557.84,
    "pending_ltrs": 7035.6,
    "pending_units": 6512.0
-  },
-  {
-   "city": "JJR-DRY-MH-LUHARI",
-   "open_ltrs": 6867.6,
-   "open_pos": 9,
-   "open_units": 6334.0,
-   "order_value": 1975396.58,
-   "pending_ltrs": 6835.6,
-   "pending_units": 6302.0
-  },
-  {
-   "city": "HYD-DRY-MH2-KANDLAKOYA",
-   "open_ltrs": 4254.0,
-   "open_pos": 3,
-   "open_units": 4254.0,
-   "order_value": 1079227.14,
-   "pending_ltrs": 4254.0,
-   "pending_units": 4254.0
-  },
-  {
-   "city": "CHN-DRY-MH2-THIRUVALLUR",
-   "open_ltrs": 3703.2,
-   "open_pos": 2,
-   "open_units": 3614.0,
-   "order_value": 883414.82,
-   "pending_ltrs": 3703.2,
-   "pending_units": 3614.0
   },
   {
    "city": "MUM-DRY-MH3",
@@ -65,13 +47,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "pending_units": 3320.0
   },
   {
-   "city": "BLR-MYLAPURA MH",
-   "open_ltrs": 2230.0,
-   "open_pos": 2,
-   "open_units": 2230.0,
-   "order_value": 598358.1,
-   "pending_ltrs": 2230.0,
-   "pending_units": 2230.0
+   "city": "CHN-DRY-MH2-THIRUVALLUR",
+   "open_ltrs": 2168.0,
+   "open_pos": 1,
+   "open_units": 2100.0,
+   "order_value": 504308.4,
+   "pending_ltrs": 2168.0,
+   "pending_units": 2100.0
   },
   {
    "city": "BLR-DRY-MH-Sumadhura2",
@@ -83,6 +65,15 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "pending_units": 2148.0
   },
   {
+   "city": "FARUKHNAGAR",
+   "open_ltrs": 1216.0,
+   "open_pos": 4,
+   "open_units": 1200.0,
+   "order_value": 353336.12,
+   "pending_ltrs": 1216.0,
+   "pending_units": 1200.0
+  },
+  {
    "city": "HYD-MH 3",
    "open_ltrs": 1172.0,
    "open_pos": 1,
@@ -92,22 +83,40 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "pending_units": 1172.0
   },
   {
-   "city": "FARUKHNAGAR",
-   "open_ltrs": 1050.0,
-   "open_pos": 4,
-   "open_units": 1034.0,
-   "order_value": 328241.82,
-   "pending_ltrs": 1050.0,
-   "pending_units": 1034.0
+   "city": "BLR-MYLAPURA MH",
+   "open_ltrs": 936.0,
+   "open_pos": 1,
+   "open_units": 936.0,
+   "order_value": 266916.32,
+   "pending_ltrs": 936.0,
+   "pending_units": 936.0
   },
   {
    "city": "PUN-DRY-MH2-KOREGAON",
-   "open_ltrs": 932.0,
-   "open_pos": 2,
-   "open_units": 932.0,
-   "order_value": 270667.96,
+   "open_ltrs": 852.0,
+   "open_pos": 1,
+   "open_units": 852.0,
+   "order_value": 228001.56,
    "pending_ltrs": 852.0,
    "pending_units": 852.0
+  },
+  {
+   "city": "HYD-DRY-MH2-KANDLAKOYA",
+   "open_ltrs": 820.0,
+   "open_pos": 1,
+   "open_units": 820.0,
+   "order_value": 210074.88,
+   "pending_ltrs": 820.0,
+   "pending_units": 820.0
+  },
+  {
+   "city": "FBD-DRY-MH",
+   "open_ltrs": 397.6,
+   "open_pos": 3,
+   "open_units": 436.0,
+   "order_value": 151207.28,
+   "pending_ltrs": 397.6,
+   "pending_units": 436.0
   },
   {
    "city": "KIRA-GUR-DRY-MH-Silani",
@@ -117,15 +126,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "order_value": 89009.86,
    "pending_ltrs": 266.0,
    "pending_units": 266.0
-  },
-  {
-   "city": "FBD-DRY-MH",
-   "open_ltrs": 229.6,
-   "open_pos": 2,
-   "open_units": 268.0,
-   "order_value": 105408.92,
-   "pending_ltrs": 229.6,
-   "pending_units": 268.0
   },
   {
    "city": "KTPL-KOL-DRY-MH NEW",
@@ -148,31 +148,31 @@ Up: [[dashboards-index]] · [[pf-zepto]]
  ],
  "by_distributor": [
   {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "open_ltrs": 13600.4,
-   "open_pos": 10,
-   "open_units": 13562.0,
-   "order_value": 3437594.94,
-   "pending_ltrs": 13600.4,
-   "pending_units": 13562.0
-  },
-  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "open_ltrs": 11201.6,
-   "open_pos": 7,
-   "open_units": 10764.0,
-   "order_value": 2945555.08,
+   "open_ltrs": 11121.6,
+   "open_pos": 6,
+   "open_units": 10684.0,
+   "order_value": 2902888.68,
    "pending_ltrs": 11121.6,
    "pending_units": 10684.0
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
-   "open_ltrs": 8413.2,
-   "open_pos": 16,
-   "open_units": 7902.0,
-   "order_value": 2498057.18,
-   "pending_ltrs": 8381.2,
-   "pending_units": 7870.0
+   "open_ltrs": 10916.0,
+   "open_pos": 17,
+   "open_units": 8936.0,
+   "order_value": 3390025.88,
+   "pending_ltrs": 10916.0,
+   "pending_units": 8936.0
+  },
+  {
+   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
+   "open_ltrs": 7337.2,
+   "open_pos": 6,
+   "open_units": 7320.0,
+   "order_value": 1857894.48,
+   "pending_ltrs": 7337.2,
+   "pending_units": 7320.0
   },
   {
    "distributor": "BABA LOKENATH TRADERS",
@@ -210,6 +210,19 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "po_date": "01-07-2026",
    "po_expiry_date": "22-07-2026",
    "po_number": "P4814866"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "JJR-DRY-MH-LUHARI",
+   "open_ltrs": 2200.8,
+   "open_pos": 1,
+   "open_units": 732.0,
+   "order_value": 838142.6,
+   "pending_ltrs": 2200.8,
+   "pending_units": 732.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "P4892455"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -251,19 +264,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "po_number": "P4885143"
   },
   {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "HYD-DRY-MH2-KANDLAKOYA",
-   "open_ltrs": 1998.0,
-   "open_pos": 1,
-   "open_units": 1998.0,
-   "order_value": 502897.22,
-   "pending_ltrs": 1998.0,
-   "pending_units": 1998.0,
-   "po_date": "01-07-2026",
-   "po_expiry_date": "22-07-2026",
-   "po_number": "P4804524"
-  },
-  {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
    "location": "MUM-DRY-MH3",
    "open_ltrs": 1958.0,
@@ -301,45 +301,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "po_date": "03-07-2026",
    "po_expiry_date": "24-07-2026",
    "po_number": "P4830353"
-  },
-  {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "CHN-DRY-MH2-THIRUVALLUR",
-   "open_ltrs": 1535.2,
-   "open_pos": 1,
-   "open_units": 1514.0,
-   "order_value": 379106.42,
-   "pending_ltrs": 1535.2,
-   "pending_units": 1514.0,
-   "po_date": "01-07-2026",
-   "po_expiry_date": "22-07-2026",
-   "po_number": "P4803413"
-  },
-  {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "HYD-DRY-MH2-KANDLAKOYA",
-   "open_ltrs": 1436.0,
-   "open_pos": 1,
-   "open_units": 1436.0,
-   "order_value": 366255.04,
-   "pending_ltrs": 1436.0,
-   "pending_units": 1436.0,
-   "po_date": "06-07-2026",
-   "po_expiry_date": "27-07-2026",
-   "po_number": "P4848716"
-  },
-  {
-   "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
-   "location": "BLR-MYLAPURA MH",
-   "open_ltrs": 1294.0,
-   "open_pos": 1,
-   "open_units": 1294.0,
-   "order_value": 331441.78,
-   "pending_ltrs": 1294.0,
-   "pending_units": 1294.0,
-   "po_date": "01-07-2026",
-   "po_expiry_date": "22-07-2026",
-   "po_number": "P4814665"
   },
   {
    "distributor": "CHIRAG ENTERPRISES MUMBAI",
@@ -473,6 +434,19 @@ Up: [[dashboards-index]] · [[pf-zepto]]
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "GUR-DRY-MH-FARUKHNAGAR",
+   "open_ltrs": 276.0,
+   "open_pos": 1,
+   "open_units": 260.0,
+   "order_value": 67383.84,
+   "pending_ltrs": 276.0,
+   "pending_units": 260.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "P4891843"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
    "location": "KIRA-GUR-DRY-MH-Silani",
    "open_ltrs": 266.0,
    "open_pos": 1,
@@ -525,6 +499,19 @@ Up: [[dashboards-index]] · [[pf-zepto]]
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
+   "location": "FBD-DRY-MH",
+   "open_ltrs": 168.0,
+   "open_pos": 1,
+   "open_units": 168.0,
+   "order_value": 45798.36,
+   "pending_ltrs": 168.0,
+   "pending_units": 168.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "31-07-2026",
+   "po_number": "P4891691"
+  },
+  {
+   "distributor": "ANTIZE FOODS PVT LTD",
    "location": "GUR-DRY-MH-FARUKHNAGAR",
    "open_ltrs": 168.0,
    "open_pos": 1,
@@ -564,19 +551,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
   },
   {
    "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "GUR-DRY-MH-FARUKHNAGAR",
-   "open_ltrs": 110.0,
-   "open_pos": 1,
-   "open_units": 94.0,
-   "order_value": 42289.54,
-   "pending_ltrs": 110.0,
-   "pending_units": 94.0,
-   "po_date": "03-07-2026",
-   "po_expiry_date": "24-07-2026",
-   "po_number": "P4829365"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
    "location": "FBD-DRY-MH",
    "open_ltrs": 97.6,
    "open_pos": 1,
@@ -600,89 +574,85 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "po_date": "02-07-2026",
    "po_expiry_date": "23-07-2026",
    "po_number": "P4819278"
-  },
-  {
-   "distributor": "ANTIZE FOODS PVT LTD",
-   "location": "JJR-DRY-MH-LUHARI",
-   "open_ltrs": 32.0,
-   "open_pos": 1,
-   "open_units": 32.0,
-   "order_value": 17066.56,
-   "pending_ltrs": 0.0,
-   "pending_units": 0.0,
-   "po_date": "01-07-2026",
-   "po_expiry_date": "22-07-2026",
-   "po_number": "P4805495"
-  },
-  {
-   "distributor": "CHIRAG ENTERPRISES MUMBAI",
-   "location": "PUN-DRY-MH2-KOREGAON",
-   "open_ltrs": 80.0,
-   "open_pos": 1,
-   "open_units": 80.0,
-   "order_value": 42666.4,
-   "pending_ltrs": 0.0,
-   "pending_units": 0.0,
-   "po_date": "01-07-2026",
-   "po_expiry_date": "22-07-2026",
-   "po_number": "P4802943"
   }
  ],
  "by_sku": [
   {
    "item": "GROUNDNUT 1L",
-   "open_ltrs": 21216.0,
-   "open_pos": 24,
-   "open_units": 21216.0,
-   "order_value": 4889863.68,
-   "pending_ltrs": 21216.0,
-   "pending_units": 21216.0,
+   "open_ltrs": 16720.0,
+   "open_pos": 22,
+   "open_units": 16720.0,
+   "order_value": 3853625.6,
+   "pending_ltrs": 16720.0,
+   "pending_units": 16720.0,
    "sku_code": "41367EF4-80D9-4819-BBAE-D1806C184F5C",
    "sku_name": "Jivo Groundnut (Peanut) Cold Pressed Oil | Healthy Cooking Oil - 1 pc (1 L)"
   },
   {
    "item": "JIVO POMACE 1L",
-   "open_ltrs": 3416.0,
-   "open_pos": 26,
-   "open_units": 3416.0,
-   "order_value": 1463995.12,
-   "pending_ltrs": 3416.0,
-   "pending_units": 3416.0,
+   "open_ltrs": 3122.0,
+   "open_pos": 23,
+   "open_units": 3122.0,
+   "order_value": 1337995.54,
+   "pending_ltrs": 3122.0,
+   "pending_units": 3122.0,
    "sku_code": "AC9A7DD8-489B-4475-A14D-27AE393A5505",
    "sku_name": "Jivo Pomace Olive Oil - 1 pc (1 L)"
   },
   {
    "item": "SUNFLOWER 1L",
-   "open_ltrs": 2860.0,
-   "open_pos": 15,
-   "open_units": 2860.0,
-   "order_value": 531130.6,
-   "pending_ltrs": 2860.0,
-   "pending_units": 2860.0,
+   "open_ltrs": 2480.0,
+   "open_pos": 12,
+   "open_units": 2480.0,
+   "order_value": 460560.8,
+   "pending_ltrs": 2480.0,
+   "pending_units": 2480.0,
    "sku_code": "06C8F55B-13A5-4D9B-8990-A418E63C89AD",
    "sku_name": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil - 1 pc (1 L)"
   },
   {
+   "item": "JIVO POMACE 5L",
+   "open_ltrs": 2180.0,
+   "open_pos": 7,
+   "open_units": 436.0,
+   "order_value": 913524.64,
+   "pending_ltrs": 2180.0,
+   "pending_units": 436.0,
+   "sku_code": "A81945F0-43AC-4970-82B4-C6C8986EE9AE",
+   "sku_name": "Jivo Pomace Olive Oil - 1 pc (5 L)"
+  },
+  {
    "item": "EXTRA LIGHT 1L",
-   "open_ltrs": 1648.0,
-   "open_pos": 22,
-   "open_units": 1648.0,
-   "order_value": 878927.84,
-   "pending_ltrs": 1536.0,
-   "pending_units": 1536.0,
+   "open_ltrs": 1264.0,
+   "open_pos": 17,
+   "open_units": 1264.0,
+   "order_value": 674129.12,
+   "pending_ltrs": 1264.0,
+   "pending_units": 1264.0,
    "sku_code": "2300D5E1-CCD1-46AB-990D-AA7FEE80BC5D",
    "sku_name": "Jivo Extra Light Olive Oil - 1 pc (1 L)"
   },
   {
    "item": "MUSTARD 1L",
-   "open_ltrs": 700.0,
-   "open_pos": 10,
-   "open_units": 700.0,
-   "order_value": 122668.0,
-   "pending_ltrs": 700.0,
-   "pending_units": 700.0,
+   "open_ltrs": 680.0,
+   "open_pos": 9,
+   "open_units": 680.0,
+   "order_value": 119163.2,
+   "pending_ltrs": 680.0,
+   "pending_units": 680.0,
    "sku_code": "89804A83-79F3-45C6-B940-9C395451DFFA",
    "sku_name": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil - 1 pc (1 L)"
+  },
+  {
+   "item": "MUSTARD 5L",
+   "open_ltrs": 560.0,
+   "open_pos": 5,
+   "open_units": 112.0,
+   "order_value": 98133.28,
+   "pending_ltrs": 560.0,
+   "pending_units": 112.0,
+   "sku_code": "275D43F8-2DA4-4D9E-8873-E04FCAF5C073",
+   "sku_name": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil - 1 pc (5 L)"
   },
   {
    "item": "CANOLA 15L",
@@ -696,17 +666,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "sku_name": "Jivo Refine Canola Oil Tin - 1 pc (15 L)"
   },
   {
-   "item": "MUSTARD 5L",
-   "open_ltrs": 520.0,
-   "open_pos": 4,
-   "open_units": 104.0,
-   "order_value": 91123.76,
-   "pending_ltrs": 520.0,
-   "pending_units": 104.0,
-   "sku_code": "275D43F8-2DA4-4D9E-8873-E04FCAF5C073",
-   "sku_name": "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil - 1 pc (5 L)"
-  },
-  {
    "item": "CANOLA 1+1L",
    "open_ltrs": 480.0,
    "open_pos": 1,
@@ -716,17 +675,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "pending_units": 240.0,
    "sku_code": "50B56B7F-3D9F-45C7-8161-C2327E8DB652",
    "sku_name": "Jivo Cold Press Canola Oil Combo | Bottle - 1 pack (2 x 1 L)"
-  },
-  {
-   "item": "JIVO POMACE 5L",
-   "open_ltrs": 420.0,
-   "open_pos": 6,
-   "open_units": 84.0,
-   "order_value": 176000.16,
-   "pending_ltrs": 420.0,
-   "pending_units": 84.0,
-   "sku_code": "A81945F0-43AC-4970-82B4-C6C8986EE9AE",
-   "sku_name": "Jivo Pomace Olive Oil - 1 pc (5 L)"
   },
   {
    "item": "CANOLA 1L",
@@ -740,81 +688,81 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "sku_name": "Jivo Canola Cold Pressed Edible Oil | Cooking Oil - 1 L"
   },
   {
-   "item": "EXTRA LIGHT 2L",
-   "open_ltrs": 320.0,
-   "open_pos": 11,
-   "open_units": 160.0,
-   "order_value": 170667.2,
-   "pending_ltrs": 320.0,
-   "pending_units": 160.0,
-   "sku_code": "29E72C8C-7FF6-46E2-9721-CA4E9F612E98",
-   "sku_name": "Jivo Extra Light Olive Oil - 1 pc (2 L)"
-  },
-  {
    "item": "CANOLA 5L",
-   "open_ltrs": 300.0,
-   "open_pos": 4,
-   "open_units": 60.0,
-   "order_value": 69142.8,
-   "pending_ltrs": 300.0,
-   "pending_units": 60.0,
+   "open_ltrs": 360.0,
+   "open_pos": 5,
+   "open_units": 72.0,
+   "order_value": 82971.36,
+   "pending_ltrs": 360.0,
+   "pending_units": 72.0,
    "sku_code": "C935F17D-04D3-4785-B2DD-BD8E7C7EBCBE",
    "sku_name": "Jivo Canola Cold Pressed Edible Oil | Cooking Oil - 1 pc (5 L)"
   },
   {
+   "item": "EXTRA LIGHT 2L",
+   "open_ltrs": 300.0,
+   "open_pos": 10,
+   "open_units": 150.0,
+   "order_value": 160000.5,
+   "pending_ltrs": 300.0,
+   "pending_units": 150.0,
+   "sku_code": "29E72C8C-7FF6-46E2-9721-CA4E9F612E98",
+   "sku_name": "Jivo Extra Light Olive Oil - 1 pc (2 L)"
+  },
+  {
    "item": "GROUNDNUT 200ML",
-   "open_ltrs": 168.0,
-   "open_pos": 4,
-   "open_units": 840.0,
-   "order_value": 47997.6,
-   "pending_ltrs": 168.0,
-   "pending_units": 840.0,
+   "open_ltrs": 172.8,
+   "open_pos": 5,
+   "open_units": 864.0,
+   "order_value": 49368.96,
+   "pending_ltrs": 172.8,
+   "pending_units": 864.0,
    "sku_code": "CF896675-3AC9-4A40-B134-603931BBA8E7",
    "sku_name": "Jivo Groundnut | Peanut | Cold Pressed Heathy Cooking Oil - 1 Pack(200 ml)"
   },
   {
-   "item": "JIVO POMACE 2L",
-   "open_ltrs": 160.0,
-   "open_pos": 5,
-   "open_units": 80.0,
-   "order_value": 66285.6,
-   "pending_ltrs": 160.0,
-   "pending_units": 80.0,
-   "sku_code": "8EEDF6FF-D36C-4313-88E4-6AA571372F46",
-   "sku_name": "Jivo Daily Pomace Olive Oil - 1 pc (2 L)"
-  },
-  {
    "item": "CANOLA 1L POUCH",
-   "open_ltrs": 128.0,
-   "open_pos": 2,
-   "open_units": 128.0,
-   "order_value": 29501.44,
-   "pending_ltrs": 128.0,
-   "pending_units": 128.0,
+   "open_ltrs": 92.0,
+   "open_pos": 1,
+   "open_units": 92.0,
+   "order_value": 21204.16,
+   "pending_ltrs": 92.0,
+   "pending_units": 92.0,
    "sku_code": "ACB567DE-41A5-43B9-A075-BAEEED763C73",
    "sku_name": "Jivo Canola Pouch - 1 pack (1 L)"
   },
   {
-   "item": "EXTRA VIRGIN 200ML",
-   "open_ltrs": 67.2,
-   "open_pos": 8,
-   "open_units": 336.0,
-   "order_value": 57600.48,
-   "pending_ltrs": 67.2,
-   "pending_units": 336.0,
-   "sku_code": "56266F28-18E4-4A38-9124-05801C53B6F2",
-   "sku_name": "Jivo Olive Oil Extra Virgin - 1 pack (200 ml)"
+   "item": "JIVO POMACE 2L",
+   "open_ltrs": 80.0,
+   "open_pos": 4,
+   "open_units": 40.0,
+   "order_value": 33142.8,
+   "pending_ltrs": 80.0,
+   "pending_units": 40.0,
+   "sku_code": "8EEDF6FF-D36C-4313-88E4-6AA571372F46",
+   "sku_name": "Jivo Daily Pomace Olive Oil - 1 pc (2 L)"
   },
   {
    "item": "EXTRA VIRGIN 1L",
-   "open_ltrs": 60.0,
-   "open_pos": 4,
-   "open_units": 60.0,
-   "order_value": 46285.8,
-   "pending_ltrs": 60.0,
-   "pending_units": 60.0,
+   "open_ltrs": 72.0,
+   "open_pos": 5,
+   "open_units": 72.0,
+   "order_value": 55542.96,
+   "pending_ltrs": 72.0,
+   "pending_units": 72.0,
    "sku_code": "5D186472-6FE2-4643-AF2F-2F9CD773986D",
    "sku_name": "Jivo Extra Virgin Olive Oil | Bottle - 1 pc (1 L)"
+  },
+  {
+   "item": "EXTRA VIRGIN 200ML",
+   "open_ltrs": 60.0,
+   "open_pos": 7,
+   "open_units": 300.0,
+   "order_value": 51429.0,
+   "pending_ltrs": 60.0,
+   "pending_units": 300.0,
+   "sku_code": "56266F28-18E4-4A38-9124-05801C53B6F2",
+   "sku_name": "Jivo Olive Oil Extra Virgin - 1 pack (200 ml)"
   },
   {
    "item": "RICE BRAN 1L",
@@ -830,6 +778,15 @@ Up: [[dashboards-index]] · [[pf-zepto]]
  ],
  "by_warehouse": [
   {
+   "open_ltrs": 9036.4,
+   "open_pos": 9,
+   "open_units": 7034.0,
+   "order_value": 2796472.62,
+   "pending_ltrs": 9036.4,
+   "pending_units": 7034.0,
+   "warehouse": "JJR-DRY-MH-LUHARI"
+  },
+  {
    "open_ltrs": 7035.6,
    "open_pos": 3,
    "open_units": 6512.0,
@@ -837,33 +794,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "pending_ltrs": 7035.6,
    "pending_units": 6512.0,
    "warehouse": "MUM-DRY-MH-SHAKTI"
-  },
-  {
-   "open_ltrs": 6867.6,
-   "open_pos": 9,
-   "open_units": 6334.0,
-   "order_value": 1975396.58,
-   "pending_ltrs": 6835.6,
-   "pending_units": 6302.0,
-   "warehouse": "JJR-DRY-MH-LUHARI"
-  },
-  {
-   "open_ltrs": 4254.0,
-   "open_pos": 3,
-   "open_units": 4254.0,
-   "order_value": 1079227.14,
-   "pending_ltrs": 4254.0,
-   "pending_units": 4254.0,
-   "warehouse": "HYD-DRY-MH2-KANDLAKOYA"
-  },
-  {
-   "open_ltrs": 3703.2,
-   "open_pos": 2,
-   "open_units": 3614.0,
-   "order_value": 883414.82,
-   "pending_ltrs": 3703.2,
-   "pending_units": 3614.0,
-   "warehouse": "CHN-DRY-MH2-THIRUVALLUR"
   },
   {
    "open_ltrs": 3234.0,
@@ -875,13 +805,13 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "warehouse": "MUM-DRY-MH3"
   },
   {
-   "open_ltrs": 2230.0,
-   "open_pos": 2,
-   "open_units": 2230.0,
-   "order_value": 598358.1,
-   "pending_ltrs": 2230.0,
-   "pending_units": 2230.0,
-   "warehouse": "BLR-MYLAPURA MH"
+   "open_ltrs": 2168.0,
+   "open_pos": 1,
+   "open_units": 2100.0,
+   "order_value": 504308.4,
+   "pending_ltrs": 2168.0,
+   "pending_units": 2100.0,
+   "warehouse": "CHN-DRY-MH2-THIRUVALLUR"
   },
   {
    "open_ltrs": 2081.2,
@@ -893,6 +823,15 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "warehouse": "BLR-DRY-MH-Sumadhura2"
   },
   {
+   "open_ltrs": 1216.0,
+   "open_pos": 4,
+   "open_units": 1200.0,
+   "order_value": 353336.12,
+   "pending_ltrs": 1216.0,
+   "pending_units": 1200.0,
+   "warehouse": "GUR-DRY-MH-FARUKHNAGAR"
+  },
+  {
    "open_ltrs": 1172.0,
    "open_pos": 1,
    "open_units": 1172.0,
@@ -902,22 +841,40 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "warehouse": "HYD-MH 3"
   },
   {
-   "open_ltrs": 1050.0,
-   "open_pos": 4,
-   "open_units": 1034.0,
-   "order_value": 328241.82,
-   "pending_ltrs": 1050.0,
-   "pending_units": 1034.0,
-   "warehouse": "GUR-DRY-MH-FARUKHNAGAR"
+   "open_ltrs": 936.0,
+   "open_pos": 1,
+   "open_units": 936.0,
+   "order_value": 266916.32,
+   "pending_ltrs": 936.0,
+   "pending_units": 936.0,
+   "warehouse": "BLR-MYLAPURA MH"
   },
   {
-   "open_ltrs": 932.0,
-   "open_pos": 2,
-   "open_units": 932.0,
-   "order_value": 270667.96,
+   "open_ltrs": 852.0,
+   "open_pos": 1,
+   "open_units": 852.0,
+   "order_value": 228001.56,
    "pending_ltrs": 852.0,
    "pending_units": 852.0,
    "warehouse": "PUN-DRY-MH2-KOREGAON"
+  },
+  {
+   "open_ltrs": 820.0,
+   "open_pos": 1,
+   "open_units": 820.0,
+   "order_value": 210074.88,
+   "pending_ltrs": 820.0,
+   "pending_units": 820.0,
+   "warehouse": "HYD-DRY-MH2-KANDLAKOYA"
+  },
+  {
+   "open_ltrs": 397.6,
+   "open_pos": 3,
+   "open_units": 436.0,
+   "order_value": 151207.28,
+   "pending_ltrs": 397.6,
+   "pending_units": 436.0,
+   "warehouse": "FBD-DRY-MH"
   },
   {
    "open_ltrs": 266.0,
@@ -927,15 +884,6 @@ Up: [[dashboards-index]] · [[pf-zepto]]
    "pending_ltrs": 266.0,
    "pending_units": 266.0,
    "warehouse": "KIRA-GUR-DRY-MH-Silani"
-  },
-  {
-   "open_ltrs": 229.6,
-   "open_pos": 2,
-   "open_units": 268.0,
-   "order_value": 105408.92,
-   "pending_ltrs": 229.6,
-   "pending_units": 268.0,
-   "warehouse": "FBD-DRY-MH"
   },
   {
    "open_ltrs": 204.0,
@@ -958,17 +906,17 @@ Up: [[dashboards-index]] · [[pf-zepto]]
  ],
  "defaulted_to_latest": true,
  "format": "ZEPTO",
- "max_po_date": "09-07-2026",
+ "max_po_date": "10-07-2026",
  "min_po_date": "01-07-2026",
  "platform": "zepto",
  "po_month": "JULY",
  "totals": {
-  "open_ltrs": 33419.2,
-  "open_pos": 34,
-  "open_units": 32384.0,
-  "pending_ltrs": 33307.2,
-  "pending_units": 32272.0,
-  "rows": 151
+  "open_ltrs": 29578.8,
+  "open_pos": 30,
+  "open_units": 27096.0,
+  "pending_ltrs": 29578.8,
+  "pending_units": 27096.0,
+  "rows": 138
  },
  "year": 2026
 }

@@ -26,14 +26,14 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   },
   {
    "category": "OLIVE",
-   "ltrs": 200.0
+   "ltrs": 216.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "bigbasket",
- "total_ltrs": 440.0,
+ "total_ltrs": 456.0,
  "year": 2026
 }
 ```

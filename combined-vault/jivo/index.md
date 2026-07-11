@@ -15,7 +15,7 @@ tags:
 - [[platforms-index]] — 11 platforms
 - [[taxonomy-index]] — tiers · brands · categories · sub-categories
 - [[vendors-index]] — 19 distributors
-- [[pos-index]] — 10371 purchase orders
+- [[pos-index]] — 10432 purchase orders
 - [[locations-index]] — 19 FCs · 0 cities
 - [[months-index]] — 31 months
 - [[dashboards-index]] — 3013 app dashboards

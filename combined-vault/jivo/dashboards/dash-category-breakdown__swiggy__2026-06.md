@@ -22,7 +22,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 34319.0,
+    "ltrs": 34259.0,
     "name": "SUNFLOWER"
    },
    {
@@ -40,7 +40,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   ],
   "sub_categories": [
    {
-    "ltrs": 34319.0,
+    "ltrs": 34259.0,
     "name": "SUNFLOWER"
    },
    {
@@ -56,7 +56,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
     "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 81655.0
+  "total_ltrs": 81595.0
  },
  "errors": [],
  "month": 6,
@@ -64,11 +64,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
  "premium": {
   "categories": [
    {
-    "ltrs": 56886.0,
+    "ltrs": 56558.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 9972.0,
+    "ltrs": 9890.0,
     "name": "OLIVE"
    },
    {
@@ -90,11 +90,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
   ],
   "sub_categories": [
    {
-    "ltrs": 56886.0,
+    "ltrs": 56558.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 4791.0,
+    "ltrs": 4743.0,
     "name": "EXTRA LIGHT"
    },
    {
@@ -102,7 +102,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 4158.0,
+    "ltrs": 4142.0,
     "name": "JIVO POMACE"
    },
    {
@@ -114,15 +114,15 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-swiggy]]
     "name": "YELLOW MUSTARD"
    },
    {
-    "ltrs": 1023.0,
-    "name": "EXTRA VIRGIN"
-   },
-   {
     "ltrs": 1018.0,
     "name": "SO OLIVE"
+   },
+   {
+    "ltrs": 1005.0,
+    "name": "EXTRA VIRGIN"
    }
   ],
-  "total_ltrs": 77245.0
+  "total_ltrs": 76835.0
  },
  "source": "primary",
  "year": 2026

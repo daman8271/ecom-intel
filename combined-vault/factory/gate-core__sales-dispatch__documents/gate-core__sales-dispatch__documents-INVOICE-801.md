@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR67C1036"
+title: "HR69E9959"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR67C1036
+# HR69E9959
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35187
-- **doc_num:** 606260169
-- **doc_date:** 2026-06-22
-- **doc_total:** 76442.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000874
-- **card_name:** JIVO MART PVT LTD - DL
-- **ship_to_code:** JIVO MART PVT LTD  MAYAPURI
-- **ship_to_address:** PHASE 1 MAYAPURI  A/35-1 MAYAPURI INDUSTRIAL AREANEW DELHI-110064IN
-- **place_of_supply:** DL
-- **bp_gstin:** 07AAFCJ4102J1ZS
+- **doc_entry:** 35297
+- **doc_num:** 706260687
+- **doc_date:** 2026-06-24
+- **doc_total:** 30119.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD SONEPAT
+- **ship_to_address:** VILLAGE DHATURI  53//1 2 3 8 9 10 26  54//5/2/21  5/2/2/3 6/1/1SONIPAT-131039IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** HR67C1036
-- **transporter_name:** Mahaveer Transport
-- **bilty_no:** 3444
-- **bilty_date:** 2026-06-23
+- **vehicle_no:** HR69E9959
+- **transporter_name:** Jivo Vehicle
+- **bilty_no:** NA
+- **bilty_date:** 2026-07-01
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DP-HR
-- **item_summary:** FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000193 - SOYABEAN OIL 1 LTR 20 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS
-- **base_refs:** 
-- **total_quantity:** 2403.000
-- **total_litres:** 5513.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
+- **base_refs:** 1706264657
+- **total_quantity:** 144.000
+- **total_litres:** 144.000
 - **total_boxes:** 0.000
-- **total_weight:** 5545.463
-- **line_count:** 9
+- **total_weight:** 143.579
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 538, "sap_invoice_doc_entry": 35187, "sap_invoice_doc_num": "606260169", "invoice_number": "606260169", "eway_bill": "392277331618", "invoice_weight": "5545.463", "invoice_amount": "76442.00", "place_of_supply": "DL", "location": "", "product_variety": "Oil", "total_litres": "22060.000", "effective_month": "2026-06", "budget_delivery_point": "NEW DELHI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 283, "transporter_id": 64, "driver_id": null, "linked_vehicle_entry_id": 957, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-23T08:37:26.643043Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-23", "priority": "", "transporter_name": "MAHAVIR TRANSPORT COMPANY", "transporter_gstin": "06AOUPJ8083N1ZZ", "contact_person": "ABC", "mobile_no": "9588567100", "vehicle_no": "HR67C1036", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3443", "bilty_date": "2026-06-23", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-23_at_1.17.19_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-23 at 1.17.19 PM.jpeg", "freight": "5500.00", "total_freight": "5500.00", "kanta_weight": null, "remarks": "", "created_at": "2026-06-23T10:18:59.219698+05:30", "updated_at": "2026-06-23T14:07:26.653303+05:30"}
+  {"id": 779, "sap_invoice_doc_entry": 35297, "sap_invoice_doc_num": "706260687", "invoice_number": "706260687", "eway_bill": "322273544251", "invoice_weight": "143.579", "invoice_amount": "30119.00", "place_of_supply": "HR", "location": "Khasra No. 42//25/3, 53//1,2,3,8,9,10,26, 54//5/2/21, 5/2/2/3,6/1/1, Village Dhaturi, Sonepat 131039", "product_variety": "Oil", "total_litres": "144.000", "effective_month": "2026-06", "budget_delivery_point": "SONIPAT", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 27, "transporter_id": 20, "driver_id": null, "linked_vehicle_entry_id": 1355, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-01T12:45:36.383963Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-01", "priority": "HIGH", "transporter_name": "Jivo Wellness", "transporter_gstin": "", "contact_person": "Mikha singh", "mobile_no": "1234567891", "vehicle_no": "HR69E9959", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "001", "bilty_date": "2026-07-01", "bilty_attachment": "/media/sales_dispatch/attachments/706260667_1.pdf", "bilty_attachment_name": "706260667 (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "02/07/2026 02:30 PM IST", "created_at": "2026-06-30T20:15:19.756000+05:30", "updated_at": "2026-07-01T18:15:36.394727+05:30"}
   ```

@@ -27,9 +27,15 @@ tags:
 - **driver_name:** Bhopal 8397924965
 - **driver_mobile:** 8397924965
 - **remarks:** 
+- **company_id:** 2
+- **company_code:** JIVO_MART
+- **company_name:** Jivo Mart
+- **arrival:** None
+- **arrival_no:** None
 - **release_invoice_count:** 0
 - **release_cancels_docking:** False
 
 ## Related
+- company_id -> [[comp-2]]
 - driver_id -> [[drv-232]]
 - vehicle_id -> [[veh-268]]

@@ -28,52 +28,52 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -84.1,
+   "delta_pct": -68.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 6023.0,
+   "ltrs": 12054.0,
    "name": "GROUNDNUT 1L",
    "prev_ltrs": 37936.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -74.7,
+   "delta_pct": -70.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 2865.6,
-   "name": "GROUNDNUT 200ML",
-   "prev_ltrs": 11308.2
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -82.1,
-   "head": "COMMODITY",
-   "is_new": false,
-   "ltrs": 1740.0,
-   "name": "SUNFLOWER 1L",
-   "prev_ltrs": 9728.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -78.9,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 1628.0,
+   "ltrs": 2298.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 7730.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -75.6,
+   "delta_pct": -81.8,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 1768.0,
+   "name": "SUNFLOWER 1L",
+   "prev_ltrs": 9728.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -72.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 1532.0,
+   "ltrs": 1744.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 6287.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -85.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 1670.4,
+   "name": "GROUNDNUT 200ML",
+   "prev_ltrs": 11308.2
   },
   {
    "brand": null,
@@ -88,20 +88,20 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -90.6,
+   "delta_pct": -89.9,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 1080.0,
+   "ltrs": 1160.0,
    "name": "MUSTARD 1L",
    "prev_ltrs": 11448.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -97.1,
+   "delta_pct": -93.4,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 355.0,
+   "ltrs": 795.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 12085.0
   },
@@ -118,35 +118,26 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -91.4,
+   "delta_pct": -91.6,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 158.0,
-   "name": "EXTRA LIGHT 2L",
-   "prev_ltrs": 1840.0
+   "ltrs": 180.0,
+   "name": "CANOLA 5L",
+   "prev_ltrs": 2140.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -97.2,
+  "delta_pct": -93.4,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 60.0,
-  "name": "CANOLA 5L",
-  "prev_ltrs": 2140.0
+  "ltrs": 795.0,
+  "name": "JIVO POMACE 5L",
+  "prev_ltrs": 12085.0
  },
- "top_riser": {
-  "brand": null,
-  "code": null,
-  "delta_pct": 425.7,
-  "head": "PREMIUM",
-  "is_new": false,
-  "ltrs": 147.2,
-  "name": "EXTRA VIRGIN 200ML",
-  "prev_ltrs": 28.0
- },
+ "top_riser": null,
  "year": 2026
 }
 ```

@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36275
-- **doc_num:** 706261221
+- **doc_entry:** 36357
+- **doc_num:** 706261283
 - **doc_date:** 2026-06-30
-- **doc_total:** 47091.00
+- **doc_total:** 877.00
 - **branch_id:** 1
 - **branch_name:** DELHI
 - **card_code:** CUSTA000910
 - **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C ASSAM
-- **ship_to_address:** ASSAM-788819IN
-- **place_of_supply:** AS
+- **ship_to_code:** FLIPKART B2C UTTRAKHAND
+- **ship_to_address:** UTTARAKHAND-249204IN
+- **place_of_supply:** UK
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -36,18 +36,18 @@ tags:
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** DL-EC
-- **item_summary:** FG0000392 - POMACE OLIVE 3 LTR TIN 2 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000055 - EXTRA LIGHT 1 LTR + EXTRA VIRGIN 1 LTR + POMACE 1 LTR, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000069 - EXTRA VIRGIN 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000134 - POMACE OLIVE 5 LTR + 1 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS
-- **base_refs:** 1506264731
-- **total_quantity:** 120.000
-- **total_litres:** 216.000
+- **item_summary:** SL0000041 - COLD PRESS GROUNDNUT 5 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
+- **base_refs:** 1506264732
+- **total_quantity:** 2.000
+- **total_litres:** 10.000
 - **total_boxes:** 0.000
-- **total_weight:** 121.377
-- **line_count:** 20
+- **total_weight:** 4.962
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36275, "sap_invoice_doc_num": "706261221", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 36357, "sap_invoice_doc_num": "706261283", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

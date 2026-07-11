@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Users (68)
+title: Users (69)
 tags:
   - moc
   - source/factory
 ---
 
-# Users — 68 records
+# Users — 69 records
 
 From `/accounts/users/`. Up: [[_HOME]]
 
@@ -20,7 +20,6 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-1]] — nk
 - [[accounts__users-3]] — Test Notif User
 - [[accounts__users-4]] — Test User 2
-- [[accounts__users-14]] — Jasmeet Singh
 - [[accounts__users-34]] — Barcode
 - [[accounts__users-5]] — Jivo
 - [[accounts__users-6]] — gate
@@ -29,13 +28,14 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-18]] — Naresh Kumar
 - [[accounts__users-17]] — Shahrukh Khan
 - [[accounts__users-27]] — Preshit
-- [[accounts__users-13]] — tajinderjit
+- [[accounts__users-24]] — Gautam
 - [[accounts__users-23]] — Atul
 - [[accounts__users-29]] — Production QC
-- [[accounts__users-24]] — Gautam
+- [[accounts__users-2]] — test
+- [[accounts__users-15]] — nk
 - [[accounts__users-20]] — Kulbeer singh
 - [[accounts__users-36]] — Tin Head Production
-- [[accounts__users-33]] — JP Production
+- [[accounts__users-13]] — tajinderjit
 - [[accounts__users-32]] — Clear Pack Production
 - [[accounts__users-31]] — 6 Head Production
 - [[accounts__users-30]] — 10 Head Production
@@ -46,11 +46,11 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-12]] — Chemist
 - [[accounts__users-22]] — Sandeep singh
 - [[accounts__users-38]] — Deepak
-- [[accounts__users-2]] — test
+- [[accounts__users-14]] — Jasmeet Singh
 - [[accounts__users-40]] — Parminder
 - [[accounts__users-26]] — RK Tiwari
 - [[accounts__users-42]] — Tarandeep Singh
-- [[accounts__users-15]] — nk
+- [[accounts__users-33]] — JP Production
 - [[accounts__users-19]] — Bhupinder Singh
 - [[accounts__users-43]] — Sumit
 - [[accounts__users-44]] — Harpreet Singh
@@ -70,11 +70,12 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-58]] — Requester (Operator)
 - [[accounts__users-74]] — bhupendra singh
 - [[accounts__users-71]] — Warehouse Operations
-- [[accounts__users-55]] — Yashin
 - [[accounts__users-62]] — Bunty
 - [[accounts__users-63]] — Arvinder Singh
 - [[accounts__users-60]] — Honey
 - [[accounts__users-52]] — Charanjeet Singh
+- [[accounts__users-55]] — Yashin
 - [[accounts__users-70]] — Ekam Singh
+- [[accounts__users-75]] — Arvinpal Singh
 - [[accounts__users-72]] — labour
 - [[accounts__users-47]] — yusuf

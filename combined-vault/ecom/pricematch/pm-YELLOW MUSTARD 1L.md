@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-10
-observations: 256
+last_seen: 2026-07-11
+observations: 264
 latest_status: NOT_LISTED
-below_days: 20
+below_days: 21
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-10) — ref ₹259 vs live ₹-
-- **Days below reference:** 20 of 32
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-19]] · [[2026-06-22]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹259 vs live ₹-
+- **Days below reference:** 21 of 33
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-19]] · [[2026-06-22]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-11]]
 
-## Ref-vs-live history (256 observations)
+## Ref-vs-live history (264 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -301,6 +301,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-10,flipkart,MATCH,SVD,259,258,258,258,-1,-0.39,0,true
 2026-07-10,flipkart-minutes,NOT_LISTED,SVD,259,,,,,,0,false
 2026-07-10,zepto,NOT_LISTED,SVD,259,,,,,,0,false
+2026-07-11,amazon,MATCH,SVD,259,259,259,259,0,0,0,true
+2026-07-11,amazon-fresh,MATCH,SVD,259,259,221,259,0,0,2,true
+2026-07-11,amazon-now,MATCH,SVD,259,259,211,259,0,0,14,true
+2026-07-11,bigbasket,NOT_LISTED,SVD,259,,,,,,0,false
+2026-07-11,blinkit,NOT_LISTED,SVD,259,,,,,,0,false
+2026-07-11,flipkart,BELOW,SVD,259,234,234,234,-25,-9.65,1,true
+2026-07-11,flipkart-minutes,NOT_LISTED,SVD,259,,,,,,0,false
+2026-07-11,zepto,NOT_LISTED,SVD,259,,,,,,0,false
 ```
 
 ---

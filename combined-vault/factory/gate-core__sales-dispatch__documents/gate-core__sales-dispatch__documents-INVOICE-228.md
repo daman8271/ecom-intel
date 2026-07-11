@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR67E3663"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR67E3663
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36043
-- **doc_num:** 607260118
-- **doc_date:** 2026-07-06
-- **doc_total:** 1598500.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000906
-- **card_name:** EVARA ENTERPRISES
-- **ship_to_code:** EVARA ENTERPRISES PUNJAB
-- **ship_to_address:** VILLAGE SARINH  NEAR SINGH MOTORS MALERKOTLA ROADLUDHIANA-141116IN
-- **place_of_supply:** PB
-- **bp_gstin:** 03AALFE9594L1ZR
+- **doc_entry:** 36150
+- **doc_num:** 706261123
+- **doc_date:** 2026-06-30
+- **doc_total:** 43729.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000910
+- **card_name:** FLIPKART  (B2C-MAY-JULY)
+- **ship_to_code:** FLIPKART B2C UTTAR PRADESH
+- **ship_to_address:** UTTAR PRADESH-246761IN
+- **place_of_supply:** UP
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** HR67E3663
-- **transporter_name:** Delhi Punjab
-- **bilty_no:** 13072
-- **bilty_date:** 2026-07-07
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
-- **base_refs:** 1706264764
-- **total_quantity:** 10000.000
-- **total_litres:** 10000.000
+- **warehouses:** DL-EC
+- **item_summary:** FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000069 - EXTRA VIRGIN 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000083 - EXTRA VIRGIN COCONUT  500 ML, FG0000157 - EXTRA VIRGIN COCONUT OIL 500 MLS 24 PCS, SL0000094 - JIVO GOLD 1 LTR PACK OF 2, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000095 - JIVO GOLD 1 LTR PACK OF 3, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000122 - MUSTARD 5 LTR + CANOLA 1 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000125 - POMACE 1 LTR, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000126 - POMACE 1 LTR PACK OF 2, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000129 - POMACE 1 LTR PACK OF 2 + EXTRA LIGHT 1 LTR, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000154 - SANO POMACE 1 LTR PACK OF 2, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000157 - SANO POMACE 5 LTR, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS, SL0000184 - SUNFLOWER 5 LTR, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, SL0000229 - SOYABEAN 5 LTR + 1 LTR, FG0000192 - SOYABEAN OIL 5 LTR 4 PCS, FG0000193 - SOYABEAN OIL 1 LTR 20 PCS
+- **base_refs:** 1506264724
+- **total_quantity:** 158.000
+- **total_litres:** 391.000
 - **total_boxes:** 0.000
-- **total_weight:** 9739.880
-- **line_count:** 2
+- **total_weight:** 210.035
+- **line_count:** 40
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 1043, "sap_invoice_doc_entry": 36043, "sap_invoice_doc_num": "607260118", "invoice_number": "607260118", "eway_bill": "332286608378", "invoice_weight": "9739.880", "invoice_amount": "1598500.00", "place_of_supply": "PB", "location": "", "product_variety": "Oil", "total_litres": "10000.000", "effective_month": "2026-07", "budget_delivery_point": "LUDHIANA", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 314, "transporter_id": 47, "driver_id": null, "linked_vehicle_entry_id": 1574, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-07T09:01:02.255416Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-07", "priority": "", "transporter_name": "Delhi Punjab", "transporter_gstin": "06AANFD7642N1ZV", "contact_person": "vijayb", "mobile_no": "9812004610", "vehicle_no": "HR67E3663", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "13071", "bilty_date": "2026-07-07", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-07_at_2.00.25_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-07 at 2.00.25 PM.jpeg", "freight": "10438.41", "total_freight": "10438.41", "kanta_weight": null, "remarks": "", "created_at": "2026-07-07T09:59:24.709327+05:30", "updated_at": "2026-07-07T14:31:02.265985+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 36150, "sap_invoice_doc_num": "706261123", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "cities": [
   {
    "city": "Delhi",
-   "value": 3282.0
-  },
-  {
-   "city": "Chandigarh",
-   "value": 1617.0
+   "value": 3768.0
   },
   {
    "city": "Mumbai",
-   "value": 1609.0
+   "value": 1803.0
+  },
+  {
+   "city": "Chandigarh",
+   "value": 1700.0
   },
   {
    "city": "Amritsar",
-   "value": 1340.0
-  },
-  {
-   "city": "Ludhiana",
-   "value": 1231.0
+   "value": 1462.0
   },
   {
    "city": "Gurugram",
-   "value": 1218.0
+   "value": 1391.0
+  },
+  {
+   "city": "Ludhiana",
+   "value": 1356.0
   },
   {
    "city": "Mohali",
-   "value": 1170.0
+   "value": 1256.0
   },
   {
    "city": "Jammu",
-   "value": 1123.0
-  },
-  {
-   "city": "Jalandhar",
-   "value": 1070.0
+   "value": 1222.0
   },
   {
    "city": "Ghaziabad",
-   "value": 1057.0
+   "value": 1182.0
+  },
+  {
+   "city": "Jalandhar",
+   "value": 1181.0
   }
  ],
  "errors": [],
@@ -166,12 +166,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "BLACK CARDAMOM"
+    "sub_category": "CARDAMOM"
    },
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "CARDAMOM"
+    "sub_category": "BLACK CARDAMOM"
    },
    {
     "category": "SLICED OLIVE",
@@ -631,12 +631,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "JIVO CLOVE"
+    "sub_category": "CLOVE"
    },
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "CLOVE"
+    "sub_category": "JIVO CLOVE"
    },
    {
     "category": "COCONUT",
@@ -1065,6 +1065,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    },
    {
     "category": "OLIVE",
+    "item": "EXTRA VIRGIN 2L + 2L",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
     "item": "EXTRA VIRGIN 3L",
     "sub_category": "EXTRA VIRGIN"
    },
@@ -1471,12 +1476,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "POMACE"
+    "sub_category": "JIVO POMACE"
    },
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "JIVO POMACE"
+    "sub_category": "POMACE"
    },
    {
     "category": "OLIVE",
@@ -1911,12 +1916,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "BASMATI"
+    "sub_category": "RICE"
    },
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "RICE"
+    "sub_category": "BASMATI"
    },
    {
     "category": "RICE",
@@ -2056,12 +2061,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "NATURAL HONEY"
+    "sub_category": "HONEY"
    },
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "HONEY"
+    "sub_category": "NATURAL HONEY"
    },
    {
     "category": "HONEY",
@@ -2179,14 +2184,14 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
     "sub_category": "SESAME OIL"
    },
    {
-    "category": "SEASAME OIL",
-    "item": "SESAME OIL 1L",
-    "sub_category": "SEASAME OIL"
-   },
-   {
     "category": "SESAME OIL",
     "item": "SESAME OIL 1L",
     "sub_category": "SESAME OIL"
+   },
+   {
+    "category": "SEASAME OIL",
+    "item": "SESAME OIL 1L",
+    "sub_category": "SEASAME OIL"
    },
    {
     "category": "DRINKS",
@@ -3052,8 +3057,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
    }
   ]
  },
- "mapped_units": 24568.0,
- "mapped_value": 24568.0,
+ "mapped_units": 26944.0,
+ "mapped_value": 26944.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,115 +3069,115 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
  "states": [
   {
    "by_platform": {
-    "BLINKIT": 9413.0
+    "BLINKIT": 10151.0
    },
    "state": "PUNJAB",
-   "units": 9413.0,
-   "value": 9413.0
+   "units": 10151.0,
+   "value": 10151.0
   },
   {
    "by_platform": {
-    "BLINKIT": 3282.0
+    "BLINKIT": 3768.0
    },
    "state": "DELHI",
-   "units": 3282.0,
-   "value": 3282.0
+   "units": 3768.0,
+   "value": 3768.0
   },
   {
    "by_platform": {
-    "BLINKIT": 2909.0
+    "BLINKIT": 3247.0
    },
    "state": "HARYANA",
-   "units": 2909.0,
-   "value": 2909.0
+   "units": 3247.0,
+   "value": 3247.0
   },
   {
    "by_platform": {
-    "BLINKIT": 2002.0
-   },
-   "state": "CHANDIGARH",
-   "units": 2002.0,
-   "value": 2002.0
-  },
-  {
-   "by_platform": {
-    "BLINKIT": 1892.0
+    "BLINKIT": 2118.0
    },
    "state": "MAHARASHTRA",
-   "units": 1892.0,
-   "value": 1892.0
+   "units": 2118.0,
+   "value": 2118.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1369.0
+    "BLINKIT": 2110.0
+   },
+   "state": "CHANDIGARH",
+   "units": 2110.0,
+   "value": 2110.0
+  },
+  {
+   "by_platform": {
+    "BLINKIT": 1532.0
    },
    "state": "UTTAR PRADESH",
-   "units": 1369.0,
-   "value": 1369.0
+   "units": 1532.0,
+   "value": 1532.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1123.0
+    "BLINKIT": 1222.0
    },
    "state": "JAMMU AND KASHMIR",
-   "units": 1123.0,
-   "value": 1123.0
+   "units": 1222.0,
+   "value": 1222.0
   },
   {
    "by_platform": {
-    "BLINKIT": 1014.0
+    "BLINKIT": 1119.0
    },
    "state": "KARNATAKA",
-   "units": 1014.0,
-   "value": 1014.0
+   "units": 1119.0,
+   "value": 1119.0
   },
   {
    "by_platform": {
-    "BLINKIT": 913.0
+    "BLINKIT": 959.0
    },
    "state": "HIMACHAL PRADESH",
-   "units": 913.0,
-   "value": 913.0
+   "units": 959.0,
+   "value": 959.0
   },
   {
    "by_platform": {
-    "BLINKIT": 370.0
+    "BLINKIT": 412.0
    },
    "state": "UTTARAKHAND",
-   "units": 370.0,
-   "value": 370.0
+   "units": 412.0,
+   "value": 412.0
   },
   {
    "by_platform": {
-    "BLINKIT": 112.0
+    "BLINKIT": 122.0
    },
    "state": "RAJASTHAN",
-   "units": 112.0,
-   "value": 112.0
+   "units": 122.0,
+   "value": 122.0
   },
   {
    "by_platform": {
-    "BLINKIT": 86.0
+    "BLINKIT": 97.0
    },
    "state": "WEST BENGAL",
-   "units": 86.0,
-   "value": 86.0
+   "units": 97.0,
+   "value": 97.0
   },
   {
    "by_platform": {
-    "BLINKIT": 57.0
+    "BLINKIT": 60.0
    },
    "state": "GOA",
-   "units": 57.0,
-   "value": 57.0
+   "units": 60.0,
+   "value": 60.0
   },
   {
    "by_platform": {
-    "BLINKIT": 10.0
+    "BLINKIT": 11.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 10.0,
-   "value": 10.0
+   "units": 11.0,
+   "value": 11.0
   },
   {
    "by_platform": {
@@ -3200,8 +3205,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
   }
  ],
  "sub_categories": [],
- "total_units": 24577.0,
- "total_value": 24577.0,
+ "total_units": 26955.0,
+ "total_value": 26955.0,
  "year": 2026
 }
 ```

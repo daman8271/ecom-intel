@@ -21,7 +21,7 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
  "activeTrucks": 0,
  "inventory": 346,
  "openPOs": 0,
- "sells": 3628
+ "sells": 4620
 }
 ```
 

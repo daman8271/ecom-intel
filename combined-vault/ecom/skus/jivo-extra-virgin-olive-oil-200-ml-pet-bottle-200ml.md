@@ -7,8 +7,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-07-10
-observations: 2256
+last_seen: 2026-07-11
+observations: 2289
 min_price: 169
 max_price: 299
 latest_price: 189
@@ -33,10 +33,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (15)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (16)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (2256 observations)
+## Price history (2289 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -2296,6 +2296,39 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-10-0658,2026-07-10,amazon-fresh,Gurugram,122012,189,299,36.8,1
 2026-07-10-0658,2026-07-10,amazon-fresh,Noida,201301,189,299,36.8,1
 2026-07-10-0658,2026-07-10,amazon-fresh,Noida,201303,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110001,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110002,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110003,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110004,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110006,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110007,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110009,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110013,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110014,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110016,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110017,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110018,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110021,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110024,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110025,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110028,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110031,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110033,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110035,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110037,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110044,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110048,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110052,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110055,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Delhi,110091,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Gurugram,122001,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Gurugram,122002,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Gurugram,122003,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Gurugram,122007,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Gurugram,122010,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Gurugram,122012,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Noida,201301,189,299,36.8,1
+2026-07-11-0658,2026-07-11,amazon-fresh,Noida,201303,189,299,36.8,1
 ```
 
 ---

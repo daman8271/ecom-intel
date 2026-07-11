@@ -76,7 +76,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 55109.5,
+    "ltrs": 55224.5,
     "name": "OLIVE"
    },
    {
@@ -110,7 +110,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 26659.0,
+    "ltrs": 26714.0,
     "name": "JIVO POMACE"
    },
    {
@@ -122,7 +122,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "YELLOW MUSTARD"
    },
    {
-    "ltrs": 4275.0,
+    "ltrs": 4335.0,
     "name": "EXTRA VIRGIN"
    },
    {
@@ -142,7 +142,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "SEASAME OIL"
    }
   ],
-  "total_ltrs": 174413.5
+  "total_ltrs": 174528.5
  },
  "source": "primary",
  "year": 2026

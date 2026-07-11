@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: cold-pressed-sunflower-oil-1l
-display_name: Cold Pressed Sunflower Oil 1l
+display_name: Cold Pressed Sunflower Oil (1 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Cold Pressed Sunflower Oil 1l**
+**Cold Pressed Sunflower Oil (1 L)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹177.73 (35.4% off)

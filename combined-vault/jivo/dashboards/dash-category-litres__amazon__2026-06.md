@@ -22,19 +22,19 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
  "categories": [
   {
    "category": "GROUNDNUT",
-   "ltrs": 74879.0
+   "ltrs": 76691.0
   },
   {
    "category": "OLIVE",
-   "ltrs": 36592.5
+   "ltrs": 38209.5
   },
   {
    "category": "CANOLA",
-   "ltrs": 20339.0
+   "ltrs": 20559.0
   },
   {
    "category": "MUSTARD",
-   "ltrs": 5191.0
+   "ltrs": 5669.0
   },
   {
    "category": "FIRST PRESSED",
@@ -49,7 +49,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-amazon]]
  "head": "premium",
  "month": 6,
  "platform": "amazon",
- "total_ltrs": 142666.5,
+ "total_ltrs": 146793.5,
  "year": 2026
 }
 ```

@@ -20,9 +20,19 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
 ```json
 {
  "commodity": {
-  "categories": [],
-  "sub_categories": [],
-  "total_ltrs": 0
+  "categories": [
+   {
+    "ltrs": 360.0,
+    "name": "MUSTARD"
+   }
+  ],
+  "sub_categories": [
+   {
+    "ltrs": 360.0,
+    "name": "MUSTARD KACCHI GHANI"
+   }
+  ],
+  "total_ltrs": 360.0
  },
  "errors": [],
  "month": 7,
@@ -32,15 +42,23 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    {
     "ltrs": 9580.0,
     "name": "GROUNDNUT"
+   },
+   {
+    "ltrs": 2500.0,
+    "name": "CANOLA"
    }
   ],
   "sub_categories": [
    {
     "ltrs": 9580.0,
     "name": "GROUNDNUT"
+   },
+   {
+    "ltrs": 2500.0,
+    "name": "CANOLA"
    }
   ],
-  "total_ltrs": 9580.0
+  "total_ltrs": 12080.0
  },
  "source": "primary",
  "year": 2026

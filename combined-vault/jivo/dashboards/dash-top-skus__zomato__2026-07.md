@@ -28,30 +28,30 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -62.7,
+   "delta_pct": -53.9,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 3404.0,
+   "ltrs": 4204.0,
    "name": "SANO POMACE 1L",
    "prev_ltrs": 9116.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -89.4,
+   "delta_pct": -81.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 1400.0,
+   "ltrs": 2400.0,
    "name": "SANO POMACE 5L",
    "prev_ltrs": 13165.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": 700.0,
+   "delta_pct": 950.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 1200.0,
+   "ltrs": 1575.0,
    "name": "CANOLA 15L",
    "prev_ltrs": 150.0
   },
@@ -68,12 +68,22 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -89.5,
+   "delta_pct": -83.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 448.0,
+   "ltrs": 688.0,
    "name": "EXTRA VIRGIN 1L",
    "prev_ltrs": 4256.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -86.7,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 240.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 1808.0
   },
   {
    "brand": null,
@@ -88,12 +98,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -89.4,
+   "delta_pct": 0.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 192.0,
-   "name": "JIVO POMACE 1L",
-   "prev_ltrs": 1808.0
+   "ltrs": 180.0,
+   "name": "EXTRA VIRGIN 5L",
+   "prev_ltrs": 180.0
   },
   {
    "brand": null,
@@ -104,36 +114,26 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
    "ltrs": 48.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 80.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -88.9,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 20.0,
-   "name": "EXTRA VIRGIN 5L",
-   "prev_ltrs": 180.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -89.5,
+  "delta_pct": -86.7,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 448.0,
-  "name": "EXTRA VIRGIN 1L",
-  "prev_ltrs": 4256.0
+  "ltrs": 240.0,
+  "name": "JIVO POMACE 1L",
+  "prev_ltrs": 1808.0
  },
  "top_riser": {
   "brand": null,
   "code": null,
-  "delta_pct": 700.0,
+  "delta_pct": 950.0,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 1200.0,
+  "ltrs": 1575.0,
   "name": "CANOLA 15L",
   "prev_ltrs": 150.0
  },

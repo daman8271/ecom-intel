@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "cities": [
   {
    "city": "Bengaluru",
-   "value": 9481.0
+   "value": 10800.0
   },
   {
    "city": "Delhi",
-   "value": 7975.0
+   "value": 8794.0
   },
   {
    "city": "Hyderabad",
-   "value": 7500.0
+   "value": 8512.0
   },
   {
    "city": "Mumbai",
-   "value": 6868.0
+   "value": 7553.0
   },
   {
    "city": "Chennai",
-   "value": 4150.0
+   "value": 4508.0
   },
   {
    "city": "Kolkata",
-   "value": 2888.0
+   "value": 3274.0
   },
   {
    "city": "Chandigarh",
-   "value": 2236.0
+   "value": 2561.0
   },
   {
    "city": "Gurugram",
-   "value": 1759.0
+   "value": 2060.0
   },
   {
    "city": "Pune",
-   "value": 1206.0
+   "value": 1392.0
   },
   {
    "city": "Jaipur",
-   "value": 1202.0
+   "value": 1374.0
   }
  ],
  "errors": [],
@@ -166,12 +166,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "BLACK CARDAMOM"
+    "sub_category": "CARDAMOM"
    },
    {
     "category": "SPICES",
     "item": "BLACK CARDAMOM 100G",
-    "sub_category": "CARDAMOM"
+    "sub_category": "BLACK CARDAMOM"
    },
    {
     "category": "SLICED OLIVE",
@@ -631,12 +631,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "JIVO CLOVE"
+    "sub_category": "CLOVE"
    },
    {
     "category": "SPICES",
     "item": "CLOVE 100G",
-    "sub_category": "CLOVE"
+    "sub_category": "JIVO CLOVE"
    },
    {
     "category": "COCONUT",
@@ -1065,6 +1065,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    },
    {
     "category": "OLIVE",
+    "item": "EXTRA VIRGIN 2L + 2L",
+    "sub_category": "EXTRA VIRGIN"
+   },
+   {
+    "category": "OLIVE",
     "item": "EXTRA VIRGIN 3L",
     "sub_category": "EXTRA VIRGIN"
    },
@@ -1471,12 +1476,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "POMACE"
+    "sub_category": "JIVO POMACE"
    },
    {
     "category": "OLIVE",
     "item": "JIVO POMACE 2L",
-    "sub_category": "JIVO POMACE"
+    "sub_category": "POMACE"
    },
    {
     "category": "OLIVE",
@@ -1911,12 +1916,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "BASMATI"
+    "sub_category": "RICE"
    },
    {
     "category": "RICE",
     "item": "RICE 1KG",
-    "sub_category": "RICE"
+    "sub_category": "BASMATI"
    },
    {
     "category": "RICE",
@@ -2056,12 +2061,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "NATURAL HONEY"
+    "sub_category": "HONEY"
    },
    {
     "category": "HONEY",
     "item": "SANO HONEY 1KG",
-    "sub_category": "HONEY"
+    "sub_category": "NATURAL HONEY"
    },
    {
     "category": "HONEY",
@@ -2179,14 +2184,14 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
     "sub_category": "SESAME OIL"
    },
    {
-    "category": "SEASAME OIL",
-    "item": "SESAME OIL 1L",
-    "sub_category": "SEASAME OIL"
-   },
-   {
     "category": "SESAME OIL",
     "item": "SESAME OIL 1L",
     "sub_category": "SESAME OIL"
+   },
+   {
+    "category": "SEASAME OIL",
+    "item": "SESAME OIL 1L",
+    "sub_category": "SEASAME OIL"
    },
    {
     "category": "DRINKS",
@@ -3052,8 +3057,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
    }
   ]
  },
- "mapped_units": 65832.0,
- "mapped_value": 65832.0,
+ "mapped_units": 74216.0,
+ "mapped_value": 74216.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3064,184 +3069,184 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-swiggy]]
  "states": [
   {
    "by_platform": {
-    "SWIGGY": 10466.0
+    "SWIGGY": 11909.0
    },
    "state": "KARNATAKA",
-   "units": 10466.0,
-   "value": 10466.0
+   "units": 11909.0,
+   "value": 11909.0
   },
   {
    "by_platform": {
-    "SWIGGY": 9049.0
+    "SWIGGY": 10037.0
    },
    "state": "MAHARASHTRA",
-   "units": 9049.0,
-   "value": 9049.0
+   "units": 10037.0,
+   "value": 10037.0
   },
   {
    "by_platform": {
-    "SWIGGY": 7975.0
-   },
-   "state": "DELHI",
-   "units": 7975.0,
-   "value": 7975.0
-  },
-  {
-   "by_platform": {
-    "SWIGGY": 7901.0
+    "SWIGGY": 8964.0
    },
    "state": "TELANGANA",
-   "units": 7901.0,
-   "value": 7901.0
+   "units": 8964.0,
+   "value": 8964.0
   },
   {
    "by_platform": {
-    "SWIGGY": 5936.0
+    "SWIGGY": 8794.0
+   },
+   "state": "DELHI",
+   "units": 8794.0,
+   "value": 8794.0
+  },
+  {
+   "by_platform": {
+    "SWIGGY": 6473.0
    },
    "state": "TAMIL NADU",
-   "units": 5936.0,
-   "value": 5936.0
+   "units": 6473.0,
+   "value": 6473.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2997.0
-   },
-   "state": "WEST BENGAL",
-   "units": 2997.0,
-   "value": 2997.0
-  },
-  {
-   "by_platform": {
-    "SWIGGY": 2995.0
+    "SWIGGY": 3456.0
    },
    "state": "UTTAR PRADESH",
-   "units": 2995.0,
-   "value": 2995.0
+   "units": 3456.0,
+   "value": 3456.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2939.0
+    "SWIGGY": 3444.0
    },
    "state": "HARYANA",
-   "units": 2939.0,
-   "value": 2939.0
+   "units": 3444.0,
+   "value": 3444.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2236.0
+    "SWIGGY": 3398.0
    },
-   "state": "CHANDIGARH",
-   "units": 2236.0,
-   "value": 2236.0
+   "state": "WEST BENGAL",
+   "units": 3398.0,
+   "value": 3398.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2218.0
+    "SWIGGY": 2562.0
    },
    "state": "PUNJAB",
-   "units": 2218.0,
-   "value": 2218.0
+   "units": 2562.0,
+   "value": 2562.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2078.0
+    "SWIGGY": 2561.0
    },
-   "state": "ANDHRA PRADESH",
-   "units": 2078.0,
-   "value": 2078.0
+   "state": "CHANDIGARH",
+   "units": 2561.0,
+   "value": 2561.0
   },
   {
    "by_platform": {
-    "SWIGGY": 2040.0
+    "SWIGGY": 2350.0
    },
    "state": "RAJASTHAN",
-   "units": 2040.0,
-   "value": 2040.0
+   "units": 2350.0,
+   "value": 2350.0
   },
   {
    "by_platform": {
-    "SWIGGY": 1710.0
+    "SWIGGY": 2292.0
+   },
+   "state": "ANDHRA PRADESH",
+   "units": 2292.0,
+   "value": 2292.0
+  },
+  {
+   "by_platform": {
+    "SWIGGY": 1884.0
    },
    "state": "KERALA",
-   "units": 1710.0,
-   "value": 1710.0
+   "units": 1884.0,
+   "value": 1884.0
   },
   {
    "by_platform": {
-    "SWIGGY": 1152.0
+    "SWIGGY": 1324.0
    },
    "state": "GUJARAT",
-   "units": 1152.0,
-   "value": 1152.0
+   "units": 1324.0,
+   "value": 1324.0
   },
   {
    "by_platform": {
-    "SWIGGY": 850.0
+    "SWIGGY": 978.0
    },
    "state": "UTTARAKHAND",
-   "units": 850.0,
-   "value": 850.0
+   "units": 978.0,
+   "value": 978.0
   },
   {
    "by_platform": {
-    "SWIGGY": 847.0
+    "SWIGGY": 952.0
    },
    "state": "MADHYA PRADESH",
-   "units": 847.0,
-   "value": 847.0
+   "units": 952.0,
+   "value": 952.0
   },
   {
    "by_platform": {
-    "SWIGGY": 714.0
+    "SWIGGY": 837.0
    },
    "state": "ODISHA",
-   "units": 714.0,
-   "value": 714.0
+   "units": 837.0,
+   "value": 837.0
   },
   {
    "by_platform": {
-    "SWIGGY": 582.0
+    "SWIGGY": 666.0
    },
    "state": "GOA",
-   "units": 582.0,
-   "value": 582.0
+   "units": 666.0,
+   "value": 666.0
   },
   {
    "by_platform": {
-    "SWIGGY": 496.0
+    "SWIGGY": 568.0
    },
    "state": "BIHAR",
-   "units": 496.0,
-   "value": 496.0
+   "units": 568.0,
+   "value": 568.0
   },
   {
    "by_platform": {
-    "SWIGGY": 488.0
+    "SWIGGY": 567.0
    },
    "state": "JHARKHAND",
-   "units": 488.0,
-   "value": 488.0
+   "units": 567.0,
+   "value": 567.0
   },
   {
    "by_platform": {
-    "SWIGGY": 157.0
+    "SWIGGY": 193.0
    },
    "state": "CHHATTISGARH",
-   "units": 157.0,
-   "value": 157.0
+   "units": 193.0,
+   "value": 193.0
   },
   {
    "by_platform": {
-    "SWIGGY": 6.0
+    "SWIGGY": 7.0
    },
    "state": "ASSAM",
-   "units": 6.0,
-   "value": 6.0
+   "units": 7.0,
+   "value": 7.0
   }
  ],
  "sub_categories": [],
- "total_units": 65832.0,
- "total_value": 65832.0,
+ "total_units": 74216.0,
+ "total_value": 74216.0,
  "year": 2026
 }
 ```

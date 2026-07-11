@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR67E7648"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR67E7648
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36251
-- **doc_num:** 706261204
-- **doc_date:** 2026-06-30
-- **doc_total:** 24817.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C BIHAR
-- **ship_to_address:** BIHAR-853204IN
-- **place_of_supply:** BH
-- **bp_gstin:** 
+- **doc_entry:** 36335
+- **doc_num:** 607260134
+- **doc_date:** 2026-07-09
+- **doc_total:** 1379975.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000906
+- **card_name:** EVARA ENTERPRISES
+- **ship_to_code:** EVARA ENTERPRISES PUNJAB
+- **ship_to_address:** VILLAGE SARINH  NEAR SINGH MOTORS MALERKOTLA ROADLUDHIANA-141116IN
+- **place_of_supply:** PB
+- **bp_gstin:** 03AALFE9594L1ZR
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR67E7648
+- **transporter_name:** Delhi Punjab
+- **bilty_no:** 13084
+- **bilty_date:** 2026-07-10
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000400 - EXTRA LIGHT 1+1+1 LTR, SL0000029 - COLD PRESS 5 LTR + 1 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000041 - COLD PRESS GROUNDNUT 5 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, SL0000044 - COLD PRESS GROUNDNUT  1 LTR PACK OF 2, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000125 - POMACE 1 LTR, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000155 - SANO POMACE 1 LTR PACK OF 3, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000157 - SANO POMACE 5 LTR, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS, SL0000210 - SO OLIVE OIL 1 LTR 16 PCS, FG0000228 - SO OLIVE 1L 16 PCS, SL0000236 - SOYABEAN OIL 1 LTR, FG0000193 - SOYABEAN OIL 1 LTR 20 PCS
-- **base_refs:** 1506264728
-- **total_quantity:** 66.000
-- **total_litres:** 136.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
+- **base_refs:** 1707264529
+- **total_quantity:** 8220.000
+- **total_litres:** 8620.000
 - **total_boxes:** 0.000
-- **total_weight:** 101.504
-- **line_count:** 23
+- **total_weight:** 8396.384
+- **line_count:** 3
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36251, "sap_invoice_doc_num": "706261204", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 1129, "sap_invoice_doc_entry": 36335, "sap_invoice_doc_num": "607260134", "invoice_number": "607260134", "eway_bill": "392288903620", "invoice_weight": "8396.384", "invoice_amount": "1379975.00", "place_of_supply": "PB", "location": "", "product_variety": "Oil", "total_litres": "8620.000", "effective_month": "2026-07", "budget_delivery_point": "LUDHIANA", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 252, "transporter_id": 47, "driver_id": null, "linked_vehicle_entry_id": 1774, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-10T11:40:02.272635Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-10", "priority": "High", "transporter_name": "Delhi Punjab", "transporter_gstin": "06AANFD7642N1ZV", "contact_person": "vijayb", "mobile_no": "9812004610", "vehicle_no": "HR67E7648", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "13084", "bilty_date": "2026-07-10", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-10_at_15.39.09.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-10 at 15.39.09.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-10T10:13:28.080144+05:30", "updated_at": "2026-07-10T17:10:02.288298+05:30"}
   ```

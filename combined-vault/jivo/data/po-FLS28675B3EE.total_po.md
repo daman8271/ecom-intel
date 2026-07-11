@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po`, embedded once here (verbatim, full column
 
 ```csv
 basic_rate,delivered_qty,format,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-147.61904761904762,,FLIPKART GROCERY,,17634,155.0,Manesar,3580.0,2026-07-06,2026-07-19,FLS28675B3EE,,EDOGDVWYGJNDYRQP,JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil 1 L Plastic Bottle,PENDING,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po:17634,2026-07-10
+147.61904761904762,,FLIPKART GROCERY,,17634,155.0,Manesar,3580.0,2026-07-06,2026-07-19,FLS28675B3EE,,EDOGDVWYGJNDYRQP,JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil 1 L Plastic Bottle,PENDING,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po:17634,2026-07-11
 ```
 
 ---

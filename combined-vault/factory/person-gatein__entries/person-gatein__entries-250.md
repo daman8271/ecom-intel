@@ -24,18 +24,21 @@ tags:
   ```json
   {"id": 2, "name": "Front gate", "location": null, "is_active": true}
   ```
-- **gate_out:** None
+- **gate_out:**
+  ```json
+  {"id": 2, "name": "Front gate", "location": null, "is_active": true}
+  ```
 - **name_snapshot:** Mohit 8930096738
 - **photo_snapshot:** None
 - **entry_time:** 2026-07-09T11:52:43.723122+05:30
 - **actual_entry_time:** 2026-07-09T11:51:00+05:30
-- **exit_time:** None
+- **exit_time:** 2026-07-10T09:11:33.378339+05:30
 - **purpose:** Meeting sumit 
 - **vehicle_no:** None
 - **remarks:** Mohit with happy 
-- **status:** IN
+- **status:** OUT
 - **created_at:** 2026-07-09T11:52:43.723200+05:30
-- **updated_at:** 2026-07-09T11:52:43.723210+05:30
+- **updated_at:** 2026-07-10T09:11:33.380571+05:30
 - **visitor:** 178
 - **labour:** None
 - **approved_by:** None
@@ -43,5 +46,6 @@ tags:
 
 ## Related
 - gate_in -> [[pgate-2]]
+- gate_out -> [[pgate-2]]
 - person_type -> [[ptype-1]]
 - visitor -> [[vis-178]]
