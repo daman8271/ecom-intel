@@ -62,6 +62,14 @@ national_spooled(){    # did BB national make today's batch (run_all's spool OR 
 }
 pincode_routed(){ [ -f "$PIN_RPT" ] && [ -f "$PIN_MARK" ]; }
 blinkit_sent(){ [ -f "logs/blinkit-main-wa-${TODAY}.sent" ]; }
+batch_posted(){        # did the 10:00 mailer actually post the batch to the Ecom group?
+  # Spool checks can't see delivery: on 2026-07-11 a Gmail 535 aborted the mailer
+  # before its WhatsApp block and the batch never reached the group. Look for the
+  # "posted N reports" line AFTER today's mailer-start marker in mailer.log.
+  awk -v d="$TODAY" '$0 ~ ("mailer start slot=.* date=" d) {f=1}
+       f && / reports to Ecom team group/ {found=1}
+       END {exit found?0:1}' logs/mailer.log 2>/dev/null
+}
 
 # ======================================================================= EARLY
 if [ "$PASS" = "early" ]; then
@@ -106,10 +114,24 @@ fi
 
 # ======================================================================= CHECK
 # Completeness summary + auto-catch-up for anything still missing after the batch.
-NAT_OK=0; PIN_OK=0; BLK_OK=0
+NAT_OK=0; PIN_OK=0; BLK_OK=0; BATCH_OK=0
 national_spooled && NAT_OK=1
 pincode_routed   && PIN_OK=1
 blinkit_sent     && BLK_OK=1
+batch_posted     && BATCH_OK=1
+
+# --- auto-catch-up: 10:00 batch never reached the Ecom group -> WhatsApp-only resend ---
+BATCH_NOTE=""
+if [ "$BATCH_OK" != "1" ]; then
+  if [ "$DRY" = "1" ]; then
+    BATCH_NOTE="[dryrun] would resend the price-data batch to the Ecom group (WhatsApp-only)."
+  elif MAILER_SKIP_EMAIL=1 MAILER_SKIP_WAIT=1 ./tools/mailer/mail_price_data.sh am && batch_posted; then
+    BATCH_OK=1
+    BATCH_NOTE="Price-data batch was missing from the Ecom group — resent via WhatsApp (email untouched)."
+  else
+    BATCH_NOTE="[WARN] price-data batch not in the Ecom group and the WhatsApp-only resend failed — check logs/mailer.log."
+  fi
+fi
 
 # --- auto-catch-up: BB pincode (Mac shard re-routed to KVM1), single-flight ---
 PIN_NOTE=""
@@ -144,9 +166,12 @@ emoji(){ [ "$1" = "1" ] && echo "✅" || echo "❌"; }
 SUMMARY="Morning report check ${TODAY}:
 $(emoji $NAT_OK) BigBasket national (10:00 batch)
 $(emoji $PIN_OK) BigBasket pincode-wise (Ecom group)
-$(emoji $BLK_OK) Blinkit (Ecom group)"
+$(emoji $BLK_OK) Blinkit (Ecom group)
+$(emoji $BATCH_OK) Price-data batch (Ecom group WhatsApp)"
 [ -n "$PIN_NOTE" ] && SUMMARY="$SUMMARY
 ↳ $PIN_NOTE"
+[ -n "$BATCH_NOTE" ] && SUMMARY="$SUMMARY
+↳ $BATCH_NOTE"
 
 # --- Blinkit is Mac-only: cannot be validly reproduced on the VPS -> alert only ---
 if [ "$BLK_OK" != "1" ]; then
@@ -154,9 +179,9 @@ if [ "$BLK_OK" != "1" ]; then
 ↳ Blinkit needs the Mac (residential auth). If the Mac is down it can't be recovered on the VPS — power the Mac on."
 fi
 
-if [ "$NAT_OK" = "1" ] && [ "$PIN_OK" = "1" ] && [ "$BLK_OK" = "1" ]; then
-  LOG "all three routed — OK"
-  alert "✅ All 3 morning reports routed for ${TODAY} (BB national, BB pincode, Blinkit)."
+if [ "$NAT_OK" = "1" ] && [ "$PIN_OK" = "1" ] && [ "$BLK_OK" = "1" ] && [ "$BATCH_OK" = "1" ]; then
+  LOG "all four routed — OK"
+  alert "✅ All 4 morning reports routed for ${TODAY} (BB national, BB pincode, Blinkit, price-data batch)."
 else
   alert "⚠️ $SUMMARY"
 fi

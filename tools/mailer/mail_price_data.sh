@@ -158,12 +158,19 @@ BODY="Today's price data reports attached (${#PRESENT[@]}/$(( ${#EXPECTED[@]} + 
 ATTACH=()
 for f in "${PRESENT[@]}"; do ATTACH+=(--attach "$f"); done
 
+# Email failure must NEVER block the WhatsApp group post (2026-07-11: a revoked
+# Gmail app password 535'd here and the exit 1 silently dropped the whole
+# Ecom-group batch). Record the failure, alert, and keep going.
+EMAIL_FAIL=0
 if [ "${MAILER_DRY_RUN_SEND:-0}" = "1" ]; then
   echo "DRYRUN email: to=$TO subject=$SUBJ files=${#PRESENT[@]}"
+elif [ "${MAILER_SKIP_EMAIL:-0}" = "1" ]; then
+  # WhatsApp-only mode for guard retries: never risk double-emailing the team list.
+  echo "email: skipped (MAILER_SKIP_EMAIL=1)"
 else
   python3 tools/send_email.py --to "$TO" --from-name "Jivo Intel" \
     --subject "$SUBJ" --body "$BODY" "${ATTACH[@]}" \
-    || { echo "ERROR: send failed"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env"; exit 1; }
+    || { EMAIL_FAIL=1; echo "ERROR: email send failed — continuing to WhatsApp"; alert "Gmail send failed — check GMAIL_APP_PASSWORD in secrets.env (WhatsApp group post still going out)"; }
 fi
 
 # Also post the same files to the WhatsApp "Ecom team" group via the Hermes
@@ -208,7 +215,11 @@ else
     echo "WhatsApp: posted ${#WA_PRESENT[@]} reports to Ecom team group"
   else
     echo "ERROR: some WhatsApp posts failed"
-    alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"
+    if [ "$EMAIL_FAIL" -eq 0 ]; then
+      alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"
+    else
+      alert "WhatsApp Ecom-group post failed for one or more files AND email failed — team got nothing"
+    fi
   fi
 fi
 
@@ -230,4 +241,8 @@ elif [ -f "$BLINKIT_NOT_LISTED_REPORT" ] && [ "$BLINKIT_READY" -ne 1 ]; then
   echo "Blinkit not-listed direct WhatsApp skipped because main Blinkit report was not accepted"
 fi
 
+if [ "$EMAIL_FAIL" -eq 1 ]; then
+  echo "=== $(date '+%F %T') mailer done WITH EMAIL FAILURE -> WhatsApp group only (${#PRESENT[@]} files) ==="
+  exit 1
+fi
 echo "=== $(date '+%F %T') mailer done -> $TO + WhatsApp group (${#PRESENT[@]} files) ==="
