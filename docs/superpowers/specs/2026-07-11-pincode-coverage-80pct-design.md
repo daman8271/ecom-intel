@@ -25,11 +25,11 @@ Non-goals: national platforms (Amazon marketplace, Flipkart marketplace, BigBask
 
 | Platform | File(s) | Now → New | Runtime @measured s/pin | Schedule fit |
 |---|---|---|---|---|
-| Blinkit | `platforms/blinkit/pincodes.daily.json` + re-split `pincodes.daily.mac.json` / `pincodes.daily.vps.json`; KVM fallback (`blinkit_vps_kvm_fallback.sh`) inputs re-checked | 902 → ~1,490 | 12.0 → ~745/shard ≈ 2.5h | 6:30 AM store-floor start (unchanged, never earlier), done ~9:00 → 10:30 hard rule holds |
+| Blinkit | `platforms/blinkit/pincodes.daily.json` (synced to the Mac's imported copy — VPS/KVM scrape path is retired; Mac runner is the sole daily path) | 902 → ~1,490 | Mac wall ≈ 3.75s/pin → ~93 min | 6:30 AM store-floor start (unchanged), done ~8:05 → 10:30 hard rule holds with hours of margin. Ingest ceilings raised: `BLINKIT_MAX_UNRESOLVED` 45→700, `BLINKIT_MAX_WALL_S` 4000→7800 |
 | Zepto | `platforms/zepto/pincodes.daily.json` | 693 → ~1,365 | 2.1 → ~48 min | Mac 7:20 launch — fine |
 | FK Minutes | `platforms/flipkart-minutes/pincodes.daily.json` | 340 → ~1,320 | 0.27 → ~6 min | KVM1 7:30 trio — trivial |
-| Amazon Fresh | `platforms/amazon-fresh/pincodes.daily.json` | 170 → ~1,260 | 13.5 → ~4.7h | Early slot in the overnight VPS chain (~01:02→06:00); `.amazon-account.lock` discipline unchanged — never overlaps Now |
-| Amazon Now | `platforms/amazon-now/pincodes.daily.json` | 376 → ~1,265 | 7.7 → ~2.7h | Launch stays **~7:30 AM** (stores not reliably open earlier — daytime rule). Existing 376 pins run first and finish ~8:20 as today; new-pin tail runs until ~10:12. Batch at 10:00 takes what's ready; late-spool (`spool_into_batch.sh`) rides the tail in |
+| Amazon Fresh | core `pincodes.daily.json` UNCHANGED (169, Option-C set) + NEW `pincodes.daily.tail.json` (~1,100) scraped by a post-batch tail sweep | 169 core + ~1,100 tail | tail ~4h chunked | Core stays in the 10:00 chain exactly as today (fresh+now are separate accounts and may run concurrently; each holds its own `.<platform>.lock`). Tail = `tools/cron/amazon_tail_sweep.sh`, cron 10:15 AM, per-city chunks with `.done` markers — a tarpit night loses only unfinished chunks, never the daily report. Daily attempted coverage = core ∪ tail = literal 80% |
+| Amazon Now | core `pincodes.daily.json` UNCHANGED (376) + NEW `pincodes.daily.tail.json` (~900), same tail sweep | 376 core + ~900 tail | tail ~2h chunked | Chain unchanged; tail starts 10:15 AM (daytime rule satisfied by construction) |
 | BB svc | `platforms/bigbasket/pincodes_jivo.json` | 227 → ~1,340 | per-pin cost unmeasured; at an assumed ≤4s/pin ≈ +1.2h — measure on night 1 | 3:00 AM dedicated cron — hours of headroom either way |
 | Instamart | `platforms/instamart/pincodes.json` (anchor-cluster config) | 332 anchors → ~540 (→ ~1,250 represented) | Mac-only | New anchors from existing `tools/pincodes/gather_and_geocode.py` + `cluster_anchors.py` over the target set; file synced to wherever the Mac launchd job reads it (verify path on macpro before flip) |
 
@@ -37,8 +37,8 @@ Coverage math for Instamart uses **represented** pins (guide convention).
 
 ## 4 · Guard & predictor pre-adjustments (before tonight's sweep)
 
-1. **Deadline predictor warm-start:** append 10 synthetic durations per pincode-driven platform at the NEW counts into `tools/cron/durations.jsonl` (adapt `tools/pincodes/warmstart_durations.py` — its anchor-count glob points at a dead scratchpad; feed counts explicitly). Without this, night-1 lead is undersized and the batch lands late.
-2. **check_layout %-inflation scanner (10:10):** row counts legitimately jump ~3× on 2026-07-12 — step the baseline/whitelist the flip date so it doesn't page.
+1. **Deadline predictor warm-start:** with the Amazon core lists unchanged and blinkit/zepto/bigbasket outside the chain, the ONLY chain platform that grows is flipkart-minutes (+~265s) — append 10 synthetic fkm durations to `tools/cron/durations.jsonl`. `LEAD_MAX=11820` and the 00:30 crontab line stay untouched.
+2. **check_layout %-inflation scanner (10:10):** verified a value-format guard (cells ≥2000%), NOT a row-count guard — no change needed for the volume jump.
 3. **BigBasket ingest floor (75%-of-last-good):** confirm whether it keys on svc rows; if yes, re-anchor last-good after the first expanded run.
 4. **blinkit_batch_guard.sh / morning_report_guard.sh:** audit for hard-coded pin counts or expected-row thresholds; fix any found. (Known stale: `run.sh` inline count comments — update while there.)
 5. **Backups:** every replaced list gets `<name>.bak-20260711`; rollback = restore backups + re-run warm-start at old counts.
