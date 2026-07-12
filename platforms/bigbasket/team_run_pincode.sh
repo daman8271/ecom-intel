@@ -36,9 +36,12 @@ LAPTOP_BASE="${BB_TEAM_LAPTOP_BASE:-C:/Users/prabh/bb}"
 VPS_WEIGHT="${BB_TEAM_VPS_WEIGHT:-3}"
 MAC_WEIGHT="${BB_TEAM_MAC_WEIGHT:-3}"
 KVM_WEIGHT="${BB_TEAM_KVM_WEIGHT:-1}"
-# Owner directive 2026-07-13: the Windows laptop takes ~HALF the pincode list
-# (7 of 14 total weight); VPS/Mac/KVM1 share the other half 3/3/1.
-LAPTOP_WEIGHT="${BB_TEAM_LAPTOP_WEIGHT:-7}"
+# Laptop weight 3 = balanced with VPS/Mac (≈494 pins each, KVM1 ≈165) — the
+# wall-clock-optimal split, since the slowest shard sets the night's length.
+# BB_TEAM_LAPTOP_WEIGHT=7 would give the laptop a literal half (~822 pins) but
+# makes it the long pole and risks the 6h cap + the laptop's 06:15 Blinkit
+# shard. Override via env on the cron line if literal-half is ever wanted.
+LAPTOP_WEIGHT="${BB_TEAM_LAPTOP_WEIGHT:-3}"
 WAIT_TIMEOUT_S="${BB_TEAM_WAIT_TIMEOUT_S:-21600}"
 POLL_S="${BB_TEAM_POLL_S:-30}"
 
