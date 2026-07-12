@@ -1,0 +1,37 @@
+{
+  "run_id": "bb-team-20260713-030002",
+  "created_at": "2026-07-12T21:30:04Z",
+  "pins_total": 1645,
+  "weights": {
+    "vps": 3,
+    "macpro": 3,
+    "kvm1": 1,
+    "laptop": 3
+  },
+  "workers": [
+    {
+      "name": "vps",
+      "weight": 3,
+      "pins": 495,
+      "result": "vps.json"
+    },
+    {
+      "name": "macpro",
+      "weight": 3,
+      "pins": 494,
+      "result": "macpro.json"
+    },
+    {
+      "name": "kvm1",
+      "weight": 1,
+      "pins": 164,
+      "result": "kvm1.json"
+    },
+    {
+      "name": "laptop",
+      "weight": 3,
+      "pins": 492,
+      "result": "laptop.json"
+    }
+  ]
+}
