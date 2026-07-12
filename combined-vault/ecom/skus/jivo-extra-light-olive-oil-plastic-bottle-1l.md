@@ -1,12 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-plastic-bottle-1l
-display_name: Jivo Extra Light Olive Oil Plastic Bottle 1l
+display_name: JIVO Extra Light Olive Oil Plastic Bottle (1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-12
-last_seen: 2026-07-09
-observations: 11
+last_seen: 2026-07-12
+observations: 12
 min_price: 999
 max_price: 1499
 latest_price: 999
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil Plastic Bottle 1l**
+**JIVO Extra Light Olive Oil Plastic Bottle (1 L)**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹999
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Gurugram]] · [[Lucknow]]
 
-## Runs that observed this SKU (11)
-[[flipkart-minutes-2026-07-09-0645]] · [[flipkart-minutes-2026-07-06-0102]] · [[flipkart-minutes-2026-07-04-0102]] · [[flipkart-minutes-2026-07-03-0102]] · [[flipkart-minutes-2026-07-02-1158]] · [[flipkart-minutes-2026-07-01-1549]] · [[flipkart-minutes-2026-06-30-0549]] · [[flipkart-minutes-2026-06-13-1205]] · [[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]]
+## Runs that observed this SKU (12)
+[[flipkart-minutes-2026-07-12-0645]] · [[flipkart-minutes-2026-07-09-0645]] · [[flipkart-minutes-2026-07-06-0102]] · [[flipkart-minutes-2026-07-04-0102]] · [[flipkart-minutes-2026-07-03-0102]] · [[flipkart-minutes-2026-07-02-1158]] · [[flipkart-minutes-2026-07-01-1549]] · [[flipkart-minutes-2026-06-30-0549]] · [[flipkart-minutes-2026-06-13-1205]] · [[flipkart-minutes-2026-06-13-0832]] · [[flipkart-minutes-2026-06-12-1216]] · [[flipkart-minutes-2026-06-12-0832]]
 
-## Price history (11 observations)
+## Price history (12 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -45,6 +45,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-04-0102,2026-07-04,flipkart-minutes,Gurugram,122005,1499,,,1
 2026-07-06-0102,2026-07-06,flipkart-minutes,Delhi,110099,1499,,,0
 2026-07-09-0645,2026-07-09,flipkart-minutes,Lucknow,226030,999,999,0,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Lucknow,226030,999,,,1
 ```
 
 ---
@@ -52,7 +53,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000005|sku-FG0000005]] — Fuzzy name/pack match: ecom listing 'Jivo Extra Light Olive Oil Plastic Bottle 1l' is JIVO EXTRA LIGHT 1L; same physical product, not fused by bridge _(D0)_
+- [[jivo/skus/sku-FG0000005|sku-FG0000005]] — same physical product (EXTRA LIGHT 1L = 'Jivo Extra Light Olive Oil Plastic Bottle 1l'), name+pack match, unfused by SKU bridge _(D0)_
 
 
 ## Related

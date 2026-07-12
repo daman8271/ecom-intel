@@ -73,7 +73,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000008|sku-FG0000008]] — Fuzzy name/pack match: ecom listing 'Jivo Pomace Cooking Olive Oil Tin 5l' is JIVO JIVO POMACE 5L; same physical product, not fused by bridge _(D0)_
+- [[jivo/skus/sku-FG0000008|sku-FG0000008]] — same physical product (JIVO POMACE 5L = 'Jivo Pomace Cooking Olive Oil Tin 5l'), name+pack match, unfused by SKU bridge _(D0)_
 
 
 ## Related

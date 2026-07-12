@@ -33,24 +33,30 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
   "mid_category_name",
   "leaf_category_name",
   "soh",
-  "soh_value"
+  "soh_value",
+  "category",
+  "sub_category",
+  "month"
  ],
  "sample": {
   "brand_name": "Jivo",
+  "category": "CANOLA",
   "city": "Kolkata",
-  "id": 1,
-  "inventory_date": "2026-01-01",
-  "leaf_category_name": "Unsweetened, Cold Press",
-  "mid_category_name": "Fruit Juices & Drinks",
-  "sku_description": "Jivo mojito-healthy-wheatgrass-juice-sugar-free 200 ml",
-  "sku_id": "40335331",
-  "sku_name": "Mojito Healthy Wheatgrass Juice - Sugar Free",
-  "sku_pack_type": "&",
-  "sku_weight": "200 ml",
-  "soh": 29,
-  "soh_value": 1450.0,
-  "top_category_name": "Beverages",
-  "uploaded_at": "2026-01-01T12:14:57.738193Z"
+  "id": 14266,
+  "inventory_date": "2026-03-09",
+  "leaf_category_name": "Olive & Canola Oils",
+  "mid_category_name": "Edible Oils & Ghee",
+  "month": "MARCH",
+  "sku_description": "Jivo canola-oil 5 L Bottle",
+  "sku_id": "282780",
+  "sku_name": "Canola Oil",
+  "sku_pack_type": "Bottle",
+  "sku_weight": "5 L",
+  "soh": 36,
+  "soh_value": 40500.0,
+  "sub_category": "CANOLA",
+  "top_category_name": "Foodgrains, Oil & Masala",
+  "uploaded_at": "2026-03-09T05:46:19.892633Z"
  }
 }
 ```

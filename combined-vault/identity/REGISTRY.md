@@ -14,7 +14,7 @@ Up: [[Home]]
 - **Retired/merged JIDs (kept, never reused):** 0
 - **Highest serial minted:** JID-0151
 - **Identity conflicts to review:** 14
-- **Generated:** 2026-07-11T07:11:47.245406+00:00
+- **Generated:** 2026-07-12T09:49:19.682592+00:00
 
 ## Registry — JID ↔ product ↔ external keys
 | JID | Product (our canonical) | SAP code(s) — app/factory | Ecom canonical listing(s) | Category | Tier |
@@ -64,7 +64,7 @@ Up: [[Home]]
 | `JID-0043` | [[GOLD 1L]] | `FG0000149` | `jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-natural-antioxidants-1-litre-pack-1l`, `edogxyeferfxp3zy`, `jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l` | BLENDED | COMMODITY |
 | `JID-0044` | [[SANO POMACE 1L]] | `FG0000150` | `sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-roasting-high-smoke-point-cooking-oil-for-indian-kitchen-1000ml-1l`, `edogrrxuhzzhz2wz` | OLIVE | PREMIUM |
 | `JID-0045` | [[SANO POMACE 5L]] | `FG0000151` | `sano-pomace-olive-oil-5l-ideal-for-frying-roasting-sauting-rich-neutral-flavour-high-smoke-point-versatile-edible-cooking-oil-for-indian-cuisine-5l`, `edogrsy3tnxgejpj` | OLIVE | PREMIUM |
-| `JID-0046` | [[SANO CLASSIC 5L]] | `FG0000152` | `sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-healthy-cooking-oil-5l`, `edohagdyvqwt6gng` | OLIVE | PREMIUM |
+| `JID-0046` | [[SANO CLASSIC 5L]] | `FG0000152` | `sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-healthy-cooking-oil-5l`, `edohagdyvqwt6gng` | OTHER | OTHER |
 | `JID-0047` | [[EXTRA VIRGIN 2L]] | `FG0000155` | `jivo-extra-virgin-olive-oil-2-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-2l`, `edog2nmphjzh6gjc` | OLIVE | PREMIUM |
 | `JID-0048` | [[COCONUT 500ML]] | `FG0000157` | `jivo-pure-extra-virgin-coconut-oil-500-ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-500ml`, `edohf5f6bs3mehjd`, `jivo-pure-extra-virgin-coconut-oil-500-ml-500ml` | COCONUT | PREMIUM |
 | `JID-0049` | [[CANOLA 4L]] | `FG0000160` | `jivo-canola-cold-pressed-edible-oil-4-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-4l` | CANOLA | PREMIUM |
@@ -117,7 +117,7 @@ Up: [[Home]]
 | `JID-0096` | [[SODA 750ML]] | `FG0000282` | `jivo-extra-fizzy-soda-750-ml-soda-750ml` | DRINKS | OTHER |
 | `JID-0097` | [[BLACK OLIVE 470G]] | `FG0000288` | `jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml` | SLICED OLIVE | PREMIUM |
 | `JID-0098` | [[FLAX SEEDS 400 GM]] | `FG0000290` | `jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml`, `edsh5avfzrhq43rz` | SEEDS | OTHER |
-| `JID-0099` | [[DRY FRUITS 200G]] | `FG0000291` | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` | GIFT PACK | OTHER |
+| `JID-0099` | [[DRY FRUITS 200G]] | `FG0000291` | `jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml` | OTHER | OTHER |
 | `JID-0100` | [[PUNJABI JEERA 160ML]] | `FG0000293` | `jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml` | DRINKS | OTHER |
 | `JID-0101` | [[BASIL SEEDS 400G]] | `FG0000296` | `jivo-raw-basil-seeds-for-weight-loss-400gm-sabja-seed-takmuria-seeds-400g-high-fibre-and-omega-3-400ml` | SEEDS | OTHER |
 | `JID-0102` | [[BASIL SEEDS 800 GM]] | `FG0000297` | `edsh4yk7vc4zcnpu`, `jivo-raw-basil-seeds-for-weight-loss-sabja-seeds-tukmaria-seeds-high-in-fiber-omega3-nutrients-ideal-for-smoothies-drinks-and-baking-100-natural-vegan-glutenfree-800g-800ml` | SEEDS | OTHER |

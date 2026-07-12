@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR55AZ4229"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR55AZ4229
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36064
-- **doc_num:** 707260160
+- **doc_entry:** 36085
+- **doc_num:** 607260120
 - **doc_date:** 2026-07-07
-- **doc_total:** 7050.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000599
-- **card_name:** DEL RAJU EAST
-- **ship_to_code:** DEL RAJU EAST DELHI
-- **ship_to_address:** DELHINEW DELHI-110084IN
-- **place_of_supply:** DL
-- **bp_gstin:** 
+- **doc_total:** 361000.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000354
+- **card_name:** CHIRAG ENTERPRISES MUMBAI
+- **ship_to_code:** CHIRAG ENTERPRISES MUMBAI BHIWANDI
+- **ship_to_address:** ANJUR MANKOLI ROAD DAPODA ROADBHIWANDI-421302IN
+- **place_of_supply:** MH
+- **bp_gstin:** 27AAAPH2173D1Z8
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR55AZ4229
+- **transporter_name:** Bombey Srinagar
+- **bilty_no:** 1126.
+- **bilty_date:** 2026-07-08
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-MP
-- **item_summary:** FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000116 - EXTRA VIRGIN COCONUT OIL 1 LTR 16 PCS, FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS
-- **base_refs:** 1507264541
-- **total_quantity:** 24.000
-- **total_litres:** 31.500
-- **total_boxes:** 16.000
-- **total_weight:** 22.603
-- **line_count:** 5
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
+- **base_refs:** 1706264754
+- **total_quantity:** 2050.000
+- **total_litres:** 2050.000
+- **total_boxes:** 0.000
+- **total_weight:** 2073.223
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36064, "sap_invoice_doc_num": "707260160", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 1084, "sap_invoice_doc_entry": 36085, "sap_invoice_doc_num": "607260120", "invoice_number": "607260120", "eway_bill": "372287779761", "invoice_weight": "2073.223", "invoice_amount": "361000.00", "place_of_supply": "MH", "location": "", "product_variety": "Oil", "total_litres": "2050.000", "effective_month": "2026-07", "budget_delivery_point": "BHIWANDI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 400, "transporter_id": 96, "driver_id": null, "linked_vehicle_entry_id": 1676, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-08T15:33:59.747637Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-07", "priority": "High", "transporter_name": "Bombey Srinagar", "transporter_gstin": "07AAXFB9863D1ZV", "contact_person": "kishan veer singh", "mobile_no": "9350574840", "vehicle_no": "HR55AZ4229", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1126", "bilty_date": "2026-07-08", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-08_at_8.54.41_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-08 at 8.54.41 PM.jpeg", "freight": "19893.59", "total_freight": "19893.59", "kanta_weight": null, "remarks": "", "created_at": "2026-07-08T11:37:58.609119+05:30", "updated_at": "2026-07-08T21:03:59.760270+05:30"}
   ```

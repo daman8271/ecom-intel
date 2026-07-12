@@ -72,7 +72,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000028|sku-FG0000028]] — Fuzzy name/pack match: ecom listing 'Jivo Pomace Edible Olive Oil Cooking Daily Use Rich In Mufa Low In Sat' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge _(D0)_
+- [[jivo/skus/sku-FG0000028|sku-FG0000028]] — same physical product (JIVO POMACE 1L = 'Jivo Pomace Edible Olive Oil Cooking Daily Use Rich In Mu...'), name+pack match, unfused by SKU bridge _(D0)_
 
 
 ## Related

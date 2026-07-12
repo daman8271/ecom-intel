@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-149.52,0.0,SWIGGY,,,78968,156.996,CHANDIGARH,3800.0,2026-07-04,2026-07-16,PCHPO212661,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-07,total_po_zbs:78968,2026-07-11
-747.62,0.0,SWIGGY,,,78969,785.001,CHANDIGARH,32.0,2026-07-04,2026-07-16,PCHPO212661,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-07,total_po_zbs:78969,2026-07-11
-147.62,0.0,SWIGGY,,,78970,155.001,CHANDIGARH,32.0,2026-07-04,2026-07-16,PCHPO212661,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-07,total_po_zbs:78970,2026-07-11
+149.52,0.0,SWIGGY,,,78968,156.996,CHANDIGARH,3800.0,2026-07-04,2026-07-16,PCHPO212661,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-07,total_po_zbs:78968,2026-07-12
+747.62,0.0,SWIGGY,,,78969,785.001,CHANDIGARH,32.0,2026-07-04,2026-07-16,PCHPO212661,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-07,total_po_zbs:78969,2026-07-12
+147.62,0.0,SWIGGY,,,78970,155.001,CHANDIGARH,32.0,2026-07-04,2026-07-16,PCHPO212661,,958164,Jivo Ricebran Oil 1L 1.0 ltr,CONFIRMED,EVARA ENTERPRISES,2026-07-07,total_po_zbs:78970,2026-07-12
 ```
 
 ---

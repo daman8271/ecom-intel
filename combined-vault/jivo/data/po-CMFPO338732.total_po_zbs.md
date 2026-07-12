@@ -18,12 +18,12 @@ Canonical raw rows (6) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-1228.57,0.0,SWIGGY,,,79695,1289.9985,MUMBAI,6.0,2026-07-08,2026-07-17,CMFPO338732,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79695,2026-07-11
-344.76,0.0,SWIGGY,,,79696,361.998,MUMBAI,100.0,2026-07-08,2026-07-17,CMFPO338732,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79696,2026-07-11
-149.52,0.0,SWIGGY,,,79697,156.996,MUMBAI,500.0,2026-07-08,2026-07-17,CMFPO338732,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79697,2026-07-11
-747.62,0.0,SWIGGY,,,79698,785.001,MUMBAI,16.0,2026-07-08,2026-07-17,CMFPO338732,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79698,2026-07-11
-242.86,0.0,SWIGGY,,,79699,255.003,MUMBAI,80.0,2026-07-08,2026-07-17,CMFPO338732,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79699,2026-07-11
-180.95,0.0,SWIGGY,,,79700,189.9975,MUMBAI,96.0,2026-07-08,2026-07-17,CMFPO338732,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79700,2026-07-11
+1228.57,0.0,SWIGGY,,,79695,1289.9985,MUMBAI,6.0,2026-07-08,2026-07-17,CMFPO338732,,15686,Jivo Canola Cold Press Oil Indian Medical Association Recommended 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79695,2026-07-12
+344.76,0.0,SWIGGY,,,79696,361.998,MUMBAI,100.0,2026-07-08,2026-07-17,CMFPO338732,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79696,2026-07-12
+149.52,0.0,SWIGGY,,,79697,156.996,MUMBAI,500.0,2026-07-08,2026-07-17,CMFPO338732,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79697,2026-07-12
+747.62,0.0,SWIGGY,,,79698,785.001,MUMBAI,16.0,2026-07-08,2026-07-17,CMFPO338732,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79698,2026-07-12
+242.86,0.0,SWIGGY,,,79699,255.003,MUMBAI,80.0,2026-07-08,2026-07-17,CMFPO338732,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79699,2026-07-12
+180.95,0.0,SWIGGY,,,79700,189.9975,MUMBAI,96.0,2026-07-08,2026-07-17,CMFPO338732,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79700,2026-07-12
 ```
 
 ---

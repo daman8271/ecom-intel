@@ -56,11 +56,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
  "premium": {
   "categories": [
    {
-    "ltrs": 13724.4,
+    "ltrs": 14070.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 5115.0,
+    "ltrs": 5275.0,
     "name": "OLIVE"
    },
    {
@@ -70,11 +70,11 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
   ],
   "sub_categories": [
    {
-    "ltrs": 13724.4,
+    "ltrs": 14070.0,
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 3181.0,
+    "ltrs": 3341.0,
     "name": "JIVO POMACE"
    },
    {
@@ -90,7 +90,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
     "name": "EXTRA VIRGIN"
    }
   ],
-  "total_ltrs": 20335.4
+  "total_ltrs": 20841.0
  },
  "source": "primary",
  "year": 2026

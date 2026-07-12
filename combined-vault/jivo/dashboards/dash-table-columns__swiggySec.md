@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "nor_mapusa ( do not use)",
-  "BASE_MRP": 1050.0,
+  "AREA_NAME": "battarahalli",
+  "BASE_MRP": 450.0,
   "BRAND": "jivo",
-  "CITY": "central goa",
+  "CITY": "bangalore",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
   "COMBO_UNITS_SOLD": 0,
-  "GMV": 1050.0,
-  "ITEM_CODE": "615911",
+  "GMV": 450.0,
+  "ITEM_CODE": "240878",
   "L1_CATEGORY": "edible oils and ghee",
-  "L2_CATEGORY": "edible oils",
-  "L3_CATEGORY": "sunflower oil",
-  "ORDERED_DATE": "2026-06-01",
-  "PRODUCT_NAME": "Jivo Gold Refined Oil - Blend of Rice Bran oil & Sunflower oil",
-  "STORE_ID": "1387908",
+  "L2_CATEGORY": "olive oil",
+  "L3_CATEGORY": "extra virgin olive oil",
+  "ORDERED_DATE": "2026-06-16",
+  "PRODUCT_NAME": "Jivo Extra Virgin Olive Oil",
+  "STORE_ID": "1404583",
   "UNITS_SOLD": 1,
-  "VARIANT": "5 ltr",
-  "id": 1748867
+  "VARIANT": "250 ml",
+  "id": 1939713
  }
 }
 ```

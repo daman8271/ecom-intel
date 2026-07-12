@@ -38,12 +38,22 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -70.3,
+   "delta_pct": -68.2,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 2298.0,
+   "ltrs": 2458.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 7730.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -82.2,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 2016.0,
+   "name": "GROUNDNUT 200ML",
+   "prev_ltrs": 11308.2
   },
   {
    "brand": null,
@@ -64,16 +74,6 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zepto]]
    "ltrs": 1744.0,
    "name": "EXTRA LIGHT 1L",
    "prev_ltrs": 6287.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -85.2,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 1670.4,
-   "name": "GROUNDNUT 200ML",
-   "prev_ltrs": 11308.2
   },
   {
    "brand": null,

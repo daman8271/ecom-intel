@@ -26,14 +26,18 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
   },
   {
    "category": "CANOLA",
-   "ltrs": 2500.0
+   "ltrs": 2860.0
+  },
+  {
+   "category": "OLIVE",
+   "ltrs": 1359.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 7,
  "platform": "amazon",
- "total_ltrs": 12080.0,
+ "total_ltrs": 13799.0,
  "year": 2026
 }
 ```

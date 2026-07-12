@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-11
-observations: 264
+last_seen: 2026-07-12
+observations: 272
 latest_status: BELOW
-below_days: 30
+below_days: 31
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-11) — ref ₹189 vs live ₹173
-- **Days below reference:** 30 of 33
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-12) — ref ₹189 vs live ₹173
+- **Days below reference:** 31 of 34
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]]
 
-## Ref-vs-live history (264 observations)
+## Ref-vs-live history (272 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -309,6 +309,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-11,flipkart,ABOVE,SVD,189,205,205,205,16,8.47,0,true
 2026-07-11,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
 2026-07-11,zepto,BELOW,SVD,189,173,173,173,-16,-8.47,36,true
+2026-07-12,amazon,BELOW,SVD,189,179,179,179,-10,-5.29,1,true
+2026-07-12,amazon-fresh,BELOW,SVD,189,179,179,189,-10,-5.29,55,true
+2026-07-12,amazon-now,MATCH,SVD,189,189,169,189,0,0,81,true
+2026-07-12,bigbasket,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,blinkit,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,flipkart,ABOVE,SVD,189,205,205,205,16,8.47,0,true
+2026-07-12,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,zepto,BELOW,SVD,189,173,173,173,-16,-8.47,37,true
 ```
 
 ---
@@ -316,7 +324,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 
 ## Related (discovered)
 
-- [[hubs/Tier - Commodity|Tier - Commodity]] — RICE BRAN 1L under price-floor (BELOW on zepto) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L) _(D7)_
+- [[hubs/Tier - Commodity|Tier - Commodity]] — price-match signal for RICE BRAN 1L (Commodity tier): latest BELOW, 30 day(s) below reference floor _(D7)_
 
 
 ## Related

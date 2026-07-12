@@ -20,6 +20,15 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
 {
  "by_city": [
   {
+   "city": "Sonipat",
+   "open_ltrs": 3840.0,
+   "open_pos": 2,
+   "open_units": 3800.0,
+   "order_value": 623428.5714285715,
+   "pending_ltrs": 3840.0,
+   "pending_units": 3800.0
+  },
+  {
    "city": "Manesar",
    "open_ltrs": 3660.0,
    "open_pos": 3,
@@ -47,22 +56,13 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "pending_units": 2544.0
   },
   {
-   "city": "Sonipat",
-   "open_ltrs": 2240.0,
-   "open_pos": 1,
-   "open_units": 2220.0,
-   "order_value": 367142.85714285716,
-   "pending_ltrs": 2240.0,
-   "pending_units": 2220.0
-  },
-  {
    "city": "LUDHIANA",
-   "open_ltrs": 1720.0,
-   "open_pos": 3,
-   "open_units": 1720.0,
-   "order_value": 260095.2380952381,
-   "pending_ltrs": 1720.0,
-   "pending_units": 1720.0
+   "open_ltrs": 2300.0,
+   "open_pos": 4,
+   "open_units": 2300.0,
+   "order_value": 346952.38095238095,
+   "pending_ltrs": 2300.0,
+   "pending_units": 2300.0
   },
   {
    "city": "Hoskote",
@@ -95,21 +95,21 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  "by_distributor": [
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "open_ltrs": 12000.0,
-   "open_pos": 6,
-   "open_units": 11824.0,
-   "order_value": 1867878.0952380951,
-   "pending_ltrs": 12000.0,
-   "pending_units": 11824.0
+   "open_ltrs": 13600.0,
+   "open_pos": 7,
+   "open_units": 13404.0,
+   "order_value": 2124163.8095238097,
+   "pending_ltrs": 13600.0,
+   "pending_units": 13404.0
   },
   {
    "distributor": "EVARA ENTERPRISES",
-   "open_ltrs": 1720.0,
-   "open_pos": 3,
-   "open_units": 1720.0,
-   "order_value": 260095.2380952381,
-   "pending_ltrs": 1720.0,
-   "pending_units": 1720.0
+   "open_ltrs": 2300.0,
+   "open_pos": 4,
+   "open_units": 2300.0,
+   "order_value": 346952.38095238095,
+   "pending_ltrs": 2300.0,
+   "pending_units": 2300.0
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -194,6 +194,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "open_ltrs": 1720.0,
    "open_pos": 1,
    "open_units": 1720.0,
+   "order_value": 255142.85714285713,
+   "pending_ltrs": 1720.0,
+   "pending_units": 1720.0,
+   "po_date": "03-07-2026",
+   "po_expiry_date": "13-07-2026",
+   "po_number": "FLSE02D00CF0"
+  },
+  {
+   "distributor": "SUSTAINQUEST PRIVATE LIMITED",
+   "location": "Lucknow",
+   "open_ltrs": 1720.0,
+   "open_pos": 1,
+   "open_units": 1720.0,
    "order_value": 253904.7619047619,
    "pending_ltrs": 1720.0,
    "pending_units": 1720.0,
@@ -203,16 +216,16 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
   },
   {
    "distributor": "SUSTAINQUEST PRIVATE LIMITED",
-   "location": "Lucknow",
-   "open_ltrs": 1720.0,
+   "location": "Sonipat",
+   "open_ltrs": 1600.0,
    "open_pos": 1,
-   "open_units": 1720.0,
-   "order_value": 255142.85714285713,
-   "pending_ltrs": 1720.0,
-   "pending_units": 1720.0,
-   "po_date": "03-07-2026",
-   "po_expiry_date": "13-07-2026",
-   "po_number": "FLSE02D00CF0"
+   "open_units": 1580.0,
+   "order_value": 256285.7142857143,
+   "pending_ltrs": 1600.0,
+   "pending_units": 1580.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "25-07-2026",
+   "po_number": "FLS5F14EBEEC"
   },
   {
    "distributor": "EVARA ENTERPRISES",
@@ -239,6 +252,19 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "po_date": "06-07-2026",
    "po_expiry_date": "16-07-2026",
    "po_number": "FLGWN08373066"
+  },
+  {
+   "distributor": "EVARA ENTERPRISES",
+   "location": "Ludhiana",
+   "open_ltrs": 580.0,
+   "open_pos": 1,
+   "open_units": 580.0,
+   "order_value": 86857.14285714286,
+   "pending_ltrs": 580.0,
+   "pending_units": 580.0,
+   "po_date": "10-07-2026",
+   "po_expiry_date": "20-07-2026",
+   "po_number": "FLGWN08384181"
   },
   {
    "distributor": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED",
@@ -335,34 +361,34 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  "by_sku": [
   {
    "item": "MUSTARD 1L",
-   "open_ltrs": 13820.0,
-   "open_pos": 11,
-   "open_units": 13820.0,
-   "order_value": 2040095.238095238,
-   "pending_ltrs": 13820.0,
-   "pending_units": 13820.0,
+   "open_ltrs": 15840.0,
+   "open_pos": 13,
+   "open_units": 15840.0,
+   "order_value": 2338285.714285714,
+   "pending_ltrs": 15840.0,
+   "pending_units": 15840.0,
    "sku_code": "EDOGDVWYGJNDYRQP",
    "sku_name": "JIVO Cold Pressed Pure Cooking (Pack of 1) Mustard Oil 1 L Plastic Bottle"
   },
   {
    "item": "CANOLA 1L",
-   "open_ltrs": 680.0,
-   "open_pos": 6,
-   "open_units": 680.0,
-   "order_value": 142476.19047619047,
-   "pending_ltrs": 680.0,
-   "pending_units": 680.0,
+   "open_ltrs": 800.0,
+   "open_pos": 8,
+   "open_units": 800.0,
+   "order_value": 167619.0476190476,
+   "pending_ltrs": 800.0,
+   "pending_units": 800.0,
    "sku_code": "EDOG9BP8GEWFW9XC",
    "sku_name": "JIVO Cold Press Canola Oil 1 L Plastic Bottle"
   },
   {
    "item": "EXTRA LIGHT 2L",
-   "open_ltrs": 120.0,
-   "open_pos": 3,
-   "open_units": 60.0,
-   "order_value": 76939.04761904762,
-   "pending_ltrs": 120.0,
-   "pending_units": 60.0,
+   "open_ltrs": 160.0,
+   "open_pos": 4,
+   "open_units": 80.0,
+   "order_value": 96748.57142857142,
+   "pending_ltrs": 160.0,
+   "pending_units": 80.0,
    "sku_code": "EDOGHZTJZEYQJGME",
    "sku_name": "JIVO Extra Light Olive Oil 2 L Can"
   },
@@ -435,6 +461,15 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  ],
  "by_warehouse": [
   {
+   "open_ltrs": 3840.0,
+   "open_pos": 2,
+   "open_units": 3800.0,
+   "order_value": 623428.5714285715,
+   "pending_ltrs": 3840.0,
+   "pending_units": 3800.0,
+   "warehouse": "Sonipat"
+  },
+  {
    "open_ltrs": 3660.0,
    "open_pos": 3,
    "open_units": 4430.0,
@@ -462,21 +497,12 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
    "warehouse": "Bijwasan"
   },
   {
-   "open_ltrs": 2240.0,
-   "open_pos": 1,
-   "open_units": 2220.0,
-   "order_value": 367142.85714285716,
-   "pending_ltrs": 2240.0,
-   "pending_units": 2220.0,
-   "warehouse": "Sonipat"
-  },
-  {
-   "open_ltrs": 1720.0,
-   "open_pos": 3,
-   "open_units": 1720.0,
-   "order_value": 260095.2380952381,
-   "pending_ltrs": 1720.0,
-   "pending_units": 1720.0,
+   "open_ltrs": 2300.0,
+   "open_pos": 4,
+   "open_units": 2300.0,
+   "order_value": 346952.38095238095,
+   "pending_ltrs": 2300.0,
+   "pending_units": 2300.0,
    "warehouse": "Ludhiana"
   },
   {
@@ -509,17 +535,17 @@ Up: [[dashboards-index]] · [[pf-flipkart_grocery]]
  ],
  "defaulted_to_latest": true,
  "format": "FLIPKART GROCERY",
- "max_po_date": "09-07-2026",
+ "max_po_date": "10-07-2026",
  "min_po_date": "01-07-2026",
  "platform": "flipkart_grocery",
  "po_month": "JULY",
  "totals": {
-  "open_ltrs": 14860.0,
-  "open_pos": 14,
-  "open_units": 15494.0,
-  "pending_ltrs": 14860.0,
-  "pending_units": 15494.0,
-  "rows": 26
+  "open_ltrs": 17040.0,
+  "open_pos": 16,
+  "open_units": 17654.0,
+  "pending_ltrs": 17040.0,
+  "pending_units": 17654.0,
+  "rows": 31
  },
  "year": 2026
 }

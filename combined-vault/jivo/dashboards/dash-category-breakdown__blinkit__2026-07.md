@@ -20,57 +20,17 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-blinkit]]
 ```json
 {
  "commodity": {
-  "categories": [
-   {
-    "ltrs": 11519.0,
-    "name": "MUSTARD"
-   },
-   {
-    "ltrs": 812.0,
-    "name": "SUNFLOWER"
-   }
-  ],
-  "sub_categories": [
-   {
-    "ltrs": 11519.0,
-    "name": "MUSTARD KACCHI GHANI"
-   },
-   {
-    "ltrs": 812.0,
-    "name": "SUNFLOWER"
-   }
-  ],
-  "total_ltrs": 12331.0
+  "categories": [],
+  "sub_categories": [],
+  "total_ltrs": 0
  },
  "errors": [],
  "month": 7,
  "platform": "blinkit",
  "premium": {
-  "categories": [
-   {
-    "ltrs": 2192.0,
-    "name": "OLIVE"
-   },
-   {
-    "ltrs": 920.0,
-    "name": "CANOLA"
-   }
-  ],
-  "sub_categories": [
-   {
-    "ltrs": 1924.0,
-    "name": "JIVO POMACE"
-   },
-   {
-    "ltrs": 920.0,
-    "name": "CANOLA"
-   },
-   {
-    "ltrs": 268.0,
-    "name": "EXTRA LIGHT"
-   }
-  ],
-  "total_ltrs": 3112.0
+  "categories": [],
+  "sub_categories": [],
+  "total_ltrs": 0
  },
  "source": "primary",
  "year": 2026

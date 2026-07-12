@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-22.79,0.0,SWIGGY,,,78372,31.9,GUWAHATI,12.0,2026-07-01,2026-07-16,GWAPO36954,,278756,Jivo  Fizzy Flavoured Soda (Peach) 750.0 ml,CONFIRMED,BABA LOKENATH TRADERS,2026-07-04,total_po_zbs:78372,2026-07-11
-178.1,0.0,SWIGGY,,,78373,187.005,GUWAHATI,128.0,2026-07-01,2026-07-16,GWAPO36954,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-04,total_po_zbs:78373,2026-07-11
-149.52,0.0,SWIGGY,,,78374,156.996,GUWAHATI,80.0,2026-07-01,2026-07-16,GWAPO36954,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-04,total_po_zbs:78374,2026-07-11
+22.79,0.0,SWIGGY,,,78372,31.9,GUWAHATI,12.0,2026-07-01,2026-07-16,GWAPO36954,,278756,Jivo  Fizzy Flavoured Soda (Peach) 750.0 ml,CONFIRMED,BABA LOKENATH TRADERS,2026-07-04,total_po_zbs:78372,2026-07-12
+178.1,0.0,SWIGGY,,,78373,187.005,GUWAHATI,128.0,2026-07-01,2026-07-16,GWAPO36954,,390730,Jivo Cold Pressed oil Groundnut Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-04,total_po_zbs:78373,2026-07-12
+149.52,0.0,SWIGGY,,,78374,156.996,GUWAHATI,80.0,2026-07-01,2026-07-16,GWAPO36954,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-04,total_po_zbs:78374,2026-07-12
 ```
 
 ---

@@ -1,17 +1,16 @@
 ---
 type: moc
-title: Users (69)
+title: Users (70)
 tags:
   - moc
   - source/factory
 ---
 
-# Users — 69 records
+# Users — 70 records
 
 From `/accounts/users/`. Up: [[_HOME]]
 
 - [[accounts__users-9]] — Quality manager
-- [[accounts__users-25]] — Raaj
 - [[accounts__users-10]] — grpo
 - [[accounts__users-21]] — Ravinder singh
 - [[accounts__users-7]] — Quality check
@@ -20,6 +19,7 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-1]] — nk
 - [[accounts__users-3]] — Test Notif User
 - [[accounts__users-4]] — Test User 2
+- [[accounts__users-25]] — Raaj
 - [[accounts__users-34]] — Barcode
 - [[accounts__users-5]] — Jivo
 - [[accounts__users-6]] — gate
@@ -49,7 +49,6 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-14]] — Jasmeet Singh
 - [[accounts__users-40]] — Parminder
 - [[accounts__users-26]] — RK Tiwari
-- [[accounts__users-42]] — Tarandeep Singh
 - [[accounts__users-33]] — JP Production
 - [[accounts__users-19]] — Bhupinder Singh
 - [[accounts__users-43]] — Sumit
@@ -75,7 +74,9 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-60]] — Honey
 - [[accounts__users-52]] — Charanjeet Singh
 - [[accounts__users-55]] — Yashin
-- [[accounts__users-70]] — Ekam Singh
 - [[accounts__users-75]] — Arvinpal Singh
 - [[accounts__users-72]] — labour
 - [[accounts__users-47]] — yusuf
+- [[accounts__users-94]] — Sumit
+- [[accounts__users-70]] — Ekam Singh
+- [[accounts__users-42]] — Tarandeep Singh

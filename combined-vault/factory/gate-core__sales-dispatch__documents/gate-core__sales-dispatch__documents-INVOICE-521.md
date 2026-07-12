@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "DL01MB2623"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# DL01MB2623
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35685
-- **doc_num:** 706260936
+- **doc_entry:** 35714
+- **doc_num:** 606260217
 - **doc_date:** 2026-06-30
-- **doc_total:** 218378.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM  KOLAR
-- **ship_to_address:** VILLAGE NARASPURA HOBLI  SURVEY 1105 BELLURU KRISHNAPURAKOLAR TALUK-563133IN
-- **place_of_supply:** KT
-- **bp_gstin:** 29AAECR0564M2ZY
+- **doc_total:** 1905040.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
+- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** DL01MB2623
+- **transporter_name:** Arnav Transport
+- **bilty_no:** 7115
+- **bilty_date:** 2026-07-04
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS
-- **base_refs:** 1706264787
-- **total_quantity:** 788.000
-- **total_litres:** 1060.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS
+- **base_refs:** 1706264624
+- **total_quantity:** 4544.000
+- **total_litres:** 4544.000
 - **total_boxes:** 0.000
-- **total_weight:** 1014.514
-- **line_count:** 7
+- **total_weight:** 4526.234
+- **line_count:** 3
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35685, "sap_invoice_doc_num": "706260936", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 889, "sap_invoice_doc_entry": 35714, "sap_invoice_doc_num": "606260217", "invoice_number": "606260217", "eway_bill": "352285206856", "invoice_weight": "4526.234", "invoice_amount": "1905040.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "4544.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 198, "transporter_id": 54, "driver_id": null, "linked_vehicle_entry_id": 1504, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-04T15:03:20.889884Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-04", "priority": "High", "transporter_name": "Arnav Transport Service", "transporter_gstin": "", "contact_person": "Lalit Kumar", "mobile_no": "9718077490", "vehicle_no": "DL01MB2623", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7115", "bilty_date": "2026-07-04", "bilty_attachment": "/media/sales_dispatch/attachments/606260217_1.pdf", "bilty_attachment_name": "606260217 (1).pdf", "freight": "2069.05", "total_freight": "2069.05", "kanta_weight": null, "remarks": "", "created_at": "2026-07-03T18:45:05.742117+05:30", "updated_at": "2026-07-04T20:33:20.903215+05:30"}
   ```

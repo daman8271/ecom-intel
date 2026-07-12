@@ -520,7 +520,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "total_order_amt_inclusive": 14899.5,
    "total_order_amt_without_margin": 13578.947368421053,
    "total_order_liters": 100.0,
-   "unit_of_measure": "1 LTR",
+   "unit_of_measure": "1+1 LTR",
    "vendor_name": "JIVO MART PRIVATE LIMITED",
    "vendor_new": "JIVO MART PRIVATE LIMITED"
   },
@@ -968,7 +968,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "total_order_amt_inclusive": 2979.9,
    "total_order_amt_without_margin": 2715.7894736842104,
    "total_order_liters": 20.0,
-   "unit_of_measure": "1 LTR",
+   "unit_of_measure": "1+1 LTR",
    "vendor_name": "JIVO MART PRIVATE LIMITED",
    "vendor_new": "JIVO MART PRIVATE LIMITED"
   },
@@ -1528,7 +1528,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "total_order_amt_inclusive": 11919.6,
    "total_order_amt_without_margin": 10863.157894736842,
    "total_order_liters": 80.0,
-   "unit_of_measure": "1 LTR",
+   "unit_of_measure": "1+1 LTR",
    "vendor_name": "JIVO MART PRIVATE LIMITED",
    "vendor_new": "JIVO MART PRIVATE LIMITED"
   },
@@ -2144,7 +2144,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "total_order_amt_inclusive": 14899.5,
    "total_order_amt_without_margin": 13578.947368421053,
    "total_order_liters": 100.0,
-   "unit_of_measure": "1 LTR",
+   "unit_of_measure": "1+1 LTR",
    "vendor_name": "JIVO MART PRIVATE LIMITED",
    "vendor_new": "JIVO MART PRIVATE LIMITED"
   },
@@ -2816,7 +2816,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "total_order_amt_inclusive": 26819.1,
    "total_order_amt_without_margin": 24442.105263157893,
    "total_order_liters": 180.0,
-   "unit_of_measure": "1 LTR",
+   "unit_of_measure": "1+1 LTR",
    "vendor_name": "JIVO MART PRIVATE LIMITED",
    "vendor_new": "JIVO MART PRIVATE LIMITED"
   }

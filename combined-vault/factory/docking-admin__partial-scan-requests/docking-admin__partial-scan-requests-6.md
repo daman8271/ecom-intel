@@ -24,7 +24,7 @@ tags:
 - **document_type:** INVOICE
 - **dispatch_status:** DISPATCHED
 - **scanned_boxes:** 1112
-- **expected_boxes:** 1463
+- **expected_boxes:** 1683
 - **reason:** old sticker
 - **status:** APPROVED
 - **requested_by:** 51

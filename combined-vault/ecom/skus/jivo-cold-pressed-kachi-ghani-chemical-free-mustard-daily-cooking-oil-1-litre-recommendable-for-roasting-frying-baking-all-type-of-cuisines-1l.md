@@ -72,7 +72,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000030|sku-FG0000030]] — Fuzzy name/pack match: ecom listing 'Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil ' is JIVO MUSTARD 1L; same physical product, not fused by bridge _(D0)_
+- [[jivo/skus/sku-FG0000030|sku-FG0000030]] — same physical product (MUSTARD 1L = 'Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily...'), name+pack match, unfused by SKU bridge _(D0)_
 
 
 ## Related

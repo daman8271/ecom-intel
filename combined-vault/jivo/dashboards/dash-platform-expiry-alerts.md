@@ -22,43 +22,43 @@ Up: [[dashboards-index]]
  "platforms": [
   {
    "format": "SWIGGY",
-   "po_count": 40,
+   "po_count": 45,
    "slug": "swiggy",
-   "total_litrs": 48376.0,
-   "total_order_units": 38263.0,
-   "total_units": 8260397.09
+   "total_litrs": 49371.0,
+   "total_order_units": 40153.0,
+   "total_units": 8584747.35
   },
   {
    "format": "BLINKIT",
-   "po_count": 46,
+   "po_count": 49,
    "slug": "blinkit",
-   "total_litrs": 11898.0,
-   "total_order_units": 9050.0,
-   "total_units": 2515811.84
-  },
-  {
-   "format": "ZEPTO",
-   "po_count": 4,
-   "slug": "zepto",
-   "total_litrs": 1428.0,
-   "total_order_units": 836.0,
-   "total_units": 496570.64
-  },
-  {
-   "format": "BIG BASKET",
-   "po_count": 4,
-   "slug": "bigbasket",
-   "total_litrs": 2051.0,
-   "total_order_units": 2349.0,
-   "total_units": 382890.65
+   "total_litrs": 16470.0,
+   "total_order_units": 13544.0,
+   "total_units": 3348461.14
   },
   {
    "format": "FLIPKART GROCERY",
-   "po_count": 1,
+   "po_count": 2,
    "slug": "flipkart_grocery",
-   "total_litrs": 1720.0,
-   "total_order_units": 1720.0,
-   "total_units": 255142.85714285713
+   "total_litrs": 2300.0,
+   "total_order_units": 2300.0,
+   "total_units": 342000.0
+  },
+  {
+   "format": "ZEPTO",
+   "po_count": 2,
+   "slug": "zepto",
+   "total_litrs": 676.0,
+   "total_order_units": 468.0,
+   "total_units": 230761.32
+  },
+  {
+   "format": "BIG BASKET",
+   "po_count": 3,
+   "slug": "bigbasket",
+   "total_litrs": 1259.0,
+   "total_order_units": 1209.0,
+   "total_units": 220817.09
   },
   {
    "format": "ZOMATO",
@@ -69,20 +69,12 @@ Up: [[dashboards-index]]
    "total_units": 207089.8
   },
   {
-   "format": "CITY MALL",
-   "po_count": 1,
-   "slug": "citymall",
-   "total_litrs": 460.0,
-   "total_order_units": 92.0,
-   "total_units": 70094.8
-  },
-  {
    "format": "AMAZON",
-   "po_count": 21,
+   "po_count": 16,
    "slug": "amazon",
-   "total_litrs": 21223.35,
-   "total_order_units": 13944.0,
-   "total_units": 13944.0
+   "total_litrs": 20213.35,
+   "total_order_units": 12934.0,
+   "total_units": 12934.0
   }
  ],
  "year": 2026

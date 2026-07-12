@@ -97,10 +97,10 @@ Up: [[dashboards-index]] · [[2026-05]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": 157.7,
+   "delta_pct": 157.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 56818.0,
+   "ltrs": 56834.0,
    "name": "JIVO POMACE 1L",
    "prev_ltrs": 22048.0
   },

@@ -26,18 +26,24 @@ Up: [[dashboards-index]]
   "soh_unit",
   "soh_ltr",
   "location",
-  "format"
+  "format",
+  "category",
+  "sub_category",
+  "month"
  ],
  "sample": {
   "brand": "JIVO",
+  "category": "OLIVE",
   "format": "BLINKIT",
-  "inventory_date": "2026-01-01",
-  "item": "MUSTARD 1L",
-  "item_head": "COMMODITY",
-  "location": "Ludhiana - Feeder Warehouse",
-  "sku_code": "10150509",
-  "soh_ltr": 0.0,
-  "soh_unit": 0
+  "inventory_date": "2026-04-02",
+  "item": "EXTRA LIGHT 2L",
+  "item_head": "PREMIUM",
+  "location": "CPC-GGN4",
+  "month": "APRIL",
+  "sku_code": "10153585",
+  "soh_ltr": 24.0,
+  "soh_unit": 12,
+  "sub_category": "EXTRA LIGHT"
  }
 }
 ```

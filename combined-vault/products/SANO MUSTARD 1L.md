@@ -35,11 +35,11 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-11).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-12).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 199 | 189 | -5.03 | 🟢 BELOW | SVD | 2026-07-11 |
+| [[Platform - amazon\|amazon]] | 199 | 189 | -5.03 | 🟢 BELOW | SVD | 2026-07-12 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -69,4 +69,6 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000136`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000136]]
+- **45 boxes:** [[box-204803]] · [[box-204804]] · [[box-204805]] … +42 more (tag `bridge/FG0000136`)
+- **1 pallets:** [[pal-4359]]
 

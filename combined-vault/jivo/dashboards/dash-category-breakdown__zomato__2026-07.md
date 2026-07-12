@@ -30,7 +30,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
  "premium": {
   "categories": [
    {
-    "ltrs": 8820.0,
+    "ltrs": 9420.0,
     "name": "OLIVE"
    },
    {
@@ -40,7 +40,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
   ],
   "sub_categories": [
    {
-    "ltrs": 6604.0,
+    "ltrs": 7204.0,
     "name": "SANO POMACE"
    },
    {
@@ -60,7 +60,7 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-zomato]]
     "name": "EXTRA LIGHT"
    }
   ],
-  "total_ltrs": 10395.0
+  "total_ltrs": 10995.0
  },
  "source": "primary",
  "year": 2026

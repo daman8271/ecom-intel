@@ -26,7 +26,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
   },
   {
    "category": "OLIVE",
-   "ltrs": 55224.5
+   "ltrs": 55265.5
   },
   {
    "category": "CANOLA",
@@ -45,7 +45,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    "ltrs": 796.0
   },
   {
-   "category": "SEASAME OIL",
+   "category": "SESAME OIL",
    "ltrs": 481.0
   }
  ],
@@ -53,7 +53,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
  "head": "premium",
  "month": 5,
  "platform": "amazon",
- "total_ltrs": 174528.5,
+ "total_ltrs": 174569.5,
  "year": 2026
 }
 ```

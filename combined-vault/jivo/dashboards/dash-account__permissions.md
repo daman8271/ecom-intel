@@ -222,6 +222,13 @@ Up: [[dashboards-index]]
   },
   {
    "count": 1,
+   "module": "business_mode",
+   "permissions": [
+    "business_mode.view"
+   ]
+  },
+  {
+   "count": 1,
    "module": "change_amazoninventory",
    "permissions": [
     "change_amazoninventory"
@@ -622,6 +629,14 @@ Up: [[dashboards-index]]
    "module": "distributor",
    "permissions": [
     "distributor.view"
+   ]
+  },
+  {
+   "count": 2,
+   "module": "jm",
+   "permissions": [
+    "jm.inventory.view",
+    "jm.primary.view"
    ]
   },
   {

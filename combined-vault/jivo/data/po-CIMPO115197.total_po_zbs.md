@@ -18,8 +18,8 @@ Canonical raw rows (2) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,0.0,SWIGGY,,,79836,499.9995,MUMBAI,64.0,2026-07-09,2026-07-18,CIMPO115197,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79836,2026-07-11
-154.29,0.0,SWIGGY,,,79837,162.0045,MUMBAI,540.0,2026-07-09,2026-07-18,CIMPO115197,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79837,2026-07-11
+476.19,0.0,SWIGGY,,,79836,499.9995,MUMBAI,64.0,2026-07-09,2026-07-18,CIMPO115197,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79836,2026-07-12
+154.29,0.0,SWIGGY,,,79837,162.0045,MUMBAI,540.0,2026-07-09,2026-07-18,CIMPO115197,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,CONFIRMED,CHIRAG ENTERPRISES,2026-07-11,total_po_zbs:79837,2026-07-12
 ```
 
 ---

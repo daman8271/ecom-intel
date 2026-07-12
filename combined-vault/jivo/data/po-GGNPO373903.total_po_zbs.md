@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-933.33,0.0,SWIGGY,,,79093,979.9965,DELHI,10.0,2026-07-07,2026-07-15,GGNPO373903,,449236,Jivo Extra Light Olive Oil 2.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po_zbs:79093,2026-07-11
-149.52,0.0,SWIGGY,,,79094,156.996,DELHI,2720.0,2026-07-07,2026-07-15,GGNPO373903,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po_zbs:79094,2026-07-11
-747.62,0.0,SWIGGY,,,79095,785.001,DELHI,4.0,2026-07-07,2026-07-15,GGNPO373903,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po_zbs:79095,2026-07-11
+933.33,0.0,SWIGGY,,,79093,979.9965,DELHI,10.0,2026-07-07,2026-07-15,GGNPO373903,,449236,Jivo Extra Light Olive Oil 2.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po_zbs:79093,2026-07-12
+149.52,0.0,SWIGGY,,,79094,156.996,DELHI,2720.0,2026-07-07,2026-07-15,GGNPO373903,,60711,Jivo Cold Press Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po_zbs:79094,2026-07-12
+747.62,0.0,SWIGGY,,,79095,785.001,DELHI,4.0,2026-07-07,2026-07-15,GGNPO373903,,904426,Jivo Cold Pressed Mustard Oil 5L 5.0 ltr,CONFIRMED,SUSTAINQUEST PRIVATE LIMITED,2026-07-08,total_po_zbs:79095,2026-07-12
 ```
 
 ---

@@ -33,11 +33,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "current": {
-    "net_realise": 156.60276937691236,
-    "price_per_ltr": 211.0820383129114,
-    "rev_after_margin": 212485.23129141057,
-    "shipped_ltr": 1289.0,
-    "shipped_rev": 259128.33084318362
+    "net_realise": 156.2307400377321,
+    "price_per_ltr": 210.5805867004091,
+    "rev_after_margin": 238950.8055524471,
+    "shipped_ltr": 1453.0,
+    "shipped_rev": 291403.42140542326
    },
    "highest": {
     "month": "MAY",
@@ -54,11 +54,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "CANOLA",
    "current": {
-    "net_realise": 138.16381387562936,
-    "price_per_ltr": 203.60983097461173,
-    "rev_after_margin": 3291789.224485258,
-    "shipped_ltr": 22634.0,
-    "shipped_rev": 4389052.2993136775
+    "net_realise": 138.8647299798035,
+    "price_per_ltr": 204.64275997023677,
+    "rev_after_margin": 3606974.8178754016,
+    "shipped_ltr": 24676.0,
+    "shipped_rev": 4809299.757167202
    },
    "highest": {
     "month": "MAY",
@@ -75,11 +75,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "CANOLA",
    "current": {
-    "net_realise": 159.78257812500001,
-    "price_per_ltr": 235.4690625,
-    "rev_after_margin": 10259.7234375,
-    "shipped_ltr": 61.0,
-    "shipped_rev": 13679.63125
+    "net_realise": 159.49015624999998,
+    "price_per_ltr": 235.038125,
+    "rev_after_margin": 12927.096875,
+    "shipped_ltr": 77.0,
+    "shipped_rev": 17236.129166666666
    },
    "highest": {
     "month": "MAY",
@@ -96,11 +96,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "COCONUT",
    "current": {
-    "net_realise": 301.1759941642259,
-    "price_per_ltr": 443.8383071893856,
-    "rev_after_margin": 55955.3294420904,
-    "shipped_ltr": 176.5,
-    "shipped_rev": 74607.10592278719
+    "net_realise": 299.6945229297379,
+    "price_per_ltr": 441.65508642277166,
+    "rev_after_margin": 59781.17062651088,
+    "shipped_ltr": 189.5,
+    "shipped_rev": 79708.2275020145
    },
    "highest": {
     "month": "MAY",
@@ -159,11 +159,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "GROUNDNUT",
    "current": {
-    "net_realise": 149.18793300440393,
-    "price_per_ltr": 201.08771457589748,
-    "rev_after_margin": 3159172.261315362,
-    "shipped_ltr": 20117.0,
-    "shipped_rev": 3852649.099165076
+    "net_realise": 149.12769403136713,
+    "price_per_ltr": 201.00651955447432,
+    "rev_after_margin": 3500576.3967363024,
+    "shipped_ltr": 22300.0,
+    "shipped_rev": 4268995.605775978
    },
    "highest": {
     "month": "MAY",
@@ -180,11 +180,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "current": {
-    "net_realise": 153.38589781132626,
-    "price_per_ltr": 218.42113794531568,
-    "rev_after_margin": 290302.99396291014,
-    "shipped_ltr": 1798.0,
-    "shipped_rev": 374020.196214931
+    "net_realise": 154.1508262173268,
+    "price_per_ltr": 219.1571695190302,
+    "rev_after_margin": 317388.43798009603,
+    "shipped_ltr": 1956.0,
+    "shipped_rev": 408258.4986468791
    },
    "highest": {
     "month": "MAY",
@@ -208,12 +208,12 @@ Up: [[dashboards-index]] · [[pf-amazon]]
     "shipped_rev": 0.0
    },
    "highest": {
-    "month": null,
-    "net_realise": 0.0,
-    "price_per_ltr": 0.0,
-    "rev_after_margin": 0.0,
-    "shipped_ltr": 0.0,
-    "shipped_rev": 0.0
+    "month": "JANUARY",
+    "net_realise": 406.825625,
+    "price_per_ltr": 599.5325,
+    "rev_after_margin": 6423.5625,
+    "shipped_ltr": 15.0,
+    "shipped_rev": 8564.75
    },
    "sub_category": "CLASSIC",
    "type": "PREMIUM"
@@ -222,11 +222,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "current": {
-    "net_realise": 341.1243477999211,
-    "price_per_ltr": 502.70956517883116,
-    "rev_after_margin": 2356092.008514929,
-    "shipped_ltr": 6561.5,
-    "shipped_rev": 3141456.0113532385
+    "net_realise": 340.7855243238043,
+    "price_per_ltr": 502.21024637192215,
+    "rev_after_margin": 2615080.4971795087,
+    "shipped_ltr": 7290.0,
+    "shipped_rev": 3486773.996239345
    },
    "highest": {
     "month": "MAY",
@@ -243,11 +243,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "current": {
-    "net_realise": 483.1807011613311,
-    "price_per_ltr": 712.0557701324882,
-    "rev_after_margin": 656261.1144299638,
-    "shipped_ltr": 1290.3,
-    "shipped_rev": 875014.8192399518
+    "net_realise": 484.0573449119492,
+    "price_per_ltr": 713.3476661860306,
+    "rev_after_margin": 776122.2608104012,
+    "shipped_ltr": 1523.2,
+    "shipped_rev": 1034829.6810805349
    },
    "highest": {
     "month": "MAY",
@@ -264,11 +264,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "OLIVE",
    "current": {
-    "net_realise": 227.28659302508808,
-    "price_per_ltr": 334.948663405393,
-    "rev_after_margin": 3121003.795802394,
-    "shipped_ltr": 13045.0,
-    "shipped_rev": 4161338.3944031917
+    "net_realise": 228.1155575373602,
+    "price_per_ltr": 336.17029531821504,
+    "rev_after_margin": 3417171.051909656,
+    "shipped_ltr": 14231.0,
+    "shipped_rev": 4556228.069212874
    },
    "highest": {
     "month": "MAY",
@@ -285,11 +285,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "OLIVE",
    "current": {
-    "net_realise": 235.28242974909637,
-    "price_per_ltr": 346.7320017355105,
-    "rev_after_margin": 238254.41833540075,
-    "shipped_ltr": 962.0,
-    "shipped_rev": 317672.5577805344
+    "net_realise": 234.47977215313963,
+    "price_per_ltr": 345.54913790988996,
+    "rev_after_margin": 272243.35651043477,
+    "shipped_ltr": 1103.0,
+    "shipped_rev": 362991.142013913
    },
    "highest": {
     "month": "MAY",
@@ -306,19 +306,19 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SEASAME OIL",
    "current": {
-    "net_realise": 211.14511577490774,
-    "price_per_ltr": 311.1612232472325,
-    "rev_after_margin": 52230.633902214024,
-    "shipped_ltr": 235.0,
-    "shipped_rev": 69640.84520295203
+    "net_realise": 0.0,
+    "price_per_ltr": 0.0,
+    "rev_after_margin": 0.0,
+    "shipped_ltr": 0.0,
+    "shipped_rev": 0.0
    },
    "highest": {
-    "month": "JUNE",
-    "net_realise": 227.33072875717357,
-    "price_per_ltr": 335.0137055368874,
-    "rev_after_margin": 1555420.7757069771,
-    "shipped_ltr": 6500.0,
-    "shipped_rev": 2073894.3676093027
+    "month": null,
+    "net_realise": 0.0,
+    "price_per_ltr": 0.0,
+    "rev_after_margin": 0.0,
+    "shipped_ltr": 0.0,
+    "shipped_rev": 0.0
    },
    "sub_category": "SEASAME OIL",
    "type": "PREMIUM"
@@ -327,11 +327,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "BLENDED",
    "current": {
-    "net_realise": 124.29769143429853,
-    "price_per_ltr": 167.53860848011996,
-    "rev_after_margin": 509228.015855042,
-    "shipped_ltr": 3892.0,
-    "shipped_rev": 621009.7754329781
+    "net_realise": 123.98946208628614,
+    "price_per_ltr": 167.12315172092485,
+    "rev_after_margin": 579879.136894073,
+    "shipped_ltr": 4443.0,
+    "shipped_rev": 707169.6791391134
    },
    "highest": {
     "month": "MAY",
@@ -348,11 +348,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "MUSTARD",
    "current": {
-    "net_realise": 125.66777445497182,
-    "price_per_ltr": 169.38531858500696,
-    "rev_after_margin": 5440885.50642889,
-    "shipped_ltr": 41131.0,
-    "shipped_rev": 6635226.227352305
+    "net_realise": 125.88731477515374,
+    "price_per_ltr": 169.68123300887217,
+    "rev_after_margin": 6076779.453641052,
+    "shipped_ltr": 45858.0,
+    "shipped_rev": 7410706.650781771
    },
    "highest": {
     "month": "MAY",
@@ -369,11 +369,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "MUSTARD",
    "current": {
-    "net_realise": 126.33512581429623,
-    "price_per_ltr": 170.28482940309507,
-    "rev_after_margin": 154394.82217936625,
-    "shipped_ltr": 1161.0,
-    "shipped_rev": 188286.36851142225
+    "net_realise": 126.30708868188512,
+    "price_per_ltr": 170.24703865979382,
+    "rev_after_margin": 165528.76358836525,
+    "shipped_ltr": 1245.0,
+    "shipped_rev": 201864.3458394698
    },
    "highest": {
     "month": "MAY",
@@ -390,11 +390,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "RICE BRAN",
    "current": {
-    "net_realise": 125.5862477200779,
-    "price_per_ltr": 169.27543017468784,
-    "rev_after_margin": 1590582.8763873447,
-    "shipped_ltr": 12032.0,
-    "shipped_rev": 1939735.215106518
+    "net_realise": 125.31007095543693,
+    "price_per_ltr": 168.90317651246315,
+    "rev_after_margin": 1787976.8545273133,
+    "shipped_ltr": 13555.0,
+    "shipped_rev": 2180459.5786918453
    },
    "highest": {
     "month": "MAY",
@@ -411,11 +411,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SOYABEAN",
    "current": {
-    "net_realise": 123.87183201204213,
-    "price_per_ltr": 166.9646002729708,
-    "rev_after_margin": 199629.23664256476,
-    "shipped_ltr": 1531.0,
-    "shipped_rev": 243450.2885884936
+    "net_realise": 123.47636414230683,
+    "price_per_ltr": 166.4315562893738,
+    "rev_after_margin": 260340.16566004272,
+    "shipped_ltr": 2003.0,
+    "shipped_rev": 317488.00690249115
    },
    "highest": {
     "month": "MAY",
@@ -432,11 +432,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "SANO",
    "category": "SOYABEAN",
    "current": {
-    "net_realise": 125.28293466666665,
-    "price_per_ltr": 168.8666,
-    "rev_after_margin": 1978.1516,
+    "net_realise": 125.20044722222221,
+    "price_per_ltr": 168.75541666666666,
+    "rev_after_margin": 1976.8491666666666,
     "shipped_ltr": 15.0,
-    "shipped_rev": 2412.38
+    "shipped_rev": 2410.7916666666665
    },
    "highest": {
     "month": "MAY",
@@ -453,11 +453,11 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "brand": "JIVO",
    "category": "SUNFLOWER",
    "current": {
-    "net_realise": 127.38503035582777,
-    "price_per_ltr": 171.69997673121844,
-    "rev_after_margin": 4780827.234007035,
-    "shipped_ltr": 35654.0,
-    "shipped_rev": 5830277.114642725
+    "net_realise": 127.36184516917932,
+    "price_per_ltr": 171.66872583778982,
+    "rev_after_margin": 5319569.109966175,
+    "shipped_ltr": 39679.0,
+    "shipped_rev": 6487279.402397774
    },
    "highest": {
     "month": "MAY",
@@ -476,9 +476,9 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "current": {
     "net_realise": 131.910407,
     "price_per_ltr": 177.79965,
-    "rev_after_margin": 6248.3877,
-    "shipped_ltr": 45.0,
-    "shipped_rev": 7619.985
+    "rev_after_margin": 6942.653,
+    "shipped_ltr": 50.0,
+    "shipped_rev": 8466.65
    },
    "highest": {
     "month": "MAY",
@@ -493,8 +493,8 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   }
  ],
  "selected_month": "JULY",
- "selected_month_day": "08-JULY",
- "selected_to_date": "2026-07-08",
+ "selected_month_day": "09-JULY",
+ "selected_to_date": "2026-07-09",
  "selected_year": 2026,
  "source": "amazon_sec_range_master_view",
  "totals": {
@@ -502,15 +502,15 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "net_realise": null,
    "price_per_ltr": null,
    "rev_after_margin": null,
-   "shipped_ltr": 163631.3,
-   "shipped_rev": 32996998.545323968
+   "shipped_ltr": 181647.7,
+   "shipped_rev": 36632291.53362996
   },
   "highest": {
    "net_realise": null,
    "price_per_ltr": null,
-   "rev_after_margin": 745343580.2860703,
-   "shipped_ltr": 4281946.6,
-   "shipped_rev": 942363797.3201873
+   "rev_after_margin": 743794583.0728633,
+   "shipped_ltr": 4275461.6,
+   "shipped_rev": 940298467.702578
   }
  }
 }

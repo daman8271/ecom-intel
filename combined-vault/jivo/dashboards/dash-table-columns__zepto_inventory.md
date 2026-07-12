@@ -31,22 +31,28 @@ Up: [[dashboards-index]] · [[pf-zepto]]
   "brand_name",
   "manufacturer_name",
   "manufacturer_id",
-  "units"
+  "units",
+  "category",
+  "sub_category",
+  "month"
  ],
  "sample": {
   "brand_name": "Jivo",
-  "city": "Faridabad",
-  "ean": "8.908E+12",
-  "id": 1,
-  "inventory_date": "2026-01-01",
+  "category": null,
+  "city": "Delhi",
+  "ean": "8908000258235",
+  "id": 2832,
+  "inventory_date": "2026-01-12",
   "manufacturer_id": "946950b7-1ce2-4bdf-a7c4-37499e3f5f34",
   "manufacturer_name": "Jivo Wellness Pvt. Ltd.",
+  "month": "JANUARY",
   "sku_category": "Atta, Rice, Oil & Dals",
-  "sku_code": "06c8f55b-13a5-4d9b-8990-a418e63c89ad",
+  "sku_code": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil 1.0 LITER",
   "sku_name": "Jivo Sunflower Cold Pressed Oil | Healthy Cooking Oil 1.0 LITER",
   "sku_sub_category": "Oil",
-  "units": 25,
-  "uploaded_at": "2026-01-01T12:03:54.730467Z"
+  "sub_category": null,
+  "units": 42,
+  "uploaded_at": "2026-01-12T07:02:20.177574Z"
  }
 }
 ```

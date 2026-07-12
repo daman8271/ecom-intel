@@ -252,7 +252,7 @@ Up: [[dashboards-index]] · [[pf-citymall]]
    "pending_ltrs": 80.0,
    "pending_qty": 80.0,
    "pending_value": 12800.0,
-   "per_ltr": "1 LTR",
+   "per_ltr": "2 LTR",
    "projection_ltrs": 0.0,
    "projection_qty": 0.0,
    "projection_value": 0.0,
@@ -1071,6 +1071,19 @@ Up: [[dashboards-index]] · [[pf-citymall]]
     "pending_qty": 0.0,
     "pending_value": 0.0,
     "period": "2026-07-11"
+   },
+   {
+    "done_ltrs": 0.0,
+    "done_qty": 0.0,
+    "done_value": 0.0,
+    "label": "12 Jul",
+    "order_ltrs": 0.0,
+    "order_qty": 0.0,
+    "order_value": 0.0,
+    "pending_ltrs": 0.0,
+    "pending_qty": 0.0,
+    "pending_value": 0.0,
+    "period": "2026-07-12"
    }
   ],
   "month": [],

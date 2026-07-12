@@ -33,39 +33,79 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
    "is_new": false,
    "ltrs": 9580.0,
    "name": "GROUNDNUT 5L",
-   "prev_ltrs": 37250.0
+   "prev_ltrs": 37230.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -71.8,
+   "delta_pct": -67.8,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 2500.0,
+   "ltrs": 2860.0,
    "name": "CANOLA 5L",
    "prev_ltrs": 8870.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -98.8,
+   "delta_pct": -92.1,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 736.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 9261.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -97.6,
    "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 360.0,
+   "ltrs": 720.0,
    "name": "MUSTARD 5L",
    "prev_ltrs": 30315.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -88.3,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 623.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 5345.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -99.2,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 380.0,
+   "name": "MUSTARD 1L",
+   "prev_ltrs": 48354.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -98.7,
+   "head": "COMMODITY",
+   "is_new": false,
+   "ltrs": 106.0,
+   "name": "RICE BRAN 1L",
+   "prev_ltrs": 8140.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -98.8,
+  "delta_pct": -99.2,
   "head": "COMMODITY",
   "is_new": false,
-  "ltrs": 360.0,
-  "name": "MUSTARD 5L",
-  "prev_ltrs": 30315.0
+  "ltrs": 380.0,
+  "name": "MUSTARD 1L",
+  "prev_ltrs": 48354.0
  },
  "top_riser": null,
  "year": 2026

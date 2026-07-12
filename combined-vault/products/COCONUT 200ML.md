@@ -27,19 +27,16 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000163` |
 | canonical_sku(s) | `jivo-pure-extra-virgin-coconut-oil-200ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-200ml` |
 | Category | [[Category - COCONUT\|COCONUT]] |
-| Sub-category | COCONUT |
-| Brand | JIVO |
 | TIER | [[Tier - Premium\|Premium]] *(name-token derived)* |
 | Pack(s) | 200ML |
-| Per-unit | 0.2 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-11).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-12).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 129 | — | — | ⚪ OOS | SVD | 2026-07-11 |
+| [[Platform - amazon\|amazon]] | 129 | — | — | ⚪ OOS | SVD | 2026-07-12 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

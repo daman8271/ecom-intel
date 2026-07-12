@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Vendor (213)
+title: Vendor (214)
 tags:
   - moc
   - source/factory
 ---
 
-# Vendor — 213 records
+# Vendor — 214 records
 
 From `/po/vendors/`. Up: [[_HOME]]
 
@@ -168,6 +168,7 @@ From `/po/vendors/`. Up: [[_HOME]]
 - [[ven-VENDA000494]] — R K WORLDINFOCOM PVT LTD
 - [[ven-ORGV000006]] — RANJEET SINGH DRIVER 2000 IMPREST JWPL0034
 - [[ven-ORGV000201]] — RANJEETA KAUR SAGGU IMPREST JWPL2415
+- [[ven-VENDA001027]] — RAVDEEP SINGH
 - [[ven-VENDA000786]] — RAZORPAY SOFTWARE PRIVATE LIMITED
 - [[ven-VENDA001009]] — RCM LOGISTICS
 - [[ven-VENDA000954]] — RELIANCE GENERAL INSURANCE COMPANY LIMITED

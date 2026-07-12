@@ -27,6 +27,15 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "order_value": 207089.8,
    "pending_ltrs": 720.0,
    "pending_units": 400.0
+  },
+  {
+   "city": "Ahmedabad",
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 60.0,
+   "order_value": 28788.6,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0
   }
  ],
  "by_distributor": [
@@ -38,6 +47,15 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "order_value": 207089.8,
    "pending_ltrs": 720.0,
    "pending_units": 400.0
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 60.0,
+   "order_value": 28788.6,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0
   }
  ],
  "by_po": [
@@ -53,6 +71,19 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "po_date": "06-07-2026",
    "po_expiry_date": "13-07-2026",
    "po_number": "ZHPWB27-PO-3754556"
+  },
+  {
+   "distributor": "CHIRAG ENTERPRISES MUMBAI",
+   "location": "Ahmedabad",
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 60.0,
+   "order_value": 28788.6,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0,
+   "po_date": "02-07-2026",
+   "po_expiry_date": "17-07-2026",
+   "po_number": "ZHPGJ27-PO-3730932"
   }
  ],
  "by_sku": [
@@ -101,6 +132,17 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "sku_name": "Jivo - Cold Press Canola Oil, 5 L"
   },
   {
+   "item": "EXTRA LIGHT 1L",
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 60.0,
+   "order_value": 28788.6,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0,
+   "sku_code": "136712",
+   "sku_name": "Jivo - Extra Light Olive Oil, 1 L"
+  },
+  {
    "item": "JIVO POMACE 1L",
    "open_ltrs": 20.0,
    "open_pos": 1,
@@ -121,21 +163,30 @@ Up: [[dashboards-index]] · [[pf-zomato]]
    "pending_ltrs": 720.0,
    "pending_units": 400.0,
    "warehouse": "Kolkata"
+  },
+  {
+   "open_ltrs": 60.0,
+   "open_pos": 1,
+   "open_units": 60.0,
+   "order_value": 28788.6,
+   "pending_ltrs": 60.0,
+   "pending_units": 60.0,
+   "warehouse": "Ahmedabad"
   }
  ],
  "defaulted_to_latest": true,
  "format": "ZOMATO",
  "max_po_date": "06-07-2026",
- "min_po_date": "06-07-2026",
+ "min_po_date": "02-07-2026",
  "platform": "zomato",
  "po_month": "JULY",
  "totals": {
-  "open_ltrs": 720.0,
-  "open_pos": 1,
-  "open_units": 400.0,
-  "pending_ltrs": 720.0,
-  "pending_units": 400.0,
-  "rows": 5
+  "open_ltrs": 780.0,
+  "open_pos": 2,
+  "open_units": 460.0,
+  "pending_ltrs": 780.0,
+  "pending_units": 460.0,
+  "rows": 6
  },
  "year": 2026
 }

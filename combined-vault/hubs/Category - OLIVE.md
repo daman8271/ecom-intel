@@ -11,7 +11,7 @@ tags:
 
 Up: [[Home]]
 
-**27 matched products** · dominant tier [[Tier - Premium\|Premium]]
+**26 matched products** · dominant tier [[Tier - Premium\|Premium]]
 
 ## Member products
 - [[EXTRA LIGHT 1+1+1L]] — Premium · 1+1+1L
@@ -35,7 +35,6 @@ Up: [[Home]]
 - [[JIVO POMACE 2L]] — Premium · 2L
 - [[JIVO POMACE 5L]] — Premium · 5L
 - [[POMACE 3L]] — Premium · 3L
-- [[SANO CLASSIC 5L]] — Premium · 5L
 - [[SANO POMACE 1+1+1L]] — Premium · 1+1+1L
 - [[SANO POMACE 1+1L]] — Premium · 1+1L
 - [[SANO POMACE 1L]] — Premium · 1L

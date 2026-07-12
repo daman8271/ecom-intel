@@ -2139,7 +2139,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000303|sku-FG0000303]] — Fuzzy name/pack match: ecom listing 'Jivo Sunflower Oil 4 Litres 4l' is JIVO SUNFLOWER 4L; same physical product, not fused by bridge _(D0)_
+- [[jivo/skus/sku-FG0000303|sku-FG0000303]] — same physical product (SUNFLOWER 4L = 'Jivo Sunflower Oil 4 Litres 4l'), name+pack match, unfused by SKU bridge _(D0)_
 
 
 ## Related

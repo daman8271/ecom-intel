@@ -18,7 +18,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
 
 ```json
 {
- "count": 1481,
+ "count": 1484,
  "data": [
   {
    "basic_rate": 1510.0,
@@ -695,7 +695,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 204.76,
    "brand": "JIVO",
-   "case_pack": 20,
+   "case_pack": 24,
    "category": "CANOLA",
    "category_head": "OIL",
    "city": "Ghevara",
@@ -1031,7 +1031,7 @@ Up: [[dashboards-index]] · [[pf-zomato]]
   {
    "basic_rate": 204.76,
    "brand": "JIVO",
-   "case_pack": 20,
+   "case_pack": 24,
    "category": "CANOLA",
    "category_head": "OIL",
    "city": "Ghevara",

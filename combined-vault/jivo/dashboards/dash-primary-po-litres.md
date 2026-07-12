@@ -26,11 +26,11 @@ Up: [[dashboards-index]]
  "month": "JULY",
  "platforms": [
   {
-   "delivered_ltrs": 77991.75,
+   "delivered_ltrs": 84457.75,
    "format": "SWIGGY"
   },
   {
-   "delivered_ltrs": 23515.4,
+   "delivered_ltrs": 24021.0,
    "format": "ZEPTO"
   },
   {
@@ -38,11 +38,7 @@ Up: [[dashboards-index]]
    "format": "CITY MALL"
   },
   {
-   "delivered_ltrs": 15443.0,
-   "format": "BLINKIT"
-  },
-  {
-   "delivered_ltrs": 10395.0,
+   "delivered_ltrs": 10995.0,
    "format": "ZOMATO"
   },
   {

@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36159
-- **doc_num:** 706261129
+- **doc_entry:** 36179
+- **doc_num:** 706261146
 - **doc_date:** 2026-06-30
-- **doc_total:** 16458.00
+- **doc_total:** 11524.00
 - **branch_id:** 1
 - **branch_name:** DELHI
 - **card_code:** CUSTA000912
 - **card_name:** AMAZON (B2C -MAY-JULY)
-- **ship_to_code:** AMAZON B2C HARYANA
-- **ship_to_address:** -125001IN
-- **place_of_supply:** HR
+- **ship_to_code:** AMAZON B2C TAMIL NADU
+- **ship_to_address:** -626117IN
+- **place_of_supply:** TN
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -36,18 +36,18 @@ tags:
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** DL-EC
-- **item_summary:** FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000064 - EXTRA LIGHT 5 LTR + 1 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000070 - EXTRA VIRGIN 1 LTR + EXTRA LIGHT 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS
+- **item_summary:** FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000157 - SANO POMACE 5 LTR, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS
 - **base_refs:** 1506264726
-- **total_quantity:** 33.000
-- **total_litres:** 44.200
+- **total_quantity:** 28.000
+- **total_litres:** 39.200
 - **total_boxes:** 0.000
-- **total_weight:** 27.427
-- **line_count:** 9
+- **total_weight:** 22.683
+- **line_count:** 5
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36159, "sap_invoice_doc_num": "706261129", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 36179, "sap_invoice_doc_num": "706261146", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

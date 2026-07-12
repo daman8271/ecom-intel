@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR69F6098"
+title: "NLOIAC6821"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR69F6098
+# NLOIAC6821
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34925
-- **doc_num:** 706260477
-- **doc_date:** 2026-06-18
-- **doc_total:** 884764.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** RK WORLDINFOCOM PVT LTD HARYANA
-- **ship_to_address:** LLP VILLAGE- FARRUKHNAGAR TEHSIL-FARRUKH ESR SOHNA LOGISTICS PARK VILLAGE RAHAKA  BLOCK J2,FARUKHNAGAR LOGISTICS PARKS EMPORIUM INDUSTRIAL PARK INDIA PVT LTDGURUGRAM-122506IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **doc_entry:** 34967
+- **doc_num:** 606260153
+- **doc_date:** 2026-06-19
+- **doc_total:** 1393155.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000900
+- **card_name:** BABA LOKENATH TRADERS
+- **ship_to_code:** BABA LOKENATH TRADERS KOLKATA
+- **ship_to_address:** LAHABAGAN LAKETOWN  1013/1 DAKSHINDARI ROADKOLKATA-700048IN
+- **place_of_supply:** WB
+- **bp_gstin:** 19AKIPB9263G1ZZ
 - **eway_bill:** 
-- **vehicle_no:** HR69F6098
-- **transporter_name:** Jivo Vehicle
-- **bilty_no:** na
-- **bilty_date:** 2026-06-19
+- **vehicle_no:** NLOIAC6821
+- **transporter_name:** Abhiman Express
+- **bilty_no:** 260440
+- **bilty_date:** 2026-06-20
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS
-- **base_refs:** 1706264602
-- **total_quantity:** 3700.000
-- **total_litres:** 3700.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000227 - RICE BRAN 1L 16 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
+- **base_refs:** 1706264582
+- **total_quantity:** 7388.000
+- **total_litres:** 7628.000
 - **total_boxes:** 0.000
-- **total_weight:** 3615.467
-- **line_count:** 2
+- **total_weight:** 7785.640
+- **line_count:** 8
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 427, "sap_invoice_doc_entry": 34925, "sap_invoice_doc_num": "706260477", "invoice_number": "706260477", "eway_bill": "731644170186", "invoice_weight": "3615.467", "invoice_amount": "884764.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "70800.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 53, "transporter_id": 31, "driver_id": null, "linked_vehicle_entry_id": 838, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-19T13:38:02.932319Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-19", "priority": "HIGH", "transporter_name": "Jivo", "transporter_gstin": "", "contact_person": "Vicky veer ji", "mobile_no": "0000000000", "vehicle_no": "HR69F6098", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "NA", "bilty_date": "2026-06-19", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-06-19_at_4_2U6icEK.52.13_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-06-19 at 4.52.13 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "20/06/2026 08:30 AM IST", "created_at": "2026-06-18T18:51:25.326548+05:30", "updated_at": "2026-06-19T19:08:02.947269+05:30"}
+  {"id": 444, "sap_invoice_doc_entry": 34967, "sap_invoice_doc_num": "606260153", "invoice_number": "606260153", "eway_bill": "352272958704", "invoice_weight": "7785.640", "invoice_amount": "1393155.00", "place_of_supply": "WB", "location": "", "product_variety": "Oil", "total_litres": "140272.000", "effective_month": "2026-06", "budget_delivery_point": "KOLKATA", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 294, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 884, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-20T14:45:20.942406Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-20", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "NLOIAC6821", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260440", "bilty_date": "2026-06-20", "bilty_attachment": "/media/sales_dispatch/attachments/GR_260463_1.pdf", "bilty_attachment_name": "GR 260463 (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-19T18:40:07.820316+05:30", "updated_at": "2026-06-20T20:15:20.956713+05:30"}
   ```

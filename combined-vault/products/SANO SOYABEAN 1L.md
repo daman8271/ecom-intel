@@ -27,16 +27,19 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000140` |
 | canonical_sku(s) | `sano-soyabean-oil-1-ltr-pet-bottle-pure-natural-nutrientrich-cooking-oil-ideal-for-healthy-delights-in-cooking-frying-and-baking-perfect-for-indian-and-international-cuisines-1l` |
 | Category | [[Category - SOYABEAN\|SOYABEAN]] |
+| Sub-category | SOYABEAN |
+| Brand | SANO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 1L |
+| Per-unit | 1.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-11).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-12).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 189 | 189 | 0 | 🟦 MATCH | SVD | 2026-07-11 |
+| [[Platform - amazon\|amazon]] | 189 | 189 | 0 | 🟦 MATCH | SVD | 2026-07-12 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

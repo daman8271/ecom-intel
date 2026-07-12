@@ -38,12 +38,22 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
   {
    "brand": null,
    "code": null,
-   "delta_pct": -67.6,
+   "delta_pct": -68.0,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 4780.0,
+   "ltrs": 4720.0,
    "name": "JIVO POMACE 5L",
    "prev_ltrs": 14760.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -89.7,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 3680.0,
+   "name": "JIVO POMACE 1L",
+   "prev_ltrs": 35854.0
   },
   {
    "brand": null,
@@ -51,69 +61,59 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
    "delta_pct": -87.7,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 4400.0,
-   "name": "JIVO POMACE 1L",
-   "prev_ltrs": 35854.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -86.7,
-   "head": "PREMIUM",
-   "is_new": false,
-   "ltrs": 3230.0,
+   "ltrs": 2990.0,
    "name": "CANOLA 1L",
    "prev_ltrs": 24260.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -62.3,
-   "head": "COMMODITY",
-   "is_new": false,
-   "ltrs": 3008.0,
-   "name": "SUNFLOWER 1L",
-   "prev_ltrs": 7975.0
-  },
-  {
-   "brand": null,
-   "code": null,
-   "delta_pct": -87.2,
+   "delta_pct": -87.6,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 2840.0,
+   "ltrs": 2760.0,
    "name": "CANOLA 5L",
    "prev_ltrs": 22205.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -91.4,
-   "head": "PREMIUM",
+   "delta_pct": -78.8,
+   "head": "COMMODITY",
    "is_new": false,
-   "ltrs": 836.0,
-   "name": "EXTRA LIGHT 1L",
-   "prev_ltrs": 9755.0
+   "ltrs": 1692.0,
+   "name": "SUNFLOWER 1L",
+   "prev_ltrs": 7975.0
   },
   {
    "brand": null,
    "code": null,
-   "delta_pct": -93.2,
+   "delta_pct": -94.3,
    "head": "PREMIUM",
    "is_new": false,
-   "ltrs": 820.0,
+   "ltrs": 680.0,
    "name": "EXTRA LIGHT 2L",
    "prev_ltrs": 12012.0
+  },
+  {
+   "brand": null,
+   "code": null,
+   "delta_pct": -93.4,
+   "head": "PREMIUM",
+   "is_new": false,
+   "ltrs": 648.0,
+   "name": "EXTRA LIGHT 1L",
+   "prev_ltrs": 9755.0
   }
  ],
  "source": "primary",
  "top_faller": {
   "brand": null,
   "code": null,
-  "delta_pct": -93.2,
+  "delta_pct": -94.3,
   "head": "PREMIUM",
   "is_new": false,
-  "ltrs": 820.0,
+  "ltrs": 680.0,
   "name": "EXTRA LIGHT 2L",
   "prev_ltrs": 12012.0
  },

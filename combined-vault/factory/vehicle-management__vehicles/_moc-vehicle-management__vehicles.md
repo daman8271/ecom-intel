@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Vehicle (412)
+title: Vehicle (425)
 tags:
   - moc
   - source/factory
 ---
 
-# Vehicle — 412 records
+# Vehicle — 425 records
 
 From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 
@@ -40,6 +40,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-205]] — DL01LAC8007
 - [[veh-165]] — DL01LAC9967
 - [[veh-334]] — DL01LAD1397
+- [[veh-419]] — DL01LAE3989
 - [[veh-244]] — DL01LAF0621
 - [[veh-29]] — DL01LAF6277
 - [[veh-38]] — DL01LAF7466
@@ -86,11 +87,13 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-338]] — DL01LAR9378
 - [[veh-247]] — DL01LAT0540
 - [[veh-349]] — DL01LAT0779
+- [[veh-424]] — DL01LAT1060
 - [[veh-74]] — DL01LT0430
 - [[veh-237]] — DL01LTA1291
 - [[veh-48]] — DL01LV1760
 - [[veh-54]] — DL01LV9884
 - [[veh-100]] — DL01LW0362
+- [[veh-422]] — DL01LW1472
 - [[veh-164]] — DL01LW6036
 - [[veh-335]] — DL01LX0313
 - [[veh-26]] — DL01LX1852
@@ -237,6 +240,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-352]] — HR63E2933
 - [[veh-368]] — HR63E3409
 - [[veh-370]] — HR63E5410
+- [[veh-418]] — HR63E6712
 - [[veh-59]] — HR63E7474
 - [[veh-311]] — HR63F4834
 - [[veh-284]] — HR63F6596
@@ -245,6 +249,8 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-122]] — HR63F8582
 - [[veh-322]] — HR63F9826
 - [[veh-268]] — HR63G3533
+- [[veh-430]] — HR64A7734
+- [[veh-421]] — HR64A9372
 - [[veh-242]] — HR65B0175
 - [[veh-226]] — HR65D1401
 - [[veh-375]] — HR67B9919
@@ -364,9 +370,12 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-81]] — PB03AX0913
 - [[veh-343]] — PB03BH9175
 - [[veh-160]] — PB03BL4198
+- [[veh-427]] — PB03BU0643
+- [[veh-420]] — PB04AH5341
 - [[veh-68]] — PB06BH5459
 - [[veh-373]] — PB10CD8040
 - [[veh-362]] — PB10HB9457
+- [[veh-428]] — PB10HF3465
 - [[veh-196]] — PB10KK5287
 - [[veh-407]] — PB10KN7921
 - [[veh-402]] — PB11BR8396
@@ -383,6 +392,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-299]] — RJ11GB7865
 - [[veh-254]] — RJ11GC0032
 - [[veh-270]] — RJ11GC6279
+- [[veh-423]] — RJ11GD2541
 - [[veh-305]] — RJ11GD2629
 - [[veh-404]] — RJ11GD2843
 - [[veh-296]] — RJ11GD2865
@@ -392,6 +402,8 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-110]] — RJ14GQ8986
 - [[veh-336]] — RJ18GC8499
 - [[veh-374]] — RJ27GE3204
+- [[veh-425]] — RJ32GC5062
+- [[veh-426]] — RJ32GD1781
 - [[veh-340]] — RJ32GD2788
 - [[veh-182]] — RJ47GA1756
 - [[veh-178]] — RJ47GA1956
@@ -407,6 +419,7 @@ From `/vehicle-management/vehicles/`. Up: [[_HOME]]
 - [[veh-353]] — RJ47GB0956
 - [[veh-181]] — RJ47GB3056
 - [[veh-383]] — RJ47GB3356
+- [[veh-429]] — RJ53GA1866
 - [[veh-135]] — TN7BV4083
 - [[veh-78]] — TS08UF8476
 - [[veh-113]] — TS08UF9811

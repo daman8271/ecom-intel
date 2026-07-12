@@ -29,20 +29,26 @@ Up: [[dashboards-index]] · [[pf-blinkit]]
   "item_name",
   "backend_inv_qty",
   "frontend_inv_qty",
-  "total_inv_qty"
+  "total_inv_qty",
+  "category",
+  "sub_category",
+  "month"
  ],
  "sample": {
-  "backend_facility_id": "1320",
-  "backend_facility_name": "Ludhiana - Feeder Warehouse",
+  "backend_facility_id": "5504",
+  "backend_facility_name": "CPC-GGN4",
   "backend_inv_qty": 0,
-  "frontend_inv_qty": 0,
-  "id": 1,
-  "inventory_date": "2026-01-01",
-  "item_id": "10150509",
-  "item_name": "Jivo Kachi Ghani Cold Pressed Mustard Oil 1 l - Rs 255",
-  "raw_created_at": "31-12-2025",
-  "total_inv_qty": 0,
-  "uploaded_at": "2026-01-01T11:58:15.089471Z"
+  "category": "OLIVE",
+  "frontend_inv_qty": 12,
+  "id": 11854,
+  "inventory_date": "2026-04-02",
+  "item_id": "10153585",
+  "item_name": "Jivo Extra Light Olive Oil 2 l - Rs 2799",
+  "month": "APRIL",
+  "raw_created_at": "02-04-2026",
+  "sub_category": "EXTRA LIGHT",
+  "total_inv_qty": 12,
+  "uploaded_at": "2026-04-02T05:00:18.453226Z"
  }
 }
 ```

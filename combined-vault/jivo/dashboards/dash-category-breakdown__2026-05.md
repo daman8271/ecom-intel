@@ -75,7 +75,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 178665.25,
+    "ltrs": 178706.25,
     "name": "OLIVE"
    },
    {
@@ -91,16 +91,12 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "BLENDED"
    },
    {
-    "ltrs": 1347.0,
+    "ltrs": 1828.0,
     "name": "SESAME OIL"
    },
    {
     "ltrs": 796.0,
     "name": "COCONUT"
-   },
-   {
-    "ltrs": 481.0,
-    "name": "SEASAME OIL"
    }
   ],
   "sub_categories": [
@@ -113,7 +109,7 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 94505.0,
+    "ltrs": 94546.0,
     "name": "JIVO POMACE"
    },
    {
@@ -137,19 +133,15 @@ Up: [[dashboards-index]] · [[2026-05]]
     "name": "SO OLIVE"
    },
    {
-    "ltrs": 1347.0,
+    "ltrs": 1828.0,
     "name": "SESAME OIL"
    },
    {
     "ltrs": 796.0,
     "name": "COCONUT"
-   },
-   {
-    "ltrs": 481.0,
-    "name": "SEASAME OIL"
    }
   ],
-  "total_ltrs": 490079.65
+  "total_ltrs": 490120.65
  },
  "source": "primary",
  "year": 2026

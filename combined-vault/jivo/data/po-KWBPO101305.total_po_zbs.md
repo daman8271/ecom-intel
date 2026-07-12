@@ -18,7 +18,7 @@ Canonical raw rows (1) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-146.67,0.0,SWIGGY,,,79825,154.0035,KOLKATA,996.0,2026-07-09,2026-08-01,KWBPO101305,,820542,Jivo Cold Pressed Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-11,total_po_zbs:79825,2026-07-11
+146.67,0.0,SWIGGY,,,79825,154.0035,KOLKATA,996.0,2026-07-09,2026-08-01,KWBPO101305,,820542,Jivo Cold Pressed Kachi Ghani Mustard Oil 1.0 ltr,CONFIRMED,BABA LOKENATH TRADERS,2026-07-11,total_po_zbs:79825,2026-07-12
 ```
 
 ---

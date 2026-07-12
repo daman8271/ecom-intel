@@ -16,18 +16,18 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36418
-- **doc_num:** 607260144
+- **doc_entry:** 36443
+- **doc_num:** 707260208
 - **doc_date:** 2026-07-10
-- **doc_total:** 2694460.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000592
-- **card_name:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED
-- **ship_to_code:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN
-- **ship_to_address:** ELECTRICITY CITY POSTBENGALURU-560100IN
-- **place_of_supply:** KT
-- **bp_gstin:** 29AAICK3556G1Z9
+- **doc_total:** 76527.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD PUNE
+- **ship_to_address:** GATE NO. 185,186,188,189,190,197,198,200,201,202,  NDR BIGBOX PRIVATE LIMITED MAWAL SUDHAVADIPUNE-412109IN
+- **place_of_supply:** MH
+- **bp_gstin:** 27AAECR0564M1Z3
 - **eway_bill:** 
 - **vehicle_no:** 
 - **transporter_name:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
-- **base_refs:** 1707264533
-- **total_quantity:** 8720.000
-- **total_litres:** 15920.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
+- **base_refs:** 1706264742
+- **total_quantity:** 96.000
+- **total_litres:** 480.000
 - **total_boxes:** 0.000
-- **total_weight:** 15672.678
-- **line_count:** 2
+- **total_weight:** 471.600
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36418, "sap_invoice_doc_num": "607260144", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 36443, "sap_invoice_doc_num": "707260208", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

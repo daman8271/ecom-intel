@@ -20,6 +20,10 @@ Up: [[dashboards-index]] · [[pf-amazon]]
 {
  "available_dates": [
   {
+   "date": "2026-07-11",
+   "rows": 48
+  },
+  {
    "date": "2026-07-10",
    "rows": 48
   },
@@ -167,6 +171,28 @@ Up: [[dashboards-index]] · [[pf-amazon]]
  "coupons": [
   {
    "brand": "JIVO",
+   "budget_remaining": 4957.9,
+   "budget_spent": 8042.1,
+   "budget_used": 61.862307692307695,
+   "clips": 54.0,
+   "coupon_name": "EXTRA VIRGIN 5L",
+   "item_head": "PREMIUM",
+   "redemptions": 23.0,
+   "total_budget": 13000.0
+  },
+  {
+   "brand": "JIVO",
+   "budget_remaining": 2962.3,
+   "budget_spent": 8037.7,
+   "budget_used": 73.07,
+   "clips": 293.0,
+   "coupon_name": "EXTRA LIGHT 5L",
+   "item_head": "PREMIUM",
+   "redemptions": 160.0,
+   "total_budget": 11000.0
+  },
+  {
+   "brand": "JIVO",
    "budget_remaining": 2034.7,
    "budget_spent": 7965.3,
    "budget_used": 79.653,
@@ -178,57 +204,35 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   },
   {
    "brand": "JIVO",
-   "budget_remaining": 3170.86,
-   "budget_spent": 7829.14,
-   "budget_used": 71.174,
-   "clips": 286.0,
-   "coupon_name": "EXTRA LIGHT 5L",
-   "item_head": "PREMIUM",
-   "redemptions": 157.0,
-   "total_budget": 11000.0
-  },
-  {
-   "brand": "JIVO",
-   "budget_remaining": 5334.0,
-   "budget_spent": 7666.0,
-   "budget_used": 58.96923076923077,
-   "clips": 52.0,
-   "coupon_name": "EXTRA VIRGIN 5L",
-   "item_head": "PREMIUM",
-   "redemptions": 22.0,
-   "total_budget": 13000.0
-  },
-  {
-   "brand": "JIVO",
-   "budget_remaining": 1441.58,
-   "budget_spent": 5558.42,
-   "budget_used": 79.406,
-   "clips": 424.0,
+   "budget_remaining": 1398.02,
+   "budget_spent": 5601.98,
+   "budget_used": 80.02828571428572,
+   "clips": 426.0,
    "coupon_name": "EXTRA LIGHT 2L",
    "item_head": "PREMIUM",
-   "redemptions": 234.0,
+   "redemptions": 236.0,
    "total_budget": 7000.0
   },
   {
    "brand": "JIVO",
-   "budget_remaining": 1338.71,
-   "budget_spent": 3661.29,
-   "budget_used": 73.2258,
-   "clips": 184.0,
+   "budget_remaining": 1230.8,
+   "budget_spent": 3769.2,
+   "budget_used": 75.384,
+   "clips": 196.0,
    "coupon_name": "YELLOW MUSTARD 5L",
    "item_head": "PREMIUM",
-   "redemptions": 94.0,
+   "redemptions": 95.0,
    "total_budget": 5000.0
   },
   {
    "brand": "JIVO",
-   "budget_remaining": 4083.66,
-   "budget_spent": 1916.34,
-   "budget_used": 31.939,
-   "clips": 309.0,
+   "budget_remaining": 3971.1,
+   "budget_spent": 2028.9,
+   "budget_used": 33.815,
+   "clips": 327.0,
    "coupon_name": "CANOLA 1+1L",
    "item_head": "PREMIUM",
-   "redemptions": 158.0,
+   "redemptions": 167.0,
    "total_budget": 6000.0
   },
   {
@@ -236,7 +240,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 2089.42,
    "budget_spent": 1910.58,
    "budget_used": 47.7645,
-   "clips": 236.0,
+   "clips": 243.0,
    "coupon_name": "YELLOW MUSTARD 1L",
    "item_head": "PREMIUM",
    "redemptions": 127.0,
@@ -244,24 +248,24 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   },
   {
    "brand": "JIVO",
-   "budget_remaining": 3339.74,
-   "budget_spent": 1660.26,
-   "budget_used": 33.2052,
-   "clips": 183.0,
-   "coupon_name": "EXTRA VIRGIN 1L",
+   "budget_remaining": 3238.2,
+   "budget_spent": 1761.8,
+   "budget_used": 35.236,
+   "clips": 500.0,
+   "coupon_name": "CANOLA 1L",
    "item_head": "PREMIUM",
-   "redemptions": 95.0,
+   "redemptions": 242.0,
    "total_budget": 5000.0
   },
   {
    "brand": "JIVO",
-   "budget_remaining": 3432.66,
-   "budget_spent": 1567.34,
-   "budget_used": 31.3468,
-   "clips": 474.0,
-   "coupon_name": "CANOLA 1L",
+   "budget_remaining": 3276.62,
+   "budget_spent": 1723.38,
+   "budget_used": 34.4676,
+   "clips": 186.0,
+   "coupon_name": "EXTRA VIRGIN 1L",
    "item_head": "PREMIUM",
-   "redemptions": 223.0,
+   "redemptions": 99.0,
    "total_budget": 5000.0
   },
   {
@@ -277,13 +281,13 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   },
   {
    "brand": "SANO",
-   "budget_remaining": 3728.0,
-   "budget_spent": 1272.0,
-   "budget_used": 25.44,
-   "clips": 69.0,
+   "budget_remaining": 3698.02,
+   "budget_spent": 1301.98,
+   "budget_used": 26.0396,
+   "clips": 73.0,
    "coupon_name": "SANO POMACE 5L",
    "item_head": "PREMIUM",
-   "redemptions": 34.0,
+   "redemptions": 35.0,
    "total_budget": 5000.0
   },
   {
@@ -291,7 +295,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 3934.24,
    "budget_spent": 1065.76,
    "budget_used": 21.3152,
-   "clips": 76.0,
+   "clips": 80.0,
    "coupon_name": "EXTRA LIGHT 3L",
    "item_head": "PREMIUM",
    "redemptions": 31.0,
@@ -302,7 +306,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 5177.95,
    "budget_spent": 822.05,
    "budget_used": 13.700833333333334,
-   "clips": 67.0,
+   "clips": 68.0,
    "coupon_name": "COCONUT 1L",
    "item_head": "PREMIUM",
    "redemptions": 25.0,
@@ -313,54 +317,54 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 4219.85,
    "budget_spent": 780.15,
    "budget_used": 15.603,
-   "clips": 85.0,
+   "clips": 88.0,
    "coupon_name": "SESAME OIL 1L",
    "item_head": "PREMIUM",
    "redemptions": 41.0,
    "total_budget": 5000.0
   },
   {
+   "brand": "SANO",
+   "budget_remaining": 3567.2,
+   "budget_spent": 432.8,
+   "budget_used": 10.82,
+   "clips": 82.0,
+   "coupon_name": "SANO POMACE 1L",
+   "item_head": "PREMIUM",
+   "redemptions": 41.0,
+   "total_budget": 4000.0
+  },
+  {
    "brand": "JIVO",
    "budget_remaining": 4585.84,
    "budget_spent": 414.16,
    "budget_used": 8.2832,
-   "clips": 133.0,
+   "clips": 135.0,
    "coupon_name": "SO OLIVE 1L",
    "item_head": "PREMIUM",
    "redemptions": 65.0,
    "total_budget": 5000.0
   },
   {
-   "brand": "SANO",
-   "budget_remaining": 3607.1,
-   "budget_spent": 392.9,
-   "budget_used": 9.8225,
-   "clips": 77.0,
-   "coupon_name": "SANO POMACE 1L",
-   "item_head": "PREMIUM",
-   "redemptions": 40.0,
-   "total_budget": 4000.0
-  },
-  {
    "brand": "JIVO",
-   "budget_remaining": 3625.05,
-   "budget_spent": 374.95,
-   "budget_used": 9.37375,
-   "clips": 48.0,
+   "budget_remaining": 3612.1,
+   "budget_spent": 387.9,
+   "budget_used": 9.6975,
+   "clips": 53.0,
    "coupon_name": "COCONUT 500ML",
    "item_head": "PREMIUM",
-   "redemptions": 20.0,
+   "redemptions": 21.0,
    "total_budget": 4000.0
   },
   {
    "brand": "JIVO",
-   "budget_remaining": 1837.94,
-   "budget_spent": 162.06,
-   "budget_used": 8.103,
-   "clips": 56.0,
+   "budget_remaining": 1754.48,
+   "budget_spent": 245.52,
+   "budget_used": 12.276,
+   "clips": 64.0,
    "coupon_name": "CANOLA 5L + 1L (BUNDLE)",
    "item_head": "PREMIUM",
-   "redemptions": 7.0,
+   "redemptions": 13.0,
    "total_budget": 2000.0
   },
   {
@@ -368,11 +372,22 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 3857.65,
    "budget_spent": 142.35,
    "budget_used": 3.55875,
-   "clips": 30.0,
+   "clips": 32.0,
    "coupon_name": "FIRST PRESSED MUSTARD 1 LTR",
    "item_head": "PREMIUM",
    "redemptions": 9.0,
    "total_budget": 4000.0
+  },
+  {
+   "brand": "JIVO",
+   "budget_remaining": 1860.28,
+   "budget_spent": 139.72,
+   "budget_used": 6.986,
+   "clips": 15.0,
+   "coupon_name": "EXTRA LIGHT 1L + 1L (BUNDLE)",
+   "item_head": "PREMIUM",
+   "redemptions": 6.0,
+   "total_budget": 2000.0
   },
   {
    "brand": "SANO",
@@ -387,17 +402,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   },
   {
    "brand": "JIVO",
-   "budget_remaining": 1880.24,
-   "budget_spent": 119.76,
-   "budget_used": 5.988,
-   "clips": 13.0,
-   "coupon_name": "EXTRA LIGHT 1L + 1L (BUNDLE)",
-   "item_head": "PREMIUM",
-   "redemptions": 5.0,
-   "total_budget": 2000.0
-  },
-  {
-   "brand": "JIVO",
    "budget_remaining": 1908.76,
    "budget_spent": 91.24,
    "budget_used": 4.562,
@@ -405,6 +409,17 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "coupon_name": "CANOLA 5L + 1L+ 1L (BUNDLE)",
    "item_head": "PREMIUM",
    "redemptions": 6.0,
+   "total_budget": 2000.0
+  },
+  {
+   "brand": "JIVO",
+   "budget_remaining": 1916.88,
+   "budget_spent": 83.12,
+   "budget_used": 4.156,
+   "clips": 12.0,
+   "coupon_name": "JIVO POMACE 5L + 1L (BUNDLE)",
+   "item_head": "PREMIUM",
+   "redemptions": 2.0,
    "total_budget": 2000.0
   },
   {
@@ -423,7 +438,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 2931.06,
    "budget_spent": 68.94,
    "budget_used": 2.298,
-   "clips": 11.0,
+   "clips": 12.0,
    "coupon_name": "JIVO POMACE 3L",
    "item_head": "PREMIUM",
    "redemptions": 4.0,
@@ -445,7 +460,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 1954.52,
    "budget_spent": 45.48,
    "budget_used": 2.274,
-   "clips": 14.0,
+   "clips": 15.0,
    "coupon_name": "JIVO POMACE 1L + 1L (BUNDLE)",
    "item_head": "PREMIUM",
    "redemptions": 4.0,
@@ -456,7 +471,7 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "budget_remaining": 1980.48,
    "budget_spent": 19.52,
    "budget_used": 0.976,
-   "clips": 5.0,
+   "clips": 6.0,
    "coupon_name": "YELLOW MUSTARD 1L + 1L (BUNDLE)",
    "item_head": "COMMODITY",
    "redemptions": 3.0,
@@ -472,28 +487,6 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "item_head": "PREMIUM",
    "redemptions": 4.0,
    "total_budget": 4000.0
-  },
-  {
-   "brand": "JIVO",
-   "budget_remaining": 3000.0,
-   "budget_spent": 0.0,
-   "budget_used": 0.0,
-   "clips": 4.0,
-   "coupon_name": "JIVO POMACE 2L",
-   "item_head": "PREMIUM",
-   "redemptions": 0.0,
-   "total_budget": 3000.0
-  },
-  {
-   "brand": "JIVO",
-   "budget_remaining": 2000.0,
-   "budget_spent": 0.0,
-   "budget_used": 0.0,
-   "clips": 9.0,
-   "coupon_name": "JIVO POMACE 5L + 1L (BUNDLE)",
-   "item_head": "PREMIUM",
-   "redemptions": 0.0,
-   "total_budget": 2000.0
   },
   {
    "brand": "SANO",
@@ -692,17 +685,28 @@ Up: [[dashboards-index]] · [[pf-amazon]]
    "item_head": "PREMIUM",
    "redemptions": 0.0,
    "total_budget": 3000.0
+  },
+  {
+   "brand": "JIVO",
+   "budget_remaining": 3000.0,
+   "budget_spent": 0.0,
+   "budget_used": 0.0,
+   "clips": 4.0,
+   "coupon_name": "JIVO POMACE 2L",
+   "item_head": "PREMIUM",
+   "redemptions": 0.0,
+   "total_budget": 3000.0
   }
  ],
  "dashboard_title": "Amazon Coupon Dashboard",
  "defaulted_to_latest": true,
- "effective_date": "2026-07-10",
+ "effective_date": "2026-07-11",
  "item_head": [
   {
-   "budget_spent": 47275.79,
+   "budget_spent": 48651.43,
    "coupons": 46,
    "label": "PREMIUM",
-   "redemptions": 1793.0,
+   "redemptions": 1844.0,
    "total_budget": 196000.0
   },
   {
@@ -714,14 +718,14 @@ Up: [[dashboards-index]] · [[pf-amazon]]
   }
  ],
  "kpi": {
-  "budget_remaining": 152704.69,
-  "budget_spent": 47295.31,
-  "clips": 3619.0,
-  "redemptions": 1796.0,
+  "budget_remaining": 151329.05,
+  "budget_spent": 48670.95,
+  "clips": 3738.0,
+  "redemptions": 1847.0,
   "total_budget": 200000.0
  },
  "platform": "amazon",
- "requested_date": "2026-07-10",
+ "requested_date": "2026-07-11",
  "source": "amazon_coupon_master"
 }
 ```

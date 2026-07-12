@@ -76,7 +76,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 55224.5,
+    "ltrs": 55265.5,
     "name": "OLIVE"
    },
    {
@@ -97,7 +97,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    },
    {
     "ltrs": 481.0,
-    "name": "SEASAME OIL"
+    "name": "SESAME OIL"
    }
   ],
   "sub_categories": [
@@ -110,7 +110,7 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
     "name": "CANOLA"
    },
    {
-    "ltrs": 26714.0,
+    "ltrs": 26755.0,
     "name": "JIVO POMACE"
    },
    {
@@ -139,10 +139,10 @@ Up: [[dashboards-index]] · [[2026-05]] · [[pf-amazon]]
    },
    {
     "ltrs": 481.0,
-    "name": "SEASAME OIL"
+    "name": "SESAME OIL"
    }
   ],
-  "total_ltrs": 174528.5
+  "total_ltrs": 174569.5
  },
  "source": "primary",
  "year": 2026

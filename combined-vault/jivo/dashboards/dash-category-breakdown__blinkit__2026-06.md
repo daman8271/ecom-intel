@@ -26,7 +26,7 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
     "name": "MUSTARD"
    },
    {
-    "ltrs": 3008.0,
+    "ltrs": 1692.0,
     "name": "SUNFLOWER"
    }
   ],
@@ -36,11 +36,11 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
     "name": "MUSTARD KACCHI GHANI"
    },
    {
-    "ltrs": 3008.0,
+    "ltrs": 1692.0,
     "name": "SUNFLOWER"
    }
   ],
-  "total_ltrs": 14408.0
+  "total_ltrs": 13092.0
  },
  "errors": [],
  "month": 6,
@@ -48,29 +48,29 @@ Up: [[dashboards-index]] · [[2026-06]] · [[pf-blinkit]]
  "premium": {
   "categories": [
    {
-    "ltrs": 10836.0,
+    "ltrs": 9728.0,
     "name": "OLIVE"
    },
    {
-    "ltrs": 6070.0,
+    "ltrs": 5750.0,
     "name": "CANOLA"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 9180.0,
+    "ltrs": 8400.0,
     "name": "JIVO POMACE"
    },
    {
-    "ltrs": 6070.0,
+    "ltrs": 5750.0,
     "name": "CANOLA"
    },
    {
-    "ltrs": 1656.0,
+    "ltrs": 1328.0,
     "name": "EXTRA LIGHT"
    }
   ],
-  "total_ltrs": 16906.0
+  "total_ltrs": 15478.0
  },
  "source": "primary",
  "year": 2026

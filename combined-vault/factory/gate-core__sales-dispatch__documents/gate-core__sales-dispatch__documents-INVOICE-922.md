@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "RJ11GB7865"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# RJ11GB7865
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35104
-- **doc_num:** 606260160
-- **doc_date:** 2026-06-20
-- **doc_total:** 604520.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000354
-- **card_name:** CHIRAG ENTERPRISES MUMBAI
-- **ship_to_code:** CHIRAG ENTERPRISES MUMBAI BHIWANDI
-- **ship_to_address:** ANJUR MANKOLI ROAD DAPODA ROADBHIWANDI-421302IN
+- **doc_entry:** 35141
+- **doc_num:** 706260592
+- **doc_date:** 2026-06-22
+- **doc_total:** 46800.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000912
+- **card_name:** AMAZON (B2C -MAY-JULY)
+- **ship_to_code:** AMAZON B2C MAHARASHTRA
+- **ship_to_address:** -400101IN
 - **place_of_supply:** MH
-- **bp_gstin:** 27AAAPH2173D1Z8
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** RJ11GB7865
-- **transporter_name:** Abhiman Express
-- **bilty_no:** na
-- **bilty_date:** 2026-06-22
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000227 - RICE BRAN 1L 16 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
-- **base_refs:** 1706264617
-- **total_quantity:** 1920.000
-- **total_litres:** 1760.000
+- **warehouses:** DL-EC
+- **item_summary:** FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, SL0000010 - CANOLA 1 LTR PACK OF 3, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000012 - CANOLA 5 LTR + 2 LTR, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000026 - COLD PRESS 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000040 - COLD PRESS GROUDNUT 5 LTR + 1 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000041 - COLD PRESS GROUNDNUT 5 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000064 - EXTRA LIGHT 5 LTR + 1 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000069 - EXTRA VIRGIN 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000073 - EXTRA VIRGIN 2 LTR, FG0000155 - EXTRA VIRGIN 2 LTR 10 PCS HANDLE
+- **base_refs:** 1506264623
+- **total_quantity:** 78.000
+- **total_litres:** 190.800
 - **total_boxes:** 0.000
-- **total_weight:** 1908.799
-- **line_count:** 3
+- **total_weight:** 104.150
+- **line_count:** 25
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 485, "sap_invoice_doc_entry": 35104, "sap_invoice_doc_num": "606260160", "invoice_number": "606260160", "eway_bill": "362276883351", "invoice_weight": "1908.799", "invoice_amount": "604520.00", "place_of_supply": "MH", "location": "", "product_variety": "Oil", "total_litres": "32000.000", "effective_month": "2026-06", "budget_delivery_point": "BHIWANDI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 299, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 918, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-22T14:30:25.661900Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-22", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ11GB7865", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260478", "bilty_date": "2026-06-22", "bilty_attachment": "/media/sales_dispatch/attachments/GR_260478.pdf", "bilty_attachment_name": "GR 260478.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-20T19:17:07.353742+05:30", "updated_at": "2026-06-22T20:00:25.681269+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35141, "sap_invoice_doc_num": "706260592", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

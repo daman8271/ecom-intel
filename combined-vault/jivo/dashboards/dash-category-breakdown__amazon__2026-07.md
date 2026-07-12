@@ -22,17 +22,25 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
  "commodity": {
   "categories": [
    {
-    "ltrs": 360.0,
+    "ltrs": 1100.0,
     "name": "MUSTARD"
+   },
+   {
+    "ltrs": 106.0,
+    "name": "RICE BRAN"
    }
   ],
   "sub_categories": [
    {
-    "ltrs": 360.0,
+    "ltrs": 1100.0,
     "name": "MUSTARD KACCHI GHANI"
+   },
+   {
+    "ltrs": 106.0,
+    "name": "RICE BRAN"
    }
   ],
-  "total_ltrs": 360.0
+  "total_ltrs": 1206.0
  },
  "errors": [],
  "month": 7,
@@ -44,8 +52,12 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 2500.0,
+    "ltrs": 2860.0,
     "name": "CANOLA"
+   },
+   {
+    "ltrs": 1359.0,
+    "name": "OLIVE"
    }
   ],
   "sub_categories": [
@@ -54,11 +66,19 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-amazon]]
     "name": "GROUNDNUT"
    },
    {
-    "ltrs": 2500.0,
+    "ltrs": 2860.0,
     "name": "CANOLA"
+   },
+   {
+    "ltrs": 736.0,
+    "name": "JIVO POMACE"
+   },
+   {
+    "ltrs": 623.0,
+    "name": "EXTRA LIGHT"
    }
   ],
-  "total_ltrs": 12080.0
+  "total_ltrs": 13799.0
  },
  "source": "primary",
  "year": 2026

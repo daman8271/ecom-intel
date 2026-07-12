@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "RJ11GB7865"
+title: "HR67C1036"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# RJ11GB7865
+# HR67C1036
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35169
-- **doc_num:** 606260165
+- **doc_entry:** 35191
+- **doc_num:** 706260623
 - **doc_date:** 2026-06-22
-- **doc_total:** 452250.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000354
-- **card_name:** CHIRAG ENTERPRISES MUMBAI
-- **ship_to_code:** CHIRAG ENTERPRISES MUMBAI BHIWANDI
-- **ship_to_address:** ANJUR MANKOLI ROAD DAPODA ROADBHIWANDI-421302IN
-- **place_of_supply:** MH
-- **bp_gstin:** 27AAAPH2173D1Z8
+- **doc_total:** 861292.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURGAON
+- **ship_to_address:** AHAZOUR (FAIZABAD) BADLI JHAJJAR  B 1200GURGAON-124105IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** RJ11GB7865
-- **transporter_name:** Abhiman Express
-- **bilty_no:** 1125
-- **bilty_date:** 2026-06-22
+- **vehicle_no:** HR67C1036
+- **transporter_name:** Mahaveer Transport
+- **bilty_no:** 3662
+- **bilty_date:** 2026-07-04
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS
-- **base_refs:** 1706264641
-- **total_quantity:** 700.000
-- **total_litres:** 1900.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN
+- **base_refs:** 1706264635
+- **total_quantity:** 2538.000
+- **total_litres:** 3450.000
 - **total_boxes:** 0.000
-- **total_weight:** 1887.580
-- **line_count:** 3
+- **total_weight:** 3571.403
+- **line_count:** 8
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 511, "sap_invoice_doc_entry": 35169, "sap_invoice_doc_num": "606260165", "invoice_number": "606260165", "eway_bill": "362276883351", "invoice_weight": "1887.580", "invoice_amount": "452250.00", "place_of_supply": "MH", "location": "", "product_variety": "Oil", "total_litres": "12400.000", "effective_month": "2026-06", "budget_delivery_point": "BHIWANDI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 299, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 918, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-22T14:30:25.661900Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-22", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ11GB7865", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260478", "bilty_date": "2026-06-22", "bilty_attachment": "/media/sales_dispatch/attachments/GR_260478.pdf", "bilty_attachment_name": "GR 260478.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-22T16:12:41.785753+05:30", "updated_at": "2026-06-22T20:00:25.672844+05:30"}
+  {"id": 891, "sap_invoice_doc_entry": 35191, "sap_invoice_doc_num": "706260623", "invoice_number": "706260623", "eway_bill": "711648527311", "invoice_weight": "3571.403", "invoice_amount": "861292.00", "place_of_supply": "HR", "location": "Delivery Address: HHS1 R K WorldInfocom Pvt Ltd B 1200, Pahazour (Faizabad) Badli, Jhajjar Gurgaon 124105", "product_variety": "Oil", "total_litres": "3450.000", "effective_month": "2026-06", "budget_delivery_point": "GURGAON", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 283, "transporter_id": 64, "driver_id": null, "linked_vehicle_entry_id": 1470, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-04T11:12:55.108127Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-04", "priority": "HIGH", "transporter_name": "MAHAVIR TRANSPORT COMPANY", "transporter_gstin": "06AOUPJ8083N1ZZ", "contact_person": "ABC", "mobile_no": "9588567100", "vehicle_no": "HR67C1036", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3662", "bilty_date": "2026-07-04", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260623.pdf", "bilty_attachment_name": "AR - 706260623.pdf", "freight": "0.55", "total_freight": "0.55", "kanta_weight": null, "remarks": "05/07/2026 09:00 AM IST", "created_at": "2026-07-03T18:50:42.511696+05:30", "updated_at": "2026-07-04T16:42:55.124531+05:30"}
   ```

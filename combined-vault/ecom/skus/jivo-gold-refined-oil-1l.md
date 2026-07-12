@@ -42,7 +42,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000149|sku-FG0000149]] — Fuzzy name/pack match: ecom listing 'Jivo Gold Refined Oil 1l' is JIVO GOLD 1L; same physical product, not fused by bridge _(D0)_
+- [[jivo/skus/sku-FG0000149|sku-FG0000149]] — same physical product (GOLD 1L = 'Jivo Gold Refined Oil 1l'), name+pack match, unfused by SKU bridge _(D0)_
 
 
 ## Related

@@ -25,7 +25,7 @@ Up: [[dashboards-index]] · [[2026-05]]
   },
   {
    "category": "OLIVE",
-   "ltrs": 178665.25
+   "ltrs": 178706.25
   },
   {
    "category": "CANOLA",
@@ -41,22 +41,18 @@ Up: [[dashboards-index]] · [[2026-05]]
   },
   {
    "category": "SESAME OIL",
-   "ltrs": 1347.0
+   "ltrs": 1828.0
   },
   {
    "category": "COCONUT",
    "ltrs": 796.0
-  },
-  {
-   "category": "SEASAME OIL",
-   "ltrs": 481.0
   }
  ],
  "errors": [],
  "head": "premium",
  "month": 5,
  "platform": null,
- "total_ltrs": 490079.65,
+ "total_ltrs": 490120.65,
  "year": 2026
 }
 ```

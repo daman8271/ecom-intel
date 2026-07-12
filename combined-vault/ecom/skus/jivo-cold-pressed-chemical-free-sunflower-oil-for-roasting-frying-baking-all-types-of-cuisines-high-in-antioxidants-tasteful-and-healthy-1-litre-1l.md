@@ -72,7 +72,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000081|sku-FG0000081]] — Fuzzy name/pack match: ecom listing 'Jivo Cold Pressed Chemical Free Sunflower Oil For Roasting Frying Baki' is JIVO SUNFLOWER 1L; same physical product, not fused by bridge _(D0)_
+- [[jivo/skus/sku-FG0000081|sku-FG0000081]] — same physical product (SUNFLOWER 1L = 'Jivo Cold Pressed Chemical Free Sunflower Oil For Roastin...'), name+pack match, unfused by SKU bridge _(D0)_
 
 
 ## Related

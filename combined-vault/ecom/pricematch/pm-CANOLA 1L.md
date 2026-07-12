@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-11
-observations: 264
+last_seen: 2026-07-12
+observations: 272
 latest_status: NOT_LISTED
-below_days: 32
+below_days: 33
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹239 vs live ₹-
-- **Days below reference:** 32 of 33
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-12) — ref ₹239 vs live ₹-
+- **Days below reference:** 33 of 34
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]]
 
-## Ref-vs-live history (264 observations)
+## Ref-vs-live history (272 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -309,6 +309,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-11,flipkart,ABOVE,SVD,239,256,256,256,17,7.11,0,true
 2026-07-11,flipkart-minutes,ABOVE,SVD,239,250,231,270,11,4.6,76,true
 2026-07-11,zepto,NOT_LISTED,SVD,239,,,,,,0,false
+2026-07-12,amazon,MATCH,SVD,239,239,239,239,0,0,0,true
+2026-07-12,amazon-fresh,MATCH,SVD,239,239,229,250,0,0,3,true
+2026-07-12,amazon-now,MATCH,SVD,239,239,232,249,0,0,76,true
+2026-07-12,bigbasket,ABOVE,SVD,239,288.65,283.98,329.44,49.65,20.77,0,true
+2026-07-12,blinkit,BELOW,SVD,239,233,228,279,-6,-2.51,253,true
+2026-07-12,flipkart,ABOVE,SVD,239,256,256,256,17,7.11,0,true
+2026-07-12,flipkart-minutes,ABOVE,SVD,239,250,231,270,11,4.6,78,true
+2026-07-12,zepto,NOT_LISTED,SVD,239,,,,,,0,false
 ```
 
 ---
@@ -316,7 +324,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 
 ## Related (discovered)
 
-- [[hubs/Tier - Premium|Tier - Premium]] — CANOLA 1L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, blinkit, flipkart-minutes) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L) _(D7)_
+- [[hubs/Tier - Premium|Tier - Premium]] — price-match signal for CANOLA 1L (Premium tier): latest NOT_LISTED, 32 day(s) below reference floor _(D7)_
 
 
 ## Related

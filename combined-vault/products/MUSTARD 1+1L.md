@@ -30,20 +30,17 @@ Up: [[Home]]
 | JIVO SKU / SAP code | `FG0000038`, `FG0000275` |
 | canonical_sku(s) | `edoge62hwa7ufxhw`, `jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommendable-for-roasting-frying-baking-all-type-of-cuisines-2l`, `edohysj8bzygcsbu`, `qwrgemqzxaywvm4m`, `jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-each-recommendable-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-1l` |
 | Category | [[Category - MUSTARD\|MUSTARD]] |
-| Sub-category | MUSTARD KACCHI GHANI |
-| Brand | JIVO |
 | TIER | [[Tier - Commodity\|Commodity]] *(name-token derived)* |
 | Pack(s) | 1+1L |
-| Per-unit | 2.0 L |
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-11).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-12).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 409 | — | — | ⚪ OOS | SVD | 2026-07-11 |
-| [[Platform - flipkart\|flipkart]] | 409 | 412 | 0.73 | 🔴 ABOVE | SVD | 2026-07-11 |
+| [[Platform - amazon\|amazon]] | 409 | 379 | -7.33 | 🟢 BELOW | SVD | 2026-07-12 |
+| [[Platform - flipkart\|flipkart]] | 409 | 412 | 0.73 | 🔴 ABOVE | SVD | 2026-07-12 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
