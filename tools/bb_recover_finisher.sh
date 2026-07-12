@@ -17,11 +17,25 @@ say(){ echo "[$(TZ=Asia/Kolkata date '+%F %T')] finisher: $*" >>"$LOG"; }
 exec 9>logs/.bb-finisher.lock
 flock -n 9 || { say "another finisher holds the lock; exiting"; exit 0; }
 
-say "start; waiting for vps/macpro(kvm1)/kvm1 workers to finish"
+# Manifest-driven so a 4-worker run (incl. the Windows laptop, 2026-07-13)
+# waits on exactly the workers that actually participated.
+workers_done() {
+  python3 - "$RUNDIR" <<'PY'
+import json, os, sys
+rd = sys.argv[1]
+try:
+    names = [w["name"] for w in json.load(open(os.path.join(rd, "manifest.json")))["workers"]]
+except Exception:
+    names = ["vps", "macpro", "kvm1"]
+sys.exit(0 if all(os.path.exists(os.path.join(rd, f"{n}.done")) for n in names) else 1)
+PY
+}
+
+say "start; waiting for the manifest's workers to finish"
 for i in $(seq 1 240); do          # up to 2h
   "$SCRIPT" collect "$RUNID" >>"$LOG" 2>&1 || true
-  if [ -f "$RUNDIR/vps.done" ] && [ -f "$RUNDIR/macpro.done" ] && [ -f "$RUNDIR/kvm1.done" ]; then
-    say "all 3 workers done after ~$((i*30))s"
+  if workers_done; then
+    say "all manifest workers done after ~$((i*30))s"
     break
   fi
   sleep 30

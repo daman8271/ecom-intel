@@ -22,6 +22,31 @@ if not isinstance(d.get("summary"), dict):
     raise SystemExit("no summary object")
 PY
 
+# Device-team stash (laptop worker #4, 2026-07-13): when a Zepto team run is
+# active, the Mac's drop is only HALF the universe. A half drop must never hit
+# run.sh (review/selfheal baselines assume full counts) — stash it as shard-0
+# and fire the merge; the merged FULL result re-enters here with
+# ZEPTO_TEAM_BYPASS=1. Count mismatch (e.g. a legacy full drop under a stale
+# pointer) falls through to the normal path untouched.
+ACTIVE_PTR="shards/runs/ACTIVE-zepto-team"
+if [ "${ZEPTO_TEAM_BYPASS:-0}" != "1" ] && [ -f "$ACTIVE_PTR" ]; then
+  TEAM_ID="$(head -1 "$ACTIVE_PTR" 2>/dev/null || true)"
+  if [ -n "$TEAM_ID" ] && [ "${TEAM_ID#"$(date +%Y%m%d)"-}" != "$TEAM_ID" ]; then
+    M0="shards/runs/$TEAM_ID/zepto/shard-0-of-2/manifest.0-of-2.json"
+    R0="shards/runs/$TEAM_ID/zepto/shard-0-of-2/result.json"
+    if [ -s "$M0" ] && [ ! -s "$R0" ]; then
+      DROP_PINS="$(python3 -c 'import json,sys;print((json.load(open(sys.argv[1])).get("summary") or {}).get("pincodes_total") or 0)' "$DROP" 2>/dev/null || echo 0)"
+      SHARD_PINS="$(python3 -c 'import json,sys;print(len(json.load(open(sys.argv[1])).get("shard_pincodes") or []))' "$M0" 2>/dev/null || echo -1)"
+      if [ "$DROP_PINS" = "$SHARD_PINS" ]; then
+        LOG "team run $TEAM_ID active — stashing this ${DROP_PINS}-pin drop as Mac shard-0 and triggering the merge"
+        mv "$DROP" "$R0"
+        exec tools/laptop/zepto_team_merge.sh "$TEAM_ID"
+      fi
+      LOG "team run $TEAM_ID active but drop has ${DROP_PINS} pins (shard-0 expects ${SHARD_PINS}) — treating as a legacy full drop"
+    fi
+  fi
+fi
+
 exec 8>"logs/.macpro_ingest_${P}.lock"
 if ! flock -w 600 8; then LOG "another Mac Pro ingest for $P holds the lock >10m — exit"; exit 1; fi
 

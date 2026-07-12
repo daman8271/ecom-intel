@@ -154,7 +154,7 @@ def main():
     ap.add_argument("--pins", default=os.path.join(os.path.dirname(__file__), "pincodes_jivo.json"))
     ap.add_argument("--output", required=True)
     ap.add_argument("--allow-missing", action="store_true")
-    ap.add_argument("--source", default="BigBasket logged-in browser pincode team (VPS + Mac Pro + KVM1)")
+    ap.add_argument("--source", default="BigBasket logged-in browser pincode team (VPS + Mac Pro + KVM1 + Windows laptop)")
     args = ap.parse_args()
 
     run_dir = os.path.abspath(args.run_dir)

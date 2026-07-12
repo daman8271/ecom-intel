@@ -48,6 +48,34 @@ case "$PASS" in
     ;;
 esac
 
+# Device-team split (laptop worker #4, 2026-07-13): while today's team run is
+# active the Mac only scrapes shard-0 and no mac-drops file appears — that is
+# NOT a miss. blinkit_team_watch.sh (cron */10 06-09) owns pull/merge/rescue;
+# the late pass reclaims control only when the team machinery is provably idle.
+TEAM_PTR="shards/runs/ACTIVE-blinkit-team"
+if [ -f "$TEAM_PTR" ]; then
+  TEAM_ID="$(head -1 "$TEAM_PTR" 2>/dev/null || true)"
+  if [ -n "$TEAM_ID" ] && [ "${TEAM_ID#"$(date +%Y%m%d)"-}" != "$TEAM_ID" ]; then
+    if [ "$PASS" = "late" ]; then
+      if mac_blinkit_running \
+         || pgrep -f "run_platform_shard.sh blinkit|blinkit_team_merge.sh|platforms/blinkit/ingest.sh" >/dev/null 2>&1 \
+         || [ -s "shards/runs/$TEAM_ID/blinkit/shard-0-of-2/result.json" ] \
+         || [ -s "shards/runs/$TEAM_ID/blinkit/shard-1-of-2/result.json" ]; then
+        LOG "team run $TEAM_ID still in flight at late pass — standing by (team watch owns rescue)"
+        exit 0
+      fi
+      LOG "team run $TEAM_ID stalled with nothing running — clearing pointer, falling back to legacy guard logic"
+      tg "⚠️ Blinkit guard 08:45: device-team run $TEAM_ID stalled; falling back to a full legacy re-run."
+      rm -f "$TEAM_PTR"
+    else
+      LOG "team run $TEAM_ID active (Mac shard-0 + laptop shard-1) — standing by"
+      exit 0
+    fi
+  else
+    rm -f "$TEAM_PTR"   # stale pointer from a previous day
+  fi
+fi
+
 attempt_held_drop_repair(){
   local before after
   before="$(ls -t platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"*.json platforms/blinkit/mac-drops/blinkit-"${TODAY//-/}"T*.json 2>/dev/null | head -1 || true)"

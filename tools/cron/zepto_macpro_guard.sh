@@ -119,6 +119,13 @@ case "$PASS" in
       LOG "Mac Pro Zepto already running"
       exit 0
     fi
+    # Device-team split (laptop worker #4): try laptop shard-1 + Mac shard-0
+    # first; any failure inside the launcher returns nonzero and we fall back
+    # to the legacy full-universe Mac trigger below.
+    if [ "${ZEPTO_TEAM_DISABLE:-0}" != "1" ] && tools/laptop/zepto_team_launch.sh >> logs/zepto_team.log 2>&1; then
+      LOG "device-team split engaged — laptop shard-1 + Mac shard-0 (logs/zepto_team.log)"
+      exit 0
+    fi
     if trigger_mac; then
       LOG "Mac Pro Zepto trigger sent"
     else
@@ -128,6 +135,13 @@ case "$PASS" in
     fi
     ;;
   watchdog|late)
+    # Device-team split: while a team run is active, the team watch owns
+    # pull/merge/rescue for this pass (exit 0). Exit 3 = no/abandoned team run
+    # -> fall through to the legacy checks below.
+    if tools/laptop/zepto_team_watch.sh >> logs/zepto_team.log 2>&1; then
+      LOG "device-team run active — team watch handled this pass"
+      exit 0
+    fi
     if mac_running; then
       if mac_stale_previous_run; then
         LOG "stale previous-day Mac Pro Zepto run still active; using VPS fallback instead of waiting"
