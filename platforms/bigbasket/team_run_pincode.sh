@@ -282,7 +282,7 @@ for name in ("vps", "macpro", "kvm1"):
     cycle.extend([name] * max(0, weights[name]))
 if not cycle:
     raise SystemExit("all worker weights are zero")
-shards = {name: [] for name in ("vps", "macpro", "kvm1")}
+shards = {name: [] for name in ("vps", "macpro", "kvm1") if weights[name] > 0}
 for i, pin in enumerate(pins):
     shards[cycle[i % len(cycle)]].append(pin)
 workers = []
@@ -395,19 +395,26 @@ EOF
 }
 
 launch_all() {
+  preflight_weights
   make_shards
-  for name in vps macpro kvm1; do
-    sync_worker "$name"
-    push_shard "$name"
-    launch_worker "$name"
+  local name
+  for name in $(manifest_workers); do
+    if [ "$name" = "vps" ]; then
+      sync_worker "$name"
+      push_shard "$name"
+      launch_worker "$name"
+    elif ! { sync_worker "$name" && push_shard "$name" && launch_worker "$name"; }; then
+      mark_worker_skipped "$name"
+    fi
   done
-  echo "[bb-team] launched $run_id in tmux sessions: ${session_prefix}_vps, ${session_prefix}_macpro, ${session_prefix}_kvm1"
+  echo "[bb-team] launched $run_id workers: $(manifest_workers | tr '\n' ' ')(tmux prefix ${session_prefix}_)"
 }
 
 collect_all() {
   mkdir -p "$run_dir"
   local worker host base remote_run
-  for worker in macpro kvm1; do
+  for worker in $(manifest_workers); do
+    [ "$worker" = "vps" ] && continue
     host="$(worker_host "$worker")"
     base="$(worker_base "$worker")"
     remote_run="$base/team-runs/$run_id"
@@ -448,12 +455,12 @@ import json, sys
 d=json.load(open(sys.argv[1]))
 print("weights", d.get("weights"), "pins", {w["name"]: w["pins"] for w in d.get("workers", [])})
 PY
-  for name in vps macpro kvm1; do worker_status "$name"; done
+  for name in $(manifest_workers); do worker_status "$name"; done
 }
 
 all_done() {
   collect_all >/dev/null 2>&1 || true
-  for name in vps macpro kvm1; do
+  for name in $(manifest_workers); do
     [ -f "$run_dir/$name.done" ] || return 1
   done
   return 0
@@ -465,8 +472,9 @@ wait_all() {
   while ! all_done; do
     now="$(date +%s)"
     if [ "$now" -ge "$deadline" ]; then
-      echo "[bb-team] timeout waiting for workers; run status with: $0 status $run_id" >&2
-      return 1
+      echo "[bb-team] TIMEOUT after ${WAIT_TIMEOUT_S}s; merging completed shards as a PARTIAL report" >&2
+      touch "$run_dir/.allow-missing"
+      break
     fi
     status_all
     sleep "$POLL_S"
@@ -477,11 +485,14 @@ wait_all() {
 
 merge_run() {
   mkdir -p "$run_dir"
+  local allow_missing=""
+  [ -f "$run_dir/.allow-missing" ] && allow_missing="--allow-missing"
   python3 "$PDIR/merge_team_pincode.py" \
     --run-dir "$run_dir" \
     --manifest "$run_dir/manifest.json" \
     --pins "$PINS_FILE" \
-    --output "$run_dir/merged-result_pincode.cleaned.json"
+    --output "$run_dir/merged-result_pincode.cleaned.json" \
+    $allow_missing
   cp -f "$run_dir/merged-result_pincode.cleaned.json" "$PDIR/result_pincode.json"
 }
 

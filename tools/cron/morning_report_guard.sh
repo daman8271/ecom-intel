@@ -149,7 +149,7 @@ if [ "$PIN_OK" != "1" ]; then
   elif [ "$DRY" = "1" ]; then
     LOG "[dryrun] would launch KVM-rerouted pincode re-run"
     PIN_NOTE="[dryrun] would re-run BB pincode via KVM1 for Ecom group delivery."
-  elif pgrep -f 'team_run_pincode.sh (run|collect|merge|build)' >/dev/null 2>&1 || [ -f logs/.bb-finisher.lock ]; then
+  elif pgrep -f 'team_run_pincode.sh (run|collect|merge|build)' >/dev/null 2>&1 || { [ -f logs/.bb-finisher.lock ] && ! flock -n logs/.bb-finisher.lock true 2>/dev/null; }; then
     LOG "pincode job already running — not double-triggering"
     PIN_NOTE="BB pincode re-run already in progress."
   else
