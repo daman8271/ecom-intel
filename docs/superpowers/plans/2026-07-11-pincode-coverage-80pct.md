@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Every per-pincode platform cell in the 24-city coverage matrix reaches ≥80% of that city's India Post universe by daily-cron list membership, live from the 2026-07-12 morning sweep.
+**Goal (upgraded by owner 2026-07-12 from ≥80% to FULL):** Every per-pincode platform cell in the 24-city coverage matrix reaches 100% of that city's India Post universe by daily-cron list membership — `select_targets(..., pct=1.0)`, missing-coordinate pins get the city-centroid fallback, and all ≥80% assertions become ≥99.9%. Live from the next 12:30 AM sweep.
 
 **Architecture:** One shared per-city target set (~85% of universe, rural pins excluded last) generated from `docs/pincodes/drr_pincode.csv`. Plain platforms (blinkit/zepto/flipkart-minutes/bigbasket-svc) get expanded lists in place, existing entries first. Amazon fresh/now keep their proven core lists in the 10:00 chain and get a separate post-batch **tail sweep** (chunked per city, resumable) for the new pins — so the 10:00 batch can never be hurt by the expansion. Instamart gets new anchors via the house greedy-cluster model. Blinkit runs Mac-only (VPS path retired) at ~3.75 s/pin wall — ~1,490 pins ≈ 93 min from 6:30 AM, inside the 10:30 hard rule.
 

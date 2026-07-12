@@ -72,7 +72,9 @@ def build(csv_path):
                                     "locality": r["OfficeName"].strip(),
                                     "urban": False})
             if m["lat"] is None:
-                m["lat"], m["lon"] = _f(r["Latitude"]), _f(r["Longitude"])
+                la, lo = _f(r["Latitude"]), _f(r["Longitude"])
+                if la is not None and lo is not None:
+                    m["lat"], m["lon"] = la, lo
             if _U(r["OfficeType"]) in ("HO", "SO"):
                 if not m["urban"]:
                     m["urban"] = True
