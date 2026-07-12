@@ -718,14 +718,14 @@
         "sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-healthy-cooking-oil-5l",
         "edohagdyvqwt6gng"
       ],
-      "category": "OLIVE",
+      "category": "OTHER",
       "name": "SANO CLASSIC 5L",
       "norm": "SANOCLASSIC5L",
       "saps": [
         "FG0000152"
       ],
       "status": "active",
-      "tier": "PREMIUM"
+      "tier": "OTHER"
     },
     "JID-0047": {
       "canons": [
@@ -1474,7 +1474,7 @@
       "canons": [
         "jivo-dry-fruits-gift-box-200g-sbs-healthy-gift-hamper-for-every-occasion-diwali-gift-pack-for-family-friends-corporate-and-office-gifts-festive-celebration-combo-pack-200ml"
       ],
-      "category": "GIFT PACK",
+      "category": "OTHER",
       "name": "DRY FRUITS 200G",
       "norm": "DRYFRUITS200G",
       "saps": [
@@ -2198,5 +2198,5 @@
   },
   "next_serial": 152,
   "prefix": "JID-",
-  "updated_at": "2026-07-11T07:11:47.229727+00:00"
+  "updated_at": "2026-07-12T09:49:19.665314+00:00"
 }
