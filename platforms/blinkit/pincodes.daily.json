@@ -7,8 +7,8 @@
 "pincodes": [
 "400001"
 ],
-"lat": 18.935871116666668,
-"lon": 72.83409186666667,
+"lat": 18.94206,
+"lon": 72.83544,
 "locality": "Mumbai GPO"
 },
 {
@@ -19,8 +19,8 @@
 "pincodes": [
 "400002"
 ],
-"lat": 18.95025,
-"lon": 72.8286111,
+"lat": 18.9600833,
+"lon": 72.8284722,
 "locality": "Kalbadevi H.O"
 },
 {
@@ -31,8 +31,8 @@
 "pincodes": [
 "400003"
 ],
-"lat": 18.96338875,
-"lon": 72.83081135,
+"lat": 18.96775,
+"lon": 72.8216944,
 "locality": "Mandvi S.O (Mumbai)"
 },
 {
@@ -43,9 +43,9 @@
 "pincodes": [
 "400004"
 ],
-"lat": 18.9565063,
-"lon": 72.82001129999999,
-"locality": "Girgaon S.O"
+"lat": 18.96301,
+"lon": 72.82304,
+"locality": "Charni Road S.O"
 },
 {
 "city": "Mumbai",
@@ -55,9 +55,9 @@
 "pincodes": [
 "400005"
 ],
-"lat": 18.910055219999997,
-"lon": 72.81086862,
-"locality": "Colaba SO"
+"lat": 18.9146667,
+"lon": 72.8179722,
+"locality": "Colaba Bazar SO"
 },
 {
 "city": "Mumbai",
@@ -79,8 +79,8 @@
 "pincodes": [
 "400007"
 ],
-"lat": 18.967287419999998,
-"lon": 72.81915957999999,
+"lat": 18.9988889,
+"lon": 72.8400833,
 "locality": "Grant Road S.O"
 },
 {
@@ -91,8 +91,8 @@
 "pincodes": [
 "400008"
 ],
-"lat": 18.968711120000002,
-"lon": 72.82667222,
+"lat": 18.9762778,
+"lon": 72.8337778,
 "locality": "Mumbai Central H.O"
 },
 {
@@ -103,8 +103,8 @@
 "pincodes": [
 "400009"
 ],
-"lat": 18.9695833,
-"lon": 72.8426759,
+"lat": 18.9941944,
+"lon": 72.8401944,
 "locality": "CHINCHBUNDER S.O"
 },
 {
@@ -115,9 +115,9 @@
 "pincodes": [
 "400010"
 ],
-"lat": 18.96992706,
-"lon": 72.8412154,
-"locality": "Mazgaon S.O"
+"lat": 18.9718056,
+"lon": 72.8406667,
+"locality": "Dockyard Road S.O"
 },
 {
 "city": "Mumbai",
@@ -127,8 +127,8 @@
 "pincodes": [
 "400011"
 ],
-"lat": 18.979641500000003,
-"lon": 72.82601738000001,
+"lat": 18.9881111,
+"lon": 72.8318889,
 "locality": "Jacob Circle S.O"
 },
 {
@@ -139,9 +139,9 @@
 "pincodes": [
 "400012"
 ],
-"lat": 18.999496042857142,
-"lon": 72.8390754,
-"locality": "Parel S.O"
+"lat": 19.0056667,
+"lon": 72.8395278,
+"locality": "BEST STaff Quarters S.O"
 },
 {
 "city": "Mumbai",
@@ -163,8 +163,8 @@
 "pincodes": [
 "400014"
 ],
-"lat": 19.01390103333333,
-"lon": 72.84701226666665,
+"lat": 19.0208333,
+"lon": 72.8491667,
 "locality": "Dadar H.O"
 },
 {
@@ -187,8 +187,8 @@
 "pincodes": [
 "400016"
 ],
-"lat": 19.03613576,
-"lon": 72.84312643999999,
+"lat": 19.0371944,
+"lon": 72.8398889,
 "locality": "Mahim H.O"
 },
 {
@@ -199,9 +199,9 @@
 "pincodes": [
 "400017"
 ],
-"lat": 19.04233335,
-"lon": 72.85173610000001,
-"locality": "Dharavi S.O"
+"lat": 19.0390556,
+"lon": 72.8500278,
+"locality": "Dharavi Road S.O"
 },
 {
 "city": "Mumbai",
@@ -211,8 +211,8 @@
 "pincodes": [
 "400018"
 ],
-"lat": 19.0098463,
-"lon": 72.8180706,
+"lat": 19.0160556,
+"lon": 72.8182222,
 "locality": "Worli S.O"
 },
 {
@@ -235,9 +235,9 @@
 "pincodes": [
 "400020"
 ],
-"lat": 18.937953699999998,
-"lon": 72.82742593333334,
-"locality": "Marine Lines S.O"
+"lat": 18.9451389,
+"lon": 72.8286389,
+"locality": "Central Building SO"
 },
 {
 "city": "Mumbai",
@@ -247,8 +247,8 @@
 "pincodes": [
 "400021"
 ],
-"lat": 18.93099073333333,
-"lon": 72.8285833,
+"lat": 18.9391666,
+"lon": 72.8375555,
 "locality": "Elephanta Caves Po BO"
 },
 {
@@ -271,9 +271,9 @@
 "pincodes": [
 "400025"
 ],
-"lat": 19.010513850000002,
-"lon": 72.82855555,
-"locality": "Prabhadevi S.O"
+"lat": 19.0105833,
+"lon": 72.8285278,
+"locality": "New Prabhadevi Road S.O"
 },
 {
 "city": "Mumbai",
@@ -283,9 +283,9 @@
 "pincodes": [
 "400026"
 ],
-"lat": 18.9726597,
-"lon": 72.814944425,
-"locality": "Cumballa Hill S.O"
+"lat": 18.9869722,
+"lon": 72.8421944,
+"locality": "Dr Deshmukh Marg S.O"
 },
 {
 "city": "Mumbai",
@@ -307,9 +307,9 @@
 "pincodes": [
 "400028"
 ],
-"lat": 19.020867,
-"lon": 72.83946233333333,
-"locality": "Bhawani Shankar S.O"
+"lat": 19.0255833,
+"lon": 72.8475833,
+"locality": "Bhawani Shankar Rd S.O"
 },
 {
 "city": "Mumbai",
@@ -319,8 +319,8 @@
 "pincodes": [
 "400029"
 ],
-"lat": 19.024430549999998,
-"lon": 72.845,
+"lat": 19.0811111,
+"lon": 72.8683056,
 "locality": "Santacruz P and T  Colony S.O"
 },
 {
@@ -331,9 +331,9 @@
 "pincodes": [
 "400030"
 ],
-"lat": 19.014506975,
-"lon": 72.817125,
-"locality": "Worli Colony S.O"
+"lat": 19.0178056,
+"lon": 72.8171944,
+"locality": "Century Mill S.O"
 },
 {
 "city": "Mumbai",
@@ -343,8 +343,8 @@
 "pincodes": [
 "400031"
 ],
-"lat": 19.0136684,
-"lon": 72.85462606666667,
+"lat": 19.0144444,
+"lon": 72.8528611,
 "locality": "Wadala S.O"
 },
 {
@@ -355,9 +355,9 @@
 "pincodes": [
 "400033"
 ],
-"lat": 18.97372172,
-"lon": 72.8374266,
-"locality": "Tank Road S.O"
+"lat": 18.9873611,
+"lon": 72.8466389,
+"locality": "Cotton Exchange S.O"
 },
 {
 "city": "Mumbai",
@@ -367,9 +367,9 @@
 "pincodes": [
 "400034"
 ],
-"lat": 18.9770526,
-"lon": 72.81711505,
-"locality": "Tulsiwadi S.O"
+"lat": 18.980883,
+"lon": 72.815119,
+"locality": "Haji Ali S.O"
 },
 {
 "city": "Mumbai",
@@ -415,8 +415,8 @@
 "pincodes": [
 "400051"
 ],
-"lat": 19.059149939999998,
-"lon": 72.84428502,
+"lat": 19.0572222,
+"lon": 72.8455556,
 "locality": "Bandra(East) S.O"
 },
 {
@@ -427,9 +427,9 @@
 "pincodes": [
 "400052"
 ],
-"lat": 19.068006,
-"lon": 72.8362429,
-"locality": "Khar Delivery S.O"
+"lat": 19.0654167,
+"lon": 72.8350833,
+"locality": "Khar Colony S.O"
 },
 {
 "city": "Mumbai",
@@ -439,9 +439,9 @@
 "pincodes": [
 "400053"
 ],
-"lat": 19.04581945,
-"lon": 72.8262361,
-"locality": "Azad Nagar S.O (Mumbai)"
+"lat": 18.96775,
+"lon": 72.8216944,
+"locality": "Andheri H.O"
 },
 {
 "city": "Mumbai",
@@ -451,9 +451,9 @@
 "pincodes": [
 "400054"
 ],
-"lat": 19.08744445,
-"lon": 72.83683335,
-"locality": "Santacruz(West) S.O"
+"lat": 19.0823611,
+"lon": 72.8340556,
+"locality": "Santacruz Central S.O"
 },
 {
 "city": "Mumbai",
@@ -463,9 +463,9 @@
 "pincodes": [
 "400055"
 ],
-"lat": 19.081361100000002,
-"lon": 72.84866665,
-"locality": "Santacruz(East) S.O"
+"lat": 19.0808611,
+"lon": 72.8426944,
+"locality": "Vakola S.O"
 },
 {
 "city": "Mumbai",
@@ -475,8 +475,8 @@
 "pincodes": [
 "400056"
 ],
-"lat": 19.10334725,
-"lon": 72.83943055,
+"lat": 19.0988889,
+"lon": 72.8400833,
 "locality": "Vileparle(West) S.O"
 },
 {
@@ -487,9 +487,9 @@
 "pincodes": [
 "400057"
 ],
-"lat": 19.102388899999998,
-"lon": 72.8485926,
-"locality": "Vileeparle (East) S.O"
+"lat": 19.0986667,
+"lon": 72.8471667,
+"locality": "Hanuman Road S.O"
 },
 {
 "city": "Mumbai",
@@ -499,8 +499,8 @@
 "pincodes": [
 "400058"
 ],
-"lat": 19.12358335,
-"lon": 72.8394167,
+"lat": 19.11975,
+"lon": 72.8452778,
 "locality": "Andheri Railway Station S.O"
 },
 {
@@ -511,9 +511,9 @@
 "pincodes": [
 "400059"
 ],
-"lat": 19.114222233333333,
-"lon": 72.87970370000001,
-"locality": "J.B. Nagar S.O"
+"lat": 19.1103333,
+"lon": 72.8738889,
+"locality": "Marol Naka S.O"
 },
 {
 "city": "Mumbai",
@@ -547,8 +547,8 @@
 "pincodes": [
 "400063"
 ],
-"lat": 19.158916650000002,
-"lon": 72.85145835,
+"lat": 19.1543333,
+"lon": 72.8515,
 "locality": "Goregaon East SO"
 },
 {
@@ -559,9 +559,9 @@
 "pincodes": [
 "400064"
 ],
-"lat": 19.187138875000002,
-"lon": 72.8449236,
-"locality": "Malad West Dely SO"
+"lat": 19.1862222,
+"lon": 72.8460833,
+"locality": "Liberty Garden SO"
 },
 {
 "city": "Mumbai",
@@ -571,8 +571,8 @@
 "pincodes": [
 "400065"
 ],
-"lat": 19.157870366666668,
-"lon": 72.87057406666666,
+"lat": 19.14425,
+"lon": 72.856,
 "locality": "Aareymilk Colony SO"
 },
 {
@@ -583,9 +583,9 @@
 "pincodes": [
 "400066"
 ],
-"lat": 19.230976024999997,
-"lon": 72.860007475,
-"locality": "Borivali East SO"
+"lat": 19.2212955,
+"lon": 72.8562743,
+"locality": "Daulat Nagar SO Mumbai"
 },
 {
 "city": "Mumbai",
@@ -595,9 +595,9 @@
 "pincodes": [
 "400067"
 ],
-"lat": 19.2163995,
-"lon": 72.83837893333333,
-"locality": "Kandivali West SO"
+"lat": 19.204004,
+"lon": 72.849998,
+"locality": "Charkop SO"
 },
 {
 "city": "Mumbai",
@@ -607,9 +607,9 @@
 "pincodes": [
 "400068"
 ],
-"lat": 19.2480556,
-"lon": 72.86056945,
-"locality": "Dahisar SO"
+"lat": 19.2470556,
+"lon": 72.8623333,
+"locality": "Dahisar RS SO"
 },
 {
 "city": "Mumbai",
@@ -619,9 +619,9 @@
 "pincodes": [
 "400069"
 ],
-"lat": 19.11970835,
-"lon": 72.84970835,
-"locality": "Andheri East S.O"
+"lat": 19.1167778,
+"lon": 72.8481389,
+"locality": "Nagardas Road S.O"
 },
 {
 "city": "Mumbai",
@@ -631,9 +631,9 @@
 "pincodes": [
 "400070"
 ],
-"lat": 19.072980666666666,
-"lon": 72.879302,
-"locality": "Kurla West SO"
+"lat": 19.068181,
+"lon": 72.877839,
+"locality": "Kurla North SO"
 },
 {
 "city": "Mumbai",
@@ -655,8 +655,8 @@
 "pincodes": [
 "400072"
 ],
-"lat": 19.111024,
-"lon": 72.89034050000001,
+"lat": 19.103481,
+"lon": 72.890547,
 "locality": "Sakinaka SO"
 },
 {
@@ -667,8 +667,8 @@
 "pincodes": [
 "400074"
 ],
-"lat": 19.043861099999997,
-"lon": 72.8948611,
+"lat": 19.0478333,
+"lon": 72.8935,
 "locality": "FCI SO"
 },
 {
@@ -679,9 +679,9 @@
 "pincodes": [
 "400075"
 ],
-"lat": 19.081962966666666,
-"lon": 72.9168611,
-"locality": "Pant Nagar SO"
+"lat": 19.0745556,
+"lon": 72.9188333,
+"locality": "RANagar SO"
 },
 {
 "city": "Mumbai",
@@ -715,9 +715,9 @@
 "pincodes": [
 "400078"
 ],
-"lat": 19.14622222,
-"lon": 72.93459444,
-"locality": "Bhandup West SO"
+"lat": 19.1325278,
+"lon": 72.9246667,
+"locality": "Usha Nagar SO"
 },
 {
 "city": "Mumbai",
@@ -727,9 +727,9 @@
 "pincodes": [
 "400079"
 ],
-"lat": 19.1057361,
-"lon": 72.9232917,
-"locality": "Vikhroli SO"
+"lat": 19.1023333,
+"lon": 72.9180278,
+"locality": "Psm Colony SO"
 },
 {
 "city": "Mumbai",
@@ -739,9 +739,9 @@
 "pincodes": [
 "400080"
 ],
-"lat": 19.162844439999997,
-"lon": 72.94812778,
-"locality": "Mulund West SO"
+"lat": 19.1143888,
+"lon": 72.9331111,
+"locality": "Nehru Road SO Mumbai"
 },
 {
 "city": "Mumbai",
@@ -751,8 +751,8 @@
 "pincodes": [
 "400081"
 ],
-"lat": 19.169097200000003,
-"lon": 72.9634028,
+"lat": 19.1711111,
+"lon": 72.96,
 "locality": "Mulund East SO"
 },
 {
@@ -763,8 +763,8 @@
 "pincodes": [
 "400082"
 ],
-"lat": 19.1709167,
-"lon": 72.93305555,
+"lat": 19.1664167,
+"lon": 72.9274722,
 "locality": "Bhandup Complex SO"
 },
 {
@@ -775,8 +775,8 @@
 "pincodes": [
 "400083"
 ],
-"lat": 19.1165139,
-"lon": 72.93725,
+"lat": 19.1186389,
+"lon": 72.9347222,
 "locality": "Tagore Nagar SO"
 },
 {
@@ -811,8 +811,8 @@
 "pincodes": [
 "400086"
 ],
-"lat": 19.086129600000003,
-"lon": 72.90542593333333,
+"lat": 19.0864444,
+"lon": 72.8945278,
 "locality": "Ghatkopar West SO"
 },
 {
@@ -835,9 +835,9 @@
 "pincodes": [
 "400088"
 ],
-"lat": 19.04419443333333,
-"lon": 72.9271111,
-"locality": "TFDonar SO"
+"lat": 19.0530833,
+"lon": 72.91525,
+"locality": "Govandi SO"
 },
 {
 "city": "Mumbai",
@@ -895,8 +895,8 @@
 "pincodes": [
 "400095"
 ],
-"lat": 19.1922361,
-"lon": 72.80902775,
+"lat": 19.1895833,
+"lon": 72.8196944,
 "locality": "Kharodi SO"
 },
 {
@@ -919,9 +919,9 @@
 "pincodes": [
 "400097"
 ],
-"lat": 19.18212815,
-"lon": 72.8508175,
-"locality": "Malad East SO"
+"lat": 19.1799722,
+"lon": 72.8499167,
+"locality": "Rani Sati Marg SO"
 },
 {
 "city": "Mumbai",
@@ -943,9 +943,9 @@
 "pincodes": [
 "400099"
 ],
-"lat": 19.05453833333333,
-"lon": 72.84985656666667,
-"locality": "Sahar P and T Colony S.O"
+"lat": 19.095,
+"lon": 72.8658333,
+"locality": "International Airport S.O"
 },
 {
 "city": "Mumbai",
@@ -967,8 +967,8 @@
 "pincodes": [
 "400102"
 ],
-"lat": 19.13930555,
-"lon": 72.85256945,
+"lat": 19.1316667,
+"lon": 72.8478056,
 "locality": "Jogeshwari West SO"
 },
 {
@@ -991,8 +991,8 @@
 "pincodes": [
 "400104"
 ],
-"lat": 19.181804725,
-"lon": 72.836639075,
+"lat": 19.1591667,
+"lon": 72.8403333,
 "locality": "Motilal Nagar SO"
 },
 {
@@ -1003,9 +1003,9 @@
 "pincodes": [
 "110001"
 ],
-"lat": 28.6061198173913,
-"lon": 77.2209293173913,
-"locality": "New Delhi GPO"
+"lat": 28.6433611,
+"lon": 77.2009167,
+"locality": "Sansad Marg HO"
 },
 {
 "city": "Delhi",
@@ -1015,8 +1015,8 @@
 "pincodes": [
 "110002"
 ],
-"lat": 28.63519389,
-"lon": 77.23739055000001,
+"lat": 28.6339722,
+"lon": 77.2175556,
 "locality": "Indraprastha HO"
 },
 {
@@ -1027,8 +1027,8 @@
 "pincodes": [
 "110003"
 ],
-"lat": 28.595196070000004,
-"lon": 77.22838761,
+"lat": 28.6317778,
+"lon": 77.24025,
 "locality": "Lodi Road HO"
 },
 {
@@ -1051,8 +1051,8 @@
 "pincodes": [
 "110006"
 ],
-"lat": 28.652007875,
-"lon": 77.2241922875,
+"lat": 28.6594167,
+"lon": 77.2130556,
 "locality": "Delhi GPO"
 },
 {
@@ -1063,9 +1063,9 @@
 "pincodes": [
 "110007"
 ],
-"lat": 28.67359318181818,
-"lon": 77.20531777272727,
-"locality": "Malka Ganj SO"
+"lat": 28.667454,
+"lon": 77.191701,
+"locality": "Padam Nagar SO North Delhi"
 },
 {
 "city": "Delhi",
@@ -1075,9 +1075,9 @@
 "pincodes": [
 "110008"
 ],
-"lat": 28.64263888,
-"lon": 77.1754,
-"locality": "Patel Nagar SO Central Delhi"
+"lat": 28.6453611,
+"lon": 77.1729722,
+"locality": "Patel Nagar South SO"
 },
 {
 "city": "Delhi",
@@ -1087,9 +1087,9 @@
 "pincodes": [
 "110009"
 ],
-"lat": 28.703854049999997,
-"lon": 77.19931246250002,
-"locality": "GTB Nagar SO"
+"lat": 28.6955833,
+"lon": 77.1901111,
+"locality": "DrMukerjee Nagar SO"
 },
 {
 "city": "Delhi",
@@ -1099,9 +1099,9 @@
 "pincodes": [
 "110010"
 ],
-"lat": 28.5957222,
-"lon": 77.1364444,
-"locality": "Delhi Cantt SO"
+"lat": 28.6147778,
+"lon": 77.1785833,
+"locality": "Aps Colony BO"
 },
 {
 "city": "Delhi",
@@ -1111,9 +1111,9 @@
 "pincodes": [
 "110011"
 ],
-"lat": 28.610986099999998,
-"lon": 77.21380554999999,
-"locality": "Nirman Bhawan SO"
+"lat": 28.6111111,
+"lon": 77.21275,
+"locality": "Udyog Bhawan SO"
 },
 {
 "city": "Delhi",
@@ -1123,9 +1123,9 @@
 "pincodes": [
 "110012"
 ],
-"lat": 28.636361100000002,
-"lon": 77.16133333333333,
-"locality": "IARI SO"
+"lat": 28.6368611,
+"lon": 77.1696111,
+"locality": "Inderpuri SO"
 },
 {
 "city": "Delhi",
@@ -1135,9 +1135,9 @@
 "pincodes": [
 "110013"
 ],
-"lat": 28.589486100000002,
-"lon": 77.2464583,
-"locality": "Hazrat Nizamuddin SO"
+"lat": 28.5912222,
+"lon": 77.2423333,
+"locality": "Dargah Sharif SO"
 },
 {
 "city": "Delhi",
@@ -1147,9 +1147,9 @@
 "pincodes": [
 "110014"
 ],
-"lat": 28.579201374999997,
-"lon": 77.25380555,
-"locality": "Jungpura SO"
+"lat": 28.5838611,
+"lon": 77.2431944,
+"locality": "Jeevan Nagar BO"
 },
 {
 "city": "Delhi",
@@ -1159,8 +1159,8 @@
 "pincodes": [
 "110015"
 ],
-"lat": 28.65779928571428,
-"lon": 77.13125761428572,
+"lat": 28.6659722,
+"lon": 77.1647778,
 "locality": "Ramesh Nagar H.O"
 },
 {
@@ -1171,9 +1171,9 @@
 "pincodes": [
 "110016"
 ],
-"lat": 28.5457037,
-"lon": 77.19965741666665,
-"locality": "Hauz Khas SO"
+"lat": 28.5558611,
+"lon": 77.2021389,
+"locality": "Technology Bhawan SO"
 },
 {
 "city": "Delhi",
@@ -1183,9 +1183,9 @@
 "pincodes": [
 "110017"
 ],
-"lat": 28.5319738125,
-"lon": 77.2146171375,
-"locality": "Malviya Nagar SO South Delhi"
+"lat": 28.54,
+"lon": 77.2000833,
+"locality": "Distt Court Complex Saket SO"
 },
 {
 "city": "Delhi",
@@ -1195,9 +1195,9 @@
 "pincodes": [
 "110018"
 ],
-"lat": 28.330520191666665,
-"lon": 76.27940720833332,
-"locality": "Tilak Nagar S.O (West Delhi)"
+"lat": 28.6498611,
+"lon": 77.1306667,
+"locality": "Chaukhandi B.O"
 },
 {
 "city": "Delhi",
@@ -1207,8 +1207,8 @@
 "pincodes": [
 "110019"
 ],
-"lat": 28.5397292,
-"lon": 77.27038892499999,
+"lat": 28.5403056,
+"lon": 77.2486667,
 "locality": "Kalkaji HO"
 },
 {
@@ -1219,9 +1219,9 @@
 "pincodes": [
 "110021"
 ],
-"lat": 28.592486100000002,
-"lon": 77.166375,
-"locality": "Chanakya Puri SO"
+"lat": 28.6040833,
+"lon": 77.18725,
+"locality": "South Delhi Campus SO"
 },
 {
 "city": "Delhi",
@@ -1231,9 +1231,9 @@
 "pincodes": [
 "110022"
 ],
-"lat": 28.5636388875,
-"lon": 77.1724930625,
-"locality": "R K Puram Sect5 SO"
+"lat": 28.5722222,
+"lon": 77.1732778,
+"locality": "R K Puram Sect7 SO"
 },
 {
 "city": "Delhi",
@@ -1243,9 +1243,9 @@
 "pincodes": [
 "110024"
 ],
-"lat": 28.563847250000002,
-"lon": 77.2340217,
-"locality": "Lajpat Nagar South Delhi SO"
+"lat": 28.58,
+"lon": 77.23,
+"locality": "Amar Colony SO"
 },
 {
 "city": "Delhi",
@@ -1255,9 +1255,9 @@
 "pincodes": [
 "110025"
 ],
-"lat": 28.557827780000004,
-"lon": 77.27961668,
-"locality": "New Friends Colony SO"
+"lat": 28.5618611,
+"lon": 77.26825,
+"locality": "Zakir Nagar SO"
 },
 {
 "city": "Delhi",
@@ -1267,9 +1267,9 @@
 "pincodes": [
 "110026"
 ],
-"lat": 28.658085775,
-"lon": 77.13170975,
-"locality": "Punjabi Bagh S.O"
+"lat": 28.6713889,
+"lon": 77.1538333,
+"locality": "Punjabi Bagh Sec   III S.O"
 },
 {
 "city": "Delhi",
@@ -1279,9 +1279,9 @@
 "pincodes": [
 "110027"
 ],
-"lat": 28.64253728333333,
-"lon": 77.11687058333332,
-"locality": "Tagore Garden S.O"
+"lat": 28.6455278,
+"lon": 77.1274722,
+"locality": "Subhash Nagar S.O (West Delhi)"
 },
 {
 "city": "Delhi",
@@ -1291,8 +1291,8 @@
 "pincodes": [
 "110028"
 ],
-"lat": 28.6313205,
-"lon": 77.13688435,
+"lat": 28.632141,
+"lon": 77.138852,
 "locality": "Naraina Industrial Estate H.O"
 },
 {
@@ -1303,8 +1303,8 @@
 "pincodes": [
 "110029"
 ],
-"lat": 28.588833366666666,
-"lon": 77.17971296666666,
+"lat": 28.6330278,
+"lon": 77.1366389,
 "locality": "Safdarjung Enclave SO"
 },
 {
@@ -1315,9 +1315,9 @@
 "pincodes": [
 "110030"
 ],
-"lat": 28.519749985714288,
-"lon": 77.18456348571428,
-"locality": "Mehrauli SO"
+"lat": 28.5303611,
+"lon": 77.1889722,
+"locality": "Gadaipur BO"
 },
 {
 "city": "Delhi",
@@ -1327,8 +1327,8 @@
 "pincodes": [
 "110031"
 ],
-"lat": 28.669238085714287,
-"lon": 77.27432935714286,
+"lat": 28.6646111,
+"lon": 77.2593611,
 "locality": "Gandhi Nagar SO East Delhi"
 },
 {
@@ -1339,8 +1339,8 @@
 "pincodes": [
 "110032"
 ],
-"lat": 28.672822638461533,
-"lon": 77.29726493846154,
+"lat": 28.6715278,
+"lon": 77.2831111,
 "locality": "Shahdara SO"
 },
 {
@@ -1351,9 +1351,9 @@
 "pincodes": [
 "110033"
 ],
-"lat": 28.723717583333336,
-"lon": 77.17099998333333,
-"locality": "NSMandi SO"
+"lat": 28.7126944,
+"lon": 77.1733333,
+"locality": "Bhalaswa BO"
 },
 {
 "city": "Delhi",
@@ -1363,9 +1363,9 @@
 "pincodes": [
 "110034"
 ],
-"lat": 28.695146842857138,
-"lon": 77.13748411428571,
-"locality": "Saraswati Vihar SO"
+"lat": 28.6819167,
+"lon": 77.1366667,
+"locality": "Rani Bagh SO"
 },
 {
 "city": "Delhi",
@@ -1375,9 +1375,9 @@
 "pincodes": [
 "110035"
 ],
-"lat": 28.680592414285716,
-"lon": 77.16264871428572,
-"locality": "Keshavpuram SO"
+"lat": 28.6694167,
+"lon": 77.1763889,
+"locality": "Rampura BO"
 },
 {
 "city": "Delhi",
@@ -1387,8 +1387,8 @@
 "pincodes": [
 "110036"
 ],
-"lat": 28.79801538888889,
-"lon": 77.11978394444445,
+"lat": 28.7978055,
+"lon": 77.13,
 "locality": "Kadipur BO"
 },
 {
@@ -1399,9 +1399,9 @@
 "pincodes": [
 "110037"
 ],
-"lat": 28.54615,
-"lon": 77.10663334,
-"locality": "Gurgaon Road SO"
+"lat": 28.5745556,
+"lon": 77.0975556,
+"locality": "Mahipalpur BO"
 },
 {
 "city": "Delhi",
@@ -1411,9 +1411,9 @@
 "pincodes": [
 "110038"
 ],
-"lat": 28.51969445,
-"lon": 77.1199028,
-"locality": "A F Rajokari SO"
+"lat": 28.5193889,
+"lon": 77.1498056,
+"locality": "Rajokari BO"
 },
 {
 "city": "Delhi",
@@ -1424,7 +1424,7 @@
 "110039"
 ],
 "lat": 28.7996944,
-"lon": 77.03805550909091,
+"lon": 77.0380556,
 "locality": "Pooth Khurd BO"
 },
 {
@@ -1435,8 +1435,8 @@
 "pincodes": [
 "110040"
 ],
-"lat": 28.849454825000002,
-"lon": 77.087048575,
+"lat": 28.84,
+"lon": 77.08,
 "locality": "Bankner BO"
 },
 {
@@ -1447,9 +1447,9 @@
 "pincodes": [
 "110041"
 ],
-"lat": 28.672674125,
-"lon": 77.03191626666667,
-"locality": "Bakkarwala B.O"
+"lat": 28.6829722,
+"lon": 77.0718056,
+"locality": "Mundka SO"
 },
 {
 "city": "Delhi",
@@ -1459,8 +1459,8 @@
 "pincodes": [
 "110042"
 ],
-"lat": 28.741790614285716,
-"lon": 77.13669655714286,
+"lat": 28.72775,
+"lon": 77.1636111,
 "locality": "Pehlad Pur BO"
 },
 {
@@ -1471,9 +1471,9 @@
 "pincodes": [
 "110044"
 ],
-"lat": 28.5027,
-"lon": 77.3084,
-"locality": "Badarpur"
+"lat": 28.5381667,
+"lon": 77.2150278,
+"locality": "Pul Pahladpur BO"
 },
 {
 "city": "Delhi",
@@ -1484,7 +1484,7 @@
 "110046"
 ],
 "lat": 28.6110556,
-"lon": 77.10586115,
+"lon": 77.1088056,
 "locality": "Nangal Raya S.O"
 },
 {
@@ -1495,9 +1495,9 @@
 "pincodes": [
 "110047"
 ],
-"lat": 28.464888875,
-"lon": 77.13147219999999,
-"locality": "Arjungarh SO"
+"lat": 28.4797778,
+"lon": 77.1179444,
+"locality": "Aya Nagar BO"
 },
 {
 "city": "Delhi",
@@ -1507,9 +1507,9 @@
 "pincodes": [
 "110048"
 ],
-"lat": 28.54176853333333,
-"lon": 77.2388704,
-"locality": "Greater Kailash SO"
+"lat": 28.5471667,
+"lon": 77.2438056,
+"locality": "Kailash Colony SO"
 },
 {
 "city": "Delhi",
@@ -1519,9 +1519,9 @@
 "pincodes": [
 "110049"
 ],
-"lat": 28.559500216666667,
-"lon": 77.21791113333333,
-"locality": "Andrewsganj SO"
+"lat": 28.566209,
+"lon": 77.217965,
+"locality": "Sahpurjat BO"
 },
 {
 "city": "Delhi",
@@ -1531,8 +1531,8 @@
 "pincodes": [
 "110051"
 ],
-"lat": 28.660645825,
-"lon": 77.29134027500001,
+"lat": 28.65925,
+"lon": 77.2742222,
 "locality": "Krishna Nagar HO"
 },
 {
@@ -1543,8 +1543,8 @@
 "pincodes": [
 "110052"
 ],
-"lat": 28.68178286,
-"lon": 77.1776389,
+"lat": 28.670081,
+"lon": 77.18125,
 "locality": "Ashok Vihar HO"
 },
 {
@@ -1555,9 +1555,9 @@
 "pincodes": [
 "110053"
 ],
-"lat": 28.65435801111111,
-"lon": 77.25887037777778,
-"locality": "Seelampur SO"
+"lat": 28.6870833,
+"lon": 77.2591111,
+"locality": "Garhi Mandu BO"
 },
 {
 "city": "Delhi",
@@ -1567,9 +1567,9 @@
 "pincodes": [
 "110054"
 ],
-"lat": 28.687274659999996,
-"lon": 77.22421464,
-"locality": "Civil Lines SO North Delhi"
+"lat": 28.667094,
+"lon": 77.216534,
+"locality": "Patrachar Vidyalay SO"
 },
 {
 "city": "Delhi",
@@ -1579,9 +1579,9 @@
 "pincodes": [
 "110055"
 ],
-"lat": 28.637909999999998,
-"lon": 77.19938336,
-"locality": "Swami Ram Tirth Nagar SO"
+"lat": 28.6448889,
+"lon": 77.2020556,
+"locality": "Pahar Ganj SO"
 },
 {
 "city": "Delhi",
@@ -1603,8 +1603,8 @@
 "pincodes": [
 "110057"
 ],
-"lat": 28.56294445,
-"lon": 77.15758335,
+"lat": 28.568,
+"lon": 77.1594167,
 "locality": "Vasant Vihar1 SO"
 },
 {
@@ -1615,9 +1615,9 @@
 "pincodes": [
 "110058"
 ],
-"lat": 28.62873566,
-"lon": 77.09654814000001,
-"locality": "Janakpuri B 1 S.O"
+"lat": 28.6498611,
+"lon": 77.1306667,
+"locality": "D.E.S.U. Colony S.O"
 },
 {
 "city": "Delhi",
@@ -1627,9 +1627,9 @@
 "pincodes": [
 "110059"
 ],
-"lat": 28.623014900000005,
-"lon": 77.17212035714286,
-"locality": "D. K. Mohan Garden S.O"
+"lat": 28.616933,
+"lon": 77.071833,
+"locality": "Matiala B.O"
 },
 {
 "city": "Delhi",
@@ -1651,9 +1651,9 @@
 "pincodes": [
 "110061"
 ],
-"lat": 28.53655555,
-"lon": 77.28469444999999,
-"locality": "Bijwasan SO"
+"lat": 28.54,
+"lon": 77.05,
+"locality": "Shahbad Mohammadpur BO"
 },
 {
 "city": "Delhi",
@@ -1663,9 +1663,9 @@
 "pincodes": [
 "110062"
 ],
-"lat": 36.63808796666667,
-"lon": 69.11858796666667,
-"locality": "Pushpa Bhawan SO"
+"lat": 28.5276111,
+"lon": 77.2328056,
+"locality": "Dr Ambedkar Nagar SO South Delhi"
 },
 {
 "city": "Delhi",
@@ -1675,9 +1675,9 @@
 "pincodes": [
 "110063"
 ],
-"lat": 28.66855906,
-"lon": 77.11112069999999,
-"locality": "Paschim Vihar S.O"
+"lat": 28.6667222,
+"lon": 77.1190556,
+"locality": "Jawala Heri B.O"
 },
 {
 "city": "Delhi",
@@ -1687,9 +1687,9 @@
 "pincodes": [
 "110065"
 ],
-"lat": 28.56102578,
-"lon": 77.25219842,
-"locality": "Sriniwaspuri SO"
+"lat": 28.569126,
+"lon": 77.253601,
+"locality": "East Of Kailash PhaseI SO"
 },
 {
 "city": "Delhi",
@@ -1699,9 +1699,9 @@
 "pincodes": [
 "110066"
 ],
-"lat": 28.5625556,
-"lon": 77.1781389,
-"locality": "R K Puram Main SO"
+"lat": 28.5653056,
+"lon": 77.17975,
+"locality": "R K Puram West SO"
 },
 {
 "city": "Delhi",
@@ -1711,8 +1711,8 @@
 "pincodes": [
 "110067"
 ],
-"lat": 28.548398133333336,
-"lon": 77.173,
+"lat": 28.5550833,
+"lon": 77.1762222,
 "locality": "JNU SO"
 },
 {
@@ -1724,8 +1724,8 @@
 "110068"
 ],
 "lat": 28.5012222,
-"lon": 77.20030555,
-"locality": "Ignou SO"
+"lon": 77.2003055,
+"locality": "Maidan Garhi BO"
 },
 {
 "city": "Delhi",
@@ -1747,9 +1747,9 @@
 "pincodes": [
 "110070"
 ],
-"lat": 28.520824066666666,
-"lon": 77.15779629999999,
-"locality": "Vasant Kunj SO"
+"lat": 28.5285,
+"lon": 77.1578889,
+"locality": "Masood Pur BO"
 },
 {
 "city": "Delhi",
@@ -1759,9 +1759,9 @@
 "pincodes": [
 "110071"
 ],
-"lat": 28.5709037,
-"lon": 77.18524472499999,
-"locality": "Chhawla S.O"
+"lat": 28.6330278,
+"lon": 77.1366389,
+"locality": "Badusarai B.O"
 },
 {
 "city": "Delhi",
@@ -1771,9 +1771,9 @@
 "pincodes": [
 "110072"
 ],
-"lat": 28.644252350000002,
-"lon": 77.45851865,
-"locality": "CRPF Jharoda Kalan S.O"
+"lat": 28.652588,
+"lon": 76.956454,
+"locality": "Jharoda Kalan B.O"
 },
 {
 "city": "Delhi",
@@ -1783,9 +1783,9 @@
 "pincodes": [
 "110074"
 ],
-"lat": 28.501062066666666,
-"lon": 77.18678539999999,
-"locality": "BHATI VILLAGE BO"
+"lat": 28.5073056,
+"lon": 77.1845556,
+"locality": "Fatehpur Beri S.O"
 },
 {
 "city": "Delhi",
@@ -1795,8 +1795,8 @@
 "pincodes": [
 "110075"
 ],
-"lat": 28.58859436666667,
-"lon": 77.05011359999999,
+"lat": 28.580691,
+"lon": 77.059203,
 "locality": "Amberhai B.O"
 },
 {
@@ -1807,9 +1807,9 @@
 "pincodes": [
 "110076"
 ],
-"lat": 28.528277766666665,
-"lon": 77.30038890000002,
-"locality": "Sarita Vihar SO"
+"lat": 28.5348333,
+"lon": 77.2911667,
+"locality": "Madanpur Khadar BO"
 },
 {
 "city": "Delhi",
@@ -1819,8 +1819,8 @@
 "pincodes": [
 "110077"
 ],
-"lat": 28.568251119999996,
-"lon": 77.06289424,
+"lat": 28.587944,
+"lon": 77.072276,
 "locality": "Dhulsiras B.O"
 },
 {
@@ -1831,8 +1831,8 @@
 "pincodes": [
 "110078"
 ],
-"lat": 28.613895,
-"lon": 77.06544219999999,
+"lat": 28.6330278,
+"lon": 77.1366389,
 "locality": "Kakrola B.O"
 },
 {
@@ -1843,8 +1843,8 @@
 "pincodes": [
 "110081"
 ],
-"lat": 28.734916558333335,
-"lon": 77.00555546666668,
+"lat": 28.7349167,
+"lon": 77.0055556,
 "locality": "Jaunti BO"
 },
 {
@@ -1855,9 +1855,9 @@
 "pincodes": [
 "110083"
 ],
-"lat": 28.69819445,
-"lon": 77.08843055,
-"locality": "Mangolpuri N Block SO"
+"lat": 28.6938611,
+"lon": 77.0936111,
+"locality": "Mangolpuri A Block SO"
 },
 {
 "city": "Delhi",
@@ -1867,8 +1867,8 @@
 "pincodes": [
 "110084"
 ],
-"lat": 35.669377142857144,
-"lon": 70.28283785714285,
+"lat": 28.722239,
+"lon": 77.221819,
 "locality": "Jagatpur BO"
 },
 {
@@ -1879,9 +1879,9 @@
 "pincodes": [
 "110085"
 ],
-"lat": 28.7124186375,
-"lon": 77.133018675,
-"locality": "Rohini Sector7 SO"
+"lat": 28.6933611,
+"lon": 77.1713889,
+"locality": "Rithala BO"
 },
 {
 "city": "Delhi",
@@ -1891,8 +1891,8 @@
 "pincodes": [
 "110086"
 ],
-"lat": 28.699312344444447,
-"lon": 77.07640737777778,
+"lat": 28.6963611,
+"lon": 77.0764167,
 "locality": "Pooth Kalan BO"
 },
 {
@@ -1903,9 +1903,9 @@
 "pincodes": [
 "110087"
 ],
-"lat": 28.675387233333336,
-"lon": 77.08653523333334,
-"locality": "Sunder Vihar S.O"
+"lat": 28.6663889,
+"lon": 77.0881667,
+"locality": "Peeragarhi B.O"
 },
 {
 "city": "Delhi",
@@ -1915,8 +1915,8 @@
 "pincodes": [
 "110088"
 ],
-"lat": 28.703796300000004,
-"lon": 77.16324073333334,
+"lat": 28.6933611,
+"lon": 77.1713889,
 "locality": "Shalamar BO"
 },
 {
@@ -1927,7 +1927,7 @@
 "pincodes": [
 "110089"
 ],
-"lat": 28.73480555,
+"lat": 28.7348055,
 "lon": 77.1325,
 "locality": "Rohini Sector 15 SO"
 },
@@ -1939,9 +1939,9 @@
 "pincodes": [
 "110090"
 ],
-"lat": 28.70345077142857,
-"lon": 77.2887649,
-"locality": "Karawal Nagar SO"
+"lat": 28.7262778,
+"lon": 77.2476944,
+"locality": "Khajoori Khas BO"
 },
 {
 "city": "Delhi",
@@ -1951,9 +1951,9 @@
 "pincodes": [
 "110091"
 ],
-"lat": 28.62391665714286,
-"lon": 77.30280555714286,
-"locality": "Patparganj SO"
+"lat": 28.6143611,
+"lon": 77.2900278,
+"locality": "Chilla BO"
 },
 {
 "city": "Delhi",
@@ -1963,9 +1963,9 @@
 "pincodes": [
 "110092"
 ],
-"lat": 28.657012344444443,
-"lon": 77.29079936666666,
-"locality": "Laxmi Nagar SO East Delhi"
+"lat": 28.627,
+"lon": 77.2063333,
+"locality": "IP Extension SO"
 },
 {
 "city": "Delhi",
@@ -1975,9 +1975,9 @@
 "pincodes": [
 "110093"
 ],
-"lat": 28.689928950000006,
-"lon": 77.30706646666667,
-"locality": "Nand Nagri C SO"
+"lat": 28.6739166,
+"lon": 77.2943611,
+"locality": "Mandoli Saboli BO"
 },
 {
 "city": "Delhi",
@@ -1987,9 +1987,9 @@
 "pincodes": [
 "110094"
 ],
-"lat": 28.696148133333335,
-"lon": 77.29725,
-"locality": "Gokal Puri SO"
+"lat": 28.7039444,
+"lon": 77.2833056,
+"locality": "Dayalpur BO"
 },
 {
 "city": "Delhi",
@@ -1999,8 +1999,8 @@
 "pincodes": [
 "110095"
 ],
-"lat": 28.680317512499997,
-"lon": 77.317744425,
+"lat": 28.6721111,
+"lon": 77.3069722,
 "locality": "Jhilmil HO"
 },
 {
@@ -2011,9 +2011,9 @@
 "pincodes": [
 "110096"
 ],
-"lat": 28.6162011,
-"lon": 77.32758296666667,
-"locality": "Vasundhra Enclave SO"
+"lat": 28.6221944,
+"lon": 77.3167222,
+"locality": "Ghazipur BO"
 },
 {
 "city": "Delhi",
@@ -2059,8 +2059,8 @@
 "pincodes": [
 "560001"
 ],
-"lat": 12.903898270000003,
-"lon": 77.63319888,
+"lat": 12.9684167,
+"lon": 77.5691944,
 "locality": "Bengaluru G.P.O."
 },
 {
@@ -2071,8 +2071,8 @@
 "pincodes": [
 "560004"
 ],
-"lat": 12.948536025,
-"lon": 77.573275025,
+"lat": 12.9537529,
+"lon": 77.5722102,
 "locality": "Basavanagudi H.O"
 },
 {
@@ -2095,9 +2095,9 @@
 "pincodes": [
 "560006"
 ],
-"lat": 13.0159722,
-"lon": 77.7877639,
-"locality": "J C Nagar S.O"
+"lat": 13.0168333,
+"lon": 77.5832778,
+"locality": "Training Command IAF S.O"
 },
 {
 "city": "Bengaluru",
@@ -2107,9 +2107,9 @@
 "pincodes": [
 "560009"
 ],
-"lat": 12.973203,
-"lon": 77.5818115,
-"locality": "K. G. Road S.O"
+"lat": 12.973544,
+"lon": 77.580324,
+"locality": "Bengaluru Dist Offices Bldg S.O"
 },
 {
 "city": "Bengaluru",
@@ -2119,8 +2119,8 @@
 "pincodes": [
 "560010"
 ],
-"lat": 12.984637666666666,
-"lon": 77.554976,
+"lat": 12.983037,
+"lon": 77.560979,
 "locality": "Rajajinagar H.O"
 },
 {
@@ -2131,8 +2131,8 @@
 "pincodes": [
 "560011"
 ],
-"lat": 12.93360415,
-"lon": 77.5845644,
+"lat": 12.9367048,
+"lon": 77.585589,
 "locality": "Jayangar III Block S.O"
 },
 {
@@ -2155,8 +2155,8 @@
 "pincodes": [
 "560013"
 ],
-"lat": 13.0576605,
-"lon": 77.54969249999999,
+"lat": 13.051064,
+"lon": 77.552897,
 "locality": "Jalahalli H.O"
 },
 {
@@ -2179,8 +2179,8 @@
 "pincodes": [
 "560018"
 ],
-"lat": 12.96048845,
-"lon": 77.56056025000001,
+"lat": 12.9561669,
+"lon": 77.5661055,
 "locality": "Chamrajpet S.O (Bengaluru)"
 },
 {
@@ -2203,8 +2203,8 @@
 "pincodes": [
 "560021"
 ],
-"lat": 13.0007905,
-"lon": 77.5593565,
+"lat": 12.995152,
+"lon": 77.563757,
 "locality": "Srirampuram S.O"
 },
 {
@@ -2215,8 +2215,8 @@
 "pincodes": [
 "560022"
 ],
-"lat": 13.0240125,
-"lon": 77.54863549999999,
+"lat": 13.020059,
+"lon": 77.556355,
 "locality": "Yeswanthpura S.O"
 },
 {
@@ -2239,9 +2239,9 @@
 "pincodes": [
 "560026"
 ],
-"lat": 12.948530633333334,
-"lon": 77.53520143333333,
-"locality": "Governmemnt Electric Factory S.O"
+"lat": 12.9544029,
+"lon": 77.5442816,
+"locality": "Deepanjalinagar S.O"
 },
 {
 "city": "Bengaluru",
@@ -2251,9 +2251,9 @@
 "pincodes": [
 "560027"
 ],
-"lat": 12.959349833333334,
-"lon": 77.59590303333333,
-"locality": "Wilson Garden S.O"
+"lat": 12.967679,
+"lon": 77.5922195,
+"locality": "Sampangiramnagar S.O"
 },
 {
 "city": "Bengaluru",
@@ -2263,8 +2263,8 @@
 "pincodes": [
 "560029"
 ],
-"lat": 12.9298436,
-"lon": 77.6047023,
+"lat": 12.9376382,
+"lon": 77.5991396,
 "locality": "Dharmaram College S.O"
 },
 {
@@ -2287,8 +2287,8 @@
 "pincodes": [
 "560032"
 ],
-"lat": 12.9952766,
-"lon": 77.61784365,
+"lat": 13.022581,
+"lon": 77.593104,
 "locality": "R T Nagar H.O"
 },
 {
@@ -2299,9 +2299,9 @@
 "pincodes": [
 "560034"
 ],
-"lat": 12.925270000000001,
-"lon": 77.632476625,
-"locality": "Koramangala S.O"
+"lat": 12.9296881,
+"lon": 77.6214984,
+"locality": "Agara B.O"
 },
 {
 "city": "Bengaluru",
@@ -2323,9 +2323,9 @@
 "pincodes": [
 "560036"
 ],
-"lat": 13.00795835,
-"lon": 77.6909861,
-"locality": "Krishnarajapuram S.O"
+"lat": 13.01075,
+"lon": 77.6859722,
+"locality": "Devasandra S.O"
 },
 {
 "city": "Bengaluru",
@@ -2335,9 +2335,9 @@
 "pincodes": [
 "560037"
 ],
-"lat": 12.80383224,
-"lon": 77.58180280000002,
-"locality": "Marathahalli Colony S.O"
+"lat": 12.9642778,
+"lon": 77.6824444,
+"locality": "Doddanekkundi B.O"
 },
 {
 "city": "Bengaluru",
@@ -2359,9 +2359,9 @@
 "pincodes": [
 "560040"
 ],
-"lat": 12.967452666666667,
-"lon": 77.53705833333333,
-"locality": "Vijayanagar S.O (Bengaluru)"
+"lat": 12.97266,
+"lon": 77.54565,
+"locality": "Chandra Lay Out S.O"
 },
 {
 "city": "Bengaluru",
@@ -2371,8 +2371,8 @@
 "pincodes": [
 "560041"
 ],
-"lat": 12.9230005,
-"lon": 77.5900165,
+"lat": 12.9257292,
+"lon": 77.5917045,
 "locality": "Jayanagar H.O"
 },
 {
@@ -2395,9 +2395,9 @@
 "pincodes": [
 "560043"
 ],
-"lat": 12.993509266666669,
-"lon": 77.62041666666667,
-"locality": "Kalyananagar S.O"
+"lat": 12.9447222,
+"lon": 77.5740278,
+"locality": "Banaswadi S.O"
 },
 {
 "city": "Bengaluru",
@@ -2419,8 +2419,8 @@
 "pincodes": [
 "560047"
 ],
-"lat": 12.95006945,
-"lon": 77.5948611,
+"lat": 12.9447222,
+"lon": 77.5740278,
 "locality": "Viveknagar S.O (Bengaluru)"
 },
 {
@@ -2431,9 +2431,9 @@
 "pincodes": [
 "560048"
 ],
-"lat": 12.9938292,
-"lon": 77.70749165000001,
-"locality": "Mahadevapura S.O"
+"lat": 12.9954444,
+"lon": 77.6990833,
+"locality": "Hoodi B.O"
 },
 {
 "city": "Bengaluru",
@@ -2443,8 +2443,8 @@
 "pincodes": [
 "560050"
 ],
-"lat": 12.94055695,
-"lon": 77.557388125,
+"lat": 12.9445154,
+"lon": 77.5558487,
 "locality": "Banashankari S.O"
 },
 {
@@ -2467,8 +2467,8 @@
 "pincodes": [
 "560054"
 ],
-"lat": 13.031143666666665,
-"lon": 77.55836699999999,
+"lat": 13.029819,
+"lon": 77.563734,
 "locality": "Msrit S.O"
 },
 {
@@ -2491,9 +2491,9 @@
 "pincodes": [
 "560056"
 ],
-"lat": 12.954820999999999,
-"lon": 77.50067425,
-"locality": "Bnagalore Viswavidalaya S.O"
+"lat": 12.950004,
+"lon": 77.5017418,
+"locality": "Mallathahalli B.O"
 },
 {
 "city": "Bengaluru",
@@ -2515,9 +2515,9 @@
 "pincodes": [
 "560058"
 ],
-"lat": 13.020583333333335,
-"lon": 77.51902033333333,
-"locality": "Peenya Small Industries S.O"
+"lat": 13.010654,
+"lon": 77.523283,
+"locality": "Peenya I Stage S.O"
 },
 {
 "city": "Bengaluru",
@@ -2539,8 +2539,8 @@
 "pincodes": [
 "560060"
 ],
-"lat": 12.918339666666666,
-"lon": 77.47234473333333,
+"lat": 12.9155752,
+"lon": 77.4815823,
 "locality": "Chudenapura B.O"
 },
 {
@@ -2551,8 +2551,8 @@
 "pincodes": [
 "560061"
 ],
-"lat": 12.90399465,
-"lon": 77.5466644,
+"lat": 12.9089031,
+"lon": 77.5491803,
 "locality": "Subramanyapura S.O"
 },
 {
@@ -2563,8 +2563,8 @@
 "pincodes": [
 "560062"
 ],
-"lat": 12.90703085,
-"lon": 77.57482425,
+"lat": 12.9269167,
+"lon": 77.5917778,
 "locality": "Doddakallasandra S.O"
 },
 {
@@ -2575,9 +2575,9 @@
 "pincodes": [
 "560064"
 ],
-"lat": 13.114503214285715,
-"lon": 77.57441101428572,
-"locality": "Singanayakanahalli B.O"
+"lat": 13.063141,
+"lon": 77.620677,
+"locality": "Attur B.O"
 },
 {
 "city": "Bengaluru",
@@ -2599,9 +2599,9 @@
 "pincodes": [
 "560068"
 ],
-"lat": 12.902451200000002,
-"lon": 77.63206993333334,
-"locality": "Bommanahalli S.O (Bengaluru)"
+"lat": 12.9228217,
+"lon": 77.6177326,
+"locality": "Singasandra B.O"
 },
 {
 "city": "Bengaluru",
@@ -2611,9 +2611,9 @@
 "pincodes": [
 "560070"
 ],
-"lat": 12.926719866666668,
-"lon": 77.56525429999999,
-"locality": "B Sk II Stage S.O"
+"lat": 12.9351384,
+"lon": 77.5685302,
+"locality": "Thyagarajnagar S.O"
 },
 {
 "city": "Bengaluru",
@@ -2635,8 +2635,8 @@
 "pincodes": [
 "560074"
 ],
-"lat": 12.876161033333332,
-"lon": 77.43881713333333,
+"lat": 12.8797516,
+"lon": 77.4465741,
 "locality": "Kumbalgodu Gollahalli B.O"
 },
 {
@@ -2647,9 +2647,9 @@
 "pincodes": [
 "560076"
 ],
-"lat": 12.891455100000002,
-"lon": 77.5978292,
-"locality": "Bannerghatta Road S.O"
+"lat": 12.9104513,
+"lon": 77.6101259,
+"locality": "Mount St Joseph B.O"
 },
 {
 "city": "Bengaluru",
@@ -2659,8 +2659,8 @@
 "pincodes": [
 "560077"
 ],
-"lat": 13.065169633333333,
-"lon": 77.6423391,
+"lat": 13.0681389,
+"lon": 77.6292222,
 "locality": "Doddagubbi B.O"
 },
 {
@@ -2671,8 +2671,8 @@
 "pincodes": [
 "560078"
 ],
-"lat": 12.908709733333334,
-"lon": 77.58513126666666,
+"lat": 12.9119427,
+"lon": 77.5868658,
 "locality": "J P Nagar S.O"
 },
 {
@@ -2683,8 +2683,8 @@
 "pincodes": [
 "560079"
 ],
-"lat": 12.987737000000001,
-"lon": 77.533499,
+"lat": 12.982047,
+"lon": 77.533118,
 "locality": "Basaveshwaranagar S.O"
 },
 {
@@ -2707,8 +2707,8 @@
 "pincodes": [
 "560082"
 ],
-"lat": 12.833533,
-"lon": 77.5116509,
+"lat": 12.8437683,
+"lon": 77.5092369,
 "locality": "Thataguni B.O"
 },
 {
@@ -2719,8 +2719,8 @@
 "pincodes": [
 "560083"
 ],
-"lat": 12.811846899999997,
-"lon": 77.58825621999999,
+"lat": 12.8564531,
+"lon": 77.5884322,
 "locality": "Sakalavara B.O"
 },
 {
@@ -2731,9 +2731,9 @@
 "pincodes": [
 "560084"
 ],
-"lat": 13.01193055,
-"lon": 77.6272222,
-"locality": "St. Thomas Town S.O"
+"lat": 13.0104722,
+"lon": 77.6246944,
+"locality": "Lingarajapuram S.O"
 },
 {
 "city": "Bengaluru",
@@ -2743,8 +2743,8 @@
 "pincodes": [
 "560085"
 ],
-"lat": 12.934523266666666,
-"lon": 77.54511986666667,
+"lat": 12.9432816,
+"lon": 77.5425557,
 "locality": "Banashankari III Stage S.O"
 },
 {
@@ -2755,8 +2755,8 @@
 "pincodes": [
 "560086"
 ],
-"lat": 13.006756500000002,
-"lon": 77.54643250000001,
+"lat": 13.002878,
+"lon": 77.546369,
 "locality": "Mahalakshmipuram Layout S.O"
 },
 {
@@ -2779,8 +2779,8 @@
 "pincodes": [
 "560091"
 ],
-"lat": 12.993755333333333,
-"lon": 77.48054766666667,
+"lat": 12.99099,
+"lon": 77.502731,
 "locality": "Bapagrama B.O"
 },
 {
@@ -2791,9 +2791,9 @@
 "pincodes": [
 "560092"
 ],
-"lat": 13.0084744,
-"lon": 77.551529325,
-"locality": "Sahakaranagar S.O"
+"lat": 12.949788,
+"lon": 77.541162,
+"locality": "Amruthahalli B.O"
 },
 {
 "city": "Bengaluru",
@@ -2851,8 +2851,8 @@
 "pincodes": [
 "560098"
 ],
-"lat": 12.912983966666667,
-"lon": 77.51539773333333,
+"lat": 12.9143199,
+"lon": 77.5207962,
 "locality": "Rajarajeshwarinagar S.O"
 },
 {
@@ -2863,8 +2863,8 @@
 "pincodes": [
 "560099"
 ],
-"lat": 12.840139950000001,
-"lon": 77.69754979999999,
+"lat": 12.8609807,
+"lon": 77.7069751,
 "locality": "Huskur B.O"
 },
 {
@@ -2923,8 +2923,8 @@
 "pincodes": [
 "560105"
 ],
-"lat": 12.785554820000002,
-"lon": 77.64550528,
+"lat": 12.81887,
+"lon": 77.6378921,
 "locality": "Haragadde B.O"
 },
 {
@@ -3055,8 +3055,8 @@
 "pincodes": [
 "562107"
 ],
-"lat": 12.78345,
-"lon": 77.76458334,
+"lat": 12.8,
+"lon": 77.75,
 "locality": "Neralur B.O"
 },
 {
@@ -3067,8 +3067,8 @@
 "pincodes": [
 "562125"
 ],
-"lat": 12.876205559999999,
-"lon": 77.77850556000001,
+"lat": 12.88,
+"lon": 77.75,
 "locality": "Dommasandra B.O"
 },
 {
@@ -3079,8 +3079,8 @@
 "pincodes": [
 "562149"
 ],
-"lat": 13.068240733333333,
-"lon": 77.64467593333335,
+"lat": 12.9447222,
+"lon": 77.5740278,
 "locality": "Bandikodigehalli B.O"
 },
 {
@@ -3091,8 +3091,8 @@
 "pincodes": [
 "562157"
 ],
-"lat": 13.150078700000002,
-"lon": 77.66873148333333,
+"lat": 13.09,
+"lon": 77.65,
 "locality": "Vidyanagara B.O"
 },
 {
@@ -3103,9 +3103,9 @@
 "pincodes": [
 "562163"
 ],
-"lat": 13.264285714285716,
-"lon": 77.56142857142858,
-"locality": "Basettihalli B.O"
+"lat": 13.2,
+"lon": 77.54,
+"locality": "Arakere B.O"
 },
 {
 "city": "Hyderabad",
@@ -3127,8 +3127,8 @@
 "pincodes": [
 "500004"
 ],
-"lat": 17.404962963333332,
-"lon": 78.46812963,
+"lat": 17.40158333,
+"lon": 78.47502778,
 "locality": "Khairatabad H.O"
 },
 {
@@ -3139,9 +3139,9 @@
 "pincodes": [
 "500005"
 ],
-"lat": 17.314835069999997,
-"lon": 78.45222345666667,
-"locality": "Jalpally B.O"
+"lat": 17.32611111,
+"lon": 78.45616667,
+"locality": "CRP Camp B.O"
 },
 {
 "city": "Hyderabad",
@@ -3163,9 +3163,9 @@
 "pincodes": [
 "500010"
 ],
-"lat": 17.508657406666668,
-"lon": 78.51678704,
-"locality": "Bolarum S.O"
+"lat": 17.50533333,
+"lon": 78.51855556,
+"locality": "Bolarum Bazar S.O"
 },
 {
 "city": "Hyderabad",
@@ -3199,8 +3199,8 @@
 "pincodes": [
 "500013"
 ],
-"lat": 17.3952222,
-"lon": 78.5265139,
+"lat": 17.3911944,
+"lon": 78.5165556,
 "locality": "Amberpet S.O"
 },
 {
@@ -3223,9 +3223,9 @@
 "pincodes": [
 "500016"
 ],
-"lat": 17.440375,
-"lon": 78.46345833500001,
-"locality": "Begumpet S.O"
+"lat": 17.44138889,
+"lon": 78.46916667,
+"locality": "Prakashamnagar S.O"
 },
 {
 "city": "Hyderabad",
@@ -3235,8 +3235,8 @@
 "pincodes": [
 "500017"
 ],
-"lat": 17.43663889,
-"lon": 78.535736115,
+"lat": 17.43925,
+"lon": 78.53130556,
 "locality": "Lallaguda S.O"
 },
 {
@@ -3285,7 +3285,7 @@
 ],
 "lat": 17.42997222,
 "lon": 78.41741667,
-"locality": "Jubilee Hills S.O"
+"locality": "Dr.B R Ambedkar O.U  S.O"
 },
 {
 "city": "Hyderabad",
@@ -3309,7 +3309,7 @@
 ],
 "lat": 17.3721111,
 "lon": 78.5103056,
-"locality": "Malakpet Colony S.O"
+"locality": "Sripuram Colony B.O"
 },
 {
 "city": "Hyderabad",
@@ -3331,9 +3331,9 @@
 "pincodes": [
 "500044"
 ],
-"lat": 17.484055533333333,
-"lon": 78.62169443333333,
-"locality": "New Nallakunta S.O"
+"lat": 17.4023611,
+"lon": 78.5098333,
+"locality": "Andhra Mahila Sabha S.O"
 },
 {
 "city": "Hyderabad",
@@ -3343,9 +3343,9 @@
 "pincodes": [
 "500045"
 ],
-"lat": 17.442972225,
-"lon": 78.42816666499999,
-"locality": "Yousufguda S.O"
+"lat": 17.43805556,
+"lon": 78.4275,
+"locality": "A.Gs. Staff Quarters S.O"
 },
 {
 "city": "Hyderabad",
@@ -3355,8 +3355,8 @@
 "pincodes": [
 "500053"
 ],
-"lat": 17.34106945,
-"lon": 78.474125,
+"lat": 17.34325,
+"lon": 78.4778333,
 "locality": "Falaknuma S.O"
 },
 {
@@ -3391,8 +3391,8 @@
 "pincodes": [
 "500059"
 ],
-"lat": 17.36771296666667,
-"lon": 78.49689816666667,
+"lat": 17.3931389,
+"lon": 78.4762778,
 "locality": "Saidabad S.O"
 },
 {
@@ -3403,8 +3403,8 @@
 "pincodes": [
 "500063"
 ],
-"lat": 17.40648778,
-"lon": 78.47209222000001,
+"lat": 17.40567,
+"lon": 78.47324,
 "locality": "LIC Division S.O"
 },
 {
@@ -3415,9 +3415,9 @@
 "pincodes": [
 "500065"
 ],
-"lat": 17.3526111,
-"lon": 78.4786944,
-"locality": "Shahalibanda S.O"
+"lat": 17.35075,
+"lon": 78.4926944,
+"locality": "Fatehdarwaza S.O"
 },
 {
 "city": "Hyderabad",
@@ -3475,9 +3475,9 @@
 "pincodes": [
 "500082"
 ],
-"lat": 17.421791665,
-"lon": 78.45497222,
-"locality": "Somajiguda S.O"
+"lat": 17.41913889,
+"lon": 78.45619444,
+"locality": "I.M.Colony S.O"
 },
 {
 "city": "Hyderabad",
@@ -3499,9 +3499,9 @@
 "pincodes": [
 "500095"
 ],
-"lat": 17.396875,
-"lon": 78.47725,
-"locality": "Putlibowli S.O"
+"lat": 17.40655556,
+"lon": 78.46702778,
+"locality": "State Bank Of India S.O"
 },
 {
 "city": "Hyderabad",
@@ -3537,7 +3537,7 @@
 ],
 "lat": 17.3051,
 "lon": 78.5254,
-"locality": "Almasguda B.O"
+"locality": "Badangpet S.O"
 },
 {
 "city": "Chennai",
@@ -3547,8 +3547,8 @@
 "pincodes": [
 "600001"
 ],
-"lat": 13.094892716666665,
-"lon": 80.28702274999999,
+"lat": 13.087812,
+"lon": 80.283107,
 "locality": "Chennai G.P.O."
 },
 {
@@ -3559,8 +3559,8 @@
 "pincodes": [
 "600002"
 ],
-"lat": 13.068737073333333,
-"lon": 80.26355381333333,
+"lat": 13.047026,
+"lon": 80.248076,
 "locality": "Anna Road H.O"
 },
 {
@@ -3571,9 +3571,9 @@
 "pincodes": [
 "600005"
 ],
-"lat": 13.061988125,
-"lon": 80.27972155,
-"locality": "Tiruvallikeni S.O"
+"lat": 13.0595833,
+"lon": 80.2743611,
+"locality": "Parthasarathykoil SO"
 },
 {
 "city": "Chennai",
@@ -3583,9 +3583,9 @@
 "pincodes": [
 "600008"
 ],
-"lat": 13.069567,
-"lon": 80.25872633333333,
-"locality": "EGMORE MDO"
+"lat": 13.066163,
+"lon": 80.256779,
+"locality": "ETHIRAJ SALAI"
 },
 {
 "city": "Chennai",
@@ -3595,9 +3595,9 @@
 "pincodes": [
 "600010"
 ],
-"lat": 13.084416650000001,
-"lon": 80.24291665,
-"locality": "Kilpauk S.O"
+"lat": 13.0807222,
+"lon": 80.2431111,
+"locality": "Kilpauk Medical College S.O"
 },
 {
 "city": "Chennai",
@@ -3607,9 +3607,9 @@
 "pincodes": [
 "600011"
 ],
-"lat": 13.143685166666666,
-"lon": 80.2938333,
-"locality": "Perambur S.O"
+"lat": 13.1090833,
+"lon": 80.2446944,
+"locality": "Perambur North S.O"
 },
 {
 "city": "Chennai",
@@ -3631,9 +3631,9 @@
 "pincodes": [
 "600015"
 ],
-"lat": 13.02394455,
-"lon": 80.23497205,
-"locality": "Saidapet S.O (Chennai)"
+"lat": 13.0453611,
+"lon": 80.2376111,
+"locality": "Guindy North S.O"
 },
 {
 "city": "Chennai",
@@ -3643,8 +3643,8 @@
 "pincodes": [
 "600016"
 ],
-"lat": 12.983460925000001,
-"lon": 80.190880925,
+"lat": 13.00195,
+"lon": 80.205867,
 "locality": "St Thomas Mount HO"
 },
 {
@@ -3655,8 +3655,8 @@
 "pincodes": [
 "600017"
 ],
-"lat": 13.042445825,
-"lon": 80.237595825,
+"lat": 13.0497,
+"lon": 80.2402,
 "locality": "Thygarayanagar H.O"
 },
 {
@@ -3667,8 +3667,8 @@
 "pincodes": [
 "600018"
 ],
-"lat": 13.1396476,
-"lon": 80.20664694999999,
+"lat": 13.0394444,
+"lon": 80.2573611,
 "locality": "Teynampet S.O"
 },
 {
@@ -3679,8 +3679,8 @@
 "pincodes": [
 "600019"
 ],
-"lat": 13.13522222,
-"lon": 80.25412224,
+"lat": 13.1596667,
+"lon": 80.3020556,
 "locality": "Tiruvottiyur SO"
 },
 {
@@ -3691,9 +3691,9 @@
 "pincodes": [
 "600021"
 ],
-"lat": 13.11725,
-"lon": 80.28697220000001,
-"locality": "Washermanpet S.O"
+"lat": 13.1188889,
+"lon": 80.285,
+"locality": "Washermanpet East S.O"
 },
 {
 "city": "Chennai",
@@ -3751,8 +3751,8 @@
 "pincodes": [
 "600031"
 ],
-"lat": 13.07815155,
-"lon": 80.2457831,
+"lat": 13.072942,
+"lon": 80.252094,
 "locality": "Chetput S.O"
 },
 {
@@ -3763,9 +3763,9 @@
 "pincodes": [
 "600032"
 ],
-"lat": 13.03594445,
-"lon": 80.20866665,
-"locality": "Guindy Industrial Estate S.O"
+"lat": 13.0515278,
+"lon": 80.2115833,
+"locality": "Ekkaduthangal S.O"
 },
 {
 "city": "Chennai",
@@ -3775,8 +3775,8 @@
 "pincodes": [
 "600033"
 ],
-"lat": 13.03681945,
-"lon": 80.22355555,
+"lat": 13.0385,
+"lon": 80.2264722,
 "locality": "West Mambalam S.O"
 },
 {
@@ -3811,8 +3811,8 @@
 "pincodes": [
 "600037"
 ],
-"lat": 13.1154167,
-"lon": 80.23322225,
+"lat": 13.0848056,
+"lon": 80.1831667,
 "locality": "Mogappair SO"
 },
 {
@@ -3847,9 +3847,9 @@
 "pincodes": [
 "600041"
 ],
-"lat": 12.985216666666666,
-"lon": 80.26272943333333,
-"locality": "Tiruvanmiyur S.O"
+"lat": 12.993084,
+"lon": 80.163043,
+"locality": "Palavakkam S.O (Kanchipuram)"
 },
 {
 "city": "Chennai",
@@ -3871,9 +3871,9 @@
 "pincodes": [
 "600049"
 ],
-"lat": 13.1060625,
-"lon": 80.19121527499999,
-"locality": "Villivakkam SO"
+"lat": 13.1084722,
+"lon": 80.2078611,
+"locality": "Srinivasanagar BO"
 },
 {
 "city": "Chennai",
@@ -3883,8 +3883,8 @@
 "pincodes": [
 "600050"
 ],
-"lat": 13.083055550000001,
-"lon": 80.14786665,
+"lat": 13.0988611,
+"lon": 80.1838333,
 "locality": "Padi SO"
 },
 {
@@ -3895,8 +3895,8 @@
 "pincodes": [
 "600053"
 ],
-"lat": 13.132842616666665,
-"lon": 80.16136575,
+"lat": 13.1133889,
+"lon": 80.1499167,
 "locality": "Ambattur HO"
 },
 {
@@ -3907,9 +3907,9 @@
 "pincodes": [
 "600058"
 ],
-"lat": 13.092541650000001,
-"lon": 80.15804165,
-"locality": "Ambattur Indl Estate SO"
+"lat": 13.1000833,
+"lon": 80.1740833,
+"locality": "Athipattu BO"
 },
 {
 "city": "Chennai",
@@ -3919,8 +3919,8 @@
 "pincodes": [
 "600060"
 ],
-"lat": 13.169324066666666,
-"lon": 80.16755556666668,
+"lat": 13.161,
+"lon": 80.188,
 "locality": "Vadaperumbakkam BO"
 },
 {
@@ -3967,9 +3967,9 @@
 "pincodes": [
 "600077"
 ],
-"lat": 13.066916675,
-"lon": 80.10480555000001,
-"locality": "Thiruverkadu SO"
+"lat": 13.084,
+"lon": 80.103,
+"locality": "Ayapakkam BO"
 },
 {
 "city": "Chennai",
@@ -3991,9 +3991,9 @@
 "pincodes": [
 "600081"
 ],
-"lat": 13.129138900000001,
-"lon": 80.28671296666666,
-"locality": "Tondiarpet S.O"
+"lat": 13.1181667,
+"lon": 80.2846389,
+"locality": "Tondiarpet Bazaar S.O"
 },
 {
 "city": "Chennai",
@@ -4003,8 +4003,8 @@
 "pincodes": [
 "600083"
 ],
-"lat": 13.03680555,
-"lon": 80.22706944999999,
+"lat": 13.0453611,
+"lon": 80.2376111,
 "locality": "Ashoknagar S.O (Chennai)"
 },
 {
@@ -4051,9 +4051,9 @@
 "pincodes": [
 "600087"
 ],
-"lat": 13.0475,
-"lon": 80.1809861,
-"locality": "Alwarthirunagar S.O"
+"lat": 13.0483889,
+"lon": 80.1834444,
+"locality": "Valasaravakkam S.O"
 },
 {
 "city": "Chennai",
@@ -4063,9 +4063,9 @@
 "pincodes": [
 "600089"
 ],
-"lat": 13.023987049999999,
-"lon": 80.18440345,
-"locality": "Nandambakkam Kudiyiruppu S.O"
+"lat": 13.030113,
+"lon": 80.179668,
+"locality": "Ramapuram S.O (Kanchipuram)"
 },
 {
 "city": "Chennai",
@@ -4075,8 +4075,8 @@
 "pincodes": [
 "600090"
 ],
-"lat": 12.99734055,
-"lon": 80.21336945,
+"lat": 12.9928611,
+"lon": 80.2653889,
 "locality": "Besantnagar S.O"
 },
 {
@@ -4111,8 +4111,8 @@
 "pincodes": [
 "600095"
 ],
-"lat": 13.077009266666666,
-"lon": 80.17947223333334,
+"lat": 13.1180278,
+"lon": 80.2894167,
 "locality": "Maduravoyal SO"
 },
 {
@@ -4123,8 +4123,8 @@
 "pincodes": [
 "600096"
 ],
-"lat": 12.9725972,
-"lon": 80.24412219999999,
+"lat": 12.9775,
+"lon": 80.2433,
 "locality": "Perungudi S.O"
 },
 {
@@ -4135,8 +4135,8 @@
 "pincodes": [
 "600097"
 ],
-"lat": 12.93543055,
-"lon": 80.23959725,
+"lat": 12.9485833,
+"lon": 80.2400556,
 "locality": "Oggiamthoraipakkam S.O"
 },
 {
@@ -4159,8 +4159,8 @@
 "pincodes": [
 "600107"
 ],
-"lat": 13.088067066666667,
-"lon": 80.241073,
+"lat": 13.074229,
+"lon": 80.196608,
 "locality": "Koyambedu S.O"
 },
 {
@@ -4171,9 +4171,9 @@
 "pincodes": [
 "600113"
 ],
-"lat": 12.989267850000001,
-"lon": 80.25331395,
-"locality": "TTTI Taramani S.O"
+"lat": 12.989869,
+"lon": 80.248739,
+"locality": "Tidel Park S.O"
 },
 {
 "city": "Chennai",
@@ -4183,8 +4183,8 @@
 "pincodes": [
 "600115"
 ],
-"lat": 12.98597945,
-"lon": 80.2221557,
+"lat": 13.04682,
+"lon": 80.245617,
 "locality": "Injambakkam S.O"
 },
 {
@@ -4195,9 +4195,9 @@
 "pincodes": [
 "600116"
 ],
-"lat": 13.035731499999999,
-"lon": 80.15253703333333,
-"locality": "Porur SO"
+"lat": 13.0395556,
+"lon": 80.1733333,
+"locality": "Alapakkam BO"
 },
 {
 "city": "Chennai",
@@ -4207,9 +4207,9 @@
 "pincodes": [
 "600118"
 ],
-"lat": 13.126916666666668,
-"lon": 80.23973146666667,
-"locality": "Kodungaiyur SO"
+"lat": 13.112,
+"lon": 80.224,
+"locality": "Erukkancheri BO"
 },
 {
 "city": "Chennai",
@@ -4231,9 +4231,9 @@
 "pincodes": [
 "600125"
 ],
-"lat": 12.963569450000001,
-"lon": 80.17234719999999,
-"locality": "Mugalivakkam SO"
+"lat": 13.002,
+"lon": 80.146,
+"locality": "Manapakkam BO"
 },
 {
 "city": "Pune",
@@ -4255,9 +4255,9 @@
 "pincodes": [
 "410401"
 ],
-"lat": 18.7528,
-"lon": 73.4057,
-"locality": "Ambavane"
+"lat": 18.73059,
+"lon": 73.426861,
+"locality": "Ambavane B.O"
 },
 {
 "city": "Pune",
@@ -4267,8 +4267,8 @@
 "pincodes": [
 "410402"
 ],
-"lat": 18.75384,
-"lon": 73.38978449999999,
+"lat": 18.7749,
+"lon": 73.403442,
 "locality": "Kurwande B.O"
 },
 {
@@ -4279,8 +4279,8 @@
 "pincodes": [
 "410501"
 ],
-"lat": 18.750856858823532,
-"lon": 73.86251954705881,
+"lat": 18.644643,
+"lon": 73.950677,
 "locality": "Koyali B.O"
 },
 {
@@ -4291,8 +4291,8 @@
 "pincodes": [
 "410506"
 ],
-"lat": 18.71643376666667,
-"lon": 73.54129776666666,
+"lat": 18.7234722,
+"lon": 73.7033611,
 "locality": "Dhamane B.O"
 },
 {
@@ -4303,8 +4303,8 @@
 "pincodes": [
 "411001"
 ],
-"lat": 18.508047617142857,
-"lon": 73.86874999999999,
+"lat": 18.52322222,
+"lon": 73.87586111,
 "locality": "Pune H.O"
 },
 {
@@ -4315,8 +4315,8 @@
 "pincodes": [
 "411002"
 ],
-"lat": 18.513703460000002,
-"lon": 73.85926750000002,
+"lat": 18.515017,
+"lon": 73.870997,
 "locality": "Pune City H.O"
 },
 {
@@ -4327,8 +4327,8 @@
 "pincodes": [
 "411004"
 ],
-"lat": 18.513092600000004,
-"lon": 73.83603703333334,
+"lat": 18.5149167,
+"lon": 73.8421111,
 "locality": "Deccan Gymkhana S.O"
 },
 {
@@ -4339,9 +4339,9 @@
 "pincodes": [
 "411005"
 ],
-"lat": 18.525402225,
-"lon": 73.7136708,
-"locality": "Shivajinagar S.O (Pune)"
+"lat": 18.5231944,
+"lon": 73.8536944,
+"locality": "Shivajinagar H.O"
 },
 {
 "city": "Pune",
@@ -4351,8 +4351,8 @@
 "pincodes": [
 "411006"
 ],
-"lat": 18.55543055,
-"lon": 73.88995833999999,
+"lat": 18.5506111,
+"lon": 73.8878889,
 "locality": "Yerwada S.O"
 },
 {
@@ -4363,9 +4363,9 @@
 "pincodes": [
 "411007"
 ],
-"lat": 18.5525581,
-"lon": 73.82009345,
-"locality": "Ganeshkhind S.O"
+"lat": 18.5544722,
+"lon": 73.8268889,
+"locality": "Aundh T.S. S.O"
 },
 {
 "city": "Pune",
@@ -4375,9 +4375,9 @@
 "pincodes": [
 "411008"
 ],
-"lat": 18.542875000000002,
-"lon": 73.819125,
-"locality": "N.C.L. Pune S.O"
+"lat": 18.5395,
+"lon": 73.8183611,
+"locality": "Baner Road S.O"
 },
 {
 "city": "Pune",
@@ -4387,9 +4387,9 @@
 "pincodes": [
 "411009"
 ],
-"lat": 18.4953611,
-"lon": 73.85626389999999,
-"locality": "Parvati S.O"
+"lat": 18.4966944,
+"lon": 73.8548611,
+"locality": "Parvati Gaon S.O"
 },
 {
 "city": "Pune",
@@ -4399,8 +4399,8 @@
 "pincodes": [
 "411011"
 ],
-"lat": 18.520748666666666,
-"lon": 73.8626749,
+"lat": 18.520302,
+"lon": 73.864878,
 "locality": "Kasba Peth S.O"
 },
 {
@@ -4411,9 +4411,9 @@
 "pincodes": [
 "411012"
 ],
-"lat": 18.581208335,
-"lon": 73.832319445,
-"locality": "Dapodi S.O"
+"lat": 18.57988889,
+"lon": 73.83105556,
+"locality": "Dapodi Bazar S.O"
 },
 {
 "city": "Pune",
@@ -4423,9 +4423,9 @@
 "pincodes": [
 "411014"
 ],
-"lat": 18.555736109999998,
-"lon": 73.659027775,
-"locality": "Dunkirk lines S.O"
+"lat": 18.54363889,
+"lon": 73.92511111,
+"locality": "9 DRD B.O"
 },
 {
 "city": "Pune",
@@ -4435,8 +4435,8 @@
 "pincodes": [
 "411015"
 ],
-"lat": 18.127791685,
-"lon": 73.936569445,
+"lat": 18.5719167,
+"lon": 73.87825,
 "locality": "Dhanori B.O"
 },
 {
@@ -4447,9 +4447,9 @@
 "pincodes": [
 "411016"
 ],
-"lat": 18.5330463,
-"lon": 73.8330926,
-"locality": "Model Colony S.O"
+"lat": 18.5289722,
+"lon": 73.8388056,
+"locality": "Govt. Polytechnic S.O"
 },
 {
 "city": "Pune",
@@ -4459,9 +4459,9 @@
 "pincodes": [
 "411017"
 ],
-"lat": 18.616916664999998,
-"lon": 73.70611111,
-"locality": "Pimpri Colony S.O"
+"lat": 18.62319444,
+"lon": 73.80158333,
+"locality": "Kalewadi B.O"
 },
 {
 "city": "Pune",
@@ -4471,8 +4471,8 @@
 "pincodes": [
 "411018"
 ],
-"lat": 18.629625853333334,
-"lon": 73.81440392333333,
+"lat": 18.622822,
+"lon": 73.809184,
 "locality": "Pimpri P F S.O"
 },
 {
@@ -4483,8 +4483,8 @@
 "pincodes": [
 "411019"
 ],
-"lat": 18.65429165,
-"lon": 73.797486105,
+"lat": 18.6395,
+"lon": 73.79586111,
 "locality": "Chinchwad East S.O"
 },
 {
@@ -4495,9 +4495,9 @@
 "pincodes": [
 "411020"
 ],
-"lat": 18.5588984,
-"lon": 73.83418545,
-"locality": "Range Hills S.O"
+"lat": 18.5517778,
+"lon": 73.8426389,
+"locality": "Botanical Garden S.O (Pune)"
 },
 {
 "city": "Pune",
@@ -4507,8 +4507,8 @@
 "pincodes": [
 "411021"
 ],
-"lat": 18.530100066666666,
-"lon": 73.79425286666667,
+"lat": 18.536729,
+"lon": 73.814499,
 "locality": "Bavdhan B.O"
 },
 {
@@ -4519,8 +4519,8 @@
 "pincodes": [
 "411023"
 ],
-"lat": 18.46894214,
-"lon": 73.78627208,
+"lat": 18.469355,
+"lon": 73.835466,
 "locality": "Shivane B.O"
 },
 {
@@ -4543,8 +4543,8 @@
 "pincodes": [
 "411027"
 ],
-"lat": 18.576638889999998,
-"lon": 73.81197222,
+"lat": 18.57522222,
+"lon": 73.82161111,
 "locality": "Aundh Camp S.O"
 },
 {
@@ -4555,8 +4555,8 @@
 "pincodes": [
 "411028"
 ],
-"lat": 18.498194445000003,
-"lon": 73.930819445,
+"lat": 18.50330556,
+"lon": 73.93122222,
 "locality": "Hadapsar S.O"
 },
 {
@@ -4567,9 +4567,9 @@
 "pincodes": [
 "411030"
 ],
-"lat": 18.511854933333336,
-"lon": 73.85010894999999,
-"locality": "S.P. College S.O"
+"lat": 18.5153888,
+"lon": 73.8567777,
+"locality": "Rashtra Bhasha Bhavan S.O"
 },
 {
 "city": "Pune",
@@ -4581,7 +4581,7 @@
 ],
 "lat": 18.52047,
 "lon": 73.300211,
-"locality": "Tathawade B.O"
+"locality": "Thergaon B.O"
 },
 {
 "city": "Pune",
@@ -4603,9 +4603,9 @@
 "pincodes": [
 "411036"
 ],
-"lat": 18.5321688,
-"lon": 73.9288801,
-"locality": "Mundhva AV S.O"
+"lat": 18.5298056,
+"lon": 73.9094722,
+"locality": "Mundhva B.O"
 },
 {
 "city": "Pune",
@@ -4615,8 +4615,8 @@
 "pincodes": [
 "411038"
 ],
-"lat": 18.5075185,
-"lon": 73.8085,
+"lat": 18.5112222,
+"lon": 73.8196667,
 "locality": "Ex. Serviceman Colony S.O"
 },
 {
@@ -4651,8 +4651,8 @@
 "pincodes": [
 "411041"
 ],
-"lat": 18.48309725,
-"lon": 73.83434725000001,
+"lat": 18.5153889,
+"lon": 73.8567778,
 "locality": "Vadgaon Budruk S.O"
 },
 {
@@ -4663,8 +4663,8 @@
 "pincodes": [
 "411042"
 ],
-"lat": 18.50471666,
-"lon": 73.86252778,
+"lat": 18.5099444,
+"lon": 73.8685556,
 "locality": "Swargate S.O"
 },
 {
@@ -4687,8 +4687,8 @@
 "pincodes": [
 "411044"
 ],
-"lat": 18.65888889,
-"lon": 73.75027778,
+"lat": 18.65325,
+"lon": 73.76780556,
 "locality": "P.C.N.T. S.O"
 },
 {
@@ -4699,9 +4699,9 @@
 "pincodes": [
 "411045"
 ],
-"lat": 18.5699504,
-"lon": 73.7661502,
-"locality": "N.I.A. S.O"
+"lat": 18.568623,
+"lon": 73.766606,
+"locality": "Baner B.O"
 },
 {
 "city": "Pune",
@@ -4711,8 +4711,8 @@
 "pincodes": [
 "411047"
 ],
-"lat": 18.616539279999998,
-"lon": 73.942772335,
+"lat": 18.59755556,
+"lon": 73.92691667,
 "locality": "Vadgaon Shinde B.O"
 },
 {
@@ -4735,9 +4735,9 @@
 "pincodes": [
 "411052"
 ],
-"lat": 18.49104165,
-"lon": 73.8231806,
-"locality": "Navsahyadri S.O"
+"lat": 18.4943889,
+"lon": 73.8300556,
+"locality": "Karvenagar S.O"
 },
 {
 "city": "Pune",
@@ -4759,8 +4759,8 @@
 "pincodes": [
 "411062"
 ],
-"lat": 18.663382733333332,
-"lon": 73.7902009,
+"lat": 18.671037,
+"lon": 73.824262,
 "locality": "Talawade B.O"
 },
 {
@@ -4807,8 +4807,8 @@
 "pincodes": [
 "412107"
 ],
-"lat": 18.66025661,
-"lon": 73.7515039,
+"lat": 18.3505286,
+"lon": 73.6196963,
 "locality": "Rule B.O"
 },
 {
@@ -4819,8 +4819,8 @@
 "pincodes": [
 "412109"
 ],
-"lat": 18.737008449999998,
-"lon": 73.7599666,
+"lat": 18.7171389,
+"lon": 73.7657222,
 "locality": "Sadumbre B.O"
 },
 {
@@ -4843,8 +4843,8 @@
 "pincodes": [
 "412201"
 ],
-"lat": 18.5212425,
-"lon": 74.01314135,
+"lat": 18.48375,
+"lon": 74.0271944,
 "locality": "Alandi Chorachi B.O"
 },
 {
@@ -4855,8 +4855,8 @@
 "pincodes": [
 "412220"
 ],
-"lat": 18.670735933333333,
-"lon": 73.88973333333334,
+"lat": 18.65,
+"lon": 74.15,
 "locality": "Karegaon B.O"
 },
 {
@@ -4867,8 +4867,8 @@
 "pincodes": [
 "412307"
 ],
-"lat": 18.47977005,
-"lon": 73.93091734999999,
+"lat": 18.4361111,
+"lon": 73.8764167,
 "locality": "Manjari BK B.O"
 },
 {
@@ -5371,8 +5371,8 @@
 "pincodes": [
 "700001"
 ],
-"lat": 22.431713676923074,
-"lon": 88.26323846153848,
+"lat": 22.5678,
+"lon": 88.3451,
 "locality": "Kolkatta GPO"
 },
 {
@@ -5383,8 +5383,8 @@
 "pincodes": [
 "700002"
 ],
-"lat": 22.886207737500005,
-"lon": 87.8101047625,
+"lat": 22.52909,
+"lon": 88.359003,
 "locality": "Cossipore HO"
 },
 {
@@ -5395,9 +5395,9 @@
 "pincodes": [
 "700003"
 ],
-"lat": 22.603120333333337,
-"lon": 88.36824996666667,
-"locality": "Baghbazar SO"
+"lat": 22.6027777,
+"lon": 88.3672222,
+"locality": "Girish Avenue SO"
 },
 {
 "city": "Kolkata",
@@ -5407,9 +5407,9 @@
 "pincodes": [
 "700004"
 ],
-"lat": 22.593725733333333,
-"lon": 88.3666769,
-"locality": "Shyambazar Mail SO"
+"lat": 22.58,
+"lon": 88.35,
+"locality": "RGKar Medical College SO"
 },
 {
 "city": "Kolkata",
@@ -5419,8 +5419,8 @@
 "pincodes": [
 "700005"
 ],
-"lat": 22.59609715,
-"lon": 88.35872205000001,
+"lat": 22.5950277,
+"lon": 88.3561111,
 "locality": "Hatkhola SO"
 },
 {
@@ -5431,9 +5431,9 @@
 "pincodes": [
 "700006"
 ],
-"lat": 22.588581685714285,
-"lon": 88.36744062857143,
-"locality": "Beadon Street SO"
+"lat": 22.5856666,
+"lon": 88.3676944,
+"locality": "Manicktala SO"
 },
 {
 "city": "Kolkata",
@@ -5443,8 +5443,8 @@
 "pincodes": [
 "700007"
 ],
-"lat": 22.582617566666666,
-"lon": 88.35805736666667,
+"lat": 22.5785,
+"lon": 88.3631,
 "locality": "Barabazar H O"
 },
 {
@@ -5467,9 +5467,9 @@
 "pincodes": [
 "700012"
 ],
-"lat": 22.569509266666667,
-"lon": 88.35674999999999,
-"locality": "Bowbazar SO Kolkata"
+"lat": 22.5686111,
+"lon": 88.3577778,
+"locality": "Sankaritola SO"
 },
 {
 "city": "Kolkata",
@@ -5491,9 +5491,9 @@
 "pincodes": [
 "700015"
 ],
-"lat": 22.34199793333333,
-"lon": 88.22452866666667,
-"locality": "Tangra SO"
+"lat": 22.3555602,
+"lon": 88.2247217,
+"locality": "Sales Tax Building SO"
 },
 {
 "city": "Kolkata",
@@ -5503,8 +5503,8 @@
 "pincodes": [
 "700016"
 ],
-"lat": 22.5597685,
-"lon": 88.35675926666666,
+"lat": 22.552,
+"lon": 88.3539167,
 "locality": "Park Street HO"
 },
 {
@@ -5515,9 +5515,9 @@
 "pincodes": [
 "700018"
 ],
-"lat": 22.5225994,
-"lon": 88.28516809999999,
-"locality": "Bartala SO"
+"lat": 22.50131,
+"lon": 88.300614,
+"locality": "Rabindra Nagar SO Kolkata"
 },
 {
 "city": "Kolkata",
@@ -5527,9 +5527,9 @@
 "pincodes": [
 "700019"
 ],
-"lat": 22.526569449999997,
-"lon": 88.36264353333335,
-"locality": "Ballygunge SO"
+"lat": 22.5272222,
+"lon": 88.3452778,
+"locality": "Garcha Road SO"
 },
 {
 "city": "Kolkata",
@@ -5539,9 +5539,9 @@
 "pincodes": [
 "700020"
 ],
-"lat": 22.539951625,
-"lon": 88.3477348,
-"locality": "LRSarani SO"
+"lat": 22.5378056,
+"lon": 88.3486667,
+"locality": "KMHospital SO"
 },
 {
 "city": "Kolkata",
@@ -5551,9 +5551,9 @@
 "pincodes": [
 "700022"
 ],
-"lat": 22.54627775,
-"lon": 88.32724999999999,
-"locality": "Hastings SO"
+"lat": 22.5448611,
+"lon": 88.3280556,
+"locality": "Bakery Road SO"
 },
 {
 "city": "Kolkata",
@@ -5563,8 +5563,8 @@
 "pincodes": [
 "700023"
 ],
-"lat": 22.5416735575,
-"lon": 88.323604125,
+"lat": 22.5395277,
+"lon": 88.3268888,
 "locality": "Khiddirpore SO"
 },
 {
@@ -5575,9 +5575,9 @@
 "pincodes": [
 "700024"
 ],
-"lat": 22.54082635,
-"lon": 88.285173575,
-"locality": "Garden Reach SO"
+"lat": 22.5422222,
+"lon": 88.2916111,
+"locality": "KCMills SO"
 },
 {
 "city": "Kolkata",
@@ -5587,8 +5587,8 @@
 "pincodes": [
 "700025"
 ],
-"lat": 22.538666666666668,
-"lon": 88.34982409999999,
+"lat": 22.5165,
+"lon": 88.3489167,
 "locality": "Bhawanipore SO"
 },
 {
@@ -5599,8 +5599,8 @@
 "pincodes": [
 "700026"
 ],
-"lat": 22.519005949999997,
-"lon": 88.34546893333332,
+"lat": 22.5131667,
+"lon": 88.3456389,
 "locality": "Kalighat SO"
 },
 {
@@ -5611,8 +5611,8 @@
 "pincodes": [
 "700027"
 ],
-"lat": 22.526810150000003,
-"lon": 88.33219903333334,
+"lat": 22.5175,
+"lon": 88.3352222,
 "locality": "Alipore HO"
 },
 {
@@ -5623,9 +5623,9 @@
 "pincodes": [
 "700029"
 ],
-"lat": 22.517249975,
-"lon": 88.35418745,
-"locality": "Sarat Bose Road SO"
+"lat": 22.5166111,
+"lon": 88.3480833,
+"locality": "Dover Lane SO"
 },
 {
 "city": "Kolkata",
@@ -5635,8 +5635,8 @@
 "pincodes": [
 "700030"
 ],
-"lat": 22.471942600000002,
-"lon": 88.33962593333332,
+"lat": 22.6190278,
+"lon": 88.3886667,
 "locality": "Ghugudanga SO"
 },
 {
@@ -5647,9 +5647,9 @@
 "pincodes": [
 "700031"
 ],
-"lat": 22.507125000000002,
-"lon": 88.37181945,
-"locality": "Dhakuria SO"
+"lat": 22.5093889,
+"lon": 88.3708889,
+"locality": "KPRoy Lane SO"
 },
 {
 "city": "Kolkata",
@@ -5659,9 +5659,9 @@
 "pincodes": [
 "700032"
 ],
-"lat": 22.495564833333333,
-"lon": 88.35991666666666,
-"locality": "Jadavpur University SO"
+"lat": 22.5011111,
+"lon": 88.3475,
+"locality": "Bijoygarh SO"
 },
 {
 "city": "Kolkata",
@@ -5671,8 +5671,8 @@
 "pincodes": [
 "700033"
 ],
-"lat": 22.504101833333333,
-"lon": 88.34649073333333,
+"lat": 22.5067222,
+"lon": 88.3452222,
 "locality": "Tollygunge HO"
 },
 {
@@ -5683,9 +5683,9 @@
 "pincodes": [
 "700034"
 ],
-"lat": 22.498042400000003,
-"lon": 88.31864221666667,
-"locality": "Behala SO"
+"lat": 22.4992222,
+"lon": 88.3264166,
+"locality": "Behala Municipal Market SO"
 },
 {
 "city": "Kolkata",
@@ -5707,8 +5707,8 @@
 "pincodes": [
 "700040"
 ],
-"lat": 22.48340263333333,
-"lon": 88.35204646666666,
+"lat": 22.4853056,
+"lon": 88.3521667,
 "locality": "Regent Park SO"
 },
 {
@@ -5719,8 +5719,8 @@
 "pincodes": [
 "700041"
 ],
-"lat": 22.5010972,
-"lon": 88.32011109999999,
+"lat": 22.4935,
+"lon": 88.3335,
 "locality": "Paschim Putiari SO"
 },
 {
@@ -5731,9 +5731,9 @@
 "pincodes": [
 "700042"
 ],
-"lat": 22.5453765,
-"lon": 88.36569025,
-"locality": "Kasba SO Kolkata"
+"lat": 22.5179752,
+"lon": 88.3838805,
+"locality": "Bosepukur Road SO"
 },
 {
 "city": "Kolkata",
@@ -5743,9 +5743,9 @@
 "pincodes": [
 "700043"
 ],
-"lat": 22.5155868,
-"lon": 88.3206012,
-"locality": "South Eastern Railway SO"
+"lat": 22.487757,
+"lon": 88.331008,
+"locality": "Sonai SO Kolkata"
 },
 {
 "city": "Kolkata",
@@ -5755,8 +5755,8 @@
 "pincodes": [
 "700044"
 ],
-"lat": 22.5521666,
-"lon": 88.26711105000001,
+"lat": 22.5521944,
+"lon": 88.2715555,
 "locality": "Badartala SO"
 },
 {
@@ -5779,8 +5779,8 @@
 "pincodes": [
 "700047"
 ],
-"lat": 22.4725972,
-"lon": 88.37643055,
+"lat": 22.4802222,
+"lon": 88.3756667,
 "locality": "Naktala SO"
 },
 {
@@ -5791,8 +5791,8 @@
 "pincodes": [
 "700050"
 ],
-"lat": 22.628500000000003,
-"lon": 88.38456945,
+"lat": 22.6280833,
+"lon": 88.3818056,
 "locality": "Sinthee SO"
 },
 {
@@ -5803,9 +5803,9 @@
 "pincodes": [
 "700053"
 ],
-"lat": 22.509222174999998,
-"lon": 88.331159675,
-"locality": "New Alipore SO"
+"lat": 22.5097222,
+"lon": 88.3338055,
+"locality": "Kolkata Mint SO"
 },
 {
 "city": "Kolkata",
@@ -5815,9 +5815,9 @@
 "pincodes": [
 "700061"
 ],
-"lat": 22.47963666,
-"lon": 88.29203767999999,
-"locality": "Sarsoona SO"
+"lat": 22.4813611,
+"lon": 88.2994166,
+"locality": "Sakuntala Park SO"
 },
 {
 "city": "Kolkata",
@@ -5827,9 +5827,9 @@
 "pincodes": [
 "700063"
 ],
-"lat": 22.466234566666667,
-"lon": 88.30073863333332,
-"locality": "Thakurpukur SO"
+"lat": 22.4721111,
+"lon": 88.3082222,
+"locality": "Kalagachia SO Kolkata"
 },
 {
 "city": "Kolkata",
@@ -5851,8 +5851,8 @@
 "pincodes": [
 "700067"
 ],
-"lat": 22.5926111,
-"lon": 88.38597215,
+"lat": 22.5912222,
+"lon": 88.3875555,
 "locality": "Ultadanga Main Road SO"
 },
 {
@@ -5875,8 +5875,8 @@
 "pincodes": [
 "700069"
 ],
-"lat": 22.5660972,
-"lon": 88.3504722,
+"lat": 22.5658333,
+"lon": 88.35,
 "locality": "Esplanade SO"
 },
 {
@@ -5887,9 +5887,9 @@
 "pincodes": [
 "700071"
 ],
-"lat": 22.557851833333334,
-"lon": 88.36252776666667,
-"locality": "Middleton Row SO"
+"lat": 22.5513333,
+"lon": 88.3525833,
+"locality": "Little Russel Street SO"
 },
 {
 "city": "Kolkata",
@@ -5899,8 +5899,8 @@
 "pincodes": [
 "700072"
 ],
-"lat": 22.5601759,
-"lon": 88.35550003333333,
+"lat": 22.5479444,
+"lon": 88.3580556,
 "locality": "Princep Street SO"
 },
 {
@@ -5911,9 +5911,9 @@
 "pincodes": [
 "700075"
 ],
-"lat": 22.462713224999998,
-"lon": 88.3388521,
-"locality": "Santoshpur SO"
+"lat": 22.499214,
+"lon": 88.375064,
+"locality": "Santoshpur Avenue SO"
 },
 {
 "city": "Kolkata",
@@ -5923,9 +5923,9 @@
 "pincodes": [
 "700078"
 ],
-"lat": 22.5076186,
-"lon": 88.38383853333333,
-"locality": "Haltu SO"
+"lat": 22.5081944,
+"lon": 88.3791667,
+"locality": "PURBACHAL MAIN ROAD SO"
 },
 {
 "city": "Kolkata",
@@ -5935,8 +5935,8 @@
 "pincodes": [
 "700082"
 ],
-"lat": 22.5222914,
-"lon": 88.34368549999999,
+"lat": 22.471805,
+"lon": 88.339871,
 "locality": "Haridevpur SO"
 },
 {
@@ -5983,9 +5983,9 @@
 "pincodes": [
 "700094"
 ],
-"lat": 22.487982033333335,
-"lon": 88.39712473333334,
-"locality": "Panchasayar SO"
+"lat": 22.483,
+"lon": 88.391,
+"locality": "Baishnab Ghata Patuli Township SO"
 },
 {
 "city": "Kolkata",
@@ -6007,9 +6007,9 @@
 "pincodes": [
 "700099"
 ],
-"lat": 22.4954527,
-"lon": 88.4017125,
-"locality": "Mukundapur SO"
+"lat": 22.4996388,
+"lon": 88.397375,
+"locality": "Kalikapur SO"
 },
 {
 "city": "Kolkata",
@@ -6031,9 +6031,9 @@
 "pincodes": [
 "700107"
 ],
-"lat": 22.5093758,
-"lon": 88.40471485,
-"locality": "Madurdaha SO"
+"lat": 22.5128611,
+"lon": 88.4049722,
+"locality": "EKT SO"
 },
 {
 "city": "Kolkata",
@@ -6276,16 +6276,16 @@
 "locality": "Kosmada BO"
 },
 {
-"city": "Noida",
+"city": "Ghaziabad",
 "pincode": "201009",
 "tier": 1,
 "represents": 1,
 "pincodes": [
 "201009"
 ],
-"lat": 28.64701677,
-"lon": 77.44141692,
-"locality": "Chhapraula BO"
+"lat": 28.6845277,
+"lon": 77.4284722,
+"locality": "Dundaheda BO"
 },
 {
 "city": "Noida",
@@ -6307,8 +6307,8 @@
 "pincodes": [
 "201305"
 ],
-"lat": 24.948850999999998,
-"lon": 77.976603,
+"lat": 28.539212,
+"lon": 77.406374,
 "locality": "Nagla Charandas BO"
 },
 {
@@ -6319,8 +6319,8 @@
 "pincodes": [
 "201306"
 ],
-"lat": 26.739802333333333,
-"lon": 77.80609666666668,
+"lat": 28.5308,
+"lon": 77.4599,
 "locality": "Kulesra BO"
 },
 {
@@ -6331,8 +6331,8 @@
 "pincodes": [
 "201307"
 ],
-"lat": 25.10219066666667,
-"lon": 78.17665133333333,
+"lat": 28.584932,
+"lon": 77.38699,
 "locality": "Sarfabad BO"
 },
 {
@@ -6343,9 +6343,9 @@
 "pincodes": [
 "201309"
 ],
-"lat": 25.246191666666665,
-"lon": 78.137134,
-"locality": "Sec62 Noida SO"
+"lat": 28.624805,
+"lon": 77.402992,
+"locality": "Chhajarsi BO"
 },
 {
 "city": "Noida",
@@ -6355,8 +6355,8 @@
 "pincodes": [
 "201310"
 ],
-"lat": 26.6521175,
-"lon": 77.1233612,
+"lat": 28.479522,
+"lon": 77.572063,
 "locality": "Sakipur BO"
 },
 {
@@ -6367,8 +6367,8 @@
 "pincodes": [
 "201314"
 ],
-"lat": 28.540864666666664,
-"lon": 77.51132133333334,
+"lat": 28.490659,
+"lon": 77.623541,
 "locality": "Kot BO"
 },
 {
@@ -6391,8 +6391,8 @@
 "pincodes": [
 "122001"
 ],
-"lat": 28.46114021818182,
-"lon": 77.02951565454545,
+"lat": 28.4486944,
+"lon": 77.0293056,
 "locality": "Gurgaon HO"
 },
 {
@@ -6415,8 +6415,8 @@
 "pincodes": [
 "122003"
 ],
-"lat": 28.44960056,
-"lon": 77.06522058,
+"lat": 28.462,
+"lon": 77.0316389,
 "locality": "Jharsa BO"
 },
 {
@@ -6427,8 +6427,8 @@
 "pincodes": [
 "122004"
 ],
-"lat": 28.413813233333332,
-"lon": 76.99296301666668,
+"lat": 28.413887,
+"lon": 76.9931945,
 "locality": "Khandsa BO"
 },
 {
@@ -6451,8 +6451,8 @@
 "pincodes": [
 "122006"
 ],
-"lat": 28.469851525,
-"lon": 77.03257672500001,
+"lat": 28.4227222,
+"lon": 77.1031389,
 "locality": "Basai BO"
 },
 {
@@ -6559,8 +6559,8 @@
 "pincodes": [
 "122017"
 ],
-"lat": 28.48461725,
-"lon": 77.0315932,
+"lat": 28.462,
+"lon": 77.0316389,
 "locality": "Carterpuri BO"
 },
 {
@@ -6583,8 +6583,8 @@
 "pincodes": [
 "122051"
 ],
-"lat": 28.343123499999997,
-"lon": 76.9401834,
+"lat": 28.344247,
+"lon": 76.943839,
 "locality": "Kasan BO"
 },
 {
@@ -6619,8 +6619,8 @@
 "pincodes": [
 "122101"
 ],
-"lat": 28.39167242,
-"lon": 77.05193790000001,
+"lat": 28.3913822,
+"lon": 77.0511932,
 "locality": "Fazilpur BO"
 },
 {
@@ -6631,8 +6631,8 @@
 "pincodes": [
 "122102"
 ],
-"lat": 28.347121042857143,
-"lon": 77.06433475714286,
+"lat": 28.352169,
+"lon": 77.06471,
 "locality": "Raisina BO"
 },
 {
@@ -6643,8 +6643,8 @@
 "pincodes": [
 "122103"
 ],
-"lat": 28.261108250000007,
-"lon": 77.06594581666666,
+"lat": 28.40025,
+"lon": 77.0675278,
 "locality": "Daulah BO"
 },
 {
@@ -6655,8 +6655,8 @@
 "pincodes": [
 "122414"
 ],
-"lat": 28.274485833333333,
-"lon": 76.73141231666666,
+"lat": 28.271733,
+"lon": 76.740867,
 "locality": "Khatauli BO"
 },
 {
@@ -6667,9 +6667,9 @@
 "pincodes": [
 "122502"
 ],
-"lat": 28.29142934166667,
-"lon": 76.69573051666667,
-"locality": "Cheelarh BO"
+"lat": 28.292981,
+"lon": 76.697254,
+"locality": "Jasat BO"
 },
 {
 "city": "Gurugram",
@@ -6679,8 +6679,8 @@
 "pincodes": [
 "122503"
 ],
-"lat": 28.326806542857145,
-"lon": 76.77723482857142,
+"lat": 28.325728,
+"lon": 76.777811,
 "locality": "Baslambi BO"
 },
 {
@@ -6691,8 +6691,8 @@
 "pincodes": [
 "122504"
 ],
-"lat": 28.4505339625,
-"lon": 77.04056213749999,
+"lat": 28.467015,
+"lon": 77.081198,
 "locality": "Jatauli BO"
 },
 {
@@ -6703,8 +6703,8 @@
 "pincodes": [
 "122505"
 ],
-"lat": 28.424405366666665,
-"lon": 76.91778906666667,
+"lat": 28.4384722,
+"lon": 76.9354444,
 "locality": "Budhera BO"
 },
 {
@@ -6715,8 +6715,8 @@
 "pincodes": [
 "122506"
 ],
-"lat": 28.44729792,
-"lon": 76.82487582,
+"lat": 28.446796,
+"lon": 76.825692,
 "locality": "Khera Khurampur BO"
 },
 {
@@ -7075,8 +7075,8 @@
 "pincodes": [
 "226001"
 ],
-"lat": 26.849856654545455,
-"lon": 80.94430159090909,
+"lat": 26.8555421,
+"lon": 80.9304329,
 "locality": "Lucknow GPO"
 },
 {
@@ -7087,8 +7087,8 @@
 "pincodes": [
 "226003"
 ],
-"lat": 26.86390759444445,
-"lon": 80.90940078333331,
+"lat": 26.846694,
+"lon": 80.946166,
 "locality": "Lucknow Chowk HO"
 },
 {
@@ -7099,9 +7099,9 @@
 "pincodes": [
 "226004"
 ],
-"lat": 26.846229780000005,
-"lon": 80.92525979,
-"locality": "Rajendranagar SO Lucknow"
+"lat": 26.8447,
+"lon": 80.945626,
+"locality": "Aishbagh SO"
 },
 {
 "city": "Lucknow",
@@ -7111,9 +7111,9 @@
 "pincodes": [
 "226005"
 ],
-"lat": 26.825984077777775,
-"lon": 80.91852002222221,
-"locality": "Alambagh SO"
+"lat": 26.831361,
+"lon": 80.925643,
+"locality": "Barha SO"
 },
 {
 "city": "Lucknow",
@@ -7123,9 +7123,9 @@
 "pincodes": [
 "226006"
 ],
-"lat": 26.87565275,
-"lon": 80.959625,
-"locality": "Mahanagar SO"
+"lat": 26.86875,
+"lon": 80.95875,
+"locality": "M N Colony SO"
 },
 {
 "city": "Lucknow",
@@ -7135,9 +7135,9 @@
 "pincodes": [
 "226007"
 ],
-"lat": 26.8659548,
-"lon": 80.9512122,
-"locality": "New Hyderabad SO"
+"lat": 26.8659444,
+"lon": 80.9511666,
+"locality": "R P Line SO"
 },
 {
 "city": "Lucknow",
@@ -7147,9 +7147,9 @@
 "pincodes": [
 "226009"
 ],
-"lat": 26.8074445,
-"lon": 80.9121125,
-"locality": "AMAUSI AD SO"
+"lat": 26.8447,
+"lon": 80.945626,
+"locality": "Industrial Area SO"
 },
 {
 "city": "Lucknow",
@@ -7159,8 +7159,8 @@
 "pincodes": [
 "226010"
 ],
-"lat": 26.863002,
-"lon": 80.85799507142858,
+"lat": 26.8625555,
+"lon": 80.9909444,
 "locality": "Maleshemau BO"
 },
 {
@@ -7183,8 +7183,8 @@
 "pincodes": [
 "226012"
 ],
-"lat": 26.823256,
-"lon": 80.9181385,
+"lat": 26.85073,
+"lon": 80.92535,
 "locality": "LDA Colony SO"
 },
 {
@@ -7195,8 +7195,8 @@
 "pincodes": [
 "226013"
 ],
-"lat": 26.904178666666667,
-"lon": 80.92659366666668,
+"lat": 26.8447,
+"lon": 80.945626,
 "locality": "Ghaila BO"
 },
 {
@@ -7231,9 +7231,9 @@
 "pincodes": [
 "226016"
 ],
-"lat": 26.87924185,
-"lon": 80.99157107,
-"locality": "Indira Nagar SO"
+"lat": 26.8676944,
+"lon": 80.9778888,
+"locality": "Narain Nagar SO"
 },
 {
 "city": "Lucknow",
@@ -7243,9 +7243,9 @@
 "pincodes": [
 "226018"
 ],
-"lat": 26.839782449999994,
-"lon": 80.92866081999999,
-"locality": "Aminabad Park SO"
+"lat": 26.85073,
+"lon": 80.92535,
+"locality": "Golaganj SO"
 },
 {
 "city": "Lucknow",
@@ -7255,9 +7255,9 @@
 "pincodes": [
 "226020"
 ],
-"lat": 26.885291757142856,
-"lon": 80.94206544285714,
-"locality": "Niralanagar SO"
+"lat": 26.85073,
+"lon": 80.92535,
+"locality": "Navinmandi SO"
 },
 {
 "city": "Lucknow",
@@ -7267,9 +7267,9 @@
 "pincodes": [
 "226021"
 ],
-"lat": 26.907681233333335,
-"lon": 80.95029813333333,
-"locality": "Jankipuram SO"
+"lat": 26.906258,
+"lon": 80.948475,
+"locality": "Batha Sabauli BO"
 },
 {
 "city": "Lucknow",
@@ -7279,8 +7279,8 @@
 "pincodes": [
 "226022"
 ],
-"lat": 26.89681615,
-"lon": 80.96458415000001,
+"lat": 26.8958333,
+"lon": 80.9585833,
 "locality": "Vikas Nagar SO"
 },
 {
@@ -7291,8 +7291,8 @@
 "pincodes": [
 "226023"
 ],
-"lat": 26.8208665,
-"lon": 80.91526200000001,
+"lat": 26.8447,
+"lon": 80.945626,
 "locality": "MANAS NAGAR SO"
 },
 {
@@ -7303,9 +7303,9 @@
 "pincodes": [
 "226024"
 ],
-"lat": 26.893408300000004,
-"lon": 80.94589673333333,
-"locality": "Aliganj SO"
+"lat": 26.8795833,
+"lon": 80.9426111,
+"locality": "Aliganj Extension SO"
 },
 {
 "city": "Lucknow",
@@ -7339,8 +7339,8 @@
 "pincodes": [
 "226028"
 ],
-"lat": 26.88148625,
-"lon": 81.010286125,
+"lat": 26.895957,
+"lon": 80.958528,
 "locality": "Amraigaon BO"
 },
 {
@@ -7387,8 +7387,8 @@
 "pincodes": [
 "226201"
 ],
-"lat": 26.971468000000005,
-"lon": 80.9118294,
+"lat": 26.8447,
+"lon": 80.945626,
 "locality": "SAIRPUR BO"
 },
 {
@@ -7399,8 +7399,8 @@
 "pincodes": [
 "226302"
 ],
-"lat": 26.9037306,
-"lon": 80.9534262,
+"lat": 26.868479,
+"lon": 80.907941,
 "locality": "Dayalpur BO"
 },
 {
@@ -7411,9 +7411,9 @@
 "pincodes": [
 "160001"
 ],
-"lat": 30.7594611,
-"lon": 76.80309813333334,
-"locality": "New Sectt Chandigarh SO"
+"lat": 30.7573,
+"lon": 76.8066,
+"locality": "High Court SO Chandigarh"
 },
 {
 "city": "Chandigarh",
@@ -7423,8 +7423,8 @@
 "pincodes": [
 "160002"
 ],
-"lat": 30.691591066666664,
-"lon": 76.76118296666667,
+"lat": 30.6923611,
+"lon": 76.7909167,
 "locality": "Hallomajra BO"
 },
 {
@@ -7435,8 +7435,8 @@
 "pincodes": [
 "160003"
 ],
-"lat": 30.684289399999997,
-"lon": 76.7465939,
+"lat": 30.6765278,
+"lon": 76.7947778,
 "locality": "Behlana BO"
 },
 {
@@ -7471,9 +7471,9 @@
 "pincodes": [
 "160009"
 ],
-"lat": 30.74430555,
-"lon": 76.79504165,
-"locality": "Sector 9 Chandigarh SO"
+"lat": 30.7406944,
+"lon": 76.79725,
+"locality": "Sector 8Chandgarh SO"
 },
 {
 "city": "Chandigarh",
@@ -7483,8 +7483,8 @@
 "pincodes": [
 "160011"
 ],
-"lat": 30.756722250000003,
-"lon": 76.78575000000001,
+"lat": 30.7535278,
+"lon": 76.7876111,
 "locality": "Sector 11 Chandigarh SO"
 },
 {
@@ -7495,9 +7495,9 @@
 "pincodes": [
 "160012"
 ],
-"lat": 30.7543194,
-"lon": 76.7834861,
-"locality": "Sector 12 Chandigarh SO"
+"lat": 30.7420833,
+"lon": 76.7833611,
+"locality": "Engg College SO"
 },
 {
 "city": "Chandigarh",
@@ -7507,9 +7507,9 @@
 "pincodes": [
 "160014"
 ],
-"lat": 30.71767502,
-"lon": 76.72056821999999,
-"locality": "Behlolpur BO"
+"lat": 30.7576944,
+"lon": 76.7686111,
+"locality": "Dhanas BO"
 },
 {
 "city": "Chandigarh",
@@ -7543,8 +7543,8 @@
 "pincodes": [
 "160018"
 ],
-"lat": 30.73716665,
-"lon": 76.78965275,
+"lat": 30.7354722,
+"lon": 76.7874444,
 "locality": "Sector 18 Chandigarh SO"
 },
 {
@@ -7555,9 +7555,9 @@
 "pincodes": [
 "160019"
 ],
-"lat": 30.727920275000002,
-"lon": 76.8038375,
-"locality": "Sector 19 Chandigarh SO"
+"lat": 30.7263611,
+"lon": 76.7961944,
+"locality": "Raj Bhawan SO Chandigarh"
 },
 {
 "city": "Chandigarh",
@@ -7579,8 +7579,8 @@
 "pincodes": [
 "160022"
 ],
-"lat": 30.725069474999998,
-"lon": 76.76956944999999,
+"lat": 30.7248056,
+"lon": 76.7795556,
 "locality": "Sector 22 Chandigarh SO"
 },
 {
@@ -7603,9 +7603,9 @@
 "pincodes": [
 "160030"
 ],
-"lat": 30.7264448,
-"lon": 76.77729000000001,
-"locality": "Sector 30 Chandigarh SO"
+"lat": 30.7113611,
+"lon": 76.7906389,
+"locality": "Sector 29 Chandigarh SO"
 },
 {
 "city": "Chandigarh",
@@ -7615,8 +7615,8 @@
 "pincodes": [
 "160036"
 ],
-"lat": 30.710368833333334,
-"lon": 76.72572926666666,
+"lat": 30.7345833,
+"lon": 76.7523611,
 "locality": "Badheri BO"
 },
 {
@@ -7639,8 +7639,8 @@
 "pincodes": [
 "160101"
 ],
-"lat": 30.703414374999998,
-"lon": 76.7680939,
+"lat": 30.7159722,
+"lon": 76.8318056,
 "locality": "Kishangarh BO"
 },
 {
@@ -7651,8 +7651,8 @@
 "pincodes": [
 "160102"
 ],
-"lat": 30.6921644,
-"lon": 76.75401055,
+"lat": 30.6922778,
+"lon": 76.8096111,
 "locality": "Raipur Kalan BO"
 },
 {
@@ -8347,8 +8347,8 @@
 "pincodes": [
 "641001"
 ],
-"lat": 10.995448,
-"lon": 76.959734,
+"lat": 10.99964,
+"lon": 76.9637,
 "locality": "Coimbatore HO"
 },
 {
@@ -8359,8 +8359,8 @@
 "pincodes": [
 "641002"
 ],
-"lat": 11.0095,
-"lon": 76.953,
+"lat": 11.009,
+"lon": 76.955,
 "locality": "Rathinasabapathy Puram HO"
 },
 {
@@ -8395,9 +8395,9 @@
 "pincodes": [
 "641006"
 ],
-"lat": 11.042717733333333,
-"lon": 76.9708378,
-"locality": "Ganapathy SO"
+"lat": 11.033,
+"lon": 76.9787,
+"locality": "Krishnarayapuram BO"
 },
 {
 "city": "Coimbatore",
@@ -8407,9 +8407,9 @@
 "pincodes": [
 "641007"
 ],
-"lat": 11.005713,
-"lon": 76.90555044,
-"locality": "Sundapalayam BO"
+"lat": 11.0104946,
+"lon": 76.9308916,
+"locality": "Veerakeralam BO"
 },
 {
 "city": "Coimbatore",
@@ -8419,9 +8419,9 @@
 "pincodes": [
 "641008"
 ],
-"lat": 10.952767200000002,
-"lon": 76.95480553333334,
-"locality": "Kuniamuthur SO"
+"lat": 10.98469,
+"lon": 76.9635,
+"locality": "Sugunapuram BO"
 },
 {
 "city": "Coimbatore",
@@ -8455,9 +8455,9 @@
 "pincodes": [
 "641012"
 ],
-"lat": 11.01969415,
-"lon": 76.962067,
-"locality": "Tatabad SO"
+"lat": 11.0209883,
+"lon": 76.966334,
+"locality": "Gandhipuram SO Coimbatore"
 },
 {
 "city": "Coimbatore",
@@ -8479,9 +8479,9 @@
 "pincodes": [
 "641014"
 ],
-"lat": 11.02581,
-"lon": 77.02456000000001,
-"locality": "Coimbatore Aerodrome SO"
+"lat": 11.03162,
+"lon": 77.01912,
+"locality": "Coimbatore Tidel Park SO"
 },
 {
 "city": "Coimbatore",
@@ -8503,8 +8503,8 @@
 "pincodes": [
 "641016"
 ],
-"lat": 11.008174839999999,
-"lon": 77.00776742000001,
+"lat": 11.00594,
+"lon": 77.04707,
 "locality": "Pattanam BO"
 },
 {
@@ -8515,9 +8515,9 @@
 "pincodes": [
 "641018"
 ],
-"lat": 11.002238428571431,
-"lon": 76.97298657142856,
-"locality": "Coimbatore Central SO"
+"lat": 10.998,
+"lon": 76.983,
+"locality": "Coimbatore Racecourse SO"
 },
 {
 "city": "Coimbatore",
@@ -8527,8 +8527,8 @@
 "pincodes": [
 "641021"
 ],
-"lat": 10.9321025,
-"lon": 76.9774725,
+"lat": 10.94123,
+"lon": 76.97203,
 "locality": "Eachanari BO"
 },
 {
@@ -8539,8 +8539,8 @@
 "pincodes": [
 "641022"
 ],
-"lat": 11.104638366666668,
-"lon": 76.95602180000002,
+"lat": 11.09,
+"lon": 76.9449,
 "locality": "Sengalipalayam BO"
 },
 {
@@ -8551,9 +8551,9 @@
 "pincodes": [
 "641023"
 ],
-"lat": 10.964523333333332,
-"lon": 76.99154886666666,
-"locality": "Podanur SO"
+"lat": 10.965,
+"lon": 76.9882,
+"locality": "Konavaikalpalayam BO"
 },
 {
 "city": "Coimbatore",
@@ -8575,9 +8575,9 @@
 "pincodes": [
 "641025"
 ],
-"lat": 11.037664549999999,
-"lon": 76.92874845,
-"locality": "Velandipalayam SO"
+"lat": 11.035012,
+"lon": 76.9334,
+"locality": "Edayarpalayam BO"
 },
 {
 "city": "Coimbatore",
@@ -8587,9 +8587,9 @@
 "pincodes": [
 "641026"
 ],
-"lat": 10.988748300000001,
-"lon": 76.94009915000001,
-"locality": "Komarapalayam Coimbatore SO"
+"lat": 10.9891966,
+"lon": 76.9442983,
+"locality": "Selvapuram BO"
 },
 {
 "city": "Coimbatore",
@@ -8611,9 +8611,9 @@
 "pincodes": [
 "641028"
 ],
-"lat": 11.00250165,
-"lon": 76.99637045,
-"locality": "Sowripalayam SO"
+"lat": 10.9935302,
+"lon": 76.9905,
+"locality": "Odayampalayam BO"
 },
 {
 "city": "Coimbatore",
@@ -8623,8 +8623,8 @@
 "pincodes": [
 "641029"
 ],
-"lat": 11.06692245,
-"lon": 76.95043665,
+"lat": 11.05991,
+"lon": 76.94619,
 "locality": "Vellakinar BO"
 },
 {
@@ -8635,9 +8635,9 @@
 "pincodes": [
 "641030"
 ],
-"lat": 11.0445558,
-"lon": 76.93944765,
-"locality": "Kavundampalayam Colony SO"
+"lat": 11.044519,
+"lon": 76.94112,
+"locality": "Kavundampalayam BO"
 },
 {
 "city": "Coimbatore",
@@ -8647,8 +8647,8 @@
 "pincodes": [
 "641031"
 ],
-"lat": 11.11005545,
-"lon": 76.94041849999999,
+"lat": 11.1055299,
+"lon": 76.94336,
 "locality": "Rakkipalayam BO"
 },
 {
@@ -8683,8 +8683,8 @@
 "pincodes": [
 "641035"
 ],
-"lat": 11.058785333333333,
-"lon": 76.9305602,
+"lat": 11.07529,
+"lon": 77.00274,
 "locality": "Keeranatham BO"
 },
 {
@@ -8731,8 +8731,8 @@
 "pincodes": [
 "641041"
 ],
-"lat": 11.022355,
-"lon": 76.910675,
+"lat": 11.01982,
+"lon": 76.922,
 "locality": "Pappanaickenpudur SO"
 },
 {
@@ -8755,9 +8755,9 @@
 "pincodes": [
 "641045"
 ],
-"lat": 11.004100000000001,
-"lon": 77.01699500000001,
-"locality": "Ramanathapuram Coimbatore SO"
+"lat": 10.997,
+"lon": 76.9978,
+"locality": "Krishnaswamy Nagar SO"
 },
 {
 "city": "Coimbatore",
@@ -8779,8 +8779,8 @@
 "pincodes": [
 "641103"
 ],
-"lat": 11.014093133333333,
-"lon": 77.07632201666667,
+"lat": 11.0040533,
+"lon": 77.0628883,
 "locality": "Athappagoundenpudur BO"
 },
 {
@@ -8791,9 +8791,9 @@
 "pincodes": [
 "641111"
 ],
-"lat": 10.990705,
-"lon": 76.99865750000001,
-"locality": "Vellalore SO"
+"lat": 11.006,
+"lon": 76.96895,
+"locality": "Vellalapalayam Podanur BO"
 },
 {
 "city": "Coimbatore",
@@ -8815,8 +8815,8 @@
 "pincodes": [
 "440001"
 ],
-"lat": 21.115819442499998,
-"lon": 79.13701389,
+"lat": 21.15219444,
+"lon": 79.06916667,
 "locality": "Nagpur GPO"
 },
 {
@@ -8827,8 +8827,8 @@
 "pincodes": [
 "440003"
 ],
-"lat": 21.129527775,
-"lon": 79.08822222500001,
+"lat": 21.13622222,
+"lon": 79.09141667,
 "locality": "Ajni S.O"
 },
 {
@@ -8875,9 +8875,9 @@
 "pincodes": [
 "440012"
 ],
-"lat": 21.139772221999998,
-"lon": 79.084394446,
-"locality": "Patwardhan Ground S.O"
+"lat": 21.1435,
+"lon": 79.08483333,
+"locality": "Congress Nagar S.O (Nagpur)"
 },
 {
 "city": "Nagpur",
@@ -8887,9 +8887,9 @@
 "pincodes": [
 "440013"
 ],
-"lat": 21.174999999999997,
-"lon": 79.062375,
-"locality": "Katolroad S.O"
+"lat": 21.17033333,
+"lon": 79.06975,
+"locality": "Borgaon Road S.O"
 },
 {
 "city": "Nagpur",
@@ -8899,8 +8899,8 @@
 "pincodes": [
 "440014"
 ],
-"lat": 21.17359722,
-"lon": 79.09009721999999,
+"lat": 21.16772222,
+"lon": 79.09047222,
 "locality": "Jaripatka S.O"
 },
 {
@@ -8911,9 +8911,9 @@
 "pincodes": [
 "440017"
 ],
-"lat": 21.170597225,
-"lon": 79.107666665,
-"locality": "Dr.Ambedkar Marg S.O"
+"lat": 21.17030556,
+"lon": 79.10033333,
+"locality": "Panchsheel Nagar S.O"
 },
 {
 "city": "Nagpur",
@@ -8923,9 +8923,9 @@
 "pincodes": [
 "440018"
 ],
-"lat": 21.151448426666665,
-"lon": 79.09557784333334,
-"locality": "Mahatma Fule Bazar S.O"
+"lat": 21.14566667,
+"lon": 79.0905,
+"locality": "Ganjipeth S.O"
 },
 {
 "city": "Nagpur",
@@ -8971,9 +8971,9 @@
 "pincodes": [
 "440022"
 ],
-"lat": 21.136833335,
-"lon": 79.080097225,
-"locality": "Ranapratap Nagar S.O"
+"lat": 21.14580556,
+"lon": 79.08813889,
+"locality": "Laxmi Nagar S.O (Nagpur)"
 },
 {
 "city": "Nagpur",
@@ -8983,9 +8983,9 @@
 "pincodes": [
 "440024"
 ],
-"lat": 21.122675928333333,
-"lon": 79.11420833333334,
-"locality": "Ayodhya Nagar S.O"
+"lat": 21.12963889,
+"lon": 79.10511111,
+"locality": "Manewada Road S.O"
 },
 {
 "city": "Nagpur",
@@ -9019,8 +9019,8 @@
 "pincodes": [
 "440030"
 ],
-"lat": 21.165541644999998,
-"lon": 79.07443057,
+"lat": 21.1521944,
+"lon": 79.0691667,
 "locality": "Mankapur S.O (Nagpur)"
 },
 {
@@ -9115,8 +9115,8 @@
 "pincodes": [
 "441501"
 ],
-"lat": 20.733800370000004,
-"lon": 78.61299790999999,
+"lat": 21.225287,
+"lon": 79.010821,
 "locality": "Dhapewada B.O"
 },
 {
@@ -9631,8 +9631,8 @@
 "pincodes": [
 "391774"
 ],
-"lat": 16.688737176923077,
-"lon": 74.21289956923079,
+"lat": 22.3035833,
+"lon": 73.1976944,
 "locality": "Itwad BO"
 },
 {
@@ -10027,9 +10027,9 @@
 "pincodes": [
 "422002"
 ],
-"lat": 19.9967445,
-"lon": 73.7787375,
-"locality": "Gole Colony S.O"
+"lat": 20.00505,
+"lon": 73.83675,
+"locality": "Jeevan Prakash S.O"
 },
 {
 "city": "Nashik",
@@ -10075,8 +10075,8 @@
 "pincodes": [
 "422010"
 ],
-"lat": 19.78720174,
-"lon": 74.47394688,
+"lat": 19.96415,
+"lon": 73.80305,
 "locality": "Pathardi B.O"
 },
 {
@@ -10111,9 +10111,9 @@
 "pincodes": [
 "422013"
 ],
-"lat": 20.00758,
-"lon": 73.75300666666668,
-"locality": "Sawarkar Nagar S.O"
+"lat": 19.96224,
+"lon": 73.86842,
+"locality": "Bhonsala Military School B.O"
 },
 {
 "city": "Nashik",
@@ -10123,8 +10123,8 @@
 "pincodes": [
 "422101"
 ],
-"lat": 19.9652785,
-"lon": 73.86073950000001,
+"lat": 19.96415,
+"lon": 73.87045,
 "locality": "Nashik Road H.O"
 },
 {
@@ -10135,8 +10135,8 @@
 "pincodes": [
 "422105"
 ],
-"lat": 19.941645700000002,
-"lon": 73.83484485,
+"lat": 19.9568914,
+"lon": 73.9036397,
 "locality": "Kotamgaon B.O"
 },
 {
@@ -10171,8 +10171,8 @@
 "pincodes": [
 "570001"
 ],
-"lat": 12.314868065,
-"lon": 76.654381955,
+"lat": 12.31733333,
+"lon": 76.64769444,
 "locality": "Mysuru H.O"
 },
 {
@@ -10183,9 +10183,9 @@
 "pincodes": [
 "570002"
 ],
-"lat": 12.327277775,
-"lon": 76.62838889,
-"locality": "Vani Vilas Mohalla S.O"
+"lat": 12.32222222,
+"lon": 76.62902778,
+"locality": "Gokulam S.O"
 },
 {
 "city": "Mysuru",
@@ -10207,9 +10207,9 @@
 "pincodes": [
 "570004"
 ],
-"lat": 12.299076578000001,
-"lon": 76.647576134,
-"locality": "Lakshmipuram S.O (Mysuru)"
+"lat": 12.30269444,
+"lon": 76.64327778,
+"locality": "Krishnamurthypuram S.O"
 },
 {
 "city": "Mysuru",
@@ -10219,9 +10219,9 @@
 "pincodes": [
 "570005"
 ],
-"lat": 12.30388889,
-"lon": 76.63847222,
-"locality": "Mysuru University S.O"
+"lat": 12.30805556,
+"lon": 76.63897222,
+"locality": "Mysuru Law Courts S.O"
 },
 {
 "city": "Mysuru",
@@ -10231,7 +10231,7 @@
 "pincodes": [
 "570006"
 ],
-"lat": 12.313166684999999,
+"lat": 12.3131667,
 "lon": 76.61325,
 "locality": "Manasagangothri S.O"
 },
@@ -10267,8 +10267,8 @@
 "pincodes": [
 "570010"
 ],
-"lat": 12.306069445,
-"lon": 76.66484722,
+"lat": 12.30402778,
+"lon": 76.66194444,
 "locality": "Varakodu B.O"
 },
 {
@@ -10315,8 +10315,8 @@
 "pincodes": [
 "570015"
 ],
-"lat": 12.33766667,
-"lon": 76.652055555,
+"lat": 12.33166667,
+"lon": 76.65038889,
 "locality": "Bannimantap S.O"
 },
 {
@@ -10327,9 +10327,9 @@
 "pincodes": [
 "570016"
 ],
-"lat": 12.343041665000001,
-"lon": 76.623208335,
-"locality": "Metagalli S.O"
+"lat": 12.33922222,
+"lon": 76.63152778,
+"locality": "Hebbal Layout S.O"
 },
 {
 "city": "Mysuru",
@@ -10399,8 +10399,8 @@
 "pincodes": [
 "570023"
 ],
-"lat": 12.302555569999999,
-"lon": 76.640694465,
+"lat": 12.3141667,
+"lon": 76.6565556,
 "locality": "Kuvempunagar S.O (Mysuru)"
 },
 {
@@ -10843,8 +10843,8 @@
 "pincodes": [
 "110005"
 ],
-"lat": 28.6500278,
-"lon": 77.1938333,
+"lat": 28.6488333,
+"lon": 77.1821111,
 "locality": "Master Prithvi Nath Marg SO"
 },
 {
@@ -10855,8 +10855,8 @@
 "pincodes": [
 "110020"
 ],
-"lat": 28.52,
-"lon": 77.29,
+"lat": 28.5577222,
+"lon": 77.2648333,
 "locality": "Tehkhand BO"
 },
 {
@@ -10867,8 +10867,8 @@
 "pincodes": [
 "110043"
 ],
-"lat": 28.520905,
-"lon": 76.964011,
+"lat": 28.602626,
+"lon": 77.089702,
 "locality": "Jhatikara B.O"
 },
 {
@@ -10903,8 +10903,8 @@
 "pincodes": [
 "110080"
 ],
-"lat": 28.5,
-"lon": 77.23,
+"lat": 28.5105278,
+"lon": 77.2424167,
 "locality": "Deoli BO"
 },
 {
@@ -10915,8 +10915,8 @@
 "pincodes": [
 "110082"
 ],
-"lat": 77.119,
-"lon": 28.7721666,
+"lat": 28.7721666,
+"lon": 77.119,
 "locality": "Holambi Kalan BO"
 },
 {
@@ -10927,8 +10927,8 @@
 "pincodes": [
 "110073"
 ],
-"lat": 28.609773,
-"lon": 76.893434,
+"lat": 28.5838,
+"lon": 76.936906,
 "locality": "Mundela Kalan B.O"
 },
 {
@@ -10951,8 +10951,8 @@
 "pincodes": [
 "400032"
 ],
-"lat": 72.8302,
-"lon": 18.9311,
+"lat": 18.96775,
+"lon": 72.8216944,
 "locality": "High Court Building SO Mumbai"
 },
 {
@@ -10987,8 +10987,8 @@
 "pincodes": [
 "400043"
 ],
-"lat": 19.0531944,
-"lon": 72.9253889,
+"lat": 18.96775,
+"lon": 72.8216944,
 "locality": "DM Colony SO"
 },
 {
@@ -11011,8 +11011,8 @@
 "pincodes": [
 "413102"
 ],
-"lat": 18.150009,
-"lon": 74.583291,
+"lat": 18.5364384,
+"lon": 74.2645718,
 "locality": "Baramati H.O"
 },
 {
@@ -11047,8 +11047,8 @@
 "pincodes": [
 "410405"
 ],
-"lat": 18.81043,
-"lon": 73.534014,
+"lat": 18.7277408,
+"lon": 73.6544302,
 "locality": "Karanjgaon B.O"
 },
 {
@@ -11071,8 +11071,8 @@
 "pincodes": [
 "410502"
 ],
-"lat": 19.209911,
-"lon": 73.772791,
+"lat": 19.139371,
+"lon": 73.840211,
 "locality": "Aptale B.O"
 },
 {
@@ -11083,8 +11083,8 @@
 "pincodes": [
 "410503"
 ],
-"lat": 19.034215,
-"lon": 74.2211,
+"lat": 18.98775,
+"lon": 73.9241,
 "locality": "Chandoli BK B.O"
 },
 {
@@ -11095,8 +11095,8 @@
 "pincodes": [
 "410504"
 ],
-"lat": 19.202221,
-"lon": 73.970175,
+"lat": 19.025468,
+"lon": 74.06673,
 "locality": "Hivare BK B.O"
 },
 {
@@ -11107,8 +11107,8 @@
 "pincodes": [
 "410505"
 ],
-"lat": 18.988502,
-"lon": 73.63596,
+"lat": 18.783539,
+"lon": 73.956555,
 "locality": "Ghotawadi B.O"
 },
 {
@@ -11119,8 +11119,8 @@
 "pincodes": [
 "410507"
 ],
-"lat": 18.7470593,
-"lon": 73.6863569,
+"lat": 18.7335278,
+"lon": 73.6751111,
 "locality": "Varale B.O"
 },
 {
@@ -11143,8 +11143,8 @@
 "pincodes": [
 "410509"
 ],
-"lat": 19.071975,
-"lon": 73.5359,
+"lat": 18.54131,
+"lon": 73.36421,
 "locality": "Bhimashankar B.O"
 },
 {
@@ -11179,8 +11179,8 @@
 "pincodes": [
 "410512"
 ],
-"lat": 18.99699,
-"lon": 73.53685,
+"lat": 18.949945,
+"lon": 73.905853,
 "locality": "Kurwandi B.O"
 },
 {
@@ -11191,8 +11191,8 @@
 "pincodes": [
 "410513"
 ],
-"lat": 18.963989,
-"lon": 73.780145,
+"lat": 18.694103,
+"lon": 73.532909,
 "locality": "Bibi B.O"
 },
 {
@@ -11263,8 +11263,8 @@
 "pincodes": [
 "411025"
 ],
-"lat": 18.389406,
-"lon": 73.700434,
+"lat": 18.399869,
+"lon": 73.786028,
 "locality": "Vardade B.O"
 },
 {
@@ -11275,8 +11275,8 @@
 "pincodes": [
 "411026"
 ],
-"lat": 18.52047,
-"lon": 73.300211,
+"lat": 18.63475,
+"lon": 73.83966667,
 "locality": "Bhosari I.E. S.O"
 },
 {
@@ -11395,8 +11395,8 @@
 "pincodes": [
 "412101"
 ],
-"lat": 18.7693514,
-"lon": 73.4041588,
+"lat": 18.652252,
+"lon": 73.741902,
 "locality": "Salumbre B.O"
 },
 {
@@ -11407,8 +11407,8 @@
 "pincodes": [
 "412102"
 ],
-"lat": 18.14476,
-"lon": 74.24445,
+"lat": 18.151182,
+"lon": 74.212063,
 "locality": "Khandobachi Wadi B.O"
 },
 {
@@ -11443,8 +11443,8 @@
 "pincodes": [
 "412105"
 ],
-"lat": 18.6856,
-"lon": 73.9441,
+"lat": 18.658572,
+"lon": 73.928634,
 "locality": "Charoli BK B.O"
 },
 {
@@ -11455,8 +11455,8 @@
 "pincodes": [
 "412106"
 ],
-"lat": 18.7,
-"lon": 73.6,
+"lat": 18.7277358,
+"lon": 73.6544352,
 "locality": "Inglun B.O"
 },
 {
@@ -11467,8 +11467,8 @@
 "pincodes": [
 "412108"
 ],
-"lat": 18.5010616,
-"lon": 73.5137574,
+"lat": 18.5232778,
+"lon": 73.6192778,
 "locality": "Belawade B.O"
 },
 {
@@ -11491,8 +11491,8 @@
 "pincodes": [
 "412202"
 ],
-"lat": 18.46266,
-"lon": 74.176474,
+"lat": 18.511201,
+"lon": 74.095035,
 "locality": "Bori Aindi B.O"
 },
 {
@@ -11503,8 +11503,8 @@
 "pincodes": [
 "412203"
 ],
-"lat": 18.529252,
-"lon": 74.336752,
+"lat": 18.509465,
+"lon": 74.320254,
 "locality": "Galandwadi B.O"
 },
 {
@@ -11515,8 +11515,8 @@
 "pincodes": [
 "412204"
 ],
-"lat": 18.3299,
-"lon": 74.438,
+"lat": 18.273442,
+"lon": 74.377375,
 "locality": "Bhondave Wadi B.O"
 },
 {
@@ -11527,8 +11527,8 @@
 "pincodes": [
 "412205"
 ],
-"lat": 18.3236,
-"lon": 73.88075,
+"lat": 18.5236,
+"lon": 73.8478,
 "locality": "Khed Shivapur B.O"
 },
 {
@@ -11539,8 +11539,8 @@
 "pincodes": [
 "412206"
 ],
-"lat": 18.1116564,
-"lon": 73.8596061,
+"lat": 18.235123,
+"lon": 73.761024,
 "locality": "Khanapur B.O"
 },
 {
@@ -11551,8 +11551,8 @@
 "pincodes": [
 "412207"
 ],
-"lat": 18.5458332,
-"lon": 74.20912,
+"lat": 18.5818056,
+"lon": 73.9815833,
 "locality": "Dahitane B.O"
 },
 {
@@ -11563,8 +11563,8 @@
 "pincodes": [
 "412208"
 ],
-"lat": 18.65725,
-"lon": 74.13765,
+"lat": 18.5275278,
+"lon": 73.8505,
 "locality": "Burunjwadi B.O"
 },
 {
@@ -11575,8 +11575,8 @@
 "pincodes": [
 "412209"
 ],
-"lat": 18.75943,
-"lon": 74.176841,
+"lat": 18.725814,
+"lon": 74.188582,
 "locality": "Ganegaon Khalasa B.O"
 },
 {
@@ -11587,8 +11587,8 @@
 "pincodes": [
 "412210"
 ],
-"lat": 18.8258964,
-"lon": 74.3792657,
+"lat": 18.658538,
+"lon": 74.423456,
 "locality": "Golegaon B.O"
 },
 {
@@ -11599,8 +11599,8 @@
 "pincodes": [
 "412211"
 ],
-"lat": 18.662771,
-"lon": 74.369084,
+"lat": 18.664467,
+"lon": 74.314754,
 "locality": "Alegaon B.O"
 },
 {
@@ -11623,8 +11623,8 @@
 "pincodes": [
 "412213"
 ],
-"lat": 18.23545,
-"lon": 73.83735,
+"lat": 18.5320397,
+"lon": 74.0314741,
 "locality": "Jambhali BK B.O"
 },
 {
@@ -11635,8 +11635,8 @@
 "pincodes": [
 "412214"
 ],
-"lat": 18.4630646,
-"lon": 74.5788799,
+"lat": 18.485367,
+"lon": 74.226025,
 "locality": "Bhandgaon B.O"
 },
 {
@@ -11659,8 +11659,8 @@
 "pincodes": [
 "412216"
 ],
-"lat": 18.609572,
-"lon": 74.1284,
+"lat": 18.628729,
+"lon": 74.03295,
 "locality": "Pimpri Sandas B.O"
 },
 {
@@ -11671,8 +11671,8 @@
 "pincodes": [
 "412218"
 ],
-"lat": 18.849897,
-"lon": 74.259382,
+"lat": 18.815115,
+"lon": 74.153356,
 "locality": "Amdabad B.O"
 },
 {
@@ -11695,8 +11695,8 @@
 "pincodes": [
 "412301"
 ],
-"lat": 18.366799,
-"lon": 73.974094,
+"lat": 18.5204363,
+"lon": 73.8567377,
 "locality": "Chambli B.O"
 },
 {
@@ -11707,8 +11707,8 @@
 "pincodes": [
 "412303"
 ],
-"lat": 18.29966,
-"lon": 74.248531,
+"lat": 18.4921495,
+"lon": 73.8615185,
 "locality": "Javalarjun B.O"
 },
 {
@@ -11731,8 +11731,8 @@
 "pincodes": [
 "412305"
 ],
-"lat": 18.2354602,
-"lon": 74.1181164,
+"lat": 18.52043,
+"lon": 73.856744,
 "locality": "Pingori B.O"
 },
 {
@@ -11743,8 +11743,8 @@
 "pincodes": [
 "412306"
 ],
-"lat": 18.105279,
-"lon": 74.352882,
+"lat": 18.135672,
+"lon": 74.267817,
 "locality": "Hol B.O"
 },
 {
@@ -11767,8 +11767,8 @@
 "pincodes": [
 "412311"
 ],
-"lat": 18.21345,
-"lon": 74.1043,
+"lat": 18.2481764,
+"lon": 73.9881381,
 "locality": "Hargude B.O"
 },
 {
@@ -11803,8 +11803,8 @@
 "pincodes": [
 "412402"
 ],
-"lat": 18.840507,
-"lon": 73.907187,
+"lat": 18.396,
+"lon": 73.8674,
 "locality": "Bhorgiri B.O"
 },
 {
@@ -11851,8 +11851,8 @@
 "pincodes": [
 "412406"
 ],
-"lat": 18.975906,
-"lon": 74.0447,
+"lat": 18.8786111,
+"lon": 73.8336111,
 "locality": "Nirgudsar B.O"
 },
 {
@@ -11863,8 +11863,8 @@
 "pincodes": [
 "412408"
 ],
-"lat": 19.100862,
-"lon": 73.827203,
+"lat": 19.028477,
+"lon": 73.79191,
 "locality": "Amondi B.O"
 },
 {
@@ -11875,8 +11875,8 @@
 "pincodes": [
 "412409"
 ],
-"lat": 19.301919,
-"lon": 73.824997,
+"lat": 19.209286,
+"lon": 73.872583,
 "locality": "Madh B.O"
 },
 {
@@ -11887,8 +11887,8 @@
 "pincodes": [
 "412410"
 ],
-"lat": 19.193108,
-"lon": 74.195554,
+"lat": 18.296279,
+"lon": 73.679432,
 "locality": "Nalavane B.O"
 },
 {
@@ -11899,8 +11899,8 @@
 "pincodes": [
 "412411"
 ],
-"lat": 19.109805,
-"lon": 74.107811,
+"lat": 18.52047,
+"lon": 73.300211,
 "locality": "Bori BK B.O"
 },
 {
@@ -11911,8 +11911,8 @@
 "pincodes": [
 "412412"
 ],
-"lat": 18.38025,
-"lon": 74.3646,
+"lat": 18.738736,
+"lon": 73.64273,
 "locality": "Kandali B.O"
 },
 {
@@ -11935,8 +11935,8 @@
 "pincodes": [
 "413104"
 ],
-"lat": 18.113074,
-"lon": 75.026953,
+"lat": 18.52047,
+"lon": 73.300211,
 "locality": "Belawadi B.O"
 },
 {
@@ -11947,8 +11947,8 @@
 "pincodes": [
 "413105"
 ],
-"lat": 18.4630616,
-"lon": 74.5788829,
+"lat": 18.4630636,
+"lon": 74.5788809,
 "locality": "Watluj B.O"
 },
 {
@@ -11959,8 +11959,8 @@
 "pincodes": [
 "413106"
 ],
-"lat": 18.102174,
-"lon": 75.095159,
+"lat": 18.145788,
+"lon": 74.95887,
 "locality": "Hingangaon B.O"
 },
 {
@@ -11971,8 +11971,8 @@
 "pincodes": [
 "413110"
 ],
-"lat": 18.150012,
-"lon": 74.583288,
+"lat": 18.15526,
+"lon": 74.4247,
 "locality": "Kambaleshwar B.O"
 },
 {
@@ -11983,8 +11983,8 @@
 "pincodes": [
 "413114"
 ],
-"lat": 18.113075,
-"lon": 75.026952,
+"lat": 18.0393333,
+"lon": 74.7870556,
 "locality": "Nimsakhar B.O"
 },
 {
@@ -11995,8 +11995,8 @@
 "pincodes": [
 "413115"
 ],
-"lat": 17.93815,
-"lon": 75.14465,
+"lat": 18.062955,
+"lon": 74.058988,
 "locality": "Malegaon IRR Colony B.O"
 },
 {
@@ -12007,8 +12007,8 @@
 "pincodes": [
 "413116"
 ],
-"lat": 18.081546,
-"lon": 74.519962,
+"lat": 18.52043,
+"lon": 73.856744,
 "locality": "Khandaj B.O"
 },
 {
@@ -12019,8 +12019,8 @@
 "pincodes": [
 "413120"
 ],
-"lat": 18.113074,
-"lon": 75.026953,
+"lat": 18.1064,
+"lon": 74.92185,
 "locality": "Ghotondi B.O"
 },
 {
@@ -12031,8 +12031,8 @@
 "pincodes": [
 "413130"
 ],
-"lat": 18.24175,
-"lon": 74.70862,
+"lat": 18.358252,
+"lon": 74.622476,
 "locality": "Chincholi B.O"
 },
 {
@@ -12043,8 +12043,8 @@
 "pincodes": [
 "413132"
 ],
-"lat": 18.1544441,
-"lon": 74.9716275,
+"lat": 18.1673462,
+"lon": 74.0109111,
 "locality": "Dalaj B.O"
 },
 {
@@ -12055,8 +12055,8 @@
 "pincodes": [
 "413133"
 ],
-"lat": 18.10683,
-"lon": 75.77747,
+"lat": 18.2288095,
+"lon": 74.5836679,
 "locality": "Saval B.O"
 },
 {
@@ -12079,8 +12079,8 @@
 "pincodes": [
 "413801"
 ],
-"lat": 18.46141,
-"lon": 74.56485,
+"lat": 18.457878,
+"lon": 74.531701,
 "locality": "Beam Wirelee Station B.O"
 },
 {
@@ -12091,7 +12091,7 @@
 "pincodes": [
 "413802"
 ],
-"lat": 18.395474,
+"lat": 18.5234,
 "lon": 74.524479,
 "locality": "Kurkumbh B.O"
 },
@@ -12103,8 +12103,8 @@
 "pincodes": [
 "412115"
 ],
-"lat": 18.501116,
-"lon": 73.750767,
+"lat": 18.5204303,
+"lon": 73.8567437,
 "locality": "Bhugaon B.O"
 },
 {
@@ -12115,8 +12115,8 @@
 "pincodes": [
 "440002"
 ],
-"lat": 21.58719444,
-"lon": 79.10186111,
+"lat": 21.15808333,
+"lon": 79.11886111,
 "locality": "Nagpur City H.O"
 },
 {
@@ -12127,8 +12127,8 @@
 "pincodes": [
 "440010"
 ],
-"lat": 21.12566667,
-"lon": 79.05777778,
+"lat": 21.14583333,
+"lon": 79.06472222,
 "locality": "Abhyankar Nagar S.O"
 },
 {
@@ -12139,8 +12139,8 @@
 "pincodes": [
 "440027"
 ],
-"lat": 21.111602,
-"lon": 79.09416,
+"lat": 21.12155556,
+"lon": 79.10066667,
 "locality": "Parvati Nagar S.O"
 },
 {
@@ -12187,8 +12187,8 @@
 "pincodes": [
 "440016"
 ],
-"lat": 21.1166667,
-"lon": 78.0022222,
+"lat": 21.1255556,
+"lon": 79.0080556,
 "locality": "Indl.Area Nagpur S.O"
 },
 {
@@ -12199,8 +12199,8 @@
 "pincodes": [
 "440023"
 ],
-"lat": 20.932668,
-"lon": 78.786854,
+"lat": 21.1521944,
+"lon": 79.0691667,
 "locality": "Deoli Kalbande B.O"
 },
 {
@@ -12211,8 +12211,8 @@
 "pincodes": [
 "440035"
 ],
-"lat": 19.98925,
-"lon": 79.55677778,
+"lat": 21.135437,
+"lon": 79.1613316,
 "locality": "Kalmna Market Yard S.O"
 },
 {
@@ -12223,8 +12223,8 @@
 "pincodes": [
 "441101"
 ],
-"lat": 21.466109,
-"lon": 78.994569,
+"lat": 21.121581,
+"lon": 78.960128,
 "locality": "Khubala B.O"
 },
 {
@@ -12235,8 +12235,8 @@
 "pincodes": [
 "441102"
 ],
-"lat": 21.21492,
-"lon": 78.521715,
+"lat": 21.279117,
+"lon": 79.115306,
 "locality": "Walni Colliery B.O"
 },
 {
@@ -12247,8 +12247,8 @@
 "pincodes": [
 "441103"
 ],
-"lat": 21.67643,
-"lon": 79.370843,
+"lat": 21.19487,
+"lon": 78.653348,
 "locality": "Khursapar B.O"
 },
 {
@@ -12259,8 +12259,8 @@
 "pincodes": [
 "441104"
 ],
-"lat": 21.145726,
-"lon": 79.162309,
+"lat": 21.090741,
+"lon": 79.065327,
 "locality": "Bhandewadi B.O"
 },
 {
@@ -12271,8 +12271,8 @@
 "pincodes": [
 "441105"
 ],
-"lat": 20.985834,
-"lon": 79.644597,
+"lat": 21.040941,
+"lon": 79.024912,
 "locality": "Itgaon B.O"
 },
 {
@@ -12283,8 +12283,8 @@
 "pincodes": [
 "441106"
 ],
-"lat": 11.984557,
-"lon": 75.380936,
+"lat": 21.142555,
+"lon": 79.080349,
 "locality": "Aroli B.O"
 },
 {
@@ -12307,8 +12307,8 @@
 "pincodes": [
 "441108"
 ],
-"lat": 20.859476,
-"lon": 78.969831,
+"lat": 21.152334,
+"lon": 79.094262,
 "locality": "Borkhedi B.O"
 },
 {
@@ -12319,8 +12319,8 @@
 "pincodes": [
 "441110"
 ],
-"lat": 20.934524,
-"lon": 78.847466,
+"lat": 21.098683,
+"lon": 78.98413,
 "locality": "Kanholibara B.O"
 },
 {
@@ -12331,8 +12331,8 @@
 "pincodes": [
 "441111"
 ],
-"lat": 21.267808,
-"lon": 79.042612,
+"lat": 21.248509,
+"lon": 79.098628,
 "locality": "Gumthi B.O"
 },
 {
@@ -12343,8 +12343,8 @@
 "pincodes": [
 "441112"
 ],
-"lat": 21.465201,
-"lon": 78.936603,
+"lat": 21.420106,
+"lon": 78.883201,
 "locality": "Khairi Dhalgaon B.O"
 },
 {
@@ -12355,8 +12355,8 @@
 "pincodes": [
 "441113"
 ],
-"lat": 22.031971,
-"lon": 82.653746,
+"lat": 21.295708,
+"lon": 79.077016,
 "locality": "Chanpa B.O"
 },
 {
@@ -12379,8 +12379,8 @@
 "pincodes": [
 "441201"
 ],
-"lat": 20.764724,
-"lon": 79.519594,
+"lat": 20.841517,
+"lon": 79.529783,
 "locality": "Adyar Dupache B.O"
 },
 {
@@ -12391,8 +12391,8 @@
 "pincodes": [
 "441202"
 ],
-"lat": 26.069561,
-"lon": 73.827203,
+"lat": 21.112217,
+"lon": 79.13317,
 "locality": "Ambadi B.O"
 },
 {
@@ -12403,8 +12403,8 @@
 "pincodes": [
 "441203"
 ],
-"lat": 20.92246,
-"lon": 79.364429,
+"lat": 21.166841,
+"lon": 79.014501,
 "locality": "Bamhni B.O"
 },
 {
@@ -12415,8 +12415,8 @@
 "pincodes": [
 "441204"
 ],
-"lat": 21.104086,
-"lon": 79.131184,
+"lat": 21.157779,
+"lon": 79.146159,
 "locality": "Narsala B.O"
 },
 {
@@ -12427,8 +12427,8 @@
 "pincodes": [
 "441210"
 ],
-"lat": 20.946507,
-"lon": 79.514389,
+"lat": 20.9533056,
+"lon": 79.4622222,
 "locality": "Jiwnapur B.O"
 },
 {
@@ -12439,8 +12439,8 @@
 "pincodes": [
 "441214"
 ],
-"lat": 59.427426,
-"lon": 24.803984,
+"lat": 21.1521944,
+"lon": 79.0691667,
 "locality": "Besur B.O"
 },
 {
@@ -12451,8 +12451,8 @@
 "pincodes": [
 "441301"
 ],
-"lat": 17.510978,
-"lon": 74.552187,
+"lat": 21.411749,
+"lon": 78.45317,
 "locality": "Dawsa B.O"
 },
 {
@@ -12463,8 +12463,8 @@
 "pincodes": [
 "441302"
 ],
-"lat": 21.416177,
-"lon": 78.699433,
+"lat": 21.24535,
+"lon": 78.693762,
 "locality": "Lohgad B.O"
 },
 {
@@ -12487,8 +12487,8 @@
 "pincodes": [
 "441304"
 ],
-"lat": 21.407261,
-"lon": 78.489046,
+"lat": 21.040245,
+"lon": 79.110749,
 "locality": "Tinkheda B.O"
 },
 {
@@ -12499,8 +12499,8 @@
 "pincodes": [
 "441305"
 ],
-"lat": 21.361822,
-"lon": 78.45317,
+"lat": 21.096918,
+"lon": 79.107037,
 "locality": "Bharsingi B.O"
 },
 {
@@ -12511,8 +12511,8 @@
 "pincodes": [
 "441306"
 ],
-"lat": 19.62204,
-"lon": 81.655561,
+"lat": 21.1458,
+"lon": 79.088155,
 "locality": "Dorli Bhandwalkar B.O"
 },
 {
@@ -12523,8 +12523,8 @@
 "pincodes": [
 "441401"
 ],
-"lat": 21.216577,
-"lon": 79.153795,
+"lat": 21.127708,
+"lon": 79.083129,
 "locality": "Khairi Akashwani B.O"
 },
 {
@@ -12535,8 +12535,8 @@
 "pincodes": [
 "441404"
 ],
-"lat": 21.257709,
-"lon": 79.21687,
+"lat": 21.2163889,
+"lon": 79.1988889,
 "locality": "Gondegaon B.O"
 },
 {
@@ -12547,8 +12547,8 @@
 "pincodes": [
 "441502"
 ],
-"lat": 21.231029,
-"lon": 78.781268,
+"lat": 21.148871,
+"lon": 79.145592,
 "locality": "Raulgaon B.O"
 },
 {
@@ -12559,8 +12559,8 @@
 "pincodes": [
 "423206"
 ],
-"lat": 20.7871096,
-"lon": 74.4584085,
+"lat": 20.554431,
+"lon": 74.512024,
 "locality": "Chinchave Galane B.O"
 },
 {
@@ -12607,8 +12607,8 @@
 "pincodes": [
 "422007"
 ],
-"lat": 20.2041737,
-"lon": 73.8271949,
+"lat": 20.2041717,
+"lon": 73.8271969,
 "locality": "Kaudasar B.O"
 },
 {
@@ -12631,8 +12631,8 @@
 "pincodes": [
 "422102"
 ],
-"lat": 19.850007,
-"lon": 73.999993,
+"lat": 19.9683898,
+"lon": 73.9458905,
 "locality": "Jaigaon B.O"
 },
 {
@@ -12643,8 +12643,8 @@
 "pincodes": [
 "422103"
 ],
-"lat": 19.78894,
-"lon": 74.0153,
+"lat": 20.080116,
+"lon": 74.109816,
 "locality": "Dhondbhar B.O"
 },
 {
@@ -12679,8 +12679,8 @@
 "pincodes": [
 "422113"
 ],
-"lat": 19.8603152,
-"lon": 73.9536113,
+"lat": 19.96415,
+"lon": 73.87045,
 "locality": "Paste B.O"
 },
 {
@@ -12703,8 +12703,8 @@
 "pincodes": [
 "422202"
 ],
-"lat": 20.2017969,
-"lon": 73.8307798,
+"lat": 20.2053781,
+"lon": 73.8315045,
 "locality": "Indore B.O"
 },
 {
@@ -12715,8 +12715,8 @@
 "pincodes": [
 "422203"
 ],
-"lat": 19.73755,
-"lon": 73.54974,
+"lat": 19.9974663,
+"lon": 73.7897893,
 "locality": "Devargaon B.O"
 },
 {
@@ -12727,8 +12727,8 @@
 "pincodes": [
 "422204"
 ],
-"lat": 20.09005,
-"lon": 73.40222,
+"lat": 19.9974583,
+"lon": 73.7897973,
 "locality": "Shirasgaon (Peint) B.O"
 },
 {
@@ -12739,8 +12739,8 @@
 "pincodes": [
 "422205"
 ],
-"lat": 20.2041727,
-"lon": 73.8271959,
+"lat": 20.26315,
+"lon": 73.95465,
 "locality": "Rajapur B.O"
 },
 {
@@ -12763,8 +12763,8 @@
 "pincodes": [
 "422207"
 ],
-"lat": 20.2041697,
-"lon": 73.8271989,
+"lat": 20.093899,
+"lon": 73.925603,
 "locality": "Amba B.O"
 },
 {
@@ -12775,8 +12775,8 @@
 "pincodes": [
 "422208"
 ],
-"lat": 20.30019,
-"lon": 73.4905,
+"lat": 20.2584522,
+"lon": 73.5030478,
 "locality": "Bhuvan B.O"
 },
 {
@@ -12787,8 +12787,8 @@
 "pincodes": [
 "422209"
 ],
-"lat": 20.37015,
-"lon": 73.7694,
+"lat": 20.1391613,
+"lon": 74.059261,
 "locality": "Ahergaon B.O"
 },
 {
@@ -12799,8 +12799,8 @@
 "pincodes": [
 "422210"
 ],
-"lat": 20.0428,
-"lon": 74.03215,
+"lat": 20.080113,
+"lon": 74.109819,
 "locality": "Bhendali B.O"
 },
 {
@@ -12823,8 +12823,8 @@
 "pincodes": [
 "422212"
 ],
-"lat": 19.88545,
-"lon": 73.5336,
+"lat": 19.919716,
+"lon": 73.537199,
 "locality": "Brahmanwade B.O"
 },
 {
@@ -12835,8 +12835,8 @@
 "pincodes": [
 "422213"
 ],
-"lat": 19.9988,
-"lon": 73.53116,
+"lat": 19.96224,
+"lon": 73.86842,
 "locality": "Anjneri B.O"
 },
 {
@@ -12847,8 +12847,8 @@
 "pincodes": [
 "422214"
 ],
-"lat": 19.88545,
-"lon": 73.5336,
+"lat": 19.919717,
+"lon": 73.537198,
 "locality": "Wavi Harsh B.O"
 },
 {
@@ -12859,8 +12859,8 @@
 "pincodes": [
 "422215"
 ],
-"lat": 20.33555,
-"lon": 73.6751,
+"lat": 20.329958,
+"lon": 74.243789,
 "locality": "Maledumala B.O"
 },
 {
@@ -12907,8 +12907,8 @@
 "pincodes": [
 "422303"
 ],
-"lat": 20.03655,
-"lon": 74.0995,
+"lat": 20.080116,
+"lon": 74.109816,
 "locality": "Naitale B.O"
 },
 {
@@ -12943,8 +12943,8 @@
 "pincodes": [
 "422306"
 ],
-"lat": 19.9568914,
-"lon": 73.9036397,
+"lat": 20.175,
+"lon": 74.2747,
 "locality": "Kotamgaon B.O"
 },
 {
@@ -12967,8 +12967,8 @@
 "pincodes": [
 "422401"
 ],
-"lat": 19.922885,
-"lon": 73.8465835,
+"lat": 19.9547,
+"lon": 73.82665,
 "locality": "Belatgavhan B.O"
 },
 {
@@ -12979,8 +12979,8 @@
 "pincodes": [
 "422402"
 ],
-"lat": 19.6973226,
-"lon": 73.5609291,
+"lat": 19.6858,
+"lon": 73.65825,
 "locality": "Khadked B.O"
 },
 {
@@ -12991,8 +12991,8 @@
 "pincodes": [
 "422403"
 ],
-"lat": 19.63565,
-"lon": 73.57093,
+"lat": 19.6811769,
+"lon": 73.7654287,
 "locality": "Murambi B.O"
 },
 {
@@ -13003,8 +13003,8 @@
 "pincodes": [
 "422502"
 ],
-"lat": 19.81189,
-"lon": 73.83675,
+"lat": 19.9974603,
+"lon": 73.7897953,
 "locality": "Vadgaon Pingala B.O"
 },
 {
@@ -13015,8 +13015,8 @@
 "pincodes": [
 "422606"
 ],
-"lat": 19.786069,
-"lon": 74.184806,
+"lat": 19.77801,
+"lon": 74.1096,
 "locality": "Marhal BK B.O"
 },
 {
@@ -13027,8 +13027,8 @@
 "pincodes": [
 "423101"
 ],
-"lat": 20.3198,
-"lon": 74.25785,
+"lat": 20.3251775,
+"lon": 74.2106493,
 "locality": "Dighwad B.O"
 },
 {
@@ -13051,8 +13051,8 @@
 "pincodes": [
 "423104"
 ],
-"lat": 20.329959,
-"lon": 74.243788,
+"lat": 20.32996,
+"lon": 74.243787,
 "locality": "Kanadgaon B.O"
 },
 {
@@ -13063,8 +13063,8 @@
 "pincodes": [
 "423105"
 ],
-"lat": 20.5499429,
-"lon": 74.528744,
+"lat": 20.5320867,
+"lon": 74.5023942,
 "locality": "Deoghat B.O"
 },
 {
@@ -13075,8 +13075,8 @@
 "pincodes": [
 "423106"
 ],
-"lat": 20.306386,
-"lon": 74.65593,
+"lat": 20.1477321,
+"lon": 73.9425891,
 "locality": "Bangaon B.O"
 },
 {
@@ -13099,8 +13099,8 @@
 "pincodes": [
 "423110"
 ],
-"lat": 20.4174,
-"lon": 74.31845,
+"lat": 20.2041727,
+"lon": 73.8271959,
 "locality": "Kumbharde B.O"
 },
 {
@@ -13111,8 +13111,8 @@
 "pincodes": [
 "423111"
 ],
-"lat": 20.32996,
-"lon": 74.243787,
+"lat": 20.28205,
+"lon": 74.03215,
 "locality": "Pimpalnare B.O"
 },
 {
@@ -13123,8 +13123,8 @@
 "pincodes": [
 "423117"
 ],
-"lat": 20.32996,
-"lon": 74.243787,
+"lat": 20.248199,
+"lon": 74.0781013,
 "locality": "Kanmandale B.O"
 },
 {
@@ -13135,8 +13135,8 @@
 "pincodes": [
 "423201"
 ],
-"lat": 20.53695,
-"lon": 74.45655,
+"lat": 20.5333673,
+"lon": 74.4067526,
 "locality": "Mungse B.O"
 },
 {
@@ -13159,8 +13159,8 @@
 "pincodes": [
 "423204"
 ],
-"lat": 20.7031138,
-"lon": 74.2397843,
+"lat": 20.590527,
+"lon": 74.198717,
 "locality": "Kotbel B.O"
 },
 {
@@ -13171,8 +13171,8 @@
 "pincodes": [
 "423205"
 ],
-"lat": 20.5499419,
-"lon": 74.528745,
+"lat": 20.23685,
+"lon": 74.39736,
 "locality": "Galane B.O"
 },
 {
@@ -13183,8 +13183,8 @@
 "pincodes": [
 "423208"
 ],
-"lat": 20.5499449,
-"lon": 74.528742,
+"lat": 20.41735,
+"lon": 74.4195,
 "locality": "Erandgaon B.O"
 },
 {
@@ -13195,8 +13195,8 @@
 "pincodes": [
 "423212"
 ],
-"lat": 20.48665,
-"lon": 74.6149,
+"lat": 20.554431,
+"lon": 74.512024,
 "locality": "Chandanpuri B.O"
 },
 {
@@ -13207,8 +13207,8 @@
 "pincodes": [
 "423213"
 ],
-"lat": 20.5532143,
-"lon": 74.2956765,
+"lat": 20.590527,
+"lon": 74.198717,
 "locality": "Brahmangaon B.O"
 },
 {
@@ -13219,8 +13219,8 @@
 "pincodes": [
 "423301"
 ],
-"lat": 20.590527,
-"lon": 74.198717,
+"lat": 20.5795,
+"lon": 74.1991,
 "locality": "Khalap B.O"
 },
 {
@@ -13243,8 +13243,8 @@
 "pincodes": [
 "423303"
 ],
-"lat": 20.590529,
-"lon": 74.198715,
+"lat": 20.590527,
+"lon": 74.198717,
 "locality": "Askheda B.O"
 },
 {
@@ -13255,8 +13255,8 @@
 "pincodes": [
 "423401"
 ],
-"lat": 20.02594,
-"lon": 74.42965,
+"lat": 20.080111,
+"lon": 74.109821,
 "locality": "Erandgaon Jeur B.O"
 },
 {
@@ -13267,8 +13267,8 @@
 "pincodes": [
 "423402"
 ],
-"lat": 20.00633,
-"lon": 74.62025,
+"lat": 20.043628,
+"lon": 74.486121,
 "locality": "Bokte B.O"
 },
 {
@@ -13279,8 +13279,8 @@
 "pincodes": [
 "423403"
 ],
-"lat": 20.043627,
-"lon": 74.486122,
+"lat": 20.2041727,
+"lon": 73.8271959,
 "locality": "Mamdapur B.O"
 },
 {
@@ -13291,8 +13291,8 @@
 "pincodes": [
 "423501"
 ],
-"lat": 20.4890945,
-"lon": 74.0270675,
+"lat": 20.4049325,
+"lon": 73.9883602,
 "locality": "Athambe B.O"
 },
 {
@@ -13303,8 +13303,8 @@
 "pincodes": [
 "423502"
 ],
-"lat": 20.5417,
-"lon": 73.8265,
+"lat": 20.0933,
+"lon": 73.9264,
 "locality": "Dalwat B.O"
 },
 {
@@ -13327,8 +13327,8 @@
 "pincodes": [
 "201301"
 ],
-"lat": 26.54872,
-"lon": 78.54897,
+"lat": 28.5543243,
+"lon": 77.3798816,
 "locality": "Noida HO"
 },
 {
@@ -13339,7 +13339,7 @@
 "pincodes": [
 "201008"
 ],
-"lat": 28.535516,
+"lat": 28.533516,
 "lon": 77.391026,
 "locality": "Piaoli BO"
 },
@@ -13351,8 +13351,8 @@
 "pincodes": [
 "201303"
 ],
-"lat": 23.56418,
-"lon": 78.5487,
+"lat": 28.5544155,
+"lon": 77.3603771,
 "locality": "Sec37 Noida SO"
 },
 {
@@ -13363,8 +13363,8 @@
 "pincodes": [
 "201304"
 ],
-"lat": 28.562197,
-"lon": 77.374073,
+"lat": 28.494211,
+"lon": 77.414254,
 "locality": "Baraula BO"
 },
 {
@@ -13399,8 +13399,8 @@
 "pincodes": [
 "203207"
 ],
-"lat": 28.611417,
-"lon": 77.547612,
+"lat": 28.542657,
+"lon": 77.673655,
 "locality": "Bambawar BO"
 },
 {
@@ -13411,8 +13411,8 @@
 "pincodes": [
 "201313"
 ],
-"lat": 25.648745,
-"lon": 77.8542698,
+"lat": 28.452212,
+"lon": 77.525161,
 "locality": "Amity university SO"
 },
 {
@@ -13423,8 +13423,8 @@
 "pincodes": [
 "201315"
 ],
-"lat": 45.9874534,
-"lon": 27.321466,
+"lat": 28.4517835,
+"lon": 77.4989296,
 "locality": "Gurjinder Vihar SO"
 },
 {
@@ -13435,8 +13435,8 @@
 "pincodes": [
 "201316"
 ],
-"lat": 45.4462114,
-"lon": 23.456644,
+"lat": 28.5928332,
+"lon": 77.3871665,
 "locality": "Sec 122 Noida SO"
 },
 {
@@ -13447,8 +13447,8 @@
 "pincodes": [
 "201317"
 ],
-"lat": 45.4654414,
-"lon": 22.4564454,
+"lat": 28.52231,
+"lon": 77.36425,
 "locality": "Sec 128 Noida SO"
 },
 {
@@ -13459,8 +13459,8 @@
 "pincodes": [
 "203135"
 ],
-"lat": 28.1143447,
-"lon": 77.5882387,
+"lat": 28.2147939,
+"lon": 77.5477266,
 "locality": "Mangrauli BO"
 },
 {
@@ -13471,8 +13471,8 @@
 "pincodes": [
 "203141"
 ],
-"lat": 28.1543465,
-"lon": 77.7256965,
+"lat": 28.2175582,
+"lon": 77.6956558,
 "locality": "Bhunna  Jattan BO"
 },
 {
@@ -13483,8 +13483,8 @@
 "pincodes": [
 "203155"
 ],
-"lat": 28.119833,
-"lon": 77.6207256,
+"lat": 28.1825696,
+"lon": 77.6269912,
 "locality": "Ahamedpur  Chauroli BO"
 },
 {
@@ -13495,8 +13495,8 @@
 "pincodes": [
 "203201"
 ],
-"lat": 28.3048341,
-"lon": 77.5991821,
+"lat": 28.3454822,
+"lon": 77.6029157,
 "locality": "Parsol BO"
 },
 {
@@ -13507,8 +13507,8 @@
 "pincodes": [
 "203202"
 ],
-"lat": 28.4191078,
-"lon": 77.6598215,
+"lat": 28.391959,
+"lon": 77.6237131,
 "locality": "Chiti BO"
 },
 {
@@ -13519,8 +13519,8 @@
 "pincodes": [
 "203203"
 ],
-"lat": 28.2596723,
-"lon": 77.6344156,
+"lat": 28.3367634,
+"lon": 77.6532055,
 "locality": "Mahmoodpur Jadon BO"
 },
 {
@@ -13543,8 +13543,8 @@
 "pincodes": [
 "212652"
 ],
-"lat": 25.92695,
-"lon": 81.15182,
+"lat": 28.275041,
+"lon": 77.560509,
 "locality": "Akbarpur Churai BO"
 },
 {
@@ -13555,8 +13555,8 @@
 "pincodes": [
 "226002"
 ],
-"lat": 26.776256,
-"lon": 80.943542,
+"lat": 26.8447,
+"lon": 80.945626,
 "locality": "Kharika BO"
 },
 {
@@ -13567,8 +13567,8 @@
 "pincodes": [
 "226008"
 ],
-"lat": 26.770189,
-"lon": 80.878599,
+"lat": 26.846694,
+"lon": 80.946166,
 "locality": "Amausi BO"
 },
 {
@@ -13579,8 +13579,8 @@
 "pincodes": [
 "226017"
 ],
-"lat": 26.840502,
-"lon": 80.882949,
+"lat": 26.8478611,
+"lon": 80.885,
 "locality": "Alamnagar BO"
 },
 {
@@ -13603,8 +13603,8 @@
 "pincodes": [
 "226026"
 ],
-"lat": 26.906258,
-"lon": 80.948475,
+"lat": 26.8447,
+"lon": 80.945626,
 "locality": "BASHA BO"
 },
 {
@@ -13615,8 +13615,8 @@
 "pincodes": [
 "226101"
 ],
-"lat": 26.834765,
-"lon": 80.728932,
+"lat": 26.9045417,
+"lon": 80.8616586,
 "locality": "Dona BO"
 },
 {
@@ -13639,8 +13639,8 @@
 "pincodes": [
 "226103"
 ],
-"lat": 27.007847,
-"lon": 80.585504,
+"lat": 26.749468,
+"lon": 80.882745,
 "locality": "Sahinjana B O"
 },
 {
@@ -13651,8 +13651,8 @@
 "pincodes": [
 "226104"
 ],
-"lat": 29.175352,
-"lon": 82.17701,
+"lat": 26.851728,
+"lon": 80.940313,
 "locality": "Baddaiyan BO"
 },
 {
@@ -13663,8 +13663,8 @@
 "pincodes": [
 "226202"
 ],
-"lat": 27.018658,
-"lon": 80.848158,
+"lat": 26.846694,
+"lon": 80.946166,
 "locality": "Kathwara B.O"
 },
 {
@@ -13675,8 +13675,8 @@
 "pincodes": [
 "226203"
 ],
-"lat": 27.080822,
-"lon": 80.895884,
+"lat": 26.8447,
+"lon": 80.945626,
 "locality": "Bahargaon BO"
 },
 {
@@ -13687,8 +13687,8 @@
 "pincodes": [
 "226301"
 ],
-"lat": 26.689522,
-"lon": 80.984345,
+"lat": 26.766611,
+"lon": 80.944964,
 "locality": "Bhilampur BO"
 },
 {
@@ -13699,8 +13699,8 @@
 "pincodes": [
 "226303"
 ],
-"lat": 26.8447,
-"lon": 80.945626,
+"lat": 26.846694,
+"lon": 80.946166,
 "locality": "Keoli BO"
 },
 {
@@ -13711,8 +13711,8 @@
 "pincodes": [
 "226401"
 ],
-"lat": 26.4746,
-"lon": 81.006444,
+"lat": 26.80695,
+"lon": 80.89848,
 "locality": "Neewan BO"
 },
 {
@@ -13723,8 +13723,8 @@
 "pincodes": [
 "226501"
 ],
-"lat": 26.868479,
-"lon": 80.907941,
+"lat": 26.8447,
+"lon": 80.945626,
 "locality": "Begariya Mau BO"
 },
 {
@@ -13735,8 +13735,8 @@
 "pincodes": [
 "201001"
 ],
-"lat": 28.6556,
-"lon": 77.4277,
+"lat": 28.6681111,
+"lon": 77.4284722,
 "locality": "Ghaziabad HO"
 },
 {
@@ -13747,8 +13747,8 @@
 "pincodes": [
 "201002"
 ],
-"lat": 28.674348,
-"lon": 77.454218,
+"lat": 28.691818,
+"lon": 77.463744,
 "locality": "Ingrahm Institute BO"
 },
 {
@@ -13759,8 +13759,8 @@
 "pincodes": [
 "201003"
 ],
-"lat": 28.750722,
-"lon": 77.381249,
+"lat": 28.706909,
+"lon": 77.410667,
 "locality": "Aurangabad Ristal BO"
 },
 {
@@ -13783,8 +13783,8 @@
 "pincodes": [
 "201005"
 ],
-"lat": 28.693301,
-"lon": 77.357566,
+"lat": 28.6760556,
+"lon": 77.3689167,
 "locality": "Pasonda BO"
 },
 {
@@ -13795,8 +13795,8 @@
 "pincodes": [
 "201006"
 ],
-"lat": 28.677412,
-"lon": 77.325981,
+"lat": 28.70062,
+"lon": 77.328853,
 "locality": "Chikamberpur SO"
 },
 {
@@ -13819,8 +13819,8 @@
 "pincodes": [
 "201010"
 ],
-"lat": 28.641309,
-"lon": 77.318734,
+"lat": 28.669156,
+"lon": 77.453758,
 "locality": "Hasanpur Bhowapur BO"
 },
 {
@@ -13867,8 +13867,8 @@
 "pincodes": [
 "201102"
 ],
-"lat": 28.727002,
-"lon": 77.31234,
+"lat": 28.669156,
+"lon": 77.453758,
 "locality": "Behta Hazipur BO"
 },
 {
@@ -13879,8 +13879,8 @@
 "pincodes": [
 "201201"
 ],
-"lat": 28.855159,
-"lon": 77.670792,
+"lat": 28.875433,
+"lon": 77.572688,
 "locality": "Churiyala BO"
 },
 {
@@ -13903,8 +13903,8 @@
 "pincodes": [
 "201206"
 ],
-"lat": 28.797536,
-"lon": 77.521096,
+"lat": 28.734256,
+"lon": 77.448464,
 "locality": "Abupur BO"
 },
 {
@@ -13915,8 +13915,8 @@
 "pincodes": [
 "245304"
 ],
-"lat": 28.73058,
-"lon": 77.775882,
+"lat": 28.73301,
+"lon": 77.574838,
 "locality": "Atrauli BO"
 },
 {
@@ -13939,8 +13939,8 @@
 "pincodes": [
 "201015"
 ],
-"lat": 28.735949,
-"lon": 77.268414,
+"lat": 28.689691,
+"lon": 77.434571,
 "locality": "Jindal Nagar BO"
 },
 {
@@ -14023,8 +14023,8 @@
 "pincodes": [
 "201103"
 ],
-"lat": 28.802703,
-"lon": 77.234767,
+"lat": 28.7803611,
+"lon": 77.2674722,
 "locality": "Meerpur Hindu"
 },
 {
@@ -14047,8 +14047,8 @@
 "pincodes": [
 "121001"
 ],
-"lat": 28.2490556,
-"lon": 77.7498333,
+"lat": 28.3917778,
+"lon": 77.3021389,
 "locality": "Faridabad NIT HO"
 },
 {
@@ -14059,8 +14059,8 @@
 "pincodes": [
 "121002"
 ],
-"lat": 28.405301,
-"lon": 77.374447,
+"lat": 28.3917778,
+"lon": 77.3021389,
 "locality": "Bhaskola BO"
 },
 {
@@ -14071,8 +14071,8 @@
 "pincodes": [
 "121003"
 ],
-"lat": 77.264444,
-"lon": 28.4625,
+"lat": 28.3917778,
+"lon": 77.3021389,
 "locality": "Anangpur BO"
 },
 {
@@ -14083,8 +14083,8 @@
 "pincodes": [
 "121004"
 ],
-"lat": 31.057677,
-"lon": 75.906401,
+"lat": 28.3509444,
+"lon": 77.3455556,
 "locality": "Dayalpur BO"
 },
 {
@@ -14107,8 +14107,8 @@
 "pincodes": [
 "121006"
 ],
-"lat": 28.3574444,
-"lon": 77.3336389,
+"lat": 28.3720518,
+"lon": 77.3321204,
 "locality": "Faridabad Sector 8 SO"
 },
 {
@@ -14155,8 +14155,8 @@
 "pincodes": [
 "121010"
 ],
-"lat": 28.5821389,
-"lon": 77.9790278,
+"lat": 28.4391,
+"lon": 77.3009,
 "locality": "Nhpc Colony Faridabad SO"
 },
 {
@@ -14167,8 +14167,8 @@
 "pincodes": [
 "121101"
 ],
-"lat": 28.514051,
-"lon": 77.337891,
+"lat": 28.3503889,
+"lon": 77.3998889,
 "locality": "Badarpur Syed BO"
 },
 {
@@ -14227,8 +14227,8 @@
 "pincodes": [
 "141001"
 ],
-"lat": 30.9026389,
-"lon": 75.83775,
+"lat": 30.894,
+"lon": 75.8178888,
 "locality": "Ludhiana HO"
 },
 {
@@ -14239,8 +14239,8 @@
 "pincodes": [
 "142026"
 ],
-"lat": 30.7936111,
-"lon": 75.4743333,
+"lat": 30.8086944,
+"lon": 75.4760278,
 "locality": "Jagraon HO"
 },
 {
@@ -14263,8 +14263,8 @@
 "pincodes": [
 "141003"
 ],
-"lat": 30.8946667,
-"lon": 75.8503611,
+"lat": 30.8656777,
+"lon": 75.86405,
 "locality": "AP Basti SO"
 },
 {
@@ -14299,8 +14299,8 @@
 "pincodes": [
 "141007"
 ],
-"lat": 30.98,
-"lon": 75.98,
+"lat": 30.9314638,
+"lon": 75.8716944,
 "locality": "Mattewara BO"
 },
 {
@@ -14311,8 +14311,8 @@
 "pincodes": [
 "141008"
 ],
-"lat": 30.5725,
-"lon": 75.4938,
+"lat": 30.9,
+"lon": 75.86,
 "locality": "BHATTIAN SO"
 },
 {
@@ -14323,8 +14323,8 @@
 "pincodes": [
 "141010"
 ],
-"lat": 30.9023056,
-"lon": 75.9041944,
+"lat": 30.8975666,
+"lon": 75.8875416,
 "locality": "Jamalpur Awana SO"
 },
 {
@@ -14359,8 +14359,8 @@
 "pincodes": [
 "141014"
 ],
-"lat": 30.8682222,
-"lon": 75.9192222,
+"lat": 30.8695972,
+"lon": 75.882925,
 "locality": "Dhandari Kalan SO"
 },
 {
@@ -14371,8 +14371,8 @@
 "pincodes": [
 "141015"
 ],
-"lat": 30.96,
-"lon": 75.92,
+"lat": 30.895225,
+"lon": 75.9295,
 "locality": "Karyana Kalan BO"
 },
 {
@@ -14395,8 +14395,8 @@
 "pincodes": [
 "141101"
 ],
-"lat": 28.582103,
-"lon": 77.248525,
+"lat": 30.8414722,
+"lon": 75.6719722,
 "locality": "Jangpura BO"
 },
 {
@@ -14431,8 +14431,8 @@
 "pincodes": [
 "141104"
 ],
-"lat": 30.758898,
-"lon": 75.652812,
+"lat": 30.7696111,
+"lon": 75.6489722,
 "locality": "Akalgarh BO"
 },
 {
@@ -14443,8 +14443,8 @@
 "pincodes": [
 "141105"
 ],
-"lat": 30.745553,
-"lon": 75.671719,
+"lat": 30.7525916,
+"lon": 75.7023111,
 "locality": "Rattowal BO"
 },
 {
@@ -14467,8 +14467,8 @@
 "pincodes": [
 "141107"
 ],
-"lat": 30.709309,
-"lon": 75.674628,
+"lat": 30.752087,
+"lon": 75.858119,
 "locality": "Kailey BO"
 },
 {
@@ -14479,8 +14479,8 @@
 "pincodes": [
 "141108"
 ],
-"lat": 30.664546,
-"lon": 75.676173,
+"lat": 30.7124888,
+"lon": 75.7103972,
 "locality": "Bhainidarera BO"
 },
 {
@@ -14491,8 +14491,8 @@
 "pincodes": [
 "141109"
 ],
-"lat": 30.642549,
-"lon": 75.643282,
+"lat": 30.620006,
+"lon": 75.706619,
 "locality": "Bhaini Baringa BO"
 },
 {
@@ -14515,8 +14515,8 @@
 "pincodes": [
 "141112"
 ],
-"lat": 30.924561,
-"lon": 76.030487,
+"lat": 30.8674444,
+"lon": 76.0032222,
 "locality": "Gaddowal BO"
 },
 {
@@ -14527,8 +14527,8 @@
 "pincodes": [
 "141113"
 ],
-"lat": 17.398377,
-"lon": 78.558265,
+"lat": 30.849137,
+"lon": 76.060107,
 "locality": "Uppal BO"
 },
 {
@@ -14539,8 +14539,8 @@
 "pincodes": [
 "141114"
 ],
-"lat": 30.8607,
-"lon": 76.1863,
+"lat": 30.852261,
+"lon": 76.118586,
 "locality": "BALION BO"
 },
 {
@@ -14551,8 +14551,8 @@
 "pincodes": [
 "141115"
 ],
-"lat": 31.15889,
-"lon": 75.565515,
+"lat": 30.884555,
+"lon": 76.13417,
 "locality": "Punjgarain BO"
 },
 {
@@ -14575,8 +14575,8 @@
 "pincodes": [
 "141117"
 ],
-"lat": 30.661316,
-"lon": 75.901319,
+"lat": 30.904886,
+"lon": 75.744767,
 "locality": "Saharan Majra BO"
 },
 {
@@ -14587,8 +14587,8 @@
 "pincodes": [
 "141118"
 ],
-"lat": 30.681861,
-"lon": 75.82877,
+"lat": 30.76215,
+"lon": 75.833059,
 "locality": "Butaheri BO"
 },
 {
@@ -14599,8 +14599,8 @@
 "pincodes": [
 "141119"
 ],
-"lat": 28.687609,
-"lon": 77.282161,
+"lat": 30.639726,
+"lon": 75.903497,
 "locality": "Babarpur BO"
 },
 {
@@ -14611,8 +14611,8 @@
 "pincodes": [
 "141120"
 ],
-"lat": 30.700901,
-"lon": 76.50402,
+"lat": 30.84657,
+"lon": 75.947776,
 "locality": "Nandpur BO"
 },
 {
@@ -14623,8 +14623,8 @@
 "pincodes": [
 "141121"
 ],
-"lat": 46.188722,
-"lon": 6.044457,
+"lat": 30.9000138,
+"lon": 76.3109722,
 "locality": "Chhourian BO"
 },
 {
@@ -14635,8 +14635,8 @@
 "pincodes": [
 "141122"
 ],
-"lat": 30.99833,
-"lon": 75.652084,
+"lat": 30.8392222,
+"lon": 75.9054167,
 "locality": "Sangowal BO"
 },
 {
@@ -14647,8 +14647,8 @@
 "pincodes": [
 "141123"
 ],
-"lat": 30.897719,
-"lon": 75.971724,
+"lat": 30.8414722,
+"lon": 75.6719722,
 "locality": "Sahibana BO"
 },
 {
@@ -14659,8 +14659,8 @@
 "pincodes": [
 "141125"
 ],
-"lat": 13.592359,
-"lon": 79.281759,
+"lat": 30.8491111,
+"lon": 76.3008888,
 "locality": "Kotala BO"
 },
 {
@@ -14683,8 +14683,8 @@
 "pincodes": [
 "141127"
 ],
-"lat": 18.274682,
-"lon": 83.039158,
+"lat": 30.960536,
+"lon": 76.057322,
 "locality": "Borra BO"
 },
 {
@@ -14719,8 +14719,8 @@
 "pincodes": [
 "141203"
 ],
-"lat": 30.749327,
-"lon": 75.787292,
+"lat": 30.771098,
+"lon": 75.799643,
 "locality": "Mehma Singh Wala BO"
 },
 {
@@ -14731,8 +14731,8 @@
 "pincodes": [
 "141204"
 ],
-"lat": 27.818593,
-"lon": 74.437907,
+"lat": 30.7169166,
+"lon": 75.8152222,
 "locality": "Chhapar BO"
 },
 {
@@ -14743,8 +14743,8 @@
 "pincodes": [
 "141205"
 ],
-"lat": 26.74159,
-"lon": 83.280703,
+"lat": 30.697517,
+"lon": 75.770579,
 "locality": "Bahrampur BO"
 },
 {
@@ -14755,8 +14755,8 @@
 "pincodes": [
 "141206"
 ],
-"lat": 30.792141,
-"lon": 75.932534,
+"lat": 30.7807138,
+"lon": 75.8898305,
 "locality": "Paddi BO"
 },
 {
@@ -14767,8 +14767,8 @@
 "pincodes": [
 "141412"
 ],
-"lat": 26.587034,
-"lon": 74.856397,
+"lat": 30.724767,
+"lon": 76.107985,
 "locality": "Kishangarh BO"
 },
 {
@@ -14791,8 +14791,8 @@
 "pincodes": [
 "141414"
 ],
-"lat": 30.65419,
-"lon": 76.124402,
+"lat": 30.679098,
+"lon": 76.044268,
 "locality": "Rohno Kalan BO"
 },
 {
@@ -14803,8 +14803,8 @@
 "pincodes": [
 "141415"
 ],
-"lat": 30.569922,
-"lon": 76.078307,
+"lat": 30.634941,
+"lon": 76.033389,
 "locality": "Bharthala Randhawa BO"
 },
 {
@@ -14815,8 +14815,8 @@
 "pincodes": [
 "141416"
 ],
-"lat": 30.753299,
-"lon": 76.07255,
+"lat": 30.736708,
+"lon": 76.013453,
 "locality": "Barmalipur BO"
 },
 {
@@ -14839,8 +14839,8 @@
 "pincodes": [
 "141418"
 ],
-"lat": 31.61009,
-"lon": 75.520829,
+"lat": 30.8414722,
+"lon": 75.6719722,
 "locality": "Begowal BO"
 },
 {
@@ -14863,8 +14863,8 @@
 "pincodes": [
 "141421"
 ],
-"lat": 30.784777,
-"lon": 76.109525,
+"lat": 30.754149,
+"lon": 75.932534,
 "locality": "Rupalon BO"
 },
 {
@@ -14875,8 +14875,8 @@
 "pincodes": [
 "141422"
 ],
-"lat": 30.813234,
-"lon": 75.648448,
+"lat": 30.8414722,
+"lon": 75.6719722,
 "locality": "Raqba BO"
 },
 {
@@ -14899,8 +14899,8 @@
 "pincodes": [
 "142022"
 ],
-"lat": 30.853737,
-"lon": 75.758952,
+"lat": 30.842513,
+"lon": 75.795889,
 "locality": "Lalton Khurd BO"
 },
 {
@@ -14911,8 +14911,8 @@
 "pincodes": [
 "142023"
 ],
-"lat": 30.833127,
-"lon": 75.575702,
+"lat": 30.834557,
+"lon": 75.606987,
 "locality": "Gurreh BO"
 },
 {
@@ -14923,8 +14923,8 @@
 "pincodes": [
 "142024"
 ],
-"lat": 30.828837,
-"lon": 75.53786,
+"lat": 30.8294722,
+"lon": 75.5528056,
 "locality": "Sidhwan Kalan BO"
 },
 {
@@ -14935,8 +14935,8 @@
 "pincodes": [
 "142025"
 ],
-"lat": 30.942665,
-"lon": 75.575702,
+"lat": 30.965002,
+"lon": 75.786565,
 "locality": "Bhundri BO"
 },
 {
@@ -14947,8 +14947,8 @@
 "pincodes": [
 "142027"
 ],
-"lat": 30.928116,
-"lon": 75.739329,
+"lat": 30.8924277,
+"lon": 75.7600194,
 "locality": "Malakpur BO"
 },
 {
@@ -14971,8 +14971,8 @@
 "pincodes": [
 "142029"
 ],
-"lat": 30.779544,
-"lon": 75.724065,
+"lat": 30.801989,
+"lon": 75.786565,
 "locality": "Dhaipai BO"
 },
 {
@@ -14983,8 +14983,8 @@
 "pincodes": [
 "142030"
 ],
-"lat": 25.069081,
-"lon": 88.137679,
+"lat": 30.760554,
+"lon": 75.555327,
 "locality": "Sujapur BO"
 },
 {
@@ -15019,8 +15019,8 @@
 "pincodes": [
 "142033"
 ],
-"lat": 30.930017,
-"lon": 75.419896,
+"lat": 30.907153,
+"lon": 75.534948,
 "locality": "Gidderwindi BO"
 },
 {
@@ -15031,8 +15031,8 @@
 "pincodes": [
 "142035"
 ],
-"lat": 26.712226,
-"lon": 86.037663,
+"lat": 30.764944,
+"lon": 75.41563,
 "locality": "Chakkar BO"
 },
 {
@@ -15043,8 +15043,8 @@
 "pincodes": [
 "142036"
 ],
-"lat": 30.801516,
-"lon": 75.421362,
+"lat": 30.8426,
+"lon": 75.449039,
 "locality": "Nanaksar BO"
 },
 {
@@ -15067,8 +15067,8 @@
 "pincodes": [
 "141011"
 ],
-"lat": 30.9023056,
-"lon": 75.9041944,
+"lat": 30.8975666,
+"lon": 75.8875416,
 "locality": "Nodal Delivery Centre, Ludhiana"
 },
 {
@@ -15103,8 +15103,8 @@
 "pincodes": [
 "143001"
 ],
-"lat": 31.638561,
-"lon": 74.882557,
+"lat": 31.64,
+"lon": 74.89,
 "locality": "Amritsar GPO"
 },
 {
@@ -15115,8 +15115,8 @@
 "pincodes": [
 "143002"
 ],
-"lat": 31.63,
-"lon": 74.84,
+"lat": 31.638561,
+"lon": 74.882557,
 "locality": "Khalsa College SO"
 },
 {
@@ -15164,7 +15164,7 @@
 "143006"
 ],
 "lat": 31.62,
-"lon": 74.88,
+"lon": 74.91,
 "locality": "Golden Temple SO"
 },
 {
@@ -15175,8 +15175,8 @@
 "pincodes": [
 "143008"
 ],
-"lat": 31.71,
-"lon": 75.04,
+"lat": 31.69,
+"lon": 74.91,
 "locality": "Dist Jail BO"
 },
 {
@@ -15187,8 +15187,8 @@
 "pincodes": [
 "143009"
 ],
-"lat": 31.58,
-"lon": 74.84,
+"lat": 31.638561,
+"lon": 74.882557,
 "locality": "Ibban Kalan BO"
 },
 {
@@ -15199,8 +15199,8 @@
 "pincodes": [
 "143022"
 ],
-"lat": 31.58,
-"lon": 74.91,
+"lat": 31.63,
+"lon": 74.87,
 "locality": "Chatiwind BO"
 },
 {
@@ -15223,8 +15223,8 @@
 "pincodes": [
 "143102"
 ],
-"lat": 31.84,
-"lon": 74.76,
+"lat": 31.77,
+"lon": 74.83,
 "locality": "Bhoewali BO"
 },
 {
@@ -15235,8 +15235,8 @@
 "pincodes": [
 "143103"
 ],
-"lat": 31.9,
-"lon": 74.89,
+"lat": 31.82,
+"lon": 74.84,
 "locality": "Makowal BO"
 },
 {
@@ -15247,8 +15247,8 @@
 "pincodes": [
 "143105"
 ],
-"lat": 31.54,
-"lon": 74.75,
+"lat": 31.64,
+"lon": 74.86,
 "locality": "Kasail BO"
 },
 {
@@ -15272,7 +15272,7 @@
 "143108"
 ],
 "lat": 31.64,
-"lon": 74.56,
+"lon": 74.64,
 "locality": "Dhanoakalan BO"
 },
 {
@@ -15283,8 +15283,8 @@
 "pincodes": [
 "143109"
 ],
-"lat": 31.72,
-"lon": 74.63,
+"lat": 31.67,
+"lon": 74.71,
 "locality": "Lopoke BO"
 },
 {
@@ -15295,8 +15295,8 @@
 "pincodes": [
 "143111"
 ],
-"lat": 31.563228,
-"lon": 75.15,
+"lat": 31.5544,
+"lon": 75.14,
 "locality": "Muchal BO"
 },
 {
@@ -15319,8 +15319,8 @@
 "pincodes": [
 "143113"
 ],
-"lat": 31.62,
-"lon": 75.01,
+"lat": 31.64,
+"lon": 75.0,
 "locality": "Nangal Dial Singh BO"
 },
 {
@@ -15331,7 +15331,7 @@
 "pincodes": [
 "143114"
 ],
-"lat": 31.69,
+"lat": 31.68,
 "lon": 75.2,
 "locality": "Chananke BO"
 },
@@ -15343,8 +15343,8 @@
 "pincodes": [
 "143115"
 ],
-"lat": 31.51,
-"lon": 75.07,
+"lat": 31.59,
+"lon": 74.97,
 "locality": "Ekal Gudda BO"
 },
 {
@@ -15355,8 +15355,8 @@
 "pincodes": [
 "143116"
 ],
-"lat": 31.64,
-"lon": 75.06,
+"lat": 31.63,
+"lon": 74.84,
 "locality": "Akalgarh Dhupaian BO"
 },
 {
@@ -15367,8 +15367,8 @@
 "pincodes": [
 "143119"
 ],
-"lat": 31.71,
-"lon": 75.11,
+"lat": 31.63,
+"lon": 74.87,
 "locality": "Babowal BO"
 },
 {
@@ -15379,8 +15379,8 @@
 "pincodes": [
 "143149"
 ],
-"lat": 31.56,
-"lon": 75.12,
+"lat": 31.59,
+"lon": 75.03,
 "locality": "Tangra BO"
 },
 {
@@ -15403,8 +15403,8 @@
 "pincodes": [
 "143202"
 ],
-"lat": 31.61,
-"lon": 75.22,
+"lat": 31.636303,
+"lon": 75.0389951,
 "locality": "Bhalaipur Purban BO"
 },
 {
@@ -15415,8 +15415,8 @@
 "pincodes": [
 "143203"
 ],
-"lat": 31.63,
-"lon": 75.34,
+"lat": 31.61,
+"lon": 75.23,
 "locality": "Jamalpur BO"
 },
 {
@@ -15451,8 +15451,8 @@
 "pincodes": [
 "143413"
 ],
-"lat": 31.46,
-"lon": 73.13,
+"lat": 31.53,
+"lon": 74.98,
 "locality": "Manawala Khurd BO"
 },
 {
@@ -15475,8 +15475,8 @@
 "pincodes": [
 "143502"
 ],
-"lat": 31.74,
-"lon": 75.08,
+"lat": 31.69,
+"lon": 74.99,
 "locality": "Abdal BO"
 },
 {
@@ -15487,8 +15487,8 @@
 "pincodes": [
 "143504"
 ],
-"lat": 31.71625,
-"lon": 75.09,
+"lat": 31.7,
+"lon": 75.05,
 "locality": "Dhade BO"
 },
 {
@@ -15499,8 +15499,8 @@
 "pincodes": [
 "143601"
 ],
-"lat": 31.82,
-"lon": 75.0,
+"lat": 31.72,
+"lon": 74.91,
 "locality": "Budha Theh BO"
 },
 {
@@ -15511,8 +15511,8 @@
 "pincodes": [
 "143603"
 ],
-"lat": 31.93,
-"lon": 74.83,
+"lat": 31.6339843,
+"lon": 74.8722592,
 "locality": "Dujowal BO"
 },
 {
@@ -15523,8 +15523,8 @@
 "pincodes": [
 "143606"
 ],
-"lat": 31.84,
-"lon": 74.94,
+"lat": 31.8,
+"lon": 74.91,
 "locality": "Balbawa BO"
 },
 {
@@ -15559,8 +15559,8 @@
 "pincodes": [
 "144002"
 ],
-"lat": 31.37426,
-"lon": 75.512,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Dhaliwal BO"
 },
 {
@@ -15571,8 +15571,8 @@
 "pincodes": [
 "144003"
 ],
-"lat": 31.3384,
-"lon": 75.3531,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Khurla BO"
 },
 {
@@ -15583,8 +15583,8 @@
 "pincodes": [
 "144004"
 ],
-"lat": 31.3215,
-"lon": 75.5925,
+"lat": 31.325,
+"lon": 75.5982,
 "locality": "Randhawa Masanda BO"
 },
 {
@@ -15679,8 +15679,8 @@
 "pincodes": [
 "144020"
 ],
-"lat": 31.2415,
-"lon": 75.6266,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Udhopur BO"
 },
 {
@@ -15691,8 +15691,8 @@
 "pincodes": [
 "144021"
 ],
-"lat": 31.2136,
-"lon": 75.5924,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Mand BO"
 },
 {
@@ -15703,8 +15703,8 @@
 "pincodes": [
 "144022"
 ],
-"lat": 31.300299,
-"lon": 75.630428,
+"lat": 31.3261,
+"lon": 75.5768,
 "locality": "Dhina BO"
 },
 {
@@ -15727,8 +15727,8 @@
 "pincodes": [
 "144024"
 ],
-"lat": 31.261,
-"lon": 75.663,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Khusropur BO"
 },
 {
@@ -15739,8 +15739,8 @@
 "pincodes": [
 "144025"
 ],
-"lat": 31.3853,
-"lon": 75.6385,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Dhogri BO"
 },
 {
@@ -15751,8 +15751,8 @@
 "pincodes": [
 "144026"
 ],
-"lat": 31.3534,
-"lon": 75.6171,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Khambra BO"
 },
 {
@@ -15775,8 +15775,8 @@
 "pincodes": [
 "144028"
 ],
-"lat": 31.3524,
-"lon": 75.6171,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Lallian BO"
 },
 {
@@ -15787,8 +15787,8 @@
 "pincodes": [
 "144029"
 ],
-"lat": 31.0855,
-"lon": 75.9167,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Sheikhupur BO"
 },
 {
@@ -15799,8 +15799,8 @@
 "pincodes": [
 "144030"
 ],
-"lat": 31.4087,
-"lon": 75.8055,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Kalra BO"
 },
 {
@@ -15835,8 +15835,8 @@
 "pincodes": [
 "144033"
 ],
-"lat": 31.238182,
-"lon": 76.488107,
+"lat": 31.52747,
+"lon": 75.8066,
 "locality": "Chak Vendal BO"
 },
 {
@@ -15859,8 +15859,8 @@
 "pincodes": [
 "144035"
 ],
-"lat": 31.52747,
-"lon": 75.8066,
+"lat": 31.21781,
+"lon": 75.76939,
 "locality": "Kang Arryan BO"
 },
 {
@@ -15871,8 +15871,8 @@
 "pincodes": [
 "144036"
 ],
-"lat": 31.52747,
-"lon": 75.8066,
+"lat": 31.217809,
+"lon": 75.769391,
 "locality": "Khokhewal BO"
 },
 {
@@ -15895,8 +15895,8 @@
 "pincodes": [
 "144039"
 ],
-"lat": 31.125807,
-"lon": 75.473293,
+"lat": 31.4196049,
+"lon": 75.7531255,
 "locality": "Gumtali BO"
 },
 {
@@ -15907,8 +15907,8 @@
 "pincodes": [
 "144040"
 ],
-"lat": 31.1449,
-"lon": 75.4852,
+"lat": 31.3203,
+"lon": 75.5908,
 "locality": "Bhullar BO"
 },
 {
@@ -15919,8 +15919,8 @@
 "pincodes": [
 "144041"
 ],
-"lat": 31.52747,
-"lon": 75.8066,
+"lat": 31.3260152,
+"lon": 75.5761829,
 "locality": "Adarman BO"
 },
 {
@@ -15943,8 +15943,8 @@
 "pincodes": [
 "144043"
 ],
-"lat": 31.217805,
-"lon": 75.769395,
+"lat": 31.217807,
+"lon": 75.769393,
 "locality": "Tahli BO"
 },
 {
@@ -15967,8 +15967,8 @@
 "pincodes": [
 "144101"
 ],
-"lat": 31.3404,
-"lon": 75.6717,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Talhan BO"
 },
 {
@@ -15979,8 +15979,8 @@
 "pincodes": [
 "144102"
 ],
-"lat": 31.3875,
-"lon": 75.2456,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Pandori Nijjran BO"
 },
 {
@@ -15991,8 +15991,8 @@
 "pincodes": [
 "144103"
 ],
-"lat": 31.4236,
-"lon": 75.7569,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Kandola BO"
 },
 {
@@ -16003,8 +16003,8 @@
 "pincodes": [
 "144104"
 ],
-"lat": 31.4031,
-"lon": 75.756,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Daroli Khurd BO"
 },
 {
@@ -16015,8 +16015,8 @@
 "pincodes": [
 "144106"
 ],
-"lat": 31.4736,
-"lon": 75.7578,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Kotla BO"
 },
 {
@@ -16027,8 +16027,8 @@
 "pincodes": [
 "144201"
 ],
-"lat": 31.327,
-"lon": 75.5769,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Rajpur BO"
 },
 {
@@ -16039,8 +16039,8 @@
 "pincodes": [
 "144301"
 ],
-"lat": 31.4345,
-"lon": 75.6499,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Kishangarh BO"
 },
 {
@@ -16051,8 +16051,8 @@
 "pincodes": [
 "144302"
 ],
-"lat": 30.9987,
-"lon": 75.1651,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Dolike Sunderpur BO"
 },
 {
@@ -16063,8 +16063,8 @@
 "pincodes": [
 "144303"
 ],
-"lat": 31.4328,
-"lon": 75.6508,
+"lat": 31.326723,
+"lon": 75.586847,
 "locality": "Jallowal BO"
 },
 {
@@ -16087,8 +16087,8 @@
 "pincodes": [
 "144409"
 ],
-"lat": 31.0936,
-"lon": 75.7782,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Mothada Khurd BO"
 },
 {
@@ -16099,8 +16099,8 @@
 "pincodes": [
 "144410"
 ],
-"lat": 31.0346,
-"lon": 75.8321,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Nagar BO"
 },
 {
@@ -16123,8 +16123,8 @@
 "pincodes": [
 "144416"
 ],
-"lat": 31.0828,
-"lon": 75.8874,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Massani BO"
 },
 {
@@ -16135,8 +16135,8 @@
 "pincodes": [
 "144418"
 ],
-"lat": 31.118,
-"lon": 75.7884,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Dhaleta BO"
 },
 {
@@ -16147,8 +16147,8 @@
 "pincodes": [
 "144419"
 ],
-"lat": 31.0531,
-"lon": 75.8628,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Bharsingpura BO"
 },
 {
@@ -16159,8 +16159,8 @@
 "pincodes": [
 "144502"
 ],
-"lat": 31.164,
-"lon": 75.8672,
+"lat": 31.300299,
+"lon": 75.630428,
 "locality": "Lehal BO"
 },
 {
@@ -16183,8 +16183,8 @@
 "pincodes": [
 "144623"
 ],
-"lat": 31.374924,
-"lon": 75.384212,
+"lat": 31.26957,
+"lon": 75.40631,
 "locality": "Uggi BO"
 },
 {
@@ -16207,8 +16207,8 @@
 "pincodes": [
 "144629"
 ],
-"lat": 31.8386422,
-"lon": 75.6593711,
+"lat": 31.3794,
+"lon": 75.3847,
 "locality": "Manak BO"
 },
 {
@@ -16219,8 +16219,8 @@
 "pincodes": [
 "144630"
 ],
-"lat": 31.11101,
-"lon": 75.7386,
+"lat": 31.1743,
+"lon": 75.4817,
 "locality": "Kang Saboo BO"
 },
 {
@@ -16231,8 +16231,8 @@
 "pincodes": [
 "144632"
 ],
-"lat": 31.1963969,
-"lon": 75.7713809,
+"lat": 31.217806,
+"lon": 75.769394,
 "locality": "Birk BO"
 },
 {
@@ -16255,8 +16255,8 @@
 "pincodes": [
 "144701"
 ],
-"lat": 31.125807,
-"lon": 75.473293,
+"lat": 31.382075,
+"lon": 75.384029,
 "locality": "Malupur BO"
 },
 {
@@ -16267,8 +16267,8 @@
 "pincodes": [
 "144702"
 ],
-"lat": 31.06579,
-"lon": 75.24819,
+"lat": 31.3092705,
+"lon": 75.378467,
 "locality": "Mullewal Khera BO"
 },
 {
@@ -16279,8 +16279,8 @@
 "pincodes": [
 "144703"
 ],
-"lat": 31.8362,
-"lon": 75.6474,
+"lat": 31.2959166,
+"lon": 75.4293773,
 "locality": "Sohal Jagir BO"
 },
 {
@@ -16291,8 +16291,8 @@
 "pincodes": [
 "144801"
 ],
-"lat": 31.37493,
-"lon": 75.384206,
+"lat": 31.4364,
+"lon": 75.4956,
 "locality": "Mustafapur BO"
 },
 {
@@ -16339,8 +16339,8 @@
 "pincodes": [
 "160055"
 ],
-"lat": 30.7585,
-"lon": 76.66,
+"lat": 30.692051,
+"lon": 76.69841,
 "locality": "Sunny Enclave S.O."
 },
 {
@@ -16351,8 +16351,8 @@
 "pincodes": [
 "140103"
 ],
-"lat": 30.9666111,
-"lon": 76.3715277,
+"lat": 30.8296667,
+"lon": 76.5795556,
 "locality": "Mundhon Kalan BO"
 },
 {
@@ -16363,8 +16363,8 @@
 "pincodes": [
 "140109"
 ],
-"lat": 30.9666111,
-"lon": 76.3715277,
+"lat": 30.8801944,
+"lon": 76.6578889,
 "locality": "Kubaheri BO"
 },
 {
@@ -16400,7 +16400,7 @@
 "140301"
 ],
 "lat": 30.9666111,
-"lon": 76.3715277,
+"lon": 76.5883888,
 "locality": "Daun Majra BO"
 },
 {
@@ -16423,8 +16423,8 @@
 "pincodes": [
 "140307"
 ],
-"lat": 30.9666111,
-"lon": 76.3715277,
+"lat": 30.6951111,
+"lon": 76.6647778,
 "locality": "Geega Majra BO"
 },
 {
@@ -16447,8 +16447,8 @@
 "pincodes": [
 "140413"
 ],
-"lat": 30.9666111,
-"lon": 76.3715277,
+"lat": 30.7742777,
+"lon": 76.5606111,
 "locality": "Bassian Brahman BO"
 },
 {
@@ -16495,8 +16495,8 @@
 "pincodes": [
 "140601"
 ],
-"lat": 30.55,
-"lon": 76.69,
+"lat": 30.5540556,
+"lon": 76.6666944,
 "locality": "Nagal Charbar BO"
 },
 {
@@ -16531,7 +16531,7 @@
 "pincodes": [
 "140901"
 ],
-"lat": 30.9666111,
+"lat": 30.692051,
 "lon": 76.69841,
 "locality": "Parol BO"
 },
@@ -16555,8 +16555,8 @@
 "pincodes": [
 "160062"
 ],
-"lat": 30.6762222,
-"lon": 76.7421111,
+"lat": 30.6833611,
+"lon": 76.7356111,
 "locality": "Chandigarh Sector 65 SO"
 },
 {
@@ -16567,8 +16567,8 @@
 "pincodes": [
 "160071"
 ],
-"lat": 30.9666111,
-"lon": 73.53025,
+"lat": 30.6833611,
+"lon": 76.7356111,
 "locality": "Chandigarh Sector 71 SO"
 },
 {
@@ -16615,8 +16615,8 @@
 "pincodes": [
 "560002"
 ],
-"lat": 12.839909,
-"lon": 77.662968,
+"lat": 12.9651111,
+"lon": 77.5876111,
 "locality": "Bengaluru City S.O"
 },
 {
@@ -16627,8 +16627,8 @@
 "pincodes": [
 "560003"
 ],
-"lat": 13.00273,
-"lon": 77.571959,
+"lat": 13.000127,
+"lon": 77.570627,
 "locality": "Swimming Pool Extn S.O"
 },
 {
@@ -16639,8 +16639,8 @@
 "pincodes": [
 "560007"
 ],
-"lat": 12.16680556,
-"lon": 77.10655556,
+"lat": 12.9636389,
+"lon": 77.6291111,
 "locality": "Agram S.O"
 },
 {
@@ -16687,8 +16687,8 @@
 "pincodes": [
 "560025"
 ],
-"lat": 12.16325,
-"lon": 78.0134167,
+"lat": 12.9748333,
+"lon": 77.604,
 "locality": "Richmond Town S.O"
 },
 {
@@ -16723,8 +16723,8 @@
 "pincodes": [
 "560049"
 ],
-"lat": 13.06136,
-"lon": 77.715877,
+"lat": 13.0188056,
+"lon": 77.7099167,
 "locality": "Bidrahalli B.O"
 },
 {
@@ -16759,8 +16759,8 @@
 "pincodes": [
 "560066"
 ],
-"lat": 12.1519167,
-"lon": 77.1308056,
+"lat": 12.987244,
+"lon": 77.732161,
 "locality": "Whitefield S.O"
 },
 {
@@ -16795,8 +16795,8 @@
 "pincodes": [
 "560073"
 ],
-"lat": 13.443093,
-"lon": 77.62927,
+"lat": 13.056573,
+"lon": 77.508083,
 "locality": "Nelakadiranahalli B.O"
 },
 {
@@ -16843,8 +16843,8 @@
 "pincodes": [
 "560094"
 ],
-"lat": 12.0352778,
-"lon": 77.5710833,
+"lat": 13.0687778,
+"lon": 77.9689444,
 "locality": "ISRO Anthariksha Bhavan S.O"
 },
 {
@@ -16855,7 +16855,7 @@
 "pincodes": [
 "562106"
 ],
-"lat": 12.69,
+"lat": 12.76,
 "lon": 77.73,
 "locality": "Indalawadi B.O"
 },
@@ -16867,8 +16867,8 @@
 "pincodes": [
 "562130"
 ],
-"lat": 12.99,
-"lon": 77.43,
+"lat": 12.9447222,
+"lon": 77.5740278,
 "locality": "Kadabagere B.O"
 },
 {
@@ -16903,8 +16903,8 @@
 "pincodes": [
 "560116"
 ],
-"lat": 12.7542791,
-"lon": 77.4845284,
+"lat": 12.8001342,
+"lon": 77.5081318,
 "locality": "Bolare B.O"
 },
 {
@@ -16939,8 +16939,8 @@
 "pincodes": [
 "562162"
 ],
-"lat": 13.12,
-"lon": 77.43,
+"lat": 13.05,
+"lon": 77.48,
 "locality": "Huskur B.O"
 },
 {
@@ -16951,8 +16951,8 @@
 "pincodes": [
 "570008"
 ],
-"lat": 13.401994,
-"lon": 75.372552,
+"lat": 12.27872222,
+"lon": 76.63997222,
 "locality": "Srirampura B.O"
 },
 {
@@ -17023,8 +17023,8 @@
 "pincodes": [
 "571101"
 ],
-"lat": 12.330871,
-"lon": 76.862006,
+"lat": 12.33019444,
+"lon": 76.86119444,
 "locality": "Kodagahalli B.O"
 },
 {
@@ -17227,8 +17227,8 @@
 "pincodes": [
 "571189"
 ],
-"lat": 12.1988,
-"lon": 76.3517,
+"lat": 12.23816667,
+"lon": 76.34019444,
 "locality": "Dharmapura B.O"
 },
 {
@@ -17359,8 +17359,8 @@
 "pincodes": [
 "574201"
 ],
-"lat": 12.7584668,
-"lon": 75.203671,
+"lat": 12.7608889,
+"lon": 75.1999444,
 "locality": "Puttur(D.K.) H.O"
 },
 {
@@ -17371,8 +17371,8 @@
 "pincodes": [
 "575001"
 ],
-"lat": 12.8583611,
-"lon": 74.8374722,
+"lat": 12.8644167,
+"lon": 74.8493333,
 "locality": "Mangaluru H.O"
 },
 {
@@ -17407,8 +17407,8 @@
 "pincodes": [
 "574109"
 ],
-"lat": 13.0933848,
-"lon": 75.1696929,
+"lat": 13.07506,
+"lon": 75.1912364,
 "locality": "Kutlur B.O"
 },
 {
@@ -17419,8 +17419,8 @@
 "pincodes": [
 "574141"
 ],
-"lat": 13.1004759,
-"lon": 74.8499166,
+"lat": 13.0888673,
+"lon": 74.8686706,
 "locality": "Kollur B.O"
 },
 {
@@ -17431,8 +17431,8 @@
 "pincodes": [
 "574142"
 ],
-"lat": 12.9779205,
-"lon": 74.8538112,
+"lat": 12.9557976,
+"lon": 74.8913728,
 "locality": "Kalavara B.O"
 },
 {
@@ -17443,8 +17443,8 @@
 "pincodes": [
 "574143"
 ],
-"lat": 12.8822085,
-"lon": 74.9745535,
+"lat": 12.8702673,
+"lon": 74.9815165,
 "locality": "Kodmannu B.O"
 },
 {
@@ -17455,8 +17455,8 @@
 "pincodes": [
 "574144"
 ],
-"lat": 13.0082831,
-"lon": 74.9234306,
+"lat": 12.9566344,
+"lon": 74.9866127,
 "locality": "Kompadavu B.O"
 },
 {
@@ -17479,8 +17479,8 @@
 "pincodes": [
 "574146"
 ],
-"lat": 13.0225157,
-"lon": 74.8079246,
+"lat": 13.0321073,
+"lon": 74.8205846,
 "locality": "Chelairu B.O"
 },
 {
@@ -17503,8 +17503,8 @@
 "pincodes": [
 "574150"
 ],
-"lat": 13.0656886,
-"lon": 74.8236745,
+"lat": 13.0431365,
+"lon": 74.8431474,
 "locality": "Punaroor B.O"
 },
 {
@@ -17515,8 +17515,8 @@
 "pincodes": [
 "574151"
 ],
-"lat": 12.9585182,
-"lon": 74.9132818,
+"lat": 12.9570913,
+"lon": 74.9585253,
 "locality": "Kandavara B.O"
 },
 {
@@ -17527,8 +17527,8 @@
 "pincodes": [
 "574153"
 ],
-"lat": 12.792232,
-"lon": 74.9811631,
+"lat": 12.840898,
+"lon": 74.98097,
 "locality": "Balepuni B.O"
 },
 {
@@ -17539,8 +17539,8 @@
 "pincodes": [
 "574154"
 ],
-"lat": 13.0964481,
-"lon": 74.8175054,
+"lat": 13.072201,
+"lon": 74.8125702,
 "locality": "Panjinadka B.O"
 },
 {
@@ -17551,8 +17551,8 @@
 "pincodes": [
 "574197"
 ],
-"lat": 13.0541625,
-"lon": 75.0628351,
+"lat": 13.0379298,
+"lon": 75.0849473,
 "locality": "Maroor B.O"
 },
 {
@@ -17563,8 +17563,8 @@
 "pincodes": [
 "574198"
 ],
-"lat": 12.9173461,
-"lon": 75.50313,
+"lat": 12.8834722,
+"lon": 74.8757222,
 "locality": "Shishila B.O"
 },
 {
@@ -17575,8 +17575,8 @@
 "pincodes": [
 "574199"
 ],
-"lat": 12.8085398,
-"lon": 74.913904,
+"lat": 12.8503579,
+"lon": 74.9370818,
 "locality": "Assaigoli B.O"
 },
 {
@@ -17587,8 +17587,8 @@
 "pincodes": [
 "574202"
 ],
-"lat": 12.7544191,
-"lon": 75.2521252,
+"lat": 12.7558611,
+"lon": 75.2113889,
 "locality": "Narimogru B.O"
 },
 {
@@ -17599,8 +17599,8 @@
 "pincodes": [
 "574203"
 ],
-"lat": 12.7774861,
-"lon": 75.1965605,
+"lat": 12.7770278,
+"lon": 75.1822222,
 "locality": "Bannur B.O"
 },
 {
@@ -17611,8 +17611,8 @@
 "pincodes": [
 "574210"
 ],
-"lat": 12.6978459,
-"lon": 75.2183186,
+"lat": 12.7301389,
+"lon": 75.2203333,
 "locality": "Kaikara B.O"
 },
 {
@@ -17623,8 +17623,8 @@
 "pincodes": [
 "574211"
 ],
-"lat": 12.9155781,
-"lon": 75.0529539,
+"lat": 12.8897967,
+"lon": 75.1072525,
 "locality": "Agrar B.O"
 },
 {
@@ -17635,8 +17635,8 @@
 "pincodes": [
 "574212"
 ],
-"lat": 12.6198438,
-"lon": 75.4313005,
+"lat": 12.7041,
+"lon": 75.334,
 "locality": "Kukkujadka B.O"
 },
 {
@@ -17647,8 +17647,8 @@
 "pincodes": [
 "574213"
 ],
-"lat": 13.1270832,
-"lon": 75.0233946,
+"lat": 13.097815,
+"lon": 75.0201331,
 "locality": "Moodumarnad B.O"
 },
 {
@@ -17659,8 +17659,8 @@
 "pincodes": [
 "574214"
 ],
-"lat": 13.0761852,
-"lon": 75.3584978,
+"lat": 12.9307236,
+"lon": 75.2930089,
 "locality": "Bangady B.O"
 },
 {
@@ -17671,8 +17671,8 @@
 "pincodes": [
 "574216"
 ],
-"lat": 12.9482438,
-"lon": 75.4099854,
+"lat": 12.9507778,
+"lon": 75.3819444,
 "locality": "Puduvettu B.O"
 },
 {
@@ -17683,8 +17683,8 @@
 "pincodes": [
 "574217"
 ],
-"lat": 12.9376974,
-"lon": 75.2594813,
+"lat": 12.9938092,
+"lon": 75.1972112,
 "locality": "Nala B.O"
 },
 {
@@ -17695,8 +17695,8 @@
 "pincodes": [
 "574218"
 ],
-"lat": 12.611926,
-"lon": 75.6056762,
+"lat": 12.6557318,
+"lon": 75.521766,
 "locality": "Hariharapallathadka B.O"
 },
 {
@@ -17707,8 +17707,8 @@
 "pincodes": [
 "574219"
 ],
-"lat": 12.9022636,
-"lon": 75.0020455,
+"lat": 12.8825833,
+"lon": 75.0260278,
 "locality": "Kallige B.O"
 },
 {
@@ -17719,8 +17719,8 @@
 "pincodes": [
 "574220"
 ],
-"lat": 12.8087177,
-"lon": 75.1630544,
+"lat": 12.8003492,
+"lon": 75.1431095,
 "locality": "Kedila B.O"
 },
 {
@@ -17731,8 +17731,8 @@
 "pincodes": [
 "574221"
 ],
-"lat": 12.7418522,
-"lon": 75.466888,
+"lat": 12.8834722,
+"lon": 74.8757222,
 "locality": "Kutrupady B.O"
 },
 {
@@ -17743,8 +17743,8 @@
 "pincodes": [
 "574222"
 ],
-"lat": 12.8201332,
-"lon": 75.0793909,
+"lat": 12.8430833,
+"lon": 75.0729444,
 "locality": "Veerakamba B.O"
 },
 {
@@ -17755,8 +17755,8 @@
 "pincodes": [
 "574223"
 ],
-"lat": 12.6075641,
-"lon": 75.3191257,
+"lat": 12.6723126,
+"lon": 75.2625096,
 "locality": "Kanakamajal B.O"
 },
 {
@@ -17767,8 +17767,8 @@
 "pincodes": [
 "574224"
 ],
-"lat": 12.9313258,
-"lon": 75.2124107,
+"lat": 12.95,
+"lon": 75.1873333,
 "locality": "Machina B.O"
 },
 {
@@ -17791,8 +17791,8 @@
 "pincodes": [
 "574226"
 ],
-"lat": 13.0974824,
-"lon": 74.9381218,
+"lat": 13.0951389,
+"lon": 74.9484444,
 "locality": "Paladka B.O"
 },
 {
@@ -17803,8 +17803,8 @@
 "pincodes": [
 "574227"
 ],
-"lat": 13.082197,
-"lon": 74.99637,
+"lat": 13.0290356,
+"lon": 75.0073563,
 "locality": "Alangar B.O"
 },
 {
@@ -17815,8 +17815,8 @@
 "pincodes": [
 "574228"
 ],
-"lat": 13.0410389,
-"lon": 75.4092205,
+"lat": 13.0072538,
+"lon": 75.3499866,
 "locality": "Kakkinje B.O"
 },
 {
@@ -17827,8 +17827,8 @@
 "pincodes": [
 "574229"
 ],
-"lat": 12.827981,
-"lon": 75.5717258,
+"lat": 12.8449372,
+"lon": 75.3606788,
 "locality": "Gundia B.O"
 },
 {
@@ -17839,8 +17839,8 @@
 "pincodes": [
 "574230"
 ],
-"lat": 12.7589802,
-"lon": 75.577401,
+"lat": 12.8834722,
+"lon": 74.8757222,
 "locality": "Kombar B.O"
 },
 {
@@ -17851,8 +17851,8 @@
 "pincodes": [
 "574231"
 ],
-"lat": 12.8600779,
-"lon": 75.0391244,
+"lat": 12.8723946,
+"lon": 75.0822221,
 "locality": "Sajipamunnur B.O"
 },
 {
@@ -17863,8 +17863,8 @@
 "pincodes": [
 "574232"
 ],
-"lat": 12.6597384,
-"lon": 75.4907764,
+"lat": 12.6720873,
+"lon": 75.4442561,
 "locality": "Kuthkunja B.O"
 },
 {
@@ -17875,8 +17875,8 @@
 "pincodes": [
 "574233"
 ],
-"lat": 12.9179492,
-"lon": 75.1864635,
+"lat": 12.901459,
+"lon": 75.1855623,
 "locality": "Badagakajekar B.O"
 },
 {
@@ -17911,8 +17911,8 @@
 "pincodes": [
 "574236"
 ],
-"lat": 13.0923142,
-"lon": 75.1170479,
+"lat": 13.0613401,
+"lon": 75.1161038,
 "locality": "Marody B.O"
 },
 {
@@ -17923,8 +17923,8 @@
 "pincodes": [
 "574237"
 ],
-"lat": 12.9896393,
-"lon": 75.0259923,
+"lat": 12.9936389,
+"lon": 75.0513889,
 "locality": "Karpe B.O"
 },
 {
@@ -17935,8 +17935,8 @@
 "pincodes": [
 "574238"
 ],
-"lat": 12.6542989,
-"lon": 75.5835593,
+"lat": 12.7018062,
+"lon": 75.599202,
 "locality": "Devarahalli B.O"
 },
 {
@@ -17947,8 +17947,8 @@
 "pincodes": [
 "574239"
 ],
-"lat": 12.6223768,
-"lon": 75.3767837,
+"lat": 12.5948251,
+"lon": 75.3369797,
 "locality": "Aivernad B.O"
 },
 {
@@ -17971,8 +17971,8 @@
 "pincodes": [
 "574241"
 ],
-"lat": 12.8319747,
-"lon": 75.3327666,
+"lat": 12.850557,
+"lon": 75.1969395,
 "locality": "Haleneranky B.O"
 },
 {
@@ -17983,8 +17983,8 @@
 "pincodes": [
 "574242"
 ],
-"lat": 13.0798644,
-"lon": 75.1720164,
+"lat": 12.9973919,
+"lon": 75.1295946,
 "locality": "Kokrady B.O"
 },
 {
@@ -17995,8 +17995,8 @@
 "pincodes": [
 "574243"
 ],
-"lat": 12.728545,
-"lon": 75.1251994,
+"lat": 12.7875536,
+"lon": 75.0979804,
 "locality": "Neerkaje B.O"
 },
 {
@@ -18007,8 +18007,8 @@
 "pincodes": [
 "574248"
 ],
-"lat": 12.5991908,
-"lon": 75.4767585,
+"lat": 12.5975386,
+"lon": 75.4442609,
 "locality": "Bollaje B.O"
 },
 {
@@ -18019,8 +18019,8 @@
 "pincodes": [
 "574253"
 ],
-"lat": 12.8067329,
-"lon": 75.1135623,
+"lat": 12.8586068,
+"lon": 75.1011383,
 "locality": "Ananthady B.O"
 },
 {
@@ -18031,8 +18031,8 @@
 "pincodes": [
 "574259"
 ],
-"lat": 12.6663287,
-"lon": 75.1995297,
+"lat": 12.6790853,
+"lon": 75.1713772,
 "locality": "Bettampady B.O"
 },
 {
@@ -18055,8 +18055,8 @@
 "pincodes": [
 "574265"
 ],
-"lat": 12.9421535,
-"lon": 75.1177775,
+"lat": 12.8929939,
+"lon": 75.137658,
 "locality": "Mudupadukodi B.O"
 },
 {
@@ -18079,8 +18079,8 @@
 "pincodes": [
 "574274"
 ],
-"lat": 13.0694959,
-"lon": 74.9221206,
+"lat": 12.751453,
+"lon": 75.197271,
 "locality": "Banangady B.O"
 },
 {
@@ -18091,8 +18091,8 @@
 "pincodes": [
 "574279"
 ],
-"lat": 12.732307,
-"lon": 75.021541,
+"lat": 12.7443056,
+"lon": 75.0505833,
 "locality": "Karopady B.O"
 },
 {
@@ -18103,8 +18103,8 @@
 "pincodes": [
 "574285"
 ],
-"lat": 12.7777233,
-"lon": 75.3534364,
+"lat": 12.8834722,
+"lon": 74.8757222,
 "locality": "Sharavoor B.O"
 },
 {
@@ -18115,8 +18115,8 @@
 "pincodes": [
 "574313"
 ],
-"lat": 12.5852004,
-"lon": 75.2248133,
+"lat": 12.6137069,
+"lon": 75.2043427,
 "locality": "Karnoor B.O"
 },
 {
@@ -18139,8 +18139,8 @@
 "pincodes": [
 "574323"
 ],
-"lat": 12.7908232,
-"lon": 75.051881,
+"lat": 12.8174722,
+"lon": 75.02825,
 "locality": "Barebettu B.O"
 },
 {
@@ -18163,8 +18163,8 @@
 "pincodes": [
 "574325"
 ],
-"lat": 12.8260974,
-"lon": 75.1950944,
+"lat": 12.8370623,
+"lon": 75.1649571,
 "locality": "Perne B.O"
 },
 {
@@ -18175,8 +18175,8 @@
 "pincodes": [
 "574326"
 ],
-"lat": 12.8933337,
-"lon": 75.2103111,
+"lat": 12.8864243,
+"lon": 75.1735648,
 "locality": "Puthila B.O"
 },
 {
@@ -18199,8 +18199,8 @@
 "pincodes": [
 "574328"
 ],
-"lat": 12.6957538,
-"lon": 75.4012453,
+"lat": 12.8186667,
+"lon": 75.366,
 "locality": "Murulya B.O"
 },
 {
@@ -18211,8 +18211,8 @@
 "pincodes": [
 "574509"
 ],
-"lat": 13.0224728,
-"lon": 74.8692399,
+"lat": 13.003183,
+"lon": 74.881115,
 "locality": "Yekkar B.O"
 },
 {
@@ -18223,8 +18223,8 @@
 "pincodes": [
 "575002"
 ],
-"lat": 12.879893,
-"lon": 74.8583,
+"lat": 12.8591111,
+"lon": 74.8671389,
 "locality": "Mercara Hill S.O"
 },
 {
@@ -18235,8 +18235,8 @@
 "pincodes": [
 "575003"
 ],
-"lat": 12.8836773,
-"lon": 74.8336179,
+"lat": 12.8744,
+"lon": 74.843395,
 "locality": "Gandhinagar S.O (Dakshina Kannada)"
 },
 {
@@ -18283,8 +18283,8 @@
 "pincodes": [
 "575008"
 ],
-"lat": 12.9168689,
-"lon": 74.869036,
+"lat": 12.8850471,
+"lon": 74.8672658,
 "locality": "Bondel B.O"
 },
 {
@@ -18307,8 +18307,8 @@
 "pincodes": [
 "575010"
 ],
-"lat": 12.9489696,
-"lon": 74.804309,
+"lat": 12.944492,
+"lon": 74.815721,
 "locality": "Meenakaliya B.O"
 },
 {
@@ -18355,8 +18355,8 @@
 "pincodes": [
 "575015"
 ],
-"lat": 12.9400753,
-"lon": 74.8535329,
+"lat": 12.9246944,
+"lon": 74.8581389,
 "locality": "Kunjathbail B.O"
 },
 {
@@ -18391,8 +18391,8 @@
 "pincodes": [
 "575018"
 ],
-"lat": 12.7866789,
-"lon": 74.9079167,
+"lat": 12.7772268,
+"lon": 74.9246966,
 "locality": "Mangalanthi B.O"
 },
 {
@@ -18463,8 +18463,8 @@
 "pincodes": [
 "575028"
 ],
-"lat": 12.9276943,
-"lon": 74.8921567,
+"lat": 12.91746,
+"lon": 74.902597,
 "locality": "Moodushedde B.O"
 },
 {
@@ -18475,8 +18475,8 @@
 "pincodes": [
 "575029"
 ],
-"lat": 12.8990697,
-"lon": 74.9316817,
+"lat": 12.9056465,
+"lon": 74.9627524,
 "locality": "Padu B.O"
 },
 {
@@ -18487,8 +18487,8 @@
 "pincodes": [
 "575030"
 ],
-"lat": 13.0195224,
-"lon": 74.8203164,
+"lat": 12.9931831,
+"lon": 74.8400574,
 "locality": "Madhya B.O"
 },
 {
@@ -18499,8 +18499,8 @@
 "pincodes": [
 "500001"
 ],
-"lat": 17.65563889,
-"lon": 78.75202778,
+"lat": 17.39313889,
+"lon": 78.47627778,
 "locality": "Hyderabad G.P.O."
 },
 {
@@ -18535,8 +18535,8 @@
 "pincodes": [
 "500027"
 ],
-"lat": 17.6658056,
-"lon": 78.82825,
+"lat": 17.3898056,
+"lon": 78.49925,
 "locality": "Stn. Kachiguda H.O"
 },
 {
@@ -18559,8 +18559,8 @@
 "pincodes": [
 "500007"
 ],
-"lat": 17.20983333,
-"lon": 77.60261111,
+"lat": 17.41127778,
+"lon": 78.51827778,
 "locality": "Ngri S.O"
 },
 {
@@ -18595,8 +18595,8 @@
 "pincodes": [
 "500020"
 ],
-"lat": 17.407,
-"lon": 78.4887,
+"lat": 17.41355556,
+"lon": 78.50508333,
 "locality": "Ashoknagar S.O"
 },
 {
@@ -18643,8 +18643,8 @@
 "pincodes": [
 "500029"
 ],
-"lat": 17.68355556,
-"lon": 78.78558333,
+"lat": 17.40238889,
+"lon": 78.48705556,
 "locality": "Gagan Mahal S.O"
 },
 {
@@ -18751,8 +18751,8 @@
 "pincodes": [
 "500056"
 ],
-"lat": 17.80502778,
-"lon": 78.88408333,
+"lat": 17.76919444,
+"lon": 78.90222222,
 "locality": "Ramakrishna Puram S.O"
 },
 {
@@ -18787,8 +18787,8 @@
 "pincodes": [
 "700010"
 ],
-"lat": 22.3335758,
-"lon": 88.2412007,
+"lat": 22.3411337,
+"lon": 88.2347017,
 "locality": "Beleghata HO"
 },
 {
@@ -18823,8 +18823,8 @@
 "pincodes": [
 "700014"
 ],
-"lat": 22.3338296,
-"lon": 88.2152762,
+"lat": 22.5568333,
+"lon": 88.3634167,
 "locality": "Taltala SO"
 },
 {
@@ -18835,8 +18835,8 @@
 "pincodes": [
 "700017"
 ],
-"lat": 22.3217262,
-"lon": 88.2159322,
+"lat": 22.5446389,
+"lon": 88.3583889,
 "locality": "Jhowtala SO"
 },
 {
@@ -18859,8 +18859,8 @@
 "pincodes": [
 "700037"
 ],
-"lat": 22.6118889,
-"lon": 22.3861944,
+"lat": 22.606,
+"lon": 88.3837778,
 "locality": "Northern Avenue SO"
 },
 {
@@ -18883,8 +18883,8 @@
 "pincodes": [
 "700054"
 ],
-"lat": 22.3445904,
-"lon": 88.2323179,
+"lat": 22.3453036,
+"lon": 88.2326065,
 "locality": "Ram Krishna Samadhi Road SO"
 },
 {
@@ -18895,8 +18895,8 @@
 "pincodes": [
 "700060"
 ],
-"lat": 22.5088888,
-"lon": 88.2827777,
+"lat": 22.5086944,
+"lon": 88.3067222,
 "locality": "Mahendra Banerjee Road SO"
 },
 {
@@ -18931,8 +18931,8 @@
 "pincodes": [
 "700073"
 ],
-"lat": 22.3426,
-"lon": 88.2144,
+"lat": 22.5727778,
+"lon": 88.3475,
 "locality": "Kolkata University SO"
 },
 {
@@ -18967,8 +18967,8 @@
 "pincodes": [
 "700039"
 ],
-"lat": 10.0,
-"lon": 10.0,
+"lat": 22.5221944,
+"lon": 88.3821667,
 "locality": "Tiljala SO"
 },
 {
@@ -18979,8 +18979,8 @@
 "pincodes": [
 "700105"
 ],
-"lat": 22.3143602,
-"lon": 88.258562,
+"lat": 22.339538,
+"lon": 88.2348733,
 "locality": "Chowbaga BO"
 },
 {
@@ -18991,8 +18991,8 @@
 "pincodes": [
 "711101"
 ],
-"lat": 22.5816944,
-"lon": 88.3371944,
+"lat": 22.586886,
+"lon": 88.316946,
 "locality": "Howrah HO"
 },
 {
@@ -19003,8 +19003,8 @@
 "pincodes": [
 "711106"
 ],
-"lat": 22.6035,
-"lon": 88.3381667,
+"lat": 22.6032222,
+"lon": 88.3308889,
 "locality": "Salkia HO"
 },
 {
@@ -19015,8 +19015,8 @@
 "pincodes": [
 "711102"
 ],
-"lat": 22.5663611,
-"lon": 88.32625,
+"lat": 22.5753611,
+"lon": 88.3190278,
 "locality": "Cows Ghat Rd SO"
 },
 {
@@ -19039,8 +19039,8 @@
 "pincodes": [
 "711104"
 ],
-"lat": 22.5846112,
-"lon": 88.3015833,
+"lat": 22.5883889,
+"lon": 88.2974444,
 "locality": "Dharsa BO"
 },
 {
@@ -19063,8 +19063,8 @@
 "pincodes": [
 "711107"
 ],
-"lat": 22.6161111,
-"lon": 88.355,
+"lat": 22.6128333,
+"lon": 88.3483889,
 "locality": "Howrah VicCotMill SO"
 },
 {
@@ -19099,8 +19099,8 @@
 "pincodes": [
 "711110"
 ],
-"lat": 26.1413,
-"lon": 80.0275,
+"lat": 22.561511,
+"lon": 88.27653,
 "locality": "Baksara SO"
 },
 {
@@ -19147,8 +19147,8 @@
 "pincodes": [
 "711114"
 ],
-"lat": 22.6391,
-"lon": 88.304,
+"lat": 22.6344,
+"lon": 88.2719,
 "locality": "Chamrail BO"
 },
 {
@@ -19171,8 +19171,8 @@
 "pincodes": [
 "711201"
 ],
-"lat": 22.6394444,
-"lon": 88.3416667,
+"lat": 22.6335805,
+"lon": 88.3335211,
 "locality": "MBRoad SO"
 },
 {
@@ -19207,8 +19207,8 @@
 "pincodes": [
 "711204"
 ],
-"lat": 24.1194,
-"lon": 87.7586,
+"lat": 22.6168611,
+"lon": 88.3333611,
 "locality": "Chakpara BO"
 },
 {
@@ -19219,8 +19219,8 @@
 "pincodes": [
 "711205"
 ],
-"lat": 21.7928,
-"lon": 88.2272,
+"lat": 22.6594444,
+"lon": 88.3285,
 "locality": "Joypur Bill BO"
 },
 {
@@ -19255,8 +19255,8 @@
 "pincodes": [
 "711226"
 ],
-"lat": 22.741951,
-"lon": 87.976967,
+"lat": 22.699428,
+"lon": 87.970232,
 "locality": "Bairakurchi BO"
 },
 {
@@ -19267,8 +19267,8 @@
 "pincodes": [
 "711227"
 ],
-"lat": 23.7271,
-"lon": 91.3177,
+"lat": 22.5816944,
+"lon": 88.3371944,
 "locality": "Anandanagar BO"
 },
 {
@@ -19279,8 +19279,8 @@
 "pincodes": [
 "711301"
 ],
-"lat": 22.1125,
-"lon": 88.4393,
+"lat": 22.4971,
+"lon": 88.2851,
 "locality": "Dakhin Durgapur BO"
 },
 {
@@ -19291,8 +19291,8 @@
 "pincodes": [
 "711302"
 ],
-"lat": 19.8367,
-"lon": 85.2867,
+"lat": 22.5833611,
+"lon": 88.2333889,
 "locality": "Gangadharpur BO"
 },
 {
@@ -19303,8 +19303,8 @@
 "pincodes": [
 "711303"
 ],
-"lat": 22.7896,
-"lon": 87.9004,
+"lat": 22.595769,
+"lon": 88.263639,
 "locality": "Bainan BO"
 },
 {
@@ -19351,8 +19351,8 @@
 "pincodes": [
 "711307"
 ],
-"lat": 22.5167,
-"lon": 88.0828,
+"lat": 22.510277,
+"lon": 88.131165,
 "locality": "Dasbhaga BO"
 },
 {
@@ -19399,8 +19399,8 @@
 "pincodes": [
 "711312"
 ],
-"lat": 22.425403,
-"lon": 87.970232,
+"lat": 22.6015,
+"lon": 88.1108,
 "locality": "Baidyanathpur BO"
 },
 {
@@ -19411,8 +19411,8 @@
 "pincodes": [
 "711313"
 ],
-"lat": 22.5669,
-"lon": 88.2397,
+"lat": 22.565413,
+"lon": 88.224208,
 "locality": "Chaturbhujkati BO"
 },
 {
@@ -19423,8 +19423,8 @@
 "pincodes": [
 "711314"
 ],
-"lat": 22.253221,
-"lon": 88.019187,
+"lat": 22.587626,
+"lon": 88.082748,
 "locality": "Jallabaj BO"
 },
 {
@@ -19435,8 +19435,8 @@
 "pincodes": [
 "711315"
 ],
-"lat": 22.389518,
-"lon": 88.081527,
+"lat": 22.4686111,
+"lon": 88.1141944,
 "locality": "Baganda BO"
 },
 {
@@ -19447,8 +19447,8 @@
 "pincodes": [
 "711316"
 ],
-"lat": 22.446779,
-"lon": 88.089229,
+"lat": 22.537095,
+"lon": 88.089152,
 "locality": "Bahira BO"
 },
 {
@@ -19471,8 +19471,8 @@
 "pincodes": [
 "711322"
 ],
-"lat": 22.553957,
-"lon": 88.132799,
+"lat": 22.558692,
+"lon": 88.155974,
 "locality": "Gabberia BO"
 },
 {
@@ -19519,8 +19519,8 @@
 "pincodes": [
 "711404"
 ],
-"lat": 22.654064,
-"lon": 88.160852,
+"lat": 22.638976,
+"lon": 88.143778,
 "locality": "Dakshin Santoshpur BO"
 },
 {
@@ -19531,8 +19531,8 @@
 "pincodes": [
 "711405"
 ],
-"lat": 22.341766,
-"lon": 88.074197,
+"lat": 22.624827,
+"lon": 88.209596,
 "locality": "Dafarpur BO"
 },
 {
@@ -19555,8 +19555,8 @@
 "pincodes": [
 "711409"
 ],
-"lat": 22.599662,
-"lon": 88.268705,
+"lat": 22.6202777,
+"lon": 88.2431947,
 "locality": "Nibra BO"
 },
 {
@@ -19567,8 +19567,8 @@
 "pincodes": [
 "711410"
 ],
-"lat": 22.676737,
-"lon": 88.001447,
+"lat": 22.628963,
+"lon": 88.115105,
 "locality": "Gourangachak BO"
 },
 {
@@ -19579,8 +19579,8 @@
 "pincodes": [
 "711411"
 ],
-"lat": 22.595094,
-"lon": 88.214467,
+"lat": 22.600505,
+"lon": 88.165728,
 "locality": "Biprannapara BO"
 },
 {
@@ -19603,8 +19603,8 @@
 "pincodes": [
 "711413"
 ],
-"lat": 22.562008,
-"lon": 87.956085,
+"lat": 22.5665,
+"lon": 87.9768,
 "locality": "Khalna BO"
 },
 {
@@ -19615,8 +19615,8 @@
 "pincodes": [
 "711414"
 ],
-"lat": 22.4652,
-"lon": 88.0574,
+"lat": 22.592482,
+"lon": 88.115715,
 "locality": "Gobindapur Shibtala BO"
 },
 {
@@ -19663,8 +19663,8 @@
 "pincodes": [
 "160025"
 ],
-"lat": 30.7529722,
-"lon": 75.7185,
+"lat": 30.7533453,
+"lon": 76.7173282,
 "locality": "Maloya Colony SO"
 },
 {
@@ -19675,8 +19675,8 @@
 "pincodes": [
 "160047"
 ],
-"lat": 30.692051,
-"lon": 76.69841,
+"lat": 30.6963056,
+"lon": 76.7690278,
 "locality": "Burail BO"
 },
 {
@@ -19699,8 +19699,8 @@
 "pincodes": [
 "600003"
 ],
-"lat": 13.0828056,
-"lon": 80.2789167,
+"lat": 13.0818611,
+"lon": 80.2715833,
 "locality": "Park Town H.O"
 },
 {
@@ -19723,8 +19723,8 @@
 "pincodes": [
 "600006"
 ],
-"lat": 13.1007778,
-"lon": 80.4202778,
+"lat": 13.0598889,
+"lon": 80.2547778,
 "locality": "DPI S.O"
 },
 {
@@ -19807,8 +19807,8 @@
 "pincodes": [
 "600061"
 ],
-"lat": 13.6348889,
-"lon": 80.3180556,
+"lat": 12.9965833,
+"lon": 80.1990278,
 "locality": "Nanganallur S.O"
 },
 {
@@ -19819,8 +19819,8 @@
 "pincodes": [
 "600082"
 ],
-"lat": 13.2101944,
-"lon": 80.3824444,
+"lat": 13.0453611,
+"lon": 80.2376111,
 "locality": "Kumaran Nagar S.O"
 },
 {
@@ -19867,8 +19867,8 @@
 "pincodes": [
 "600012"
 ],
-"lat": 13.1572222,
-"lon": 80.4351944,
+"lat": 13.0978611,
+"lon": 80.2396111,
 "locality": "Puliyanthope S.O"
 },
 {
@@ -19879,8 +19879,8 @@
 "pincodes": [
 "600028"
 ],
-"lat": 13.05,
-"lon": 80.4490833,
+"lat": 13.024578,
+"lon": 80.26062,
 "locality": "Raja Annamalaipuram S.O"
 },
 {
@@ -19891,8 +19891,8 @@
 "pincodes": [
 "600034"
 ],
-"lat": 13.1049444,
-"lon": 80.4262222,
+"lat": 13.1090833,
+"lon": 80.3941667,
 "locality": "Nungambakkam High Road S.O"
 },
 {
@@ -19927,8 +19927,8 @@
 "pincodes": [
 "600088"
 ],
-"lat": 12.1376111,
-"lon": 80.3374722,
+"lat": 12.9890457,
+"lon": 80.2030403,
 "locality": "Nilamangai Nagar S.O"
 },
 {
@@ -19939,8 +19939,8 @@
 "pincodes": [
 "600091"
 ],
-"lat": 12.1073056,
-"lon": 80.2691389,
+"lat": 12.993084,
+"lon": 80.163043,
 "locality": "Madipakkam South S.O"
 },
 {
@@ -19963,8 +19963,8 @@
 "pincodes": [
 "600099"
 ],
-"lat": 13.116,
-"lon": 70.181,
+"lat": 13.1244722,
+"lon": 80.2137778,
 "locality": "Lakshmipuram BO"
 },
 {
@@ -20047,8 +20047,8 @@
 "pincodes": [
 "638459"
 ],
-"lat": 11.353798,
-"lon": 77.130693,
+"lat": 11.319618,
+"lon": 77.124093,
 "locality": "Muduthurai BO"
 },
 {
@@ -20059,8 +20059,8 @@
 "pincodes": [
 "641004"
 ],
-"lat": 11.0414167,
-"lon": 77.0032222,
+"lat": 11.02098,
+"lon": 76.96633,
 "locality": "Gandhimaanagar SO"
 },
 {
@@ -20071,8 +20071,8 @@
 "pincodes": [
 "641010"
 ],
-"lat": 10.94935,
-"lon": 76.8622283,
+"lat": 11.00115,
+"lon": 76.9635797,
 "locality": "Kuppanur BO"
 },
 {
@@ -20083,8 +20083,8 @@
 "pincodes": [
 "641017"
 ],
-"lat": 11.0942849,
-"lon": 76.9302883,
+"lat": 11.08477,
+"lon": 76.93818,
 "locality": "Thoppampatti BO"
 },
 {
@@ -20107,8 +20107,8 @@
 "pincodes": [
 "641020"
 ],
-"lat": 11.1535333,
-"lon": 76.9201816,
+"lat": 11.1337366,
+"lon": 76.93413,
 "locality": "Naickenpalayam BO"
 },
 {
@@ -20119,8 +20119,8 @@
 "pincodes": [
 "641032"
 ],
-"lat": 10.83499,
-"lon": 76.89048,
+"lat": 10.8679,
+"lon": 76.97469,
 "locality": "Kumittipathi BO"
 },
 {
@@ -20179,8 +20179,8 @@
 "pincodes": [
 "641047"
 ],
-"lat": 11.170565,
-"lon": 76.9459083,
+"lat": 11.161877,
+"lon": 76.947315,
 "locality": "Gudalurcoimbatore BO"
 },
 {
@@ -20191,8 +20191,8 @@
 "pincodes": [
 "641048"
 ],
-"lat": 11.0968659,
-"lon": 77.0704878,
+"lat": 11.07592,
+"lon": 77.03151,
 "locality": "Vellanaipatti BO"
 },
 {
@@ -20215,8 +20215,8 @@
 "pincodes": [
 "641062"
 ],
-"lat": 11.0615366,
-"lon": 77.0827666,
+"lat": 11.05613,
+"lon": 77.06353,
 "locality": "Nilambur BO"
 },
 {
@@ -20227,8 +20227,8 @@
 "pincodes": [
 "641101"
 ],
-"lat": 10.9326266,
-"lon": 76.8420916,
+"lat": 10.9479266,
+"lon": 76.8452933,
 "locality": "Mathipalayam BO"
 },
 {
@@ -20239,8 +20239,8 @@
 "pincodes": [
 "641104"
 ],
-"lat": 11.265593,
-"lon": 76.975711,
+"lat": 11.242756,
+"lon": 76.960891,
 "locality": "Belladi BO"
 },
 {
@@ -20251,8 +20251,8 @@
 "pincodes": [
 "641105"
 ],
-"lat": 10.9027183,
-"lon": 76.976785,
+"lat": 10.91168,
+"lon": 76.94918,
 "locality": "Bodipalayam BO"
 },
 {
@@ -20263,8 +20263,8 @@
 "pincodes": [
 "641107"
 ],
-"lat": 11.1162414,
-"lon": 77.0624737,
+"lat": 11.112665,
+"lon": 77.0300652,
 "locality": "Kallipalayam BO"
 },
 {
@@ -20275,8 +20275,8 @@
 "pincodes": [
 "641108"
 ],
-"lat": 11.1076555,
-"lon": 76.7702481,
+"lat": 11.0601626,
+"lon": 76.9061562,
 "locality": "Anaikatti BO"
 },
 {
@@ -20287,8 +20287,8 @@
 "pincodes": [
 "641109"
 ],
-"lat": 10.9949216,
-"lon": 76.8135516,
+"lat": 11.0043133,
+"lon": 76.8572033,
 "locality": "Devarayapuram BO"
 },
 {
@@ -20299,8 +20299,8 @@
 "pincodes": [
 "641110"
 ],
-"lat": 11.1190088,
-"lon": 76.979451,
+"lat": 11.0976837,
+"lon": 77.0156904,
 "locality": "Athipalayam BO"
 },
 {
@@ -20311,8 +20311,8 @@
 "pincodes": [
 "641112"
 ],
-"lat": 10.8904766,
-"lon": 76.9075216,
+"lat": 10.899746,
+"lon": 76.900357,
 "locality": "Ettimadai BO"
 },
 {
@@ -20323,8 +20323,8 @@
 "pincodes": [
 "641113"
 ],
-"lat": 11.224089,
-"lon": 76.881107,
+"lat": 11.201353,
+"lon": 76.865695,
 "locality": "Bhujanganur BO"
 },
 {
@@ -20335,8 +20335,8 @@
 "pincodes": [
 "641114"
 ],
-"lat": 10.9765466,
-"lon": 76.7374116,
+"lat": 10.9573216,
+"lon": 76.7583633,
 "locality": "Ishana Vihar BO"
 },
 {
@@ -20347,8 +20347,8 @@
 "pincodes": [
 "641201"
 ],
-"lat": 11.0564597,
-"lon": 77.0672483,
+"lat": 10.9142,
+"lon": 77.03622,
 "locality": "Kallapalayam BO"
 },
 {
@@ -20359,8 +20359,8 @@
 "pincodes": [
 "641202"
 ],
-"lat": 10.84,
-"lon": 77.1205,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Mettubavi B.O"
 },
 {
@@ -20371,8 +20371,8 @@
 "pincodes": [
 "641302"
 ],
-"lat": 11.326126,
-"lon": 77.081785,
+"lat": 11.294712,
+"lon": 77.020673,
 "locality": "Akkaraisengapalli BO"
 },
 {
@@ -20383,8 +20383,8 @@
 "pincodes": [
 "641305"
 ],
-"lat": 11.331596,
-"lon": 76.960176,
+"lat": 11.296644,
+"lon": 76.92551,
 "locality": "Palapatti BO"
 },
 {
@@ -20395,8 +20395,8 @@
 "pincodes": [
 "641401"
 ],
-"lat": 11.035966,
-"lon": 77.164253,
+"lat": 11.025234,
+"lon": 77.153522,
 "locality": "Kadampadi BO"
 },
 {
@@ -20407,8 +20407,8 @@
 "pincodes": [
 "641402"
 ],
-"lat": 10.991095,
-"lon": 77.1364616,
+"lat": 10.99305,
+"lon": 77.0974833,
 "locality": "Kalingal BO"
 },
 {
@@ -20431,8 +20431,8 @@
 "pincodes": [
 "641653"
 ],
-"lat": 11.26399,
-"lon": 77.14989,
+"lat": 11.18865,
+"lon": 77.076443,
 "locality": "Allapalayam BO"
 },
 {
@@ -20443,8 +20443,8 @@
 "pincodes": [
 "641658"
 ],
-"lat": 11.016844,
-"lon": 76.955832,
+"lat": 11.017439,
+"lon": 76.984468,
 "locality": "Jalakarichal BO"
 },
 {
@@ -20455,8 +20455,8 @@
 "pincodes": [
 "641659"
 ],
-"lat": 11.164465,
-"lon": 77.112911,
+"lat": 11.096745,
+"lon": 77.156428,
 "locality": "Chennappachettipudur BO"
 },
 {
@@ -20467,8 +20467,8 @@
 "pincodes": [
 "641668"
 ],
-"lat": 11.057916,
-"lon": 77.191804,
+"lat": 11.068398,
+"lon": 77.159403,
 "locality": "Ichipatti BO"
 },
 {
@@ -20479,8 +20479,8 @@
 "pincodes": [
 "641669"
 ],
-"lat": 10.865855,
-"lon": 77.17114,
+"lat": 10.887889,
+"lon": 77.158484,
 "locality": "Purandampalayam BO"
 },
 {
@@ -20491,8 +20491,8 @@
 "pincodes": [
 "641671"
 ],
-"lat": 10.849802,
-"lon": 77.275508,
+"lat": 10.859826,
+"lon": 77.221474,
 "locality": "Jallipatti BO"
 },
 {
@@ -20503,8 +20503,8 @@
 "pincodes": [
 "641697"
 ],
-"lat": 11.216154,
-"lon": 77.070468,
+"lat": 11.196241,
+"lon": 77.058109,
 "locality": "Karegoundenpalayam BO"
 },
 {
@@ -20515,8 +20515,8 @@
 "pincodes": [
 "642002"
 ],
-"lat": 10.657,
-"lon": 77.011,
+"lat": 10.6692222,
+"lon": 77.0125833,
 "locality": "Achipatti B.O"
 },
 {
@@ -20527,8 +20527,8 @@
 "pincodes": [
 "642003"
 ],
-"lat": 10.6273,
-"lon": 77.0788,
+"lat": 10.6625,
+"lon": 77.0521,
 "locality": "Kanjampatti B.O"
 },
 {
@@ -20539,8 +20539,8 @@
 "pincodes": [
 "642004"
 ],
-"lat": 8.934,
-"lon": 77.997,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Akilandapuram B.O"
 },
 {
@@ -20551,8 +20551,8 @@
 "pincodes": [
 "642005"
 ],
-"lat": 10.653,
-"lon": 76.9239,
+"lat": 10.7247,
+"lon": 76.9164,
 "locality": "Thimmankothu B.O"
 },
 {
@@ -20563,8 +20563,8 @@
 "pincodes": [
 "642007"
 ],
-"lat": 10.6572827,
-"lon": 77.0106603,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Reddiarur B.O"
 },
 {
@@ -20575,8 +20575,8 @@
 "pincodes": [
 "642101"
 ],
-"lat": 10.4341687,
-"lon": 77.0043374,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Kadamparai Power House B.O"
 },
 {
@@ -20587,8 +20587,8 @@
 "pincodes": [
 "642103"
 ],
-"lat": 10.5921,
-"lon": 76.5699,
+"lat": 10.6465,
+"lon": 76.9244,
 "locality": "Marappagoundenpudur B.O"
 },
 {
@@ -20623,8 +20623,8 @@
 "pincodes": [
 "642106"
 ],
-"lat": 10.61255,
-"lon": 76.9465,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Cinchona East B.O"
 },
 {
@@ -20635,8 +20635,8 @@
 "pincodes": [
 "642107"
 ],
-"lat": 10.6503,
-"lon": 77.0757,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Thippampatti B.O"
 },
 {
@@ -20659,8 +20659,8 @@
 "pincodes": [
 "642109"
 ],
-"lat": 9.9392,
-"lon": 77.4006,
+"lat": 10.8377,
+"lon": 77.0259,
 "locality": "Palarpathy B.O"
 },
 {
@@ -20671,8 +20671,8 @@
 "pincodes": [
 "642110"
 ],
-"lat": 10.7379,
-"lon": 76.9758,
+"lat": 10.9991,
+"lon": 76.8173,
 "locality": "Alagirichettipalayam B.O"
 },
 {
@@ -20707,8 +20707,8 @@
 "pincodes": [
 "642120"
 ],
-"lat": 10.7339,
-"lon": 77.1187,
+"lat": 10.7691,
+"lon": 77.0759,
 "locality": "Chinna Negamam B.O"
 },
 {
@@ -20719,8 +20719,8 @@
 "pincodes": [
 "642123"
 ],
-"lat": 10.975,
-"lon": 76.863,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Thondamuthur B.O"
 },
 {
@@ -20731,8 +20731,8 @@
 "pincodes": [
 "642125"
 ],
-"lat": 10.63775,
-"lon": 77.03955,
+"lat": 10.6572847,
+"lon": 77.0106583,
 "locality": "Murugali Bazaar B.O"
 },
 {
@@ -20743,8 +20743,8 @@
 "pincodes": [
 "642129"
 ],
-"lat": 10.5611667,
-"lon": 76.9179105,
+"lat": 10.5649444,
+"lon": 76.9197778,
 "locality": "Odayakulam B.O"
 },
 {
@@ -20767,8 +20767,8 @@
 "pincodes": [
 "642133"
 ],
-"lat": 10.6472,
-"lon": 76.96255,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Topslip B.O"
 },
 {
@@ -20779,8 +20779,8 @@
 "pincodes": [
 "642134"
 ],
-"lat": 10.6572877,
-"lon": 77.0106553,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Pethanaickanur B.O"
 },
 {
@@ -20791,8 +20791,8 @@
 "pincodes": [
 "642202"
 ],
-"lat": 10.8312,
-"lon": 77.1571,
+"lat": 10.9997222,
+"lon": 76.9637222,
 "locality": "Dasanaicken Palayam B.O"
 },
 {
@@ -20803,8 +20803,8 @@
 "pincodes": [
 "642205"
 ],
-"lat": 10.6624,
-"lon": 77.0823,
+"lat": 10.6806,
+"lon": 77.1126,
 "locality": "Eripatti B.O"
 },
 {
@@ -20815,8 +20815,8 @@
 "pincodes": [
 "625001"
 ],
-"lat": 9.7538056,
-"lon": 78.5562222,
+"lat": 9.9120278,
+"lon": 78.11325,
 "locality": "Madurai HO"
 },
 {
@@ -20827,8 +20827,8 @@
 "pincodes": [
 "625002"
 ],
-"lat": 9.3144444,
-"lon": 78.1319444,
+"lat": 9.9363598,
+"lon": 78.1208019,
 "locality": "Tallakulam HO"
 },
 {
@@ -20839,8 +20839,8 @@
 "pincodes": [
 "625016"
 ],
-"lat": 9.93543,
-"lon": 78.091841,
+"lat": 9.9346463,
+"lon": 78.080964,
 "locality": "Arasaradi HO"
 },
 {
@@ -20887,8 +20887,8 @@
 "pincodes": [
 "625006"
 ],
-"lat": 9.884812,
-"lon": 78.042068,
+"lat": 9.894959,
+"lon": 78.06181,
 "locality": "Thanakkankulam BO"
 },
 {
@@ -20899,8 +20899,8 @@
 "pincodes": [
 "625007"
 ],
-"lat": 9.7538056,
-"lon": 78.2258889,
+"lat": 9.9433889,
+"lon": 78.1465,
 "locality": "KPudur SO"
 },
 {
@@ -20911,8 +20911,8 @@
 "pincodes": [
 "625008"
 ],
-"lat": 9.84567,
-"lon": 78.02538,
+"lat": 9.874834,
+"lon": 78.023958,
 "locality": "Sivanandanagar BO"
 },
 {
@@ -20923,8 +20923,8 @@
 "pincodes": [
 "625009"
 ],
-"lat": 12.145,
-"lon": 78.0465,
+"lat": 9.9115833,
+"lon": 78.1291944,
 "locality": "Anuppanady BO"
 },
 {
@@ -20935,8 +20935,8 @@
 "pincodes": [
 "625011"
 ],
-"lat": 9.9670278,
-"lon": 77.7841111,
+"lat": 9.9079479,
+"lon": 78.1129516,
 "locality": "Jaihindpuram SO"
 },
 {
@@ -20947,8 +20947,8 @@
 "pincodes": [
 "625012"
 ],
-"lat": 9.7592222,
-"lon": 78.5374167,
+"lat": 9.901,
+"lon": 78.1232778,
 "locality": "Avaniapuram SO"
 },
 {
@@ -20959,8 +20959,8 @@
 "pincodes": [
 "625014"
 ],
-"lat": 10.02156,
-"lon": 78.142903,
+"lat": 9.9522222,
+"lon": 78.1333333,
 "locality": "Karuvanur BO"
 },
 {
@@ -20983,8 +20983,8 @@
 "pincodes": [
 "625017"
 ],
-"lat": 7.69326,
-"lon": 10.94326,
+"lat": 9.966222,
+"lon": 78.112254,
 "locality": "Kulamangalam BO"
 },
 {
@@ -20995,8 +20995,8 @@
 "pincodes": [
 "625018"
 ],
-"lat": 9.985126,
-"lon": 78.084448,
+"lat": 9.9561944,
+"lon": 78.0838611,
 "locality": "Podumbu BO"
 },
 {
@@ -21007,8 +21007,8 @@
 "pincodes": [
 "625019"
 ],
-"lat": 9.938493,
-"lon": 78.066557,
+"lat": 9.917832,
+"lon": 78.063767,
 "locality": "Erkudi Achampathu BO"
 },
 {
@@ -21019,8 +21019,8 @@
 "pincodes": [
 "625020"
 ],
-"lat": 9.8769,
-"lon": 78.2619,
+"lat": 9.9381389,
+"lon": 78.1426944,
 "locality": "Kalimangalam BO"
 },
 {
@@ -21031,8 +21031,8 @@
 "pincodes": [
 "625021"
 ],
-"lat": 9.904934,
-"lon": 78.000629,
+"lat": 9.927184,
+"lon": 78.009192,
 "locality": "Thenpalanji BO"
 },
 {
@@ -21043,8 +21043,8 @@
 "pincodes": [
 "625022"
 ],
-"lat": 9.7774236,
-"lon": 78.09436,
+"lat": 9.9252127,
+"lon": 78.11976,
 "locality": "Kudakoil BO"
 },
 {
@@ -21079,8 +21079,8 @@
 "pincodes": [
 "625102"
 ],
-"lat": 10.073935,
-"lon": 78.423169,
+"lat": 10.070415,
+"lon": 78.415473,
 "locality": "Muthusamypatti BO"
 },
 {
@@ -21091,8 +21091,8 @@
 "pincodes": [
 "625103"
 ],
-"lat": 10.204018,
-"lon": 78.373992,
+"lat": 10.22,
+"lon": 78.35,
 "locality": "Ayyapatti BO"
 },
 {
@@ -21103,8 +21103,8 @@
 "pincodes": [
 "625104"
 ],
-"lat": 9.994505,
-"lon": 78.192779,
+"lat": 9.956976,
+"lon": 78.160719,
 "locality": "Arumbanur BO"
 },
 {
@@ -21115,8 +21115,8 @@
 "pincodes": [
 "625105"
 ],
-"lat": 10.17,
-"lon": 78.29,
+"lat": 10.06,
+"lon": 78.32,
 "locality": "Arukkampatti BO"
 },
 {
@@ -21127,8 +21127,8 @@
 "pincodes": [
 "625106"
 ],
-"lat": 10.040096,
-"lon": 78.312076,
+"lat": 10.040368,
+"lon": 78.276045,
 "locality": "Kallampatti BO"
 },
 {
@@ -21139,8 +21139,8 @@
 "pincodes": [
 "625107"
 ],
-"lat": 9.927083,
-"lon": 78.239037,
+"lat": 9.951356,
+"lon": 78.1688,
 "locality": "Rajakkur BO"
 },
 {
@@ -21151,8 +21151,8 @@
 "pincodes": [
 "625108"
 ],
-"lat": 10.107274,
-"lon": 78.394303,
+"lat": 10.09,
+"lon": 78.39,
 "locality": "Budamangalam BO"
 },
 {
@@ -21175,8 +21175,8 @@
 "pincodes": [
 "625110"
 ],
-"lat": 9.901649,
-"lon": 78.300151,
+"lat": 9.9,
+"lon": 78.0,
 "locality": "Poonjuthi BO"
 },
 {
@@ -21187,8 +21187,8 @@
 "pincodes": [
 "625122"
 ],
-"lat": 9.995986,
-"lon": 78.22084,
+"lat": 10.00875,
+"lon": 78.0213611,
 "locality": "Chittampatti BO"
 },
 {
@@ -21199,8 +21199,8 @@
 "pincodes": [
 "625201"
 ],
-"lat": 9.659498,
-"lon": 77.92246,
+"lat": 9.8741944,
+"lon": 78.1893056,
 "locality": "Puliankulam BO"
 },
 {
@@ -21211,8 +21211,8 @@
 "pincodes": [
 "625205"
 ],
-"lat": 10.441043,
-"lon": 79.554012,
+"lat": 10.045629,
+"lon": 77.936027,
 "locality": "Nachikulam BO"
 },
 {
@@ -21223,8 +21223,8 @@
 "pincodes": [
 "625207"
 ],
-"lat": 10.024375,
-"lon": 77.920404,
+"lat": 10.020139,
+"lon": 77.957136,
 "locality": "Kadupatti BO"
 },
 {
@@ -21247,8 +21247,8 @@
 "pincodes": [
 "625218"
 ],
-"lat": 10.1109,
-"lon": 78.044596,
+"lat": 10.0838,
+"lon": 77.998297,
 "locality": "Andipatti BO"
 },
 {
@@ -21271,8 +21271,8 @@
 "pincodes": [
 "625234"
 ],
-"lat": 9.9808,
-"lon": 77.983858,
+"lat": 9.969537,
+"lon": 78.013831,
 "locality": "Melakkal BO"
 },
 {
@@ -21283,8 +21283,8 @@
 "pincodes": [
 "625301"
 ],
-"lat": 10.058931,
-"lon": 78.28463,
+"lat": 10.02,
+"lon": 78.19,
 "locality": "AVellalapatti BO"
 },
 {
@@ -21307,8 +21307,8 @@
 "pincodes": [
 "625501"
 ],
-"lat": 10.084943,
-"lon": 78.090865,
+"lat": 10.032352,
+"lon": 78.100181,
 "locality": "Errampatti BO"
 },
 {
@@ -21319,8 +21319,8 @@
 "pincodes": [
 "625503"
 ],
-"lat": 10.148465,
-"lon": 78.117244,
+"lat": 10.081401,
+"lon": 78.125798,
 "locality": "Chatravellalapatti BO"
 },
 {
@@ -21331,8 +21331,8 @@
 "pincodes": [
 "625514"
 ],
-"lat": 9.943498,
-"lon": 77.97672,
+"lat": 9.924813,
+"lon": 77.990995,
 "locality": "AKokkulam BO"
 },
 {
@@ -21343,8 +21343,8 @@
 "pincodes": [
 "625527"
 ],
-"lat": 9.874732,
-"lon": 77.819574,
+"lat": 9.82833,
+"lon": 77.851021,
 "locality": "Perungamanallur B.O"
 },
 {
@@ -21355,8 +21355,8 @@
 "pincodes": [
 "625529"
 ],
-"lat": 9.679098,
-"lon": 77.484946,
+"lat": 9.825168,
+"lon": 77.985752,
 "locality": "Thummagundu B.O"
 },
 {
@@ -21367,8 +21367,8 @@
 "pincodes": [
 "625532"
 ],
-"lat": 9.973364,
-"lon": 77.642516,
+"lat": 10.003341,
+"lon": 78.113679,
 "locality": "Meikilarpatti B.O"
 },
 {
@@ -21379,8 +21379,8 @@
 "pincodes": [
 "625535"
 ],
-"lat": 9.818518,
-"lon": 77.675815,
+"lat": 9.963784,
+"lon": 77.787782,
 "locality": "M.Kallupatti B.O"
 },
 {
@@ -21391,8 +21391,8 @@
 "pincodes": [
 "625537"
 ],
-"lat": 9.82,
-"lon": 77.78,
+"lat": 9.9638,
+"lon": 77.87774,
 "locality": "Ayyanarkulam B.O"
 },
 {
@@ -21403,8 +21403,8 @@
 "pincodes": [
 "625701"
 ],
-"lat": 9.641031,
-"lon": 77.975807,
+"lat": 9.687927,
+"lon": 78.05503,
 "locality": "Avalsurampatti BO"
 },
 {
@@ -21415,8 +21415,8 @@
 "pincodes": [
 "625702"
 ],
-"lat": 9.675051,
-"lon": 77.809878,
+"lat": 9.740908,
+"lon": 77.866673,
 "locality": "MSubbulapuram BO"
 },
 {
@@ -21427,8 +21427,8 @@
 "pincodes": [
 "625703"
 ],
-"lat": 9.70594,
-"lon": 77.833289,
+"lat": 9.795086,
+"lon": 77.817106,
 "locality": "Deivanayagapuram BO"
 },
 {
@@ -21439,8 +21439,8 @@
 "pincodes": [
 "625704"
 ],
-"lat": 9.786966,
-"lon": 77.893388,
+"lat": 9.81272,
+"lon": 77.922592,
 "locality": "AThottiapatti BO"
 },
 {
@@ -21451,8 +21451,8 @@
 "pincodes": [
 "625705"
 ],
-"lat": 9.494066,
-"lon": 78.126574,
+"lat": 9.706035,
+"lon": 77.914559,
 "locality": "Athipatti B.O"
 },
 {
@@ -21463,8 +21463,8 @@
 "pincodes": [
 "625706"
 ],
-"lat": 9.865617,
-"lon": 77.959671,
+"lat": 9.884643,
+"lon": 77.97975,
 "locality": "Sithalai BO"
 },
 {
@@ -21475,8 +21475,8 @@
 "pincodes": [
 "625707"
 ],
-"lat": 9.663212,
-"lon": 77.906284,
+"lat": 9.9511944,
+"lon": 78.0798889,
 "locality": "MPuliyankulam BO"
 },
 {
@@ -21487,8 +21487,8 @@
 "pincodes": [
 "625708"
 ],
-"lat": 9.730291,
-"lon": 77.913237,
+"lat": 9.750528,
+"lon": 77.971362,
 "locality": "Ganjampatti BO"
 }
 ]

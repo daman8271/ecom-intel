@@ -1,6 +1,9 @@
 const { chromium } = require('playwright');
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
+
+const SCRAPER_SHA256 = crypto.createHash('sha256').update(fs.readFileSync(__filename)).digest('hex');
 
 function istDateString(d = new Date()) {
   return new Date(d.getTime() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
@@ -104,6 +107,7 @@ const PROG = process.env.BLINKIT_PROGRESS_FILE || (COMPETITOR_MODE
   : `${__dirname}/.progress.${istDateString()}.json`);
 const CHECKPOINT_HIT = Symbol('checkpointHit');
 const MAX_BLOCK_RETRIES = parseInt(process.env.BLINKIT_BLOCK_RETRIES || '4', 10);
+const MAX_BROWSER_RESTARTS = parseInt(process.env.BLINKIT_BROWSER_RESTARTS || '2', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could appear in legitimate page text) — HTTP status carries those.
 const BLOCK_RE = /access denied|akamai|reference #\s*\d|too many requests|rate[\s-]?limit|are you a human|captcha|forbidden/i;
@@ -112,6 +116,32 @@ async function backoff(attempt) {
   const ms = Math.min(60000, 2000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1000);
   process.stderr.write(`[backoff] attempt ${attempt} -> sleeping ${Math.round(ms)}ms\n`);
   await new Promise((r) => setTimeout(r, ms));
+}
+
+function isBrowserClosedError(e) {
+  const msg = String((e && e.message) || e || '');
+  return /Target page, context or browser has been closed|Browser has been closed|Target closed|browser has disconnected/i.test(msg);
+}
+
+async function launchBrowser() {
+  const proxyServer = process.env.BLINKIT_PROXY || process.env.SCRAPING_PROXY || '';
+  const opts = { headless: true };
+  if (proxyServer) opts.proxy = { server: proxyServer };
+  return chromium.launch(opts);
+}
+
+async function relaunchBrowser(browserRef, reason) {
+  if (process.env.BLINKIT_SIM === '1') return null;
+  if (!browserRef.relaunching) {
+    browserRef.relaunching = (async () => {
+      process.stderr.write(`[browser] relaunching Chromium after ${reason || 'browser-closed'}\n`);
+      try { if (browserRef.current) await browserRef.current.close(); } catch (_) { /* already closed */ }
+      browserRef.current = await launchBrowser();
+      return browserRef.current;
+    })().finally(() => { browserRef.relaunching = null; });
+  }
+  await browserRef.relaunching;
+  return browserRef.current;
 }
 
 // Classify a navigation response / page as blocked. Returns a short reason string or null.
@@ -812,60 +842,70 @@ async function scrapeOne(browser, rec) {
     }];
     return { ...rec, store_id: 'sim', store_name: 'sim-store', resolved: true, blocked: null, auth_accepted: BLINKIT_AUTH ? 1 : 0, rows };
   }
-  const ctx = await browser.newContext({
-    userAgent: UA,
-    locale: 'en-IN',
-    timezoneId: 'Asia/Kolkata',
-    viewport: { width: 1280, height: 900 },
-  });
-  if (BLINKIT_AUTH) {
-    await ctx.addInitScript((auth) => {
-      try {
-        localStorage.setItem('auth', JSON.stringify({ accessToken: auth.accessToken, phoneNumber: null }));
-        if (auth.deviceId) localStorage.setItem('deviceId', auth.deviceId);
-      } catch (_) { /* best-effort session hydration */ }
-    }, BLINKIT_AUTH);
-    const cookies = [{
-      name: 'gr_1_accessToken',
-      value: encodeURIComponent(BLINKIT_AUTH.accessToken),
-      domain: 'blinkit.com',
-      path: '/',
-    }];
-    if (BLINKIT_AUTH.deviceId) cookies.push({
-      name: 'gr_1_deviceId',
-      value: BLINKIT_AUTH.deviceId,
-      domain: 'blinkit.com',
-      path: '/',
-    });
-    for (const c of BLINKIT_AUTH.cookies || []) {
-      if (!c || !c.name || !c.value) continue;
-      if (['gr_1_lat', 'gr_1_lon', 'gr_1_locality', 'gr_1_landmark', 'gr_1_accessToken', 'gr_1_deviceId'].includes(c.name)) continue;
-      if (c.expires && Number(c.expires) <= Math.floor(Date.now() / 1000)) continue;
-      cookies.push({
-        name: c.name,
-        value: String(c.value),
-        domain: c.domain || (String(c.name).startsWith('_') ? '.blinkit.com' : 'blinkit.com'),
-        path: c.path || '/',
-        ...(c.expires ? { expires: c.expires } : {}),
-        ...(c.httpOnly != null ? { httpOnly: Boolean(c.httpOnly) } : {}),
-        ...(c.secure != null ? { secure: Boolean(c.secure) } : {}),
-        ...(c.sameSite ? { sameSite: c.sameSite } : {}),
-      });
-    }
-    await ctx.addCookies(cookies);
-  }
-  const page = await ctx.newPage();
-  // block heavy assets for speed/bandwidth
-  await ctx.route('**/*', (route) => {
-    const t = route.request().resourceType();
-    if (['image', 'font', 'media'].includes(t)) return route.abort();
-    return route.continue();
-  });
   let rows = [];
   let store = {};
   let resolved = false;
   let blocked = null;
   let authAccepted = false;
+  let ctx = null;
+  let page = null;
+  try {
+    ctx = await browser.newContext({
+      userAgent: UA,
+      locale: 'en-IN',
+      timezoneId: 'Asia/Kolkata',
+      viewport: { width: 1280, height: 900 },
+    });
+    if (BLINKIT_AUTH) {
+      await ctx.addInitScript((auth) => {
+        try {
+          localStorage.setItem('auth', JSON.stringify({ accessToken: auth.accessToken, phoneNumber: null }));
+          if (auth.deviceId) localStorage.setItem('deviceId', auth.deviceId);
+        } catch (_) { /* best-effort session hydration */ }
+      }, BLINKIT_AUTH);
+      const cookies = [{
+        name: 'gr_1_accessToken',
+        value: encodeURIComponent(BLINKIT_AUTH.accessToken),
+        domain: 'blinkit.com',
+        path: '/',
+      }];
+      if (BLINKIT_AUTH.deviceId) cookies.push({
+        name: 'gr_1_deviceId',
+        value: BLINKIT_AUTH.deviceId,
+        domain: 'blinkit.com',
+        path: '/',
+      });
+      for (const c of BLINKIT_AUTH.cookies || []) {
+        if (!c || !c.name || !c.value) continue;
+        if (['gr_1_lat', 'gr_1_lon', 'gr_1_locality', 'gr_1_landmark', 'gr_1_accessToken', 'gr_1_deviceId'].includes(c.name)) continue;
+        if (c.expires && Number(c.expires) <= Math.floor(Date.now() / 1000)) continue;
+        cookies.push({
+          name: c.name,
+          value: String(c.value),
+          domain: c.domain || (String(c.name).startsWith('_') ? '.blinkit.com' : 'blinkit.com'),
+          path: c.path || '/',
+          ...(c.expires ? { expires: c.expires } : {}),
+          ...(c.httpOnly != null ? { httpOnly: Boolean(c.httpOnly) } : {}),
+          ...(c.secure != null ? { secure: Boolean(c.secure) } : {}),
+          ...(c.sameSite ? { sameSite: c.sameSite } : {}),
+        });
+      }
+      await ctx.addCookies(cookies);
+    }
+    page = await ctx.newPage();
+    await ctx.route('**/*', (route) => {
+      const t = route.request().resourceType();
+      if (['image', 'font', 'media'].includes(t)) return route.abort();
+      return route.continue();
+    });
+  } catch (e) {
+    const msg = String((e && e.message) || e || 'unknown error');
+    const browserClosed = isBrowserClosedError(e);
+    blocked = browserClosed ? 'browser-closed' : (BLOCK_RE.test(msg) ? 'block-error' : null);
+    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: browser setup failed: ${msg}${blocked ? ` (${blocked})` : ''}\n`);
+    try { if (ctx) await ctx.close(); } catch (_) { /* context may already be closed */ }
+    return { ...rec, store_id: '', store_name: '', resolved: false, blocked, auth_accepted: 0, rows, browser_closed: browserClosed ? 1 : 0 };
+  }
   const injectLocation = async (r) => {
     try { await ctx.addCookies(locationCookieSpecs(r)); } catch (_) { /* cookie location is best-effort */ }
     return page.evaluate((rr) => {
@@ -1311,8 +1351,10 @@ async function scrapeOne(browser, rec) {
   } catch (e) {
     // A navigation error whose message carries a block signature is treated as a block
     // (so the caller backs off); any other error is just a per-pincode failure (0 rows).
-    if (BLOCK_RE.test(String(e && e.message))) blocked = 'block-error';
-    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${e.message}${blocked ? ' (block)' : ''}\n`);
+    const msg = String((e && e.message) || e || 'unknown error');
+    if (isBrowserClosedError(e)) blocked = 'browser-closed';
+    else if (BLOCK_RE.test(msg)) blocked = 'block-error';
+    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${msg}${blocked ? ` (${blocked})` : ''}\n`);
   } finally {
     try { await ctx.close(); } catch (_) { /* context may already be closed */ }
   }
@@ -1357,9 +1399,26 @@ module.exports = {
 // off and retries up to MAX_BLOCK_RETRIES; if still blocked we record 0 rows and tag
 // the result `partial_block` (the run is then marked partial). NEVER evades — it only
 // waits and retries politely, then gives up honestly.
-async function scrapeWithBackoff(browser, rec) {
+async function scrapeWithBackoff(browserRef, rec) {
+  let browserRestarts = 0;
   for (let attempt = 0; ; attempt++) {
-    const res = await scrapeOne(browser, rec);
+    const res = await scrapeOne(browserRef.current, rec);
+    if (res.browser_closed) {
+      if (browserRestarts >= MAX_BROWSER_RESTARTS) {
+        process.stderr.write(`[browser] ${rec.city} ${rec.pincode} still cannot create a context after ${browserRestarts} restart${browserRestarts === 1 ? '' : 's'}; recording partial\n`);
+        return { ...res, partial_block: true };
+      }
+      browserRestarts++;
+      try {
+        await relaunchBrowser(browserRef, res.blocked || 'browser-closed');
+      } catch (e) {
+        const msg = String((e && e.message) || e || 'unknown error');
+        process.stderr.write(`[browser] Chromium relaunch failed for ${rec.city} ${rec.pincode}: ${msg}\n`);
+        return { ...res, partial_block: true };
+      }
+      await backoff(Math.min(attempt, 4));
+      continue;
+    }
     if (!res.blocked) return res;
     if (attempt >= MAX_BLOCK_RETRIES) {
       process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} still blocked after ${attempt} retr${attempt === 1 ? 'y' : 'ies'} (${res.blocked}); recording 0 rows, run is partial\n`);
@@ -1374,7 +1433,10 @@ if (require.main === module) (async () => {
     process.stderr.write('[auth] BLINKIT_REQUIRE_AUTH=1 but no Blinkit access token was provided\n');
     process.exit(3);
   }
-  const browser = process.env.BLINKIT_SIM === '1' ? null : await chromium.launch({ headless: true });
+  const browserRef = {
+    current: process.env.BLINKIT_SIM === '1' ? null : await launchBrowser(),
+    relaunching: null,
+  };
   const t0 = Date.now();
   // Resume: reload any per-pincode results already captured for TODAY and skip them.
   const done = loadProgress();
@@ -1383,13 +1445,13 @@ if (require.main === module) (async () => {
   let partial = false;
   const perPin = await pool(PINCODES, CONCURRENCY, async (rec) => {
     if (done[rec.pincode]) return { ...done[rec.pincode], [CHECKPOINT_HIT]: true }; // checkpoint hit — skip fast
-    const res = await scrapeWithBackoff(browser, rec);
+    const res = await scrapeWithBackoff(browserRef, rec);
     if (res.blocked || res.partial_block) partial = true;     // any unresolved block => partial run
     done[rec.pincode] = res;
     saveProgress(done);                                       // checkpoint AFTER each pincode
     return res;
   });
-  if (browser) await browser.close();
+  if (browserRef.current) await browserRef.current.close();
   const allRows = perPin.flatMap((p) => p.rows);
   const authAcceptedPincodes = perPin.filter((p) => p.auth_accepted).length;
   const authVerified = BLINKIT_AUTH && (!BLINKIT_REQUIRE_AUTH || authAcceptedPincodes === perPin.length);
@@ -1417,6 +1479,8 @@ if (require.main === module) (async () => {
     pdp_price_probe_failed: allRows.filter((r) => r.pdp_price_probe_failed).length,
     pdp_price_probe_updates: allRows.filter((r) => r.pdp_price_changed).length,
     unverified_oos: allRows.filter((r) => !r.in_stock && !r.pdp_checked && r.stock_source !== 'pdp').length,
+    scraper_sha256: SCRAPER_SHA256,
+    started_at: new Date(t0).toISOString(),
     captured_at: new Date().toISOString(),
   };
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');

@@ -72,6 +72,11 @@ export BLINKIT_MAX_UNVERIFIED_OOS BLINKIT_MAX_MISSING_PRID_RATIO BLINKIT_MAX_MIS
 export BLINKIT_MAX_BAD_PRICE_ROWS BLINKIT_REQUIRE_SCREENSHOT_CANARIES BLINKIT_PRICE_MATH_PER_LITRE_EPS BLINKIT_PRICE_MATH_DISCOUNT_EPS
 export BLINKIT_INDIA_BBOX BLINKIT_REQUIRE_CONFIG_COORDS BLINKIT_CONFIG_COORD_ALLOWLIST BLINKIT_MAX_BAD_CONFIG_COORDS
 
+if [ "$BLINKIT_REQUIRE_CONFIG_COORDS" = "1" ]; then
+  python3 "$PDIR/coordinate_preflight.py" "$BLINKIT_EXPECTED_CONFIG" --compact --summary \
+    || { echo "[blinkit-ingest] refusing coordinate-invalid Blinkit config" >&2; exit 1; }
+fi
+
 python3 - "$STAGED" <<'PY'
 import csv
 import json
@@ -353,6 +358,9 @@ if env_bool("BLINKIT_REQUIRE_PDP_PRICE_PROBE_ENABLED", "1") and not flag_is_one(
     raise SystemExit(
         f"Refusing unpriced Blinkit drop: summary.pdp_price_probe_enabled={s.get('pdp_price_probe_enabled')!r}"
     )
+for key in ("pdp_price_probe_attempted", "pdp_price_probe_checked", "pdp_price_probe_failed"):
+    if key not in s:
+        raise SystemExit(f"Refusing incomplete Blinkit price evidence: summary.{key} is missing")
 pdp_price_probe_failed = parse_int(s.get("pdp_price_probe_failed"), 0)
 max_pdp_price_probe_failed = env_int("BLINKIT_MAX_PDP_PRICE_PROBE_FAILED", "0")
 if pdp_price_probe_failed > max_pdp_price_probe_failed:

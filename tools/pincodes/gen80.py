@@ -20,12 +20,22 @@ CITY_MAP = {"Bangalore": "Bengaluru", "Mysore": "Mysuru"}  # config-side names
 PLAIN = ["blinkit", "zepto", "flipkart-minutes"]
 AMAZON = ["amazon-fresh", "amazon-now"]
 
-# One-off Nominatim results for pins the India Post CSV carries no coords for
-# (2026-07-12). Pins absent here fall back to the nearest numeric neighbour
-# pin's coordinate within the same city (adjacent PINs = adjacent offices).
+# Reviewed coordinate overrides for India Post rows that are missing or visibly
+# contaminated. Most are Nominatim postcode results captured 2026-07-12; 201317
+# is the Apple Maps Sector 128 locality coordinate. Pins absent here fall back
+# to the nearest numeric neighbour within the same city.
 OVERRIDE_COORDS = {
     "571316": (12.0461829, 76.9119543),
     "571442": (12.0907933, 77.0133564),
+    "160025": (30.7533453, 76.7173282),
+    "440035": (21.1354370, 79.1613316),
+    "600088": (12.9890457, 80.2030403),
+    "201301": (28.5543243, 77.3798816),
+    "201303": (28.5544155, 77.3603771),
+    "201315": (28.4517835, 77.4989296),
+    "201316": (28.5928332, 77.3871665),
+    "201317": (28.52231, 77.36425),
+    "391774": (22.3035833, 73.1976944),
 }
 
 
@@ -35,10 +45,10 @@ def _load(p):
 
 def _coord(city, pin, uni):
     m = uni[city]["meta"][pin]
-    if m["lat"] is not None:
-        return m["lat"], m["lon"]
     if pin in OVERRIDE_COORDS:
         return OVERRIDE_COORDS[pin]
+    if m["lat"] is not None:
+        return m["lat"], m["lon"]
     known = sorted((p, mm["lat"], mm["lon"])
                    for p, mm in uni[city]["meta"].items()
                    if mm["lat"] is not None)
@@ -57,9 +67,19 @@ def _entry(city, pin, uni):
 
 
 def expand_plain(existing, targets, uni):
-    have = ({e["pincode"] for e in existing}
-            | {p for e in existing for p in e.get("pincodes", [])})
-    out = list(existing)
+    target_city = {p: city for city, pins in targets.items() for p in pins}
+    out = []
+    have = set()
+    for entry in existing:
+        pin = entry["pincode"]
+        if pin in target_city:
+            entry = {**entry, **_entry(target_city[pin], pin, uni)}
+        elif pin in OVERRIDE_COORDS:
+            lat, lon = OVERRIDE_COORDS[pin]
+            entry = {**entry, "lat": lat, "lon": lon}
+        out.append(entry)
+        have.add(pin)
+        have.update(entry.get("pincodes", []))
     for city, pins in targets.items():
         for p in pins:
             if p not in have:

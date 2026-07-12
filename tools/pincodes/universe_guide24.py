@@ -6,6 +6,11 @@ jivo-city-coverage-guide.vercel.app matrix (district buckets, June-2024 CSV).
 """
 import csv
 import math
+import statistics
+
+
+INDIA_BBOX = (6.0, 38.5, 68.0, 98.0)
+MAX_CITY_DISTANCE_KM = 250.0
 
 
 def _U(x):
@@ -57,28 +62,69 @@ def _f(v):
         return None
 
 
+def _valid_coord(lat, lon):
+    return (
+        lat is not None and lon is not None
+        and INDIA_BBOX[0] <= lat <= INDIA_BBOX[1]
+        and INDIA_BBOX[2] <= lon <= INDIA_BBOX[3]
+    )
+
+
+def _distance_km(a, b):
+    lat1, lon1 = map(math.radians, a)
+    lat2, lon2 = map(math.radians, b)
+    dlat, dlon = lat2 - lat1, lon2 - lon1
+    h = (math.sin(dlat / 2) ** 2
+         + math.cos(lat1) * math.cos(lat2) * math.sin(dlon / 2) ** 2)
+    return 2 * 6371.0088 * math.asin(min(1.0, math.sqrt(h)))
+
+
+def _robust_city_center(rows):
+    points = []
+    for r in rows:
+        lat, lon = _f(r.get("Latitude")), _f(r.get("Longitude"))
+        if _valid_coord(lat, lon):
+            points.append((lat, lon))
+    if not points:
+        return None
+    center = (statistics.median(p[0] for p in points),
+              statistics.median(p[1] for p in points))
+    local = [p for p in points if _distance_km(center, p) <= MAX_CITY_DISTANCE_KM]
+    if local:
+        center = (statistics.median(p[0] for p in local),
+                  statistics.median(p[1] for p in local))
+    return center
+
+
 def build(csv_path):
     rows = list(csv.DictReader(open(csv_path, newline="", encoding="utf-8",
                                     errors="replace")))
     out = {}
     for name, pred in CITY_SPEC24:
+        city_rows = [r for r in rows if pred(r)]
+        center = _robust_city_center(city_rows)
         pins, meta = set(), {}
-        for r in rows:
+        candidates = {}
+        for r in city_rows:
             p = r["Pincode"].strip()
-            if not p or not pred(r):
+            if not p:
                 continue
             pins.add(p)
             m = meta.setdefault(p, {"lat": None, "lon": None,
                                     "locality": r["OfficeName"].strip(),
                                     "urban": False})
-            if m["lat"] is None:
-                la, lo = _f(r["Latitude"]), _f(r["Longitude"])
-                if la is not None and lo is not None:
-                    m["lat"], m["lon"] = la, lo
+            lat, lon = _f(r["Latitude"]), _f(r["Longitude"])
+            if _valid_coord(lat, lon) and center is not None:
+                distance = _distance_km(center, (lat, lon))
+                if distance <= MAX_CITY_DISTANCE_KM:
+                    candidates.setdefault(p, []).append((distance, lat, lon))
             if _U(r["OfficeType"]) in ("HO", "SO"):
                 if not m["urban"]:
                     m["urban"] = True
                     m["locality"] = r["OfficeName"].strip()
+        for p, values in candidates.items():
+            _, lat, lon = min(values)
+            meta[p]["lat"], meta[p]["lon"] = lat, lon
         out[name] = {"pins": pins, "meta": meta}
     return out
 

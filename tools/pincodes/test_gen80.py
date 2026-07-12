@@ -11,13 +11,15 @@ def _mini_universe():
     return {"Delhi": {"pins": set(pins), "meta": meta}}
 
 
-def test_expand_plain_keeps_existing_first_full_coverage():
+def test_expand_plain_refreshes_existing_coords_and_keeps_full_coverage():
     uni = _mini_universe()
     existing = [{"city": "Delhi", "pincode": "110005", "tier": 1, "represents": 1,
                  "pincodes": ["110005"], "lat": 1.0, "lon": 2.0, "locality": "X"}]
     targets = {"Delhi": sorted(uni["Delhi"]["pins"])}
     out = gen80.expand_plain(copy.deepcopy(existing), targets, uni)
-    assert out[0] == existing[0]                    # existing entries first, verbatim
+    assert out[0]["pincode"] == existing[0]["pincode"]  # existing entries stay first
+    assert out[0]["lat"] == uni["Delhi"]["meta"]["110005"]["lat"]
+    assert out[0]["lon"] == uni["Delhi"]["meta"]["110005"]["lon"]
     got = {e["pincode"] for e in out}
     assert got >= uni["Delhi"]["pins"]              # FULL coverage incl. coordless pin
     assert len(out) == len(got)                     # no duplicate pins
@@ -33,6 +35,14 @@ def test_amazon_tail_excludes_core():
     assert {e["pincode"] for e in tail} == {"110001"}
 
 
+def test_reviewed_override_beats_contaminated_source_coordinate():
+    uni = {"Noida": {"pins": {"201301"}, "meta": {
+        "201301": {"lat": 26.54872, "lon": 78.54897, "locality": "Noida HO",
+                   "urban": True}
+    }}}
+    assert gen80._coord("Noida", "201301", uni) == gen80.OVERRIDE_COORDS["201301"]
+
+
 def test_instamart_anchors_cover_all_targets():
     uni = _mini_universe()
     targets = {"Delhi": sorted(uni["Delhi"]["pins"])}
@@ -43,7 +53,8 @@ def test_instamart_anchors_cover_all_targets():
 
 
 if __name__ == "__main__":
-    test_expand_plain_keeps_existing_first_full_coverage()
+    test_expand_plain_refreshes_existing_coords_and_keeps_full_coverage()
     test_amazon_tail_excludes_core()
+    test_reviewed_override_beats_contaminated_source_coordinate()
     test_instamart_anchors_cover_all_targets()
     print("OK")

@@ -216,6 +216,9 @@ if sum(1 for r in rows if not r.get("in_stock")):
 
 if s.get("pdp_price_probe_enabled") != 1:
     issue("pdp_price_probe_disabled", f"summary.pdp_price_probe_enabled={s.get('pdp_price_probe_enabled')} != 1")
+for key in ("pdp_price_probe_attempted", "pdp_price_probe_checked", "pdp_price_probe_failed"):
+    if key not in s:
+        issue("pdp_price_evidence_missing", f"summary.{key} is missing")
 pdp_price_probe_failed = int(s.get("pdp_price_probe_failed") or 0)
 if pdp_price_probe_failed > max_pdp_price_probe_failed:
     issue("pdp_price_probe_failed", f"summary.pdp_price_probe_failed={pdp_price_probe_failed} > {max_pdp_price_probe_failed}")
