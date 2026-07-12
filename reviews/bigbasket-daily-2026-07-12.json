@@ -1,0 +1,103 @@
+{
+  "platform": "bigbasket",
+  "run_id": "daily-2026-07-12",
+  "captured_at": "2026-07-10T22:09:54Z",
+  "verdict": "BROKEN",
+  "rows": 1652,
+  "unique_skus": 29,
+  "pincodes_with_jivo": 141,
+  "baseline_rows": 1329,
+  "source_result": "/opt/ecom-intel/platforms/bigbasket/result_pincode.json",
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "1652 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "1652 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "1652 rows vs baseline 1329 (124%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "29 unique SKUs vs baseline 27 (107%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "141 pincodes w/ Jivo vs baseline 133 (106%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": false,
+      "detail": "captured_at 2026-07-10T22:09:54Z is 38.4h old (> 15h); stale file?"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; 9 SKU(s) price-stable across 9 runs path proven live by 8 SKU(s) that moved (e.g. canola-oil-cold-pressed-1l, canola-oil-cold-pressed-5l, canola-omega3-rich-cooking-oil-1-l-1l) -> genuinely stable; 8 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": false,
+      "detail": "store_id 23913 spans 4 distinct cities (Delhi, Mumbai, Noida, Pune) across 49 rows, identical modal sale \u20b950 \u2014 default/fallback-store contamination"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": true,
+      "detail": "958 priced in-stock rows, vs baseline 867; 0 block/error-marked rows"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
+    }
+  ],
+  "reasons": [
+    "freshness: captured_at 2026-07-10T22:09:54Z is 38.4h old (> 15h); stale file?",
+    "geo_consistency: store_id 23913 spans 4 distinct cities (Delhi, Mumbai, Noida, Pune) across 49 rows, identical modal sale \u20b950 \u2014 default/fallback-store contamination"
+  ],
+  "llm_note": null
+}

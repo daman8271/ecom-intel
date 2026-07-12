@@ -1,0 +1,103 @@
+{
+  "platform": "amazon-now",
+  "run_id": "daily-2026-07-12",
+  "verdict": "BROKEN",
+  "review_verdict": "BROKEN",
+  "review_reasons": [
+    "freshness: captured_at 2026-07-11T04:17:11.360Z is 32.2h old (> 15h); stale file?",
+    "shared_price_dup: 6 discounted (sale,mrp) pair(s) shared by >= 2 distinct products; worst (873.0, 1250.0) held by 2 products; 589/3052 priced rows (19%) in shared pairs \u2014 possible fabrication/cross-sell bleed"
+  ],
+  "deep_reasons": [
+    "[class 4] shared_price_dup: 6 discounted (sale,mrp) pairs shared by distinct non-combo products, e.g. \u20b9873.0/\u20b91250.0 -> jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l, jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na",
+    "[class 9] freshness: captured 32.2h ago (>24h stale)"
+  ],
+  "reasons": [
+    "freshness: captured_at 2026-07-11T04:17:11.360Z is 32.2h old (> 15h); stale file?",
+    "shared_price_dup: 6 discounted (sale,mrp) pair(s) shared by >= 2 distinct products; worst (873.0, 1250.0) held by 2 products; 589/3052 priced rows (19%) in shared pairs \u2014 possible fabrication/cross-sell bleed",
+    "[class 4] shared_price_dup: 6 discounted (sale,mrp) pairs shared by distinct non-combo products, e.g. \u20b9873.0/\u20b91250.0 -> jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l, jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na",
+    "[class 9] freshness: captured 32.2h ago (>24h stale)"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "1/14 multi-city SKUs price-identical (majority needed; store_id sparse)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "26 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "3046 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 3046 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "6 discounted (sale,mrp) pairs shared by distinct non-combo products, e.g. \u20b9873.0/\u20b91250.0 -> jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l, jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "2/3046 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (3046/3052 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "captured 32.2h ago (>24h stale)"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "amazon-now BROKEN (deep-check): 6 discounted (sale,mrp) pairs shared by distinct non-combo products, e.g. \u20b9873.0/\u20b91250.0 -> jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l, jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na | heal: priced-row collapse / padding -> re-scrape (selector or block?)",
+  "quarantined": true,
+  "evaluated_at": "2026-07-12T12:31:19.136284+00:00",
+  "source_result": "/opt/ecom-intel/platforms/amazon-now/result.json"
+}
