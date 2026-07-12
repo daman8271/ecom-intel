@@ -85,6 +85,10 @@ if [ "$PLATFORM" = "blinkit" ]; then
   fi
   export BLINKIT_AUTH_STATE_FILE
   export BLINKIT_REQUIRE_AUTH="${BLINKIT_REQUIRE_AUTH:-1}"
+  if [ "$(hostname 2>/dev/null || true)" = "srv1723969" ] \
+      && [ -z "${BLINKIT_PROXY:-}" ] && [ -z "${SCRAPING_PROXY:-}" ]; then
+    export BLINKIT_PROXY="socks5://127.0.0.1:18080"
+  fi
 fi
 
 ts() { date -u '+%Y-%m-%dT%H:%M:%SZ'; }

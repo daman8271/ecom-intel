@@ -1,0 +1,6 @@
+[
+  {"check": "Auth", "pass_rate": 1.0, "checked": 4, "failed": 0},
+  {"check": "Coordinates", "pass_rate": 1.0, "checked": 1791, "failed": 0},
+  {"check": "PDP price", "pass_rate": 1.0, "checked": 6, "failed": 0},
+  {"check": "Host sync", "pass_rate": 1.0, "checked": 3, "failed": 0}
+]

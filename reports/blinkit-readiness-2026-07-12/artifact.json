@@ -1,0 +1,143 @@
+{
+  "surface": "report",
+  "manifest": {
+    "version": 1,
+    "surface": "report",
+    "title": "Blinkit Production Readiness Audit",
+    "description": "Technical readiness evidence for the 13 July 2026 Blinkit cron.",
+    "generatedAt": "2026-07-12T15:35:00Z",
+    "cards": [
+      {"id": "auth_card", "dataset": "readiness", "sourceId": "readiness_summary", "metrics": [{"label": "Authenticated pins", "field": "auth_verified_pincodes", "format": "number"}]},
+      {"id": "geo_card", "dataset": "readiness", "sourceId": "readiness_summary", "metrics": [{"label": "Coordinate records passing", "field": "coordinate_records_passing", "format": "number"}]},
+      {"id": "price_card", "dataset": "readiness", "sourceId": "readiness_summary", "metrics": [{"label": "PDP price probe failures", "field": "pdp_price_probe_failed", "format": "number"}]},
+      {"id": "clock_card", "dataset": "readiness", "sourceId": "readiness_summary", "metrics": [{"label": "Mac/VPS drift", "field": "clock_drift_s", "format": "number"}]}
+    ],
+    "charts": [
+      {
+        "id": "validation_chart",
+        "title": "Validation failures by control",
+        "subtitle": "Reviewed checks completed on 12 July 2026; sample sizes vary by control",
+        "showDescription": true,
+        "intent": "comparison",
+        "question": "How many reviewed failures did each production control record?",
+        "rationale": "A categorical bar makes the zero-failure result visible while tooltips retain each control's denominator.",
+        "type": "bar",
+        "dataset": "validation_results",
+        "sourceId": "validation_summary",
+        "encodings": {
+          "x": {"field": "check", "type": "nominal", "label": "Control"},
+          "y": {"field": "failed", "type": "quantitative", "format": "number", "label": "Failures"},
+          "tooltip": [
+            {"field": "checked", "type": "quantitative", "label": "Checked"},
+            {"field": "failed", "type": "quantitative", "label": "Failed"}
+          ]
+        },
+        "valueFormat": "number",
+        "layout": "full",
+        "maxRows": 4,
+        "palette": {"kind": "categorical", "name": "blue"},
+        "labels": {"values": "none"},
+        "surface": {"surface": "card", "viewMode": "visualization"}
+      }
+    ],
+    "tables": [
+      {
+        "id": "pin_table",
+        "title": "Corrected-pin live verification",
+        "subtitle": "Four representative pins, including three previously invalid coordinates",
+        "showDescription": true,
+        "dataset": "live_pins",
+        "sourceId": "live_smoke",
+        "defaultSort": {"field": "pincode", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "city", "label": "City"},
+          {"field": "pincode", "label": "Pincode"},
+          {"field": "store_id", "label": "Resolved store"},
+          {"field": "rows", "label": "Jivo rows", "format": "number"},
+          {"field": "auth", "label": "Auth"},
+          {"field": "resolved", "label": "Location"}
+        ]
+      },
+      {
+        "id": "gate_table",
+        "title": "Tomorrow's fail-closed gates",
+        "subtitle": "A failed gate stops scrape promotion or delivery",
+        "showDescription": true,
+        "dataset": "gates",
+        "sourceId": "gate_summary",
+        "defaultSort": {"field": "gate", "direction": "asc"},
+        "density": "spacious",
+        "layout": "full",
+        "columns": [
+          {"field": "gate", "label": "Gate"},
+          {"field": "status", "label": "Status"},
+          {"field": "failure_action", "label": "Failure action"}
+        ]
+      }
+    ],
+    "sources": [
+      {"id": "live_smoke", "label": "Mac Pro corrected-pin live smoke", "path": "reports/blinkit-readiness-2026-07-12/live-smoke.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/live-smoke.json')", "description": "Reads the reviewed corrected-pin live smoke receipt.", "executed_at": "2026-07-12T15:34:56Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/live-smoke.json"]}},
+      {"id": "readiness_summary", "label": "Readiness metric summary", "path": "reports/blinkit-readiness-2026-07-12/readiness.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/readiness.json')", "description": "Reads the reconciled readiness metrics used by the scorecards.", "executed_at": "2026-07-12T15:35:29Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/readiness.json"]}},
+      {"id": "geo_preflight", "label": "Coordinate preflight", "path": "platforms/blinkit/coordinate_preflight.py"},
+      {"id": "runner_preflight", "label": "Mac launchd preflight receipt", "query": {"engine": "operational-log", "language": "text", "description": "Preflight-only wrapper execution at 21:05 IST: reviewed-source sync, one-second clock drift, 1,791-coordinate validation, and live auth/store smoke all passed.", "executed_at": "2026-07-12T15:35:29Z"}},
+      {"id": "validation_summary", "label": "Reviewed validation summary", "path": "reports/blinkit-readiness-2026-07-12/validation-summary.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/validation-summary.json')", "description": "Reads pass rates and denominators for the validation chart.", "executed_at": "2026-07-12T15:35:29Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/validation-summary.json"]}},
+      {"id": "gate_summary", "label": "Production gate summary", "path": "reports/blinkit-readiness-2026-07-12/gates.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/gates.json')", "description": "Reads the implemented fail-closed production gates.", "executed_at": "2026-07-12T15:35:29Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/gates.json"]}},
+      {"id": "implementation", "label": "Blinkit production gates", "path": "platforms/blinkit/ingest.sh"}
+    ],
+    "blocks": [
+      {"id": "title", "type": "markdown", "body": "# Blinkit Production Readiness Audit"},
+      {"id": "technical_summary", "type": "markdown", "sourceId": "live_smoke", "body": "## Technical Summary\n\nThe authenticated production path is working and the repaired build is ready for tomorrow's cron. The live Mac run accepted auth for **4 of 4** pins, resolved **4 of 4** local stores, checked **6** PDP price probes with **0** failures, and produced **0** unverified OOS rows. Mac Pro, VPS, and KVM-1 now share the same scraper and coordinate-config hashes."},
+      {"id": "metrics", "type": "metric-strip", "cardIds": ["auth_card", "geo_card", "price_card", "clock_card"]},
+      {"id": "validation_chart_intro", "type": "markdown", "body": "## Every reviewed control passed\n\nAll four production controls passed their reviewed samples. The denominators differ by design: coordinates cover the full config, auth and prices use the live corrected-pin smoke, and source synchronization covers the three execution hosts."},
+      {"id": "validation_chart_block", "type": "chart", "chartId": "validation_chart"},
+      {"id": "findings", "type": "markdown", "body": "## Corrected locations now resolve to distinct local stores\n\nThe formerly swapped Delhi and Mumbai rows and the invalid Noida Sector 128 row all resolved under authenticated sessions. The exact audit table is more useful than a chart for this four-pin verification because store IDs and pass states are the evidence."},
+      {"id": "pins", "type": "table", "tableId": "pin_table"},
+      {"id": "scope", "type": "markdown", "body": "## Scope and definitions\n\nA coordinate passes only when it is inside India's geographic bounds and is not a robust city-distance outlier. Auth passes only when Blinkit accepts the hydrated account state for every tested pincode. Price evidence passes only when all required summary fields exist and every attempted PDP price probe completes without failure. Clock drift is the absolute difference between the Mac and VPS midpoint epochs."},
+      {"id": "method", "type": "markdown", "sourceId": "geo_preflight", "body": "## Coordinate and runtime method\n\nThe 1,791-record configuration was rebuilt from locally consistent postal candidates, reviewed overrides for contaminated source rows, and a robust per-city distance check. The Mac wrapper now syncs reviewed source from the VPS, rejects drift above five seconds, validates all coordinates, and runs a one-pincode live auth/store smoke before starting the full job."},
+      {"id": "gates_intro", "type": "markdown", "body": "## Failures stop publication\n\nAuth, location, version, clock, PDP price, OOS, store-collapse, and workbook checks are enforced before a result is promoted or sent. The live watcher also records resolution rate, auth rate, distinct stores, top-store concentration, and proxy health while the job is active."},
+      {"id": "gates", "type": "table", "tableId": "gate_table"},
+      {"id": "limitations", "type": "markdown", "body": "## Limits and remaining uncertainty\n\nThe four-pin live smoke proves the repaired failure classes, not the behavior of every dark store. Tomorrow's full 1,791-pin run remains the decisive coverage test. Blinkit prices vary by dark store, so a national modal-price matrix can disagree with a user's local app even when the underlying per-pincode capture is correct."},
+      {"id": "next", "type": "markdown", "body": "## Recommended next steps\n\n1. Let the launchd wrapper run its new preflight before the full cron.\n2. Hold delivery automatically if any auth, coordinate, clock, store-collapse, OOS, or PDP price gate fails.\n3. Present price range or explicit per-pincode truth in the workbook instead of treating one national modal price as universal."},
+      {"id": "questions", "type": "markdown", "body": "## Further question\n\nThe remaining product decision is the workbook representation of genuine dark-store price variation: min-max range, an owner-pincode column, or a clearly labeled per-pincode detail view."}
+    ]
+  },
+  "snapshot": {
+    "version": 1,
+    "generatedAt": "2026-07-12T15:35:00Z",
+    "status": "ready",
+    "datasets": {
+      "readiness": [{"auth_verified_pincodes": 4, "coordinate_records_passing": 1791, "pdp_price_probe_failed": 0, "clock_drift_s": 1}],
+      "validation_results": [
+        {"check": "Auth", "pass_rate": 1.0, "checked": 4, "failed": 0},
+        {"check": "Coordinates", "pass_rate": 1.0, "checked": 1791, "failed": 0},
+        {"check": "PDP price", "pass_rate": 1.0, "checked": 6, "failed": 0},
+        {"check": "Host sync", "pass_rate": 1.0, "checked": 3, "failed": 0}
+      ],
+      "live_pins": [
+        {"city": "Delhi", "pincode": "110094", "store_id": "38610", "rows": 6, "auth": "Passed", "resolved": "Passed"},
+        {"city": "Delhi", "pincode": "110082", "store_id": "46791", "rows": 6, "auth": "Passed", "resolved": "Passed"},
+        {"city": "Mumbai", "pincode": "400032", "store_id": "48457", "rows": 3, "auth": "Passed", "resolved": "Passed"},
+        {"city": "Noida", "pincode": "201317", "store_id": "33099", "rows": 6, "auth": "Passed", "resolved": "Passed"}
+      ],
+      "gates": [
+        {"gate": "Auth acceptance", "status": "Enabled", "failure_action": "Stop run/drop"},
+        {"gate": "Clock drift <=5s", "status": "Enabled", "failure_action": "Stop before scrape"},
+        {"gate": "Coordinate validity", "status": "Enabled", "failure_action": "Stop before scrape/ingest"},
+        {"gate": "PDP price evidence", "status": "Enabled", "failure_action": "Hold delivery"},
+        {"gate": "Scraper hash", "status": "Enabled", "failure_action": "Stop postflight"},
+        {"gate": "Store collapse", "status": "Enabled", "failure_action": "Reject ingest"}
+      ]
+    }
+  },
+  "sources": [
+    {"id": "live_smoke", "label": "Mac Pro corrected-pin live smoke", "path": "reports/blinkit-readiness-2026-07-12/live-smoke.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/live-smoke.json')", "description": "Reads the reviewed corrected-pin live smoke receipt.", "executed_at": "2026-07-12T15:34:56Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/live-smoke.json"]}},
+    {"id": "readiness_summary", "label": "Readiness metric summary", "path": "reports/blinkit-readiness-2026-07-12/readiness.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/readiness.json')", "description": "Reads the reconciled readiness metrics used by the scorecards.", "executed_at": "2026-07-12T15:35:29Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/readiness.json"]}},
+    {"id": "geo_preflight", "label": "Coordinate preflight", "path": "platforms/blinkit/coordinate_preflight.py"},
+    {"id": "runner_preflight", "label": "Mac launchd preflight receipt", "query": {"engine": "operational-log", "language": "text", "description": "Preflight-only wrapper execution at 21:05 IST: reviewed-source sync, one-second clock drift, 1,791-coordinate validation, and live auth/store smoke all passed.", "executed_at": "2026-07-12T15:35:29Z"}},
+    {"id": "validation_summary", "label": "Reviewed validation summary", "path": "reports/blinkit-readiness-2026-07-12/validation-summary.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/validation-summary.json')", "description": "Reads pass rates and denominators for the validation chart.", "executed_at": "2026-07-12T15:35:29Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/validation-summary.json"]}},
+    {"id": "gate_summary", "label": "Production gate summary", "path": "reports/blinkit-readiness-2026-07-12/gates.json", "query": {"engine": "duckdb", "language": "sql", "sql": "SELECT * FROM read_json_auto('reports/blinkit-readiness-2026-07-12/gates.json')", "description": "Reads the implemented fail-closed production gates.", "executed_at": "2026-07-12T15:35:29Z", "tables_used": ["reports/blinkit-readiness-2026-07-12/gates.json"]}},
+    {"id": "implementation", "label": "Blinkit production gates", "path": "platforms/blinkit/ingest.sh"}
+  ]
+}

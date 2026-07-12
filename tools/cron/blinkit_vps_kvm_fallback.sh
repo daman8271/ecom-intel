@@ -20,6 +20,7 @@ SOURCE_CONFIG="$DIR/platforms/blinkit/pincodes.daily.json"
 AUTH_FILE="$DIR/secrets/blinkit-auth-state.json"
 SHARD_TIMEOUT="${BLINKIT_FALLBACK_SHARD_TIMEOUT:-7200}"
 EFFECTIVE_CONCURRENCY="${BLINKIT_FALLBACK_CONCURRENCY:-2}"
+MAX_CLOCK_DRIFT_S="${BLINKIT_MAX_CLOCK_DRIFT_S:-5}"
 KVM_PROXY_CHECKED=0
 KVM_PROXY_OK=0
 mkdir -p "$DIR/logs" "$DIR/shards/runs"
@@ -101,6 +102,20 @@ kvm1_blinkit_proxy_healthy() {
   fi
   KVM_PROXY_OK=0
   return 1
+}
+
+clocks_healthy() {
+  local before after midpoint remote_epoch drift local_ntp remote_ntp
+  local_ntp="$(timedatectl show -p NTPSynchronized --value 2>/dev/null || true)"
+  before="$(date +%s)"
+  remote_epoch="$(ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 'date +%s' 2>/dev/null)" || return 1
+  after="$(date +%s)"
+  remote_ntp="$(ssh -o BatchMode=yes -o ConnectTimeout=15 kvm1 'timedatectl show -p NTPSynchronized --value 2>/dev/null || true' 2>/dev/null)" || return 1
+  midpoint=$(( (before + after) / 2 ))
+  drift=$(( remote_epoch - midpoint ))
+  [ "$drift" -lt 0 ] && drift=$(( -drift ))
+  log "clock preflight local_ntp=${local_ntp:-unknown} kvm_ntp=${remote_ntp:-unknown} drift=${drift}s max=${MAX_CLOCK_DRIFT_S}s"
+  [ "$local_ntp" = "yes" ] && [ "$remote_ntp" = "yes" ] && [ "$drift" -le "$MAX_CLOCK_DRIFT_S" ]
 }
 
 kvm1_busy_with_other_browser_work() {
@@ -491,6 +506,16 @@ fi
 if [ ! -s "$AUTH_FILE" ]; then
   log "missing Blinkit auth state: $AUTH_FILE"
   tg "[FAIL] Blinkit fallback cannot start: VPS auth state missing at $AUTH_FILE"
+  exit 1
+fi
+if ! python3 "$DIR/platforms/blinkit/coordinate_preflight.py" "$SOURCE_CONFIG" --compact --summary >>"$LOG_FILE" 2>&1; then
+  log "Blinkit coordinate preflight failed; refusing fallback"
+  tg "[FAIL] Blinkit fallback cannot start for ${TODAY}: pincode coordinates failed preflight."
+  exit 1
+fi
+if ! clocks_healthy; then
+  log "VPS/KVM1 clock preflight failed; refusing time-unsafe fallback"
+  tg "[FAIL] Blinkit fallback cannot start for ${TODAY}: VPS/KVM1 clock sync or drift check failed."
   exit 1
 fi
 if ! store_open_window; then

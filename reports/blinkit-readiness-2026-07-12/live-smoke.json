@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-07-12T15:34:56Z",
+  "auth_verified": true,
+  "auth_verified_pincodes": 4,
+  "pincodes_total": 4,
+  "pincodes_resolved": 4,
+  "pincodes_blocked": 0,
+  "pdp_price_probe_attempted": 6,
+  "pdp_price_probe_checked": 6,
+  "pdp_price_probe_failed": 0,
+  "unverified_oos": 0,
+  "scraper_hash_matches": true,
+  "pins": [
+    {"city": "Delhi", "pincode": "110094", "lat": 28.7039444, "lon": 77.2833056, "store_id": "38610", "rows": 6, "resolved": true},
+    {"city": "Delhi", "pincode": "110082", "lat": 28.7721666, "lon": 77.119, "store_id": "46791", "rows": 6, "resolved": true},
+    {"city": "Mumbai", "pincode": "400032", "lat": 18.96775, "lon": 72.8216944, "store_id": "48457", "rows": 3, "resolved": true},
+    {"city": "Noida", "pincode": "201317", "lat": 28.52231, "lon": 77.36425, "store_id": "33099", "rows": 6, "resolved": true}
+  ]
+}

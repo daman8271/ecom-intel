@@ -1,0 +1,8 @@
+[
+  {"gate": "Auth acceptance", "status": "Enabled", "failure_action": "Stop run/drop"},
+  {"gate": "Clock drift <=5s", "status": "Enabled", "failure_action": "Stop before scrape"},
+  {"gate": "Coordinate validity", "status": "Enabled", "failure_action": "Stop before scrape/ingest"},
+  {"gate": "PDP price evidence", "status": "Enabled", "failure_action": "Hold delivery"},
+  {"gate": "Scraper hash", "status": "Enabled", "failure_action": "Stop postflight"},
+  {"gate": "Store collapse", "status": "Enabled", "failure_action": "Reject ingest"}
+]

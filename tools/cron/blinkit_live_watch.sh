@@ -27,7 +27,7 @@ mac_status() {
   ssh -o BatchMode=yes -o ConnectTimeout=10 macpro \
     "ps -axo pid,etime,command | grep -E 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js|node scrape.js' | grep -v grep || true
 python3 - <<'PY' '$progress_file' 2>/dev/null || true
-import json, os, sys
+import collections, json, os, sys
 p = sys.argv[1]
 if not os.path.exists(p):
     print(f'progress missing: {p}')
@@ -35,18 +35,27 @@ if not os.path.exists(p):
 d = json.load(open(p, encoding='utf-8'))
 items = list(d.items()) if isinstance(d, dict) else []
 rows = [r for _, pin in items for r in (pin.get('rows') or []) if isinstance(pin, dict)]
+resolved = [pin for _, pin in items if isinstance(pin, dict) and pin.get('resolved')]
+store_counts = collections.Counter(
+    str(pin.get('store_id')) for pin in resolved if pin.get('store_id')
+)
+top_store_share = (max(store_counts.values()) / len(resolved) * 100.0) if resolved and store_counts else 0.0
 stock_unverified = sum(
     1 for r in rows
     if r.get('stock_unverified')
     or str(r.get('listing_status') or '').strip().lower() == 'stock_unverified'
     or str(r.get('stock_source') or '').strip().lower().endswith('_unverified')
 )
-print('progress done={done} resolved={resolved} auth_ok={auth_ok} blocked={blocked} rows={rows} stock_unverified={stock_unverified} last={last}'.format(
+print('progress done={done} resolved={resolved} resolved_pct={resolved_pct:.1f} auth_ok={auth_ok} auth_pct={auth_pct:.1f} blocked={blocked} rows={rows} stores={stores} top_store_share={top_store_share:.1f}% stock_unverified={stock_unverified} last={last}'.format(
     done=len(items),
-    resolved=sum(1 for _, pin in items if isinstance(pin, dict) and pin.get('resolved')),
+    resolved=len(resolved),
+    resolved_pct=(len(resolved) / len(items) * 100.0) if items else 0.0,
     auth_ok=sum(1 for _, pin in items if isinstance(pin, dict) and pin.get('auth_accepted')),
+    auth_pct=(sum(1 for _, pin in items if isinstance(pin, dict) and pin.get('auth_accepted')) / len(items) * 100.0) if items else 0.0,
     blocked=sum(1 for _, pin in items if isinstance(pin, dict) and pin.get('blocked')),
     rows=len(rows),
+    stores=len(store_counts),
+    top_store_share=top_store_share,
     stock_unverified=stock_unverified,
     last=','.join([pin for pin, _ in items[-5:]]),
 ))
@@ -86,7 +95,8 @@ fallback_status() {
   } 2>&1 | sed 's/^/[fallback] /' | tee -a "$LOG" >/dev/null
 
   ssh -o BatchMode=yes -o ConnectTimeout=8 kvm1 \
-    "ps -eo pid,etime,command | grep -E 'run_platform_shard.sh blinkit' | grep -v grep || true
+    "scrape-proxy-check 2>/dev/null || echo 'proxy_check=failed'
+ps -eo pid,etime,command | grep -E 'run_platform_shard.sh blinkit' | grep -v grep || true
 for p in /proc/[0-9]*/cwd; do
   cwd=\$(readlink \"\$p\" 2>/dev/null || true)
   case \"\$cwd\" in */platforms/blinkit|*/work/blinkit)

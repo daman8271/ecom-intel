@@ -79,6 +79,15 @@ def summarize_result(path: Path) -> dict[str, Any]:
     if not isinstance(data, dict):
         return {**info, "readable": False, "summary": {}, "bad_pins": []}
     summary = data.get("summary") or {}
+    per_pin = [r for r in (data.get("perPin") or []) if isinstance(r, dict)]
+    rows = [r for r in (data.get("allRows") or []) if isinstance(r, dict)]
+    resolved = [r for r in per_pin if flag(r.get("resolved"))]
+    store_counts: dict[str, int] = {}
+    for rec in resolved:
+        store = str(rec.get("store_id") or "").strip()
+        if store:
+            store_counts[store] = store_counts.get(store, 0) + 1
+    top_store_share = max(store_counts.values()) / len(resolved) if resolved and store_counts else 0.0
     return {
         **info,
         "readable": True,
@@ -86,6 +95,8 @@ def summarize_result(path: Path) -> dict[str, Any]:
             k: summary.get(k)
             for k in (
                 "captured_at",
+                "started_at",
+                "scraper_sha256",
                 "pincodes_total",
                 "pincodes_resolved",
                 "pincodes_unresolved",
@@ -109,6 +120,17 @@ def summarize_result(path: Path) -> dict[str, Any]:
         },
         "per_pin_count": len(data.get("perPin") or []),
         "row_count": len(data.get("allRows") or []),
+        "run_health": {
+            "resolved_rate": len(resolved) / len(per_pin) if per_pin else 0.0,
+            "auth_rate": sum(1 for r in per_pin if flag(r.get("auth_accepted"))) / len(per_pin) if per_pin else 0.0,
+            "distinct_resolved_stores": len(store_counts),
+            "top_store_share": top_store_share,
+            "price_evidence_complete": all(
+                key in summary for key in (
+                    "pdp_price_probe_attempted", "pdp_price_probe_checked",
+                    "pdp_price_probe_failed")
+            ),
+        },
         "bad_pins": bad_pins(data),
     }
 

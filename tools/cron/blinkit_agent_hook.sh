@@ -90,7 +90,8 @@ repair_held_mac_drop() {
 }
 
 invoke_readonly_codex() {
-  local snap="$1" key="$2" throttle="$LOG_DIR/llm-${DATE_IST}-${key}.stamp" now last prompt out codex_bin
+  local snap="$1" key="$2" throttle now last prompt out codex_bin
+  throttle="$LOG_DIR/llm-${DATE_IST}-${key}.stamp"
   [ "${BLINKIT_AGENT_LLM_ENABLE:-1}" = "1" ] || { log "read-only Codex escalation disabled"; return 0; }
   now="$(date +%s)"
   last="$(stat -c %Y "$throttle" 2>/dev/null || echo 0)"
@@ -138,6 +139,12 @@ fi
 state="$(json_get "$snap" state)"
 expected="$(json_get "$snap" expected_pincodes)"
 log "state=$state expected_pincodes=$expected snapshot=$snap"
+
+if [ "$PHASE" = "mac-start" ] && [ "${BLINKIT_AGENT_LLM_LIVE_START:-1}" = "1" ]; then
+  log "Mac production start received; waking read-only Codex monitor with the fresh snapshot"
+  invoke_readonly_codex "$snap" "live-start"
+  exit 0
+fi
 
 case "$state" in
   complete)

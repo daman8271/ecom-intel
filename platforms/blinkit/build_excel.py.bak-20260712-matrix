@@ -361,30 +361,12 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
     return ws
 
 # Sheet 3: Pricing Matrix (modal sale per city) - green cheap -> red expensive
-# Mode over ALL rows (incl. OOS) per the 2026-06-18 owner decision; only the new
-# Price Range sheet below is in-stock-only.
 def modal_price(cands):
     prices = [x['sale'] for x in cands if x['sale'] is not None]
     if not prices: return None
     cnt = Counter(prices); top = max(cnt.values())
     return round(min(p for p, n in cnt.items() if n == top))
-wsP = matrix("Pricing Matrix", modal_price, '"Rs"#,##0', scale=True)
-nr = wsP.max_row + 2
-wsP.merge_cells(start_row=nr, start_column=1, end_row=nr, end_column=min(8, wsP.max_column))
-c = wsP.cell(row=nr, column=1, value="Modal (most common) observed price per city. Stores within a city can differ - see Price Range for the in-stock spread and Master Data for exact per-pincode prices.")
-c.font = SUB_FONT
-
-# Sheet 3b: Price Range (min-max in-stock sale per city) - shows the store-level spread the modal hides
-def price_range(cands):
-    prices = [x['sale'] for x in cands if x['sale'] is not None and x.get('in_stock') == 1]
-    if not prices: return None
-    lo, hi = round(min(prices)), round(max(prices))
-    return lo if lo == hi else f"{lo}-{hi} ({len(prices)})"
-wsR = matrix("Price Range", price_range, '"Rs"#,##0')
-nr = wsR.max_row + 2
-wsR.merge_cells(start_row=nr, start_column=1, end_row=nr, end_column=min(8, wsR.max_column))
-c = wsR.cell(row=nr, column=1, value="Rs min-max across in-stock stores in the city, store count in brackets; a single number means every store priced identically.")
-c.font = SUB_FONT
+matrix("Pricing Matrix", modal_price, '"Rs"#,##0', scale=True)
 # Sheet 4: Stock Status (% in stock)
 def stock_cell(c):
     vals = [x.get('in_stock') for x in c if x.get('in_stock') in (0, 1)]
