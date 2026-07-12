@@ -30,13 +30,13 @@ KVM_BASE="${BB_TEAM_KVM_BASE:-/opt/ecom-intel/platforms/bigbasket}"
 VPS_WEIGHT="${BB_TEAM_VPS_WEIGHT:-5}"
 MAC_WEIGHT="${BB_TEAM_MAC_WEIGHT:-4}"
 KVM_WEIGHT="${BB_TEAM_KVM_WEIGHT:-1}"
-WAIT_TIMEOUT_S="${BB_TEAM_WAIT_TIMEOUT_S:-14400}"
+WAIT_TIMEOUT_S="${BB_TEAM_WAIT_TIMEOUT_S:-21600}"
 POLL_S="${BB_TEAM_POLL_S:-30}"
 
 BB_QUERIES_DEFAULT="${BB_QUERIES:-jivo}"
 PIN_DELAY_MS="${BB_PINCODE_DELAY_MS:-3500}"
 QUERY_DELAY_MS="${BB_PINCODE_QUERY_DELAY_MS:-3500}"
-WATCHDOG_MS="${BB_PINCODE_WATCHDOG_MS:-14400000}"
+WATCHDOG_MS="${BB_PINCODE_WATCHDOG_MS:-21600000}"
 
 usage() {
   cat <<EOF
@@ -215,6 +215,57 @@ worker_host() {
     kvm1) printf '%s\n' "$KVM_HOST" ;;
     *) return 1 ;;
   esac
+}
+
+worker_alive() {
+  local name="$1" host
+  [ "$name" = "vps" ] && return 0
+  host="$(worker_host "$name")"
+  timeout 30 ssh -o ConnectTimeout=10 -o BatchMode=yes "$host" true >/dev/null 2>&1
+}
+
+# Zero out the weight of any unreachable remote so its pins are rerouted to
+# live workers instead of the whole run dying at sync/launch (2026-07-12
+# incident: Mac Pro tunnel down at 3 AM -> set -e killed the run, no report).
+# When a worker is down, remaining live workers split the list evenly.
+preflight_weights() {
+  local name dead=0
+  for name in macpro kvm1; do
+    if ! worker_alive "$name"; then
+      echo "[bb-team] WARNING: $name unreachable at launch; rerouting its pins to live workers" >&2
+      case "$name" in
+        macpro) MAC_WEIGHT=0 ;;
+        kvm1) KVM_WEIGHT=0 ;;
+      esac
+      dead=1
+    fi
+  done
+  if [ "$dead" = "1" ]; then
+    [ "$VPS_WEIGHT" -gt 0 ] && VPS_WEIGHT=1
+    [ "$MAC_WEIGHT" -gt 0 ] && MAC_WEIGHT=1
+    [ "$KVM_WEIGHT" -gt 0 ] && KVM_WEIGHT=1
+    echo "[bb-team] effective weights after preflight: vps=$VPS_WEIGHT macpro=$MAC_WEIGHT kvm1=$KVM_WEIGHT" >&2
+  fi
+}
+
+# Workers actually participating in this run (from the manifest); falls back
+# to all three for pre-manifest calls.
+manifest_workers() {
+  if [ -f "$run_dir/manifest.json" ]; then
+    python3 -c 'import json,sys
+for w in json.load(open(sys.argv[1]))["workers"]:
+    print(w["name"])' "$run_dir/manifest.json"
+  else
+    printf 'vps\nmacpro\nkvm1\n'
+  fi
+}
+
+mark_worker_skipped() {
+  local name="$1"
+  echo "99" > "$run_dir/$name.rc"
+  date -u +%FT%TZ > "$run_dir/$name.done"
+  touch "$run_dir/.allow-missing"
+  echo "[bb-team] WARNING: $name skipped mid-launch; its pins will be reported as missing" >&2
 }
 
 make_shards() {
