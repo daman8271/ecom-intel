@@ -5,6 +5,8 @@
 #   - this VPS
 #   - Mac Pro over ssh alias "macpro"
 #   - KVM1 over ssh alias "kvm1"
+#   - Windows laptop over ssh alias "laptop" (native Windows: PowerShell shell,
+#     scp not rsync, WMI-detached cmd runner not tmux; owner rule: NO WSL)
 #
 # Every worker runs in tmux, so closing the launching shell does not kill the
 # scrape. Re-run this script with "status", "collect", "merge", or "build" and
@@ -54,8 +56,8 @@ Usage:
   $0 build <run-id>     Build workbook for the Ecom batch/group
   $0 deliver [xlsx]     Retry Ecom WhatsApp group delivery for a built workbook
 
-Weights default to VPS=$VPS_WEIGHT Mac=$MAC_WEIGHT KVM1=$KVM_WEIGHT.
-Override with BB_TEAM_VPS_WEIGHT, BB_TEAM_MAC_WEIGHT, BB_TEAM_KVM_WEIGHT.
+Weights default to VPS=$VPS_WEIGHT Mac=$MAC_WEIGHT KVM1=$KVM_WEIGHT Laptop=$LAPTOP_WEIGHT.
+Override with BB_TEAM_VPS_WEIGHT, BB_TEAM_MAC_WEIGHT, BB_TEAM_KVM_WEIGHT, BB_TEAM_LAPTOP_WEIGHT.
 Optional secondary direct delivery reads BB_TEAM_DIRECT_JID or $DIRECT_JID_FILE.
 EOF
 }
@@ -497,6 +499,12 @@ worker_status() {
     done_state="$([ -f "$remote_run/$name.done" ] && cat "$remote_run/$name.done" || true)"
     rc_state="$([ -f "$remote_run/$name.rc" ] && cat "$remote_run/$name.rc" || true)"
     pins_state="$([ -f "$remote_run/$name.json" ] && python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); per=d.get("perPin") or []; print(str(len(per))+" pins, "+str(sum(len(p.get("rows") or []) for p in per))+" rows")' "$remote_run/$name.json" || true)"
+  elif [ "$name" = "laptop" ]; then
+    remote_run="$base/team-runs/$run_id"
+    tmux_state="$([ -f "$run_dir/$name.done" ] && echo not-running || echo running?)"
+    done_state="$([ -f "$run_dir/$name.done" ] && tr -d '\r' < "$run_dir/$name.done" || true)"
+    rc_state="$([ -f "$run_dir/$name.rc" ] && tr -d '\r' < "$run_dir/$name.rc" || true)"
+    pins_state="$([ -f "$run_dir/$name.json" ] && python3 -c 'import json,sys; d=json.load(open(sys.argv[1])); per=d.get("perPin") or []; print(str(len(per))+" pins, "+str(sum(len(p.get("rows") or []) for p in per))+" rows")' "$run_dir/$name.json" || true)"
   else
     remote_run="$base/team-runs/$run_id"
     tmux_state="$(remote_sh "$host" "tmux has-session -t '$session' 2>/dev/null && echo running || echo not-running" || true)"
