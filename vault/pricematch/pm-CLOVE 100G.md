@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-11
-observations: 264
+last_seen: 2026-07-12
+observations: 272
 latest_status: NOT_LISTED
 below_days: 1
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-whole-clove-100-gm-no-artificial-colours-or-preservatives-100
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹209 vs live ₹-
-- **Days below reference:** 1 of 33
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-12) — ref ₹209 vs live ₹-
+- **Days below reference:** 1 of 34
 - **Below on:** [[2026-06-08]]
 
-## Ref-vs-live history (264 observations)
+## Ref-vs-live history (272 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -309,6 +309,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-11,flipkart,OOS,SVD,209,,,,,,0,false
 2026-07-11,flipkart-minutes,NOT_LISTED,SVD,209,,,,,,0,false
 2026-07-11,zepto,NOT_LISTED,SVD,209,,,,,,0,false
+2026-07-12,amazon,OOS,SVD,209,,,,,,0,false
+2026-07-12,amazon-fresh,NOT_LISTED,SVD,209,,,,,,0,false
+2026-07-12,amazon-now,NOT_LISTED,SVD,209,,,,,,0,false
+2026-07-12,bigbasket,NOT_LISTED,SVD,209,,,,,,0,false
+2026-07-12,blinkit,NOT_LISTED,SVD,209,,,,,,0,false
+2026-07-12,flipkart,OOS,SVD,209,,,,,,0,false
+2026-07-12,flipkart-minutes,NOT_LISTED,SVD,209,,,,,,0,false
+2026-07-12,zepto,NOT_LISTED,SVD,209,,,,,,0,false
 ```
 
 ---

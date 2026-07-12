@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-11
-observations: 264
+last_seen: 2026-07-12
+observations: 272
 latest_status: NOT_LISTED
-below_days: 24
+below_days: 25
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-i
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹199 vs live ₹-
-- **Days below reference:** 24 of 33
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-10]] · [[2026-07-11]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-12) — ref ₹199 vs live ₹-
+- **Days below reference:** 25 of 34
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]]
 
-## Ref-vs-live history (264 observations)
+## Ref-vs-live history (272 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -309,6 +309,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-11,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
 2026-07-11,flipkart-minutes,BELOW,SVD,199,166,166,166,-33,-16.58,1,true
 2026-07-11,zepto,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-12,amazon,OOS,SVD,199,,,,,,0,false
+2026-07-12,amazon-fresh,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-12,amazon-now,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-12,bigbasket,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-12,blinkit,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-12,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-12,flipkart-minutes,BELOW,SVD,199,166,166,166,-33,-16.58,1,true
+2026-07-12,zepto,NOT_LISTED,SVD,199,,,,,,0,false
 ```
 
 ---
