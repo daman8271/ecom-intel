@@ -24,12 +24,17 @@ GW_SEND_MEDIA="${BB_TEAM_WA_SEND_MEDIA:-http://127.0.0.1:3001/send-media}"
 
 MAC_HOST="${BB_TEAM_MAC_HOST:-macpro}"
 KVM_HOST="${BB_TEAM_KVM_HOST:-kvm1}"
+LAPTOP_HOST="${BB_TEAM_LAPTOP_HOST:-laptop}"
 MAC_BASE="${BB_TEAM_MAC_BASE:-/Users/danny./VPS-Migration/imported/ecom-intel/platforms/bigbasket}"
 KVM_BASE="${BB_TEAM_KVM_BASE:-/opt/ecom-intel/platforms/bigbasket}"
+# Windows worker: native PowerShell + node, no WSL/bash/tmux/rsync (owner rule).
+# Forward slashes work in PowerShell paths; scp needs the same form.
+LAPTOP_BASE="${BB_TEAM_LAPTOP_BASE:-C:/Users/prabh/bb}"
 
-VPS_WEIGHT="${BB_TEAM_VPS_WEIGHT:-5}"
-MAC_WEIGHT="${BB_TEAM_MAC_WEIGHT:-4}"
+VPS_WEIGHT="${BB_TEAM_VPS_WEIGHT:-3}"
+MAC_WEIGHT="${BB_TEAM_MAC_WEIGHT:-3}"
 KVM_WEIGHT="${BB_TEAM_KVM_WEIGHT:-1}"
+LAPTOP_WEIGHT="${BB_TEAM_LAPTOP_WEIGHT:-3}"
 WAIT_TIMEOUT_S="${BB_TEAM_WAIT_TIMEOUT_S:-21600}"
 POLL_S="${BB_TEAM_POLL_S:-30}"
 
@@ -204,6 +209,7 @@ worker_base() {
     vps) printf '%s\n' "$PDIR" ;;
     macpro) printf '%s\n' "$MAC_BASE" ;;
     kvm1) printf '%s\n' "$KVM_BASE" ;;
+    laptop) printf '%s\n' "$LAPTOP_BASE" ;;
     *) return 1 ;;
   esac
 }
@@ -213,6 +219,7 @@ worker_host() {
     vps) printf '%s\n' "local" ;;
     macpro) printf '%s\n' "$MAC_HOST" ;;
     kvm1) printf '%s\n' "$KVM_HOST" ;;
+    laptop) printf '%s\n' "$LAPTOP_HOST" ;;
     *) return 1 ;;
   esac
 }
@@ -221,7 +228,8 @@ worker_alive() {
   local name="$1" host
   [ "$name" = "vps" ] && return 0
   host="$(worker_host "$name")"
-  timeout 30 ssh -o ConnectTimeout=10 -o BatchMode=yes "$host" true >/dev/null 2>&1
+  # "exit 0" is valid in both POSIX shells and PowerShell (laptop lands in PS).
+  timeout 30 ssh -o ConnectTimeout=10 -o BatchMode=yes "$host" "exit 0" >/dev/null 2>&1
 }
 
 # Zero out the weight of any unreachable remote so its pins are rerouted to
@@ -230,12 +238,13 @@ worker_alive() {
 # When a worker is down, remaining live workers split the list evenly.
 preflight_weights() {
   local name dead=0
-  for name in macpro kvm1; do
+  for name in macpro kvm1 laptop; do
     if ! worker_alive "$name"; then
       echo "[bb-team] WARNING: $name unreachable at launch; rerouting its pins to live workers" >&2
       case "$name" in
         macpro) MAC_WEIGHT=0 ;;
         kvm1) KVM_WEIGHT=0 ;;
+        laptop) LAPTOP_WEIGHT=0 ;;
       esac
       dead=1
     fi
@@ -244,7 +253,8 @@ preflight_weights() {
     [ "$VPS_WEIGHT" -gt 0 ] && VPS_WEIGHT=1
     [ "$MAC_WEIGHT" -gt 0 ] && MAC_WEIGHT=1
     [ "$KVM_WEIGHT" -gt 0 ] && KVM_WEIGHT=1
-    echo "[bb-team] effective weights after preflight: vps=$VPS_WEIGHT macpro=$MAC_WEIGHT kvm1=$KVM_WEIGHT" >&2
+    [ "$LAPTOP_WEIGHT" -gt 0 ] && LAPTOP_WEIGHT=1
+    echo "[bb-team] effective weights after preflight: vps=$VPS_WEIGHT macpro=$MAC_WEIGHT kvm1=$KVM_WEIGHT laptop=$LAPTOP_WEIGHT" >&2
   fi
 }
 
@@ -256,7 +266,7 @@ manifest_workers() {
 for w in json.load(open(sys.argv[1]))["workers"]:
     print(w["name"])' "$run_dir/manifest.json"
   else
-    printf 'vps\nmacpro\nkvm1\n'
+    printf 'vps\nmacpro\nkvm1\nlaptop\n'
   fi
 }
 
@@ -271,18 +281,18 @@ mark_worker_skipped() {
 make_shards() {
   mkdir -p "$run_dir"
   printf '%s\n' "$run_id" > "$SHARD_ROOT/ACTIVE_TEAM_RUN"
-  python3 - "$PINS_FILE" "$run_dir" "$VPS_WEIGHT" "$MAC_WEIGHT" "$KVM_WEIGHT" "$run_id" <<'PY'
+  python3 - "$PINS_FILE" "$run_dir" "$VPS_WEIGHT" "$MAC_WEIGHT" "$KVM_WEIGHT" "$LAPTOP_WEIGHT" "$run_id" <<'PY'
 import json, os, sys, datetime
 pins_file, run_dir = sys.argv[1:3]
-weights = {"vps": int(sys.argv[3]), "macpro": int(sys.argv[4]), "kvm1": int(sys.argv[5])}
-run_id = sys.argv[6]
+weights = {"vps": int(sys.argv[3]), "macpro": int(sys.argv[4]), "kvm1": int(sys.argv[5]), "laptop": int(sys.argv[6])}
+run_id = sys.argv[7]
 pins = json.load(open(pins_file))
 cycle = []
-for name in ("vps", "macpro", "kvm1"):
+for name in ("vps", "macpro", "kvm1", "laptop"):
     cycle.extend([name] * max(0, weights[name]))
 if not cycle:
     raise SystemExit("all worker weights are zero")
-shards = {name: [] for name in ("vps", "macpro", "kvm1") if weights[name] > 0}
+shards = {name: [] for name in ("vps", "macpro", "kvm1", "laptop") if weights[name] > 0}
 for i, pin in enumerate(pins):
     shards[cycle[i % len(cycle)]].append(pin)
 workers = []
@@ -315,6 +325,15 @@ sync_worker() {
     return 0
   fi
 
+  if [ "$name" = "laptop" ]; then
+    ssh "$host" "New-Item -ItemType Directory -Force -Path '$base/secrets','$base/team-runs/$run_id' | Out-Null; exit 0"
+    scp -q "$PDIR/scrape_pincode_browser.js" "$PDIR/scrape.js" "$PDIR/import_cookies.js" \
+      "$PDIR/package.json" "$PDIR/package-lock.json" "$host:$base/"
+    scp -q "$PDIR/secrets/bb_cookies.pincode.json" "$host:$base/secrets/"
+    ssh "$host" "cd '$base'; if (-not (Test-Path node_modules/playwright-extra)) { npm.cmd ci --no-audit --no-fund | Out-Null }; exit 0"
+    return 0
+  fi
+
   rsync -az \
     --exclude node_modules \
     --exclude secrets \
@@ -341,6 +360,11 @@ push_shard() {
   if [ "$name" = "vps" ]; then
     return 0
   fi
+  if [ "$name" = "laptop" ]; then
+    ssh "$host" "New-Item -ItemType Directory -Force -Path '$base/team-runs/$run_id' | Out-Null; exit 0"
+    scp -q "$run_dir/pincodes.$name.json" "$host:$base/team-runs/$run_id/pincodes.$name.json"
+    return 0
+  fi
   remote_sh "$host" "mkdir -p '$base/team-runs/$run_id'"
   rsync -az "$run_dir/pincodes.$name.json" "$host:$base/team-runs/$run_id/pincodes.$name.json"
 }
@@ -355,6 +379,35 @@ launch_worker() {
     remote_run="$run_dir"
   else
     remote_run="$base/team-runs/$run_id"
+  fi
+
+  if [ "$name" = "laptop" ]; then
+    # Native Windows: plain cmd batch runner (no PowerShell script policy
+    # involved), launched detached via WMI so it survives ssh disconnect
+    # (no tmux on Windows). Backslash paths for cmd.exe.
+    local base_w="${base//\//\\}" run_w="${remote_run//\//\\}"
+    local_runner="$run_dir/$name.run.cmd"
+    cat > "$local_runner" <<EOF
+@echo off
+cd /d "$base_w"
+set "OUT_FILE=$run_w\\$name.json"
+set "PINCODES_FILE=$run_w\\pincodes.$name.json"
+set "BB_COOKIE_PATH=$base_w\\secrets\\bb_cookies.pincode.json"
+set "BB_QUERIES=$BB_QUERIES_DEFAULT"
+set "BB_PINCODE_MIN_REQUIRED=1"
+set "BB_PINCODE_DELAY_MS=$PIN_DELAY_MS"
+set "BB_PINCODE_QUERY_DELAY_MS=$QUERY_DELAY_MS"
+set "BB_PINCODE_WATCHDOG_MS=$WATCHDOG_MS"
+node scrape_pincode_browser.js 1>"$run_w\\$name.stdout" 2>"$run_w\\$name.log"
+set "RC=%ERRORLEVEL%"
+>"$run_w\\$name.rc" echo %RC%
+>"$run_w\\$name.done" echo %DATE% %TIME%
+exit /b %RC%
+EOF
+    sed -i 's/$/\r/' "$local_runner"
+    scp -q "$local_runner" "$host:$remote_run/$name.run.cmd"
+    ssh "$host" "Invoke-CimMethod -ClassName Win32_Process -MethodName Create -Arguments @{CommandLine='cmd /c \"$run_w\\$name.run.cmd\"'} | Out-Null; exit 0"
+    return 0
   fi
 
   local_runner="$run_dir/$name.run.sh"
@@ -418,6 +471,13 @@ collect_all() {
     host="$(worker_host "$worker")"
     base="$(worker_base "$worker")"
     remote_run="$base/team-runs/$run_id"
+    if [ "$worker" = "laptop" ]; then
+      local ext
+      for ext in json log stdout rc done; do
+        scp -q "$host:$remote_run/$worker.$ext" "$run_dir/$worker.$ext" 2>/dev/null || true
+      done
+      continue
+    fi
     rsync -az "$host:$remote_run/$worker.json" "$run_dir/$worker.json" 2>/dev/null || true
     rsync -az "$host:$remote_run/$worker.log" "$run_dir/$worker.log" 2>/dev/null || true
     rsync -az "$host:$remote_run/$worker.stdout" "$run_dir/$worker.stdout" 2>/dev/null || true
