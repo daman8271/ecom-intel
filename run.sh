@@ -81,8 +81,10 @@ if [ "$P" = "blinkit" ] || [ "$P" = "zepto" ] || [ "$P" = "flipkart-minutes" ] |
   elif [ "${COVERAGE_FULL:-0}" = "1" ] && [ -f "$PDIR/pincodes.full25.json" ]; then
     export PINCODES_FILE="$PDIR/pincodes.full25.json"
   elif [ "${COVERAGE_DAILY:-0}" = "1" ] && [ -f "$PDIR/pincodes.daily.json" ]; then
-    # DAILY mode: only the pincodes where Jivo is actually on sale (price-tracking set).
-    # blinkit 486 / zepto 693 / flipkart-minutes 340 / amazon-fresh 881 / amazon-now 132.
+    # DAILY mode: full 24-city India Post universe + legacy outside-city pins (coverage100,
+    # goal #80, 2026-07-12): blinkit 1791 / zepto 1668 / flipkart-minutes 1620 /
+    # amazon-fresh 170 CORE + 1402 tail / amazon-now 376 CORE + 1192 tail (tails run
+    # post-batch via tools/cron/amazon_tail_sweep.sh, NOT in this chain).
     # Amazon stays IN the noon chain; the cron starts earlier so its ~5h Fresh scrape
     # still lands by noon (see crontab LEAD_MAX + early fire).
     export PINCODES_FILE="$PDIR/pincodes.daily.json"

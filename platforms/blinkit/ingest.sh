@@ -33,7 +33,7 @@ BLINKIT_BASELINE_RESULT="${BLINKIT_BASELINE_RESULT:-$PDIR/result.last-good.json}
 BLINKIT_MIN_PINCODES="${BLINKIT_MIN_PINCODES:-}"
 BLINKIT_MIN_WITH_JIVO="${BLINKIT_MIN_WITH_JIVO:-431}"
 BLINKIT_MIN_RESOLVED="${BLINKIT_MIN_RESOLVED:-857}"
-BLINKIT_MAX_UNRESOLVED="${BLINKIT_MAX_UNRESOLVED:-45}"
+BLINKIT_MAX_UNRESOLVED="${BLINKIT_MAX_UNRESOLVED:-1000}"    # 2026-07-12 coverage100 (goal #80): ~889 added full-universe probe pins are expected-unresolved where Blinkit has no store (was 45 at the 902-pin list)
 BLINKIT_MIN_ROWS="${BLINKIT_MIN_ROWS:-1775}"
 BLINKIT_MIN_SKUS="${BLINKIT_MIN_SKUS:-8}"
 BLINKIT_MIN_STORES="${BLINKIT_MIN_STORES:-270}"            # static fallback when the ledger is thin (<3 accepted runs)
@@ -42,7 +42,7 @@ BLINKIT_MIN_STORES_ABS="${BLINKIT_MIN_STORES_ABS:-250}"     # absolute floor und
 BLINKIT_MIN_PERPIN_STORES="${BLINKIT_MIN_PERPIN_STORES:-455}"   # 90% of the 502-507 resolved-universe baseline
 BLINKIT_MIN_ETA_PCT="${BLINKIT_MIN_ETA_PCT:-90}"            # rows with numeric eta_min (healthy runs: ~98%)
 BLINKIT_MAX_FLIP_PCT="${BLINKIT_MAX_FLIP_PCT:-10}"          # same-pin store flips vs last-good (baseline <=2%)
-BLINKIT_MAX_WALL_S="${BLINKIT_MAX_WALL_S:-4000}"            # accepted sharded run was 3383s; the degraded 2026-07-05 run took 5218s
+BLINKIT_MAX_WALL_S="${BLINKIT_MAX_WALL_S:-9500}"            # 2026-07-12 coverage100: 1,791 pins × ~3.75s ≈ 6,716s normal + slow-day headroom (was 4000 at 902 pins; accepted run then 3383s, degraded 2026-07-05 run 5218s)
 BLINKIT_REQUIRE_AUTH_DROP="${BLINKIT_REQUIRE_AUTH_DROP:-1}"  # fail-closed after 2026-07-06 false-OOS incident
 BLINKIT_STORE_LEDGER="${BLINKIT_STORE_LEDGER:-$ROOT/data/blinkit/store_counts.csv}"
 BLINKIT_MAX_BLOCKED="${BLINKIT_MAX_BLOCKED:-0}"
