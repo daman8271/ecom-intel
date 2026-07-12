@@ -127,6 +127,9 @@ async function launchBrowser() {
   const proxyServer = process.env.BLINKIT_PROXY || process.env.SCRAPING_PROXY || '';
   const opts = { headless: true };
   if (proxyServer) opts.proxy = { server: proxyServer };
+  if (process.env.BLINKIT_CHROMIUM_EXECUTABLE) {
+    opts.executablePath = process.env.BLINKIT_CHROMIUM_EXECUTABLE;
+  }
   return chromium.launch(opts);
 }
 
