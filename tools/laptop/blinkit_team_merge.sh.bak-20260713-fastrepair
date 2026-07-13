@@ -64,10 +64,5 @@ else
   clear_active blinkit "$RUN_ID"
   LOG "ingest did not produce the report (rc=$rc) — merged drop held/refused by normal gates; pointer cleared so guards take over"
   team_tg "⚠️ Blinkit team run $RUN_ID: merged result was held/refused by ingest gates (rc=$rc). Guards own recovery now."
-  # 2026-07-13 miss: refusal at 10:21 sat unnoticed until the agent-hook repair
-  # pass at 10:50. Kick the targeted repair NOW; its own flock+stamp throttle
-  # keeps this safe against the cron-driven passes.
-  LOG "triggering targeted repair immediately (held drop → bad-pin rescrape)"
-  nohup tools/cron/blinkit_repair_held_mac_drop.sh >> logs/blinkit_team.log 2>&1 </dev/null &
 fi
 exit 0

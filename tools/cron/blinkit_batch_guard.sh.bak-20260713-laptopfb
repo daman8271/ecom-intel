@@ -92,19 +92,16 @@ attempt_held_drop_repair(){
   return 1
 }
 
-# Mac Pro known-offline sentinel: skip the doomed ssh re-run and fall back —
-# laptop-first (residential worker #4, goal #81 step 7), then the strict
-# VPS+KVM1 path if the laptop cannot engage. If the marker is stale and the Mac
-# is reachable again, remove it and fall through to the normal Mac path.
+# Mac Pro known-offline sentinel: skip the doomed ssh re-run and go straight to
+# the strict VPS+KVM1 fallback. If the marker is stale and the Mac is reachable
+# again, remove it and fall through to the normal Mac path.
 if [ -f "$DIR/logs/.mac-offline" ]; then
   if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "true" 2>/dev/null; then
     LOG "Mac offline marker is stale; Mac reachable again -> removing marker"
     rm -f "$DIR/logs/.mac-offline"
   else
-    LOG "Mac flagged offline (logs/.mac-offline) -> laptop-first fallback (worker #4 residential), then VPS+KVM1"
-    if "$DIR/tools/laptop/blinkit_macdown_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
-      LOG "laptop+VPS mac-down fallback engaged (team watch owns merge/rescue)"
-    elif "$DIR/tools/cron/blinkit_vps_kvm_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
+    LOG "Mac flagged offline (logs/.mac-offline) -> launching VPS+KVM1 fallback"
+    if "$DIR/tools/cron/blinkit_vps_kvm_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
       LOG "VPS+KVM1 fallback completed"
     else
       LOG "VPS+KVM1 fallback FAILED"
@@ -134,10 +131,8 @@ if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "nohup $WRAPPER >/tmp/blinki
   fi
 else
   LOG "trigger FAILED (ssh unreachable?)"
-  tg "[WARN] Blinkit guard: no drop for ${TODAY} and could NOT reach the Mac Pro - trying laptop-first fallback, then VPS+KVM1."
-  if "$DIR/tools/laptop/blinkit_macdown_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
-    LOG "laptop+VPS mac-down fallback engaged (team watch owns merge/rescue)"
-  elif "$DIR/tools/cron/blinkit_vps_kvm_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
+  tg "[WARN] Blinkit guard: no drop for ${TODAY} and could NOT reach the Mac Pro - launching VPS+KVM1 authenticated fallback."
+  if "$DIR/tools/cron/blinkit_vps_kvm_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
     LOG "VPS+KVM1 fallback completed"
   else
     LOG "VPS+KVM1 fallback FAILED"

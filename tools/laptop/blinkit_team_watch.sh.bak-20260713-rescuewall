@@ -79,7 +79,7 @@ rescue_local() {
       BLINKIT_REQUIRE_AUTH=1 BLINKIT_OOS_PROBE=1 BLINKIT_PDP_OOS_PROBE=1 \
       BLINKIT_PDP_PRICE_PROBE=1 CONCURRENCY='${BLINKIT_TEAM_RESCUE_CONCURRENCY:-2}' \
       SHARD_ROLE='vps-rescue' \
-      timeout --foreground -k 60 ${BLINKIT_TEAM_RESCUE_WALL_S:-18000}s \
+      timeout --foreground -k 60 9000s \
       tools/shards/run_platform_shard.sh blinkit platforms/blinkit/pincodes.daily.json 2 '$idx' '$RUN_ID' \
       >> logs/blinkit_team.log 2>&1; \
     tools/laptop/blinkit_team_merge.sh '$RUN_ID' >> logs/blinkit_team.log 2>&1" \
