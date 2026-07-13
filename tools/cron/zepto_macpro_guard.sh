@@ -17,6 +17,8 @@ TODAY_COMPACT="$(date +%Y%m%d)"
 NOW="$(date +%s)"
 BATCH_TS="$(date -d "$TODAY 10:00" +%s)"
 REPORT="output/Jivo-Zepto-Live-Report-${TODAY}.xlsx"
+BLINKIT_REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
+BLINKIT_TEAM_PTR="shards/runs/ACTIVE-blinkit-team"
 WRAPPER="/Users/danny./VPS-Migration/scripts/run_zepto_mac_to_vps.sh"
 MAC_STALE_RUNNING_S="${ZEPTO_MAC_STALE_RUNNING_S:-18000}"
 LOG(){ echo "[$(date '+%F %T')] zepto_macpro_guard($PASS): $*"; }
@@ -44,6 +46,17 @@ mac_reachable(){ ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "true" >/dev/n
 mac_running(){
   ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
     "pgrep -f 'run_zepto_mac_to_vps.sh|platforms/zepto/scrape.js' >/dev/null" >/dev/null 2>&1
+}
+
+blinkit_priority_active(){
+  local team_id
+  [ -f "$BLINKIT_REPORT" ] && return 1
+  team_id="$(head -1 "$BLINKIT_TEAM_PTR" 2>/dev/null || true)"
+  if [ -n "$team_id" ] && [ "${team_id#"$TODAY_COMPACT"-}" != "$team_id" ]; then
+    return 0
+  fi
+  ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
+    "pgrep -f 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' >/dev/null" >/dev/null 2>&1
 }
 
 mac_stale_previous_run(){
@@ -90,6 +103,10 @@ local_vps_rescue(){
     tg "⏳ Zepto guard: VPS chain still busy, so Zepto rescue was not started concurrently. KVM1 will not be used."
     return 0
   fi
+  if [ -f "$REPORT" ]; then
+    LOG "Zepto report landed while waiting for the sweep-chain lock; rescue no longer needed"
+    return 0
+  fi
   sid="$(pending_sweep_id || true)"
   LOG "VPS rescue start sid=${sid:-none}"
   tg "🛠 Zepto guard: Mac Pro unavailable/missed; running Zepto on the VPS as fallback. KVM1 is disabled for Zepto."
@@ -109,6 +126,12 @@ fi
 
 case "$PASS" in
   launch)
+    if blinkit_priority_active; then
+      LOG "Blinkit 11:00 run owns Mac Pro + laptop; using VPS-only Zepto fallback"
+      tg "ℹ️ Zepto guard: Blinkit is using the Mac Pro and Windows laptop for its 11:00 deadline; Zepto is moving to its VPS-only fallback."
+      local_vps_rescue
+      exit 0
+    fi
     if mac_running; then
       if mac_stale_previous_run; then
         LOG "stale previous-day Mac Pro Zepto run still active; using VPS fallback instead of waiting"
@@ -135,6 +158,11 @@ case "$PASS" in
     fi
     ;;
   watchdog|late)
+    if blinkit_priority_active; then
+      LOG "Blinkit 11:00 run still owns Mac Pro + laptop; keeping Zepto off both devices"
+      local_vps_rescue
+      exit 0
+    fi
     # Device-team split: while a team run is active, the team watch owns
     # pull/merge/rescue for this pass (exit 0). Exit 3 = no/abandoned team run
     # -> fall through to the legacy checks below.

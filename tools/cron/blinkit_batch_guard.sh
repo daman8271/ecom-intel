@@ -5,7 +5,7 @@
 # so drops resolved ~258-261 stores and ingest's store-collapse guard (correctly)
 # refused them; accepted runs have all been daytime runs (~300+ stores).
 #
-# Cron runs this at 06:35 (early pass) and 08:45 (pass arg "late"). If today's
+# Cron runs this at 07:20 (early pass) and 08:45 (pass arg "late"). If today's
 # workbook is not in output/ and the Mac wrapper isn't already running, trigger
 # a fresh Mac scrape over ssh. If the Mac is unreachable, launch the strict
 # VPS+KVM1 authenticated shard fallback. Never loosens the store floor — a
@@ -14,6 +14,7 @@
 set -u
 DIR=/opt/ecom-intel
 cd "$DIR" || exit 0
+. tools/laptop/lib.sh
 TODAY="$(date +%F)"
 REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
 WRAPPER="/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh"
@@ -60,6 +61,7 @@ if [ -f "$TEAM_PTR" ]; then
     if [ "$PASS" = "late" ]; then
       if mac_blinkit_running \
          || pgrep -f "run_platform_shard.sh blinkit|blinkit_team_merge.sh|platforms/blinkit/ingest.sh" >/dev/null 2>&1 \
+         || laptop_file_fresh "$WIN_RUNS_FS/$TEAM_ID/run.progress.json" 900 \
          || [ -s "shards/runs/$TEAM_ID/blinkit/shard-0-of-2/result.json" ] \
          || [ -s "shards/runs/$TEAM_ID/blinkit/shard-1-of-2/result.json" ]; then
         LOG "team run $TEAM_ID still in flight at late pass — standing by (team watch owns rescue)"
@@ -131,7 +133,7 @@ if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "nohup $WRAPPER >/tmp/blinki
   if [ "$PASS" = "late" ]; then
     tg "🛠 Blinkit guard 08:45: no drop for ${TODAY} — triggered a fresh Mac scrape (LATE pass; targeting the ${DELIVERY_DEADLINE} Ecom-group deadline)"
   else
-    tg "🛠 Blinkit guard 06:35: no accepted drop for ${TODAY} — triggered a fresh Mac scrape; targeting delivery before ${DELIVERY_DEADLINE} IST"
+    tg "🛠 Blinkit guard 07:20: no accepted drop for ${TODAY} — triggered a fresh Mac scrape; targeting delivery before ${DELIVERY_DEADLINE} IST"
   fi
 else
   LOG "trigger FAILED (ssh unreachable?)"

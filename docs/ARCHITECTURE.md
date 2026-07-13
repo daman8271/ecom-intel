@@ -9,7 +9,7 @@ Design deep-dive. For operating instructions see the top-level
 > all execute inside `run.sh` for VPS-hosted platforms, and `run_all.sh` drives a
 > **SERIAL** sweep (one platform at a time; ~2h chain after 's 2026-06-06 removal).
 > Off-box/team collectors feed vetted outputs where required:
-> Blinkit normally runs on the Mac Pro residential session at **06:30 IST** with authenticated
+> Blinkit normally starts on the Windows residential worker at **07:00 IST** and the Mac Pro residential session at **07:15 IST** with authenticated
 > Blinkit state, while BigBasket pincode runs at **03:00 IST** through the
 > `team_run_pincode.sh` VPS + Mac Pro + KVM1 runner and writes private/direct-only
 > output. The sweep has a
@@ -209,7 +209,7 @@ Serviceability* sheet on top of the standard layout.
 ## 5. Pipeline & orchestration
 
 ```
-cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; + 06:30 Blinkit Mac collector; 18:00 guardian deep-dive)
+cron (IST: fire early → slot 10:00 AM; + 03:00 BigBasket pincode team runner; + 07:00/07:15 Blinkit Windows/Mac team collectors; 18:00 guardian deep-dive)
   ├─ BigBasket team runner at 03:00
   │    └─ platforms/bigbasket/team_run_pincode.sh run
   │       ├─ shards pincodes_jivo.json across VPS + Mac Pro + KVM1 (default 5:4:1)

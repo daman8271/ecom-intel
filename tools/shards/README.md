@@ -71,7 +71,7 @@ LaunchAgent:
 com.danny.blinkit-mac-to-vps
 ```
 
-Schedule: `06:30` IST. The wrapper uses the persistent auth state at
+Schedule: `07:15` IST, after the Windows team shard starts at `07:00`. The wrapper uses the persistent auth state at
 `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, fails before scraping if
 that file is missing/invalid, uploads the full result to the VPS, and invokes Blinkit
 ingest with `BLINKIT_REQUIRE_AUTH_DROP=1`. It exports `BLINKIT_REQUIRE_AUTH=1`,

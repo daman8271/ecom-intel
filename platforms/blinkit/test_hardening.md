@@ -18,7 +18,7 @@ The current promoted repaired artifact is grandfathered with
 `BLINKIT_ALLOW_LEGACY_REPAIRED_OOS=1`; new raw drops still fail closed by default.
 
 2026-07-07 live-run correction: the Mac Pro collector copy was synced to the VPS
-scraper hash before the 06:30 run, and the Mac wrapper now exports
+scraper hash before the then-current 06:30 run, and the Mac wrapper now exports
 `BLINKIT_PDP_PRICE_PROBE=1`. The quality monitor rejects any accepted Blinkit result
 missing `summary.pdp_price_probe_enabled=1`. A temporary live watcher can be started
 with `tools/cron/blinkit_live_watch.sh`; it writes

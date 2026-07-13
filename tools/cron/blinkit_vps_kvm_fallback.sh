@@ -46,7 +46,7 @@ have_today_report() {
 store_open_window() {
   local hhmm
   hhmm="$(TZ=Asia/Kolkata date +%H%M)"
-  [ "${BLINKIT_FALLBACK_EARLY_OK:-0}" = "1" ] || [ "$((10#$hhmm))" -ge 630 ]
+  [ "${BLINKIT_FALLBACK_EARLY_OK:-0}" = "1" ] || [ "$((10#$hhmm))" -ge 700 ]
 }
 
 prepare_kvm1() {
@@ -519,7 +519,7 @@ if ! clocks_healthy; then
   exit 1
 fi
 if ! store_open_window; then
-  log "before 06:30 IST store-open window; refusing full fallback unless BLINKIT_FALLBACK_EARLY_OK=1"
+  log "before 07:00 IST store-open window; refusing full fallback unless BLINKIT_FALLBACK_EARLY_OK=1"
   exit 0
 fi
 if ! kvm1_blinkit_proxy_healthy; then

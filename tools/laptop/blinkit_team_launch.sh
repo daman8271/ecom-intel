@@ -3,7 +3,7 @@
 # (worker #4) takes HALF the daily pincode universe, the Mac Pro the other half.
 # Owner ruling 2026-07-12: laptop is a first-class daily worker, not a fallback.
 #
-# Cron 06:15 IST (before the Mac's 06:30 launchd run). Flow:
+# Cron 07:00 IST (before the Mac's 07:15 launchd run). Flow:
 #   1. Preconditions — no report yet, no active team run, Mac NOT flagged
 #      offline, BOTH Mac and laptop reachable. Any miss -> exit silently and
 #      today runs exactly like before (full universe on the Mac / existing
@@ -13,7 +13,7 @@
 #   3. Sync reviewed scrape.js + auth state + shard-1 config to the laptop and
 #      run a 1-pin live auth/store preflight there (same gates as the Mac
 #      wrapper). Preflight failure -> abort split, Mac runs the full list.
-#   4. Publish shards/runs/ACTIVE-blinkit-team; the 06:30 Mac wrapper sees it
+#   4. Publish shards/runs/ACTIVE-blinkit-team; the 07:15 Mac wrapper sees it
 #      and scrapes shard-0 instead of the full list.
 #   5. WMI-launch the laptop shard detached. Its .cmd dead-drops result.json to
 #      shards/runs/<RUN_ID>/blinkit/shard-1-of-2/ and triggers
@@ -51,7 +51,7 @@ if ! timeout 30 ssh -o BatchMode=yes -o ConnectTimeout=10 macpro "exit 0" >/dev/
 fi
 if ! laptop_up; then
   LOG "laptop unreachable — Mac runs the full universe today"
-  team_tg "ℹ️ Blinkit 06:15: laptop unreachable — no split today, Mac takes the full ${TODAY} universe."
+  team_tg "ℹ️ Blinkit 07:00: laptop unreachable — no split today, Mac takes the full ${TODAY} universe."
   exit 0
 fi
 [ -s "$AUTH_LAPTOP" ] || { LOG "missing $AUTH_LAPTOP — cannot run laptop shard"; exit 0; }
@@ -82,7 +82,7 @@ laptop_push "$AUTH_LAPTOP" "$WIN_BASE_FS/secrets/blinkit-auth-state.json" || syn
 laptop_push "$SHARD1_CFG" "$WIN_RUN_FS/pincodes.json" || sync_fail=1
 if [ "$sync_fail" = 1 ]; then
   LOG "laptop sync failed — Mac runs the full universe today"
-  team_tg "⚠️ Blinkit 06:15: laptop sync failed — no split today, Mac takes the full list."
+  team_tg "⚠️ Blinkit 07:00: laptop sync failed — no split today, Mac takes the full list."
   rm -rf "shards/runs/$RUN_ID"
   exit 1
 fi
@@ -134,7 +134,7 @@ if not ok:
 PY
   then
     LOG "laptop preflight FAILED — no split today, Mac takes the full list (see $RUN/preflight.verdict)"
-    team_tg "⚠️ Blinkit 06:15: laptop 1-pin auth preflight FAILED — no split today; Mac runs the full ${TODAY} universe. Check the laptop Blinkit session."
+    team_tg "⚠️ Blinkit 07:00: laptop 1-pin auth preflight FAILED — no split today; Mac runs the full ${TODAY} universe. Check the laptop Blinkit session."
     rm -f "$RUN/preflight-pincodes.json"
     exit 1
   fi
@@ -173,10 +173,10 @@ printf '%s\n' "$RUN_ID" > "$(team_ptr_path blinkit)"
 if ! laptop_spawn_cmd "$WIN_RUN_BS\\laptop.run.cmd"; then
   LOG "laptop spawn FAILED — clearing pointer; Mac runs the full list"
   clear_active blinkit "$RUN_ID"
-  team_tg "⚠️ Blinkit 06:15: laptop shard spawn failed — no split today; Mac runs the full list."
+  team_tg "⚠️ Blinkit 07:00: laptop shard spawn failed — no split today; Mac runs the full list."
   exit 1
 fi
 PIN_COUNT0="$(python3 -c 'import json,sys;print(len(json.load(open(sys.argv[1]))))' "$RUN/shard-0-of-2/pincodes.0-of-2.json")"
-LOG "team run $RUN_ID LIVE — laptop scraping shard-1 ($PIN_COUNT1 pins); Mac will take shard-0 ($PIN_COUNT0 pins) at 06:30"
-team_tg "🚀 Blinkit device-team ${TODAY}: laptop started shard-1 (${PIN_COUNT1} pins), Mac takes shard-0 (${PIN_COUNT0} pins) at 06:30. Merge → normal full-universe gates."
+LOG "team run $RUN_ID LIVE — laptop scraping shard-1 ($PIN_COUNT1 pins); Mac will take shard-0 ($PIN_COUNT0 pins) at 07:15"
+team_tg "🚀 Blinkit device-team ${TODAY}: laptop started shard-1 (${PIN_COUNT1} pins), Mac takes shard-0 (${PIN_COUNT0} pins) at 07:15. Merge → normal full-universe gates."
 exit 0

@@ -186,7 +186,7 @@ case "$state" in
     exit 0
     ;;
   waiting|*)
-    if after_hhmm "06:35"; then
+    if after_hhmm "07:20"; then
       log "waiting after start window; triggering guard idempotently"
       "$ROOT/tools/cron/blinkit_batch_guard.sh" "agent-$PHASE" >>"$LOG" 2>&1 || true
     fi

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # zepto_team_launch.sh — Zepto device-team split: Windows laptop (worker #4)
 # scrapes HALF the daily pincode universe, the Mac Pro the other half.
-# Called by zepto_macpro_guard.sh (launch pass, 07:20 IST).
+# Called by zepto_macpro_guard.sh (launch pass, 07:25 IST).
 #
 # Exit code contract for the guard:
 #   0 = team split engaged (laptop shard-1 spawned; Mac shard-0 triggered or

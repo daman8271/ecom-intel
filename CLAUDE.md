@@ -190,7 +190,7 @@ SUSPECT is recorded (reviews/ + vault note) but NOT re-run. Escalates to Telegra
 Blinkit production is Mac/drop-fed and auth-required, with a strict VPS+KVM1
 authenticated shard fallback only when the Mac is unreachable. The Mac wrapper
 `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` runs under LaunchAgent
-`com.danny.blinkit-mac-to-vps` at 06:30 IST, loads
+`com.danny.blinkit-mac-to-vps` at 07:15 IST, after the Windows team shard starts at 07:00 IST, loads
 `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, and exports
 `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
 `BLINKIT_PDP_OOS_PROBE=1`, plus `BLINKIT_PDP_PRICE_PROBE=1`. VPS ingest defaults to `BLINKIT_REQUIRE_AUTH_DROP=1`; drops

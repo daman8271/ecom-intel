@@ -110,7 +110,7 @@ set, not part of the Wave 1 config generator.
 - **The daily cron now runs `COVERAGE_DAILY=1`** (flipped 2026-06-30) — QC scrapes the
   Jivo-priced subsets, not anchors. Amazon stays on anchors. The **weekly full census**
   refreshes which pincodes qualify for the daily set.
-- **Blinkit daily run is off-box on the Mac Pro at 06:30 IST** via
+- **Blinkit daily run starts on the Windows laptop at 07:00 IST and the Mac Pro at 07:15 IST** via
   `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`, installed as
   LaunchAgent `com.danny.blinkit-mac-to-vps`. It requires saved login/auth state
   at `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, exports
@@ -361,7 +361,7 @@ backstop (the historical two-slot analysis lives in `crontab.proposed.txt`'s com
 > the 3 Amazon storefronts thrash their one shared account/server-side location. Serial
 > gives each platform full resources + clean store re-resolution, and the Amazon trio runs
 > consecutively so it can never overlap. Blinkit is no longer a VPS serial-sweep member:
-> the Mac Pro LaunchAgent runs the authenticated collector at 06:30 IST and VPS ingest
+> the Windows shard starts at 07:00 IST, the Mac Pro LaunchAgent runs its authenticated shard at 07:15 IST, and VPS ingest
 > accepts only auth-marked drops. The single daily batch lands at 10:00, the serial chain
 > finishing before its 10:00 barrier. `run_all.sh` holds the authoritative VPS-hosted
 > platform list. Each `run.sh`'s git-push is `flock`-serialized (`.gitpush.lock`). Preview the cron
@@ -417,7 +417,7 @@ chmod 600 secrets.env
 #     Mac auth state: /Users/danny./VPS-Migration/secrets/blinkit-auth-state.json
 #     VPS emergency/shard auth state: /opt/ecom-intel/secrets/blinkit-auth-state.json
 #     Mac wrapper: /Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh
-#     LaunchAgent: com.danny.blinkit-mac-to-vps at 06:30 IST
+#     LaunchAgent: com.danny.blinkit-mac-to-vps at 07:15 IST (Windows team shard starts 07:00)
 #     Mac-down fallback: tools/cron/blinkit_vps_kvm_fallback.sh via blinkit_batch_guard.sh
 #     Required flags: BLINKIT_REQUIRE_AUTH=1, BLINKIT_OOS_PROBE=1,
 #     BLINKIT_PDP_OOS_PROBE=1, BLINKIT_PDP_PRICE_PROBE=1

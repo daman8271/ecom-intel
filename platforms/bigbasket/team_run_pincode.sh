@@ -39,7 +39,7 @@ KVM_WEIGHT="${BB_TEAM_KVM_WEIGHT:-1}"
 # Laptop weight 3 = balanced with VPS/Mac (≈494 pins each, KVM1 ≈165) — the
 # wall-clock-optimal split, since the slowest shard sets the night's length.
 # BB_TEAM_LAPTOP_WEIGHT=7 would give the laptop a literal half (~822 pins) but
-# makes it the long pole and risks the 6h cap + the laptop's 06:15 Blinkit
+# makes it the long pole and risks the 6h cap + the laptop's 07:00 Blinkit
 # shard. Override via env on the cron line if literal-half is ever wanted.
 LAPTOP_WEIGHT="${BB_TEAM_LAPTOP_WEIGHT:-3}"
 WAIT_TIMEOUT_S="${BB_TEAM_WAIT_TIMEOUT_S:-21600}"

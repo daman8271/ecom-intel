@@ -17,7 +17,7 @@
 # comes at the timing, not starts at it"). If the chain overruns, the batch goes
 # out as soon as it's done, marked "(late by Xm)".
 
-# Blinkit is produced off-box on the Mac Pro/residential IP and delivered through
+# Blinkit is produced off-box on the Windows + Mac Pro residential workers and delivered through
 # platforms/blinkit/ingest.sh. BigBasket pincode is produced by the logged-in
 # team runner across VPS + Mac Pro + KVM1; it writes only to output/private-no-group
 # and direct-sends from a gitignored direct-recipient secret. The old BigBasket
@@ -37,7 +37,9 @@
 5 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_supervisor.sh >> logs/blinkit_supervisor.cron.log 2>&1   # blinkit active supervisor starter
 */10 5-11 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_supervisor.sh >> logs/blinkit_supervisor.cron.log 2>&1   # blinkit active supervisor watchdog through 11:00 deadline
 25 6 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter
-35 6 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard early
+0 7 * * * cd /opt/ecom-intel && ./tools/laptop/blinkit_team_launch.sh >> logs/blinkit_team.log 2>&1   # blinkit device-team split: Windows takes half
+*/10 6-11 * * * cd /opt/ecom-intel && ./tools/laptop/blinkit_team_watch.sh >> logs/blinkit_team.log 2>&1   # blinkit device-team watch: pull/merge/rescue
+20 7 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard early
 45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard late
 */15 5-11 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor through 11:00 deadline
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry

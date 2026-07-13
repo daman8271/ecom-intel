@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Explicit 09:00 IST Blinkit delivery checkpoint.
+# Explicit Blinkit delivery checkpoint and post-run retry.
 # The send helpers are marker-safe and quality-gated, so this can run alongside
 # the normal 15-minute retries without duplicate WhatsApp messages.
 set -u
