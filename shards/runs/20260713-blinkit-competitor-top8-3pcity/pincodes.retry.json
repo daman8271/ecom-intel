@@ -1,0 +1,28 @@
+[
+  {
+    "city": "Nagpur",
+    "pincode": "440002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "440002"
+    ],
+    "lat": 21.15808333,
+    "lon": 79.11886111,
+    "locality": "Nagpur City H.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422002"
+    ],
+    "lat": 20.00505,
+    "lon": 73.83675,
+    "locality": "Jeevan Prakash S.O",
+    "competitor_sample_index": 3
+  }
+]

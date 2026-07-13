@@ -1,0 +1,122 @@
+[
+  {
+    "city": "Nagpur",
+    "pincode": "440005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "440005"
+    ],
+    "lat": 21.85258333,
+    "lon": 79.05369444,
+    "locality": "Nagpur Airport S.O",
+    "competitor_sample_index": 3,
+    "rejection_reason": "empty/untrusted competitor result after cross-device retry",
+    "replacement": "440002"
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423212",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423212"
+    ],
+    "lat": 20.554431,
+    "lon": 74.512024,
+    "locality": "Chandanpuri B.O",
+    "competitor_sample_index": 3,
+    "rejection_reason": "empty/untrusted competitor result after cross-device retry",
+    "replacement": "422002"
+  },
+  {
+    "city": "Chandigarh",
+    "pincode": "160005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "160005"
+    ],
+    "lat": 30.9666111,
+    "lon": 76.3715277,
+    "locality": "IBC CHANDGIARH SO",
+    "competitor_sample_index": 3,
+    "rejection_reason": "resolved but empty top-eight competitor result",
+    "replacement": "160002"
+  },
+  {
+    "city": "Coimbatore",
+    "pincode": "642114",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "642114"
+    ],
+    "lat": 10.5419444,
+    "lon": 76.9831389,
+    "locality": "Malayandipattinam S.O",
+    "competitor_sample_index": 3,
+    "rejection_reason": "resolved but empty top-eight competitor result",
+    "replacement": "641002"
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422101"
+    ],
+    "lat": 19.96415,
+    "lon": 73.87045,
+    "locality": "Nashik Road H.O",
+    "competitor_sample_index": 2,
+    "rejection_reason": "resolved but empty top-eight competitor result",
+    "replacement": "422005"
+  },
+  {
+    "city": "Mysuru",
+    "pincode": "571187",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "571187"
+    ],
+    "lat": 12.56208333,
+    "lon": 76.02316667,
+    "locality": "Doddakamaravalli B.O",
+    "competitor_sample_index": 3,
+    "rejection_reason": "resolved but empty top-eight competitor result",
+    "replacement": "570002"
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521139",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521139"
+    ],
+    "lat": 16.456069566666667,
+    "lon": 80.71881939999999,
+    "locality": "Chodavaram B.O",
+    "competitor_sample_index": 3,
+    "rejection_reason": "resolved but empty top-eight competitor result",
+    "replacement": "520002"
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695017",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695017"
+    ],
+    "lat": 8.5524167,
+    "lon": 76.9153611,
+    "locality": "Sreekaryam SO",
+    "competitor_sample_index": 3,
+    "rejection_reason": "resolved but empty top-eight competitor result",
+    "replacement": "695029"
+  }
+]

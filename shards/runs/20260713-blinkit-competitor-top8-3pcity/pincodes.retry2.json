@@ -1,0 +1,80 @@
+[
+  {
+    "city": "Chandigarh",
+    "pincode": "160002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "160002"
+    ],
+    "lat": 30.6923611,
+    "lon": 76.7909167,
+    "locality": "Hallomajra BO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Coimbatore",
+    "pincode": "641002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "641002"
+    ],
+    "lat": 11.009,
+    "lon": 76.955,
+    "locality": "Rathinasabapathy Puram HO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422005"
+    ],
+    "lat": 19.988439,
+    "lon": 73.720725,
+    "locality": "H P T College S.O",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Mysuru",
+    "pincode": "570002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "570002"
+    ],
+    "lat": 12.32222222,
+    "lon": 76.62902778,
+    "locality": "Gokulam S.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520002"
+    ],
+    "lat": 16.511583325,
+    "lon": 80.62679165,
+    "locality": "Buckinghampet H.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695029",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695029"
+    ],
+    "lat": 8.5,
+    "lon": 76.92,
+    "locality": "Anayara SO",
+    "competitor_sample_index": 3
+  }
+]

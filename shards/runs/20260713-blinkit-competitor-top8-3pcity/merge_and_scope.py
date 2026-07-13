@@ -71,6 +71,27 @@ def merge_capture():
                 f"capture={len(capture.get('allRows') or [])}"
             )
 
+    for retry_name in ("retry", "retry2"):
+        retry_progress_path = os.path.join(RUN, f"{retry_name}.progress.json")
+        retry_capture_path = os.path.join(RUN, f"{retry_name}.capture.json")
+        if not (os.path.exists(retry_progress_path) and os.path.exists(retry_capture_path)):
+            continue
+        retry_progress = read_json(retry_progress_path)
+        retry_capture = read_json(retry_capture_path)
+        retry_pins = set(retry_progress)
+        retry_rows = retry_capture.get("allRows") or []
+        if sum(len(item.get("rows") or []) for item in retry_progress.values()) != len(retry_rows):
+            raise SystemExit(f"Windows {retry_name} row gate failed")
+        rows = [row for row in rows if str(row.get("pincode")) not in retry_pins]
+        rows.extend(retry_rows)
+        summaries.append(retry_capture.get("summary") or {})
+        for pin, item in retry_progress.items():
+            progress[pin] = item
+            pin_device[pin] = "Windows retry"
+
+    progress = {pin: item for pin, item in progress.items() if pin in expected_pins}
+    rows = [row for row in rows if str(row.get("pincode")) in expected_pins]
+
     if set(progress) != expected_pins:
         missing = sorted(expected_pins - set(progress))
         extra = sorted(set(progress) - expected_pins)

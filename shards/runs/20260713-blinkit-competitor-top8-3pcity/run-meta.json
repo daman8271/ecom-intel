@@ -87,7 +87,7 @@
     "Chandigarh": [
       "160001",
       "160022",
-      "160005"
+      "160002"
     ],
     "Kochi": [
       "682011",
@@ -102,12 +102,12 @@
     "Coimbatore": [
       "641001",
       "641004",
-      "642114"
+      "641002"
     ],
     "Nagpur": [
       "440001",
       "440010",
-      "440005"
+      "440002"
     ],
     "Visakhapatnam": [
       "530001",
@@ -126,25 +126,59 @@
     ],
     "Nashik": [
       "422001",
-      "422101",
-      "423212"
+      "422005",
+      "422002"
     ],
     "Mysuru": [
       "570001",
       "570012",
-      "571187"
+      "570002"
     ],
     "Vijayawada": [
       "520001",
       "520010",
-      "521139"
+      "520002"
     ],
     "Thiruvananthapuram": [
       "695010",
       "695588",
-      "695017"
+      "695029"
     ]
   },
   "source": "platforms/blinkit/pincodes.daily.json",
-  "selection_method": "existing competitor anchors, then farthest current coordinate"
+  "selection_method": "existing competitor anchors, then farthest current coordinate",
+  "replacements": [
+    {
+      "from": "440005",
+      "to": "440002"
+    },
+    {
+      "from": "423212",
+      "to": "422002"
+    },
+    {
+      "from": "160005",
+      "to": "160002"
+    },
+    {
+      "from": "422101",
+      "to": "422005"
+    },
+    {
+      "from": "521139",
+      "to": "520002"
+    },
+    {
+      "from": "571187",
+      "to": "570002"
+    },
+    {
+      "from": "642114",
+      "to": "641002"
+    },
+    {
+      "from": "695017",
+      "to": "695029"
+    }
+  ]
 }
