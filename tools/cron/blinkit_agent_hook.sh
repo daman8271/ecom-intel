@@ -150,8 +150,10 @@ expected="$(json_get "$snap" expected_pincodes)"
 log "state=$state expected_pincodes=$expected snapshot=$snap"
 
 if [[ "$PHASE" =~ ^(team-start|mac-start)$ ]] && [ "${BLINKIT_AGENT_LLM_LIVE_START:-1}" = "1" ]; then
-  log "Blinkit production start received; waking read-only Codex monitor with the fresh snapshot"
-  invoke_readonly_codex "$snap" "live-monitor"
+  monitor_key="launch-attempt"
+  [ "$state" = "running" ] && monitor_key="live-monitor"
+  log "Blinkit production start received; waking read-only Codex monitor key=$monitor_key with the fresh snapshot"
+  invoke_readonly_codex "$snap" "$monitor_key"
   exit 0
 fi
 
