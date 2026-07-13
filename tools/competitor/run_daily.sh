@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Daily competitor price-watch (quick-commerce): Blinkit + Zepto across the 25-pin set,
-# then build the per-platform + combined Excel reports.
+# Daily competitor price-watch for Zepto and Amazon. Blinkit moved to the dedicated
+# post-Blinkit 25-city x 3-pincode top-8 device run on 2026-07-14.
 #
 # Called EVENT-DRIVEN at the tail of the noon sweep (deadline_sweep.sh, ~12:02 IST), right
 # after run_all finishes -- so competitor prices are captured within ~15 min of the JIVO prices for a same-time,
@@ -17,7 +17,7 @@
 set -uo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
-cd "$ROOT"
+cd "$ROOT" || exit 1
 mkdir -p logs
 
 # Single-flight: never let two competitor runs overlap.
@@ -34,7 +34,7 @@ export PINCODES_FILE="$ROOT/tools/competitor/pincodes_25.json"
 DATE_IST="$(TZ='Asia/Kolkata' date +%F)"
 echo "[comp-daily] START $(TZ='Asia/Kolkata' date '+%F %H:%M') date=$DATE_IST pins=$PINCODES_FILE"
 
-for P in blinkit zepto amazon-now amazon-fresh; do
+for P in zepto amazon-now amazon-fresh; do
   echo "[comp-daily] --- $P ---"
   if bash "$ROOT/tools/competitor/run_competitor.sh" "$P"; then
     echo "[comp-daily] $P ok"
@@ -73,7 +73,7 @@ if [ "${COMP_SKIP_DATABANK:-0}" != "1" ] && [ -x /root/jivo-data-bank/bin/run_da
   fi
 fi
 
-echo "[comp-daily] DONE $(TZ='Asia/Kolkata' date '+%H:%M'). reports: output/Competitor-Price-Watch-{Blinkit,Zepto,AllQcomm}-${DATE_IST}.xlsx"
+echo "[comp-daily] DONE $(TZ='Asia/Kolkata' date '+%H:%M'). Blinkit top-8 is built separately after the authenticated Blinkit delivery."
 
 # --- eager today/ hook (instant-per-source rule): publish the competitors slice
 # into the data-bank today/ the moment its daily report is folded. Self-gates +

@@ -41,6 +41,8 @@ BLINKIT_NOT_LISTED_DATE="$DATE_IST" "$ROOT/tools/whatsapp/send_blinkit_not_liste
 
 if [ -s "$MAIN_SENT" ] && [ -s "$NOT_LISTED_SENT" ]; then
   log "complete; both WhatsApp sent markers exist"
+  BLINKIT_TOP8_DATE="$DATE_IST" \
+    "$ROOT/tools/competitor/start_blinkit_top8_daily.sh" >>"$LOG" 2>&1 || true
   exit 0
 fi
 
