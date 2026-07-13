@@ -206,7 +206,10 @@ def validate_and_merge(
         "scope": {
             "cities": 25,
             "pincodes_per_city": 3,
-            "devices": [str(worker["label"]) for worker in workers],
+            "devices": [
+                str(worker.get("display_name") or worker["label"])
+                for worker in workers
+            ],
             "competitors": TARGET_BRANDS,
             "selection_source": str(run_meta.get("selection_source") or ""),
         },
@@ -262,12 +265,15 @@ def add_scope_sheet(
     sheet.merge_cells("B4:H4")
     sheet["A5"] = "Devices"
     concurrencies = {int(worker.get("concurrency", 2)) for worker in run_meta["workers"]}
-    labels = " + ".join(str(worker["label"]) for worker in run_meta["workers"])
+    labels = " + ".join(
+        str(worker.get("display_name") or worker["label"])
+        for worker in run_meta["workers"]
+    )
     if len(concurrencies) == 1:
         worker_text = f"{labels} ({concurrencies.pop()} workers each)"
     else:
         worker_text = " + ".join(
-            f"{worker['label']} ({worker.get('concurrency', 2)} workers)"
+            f"{worker.get('display_name') or worker['label']} ({worker.get('concurrency', 2)} workers)"
             for worker in run_meta["workers"]
         )
     sheet["B5"] = worker_text
@@ -325,7 +331,7 @@ def add_scope_sheet(
 
     sheet.freeze_panes = "A8"
     sheet.auto_filter.ref = f"A7:H{sheet.max_row}"
-    for column, width in enumerate([20, 12, 32, 24, 12, 15, 10, 70], 1):
+    for column, width in enumerate([20, 12, 32, 12, 12, 15, 10, 70], 1):
         sheet.column_dimensions[get_column_letter(column)].width = width
     workbook.save(workbook_path)
 
@@ -360,9 +366,7 @@ def add_city_pin_sku_sheet(
     green = "008B3A"
     header_fill = PatternFill("solid", fgColor=green)
     header_font = Font(color="FFFFFF", bold=True)
-    red_fill = PatternFill("solid", fgColor="F4CCCC")
-    good_fill = PatternFill("solid", fgColor="D9EAD3")
-    level_fill = PatternFill("solid", fgColor="FFF2CC")
+    stripe_fill = PatternFill("solid", fgColor="F0F6F1")
     thin = Side(style="thin", color="D0D0D0")
     border = Border(left=thin, right=thin, top=thin, bottom=thin)
     columns = ["City", "Pincode", "SKU (JIVO anchor)", "JIVO Rs"]
@@ -384,19 +388,26 @@ def add_city_pin_sku_sheet(
             unmatched_brands
         )
     sheet["A2"] = note
-    sheet["A2"].font = Font(italic=True, color="555555")
+    sheet["A2"].font = Font(italic=True, color="555555", size=10)
     sheet.merge_cells(f"A2:{last_column}2")
     for column, value in enumerate(columns, 1):
         cell = sheet.cell(row=4, column=column, value=value)
         cell.fill = header_fill
         cell.font = header_font
-        cell.alignment = Alignment(horizontal="center")
+        cell.alignment = Alignment(
+            horizontal="center", vertical="center", wrap_text=True
+        )
         cell.border = border
 
     rows_by_pin: dict[tuple[str, str], list[dict[str, Any]]] = {}
     for row in annotated:
         key = (str(row.get("city") or ""), pin(row.get("pincode")))
         rows_by_pin.setdefault(key, []).append(row)
+    striped_cities = {
+        city
+        for index, city in enumerate(sorted({key[0] for key in rows_by_pin}))
+        if index % 2 == 0
+    }
 
     output_row = 5
     for (city, pincode), pin_rows in sorted(
@@ -472,31 +483,43 @@ def add_city_pin_sku_sheet(
             for column, value in enumerate(values, 1):
                 cell = sheet.cell(row=output_row, column=column, value=value)
                 cell.border = border
-                cell.alignment = Alignment(vertical="top")
+                if city in striped_cities:
+                    cell.fill = stripe_fill
                 if column >= 4 and column <= 3 + len(price_brands) + 1:
-                    cell.number_format = '"Rs"#,##0'
+                    cell.number_format = "#,##0"
             if jivo_row and not jivo_row.get("in_stock"):
-                sheet.cell(row=output_row, column=4).fill = red_fill
+                sheet.cell(row=output_row, column=4).font = Font(
+                    bold=True, color="C00000"
+                )
             for offset, brand in enumerate(price_brands, 5):
                 if brand in brand_rows and not brand_rows[brand].get("in_stock"):
-                    sheet.cell(row=output_row, column=offset).fill = red_fill
+                    sheet.cell(row=output_row, column=offset).font = Font(
+                        bold=True, color="C00000"
+                    )
             gap_column = len(columns) - 1
             verdict_column = len(columns)
-            sheet.cell(row=output_row, column=gap_column).number_format = '"Rs"#,##0'
+            sheet.cell(row=output_row, column=gap_column).number_format = "+#,##0;-#,##0;0"
             if verdict == "THREAT - rival cheaper":
-                sheet.cell(row=output_row, column=gap_column).fill = red_fill
-                sheet.cell(row=output_row, column=verdict_column).fill = red_fill
+                sheet.cell(row=output_row, column=verdict_column).font = Font(
+                    bold=True, color="C00000"
+                )
             elif verdict == "JIVO cheaper":
-                sheet.cell(row=output_row, column=gap_column).fill = good_fill
-                sheet.cell(row=output_row, column=verdict_column).fill = good_fill
+                sheet.cell(row=output_row, column=verdict_column).font = Font(
+                    color=green
+                )
             elif verdict == "Level":
-                sheet.cell(row=output_row, column=gap_column).fill = level_fill
-                sheet.cell(row=output_row, column=verdict_column).fill = level_fill
+                sheet.cell(row=output_row, column=verdict_column).font = Font(
+                    color="B45309"
+                )
+            elif verdict == "Rival only (JIVO missing)":
+                sheet.cell(row=output_row, column=verdict_column).font = Font(
+                    bold=True, color="B45309"
+                )
             output_row += 1
 
     sheet.freeze_panes = "A5"
     sheet.auto_filter.ref = f"A4:{last_column}{sheet.max_row}"
-    widths = [20, 12, 44, 12] + [14] * len(price_brands) + [18, 12, 28]
+    widths = [15, 10, 44, 9] + [11] * len(price_brands) + [15, 9, 22]
     for column, width in enumerate(widths, 1):
         sheet.column_dimensions[get_column_letter(column)].width = width
     workbook.save(workbook_path)

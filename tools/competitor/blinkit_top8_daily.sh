@@ -150,7 +150,7 @@ EOF
 }
 
 sync_and_launch() {
-  local run_id="$1" run="$2" mac_run win_run_fs win_run_bs sync_failed=0
+  local run_id="$1" run="$2" mac_run win_run_fs win_run_bs sync_failed=0 launch_failed=0
   mac_run="$MAC_BASE/competitor-runs/$run_id"
   win_run_fs="$WIN_RUNS_FS/$run_id"
   win_run_bs="$WIN_RUNS_BS\\$run_id"
@@ -174,11 +174,20 @@ sync_and_launch() {
   [ "$sync_failed" = "0" ] || return 1
 
   printf '%s\n' "$run_id" > "$POINTER"
-  ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
+  if ! ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
     "nohup bash '$mac_run/run.sh' >'$mac_run/launcher.log' 2>&1 </dev/null &" \
-    >/dev/null 2>&1 || return 1
-  laptop_spawn_cmd "$win_run_bs\\windows.run.cmd" || return 1
+    >/dev/null 2>&1; then
+    printf '98\n' > "$run/mac.run.rc"
+    launch_failed=1
+  fi
+  if ! laptop_spawn_cmd "$win_run_bs\\windows.run.cmd"; then
+    printf '98\n' > "$run/windows.run.rc"
+    launch_failed=1
+  fi
   log "launched $run_id: Windows 38 pins + Mac Pro 37 pins, concurrency=$CONCURRENCY each"
+  if [ "$launch_failed" = "1" ]; then
+    log "one or more initial launches failed; checkpoint retry is armed"
+  fi
   return 0
 }
 
@@ -222,8 +231,8 @@ data = {
     "selection_source": "platforms/blinkit/result.json + tools/competitor/blinkit_top8_pincodes.json",
     "competitors": ["Fortune", "Saffola", "Borges", "Tata", "Del Monte", "Figaro", "Sundrop", "Gulab"],
     "workers": [
-        {"id": "windows", "label": "Windows laptop", "concurrency": int(concurrency), "pincodes_file": "windows.pincodes.json", "progress_file": "windows.progress.json", "capture_file": "windows.capture.json"},
-        {"id": "macpro", "label": "Mac Pro", "concurrency": int(concurrency), "pincodes_file": "mac.pincodes.json", "progress_file": "mac.progress.json", "capture_file": "mac.capture.json"},
+        {"id": "windows", "label": "Windows", "display_name": "Windows laptop", "concurrency": int(concurrency), "pincodes_file": "windows.pincodes.json", "progress_file": "windows.progress.json", "capture_file": "windows.capture.json"},
+        {"id": "macpro", "label": "Mac Pro", "display_name": "Mac Pro", "concurrency": int(concurrency), "pincodes_file": "mac.pincodes.json", "progress_file": "mac.progress.json", "capture_file": "mac.capture.json"},
     ],
 }
 with open(path, "w", encoding="utf-8") as handle:
@@ -266,12 +275,18 @@ retry_failed_worker() {
   log "retrying $worker worker once from its checkpoint (previous rc=$rc)"
   if [ "$worker" = "windows" ]; then
     win_run_bs="$WIN_RUNS_BS\\$run_id"
-    laptop_spawn_cmd "$win_run_bs\\windows.run.cmd"
+    if ! laptop_spawn_cmd "$win_run_bs\\windows.run.cmd"; then
+      printf '99\n' > "$run/windows.run.rc"
+      return 1
+    fi
   else
     mac_run="$MAC_BASE/competitor-runs/$run_id"
-    ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
+    if ! ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
       "nohup bash '$mac_run/run.sh' >'$mac_run/retry-launcher.log' 2>&1 </dev/null &" \
-      >/dev/null 2>&1
+      >/dev/null 2>&1; then
+      printf '99\n' > "$run/mac.run.rc"
+      return 1
+    fi
   fi
 }
 
