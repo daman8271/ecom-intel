@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 # Blinkit production agent hook.
 #
-# Deterministic actions own production behavior. A read-only Codex escalation is
-# invoked only when the run is late, held, or otherwise unresolved.
+# Deterministic actions own production behavior. A bounded read-only Codex
+# monitor wakes at production start, refreshes while active, and diagnoses late
+# or held runs. It cannot edit files or start scrapes.
 set -u
 
 ROOT=/opt/ecom-intel
@@ -31,7 +32,14 @@ tg() { (
 ) || true; }
 
 exec 9>"$LOCK"
-if ! flock -n 9; then
+if [[ "$PHASE" =~ ^(team-start|mac-start|report-ready)$ ]]; then
+  flock -w "${BLINKIT_AGENT_EVENT_LOCK_WAIT_S:-180}" 9
+  lock_rc=$?
+else
+  flock -n 9
+  lock_rc=$?
+fi
+if [ "$lock_rc" -ne 0 ]; then
   log "another hook holds $LOCK; exiting"
   exit 0
 fi
@@ -141,9 +149,9 @@ state="$(json_get "$snap" state)"
 expected="$(json_get "$snap" expected_pincodes)"
 log "state=$state expected_pincodes=$expected snapshot=$snap"
 
-if [ "$PHASE" = "mac-start" ] && [ "${BLINKIT_AGENT_LLM_LIVE_START:-1}" = "1" ]; then
-  log "Mac production start received; waking read-only Codex monitor with the fresh snapshot"
-  invoke_readonly_codex "$snap" "live-start"
+if [[ "$PHASE" =~ ^(team-start|mac-start)$ ]] && [ "${BLINKIT_AGENT_LLM_LIVE_START:-1}" = "1" ]; then
+  log "Blinkit production start received; waking read-only Codex monitor with the fresh snapshot"
+  invoke_readonly_codex "$snap" "live-monitor"
   exit 0
 fi
 
@@ -179,6 +187,8 @@ case "$state" in
     exit 0
     ;;
   running)
+    log "run active; refreshing the throttled read-only Codex monitor"
+    invoke_readonly_codex "$snap" "live-monitor"
     if after_hhmm "$DELIVERY_DEADLINE"; then
       log "run still active after ${DELIVERY_DEADLINE}; keeping delivery sweep live"
       "$ROOT/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "agent-running" >>"$LOG" 2>&1 || true

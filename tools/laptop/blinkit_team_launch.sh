@@ -32,6 +32,16 @@ SOURCE="${BLINKIT_TEAM_SOURCE:-platforms/blinkit/pincodes.daily.json}"
 AUTH_LAPTOP="secrets/blinkit-auth-state-laptop.json"
 CONCURRENCY="${BLINKIT_TEAM_LAPTOP_CONCURRENCY:-3}"   # 2->3 (2026-07-13): keep merge comfortably ahead of the 11:00 deadline
 
+# Start the persistent observer as soon as cron enters this launcher. Emit the
+# intelligent wake after the launcher exits, so its snapshot contains the final
+# outcome: active team pointer/processes, fallback reason, or completed report.
+tools/cron/start_blinkit_agent_watch.sh >> logs/blinkit_agent_watch.cron.log 2>&1 || true
+wake_agent_on_exit(){
+  nohup tools/cron/blinkit_agent_hook.sh team-start \
+    >> logs/blinkit-agent-hook.cron.log 2>&1 </dev/null &
+}
+trap wake_agent_on_exit EXIT
+
 [ -f "$REPORT" ] && { LOG "today's report already present — nothing to do"; exit 0; }
 if [ -f logs/.mac-offline ]; then
   LOG "Mac flagged offline — VPS+KVM fallback owns today; not splitting"

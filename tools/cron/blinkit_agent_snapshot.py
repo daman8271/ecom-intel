@@ -197,6 +197,75 @@ def local_blinkit_processes() -> list[str]:
     return lines[:30]
 
 
+def remote_blinkit_processes(host: str, command: str) -> list[str]:
+    try:
+        proc = subprocess.run(
+            ["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=8", host, command],
+            check=False,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            timeout=12,
+        )
+    except Exception:
+        return []
+    return [line.strip() for line in proc.stdout.splitlines() if line.strip()][:20]
+
+
+def laptop_blinkit_progress(date_ist: str) -> dict[str, Any]:
+    compact = date_ist.replace("-", "")
+    command = (
+        "$f = Get-ChildItem -Path "
+        f"'C:/scrape-worker/team-runs/{compact}-*-blinkit-team/run.progress.json' "
+        "-ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending | Select-Object -First 1; "
+        "if ($null -eq $f) { '{\"exists\":false,\"active\":false}' } else { "
+        "$age = [math]::Round(((Get-Date) - $f.LastWriteTime).TotalSeconds); "
+        "[pscustomobject]@{exists=$true;active=($age -lt 1800);age_s=$age;"
+        "path=$f.FullName;size=$f.Length;mtime=$f.LastWriteTime.ToString('o')} | ConvertTo-Json -Compress }"
+    )
+    try:
+        proc = subprocess.run(
+            ["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=8", "laptop", command],
+            check=False,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.DEVNULL,
+            timeout=12,
+        )
+        data = json.loads(proc.stdout.strip())
+        return data if isinstance(data, dict) else {"exists": False, "active": False}
+    except Exception:
+        return {"exists": False, "active": False, "probe_failed": True}
+
+
+def active_team_run(date_ist: str) -> dict[str, Any]:
+    ptr = ROOT / "shards/runs/ACTIVE-blinkit-team"
+    info = file_info(ptr)
+    if not ptr.exists():
+        return {**info, "active": False, "run_id": "", "shards": []}
+    try:
+        run_id = ptr.read_text(encoding="utf-8").splitlines()[0].strip()
+    except Exception:
+        run_id = ""
+    expected_prefix = date_ist.replace("-", "") + "-"
+    if not run_id.startswith(expected_prefix):
+        return {**info, "active": False, "run_id": run_id, "stale": True, "shards": []}
+    run = ROOT / "shards/runs" / run_id / "blinkit"
+    shards = [
+        summarize_result(run / f"shard-{index}-of-2/result.json")
+        for index in (0, 1)
+    ]
+    return {
+        **info,
+        "active": True,
+        "run_id": run_id,
+        "run_path": str(run),
+        "ingested": (run / ".ingested").exists(),
+        "merge_running": any("blinkit_team_merge.sh" in p for p in local_blinkit_processes()),
+        "shards": shards,
+    }
+
+
 def deadline_at(date_ist: str, hhmm: str) -> dt.datetime:
     try:
         hour, minute = (int(part) for part in hhmm.split(":", 1))
@@ -207,7 +276,7 @@ def deadline_at(date_ist: str, hhmm: str) -> dt.datetime:
         return dt.datetime.combine(day, dt.time(11, 0), tzinfo=IST)
 
 
-def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], result: dict[str, Any], fallback_runs: list[dict[str, Any]], processes: list[str], mac_drop: dict[str, Any]) -> str:
+def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], result: dict[str, Any], fallback_runs: list[dict[str, Any]], processes: list[str], mac_drop: dict[str, Any], team_run: dict[str, Any]) -> str:
     main_exists = reports["main"]["exists"]
     not_listed_exists = reports["not_listed"]["exists"]
     main_sent = reports["main_sent"]["exists"]
@@ -216,7 +285,7 @@ def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], resul
         return "complete"
     if main_exists and not_listed_exists:
         return "accepted_pending_send"
-    if processes:
+    if processes or team_run.get("active"):
         return "running"
     mac_summary = mac_drop.get("summary") or {}
     if mac_drop.get("exists") and (
@@ -262,7 +331,16 @@ def main() -> int:
     fallback_runs = latest_fallback_runs()
     mac_drop = latest_mac_drop(date_ist)
     result = summarize_result(ROOT / "platforms/blinkit/result.json")
-    processes = local_blinkit_processes()
+    local_processes = local_blinkit_processes()
+    mac_processes = remote_blinkit_processes(
+        "macpro",
+        "ps -axo pid=,etime=,command= | grep -E 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' | grep -v grep || true",
+    )
+    team_run = active_team_run(date_ist)
+    laptop_progress = laptop_blinkit_progress(date_ist)
+    processes = local_processes + mac_processes
+    if laptop_progress.get("active"):
+        processes.append(f"Windows Blinkit progress active: {laptop_progress.get('path', '')}")
     snapshot = {
         "date_ist": date_ist,
         "now_ist": now.isoformat(),
@@ -272,9 +350,12 @@ def main() -> int:
         "result": result,
         "latest_mac_drop": mac_drop,
         "latest_fallback_runs": fallback_runs,
-        "local_blinkit_processes": processes,
+        "active_team_run": team_run,
+        "local_blinkit_processes": local_processes,
+        "mac_blinkit_processes": mac_processes,
+        "laptop_blinkit_progress": laptop_progress,
     }
-    snapshot["state"] = derive_state(now, date_ist, reports, result, fallback_runs, processes, mac_drop)
+    snapshot["state"] = derive_state(now, date_ist, reports, result, fallback_runs, processes, mac_drop, team_run)
     print(json.dumps(snapshot, indent=2, sort_keys=True))
     return 0
 

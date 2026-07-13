@@ -114,14 +114,17 @@ coordinates. Move older or suspect checkpoints aside and restart cleanly.
 `tools/cron/start_blinkit_live_watch.sh` starts an idempotent tmux watcher that
 logs Mac process status, progress counts
 (`done/resolved/auth_ok/blocked/rows/stock_unverified`), workbook presence, and
-dry-run quality-monitor output until 10:45 IST. Cron starts the watcher at 05:00
-IST and 06:25 IST, the read-only quality monitor polls every 15 minutes from 05:00-10:59 IST,
+dry-run quality-monitor output until 11:15 IST. Cron starts the watcher at 05:00
+IST, the read-only quality monitor polls every 15 minutes from 05:00-11:59 IST,
 and the main/not-listed WhatsApp retry helpers poll every 15 minutes from
 06:00-16:59 IST. `tools/cron/start_blinkit_agent_watch.sh` starts the production
-Blinkit agent watchdog from 05:00-16:05 IST. That hook snapshots the run, triggers
+Blinkit agent watchdog from 05:00-16:05 IST. The 07:00 team launcher also emits a
+`team-start` event that wakes the watcher and a bounded read-only Codex monitor.
+That hook snapshots local, Mac Pro, Windows, and team-shard state; refreshes Codex
+diagnosis at a throttled interval while a run is active; triggers
 the guard/fallback idempotently after the store-open window, reruns quality and
 WhatsApp delivery as soon as accepted workbooks exist, and escalates to read-only
-Codex diagnosis only for unresolved late/quality-held states. The post-10:00
+Codex diagnosis for the live run and unresolved late/quality-held states. The post-10:00
 delivery sweep runs every 5 minutes until 16:59 IST so a late accepted workbook is
 sent as soon as it appears.
 
