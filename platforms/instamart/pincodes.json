@@ -562,18 +562,42 @@
 "landmark": "Delhi Industrial Area, Delhi, 110015, India",
 "lat": 28.6553,
 "lon": 77.0657,
-"represents": 10,
+"represents": 8,
 "pincodes": [
 "110015",
 "110027",
 "110045",
 "110058",
-"110059",
 "110063",
-"110064",
 "110077",
 "110078",
 "110087"
+]
+},
+{
+"city": "Delhi",
+"tier": 1,
+"pincode": "110059",
+"locality": "Matiala B.O",
+"landmark": "Matiala B.O, Delhi, 110059, India",
+"lat": 28.609409,
+"lon": 77.054325,
+"represents": 1,
+"pincodes": [
+"110059"
+]
+},
+{
+"city": "Delhi",
+"tier": 1,
+"pincode": "110064",
+"locality": "Maya Puri S.O",
+"landmark": "Maya Puri S.O, Delhi, 110064, India",
+"lat": 28.6317778,
+"lon": 77.1259167,
+"represents": 1,
+"pincodes": [
+"110064"
 ]
 },
 {
