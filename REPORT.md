@@ -1,18 +1,19 @@
 # ecom-intel — platform coverage report
 
-**Last updated:** 2026-07-07 · **Run from:** Hostinger VPS + Mac Pro residential collectors · **Brand:** Jivo
+**Last updated:** 2026-07-14 · **Run from:** Hostinger VPS + Windows and Mac Pro residential collectors · **Brand:** Jivo
 
 This is the operating coverage map across all target platforms, plus where Jivo
 actually has presence. Generated Excel reports for every live platform are in
-`output/`; BigBasket pincode-wise workbooks are intentionally kept in
-`output/private-no-group/` for direct-only delivery.
+`output/`; BigBasket pincode-wise workbooks go to the Ecom group, with a
+secondary copy retained under `output/private-no-group/`.
 
 ## TL;DR (2026-07-06)
 - **9 platforms are LIVE** in the daily system: Blinkit, , Zepto,
   Flipkart Minutes, Flipkart, Amazon, **Amazon Fresh**, **Amazon Now**, **BigBasket**.
-- **Blinkit is Mac/drop-fed and auth-required.** It runs on the Mac Pro residential
-  session via `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh`
-  under LaunchAgent `com.danny.blinkit-mac-to-vps` at **06:30 IST**. The wrapper
+- **Blinkit is device-team/drop-fed and auth-required.** The Windows residential
+  shard starts at **07:00 IST**; the Mac Pro shard runs via
+  `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` under LaunchAgent
+  `com.danny.blinkit-mac-to-vps` at **07:15 IST**. The wrapper
   uses `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json`, exports
   `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
   `BLINKIT_PDP_OOS_PROBE=1`, and `BLINKIT_PDP_PRICE_PROBE=1`. VPS ingest rejects
@@ -40,10 +41,10 @@ actually has presence. Generated Excel reports for every live platform are in
   it's a thinner catalog than Fresh (~23 SKUs). See `platforms/amazon-now/PLAN.md`.
 - **BigBasket** now has two live outputs. The national workbook still comes from the
   stealth browser + in-page `listing-svc` flow. The pincode-wise workbook is produced
-  by `platforms/bigbasket/team_run_pincode.sh` across VPS + Mac Pro + KVM1 with
+  by `platforms/bigbasket/team_run_pincode.sh` across VPS + Mac Pro + KVM1 + Windows with
   logged-in member cookies; the 2026-07-06 cleaned run covered 227 pins, 155 pins
-  with Jivo, 1,903 rows, and 27 SKUs. Pincode delivery is private/direct-only, not
-  an Ecom group attachment.
+  with Jivo, 1,903 rows, and 27 SKUs. The pincode workbook is delivered to the
+  Ecom group, with an optional secondary direct delivery.
 - VPS-hosted scrapers run in a **1×/day serial deadline-aligned cron landing
   10:00 IST** via `run_all.sh`; Mac collectors feed vetted outputs into the same
   batch/ingest path.
@@ -52,7 +53,7 @@ actually has presence. Generated Excel reports for every live platform are in
 
 | Platform | Type | Coverage | Jivo SKUs | Notes |
 |---|---|---|---|---|
-| **Blinkit** | quick-comm | 2026-07-06 auth-corrected daily: 902 pins, 870 resolved, 468 Jivo pins, 1915 rows, 0 blocked, 303 stores | ~8 | Mac Pro residential collector; saved Blinkit login/auth cookie state required; no anonymous fallback |
+| **Blinkit** | quick-comm | 2026-07-06 auth-corrected daily: 902 pins, 870 resolved, 468 Jivo pins, 1915 rows, 0 blocked, 303 stores | ~8 | Windows + Mac Pro residential team; saved Blinkit login/auth cookie state required; no anonymous fallback |
 | **** | quick-comm | 332 pincodes | ~8 | stealth POST to `/api//search/v2` |
 | **Zepto** | quick-comm | 332 pincodes (≈100 carry Jivo) | ~11 | reached via `bff-gateway.zeptonow.com` BFF API |
 | **Flipkart Minutes** | quick-comm | 345 pincodes | ~10 | HYPERLOCAL store; GPS "use my location" |
@@ -60,7 +61,7 @@ actually has presence. Generated Excel reports for every live platform are in
 | **Amazon** | marketplace | national (314 ASINs targeted) | ~163 in-stock | guest `/dp` scrape; interstitial bypass; no account location |
 | **Amazon Fresh** | quick-comm | 332/332 pincodes serviceable | ~63 | logged-in session (cookie transplant); `i=freshstore` raw POST+HTML; ~13.2k rows/run, ~22 min |
 | **Amazon Now** | quick-comm | ~317/332 pincodes serviceable | ~23 | logged-in (same session as Fresh); `i=nowstore`; per-pincode `now_slot` delivery windows; ~1.7k rows/run; SERIALIZED with Fresh via shared lock |
-| **BigBasket** | grocery national + pincode-wise | national workbook + pincode team run: 227 pins, 155 Jivo pins in 2026-07-06 cleaned run | ~27 | stealth browser past Akamai + in-page `listing-svc`; pincode runner uses logged-in member cookies on VPS+Mac Pro+KVM1 and writes private/direct-only workbook |
+| **BigBasket** | grocery national + pincode-wise | national workbook + pincode team run: 227 pins, 155 Jivo pins in 2026-07-06 cleaned run | ~27 | stealth browser past Akamai + in-page `listing-svc`; pincode runner uses logged-in member cookies on VPS+Mac Pro+KVM1+Windows and sends the workbook to the Ecom group |
 
 ## Per-pincode coverage (Wave 1, auth-corrected 2026-07-06)
 
@@ -129,8 +130,9 @@ to a captcha on the datacenter IP. See `docs/PROXY.md`.
   end of the sweep (flags any platform <20 rows / stale and re-runs once /
   escalates to Telegram). `amazon-now` runs too, serialized with `amazon-fresh`
   via the shared lock (see above). Blinkit is not anonymous and not part of the
-  VPS serial scrape: the Mac Pro LaunchAgent `com.danny.blinkit-mac-to-vps` runs
-  `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` at 06:30 IST,
+  VPS serial scrape: the Windows shard starts at 07:00 IST, and the Mac Pro
+  LaunchAgent `com.danny.blinkit-mac-to-vps` runs
+  `/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh` at 07:15 IST,
   using `/Users/danny./VPS-Migration/secrets/blinkit-auth-state.json` and
   `BLINKIT_REQUIRE_AUTH=1`, `BLINKIT_OOS_PROBE=1`, and
   `BLINKIT_PDP_OOS_PROBE=1`, plus `BLINKIT_PDP_PRICE_PROBE=1` for screenshot-class
@@ -145,9 +147,9 @@ to a captcha on the datacenter IP. See `docs/PROXY.md`.
   so hard OOS rows require nearby and PDP verification before publishing.
 - **BigBasket pincode cron (IST):** root crontab runs
   `platforms/bigbasket/team_run_pincode.sh run` at **03:00** in tmux. It shards the
-  run across VPS + Mac Pro + KVM1, merges `result_pincode.json`, builds the pincode
-  workbook under `output/private-no-group/`, removes any normal `output/` pincode
-  copy, and direct-sends only via the configured direct-recipient secret.
+  run across VPS + Mac Pro + KVM1 + Windows, merges `result_pincode.json`, builds the
+  pincode workbook under `output/`, sends it to the Ecom group, and retains a
+  secondary copy under `output/private-no-group/` for optional direct delivery.
 - **Amazon canonical auto-heal (LIVE 2026-06-13):** the recurring Amazon `shared_price_dup`
   hold — a *truncated* product title minting a duplicate "stub" SKU at the same ASIN/price — is
   now auto-fixed in `run.sh`: Claude merges each stub into its real product (identity-only,

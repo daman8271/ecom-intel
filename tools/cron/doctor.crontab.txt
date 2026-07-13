@@ -19,8 +19,8 @@
 
 # Blinkit is produced off-box on the Windows + Mac Pro residential workers and delivered through
 # platforms/blinkit/ingest.sh. BigBasket pincode is produced by the logged-in
-# team runner across VPS + Mac Pro + KVM1; it writes only to output/private-no-group
-# and direct-sends from a gitignored direct-recipient secret. The old BigBasket
+# team runner across VPS + Mac Pro + KVM1 + Windows; it sends the public workbook
+# to the Ecom group and keeps a secondary private copy. The old BigBasket
 # paid QuickCommerce API cron is retired.
 0 3 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # ecom-intel bigbasket-pincode team daily Ecom-group + optional direct
 
@@ -41,6 +41,9 @@
 */10 6-11 * * * cd /opt/ecom-intel && ./tools/laptop/blinkit_team_watch.sh >> logs/blinkit_team.log 2>&1   # blinkit device-team watch: pull/merge/rescue
 20 7 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard early
 45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard late
+25 7 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh launch >> logs/zepto_macpro_guard.log 2>&1   # Zepto VPS fallback while Blinkit owns Mac Pro + Windows
+35 8 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh watchdog >> logs/zepto_macpro_guard.log 2>&1   # Zepto watchdog
+10 9 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh late >> logs/zepto_macpro_guard.log 2>&1   # Zepto late VPS-only fallback guard
 */15 5-11 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor through 11:00 deadline
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_not_listed_direct.sh cron >> logs/blinkit-not-listed-wa.log 2>&1   # blinkit not-listed direct WhatsApp retry

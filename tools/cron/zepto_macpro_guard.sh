@@ -16,6 +16,8 @@ TODAY="$(date +%F)"
 TODAY_COMPACT="$(date +%Y%m%d)"
 NOW="$(date +%s)"
 BATCH_TS="$(date -d "$TODAY 10:00" +%s)"
+BLINKIT_WINDOW_START_TS="$(date -d "$TODAY 07:00" +%s)"
+BLINKIT_DEADLINE_TS="$(date -d "$TODAY 11:00" +%s)"
 REPORT="output/Jivo-Zepto-Live-Report-${TODAY}.xlsx"
 BLINKIT_REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
 BLINKIT_TEAM_PTR="shards/runs/ACTIVE-blinkit-team"
@@ -49,8 +51,12 @@ mac_running(){
 }
 
 blinkit_priority_active(){
-  local team_id
+  local team_id now
   [ -f "$BLINKIT_REPORT" ] && return 1
+  now="$(date +%s)"
+  if [ "$now" -ge "$BLINKIT_WINDOW_START_TS" ] && [ "$now" -lt "$BLINKIT_DEADLINE_TS" ]; then
+    return 0
+  fi
   team_id="$(head -1 "$BLINKIT_TEAM_PTR" 2>/dev/null || true)"
   if [ -n "$team_id" ] && [ "${team_id#"$TODAY_COMPACT"-}" != "$team_id" ]; then
     return 0
@@ -90,9 +96,10 @@ trigger_mac(){
 }
 
 local_vps_rescue(){
-  local sid est rc v verdict
+  local sid est now rc v verdict
   est=2700
-  if [ $((NOW + est)) -gt $((BATCH_TS - 300)) ]; then
+  now="$(date +%s)"
+  if [ $((now + est)) -gt $((BATCH_TS - 300)) ]; then
     LOG "too late for VPS rescue before the 10:00 batch"
     tg "⚠️ Zepto guard: too late to re-run Zepto before the 10:00 batch; post-batch selfheal/next guard must deliver it late."
     return 0
@@ -105,6 +112,12 @@ local_vps_rescue(){
   fi
   if [ -f "$REPORT" ]; then
     LOG "Zepto report landed while waiting for the sweep-chain lock; rescue no longer needed"
+    return 0
+  fi
+  now="$(date +%s)"
+  if [ $((now + est)) -gt $((BATCH_TS - 300)) ]; then
+    LOG "too late for VPS rescue after waiting for the sweep-chain lock"
+    tg "⚠️ Zepto guard: the VPS chain released too late to finish a safe Zepto rescue before the 10:00 batch."
     return 0
   fi
   sid="$(pending_sweep_id || true)"
