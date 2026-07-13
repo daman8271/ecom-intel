@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-12
-observations: 272
+last_seen: 2026-07-13
+observations: 280
 latest_status: OOS
-below_days: 31
+below_days: 32
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-coo
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-07-12) — ref ₹939 vs live ₹-
-- **Days below reference:** 31 of 34
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]]
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-07-13) — ref ₹989 vs live ₹-
+- **Days below reference:** 32 of 35
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]]
 
-## Ref-vs-live history (272 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -317,6 +317,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-12,flipkart,OOS,SVD,939,,,,,,0,false
 2026-07-12,flipkart-minutes,NOT_LISTED,SVD,939,,,,,,0,false
 2026-07-12,zepto,OOS,SVD,939,,,,,,0,false
+2026-07-13,amazon,BELOW,BAU,989,876,876,876,-113,-11.43,1,true
+2026-07-13,amazon-fresh,BELOW,BAU,989,859,859,876,-130,-13.14,26,true
+2026-07-13,amazon-now,BELOW,BAU,989,859,859,876,-130,-13.14,14,true
+2026-07-13,bigbasket,NOT_LISTED,BAU,989,,,,,,0,false
+2026-07-13,blinkit,NOT_LISTED,BAU,989,,,,,,0,false
+2026-07-13,flipkart,OOS,BAU,989,,,,,,0,false
+2026-07-13,flipkart-minutes,NOT_LISTED,BAU,989,,,,,,0,false
+2026-07-13,zepto,OOS,BAU,989,,,,,,0,false
 ```
 
 ---

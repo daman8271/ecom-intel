@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf
-display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l B09nycsqlf
+display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre"
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-07-07
-observations: 268
+last_seen: 2026-07-13
+observations: 325
 min_price: 163
 max_price: 255
-latest_price: 179
+latest_price: 184
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l B09nycsqlf**
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹179 (29.8% off)
+- [[amazon-fresh]] — latest ₹184 (27.8% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Hyderabad]] · [[Jaipur]] · [[Lucknow]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Lucknow]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (7)
-[[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (8)
+[[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (268 observations)
+## Price history (325 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -302,6 +302,63 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-07-0608,2026-07-07,amazon-fresh,Noida,201310,179,255,29.8,1
 2026-07-07-0608,2026-07-07,amazon-fresh,Noida,201312,179,255,29.8,1
 2026-07-07-0608,2026-07-07,amazon-fresh,Noida,201318,179,255,29.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Bengaluru,560006,178,255,30.2,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Bengaluru,560029,178,255,30.2,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Bengaluru,560035,170,255,33.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Bengaluru,560036,178,255,30.2,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Bengaluru,560087,170,255,33.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110003,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110006,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110007,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110016,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110021,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110026,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110031,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110033,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110035,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110044,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110048,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110052,189,255,25.9,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110055,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110091,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Delhi,110092,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Gurugram,122001,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Gurugram,122002,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Gurugram,122007,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Gurugram,122010,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Gurugram,122012,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Gurugram,122051,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Hyderabad,500001,209,255,18,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Hyderabad,500002,209,255,18,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Hyderabad,500024,209,255,18,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Hyderabad,500066,209,255,18,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Jaipur,302020,167,255,34.5,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Jaipur,302033,167,255,34.5,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Lucknow,226011,170,255,33.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400003,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400009,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400011,193,255,24.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400012,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400013,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400018,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400019,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400022,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400026,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400030,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400033,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400067,189,255,25.9,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400075,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Mysuru,570004,170,255,33.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201301,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201303,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201304,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201305,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201307,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201309,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201310,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201311,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201312,184,255,27.8,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Noida,201318,184,255,27.8,1
 ```
 
 ---

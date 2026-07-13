@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-12
-observations: 272
+last_seen: 2026-07-13
+observations: 280
 latest_status: NOT_LISTED
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-canola-oil-cooking-oil-for-daily-use-recommended-for-all-type
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-12) — ref ₹249 vs live ₹-
-- **Days below reference:** 11 of 34
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-13) — ref ₹259 vs live ₹-
+- **Days below reference:** 12 of 35
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]]
 
-## Ref-vs-live history (272 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -317,6 +317,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-12,flipkart,OOS,SVD,249,,,,,,0,false
 2026-07-12,flipkart-minutes,NOT_LISTED,SVD,249,,,,,,0,false
 2026-07-12,zepto,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-13,amazon,BELOW,BAU,259,249,249,249,-10,-3.86,1,true
+2026-07-13,amazon-fresh,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,amazon-now,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,bigbasket,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,blinkit,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,flipkart,OOS,BAU,259,,,,,,0,false
+2026-07-13,flipkart-minutes,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,zepto,NOT_LISTED,BAU,259,,,,,,0,false
 ```
 
 ---

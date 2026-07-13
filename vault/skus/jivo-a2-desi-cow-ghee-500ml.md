@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-a2-desi-cow-ghee-500ml
-display_name: Jivo A2 Desi Cow Ghee (1 pc (500 ml))
+display_name: Jivo a2 Desi Cow Ghee 500ml
 platforms:
   - zepto
 first_seen: 2026-07-10
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo A2 Desi Cow Ghee (1 pc (500 ml))**
+**Jivo a2 Desi Cow Ghee 500ml**
 
 ## Sold on
 - [[zepto]] — latest ₹932 (57.6% off)

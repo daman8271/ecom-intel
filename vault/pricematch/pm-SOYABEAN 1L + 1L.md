@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-12
-observations: 272
+last_seen: 2026-07-13
+observations: 280
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-ideal-f
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-12) — ref ₹389 vs live ₹-
-- **Days below reference:** 0 of 34
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-13) — ref ₹409 vs live ₹-
+- **Days below reference:** 0 of 35
 
-## Ref-vs-live history (272 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -316,6 +316,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-12,flipkart,OOS,SVD,389,,,,,,0,false
 2026-07-12,flipkart-minutes,NOT_LISTED,SVD,389,,,,,,0,false
 2026-07-12,zepto,NOT_LISTED,SVD,389,,,,,,0,false
+2026-07-13,amazon,ABOVE,BAU,409,449,449,449,40,9.78,0,true
+2026-07-13,amazon-fresh,NOT_LISTED,BAU,409,,,,,,0,false
+2026-07-13,amazon-now,NOT_LISTED,BAU,409,,,,,,0,false
+2026-07-13,bigbasket,NOT_LISTED,BAU,409,,,,,,0,false
+2026-07-13,blinkit,NOT_LISTED,BAU,409,,,,,,0,false
+2026-07-13,flipkart,OOS,BAU,409,,,,,,0,false
+2026-07-13,flipkart-minutes,NOT_LISTED,BAU,409,,,,,,0,false
+2026-07-13,zepto,NOT_LISTED,BAU,409,,,,,,0,false
 ```
 
 ---
