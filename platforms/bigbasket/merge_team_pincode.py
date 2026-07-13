@@ -118,6 +118,8 @@ def recompute_summary(per_pin, shard_summaries, source, run_id):
 
     varied = sum(1 for vals in price_sets.values() if len(vals) > 1)
     target = len(per_pin)
+    processed = sum(1 for pin in per_pin if str(pin.get("set_status") or "") != "missing")
+    minimum = max(20, int(target * 0.75 + 0.999))
     return {
         "pincodes_total": len(per_pin),
         "pincodes_with_jivo": sum(1 for pin in per_pin if pin.get("rows")),
@@ -132,9 +134,10 @@ def recompute_summary(per_pin, shard_summaries, source, run_id):
         "pricing_mode": "member" if shard_summaries and all(bool(s.get("member")) for s in shard_summaries) else "guest",
         "captured_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
         "pincodes_target": target,
+        "pincodes_processed": processed,
         "pincode_pull_complete": all(pin.get("set_status") == "ok" for pin in per_pin),
-        "min_pincodes_required": max(20, int(target * 0.75 + 0.999)),
-        "coverage_ok": len(per_pin) >= max(20, int(target * 0.75 + 0.999)),
+        "min_pincodes_required": minimum,
+        "coverage_ok": processed >= minimum,
         "team_run_id": run_id,
         "shards": shard_summaries,
         "failed_pincodes": sum(1 for pin in per_pin if is_failed(pin)),
@@ -166,12 +169,29 @@ def main():
     chosen = {}
     shard_summaries = {}
     missing = []
+    invalid = []
     for path in candidate_files(run_dir, args.manifest):
         worker = Path(path).stem
         if not os.path.exists(path):
             missing.append(path)
             continue
         data = load_json(path)
+        rc_path = os.path.join(run_dir, f"{worker}.rc")
+        try:
+            rc = int(Path(rc_path).read_text(encoding="utf-8").strip())
+        except (FileNotFoundError, ValueError):
+            rc = None
+        if rc != 0:
+            invalid.append(f"{worker}: rc={rc!r}")
+
+        assigned_path = os.path.join(run_dir, f"pincodes.{worker}.json")
+        assigned = load_json(assigned_path) if os.path.exists(assigned_path) else []
+        expected = {str(pin.get("pincode") or "") for pin in assigned}
+        actual = {str(pin.get("pincode") or "") for pin in (data.get("perPin") or [])}
+        absent = expected - actual
+        if absent:
+            invalid.append(f"{worker}: processed {len(actual & expected)}/{len(expected)} assigned pincodes")
+
         shard_summaries[worker] = data.get("summary") or {}
         for pin in data.get("perPin") or []:
             pincode = str(pin.get("pincode") or "")
@@ -182,6 +202,8 @@ def main():
 
     if missing and not args.allow_missing:
         raise SystemExit("Missing shard result(s): " + ", ".join(missing))
+    if invalid and not args.allow_missing:
+        raise SystemExit("Invalid/incomplete shard result(s): " + "; ".join(invalid))
 
     per_pin = []
     for pincode in order:

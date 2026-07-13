@@ -38,6 +38,24 @@ function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+function sleepSync(ms) {
+  Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+}
+
+function replaceCheckpointSync(tmp, output) {
+  const retryable = new Set(['EACCES', 'EBUSY', 'EPERM']);
+  const attempts = process.platform === 'win32' ? 20 : 1;
+  for (let attempt = 1; attempt <= attempts; attempt += 1) {
+    try {
+      fs.renameSync(tmp, output);
+      return;
+    } catch (error) {
+      if (!retryable.has(error.code) || attempt === attempts) throw error;
+      sleepSync(250);
+    }
+  }
+}
+
 function readPincodes() {
   const raw = JSON.parse(fs.readFileSync(PINCODES_FILE, 'utf8'));
   if (!Array.isArray(raw)) throw new Error(`pincode file must be a JSON array: ${PINCODES_FILE}`);
@@ -92,9 +110,9 @@ function writeResult(perPin, target, t0, opts = {}) {
   const allRows = perPin.flatMap((p) => p.rows || []);
   const payload = { summary, perPin, allRows };
   fs.mkdirSync(path.dirname(OUTFILE), { recursive: true });
-  const tmp = `${OUTFILE}.tmp`;
+  const tmp = `${OUTFILE}.${process.pid}.tmp`;
   fs.writeFileSync(tmp, JSON.stringify(payload, null, 2));
-  fs.renameSync(tmp, OUTFILE);
+  replaceCheckpointSync(tmp, OUTFILE);
   process.stderr.write('[SUMMARY] ' + JSON.stringify(summary) + '\n');
   return summary;
 }
@@ -340,7 +358,7 @@ const watchdog = setTimeout(() => {
   DONE = true;
   process.stderr.write(`[FATAL] watchdog: pincode scrape exceeded ${WATCHDOG_MS}ms - writing partial result\n`);
   try { writeResult(latestPerPin, latestTarget, T0, latestOpts); } catch (_) {}
-  process.exit(0);
+  process.exit(124);
 }, WATCHDOG_MS);
 
 (async () => {
@@ -429,5 +447,5 @@ const watchdog = setTimeout(() => {
     clearTimeout(watchdog);
     try { writeResult(latestPerPin, latestTarget, T0, latestOpts); } catch (_) {}
   }
-  process.exit(0);
+  process.exit(1);
 });

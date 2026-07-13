@@ -480,9 +480,17 @@ collect_all() {
     remote_run="$base/team-runs/$run_id"
     if [ "$worker" = "laptop" ]; then
       local ext
-      for ext in json log stdout rc done; do
+      # Do not read laptop.json while Node is checkpointing it. Windows OpenSSH
+      # holds the source without delete sharing, which can make the scraper's
+      # atomic rename fail with EPERM. The done marker is written after Node exits.
+      for ext in rc done; do
         scp -q "$host:$remote_run/$worker.$ext" "$run_dir/$worker.$ext" 2>/dev/null || true
       done
+      if [ -f "$run_dir/$worker.done" ]; then
+        for ext in json log stdout; do
+          scp -q "$host:$remote_run/$worker.$ext" "$run_dir/$worker.$ext" 2>/dev/null || true
+        done
+      fi
       continue
     fi
     rsync -az "$host:$remote_run/$worker.json" "$run_dir/$worker.json" 2>/dev/null || true
