@@ -1,0 +1,5 @@
+device,pincodes_total,pincodes_resolved,pincodes_blocked,total_rows,wall_s,auth_verified,auth_verified_pincodes,oos_probe_flips,pdp_attempted,pdp_checked,pdp_failed,unverified_oos,scraper_sha256,started_at,captured_at
+"kvm1",4,4,0,21,200,1,4,2,6,4,2,1,"0501caf0625b623077479257abc46d59ed3f3f0fbf0ebcce794a24b20eeb7101","2026-07-13T21:05:18.230Z","2026-07-13T21:08:38.617Z"
+"mac-pro",4,4,0,21,188,1,4,2,6,4,2,1,"0501caf0625b623077479257abc46d59ed3f3f0fbf0ebcce794a24b20eeb7101","2026-07-13T21:05:18.748Z","2026-07-13T21:08:26.384Z"
+"primary-vps",4,4,0,21,172,1,4,1,5,4,1,2,"0501caf0625b623077479257abc46d59ed3f3f0fbf0ebcce794a24b20eeb7101","2026-07-13T21:05:18.056Z","2026-07-13T21:08:09.966Z"
+"windows",4,4,0,21,190,1,4,2,6,4,2,1,"0501caf0625b623077479257abc46d59ed3f3f0fbf0ebcce794a24b20eeb7101","2026-07-13T21:05:20.762Z","2026-07-13T21:08:30.686Z"

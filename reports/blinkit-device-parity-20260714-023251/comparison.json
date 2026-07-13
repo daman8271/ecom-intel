@@ -1,0 +1,97 @@
+{
+  "run_id": "20260714-023251",
+  "window_ist": {
+    "started": "2026-07-14 02:35:18",
+    "finished": "2026-07-14 02:38:38"
+  },
+  "controls": {
+    "pincodes": ["110094", "110082", "400032", "201317"],
+    "pincode_config_sha256": "0b5fbfbf67d8170251cbf7692fb99ad7914cb89cc6c156355255320e416bf8cb",
+    "scraper_sha256": "0501caf0625b623077479257abc46d59ed3f3f0fbf0ebcce794a24b20eeb7101",
+    "concurrency_per_host": 1,
+    "auth_required": true,
+    "oos_probe_enabled": true,
+    "pdp_oos_probe_enabled": true,
+    "pdp_price_probe_enabled": true
+  },
+  "devices": {
+    "mac-pro": {
+      "route": "residential direct",
+      "wall_seconds": 188,
+      "rows": 21,
+      "resolved_pins": 4,
+      "auth_verified_pins": 4,
+      "normalized_rows_matching_residential_consensus": 21,
+      "pdp_price_probe_failed": 2,
+      "unverified_oos": 1
+    },
+    "windows": {
+      "route": "residential direct",
+      "ssh_exit_code": 0,
+      "test_run_rc_receipt": "empty because the temporary test batch file parsed 0> as an fd redirect; the production Windows runner uses the correct syntax",
+      "wall_seconds": 190,
+      "rows": 21,
+      "resolved_pins": 4,
+      "auth_verified_pins": 4,
+      "normalized_rows_matching_residential_consensus": 21,
+      "pdp_price_probe_failed": 2,
+      "unverified_oos": 1
+    },
+    "kvm1": {
+      "route": "Mac Air residential SOCKS proxy",
+      "wall_seconds": 200,
+      "rows": 21,
+      "resolved_pins": 4,
+      "auth_verified_pins": 4,
+      "normalized_rows_matching_residential_consensus": 21,
+      "pdp_price_probe_failed": 2,
+      "unverified_oos": 1
+    },
+    "primary-vps": {
+      "route": "datacenter direct",
+      "wall_seconds": 172,
+      "rows": 21,
+      "resolved_pins": 4,
+      "auth_verified_pins": 4,
+      "normalized_rows_matching_residential_consensus": 20,
+      "pdp_price_probe_failed": 1,
+      "unverified_oos": 2
+    }
+  },
+  "mismatches": [
+    {
+      "severity": "high",
+      "pincode": "110082",
+      "prid": "406593",
+      "product": "jivo-cold-pressed-canola-oil-5l",
+      "residential_consensus": {
+        "sale": 1240,
+        "mrp": 1650,
+        "in_stock": 1,
+        "store_id": 46791,
+        "source": "nearby_same_pincode search probe"
+      },
+      "primary_vps_direct": {
+        "sale": 1196,
+        "mrp": 1650,
+        "in_stock": null,
+        "store_id": 30299,
+        "listing_status": "stock_unverified",
+        "source": "primary search card"
+      }
+    }
+  ],
+  "verdict": {
+    "device_parity": "partial_pass",
+    "residential_consensus": "Mac Pro, Windows, and KVM1 through the residential proxy matched exactly",
+    "primary_vps_direct": "failed strict parity",
+    "production_quality_gate": "failed on every host because PDP failures and unverified OOS were nonzero",
+    "tomorrow_schedule_changed": false
+  },
+  "independent_audit": {
+    "reviewer": "Claude Code Opus 4.8",
+    "mode": "read-only",
+    "result": "confirmed",
+    "notes": "Raw JSON and checksums support the reported parity verdict; no files were edited or scrapes rerun by the auditor."
+  }
+}

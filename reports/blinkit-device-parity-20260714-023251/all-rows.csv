@@ -1,0 +1,85 @@
+device,pincode,city,locality,store_id,prid,canonical,pack,vol_ml,sale,mrp,base_sale,offer_sale,in_stock,listing_status,stock_source,price_source,eta_min
+"kvm1","110094","Delhi","Dayalpur BO",38610,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110094","Delhi","Dayalpur BO",38610,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",
+"kvm1","110094","Delhi","Dayalpur BO",38610,"528706","jivo-pomace-olive-oil-1l","1 l",1000,416,1049,416,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110094","Delhi","Dayalpur BO",38610,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1289,2799,1289,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110094","Delhi","Dayalpur BO",38610,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110094","Delhi","Dayalpur BO",38610,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1875,4999,1875,,1,"listed_in_stock","search_card","pdp_price_probe",
+"kvm1","110082","Delhi","Holambi Kalan BO",30299,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110082","Delhi","Holambi Kalan BO",30299,"528706","jivo-pomace-olive-oil-1l","1 l",1000,379,1049,379,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110082","Delhi","Holambi Kalan BO",30299,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,499,1499,499,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110082","Delhi","Holambi Kalan BO",30299,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1686,4999,1686,,1,"listed_in_stock","search_card","search_card",
+"kvm1","110082","Delhi","Holambi Kalan BO",46791,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1240,1650,1240,,1,"listed_in_stock","search_probe","search_probe",9
+"kvm1","110082","Delhi","Holambi Kalan BO",30299,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,,"stock_unverified","search_card_unverified","search_card_oos",
+"kvm1","400032","Mumbai","High Court Building SO Mumbai",37122,"528706","jivo-pomace-olive-oil-1l","1 l",1000,387,1049,387,,1,"listed_in_stock","search_card","search_card",13
+"kvm1","400032","Mumbai","High Court Building SO Mumbai",37122,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,233,375,233,,1,"listed_in_stock","search_card","search_card",13
+"kvm1","400032","Mumbai","High Court Building SO Mumbai",37070,"628632","jivo-cold-pressed-sunflower-oil-1l","1 l",1000,195,275,195,,1,"listed_in_stock","search_probe","search_probe",11
+"kvm1","201317","Noida","Sec 128 Noida SO",34130,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",13
+"kvm1","201317","Noida","Sec 128 Noida SO",34130,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",13
+"kvm1","201317","Noida","Sec 128 Noida SO",34130,"528706","jivo-pomace-olive-oil-1l","1 l",1000,420,1049,420,,1,"listed_in_stock","search_card","search_card",13
+"kvm1","201317","Noida","Sec 128 Noida SO",34130,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,1,"listed_in_stock","search_card","search_card",13
+"kvm1","201317","Noida","Sec 128 Noida SO",34130,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",13
+"kvm1","201317","Noida","Sec 128 Noida SO",34130,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1685,4999,1685,,1,"listed_in_stock","search_card","pdp_price_probe",30
+"mac-pro","110094","Delhi","Dayalpur BO",38610,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110094","Delhi","Dayalpur BO",38610,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",
+"mac-pro","110094","Delhi","Dayalpur BO",38610,"528706","jivo-pomace-olive-oil-1l","1 l",1000,416,1049,416,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110094","Delhi","Dayalpur BO",38610,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1289,2799,1289,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110094","Delhi","Dayalpur BO",38610,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110094","Delhi","Dayalpur BO",38610,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1875,4999,1875,,1,"listed_in_stock","search_card","pdp_price_probe",
+"mac-pro","110082","Delhi","Holambi Kalan BO",30299,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110082","Delhi","Holambi Kalan BO",30299,"528706","jivo-pomace-olive-oil-1l","1 l",1000,379,1049,379,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110082","Delhi","Holambi Kalan BO",30299,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,499,1499,499,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110082","Delhi","Holambi Kalan BO",30299,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1686,4999,1686,,1,"listed_in_stock","search_card","search_card",
+"mac-pro","110082","Delhi","Holambi Kalan BO",46791,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1240,1650,1240,,1,"listed_in_stock","search_probe","search_probe",9
+"mac-pro","110082","Delhi","Holambi Kalan BO",30299,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,,"stock_unverified","search_card_unverified","search_card_oos",
+"mac-pro","400032","Mumbai","High Court Building SO Mumbai",37122,"528706","jivo-pomace-olive-oil-1l","1 l",1000,387,1049,387,,1,"listed_in_stock","search_card","search_card",13
+"mac-pro","400032","Mumbai","High Court Building SO Mumbai",37122,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,233,375,233,,1,"listed_in_stock","search_card","search_card",13
+"mac-pro","400032","Mumbai","High Court Building SO Mumbai",37070,"628632","jivo-cold-pressed-sunflower-oil-1l","1 l",1000,195,275,195,,1,"listed_in_stock","search_probe","search_probe",11
+"mac-pro","201317","Noida","Sec 128 Noida SO",34130,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",13
+"mac-pro","201317","Noida","Sec 128 Noida SO",34130,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",13
+"mac-pro","201317","Noida","Sec 128 Noida SO",34130,"528706","jivo-pomace-olive-oil-1l","1 l",1000,420,1049,420,,1,"listed_in_stock","search_card","search_card",13
+"mac-pro","201317","Noida","Sec 128 Noida SO",34130,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,1,"listed_in_stock","search_card","search_card",13
+"mac-pro","201317","Noida","Sec 128 Noida SO",34130,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",13
+"mac-pro","201317","Noida","Sec 128 Noida SO",34130,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1685,4999,1685,,1,"listed_in_stock","search_card","pdp_price_probe",30
+"primary-vps","110094","Delhi","Dayalpur BO",38610,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110094","Delhi","Dayalpur BO",38610,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",
+"primary-vps","110094","Delhi","Dayalpur BO",38610,"528706","jivo-pomace-olive-oil-1l","1 l",1000,416,1049,416,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110094","Delhi","Dayalpur BO",38610,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1289,2799,1289,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110094","Delhi","Dayalpur BO",38610,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110094","Delhi","Dayalpur BO",38610,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1875,4999,1875,,1,"listed_in_stock","search_card","pdp_price_probe",
+"primary-vps","110082","Delhi","Holambi Kalan BO",30299,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110082","Delhi","Holambi Kalan BO",30299,"528706","jivo-pomace-olive-oil-1l","1 l",1000,379,1049,379,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110082","Delhi","Holambi Kalan BO",30299,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,499,1499,499,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110082","Delhi","Holambi Kalan BO",30299,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1686,4999,1686,,1,"listed_in_stock","search_card","search_card",
+"primary-vps","110082","Delhi","Holambi Kalan BO",30299,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1196,1650,1196,,,"stock_unverified","search_card_unverified","search_card_oos",
+"primary-vps","110082","Delhi","Holambi Kalan BO",30299,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,,"stock_unverified","search_card_unverified","search_card_oos",
+"primary-vps","400032","Mumbai","High Court Building SO Mumbai",37122,"528706","jivo-pomace-olive-oil-1l","1 l",1000,387,1049,387,,1,"listed_in_stock","search_card","search_card",13
+"primary-vps","400032","Mumbai","High Court Building SO Mumbai",37122,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,233,375,233,,1,"listed_in_stock","search_card","search_card",13
+"primary-vps","400032","Mumbai","High Court Building SO Mumbai",37070,"628632","jivo-cold-pressed-sunflower-oil-1l","1 l",1000,195,275,195,,1,"listed_in_stock","search_probe","search_probe",11
+"primary-vps","201317","Noida","Sec 128 Noida SO",34130,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",13
+"primary-vps","201317","Noida","Sec 128 Noida SO",34130,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",13
+"primary-vps","201317","Noida","Sec 128 Noida SO",34130,"528706","jivo-pomace-olive-oil-1l","1 l",1000,420,1049,420,,1,"listed_in_stock","search_card","search_card",13
+"primary-vps","201317","Noida","Sec 128 Noida SO",34130,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,1,"listed_in_stock","search_card","search_card",13
+"primary-vps","201317","Noida","Sec 128 Noida SO",34130,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",13
+"primary-vps","201317","Noida","Sec 128 Noida SO",34130,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1685,4999,1685,,1,"listed_in_stock","search_card","pdp_price_probe",30
+"windows","110094","Delhi","Dayalpur BO",38610,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"windows","110094","Delhi","Dayalpur BO",38610,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",
+"windows","110094","Delhi","Dayalpur BO",38610,"528706","jivo-pomace-olive-oil-1l","1 l",1000,416,1049,416,,1,"listed_in_stock","search_card","search_card",
+"windows","110094","Delhi","Dayalpur BO",38610,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1289,2799,1289,,1,"listed_in_stock","search_card","search_card",
+"windows","110094","Delhi","Dayalpur BO",38610,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",
+"windows","110094","Delhi","Dayalpur BO",38610,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1875,4999,1875,,1,"listed_in_stock","search_card","pdp_price_probe",
+"windows","110082","Delhi","Holambi Kalan BO",30299,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",
+"windows","110082","Delhi","Holambi Kalan BO",30299,"528706","jivo-pomace-olive-oil-1l","1 l",1000,379,1049,379,,1,"listed_in_stock","search_card","search_card",
+"windows","110082","Delhi","Holambi Kalan BO",30299,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,499,1499,499,,1,"listed_in_stock","search_card","search_card",
+"windows","110082","Delhi","Holambi Kalan BO",30299,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1686,4999,1686,,1,"listed_in_stock","search_card","search_card",
+"windows","110082","Delhi","Holambi Kalan BO",46791,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1240,1650,1240,,1,"listed_in_stock","search_probe","search_probe",9
+"windows","110082","Delhi","Holambi Kalan BO",30299,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,,"stock_unverified","search_card_unverified","search_card_oos",
+"windows","400032","Mumbai","High Court Building SO Mumbai",37122,"528706","jivo-pomace-olive-oil-1l","1 l",1000,387,1049,387,,1,"listed_in_stock","search_card","search_card",13
+"windows","400032","Mumbai","High Court Building SO Mumbai",37122,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,233,375,233,,1,"listed_in_stock","search_card","search_card",13
+"windows","400032","Mumbai","High Court Building SO Mumbai",37070,"628632","jivo-cold-pressed-sunflower-oil-1l","1 l",1000,195,275,195,,1,"listed_in_stock","search_probe","search_probe",11
+"windows","201317","Noida","Sec 128 Noida SO",34130,"407851","jivo-cold-pressed-canola-oil-1l","1 l",1000,239,375,239,,1,"listed_in_stock","search_card","search_card",13
+"windows","201317","Noida","Sec 128 Noida SO",34130,"406593","jivo-cold-pressed-canola-oil-5l","5 l",5000,1193,1650,1193,,1,"listed_in_stock","search_card","pdp_price_probe",13
+"windows","201317","Noida","Sec 128 Noida SO",34130,"528706","jivo-pomace-olive-oil-1l","1 l",1000,420,1049,420,,1,"listed_in_stock","search_card","search_card",13
+"windows","201317","Noida","Sec 128 Noida SO",34130,"545244","jivo-extra-light-olive-oil-2l","2 l",2000,1139,2799,1139,,1,"listed_in_stock","search_card","search_card",13
+"windows","201317","Noida","Sec 128 Noida SO",34130,"406592","jivo-extra-light-olive-oil-1l","1 l",1000,564,1499,564,,1,"listed_in_stock","search_card","search_card",13
+"windows","201317","Noida","Sec 128 Noida SO",34130,"407561","jivo-pomace-olive-oil-5l","5 l",5000,1685,4999,1685,,1,"listed_in_stock","search_card","pdp_price_probe",30
