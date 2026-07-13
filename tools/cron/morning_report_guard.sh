@@ -17,10 +17,9 @@
 #            - Mac drop present but run_all checked before it landed  -> just spool it.
 #            - Mac drop absent (Mac down)                              -> VPS national
 #              scrape (scrape.js) -> ingest.sh --deliver (session/rows gate + spool).
-#   check  (~10:35 IST, after the 10:00 batch + 10:30 Blinkit deadline): verify all
-#          three routed today, send the owner a completeness summary on Telegram +
-#          WhatsApp, auto-catch-up BB pincode (Mac shard re-routed to KVM1) if missing,
-#          and alert (Mac-only) for a missing Blinkit.
+#   check  (~10:35 IST for the 10:00 batch, plus a quiet 11:05 Blinkit deadline
+#          pass): verify all three routed today, send the owner a completeness
+#          summary on Telegram + WhatsApp, and auto-catch-up missing delivery paths.
 #
 # Reuses: platforms/bigbasket/{scrape.js,ingest.sh,team_run_pincode.sh},
 #         tools/cron/spool_into_batch.sh, secrets.env (Telegram), :3001 WhatsApp gw.
@@ -31,7 +30,14 @@ cd "$DIR" || exit 0
 TODAY="$(date +%F)"
 PASS="${1:-check}"
 DRY="${GUARD_DRYRUN:-0}"
+BLINKIT_DEADLINE="${BLINKIT_DELIVERY_DEADLINE:-11:00}"
 LOG(){ echo "[$(date '+%F %T')] morning_guard($PASS): $*"; }
+
+after_hhmm(){
+  local want="${1/:/}" now
+  now="$(TZ=Asia/Kolkata date +%H%M)"
+  [ "$((10#$now))" -ge "$((10#$want))" ]
+}
 
 # ---------- alert channels (reuse the exact patterns the other guards use) ----------
 tg(){ ( set +e
@@ -114,11 +120,14 @@ fi
 
 # ======================================================================= CHECK
 # Completeness summary + auto-catch-up for anything still missing after the batch.
-NAT_OK=0; PIN_OK=0; BLK_OK=0; BATCH_OK=0
+NAT_OK=0; PIN_OK=0; BLK_OK=0; BLK_DUE=0; BATCH_OK=0
 national_spooled && NAT_OK=1
 pincode_routed   && PIN_OK=1
 blinkit_sent     && BLK_OK=1
 batch_posted     && BATCH_OK=1
+if [ "$BLK_OK" != "1" ] && after_hhmm "$BLINKIT_DEADLINE"; then
+  BLK_DUE=1
+fi
 
 # --- auto-catch-up: 10:00 batch never reached the Ecom group -> WhatsApp-only resend ---
 BATCH_NOTE=""
@@ -162,21 +171,46 @@ if [ "$PIN_OK" != "1" ]; then
   fi
 fi
 
+# --- Blinkit: pending is healthy until 11:00; at deadline retry accepted reports ---
+BLK_NOTE=""
+if [ "$BLK_OK" != "1" ] && [ "$BLK_DUE" = "1" ]; then
+  if [ "$DRY" = "1" ]; then
+    BLK_NOTE="[dryrun] would run the Blinkit quality/delivery sweep."
+  else
+    LOG "Blinkit deadline reached without sent marker -> running delivery sweep"
+    ./tools/cron/blinkit_whatsapp_delivery_sweep.sh morning-guard >>logs/morning_report_guard.log 2>&1 || true
+    if blinkit_sent; then
+      BLK_OK=1
+      BLK_NOTE="Blinkit Ecom-group delivery was retried successfully."
+    else
+      BLK_NOTE="[WARN] Blinkit is still missing after the ${BLINKIT_DEADLINE} IST deadline; the device-team agent remains active."
+    fi
+  fi
+fi
+
 emoji(){ [ "$1" = "1" ] && echo "✅" || echo "❌"; }
+blinkit_emoji(){
+  if [ "$BLK_OK" = "1" ]; then echo "✅"
+  elif [ "$BLK_DUE" = "1" ]; then echo "❌"
+  else echo "⏳"
+  fi
+}
 SUMMARY="Morning report check ${TODAY}:
 $(emoji $NAT_OK) BigBasket national (10:00 batch)
 $(emoji $PIN_OK) BigBasket pincode-wise (Ecom group)
-$(emoji $BLK_OK) Blinkit (Ecom group)
+$(blinkit_emoji) Blinkit (Ecom group; ${BLINKIT_DEADLINE} IST deadline)
 $(emoji $BATCH_OK) Price-data batch (Ecom group WhatsApp)"
 [ -n "$PIN_NOTE" ] && SUMMARY="$SUMMARY
 ↳ $PIN_NOTE"
 [ -n "$BATCH_NOTE" ] && SUMMARY="$SUMMARY
 ↳ $BATCH_NOTE"
+[ -n "$BLK_NOTE" ] && SUMMARY="$SUMMARY
+↳ $BLK_NOTE"
 
-# --- Blinkit is Mac-only: cannot be validly reproduced on the VPS -> alert only ---
-if [ "$BLK_OK" != "1" ]; then
+# Blinkit uses the Mac Pro + Windows device team with an authenticated VPS fallback.
+if [ "$BLK_OK" != "1" ] && [ "$BLK_DUE" = "1" ]; then
   SUMMARY="$SUMMARY
-↳ Blinkit needs the Mac (residential auth). If the Mac is down it can't be recovered on the VPS — power the Mac on."
+↳ Blinkit missed its deadline; inspect the device-team agent, quality hold, and residential routes."
 fi
 
 QUIET_OK="${GUARD_QUIET_OK:-0}"   # midday re-check (12:30) runs with GUARD_QUIET_OK=1: stay silent when all-OK
@@ -187,6 +221,8 @@ if [ "$NAT_OK" = "1" ] && [ "$PIN_OK" = "1" ] && [ "$BLK_OK" = "1" ] && [ "$BATC
     LOG "all four routed — OK"
     alert "✅ All 4 morning reports routed for ${TODAY} (BB national, BB pincode, Blinkit, price-data batch)."
   fi
+elif [ "$NAT_OK" = "1" ] && [ "$PIN_OK" = "1" ] && [ "$BATCH_OK" = "1" ] && [ "$BLK_DUE" != "1" ]; then
+  LOG "non-Blinkit morning checks routed; Blinkit pending until ${BLINKIT_DEADLINE} IST"
 else
   alert "⚠️ $SUMMARY"
 fi

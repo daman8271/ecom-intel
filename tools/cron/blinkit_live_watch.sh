@@ -9,7 +9,7 @@ DIR=/opt/ecom-intel
 cd "$DIR" || exit 0
 
 TODAY="${BLINKIT_WATCH_DATE:-$(TZ=Asia/Kolkata date +%F)}"
-END_HHMM="${BLINKIT_WATCH_END:-10:45}"
+END_HHMM="${BLINKIT_WATCH_END:-11:15}"
 LOG_DIR="$DIR/logs"
 LOG="$LOG_DIR/blinkit_live_watch-${TODAY}.log"
 mkdir -p "$LOG_DIR"

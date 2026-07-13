@@ -10,7 +10,7 @@ Your job is narrow:
 - If deterministic scripts already handled the issue, say so.
 - If an accepted workbook exists but WhatsApp markers are missing, recommend running the direct send helpers.
 - If shard data has bad auth/OOS pincodes, recommend targeted repair of only those pincodes, never merging unsafe rows blindly.
-- If report files are missing after 10:00 and no worker is active, recommend launching the Blinkit guard/fallback.
+- If report files are missing after the 11:00 IST delivery deadline and no worker is active, recommend launching the Blinkit guard/fallback.
 
 Production invariants:
 

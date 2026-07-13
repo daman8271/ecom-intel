@@ -10,6 +10,7 @@ cd "$ROOT" || exit 1
 
 PHASE="${1:-poll}"
 DATE_IST="${BLINKIT_AGENT_DATE:-$(TZ=Asia/Kolkata date +%F)}"
+DELIVERY_DEADLINE="${BLINKIT_DELIVERY_DEADLINE:-11:00}"
 LOG_DIR="$ROOT/logs/blinkit-agent"
 LOG="$LOG_DIR/hook-${DATE_IST}.log"
 LOCK="$ROOT/logs/.blinkit-agent-hook.lock"
@@ -165,8 +166,8 @@ case "$state" in
     fi
     exit 0
     ;;
-  missing_after_1000)
-    log "report missing after 10:00"
+  missing_after_deadline|missing_after_1000)
+    log "report missing after ${DELIVERY_DEADLINE} deadline"
     repair_held_mac_drop || true
     if [ -f "$ROOT/output/Jivo-Blinkit-Live-Report-${DATE_IST}.xlsx" ]; then
       "$ROOT/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "agent-repair" >>"$LOG" 2>&1 || true
@@ -174,12 +175,12 @@ case "$state" in
     fi
     "$ROOT/tools/cron/blinkit_batch_guard.sh" "agent-$PHASE" >>"$LOG" 2>&1 || true
     "$ROOT/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "agent-$PHASE" >>"$LOG" 2>&1 || true
-    invoke_readonly_codex "$snap" "missing-after-1000"
+    invoke_readonly_codex "$snap" "missing-after-deadline"
     exit 0
     ;;
   running)
-    if after_hhmm "10:00"; then
-      log "run still active after 10:00; keeping delivery sweep live"
+    if after_hhmm "$DELIVERY_DEADLINE"; then
+      log "run still active after ${DELIVERY_DEADLINE}; keeping delivery sweep live"
       "$ROOT/tools/cron/blinkit_whatsapp_delivery_sweep.sh" "agent-running" >>"$LOG" 2>&1 || true
     fi
     exit 0

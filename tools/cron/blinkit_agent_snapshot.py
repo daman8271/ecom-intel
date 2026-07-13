@@ -18,6 +18,7 @@ from typing import Any
 
 ROOT = Path("/opt/ecom-intel")
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
+DELIVERY_DEADLINE = os.environ.get("BLINKIT_DELIVERY_DEADLINE", "11:00")
 
 
 def read_json(path: Path) -> Any | None:
@@ -189,12 +190,21 @@ def local_blinkit_processes() -> list[str]:
         "blinkit_vps_kvm_fallback.sh",
         "run_platform_shard.sh blinkit",
         "platforms/blinkit/scrape.js",
-        "blinkit_today_supervisor.sh",
     )
     for line in proc.stdout.splitlines():
         if any(n in line for n in needles) and "blinkit_agent_snapshot.py" not in line:
             lines.append(line.strip())
     return lines[:30]
+
+
+def deadline_at(date_ist: str, hhmm: str) -> dt.datetime:
+    try:
+        hour, minute = (int(part) for part in hhmm.split(":", 1))
+        day = dt.date.fromisoformat(date_ist)
+        return dt.datetime.combine(day, dt.time(hour, minute), tzinfo=IST)
+    except (TypeError, ValueError):
+        day = dt.date.fromisoformat(date_ist)
+        return dt.datetime.combine(day, dt.time(11, 0), tzinfo=IST)
 
 
 def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], result: dict[str, Any], fallback_runs: list[dict[str, Any]], processes: list[str], mac_drop: dict[str, Any]) -> str:
@@ -230,9 +240,9 @@ def derive_state(now: dt.datetime, date_ist: str, reports: dict[str, Any], resul
             pass
     if latest_bad:
         return "quality_hold"
-    cutoff = now.replace(hour=10, minute=0, second=0, microsecond=0)
+    cutoff = deadline_at(date_ist, DELIVERY_DEADLINE)
     if now >= cutoff and not (main_exists and not_listed_exists):
-        return "missing_after_1000"
+        return "missing_after_deadline"
     return "waiting"
 
 
@@ -256,6 +266,7 @@ def main() -> int:
     snapshot = {
         "date_ist": date_ist,
         "now_ist": now.isoformat(),
+        "delivery_deadline_ist": DELIVERY_DEADLINE,
         "expected_pincodes": expected_pincodes(),
         "reports": reports,
         "result": result,

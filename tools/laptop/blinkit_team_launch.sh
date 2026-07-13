@@ -30,7 +30,7 @@ TODAY="$(date +%F)"
 REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
 SOURCE="${BLINKIT_TEAM_SOURCE:-platforms/blinkit/pincodes.daily.json}"
 AUTH_LAPTOP="secrets/blinkit-auth-state-laptop.json"
-CONCURRENCY="${BLINKIT_TEAM_LAPTOP_CONCURRENCY:-3}"   # 2->3 (2026-07-13): halve wall-time so the merge lands before 10:30
+CONCURRENCY="${BLINKIT_TEAM_LAPTOP_CONCURRENCY:-3}"   # 2->3 (2026-07-13): keep merge comfortably ahead of the 11:00 deadline
 
 [ -f "$REPORT" ] && { LOG "today's report already present — nothing to do"; exit 0; }
 if [ -f logs/.mac-offline ]; then

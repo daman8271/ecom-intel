@@ -67,7 +67,7 @@ done
 # 6) chain lead used
 grep "deadline_sweep(10:00)" logs/cron.log | grep "$TODAY" | head -2 || true
 
-# 7) blinkit WhatsApp delivery time (10:30 hard rule)
+# 7) Blinkit WhatsApp delivery time (11:00 hard deadline from 2026-07-14)
 grep -h "$TODAY" logs/blinkit-main-wa.log 2>/dev/null | tail -2 || say "blinkit WA log" "no entries yet"
 
 exit $RC

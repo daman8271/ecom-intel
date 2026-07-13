@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# blinkit_batch_guard.sh — owner rule 2026-07-07: the Blinkit report MUST be in
-# the 10:00 batch / 10:30 Ecom-group post. Root cause of the daily misses: the
+# blinkit_batch_guard.sh — owner rule updated 2026-07-14: the Blinkit report MUST
+# reach the Ecom group by 11:00 IST. Root cause of the daily misses: the
 # Mac launchd scrape fired 03:45 IST when many Blinkit dark stores are closed,
 # so drops resolved ~258-261 stores and ingest's store-collapse guard (correctly)
 # refused them; accepted runs have all been daytime runs (~300+ stores).
@@ -18,6 +18,7 @@ TODAY="$(date +%F)"
 REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
 WRAPPER="/Users/danny./VPS-Migration/scripts/run_blinkit_mac_to_vps.sh"
 PASS="${1:-early}"
+DELIVERY_DEADLINE="${BLINKIT_DELIVERY_DEADLINE:-11:00}"
 LOG(){ echo "[$(date '+%F %T')] blinkit_guard($PASS): $*"; }
 
 mac_blinkit_running(){
@@ -50,7 +51,7 @@ esac
 
 # Device-team split (laptop worker #4, 2026-07-13): while today's team run is
 # active the Mac only scrapes shard-0 and no mac-drops file appears — that is
-# NOT a miss. blinkit_team_watch.sh (cron */10 06-09) owns pull/merge/rescue;
+# NOT a miss. blinkit_team_watch.sh (cron */10 06-11) owns pull/merge/rescue;
 # the late pass reclaims control only when the team machinery is provably idle.
 TEAM_PTR="shards/runs/ACTIVE-blinkit-team"
 if [ -f "$TEAM_PTR" ]; then
@@ -116,7 +117,7 @@ fi
 
 if mac_blinkit_running; then
   LOG "Mac scrape already running — not double-triggering"
-  [ "$PASS" = "late" ] && tg "⏳ Blinkit guard 08:45: scrape still running — report may land close to the 10:00 batch. Watching."
+  [ "$PASS" = "late" ] && tg "⏳ Blinkit guard 08:45: scrape still running — watching against the ${DELIVERY_DEADLINE} Ecom-group deadline."
   exit 0
 fi
 
@@ -128,9 +129,9 @@ LOG "no report for $TODAY and no scrape running -> triggering Mac re-run"
 if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "nohup $WRAPPER >/tmp/blinkit-guard-rerun.log 2>&1 & disown" 2>/dev/null; then
   LOG "trigger sent"
   if [ "$PASS" = "late" ]; then
-    tg "🛠 Blinkit guard 08:45: no drop for ${TODAY} — triggered a fresh Mac scrape (LATE pass; ~1h50m run may miss the 10:00 batch, will still post when done)"
+    tg "🛠 Blinkit guard 08:45: no drop for ${TODAY} — triggered a fresh Mac scrape (LATE pass; targeting the ${DELIVERY_DEADLINE} Ecom-group deadline)"
   else
-    tg "🛠 Blinkit guard 06:35: no accepted drop for ${TODAY} — triggered a fresh Mac scrape; should land ~08:30, in time for the 10:00 batch"
+    tg "🛠 Blinkit guard 06:35: no accepted drop for ${TODAY} — triggered a fresh Mac scrape; targeting delivery before ${DELIVERY_DEADLINE} IST"
   fi
 else
   LOG "trigger FAILED (ssh unreachable?)"

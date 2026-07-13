@@ -22,7 +22,7 @@ MAX_UNVERIFIED_OOS="${BLINKIT_MONITOR_MAX_UNVERIFIED_OOS:-0}"
 MAX_PDP_PRICE_PROBE_FAILED="${BLINKIT_MONITOR_MAX_PDP_PRICE_PROBE_FAILED:-0}"
 MAX_COORD_ERRORS="${BLINKIT_MONITOR_MAX_COORD_ERRORS:-0}"
 STALE_ALERT_AFTER="${BLINKIT_MONITOR_STALE_ALERT_AFTER:-09:15}"
-REPORT_ALERT_AFTER="${BLINKIT_MONITOR_REPORT_ALERT_AFTER:-10:05}"
+REPORT_ALERT_AFTER="${BLINKIT_MONITOR_REPORT_ALERT_AFTER:-11:05}"
 DRY="${BLINKIT_MONITOR_DRYRUN:-0}"
 EXIT_CODE="${BLINKIT_MONITOR_EXIT_CODE:-0}"
 
@@ -98,7 +98,7 @@ max_pdp_price_probe_failed = int(os.environ.get("MAX_PDP_PRICE_PROBE_FAILED") or
 max_coord_errors = int(os.environ.get("MAX_COORD_ERRORS") or 0)
 monitor_pass = os.environ.get("PASS") or "poll"
 stale_alert_after = os.environ.get("STALE_ALERT_AFTER") or "09:15"
-report_alert_after = os.environ.get("REPORT_ALERT_AFTER") or "10:05"
+report_alert_after = os.environ.get("REPORT_ALERT_AFTER") or "11:05"
 IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
 
 issues = []
