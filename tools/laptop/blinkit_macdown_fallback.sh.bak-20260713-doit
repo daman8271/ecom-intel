@@ -32,7 +32,7 @@ REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
 SOURCE="${BLINKIT_TEAM_SOURCE:-platforms/blinkit/pincodes.daily.json}"
 AUTH_LAPTOP="secrets/blinkit-auth-state-laptop.json"
 AUTH_VPS="secrets/blinkit-auth-state.json"
-CONCURRENCY="${BLINKIT_TEAM_LAPTOP_CONCURRENCY:-3}"   # 2->3 (2026-07-13): match daily team path
+CONCURRENCY="${BLINKIT_TEAM_LAPTOP_CONCURRENCY:-2}"
 SMOKE="${BLINKIT_MACDOWN_PREFLIGHT_ONLY:-0}"
 
 # Already handled elsewhere -> report "engaged" so the caller does not stack a

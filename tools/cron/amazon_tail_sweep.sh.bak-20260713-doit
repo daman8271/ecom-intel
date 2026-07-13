@@ -67,16 +67,7 @@ print(f"[{P}] census: {out}")
 PY
 }
 
-# Optional platform filter (2026-07-13): with args, run ONLY those platforms
-# (serially). amazon-now is scheduled at a LATER slot than amazon-fresh because
-# its daytime core rerun (goal #71, fires >=7:30) holds .amazon-now.lock past
-# 10:30 — the 10:15 shared run kept losing the lock and censusing 0/24. No args
-# = original behaviour (both in parallel), preserved for manual/one-shot runs.
-if [ "$#" -gt 0 ]; then
-  for P in "$@"; do run_platform "$P"; done
-else
-  run_platform amazon-fresh & F=$!
-  run_platform amazon-now  & N=$!
-  wait "$F"; wait "$N"
-fi
-LOG all "tail sweep finished (${*:-amazon-fresh amazon-now})"
+run_platform amazon-fresh & F=$!
+run_platform amazon-now  & N=$!
+wait "$F"; wait "$N"
+LOG all "tail sweep finished"
