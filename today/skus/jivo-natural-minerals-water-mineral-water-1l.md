@@ -5,8 +5,8 @@ display_name: JIVO Natural Minerals Water Mineral Water (1000 ml)
 platforms:
   - flipkart-minutes
 first_seen: 2026-06-23
-last_seen: 2026-07-11
-observations: 817
+last_seen: 2026-07-13
+observations: 1023
 min_price: 20
 max_price: 24
 latest_price: 22
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[flipkart-minutes]] — latest ₹22 (26.0% off)
 
 ## Available in cities
-[[Ahmedabad]] · [[Chennai]] · [[Delhi]] · [[Gurgaon]] · [[Gurugram]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Nashik]] · [[Noida]] · [[Pune]] · [[Surat]]
+[[Ahmedabad]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Howrah]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Nashik]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (20)
-[[flipkart-minutes-2026-07-11-0645]] · [[flipkart-minutes-2026-07-10-0645]] · [[flipkart-minutes-2026-07-08-0645]] · [[flipkart-minutes-2026-07-07-0055]] · [[flipkart-minutes-2026-07-06-0102]] · [[flipkart-minutes-2026-07-05-0102]] · [[flipkart-minutes-2026-07-04-0102]] · [[flipkart-minutes-2026-07-03-0102]] · [[flipkart-minutes-2026-07-02-1158]] · [[flipkart-minutes-2026-07-01-1549]] · [[flipkart-minutes-2026-06-29-1605]] · [[flipkart-minutes-2026-06-27-1201]] · [[flipkart-minutes-2026-06-27-0832]] · [[flipkart-minutes-2026-06-26-1213]] · [[flipkart-minutes-2026-06-26-0832]] · [[flipkart-minutes-2026-06-25-0832]] · [[flipkart-minutes-2026-06-24-1208]] · [[flipkart-minutes-2026-06-24-0832]] · [[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]]
+## Runs that observed this SKU (22)
+[[flipkart-minutes-2026-07-13-0645]] · [[flipkart-minutes-2026-07-12-0645]] · [[flipkart-minutes-2026-07-11-0645]] · [[flipkart-minutes-2026-07-10-0645]] · [[flipkart-minutes-2026-07-08-0645]] · [[flipkart-minutes-2026-07-07-0055]] · [[flipkart-minutes-2026-07-06-0102]] · [[flipkart-minutes-2026-07-05-0102]] · [[flipkart-minutes-2026-07-04-0102]] · [[flipkart-minutes-2026-07-03-0102]] · [[flipkart-minutes-2026-07-02-1158]] · [[flipkart-minutes-2026-07-01-1549]] · [[flipkart-minutes-2026-06-29-1605]] · [[flipkart-minutes-2026-06-27-1201]] · [[flipkart-minutes-2026-06-27-0832]] · [[flipkart-minutes-2026-06-26-1213]] · [[flipkart-minutes-2026-06-26-0832]] · [[flipkart-minutes-2026-06-25-0832]] · [[flipkart-minutes-2026-06-24-1208]] · [[flipkart-minutes-2026-06-24-0832]] · [[flipkart-minutes-2026-06-23-1215]] · [[flipkart-minutes-2026-06-23-0832]]
 
-## Price history (817 observations)
+## Price history (1023 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -851,6 +851,212 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-11-0645,2026-07-11,flipkart-minutes,Pune,412107,22,30,26,0
 2026-07-11-0645,2026-07-11,flipkart-minutes,Surat,394230,22,30,26,0
 2026-07-11-0645,2026-07-11,flipkart-minutes,Surat,395009,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380003,22,25,12,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380004,22,25,12,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380006,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380007,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380008,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380009,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380016,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380022,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380026,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380028,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380051,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380054,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380058,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,380059,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,382345,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,382350,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Ahmedabad,382443,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Delhi,110077,24,30,20,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,302001,24,30,20,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,302019,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,302021,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,302034,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,302036,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,302037,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,302046,24,30,20,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,303104,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,303121,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Jaipur,303122,24,30,20,1
+2026-07-12-0645,2026-07-12,flipkart-minutes,Kolkata,700040,24,30,20,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Kolkata,700067,24,30,20,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Kolkata,700099,24,30,20,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400006,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400012,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400013,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400019,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400055,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400066,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400079,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400080,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400082,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400091,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Mumbai,400098,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422002,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422005,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422008,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422011,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422012,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422013,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422105,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422221,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Nashik,422501,22,25,12,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Pune,411012,20,,,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Pune,411044,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Pune,411045,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Pune,411058,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Pune,412107,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Surat,394230,22,30,26,0
+2026-07-12-0645,2026-07-12,flipkart-minutes,Surat,395009,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380003,22,25,12,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380004,22,25,12,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380006,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380007,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380008,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380009,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380016,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380022,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380026,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380028,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380051,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380054,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380058,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380059,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,380061,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,382345,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,382350,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ahmedabad,382443,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Faridabad,121006,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Ghaziabad,201011,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711101,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711102,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711104,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711105,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711107,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711113,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711202,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711203,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Howrah,711301,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302001,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302019,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302021,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302034,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302036,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302037,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302040,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,302046,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,303104,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,303121,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Jaipur,303122,24,30,20,1
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700003,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700005,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700006,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700008,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700027,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700030,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700032,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700034,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700037,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700038,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700039,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700040,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700041,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700042,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700043,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700047,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700050,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700053,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700060,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700061,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700067,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700070,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700088,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700092,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700094,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700095,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700099,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Kolkata,700107,24,30,20,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400002,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400003,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400004,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400007,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400008,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400009,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400010,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400011,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400014,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400016,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400019,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400022,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400025,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400026,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400027,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400031,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400032,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400033,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400035,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400037,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400043,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400049,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400053,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400055,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400056,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400057,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400063,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400066,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400067,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400070,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400071,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400072,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400074,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400078,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400079,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400085,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400086,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400088,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400091,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400092,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400093,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400094,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400096,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400097,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400098,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400102,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Mumbai,400104,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422002,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422005,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422008,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422009,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422011,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422012,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422221,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422401,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Nashik,422501,22,25,12,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411007,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411008,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411012,20,,,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411014,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411016,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411020,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411022,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411023,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411027,20,,,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411028,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411038,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411043,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411045,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411046,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411047,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411052,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411058,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411068,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,411069,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,412101,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,412205,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Pune,412208,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Surat,394230,22,30,26,0
+2026-07-13-0645,2026-07-13,flipkart-minutes,Surat,395009,22,30,26,0
 ```
 
 ---

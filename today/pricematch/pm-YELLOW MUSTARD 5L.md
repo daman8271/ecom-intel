@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-11
-observations: 264
+last_seen: 2026-07-13
+observations: 280
 latest_status: NOT_LISTED
-below_days: 8
+below_days: 10
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-first-pressed-yellow-mustard-oil-5-litre-pili-sarson-oil-for-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹1269 vs live ₹-
-- **Days below reference:** 8 of 33
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-06]] · [[2026-07-11]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-13) — ref ₹1329 vs live ₹-
+- **Days below reference:** 10 of 35
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-06]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]]
 
-## Ref-vs-live history (264 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -309,6 +309,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-11,flipkart,NOT_LISTED,SVD,1269,,,,,,0,false
 2026-07-11,flipkart-minutes,NOT_LISTED,SVD,1269,,,,,,0,false
 2026-07-11,zepto,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-12,amazon,BELOW,SVD,1269,1199,1199,1199,-70,-5.52,1,true
+2026-07-12,amazon-fresh,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-12,amazon-now,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-12,bigbasket,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-12,blinkit,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-12,flipkart,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-12,flipkart-minutes,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-12,zepto,NOT_LISTED,SVD,1269,,,,,,0,false
+2026-07-13,amazon,BELOW,BAU,1329,1199,1199,1199,-130,-9.78,1,true
+2026-07-13,amazon-fresh,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-07-13,amazon-now,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-07-13,bigbasket,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-07-13,blinkit,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-07-13,flipkart,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-07-13,flipkart-minutes,NOT_LISTED,BAU,1329,,,,,,0,false
+2026-07-13,zepto,NOT_LISTED,BAU,1329,,,,,,0,false
 ```
 
 ---

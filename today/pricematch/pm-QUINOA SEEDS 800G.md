@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-11
-observations: 264
+last_seen: 2026-07-13
+observations: 280
 latest_status: NOT_LISTED
 below_days: 7
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-prote
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹249 vs live ₹-
-- **Days below reference:** 7 of 33
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-13) — ref ₹259 vs live ₹-
+- **Days below reference:** 7 of 35
 - **Below on:** [[2026-06-08]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]]
 
-## Ref-vs-live history (264 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -309,6 +309,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-11,flipkart,NOT_LISTED,SVD,249,,,,,,0,false
 2026-07-11,flipkart-minutes,NOT_LISTED,SVD,249,,,,,,0,false
 2026-07-11,zepto,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-12,amazon,ABOVE,SVD,249,259,259,259,10,4.02,0,true
+2026-07-12,amazon-fresh,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-12,amazon-now,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-12,bigbasket,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-12,blinkit,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-12,flipkart,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-12,flipkart-minutes,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-12,zepto,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-13,amazon,MATCH,BAU,259,259,259,259,0,0,0,true
+2026-07-13,amazon-fresh,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,amazon-now,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,bigbasket,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,blinkit,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,flipkart,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,flipkart-minutes,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-13,zepto,NOT_LISTED,BAU,259,,,,,,0,false
 ```
 
 ---

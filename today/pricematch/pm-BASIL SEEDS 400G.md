@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-11
-observations: 264
+last_seen: 2026-07-13
+observations: 280
 latest_status: NOT_LISTED
 below_days: 1
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-raw-basil-seeds-for-weight-loss-400gm-sabja-seed-takmuria-see
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-11) — ref ₹189 vs live ₹-
-- **Days below reference:** 1 of 33
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-13) — ref ₹189 vs live ₹-
+- **Days below reference:** 1 of 35
 - **Below on:** [[2026-07-04]]
 
-## Ref-vs-live history (264 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -309,6 +309,22 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-11,flipkart,NOT_LISTED,SVD,189,,,,,,0,false
 2026-07-11,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
 2026-07-11,zepto,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,amazon,OOS,SVD,189,,,,,,0,false
+2026-07-12,amazon-fresh,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,amazon-now,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,bigbasket,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,blinkit,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,flipkart,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-12,zepto,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-13,amazon,OOS,BAU,189,,,,,,0,false
+2026-07-13,amazon-fresh,NOT_LISTED,BAU,189,,,,,,0,false
+2026-07-13,amazon-now,NOT_LISTED,BAU,189,,,,,,0,false
+2026-07-13,bigbasket,NOT_LISTED,BAU,189,,,,,,0,false
+2026-07-13,blinkit,NOT_LISTED,BAU,189,,,,,,0,false
+2026-07-13,flipkart,NOT_LISTED,BAU,189,,,,,,0,false
+2026-07-13,flipkart-minutes,NOT_LISTED,BAU,189,,,,,,0,false
+2026-07-13,zepto,NOT_LISTED,BAU,189,,,,,,0,false
 ```
 
 ---
