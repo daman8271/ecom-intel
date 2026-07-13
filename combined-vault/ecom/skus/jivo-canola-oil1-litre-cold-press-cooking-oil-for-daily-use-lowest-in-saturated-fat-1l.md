@@ -72,7 +72,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000032|sku-FG0000032]] — same physical product (CANOLA 1L = 'Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily U...'), name+pack match, unfused by SKU bridge _(D0)_
+- [[jivo/skus/sku-FG0000032|sku-FG0000032]] — Fuzzy name/pack match: ecom listing 'Jivo Canola oil1 Litre Cold Press Cooking Oil For Daily Use Lowest In ' is JIVO CANOLA 1L; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

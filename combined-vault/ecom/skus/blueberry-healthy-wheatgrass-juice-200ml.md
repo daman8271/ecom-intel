@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: blueberry-healthy-wheatgrass-juice-200ml
-display_name: Blueberry Healthy Wheatgrass Juice (200 ml)
+display_name: Blueberry Healthy Wheatgrass Juice 200ml
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Blueberry Healthy Wheatgrass Juice (200 ml)**
+**Blueberry Healthy Wheatgrass Juice 200ml**
 
 ## Sold on
 - [[bigbasket]] — latest ₹50

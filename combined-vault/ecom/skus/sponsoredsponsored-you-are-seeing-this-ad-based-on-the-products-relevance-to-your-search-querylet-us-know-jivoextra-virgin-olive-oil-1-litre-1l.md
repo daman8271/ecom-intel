@@ -136,8 +136,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000042|sku-FG0000042]] — same physical product (EXTRA VIRGIN 1L = 'Sponsoredsponsored You Are Seeing This Ad Based On The Pr...'), name+pack match, unfused by SKU bridge _(D0)_
-- [[jivo/skus/sku-FG0000071|sku-FG0000071]] — same physical product (EXTRA VIRGIN 1L = 'Sponsoredsponsored You Are Seeing This Ad Based On The Pr...'), name+pack match, unfused by SKU bridge _(D0)_
+- [[products/EXTRA VIRGIN 1L|EXTRA VIRGIN 1L]] — Fuzzy name/pack match: ecom listing 'Sponsoredsponsored You Are Seeing This Ad Based On The Products Releva' is JIVO EXTRA VIRGIN 1L; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

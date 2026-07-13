@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-344.76,0.0,SWIGGY,,,79768,361.998,HYDERABAD,110.0,2026-07-08,2026-07-26,CMMPO12843,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-07-11,total_po_zbs:79768,2026-07-12
-242.86,0.0,SWIGGY,,,79769,255.003,HYDERABAD,160.0,2026-07-08,2026-07-26,CMMPO12843,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-07-11,total_po_zbs:79769,2026-07-12
-180.95,0.0,SWIGGY,,,79770,189.9975,HYDERABAD,80.0,2026-07-08,2026-07-26,CMMPO12843,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-07-11,total_po_zbs:79770,2026-07-12
+344.76,0.0,SWIGGY,,,79768,361.998,HYDERABAD,110.0,2026-07-08,2026-07-26,CMMPO12843,,548047,"Jivo Groundnut Oil | Cold Pressed, Unrefined Peanut Oil for Cooking | Natural & Chemical-Free Rich Aroma & Flavour 2.0 ltr",CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-07-11,total_po_zbs:79768,2026-07-13
+242.86,0.0,SWIGGY,,,79769,255.003,HYDERABAD,160.0,2026-07-08,2026-07-26,CMMPO12843,,952130,Jivo First Pressed Sesame Oil | Gingelly Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-07-11,total_po_zbs:79769,2026-07-13
+180.95,0.0,SWIGGY,,,79770,189.9975,HYDERABAD,80.0,2026-07-08,2026-07-26,CMMPO12843,,98631,Jivo First Pressed Yellow Mustard Oil 1.0 ltr,CONFIRMED,KNOWTABLE ONLINE SERVICES PRIVATE LIMITED,2026-07-11,total_po_zbs:79770,2026-07-13
 ```
 
 ---

@@ -6,11 +6,11 @@ platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-07-09
-observations: 2
+last_seen: 2026-07-13
+observations: 6
 min_price: 991
-max_price: 1128
-latest_price: 991
+max_price: 1134
+latest_price: 1134
 tags:
   - type/sku-hub
   - platform/amazon
@@ -25,20 +25,24 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹1128 (33.6% off)
-- [[amazon-fresh]] — latest ₹991 (41.7% off)
+- [[amazon-fresh]] — latest ₹1134 (33.3% off)
 
 ## Available in cities
-[[Kolkata]]
+[[Kochi]] · [[Kolkata]] · [[Vijayawada]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-07-09-0726]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-2026-05-21-1330]]
 
-## Price history (2 observations)
+## Price history (6 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,1128,1700,33.6,1
 2026-07-09-0726,2026-07-09,amazon-fresh,Kolkata,700053,991,1700,41.7,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Kochi,682011,1134,1700,33.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Kochi,682040,1134,1700,33.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Vijayawada,520001,1134,1700,33.3,1
+2026-07-13-0707,2026-07-13,amazon-fresh,Vijayawada,520002,1134,1700,33.3,1
 ```
 
 ---

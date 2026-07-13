@@ -208,7 +208,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000021|sku-FG0000021]] — same physical product (CANOLA 1L POUCH = 'Jivo Canola oil1 Litre Refined Pouch Cooking Oil For Dail...'), name+pack match, unfused by SKU bridge _(D0)_
+- [[jivo/skus/sku-FG0000021|sku-FG0000021]] — Fuzzy name/pack match: ecom listing 'Jivo Canola oil1 Litre Refined Pouch Cooking Oil For Daily Use 1l' is JIVO CANOLA 1L POUCH; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

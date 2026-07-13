@@ -2863,9 +2863,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000004|sku-FG0000004]] — same physical product (CANOLA 5L = 'Jivo Canola Cold Pressed Edible Oil 5 Litres 5l'), name+pack match, unfused by SKU bridge _(D0)_
-- [[jivo/skus/sku-FG0000118|sku-FG0000118]] — same physical product (CANOLA 5L = 'Jivo Canola Cold Pressed Edible Oil 5 Litres 5l'), name+pack match, unfused by SKU bridge _(D0)_
-- [[jivo/skus/sku-SL0000018|sku-SL0000018]] — same physical product (CANOLA 5L = 'Jivo Canola Cold Pressed Edible Oil 5 Litres 5l'), name+pack match, unfused by SKU bridge _(D0)_
+- [[products/CANOLA 5L|CANOLA 5L]] — Fuzzy name/pack match: ecom listing 'Jivo Canola Cold Pressed Edible Oil 5 Litres 5l' is JIVO CANOLA 5L; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

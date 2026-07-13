@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-cooking-pomace-olive-oil-1l
-display_name: Jivo Daily Cooking Pomace Olive Oil (1 l)
+display_name: Jivo Daily Cooking Pomace Olive Oil 1l
 platforms:
   - amazon-fresh
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Daily Cooking Pomace Olive Oil (1 l)**
+**Jivo Daily Cooking Pomace Olive Oil 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹758 (41.6% off)
@@ -2217,7 +2217,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000028|sku-FG0000028]] — same physical product (JIVO POMACE 1L = 'Jivo Daily Cooking Pomace Olive Oil (1 l)'), name+pack match, unfused by SKU bridge _(D0)_
+- [[jivo/skus/sku-FG0000028|sku-FG0000028]] — Fuzzy name/pack match: ecom listing 'Jivo Daily Cooking Pomace Olive Oil 1l' is JIVO JIVO POMACE 1L; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

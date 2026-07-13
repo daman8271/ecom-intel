@@ -42,8 +42,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000109|sku-FG0000109]] — same physical product (SOYABEAN 1L POUCH = 'Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l'), name+pack match, unfused by SKU bridge _(D0)_
-- [[jivo/skus/sku-FG0000194|sku-FG0000194]] — same physical product (SOYABEAN 1L POUCH = 'Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l'), name+pack match, unfused by SKU bridge _(D0)_
+- [[products/SOYABEAN 1L POUCH|SOYABEAN 1L POUCH]] — Fuzzy name/pack match: ecom listing 'Jivo Soyabean Oil Pouch 1 Litre Edible Cooking Oil F 1l' is JIVO SOYABEAN 1L POUCH; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

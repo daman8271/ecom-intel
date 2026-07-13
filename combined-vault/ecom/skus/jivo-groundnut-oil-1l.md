@@ -653,7 +653,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000142|sku-FG0000142]] — same physical product (GROUNDNUT 1L = 'Jivo Groundnut Oil 1l'), name+pack match, unfused by SKU bridge _(D0)_
+- [[jivo/skus/sku-FG0000142|sku-FG0000142]] — Fuzzy name/pack match: ecom listing 'Jivo Groundnut Oil 1l' is JIVO GROUNDNUT 1L; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

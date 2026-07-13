@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-12
-observations: 272
+last_seen: 2026-07-13
+observations: 280
 latest_status: NOT_LISTED
-below_days: 22
+below_days: 23
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-12) — ref ₹209 vs live ₹-
-- **Days below reference:** 22 of 34
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-12]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-13) — ref ₹219 vs live ₹-
+- **Days below reference:** 23 of 35
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-12]] · [[2026-07-13]]
 
-## Ref-vs-live history (272 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -317,6 +317,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-12,flipkart,NOT_LISTED,SVD,209,,,,,,0,false
 2026-07-12,flipkart-minutes,NOT_LISTED,SVD,209,,,,,,0,false
 2026-07-12,zepto,NOT_LISTED,SVD,209,,,,,,0,false
+2026-07-13,amazon,OOS,BAU,219,,,,,,0,false
+2026-07-13,amazon-fresh,BELOW,BAU,219,199,199,199,-20,-9.13,1,true
+2026-07-13,amazon-now,NOT_LISTED,BAU,219,,,,,,0,false
+2026-07-13,bigbasket,NOT_LISTED,BAU,219,,,,,,0,false
+2026-07-13,blinkit,NOT_LISTED,BAU,219,,,,,,0,false
+2026-07-13,flipkart,NOT_LISTED,BAU,219,,,,,,0,false
+2026-07-13,flipkart-minutes,NOT_LISTED,BAU,219,,,,,,0,false
+2026-07-13,zepto,NOT_LISTED,BAU,219,,,,,,0,false
 ```
 
 ---
@@ -324,7 +332,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 
 ## Related (discovered)
 
-- [[hubs/Tier - Commodity|Tier - Commodity]] — price-match signal for MUSTARD 1L POUCH (Commodity tier): latest NOT_LISTED, 21 day(s) below reference floor _(D7)_
+- [[hubs/Tier - Commodity|Tier - Commodity]] — MUSTARD 1L POUCH under price-floor (BELOW on amazon-fresh) while COMMODITY tier misses target (sec 1,948,825L < pri 2,027,183L) _(D7)_
 
 
 ## Related

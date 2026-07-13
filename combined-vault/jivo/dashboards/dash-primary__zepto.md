@@ -2126,6 +2126,19 @@ Up: [[dashboards-index]] · [[pf-zepto]]
     "pending_qty": 0.0,
     "pending_value": 0.0,
     "period": "2026-07-12"
+   },
+   {
+    "done_ltrs": 0.0,
+    "done_qty": 0.0,
+    "done_value": 0.0,
+    "label": "13 Jul",
+    "order_ltrs": 0.0,
+    "order_qty": 0.0,
+    "order_value": 0.0,
+    "pending_ltrs": 0.0,
+    "pending_qty": 0.0,
+    "pending_value": 0.0,
+    "period": "2026-07-13"
    }
   ],
   "month": [],

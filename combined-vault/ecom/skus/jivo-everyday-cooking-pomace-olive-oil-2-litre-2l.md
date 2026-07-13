@@ -61,8 +61,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000114|sku-FG0000114]] — same physical product (JIVO POMACE 2L = 'Jivo Everyday Cooking Pomace Olive Oil 2 Litre 2l'), name+pack match, unfused by SKU bridge _(D0)_
-- [[jivo/skus/sku-FG0000320|sku-FG0000320]] — same physical product (JIVO POMACE 2L = 'Jivo Everyday Cooking Pomace Olive Oil 2 Litre 2l'), name+pack match, unfused by SKU bridge _(D0)_
+- [[jivo/skus/sku-FG0000114|sku-FG0000114]] — Fuzzy name/pack match: ecom listing 'Jivo Everyday Cooking Pomace Olive Oil 2 Litre 2l' is JIVO JIVO POMACE 2L; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

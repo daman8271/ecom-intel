@@ -39,24 +39,24 @@ Up: [[dashboards-index]] · [[pf-swiggy]]
   "GMV"
  ],
  "sample": {
-  "AREA_NAME": "battarahalli",
-  "BASE_MRP": 450.0,
+  "AREA_NAME": "greater noida",
+  "BASE_MRP": 2800.0,
   "BRAND": "jivo",
-  "CITY": "bangalore",
+  "CITY": "Noida 1",
   "COMBO": "No",
   "COMBO_ITEM_CODE": null,
-  "COMBO_UNITS_SOLD": 0,
-  "GMV": 450.0,
-  "ITEM_CODE": "240878",
+  "COMBO_UNITS_SOLD": null,
+  "GMV": 2800.0,
+  "ITEM_CODE": "401502",
   "L1_CATEGORY": "edible oils and ghee",
-  "L2_CATEGORY": "olive oil",
-  "L3_CATEGORY": "extra virgin olive oil",
-  "ORDERED_DATE": "2026-06-16",
-  "PRODUCT_NAME": "Jivo Extra Virgin Olive Oil",
-  "STORE_ID": "1404583",
+  "L2_CATEGORY": "edible oils",
+  "L3_CATEGORY": "groundnut oil",
+  "ORDERED_DATE": "2026-04-05",
+  "PRODUCT_NAME": "jivo cold pressed oil groundnut oil",
+  "STORE_ID": "1402066",
   "UNITS_SOLD": 1,
-  "VARIANT": "250 ml",
-  "id": 1939713
+  "VARIANT": "5 ltr",
+  "id": 1084235
  }
 }
 ```

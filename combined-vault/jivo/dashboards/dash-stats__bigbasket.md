@@ -19,9 +19,9 @@ Up: [[dashboards-index]] · [[pf-bigbasket]]
 ```json
 {
  "activeTrucks": 0,
- "inventory": 347,
+ "inventory": 356,
  "openPOs": 0,
- "sells": 4983
+ "sells": 5621
 }
 ```
 

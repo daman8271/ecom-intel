@@ -2037,7 +2037,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 
 ## Related (discovered)
 
-- [[jivo/skus/sku-FG0000112|sku-FG0000112]] — same physical product (EXTRA VIRGIN 250ML = 'Jivo Extra Virgin Olive Oil 250 Ml 250ml'), name+pack match, unfused by SKU bridge _(D0)_
+- [[jivo/skus/sku-FG0000112|sku-FG0000112]] — Fuzzy name/pack match: ecom listing 'Jivo Extra Virgin Olive Oil 250 Ml 250ml' is JIVO EXTRA VIRGIN 250ML; same physical product, not fused by bridge _(D0)_
 
 
 ## Related

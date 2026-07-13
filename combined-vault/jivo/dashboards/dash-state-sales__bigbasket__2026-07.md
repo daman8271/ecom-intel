@@ -24,43 +24,43 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "cities": [
   {
    "city": "Gurugram",
-   "value": 1845.0
+   "value": 2032.0
   },
   {
    "city": "Hyderabad",
-   "value": 765.0
+   "value": 983.0
   },
   {
    "city": "Chandigarh Tricity",
-   "value": 509.0
+   "value": 543.0
   },
   {
    "city": "Pune",
-   "value": 471.0
+   "value": 521.0
   },
   {
    "city": "Noida",
-   "value": 440.0
+   "value": 481.0
   },
   {
    "city": "Bengaluru",
-   "value": 249.0
+   "value": 266.0
   },
   {
    "city": "Lucknow-Kanpur",
-   "value": 116.0
+   "value": 129.0
   },
   {
    "city": "Kolkata",
-   "value": 96.0
+   "value": 103.0
   },
   {
    "city": "Mumbai",
-   "value": 81.0
+   "value": 91.0
   },
   {
    "city": "Vijayawada-Guntur",
-   "value": 58.0
+   "value": 73.0
   }
  ],
  "errors": [],
@@ -3042,8 +3042,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
    }
   ]
  },
- "mapped_units": 4983.0,
- "mapped_value": 4983.0,
+ "mapped_units": 5621.0,
+ "mapped_value": 5621.0,
  "metric": "units",
  "metric_label": "Units sold",
  "metric_unit": "units",
@@ -3054,91 +3054,91 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
  "states": [
   {
    "by_platform": {
-    "BIG BASKET": 1846.0
+    "BIG BASKET": 2033.0
    },
    "state": "HARYANA",
-   "units": 1846.0,
-   "value": 1846.0
+   "units": 2033.0,
+   "value": 2033.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 806.0
+    "BIG BASKET": 1027.0
    },
    "state": "TELANGANA",
-   "units": 806.0,
-   "value": 806.0
+   "units": 1027.0,
+   "value": 1027.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 707.0
+    "BIG BASKET": 777.0
    },
    "state": "UTTAR PRADESH",
-   "units": 707.0,
-   "value": 707.0
+   "units": 777.0,
+   "value": 777.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 579.0
+    "BIG BASKET": 641.0
    },
    "state": "MAHARASHTRA",
-   "units": 579.0,
-   "value": 579.0
+   "units": 641.0,
+   "value": 641.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 509.0
+    "BIG BASKET": 543.0
    },
    "state": "CHANDIGARH",
-   "units": 509.0,
-   "value": 509.0
+   "units": 543.0,
+   "value": 543.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 273.0
+    "BIG BASKET": 290.0
    },
    "state": "KARNATAKA",
-   "units": 273.0,
-   "value": 273.0
+   "units": 290.0,
+   "value": 290.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 97.0
-   },
-   "state": "WEST BENGAL",
-   "units": 97.0,
-   "value": 97.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 94.0
+    "BIG BASKET": 121.0
    },
    "state": "ANDHRA PRADESH",
-   "units": 94.0,
-   "value": 94.0
+   "units": 121.0,
+   "value": 121.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 35.0
+    "BIG BASKET": 104.0
+   },
+   "state": "WEST BENGAL",
+   "units": 104.0,
+   "value": 104.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 42.0
    },
    "state": "UTTARAKHAND",
-   "units": 35.0,
-   "value": 35.0
+   "units": 42.0,
+   "value": 42.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 9.0
-   },
-   "state": "ASSAM",
-   "units": 9.0,
-   "value": 9.0
-  },
-  {
-   "by_platform": {
-    "BIG BASKET": 8.0
+    "BIG BASKET": 11.0
    },
    "state": "JHARKHAND",
-   "units": 8.0,
-   "value": 8.0
+   "units": 11.0,
+   "value": 11.0
+  },
+  {
+   "by_platform": {
+    "BIG BASKET": 10.0
+   },
+   "state": "ASSAM",
+   "units": 10.0,
+   "value": 10.0
   },
   {
    "by_platform": {
@@ -3150,19 +3150,19 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   },
   {
    "by_platform": {
-    "BIG BASKET": 6.0
+    "BIG BASKET": 7.0
    },
    "state": "CHHATTISGARH",
-   "units": 6.0,
-   "value": 6.0
+   "units": 7.0,
+   "value": 7.0
   },
   {
    "by_platform": {
-    "BIG BASKET": 3.0
+    "BIG BASKET": 4.0
    },
    "state": "BIHAR",
-   "units": 3.0,
-   "value": 3.0
+   "units": 4.0,
+   "value": 4.0
   },
   {
    "by_platform": {
@@ -3182,8 +3182,8 @@ Up: [[dashboards-index]] · [[2026-07]] · [[pf-bigbasket]]
   }
  ],
  "sub_categories": [],
- "total_units": 4983.0,
- "total_value": 4983.0,
+ "total_units": 5621.0,
+ "total_value": 5621.0,
  "year": 2026
 }
 ```

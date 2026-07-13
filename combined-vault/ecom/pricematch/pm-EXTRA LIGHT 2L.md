@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-12
-observations: 272
+last_seen: 2026-07-13
+observations: 280
 latest_status: BELOW
-below_days: 34
+below_days: 35
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-co
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-12) — ref ₹1129 vs live ₹1120
-- **Days below reference:** 34 of 34
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-13) — ref ₹1159 vs live ₹1120
+- **Days below reference:** 35 of 35
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]]
 
-## Ref-vs-live history (272 observations)
+## Ref-vs-live history (280 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -317,6 +317,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-12,flipkart,BELOW,SVD,1129,998,998,998,-131,-11.6,1,true
 2026-07-12,flipkart-minutes,ABOVE,SVD,1129,1959,1959,2084,830,73.52,0,true
 2026-07-12,zepto,BELOW,SVD,1129,1120,1100,1340,-9,-0.8,88,true
+2026-07-13,amazon,BELOW,BAU,1159,1089,1089,1089,-70,-6.04,1,true
+2026-07-13,amazon-fresh,BELOW,BAU,1159,1089,1089,1143,-70,-6.04,79,true
+2026-07-13,amazon-now,BELOW,BAU,1159,1089,1089,1143,-70,-6.04,198,true
+2026-07-13,bigbasket,ABOVE,BAU,1159,1343,1343,1437,184,15.88,0,true
+2026-07-13,blinkit,BELOW,BAU,1159,1139,1090,1406,-20,-1.73,265,true
+2026-07-13,flipkart,BELOW,BAU,1159,998,998,998,-161,-13.89,1,true
+2026-07-13,flipkart-minutes,ABOVE,BAU,1159,1959,1959,2084,800,69.03,0,true
+2026-07-13,zepto,BELOW,BAU,1159,1120,1064,1340,-39,-3.36,192,true
 ```
 
 ---
@@ -324,7 +332,7 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 
 ## Related (discovered)
 
-- [[hubs/Tier - Premium|Tier - Premium]] — price-match signal for EXTRA LIGHT 2L (Premium tier): latest ABOVE, 33 day(s) below reference floor _(D7)_
+- [[hubs/Tier - Premium|Tier - Premium]] — EXTRA LIGHT 2L under price-floor (BELOW on amazon, amazon-fresh, amazon-now, blinkit, zepto) while PREMIUM tier misses target (sec 1,682,444L < pri 1,855,826L) _(D7)_
 
 
 ## Related

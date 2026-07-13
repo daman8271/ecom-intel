@@ -18,9 +18,9 @@ Canonical raw rows (3) for `total_po_zbs`, embedded once here (verbatim, full co
 
 ```csv
 basic_rate,delivered_qty,format,grn_code,grn_date,id,landing_rate,location,order_qty,po_date,po_expiry_date,po_number,remark,sku_code,sku_name,status,vendor_name,__first_seen,__key,__last_seen
-476.19,48.0,SWIGGY,,2026-07-03,77960,499.9995,CHANDIGARH,48.0,2026-06-27,2026-07-09,PCHPO211020,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77960,2026-07-12
-195.24,0.0,SWIGGY,,2026-07-03,77961,205.002,CHANDIGARH,28.0,2026-06-27,2026-07-09,PCHPO211020,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77961,2026-07-12
-154.29,132.0,SWIGGY,,2026-07-03,77962,162.0045,CHANDIGARH,420.0,2026-06-27,2026-07-09,PCHPO211020,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77962,2026-07-12
+476.19,48.0,SWIGGY,,2026-07-03,77960,499.9995,CHANDIGARH,48.0,2026-06-27,2026-07-09,PCHPO211020,,15687,Jivo Extra Light Daily Cooking Olive Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77960,2026-07-13
+195.24,0.0,SWIGGY,,2026-07-03,77961,205.002,CHANDIGARH,28.0,2026-06-27,2026-07-09,PCHPO211020,,240878,Jivo Extra Virgin Olive Oil 250.0 ml,Fulfilled,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77961,2026-07-13
+154.29,132.0,SWIGGY,,2026-07-03,77962,162.0045,CHANDIGARH,420.0,2026-06-27,2026-07-09,PCHPO211020,,83633,Jivo Cold Pressed Chemical Free Sunflower Oil 1.0 ltr,Fulfilled,EVARA ENTERPRISES,2026-06-30,total_po_zbs:77962,2026-07-13
 ```
 
 ---

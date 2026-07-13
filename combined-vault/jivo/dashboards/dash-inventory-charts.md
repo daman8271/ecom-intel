@@ -20,23 +20,23 @@ Up: [[dashboards-index]]
  "city_distribution": [
   {
    "city": "Hyderabad",
-   "qty": 33940
+   "qty": 34405
   },
   {
    "city": "Bengaluru",
-   "qty": 22531
+   "qty": 23503
+  },
+  {
+   "city": "Gurugram",
+   "qty": 11667
   },
   {
    "city": "Chennai",
    "qty": 11339
   },
   {
-   "city": "Gurugram",
-   "qty": 10471
-  },
-  {
    "city": "Mumbai",
-   "qty": 9532
+   "qty": 9605
   },
   {
    "city": "Chandigarh",
@@ -44,11 +44,11 @@ Up: [[dashboards-index]]
   },
   {
    "city": "Delhi",
-   "qty": 6640
+   "qty": 6612
   },
   {
    "city": "Noida",
-   "qty": 4291
+   "qty": 4184
   },
   {
    "city": "Bangalore_2",
@@ -64,7 +64,7 @@ Up: [[dashboards-index]]
   },
   {
    "city": "Kolkata",
-   "qty": 3391
+   "qty": 3514
   },
   {
    "city": "Ahmedabad",
@@ -72,7 +72,7 @@ Up: [[dashboards-index]]
   },
   {
    "city": "Pune",
-   "qty": 2608
+   "qty": 3172
   },
   {
    "city": "Patiala",
@@ -107,8 +107,8 @@ Up: [[dashboards-index]]
   {
    "color": "#84c225",
    "platform": "bigbasket",
-   "sku_count": 347,
-   "total_qty": 9937
+   "sku_count": 356,
+   "total_qty": 13419
   }
  ],
  "top_products": [
