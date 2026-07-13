@@ -22,10 +22,17 @@ DELIVER="${2:-}"
 # 1) stage the drop where the adapter looks (newest pincodes-jivo-*.json in out/)
 mkdir -p "$COLL/out"
 STAMP=$(date +%Y%m%dT%H%M%S)
-cp "$SCAN" "$COLL/out/pincodes-jivo-${STAMP}.json"
+STAGED="$COLL/out/pincodes-jivo-${STAMP}.json"
+STAGED_TMP="${STAGED}.tmp.$$"
+cp "$SCAN" "$STAGED_TMP"
+mv "$STAGED_TMP" "$STAGED"
 
 # 2) adapter: raw scan JSON -> house result.json
-python3 "$COLL/collector/to_result_json.py"
+if ! python3 "$COLL/collector/to_result_json.py" --scan "$STAGED"; then
+  mv "$STAGED" "${STAGED%.json}.rejected.json"
+  echo "[ingest] RAW SCAN REJECTED - previous accepted result.json preserved" >&2
+  exit 2
+fi
 
 # 3) house report (build_excel derives the name from the dir: Jivo-SwiggyInstamart-…)
 cd "$PDIR"

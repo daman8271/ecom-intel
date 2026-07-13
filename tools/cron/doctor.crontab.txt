@@ -94,6 +94,7 @@
 #   fires an owner alert and exits 0; it has no path that can abort or modify the sweep crons.
 #
 # Scope: ecom-intel cron lines only. The live root crontab also contains other repo schedules.
+45 17 * * * cd /opt/ecom-intel && flock -n logs/.instamart-config-sync.lock ./tools/cron/sync_instamart_pincodes.sh >> logs/instamart-config-sync.log 2>&1   # ecom-intel Instamart canonical pincode sync
 # ===========================================================================================
 10 10 * * * cd /opt/ecom-intel && python3 tools/cron/check_layout.py >> logs/layout_gate.log 2>&1   # ecom-intel layout gate (post 10:00 batch)
 

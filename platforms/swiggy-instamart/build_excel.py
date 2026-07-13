@@ -10,6 +10,31 @@ rows = d['allRows']
 per = d['perPin']
 summary = d['summary']
 
+# Fail before touching an existing workbook when the adapter output is incomplete.
+# The ingest adapter has its own gate; this is independent defense for manual runs.
+if len(rows) < 10:
+    raise SystemExit(f"QUALITY FAIL: only {len(rows)} Instamart rows; refusing empty report")
+if summary.get('total_rows') != len(rows):
+    raise SystemExit(
+        f"QUALITY FAIL: summary total_rows={summary.get('total_rows')} but allRows={len(rows)}"
+    )
+if len(per) < 648 or summary.get('pincodes_total') != len(per):
+    raise SystemExit(
+        f"QUALITY FAIL: incomplete pincode coverage ({len(per)} perPin, "
+        f"summary={summary.get('pincodes_total')})"
+    )
+per_by_pin = {str(p.get('pincode', '')): p for p in per}
+if len(per_by_pin) != len(per):
+    raise SystemExit("QUALITY FAIL: duplicate pincode entries in perPin")
+for required_pin in ('110059', '110064'):
+    required = per_by_pin.get(required_pin)
+    if required is None:
+        raise SystemExit(f"QUALITY FAIL: required direct pincode {required_pin} is absent")
+    if not required.get('rows') and required.get('collection_status') != 'failed':
+        raise SystemExit(
+            f"QUALITY FAIL: {required_pin} has neither data nor an explicit failure marker"
+        )
+
 # platform name derived from the folder this runs in (blinkit, zepto, ...)
 PLATFORM = os.path.basename(os.getcwd()).replace('-', ' ').title()
 
@@ -257,7 +282,7 @@ def matrix(sheet_name, valfn, fmt=None, scale=False, scale_rev=False):
                 cell.alignment = CEN
                 if fmt and isinstance(cell.value, (int, float)): cell.number_format = fmt
                 if cell.value is None: cell.value = "-"
-    if scale:
+    if scale and ws.max_row >= 2 and ws.max_column >= 2:
         last = get_column_letter(ws.max_column)
         lo, hi = ("F4CCCC", "D9EAD3") if scale_rev else ("D9EAD3", "F4CCCC")
         ws.conditional_formatting.add(f"B2:{last}{ws.max_row}",
