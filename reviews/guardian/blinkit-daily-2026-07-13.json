@@ -1,0 +1,96 @@
+{
+  "platform": "blinkit",
+  "run_id": "daily-2026-07-13",
+  "verdict": "SUSPECT",
+  "review_verdict": "SUSPECT",
+  "review_reasons": [
+    "llm_judgment: SUSPECT: Row count surged 64% vs baseline; only 9 SKUs (all oils)\u2014missing Jivo's juice/honey/vinegar lines on Blinkit."
+  ],
+  "deep_reasons": [],
+  "reasons": [
+    "llm_judgment: SUSPECT: Row count surged 64% vs baseline; only 9 SKUs (all oils)\u2014missing Jivo's juice/honey/vinegar lines on Blinkit."
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no store spans >2 cities (455 stores, 23 cities, 100% rows carry a store_id)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "9 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "3152 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 3152 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/3152 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (3152/3436 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 5.4h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "blinkit SUSPECT (review.py): llm_judgment: SUSPECT: Row count surged 64% vs baseline; only 9 SKUs (all oils)\u2014missing Jivo's juice/honey/vinegar lines on Blinkit. | heal: see review.py reasons",
+  "quarantined": false,
+  "evaluated_at": "2026-07-13T12:30:26.920917+00:00",
+  "source_result": "/opt/ecom-intel/platforms/blinkit/result.json"
+}
