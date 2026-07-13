@@ -1,0 +1,483 @@
+[
+  {
+    "city": "Mumbai",
+    "pincode": "400053",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "400053"
+    ],
+    "lat": 18.96775,
+    "lon": 72.8216944,
+    "locality": "Andheri H.O",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110092",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "110092"
+    ],
+    "lat": 28.627,
+    "lon": 77.2063333,
+    "locality": "IP Extension SO",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110085",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "110085"
+    ],
+    "lat": 28.6933611,
+    "lon": 77.1713889,
+    "locality": "Rithala BO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560003",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560003"
+    ],
+    "lat": 13.000127,
+    "lon": 77.570627,
+    "locality": "Swimming Pool Extn S.O",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "500001"
+    ],
+    "lat": 17.39313889,
+    "lon": 78.47627778,
+    "locality": "Hyderabad G.P.O.",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500013",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "500013"
+    ],
+    "lat": 17.3911944,
+    "lon": 78.5165556,
+    "locality": "Amberpet S.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600042",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "600042"
+    ],
+    "lat": 12.9826389,
+    "lon": 80.2216389,
+    "locality": "Velacheri S.O",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Pune",
+    "pincode": "411001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "411001"
+    ],
+    "lat": 18.52322222,
+    "lon": 73.87586111,
+    "locality": "Pune H.O",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Pune",
+    "pincode": "411067",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "411067"
+    ],
+    "lat": 18.563398,
+    "lon": 73.812891,
+    "locality": "Aundh S.O (Pune)",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "380015",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "380015"
+    ],
+    "lat": 23.026081483333332,
+    "lon": 72.53542595,
+    "locality": "Manekbag SO",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "700001"
+    ],
+    "lat": 22.5678,
+    "lon": 88.3451,
+    "locality": "Kolkatta GPO",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Kolkata",
+    "pincode": "700075",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "700075"
+    ],
+    "lat": 22.499214,
+    "lon": 88.375064,
+    "locality": "Santoshpur Avenue SO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Gurugram",
+    "pincode": "122002",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "122002"
+    ],
+    "lat": 28.466093,
+    "lon": 77.1058349,
+    "locality": "DLF QE SO",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Noida",
+    "pincode": "201301",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "201301"
+    ],
+    "lat": 28.5543243,
+    "lon": 77.3798816,
+    "locality": "Noida HO",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Noida",
+    "pincode": "201318",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "201318"
+    ],
+    "lat": 28.6681111,
+    "lon": 77.4284722,
+    "locality": "Sec 01 Greater Noida SO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Jaipur",
+    "pincode": "302017",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "302017"
+    ],
+    "lat": 26.87219776666667,
+    "lon": 75.78798706666667,
+    "locality": "Malviya Nagar S.O (Jaipur)",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Lucknow",
+    "pincode": "226001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "226001"
+    ],
+    "lat": 26.8555421,
+    "lon": 80.9304329,
+    "locality": "Lucknow GPO",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Lucknow",
+    "pincode": "226005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "226005"
+    ],
+    "lat": 26.831361,
+    "lon": 80.925643,
+    "locality": "Barha SO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Surat",
+    "pincode": "395006",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "395006"
+    ],
+    "lat": 21.2145833,
+    "lon": 72.8529167,
+    "locality": "Varachha Road SO",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Chandigarh",
+    "pincode": "160001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "160001"
+    ],
+    "lat": 30.7573,
+    "lon": 76.8066,
+    "locality": "High Court SO Chandigarh",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Chandigarh",
+    "pincode": "160005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "160005"
+    ],
+    "lat": 30.9666111,
+    "lon": 76.3715277,
+    "locality": "IBC CHANDGIARH SO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Kochi",
+    "pincode": "682001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "682001"
+    ],
+    "lat": 9.9655556,
+    "lon": 76.2414167,
+    "locality": "Kochi HO",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Indore",
+    "pincode": "452010",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "452010"
+    ],
+    "lat": 22.6350963,
+    "lon": 75.83488516666667,
+    "locality": "Vijay Nagar S.O",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Indore",
+    "pincode": "453112",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "453112"
+    ],
+    "lat": 22.713302866666666,
+    "lon": 75.82263323333332,
+    "locality": "Jamburdi Hapsi B.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Coimbatore",
+    "pincode": "641004",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "641004"
+    ],
+    "lat": 11.02098,
+    "lon": 76.96633,
+    "locality": "Gandhimaanagar SO",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Nagpur",
+    "pincode": "440001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "440001"
+    ],
+    "lat": 21.15219444,
+    "lon": 79.06916667,
+    "locality": "Nagpur GPO",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Nagpur",
+    "pincode": "440005",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "440005"
+    ],
+    "lat": 21.85258333,
+    "lon": 79.05369444,
+    "locality": "Nagpur Airport S.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Visakhapatnam",
+    "pincode": "530009",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "530009"
+    ],
+    "lat": 17.7363493,
+    "lon": 83.2356959,
+    "locality": "N A D S.O",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Vadodara",
+    "pincode": "390007",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "390007"
+    ],
+    "lat": 22.30650275,
+    "lon": 73.166816675,
+    "locality": "Racecourse SO",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Vadodara",
+    "pincode": "391345",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "391345"
+    ],
+    "lat": 22.3524722,
+    "lon": 73.14025,
+    "locality": "Petrochemical  T Ship SO",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Bhubaneswar",
+    "pincode": "751016",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "751016"
+    ],
+    "lat": 20.3288611,
+    "lon": 85.8202222,
+    "locality": "Chandra Sekhar Pur S.O",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Nashik",
+    "pincode": "422001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "422001"
+    ],
+    "lat": 20.0082,
+    "lon": 73.80645,
+    "locality": "Nashik H.O",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Nashik",
+    "pincode": "423212",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "423212"
+    ],
+    "lat": 20.554431,
+    "lon": 74.512024,
+    "locality": "Chandanpuri B.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Mysuru",
+    "pincode": "570012",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "570012"
+    ],
+    "lat": 12.323287,
+    "lon": 76.619653,
+    "locality": "Jayalakshmipuram S.O (Mysuru)",
+    "competitor_sample_index": 2
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "520001",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "520001"
+    ],
+    "lat": 16.52216666,
+    "lon": 80.61916668,
+    "locality": "Vijayawada H.O",
+    "competitor_sample_index": 1
+  },
+  {
+    "city": "Vijayawada",
+    "pincode": "521139",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "521139"
+    ],
+    "lat": 16.456069566666667,
+    "lon": 80.71881939999999,
+    "locality": "Chodavaram B.O",
+    "competitor_sample_index": 3
+  },
+  {
+    "city": "Thiruvananthapuram",
+    "pincode": "695588",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "695588"
+    ],
+    "lat": 8.5736733,
+    "lon": 76.8495128,
+    "locality": "Powdikonam",
+    "competitor_sample_index": 2
+  }
+]

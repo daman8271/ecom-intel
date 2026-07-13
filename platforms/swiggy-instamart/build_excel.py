@@ -212,6 +212,14 @@ for x in sorted(rows, key=lambda r: (r['city'], r['pincode'], r['canonical'])):
     # FIX E: display clean SKU name in Master Data
     ws.append([x['city'], x['pincode'], x['locality'], x['store_name'], clean_name(x['sku_raw']), x['pack'], x['vol_ml'],
                x['sale'], x['mrp'], pct_fraction(x['discount_pct']), per_litre_val, x['eta_min'], "Yes" if x['in_stock'] else "No"])
+# Keep explicitly failed collections visible instead of silently dropping their
+# pincodes from Master Data. These marker rows are excluded from all SKU metrics.
+for p in sorted((p for p in per if p.get('collection_status') == 'failed'), key=lambda p: (p['city'], p['pincode'])):
+    ws.append([
+        p['city'], p['pincode'], p['locality'], p['store_name'],
+        "DATA UNAVAILABLE - COLLECTION FAILED", "", None, None, None, None,
+        None, None, "Unknown",
+    ])
 style_header(ws)
 ws.freeze_panes = "A2"
 ws.auto_filter.ref = f"A1:{get_column_letter(len(cols))}{ws.max_row}"
@@ -222,6 +230,10 @@ for row in ws.iter_rows(min_row=2):
         if cell.column == 10: cell.number_format = '0.0%'
     sc = row[7].value
     if row[12].value == "No": row[12].fill = RED
+    if row[4].value == "DATA UNAVAILABLE - COLLECTION FAILED":
+        for cell in row:
+            cell.fill = RED
+            cell.font = Font(italic=True, color="9C0006")
     if isinstance(row[9].value, (int, float)) and row[9].value and row[9].value >= 0.40: row[9].fill = GREEN
 autosize(ws)
 

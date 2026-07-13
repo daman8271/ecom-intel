@@ -680,14 +680,18 @@ async function extractJivoCards(page) {
 // competitor branch. None run / mutate anything when COMPETITOR_MODE is unset.
 function escRe(s) { return String(s).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
-// Brand whitelist regex, resolved from (in order): tools/competitor/competitor_brands.json
-// (accepts a raw regex string, {regex:"..."}, an array of brands, or {brands:[...]}),
-// then env COMPETITOR_BRANDS (comma list), then a sane edible-oil default list.
+// Brand whitelist regex. An explicit COMPETITOR_BRANDS comma list is a run-scoped
+// override; otherwise load tools/competitor/competitor_brands.json, then fall back
+// to the built-in edible-oil list.
 function loadCompetitorRegex() {
   const def = ['jivo', 'fortune', 'saffola', 'dhara', 'gemini', 'sundrop', 'figaro', 'nature fresh',
     'emami healthy', 'patanjali', 'dalda', 'freedom', 'sweekar', 'postman', 'gold ?drop', 'gold ?winner',
     'ricela', 'borges', 'disano', 'del monte', 'oleev', 'kohinoor', 'mahakosh', 'engine', 'p mark',
     'gagan', 'scoop', 'rasoi', 'ktc', 'aashirvaad', 'tata'];
+  if (process.env.COMPETITOR_BRANDS) {
+    const list = process.env.COMPETITOR_BRANDS.split(',').map((s) => s.trim()).filter(Boolean);
+    if (list.length) return new RegExp('(' + list.map(escRe).join('|') + ')', 'i');
+  }
   try {
     const f = path.join(COMP_DIR, 'competitor_brands.json');
     if (fs.existsSync(f)) {
@@ -714,10 +718,6 @@ function loadCompetitorRegex() {
       }
     }
   } catch (e) { process.stderr.write(`[comp] competitor_brands.json load failed (${e.message}); using fallback list\n`); }
-  if (process.env.COMPETITOR_BRANDS) {
-    const list = process.env.COMPETITOR_BRANDS.split(',').map((s) => s.trim()).filter(Boolean);
-    if (list.length) return new RegExp('(' + list.map(escRe).join('|') + ')', 'i');
-  }
   return new RegExp('(' + def.join('|') + ')', 'i');
 }
 
