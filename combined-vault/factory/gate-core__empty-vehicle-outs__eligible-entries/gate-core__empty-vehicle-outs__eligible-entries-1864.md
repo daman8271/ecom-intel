@@ -1,0 +1,41 @@
+---
+type: factory-gate-core__empty-vehicle-outs__eligible-entries
+id: 1864
+title: "DL01MA5409"
+entity: Eligible Entries
+source_endpoint: /gate-core/empty-vehicle-outs/eligible-entries/
+company: JIVO_MART
+tags:
+  - type/factory-gate-core__empty-vehicle-outs__eligible-entries
+  - source/factory
+  - company/JIVO_MART
+---
+# DL01MA5409
+
+> Eligible Entries from `/gate-core/empty-vehicle-outs/eligible-entries/` (Jivo Mart / JIVO_MART).
+
+## Fields
+- **id:** 1864
+- **entry_no:** DOCKV-20260711-0028
+- **entry_type:** SALES_DISPATCH
+- **status:** COMPLETED
+- **entry_time:** 2026-07-11T22:08:51.989100+05:30
+- **vehicle_id:** 222
+- **vehicle_number:** DL01MA5409
+- **vehicle_type:** Truck
+- **driver_id:** 311
+- **driver_name:** Jhadu singh 9310956521
+- **driver_mobile:** 9310956521
+- **remarks:** 
+- **company_id:** 2
+- **company_code:** JIVO_MART
+- **company_name:** Jivo Mart
+- **arrival:** None
+- **arrival_no:** None
+- **release_invoice_count:** 0
+- **release_cancels_docking:** False
+
+## Related
+- company_id -> [[comp-2]]
+- driver_id -> [[drv-311]]
+- vehicle_id -> [[veh-222]]

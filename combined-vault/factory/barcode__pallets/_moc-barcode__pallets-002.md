@@ -1,0 +1,27 @@
+---
+type: moc
+title: Pallet (1015)
+tags:
+  - moc
+  - source/factory
+---
+
+# Pallet — 1015 records (page 2/2)
+
+From `/barcode/pallets/`. Up: [[_HOME]]
+
+- [[pal-327]] — COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
+- [[pal-325]] — MUSTARD KACHHI GHANI 1 LTR POUCH 12 PCS
+- [[pal-318]] — COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
+- [[pal-313]] — MUSTARD KACHHI GHANI 1 LTR POUCH 12 PCS
+- [[pal-308]] — COLD PRESS SUNFLOWER 1 LTR 24 PCS
+- [[pal-305]] — MUSTARD KACHHI GHANI 1 LTR POUCH 12 PCS
+- [[pal-293]] — MUSTARD KACHHI GHANI 1 LTR POUCH 12 PCS
+- [[pal-288]] — COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
+- [[pal-286]] — COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS
+- [[pal-231]] — MUSTARD KACHI GHANI 1 LTR 20 PCS
+- [[pal-200]] — COLD PRESS 1 LTR 20 PCS
+- [[pal-184]] — COLD PRESS 1 LTR 20 PCS
+- [[pal-131]] — COLD PRESS 1 LTR (NIRMAL RISHI )20 PCS
+- [[pal-74]] — COLD PRESS 1 LTR + 1 LTR COMBO 10 SET
+- [[pal-57]] — POMACE OLIVE 5 LTR TIN 4 PCS
