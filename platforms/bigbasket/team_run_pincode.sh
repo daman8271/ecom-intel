@@ -590,7 +590,11 @@ build_run() {
   echo "[bb-team] queued for the 10:30 Ecom batch: $public_xlsx"
   cp -f "$xlsx" "$private_xlsx"
   echo "[bb-team] secondary private copy: $private_xlsx"
-  send_direct "$public_xlsx" || echo "[bb-team] direct WhatsApp send failed; Ecom batch/group workbook kept"
+  if [ "${BB_TEAM_SEND_DIRECT:-0}" = "1" ]; then
+    send_direct "$public_xlsx" || echo "[bb-team] direct WhatsApp send failed; Ecom batch/group workbook kept"
+  else
+    echo "[bb-team] early direct delivery disabled; workbook will leave in the 10:30 Ecom batch"
+  fi
 }
 
 case "$cmd" in
