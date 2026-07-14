@@ -8,8 +8,16 @@
 #   3. Pull laptop artifacts that the laptop's own scp push may have missed
 #      (tunnel blip): result.json / run.rc / run.done / run.log.
 #   4. Both shard results present -> run blinkit_team_merge.sh (idempotent).
-#   5. Recovery: retry a missing shard only on its assigned Mac/Windows device.
-#      Datacenter scraping is prohibited for Blinkit production.
+#   5. Recovery:
+#      shard-0 (Mac): stall-aware. If the Mac is progressing, wait. If it stalls
+#        (progress file not advanced >=BLINKIT_TEAM_MAC_STALL_S, default 15 min)
+#        or is idle, fire the one-shot Mac re-trigger AND immediately launch the
+#        RESUMABLE VPS rescue (tools/laptop/blinkit_rescue_resume.sh): it pulls
+#        the Mac's partial READ-ONLY, keeps gate-passing pins, and re-scrapes
+#        ONLY the missing pins at C=3. A .rescue-claimed-by marker arbitrates so
+#        the Mac-side resume and this VPS rescue never double-scrape. The rescue
+#        output still passes 100% through the normal fail-closed ingest gates.
+#      shard-1 (laptop): retry the resumable Windows runner on its own device.
 set -uo pipefail
 DIR=/opt/ecom-intel
 cd "$DIR" || exit 0
@@ -54,9 +62,25 @@ PTR="$(team_ptr_path blinkit)"
 AGE=$(( $(date +%s) - $(stat -c %Y "$PTR" 2>/dev/null || date +%s) ))
 [ "$AGE" -lt 900 ] && { LOG "run is ${AGE}s old — devices still warming up"; exit 0; }
 
+MAC_RUNS="/Users/danny./VPS-Migration/imported/ecom-intel/platforms/blinkit/mac-runs"
+MAC_STALL_S="${BLINKIT_TEAM_MAC_STALL_S:-900}"   # 15 min: no progress => treat as dead now
+
 mac_working() {
   timeout 30 ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
     "pgrep -f 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js|OUT_FILE=.*blinkit-' >/dev/null" >/dev/null 2>&1
+}
+# mac_progressing: 0 iff a Mac scrape process is running AND today's team
+# progress/out-file was written within MAC_STALL_S. A running-but-stalled Mac
+# (silent death, e.g. 7/14 08:57) is NOT progressing -> rescue now.
+mac_progressing() {
+  mac_working || return 1
+  local today age
+  today="$(date +%Y%m%d)"
+  age="$(timeout 30 ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
+    "f=\$(ls -t $MAC_RUNS/blinkit-${today}-[0-9]*.progress.json $MAC_RUNS/blinkit-${today}-[0-9]*.json 2>/dev/null | grep -Ev 'repair|preflight' | head -1); \
+     if [ -n \"\$f\" ]; then echo \$(( \$(date +%s) - \$(stat -f %m \"\$f\") )); else echo -1; fi" \
+    2>/dev/null | tr -d '\r' | tail -1)"
+  [ -n "$age" ] && [ "$age" -ge 0 ] && [ "$age" -lt "$MAC_STALL_S" ]
 }
 laptop_working() {
   laptop_file_fresh "$WIN_RUN_FS/run.progress.json" 1500 && return 0
@@ -67,22 +91,36 @@ retry_due() {
   [ ! -e "$marker" ] && return 0
   [ $(( $(date +%s) - $(stat -c %Y "$marker" 2>/dev/null || echo 0) )) -ge "$interval" ]
 }
+# start_resume_rescue: launch the resumable VPS rescue once (idempotent: the
+# helper flock+claim make repeat calls no-ops). Detached so the cron tick returns.
+start_resume_rescue() {
+  if pgrep -f "blinkit_rescue_resume.sh $RUN_ID 0" >/dev/null 2>&1; then
+    LOG "resume rescue for shard-0 already running — not re-spawning"
+    return 0
+  fi
+  LOG "launching resumable VPS rescue for shard-0 (resume from Mac partial, C=3)"
+  nohup tools/laptop/blinkit_rescue_resume.sh "$RUN_ID" 0 >> logs/blinkit_team.log 2>&1 </dev/null &
+}
 
 if [ ! -s "$R0" ]; then
-  if mac_working; then
-    LOG "Mac still scraping shard-0 — waiting"
-  elif retry_due "$RUN/.mac-retrigger"; then
-    touch "$RUN/.mac-retrigger"
-    LOG "shard-0 missing and Mac idle — re-triggering the Mac wrapper"
-    [ -f "$RUN/.mac-alerted" ] || {
-      touch "$RUN/.mac-alerted"
-      team_tg "⚠️ Blinkit team watch: Mac shard-0 of $RUN_ID is missing/idle; retrying on Mac. VPS fallback is disabled."
-    }
-    timeout 30 ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
-      "nohup $WRAPPER >/tmp/blinkit-team-retrigger.log 2>&1 & disown" >/dev/null 2>&1 \
-      || true
+  if mac_progressing; then
+    LOG "Mac is progressing on shard-0 (fresh progress) — waiting"
   else
-    LOG "Mac retry is inside the cooldown window"
+    # Mac is idle or silently stalled. Give the Mac one re-trigger, but do NOT
+    # wait for it — start the resumable VPS rescue now. If the re-trigger is
+    # refused (Swiggy/BB active — the 7/14 failure), the rescue still proceeds.
+    if retry_due "$RUN/.mac-retrigger"; then
+      touch "$RUN/.mac-retrigger"
+      LOG "shard-0 missing and Mac idle/stalled — one-shot Mac re-trigger (does not block rescue)"
+      [ -f "$RUN/.mac-alerted" ] || {
+        touch "$RUN/.mac-alerted"
+        team_tg "⚠️ Blinkit team watch: Mac shard-0 of $RUN_ID missing/stalled; re-triggering Mac AND starting the resumable VPS rescue (marker-arbitrated, no double-scrape)."
+      }
+      timeout 30 ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
+        "nohup $WRAPPER >/tmp/blinkit-team-retrigger.log 2>&1 & disown" >/dev/null 2>&1 \
+        || LOG "Mac re-trigger refused/failed — rescue proceeds regardless"
+    fi
+    start_resume_rescue
   fi
 fi
 
