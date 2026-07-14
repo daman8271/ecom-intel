@@ -1,0 +1,597 @@
+{
+  "summary": {
+    "pincodes_total": 29,
+    "pincodes_serviceable": 0,
+    "pincodes_with_jivo": 0,
+    "pincodes_mismatch": 1,
+    "total_rows": 0,
+    "seed_fallback_rows": 0,
+    "unique_skus": 0,
+    "now_tier_breakdown": {},
+    "wall_s": 114,
+    "captured_at": "2026-07-14T06:46:25.806Z"
+  },
+  "perPin": [
+    {
+      "city": "Delhi",
+      "pincode": "110001",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110001"
+      ],
+      "lat": 28.6433611,
+      "lon": 77.2009167,
+      "locality": "Sansad Marg HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110001&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110002",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110002"
+      ],
+      "lat": 28.6339722,
+      "lon": 77.2175556,
+      "locality": "Indraprastha HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110002&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110019",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110019"
+      ],
+      "lat": 28.5403056,
+      "lon": 77.2486667,
+      "locality": "Kalkaji HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110019&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110028",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110028"
+      ],
+      "lat": 28.632141,
+      "lon": 77.138852,
+      "locality": "Naraina Industrial Estate H.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110028&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110004",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110004"
+      ],
+      "lat": 28.6210833,
+      "lon": 77.1961389,
+      "locality": "Rashtrapati Bhawan SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110004&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110008",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110008"
+      ],
+      "lat": 28.6453611,
+      "lon": 77.1729722,
+      "locality": "Patel Nagar South SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110008&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110010",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110010"
+      ],
+      "lat": 28.6147778,
+      "lon": 77.1785833,
+      "locality": "Aps Colony BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110010&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110011",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110011"
+      ],
+      "lat": 28.6111111,
+      "lon": 77.21275,
+      "locality": "Udyog Bhawan SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110011&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110013",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110013"
+      ],
+      "lat": 28.5912222,
+      "lon": 77.2423333,
+      "locality": "Dargah Sharif SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110013&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110014",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110014"
+      ],
+      "lat": 28.5838611,
+      "lon": 77.2431944,
+      "locality": "Jeevan Nagar BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110014&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110020",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110020"
+      ],
+      "lat": 28.5577222,
+      "lon": 77.2648333,
+      "locality": "Tehkhand BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110020&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110024",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110024"
+      ],
+      "lat": 28.58,
+      "lon": 77.23,
+      "locality": "Amar Colony SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110024&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110036",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110036"
+      ],
+      "lat": 28.7978055,
+      "lon": 77.13,
+      "locality": "Kadipur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110036&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110037",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110037"
+      ],
+      "lat": 28.5745556,
+      "lon": 77.0975556,
+      "locality": "Mahipalpur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110037&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110038",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110038"
+      ],
+      "lat": 28.5193889,
+      "lon": 77.1498056,
+      "locality": "Rajokari BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110038&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110039",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110039"
+      ],
+      "lat": 28.7996944,
+      "lon": 77.0380556,
+      "locality": "Pooth Khurd BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110039&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110042",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110042"
+      ],
+      "lat": 28.72775,
+      "lon": 77.1636111,
+      "locality": "Pehlad Pur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110042&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110060",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110060"
+      ],
+      "lat": 28.6367222,
+      "lon": 77.1831111,
+      "locality": "Rajender Nagar SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110060&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110069",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110069"
+      ],
+      "lat": 28.6225833,
+      "lon": 77.2127222,
+      "locality": "Union Public Service Commission SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110069&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110072",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110072"
+      ],
+      "lat": 28.652588,
+      "lon": 76.956454,
+      "locality": "Jharoda Kalan B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110072&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110073",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110073"
+      ],
+      "lat": 28.5838,
+      "lon": 76.936906,
+      "locality": "Mundela Kalan B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110073&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110074",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110074"
+      ],
+      "lat": 28.5073056,
+      "lon": 77.1845556,
+      "locality": "Fatehpur Beri S.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110074&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110075",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110075"
+      ],
+      "lat": 28.580691,
+      "lon": 77.059203,
+      "locality": "Amberhai B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110075&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110080",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110080"
+      ],
+      "lat": 28.5105278,
+      "lon": 77.2424167,
+      "locality": "Deoli BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110080&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110081",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110081"
+      ],
+      "lat": 28.7349167,
+      "lon": 77.0055556,
+      "locality": "Jaunti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110081&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110082",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110082"
+      ],
+      "lat": 28.7721666,
+      "lon": 77.119,
+      "locality": "Holambi Kalan BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110082&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110097",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110097"
+      ],
+      "lat": 28.5249456,
+      "lon": 77.0710038,
+      "locality": "Kapashera SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "New Delhi 110097&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110099",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110099"
+      ],
+      "lat": 28.720596,
+      "lon": 77.080909,
+      "locality": "ROHINI SECTOR 23 SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Delhi Can... 110099&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Delhi",
+      "pincode": "110110",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "110110"
+      ],
+      "lat": 28.7158,
+      "lon": 77.11,
+      "locality": "Nodal Delivery Centre(Parcel), Rohini",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Delhi Can... 110099&zwnj;",
+      "matched": false,
+      "total_cards": 48,
+      "rows": []
+    }
+  ],
+  "allRows": []
+}

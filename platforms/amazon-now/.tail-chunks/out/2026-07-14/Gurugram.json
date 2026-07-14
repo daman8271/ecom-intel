@@ -1,0 +1,277 @@
+{
+  "summary": {
+    "pincodes_total": 13,
+    "pincodes_serviceable": 0,
+    "pincodes_with_jivo": 0,
+    "pincodes_mismatch": 0,
+    "total_rows": 0,
+    "seed_fallback_rows": 0,
+    "unique_skus": 0,
+    "now_tier_breakdown": {},
+    "wall_s": 54,
+    "captured_at": "2026-07-14T06:54:21.737Z"
+  },
+  "perPin": [
+    {
+      "city": "Gurugram",
+      "pincode": "122004",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122004"
+      ],
+      "lat": 28.413887,
+      "lon": 76.9931945,
+      "locality": "Khandsa BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gurugram 122004&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122052",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122052"
+      ],
+      "lat": 28.342,
+      "lon": 76.9364722,
+      "locality": "IMT Manesar SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gurugram 122052&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122098",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122098"
+      ],
+      "lat": 28.3913822,
+      "lon": 77.0511932,
+      "locality": "CRPF Kadarpur SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gurgaon 122098&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122101",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122101"
+      ],
+      "lat": 28.3913822,
+      "lon": 77.0511932,
+      "locality": "Fazilpur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gurugram 122101&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122102",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122102"
+      ],
+      "lat": 28.352169,
+      "lon": 77.06471,
+      "locality": "Raisina BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Sohna 122102&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122103",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122103"
+      ],
+      "lat": 28.40025,
+      "lon": 77.0675278,
+      "locality": "Daulah BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Hsiidc Sohna 122103&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122413",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122413"
+      ],
+      "lat": 29.387631,
+      "lon": 77.446429,
+      "locality": "Moklawas BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Binola In... 122413&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122414",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122414"
+      ],
+      "lat": 28.271733,
+      "lon": 76.740867,
+      "locality": "Khatauli BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Pataudi 122414&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122502",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122502"
+      ],
+      "lat": 28.292981,
+      "lon": 76.697254,
+      "locality": "Jasat BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Rewari 122502&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122503",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122503"
+      ],
+      "lat": 28.325728,
+      "lon": 76.777811,
+      "locality": "Baslambi BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Pataudi 122503&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122504",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122504"
+      ],
+      "lat": 28.467015,
+      "lon": 77.081198,
+      "locality": "Jatauli BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gurugram 122504&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122505",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122505"
+      ],
+      "lat": 28.4384722,
+      "lon": 76.9354444,
+      "locality": "Budhera BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gurugram 122505&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Gurugram",
+      "pincode": "122506",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "122506"
+      ],
+      "lat": 28.446796,
+      "lon": 76.825692,
+      "locality": "Khera Khurampur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Farrukhnagar 122506&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    }
+  ],
+  "allRows": []
+}
