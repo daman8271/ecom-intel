@@ -1,0 +1,158 @@
+[
+  {
+    "city": "Mohali",
+    "pincode": "140604",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "140604"
+    ],
+    "lat": 30.6703333,
+    "lon": 76.8320556,
+    "locality": "Baltana SO"
+  },
+  {
+    "city": "Jalandhar",
+    "pincode": "144103",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "144103"
+    ],
+    "lat": 31.326723,
+    "lon": 75.586847,
+    "locality": "Kandola BO"
+  },
+  {
+    "city": "Noida",
+    "pincode": "201303",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "201303"
+    ],
+    "lat": 28.5544155,
+    "lon": 77.3603771,
+    "locality": "Sec37 Noida SO"
+  },
+  {
+    "city": "Ahmedabad",
+    "pincode": "380058",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "380058"
+    ],
+    "lat": 23.02742,
+    "lon": 72.45576,
+    "locality": "Ambli BO"
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400029",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "400029"
+    ],
+    "lat": 19.0811111,
+    "lon": 72.8683056,
+    "locality": "Santacruz P and T  Colony S.O"
+  },
+  {
+    "city": "Pune",
+    "pincode": "410507",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "410507"
+    ],
+    "lat": 18.7335278,
+    "lon": 73.6751111,
+    "locality": "Varale B.O"
+  },
+  {
+    "city": "Hyderabad",
+    "pincode": "500107",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "500107"
+    ],
+    "lat": 17.44999,
+    "lon": 78.310213,
+    "locality": "Gopanpally S.O"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560007",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560007"
+    ],
+    "lat": 12.9636389,
+    "lon": 77.6291111,
+    "locality": "Agram S.O"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560053",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560053"
+    ],
+    "lat": 12.9688913,
+    "lon": 77.5730899,
+    "locality": "Chickpet S.O"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560075",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560075"
+    ],
+    "lat": 12.9710833,
+    "lon": 77.656,
+    "locality": "Jeevanbhimanagar S.O"
+  },
+  {
+    "city": "Bengaluru",
+    "pincode": "560107",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "560107"
+    ],
+    "lat": 13.08936,
+    "lon": 77.485858,
+    "locality": "Achitnagar S.O"
+  },
+  {
+    "city": "Mysuru",
+    "pincode": "571125",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "571125"
+    ],
+    "lat": 12.12155556,
+    "lon": 76.48022222,
+    "locality": "Chikkeriyur B.O"
+  },
+  {
+    "city": "Chennai",
+    "pincode": "600101",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "600101"
+    ],
+    "lat": 13.1585556,
+    "lon": 80.31875,
+    "locality": "Anna Nagar Western Extn S.O"
+  }
+]

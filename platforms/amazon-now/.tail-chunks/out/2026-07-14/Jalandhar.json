@@ -1,0 +1,1357 @@
+{
+  "summary": {
+    "pincodes_total": 67,
+    "pincodes_serviceable": 0,
+    "pincodes_with_jivo": 0,
+    "pincodes_mismatch": 0,
+    "total_rows": 0,
+    "seed_fallback_rows": 0,
+    "unique_skus": 0,
+    "now_tier_breakdown": {},
+    "wall_s": 219,
+    "captured_at": "2026-07-14T07:03:15.920Z"
+  },
+  "perPin": [
+    {
+      "city": "Jalandhar",
+      "pincode": "144001",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144001"
+      ],
+      "lat": 31.327676,
+      "lon": 75.587791,
+      "locality": "Jalandhar City HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144001&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144005",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144005"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Jalandhar Cantt HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144005&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144002",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144002"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Dhaliwal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144002&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144003",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144003"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Khurla BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144003&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144004",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144004"
+      ],
+      "lat": 31.325,
+      "lon": 75.5982,
+      "locality": "Randhawa Masanda BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144004&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144006",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144006"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "BSF Campus SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144006&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144007",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144007"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Ladhewali SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144007&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144008",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144008"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Grain Market SO Jalandhar",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144008&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144009",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144009"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Chogitti SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144009&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144010",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144010"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Dhanowali SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144010&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144011",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144011"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "REC Jalandhar SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144011&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144012",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144012"
+      ],
+      "lat": 31.1923,
+      "lon": 75.3453,
+      "locality": "Nodal Delivery Centre, Jalandhar",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144012&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144020",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144020"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Udhopur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Ludhiana 144020&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144021",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144021"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Mand BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Leather C... 144021&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144022",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144022"
+      ],
+      "lat": 31.3261,
+      "lon": 75.5768,
+      "locality": "Dhina BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144022&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144023",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144023"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Dakoha SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144023&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144024",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144024"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Khusropur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Sufipind 144024&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144025",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144025"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Dhogri BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144025&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144026",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144026"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Khambra BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144026&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144027",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144027"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Suranussi SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144027&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144028",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144028"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Lallian BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144028&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144029",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144029"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Sheikhupur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Apra 144029&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144030",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144030"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Kalra BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144030&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144031",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144031"
+      ],
+      "lat": 31.52747,
+      "lon": 75.8066,
+      "locality": "RURKA KALAN SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144031&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144032",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144032"
+      ],
+      "lat": 31.2069036,
+      "lon": 75.6723245,
+      "locality": "Daduwal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144032&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144033",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144033"
+      ],
+      "lat": 31.52747,
+      "lon": 75.8066,
+      "locality": "Chak Vendal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Goraya 144033&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144034",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144034"
+      ],
+      "lat": 31.217811,
+      "lon": 75.769389,
+      "locality": "Bhardwajian BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jandiala ... 144034&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144035",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144035"
+      ],
+      "lat": 31.21781,
+      "lon": 75.76939,
+      "locality": "Kang Arryan BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Ludhiana 144035&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144036",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144036"
+      ],
+      "lat": 31.217809,
+      "lon": 75.769391,
+      "locality": "Khokhewal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144036&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144037",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144037"
+      ],
+      "lat": 31.0847815,
+      "lon": 75.6909651,
+      "locality": "Nagra BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144037&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144039",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144039"
+      ],
+      "lat": 31.4196049,
+      "lon": 75.7531255,
+      "locality": "Gumtali BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nurmahal 144039&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144040",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144040"
+      ],
+      "lat": 31.3203,
+      "lon": 75.5908,
+      "locality": "Bhullar BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nakodar 144040&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144041",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144041"
+      ],
+      "lat": 31.3260152,
+      "lon": 75.5761829,
+      "locality": "Adarman BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Ludhiana 144041&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144042",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144042"
+      ],
+      "lat": 31.52747,
+      "lon": 75.8066,
+      "locality": "Sharakpur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nakodar 144042&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144043",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144043"
+      ],
+      "lat": 31.217807,
+      "lon": 75.769393,
+      "locality": "Tahli BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nakodar 144043&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144044",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144044"
+      ],
+      "lat": 31.52747,
+      "lon": 75.8066,
+      "locality": "Bath Kalan BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144044&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144101",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144101"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Talhan BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144101&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144102",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144102"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Pandori Nijjran BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Adampur 144102&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144103",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144103"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Kandola BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Adampur 144103&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144104",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144104"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Daroli Khurd BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144104&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144106",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144106"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Kotla BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Adampur 144106&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144201",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144201"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Rajpur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Bhogpur 144201&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144301",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144301"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Kishangarh BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Alawalpur 144301&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144302",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144302"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Dolike Sunderpur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144302&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144303",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144303"
+      ],
+      "lat": 31.326723,
+      "lon": 75.586847,
+      "locality": "Jallowal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144303&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144311",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144311"
+      ],
+      "lat": 31.32055,
+      "lon": 75.2584,
+      "locality": "Rorkee BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144311&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144409",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144409"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Mothada Khurd BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Goraya 144409&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144410",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144410"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Nagar BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Phillaur 144410&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144411",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144411"
+      ],
+      "lat": 31.217806,
+      "lon": 75.769394,
+      "locality": "Raipur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144411&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144416",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144416"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Massani BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Apra 144416&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144418",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144418"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Dhaleta BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Goraya 144418&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144419",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144419"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Bharsingpura BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Ludhiana 144419&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144502",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144502"
+      ],
+      "lat": 31.300299,
+      "lon": 75.630428,
+      "locality": "Lehal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144502&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144603",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144603"
+      ],
+      "lat": 31.38345,
+      "lon": 75.32705,
+      "locality": "Khaira Majha BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144603&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144623",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144623"
+      ],
+      "lat": 31.26957,
+      "lon": 75.40631,
+      "locality": "Uggi BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144623&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144625",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144625"
+      ],
+      "lat": 31.374925,
+      "lon": 75.384211,
+      "locality": "Kular BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Ludhiana 144625&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144629",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144629"
+      ],
+      "lat": 31.3794,
+      "lon": 75.3847,
+      "locality": "Manak BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Lohian Khas 144629&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144630",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144630"
+      ],
+      "lat": 31.1743,
+      "lon": 75.4817,
+      "locality": "Kang Saboo BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nakodar 144630&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144632",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144632"
+      ],
+      "lat": 31.217806,
+      "lon": 75.769394,
+      "locality": "Birk BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Phagwara 144632&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144633",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144633"
+      ],
+      "lat": 31.1778861,
+      "lon": 75.6576652,
+      "locality": "Dhanipind BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144633&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144701",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144701"
+      ],
+      "lat": 31.382075,
+      "lon": 75.384029,
+      "locality": "Malupur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144701&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144702",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144702"
+      ],
+      "lat": 31.3092705,
+      "lon": 75.378467,
+      "locality": "Mullewal Khera BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Shahkot 144702&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144703",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144703"
+      ],
+      "lat": 31.2959166,
+      "lon": 75.4293773,
+      "locality": "Sohal Jagir BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Shahkot 144703&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144801",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144801"
+      ],
+      "lat": 31.4364,
+      "lon": 75.4956,
+      "locality": "Mustafapur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Kartarpur 144801&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144803",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144803"
+      ],
+      "lat": 31.4927899,
+      "lon": 75.4620901,
+      "locality": "Kudowal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144803&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144805",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144805"
+      ],
+      "lat": 31.3260222,
+      "lon": 75.5761759,
+      "locality": "Kahlwan BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Kartarpur 144805&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Jalandhar",
+      "pincode": "144806",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "144806"
+      ],
+      "lat": 31.2676983,
+      "lon": 75.6353474,
+      "locality": "Khusropur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jalandhar 144806&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    }
+  ],
+  "allRows": []
+}
