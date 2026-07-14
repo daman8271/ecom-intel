@@ -34,15 +34,34 @@ if [ "${ZEPTO_TEAM_BYPASS:-0}" != "1" ] && [ -f "$ACTIVE_PTR" ]; then
   if [ -n "$TEAM_ID" ] && [ "${TEAM_ID#"$(date +%Y%m%d)"-}" != "$TEAM_ID" ]; then
     M0="shards/runs/$TEAM_ID/zepto/shard-0-of-2/manifest.0-of-2.json"
     R0="shards/runs/$TEAM_ID/zepto/shard-0-of-2/result.json"
-    if [ -s "$M0" ] && [ ! -s "$R0" ]; then
+    if [ -s "$M0" ]; then
       DROP_PINS="$(python3 -c 'import json,sys;print((json.load(open(sys.argv[1])).get("summary") or {}).get("pincodes_total") or 0)' "$DROP" 2>/dev/null || echo 0)"
       SHARD_PINS="$(python3 -c 'import json,sys;print(len(json.load(open(sys.argv[1])).get("shard_pincodes") or []))' "$M0" 2>/dev/null || echo -1)"
+      FULL_PINS="$(python3 -c 'import json,sys;print(int(json.load(open(sys.argv[1])).get("source_count") or -1))' "$M0" 2>/dev/null || echo -1)"
       if [ "$DROP_PINS" = "$SHARD_PINS" ]; then
-        LOG "team run $TEAM_ID active — stashing this ${DROP_PINS}-pin drop as Mac shard-0 and triggering the merge"
-        mv "$DROP" "$R0"
+        if [ ! -s "$R0" ]; then
+          LOG "team run $TEAM_ID active — stashing this ${DROP_PINS}-pin drop as Mac shard-0 and triggering the merge"
+          mv "$DROP" "$R0"
+          exec tools/laptop/zepto_team_merge.sh "$TEAM_ID"
+        fi
+        # Mac shard-0 already stashed. A second shard-sized (half-universe) drop
+        # must NEVER hit the legacy full-ingest path below — review/selfheal
+        # baselines assume full-universe counts, so a half drop would poison them
+        # (and, wrongly accepted, publish a half-coverage report). Re-fire the
+        # idempotent merge against the existing shard-0 instead and stop.
+        LOG "team run $TEAM_ID active and Mac shard-0 already present; duplicate/late ${DROP_PINS}-pin shard drop — re-firing merge, NOT ingesting as full (drop left at $DROP)"
         exec tools/laptop/zepto_team_merge.sh "$TEAM_ID"
       fi
-      LOG "team run $TEAM_ID active but drop has ${DROP_PINS} pins (shard-0 expects ${SHARD_PINS}) — treating as a legacy full drop"
+      if [ "$DROP_PINS" != "$FULL_PINS" ]; then
+        # Team run active and this drop is neither the shard-0 set nor a full
+        # (source_count) drop — e.g. a partial Mac run. Refuse rather than let a
+        # non-full drop through to run.sh, where it would be scored against
+        # full-universe baselines. (A genuine legacy FULL drop matches FULL_PINS
+        # and falls through untouched.)
+        LOG "team run $TEAM_ID active but drop has ${DROP_PINS} pins (shard-0=${SHARD_PINS}, full=${FULL_PINS}) — refusing to ingest a non-full drop as full; drop left at $DROP"
+        exit 1
+      fi
+      LOG "team run $TEAM_ID active but drop has ${DROP_PINS} pins == full universe (${FULL_PINS}) — legacy full drop, normal ingest"
     fi
   fi
 fi
