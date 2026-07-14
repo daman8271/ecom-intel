@@ -31,6 +31,7 @@
 const { execFile } = require('child_process');
 const crypto = require('crypto');
 const fs = require('fs');
+const path = require('path');
 const uuid = () => crypto.randomUUID();
 
 // PINCODES_FILE / OUT_FILE let a caller scrape a subset to a separate output
@@ -240,7 +241,11 @@ function writeCompetitorOutputs(summary, allRows, partial) {
 //       gets written with a top-level `partial` flag so the batch wrapper sees it.
 // SIM hooks (ZEPTO_SIM / ZEPTO_BLOCK_SIM) drive the hermetic fault-injection tests in
 // test_hardening.md without hitting Zepto live.
-const PROG = `${__dirname}/.progress.${COMPETITOR ? 'competitor.' : ''}${new Date().toISOString().slice(0, 10)}.json`;
+function istDateString(d = new Date()) {
+  return new Date(d.getTime() + 5.5 * 3600 * 1000).toISOString().slice(0, 10);
+}
+const PROG = process.env.ZEPTO_PROGRESS_FILE
+  || `${__dirname}/.progress.${COMPETITOR ? 'competitor.' : ''}${istDateString()}.json`;
 const MAX_BLOCK_RETRIES = parseInt(process.env.ZEPTO_BLOCK_RETRIES || '4', 10);
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could legitimately appear in JSON payloads) — HTTP status carries those.
@@ -266,8 +271,15 @@ function loadProgress() {
   catch (_) { return {}; }
 }
 function saveProgress(done) {
-  try { fs.writeFileSync(PROG, JSON.stringify(done)); }
-  catch (e) { process.stderr.write(`[progress] write failed: ${e.message}\n`); }
+  const tmp = `${PROG}.tmp.${process.pid}`;
+  try {
+    fs.mkdirSync(path.dirname(PROG), { recursive: true });
+    fs.writeFileSync(tmp, JSON.stringify(done));
+    fs.renameSync(tmp, PROG);
+  } catch (e) {
+    try { fs.unlinkSync(tmp); } catch (_) { /* best effort */ }
+    process.stderr.write(`[progress] write failed: ${e.message}\n`);
+  }
 }
 
 // --- price/pack helpers (same conventions as the other platforms) ---
@@ -769,6 +781,7 @@ if (require.main === module) (async () => {
     saveProgress(done);                                       // checkpoint AFTER each pincode
     return res;
   });
+  partial = partial || perPin.some((p) => p.blocked || p.partial_block);
   const allRows = perPin.flatMap(p => p.rows);
   // Freshness aggregate for the review/staleness alarm. The REAL lag signal is NOT the per-product
   // `cached` flag (Zepto leaves it false even when serving a stale MongoDB snapshot) — it is the
