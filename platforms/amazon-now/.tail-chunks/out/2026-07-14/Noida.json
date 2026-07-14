@@ -1,0 +1,377 @@
+{
+  "summary": {
+    "pincodes_total": 18,
+    "pincodes_serviceable": 0,
+    "pincodes_with_jivo": 0,
+    "pincodes_mismatch": 0,
+    "total_rows": 0,
+    "seed_fallback_rows": 0,
+    "unique_skus": 0,
+    "now_tier_breakdown": {},
+    "wall_s": 69,
+    "captured_at": "2026-07-14T07:44:55.213Z"
+  },
+  "perPin": [
+    {
+      "city": "Noida",
+      "pincode": "201008",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201008"
+      ],
+      "lat": 28.533516,
+      "lon": 77.391026,
+      "locality": "Piaoli BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Dadri 201008&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201009",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201009"
+      ],
+      "lat": 28.61779,
+      "lon": 77.477367,
+      "locality": "Chhapraula BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Ghaziabad 201009&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201302",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201302"
+      ],
+      "lat": 28.5787,
+      "lon": 77.3134,
+      "locality": "NDC Noida",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Ghaziabad 201302&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201306",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201306"
+      ],
+      "lat": 28.5308,
+      "lon": 77.4599,
+      "locality": "Kulesra BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Greater N... 201306&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201313",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201313"
+      ],
+      "lat": 28.452212,
+      "lon": 77.525161,
+      "locality": "Amity university SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Noida 201313&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201314",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201314"
+      ],
+      "lat": 28.490659,
+      "lon": 77.623541,
+      "locality": "Kot BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Greater N... 201314&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201315",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201315"
+      ],
+      "lat": 28.4517835,
+      "lon": 77.4989296,
+      "locality": "Gurjinder Vihar SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gautam Bu... 201315&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201316",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201316"
+      ],
+      "lat": 28.5928332,
+      "lon": 77.3871665,
+      "locality": "Sec 122 Noida SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gautam Bu... 201316&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "201317",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "201317"
+      ],
+      "lat": 28.52231,
+      "lon": 77.36425,
+      "locality": "Sec 128 Noida SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Gautam Bu... 201317&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203135",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203135"
+      ],
+      "lat": 28.2147939,
+      "lon": 77.5477266,
+      "locality": "Mangrauli BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jewar 203135&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203141",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203141"
+      ],
+      "lat": 28.2175582,
+      "lon": 77.6956558,
+      "locality": "Bhunna  Jattan BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Jahangirpur 203141&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203155",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203155"
+      ],
+      "lat": 28.1825696,
+      "lon": 77.6269912,
+      "locality": "Ahamedpur  Chauroli BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Bulandshahr 203155&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203201",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203201"
+      ],
+      "lat": 28.3454822,
+      "lon": 77.6029157,
+      "locality": "Parsol BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Greater N... 203201&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203202",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203202"
+      ],
+      "lat": 28.391959,
+      "lon": 77.6237131,
+      "locality": "Chiti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Bilaspur ... 203202&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203203",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203203"
+      ],
+      "lat": 28.3367634,
+      "lon": 77.6532055,
+      "locality": "Mahmoodpur Jadon BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Kakod 203203&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203207",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203207"
+      ],
+      "lat": 28.542657,
+      "lon": 77.673655,
+      "locality": "Bambawar BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Sikandara... 203207&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "203209",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "203209"
+      ],
+      "lat": 28.275041,
+      "lon": 77.560509,
+      "locality": "Ronija BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Greater N... 203209&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Noida",
+      "pincode": "212652",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "212652"
+      ],
+      "lat": 28.275041,
+      "lon": 77.560509,
+      "locality": "Akbarpur Churai BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Hathgram 212652&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    }
+  ],
+  "allRows": []
+}
