@@ -1,0 +1,42 @@
+[
+  {
+    "city": "Delhi",
+    "pincode": "110094",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": ["110094"],
+    "lat": 28.7039444,
+    "lon": 77.2833056,
+    "locality": "Dayalpur BO"
+  },
+  {
+    "city": "Delhi",
+    "pincode": "110082",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": ["110082"],
+    "lat": 28.7721666,
+    "lon": 77.119,
+    "locality": "Holambi Kalan BO"
+  },
+  {
+    "city": "Mumbai",
+    "pincode": "400032",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": ["400032"],
+    "lat": 18.96775,
+    "lon": 72.8216944,
+    "locality": "High Court Building SO Mumbai"
+  },
+  {
+    "city": "Noida",
+    "pincode": "201317",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": ["201317"],
+    "lat": 28.52231,
+    "lon": 77.36425,
+    "locality": "Sec 128 Noida SO"
+  }
+]

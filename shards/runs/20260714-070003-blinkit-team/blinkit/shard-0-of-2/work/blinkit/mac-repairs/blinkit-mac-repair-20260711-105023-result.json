@@ -1,0 +1,48 @@
+{
+  "summary": {
+    "pincodes_total": 1,
+    "pincodes_resolved": 1,
+    "pincodes_unresolved": 0,
+    "pincodes_with_jivo": 0,
+    "pincodes_blocked": 0,
+    "total_rows": 0,
+    "unique_skus": 0,
+    "wall_s": 11,
+    "partial": false,
+    "auth_session": 1,
+    "auth_required": 1,
+    "auth_verified": 1,
+    "auth_verified_pincodes": 1,
+    "oos_probe_enabled": 1,
+    "oos_probe_flips": 0,
+    "pdp_oos_probe_enabled": 1,
+    "pdp_oos_probe_flips": 0,
+    "pdp_price_probe_enabled": 1,
+    "pdp_price_probe_checked": 0,
+    "pdp_price_probe_updates": 0,
+    "unverified_oos": 0,
+    "captured_at": "2026-07-11T05:20:36.447Z"
+  },
+  "perPin": [
+    {
+      "city": "Jaipur",
+      "pincode": "303121",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "303121"
+      ],
+      "lat": 26.91925,
+      "lon": 75.7196389,
+      "locality": "NIMS University SO",
+      "store_id": 36028,
+      "store_name": "",
+      "resolved": true,
+      "blocked": null,
+      "auth_accepted": 1,
+      "rows": []
+    }
+  ],
+  "allRows": [],
+  "partial": false
+}

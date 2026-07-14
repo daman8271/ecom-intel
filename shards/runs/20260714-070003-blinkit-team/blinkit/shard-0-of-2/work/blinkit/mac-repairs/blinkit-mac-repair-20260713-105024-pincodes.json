@@ -1,0 +1,26 @@
+[
+  {
+    "city": "Delhi",
+    "pincode": "110040",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "110040"
+    ],
+    "lat": 28.84,
+    "lon": 77.08,
+    "locality": "Bankner BO"
+  },
+  {
+    "city": "Ludhiana",
+    "pincode": "141015",
+    "tier": 1,
+    "represents": 1,
+    "pincodes": [
+      "141015"
+    ],
+    "lat": 30.895225,
+    "lon": 75.9295,
+    "locality": "Karyana Kalan BO"
+  }
+]
