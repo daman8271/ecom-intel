@@ -23,14 +23,7 @@ log() {
 
 log "start for $DATE_IST"
 
-if [ -s "$MAIN" ] && [ -s "$NOT_LISTED" ]; then
-  log "reports present; running quality gate"
-  BLINKIT_MONITOR_DRYRUN=1 \
-    BLINKIT_MONITOR_DATE="$DATE_IST" \
-    BLINKIT_MONITOR_REPORT="$MAIN" \
-    BLINKIT_MONITOR_NOT_LISTED_REPORT="$NOT_LISTED" \
-    "$ROOT/tools/cron/blinkit_quality_monitor.sh" "$PASS" >>"$LOG" 2>&1 || true
-else
+if [ ! -s "$MAIN" ] || [ ! -s "$NOT_LISTED" ]; then
   [ -s "$MAIN" ] || log "main workbook missing: $MAIN"
   [ -s "$NOT_LISTED" ] || log "not-listed workbook missing: $NOT_LISTED"
 fi
@@ -41,8 +34,6 @@ BLINKIT_NOT_LISTED_DATE="$DATE_IST" "$ROOT/tools/whatsapp/send_blinkit_not_liste
 
 if [ -s "$MAIN_SENT" ] && [ -s "$NOT_LISTED_SENT" ]; then
   log "complete; both WhatsApp sent markers exist"
-  BLINKIT_TOP8_DATE="$DATE_IST" \
-    "$ROOT/tools/competitor/start_blinkit_top8_daily.sh" >>"$LOG" 2>&1 || true
   exit 0
 fi
 
