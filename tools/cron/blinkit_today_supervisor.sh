@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # One-day active supervisor for Blinkit. It does not scrape directly; it triggers
-# blinkit_batch_guard.sh when the run is missing and no Blinkit worker is active.
-# The guard then chooses Mac or the strict VPS+KVM1 fallback.
+# blinkit_batch_guard.sh when the run is missing and no residential worker is
+# active. The guard retries only the Mac/Windows production workflow.
 set -u
 
 DIR=/opt/ecom-intel
@@ -31,27 +31,16 @@ not_listed_report="$DIR/output/Jivo-Blinkit-Not-Listed-Pincodes-${TODAY}.xlsx"
 main_sent="$DIR/logs/blinkit-main-wa-${TODAY}.sent"
 not_listed_sent="$DIR/logs/blinkit-not-listed-wa-${TODAY}.sent"
 
-local_worker_active() {
-  pgrep -f 'blinkit_vps_kvm_fallback.sh|run_platform_shard.sh blinkit' >/dev/null 2>&1 && return 0
-  local cwd
-  for p in /proc/[0-9]*/cwd; do
-    cwd="$(readlink "$p" 2>/dev/null || true)"
-    case "$cwd" in
-      */platforms/blinkit|*/work/blinkit) return 0 ;;
-    esac
-  done
-  return 1
-}
-
-kvm_worker_active() {
-  ssh -o BatchMode=yes -o ConnectTimeout=8 kvm1 \
-    "pgrep -f 'run_platform_shard.sh blinkit' >/dev/null 2>&1 && exit 0
-for p in /proc/[0-9]*/cwd; do
-  cwd=\$(readlink \"\$p\" 2>/dev/null || true)
-  case \"\$cwd\" in */platforms/blinkit|*/work/blinkit) exit 0 ;; esac
-done
-exit 1" \
-    >/dev/null 2>&1
+device_worker_active() {
+  ssh -o BatchMode=yes -o ConnectTimeout=8 macpro \
+    "pgrep -f 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' >/dev/null" \
+    >/dev/null 2>&1 && return 0
+  local team_id
+  team_id="$(head -1 "$DIR/shards/runs/ACTIVE-blinkit-team" 2>/dev/null || true)"
+  [ -n "$team_id" ] || return 1
+  timeout 20 ssh -o BatchMode=yes -o ConnectTimeout=8 laptop \
+    "Get-CimInstance Win32_Process | Where-Object { \$_.CommandLine -match '$team_id' } | Select-Object -First 1" \
+    2>/dev/null | grep -q "$team_id"
 }
 
 reports_present() {
@@ -76,7 +65,7 @@ while [ "$(date +%s)" -le "$(epoch_for "$END_HHMM")" ]; do
   else
     log "reports missing"
     if [ "$((10#$(hhmm_now)))" -ge "$((10#${START_HHMM/:/}))" ]; then
-      if local_worker_active || kvm_worker_active; then
+      if device_worker_active; then
         log "Blinkit worker active; not triggering another guard pass"
       else
         log "no active worker after start window; triggering guard"

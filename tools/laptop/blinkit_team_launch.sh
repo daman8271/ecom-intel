@@ -44,7 +44,8 @@ trap wake_agent_on_exit EXIT
 
 [ -f "$REPORT" ] && { LOG "today's report already present — nothing to do"; exit 0; }
 if [ -f logs/.mac-offline ]; then
-  LOG "Mac flagged offline — VPS+KVM fallback owns today; not splitting"
+  LOG "Mac flagged offline — device-team cannot start; VPS/KVM fallback is disabled"
+  team_tg "⚠️ Blinkit device-team: Mac Pro is flagged offline. Production is waiting for Mac/Windows recovery; VPS/KVM fallback is disabled."
   exit 0
 fi
 if id="$(read_active blinkit)"; then

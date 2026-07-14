@@ -79,6 +79,7 @@ EXPECTED=(
   "output/Jivo-AmazonFresh-Live-Report-$D.xlsx"
   "output/Jivo-AmazonNow-Live-Report-$D.xlsx"
   "output/Jivo-Bigbasket-Live-Report-$D.xlsx"
+  "output/Jivo-BigBasket-Pincode-Report-$D.xlsx"
   "output/Jivo-Blinkit-Live-Report-$D.xlsx"
   "output/Jivo-Flipkart-Live-Report-$D.xlsx"
   "output/Jivo-FlipkartMinutes-Live-Report-$D.xlsx"
@@ -94,11 +95,26 @@ EXTRA=(
   "output/Jivo-SwiggyInstamart-Live-Report-$D.xlsx"
 )
 
+# Test fixtures are written immediately before invocation. Production always
+# requires 90 seconds of mtime stability so a workbook cannot be sent mid-write.
+if [ -n "${MAILER_STABLE_AGE_S+x}" ]; then
+  STABLE_AGE_S="$MAILER_STABLE_AGE_S"
+elif [ "${MAILER_TEST_MODE:-0}" = "1" ]; then
+  STABLE_AGE_S=0
+else
+  STABLE_AGE_S=90
+fi
+
+file_ready() {
+  local f="$1" now="${2:-$(date +%s)}"
+  [ -f "$f" ] && [ $(( now - $(stat -c %Y "$f") )) -ge "$STABLE_AGE_S" ]
+}
+
 deadline=$(( $(date +%s) + MAX_WAIT ))
 while :; do
   now=$(date +%s); ready=1
   for f in "${EXPECTED[@]}"; do
-    if [ ! -f "$f" ] || [ $(( now - $(stat -c %Y "$f") )) -lt 90 ]; then
+    if ! file_ready "$f" "$now"; then
       ready=0; break
     fi
   done
@@ -111,7 +127,19 @@ while :; do
 done
 
 PRESENT=()
-for f in "${EXPECTED[@]}" "${EXTRA[@]}"; do [ -f "$f" ] && PRESENT+=("$f"); done
+for f in "${EXPECTED[@]}" "${EXTRA[@]}"; do
+  file_ready "$f" && PRESENT+=("$f")
+done
+
+MISSING=()
+for f in "${EXPECTED[@]}"; do
+  file_ready "$f" || MISSING+=("$f")
+done
+if [ ${#MISSING[@]} -gt 0 ]; then
+  MISSING_NAMES="$(basename -a "${MISSING[@]}" | paste -sd ', ' -)"
+  echo "WARN: ${#MISSING[@]} required reports are missing or unstable: $MISSING_NAMES"
+  alert "${#MISSING[@]} required reports missing at batch deadline: $MISSING_NAMES"
+fi
 
 # Blinkit is Mac/drop-fed and has stricter false-OOS/effective-price gates. The
 # ingest path should already refuse bad drops, but the mailer is a final delivery
@@ -189,7 +217,85 @@ WA_GROUP="120363047864912511@g.us"
 WA_FAIL=0
 WA_PRESENT=("${PRESENT[@]}")
 BLINKIT_MAIN_WA_MARKER="logs/blinkit-main-wa-$D.sent"
-if [ -f "$BLINKIT_MAIN_WA_MARKER" ]; then
+PINCODE_REPORT="output/Jivo-BigBasket-Pincode-Report-$D.xlsx"
+PINCODE_WA_MARKER="logs/bigbasket-pincode-wa-$D.sent"
+RECEIPT_DIR="logs/delivery-receipts/$D"
+
+marker_covers_file() {
+  local marker="$1" file="$2"
+  [ -f "$marker" ] && [ -f "$file" ] &&
+    [ "$(stat -c %Y "$marker")" -ge "$(stat -c %Y "$file")" ]
+}
+
+receipt_path() {
+  printf '%s/%s.json\n' "$RECEIPT_DIR" "$(basename "$1")"
+}
+
+receipt_matches() {
+  local file="$1" receipt sha
+  receipt="$(receipt_path "$file")"
+  [ -f "$receipt" ] || return 1
+  sha="$(sha256sum "$file" | awk '{print $1}')" || return 1
+  python3 - "$receipt" "$PWD/$file" "$sha" "$WA_GROUP" <<'PY'
+import json, os, sys
+
+receipt, path, sha256, target = sys.argv[1:]
+try:
+    data = json.load(open(receipt, encoding="utf-8"))
+except (OSError, ValueError):
+    raise SystemExit(1)
+ok = (
+    data.get("file") == os.path.abspath(path)
+    and data.get("sha256") == sha256
+    and data.get("target") == target
+    and bool(data.get("messageId"))
+)
+raise SystemExit(0 if ok else 1)
+PY
+}
+
+write_receipt() {
+  local file="$1" response="$2" receipt sha size
+  receipt="$(receipt_path "$file")"
+  sha="$(sha256sum "$file" | awk '{print $1}')" || return 1
+  size="$(stat -c %s "$file")" || return 1
+  mkdir -p "$RECEIPT_DIR"
+  python3 - "$receipt" "$PWD/$file" "$sha" "$size" "$WA_GROUP" "$response" <<'PY'
+import datetime, json, os, sys
+
+receipt, path, sha256, size, target, raw = sys.argv[1:]
+try:
+    response = json.loads(raw)
+except ValueError:
+    raise SystemExit(1)
+message_id = response.get("messageId")
+if response.get("success") is not True or not message_id:
+    raise SystemExit(1)
+data = {
+    "file": os.path.abspath(path),
+    "sha256": sha256,
+    "size": int(size),
+    "target": target,
+    "messageId": str(message_id),
+    "sent_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+}
+tmp = receipt + ".tmp"
+with open(tmp, "w", encoding="utf-8") as handle:
+    json.dump(data, handle, indent=2, sort_keys=True)
+    handle.write("\n")
+os.replace(tmp, receipt)
+PY
+}
+
+required_delivered() {
+  local file="$1"
+  if [ "$file" = "$BLINKIT_REPORT" ] && marker_covers_file "$BLINKIT_MAIN_WA_MARKER" "$file"; then
+    return 0
+  fi
+  receipt_matches "$file"
+}
+
+if marker_covers_file "$BLINKIT_MAIN_WA_MARKER" "$BLINKIT_REPORT"; then
   WA_FILTERED=()
   for f in "${WA_PRESENT[@]}"; do
     [ "$f" = "$BLINKIT_REPORT" ] && continue
@@ -198,8 +304,22 @@ if [ -f "$BLINKIT_MAIN_WA_MARKER" ]; then
   WA_PRESENT=("${WA_FILTERED[@]}")
   echo "WhatsApp group: Blinkit main already sent direct ($BLINKIT_MAIN_WA_MARKER); skipping duplicate group document"
 fi
+
+# A retry sends only files whose current SHA has no confirmed group receipt.
+# This makes the post-batch guard safe to run repeatedly.
+WA_FILTERED=()
+for f in "${WA_PRESENT[@]}"; do
+  if receipt_matches "$f"; then
+    echo "WhatsApp group: confirmed receipt already exists for $(basename "$f"); skipping duplicate"
+  else
+    WA_FILTERED+=("$f")
+  fi
+done
+WA_PRESENT=("${WA_FILTERED[@]}")
+
+WA_SENT_THIS_RUN=0
 if [ ${#WA_PRESENT[@]} -eq 0 ]; then
-  echo "WhatsApp group: no files to post after direct-send filtering; skipped"
+  echo "WhatsApp group: no unconfirmed files to post; skipped"
 elif [ "${MAILER_TEST_MODE:-0}" = "1" ] || [ "${MAILER_DRY_RUN_SEND:-0}" = "1" ]; then
   echo "TEST WhatsApp group: $WA_GROUP ${#WA_PRESENT[@]} files"
 else
@@ -214,17 +334,39 @@ else
     R=$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media \
       -H 'Content-Type: application/json' -d "$B")
     echo "WhatsApp doc $(basename "$f"): $R"
-    echo "$R" | grep -q '"success":true' || WA_FAIL=1
+    if echo "$R" | grep -q '"success":true' && write_receipt "$f" "$R"; then
+      WA_SENT_THIS_RUN=$((WA_SENT_THIS_RUN + 1))
+      [ "$f" = "$PINCODE_REPORT" ] && touch "$PINCODE_WA_MARKER"
+      [ "$f" = "$BLINKIT_REPORT" ] && touch "$BLINKIT_MAIN_WA_MARKER"
+    else
+      WA_FAIL=1
+    fi
     sleep 2
   done
-  if [ "$WA_FAIL" -eq 0 ]; then
-    echo "WhatsApp: posted ${#WA_PRESENT[@]} reports to Ecom team group"
-  else
+  if [ "$WA_FAIL" -ne 0 ]; then
     echo "ERROR: some WhatsApp posts failed"
     if [ "$EMAIL_FAIL" -eq 0 ]; then
       alert "WhatsApp Ecom-group post failed for one or more files (email did go out)"
     else
       alert "WhatsApp Ecom-group post failed for one or more files AND email failed — team got nothing"
+    fi
+  fi
+fi
+
+REQUIRED_PENDING=()
+for f in "${EXPECTED[@]}"; do
+  if ! file_ready "$f" || ! required_delivered "$f"; then
+    REQUIRED_PENDING+=("$f")
+  fi
+done
+if [ "${MAILER_TEST_MODE:-0}" != "1" ] && [ "${MAILER_DRY_RUN_SEND:-0}" != "1" ]; then
+  if [ ${#REQUIRED_PENDING[@]} -eq 0 ] && [ "$WA_FAIL" -eq 0 ]; then
+    echo "WhatsApp: posted complete delivery set to Ecom team group (${#EXPECTED[@]} required reports; $WA_SENT_THIS_RUN sent this run)"
+  else
+    echo "WhatsApp: posted partial delivery set to Ecom team group; ${#REQUIRED_PENDING[@]} required missing or unconfirmed"
+    if [ ${#REQUIRED_PENDING[@]} -gt 0 ]; then
+      PENDING_NAMES="$(basename -a "${REQUIRED_PENDING[@]}" | paste -sd ', ' -)"
+      alert "partial Ecom batch: ${#REQUIRED_PENDING[@]} required reports missing or unconfirmed: $PENDING_NAMES"
     fi
   fi
 fi

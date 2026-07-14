@@ -4,10 +4,8 @@
 # light cron (*/10 08-09).
 #
 # Exit code contract for the guard:
-#   0 = an active team run exists and is being handled (working / merged /
-#       rescued) — the guard should exit without legacy action this pass.
-#   3 = no active team run (or the team run was abandoned and the pointer
-#       cleared) — the guard proceeds with its legacy logic.
+#   0 = an active team run exists and is being handled on Mac/Windows.
+#   3 = no active team run; the guard may start a new Mac/Windows run.
 set -uo pipefail
 DIR=/opt/ecom-intel
 cd "$DIR" || exit 3
@@ -57,49 +55,55 @@ mac_working() {
 }
 laptop_working() {
   [ -s "$RUN/shard-1-of-2/run.done" ] && return 1
-  laptop_file_fresh "$WIN_RUN_FS/run.stdout" 1200
+  laptop_file_fresh "$WIN_ECOM_FS/platforms/zepto/.progress.${TODAY}.json" 1200
 }
-rescue_local() {
-  local idx="$1" marker="$RUN/.rescue-$1"
-  [ -f "$marker" ] && return 1
+retry_due() {
+  local marker="$1" interval="${2:-600}"
+  [ ! -e "$marker" ] && return 0
+  [ $(( $(date +%s) - $(stat -c %Y "$marker" 2>/dev/null || echo 0) )) -ge "$interval" ]
+}
+retry_mac() {
+  local marker="$RUN/.mac-retry" cfg="$MAC_PROJECT/mac-runs/team-${RUN_ID}-pincodes.json"
+  retry_due "$marker" || return 0
   touch "$marker"
-  LOG "RESCUE: scraping shard-$idx locally on the VPS"
-  team_tg "🛠 Zepto team watch: shard-$idx of $RUN_ID has no result and its device is idle — rescuing that half on the VPS now."
-  nohup bash -c "cd '$DIR' && env SHARD_ROLE='vps-rescue' CONCURRENCY='${ZEPTO_TEAM_RESCUE_CONCURRENCY:-3}' \
-      timeout --foreground -k 60 7200s \
-      tools/shards/run_platform_shard.sh zepto platforms/zepto/pincodes.daily.json 2 '$idx' '$RUN_ID' \
-      >> logs/zepto_team.log 2>&1; \
-    tools/laptop/zepto_team_merge.sh '$RUN_ID' >> logs/zepto_team.log 2>&1" \
-    >/dev/null 2>&1 &
-  return 0
+  LOG "Mac shard-0 missing and idle — retrying Mac wrapper"
+  timeout 30 ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
+    "nohup env PINCODES_FILE='$cfg' '$WRAPPER' >/tmp/zepto-team-shard0-retry.log 2>&1 & disown" >/dev/null 2>&1 || true
 }
-
-if pgrep -f "run_platform_shard.sh zepto" >/dev/null 2>&1; then
-  LOG "a local shard rescue is already running — waiting"
-  exit 0
-fi
+retry_laptop() {
+  local marker="$RUN/.laptop-retry"
+  retry_due "$marker" || return 0
+  touch "$marker"
+  LOG "laptop shard-1 missing and stale — retrying resumable Windows runner"
+  laptop_spawn_cmd "$WIN_RUNS_BS\\$RUN_ID\\laptop.run.cmd" || true
+}
 
 handled=0
 if [ ! -s "$R0" ]; then
   if mac_working; then
     LOG "Mac still scraping shard-0 — waiting"; handled=1
-  elif rescue_local 0; then
-    handled=1
+  else
+    retry_mac; handled=1
+    if [ ! -f "$RUN/.mac-alerted" ]; then
+      touch "$RUN/.mac-alerted"
+      team_tg "⚠️ Zepto team watch: Mac shard-0 is missing and idle; retrying on Mac. VPS/KVM fallback remains disabled."
+    fi
   fi
 fi
 if [ ! -s "$R1" ]; then
   if laptop_working; then
     LOG "laptop still scraping shard-1 — waiting"; handled=1
-  elif rescue_local 1; then
-    handled=1
+  else
+    retry_laptop; handled=1
+    if [ ! -f "$RUN/.laptop-alerted" ]; then
+      touch "$RUN/.laptop-alerted"
+      team_tg "⚠️ Zepto team watch: Windows shard-1 is missing/stale; retrying on Windows. VPS/KVM fallback remains disabled."
+    fi
   fi
 fi
 [ -s "$R0" ] && [ -s "$R1" ] && handled=1
 
 if [ "$handled" = 0 ]; then
-  LOG "team run $RUN_ID is stuck with rescues already burned — clearing pointer, guard goes legacy"
-  team_tg "⚠️ Zepto team run $RUN_ID abandoned (shards missing, rescues exhausted). Guard falls back to a full run."
-  clear_active zepto "$RUN_ID"
-  exit 3
+  LOG "team run $RUN_ID is stuck on Mac/Windows; keeping pointer for resumable retries"
 fi
 exit 0

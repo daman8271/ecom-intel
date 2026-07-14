@@ -29,6 +29,11 @@ log() {
   printf '[%s] blinkit_vps_kvm_fallback(%s): %s\n' "$(TZ=Asia/Kolkata date '+%F %T %Z')" "$MODE" "$*" | tee -a "$LOG_FILE"
 }
 
+if [ "${BLINKIT_ALLOW_MANUAL_DATACENTER_FALLBACK:-0}" != "1" ]; then
+  log "REFUSED: datacenter fallback is disabled for production; recover the Mac/Windows device workflow"
+  exit 2
+fi
+
 tg() { (
   set +e
   [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"

@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
 # Zepto Mac Pro primary guard.
 #
-# Owner decision 2026-07-09: do not run Zepto on KVM1. KVM1 showed repeat
-# recoverable HTTP 429s while Mac Pro and the main VPS completed the same smoke
-# set cleanly. This guard starts the Mac Pro feeder and uses only the VPS as the
-# emergency fallback.
+# Zepto is Mac Pro + Windows only. Datacenter fallbacks are deliberately
+# prohibited: they are both slow under 429 pressure and hide device failures.
 set -uo pipefail
 
 DIR=/opt/ecom-intel
@@ -15,12 +13,7 @@ PASS="${1:-launch}"
 TODAY="$(date +%F)"
 TODAY_COMPACT="$(date +%Y%m%d)"
 NOW="$(date +%s)"
-BATCH_TS="$(date -d "$TODAY 10:00" +%s)"
-BLINKIT_WINDOW_START_TS="$(date -d "$TODAY 07:00" +%s)"
-BLINKIT_DEADLINE_TS="$(date -d "$TODAY 11:00" +%s)"
 REPORT="output/Jivo-Zepto-Live-Report-${TODAY}.xlsx"
-BLINKIT_REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
-BLINKIT_TEAM_PTR="shards/runs/ACTIVE-blinkit-team"
 WRAPPER="/Users/danny./VPS-Migration/scripts/run_zepto_mac_to_vps.sh"
 MAC_STALE_RUNNING_S="${ZEPTO_MAC_STALE_RUNNING_S:-18000}"
 LOG(){ echo "[$(date '+%F %T')] zepto_macpro_guard($PASS): $*"; }
@@ -48,21 +41,6 @@ mac_reachable(){ ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "true" >/dev/n
 mac_running(){
   ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
     "pgrep -f 'run_zepto_mac_to_vps.sh|platforms/zepto/scrape.js' >/dev/null" >/dev/null 2>&1
-}
-
-blinkit_priority_active(){
-  local team_id now
-  [ -f "$BLINKIT_REPORT" ] && return 1
-  now="$(date +%s)"
-  if [ "$now" -ge "$BLINKIT_WINDOW_START_TS" ] && [ "$now" -lt "$BLINKIT_DEADLINE_TS" ]; then
-    return 0
-  fi
-  team_id="$(head -1 "$BLINKIT_TEAM_PTR" 2>/dev/null || true)"
-  if [ -n "$team_id" ] && [ "${team_id#"$TODAY_COMPACT"-}" != "$team_id" ]; then
-    return 0
-  fi
-  ssh -o BatchMode=yes -o ConnectTimeout=15 macpro \
-    "pgrep -f 'run_blinkit_mac_to_vps.sh|platforms/blinkit/scrape.js' >/dev/null" >/dev/null 2>&1
 }
 
 mac_stale_previous_run(){
@@ -95,41 +73,11 @@ trigger_mac(){
     "nohup '$WRAPPER' >/tmp/zepto-guard-rerun.log 2>&1 & disown" >/dev/null 2>&1
 }
 
-local_vps_rescue(){
-  local sid est now rc v verdict
-  est=2700
-  now="$(date +%s)"
-  if [ $((now + est)) -gt $((BATCH_TS - 300)) ]; then
-    LOG "too late for VPS rescue before the 10:00 batch"
-    tg "⚠️ Zepto guard: too late to re-run Zepto before the 10:00 batch; post-batch selfheal/next guard must deliver it late."
-    return 0
-  fi
-  exec 7>"logs/.sweep-chain.lock"
-  if ! flock -w 900 7; then
-    LOG "sweep-chain lock busy; cannot run VPS Zepto rescue now"
-    tg "⏳ Zepto guard: VPS chain still busy, so Zepto rescue was not started concurrently. KVM1 will not be used."
-    return 0
-  fi
-  if [ -f "$REPORT" ]; then
-    LOG "Zepto report landed while waiting for the sweep-chain lock; rescue no longer needed"
-    return 0
-  fi
-  now="$(date +%s)"
-  if [ $((now + est)) -gt $((BATCH_TS - 300)) ]; then
-    LOG "too late for VPS rescue after waiting for the sweep-chain lock"
-    tg "⚠️ Zepto guard: the VPS chain released too late to finish a safe Zepto rescue before the 10:00 batch."
-    return 0
-  fi
-  sid="$(pending_sweep_id || true)"
-  LOG "VPS rescue start sid=${sid:-none}"
-  tg "🛠 Zepto guard: Mac Pro unavailable/missed; running Zepto on the VPS as fallback. KVM1 is disabled for Zepto."
-  rc=0
-  DEFER_DELIVERY="${sid:+1}" SWEEP_ID="$sid" COVERAGE_DAILY=1 \
-    timeout 6300 ./run.sh zepto >> logs/zepto-vps-rescue.log 2>&1 || rc=$?
-  v="$(ls -t reviews/zepto-"$TODAY"-*.json 2>/dev/null | grep -Ev -- '-(unhold|doctor|probe|w2probe)\.json$' | head -1)"
-  verdict="none"; [ -n "$v" ] && verdict="$(python3 -c 'import json,sys;print((json.load(open(sys.argv[1])).get("verdict") or "?").upper())' "$v" 2>/dev/null || echo '?')"
-  LOG "VPS rescue done rc=$rc verdict=$verdict"
-  [ "$verdict" = "OK" ] && tg "✅ Zepto VPS fallback verdict OK; KVM1 was not used." || tg "⚠️ Zepto VPS fallback verdict $verdict rc=$rc; held by normal gates."
+offbox_failure(){
+  local reason="$1"
+  LOG "OFFBOX-ONLY: $reason; VPS/KVM fallback is disabled"
+  tg "⚠️ Zepto Mac/Windows workflow needs attention: $reason. VPS/KVM fallback is disabled by policy."
+  return 1
 }
 
 if [ -f "$REPORT" ]; then
@@ -139,25 +87,17 @@ fi
 
 case "$PASS" in
   launch)
-    if blinkit_priority_active; then
-      LOG "Blinkit 11:00 run owns Mac Pro + laptop; using VPS-only Zepto fallback"
-      tg "ℹ️ Zepto guard: Blinkit is using the Mac Pro and Windows laptop for its 11:00 deadline; Zepto is moving to its VPS-only fallback."
-      local_vps_rescue
-      exit 0
-    fi
     if mac_running; then
       if mac_stale_previous_run; then
-        LOG "stale previous-day Mac Pro Zepto run still active; using VPS fallback instead of waiting"
-        tg "⚠️ Zepto guard: previous-day Mac Pro Zepto is still active at $(date +%H:%M) IST; using VPS fallback for today's report. KVM1 remains disabled."
-        local_vps_rescue
+        offbox_failure "stale previous-day Mac Pro Zepto run is still active"
         exit 0
       fi
       LOG "Mac Pro Zepto already running"
       exit 0
     fi
     # Device-team split (laptop worker #4): try laptop shard-1 + Mac shard-0
-    # first; any failure inside the launcher returns nonzero and we fall back
-    # to the legacy full-universe Mac trigger below.
+    # first; if Windows cannot participate, the Mac-only production runner is
+    # still allowed. No datacenter fallback is available.
     if [ "${ZEPTO_TEAM_DISABLE:-0}" != "1" ] && tools/laptop/zepto_team_launch.sh >> logs/zepto_team.log 2>&1; then
       LOG "device-team split engaged — laptop shard-1 + Mac shard-0 (logs/zepto_team.log)"
       exit 0
@@ -165,17 +105,10 @@ case "$PASS" in
     if trigger_mac; then
       LOG "Mac Pro Zepto trigger sent"
     else
-      LOG "Mac Pro trigger failed; starting VPS fallback"
-      tg "⚠️ Zepto guard: Mac Pro trigger failed at $(date +%H:%M) IST; using VPS fallback. KVM1 will not run Zepto."
-      local_vps_rescue
+      offbox_failure "Mac Pro trigger failed at $(date +%H:%M) IST"
     fi
     ;;
   watchdog|late)
-    if blinkit_priority_active; then
-      LOG "Blinkit 11:00 run still owns Mac Pro + laptop; keeping Zepto off both devices"
-      local_vps_rescue
-      exit 0
-    fi
     # Device-team split: while a team run is active, the team watch owns
     # pull/merge/rescue for this pass (exit 0). Exit 3 = no/abandoned team run
     # -> fall through to the legacy checks below.
@@ -185,19 +118,16 @@ case "$PASS" in
     fi
     if mac_running; then
       if mac_stale_previous_run; then
-        LOG "stale previous-day Mac Pro Zepto run still active; using VPS fallback instead of waiting"
-        tg "⚠️ Zepto guard: previous-day Mac Pro Zepto is still active at $(date +%H:%M) IST; using VPS fallback for today's report. KVM1 remains disabled."
-        local_vps_rescue
+        offbox_failure "stale previous-day Mac Pro Zepto run is still active"
         exit 0
       fi
       LOG "Mac Pro Zepto still running — waiting"
       exit 0
     fi
-    if mac_reachable && [ "$NOW" -lt "$(date -d "$TODAY 09:00" +%s)" ]; then
+    if mac_reachable; then
       if trigger_mac; then LOG "Mac Pro Zepto watchdog trigger sent"; exit 0; fi
     fi
-    LOG "no report and Mac Pro not running; using VPS fallback"
-    local_vps_rescue
+    offbox_failure "no report and Mac Pro is not running"
     ;;
   *)
     LOG "unknown pass '$PASS'"

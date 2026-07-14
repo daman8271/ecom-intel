@@ -27,6 +27,11 @@ cd "$DIR" || exit 2
 PASS="${1:-early}"
 LOG(){ echo "[$(date '+%F %T')] blinkit_macdown_fallback($PASS): $*"; }
 
+if [ "${BLINKIT_ALLOW_MANUAL_DATACENTER_FALLBACK:-0}" != "1" ]; then
+  LOG "REFUSED: this legacy laptop+VPS path is disabled; recover the Mac/Windows device workflow"
+  exit 2
+fi
+
 TODAY="$(date +%F)"
 REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
 SOURCE="${BLINKIT_TEAM_SOURCE:-platforms/blinkit/pincodes.daily.json}"

@@ -7,10 +7,9 @@
 #
 # Cron runs this at 07:20 (early pass) and 08:45 (pass arg "late"). If today's
 # workbook is not in output/ and the Mac wrapper isn't already running, trigger
-# a fresh Mac scrape over ssh. If the Mac is unreachable, launch the strict
-# VPS+KVM1 authenticated shard fallback. Never loosens the store floor — a
-# refused drop stays refused; we just re-run at store-open hours and ingest
-# through the same fail-closed gates.
+# a fresh Mac scrape over ssh. If either residential device is unavailable, the
+# guard alerts and leaves the device-team pointer resumable. Datacenter scraping
+# is prohibited for normal Blinkit production.
 set -u
 DIR=/opt/ecom-intel
 cd "$DIR" || exit 0
@@ -95,24 +94,15 @@ attempt_held_drop_repair(){
   return 1
 }
 
-# Mac Pro known-offline sentinel: skip the doomed ssh re-run and fall back —
-# laptop-first (residential worker #4, goal #81 step 7), then the strict
-# VPS+KVM1 path if the laptop cannot engage. If the marker is stale and the Mac
-# is reachable again, remove it and fall through to the normal Mac path.
+# Mac Pro known-offline sentinel: if stale, clear it and continue. A current
+# outage is alerted; it must not silently change Blinkit's production topology.
 if [ -f "$DIR/logs/.mac-offline" ]; then
   if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "true" 2>/dev/null; then
     LOG "Mac offline marker is stale; Mac reachable again -> removing marker"
     rm -f "$DIR/logs/.mac-offline"
   else
-    LOG "Mac flagged offline (logs/.mac-offline) -> laptop-first fallback (worker #4 residential), then VPS+KVM1"
-    if "$DIR/tools/laptop/blinkit_macdown_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
-      LOG "laptop+VPS mac-down fallback engaged (team watch owns merge/rescue)"
-    elif "$DIR/tools/cron/blinkit_vps_kvm_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
-      LOG "VPS+KVM1 fallback completed"
-    else
-      LOG "VPS+KVM1 fallback FAILED"
-      tg "[FAIL] Blinkit guard: VPS+KVM1 fallback failed for ${TODAY}; report was not delivered."
-    fi
+    LOG "Mac flagged offline; refusing VPS/KVM fallback"
+    tg "[FAIL] Blinkit guard: Mac Pro is offline for ${TODAY}. Windows/Mac production needs attention; VPS/KVM fallback is disabled."
     exit 0
   fi
 fi
@@ -137,13 +127,5 @@ if ssh -o BatchMode=yes -o ConnectTimeout=15 macpro "nohup $WRAPPER >/tmp/blinki
   fi
 else
   LOG "trigger FAILED (ssh unreachable?)"
-  tg "[WARN] Blinkit guard: no drop for ${TODAY} and could NOT reach the Mac Pro - trying laptop-first fallback, then VPS+KVM1."
-  if "$DIR/tools/laptop/blinkit_macdown_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
-    LOG "laptop+VPS mac-down fallback engaged (team watch owns merge/rescue)"
-  elif "$DIR/tools/cron/blinkit_vps_kvm_fallback.sh" "$PASS" >> logs/blinkit_guard.log 2>&1; then
-    LOG "VPS+KVM1 fallback completed"
-  else
-    LOG "VPS+KVM1 fallback FAILED"
-    tg "[FAIL] Blinkit guard: VPS+KVM1 fallback failed for ${TODAY}; report was not delivered."
-  fi
+  tg "[FAIL] Blinkit guard: no drop for ${TODAY} and the Mac Pro trigger failed. Windows/Mac production needs attention; VPS/KVM fallback is disabled."
 fi

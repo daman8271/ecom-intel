@@ -4,12 +4,12 @@
 # Called by zepto_macpro_guard.sh (launch pass, 07:25 IST).
 #
 # Exit code contract for the guard:
-#   0 = team split engaged (laptop shard-1 spawned; Mac shard-0 triggered or
-#       locally rescued) — guard should NOT also fire a legacy full run.
+#   0 = team split engaged (laptop shard-1 spawned; Mac shard-0 is triggered or
+#       left queued for the device-only watcher).
 #   1 = split not possible — guard proceeds with the legacy full-universe path.
 #
-# Zepto is pure-API (bff-gateway, no proxy, IP-agnostic), so any device can
-# take any subset; the VPS itself is the in-line fallback for shard-0.
+# Zepto shards run only on the Mac Pro and Windows laptop. The VPS is not a
+# production scraper or merge fallback.
 # Results reassemble via merge_platform_shards.py (union must equal the full
 # source list) and ingest through the untouched run.sh SCRAPE_RESULT_DROP path,
 # so every review/selfheal baseline gate sees full-universe counts.
@@ -109,13 +109,8 @@ if [ "$mac_ok" = 1 ]; then
   LOG "Mac triggered on shard-0 ($PINS0 pins)"
   team_tg "🚀 Zepto device-team ${TODAY}: laptop shard-1 (${PINS1} pins) + Mac shard-0 (${PINS0} pins) launched. Merge → normal gates."
 else
-  LOG "Mac trigger failed — running shard-0 locally on the VPS (zepto is IP-agnostic)"
-  team_tg "🛠 Zepto device-team ${TODAY}: laptop shard-1 (${PINS1} pins) launched; Mac unreachable so the VPS is scraping shard-0 (${PINS0} pins) itself."
-  nohup bash -c "cd '$DIR' && env SHARD_ROLE='vps-shard0' CONCURRENCY='$CONCURRENCY' \
-      timeout --foreground -k 60 7200s \
-      tools/shards/run_platform_shard.sh zepto '$SOURCE' 2 0 '$RUN_ID' \
-      >> logs/zepto_team.log 2>&1; \
-    tools/laptop/zepto_team_merge.sh '$RUN_ID' >> logs/zepto_team.log 2>&1" \
-    >/dev/null 2>&1 &
+  touch "$RUN/.mac-launch-pending"
+  LOG "Mac trigger failed — shard-0 queued for Mac-only watcher retry"
+  team_tg "⚠️ Zepto device-team ${TODAY}: laptop shard-1 (${PINS1} pins) launched, but Mac shard-0 (${PINS0} pins) is queued for retry. VPS/KVM fallback is disabled."
 fi
 exit 0

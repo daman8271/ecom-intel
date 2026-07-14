@@ -587,10 +587,9 @@ build_run() {
   public_xlsx="$ROOT/output/$base"
   private_xlsx="$PRIVATE_OUT/$base"
   cp -f "$xlsx" "$public_xlsx"
-  echo "[bb-team] Ecom batch/group workbook: $public_xlsx"
+  echo "[bb-team] queued for the 10:30 Ecom batch: $public_xlsx"
   cp -f "$xlsx" "$private_xlsx"
   echo "[bb-team] secondary private copy: $private_xlsx"
-  send_group "$public_xlsx" || echo "[bb-team] Ecom group send failed; guards will retry the built workbook"
   send_direct "$public_xlsx" || echo "[bb-team] direct WhatsApp send failed; Ecom batch/group workbook kept"
 }
 

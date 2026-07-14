@@ -8,12 +8,13 @@ cd "$ROOT" || exit 1
 
 DATE_IST="${BLINKIT_TOP8_DATE:-$(TZ=Asia/Kolkata date +%F)}"
 RUN_END="${BLINKIT_TOP8_RUN_END:-13:00}"
+MAX_RUNTIME_S="${BLINKIT_TOP8_MAX_RUNTIME_S:-3600}"
+ORCHESTRATOR_START_EPOCH="$(date +%s)"
 POLL_SECONDS="${BLINKIT_TOP8_POLL_SECONDS:-60}"
 CONCURRENCY="${BLINKIT_TOP8_CONCURRENCY:-2}"
 REPORT="$ROOT/output/Competitor-Price-Watch-Blinkit-${DATE_IST}.xlsx"
 SENT="$ROOT/logs/blinkit-top8-wa-${DATE_IST}.sent"
-MAIN_SENT="$ROOT/logs/blinkit-main-wa-${DATE_IST}.sent"
-NOT_LISTED_SENT="$ROOT/logs/blinkit-not-listed-wa-${DATE_IST}.sent"
+MAIN_REPORT="$ROOT/output/Jivo-Blinkit-Live-Report-${DATE_IST}.xlsx"
 POINTER="$ROOT/shards/runs/ACTIVE-blinkit-top8"
 LOCK="$ROOT/logs/.blinkit-top8-daily.lock"
 STATE="$ROOT/logs/blinkit-top8-${DATE_IST}.state"
@@ -47,7 +48,14 @@ alert_once() {
 }
 
 end_epoch() {
-  TZ=Asia/Kolkata date -d "$DATE_IST $RUN_END" +%s
+  local fixed relative
+  fixed="$(TZ=Asia/Kolkata date -d "$DATE_IST $RUN_END" +%s)"
+  relative=$((ORCHESTRATOR_START_EPOCH + MAX_RUNTIME_S))
+  if [ "$fixed" -gt "$relative" ]; then
+    printf '%s\n' "$fixed"
+  else
+    printf '%s\n' "$relative"
+  fi
 }
 
 current_run_id() {
@@ -319,8 +327,13 @@ if [ -s "$SENT" ]; then
   log "already delivered for $DATE_IST"
   exit 0
 fi
-if [ ! -s "$MAIN_SENT" ] || [ ! -s "$NOT_LISTED_SENT" ]; then
-  log "waiting: daily Blinkit main + not-listed delivery is not complete"
+[ -s "$MAIN_REPORT" ] || { log "waiting: accepted daily Blinkit workbook is absent"; exit 0; }
+if ! BLINKIT_MONITOR_DATE="$DATE_IST" \
+     BLINKIT_MONITOR_REPORT="$MAIN_REPORT" \
+     BLINKIT_MONITOR_DRYRUN=1 \
+     BLINKIT_MONITOR_EXIT_CODE=1 \
+     "$ROOT/tools/cron/blinkit_quality_monitor.sh" pre-competitor >> "$LOG_FILE" 2>&1; then
+  log "waiting: daily Blinkit workbook has not passed the quality monitor"
   exit 0
 fi
 
@@ -331,9 +344,10 @@ if [ -z "$RUN_ID" ]; then
   RUN_ID="$CREATED_RUN_ID"
 fi
 RUN="$ROOT/shards/runs/$RUN_ID"
-log "watching run $RUN_ID until $RUN_END IST"
+RUN_DEADLINE_EPOCH="$(end_epoch)"
+log "watching run $RUN_ID until $(TZ=Asia/Kolkata date -d "@$RUN_DEADLINE_EPOCH" +%H:%M) IST (fixed target $RUN_END; ${MAX_RUNTIME_S}s minimum run window)"
 
-while [ "$(date +%s)" -le "$(end_epoch)" ]; do
+while [ "$(date +%s)" -le "$RUN_DEADLINE_EPOCH" ]; do
   pull_backstops "$RUN_ID" "$RUN"
   if [ -s "$RUN/windows.capture.json" ] && [ -s "$RUN/windows.progress.json" ] \
      && [ -s "$RUN/mac.capture.json" ] && [ -s "$RUN/mac.progress.json" ]; then
@@ -345,5 +359,5 @@ while [ "$(date +%s)" -le "$(end_epoch)" ]; do
   sleep "$POLL_SECONDS"
 done
 
-alert_once "run-window-ended-$RUN_ID" "[FAIL] Blinkit top-8 competitor run did not finish by $RUN_END IST for $DATE_IST. Device artifacts remain resumable in $RUN."
+alert_once "run-window-ended-$RUN_ID" "[FAIL] Blinkit top-8 competitor run exhausted its run window for $DATE_IST. Device artifacts remain resumable in $RUN."
 exit 1

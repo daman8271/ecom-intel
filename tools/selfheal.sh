@@ -37,7 +37,7 @@ cd "$DIR" || exit 0
 mkdir -p logs reviews baselines 2>/dev/null || true
 
 # ---- config -----------------------------------------------------------------
-PLATFORMS="${ECOM_PLATFORMS:-flipkart-minutes flipkart amazon zepto amazon-fresh amazon-now}"  # keep in sync with run_all.sh (authoritative); off-box Mac/drop platforms are not VPS-healed
+PLATFORMS="${ECOM_PLATFORMS:-flipkart-minutes flipkart amazon amazon-fresh amazon-now}"  # off-box Mac/drop platforms are never VPS-healed
 MIN_ROWS="${ECOM_MIN_ROWS:-20}"          # absolute floor; healthy runs return ~60-160
 COLLAPSE_FRAC="${ECOM_COLLAPSE_FRAC:-0.5}" # rows <= baseline*this  => collapse
 MAX_AGE_H="${ECOM_MAX_AGE_H:-15}"        # result.json older than this = stale
@@ -208,15 +208,20 @@ assess() {
 # returns 0 if a re-run was attempted, 1 if skipped (lock held).
 recover() {
   local P="$1"
+  case "$P" in
+    blinkit|zepto|bigbasket|swiggy-instamart)
+      log "$P: REFUSED local recovery; platform is off-box-only"
+      return 1
+      ;;
+  esac
   local run_timeout="$RUN_TIMEOUT"
   local daily_env=0
   case "$P" in
-    flipkart-minutes|zepto|amazon-fresh|amazon-now)
+    flipkart-minutes|amazon-fresh|amazon-now)
       daily_env=1
       ;;
   esac
   case "$P" in
-    zepto) run_timeout="${ECOM_ZEPTO_RUN_TIMEOUT:-7200}" ;;
     amazon-fresh) run_timeout="${ECOM_AMAZON_FRESH_RUN_TIMEOUT:-7800}" ;;
     amazon-now) run_timeout="${ECOM_AMAZON_NOW_RUN_TIMEOUT:-7800}" ;;
   esac

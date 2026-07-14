@@ -17,12 +17,10 @@
 # comes at the timing, not starts at it"). If the chain overruns, the batch goes
 # out as soon as it's done, marked "(late by Xm)".
 
-# Blinkit is produced off-box on the Windows + Mac Pro residential workers and delivered through
-# platforms/blinkit/ingest.sh. BigBasket pincode is produced by the logged-in
-# team runner across VPS + Mac Pro + KVM1 + Windows; it sends the public workbook
-# to the Ecom group and keeps a secondary private copy. The old BigBasket
-# paid QuickCommerce API cron is retired.
-0 3 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # ecom-intel bigbasket-pincode team daily Ecom-group + optional direct
+# Blinkit and Zepto are produced off-box on the Windows + Mac Pro workers.
+# BigBasket pincode runs on the main host + KVM1 only so it cannot consume the
+# residential-device window. Its workbook queues for the 10:30 Ecom batch.
+30 0 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'BB_TEAM_VPS_WEIGHT=1 BB_TEAM_MAC_WEIGHT=0 BB_TEAM_KVM_WEIGHT=1 BB_TEAM_LAPTOP_WEIGHT=0 flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # bigbasket pincode: main+KVM only; queue for 10:30 Ecom batch
 
 # 10:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28; moved
 # 12:00 -> 10:00 goal #60 2026-07-03). Fire 00:30; LEAD_MAX=11820 is the current
@@ -41,9 +39,10 @@
 */10 6-11 * * * cd /opt/ecom-intel && ./tools/laptop/blinkit_team_watch.sh >> logs/blinkit_team.log 2>&1   # blinkit device-team watch: pull/merge/rescue
 20 7 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard early
 45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard late
-25 7 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh launch >> logs/zepto_macpro_guard.log 2>&1   # Zepto VPS fallback while Blinkit owns Mac Pro + Windows
-35 8 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh watchdog >> logs/zepto_macpro_guard.log 2>&1   # Zepto watchdog
-10 9 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh late >> logs/zepto_macpro_guard.log 2>&1   # Zepto late VPS-only fallback guard
+0 0 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh launch >> logs/zepto_macpro_guard.log 2>&1   # Zepto Mac+Windows launch before other residential jobs
+45 2 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh watchdog >> logs/zepto_macpro_guard.log 2>&1   # Zepto device watchdog
+15 3 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh late >> logs/zepto_macpro_guard.log 2>&1   # Zepto device-only late guard
+*/10 0-3 * * * cd /opt/ecom-intel && ./tools/laptop/zepto_team_watch.sh >> logs/zepto_team.log 2>&1 || true   # Zepto Mac+Windows shard watch
 */15 5-11 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor through 11:00 deadline
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_not_listed_direct.sh cron >> logs/blinkit-not-listed-wa.log 2>&1   # blinkit not-listed direct WhatsApp retry
@@ -106,14 +105,14 @@
 10 10 * * * cd /opt/ecom-intel && python3 tools/cron/check_layout.py >> logs/layout_gate.log 2>&1   # ecom-intel layout gate (post 10:00 batch)
 
 # ============================== PRICE-DATA MAILER (ADDITIVE) ===============================
-# Emails the day's 9 report files AS-IS (each .xlsx an individual attachment, unmodified) to
+# Delivers the required report files AS-IS (each .xlsx an individual document) to
 # the 13-address ecom team list in mail_price_data.sh (override: PRICE_MAIL_TO in secrets.env)
 # via Gmail SMTP (tools/send_email.py), then posts the same files to the WhatsApp
 # "Ecom team" group via the Hermes gateway bridge (127.0.0.1:3001/send-media,
 # owner-approved 2026-06-11; best-effort).
 # Each run opens its own tmux session (mailgw-am/pm-YYYYMMDD) so the send gateway is
-# observable live; it exits when done. Log: logs/mailer.log. The 10:00 run WAITS (up to 3h)
-# until ALL of today's files exist and are >=90s stable — the single batch lands ~12:00 — so it
-# never mails a partial/stale set. (The 16:00 pm run was dropped with the 15:00 sweep 2026-06-28.)
+# observable live; it exits when done. Log: logs/mailer.log. The 10:00 run waits
+# up to 30 minutes for every required file to be >=90s stable, then delivers at
+# about 10:30 with explicit complete/partial status and per-document receipts.
 # Telegram-alerts the owner on any failure. Built 2026-06-11.
 0 10 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "mailgw-am-$(date +\%Y\%m\%d)" './tools/mailer/mail_price_data.sh am'   # ecom-mailer price-data am
