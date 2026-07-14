@@ -1,0 +1,1157 @@
+{
+  "summary": {
+    "pincodes_total": 57,
+    "pincodes_serviceable": 0,
+    "pincodes_with_jivo": 0,
+    "pincodes_mismatch": 0,
+    "total_rows": 0,
+    "seed_fallback_rows": 0,
+    "unique_skus": 0,
+    "now_tier_breakdown": {},
+    "wall_s": 181,
+    "captured_at": "2026-07-14T07:18:59.279Z"
+  },
+  "perPin": [
+    {
+      "city": "Madurai",
+      "pincode": "625001",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625001"
+      ],
+      "lat": 9.9120278,
+      "lon": 78.11325,
+      "locality": "Madurai HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625001&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625002",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625002"
+      ],
+      "lat": 9.9363598,
+      "lon": 78.1208019,
+      "locality": "Tallakulam HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625002&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625016",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625016"
+      ],
+      "lat": 9.9346463,
+      "lon": 78.080964,
+      "locality": "Arasaradi HO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625016&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625003",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625003"
+      ],
+      "lat": 9.918135,
+      "lon": 78.080536,
+      "locality": "Madakkulam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625003&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625004",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625004"
+      ],
+      "lat": 9.89375,
+      "lon": 78.0800278,
+      "locality": "Pasumalai SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625004&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625005",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625005"
+      ],
+      "lat": 9.858823,
+      "lon": 78.06234,
+      "locality": "Nilaiyur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nilaiyur 625005&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625006",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625006"
+      ],
+      "lat": 9.894959,
+      "lon": 78.06181,
+      "locality": "Thanakkankulam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Harveypatti 625006&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625007",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625007"
+      ],
+      "lat": 9.9433889,
+      "lon": 78.1465,
+      "locality": "KPudur SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625007&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625008",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625008"
+      ],
+      "lat": 9.874834,
+      "lon": 78.023958,
+      "locality": "Sivanandanagar BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Kappalur ... 625008&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625009",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625009"
+      ],
+      "lat": 9.9115833,
+      "lon": 78.1291944,
+      "locality": "Anuppanady BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625009&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625011",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625011"
+      ],
+      "lat": 9.9079479,
+      "lon": 78.1129516,
+      "locality": "Jaihindpuram SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625011&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625012",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625012"
+      ],
+      "lat": 9.901,
+      "lon": 78.1232778,
+      "locality": "Avaniapuram SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625012&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625014",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625014"
+      ],
+      "lat": 9.9522222,
+      "lon": 78.1333333,
+      "locality": "Karuvanur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625014&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625015",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625015"
+      ],
+      "lat": 9.8834167,
+      "lon": 78.0798889,
+      "locality": "Thiagarajar Engg College SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Thirupara... 625015&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625017",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625017"
+      ],
+      "lat": 9.966222,
+      "lon": 78.112254,
+      "locality": "Kulamangalam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625017&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625018",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625018"
+      ],
+      "lat": 9.9561944,
+      "lon": 78.0838611,
+      "locality": "Podumbu BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625018&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625019",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625019"
+      ],
+      "lat": 9.917832,
+      "lon": 78.063767,
+      "locality": "Erkudi Achampathu BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nagamalai... 625019&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625020",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625020"
+      ],
+      "lat": 9.9381389,
+      "lon": 78.1426944,
+      "locality": "Kalimangalam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625020&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625021",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625021"
+      ],
+      "lat": 9.927184,
+      "lon": 78.009192,
+      "locality": "Thenpalanji BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Nagamalai... 625021&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625022",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625022"
+      ],
+      "lat": 9.9252127,
+      "lon": 78.11976,
+      "locality": "Kudakoil BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Virudhunagar 625022&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625023",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625023"
+      ],
+      "lat": 9.7526944,
+      "lon": 78.2094167,
+      "locality": "Madras High Court Madurai Bench SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Othakadai 625023&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625101",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625101"
+      ],
+      "lat": 10.119491,
+      "lon": 78.343686,
+      "locality": "Kachirayanpatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625101&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625102",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625102"
+      ],
+      "lat": 10.070415,
+      "lon": 78.415473,
+      "locality": "Muthusamypatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625102&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625103",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625103"
+      ],
+      "lat": 10.22,
+      "lon": 78.35,
+      "locality": "Ayyapatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Kottampatti 625103&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625104",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625104"
+      ],
+      "lat": 9.956976,
+      "lon": 78.160719,
+      "locality": "Arumbanur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Arumbanur 625104&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625105",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625105"
+      ],
+      "lat": 10.06,
+      "lon": 78.32,
+      "locality": "Arukkampatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "A Vellala... 625105&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625106",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625106"
+      ],
+      "lat": 10.040368,
+      "lon": 78.276045,
+      "locality": "Kallampatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Melur 625106&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625107",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625107"
+      ],
+      "lat": 9.951356,
+      "lon": 78.1688,
+      "locality": "Rajakkur BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Othakadai 625107&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625108",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625108"
+      ],
+      "lat": 10.09,
+      "lon": 78.39,
+      "locality": "Budamangalam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625108&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625109",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625109"
+      ],
+      "lat": 9.968233,
+      "lon": 78.391688,
+      "locality": "Ambalakaranpatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625109&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625110",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625110"
+      ],
+      "lat": 9.9,
+      "lon": 78,
+      "locality": "Poonjuthi BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625110&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625122",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625122"
+      ],
+      "lat": 10.00875,
+      "lon": 78.0213611,
+      "locality": "Chittampatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625122&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625201",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625201"
+      ],
+      "lat": 9.8741944,
+      "lon": 78.1893056,
+      "locality": "Puliankulam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625201&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625205",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625205"
+      ],
+      "lat": 10.045629,
+      "lon": 77.936027,
+      "locality": "Nachikulam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625205&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625207",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625207"
+      ],
+      "lat": 10.020139,
+      "lon": 77.957136,
+      "locality": "Kadupatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625207&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625214",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625214"
+      ],
+      "lat": 10.378,
+      "lon": 78.0167222,
+      "locality": "Sholavandan SO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Sholavandan 625214&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625218",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625218"
+      ],
+      "lat": 10.0838,
+      "lon": 77.998297,
+      "locality": "Andipatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Vadipatti 625218&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625221",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625221"
+      ],
+      "lat": 9.947614,
+      "lon": 78.090865,
+      "locality": "Sithalangudi BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625221&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625234",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625234"
+      ],
+      "lat": 9.969537,
+      "lon": 78.013831,
+      "locality": "Melakkal BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625234&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625301",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625301"
+      ],
+      "lat": 10.02,
+      "lon": 78.19,
+      "locality": "AVellalapatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625301&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625402",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625402"
+      ],
+      "lat": 9.964581,
+      "lon": 78.06662,
+      "locality": "Paravai BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Paravai 625402&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625501",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625501"
+      ],
+      "lat": 10.032352,
+      "lon": 78.100181,
+      "locality": "Errampatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Alanganallur 625501&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625503",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625503"
+      ],
+      "lat": 10.081401,
+      "lon": 78.125798,
+      "locality": "Chatravellalapatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Palamedu 625503&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625514",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625514"
+      ],
+      "lat": 9.924813,
+      "lon": 77.990995,
+      "locality": "AKokkulam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625514&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625527",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625527"
+      ],
+      "lat": 9.82833,
+      "lon": 77.851021,
+      "locality": "Perungamanallur B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625527&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625529",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625529"
+      ],
+      "lat": 9.825168,
+      "lon": 77.985752,
+      "locality": "Thummagundu B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625529&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625532",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625532"
+      ],
+      "lat": 10.003341,
+      "lon": 78.113679,
+      "locality": "Meikilarpatti B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Usilampatti 625532&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625535",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625535"
+      ],
+      "lat": 9.963784,
+      "lon": 77.787782,
+      "locality": "M.Kallupatti B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Elumalai 625535&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625537",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625537"
+      ],
+      "lat": 9.9638,
+      "lon": 77.87774,
+      "locality": "Ayyanarkulam B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625537&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625701",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625701"
+      ],
+      "lat": 9.687927,
+      "lon": 78.05503,
+      "locality": "Avalsurampatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625701&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625702",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625702"
+      ],
+      "lat": 9.740908,
+      "lon": 77.866673,
+      "locality": "MSubbulapuram BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "T Kallupatti 625702&zwnj;",
+      "matched": true,
+      "total_cards": 60,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625703",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625703"
+      ],
+      "lat": 9.795086,
+      "lon": 77.817106,
+      "locality": "Deivanayagapuram BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Peraiyur 625703&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625704",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625704"
+      ],
+      "lat": 9.81272,
+      "lon": 77.922592,
+      "locality": "AThottiapatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625704&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625705",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625705"
+      ],
+      "lat": 9.706035,
+      "lon": 77.914559,
+      "locality": "Athipatti B.O",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Virudhunagar 625705&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625706",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625706"
+      ],
+      "lat": 9.884643,
+      "lon": 77.97975,
+      "locality": "Sithalai BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Thirumang... 625706&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625707",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625707"
+      ],
+      "lat": 9.9511944,
+      "lon": 78.0798889,
+      "locality": "MPuliyankulam BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625707&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    },
+    {
+      "city": "Madurai",
+      "pincode": "625708",
+      "tier": 1,
+      "represents": 1,
+      "pincodes": [
+        "625708"
+      ],
+      "lat": 9.750528,
+      "lon": 77.971362,
+      "locality": "Ganjampatti BO",
+      "store_id": null,
+      "store_name": "Amazon Now",
+      "serviceable": false,
+      "amazon_now_page": false,
+      "glow": "Madurai 625708&zwnj;",
+      "matched": true,
+      "total_cards": 48,
+      "rows": []
+    }
+  ],
+  "allRows": []
+}
