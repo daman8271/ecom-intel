@@ -40,17 +40,25 @@ after_hhmm(){
 }
 
 # ---------- alert channels (reuse the exact patterns the other guards use) ----------
+# Both helpers now LOG whether the channel actually confirmed delivery (never the
+# message body, token, or chat id). Rationale (fleet audit 2026-07-15): the owner
+# alert used to be fire-and-forget to /dev/null, so a silent Telegram/gateway
+# outage was indistinguishable from a delivered alert — we could not answer
+# "did the owner actually SEE the miss?". This keeps the exact same no-fail
+# semantics (|| true) and only adds an observable receipt line to the guard log.
 tg(){ ( set +e
   [ -f "$DIR/secrets.env" ] && . "$DIR/secrets.env"
   CH="${TELEGRAM_OWNER_CHAT_ID:-${TELEGRAM_CHAT_ID:-}}"
-  [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "$CH" ] || exit 0
-  curl -s --max-time 30 -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-    --data-urlencode "chat_id=${CH}" --data-urlencode "text=$1" >/dev/null ) || true; }
+  [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "$CH" ] || { LOG "tg: skipped (telegram not configured)"; exit 0; }
+  resp="$(curl -s --max-time 30 -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+    --data-urlencode "chat_id=${CH}" --data-urlencode "text=$1")"
+  if printf '%s' "$resp" | grep -q '"ok":true'; then LOG "tg: delivered (telegram confirmed ok)"; else LOG "tg: FAILED — telegram did not confirm ok:true (owner alert may not have landed)"; fi ) || true; }
 
 wa(){ ( set +e   # owner self-chat via the local WhatsApp gateway (memory: 918899011758)
-  curl -s --max-time 5 http://127.0.0.1:3001/health 2>/dev/null | grep -q '"connected"' || exit 0
+  curl -s --max-time 5 http://127.0.0.1:3001/health 2>/dev/null | grep -q '"connected"' || { LOG "wa: skipped (gateway not connected)"; exit 0; }
   PAY="$(python3 -c 'import json,sys; print(json.dumps({"chatId":"918899011758@s.whatsapp.net","message":sys.argv[1]}))' "$1")"
-  curl -s --max-time 20 -X POST http://127.0.0.1:3001/send -H 'Content-Type: application/json' -d "$PAY" >/dev/null ) || true; }
+  resp="$(curl -s --max-time 20 -X POST http://127.0.0.1:3001/send -H 'Content-Type: application/json' -d "$PAY")"
+  if printf '%s' "$resp" | grep -q '"success":true'; then LOG "wa: delivered (gateway confirmed success)"; else LOG "wa: FAILED — gateway did not confirm success (owner self-chat alert may not have landed)"; fi ) || true; }
 
 TAG="${GUARD_TAG:-}"
 alert(){ LOG "ALERT: $1"; tg "${TAG}$1"; wa "${TAG}$1"; }
