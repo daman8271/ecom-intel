@@ -49,6 +49,7 @@
 5 12 * * * cd /opt/ecom-intel && ./tools/competitor/blinkit_top8_deadline_guard.sh >> logs/blinkit-top8-deadline.cron.log 2>&1   # top-8 12:00 Ecom-group deadline
 */5 10-23 * * * cd /opt/ecom-intel && ./tools/competitor/send_platform_whatsapp.sh zepto >> logs/zepto-competitor-wa.cron.log 2>&1   # Zepto competitor receipt-safe Ecom-group delivery retry
 7 12 * * * cd /opt/ecom-intel && ./tools/competitor/zepto_competitor_deadline_guard.sh >> logs/zepto-competitor-deadline.cron.log 2>&1   # Zepto competitor 12:00 Ecom-group deadline
+35 10 * * * cd /opt/ecom-intel && ./tools/cron/direct_competitor_expected_guard.sh >> logs/direct-competitor-expected.cron.log 2>&1   # no-plan/no-terminal competitor alert; never launches fallback
 35 10 * * * cd /opt/ecom-intel && ./tools/cron/morning_report_guard.sh check >> logs/morning_report_guard.log 2>&1   # general morning check; Blinkit remains pending until 11:00
 5 11 * * * cd /opt/ecom-intel && GUARD_QUIET_OK=1 ./tools/cron/morning_report_guard.sh check >> logs/morning_report_guard.log 2>&1   # Blinkit 11:00 delivery deadline check
 
