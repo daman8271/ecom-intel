@@ -25,10 +25,14 @@ for REPORT_DATE in "${DATES[@]}"; do
   RC=$?
   printf '%s %s\n' "$(date '+%F %T')" "$OUTPUT" >> logs/direct-report-consumer.log
   PENDING="$(python3 -c 'import json,sys; print(json.loads(sys.argv[1]).get("pending_delivery", 0))' "$OUTPUT" 2>/dev/null || echo 0)"
+  FAILURE_SUMMARY="$(python3 -c 'import json,sys; d=json.loads(sys.argv[1]); print("; ".join("{} {} phase={} reason={}".format(x.get("platform"), x.get("run_id"), x.get("phase"), x.get("reason")) for x in d.get("endpoint_failures", [])))' "$OUTPUT" 2>/dev/null || true)"
 
   if [ "$RC" -ne 0 ]; then
     TOTAL_RC=1
     team_tg "⚠️ A direct Mac report was rejected by the delivery-host receipt/hash gate. See logs/direct-report-consumer.log."
+  fi
+  if [ -n "$FAILURE_SUMMARY" ]; then
+    team_tg "⚠️ Direct Mac/Windows endpoint failure recorded: $FAILURE_SUMMARY. No VPS/KVM fallback was started."
   fi
 
   NOW="$(TZ=Asia/Kolkata date +%H%M)"

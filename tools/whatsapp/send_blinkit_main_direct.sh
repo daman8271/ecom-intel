@@ -126,4 +126,33 @@ R="$(send_json 120 http://127.0.0.1:3001/send-media "$DOC_PAYLOAD")"
 echo "WhatsApp direct main doc $(basename "$MAIN"): $R"
 echo "$R" | grep -q '"success":true' || exit 1
 
+RECEIPT_DIR="logs/delivery-receipts/${DATE_IST}"
+mkdir -p "$RECEIPT_DIR"
+python3 - "$RECEIPT_DIR/$(basename "$MAIN").json" "$PWD/$MAIN" "$CHAT" "$R" <<'PY' || exit 1
+import datetime, hashlib, json, os, sys
+
+receipt, path, target, raw = sys.argv[1:]
+response = json.loads(raw)
+message_id = response.get("messageId")
+if response.get("success") is not True or not message_id:
+    raise SystemExit(1)
+digest = hashlib.sha256()
+with open(path, "rb") as handle:
+    for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+        digest.update(chunk)
+data = {
+    "file": os.path.abspath(path),
+    "sha256": digest.hexdigest(),
+    "size": os.path.getsize(path),
+    "target": target,
+    "messageId": str(message_id),
+    "sent_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+}
+temp = receipt + ".tmp"
+with open(temp, "w", encoding="utf-8") as handle:
+    json.dump(data, handle, indent=2, sort_keys=True)
+    handle.write("\n")
+os.replace(temp, receipt)
+PY
+
 printf '%s %s %s\n' "$(TZ=Asia/Kolkata date '+%F %T %Z')" "$CHAT" "$(basename "$MAIN")" > "$MARKER"

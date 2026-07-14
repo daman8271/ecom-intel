@@ -28,17 +28,11 @@
 # launches a bounded catch-up if the primary did not start.
 30 0 * * * cd /opt/ecom-intel && LEAD_MAX=11820 COVERAGE_DAILY=1 ./tools/cron/deadline_sweep.sh 10:00 >> logs/cron.log 2>&1   # ecom-intel deadline-batch 10:00
 */20 0-9 * * * cd /opt/ecom-intel && ./tools/cron/sweep_watchdog.sh 10:00 >> logs/sweep_watchdog.cron.log 2>&1   # 10:00-sweep catch-up watchdog (guards the single 00:30 launch tick)
-0 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter early
-*/10 5-11 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher watchdog through 11:00 deadline
-0 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_agent_watch.sh >> logs/blinkit_agent_watch.cron.log 2>&1   # blinkit production agent starter
-*/10 5-16 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_agent_watch.sh >> logs/blinkit_agent_watch.cron.log 2>&1   # blinkit production agent watchdog
-5 5 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_supervisor.sh >> logs/blinkit_supervisor.cron.log 2>&1   # blinkit active supervisor starter
-*/10 5-11 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_supervisor.sh >> logs/blinkit_supervisor.cron.log 2>&1   # blinkit active supervisor watchdog through 11:00 deadline
-25 6 * * * cd /opt/ecom-intel && ./tools/cron/start_blinkit_live_watch.sh >> logs/blinkit_live_watch.cron.log 2>&1   # blinkit live watcher starter
-0 7 * * * cd /opt/ecom-intel && ./tools/laptop/blinkit_team_launch.sh >> logs/blinkit_team.log 2>&1   # blinkit device-team split: Windows takes half
-*/10 6-11 * * * cd /opt/ecom-intel && ./tools/laptop/blinkit_team_watch.sh >> logs/blinkit_team.log 2>&1   # blinkit device-team watch: pull/merge/rescue
-20 7 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard early
-45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard late
+# Blinkit launch/exchange/merge is owned by persistent Mac Pro/Windows endpoint
+# tasks. Legacy control-host team launch/watch schedules are intentionally absent.
+# Legacy Blinkit live/agent/supervisor/batch guards are intentionally absent;
+# they invoke the archived Mac-to-VPS launcher. Direct endpoint due/catch-up,
+# failure receipts, quality receipts, and final-delivery monitoring replace them.
 # Zepto launch, shard exchange, merge, and workbook build are owned by persistent
 # Mac Pro/Windows endpoint tasks. The control host monitors final receipts only;
 # legacy zepto_macpro_guard/zepto_team_watch schedules are intentionally absent.

@@ -157,8 +157,36 @@ def consume_run(
         raise ValueError("unsupported platform")
     if not str(receipt.get("attempt_id", "")):
         raise ValueError("attempt_id is missing")
-    if not isinstance(receipt.get("merged_sha256"), str) or len(receipt["merged_sha256"]) != 64:
-        raise ValueError("merged SHA-256 is missing")
+    for field in ("plan_sha256", "source_sha256", "scraper_sha256", "merged_sha256", "merge_receipt_sha256"):
+        value = receipt.get(field)
+        if not isinstance(value, str) or not re.fullmatch(r"[0-9a-f]{64}", value):
+            raise ValueError(f"{field} is missing or invalid")
+    input_hashes = receipt.get("input_result_sha256")
+    if not isinstance(input_hashes, dict) or set(input_hashes) != {"macpro", "windows"}:
+        raise ValueError("input result hashes are incomplete")
+    if any(not isinstance(value, str) or not re.fullmatch(r"[0-9a-f]{64}", value) for value in input_hashes.values()):
+        raise ValueError("input result hash is invalid")
+    if int(receipt.get("merged_bytes") or 0) <= 0 \
+       or int(receipt.get("pincodes_total") or 0) <= 0 \
+       or int(receipt.get("total_rows") or 0) <= 0:
+        raise ValueError("merged byte/pincode/row counts are invalid")
+    policy = receipt.get("quality_policy")
+    if not isinstance(policy, dict):
+        raise ValueError("quality policy is missing")
+    if platform == "blinkit":
+        required_policy = {
+            "require_auth": True,
+            "require_oos_probe": True,
+            "require_pdp_oos_probe": True,
+            "require_pdp_price_probe": True,
+            "max_pdp_price_probe_failed": 0,
+            "max_unverified_oos": 0,
+        }
+        if any(policy.get(key) != value for key, value in required_policy.items()):
+            raise ValueError("Blinkit quality policy is incomplete")
+    elif float(policy.get("min_serviceable_pct") or 0) <= 0 \
+         or float(policy.get("min_rows_per_source_pincode") or 0) <= 0:
+        raise ValueError("Zepto quality policy is incomplete")
 
     accepted_path = receipt_root / date_ist / f"{run_id}.json"
     if accepted_path.exists():
@@ -272,6 +300,8 @@ def pending_delivery_count(receipt_root: Path, date_ist: str, delivery_root: Pat
                 continue
             for entry in promotion.get("workbooks", []):
                 name = str(entry["name"])
+                if "-Not-Listed-Pincodes-" in name:
+                    continue
                 receipt = delivery_root / date_ist / f"{name}.json"
                 if receipt.is_file():
                     confirmation = load_json(receipt)
@@ -284,6 +314,51 @@ def pending_delivery_count(receipt_root: Path, date_ist: str, delivery_root: Pat
     return len(pending - delivered)
 
 
+def consume_failure(source: Path, date_ist: str, failure_root: Path) -> tuple[str, dict[str, str]]:
+    run_dir = source.parent
+    run_id = run_dir.name
+    if run_dir.is_symlink() or source.is_symlink() or not RUN_ID_PATTERN.fullmatch(run_id):
+        raise ValueError("unsafe endpoint failure path")
+    receipt = load_json(source)
+    expected = {
+        "schema": "jivo-direct-failure-receipt-v1",
+        "date_ist": date_ist,
+        "run_id": run_id,
+        "status": "failed",
+    }
+    for key, value in expected.items():
+        if receipt.get(key) != value:
+            raise ValueError(f"endpoint failure receipt mismatch: {key}")
+    if receipt.get("platform") not in {"blinkit", "zepto"}:
+        raise ValueError("endpoint failure platform is invalid")
+    if not str(receipt.get("attempt_id", "")) or not str(receipt.get("phase", "")):
+        raise ValueError("endpoint failure attempt/phase is missing")
+    if not isinstance(receipt.get("plan_sha256"), str) or len(receipt["plan_sha256"]) != 64:
+        raise ValueError("endpoint failure plan hash is invalid")
+    source_sha = sha256_file(source)
+    accepted = failure_root / date_ist / f"{run_id}.json"
+    detail = {
+        "run_id": run_id,
+        "platform": str(receipt["platform"]),
+        "phase": str(receipt["phase"]),
+        "reason": str(receipt.get("reason", "unspecified")),
+    }
+    if accepted.is_file():
+        previous = load_json(accepted)
+        if previous.get("source_receipt_sha256") != source_sha:
+            raise ValueError("endpoint failure receipt changed after acceptance")
+        return "existing", detail
+    atomic_json(
+        accepted,
+        {
+            "schema": "jivo-direct-failure-accepted-v1",
+            "source_receipt_sha256": source_sha,
+            **detail,
+        },
+    )
+    return "new", detail
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--inbox", default="shards/mac-direct-ready")
@@ -294,6 +369,7 @@ def main() -> int:
     parser.add_argument("--ack-host", default="macpro")
     parser.add_argument("--ack-root", default="/Users/danny./ecom-direct/receipts/promotion")
     parser.add_argument("--delivery-receipts", default="logs/delivery-receipts")
+    parser.add_argument("--failure-receipts", default="logs/direct-report-failures")
     args = parser.parse_args()
 
     inbox = Path(args.inbox)
@@ -304,6 +380,7 @@ def main() -> int:
         "waiting": 0,
         "rejected": 0,
         "pending_delivery": 0,
+        "endpoint_failures": [],
         "errors": [],
     }
     if inbox.exists():
@@ -358,6 +435,17 @@ def main() -> int:
                         "error": str(exc),
                     },
                 )
+    if inbox.exists():
+        for failure in sorted(inbox.glob("*/failure.json")):
+            if not failure.parent.name.startswith(args.date.replace("-", "")):
+                continue
+            try:
+                status, detail = consume_failure(failure, args.date, Path(args.failure_receipts))
+                if status == "new":
+                    summary["endpoint_failures"].append(detail)
+            except Exception as exc:
+                summary["errors"].append({"run_id": failure.parent.name, "error": str(exc)})
+                print(f"{failure.parent.name}: rejected failure receipt: {exc}", file=sys.stderr)
     for accepted_path in (Path(args.receipts) / args.date).glob("*.json"):
         try:
             accepted = load_json(accepted_path)

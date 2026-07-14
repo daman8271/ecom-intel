@@ -30,6 +30,7 @@ class DirectReportConsumerTest(unittest.TestCase):
         self.inbox = self.base / "inbox"
         self.output = self.base / "output"
         self.receipts = self.base / "receipts"
+        self.failures = self.base / "failures"
         self.run = self.inbox / RUN_ID
         self.run.mkdir(parents=True)
         self.book = self.run / f"Jivo-Zepto-Live-Report-{DATE}.xlsx"
@@ -50,7 +51,16 @@ class DirectReportConsumerTest(unittest.TestCase):
             "attempt_id": "01",
             "status": "ready",
             "review_verdict": "OK",
+            "plan_sha256": "b" * 64,
+            "source_sha256": "c" * 64,
+            "scraper_sha256": "d" * 64,
             "merged_sha256": "a" * 64,
+            "merged_bytes": 12345,
+            "merge_receipt_sha256": "e" * 64,
+            "input_result_sha256": {"macpro": "f" * 64, "windows": "1" * 64},
+            "pincodes_total": 2,
+            "total_rows": 2,
+            "quality_policy": {"min_serviceable_pct": 20.0, "min_rows_per_source_pincode": 1.0},
             "workbooks": [{"name": self.book.name, "bytes": self.book.stat().st_size, "sha256": sha256(self.book)}],
         }
         (self.run / "report.ready.json").write_text(json.dumps(self.receipt), encoding="utf-8")
@@ -61,7 +71,8 @@ class DirectReportConsumerTest(unittest.TestCase):
     def run_consumer(self) -> subprocess.CompletedProcess[str]:
         return subprocess.run(
             ["python3", str(CONSUMER), "--inbox", str(self.inbox), "--output", str(self.output),
-             "--receipts", str(self.receipts), "--date", DATE, "--stable-age", "0", "--ack-host", ""],
+             "--receipts", str(self.receipts), "--failure-receipts", str(self.failures),
+             "--date", DATE, "--stable-age", "0", "--ack-host", ""],
             text=True, capture_output=True,
         )
 
@@ -132,6 +143,27 @@ class DirectReportConsumerTest(unittest.TestCase):
         self.assertEqual(len(summary["errors"]), 1)
         self.assertIn("unsafe run_id", result.stderr)
         self.assertTrue((self.output / self.book.name).is_file())
+
+    def test_endpoint_failure_alerts_once(self) -> None:
+        failed_id = "20260715-000002-zepto-direct"
+        failed = self.inbox / failed_id
+        failed.mkdir()
+        failure = {
+            "schema": "jivo-direct-failure-receipt-v1",
+            "plan_sha256": "b" * 64,
+            "platform": "zepto",
+            "date_ist": DATE,
+            "run_id": failed_id,
+            "attempt_id": "01",
+            "status": "failed",
+            "phase": "windows-terminal",
+            "reason": "runner_rc=1",
+        }
+        (failed / "failure.json").write_text(json.dumps(failure))
+        first = self.run_consumer()
+        self.assertEqual(len(json.loads(first.stdout)["endpoint_failures"]), 1)
+        second = self.run_consumer()
+        self.assertEqual(len(json.loads(second.stdout)["endpoint_failures"]), 0)
 
 
 if __name__ == "__main__":
