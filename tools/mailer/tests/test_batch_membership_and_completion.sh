@@ -9,6 +9,7 @@ AMAZON="$ROOT/output/Jivo-Amazon-Live-Report-${DATE}.xlsx"
 
 cleanup() {
   rm -f "$OUT" "$PIN" "$AMAZON"
+  rm -f "$ROOT/logs/.mailer-test-$DATE.lock"
 }
 trap cleanup EXIT
 
@@ -37,6 +38,12 @@ grep -q 'queued for the 10:30 Ecom batch' <<<"$BUILD_BODY"
 grep -q 'WhatsApp: posted complete delivery set to Ecom team group' tools/cron/morning_report_guard.sh
 if grep -qE 'f && / reports to Ecom team group/' tools/cron/morning_report_guard.sh; then
   echo "morning guard still accepts the legacy partial-batch success line" >&2
+  exit 1
+fi
+
+grep -q 'tools/mailer/mail_price_data.sh am' tools/cron/zepto_drop_rescue.sh
+if grep -q '/send-media' tools/cron/zepto_drop_rescue.sh; then
+  echo "Zepto drop rescue still has a duplicate direct WhatsApp sender" >&2
   exit 1
 fi
 

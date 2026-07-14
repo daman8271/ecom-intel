@@ -12,8 +12,9 @@ DATE_IST="${BLINKIT_MAIN_WA_DATE:-${BLINKIT_MONITOR_DATE:-$(TZ=Asia/Kolkata date
 MAIN="${BLINKIT_MONITOR_REPORT:-output/Jivo-Blinkit-Live-Report-${DATE_IST}.xlsx}"
 NOT_LISTED="${BLINKIT_MONITOR_NOT_LISTED_REPORT:-output/Jivo-Blinkit-Not-Listed-Pincodes-${DATE_IST}.xlsx}"
 CHAT="${BLINKIT_MAIN_WA_CHAT:-120363047864912511@g.us}"
-MARKER="logs/blinkit-main-wa-${DATE_IST}.sent"
+MARKER="${BLINKIT_MAIN_WA_MARKER:-logs/blinkit-main-wa-${DATE_IST}.sent}"
 GW_HEALTH="http://127.0.0.1:3001/health"
+BATCH_FIRST_NOT_BEFORE="${BLINKIT_MAIN_WA_NOT_BEFORE:-10:35}"
 
 if [ "${BLINKIT_SEND_MAIN_WA:-1}" != "1" ]; then
   echo "Blinkit main direct WhatsApp disabled by BLINKIT_SEND_MAIN_WA"
@@ -23,6 +24,20 @@ fi
 if [ -f "$MARKER" ]; then
   echo "Blinkit main direct WhatsApp already sent for $DATE_IST: $MARKER"
   exit 0
+fi
+
+# The consolidated dispatcher owns the first group delivery at about 10:30.
+# This direct path is a late-recovery path, not a way to preempt that batch.
+if [ "$DATE_IST" = "$(TZ=Asia/Kolkata date +%F)" ] \
+   && [ "${BLINKIT_MAIN_WA_ALLOW_PREBATCH:-0}" != "1" ] \
+   && [ "${MAILER_TEST_MODE:-0}" != "1" ] \
+   && [ "${BLINKIT_MAIN_WA_TEST:-0}" != "1" ]; then
+  NOW_HHMM="${BLINKIT_MAIN_WA_NOW_HHMM:-$(TZ=Asia/Kolkata date +%H%M)}"
+  NOT_BEFORE_HHMM="${BATCH_FIRST_NOT_BEFORE/:/}"
+  if [ "$((10#$NOW_HHMM))" -lt "$((10#$NOT_BEFORE_HHMM))" ]; then
+    echo "Blinkit main queued for the 10:30 Ecom batch; direct fallback opens at $BATCH_FIRST_NOT_BEFORE IST"
+    exit 0
+  fi
 fi
 
 if [ ! -f "$MAIN" ]; then

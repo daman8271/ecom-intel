@@ -20,7 +20,7 @@
 # Blinkit and Zepto are produced off-box on the Windows + Mac Pro workers.
 # BigBasket pincode runs on the main host + KVM1 only so it cannot consume the
 # residential-device window. Its workbook queues for the 10:30 Ecom batch.
-30 0 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'BB_TEAM_VPS_WEIGHT=1 BB_TEAM_MAC_WEIGHT=0 BB_TEAM_KVM_WEIGHT=1 BB_TEAM_LAPTOP_WEIGHT=0 flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # bigbasket pincode: main+KVM only; queue for 10:30 Ecom batch
+10 0 * * * cd /opt/ecom-intel && /usr/bin/tmux new-session -d -s "bbteam-$(date +\%Y\%m\%d)" 'BB_TEAM_VPS_WEIGHT=5 BB_TEAM_MAC_WEIGHT=0 BB_TEAM_KVM_WEIGHT=4 BB_TEAM_LAPTOP_WEIGHT=0 BB_TEAM_WAIT_TIMEOUT_S=32400 BB_PINCODE_WATCHDOG_MS=32400000 flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1'   # bigbasket pincode: main+KVM only; queue for 10:30 Ecom batch
 
 # 10:00 IST slot — the ONLY sweep (owner cut 2x/day -> 1x/day 2026-06-28; moved
 # 12:00 -> 10:00 goal #60 2026-07-03). Fire 00:30; LEAD_MAX=11820 is the current
@@ -39,10 +39,9 @@
 */10 6-11 * * * cd /opt/ecom-intel && ./tools/laptop/blinkit_team_watch.sh >> logs/blinkit_team.log 2>&1   # blinkit device-team watch: pull/merge/rescue
 20 7 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh early >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard early
 45 8 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_batch_guard.sh late >> logs/blinkit_guard.log 2>&1   # blinkit 11:00-delivery guard late
-0 0 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh launch >> logs/zepto_macpro_guard.log 2>&1   # Zepto Mac+Windows launch before other residential jobs
-45 2 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh watchdog >> logs/zepto_macpro_guard.log 2>&1   # Zepto device watchdog
-15 3 * * * cd /opt/ecom-intel && ./tools/cron/zepto_macpro_guard.sh late >> logs/zepto_macpro_guard.log 2>&1   # Zepto device-only late guard
-*/10 0-3 * * * cd /opt/ecom-intel && ./tools/laptop/zepto_team_watch.sh >> logs/zepto_team.log 2>&1 || true   # Zepto Mac+Windows shard watch
+# Zepto launch, shard exchange, merge, and workbook build are owned by persistent
+# Mac Pro/Windows endpoint tasks. The control host monitors final receipts only;
+# legacy zepto_macpro_guard/zepto_team_watch schedules are intentionally absent.
 */15 5-11 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor through 11:00 deadline
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_not_listed_direct.sh cron >> logs/blinkit-not-listed-wa.log 2>&1   # blinkit not-listed direct WhatsApp retry

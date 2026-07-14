@@ -24,6 +24,9 @@ fi
 
 SLOT="${1:-test}"
 D="${PRICE_MAIL_DATE:-$(date +%F)}"
+LOCK="logs/.mailer-${SLOT}-${D}.lock"
+exec 8>"$LOCK"
+flock -n 8 || { echo "mailer already running for slot=$SLOT date=$D"; exit 0; }
 echo "=== $(date '+%F %T') mailer start slot=$SLOT date=$D ==="
 
 set -a; . ./secrets.env; set +a
@@ -73,6 +76,7 @@ case "$SLOT" in
   *)  MAX_WAIT=60 ;;
 esac
 [ "${MAILER_SKIP_WAIT:-0}" = "1" ] && MAX_WAIT=0
+AM_NOT_BEFORE="${PRICE_MAIL_AM_NOT_BEFORE:-10:30}"
 
 EXPECTED=(
   "output/Jivo-Amazon-Live-Report-$D.xlsx"
@@ -110,7 +114,14 @@ file_ready() {
   [ -f "$f" ] && [ $(( now - $(stat -c %Y "$f") )) -ge "$STABLE_AGE_S" ]
 }
 
-deadline=$(( $(date +%s) + MAX_WAIT ))
+now="$(date +%s)"
+not_before=0
+deadline=$((now + MAX_WAIT))
+if [ "$SLOT" = "am" ] && [ "${MAILER_SKIP_WAIT:-0}" != "1" ]; then
+  not_before="${PRICE_MAIL_NOT_BEFORE_EPOCH:-$(TZ=Asia/Kolkata date -d "$D $AM_NOT_BEFORE" +%s)}"
+  deadline="$not_before"
+  echo "batch release barrier: not before $D $AM_NOT_BEFORE IST"
+fi
 while :; do
   now=$(date +%s); ready=1
   for f in "${EXPECTED[@]}"; do
@@ -118,12 +129,16 @@ while :; do
       ready=0; break
     fi
   done
-  [ "$ready" -eq 1 ] && break
-  if [ "$now" -ge "$deadline" ]; then
-    echo "WARN: wait timed out after ${MAX_WAIT}s; sending the files that are present"
+  if [ "$ready" -eq 1 ] && [ "$now" -ge "$not_before" ]; then
     break
   fi
-  sleep 60
+  if [ "$now" -ge "$deadline" ]; then
+    echo "WARN: batch release time reached with required files still missing; sending the stable files that are present"
+    break
+  fi
+  sleep_for=$((deadline - now))
+  [ "$sleep_for" -gt 60 ] && sleep_for=60
+  [ "$sleep_for" -gt 0 ] && sleep "$sleep_for"
 done
 
 PRESENT=()

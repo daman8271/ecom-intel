@@ -38,6 +38,10 @@ for P in zepto amazon-now amazon-fresh; do
   echo "[comp-daily] --- $P ---"
   if bash "$ROOT/tools/competitor/run_competitor.sh" "$P"; then
     echo "[comp-daily] $P ok"
+    if [ "$P" = "zepto" ] || [ "$P" = "amazon-now" ] || [ "$P" = "amazon-fresh" ]; then
+      "$ROOT/tools/competitor/send_platform_whatsapp.sh" "$P" \
+        || echo "[comp-daily] $P workbook passed build but Ecom delivery failed; receipt retry is required"
+    fi
   else
     echo "[comp-daily] $P FAILED (continuing to next platform)"
   fi

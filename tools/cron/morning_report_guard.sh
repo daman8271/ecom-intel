@@ -151,7 +151,7 @@ fi
 pincode_routed && PIN_OK=1
 zepto_sent     && ZEP_OK=1
 
-# --- auto-catch-up: BB pincode (Mac shard re-routed to KVM1), single-flight ---
+# --- auto-catch-up: BB pincode using the same main+KVM-only allocation ---
 PIN_NOTE=""
 if [ "$PIN_OK" != "1" ]; then
   if [ -f "$PIN_RPT" ]; then
@@ -165,17 +165,17 @@ if [ "$PIN_OK" != "1" ]; then
       PIN_NOTE="[WARN] BB pincode workbook exists but Ecom-group delivery retry failed."
     fi
   elif [ "$DRY" = "1" ]; then
-    LOG "[dryrun] would launch KVM-rerouted pincode re-run"
-    PIN_NOTE="[dryrun] would re-run BB pincode via KVM1 for Ecom group delivery."
+    LOG "[dryrun] would launch main+KVM-only pincode re-run"
+    PIN_NOTE="[dryrun] would re-run BB pincode on main+KVM for late Ecom delivery."
   elif pgrep -f 'team_run_pincode.sh (run|collect|merge|build)' >/dev/null 2>&1 || { [ -f logs/.bb-finisher.lock ] && ! flock -n logs/.bb-finisher.lock true 2>/dev/null; }; then
     LOG "pincode job already running — not double-triggering"
     PIN_NOTE="BB pincode re-run already in progress."
   else
-    LOG "BB pincode missing from output/ -> launching KVM-rerouted team re-run in tmux"
+    LOG "BB pincode missing from output/ -> launching main+KVM-only team re-run in tmux"
     RUNID="bb-guard-$(date +%Y%m%d-%H%M%S)"
     /usr/bin/tmux new-session -d -s "$RUNID" \
-      "cd $DIR && BB_TEAM_MAC_HOST=kvm1 flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1" 2>/dev/null \
-      && PIN_NOTE="Re-running BB pincode now (Mac->KVM1); Ecom-group delivery will follow the build." \
+      "cd $DIR && BB_TEAM_VPS_WEIGHT=5 BB_TEAM_MAC_WEIGHT=0 BB_TEAM_KVM_WEIGHT=4 BB_TEAM_LAPTOP_WEIGHT=0 BB_TEAM_WAIT_TIMEOUT_S=32400 BB_PINCODE_WATCHDOG_MS=32400000 flock -n logs/.bigbasket-team.lock ./platforms/bigbasket/team_run_pincode.sh run >> logs/bigbasket-team-pincode.log 2>&1" 2>/dev/null \
+      && PIN_NOTE="Re-running BB pincode on main+KVM; idempotent late Ecom delivery will follow the build." \
       || PIN_NOTE="[WARN] could not launch BB pincode re-run - check logs."
   fi
 fi

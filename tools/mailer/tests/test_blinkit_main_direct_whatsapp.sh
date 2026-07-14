@@ -11,6 +11,7 @@ BAD_RESULT="$(mktemp)"
 OUT_GOOD="$(mktemp)"
 OUT_MISSING="$(mktemp)"
 OUT_HELD="$(mktemp)"
+OUT_BATCH_FIRST="$(mktemp)"
 BLINKIT_FILE="$ROOT/output/Jivo-Blinkit-Live-Report-${DATE}.xlsx"
 NOT_LISTED_FILE="$ROOT/output/Jivo-Blinkit-Not-Listed-Pincodes-${DATE}.xlsx"
 MISSING_NOT_LISTED_FILE="$ROOT/output/Jivo-Blinkit-Not-Listed-Pincodes-${MISSING_DATE}.xlsx"
@@ -18,7 +19,7 @@ HELD_BLINKIT_FILE="$ROOT/output/Jivo-Blinkit-Live-Report-${HELD_DATE}.xlsx"
 HELD_NOT_LISTED_FILE="$ROOT/output/Jivo-Blinkit-Not-Listed-Pincodes-${HELD_DATE}.xlsx"
 
 cleanup() {
-  rm -f "$GOOD_RESULT" "$BAD_RESULT" "$OUT_GOOD" "$OUT_MISSING" "$OUT_HELD"
+  rm -f "$GOOD_RESULT" "$BAD_RESULT" "$OUT_GOOD" "$OUT_MISSING" "$OUT_HELD" "$OUT_BATCH_FIRST"
   rm -f "$BLINKIT_FILE" "$NOT_LISTED_FILE" "$MISSING_NOT_LISTED_FILE" "$HELD_BLINKIT_FILE" "$HELD_NOT_LISTED_FILE"
   rm -f "$ROOT/logs/blinkit-main-wa-${DATE}.sent"
   rm -f "$ROOT/logs/blinkit-main-wa-${MISSING_DATE}.sent"
@@ -73,6 +74,12 @@ not_listed_workbook(held_not_listed_path)
 PY
 
 cd "$ROOT"
+BLINKIT_MAIN_WA_DATE="$(TZ=Asia/Kolkata date +%F)" \
+BLINKIT_MAIN_WA_MARKER="$ROOT/logs/test-blinkit-main-batch-first.sent" \
+BLINKIT_MAIN_WA_NOW_HHMM=0900 \
+  "$ROOT/tools/whatsapp/send_blinkit_main_direct.sh" test > "$OUT_BATCH_FIRST"
+grep -q "queued for the 10:30 Ecom batch" "$OUT_BATCH_FIRST"
+
 BLINKIT_MAIN_WA_DATE="$DATE" \
 BLINKIT_MONITOR_RESULT="$GOOD_RESULT" \
 BLINKIT_MONITOR_REPORT="$BLINKIT_FILE" \
