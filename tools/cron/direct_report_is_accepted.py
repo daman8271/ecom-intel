@@ -42,6 +42,16 @@ def main() -> int:
         except (OSError, ValueError):
             direct_source_exists = True
             break
+    receipt_paths = list((Path(args.receipts) / args.date).glob("*.json"))
+    if not direct_source_exists:
+        for receipt_path in receipt_paths:
+            try:
+                receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
+                if receipt.get("status") == "accepted" and receipt.get("platform") == platform:
+                    direct_source_exists = True
+                    break
+            except (OSError, ValueError):
+                continue
     if args.mode == "source":
         return 0 if direct_source_exists else 1
     if not direct_source_exists:
@@ -50,7 +60,7 @@ def main() -> int:
         return 1
 
     actual_sha = sha256(report)
-    for receipt_path in (Path(args.receipts) / args.date).glob("*.json"):
+    for receipt_path in receipt_paths:
         try:
             receipt = json.loads(receipt_path.read_text(encoding="utf-8"))
             if receipt.get("status") != "accepted" or receipt.get("platform") != platform:
