@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-canola-oil-can-5l
-display_name: JIVO Cold Pressed Canola Oil Can (5000 ml)
+display_name: Jivo Cold Pressed Canola Oil Can 5l
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-08
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cold Pressed Canola Oil Can (5000 ml)**
+**Jivo Cold Pressed Canola Oil Can 5l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹1650

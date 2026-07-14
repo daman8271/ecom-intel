@@ -28,17 +28,17 @@ Up: [[flipkart-minutes]] · Day: [[2026-05-31]] · Week: [[2026-W22]] · Month: 
 - **Top discount:** [[jivo-pomace-olive-oil-plastic-bottle-1l]] — 63.0% off (Delhi)
 
 ## SKUs seen
-- [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L) — ₹243 (35.0% off) · in 75 pincodes
+- [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — Jivo Cold Press Canola Oil Plastic Bottle 1l — ₹243 (35.0% off) · in 75 pincodes
 - [[jivo-cold-press-combo-canola-oil-plastic-bottle-1l]] — Jivo Cold Press Combo Canola Oil Plastic Bottle 1l — ₹575 · in 2 pincodes
-- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (4 L) — ₹684 (31.0% off) · in 2 pincodes
-- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹948 (24.0% off) · in 28 pincodes
-- [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L) — ₹173 (32.0% off) · in 57 pincodes
-- [[jivo-cooking-sunflower-oil-can-4l]] — JIVO Cooking Sunflower Oil Can (4 L) — ₹736 (31.0% off) · in 1 pincodes
-- [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L) — ₹1959 (30.0% off) · in 42 pincodes
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-4l]] — Jivo Cold Pressed Pure Cooking Mustard Oil Can 4l — ₹684 (31.0% off) · in 2 pincodes
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — Jivo Cold Pressed Pure Cooking Mustard Oil Can 5l — ₹948 (24.0% off) · in 28 pincodes
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] — Jivo Cold Pressed Pure Cooking Mustard Oil Plastic Bottle 1l — ₹173 (32.0% off) · in 57 pincodes
+- [[jivo-cooking-sunflower-oil-can-4l]] — Jivo Cooking Sunflower Oil Can 4l — ₹736 (31.0% off) · in 1 pincodes
+- [[jivo-extra-light-olive-oil-can-2l]] — Jivo Extra Light Olive Oil Can 2l — ₹1959 (30.0% off) · in 42 pincodes
 - [[jivo-mineral-water-1l]] — Jivo Mineral Water 1l — ₹22 (26.0% off) · in 27 pincodes
-- [[jivo-pomace-olive-oil-plastic-bottle-1l]] — JIVO Pomace Olive Oil Plastic Bottle (1 L) — ₹379 (63.0% off) · in 28 pincodes
-- [[jivo-pomace-olive-oil-tin-5l]] — JIVO Pomace Olive Oil Tin (5 L) — ₹2149 (57.0% off) · in 11 pincodes
-- [[jivo-soybean-oil-soyabean-oil-pouch-1l]] — JIVO Soybean Oil Soyabean Oil Pouch (1 L) — ₹155 (22.0% off) · in 20 pincodes
+- [[jivo-pomace-olive-oil-plastic-bottle-1l]] — Jivo Pomace Olive Oil Plastic Bottle 1l — ₹379 (63.0% off) · in 28 pincodes
+- [[jivo-pomace-olive-oil-tin-5l]] — Jivo Pomace Olive Oil Tin 5l — ₹2149 (57.0% off) · in 11 pincodes
+- [[jivo-soybean-oil-soyabean-oil-pouch-1l]] — Jivo Soybean Oil Soyabean Oil Pouch 1l — ₹155 (22.0% off) · in 20 pincodes
 
 ## Cities covered
 [[Ahmedabad]] · [[Bengaluru]] · [[Chandigarh]] · [[Chennai]] · [[Coimbatore]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Visakhapatnam]]

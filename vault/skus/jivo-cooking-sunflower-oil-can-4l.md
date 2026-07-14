@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cooking-sunflower-oil-can-4l
-display_name: JIVO Cooking Sunflower Oil Can (4 L)
+display_name: Jivo Cooking Sunflower Oil Can 4l
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cooking Sunflower Oil Can (4 L)**
+**Jivo Cooking Sunflower Oil Can 4l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹745 (31.0% off)

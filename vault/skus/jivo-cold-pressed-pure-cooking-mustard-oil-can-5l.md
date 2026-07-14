@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-pure-cooking-mustard-oil-can-5l
-display_name: JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)
+display_name: Jivo Cold Pressed Pure Cooking Mustard Oil Can 5l
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L)**
+**Jivo Cold Pressed Pure Cooking Mustard Oil Can 5l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹888 (28.0% off)

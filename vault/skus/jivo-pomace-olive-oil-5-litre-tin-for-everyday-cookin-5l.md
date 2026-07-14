@@ -6,9 +6,9 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-07-11
-observations: 110
-min_price: 1699
+last_seen: 2026-07-14
+observations: 114
+min_price: 1685
 max_price: 1950
 latest_price: 1699
 tags:
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (5)
-[[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
+## Runs that observed this SKU (6)
+[[amazon-now-2026-07-14-0808]] · [[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
 
-## Price history (110 observations)
+## Price history (114 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -147,6 +147,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-11-0758,2026-07-11,amazon-now,Mumbai,400033,1699,4999,66,1
 2026-07-11-0758,2026-07-11,amazon-now,Mumbai,400063,1699,4999,66,1
 2026-07-11-0758,2026-07-11,amazon-now,Mumbai,400077,1699,4999,66,1
+2026-07-14-0808,2026-07-14,amazon-now,Bengaluru,560032,1783,4999,64.3,1
+2026-07-14-0808,2026-07-14,amazon-now,Bengaluru,560040,1783,4999,64.3,1
+2026-07-14-0808,2026-07-14,amazon-now,Gurugram,122007,1685,4999,66.3,1
+2026-07-14-0808,2026-07-14,amazon-now,Mumbai,400027,1699,4999,66,1
 ```
 
 ---
