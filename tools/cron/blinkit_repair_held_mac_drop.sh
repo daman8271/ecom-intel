@@ -31,6 +31,13 @@ if ! flock -n 9; then
   exit 0
 fi
 
+# Callers (e.g. blinkit_team_merge.sh pre-verify) may point the repair straight at
+# an already-merged drop instead of the newest mac-drop glob. When set and non-empty,
+# BLINKIT_REPAIR_BASE_DROP wins; otherwise fall back to the mac-drop discovery below.
+if [ -n "${BLINKIT_REPAIR_BASE_DROP:-}" ] && [ -s "${BLINKIT_REPAIR_BASE_DROP:-}" ]; then
+  BASE_DROP="$BLINKIT_REPAIR_BASE_DROP"
+  log "using caller-provided base drop: $BASE_DROP"
+else
 BASE_DROP="$(python3 - "$DATE_IST" "$DATE_COMPACT" <<'PY'
 from __future__ import annotations
 import glob, os, sys
@@ -47,6 +54,7 @@ paths.sort(key=os.path.getmtime, reverse=True)
 print(paths[0] if paths else "")
 PY
 )"
+fi
 
 if [ -z "$BASE_DROP" ] || [ ! -s "$BASE_DROP" ]; then
   log "no Mac drop found for $DATE_IST"
@@ -97,6 +105,18 @@ def is_oos(row):
     status = str(row.get("listing_status") or row.get("status") or row.get("availability") or "").lower()
     return "out_of_stock" in status or "out of stock" in status or status == "oos"
 
+def is_stock_unverified(row):
+    # Mirrors platforms/blinkit/ingest.sh is_stock_unverified_row (the gate that
+    # refused Delhi:110040:jivo-pomace-olive-oil-5l on 2026-07-13/14). A fail-closed
+    # search-card OOS row that no probe could verify (in_stock=null,
+    # listing_status=stock_unverified, stock_source=*_unverified). The prior bad-pin
+    # detection missed these entirely (in_stock=null is neither False/0 nor an OOS
+    # status string), so a lone unverified row was never rescraped -> the whole drop
+    # sat held. Rescraping the pin re-runs the OOS/PDP probes and clears it.
+    status = str(row.get("listing_status") or "").strip().lower()
+    source = str(row.get("stock_source") or "").strip().lower()
+    return bool(row.get("stock_unverified")) or status == "stock_unverified" or source.endswith("_unverified")
+
 bad = set()
 for rec in data.get("perPin") or []:
     if isinstance(rec, dict) and pin(rec.get("pincode")) and not truthy(rec.get("auth_accepted")):
@@ -109,6 +129,8 @@ for row in data.get("allRows") or []:
         continue
     stock_source = str(row.get("stock_source") or "").strip().lower()
     if row.get("pdp_price_probe_failed"):
+        bad.add(p)
+    if is_stock_unverified(row):
         bad.add(p)
     if is_oos(row) and not truthy(row.get("pdp_checked")) and stock_source not in {"pdp", "pdp_probe"}:
         bad.add(p)

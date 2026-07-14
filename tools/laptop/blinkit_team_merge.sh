@@ -50,6 +50,102 @@ fi
 
 TODAY="$(date +%F)"
 REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
+
+# ---- PRE-VERIFY + PROACTIVE HEAL (2026-07-15 fleet fix) --------------------
+# Before ingesting, count the rows the ingest gate would refuse as UNVERIFIED
+# using the gate's OWN row predicates (copied verbatim from
+# platforms/blinkit/ingest.sh — no thresholds re-implemented here). If a SMALL
+# number of pincodes carry those rows (<= BLINKIT_TEAM_PREVERIFY_MAX), heal them
+# FIRST via the targeted Mac rescrape, then ingest once clean — turning the old
+# refuse -> repair -> re-ingest loop (~1h, e.g. the recurring
+# Delhi:110040:jivo-pomace-olive-oil-5l stock_unverified refusals of 7/13+7/14)
+# into a single verify -> heal -> ingest pass. The gate stays the final backstop:
+# 0 unverified, too-many, or a non-row failure (wall_s, store floor, auth summary)
+# all fall through to the normal ingest below, exactly as before.
+PREVERIFY_PINS_FILE="$(mktemp)"
+if python3 - "$MERGED" >"$PREVERIFY_PINS_FILE" 2>>"$RUN/merge.log" <<'PY'
+import json, sys
+d = json.load(open(sys.argv[1], encoding="utf-8"))
+rows = d.get("allRows") or []
+per = d.get("perPin") or []
+
+def pin(v):
+    return str(v or "").strip()
+
+def truthy(v):
+    if v is True:
+        return True
+    if isinstance(v, (int, float)) and not isinstance(v, bool):
+        return v == 1
+    return str(v).strip().lower() in {"1", "true", "yes", "y"}
+
+# --- gate predicates, verbatim from platforms/blinkit/ingest.sh ---
+def is_oos_row(row):
+    value = row.get("in_stock")
+    if value is False or value == 0:
+        return True
+    if str(value).strip().lower() in {"0", "false", "no"}:
+        return True
+    status = str(row.get("listing_status") or row.get("status") or row.get("availability") or "").lower()
+    return "out_of_stock" in status or "out of stock" in status or status == "oos"
+
+def is_stock_unverified_row(row):
+    status = str(row.get("listing_status") or "").strip().lower()
+    source = str(row.get("stock_source") or "").strip().lower()
+    return bool(row.get("stock_unverified")) or status == "stock_unverified" or source.endswith("_unverified")
+
+def pdp_verified_oos(row):
+    return truthy(row.get("pdp_checked")) or str(row.get("stock_source") or "").strip().lower() == "pdp"
+
+bad = set()
+# per-pin auth failures (targeted repair rescrapes these too)
+for rec in per:
+    if isinstance(rec, dict) and pin(rec.get("pincode")) and not truthy(rec.get("auth_accepted")):
+        bad.add(pin(rec.get("pincode")))
+for row in rows:
+    if not isinstance(row, dict):
+        continue
+    p = pin(row.get("pincode"))
+    if not p:
+        continue
+    if is_stock_unverified_row(row):
+        bad.add(p)
+    elif is_oos_row(row) and not pdp_verified_oos(row):
+        bad.add(p)
+    if row.get("pdp_price_probe_failed"):
+        bad.add(p)
+for p in sorted(bad):
+    print(p)
+PY
+then
+  NPINS="$(grep -c . "$PREVERIFY_PINS_FILE" 2>/dev/null || echo 0)"
+  PREVERIFY_MAX="${BLINKIT_TEAM_PREVERIFY_MAX:-25}"
+  if [ "$NPINS" -gt 0 ] && [ "$NPINS" -le "$PREVERIFY_MAX" ]; then
+    PINLIST="$(tr '\n' ' ' <"$PREVERIFY_PINS_FILE")"
+    LOG "pre-verify: $NPINS repairable unverified pin(s) [$PINLIST] — healing via targeted repair BEFORE ingest"
+    team_tg "🔧 Blinkit team $RUN_ID: $NPINS unverified pin(s) [$PINLIST] — pre-verify heal before ingest (avoids the refuse→repair loop)."
+    BLINKIT_REPAIR_BASE_DROP="$DIR/$MERGED" BLINKIT_REPAIR_DATE="$TODAY" \
+      tools/cron/blinkit_repair_held_mac_drop.sh >> logs/blinkit_team.log 2>&1 || true
+    if [ -f "$REPORT" ]; then
+      touch "$RUN/.ingested"
+      clear_active blinkit "$RUN_ID"
+      counts="$(python3 -c 'import json,sys;s=json.load(open(sys.argv[1])).get("summary") or {};print(f"{s.get(\"pincodes_total\")} pins, {s.get(\"total_rows\")} rows, {s.get(\"pincodes_with_jivo\")} with Jivo")' "$MERGED" 2>/dev/null || echo "?")"
+      LOG "pre-verify SUCCESS — targeted repair healed $NPINS pin(s) and ingested in ONE pass ($counts)"
+      team_tg "✅ Blinkit ${TODAY} report built in one pass (pre-verify healed $NPINS pin(s); $counts)."
+      rm -f "$PREVERIFY_PINS_FILE"
+      exit 0
+    fi
+    LOG "pre-verify heal did not produce the report — falling through to normal ingest (gate backstop owns recovery)"
+  elif [ "$NPINS" -gt "$PREVERIFY_MAX" ]; then
+    LOG "pre-verify: $NPINS unverified pin(s) exceeds max=$PREVERIFY_MAX — deferring to normal ingest + gate backstop"
+  else
+    LOG "pre-verify: 0 repairable unverified rows — proceeding to normal ingest"
+  fi
+else
+  LOG "pre-verify check errored (see merge.log) — proceeding to normal ingest unchanged"
+fi
+rm -f "$PREVERIFY_PINS_FILE"
+
 LOG "ingesting merged team result through normal Blinkit gates (--deliver)"
 rc=0
 BLINKIT_REQUIRE_AUTH_DROP=1 platforms/blinkit/ingest.sh "$MERGED" --deliver \
