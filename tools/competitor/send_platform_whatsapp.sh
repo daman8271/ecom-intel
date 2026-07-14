@@ -2,7 +2,7 @@
 # Send one quality-checked competitor workbook to the Ecom WhatsApp group.
 set -uo pipefail
 
-ROOT=/opt/ecom-intel
+ROOT="${COMPETITOR_ROOT:-/opt/ecom-intel}"
 cd "$ROOT" || exit 1
 PLATFORM="${1:?usage: send_platform_whatsapp.sh <platform>}"
 DATE_IST="${COMPETITOR_SEND_DATE:-$(TZ=Asia/Kolkata date +%F)}"
@@ -16,12 +16,12 @@ case "$PLATFORM" in
   *) echo "unsupported competitor platform: $PLATFORM" >&2; exit 2 ;;
 esac
 
-REPORT="$ROOT/output/Competitor-Price-Watch-${LABEL}-${DATE_IST}.xlsx"
-CAPTURE="$ROOT/tools/competitor/data/${PLATFORM}_competitor_${DATE_IST}.json"
-MARKER="$ROOT/logs/competitor-${PLATFORM}-wa-${DATE_IST}.sent"
+REPORT="${COMPETITOR_REPORT:-$ROOT/output/Competitor-Price-Watch-${LABEL}-${DATE_IST}.xlsx}"
+CAPTURE="${COMPETITOR_CAPTURE:-$ROOT/tools/competitor/data/${PLATFORM}_competitor_${DATE_IST}.json}"
+MARKER="${COMPETITOR_SENT_MARKER:-$ROOT/logs/competitor-${PLATFORM}-wa-${DATE_IST}.sent}"
 RECEIPT_DIR="$ROOT/logs/delivery-receipts/$DATE_IST"
-RECEIPT="$RECEIPT_DIR/$(basename "$REPORT").json"
-LOCK="$ROOT/logs/.competitor-${PLATFORM}-wa.lock"
+RECEIPT="${COMPETITOR_WA_RECEIPT:-$RECEIPT_DIR/$(basename "$REPORT").json}"
+LOCK="${COMPETITOR_WA_LOCK:-$ROOT/logs/.competitor-${PLATFORM}-wa.lock}"
 
 log() {
   printf '[%s] competitor_wa(%s): %s\n' "$(TZ=Asia/Kolkata date '+%F %T %Z')" "$PLATFORM" "$*"
@@ -58,16 +58,35 @@ PY
 )" || { log "quality gate failed: $SUMMARY"; exit 1; }
 
 SHA="$(sha256sum "$REPORT" | awk '{print $1}')"
-if [ -s "$RECEIPT" ] && python3 - "$RECEIPT" "$SHA" "$CHAT" <<'PY'
-import json, sys
+SIZE="$(stat -c %s "$REPORT")"
+if [ -s "$RECEIPT" ] && python3 - "$RECEIPT" "$REPORT" "$SHA" "$SIZE" "$CHAT" "$PLATFORM" "$DATE_IST" <<'PY'
+import datetime
+import json
+import os
+import sys
+
+receipt_path, report_path, sha256, size, target, platform, date = sys.argv[1:]
 try:
-    receipt = json.load(open(sys.argv[1], encoding="utf-8"))
-except (OSError, ValueError):
+    with open(receipt_path, encoding="utf-8") as handle:
+        receipt = json.load(handle)
+    sent_at = receipt.get("sent_at")
+    parsed_sent_at = datetime.datetime.fromisoformat(str(sent_at).replace("Z", "+00:00"))
+except (OSError, TypeError, ValueError, json.JSONDecodeError):
     raise SystemExit(1)
-raise SystemExit(0 if receipt.get("sha256") == sys.argv[2] and receipt.get("target") == sys.argv[3] and receipt.get("messageId") else 1)
+checks = {
+    "platform": receipt.get("platform") == platform,
+    "date": receipt.get("date") == date,
+    "file": receipt.get("file") == os.path.abspath(report_path),
+    "sha256": receipt.get("sha256") == sha256,
+    "size": receipt.get("size") == int(size),
+    "target": receipt.get("target") == target,
+    "messageId": isinstance(receipt.get("messageId"), str) and bool(receipt["messageId"].strip()),
+    "sent_at": parsed_sent_at.tzinfo is not None,
+}
+raise SystemExit(0 if all(checks.values()) else 1)
 PY
 then
-  log "confirmed receipt already exists; skipping duplicate"
+  log "confirmed document receipt already exists; skipping duplicate"
   exit 0
 fi
 
@@ -98,22 +117,27 @@ BODY="$(python3 -c 'import json,os,sys; p=os.path.abspath(sys.argv[1]); print(js
 RESPONSE="$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media -H 'Content-Type: application/json' -d "$BODY")"
 log "document response: $RESPONSE"
 
-mkdir -p "$RECEIPT_DIR"
-python3 - "$RECEIPT" "$REPORT" "$SHA" "$CHAT" "$RESPONSE" <<'PY'
+mkdir -p "$(dirname "$RECEIPT")"
+python3 - "$RECEIPT" "$REPORT" "$SHA" "$SIZE" "$CHAT" "$PLATFORM" "$DATE_IST" "$RESPONSE" <<'PY'
 import datetime, json, os, sys
 
-receipt_path, report_path, sha256, target, raw = sys.argv[1:]
-response = json.loads(raw)
+receipt_path, report_path, sha256, size, target, platform, date, raw = sys.argv[1:]
+try:
+    response = json.loads(raw)
+except json.JSONDecodeError:
+    raise SystemExit(1)
 message_id = response.get("messageId")
 if response.get("success") is not True or not message_id:
     raise SystemExit(1)
 data = {
+    "date": date,
     "file": os.path.abspath(report_path),
-    "sha256": sha256,
-    "size": os.path.getsize(report_path),
-    "target": target,
     "messageId": str(message_id),
+    "platform": platform,
     "sent_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "sha256": sha256,
+    "size": int(size),
+    "target": target,
 }
 tmp = receipt_path + ".tmp"
 with open(tmp, "w", encoding="utf-8") as handle:
