@@ -1,0 +1,36 @@
+{
+  "schema": "blinkit-top8-run-v1",
+  "run_id": "20260714-133503-blinkit-top8",
+  "date": "2026-07-14",
+  "selection_source": "platforms/blinkit/result.json + tools/competitor/blinkit_top8_pincodes.json",
+  "competitors": [
+    "Fortune",
+    "Saffola",
+    "Borges",
+    "Tata",
+    "Del Monte",
+    "Figaro",
+    "Sundrop",
+    "Gulab"
+  ],
+  "workers": [
+    {
+      "id": "windows",
+      "label": "Windows",
+      "display_name": "Windows laptop",
+      "concurrency": 2,
+      "pincodes_file": "windows.pincodes.json",
+      "progress_file": "windows.progress.json",
+      "capture_file": "windows.capture.json"
+    },
+    {
+      "id": "macpro",
+      "label": "Mac Pro",
+      "display_name": "Mac Pro",
+      "concurrency": 2,
+      "pincodes_file": "mac.pincodes.json",
+      "progress_file": "mac.progress.json",
+      "capture_file": "mac.capture.json"
+    }
+  ]
+}
