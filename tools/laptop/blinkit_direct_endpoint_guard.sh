@@ -35,6 +35,27 @@ REPORT="output/Jivo-Blinkit-Live-Report-${TODAY}.xlsx"
 
 LOG(){ echo "[$(TZ=Asia/Kolkata date '+%F %T')] blinkit_direct_endpoint_guard: $*"; }
 
+# send_alert <message> — returns 0 ONLY on a confirmed owner delivery, so the
+# caller writes the once-a-day marker only on success (a transient Telegram
+# failure or missing creds must NOT suppress the next tick's retry).
+# BLINKIT_GUARD_SEND_CMD overrides the transport for tests (its exit code wins).
+send_alert(){
+  if [ -n "${BLINKIT_GUARD_SEND_CMD:-}" ]; then
+    BLINKIT_GUARD_MSG="$1" bash -c "$BLINKIT_GUARD_SEND_CMD"
+    return $?
+  fi
+  ( set +e
+    # shellcheck disable=SC1090
+    [ -f "$SECRETS_FILE" ] && . "$SECRETS_FILE"
+    owner_chat="${TELEGRAM_OWNER_CHAT_ID:-${TELEGRAM_CHAT_ID:-}}"
+    [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "$owner_chat" ] || exit 1
+    resp="$(curl -s --max-time 30 -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+        --data-urlencode "chat_id=$owner_chat" --data-urlencode "text=$1" 2>/dev/null)" || exit 1
+    printf '%s' "$resp" | grep -q '"ok":true' || exit 1
+    exit 0
+  )
+}
+
 mkdir -p "$STATE_DIR"
 exec 9>"logs/.blinkit-direct-endpoint-guard.lock"
 flock -n 9 || exit 0
@@ -90,22 +111,16 @@ fi
 
 LOG "NO Blinkit direct evidence for $TODAY at $NOW IST — endpoint appears SILENT/DOWN"
 
-# ---- alert the owner once ----------------------------------------------------
+# ---- alert the owner once (marker written ONLY on confirmed delivery) --------
 STATE="$STATE_DIR/${TODAY}.alerted"
-if [ ! -s "$STATE" ]; then
-  printf 'silent-endpoint %s\n' "$NOW" > "$STATE"
-  ( set +e
-    # shellcheck disable=SC1090
-    [ -f "$SECRETS_FILE" ] && . "$SECRETS_FILE"
-    owner_chat="${TELEGRAM_OWNER_CHAT_ID:-${TELEGRAM_CHAT_ID:-}}"
-    [ -n "${TELEGRAM_BOT_TOKEN:-}" ] && [ -n "$owner_chat" ] || exit 0
-    msg="[FAIL] Blinkit direct endpoint is SILENT: no report package, accepted receipt, failure receipt, or workbook for ${TODAY} by ${NOW} IST. The Mac endpoint may be down — nobody is scraping Blinkit. VPS is consume-only; no fallback started (set BLINKIT_ALLOW_VPS_RESCUE=1 to permit the flag-gated last-resort VPS rescue)."
-    curl -s --max-time 30 -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
-      --data-urlencode "chat_id=$owner_chat" --data-urlencode "text=$msg" >/dev/null
-  ) || true
+MSG="[FAIL] Blinkit direct endpoint is SILENT: no report package, accepted receipt, failure receipt, or workbook for ${TODAY} by ${NOW} IST. The Mac endpoint may be down — nobody is scraping Blinkit. VPS is consume-only; no fallback started (set BLINKIT_ALLOW_VPS_RESCUE=1 to permit the flag-gated last-resort VPS rescue)."
+if [ -s "$STATE" ]; then
+  LOG "owner already alerted for $TODAY — not repeating"
+elif send_alert "$MSG"; then
+  printf 'silent-endpoint %s alerted\n' "$NOW" > "$STATE"
   LOG "owner alerted (once) for $TODAY"
 else
-  LOG "owner already alerted for $TODAY — not repeating"
+  LOG "alert NOT delivered (transient send failure or missing creds) — marker NOT written, will retry next tick"
 fi
 
 # ---- optional flag-gated last-resort rescue ---------------------------------
