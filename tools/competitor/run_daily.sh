@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Daily competitor price-watch for Zepto and Amazon. Blinkit moved to the dedicated
-# post-Blinkit 25-city x 3-pincode top-8 device run on 2026-07-14.
+# Daily competitor price-watch delivery for device-produced Zepto plus local
+# Amazon captures. Blinkit moved to the dedicated post-Blinkit device run.
 #
 # Called EVENT-DRIVEN at the tail of the noon sweep (deadline_sweep.sh, ~12:02 IST), right
 # after run_all finishes -- so competitor prices are captured within ~15 min of the JIVO prices for a same-time,
@@ -19,6 +19,8 @@ set -uo pipefail
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$ROOT" || exit 1
 mkdir -p logs
+DIR="$ROOT"
+. tools/laptop/lib.sh
 
 # Single-flight: never let two competitor runs overlap.
 exec 9> "$ROOT/tools/competitor/.daily.lock"
@@ -34,11 +36,23 @@ export PINCODES_FILE="$ROOT/tools/competitor/pincodes_25.json"
 DATE_IST="$(TZ='Asia/Kolkata' date +%F)"
 echo "[comp-daily] START $(TZ='Asia/Kolkata' date '+%F %H:%M') date=$DATE_IST pins=$PINCODES_FILE"
 
-for P in zepto amazon-now amazon-fresh; do
+# Zepto production, including competitor capture, is device-only. This host may
+# deliver a final workbook but must never scrape or merge its Zepto rows.
+ZEPTO_REPORT="$ROOT/output/Competitor-Price-Watch-Zepto-${DATE_IST}.xlsx"
+if [ -s "$ZEPTO_REPORT" ]; then
+  echo "[comp-daily] Zepto device workbook present; delivering receipt-safe copy"
+  "$ROOT/tools/competitor/send_platform_whatsapp.sh" zepto \
+    || echo "[comp-daily] Zepto Ecom delivery failed; receipt retry is required"
+else
+  echo "[comp-daily] Zepto device workbook missing; local/VPS capture is prohibited"
+  team_tg "⚠️ Zepto competitor workbook is missing for ${DATE_IST}. Local/KVM/VPS scraping is disabled; recover the Mac Pro/Windows device workflow."
+fi
+
+for P in amazon-now amazon-fresh; do
   echo "[comp-daily] --- $P ---"
   if bash "$ROOT/tools/competitor/run_competitor.sh" "$P"; then
     echo "[comp-daily] $P ok"
-    if [ "$P" = "zepto" ] || [ "$P" = "amazon-now" ] || [ "$P" = "amazon-fresh" ]; then
+    if [ "$P" = "amazon-now" ] || [ "$P" = "amazon-fresh" ]; then
       "$ROOT/tools/competitor/send_platform_whatsapp.sh" "$P" \
         || echo "[comp-daily] $P workbook passed build but Ecom delivery failed; receipt retry is required"
     fi

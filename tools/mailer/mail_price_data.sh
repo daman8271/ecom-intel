@@ -27,6 +27,8 @@ D="${PRICE_MAIL_DATE:-$(date +%F)}"
 LOCK="logs/.mailer-${SLOT}-${D}.lock"
 exec 8>"$LOCK"
 flock -n 8 || { echo "mailer already running for slot=$SLOT date=$D"; exit 0; }
+exec 7>logs/.direct-report-promotion.lock
+flock -w 120 7 || { echo "direct report promotion lock timed out"; exit 1; }
 echo "=== $(date '+%F %T') mailer start slot=$SLOT date=$D ==="
 
 set -a; . ./secrets.env; set +a
@@ -111,7 +113,13 @@ fi
 
 file_ready() {
   local f="$1" now="${2:-$(date +%s)}"
-  [ -f "$f" ] && [ $(( now - $(stat -c %Y "$f") )) -ge "$STABLE_AGE_S" ]
+  [ -f "$f" ] && [ $(( now - $(stat -c %Y "$f") )) -ge "$STABLE_AGE_S" ] || return 1
+  case "$(basename "$f")" in
+    Jivo-Blinkit-Live-Report-*|Jivo-Blinkit-Not-Listed-Pincodes-*|Jivo-Zepto-Live-Report-*)
+      python3 tools/cron/direct_report_is_accepted.py --file "$f" --date "$D" || return 1
+      ;;
+  esac
+  return 0
 }
 
 now="$(date +%s)"
@@ -406,6 +414,11 @@ fi
 
 if [ "$EMAIL_FAIL" -eq 1 ]; then
   echo "=== $(date '+%F %T') mailer done WITH EMAIL FAILURE -> WhatsApp group only (${#PRESENT[@]} files) ==="
+  exit 1
+fi
+if [ "${MAILER_TEST_MODE:-0}" != "1" ] && [ "${MAILER_DRY_RUN_SEND:-0}" != "1" ] \
+   && { [ "$WA_FAIL" -ne 0 ] || [ ${#REQUIRED_PENDING[@]} -gt 0 ]; }; then
+  echo "=== $(date '+%F %T') mailer done WITH INCOMPLETE ECOM DELIVERY ==="
   exit 1
 fi
 if [ "$EMAIL_SKIPPED" -eq 1 ]; then

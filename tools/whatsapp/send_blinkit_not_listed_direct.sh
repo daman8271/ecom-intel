@@ -33,6 +33,11 @@ if [ ! -f "$MAIN" ]; then
   echo "Blinkit not-listed direct WhatsApp skipped because main Blinkit report was not accepted"
   exit 0
 fi
+if ! python3 tools/cron/direct_report_is_accepted.py --file "$MAIN" --date "$DATE_IST" \
+   || ! python3 tools/cron/direct_report_is_accepted.py --file "$NOT_LISTED" --date "$DATE_IST"; then
+  echo "Blinkit not-listed direct WhatsApp skipped because the direct promotion receipt is not accepted"
+  exit 0
+fi
 
 if ! BLINKIT_MONITOR_DRYRUN=1 \
      BLINKIT_MONITOR_EXIT_CODE=1 \
