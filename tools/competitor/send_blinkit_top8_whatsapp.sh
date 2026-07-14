@@ -9,7 +9,9 @@ PASS="${1:-direct}"
 REPORT="${BLINKIT_TOP8_REPORT:-$ROOT/output/Competitor-Price-Watch-Blinkit-${DATE_IST}.xlsx}"
 AUDIT="${BLINKIT_TOP8_AUDIT:-$ROOT/logs/blinkit-top8-${DATE_IST}.audit.json}"
 MARKER="${BLINKIT_TOP8_SENT_MARKER:-$ROOT/logs/blinkit-top8-wa-${DATE_IST}.sent}"
-LOCK="$ROOT/logs/.blinkit-top8-wa.lock"
+RECEIPT_DIR="$ROOT/logs/delivery-receipts/$DATE_IST"
+RECEIPT="${BLINKIT_TOP8_WA_RECEIPT:-$RECEIPT_DIR/$(basename "$REPORT").json}"
+LOCK="${BLINKIT_TOP8_WA_LOCK:-$ROOT/logs/.blinkit-top8-wa.lock}"
 CHAT="${BLINKIT_TOP8_WA_CHAT:-120363047864912511@g.us}"
 GW_HEALTH=http://127.0.0.1:3001/health
 
@@ -19,7 +21,6 @@ log() {
 
 exec 9>"$LOCK"
 flock -n 9 || { log "another sender holds the lock"; exit 0; }
-[ -s "$MARKER" ] && { log "already sent: $MARKER"; exit 0; }
 [ -s "$REPORT" ] || { log "waiting for workbook: $REPORT"; exit 1; }
 [ -s "$AUDIT" ] || { log "quality audit is missing: $AUDIT"; exit 1; }
 
@@ -67,6 +68,39 @@ PY
   exit 1
 }
 
+SHA="$(sha256sum "$REPORT" | awk '{print $1}')"
+SIZE="$(stat -c %s "$REPORT")"
+if [ -s "$RECEIPT" ] && python3 - "$RECEIPT" "$REPORT" "$SHA" "$SIZE" "$CHAT" "$DATE_IST" <<'PY'
+import datetime
+import json
+import os
+import sys
+
+receipt_path, report_path, sha256, size, target, date = sys.argv[1:]
+try:
+    with open(receipt_path, encoding="utf-8") as handle:
+        receipt = json.load(handle)
+    sent_at = receipt.get("sent_at")
+    parsed_sent_at = datetime.datetime.fromisoformat(str(sent_at).replace("Z", "+00:00"))
+except (OSError, TypeError, ValueError, json.JSONDecodeError):
+    raise SystemExit(1)
+checks = {
+    "platform": receipt.get("platform") == "blinkit",
+    "date": receipt.get("date") == date,
+    "file": receipt.get("file") == os.path.abspath(report_path),
+    "sha256": receipt.get("sha256") == sha256,
+    "size": receipt.get("size") == int(size),
+    "target": receipt.get("target") == target,
+    "messageId": isinstance(receipt.get("messageId"), str) and bool(receipt["messageId"].strip()),
+    "sent_at": parsed_sent_at.tzinfo is not None,
+}
+raise SystemExit(0 if all(checks.values()) else 1)
+PY
+then
+  log "confirmed document receipt already exists; skipping duplicate"
+  exit 0
+fi
+
 if [ "${BLINKIT_TOP8_WA_TEST:-0}" = "1" ] || [ "${MAILER_TEST_MODE:-0}" = "1" ]; then
   log "TEST send: $CHAT $(basename "$REPORT") | $SUMMARY"
   exit 0
@@ -102,7 +136,37 @@ grep -q '"success":true' <<<"$response" || exit 1
 DOC_PAYLOAD="$(python3 -c 'import json,os,sys; p=os.path.abspath(sys.argv[1]); print(json.dumps({"chatId":sys.argv[2],"filePath":p,"mediaType":"document","fileName":os.path.basename(p)}))' "$REPORT" "$CHAT")"
 response="$(send_json 120 http://127.0.0.1:3001/send-media "$DOC_PAYLOAD")"
 log "document response: $response"
-grep -q '"success":true' <<<"$response" || exit 1
 
+mkdir -p "$(dirname "$RECEIPT")"
+python3 - "$RECEIPT" "$REPORT" "$SHA" "$SIZE" "$CHAT" "$DATE_IST" "$response" <<'PY'
+import datetime
+import json
+import os
+import sys
+
+receipt_path, report_path, sha256, size, target, date, raw = sys.argv[1:]
+try:
+    response = json.loads(raw)
+except json.JSONDecodeError:
+    raise SystemExit(1)
+message_id = response.get("messageId")
+if response.get("success") is not True or not message_id:
+    raise SystemExit(1)
+data = {
+    "date": date,
+    "file": os.path.abspath(report_path),
+    "messageId": str(message_id),
+    "platform": "blinkit",
+    "sent_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+    "sha256": sha256,
+    "size": int(size),
+    "target": target,
+}
+tmp = receipt_path + ".tmp"
+with open(tmp, "w", encoding="utf-8") as handle:
+    json.dump(data, handle, indent=2, sort_keys=True)
+    handle.write("\n")
+os.replace(tmp, receipt_path)
+PY
 printf '%s %s %s\n' "$(TZ=Asia/Kolkata date '+%F %T %Z')" "$CHAT" "$(basename "$REPORT")" > "$MARKER"
-log "sent and marked: $MARKER"
+log "sent and receipt recorded: $RECEIPT"
