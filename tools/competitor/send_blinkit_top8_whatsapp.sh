@@ -24,7 +24,7 @@ flock -n 9 || { log "another sender holds the lock"; exit 0; }
 [ -s "$AUDIT" ] || { log "quality audit is missing: $AUDIT"; exit 1; }
 
 SUMMARY="$({ python3 - "$AUDIT" "$REPORT" "$DATE_IST" <<'PY'
-import json, sys
+import hashlib, json, sys
 from openpyxl import load_workbook
 
 audit_path, report_path, date = sys.argv[1:]
@@ -40,6 +40,18 @@ required = {
 }
 if not all(required.values()):
     raise SystemExit(f"quality audit failed: {required}")
+brands = (summary.get("scope") or {}).get("competitors")
+if not isinstance(brands, list) or not brands:
+    raise SystemExit("quality audit is missing the reviewed competitor brand set")
+normalized_brands = sorted({" ".join(str(brand).split()).casefold() for brand in brands if str(brand).strip()})
+if len(normalized_brands) != len(brands):
+    raise SystemExit("quality audit competitor brand set is blank or duplicated")
+brand_set_sha256 = hashlib.sha256(
+    json.dumps(normalized_brands, separators=(",", ":"), ensure_ascii=True).encode("ascii")
+).hexdigest()
+bound_brand_hash = audit.get("brand_set_sha256") or (summary.get("scope") or {}).get("brand_set_sha256")
+if bound_brand_hash and bound_brand_hash != brand_set_sha256:
+    raise SystemExit("quality audit competitor brand-set hash mismatch")
 wb = load_workbook(report_path, read_only=True, data_only=False)
 expected = ["Summary", "City-Pin-SKU Prices", "Run Scope", "Anchor Watch", "Master Data"]
 if wb.sheetnames != expected or wb["Run Scope"].max_row != 82:
@@ -47,7 +59,7 @@ if wb.sheetnames != expected or wb["Run Scope"].max_row != 82:
 wb.close()
 print(
     f"25 cities × 3 pincodes · 75/75 authenticated · "
-    f"{summary.get('total_rows')} datapoints · 8 competitors"
+    f"{summary.get('total_rows')} datapoints · {len(normalized_brands)} competitors"
 )
 PY
 } 2>&1)" || {
