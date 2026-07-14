@@ -39,7 +39,9 @@ if ! python3 tools/cron/direct_report_is_accepted.py --file "$MAIN" --date "$DAT
   exit 0
 fi
 
-if ! BLINKIT_MONITOR_DRYRUN=1 \
+if python3 tools/cron/direct_report_is_accepted.py --file "$MAIN" --date "$DATE_IST" --mode source; then
+  echo "Blinkit direct promotion receipt is the bound quality authority"
+elif ! BLINKIT_MONITOR_DRYRUN=1 \
      BLINKIT_MONITOR_EXIT_CODE=1 \
      BLINKIT_MONITOR_DATE="$DATE_IST" \
      BLINKIT_MONITOR_REPORT="$MAIN" \

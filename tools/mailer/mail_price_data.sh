@@ -172,7 +172,22 @@ BLINKIT_REPORT="output/Jivo-Blinkit-Live-Report-$D.xlsx"
 BLINKIT_HELD=0
 BLINKIT_READY=0
 if [ -f "$BLINKIT_REPORT" ]; then
-  if ! BLINKIT_MONITOR_DRYRUN=1 \
+  if python3 tools/cron/direct_report_is_accepted.py --file "$BLINKIT_REPORT" --date "$D" --mode source; then
+    if python3 tools/cron/direct_report_is_accepted.py --file "$BLINKIT_REPORT" --date "$D"; then
+      echo "Blinkit direct promotion receipt is the bound quality authority"
+      BLINKIT_READY=1
+    else
+      echo "WARN: Blinkit direct source exists without an accepted promotion receipt; holding back $BLINKIT_REPORT"
+      alert "Blinkit report held back: direct source is not accepted"
+      BLINKIT_HELD=1
+      FILTERED=()
+      for f in "${PRESENT[@]}"; do
+        [ "$f" = "$BLINKIT_REPORT" ] && continue
+        FILTERED+=("$f")
+      done
+      PRESENT=("${FILTERED[@]}")
+    fi
+  elif ! BLINKIT_MONITOR_DRYRUN=1 \
        BLINKIT_MONITOR_EXIT_CODE=1 \
        BLINKIT_MONITOR_DATE="$D" \
        BLINKIT_MONITOR_REPORT="$BLINKIT_REPORT" \

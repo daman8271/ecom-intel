@@ -37,7 +37,8 @@
 # Mac Pro/Windows endpoint tasks. The control host monitors final receipts only;
 # legacy zepto_macpro_guard/zepto_team_watch schedules are intentionally absent.
 */5 * * * * cd /opt/ecom-intel && ./tools/cron/consume_direct_reports.sh >> logs/direct-report-consumer.cron.log 2>&1   # validate/promote final Mac-built reports only; 3h prior-day grace
-*/15 5-11 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_quality_monitor.sh poll >> logs/blinkit_quality_monitor.cron.log 2>&1   # blinkit quality monitor through 11:00 deadline
+# Legacy Blinkit quality polling is absent because it reads the stale server
+# result.json. Direct report receipts bind the Mac-merged result and review.
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_not_listed_direct.sh cron >> logs/blinkit-not-listed-wa.log 2>&1   # blinkit not-listed direct WhatsApp retry
 0 9 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_whatsapp_delivery_sweep.sh cron >> logs/blinkit_whatsapp_delivery_sweep.cron.log 2>&1   # blinkit 09:00 WhatsApp delivery sweep

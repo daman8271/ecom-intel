@@ -23,6 +23,7 @@ def main() -> int:
     parser.add_argument("--date", required=True)
     parser.add_argument("--inbox", default="shards/mac-direct-ready")
     parser.add_argument("--receipts", default="logs/direct-report-receipts")
+    parser.add_argument("--mode", choices=("gate", "source"), default="gate")
     args = parser.parse_args()
 
     report = Path(args.file).resolve()
@@ -41,6 +42,8 @@ def main() -> int:
         except (OSError, ValueError):
             direct_source_exists = True
             break
+    if args.mode == "source":
+        return 0 if direct_source_exists else 1
     if not direct_source_exists:
         return 0
     if not report.is_file():

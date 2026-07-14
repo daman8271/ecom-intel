@@ -54,7 +54,11 @@ if ! python3 tools/cron/direct_report_is_accepted.py --file "$MAIN" --date "$DAT
   exit 0
 fi
 
-if ! BLINKIT_MONITOR_DRYRUN=1 \
+DIRECT_SOURCE=0
+if python3 tools/cron/direct_report_is_accepted.py --file "$MAIN" --date "$DATE_IST" --mode source; then
+  DIRECT_SOURCE=1
+  echo "Blinkit direct promotion receipt is the bound quality authority"
+elif ! BLINKIT_MONITOR_DRYRUN=1 \
      BLINKIT_MONITOR_EXIT_CODE=1 \
      BLINKIT_MONITOR_DATE="$DATE_IST" \
      BLINKIT_MONITOR_REPORT="$MAIN" \
@@ -94,8 +98,10 @@ send_json() {
   curl -s --max-time "$1" -X POST "$2" -H 'Content-Type: application/json' -d "$3"
 }
 
-SUMMARY_LINE="$(
-  python3 - "$ROOT/platforms/blinkit/result.json" <<'PY' 2>/dev/null || true
+SUMMARY_LINE=""
+if [ "$DIRECT_SOURCE" -eq 0 ]; then
+  SUMMARY_LINE="$(
+    python3 - "$ROOT/platforms/blinkit/result.json" <<'PY' 2>/dev/null || true
 import json, sys
 try:
     s = json.load(open(sys.argv[1], encoding="utf-8")).get("summary") or {}
@@ -107,7 +113,8 @@ print(
     f"{s.get('pdp_price_probe_checked','?')} PDP price checks"
 )
 PY
-)"
+  )"
+fi
 
 ensure_gateway || true
 SUBJ="Blinkit corrected report — $DATE_IST"
