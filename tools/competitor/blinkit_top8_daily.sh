@@ -21,7 +21,7 @@ LOG_FILE="$ROOT/logs/blinkit-top8-${DATE_IST}.log"
 MAC_BASE="/Users/danny./VPS-Migration"
 MAC_PROJECT="$MAC_BASE/imported/ecom-intel"
 VPS_REMOTE="root@187.127.129.132"
-BRANDS="Jivo,Sano,Fortune,Saffola,Borges,Tata,Del Monte,Figaro,Sundrop,Gulab"
+BRANDS="Jivo,Sano,Fortune,Saffola,Borges,Tata,Del Monte,Figaro,Sundrop,Gulab,Hudson,Oreal,Oriel"
 mkdir -p "$ROOT/logs" "$ROOT/shards/runs"
 
 log() {
@@ -229,7 +229,7 @@ data = {
     "run_id": run_id,
     "date": date,
     "selection_source": "platforms/blinkit/result.json + tools/competitor/blinkit_top8_pincodes.json",
-    "competitors": ["Fortune", "Saffola", "Borges", "Tata", "Del Monte", "Figaro", "Sundrop", "Gulab"],
+    "competitors": ["Fortune", "Saffola", "Borges", "Tata", "Del Monte", "Figaro", "Sundrop", "Gulab", "Hudson", "Oreal"],
     "workers": [
         {"id": "windows", "label": "Windows", "display_name": "Windows laptop", "concurrency": int(concurrency), "pincodes_file": "windows.pincodes.json", "progress_file": "windows.progress.json", "capture_file": "windows.capture.json"},
         {"id": "macpro", "label": "Mac Pro", "display_name": "Mac Pro", "concurrency": int(concurrency), "pincodes_file": "mac.pincodes.json", "progress_file": "mac.progress.json", "capture_file": "mac.capture.json"},

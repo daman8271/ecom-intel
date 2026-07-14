@@ -126,7 +126,7 @@
         "grades_ok": ["cold_pressed"],
         "pack_ml": 1000,
         "pack_tol": 0.15,
-        "brands_allowed": ["Borges", "bb Royal"],
+        "brands_allowed": ["Borges", "bb Royal", "Hudson", "Oreal"],
         "exclude_name": ["sesame", "gingelly", "til", "ellu", "mustard", "sarso", "sarson", "sasive", "sunflower", "suryakanthi", "surajmukhi", "groundnut", "peanut", "kadale", "soya", "soyabean", "rice bran", "ricebran", "akki", "olive", "blend", "multi-source", "cooking oil", "virgin"],
         "allow_no_match": true
       }
@@ -142,7 +142,7 @@
         "grades_ok": ["cold_pressed"],
         "pack_ml": 5000,
         "pack_tol": 0.15,
-        "brands_allowed": ["Borges", "bb Royal"],
+        "brands_allowed": ["Borges", "bb Royal", "Hudson", "Oreal"],
         "exclude_name": ["sesame", "gingelly", "til", "ellu", "mustard", "sarso", "sarson", "sasive", "sunflower", "suryakanthi", "surajmukhi", "groundnut", "peanut", "kadale", "soya", "soyabean", "rice bran", "ricebran", "akki", "olive", "blend", "multi-source", "cooking oil", "virgin"],
         "allow_no_match": true
       }

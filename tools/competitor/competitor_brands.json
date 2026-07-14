@@ -9,6 +9,8 @@
     {"brand": "Oleev", "categories": ["olive", "soyabean"], "aliases": ["oleev"]},
     {"brand": "Figaro", "categories": ["olive"], "aliases": ["figaro"]},
     {"brand": "Borges", "categories": ["olive", "canola"], "aliases": ["borges"]},
+    {"brand": "Hudson", "categories": ["canola"], "aliases": ["hudson"]},
+    {"brand": "Oreal", "categories": ["canola"], "aliases": ["oreal", "oriel"]},
     {"brand": "Del Monte", "categories": ["olive"], "aliases": ["del monte", "delmonte"]},
     {"brand": "Leonardo", "categories": ["olive"], "aliases": ["leonardo"]},
     {"brand": "DiSano", "categories": ["olive"], "aliases": ["disano", "di sano"]},
@@ -37,12 +39,12 @@
     "rice_bran": ["Fortune", "Saffola", "Ricela"],
     "groundnut": ["Dhara", "Fortune", "Gold Winner", "Tata", "Gulab"],
     "sesame": ["Idhayam", "Tata", "Gold Winner"],
-    "canola": ["Fortune", "bb Royal", "Borges"]
+    "canola": ["Fortune", "bb Royal", "Borges", "Hudson", "Oreal"]
   },
   "_excluded_v1": {
     "_note": "ghee + coconut are out of scope for V1 (q-commerce-thin); listed here for reference only, NOT part of the active whitelist or regex",
     "ghee": ["Amul", "Patanjali", "Gowardhan", "Aashirvaad", "Mother Dairy"],
     "coconut": ["Parachute", "KLF Nirmal", "Coco Soul", "Maxcare"]
   },
-  "whitelist_regex": "(jivo|sano|fortune|saffola|dhara|oleev|figaro|borges|del ?monte|gold ?winner|sunpure|freedom|gemini|sundrop|nature ?fresh|tata|patanjali|emami|leonardo|disano|ricela|idhayam|gulab|natureland|p ?mark|engine|bb ?royal|rafael ?salgado)"
+  "whitelist_regex": "(jivo|sano|fortune|saffola|dhara|oleev|figaro|borges|hudson|oreal|oriel|del ?monte|gold ?winner|sunpure|freedom|gemini|sundrop|nature ?fresh|tata|patanjali|emami|leonardo|disano|ricela|idhayam|gulab|natureland|p ?mark|engine|bb ?royal|rafael ?salgado)"
 }

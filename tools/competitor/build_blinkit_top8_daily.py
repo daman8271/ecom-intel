@@ -30,6 +30,8 @@ TARGET_BRANDS = [
     "Figaro",
     "Sundrop",
     "Gulab",
+    "Hudson",
+    "Oreal",
 ]
 ALLOWED_BRANDS = {brand.casefold() for brand in TARGET_BRANDS} | {"jivo", "sano"}
 EXPECTED_SHEETS = [
@@ -48,7 +50,10 @@ CITY_PRICE_BRAND_ORDER = [
     "Saffola",
     "Sundrop",
     "Gulab",
+    "Hudson",
+    "Oreal",
 ]
+BRAND_ALIASES = {"oriel": "oreal"}
 
 
 def read_json(path: Path) -> Any:
@@ -56,7 +61,8 @@ def read_json(path: Path) -> Any:
 
 
 def norm_brand(value: Any) -> str:
-    return " ".join(str(value or "").split()).casefold()
+    normalized = " ".join(str(value or "").split()).casefold()
+    return BRAND_ALIASES.get(normalized, normalized)
 
 
 def pin(value: Any) -> str:
@@ -260,7 +266,7 @@ def add_scope_sheet(
     )
     sheet["A2"].font = Font(italic=True, color="555555")
     sheet.merge_cells("A2:H2")
-    sheet["A4"] = "Top 8 competitors"
+    sheet["A4"] = f"Tracked competitors ({len(TARGET_BRANDS)})"
     sheet["B4"] = ", ".join(TARGET_BRANDS)
     sheet.merge_cells("B4:H4")
     sheet["A5"] = "Devices"
