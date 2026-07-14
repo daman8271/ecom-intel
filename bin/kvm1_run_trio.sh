@@ -37,26 +37,6 @@ tg(){ ( set +e
     --data-urlencode "chat_id=${CH}" \
     --data-urlencode "text=$1" >/dev/null ) || true; }
 
-# Blinkit has priority on this box. Its fallback shard may still be running when
-# the 07:30 Flipkart launch fires; do not contend for Playwright.
-blinkit_active(){
-  pgrep -f 'run_platform_shard.sh blinkit' >/dev/null 2>&1 && return 0
-  local cwd
-  for p in /proc/[0-9]*/cwd; do
-    cwd="$(readlink "$p" 2>/dev/null || true)"
-    case "$cwd" in
-      */platforms/blinkit|*/work/blinkit) return 0 ;;
-    esac
-  done
-  return 1
-}
-
-if [ "${TRIO_ALLOW_DURING_BLINKIT:-0}" != "1" ] && blinkit_active; then
-  LOG "Blinkit fallback shard active on KVM1 — deferring Flipkart run"
-  tg "[WARN] KVM1 Flipkart run deferred on $DATE: Blinkit fallback shard is active and has priority. VPS watchdog will retry/rescue Flipkart later."
-  exit 0
-fi
-
 # ---- single-flight: one trio at a time (backup cron + VPS trigger overlap) ---
 exec 9>"$ROOT/logs/.trio.lock"
 if ! flock -n 9; then LOG "another trio run holds logs/.trio.lock — exit"; exit 0; fi
@@ -70,9 +50,9 @@ fi
 
 PLATFORMS="${TRIO_PLATFORMS:-flipkart}"
 for P in $PLATFORMS; do
-  if [ "$P" = "zepto" ]; then
-    LOG "REFUSING Zepto on KVM1: Zepto is Mac Pro primary per 2026-07-09 owner instruction"
-    tg "[WARN] KVM1 refused Zepto on $DATE: Zepto is Mac Pro primary now."
+  if [ "$P" != "flipkart" ]; then
+    LOG "REFUSING $P on KVM1: this runner is hard-limited to Flipkart"
+    tg "[WARN] KVM1 refused $P on $DATE: Blinkit/Zepto production is direct Mac Pro + Windows only."
     exit 2
   fi
 done
@@ -84,9 +64,7 @@ find "$ROOT/runs" -maxdepth 1 -type f -mtime +10 -delete 2>/dev/null || true
 find "$ROOT/logs" -maxdepth 1 -type f \( -name "*.log" -o -name "trio-*" \) -mtime +10 -delete 2>/dev/null || true
 
 scrape_timeout(){ case "$1" in
-  flipkart-minutes) echo 1500 ;;   # ~2m normal; generous for the browser-fallback path
   flipkart)         echo 2700 ;;   # ~25m normal
-  zepto)            echo "${ZEPTO_TRIO_TIMEOUT_SECS:-7200}" ;;   # checkpointed; 429-heavy days need >75m
   *)                echo 3600 ;; esac; }
 
 push_and_ingest(){ # $1 platform  $2 result-file  -> 0 on ingest triggered
