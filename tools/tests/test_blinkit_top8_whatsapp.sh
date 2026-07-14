@@ -8,21 +8,23 @@ trap 'rm -rf "$TMP"' EXIT
 
 DATE=2099-01-02
 REPORT="$TMP/Competitor-Price-Watch-Blinkit-${DATE}.xlsx"
-AUDIT="$TMP/audit.json"
+AUDIT="$TMP/blinkit-top8-${DATE}.audit.json"
+CAPTURE="$TMP/blinkit_competitor_${DATE}.json"
 RECEIPT="$TMP/receipt.json"
 MARKER="$TMP/sent.marker"
 LOCK="$TMP/sender.lock"
 CALLS="$TMP/curl.calls"
+PROMOTION_ROOT="$TMP/promotion"
 MOCK_BIN="$TMP/bin"
-mkdir -p "$MOCK_BIN"
+mkdir -p "$MOCK_BIN" "$PROMOTION_ROOT/$DATE"
 
-python3 - "$REPORT" "$AUDIT" "$DATE" <<'PY'
+python3 - "$REPORT" "$AUDIT" "$CAPTURE" "$DATE" <<'PY'
 import json
 import sys
 
 from openpyxl import Workbook
 
-report, audit, date = sys.argv[1:]
+report, audit, capture, date = sys.argv[1:]
 workbook = Workbook()
 summary = workbook.active
 summary.title = "Summary"
@@ -47,6 +49,24 @@ with open(audit, "w", encoding="utf-8") as handle:
         },
         handle,
     )
+with open(capture, "w", encoding="utf-8") as handle:
+    json.dump({"summary": {"platform": "blinkit", "date_ist": date}}, handle)
+PY
+
+python3 - "$REPORT" "$CAPTURE" "$AUDIT" "$PROMOTION_ROOT/$DATE/20990102-000000-blinkit-competitor-direct-a01.json" "$DATE" <<'PY'
+import hashlib, json, os, sys
+report, capture, audit, receipt, date = sys.argv[1:]
+def artifact(kind, path):
+    data = open(path, "rb").read()
+    return {"kind": kind, "destination": os.path.abspath(path),
+            "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+json.dump({
+    "schema": "jivo-direct-competitor-promotion-receipt-v1",
+    "status": "accepted", "platform": "blinkit", "date_ist": date,
+    "workflow_kind": "blinkit-top8", "run_id": "20990102-000000-blinkit-competitor-direct-a01",
+    "artifacts": [artifact("workbook", report), artifact("merged_capture", capture),
+                  artifact("delivery_audit", audit)],
+}, open(receipt, "w", encoding="utf-8"))
 PY
 
 cat > "$MOCK_BIN/curl" <<'SH'
@@ -68,6 +88,7 @@ run_sender() {
     BLINKIT_TOP8_WA_RECEIPT="$RECEIPT" \
     BLINKIT_TOP8_SENT_MARKER="$MARKER" \
     BLINKIT_TOP8_WA_LOCK="$LOCK" \
+    DIRECT_COMPETITOR_PROMOTION_ROOT="$PROMOTION_ROOT" \
     BLINKIT_TOP8_TEST_CALLS="$CALLS" \
     "$SENDER" test
 }
@@ -121,5 +142,14 @@ with open(path, "w", encoding="utf-8") as handle:
 PY
 run_sender
 [ "$(wc -l < "$CALLS")" -gt "$FIRST_CALLS" ]
+
+# Even a valid-looking workbook/audit cannot send without its accepted promotion.
+rm -f "$PROMOTION_ROOT/$DATE"/*.json
+CALLS_BEFORE="$(wc -l < "$CALLS")"
+if BLINKIT_TOP8_WA_TEST=1 run_sender; then
+  echo "unaccepted Blinkit workbook unexpectedly passed the send gate" >&2
+  exit 1
+fi
+[ "$(wc -l < "$CALLS")" -eq "$CALLS_BEFORE" ]
 
 printf 'blinkit top8 WhatsApp receipt tests passed\n'

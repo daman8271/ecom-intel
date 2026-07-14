@@ -3,6 +3,7 @@
 set -uo pipefail
 
 ROOT="${COMPETITOR_ROOT:-/opt/ecom-intel}"
+CODE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT" || exit 1
 PLATFORM="${1:?usage: send_platform_whatsapp.sh <platform>}"
 DATE_IST="${COMPETITOR_SEND_DATE:-$(TZ=Asia/Kolkata date +%F)}"
@@ -22,6 +23,7 @@ MARKER="${COMPETITOR_SENT_MARKER:-$ROOT/logs/competitor-${PLATFORM}-wa-${DATE_IS
 RECEIPT_DIR="$ROOT/logs/delivery-receipts/$DATE_IST"
 RECEIPT="${COMPETITOR_WA_RECEIPT:-$RECEIPT_DIR/$(basename "$REPORT").json}"
 LOCK="${COMPETITOR_WA_LOCK:-$ROOT/logs/.competitor-${PLATFORM}-wa.lock}"
+PROMOTION_ROOT="${DIRECT_COMPETITOR_PROMOTION_ROOT:-$ROOT/logs/direct-competitor-report-receipts}"
 
 log() {
   printf '[%s] competitor_wa(%s): %s\n' "$(TZ=Asia/Kolkata date '+%F %T %Z')" "$PLATFORM" "$*"
@@ -31,6 +33,11 @@ exec 9>"$LOCK"
 flock -n 9 || { log "another sender holds the lock"; exit 0; }
 [ -s "$REPORT" ] || { log "workbook missing: $REPORT"; exit 1; }
 [ -s "$CAPTURE" ] || { log "capture missing: $CAPTURE"; exit 1; }
+if [ "$PLATFORM" = "zepto" ]; then
+  python3 "$CODE_ROOT/tools/cron/direct_competitor_is_accepted.py" \
+    --file "$REPORT" --date "$DATE_IST" --platform zepto --receipts "$PROMOTION_ROOT" \
+    || { log "workbook has no exact accepted direct-competitor promotion"; exit 1; }
+fi
 
 SUMMARY="$(python3 - "$CAPTURE" "$REPORT" "$PLATFORM" "$DATE_IST" <<'PY'
 import json, sys

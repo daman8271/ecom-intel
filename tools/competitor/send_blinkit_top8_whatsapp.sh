@@ -3,6 +3,7 @@
 set -uo pipefail
 
 ROOT=/opt/ecom-intel
+CODE_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 cd "$ROOT" || exit 1
 DATE_IST="${BLINKIT_TOP8_DATE:-$(TZ=Asia/Kolkata date +%F)}"
 PASS="${1:-direct}"
@@ -13,6 +14,7 @@ RECEIPT_DIR="$ROOT/logs/delivery-receipts/$DATE_IST"
 RECEIPT="${BLINKIT_TOP8_WA_RECEIPT:-$RECEIPT_DIR/$(basename "$REPORT").json}"
 LOCK="${BLINKIT_TOP8_WA_LOCK:-$ROOT/logs/.blinkit-top8-wa.lock}"
 CHAT="${BLINKIT_TOP8_WA_CHAT:-120363047864912511@g.us}"
+PROMOTION_ROOT="${DIRECT_COMPETITOR_PROMOTION_ROOT:-$ROOT/logs/direct-competitor-report-receipts}"
 GW_HEALTH=http://127.0.0.1:3001/health
 
 log() {
@@ -23,6 +25,9 @@ exec 9>"$LOCK"
 flock -n 9 || { log "another sender holds the lock"; exit 0; }
 [ -s "$REPORT" ] || { log "waiting for workbook: $REPORT"; exit 1; }
 [ -s "$AUDIT" ] || { log "quality audit is missing: $AUDIT"; exit 1; }
+python3 "$CODE_ROOT/tools/cron/direct_competitor_is_accepted.py" \
+  --file "$REPORT" --date "$DATE_IST" --platform blinkit --receipts "$PROMOTION_ROOT" \
+  || { log "workbook has no exact accepted direct-competitor promotion"; exit 1; }
 
 SUMMARY="$({ python3 - "$AUDIT" "$REPORT" "$DATE_IST" <<'PY'
 import hashlib, json, sys

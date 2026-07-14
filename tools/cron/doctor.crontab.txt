@@ -37,6 +37,7 @@
 # Mac Pro/Windows endpoint tasks. The control host monitors final receipts only;
 # legacy zepto_macpro_guard/zepto_team_watch schedules are intentionally absent.
 */5 * * * * cd /opt/ecom-intel && ./tools/cron/consume_direct_reports.sh >> logs/direct-report-consumer.cron.log 2>&1   # validate/promote final Mac-built reports only; 3h prior-day grace
+*/5 * * * * cd /opt/ecom-intel && ./tools/cron/consume_direct_competitor_reports.sh >> logs/direct-competitor-consumer.cron.log 2>&1   # final Mac-reviewed competitor packages only; never scrape/merge
 # Legacy Blinkit quality polling is absent because it reads the stale server
 # result.json. Direct report receipts bind the Mac-merged result and review.
 */15 6-16 * * * cd /opt/ecom-intel && ./tools/whatsapp/send_blinkit_main_direct.sh cron >> logs/blinkit-main-wa.log 2>&1   # blinkit main direct WhatsApp retry

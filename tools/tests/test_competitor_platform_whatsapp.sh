@@ -10,7 +10,8 @@ DATE=2099-01-02
 CHAT=120363047864912511@g.us
 MOCK_BIN="$TMP/bin"
 CALLS="$TMP/curl.calls"
-mkdir -p "$MOCK_BIN" "$TMP/logs"
+PROMOTION_ROOT="$TMP/promotion"
+mkdir -p "$MOCK_BIN" "$TMP/logs" "$PROMOTION_ROOT/$DATE"
 
 make_fixture() {
   local platform="$1"
@@ -49,6 +50,24 @@ PY
 make_fixture zepto Zepto
 make_fixture amazon-now Amazon-Now
 make_fixture amazon-fresh Amazon-Fresh
+ZEPTO_AUDIT="$TMP/zepto-competitor-${DATE}.audit.json"
+printf '{"status":"OK"}\n' > "$ZEPTO_AUDIT"
+
+python3 - "$TMP/Competitor-Price-Watch-Zepto-${DATE}.xlsx" "$TMP/zepto.json" "$ZEPTO_AUDIT" "$PROMOTION_ROOT/$DATE/20990102-000000-zepto-competitor-direct-a01.json" "$DATE" <<'PY'
+import hashlib, json, os, sys
+report, capture, audit, receipt, date = sys.argv[1:]
+def artifact(kind, path):
+    data = open(path, "rb").read()
+    return {"kind": kind, "destination": os.path.abspath(path),
+            "bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+json.dump({
+    "schema": "jivo-direct-competitor-promotion-receipt-v1",
+    "status": "accepted", "platform": "zepto", "date_ist": date,
+    "workflow_kind": "zepto-competitor", "run_id": "20990102-000000-zepto-competitor-direct-a01",
+    "artifacts": [artifact("workbook", report), artifact("merged_capture", capture),
+                  artifact("delivery_audit", audit)],
+}, open(receipt, "w", encoding="utf-8"))
+PY
 
 cat > "$MOCK_BIN/curl" <<'SH'
 #!/usr/bin/env bash
@@ -74,6 +93,7 @@ run_sender() {
     COMPETITOR_WA_RECEIPT="$TMP/${platform}.receipt.json" \
     COMPETITOR_SENT_MARKER="$TMP/${platform}.sent" \
     COMPETITOR_WA_LOCK="$TMP/${platform}.lock" \
+    DIRECT_COMPETITOR_PROMOTION_ROOT="$PROMOTION_ROOT" \
     COMPETITOR_TEST_CALLS="$CALLS" \
     "$@" "$SENDER" "$platform"
 }
@@ -149,5 +169,14 @@ PY
   OUTPUT="$(run_sender zepto Zepto COMPETITOR_WA_TEST=1)"
   grep -q 'TEST send:' <<<"$OUTPUT"
 done
+
+# No Zepto workbook can send unless the separate direct promotion gate accepted it.
+rm -f "$PROMOTION_ROOT/$DATE"/*.json
+CALLS_BEFORE="$(wc -l < "$CALLS")"
+if run_sender zepto Zepto COMPETITOR_WA_TEST=1; then
+  echo "unaccepted Zepto workbook unexpectedly passed the send gate" >&2
+  exit 1
+fi
+[ "$(wc -l < "$CALLS")" -eq "$CALLS_BEFORE" ]
 
 printf 'competitor platform WhatsApp receipt tests passed\n'
