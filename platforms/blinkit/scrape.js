@@ -111,6 +111,15 @@ const MAX_BROWSER_RESTARTS = parseInt(process.env.BLINKIT_BROWSER_RESTARTS || '2
 // Body signatures of a block page. Deliberately specific (NOT bare "403"/"429",
 // which could appear in legitimate page text) — HTTP status carries those.
 const BLOCK_RE = /access denied|akamai|reference #\s*\d|too many requests|rate[\s-]?limit|are you a human|captcha|forbidden/i;
+// Transient navigation/network errors (NOT blocks, NOT browser-closed): the datacenter
+// VPS occasionally flaps its network mid-goto (ERR_NETWORK_CHANGED and friends), which
+// throws on the FIRST page.goto — before the auth probe even runs — so the pincode is
+// recorded resolved=false / auth_accepted=0 through no fault of the (valid) session. Those
+// pins then drop the whole-shard auth_verified flag and get the drop refused. Retry them a
+// bounded number of times so the auth probe actually gets a chance to run. Residential Mac
+// runs virtually never hit this, so this is additive/no-op there.
+const NET_RETRY_RE = /ERR_NETWORK_CHANGED|ERR_NETWORK_IO_SUSPENDED|ERR_INTERNET_DISCONNECTED|ERR_NAME_NOT_RESOLVED|ERR_CONNECTION_(RESET|CLOSED|ABORTED|REFUSED|TIMED_OUT)|ERR_ADDRESS_UNREACHABLE|ERR_TIMED_OUT|ERR_EMPTY_RESPONSE|ERR_SOCKET_NOT_CONNECTED|net::ERR_/i;
+const MAX_NET_RETRIES = parseInt(process.env.BLINKIT_NET_RETRIES || '3', 10);
 
 async function backoff(attempt) {
   const ms = Math.min(60000, 2000 * Math.pow(2, attempt)) + Math.floor(Math.random() * 1000);
@@ -850,6 +859,7 @@ async function scrapeOne(browser, rec) {
   let resolved = false;
   let blocked = null;
   let authAccepted = false;
+  let netError = false;
   let ctx = null;
   let page = null;
   try {
@@ -1357,12 +1367,18 @@ async function scrapeOne(browser, rec) {
     const msg = String((e && e.message) || e || 'unknown error');
     if (isBrowserClosedError(e)) blocked = 'browser-closed';
     else if (BLOCK_RE.test(msg)) blocked = 'block-error';
-    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${msg}${blocked ? ` (${blocked})` : ''}\n`);
+    // A transient network flap (not a block) that produced no data and never
+    // reached the auth probe: mark it retryable so the caller re-attempts the
+    // pincode instead of banking a spurious resolved=false / auth_accepted=0.
+    else if (NET_RETRY_RE.test(msg) && rows.length === 0 && !authAccepted) netError = true;
+    process.stderr.write(`[err] ${rec.city} ${rec.pincode}: ${msg}${blocked ? ` (${blocked})` : ''}${netError ? ' (net-retryable)' : ''}\n`);
   } finally {
     try { await ctx.close(); } catch (_) { /* context may already be closed */ }
   }
   process.stderr.write(`[ok] ${rec.city} ${rec.pincode} -> ${rows.length} jivo SKUs (${((Date.now() - t0) / 1000).toFixed(1)}s) store=${store.name || 'n/a'}\n`);
-  return { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, blocked, auth_accepted: authAccepted ? 1 : 0, rows };
+  const out = { ...rec, store_id: store.id || '', store_name: store.name || '', resolved, blocked, auth_accepted: authAccepted ? 1 : 0, rows };
+  if (netError) out.net_error = 1;
+  return out;
 }
 
 async function pool(items, n, fn) {
@@ -1396,6 +1412,7 @@ module.exports = {
   istDateString,
   cardUnavailable,
   applyPdpPriceProbe,
+  NET_RETRY_RE,
 };
 
 // Scrape one pincode with block-aware exponential backoff. A blocked attempt backs
@@ -1422,7 +1439,20 @@ async function scrapeWithBackoff(browserRef, rec) {
       await backoff(Math.min(attempt, 4));
       continue;
     }
-    if (!res.blocked) return res;
+    if (!res.blocked) {
+      // Transient network flap (no block, no data, auth probe never ran): retry a
+      // bounded number of times so the pincode gets a real chance to resolve + verify
+      // auth, instead of banking a spurious auth_accepted=0 that fails the drop. On
+      // give-up, fall through to the honest 0-row record (NOT partial — a single
+      // unreachable pincode must not reject the whole national run).
+      if (res.net_error && attempt < MAX_NET_RETRIES) {
+        process.stderr.write(`[net-retry] ${rec.city} ${rec.pincode} attempt ${attempt + 1}/${MAX_NET_RETRIES}\n`);
+        await backoff(attempt);
+        continue;
+      }
+      if (res.net_error) delete res.net_error;
+      return res;
+    }
     if (attempt >= MAX_BLOCK_RETRIES) {
       process.stderr.write(`[blocked] ${rec.city} ${rec.pincode} still blocked after ${attempt} retr${attempt === 1 ? 'y' : 'ies'} (${res.blocked}); recording 0 rows, run is partial\n`);
       return { ...res, partial_block: true };

@@ -41,7 +41,9 @@ class TestShards(unittest.TestCase):
         per = []
         rows = []
         for pin in manifest["shard_pincodes"]:
-            row = {"pincode": pin, "city": "A", "resolved": True, "rows": []}
+            # Real blinkit scrapeOne always emits auth_accepted per pincode, and the
+            # ingest gate + merge both require it; the fixture must carry it too.
+            row = {"pincode": pin, "city": "A", "resolved": True, "auth_accepted": 1, "rows": []}
             if pin.endswith("1") or pin.endswith("4"):
                 row["rows"] = [{"pincode": pin, "canonical": f"sku-{pin}", "in_stock": 1}]
                 rows.extend(row["rows"])
@@ -110,6 +112,49 @@ class TestShards(unittest.TestCase):
         self.assertEqual(merged["summary"]["wall_s"], 2)
         self.assertEqual(merged["summary"]["shard_wall_s_total"], 3)
         self.assertEqual([p["pincode"] for p in merged["perPin"]], ["100001", "100002", "100003", "100004"])
+
+    def _merge_with_patch(self, patch):
+        """Build a 2-shard blinkit merge, applying ``patch(result, idx)`` to each
+        shard result.json before merging. Returns the merged summary."""
+        pairs = []
+        for idx in (0, 1):
+            shard_dir = self.split(idx)
+            man, res = self.fake_result(shard_dir, idx)
+            with open(res) as f:
+                data = json.load(f)
+            patch(data, idx)
+            with open(res, "w") as f:
+                json.dump(data, f)
+            pairs.append((man, res))
+        out = os.path.join(self.root, "merged.json")
+        flat = []
+        for p in pairs:
+            flat.extend(p)
+        subprocess.check_call(["python3", MERGE, "blinkit", out, *flat])
+        with open(out) as f:
+            return json.load(f)["summary"]
+
+    def test_merge_auth_verified_from_perpin_not_stale_summary_flag(self):
+        # Regression (2026-07-14 VPS rescue): a shard whose perPin are ALL
+        # auth_accepted but whose summary flag stale-reads auth_verified=0 must
+        # still merge to auth_verified=1 — the flag is recomputed from the merged
+        # perPin, not AND-ed from each shard's stale precomputed flag.
+        def stale_flag(data, idx):
+            if idx == 0:
+                data["summary"]["auth_verified"] = 0  # stale/wrong; perPin all accepted
+        summary = self._merge_with_patch(stale_flag)
+        self.assertEqual(summary["auth_verified_pincodes"], 4)
+        self.assertEqual(summary["auth_verified"], 1)
+
+    def test_merge_auth_verified_zero_when_a_pin_unaccepted(self):
+        # Not loosened: one genuinely unaccepted pincode must still hold the merge
+        # at auth_verified=0 (this is exactly the honest 7/14 case).
+        def drop_one(data, idx):
+            if idx == 0:
+                data["perPin"][0]["auth_accepted"] = 0
+        summary = self._merge_with_patch(drop_one)
+        self.assertEqual(summary["auth_verified_pincodes"], 3)
+        self.assertEqual(summary["auth_verified"], 0)
 
 
 if __name__ == "__main__":

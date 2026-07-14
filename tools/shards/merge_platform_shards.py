@@ -57,11 +57,23 @@ def recompute_summary(platform: str, results: list[dict], per_pin: list[dict], a
     if platform == "blinkit":
         summary["auth_session"] = 1 if summaries and all(bool(s.get("auth_session")) for s in summaries) else 0
         summary["auth_required"] = 1 if any(bool(s.get("auth_required")) for s in summaries) else 0
-        summary["auth_verified_pincodes"] = sum(int(s.get("auth_verified_pincodes") or 0) for s in summaries)
+        # Count auth-accepted pincodes from the MERGED (authoritative, possibly
+        # repaired) perPin, exactly like every other count above — not by summing
+        # each shard's precomputed summary field, which can drift from the real
+        # perPin (e.g. after a targeted repair patches perPin but not the summary).
+        summary["auth_verified_pincodes"] = sum(1 for p in per_pin if p.get("auth_accepted"))
+        # Recompute the shard-level auth flag from the merged perPin rather than
+        # AND-ing each shard's precomputed flag. Previously one shard whose perPin
+        # auth was genuinely fine (or repaired) but whose stale summary flag still
+        # read 0 poisoned the whole merge to auth_verified=0. This is NOT a looser
+        # rule: a merge is auth_verified only when EVERY pincode carries
+        # auth_accepted — the same invariant the ingest gate independently enforces
+        # on the merged perPin, and the same recompute the targeted-repair path uses.
         summary["auth_verified"] = (
             1
             if summaries
-            and all(bool(s.get("auth_verified")) for s in summaries)
+            and summary["auth_session"]
+            and per_pin
             and summary["auth_verified_pincodes"] == len(per_pin)
             else 0
         )
