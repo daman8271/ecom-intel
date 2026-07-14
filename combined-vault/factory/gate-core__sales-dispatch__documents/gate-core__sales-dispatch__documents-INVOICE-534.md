@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR55AZ4229"
+title: "DL01MA3485"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR55AZ4229
+# DL01MA3485
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35694
-- **doc_num:** 606260208
+- **doc_entry:** 35710
+- **doc_num:** 706260943
 - **doc_date:** 2026-06-30
-- **doc_total:** 385590.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000354
-- **card_name:** CHIRAG ENTERPRISES MUMBAI
-- **ship_to_code:** CHIRAG ENTERPRISES MUMBAI BHIWANDI
-- **ship_to_address:** ANJUR MANKOLI ROAD DAPODA ROADBHIWANDI-421302IN
-- **place_of_supply:** MH
-- **bp_gstin:** 27AAAPH2173D1Z8
+- **doc_total:** 319706.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD BENGALURU
+- **ship_to_address:** BLOCK NO 4 DEBASPET 5TH PHASE KIADB B900  S.NO 113 114/5 114/6 114/7 114/9BENGALURU-562111IN
+- **place_of_supply:** KT
+- **bp_gstin:** 29AAECR0564M2ZY
 - **eway_bill:** 
-- **vehicle_no:** HR55AZ4229
-- **transporter_name:** Bombey Srinagar
-- **bilty_no:** 1126
-- **bilty_date:** 2026-07-08
+- **vehicle_no:** DL01MA3485
+- **transporter_name:** Pick & Ship
+- **bilty_no:** 3192
+- **bilty_date:** 2026-07-13
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000018 - COLD PRESS 5 LTR + COLD PRESS 1 LTR 3 PCS SHRINKED, FG0000393 - COLD PRESS GROUNDNUT 200 MLS 70 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000227 - RICE BRAN 1L 16 PCS, FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS
-- **base_refs:** 1706264699
-- **total_quantity:** 1275.000
-- **total_litres:** 1815.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE
+- **base_refs:** 1706264784
+- **total_quantity:** 1078.000
+- **total_litres:** 1128.000
 - **total_boxes:** 0.000
-- **total_weight:** 1881.889
-- **line_count:** 5
+- **total_weight:** 1109.085
+- **line_count:** 6
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 1086, "sap_invoice_doc_entry": 35694, "sap_invoice_doc_num": "606260208", "invoice_number": "606260208", "eway_bill": "372287779761", "invoice_weight": "1881.889", "invoice_amount": "385590.00", "place_of_supply": "MH", "location": "", "product_variety": "Oil", "total_litres": "1815.000", "effective_month": "2026-06", "budget_delivery_point": "BHIWANDI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 400, "transporter_id": 96, "driver_id": null, "linked_vehicle_entry_id": 1676, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-08T15:33:59.747637Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-07", "priority": "High", "transporter_name": "Bombey Srinagar", "transporter_gstin": "07AAXFB9863D1ZV", "contact_person": "kishan veer singh", "mobile_no": "9350574840", "vehicle_no": "HR55AZ4229", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "1126", "bilty_date": "2026-07-08", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-08_at_8.54.41_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-08 at 8.54.41 PM.jpeg", "freight": "17613.10", "total_freight": "17613.10", "kanta_weight": null, "remarks": "", "created_at": "2026-07-08T11:53:52.858122+05:30", "updated_at": "2026-07-08T21:03:59.762233+05:30"}
+  {"id": 1232, "sap_invoice_doc_entry": 35710, "sap_invoice_doc_num": "706260943", "invoice_number": "706260943", "eway_bill": "791650935014", "invoice_weight": "1109.085", "invoice_amount": "319706.00", "place_of_supply": "KT", "location": "", "product_variety": "Oil", "total_litres": "1128.000", "effective_month": "2026-06", "budget_delivery_point": "BENGALURU", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 394, "transporter_id": 78, "driver_id": null, "linked_vehicle_entry_id": 1893, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-13T12:09:47.907132Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-13", "priority": "", "transporter_name": "Air Trans", "transporter_gstin": "", "contact_person": "PRITAM", "mobile_no": "9533337151", "vehicle_no": "DL01MA8008", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3192", "bilty_date": "2026-07-13", "bilty_attachment": "/media/sales_dispatch/attachments/707260204_EwaybillPrint_-_nic_dUrJY98.einvoice.web.pdf", "bilty_attachment_name": "707260204 EwaybillPrint - nic.einvoice.web.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-13T13:05:25.659250+05:30", "updated_at": "2026-07-13T17:39:47.930613+05:30"}
   ```

@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Vendor (214)
+title: Vendor (215)
 tags:
   - moc
   - source/factory
 ---
 
-# Vendor — 214 records
+# Vendor — 215 records
 
 From `/po/vendors/`. Up: [[_HOME]]
 
@@ -193,6 +193,7 @@ From `/po/vendors/`. Up: [[_HOME]]
 - [[ven-VENDA000988]] — SHRI VINAYAK PACKAGING MACHINE PRIVATE LIMITED
 - [[ven-VENDA000933]] — SHRIANAND POLY
 - [[ven-ORGV000205]] — SHYAM KUMAR SHUKLA IMPREST JWPL2270
+- [[ven-ORGV000218]] — SIMARPREET SINGH IMPREST JWPL110058
 - [[ven-VENDA000322]] — SINGH TRANSPORT GOODS CARRIER
 - [[ven-VENDA000531]] — SMARTSHIFT LOGISTICS SOLUTIONS PVT LTD
 - [[ven-VENDA000204]] — SONEPAT GOODS CARRIER

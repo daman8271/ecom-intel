@@ -38,16 +38,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-13).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-14).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 529 | 469 | -11.34 | 🟢 BELOW | BAU | 2026-07-13 |
-| [[Platform - amazon\|amazon-fresh]] | 529 | 469 | -11.34 | 🟢 BELOW | BAU | 2026-07-13 |
+| [[Platform - amazon\|amazon]] | 529 | 469 | -11.34 | 🟢 BELOW | BAU | 2026-07-14 |
+| [[Platform - amazon\|amazon-fresh]] | 529 | 469 | -11.34 | 🟢 BELOW | BAU | 2026-07-14 |
 | [[Platform - amazon\|amazon-now]] | 509 | 469 | -7.86 | 🟢 BELOW | SVD | 2026-07-12 |
-| [[Platform - flipkart\|flipkart]] | 529 | 506 | -4.35 | 🟢 BELOW | BAU | 2026-07-13 |
+| [[Platform - flipkart\|flipkart]] | 529 | 518 | -2.08 | 🟢 BELOW | BAU | 2026-07-14 |
 | [[Platform - flipkart\|flipkart-minutes]] | 529 | 937 | 77.13 | 🔴 ABOVE | BAU | 2026-07-13 |
-| [[Platform - zepto\|zepto]] | 529 | 500 | -5.48 | 🟢 BELOW | BAU | 2026-07-13 |
+| [[Platform - zepto\|zepto]] | 529 | 500 | -5.48 | 🟢 BELOW | BAU | 2026-07-14 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -79,7 +79,6 @@ Cross-vault fusion by name / SKU match:
 **`FG0000088`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000088]]
 - **306 boxes:** [[box-116477]] · [[box-116478]] · [[box-116479]] … +303 more (tag `bridge/FG0000088`)
-- **48 boxes:** [[barcode__dispatch__reports__boxes-165255]] · [[barcode__dispatch__reports__boxes-165256]] · [[barcode__dispatch__reports__boxes-165257]] … +45 more (tag `bridge/FG0000088`)
 - **8 pallets:** [[pal-1884]] · [[pal-2396]] · [[pal-2398]] … +5 more (tag `bridge/FG0000088`)
 
 **`FG0000123`** — referenced by factory records:

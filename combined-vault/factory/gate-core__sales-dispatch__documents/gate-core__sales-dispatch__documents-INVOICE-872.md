@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "DL01MA3485"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# DL01MA3485
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35215
-- **doc_num:** 706260634
+- **doc_entry:** 35227
+- **doc_num:** 706260645
 - **doc_date:** 2026-06-23
-- **doc_total:** 328221.00
+- **doc_total:** 10668.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD HMH4 KALYAN MAHARASHTRA
-- **ship_to_address:** BHIWANDIKALYAN-421302IN
-- **place_of_supply:** MH
-- **bp_gstin:** 27AAECR0564M1Z3
+- **card_code:** CUSTA000910
+- **card_name:** FLIPKART  (B2C-MAY-JULY)
+- **ship_to_code:** FLIPKART GOA
+- **ship_to_address:** GOA-403601IN
+- **place_of_supply:** GO
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** DL01MA3485
-- **transporter_name:** Pick & Ship
-- **bilty_no:** 2670
-- **bilty_date:** 2026-06-26
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, FG0000227 - RICE BRAN 1L 16 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN
-- **base_refs:** 1706264629
-- **total_quantity:** 914.000
-- **total_litres:** 1492.000
+- **warehouses:** DL-EC
+- **item_summary:** FG0000310 - EXTRA LIGHT 1 LTR PACK OF 3 SET, SL0000005 - CANOLA 1 LTR, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000009 - CANOLA 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000043 - COLD PRESS GROUNDNUT  1 LTR, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000097 - JIVO GOLD REFINED 5 LTR, FG0000128 - JIVO GOLD 5 LTR 4 PCS, SL0000127 - POMACE 1 LTR PACK OF 3, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS
+- **base_refs:** 1506264631
+- **total_quantity:** 50.000
+- **total_litres:** 80.500
 - **total_boxes:** 0.000
-- **total_weight:** 1534.692
-- **line_count:** 11
+- **total_weight:** 42.491
+- **line_count:** 17
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 624, "sap_invoice_doc_entry": 35215, "sap_invoice_doc_num": "706260634", "invoice_number": "706260634", "eway_bill": "761646152433", "invoice_weight": "1534.693", "invoice_amount": "328221.00", "place_of_supply": "MH", "location": "Prathamesh Complex sonale village , Bhiwandi Maharashtra Kalyan Kalyan 421302", "product_variety": "Oil", "total_litres": "1492.000", "effective_month": "2026-06", "budget_delivery_point": "KALYAN", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 323, "transporter_id": 85, "driver_id": null, "linked_vehicle_entry_id": 1141, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-26T14:49:15.208988Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-26", "priority": "HIGH", "transporter_name": "PICK & SHIP", "transporter_gstin": "09AAQCP4145A1ZF", "contact_person": "shukla", "mobile_no": "9958007610", "vehicle_no": "DL01MA3485", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "NA", "bilty_date": "2026-06-26", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260634_1.pdf", "bilty_attachment_name": "AR - 706260634 (1).pdf", "freight": "0.31", "total_freight": "0.31", "kanta_weight": null, "remarks": "", "created_at": "2026-06-25T19:04:32.155655+05:30", "updated_at": "2026-06-26T20:19:15.219087+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35227, "sap_invoice_doc_num": "706260645", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

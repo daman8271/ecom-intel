@@ -28,9 +28,9 @@ Up: [[flipkart-minutes]] · Day: [[2026-06-05]] · Week: [[2026-W23]] · Month: 
 - **Top discount:** [[jivo-extra-light-olive-oil-can-2l]] — 33.4% off (Ghaziabad)
 
 ## SKUs seen
-- [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — JIVO Cold Press Canola Oil Plastic Bottle (1 L) — ₹255 (32.0% off) · in 1 pincodes
-- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil Can (5 L) — ₹940 (24.8% off) · in 1 pincodes
-- [[jivo-extra-light-olive-oil-can-2l]] — JIVO Extra Light Olive Oil Can (2 L) — ₹1864 (33.4% off) · in 2 pincodes
+- [[jivo-cold-press-canola-oil-plastic-bottle-1l]] — Jivo Cold Press Canola Oil Plastic Bottle 1l — ₹255 (32.0% off) · in 1 pincodes
+- [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] — Jivo Cold Pressed Pure Cooking Mustard Oil Can 5l — ₹940 (24.8% off) · in 1 pincodes
+- [[jivo-extra-light-olive-oil-can-2l]] — Jivo Extra Light Olive Oil Can 2l — ₹1864 (33.4% off) · in 2 pincodes
 
 ## Cities covered
 [[Ghaziabad]] · [[Gurgaon]]

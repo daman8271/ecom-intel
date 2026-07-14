@@ -1,0 +1,105 @@
+---
+type: sku-hub
+canonical_sku: jivo-soybean-oil-soyabean-oil-1l
+display_name: JIVO Soybean Oil Soyabean Oil (1 L)
+platforms:
+  - flipkart-minutes
+first_seen: 2026-07-14
+last_seen: 2026-07-14
+observations: 60
+min_price: 149
+max_price: 166
+latest_price: 166
+tags:
+  - type/sku-hub
+  - platform/flipkart-minutes
+---
+
+# jivo-soybean-oil-soyabean-oil-1l
+
+Up: [[skus-index]]
+
+**JIVO Soybean Oil Soyabean Oil (1 L)**
+
+## Sold on
+- [[flipkart-minutes]] — latest ₹166 (16.0% off)
+
+## Available in cities
+[[Delhi]] · [[Ghaziabad]] · [[Gurugram]] · [[Howrah]] · [[Jaipur]] · [[Jalandhar]] · [[Kolkata]] · [[Ludhiana]]
+
+## Runs that observed this SKU (1)
+[[flipkart-minutes-2026-07-14-0645]]
+
+## Price history (60 observations)
+
+```csv
+run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
+2026-07-14-0645,2026-07-14,flipkart-minutes,Delhi,110032,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Delhi,110069,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Delhi,110076,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Delhi,110093,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Delhi,110095,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Ghaziabad,201011,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Gurugram,122504,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711101,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711102,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711104,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711105,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711107,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711113,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711202,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711203,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Howrah,711301,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jaipur,302001,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jaipur,302018,166,240,30,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jaipur,302040,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jaipur,302044,166,199,16,1
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jaipur,302046,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jalandhar,144022,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jalandhar,144041,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Jalandhar,144805,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700002,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700003,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700005,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700006,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700008,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700014,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700016,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700017,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700030,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700032,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700034,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700037,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700038,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700039,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700040,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700041,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700042,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700043,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700047,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700050,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700053,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700060,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700061,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700067,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700070,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700071,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700072,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700087,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700088,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700092,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700094,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700095,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700099,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Kolkata,700107,149,199,25,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Ludhiana,141010,166,199,16,0
+2026-07-14-0645,2026-07-14,flipkart-minutes,Ludhiana,141011,166,199,16,0
+```
+
+---
+*Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*
+
+
+## Related
+<!-- combined-backbone -->
+[[Platform - flipkart]]

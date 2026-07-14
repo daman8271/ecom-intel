@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soybean-oil-soyabean-oil-pouch-1l
-display_name: JIVO Soybean Oil Soyabean Oil Pouch (1 L)
+display_name: Jivo Soybean Oil Soyabean Oil Pouch 1l
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Soybean Oil Soyabean Oil Pouch (1 L)**
+**Jivo Soybean Oil Soyabean Oil Pouch 1l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹166 (16.0% off)

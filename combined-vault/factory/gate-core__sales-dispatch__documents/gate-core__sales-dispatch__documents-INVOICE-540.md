@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR67E3663"
+title: "DL01LAA0865"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR67E3663
+# DL01LAA0865
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35684
-- **doc_num:** 606260205
+- **doc_entry:** 35703
+- **doc_num:** 706260942
 - **doc_date:** 2026-06-30
-- **doc_total:** 1364650.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000906
-- **card_name:** EVARA ENTERPRISES
-- **ship_to_code:** EVARA ENTERPRISES PUNJAB
-- **ship_to_address:** VILLAGE SARINH  NEAR SINGH MOTORS MALERKOTLA ROADLUDHIANA-141116IN
-- **place_of_supply:** PB
-- **bp_gstin:** 03AALFE9594L1ZR
+- **doc_total:** 145113.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD BHIWANDI
+- **ship_to_address:** ANTARIKSH LOGIPARK DOHALE VILLAGE  H.NO. 1690/5 BLDG: B/2BHIWANDI-421302IN
+- **place_of_supply:** MH
+- **bp_gstin:** 27AAECR0564M1Z3
 - **eway_bill:** 
-- **vehicle_no:** HR67E3663
-- **transporter_name:** Delhi Punjab
-- **bilty_no:** 13072
-- **bilty_date:** 2026-07-07
+- **vehicle_no:** DL01LAA0865
+- **transporter_name:** Pick & Ship
+- **bilty_no:** 3189
+- **bilty_date:** 2026-07-13
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000018 - COLD PRESS 5 LTR + COLD PRESS 1 LTR 3 PCS SHRINKED, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000393 - COLD PRESS GROUNDNUT 200 MLS 70 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS
-- **base_refs:** 1706264764
-- **total_quantity:** 2810.000
-- **total_litres:** 4370.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS
+- **base_refs:** 1706264785
+- **total_quantity:** 700.000
+- **total_litres:** 700.000
 - **total_boxes:** 0.000
-- **total_weight:** 4431.296
-- **line_count:** 4
+- **total_weight:** 682.300
+- **line_count:** 5
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 1044, "sap_invoice_doc_entry": 35684, "sap_invoice_doc_num": "606260205", "invoice_number": "606260205", "eway_bill": "332286608378", "invoice_weight": "4431.296", "invoice_amount": "1364650.00", "place_of_supply": "PB", "location": "", "product_variety": "Oil", "total_litres": "4370.000", "effective_month": "2026-06", "budget_delivery_point": "LUDHIANA", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 314, "transporter_id": 47, "driver_id": null, "linked_vehicle_entry_id": 1574, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-07T09:01:02.255416Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-07", "priority": "", "transporter_name": "Delhi Punjab", "transporter_gstin": "06AANFD7642N1ZV", "contact_person": "vijayb", "mobile_no": "9812004610", "vehicle_no": "HR67E3663", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "13071", "bilty_date": "2026-07-07", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-07_at_2.00.25_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-07 at 2.00.25 PM.jpeg", "freight": "4561.59", "total_freight": "4561.59", "kanta_weight": null, "remarks": "", "created_at": "2026-07-07T09:59:40.571401+05:30", "updated_at": "2026-07-07T14:31:02.268391+05:30"}
+  {"id": 1222, "sap_invoice_doc_entry": 35703, "sap_invoice_doc_num": "706260942", "invoice_number": "", "eway_bill": "781650928871", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "location": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 432, "transporter_id": null, "driver_id": 396, "linked_vehicle_entry_id": 1886, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-13T12:04:07.471840Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-13", "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3189", "bilty_date": "2026-07-13", "bilty_attachment": "/media/sales_dispatch/attachments/706260905_EwaybillPrint_-_nic_0sNaFcF.einvoice.web_1.pdf", "bilty_attachment_name": "706260905 EwaybillPrint - nic.einvoice.web (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-13T11:43:09.619652+05:30", "updated_at": "2026-07-13T17:34:07.482575+05:30"}
   ```

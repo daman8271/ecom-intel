@@ -16,18 +16,18 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35885
-- **doc_num:** 707260127
-- **doc_date:** 2026-07-03
-- **doc_total:** 44085.00
+- **doc_entry:** 35912
+- **doc_num:** 707260135
+- **doc_date:** 2026-07-04
+- **doc_total:** 0.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000827
-- **card_name:** JIVO MART PVT LTD - HR
-- **ship_to_code:** JIVO MART PRIVATE LIMITED GURUGRAM
-- **ship_to_address:** GURGAON-122505IN
+- **card_code:** CUSTA000910
+- **card_name:** FLIPKART  (B2C-MAY-JULY)
+- **ship_to_code:** FLIPKART B2C HARYANA
+- **ship_to_address:** HARYANA-122001IN
 - **place_of_supply:** HR
-- **bp_gstin:** 06AAFCJ4102J1ZU
+- **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
 - **transporter_name:** 
@@ -35,19 +35,19 @@ tags:
 - **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DP-DL
-- **item_summary:** FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
-- **base_refs:** 
-- **total_quantity:** 902.000
-- **total_litres:** 4510.000
+- **warehouses:** DL-EC
+- **item_summary:** SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS
+- **base_refs:** 1506264631
+- **total_quantity:** 32.000
+- **total_litres:** 160.000
 - **total_boxes:** 0.000
-- **total_weight:** 4476.130
-- **line_count:** 1
+- **total_weight:** 78.600
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35885, "sap_invoice_doc_num": "707260127", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 35912, "sap_invoice_doc_num": "707260135", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

@@ -46,12 +46,11 @@ tags:
 - **sap_comments:** 
 - **sap_line_count:** 0
 - **sap_total_quantity:** 0.000
-- **document_reference:** Dispatch 606260182, 706260625, 706260627, 706260628, 706260620
-- **document_notes:** Customers: R K WORLDINFOCOM PVT LTD
-Weight: 7508.594 kg
+- **document_reference:** Dispatch 606260182
+- **document_notes:** Weight: 198.328 kg
 - **pipeline_status:**
   ```json
-  {"stage": "DOCKED", "stage_label": "Docked", "stage_at": "2026-06-27T10:57:46.278943Z", "counts": {"total": 5, "rejected": 0}, "module": "dock", "module_status": "scanning", "module_label": "scanning at dock"}
+  {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-27T14:04:16.287006Z", "counts": {"total": 1, "rejected": 0}, "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}
   ```
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 
@@ -64,7 +63,7 @@ Weight: 7508.594 kg
 - **security_name:** Sachin
 - **remarks:** 
 - **created_at:** 2026-06-27T14:00:39.996323+05:30
-- **updated_at:** 2026-06-27T14:02:46.902256+05:30
+- **updated_at:** 2026-07-13T14:40:52.393804+05:30
 
 ## Related
 - company -> [[comp-2]]

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l
-display_name: JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L)
+display_name: Jivo Cold Pressed Pure Cooking Mustard Oil Plastic Bottle 1l
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cold Pressed Pure Cooking Mustard Oil Plastic Bottle (1 L)**
+**Jivo Cold Pressed Pure Cooking Mustard Oil Plastic Bottle 1l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹178 (30.0% off)

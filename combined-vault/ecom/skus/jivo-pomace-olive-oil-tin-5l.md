@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-tin-5l
-display_name: JIVO Pomace Olive Oil Tin (5 L)
+display_name: Jivo Pomace Olive Oil Tin 5l
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Pomace Olive Oil Tin (5 L)**
+**Jivo Pomace Olive Oil Tin 5l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹2272 (54.0% off)

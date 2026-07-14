@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR69F6098"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR69F6098
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36330
-- **doc_num:** 707260169
-- **doc_date:** 2026-07-09
-- **doc_total:** 485548.00
+- **doc_entry:** 36345
+- **doc_num:** 706261272
+- **doc_date:** 2026-06-30
+- **doc_total:** 25876.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
-- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
-- **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **card_code:** CUSTA000910
+- **card_name:** FLIPKART  (B2C-MAY-JULY)
+- **ship_to_code:** FLIPKART B2C MAHARASHTRA
+- **ship_to_address:** MAHARASHTRA-400101IN
+- **place_of_supply:** MH
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** HR69F6098
-- **transporter_name:** Jivo Vehicle
-- **bilty_no:** NA
-- **bilty_date:** 2026-07-10
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000192 - SOYABEAN OIL 5 LTR 4 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000123 - CANOLA OIL 1 LTR + 1 LTR COMBO 10 SET, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS
-- **base_refs:** 1707264543
-- **total_quantity:** 419.000
-- **total_litres:** 1935.000
+- **warehouses:** DL-EC
+- **item_summary:** SL0000041 - COLD PRESS GROUNDNUT 5 LTR, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS
+- **base_refs:** 1506264732
+- **total_quantity:** 58.000
+- **total_litres:** 290.000
 - **total_boxes:** 0.000
-- **total_weight:** 1968.341
-- **line_count:** 5
+- **total_weight:** 143.911
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 1134, "sap_invoice_doc_entry": 36330, "sap_invoice_doc_num": "707260169", "invoice_number": "707260169", "eway_bill": "731650092618", "invoice_weight": "1968.341", "invoice_amount": "485548.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "1935.000", "effective_month": "2026-07", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 53, "transporter_id": 31, "driver_id": null, "linked_vehicle_entry_id": 1757, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-10T09:21:59.038978Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-04", "priority": "", "transporter_name": "Jivo", "transporter_gstin": "", "contact_person": "Vicky veer ji", "mobile_no": "0000000000", "vehicle_no": "HR69F6098", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "001", "bilty_date": "2026-07-08", "bilty_attachment": "/media/sales_dispatch/attachments/EwaybillPrint_-_707260164_2_RlSyDu8.pdf", "bilty_attachment_name": "EwaybillPrint - 707260164 (2).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "05/07/2026 08:30 AM IST", "created_at": "2026-07-10T10:29:35.463281+05:30", "updated_at": "2026-07-10T14:51:59.053477+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 36345, "sap_invoice_doc_num": "706261272", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

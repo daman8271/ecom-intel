@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR63E6712"
+title: "HR67C4904"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR63E6712
+# HR67C4904
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36421
-- **doc_num:** 707260197
+- **doc_entry:** 36439
+- **doc_num:** 607260146
 - **doc_date:** 2026-07-10
-- **doc_total:** 1239553.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** RK WORLDINFOCOM PVT LTD HARYANA
-- **ship_to_address:** LLP VILLAGE- FARRUKHNAGAR TEHSIL-FARRUKH ESR SOHNA LOGISTICS PARK VILLAGE RAHAKA  BLOCK J2,FARUKHNAGAR LOGISTICS PARKS EMPORIUM INDUSTRIAL PARK INDIA PVT LTDGURUGRAM-122506IN
+- **doc_total:** 1015500.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
+- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
 - **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** HR63E6712
-- **transporter_name:** Amazon Vehicle
-- **bilty_no:** NA
+- **vehicle_no:** HR67C4904
+- **transporter_name:** Mahaveer Transport
+- **bilty_no:** 3678
 - **bilty_date:** 2026-07-11
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000385 - YELLOW MUSTARD OIL 5 LTR TIN 4 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS
-- **base_refs:** 1707264551
-- **total_quantity:** 1335.000
-- **total_litres:** 5551.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
+- **base_refs:** 1707264550
+- **total_quantity:** 6000.000
+- **total_litres:** 6000.000
 - **total_boxes:** 0.000
-- **total_weight:** 5513.456
-- **line_count:** 6
+- **total_weight:** 5922.120
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 1185, "sap_invoice_doc_entry": 36421, "sap_invoice_doc_num": "707260197", "invoice_number": "707260197", "eway_bill": "761650392108", "invoice_weight": "5513.456", "invoice_amount": "1239553.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "5551.000", "effective_month": "2026-07", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 418, "transporter_id": 81, "driver_id": null, "linked_vehicle_entry_id": 1798, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-11T09:31:25.311536Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-11", "priority": "", "transporter_name": "Amazon Freight (ASSPL)", "transporter_gstin": "29AAICA3918J1ZE", "contact_person": "rishabh", "mobile_no": "8802345622", "vehicle_no": "HR63E6712", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "NA", "bilty_date": "2026-07-11", "bilty_attachment": "/media/sales_dispatch/attachments/707260197_1.pdf", "bilty_attachment_name": "707260197 (1).pdf", "freight": "0.34", "total_freight": "0.34", "kanta_weight": null, "remarks": "", "created_at": "2026-07-11T09:44:28.865818+05:30", "updated_at": "2026-07-11T15:01:25.322429+05:30"}
+  {"id": 1197, "sap_invoice_doc_entry": 36439, "sap_invoice_doc_num": "607260146", "invoice_number": "607260146", "eway_bill": "372289756890", "invoice_weight": "5922.120", "invoice_amount": "1015500.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "6000.000", "effective_month": "2026-07", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 308, "transporter_id": 22, "driver_id": null, "linked_vehicle_entry_id": 1849, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-11T17:41:07.987980Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-11", "priority": "High", "transporter_name": "JIVO WELLNESS PVT LTD", "transporter_gstin": "", "contact_person": "Jivo Wellness", "mobile_no": "1234567891", "vehicle_no": "HR69F9627", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "na", "bilty_date": "2026-07-11", "bilty_attachment": "/media/sales_dispatch/attachments/AR_Invoice_607260143.pdf", "bilty_attachment_name": "AR Invoice 607260143.pdf", "freight": "0.35", "total_freight": "0.35", "kanta_weight": null, "remarks": "", "created_at": "2026-07-11T10:14:14.644584+05:30", "updated_at": "2026-07-11T23:11:08.000974+05:30"}
   ```

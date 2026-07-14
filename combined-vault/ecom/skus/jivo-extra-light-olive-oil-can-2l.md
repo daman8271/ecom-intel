@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-can-2l
-display_name: JIVO Extra Light Olive Oil Can (2 L)
+display_name: Jivo Extra Light Olive Oil Can 2l
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Extra Light Olive Oil Can (2 L)**
+**Jivo Extra Light Olive Oil Can 2l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹1959 (30.0% off)

@@ -69,7 +69,7 @@ Up: [[Home]]
 - [[EXTRA LIGHT 500ML]] — ref ₹349 / live ₹339 (🟢 BELOW)
 - [[EXTRA LIGHT 5L]] — ref ₹2699 / live ₹2607 (🟢 BELOW)
 - [[EXTRA VIRGIN 1+1L]] — ref ₹1609 / live ₹1594 (🟢 BELOW)
-- [[EXTRA VIRGIN 1L]] — ref ₹799 / live ₹797 (🟢 BELOW)
+- [[EXTRA VIRGIN 1L]] — ref ₹799 / live ₹789 (🟢 BELOW)
 - [[EXTRA VIRGIN 200ML]] — ref ₹199 / live ₹189 (🟢 BELOW)
 - [[EXTRA VIRGIN 250ML]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 2L]] — ref ₹1619 / live ₹1309 (🟢 BELOW)
@@ -89,8 +89,8 @@ Up: [[Home]]
 - [[GROUNDNUT 5L]] — ref ₹1239 / live ₹1239 (🟦 MATCH)
 - [[JEERA JUICE]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 1+1+1L]]
-- [[JIVO POMACE 1+1L]] — ref ₹869 / live ₹758 (🟢 BELOW)
-- [[JIVO POMACE 1L]] — ref ₹429 / live ₹379 (🟢 BELOW)
+- [[JIVO POMACE 1+1L]] — ref ₹869 / live ₹858 (🟢 BELOW)
+- [[JIVO POMACE 1L]] — ref ₹429 / live ₹429 (🟦 MATCH)
 - [[JIVO POMACE 2L]] — ref ₹869 / live ₹849 (🟢 BELOW)
 - [[JIVO POMACE 5L]] — ref ₹1999 / live ₹1699 (🟢 BELOW)
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — ref ₹219 / live ₹— (⚪ OOS)
@@ -99,7 +99,7 @@ Up: [[Home]]
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
 - [[MUSTARD 1+1L]] — ref ₹429 / live ₹379 (🟢 BELOW)
-- [[MUSTARD 1L]] — ref ₹209 / live ₹170 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 1L POUCH]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹629 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹839 / live ₹829 (🟢 BELOW)
@@ -125,11 +125,11 @@ Up: [[Home]]
 - [[SANO CLASSIC 5L]] — ref ₹2709 / live ₹— (⚪ OOS)
 - [[SANO HONEY 1KG]]
 - [[SANO HONEY 500G]]
-- [[SANO MUSTARD 1L]] — ref ₹209 / live ₹— (⚪ OOS)
+- [[SANO MUSTARD 1L]] — ref ₹209 / live ₹189 (🟢 BELOW)
 - [[SANO MUSTARD 5L]] — ref ₹999 / live ₹— (⚪ OOS)
 - [[SANO POMACE 1+1L]]
 - [[SANO POMACE 1L]] — ref ₹419 / live ₹399 (🟢 BELOW)
-- [[SANO POMACE 5L]] — ref ₹2069 / live ₹1799 (🟢 BELOW)
+- [[SANO POMACE 5L]] — ref ₹2069 / live ₹1751 (🟢 BELOW)
 - [[SANO SOYABEAN 1L]] — ref ₹199 / live ₹189 (🟢 BELOW)
 - [[SANO SOYABEAN 5L]] — ref ₹949 / live ₹939 (🟢 BELOW)
 - [[SANO SUNFLOWER 1L]] — ref ₹219 / live ₹— (⚪ OOS)
@@ -146,7 +146,7 @@ Up: [[Home]]
 - [[SOYABEAN 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[SOYABEAN 5L]] — ref ₹999 / live ₹899 (🟢 BELOW)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 1L]] — ref ₹209 / live ₹195 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 1L + 1L]] — ref ₹449 / live ₹379 (🟢 BELOW)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹679 / live ₹— (⚪ OOS)

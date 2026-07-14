@@ -67,7 +67,6 @@ Weight: 1014.500 kg
 - **updated_at:** 2026-07-01T18:15:36.398037+05:30
 
 ## Related
-- arrival -> [[arr-157]]
 - company -> [[comp-2]]
 - driver -> [[drv-265]]
 - vehicle -> [[veh-27]]

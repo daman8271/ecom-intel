@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Transporter (96)
+title: Transporter (97)
 tags:
   - moc
   - source/factory
 ---
 
-# Transporter — 96 records
+# Transporter — 97 records
 
 From `/vehicle-management/transporters/`. Up: [[_HOME]]
 
@@ -54,6 +54,7 @@ From `/vehicle-management/transporters/`. Up: [[_HOME]]
 - [[trn-20]] — Jivo Wellness
 - [[trn-30]] — Jivo wellness pvt ltd
 - [[trn-22]] — JIVO WELLNESS PVT LTD
+- [[trn-99]] — Joy pack
 - [[trn-46]] — Kamal tramsport
 - [[trn-4]] — Kaushik logistics
 - [[trn-12]] — KUBER

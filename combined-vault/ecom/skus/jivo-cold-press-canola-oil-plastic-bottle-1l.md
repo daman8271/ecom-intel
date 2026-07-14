@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-canola-oil-plastic-bottle-1l
-display_name: JIVO Cold Press Canola Oil Plastic Bottle (1 L)
+display_name: Jivo Cold Press Canola Oil Plastic Bottle 1l
 platforms:
   - flipkart-minutes
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**JIVO Cold Press Canola Oil Plastic Bottle (1 L)**
+**Jivo Cold Press Canola Oil Plastic Bottle 1l**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹236 (37.0% off)
