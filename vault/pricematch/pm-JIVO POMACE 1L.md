@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-14
-observations: 288
+last_seen: 2026-07-15
+observations: 296
 latest_status: BELOW
-below_days: 36
+below_days: 37
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-ri
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-14) — ref ₹429 vs live ₹379
-- **Days below reference:** 36 of 36
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]]
+- **Latest status:** 🔴 below ref on [[zepto]] (2026-07-15) — ref ₹429 vs live ₹379
+- **Days below reference:** 37 of 37
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]]
 
-## Ref-vs-live history (288 observations)
+## Ref-vs-live history (296 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -333,6 +333,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-14,flipkart,BELOW,BAU,429,417,417,417,-12,-2.8,1,true
 2026-07-14,flipkart-minutes,BELOW,BAU,429,379,316,430,-50,-11.66,91,true
 2026-07-14,zepto,BELOW,BAU,429,379,379,997,-50,-11.66,433,true
+2026-07-15,amazon,BELOW,BAU,429,379,379,379,-50,-11.66,1,true
+2026-07-15,amazon-fresh,BELOW,BAU,429,397,379,434,-32,-7.46,70,true
+2026-07-15,amazon-now,BELOW,BAU,429,397,379,434,-32,-7.46,182,true
+2026-07-15,bigbasket,ABOVE,BAU,429,548.25,374.85,593.21,119.25,27.8,15,true
+2026-07-15,blinkit,BELOW,BAU,429,379,379,492,-50,-11.66,534,true
+2026-07-15,flipkart,BELOW,BAU,429,417,417,417,-12,-2.8,1,true
+2026-07-15,flipkart-minutes,BELOW,BAU,429,379,379,430,-50,-11.66,97,true
+2026-07-15,zepto,BELOW,BAU,429,379,379,997,-50,-11.66,433,true
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-14
-observations: 288
+last_seen: 2026-07-15
+observations: 296
 latest_status: NOT_LISTED
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cooking-edible-soyabean-oil-5-litre-high-in-omega6-pufa-conta
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-14) — ref ₹999 vs live ₹-
-- **Days below reference:** 14 of 36
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-15) — ref ₹999 vs live ₹-
+- **Days below reference:** 15 of 37
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]]
 
-## Ref-vs-live history (288 observations)
+## Ref-vs-live history (296 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -333,6 +333,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-14,flipkart,OOS,BAU,999,,,,,,0,false
 2026-07-14,flipkart-minutes,NOT_LISTED,BAU,999,,,,,,0,false
 2026-07-14,zepto,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-15,amazon,BELOW,BAU,999,899,899,899,-100,-10.01,1,true
+2026-07-15,amazon-fresh,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-15,amazon-now,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-15,bigbasket,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-15,blinkit,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-15,flipkart,OOS,BAU,999,,,,,,0,false
+2026-07-15,flipkart-minutes,NOT_LISTED,BAU,999,,,,,,0,false
+2026-07-15,zepto,NOT_LISTED,BAU,999,,,,,,0,false
 ```
 
 ---

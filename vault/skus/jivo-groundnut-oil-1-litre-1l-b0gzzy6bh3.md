@@ -5,8 +5,8 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-07-14
-observations: 28
+last_seen: 2026-07-15
+observations: 32
 min_price: 382
 max_price: 388
 latest_price: 388
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹388 (54.1% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Pune]]
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Pune]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (28 observations)
+## Price history (32 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -62,6 +62,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-14-0708,2026-07-14,amazon-fresh,Kolkata,700019,388,845,54.1,1
 2026-07-14-0708,2026-07-14,amazon-fresh,Kolkata,700024,388,845,54.1,1
 2026-07-14-0708,2026-07-14,amazon-fresh,Kolkata,700040,388,845,54.1,1
+2026-07-15-0708,2026-07-15,amazon-fresh,Hyderabad,500024,388,845,54.1,1
+2026-07-15-0708,2026-07-15,amazon-fresh,Kolkata,700001,388,845,54.1,1
+2026-07-15-0708,2026-07-15,amazon-fresh,Mumbai,400008,388,845,54.1,1
+2026-07-15-0708,2026-07-15,amazon-fresh,Visakhapatnam,530002,388,845,54.1,1
 ```
 
 ---

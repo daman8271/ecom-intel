@@ -5,8 +5,8 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (4 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-14
-observations: 3
+last_seen: 2026-07-15
+observations: 4
 min_price: 674
 max_price: 674
 latest_price: 674
@@ -27,16 +27,17 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Ludhiana]]
 
-## Runs that observed this SKU (1)
-[[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (2)
+[[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-14-0645,2026-07-14,flipkart-minutes,Delhi,110070,674,1000,32,0
 2026-07-14-0645,2026-07-14,flipkart-minutes,Ludhiana,141010,674,1000,32,0
 2026-07-14-0645,2026-07-14,flipkart-minutes,Ludhiana,141011,674,1000,32,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Delhi,110070,674,1000,32,0
 ```
 
 ---

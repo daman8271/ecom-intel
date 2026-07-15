@@ -5,8 +5,8 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-13
-last_seen: 2026-07-14
-observations: 2
+last_seen: 2026-07-15
+observations: 3
 min_price: 398
 max_price: 398
 latest_price: 398
@@ -27,15 +27,16 @@ Up: [[skus-index]]
 ## Available in cities
 [[Mumbai]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]]
 
-## Price history (2 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-13-0707,2026-07-13,amazon-fresh,Mumbai,400017,398,1120,64.5,1
 2026-07-14-0708,2026-07-14,amazon-fresh,Mumbai,400017,398,1120,64.5,1
+2026-07-15-0708,2026-07-15,amazon-fresh,Mumbai,400017,398,1120,64.5,1
 ```
 
 ---
