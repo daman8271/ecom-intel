@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-14
-observations: 288
+last_seen: 2026-07-15
+observations: 296
 latest_status: NOT_LISTED
-below_days: 26
+below_days: 27
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidant
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-14) — ref ₹959 vs live ₹-
-- **Days below reference:** 26 of 36
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-15) — ref ₹959 vs live ₹-
+- **Days below reference:** 27 of 37
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]]
 
-## Ref-vs-live history (288 observations)
+## Ref-vs-live history (296 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -333,6 +333,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-14,flipkart,ABOVE,BAU,959,1115,1115,1115,156,16.27,0,true
 2026-07-14,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
 2026-07-14,zepto,NOT_LISTED,BAU,959,,,,,,0,false
+2026-07-15,amazon,BELOW,BAU,959,939,939,939,-20,-2.09,1,true
+2026-07-15,amazon-fresh,BELOW,BAU,959,862,862,939,-97,-10.11,64,true
+2026-07-15,amazon-now,BELOW,BAU,959,939,862,939,-20,-2.09,41,true
+2026-07-15,bigbasket,NOT_LISTED,BAU,959,,,,,,0,false
+2026-07-15,blinkit,NOT_LISTED,BAU,959,,,,,,0,false
+2026-07-15,flipkart,ABOVE,BAU,959,1115,1115,1115,156,16.27,0,true
+2026-07-15,flipkart-minutes,NOT_LISTED,BAU,959,,,,,,0,false
+2026-07-15,zepto,NOT_LISTED,BAU,959,,,,,,0,false
 ```
 
 ---

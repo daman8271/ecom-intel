@@ -58,11 +58,11 @@ Up: [[Home]]
 - [[EXTRA LIGHT 2L]] — ref ₹1159 / live ₹1039 (🟢 BELOW)
 - [[EXTRA LIGHT 3L]] — ref ₹1849 / live ₹— (⚪ OOS)
 - [[EXTRA LIGHT 5L]] — ref ₹2699 / live ₹2528 (🟢 BELOW)
-- [[EXTRA VIRGIN 1+1L]] — ref ₹1619 / live ₹— (⚪ OOS)
-- [[EXTRA VIRGIN 1L]] — ref ₹799 / live ₹— (⚪ OOS)
+- [[EXTRA VIRGIN 1+1L]] — ref ₹1619 / live ₹1090 (🟢 BELOW)
+- [[EXTRA VIRGIN 1L]] — ref ₹799 / live ₹703 (🟢 BELOW)
 - [[EXTRA VIRGIN 200ML]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 250ML]] — ref ₹219 / live ₹— (⚪ OOS)
-- [[EXTRA VIRGIN 2L]] — ref ₹1619 / live ₹— (⚪ OOS)
+- [[EXTRA VIRGIN 2L]] — ref ₹1619 / live ₹1090 (🟢 BELOW)
 - [[EXTRA VIRGIN 500ML]] — ref ₹419 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 5L]] — ref ₹3799 / live ₹3611 (🟢 BELOW)
 - [[FLAX SEEDS 200G]] — ref ₹99 / live ₹— (⚪ OOS)
@@ -120,7 +120,7 @@ Up: [[Home]]
 - [[SUNFLOWER SEEDS 200 GM]] — ref ₹139 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 400G]] — ref ₹259 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 800G]] — ref ₹389 / live ₹— (⚪ OOS)
-- [[WATER 1L]] — ref ₹20 / live ₹24 (🔴 ABOVE)
+- [[WATER 1L]] — ref ₹20 / live ₹25 (🔴 ABOVE)
 - [[WG APPLE JUICE 200ML]]
 - [[WG BLUEBERRY 200ML]]
 - [[WG BLUEBERRY JUICE 200ML]]

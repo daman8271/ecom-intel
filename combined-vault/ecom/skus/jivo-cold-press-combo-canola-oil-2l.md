@@ -5,8 +5,8 @@ display_name: JIVO Cold Press Combo Canola Oil (2 x 1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-14
-observations: 16
+last_seen: 2026-07-15
+observations: 32
 min_price: 375
 max_price: 975
 latest_price: 975
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Ghaziabad]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Pune]]
 
-## Runs that observed this SKU (1)
-[[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (2)
+[[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (16 observations)
+## Price history (32 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -50,6 +50,22 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-14-0645,2026-07-14,flipkart-minutes,Jaipur,302046,375,,,0
 2026-07-14-0645,2026-07-14,flipkart-minutes,Pune,411026,975,,,0
 2026-07-14-0645,2026-07-14,flipkart-minutes,Pune,411039,975,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Bengaluru,560015,563,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Bengaluru,560016,375,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Bengaluru,560037,375,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Bengaluru,560056,378,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Bengaluru,560058,563,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Bengaluru,560096,563,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Bengaluru,560110,378,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Delhi,110069,600,,,1
+2026-07-15-0645,2026-07-15,flipkart-minutes,Ghaziabad,201009,937,,,1
+2026-07-15-0645,2026-07-15,flipkart-minutes,Ghaziabad,201015,937,,,1
+2026-07-15-0645,2026-07-15,flipkart-minutes,Gurugram,122504,375,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Hyderabad,500008,375,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Jaipur,302001,375,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Jaipur,302046,375,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Pune,411026,975,,,0
+2026-07-15-0645,2026-07-15,flipkart-minutes,Pune,411039,975,,,0
 ```
 
 ---
