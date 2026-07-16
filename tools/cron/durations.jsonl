@@ -497,3 +497,7 @@
 {"platform":"amazon","secs":663,"sweep":"2026-07-14-1000","ts":"2026-07-14T07:08:11+0530"}
 {"platform":"amazon-fresh","secs":3644,"sweep":"2026-07-14-1000","ts":"2026-07-14T08:08:55+0530"}
 {"platform":"amazon-now","secs":6768,"sweep":"2026-07-14-1000","ts":"2026-07-14T10:01:43+0530"}
+{"platform":"flipkart-minutes","secs":740,"sweep":"2026-07-15-1000","ts":"2026-07-15T06:57:20+0530"}
+{"platform":"amazon","secs":687,"sweep":"2026-07-15-1000","ts":"2026-07-15T07:08:47+0530"}
+{"platform":"amazon-fresh","secs":3700,"sweep":"2026-07-15-1000","ts":"2026-07-15T08:10:27+0530"}
+{"platform":"amazon-now","secs":7029,"sweep":"2026-07-15-1000","ts":"2026-07-15T10:07:36+0530"}

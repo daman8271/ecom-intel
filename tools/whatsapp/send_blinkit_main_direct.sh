@@ -117,7 +117,7 @@ PY
 fi
 
 ensure_gateway || true
-SUBJ="Blinkit corrected report — $DATE_IST"
+SUBJ="Blinkit report — $DATE_IST"
 if [ -n "$SUMMARY_LINE" ]; then
   SUBJ="${SUBJ}
 Fresh authenticated run passed quality.

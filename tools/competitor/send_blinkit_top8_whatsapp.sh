@@ -15,6 +15,7 @@ RECEIPT="${BLINKIT_TOP8_WA_RECEIPT:-$RECEIPT_DIR/$(basename "$REPORT").json}"
 LOCK="${BLINKIT_TOP8_WA_LOCK:-$ROOT/logs/.blinkit-top8-wa.lock}"
 CHAT="${BLINKIT_TOP8_WA_CHAT:-120363047864912511@g.us}"
 PROMOTION_ROOT="${DIRECT_COMPETITOR_PROMOTION_ROOT:-$ROOT/logs/direct-competitor-report-receipts}"
+SNAPSHOT_ROOT="${DIRECT_COMPETITOR_SNAPSHOT_ROOT:-$ROOT/logs/direct-competitor-send-snapshots}"
 GW_HEALTH=http://127.0.0.1:3001/health
 
 log() {
@@ -23,30 +24,87 @@ log() {
 
 exec 9>"$LOCK"
 flock -n 9 || { log "another sender holds the lock"; exit 0; }
+
+# Owner directive 2026-07-15: the competitor sheet reaches the Ecom group only
+# AFTER the Blinkit main sheet is in the group. Hold quietly until the main
+# sheet's sent marker exists; COMPETITOR_ALLOW_BEFORE_BLINKIT=1 overrides.
+BLINKIT_MAIN_MARKER="${BLINKIT_MAIN_WA_MARKER:-$ROOT/logs/blinkit-main-wa-${DATE_IST}.sent}"
+if [ "${COMPETITOR_ALLOW_BEFORE_BLINKIT:-0}" != "1" ] && [ ! -s "$BLINKIT_MAIN_MARKER" ]; then
+  log "holding: Blinkit main sheet not in the group yet ($BLINKIT_MAIN_MARKER); competitor sends after it"
+  exit 0
+fi
+
 [ -s "$REPORT" ] || { log "waiting for workbook: $REPORT"; exit 1; }
 [ -s "$AUDIT" ] || { log "quality audit is missing: $AUDIT"; exit 1; }
-python3 "$CODE_ROOT/tools/cron/direct_competitor_is_accepted.py" \
+GATE_JSON="$(python3 "$CODE_ROOT/tools/cron/direct_competitor_is_accepted.py" \
   --file "$REPORT" --date "$DATE_IST" --platform blinkit --receipts "$PROMOTION_ROOT" \
+  --snapshot-root "$SNAPSHOT_ROOT")" \
   || { log "workbook has no exact accepted direct-competitor promotion"; exit 1; }
 
-SUMMARY="$({ python3 - "$AUDIT" "$REPORT" "$DATE_IST" <<'PY'
+snapshot_fields() {
+  python3 - "$GATE_JSON" "$REPORT" "$AUDIT" "$DATE_IST" <<'PY'
+import hashlib
+import json
+import os
+from pathlib import Path
+import sys
+
+raw, report, audit, date = sys.argv[1:]
+value = json.loads(raw)
+if value.get("schema") != "jivo-direct-competitor-accepted-snapshot-v1" \
+   or value.get("platform") != "blinkit" or value.get("date_ist") != date:
+    raise SystemExit("invalid accepted snapshot manifest")
+artifacts = value.get("artifacts")
+if not isinstance(artifacts, list) or len(artifacts) != 3:
+    raise SystemExit("accepted snapshot manifest does not have three artifacts")
+by_kind = {item.get("kind"): item for item in artifacts if isinstance(item, dict)}
+if set(by_kind) != {"workbook", "merged_capture", "delivery_audit"}:
+    raise SystemExit("accepted snapshot manifest artifact kinds are invalid")
+if by_kind["workbook"].get("original_path") != os.path.abspath(report):
+    raise SystemExit("accepted snapshot workbook identity mismatch")
+if by_kind["delivery_audit"].get("original_path") != os.path.abspath(audit):
+    raise SystemExit("accepted snapshot audit identity mismatch")
+for item in by_kind.values():
+    path = Path(str(item.get("snapshot_path") or ""))
+    if path.is_symlink() or not path.is_file():
+        raise SystemExit(f"snapshot is missing or symlinked: {path}")
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    if path.stat().st_size != item.get("bytes") or digest != item.get("sha256"):
+        raise SystemExit(f"snapshot hash/size mismatch: {path}")
+print(by_kind["workbook"]["snapshot_path"])
+print(by_kind["merged_capture"]["snapshot_path"])
+print(by_kind["delivery_audit"]["snapshot_path"])
+print(by_kind["workbook"]["sha256"])
+print(by_kind["workbook"]["bytes"])
+PY
+}
+
+SNAPSHOT_VALUES="$(snapshot_fields)" || { log "accepted snapshot validation failed"; exit 1; }
+mapfile -t SNAPSHOT_FIELDS <<< "$SNAPSHOT_VALUES"
+[ "${#SNAPSHOT_FIELDS[@]}" -eq 5 ] || { log "accepted snapshot fields are incomplete"; exit 1; }
+SNAPSHOT_REPORT="${SNAPSHOT_FIELDS[0]}"
+SNAPSHOT_AUDIT="${SNAPSHOT_FIELDS[2]}"
+SHA="${SNAPSHOT_FIELDS[3]}"
+SIZE="${SNAPSHOT_FIELDS[4]}"
+
+SUMMARY="$({ python3 - "$SNAPSHOT_AUDIT" "$SNAPSHOT_REPORT" "$DATE_IST" <<'PY'
 import hashlib, json, sys
 from openpyxl import load_workbook
 
 audit_path, report_path, date = sys.argv[1:]
 audit = json.load(open(audit_path, encoding="utf-8"))
-summary = audit.get("summary") or {}
 required = {
-    "date": audit.get("date") == date,
-    "pins": summary.get("pincodes_total") == 75,
-    "resolved": summary.get("pincodes_resolved") == 75,
-    "auth": summary.get("auth_verified") == 1 and summary.get("auth_verified_pincodes") == 75,
-    "partial": summary.get("partial") is False,
-    "rows": int(summary.get("total_rows") or 0) > 0,
+    "schema": audit.get("schema") == "jivo-direct-competitor-delivery-audit-v1",
+    "platform": audit.get("platform") == "blinkit",
+    "workflow": audit.get("workflow_kind") == "blinkit-top8",
+    "date": audit.get("date_ist") == date,
+    "status": audit.get("status") == "OK",
+    "pins": audit.get("pincodes_total") == 75,
+    "rows": int(audit.get("total_rows") or 0) > 0,
 }
 if not all(required.values()):
     raise SystemExit(f"quality audit failed: {required}")
-brands = (summary.get("scope") or {}).get("competitors")
+brands = audit.get("brand_set")
 if not isinstance(brands, list) or not brands:
     raise SystemExit("quality audit is missing the reviewed competitor brand set")
 normalized_brands = sorted({" ".join(str(brand).split()).casefold() for brand in brands if str(brand).strip()})
@@ -55,8 +113,8 @@ if len(normalized_brands) != len(brands):
 brand_set_sha256 = hashlib.sha256(
     json.dumps(normalized_brands, separators=(",", ":"), ensure_ascii=True).encode("ascii")
 ).hexdigest()
-bound_brand_hash = audit.get("brand_set_sha256") or (summary.get("scope") or {}).get("brand_set_sha256")
-if bound_brand_hash and bound_brand_hash != brand_set_sha256:
+if audit.get("brand_set_count") != len(normalized_brands) \
+   or audit.get("brand_set_sha256") != brand_set_sha256:
     raise SystemExit("quality audit competitor brand-set hash mismatch")
 wb = load_workbook(report_path, read_only=True, data_only=False)
 expected = ["Summary", "City-Pin-SKU Prices", "Run Scope", "Anchor Watch", "Master Data"]
@@ -65,7 +123,7 @@ if wb.sheetnames != expected or wb["Run Scope"].max_row != 82:
 wb.close()
 print(
     f"25 cities × 3 pincodes · 75/75 authenticated · "
-    f"{summary.get('total_rows')} datapoints · {len(normalized_brands)} competitors"
+    f"{audit.get('total_rows')} datapoints · {len(normalized_brands)} competitors"
 )
 PY
 } 2>&1)" || {
@@ -73,8 +131,6 @@ PY
   exit 1
 }
 
-SHA="$(sha256sum "$REPORT" | awk '{print $1}')"
-SIZE="$(stat -c %s "$REPORT")"
 if [ -s "$RECEIPT" ] && python3 - "$RECEIPT" "$REPORT" "$SHA" "$SIZE" "$CHAT" "$DATE_IST" <<'PY'
 import datetime
 import json
@@ -107,7 +163,7 @@ then
 fi
 
 if [ "${BLINKIT_TOP8_WA_TEST:-0}" = "1" ] || [ "${MAILER_TEST_MODE:-0}" = "1" ]; then
-  log "TEST send: $CHAT $(basename "$REPORT") | $SUMMARY"
+  log "TEST send: $CHAT $(basename "$REPORT") from accepted snapshot | $SUMMARY"
   exit 0
 fi
 
@@ -138,7 +194,9 @@ response="$(send_json 60 http://127.0.0.1:3001/send "$HEADER_PAYLOAD")"
 log "header response: $response"
 grep -q '"success":true' <<<"$response" || exit 1
 
-DOC_PAYLOAD="$(python3 -c 'import json,os,sys; p=os.path.abspath(sys.argv[1]); print(json.dumps({"chatId":sys.argv[2],"filePath":p,"mediaType":"document","fileName":os.path.basename(p)}))' "$REPORT" "$CHAT")"
+# The inspected snapshot, not the mutable promoted path, is the uploaded file.
+snapshot_fields >/dev/null || { log "accepted snapshot changed before media send"; exit 1; }
+DOC_PAYLOAD="$(python3 -c 'import json,os,sys; p=os.path.abspath(sys.argv[1]); print(json.dumps({"chatId":sys.argv[3],"filePath":p,"mediaType":"document","fileName":os.path.basename(sys.argv[2])}))' "$SNAPSHOT_REPORT" "$REPORT" "$CHAT")"
 response="$(send_json 120 http://127.0.0.1:3001/send-media "$DOC_PAYLOAD")"
 log "document response: $response"
 

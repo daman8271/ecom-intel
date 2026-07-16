@@ -8,7 +8,9 @@ workbook construction.  Its accepted receipt is the delivery authorization.
 from __future__ import annotations
 
 import argparse
+from collections import Counter
 import datetime as dt
+import functools
 import hashlib
 import json
 import math
@@ -27,12 +29,22 @@ from openpyxl import load_workbook
 IST = dt.timezone(dt.timedelta(hours=5, minutes=30))
 HEX64 = re.compile(r"^[0-9a-f]{64}$")
 RUN_ID = re.compile(
-    r"^(?P<day>[0-9]{8})-[0-9]{6}-(?P<platform>blinkit|zepto)-competitor-direct-a[0-9]{2}$"
+    r"^(?P<day>[0-9]{8})-[0-9]{6}-(?P<platform>blinkit|zepto)-competitor-direct-a(?P<attempt>[0-9]{2})$"
 )
 SCHEMA = "jivo-direct-competitor-report-receipt-v1"
 PROMOTION_SCHEMA = "jivo-direct-competitor-promotion-receipt-v1"
 FAILURE_SCHEMA = "jivo-direct-competitor-failure-receipt-v1"
 FAILURE_ACCEPTED_SCHEMA = "jivo-direct-competitor-failure-accepted-v1"
+REPO_ROOT = Path(__file__).resolve().parents[2]
+COMPETITOR_ROOT = REPO_ROOT / "tools/competitor"
+ANCHOR_BRANDS = {"jivo", "sano"}
+BRAND_ALIASES = {"oriel": "oreal"}
+MASTER_DATA_HEADER = [
+    "Platform", "Brand", "JIVO?", "Search Category (scraped)", "Oil Type (name)",
+    "Grade (name)", "Matched Anchor", "Blend?", "City", "Pincode", "Store ID",
+    "Name", "Pack", "Vol (ml)", "MRP Rs", "Sale Rs", "Rs/L", "Discount %",
+    "In stock", "Rank", "Ad?", "Captured",
+]
 
 PLATFORM = {
     "blinkit": {
@@ -147,6 +159,105 @@ def validate_named_hashes(value: Any, field: str, required: set[str]) -> list[di
     return output
 
 
+def validate_local_manifest(
+    value: Any, field: str, required: set[str], root: Path
+) -> list[dict[str, str]]:
+    manifest = validate_named_hashes(value, field, required)
+    for item in manifest:
+        path = root / item["name"]
+        if path.is_symlink() or not path.is_file() or sha256_file(path) != item["sha256"]:
+            raise ValueError(f"{field} does not match trusted control file: {item['name']}")
+    return manifest
+
+
+def normalize_brand(value: Any) -> str:
+    brand = " ".join(str(value or "").split()).casefold()
+    return BRAND_ALIASES.get(brand, brand)
+
+
+def capture_scope(receipt: dict[str, Any]) -> tuple[set[str], set[str], dict[str, str]]:
+    anchors = set(normalized_brands(receipt.get("anchor_brands")))
+    competitors = set(normalized_brands(receipt.get("competitor_brands")))
+    capture = set(normalized_brands(receipt.get("capture_brands")))
+    if anchors != ANCHOR_BRANDS:
+        raise ValueError("anchor_brands must be exactly Jivo and Sano")
+    if competitors != set(receipt["brand_set"]):
+        raise ValueError("competitor_brands differs from the reviewed brand_set")
+    if capture != anchors | competitors:
+        raise ValueError("capture_brands must equal anchors plus reviewed competitors")
+    aliases = receipt.get("brand_aliases")
+    if not isinstance(aliases, dict) or any(
+        not isinstance(key, str) or not isinstance(value, str)
+        for key, value in aliases.items()
+    ):
+        raise ValueError("brand_aliases is invalid")
+    normalized_aliases = {
+        " ".join(key.split()).casefold(): " ".join(value.split()).casefold()
+        for key, value in aliases.items()
+    }
+    if any(target not in capture for target in normalized_aliases.values()):
+        raise ValueError("brand_aliases targets a brand outside capture_brands")
+    return competitors, capture, normalized_aliases
+
+
+def normalize_row_brand(value: Any, aliases: dict[str, str]) -> str:
+    brand = normalize_brand(value)
+    return aliases.get(brand, brand)
+
+
+def row_digest(row: Any) -> str:
+    return json.dumps(row, ensure_ascii=True, sort_keys=True, separators=(",", ":"))
+
+
+def finite_number(value: Any) -> float:
+    if isinstance(value, bool):
+        raise ValueError("boolean is not a numeric price")
+    number = float(value)
+    if not math.isfinite(number):
+        raise ValueError("non-finite numeric value")
+    return number
+
+
+def captured_on_date(value: Any, date_ist: str) -> bool:
+    try:
+        parsed = dt.datetime.fromisoformat(str(value or "").replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    if parsed.tzinfo is None:
+        return False
+    return parsed.astimezone(IST).date().isoformat() == date_ist
+
+
+def package_state_sha(run_dir: Path) -> str:
+    state: list[dict[str, Any]] = []
+    for path in sorted(run_dir.iterdir(), key=lambda item: item.name):
+        item: dict[str, Any] = {"name": path.name}
+        if path.is_symlink():
+            item["kind"] = "symlink"
+        elif path.is_file():
+            try:
+                item.update({"kind": "file", "bytes": path.stat().st_size, "sha256": sha256_file(path)})
+            except OSError:
+                item["kind"] = "unreadable"
+        else:
+            item["kind"] = "other"
+        state.append(item)
+    payload = json.dumps(state, ensure_ascii=True, sort_keys=True, separators=(",", ":")).encode("ascii")
+    return hashlib.sha256(payload).hexdigest()
+
+
+def alert_marker_matches(marker: Path, source_sha: str, package_sha: str | None = None) -> bool:
+    if marker.is_symlink() or not marker.is_file():
+        return False
+    try:
+        value = load_json(marker)
+    except (OSError, ValueError, json.JSONDecodeError):
+        return False
+    return value.get("status") == "alerted" \
+        and value.get("source_receipt_sha256") == source_sha \
+        and (package_sha is None or value.get("package_state_sha256") == package_sha)
+
+
 def expected_names(platform: str, date_ist: str) -> tuple[str, str]:
     spec = PLATFORM[platform]
     workbook = f"Competitor-Price-Watch-{spec['label']}-{date_ist}.xlsx"
@@ -203,9 +314,38 @@ def validate_capture(path: Path, receipt: dict[str, Any], platform: str) -> dict
     if not isinstance(capture, dict):
         raise ValueError("merged capture is not an object")
     summary = capture.get("summary")
+    per_pin = capture.get("perPin")
     rows = capture.get("allRows")
-    if not isinstance(summary, dict) or not isinstance(rows, list) or not rows:
-        raise ValueError("merged capture summary/allRows is invalid")
+    if not isinstance(summary, dict) or not isinstance(per_pin, list) \
+       or not isinstance(rows, list) or not rows:
+        raise ValueError("merged capture summary/perPin/allRows is invalid")
+    competitors, capture_brands, aliases = capture_scope(receipt)
+    pins = [str(item.get("pincode") or "").strip() for item in per_pin if isinstance(item, dict)]
+    expected_pins = set(pins)
+    if len(per_pin) != PLATFORM[platform]["pins"] or len(expected_pins) != len(per_pin) or "" in expected_pins:
+        raise ValueError("merged capture perPin membership is not exact")
+    flattened: list[dict[str, Any]] = []
+    blocked = resolved = authenticated = serviceable = with_rows = 0
+    metadata: dict[str, dict[str, Any]] = {}
+    for item in per_pin:
+        if not isinstance(item, dict) or not isinstance(item.get("rows"), list):
+            raise ValueError("merged capture perPin entry is invalid")
+        pin = str(item.get("pincode") or "").strip()
+        if any(field not in item for field in ("city", "locality", "lat", "lon")):
+            raise ValueError(f"merged capture perPin metadata is incomplete: {pin}")
+        try:
+            finite_number(item["lat"])
+            finite_number(item["lon"])
+        except (TypeError, ValueError) as exc:
+            raise ValueError(f"merged capture perPin coordinates are invalid: {pin}") from exc
+        metadata[pin] = item
+        pin_rows = item["rows"]
+        flattened.extend(pin_rows)
+        blocked += int(bool(item.get("blocked") or item.get("partial_block")))
+        resolved += int(bool(item.get("resolved")))
+        authenticated += int(item.get("auth_accepted") == 1)
+        serviceable += int(bool(item.get("serviceable")))
+        with_rows += int(bool(pin_rows))
     checks = {
         "mode": summary.get("mode") == "competitor",
         "platform": summary.get("platform") == platform,
@@ -213,33 +353,199 @@ def validate_capture(path: Path, receipt: dict[str, Any], platform: str) -> dict
         "run": summary.get("run_id") == receipt["run_id"],
         "pins": summary.get("pincodes_total") == PLATFORM[platform]["pins"],
         "rows": summary.get("total_rows") == len(rows) == receipt["total_rows"],
-        "partial": summary.get("partial") is False and int(summary.get("pincodes_blocked") or 0) == 0,
+        "with_rows": int(summary.get("pincodes_with_rows") or 0) == with_rows,
+        "blocked": int(summary.get("pincodes_blocked") or 0) == blocked == 0,
+        "partial": summary.get("partial") is False and capture.get("partial") is False,
+        "captured_at": captured_on_date(summary.get("captured_at"), receipt["date_ist"]),
     }
     if not all(checks.values()):
         raise ValueError(f"merged capture identity/quality failed: {checks}")
-    row_pins = {str(row.get("pincode") or "").strip() for row in rows}
-    row_pins.discard("")
+    if Counter(map(row_digest, flattened)) != Counter(map(row_digest, rows)):
+        raise ValueError("merged capture perPin rows do not equal allRows")
+    summary_scope = summary.get("scope")
+    if not isinstance(summary_scope, dict) \
+       or set(normalized_brands(summary_scope.get("anchors"))) != ANCHOR_BRANDS \
+       or set(normalized_brands(summary_scope.get("competitors"))) != competitors \
+       or set(normalized_brands(summary_scope.get("capture_brands"))) != capture_brands:
+        raise ValueError("merged capture summary brand scope differs from receipt")
+
+    actual_competitors: set[str] = set()
+    actual_brands: set[str] = set()
+    listing_keys: list[tuple[str, str, str, str]] = []
+    for index, row in enumerate(rows):
+        if not isinstance(row, dict):
+            raise ValueError(f"merged capture row is not an object: {index}")
+        pin = str(row.get("pincode") or "").strip()
+        item = metadata.get(pin)
+        brand = normalize_row_brand(row.get("brand"), aliases)
+        required = ("platform", "city", "pincode", "brand", "canonical", "sale", "mrp", "discount_pct", "in_stock")
+        if item is None or any(field not in row for field in required):
+            raise ValueError(f"merged capture row membership/fields are invalid: {index}")
+        if str(row.get("platform") or "").casefold() != platform \
+           or str(row.get("city") or "").strip() != str(item.get("city") or "").strip():
+            raise ValueError(f"merged capture row geo identity differs from perPin: {index}")
+        if brand not in capture_brands:
+            raise ValueError(f"merged capture row brand is outside capture scope: {index}")
+        actual_brands.add(brand)
+        if brand in competitors:
+            actual_competitors.add(brand)
+        if not captured_on_date(row.get("captured_at"), receipt["date_ist"]):
+            raise ValueError(f"merged capture row date is invalid: {index}")
+        try:
+            sale = finite_number(row.get("sale"))
+            mrp = finite_number(row.get("mrp"))
+            discount = finite_number(row.get("discount_pct"))
+        except (TypeError, ValueError) as exc:
+            raise ValueError(f"merged capture row price is invalid: {index}") from exc
+        expected_discount = max(0.0, (mrp - sale) * 100 / mrp) if mrp > 0 else -1
+        if sale <= 0 or mrp <= 0 or mrp < sale - 0.5 or not 0 <= discount <= 100 \
+           or abs(discount - expected_discount) > 0.25:
+            raise ValueError(f"merged capture row price arithmetic failed: {index}")
+        if row.get("in_stock") not in (0, 1, False, True):
+            raise ValueError(f"merged capture row stock value is invalid: {index}")
+        listing_id = str(row.get("prid") or row.get("product_id") or row.get("variant_id") \
+                         or row.get("canonical") or "").strip()
+        listing_keys.append((pin, str(row.get("canonical") or ""), listing_id, brand))
+    if len(listing_keys) != len(set(listing_keys)):
+        raise ValueError("merged capture contains duplicate listing rows")
+    minimum_brands = int(receipt["quality_policy"]["min_unique_brands"])
+    if len(actual_competitors) < minimum_brands:
+        raise ValueError(
+            f"merged capture competitor brand coverage {len(actual_competitors)} is below {minimum_brands}"
+        )
+    if int(summary.get("unique_brands") or -1) != len(actual_brands):
+        raise ValueError("merged capture unique brand count differs from rows")
+    baseline = receipt["baseline"]
+    if len(rows) < math.ceil(
+        int(baseline["total_rows"]) * float(receipt["quality_policy"]["baseline_min_row_fraction"])
+    ):
+        raise ValueError("merged capture rows collapsed against baseline")
+    if len(actual_brands) < math.ceil(
+        int(baseline["unique_brands"]) * float(receipt["quality_policy"]["baseline_min_brand_fraction"])
+    ):
+        raise ValueError("merged capture brands collapsed against baseline")
     if platform == "blinkit":
-        if len(row_pins) != 75 or summary.get("pincodes_resolved") != 75 \
+        if with_rows != 75 or resolved != 75 or authenticated != 75 \
+           or summary.get("pincodes_resolved") != 75 \
            or summary.get("auth_verified") != 1 or summary.get("auth_verified_pincodes") != 75:
             raise ValueError("Blinkit capture is not 75/75 resolved and authenticated")
     else:
         minimum = math.ceil(PLATFORM[platform]["pins"] * float(receipt["quality_policy"]["min_serviceable_pct"]) / 100)
-        if int(summary.get("pincodes_serviceable") or 0) < minimum:
+        row_floor = math.ceil(
+            PLATFORM[platform]["pins"] * float(receipt["quality_policy"]["min_rows_per_source_pincode"])
+        )
+        if int(summary.get("pincodes_serviceable") or 0) != serviceable or serviceable < minimum:
             raise ValueError("Zepto capture is below the serviceability floor")
+        if len(rows) < row_floor:
+            raise ValueError("Zepto capture is below the total-row floor")
     return capture
 
 
-def validate_workbook(path: Path, platform: str, receipt: dict[str, Any]) -> None:
+@functools.lru_cache(maxsize=1)
+def workbook_brand_config() -> tuple[list[str], dict[str, str]]:
+    config = load_json(COMPETITOR_ROOT / "competitor_brands.json")
+    ours = [str(item).casefold() for item in config.get("ours", ["jivo", "sano"])]
+    aliases: dict[str, str] = {}
+    for item in config.get("brands") or []:
+        canonical = str(item.get("brand") or "")
+        aliases[canonical.casefold()] = canonical
+        for alias in item.get("aliases") or []:
+            if alias:
+                aliases[str(alias).casefold()] = canonical
+    return ours, aliases
+
+
+def workbook_brand_label(row: dict[str, Any]) -> str:
+    ours, aliases = workbook_brand_config()
+    raw = str(row.get("brand") or "").strip()
+    raw_key = raw.casefold()
+    name = str(row.get("name") or "").casefold()
+    if any(item in raw_key or item in name for item in ours):
+        return "JIVO"
+    if raw_key in aliases:
+        return aliases[raw_key]
+    for alias, canonical in aliases.items():
+        if alias and alias in name:
+            return canonical
+    return raw.title() if raw else "Unknown"
+
+
+def workbook_value(value: Any) -> Any:
+    if value is None or value == "":
+        return ""
+    if isinstance(value, bool):
+        return value
+    if isinstance(value, (int, float)):
+        return round(float(value), 6)
+    return str(value)
+
+
+def workbook_projection(row: dict[str, Any], platform: str) -> tuple[Any, ...]:
+    discount = row.get("discount_pct")
+    return tuple(map(workbook_value, (
+        platform.replace("-", " ").title(),
+        workbook_brand_label(row),
+        row.get("city"),
+        str(row.get("pincode") or ""),
+        row.get("store_id"),
+        row.get("name"),
+        row.get("pack"),
+        row.get("vol_ml"),
+        row.get("mrp"),
+        row.get("sale"),
+        row.get("per_litre"),
+        round(float(discount) / 100, 4) if discount is not None else None,
+        "Yes" if row.get("in_stock") else "No",
+        row.get("rank"),
+        "Yes" if row.get("is_ad") else "",
+        str(row.get("captured_at") or "")[:16].replace("T", " "),
+    )))
+
+
+def validate_workbook(
+    path: Path, platform: str, receipt: dict[str, Any], capture: dict[str, Any]
+) -> None:
     workbook = load_workbook(path, read_only=True, data_only=False)
     try:
         expected = PLATFORM[platform]["sheets"]
         if workbook.sheetnames != expected:
             raise ValueError(f"workbook sheets mismatch: {workbook.sheetnames}")
-        if workbook["Master Data"].max_row - 1 != receipt["total_rows"]:
+        master = workbook["Master Data"]
+        header = [cell.value for cell in next(master.iter_rows(min_row=1, max_row=1))]
+        if header != MASTER_DATA_HEADER:
+            raise ValueError("workbook Master Data header mismatch")
+        if master.max_row - 1 != receipt["total_rows"]:
             raise ValueError("workbook Master Data row count mismatch")
-        if platform == "blinkit" and workbook["Run Scope"].max_row != 82:
-            raise ValueError("Blinkit Run Scope row count mismatch")
+        actual = Counter(
+            tuple(map(workbook_value, (
+                values[0], values[1], values[8], str(values[9] or ""), values[10], values[11],
+                values[12], values[13], values[14], values[15], values[16], values[17],
+                values[18], values[19], values[20], values[21],
+            )))
+            for values in master.iter_rows(min_row=2, values_only=True)
+        )
+        expected_rows = Counter(workbook_projection(row, platform) for row in capture["allRows"])
+        if actual != expected_rows:
+            raise ValueError("workbook Master Data content differs from merged capture")
+        if platform == "blinkit":
+            scope = workbook["Run Scope"]
+            if scope.max_row != 82:
+                raise ValueError("Blinkit Run Scope row count mismatch")
+            pin_map = {str(item["pincode"]): item for item in capture["perPin"]}
+            seen: set[str] = set()
+            for values in scope.iter_rows(min_row=8, max_row=82, values_only=True):
+                pin = str(values[1] or "")
+                item = pin_map.get(pin)
+                if item is None or pin in seen:
+                    raise ValueError("Blinkit Run Scope pincode membership mismatch")
+                seen.add(pin)
+                if str(values[0] or "") != str(item.get("city") or "") \
+                   or str(values[2] or "") != str(item.get("locality") or "") \
+                   or values[4] != "Yes" or values[5] != "Yes" \
+                   or int(values[6] or -1) != len(item.get("rows") or []):
+                    raise ValueError(f"Blinkit Run Scope row differs from capture: {pin}")
+            if seen != set(pin_map):
+                raise ValueError("Blinkit Run Scope coverage mismatch")
     finally:
         workbook.close()
 
@@ -275,40 +581,62 @@ def validate_audits(
         parsed[name] = audit
         verified.append(entry)
     required_name = delivery_audit_name(platform, receipt["date_ist"])
-    if required_name not in parsed:
+    if required_name not in parsed or "quality-audit.json" not in parsed:
         raise ValueError(f"required delivery audit is missing: {required_name}")
     audit = parsed[required_name]
+    quality = parsed["quality-audit.json"]
     brands = receipt["brand_set"]
     common = {
+        "schema": audit.get("schema") == "jivo-direct-competitor-delivery-audit-v1",
+        "platform": audit.get("platform") == platform,
+        "workflow": audit.get("workflow_kind") == receipt["workflow_kind"],
+        "date": audit.get("date_ist") == receipt["date_ist"],
+        "run": audit.get("run_id") == receipt["run_id"],
+        "attempt": audit.get("attempt_id") == receipt["attempt_id"],
+        "status": audit.get("status") == "OK",
         "brands": audit.get("brand_set") == brands,
         "brand_count": audit.get("brand_set_count") == len(brands),
         "brand_hash": audit.get("brand_set_sha256") == receipt["brand_set_sha256"],
+        "pins": audit.get("pincodes_total") == receipt["pincodes_total"],
+        "rows": audit.get("total_rows") == receipt["total_rows"],
+        "capture": audit.get("merged_sha256") == receipt["merged_capture"]["sha256"],
+        "workbook": audit.get("workbook_sha256") == workbook["sha256"],
     }
-    if platform == "blinkit":
-        summary = audit.get("summary") or {}
-        common.update({
-            "date": audit.get("date") == receipt["date_ist"],
-            "pins": summary.get("pincodes_total") == 75 and summary.get("pincodes_resolved") == 75,
-            "auth": summary.get("auth_verified") == 1 and summary.get("auth_verified_pincodes") == 75,
-            "partial": summary.get("partial") is False,
-            "rows": summary.get("total_rows") == receipt["total_rows"],
-            "capture": audit.get("capture_sha256") == receipt["merged_capture"]["sha256"],
-            "workbook": audit.get("workbook_sha256") == workbook["sha256"],
-        })
-    else:
-        common.update({
-            "schema": audit.get("schema") == "jivo-direct-competitor-quality-audit-v1",
-            "platform": audit.get("platform") == platform,
-            "workflow": audit.get("workflow_kind") == receipt["workflow_kind"],
-            "date": audit.get("date_ist") == receipt["date_ist"],
-            "run": audit.get("run_id") == receipt["run_id"],
-            "status": audit.get("status") == "OK",
-            "capture": audit.get("merged_sha256") == receipt["merged_capture"]["sha256"],
-            "workbook": audit.get("workbook_sha256") == workbook["sha256"],
-        })
     if not all(common.values()):
         raise ValueError(f"delivery audit provenance/quality failed: {common}")
-    del capture
+    quality_checks = {
+        "schema": quality.get("schema") == "jivo-direct-competitor-quality-audit-v1",
+        "plan": quality.get("plan_sha256") == receipt["plan_sha256"],
+        "merge_receipt": quality.get("merge_receipt_sha256") == receipt["merge_receipt_sha256"],
+        "capture": quality.get("merged_sha256") == receipt["merged_capture"]["sha256"],
+        "workbook": quality.get("workbook_sha256") == workbook["sha256"],
+        "platform": quality.get("platform") == platform,
+        "workflow": quality.get("workflow_kind") == receipt["workflow_kind"],
+        "date": quality.get("date_ist") == receipt["date_ist"],
+        "run": quality.get("run_id") == receipt["run_id"],
+        "attempt": quality.get("attempt_id") == receipt["attempt_id"],
+        "verdict": quality.get("verdict") == "OK",
+        "brands": quality.get("brand_set") == brands,
+        "brand_count": quality.get("brand_set_count") == len(brands),
+        "brand_hash": quality.get("brand_set_sha256") == receipt["brand_set_sha256"],
+        "pins": quality.get("pincodes_total") == receipt["pincodes_total"],
+        "rows": quality.get("total_rows") == receipt["total_rows"],
+        "results": quality.get("input_result_sha256") == receipt["input_result_sha256"],
+        "progress": quality.get("input_progress_sha256") == receipt["input_progress_sha256"],
+        "terminals": quality.get("input_terminal_sha256") == receipt["input_terminal_sha256"],
+        "support": quality.get("support_files") == receipt["support_files"],
+        "code": quality.get("code_files") == receipt["code_files"],
+        "policy": quality.get("quality_policy") == receipt["quality_policy"],
+        "anchors": quality.get("anchor_brands") == receipt["anchor_brands"],
+        "competitors": quality.get("competitor_brands") == receipt["competitor_brands"],
+        "capture_brands": quality.get("capture_brands") == receipt["capture_brands"],
+    }
+    if not all(quality_checks.values()):
+        raise ValueError(f"quality audit provenance/quality failed: {quality_checks}")
+    if platform == "blinkit":
+        if capture["summary"].get("pincodes_resolved") != 75 \
+           or capture["summary"].get("auth_verified_pincodes") != 75:
+            raise ValueError("Blinkit delivery audit capture coverage failed")
     return verified, next(item for item in verified if item["name"] == required_name)
 
 
@@ -387,6 +715,32 @@ def restore_or_verify(run_dir: Path, artifacts: list[dict[str, Any]]) -> int:
     return restored
 
 
+def persist_source_receipt(
+    source: Path, receipt_root: Path, date_ist: str, run_id: str, expected_sha: str
+) -> dict[str, Any]:
+    target = receipt_root / date_ist / "source" / f"{run_id}.report.ready.json"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    expected_size = source.stat().st_size
+    if target.exists():
+        if target.is_symlink() or target.stat().st_size != expected_size \
+           or sha256_file(target) != expected_sha:
+            raise ValueError("persisted competitor source receipt changed")
+    else:
+        temp = target.with_name(f".{target.name}.part.{os.getpid()}")
+        try:
+            copy_fsync(source, temp)
+            if temp.stat().st_size != expected_size or sha256_file(temp) != expected_sha:
+                raise ValueError("persisted competitor source receipt copy mismatch")
+            os.replace(temp, target)
+        finally:
+            temp.unlink(missing_ok=True)
+    return {
+        "destination": str(target.resolve()),
+        "bytes": expected_size,
+        "sha256": expected_sha,
+    }
+
+
 def consume_run(
     run_dir: Path,
     date_ist: str,
@@ -425,7 +779,8 @@ def consume_run(
     for key, value in expected.items():
         if receipt.get(key) != value:
             raise ValueError(f"competitor receipt mismatch: {key}")
-    if match.group("day") != date_ist.replace("-", "") or not str(receipt.get("attempt_id") or ""):
+    if match.group("day") != date_ist.replace("-", "") \
+       or receipt.get("attempt_id") != match.group("attempt"):
         raise ValueError("competitor run date/attempt identity is invalid")
     for field in ("plan_sha256", "source_sha256", "scraper_sha256", "merge_receipt_sha256"):
         if not valid_hash(receipt.get(field)):
@@ -436,8 +791,16 @@ def consume_run(
     validate_hash_map(receipt, "input_result_sha256")
     validate_hash_map(receipt, "input_progress_sha256")
     validate_hash_map(receipt, "input_terminal_sha256")
-    validate_named_hashes(receipt.get("support_files"), "support_files", REQUIRED_SUPPORT)
-    validate_named_hashes(receipt.get("code_files"), "code_files", spec["code"])
+    receipt["support_files"] = validate_local_manifest(
+        receipt.get("support_files"), "support_files", REQUIRED_SUPPORT, COMPETITOR_ROOT
+    )
+    receipt["code_files"] = validate_local_manifest(
+        receipt.get("code_files"), "code_files", spec["code"], COMPETITOR_ROOT
+    )
+    trusted_scraper = REPO_ROOT / f"platforms/{platform}/scrape.js"
+    if trusted_scraper.is_symlink() or not trusted_scraper.is_file() \
+       or sha256_file(trusted_scraper) != receipt["scraper_sha256"]:
+        raise ValueError("scraper_sha256 differs from the trusted control revision")
 
     brands = normalized_brands(receipt.get("brand_set"))
     if len(brands) != receipt.get("brand_set_count") or brand_hash(brands) != receipt.get("brand_set_sha256"):
@@ -449,6 +812,13 @@ def consume_run(
     if platform == "zepto" and len(brands) < 8:
         raise ValueError("Zepto rival brand set is unexpectedly small")
     receipt["brand_set"] = brands
+    capture_scope(receipt)
+    baseline = receipt.get("baseline")
+    if not isinstance(baseline, dict) or not valid_hash(baseline.get("capture_sha256")) \
+       or not isinstance(baseline.get("capture_bytes"), int) or baseline["capture_bytes"] <= 0 \
+       or int(baseline.get("total_rows") or 0) <= 0 \
+       or int(baseline.get("unique_brands") or 0) <= 0:
+        raise ValueError("baseline provenance is missing or invalid")
 
     workbook_name, capture_name = expected_names(platform, date_ist)
     workbooks = receipt.get("workbooks")
@@ -461,12 +831,42 @@ def consume_run(
     workbook_path = verify_file(run_dir, workbook, minimum=10_000)
     capture_path = verify_file(run_dir, capture_entry)
     capture = validate_capture(capture_path, receipt, platform)
-    validate_workbook(workbook_path, platform, receipt)
+    validate_workbook(workbook_path, platform, receipt, capture)
     audits, delivery_audit = validate_audits(run_dir, receipt, platform, workbook, capture)
     artifacts = destination_manifest(
         output_dir, data_dir, audit_dir, platform, date_ist,
         workbook, capture_entry, delivery_audit,
     )
+    promotion_provenance = {
+        "platform": platform,
+        "workflow_kind": spec["workflow"],
+        "date_ist": date_ist,
+        "run_id": run_dir.name,
+        "attempt_id": receipt["attempt_id"],
+        "plan_sha256": receipt["plan_sha256"],
+        "source_sha256": receipt["source_sha256"],
+        "scraper_sha256": receipt["scraper_sha256"],
+        "merge_receipt_sha256": receipt["merge_receipt_sha256"],
+        "source_receipt_sha256": receipt_sha,
+        "merged_sha256": capture_entry["sha256"],
+        "merged_bytes": capture_entry["bytes"],
+        "input_result_sha256": receipt["input_result_sha256"],
+        "input_progress_sha256": receipt["input_progress_sha256"],
+        "input_terminal_sha256": receipt["input_terminal_sha256"],
+        "support_files": receipt["support_files"],
+        "code_files": receipt["code_files"],
+        "quality_policy": receipt["quality_policy"],
+        "baseline": receipt["baseline"],
+        "anchor_brands": receipt["anchor_brands"],
+        "competitor_brands": receipt["competitor_brands"],
+        "capture_brands": receipt["capture_brands"],
+        "brand_aliases": receipt["brand_aliases"],
+        "pincodes_total": receipt["pincodes_total"],
+        "total_rows": receipt["total_rows"],
+        "brand_set": receipt["brand_set"],
+        "brand_set_count": receipt["brand_set_count"],
+        "brand_set_sha256": receipt["brand_set_sha256"],
+    }
 
     accepted_path = receipt_root / date_ist / f"{run_dir.name}.json"
     if accepted_path.is_file():
@@ -475,8 +875,19 @@ def consume_run(
         accepted = load_json(accepted_path)
         if accepted.get("schema") != PROMOTION_SCHEMA or accepted.get("source_receipt_sha256") != receipt_sha:
             raise ValueError("accepted promotion conflicts with source receipt")
+        if any(accepted.get(key) != value for key, value in promotion_provenance.items()):
+            raise ValueError("accepted promotion provenance changed")
         if accepted.get("artifacts") != artifacts:
             raise ValueError("accepted promotion artifact manifest changed")
+        evidence = accepted.get("source_receipt")
+        if not isinstance(evidence, dict):
+            raise ValueError("accepted promotion source receipt evidence is missing")
+        evidence_path = Path(str(evidence.get("destination") or ""))
+        if evidence_path.is_symlink() or not evidence_path.is_file() \
+           or evidence_path.stat().st_size != evidence.get("bytes") \
+           or sha256_file(evidence_path) != evidence.get("sha256") \
+           or evidence.get("sha256") != receipt_sha:
+            raise ValueError("accepted promotion source receipt evidence changed")
         restored = restore_or_verify(run_dir, artifacts)
         ack = acknowledge_once(accepted_path, run_dir.name, ack_host, ack_root)
         return "existing", f"already accepted; restored={restored}; Mac acknowledgement={ack}"
@@ -504,18 +915,14 @@ def consume_run(
         for temp, _, _ in staged:
             temp.unlink(missing_ok=True)
 
+    source_evidence = persist_source_receipt(
+        source_receipt, receipt_root, date_ist, run_dir.name, receipt_sha
+    )
     accepted = {
         "schema": PROMOTION_SCHEMA,
         "status": "accepted",
-        "platform": platform,
-        "workflow_kind": spec["workflow"],
-        "date_ist": date_ist,
-        "run_id": run_dir.name,
-        "attempt_id": receipt["attempt_id"],
-        "plan_sha256": receipt["plan_sha256"],
-        "source_receipt_sha256": receipt_sha,
-        "merged_sha256": capture_entry["sha256"],
-        "brand_set_sha256": receipt["brand_set_sha256"],
+        **promotion_provenance,
+        "source_receipt": source_evidence,
         "artifacts": artifacts,
         "audits": audits,
         "accepted_at": dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
@@ -543,24 +950,34 @@ def consume_failure(source: Path, date_ist: str, failure_root: Path) -> tuple[st
     for key, value in expected.items():
         if receipt.get(key) != value:
             raise ValueError(f"competitor failure receipt mismatch: {key}")
-    if match.group("day") != date_ist.replace("-", "") or not str(receipt.get("attempt_id") or ""):
+    if match.group("day") != date_ist.replace("-", "") \
+       or receipt.get("attempt_id") != match.group("attempt"):
         raise ValueError("competitor failure date/attempt is invalid")
     if not valid_hash(receipt.get("plan_sha256")) or not str(receipt.get("phase") or "") \
        or not str(receipt.get("reason") or ""):
         raise ValueError("competitor failure provenance is incomplete")
     source_sha = sha256_file(source)
     target = failure_root / date_ist / f"{run_dir.name}.json"
+    alert_marker = target.with_suffix(".alerted.json")
     detail = {
         "run_id": run_dir.name,
         "platform": platform,
         "workflow_kind": PLATFORM[platform]["workflow"],
+        "attempt_id": receipt["attempt_id"],
+        "plan_sha256": receipt["plan_sha256"],
+        "source_receipt_sha256": source_sha,
         "phase": str(receipt["phase"]),
         "reason": str(receipt["reason"]),
+        "alert_marker": str(alert_marker),
     }
     if target.is_file():
         if load_json(target).get("source_receipt_sha256") != source_sha:
             raise ValueError("accepted competitor failure receipt changed")
-        return "existing", detail
+        if alert_marker.is_file():
+            alerted = load_json(alert_marker)
+            if alerted.get("source_receipt_sha256") == source_sha and alerted.get("status") == "alerted":
+                return "existing", detail
+        return "pending_alert", detail
     atomic_json(target, {
         "schema": FAILURE_ACCEPTED_SCHEMA,
         "status": "accepted",
@@ -589,7 +1006,7 @@ def main() -> int:
     receipt_root = Path(args.receipts)
     summary: dict[str, Any] = {
         "date": args.date, "new": 0, "existing": 0, "waiting": 0,
-        "rejected": 0, "endpoint_failures": [], "errors": [],
+        "rejected": 0, "endpoint_failures": [], "rejection_alerts": [], "errors": [],
     }
     if inbox.exists():
         for source in sorted(inbox.glob("*/report.ready.json")):
@@ -600,11 +1017,28 @@ def main() -> int:
             try:
                 source_sha = sha256_file(source)
             except OSError:
-                source_sha = "unreadable"
+                source_sha = ""
+            state_sha = package_state_sha(run_dir)
+            if not source_sha:
+                source_sha = hashlib.sha256(
+                    f"unreadable:{run_dir.name}:{state_sha}".encode("utf-8")
+                ).hexdigest()
             if rejection.is_file():
                 try:
-                    if load_json(rejection).get("source_receipt_sha256") == source_sha:
+                    rejected = load_json(rejection)
+                    if rejected.get("source_receipt_sha256") == source_sha \
+                       and rejected.get("package_state_sha256") == state_sha:
                         summary["rejected"] += 1
+                        marker = rejection.with_suffix(".alerted.json")
+                        if not alert_marker_matches(marker, source_sha, state_sha):
+                            summary["rejection_alerts"].append({
+                                "kind": "report-package",
+                                "run_id": run_dir.name,
+                                "error": str(rejected.get("error") or "rejected"),
+                                "source_receipt_sha256": source_sha,
+                                "package_state_sha256": state_sha,
+                                "alert_marker": str(marker),
+                            })
                         continue
                 except (OSError, ValueError, json.JSONDecodeError):
                     pass
@@ -616,24 +1050,79 @@ def main() -> int:
                 summary["new" if status == "accepted" else status] += 1
                 print(f"{run_dir.name}: {status}: {message}", file=sys.stderr)
             except Exception as exc:
+                summary["rejected"] += 1
                 summary["errors"].append({"run_id": run_dir.name, "error": str(exc)})
                 print(f"{run_dir.name}: rejected: {exc}", file=sys.stderr)
                 atomic_json(rejection, {
                     "schema": "jivo-direct-competitor-rejection-v1",
                     "run_id": run_dir.name,
                     "source_receipt_sha256": source_sha,
+                    "package_state_sha256": state_sha,
                     "error": str(exc),
+                })
+                summary["rejection_alerts"].append({
+                    "kind": "report-package",
+                    "run_id": run_dir.name,
+                    "error": str(exc),
+                    "source_receipt_sha256": source_sha,
+                    "package_state_sha256": state_sha,
+                    "alert_marker": str(rejection.with_suffix(".alerted.json")),
                 })
         for source in sorted(inbox.glob("*/failure.json")):
             if not source.parent.name.startswith(args.date.replace("-", "")):
                 continue
+            failure_rejection = Path(args.failure_receipts) / args.date / "rejected" / \
+                f"{hashlib.sha256(source.parent.name.encode()).hexdigest()}.json"
+            try:
+                failure_source_sha = sha256_file(source)
+            except OSError:
+                failure_source_sha = ""
+            failure_state_sha = package_state_sha(source.parent)
+            if not failure_source_sha:
+                failure_source_sha = hashlib.sha256(
+                    f"unreadable:{source.parent.name}:{failure_state_sha}".encode("utf-8")
+                ).hexdigest()
+            if failure_rejection.is_file():
+                try:
+                    rejected = load_json(failure_rejection)
+                    if rejected.get("source_receipt_sha256") == failure_source_sha \
+                       and rejected.get("package_state_sha256") == failure_state_sha:
+                        marker = failure_rejection.with_suffix(".alerted.json")
+                        if not alert_marker_matches(marker, failure_source_sha, failure_state_sha):
+                            summary["rejection_alerts"].append({
+                                "kind": "failure-receipt",
+                                "run_id": source.parent.name,
+                                "error": str(rejected.get("error") or "rejected"),
+                                "source_receipt_sha256": failure_source_sha,
+                                "package_state_sha256": failure_state_sha,
+                                "alert_marker": str(marker),
+                            })
+                        continue
+                except (OSError, ValueError, json.JSONDecodeError):
+                    pass
             try:
                 status, detail = consume_failure(source, args.date, Path(args.failure_receipts))
-                if status == "new":
+                if status in {"new", "pending_alert"}:
                     summary["endpoint_failures"].append(detail)
             except Exception as exc:
+                summary["rejected"] += 1
                 summary["errors"].append({"run_id": source.parent.name, "error": str(exc)})
                 print(f"{source.parent.name}: rejected failure receipt: {exc}", file=sys.stderr)
+                atomic_json(failure_rejection, {
+                    "schema": "jivo-direct-competitor-failure-rejection-v1",
+                    "run_id": source.parent.name,
+                    "source_receipt_sha256": failure_source_sha,
+                    "package_state_sha256": failure_state_sha,
+                    "error": str(exc),
+                })
+                summary["rejection_alerts"].append({
+                    "kind": "failure-receipt",
+                    "run_id": source.parent.name,
+                    "error": str(exc),
+                    "source_receipt_sha256": failure_source_sha,
+                    "package_state_sha256": failure_state_sha,
+                    "alert_marker": str(failure_rejection.with_suffix(".alerted.json")),
+                })
 
     for accepted in (receipt_root / args.date).glob("*.json"):
         try:

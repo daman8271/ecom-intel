@@ -11,6 +11,7 @@ CHAT=120363047864912511@g.us
 MOCK_BIN="$TMP/bin"
 CALLS="$TMP/curl.calls"
 PROMOTION_ROOT="$TMP/promotion"
+SNAPSHOT_ROOT="$TMP/snapshots"
 mkdir -p "$MOCK_BIN" "$TMP/logs" "$PROMOTION_ROOT/$DATE"
 
 make_fixture() {
@@ -75,7 +76,14 @@ printf '%s\n' "$*" >> "$COMPETITOR_TEST_CALLS"
 case " $* " in
   *"http://127.0.0.1:3001/health"*) printf '%s\n' '{"connected":true}' ;;
   *"http://127.0.0.1:3001/send-media"*) printf '%s\n' '{"success":true,"messageId":"zepto-document-123"}' ;;
-  *) printf '%s\n' '{"success":true,"messageId":"header-456"}' ;;
+  *)
+    if [ "${COMPETITOR_MUTATE_AT_HEADER:-0}" = "1" ]; then
+      printf 'changed-after-acceptance' >> "$COMPETITOR_MUTATE_REPORT"
+      printf 'changed-after-acceptance' >> "$COMPETITOR_MUTATE_CAPTURE"
+      printf 'changed-after-acceptance' >> "$COMPETITOR_MUTATE_AUDIT"
+    fi
+    printf '%s\n' '{"success":true,"messageId":"header-456"}'
+    ;;
 esac
 SH
 chmod +x "$MOCK_BIN/curl"
@@ -94,7 +102,12 @@ run_sender() {
     COMPETITOR_SENT_MARKER="$TMP/${platform}.sent" \
     COMPETITOR_WA_LOCK="$TMP/${platform}.lock" \
     DIRECT_COMPETITOR_PROMOTION_ROOT="$PROMOTION_ROOT" \
+    DIRECT_COMPETITOR_SNAPSHOT_ROOT="$SNAPSHOT_ROOT" \
     COMPETITOR_TEST_CALLS="$CALLS" \
+    COMPETITOR_MUTATE_AT_HEADER="${COMPETITOR_MUTATE_AT_HEADER:-0}" \
+    COMPETITOR_MUTATE_REPORT="$TMP/Competitor-Price-Watch-${label}-${DATE}.xlsx" \
+    COMPETITOR_MUTATE_CAPTURE="$TMP/${platform}.json" \
+    COMPETITOR_MUTATE_AUDIT="$ZEPTO_AUDIT" \
     "$@" "$SENDER" "$platform"
 }
 
@@ -108,6 +121,8 @@ grep -q 'TEST send:' <<<"$OUTPUT"
 # A successful Zepto document response records the document message ID and all
 # fields needed to prove exactly which workbook reached exactly which group.
 run_sender zepto Zepto
+[ "$(find "$SNAPSHOT_ROOT" -type f | wc -l)" -eq 3 ]
+grep -Fq "$SNAPSHOT_ROOT" "$CALLS"
 RECEIPT="$TMP/zepto.receipt.json"
 python3 - "$RECEIPT" "$TMP/Competitor-Price-Watch-Zepto-${DATE}.xlsx" "$DATE" "$CHAT" <<'PY'
 import datetime
@@ -169,6 +184,24 @@ PY
   OUTPUT="$(run_sender zepto Zepto COMPETITOR_WA_TEST=1)"
   grep -q 'TEST send:' <<<"$OUTPUT"
 done
+
+# A source mutation after the header cannot change the already inspected media
+# bytes. The durable receipt remains bound to the accepted original identity.
+ORIGINAL_SHA="$(sha256sum "$TMP/Competitor-Price-Watch-Zepto-${DATE}.xlsx" | awk '{print $1}')"
+ORIGINAL_SIZE="$(stat -c %s "$TMP/Competitor-Price-Watch-Zepto-${DATE}.xlsx")"
+COMPETITOR_MUTATE_AT_HEADER=1 run_sender zepto Zepto
+python3 - "$RECEIPT" "$TMP/Competitor-Price-Watch-Zepto-${DATE}.xlsx" "$ORIGINAL_SHA" "$ORIGINAL_SIZE" <<'PY'
+import hashlib
+import json
+import sys
+
+receipt_path, report_path, accepted_sha, accepted_size = sys.argv[1:]
+receipt = json.load(open(receipt_path, encoding="utf-8"))
+assert receipt["file"] == report_path
+assert receipt["sha256"] == accepted_sha
+assert receipt["size"] == int(accepted_size)
+assert hashlib.sha256(open(report_path, "rb").read()).hexdigest() != accepted_sha
+PY
 
 # No Zepto workbook can send unless the separate direct promotion gate accepted it.
 rm -f "$PROMOTION_ROOT/$DATE"/*.json

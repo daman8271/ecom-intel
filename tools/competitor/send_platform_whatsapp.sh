@@ -24,6 +24,7 @@ RECEIPT_DIR="$ROOT/logs/delivery-receipts/$DATE_IST"
 RECEIPT="${COMPETITOR_WA_RECEIPT:-$RECEIPT_DIR/$(basename "$REPORT").json}"
 LOCK="${COMPETITOR_WA_LOCK:-$ROOT/logs/.competitor-${PLATFORM}-wa.lock}"
 PROMOTION_ROOT="${DIRECT_COMPETITOR_PROMOTION_ROOT:-$ROOT/logs/direct-competitor-report-receipts}"
+SNAPSHOT_ROOT="${DIRECT_COMPETITOR_SNAPSHOT_ROOT:-$ROOT/logs/direct-competitor-send-snapshots}"
 
 log() {
   printf '[%s] competitor_wa(%s): %s\n' "$(TZ=Asia/Kolkata date '+%F %T %Z')" "$PLATFORM" "$*"
@@ -33,13 +34,65 @@ exec 9>"$LOCK"
 flock -n 9 || { log "another sender holds the lock"; exit 0; }
 [ -s "$REPORT" ] || { log "workbook missing: $REPORT"; exit 1; }
 [ -s "$CAPTURE" ] || { log "capture missing: $CAPTURE"; exit 1; }
+SEND_REPORT="$REPORT"
+QUALITY_CAPTURE="$CAPTURE"
 if [ "$PLATFORM" = "zepto" ]; then
-  python3 "$CODE_ROOT/tools/cron/direct_competitor_is_accepted.py" \
+  GATE_JSON="$(python3 "$CODE_ROOT/tools/cron/direct_competitor_is_accepted.py" \
     --file "$REPORT" --date "$DATE_IST" --platform zepto --receipts "$PROMOTION_ROOT" \
+    --snapshot-root "$SNAPSHOT_ROOT")" \
     || { log "workbook has no exact accepted direct-competitor promotion"; exit 1; }
+
+  snapshot_fields() {
+    python3 - "$GATE_JSON" "$REPORT" "$CAPTURE" "$DATE_IST" <<'PY'
+import hashlib
+import json
+import os
+from pathlib import Path
+import sys
+
+raw, report, capture, date = sys.argv[1:]
+value = json.loads(raw)
+if value.get("schema") != "jivo-direct-competitor-accepted-snapshot-v1" \
+   or value.get("platform") != "zepto" or value.get("date_ist") != date:
+    raise SystemExit("invalid accepted snapshot manifest")
+artifacts = value.get("artifacts")
+if not isinstance(artifacts, list) or len(artifacts) != 3:
+    raise SystemExit("accepted snapshot manifest does not have three artifacts")
+by_kind = {item.get("kind"): item for item in artifacts if isinstance(item, dict)}
+if set(by_kind) != {"workbook", "merged_capture", "delivery_audit"}:
+    raise SystemExit("accepted snapshot manifest artifact kinds are invalid")
+if by_kind["workbook"].get("original_path") != os.path.abspath(report):
+    raise SystemExit("accepted snapshot workbook identity mismatch")
+if by_kind["merged_capture"].get("original_path") != os.path.abspath(capture):
+    raise SystemExit("accepted snapshot capture identity mismatch")
+for item in by_kind.values():
+    path = Path(str(item.get("snapshot_path") or ""))
+    if path.is_symlink() or not path.is_file():
+        raise SystemExit(f"snapshot is missing or symlinked: {path}")
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()
+    if path.stat().st_size != item.get("bytes") or digest != item.get("sha256"):
+        raise SystemExit(f"snapshot hash/size mismatch: {path}")
+print(by_kind["workbook"]["snapshot_path"])
+print(by_kind["merged_capture"]["snapshot_path"])
+print(by_kind["delivery_audit"]["snapshot_path"])
+print(by_kind["workbook"]["sha256"])
+print(by_kind["workbook"]["bytes"])
+PY
+  }
+
+  SNAPSHOT_VALUES="$(snapshot_fields)" || { log "accepted snapshot validation failed"; exit 1; }
+  mapfile -t SNAPSHOT_FIELDS <<< "$SNAPSHOT_VALUES"
+  [ "${#SNAPSHOT_FIELDS[@]}" -eq 5 ] || { log "accepted snapshot fields are incomplete"; exit 1; }
+  SEND_REPORT="${SNAPSHOT_FIELDS[0]}"
+  QUALITY_CAPTURE="${SNAPSHOT_FIELDS[1]}"
+  SHA="${SNAPSHOT_FIELDS[3]}"
+  SIZE="${SNAPSHOT_FIELDS[4]}"
+else
+  SHA="$(sha256sum "$REPORT" | awk '{print $1}')"
+  SIZE="$(stat -c %s "$REPORT")"
 fi
 
-SUMMARY="$(python3 - "$CAPTURE" "$REPORT" "$PLATFORM" "$DATE_IST" <<'PY'
+SUMMARY="$(python3 - "$QUALITY_CAPTURE" "$SEND_REPORT" "$PLATFORM" "$DATE_IST" <<'PY'
 import json, sys
 from openpyxl import load_workbook
 
@@ -64,8 +117,6 @@ print(f"{summary.get('pincodes_serviceable', summary.get('pincodes_total'))} ser
 PY
 )" || { log "quality gate failed: $SUMMARY"; exit 1; }
 
-SHA="$(sha256sum "$REPORT" | awk '{print $1}')"
-SIZE="$(stat -c %s "$REPORT")"
 if [ -s "$RECEIPT" ] && python3 - "$RECEIPT" "$REPORT" "$SHA" "$SIZE" "$CHAT" "$PLATFORM" "$DATE_IST" <<'PY'
 import datetime
 import json
@@ -120,7 +171,10 @@ RESPONSE="$(curl -s --max-time 60 -X POST http://127.0.0.1:3001/send -H 'Content
 log "header response: $RESPONSE"
 grep -q '"success":true' <<<"$RESPONSE" || exit 1
 
-BODY="$(python3 -c 'import json,os,sys; p=os.path.abspath(sys.argv[1]); print(json.dumps({"chatId":sys.argv[2],"filePath":p,"mediaType":"document","fileName":os.path.basename(p)}))' "$REPORT" "$CHAT")"
+if [ "$PLATFORM" = "zepto" ]; then
+  snapshot_fields >/dev/null || { log "accepted snapshot changed before media send"; exit 1; }
+fi
+BODY="$(python3 -c 'import json,os,sys; p=os.path.abspath(sys.argv[1]); print(json.dumps({"chatId":sys.argv[3],"filePath":p,"mediaType":"document","fileName":os.path.basename(sys.argv[2])}))' "$SEND_REPORT" "$REPORT" "$CHAT")"
 RESPONSE="$(curl -s --max-time 120 -X POST http://127.0.0.1:3001/send-media -H 'Content-Type: application/json' -d "$BODY")"
 log "document response: $RESPONSE"
 

@@ -9,7 +9,7 @@ import subprocess
 import tempfile
 import unittest
 
-from openpyxl import Workbook
+from openpyxl import Workbook, load_workbook
 
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -52,27 +52,85 @@ class DirectCompetitorConsumerTest(unittest.TestCase):
             if platform == "blinkit" else ["Summary", "Anchor Watch", "Master Data"]
         )
         pins = 75 if platform == "blinkit" else 25
-        rows = [
-            {
+        brands_display = [
+            "Borges", "Del Monte", "Figaro", "Fortune", "Gulab",
+            "Hudson", "Oreal", "Saffola", "Sundrop", "Tata",
+        ]
+        brands = sorted(brand.casefold() for brand in brands_display)
+        captured_at = "2026-07-14T19:00:00Z"
+        rows = []
+        per_pin = []
+        for index in range(pins):
+            pincode = f"{100000 + index:06d}"
+            brand = brands_display[index % len(brands_display)]
+            row = {
                 "platform": platform,
-                "pincode": f"{100000 + index:06d}",
-                "brand": "Fortune",
+                "city": f"City-{index // 3:02d}",
+                "pincode": pincode,
+                "store_id": f"store-{index}",
+                "brand": brand,
+                "name": f"{brand} Test Oil {index}",
                 "canonical": f"oil-{index}",
+                "category": "cooking oil",
+                "pack": "1 L",
+                "vol_ml": 1000,
+                "per_litre": 100,
                 "sale": 100,
                 "mrp": 110,
                 "discount_pct": 9.0909,
                 "in_stock": 1,
+                "rank": index + 1,
+                "is_ad": 0,
+                "captured_at": captured_at,
             }
-            for index in range(pins)
-        ]
+            rows.append(row)
+            per_pin.append({
+                "city": row["city"],
+                "locality": f"Locality-{index}",
+                "lat": 20.0 + index / 1000,
+                "lon": 70.0 + index / 1000,
+                "pincode": pincode,
+                "resolved": True,
+                "auth_accepted": 1,
+                "serviceable": True,
+                "blocked": None,
+                "rows": [row],
+            })
         workbook = Workbook()
         workbook.remove(workbook.active)
         for name in sheets:
             sheet = workbook.create_sheet(name)
-            sheet.append(["header", "value"])
-            count = 81 if name == "Run Scope" else (pins if name == "Master Data" else 120)
-            for index in range(count):
-                sheet.append([f"row-{index}", hashlib.sha256(f"{name}-{index}".encode()).hexdigest()])
+            if name == "Master Data":
+                sheet.append([
+                    "Platform", "Brand", "JIVO?", "Search Category (scraped)", "Oil Type (name)",
+                    "Grade (name)", "Matched Anchor", "Blend?", "City", "Pincode", "Store ID",
+                    "Name", "Pack", "Vol (ml)", "MRP Rs", "Sale Rs", "Rs/L", "Discount %",
+                    "In stock", "Rank", "Ad?", "Captured",
+                ])
+                for row in rows:
+                    sheet.append([
+                        platform.title(), row["brand"], "", row["category"], "", "", "", "",
+                        row["city"], row["pincode"], row["store_id"], row["name"], row["pack"],
+                        row["vol_ml"], row["mrp"], row["sale"], row["per_litre"],
+                        round(row["discount_pct"] / 100, 4), "Yes", row["rank"], "",
+                        row["captured_at"][:16].replace("T", " "),
+                    ])
+            elif name == "Run Scope":
+                for row_number in range(1, 83):
+                    sheet.cell(row=row_number, column=1, value=f"meta-{row_number}")
+                for row_number, item in enumerate(per_pin, 8):
+                    sheet.cell(row=row_number, column=1, value=item["city"])
+                    sheet.cell(row=row_number, column=2, value=item["pincode"])
+                    sheet.cell(row=row_number, column=3, value=item["locality"])
+                    sheet.cell(row=row_number, column=4, value="Mac Pro" if row_number % 2 else "Windows")
+                    sheet.cell(row=row_number, column=5, value="Yes")
+                    sheet.cell(row=row_number, column=6, value="Yes")
+                    sheet.cell(row=row_number, column=7, value=1)
+                    sheet.cell(row=row_number, column=8, value=item["rows"][0]["brand"])
+            else:
+                sheet.append(["header", "value"])
+                for index in range(120):
+                    sheet.append([f"row-{index}", hashlib.sha256(f"{name}-{index}".encode()).hexdigest()])
         workbook.save(book)
 
         summary = {
@@ -84,7 +142,14 @@ class DirectCompetitorConsumerTest(unittest.TestCase):
             "pincodes_blocked": 0,
             "pincodes_with_rows": pins,
             "total_rows": pins,
+            "unique_brands": len(brands),
             "partial": False,
+            "captured_at": captured_at,
+            "scope": {
+                "anchors": ["Jivo", "Sano"],
+                "competitors": brands_display,
+                "capture_brands": ["Jivo", "Sano", *brands_display],
+            },
         }
         if platform == "blinkit":
             summary.update({
@@ -92,43 +157,36 @@ class DirectCompetitorConsumerTest(unittest.TestCase):
                 "auth_verified": 1,
                 "auth_verified_pincodes": 75,
             })
-            brands = sorted({"borges", "del monte", "figaro", "fortune", "gulab", "hudson", "oreal", "saffola", "sundrop", "tata"})
         else:
             summary["pincodes_serviceable"] = 25
-            brands = sorted({"borges", "del monte", "figaro", "fortune", "gulab", "hudson", "oreal", "saffola", "sundrop", "tata"})
         capture = run / f"{platform}_competitor_{DATE}.json"
-        capture.write_text(json.dumps({"summary": summary, "allRows": rows}), encoding="utf-8")
+        capture.write_text(
+            json.dumps({"summary": summary, "perPin": per_pin, "allRows": rows, "partial": False}),
+            encoding="utf-8",
+        )
 
         audit_name = f"blinkit-top8-{DATE}.audit.json" if platform == "blinkit" else f"zepto-competitor-{DATE}.audit.json"
         audit = run / audit_name
-        if platform == "blinkit":
-            audit_value = {
-                "date": DATE,
-                "summary": {**summary, "scope": {"competitors": brands}},
-                "brand_set": brands,
-                "brand_set_count": len(brands),
-                "brand_set_sha256": brand_hash(brands),
-                "capture_sha256": sha256(capture),
-                "workbook_sha256": sha256(book),
-            }
-        else:
-            audit_value = {
-                "schema": "jivo-direct-competitor-quality-audit-v1",
-                "platform": platform,
-                "workflow_kind": workflow,
-                "date_ist": DATE,
-                "run_id": run_id,
-                "status": "OK",
-                "brand_set": brands,
-                "brand_set_count": len(brands),
-                "brand_set_sha256": brand_hash(brands),
-                "merged_sha256": sha256(capture),
-                "workbook_sha256": sha256(book),
-            }
+        audit_value = {
+            "schema": "jivo-direct-competitor-delivery-audit-v1",
+            "platform": platform,
+            "workflow_kind": workflow,
+            "date_ist": DATE,
+            "run_id": run_id,
+            "attempt_id": "01",
+            "status": "OK",
+            "brand_set": brands,
+            "brand_set_count": len(brands),
+            "brand_set_sha256": brand_hash(brands),
+            "pincodes_total": pins,
+            "total_rows": pins,
+            "merged_sha256": sha256(capture),
+            "workbook_sha256": sha256(book),
+        }
         audit.write_text(json.dumps(audit_value), encoding="utf-8")
 
         support = [
-            {"name": name, "sha256": hashlib.sha256(name.encode()).hexdigest()}
+            {"name": name, "sha256": sha256(ROOT / "tools/competitor" / name)}
             for name in (
                 "category_queries.json", "competitor_brands.json", "competitor_match_map.json",
                 "maps_to_jivo.json", "oil_classifier.json",
@@ -137,7 +195,7 @@ class DirectCompetitorConsumerTest(unittest.TestCase):
         code_names = ["build_competitor_report.py"]
         if platform == "blinkit":
             code_names += ["select_blinkit_top8_pincodes.py", "build_blinkit_top8_daily.py"]
-        code = [{"name": name, "sha256": hashlib.sha256(name.encode()).hexdigest()} for name in code_names]
+        code = [{"name": name, "sha256": sha256(ROOT / "tools/competitor" / name)} for name in code_names]
         policy = {
             "min_rows_per_source_pincode": 1.0,
             "min_unique_brands": 8,
@@ -169,17 +227,86 @@ class DirectCompetitorConsumerTest(unittest.TestCase):
             "support_files": support,
             "code_files": code,
             "quality_policy": policy,
+            "baseline": {
+                "name": "baseline.json",
+                "capture_sha256": "9" * 64,
+                "capture_bytes": 100,
+                "total_rows": pins,
+                "pincodes_with_rows": pins,
+                "unique_brands": len(brands),
+            },
+            "anchor_brands": ["Jivo", "Sano"],
+            "competitor_brands": brands_display,
+            "capture_brands": ["Jivo", "Sano", *brands_display],
+            "brand_aliases": {"oriel": "oreal"},
             "pincodes_total": pins,
             "total_rows": pins,
             "brand_set": brands,
             "brand_set_count": len(brands),
             "brand_set_sha256": brand_hash(brands),
             "merged_capture": {"name": capture.name, "bytes": capture.stat().st_size, "sha256": sha256(capture)},
-            "audits": [{"name": audit.name, "bytes": audit.stat().st_size, "sha256": sha256(audit)}],
+            "audits": [],
             "workbooks": [{"name": book.name, "bytes": book.stat().st_size, "sha256": sha256(book)}],
         }
+        receipt["scraper_sha256"] = sha256(ROOT / "platforms" / platform / "scrape.js")
+        quality = run / "quality-audit.json"
+        quality_value = {
+            "schema": "jivo-direct-competitor-quality-audit-v1",
+            "plan_sha256": receipt["plan_sha256"],
+            "merge_receipt_sha256": receipt["merge_receipt_sha256"],
+            "merged_sha256": receipt["merged_sha256"],
+            "workbook_sha256": receipt["workbooks"][0]["sha256"],
+            "platform": platform,
+            "workflow_kind": workflow,
+            "date_ist": DATE,
+            "run_id": run_id,
+            "attempt_id": "01",
+            "verdict": "OK",
+            "brand_set": brands,
+            "brand_set_count": len(brands),
+            "brand_set_sha256": brand_hash(brands),
+            "pincodes_total": pins,
+            "total_rows": pins,
+            "input_result_sha256": receipt["input_result_sha256"],
+            "input_progress_sha256": receipt["input_progress_sha256"],
+            "input_terminal_sha256": receipt["input_terminal_sha256"],
+            "support_files": support,
+            "code_files": code,
+            "quality_policy": policy,
+            "anchor_brands": receipt["anchor_brands"],
+            "competitor_brands": receipt["competitor_brands"],
+            "capture_brands": receipt["capture_brands"],
+        }
+        quality.write_text(json.dumps(quality_value), encoding="utf-8")
+        receipt["audits"] = [
+            {"name": quality.name, "bytes": quality.stat().st_size, "sha256": sha256(quality)},
+            {"name": audit.name, "bytes": audit.stat().st_size, "sha256": sha256(audit)},
+        ]
         (run / "report.ready.json").write_text(json.dumps(receipt), encoding="utf-8")
         return run, receipt, book, capture
+
+    def refresh_package(self, run: Path, receipt: dict, book: Path, capture: Path) -> None:
+        receipt["merged_sha256"] = sha256(capture)
+        receipt["merged_bytes"] = capture.stat().st_size
+        receipt["merged_capture"] = {
+            "name": capture.name, "bytes": capture.stat().st_size, "sha256": sha256(capture),
+        }
+        receipt["workbooks"] = [
+            {"name": book.name, "bytes": book.stat().st_size, "sha256": sha256(book)}
+        ]
+        for name in ("quality-audit.json", f"{receipt['workflow_kind']}-{DATE}.audit.json"):
+            path = run / name
+            if not path.exists():
+                continue
+            value = json.loads(path.read_text())
+            value["merged_sha256"] = sha256(capture)
+            value["workbook_sha256"] = sha256(book)
+            path.write_text(json.dumps(value))
+        receipt["audits"] = [
+            {"name": name, "bytes": (run / name).stat().st_size, "sha256": sha256(run / name)}
+            for name in ("quality-audit.json", f"{receipt['workflow_kind']}-{DATE}.audit.json")
+        ]
+        (run / "report.ready.json").write_text(json.dumps(receipt))
 
     def consume(self) -> subprocess.CompletedProcess[str]:
         return subprocess.run(
@@ -318,10 +445,118 @@ class DirectCompetitorConsumerTest(unittest.TestCase):
         (run / "failure.json").write_text(json.dumps(failure))
         first = self.consume()
         self.assertEqual(first.returncode, 0, first.stderr)
-        self.assertEqual(len(json.loads(first.stdout)["endpoint_failures"]), 1)
+        detail = json.loads(first.stdout)["endpoint_failures"][0]
         second = self.consume()
         self.assertEqual(second.returncode, 0, second.stderr)
-        self.assertEqual(len(json.loads(second.stdout)["endpoint_failures"]), 0)
+        self.assertEqual(len(json.loads(second.stdout)["endpoint_failures"]), 1)
+        Path(detail["alert_marker"]).write_text(json.dumps({
+            "status": "alerted",
+            "source_receipt_sha256": detail["source_receipt_sha256"],
+        }))
+        third = self.consume()
+        self.assertEqual(third.returncode, 0, third.stderr)
+        self.assertEqual(len(json.loads(third.stdout)["endpoint_failures"]), 0)
+
+    def test_actual_one_brand_capture_cannot_claim_ten(self) -> None:
+        run, receipt, book, capture = self.build_package()
+        value = json.loads(capture.read_text())
+        for row in value["allRows"]:
+            row["brand"] = "Fortune"
+        for item in value["perPin"]:
+            for row in item["rows"]:
+                row["brand"] = "Fortune"
+        capture.write_text(json.dumps(value))
+        self.refresh_package(run, receipt, book, capture)
+        result = self.consume()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("brand coverage", result.stderr)
+
+    def test_rows_concentrated_on_one_pin_are_rejected(self) -> None:
+        run, receipt, book, capture = self.build_package()
+        value = json.loads(capture.read_text())
+        first_pin = value["perPin"][0]["pincode"]
+        for row in value["allRows"]:
+            row["pincode"] = first_pin
+        for item in value["perPin"]:
+            for row in item["rows"]:
+                row["pincode"] = first_pin
+        capture.write_text(json.dumps(value))
+        self.refresh_package(run, receipt, book, capture)
+        result = self.consume()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("geo identity differs", result.stderr)
+
+    def test_per_pin_flattened_rows_and_counters_are_authoritative(self) -> None:
+        mutations = {
+            "duplicate pin": lambda value: value["perPin"][1].update(
+                {"pincode": value["perPin"][0]["pincode"]}
+            ),
+            "flattened mismatch": lambda value: value["perPin"][0]["rows"][0].update(
+                {"sale": 99, "discount_pct": 10}
+            ),
+            "blocked mismatch": lambda value: value["perPin"][0].update({"blocked": "HTTP 429"}),
+            "metadata mismatch": lambda value: value["perPin"][0].update({"city": "Wrong City"}),
+        }
+        for index, (label, mutate) in enumerate(mutations.items(), 1):
+            with self.subTest(label=label):
+                run, receipt, book, capture = self.build_package(seconds=f"0001{index:02d}")
+                value = json.loads(capture.read_text())
+                mutate(value)
+                capture.write_text(json.dumps(value))
+                self.refresh_package(run, receipt, book, capture)
+                result = self.consume()
+                self.assertNotEqual(result.returncode, 0)
+                self.assertFalse((self.output / book.name).exists())
+
+    def test_workbook_same_count_with_changed_pin_is_rejected(self) -> None:
+        run, receipt, book, capture = self.build_package()
+        workbook = load_workbook(book)
+        workbook["Master Data"]["J2"] = "999999"
+        workbook.save(book)
+        self.refresh_package(run, receipt, book, capture)
+        result = self.consume()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("Master Data content differs", result.stderr)
+
+    def test_attempt_must_match_run_suffix(self) -> None:
+        run, receipt, _, _ = self.build_package()
+        receipt["attempt_id"] = "99"
+        (run / "report.ready.json").write_text(json.dumps(receipt))
+        result = self.consume()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("attempt identity", result.stderr)
+
+    def test_receipt_first_then_exact_artifact_arrival_recovers(self) -> None:
+        run, _, book, capture = self.build_package()
+        saved = capture.read_bytes()
+        capture.unlink()
+        first = self.consume()
+        self.assertNotEqual(first.returncode, 0)
+        capture.write_bytes(saved)
+        second = self.consume()
+        self.assertEqual(second.returncode, 0, second.stderr)
+        self.assertEqual(json.loads(second.stdout)["new"], 1)
+        self.assertTrue((self.output / book.name).is_file())
+
+    def test_rejection_alert_remains_pending_until_exact_ack(self) -> None:
+        run, receipt, _, _ = self.build_package()
+        receipt["schema"] = "bad"
+        (run / "report.ready.json").write_text(json.dumps(receipt))
+        first = self.consume()
+        first_summary = json.loads(first.stdout)
+        self.assertEqual(len(first_summary["rejection_alerts"]), 1)
+        second = self.consume()
+        second_summary = json.loads(second.stdout)
+        self.assertEqual(len(second_summary["rejection_alerts"]), 1)
+        alert = second_summary["rejection_alerts"][0]
+        marker = Path(alert["alert_marker"])
+        marker.write_text(json.dumps({
+            "status": "alerted",
+            "source_receipt_sha256": alert["source_receipt_sha256"],
+            "package_state_sha256": alert["package_state_sha256"],
+        }))
+        third = self.consume()
+        self.assertEqual(json.loads(third.stdout)["rejection_alerts"], [])
 
     def test_poison_package_does_not_block_valid_package(self) -> None:
         bad, receipt, _, _ = self.build_package(seconds="000001")

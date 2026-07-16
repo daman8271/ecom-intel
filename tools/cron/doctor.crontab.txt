@@ -46,9 +46,11 @@
 */5 10-16 * * * cd /opt/ecom-intel && ./tools/cron/blinkit_whatsapp_delivery_sweep.sh watchdog >> logs/blinkit_whatsapp_delivery_sweep.cron.log 2>&1   # blinkit post-10:00 immediate WhatsApp watchdog
 # Blinkit top-8 collection is endpoint-owned. The legacy control-host starter is
 # intentionally absent because it stages and merges shards through this host.
-*/5 10-13 * * * cd /opt/ecom-intel && ./tools/competitor/send_blinkit_top8_whatsapp.sh cron >> logs/blinkit-top8-wa.cron.log 2>&1   # top-8 Ecom-group delivery retry
+30-59/5 10 * * * cd /opt/ecom-intel && ./tools/competitor/send_blinkit_top8_whatsapp.sh cron >> logs/blinkit-top8-wa.cron.log 2>&1   # top-8 Ecom-group delivery retry; hard 10:30 earliest
+*/5 11-13 * * * cd /opt/ecom-intel && ./tools/competitor/send_blinkit_top8_whatsapp.sh cron >> logs/blinkit-top8-wa.cron.log 2>&1   # top-8 Ecom-group delivery retry
 5 12 * * * cd /opt/ecom-intel && ./tools/competitor/blinkit_top8_deadline_guard.sh >> logs/blinkit-top8-deadline.cron.log 2>&1   # top-8 12:00 Ecom-group deadline
-*/5 10-23 * * * cd /opt/ecom-intel && ./tools/competitor/send_platform_whatsapp.sh zepto >> logs/zepto-competitor-wa.cron.log 2>&1   # Zepto competitor receipt-safe Ecom-group delivery retry
+30-59/5 10 * * * cd /opt/ecom-intel && ./tools/competitor/send_platform_whatsapp.sh zepto >> logs/zepto-competitor-wa.cron.log 2>&1   # Zepto competitor receipt-safe retry; hard 10:30 earliest
+*/5 11-23 * * * cd /opt/ecom-intel && ./tools/competitor/send_platform_whatsapp.sh zepto >> logs/zepto-competitor-wa.cron.log 2>&1   # Zepto competitor receipt-safe Ecom-group delivery retry
 7 12 * * * cd /opt/ecom-intel && ./tools/competitor/zepto_competitor_deadline_guard.sh >> logs/zepto-competitor-deadline.cron.log 2>&1   # Zepto competitor 12:00 Ecom-group deadline
 35 10 * * * cd /opt/ecom-intel && ./tools/cron/direct_competitor_expected_guard.sh >> logs/direct-competitor-expected.cron.log 2>&1   # no-plan/no-terminal competitor alert; never launches fallback
 35 10 * * * cd /opt/ecom-intel && ./tools/cron/morning_report_guard.sh check >> logs/morning_report_guard.log 2>&1   # general morning check; Blinkit remains pending until 11:00
