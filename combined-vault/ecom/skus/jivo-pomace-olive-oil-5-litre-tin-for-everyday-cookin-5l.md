@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-07-14
-observations: 114
+last_seen: 2026-07-16
+observations: 133
 min_price: 1685
 max_price: 1950
-latest_price: 1699
+latest_price: 1709
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -25,15 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1926 (61.5% off)
-- [[amazon-now]] — latest ₹1699 (66.0% off)
+- [[amazon-now]] — latest ₹1709 (65.8% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (6)
-[[amazon-now-2026-07-14-0808]] · [[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
+## Runs that observed this SKU (7)
+[[amazon-now-2026-07-16-0808]] · [[amazon-now-2026-07-14-0808]] · [[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
 
-## Price history (114 observations)
+## Price history (133 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -151,6 +151,25 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-14-0808,2026-07-14,amazon-now,Bengaluru,560040,1783,4999,64.3,1
 2026-07-14-0808,2026-07-14,amazon-now,Gurugram,122007,1685,4999,66.3,1
 2026-07-14-0808,2026-07-14,amazon-now,Mumbai,400027,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Bengaluru,560001,1783,4999,64.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Bengaluru,560026,1783,4999,64.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Bengaluru,560050,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Bengaluru,560079,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Delhi,110027,1685,4999,66.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Delhi,110033,1685,4999,66.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Delhi,110047,1685,4999,66.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Delhi,110087,1685,4999,66.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Gurugram,122010,1685,4999,66.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Gurugram,122012,1685,4999,66.3,1
+2026-07-16-0808,2026-07-16,amazon-now,Kolkata,700061,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Mumbai,400034,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Mumbai,400042,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Mumbai,400064,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Mumbai,400074,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Mumbai,400087,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Mumbai,400089,1699,4999,66,1
+2026-07-16-0808,2026-07-16,amazon-now,Pune,411002,1709,4999,65.8,1
+2026-07-16-0808,2026-07-16,amazon-now,Pune,411035,1709,4999,65.8,1
 ```
 
 ---

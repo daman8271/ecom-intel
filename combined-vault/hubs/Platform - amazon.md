@@ -54,7 +54,7 @@ Up: [[Home]]
 - [[CLOVE 100G]] — ref ₹249 / live ₹— (⚪ OOS)
 - [[COCONUT 1L]] — ref ₹559 / live ₹— (⚪ OOS)
 - [[COCONUT 200ML]] — ref ₹149 / live ₹— (⚪ OOS)
-- [[COCONUT 500ML]] — ref ₹259 / live ₹259 (🟦 MATCH)
+- [[COCONUT 500ML]] — ref ₹259 / live ₹— (⚪ OOS)
 - [[COFFEE]] — ref ₹249 / live ₹249 (🟦 MATCH)
 - [[CUMIN SEEDS 100G]] — ref ₹75 / live ₹— (⚪ OOS)
 - [[DESI GHEE 1KG]]
@@ -72,7 +72,7 @@ Up: [[Home]]
 - [[EXTRA VIRGIN 1L]] — ref ₹799 / live ₹799 (🟦 MATCH)
 - [[EXTRA VIRGIN 200ML]] — ref ₹199 / live ₹189 (🟢 BELOW)
 - [[EXTRA VIRGIN 250ML]] — ref ₹219 / live ₹— (⚪ OOS)
-- [[EXTRA VIRGIN 2L]] — ref ₹1619 / live ₹1309 (🟢 BELOW)
+- [[EXTRA VIRGIN 2L]] — ref ₹1619 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 3L]] — ref ₹2429 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 500ML]] — ref ₹419 / live ₹409 (🟢 BELOW)
 - [[EXTRA VIRGIN 5L]] — ref ₹3799 / live ₹3761 (🟢 BELOW)
@@ -86,11 +86,11 @@ Up: [[Home]]
 - [[GREEN CARDAMOM 100G]] — ref ₹499 / live ₹499 (🟦 MATCH)
 - [[GROUNDNUT 1L]] — ref ₹239 / live ₹199 (🟢 BELOW)
 - [[GROUNDNUT 5+1L]]
-- [[GROUNDNUT 5L]] — ref ₹1239 / live ₹1029 (🟢 BELOW)
+- [[GROUNDNUT 5L]] — ref ₹1239 / live ₹1019 (🟢 BELOW)
 - [[JEERA JUICE]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 1+1+1L]]
-- [[JIVO POMACE 1+1L]] — ref ₹869 / live ₹758 (🟢 BELOW)
-- [[JIVO POMACE 1L]] — ref ₹429 / live ₹379 (🟢 BELOW)
+- [[JIVO POMACE 1+1L]] — ref ₹869 / live ₹760 (🟢 BELOW)
+- [[JIVO POMACE 1L]] — ref ₹429 / live ₹380 (🟢 BELOW)
 - [[JIVO POMACE 2L]] — ref ₹869 / live ₹849 (🟢 BELOW)
 - [[JIVO POMACE 5L]] — ref ₹1999 / live ₹1699 (🟢 BELOW)
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — ref ₹219 / live ₹— (⚪ OOS)
@@ -130,7 +130,7 @@ Up: [[Home]]
 - [[SANO POMACE 1+1L]]
 - [[SANO POMACE 1L]] — ref ₹419 / live ₹399 (🟢 BELOW)
 - [[SANO POMACE 5L]] — ref ₹2069 / live ₹1751 (🟢 BELOW)
-- [[SANO SOYABEAN 1L]] — ref ₹199 / live ₹189 (🟢 BELOW)
+- [[SANO SOYABEAN 1L]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[SANO SOYABEAN 5L]] — ref ₹949 / live ₹939 (🟢 BELOW)
 - [[SANO SUNFLOWER 1L]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[SANO SUNFLOWER 5L]] — ref ₹1069 / live ₹979 (🟢 BELOW)
@@ -151,7 +151,7 @@ Up: [[Home]]
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹679 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 4L]] — ref ₹909 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 5L]] — ref ₹999 / live ₹855 (🟢 BELOW)
+- [[SUNFLOWER 5L]] — ref ₹999 / live ₹869 (🟢 BELOW)
 - [[SUNFLOWER SEEDS 200 GM]] — ref ₹139 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 400G]] — ref ₹259 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 800G]] — ref ₹389 / live ₹— (⚪ OOS)

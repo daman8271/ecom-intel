@@ -5,8 +5,8 @@ display_name: JIVO Soybean Oil Soyabean Oil (1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-15
-observations: 113
+last_seen: 2026-07-16
+observations: 171
 min_price: 149
 max_price: 182
 latest_price: 182
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[flipkart-minutes]] — latest ₹182 (8.0% off)
 
 ## Available in cities
-[[Delhi]] · [[Ghaziabad]] · [[Gurugram]] · [[Howrah]] · [[Jaipur]] · [[Jalandhar]] · [[Kolkata]] · [[Lucknow]] · [[Ludhiana]] · [[Noida]]
+[[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurugram]] · [[Howrah]] · [[Jaipur]] · [[Jalandhar]] · [[Kolkata]] · [[Lucknow]] · [[Ludhiana]] · [[Mohali]] · [[Noida]]
 
-## Runs that observed this SKU (2)
-[[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (3)
+[[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (113 observations)
+## Price history (171 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -147,6 +147,64 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-15-0645,2026-07-15,flipkart-minutes,Lucknow,226017,182,199,8,0
 2026-07-15-0645,2026-07-15,flipkart-minutes,Lucknow,226029,182,199,8,0
 2026-07-15-0645,2026-07-15,flipkart-minutes,Noida,201304,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Chandigarh,160006,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Chandigarh,160012,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Chandigarh,160017,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Chandigarh,160020,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110030,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110042,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110069,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110076,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110095,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Ghaziabad,201011,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711101,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711102,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711104,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711105,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711107,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711113,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711202,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Howrah,711203,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jaipur,302040,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jaipur,302044,182,199,8,1
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jalandhar,144022,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jalandhar,144041,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jalandhar,144805,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700002,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700003,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700005,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700006,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700008,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700014,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700016,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700017,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700032,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700034,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700038,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700039,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700040,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700041,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700043,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700047,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700053,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700060,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700061,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700067,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700070,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700071,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700072,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700087,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700088,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700092,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700094,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Kolkata,700095,149,199,25,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226013,182,199,8,1
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226017,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226021,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226022,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226029,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226031,182,199,8,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Mohali,160059,182,199,8,0
 ```
 
 ---
