@@ -5,8 +5,8 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (4 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-15
-observations: 4
+last_seen: 2026-07-16
+observations: 13
 min_price: 674
 max_price: 674
 latest_price: 674
@@ -25,12 +25,12 @@ Up: [[skus-index]]
 - [[flipkart-minutes]] — latest ₹674 (32.0% off)
 
 ## Available in cities
-[[Delhi]] · [[Ludhiana]]
+[[Delhi]] · [[Jalandhar]] · [[Lucknow]] · [[Ludhiana]]
 
-## Runs that observed this SKU (2)
-[[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (3)
+[[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (4 observations)
+## Price history (13 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -38,6 +38,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-14-0645,2026-07-14,flipkart-minutes,Ludhiana,141010,674,1000,32,0
 2026-07-14-0645,2026-07-14,flipkart-minutes,Ludhiana,141011,674,1000,32,0
 2026-07-15-0645,2026-07-15,flipkart-minutes,Delhi,110070,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110030,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110070,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Delhi,110076,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jalandhar,144022,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jalandhar,144041,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Jalandhar,144805,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226013,674,1000,32,1
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226028,674,1000,32,0
+2026-07-16-0645,2026-07-16,flipkart-minutes,Lucknow,226031,674,1000,32,0
 ```
 
 ---
