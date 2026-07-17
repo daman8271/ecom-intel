@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-31
-last_seen: 2026-07-16
-observations: 21
-min_price: 849
+last_seen: 2026-07-17
+observations: 22
+min_price: 749
 max_price: 849
-latest_price: 849
+latest_price: 749
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -25,15 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹849 (41.4% off)
-- [[amazon-now]] — latest ₹849 (41.4% off)
+- [[amazon-now]] — latest ₹749 (48.3% off)
 
 ## Available in cities
 [[Delhi]] · [[Kolkata]]
 
-## Runs that observed this SKU (6)
-[[amazon-now-2026-07-16-0808]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (7)
+[[amazon-now-2026-07-17-0811]] · [[amazon-now-2026-07-16-0808]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (21 observations)
+## Price history (22 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -58,6 +58,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700053,849,1449,41.4,1
 2026-06-01-1200,2026-06-01,amazon-fresh,Kolkata,700141,849,1449,41.4,1
 2026-07-16-0808,2026-07-16,amazon-now,Delhi,110027,849,1449,41.4,1
+2026-07-17-0811,2026-07-17,amazon-now,Delhi,110061,749,1449,48.3,1
 ```
 
 ---

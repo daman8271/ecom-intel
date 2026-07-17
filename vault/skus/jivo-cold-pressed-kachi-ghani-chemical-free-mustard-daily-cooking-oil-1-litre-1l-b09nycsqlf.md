@@ -5,11 +5,11 @@ display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-07-16
-observations: 396
+last_seen: 2026-07-17
+observations: 470
 min_price: 163
 max_price: 255
-latest_price: 193
+latest_price: 184
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹193 (24.3% off)
+- [[amazon-fresh]] — latest ₹184 (27.8% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Lucknow]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (9)
-[[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (10)
+[[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]] · [[amazon-fresh-2026-06-06-1211]] · [[amazon-fresh-2026-06-06-0712]] · [[amazon-fresh-2026-06-05-1613]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (396 observations)
+## Price history (470 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -430,6 +430,80 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0708,2026-07-16,amazon-fresh,Noida,201311,193,255,24.3,1
 2026-07-16-0708,2026-07-16,amazon-fresh,Noida,201312,202,255,20.8,1
 2026-07-16-0708,2026-07-16,amazon-fresh,Noida,201318,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560001,178,255,30.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560003,178,255,30.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560004,170,255,33.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560006,178,255,30.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560029,178,255,30.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560035,170,255,33.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560036,178,255,30.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560040,178,255,30.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560072,178,255,30.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110003,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110006,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110007,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110016,183,255,28.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110021,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110026,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110031,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110033,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110035,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110044,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110048,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110052,188,255,26.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110055,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110091,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Delhi,110092,183,255,28.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Gurugram,122001,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Gurugram,122002,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Gurugram,122007,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Gurugram,122010,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Gurugram,122012,192,255,24.7,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Gurugram,122051,183,255,28.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Hyderabad,500002,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Hyderabad,500066,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Jaipur,302020,170,255,33.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Jaipur,302033,170,255,33.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Lucknow,226011,170,255,33.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400001,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400003,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400004,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400007,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400009,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400010,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400011,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400012,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400013,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400014,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400015,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400016,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400018,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400019,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400020,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400021,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400022,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400026,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400030,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400033,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400067,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mumbai,400075,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mysuru,570004,170,255,33.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Mysuru,570016,170,255,33.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201301,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201303,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201304,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201305,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201307,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201309,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201310,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201311,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201312,183,255,28.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Noida,201318,193,255,24.3,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Pune,411005,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Pune,411011,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Pune,411014,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Pune,411015,184,255,27.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Pune,411057,184,255,27.8,1
 ```
 
 ---

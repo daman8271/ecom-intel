@@ -5,8 +5,8 @@ display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking
 platforms:
   - amazon-fresh
 first_seen: 2026-06-12
-last_seen: 2026-07-16
-observations: 26
+last_seen: 2026-07-17
+observations: 31
 min_price: 356
 max_price: 383
 latest_price: 383
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Chennai]] · [[Delhi]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]]
 
-## Runs that observed this SKU (5)
-[[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
+## Runs that observed this SKU (6)
+[[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
 
-## Price history (26 observations)
+## Price history (31 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -60,6 +60,11 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-13-0707,2026-07-13,amazon-fresh,Kochi,682040,369,815,54.7,1
 2026-07-16-0708,2026-07-16,amazon-fresh,Kochi,682011,383,815,53,1
 2026-07-16-0708,2026-07-16,amazon-fresh,Kochi,682040,383,815,53,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Chennai,600016,383,815,53,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Chennai,600025,383,815,53,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Chennai,600083,383,815,53,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kochi,682011,383,815,53,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kochi,682040,383,815,53,1
 ```
 
 ---

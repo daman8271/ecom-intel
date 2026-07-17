@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-16
-observations: 304
+last_seen: 2026-07-17
+observations: 312
 latest_status: NOT_LISTED
 below_days: 9
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-green-cardamom-8mm-elaichi-whole-natural-spices-no-artificial
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-16) — ref ₹499 vs live ₹-
-- **Days below reference:** 9 of 38
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-17) — ref ₹479 vs live ₹-
+- **Days below reference:** 9 of 39
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-29]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]]
 
-## Ref-vs-live history (304 observations)
+## Ref-vs-live history (312 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -349,6 +349,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-16,flipkart,OOS,BAU,499,,,,,,0,false
 2026-07-16,flipkart-minutes,NOT_LISTED,BAU,499,,,,,,0,false
 2026-07-16,zepto,NOT_LISTED,BAU,499,,,,,,0,false
+2026-07-17,amazon,ABOVE,SVD,479,499,499,499,20,4.18,0,true
+2026-07-17,amazon-fresh,NOT_LISTED,SVD,479,,,,,,0,false
+2026-07-17,amazon-now,NOT_LISTED,SVD,479,,,,,,0,false
+2026-07-17,bigbasket,NOT_LISTED,SVD,479,,,,,,0,false
+2026-07-17,blinkit,NOT_LISTED,SVD,479,,,,,,0,false
+2026-07-17,flipkart,OOS,SVD,479,,,,,,0,false
+2026-07-17,flipkart-minutes,NOT_LISTED,SVD,479,,,,,,0,false
+2026-07-17,zepto,NOT_LISTED,SVD,479,,,,,,0,false
 ```
 
 ---
