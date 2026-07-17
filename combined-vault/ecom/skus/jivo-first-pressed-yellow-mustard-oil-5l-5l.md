@@ -5,11 +5,11 @@ display_name: Jivo First Pressed Yellow Mustard Oil 5L (5 l)
 platforms:
   - amazon-fresh
 first_seen: 2026-06-30
-last_seen: 2026-07-16
-observations: 242
+last_seen: 2026-07-17
+observations: 256
 min_price: 999
 max_price: 1795
-latest_price: 1199
+latest_price: 1099
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo First Pressed Yellow Mustard Oil 5L (5 l)**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹1199 (33.2% off)
+- [[amazon-fresh]] — latest ₹1099 (38.8% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (12)
-[[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (13)
+[[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (242 observations)
+## Price history (256 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -276,6 +276,20 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0708,2026-07-16,amazon-fresh,Kolkata,700069,1199,1795,33.2,1
 2026-07-16-0708,2026-07-16,amazon-fresh,Kolkata,700100,1199,1795,33.2,1
 2026-07-16-0708,2026-07-16,amazon-fresh,Kolkata,700107,1199,1795,33.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560001,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560003,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560006,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560036,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560040,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Bengaluru,560072,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Chennai,600016,1199,1795,33.2,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kolkata,700001,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kolkata,700009,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kolkata,700015,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kolkata,700019,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kolkata,700069,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kolkata,700100,1099,1795,38.8,1
+2026-07-17-0707,2026-07-17,amazon-fresh,Kolkata,700107,1099,1795,38.8,1
 ```
 
 ---

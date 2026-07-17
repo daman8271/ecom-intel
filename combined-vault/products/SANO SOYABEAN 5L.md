@@ -35,11 +35,11 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-16).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-17).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 949 | 939 | -1.05 | 🟢 BELOW | BAU | 2026-07-16 |
+| [[Platform - amazon\|amazon]] | 899 | 939 | 4.45 | 🔴 ABOVE | SVD | 2026-07-17 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
