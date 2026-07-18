@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-17
-observations: 312
+last_seen: 2026-07-18
+observations: 320
 latest_status: NOT_LISTED
-below_days: 13
+below_days: 14
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-17) — ref ₹899 vs live ₹-
-- **Days below reference:** 13 of 39
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-18) — ref ₹899 vs live ₹-
+- **Days below reference:** 14 of 40
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]]
 
-## Ref-vs-live history (312 observations)
+## Ref-vs-live history (320 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -357,6 +357,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-17,flipkart,NOT_LISTED,SVD,899,,,,,,0,false
 2026-07-17,flipkart-minutes,NOT_LISTED,SVD,899,,,,,,0,false
 2026-07-17,zepto,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-18,amazon,BELOW,SVD,899,889,889,889,-10,-1.11,1,true
+2026-07-18,amazon-fresh,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-18,amazon-now,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-18,bigbasket,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-18,blinkit,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-18,flipkart,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-18,flipkart-minutes,NOT_LISTED,SVD,899,,,,,,0,false
+2026-07-18,zepto,NOT_LISTED,SVD,899,,,,,,0,false
 ```
 
 ---
