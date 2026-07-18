@@ -1,0 +1,94 @@
+{
+  "platform": "flipkart-minutes",
+  "run_id": "daily-2026-07-17",
+  "verdict": "OK",
+  "review_verdict": "OK",
+  "review_reasons": [],
+  "deep_reasons": [],
+  "reasons": [
+    "all checks pass"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no store spans >2 cities (242 stores, 25 cities, 100% rows carry a store_id)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "13 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "585 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 585 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/585 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (585/940 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 11.1h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "flipkart-minutes: healthy",
+  "quarantined": false,
+  "evaluated_at": "2026-07-17T12:30:45.236260+00:00",
+  "source_result": "/opt/ecom-intel/platforms/flipkart-minutes/result.json"
+}
