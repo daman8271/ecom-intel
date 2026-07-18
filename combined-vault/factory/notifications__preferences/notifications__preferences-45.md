@@ -1,7 +1,7 @@
 ---
 type: factory-notifications__preferences
 id: 45
-title: "Returnable Items Gated Out"
+title: "Material Indent Approved for Purchase"
 entity: Preferences
 source_endpoint: /notifications/preferences/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Returnable Items Gated Out
+# Material Indent Approved for Purchase
 
 > Preferences from `/notifications/preferences/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **id:** 45
-- **code:** RETURNABLE_GATE_OUT
-- **name:** Returnable Items Gated Out
-- **description:** Returnable Items Gated Out
+- **code:** MATERIAL_INDENT_APPROVED
+- **name:** Material Indent Approved for Purchase
+- **description:** Material Indent Approved for Purchase
 - **is_enabled:** True

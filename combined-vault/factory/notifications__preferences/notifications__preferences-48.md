@@ -1,7 +1,7 @@
 ---
 type: factory-notifications__preferences
 id: 48
-title: "Returnable Items Collected by Department"
+title: "Returnable Gate Pass Awaiting Approval"
 entity: Preferences
 source_endpoint: /notifications/preferences/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Returnable Items Collected by Department
+# Returnable Gate Pass Awaiting Approval
 
 > Preferences from `/notifications/preferences/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **id:** 48
-- **code:** RETURNABLE_ACKNOWLEDGED
-- **name:** Returnable Items Collected by Department
-- **description:** Returnable Items Collected by Department
+- **code:** RETURNABLE_SUBMITTED
+- **name:** Returnable Gate Pass Awaiting Approval
+- **description:** Returnable Gate Pass Awaiting Approval
 - **is_enabled:** True

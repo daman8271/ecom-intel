@@ -24,18 +24,21 @@ tags:
   ```json
   {"id": 2, "name": "Front gate", "location": null, "is_active": true}
   ```
-- **gate_out:** None
+- **gate_out:**
+  ```json
+  {"id": 2, "name": "Front gate", "location": null, "is_active": true}
+  ```
 - **name_snapshot:** Sachin 8368013371
 - **photo_snapshot:** None
 - **entry_time:** 2026-07-13T11:32:59.542025+05:30
 - **actual_entry_time:** 2026-07-13T11:32:00+05:30
-- **exit_time:** None
+- **exit_time:** 2026-07-14T08:15:01.721468+05:30
 - **purpose:** Meeting ekampreet 
 - **vehicle_no:** None
 - **remarks:** None
-- **status:** IN
+- **status:** OUT
 - **created_at:** 2026-07-13T11:32:59.542118+05:30
-- **updated_at:** 2026-07-13T11:32:59.542130+05:30
+- **updated_at:** 2026-07-14T08:15:01.724000+05:30
 - **visitor:** 179
 - **labour:** None
 - **approved_by:** None
@@ -43,5 +46,6 @@ tags:
 
 ## Related
 - gate_in -> [[pgate-2]]
+- gate_out -> [[pgate-2]]
 - person_type -> [[ptype-1]]
 - visitor -> [[vis-179]]

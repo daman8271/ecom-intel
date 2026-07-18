@@ -26,6 +26,9 @@ tags:
   {"id": 23, "name": "BAJRANG FREIGHT CARRIER", "contact_person": "Bajrang", "mobile_no": "9812311165", "gstin": "", "created_at": "2026-02-25T16:13:32.257546+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-25T16:13:35.293883+05:30
 
 ## Related

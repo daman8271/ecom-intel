@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR69E9959"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR69E9959
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35604
-- **doc_num:** 706260882
+- **doc_entry:** 35722
+- **doc_num:** 706260945
 - **doc_date:** 2026-06-30
-- **doc_total:** 39103.00
+- **doc_total:** 376596.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C PUNJAB
-- **ship_to_address:** PUNJAB-146001IN
-- **place_of_supply:** PB
-- **bp_gstin:** 
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURGAON
+- **ship_to_address:** AHAZOUR (FAIZABAD) BADLI JHAJJAR  B 1200GURGAON-124105IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR69E9959
+- **transporter_name:** Jivo Vehicle
+- **bilty_no:** NA
+- **bilty_date:** 2026-07-14
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000397 - CANOLA 5 + 1 LTR SET, SL0000009 - CANOLA 1 LTR PACK OF 2, FG0000032 - COLD PRESS 1 LTR 20 PCS, SL0000043 - COLD PRESS GROUNDNUT  1 LTR, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000044 - COLD PRESS GROUNDNUT  1 LTR PACK OF 2, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000050 - DESI GHEE 500 ML 1 PCS, FG0000082 - DESI GHEE A2 500 MLS 16 PCS, SL0000059 - EXTRA LIGHT 1 LTR PACK OF 2, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000075 - EXTRA VIRGIN 5 LTR, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000094 - JIVO GOLD 1 LTR PACK OF 2, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000096 - JIVO GOLD  5 LTR + 1 LTR, FG0000128 - JIVO GOLD 5 LTR 4 PCS, FG0000149 - JIVO GOLD 1 LTR 20 PCS, SL0000120 - MUSTARD 5 LTR, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000154 - SANO POMACE 1 LTR PACK OF 2, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, SL0000210 - SO OLIVE OIL 1 LTR 16 PCS, FG0000228 - SO OLIVE 1L 16 PCS
-- **base_refs:** 1506264697
-- **total_quantity:** 106.000
-- **total_litres:** 251.500
+- **warehouses:** DL-FG
+- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE
+- **base_refs:** 1706264780
+- **total_quantity:** 1169.000
+- **total_litres:** 1387.000
 - **total_boxes:** 0.000
-- **total_weight:** 163.129
-- **line_count:** 38
+- **total_weight:** 1371.885
+- **line_count:** 8
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 35604, "sap_invoice_doc_num": "706260882", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 1254, "sap_invoice_doc_entry": 35722, "sap_invoice_doc_num": "706260945", "invoice_number": "706260945", "eway_bill": "721651410960", "invoice_weight": "1371.885", "invoice_amount": "376596.00", "place_of_supply": "HR", "location": "Delivery Address: HHS1 R K WorldInfocom Pvt Ltd B 1200, Pahazour (Faizabad) Badli, Jhajjar Gurgaon 124105", "product_variety": "Oil", "total_litres": "1387.000", "effective_month": "2026-06", "budget_delivery_point": "GURGAON", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 205, "transporter_id": 64, "driver_id": null, "linked_vehicle_entry_id": 1990, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-15T06:35:04.238464Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-14", "priority": "15/07/2026 08:00 PM IST", "transporter_name": "MAHAVIR TRANSPORT COMPANY", "transporter_gstin": "06AOUPJ8083N1ZZ", "contact_person": "ABC", "mobile_no": "9588567100", "vehicle_no": "DL01LAC8007", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3683", "bilty_date": "2026-07-15", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-15_at_11.54.01_AM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-15 at 11.54.01 AM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "Appointment Time : 15/07/2026 08:00 PM IST", "created_at": "2026-07-13T20:19:09.190000+05:30", "updated_at": "2026-07-15T12:05:04.252063+05:30"}
   ```

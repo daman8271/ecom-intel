@@ -26,6 +26,9 @@ tags:
   {"id": 5, "name": "OHLAN ROAD CARRIER", "contact_person": "OHLAN ROAD CARRIER", "mobile_no": "8930882389", "gstin": "", "created_at": "2026-02-20T14:15:44.279307+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-20T14:16:15.345002+05:30
 
 ## Related

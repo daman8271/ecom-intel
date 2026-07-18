@@ -35,10 +35,6 @@ tags:
 - **transporter:** 50
 - **driver:** 269
 - **dispatch_date:** 2026-07-09
-- **documents:**
-  ```json
-  [{"id": 732, "dispatch_plan": 1093, "document_type": "INVOICE", "sap_doc_entry": 36154, "sap_doc_num": "607260127", "sap_doc_date": "2026-07-08", "sap_doc_total": "680400.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264539", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS", "base_refs": "1707264539", "total_quantity": "1008.000", "total_litres": "1008.000", "total_boxes": "0.000", "total_weight": "1005.089", "created_at": "2026-07-09T12:33:58.543951+05:30", "updated_at": "2026-07-09T12:33:58.543963+05:30"}, {"id": 733, "dispatch_plan": 1091, "document_type": "INVOICE", "sap_doc_entry": 36156, "sap_doc_num": "607260128", "sap_doc_date": "2026-07-08", "sap_doc_total": "677000.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264510", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS", "base_refs": "1707264510", "total_quantity": "4000.000", "total_litres": "4000.000", "total_boxes": "0.000", "total_weight": "3948.080", "created_at": "2026-07-09T12:33:58.547571+05:30", "updated_at": "2026-07-09T12:33:58.547584+05:30"}, {"id": 734, "dispatch_plan": 1092, "document_type": "INVOICE", "sap_doc_entry": 36160, "sap_doc_num": "607260129", "sap_doc_date": "2026-07-08", "sap_doc_total": "1057680.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264527", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "base_refs": "1707264527", "total_quantity": "5424.000", "total_litres": "5424.000", "total_boxes": "0.000", "total_weight": "5408.135", "created_at": "2026-07-09T12:33:58.549883+05:30", "updated_at": "2026-07-09T12:33:58.549896+05:30"}]
-  ```
 - **document_count:** 3
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-09T14:02:33.226751+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000064
 - **random_code:** Mn2-2CuwkB0F
-- **qr_payload:** {"entry_no":"DOCK-20260709-0008","gatepass_no":"DCK/JIVO_MART/2026-27/000064","document_type":"INVOICE","sap_doc_entry":36154,"sap_doc_num":"607260127, 607260128, 607260129","documents":[{"document_type":"INVOICE","sap_doc_entry":36154,"sap_doc_num":"607260127"},{"document_type":"INVOICE","sap_doc_entry":36156,"sap_doc_num":"607260128"},{"document_type":"INVOICE","sap_doc_entry":36160,"sap_doc_num":"607260129"}],"vehicle_no":"HR67C4904","random_code":"Mn2-2CuwkB0F"}
 - **uom:** PCS
 - **physical_quantity:** 10432.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-09T08:40:00Z
-- **items:**
-  ```json
-  [{"id": 2033, "document": 732, "document_sap_doc_num": "607260127", "line_num": 0, "item_code": "FG0000042", "item_name": "EXTRA VIRGIN OLIVE 1 LTR 16 PCS", "quantity": "1008.000", "uom": "PCS", "rate": "642.8571", "line_total": "647999.96", "gross_total": "680400.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264539", "base_entry": 10782, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "1008.000", "total_boxes": "0.000", "total_weight": "1005.089"}, {"id": 2034, "document": 733, "document_sap_doc_num": "607260128", "line_num": 1, "item_code": "FG0000081", "item_name": "COLD PRESS SUNFLOWER 1 LTR 20 PCS", "quantity": "4000.000", "uom": "PCS", "rate": "161.1905", "line_total": "644762.00", "gross_total": "677000.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264510", "base_entry": 10728, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "4000.000", "total_boxes": "0.000", "total_weight": "3948.080"}, {"id": 2035, "document": 734, "document_sap_doc_num": "607260129", "line_num": 2, "item_code": "FG0000142", "item_name": "COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "quantity": "5424.000", "uom": "PCS", "rate": "185.7143", "line_total": "1007314.36", "gross_total": "1057680.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264527", "base_entry": 10761, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "5424.000", "total_boxes": "0.000", "total_weight": "5408.135"}]
-  ```
 - **created_at:** 2026-07-09T12:33:58.541073+05:30
 - **updated_at:** 2026-07-09T14:12:15.526638+05:30
 

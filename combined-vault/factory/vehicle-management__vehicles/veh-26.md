@@ -26,6 +26,9 @@ tags:
   {"id": 19, "name": "ROYALPRIME", "contact_person": "Royal", "mobile_no": "1234567891", "gstin": "", "created_at": "2026-02-24T17:44:52.636232+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-24T17:44:55.840344+05:30
 
 ## Related

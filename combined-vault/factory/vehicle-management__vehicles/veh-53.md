@@ -26,6 +26,9 @@ tags:
   {"id": 31, "name": "Jivo", "contact_person": "Vicky veer ji", "mobile_no": "0000000000", "gstin": "", "created_at": "2026-03-07T14:24:42.457795+05:30"}
   ```
 - **capacity_ton:** 9.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-07T14:25:17.117611+05:30
 
 ## Related

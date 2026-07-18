@@ -35,10 +35,6 @@ tags:
 - **transporter:** 47
 - **driver:** 251
 - **dispatch_date:** 2026-07-08
-- **documents:**
-  ```json
-  [{"id": 711, "dispatch_plan": 1100, "document_type": "INVOICE", "sap_doc_entry": 36117, "sap_doc_num": "607260125", "sap_doc_date": "2026-07-08", "sap_doc_total": "0.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264526", "sap_comments": "", "customer_code": "CUSTA000906", "customer_name": "EVARA ENTERPRISES", "ship_to_code": "EVARA ENTERPRISES PUNJAB", "ship_to_address": "VILLAGE SARINH  NEAR SINGH MOTORS MALERKOTLA ROAD\rLUDHIANA-141116\rIN", "place_of_supply": "PB", "bp_gstin": "03AALFE9594L1ZR", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "PM0000541 - CARTON 1 LTR 20 PCS PET 40 GM", "base_refs": "1707264526", "total_quantity": "100.000", "total_litres": "0.000", "total_boxes": "0.000", "total_weight": "0.000", "created_at": "2026-07-08T18:17:36.945150+05:30", "updated_at": "2026-07-08T18:17:36.945190+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-08T20:15:04.436729+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000062
 - **random_code:** N7wLB3A89pxs
-- **qr_payload:** {"entry_no":"DOCK-20260708-0020","gatepass_no":"DCK/JIVO_MART/2026-27/000062","document_type":"INVOICE","sap_doc_entry":36117,"sap_doc_num":"607260125","documents":[{"document_type":"INVOICE","sap_doc_entry":36117,"sap_doc_num":"607260125"}],"vehicle_no":"HR67D9270","random_code":"N7wLB3A89pxs"}
 - **uom:** PCS
 - **physical_quantity:** None
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-08T14:54:00Z
-- **items:**
-  ```json
-  [{"id": 1973, "document": 711, "document_sap_doc_num": "607260125", "line_num": 0, "item_code": "PM0000541", "item_name": "CARTON 1 LTR 20 PCS PET 40 GM", "quantity": "100.000", "uom": "PCS", "rate": "0.0000", "line_total": "0.00", "gross_total": "0.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264526", "base_entry": 10758, "base_type": 17, "tax_code": "IGST@5", "total_litres": "0.000", "total_boxes": "0.000", "total_weight": "0.000"}]
-  ```
 - **created_at:** 2026-07-08T18:17:36.940752+05:30
 - **updated_at:** 2026-07-08T20:24:57.304214+05:30
 

@@ -41,16 +41,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-17).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-18).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 239 | 249 | 4.18 | 🔴 ABOVE | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-fresh]] | 239 | 239 | 0 | 🟦 MATCH | SVD | 2026-07-17 |
+| [[Platform - amazon\|amazon]] | 239 | 239 | 0 | 🟦 MATCH | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-fresh]] | 239 | 239 | 0 | 🟦 MATCH | SVD | 2026-07-18 |
 | [[Platform - amazon\|amazon-now]] | 239 | 239 | 0 | 🟦 MATCH | SVD | 2026-07-12 |
-| [[Platform - bigbasket\|bigbasket]] | 239 | 284.04 | 18.85 | 🔴 ABOVE | SVD | 2026-07-17 |
-| [[Platform - blinkit\|blinkit]] | 239 | 239 | 0 | 🟦 MATCH | SVD | 2026-07-17 |
-| [[Platform - flipkart\|flipkart]] | 239 | 268 | 12.13 | 🔴 ABOVE | SVD | 2026-07-17 |
+| [[Platform - bigbasket\|bigbasket]] | 239 | 288.65 | 20.77 | 🔴 ABOVE | SVD | 2026-07-18 |
+| [[Platform - blinkit\|blinkit]] | 239 | 239 | 0 | 🟦 MATCH | SVD | 2026-07-18 |
+| [[Platform - flipkart\|flipkart]] | 239 | 268 | 12.13 | 🔴 ABOVE | SVD | 2026-07-18 |
 | [[Platform - flipkart\|flipkart-minutes]] | 249 | 234 | -6.02 | 🟢 BELOW | BAU | 2026-07-13 |
 
 ## JIVO lens
@@ -82,6 +82,6 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000032`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000032]]
-- **1948 boxes:** [[box-121196]] · [[box-121197]] · [[box-121198]] … +1945 more (tag `bridge/FG0000032`)
-- **47 pallets:** [[pal-184]] · [[pal-200]] · [[pal-2519]] … +44 more (tag `bridge/FG0000032`)
+- **2044 boxes:** [[box-121196]] · [[box-121197]] · [[box-121198]] … +2041 more (tag `bridge/FG0000032`)
+- **49 pallets:** [[pal-184]] · [[pal-200]] · [[pal-2519]] … +46 more (tag `bridge/FG0000032`)
 

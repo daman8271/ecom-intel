@@ -35,10 +35,6 @@ tags:
 - **transporter:** 54
 - **driver:** 229
 - **dispatch_date:** 2026-06-16
-- **documents:**
-  ```json
-  [{"id": 32, "dispatch_plan": 328, "document_type": "INVOICE", "sap_doc_entry": 34706, "sap_doc_num": "606260140", "sap_doc_date": "2026-06-15", "sap_doc_total": "1040000.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264581", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS", "base_refs": "1706264581", "total_quantity": "800.000", "total_litres": "16000.000", "total_boxes": "0.000", "total_weight": "4080.640", "created_at": "2026-06-17T14:29:54.067565+05:30", "updated_at": "2026-06-17T14:29:54.067581+05:30"}, {"id": 33, "dispatch_plan": 327, "document_type": "INVOICE", "sap_doc_entry": 34708, "sap_doc_num": "606260141", "sap_doc_date": "2026-06-15", "sap_doc_total": "260000.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264586", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS", "base_refs": "1706264586", "total_quantity": "200.000", "total_litres": "4000.000", "total_boxes": "0.000", "total_weight": "1020.160", "created_at": "2026-06-17T14:29:54.074071+05:30", "updated_at": "2026-06-17T14:29:54.074085+05:30"}, {"id": 34, "dispatch_plan": 326, "document_type": "INVOICE", "sap_doc_entry": 34712, "sap_doc_num": "606260142", "sap_doc_date": "2026-06-15", "sap_doc_total": "1193500.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264530", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS", "base_refs": "1706264530", "total_quantity": "7700.000", "total_litres": "154000.000", "total_boxes": "0.000", "total_weight": "7474.621", "created_at": "2026-06-17T14:29:54.076354+05:30", "updated_at": "2026-06-17T14:29:54.076366+05:30"}]
-  ```
 - **document_count:** 3
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-06-17T14:45:35.357435+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000002
 - **random_code:** I6Vjg5N8Kq81
-- **qr_payload:** {"entry_no":"DOCK-20260617-0006","gatepass_no":"DCK/JIVO_MART/2026-27/000002","document_type":"INVOICE","sap_doc_entry":34706,"sap_doc_num":"606260140, 606260141, 606260142","documents":[{"document_type":"INVOICE","sap_doc_entry":34706,"sap_doc_num":"606260140"},{"document_type":"INVOICE","sap_doc_entry":34708,"sap_doc_num":"606260141"},{"document_type":"INVOICE","sap_doc_entry":34712,"sap_doc_num":"606260142"}],"vehicle_no":"DL01MB2623","random_code":"I6Vjg5N8Kq81"}
 - **uom:** PCS
 - **physical_quantity:** None
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-06-17T10:06:00Z
-- **items:**
-  ```json
-  [{"id": 76, "document": 32, "document_sap_doc_num": "606260140", "line_num": 0, "item_code": "FG0000151", "item_name": "SANO POMACE OLIVE 5 LTR TIN 4 PCS", "quantity": "800.000", "uom": "PCS", "rate": "1238.0952", "line_total": "990476.16", "gross_total": "1040000.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264581", "base_entry": 10433, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "16000.000", "total_boxes": "0.000", "total_weight": "4080.640"}, {"id": 77, "document": 33, "document_sap_doc_num": "606260141", "line_num": 1, "item_code": "FG0000151", "item_name": "SANO POMACE OLIVE 5 LTR TIN 4 PCS", "quantity": "200.000", "uom": "PCS", "rate": "1238.0952", "line_total": "247619.04", "gross_total": "260000.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264586", "base_entry": 10439, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "4000.000", "total_boxes": "0.000", "total_weight": "1020.160"}, {"id": 78, "document": 34, "document_sap_doc_num": "606260142", "line_num": 2, "item_code": "FG0000030", "item_name": "MUSTARD KACHI GHANI 1 LTR 20 PCS", "quantity": "7700.000", "uom": "PCS", "rate": "147.6190", "line_total": "1136666.30", "gross_total": "1193500.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264530", "base_entry": 10334, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "154000.000", "total_boxes": "0.000", "total_weight": "7474.621"}]
-  ```
 - **created_at:** 2026-06-17T14:29:54.061318+05:30
 - **updated_at:** 2026-06-17T15:37:11.639830+05:30
 

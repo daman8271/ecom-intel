@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR67C4904"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,38 +10,38 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR67C4904
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36439
-- **doc_num:** 607260146
-- **doc_date:** 2026-07-10
-- **doc_total:** 1015500.00
+- **doc_entry:** 36639
+- **doc_num:** 607260174
+- **doc_date:** 2026-07-16
+- **doc_total:** 256738.00
 - **branch_id:** 2
 - **branch_name:** HARYANA
-- **card_code:** CUSTA000907
-- **card_name:** SUSTAINQUEST PRIVATE LIMITED
-- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
-- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** RK WORLDINFOCOM PVT LTD HARYANA
+- **ship_to_address:** BLOCK J2,FARUKHNAGAR LOGISTICS PARKS LLPGURUGRAM-122506IN
 - **place_of_supply:** HR
-- **bp_gstin:** 06ABOCS2792M1ZK
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** HR67C4904
-- **transporter_name:** Mahaveer Transport
-- **bilty_no:** 3678
-- **bilty_date:** 2026-07-11
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** BH-FGM
-- **item_summary:** FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
-- **base_refs:** 1707264550
-- **total_quantity:** 6000.000
-- **total_litres:** 6000.000
+- **item_summary:** FG0000230 - RICE BRAN OIL 5 LTR 4 PCS
+- **base_refs:** 1707264598
+- **total_quantity:** 360.000
+- **total_litres:** 1800.000
 - **total_boxes:** 0.000
-- **total_weight:** 5922.120
+- **total_weight:** 1785.600
 - **line_count:** 1
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": 1197, "sap_invoice_doc_entry": 36439, "sap_invoice_doc_num": "607260146", "invoice_number": "607260146", "eway_bill": "372289756890", "invoice_weight": "5922.120", "invoice_amount": "1015500.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "6000.000", "effective_month": "2026-07", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 308, "transporter_id": 22, "driver_id": null, "linked_vehicle_entry_id": 1849, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-11T17:41:07.987980Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-11", "priority": "High", "transporter_name": "JIVO WELLNESS PVT LTD", "transporter_gstin": "", "contact_person": "Jivo Wellness", "mobile_no": "1234567891", "vehicle_no": "HR69F9627", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "na", "bilty_date": "2026-07-11", "bilty_attachment": "/media/sales_dispatch/attachments/AR_Invoice_607260143.pdf", "bilty_attachment_name": "AR Invoice 607260143.pdf", "freight": "0.35", "total_freight": "0.35", "kanta_weight": null, "remarks": "", "created_at": "2026-07-11T10:14:14.644584+05:30", "updated_at": "2026-07-11T23:11:08.000974+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 36639, "sap_invoice_doc_num": "607260174", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

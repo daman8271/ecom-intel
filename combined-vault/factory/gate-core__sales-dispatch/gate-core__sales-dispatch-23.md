@@ -35,10 +35,6 @@ tags:
 - **transporter:** 81
 - **driver:** 232
 - **dispatch_date:** 2026-06-17
-- **documents:**
-  ```json
-  [{"id": 35, "dispatch_plan": 346, "document_type": "INVOICE", "sap_doc_entry": 34683, "sap_doc_num": "706260331", "sap_doc_date": "2026-06-15", "sap_doc_total": "675200.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1706264580", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "R K WORLDINFOCOM PVT LTD GURUGRAM", "ship_to_address": "VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARK\rGURUGRAM-122103\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS", "base_refs": "1706264580", "total_quantity": "4220.000", "total_litres": "84400.000", "total_boxes": "0.000", "total_weight": "4165.224", "created_at": "2026-06-17T14:57:21.268427+05:30", "updated_at": "2026-06-17T14:57:21.268447+05:30"}, {"id": 36, "dispatch_plan": 345, "document_type": "INVOICE", "sap_doc_entry": 34758, "sap_doc_num": "706260378", "sap_doc_date": "2026-06-16", "sap_doc_total": "1594320.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1706264587", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "R K WORLDINFOCOM PVT LTD GURUGRAM", "ship_to_address": "VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARK\rGURUGRAM-122103\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS", "base_refs": "1706264587", "total_quantity": "2000.000", "total_litres": "40000.000", "total_boxes": "0.000", "total_weight": "9825.000", "created_at": "2026-06-17T14:57:21.272154+05:30", "updated_at": "2026-06-17T14:57:21.272167+05:30"}, {"id": 37, "dispatch_plan": 371, "document_type": "INVOICE", "sap_doc_entry": 34771, "sap_doc_num": "706260382", "sap_doc_date": "2026-06-17", "sap_doc_total": "292824.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1706264594", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "R K WORLDINFOCOM PVT LTD GURUGRAM", "ship_to_address": "VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARK\rGURUGRAM-122103\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "base_refs": "1706264594", "total_quantity": "1400.000", "total_litres": "22400.000", "total_boxes": "0.000", "total_weight": "1395.905", "created_at": "2026-06-17T14:57:21.274527+05:30", "updated_at": "2026-06-17T14:57:21.274540+05:30"}]
-  ```
 - **document_count:** 3
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-06-17T18:14:51.991276+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000003
 - **random_code:** WXowpVOSU8ub
-- **qr_payload:** {"entry_no":"DOCK-20260617-0007","gatepass_no":"DCK/JIVO_MART/2026-27/000003","document_type":"INVOICE","sap_doc_entry":34683,"sap_doc_num":"706260331, 706260378, 706260382","documents":[{"document_type":"INVOICE","sap_doc_entry":34683,"sap_doc_num":"706260331"},{"document_type":"INVOICE","sap_doc_entry":34758,"sap_doc_num":"706260378"},{"document_type":"INVOICE","sap_doc_entry":34771,"sap_doc_num":"706260382"}],"vehicle_no":"HR63G3533","random_code":"WXowpVOSU8ub"}
 - **uom:** PCS
 - **physical_quantity:** None
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-06-17T12:49:00Z
-- **items:**
-  ```json
-  [{"id": 79, "document": 35, "document_sap_doc_num": "706260331", "line_num": 0, "item_code": "FG0000081", "item_name": "COLD PRESS SUNFLOWER 1 LTR 20 PCS", "quantity": "4220.000", "uom": "PCS", "rate": "152.3810", "line_total": "643047.82", "gross_total": "675200.42", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264580", "base_entry": 10431, "base_type": 17, "tax_code": "IGST@5", "total_litres": "84400.000", "total_boxes": "0.000", "total_weight": "4165.224"}, {"id": 80, "document": 36, "document_sap_doc_num": "706260378", "line_num": 1, "item_code": "FG0000053", "item_name": "COLD PRESS SUNFLOWER 5 LTR 4 PCS", "quantity": "2000.000", "uom": "PCS", "rate": "759.2000", "line_total": "1518400.00", "gross_total": "1594320.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264587", "base_entry": 10442, "base_type": 17, "tax_code": "IGST@5", "total_litres": "40000.000", "total_boxes": "0.000", "total_weight": "9825.000"}, {"id": 81, "document": 37, "document_sap_doc_num": "706260382", "line_num": 2, "item_code": "FG0000142", "item_name": "COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "quantity": "1400.000", "uom": "PCS", "rate": "199.2000", "line_total": "278880.00", "gross_total": "292824.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264594", "base_entry": 10452, "base_type": 17, "tax_code": "IGST@5", "total_litres": "22400.000", "total_boxes": "0.000", "total_weight": "1395.905"}]
-  ```
 - **created_at:** 2026-06-17T14:57:21.265263+05:30
 - **updated_at:** 2026-06-17T18:20:12.402071+05:30
 

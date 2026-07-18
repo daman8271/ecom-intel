@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "HR63F7981"
+title: "DL01MA6176"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# HR63F7981
+# DL01MA6176
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35451
-- **doc_num:** 706260779
-- **doc_date:** 2026-06-26
-- **doc_total:** 1378320.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
-- **ship_to_address:** VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARKGURUGRAM-122103IN
+- **doc_entry:** 35567
+- **doc_num:** 606260188
+- **doc_date:** 2026-06-29
+- **doc_total:** 1575000.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000907
+- **card_name:** SUSTAINQUEST PRIVATE LIMITED
+- **ship_to_code:** SUSTAINQUEST PRIVATE LIMITED HR
+- **ship_to_address:** SECTOR 37  MILE STONE 12/3 NH 44FARIDABAD-121003IN
 - **place_of_supply:** HR
-- **bp_gstin:** 06AAECR0564M1Z7
+- **bp_gstin:** 06ABOCS2792M1ZK
 - **eway_bill:** 
-- **vehicle_no:** HR63F7981
-- **transporter_name:** Amazon vehicle pickup
-- **bilty_no:** 780
-- **bilty_date:** 2026-06-27
+- **vehicle_no:** DL01MA6176
+- **transporter_name:** Arnav Transport
+- **bilty_no:** 7097
+- **bilty_date:** 2026-06-30
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS
-- **base_refs:** 1706264697
-- **total_quantity:** 8000.000
-- **total_litres:** 8000.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS
+- **base_refs:** 1706264727
+- **total_quantity:** 10000.000
+- **total_litres:** 10000.000
 - **total_boxes:** 0.000
-- **total_weight:** 7916.270
-- **line_count:** 2
+- **total_weight:** 9707.300
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 660, "sap_invoice_doc_entry": 35451, "sap_invoice_doc_num": "706260779", "invoice_number": "706260779", "eway_bill": "741646386643", "invoice_weight": "7916.270", "invoice_amount": "1378320.00", "place_of_supply": "HR", "location": "Delivery Address: DED5 R K WorldInfocom Pvt Ltd Emporium Industrial Park India Pvt Ltd ESR Sohna Logistics Park, Village Rahaka GURUGRAM 122103 India", "product_variety": "Oil", "total_litres": "8000.000", "effective_month": "2026-06", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 333, "transporter_id": 81, "driver_id": null, "linked_vehicle_entry_id": 1176, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-27T12:00:52.016107Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-27", "priority": "HIGH", "transporter_name": "Amazon Freight (ASSPL)", "transporter_gstin": "29AAICA3918J1ZE", "contact_person": "rishabh", "mobile_no": "8802345622", "vehicle_no": "HR63F7981", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "na", "bilty_date": "2026-06-27", "bilty_attachment": "/media/sales_dispatch/attachments/AR_-_706260779.pdf", "bilty_attachment_name": "AR - 706260779.pdf", "freight": "2195.12", "total_freight": "2195.12", "kanta_weight": null, "remarks": "28/06/2026 04:00 PM IST", "created_at": "2026-06-26T19:29:52.679138+05:30", "updated_at": "2026-06-27T17:30:52.029923+05:30"}
+  {"id": 708, "sap_invoice_doc_entry": 35567, "sap_invoice_doc_num": "606260188", "invoice_number": "606260188", "eway_bill": "372283074714", "invoice_weight": "9707.300", "invoice_amount": "1575000.00", "place_of_supply": "HR", "location": "FARIDABAD", "product_variety": "Oil", "total_litres": "10000.000", "effective_month": "2026-06", "budget_delivery_point": "FARIDABAD", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 202, "transporter_id": 54, "driver_id": null, "linked_vehicle_entry_id": 1347, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-01T11:05:34.986117Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-29", "priority": "High", "transporter_name": "Arnav Transport Service", "transporter_gstin": "", "contact_person": "Lalit Kumar", "mobile_no": "9718077490", "vehicle_no": "DL01MA6176", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "7097", "bilty_date": "2026-06-30", "bilty_attachment": "/media/sales_dispatch/attachments/WhatsApp_Image_2026-07-01_at_4.20.02_PM.jpeg", "bilty_attachment_name": "WhatsApp Image 2026-07-01 at 4.20.02 PM.jpeg", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "Faridabad", "created_at": "2026-06-29T16:40:47.938513+05:30", "updated_at": "2026-07-01T16:35:34.996317+05:30"}
   ```

@@ -26,6 +26,9 @@ tags:
   {"id": 9, "name": "SSY CONTAINER", "contact_person": "Yatin", "mobile_no": "7503047770", "gstin": "", "created_at": "2026-02-21T10:52:35.579883+05:30"}
   ```
 - **capacity_ton:** 3.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-21T14:35:34.076767+05:30
 
 ## Related

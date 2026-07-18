@@ -26,6 +26,9 @@ tags:
   {"id": 6, "name": "SANGRUR GOODS CARRIER", "contact_person": "BEEM SINGH", "mobile_no": "8968315152", "gstin": "", "created_at": "2026-02-20T14:41:11.771228+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-20T14:41:16.495346+05:30
 
 ## Related

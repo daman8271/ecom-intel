@@ -1,15 +1,16 @@
 ---
 type: moc
-title: Scan Skip Requests (13)
+title: Scan Skip Requests (14)
 tags:
   - moc
   - source/factory
 ---
 
-# Scan Skip Requests — 13 records
+# Scan Skip Requests — 14 records
 
 From `/docking-admin/scan-skip-requests/`. Up: [[_HOME]]
 
+- [[docking-admin__scan-skip-requests-60]] — RJ11GD2869
 - [[docking-admin__scan-skip-requests-54]] — HR67D9270
 - [[docking-admin__scan-skip-requests-50]] — DL01LAD1397
 - [[docking-admin__scan-skip-requests-45]] — RJ11GD2865

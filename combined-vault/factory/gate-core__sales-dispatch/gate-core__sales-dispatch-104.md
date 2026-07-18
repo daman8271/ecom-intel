@@ -35,10 +35,6 @@ tags:
 - **transporter:** 85
 - **driver:** 264
 - **dispatch_date:** 2026-06-19
-- **documents:**
-  ```json
-  [{"id": 191, "dispatch_plan": 431, "document_type": "INVOICE", "sap_doc_entry": 34928, "sap_doc_num": "606260149", "sap_doc_date": "2026-06-18", "sap_doc_total": "130899.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264604", "sap_comments": "", "customer_code": "CUSTA000773", "customer_name": "BAGRRYS INDIA PRIVATE LIMITED (AABCB8144N)", "ship_to_code": "BAGRRYS INDIA PRIVATE LIMITED BADDI", "ship_to_address": "SOLAN-173205\rIN", "place_of_supply": "HP", "bp_gstin": "02AABCB8144N2ZN", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS", "base_refs": "1706264604", "total_quantity": "154.000", "total_litres": "3080.000", "total_boxes": "0.000", "total_weight": "756.525", "created_at": "2026-06-22T16:21:40.494627+05:30", "updated_at": "2026-06-22T16:21:40.494641+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** None
 - **gatepass_no:** None
 - **random_code:** 
-- **qr_payload:** 
 - **uom:** 
 - **physical_quantity:** None
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** None
-- **items:**
-  ```json
-  [{"id": 475, "document": 191, "document_sap_doc_num": "606260149", "line_num": 0, "item_code": "FG0000053", "item_name": "COLD PRESS SUNFLOWER 5 LTR 4 PCS", "quantity": "154.000", "uom": "PCS", "rate": "809.5200", "line_total": "124666.08", "gross_total": "130899.38", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264604", "base_entry": 10472, "base_type": 17, "tax_code": "IGST@5", "total_litres": "3080.000", "total_boxes": "0.000", "total_weight": "756.525"}]
-  ```
 - **created_at:** 2026-06-22T16:21:40.491257+05:30
 - **updated_at:** 2026-06-22T16:21:40.491302+05:30
 

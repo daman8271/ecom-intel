@@ -22,7 +22,7 @@ tags:
 - **company_name:** Jivo Mart
 - **arrival:** 368
 - **arrival_no:** ARV-20260713-0014
-- **arrival_status:** LOADING
+- **arrival_status:** DEPARTED
 - **arrival_company_count:** 3
 - **arrival_can_depart:** False
 - **gatepass_print_locked:** False
@@ -35,10 +35,6 @@ tags:
 - **transporter:** 85
 - **driver:** 398
 - **dispatch_date:** 2026-07-13
-- **documents:**
-  ```json
-  [{"id": 902, "dispatch_plan": 1207, "document_type": "INVOICE", "sap_doc_entry": 36466, "sap_doc_num": "607260149", "sap_doc_date": "2026-07-11", "sap_doc_total": "129360.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264546", "sap_comments": "", "customer_code": "CUSTA000773", "customer_name": "BAGRRYS INDIA PRIVATE LIMITED (AABCB8144N)", "ship_to_code": "BAGRRYS INDIA PRIVATE LIMITED BADDI", "ship_to_address": "SOLAN-173205\rIN", "place_of_supply": "HP", "bp_gstin": "02AABCB8144N2ZN", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS", "base_refs": "1707264546", "total_quantity": "154.000", "total_litres": "770.000", "total_boxes": "0.000", "total_weight": "756.525", "created_at": "2026-07-13T15:30:03.582315+05:30", "updated_at": "2026-07-13T15:30:03.582330+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-13T19:59:11.421060+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000081
 - **random_code:** dlN1Wj2j0zjt
-- **qr_payload:** {"entry_no":"DOCK-20260713-0014","gatepass_no":"DCK/JIVO_MART/2026-27/000081","document_type":"INVOICE","sap_doc_entry":36466,"sap_doc_num":"607260149","documents":[{"document_type":"INVOICE","sap_doc_entry":36466,"sap_doc_num":"607260149"}],"vehicle_no":"DL01LAD1397","random_code":"dlN1Wj2j0zjt"}
 - **uom:** PCS
 - **physical_quantity:** 156.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-13T14:46:00Z
-- **items:**
-  ```json
-  [{"id": 2442, "document": 902, "document_sap_doc_num": "607260149", "line_num": 0, "item_code": "FG0000053", "item_name": "COLD PRESS SUNFLOWER 5 LTR 4 PCS", "quantity": "154.000", "uom": "PCS", "rate": "800.0000", "line_total": "123200.00", "gross_total": "129360.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264546", "base_entry": 10799, "base_type": 17, "tax_code": "IGST@5", "total_litres": "770.000", "total_boxes": "0.000", "total_weight": "756.525"}]
-  ```
 - **created_at:** 2026-07-13T15:30:03.578167+05:30
 - **updated_at:** 2026-07-13T20:16:45.133004+05:30
 

@@ -26,6 +26,9 @@ tags:
   {"id": 35, "name": "B.R Agrotech ltd", "contact_person": "Self", "mobile_no": "9355559590", "gstin": "", "created_at": "2026-03-10T11:19:17.530016+05:30"}
   ```
 - **capacity_ton:** 9.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-10T11:19:20.049855+05:30
 
 ## Related

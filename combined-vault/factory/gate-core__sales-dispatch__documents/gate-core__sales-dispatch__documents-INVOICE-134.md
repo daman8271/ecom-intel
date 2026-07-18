@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "RJ32GD1781"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# RJ32GD1781
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36295
-- **doc_num:** 706261238
-- **doc_date:** 2026-06-30
-- **doc_total:** 33345.00
-- **branch_id:** 1
-- **branch_name:** DELHI
-- **card_code:** CUSTA000910
-- **card_name:** FLIPKART  (B2C-MAY-JULY)
-- **ship_to_code:** FLIPKART B2C TELANGANA
-- **ship_to_address:** TELANGANA-500080IN
-- **place_of_supply:** TE
-- **bp_gstin:** 
+- **doc_entry:** 36418
+- **doc_num:** 607260144
+- **doc_date:** 2026-07-10
+- **doc_total:** 2694460.00
+- **branch_id:** 2
+- **branch_name:** HARYANA
+- **card_code:** CUSTA000592
+- **card_name:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED
+- **ship_to_code:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN
+- **ship_to_address:** ELECTRICITY CITY POSTBENGALURU-560100IN
+- **place_of_supply:** KT
+- **bp_gstin:** 29AAICK3556G1Z9
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** RJ32GD1781
+- **transporter_name:** Abhiman Express
+- **bilty_no:** 260595
+- **bilty_date:** 2026-07-11
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-EC
-- **item_summary:** FG0000392 - POMACE OLIVE 3 LTR TIN 2 PCS, SL0000046 - COLD PRESS 5 LTR, FG0000004 - COLD PRESS 5 LTR 4 PCS, SL0000055 - EXTRA LIGHT 1 LTR + EXTRA VIRGIN 1 LTR + POMACE 1 LTR, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000063 - EXTRA LIGHT 5 LTR, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, SL0000081 - EXTRA VIRGIN 500 ML 24 PCS, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, SL0000069 - EXTRA VIRGIN 1 LTR, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000072 - EXTRA VIRGIN 1 LTR PACK OF 2, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, SL0000074 - EXTRA VIRGIN 250 ML, FG0000112 - EXTRA VIRGIN OLIVE 250 MLS 4 PCS, SL0000134 - POMACE OLIVE 5 LTR + 1 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000136 - POMACE 2 LTR, FG0000114 - POMACE OLIVE 2 LTR 10 PCS HANDLE, SL0000053 - EXTRA LIGHT 1 LTR, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, SL0000155 - SANO POMACE 1 LTR PACK OF 3, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS
-- **base_refs:** 1506264731
-- **total_quantity:** 92.000
-- **total_litres:** 192.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS
+- **base_refs:** 1707264533
+- **total_quantity:** 8720.000
+- **total_litres:** 15920.000
 - **total_boxes:** 0.000
-- **total_weight:** 108.101
-- **line_count:** 26
+- **total_weight:** 15672.678
+- **line_count:** 2
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36295, "sap_invoice_doc_num": "706261238", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 1193, "sap_invoice_doc_entry": 36418, "sap_invoice_doc_num": "607260144", "invoice_number": "607260144", "eway_bill": "342289765149", "invoice_weight": "15672.678", "invoice_amount": "2694460.00", "place_of_supply": "KT", "location": "", "product_variety": "Oil", "total_litres": "15920.000", "effective_month": "2026-07", "budget_delivery_point": "BENGALURU", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 426, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 1836, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-11T17:40:02.009107Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-11", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ32GD1781", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260595", "bilty_date": "2026-07-11", "bilty_attachment": "/media/sales_dispatch/attachments/LR-260612_1.pdf", "bilty_attachment_name": "LR-260612 (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-11T10:13:00.314271+05:30", "updated_at": "2026-07-11T23:10:02.022400+05:30"}
   ```

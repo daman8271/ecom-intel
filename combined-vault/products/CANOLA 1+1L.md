@@ -38,16 +38,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-17).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-18).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 509 | 469 | -7.86 | 🟢 BELOW | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-fresh]] | 509 | 469 | -7.86 | 🟢 BELOW | SVD | 2026-07-17 |
+| [[Platform - amazon\|amazon]] | 509 | 449 | -11.79 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-fresh]] | 509 | 449 | -11.79 | 🟢 BELOW | SVD | 2026-07-18 |
 | [[Platform - amazon\|amazon-now]] | 509 | 469 | -7.86 | 🟢 BELOW | SVD | 2026-07-12 |
-| [[Platform - flipkart\|flipkart]] | 509 | 542 | 6.48 | 🔴 ABOVE | SVD | 2026-07-17 |
+| [[Platform - flipkart\|flipkart]] | 509 | 542 | 6.48 | 🔴 ABOVE | SVD | 2026-07-18 |
 | [[Platform - flipkart\|flipkart-minutes]] | 529 | 937 | 77.13 | 🔴 ABOVE | BAU | 2026-07-13 |
-| [[Platform - zepto\|zepto]] | 509 | 500 | -1.77 | 🟢 BELOW | SVD | 2026-07-17 |
+| [[Platform - zepto\|zepto]] | 509 | 500 | -1.77 | 🟢 BELOW | SVD | 2026-07-18 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -78,8 +78,10 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000088`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000088]]
-- **306 boxes:** [[box-116477]] · [[box-116478]] · [[box-116479]] … +303 more (tag `bridge/FG0000088`)
+- **362 boxes:** [[box-116477]] · [[box-116478]] · [[box-116479]] … +359 more (tag `bridge/FG0000088`)
+- **50 boxes:** [[barcode__dispatch__reports__boxes-166620]] · [[barcode__dispatch__reports__boxes-166621]] · [[barcode__dispatch__reports__boxes-166622]] … +47 more (tag `bridge/FG0000088`)
 - **8 pallets:** [[pal-1884]] · [[pal-2396]] · [[pal-2398]] … +5 more (tag `bridge/FG0000088`)
+- **2 loose:** [[barcode__loose-924]] · [[barcode__loose-925]]
 
 **`FG0000123`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000123]]

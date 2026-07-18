@@ -26,6 +26,9 @@ tags:
   {"id": 40, "name": "DHTC INDIA LIMITED", "contact_person": "ABC", "mobile_no": "9432013503", "gstin": "", "created_at": "2026-03-24T18:07:33.625398+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-24T18:07:36.735730+05:30
 
 ## Related

@@ -1,7 +1,7 @@
 ---
 type: factory-notifications__preferences
 id: 52
-title: "Returnable Gate Pass Cancelled"
+title: "Returnable Gate Pass Rejected at Gate"
 entity: Preferences
 source_endpoint: /notifications/preferences/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Returnable Gate Pass Cancelled
+# Returnable Gate Pass Rejected at Gate
 
 > Preferences from `/notifications/preferences/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **id:** 52
-- **code:** RETURNABLE_CANCELLED
-- **name:** Returnable Gate Pass Cancelled
-- **description:** Returnable Gate Pass Cancelled
+- **code:** RETURNABLE_REJECTED_AT_GATE
+- **name:** Returnable Gate Pass Rejected at Gate
+- **description:** Returnable Gate Pass Rejected at Gate
 - **is_enabled:** True

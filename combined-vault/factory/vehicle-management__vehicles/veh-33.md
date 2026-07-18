@@ -26,6 +26,9 @@ tags:
   {"id": 24, "name": "Frsystal PET", "contact_person": "N/A", "mobile_no": "1234567890", "gstin": "", "created_at": "2026-02-26T10:10:02.294696+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-26T10:10:04.900288+05:30
 
 ## Related

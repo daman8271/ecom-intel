@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "RJ11GC6279"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# RJ11GC6279
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34763
-- **doc_num:** 606260144
-- **doc_date:** 2026-06-16
-- **doc_total:** 90002.00
-- **branch_id:** 2
-- **branch_name:** HARYANA
-- **card_code:** CUSTA000592
-- **card_name:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED
-- **ship_to_code:** KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN
-- **ship_to_address:** ELECTRICITY CITY POSTBENGALURU-560100IN
-- **place_of_supply:** KT
-- **bp_gstin:** 29AAICK3556G1Z9
+- **doc_entry:** 34906
+- **doc_num:** 726102201
+- **doc_date:** 2026-06-18
+- **doc_total:** 286002.00
+- **branch_id:** 1
+- **branch_name:** DELHI
+- **card_code:** CUSTA000722
+- **card_name:** KIRANAKART TECHNOLOGIES PVT LTD AAICK4821A
+- **ship_to_code:** KIRANAKART TECHNOLOGIES BHIWANDI
+- **ship_to_address:** MUMBAI-421302IN
+- **place_of_supply:** MH
+- **bp_gstin:** 27AAICK4821A1ZV
 - **eway_bill:** 
-- **vehicle_no:** RJ11GC6279
-- **transporter_name:** Abhiman Express
-- **bilty_no:** 260373
-- **bilty_date:** 2026-06-17
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** BH-FGM
-- **item_summary:** FG0000422 - COLD PRESS 1 LTR (NIRMAL RISHI )20PCS
-- **base_refs:** 1706264593
-- **total_quantity:** 400.000
-- **total_litres:** 400.000
+- **warehouses:** DL-FG
+- **item_summary:** FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000114 - POMACE OLIVE 2 LTR 10 PCS HANDLE, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS
+- **base_refs:** 
+- **total_quantity:** 171.000
+- **total_litres:** 705.000
 - **total_boxes:** 0.000
-- **total_weight:** 395.564
-- **line_count:** 1
+- **total_weight:** 711.290
+- **line_count:** 3
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 348, "sap_invoice_doc_entry": 34763, "sap_invoice_doc_num": "606260144", "invoice_number": "606260144", "eway_bill": "302273882212", "invoice_weight": "395.564", "invoice_amount": "90002.00", "place_of_supply": "KT", "location": "", "product_variety": "Oil", "total_litres": "8000.000", "effective_month": "2026-06", "budget_delivery_point": "BENGALURU", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 270, "transporter_id": 77, "driver_id": null, "linked_vehicle_entry_id": 726, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-18T10:08:30.459167Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-17", "priority": "High", "transporter_name": "Abhiman Express", "transporter_gstin": "", "contact_person": "ABHISHEK SHARMA", "mobile_no": "8700926578", "vehicle_no": "RJ11GC6279", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "260373", "bilty_date": "2026-06-17", "bilty_attachment": "/media/sales_dispatch/attachments/LR-260434.pdf", "bilty_attachment_name": "LR-260434.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-16T18:46:21.016748+05:30", "updated_at": "2026-06-18T15:38:30.593639+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 34906, "sap_invoice_doc_num": "726102201", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

@@ -16,17 +16,17 @@ tags:
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 34882
-- **doc_num:** 706260441
-- **doc_date:** 2026-06-18
-- **doc_total:** 1930.00
+- **doc_entry:** 35020
+- **doc_num:** 706260516
+- **doc_date:** 2026-06-20
+- **doc_total:** 1199.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000912
-- **card_name:** AMAZON (B2C -MAY-JULY)
-- **ship_to_code:** AMAZON B2C ANDHRA PRADESH
-- **ship_to_address:** -522403IN
-- **place_of_supply:** AP
+- **card_code:** CUSTA000484
+- **card_name:** ONLINE SALE WEBSITE
+- **ship_to_code:** ONLINE SALE WEBSITE DELHI
+- **ship_to_address:** NEW DELHI-IN
+- **place_of_supply:** DL
 - **bp_gstin:** 
 - **eway_bill:** 
 - **vehicle_no:** 
@@ -36,12 +36,12 @@ tags:
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** DL-EC
-- **item_summary:** SL0000222 - SOYABEAN 5 LTR + SUNFLOWER 1 LTR PACK OF 3, FG0000192 - SOYABEAN OIL 5 LTR 4 PCS
-- **base_refs:** 1506264623
-- **total_quantity:** 4.000
-- **total_litres:** 20.000
+- **item_summary:** SL0000027 - COLD PRESS 1 LTR PACK OF 5, FG0000032 - COLD PRESS 1 LTR 20 PCS
+- **base_refs:** 1504264790
+- **total_quantity:** 6.000
+- **total_litres:** 6.000
 - **total_boxes:** 0.000
-- **total_weight:** 9.933
+- **total_weight:** 4.945
 - **line_count:** 2
 - **items:**
   ```json
@@ -49,5 +49,5 @@ tags:
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 34882, "sap_invoice_doc_num": "706260441", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": null, "sap_invoice_doc_entry": 35020, "sap_invoice_doc_num": "706260516", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

@@ -35,10 +35,6 @@ tags:
 - **transporter:** 64
 - **driver:** 247
 - **dispatch_date:** 2026-06-30
-- **documents:**
-  ```json
-  [{"id": 409, "dispatch_plan": 741, "document_type": "INVOICE", "sap_doc_entry": 35254, "sap_doc_num": "706260664", "sap_doc_date": "2026-06-23", "sap_doc_total": "747250.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1706264652", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "R K WORLDINFOCOM PVT LTD GURGAON", "ship_to_address": "AHAZOUR (FAIZABAD) BADLI JHAJJAR  B 1200\rGURGAON-124105\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000279 - PET BOTTLE 500 MLS MANGO 18 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS", "base_refs": "1706264652", "total_quantity": "3064.000", "total_litres": "3240.000", "total_boxes": "0.000", "total_weight": "3156.342", "created_at": "2026-06-30T10:57:20.544751+05:30", "updated_at": "2026-06-30T10:57:20.544770+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-06-30T12:18:09.684424+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000037
 - **random_code:** RYmBSlop0Zov
-- **qr_payload:** {"entry_no":"DOCK-20260630-0001","gatepass_no":"DCK/JIVO_MART/2026-27/000037","document_type":"INVOICE","sap_doc_entry":35254,"sap_doc_num":"706260664","documents":[{"document_type":"INVOICE","sap_doc_entry":35254,"sap_doc_num":"706260664"}],"vehicle_no":"HR67C1036","random_code":"RYmBSlop0Zov"}
 - **uom:** PCS
 - **physical_quantity:** 2676.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-06-30T07:04:00Z
-- **items:**
-  ```json
-  [{"id": 1089, "document": 409, "document_sap_doc_num": "706260664", "line_num": 0, "item_code": "FG0000279", "item_name": "PET BOTTLE 500 MLS MANGO 18 PCS", "quantity": "32.000", "uom": "PCS", "rate": "27.0000", "line_total": "864.00", "gross_total": "907.20", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264652", "base_entry": 10543, "base_type": 17, "tax_code": "IGST@5", "total_litres": "16.000", "total_boxes": "0.000", "total_weight": "0.000"}, {"id": 1090, "document": 409, "document_sap_doc_num": "706260664", "line_num": 1, "item_code": "FG0000143", "item_name": "COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS", "quantity": "48.000", "uom": "PCS", "rate": "856.4286", "line_total": "41108.57", "gross_total": "43164.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264652", "base_entry": 10543, "base_type": 17, "tax_code": "IGST@5", "total_litres": "240.000", "total_boxes": "0.000", "total_weight": "238.198"}, {"id": 1091, "document": 409, "document_sap_doc_num": "706260664", "line_num": 2, "item_code": "FG0000030", "item_name": "MUSTARD KACHI GHANI 1 LTR 20 PCS", "quantity": "2120.000", "uom": "PCS", "rate": "159.2000", "line_total": "337504.00", "gross_total": "354379.20", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264652", "base_entry": 10543, "base_type": 17, "tax_code": "IGST@5", "total_litres": "2120.000", "total_boxes": "0.000", "total_weight": "2057.948"}, {"id": 1092, "document": 409, "document_sap_doc_num": "706260664", "line_num": 3, "item_code": "FG0000032", "item_name": "COLD PRESS 1 LTR 20 PCS", "quantity": "240.000", "uom": "PCS", "rate": "190.4762", "line_total": "45714.29", "gross_total": "48000.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264652", "base_entry": 10543, "base_type": 17, "tax_code": "IGST@5", "total_litres": "240.000", "total_boxes": "0.000", "total_weight": "237.338"}, {"id": 1093, "document": 409, "document_sap_doc_num": "706260664", "line_num": 4, "item_code": "FG0000005", "item_name": "EXTRA LIGHT OLIVE 1 LTR 16 PCS", "quantity": "352.000", "uom": "PCS", "rate": "476.1905", "line_total": "167619.06", "gross_total": "176000.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264652", "base_entry": 10543, "base_type": 17, "tax_code": "IGST@5", "total_litres": "352.000", "total_boxes": "0.000", "total_weight": "352.154"}, {"id": 1094, "document": 409, "document_sap_doc_num": "706260664", "line_num": 5, "item_code": "FG0000042", "item_name": "EXTRA VIRGIN OLIVE 1 LTR 16 PCS", "quantity": "32.000", "uom": "PCS", "rate": "714.2857", "line_total": "22857.14", "gross_total": "24000.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264652", "base_entry": 10543, "base_type": 17, "tax_code": "IGST@5", "total_litres": "32.000", "total_boxes": "0.000", "total_weight": "31.908"}, {"id": 1095, "document": 409, "document_sap_doc_num": "706260664", "line_num": 6, "item_code": "FG0000028", "item_name": "POMACE OLIVE 1 LTR 16 PCS", "quantity": "240.000", "uom": "PCS", "rate": "400.0000", "line_total": "96000.00", "gross_total": "100800.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264652", "base_entry": 10543, "base_type": 17, "tax_code": "IGST@5", "total_litres": "240.000", "total_boxes": "0.000", "total_weight": "238.797"}]
-  ```
 - **created_at:** 2026-06-30T10:57:20.537577+05:30
 - **updated_at:** 2026-06-30T12:35:11.482227+05:30
 

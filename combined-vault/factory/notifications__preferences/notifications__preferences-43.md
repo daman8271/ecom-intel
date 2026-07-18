@@ -1,7 +1,7 @@
 ---
 type: factory-notifications__preferences
 id: 43
-title: "Returnable Gate Pass Approved"
+title: "Material Indent Items Issued"
 entity: Preferences
 source_endpoint: /notifications/preferences/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Returnable Gate Pass Approved
+# Material Indent Items Issued
 
 > Preferences from `/notifications/preferences/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **id:** 43
-- **code:** RETURNABLE_APPROVED
-- **name:** Returnable Gate Pass Approved
-- **description:** Returnable Gate Pass Approved
+- **code:** MATERIAL_INDENT_ISSUED
+- **name:** Material Indent Items Issued
+- **description:** Material Indent Items Issued
 - **is_enabled:** True

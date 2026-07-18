@@ -26,6 +26,9 @@ tags:
   {"id": 36, "name": "kunal cargo movers", "contact_person": "kunal", "mobile_no": "8233951532", "gstin": "", "created_at": "2026-03-14T10:34:01.420141+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-14T12:03:31.407678+05:30
 
 ## Related

@@ -35,10 +35,6 @@ tags:
 - **transporter:** 54
 - **driver:** 229
 - **dispatch_date:** 2026-06-26
-- **documents:**
-  ```json
-  [{"id": 339, "dispatch_plan": 639, "document_type": "INVOICE", "sap_doc_entry": 35392, "sap_doc_num": "606260175", "sap_doc_date": "2026-06-26", "sap_doc_total": "1599360.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264645", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000194 - SOYABEAN OIL 1 LTR POUCH 12 PCS", "base_refs": "1706264645", "total_quantity": "9996.000", "total_litres": "9996.000", "total_boxes": "0.000", "total_weight": "9575.835", "created_at": "2026-06-27T11:04:23.076319+05:30", "updated_at": "2026-06-27T11:04:23.076332+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-06-27T14:31:29.893454+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000026
 - **random_code:** qazK1TbMGlQU
-- **qr_payload:** {"entry_no":"DOCK-20260627-0004","gatepass_no":"DCK/JIVO_MART/2026-27/000026","document_type":"INVOICE","sap_doc_entry":35392,"sap_doc_num":"606260175","documents":[{"document_type":"INVOICE","sap_doc_entry":35392,"sap_doc_num":"606260175"}],"vehicle_no":"DL01MB2623","random_code":"qazK1TbMGlQU"}
 - **uom:** PCS
 - **physical_quantity:** 9996.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-06-27T09:09:00Z
-- **items:**
-  ```json
-  [{"id": 844, "document": 339, "document_sap_doc_num": "606260175", "line_num": 0, "item_code": "FG0000194", "item_name": "SOYABEAN OIL 1 LTR POUCH 12 PCS", "quantity": "9996.000", "uom": "PCS", "rate": "152.3810", "line_total": "1523200.48", "gross_total": "1599361.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264645", "base_entry": 10533, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "9996.000", "total_boxes": "0.000", "total_weight": "9575.835"}]
-  ```
 - **created_at:** 2026-06-27T11:04:23.073687+05:30
 - **updated_at:** 2026-06-27T14:50:07.326715+05:30
 

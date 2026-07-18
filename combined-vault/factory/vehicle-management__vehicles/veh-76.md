@@ -26,6 +26,9 @@ tags:
   {"id": 30, "name": "Jivo wellness pvt ltd", "contact_person": "Manbeer", "mobile_no": "9675774246", "gstin": "", "created_at": "2026-03-03T13:59:26.165952+05:30"}
   ```
 - **capacity_ton:** 9999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-17T14:27:17.627126+05:30
 
 ## Related

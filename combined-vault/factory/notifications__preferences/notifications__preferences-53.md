@@ -1,7 +1,7 @@
 ---
 type: factory-notifications__preferences
 id: 53
-title: "General Announcement"
+title: "Returnable Items Returned"
 entity: Preferences
 source_endpoint: /notifications/preferences/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# General Announcement
+# Returnable Items Returned
 
 > Preferences from `/notifications/preferences/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **id:** 53
-- **code:** GENERAL_ANNOUNCEMENT
-- **name:** General Announcement
-- **description:** General Announcement
+- **code:** RETURNABLE_RETURN_RECORDED
+- **name:** Returnable Items Returned
+- **description:** Returnable Items Returned
 - **is_enabled:** True

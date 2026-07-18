@@ -20,7 +20,7 @@ tags:
 - **item_code:** FG0000420
 - **item_name:** COLD PRESS GROUNDNUT 200 MLS 70 PCS - BH
 - **batch_number:** M  000023
-- **qty:** 700.00
+- **qty:** 0.00
 - **original_qty:** 700.00
 - **uom:** PCS
 - **source_box:** 153431
@@ -30,13 +30,13 @@ tags:
 - **reason:** OTHER
 - **reason_notes:** 
 - **current_warehouse:** BH-PF
-- **status:** ACTIVE
-- **repacked_into_box:** None
-- **repacked_into_barcode:** 
+- **status:** REPACKED
+- **repacked_into_box:** 233203
+- **repacked_into_barcode:** BOX-20260717-RP-0003
 - **created_by:** 28
 - **created_by_name:** Amit Pal Singh
 - **created_at:** 2026-07-07T13:34:00.801611+05:30
-- **updated_at:** 2026-07-07T13:34:00.801635+05:30
+- **updated_at:** 2026-07-17T14:58:50.719278+05:30
 
 ## Related
 - item -> [[oitm-FG0000420]]

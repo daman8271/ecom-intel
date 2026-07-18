@@ -26,6 +26,9 @@ tags:
   {"id": 7, "name": "Radhey radhey transport co.", "contact_person": "Sahil khatri", "mobile_no": "9868111966", "gstin": "", "created_at": "2026-02-20T17:29:47.292922+05:30"}
   ```
 - **capacity_ton:** 3.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-21T16:38:39.007103+05:30
 
 ## Related

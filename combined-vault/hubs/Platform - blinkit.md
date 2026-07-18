@@ -31,4 +31,4 @@ Up: [[Home]]
 - [[JIVO POMACE 5L]] — ref ₹1899 / live ₹1685 (🟢 BELOW)
 - [[MUSTARD 1L]] — ref ₹199 / live ₹171 (🟢 BELOW)
 - [[MUSTARD 5L]] — ref ₹949 / live ₹868 (🟢 BELOW)
-- [[SUNFLOWER 1L]] — ref ₹199 / live ₹197 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹199 / live ₹195 (🟢 BELOW)

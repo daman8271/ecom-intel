@@ -1,7 +1,7 @@
 ---
 type: factory-notifications__preferences
 id: 42
-title: "Returnable Gate Pass Awaiting Approval"
+title: "Material Indent Submitted to Store"
 entity: Preferences
 source_endpoint: /notifications/preferences/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Returnable Gate Pass Awaiting Approval
+# Material Indent Submitted to Store
 
 > Preferences from `/notifications/preferences/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **id:** 42
-- **code:** RETURNABLE_SUBMITTED
-- **name:** Returnable Gate Pass Awaiting Approval
-- **description:** Returnable Gate Pass Awaiting Approval
+- **code:** MATERIAL_INDENT_SUBMITTED
+- **name:** Material Indent Submitted to Store
+- **description:** Material Indent Submitted to Store
 - **is_enabled:** True

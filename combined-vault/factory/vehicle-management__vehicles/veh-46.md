@@ -26,6 +26,9 @@ tags:
   {"id": 29, "name": "Shree shyam express", "contact_person": "Yatharth gupta", "mobile_no": "9906148001", "gstin": "", "created_at": "2026-03-03T10:06:27.219979+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-03T10:06:38.556857+05:30
 
 ## Related

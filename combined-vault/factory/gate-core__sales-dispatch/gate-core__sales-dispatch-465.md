@@ -35,10 +35,6 @@ tags:
 - **transporter:** 77
 - **driver:** 389
 - **dispatch_date:** 2026-07-11
-- **documents:**
-  ```json
-  [{"id": 855, "dispatch_plan": 1193, "document_type": "INVOICE", "sap_doc_entry": 36418, "sap_doc_num": "607260144", "sap_doc_date": "2026-07-10", "sap_doc_total": "2694460.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264533", "sap_comments": "", "customer_code": "CUSTA000592", "customer_name": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED", "ship_to_code": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN", "ship_to_address": "ELECTRICITY CITY POST\rBENGALURU-560100\rIN", "place_of_supply": "KT", "bp_gstin": "29AAICK3556G1Z9", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS", "base_refs": "1707264533", "total_quantity": "8720.000", "total_litres": "15920.000", "total_boxes": "0.000", "total_weight": "15672.678", "created_at": "2026-07-11T19:53:47.480666+05:30", "updated_at": "2026-07-11T19:53:47.480679+05:30"}, {"id": 856, "dispatch_plan": 1194, "document_type": "INVOICE", "sap_doc_entry": 36432, "sap_doc_num": "607260145", "sap_doc_date": "2026-07-10", "sap_doc_total": "352040.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264533", "sap_comments": "", "customer_code": "CUSTA000592", "customer_name": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED", "ship_to_code": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN", "ship_to_address": "ELECTRICITY CITY POST\rBENGALURU-560100\rIN", "place_of_supply": "KT", "bp_gstin": "29AAICK3556G1Z9", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS", "base_refs": "1707264533", "total_quantity": "2080.000", "total_litres": "2080.000", "total_boxes": "0.000", "total_weight": "2053.002", "created_at": "2026-07-11T19:53:47.485739+05:30", "updated_at": "2026-07-11T19:53:47.485754+05:30"}]
-  ```
 - **document_count:** 2
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-11T23:06:10.944574+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000075
 - **random_code:** 8V36LiqctTdn
-- **qr_payload:** {"entry_no":"DOCK-20260711-0024","gatepass_no":"DCK/JIVO_MART/2026-27/000075","document_type":"INVOICE","sap_doc_entry":36418,"sap_doc_num":"607260144, 607260145","documents":[{"document_type":"INVOICE","sap_doc_entry":36418,"sap_doc_num":"607260144"},{"document_type":"INVOICE","sap_doc_entry":36432,"sap_doc_num":"607260145"}],"vehicle_no":"RJ32GD1781","random_code":"8V36LiqctTdn"}
 - **uom:** PCS
 - **physical_quantity:** 9032.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-11T17:39:00Z
-- **items:**
-  ```json
-  [{"id": 2333, "document": 855, "document_sap_doc_num": "607260144", "line_num": 0, "item_code": "FG0000081", "item_name": "COLD PRESS SUNFLOWER 1 LTR 20 PCS", "quantity": "6920.000", "uom": "PCS", "rate": "161.1905", "line_total": "1115438.26", "gross_total": "1171210.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264533", "base_entry": 10774, "base_type": 17, "tax_code": "IGST@5", "total_litres": "6920.000", "total_boxes": "0.000", "total_weight": "6830.178"}, {"id": 2334, "document": 855, "document_sap_doc_num": "607260144", "line_num": 1, "item_code": "FG0000053", "item_name": "COLD PRESS SUNFLOWER 5 LTR 4 PCS", "quantity": "1800.000", "uom": "PCS", "rate": "805.9524", "line_total": "1450714.32", "gross_total": "1523250.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264533", "base_entry": 10774, "base_type": 17, "tax_code": "IGST@5", "total_litres": "9000.000", "total_boxes": "0.000", "total_weight": "8842.500"}, {"id": 2335, "document": 856, "document_sap_doc_num": "607260145", "line_num": 2, "item_code": "FG0000081", "item_name": "COLD PRESS SUNFLOWER 1 LTR 20 PCS", "quantity": "2080.000", "uom": "PCS", "rate": "161.1905", "line_total": "335276.24", "gross_total": "352040.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264533", "base_entry": 10774, "base_type": 17, "tax_code": "IGST@5", "total_litres": "2080.000", "total_boxes": "0.000", "total_weight": "2053.002"}]
-  ```
 - **created_at:** 2026-07-11T19:53:47.478070+05:30
 - **updated_at:** 2026-07-11T23:10:02.009536+05:30
 

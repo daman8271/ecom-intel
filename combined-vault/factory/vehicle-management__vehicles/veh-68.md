@@ -26,6 +26,9 @@ tags:
   {"id": 37, "name": "sree shyam express", "contact_person": "syham", "mobile_no": "9906148001", "gstin": "", "created_at": "2026-03-16T10:22:11.441827+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-16T10:22:14.034627+05:30
 
 ## Related

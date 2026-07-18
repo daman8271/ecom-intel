@@ -26,6 +26,9 @@ tags:
   {"id": 33, "name": "Narender Singh tempo  service", "contact_person": "Narender", "mobile_no": "9466413168", "gstin": "", "created_at": "2026-03-09T17:09:36.250995+05:30"}
   ```
 - **capacity_ton:** 9.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-09T17:09:39.014984+05:30
 
 ## Related

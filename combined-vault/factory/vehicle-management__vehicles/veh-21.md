@@ -26,6 +26,9 @@ tags:
   {"id": 15, "name": "SINGH LOGISTICS", "contact_person": "Lajpat singh", "mobile_no": "9312262005", "gstin": "", "created_at": "2026-02-23T15:20:29.298404+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-23T15:20:35.888542+05:30
 
 ## Related

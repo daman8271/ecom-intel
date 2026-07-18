@@ -26,6 +26,9 @@ tags:
   {"id": 17, "name": "bhagwati industries", "contact_person": "bhagwati", "mobile_no": "1234567891", "gstin": "", "created_at": "2026-02-24T15:00:26.730772+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-24T15:00:29.206715+05:30
 
 ## Related

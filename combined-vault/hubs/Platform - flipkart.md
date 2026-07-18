@@ -37,7 +37,7 @@ Up: [[Home]]
 - [[CANOLA 3L]] — ref ₹769 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
-- [[CANOLA 5L]] — ref ₹1099 / live ₹1640 (🔴 ABOVE)
+- [[CANOLA 5L]] — ref ₹1099 / live ₹1252 (🔴 ABOVE)
 - [[CANOLA 5L + SOYABEAN 5L]]
 - [[CANOLA 5L+ SOYABEAN 1L]]
 - [[CHIA SEEDS 200GM]] — ref ₹99 / live ₹— (⚪ OOS)
@@ -46,7 +46,7 @@ Up: [[Home]]
 - [[CINNAMON 100G]] — ref ₹89 / live ₹— (⚪ OOS)
 - [[CINNAMON BARK 100G]] — ref ₹89 / live ₹— (⚪ OOS)
 - [[CLOVE 100G]] — ref ₹209 / live ₹— (⚪ OOS)
-- [[COCONUT 1L]] — ref ₹539 / live ₹606 (🔴 ABOVE)
+- [[COCONUT 1L]] — ref ₹539 / live ₹— (⚪ OOS)
 - [[COCONUT 500ML]] — ref ₹229 / live ₹— (⚪ OOS)
 - [[COFFEE]] — ref ₹239 / live ₹— (⚪ OOS)
 - [[CUMIN SEEDS 100G]] — ref ₹75 / live ₹— (⚪ OOS)
@@ -63,7 +63,7 @@ Up: [[Home]]
 - [[EXTRA VIRGIN 200ML]] — ref ₹189 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 250ML]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 2L]] — ref ₹1589 / live ₹1141 (🟢 BELOW)
-- [[EXTRA VIRGIN 500ML]] — ref ₹409 / live ₹— (⚪ OOS)
+- [[EXTRA VIRGIN 500ML]] — ref ₹409 / live ₹364 (🟢 BELOW)
 - [[EXTRA VIRGIN 5L]] — ref ₹3599 / live ₹3662 (🔴 ABOVE)
 - [[FLAX SEEDS 200G]] — ref ₹89 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 400 GM]] — ref ₹179 / live ₹— (⚪ OOS)

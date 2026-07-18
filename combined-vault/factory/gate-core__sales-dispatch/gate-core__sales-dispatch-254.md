@@ -35,10 +35,6 @@ tags:
 - **transporter:** 77
 - **driver:** 319
 - **dispatch_date:** 2026-06-30
-- **documents:**
-  ```json
-  [{"id": 451, "dispatch_plan": 728, "document_type": "INVOICE", "sap_doc_entry": 35586, "sap_doc_num": "606260191", "sap_doc_date": "2026-06-29", "sap_doc_total": "2926560.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264734", "sap_comments": "", "customer_code": "CUSTA000592", "customer_name": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED", "ship_to_code": "KNOWTABLE ONLINE SERVICES PVT LTD TELANGANA", "ship_to_address": "MEDCHAL MALKAJGIRI  0 WAREHOUSE NO. 3 444/B MUNIRABAD BEHIND INDIAN OIL PUMP\rHYDERABAD-501401\rIN", "place_of_supply": "TE", "bp_gstin": "36AAICK3556G1ZE", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "base_refs": "1706264734", "total_quantity": "15008.000", "total_litres": "15008.000", "total_boxes": "0.000", "total_weight": "14964.102", "created_at": "2026-07-01T12:00:36.082044+05:30", "updated_at": "2026-07-01T12:00:36.082057+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-01T17:36:55.313701+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000043
 - **random_code:** P7NpMc85Va-D
-- **qr_payload:** {"entry_no":"DOCK-20260701-0002","gatepass_no":"DCK/JIVO_MART/2026-27/000043","document_type":"INVOICE","sap_doc_entry":35586,"sap_doc_num":"606260191","documents":[{"document_type":"INVOICE","sap_doc_entry":35586,"sap_doc_num":"606260191"}],"vehicle_no":"RJ11GB2541","random_code":"P7NpMc85Va-D"}
 - **uom:** PCS
 - **physical_quantity:** 14272.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-01T12:14:00Z
-- **items:**
-  ```json
-  [{"id": 1260, "document": 451, "document_sap_doc_num": "606260191", "line_num": 0, "item_code": "FG0000142", "item_name": "COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "quantity": "15008.000", "uom": "PCS", "rate": "185.7143", "line_total": "2787200.21", "gross_total": "2926560.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264734", "base_entry": 10647, "base_type": 17, "tax_code": "IGST@5", "total_litres": "15008.000", "total_boxes": "0.000", "total_weight": "14964.102"}]
-  ```
 - **created_at:** 2026-07-01T12:00:36.078335+05:30
 - **updated_at:** 2026-07-01T17:45:37.482254+05:30
 

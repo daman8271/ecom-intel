@@ -35,10 +35,6 @@ tags:
 - **transporter:** 54
 - **driver:** 113
 - **dispatch_date:** 2026-06-29
-- **documents:**
-  ```json
-  [{"id": 457, "dispatch_plan": 708, "document_type": "INVOICE", "sap_doc_entry": 35567, "sap_doc_num": "606260188", "sap_doc_date": "2026-06-29", "sap_doc_total": "1575000.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264727", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS", "base_refs": "1706264727", "total_quantity": "10000.000", "total_litres": "10000.000", "total_boxes": "0.000", "total_weight": "9707.300", "created_at": "2026-07-01T14:45:49.974636+05:30", "updated_at": "2026-07-01T14:45:49.974652+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-01T16:19:17.886772+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000042
 - **random_code:** 6jVzWxzcseNL
-- **qr_payload:** {"entry_no":"DOCK-20260701-0007","gatepass_no":"DCK/JIVO_MART/2026-27/000042","document_type":"INVOICE","sap_doc_entry":35567,"sap_doc_num":"606260188","documents":[{"document_type":"INVOICE","sap_doc_entry":35567,"sap_doc_num":"606260188"}],"vehicle_no":"DL01MA6176","random_code":"6jVzWxzcseNL"}
 - **uom:** PCS
 - **physical_quantity:** 10000.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-01T11:05:00Z
-- **items:**
-  ```json
-  [{"id": 1274, "document": 457, "document_sap_doc_num": "606260188", "line_num": 0, "item_code": "FG0000030", "item_name": "MUSTARD KACHI GHANI 1 LTR 20 PCS", "quantity": "10000.000", "uom": "PCS", "rate": "150.0000", "line_total": "1500000.00", "gross_total": "1575000.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264727", "base_entry": 10640, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "10000.000", "total_boxes": "0.000", "total_weight": "9707.300"}]
-  ```
 - **created_at:** 2026-07-01T14:45:49.971726+05:30
 - **updated_at:** 2026-07-01T16:35:34.986515+05:30
 

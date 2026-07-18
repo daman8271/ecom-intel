@@ -46,12 +46,10 @@ tags:
 - **sap_comments:** 
 - **sap_line_count:** 0
 - **sap_total_quantity:** 0.000
-- **document_reference:** Dispatch 605260220, 605260233, 605260234
-- **document_notes:** Weight: 29980.300 kg
-- **pipeline_status:**
-  ```json
-  {"stage": "BOOKED", "stage_label": "Booked", "stage_at": "2026-06-21T14:31:18.695906Z", "counts": {"total": 3, "rejected": 0}, "module": "", "module_status": "not entered", "module_label": "not entered"}
-  ```
+- **document_reference:** Dispatch 606260150
+- **document_notes:** Customers: JIVO MART PVT LTD - DL
+Weight: 6,483.856 kg
+- **pipeline_status:** None
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 
 - **bst_gate_out_status:** 

@@ -35,10 +35,6 @@ tags:
 - **transporter:** 85
 - **driver:** 287
 - **dispatch_date:** 2026-07-13
-- **documents:**
-  ```json
-  [{"id": 919, "dispatch_plan": 1211, "document_type": "INVOICE", "sap_doc_entry": 36482, "sap_doc_num": "607260151", "sap_doc_date": "2026-07-11", "sap_doc_total": "95000.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264556", "sap_comments": "", "customer_code": "CUSTA000921", "customer_name": "DIVINE EARTH HOLISTIC HEALTH AND ORGANIC SCIENCE PVT LTD", "ship_to_code": "DEHHOS PVT LTD CHHATTISGARH", "ship_to_address": "BESIDE JAGGI POULTRY FARM MANDIR HASOUD,  NEAR MONNET STEEL PLANT\rRAIPUR-492101\rIN", "place_of_supply": "CT", "bp_gstin": "22AAICD2219H1Z2", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS", "base_refs": "1707264556", "total_quantity": "100.000", "total_litres": "500.000", "total_boxes": "0.000", "total_weight": "491.250", "created_at": "2026-07-13T17:42:27.991696+05:30", "updated_at": "2026-07-13T17:42:27.991710+05:30"}, {"id": 920, "dispatch_plan": 1212, "document_type": "INVOICE", "sap_doc_entry": 36481, "sap_doc_num": "607260150", "sap_doc_date": "2026-07-11", "sap_doc_total": "95000.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264511", "sap_comments": "", "customer_code": "CUSTA000921", "customer_name": "DIVINE EARTH HOLISTIC HEALTH AND ORGANIC SCIENCE PVT LTD", "ship_to_code": "DEHHOS PVT LTD CHHATTISGARH", "ship_to_address": "BESIDE JAGGI POULTRY FARM MANDIR HASOUD,  NEAR MONNET STEEL PLANT\rRAIPUR-492101\rIN", "place_of_supply": "CT", "bp_gstin": "22AAICD2219H1Z2", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS", "base_refs": "1707264511", "total_quantity": "100.000", "total_litres": "500.000", "total_boxes": "0.000", "total_weight": "491.250", "created_at": "2026-07-13T17:42:57.580536+05:30", "updated_at": "2026-07-13T17:42:57.580558+05:30"}]
-  ```
 - **document_count:** 2
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-13T19:42:12.590036+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000079
 - **random_code:** i6-19jl2dcGS
-- **qr_payload:** {"entry_no":"DOCK-20260713-0018","gatepass_no":"DCK/JIVO_MART/2026-27/000079","document_type":"INVOICE","sap_doc_entry":36482,"sap_doc_num":"607260151, 607260150","documents":[{"document_type":"INVOICE","sap_doc_entry":36482,"sap_doc_num":"607260151"},{"document_type":"INVOICE","sap_doc_entry":36481,"sap_doc_num":"607260150"}],"vehicle_no":"DL1MA3485","random_code":"i6-19jl2dcGS"}
 - **uom:** PCS
 - **physical_quantity:** 200.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-13T14:28:00Z
-- **items:**
-  ```json
-  [{"id": 2483, "document": 919, "document_sap_doc_num": "607260151", "line_num": 0, "item_code": "FG0000053", "item_name": "COLD PRESS SUNFLOWER 5 LTR 4 PCS", "quantity": "100.000", "uom": "PCS", "rate": "904.7619", "line_total": "90476.19", "gross_total": "95000.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264556", "base_entry": 10817, "base_type": 17, "tax_code": "IGST@5", "total_litres": "500.000", "total_boxes": "0.000", "total_weight": "491.250"}, {"id": 2484, "document": 920, "document_sap_doc_num": "607260150", "line_num": 1, "item_code": "FG0000053", "item_name": "COLD PRESS SUNFLOWER 5 LTR 4 PCS", "quantity": "100.000", "uom": "PCS", "rate": "904.7619", "line_total": "90476.19", "gross_total": "95000.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264511", "base_entry": 10729, "base_type": 17, "tax_code": "IGST@5", "total_litres": "500.000", "total_boxes": "0.000", "total_weight": "491.250"}]
-  ```
 - **created_at:** 2026-07-13T17:42:27.987961+05:30
 - **updated_at:** 2026-07-13T19:58:49.831757+05:30
 

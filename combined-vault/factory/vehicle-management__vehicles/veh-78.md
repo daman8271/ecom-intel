@@ -26,6 +26,9 @@ tags:
   {"id": 38, "name": "Drs flip roadlines ltd", "contact_person": "Dlip", "mobile_no": "914027711276", "gstin": "", "created_at": "2026-03-18T10:59:54.863226+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-18T10:59:58.136304+05:30
 
 ## Related

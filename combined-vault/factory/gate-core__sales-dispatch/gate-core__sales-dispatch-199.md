@@ -35,10 +35,6 @@ tags:
 - **transporter:** 85
 - **driver:** 294
 - **dispatch_date:** 2026-06-27
-- **documents:**
-  ```json
-  [{"id": 355, "dispatch_plan": 657, "document_type": "INVOICE", "sap_doc_entry": 35447, "sap_doc_num": "606260182", "sap_doc_date": "2026-06-26", "sap_doc_total": "48000.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264650", "sap_comments": "", "customer_code": "CUSTA000860", "customer_name": "TOATS PRIVATE LIMITED (AAJCT2944G)", "ship_to_code": "TOATS PRIVATE LIMITED BHOPAL", "ship_to_address": "NEW BYPASS ROAD  KANHASAIYA  BHOPAL\rBHOPAL-462022\rIN", "place_of_supply": "MP", "bp_gstin": "09AAJCT2944G1Z3", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000004 - COLD PRESS 5 LTR 4 PCS", "base_refs": "1706264650", "total_quantity": "40.000", "total_litres": "200.000", "total_boxes": "0.000", "total_weight": "198.328", "created_at": "2026-06-27T16:04:25.497168+05:30", "updated_at": "2026-06-27T16:04:25.497182+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-06-27T19:24:36.750966+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000029
 - **random_code:** G0gY5jFqzTly
-- **qr_payload:** {"entry_no":"DOCK-20260627-0014","gatepass_no":"DCK/JIVO_MART/2026-27/000029","document_type":"INVOICE","sap_doc_entry":35447,"sap_doc_num":"606260182","documents":[{"document_type":"INVOICE","sap_doc_entry":35447,"sap_doc_num":"606260182"}],"vehicle_no":"DL01LAD1397","random_code":"G0gY5jFqzTly"}
 - **uom:** PCS
 - **physical_quantity:** None
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-06-27T14:03:00Z
-- **items:**
-  ```json
-  [{"id": 874, "document": 355, "document_sap_doc_num": "606260182", "line_num": 0, "item_code": "FG0000004", "item_name": "COLD PRESS 5 LTR 4 PCS", "quantity": "40.000", "uom": "PCS", "rate": "1142.8600", "line_total": "45714.40", "gross_total": "48000.12", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264650", "base_entry": 10541, "base_type": 17, "tax_code": "IGST@5", "total_litres": "200.000", "total_boxes": "0.000", "total_weight": "198.328"}]
-  ```
 - **created_at:** 2026-06-27T16:04:25.494556+05:30
 - **updated_at:** 2026-06-27T19:34:16.287290+05:30
 

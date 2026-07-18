@@ -26,6 +26,9 @@ tags:
   {"id": 18, "name": "S.K TEMPO TRASPORT", "contact_person": "S.K", "mobile_no": "9958047117", "gstin": "", "created_at": "2026-02-24T15:59:19.487294+05:30"}
   ```
 - **capacity_ton:** 10.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-24T15:59:22.172186+05:30
 
 ## Related

@@ -35,10 +35,6 @@ tags:
 - **transporter:** 54
 - **driver:** 229
 - **dispatch_date:** 2026-06-29
-- **documents:**
-  ```json
-  [{"id": 400, "dispatch_plan": 674, "document_type": "INVOICE", "sap_doc_entry": 35491, "sap_doc_num": "606260185", "sap_doc_date": "2026-06-27", "sap_doc_total": "2774400.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264623", "sap_comments": "", "customer_code": "CUSTA000907", "customer_name": "SUSTAINQUEST PRIVATE LIMITED", "ship_to_code": "SUSTAINQUEST PRIVATE LIMITED HR", "ship_to_address": "SECTOR 37  MILE STONE 12/3 NH 44\rFARIDABAD-121003\rIN", "place_of_supply": "HR", "bp_gstin": "06ABOCS2792M1ZK", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS", "base_refs": "1706264623", "total_quantity": "1788.000", "total_litres": "8940.000", "total_boxes": "0.000", "total_weight": "9097.250", "created_at": "2026-06-29T18:02:54.180045+05:30", "updated_at": "2026-06-29T18:02:54.180058+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-06-29T19:17:10.859774+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000033
 - **random_code:** UNT2rV95F9I9
-- **qr_payload:** {"entry_no":"DOCK-20260629-0017","gatepass_no":"DCK/JIVO_MART/2026-27/000033","document_type":"INVOICE","sap_doc_entry":35491,"sap_doc_num":"606260185","documents":[{"document_type":"INVOICE","sap_doc_entry":35491,"sap_doc_num":"606260185"}],"vehicle_no":"DL01MB2623","random_code":"UNT2rV95F9I9"}
 - **uom:** PCS
 - **physical_quantity:** 596.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-06-29T14:17:00Z
-- **items:**
-  ```json
-  [{"id": 1052, "document": 400, "document_sap_doc_num": "606260185", "line_num": 0, "item_code": "FG0000151", "item_name": "SANO POMACE OLIVE 5 LTR TIN 4 PCS", "quantity": "1188.000", "uom": "PCS", "rate": "1238.0952", "line_total": "1470857.10", "gross_total": "1544400.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264623", "base_entry": 10502, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "5940.000", "total_boxes": "0.000", "total_weight": "6059.750"}, {"id": 1053, "document": 400, "document_sap_doc_num": "606260185", "line_num": 1, "item_code": "FG0000008", "item_name": "POMACE OLIVE 5 LTR TIN 4 PCS", "quantity": "600.000", "uom": "PCS", "rate": "1952.3810", "line_total": "1171428.60", "gross_total": "1230000.06", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264623", "base_entry": 10502, "base_type": 17, "tax_code": "CG+SG@5", "total_litres": "3000.000", "total_boxes": "0.000", "total_weight": "3037.500"}]
-  ```
 - **created_at:** 2026-06-29T18:02:54.177218+05:30
 - **updated_at:** 2026-06-29T19:48:04.650030+05:30
 

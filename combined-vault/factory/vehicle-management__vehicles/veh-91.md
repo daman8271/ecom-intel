@@ -26,6 +26,9 @@ tags:
   {"id": 10, "name": "MAHADEV TRADERS", "contact_person": "Mahadev", "mobile_no": "9215982050", "gstin": "", "created_at": "2026-02-21T11:24:24.506582+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-24T10:22:54.038463+05:30
 
 ## Related

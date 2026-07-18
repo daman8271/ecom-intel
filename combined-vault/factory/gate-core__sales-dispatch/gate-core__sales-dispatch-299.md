@@ -35,10 +35,6 @@ tags:
 - **transporter:** 22
 - **driver:** 227
 - **dispatch_date:** 2026-07-03
-- **documents:**
-  ```json
-  [{"id": 535, "dispatch_plan": 855, "document_type": "INVOICE", "sap_doc_entry": 35833, "sap_doc_num": "707260115", "sap_doc_date": "2026-07-02", "sap_doc_total": "1726560.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1707264514", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "R K WORLDINFOCOM PVT LTD GURUGRAM", "ship_to_address": "VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARK\rGURUGRAM-122103\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS", "base_refs": "1707264514", "total_quantity": "1920.000", "total_litres": "9600.000", "total_boxes": "0.000", "total_weight": "9527.904", "created_at": "2026-07-03T16:28:08.625964+05:30", "updated_at": "2026-07-03T16:28:08.625979+05:30"}]
-  ```
 - **document_count:** 1
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-07-03T19:10:01.890478+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000054
 - **random_code:** m6pDJJQuC6O3
-- **qr_payload:** {"entry_no":"DOCK-20260703-0011","gatepass_no":"DCK/JIVO_MART/2026-27/000054","document_type":"INVOICE","sap_doc_entry":35833,"sap_doc_num":"707260115","documents":[{"document_type":"INVOICE","sap_doc_entry":35833,"sap_doc_num":"707260115"}],"vehicle_no":"HR69E4548","random_code":"m6pDJJQuC6O3"}
 - **uom:** PCS
 - **physical_quantity:** 1448.000
 - **seal_number:** 
@@ -124,15 +119,10 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-03T13:52:00Z
-- **items:**
-  ```json
-  [{"id": 1544, "document": 535, "document_sap_doc_num": "707260115", "line_num": 0, "item_code": "FG0000143", "item_name": "COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS", "quantity": "1920.000", "uom": "PCS", "rate": "856.4286", "line_total": "1644342.91", "gross_total": "1726560.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264514", "base_entry": 10735, "base_type": 17, "tax_code": "IGST@5", "total_litres": "9600.000", "total_boxes": "0.000", "total_weight": "9527.904"}]
-  ```
 - **created_at:** 2026-07-03T16:28:08.622821+05:30
 - **updated_at:** 2026-07-03T19:22:20.980208+05:30
 
 ## Related
-- arrival -> [[arr-194]]
 - company -> [[comp-2]]
 - driver -> [[drv-227]]
 - transporter -> [[trn-22]]

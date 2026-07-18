@@ -39,15 +39,15 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-17).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-18).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 189 | 189 | 0 | 🟦 MATCH | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-fresh]] | 189 | 189 | 0 | 🟦 MATCH | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-now]] | 189 | 189 | 0 | 🟦 MATCH | SVD | 2026-07-17 |
-| [[Platform - flipkart\|flipkart]] | 189 | 215 | 13.76 | 🔴 ABOVE | SVD | 2026-07-17 |
-| [[Platform - zepto\|zepto]] | 189 | 164 | -13.23 | 🟢 BELOW | SVD | 2026-07-17 |
+| [[Platform - amazon\|amazon]] | 189 | 179 | -5.29 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-fresh]] | 189 | 179 | -5.29 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-now]] | 189 | 179 | -5.29 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - flipkart\|flipkart]] | 189 | 215 | 13.76 | 🔴 ABOVE | SVD | 2026-07-18 |
+| [[Platform - zepto\|zepto]] | 189 | 164 | -13.23 | 🟢 BELOW | SVD | 2026-07-18 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -77,7 +77,7 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000227`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000227]]
-- **859 boxes:** [[box-129258]] · [[box-129259]] · [[box-151918]] … +856 more (tag `bridge/FG0000227`)
-- **19 pallets:** [[pal-1094]] · [[pal-1095]] · [[pal-1109]] … +16 more (tag `bridge/FG0000227`)
+- **864 boxes:** [[box-129258]] · [[box-129259]] · [[box-151918]] … +861 more (tag `bridge/FG0000227`)
+- **21 pallets:** [[pal-1094]] · [[pal-1095]] · [[pal-1109]] … +18 more (tag `bridge/FG0000227`)
 - **3 loose:** [[barcode__loose-550]] · [[barcode__loose-551]] · [[barcode__loose-727]]
 

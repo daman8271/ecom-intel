@@ -26,6 +26,9 @@ tags:
   {"id": 13, "name": "Echo plast", "contact_person": "Echo plast", "mobile_no": "1234567891", "gstin": "", "created_at": "2026-02-21T16:16:02.026315+05:30"}
   ```
 - **capacity_ton:** 9.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-25T12:29:38.737427+05:30
 
 ## Related

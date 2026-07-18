@@ -169,6 +169,7 @@ From `/production-execution/sap/items/`. Up: [[_HOME]]
 - [[production-execution__sap__items-FG0000402]] — Items FG0000402
 - [[production-execution__sap__items-FG0000400]] — Items FG0000400
 - [[production-execution__sap__items-FG0000414]] — Items FG0000414
+- [[production-execution__sap__items-FG0000427]] — Items FG0000427
 - [[production-execution__sap__items-FG0000417]] — Items FG0000417
 - [[production-execution__sap__items-FG0000413]] — Items FG0000413
 - [[production-execution__sap__items-FG0000424]] — Items FG0000424
@@ -202,4 +203,3 @@ From `/production-execution/sap/items/`. Up: [[_HOME]]
 - [[production-execution__sap__items-SL0000254]] — Items SL0000254
 - [[production-execution__sap__items-SL0000213]] — Items SL0000213
 - [[production-execution__sap__items-SL0000195]] — Items SL0000195
-- [[production-execution__sap__items-SL0000221]] — Items SL0000221

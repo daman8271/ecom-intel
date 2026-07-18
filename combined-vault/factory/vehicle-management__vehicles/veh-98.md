@@ -26,6 +26,9 @@ tags:
   {"id": 32, "name": "Arnav Cargo movers", "contact_person": "Arnav", "mobile_no": "9319333888", "gstin": "", "created_at": "2026-03-09T10:57:48.722230+05:30"}
   ```
 - **capacity_ton:** 3.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-26T10:08:02.637086+05:30
 
 ## Related

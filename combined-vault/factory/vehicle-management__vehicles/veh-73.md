@@ -26,6 +26,9 @@ tags:
   {"id": 14, "name": "Shree Ram rmc", "contact_person": "Rmc", "mobile_no": "1234567890", "gstin": "", "created_at": "2026-02-23T13:04:01.617217+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-16T14:36:11.178208+05:30
 
 ## Related

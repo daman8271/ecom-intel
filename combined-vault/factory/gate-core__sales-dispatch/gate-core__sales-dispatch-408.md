@@ -22,7 +22,7 @@ tags:
 - **company_name:** Jivo Mart
 - **arrival:** 190
 - **arrival_no:** ARV-20260703-0009
-- **arrival_status:** LOADING
+- **arrival_status:** DEPARTED
 - **arrival_company_count:** 1
 - **arrival_can_depart:** False
 - **gatepass_print_locked:** False
@@ -35,10 +35,6 @@ tags:
 - **transporter:** 77
 - **driver:** 327
 - **dispatch_date:** 2026-07-02
-- **documents:**
-  ```json
-  [{"id": 738, "dispatch_plan": 839, "document_type": "INVOICE", "sap_doc_entry": 35568, "sap_doc_num": "606260189", "sap_doc_date": "2026-06-29", "sap_doc_total": "0.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1706264728", "sap_comments": "", "customer_code": "CUSTA000592", "customer_name": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED", "ship_to_code": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN", "ship_to_address": "ELECTRICITY CITY POST\rBENGALURU-560100\rIN", "place_of_supply": "KT", "bp_gstin": "29AAICK3556G1Z9", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000424 - FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS", "base_refs": "1706264728", "total_quantity": "5.000", "total_litres": "5.000", "total_boxes": "0.000", "total_weight": "4.854", "created_at": "2026-07-09T14:32:20.087655+05:30", "updated_at": "2026-07-09T14:32:20.087668+05:30"}, {"id": 739, "dispatch_plan": 878, "document_type": "INVOICE", "sap_doc_entry": 35823, "sap_doc_num": "607260105", "sap_doc_date": "2026-07-02", "sap_doc_total": "1417500.00", "sap_branch_id": 2, "sap_branch_name": "HARYANA", "sap_reference": "1707264505", "sap_comments": "", "customer_code": "CUSTA000592", "customer_name": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED", "ship_to_code": "KNOWTABLE ONLINE SERVICES PRIVATE LIMITED GODOWN", "ship_to_address": "ELECTRICITY CITY POST\rBENGALURU-560100\rIN", "place_of_supply": "KT", "bp_gstin": "29AAICK3556G1Z9", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "BH-FGM", "item_summary": "FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE", "base_refs": "1707264505", "total_quantity": "9000.000", "total_litres": "9000.000", "total_boxes": "0.000", "total_weight": "8752.500", "created_at": "2026-07-09T14:32:20.091056+05:30", "updated_at": "2026-07-09T14:32:20.091068+05:30"}]
-  ```
 - **document_count:** 2
 - **document_numbers:**
   ```json
@@ -59,7 +55,7 @@ tags:
 - **ship_to_address:** ELECTRICITY CITY POSTBENGALURU-560100IN
 - **place_of_supply:** KT
 - **bp_gstin:** 29AAICK3556G1Z9
-- **eway_bill:** 
+- **eway_bill:** 362291596690
 - **from_warehouse:** 
 - **to_warehouse:** 
 - **warehouses:** BH-FGM
@@ -92,29 +88,28 @@ tags:
 - **gate_out_date:** None
 - **out_time:** None
 - **security_name:** 
-- **truck_photo:** None
-- **photo_latitude:** None
-- **photo_longitude:** None
-- **photo_uploaded_by:** None
-- **photo_uploaded_at:** None
-- **gatepass_no:** None
-- **random_code:** 
-- **qr_payload:** 
-- **uom:** 
+- **truck_photo:** /media/sales_dispatch/attachments/WhatsApp_Image_2026-07-14_at_7.56.29_PM.jpeg
+- **photo_latitude:** 28.957500
+- **photo_longitude:** 76.776000
+- **photo_uploaded_by:** 51
+- **photo_uploaded_at:** 2026-07-14T20:15:10.498420+05:30
+- **gatepass_no:** DCK/JIVO_MART/2026-27/000084
+- **random_code:** o-JigmxgWznz
+- **uom:** PCS
 - **physical_quantity:** None
 - **seal_number:** 
 - **pgi_reference:** 
-- **printed_by:** None
-- **printed_at:** None
-- **print_committed_by:** None
-- **print_committed_at:** None
+- **printed_by:** 51
+- **printed_at:** 2026-07-14T20:15:14.754591+05:30
+- **print_committed_by:** 51
+- **print_committed_at:** 2026-07-14T20:15:17.828321+05:30
 - **dispatched_by:** None
 - **dispatched_at:** None
-- **status:** DOCKED
+- **status:** REJECTED
 - **remarks:** 
-- **reject_reason:** 
+- **reject_reason:** Abandoned: stuck/incomplete trip never dispatched (data cleanup).
 - **rejected_by:** None
-- **rejected_at:** None
+- **rejected_at:** 2026-07-17T11:14:31.804440+05:30
 - **cancel_reason:** 
 - **cancelled_by:** None
 - **cancelled_at:** None
@@ -124,15 +119,10 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** None
-- **items:**
-  ```json
-  [{"id": 2043, "document": 738, "document_sap_doc_num": "606260189", "line_num": 0, "item_code": "FG0000424", "item_name": "FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS", "quantity": "5.000", "uom": "PCS", "rate": "0.0000", "line_total": "0.00", "gross_total": "0.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264728", "base_entry": 10641, "base_type": 17, "tax_code": "IGST@5", "total_litres": "5.000", "total_boxes": "0.000", "total_weight": "4.854"}, {"id": 2044, "document": 739, "document_sap_doc_num": "607260105", "line_num": 1, "item_code": "FG0000384", "item_name": "MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE", "quantity": "9000.000", "uom": "PCS", "rate": "150.0000", "line_total": "1350000.00", "gross_total": "1417500.00", "warehouse_code": "BH-FGM", "from_warehouse": "", "to_warehouse": "", "base_ref": "1707264505", "base_entry": 10721, "base_type": 17, "tax_code": "IGST@5", "total_litres": "9000.000", "total_boxes": "0.000", "total_weight": "8752.500"}]
-  ```
 - **created_at:** 2026-07-09T14:32:20.085183+05:30
-- **updated_at:** 2026-07-09T14:32:20.085196+05:30
+- **updated_at:** 2026-07-17T11:14:31.851522+05:30
 
 ## Related
-- arrival -> [[arr-190]]
 - company -> [[comp-2]]
 - driver -> [[drv-327]]
 - transporter -> [[trn-77]]

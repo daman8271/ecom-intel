@@ -1,12 +1,12 @@
 ---
 type: moc
-title: SAP Item (OITM) (421)
+title: SAP Item (OITM) (422)
 tags:
   - moc
   - source/factory
 ---
 
-# SAP Item (OITM) — 421 records
+# SAP Item (OITM) — 422 records
 
 From `/barcode/items/oitm/`. Up: [[_HOME]]
 
@@ -431,3 +431,4 @@ From `/barcode/items/oitm/`. Up: [[_HOME]]
 - [[oitm-FG0000424]] — FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS
 - [[oitm-FG0000425]] — PET BOTTLE 160 MLS SHIKANJI 24 PCS
 - [[oitm-FG0000426]] — COLD PRESS GROUNDNUT OIL 2 LTR 10 PCS HANDLE
+- [[oitm-FG0000427]] — EXTRA VIRGIN CANOLA OIL 3 LTR TIN 3 PCS

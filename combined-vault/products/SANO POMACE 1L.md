@@ -37,12 +37,12 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-17).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-18).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 399 | 379 | -5.01 | 🟢 BELOW | SVD | 2026-07-17 |
-| [[Platform - flipkart\|flipkart]] | 399 | 389 | -2.51 | 🟢 BELOW | SVD | 2026-07-17 |
+| [[Platform - amazon\|amazon]] | 399 | 379 | -5.01 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - flipkart\|flipkart]] | 399 | 389 | -2.51 | 🟢 BELOW | SVD | 2026-07-18 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -73,6 +73,7 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000150`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000150]]
-- **816 boxes:** [[box-131085]] · [[box-131086]] · [[box-131087]] … +813 more (tag `bridge/FG0000150`)
-- **18 pallets:** [[pal-2732]] · [[pal-2750]] · [[pal-2812]] … +15 more (tag `bridge/FG0000150`)
+- **862 boxes:** [[box-131085]] · [[box-131086]] · [[box-131087]] … +859 more (tag `bridge/FG0000150`)
+- **19 pallets:** [[pal-2732]] · [[pal-2750]] · [[pal-2812]] … +16 more (tag `bridge/FG0000150`)
+- **1 loose:** [[barcode__loose-905]]
 

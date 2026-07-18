@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Users (70)
+title: Users (71)
 tags:
   - moc
   - source/factory
 ---
 
-# Users — 70 records
+# Users — 71 records
 
 From `/accounts/users/`. Up: [[_HOME]]
 
@@ -27,6 +27,7 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-28]] — Amit Pal Singh
 - [[accounts__users-8]] — Quality chemist
 - [[accounts__users-18]] — Naresh Kumar
+- [[accounts__users-14]] — Jasmeet Singh
 - [[accounts__users-27]] — Preshit
 - [[accounts__users-24]] — Gautam
 - [[accounts__users-23]] — Atul
@@ -46,7 +47,6 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-12]] — Chemist
 - [[accounts__users-22]] — Sandeep singh
 - [[accounts__users-38]] — Deepak
-- [[accounts__users-14]] — Jasmeet Singh
 - [[accounts__users-40]] — Parminder
 - [[accounts__users-26]] — RK Tiwari
 - [[accounts__users-33]] — JP Production
@@ -75,8 +75,9 @@ From `/accounts/users/`. Up: [[_HOME]]
 - [[accounts__users-55]] — Yashin
 - [[accounts__users-75]] — Arvinpal Singh
 - [[accounts__users-72]] — labour
-- [[accounts__users-47]] — yusuf
 - [[accounts__users-94]] — Sumit
-- [[accounts__users-70]] — Ekam Singh
-- [[accounts__users-42]] — Tarandeep Singh
 - [[accounts__users-71]] — Warehouse Operations
+- [[accounts__users-42]] — Tarandeep Singh
+- [[accounts__users-106]] — Sukhram
+- [[accounts__users-70]] — Ekam Singh
+- [[accounts__users-47]] — yusuf

@@ -26,6 +26,9 @@ tags:
   {"id": 34, "name": "v.s logistics", "contact_person": "Vs", "mobile_no": "9758318177", "gstin": "", "created_at": "2026-03-10T10:59:37.323123+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-10T10:59:39.935230+05:30
 
 ## Related

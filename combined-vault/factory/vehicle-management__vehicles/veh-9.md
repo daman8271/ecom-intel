@@ -26,6 +26,9 @@ tags:
   {"id": 4, "name": "Kaushik logistics", "contact_person": "Mr kaushik", "mobile_no": "9017131750", "gstin": "", "created_at": "2026-02-19T15:11:19.184416+05:30"}
   ```
 - **capacity_ton:** 1.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-19T16:53:07.951582+05:30
 
 ## Related

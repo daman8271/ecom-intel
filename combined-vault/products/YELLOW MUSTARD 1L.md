@@ -38,14 +38,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-17).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-18).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 259 | 249 | -3.86 | 🟢 BELOW | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-fresh]] | 259 | 249 | -3.86 | 🟢 BELOW | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-now]] | 259 | 249 | -3.86 | 🟢 BELOW | SVD | 2026-07-17 |
-| [[Platform - flipkart\|flipkart]] | 259 | — | — | ⚪ OOS | SVD | 2026-07-17 |
+| [[Platform - amazon\|amazon]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-fresh]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-now]] | 259 | 239 | -7.72 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - flipkart\|flipkart]] | 259 | — | — | ⚪ OOS | SVD | 2026-07-18 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -76,9 +76,9 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000328`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000328]]
-- **178 boxes:** [[box-130752]] · [[box-130753]] · [[box-130754]] … +175 more (tag `bridge/FG0000328`)
+- **211 boxes:** [[box-130708]] · [[box-130713]] · [[box-130736]] … +208 more (tag `bridge/FG0000328`)
 - **4 pallets:** [[pal-2825]] · [[pal-2826]] · [[pal-2827]] … +1 more (tag `bridge/FG0000328`)
-- **1 boxes:** [[barcode__dispatch__reports__boxes-130766]]
+- **2 loose:** [[barcode__loose-906]] · [[barcode__loose-908]]
 
 **`FG0000329`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000329]]

@@ -67,7 +67,6 @@ Weight: 6423.198 kg
 - **updated_at:** 2026-07-04T16:42:55.125388+05:30
 
 ## Related
-- arrival -> [[arr-204]]
 - company -> [[comp-2]]
 - driver -> [[drv-247]]
 - vehicle -> [[veh-283]]

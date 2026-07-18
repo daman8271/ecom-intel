@@ -26,6 +26,9 @@ tags:
   {"id": 22, "name": "JIVO WELLNESS PVT LTD", "contact_person": "Jivo Wellness", "mobile_no": "1234567891", "gstin": "", "created_at": "2026-02-25T15:07:18.647530+05:30"}
   ```
 - **capacity_ton:** 1.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-25T15:07:22.279749+05:30
 
 ## Related

@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "DL01MA5762"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# DL01MA5762
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 35435
-- **doc_num:** 706260773
-- **doc_date:** 2026-06-26
-- **doc_total:** 742851.00
+- **doc_entry:** 35557
+- **doc_num:** 706260850
+- **doc_date:** 2026-06-29
+- **doc_total:** 38823.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD BENGALURU
-- **ship_to_address:** BLOCK NO 4 DEBASPET 5TH PHASE KIADB B900  S.NO 113 114/5 114/6 114/7 114/9BENGALURU-562111IN
-- **place_of_supply:** KT
-- **bp_gstin:** 29AAECR0564M2ZY
+- **card_code:** CUSTA000910
+- **card_name:** FLIPKART  (B2C-MAY-JULY)
+- **ship_to_code:** FLIPKART B2C UTTAR PRADESH
+- **ship_to_address:** UTTAR PRADESH-246761IN
+- **place_of_supply:** UP
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** DL01MA5762
-- **transporter_name:** Pick & Ship
-- **bilty_no:** 2724
-- **bilty_date:** 2026-06-30
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000030 - MUSTARD KACHI GHANI 1 LTR 20 PCS, FG0000064 - EXTRA LIGHT OIVE 2 LTR 10 PCS HANDLE, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN
-- **base_refs:** 1706264683
-- **total_quantity:** 2078.000
-- **total_litres:** 3346.000
+- **warehouses:** DL-EC
+- **item_summary:** SL0000125 - POMACE 1 LTR, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000126 - POMACE 1 LTR PACK OF 2, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, SL0000128 - POMACE 5 LTR, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, SL0000155 - SANO POMACE 1 LTR PACK OF 3, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, SL0000184 - SUNFLOWER 5 LTR, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, SL0000195 - JIVO RICE BRAIN OIL 5  LTR, FG0000230 - RICE BRAN OIL 5 LTR 4 PCS, SL0000210 - SO OLIVE OIL 1 LTR 16 PCS, FG0000228 - SO OLIVE 1L 16 PCS, SL0000229 - SOYABEAN 5 LTR + 1 LTR, FG0000192 - SOYABEAN OIL 5 LTR 4 PCS, FG0000193 - SOYABEAN OIL 1 LTR 20 PCS, SL0000236 - SOYABEAN OIL 1 LTR, FG0000193 - SOYABEAN OIL 1 LTR 20 PCS
+- **base_refs:** 1506264697
+- **total_quantity:** 85.000
+- **total_litres:** 307.000
 - **total_boxes:** 0.000
-- **total_weight:** 3311.265
-- **line_count:** 10
+- **total_weight:** 159.590
+- **line_count:** 19
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 745, "sap_invoice_doc_entry": 35435, "sap_invoice_doc_num": "706260773", "invoice_number": "706260773", "eway_bill": "342273910362", "invoice_weight": "3311.265", "invoice_amount": "742851.00", "place_of_supply": "KT", "location": "Delivery Address: HKR2 R K WorldInfocom Pvt Ltd Block No 4 Debaspet, 5th Phase, KIADB, B900S.No 113, 114/5, 114/6, 114/7, 114/9,BENGALURU 562111", "product_variety": "Oil", "total_litres": "3346.000", "effective_month": "2026-06", "budget_delivery_point": "BENGALURU", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 351, "transporter_id": 85, "driver_id": null, "linked_vehicle_entry_id": 1304, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-06-30T14:33:33.700593Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-06-30", "priority": "HIGH", "transporter_name": "PICK & SHIP", "transporter_gstin": "09AAQCP4145A1ZF", "contact_person": "shukla", "mobile_no": "9958007610", "vehicle_no": "DL01MA5762", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "2722", "bilty_date": "2026-06-30", "bilty_attachment": "/media/sales_dispatch/attachments/EwaybillPrint_-_706260773_1.pdf", "bilty_attachment_name": "EwaybillPrint - 706260773 (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-06-29T19:56:09.439040+05:30", "updated_at": "2026-06-30T20:03:33.712927+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 35557, "sap_invoice_doc_num": "706260850", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```

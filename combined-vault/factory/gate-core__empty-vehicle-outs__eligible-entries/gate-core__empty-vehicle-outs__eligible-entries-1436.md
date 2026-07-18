@@ -32,11 +32,10 @@ tags:
 - **company_name:** Jivo Mart
 - **arrival:** 190
 - **arrival_no:** ARV-20260703-0009
-- **release_invoice_count:** 2
-- **release_cancels_docking:** True
+- **release_invoice_count:** 0
+- **release_cancels_docking:** False
 
 ## Related
-- arrival -> [[arr-190]]
 - company_id -> [[comp-2]]
 - driver_id -> [[drv-327]]
 - vehicle_id -> [[veh-365]]

@@ -169,6 +169,7 @@ From `/quality-control/sap-items/`. Up: [[_HOME]]
 - [[quality-control__sap-items-FG0000402]] — COLD PRESS SUNFLOWER 1 LTR 24 PCS
 - [[quality-control__sap-items-FG0000400]] — EXTRA LIGHT 1+1+1 LTR
 - [[quality-control__sap-items-FG0000414]] — EXTRA LIGHT OLIVE 1 LTR + 1 LTR COMBO 8 SET
+- [[quality-control__sap-items-FG0000427]] — EXTRA VIRGIN CANOLA OIL 3 LTR TIN 3 PCS
 - [[quality-control__sap-items-FG0000417]] — EXTRA VIRGIN COCONUT 1 LTR + 1 LTR COMBO 8 SET
 - [[quality-control__sap-items-FG0000413]] — EXTRA VIRGIN OLIVE 1 LTR + 1 LTR COMBO 8 SET
 - [[quality-control__sap-items-FG0000424]] — FIRST PRESSED MUSTARD OIL 1 LTR 20 PCS
@@ -202,4 +203,3 @@ From `/quality-control/sap-items/`. Up: [[_HOME]]
 - [[quality-control__sap-items-SL0000254]] — JIVO COLD PRESS CANOLA OIL WITH PUNJABI JEERA JUICE BOX - 5L
 - [[quality-control__sap-items-SL0000213]] — JIVO RICE BRAIN OIL 1 LTR
 - [[quality-control__sap-items-SL0000195]] — JIVO RICE BRAIN OIL 5  LTR
-- [[quality-control__sap-items-SL0000221]] — JIVO SOYABEAN OIL POUCH 1 LTR

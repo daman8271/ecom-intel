@@ -42,16 +42,16 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-17).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-18).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 779 | 789 | 1.28 | 🔴 ABOVE | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-fresh]] | 779 | 799 | 2.57 | 🔴 ABOVE | SVD | 2026-07-17 |
-| [[Platform - amazon\|amazon-now]] | 779 | 799 | 2.57 | 🔴 ABOVE | SVD | 2026-07-17 |
-| [[Platform - bigbasket\|bigbasket]] | 779 | 1012 | 29.91 | 🔴 ABOVE | SVD | 2026-07-17 |
-| [[Platform - flipkart\|flipkart]] | 779 | 736 | -5.52 | 🟢 BELOW | SVD | 2026-07-17 |
-| [[Platform - zepto\|zepto]] | 779 | 800 | 2.7 | 🔴 ABOVE | SVD | 2026-07-17 |
+| [[Platform - amazon\|amazon]] | 779 | 765 | -1.8 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-fresh]] | 779 | 779 | 0 | 🟦 MATCH | SVD | 2026-07-18 |
+| [[Platform - amazon\|amazon-now]] | 779 | 779 | 0 | 🟦 MATCH | SVD | 2026-07-18 |
+| [[Platform - bigbasket\|bigbasket]] | 779 | 1012 | 29.91 | 🔴 ABOVE | SVD | 2026-07-18 |
+| [[Platform - flipkart\|flipkart]] | 779 | 736 | -5.52 | 🟢 BELOW | SVD | 2026-07-18 |
+| [[Platform - zepto\|zepto]] | 779 | 800 | 2.7 | 🔴 ABOVE | SVD | 2026-07-18 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
@@ -82,8 +82,10 @@ Cross-vault fusion by name / SKU match:
 
 **`FG0000042`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000042]]
-- **598 boxes:** [[box-101914]] · [[box-101915]] · [[box-101916]] … +595 more (tag `bridge/FG0000042`)
+- **701 boxes:** [[box-101914]] · [[box-101915]] · [[box-101916]] … +698 more (tag `bridge/FG0000042`)
 - **12 pallets:** [[pal-1691]] · [[pal-1692]] · [[pal-1696]] … +9 more (tag `bridge/FG0000042`)
+- **11 boxes:** [[barcode__dispatch__reports__boxes-117541]] · [[barcode__dispatch__reports__boxes-117559]] · [[barcode__dispatch__reports__boxes-233206]] … +8 more (tag `bridge/FG0000042`)
+- **1 loose:** [[barcode__loose-921]]
 
 **`FG0000071`** — referenced by factory records:
 - **1 oitm:** [[oitm-FG0000071]]

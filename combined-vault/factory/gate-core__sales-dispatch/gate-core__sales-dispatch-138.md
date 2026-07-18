@@ -35,10 +35,6 @@ tags:
 - **transporter:** 22
 - **driver:** 227
 - **dispatch_date:** 2026-06-20
-- **documents:**
-  ```json
-  [{"id": 245, "dispatch_plan": 451, "document_type": "INVOICE", "sap_doc_entry": 34982, "sap_doc_num": "706260496", "sap_doc_date": "2026-06-19", "sap_doc_total": "1402830.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1706264609", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "R K WORLDINFOCOM PVT LTD GURUGRAM", "ship_to_address": "VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARK\rGURUGRAM-122103\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS", "base_refs": "1706264609", "total_quantity": "1560.000", "total_litres": "7800.000", "total_boxes": "0.000", "total_weight": "7741.422", "created_at": "2026-06-24T14:49:56.349641+05:30", "updated_at": "2026-06-24T14:49:56.349661+05:30"}, {"id": 246, "dispatch_plan": 456, "document_type": "INVOICE", "sap_doc_entry": 34986, "sap_doc_num": "706260499", "sap_doc_date": "2026-06-19", "sap_doc_total": "755370.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1706264610", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "R K WORLDINFOCOM PVT LTD GURUGRAM", "ship_to_address": "VILLAGE RAHAKA  ESR SOHNA LOGISTICS PARK\rGURUGRAM-122103\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS", "base_refs": "1706264610", "total_quantity": "840.000", "total_litres": "4200.000", "total_boxes": "0.000", "total_weight": "4168.458", "created_at": "2026-06-24T14:49:56.353936+05:30", "updated_at": "2026-06-24T14:49:56.353954+05:30"}, {"id": 247, "dispatch_plan": 452, "document_type": "INVOICE", "sap_doc_entry": 34988, "sap_doc_num": "706260501", "sap_doc_date": "2026-06-19", "sap_doc_total": "836640.00", "sap_branch_id": 1, "sap_branch_name": "DELHI", "sap_reference": "1706264611", "sap_comments": "", "customer_code": "CUSTA000048", "customer_name": "R K WORLDINFOCOM PVT LTD", "ship_to_code": "RK WORLDINFOCOM PVT LTD HARYANA", "ship_to_address": "LLP VILLAGE- FARRUKHNAGAR TEHSIL-FARRUKH ESR SOHNA LOGISTICS PARK VILLAGE RAHAKA  BLOCK J2,FARUKHNAGAR LOGISTICS PARKS EMPORIUM INDUSTRIAL PARK INDIA PVT LTD\rGURUGRAM-122506\rIN", "place_of_supply": "HR", "bp_gstin": "06AAECR0564M1Z7", "eway_bill": "", "from_warehouse": "", "to_warehouse": "", "warehouses": "DL-FG", "item_summary": "FG0000142 - COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "base_refs": "1706264611", "total_quantity": "4000.000", "total_litres": "4000.000", "total_boxes": "0.000", "total_weight": "3988.300", "created_at": "2026-06-24T14:49:56.357270+05:30", "updated_at": "2026-06-24T14:49:56.357287+05:30"}]
-  ```
 - **document_count:** 3
 - **document_numbers:**
   ```json
@@ -99,7 +95,6 @@ tags:
 - **photo_uploaded_at:** 2026-06-24T19:39:46.765472+05:30
 - **gatepass_no:** DCK/JIVO_MART/2026-27/000020
 - **random_code:** Lu5ZHKoZfmkv
-- **qr_payload:** {"entry_no":"DOCK-20260624-0012","gatepass_no":"DCK/JIVO_MART/2026-27/000020","document_type":"INVOICE","sap_doc_entry":34982,"sap_doc_num":"706260496, 706260499, 706260501","documents":[{"document_type":"INVOICE","sap_doc_entry":34982,"sap_doc_num":"706260496"},{"document_type":"INVOICE","sap_doc_entry":34986,"sap_doc_num":"706260499"},{"document_type":"INVOICE","sap_doc_entry":34988,"sap_doc_num":"706260501"}],"vehicle_no":"HR69F9627","random_code":"Lu5ZHKoZfmkv"}
 - **uom:** PCS
 - **physical_quantity:** 6400.000
 - **seal_number:** 
@@ -124,10 +119,6 @@ tags:
 - **weighbridge_slip_no:** 
 - **first_weighment_time:** None
 - **second_weighment_time:** 2026-07-10T05:34:00Z
-- **items:**
-  ```json
-  [{"id": 594, "document": 245, "document_sap_doc_num": "706260496", "line_num": 0, "item_code": "FG0000143", "item_name": "COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS", "quantity": "1560.000", "uom": "PCS", "rate": "856.4286", "line_total": "1336028.62", "gross_total": "1402830.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264609", "base_entry": 10480, "base_type": 17, "tax_code": "IGST@5", "total_litres": "7800.000", "total_boxes": "0.000", "total_weight": "7741.422"}, {"id": 595, "document": 246, "document_sap_doc_num": "706260499", "line_num": 1, "item_code": "FG0000143", "item_name": "COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS", "quantity": "840.000", "uom": "PCS", "rate": "856.4286", "line_total": "719400.02", "gross_total": "755370.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264610", "base_entry": 10481, "base_type": 17, "tax_code": "IGST@5", "total_litres": "4200.000", "total_boxes": "0.000", "total_weight": "4168.458"}, {"id": 596, "document": 247, "document_sap_doc_num": "706260501", "line_num": 2, "item_code": "FG0000142", "item_name": "COLD PRESS GROUNDNUT OIL 1 LTR 16 PCS", "quantity": "4000.000", "uom": "PCS", "rate": "199.2000", "line_total": "796800.00", "gross_total": "836640.00", "warehouse_code": "DL-FG", "from_warehouse": "", "to_warehouse": "", "base_ref": "1706264611", "base_entry": 10482, "base_type": 17, "tax_code": "IGST@5", "total_litres": "4000.000", "total_boxes": "0.000", "total_weight": "3988.300"}]
-  ```
 - **created_at:** 2026-06-24T14:49:56.345706+05:30
 - **updated_at:** 2026-07-10T11:06:46.686155+05:30
 

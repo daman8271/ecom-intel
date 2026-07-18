@@ -26,6 +26,9 @@ tags:
   {"id": 21, "name": "ROHTAS TRANSPORT SERVICE", "contact_person": "Rohtas", "mobile_no": "9419328355", "gstin": "", "created_at": "2026-02-25T12:05:21.800449+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-25T12:05:27.801612+05:30
 
 ## Related

@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Vendor (215)
+title: Vendor (216)
 tags:
   - moc
   - source/factory
 ---
 
-# Vendor — 215 records
+# Vendor — 216 records
 
 From `/po/vendors/`. Up: [[_HOME]]
 
@@ -146,6 +146,7 @@ From `/po/vendors/`. Up: [[_HOME]]
 - [[ven-VENDA000962]] — OM LOGISTICS SUPPLY CHAIN PRIVATE LIMITED
 - [[ven-VENDA000992]] — OM THERMOCOL PACKING MATERIAL
 - [[ven-VENDA000692]] — ONE97 COMMUNICATIONS LTD ARVINDER
+- [[ven-VENDA001028]] — OPENAI LLC
 - [[ven-VENDA000154]] — OPERA LOGISTICS PRIVATELIMITED
 - [[ven-VENDA000707]] — PACKSTER PACKAGING SOLUTIONS
 - [[ven-VENDA000325]] — PALAK ENTERPRISES

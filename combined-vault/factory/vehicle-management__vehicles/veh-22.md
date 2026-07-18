@@ -26,6 +26,9 @@ tags:
   {"id": 16, "name": "ECHO PLAST INDIA", "contact_person": "ECHO PLAST", "mobile_no": "1234567891", "gstin": "", "created_at": "2026-02-23T16:00:55.934657+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-02-23T16:01:00.948251+05:30
 
 ## Related

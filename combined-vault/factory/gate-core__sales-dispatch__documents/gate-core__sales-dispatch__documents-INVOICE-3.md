@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR69F7125"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR69F7125
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36526
-- **doc_num:** 607260155
-- **doc_date:** 2026-07-13
-- **doc_total:** 129050.00
+- **doc_entry:** 36707
+- **doc_num:** 607260182
+- **doc_date:** 2026-07-17
+- **doc_total:** 1908900.00
 - **branch_id:** 2
 - **branch_name:** HARYANA
-- **card_code:** CUSTA000874
-- **card_name:** JIVO MART PVT LTD - DL
-- **ship_to_code:** JIVO MART PVT LTD  MAYAPURI
-- **ship_to_address:** PHASE 1 MAYAPURI  A/35-1 MAYAPURI INDUSTRIAL AREANEW DELHI-110064IN
-- **place_of_supply:** DL
-- **bp_gstin:** 07AAFCJ4102J1ZS
+- **card_code:** CUSTA000906
+- **card_name:** EVARA ENTERPRISES
+- **ship_to_code:** SCOOTSY LOGISTICS PRIVATE LIMITED PUNJAB
+- **ship_to_address:** VILLAGE BASMAN TEHSIL BANUR SAS NAGAR  AV LOGISTICS 255-358CHANDIGARH-140601IN
+- **place_of_supply:** PB
+- **bp_gstin:** 03AALFE9594L1ZR
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR69F7125
+- **transporter_name:** JIVO VEHICLE
+- **bilty_no:** NA
+- **bilty_date:** 2026-07-17
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DP-HR
-- **item_summary:** FG0000328 - YELLOW MUSTARD OIL 1 LTR 20 PCS, FG0000032 - COLD PRESS 1 LTR 20 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000028 - POMACE OLIVE 1 LTR 16 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN, FG0000385 - YELLOW MUSTARD OIL 5 LTR TIN 4 PCS
-- **base_refs:** 
-- **total_quantity:** 4755.000
-- **total_litres:** 12495.000
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE
+- **base_refs:** 1707264611
+- **total_quantity:** 12120.000
+- **total_litres:** 12120.000
 - **total_boxes:** 0.000
-- **total_weight:** 12160.852
-- **line_count:** 12
+- **total_weight:** 11786.700
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36526, "sap_invoice_doc_num": "607260155", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 1393, "sap_invoice_doc_entry": 36707, "sap_invoice_doc_num": "607260182", "invoice_number": "607260182", "eway_bill": "332293826880", "invoice_weight": "11786.700", "invoice_amount": "1908900.00", "place_of_supply": "PB", "location": "", "product_variety": "Oil", "total_litres": "12120.000", "effective_month": "2026-07", "budget_delivery_point": "CHANDIGARH", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 266, "transporter_id": 22, "driver_id": null, "linked_vehicle_entry_id": 2142, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-17T14:03:58.095309Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-17", "priority": "", "transporter_name": "JIVO WELLNESS PVT LTD", "transporter_gstin": "", "contact_person": "Jivo Wellness", "mobile_no": "1234567891", "vehicle_no": "HR69F7125", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "001", "bilty_date": "2026-07-17", "bilty_attachment": "/media/sales_dispatch/attachments/7125_E_WAY_1.pdf", "bilty_attachment_name": "7125 E WAY (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-17T18:36:52.473241+05:30", "updated_at": "2026-07-17T19:33:58.107198+05:30"}
   ```

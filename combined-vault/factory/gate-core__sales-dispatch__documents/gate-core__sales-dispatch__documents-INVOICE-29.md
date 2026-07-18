@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "Documents INVOICE"
+title: "HR69E4548"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Documents INVOICE
+# HR69E4548
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36454
-- **doc_num:** 607260148
-- **doc_date:** 2026-07-11
-- **doc_total:** 216203.00
+- **doc_entry:** 36661
+- **doc_num:** 607260178
+- **doc_date:** 2026-07-17
+- **doc_total:** 884318.00
 - **branch_id:** 2
 - **branch_name:** HARYANA
-- **card_code:** CUSTA000874
-- **card_name:** JIVO MART PVT LTD - DL
-- **ship_to_code:** JIVO MART PVT LTD  MAYAPURI
-- **ship_to_address:** PHASE 1 MAYAPURI  A/35-1 MAYAPURI INDUSTRIAL AREANEW DELHI-110064IN
-- **place_of_supply:** DL
-- **bp_gstin:** 07AAFCJ4102J1ZS
+- **card_code:** CUSTA000048
+- **card_name:** R K WORLDINFOCOM PVT LTD
+- **ship_to_code:** R K WORLDINFOCOM PVT LTD GURUGRAM
+- **ship_to_address:** VILLAGE RAHAKAGURUGRAM-122103IN
+- **place_of_supply:** HR
+- **bp_gstin:** 06AAECR0564M1Z7
 - **eway_bill:** 
-- **vehicle_no:** 
-- **transporter_name:** 
-- **bilty_no:** 
-- **bilty_date:** None
+- **vehicle_no:** HR69E4548
+- **transporter_name:** Jivo Vehicle
+- **bilty_no:** NA
+- **bilty_date:** 2026-07-17
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DP-HR
-- **item_summary:** FG0000422 - COLD PRESS 1 LTR (NIRMAL RISHI )20PCS, FG0000004 - COLD PRESS 5 LTR 4 PCS, FG0000143 - COLD PRESS GROUNDNUT OIL 5 LTR 4 PCS, FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000009 - EXTRA LIGHT OLIVE 5 LTR TIN 4 PCS, FG0000042 - EXTRA VIRGIN OLIVE 1 LTR 16 PCS, FG0000381 - EXTRA VIRGIN OLIVE 200 MLS 35 PCS, FG0000074 - EXTRA VIRGIN OLIVE 5 LTR TIN 4 PCS IMPORTED, FG0000161 - EXTRA VIRGIN OLIVE 500 MLS 24 PCS, FG0000011 - MUSTARD KACCHI GHANI 5 LTR 4 PCS, FG0000008 - POMACE OLIVE 5 LTR TIN 4 PCS, FG0000390 - EXTRA LIGHT OLIVE 3 LTR TIN 2 PCS, FG0000150 - SANO POMACE OLIVE 1 LTR 16 PCS, FG0000151 - SANO POMACE OLIVE 5 LTR TIN 4 PCS
-- **base_refs:** 
-- **total_quantity:** 8530.000
-- **total_litres:** 16467.500
+- **warehouses:** BH-FGM
+- **item_summary:** FG0000230 - RICE BRAN OIL 5 LTR 4 PCS
+- **base_refs:** 1707264601
+- **total_quantity:** 1240.000
+- **total_litres:** 6200.000
 - **total_boxes:** 0.000
-- **total_weight:** 16471.988
-- **line_count:** 15
+- **total_weight:** 6150.400
+- **line_count:** 1
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": null, "sap_invoice_doc_entry": 36454, "sap_invoice_doc_num": "607260148", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
+  {"id": 1385, "sap_invoice_doc_entry": 36661, "sap_invoice_doc_num": "607260178", "invoice_number": "607260178", "eway_bill": "322293825082", "invoice_weight": "6150.400", "invoice_amount": "884318.00", "place_of_supply": "HR", "location": "", "product_variety": "Oil", "total_litres": "6200.000", "effective_month": "2026-07", "budget_delivery_point": "GURUGRAM", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 126, "transporter_id": 22, "driver_id": null, "linked_vehicle_entry_id": 2131, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-17T13:36:01.355391Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-17", "priority": "", "transporter_name": "JIVO WELLNESS PVT LTD", "transporter_gstin": "", "contact_person": "Jivo Wellness", "mobile_no": "1234567891", "vehicle_no": "HR69E4548", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "001", "bilty_date": "2026-07-17", "bilty_attachment": "/media/sales_dispatch/attachments/7125_E_WAY_xR8zfRj.pdf", "bilty_attachment_name": "7125 E WAY.pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-17T15:02:49.443464+05:30", "updated_at": "2026-07-17T19:06:01.370585+05:30"}
   ```

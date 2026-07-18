@@ -46,13 +46,9 @@ tags:
 - **sap_comments:** 
 - **sap_line_count:** 0
 - **sap_total_quantity:** 0.000
-- **document_reference:** Dispatch 607260105, 606260189
-- **document_notes:** Customers: KNOWTABLE ONLINE SERVICES PRIVATE LIMITED
-Weight: 8757.354 kg
-- **pipeline_status:**
-  ```json
-  {"stage": "DOCKED", "stage_label": "Docked", "stage_at": "2026-07-09T09:02:20.084744Z", "counts": {"total": 2, "rejected": 0}, "module": "dock", "module_status": "docked", "module_label": "docked at dock"}
-  ```
+- **document_reference:** 
+- **document_notes:** 
+- **pipeline_status:** None
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 
 - **bst_gate_out_status:** 
@@ -64,10 +60,9 @@ Weight: 8757.354 kg
 - **security_name:** Sachin
 - **remarks:** 
 - **created_at:** 2026-07-03T14:44:02.572407+05:30
-- **updated_at:** 2026-07-03T14:44:18.928533+05:30
+- **updated_at:** 2026-07-17T11:14:32.299127+05:30
 
 ## Related
-- arrival -> [[arr-190]]
 - company -> [[comp-2]]
 - driver -> [[drv-327]]
 - vehicle -> [[veh-365]]

@@ -46,12 +46,11 @@ tags:
 - **sap_comments:** 
 - **sap_line_count:** 0
 - **sap_total_quantity:** 0.000
-- **document_reference:** Dispatch 607260149, 706260625, 706260620, 706260627, 706260628
-- **document_notes:** Customers: R K WORLDINFOCOM PVT LTD
-Weight: 8066.791 kg
+- **document_reference:** Dispatch 607260149
+- **document_notes:** Weight: 756.525 kg
 - **pipeline_status:**
   ```json
-  {"stage": "READY_TO_DOCK", "stage_label": "Ready to Dock", "stage_at": "2026-07-13T09:31:12.857662Z", "counts": {"total": 5, "rejected": 0}, "module": "dock", "module_status": "pending", "module_label": "pending at dock"}
+  {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-13T14:46:45.132802Z", "counts": {"total": 1, "rejected": 0}, "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}
   ```
 - **bst_gate_out_id:** None
 - **bst_gate_out_entry_no:** 
@@ -64,7 +63,7 @@ Weight: 8066.791 kg
 - **security_name:** Sachin
 - **remarks:** 
 - **created_at:** 2026-07-13T15:01:12.858603+05:30
-- **updated_at:** 2026-07-13T15:01:12.858613+05:30
+- **updated_at:** 2026-07-17T10:57:39.507130+05:30
 
 ## Related
 - arrival -> [[arr-368]]

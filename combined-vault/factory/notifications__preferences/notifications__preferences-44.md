@@ -1,7 +1,7 @@
 ---
 type: factory-notifications__preferences
 id: 44
-title: "Returnable Gate Pass Rejected by Approver"
+title: "Material Indent Forwarded for Approval"
 entity: Preferences
 source_endpoint: /notifications/preferences/
 company: JIVO_MART
@@ -10,13 +10,13 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# Returnable Gate Pass Rejected by Approver
+# Material Indent Forwarded for Approval
 
 > Preferences from `/notifications/preferences/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **id:** 44
-- **code:** RETURNABLE_APPROVAL_REJECTED
-- **name:** Returnable Gate Pass Rejected by Approver
-- **description:** Returnable Gate Pass Rejected by Approver
+- **code:** MATERIAL_INDENT_FORWARDED
+- **name:** Material Indent Forwarded for Approval
+- **description:** Material Indent Forwarded for Approval
 - **is_enabled:** True

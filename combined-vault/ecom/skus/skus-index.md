@@ -656,7 +656,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
 - [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] — Jivo First Pressed Yellow Mustard Oil 5 Litre 5l
 - [[jivo-first-pressed-yellow-mustard-oil-5l-5l]] — Jivo First Pressed Yellow Mustard Oil 5L (5 l)
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] — Jivo Gold Refined Oil Perfect Blend of Rice Bran & Sunflower Oil (5 l)
 - [[jivo-groundnut-oil-1-litre-1l]] — Jivo Groundnut Oil 1 Litre 1l
 - [[jivo-groundnut-oil-1-litre-1l-b0ckffw9b6]] — Jivo Groundnut Oil 1 Litre 1l b0ckffw9b6
@@ -739,7 +739,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
-- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Pouch 1l
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre Pouch
 - [[jivo-cold-pressed-sunflower-oil-5l-gold-premium-refined-oil-5l-5l]] — Jivo Cold Pressed Sunflower Oil 5l Gold Premium Refined Oil 5l 5l
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 - [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres
@@ -748,7 +748,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-daily-cooking-pomace-olive-oil-1-litre-1l]] — Jivo Daily Cooking Pomace Olive Oil 1 Litre
 - [[jivo-daily-cooking-pomace-olive-oil-1l]] — Jivo Daily Cooking Pomace Olive Oil 1l
 - [[jivo-daily-cooking-pomace-olive-oil-cold-pressed-soyabean-oil-1l-each-1l]] — Jivo Daily Cooking Pomace Olive Oil Cold Pressed Soyabean Oil 1l Each 1l
-- [[jivo-everyday-cooking-pomace-olive-oil-2-litre-2l]] — Jivo Everyday Cooking Pomace Olive Oil 2 Litre
+- [[jivo-everyday-cooking-pomace-olive-oil-2-litre-2l]] — Jivo Everyday Cooking Pomace Olive Oil 2 Litre 2l
 - [[jivo-everyday-cooking-pomace-olive-oil-3-litre-3l]] — Jivo Everyday Cooking Pomace Olive Oil 3 Litre 3l
 - [[jivo-extra-light-olive-oil-1-litre-1l]] — Jivo Extra Light Olive Oil 1 Litre
 - [[jivo-extra-light-olive-oil-1-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Extra Light Olive Oil 1 Litre Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l
@@ -773,7 +773,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
 - [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] — Jivo First Pressed Yellow Mustard Oil 5 Litre 5l
 - [[jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend O Na
-- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend of Rice Bran & Sunflower Oil (1 l)
+- [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] — Jivo Gold Premium Refined Cooking Oil Perfect Blend Of Rice Bran Sunflower Oil 1l
 - [[jivo-gold-refined-oil-1l]] — Jivo Gold Refined Oil 1l
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-s-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran S Na
 - [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na]] — Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
@@ -794,7 +794,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-lobansambrani-cups-na]] — Jivo Lobansambrani Cups Na
 - [[jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-pomace-olive-oil-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre Tin Jivo Daily Cooking Pomace Olive Oil 5l
 - [[jivo-pomace-cooking-olive-oil-5-litre-with-jivo-cold-pressed-canola-oil-1-litre-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre With Jivo Cold Pressed Canola Oil 1 Litre 5l
-- [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l]] — Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cookin
+- [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l]] — Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cookin 5l
 - [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] — Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking
 - [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5 Litre
 - [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na]] — Jivo Premium Cold Pressed Kachi Ghani Mustard Oil 5 Na
@@ -857,8 +857,8 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-sunflower-oil-1l]] — Jivo Cold Pressed Sunflower Oil (1 l)
 - [[jivo-extra-light-olive-oil-1l]] — Jivo Extra Light Olive Oil (1 l)
 - [[jivo-extra-light-olive-oil-2l]] — Jivo Extra Light Olive Oil (2 l)
-- [[jivo-kachi-ghani-cold-pressed-mustard-oil-1l]] — Jivo Kachi Ghani Cold Pressed Mustard Oil (1 l)
-- [[jivo-kachi-ghani-cold-pressed-mustard-oil-5l]] — Jivo Kachi Ghani Cold Pressed Mustard Oil (5 l)
+- [[jivo-kachi-ghani-cold-pressed-mustard-oil-1l]] — Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (1 l)
+- [[jivo-kachi-ghani-cold-pressed-mustard-oil-5l]] — Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (5 l)
 - [[jivo-pomace-olive-oil-1l]] — Jivo Pomace Olive Oil (1 l)
 - [[jivo-pomace-olive-oil-5l]] — Jivo Pomace Olive Oil (5 l)
 

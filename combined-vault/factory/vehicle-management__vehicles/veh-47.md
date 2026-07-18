@@ -26,6 +26,9 @@ tags:
   {"id": 20, "name": "Jivo Wellness", "contact_person": "Mikha singh", "mobile_no": "1234567891", "gstin": "", "created_at": "2026-02-24T17:56:24.178643+05:30"}
   ```
 - **capacity_ton:** 999.00
+- **length_m:** None
+- **width_m:** None
+- **height_m:** None
 - **created_at:** 2026-03-03T12:18:08.231605+05:30
 
 ## Related

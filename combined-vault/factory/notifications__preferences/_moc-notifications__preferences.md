@@ -1,12 +1,12 @@
 ---
 type: moc
-title: Preferences (53)
+title: Preferences (59)
 tags:
   - moc
   - source/factory
 ---
 
-# Preferences — 53 records
+# Preferences — 59 records
 
 From `/notifications/preferences/`. Up: [[_HOME]]
 
@@ -51,15 +51,21 @@ From `/notifications/preferences/`. Up: [[_HOME]]
 - [[notifications__preferences-39]] — Work Permit Submitted for Approval
 - [[notifications__preferences-40]] — Work Permit Approved
 - [[notifications__preferences-41]] — Work Permit Expired
-- [[notifications__preferences-42]] — Returnable Gate Pass Awaiting Approval
-- [[notifications__preferences-43]] — Returnable Gate Pass Approved
-- [[notifications__preferences-44]] — Returnable Gate Pass Rejected by Approver
-- [[notifications__preferences-45]] — Returnable Items Gated Out
-- [[notifications__preferences-46]] — Returnable Gate Pass Rejected at Gate
-- [[notifications__preferences-47]] — Returnable Items Returned
-- [[notifications__preferences-48]] — Returnable Items Collected by Department
-- [[notifications__preferences-49]] — Returnable Items Due for Return Today
-- [[notifications__preferences-50]] — Returnable Items Overdue
-- [[notifications__preferences-51]] — Returnable Gate Pass Closed
-- [[notifications__preferences-52]] — Returnable Gate Pass Cancelled
-- [[notifications__preferences-53]] — General Announcement
+- [[notifications__preferences-42]] — Material Indent Submitted to Store
+- [[notifications__preferences-43]] — Material Indent Items Issued
+- [[notifications__preferences-44]] — Material Indent Forwarded for Approval
+- [[notifications__preferences-45]] — Material Indent Approved for Purchase
+- [[notifications__preferences-46]] — Material Indent Rejected
+- [[notifications__preferences-47]] — Material Indent Purchased
+- [[notifications__preferences-48]] — Returnable Gate Pass Awaiting Approval
+- [[notifications__preferences-49]] — Returnable Gate Pass Approved
+- [[notifications__preferences-50]] — Returnable Gate Pass Rejected by Approver
+- [[notifications__preferences-51]] — Returnable Items Gated Out
+- [[notifications__preferences-52]] — Returnable Gate Pass Rejected at Gate
+- [[notifications__preferences-53]] — Returnable Items Returned
+- [[notifications__preferences-54]] — Returnable Items Collected by Department
+- [[notifications__preferences-55]] — Returnable Items Due for Return Today
+- [[notifications__preferences-56]] — Returnable Items Overdue
+- [[notifications__preferences-57]] — Returnable Gate Pass Closed
+- [[notifications__preferences-58]] — Returnable Gate Pass Cancelled
+- [[notifications__preferences-59]] — General Announcement

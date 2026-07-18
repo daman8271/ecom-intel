@@ -1,7 +1,7 @@
 ---
 type: factory-gate-core__sales-dispatch__documents
 id: INVOICE
-title: "DL01LAA0865"
+title: "Documents INVOICE"
 entity: Documents
 source_endpoint: /gate-core/sales-dispatch/documents/
 company: JIVO_MART
@@ -10,44 +10,44 @@ tags:
   - source/factory
   - company/JIVO_MART
 ---
-# DL01LAA0865
+# Documents INVOICE
 
 > Documents from `/gate-core/sales-dispatch/documents/` (Jivo Mart / JIVO_MART).
 
 ## Fields
 - **document_type:** INVOICE
-- **doc_entry:** 36423
-- **doc_num:** 707260199
-- **doc_date:** 2026-07-10
-- **doc_total:** 319675.00
+- **doc_entry:** 36618
+- **doc_num:** 707260258
+- **doc_date:** 2026-07-16
+- **doc_total:** 8174.00
 - **branch_id:** 1
 - **branch_name:** DELHI
-- **card_code:** CUSTA000048
-- **card_name:** R K WORLDINFOCOM PVT LTD
-- **ship_to_code:** R K WORLDINFOCOM PVT LTD BHIWANDI
-- **ship_to_address:** ANTARIKSH LOGIPARK DOHALE VILLAGE  H.NO. 1690/5 BLDG: B/2BHIWANDI-421302IN
-- **place_of_supply:** MH
-- **bp_gstin:** 27AAECR0564M1Z3
+- **card_code:** CUSTA000247
+- **card_name:** DEL ABHISHEK KUMAR
+- **ship_to_code:** DEL ABHISHEK KUMAR DELHI
+- **ship_to_address:** NEW DELHI-110027IN
+- **place_of_supply:** DL
+- **bp_gstin:** 
 - **eway_bill:** 
-- **vehicle_no:** DL01LAA0865
-- **transporter_name:** Pick & Ship
-- **bilty_no:** 3189
-- **bilty_date:** 2026-07-13
+- **vehicle_no:** 
+- **transporter_name:** 
+- **bilty_no:** 
+- **bilty_date:** None
 - **from_warehouse:** 
 - **to_warehouse:** 
-- **warehouses:** DL-FG
-- **item_summary:** FG0000053 - COLD PRESS SUNFLOWER 5 LTR 4 PCS, FG0000088 - COLD PRESS 1 LTR +1 LTR COMBO 10 SETS PLAIN
-- **base_refs:** 1706264785
-- **total_quantity:** 406.000
-- **total_litres:** 1990.000
-- **total_boxes:** 0.000
-- **total_weight:** 1965.187
-- **line_count:** 2
+- **warehouses:** DL-MP
+- **item_summary:** FG0000379 - KIRPA DESI GHEE 500 MLS 16 PCS, FG0000005 - EXTRA LIGHT OLIVE 1 LTR 16 PCS, FG0000384 - MUSTARD KACHI GHANI 1 LTR 20 PCS ROUND BOTTLE, FG0000081 - COLD PRESS SUNFLOWER 1 LTR 20 PCS, FG0000128 - JIVO GOLD 5 LTR 4 PCS
+- **base_refs:** 1507264603
+- **total_quantity:** 34.000
+- **total_litres:** 37.500
+- **total_boxes:** 16.000
+- **total_weight:** 36.583
+- **line_count:** 5
 - **items:**
   ```json
   []
   ```
 - **plan:**
   ```json
-  {"id": 1219, "sap_invoice_doc_entry": 36423, "sap_invoice_doc_num": "707260199", "invoice_number": "707260199", "eway_bill": "781650928871", "invoice_weight": "1965.187", "invoice_amount": "319675.00", "place_of_supply": "MH", "location": "", "product_variety": "Oil", "total_litres": "1990.000", "effective_month": "2026-07", "budget_delivery_point": "BHIWANDI", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": 432, "transporter_id": 85, "driver_id": null, "linked_vehicle_entry_id": 1886, "is_vehicle_link_locked": true, "pipeline_status": {"stage": "DISPATCHED", "stage_label": "Dispatched", "stage_at": "2026-07-13T12:04:07.471840Z", "module": "sales dispatch out", "module_status": "dispatched", "module_label": "dispatched at sales dispatch out"}, "booking_status": "DISPATCHED", "dispatch_date": "2026-07-13", "priority": "", "transporter_name": "PICK & SHIP", "transporter_gstin": "09AAQCP4145A1ZF", "contact_person": "shukla", "mobile_no": "9958007610", "vehicle_no": "DL01LAA0865", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "3189", "bilty_date": "2026-07-13", "bilty_attachment": "/media/sales_dispatch/attachments/706260905_EwaybillPrint_-_nic_0sNaFcF.einvoice.web_1.pdf", "bilty_attachment_name": "706260905 EwaybillPrint - nic.einvoice.web (1).pdf", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": "2026-07-13T11:05:52.862231+05:30", "updated_at": "2026-07-13T17:34:07.493069+05:30"}
+  {"id": null, "sap_invoice_doc_entry": 36618, "sap_invoice_doc_num": "707260258", "invoice_number": "", "eway_bill": "", "invoice_weight": null, "invoice_amount": null, "place_of_supply": "", "product_variety": "", "total_litres": null, "effective_month": null, "budget_delivery_point": "", "service_location_code": null, "service_location_name": "", "sac_entry": null, "sac_code": "", "vehicle_id": null, "transporter_id": null, "driver_id": null, "linked_vehicle_entry_id": null, "is_vehicle_link_locked": false, "pipeline_status": {"stage": "BOOKED", "stage_label": "Booked", "stage_at": null, "module": "", "module_status": "not entered", "module_label": "not entered"}, "booking_status": "PENDING", "dispatch_date": null, "priority": "", "transporter_name": "", "transporter_gstin": "", "contact_person": "", "mobile_no": "", "vehicle_no": "", "driver_name": "", "driver_mobile_no": "", "driver_license_no": "", "driver_id_proof_type": "", "driver_id_proof_number": "", "bilty_no": "", "bilty_date": null, "bilty_attachment": null, "bilty_attachment_name": "", "freight": null, "total_freight": null, "kanta_weight": null, "remarks": "", "created_at": null, "updated_at": null}
   ```
