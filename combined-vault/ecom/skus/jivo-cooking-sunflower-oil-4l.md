@@ -5,8 +5,8 @@ display_name: JIVO Cooking Sunflower Oil (4 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-18
-observations: 141
+last_seen: 2026-07-19
+observations: 159
 min_price: 270
 max_price: 756
 latest_price: 756
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Ghaziabad]] · [[Hyderabad]]
 
-## Runs that observed this SKU (5)
-[[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (6)
+[[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (141 observations)
+## Price history (159 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -175,6 +175,24 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0645,2026-07-18,flipkart-minutes,Hyderabad,500109,756,1080,30,0
 2026-07-18-0645,2026-07-18,flipkart-minutes,Hyderabad,500110,756,1080,30,0
 2026-07-18-0645,2026-07-18,flipkart-minutes,Hyderabad,500112,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Bengaluru,560034,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Bengaluru,560068,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Bengaluru,560095,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201020,756,1080,30,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500005,756,1080,30,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500010,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500011,756,1080,30,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500017,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500023,270,,,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500034,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500038,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500053,756,1080,30,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500065,756,1080,30,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500073,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500081,756,1080,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500109,756,1080,30,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500110,756,1080,30,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Hyderabad,500112,756,1080,30,1
 ```
 
 ---

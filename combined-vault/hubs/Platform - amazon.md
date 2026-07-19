@@ -82,7 +82,7 @@ Up: [[Home]]
 - [[GINGER ALE 200ML]] — ref ₹39 / live ₹— (⚪ OOS)
 - [[GOLD 1+1]] — ref ₹369 / live ₹379 (🔴 ABOVE)
 - [[GOLD 1L]] — ref ₹189 / live ₹— (⚪ OOS)
-- [[GOLD 5L]] — ref ₹939 / live ₹845 (🟢 BELOW)
+- [[GOLD 5L]] — ref ₹939 / live ₹— (⚪ OOS)
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹479 (🟦 MATCH)
 - [[GROUNDNUT 1L]] — ref ₹219 / live ₹209 (🟢 BELOW)
 - [[GROUNDNUT 5+1L]]
@@ -103,7 +103,7 @@ Up: [[Home]]
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹— (⚪ OOS)
-- [[MUSTARD 5L]] — ref ₹949 / live ₹949 (🟦 MATCH)
+- [[MUSTARD 5L]] — ref ₹949 / live ₹873 (🟢 BELOW)
 - [[POMACE 3L]] — ref ₹1279 / live ₹999 (🟢 BELOW)
 - [[PUMPKIN SEEDS 200G]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[PUMPKIN SEEDS 400G]] — ref ₹389 / live ₹— (⚪ OOS)
@@ -119,7 +119,7 @@ Up: [[Home]]
 - [[ROSE FLAVOR 200ML]]
 - [[ROSEMARY LEAVES 150G]] — ref ₹169 / live ₹— (⚪ OOS)
 - [[SAFFRON 1GMS]] — ref ₹499 / live ₹— (⚪ OOS)
-- [[SANO CANOLA 1L]] — ref ₹249 / live ₹199 (🟢 BELOW)
+- [[SANO CANOLA 1L]] — ref ₹249 / live ₹— (⚪ OOS)
 - [[SANO CANOLA 5L]] — ref ₹1199 / live ₹— (⚪ OOS)
 - [[SANO CLASSIC 1L]] — ref ₹559 / live ₹— (⚪ OOS)
 - [[SANO CLASSIC 5L]] — ref ₹2609 / live ₹— (⚪ OOS)
