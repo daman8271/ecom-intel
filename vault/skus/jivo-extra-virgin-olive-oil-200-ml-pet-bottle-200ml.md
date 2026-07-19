@@ -7,8 +7,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-07-18
-observations: 2450
+last_seen: 2026-07-19
+observations: 2470
 min_price: 169
 max_price: 299
 latest_price: 179
@@ -33,10 +33,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (23)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (24)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]] · [[amazon-2026-05-21-1330]]
 
-## Price history (2450 observations)
+## Price history (2470 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -2490,6 +2490,26 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0707,2026-07-18,amazon-fresh,Delhi,110091,179,299,40.1,1
 2026-07-18-0707,2026-07-18,amazon-fresh,Noida,201301,179,299,40.1,1
 2026-07-18-0707,2026-07-18,amazon-fresh,Noida,201303,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Ahmedabad,380008,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Ahmedabad,380024,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110001,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110002,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110003,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110004,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110006,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110013,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110014,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110016,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110017,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110024,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110025,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110031,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110044,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110048,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110055,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Delhi,110091,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Noida,201301,179,299,40.1,1
+2026-07-19-0707,2026-07-19,amazon-fresh,Noida,201303,179,299,40.1,1
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-18
-observations: 320
+last_seen: 2026-07-19
+observations: 328
 latest_status: NOT_LISTED
-below_days: 22
+below_days: 23
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cooking-edible-soyabean-oil-1-litre-high-in-omega6-pufa-conta
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-18) — ref ₹199 vs live ₹-
-- **Days below reference:** 22 of 40
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-22]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]] · [[2026-07-18]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-19) — ref ₹199 vs live ₹-
+- **Days below reference:** 23 of 41
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-22]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]] · [[2026-07-18]] · [[2026-07-19]]
 
-## Ref-vs-live history (320 observations)
+## Ref-vs-live history (328 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -365,6 +365,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-18,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
 2026-07-18,flipkart-minutes,NOT_LISTED,SVD,199,,,,,,0,false
 2026-07-18,zepto,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-19,amazon,BELOW,SVD,199,179,179,179,-20,-10.05,1,true
+2026-07-19,amazon-fresh,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-19,amazon-now,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-19,bigbasket,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-19,blinkit,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-19,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-19,flipkart-minutes,NOT_LISTED,SVD,199,,,,,,0,false
+2026-07-19,zepto,NOT_LISTED,SVD,199,,,,,,0,false
 ```
 
 ---

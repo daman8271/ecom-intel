@@ -5,11 +5,11 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-18
-observations: 705
+last_seen: 2026-07-19
+observations: 858
 min_price: 166
 max_price: 189
-latest_price: 178
+latest_price: 175
 tags:
   - type/sku-hub
   - platform/flipkart-minutes
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **JIVO Cold Pressed Pure Cooking Mustard Oil (1 L)**
 
 ## Sold on
-- [[flipkart-minutes]] — latest ₹178 (30.0% off)
+- [[flipkart-minutes]] — latest ₹175 (31.0% off)
 
 ## Available in cities
 [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurugram]] · [[Jaipur]] · [[Jalandhar]] · [[Lucknow]] · [[Ludhiana]] · [[Mohali]] · [[Noida]]
 
-## Runs that observed this SKU (5)
-[[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (6)
+[[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (705 observations)
+## Price history (858 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -739,6 +739,159 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0645,2026-07-18,flipkart-minutes,Noida,201315,178,255,30,1
 2026-07-18-0645,2026-07-18,flipkart-minutes,Noida,201317,178,255,30,1
 2026-07-18-0645,2026-07-18,flipkart-minutes,Noida,201318,178,255,30,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160006,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160009,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160011,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160012,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160015,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160016,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160017,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160018,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160019,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160020,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160043,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Chandigarh,160101,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110005,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110009,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110013,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110014,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110017,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110018,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110019,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110025,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110027,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110028,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110029,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110030,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110031,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110032,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110034,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110038,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110042,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110043,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110045,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110048,175,255,31,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110051,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110053,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110055,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110056,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110057,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110058,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110059,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110062,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110063,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110064,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110065,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110067,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110068,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110069,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110070,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110071,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110075,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110076,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110077,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110078,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110083,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110084,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110085,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110087,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110088,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110089,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110091,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110093,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110095,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110096,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Delhi,110110,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121001,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121002,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121003,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121005,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121007,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121008,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121009,175,255,31,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121010,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121012,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121013,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Faridabad,121014,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201001,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201004,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201005,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201006,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201007,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201009,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201010,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201011,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201012,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201013,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201014,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201015,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201016,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201017,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201018,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201019,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201020,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201021,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201102,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Gurugram,122001,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Gurugram,122005,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Gurugram,122006,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Gurugram,122015,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Gurugram,122016,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Gurugram,122504,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302001,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302005,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302006,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302015,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302017,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302018,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302019,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302020,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302021,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302034,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302036,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302037,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302041,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302044,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302045,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,302046,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,303104,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,303121,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jaipur,303122,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jalandhar,144022,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jalandhar,144041,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Jalandhar,144805,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Lucknow,226021,166,225,26,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Lucknow,226022,166,225,26,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Lucknow,226028,166,225,26,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Lucknow,226029,166,255,34,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Lucknow,226031,166,225,26,0
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ludhiana,141003,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ludhiana,141006,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Ludhiana,141014,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140110,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140201,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140306,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140307,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140308,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140501,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140506,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140507,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140603,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,140901,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,160055,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,160059,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,160062,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,160071,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,160103,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Mohali,160104,166,255,34,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201301,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201302,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201303,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201304,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201310,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201315,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201317,175,255,31,1
+2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201318,175,255,31,1
 ```
 
 ---
