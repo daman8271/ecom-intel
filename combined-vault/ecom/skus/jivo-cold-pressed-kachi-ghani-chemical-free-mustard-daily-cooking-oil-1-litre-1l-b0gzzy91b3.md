@@ -5,8 +5,8 @@ display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking
 platforms:
   - amazon-fresh
 first_seen: 2026-06-12
-last_seen: 2026-07-19
-observations: 58
+last_seen: 2026-07-20
+observations: 72
 min_price: 356
 max_price: 383
 latest_price: 379
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (8)
-[[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
+## Runs that observed this SKU (9)
+[[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
 
-## Price history (58 observations)
+## Price history (72 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -92,6 +92,20 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,Noida,201306,379,815,53.5,1
 2026-07-19-0707,2026-07-19,amazon-fresh,Noida,201310,379,815,53.5,1
 2026-07-19-0707,2026-07-19,amazon-fresh,Noida,201318,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Chennai,600016,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Chennai,600025,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Chennai,600083,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kochi,682011,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kochi,682040,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700009,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700015,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700019,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700024,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700037,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700040,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700053,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700100,379,815,53.5,1
+2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700107,379,815,53.5,1
 ```
 
 ---

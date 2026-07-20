@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-19
-observations: 328
+last_seen: 2026-07-20
+observations: 336
 latest_status: NOT_LISTED
-below_days: 7
+below_days: 8
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-prote
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-19) — ref ₹249 vs live ₹-
-- **Days below reference:** 7 of 41
-- **Below on:** [[2026-06-08]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-20) — ref ₹259 vs live ₹-
+- **Days below reference:** 8 of 42
+- **Below on:** [[2026-06-08]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-20]]
 
-## Ref-vs-live history (328 observations)
+## Ref-vs-live history (336 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -373,6 +373,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-19,flipkart,NOT_LISTED,SVD,249,,,,,,0,false
 2026-07-19,flipkart-minutes,NOT_LISTED,SVD,249,,,,,,0,false
 2026-07-19,zepto,NOT_LISTED,SVD,249,,,,,,0,false
+2026-07-20,amazon,BELOW,BAU,259,249,249,249,-10,-3.86,1,true
+2026-07-20,amazon-fresh,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-20,amazon-now,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-20,bigbasket,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-20,blinkit,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-20,flipkart,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-20,flipkart-minutes,NOT_LISTED,BAU,259,,,,,,0,false
+2026-07-20,zepto,NOT_LISTED,BAU,259,,,,,,0,false
 ```
 
 ---
