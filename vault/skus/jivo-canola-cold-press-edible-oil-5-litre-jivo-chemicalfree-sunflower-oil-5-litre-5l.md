@@ -7,11 +7,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-07-20
-observations: 29
+last_seen: 2026-07-21
+observations: 69
 min_price: 1968
 max_price: 2225
-latest_price: 1968
+latest_price: 2034
 tags:
   - type/sku-hub
   - platform/amazon
@@ -27,16 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹2138 (28.7% off)
-- [[amazon-fresh]] — latest ₹1968 (34.4% off)
+- [[amazon-fresh]] — latest ₹2034 (32.2% off)
 - [[amazon-now]] — latest ₹2225 (25.8% off)
 
 ## Available in cities
 [[Bhubaneswar]] · [[Delhi]] · [[Gurugram]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Pune]] · [[Thiruvananthapuram]]
 
-## Runs that observed this SKU (3)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (4)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-2026-05-21-1330]]
 
-## Price history (29 observations)
+## Price history (69 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -69,6 +69,46 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,Lucknow,226022,1968,3000,34.4,1
 2026-07-20-0709,2026-07-20,amazon-fresh,Thiruvananthapuram,695001,1968,3000,34.4,1
 2026-07-20-0709,2026-07-20,amazon-fresh,Thiruvananthapuram,695002,1968,3000,34.4,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Bhubaneswar,751004,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Bhubaneswar,751009,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110001,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110004,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110008,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110013,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110014,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110016,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110017,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110021,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110024,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110025,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110031,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110032,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110037,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110044,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110048,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110055,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110092,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122001,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122002,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122003,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122007,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122010,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122012,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kochi,682011,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kochi,682040,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700009,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700015,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700019,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700022,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700024,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700037,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700040,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700053,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700100,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700107,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Lucknow,226022,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Thiruvananthapuram,695001,2034,3000,32.2,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Thiruvananthapuram,695002,2034,3000,32.2,1
 ```
 
 ---

@@ -5,8 +5,8 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (5 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-19
-observations: 97
+last_seen: 2026-07-21
+observations: 119
 min_price: 829
 max_price: 1562
 latest_price: 829
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurugram]] · [[Jalandhar]] · [[Noida]]
 
-## Runs that observed this SKU (6)
-[[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (7)
+[[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (97 observations)
+## Price history (119 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -131,6 +131,28 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201016,829,1250,33,1
 2026-07-19-0645,2026-07-19,flipkart-minutes,Ghaziabad,201020,829,1250,33,0
 2026-07-19-0645,2026-07-19,flipkart-minutes,Noida,201315,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110019,829,1250,33,0
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110043,829,1250,33,0
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110045,829,1250,33,0
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110046,829,1250,33,0
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110048,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110057,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110059,829,1250,33,0
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110060,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Delhi,110076,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121001,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121002,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121003,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121005,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121007,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121008,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121009,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121012,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121013,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Faridabad,121014,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Ghaziabad,201004,829,1250,33,0
+2026-07-21-0645,2026-07-21,flipkart-minutes,Ghaziabad,201016,829,1250,33,1
+2026-07-21-0645,2026-07-21,flipkart-minutes,Ghaziabad,201020,829,1250,33,0
 ```
 
 ---

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-20
-observations: 336
+last_seen: 2026-07-21
+observations: 344
 latest_status: NOT_LISTED
-below_days: 15
+below_days: 16
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[edohbh2fp9es6gga]]
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-20) — ref ₹389 vs live ₹-
-- **Days below reference:** 15 of 42
-- **Below on:** [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-19]] · [[2026-07-20]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-21) — ref ₹389 vs live ₹-
+- **Days below reference:** 16 of 43
+- **Below on:** [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]]
 
-## Ref-vs-live history (336 observations)
+## Ref-vs-live history (344 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -381,6 +381,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-20,flipkart,BELOW,BAU,389,340,340,340,-49,-12.6,1,true
 2026-07-20,flipkart-minutes,NOT_LISTED,BAU,389,,,,,,0,false
 2026-07-20,zepto,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,amazon,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,amazon-fresh,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,amazon-now,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,bigbasket,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,blinkit,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,flipkart,BELOW,BAU,389,340,340,340,-49,-12.6,1,true
+2026-07-21,flipkart-minutes,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,zepto,NOT_LISTED,BAU,389,,,,,,0,false
 ```
 
 ---

@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-07-20
-observations: 607
+last_seen: 2026-07-21
+observations: 640
 min_price: 289
 max_price: 449
-latest_price: 289
+latest_price: 349
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹289 (51.8% off)
+- [[amazon-fresh]] — latest ₹349 (41.8% off)
 - [[amazon-now]] — latest ₹329 (45.2% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Chandigarh]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (17)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (18)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (607 observations)
+## Price history (640 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -644,6 +644,39 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,Kolkata,700107,289,600,51.8,1
 2026-07-20-0709,2026-07-20,amazon-fresh,Noida,201301,289,600,51.8,1
 2026-07-20-0709,2026-07-20,amazon-fresh,Noida,201303,289,600,51.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Ahmedabad,380008,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Ahmedabad,380024,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110003,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110007,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110009,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110013,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110014,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110016,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110017,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110018,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110021,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110024,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110025,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110028,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110033,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110035,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110037,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110044,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110048,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Delhi,110052,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122001,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122002,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122003,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122007,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122010,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Gurugram,122012,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700001,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700009,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700015,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700019,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700069,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700100,349,600,41.8,1
+2026-07-21-0707,2026-07-21,amazon-fresh,Kolkata,700107,349,600,41.8,1
 ```
 
 ---
