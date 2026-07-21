@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-20
-observations: 336
+last_seen: 2026-07-21
+observations: 344
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snack
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-20) — ref ₹389 vs live ₹-
-- **Days below reference:** 0 of 42
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-21) — ref ₹389 vs live ₹-
+- **Days below reference:** 0 of 43
 
-## Ref-vs-live history (336 observations)
+## Ref-vs-live history (344 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -380,6 +380,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-20,flipkart,OOS,BAU,389,,,,,,0,false
 2026-07-20,flipkart-minutes,NOT_LISTED,BAU,389,,,,,,0,false
 2026-07-20,zepto,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,amazon,OOS,BAU,389,,,,,,0,false
+2026-07-21,amazon-fresh,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,amazon-now,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,bigbasket,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,blinkit,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,flipkart,OOS,BAU,389,,,,,,0,false
+2026-07-21,flipkart-minutes,NOT_LISTED,BAU,389,,,,,,0,false
+2026-07-21,zepto,NOT_LISTED,BAU,389,,,,,,0,false
 ```
 
 ---
