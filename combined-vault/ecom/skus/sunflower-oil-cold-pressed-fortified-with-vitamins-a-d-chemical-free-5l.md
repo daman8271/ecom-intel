@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l
-display_name: Sunflower Oil Cold Pressed Fortified With Vitamins A D Chemical Free 5l
+display_name: "Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free (5 L)"
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Sunflower Oil Cold Pressed Fortified With Vitamins A D Chemical Free 5l**
+**Sunflower Oil - Cold Pressed, Fortified With Vitamins A & D, Chemical Free (5 L)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹882.83 (34.6% off)

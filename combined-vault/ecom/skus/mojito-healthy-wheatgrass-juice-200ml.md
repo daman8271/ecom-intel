@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: mojito-healthy-wheatgrass-juice-200ml
-display_name: Mojito Healthy Wheatgrass Juice 200ml
+display_name: Mojito Healthy Wheatgrass Juice (200 ml)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Mojito Healthy Wheatgrass Juice 200ml**
+**Mojito Healthy Wheatgrass Juice (200 ml)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹50
