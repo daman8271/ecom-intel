@@ -85,18 +85,34 @@ for i, (k, v) in enumerate(kpis):
     cell = ws.cell(row=r + 1, column=c, value=v); cell.font = Font(bold=True, size=20, color=JIVO_GREEN)
 
 # cheapest per SKU
-ws.cell(row=7, column=1, value="Cheapest pincode per SKU (in-stock, sale price)").font = Font(bold=True, size=12)
+ws.cell(row=7, column=1, value="Typical (modal) price per SKU (in-stock) — robust to marketplace mismatches").font = Font(bold=True, size=12)
 hdr = ["SKU", "City", "Pincode", "Store", "Sale Rs", "MRP Rs", "Disc %"]
 for j, h in enumerate(hdr, 1):
     ws.cell(row=8, column=j, value=h)
 style_header(ws, 8, len(hdr))
 rr = 9
-for s in skus:
-    cand = [x for x in rows if x['canonical'] == s and x['in_stock'] == 1 and x['sale'] is not None]
-    if not cand: cand = [x for x in rows if x['canonical'] == s and x['sale'] is not None]
+# 2026-07-21 (owner: "Flipkart prices looked wrong"): group by the REAL Jivo SKU
+# (sku_raw), NOT the per-listing FSN (canonical). Flipkart is a marketplace — each SKU
+# has many listings (sellers / OOS / mismatches); grouping by FSN dumped ALL of them,
+# so a wrong-cheap OOS listing (e.g. MUSTARD 5L @840 = Rs168/L) showed as the price.
+# Now: one MODAL in-stock, non-mismatch price per real SKU (ties -> higher, so a lone
+# cheap mismatch can never win). Collapses ~269 noisy listings -> ~69 clean SKU rows.
+_real_skus = sorted(set((r.get('sku_raw') or r['canonical']) for r in rows))
+for s in _real_skus:
+    cand = [x for x in rows if (x.get('sku_raw') or x['canonical']) == s
+            and x['in_stock'] == 1 and x['sale'] is not None and not x.get('sku_mismatch')]
+    if not cand: cand = [x for x in rows if (x.get('sku_raw') or x['canonical']) == s
+            and x['sale'] is not None and not x.get('sku_mismatch')]
     if not cand: continue
-    b = min(cand, key=lambda x: x['sale'])
-    for j, v in enumerate([label(s), b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], pct_fraction(b['discount_pct'])], 1):
+    _sales = [x['sale'] for x in cand]
+    _cnt = Counter(_sales); _top = max(_cnt.values())
+    if _top > 1:
+        _pick = max(p for p, n in _cnt.items() if n == _top)   # modal; ties -> higher
+        b = next(x for x in cand if x['sale'] == _pick)
+    else:
+        _med = statistics.median(_sales)
+        b = min(cand, key=lambda x: (abs(x['sale'] - _med), -x['sale']))
+    for j, v in enumerate([s, b['city'], b['pincode'], b['store_name'], b['sale'], b['mrp'], pct_fraction(b['discount_pct'])], 1):
         cell = ws.cell(row=rr, column=j, value=v); cell.border = BORDER
         if j >= 5: cell.alignment = CEN
         if j == 7: cell.number_format = '0.0%'
