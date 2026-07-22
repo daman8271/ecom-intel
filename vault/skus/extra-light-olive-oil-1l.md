@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: extra-light-olive-oil-1l
-display_name: Extra Light Olive Oil 1l
+display_name: Extra Light Olive Oil (1 L)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Extra Light Olive Oil 1l**
+**Extra Light Olive Oil (1 L)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹1284 (14.3% off)

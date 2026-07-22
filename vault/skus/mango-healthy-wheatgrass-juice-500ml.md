@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: mango-healthy-wheatgrass-juice-500ml
-display_name: Mango Healthy Wheatgrass Juice 500ml
+display_name: Mango Healthy Wheatgrass Juice (500 ml)
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Mango Healthy Wheatgrass Juice 500ml**
+**Mango Healthy Wheatgrass Juice (500 ml)**
 
 ## Sold on
 - [[bigbasket]] — latest ₹125

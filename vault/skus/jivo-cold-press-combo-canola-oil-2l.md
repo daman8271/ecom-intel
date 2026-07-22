@@ -5,8 +5,8 @@ display_name: JIVO Cold Press Combo Canola Oil (2 x 1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-21
-observations: 92
+last_seen: 2026-07-22
+observations: 108
 min_price: 375
 max_price: 975
 latest_price: 975
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Lucknow]] · [[Mohali]] · [[Pune]]
 
-## Runs that observed this SKU (7)
-[[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (8)
+[[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (92 observations)
+## Price history (108 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -126,6 +126,22 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-21-0645,2026-07-21,flipkart-minutes,Ghaziabad,201015,937,,,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,Pune,411026,975,,,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,Pune,411039,975,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Bengaluru,560015,563,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Bengaluru,560037,375,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Bengaluru,560056,378,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Bengaluru,560058,563,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Bengaluru,560096,563,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Bengaluru,560110,378,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Delhi,110028,565,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Delhi,110029,565,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Delhi,110069,600,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Delhi,110071,565,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Delhi,110076,575,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Delhi,110078,565,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Ghaziabad,201009,937,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Ghaziabad,201015,937,,,1
+2026-07-22-0645,2026-07-22,flipkart-minutes,Pune,411026,975,,,0
+2026-07-22-0645,2026-07-22,flipkart-minutes,Pune,411039,975,,,0
 ```
 
 ---
