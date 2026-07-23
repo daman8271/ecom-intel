@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzy91b3
-display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l b0gzzy91b3
+display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre"
 platforms:
   - amazon-fresh
 first_seen: 2026-06-12
-last_seen: 2026-07-21
-observations: 92
+last_seen: 2026-07-23
+observations: 101
 min_price: 356
-max_price: 393
-latest_price: 393
+max_price: 418
+latest_price: 418
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l b0gzzy91b3**
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹393 (51.8% off)
+- [[amazon-fresh]] — latest ₹418 (48.7% off)
 
 ## Available in cities
-[[Ahmedabad]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]] · [[Noida]]
+[[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (10)
-[[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
+## Runs that observed this SKU (11)
+[[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
 
-## Price history (92 observations)
+## Price history (101 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -126,6 +126,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-21-0707,2026-07-21,amazon-fresh,Noida,201307,393,815,51.8,1
 2026-07-21-0707,2026-07-21,amazon-fresh,Noida,201310,393,815,51.8,1
 2026-07-21-0707,2026-07-21,amazon-fresh,Noida,201311,393,815,51.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Bengaluru,560006,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Bengaluru,560087,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Chennai,600002,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Chennai,600006,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Chennai,600025,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Chennai,600083,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Hyderabad,500002,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Hyderabad,500006,418,815,48.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,Kolkata,700100,418,815,48.7,1
 ```
 
 ---

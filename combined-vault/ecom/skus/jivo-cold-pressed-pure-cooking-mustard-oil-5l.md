@@ -5,8 +5,8 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (5 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-07-22
-observations: 130
+last_seen: 2026-07-23
+observations: 141
 min_price: 829
 max_price: 1562
 latest_price: 887
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurugram]] · [[Jalandhar]] · [[Noida]]
 
-## Runs that observed this SKU (8)
-[[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (9)
+[[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (130 observations)
+## Price history (141 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -164,6 +164,17 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-22-0645,2026-07-22,flipkart-minutes,Faridabad,121009,887,1250,29,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,Faridabad,121014,887,1250,29,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,Ghaziabad,201020,887,1250,29,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110019,887,1250,29,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110043,887,1250,29,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110045,887,1250,29,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110046,887,1250,29,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110048,887,1250,29,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110057,887,1250,29,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110059,887,1250,29,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,Delhi,110060,887,1250,29,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,Faridabad,121009,887,1250,29,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,Faridabad,121014,887,1250,29,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,Ghaziabad,201020,887,1250,29,0
 ```
 
 ---

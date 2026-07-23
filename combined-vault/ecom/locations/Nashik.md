@@ -7,7 +7,7 @@ platforms:
   - zepto
 pincodes: 18
 skus: 31
-observations: 2376
+observations: 2385
 tags:
   - type/city-hub
   - platform/blinkit
@@ -28,7 +28,7 @@ Up: [[locations-index]]
 ## SKUs available in Nashik (31)
 [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-pressed-canola-oil-1l]] · [[jivo-cold-pressed-sunflower-oil-1l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-healthy-wheatgrass-apple-drink-sugar-free-200ml]] · [[jivo-healthy-wheatgrass-blueberry-drink-sugar-free-200ml]] · [[jivo-healthy-wheatgrass-ginger-ale-drink-sugar-free-200ml]] · [[jivo-healthy-wheatgrass-jeera-drink-sugar-free-200ml]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-natural-minerals-water-mineral-water-1l]] · [[jivo-natural-minerals-water-mineral-water-na]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]]
 
-## Observations (2376 rows)
+## Observations (2385 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -406,6 +406,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422002,22,25,12,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422002,22,25,12,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422002,22,25,12,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422002,22,25,12,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422002,22,22,0,0
 2026-07-09-0645,2026-07-09,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422002,22,22,0,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422002,408,1049,61.1,1
@@ -457,6 +458,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422005,22,30,26,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422005,22,30,26,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422005,22,30,26,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422005,22,30,26,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422005,22,22,0,0
 2026-07-09-0645,2026-07-09,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422005,22,22,0,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422005,406,1049,61.3,1
@@ -1015,6 +1017,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422008,22,25,12,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422008,22,25,12,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422008,22,25,12,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422008,22,25,12,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422008,22,22,0,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422008,408,1049,61.1,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422008,390,1049,62.8,1
@@ -1141,6 +1144,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422009,22,30,26,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422009,22,30,26,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422009,22,30,26,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422009,22,30,26,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-extra-light-olive-oil-2l,422010,1304,2799,53.4,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-2l,422010,1304,2799,53.4,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-extra-light-olive-oil-2l,422010,1304,2799,53.4,1
@@ -1188,6 +1192,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422011,22,30,26,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422011,22,30,26,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422011,22,30,26,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422011,22,30,26,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422011,22,22,0,0
 2026-07-09-0645,2026-07-09,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422011,22,22,0,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422011,406,1049,61.3,1
@@ -1237,6 +1242,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422012,22,30,26,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422012,22,30,26,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422012,22,30,26,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422012,22,30,26,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422012,22,22,0,0
 2026-07-09-0645,2026-07-09,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422012,22,22,0,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422012,406,1049,61.3,1
@@ -1990,6 +1996,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422221,22,30,26,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422221,22,30,26,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422221,22,30,26,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422221,22,30,26,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422221,22,22,0,0
 2026-07-09-0645,2026-07-09,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422221,22,22,0,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422221,406,1049,61.3,1
@@ -2028,6 +2035,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422401,22,25,12,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422401,22,25,12,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422401,22,25,12,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422401,22,25,12,0
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-1l,422401,379,1049,63.9,0
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-5l,422401,1699,4999,66,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,422401,758,2098,63.9,0
@@ -2267,6 +2275,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422501,22,25,12,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422501,22,25,12,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422501,22,25,12,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-natural-minerals-water-mineral-water-1l,422501,22,25,12,0
 2026-06-30-0549,2026-06-30,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422501,22,22,0,0
 2026-07-09-0645,2026-07-09,flipkart-minutes,jivo-natural-minerals-water-mineral-water-na,422501,22,22,0,0
 2026-06-29-0316,2026-06-29,blinkit,jivo-pomace-olive-oil-1l,422501,406,1049,61.3,1
