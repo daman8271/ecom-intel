@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-22
-observations: 352
+last_seen: 2026-07-23
+observations: 360
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-4-litres-cooking-oil-for-daily
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-22) — ref ₹1189 vs live ₹-
-- **Days below reference:** 0 of 44
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-23) — ref ₹1189 vs live ₹-
+- **Days below reference:** 0 of 45
 
-## Ref-vs-live history (352 observations)
+## Ref-vs-live history (360 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -396,6 +396,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-22,flipkart,NOT_LISTED,BAU,1189,,,,,,0,false
 2026-07-22,flipkart-minutes,NOT_LISTED,BAU,1189,,,,,,0,false
 2026-07-22,zepto,NOT_LISTED,BAU,1189,,,,,,0,false
+2026-07-23,amazon,OOS,BAU,1189,,,,,,0,false
+2026-07-23,amazon-fresh,NOT_LISTED,BAU,1189,,,,,,0,false
+2026-07-23,amazon-now,NOT_LISTED,BAU,1189,,,,,,0,false
+2026-07-23,bigbasket,NOT_LISTED,BAU,1189,,,,,,0,false
+2026-07-23,blinkit,NOT_LISTED,BAU,1189,,,,,,0,false
+2026-07-23,flipkart,NOT_LISTED,BAU,1189,,,,,,0,false
+2026-07-23,flipkart-minutes,NOT_LISTED,BAU,1189,,,,,,0,false
+2026-07-23,zepto,NOT_LISTED,BAU,1189,,,,,,0,false
 ```
 
 ---

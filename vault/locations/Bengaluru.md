@@ -8,8 +8,8 @@ platforms:
   - flipkart-minutes
   - zepto
 pincodes: 117
-skus: 127
-observations: 63529
+skus: 128
+observations: 63771
 tags:
   - type/city-hub
   - platform/amazon-fresh
@@ -29,10 +29,10 @@ Up: [[locations-index]]
 ## Pincodes (117)
 [[560001]] · [[560002]] · [[560003]] · [[560004]] · [[560005]] · [[560006]] · [[560007]] · [[560008]] · [[560009]] · [[560010]] · [[560011]] · [[560012]] · [[560013]] · [[560014]] · [[560015]] · [[560016]] · [[560017]] · [[560018]] · [[560019]] · [[560020]] · [[560021]] · [[560022]] · [[560023]] · [[560024]] · [[560025]] · [[560026]] · [[560027]] · [[560028]] · [[560029]] · [[560030]] · [[560032]] · [[560033]] · [[560034]] · [[560035]] · [[560036]] · [[560037]] · [[560038]] · [[560039]] · [[560040]] · [[560041]] · [[560042]] · [[560043]] · [[560045]] · [[560046]] · [[560047]] · [[560048]] · [[560049]] · [[560050]] · [[560051]] · [[560052]] · [[560053]] · [[560054]] · [[560055]] · [[560056]] · [[560057]] · [[560058]] · [[560059]] · [[560060]] · [[560061]] · [[560062]] · [[560063]] · [[560064]] · [[560065]] · [[560066]] · [[560067]] · [[560068]] · [[560069]] · [[560070]] · [[560071]] · [[560072]] · [[560073]] · [[560074]] · [[560075]] · [[560076]] · [[560077]] · [[560078]] · [[560079]] · [[560080]] · [[560081]] · [[560082]] · [[560083]] · [[560084]] · [[560085]] · [[560086]] · [[560087]] · [[560090]] · [[560091]] · [[560092]] · [[560093]] · [[560094]] · [[560095]] · [[560096]] · [[560097]] · [[560098]] · [[560099]] · [[560100]] · [[560102]] · [[560103]] · [[560104]] · [[560105]] · [[560107]] · [[560108]] · [[560109]] · [[560110]] · [[560111]] · [[560112]] · [[560113]] · [[560114]] · [[560115]] · [[560500]] · [[562107]] · [[562125]] · [[562130]] · [[562149]] · [[562157]] · [[562162]] · [[562163]]
 
-## SKUs available in Bengaluru (127)
-[[jivo-canola-cold-press-edible-oil-1l]] · [[jivo-canola-cold-press-edible-oil-5-litre-jivo-kachi-ghani-mustard-oil-5-litre-5l]] · [[jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l]] · [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l]] · [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] · [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] · [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] · [[jivo-canola-cold-pressed-edible-oil-5-litres-5l]] · [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-canola-cold-pressed-oil-1-liters-indian-cooking-na]] · [[jivo-canola-cold-pressed-oil-1-liters-indian-cooking-oils-na]] · [[jivo-canola-cold-pressed-oil-11-liters-indian-cooking-oils-na]] · [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l]] · [[jivo-cold-press-canola-oil-1l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] · [[jivo-cold-pressed-canola-oil-1l]] · [[jivo-cold-pressed-canola-oil-5-litre-5l]] · [[jivo-cold-pressed-canola-oil-5l]] · [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] · [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzs8j7q]] · [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-1l]] · [[jivo-cold-pressed-sunflower-oil-1l]] · [[jivo-cold-pressed-sunflower-oil-combo-pack-5l]] · [[jivo-cold-pressed-sunflower-soyabean-oil-1l-each-1l]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0gzztttk4]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0h111xbjq]] · [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l]] · [[jivo-cooking-edible-soyabean-oil-1-litre-1l]] · [[jivo-cooking-edible-soyabean-oil-5-litre-5l]] · [[jivo-cooking-sunflower-oil-4l]] · [[jivo-cooking-sunflower-oil-can-4l]] · [[jivo-daily-cooking-pomace-olive-oil-1-litre-1l]] · [[jivo-daily-cooking-pomace-olive-oil-1l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-desi-ghee-500-ml-500ml]] · [[jivo-everyday-cooking-pomace-olive-oil-3-litre-3l]] · [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-1-ltr-5l]] · [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-5l]] · [[jivo-extra-light-olive-oil-1-litre-1l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l]] · [[jivo-extra-light-olive-oil-2-litre-2l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-3-litre-3l]] · [[jivo-extra-light-olive-oil-5-litre-tin-5l]] · [[jivo-extra-light-olive-oil-500ml-500ml]] · [[jivo-extra-light-olive-oil-combo-1l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-coconut-oil-500ml]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-1-litre-1l]] · [[jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml]] · [[jivo-extra-virgin-olive-oil-200ml-200ml]] · [[jivo-extra-virgin-olive-oil-250-ml-250ml]] · [[jivo-extra-virgin-olive-oil-5-litre-with-1litre-100-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l]] · [[jivo-first-pressed-sesame-oil-1l]] · [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] · [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] · [[jivo-first-pressed-yellow-mustard-oil-5l-5l]] · [[jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na]] · [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-oil-1-litre-1l]] · [[jivo-groundnut-oil-1l]] · [[jivo-groundnut-oil-5-litre-5l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml]] · [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml]] · [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml]] · [[jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-10l]] · [[jivo-pomace-olive-oil-combo-1l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] · [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na]] · [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] · [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] · [[jivo-pure-extra-virgin-coconut-oil-500-ml-500ml]] · [[jivo-raw-basil-seeds-for-weight-loss-200gm-200ml]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] · [[jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0dbhq2qww]] · [[jivo-rice-bran-oil-4-litre-4l]] · [[jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l]] · [[jivo-rice-bran-oil-5-litre-5l]] · [[jivo-so-olive-oil-1-litre-1l]] · [[jivo-so-olive-oil-5-litre-5l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-soolive-oil-1l-1l]] · [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-sunflower-oil-4-litres-4l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocooking-edible-soyabean-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivodaily-cooking-pomace-olive-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-light-olive-oil-2-litre-2l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-virgin-olive-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivogroundnut-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivopure-extra-virgin-coconut-oil-500-ml-500ml]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoso-olive-oil-1-litre-1l]]
+## SKUs available in Bengaluru (128)
+[[jivo-canola-cold-press-edible-oil-1l]] · [[jivo-canola-cold-press-edible-oil-5-litre-jivo-kachi-ghani-mustard-oil-5-litre-5l]] · [[jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l]] · [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l]] · [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] · [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l]] · [[jivo-canola-cold-pressed-edible-oil-11-litres-1l]] · [[jivo-canola-cold-pressed-edible-oil-5-litres-5l]] · [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-canola-cold-pressed-oil-1-liters-indian-cooking-na]] · [[jivo-canola-cold-pressed-oil-1-liters-indian-cooking-oils-na]] · [[jivo-canola-cold-pressed-oil-11-liters-indian-cooking-oils-na]] · [[jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-1l]] · [[jivo-cold-press-canola-oil-1l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-na]] · [[jivo-cold-pressed-canola-oil-1l]] · [[jivo-cold-pressed-canola-oil-5-litre-5l]] · [[jivo-cold-pressed-canola-oil-5l]] · [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] · [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzs8j7q]] · [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzy91b3]] · [[jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-1l]] · [[jivo-cold-pressed-sunflower-oil-1l]] · [[jivo-cold-pressed-sunflower-oil-combo-pack-5l]] · [[jivo-cold-pressed-sunflower-soyabean-oil-1l-each-1l]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0gzztttk4]] · [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0h111xbjq]] · [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l]] · [[jivo-cooking-edible-soyabean-oil-1-litre-1l]] · [[jivo-cooking-edible-soyabean-oil-5-litre-5l]] · [[jivo-cooking-sunflower-oil-4l]] · [[jivo-cooking-sunflower-oil-can-4l]] · [[jivo-daily-cooking-pomace-olive-oil-1-litre-1l]] · [[jivo-daily-cooking-pomace-olive-oil-1l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-desi-ghee-500-ml-500ml]] · [[jivo-everyday-cooking-pomace-olive-oil-3-litre-3l]] · [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-1-ltr-5l]] · [[jivo-extra-light-daily-cooking-olive-oil-5-ltr-2-ltr-5l]] · [[jivo-extra-light-olive-oil-1-litre-1l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-1l-for-cooking-dressings-salad-and-soups-dips-marinades-1l]] · [[jivo-extra-light-olive-oil-2-litre-2l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-3-litre-3l]] · [[jivo-extra-light-olive-oil-5-litre-tin-5l]] · [[jivo-extra-light-olive-oil-500ml-500ml]] · [[jivo-extra-light-olive-oil-combo-1l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-coconut-oil-500ml]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-1-litre-1l]] · [[jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml]] · [[jivo-extra-virgin-olive-oil-200ml-200ml]] · [[jivo-extra-virgin-olive-oil-250-ml-250ml]] · [[jivo-extra-virgin-olive-oil-5-litre-with-1litre-100-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l]] · [[jivo-first-pressed-sesame-oil-1l]] · [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] · [[jivo-first-pressed-yellow-mustard-oil-5-litre-5l]] · [[jivo-first-pressed-yellow-mustard-oil-5l-5l]] · [[jivo-gold-premium-refined-cooking-oil-perfect-blend-o-na]] · [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-oil-1-litre-1l]] · [[jivo-groundnut-oil-1l]] · [[jivo-groundnut-oil-5-litre-5l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml]] · [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml]] · [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml]] · [[jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l]] · [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-10l]] · [[jivo-pomace-olive-oil-combo-1l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l]] · [[jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na]] · [[jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l]] · [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] · [[jivo-pure-extra-virgin-coconut-oil-500-ml-500ml]] · [[jivo-raw-basil-seeds-for-weight-loss-200gm-200ml]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] · [[jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0dbhq2qww]] · [[jivo-rice-bran-oil-4-litre-4l]] · [[jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l]] · [[jivo-rice-bran-oil-5-litre-5l]] · [[jivo-so-olive-oil-1-litre-1l]] · [[jivo-so-olive-oil-5-litre-5l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-soolive-oil-1l-1l]] · [[jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-sunflower-oil-4-litres-4l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocanola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivocooking-edible-soyabean-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivodaily-cooking-pomace-olive-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-light-olive-oil-2-litre-2l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoextra-virgin-olive-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivogroundnut-oil-1-litre-1l]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivopure-extra-virgin-coconut-oil-500-ml-500ml]] · [[sponsoredsponsored-you-are-seeing-this-ad-based-on-the-products-relevance-to-your-search-querylet-us-know-jivoso-olive-oil-1-litre-1l]]
 
-## Observations (63529 rows)
+## Observations (63771 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -72,6 +72,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560001,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560001,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560001,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560001,1408,2025,30.5,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560001,259,375,30.9,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560001,259,375,30.9,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560001,259,375,30.9,1
@@ -206,6 +207,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560001,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560001,239,375,36.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560001,239,375,36.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560001,233,375,37.9,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560001,509,750,32.1,1
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560001,449,750,40.1,1
 2026-07-18-0707,2026-07-18,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560001,449,750,40.1,1
@@ -213,6 +215,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560001,449,750,40.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560001,449,750,40.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560001,449,750,40.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560001,449,750,40.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560001,1207,1650,26.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560001,1207,1650,26.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560001,1239,1650,24.9,1
@@ -410,6 +413,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560001,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560001,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560001,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560001,1159,1650,29.8,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,560001,1050,1650,36.4,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,560001,1050,1650,36.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-cold-pressed-canola-oil-5l,560001,1050,1650,36.4,1
@@ -502,6 +506,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560001,1069,2800,61.8,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560001,1069,2800,61.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560001,1069,2800,61.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560001,1069,2800,61.8,1
 2026-06-13-1013,2026-06-13,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na,560001,176,255,31,1
 2026-06-20-1400,2026-06-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na,560001,167,255,34.5,1
 2026-06-29-0903,2026-06-29,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na,560001,181,255,29,1
@@ -586,6 +591,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560001,178,255,30.2,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560001,178,255,30.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560001,178,255,30.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560001,178,255,30.2,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560001,339,404,16.1,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560001,339,404,16.1,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560001,339,404,16.1,1
@@ -627,6 +633,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0811,2026-07-17,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560001,195,275,29.1,1
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560001,195,275,29.1,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560001,199,275,27.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560001,195,275,29.1,1
 2026-06-28-0710,2026-06-28,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560001,175,275,36.4,1
 2026-06-29-0710,2026-06-29,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560001,175,275,36.4,1
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560001,195,275,29.1,1
@@ -772,6 +779,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560001,859,1100,21.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560001,899,1100,18.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560001,899,1100,18.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560001,899,1100,18.3,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560001,379,649,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560001,379,649,41.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560001,429,649,33.9,1
@@ -871,6 +879,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560001,399,1049,62,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560001,399,1049,62,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560001,399,1049,62,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560001,429,1049,59.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560001,758,1298,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560001,758,1298,41.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560001,858,1298,33.9,1
@@ -963,6 +972,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560001,504,1499,66.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560001,504,1499,66.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560001,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560001,599,1499,60,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,560001,594,1499,60.4,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,560001,594,1499,60.4,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-1l,560001,594,1499,60.4,1
@@ -1122,6 +1132,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560001,1129,1399,19.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560001,1129,1399,19.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560001,1090,1399,22.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560001,1090,1399,22.1,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,560001,1190,2799,57.5,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,560001,1190,2799,57.5,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-extra-light-olive-oil-2l,560001,1190,2799,57.5,1
@@ -1328,6 +1339,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560001,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560001,779,1799,56.7,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560001,779,1799,56.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560001,779,1799,56.7,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560001,189,299,36.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560001,189,299,36.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560001,189,299,36.8,1
@@ -1708,6 +1720,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560001,1783,4999,64.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560001,1783,4999,64.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560001,1783,4999,64.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560001,1783,4999,64.3,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,560001,1971,4999,60.6,1
 2026-05-23-1600,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,560001,1971,4999,60.6,1
 2026-05-24-1200,2026-05-24,blinkit,jivo-pomace-olive-oil-5l,560001,1971,4999,60.6,1
@@ -1839,6 +1852,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560001,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560001,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560001,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560001,873,1250,30.2,1
 2026-06-18-1013,2026-06-18,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560001,985,1250,21.2,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560001,1170,1505,22.3,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560001,1170,1505,22.3,1
@@ -2117,6 +2131,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560002,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560002,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560002,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560002,1408,2025,30.5,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560002,233,375,37.9,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560002,233,375,37.9,1
 2026-07-04-1041,2026-07-04,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560002,233,375,37.9,1
@@ -2143,6 +2158,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560002,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560002,239,375,36.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560002,249,375,33.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560002,239,375,36.3,1
 2026-06-29-1319,2026-06-29,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560002,1617,1650,2,1
 2026-06-30-0633,2026-06-30,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560002,1617,1650,2,1
 2026-07-01-1440,2026-07-01,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560002,1649,1650,0.1,1
@@ -2170,6 +2186,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560002,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560002,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560002,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560002,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560002,485,650,25.4,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560002,485,650,25.4,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560002,485,650,25.4,1
@@ -2211,6 +2228,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560002,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560002,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560002,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560002,1159,1650,29.8,1
 2026-07-11-0658,2026-07-11,amazon-fresh,jivo-cold-pressed-groundnut-oil-1-litre-1l,560002,203,560,63.8,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-cold-pressed-sunflower-oil-combo-pack-5l,560002,1046,1625,35.6,1
 2026-07-09-0726,2026-07-09,amazon-fresh,jivo-cold-pressed-sunflower-oil-combo-pack-5l,560002,1029,1625,36.7,1
@@ -2272,6 +2290,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560002,480,1499,68,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560002,480,1499,68,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560002,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560002,599,1499,60,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-1l,560002,499,1499,66.7,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-1l,560002,499,1499,66.7,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-light-olive-oil-1l,560002,499,1499,66.7,1
@@ -2314,6 +2333,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560002,1089,1399,22.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560002,1089,1399,22.2,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560002,1089,1399,22.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560002,1089,1399,22.2,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-2l,560002,1151,2799,58.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-2l,560002,1151,2799,58.9,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-light-olive-oil-2l,560002,1147,2799,59,1
@@ -2398,6 +2418,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560002,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560002,789,1799,56.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560002,789,1799,56.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560002,789,1799,56.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560002,1017,1799,43.5,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560002,1017,1799,43.5,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560002,949,1799,47.2,1
@@ -2420,6 +2441,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-14-0808,2026-07-14,amazon-now,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560002,259,355,27,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560002,225,355,36.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560002,225,355,36.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560002,225,355,36.6,1
 2026-06-29-1319,2026-06-29,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560002,186,225,17.3,0
 2026-06-30-0633,2026-06-30,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560002,186,225,17.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560002,182,225,19.1,0
@@ -2548,6 +2570,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560002,1699,4999,66,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560002,1699,4999,66,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560002,1699,4999,66,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560002,1699,4999,66,1
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,560002,2701,4999,46,1
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,560002,2701,4999,46,1
 2026-07-01-1440,2026-07-01,zepto,jivo-pomace-olive-oil-5l,560002,1699,4999,66,1
@@ -2642,6 +2665,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-14-0808,2026-07-14,amazon-now,jivo-rice-bran-oil-5-litre-5l,560002,889,1425,37.6,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560002,889,1425,37.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560002,889,1425,37.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560002,939,1425,34.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,560002,274,325,15.7,1
 2026-06-30-0633,2026-06-30,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,560002,274,325,15.7,1
 2026-07-01-1440,2026-07-01,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,560002,274,325,15.7,0
@@ -2692,6 +2716,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560003,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560003,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560003,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560003,1408,2025,30.5,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560003,233,375,37.9,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560003,233,375,37.9,1
 2026-07-04-1041,2026-07-04,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560003,233,375,37.9,1
@@ -2718,11 +2743,13 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560003,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560003,239,375,36.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560003,239,375,36.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560003,233,375,37.9,1
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560003,449,750,40.1,1
 2026-07-18-0707,2026-07-18,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560003,449,750,40.1,1
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560003,449,750,40.1,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560003,449,750,40.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560003,449,750,40.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560003,449,750,40.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560003,1617,1650,2,1
 2026-06-30-0633,2026-06-30,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560003,1617,1650,2,1
 2026-07-01-1440,2026-07-01,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560003,1649,1650,0.1,1
@@ -2748,6 +2775,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560003,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560003,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560003,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560003,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560003,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560003,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560003,485,750,35.3,1
@@ -2791,6 +2819,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560003,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560003,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560003,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560003,1159,1650,29.8,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560003,1250,2800,55.4,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560003,1139,2800,59.3,1
 2026-07-04-1041,2026-07-04,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560003,1049,2800,62.5,1
@@ -2808,10 +2837,12 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560003,178,255,30.2,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560003,170,255,33.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560003,170,255,33.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560003,170,255,33.3,1
 2026-07-16-0808,2026-07-16,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560003,195,275,29.1,1
 2026-07-17-0811,2026-07-17,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560003,195,275,29.1,1
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560003,195,275,29.1,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560003,199,275,27.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560003,195,275,29.1,1
 2026-07-16-0708,2026-07-16,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560003,195,275,29.1,1
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560003,195,275,29.1,1
 2026-07-18-0707,2026-07-18,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560003,195,275,29.1,1
@@ -2865,6 +2896,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560003,859,1100,21.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560003,899,1100,18.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560003,899,1100,18.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560003,899,1100,18.3,1
 2026-07-16-0708,2026-07-16,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560003,397,1049,62.2,1
 2026-07-16-0808,2026-07-16,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560003,397,1049,62.2,1
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560003,380,1049,63.8,1
@@ -2875,6 +2907,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560003,399,1049,62,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560003,399,1049,62,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560003,399,1049,62,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560003,429,1049,59.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-daily-pomace-olive-oil-2l,560003,1030,1449,28.9,0
 2026-06-30-0633,2026-06-30,zepto,jivo-daily-pomace-olive-oil-2l,560003,1030,1449,28.9,0
 2026-07-01-1440,2026-07-01,zepto,jivo-daily-pomace-olive-oil-2l,560003,1030,1449,28.9,0
@@ -2914,6 +2947,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560003,480,1499,68,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560003,480,1499,68,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560003,480,1499,68,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560003,579,1499,61.4,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-1l,560003,499,1499,66.7,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-1l,560003,499,1499,66.7,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-light-olive-oil-1l,560003,499,1499,66.7,1
@@ -2956,6 +2990,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560003,1129,2799,59.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560003,1129,2799,59.7,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560003,1090,2799,61.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560003,1089,1399,22.2,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-2l,560003,1150,2799,58.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-2l,560003,1150,2799,58.9,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-light-olive-oil-2l,560003,1150,2799,58.9,1
@@ -3019,6 +3054,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560003,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560003,779,1799,56.7,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560003,779,1799,56.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560003,779,1799,56.7,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560003,1017,1799,43.5,0
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560003,1017,1799,43.5,0
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560003,1001,1799,44.4,0
@@ -3177,6 +3213,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560003,1783,4999,64.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560003,1783,4999,64.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560003,1783,4999,64.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560003,1783,4999,64.3,1
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,560003,2701,4999,46,1
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,560003,2701,4999,46,1
 2026-07-01-1440,2026-07-01,zepto,jivo-pomace-olive-oil-5l,560003,1699,4999,66,1
@@ -3235,6 +3272,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560003,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560003,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560003,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560003,873,1250,30.2,1
 2026-06-29-1319,2026-06-29,zepto,jivo-refine-canola-oil-tin-15l,560003,3187,3500,8.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-refine-canola-oil-tin-15l,560003,3187,3500,8.9,1
 2026-07-01-1440,2026-07-01,zepto,jivo-refine-canola-oil-tin-15l,560003,3222,3500,7.9,1
@@ -3332,6 +3370,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560004,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560004,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560004,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560004,1408,2025,30.5,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560004,233,375,37.9,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560004,233,375,37.9,1
 2026-07-04-1041,2026-07-04,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560004,233,375,37.9,1
@@ -3416,6 +3455,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560004,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560004,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560004,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560004,1159,1650,29.8,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-cold-pressed-groundnut-oil-1-litre-1l,560004,194,560,65.4,1
 2026-07-11-0658,2026-07-11,amazon-fresh,jivo-cold-pressed-groundnut-oil-1-litre-1l,560004,203,560,63.8,1
 2026-07-15-0708,2026-07-15,amazon-fresh,jivo-cold-pressed-groundnut-oil-1-litre-1l,560004,234,560,58.2,1
@@ -3444,6 +3484,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560004,1019,2800,63.6,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560004,1019,2800,63.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560004,1019,2800,63.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560004,1019,2800,63.6,1
 2026-07-15-0708,2026-07-15,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560004,170,255,33.3,1
 2026-07-15-0810,2026-07-15,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560004,170,255,33.3,1
 2026-07-16-0808,2026-07-16,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560004,170,255,33.3,1
@@ -3457,6 +3498,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560004,170,255,33.3,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560004,170,255,33.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560004,170,255,33.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560004,170,255,33.3,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560004,220,275,20,0
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560004,192,275,30.2,0
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560004,200,275,27.3,0
@@ -3534,6 +3576,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560004,380,1049,63.8,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560004,380,1049,63.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560004,380,1049,63.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560004,429,1049,59.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-daily-pomace-olive-oil-2l,560004,1030,1449,28.9,0
 2026-06-30-0633,2026-06-30,zepto,jivo-daily-pomace-olive-oil-2l,560004,1030,1449,28.9,0
 2026-07-01-1440,2026-07-01,zepto,jivo-daily-pomace-olive-oil-2l,560004,1030,1449,28.9,0
@@ -3580,6 +3623,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560004,480,1499,68,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560004,480,1499,68,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560004,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560004,599,1499,60,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-1l,560004,624,1499,58.4,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-1l,560004,499,1499,66.7,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-1l,560004,499,1499,66.7,1
@@ -3627,6 +3671,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560004,1089,1399,22.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560004,1089,1399,22.2,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560004,1089,1399,22.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560004,1089,1399,22.2,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-2l,560004,1152,2799,58.8,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-2l,560004,1150,2799,58.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-2l,560004,1150,2799,58.9,1
@@ -3711,6 +3756,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560004,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560004,789,1799,56.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560004,789,1799,56.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560004,789,1799,56.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560004,1017,1799,43.5,0
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560004,1017,1799,43.5,0
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560004,1001,1799,44.4,0
@@ -3748,6 +3794,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560004,225,355,36.6,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560004,225,355,36.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560004,225,355,36.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,560004,225,355,36.6,1
 2026-06-29-1319,2026-06-29,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560004,181,225,19.6,0
 2026-06-30-0633,2026-06-30,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560004,181,225,19.6,0
 2026-07-01-1440,2026-07-01,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560004,181,225,19.6,0
@@ -3882,6 +3929,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560004,1699,4999,66,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560004,1699,4999,66,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560004,1699,4999,66,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560004,1699,4999,66,1
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,560004,2701,4999,46,1
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,560004,2701,4999,46,1
 2026-07-01-1440,2026-07-01,zepto,jivo-pomace-olive-oil-5l,560004,1699,4999,66,1
@@ -3940,6 +3988,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560004,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560004,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560004,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560004,873,1250,30.2,1
 2026-07-09-0826,2026-07-09,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560004,873,1250,30.2,1
 2026-06-29-1319,2026-06-29,zepto,jivo-refine-canola-oil-tin-15l,560004,3187,3500,8.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-refine-canola-oil-tin-15l,560004,3187,3500,8.9,1
@@ -4009,6 +4058,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-rice-bran-oil-5-litre-5l,560004,889,1425,37.6,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560004,889,1425,37.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560004,889,1425,37.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560004,939,1425,34.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,560004,276,325,15.1,0
 2026-06-30-0633,2026-06-30,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,560004,275,325,15.4,0
 2026-07-01-1440,2026-07-01,zepto,jivo-soolive-blend-of-rice-bran-and-olive-oil-1l,560004,274,325,15.7,0
@@ -4089,6 +4139,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560005,233,375,37,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560005,233,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560005,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560005,233,375,37,1
 2026-06-10-0843,2026-06-10,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560005,485,750,35.3,1
 2026-06-10-1149,2026-06-10,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560005,485,750,35.3,1
 2026-06-10-1505,2026-06-10,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560005,485,750,35.3,1
@@ -4152,6 +4203,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560005,178,255,30.2,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560005,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560005,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560005,183,255,28,1
 2026-06-10-1026,2026-06-10,blinkit,jivo-cold-pressed-sunflower-oil-1l,560005,192,275,30.2,1
 2026-06-10-1418,2026-06-10,blinkit,jivo-cold-pressed-sunflower-oil-1l,560005,192,275,30.2,1
 2026-06-11-1104,2026-06-11,blinkit,jivo-cold-pressed-sunflower-oil-1l,560005,215,275,21.8,1
@@ -4663,6 +4715,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560006,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560006,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560006,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560006,1408,2025,30.5,1
 2026-06-12-0911,2026-06-12,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560006,263,375,29.9,1
 2026-06-12-1025,2026-06-12,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560006,263,375,29.9,1
 2026-06-12-1254,2026-06-12,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560006,263,375,29.9,1
@@ -4756,6 +4809,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560006,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560006,239,375,36.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560006,239,375,36.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560006,233,375,37.9,1
 2026-06-28-0710,2026-06-28,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560006,485,750,35.3,1
 2026-06-28-0905,2026-06-28,amazon-now,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560006,485,750,35.3,1
 2026-06-29-0710,2026-06-29,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560006,485,750,35.3,1
@@ -4774,6 +4828,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560006,449,750,40.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560006,449,750,40.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560006,469,750,37.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560006,469,750,37.5,1
 2026-06-12-0846,2026-06-12,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560006,1617,1650,2,1
 2026-06-12-1227,2026-06-12,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560006,1617,1650,2,1
 2026-06-13-0841,2026-06-13,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560006,1617,1650,2,1
@@ -5117,6 +5172,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560006,178,255,30.2,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560006,178,255,30.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560006,178,255,30.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560006,170,255,33.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzy91b3,560006,418,815,48.7,1
 2026-06-12-1107,2026-06-12,blinkit,jivo-cold-pressed-sunflower-oil-1l,560006,192,275,30.2,1
 2026-06-12-1449,2026-06-12,blinkit,jivo-cold-pressed-sunflower-oil-1l,560006,192,275,30.2,1
 2026-06-13-1056,2026-06-13,blinkit,jivo-cold-pressed-sunflower-oil-1l,560006,215,275,21.8,1
@@ -5282,6 +5339,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560006,859,1100,21.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560006,899,1100,18.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560006,899,1100,18.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560006,899,1100,18.3,1
 2026-06-12-0911,2026-06-12,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560006,379,1049,63.9,1
 2026-06-12-1025,2026-06-12,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560006,379,1049,63.9,1
 2026-06-12-1254,2026-06-12,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560006,379,1049,63.9,1
@@ -5366,6 +5424,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560006,399,1049,62,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560006,399,1049,62,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560006,399,1049,62,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560006,429,1049,59.1,1
 2026-06-12-0846,2026-06-12,zepto,jivo-daily-pomace-olive-oil-2l,560006,963,1449,33.5,0
 2026-06-12-1227,2026-06-12,zepto,jivo-daily-pomace-olive-oil-2l,560006,963,1449,33.5,0
 2026-06-13-0841,2026-06-13,zepto,jivo-daily-pomace-olive-oil-2l,560006,963,1449,33.5,0
@@ -5483,6 +5542,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560006,504,1499,66.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560006,504,1499,66.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560006,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560006,599,1499,60,1
 2026-06-12-0846,2026-06-12,zepto,jivo-extra-light-olive-oil-1l,560006,499,1499,66.7,1
 2026-06-12-1107,2026-06-12,blinkit,jivo-extra-light-olive-oil-1l,560006,624,1499,58.4,1
 2026-06-12-1227,2026-06-12,zepto,jivo-extra-light-olive-oil-1l,560006,499,1499,66.7,1
@@ -5647,6 +5707,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560006,1129,1399,19.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560006,1129,1399,19.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560006,1090,1399,22.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560006,1090,1399,22.1,1
 2026-06-12-0846,2026-06-12,zepto,jivo-extra-light-olive-oil-2l,560006,1136,2799,59.4,1
 2026-06-12-1227,2026-06-12,zepto,jivo-extra-light-olive-oil-2l,560006,1191,2799,57.4,1
 2026-06-13-0841,2026-06-13,zepto,jivo-extra-light-olive-oil-2l,560006,1141,2799,59.2,1
@@ -5878,6 +5939,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560006,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560006,779,1799,56.7,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560006,779,1799,56.7,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560006,779,1799,56.7,1
 2026-06-12-0846,2026-06-12,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560006,970,1799,46.1,1
 2026-06-12-1227,2026-06-12,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560006,970,1799,46.1,1
 2026-06-13-0841,2026-06-13,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560006,970,1799,46.1,1
@@ -6349,6 +6411,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560006,1783,4999,64.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560006,1783,4999,64.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560006,1783,4999,64.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560006,1783,4999,64.3,1
 2026-06-12-0846,2026-06-12,zepto,jivo-pomace-olive-oil-5l,560006,2574,4999,48.5,1
 2026-06-12-1227,2026-06-12,zepto,jivo-pomace-olive-oil-5l,560006,2574,4999,48.5,1
 2026-06-13-0841,2026-06-13,zepto,jivo-pomace-olive-oil-5l,560006,2574,4999,48.5,1
@@ -6514,6 +6577,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560006,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560006,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560006,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560006,873,1250,30.2,1
 2026-06-14-1018,2026-06-14,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560006,985,1250,21.2,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560006,873,1250,30.2,1
 2026-07-09-0826,2026-07-09,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560006,873,1250,30.2,1
@@ -6545,6 +6609,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-28-0710,2026-06-28,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560006,1180,1505,21.6,1
 2026-06-29-0710,2026-06-29,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560006,1180,1505,21.6,1
 2026-06-30-0728,2026-06-30,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560006,1205,1505,19.9,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560006,1082,1505,28.1,1
 2026-06-12-0846,2026-06-12,zepto,jivo-refine-canola-oil-tin-15l,560006,3187,3500,8.9,1
 2026-06-12-1227,2026-06-12,zepto,jivo-refine-canola-oil-tin-15l,560006,3187,3500,8.9,1
 2026-06-13-0841,2026-06-13,zepto,jivo-refine-canola-oil-tin-15l,560006,3187,3500,8.9,1
@@ -6667,6 +6732,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560006,1128,1710,34,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560006,1128,1710,34,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560006,1128,1710,34,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560006,1128,1710,34,1
 2026-06-12-0911,2026-06-12,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560006,959,1425,32.7,1
 2026-06-12-1254,2026-06-12,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560006,959,1425,32.7,1
 2026-06-13-0904,2026-06-13,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560006,909,1425,36.2,1
@@ -6841,6 +6907,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0645,2026-07-17,flipkart-minutes,jivo-cold-press-canola-oil-1l,560007,236,375,37,0
 2026-07-18-0645,2026-07-18,flipkart-minutes,jivo-cold-press-canola-oil-1l,560007,234,375,37,0
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560007,245,375,34,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560007,233,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560007,500,750,33.3,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560007,236,375,37,0
 2026-07-02-1219,2026-07-02,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560007,1099,1650,33.4,1
@@ -7025,6 +7092,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0645,2026-07-17,flipkart-minutes,jivo-cold-press-canola-oil-1l,560008,236,375,37,0
 2026-07-18-0645,2026-07-18,flipkart-minutes,jivo-cold-press-canola-oil-1l,560008,234,375,37,0
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560008,245,375,34,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560008,233,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560008,500,750,33.3,0
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560008,236,375,37,0
 2026-07-02-1219,2026-07-02,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560008,1099,1650,33.4,1
@@ -7654,6 +7722,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560010,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560010,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560010,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560010,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560010,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560010,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560010,485,750,35.3,1
@@ -8085,6 +8154,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560011,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560011,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560011,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560011,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560011,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560011,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560011,485,750,35.3,1
@@ -8882,6 +8952,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560013,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560013,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560013,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560013,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560013,485,750,35.3,0
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560013,485,750,35.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560013,485,750,35.3,0
@@ -8939,6 +9010,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560013,170,255,33.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560013,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560013,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560013,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560013,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560013,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560013,195,275,29.1,1
@@ -11689,6 +11761,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-15-0645,2026-07-15,flipkart-minutes,jivo-cold-press-canola-oil-1l,560015,270,375,28,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560015,262,375,30,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560015,251,375,33,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560015,251,375,33,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560015,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560015,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560015,485,750,35.3,0
@@ -12633,6 +12706,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560017,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560017,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560017,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560017,233,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560017,500,750,33.3,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560017,236,375,37,0
 2026-07-02-1219,2026-07-02,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560017,1099,1650,33.4,1
@@ -15939,6 +16013,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560020,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560020,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560020,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560020,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560020,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560020,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560020,485,750,35.3,1
@@ -16408,6 +16483,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560021,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560021,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560021,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560021,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560021,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560021,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560021,485,750,35.3,1
@@ -16853,6 +16929,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560022,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560022,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560022,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560022,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560022,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560022,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560022,485,750,35.3,0
@@ -17330,6 +17407,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560023,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560023,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560023,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560023,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560023,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560023,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560023,485,750,35.3,1
@@ -17605,6 +17683,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,560023,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560023,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560023,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560023,419,1049,60,0
 2026-07-17-0811,2026-07-17,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560023,1783,4999,64.3,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560023,1783,4999,64.3,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560023,1783,4999,64.3,1
@@ -18152,6 +18231,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560026,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560026,234,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560026,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560026,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560026,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560026,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560026,485,750,35.3,1
@@ -18678,6 +18758,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560027,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560027,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560027,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560027,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560027,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560027,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560027,485,750,35.3,1
@@ -22209,6 +22290,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560029,1388,2025,31.5,1
 2026-07-18-0707,2026-07-18,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560029,1338,2025,33.9,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560029,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560029,1408,2025,30.5,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560029,259,375,30.9,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560029,259,375,30.9,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560029,259,375,30.9,1
@@ -22312,6 +22394,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560029,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560029,249,375,33.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560029,249,375,33.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560029,249,375,33.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560029,509,750,32.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560029,469,750,37.5,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560029,1239,1650,24.9,1
@@ -22360,6 +22443,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560029,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560029,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560029,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560029,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560029,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560029,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560029,485,750,35.3,1
@@ -22513,6 +22597,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560029,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560029,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560029,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560029,1159,1650,29.8,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,560029,1050,1650,36.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,560029,1050,1650,36.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-cold-pressed-canola-oil-5l,560029,1050,1650,36.4,1
@@ -22554,6 +22639,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560029,1069,2800,61.8,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560029,1069,2800,61.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560029,1069,2800,61.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560029,1069,2800,61.8,1
 2026-06-17-1405,2026-06-17,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na,560029,176,255,31,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560029,418,510,18,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560029,418,510,18,1
@@ -22620,6 +22706,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560029,178,255,30.2,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560029,178,255,30.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560029,178,255,30.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560029,178,255,30.2,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560029,339,404,16.1,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560029,339,404,16.1,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560029,215,275,21.8,1
@@ -22737,6 +22824,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0811,2026-07-17,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560029,195,275,29.1,1
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560029,195,275,29.1,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560029,199,275,27.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560029,195,275,29.1,1
 2026-06-08-0909,2026-06-08,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560029,192,275,30.2,1
 2026-06-08-1204,2026-06-08,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560029,192,275,30.2,1
 2026-06-18-0902,2026-06-18,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560029,177,275,35.6,1
@@ -22888,6 +22976,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,560029,912,1350,32.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,560029,912,1350,32.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,560029,912,1350,32.4,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,560029,999,1350,26,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-cooking-edible-soyabean-oil-1-litre-1l,560029,199,225,11.6,1
 2026-06-01-1200,2026-06-01,amazon-fresh,jivo-cooking-edible-soyabean-oil-1-litre-1l,560029,199,225,11.6,1
 2026-06-06-0712,2026-06-06,amazon-fresh,jivo-cooking-edible-soyabean-oil-1-litre-1l,560029,225,225,0,1
@@ -23074,6 +23163,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560029,399,1049,62,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560029,399,1049,62,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560029,399,1049,62,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560029,429,1049,59.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560029,758,1298,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560029,758,1298,41.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560029,858,1298,33.9,1
@@ -23227,6 +23317,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560029,504,1499,66.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560029,504,1499,66.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560029,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560029,599,1499,60,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,560029,594,1499,60.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,560029,594,1499,60.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,560029,594,1499,60.4,1
@@ -23572,6 +23663,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560029,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560029,799,1799,55.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560029,799,1799,55.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560029,799,1799,55.6,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560029,189,299,36.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560029,189,299,36.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560029,189,299,36.8,1
@@ -23937,6 +24029,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560029,1783,4999,64.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560029,1783,4999,64.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560029,1783,4999,64.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560029,1783,4999,64.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,560029,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,560029,1971,4999,60.6,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-pomace-olive-oil-5l,560029,1971,4999,60.6,1
@@ -24120,6 +24213,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560029,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560029,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560029,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560029,873,1250,30.2,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560029,873,1250,30.2,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560029,1170,1505,22.3,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560029,1170,1505,22.3,1
@@ -24336,6 +24430,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-06-23-1246,2026-06-23,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560029,959,1425,32.7,1
 2026-06-23-1403,2026-06-23,amazon-now,jivo-rice-bran-oil-5-litre-5l,560029,959,1425,32.7,1
 2026-07-04-1041,2026-07-04,amazon-now,jivo-rice-bran-oil-5-litre-5l,560029,819,1425,42.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560029,939,1425,34.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-so-olive-oil-1-litre-1l,560029,249,325,23.4,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-so-olive-oil-5-litre-5l,560029,1239,1625,23.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-so-olive-oil-5-litre-5l,560029,1239,1625,23.8,1
@@ -24451,6 +24546,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560030,233,375,37,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560030,233,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560030,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560030,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560030,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560030,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560030,485,750,35.3,1
@@ -25507,6 +25603,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-canola-cold-pressed-oil-1-liters-indian-cooking-oils-na,560034,239,375,36.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560034,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560034,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560034,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560034,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560034,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560034,485,750,35.3,0
@@ -25544,6 +25641,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560034,170,255,33.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560034,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560034,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560034,183,255,28,1
 2026-05-21-1417,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,560034,190,275,30.9,0
 2026-05-21-1703,2026-05-21,blinkit,jivo-cold-pressed-sunflower-oil-1l,560034,190,275,30.9,0
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560034,215,275,21.8,1
@@ -25564,6 +25662,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560034,756,1080,30,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560034,756,1080,30,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560034,756,1080,30,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560034,756,1080,30,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,560034,745,1080,31,1
 2026-07-14-0808,2026-07-14,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560034,429,1049,59.1,1
 2026-07-15-0810,2026-07-15,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560034,379,1049,63.9,1
@@ -25931,6 +26030,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-canola-oil-1l,560035,236,375,37,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560035,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560035,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560035,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560035,485,750,35.3,0
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560035,485,750,35.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560035,485,750,35.3,0
@@ -25984,6 +26084,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560035,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560035,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560035,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560035,1159,1650,29.8,1
 2026-07-10-0658,2026-07-10,amazon-fresh,jivo-cold-pressed-groundnut-oil-1-litre-1l,560035,194,560,65.4,1
 2026-07-10-0758,2026-07-10,amazon-now,jivo-cold-pressed-groundnut-oil-1-litre-1l,560035,194,560,65.4,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560035,942,2800,66.4,1
@@ -26041,6 +26142,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560035,170,255,33.3,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560035,170,255,33.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560035,170,255,33.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560035,170,255,33.3,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560035,215,275,21.8,0
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560035,192,275,30.2,0
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560035,195,275,29.1,0
@@ -26138,6 +26240,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560035,380,1049,63.8,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560035,380,1049,63.8,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560035,380,1049,63.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560035,429,1049,59.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-daily-pomace-olive-oil-2l,560035,1030,1449,28.9,0
 2026-06-30-0633,2026-06-30,zepto,jivo-daily-pomace-olive-oil-2l,560035,1030,1449,28.9,0
 2026-07-01-1440,2026-07-01,zepto,jivo-daily-pomace-olive-oil-2l,560035,1030,1449,28.9,0
@@ -26173,6 +26276,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560035,480,1499,68,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560035,480,1499,68,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560035,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560035,599,1499,60,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-1l,560035,623,1499,58.4,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-1l,560035,499,1499,66.7,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-1l,560035,499,1499,66.7,1
@@ -26224,6 +26328,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560035,1089,2799,61.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560035,1089,2799,61.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560035,1089,2799,61.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560035,1089,2799,61.1,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-2l,560035,1152,2799,58.8,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-2l,560035,1150,2799,58.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-2l,560035,1150,2799,58.9,1
@@ -26435,6 +26540,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-pomace-olive-oil-1l,560035,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560035,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560035,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560035,419,1049,60,0
 2026-07-08-0800,2026-07-08,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560035,1699,4999,66,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560035,1699,4999,66,1
 2026-07-03-0210,2026-07-03,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560035,1699,4999,66,1
@@ -26503,6 +26609,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560035,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560035,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560035,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560035,873,1250,30.2,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560035,873,1250,30.2,1
 2026-06-29-1319,2026-06-29,zepto,jivo-refine-canola-oil-tin-15l,560035,3187,3500,8.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-refine-canola-oil-tin-15l,560035,3187,3500,8.9,1
@@ -26587,6 +26694,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560036,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560036,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560036,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560036,1408,2025,30.5,1
 2026-07-07-0730,2026-07-07,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560036,229,375,38.9,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560036,229,375,38.9,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560036,229,375,38.9,1
@@ -26607,7 +26715,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560036,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560036,249,375,33.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560036,249,375,33.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560036,249,375,33.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560036,449,750,40.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560036,449,750,40.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560036,1617,1650,2,1
 2026-06-30-0633,2026-06-30,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560036,1617,1650,2,1
 2026-07-01-1440,2026-07-01,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560036,1649,1650,0.1,1
@@ -26675,6 +26785,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560036,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560036,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560036,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560036,1159,1650,29.8,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560036,942,2800,66.4,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560036,942,2800,66.4,1
 2026-07-09-0726,2026-07-09,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560036,942,2800,66.4,1
@@ -26701,6 +26812,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560036,1069,2800,61.8,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560036,1069,2800,61.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560036,1069,2800,61.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560036,1069,2800,61.8,1
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560036,356,815,56.3,1
 2026-07-04-1041,2026-07-04,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560036,163,255,36.1,1
 2026-07-11-0658,2026-07-11,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560036,171,255,32.9,1
@@ -26723,6 +26835,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560036,178,255,30.2,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560036,178,255,30.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560036,178,255,30.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560036,178,255,30.2,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560036,215,275,21.8,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560036,195,275,29.1,1
 2026-07-02-1149,2026-07-02,blinkit,jivo-cold-pressed-sunflower-oil-1l,560036,195,275,29.1,1
@@ -26748,6 +26861,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0811,2026-07-17,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560036,195,275,29.1,1
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560036,195,275,29.1,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560036,199,275,27.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560036,195,275,29.1,1
 2026-07-07-0608,2026-07-07,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560036,172,275,37.5,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560036,172,275,37.5,1
 2026-07-09-0726,2026-07-09,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560036,172,275,37.5,1
@@ -26809,6 +26923,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560036,859,1100,21.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560036,899,1100,18.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560036,899,1100,18.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560036,899,1100,18.3,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560036,379,1049,63.9,1
 2026-07-07-0608,2026-07-07,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560036,379,1049,63.9,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560036,379,1049,63.9,1
@@ -26831,6 +26946,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560036,399,1049,62,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560036,399,1049,62,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560036,399,1049,62,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560036,429,1049,59.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-daily-pomace-olive-oil-2l,560036,1030,1449,28.9,0
 2026-06-30-0633,2026-06-30,zepto,jivo-daily-pomace-olive-oil-2l,560036,1030,1449,28.9,0
 2026-07-01-1440,2026-07-01,zepto,jivo-daily-pomace-olive-oil-2l,560036,1030,1449,28.9,0
@@ -26865,6 +26981,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560036,504,1499,66.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560036,504,1499,66.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560036,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560036,599,1499,60,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-1l,560036,624,1499,58.4,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-1l,560036,499,1499,66.7,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-1l,560036,499,1499,66.7,1
@@ -26896,6 +27013,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560036,1129,2799,59.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560036,1129,2799,59.7,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560036,1090,2799,61.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560036,1090,2799,61.1,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-2l,560036,1137,2799,59.4,0
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-2l,560036,1152,2799,58.8,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-2l,560036,1152,2799,58.8,1
@@ -26982,6 +27100,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560036,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560036,799,1799,55.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560036,799,1799,55.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560036,799,1799,55.6,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560036,1017,1799,43.5,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560036,1017,1799,43.5,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560036,1001,1799,44.4,1
@@ -27014,6 +27133,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-5l-5l,560036,999,1795,44.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-5l-5l,560036,1199,1795,33.2,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-5l-5l,560036,1199,1795,33.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-first-pressed-yellow-mustard-oil-5l-5l,560036,1199,1795,33.2,1
 2026-06-29-1319,2026-06-29,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560036,181,225,19.6,0
 2026-06-30-0633,2026-06-30,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560036,181,225,19.6,0
 2026-07-01-1440,2026-07-01,zepto,jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l,560036,181,225,19.6,0
@@ -27122,6 +27242,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,560036,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560036,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560036,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560036,419,1049,60,0
 2026-07-08-0800,2026-07-08,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560036,1699,4999,66,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560036,1699,4999,66,1
 2026-07-07-0608,2026-07-07,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560036,1699,4999,66,1
@@ -27190,6 +27311,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560036,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560036,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560036,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560036,873,1250,30.2,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560036,873,1250,30.2,1
 2026-06-29-1319,2026-06-29,zepto,jivo-refine-canola-oil-tin-15l,560036,3187,3500,8.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-refine-canola-oil-tin-15l,560036,3187,3500,8.9,1
@@ -27236,6 +27358,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560036,1068,1710,37.5,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560036,1128,1710,34,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560036,1128,1710,34,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560036,1128,1710,34,1
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560036,889,1425,37.6,1
 2026-07-07-0608,2026-07-07,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560036,871,1425,38.9,1
 2026-07-08-0700,2026-07-08,amazon-fresh,jivo-rice-bran-oil-5-litre-5l,560036,871,1425,38.9,1
@@ -27308,6 +27431,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-canola-cold-pressed-oil-11-liters-indian-cooking-oils-na,560037,449,750,40.1,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560037,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560037,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560037,233,375,37,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560037,500,750,33.3,0
 2026-07-14-0645,2026-07-14,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560037,375,,,0
 2026-07-15-0645,2026-07-15,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560037,375,,,0
@@ -27316,6 +27440,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0645,2026-07-18,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560037,375,,,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560037,375,,,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560037,375,,,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560037,375,,,0
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-combo-canola-oil-plastic-bottle-2l,560037,375,,,0
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-canola-oil-1l,560037,275,375,26.7,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-canola-oil-1l,560037,254,375,32.3,1
@@ -27338,6 +27463,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0811,2026-07-17,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560037,178,255,30.2,1
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560037,178,255,30.2,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560037,178,255,30.2,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560037,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560037,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560037,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560037,195,275,29.1,1
@@ -27473,6 +27599,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560038,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560038,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560038,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560038,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560038,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560038,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560038,485,750,35.3,1
@@ -30922,6 +31049,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560040,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560040,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560040,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560040,1408,2025,30.5,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560040,259,375,30.9,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560040,259,375,30.9,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560040,259,375,30.9,1
@@ -31062,6 +31190,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560040,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560040,249,375,33.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560040,249,375,33.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560040,249,375,33.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560040,509,750,32.1,1
 2026-06-05-1108,2026-06-05,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560040,469,750,37.5,1
 2026-06-05-1125,2026-06-05,amazon-now,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560040,469,750,37.5,1
@@ -31164,6 +31293,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560040,449,750,40.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560040,449,750,40.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560040,449,750,40.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560040,449,750,40.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560040,1239,1650,24.9,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560040,1207,1650,26.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560040,1239,1650,24.9,1
@@ -31218,6 +31348,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560040,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560040,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560040,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560040,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560040,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560040,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560040,485,750,35.3,1
@@ -31370,6 +31501,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560040,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560040,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560040,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560040,1159,1650,29.8,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,560040,1050,1650,36.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,560040,1050,1650,36.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-5l,560040,1050,1650,36.4,1
@@ -31484,6 +31616,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560040,178,255,30.2,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560040,178,255,30.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560040,178,255,30.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560040,178,255,30.2,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560040,339,404,16.1,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560040,339,404,16.1,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560040,215,275,21.8,1
@@ -31567,6 +31700,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0811,2026-07-17,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560040,195,275,29.1,1
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560040,195,275,29.1,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560040,199,275,27.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560040,195,275,29.1,1
 2026-06-18-0902,2026-06-18,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560040,177,275,35.6,1
 2026-06-18-1246,2026-06-18,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560040,177,275,35.6,1
 2026-07-10-0658,2026-07-10,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560040,180,275,34.5,1
@@ -31811,6 +31945,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560040,859,1100,21.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560040,899,1100,18.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560040,899,1100,18.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560040,899,1100,18.3,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560040,379,649,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560040,379,649,41.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560040,429,649,33.9,1
@@ -31926,6 +32061,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560040,399,1049,62,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560040,399,1049,62,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560040,399,1049,62,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560040,429,1049,59.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560040,758,1298,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560040,758,1298,41.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560040,858,1298,33.9,1
@@ -32044,6 +32180,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560040,504,1499,66.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560040,504,1499,66.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560040,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560040,599,1499,60,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,560040,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,560040,594,1499,60.4,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,560040,594,1499,60.4,1
@@ -32215,6 +32352,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560040,1129,2799,59.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560040,1129,2799,59.7,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560040,1090,2799,61.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560040,1090,2799,61.1,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,560040,1190,2799,57.5,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,560040,1190,2799,57.5,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,560040,1190,2799,57.5,1
@@ -32469,6 +32607,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560040,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560040,799,1799,55.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560040,799,1799,55.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560040,799,1799,55.6,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560040,189,299,36.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560040,189,299,36.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560040,189,299,36.8,1
@@ -32751,6 +32890,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,560040,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560040,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560040,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560040,419,1049,60,0
 2026-07-14-0808,2026-07-14,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560040,1783,4999,64.3,1
 2026-07-17-0811,2026-07-17,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560040,1783,4999,64.3,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560040,1926,4999,61.5,1
@@ -32864,6 +33004,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560040,1783,4999,64.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560040,1783,4999,64.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560040,1783,4999,64.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560040,1783,4999,64.3,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,560040,1971,4999,60.6,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,560040,1971,4999,60.6,1
 2026-05-22-1600,2026-05-22,blinkit,jivo-pomace-olive-oil-5l,560040,1971,4999,60.6,1
@@ -32994,6 +33135,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560040,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560040,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560040,949,1250,24.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560040,949,1250,24.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560040,1170,1505,22.3,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560040,1170,1505,22.3,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560040,1170,1505,22.3,1
@@ -33400,6 +33542,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560041,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560041,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560041,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560041,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560041,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560041,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560041,485,750,35.3,1
@@ -34298,6 +34441,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560043,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560043,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560043,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560043,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560043,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560043,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560043,485,750,35.3,1
@@ -34677,6 +34821,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560045,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560045,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560045,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560045,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560045,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560045,485,750,35.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560045,485,750,35.3,0
@@ -35140,6 +35285,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560047,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560047,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560047,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560047,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560047,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560047,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560047,485,750,35.3,1
@@ -35483,6 +35629,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560048,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560048,233,375,37,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560048,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560048,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560048,484,750,35.5,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560048,510,750,32,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560048,499,750,33.5,1
@@ -35526,6 +35673,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560048,170,255,33.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560048,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560048,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560048,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560048,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560048,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560048,195,275,29.1,1
@@ -35783,6 +35931,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,560048,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560048,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560048,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560048,419,1049,60,0
 2026-07-02-1219,2026-07-02,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560048,1699,4999,66,1
 2026-07-07-0730,2026-07-07,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560048,1699,4999,66,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560048,1699,4999,66,1
@@ -35911,6 +36060,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-canola-oil-1l,560049,250,375,33,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560049,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560049,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560049,234,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560049,500,750,33.3,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560049,250,375,33,0
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560049,1099,1650,33.4,1
@@ -35937,6 +36087,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-pomace-olive-oil-1l,560049,967,1049,7,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560049,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560049,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560049,419,1049,60,0
 2026-07-03-0507,2026-07-03,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560049,1699,4999,66,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-5l,560049,1699,4999,66,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,560049,758,2098,63.9,0
@@ -35981,6 +36132,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560050,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560050,234,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560050,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560050,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560050,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560050,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560050,485,750,35.3,1
@@ -38260,6 +38412,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560054,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560054,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560054,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560054,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560054,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560054,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560054,485,750,35.3,1
@@ -38773,6 +38926,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560055,233,375,37,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560055,233,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560055,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560055,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560055,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560055,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560055,485,750,35.3,1
@@ -39267,6 +39421,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-canola-oil-1l,560056,236,375,37,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560056,233,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560056,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560056,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560056,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560056,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560056,485,750,35.3,1
@@ -39286,6 +39441,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560056,378,,,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560056,378,,,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560056,378,,,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560056,378,,,0
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-combo-canola-oil-plastic-bottle-2l,560056,378,,,0
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-canola-oil-1l,560056,258,375,31.2,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-canola-oil-1l,560056,236,375,37.1,1
@@ -39757,6 +39913,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560057,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560057,234,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560057,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560057,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560057,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560057,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560057,485,750,35.3,0
@@ -40212,6 +40369,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-15-0645,2026-07-15,flipkart-minutes,jivo-cold-press-canola-oil-1l,560058,270,375,28,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560058,262,375,30,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560058,251,375,33,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560058,251,375,33,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560058,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560058,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560058,485,750,35.3,0
@@ -40718,6 +40876,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560059,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560059,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560059,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560059,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560059,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560059,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560059,485,750,35.3,1
@@ -41157,6 +41316,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560060,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560060,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560060,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560060,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560060,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560060,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560060,485,750,35.3,1
@@ -41506,6 +41666,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560061,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560061,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560061,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560061,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560061,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560061,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560061,485,750,35.3,1
@@ -41940,6 +42101,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560062,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560062,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560062,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560062,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560062,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560062,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560062,485,750,35.3,1
@@ -42376,6 +42538,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560064,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560064,233,375,37,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560064,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560064,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560064,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560064,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560064,485,750,35.3,1
@@ -42428,6 +42591,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560064,170,255,33.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560064,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560064,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560064,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560064,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560064,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560064,195,275,29.1,1
@@ -42877,6 +43041,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560065,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560065,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560065,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560065,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560065,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560065,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560065,485,750,35.3,0
@@ -42938,6 +43103,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560065,170,255,33.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560065,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560065,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560065,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560065,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560065,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560065,195,275,29.1,1
@@ -43327,6 +43493,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560066,245,375,34,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560066,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560066,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560066,233,375,37,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560066,500,750,33.3,1
 2026-05-21-1305,2026-05-21,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560066,257,257,0,0
 2026-05-22-1200,2026-05-22,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560066,251,257,2.3,0
@@ -43538,9 +43705,11 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560067,1119,1505,25.6,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560067,1183,1505,21.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560067,1119,1505,25.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560067,1082,1505,28.1,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560067,1068,1710,37.5,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560067,1128,1710,34,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560067,1128,1710,34,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l,560067,1128,1710,34,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560068,233,375,37.9,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560068,233,375,37.9,1
 2026-07-04-1041,2026-07-04,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560068,233,375,37.9,1
@@ -43579,6 +43748,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560068,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560068,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560068,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560068,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560068,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560068,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560068,485,750,35.3,0
@@ -43673,6 +43843,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560068,756,1080,30,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560068,756,1080,30,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560068,756,1080,30,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560068,756,1080,30,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,560068,745,1080,31,1
 2026-07-15-0810,2026-07-15,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560068,397,1049,62.2,1
 2026-07-16-0808,2026-07-16,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560068,397,1049,62.2,1
@@ -47030,6 +47201,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560070,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560070,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560070,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560070,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560070,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560070,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560070,485,750,35.3,1
@@ -47648,6 +47820,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560072,1338,2025,33.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560072,1408,2025,30.5,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560072,1408,2025,30.5,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l,560072,1408,2025,30.5,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560072,233,375,37.9,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560072,233,375,37.9,1
 2026-07-03-0210,2026-07-03,amazon-now,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560072,233,375,37.9,1
@@ -47681,6 +47854,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560072,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560072,249,375,33.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560072,249,375,33.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560072,249,375,33.6,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560072,485,750,35.3,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560072,449,750,40.1,1
 2026-07-03-0210,2026-07-03,amazon-now,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560072,449,750,40.1,1
@@ -47697,6 +47871,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560072,449,750,40.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560072,449,750,40.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560072,449,750,40.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560072,449,750,40.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560072,1617,1650,2,1
 2026-06-30-0633,2026-06-30,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560072,1617,1650,2,1
 2026-07-01-1440,2026-07-01,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,560072,1649,1650,0.1,1
@@ -47726,6 +47901,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560072,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560072,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560072,234,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560072,234,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560072,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560072,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560072,485,750,35.3,1
@@ -47777,6 +47953,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560072,1099,1650,33.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560072,1159,1650,29.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560072,1159,1650,29.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-canola-oil-5-litre-5l,560072,1159,1650,29.8,1
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-cold-pressed-groundnut-oil-1-litre-1l,560072,219,560,60.9,1
 2026-07-14-0708,2026-07-14,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560072,1239,2800,55.8,1
 2026-07-14-0808,2026-07-14,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560072,1239,2800,55.8,1
@@ -47809,7 +47986,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560072,178,255,30.2,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560072,178,255,30.2,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560072,178,255,30.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560072,178,255,30.2,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560072,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560072,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560072,215,275,21.8,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560072,195,275,29.1,1
 2026-07-02-1149,2026-07-02,blinkit,jivo-cold-pressed-sunflower-oil-1l,560072,195,275,29.1,1
@@ -47840,6 +48019,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0811,2026-07-17,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560072,195,275,29.1,1
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560072,195,275,29.1,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560072,199,275,27.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,560072,195,275,29.1,1
 2026-07-10-0658,2026-07-10,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560072,180,275,34.5,1
 2026-07-11-0658,2026-07-11,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560072,180,275,34.5,1
 2026-07-13-0707,2026-07-13,amazon-fresh,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,560072,195,275,29.1,1
@@ -47911,6 +48091,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560072,859,1100,21.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560072,899,1100,18.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560072,899,1100,18.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cooking-edible-soyabean-oil-5-litre-5l,560072,899,1100,18.3,1
 2026-07-17-0707,2026-07-17,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560072,399,1049,62,1
 2026-07-17-0811,2026-07-17,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560072,399,1049,62,1
 2026-07-18-0707,2026-07-18,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560072,399,1049,62,1
@@ -47920,6 +48101,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560072,399,1049,62,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560072,399,1049,62,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560072,399,1049,62,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560072,429,1049,59.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-daily-pomace-olive-oil-2l,560072,1030,1449,28.9,0
 2026-06-30-0633,2026-06-30,zepto,jivo-daily-pomace-olive-oil-2l,560072,1030,1449,28.9,0
 2026-07-01-1440,2026-07-01,zepto,jivo-daily-pomace-olive-oil-2l,560072,1030,1449,28.9,0
@@ -47944,6 +48126,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560072,504,1499,66.4,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560072,504,1499,66.4,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560072,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560072,599,1499,60,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-extra-light-olive-oil-1l,560072,624,1499,58.4,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-1l,560072,499,1499,66.7,0
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-1l,560072,499,1499,66.7,1
@@ -47995,6 +48178,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560072,1129,2799,59.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560072,1129,2799,59.7,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560072,1090,2799,61.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560072,1090,2799,61.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-light-olive-oil-2l,560072,1151,2799,58.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-light-olive-oil-2l,560072,1151,2799,58.9,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-light-olive-oil-2l,560072,1153,2799,58.8,1
@@ -48104,6 +48288,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560072,779,1799,56.7,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560072,799,1799,55.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560072,799,1799,55.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560072,799,1799,55.6,1
 2026-06-29-1319,2026-06-29,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560072,1017,1799,43.5,1
 2026-06-30-0633,2026-06-30,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560072,1017,1799,43.5,1
 2026-07-01-1440,2026-07-01,zepto,jivo-extra-virgin-olive-oil-bottle-1l,560072,1017,1799,43.5,1
@@ -48279,6 +48464,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560072,1783,4999,64.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560072,1783,4999,64.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560072,1783,4999,64.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560072,1783,4999,64.3,1
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,560072,2701,4999,46,1
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,560072,2701,4999,46,1
 2026-07-01-1440,2026-07-01,zepto,jivo-pomace-olive-oil-5l,560072,1699,4999,66,1
@@ -48325,6 +48511,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560072,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560072,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560072,949,1250,24.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560072,949,1250,24.1,1
 2026-06-29-1319,2026-06-29,zepto,jivo-refine-canola-oil-tin-15l,560072,3187,3500,8.9,1
 2026-06-30-0633,2026-06-30,zepto,jivo-refine-canola-oil-tin-15l,560072,3187,3500,8.9,1
 2026-07-01-1440,2026-07-01,zepto,jivo-refine-canola-oil-tin-15l,560072,3222,3500,7.9,1
@@ -48461,6 +48648,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560073,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560073,234,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560073,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560073,234,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560073,500,750,33.3,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560073,236,375,37,0
 2026-05-22-1200,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,560073,258,375,31.2,1
@@ -48908,6 +49096,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-17-0645,2026-07-17,flipkart-minutes,jivo-cold-press-canola-oil-1l,560075,236,375,37,0
 2026-07-18-0645,2026-07-18,flipkart-minutes,jivo-cold-press-canola-oil-1l,560075,234,375,37,0
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560075,245,375,34,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560075,233,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560075,500,750,33.3,0
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560075,236,375,37,0
 2026-07-02-1219,2026-07-02,amazon-now,jivo-cold-pressed-canola-oil-5-litre-5l,560075,1099,1650,33.4,1
@@ -49450,6 +49639,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560077,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560077,233,375,37,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560077,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560077,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560077,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560077,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560077,485,750,35.3,1
@@ -49482,6 +49672,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560077,178,255,30.2,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560077,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560077,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560077,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560077,215,275,21.8,0
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560077,192,275,30.2,0
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560077,195,275,29.1,0
@@ -49863,6 +50054,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-canola-oil-1l,560078,236,375,37,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560078,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560078,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560078,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560078,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560078,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560078,485,750,35.3,1
@@ -50167,6 +50359,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-pomace-olive-oil-1l,560078,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560078,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560078,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560078,419,1049,60,0
 2026-07-02-1219,2026-07-02,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560078,1699,4999,66,1
 2026-07-07-0730,2026-07-07,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560078,1699,4999,66,1
 2026-07-08-0800,2026-07-08,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560078,1699,4999,66,1
@@ -50341,6 +50534,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560079,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560079,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560079,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560079,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560079,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560079,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560079,485,750,35.3,1
@@ -50642,6 +50836,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,560079,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560079,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560079,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560079,419,1049,60,0
 2026-07-10-0758,2026-07-10,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560079,1699,4999,66,1
 2026-07-11-0758,2026-07-11,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560079,1699,4999,66,1
 2026-07-16-0808,2026-07-16,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560079,1699,4999,66,1
@@ -50913,6 +51108,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560081,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560081,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560081,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560081,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560081,485,750,35.3,0
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560081,485,750,35.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560081,485,750,35.3,0
@@ -51137,6 +51333,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,560081,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560081,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560081,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560081,419,1049,60,0
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,560081,2701,4999,46,1
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,560081,2701,4999,46,1
 2026-07-01-1440,2026-07-01,zepto,jivo-pomace-olive-oil-5l,560081,1699,4999,66,1
@@ -51351,6 +51548,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560084,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560084,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560084,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560084,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560084,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560084,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560084,485,750,35.3,1
@@ -51387,6 +51585,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560084,178,255,30.2,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560084,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560084,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560084,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560084,215,275,21.8,0
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560084,192,275,30.2,1
 2026-07-01-1440,2026-07-01,amazon-now,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,560084,1003,1350,25.7,1
@@ -52224,6 +52423,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560086,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560086,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560086,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560086,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560086,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560086,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560086,485,750,35.3,1
@@ -52752,7 +52952,9 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560087,239,375,36.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560087,239,375,36.3,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560087,249,375,33.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-1l,560087,239,375,36.3,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560087,509,750,32.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-canola-cold-pressed-edible-oil-11-litres-1l,560087,469,750,37.5,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560087,1239,1650,24.9,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560087,1207,1650,26.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-canola-cold-pressed-edible-oil-5-litres-5l,560087,1239,1650,24.9,1
@@ -52783,6 +52985,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0645,2026-07-18,flipkart-minutes,jivo-cold-press-canola-oil-1l,560087,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560087,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560087,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560087,234,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560087,500,750,33.3,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560087,250,375,33,0
 2026-05-22-0900,2026-05-22,blinkit,jivo-cold-pressed-canola-oil-1l,560087,258,375,31.2,1
@@ -52937,6 +53140,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-groundnut-oil-5-litre-5l,560087,1019,2800,63.6,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560087,1019,2800,63.6,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560087,1019,2800,63.6,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-groundnut-oil-5-litre-5l,560087,1019,2800,63.6,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560087,418,510,18,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560087,418,510,18,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560087,418,510,18,1
@@ -52973,6 +53177,8 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0707,2026-07-19,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560087,170,255,33.3,1
 2026-07-20-0709,2026-07-20,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560087,170,255,33.3,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560087,170,255,33.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b09nycsqlf,560087,170,255,33.3,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzy91b3,560087,418,815,48.7,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560087,339,404,16.1,1
 2026-06-01-0900,2026-06-01,amazon-fresh,jivo-cold-pressed-kachi-ghani-mustard-oil-1l-with-makki-atta-500g-1l,560087,339,404,16.1,1
 2026-06-26-1250,2026-06-26,amazon-fresh,jivo-cold-pressed-sunflower-oil-combo-pack-5l,560087,1331,1625,18.1,1
@@ -53163,6 +53369,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560087,380,1049,63.8,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560087,380,1049,63.8,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560087,380,1049,63.8,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560087,429,1049,59.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560087,758,1298,41.6,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560087,758,1298,41.6,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-daily-cooking-pomace-olive-oil-1l,560087,858,1298,33.9,1
@@ -53246,6 +53453,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-1-litre-1l,560087,480,1499,68,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560087,480,1499,68,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560087,599,1499,60,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-1-litre-1l,560087,599,1499,60,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,560087,594,1499,60.4,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-1l,560087,594,1499,60.4,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-1l,560087,594,1499,60.4,1
@@ -53300,6 +53508,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-extra-light-olive-oil-2-litre-2l,560087,1089,2799,61.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560087,1089,2799,61.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560087,1089,2799,61.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-light-olive-oil-2-litre-2l,560087,1089,2799,61.1,1
 2026-05-22-0900,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,560087,1190,2799,57.5,1
 2026-05-22-1200,2026-05-22,blinkit,jivo-extra-light-olive-oil-2l,560087,1190,2799,57.5,1
 2026-05-23-0900,2026-05-23,blinkit,jivo-extra-light-olive-oil-2l,560087,1190,2799,57.5,1
@@ -53404,6 +53613,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-06-0910,2026-07-06,amazon-now,jivo-extra-virgin-olive-oil-1-litre-1l,560087,739,1799,58.9,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560087,789,1799,56.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560087,789,1799,56.1,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-extra-virgin-olive-oil-1-litre-1l,560087,789,1799,56.1,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560087,189,299,36.8,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560087,189,299,36.8,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-200ml,560087,189,299,36.8,1
@@ -53499,6 +53709,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0645,2026-07-18,flipkart-minutes,jivo-pomace-olive-oil-1l,560087,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560087,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560087,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560087,419,1049,60,0
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560087,1926,4999,61.5,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560087,1926,4999,61.5,1
 2026-05-31-1600,2026-05-31,amazon-fresh,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560087,1926,4999,61.5,1
@@ -53643,6 +53854,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560087,949,1250,24.1,1
 2026-07-21-0707,2026-07-21,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560087,999,1250,20.1,1
 2026-07-22-0708,2026-07-22,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560087,910,1250,27.2,1
+2026-07-23-0707,2026-07-23,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,560087,873,1250,30.2,1
 2026-07-06-0910,2026-07-06,amazon-now,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-na,560087,873,1250,30.2,1
 2026-05-31-0900,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560087,1170,1505,22.3,1
 2026-05-31-1200,2026-05-31,amazon-fresh,jivo-premium-cold-pressed-kachi-ghani-pure-mustard-oil-5-litre-jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-liter-5l,560087,1170,1505,22.3,1
@@ -53728,6 +53940,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560090,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560090,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560090,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560090,233,375,37,0
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,560090,236,375,37,0
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-canola-oil-1l,560090,264,375,29.6,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-canola-oil-1l,560090,234,375,37.6,1
@@ -53916,6 +54129,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560091,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560091,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560091,234,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560091,234,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560091,485,750,35.3,0
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560091,485,750,35.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560091,485,750,35.3,0
@@ -53966,6 +54180,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-18-0811,2026-07-18,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560091,178,255,30.2,1
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560091,178,255,30.2,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560091,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560091,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560091,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560091,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560091,195,275,29.1,1
@@ -54393,6 +54608,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560092,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560092,234,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560092,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560092,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560092,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560092,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560092,485,750,35.3,1
@@ -55193,6 +55409,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-canola-cold-pressed-oil-1-liters-indian-cooking-oils-na,560095,239,375,36.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560095,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560095,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560095,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560095,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560095,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560095,485,750,35.3,1
@@ -55228,6 +55445,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560095,170,255,33.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560095,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560095,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560095,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560095,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560095,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560095,195,275,29.1,1
@@ -55246,6 +55464,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560095,756,1080,30,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560095,756,1080,30,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560095,756,1080,30,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cooking-sunflower-oil-4l,560095,756,1080,30,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cooking-sunflower-oil-can-4l,560095,745,1080,31,1
 2026-07-14-0808,2026-07-14,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560095,429,1049,59.1,1
 2026-07-15-0810,2026-07-15,amazon-now,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,560095,379,1049,63.9,1
@@ -55604,6 +55823,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-15-0645,2026-07-15,flipkart-minutes,jivo-cold-press-canola-oil-1l,560096,270,375,28,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560096,262,375,30,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560096,251,375,33,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560096,251,375,33,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560096,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560096,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560096,485,750,35.3,0
@@ -56100,6 +56320,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560097,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560097,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560097,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560097,233,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560097,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560097,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560097,485,750,35.3,0
@@ -56154,6 +56375,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-20-0807,2026-07-20,amazon-now,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,560097,170,255,33.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560097,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560097,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560097,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560097,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560097,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560097,195,275,29.1,1
@@ -56592,6 +56814,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560098,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560098,233,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560098,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560098,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560098,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560098,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560098,485,750,35.3,1
@@ -57335,6 +57558,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560100,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560100,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560100,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560100,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560100,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560100,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560100,485,750,35.3,1
@@ -57771,6 +57995,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560102,245,375,34,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560102,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560102,234,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560102,234,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560102,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560102,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560102,485,750,35.3,0
@@ -58660,6 +58885,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560104,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560104,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560104,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560104,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560104,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560104,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560104,485,750,35.3,1
@@ -59012,6 +59238,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,560104,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560104,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560104,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560104,419,1049,60,0
 2026-07-11-0758,2026-07-11,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l,560104,1783,4999,64.3,1
 2026-07-02-1219,2026-07-02,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560104,1699,4999,66,1
 2026-07-03-0555,2026-07-03,amazon-now,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,560104,1699,4999,66,1
@@ -59936,6 +60163,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560109,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560109,233,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560109,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560109,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560109,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560109,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560109,485,750,35.3,1
@@ -60453,6 +60681,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-canola-oil-1l,560110,236,375,37,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560110,233,375,37,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560110,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560110,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560110,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560110,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560110,485,750,35.3,1
@@ -60472,6 +60701,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560110,378,,,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560110,378,,,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560110,378,,,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-combo-canola-oil-2l,560110,378,,,0
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-combo-canola-oil-plastic-bottle-2l,560110,378,,,0
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-canola-oil-1l,560110,254,375,32.3,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-canola-oil-1l,560110,233,375,37.9,1
@@ -60938,6 +61168,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560111,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560111,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560111,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560111,234,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560111,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560111,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560111,485,750,35.3,1
@@ -60959,6 +61190,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-03-0241,2026-07-03,blinkit,jivo-cold-pressed-canola-oil-1l,560111,235,375,37.3,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560111,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560111,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560111,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560111,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560111,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560111,195,275,29.1,1
@@ -61295,6 +61527,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-cold-press-canola-oil-1l,560113,250,375,33,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560113,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560113,234,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560113,234,375,37,1
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560113,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560113,485,750,35.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560113,485,750,35.3,0
@@ -61316,6 +61549,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-03-0241,2026-07-03,blinkit,jivo-cold-pressed-canola-oil-1l,560113,233,375,37.9,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560113,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560113,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,560113,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,560113,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,560113,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,560113,195,275,29.1,1
@@ -61521,6 +61755,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-16-0645,2026-07-16,flipkart-minutes,jivo-pomace-olive-oil-1l,560113,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,560113,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,560113,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,560113,419,1049,60,0
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,560113,2701,4999,46,1
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,560113,2701,4999,46,1
 2026-07-01-1440,2026-07-01,zepto,jivo-pomace-olive-oil-5l,560113,1699,4999,66,1
@@ -61958,6 +62193,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,560115,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,560115,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,560115,234,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,560115,234,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560115,485,750,35.3,0
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560115,485,750,35.3,0
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,560115,485,750,35.3,0
@@ -62638,6 +62874,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,562125,245,375,34,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,562125,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,562125,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,562125,233,375,37,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,562125,236,375,37,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-canola-oil-1l,562125,255,375,32,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-canola-oil-1l,562125,234,375,37.6,1
@@ -62822,6 +63059,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,562130,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,562130,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,562130,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,562130,233,375,37,0
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,562130,500,750,33.3,1
 2026-05-31-1600,2026-05-31,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,562130,256,375,31,0
 2026-06-01-0900,2026-06-01,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,562130,256,375,31,0
@@ -63137,6 +63375,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,562149,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,562149,245,375,34,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,562149,233,375,37,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,562149,233,375,37,0
 2026-06-29-1319,2026-06-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,562149,485,750,35.3,1
 2026-06-30-0633,2026-06-30,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,562149,485,750,35.3,1
 2026-07-01-1440,2026-07-01,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,562149,485,750,35.3,1
@@ -63458,6 +63697,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-cold-press-canola-oil-1l,562157,245,375,34,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-press-canola-oil-1l,562157,245,375,34,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-press-canola-oil-1l,562157,233,375,37,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-press-canola-oil-1l,562157,233,375,37,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,562157,500,750,33.3,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,562157,236,375,37,0
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-canola-oil-1l,562157,255,375,32,1
@@ -63467,6 +63707,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-03-0241,2026-07-03,blinkit,jivo-cold-pressed-canola-oil-1l,562157,234,375,37.6,1
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,562157,255,,,1
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,562157,183,255,28,1
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,562157,183,255,28,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-cold-pressed-sunflower-oil-1l,562157,215,275,21.8,1
 2026-06-30-1024,2026-06-30,blinkit,jivo-cold-pressed-sunflower-oil-1l,562157,192,275,30.2,1
 2026-07-01-1441,2026-07-01,blinkit,jivo-cold-pressed-sunflower-oil-1l,562157,195,275,29.1,1
@@ -63509,6 +63750,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-19-0645,2026-07-19,flipkart-minutes,jivo-pomace-olive-oil-1l,562157,419,1049,60,0
 2026-07-21-0645,2026-07-21,flipkart-minutes,jivo-pomace-olive-oil-1l,562157,419,1049,60,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,jivo-pomace-olive-oil-1l,562157,419,1049,60,0
+2026-07-23-0645,2026-07-23,flipkart-minutes,jivo-pomace-olive-oil-1l,562157,419,1049,60,0
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-5l,562157,1699,4999,66,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,562157,758,2098,63.9,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-pomace-olive-oil-plastic-bottle-1l,562157,419,1049,60,0

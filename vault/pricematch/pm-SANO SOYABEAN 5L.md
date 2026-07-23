@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-22
-observations: 352
+last_seen: 2026-07-23
+observations: 360
 latest_status: NOT_LISTED
-below_days: 18
+below_days: 19
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-22) — ref ₹949 vs live ₹-
-- **Days below reference:** 18 of 44
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-23) — ref ₹949 vs live ₹-
+- **Days below reference:** 19 of 45
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]]
 
-## Ref-vs-live history (352 observations)
+## Ref-vs-live history (360 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -397,6 +397,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-22,flipkart,NOT_LISTED,BAU,949,,,,,,0,false
 2026-07-22,flipkart-minutes,NOT_LISTED,BAU,949,,,,,,0,false
 2026-07-22,zepto,NOT_LISTED,BAU,949,,,,,,0,false
+2026-07-23,amazon,BELOW,BAU,949,939,939,939,-10,-1.05,1,true
+2026-07-23,amazon-fresh,NOT_LISTED,BAU,949,,,,,,0,false
+2026-07-23,amazon-now,NOT_LISTED,BAU,949,,,,,,0,false
+2026-07-23,bigbasket,NOT_LISTED,BAU,949,,,,,,0,false
+2026-07-23,blinkit,NOT_LISTED,BAU,949,,,,,,0,false
+2026-07-23,flipkart,NOT_LISTED,BAU,949,,,,,,0,false
+2026-07-23,flipkart-minutes,NOT_LISTED,BAU,949,,,,,,0,false
+2026-07-23,zepto,NOT_LISTED,BAU,949,,,,,,0,false
 ```
 
 ---
