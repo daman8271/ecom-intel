@@ -43,17 +43,17 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-23).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-24).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 209 | 195 | -6.7 | 🟢 BELOW | BAU | 2026-07-23 |
-| [[Platform - amazon\|amazon-fresh]] | 209 | 187 | -10.53 | 🟢 BELOW | BAU | 2026-07-22 |
-| [[Platform - amazon\|amazon-now]] | 209 | 187 | -10.53 | 🟢 BELOW | BAU | 2026-07-23 |
-| [[Platform - bigbasket\|bigbasket]] | 209 | 177.73 | -14.96 | 🟢 BELOW | BAU | 2026-07-23 |
-| [[Platform - blinkit\|blinkit]] | 209 | 197 | -5.74 | 🟢 BELOW | BAU | 2026-07-23 |
-| [[Platform - flipkart\|flipkart]] | 209 | — | — | ⚪ OOS | BAU | 2026-07-23 |
-| [[Platform - zepto\|zepto]] | 209 | 195 | -6.7 | 🟢 BELOW | BAU | 2026-07-23 |
+| [[Platform - amazon\|amazon]] | 199 | 209 | 5.03 | 🔴 ABOVE | SVD | 2026-07-24 |
+| [[Platform - amazon\|amazon-fresh]] | 199 | 187 | -6.03 | 🟢 BELOW | SVD | 2026-07-24 |
+| [[Platform - amazon\|amazon-now]] | 199 | 187 | -6.03 | 🟢 BELOW | SVD | 2026-07-24 |
+| [[Platform - bigbasket\|bigbasket]] | 199 | 177.73 | -10.69 | 🟢 BELOW | SVD | 2026-07-24 |
+| [[Platform - blinkit\|blinkit]] | 199 | 197 | -1.01 | 🟢 BELOW | SVD | 2026-07-24 |
+| [[Platform - flipkart\|flipkart]] | 199 | — | — | ⚪ OOS | SVD | 2026-07-24 |
+| [[Platform - zepto\|zepto]] | 199 | 195 | -2.01 | 🟢 BELOW | SVD | 2026-07-24 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-23
-observations: 360
+last_seen: 2026-07-24
+observations: 368
 latest_status: OOS
 below_days: 23
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-s
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-07-23) — ref ₹199 vs live ₹-
-- **Days below reference:** 23 of 45
+- **Latest status:** ⚪ out of stock on [[zepto]] (2026-07-24) — ref ₹189 vs live ₹-
+- **Days below reference:** 23 of 46
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]]
 
-## Ref-vs-live history (360 observations)
+## Ref-vs-live history (368 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -405,6 +405,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-23,flipkart,ABOVE,BAU,199,211,211,211,12,6.03,0,true
 2026-07-23,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
 2026-07-23,zepto,OOS,BAU,199,,,,,,0,false
+2026-07-24,amazon,OOS,SVD,189,,,,,,0,false
+2026-07-24,amazon-fresh,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-24,amazon-now,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-24,bigbasket,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-24,blinkit,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-24,flipkart,ABOVE,SVD,189,211,211,211,22,11.64,0,true
+2026-07-24,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
+2026-07-24,zepto,OOS,SVD,189,,,,,,0,false
 ```
 
 ---
