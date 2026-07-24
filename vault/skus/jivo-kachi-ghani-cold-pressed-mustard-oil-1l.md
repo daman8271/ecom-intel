@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-cold-pressed-mustard-oil-1l
-display_name: Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (1 l)
+display_name: Jivo Kachi Ghani Cold Pressed Mustard Oil (1 l)
 platforms:
   - blinkit
 first_seen: 2026-05-21
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Cold Pressed Mustard Oil (Cold Pressed Saaron Da Tel) (1 l)**
+**Jivo Kachi Ghani Cold Pressed Mustard Oil (1 l)**
 
 ## Sold on
 - [[blinkit]] — latest ₹171 (32.9% off)

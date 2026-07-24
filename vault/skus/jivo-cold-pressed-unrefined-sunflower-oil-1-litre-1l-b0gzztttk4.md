@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0gzztttk4
-display_name: Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0gzztttk4
+display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-07-10
-observations: 3
+last_seen: 2026-07-24
+observations: 4
 min_price: 361
-max_price: 361
-latest_price: 361
+max_price: 398
+latest_price: 398
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,24 +19,25 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0gzztttk4**
+**Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹361 (35.5% off)
+- [[amazon-fresh]] — latest ₹398 (28.9% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Hyderabad]]
+[[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Hyderabad]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (3 observations)
+## Price history (4 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-10-0658,2026-07-10,amazon-fresh,Bengaluru,560067,361,560,35.5,1
 2026-07-10-0658,2026-07-10,amazon-fresh,Delhi,110008,361,560,35.5,1
 2026-07-10-0658,2026-07-10,amazon-fresh,Hyderabad,500006,361,560,35.5,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Chennai,600060,398,560,28.9,1
 ```
 
 ---

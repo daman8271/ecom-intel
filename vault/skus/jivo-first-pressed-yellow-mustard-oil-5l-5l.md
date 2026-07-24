@@ -5,8 +5,8 @@ display_name: Jivo First Pressed Yellow Mustard Oil 5L (5 l)
 platforms:
   - amazon-fresh
 first_seen: 2026-06-30
-last_seen: 2026-07-23
-observations: 461
+last_seen: 2026-07-24
+observations: 494
 min_price: 999
 max_price: 1795
 latest_price: 1199
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Kolkata]] · [[Mumbai]] · [[Noida]]
 
-## Runs that observed this SKU (19)
-[[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-22-0708]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
+## Runs that observed this SKU (20)
+[[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-22-0708]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-06-30-0728]]
 
-## Price history (461 observations)
+## Price history (494 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -495,6 +495,39 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-23-0707,2026-07-23,amazon-fresh,Mumbai,400030,1199,1795,33.2,1
 2026-07-23-0707,2026-07-23,amazon-fresh,Mumbai,400033,1199,1795,33.2,1
 2026-07-23-0707,2026-07-23,amazon-fresh,Mumbai,400067,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Bengaluru,560036,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Kolkata,700001,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Kolkata,700015,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Kolkata,700019,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Kolkata,700069,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Kolkata,700100,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Kolkata,700107,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400001,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400002,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400003,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400004,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400005,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400006,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400007,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400008,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400009,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400010,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400011,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400012,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400013,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400014,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400015,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400016,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400017,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400018,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400019,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400020,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400021,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400022,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400025,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400026,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400030,1199,1795,33.2,1
+2026-07-24-0707,2026-07-24,amazon-fresh,Mumbai,400033,1199,1795,33.2,1
 ```
 
 ---
