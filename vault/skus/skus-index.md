@@ -598,7 +598,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 ## [[amazon-fresh]] (111)
 - [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil 1l
 - [[jivo-canola-cold-press-edible-oil-5-litre-jivo-chemicalfree-sunflower-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre Jivo Chemicalfree Sunflower Oil 5 Litre 5l
-- [[jivo-canola-cold-press-edible-oil-5-litre-jivo-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Kachi Ghani mustard Oil 5 Litre
+- [[jivo-canola-cold-press-edible-oil-5-litre-jivo-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre Jivo Kachi Ghani Mustard Oil 5 Litre 5l
 - [[jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l]] — Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)
 - [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l]] — Jivo Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l
@@ -683,9 +683,9 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-pure-extra-virgin-coconut-oil-1-litre-1l]] — Jivo Pure Extra Virgin Coconut Oil 1 Litre
 - [[jivo-pure-extra-virgin-coconut-oil-500-ml-500ml]] — Jivo Pure Extra Virgin Coconut Oil 500 Ml 500ml
 - [[jivo-raw-basil-seeds-for-weight-loss-200gm-200ml]] — Jivo Raw Basil Seeds For Weight Loss 200gm 200ml
-- [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] — Jivo Rice Bran Oil 1 Litre Cooking Oil
-- [[jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0dbhq2qww]] — Jivo Rice Bran Oil 1 Litre Cooking Oil 1l B0dbhq2qww
-- [[jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0gg7tpqwp]] — Jivo Rice Bran Oil 1 Litre Cooking Oil 1l B0gg7tpqwp
+- [[jivo-rice-bran-oil-1-litre-cooking-oil-1l]] — Jivo Rice Bran Oil 1 Litre Cooking Oil 1l
+- [[jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0dbhq2qww]] — Jivo Rice Bran Oil 1 Litre Cooking Oil
+- [[jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0gg7tpqwp]] — Jivo Rice Bran Oil 1 Litre Cooking Oil
 - [[jivo-rice-bran-oil-4-litre-4l]] — Jivo Rice Bran Oil 4 Litre 4l
 - [[jivo-rice-bran-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Rice Bran Oil 5 Litre + 1 Litre Combo Pack
 - [[jivo-rice-bran-oil-5-litre-5l]] — Jivo Rice Bran Oil 5 Litre

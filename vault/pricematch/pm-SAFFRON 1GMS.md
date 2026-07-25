@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-24
-observations: 368
+last_seen: 2026-07-25
+observations: 376
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-pure-kashmiri-saffron-a-grade-kesar-rich-in-antioxidants-boos
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-24) — ref ₹499 vs live ₹-
-- **Days below reference:** 0 of 46
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-25) — ref ₹499 vs live ₹-
+- **Days below reference:** 0 of 47
 
-## Ref-vs-live history (368 observations)
+## Ref-vs-live history (376 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -412,6 +412,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-24,flipkart,OOS,SVD,499,,,,,,0,false
 2026-07-24,flipkart-minutes,NOT_LISTED,SVD,499,,,,,,0,false
 2026-07-24,zepto,NOT_LISTED,SVD,499,,,,,,0,false
+2026-07-25,amazon,OOS,SVD,499,,,,,,0,false
+2026-07-25,amazon-fresh,NOT_LISTED,SVD,499,,,,,,0,false
+2026-07-25,amazon-now,NOT_LISTED,SVD,499,,,,,,0,false
+2026-07-25,bigbasket,NOT_LISTED,SVD,499,,,,,,0,false
+2026-07-25,blinkit,NOT_LISTED,SVD,499,,,,,,0,false
+2026-07-25,flipkart,OOS,SVD,499,,,,,,0,false
+2026-07-25,flipkart-minutes,NOT_LISTED,SVD,499,,,,,,0,false
+2026-07-25,zepto,NOT_LISTED,SVD,499,,,,,,0,false
 ```
 
 ---
