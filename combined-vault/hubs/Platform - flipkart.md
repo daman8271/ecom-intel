@@ -55,7 +55,7 @@ Up: [[Home]]
 - [[EXTRA LIGHT 1+1+1L]]
 - [[EXTRA LIGHT 1+1L]] — ref ₹1189 / live ₹— (⚪ OOS)
 - [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹— (⚪ OOS)
-- [[EXTRA LIGHT 2L]] — ref ₹1129 / live ₹959 (🟢 BELOW)
+- [[EXTRA LIGHT 2L]] — ref ₹1129 / live ₹1799 (🔴 ABOVE)
 - [[EXTRA LIGHT 3L]] — ref ₹1789 / live ₹— (⚪ OOS)
 - [[EXTRA LIGHT 5L]] — ref ₹2599 / live ₹2377 (🟢 BELOW)
 - [[EXTRA VIRGIN 1+1L]] — ref ₹1589 / live ₹1121 (🟢 BELOW)
@@ -63,7 +63,7 @@ Up: [[Home]]
 - [[EXTRA VIRGIN 200ML]] — ref ₹189 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 250ML]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 2L]] — ref ₹1589 / live ₹1121 (🟢 BELOW)
-- [[EXTRA VIRGIN 500ML]] — ref ₹409 / live ₹347 (🟢 BELOW)
+- [[EXTRA VIRGIN 500ML]] — ref ₹409 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 5L]] — ref ₹3599 / live ₹3362 (🟢 BELOW)
 - [[FLAX SEEDS 200G]] — ref ₹89 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 400 GM]] — ref ₹179 / live ₹— (⚪ OOS)

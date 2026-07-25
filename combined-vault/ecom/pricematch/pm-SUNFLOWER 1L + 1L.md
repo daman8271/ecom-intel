@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-24
-observations: 368
+last_seen: 2026-07-25
+observations: 376
 latest_status: NOT_LISTED
-below_days: 13
+below_days: 14
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cold-pressed-chemical-free-sunflower-oil-1-litre-ideal-for-ro
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-24) — ref ₹429 vs live ₹-
-- **Days below reference:** 13 of 46
-- **Below on:** [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-24]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-25) — ref ₹429 vs live ₹-
+- **Days below reference:** 14 of 47
+- **Below on:** [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-24]] · [[2026-07-25]]
 
-## Ref-vs-live history (368 observations)
+## Ref-vs-live history (376 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -413,6 +413,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-24,flipkart,NOT_LISTED,SVD,429,,,,,,0,false
 2026-07-24,flipkart-minutes,NOT_LISTED,SVD,429,,,,,,0,false
 2026-07-24,zepto,NOT_LISTED,SVD,429,,,,,,0,false
+2026-07-25,amazon,BELOW,SVD,429,359,359,359,-70,-16.32,1,true
+2026-07-25,amazon-fresh,NOT_LISTED,SVD,429,,,,,,0,false
+2026-07-25,amazon-now,NOT_LISTED,SVD,429,,,,,,0,false
+2026-07-25,bigbasket,NOT_LISTED,SVD,429,,,,,,0,false
+2026-07-25,blinkit,NOT_LISTED,SVD,429,,,,,,0,false
+2026-07-25,flipkart,NOT_LISTED,SVD,429,,,,,,0,false
+2026-07-25,flipkart-minutes,NOT_LISTED,SVD,429,,,,,,0,false
+2026-07-25,zepto,NOT_LISTED,SVD,429,,,,,,0,false
 ```
 
 ---

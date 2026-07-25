@@ -24,7 +24,7 @@ Up: [[Home]]
 
 ## Member products
 - [[BLUEBERRY 200ML]]
-- [[CANOLA 1L]] — ref ₹239 / live ₹284.04 (🔴 ABOVE)
+- [[CANOLA 1L]] — ref ₹239 / live ₹288.65 (🔴 ABOVE)
 - [[CANOLA 1L POUCH]] — ref ₹259 / live ₹241.47 (🟢 BELOW)
 - [[CANOLA 5L]] — ref ₹1099 / live ₹1366 (🔴 ABOVE)
 - [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹743.85 (🔴 ABOVE)

@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-24
-observations: 368
+last_seen: 2026-07-25
+observations: 376
 latest_status: ABOVE
 below_days: 34
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-24) — ref ₹1099 vs live ₹1210
-- **Days below reference:** 34 of 46
+- **Latest status:** 🟢 above ref on [[zepto]] (2026-07-25) — ref ₹1099 vs live ₹1210
+- **Days below reference:** 34 of 47
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-19]] · [[2026-06-20]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-07]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-20]] · [[2026-07-21]]
 
-## Ref-vs-live history (368 observations)
+## Ref-vs-live history (376 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -413,6 +413,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-24,flipkart,ABOVE,SVD,1099,1200,1200,1200,101,9.19,0,true
 2026-07-24,flipkart-minutes,NOT_LISTED,SVD,1099,,,,,,0,false
 2026-07-24,zepto,ABOVE,SVD,1099,1210,1206,1534,111,10.1,0,true
+2026-07-25,amazon,MATCH,SVD,1099,1099,1099,1099,0,0,0,true
+2026-07-25,amazon-fresh,MATCH,SVD,1099,1099,1099,1159,0,0,0,true
+2026-07-25,amazon-now,ABOVE,SVD,1099,1159,1159,1270,60,5.46,0,true
+2026-07-25,bigbasket,ABOVE,SVD,1099,1366,1270,1600,267,24.29,0,true
+2026-07-25,blinkit,ABOVE,SVD,1099,1153,1153,1441,54,4.91,0,true
+2026-07-25,flipkart,ABOVE,SVD,1099,1200,1200,1200,101,9.19,0,true
+2026-07-25,flipkart-minutes,NOT_LISTED,SVD,1099,,,,,,0,false
+2026-07-25,zepto,ABOVE,SVD,1099,1210,1206,1534,111,10.1,0,true
 ```
 
 ---
