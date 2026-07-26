@@ -5,8 +5,8 @@ display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-07-25
-observations: 19
+last_seen: 2026-07-26
+observations: 26
 min_price: 361
 max_price: 398
 latest_price: 374
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (19 observations)
+## Price history (26 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -53,6 +53,13 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-25-0705,2026-07-25,amazon-fresh,Kolkata,700040,374,560,33.2,1
 2026-07-25-0705,2026-07-25,amazon-fresh,Kolkata,700053,374,560,33.2,1
 2026-07-25-0705,2026-07-25,amazon-fresh,Kolkata,700069,374,560,33.2,1
+2026-07-26-0708,2026-07-26,amazon-fresh,Chennai,600060,374,560,33.2,1
+2026-07-26-0708,2026-07-26,amazon-fresh,Hyderabad,500001,374,560,33.2,1
+2026-07-26-0708,2026-07-26,amazon-fresh,Hyderabad,500006,374,560,33.2,1
+2026-07-26-0708,2026-07-26,amazon-fresh,Kolkata,700001,374,560,33.2,1
+2026-07-26-0708,2026-07-26,amazon-fresh,Kolkata,700009,374,560,33.2,1
+2026-07-26-0708,2026-07-26,amazon-fresh,Kolkata,700022,374,560,33.2,1
+2026-07-26-0708,2026-07-26,amazon-fresh,Kolkata,700069,374,560,33.2,1
 ```
 
 ---
