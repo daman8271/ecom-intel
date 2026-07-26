@@ -24,11 +24,11 @@ Up: [[Home]]
 
 ## Member products
 - [[CANOLA 1L]] — ref ₹239 / live ₹239 (🟦 MATCH)
-- [[CANOLA 5L]] — ref ₹1099 / live ₹1153 (🔴 ABOVE)
-- [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹564 (🟢 BELOW)
-- [[EXTRA LIGHT 2L]] — ref ₹1129 / live ₹1104 (🟢 BELOW)
+- [[CANOLA 5L]] — ref ₹1099 / live ₹1193 (🔴 ABOVE)
+- [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹480 (🟢 BELOW)
+- [[EXTRA LIGHT 2L]] — ref ₹1129 / live ₹1122 (🟢 BELOW)
 - [[JIVO POMACE 1L]] — ref ₹419 / live ₹380 (🟢 BELOW)
 - [[JIVO POMACE 5L]] — ref ₹1899 / live ₹1685 (🟢 BELOW)
 - [[MUSTARD 1L]] — ref ₹199 / live ₹171 (🟢 BELOW)
 - [[MUSTARD 5L]] — ref ₹949 / live ₹868 (🟢 BELOW)
-- [[SUNFLOWER 1L]] — ref ₹199 / live ₹197 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹199 / live ₹195 (🟢 BELOW)

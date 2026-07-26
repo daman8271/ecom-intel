@@ -39,7 +39,7 @@ Up: [[Home]]
 - [[CANOLA 1L POUCH]] — ref ₹259 / live ₹235 (🟢 BELOW)
 - [[CANOLA 1L+MUSTARD 1L]]
 - [[CANOLA 2L]]
-- [[CANOLA 3L]] — ref ₹769 / live ₹— (⚪ OOS)
+- [[CANOLA 3L]] — ref ₹769 / live ₹669 (🟢 BELOW)
 - [[CANOLA 4L]] — ref ₹1149 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
@@ -67,7 +67,7 @@ Up: [[Home]]
 - [[EXTRA LIGHT 2L]] — ref ₹1189 / live ₹1049 (🟢 BELOW)
 - [[EXTRA LIGHT 3L]] — ref ₹1789 / live ₹1549 (🟢 BELOW)
 - [[EXTRA LIGHT 500ML]] — ref ₹339 / live ₹329 (🟢 BELOW)
-- [[EXTRA LIGHT 5L]] — ref ₹2599 / live ₹2467 (🟢 BELOW)
+- [[EXTRA LIGHT 5L]] — ref ₹2599 / live ₹2599 (🟦 MATCH)
 - [[EXTRA VIRGIN 1+1L]] — ref ₹1589 / live ₹1530 (🟢 BELOW)
 - [[EXTRA VIRGIN 1L]] — ref ₹779 / live ₹779 (🟦 MATCH)
 - [[EXTRA VIRGIN 200ML]] — ref ₹189 / live ₹189 (🟦 MATCH)
@@ -82,15 +82,15 @@ Up: [[Home]]
 - [[GINGER ALE 200ML]] — ref ₹39 / live ₹— (⚪ OOS)
 - [[GOLD 1+1]] — ref ₹369 / live ₹379 (🔴 ABOVE)
 - [[GOLD 1L]] — ref ₹189 / live ₹— (⚪ OOS)
-- [[GOLD 5L]] — ref ₹939 / live ₹— (⚪ OOS)
+- [[GOLD 5L]] — ref ₹939 / live ₹803 (🟢 BELOW)
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹479 (🟦 MATCH)
 - [[GROUNDNUT 1L]] — ref ₹219 / live ₹199 (🟢 BELOW)
 - [[GROUNDNUT 5+1L]]
-- [[GROUNDNUT 5L]] — ref ₹1139 / live ₹1088 (🟢 BELOW)
+- [[GROUNDNUT 5L]] — ref ₹1139 / live ₹1099 (🟢 BELOW)
 - [[JEERA JUICE]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 1+1+1L]]
-- [[JIVO POMACE 1+1L]] — ref ₹849 / live ₹774 (🟢 BELOW)
-- [[JIVO POMACE 1L]] — ref ₹419 / live ₹387 (🟢 BELOW)
+- [[JIVO POMACE 1+1L]] — ref ₹849 / live ₹838 (🟢 BELOW)
+- [[JIVO POMACE 1L]] — ref ₹419 / live ₹419 (🟦 MATCH)
 - [[JIVO POMACE 2L]] — ref ₹849 / live ₹849 (🟦 MATCH)
 - [[JIVO POMACE 5L]] — ref ₹1899 / live ₹1699 (🟢 BELOW)
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — ref ₹219 / live ₹— (⚪ OOS)
@@ -99,11 +99,11 @@ Up: [[Home]]
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
 - [[MUSTARD 1+1L]] — ref ₹409 / live ₹359 (🟢 BELOW)
-- [[MUSTARD 1L]] — ref ₹199 / live ₹163 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹— (⚪ OOS)
-- [[MUSTARD 5L]] — ref ₹949 / live ₹— (⚪ OOS)
+- [[MUSTARD 5L]] — ref ₹949 / live ₹873 (🟢 BELOW)
 - [[POMACE 3L]] — ref ₹1279 / live ₹1199 (🟢 BELOW)
 - [[PUMPKIN SEEDS 200G]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[PUMPKIN SEEDS 400G]] — ref ₹389 / live ₹— (⚪ OOS)
@@ -129,7 +129,7 @@ Up: [[Home]]
 - [[SANO MUSTARD 5L]] — ref ₹949 / live ₹— (⚪ OOS)
 - [[SANO POMACE 1+1L]]
 - [[SANO POMACE 1L]] — ref ₹399 / live ₹379 (🟢 BELOW)
-- [[SANO POMACE 5L]] — ref ₹1969 / live ₹1799 (🟢 BELOW)
+- [[SANO POMACE 5L]] — ref ₹1969 / live ₹1499 (🟢 BELOW)
 - [[SANO SOYABEAN 1L]] — ref ₹189 / live ₹— (⚪ OOS)
 - [[SANO SOYABEAN 5L]] — ref ₹899 / live ₹889 (🟢 BELOW)
 - [[SANO SUNFLOWER 1L]] — ref ₹209 / live ₹— (⚪ OOS)
@@ -168,4 +168,4 @@ Up: [[Home]]
 - [[WG MOJITO SF 200ML]]
 - [[WG ROSE 200ML]]
 - [[YELLOW MUSTARD 1L]] — ref ₹259 / live ₹239 (🟢 BELOW)
-- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹999 (🟢 BELOW)
+- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹— (⚪ OOS)

@@ -27,7 +27,7 @@ Up: [[Home]]
 - [[CANOLA 1L]] — ref ₹239 / live ₹288.65 (🔴 ABOVE)
 - [[CANOLA 1L POUCH]] — ref ₹259 / live ₹241.47 (🟢 BELOW)
 - [[CANOLA 5L]] — ref ₹1099 / live ₹1366 (🔴 ABOVE)
-- [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹743.85 (🔴 ABOVE)
+- [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹717.75 (🔴 ABOVE)
 - [[EXTRA LIGHT 2L]] — ref ₹1129 / live ₹1343 (🔴 ABOVE)
 - [[EXTRA VIRGIN 1L]] — ref ₹779 / live ₹1012 (🔴 ABOVE)
 - [[JIVO POMACE 1L]] — ref ₹419 / live ₹548.25 (🔴 ABOVE)
