@@ -7,7 +7,7 @@ platforms:
   - zepto
 pincodes: 35
 skus: 23
-observations: 6663
+observations: 6667
 tags:
   - type/city-hub
   - platform/blinkit
@@ -28,7 +28,7 @@ Up: [[locations-index]]
 ## SKUs available in Nagpur (23)
 [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]]
 
-## Observations (6663 rows)
+## Observations (6667 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -1176,6 +1176,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-24-0645,2026-07-24,flipkart-minutes,jivo-pomace-olive-oil-1l,440008,430,1049,59,1
 2026-07-25-0645,2026-07-25,flipkart-minutes,jivo-pomace-olive-oil-1l,440008,430,1049,59,1
 2026-07-26-0645,2026-07-26,flipkart-minutes,jivo-pomace-olive-oil-1l,440008,430,1049,59,1
+2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-pomace-olive-oil-1l,440008,430,1049,59,1
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,440008,2701,4999,46,0
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,440008,2701,4999,46,0
 2026-07-01-1440,2026-07-01,zepto,jivo-pomace-olive-oil-5l,440008,1699,4999,66,0
@@ -6104,6 +6105,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-24-0645,2026-07-24,flipkart-minutes,jivo-pomace-olive-oil-1l,440037,430,1049,59,1
 2026-07-25-0645,2026-07-25,flipkart-minutes,jivo-pomace-olive-oil-1l,440037,430,1049,59,1
 2026-07-26-0645,2026-07-26,flipkart-minutes,jivo-pomace-olive-oil-1l,440037,430,1049,59,1
+2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-pomace-olive-oil-1l,440037,430,1049,59,1
 2026-06-29-1203,2026-06-29,blinkit,jivo-pomace-olive-oil-5l,440037,1917,4999,61.7,1
 2026-06-29-1319,2026-06-29,zepto,jivo-pomace-olive-oil-5l,440037,2701,4999,46,0
 2026-06-30-0633,2026-06-30,zepto,jivo-pomace-olive-oil-5l,440037,2701,4999,46,0
@@ -6639,6 +6641,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-24-0645,2026-07-24,flipkart-minutes,jivo-pomace-olive-oil-1l,441305,430,1049,59,1
 2026-07-25-0645,2026-07-25,flipkart-minutes,jivo-pomace-olive-oil-1l,441305,430,1049,59,1
 2026-07-26-0645,2026-07-26,flipkart-minutes,jivo-pomace-olive-oil-1l,441305,430,1049,59,1
+2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-pomace-olive-oil-1l,441305,430,1049,59,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-5l,441305,1699,4999,66,0
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,441305,758,2098,63.9,0
 2026-07-13-0944,2026-07-13,zepto,jivo-refine-canola-oil-tin-15l,441305,3500,3500,0,0
@@ -6695,6 +6698,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-24-0645,2026-07-24,flipkart-minutes,jivo-pomace-olive-oil-1l,441502,430,1049,59,1
 2026-07-25-0645,2026-07-25,flipkart-minutes,jivo-pomace-olive-oil-1l,441502,430,1049,59,1
 2026-07-26-0645,2026-07-26,flipkart-minutes,jivo-pomace-olive-oil-1l,441502,430,1049,59,1
+2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-pomace-olive-oil-1l,441502,430,1049,59,1
 ```
 
 ---
