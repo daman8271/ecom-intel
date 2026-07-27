@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l-b0gzzy91b3
-display_name: Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l b0gzzy91b3
+display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre"
 platforms:
   - amazon-fresh
 first_seen: 2026-06-12
-last_seen: 2026-07-25
-observations: 172
+last_seen: 2026-07-27
+observations: 186
 min_price: 354
 max_price: 418
-latest_price: 362
+latest_price: 382
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre 1l b0gzzy91b3**
+**Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹362 (55.6% off)
+- [[amazon-fresh]] — latest ₹382 (53.1% off)
 
 ## Available in cities
-[[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Noida]]
+[[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Noida]] · [[Vijayawada]]
 
-## Runs that observed this SKU (13)
-[[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
+## Runs that observed this SKU (14)
+[[amazon-fresh-2026-07-27-0707]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
 
-## Price history (172 observations)
+## Price history (186 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -206,6 +206,20 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-25-0705,2026-07-25,amazon-fresh,Noida,201310,362,815,55.6,1
 2026-07-25-0705,2026-07-25,amazon-fresh,Noida,201311,362,815,55.6,1
 2026-07-25-0705,2026-07-25,amazon-fresh,Noida,201318,362,815,55.6,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Chennai,600016,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Chennai,600025,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Chennai,600083,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Delhi,110017,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Hyderabad,500002,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Hyderabad,500003,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Hyderabad,500024,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Hyderabad,500066,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Kolkata,700024,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Kolkata,700037,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Kolkata,700040,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Kolkata,700053,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Vijayawada,520001,382,815,53.1,1
+2026-07-27-0707,2026-07-27,amazon-fresh,Vijayawada,520002,382,815,53.1,1
 ```
 
 ---
