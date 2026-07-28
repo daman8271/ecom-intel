@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: cold-press-kachi-ghani-mustard-oil-1l
-display_name: Cold Press Kachi Ghani Mustard Oil (1 L)
+display_name: Cold Press Kachi Ghani Mustard Oil 1l
 platforms:
   - bigbasket
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Cold Press Kachi Ghani Mustard Oil (1 L)**
+**Cold Press Kachi Ghani Mustard Oil 1l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹202.09 (20.7% off)

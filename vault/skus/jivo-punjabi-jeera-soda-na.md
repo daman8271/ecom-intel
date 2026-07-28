@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-punjabi-jeera-soda-na
-display_name: Jivo Punjabi Jeera Soda (1 pack (24 pcs))
+display_name: Jivo Punjabi Jeera Soda Na
 platforms:
   - zepto
 first_seen: 2026-07-11
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Punjabi Jeera Soda (1 pack (24 pcs))**
+**Jivo Punjabi Jeera Soda Na**
 
 ## Sold on
 - [[zepto]] — latest ₹420 (12.5% off)

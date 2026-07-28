@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-olive-oil-extra-virgin-200ml
-display_name: Jivo Olive Oil Extra Virgin (1 pack (200 ml))
+display_name: Jivo Olive Oil Extra Virgin 200ml
 platforms:
   - zepto
 first_seen: 2026-07-13
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Olive Oil Extra Virgin (1 pack (200 ml))**
+**Jivo Olive Oil Extra Virgin 200ml**
 
 ## Sold on
 - [[zepto]] — latest ₹299
