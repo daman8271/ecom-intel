@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: canola-oil-cold-pressed-5l
-display_name: Canola Oil - Cold Pressed (5 L)
+display_name: Canola Oil Cold Pressed 5l
 platforms:
   - bigbasket
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Canola Oil - Cold Pressed (5 L)**
+**Canola Oil Cold Pressed 5l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹1574 (4.6% off)

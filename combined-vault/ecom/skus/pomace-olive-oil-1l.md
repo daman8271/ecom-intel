@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: pomace-olive-oil-1l
-display_name: Pomace Olive Oil (1 L)
+display_name: Pomace Olive Oil 1l
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Pomace Olive Oil (1 L)**
+**Pomace Olive Oil 1l**
 
 ## Sold on
 - [[bigbasket]] — latest ₹548.25 (47.7% off)

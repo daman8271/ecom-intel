@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-27
-observations: 392
+last_seen: 2026-07-28
+observations: 400
 latest_status: NOT_LISTED
 below_days: 7
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-prote
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-27) — ref ₹119 vs live ₹-
-- **Days below reference:** 7 of 49
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-28) — ref ₹119 vs live ₹-
+- **Days below reference:** 7 of 50
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-20]] · [[2026-07-27]]
 
-## Ref-vs-live history (392 observations)
+## Ref-vs-live history (400 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -437,6 +437,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-27,flipkart,NOT_LISTED,BAU,119,,,,,,0,false
 2026-07-27,flipkart-minutes,NOT_LISTED,BAU,119,,,,,,0,false
 2026-07-27,zepto,NOT_LISTED,BAU,119,,,,,,0,false
+2026-07-28,amazon,MATCH,BAU,119,119,119,119,0,0,0,true
+2026-07-28,amazon-fresh,NOT_LISTED,BAU,119,,,,,,0,false
+2026-07-28,amazon-now,NOT_LISTED,BAU,119,,,,,,0,false
+2026-07-28,bigbasket,NOT_LISTED,BAU,119,,,,,,0,false
+2026-07-28,blinkit,NOT_LISTED,BAU,119,,,,,,0,false
+2026-07-28,flipkart,NOT_LISTED,BAU,119,,,,,,0,false
+2026-07-28,flipkart-minutes,NOT_LISTED,BAU,119,,,,,,0,false
+2026-07-28,zepto,NOT_LISTED,BAU,119,,,,,,0,false
 ```
 
 ---

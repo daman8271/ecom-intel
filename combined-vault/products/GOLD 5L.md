@@ -39,15 +39,15 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-27).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-07-28).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 989 | — | — | ⚪ OOS | BAU | 2026-07-27 |
-| [[Platform - amazon\|amazon-fresh]] | 989 | 859 | -13.14 | 🟢 BELOW | BAU | 2026-07-27 |
-| [[Platform - amazon\|amazon-now]] | 989 | 845 | -14.56 | 🟢 BELOW | BAU | 2026-07-27 |
-| [[Platform - flipkart\|flipkart]] | 989 | — | — | ⚪ OOS | BAU | 2026-07-27 |
-| [[Platform - zepto\|zepto]] | 989 | — | — | ⚪ OOS | BAU | 2026-07-27 |
+| [[Platform - amazon\|amazon]] | 989 | — | — | ⚪ OOS | BAU | 2026-07-28 |
+| [[Platform - amazon\|amazon-fresh]] | 989 | 859 | -13.14 | 🟢 BELOW | BAU | 2026-07-28 |
+| [[Platform - amazon\|amazon-now]] | 989 | 899 | -9.1 | 🟢 BELOW | BAU | 2026-07-28 |
+| [[Platform - flipkart\|flipkart]] | 989 | — | — | ⚪ OOS | BAU | 2026-07-28 |
+| [[Platform - zepto\|zepto]] | 989 | — | — | ⚪ OOS | BAU | 2026-07-28 |
 
 ## JIVO lens
 *TIER-LEVEL (Commodity) 2026 sell-through from target-history — shared across all Commodity products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*
