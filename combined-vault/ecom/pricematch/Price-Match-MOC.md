@@ -1,20 +1,21 @@
 ---
 type: moc
 title: Price Match
-days: 52
+days: 53
 skus_tracked: 113
 tags:
   - moc
   - type/pricematch-moc
 ---
 
-# Price Match — Map of Content (52 days)
+# Price Match — Map of Content (53 days)
 
 Up: [[index]]
 
 Compliance history — reference (regime) price vs live across platforms. Each day links its top offenders; each SKU links its full ref-vs-live timeline.
 
 ## Daily notes — newest first
+- [[pricematch-2026-07-29]] — 2026-07-29
 - [[pricematch-2026-07-28]] — 2026-07-28
 - [[pricematch-2026-07-27]] — 2026-07-27
 - [[pricematch-2026-07-26]] — 2026-07-26
@@ -124,32 +125,33 @@ date,regime,below,above,match,exposure,store_violations,listings
 2026-07-26,SVD,94,36,23,6623,10280,904
 2026-07-27,BAU,115,24,6,9605,12434,904
 2026-07-28,BAU,98,23,21,7307,10763,904
+2026-07-29,BAU,97,23,17,6921,10923,904
 ```
 
 ## Worst recurring offenders (20)
 
 | SKU | Days below | Exposure ₹ | Platforms |
 |---|--:|--:|---|
-| [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] | 50 | 63948 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
+| [[pm-JIVO POMACE 5L|JIVO POMACE 5L]] | 51 | 64957 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
+| [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] | 51 | 25674 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[zepto]] |
+| [[pm-EXTRA LIGHT 1L|EXTRA LIGHT 1L]] | 51 | 22578 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[zepto]] |
+| [[pm-MUSTARD 5L|MUSTARD 5L]] | 51 | 21681 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart-minutes]] · [[zepto]] |
+| [[pm-JIVO POMACE 1L|JIVO POMACE 1L]] | 51 | 14392 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
+| [[pm-EXTRA LIGHT 1+1L|EXTRA LIGHT 1+1L]] | 51 | 13951 | [[amazon]] · [[zepto]] |
+| [[pm-JIVO POMACE 1L + 1L|JIVO POMACE 1L + 1L]] | 51 | 13303 | [[amazon]] · [[flipkart]] · [[zepto]] |
+| [[pm-MUSTARD 1L|MUSTARD 1L]] | 51 | 9839 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
+| [[pm-SUNFLOWER 1L|SUNFLOWER 1L]] | 51 | 8517 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[zepto]] |
+| [[pm-CANOLA 1+1L|CANOLA 1+1L]] | 51 | 8295 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[flipkart]] · [[zepto]] |
+| [[pm-GROUNDNUT 1L|GROUNDNUT 1L]] | 51 | 6219 | [[amazon]] · [[amazon-now]] · [[flipkart]] · [[zepto]] |
+| [[pm-EXTRA VIRGIN 2L|EXTRA VIRGIN 2L]] | 50 | 30217 | [[amazon]] · [[flipkart]] |
 | [[pm-SANO POMACE 5L|SANO POMACE 5L]] | 50 | 27687 | [[amazon]] · [[flipkart]] |
-| [[pm-EXTRA LIGHT 2L|EXTRA LIGHT 2L]] | 50 | 25546 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[flipkart]] · [[zepto]] |
-| [[pm-EXTRA LIGHT 1L|EXTRA LIGHT 1L]] | 50 | 22102 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[blinkit]] · [[zepto]] |
-| [[pm-MUSTARD 5L|MUSTARD 5L]] | 50 | 21048 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart-minutes]] · [[zepto]] |
-| [[pm-JIVO POMACE 1L|JIVO POMACE 1L]] | 50 | 14098 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
-| [[pm-EXTRA LIGHT 1+1L|EXTRA LIGHT 1+1L]] | 50 | 13552 | [[amazon]] · [[zepto]] |
-| [[pm-JIVO POMACE 1L + 1L|JIVO POMACE 1L + 1L]] | 50 | 13085 | [[amazon]] · [[flipkart]] · [[zepto]] |
-| [[pm-MUSTARD 1L|MUSTARD 1L]] | 50 | 9634 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]] |
-| [[pm-SUNFLOWER 1L|SUNFLOWER 1L]] | 50 | 8412 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[zepto]] |
-| [[pm-CANOLA 1+1L|CANOLA 1+1L]] | 50 | 8076 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[flipkart]] · [[zepto]] |
-| [[pm-GROUNDNUT 1L|GROUNDNUT 1L]] | 50 | 6159 | [[amazon]] · [[amazon-now]] · [[flipkart]] · [[zepto]] |
-| [[pm-EXTRA VIRGIN 2L|EXTRA VIRGIN 2L]] | 49 | 29719 | [[amazon]] · [[flipkart]] |
-| [[pm-POMACE 3L|POMACE 3L]] | 49 | 13223 | [[amazon]] · [[flipkart]] |
-| [[pm-EXTRA VIRGIN 1L + 1L|EXTRA VIRGIN 1L + 1L]] | 49 | 12382 | [[amazon]] · [[flipkart]] |
-| [[pm-EXTRA VIRGIN 5L|EXTRA VIRGIN 5L]] | 48 | 39744 | [[amazon]] · [[flipkart]] · [[zepto]] |
-| [[pm-EXTRA LIGHT 5L|EXTRA LIGHT 5L]] | 48 | 24966 | [[amazon]] · [[flipkart]] |
-| [[pm-CANOLA 1L|CANOLA 1L]] | 48 | 3247 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] |
-| [[pm-GOLD 5L|GOLD 5L]] | 47 | 10348 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[flipkart]] |
-| [[pm-EXTRA VIRGIN 500ML|EXTRA VIRGIN 500ML]] | 47 | 2776 | [[amazon]] · [[flipkart]] |
+| [[pm-POMACE 3L|POMACE 3L]] | 50 | 13422 | [[amazon]] · [[flipkart]] |
+| [[pm-EXTRA VIRGIN 1L + 1L|EXTRA VIRGIN 1L + 1L]] | 50 | 12393 | [[amazon]] · [[flipkart]] |
+| [[pm-EXTRA VIRGIN 5L|EXTRA VIRGIN 5L]] | 49 | 40181 | [[amazon]] · [[flipkart]] · [[zepto]] |
+| [[pm-EXTRA LIGHT 5L|EXTRA LIGHT 5L]] | 49 | 25086 | [[amazon]] · [[flipkart]] |
+| [[pm-CANOLA 1L|CANOLA 1L]] | 49 | 3303 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] |
+| [[pm-GOLD 5L|GOLD 5L]] | 48 | 10568 | [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[flipkart]] |
+| [[pm-EXTRA VIRGIN 500ML|EXTRA VIRGIN 500ML]] | 48 | 2848 | [[amazon]] · [[flipkart]] |
 
 ---
 *Auto-generated by `tools/vault_build.py` from `data/*/history.csv` - see [[VAULT-SPEC]].*

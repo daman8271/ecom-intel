@@ -5,8 +5,8 @@ display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking
 platforms:
   - amazon-fresh
 first_seen: 2026-06-12
-last_seen: 2026-07-28
-observations: 196
+last_seen: 2026-07-29
+observations: 223
 min_price: 354
 max_price: 418
 latest_price: 417
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Noida]] · [[Thiruvananthapuram]] · [[Vijayawada]]
 
-## Runs that observed this SKU (15)
-[[amazon-fresh-2026-07-28-0708]] · [[amazon-fresh-2026-07-27-0707]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
+## Runs that observed this SKU (16)
+[[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-28-0708]] · [[amazon-fresh-2026-07-27-0707]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
 
-## Price history (196 observations)
+## Price history (223 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -230,6 +230,33 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-28-0708,2026-07-28,amazon-fresh,Thiruvananthapuram,695002,417,815,48.8,1
 2026-07-28-0708,2026-07-28,amazon-fresh,Vijayawada,520001,417,815,48.8,1
 2026-07-28-0708,2026-07-28,amazon-fresh,Vijayawada,520002,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600016,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600025,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600083,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110004,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110008,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110018,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110021,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110037,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110055,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110075,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110091,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110092,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122001,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122002,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122003,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122007,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122010,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122012,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122051,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Hyderabad,500002,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Hyderabad,500003,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Hyderabad,500024,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Hyderabad,500066,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Jaipur,302026,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Jaipur,302033,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Vijayawada,520001,417,815,48.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Vijayawada,520002,417,815,48.8,1
 ```
 
 ---

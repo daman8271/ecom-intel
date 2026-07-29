@@ -120,7 +120,7 @@ Up: [[Home]]
 - [[SUNFLOWER SEEDS 200 GM]] — ref ₹139 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 400G]] — ref ₹259 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 800G]] — ref ₹389 / live ₹— (⚪ OOS)
-- [[WATER 1L]] — ref ₹20 / live ₹25 (🔴 ABOVE)
+- [[WATER 1L]] — ref ₹20 / live ₹26 (🔴 ABOVE)
 - [[WG APPLE JUICE 200ML]]
 - [[WG BLUEBERRY 200ML]]
 - [[WG BLUEBERRY JUICE 200ML]]
