@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0gzztttk4
-display_name: Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0gzztttk4
+display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-07-26
-observations: 26
+last_seen: 2026-07-29
+observations: 36
 min_price: 361
 max_price: 398
-latest_price: 374
+latest_price: 384
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0gzztttk4**
+**Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹374 (33.2% off)
+- [[amazon-fresh]] — latest ₹384 (31.4% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]]
 
-## Runs that observed this SKU (4)
-[[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (5)
+[[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (26 observations)
+## Price history (36 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -60,6 +60,16 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-26-0708,2026-07-26,amazon-fresh,Kolkata,700009,374,560,33.2,1
 2026-07-26-0708,2026-07-26,amazon-fresh,Kolkata,700022,374,560,33.2,1
 2026-07-26-0708,2026-07-26,amazon-fresh,Kolkata,700069,374,560,33.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560036,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600002,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600003,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600005,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600017,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600025,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600083,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700001,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700009,384,560,31.4,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700069,384,560,31.4,1
 ```
 
 ---

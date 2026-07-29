@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l
-display_name: Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre Each Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr 1l
+display_name: "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)"
 platforms:
   - amazon-fresh
 first_seen: 2026-06-27
-last_seen: 2026-07-26
-observations: 814
+last_seen: 2026-07-29
+observations: 888
 min_price: 1476
 max_price: 1959
-latest_price: 1548
+latest_price: 1628
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre Each Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr 1l**
+**Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹1548 (35.5% off)
+- [[amazon-fresh]] — latest ₹1628 (32.2% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (19)
-[[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
+## Runs that observed this SKU (20)
+[[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
 
-## Price history (814 observations)
+## Price history (888 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -848,6 +848,80 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-26-0708,2026-07-26,amazon-fresh,Delhi,110037,1548,2400,35.5,1
 2026-07-26-0708,2026-07-26,amazon-fresh,Delhi,110091,1548,2400,35.5,1
 2026-07-26-0708,2026-07-26,amazon-fresh,Gurugram,122003,1548,2400,35.5,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560001,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560002,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560003,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560004,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560006,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560029,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560040,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bengaluru,560072,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Bhubaneswar,751004,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600002,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600003,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600005,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600006,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600011,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600013,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600016,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600017,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600025,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600060,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600083,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Chennai,600118,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110008,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110013,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110014,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110021,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110025,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110026,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110031,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110032,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110037,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110044,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110048,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110059,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110075,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110091,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110092,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122001,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122002,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122003,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122007,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122010,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Gurugram,122012,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Jaipur,302020,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Jaipur,302026,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Jaipur,302033,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kochi,682011,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kochi,682040,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700015,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700019,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700022,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700024,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700037,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700040,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700053,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700069,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700100,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700107,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Mysuru,570016,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201009,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201304,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201305,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201306,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201307,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201309,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201310,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201311,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Noida,201318,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Surat,394101,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Surat,394107,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Thiruvananthapuram,695001,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Thiruvananthapuram,695002,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Vadodara,390001,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Vadodara,390002,1628,2400,32.2,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Visakhapatnam,530002,1628,2400,32.2,1
 ```
 
 ---

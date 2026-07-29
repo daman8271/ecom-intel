@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-28
-observations: 400
+last_seen: 2026-07-29
+observations: 408
 latest_status: NOT_LISTED
 below_days: 15
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[sano-soyabean-oil-1-ltr-pet-bottle-pure-natural-nutrientrich-cooki
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-28) — ref ₹199 vs live ₹-
-- **Days below reference:** 15 of 50
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-29) — ref ₹199 vs live ₹-
+- **Days below reference:** 15 of 51
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-22]] · [[2026-07-23]]
 
-## Ref-vs-live history (400 observations)
+## Ref-vs-live history (408 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -445,6 +445,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-28,flipkart,NOT_LISTED,BAU,199,,,,,,0,false
 2026-07-28,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
 2026-07-28,zepto,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-29,amazon,OOS,BAU,199,,,,,,0,false
+2026-07-29,amazon-fresh,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-29,amazon-now,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-29,bigbasket,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-29,blinkit,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-29,flipkart,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-29,flipkart-minutes,NOT_LISTED,BAU,199,,,,,,0,false
+2026-07-29,zepto,NOT_LISTED,BAU,199,,,,,,0,false
 ```
 
 ---

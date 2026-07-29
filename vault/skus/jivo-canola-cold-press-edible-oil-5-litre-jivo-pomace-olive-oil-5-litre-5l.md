@@ -4,15 +4,17 @@ canonical_sku: jivo-canola-cold-press-edible-oil-5-litre-jivo-pomace-olive-oil-5
 display_name: Jivo Canola Cold Press Edible Oil 5 Litre Jivo Pomace Olive Oil 5 Litre 5l
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
-min_price: 3338
+last_seen: 2026-07-29
+observations: 3
+min_price: 3058
 max_price: 3338
-latest_price: 3338
+latest_price: 3058
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-canola-cold-press-edible-oil-5-litre-jivo-pomace-olive-oil-5-litre-5l
@@ -23,15 +25,21 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹3338 (49.8% off)
+- [[amazon-fresh]] — latest ₹3058 (54.0% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Delhi]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-07-29-0708]] · [[amazon-2026-05-21-1330]]
+
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,3338,6649,49.8,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110032,3058,6649,54,1
+2026-07-29-0708,2026-07-29,amazon-fresh,Delhi,110091,3058,6649,54,1
 ```
 
 ---
