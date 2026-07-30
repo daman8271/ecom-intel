@@ -5,6 +5,7 @@ live scrapers. JIVO 9-SKU anchors matched to true same-oil-type+grade rivals.
 
 ## Daily captures
 
+- [Competitor-2026-07-30](daily/Competitor-2026-07-30.md)
 - [Competitor-2026-07-29](daily/Competitor-2026-07-29.md)
 - [Competitor-2026-07-28](daily/Competitor-2026-07-28.md)
 - [Competitor-2026-07-27](daily/Competitor-2026-07-27.md)
