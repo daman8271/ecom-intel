@@ -5,11 +5,11 @@ display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-07-29
-observations: 36
+last_seen: 2026-07-30
+observations: 69
 min_price: 361
 max_price: 398
-latest_price: 384
+latest_price: 395
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹384 (31.4% off)
+- [[amazon-fresh]] — latest ₹395 (29.5% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]]
+[[Bengaluru]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Mysuru]] · [[Thiruvananthapuram]]
 
-## Runs that observed this SKU (5)
-[[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (6)
+[[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (36 observations)
+## Price history (69 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -70,6 +70,39 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700001,384,560,31.4,1
 2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700009,384,560,31.4,1
 2026-07-29-0708,2026-07-29,amazon-fresh,Kolkata,700069,384,560,31.4,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Bengaluru,560003,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Bengaluru,560029,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Bengaluru,560036,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Bengaluru,560040,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Bhubaneswar,751004,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Bhubaneswar,751009,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600002,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600006,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600016,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600025,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600060,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600083,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500001,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500002,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500003,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500006,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500024,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500066,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700001,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700009,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700015,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700022,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700024,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700037,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700040,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700053,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700069,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Kolkata,700100,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Lucknow,226011,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Mysuru,570004,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Mysuru,570016,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Thiruvananthapuram,695001,395,560,29.5,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Thiruvananthapuram,695002,395,560,29.5,1
 ```
 
 ---

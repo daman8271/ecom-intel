@@ -4,16 +4,18 @@ canonical_sku: jivo-cold-pressed-groundnut-oil-5-litre-1-litre-combo-pack-5l
 display_name: Jivo Cold Pressed Groundnut Oil 5 Litre 1 Litre Combo Pack 5l
 platforms:
   - amazon
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 72
+last_seen: 2026-07-30
+observations: 75
 min_price: 1272
 max_price: 1438
-latest_price: 1272
+latest_price: 1342
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -25,15 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹1438 (57.2% off)
+- [[amazon-fresh]] — latest ₹1342 (60.1% off)
 - [[amazon-now]] — latest ₹1272 (62.1% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Noida]]
+[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-2026-05-21-1330]]
 
-## Price history (72 observations)
+## Price history (75 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -109,6 +112,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Noida,201307,1272,3360,62.1,1
 2026-06-04-1417,2026-06-04,amazon-now,Noida,201309,1272,3360,62.1,1
 2026-06-04-1417,2026-06-04,amazon-now,Noida,201310,1272,3360,62.1,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110032,1342,3360,60.1,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500002,1342,3360,60.1,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Pune,411035,1342,3360,60.1,1
 ```
 
 ---

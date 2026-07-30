@@ -35,15 +35,15 @@ Up: [[Home]]
 - [[CANOLA 1+1+1L]]
 - [[CANOLA 1+1L]] — ref ₹529 / live ₹469 (🟢 BELOW)
 - [[CANOLA 15L]]
-- [[CANOLA 1L]] — ref ₹249 / live ₹233 (🟢 BELOW)
+- [[CANOLA 1L]] — ref ₹249 / live ₹239 (🟢 BELOW)
 - [[CANOLA 1L POUCH]] — ref ₹269 / live ₹259 (🟢 BELOW)
 - [[CANOLA 1L+MUSTARD 1L]]
 - [[CANOLA 2L]]
-- [[CANOLA 3L]] — ref ₹799 / live ₹— (⚪ OOS)
+- [[CANOLA 3L]] — ref ₹799 / live ₹699 (🟢 BELOW)
 - [[CANOLA 4L]] — ref ₹1189 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
-- [[CANOLA 5L]] — ref ₹1159 / live ₹1159 (🟦 MATCH)
+- [[CANOLA 5L]] — ref ₹1159 / live ₹1099 (🟢 BELOW)
 - [[CANOLA 5L + SOYABEAN 5L]]
 - [[CANOLA 5L+ SOYABEAN 1L]]
 - [[CHIA SEEDS 200GM]] — ref ₹99 / live ₹— (⚪ OOS)
@@ -52,7 +52,7 @@ Up: [[Home]]
 - [[CINNAMON 100G]] — ref ₹99 / live ₹— (⚪ OOS)
 - [[CINNAMON BARK 100G]] — ref ₹99 / live ₹— (⚪ OOS)
 - [[CLOVE 100G]] — ref ₹249 / live ₹— (⚪ OOS)
-- [[COCONUT 1L]] — ref ₹559 / live ₹499 (🟢 BELOW)
+- [[COCONUT 1L]] — ref ₹559 / live ₹— (⚪ OOS)
 - [[COCONUT 200ML]] — ref ₹149 / live ₹— (⚪ OOS)
 - [[COCONUT 500ML]] — ref ₹259 / live ₹— (⚪ OOS)
 - [[COFFEE]] — ref ₹249 / live ₹249 (🟦 MATCH)
@@ -74,7 +74,7 @@ Up: [[Home]]
 - [[EXTRA VIRGIN 250ML]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 2L]] — ref ₹1619 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 3L]] — ref ₹2429 / live ₹— (⚪ OOS)
-- [[EXTRA VIRGIN 500ML]] — ref ₹419 / live ₹— (⚪ OOS)
+- [[EXTRA VIRGIN 500ML]] — ref ₹419 / live ₹409 (🟢 BELOW)
 - [[EXTRA VIRGIN 5L]] — ref ₹3799 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 200G]] — ref ₹99 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 400 GM]] — ref ₹189 / live ₹— (⚪ OOS)
@@ -99,7 +99,7 @@ Up: [[Home]]
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
 - [[MUSTARD 1+1L]] — ref ₹429 / live ₹379 (🟢 BELOW)
-- [[MUSTARD 1L]] — ref ₹209 / live ₹178 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹209 / live ₹180 (🟢 BELOW)
 - [[MUSTARD 1L POUCH]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹629 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹839 / live ₹— (⚪ OOS)
@@ -119,7 +119,7 @@ Up: [[Home]]
 - [[ROSE FLAVOR 200ML]]
 - [[ROSEMARY LEAVES 150G]] — ref ₹179 / live ₹— (⚪ OOS)
 - [[SAFFRON 1GMS]] — ref ₹449 / live ₹— (⚪ OOS)
-- [[SANO CANOLA 1L]] — ref ₹259 / live ₹249 (🟢 BELOW)
+- [[SANO CANOLA 1L]] — ref ₹259 / live ₹— (⚪ OOS)
 - [[SANO CANOLA 5L]] — ref ₹1249 / live ₹— (⚪ OOS)
 - [[SANO CLASSIC 1L]] — ref ₹589 / live ₹— (⚪ OOS)
 - [[SANO CLASSIC 5L]] — ref ₹2709 / live ₹— (⚪ OOS)
@@ -129,13 +129,13 @@ Up: [[Home]]
 - [[SANO MUSTARD 5L]] — ref ₹999 / live ₹— (⚪ OOS)
 - [[SANO POMACE 1+1L]]
 - [[SANO POMACE 1L]] — ref ₹419 / live ₹379 (🟢 BELOW)
-- [[SANO POMACE 5L]] — ref ₹2069 / live ₹— (⚪ OOS)
+- [[SANO POMACE 5L]] — ref ₹2069 / live ₹1899 (🟢 BELOW)
 - [[SANO SOYABEAN 1L]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[SANO SOYABEAN 5L]] — ref ₹949 / live ₹939 (🟢 BELOW)
 - [[SANO SUNFLOWER 1L]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[SANO SUNFLOWER 5L]] — ref ₹1069 / live ₹— (⚪ OOS)
 - [[SESAME 1L + 1L]] — ref ₹689 / live ₹— (⚫ NOT_LISTED)
-- [[SESAME OIL 1L]] — ref ₹349 / live ₹— (⚪ OOS)
+- [[SESAME OIL 1L]] — ref ₹349 / live ₹349 (🟦 MATCH)
 - [[SO OLIVE 1L]] — ref ₹239 / live ₹— (⚪ OOS)
 - [[SO OLIVE 5L]] — ref ₹1419 / live ₹— (⚪ OOS)
 - [[SODA 750ML]] — ref ₹15 / live ₹— (⚪ OOS)
@@ -146,7 +146,7 @@ Up: [[Home]]
 - [[SOYABEAN 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[SOYABEAN 5L]] — ref ₹999 / live ₹— (⚪ OOS)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 1L]] — ref ₹209 / live ₹195 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹209 / live ₹206 (🟢 BELOW)
 - [[SUNFLOWER 1L + 1L]] — ref ₹449 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹679 / live ₹— (⚪ OOS)
@@ -167,5 +167,5 @@ Up: [[Home]]
 - [[WG MOJITO 200ML]]
 - [[WG MOJITO SF 200ML]]
 - [[WG ROSE 200ML]]
-- [[YELLOW MUSTARD 1L]] — ref ₹269 / live ₹259 (🟢 BELOW)
+- [[YELLOW MUSTARD 1L]] — ref ₹269 / live ₹215 (🟢 BELOW)
 - [[YELLOW MUSTARD 5L]] — ref ₹1329 / live ₹— (⚪ OOS)
