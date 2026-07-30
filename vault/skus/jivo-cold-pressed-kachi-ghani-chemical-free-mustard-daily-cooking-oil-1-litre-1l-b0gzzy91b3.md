@@ -5,11 +5,11 @@ display_name: "Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking
 platforms:
   - amazon-fresh
 first_seen: 2026-06-12
-last_seen: 2026-07-29
-observations: 223
+last_seen: 2026-07-30
+observations: 251
 min_price: 354
-max_price: 418
-latest_price: 417
+max_price: 419
+latest_price: 419
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹417 (48.8% off)
+- [[amazon-fresh]] — latest ₹419 (48.6% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Noida]] · [[Thiruvananthapuram]] · [[Vijayawada]]
 
-## Runs that observed this SKU (16)
-[[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-28-0708]] · [[amazon-fresh-2026-07-27-0707]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
+## Runs that observed this SKU (17)
+[[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-28-0708]] · [[amazon-fresh-2026-07-27-0707]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-18-0707]] · [[amazon-fresh-2026-07-17-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-06-12-1254]] · [[amazon-fresh-2026-06-12-0911]]
 
-## Price history (223 observations)
+## Price history (251 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -257,6 +257,34 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-29-0708,2026-07-29,amazon-fresh,Jaipur,302033,417,815,48.8,1
 2026-07-29-0708,2026-07-29,amazon-fresh,Vijayawada,520001,417,815,48.8,1
 2026-07-29-0708,2026-07-29,amazon-fresh,Vijayawada,520002,417,815,48.8,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600016,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600025,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Chennai,600083,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110004,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110008,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110016,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110017,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110024,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110026,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110055,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110091,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Delhi,110092,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Gurugram,122002,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Gurugram,122007,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Gurugram,122010,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Gurugram,122051,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500002,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500003,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500024,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Hyderabad,500066,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Jaipur,302026,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Noida,201009,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Noida,201304,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Noida,201305,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Noida,201310,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Noida,201318,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Vijayawada,520001,419,815,48.6,1
+2026-07-30-0708,2026-07-30,amazon-fresh,Vijayawada,520002,419,815,48.6,1
 ```
 
 ---

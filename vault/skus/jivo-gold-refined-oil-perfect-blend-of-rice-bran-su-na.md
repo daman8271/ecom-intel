@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-perfect-blend-of-rice-bran-su-na
-display_name: Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na
+display_name: Jivo Gold Refined Oil Perfect Blend of Rice Bran & Su
 platforms:
   - amazon-now
 first_seen: 2026-06-06
-last_seen: 2026-06-19
-observations: 13
-min_price: 909
+last_seen: 2026-07-30
+observations: 16
+min_price: 899
 max_price: 930
-latest_price: 930
+latest_price: 899
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Refined Oil Perfect Blend Of Rice Bran Su Na**
+**Jivo Gold Refined Oil Perfect Blend of Rice Bran & Su**
 
 ## Sold on
-- [[amazon-now]] — latest ₹930 (11.4% off)
+- [[amazon-now]] — latest ₹899 (14.4% off)
 
 ## Available in cities
-[[Delhi]]
+[[Delhi]] · [[Mumbai]]
 
-## Runs that observed this SKU (7)
-[[amazon-now-2026-06-19-1019]] · [[amazon-now-2026-06-18-1357]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-06-0729]]
+## Runs that observed this SKU (8)
+[[amazon-now-2026-07-30-0810]] · [[amazon-now-2026-06-19-1019]] · [[amazon-now-2026-06-18-1357]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-17-1021]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-06-0729]]
 
-## Price history (13 observations)
+## Price history (16 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -47,6 +47,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-18-1357,2026-06-18,amazon-now,Delhi,110053,930,1050,11.4,1
 2026-06-19-1019,2026-06-19,amazon-now,Delhi,110051,930,1050,11.4,1
 2026-06-19-1019,2026-06-19,amazon-now,Delhi,110062,930,1050,11.4,1
+2026-07-30-0810,2026-07-30,amazon-now,Delhi,110090,899,1050,14.4,1
+2026-07-30-0810,2026-07-30,amazon-now,Delhi,110092,899,1050,14.4,1
+2026-07-30-0810,2026-07-30,amazon-now,Mumbai,400075,899,1050,14.4,1
 ```
 
 ---

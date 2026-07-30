@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-29
-observations: 408
+last_seen: 2026-07-30
+observations: 416
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-29) — ref ₹589 vs live ₹-
-- **Days below reference:** 0 of 51
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-30) — ref ₹589 vs live ₹-
+- **Days below reference:** 0 of 52
 
-## Ref-vs-live history (408 observations)
+## Ref-vs-live history (416 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -452,6 +452,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-29,flipkart,OOS,BAU,589,,,,,,0,false
 2026-07-29,flipkart-minutes,NOT_LISTED,BAU,589,,,,,,0,false
 2026-07-29,zepto,NOT_LISTED,BAU,589,,,,,,0,false
+2026-07-30,amazon,OOS,BAU,589,,,,,,0,false
+2026-07-30,amazon-fresh,NOT_LISTED,BAU,589,,,,,,0,false
+2026-07-30,amazon-now,NOT_LISTED,BAU,589,,,,,,0,false
+2026-07-30,bigbasket,NOT_LISTED,BAU,589,,,,,,0,false
+2026-07-30,blinkit,NOT_LISTED,BAU,589,,,,,,0,false
+2026-07-30,flipkart,OOS,BAU,589,,,,,,0,false
+2026-07-30,flipkart-minutes,NOT_LISTED,BAU,589,,,,,,0,false
+2026-07-30,zepto,NOT_LISTED,BAU,589,,,,,,0,false
 ```
 
 ---
