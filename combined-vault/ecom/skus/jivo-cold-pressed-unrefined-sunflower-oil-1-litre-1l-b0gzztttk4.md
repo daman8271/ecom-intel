@@ -5,11 +5,11 @@ display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-07-30
-observations: 69
+last_seen: 2026-07-31
+observations: 95
 min_price: 361
 max_price: 398
-latest_price: 395
+latest_price: 361
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹395 (29.5% off)
+- [[amazon-fresh]] — latest ₹361 (35.5% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Mysuru]] · [[Thiruvananthapuram]]
 
-## Runs that observed this SKU (6)
-[[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (7)
+[[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (69 observations)
+## Price history (95 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -103,6 +103,32 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0708,2026-07-30,amazon-fresh,Mysuru,570016,395,560,29.5,1
 2026-07-30-0708,2026-07-30,amazon-fresh,Thiruvananthapuram,695001,395,560,29.5,1
 2026-07-30-0708,2026-07-30,amazon-fresh,Thiruvananthapuram,695002,395,560,29.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Bhubaneswar,751004,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Bhubaneswar,751009,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Chennai,600002,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Chennai,600006,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Chennai,600016,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Chennai,600025,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Chennai,600060,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Chennai,600083,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Delhi,110001,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Delhi,110004,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Delhi,110008,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Delhi,110055,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Delhi,110091,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Hyderabad,500001,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Hyderabad,500003,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Hyderabad,500006,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700001,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700009,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700015,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700022,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700024,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700037,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700069,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Kolkata,700100,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Thiruvananthapuram,695001,361,560,35.5,1
+2026-07-31-0707,2026-07-31,amazon-fresh,Thiruvananthapuram,695002,361,560,35.5,1
 ```
 
 ---
