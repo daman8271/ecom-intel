@@ -1,0 +1,102 @@
+{
+  "platform": "flipkart",
+  "run_id": "daily-2026-07-30",
+  "captured_at": "2026-07-30T04:48:13.179Z",
+  "verdict": "BROKEN",
+  "rows": 269,
+  "unique_skus": 269,
+  "pincodes_with_jivo": null,
+  "baseline_rows": 269,
+  "source_result": "/opt/ecom-intel/platforms/flipkart/result.json",
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "269 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "269 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "269 rows vs baseline 269 (100%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "269 unique SKUs vs baseline 269 (100%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "national run (single 'All India'); n/a"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-07-30T04:48:13.179Z is 7.7h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; 121 SKU(s) price-stable across 9 runs path proven live by 25 SKU(s) that moved (e.g. edoft6pr7qmyhgjh, edoftx47swwqprvs, edofzfufcqdjhtqf) -> genuinely stable; 25 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": true,
+      "detail": "national run (no per-store geo); n/a"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": false,
+      "detail": "2 priced in-stock rows is 2% of baseline 84 (collapse)"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
+    }
+  ],
+  "reasons": [
+    "priced_floor_block: 2 priced in-stock rows is 2% of baseline 84 (collapse)"
+  ],
+  "llm_note": null
+}
