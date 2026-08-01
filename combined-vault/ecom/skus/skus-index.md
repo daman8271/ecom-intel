@@ -595,11 +595,11 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l]] — Sano Sunflower Oil 1 Litre Pet Bottle - Pure, Nutrient-Rich sunflower Cooking Oil with High Smoke Point - Ideal for Frying, Sautéing, and Baking(Pack of 1) (1 LTR)
 - [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l]] — sano Sunflower Oil 5 Ltr Pet Bottle Pure, Nutrient Rich Cooking Oil with High Smoke Point Ideal for Frying, Sautéing, and Baking All type of Cuisines|
 
-## [[amazon-fresh]] (117)
+## [[amazon-fresh]] (118)
 - [[jivo-canola-cold-press-edible-oil-1l]] — Jivo Canola Cold Press Edible Oil 1l
 - [[jivo-canola-cold-press-edible-oil-5-litre-jivo-chemicalfree-sunflower-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Chemical-free Sunflower Oil 5 Litre
 - [[jivo-canola-cold-press-edible-oil-5-litre-jivo-kachi-ghani-mustard-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre + Jivo Kachi Ghani mustard Oil 5 Litre
-- [[jivo-canola-cold-press-edible-oil-5-litre-jivo-pomace-olive-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre + Jivo pomace Olive Oil 5 Litre
+- [[jivo-canola-cold-press-edible-oil-5-litre-jivo-pomace-olive-oil-5-litre-5l]] — Jivo Canola Cold Press Edible Oil 5 Litre Jivo Pomace Olive Oil 5 Litre 5l
 - [[jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l]] — Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)
 - [[jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-jivo-canola-oil1-litre-cold-press-healthy-cooking-oil-5l]] — Jivo Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR &Jivo Canola Oil,1 Litre Cold Press Healthy Cooking Oil
 - [[jivo-canola-cold-pressed-edible-oil-1-litre-cooking-o-1l]] — Jivo Canola Cold Pressed Edible Oil 1 Litre Cooking O 1l
@@ -631,7 +631,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0gzztttk4]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 - [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0h111xbjq]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
-- [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0h1185v89]] — Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
+- [[jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0h1185v89]] — Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0h1185v89
 - [[jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l]] — Jivo Cold Pressed Unrefined Sunflower Oil - 5 Litres
 - [[jivo-cooking-edible-soyabean-oil-1-litre-1l]] — Jivo Cooking Edible Soyabean Oil 1 Litre
 - [[jivo-cooking-edible-soyabean-oil-5-litre-5l]] — Jivo Cooking Edible Soyabean Oil 5 Litre
@@ -680,6 +680,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-koffie-instant-smooth-premium-coffee-100-gm-100ml]] — Jivo Koffie Instant Smooth Premium Coffee 100 Gm 100ml
 - [[jivo-pomace-cooking-olive-oil-5-litre-tin-jivo-daily-cooking-pomace-olive-oil-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre Tin & Jivo Daily Cooking Pomace Olive Oil
 - [[jivo-pomace-cooking-olive-oil-5-litre-with-extra-light-olive-oil-5-litre-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre With Extra Light Olive Oil 5 Litre 5l
+- [[jivo-pomace-cooking-olive-oil-5-litre-with-jivo-extra-light-olive-oil-5-litre-5l]] — Jivo Pomace Cooking Olive Oil 5 Litre with Jivo Extra light olive oil 5 Litre
 - [[jivo-pomace-cooking-olive-oil-pack-of-7-litres-7l]] — Jivo Pomace Cooking Olive Oil Pack Of 7 Litres 7l
 - [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cookin-5l]] — Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cookin 5l
 - [[jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l]] — Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooking

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-07-31
-observations: 424
+last_seen: 2026-08-01
+observations: 432
 latest_status: NOT_LISTED
-below_days: 19
+below_days: 20
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-pure-fresh-kachi-ghani-mustard-oil-1-litre-pet-bottle-high-pu
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-07-31) — ref ₹199 vs live ₹-
-- **Days below reference:** 19 of 53
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-23]] · [[2026-07-24]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-07-31]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-01) — ref ₹199 vs live ₹-
+- **Days below reference:** 20 of 54
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-23]] · [[2026-07-24]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-07-31]] · [[2026-08-01]]
 
-## Ref-vs-live history (424 observations)
+## Ref-vs-live history (432 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -469,6 +469,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-07-31,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
 2026-07-31,flipkart-minutes,NOT_LISTED,SVD,199,,,,,,0,false
 2026-07-31,zepto,NOT_LISTED,SVD,199,,,,,,0,false
+2026-08-01,amazon,BELOW,SVD,199,169,169,169,-30,-15.08,1,true
+2026-08-01,amazon-fresh,NOT_LISTED,SVD,199,,,,,,0,false
+2026-08-01,amazon-now,NOT_LISTED,SVD,199,,,,,,0,false
+2026-08-01,bigbasket,NOT_LISTED,SVD,199,,,,,,0,false
+2026-08-01,blinkit,NOT_LISTED,SVD,199,,,,,,0,false
+2026-08-01,flipkart,NOT_LISTED,SVD,199,,,,,,0,false
+2026-08-01,flipkart-minutes,NOT_LISTED,SVD,199,,,,,,0,false
+2026-08-01,zepto,NOT_LISTED,SVD,199,,,,,,0,false
 ```
 
 ---
