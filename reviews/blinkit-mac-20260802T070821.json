@@ -1,0 +1,105 @@
+{
+  "platform": "blinkit",
+  "run_id": "mac-20260802T070821",
+  "captured_at": "2026-08-02T01:38:19.768Z",
+  "verdict": "OK",
+  "rows": 3502,
+  "unique_skus": 9,
+  "pincodes_with_jivo": 766,
+  "baseline_rows": 3249,
+  "source_result": "/opt/ecom-intel/platforms/blinkit/result.json",
+  "checks": [
+    {
+      "name": "non_zero_rows",
+      "pass": true,
+      "detail": "3502 rows"
+    },
+    {
+      "name": "rows_above_floor",
+      "pass": true,
+      "detail": "3502 rows (floor 20)"
+    },
+    {
+      "name": "rows_vs_baseline",
+      "pass": true,
+      "detail": "3502 rows vs baseline 3249 (108%)"
+    },
+    {
+      "name": "skus_vs_baseline",
+      "pass": true,
+      "detail": "9 unique SKUs vs baseline 9 (100%)"
+    },
+    {
+      "name": "prices_in_band",
+      "pass": true,
+      "detail": "all sale prices in (0, band]"
+    },
+    {
+      "name": "mrp_ge_sale",
+      "pass": true,
+      "detail": "MRP >= sale for all priced rows"
+    },
+    {
+      "name": "discount_in_range",
+      "pass": true,
+      "detail": "discount_pct in [0,100] for all rows"
+    },
+    {
+      "name": "sku_names_sane",
+      "pass": true,
+      "detail": "all SKU names present and readable"
+    },
+    {
+      "name": "no_block_markers",
+      "pass": true,
+      "detail": "no captcha/403/blocked markers in data"
+    },
+    {
+      "name": "pincode_coverage",
+      "pass": true,
+      "detail": "766 pincodes w/ Jivo vs baseline 727 (105%)"
+    },
+    {
+      "name": "schema_integrity",
+      "pass": true,
+      "detail": "all required fields present (sku_raw, canonical, sale, mrp, discount_pct, in_stock)"
+    },
+    {
+      "name": "freshness",
+      "pass": true,
+      "detail": "captured_at 2026-08-02T01:38:19.768Z is 0.0h old (fresh)"
+    },
+    {
+      "name": "price_staleness",
+      "pass": true,
+      "detail": "0% stores non-realtime/snapshot; no SKU frozen across 9 runs; 7 SKU(s) moved over the window"
+    },
+    {
+      "name": "geo_consistency",
+      "pass": true,
+      "detail": "max store_id city-span = 2 (stores stay local)"
+    },
+    {
+      "name": "priced_floor_block",
+      "pass": true,
+      "detail": "3502 priced in-stock rows, vs baseline 3232; 0 block/error-marked rows"
+    },
+    {
+      "name": "per_litre_sanity",
+      "pass": true,
+      "detail": "per_litre consistent with parsed pack volume and within the \u20b96000/L oil ceiling for all rows"
+    },
+    {
+      "name": "shared_price_dup",
+      "pass": true,
+      "detail": "no discounted (sale,mrp) pair shared across distinct products"
+    },
+    {
+      "name": "llm_judgment",
+      "pass": true,
+      "detail": "OK \u2014 Real Jivo oils, sensible INR prices (\u20b9215\u20131918), MRP\u2265sale, 20\u201363% QC discounts, 766-pincode coverage plausible."
+    }
+  ],
+  "reasons": [],
+  "llm_note": "OK \u2014 Real Jivo oils, sensible INR prices (\u20b9215\u20131918), MRP\u2265sale, 20\u201363% QC discounts, 766-pincode coverage plausible."
+}
