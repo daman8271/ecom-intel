@@ -35,7 +35,7 @@ Up: [[Home]]
 - [[CANOLA 1+1+1L]]
 - [[CANOLA 1+1L]] — ref ₹509 / live ₹489 (🟢 BELOW)
 - [[CANOLA 15L]]
-- [[CANOLA 1L]] — ref ₹239 / live ₹239 (🟦 MATCH)
+- [[CANOLA 1L]] — ref ₹239 / live ₹249 (🔴 ABOVE)
 - [[CANOLA 1L POUCH]] — ref ₹259 / live ₹259 (🟦 MATCH)
 - [[CANOLA 1L+MUSTARD 1L]]
 - [[CANOLA 2L]]
@@ -43,7 +43,7 @@ Up: [[Home]]
 - [[CANOLA 4L]] — ref ₹1149 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
-- [[CANOLA 5L]] — ref ₹1099 / live ₹1199 (🔴 ABOVE)
+- [[CANOLA 5L]] — ref ₹1099 / live ₹1180 (🔴 ABOVE)
 - [[CANOLA 5L + SOYABEAN 5L]]
 - [[CANOLA 5L+ SOYABEAN 1L]]
 - [[CHIA SEEDS 200GM]] — ref ₹99 / live ₹— (⚪ OOS)
@@ -75,7 +75,7 @@ Up: [[Home]]
 - [[EXTRA VIRGIN 2L]] — ref ₹1589 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 3L]] — ref ₹2369 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 500ML]] — ref ₹409 / live ₹— (⚪ OOS)
-- [[EXTRA VIRGIN 5L]] — ref ₹3599 / live ₹— (⚪ OOS)
+- [[EXTRA VIRGIN 5L]] — ref ₹3599 / live ₹3599 (🟦 MATCH)
 - [[FLAX SEEDS 200G]] — ref ₹89 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 400 GM]] — ref ₹179 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 800G]] — ref ₹349 / live ₹— (⚪ OOS)
@@ -86,20 +86,20 @@ Up: [[Home]]
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹479 (🟦 MATCH)
 - [[GROUNDNUT 1L]] — ref ₹219 / live ₹219 (🟦 MATCH)
 - [[GROUNDNUT 5+1L]]
-- [[GROUNDNUT 5L]] — ref ₹1139 / live ₹1019 (🟢 BELOW)
+- [[GROUNDNUT 5L]] — ref ₹1139 / live ₹1049 (🟢 BELOW)
 - [[JEERA JUICE]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 1+1+1L]]
 - [[JIVO POMACE 1+1L]] — ref ₹849 / live ₹760 (🟢 BELOW)
-- [[JIVO POMACE 1L]] — ref ₹419 / live ₹380 (🟢 BELOW)
+- [[JIVO POMACE 1L]] — ref ₹419 / live ₹387 (🟢 BELOW)
 - [[JIVO POMACE 2L]] — ref ₹849 / live ₹— (⚪ OOS)
-- [[JIVO POMACE 5L]] — ref ₹1899 / live ₹1899 (🟦 MATCH)
+- [[JIVO POMACE 5L]] — ref ₹1899 / live ₹2108 (🔴 ABOVE)
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO WATER 250ML]] — ref ₹109 / live ₹— (⚪ OOS)
 - [[JIVO WATER 500 MLS]] — ref ₹10 / live ₹— (⚪ OOS)
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
-- [[MUSTARD 1+1L]] — ref ₹409 / live ₹329 (🟢 BELOW)
-- [[MUSTARD 1L]] — ref ₹199 / live ₹171 (🟢 BELOW)
+- [[MUSTARD 1+1L]] — ref ₹409 / live ₹— (⚪ OOS)
+- [[MUSTARD 1L]] — ref ₹199 / live ₹184 (🟢 BELOW)
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹— (⚪ OOS)
@@ -125,7 +125,7 @@ Up: [[Home]]
 - [[SANO CLASSIC 5L]] — ref ₹2609 / live ₹— (⚪ OOS)
 - [[SANO HONEY 1KG]]
 - [[SANO HONEY 500G]]
-- [[SANO MUSTARD 1L]] — ref ₹199 / live ₹169 (🟢 BELOW)
+- [[SANO MUSTARD 1L]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[SANO MUSTARD 5L]] — ref ₹949 / live ₹— (⚪ OOS)
 - [[SANO POMACE 1+1L]]
 - [[SANO POMACE 1L]] — ref ₹399 / live ₹379 (🟢 BELOW)
@@ -136,18 +136,18 @@ Up: [[Home]]
 - [[SANO SUNFLOWER 5L]] — ref ₹1029 / live ₹— (⚪ OOS)
 - [[SESAME 1L + 1L]] — ref ₹649 / live ₹— (⚫ NOT_LISTED)
 - [[SESAME OIL 1L]] — ref ₹329 / live ₹— (⚪ OOS)
-- [[SO OLIVE 1L]] — ref ₹229 / live ₹— (⚪ OOS)
-- [[SO OLIVE 5L]] — ref ₹1369 / live ₹— (⚪ OOS)
+- [[SO OLIVE 1L]] — ref ₹229 / live ₹229 (🟦 MATCH)
+- [[SO OLIVE 5L]] — ref ₹1369 / live ₹1099 (🟢 BELOW)
 - [[SODA 750ML]] — ref ₹15 / live ₹— (⚪ OOS)
 - [[SODA LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
 - [[SODA PEACH 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
 - [[SOYABEAN 1L]] — ref ₹199 / live ₹189 (🟢 BELOW)
 - [[SOYABEAN 1L + 1L]] — ref ₹389 / live ₹— (⚪ OOS)
 - [[SOYABEAN 1L POUCH]] — ref ₹199 / live ₹179 (🟢 BELOW)
-- [[SOYABEAN 5L]] — ref ₹949 / live ₹— (⚪ OOS)
+- [[SOYABEAN 5L]] — ref ₹949 / live ₹879 (🟢 BELOW)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 1L]] — ref ₹199 / live ₹172 (🟢 BELOW)
-- [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹— (⚪ OOS)
+- [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹339 (🟢 BELOW)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹649 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 4L]] — ref ₹869 / live ₹— (⚪ OOS)
@@ -167,5 +167,5 @@ Up: [[Home]]
 - [[WG MOJITO 200ML]]
 - [[WG MOJITO SF 200ML]]
 - [[WG ROSE 200ML]]
-- [[YELLOW MUSTARD 1L]] — ref ₹259 / live ₹215 (🟢 BELOW)
-- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹1049 (🟢 BELOW)
+- [[YELLOW MUSTARD 1L]] — ref ₹259 / live ₹249 (🟢 BELOW)
+- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹1199 (🟢 BELOW)

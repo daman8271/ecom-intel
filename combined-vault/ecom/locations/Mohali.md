@@ -6,7 +6,7 @@ platforms:
   - zepto
 pincodes: 17
 skus: 34
-observations: 2513
+observations: 2559
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -26,7 +26,7 @@ Up: [[locations-index]]
 ## SKUs available in Mohali (34)
 [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-cold-press-canola-oil-1l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-press-combo-canola-oil-2l]] · [[jivo-cold-press-combo-canola-oil-plastic-bottle-2l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-pomace-olive-oil-tin-5l]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-soybean-oil-soyabean-oil-1l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]]
 
-## Observations (2513 rows)
+## Observations (2559 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -51,6 +51,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140110,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140110,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140110,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140110,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140110,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140110,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140110,500,750,33.3,1
@@ -68,6 +69,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140110,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140110,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140110,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140110,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140110,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140110,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140110,689,1000,31,0
@@ -159,6 +161,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140110,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140110,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140110,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140110,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140110,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140110,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140110,760,2098,63.8,1
@@ -209,6 +212,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-press-canola-oil-1l,140201,239,375,36,1
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140201,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140201,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140201,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140201,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140201,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140201,500,750,33.3,1
@@ -226,6 +230,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140201,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140201,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140201,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140201,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140201,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140201,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140201,689,1000,31,0
@@ -318,6 +323,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140201,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140201,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140201,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140201,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140201,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140201,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140201,760,2098,63.8,1
@@ -369,6 +375,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140306,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140306,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140306,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140306,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140306,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140306,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140306,500,750,33.3,1
@@ -386,6 +393,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140306,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140306,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140306,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140306,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140306,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140306,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140306,689,1000,31,0
@@ -477,6 +485,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140306,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140306,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140306,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140306,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140306,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140306,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140306,760,2098,63.8,1
@@ -522,6 +531,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140307,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140307,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140307,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140307,239,375,36,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-press-canola-oil-plastic-bottle-1l,140307,234,375,37,1
 2026-07-14-0645,2026-07-14,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140307,167,255,34,1
 2026-07-15-0645,2026-07-15,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140307,167,255,34,1
@@ -539,6 +549,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140307,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140307,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140307,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140307,181,255,29,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,140307,167,255,34,1
 2026-07-14-0645,2026-07-14,flipkart-minutes,jivo-pomace-olive-oil-1l,140307,394,1049,62,1
 2026-07-15-0645,2026-07-15,flipkart-minutes,jivo-pomace-olive-oil-1l,140307,394,1049,62,1
@@ -572,6 +583,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-pomace-olive-oil-5l,140307,2324,4999,53,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-pomace-olive-oil-5l,140307,2324,4999,53,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140307,2324,4999,53,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140307,2324,4999,53,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-pomace-olive-oil-plastic-bottle-1l,140307,394,1049,62,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-pomace-olive-oil-tin-5l,140307,2272,4999,54,1
 2026-07-13-0944,2026-07-13,zepto,jivo-canola-cold-pressed-edible-oil-cooking-oil-5l,140308,1210,1650,26.7,1
@@ -596,6 +608,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140308,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140308,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140308,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140308,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140308,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140308,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140308,500,750,33.3,1
@@ -613,6 +626,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140308,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140308,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140308,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140308,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140308,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140308,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140308,689,1000,31,0
@@ -704,6 +718,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140308,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140308,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140308,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140308,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140308,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140308,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140308,760,2098,63.8,1
@@ -754,6 +769,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140501,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140501,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140501,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140501,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140501,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140501,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140501,500,750,33.3,1
@@ -771,6 +787,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140501,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140501,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140501,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140501,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140501,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140501,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140501,689,1000,31,0
@@ -861,6 +878,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140501,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140501,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140501,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140501,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140501,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140501,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140501,760,2098,63.8,1
@@ -912,6 +930,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140506,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140506,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140506,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140506,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140506,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140506,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140506,500,750,33.3,1
@@ -929,6 +948,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140506,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140506,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140506,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140506,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140506,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140506,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140506,689,1000,31,0
@@ -1020,6 +1040,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-pomace-olive-oil-5l,140506,2324,4999,53,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140506,1899,4999,62,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140506,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140506,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140506,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140506,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140506,760,2098,63.8,1
@@ -1070,6 +1091,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140507,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140507,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140507,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140507,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140507,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140507,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140507,500,750,33.3,1
@@ -1087,6 +1109,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140507,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140507,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140507,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140507,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140507,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140507,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140507,689,1000,31,0
@@ -1178,6 +1201,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140507,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140507,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140507,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140507,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140507,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140507,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140507,760,2098,63.8,1
@@ -1229,6 +1253,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140603,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140603,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140603,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140603,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140603,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140603,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140603,500,750,33.3,1
@@ -1246,6 +1271,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140603,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140603,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140603,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140603,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140603,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140603,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140603,689,1000,31,0
@@ -1338,6 +1364,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140603,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140603,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140603,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140603,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140603,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140603,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140603,760,2098,63.8,1
@@ -1481,6 +1508,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,140901,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,140901,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,140901,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,140901,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140901,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140901,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,140901,500,750,33.3,1
@@ -1498,6 +1526,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140901,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140901,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140901,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,140901,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140901,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140901,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,140901,689,1000,31,0
@@ -1589,6 +1618,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,140901,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,140901,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,140901,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,140901,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,140901,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,140901,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,140901,760,2098,63.8,1
@@ -1639,6 +1669,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,160055,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,160055,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,160055,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,160055,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160055,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160055,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160055,500,750,33.3,1
@@ -1656,6 +1687,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160055,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160055,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160055,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160055,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160055,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160055,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160055,689,1000,31,0
@@ -1746,6 +1778,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,160055,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,160055,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,160055,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,160055,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,160055,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,160055,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,160055,760,2098,63.8,1
@@ -1797,6 +1830,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,160059,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,160059,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,160059,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,160059,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160059,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160059,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160059,500,750,33.3,1
@@ -1819,6 +1853,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160059,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160059,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160059,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160059,181,255,29,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,160059,167,255,34,1
 2026-07-13-0944,2026-07-13,zepto,jivo-daily-pomace-olive-oil-2l,160059,841,1449,42,0
 2026-07-29-1203,2026-07-29,zepto,jivo-daily-pomace-olive-oil-2l,160059,856,1449,40.9,0
@@ -1915,6 +1950,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,160059,1899,4999,62,0
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,160059,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,160059,2200,4999,56,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,160059,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,160059,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,160059,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,160059,760,2098,63.8,1
@@ -1981,6 +2017,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160062,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160062,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160062,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160062,181,255,29,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,160062,167,255,34,1
 2026-07-13-0944,2026-07-13,zepto,jivo-daily-pomace-olive-oil-2l,160062,862,1449,40.5,1
 2026-07-29-1203,2026-07-29,zepto,jivo-daily-pomace-olive-oil-2l,160062,856,1449,40.9,0
@@ -2065,6 +2102,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,160062,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,160062,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,160062,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,160062,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,160062,758,2098,63.9,0
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,160062,760,2098,63.8,0
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,160062,760,2098,63.8,0
@@ -2119,6 +2157,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160071,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160071,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160071,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160071,181,255,29,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l,160071,167,255,34,1
 2026-07-13-0944,2026-07-13,zepto,jivo-daily-pomace-olive-oil-2l,160071,862,1449,40.5,1
 2026-07-29-1203,2026-07-29,zepto,jivo-daily-pomace-olive-oil-2l,160071,856,1449,40.9,0
@@ -2199,6 +2238,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,160071,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,160071,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,160071,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,160071,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,160071,758,2098,63.9,0
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,160071,760,2098,63.8,0
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,160071,760,2098,63.8,0
@@ -2245,6 +2285,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,160103,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,160103,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,160103,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,160103,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160103,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160103,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160103,500,750,33.3,1
@@ -2262,6 +2303,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160103,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160103,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160103,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160103,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160103,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160103,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160103,689,1000,31,0
@@ -2354,6 +2396,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,160103,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,160103,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,160103,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,160103,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,160103,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,160103,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,160103,760,2098,63.8,1
@@ -2405,6 +2448,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-press-canola-oil-1l,160104,239,375,36,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-press-canola-oil-1l,160104,239,375,36,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-press-canola-oil-1l,160104,239,375,36,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-press-canola-oil-1l,160104,239,375,36,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160104,500,750,33.3,1
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160104,500,750,33.3,1
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,160104,500,750,33.3,1
@@ -2422,6 +2466,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-30-0645,2026-07-30,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160104,181,255,29,1
 2026-07-31-0645,2026-07-31,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160104,181,255,29,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160104,181,255,29,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-1l,160104,181,255,29,1
 2026-07-27-0645,2026-07-27,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160104,681,1000,31,0
 2026-07-28-0645,2026-07-28,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160104,681,1000,31,0
 2026-07-29-0645,2026-07-29,flipkart-minutes,jivo-cold-pressed-pure-cooking-mustard-oil-4l,160104,689,1000,31,0
@@ -2514,6 +2559,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-5l,160104,1899,4999,62,1
 2026-08-01-0645,2026-08-01,flipkart-minutes,jivo-pomace-olive-oil-5l,160104,2324,4999,53,1
 2026-08-01-0917,2026-08-01,zepto,jivo-pomace-olive-oil-5l,160104,2200,4999,56,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,jivo-pomace-olive-oil-5l,160104,2324,4999,53,1
 2026-07-13-0944,2026-07-13,zepto,jivo-pomace-olive-oil-combo-2l,160104,758,2098,63.9,1
 2026-07-29-1203,2026-07-29,zepto,jivo-pomace-olive-oil-combo-2l,160104,760,2098,63.8,1
 2026-07-31-0856,2026-07-31,zepto,jivo-pomace-olive-oil-combo-2l,160104,760,2098,63.8,1

@@ -37,7 +37,7 @@ Up: [[Home]]
 - [[CANOLA 3L]] — ref ₹769 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
-- [[CANOLA 5L]] — ref ₹1099 / live ₹1650 (🔴 ABOVE)
+- [[CANOLA 5L]] — ref ₹1099 / live ₹1402 (🔴 ABOVE)
 - [[CANOLA 5L + SOYABEAN 5L]]
 - [[CANOLA 5L+ SOYABEAN 1L]]
 - [[CHIA SEEDS 200GM]] — ref ₹99 / live ₹— (⚪ OOS)
@@ -69,7 +69,7 @@ Up: [[Home]]
 - [[FLAX SEEDS 400 GM]] — ref ₹179 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 800G]] — ref ₹349 / live ₹— (⚪ OOS)
 - [[GOLD 1+1]] — ref ₹369 / live ₹— (⚪ OOS)
-- [[GOLD 1L]] — ref ₹189 / live ₹225 (🔴 ABOVE)
+- [[GOLD 1L]] — ref ₹189 / live ₹213 (🔴 ABOVE)
 - [[GOLD 5L]] — ref ₹939 / live ₹— (⚪ OOS)
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹— (⚪ OOS)
 - [[GROUNDNUT 1L]] — ref ₹219 / live ₹— (⚪ OOS)

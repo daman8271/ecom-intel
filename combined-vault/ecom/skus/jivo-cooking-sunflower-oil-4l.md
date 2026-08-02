@@ -5,8 +5,8 @@ display_name: JIVO Cooking Sunflower Oil (4 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-08-01
-observations: 505
+last_seen: 2026-08-02
+observations: 536
 min_price: 270
 max_price: 764
 latest_price: 756
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Ghaziabad]] · [[Hyderabad]] · [[Lucknow]]
 
-## Runs that observed this SKU (18)
-[[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (19)
+[[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (505 observations)
+## Price history (536 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -539,6 +539,37 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-01-0645,2026-08-01,flipkart-minutes,Hyderabad,500109,756,1080,30,0
 2026-08-01-0645,2026-08-01,flipkart-minutes,Hyderabad,500110,756,1080,30,0
 2026-08-01-0645,2026-08-01,flipkart-minutes,Hyderabad,500112,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Bengaluru,560034,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Bengaluru,560068,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Bengaluru,560095,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Ghaziabad,201020,764,1080,29,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500001,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500005,756,1080,30,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500010,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500011,756,1080,30,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500020,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500023,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500026,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500027,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500029,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500033,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500034,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500038,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500041,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500044,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500045,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500053,756,1080,30,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500057,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500059,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500063,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500065,756,1080,30,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500066,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500073,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500080,270,,,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500081,756,1080,30,1
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500109,756,1080,30,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500110,756,1080,30,0
+2026-08-02-0645,2026-08-02,flipkart-minutes,Hyderabad,500112,756,1080,30,1
 ```
 
 ---
