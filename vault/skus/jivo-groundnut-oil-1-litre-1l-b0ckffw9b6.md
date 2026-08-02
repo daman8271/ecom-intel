@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-oil-1-litre-1l-b0ckffw9b6
-display_name: Jivo Groundnut Oil 1 Litre 1l b0ckffw9b6
+display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-06-05
-observations: 1
+last_seen: 2026-08-02
+observations: 15
 min_price: 193
-max_price: 193
-latest_price: 193
+max_price: 219
+latest_price: 219
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,22 +19,36 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Groundnut Oil 1 Litre 1l b0ckffw9b6**
+**Jivo Groundnut Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹193 (65.5% off)
+- [[amazon-fresh]] — latest ₹219 (60.9% off)
 
 ## Available in cities
-[[Delhi]]
+[[Delhi]] · [[Gurugram]] · [[Noida]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (1 observations)
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-05-1108,2026-06-05,amazon-fresh,Delhi,110046,193,560,65.5,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Delhi,110007,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Delhi,110026,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Delhi,110035,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Delhi,110044,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Delhi,110052,215,560,61.6,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Gurugram,122002,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201009,209,560,62.7,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201303,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201305,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201307,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201309,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201310,219,560,60.9,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201312,209,560,62.7,1
+2026-08-02-0707,2026-08-02,amazon-fresh,Noida,201318,219,560,60.9,1
 ```
 
 ---
