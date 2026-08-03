@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-02
-observations: 440
+last_seen: 2026-08-03
+observations: 448
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-natural-mineral-1l-1l]]
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-02) — ref ₹18 vs live ₹-
-- **Days below reference:** 0 of 55
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-03) — ref ₹18 vs live ₹-
+- **Days below reference:** 0 of 56
 
-## Ref-vs-live history (440 observations)
+## Ref-vs-live history (448 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -484,6 +484,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-02,flipkart,NOT_LISTED,SVD,18,,,,,,0,false
 2026-08-02,flipkart-minutes,ABOVE,SVD,18,23,23,23,5,27.78,0,true
 2026-08-02,zepto,NOT_LISTED,SVD,18,,,,,,0,false
+2026-08-03,amazon,OOS,SVD,18,,,,,,0,false
+2026-08-03,amazon-fresh,NOT_LISTED,SVD,18,,,,,,0,false
+2026-08-03,amazon-now,NOT_LISTED,SVD,18,,,,,,0,false
+2026-08-03,bigbasket,NOT_LISTED,SVD,18,,,,,,0,false
+2026-08-03,blinkit,NOT_LISTED,SVD,18,,,,,,0,false
+2026-08-03,flipkart,NOT_LISTED,SVD,18,,,,,,0,false
+2026-08-03,flipkart-minutes,ABOVE,SVD,18,23,23,23,5,27.78,0,true
+2026-08-03,zepto,NOT_LISTED,SVD,18,,,,,,0,false
 ```
 
 ---
