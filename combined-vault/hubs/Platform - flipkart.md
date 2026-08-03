@@ -37,7 +37,7 @@ Up: [[Home]]
 - [[CANOLA 3L]] — ref ₹769 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
-- [[CANOLA 5L]] — ref ₹1099 / live ₹1402 (🔴 ABOVE)
+- [[CANOLA 5L]] — ref ₹1099 / live ₹1353 (🔴 ABOVE)
 - [[CANOLA 5L + SOYABEAN 5L]]
 - [[CANOLA 5L+ SOYABEAN 1L]]
 - [[CHIA SEEDS 200GM]] — ref ₹99 / live ₹— (⚪ OOS)

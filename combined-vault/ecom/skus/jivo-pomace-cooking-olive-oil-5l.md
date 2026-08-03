@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-cooking-olive-oil-5l
-display_name: Jivo Pomace Cooking Olive Oil 5l
+display_name: JIVO Pomace Cooking Olive Oil (5000 ml)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-21
-last_seen: 2026-07-22
-observations: 2
-min_price: 4898
+last_seen: 2026-08-03
+observations: 3
+min_price: 4896
 max_price: 4898
-latest_price: 4898
+latest_price: 4896
 tags:
   - type/sku-hub
   - platform/flipkart-minutes
@@ -19,23 +19,24 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Cooking Olive Oil 5l**
+**JIVO Pomace Cooking Olive Oil (5000 ml)**
 
 ## Sold on
-- [[flipkart-minutes]] — latest ₹4898
+- [[flipkart-minutes]] — latest ₹4896
 
 ## Available in cities
-[[Noida]]
+[[Lucknow]] · [[Noida]]
 
-## Runs that observed this SKU (2)
-[[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]]
+## Runs that observed this SKU (3)
+[[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]]
 
-## Price history (2 observations)
+## Price history (3 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-21-0645,2026-07-21,flipkart-minutes,Noida,201301,4898,,,0
 2026-07-22-0645,2026-07-22,flipkart-minutes,Noida,201301,4898,,,0
+2026-08-03-0645,2026-08-03,flipkart-minutes,Lucknow,226030,4896,,,0
 ```
 
 ---

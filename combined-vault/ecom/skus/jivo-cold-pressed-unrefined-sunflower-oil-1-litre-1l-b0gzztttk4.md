@@ -5,11 +5,11 @@ display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-08-02
-observations: 139
+last_seen: 2026-08-03
+observations: 145
 min_price: 361
 max_price: 398
-latest_price: 361
+latest_price: 365
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹361 (35.5% off)
+- [[amazon-fresh]] — latest ₹365 (34.8% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Mysuru]] · [[Thiruvananthapuram]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (9)
-[[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (10)
+[[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (139 observations)
+## Price history (145 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -173,6 +173,12 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-02-0707,2026-08-02,amazon-fresh,Mysuru,570016,361,560,35.5,1
 2026-08-02-0707,2026-08-02,amazon-fresh,Visakhapatnam,530001,361,560,35.5,1
 2026-08-02-0707,2026-08-02,amazon-fresh,Visakhapatnam,530002,361,560,35.5,1
+2026-08-03-0708,2026-08-03,amazon-fresh,Delhi,110008,365,560,34.8,1
+2026-08-03-0708,2026-08-03,amazon-fresh,Delhi,110021,365,560,34.8,1
+2026-08-03-0708,2026-08-03,amazon-fresh,Kolkata,700001,365,560,34.8,1
+2026-08-03-0708,2026-08-03,amazon-fresh,Kolkata,700009,365,560,34.8,1
+2026-08-03-0708,2026-08-03,amazon-fresh,Kolkata,700022,365,560,34.8,1
+2026-08-03-0708,2026-08-03,amazon-fresh,Kolkata,700069,365,560,34.8,1
 ```
 
 ---

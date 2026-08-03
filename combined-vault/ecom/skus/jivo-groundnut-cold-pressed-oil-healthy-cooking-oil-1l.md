@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l
-display_name: "Jivo Groundnut (Peanut) Cold Pressed Oil | Healthy Cooking Oil (1 pc (1 L))"
+display_name: Jivo Groundnut Cold Pressed Oil Healthy Cooking Oil 1l
 platforms:
   - zepto
 first_seen: 2026-05-30
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Groundnut (Peanut) Cold Pressed Oil | Healthy Cooking Oil (1 pc (1 L))**
+**Jivo Groundnut Cold Pressed Oil Healthy Cooking Oil 1l**
 
 ## Sold on
 - [[zepto]] — latest ₹242 (56.8% off)

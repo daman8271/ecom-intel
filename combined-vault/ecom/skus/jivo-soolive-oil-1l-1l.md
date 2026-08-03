@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soolive-oil-1l-1l
-display_name: Jivo So-Olive Oil 1L (1 l)
+display_name: Jivo Soolive Oil 1l 1l
 platforms:
   - amazon-fresh
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo So-Olive Oil 1L (1 l)**
+**Jivo Soolive Oil 1l 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹229 (29.5% off)
