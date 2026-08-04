@@ -35,7 +35,7 @@ Up: [[Home]]
 - [[CANOLA 1+1+1L]]
 - [[CANOLA 1+1L]] — ref ₹509 / live ₹489 (🟢 BELOW)
 - [[CANOLA 15L]]
-- [[CANOLA 1L]] — ref ₹239 / live ₹249 (🔴 ABOVE)
+- [[CANOLA 1L]] — ref ₹239 / live ₹239 (🟦 MATCH)
 - [[CANOLA 1L POUCH]] — ref ₹259 / live ₹259 (🟦 MATCH)
 - [[CANOLA 1L+MUSTARD 1L]]
 - [[CANOLA 2L]]
@@ -63,7 +63,7 @@ Up: [[Home]]
 - [[ENERGY DRINK 200ML]]
 - [[EXTRA LIGHT 1+1+1L]]
 - [[EXTRA LIGHT 1+1L]] — ref ₹1189 / live ₹1069 (🟢 BELOW)
-- [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹599 (🔴 ABOVE)
+- [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹489 (🟢 BELOW)
 - [[EXTRA LIGHT 2L]] — ref ₹1189 / live ₹1069 (🟢 BELOW)
 - [[EXTRA LIGHT 3L]] — ref ₹1789 / live ₹1699 (🟢 BELOW)
 - [[EXTRA LIGHT 500ML]] — ref ₹339 / live ₹329 (🟢 BELOW)
@@ -84,13 +84,13 @@ Up: [[Home]]
 - [[GOLD 1L]] — ref ₹189 / live ₹— (⚪ OOS)
 - [[GOLD 5L]] — ref ₹939 / live ₹— (⚪ OOS)
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹479 (🟦 MATCH)
-- [[GROUNDNUT 1L]] — ref ₹219 / live ₹200 (🟢 BELOW)
+- [[GROUNDNUT 1L]] — ref ₹219 / live ₹199 (🟢 BELOW)
 - [[GROUNDNUT 5+1L]]
 - [[GROUNDNUT 5L]] — ref ₹1139 / live ₹1049 (🟢 BELOW)
 - [[JEERA JUICE]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 1+1+1L]]
-- [[JIVO POMACE 1+1L]] — ref ₹849 / live ₹798 (🟢 BELOW)
-- [[JIVO POMACE 1L]] — ref ₹419 / live ₹387 (🟢 BELOW)
+- [[JIVO POMACE 1+1L]] — ref ₹849 / live ₹758 (🟢 BELOW)
+- [[JIVO POMACE 1L]] — ref ₹419 / live ₹379 (🟢 BELOW)
 - [[JIVO POMACE 2L]] — ref ₹849 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 5L]] — ref ₹1899 / live ₹1999 (🔴 ABOVE)
 - [[JIVO PUNJABI SHIKANJI 160 MLS]] — ref ₹219 / live ₹— (⚪ OOS)
@@ -99,7 +99,7 @@ Up: [[Home]]
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
 - [[MUSTARD 1+1L]] — ref ₹409 / live ₹329 (🟢 BELOW)
-- [[MUSTARD 1L]] — ref ₹199 / live ₹175 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹— (⚪ OOS)
@@ -147,11 +147,11 @@ Up: [[Home]]
 - [[SOYABEAN 5L]] — ref ₹949 / live ₹879 (🟢 BELOW)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 1L]] — ref ₹199 / live ₹176 (🟢 BELOW)
-- [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹— (⚪ OOS)
+- [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹339 (🟢 BELOW)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹649 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 4L]] — ref ₹869 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 5L]] — ref ₹949 / live ₹861 (🟢 BELOW)
+- [[SUNFLOWER 5L]] — ref ₹949 / live ₹949 (🟦 MATCH)
 - [[SUNFLOWER SEEDS 200 GM]] — ref ₹129 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 400G]] — ref ₹249 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 800G]] — ref ₹369 / live ₹— (⚪ OOS)
@@ -168,4 +168,4 @@ Up: [[Home]]
 - [[WG MOJITO SF 200ML]]
 - [[WG ROSE 200ML]]
 - [[YELLOW MUSTARD 1L]] — ref ₹259 / live ₹249 (🟢 BELOW)
-- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹1199 (🟢 BELOW)
+- [[YELLOW MUSTARD 5L]] — ref ₹1269 / live ₹1049 (🟢 BELOW)

@@ -38,7 +38,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-07-22]] · Week: [[2026-W30]] · Month: 
 - [[jivo-extra-light-olive-oil-1l]] — JIVO Extra Light Olive Oil (1 L) — ₹999 · in 3 pincodes
 - [[jivo-extra-light-olive-oil-2l]] — JIVO Extra Light Olive Oil (2 L) — ₹1959 (30.0% off) · in 141 pincodes
 - [[jivo-natural-minerals-water-mineral-water-1l]] — JIVO Natural Minerals Water Mineral Water (1000 ml) — ₹25 (16.0% off) · in 84 pincodes
-- [[jivo-pomace-cooking-olive-oil-5l]] — JIVO Pomace Cooking Olive Oil (5000 ml) — ₹4898 · in 1 pincodes
+- [[jivo-pomace-cooking-olive-oil-5l]] — Jivo Pomace Cooking Olive Oil 5l — ₹4898 · in 1 pincodes
 - [[jivo-pomace-olive-oil-1l]] — JIVO Pomace Olive Oil (1 L) — ₹380 (63.0% off) · in 175 pincodes
 - [[jivo-pomace-olive-oil-5l]] — JIVO Pomace Olive Oil (5 L) — ₹2149 (57.0% off) · in 82 pincodes
 - [[jivo-soybean-oil-soyabean-oil-1l]] — JIVO Soybean Oil Soyabean Oil (1 L) — ₹168 (15.0% off) · in 39 pincodes

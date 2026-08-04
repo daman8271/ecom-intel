@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-03
-observations: 448
+last_seen: 2026-08-04
+observations: 456
 latest_status: NOT_LISTED
 below_days: 18
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[edohbh2fp9es6gga]]
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-03) — ref ₹369 vs live ₹-
-- **Days below reference:** 18 of 56
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-04) — ref ₹369 vs live ₹-
+- **Days below reference:** 18 of 57
 - **Below on:** [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]]
 
-## Ref-vs-live history (448 observations)
+## Ref-vs-live history (456 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -493,6 +493,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-03,flipkart,OOS,SVD,369,,,,,,0,false
 2026-08-03,flipkart-minutes,NOT_LISTED,SVD,369,,,,,,0,false
 2026-08-03,zepto,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-04,amazon,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-04,amazon-fresh,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-04,amazon-now,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-04,bigbasket,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-04,blinkit,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-04,flipkart,OOS,SVD,369,,,,,,0,false
+2026-08-04,flipkart-minutes,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-04,zepto,NOT_LISTED,SVD,369,,,,,,0,false
 ```
 
 ---
