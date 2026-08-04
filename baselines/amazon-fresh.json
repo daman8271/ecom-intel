@@ -2,14 +2,6 @@
   "platform": "amazon-fresh",
   "samples": [
     {
-      "run_id": "2026-07-25-0705",
-      "captured_at": "2026-07-25T02:34:18.773Z",
-      "rows": 1993,
-      "unique_skus": 39,
-      "pincodes_with_jivo": 159,
-      "priced_rows": 1993
-    },
-    {
       "run_id": "2026-07-26-0708",
       "captured_at": "2026-07-26T02:34:35.648Z",
       "rows": 1877,
@@ -80,7 +72,15 @@
       "unique_skus": 43,
       "pincodes_with_jivo": 159,
       "priced_rows": 1841
+    },
+    {
+      "run_id": "2026-08-04-0709",
+      "captured_at": "2026-08-04T02:40:43.591Z",
+      "rows": 1855,
+      "unique_skus": 46,
+      "pincodes_with_jivo": 156,
+      "priced_rows": 1855
     }
   ],
-  "updated_at": "2026-08-03T02:37:55.684761+00:00"
+  "updated_at": "2026-08-04T02:41:06.856115+00:00"
 }
