@@ -5,8 +5,8 @@ display_name: "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO C
 platforms:
   - amazon-fresh
 first_seen: 2026-06-27
-last_seen: 2026-08-03
-observations: 1225
+last_seen: 2026-08-04
+observations: 1240
 min_price: 1476
 max_price: 1959
 latest_price: 1669
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (25)
-[[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
+## Runs that observed this SKU (26)
+[[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
 
-## Price history (1225 observations)
+## Price history (1240 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -1259,6 +1259,21 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-03-0708,2026-08-03,amazon-fresh,Kolkata,700100,1669,2400,30.5,1
 2026-08-03-0708,2026-08-03,amazon-fresh,Kolkata,700107,1669,2400,30.5,1
 2026-08-03-0708,2026-08-03,amazon-fresh,Visakhapatnam,530002,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Bengaluru,560002,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Bengaluru,560003,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Chennai,600025,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Chennai,600083,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110091,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201009,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201301,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201303,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201304,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201305,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201306,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201307,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201309,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201310,1669,2400,30.5,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201311,1669,2400,30.5,1
 ```
 
 ---

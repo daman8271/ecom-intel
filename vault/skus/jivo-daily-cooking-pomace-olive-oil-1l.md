@@ -1,16 +1,16 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-cooking-pomace-olive-oil-1l
-display_name: Jivo Daily Cooking Pomace Olive Oil 1l
+display_name: Jivo Daily Cooking Pomace Olive Oil (1 l)
 platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-31
-last_seen: 2026-07-12
-observations: 2173
+last_seen: 2026-08-04
+observations: 2174
 min_price: 758
 max_price: 878
-latest_price: 758
+latest_price: 868
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -21,19 +21,19 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Daily Cooking Pomace Olive Oil 1l**
+**Jivo Daily Cooking Pomace Olive Oil (1 l)**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹758 (41.6% off)
+- [[amazon-fresh]] — latest ₹868 (59.6% off)
 - [[amazon-now]] — latest ₹758 (41.6% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Bhopal]] · [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Indore]] · [[Jaipur]] · [[Kolkata]] · [[Ludhiana]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]]
 
-## Runs that observed this SKU (10)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
+## Runs that observed this SKU (11)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-06-01-1600]] · [[amazon-fresh-2026-06-01-1200]] · [[amazon-fresh-2026-06-01-0900]] · [[amazon-fresh-2026-05-31-1600]] · [[amazon-fresh-2026-05-31-1200]] · [[amazon-fresh-2026-05-31-0900]]
 
-## Price history (2173 observations)
+## Price history (2174 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -2210,6 +2210,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-10-0658,2026-07-10,amazon-fresh,Mumbai,400017,758,1298,41.6,1
 2026-07-11-0658,2026-07-11,amazon-fresh,Mumbai,400017,758,1298,41.6,1
 2026-07-12-0659,2026-07-12,amazon-fresh,Mumbai,400017,758,1298,41.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110092,868,2148,59.6,1
 ```
 
 ---

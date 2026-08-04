@@ -5,11 +5,11 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-08-03
-observations: 161
+last_seen: 2026-08-04
+observations: 201
 min_price: 382
 max_price: 408
-latest_price: 389
+latest_price: 388
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Groundnut Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹389 (54.0% off)
+- [[amazon-fresh]] — latest ₹388 (54.1% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Vijayawada]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (6)
-[[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (7)
+[[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (161 observations)
+## Price history (201 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -195,6 +195,46 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-03-0708,2026-08-03,amazon-fresh,Vadodara,390002,389,845,54,1
 2026-08-03-0708,2026-08-03,amazon-fresh,Vijayawada,520001,389,845,54,1
 2026-08-03-0708,2026-08-03,amazon-fresh,Vijayawada,520002,389,845,54,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Ahmedabad,380008,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Bhubaneswar,751004,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Bhubaneswar,751009,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Chennai,600016,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Chennai,600025,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Chennai,600083,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110001,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110004,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110008,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110021,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110026,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110037,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110055,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110091,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110092,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Gurugram,122051,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Hyderabad,500001,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700022,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700024,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700037,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700040,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700053,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700100,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201009,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201301,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201303,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201304,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201305,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201306,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201307,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201309,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201310,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201311,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201318,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Surat,394101,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Surat,394107,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Thiruvananthapuram,695001,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Thiruvananthapuram,695002,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Vijayawada,520001,388,845,54.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Vijayawada,520002,388,845,54.1,1
 ```
 
 ---

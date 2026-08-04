@@ -4,16 +4,18 @@ canonical_sku: jivo-extra-light-olive-oil-2l-1l-2l
 display_name: Jivo Extra Light Olive Oil 2l 1l 2l
 platforms:
   - amazon
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 154
-min_price: 1571
+last_seen: 2026-08-04
+observations: 164
+min_price: 1566
 max_price: 1629
-latest_price: 1629
+latest_price: 1566
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -25,15 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹1629 (62.1% off)
+- [[amazon-fresh]] — latest ₹1566 (63.6% off)
 - [[amazon-now]] — latest ₹1629 (62.1% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
+[[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Thiruvananthapuram]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (36)
-[[amazon-now-2026-06-04-1417]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (37)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
 
-## Price history (154 observations)
+## Price history (164 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -191,6 +194,16 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Pune,411047,1629,4298,62.1,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,412101,1629,4298,62.1,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,412114,1629,4298,62.1,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Chennai,600060,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Hyderabad,500003,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700022,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700040,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Pune,411003,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Pune,411020,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Pune,411033,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Pune,411035,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Thiruvananthapuram,695001,1566,4298,63.6,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Visakhapatnam,530002,1566,4298,63.6,1
 ```
 
 ---

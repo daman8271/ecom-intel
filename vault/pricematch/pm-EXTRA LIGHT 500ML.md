@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-03
-observations: 448
+last_seen: 2026-08-04
+observations: 456
 latest_status: NOT_LISTED
-below_days: 29
+below_days: 30
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-500ml-imported-from-spain-everyday-use-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-03) — ref ₹339 vs live ₹-
-- **Days below reference:** 29 of 56
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-25]] · [[2026-07-26]] · [[2026-07-27]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-08-01]] · [[2026-08-02]] · [[2026-08-03]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-04) — ref ₹339 vs live ₹-
+- **Days below reference:** 30 of 57
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-25]] · [[2026-07-26]] · [[2026-07-27]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-08-01]] · [[2026-08-02]] · [[2026-08-03]] · [[2026-08-04]]
 
-## Ref-vs-live history (448 observations)
+## Ref-vs-live history (456 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -493,6 +493,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-03,flipkart,NOT_LISTED,SVD,339,,,,,,0,false
 2026-08-03,flipkart-minutes,NOT_LISTED,SVD,339,,,,,,0,false
 2026-08-03,zepto,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-04,amazon,BELOW,SVD,339,329,329,329,-10,-2.95,1,true
+2026-08-04,amazon-fresh,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-04,amazon-now,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-04,bigbasket,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-04,blinkit,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-04,flipkart,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-04,flipkart-minutes,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-04,zepto,NOT_LISTED,SVD,339,,,,,,0,false
 ```
 
 ---

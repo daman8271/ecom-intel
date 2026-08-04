@@ -4,16 +4,18 @@ canonical_sku: jivo-pomace-cooking-olive-oil-5-litre-with-jivo-cold-pressed-cano
 display_name: Jivo Pomace Cooking Olive Oil 5 Litre With Jivo Cold Pressed Canola Oil 1 Litre 5l
 platforms:
   - amazon
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 11
+last_seen: 2026-08-04
+observations: 45
 min_price: 2181
 max_price: 2358
-latest_price: 2181
+latest_price: 2238
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -25,15 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹2358 (56.1% off)
+- [[amazon-fresh]] — latest ₹2238 (58.4% off)
 - [[amazon-now]] — latest ₹2181 (59.4% off)
 
 ## Available in cities
-[[Bhopal]] · [[Kolkata]] · [[Mumbai]] · [[Pune]]
+[[Ahmedabad]] · [[Bhopal]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Kolkata]] · [[Mumbai]] · [[Pune]] · [[Vijayawada]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-2026-05-21-1330]]
 
-## Price history (11 observations)
+## Price history (45 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -48,6 +51,40 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Mumbai,400611,2181,5374,59.4,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,411021,2181,5374,59.4,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,411045,2181,5374,59.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Ahmedabad,380008,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110001,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110003,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110004,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110008,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110013,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110014,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110016,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110017,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110021,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110024,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110025,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110031,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110032,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110037,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110044,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110048,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110091,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Delhi,110092,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Gurugram,122001,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Gurugram,122002,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Gurugram,122003,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Gurugram,122007,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Gurugram,122010,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Gurugram,122012,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Hyderabad,500001,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700024,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700037,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700040,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700053,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Kolkata,700107,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Pune,411057,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Vijayawada,520001,2238,5374,58.4,1
+2026-08-04-0709,2026-08-04,amazon-fresh,Vijayawada,520002,2238,5374,58.4,1
 ```
 
 ---
