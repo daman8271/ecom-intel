@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-mustard-cold-pressed-oil-vitamin-fortified-cooking-oil-1l
-display_name: "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Vitamin Fortified Cooking Oil (1 pc (1 L))"
+display_name: Jivo Kachi Ghani Mustard Cold Pressed Oil Vitamin Fortified Cooking Oil 1l
 platforms:
   - zepto
 first_seen: 2026-08-03
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Vitamin Fortified Cooking Oil (1 pc (1 L))**
+**Jivo Kachi Ghani Mustard Cold Pressed Oil Vitamin Fortified Cooking Oil 1l**
 
 ## Sold on
 - [[zepto]] — latest ₹169 (33.7% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-combo-2l
-display_name: Jivo Pomace Olive Oil Combo (1 L X 2)
+display_name: Jivo Pomace Olive Oil Combo 2l
 platforms:
   - zepto
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Olive Oil Combo (1 L X 2)**
+**Jivo Pomace Olive Oil Combo 2l**
 
 ## Sold on
 - [[zepto]] — latest ₹758 (63.9% off)

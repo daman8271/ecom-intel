@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-sunflower-cold-pressed-oil-vitamin-fortified-cooking-oil-1l
-display_name: "Jivo Sunflower Cold Pressed Oil | Vitamin Fortified Cooking Oil (1 pc (1 L))"
+display_name: Jivo Sunflower Cold Pressed Oil Vitamin Fortified Cooking Oil 1l
 platforms:
   - zepto
 first_seen: 2026-08-03
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Sunflower Cold Pressed Oil | Vitamin Fortified Cooking Oil (1 pc (1 L))**
+**Jivo Sunflower Cold Pressed Oil Vitamin Fortified Cooking Oil 1l**
 
 ## Sold on
 - [[zepto]] — latest ₹206 (25.1% off)

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l
-display_name: Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil (1 pc (1 L))
+display_name: Jivo Gold Refined Oil Blend Of Rice Bran Oil And Sunflower Oil 1l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Gold Refined Oil Blend Of Rice Bran Oil and Sunflower Oil (1 pc (1 L))**
+**Jivo Gold Refined Oil Blend Of Rice Bran Oil And Sunflower Oil 1l**
 
 ## Sold on
 - [[zepto]] — latest ₹165 (26.7% off)

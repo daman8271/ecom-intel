@@ -5,11 +5,11 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-08-04
-observations: 41
+last_seen: 2026-08-05
+observations: 50
 min_price: 193
 max_price: 219
-latest_price: 202
+latest_price: 193
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Groundnut Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹202 (63.9% off)
+- [[amazon-fresh]] — latest ₹193 (65.5% off)
 
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (4)
-[[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (5)
+[[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (41 observations)
+## Price history (50 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -75,6 +75,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201312,202,560,63.9,1
 2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201318,212,560,62.1,1
 2026-08-04-0709,2026-08-04,amazon-fresh,Pune,411015,202,560,63.9,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110007,202,560,63.9,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110026,202,560,63.9,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110033,202,560,63.9,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110044,202,560,63.9,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Gurugram,122002,202,560,63.9,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201009,193,560,65.5,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201303,202,560,63.9,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201307,193,560,65.5,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201312,193,560,65.5,1
 ```
 
 ---

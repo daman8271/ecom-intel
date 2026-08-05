@@ -35,11 +35,11 @@ Up: [[Home]]
 - [[CANOLA 1+1+1L]]
 - [[CANOLA 1+1L]] — ref ₹509 / live ₹489 (🟢 BELOW)
 - [[CANOLA 15L]]
-- [[CANOLA 1L]] — ref ₹239 / live ₹239 (🟦 MATCH)
+- [[CANOLA 1L]] — ref ₹239 / live ₹249 (🔴 ABOVE)
 - [[CANOLA 1L POUCH]] — ref ₹259 / live ₹259 (🟦 MATCH)
 - [[CANOLA 1L+MUSTARD 1L]]
 - [[CANOLA 2L]]
-- [[CANOLA 3L]] — ref ₹769 / live ₹849 (🔴 ABOVE)
+- [[CANOLA 3L]] — ref ₹769 / live ₹— (⚪ OOS)
 - [[CANOLA 4L]] — ref ₹1149 / live ₹— (⚪ OOS)
 - [[CANOLA 5+1L]]
 - [[CANOLA 5+2L]]
@@ -82,7 +82,7 @@ Up: [[Home]]
 - [[GINGER ALE 200ML]] — ref ₹39 / live ₹— (⚪ OOS)
 - [[GOLD 1+1]] — ref ₹369 / live ₹— (⚪ OOS)
 - [[GOLD 1L]] — ref ₹189 / live ₹— (⚪ OOS)
-- [[GOLD 5L]] — ref ₹939 / live ₹— (⚪ OOS)
+- [[GOLD 5L]] — ref ₹939 / live ₹826 (🟢 BELOW)
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹479 (🟦 MATCH)
 - [[GROUNDNUT 1L]] — ref ₹219 / live ₹199 (🟢 BELOW)
 - [[GROUNDNUT 5+1L]]
@@ -98,8 +98,8 @@ Up: [[Home]]
 - [[JIVO WATER 500 MLS]] — ref ₹10 / live ₹— (⚪ OOS)
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
-- [[MUSTARD 1+1L]] — ref ₹409 / live ₹329 (🟢 BELOW)
-- [[MUSTARD 1L]] — ref ₹199 / live ₹— (⚪ OOS)
+- [[MUSTARD 1+1L]] — ref ₹409 / live ₹— (⚪ OOS)
+- [[MUSTARD 1L]] — ref ₹199 / live ₹162 (🟢 BELOW)
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹— (⚪ OOS)
@@ -119,7 +119,7 @@ Up: [[Home]]
 - [[ROSE FLAVOR 200ML]]
 - [[ROSEMARY LEAVES 150G]] — ref ₹169 / live ₹— (⚪ OOS)
 - [[SAFFRON 1GMS]] — ref ₹499 / live ₹— (⚪ OOS)
-- [[SANO CANOLA 1L]] — ref ₹249 / live ₹229 (🟢 BELOW)
+- [[SANO CANOLA 1L]] — ref ₹249 / live ₹— (⚪ OOS)
 - [[SANO CANOLA 5L]] — ref ₹1199 / live ₹— (⚪ OOS)
 - [[SANO CLASSIC 1L]] — ref ₹559 / live ₹— (⚪ OOS)
 - [[SANO CLASSIC 5L]] — ref ₹2609 / live ₹— (⚪ OOS)
@@ -147,11 +147,11 @@ Up: [[Home]]
 - [[SOYABEAN 5L]] — ref ₹949 / live ₹879 (🟢 BELOW)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 1L]] — ref ₹199 / live ₹176 (🟢 BELOW)
-- [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹339 (🟢 BELOW)
+- [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹649 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 4L]] — ref ₹869 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 5L]] — ref ₹949 / live ₹949 (🟦 MATCH)
+- [[SUNFLOWER 5L]] — ref ₹949 / live ₹861 (🟢 BELOW)
 - [[SUNFLOWER SEEDS 200 GM]] — ref ₹129 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 400G]] — ref ₹249 / live ₹— (⚪ OOS)
 - [[SUNFLOWER SEEDS 800G]] — ref ₹369 / live ₹— (⚪ OOS)

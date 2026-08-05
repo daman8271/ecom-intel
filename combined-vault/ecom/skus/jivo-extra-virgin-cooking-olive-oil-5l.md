@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-cooking-olive-oil-5l
-display_name: Jivo Extra Virgin Cooking Olive Oil (1 pc (5 L))
+display_name: Jivo Extra Virgin Cooking Olive Oil 5l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Cooking Olive Oil (1 pc (5 L))**
+**Jivo Extra Virgin Cooking Olive Oil 5l**
 
 ## Sold on
 - [[zepto]] — latest ₹7999

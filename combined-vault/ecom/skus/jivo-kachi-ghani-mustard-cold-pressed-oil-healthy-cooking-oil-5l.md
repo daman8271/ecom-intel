@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l
-display_name: "Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil (1 pc (5 L))"
+display_name: Jivo Kachi Ghani Mustard Cold Pressed Oil Healthy Cooking Oil 5l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Mustard (Sarson) Cold Pressed Oil | Healthy Cooking Oil (1 pc (5 L))**
+**Jivo Kachi Ghani Mustard Cold Pressed Oil Healthy Cooking Oil 5l**
 
 ## Sold on
 - [[zepto]] — latest ₹853 (31.8% off)

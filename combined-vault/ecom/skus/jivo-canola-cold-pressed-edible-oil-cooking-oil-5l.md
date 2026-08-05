@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-pressed-edible-oil-cooking-oil-5l
-display_name: "Jivo Canola Cold Pressed Edible Oil | Cooking Oil (1 pc (5 L))"
+display_name: Jivo Canola Cold Pressed Edible Oil Cooking Oil 5l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Pressed Edible Oil | Cooking Oil (1 pc (5 L))**
+**Jivo Canola Cold Pressed Edible Oil Cooking Oil 5l**
 
 ## Sold on
 - [[zepto]] — latest ₹1198 (27.4% off)

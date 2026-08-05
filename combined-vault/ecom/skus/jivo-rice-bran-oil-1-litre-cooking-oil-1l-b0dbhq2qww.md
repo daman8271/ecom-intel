@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0dbhq2qww
-display_name: Jivo Rice Bran Oil 1 Litre Cooking Oil 1l B0dbhq2qww
+display_name: Jivo Rice Bran Oil 1 Litre Cooking Oil
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-07-25
-observations: 507
+last_seen: 2026-08-05
+observations: 568
 min_price: 169
 max_price: 189
-latest_price: 189
+latest_price: 180
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Oil 1 Litre Cooking Oil 1l B0dbhq2qww**
+**Jivo Rice Bran Oil 1 Litre Cooking Oil**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹189 (33.7% off)
+- [[amazon-fresh]] — latest ₹180 (36.8% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (6)
-[[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (7)
+[[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-23-0707]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (507 observations)
+## Price history (568 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -541,6 +541,67 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-07-25-0705,2026-07-25,amazon-fresh,Pune,411033,179,285,37.2,1
 2026-07-25-0705,2026-07-25,amazon-fresh,Pune,411035,189,285,33.7,1
 2026-07-25-0705,2026-07-25,amazon-fresh,Pune,411057,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Ahmedabad,380008,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Ahmedabad,380024,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110003,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110006,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110016,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110021,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110031,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110048,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110055,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110092,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Gurugram,122001,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Gurugram,122002,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Gurugram,122010,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Gurugram,122051,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Jaipur,302020,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Jaipur,302033,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Lucknow,226011,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400002,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400003,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400006,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400007,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400008,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400009,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400010,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400011,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400012,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400014,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400015,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400016,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400018,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400019,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400022,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400026,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400030,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400033,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400058,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400067,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Mumbai,400075,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201301,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201304,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201305,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201307,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201310,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201311,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201312,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Noida,201318,189,285,33.7,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411001,172,285,39.6,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411003,172,285,39.6,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411004,172,285,39.6,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411005,180,285,36.8,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411006,180,285,36.8,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411011,180,285,36.8,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411012,172,285,39.6,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411014,180,285,36.8,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411015,172,285,39.6,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411020,172,285,39.6,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411028,180,285,36.8,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411030,180,285,36.8,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411033,172,285,39.6,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411035,180,285,36.8,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Pune,411057,180,285,36.8,1
 ```
 
 ---

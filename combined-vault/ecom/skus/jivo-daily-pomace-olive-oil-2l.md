@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-daily-pomace-olive-oil-2l
-display_name: Jivo Daily Pomace Olive Oil (1 pc (2 L))
+display_name: Jivo Daily Pomace Olive Oil 2l
 platforms:
   - zepto
 first_seen: 2026-05-30
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Daily Pomace Olive Oil (1 pc (2 L))**
+**Jivo Daily Pomace Olive Oil 2l**
 
 ## Sold on
 - [[zepto]] — latest ₹846 (41.6% off)

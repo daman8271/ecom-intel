@@ -4,16 +4,18 @@ canonical_sku: jivo-extra-light-olive-oil-5l-2l-5l
 display_name: Jivo Extra Light Olive Oil 5l 2l 5l
 platforms:
   - amazon
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 110
+last_seen: 2026-08-05
+observations: 114
 min_price: 3658
 max_price: 4074
-latest_price: 4074
+latest_price: 3777
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -25,15 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹4074 (56.2% off)
+- [[amazon-fresh]] — latest ₹3777 (59.4% off)
 - [[amazon-now]] — latest ₹4074 (56.2% off)
 
 ## Available in cities
 [[Bhopal]] · [[Delhi]] · [[Ghaziabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (36)
-[[amazon-now-2026-06-04-1417]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (37)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
 
-## Price history (110 observations)
+## Price history (114 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -147,6 +150,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Pune,411051,4074,9298,56.2,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,412101,4074,9298,56.2,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,412114,4074,9298,56.2,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Delhi,110091,3777,9298,59.4,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Kolkata,700015,3777,9298,59.4,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Kolkata,700022,3777,9298,59.4,1
+2026-08-05-0708,2026-08-05,amazon-fresh,Kolkata,700100,3777,9298,59.4,1
 ```
 
 ---

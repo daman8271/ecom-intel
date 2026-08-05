@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-refine-canola-oil-tin-15l
-display_name: Jivo Refine Canola Oil Tin (1 pc (15 L))
+display_name: Jivo Refine Canola Oil Tin 15l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Refine Canola Oil Tin (1 pc (15 L))**
+**Jivo Refine Canola Oil Tin 15l**
 
 ## Sold on
 - [[zepto]] — latest ₹3500
