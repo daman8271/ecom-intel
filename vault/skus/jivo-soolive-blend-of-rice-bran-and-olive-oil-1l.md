@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-soolive-blend-of-rice-bran-and-olive-oil-1l
-display_name: Jivo So-Olive Blend Of Rice Bran And Olive Oil (1 pc (1 L))
+display_name: Jivo Soolive Blend Of Rice Bran And Olive Oil 1l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo So-Olive Blend Of Rice Bran And Olive Oil (1 pc (1 L))**
+**Jivo Soolive Blend Of Rice Bran And Olive Oil 1l**
 
 ## Sold on
 - [[zepto]] — latest ₹325

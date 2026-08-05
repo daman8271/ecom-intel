@@ -12,9 +12,9 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-04
-observations: 456
-latest_status: OOS
+last_seen: 2026-08-05
+observations: 464
+latest_status: NOT_LISTED
 below_days: 23
 tags:
   - type/pricematch-sku
@@ -37,11 +37,11 @@ SKU memory: [[jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-s
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ⚪ out of stock on [[zepto]] (2026-08-04) — ref ₹189 vs live ₹-
-- **Days below reference:** 23 of 57
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-05) — ref ₹189 vs live ₹-
+- **Days below reference:** 23 of 58
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-12]] · [[2026-06-13]] · [[2026-06-14]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-27]] · [[2026-06-28]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]]
 
-## Ref-vs-live history (456 observations)
+## Ref-vs-live history (464 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -501,6 +501,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-04,flipkart,ABOVE,SVD,189,213,213,213,24,12.7,0,true
 2026-08-04,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
 2026-08-04,zepto,OOS,SVD,189,,,,,,0,false
+2026-08-05,amazon,OOS,SVD,189,,,,,,0,false
+2026-08-05,amazon-fresh,NOT_LISTED,SVD,189,,,,,,0,false
+2026-08-05,amazon-now,NOT_LISTED,SVD,189,,,,,,0,false
+2026-08-05,bigbasket,NOT_LISTED,SVD,189,,,,,,0,false
+2026-08-05,blinkit,NOT_LISTED,SVD,189,,,,,,0,false
+2026-08-05,flipkart,ABOVE,SVD,189,213,213,213,24,12.7,0,true
+2026-08-05,flipkart-minutes,NOT_LISTED,SVD,189,,,,,,0,false
+2026-08-05,zepto,NOT_LISTED,SVD,189,,,,,,0,false
 ```
 
 ---

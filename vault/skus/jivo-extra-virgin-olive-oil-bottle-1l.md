@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-bottle-1l
-display_name: "Jivo Extra Virgin Olive Oil | Bottle (1 pc (1 L))"
+display_name: Jivo Extra Virgin Olive Oil Bottle 1l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil | Bottle (1 pc (1 L))**
+**Jivo Extra Virgin Olive Oil Bottle 1l**
 
 ## Sold on
 - [[zepto]] — latest ₹810 (55.0% off)

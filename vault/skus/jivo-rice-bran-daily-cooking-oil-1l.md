@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-daily-cooking-oil-1l
-display_name: Jivo Rice Bran Daily Cooking Oil (1 pack (1 L))
+display_name: Jivo Rice Bran Daily Cooking Oil 1l
 platforms:
   - zepto
 first_seen: 2026-06-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Daily Cooking Oil (1 pack (1 L))**
+**Jivo Rice Bran Daily Cooking Oil 1l**
 
 ## Sold on
 - [[zepto]] — latest ₹182 (36.1% off)

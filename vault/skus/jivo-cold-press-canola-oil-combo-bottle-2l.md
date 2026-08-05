@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-canola-oil-combo-bottle-2l
-display_name: "Jivo Cold Press Canola Oil Combo | Bottle (1 pack (2 x 1 L))"
+display_name: Jivo Cold Press Canola Oil Combo Bottle 2l
 platforms:
   - zepto
 first_seen: 2026-05-30
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Press Canola Oil Combo | Bottle (1 pack (2 x 1 L))**
+**Jivo Cold Press Canola Oil Combo Bottle 2l**
 
 ## Sold on
 - [[zepto]] — latest ₹500 (33.3% off)

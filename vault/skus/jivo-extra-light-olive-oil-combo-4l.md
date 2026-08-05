@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-olive-oil-combo-4l
-display_name: Jivo Extra Light Olive Oil Combo (2 L X 2)
+display_name: Jivo Extra Light Olive Oil Combo 4l
 platforms:
   - zepto
 first_seen: 2026-06-04
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Olive Oil Combo (2 L X 2)**
+**Jivo Extra Light Olive Oil Combo 4l**
 
 ## Sold on
 - [[zepto]] — latest ₹2278 (59.3% off)
