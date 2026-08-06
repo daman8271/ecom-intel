@@ -5,8 +5,8 @@ display_name: Jivo Rice Bran Oil 1 Litre Cooking Oil
 platforms:
   - amazon-fresh
 first_seen: 2026-08-05
-last_seen: 2026-08-05
-observations: 6
+last_seen: 2026-08-06
+observations: 15
 min_price: 418
 max_price: 418
 latest_price: 418
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Kolkata]]
 
-## Runs that observed this SKU (1)
-[[amazon-fresh-2026-08-05-0708]]
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]]
 
-## Price history (6 observations)
+## Price history (15 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -40,6 +40,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-05-0708,2026-08-05,amazon-fresh,Kolkata,700037,418,610,31.5,1
 2026-08-05-0708,2026-08-05,amazon-fresh,Kolkata,700040,418,610,31.5,1
 2026-08-05-0708,2026-08-05,amazon-fresh,Kolkata,700053,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700009,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700015,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700019,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700022,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700037,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700040,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700053,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700100,418,610,31.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700107,418,610,31.5,1
 ```
 
 ---

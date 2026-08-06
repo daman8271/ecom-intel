@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-05
-observations: 464
+last_seen: 2026-08-06
+observations: 472
 latest_status: NOT_LISTED
 below_days: 2
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-sunflower-oil-4-litres-pure-natural-oil-for-cooking-ideal-for
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-05) — ref ₹869 vs live ₹-
-- **Days below reference:** 2 of 58
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-06) — ref ₹869 vs live ₹-
+- **Days below reference:** 2 of 59
 - **Below on:** [[2026-06-08]] · [[2026-06-09]]
 
-## Ref-vs-live history (464 observations)
+## Ref-vs-live history (472 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -509,6 +509,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-05,flipkart,OOS,SVD,869,,,,,,0,false
 2026-08-05,flipkart-minutes,NOT_LISTED,SVD,869,,,,,,0,false
 2026-08-05,zepto,NOT_LISTED,SVD,869,,,,,,0,false
+2026-08-06,amazon,OOS,SVD,869,,,,,,0,false
+2026-08-06,amazon-fresh,NOT_LISTED,SVD,869,,,,,,0,false
+2026-08-06,amazon-now,NOT_LISTED,SVD,869,,,,,,0,false
+2026-08-06,bigbasket,NOT_LISTED,SVD,869,,,,,,0,false
+2026-08-06,blinkit,NOT_LISTED,SVD,869,,,,,,0,false
+2026-08-06,flipkart,OOS,SVD,869,,,,,,0,false
+2026-08-06,flipkart-minutes,NOT_LISTED,SVD,869,,,,,,0,false
+2026-08-06,zepto,NOT_LISTED,SVD,869,,,,,,0,false
 ```
 
 ---

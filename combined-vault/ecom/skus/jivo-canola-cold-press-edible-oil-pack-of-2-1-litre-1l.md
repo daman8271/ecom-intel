@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-1l
-display_name: "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre"
+display_name: Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre 1l
 platforms:
   - amazon-fresh
 first_seen: 2026-08-05
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre**
+**Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1669 (30.5% off)

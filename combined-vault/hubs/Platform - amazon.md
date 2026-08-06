@@ -74,7 +74,7 @@ Up: [[Home]]
 - [[EXTRA VIRGIN 250ML]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 2L]] — ref ₹1589 / live ₹— (⚪ OOS)
 - [[EXTRA VIRGIN 3L]] — ref ₹2369 / live ₹— (⚪ OOS)
-- [[EXTRA VIRGIN 500ML]] — ref ₹409 / live ₹— (⚪ OOS)
+- [[EXTRA VIRGIN 500ML]] — ref ₹409 / live ₹409 (🟦 MATCH)
 - [[EXTRA VIRGIN 5L]] — ref ₹3599 / live ₹3599 (🟦 MATCH)
 - [[FLAX SEEDS 200G]] — ref ₹89 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 400 GM]] — ref ₹179 / live ₹— (⚪ OOS)
@@ -82,11 +82,11 @@ Up: [[Home]]
 - [[GINGER ALE 200ML]] — ref ₹39 / live ₹— (⚪ OOS)
 - [[GOLD 1+1]] — ref ₹369 / live ₹— (⚪ OOS)
 - [[GOLD 1L]] — ref ₹189 / live ₹— (⚪ OOS)
-- [[GOLD 5L]] — ref ₹939 / live ₹826 (🟢 BELOW)
+- [[GOLD 5L]] — ref ₹939 / live ₹— (⚪ OOS)
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹479 (🟦 MATCH)
 - [[GROUNDNUT 1L]] — ref ₹219 / live ₹199 (🟢 BELOW)
 - [[GROUNDNUT 5+1L]]
-- [[GROUNDNUT 5L]] — ref ₹1139 / live ₹1049 (🟢 BELOW)
+- [[GROUNDNUT 5L]] — ref ₹1139 / live ₹1022 (🟢 BELOW)
 - [[JEERA JUICE]] — ref ₹219 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 1+1+1L]]
 - [[JIVO POMACE 1+1L]] — ref ₹849 / live ₹758 (🟢 BELOW)
@@ -98,12 +98,12 @@ Up: [[Home]]
 - [[JIVO WATER 500 MLS]] — ref ₹10 / live ₹— (⚪ OOS)
 - [[JUMP ENERGY DRINK 200ML]]
 - [[LEMON 750ML]] — ref ₹45 / live ₹— (⚪ OOS)
-- [[MUSTARD 1+1L]] — ref ₹409 / live ₹— (⚪ OOS)
-- [[MUSTARD 1L]] — ref ₹199 / live ₹162 (🟢 BELOW)
+- [[MUSTARD 1+1L]] — ref ₹409 / live ₹329 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[MUSTARD 1L POUCH]] — ref ₹209 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹— (⚪ OOS)
-- [[MUSTARD 5L]] — ref ₹949 / live ₹929 (🟢 BELOW)
+- [[MUSTARD 5L]] — ref ₹949 / live ₹853 (🟢 BELOW)
 - [[POMACE 3L]] — ref ₹1279 / live ₹— (⚪ OOS)
 - [[PUMPKIN SEEDS 200G]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[PUMPKIN SEEDS 400G]] — ref ₹389 / live ₹— (⚪ OOS)
@@ -125,7 +125,7 @@ Up: [[Home]]
 - [[SANO CLASSIC 5L]] — ref ₹2609 / live ₹— (⚪ OOS)
 - [[SANO HONEY 1KG]]
 - [[SANO HONEY 500G]]
-- [[SANO MUSTARD 1L]] — ref ₹199 / live ₹— (⚪ OOS)
+- [[SANO MUSTARD 1L]] — ref ₹199 / live ₹169 (🟢 BELOW)
 - [[SANO MUSTARD 5L]] — ref ₹949 / live ₹— (⚪ OOS)
 - [[SANO POMACE 1+1L]]
 - [[SANO POMACE 1L]] — ref ₹399 / live ₹379 (🟢 BELOW)
@@ -143,10 +143,10 @@ Up: [[Home]]
 - [[SODA PEACH 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
 - [[SOYABEAN 1L]] — ref ₹199 / live ₹189 (🟢 BELOW)
 - [[SOYABEAN 1L + 1L]] — ref ₹389 / live ₹— (⚪ OOS)
-- [[SOYABEAN 1L POUCH]] — ref ₹199 / live ₹179 (🟢 BELOW)
+- [[SOYABEAN 1L POUCH]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[SOYABEAN 5L]] — ref ₹949 / live ₹879 (🟢 BELOW)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹— (⚪ OOS)
-- [[SUNFLOWER 1L]] — ref ₹199 / live ₹176 (🟢 BELOW)
+- [[SUNFLOWER 1L]] — ref ₹199 / live ₹168 (🟢 BELOW)
 - [[SUNFLOWER 1L + 1L]] — ref ₹429 / live ₹— (⚪ OOS)
 - [[SUNFLOWER 2L]]
 - [[SUNFLOWER 3L]] — ref ₹649 / live ₹— (⚪ OOS)

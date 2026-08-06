@@ -5,8 +5,8 @@ display_name: JIVO Cold Press Combo Canola Oil (2 x 1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-08-04
-observations: 329
+last_seen: 2026-08-06
+observations: 341
 min_price: 375
 max_price: 975
 latest_price: 375
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Chandigarh]] · [[Delhi]] · [[Ghaziabad]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Lucknow]] · [[Mohali]] · [[Pune]]
 
-## Runs that observed this SKU (21)
-[[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (22)
+[[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (329 observations)
+## Price history (341 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -363,6 +363,18 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,Ghaziabad,201009,937,,,1
 2026-08-04-0645,2026-08-04,flipkart-minutes,Ghaziabad,201015,937,,,1
 2026-08-04-0645,2026-08-04,flipkart-minutes,Hyderabad,500008,375,,,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Bengaluru,560037,375,,,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Bengaluru,560056,378,,,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Bengaluru,560110,378,,,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110028,565,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110029,565,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110069,600,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110071,565,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110078,565,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110092,600,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Ghaziabad,201009,937,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Ghaziabad,201015,937,,,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Hyderabad,500008,375,,,0
 ```
 
 ---
