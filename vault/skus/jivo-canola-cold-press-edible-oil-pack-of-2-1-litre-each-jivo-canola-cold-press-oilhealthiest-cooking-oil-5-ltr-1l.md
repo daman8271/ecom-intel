@@ -1,12 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-canola-cold-press-edible-oil-pack-of-2-1-litre-each-jivo-canola-cold-press-oilhealthiest-cooking-oil-5-ltr-1l
-display_name: Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre Each Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr 1l
+display_name: "Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)"
 platforms:
   - amazon-fresh
 first_seen: 2026-06-27
-last_seen: 2026-08-04
-observations: 1240
+last_seen: 2026-08-06
+observations: 1246
 min_price: 1476
 max_price: 1959
 latest_price: 1669
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Canola Cold Press Edible Oil Pack Of 2 1 Litre Each Jivo Canola Cold Press Oilhealthiest Cooking Oil 5 Ltr 1l**
+**Jivo Canola Cold Press Edible Oil Pack of 2, 1 Litre each &JIVO Canola Cold Press Oil,Healthiest Cooking Oil 5 LTR (Pack of 1)**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1669 (30.5% off)
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Mysuru]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (26)
-[[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
+## Runs that observed this SKU (27)
+[[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-fresh-2026-07-19-0707]] · [[amazon-fresh-2026-07-16-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-07-12-0659]] · [[amazon-fresh-2026-07-11-0658]] · [[amazon-fresh-2026-07-10-0658]] · [[amazon-fresh-2026-07-09-0726]] · [[amazon-fresh-2026-07-08-0700]] · [[amazon-fresh-2026-07-07-0608]] · [[amazon-fresh-2026-07-05-1604]] · [[amazon-fresh-2026-07-03-0507]] · [[amazon-fresh-2026-06-30-0728]] · [[amazon-fresh-2026-06-27-1231]] · [[amazon-fresh-2026-06-27-0900]]
 
-## Price history (1240 observations)
+## Price history (1246 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -1274,6 +1274,12 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201309,1669,2400,30.5,1
 2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201310,1669,2400,30.5,1
 2026-08-04-0709,2026-08-04,amazon-fresh,Noida,201311,1669,2400,30.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Delhi,110091,1669,2400,30.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Noida,201304,1669,2400,30.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Noida,201305,1669,2400,30.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Noida,201307,1669,2400,30.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Noida,201310,1669,2400,30.5,1
+2026-08-06-0708,2026-08-06,amazon-fresh,Noida,201311,1669,2400,30.5,1
 ```
 
 ---

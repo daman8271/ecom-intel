@@ -5,11 +5,11 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (4 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-08-04
-observations: 410
+last_seen: 2026-08-06
+observations: 455
 min_price: 674
-max_price: 689
-latest_price: 689
+max_price: 697
+latest_price: 697
 tags:
   - type/sku-hub
   - platform/flipkart-minutes
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **JIVO Cold Pressed Pure Cooking Mustard Oil (4 L)**
 
 ## Sold on
-- [[flipkart-minutes]] — latest ₹689 (31.0% off)
+- [[flipkart-minutes]] — latest ₹697 (30.0% off)
 
 ## Available in cities
 [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurugram]] · [[Jalandhar]] · [[Lucknow]] · [[Ludhiana]] · [[Mohali]]
 
-## Runs that observed this SKU (21)
-[[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (22)
+[[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (410 observations)
+## Price history (455 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -444,6 +444,51 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,Lucknow,226031,689,1000,31,0
 2026-08-04-0645,2026-08-04,flipkart-minutes,Ludhiana,141010,689,1000,31,0
 2026-08-04-0645,2026-08-04,flipkart-minutes,Ludhiana,141011,689,1000,31,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160006,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160009,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160011,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160012,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160015,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160017,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160018,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160019,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160020,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Chandigarh,160043,697,1000,30,1
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110070,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Delhi,110093,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Ghaziabad,201004,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Gurugram,122017,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144002,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144003,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144008,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144009,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144011,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144021,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144022,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144025,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144026,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144027,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144028,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144030,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144040,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144041,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144101,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144102,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144103,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144104,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144106,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144201,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144301,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144302,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144303,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Jalandhar,144805,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Lucknow,226021,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Lucknow,226022,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Lucknow,226028,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Lucknow,226031,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Ludhiana,141010,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Ludhiana,141011,697,1000,30,0
+2026-08-06-0645,2026-08-06,flipkart-minutes,Mohali,160059,697,1000,30,1
 ```
 
 ---
