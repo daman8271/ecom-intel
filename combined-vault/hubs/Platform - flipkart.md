@@ -81,7 +81,7 @@ Up: [[Home]]
 - [[JIVO POMACE 2L]] — ref ₹849 / live ₹— (⚪ OOS)
 - [[JIVO POMACE 5L]] — ref ₹1899 / live ₹— (⚪ OOS)
 - [[MUSTARD 1+1L]] — ref ₹409 / live ₹— (⚪ OOS)
-- [[MUSTARD 1L]] — ref ₹199 / live ₹169 (🟢 BELOW)
+- [[MUSTARD 1L]] — ref ₹199 / live ₹— (⚪ OOS)
 - [[MUSTARD 3L]] — ref ₹599 / live ₹— (⚪ OOS)
 - [[MUSTARD 4L]] — ref ₹799 / live ₹— (⚪ OOS)
 - [[MUSTARD 5L]] — ref ₹949 / live ₹— (⚪ OOS)
