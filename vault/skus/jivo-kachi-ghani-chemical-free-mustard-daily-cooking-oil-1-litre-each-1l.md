@@ -5,8 +5,8 @@ display_name: "Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-08-03
-last_seen: 2026-08-06
-observations: 27
+last_seen: 2026-08-07
+observations: 36
 min_price: 329
 max_price: 329
 latest_price: 329
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Pune]]
 
-## Runs that observed this SKU (3)
-[[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]]
+## Runs that observed this SKU (4)
+[[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]]
 
-## Price history (27 observations)
+## Price history (36 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -61,6 +61,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-06-0708,2026-08-06,amazon-fresh,Pune,411015,329,510,35.5,1
 2026-08-06-0708,2026-08-06,amazon-fresh,Pune,411028,329,510,35.5,1
 2026-08-06-0708,2026-08-06,amazon-fresh,Pune,411030,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411001,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411004,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411005,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411006,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411011,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411014,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411015,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411028,329,510,35.5,1
+2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411030,329,510,35.5,1
 ```
 
 ---

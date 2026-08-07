@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-06
-observations: 472
+last_seen: 2026-08-07
+observations: 480
 latest_status: NOT_LISTED
-below_days: 11
+below_days: 12
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-green-cardamom-8mm-elaichi-whole-natural-spices-no-artificial
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-06) — ref ₹479 vs live ₹-
-- **Days below reference:** 11 of 59
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-29]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-20]] · [[2026-07-27]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-07) — ref ₹479 vs live ₹-
+- **Days below reference:** 12 of 60
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-15]] · [[2026-06-29]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-20]] · [[2026-07-27]] · [[2026-08-07]]
 
-## Ref-vs-live history (472 observations)
+## Ref-vs-live history (480 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -517,6 +517,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-06,flipkart,OOS,SVD,479,,,,,,0,false
 2026-08-06,flipkart-minutes,NOT_LISTED,SVD,479,,,,,,0,false
 2026-08-06,zepto,NOT_LISTED,SVD,479,,,,,,0,false
+2026-08-07,amazon,BELOW,SVD,479,465,465,465,-14,-2.92,1,true
+2026-08-07,amazon-fresh,NOT_LISTED,SVD,479,,,,,,0,false
+2026-08-07,amazon-now,NOT_LISTED,SVD,479,,,,,,0,false
+2026-08-07,bigbasket,NOT_LISTED,SVD,479,,,,,,0,false
+2026-08-07,blinkit,NOT_LISTED,SVD,479,,,,,,0,false
+2026-08-07,flipkart,OOS,SVD,479,,,,,,0,false
+2026-08-07,flipkart-minutes,NOT_LISTED,SVD,479,,,,,,0,false
+2026-08-07,zepto,NOT_LISTED,SVD,479,,,,,,0,false
 ```
 
 ---
