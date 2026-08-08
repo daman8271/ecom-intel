@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-07
-observations: 480
+last_seen: 2026-08-08
+observations: 488
 latest_status: NOT_LISTED
-below_days: 13
+below_days: 14
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-prote
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-07) — ref ₹169 vs live ₹-
-- **Days below reference:** 13 of 60
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-29]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-20]] · [[2026-07-27]] · [[2026-08-07]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-08) — ref ₹169 vs live ₹-
+- **Days below reference:** 14 of 61
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-17]] · [[2026-06-18]] · [[2026-06-29]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-20]] · [[2026-07-27]] · [[2026-08-07]] · [[2026-08-08]]
 
-## Ref-vs-live history (480 observations)
+## Ref-vs-live history (488 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -525,6 +525,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-07,flipkart,NOT_LISTED,SVD,169,,,,,,0,false
 2026-08-07,flipkart-minutes,NOT_LISTED,SVD,169,,,,,,0,false
 2026-08-07,zepto,NOT_LISTED,SVD,169,,,,,,0,false
+2026-08-08,amazon,BELOW,SVD,169,159,159,159,-10,-5.92,1,true
+2026-08-08,amazon-fresh,NOT_LISTED,SVD,169,,,,,,0,false
+2026-08-08,amazon-now,NOT_LISTED,SVD,169,,,,,,0,false
+2026-08-08,bigbasket,NOT_LISTED,SVD,169,,,,,,0,false
+2026-08-08,blinkit,NOT_LISTED,SVD,169,,,,,,0,false
+2026-08-08,flipkart,NOT_LISTED,SVD,169,,,,,,0,false
+2026-08-08,flipkart-minutes,NOT_LISTED,SVD,169,,,,,,0,false
+2026-08-08,zepto,NOT_LISTED,SVD,169,,,,,,0,false
 ```
 
 ---

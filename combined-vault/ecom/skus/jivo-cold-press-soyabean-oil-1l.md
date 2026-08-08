@@ -1,12 +1,12 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-press-soyabean-oil-1l
-display_name: Jivo Cold Press Soyabean Oil 1l
+display_name: JIVO Cold Press Soyabean Oil (1 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-08-03
-last_seen: 2026-08-03
-observations: 1
+last_seen: 2026-08-08
+observations: 2
 min_price: 148
 max_price: 148
 latest_price: 148
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Press Soyabean Oil 1l**
+**JIVO Cold Press Soyabean Oil (1 L)**
 
 ## Sold on
 - [[flipkart-minutes]] — latest ₹148 (34.0% off)
@@ -27,14 +27,15 @@ Up: [[skus-index]]
 ## Available in cities
 [[Lucknow]]
 
-## Runs that observed this SKU (1)
-[[flipkart-minutes-2026-08-03-0645]]
+## Runs that observed this SKU (2)
+[[flipkart-minutes-2026-08-08-0645]] · [[flipkart-minutes-2026-08-03-0645]]
 
-## Price history (1 observations)
+## Price history (2 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-03-0645,2026-08-03,flipkart-minutes,Lucknow,226030,148,225,34,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Lucknow,226030,148,225,34,0
 ```
 
 ---

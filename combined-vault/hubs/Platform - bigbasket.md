@@ -39,8 +39,8 @@ Up: [[Home]]
 - [[SODA LEMON 750ML]] — ref ₹45 / live ₹55 (🔴 ABOVE)
 - [[SODA PEACH 750ML]] — ref ₹50 / live ₹55 (🔴 ABOVE)
 - [[SPRING WATER 750ML]] — ref ₹50 / live ₹55 (🔴 ABOVE)
-- [[SUNFLOWER 1L]] — ref ₹199 / live ₹177.75 (🟢 BELOW)
-- [[SUNFLOWER 5L]] — ref ₹949 / live ₹1003 (🔴 ABOVE)
+- [[SUNFLOWER 1L]] — ref ₹199 / live ₹200.79 (🔴 ABOVE)
+- [[SUNFLOWER 5L]] — ref ₹949 / live ₹882.83 (🟢 BELOW)
 - [[TONIC WATER 200ML]]
 - [[WATER PEACH 750ML]] — ref ₹50 / live ₹55 (🔴 ABOVE)
 - [[WG APPLE JUICE 200ML]]
