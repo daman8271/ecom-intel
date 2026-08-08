@@ -5,8 +5,8 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (5 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-08-06
-observations: 259
+last_seen: 2026-08-08
+observations: 281
 min_price: 824
 max_price: 1562
 latest_price: 852
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurugram]] · [[Jalandhar]] · [[Noida]]
 
-## Runs that observed this SKU (22)
-[[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (23)
+[[flipkart-minutes-2026-08-08-0645]] · [[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (259 observations)
+## Price history (281 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -293,6 +293,28 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-06-0645,2026-08-06,flipkart-minutes,Gurugram,122101,852,1250,31,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,Gurugram,122103,852,1250,31,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,Gurugram,122504,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110016,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110019,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110022,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110043,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110045,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110046,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110057,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110059,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110060,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110061,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110062,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Delhi,110075,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Faridabad,121009,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Ghaziabad,201002,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Ghaziabad,201004,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Ghaziabad,201020,852,1250,31,0
+2026-08-08-0645,2026-08-08,flipkart-minutes,Gurugram,122001,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Gurugram,122098,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Gurugram,122101,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Gurugram,122103,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Gurugram,122504,852,1250,31,1
+2026-08-08-0645,2026-08-08,flipkart-minutes,Noida,201304,852,1250,31,1
 ```
 
 ---

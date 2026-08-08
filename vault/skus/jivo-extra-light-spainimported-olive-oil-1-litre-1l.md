@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-08-05
-last_seen: 2026-08-07
-observations: 721
+last_seen: 2026-08-08
+observations: 756
 min_price: 469
 max_price: 599
-latest_price: 513
+latest_price: 469
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo Extra Light Spain-Imported Olive Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹513 (65.8% off)
-- [[amazon-now]] — latest ₹513 (65.8% off)
+- [[amazon-fresh]] — latest ₹469 (68.7% off)
+- [[amazon-now]] — latest ₹469 (68.7% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (5)
-[[amazon-now-2026-08-07-0812]] · [[amazon-now-2026-08-06-0809]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]]
+## Runs that observed this SKU (7)
+[[amazon-now-2026-08-08-0812]] · [[amazon-now-2026-08-07-0812]] · [[amazon-now-2026-08-06-0809]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]]
 
-## Price history (721 observations)
+## Price history (756 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -758,6 +758,41 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-07-0812,2026-08-07,amazon-now,Pune,411060,513,1499,65.8,1
 2026-08-07-0812,2026-08-07,amazon-now,Pune,411061,513,1499,65.8,1
 2026-08-07-0812,2026-08-07,amazon-now,Pune,411062,513,1499,65.8,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Ahmedabad,380024,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600016,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110001,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110002,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110004,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110021,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110037,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Gurugram,122003,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Gurugram,122010,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Gurugram,122012,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Jaipur,302020,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700001,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700009,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700015,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700019,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700022,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700024,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700040,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700053,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700069,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700100,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700107,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411003,469,1499,68.7,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411020,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380005,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380019,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380050,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380052,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380063,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,382428,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Jaipur,302020,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Jaipur,302034,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Kolkata,700022,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Kolkata,700063,469,1499,68.7,1
+2026-08-08-0812,2026-08-08,amazon-now,Kolkata,700107,469,1499,68.7,1
 ```
 
 ---

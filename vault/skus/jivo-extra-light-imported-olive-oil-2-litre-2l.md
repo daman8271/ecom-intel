@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-08-05
-last_seen: 2026-08-07
-observations: 713
+last_seen: 2026-08-08
+observations: 773
 min_price: 1038
 max_price: 1170
-latest_price: 1059
+latest_price: 1038
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -24,16 +24,16 @@ Up: [[skus-index]]
 **Jivo Extra Light Imported Olive Oil, 2 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹1059 (62.2% off)
-- [[amazon-now]] — latest ₹1059 (62.2% off)
+- [[amazon-fresh]] — latest ₹1038 (62.9% off)
+- [[amazon-now]] — latest ₹1038 (62.9% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (5)
-[[amazon-now-2026-08-07-0812]] · [[amazon-now-2026-08-06-0809]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]]
+## Runs that observed this SKU (7)
+[[amazon-now-2026-08-08-0812]] · [[amazon-now-2026-08-07-0812]] · [[amazon-now-2026-08-06-0809]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]]
 
-## Price history (713 observations)
+## Price history (773 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -750,6 +750,66 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-07-0812,2026-08-07,amazon-now,Pune,411060,1059,2799,62.2,1
 2026-08-07-0812,2026-08-07,amazon-now,Pune,411062,1059,2799,62.2,1
 2026-08-07-0812,2026-08-07,amazon-now,Pune,412307,1059,2799,62.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Ahmedabad,380008,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Ahmedabad,380024,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600002,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600003,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600005,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600006,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600017,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600025,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600083,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110001,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110002,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110004,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110037,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Gurugram,122003,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Hyderabad,500001,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Hyderabad,500002,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Hyderabad,500003,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Hyderabad,500024,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Hyderabad,500066,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Jaipur,302020,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Jaipur,302033,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700022,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700024,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700040,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700053,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Lucknow,226011,1038,2799,62.9,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Noida,201301,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380005,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380019,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380026,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380050,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380052,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,380063,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Ahmedabad,382428,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500001,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500002,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500010,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500011,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500012,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500013,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500015,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500016,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500024,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500025,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500026,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500038,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500061,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500063,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500065,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Hyderabad,500066,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Jaipur,302020,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Jaipur,302033,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Jaipur,302034,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226004,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226006,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226011,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226016,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226021,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226024,1038,2799,62.9,1
+2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226031,1038,2799,62.9,1
 ```
 
 ---

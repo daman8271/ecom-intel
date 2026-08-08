@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-each-1l
-display_name: "Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2)"
+display_name: Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Each 1l
 platforms:
   - amazon-fresh
 first_seen: 2026-08-03
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre each (Pack of 2)**
+**Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Each 1l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹329 (35.5% off)

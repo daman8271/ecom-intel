@@ -7,8 +7,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-08-07
-observations: 74
+last_seen: 2026-08-08
+observations: 84
 min_price: 2138
 max_price: 2358
 latest_price: 2138
@@ -31,12 +31,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹2181 (59.4% off)
 
 ## Available in cities
-[[Ahmedabad]] · [[Bhopal]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Thiruvananthapuram]] · [[Vijayawada]]
+[[Ahmedabad]] · [[Bhopal]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Thiruvananthapuram]] · [[Vijayawada]]
 
-## Runs that observed this SKU (4)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (5)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-2026-05-21-1330]]
 
-## Price history (74 observations)
+## Price history (84 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -114,6 +114,16 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-07-0707,2026-08-07,amazon-fresh,Pune,411057,2138,5374,60.2,1
 2026-08-07-0707,2026-08-07,amazon-fresh,Thiruvananthapuram,695001,2138,5374,60.2,1
 2026-08-07-0707,2026-08-07,amazon-fresh,Thiruvananthapuram,695002,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600003,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Chennai,600005,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110018,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110021,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110091,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411003,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411012,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411020,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411033,2138,5374,60.2,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411035,2138,5374,60.2,1
 ```
 
 ---

@@ -6,8 +6,8 @@ platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-08-07
-observations: 36
+last_seen: 2026-08-08
+observations: 47
 min_price: 426
 max_price: 478
 latest_price: 426
@@ -28,12 +28,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹426 (34.5% off)
 
 ## Available in cities
-[[Delhi]]
+[[Bhubaneswar]] · [[Delhi]] · [[Gurugram]] · [[Kolkata]] · [[Noida]]
 
-## Runs that observed this SKU (36)
-[[amazon-fresh-2026-08-07-0707]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (37)
+[[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
 
-## Price history (36 observations)
+## Price history (47 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -73,6 +73,17 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-01-1600,2026-06-01,amazon,All India,-,,4999,0,0
 2026-06-04-1417,2026-06-04,amazon,All India,-,,550,0,0
 2026-08-07-0707,2026-08-07,amazon-fresh,Delhi,110008,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Bhubaneswar,751009,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110008,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110025,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Delhi,110092,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Gurugram,122051,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700015,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700022,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Kolkata,700100,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Noida,201304,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Noida,201305,426,650,34.5,1
+2026-08-08-0708,2026-08-08,amazon-fresh,Noida,201306,426,650,34.5,1
 ```
 
 ---
