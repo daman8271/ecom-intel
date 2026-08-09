@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-light-imported-olive-oil-2-litre-2l
-display_name: "Jivo Extra Light Imported Olive Oil, 2 Litre"
+display_name: Jivo Extra Light Imported Olive Oil 2 Litre 2l
 platforms:
   - amazon-fresh
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Light Imported Olive Oil, 2 Litre**
+**Jivo Extra Light Imported Olive Oil 2 Litre 2l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1038 (62.9% off)

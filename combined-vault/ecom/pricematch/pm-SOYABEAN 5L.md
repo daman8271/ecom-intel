@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-08
-observations: 488
+last_seen: 2026-08-09
+observations: 496
 latest_status: NOT_LISTED
 below_days: 33
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-cooking-edible-soyabean-oil-5-litre-high-in-omega6-pufa-conta
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-08) — ref ₹949 vs live ₹-
-- **Days below reference:** 33 of 61
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-09) — ref ₹949 vs live ₹-
+- **Days below reference:** 33 of 62
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-24]] · [[2026-07-25]] · [[2026-07-26]] · [[2026-08-02]] · [[2026-08-03]] · [[2026-08-04]] · [[2026-08-05]] · [[2026-08-06]] · [[2026-08-07]] · [[2026-08-08]]
 
-## Ref-vs-live history (488 observations)
+## Ref-vs-live history (496 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -533,6 +533,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-08,flipkart,OOS,SVD,949,,,,,,0,false
 2026-08-08,flipkart-minutes,NOT_LISTED,SVD,949,,,,,,0,false
 2026-08-08,zepto,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-09,amazon,OOS,SVD,949,,,,,,0,false
+2026-08-09,amazon-fresh,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-09,amazon-now,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-09,bigbasket,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-09,blinkit,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-09,flipkart,OOS,SVD,949,,,,,,0,false
+2026-08-09,flipkart-minutes,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-09,zepto,NOT_LISTED,SVD,949,,,,,,0,false
 ```
 
 ---

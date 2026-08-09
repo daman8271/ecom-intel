@@ -24,7 +24,7 @@ Up: [[Home]]
 
 ## Member products
 - [[BLUEBERRY 200ML]]
-- [[CANOLA 1L]] — ref ₹239 / live ₹283.99 (🔴 ABOVE)
+- [[CANOLA 1L]] — ref ₹239 / live ₹288.65 (🔴 ABOVE)
 - [[CANOLA 1L POUCH]] — ref ₹259 / live ₹249.17 (🟢 BELOW)
 - [[CANOLA 5L]] — ref ₹1099 / live ₹1366 (🔴 ABOVE)
 - [[EXTRA LIGHT 1L]] — ref ₹579 / live ₹717.75 (🔴 ABOVE)
@@ -33,7 +33,7 @@ Up: [[Home]]
 - [[JIVO POMACE 1L]] — ref ₹419 / live ₹548.25 (🔴 ABOVE)
 - [[JIVO POMACE 2L]] — ref ₹849 / live ₹1100 (🔴 ABOVE)
 - [[LEMON 750ML]] — ref ₹45 / live ₹55 (🔴 ABOVE)
-- [[MUSTARD 1L]] — ref ₹199 / live ₹215.86 (🔴 ABOVE)
+- [[MUSTARD 1L]] — ref ₹199 / live ₹202.1 (🔴 ABOVE)
 - [[MUSTARD 5L]] — ref ₹949 / live ₹981.13 (🔴 ABOVE)
 - [[ROSE FLAVOR 200ML]]
 - [[SODA LEMON 750ML]] — ref ₹45 / live ₹55 (🔴 ABOVE)

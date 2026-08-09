@@ -6,7 +6,7 @@ platforms:
   - zepto
 pincodes: 49
 skus: 37
-observations: 9187
+observations: 9235
 tags:
   - type/city-hub
   - platform/flipkart-minutes
@@ -26,7 +26,7 @@ Up: [[locations-index]]
 ## SKUs available in Jalandhar (37)
 [[jivo-canola-cold-pressed-edible-oil-cooking-oil-5l]] · [[jivo-cold-press-canola-oil-1l]] · [[jivo-cold-press-canola-oil-combo-bottle-2l]] · [[jivo-cold-press-canola-oil-plastic-bottle-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-1l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-4l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-can-5l]] · [[jivo-cold-pressed-pure-cooking-mustard-oil-plastic-bottle-1l]] · [[jivo-daily-pomace-olive-oil-2l]] · [[jivo-extra-light-olive-oil-1l]] · [[jivo-extra-light-olive-oil-2l]] · [[jivo-extra-light-olive-oil-can-2l]] · [[jivo-extra-light-olive-oil-combo-2l]] · [[jivo-extra-light-olive-oil-combo-4l]] · [[jivo-extra-virgin-cooking-olive-oil-5l]] · [[jivo-extra-virgin-olive-oil-bottle-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-1l]] · [[jivo-gold-refined-oil-blend-of-rice-bran-oil-and-sunflower-oil-5l]] · [[jivo-groundnut-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-groundnut-cold-pressed-oil-vitamin-fortified-cooking-oil-1l]] · [[jivo-groundnut-peanut-cold-pressed-heathy-cooking-oil-200ml]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-kachi-ghani-mustard-cold-pressed-oil-vitamin-fortified-cooking-oil-1l]] · [[jivo-pomace-olive-oil-1l]] · [[jivo-pomace-olive-oil-5l]] · [[jivo-pomace-olive-oil-combo-2l]] · [[jivo-pomace-olive-oil-plastic-bottle-1l]] · [[jivo-refine-canola-oil-tin-15l]] · [[jivo-rice-bran-daily-cooking-oil-1l]] · [[jivo-soolive-blend-of-rice-bran-and-olive-oil-1l]] · [[jivo-soybean-oil-soyabean-oil-1l]] · [[jivo-soybean-oil-soyabean-oil-pouch-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-1l]] · [[jivo-sunflower-cold-pressed-oil-healthy-cooking-oil-5l]] · [[jivo-sunflower-cold-pressed-oil-vitamin-fortified-cooking-oil-1l]]
 
-## Observations (9187 rows)
+## Observations (9235 rows)
 
 ```csv
 run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
@@ -191,6 +191,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144002,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144002,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144002,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144002,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144002,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144002,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144002,500,750,33.3,0
@@ -257,6 +258,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144002,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144002,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144002,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144002,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144002,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144002,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144002,960,2998,68,0
@@ -427,6 +429,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144003,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144003,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144003,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144003,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144003,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144003,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144003,500,750,33.3,0
@@ -491,6 +494,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144003,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144003,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144003,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144003,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144003,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144003,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144003,960,2998,68,0
@@ -1212,6 +1216,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144008,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144008,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144008,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144008,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144008,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144008,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144008,500,750,33.3,0
@@ -1278,6 +1283,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144008,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144008,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144008,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144008,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144008,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144008,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144008,960,2998,68,0
@@ -1449,6 +1455,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144009,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144009,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144009,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144009,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144009,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144009,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144009,500,750,33.3,0
@@ -1515,6 +1522,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144009,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144009,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144009,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144009,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144009,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144009,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144009,960,2998,68,0
@@ -1824,6 +1832,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144011,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144011,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144011,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144011,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144011,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144011,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144011,500,750,33.3,0
@@ -1890,6 +1899,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144011,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144011,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144011,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144011,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144011,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144011,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144011,960,2998,68,0
@@ -2199,6 +2209,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144021,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144021,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144021,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144021,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144021,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144021,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144021,500,750,33.3,0
@@ -2265,6 +2276,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144021,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144021,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144021,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144021,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144021,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144021,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144021,960,2998,68,0
@@ -2442,6 +2454,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144022,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144022,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144022,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144022,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144022,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144022,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144022,500,750,33.3,0
@@ -2525,6 +2538,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144022,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144022,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144022,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144022,1959,2799,30,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-extra-light-olive-oil-can-2l,144022,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144022,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144022,960,2998,68,0
@@ -2983,6 +2997,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144025,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144025,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144025,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144025,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144025,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144025,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144025,500,750,33.3,0
@@ -3045,6 +3060,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-extra-light-olive-oil-2l,144025,1959,2799,30,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144025,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144025,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144025,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144025,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144025,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144025,960,2998,68,0
@@ -3198,6 +3214,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144026,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144026,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144026,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144026,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144026,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144026,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144026,500,750,33.3,0
@@ -3264,6 +3281,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144026,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144026,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144026,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144026,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144026,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144026,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144026,960,2998,68,0
@@ -3435,6 +3453,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144027,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144027,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144027,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144027,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144027,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144027,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144027,500,750,33.3,0
@@ -3501,6 +3520,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144027,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144027,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144027,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144027,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144027,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144027,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144027,960,2998,68,0
@@ -3672,6 +3692,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144028,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144028,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144028,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144028,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144028,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144028,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144028,500,750,33.3,0
@@ -3738,6 +3759,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144028,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144028,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144028,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144028,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144028,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144028,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144028,960,2998,68,0
@@ -4047,6 +4069,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144030,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144030,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144030,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144030,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144030,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144030,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144030,500,750,33.3,0
@@ -4113,6 +4136,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144030,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144030,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144030,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144030,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144030,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144030,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144030,960,2998,68,0
@@ -4698,6 +4722,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144040,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144040,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144040,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144040,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144040,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144040,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144040,500,750,33.3,0
@@ -4763,6 +4788,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144040,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144040,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144040,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144040,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144040,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144040,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144040,960,2998,68,0
@@ -4919,6 +4945,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144041,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144041,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144041,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144041,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144041,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144041,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144041,500,750,33.3,0
@@ -5002,6 +5029,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144041,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144041,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144041,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144041,1959,2799,30,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-extra-light-olive-oil-can-2l,144041,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144041,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144041,960,2998,68,0
@@ -5327,6 +5355,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144101,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144101,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144101,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144101,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144101,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144101,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144101,500,750,33.3,0
@@ -5393,6 +5422,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144101,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144101,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144101,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144101,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144101,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144101,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144101,960,2998,68,0
@@ -5564,6 +5594,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144102,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144102,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144102,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144102,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144102,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144102,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144102,500,750,33.3,0
@@ -5630,6 +5661,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144102,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144102,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144102,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144102,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144102,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144102,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144102,960,2998,68,0
@@ -5800,6 +5832,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144103,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144103,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144103,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144103,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144103,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144103,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144103,500,750,33.3,0
@@ -5866,6 +5899,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144103,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144103,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144103,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144103,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144103,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144103,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144103,960,2998,68,0
@@ -6037,6 +6071,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144104,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144104,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144104,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144104,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144104,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144104,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144104,500,750,33.3,0
@@ -6103,6 +6138,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144104,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144104,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144104,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144104,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144104,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144104,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144104,960,2998,68,0
@@ -6274,6 +6310,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144106,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144106,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144106,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144106,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144106,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144106,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144106,500,750,33.3,0
@@ -6340,6 +6377,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144106,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144106,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144106,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144106,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144106,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144106,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144106,960,2998,68,0
@@ -6511,6 +6549,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144201,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144201,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144201,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144201,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144201,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144201,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144201,500,750,33.3,0
@@ -6577,6 +6616,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144201,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144201,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144201,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144201,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144201,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144201,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144201,960,2998,68,0
@@ -6746,6 +6786,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144301,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144301,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144301,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144301,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144301,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144301,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144301,500,750,33.3,0
@@ -6812,6 +6853,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144301,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144301,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144301,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144301,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144301,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144301,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144301,960,2998,68,0
@@ -6980,6 +7022,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144302,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144302,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144302,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144302,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144302,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144302,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144302,500,750,33.3,0
@@ -7043,6 +7086,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144302,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144302,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144302,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144302,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144302,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144302,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144302,960,2998,68,0
@@ -7209,6 +7253,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144303,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144303,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144303,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144303,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144303,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144303,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144303,500,750,33.3,0
@@ -7275,6 +7320,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144303,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144303,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144303,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144303,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144303,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144303,960,2998,68,0
 2026-07-31-0856,2026-07-31,zepto,jivo-extra-light-olive-oil-combo-2l,144303,960,2998,68,0
@@ -8970,6 +9016,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0645,2026-08-04,flipkart-minutes,jivo-cold-press-canola-oil-1l,144805,239,375,36,1
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-cold-press-canola-oil-1l,144805,247,375,34,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-cold-press-canola-oil-1l,144805,240,375,36,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-cold-press-canola-oil-1l,144805,260,375,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144805,500,750,33.3,0
 2026-07-29-1203,2026-07-29,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144805,500,750,33.3,0
 2026-07-31-0856,2026-07-31,zepto,jivo-cold-press-canola-oil-combo-bottle-2l,144805,500,750,33.3,0
@@ -9053,6 +9100,7 @@ run_id,date_ist,platform,canonical_sku,pincode,price,mrp,discount_pct,in_stock
 2026-08-04-0959,2026-08-04,zepto,jivo-extra-light-olive-oil-2l,144805,1139,2799,59.3,0
 2026-08-06-0645,2026-08-06,flipkart-minutes,jivo-extra-light-olive-oil-2l,144805,2153,2799,23,1
 2026-08-08-0645,2026-08-08,flipkart-minutes,jivo-extra-light-olive-oil-2l,144805,1959,2799,30,1
+2026-08-09-0645,2026-08-09,flipkart-minutes,jivo-extra-light-olive-oil-2l,144805,1959,2799,30,1
 2026-07-13-0645,2026-07-13,flipkart-minutes,jivo-extra-light-olive-oil-can-2l,144805,1959,2799,30,1
 2026-07-13-0944,2026-07-13,zepto,jivo-extra-light-olive-oil-combo-2l,144805,998,2998,66.7,0
 2026-07-29-1203,2026-07-29,zepto,jivo-extra-light-olive-oil-combo-2l,144805,960,2998,68,0

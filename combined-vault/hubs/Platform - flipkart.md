@@ -69,7 +69,7 @@ Up: [[Home]]
 - [[FLAX SEEDS 400 GM]] — ref ₹179 / live ₹— (⚪ OOS)
 - [[FLAX SEEDS 800G]] — ref ₹349 / live ₹— (⚪ OOS)
 - [[GOLD 1+1]] — ref ₹369 / live ₹— (⚪ OOS)
-- [[GOLD 1L]] — ref ₹189 / live ₹225 (🔴 ABOVE)
+- [[GOLD 1L]] — ref ₹189 / live ₹213 (🔴 ABOVE)
 - [[GOLD 5L]] — ref ₹939 / live ₹— (⚪ OOS)
 - [[GREEN CARDAMOM 100G]] — ref ₹479 / live ₹— (⚪ OOS)
 - [[GROUNDNUT 1L]] — ref ₹219 / live ₹— (⚪ OOS)
