@@ -55143,3 +55143,907 @@ date,regime,sku,canonical_sku,platform,listing_id,ref_price,live_modal,live_min,
 2026-08-08,SVD,YELLOW MUSTARD 1L,,bigbasket,,259,,,,false,NOT_LISTED,,,0,375,
 2026-08-08,SVD,YELLOW MUSTARD 1L + 1L,,bigbasket,,509,,,,false,NOT_LISTED,,,0,750,
 2026-08-08,SVD,YELLOW MUSTARD 5L,,bigbasket,,1269,,,,false,NOT_LISTED,,,0,2000,
+2026-08-09,SVD,A2 GHEE 1L,jivo-a2-cow-ghee-1-litre-traditional-bilona-method-prepared-from-a2-cow-milk-rich-aroma-and-distinct-flavour-for-diverse-culinary-applications-suitable-for-cooking-frying-baking-indian-recipes-1l,amazon,B0B2RW9N9F,1309,,,,false,OOS,,,0,4000,2380
+2026-08-09,SVD,A2 GHEE 500ML,jivo-a2-ghee-500-ml-bilona-method-traditionally-prepared-from-a2-cow-milk-suitable-for-cooking-frying-baking-indian-recipes-rich-aroma-and-distinct-flavour-for-diverse-culinary-applications-500ml,amazon,B0B2S1F6R8,709,,,,false,OOS,,,0,2200,2380
+2026-08-09,SVD,BASIL SEEDS 200G,jivo-raw-basil-seeds-for-weight-loss-200gm-sabja-seed-takmuria-seeds-200g-high-fibre-and-omega-3-200ml,amazon,B0D8TN56P9,69,,,,false,OOS,,,0,349,1200
+2026-08-09,SVD,BASIL SEEDS 400G,jivo-raw-basil-seeds-for-weight-loss-400gm-sabja-seed-takmuria-seeds-400g-high-fibre-and-omega-3-400ml,amazon,B0D8VZKFHG,189,,,,false,OOS,,,0,599,1200
+2026-08-09,SVD,BASIL SEEDS 800G,jivo-raw-basil-seeds-for-weight-loss-sabja-seeds-tukmaria-seeds-high-in-fiber-omega3-nutrients-ideal-for-smoothies-drinks-and-baking-100-natural-vegan-glutenfree-800g-800ml,amazon,B0D8VZ1JLD,329,,,,false,OOS,,,0,1099,1200
+2026-08-09,SVD,BLACK CARDAMOM 100G,jivo-black-cardamom-badi-elaichi-sabut-moti-kali-elaichi-whole-organic-black-cardamom-perfect-for-cooking-baking-seasoning-adds-flavor-to-dishes-no-artificial-colours-or-preservatives-100g-100ml,amazon,B0D7CXGP3D,289,,,,false,OOS,,,0,549,399
+2026-08-09,SVD,BLACK OLIVE 470G,jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-black-olive-slices-suitable-for-pizza-pasta-salads-wraps-ready-to-eat-snack-smart-choice-470ml,amazon,B0DS69LNFB,209,,,,false,OOS,,,0,399,3995
+2026-08-09,SVD,BLACK PEPPER 100G,jivo-black-pepper-whole-natural-peppercorns-premium-kali-mirch-perfect-for-cooking-baking-seasoning-no-artificial-colors-preservatives-or-taste-enhancers-pepper-100g-100ml,amazon,B0D8L8NR8Q,135,,,,false,OOS,,,0,399,278
+2026-08-09,SVD,CANOLA 1+1L,jivo-canola-cold-pressed-edible-oil-11-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-2l,amazon,B0152TWWSQ,509,438,438,438,true,BELOW,-71,-13.95,1,750,750
+2026-08-09,SVD,CANOLA 1L,jivo-canola-cold-pressed-edible-oil-1-litre-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-1l,amazon,B09MJ6QDX7,239,239,239,239,true,MATCH,0,0,0,375,375
+2026-08-09,SVD,CANOLA 1L + 1L,jivo-canola-oil1-litre-cold-press-cooking-oil-for-daily-use-lowest-in-saturated-fat-2l,amazon,B0CZP26VVN,509,,,,false,OOS,,,0,750,
+2026-08-09,SVD,CANOLA 1L POUCH,jivo-canola-oil1-litre-refined-pouch-cooking-oil-for-daily-use-recommended-by-indian-medical-association-1l,amazon,B07M6FYXWL,259,249,249,249,true,BELOW,-10,-3.86,1,299,299
+2026-08-09,SVD,CANOLA 3L,jivo-canola-cold-pressed-edible-oil-3-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-3l,amazon,B078T3Q3SH,769,749,749,749,true,BELOW,-20,-2.6,1,690,1395
+2026-08-09,SVD,CANOLA 4L,jivo-canola-cold-pressed-edible-oil-4-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-4l,amazon,B0FPMH5Q4S,1149,,,,false,OOS,,,0,1199,1300
+2026-08-09,SVD,CANOLA 5L,jivo-canola-cold-pressed-edible-oil-5-litres-cooking-oil-for-daily-use-ideal-for-roasting-frying-baking-all-types-of-cuisines-cold-pressed-oil-for-cooking-5l,amazon,B077ZN4G28,1099,1074,1074,1074,true,BELOW,-25,-2.27,1,1650,1650
+2026-08-09,SVD,CHIA SEEDS 200G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-200g-200ml,amazon,B0CRF3ZQWL,99,,,,false,OOS,,,0,299,1200
+2026-08-09,SVD,CHIA SEEDS 400G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-400g-400ml,amazon,B0CRH5W2R7,199,,,,false,OOS,,,0,599,1200
+2026-08-09,SVD,CHIA SEEDS 800G,jivo-premium-raw-chia-seeds-i-eating-seeds-for-weight-loss-management-rich-in-calcium-protein-fiber-omega-3-non-gmo-and-fibre-reusable-antioxidant-healthy-breakfast-snack-800g-800ml,amazon,B0CRHR4KYS,339,,,,false,OOS,,,0,899,1200
+2026-08-09,SVD,CINNAMON BARK 100G,jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spices-sourced-from-premium-origins-no-artificial-colors-or-preservatives-pack-for-cooking-seasoning-100g-100ml,amazon,B0D7CVQG35,89,,,,false,OOS,,,0,299,550
+2026-08-09,SVD,CLOVE 100G,jivo-whole-clove-100-gm-no-artificial-colours-or-preservatives-100ml,amazon,B0D7CZ3WYW,209,,,,false,OOS,,,0,280,399
+2026-08-09,SVD,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-1l,amazon,B0BZ8K3DQP,539,,,,false,OOS,,,0,700,3995
+2026-08-09,SVD,COCONUT 200ML,jivo-pure-extra-virgin-coconut-oil-200ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-200ml,amazon,B0CGM7KSFV,129,,,,false,OOS,,,0,285,3995
+2026-08-09,SVD,COCONUT 500ML,jivo-pure-extra-virgin-coconut-oil-500-ml-nourishing-oil-bottle-for-skin-hair-growth-baby-massage-good-for-salad-dressing-zero-cholesterol-and-trans-fat-keto-diet-cooking-500ml,amazon,B0CGN9Y3PT,229,,,,false,OOS,,,0,695,3995
+2026-08-09,SVD,COFFEE,jivo-koffie-instant-smooth-premium-coffee-100-gm-soluble-instant-coffee-powder-easy-to-prepare-with-rich-aroma-and-taste-coffee-for-daily-use-100ml,amazon,B0C8Z7SZG6,239,,,,false,OOS,,,0,350,798
+2026-08-09,SVD,CUMIN SEEDS 100G,jivo-cumin-seeds-fresh-aromatic-natural-spice-for-cooking-no-added-colours-or-preservatives-perfect-for-baking-seasoning-and-flavoring-glutenfree-whole-jeera-seeds-100g-100ml,amazon,B0D8PMQCBV,75,,,,false,OOS,,,0,249,278
+2026-08-09,SVD,EXTRA LIGHT 1+1L,jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l,amazon,B07WSJ45Q4,1189,1039,1039,1039,true,BELOW,-150,-12.62,1,2798,1998
+2026-08-09,SVD,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1-litre-imported-from-spain-everyday-cooking-dressings-salad-soups-dips-and-marinades-all-culinary-uses-light-flavorful-high-mufa-rich-in-antioxidants-1l,amazon,B09HZY97FR,579,469,469,469,true,BELOW,-110,-19,1,1499,1499
+2026-08-09,SVD,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-imported-from-spain-everyday-cooking-dressings-salads-soups-dips-marinades-low-in-saturated-fat-olive-oil-in-convenient-pet-bottle-for-easy-pouring-2l,amazon,B09NXCPZW1,1129,1038,1038,1038,true,BELOW,-91,-8.06,1,2799,2799
+2026-08-09,SVD,EXTRA LIGHT 3L,jivo-extra-light-olive-oil-3-litre-imported-from-spain-recommended-for-daily-cooking-roasting-frying-baking-all-types-of-cuisines-low-in-saturated-fat-3l,amazon,B097ZZTW5C,1789,1579,1579,1579,true,BELOW,-210,-11.74,1,2200,3899
+2026-08-09,SVD,EXTRA LIGHT 500ML,jivo-extra-light-olive-oil-500ml-imported-from-spain-everyday-use-for-cooking-dressings-salad-soups-dips-and-marinades-light-flavorful-high-mufa-rich-in-antioxidants-500ml,amazon,B0D9DBHG18,339,289,289,289,true,BELOW,-50,-14.75,1,499,499
+2026-08-09,SVD,EXTRA LIGHT 5L,jivo-extra-light-olive-oil-5-litre-tin-imported-from-spain-recommendable-daily-cooking-for-roasting-frying-baking-all-type-of-cuisines-low-saturated-fat-low-saturated-fat-5l,amazon,B07MNWTBDT,2599,2420,2420,2420,true,BELOW,-179,-6.89,1,6499,6499
+2026-08-09,SVD,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-1-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-1l,amazon,B093BMGPQC,779,737,737,737,true,BELOW,-42,-5.39,1,1499,999
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,jivo-extra-virgin-olive-oil-1-litre-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-for-dressings-salad-and-soups-dips-marinades-pack-of-2-2l,amazon,B0CZP31DXK,1589,1474,1474,1474,true,BELOW,-115,-7.24,1,2998,1998
+2026-08-09,SVD,EXTRA VIRGIN 200ML,jivo-extra-virgin-olive-oil-200-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-cooking-oil-ideal-use-for-dressings-salad-and-soups-dips-marinades-200ml,amazon,B0CGNBY24B,189,,,,false,OOS,,,0,350,3995
+2026-08-09,SVD,EXTRA VIRGIN 250ML,jivo-extra-virgin-olive-oil-250-ml-glass-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-250ml,amazon,B0CGM8QLXB,209,,,,false,OOS,,,0,450,3995
+2026-08-09,SVD,EXTRA VIRGIN 2L,jivo-extra-virgin-olive-oil-2-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-2l,amazon,B0CH13ZG5M,1589,1499,1499,1499,true,BELOW,-90,-5.66,1,2700,3499
+2026-08-09,SVD,EXTRA VIRGIN 3L,jivo-extra-virgin-olive-oil-3-litre-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-3l,amazon,B0FQ2ZMFB9,2369,,,,false,OOS,,,0,4000,999
+2026-08-09,SVD,EXTRA VIRGIN 500ML,jivo-extra-virgin-olive-oil-500-ml-pet-bottle-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-500ml,amazon,B0CGM7THVN,409,,,,false,OOS,,,0,675,3995
+2026-08-09,SVD,EXTRA VIRGIN 5L,jivo-extra-virgin-olive-oil-5-litre-tin-imported-from-spain-contains-vitamin-e-low-in-saturated-fat-natural-and-cold-pressed-cooking-oil-ideal-for-dressings-salad-and-soups-dips-marinades-5l,amazon,B09XR2YK8S,3599,3499,3499,3499,true,BELOW,-100,-2.78,1,7999,7999
+2026-08-09,SVD,FLAX SEEDS 200G,jivo-flax-seeds-raw-alsi-seeds-for-eating-high-in-protein-iron-dietary-fibre-rich-in-essential-nutrients-ideal-for-adding-to-smoothies-salads-yogurt-baking-healthy-snack-option-200g-200ml,amazon,B0D8TPCV16,89,,,,false,OOS,,,0,249,1200
+2026-08-09,SVD,FLAX SEEDS 400G,jivo-flax-seeds-raw-alsi-seeds-for-smoothies-hair-growth-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-400g-400ml,amazon,B0D8TMZ523,179,,,,false,OOS,,,0,399,1200
+2026-08-09,SVD,FLAX SEEDS 800G,jivo-organic-flax-seeds-raw-alsi-seeds-for-smoothies-cereals-baking-more-rich-in-omega3-fiber-protein-essential-nutrients-100-natural-vegan-glutenfree-for-optimal-health-800g-800ml,amazon,B0D8TN9B9B,349,,,,false,OOS,,,0,750,1200
+2026-08-09,SVD,GINGER ALE 200ML,jivo-healthy-wheatgrass-body-detoxifying-immunity-booster-juice-sugar-free-200-ml-200ml,amazon,B0CYHFFZXG,39,,,,false,OOS,,,0,100,235
+2026-08-09,SVD,GOLD 1+1,jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-cooking-oil-pro-healthy-lifestyle-edible-oil-1-litre-pack-of-2-2l,amazon,B0CWNVJN3B,369,,,,false,OOS,,,0,450,1250
+2026-08-09,SVD,GOLD 1L,jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-natural-antioxidants-1-litre-pack-1l,amazon,B0CT5MYSDS,189,,,,false,OOS,,,0,225,1250
+2026-08-09,SVD,GOLD 5L,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-cooking-oil-rich-in-antioxidants-vitamins-pro-lifestyle-5l-family-pack-5l,amazon,B0C9Q1S6QG,939,,,,false,OOS,,,0,1049,375
+2026-08-09,SVD,GREEN CARDAMOM 100G,jivo-green-cardamom-8mm-elaichi-whole-natural-spices-no-artificial-colors-or-preservatives-distinctive-flavor-aroma-premium-idukki-cardamom-for-cooking-baking-tea-100g-100ml,amazon,B0D7CZD2PB,479,,,,false,OOS,,,0,799,485
+2026-08-09,SVD,GROUNDNUT 1L,jivo-groundnut-oil-1-litre-cold-pressed-unrefined-peanut-oil-for-cooking-vitamin-a-d-fortified-chemicalfree-ground-nut-oil-1l-1l,amazon,B0CKFFW9B6,219,219,219,219,true,MATCH,0,0,0,400,560
+2026-08-09,SVD,GROUNDNUT 5L,jivo-groundnut-oil-5-litre-cold-pressed-unrefined-peanut-oil-for-cooking-vitamin-a-d-fortified-chemicalfree-ground-nut-oil-5l,amazon,B0CKFFGC31,1139,990,990,990,true,BELOW,-149,-13.08,1,2800,2800
+2026-08-09,SVD,JIVO POMACE 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-imported-from-spain-rich-in-monounsaturated-fatty-acids-low-in-saturated-fat-ideal-for-roasting-frying-and-baking-1l,amazon,B0821DNF2W,419,369,369,369,true,BELOW,-50,-11.93,1,1049,649
+2026-08-09,SVD,JIVO POMACE 1L + 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-rich-in-mufa-low-in-saturated-fat-2l,amazon,B0CZP46SJX,849,738,738,738,true,BELOW,-111,-13.07,1,2098,1298
+2026-08-09,SVD,JIVO POMACE 2L,jivo-everyday-cooking-pomace-olive-oil-2-litre-imported-from-spain-rich-in-mufa-low-in-saturated-fat-ideal-for-frying-roasting-baking-cooking-oil-for-daily-use-2l,amazon,B0C4FFYSLV,849,,,,false,OOS,,,0,1600,2799
+2026-08-09,SVD,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-imported-from-spain-recommended-for-roasting-frying-and-baking-all-types-of-cuisines-rich-in-mufa-low-in-saturated-fat-5l,amazon,B07X53ZL6J,1899,1899,1899,1899,true,MATCH,0,0,0,4999,4999
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,jivo-punjabi-shikanji-wheatgrass-juice-nimbu-shikanji-masala-drink-natural-summer-refreshment-160ml-160ml,amazon,B0GZ7PXVF8,219,,,,false,OOS,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,jivo-natural-mineral-1l-1l,amazon,B0CSPMN88F,18,,,,false,OOS,,,0,30,235
+2026-08-09,SVD,JIVO WATER 250ML,jivo-mineral-water-250ml-250ml,amazon,B0CST1ZYNY,109,,,,false,OOS,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,jivo-natural-mineral-water-himalayan-origin-nonro-unprocessed-noncarbonated-additivefree-packaged-water-for-clean-hydration-500-ml-bottle-500ml,amazon,B0GZB4ZQV3,10,,,,false,OOS,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-recommended-for-roasting-frying-baking-all-type-of-cuisines-1l,amazon,B09NYCSQLF,199,,,,false,OOS,,,0,255,356
+2026-08-09,SVD,MUSTARD 1L + 1L,jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-each-recommendable-for-roasting-frying-baking-all-type-of-cuisines-healthy-cooking-oil-for-daily-use-1l,amazon,B09HKPSS96,409,329,329,329,true,BELOW,-80,-19.56,1,500,510
+2026-08-09,SVD,MUSTARD 1L POUCH,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-recommendable-for-roasting-frying-baking-all-type-of-cuisines-1l,amazon,B0DRYVRYYM,209,,,,false,OOS,,,0,250,375
+2026-08-09,SVD,MUSTARD 3L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-3-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-3l,amazon,B0GF22BHZ7,599,,,,false,OOS,,,0,765,289
+2026-08-09,SVD,MUSTARD 4L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-4-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-4l,amazon,B0GFFSDTGP,799,,,,false,OOS,,,0,1000,289
+2026-08-09,SVD,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-contains-omega3-and-vitamin-e-ideal-for-cooking-frying-pickling-daily-use-5l,amazon,B091XPD9J3,949,,,,false,OOS,,,0,1250,356
+2026-08-09,SVD,POMACE 3L,jivo-everyday-cooking-pomace-olive-oil-3-litre-imported-from-spain-rich-in-mufa-low-in-saturated-fat-ideal-for-frying-roasting-baking-cooking-oil-for-daily-use-3l,amazon,B0FQ31J42X,1279,,,,false,OOS,,,0,3050,1300
+2026-08-09,SVD,PUMPKIN SEEDS 200G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-200g-200ml,amazon,B0D8TR7R3Y,199,,,,false,OOS,,,0,399,1200
+2026-08-09,SVD,PUMPKIN SEEDS 400G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-400g-400ml,amazon,B0D8TR1ZCG,389,,,,false,OOS,,,0,699,1200
+2026-08-09,SVD,PUMPKIN SEEDS 800G,jivo-raw-pumpkin-seeds-healthy-snack-for-breakfast-high-in-fiber-antioxidants-ideal-for-diets-weight-management-nutritious-superfood-for-daily-wellness-hygienically-packed-800g-800ml,amazon,B0D8TPCPLS,769,,,,false,OOS,,,0,1299,1200
+2026-08-09,SVD,PUNJABI JEERA 160ML,jivo-wheatgrass-punjabi-jeera-juice-160ml-tangy-cumin-flavored-refreshment-blended-with-fresh-wheatgrass-extract-convenient-pet-bottles-suitable-for-daily-hydration-refreshing-160ml,amazon,B0F9YVR47L,219,,,,false,OOS,,,0,360,235
+2026-08-09,SVD,QUINOA SEEDS 200G,jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-200g-200ml,amazon,B0DGT6CK3P,109,,,,false,OOS,,,0,199,2600
+2026-08-09,SVD,QUINOA SEEDS 400G,jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-400g-400ml,amazon,B0DGTFLQMS,169,,,,false,OOS,,,0,299,2600
+2026-08-09,SVD,QUINOA SEEDS 800G,jivo-premium-quinoa-gluten-free-glutenfree-saponin-free-high-protein-fiber-healthy-breakfast-diet-food-for-weight-management-100-wholegrain-cereal-quinoa-jar-800g-800ml,amazon,B0DGT6KQ4F,249,237,237,237,true,BELOW,-12,-4.82,1,399,399
+2026-08-09,SVD,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauting-baking-chemicalfree-1l,amazon,B0DBHQ2QWW,189,174,174,174,true,BELOW,-15,-7.94,1,285,285
+2026-08-09,SVD,RICE BRAN 1L + 1L,,amazon,B0H2HDLB5Q,369,,,,false,NOT_LISTED,,,0,570,
+2026-08-09,SVD,RICE BRAN 4L,jivo-rice-bran-oil-4-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-4l,amazon,B0GFWHTMT9,719,,,,false,OOS,,,0,1140,1300
+2026-08-09,SVD,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-premium-cooking-oil-rich-in-antioxidants-ideal-for-deep-frying-sauteing-baking-chemicalfree-5l,amazon,B0DBJ13FKL,909,849,849,849,true,BELOW,-60,-6.6,1,1425,1425
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,jivo-rosemary-leaves-whole-natural-no-preservatives-or-additives-ideal-for-hair-growth-herbal-tea-seasoning-and-cooking-salvia-rosmarinus-150ml,amazon,B0DGTNDH9L,169,,,,false,OOS,,,0,499,400
+2026-08-09,SVD,SAFFRON 1GMS,jivo-pure-kashmiri-saffron-a-grade-kesar-rich-in-antioxidants-boosts-immunity-skin-glow-overall-wellness-1ml,amazon,B0FNDJBJPV,499,,,,false,OOS,,,0,899,900
+2026-08-09,SVD,SANO CANOLA 1L,sano-canola-oil-cooking-oil-for-daily-use-recommended-for-all-types-of-cuisines-ideal-for-conscious-cooking-1-liter-1l,amazon,B0CK2D4XCH,249,,,,false,OOS,,,0,475,3995
+2026-08-09,SVD,SANO CANOLA 5L,sano-canola-cooking-oil-for-daily-use-recommended-for-all-types-of-cuisines-lowest-in-saturated-fat-content-ideal-for-healthconscious-cooking-5-litre-smart-cooking-choice-5l,amazon,B0CK2B158Y,1199,,,,false,OOS,,,0,1950,1250
+2026-08-09,SVD,SANO CLASSIC 1L,sano-extra-light-olive-oil-1-litre-product-of-spain-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-smart-cooking-oil-1l,amazon,B0CCVF1XVS,559,,,,false,OOS,,,0,1399,3995
+2026-08-09,SVD,SANO CLASSIC 5L,sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cuisines-perfect-for-cooking-frying-roasting-grilling-and-baking-versatile-and-healthy-cooking-oil-5l,amazon,B0CKBFKQ4P,2609,1999,1999,1999,true,BELOW,-610,-23.38,1,6499,6499
+2026-08-09,SVD,SANO MUSTARD 1L,sano-pure-fresh-kachi-ghani-mustard-oil-1-litre-pet-bottle-high-pungency-rich-in-omega3-100-natural-authentic-indian-cooking-oil-boosts-heart-health-1l,amazon,B0C77PZ83B,199,,,,false,OOS,,,0,235,356
+2026-08-09,SVD,SANO MUSTARD 5L,sano-pure-and-aromatic-kachi-ghani-mustard-oil-5l-pet-bottle-100-natural-ideal-for-cooking-pickling-and-health-benefits-edible-oil-5l,amazon,B0C77VSKBL,949,,,,false,OOS,,,0,1200,375
+2026-08-09,SVD,SANO POMACE 1L,sano-pomace-olive-oil-1l-pet-bottle-ideal-for-deep-frying-sauting-roasting-high-smoke-point-cooking-oil-for-indian-kitchen-1000ml-1l,amazon,B0CF9RQ9PL,399,359,359,359,true,BELOW,-40,-10.03,1,999,999
+2026-08-09,SVD,SANO POMACE 5L,sano-pomace-olive-oil-5l-ideal-for-frying-roasting-sauting-rich-neutral-flavour-high-smoke-point-versatile-edible-cooking-oil-for-indian-cuisine-5l,amazon,B0CFFSWMXZ,1969,1499,1499,1499,true,BELOW,-470,-23.87,1,4499,4499
+2026-08-09,SVD,SANO SOYABEAN 1L,sano-soyabean-oil-1-ltr-pet-bottle-pure-natural-nutrientrich-cooking-oil-ideal-for-healthy-delights-in-cooking-frying-and-baking-perfect-for-indian-and-international-cuisines-1l,amazon,B0C77V6LL7,189,,,,false,OOS,,,0,225,375
+2026-08-09,SVD,SANO SOYABEAN 5L,sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-oil-with-a-high-omega3-content-and-a-low-saturated-fat-content-ideal-for-delicious-and-healthful-meals-5l,amazon,B0C3QYP96Z,899,849,849,849,true,BELOW,-50,-5.56,1,1450,1450
+2026-08-09,SVD,SANO SUNFLOWER 1L,sano-sunflower-oil-1-litre-pet-bottle-pure-nutrientrich-sunflower-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-1l,amazon,B0C3QV7FV6,209,,,,false,OOS,,,0,280,649
+2026-08-09,SVD,SANO SUNFLOWER 5L,sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil-with-high-smoke-point-ideal-for-frying-sauting-and-baking-all-type-of-cuisines-5l,amazon,B0C7KSLVLB,1029,,,,false,OOS,,,0,1475,375
+2026-08-09,SVD,SESAME 1L + 1L,,amazon,B0H2B92WLP,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,jivo-first-pressed-sesame-oil-1l-bottle-gingelly-oil-contains-mufa-and-omega6-pufa-natural-antioxidants-ideal-for-cooking-1l,amazon,B0FDKZPGX1,329,,,,false,OOS,,,0,600,699
+2026-08-09,SVD,SO OLIVE 1L,jivo-so-olive-oil-1-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-1l,amazon,B0DC6JR4F3,229,216,216,216,true,BELOW,-13,-5.68,1,325,325
+2026-08-09,SVD,SO OLIVE 1L + 1L,,amazon,B0H2HJKJH1,549,,,,false,NOT_LISTED,,,0,650,
+2026-08-09,SVD,SO OLIVE 5L,jivo-so-olive-oil-5-litre-blend-of-rice-bran-olive-oil-nutritious-cooking-oil-for-a-healthy-lifestyle-ideal-for-daily-use-edible-oil-5l,amazon,B0DC6WMYM6,1369,,,,false,OOS,,,0,1625,4999
+2026-08-09,SVD,SODA 750ML,jivo-extra-fizzy-soda-750-ml-soda-750ml,amazon,B0D2KLSTFZ,15,,,,false,OOS,,,0,30,695
+2026-08-09,SVD,SODA LEMON 750ML,jivo-fizzy-soda-flavoured-with-lemon-750ml-carbonated-water-zero-sugar-zero-calories-i-pack-of-1-750ml,amazon,B0DP36SDGD,45,,,,false,OOS,,,0,55,210
+2026-08-09,SVD,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-high-in-omega6-pufa-contains-tocopherols-natural-antioxidant-suitable-for-daily-cooking-1l,amazon,B0B6HNNL5B,199,175,175,175,true,BELOW,-24,-12.06,1,225,225
+2026-08-09,SVD,SOYABEAN 1L + 1L,jivo-soyabean-cooking-oil-1-litre-bottles-pack-of-2-litres-ideal-for-roasting-frying-and-baking-healthy-cooking-oil-for-daily-use-pack-of-2-1l,amazon,B0B7JJ7C9W,389,,,,false,OOS,,,0,1100,1250
+2026-08-09,SVD,SOYABEAN 1L POUCH,jivo-soyabean-oil-pouch-1-litre-edible-cooking-oil-for-daily-use-ideal-for-roasting-frying-and-baking-high-in-omega3-and-low-in-saturated-fat-1l,amazon,B0BZ4WPT43,199,,,,false,OOS,,,0,199,1250
+2026-08-09,SVD,SOYABEAN 5L,jivo-cooking-edible-soyabean-oil-5-litre-high-in-omega6-pufa-contains-tocopherols-natural-antioxidant-suitable-for-daily-cooking-5l,amazon,B0B6HPPMXL,949,,,,false,OOS,,,0,1100,1425
+2026-08-09,SVD,SPRING WATER 750ML,jivo-diet-fizzy-peach-natural-spring-water-peach-750ml-750ml,amazon,B0D2TVRMB6,50,,,,false,OOS,,,0,55,1200
+2026-08-09,SVD,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-1l,amazon,B0B4SJTNF2,199,179,179,179,true,BELOW,-20,-10.05,1,275,275
+2026-08-09,SVD,SUNFLOWER 1L + 1L,jivo-cold-pressed-chemical-free-sunflower-oil-1-litre-ideal-for-roasting-frying-baking-all-types-of-cuisines-healthy-cooking-oil-for-daily-use-pack-of-2-litres-2l,amazon,B0992GRH3Z,429,,,,false,OOS,,,0,550,1250
+2026-08-09,SVD,SUNFLOWER 3L,jivo-cold-pressed-chemicalfree-sunflower-oil-3-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-3l,amazon,B0GDV29RCN,649,,,,false,OOS,,,0,825,1300
+2026-08-09,SVD,SUNFLOWER 4L,jivo-sunflower-oil-4-litres-pure-natural-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-sunflower-oil-4l,amazon,B0FPMJPCFM,869,,,,false,OOS,,,0,1038,1300
+2026-08-09,SVD,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-chemicalfree-oil-for-cooking-ideal-for-roasting-frying-baking-and-all-types-of-cuisines-5l,amazon,B0991VMDB1,949,925,925,925,true,BELOW,-24,-2.53,1,1350,1350
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,jivo-sunflower-seeds-200g-raw-natural-sunflower-seeds-for-snacking-healthy-snack-option-ideal-for-weight-management-antioxidants-great-for-diets-nutrientrich-food-packed-with-protein-200ml,amazon,B0D8TT92SH,129,,,,false,OOS,,,0,299,1200
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-clean-eating-nutrientrich-diets-400g-400ml,amazon,B0D8TRK651,249,,,,false,OOS,,,0,499,1200
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,jivo-sunflower-seeds-raw-natural-sunflower-seeds-for-healthy-snacking-high-in-protein-fiber-antioxidants-ideal-for-weight-management-diets-clean-eating-glutenfree-nongmo-800g-800ml,amazon,B0D8TPSX1V,369,,,,false,OOS,,,0,899,999
+2026-08-09,SVD,WG MANGO JUICE 500ML,jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-500ml,amazon,B0DM2G4YCC,35,,,,false,OOS,,,0,100,235
+2026-08-09,SVD,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-1l,amazon,B0FF9P7XVX,259,229,229,229,true,BELOW,-30,-11.58,1,375,355
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,,amazon,B0GX19RGQH,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,YELLOW MUSTARD 5L,jivo-first-pressed-yellow-mustard-oil-5-litre-pili-sarson-oil-for-cooking-chemicalfree-ideal-for-roasting-frying-baking-omega3-pufa-tocopherols-added-vitamins-a-d-for-diverse-cuisines-5l,amazon,B0GF1Z3DXR,1269,1031,1031,1031,true,BELOW,-238,-18.75,1,2000,1795
+2026-08-09,SVD,A2 GHEE 1L,ghegeujjnscchwq9,flipkart,GHEGEUJJNSCCHWQ9,1309,,,,false,OOS,,,0,4000,4000
+2026-08-09,SVD,A2 GHEE 500ML,ghehhzbqjbnvzggq,flipkart,GHEHHZBQJBNVZGGQ,709,,,,false,OOS,,,0,2200,2200
+2026-08-09,SVD,BASIL SEEDS 200G,edsh4zf2vbebfjuq,flipkart,EDSH4ZF2VBEBFJUQ,69,,,,false,OOS,,,0,349,349
+2026-08-09,SVD,BASIL SEEDS 400G,,flipkart,,189,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,BASIL SEEDS 800G,edsh4yk7vc4zcnpu,flipkart,EDSH4YK7VC4ZCNPU,329,,,,false,OOS,,,0,1099,1099
+2026-08-09,SVD,BLACK CARDAMOM 100G,scmh4h8hzj8ahq9g,flipkart,SCMH4H8HZJ8AHQ9G,289,,,,false,OOS,,,0,549,
+2026-08-09,SVD,BLACK OLIVE 470G,,flipkart,,209,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,BLACK PEPPER 100G,scmh2hmc2u7pqmnv,flipkart,SCMH2HMC2U7PQMNV,135,,,,false,OOS,,,0,399,399
+2026-08-09,SVD,CANOLA 1+1L,edofrxtmjgae9dct,flipkart,EDOFRXTMJGAE9DCT,509,,,,false,OOS,,,0,750,750
+2026-08-09,SVD,CANOLA 1L,edogdtnzgdahuduj,flipkart,EDOGDTNZGDAHUDUJ,239,,,,false,OOS,,,0,375,375
+2026-08-09,SVD,CANOLA 1L + 1L,edofrxtmjgae9dct,flipkart,EDOFRXTMJGAE9DCT,509,,,,false,OOS,,,0,750,750
+2026-08-09,SVD,CANOLA 1L POUCH,,flipkart,,259,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CANOLA 3L,edoghersuqwaau5s,flipkart,EDOGHERSUQWAAU5S,769,,,,false,OOS,,,0,690,
+2026-08-09,SVD,CANOLA 4L,,flipkart,,1149,,,,false,NOT_LISTED,,,0,1199,
+2026-08-09,SVD,CANOLA 5L,edoftx47swwqprvs,flipkart,EDOFTX47SWWQPRVS,1099,,,,false,OOS,,,0,1650,1650
+2026-08-09,SVD,CHIA SEEDS 200G,edsh4ygygrwrqrgk,flipkart,EDSH4YGYGRWRQRGK,99,,,,false,OOS,,,0,299,
+2026-08-09,SVD,CHIA SEEDS 400G,edsgxe59s7agkhug,flipkart,EDSGXE59S7AGKHUG,199,,,,false,OOS,,,0,599,
+2026-08-09,SVD,CHIA SEEDS 800G,edsh3fjv4pejdfan,flipkart,EDSH3FJV4PEJDFAN,339,,,,false,OOS,,,0,899,899
+2026-08-09,SVD,CINNAMON BARK 100G,scmh4h8snyfgcykm,flipkart,SCMH4H8SNYFGCYKM,89,,,,false,OOS,,,0,299,
+2026-08-09,SVD,CLOVE 100G,scmhckzekpqwve5v,flipkart,SCMHCKZEKPQWVE5V,209,,,,false,OOS,,,0,280,
+2026-08-09,SVD,COCONUT 1L,edogpm99cpxseuyn,flipkart,EDOGPM99CPXSEUYN,539,,,,false,OOS,,,0,700,700
+2026-08-09,SVD,COCONUT 200ML,,flipkart,,129,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,COCONUT 500ML,edohf5f6bs3mehjd,flipkart,EDOHF5F6BS3MEHJD,229,,,,false,OOS,,,0,695,398
+2026-08-09,SVD,COFFEE,cfegmj5gje7hd3dq,flipkart,CFEGMJ5GJE7HD3DQ,239,,,,false,OOS,,,0,350,350
+2026-08-09,SVD,CUMIN SEEDS 100G,scmh3fhauzysnuab,flipkart,SCMH3FHAUZYSNUAB,75,,,,false,OOS,,,0,249,
+2026-08-09,SVD,EXTRA LIGHT 1+1L,qwrggc46ukqkvces,flipkart,QWRGGC46UKQKVCES,1189,,,,false,OOS,,,0,2798,
+2026-08-09,SVD,EXTRA LIGHT 1L,edoge5whzbgw4ska,flipkart,EDOGE5WHZBGW4SKA,579,,,,false,OOS,,,0,1499,
+2026-08-09,SVD,EXTRA LIGHT 2L,edoft6pr7qmyhgjh,flipkart,EDOFT6PR7QMYHGJH,1129,,,,false,OOS,,,0,2799,2998
+2026-08-09,SVD,EXTRA LIGHT 3L,edohzyysyez2yvtm,flipkart,EDOHZYYSYEZ2YVTM,1789,,,,false,OOS,,,0,2200,
+2026-08-09,SVD,EXTRA LIGHT 500ML,,flipkart,,339,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,EXTRA LIGHT 5L,edofzfufcqdjhtqf,flipkart,EDOFZFUFCQDJHTQF,2599,,,,false,OOS,,,0,6499,6499
+2026-08-09,SVD,EXTRA VIRGIN 1L,edog2nmeharedmz3,flipkart,EDOG2NMEHAREDMZ3,779,,,,false,OOS,,,0,1499,1799
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,qwrgemns9zpzgwjh,flipkart,QWRGEMNS9ZPZGWJH,1589,,,,false,OOS,,,0,2998,2998
+2026-08-09,SVD,EXTRA VIRGIN 200ML,edohgpf2zq9rqpb3,flipkart,EDOHGPF2ZQ9RQPB3,189,,,,false,OOS,,,0,350,
+2026-08-09,SVD,EXTRA VIRGIN 250ML,edoguy3fp4y3rvqm,flipkart,EDOGUY3FP4Y3RVQM,209,,,,false,OOS,,,0,450,450
+2026-08-09,SVD,EXTRA VIRGIN 2L,edog2nmphjzh6gjc,flipkart,EDOG2NMPHJZH6GJC,1589,,,,false,OOS,,,0,2700,3598
+2026-08-09,SVD,EXTRA VIRGIN 3L,,flipkart,,2369,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,EXTRA VIRGIN 500ML,edogwgz7tq6zzt3h,flipkart,EDOGWGZ7TQ6ZZT3H,409,,,,false,OOS,,,0,675,998
+2026-08-09,SVD,EXTRA VIRGIN 5L,edogdtxggcgfce88,flipkart,EDOGDTXGGCGFCE88,3599,,,,false,OOS,,,0,7999,5995
+2026-08-09,SVD,FLAX SEEDS 200G,edsh4zgfwpsuy7rh,flipkart,EDSH4ZGFWPSUY7RH,89,,,,false,OOS,,,0,249,249
+2026-08-09,SVD,FLAX SEEDS 400G,edsh5avfzrhq43rz,flipkart,EDSH5AVFZRHQ43RZ,179,,,,false,OOS,,,0,399,399
+2026-08-09,SVD,FLAX SEEDS 800G,edsh5bx4umfr4xyf,flipkart,EDSH5BX4UMFR4XYF,349,,,,false,OOS,,,0,750,750
+2026-08-09,SVD,GINGER ALE 200ML,,flipkart,,39,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,GOLD 1+1,edogyj7syy4h2mdh,flipkart,EDOGYJ7SYY4H2MDH,369,,,,false,OOS,,,0,450,450
+2026-08-09,SVD,GOLD 1L,edogxyeferfxp3zy,flipkart,EDOGXYEFERFXP3ZY,189,213,213,213,true,ABOVE,24,12.7,0,225,225
+2026-08-09,SVD,GOLD 5L,edogrf8rmwnygjpe,flipkart,EDOGRF8RMWNYGJPE,939,,,,false,OOS,,,0,1049,670
+2026-08-09,SVD,GREEN CARDAMOM 100G,scmh4h8nch2pkywv,flipkart,SCMH4H8NCH2PKYWV,479,,,,false,OOS,,,0,799,
+2026-08-09,SVD,GROUNDNUT 1L,edogwf6ugcwrregz,flipkart,EDOGWF6UGCWRREGZ,219,,,,false,OOS,,,0,400,560
+2026-08-09,SVD,GROUNDNUT 5L,edoh9p7nnnjuxgzp,flipkart,EDOH9P7NNNJUXGZP,1139,,,,false,OOS,,,0,2800,
+2026-08-09,SVD,JIVO POMACE 1L,edohyrptdvezvz8e,flipkart,EDOHYRPTDVEZVZ8E,419,,,,false,OOS,,,0,1049,1049
+2026-08-09,SVD,JIVO POMACE 1L + 1L,edohyrrpj3h7nhhn,flipkart,EDOHYRRPJ3H7NHHN,849,,,,false,OOS,,,0,2098,1899
+2026-08-09,SVD,JIVO POMACE 2L,edogyzhgusaddg9b,flipkart,EDOGYZHGUSADDG9B,849,,,,false,OOS,,,0,1600,2098
+2026-08-09,SVD,JIVO POMACE 5L,edoge5xhfzn2hz9d,flipkart,EDOGE5XHFZN2HZ9D,1899,,,,false,OOS,,,0,4999,4999
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,,flipkart,,219,,,,false,NOT_LISTED,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,,flipkart,,18,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,JIVO WATER 250ML,,flipkart,,109,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,,flipkart,,10,,,,false,NOT_LISTED,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,edogdvwygjndyrqp,flipkart,EDOGDVWYGJNDYRQP,199,,,,false,OOS,,,0,255,333
+2026-08-09,SVD,MUSTARD 1L + 1L,qwrgemqzxaywvm4m,flipkart,QWRGEMQZXAYWVM4M,409,,,,false,OOS,,,0,500,510
+2026-08-09,SVD,MUSTARD 1L POUCH,,flipkart,,209,,,,false,NOT_LISTED,,,0,250,
+2026-08-09,SVD,MUSTARD 3L,edogkc6kwybcnngh,flipkart,EDOGKC6KWYBCNNGH,599,,,,false,OOS,,,0,765,750
+2026-08-09,SVD,MUSTARD 4L,edohgwu9wapbehwk,flipkart,EDOHGWU9WAPBEHWK,799,,,,false,OOS,,,0,1000,
+2026-08-09,SVD,MUSTARD 5L,edoh9phgzg9h4gvt,flipkart,EDOH9PHGZG9H4GVT,949,,,,false,OOS,,,0,1250,
+2026-08-09,SVD,POMACE 3L,edogfyrutbcs6yhw,flipkart,EDOGFYRUTBCS6YHW,1279,,,,false,OOS,,,0,3050,2247
+2026-08-09,SVD,PUMPKIN SEEDS 200G,edsh5avcxwvgycyt,flipkart,EDSH5AVCXWVGYCYT,199,,,,false,OOS,,,0,399,399
+2026-08-09,SVD,PUMPKIN SEEDS 400G,edsh5avgyvmtpzec,flipkart,EDSH5AVGYVMTPZEC,389,,,,false,OOS,,,0,699,
+2026-08-09,SVD,PUMPKIN SEEDS 800G,edsh4zzgcgcmyvfh,flipkart,EDSH4ZZGCGCMYVFH,769,,,,false,OOS,,,0,1299,1299
+2026-08-09,SVD,PUNJABI JEERA 160ML,,flipkart,,219,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,QUINOA SEEDS 200G,,flipkart,,109,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,QUINOA SEEDS 400G,,flipkart,,169,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,QUINOA SEEDS 800G,,flipkart,,249,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,RICE BRAN 1L,edohf5ykx4kjregk,flipkart,EDOHF5YKX4KJREGK,189,,,,false,OOS,,,0,285,285
+2026-08-09,SVD,RICE BRAN 1L + 1L,edohbh2fp9es6gga,flipkart,EDOHBH2FP9ES6GGA,369,,,,false,OOS,,,0,570,570
+2026-08-09,SVD,RICE BRAN 4L,,flipkart,,719,,,,false,NOT_LISTED,,,0,1140,
+2026-08-09,SVD,RICE BRAN 5L,edoh3yz46gfvhepb,flipkart,EDOH3YZ46GFVHEPB,909,,,,false,OOS,,,0,1425,1425
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,,flipkart,,169,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SAFFRON 1GMS,scmhg4hdys45ycaz,flipkart,SCMHG4HDYS45YCAZ,499,,,,false,OOS,,,0,899,
+2026-08-09,SVD,SANO CANOLA 1L,edogvh5wwcxqnjhf,flipkart,EDOGVH5WWCXQNJHF,249,,,,false,OOS,,,0,475,475
+2026-08-09,SVD,SANO CANOLA 5L,edogw3gwc36phwky,flipkart,EDOGW3GWC36PHWKY,1199,,,,false,OOS,,,0,1950,1950
+2026-08-09,SVD,SANO CLASSIC 1L,edogvef33gyxkhew,flipkart,EDOGVEF33GYXKHEW,559,,,,false,OOS,,,0,1399,
+2026-08-09,SVD,SANO CLASSIC 5L,edohagdyvqwt6gng,flipkart,EDOHAGDYVQWT6GNG,2609,,,,false,OOS,,,0,6499,
+2026-08-09,SVD,SANO MUSTARD 1L,,flipkart,,199,,,,false,NOT_LISTED,,,0,235,
+2026-08-09,SVD,SANO MUSTARD 5L,edogqthv2rjybfr9,flipkart,EDOGQTHV2RJYBFR9,949,,,,false,OOS,,,0,1200,1200
+2026-08-09,SVD,SANO POMACE 1L,edogrrxuhzzhz2wz,flipkart,EDOGRRXUHZZHZ2WZ,399,,,,false,OOS,,,0,999,999
+2026-08-09,SVD,SANO POMACE 5L,edogrsy3tnxgejpj,flipkart,EDOGRSY3TNXGEJPJ,1969,,,,false,OOS,,,0,4499,4599
+2026-08-09,SVD,SANO SOYABEAN 1L,,flipkart,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SANO SOYABEAN 5L,,flipkart,,899,,,,false,NOT_LISTED,,,0,1450,
+2026-08-09,SVD,SANO SUNFLOWER 1L,edogqwu2jyazcgzm,flipkart,EDOGQWU2JYAZCGZM,209,,,,false,OOS,,,0,280,291
+2026-08-09,SVD,SANO SUNFLOWER 5L,,flipkart,,1029,,,,false,NOT_LISTED,,,0,1475,
+2026-08-09,SVD,SESAME 1L + 1L,,flipkart,,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,edohdgcrehez8kpz,flipkart,EDOHDGCREHEZ8KPZ,329,,,,false,OOS,,,0,600,600
+2026-08-09,SVD,SO OLIVE 1L,edoh5he7fczjwtaw,flipkart,EDOH5HE7FCZJWTAW,229,,,,false,OOS,,,0,325,325
+2026-08-09,SVD,SO OLIVE 1L + 1L,edohbh2urwdmhpxc,flipkart,EDOHBH2URWDMHPXC,549,,,,false,OOS,,,0,650,650
+2026-08-09,SVD,SO OLIVE 5L,edoh5hehthkwthyy,flipkart,EDOH5HEHTHKWTHYY,1369,,,,false,OOS,,,0,1625,1625
+2026-08-09,SVD,SODA 750ML,,flipkart,,15,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,SODA LEMON 750ML,,flipkart,,45,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SOYABEAN 1L,,flipkart,,199,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SOYABEAN 1L + 1L,edoggpfz2fcj6uws,flipkart,EDOGGPFZ2FCJ6UWS,389,,,,false,OOS,,,0,1100,
+2026-08-09,SVD,SOYABEAN 1L POUCH,,flipkart,,199,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,SOYABEAN 5L,edoggf7edc9pffhh,flipkart,EDOGGF7EDC9PFFHH,949,,,,false,OOS,,,0,1100,1100
+2026-08-09,SVD,SPRING WATER 750ML,,flipkart,,50,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SUNFLOWER 1L,qwrgemp4hbfd4gf3,flipkart,QWRGEMP4HBFD4GF3,199,,,,false,OOS,,,0,275,
+2026-08-09,SVD,SUNFLOWER 1L + 1L,,flipkart,,429,,,,false,NOT_LISTED,,,0,550,
+2026-08-09,SVD,SUNFLOWER 3L,edoghzsebqyya6zw,flipkart,EDOGHZSEBQYYA6ZW,649,,,,false,OOS,,,0,825,825
+2026-08-09,SVD,SUNFLOWER 4L,edohgwsvungy8y3m,flipkart,EDOHGWSVUNGY8Y3M,869,,,,false,OOS,,,0,1038,1080
+2026-08-09,SVD,SUNFLOWER 5L,edogdvfwgprvttms,flipkart,EDOGDVFWGPRVTTMS,949,,,,false,OOS,,,0,1350,
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,edsh5avjzcsan5p3,flipkart,EDSH5AVJZCSAN5P3,129,,,,false,OOS,,,0,299,
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,edsh66rre84eyvhc,flipkart,EDSH66RRE84EYVHC,249,,,,false,OOS,,,0,499,
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,edsh63q3yyywhmuh,flipkart,EDSH63Q3YYYWHMUH,369,,,,false,OOS,,,0,899,899
+2026-08-09,SVD,WG MANGO JUICE 500ML,,flipkart,,35,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,YELLOW MUSTARD 1L,edohdgdyauqswvqv,flipkart,EDOHDGDYAUQSWVQV,259,,,,false,OOS,,,0,375,340
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,edohnfqudf32jhzr,flipkart,EDOHNFQUDF32JHZR,509,,,,false,OOS,,,0,750,790
+2026-08-09,SVD,YELLOW MUSTARD 5L,,flipkart,,1269,,,,false,NOT_LISTED,,,0,2000,
+2026-08-09,SVD,A2 GHEE 1L,,amazon-fresh,,1309,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,A2 GHEE 500ML,,amazon-fresh,,709,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,BASIL SEEDS 200G,,amazon-fresh,,69,,,,false,NOT_LISTED,,,0,349,
+2026-08-09,SVD,BASIL SEEDS 400G,,amazon-fresh,,189,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,BASIL SEEDS 800G,,amazon-fresh,,329,,,,false,NOT_LISTED,,,0,1099,
+2026-08-09,SVD,BLACK CARDAMOM 100G,,amazon-fresh,,289,,,,false,NOT_LISTED,,,0,549,
+2026-08-09,SVD,BLACK OLIVE 470G,,amazon-fresh,,209,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,BLACK PEPPER 100G,,amazon-fresh,,135,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,CANOLA 1+1L,jivo-canola-cold-pressed-edible-oil-11-litres-1l,amazon-fresh,B0152TWWSQ,509,438,438,438,true,BELOW,-71,-13.95,60,750,750
+2026-08-09,SVD,CANOLA 1L,jivo-cold-pressed-canola-oil-1-litre-1l,amazon-fresh,B09MJ6QDX7,239,239,233,239,true,MATCH,0,0,12,375,375
+2026-08-09,SVD,CANOLA 1L + 1L,,amazon-fresh,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L POUCH,,amazon-fresh,,259,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CANOLA 3L,,amazon-fresh,,769,,,,false,NOT_LISTED,,,0,690,
+2026-08-09,SVD,CANOLA 4L,,amazon-fresh,,1149,,,,false,NOT_LISTED,,,0,1199,
+2026-08-09,SVD,CANOLA 5L,jivo-cold-pressed-canola-oil-5-litre-5l,amazon-fresh,B077ZN4G28,1099,1074,1074,1074,true,BELOW,-25,-2.27,28,1650,1650
+2026-08-09,SVD,CHIA SEEDS 200G,,amazon-fresh,,99,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CHIA SEEDS 400G,,amazon-fresh,,199,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,CHIA SEEDS 800G,,amazon-fresh,,339,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,CINNAMON BARK 100G,,amazon-fresh,,89,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CLOVE 100G,,amazon-fresh,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-1l,amazon-fresh,B0BZ8K3DQP,539,489,489,489,true,BELOW,-50,-9.28,17,700,700
+2026-08-09,SVD,COCONUT 200ML,,amazon-fresh,,129,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,COCONUT 500ML,,amazon-fresh,B0CGN9Y3PT,229,,,,false,NOT_LISTED,,,0,695,
+2026-08-09,SVD,COFFEE,,amazon-fresh,,239,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,CUMIN SEEDS 100G,,amazon-fresh,,75,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,EXTRA LIGHT 1+1L,,amazon-fresh,,1189,,,,false,NOT_LISTED,,,0,2798,
+2026-08-09,SVD,EXTRA LIGHT 1L,jivo-extra-light-spainimported-olive-oil-1-litre-1l,amazon-fresh,B09HZY97FR,579,469,469,469,true,BELOW,-110,-19,8,1499,1499
+2026-08-09,SVD,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-2l,amazon-fresh,B09NXCPZW1,1129,1038,1038,1038,true,BELOW,-91,-8.06,17,2799,2799
+2026-08-09,SVD,EXTRA LIGHT 3L,,amazon-fresh,,1789,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,EXTRA LIGHT 500ML,,amazon-fresh,,339,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,EXTRA LIGHT 5L,,amazon-fresh,,2599,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-1-litre-1l,amazon-fresh,B093BMGPQC,779,737,737,737,true,BELOW,-42,-5.39,39,1499,1799
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,,amazon-fresh,,1589,,,,false,NOT_LISTED,,,0,2998,
+2026-08-09,SVD,EXTRA VIRGIN 200ML,,amazon-fresh,,189,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,EXTRA VIRGIN 250ML,,amazon-fresh,,209,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,EXTRA VIRGIN 2L,,amazon-fresh,,1589,,,,false,NOT_LISTED,,,0,2700,
+2026-08-09,SVD,EXTRA VIRGIN 3L,,amazon-fresh,,2369,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,EXTRA VIRGIN 500ML,,amazon-fresh,,409,,,,false,NOT_LISTED,,,0,675,
+2026-08-09,SVD,EXTRA VIRGIN 5L,,amazon-fresh,,3599,,,,false,NOT_LISTED,,,0,7999,
+2026-08-09,SVD,FLAX SEEDS 200G,,amazon-fresh,,89,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,FLAX SEEDS 400G,,amazon-fresh,,179,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,FLAX SEEDS 800G,,amazon-fresh,,349,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,GINGER ALE 200ML,,amazon-fresh,,39,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,GOLD 1+1,,amazon-fresh,,369,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,GOLD 1L,,amazon-fresh,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,GOLD 5L,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l,amazon-fresh,B0C9Q1S6QG,939,849,849,849,true,BELOW,-90,-9.58,2,1049,1050
+2026-08-09,SVD,GREEN CARDAMOM 100G,,amazon-fresh,,479,,,,false,NOT_LISTED,,,0,799,
+2026-08-09,SVD,GROUNDNUT 1L,,amazon-fresh,,219,,,,false,NOT_LISTED,,,0,400,
+2026-08-09,SVD,GROUNDNUT 5L,jivo-groundnut-oil-5-litre-5l,amazon-fresh,B0CKFFGC31,1139,990,990,990,true,BELOW,-149,-13.08,32,2800,2800
+2026-08-09,SVD,JIVO POMACE 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,amazon-fresh,B0821DNF2W,419,369,328,369,true,BELOW,-50,-11.93,3,1049,1049
+2026-08-09,SVD,JIVO POMACE 1L + 1L,,amazon-fresh,,849,,,,false,NOT_LISTED,,,0,2098,
+2026-08-09,SVD,JIVO POMACE 2L,,amazon-fresh,,849,,,,false,NOT_LISTED,,,0,1600,
+2026-08-09,SVD,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,amazon-fresh,B07X53ZL6J,1899,1899,1899,1899,true,MATCH,0,0,0,4999,4999
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,,amazon-fresh,,219,,,,false,NOT_LISTED,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,,amazon-fresh,,18,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,JIVO WATER 250ML,,amazon-fresh,,109,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,,amazon-fresh,,10,,,,false,NOT_LISTED,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,amazon-fresh,B09NYCSQLF,199,189,162,189,true,BELOW,-10,-5.03,71,255,255
+2026-08-09,SVD,MUSTARD 1L + 1L,,amazon-fresh,,409,,,,false,NOT_LISTED,,,0,500,
+2026-08-09,SVD,MUSTARD 1L POUCH,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l,amazon-fresh,B0DRYVRYYM,209,189,189,189,true,BELOW,-20,-9.57,9,250,199
+2026-08-09,SVD,MUSTARD 3L,,amazon-fresh,,599,,,,false,NOT_LISTED,,,0,765,
+2026-08-09,SVD,MUSTARD 4L,,amazon-fresh,,799,,,,false,NOT_LISTED,,,0,1000,
+2026-08-09,SVD,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,amazon-fresh,B091XPD9J3,949,899,846,1250,true,BELOW,-50,-5.27,46,1250,1250
+2026-08-09,SVD,POMACE 3L,,amazon-fresh,,1279,,,,false,NOT_LISTED,,,0,3050,
+2026-08-09,SVD,PUMPKIN SEEDS 200G,,amazon-fresh,,199,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,PUMPKIN SEEDS 400G,,amazon-fresh,,389,,,,false,NOT_LISTED,,,0,699,
+2026-08-09,SVD,PUMPKIN SEEDS 800G,,amazon-fresh,,769,,,,false,NOT_LISTED,,,0,1299,
+2026-08-09,SVD,PUNJABI JEERA 160ML,,amazon-fresh,,219,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,QUINOA SEEDS 200G,,amazon-fresh,,109,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,QUINOA SEEDS 400G,,amazon-fresh,,169,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,QUINOA SEEDS 800G,,amazon-fresh,,249,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-fresh,B0DBHQ2QWW,189,179,172,179,true,BELOW,-10,-5.29,63,285,285
+2026-08-09,SVD,RICE BRAN 1L + 1L,,amazon-fresh,,369,,,,false,NOT_LISTED,,,0,570,
+2026-08-09,SVD,RICE BRAN 4L,,amazon-fresh,,719,,,,false,NOT_LISTED,,,0,1140,
+2026-08-09,SVD,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-5l,amazon-fresh,B0DBJ13FKL,909,849,849,849,true,BELOW,-60,-6.6,20,1425,1425
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,,amazon-fresh,,169,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SAFFRON 1GMS,,amazon-fresh,,499,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,SANO CANOLA 1L,,amazon-fresh,,249,,,,false,NOT_LISTED,,,0,475,
+2026-08-09,SVD,SANO CANOLA 5L,,amazon-fresh,,1199,,,,false,NOT_LISTED,,,0,1950,
+2026-08-09,SVD,SANO CLASSIC 1L,,amazon-fresh,,559,,,,false,NOT_LISTED,,,0,1399,
+2026-08-09,SVD,SANO CLASSIC 5L,,amazon-fresh,,2609,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,SANO MUSTARD 1L,,amazon-fresh,,199,,,,false,NOT_LISTED,,,0,235,
+2026-08-09,SVD,SANO MUSTARD 5L,,amazon-fresh,,949,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SANO POMACE 1L,,amazon-fresh,,399,,,,false,NOT_LISTED,,,0,999,
+2026-08-09,SVD,SANO POMACE 5L,,amazon-fresh,,1969,,,,false,NOT_LISTED,,,0,4499,
+2026-08-09,SVD,SANO SOYABEAN 1L,,amazon-fresh,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SANO SOYABEAN 5L,,amazon-fresh,,899,,,,false,NOT_LISTED,,,0,1450,
+2026-08-09,SVD,SANO SUNFLOWER 1L,,amazon-fresh,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,SANO SUNFLOWER 5L,,amazon-fresh,,1029,,,,false,NOT_LISTED,,,0,1475,
+2026-08-09,SVD,SESAME 1L + 1L,,amazon-fresh,,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,,amazon-fresh,,329,,,,false,NOT_LISTED,,,0,600,
+2026-08-09,SVD,SO OLIVE 1L,,amazon-fresh,B0DC6JR4F3,229,,,,false,NOT_LISTED,,,0,325,
+2026-08-09,SVD,SO OLIVE 1L + 1L,,amazon-fresh,,549,,,,false,NOT_LISTED,,,0,650,
+2026-08-09,SVD,SO OLIVE 5L,,amazon-fresh,,1369,,,,false,NOT_LISTED,,,0,1625,
+2026-08-09,SVD,SODA 750ML,,amazon-fresh,,15,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,SODA LEMON 750ML,,amazon-fresh,,45,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-1l,amazon-fresh,B0B6HNNL5B,199,175,175,175,true,BELOW,-24,-12.06,29,225,225
+2026-08-09,SVD,SOYABEAN 1L + 1L,,amazon-fresh,,389,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SOYABEAN 1L POUCH,,amazon-fresh,,199,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,SOYABEAN 5L,,amazon-fresh,,949,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SPRING WATER 750ML,,amazon-fresh,,50,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2,amazon-fresh,B0B4SJTNF2,199,185,145,185,true,BELOW,-14,-7.04,4,275,275
+2026-08-09,SVD,SUNFLOWER 1L + 1L,,amazon-fresh,,429,,,,false,NOT_LISTED,,,0,550,
+2026-08-09,SVD,SUNFLOWER 3L,,amazon-fresh,,649,,,,false,NOT_LISTED,,,0,825,
+2026-08-09,SVD,SUNFLOWER 4L,,amazon-fresh,,869,,,,false,NOT_LISTED,,,0,1038,
+2026-08-09,SVD,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,amazon-fresh,B0991VMDB1,949,925,869,925,true,BELOW,-24,-2.53,63,1350,1350
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,,amazon-fresh,,129,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,,amazon-fresh,,249,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,,amazon-fresh,,369,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,WG MANGO JUICE 500ML,,amazon-fresh,,35,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,amazon-fresh,B0FF9P7XVX,259,229,219,229,true,BELOW,-30,-11.58,12,375,355
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,,amazon-fresh,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,YELLOW MUSTARD 5L,,amazon-fresh,,1269,,,,false,NOT_LISTED,,,0,2000,
+2026-08-09,SVD,A2 GHEE 1L,,amazon-now,,1309,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,A2 GHEE 500ML,,amazon-now,,709,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,BASIL SEEDS 200G,,amazon-now,,69,,,,false,NOT_LISTED,,,0,349,
+2026-08-09,SVD,BASIL SEEDS 400G,,amazon-now,,189,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,BASIL SEEDS 800G,,amazon-now,,329,,,,false,NOT_LISTED,,,0,1099,
+2026-08-09,SVD,BLACK CARDAMOM 100G,,amazon-now,,289,,,,false,NOT_LISTED,,,0,549,
+2026-08-09,SVD,BLACK OLIVE 470G,,amazon-now,,209,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,BLACK PEPPER 100G,,amazon-now,,135,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,CANOLA 1+1L,jivo-canola-cold-pressed-edible-oil-11-litres-1l,amazon-now,B0152TWWSQ,509,438,438,438,true,BELOW,-71,-13.95,115,750,750
+2026-08-09,SVD,CANOLA 1L,jivo-cold-pressed-canola-oil-1-litre-1l,amazon-now,B09MJ6QDX7,239,239,233,239,true,MATCH,0,0,19,375,375
+2026-08-09,SVD,CANOLA 1L + 1L,,amazon-now,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L POUCH,,amazon-now,,259,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CANOLA 3L,,amazon-now,,769,,,,false,NOT_LISTED,,,0,690,
+2026-08-09,SVD,CANOLA 4L,,amazon-now,,1149,,,,false,NOT_LISTED,,,0,1199,
+2026-08-09,SVD,CANOLA 5L,jivo-cold-pressed-canola-oil-5-litre-5l,amazon-now,B077ZN4G28,1099,1074,1074,1074,true,BELOW,-25,-2.27,94,1650,1650
+2026-08-09,SVD,CHIA SEEDS 200G,,amazon-now,,99,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CHIA SEEDS 400G,,amazon-now,,199,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,CHIA SEEDS 800G,,amazon-now,,339,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,CINNAMON BARK 100G,,amazon-now,,89,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CLOVE 100G,,amazon-now,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,COCONUT 1L,jivo-pure-extra-virgin-coconut-oil-1-litre-1l,amazon-now,B0BZ8K3DQP,539,489,489,489,true,BELOW,-50,-9.28,40,700,700
+2026-08-09,SVD,COCONUT 200ML,,amazon-now,,129,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,COCONUT 500ML,,amazon-now,,229,,,,false,NOT_LISTED,,,0,695,
+2026-08-09,SVD,COFFEE,,amazon-now,,239,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,CUMIN SEEDS 100G,,amazon-now,,75,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,EXTRA LIGHT 1+1L,,amazon-now,,1189,,,,false,NOT_LISTED,,,0,2798,
+2026-08-09,SVD,EXTRA LIGHT 1L,jivo-extra-light-spainimported-olive-oil-1-litre-1l,amazon-now,B09HZY97FR,579,469,469,469,true,BELOW,-110,-19,11,1499,1499
+2026-08-09,SVD,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2-litre-2l,amazon-now,B09NXCPZW1,1129,1038,1038,1038,true,BELOW,-91,-8.06,37,2799,2799
+2026-08-09,SVD,EXTRA LIGHT 3L,,amazon-now,,1789,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,EXTRA LIGHT 500ML,,amazon-now,,339,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,EXTRA LIGHT 5L,,amazon-now,,2599,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,EXTRA VIRGIN 1L,jivo-extra-virgin-olive-oil-1-litre-1l,amazon-now,B093BMGPQC,779,737,737,737,true,BELOW,-42,-5.39,120,1499,1799
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,,amazon-now,,1589,,,,false,NOT_LISTED,,,0,2998,
+2026-08-09,SVD,EXTRA VIRGIN 200ML,,amazon-now,,189,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,EXTRA VIRGIN 250ML,,amazon-now,,209,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,EXTRA VIRGIN 2L,,amazon-now,,1589,,,,false,NOT_LISTED,,,0,2700,
+2026-08-09,SVD,EXTRA VIRGIN 3L,,amazon-now,,2369,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,EXTRA VIRGIN 500ML,,amazon-now,,409,,,,false,NOT_LISTED,,,0,675,
+2026-08-09,SVD,EXTRA VIRGIN 5L,,amazon-now,,3599,,,,false,NOT_LISTED,,,0,7999,
+2026-08-09,SVD,FLAX SEEDS 200G,,amazon-now,,89,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,FLAX SEEDS 400G,,amazon-now,,179,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,FLAX SEEDS 800G,,amazon-now,,349,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,GINGER ALE 200ML,,amazon-now,,39,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,GOLD 1+1,,amazon-now,,369,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,GOLD 1L,,amazon-now,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,GOLD 5L,jivo-gold-refined-oil-perfect-blend-of-rice-bran-sunflower-oil-5l,amazon-now,B0C9Q1S6QG,939,849,849,849,true,BELOW,-90,-9.58,1,1049,1050
+2026-08-09,SVD,GREEN CARDAMOM 100G,,amazon-now,,479,,,,false,NOT_LISTED,,,0,799,
+2026-08-09,SVD,GROUNDNUT 1L,jivo-groundnut-oil-1-litre-1l,amazon-now,B0CKFFW9B6,219,219,209,219,true,MATCH,0,0,5,400,560
+2026-08-09,SVD,GROUNDNUT 5L,jivo-groundnut-oil-5-litre-5l,amazon-now,B0CKFFGC31,1139,990,990,990,true,BELOW,-149,-13.08,40,2800,2800
+2026-08-09,SVD,JIVO POMACE 1L,jivo-daily-cooking-pomace-olive-oil-1-litre-1l,amazon-now,B0821DNF2W,419,369,328,369,true,BELOW,-50,-11.93,17,1049,1049
+2026-08-09,SVD,JIVO POMACE 1L + 1L,,amazon-now,,849,,,,false,NOT_LISTED,,,0,2098,
+2026-08-09,SVD,JIVO POMACE 2L,,amazon-now,,849,,,,false,NOT_LISTED,,,0,1600,
+2026-08-09,SVD,JIVO POMACE 5L,jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooking-5l,amazon-now,B07X53ZL6J,1899,1899,1899,1899,true,MATCH,0,0,0,4999,4999
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,,amazon-now,,219,,,,false,NOT_LISTED,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,,amazon-now,,18,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,JIVO WATER 250ML,,amazon-now,,109,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,,amazon-now,,10,,,,false,NOT_LISTED,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l,amazon-now,B09NYCSQLF,199,189,162,189,true,BELOW,-10,-5.03,165,255,255
+2026-08-09,SVD,MUSTARD 1L + 1L,,amazon-now,,409,,,,false,NOT_LISTED,,,0,500,
+2026-08-09,SVD,MUSTARD 1L POUCH,,amazon-now,,209,,,,false,NOT_LISTED,,,0,250,
+2026-08-09,SVD,MUSTARD 3L,,amazon-now,,599,,,,false,NOT_LISTED,,,0,765,
+2026-08-09,SVD,MUSTARD 4L,,amazon-now,,799,,,,false,NOT_LISTED,,,0,1000,
+2026-08-09,SVD,MUSTARD 5L,jivo-premium-cold-pressed-kachi-ghani-mustard-oil-5-litre-5l,amazon-now,B091XPD9J3,949,899,846,899,true,BELOW,-50,-5.27,122,1250,1250
+2026-08-09,SVD,POMACE 3L,,amazon-now,,1279,,,,false,NOT_LISTED,,,0,3050,
+2026-08-09,SVD,PUMPKIN SEEDS 200G,,amazon-now,,199,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,PUMPKIN SEEDS 400G,,amazon-now,,389,,,,false,NOT_LISTED,,,0,699,
+2026-08-09,SVD,PUMPKIN SEEDS 800G,,amazon-now,,769,,,,false,NOT_LISTED,,,0,1299,
+2026-08-09,SVD,PUNJABI JEERA 160ML,,amazon-now,,219,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,QUINOA SEEDS 200G,,amazon-now,,109,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,QUINOA SEEDS 400G,,amazon-now,,169,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,QUINOA SEEDS 800G,,amazon-now,,249,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,RICE BRAN 1L,jivo-rice-bran-oil-1-litre-cooking-oil-1l,amazon-now,B0DBHQ2QWW,189,174,172,179,true,BELOW,-15,-7.94,119,285,285
+2026-08-09,SVD,RICE BRAN 1L + 1L,,amazon-now,,369,,,,false,NOT_LISTED,,,0,570,
+2026-08-09,SVD,RICE BRAN 4L,,amazon-now,,719,,,,false,NOT_LISTED,,,0,1140,
+2026-08-09,SVD,RICE BRAN 5L,jivo-rice-bran-oil-5-litre-5l,amazon-now,B0DBJ13FKL,909,849,842,849,true,BELOW,-60,-6.6,29,1425,1425
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,,amazon-now,,169,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SAFFRON 1GMS,,amazon-now,,499,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,SANO CANOLA 1L,,amazon-now,,249,,,,false,NOT_LISTED,,,0,475,
+2026-08-09,SVD,SANO CANOLA 5L,,amazon-now,,1199,,,,false,NOT_LISTED,,,0,1950,
+2026-08-09,SVD,SANO CLASSIC 1L,,amazon-now,,559,,,,false,NOT_LISTED,,,0,1399,
+2026-08-09,SVD,SANO CLASSIC 5L,,amazon-now,,2609,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,SANO MUSTARD 1L,,amazon-now,,199,,,,false,NOT_LISTED,,,0,235,
+2026-08-09,SVD,SANO MUSTARD 5L,,amazon-now,,949,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SANO POMACE 1L,,amazon-now,,399,,,,false,NOT_LISTED,,,0,999,
+2026-08-09,SVD,SANO POMACE 5L,,amazon-now,,1969,,,,false,NOT_LISTED,,,0,4499,
+2026-08-09,SVD,SANO SOYABEAN 1L,,amazon-now,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SANO SOYABEAN 5L,,amazon-now,,899,,,,false,NOT_LISTED,,,0,1450,
+2026-08-09,SVD,SANO SUNFLOWER 1L,,amazon-now,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,SANO SUNFLOWER 5L,,amazon-now,,1029,,,,false,NOT_LISTED,,,0,1475,
+2026-08-09,SVD,SESAME 1L + 1L,,amazon-now,,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,,amazon-now,,329,,,,false,NOT_LISTED,,,0,600,
+2026-08-09,SVD,SO OLIVE 1L,,amazon-now,,229,,,,false,NOT_LISTED,,,0,325,
+2026-08-09,SVD,SO OLIVE 1L + 1L,,amazon-now,,549,,,,false,NOT_LISTED,,,0,650,
+2026-08-09,SVD,SO OLIVE 5L,,amazon-now,,1369,,,,false,NOT_LISTED,,,0,1625,
+2026-08-09,SVD,SODA 750ML,,amazon-now,,15,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,SODA LEMON 750ML,,amazon-now,,45,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SOYABEAN 1L,jivo-cooking-edible-soyabean-oil-1-litre-1l,amazon-now,B0B6HNNL5B,199,175,175,179,true,BELOW,-24,-12.06,81,225,225
+2026-08-09,SVD,SOYABEAN 1L + 1L,,amazon-now,,389,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SOYABEAN 1L POUCH,,amazon-now,,199,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,SOYABEAN 5L,,amazon-now,,949,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SPRING WATER 750ML,,amazon-now,,50,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SUNFLOWER 1L,jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l,amazon-now,B0B4SJTNF2,199,156,152,187,true,BELOW,-43,-21.61,15,275,275
+2026-08-09,SVD,SUNFLOWER 1L + 1L,,amazon-now,,429,,,,false,NOT_LISTED,,,0,550,
+2026-08-09,SVD,SUNFLOWER 3L,,amazon-now,,649,,,,false,NOT_LISTED,,,0,825,
+2026-08-09,SVD,SUNFLOWER 4L,,amazon-now,,869,,,,false,NOT_LISTED,,,0,1038,
+2026-08-09,SVD,SUNFLOWER 5L,jivo-cold-pressed-unrefined-sunflower-oil-5-litres-5l,amazon-now,B0991VMDB1,949,925,869,925,true,BELOW,-24,-2.53,138,1350,1350
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,,amazon-now,,129,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,,amazon-now,,249,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,,amazon-now,,369,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,WG MANGO JUICE 500ML,jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml,amazon-now,B0DM2G4YCC,35,35,35,35,true,MATCH,0,0,0,100,55
+2026-08-09,SVD,YELLOW MUSTARD 1L,jivo-first-pressed-yellow-mustard-oil-1-litre-1l,amazon-now,B0FF9P7XVX,259,229,211,229,true,BELOW,-30,-11.58,20,375,355
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,,amazon-now,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,YELLOW MUSTARD 5L,,amazon-now,,1269,,,,false,NOT_LISTED,,,0,2000,
+2026-08-09,SVD,A2 GHEE 1L,,flipkart-minutes,,1309,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,A2 GHEE 500ML,,flipkart-minutes,,709,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,BASIL SEEDS 200G,,flipkart-minutes,,69,,,,false,NOT_LISTED,,,0,349,
+2026-08-09,SVD,BASIL SEEDS 400G,,flipkart-minutes,,189,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,BASIL SEEDS 800G,,flipkart-minutes,,329,,,,false,NOT_LISTED,,,0,1099,
+2026-08-09,SVD,BLACK CARDAMOM 100G,,flipkart-minutes,,289,,,,false,NOT_LISTED,,,0,549,
+2026-08-09,SVD,BLACK OLIVE 470G,,flipkart-minutes,,209,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,BLACK PEPPER 100G,,flipkart-minutes,,135,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,CANOLA 1+1L,jivo-cold-press-combo-canola-oil-2l,flipkart-minutes,EDOF25FJGBH5EDS3,509,565,565,937,true,ABOVE,56,11,0,750,
+2026-08-09,SVD,CANOLA 1L,jivo-cold-press-canola-oil-1l,flipkart-minutes,EDOG9BP8GEWFW9XC,239,258,242,260,true,ABOVE,19,7.95,0,375,375
+2026-08-09,SVD,CANOLA 1L + 1L,,flipkart-minutes,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L POUCH,,flipkart-minutes,,259,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CANOLA 3L,,flipkart-minutes,,769,,,,false,NOT_LISTED,,,0,690,
+2026-08-09,SVD,CANOLA 4L,,flipkart-minutes,,1149,,,,false,NOT_LISTED,,,0,1199,
+2026-08-09,SVD,CANOLA 5L,,flipkart-minutes,,1099,,,,false,NOT_LISTED,,,0,1650,
+2026-08-09,SVD,CHIA SEEDS 200G,,flipkart-minutes,,99,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CHIA SEEDS 400G,,flipkart-minutes,,199,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,CHIA SEEDS 800G,,flipkart-minutes,,339,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,CINNAMON BARK 100G,,flipkart-minutes,,89,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CLOVE 100G,,flipkart-minutes,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,COCONUT 1L,,flipkart-minutes,,539,,,,false,NOT_LISTED,,,0,700,
+2026-08-09,SVD,COCONUT 200ML,,flipkart-minutes,,129,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,COCONUT 500ML,,flipkart-minutes,,229,,,,false,NOT_LISTED,,,0,695,
+2026-08-09,SVD,COFFEE,,flipkart-minutes,,239,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,CUMIN SEEDS 100G,,flipkart-minutes,,75,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,EXTRA LIGHT 1+1L,,flipkart-minutes,,1189,,,,false,NOT_LISTED,,,0,2798,
+2026-08-09,SVD,EXTRA LIGHT 1L,,flipkart-minutes,,579,,,,false,NOT_LISTED,,,0,1499,
+2026-08-09,SVD,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,flipkart-minutes,EDOGHZTJZEYQJGME,1129,1959,1890,2153,true,ABOVE,830,73.52,0,2799,2799
+2026-08-09,SVD,EXTRA LIGHT 3L,,flipkart-minutes,,1789,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,EXTRA LIGHT 500ML,,flipkart-minutes,,339,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,EXTRA LIGHT 5L,,flipkart-minutes,,2599,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,EXTRA VIRGIN 1L,,flipkart-minutes,,779,,,,false,NOT_LISTED,,,0,1499,
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,,flipkart-minutes,,1589,,,,false,NOT_LISTED,,,0,2998,
+2026-08-09,SVD,EXTRA VIRGIN 200ML,,flipkart-minutes,,189,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,EXTRA VIRGIN 250ML,,flipkart-minutes,,209,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,EXTRA VIRGIN 2L,,flipkart-minutes,,1589,,,,false,NOT_LISTED,,,0,2700,
+2026-08-09,SVD,EXTRA VIRGIN 3L,,flipkart-minutes,,2369,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,EXTRA VIRGIN 500ML,,flipkart-minutes,,409,,,,false,NOT_LISTED,,,0,675,
+2026-08-09,SVD,EXTRA VIRGIN 5L,,flipkart-minutes,,3599,,,,false,NOT_LISTED,,,0,7999,
+2026-08-09,SVD,FLAX SEEDS 200G,,flipkart-minutes,,89,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,FLAX SEEDS 400G,,flipkart-minutes,,179,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,FLAX SEEDS 800G,,flipkart-minutes,,349,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,GINGER ALE 200ML,,flipkart-minutes,,39,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,GOLD 1+1,,flipkart-minutes,,369,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,GOLD 1L,,flipkart-minutes,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,GOLD 5L,,flipkart-minutes,,939,,,,false,NOT_LISTED,,,0,1049,
+2026-08-09,SVD,GREEN CARDAMOM 100G,,flipkart-minutes,,479,,,,false,NOT_LISTED,,,0,799,
+2026-08-09,SVD,GROUNDNUT 1L,,flipkart-minutes,,219,,,,false,NOT_LISTED,,,0,400,
+2026-08-09,SVD,GROUNDNUT 5L,,flipkart-minutes,,1139,,,,false,NOT_LISTED,,,0,2800,
+2026-08-09,SVD,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,flipkart-minutes,EDOFTHNH4YZ7GDHS,419,398,398,430,true,BELOW,-21,-5.01,66,1049,1049
+2026-08-09,SVD,JIVO POMACE 1L + 1L,,flipkart-minutes,,849,,,,false,NOT_LISTED,,,0,2098,
+2026-08-09,SVD,JIVO POMACE 2L,,flipkart-minutes,,849,,,,false,NOT_LISTED,,,0,1600,
+2026-08-09,SVD,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,flipkart-minutes,EDOFTHNH3T8PATGW,1899,2149,2149,2349,true,ABOVE,250,13.16,0,4999,4999
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,,flipkart-minutes,,219,,,,false,NOT_LISTED,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,jivo-natural-minerals-water-mineral-water-1l,flipkart-minutes,WERH9M3VYW6X5KSX,18,24,24,24,true,ABOVE,6,33.33,0,30,30
+2026-08-09,SVD,JIVO WATER 250ML,,flipkart-minutes,,109,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,,flipkart-minutes,,10,,,,false,NOT_LISTED,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,jivo-cold-pressed-pure-cooking-mustard-oil-1l,flipkart-minutes,EDOGDVWYGJNDYRQP,199,169,169,170,true,BELOW,-30,-15.08,87,255,255
+2026-08-09,SVD,MUSTARD 1L + 1L,,flipkart-minutes,,409,,,,false,NOT_LISTED,,,0,500,
+2026-08-09,SVD,MUSTARD 1L POUCH,,flipkart-minutes,,209,,,,false,NOT_LISTED,,,0,250,
+2026-08-09,SVD,MUSTARD 3L,,flipkart-minutes,,599,,,,false,NOT_LISTED,,,0,765,
+2026-08-09,SVD,MUSTARD 4L,jivo-cold-pressed-pure-cooking-mustard-oil-4l,flipkart-minutes,EDOHAUNQSDFDYPFC,799,,,,false,OOS,,,0,1000,1000
+2026-08-09,SVD,MUSTARD 5L,jivo-cold-pressed-pure-cooking-mustard-oil-5l,flipkart-minutes,EDOGDVWEUPPWVGED,949,852,852,852,true,BELOW,-97,-10.22,7,1250,1250
+2026-08-09,SVD,POMACE 3L,,flipkart-minutes,,1279,,,,false,NOT_LISTED,,,0,3050,
+2026-08-09,SVD,PUMPKIN SEEDS 200G,,flipkart-minutes,,199,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,PUMPKIN SEEDS 400G,,flipkart-minutes,,389,,,,false,NOT_LISTED,,,0,699,
+2026-08-09,SVD,PUMPKIN SEEDS 800G,,flipkart-minutes,,769,,,,false,NOT_LISTED,,,0,1299,
+2026-08-09,SVD,PUNJABI JEERA 160ML,,flipkart-minutes,,219,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,QUINOA SEEDS 200G,,flipkart-minutes,,109,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,QUINOA SEEDS 400G,,flipkart-minutes,,169,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,QUINOA SEEDS 800G,,flipkart-minutes,,249,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,RICE BRAN 1L,,flipkart-minutes,,189,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,RICE BRAN 1L + 1L,,flipkart-minutes,,369,,,,false,NOT_LISTED,,,0,570,
+2026-08-09,SVD,RICE BRAN 4L,,flipkart-minutes,,719,,,,false,NOT_LISTED,,,0,1140,
+2026-08-09,SVD,RICE BRAN 5L,,flipkart-minutes,,909,,,,false,NOT_LISTED,,,0,1425,
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,,flipkart-minutes,,169,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SAFFRON 1GMS,,flipkart-minutes,,499,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,SANO CANOLA 1L,,flipkart-minutes,,249,,,,false,NOT_LISTED,,,0,475,
+2026-08-09,SVD,SANO CANOLA 5L,,flipkart-minutes,,1199,,,,false,NOT_LISTED,,,0,1950,
+2026-08-09,SVD,SANO CLASSIC 1L,,flipkart-minutes,,559,,,,false,NOT_LISTED,,,0,1399,
+2026-08-09,SVD,SANO CLASSIC 5L,,flipkart-minutes,,2609,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,SANO MUSTARD 1L,,flipkart-minutes,,199,,,,false,NOT_LISTED,,,0,235,
+2026-08-09,SVD,SANO MUSTARD 5L,,flipkart-minutes,,949,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SANO POMACE 1L,,flipkart-minutes,,399,,,,false,NOT_LISTED,,,0,999,
+2026-08-09,SVD,SANO POMACE 5L,,flipkart-minutes,,1969,,,,false,NOT_LISTED,,,0,4499,
+2026-08-09,SVD,SANO SOYABEAN 1L,,flipkart-minutes,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SANO SOYABEAN 5L,,flipkart-minutes,,899,,,,false,NOT_LISTED,,,0,1450,
+2026-08-09,SVD,SANO SUNFLOWER 1L,,flipkart-minutes,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,SANO SUNFLOWER 5L,,flipkart-minutes,,1029,,,,false,NOT_LISTED,,,0,1475,
+2026-08-09,SVD,SESAME 1L + 1L,,flipkart-minutes,,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,,flipkart-minutes,,329,,,,false,NOT_LISTED,,,0,600,
+2026-08-09,SVD,SO OLIVE 1L,,flipkart-minutes,,229,,,,false,NOT_LISTED,,,0,325,
+2026-08-09,SVD,SO OLIVE 1L + 1L,,flipkart-minutes,,549,,,,false,NOT_LISTED,,,0,650,
+2026-08-09,SVD,SO OLIVE 5L,,flipkart-minutes,,1369,,,,false,NOT_LISTED,,,0,1625,
+2026-08-09,SVD,SODA 750ML,,flipkart-minutes,,15,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,SODA LEMON 750ML,,flipkart-minutes,,45,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SOYABEAN 1L,,flipkart-minutes,,199,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SOYABEAN 1L + 1L,,flipkart-minutes,,389,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SOYABEAN 1L POUCH,jivo-soybean-oil-soyabean-oil-1l,flipkart-minutes,EDOGPX8ZD2ZYPH6U,199,,,,false,OOS,,,0,199,199
+2026-08-09,SVD,SOYABEAN 5L,,flipkart-minutes,,949,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SPRING WATER 750ML,,flipkart-minutes,,50,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SUNFLOWER 1L,,flipkart-minutes,,199,,,,false,NOT_LISTED,,,0,275,
+2026-08-09,SVD,SUNFLOWER 1L + 1L,,flipkart-minutes,,429,,,,false,NOT_LISTED,,,0,550,
+2026-08-09,SVD,SUNFLOWER 3L,,flipkart-minutes,,649,,,,false,NOT_LISTED,,,0,825,
+2026-08-09,SVD,SUNFLOWER 4L,,flipkart-minutes,,869,,,,false,NOT_LISTED,,,0,1038,
+2026-08-09,SVD,SUNFLOWER 5L,,flipkart-minutes,,949,,,,false,NOT_LISTED,,,0,1350,
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,,flipkart-minutes,,129,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,,flipkart-minutes,,249,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,,flipkart-minutes,,369,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,WG MANGO JUICE 500ML,,flipkart-minutes,,35,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,YELLOW MUSTARD 1L,,flipkart-minutes,,259,,,,false,NOT_LISTED,,,0,375,
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,,flipkart-minutes,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,YELLOW MUSTARD 5L,,flipkart-minutes,,1269,,,,false,NOT_LISTED,,,0,2000,
+2026-08-09,SVD,A2 GHEE 1L,,zepto,,1309,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,A2 GHEE 500ML,,zepto,,709,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,BASIL SEEDS 200G,,zepto,,69,,,,false,NOT_LISTED,,,0,349,
+2026-08-09,SVD,BASIL SEEDS 400G,,zepto,,189,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,BASIL SEEDS 800G,,zepto,,329,,,,false,NOT_LISTED,,,0,1099,
+2026-08-09,SVD,BLACK CARDAMOM 100G,,zepto,,289,,,,false,NOT_LISTED,,,0,549,
+2026-08-09,SVD,BLACK OLIVE 470G,,zepto,,209,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,BLACK PEPPER 100G,,zepto,,135,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,CANOLA 1+1L,,zepto,50b56b7f-3d9f-45c7-8161-c2327e8db652,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L,,zepto,,239,,,,false,NOT_LISTED,,,0,375,
+2026-08-09,SVD,CANOLA 1L + 1L,,zepto,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L POUCH,,zepto,,259,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CANOLA 3L,,zepto,,769,,,,false,NOT_LISTED,,,0,690,
+2026-08-09,SVD,CANOLA 4L,,zepto,,1149,,,,false,NOT_LISTED,,,0,1199,
+2026-08-09,SVD,CANOLA 5L,,zepto,c935f17d-04d3-4785-b2dd-bd8e7c7ebcbe,1099,,,,false,NOT_LISTED,,,0,1650,
+2026-08-09,SVD,CHIA SEEDS 200G,,zepto,,99,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CHIA SEEDS 400G,,zepto,,199,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,CHIA SEEDS 800G,,zepto,,339,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,CINNAMON BARK 100G,,zepto,,89,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CLOVE 100G,,zepto,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,COCONUT 1L,,zepto,,539,,,,false,NOT_LISTED,,,0,700,
+2026-08-09,SVD,COCONUT 200ML,,zepto,,129,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,COCONUT 500ML,,zepto,,229,,,,false,NOT_LISTED,,,0,695,
+2026-08-09,SVD,COFFEE,,zepto,,239,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,CUMIN SEEDS 100G,,zepto,,75,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,EXTRA LIGHT 1+1L,,zepto,597fe027-2e19-4a49-bc07-76ef57295ad6,1189,,,,false,NOT_LISTED,,,0,2798,
+2026-08-09,SVD,EXTRA LIGHT 1L,,zepto,2300d5e1-ccd1-46ab-990d-aa7fee80bc5d,579,,,,false,NOT_LISTED,,,0,1499,
+2026-08-09,SVD,EXTRA LIGHT 2L,,zepto,29e72c8c-7ff6-46e2-9721-ca4e9f612e98,1129,,,,false,NOT_LISTED,,,0,2799,
+2026-08-09,SVD,EXTRA LIGHT 3L,,zepto,,1789,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,EXTRA LIGHT 500ML,,zepto,,339,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,EXTRA LIGHT 5L,,zepto,,2599,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,EXTRA VIRGIN 1L,,zepto,5d186472-6fe2-4643-af2f-2f9cd773986d,779,,,,false,NOT_LISTED,,,0,1499,
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,,zepto,,1589,,,,false,NOT_LISTED,,,0,2998,
+2026-08-09,SVD,EXTRA VIRGIN 200ML,,zepto,,189,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,EXTRA VIRGIN 250ML,,zepto,,209,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,EXTRA VIRGIN 2L,,zepto,,1589,,,,false,NOT_LISTED,,,0,2700,
+2026-08-09,SVD,EXTRA VIRGIN 3L,,zepto,,2369,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,EXTRA VIRGIN 500ML,,zepto,,409,,,,false,NOT_LISTED,,,0,675,
+2026-08-09,SVD,EXTRA VIRGIN 5L,,zepto,c80ef4de-b2c3-4fb4-984b-4cb29b33db33,3599,,,,false,NOT_LISTED,,,0,7999,
+2026-08-09,SVD,FLAX SEEDS 200G,,zepto,,89,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,FLAX SEEDS 400G,,zepto,,179,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,FLAX SEEDS 800G,,zepto,,349,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,GINGER ALE 200ML,,zepto,,39,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,GOLD 1+1,,zepto,,369,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,GOLD 1L,,zepto,bc1af3d1-2a14-4296-b38e-e05ba43c3170,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,GOLD 5L,,zepto,40bd2571-3734-4503-84b7-bbe87a3818c3,939,,,,false,NOT_LISTED,,,0,1049,
+2026-08-09,SVD,GREEN CARDAMOM 100G,,zepto,,479,,,,false,NOT_LISTED,,,0,799,
+2026-08-09,SVD,GROUNDNUT 1L,,zepto,41367ef4-80d9-4819-bbae-d1806c184f5c,219,,,,false,NOT_LISTED,,,0,400,
+2026-08-09,SVD,GROUNDNUT 5L,,zepto,,1139,,,,false,NOT_LISTED,,,0,2800,
+2026-08-09,SVD,JIVO POMACE 1L,,zepto,ac9a7dd8-489b-4475-a14d-27ae393a5505,419,,,,false,NOT_LISTED,,,0,1049,
+2026-08-09,SVD,JIVO POMACE 1L + 1L,,zepto,3d955a07-72db-4d1a-9d65-42c5a8dd0641,849,,,,false,NOT_LISTED,,,0,2098,
+2026-08-09,SVD,JIVO POMACE 2L,,zepto,8eedf6ff-d36c-4313-88e4-6aa571372f46,849,,,,false,NOT_LISTED,,,0,1600,
+2026-08-09,SVD,JIVO POMACE 5L,,zepto,a81945f0-43ac-4970-82b4-c6c8986ee9ae,1899,,,,false,NOT_LISTED,,,0,4999,
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,,zepto,,219,,,,false,NOT_LISTED,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,,zepto,,18,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,JIVO WATER 250ML,,zepto,,109,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,,zepto,,10,,,,false,NOT_LISTED,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,,zepto,89804a83-79f3-45c6-b940-9c395451dffa,199,,,,false,NOT_LISTED,,,0,255,
+2026-08-09,SVD,MUSTARD 1L + 1L,,zepto,,409,,,,false,NOT_LISTED,,,0,500,
+2026-08-09,SVD,MUSTARD 1L POUCH,,zepto,,209,,,,false,NOT_LISTED,,,0,250,
+2026-08-09,SVD,MUSTARD 3L,,zepto,,599,,,,false,NOT_LISTED,,,0,765,
+2026-08-09,SVD,MUSTARD 4L,,zepto,,799,,,,false,NOT_LISTED,,,0,1000,
+2026-08-09,SVD,MUSTARD 5L,,zepto,275d43f8-2da4-4d9e-8873-e04fcaf5c073,949,,,,false,NOT_LISTED,,,0,1250,
+2026-08-09,SVD,POMACE 3L,,zepto,,1279,,,,false,NOT_LISTED,,,0,3050,
+2026-08-09,SVD,PUMPKIN SEEDS 200G,,zepto,,199,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,PUMPKIN SEEDS 400G,,zepto,,389,,,,false,NOT_LISTED,,,0,699,
+2026-08-09,SVD,PUMPKIN SEEDS 800G,,zepto,,769,,,,false,NOT_LISTED,,,0,1299,
+2026-08-09,SVD,PUNJABI JEERA 160ML,,zepto,,219,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,QUINOA SEEDS 200G,,zepto,,109,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,QUINOA SEEDS 400G,,zepto,,169,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,QUINOA SEEDS 800G,,zepto,,249,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,RICE BRAN 1L,,zepto,4acb73bc-1e89-47d8-8625-05e6a34b698b,189,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,RICE BRAN 1L + 1L,,zepto,,369,,,,false,NOT_LISTED,,,0,570,
+2026-08-09,SVD,RICE BRAN 4L,,zepto,,719,,,,false,NOT_LISTED,,,0,1140,
+2026-08-09,SVD,RICE BRAN 5L,,zepto,,909,,,,false,NOT_LISTED,,,0,1425,
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,,zepto,,169,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SAFFRON 1GMS,,zepto,,499,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,SANO CANOLA 1L,,zepto,,249,,,,false,NOT_LISTED,,,0,475,
+2026-08-09,SVD,SANO CANOLA 5L,,zepto,,1199,,,,false,NOT_LISTED,,,0,1950,
+2026-08-09,SVD,SANO CLASSIC 1L,,zepto,,559,,,,false,NOT_LISTED,,,0,1399,
+2026-08-09,SVD,SANO CLASSIC 5L,,zepto,,2609,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,SANO MUSTARD 1L,,zepto,,199,,,,false,NOT_LISTED,,,0,235,
+2026-08-09,SVD,SANO MUSTARD 5L,,zepto,,949,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SANO POMACE 1L,,zepto,,399,,,,false,NOT_LISTED,,,0,999,
+2026-08-09,SVD,SANO POMACE 5L,,zepto,,1969,,,,false,NOT_LISTED,,,0,4499,
+2026-08-09,SVD,SANO SOYABEAN 1L,,zepto,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SANO SOYABEAN 5L,,zepto,,899,,,,false,NOT_LISTED,,,0,1450,
+2026-08-09,SVD,SANO SUNFLOWER 1L,,zepto,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,SANO SUNFLOWER 5L,,zepto,,1029,,,,false,NOT_LISTED,,,0,1475,
+2026-08-09,SVD,SESAME 1L + 1L,,zepto,,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,,zepto,,329,,,,false,NOT_LISTED,,,0,600,
+2026-08-09,SVD,SO OLIVE 1L,,zepto,dc9c5857-5d89-45c7-895a-373097239ff7,229,,,,false,NOT_LISTED,,,0,325,
+2026-08-09,SVD,SO OLIVE 1L + 1L,,zepto,,549,,,,false,NOT_LISTED,,,0,650,
+2026-08-09,SVD,SO OLIVE 5L,,zepto,,1369,,,,false,NOT_LISTED,,,0,1625,
+2026-08-09,SVD,SODA 750ML,,zepto,,15,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,SODA LEMON 750ML,,zepto,,45,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SOYABEAN 1L,,zepto,,199,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SOYABEAN 1L + 1L,,zepto,,389,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SOYABEAN 1L POUCH,,zepto,,199,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,SOYABEAN 5L,,zepto,,949,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SPRING WATER 750ML,,zepto,,50,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SUNFLOWER 1L,,zepto,06c8f55b-13a5-4d9b-8990-a418e63c89ad,199,,,,false,NOT_LISTED,,,0,275,
+2026-08-09,SVD,SUNFLOWER 1L + 1L,,zepto,,429,,,,false,NOT_LISTED,,,0,550,
+2026-08-09,SVD,SUNFLOWER 3L,,zepto,,649,,,,false,NOT_LISTED,,,0,825,
+2026-08-09,SVD,SUNFLOWER 4L,,zepto,,869,,,,false,NOT_LISTED,,,0,1038,
+2026-08-09,SVD,SUNFLOWER 5L,,zepto,3df8a5f6-fb0a-43d9-92ea-8098fda9253d,949,,,,false,NOT_LISTED,,,0,1350,
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,,zepto,,129,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,,zepto,,249,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,,zepto,,369,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,WG MANGO JUICE 500ML,,zepto,,35,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,YELLOW MUSTARD 1L,,zepto,,259,,,,false,NOT_LISTED,,,0,375,
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,,zepto,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,YELLOW MUSTARD 5L,,zepto,,1269,,,,false,NOT_LISTED,,,0,2000,
+2026-08-09,SVD,A2 GHEE 1L,,blinkit,,1309,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,A2 GHEE 500ML,,blinkit,,709,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,BASIL SEEDS 200G,,blinkit,,69,,,,false,NOT_LISTED,,,0,349,
+2026-08-09,SVD,BASIL SEEDS 400G,,blinkit,,189,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,BASIL SEEDS 800G,,blinkit,,329,,,,false,NOT_LISTED,,,0,1099,
+2026-08-09,SVD,BLACK CARDAMOM 100G,,blinkit,,289,,,,false,NOT_LISTED,,,0,549,
+2026-08-09,SVD,BLACK OLIVE 470G,,blinkit,,209,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,BLACK PEPPER 100G,,blinkit,,135,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,CANOLA 1+1L,,blinkit,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L,jivo-cold-pressed-canola-oil-1l,blinkit,407851,239,260,239,308,true,ABOVE,21,8.79,0,375,375
+2026-08-09,SVD,CANOLA 1L + 1L,,blinkit,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L POUCH,,blinkit,,259,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CANOLA 3L,,blinkit,,769,,,,false,NOT_LISTED,,,0,690,
+2026-08-09,SVD,CANOLA 4L,,blinkit,,1149,,,,false,NOT_LISTED,,,0,1199,
+2026-08-09,SVD,CANOLA 5L,jivo-cold-pressed-canola-oil-5l,blinkit,406593,1099,1193,1193,1481,true,ABOVE,94,8.55,0,1650,1650
+2026-08-09,SVD,CHIA SEEDS 200G,,blinkit,,99,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CHIA SEEDS 400G,,blinkit,,199,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,CHIA SEEDS 800G,,blinkit,,339,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,CINNAMON BARK 100G,,blinkit,,89,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CLOVE 100G,,blinkit,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,COCONUT 1L,,blinkit,,539,,,,false,NOT_LISTED,,,0,700,
+2026-08-09,SVD,COCONUT 200ML,,blinkit,,129,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,COCONUT 500ML,,blinkit,,229,,,,false,NOT_LISTED,,,0,695,
+2026-08-09,SVD,COFFEE,,blinkit,,239,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,CUMIN SEEDS 100G,,blinkit,,75,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,EXTRA LIGHT 1+1L,,blinkit,,1189,,,,false,NOT_LISTED,,,0,2798,
+2026-08-09,SVD,EXTRA LIGHT 1L,jivo-extra-light-olive-oil-1l,blinkit,406592,579,624,556,708,true,ABOVE,45,7.77,2,1499,1499
+2026-08-09,SVD,EXTRA LIGHT 2L,jivo-extra-light-olive-oil-2l,blinkit,545244,1129,1139,1078,1406,true,ABOVE,10,0.89,197,2799,2799
+2026-08-09,SVD,EXTRA LIGHT 3L,,blinkit,,1789,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,EXTRA LIGHT 500ML,,blinkit,,339,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,EXTRA LIGHT 5L,,blinkit,,2599,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,EXTRA VIRGIN 1L,,blinkit,,779,,,,false,NOT_LISTED,,,0,1499,
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,,blinkit,,1589,,,,false,NOT_LISTED,,,0,2998,
+2026-08-09,SVD,EXTRA VIRGIN 200ML,,blinkit,,189,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,EXTRA VIRGIN 250ML,,blinkit,,209,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,EXTRA VIRGIN 2L,,blinkit,,1589,,,,false,NOT_LISTED,,,0,2700,
+2026-08-09,SVD,EXTRA VIRGIN 3L,,blinkit,,2369,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,EXTRA VIRGIN 500ML,,blinkit,,409,,,,false,NOT_LISTED,,,0,675,
+2026-08-09,SVD,EXTRA VIRGIN 5L,,blinkit,,3599,,,,false,NOT_LISTED,,,0,7999,
+2026-08-09,SVD,FLAX SEEDS 200G,,blinkit,,89,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,FLAX SEEDS 400G,,blinkit,,179,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,FLAX SEEDS 800G,,blinkit,,349,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,GINGER ALE 200ML,,blinkit,,39,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,GOLD 1+1,,blinkit,,369,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,GOLD 1L,,blinkit,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,GOLD 5L,,blinkit,,939,,,,false,NOT_LISTED,,,0,1049,
+2026-08-09,SVD,GREEN CARDAMOM 100G,,blinkit,,479,,,,false,NOT_LISTED,,,0,799,
+2026-08-09,SVD,GROUNDNUT 1L,,blinkit,,219,,,,false,NOT_LISTED,,,0,400,
+2026-08-09,SVD,GROUNDNUT 5L,,blinkit,,1139,,,,false,NOT_LISTED,,,0,2800,
+2026-08-09,SVD,JIVO POMACE 1L,jivo-pomace-olive-oil-1l,blinkit,528706,419,398,380,469,true,BELOW,-21,-5.01,586,1049,1049
+2026-08-09,SVD,JIVO POMACE 1L + 1L,,blinkit,,849,,,,false,NOT_LISTED,,,0,2098,
+2026-08-09,SVD,JIVO POMACE 2L,,blinkit,,849,,,,false,NOT_LISTED,,,0,1600,
+2026-08-09,SVD,JIVO POMACE 5L,jivo-pomace-olive-oil-5l,blinkit,407561,1899,1971,1899,2192,true,ABOVE,72,3.79,0,4999,4999
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,,blinkit,,219,,,,false,NOT_LISTED,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,,blinkit,,18,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,JIVO WATER 250ML,,blinkit,,109,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,,blinkit,,10,,,,false,NOT_LISTED,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,jivo-kachi-ghani-cold-pressed-mustard-oil-1l,blinkit,540835,199,171,161,182,true,BELOW,-28,-14.07,151,255,255
+2026-08-09,SVD,MUSTARD 1L + 1L,,blinkit,,409,,,,false,NOT_LISTED,,,0,500,
+2026-08-09,SVD,MUSTARD 1L POUCH,,blinkit,,209,,,,false,NOT_LISTED,,,0,250,
+2026-08-09,SVD,MUSTARD 3L,,blinkit,,599,,,,false,NOT_LISTED,,,0,765,
+2026-08-09,SVD,MUSTARD 4L,,blinkit,,799,,,,false,NOT_LISTED,,,0,1000,
+2026-08-09,SVD,MUSTARD 5L,jivo-kachi-ghani-cold-pressed-mustard-oil-5l,blinkit,540970,949,868,868,894,true,BELOW,-81,-8.54,148,1250,1250
+2026-08-09,SVD,POMACE 3L,,blinkit,,1279,,,,false,NOT_LISTED,,,0,3050,
+2026-08-09,SVD,PUMPKIN SEEDS 200G,,blinkit,,199,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,PUMPKIN SEEDS 400G,,blinkit,,389,,,,false,NOT_LISTED,,,0,699,
+2026-08-09,SVD,PUMPKIN SEEDS 800G,,blinkit,,769,,,,false,NOT_LISTED,,,0,1299,
+2026-08-09,SVD,PUNJABI JEERA 160ML,,blinkit,,219,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,QUINOA SEEDS 200G,,blinkit,,109,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,QUINOA SEEDS 400G,,blinkit,,169,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,QUINOA SEEDS 800G,,blinkit,,249,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,RICE BRAN 1L,,blinkit,,189,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,RICE BRAN 1L + 1L,,blinkit,,369,,,,false,NOT_LISTED,,,0,570,
+2026-08-09,SVD,RICE BRAN 4L,,blinkit,,719,,,,false,NOT_LISTED,,,0,1140,
+2026-08-09,SVD,RICE BRAN 5L,,blinkit,,909,,,,false,NOT_LISTED,,,0,1425,
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,,blinkit,,169,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SAFFRON 1GMS,,blinkit,,499,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,SANO CANOLA 1L,,blinkit,,249,,,,false,NOT_LISTED,,,0,475,
+2026-08-09,SVD,SANO CANOLA 5L,,blinkit,,1199,,,,false,NOT_LISTED,,,0,1950,
+2026-08-09,SVD,SANO CLASSIC 1L,,blinkit,,559,,,,false,NOT_LISTED,,,0,1399,
+2026-08-09,SVD,SANO CLASSIC 5L,,blinkit,,2609,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,SANO MUSTARD 1L,,blinkit,,199,,,,false,NOT_LISTED,,,0,235,
+2026-08-09,SVD,SANO MUSTARD 5L,,blinkit,,949,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SANO POMACE 1L,,blinkit,,399,,,,false,NOT_LISTED,,,0,999,
+2026-08-09,SVD,SANO POMACE 5L,,blinkit,,1969,,,,false,NOT_LISTED,,,0,4499,
+2026-08-09,SVD,SANO SOYABEAN 1L,,blinkit,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SANO SOYABEAN 5L,,blinkit,,899,,,,false,NOT_LISTED,,,0,1450,
+2026-08-09,SVD,SANO SUNFLOWER 1L,,blinkit,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,SANO SUNFLOWER 5L,,blinkit,,1029,,,,false,NOT_LISTED,,,0,1475,
+2026-08-09,SVD,SESAME 1L + 1L,,blinkit,,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,,blinkit,,329,,,,false,NOT_LISTED,,,0,600,
+2026-08-09,SVD,SO OLIVE 1L,,blinkit,,229,,,,false,NOT_LISTED,,,0,325,
+2026-08-09,SVD,SO OLIVE 1L + 1L,,blinkit,,549,,,,false,NOT_LISTED,,,0,650,
+2026-08-09,SVD,SO OLIVE 5L,,blinkit,,1369,,,,false,NOT_LISTED,,,0,1625,
+2026-08-09,SVD,SODA 750ML,,blinkit,,15,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,SODA LEMON 750ML,,blinkit,,45,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SOYABEAN 1L,,blinkit,,199,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SOYABEAN 1L + 1L,,blinkit,,389,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SOYABEAN 1L POUCH,,blinkit,,199,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,SOYABEAN 5L,,blinkit,,949,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SPRING WATER 750ML,,blinkit,,50,,,,false,NOT_LISTED,,,0,55,
+2026-08-09,SVD,SUNFLOWER 1L,jivo-cold-pressed-sunflower-oil-1l,blinkit,628632,199,215,195,221,true,ABOVE,16,8.04,7,275,275
+2026-08-09,SVD,SUNFLOWER 1L + 1L,,blinkit,,429,,,,false,NOT_LISTED,,,0,550,
+2026-08-09,SVD,SUNFLOWER 3L,,blinkit,,649,,,,false,NOT_LISTED,,,0,825,
+2026-08-09,SVD,SUNFLOWER 4L,,blinkit,,869,,,,false,NOT_LISTED,,,0,1038,
+2026-08-09,SVD,SUNFLOWER 5L,,blinkit,,949,,,,false,NOT_LISTED,,,0,1350,
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,,blinkit,,129,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,,blinkit,,249,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,,blinkit,,369,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,WG MANGO JUICE 500ML,,blinkit,,35,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,YELLOW MUSTARD 1L,,blinkit,,259,,,,false,NOT_LISTED,,,0,375,
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,,blinkit,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,YELLOW MUSTARD 5L,,blinkit,,1269,,,,false,NOT_LISTED,,,0,2000,
+2026-08-09,SVD,A2 GHEE 1L,,bigbasket,,1309,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,A2 GHEE 500ML,,bigbasket,,709,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,BASIL SEEDS 200G,,bigbasket,,69,,,,false,NOT_LISTED,,,0,349,
+2026-08-09,SVD,BASIL SEEDS 400G,,bigbasket,,189,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,BASIL SEEDS 800G,,bigbasket,,329,,,,false,NOT_LISTED,,,0,1099,
+2026-08-09,SVD,BLACK CARDAMOM 100G,,bigbasket,,289,,,,false,NOT_LISTED,,,0,549,
+2026-08-09,SVD,BLACK OLIVE 470G,,bigbasket,,209,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,BLACK PEPPER 100G,,bigbasket,,135,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,CANOLA 1+1L,,bigbasket,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L,canola-oil-cold-pressed-1l,bigbasket,282779,239,288.65,283.98,329.44,true,ABOVE,49.65,20.77,0,375,375
+2026-08-09,SVD,CANOLA 1L + 1L,,bigbasket,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,CANOLA 1L POUCH,canola-omega3-rich-cooking-oil-1-l-1l,bigbasket,40309979,259,249.17,240.16,269.83,true,BELOW,-9.83,-3.8,31,299,299
+2026-08-09,SVD,CANOLA 3L,,bigbasket,,769,,,,false,NOT_LISTED,,,0,690,
+2026-08-09,SVD,CANOLA 4L,,bigbasket,,1149,,,,false,NOT_LISTED,,,0,1199,
+2026-08-09,SVD,CANOLA 5L,canola-oil-cold-pressed-5l,bigbasket,282780,1099,1366,1366,1600,true,ABOVE,267,24.29,0,1650,1650
+2026-08-09,SVD,CHIA SEEDS 200G,,bigbasket,,99,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CHIA SEEDS 400G,,bigbasket,,199,,,,false,NOT_LISTED,,,0,599,
+2026-08-09,SVD,CHIA SEEDS 800G,,bigbasket,,339,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,CINNAMON BARK 100G,,bigbasket,,89,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,CLOVE 100G,,bigbasket,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,COCONUT 1L,,bigbasket,,539,,,,false,NOT_LISTED,,,0,700,
+2026-08-09,SVD,COCONUT 200ML,,bigbasket,,129,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,COCONUT 500ML,,bigbasket,,229,,,,false,NOT_LISTED,,,0,695,
+2026-08-09,SVD,COFFEE,,bigbasket,,239,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,CUMIN SEEDS 100G,,bigbasket,,75,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,EXTRA LIGHT 1+1L,,bigbasket,,1189,,,,false,NOT_LISTED,,,0,2798,
+2026-08-09,SVD,EXTRA LIGHT 1L,extra-light-olive-oil-1l,bigbasket,40166398,579,717.75,639.45,1397,true,ABOVE,138.75,23.96,0,1499,1499
+2026-08-09,SVD,EXTRA LIGHT 2L,extra-light-olive-oil-antioxidants-rich-light-cooking-medium-for-frying-grilling-2l,bigbasket,40250809,1129,1343,1343,1437,true,ABOVE,214,18.95,0,2799,2799
+2026-08-09,SVD,EXTRA LIGHT 3L,,bigbasket,,1789,,,,false,NOT_LISTED,,,0,2200,
+2026-08-09,SVD,EXTRA LIGHT 500ML,,bigbasket,,339,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,EXTRA LIGHT 5L,,bigbasket,,2599,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,EXTRA VIRGIN 1L,extra-virgin-olive-oil-antioxidants-rich-suitable-for-salads-saute-1l,bigbasket,40250808,779,1012,1012,1060,true,ABOVE,233,29.91,0,1499,1799
+2026-08-09,SVD,EXTRA VIRGIN 1L + 1L,,bigbasket,,1589,,,,false,NOT_LISTED,,,0,2998,
+2026-08-09,SVD,EXTRA VIRGIN 200ML,,bigbasket,,189,,,,false,NOT_LISTED,,,0,350,
+2026-08-09,SVD,EXTRA VIRGIN 250ML,,bigbasket,,209,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,EXTRA VIRGIN 2L,,bigbasket,,1589,,,,false,NOT_LISTED,,,0,2700,
+2026-08-09,SVD,EXTRA VIRGIN 3L,,bigbasket,,2369,,,,false,NOT_LISTED,,,0,4000,
+2026-08-09,SVD,EXTRA VIRGIN 500ML,,bigbasket,,409,,,,false,NOT_LISTED,,,0,675,
+2026-08-09,SVD,EXTRA VIRGIN 5L,,bigbasket,,3599,,,,false,NOT_LISTED,,,0,7999,
+2026-08-09,SVD,FLAX SEEDS 200G,,bigbasket,,89,,,,false,NOT_LISTED,,,0,249,
+2026-08-09,SVD,FLAX SEEDS 400G,,bigbasket,,179,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,FLAX SEEDS 800G,,bigbasket,,349,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,GINGER ALE 200ML,,bigbasket,,39,,,,false,NOT_LISTED,,,0,100,
+2026-08-09,SVD,GOLD 1+1,,bigbasket,,369,,,,false,NOT_LISTED,,,0,450,
+2026-08-09,SVD,GOLD 1L,,bigbasket,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,GOLD 5L,,bigbasket,,939,,,,false,NOT_LISTED,,,0,1049,
+2026-08-09,SVD,GREEN CARDAMOM 100G,,bigbasket,,479,,,,false,NOT_LISTED,,,0,799,
+2026-08-09,SVD,GROUNDNUT 1L,,bigbasket,,219,,,,false,NOT_LISTED,,,0,400,
+2026-08-09,SVD,GROUNDNUT 5L,,bigbasket,,1139,,,,false,NOT_LISTED,,,0,2800,
+2026-08-09,SVD,JIVO POMACE 1L,pomace-olive-oil-1l,bigbasket,40197820,419,548.25,474.29,593.21,true,ABOVE,129.25,30.85,0,1049,1049
+2026-08-09,SVD,JIVO POMACE 1L + 1L,,bigbasket,,849,,,,false,NOT_LISTED,,,0,2098,
+2026-08-09,SVD,JIVO POMACE 2L,pomace-olive-oil-2l,bigbasket,40309980,849,1100,983.03,1129,true,ABOVE,251,29.56,0,1600,1449
+2026-08-09,SVD,JIVO POMACE 5L,,bigbasket,,1899,,,,false,NOT_LISTED,,,0,4999,
+2026-08-09,SVD,JIVO PUNJABI SHIKANJI 160 MLS,,bigbasket,,219,,,,false,NOT_LISTED,,,0,480,
+2026-08-09,SVD,JIVO WATER 1L,,bigbasket,,18,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,JIVO WATER 250ML,,bigbasket,,109,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,JIVO WATER 500 MLS,,bigbasket,,10,,,,false,NOT_LISTED,,,0,15,
+2026-08-09,SVD,MUSTARD 1L,cold-press-kachi-ghani-mustard-oil-1l,bigbasket,40166395,199,202.1,202.09,218.06,true,ABOVE,3.1,1.56,0,255,255
+2026-08-09,SVD,MUSTARD 1L + 1L,,bigbasket,,409,,,,false,NOT_LISTED,,,0,500,
+2026-08-09,SVD,MUSTARD 1L POUCH,,bigbasket,,209,,,,false,NOT_LISTED,,,0,250,
+2026-08-09,SVD,MUSTARD 3L,,bigbasket,,599,,,,false,NOT_LISTED,,,0,765,
+2026-08-09,SVD,MUSTARD 4L,,bigbasket,,799,,,,false,NOT_LISTED,,,0,1000,
+2026-08-09,SVD,MUSTARD 5L,cold-press-kachi-ghani-mustard-oil-5l,bigbasket,40166396,949,981.13,981.13,1207,true,ABOVE,32.13,3.39,0,1250,1250
+2026-08-09,SVD,POMACE 3L,,bigbasket,,1279,,,,false,NOT_LISTED,,,0,3050,
+2026-08-09,SVD,PUMPKIN SEEDS 200G,,bigbasket,,199,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,PUMPKIN SEEDS 400G,,bigbasket,,389,,,,false,NOT_LISTED,,,0,699,
+2026-08-09,SVD,PUMPKIN SEEDS 800G,,bigbasket,,769,,,,false,NOT_LISTED,,,0,1299,
+2026-08-09,SVD,PUNJABI JEERA 160ML,,bigbasket,,219,,,,false,NOT_LISTED,,,0,360,
+2026-08-09,SVD,QUINOA SEEDS 200G,,bigbasket,,109,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,QUINOA SEEDS 400G,,bigbasket,,169,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,QUINOA SEEDS 800G,,bigbasket,,249,,,,false,NOT_LISTED,,,0,399,
+2026-08-09,SVD,RICE BRAN 1L,,bigbasket,,189,,,,false,NOT_LISTED,,,0,285,
+2026-08-09,SVD,RICE BRAN 1L + 1L,,bigbasket,,369,,,,false,NOT_LISTED,,,0,570,
+2026-08-09,SVD,RICE BRAN 4L,,bigbasket,,719,,,,false,NOT_LISTED,,,0,1140,
+2026-08-09,SVD,RICE BRAN 5L,,bigbasket,,909,,,,false,NOT_LISTED,,,0,1425,
+2026-08-09,SVD,ROSEMARY LEAVES 150 GMS,,bigbasket,,169,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SAFFRON 1GMS,,bigbasket,,499,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,SANO CANOLA 1L,,bigbasket,,249,,,,false,NOT_LISTED,,,0,475,
+2026-08-09,SVD,SANO CANOLA 5L,,bigbasket,,1199,,,,false,NOT_LISTED,,,0,1950,
+2026-08-09,SVD,SANO CLASSIC 1L,,bigbasket,,559,,,,false,NOT_LISTED,,,0,1399,
+2026-08-09,SVD,SANO CLASSIC 5L,,bigbasket,,2609,,,,false,NOT_LISTED,,,0,6499,
+2026-08-09,SVD,SANO MUSTARD 1L,,bigbasket,,199,,,,false,NOT_LISTED,,,0,235,
+2026-08-09,SVD,SANO MUSTARD 5L,,bigbasket,,949,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SANO POMACE 1L,,bigbasket,,399,,,,false,NOT_LISTED,,,0,999,
+2026-08-09,SVD,SANO POMACE 5L,,bigbasket,,1969,,,,false,NOT_LISTED,,,0,4499,
+2026-08-09,SVD,SANO SOYABEAN 1L,,bigbasket,,189,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SANO SOYABEAN 5L,,bigbasket,,899,,,,false,NOT_LISTED,,,0,1450,
+2026-08-09,SVD,SANO SUNFLOWER 1L,,bigbasket,,209,,,,false,NOT_LISTED,,,0,280,
+2026-08-09,SVD,SANO SUNFLOWER 5L,,bigbasket,,1029,,,,false,NOT_LISTED,,,0,1475,
+2026-08-09,SVD,SESAME 1L + 1L,,bigbasket,,649,,,,false,NOT_LISTED,,,0,1200,
+2026-08-09,SVD,SESAME OIL 1L,,bigbasket,,329,,,,false,NOT_LISTED,,,0,600,
+2026-08-09,SVD,SO OLIVE 1L,,bigbasket,,229,,,,false,NOT_LISTED,,,0,325,
+2026-08-09,SVD,SO OLIVE 1L + 1L,,bigbasket,,549,,,,false,NOT_LISTED,,,0,650,
+2026-08-09,SVD,SO OLIVE 5L,,bigbasket,,1369,,,,false,NOT_LISTED,,,0,1625,
+2026-08-09,SVD,SODA 750ML,,bigbasket,,15,,,,false,NOT_LISTED,,,0,30,
+2026-08-09,SVD,SODA LEMON 750ML,fizzy-water-flavoured-with-lemon-750ml,bigbasket,40335332,45,55,55,60,true,ABOVE,10,22.22,0,55,55
+2026-08-09,SVD,SOYABEAN 1L,,bigbasket,,199,,,,false,NOT_LISTED,,,0,225,
+2026-08-09,SVD,SOYABEAN 1L + 1L,,bigbasket,,389,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SOYABEAN 1L POUCH,,bigbasket,,199,,,,false,NOT_LISTED,,,0,199,
+2026-08-09,SVD,SOYABEAN 5L,,bigbasket,,949,,,,false,NOT_LISTED,,,0,1100,
+2026-08-09,SVD,SPRING WATER 750ML,fizzy-water-flavoured-with-peach-750ml,bigbasket,40335333,50,55,55,60,true,ABOVE,5,10,0,55,55
+2026-08-09,SVD,SUNFLOWER 1L,cold-pressed-sunflower-oil-1l,bigbasket,40249993,199,200.79,177.73,259.12,true,ABOVE,1.79,0.9,64,275,275
+2026-08-09,SVD,SUNFLOWER 1L + 1L,,bigbasket,,429,,,,false,NOT_LISTED,,,0,550,
+2026-08-09,SVD,SUNFLOWER 3L,,bigbasket,,649,,,,false,NOT_LISTED,,,0,825,
+2026-08-09,SVD,SUNFLOWER 4L,,bigbasket,,869,,,,false,NOT_LISTED,,,0,1038,
+2026-08-09,SVD,SUNFLOWER 5L,sunflower-oil-cold-pressed-fortified-with-vitamins-a-d-chemical-free-5l,bigbasket,40249992,949,882.83,882.83,1350,true,BELOW,-66.17,-6.97,164,1350,1350
+2026-08-09,SVD,SUNFLOWER SEEDS 200G,,bigbasket,,129,,,,false,NOT_LISTED,,,0,299,
+2026-08-09,SVD,SUNFLOWER SEEDS 400G,,bigbasket,,249,,,,false,NOT_LISTED,,,0,499,
+2026-08-09,SVD,SUNFLOWER SEEDS 800G,,bigbasket,,369,,,,false,NOT_LISTED,,,0,899,
+2026-08-09,SVD,WG MANGO JUICE 500ML,mango-healthy-wheatgrass-juice-500ml,bigbasket,40335340,35,100,100,125,true,ABOVE,65,185.71,0,100,100
+2026-08-09,SVD,YELLOW MUSTARD 1L,,bigbasket,,259,,,,false,NOT_LISTED,,,0,375,
+2026-08-09,SVD,YELLOW MUSTARD 1L + 1L,,bigbasket,,509,,,,false,NOT_LISTED,,,0,750,
+2026-08-09,SVD,YELLOW MUSTARD 5L,,bigbasket,,1269,,,,false,NOT_LISTED,,,0,2000,
