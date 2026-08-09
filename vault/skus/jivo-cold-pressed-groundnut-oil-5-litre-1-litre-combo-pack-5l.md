@@ -7,11 +7,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-08-08
-observations: 270
+last_seen: 2026-08-09
+observations: 281
 min_price: 1189
 max_price: 1438
-latest_price: 1200
+latest_price: 1209
 tags:
   - type/sku-hub
   - platform/amazon
@@ -27,16 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹1438 (57.2% off)
-- [[amazon-fresh]] — latest ₹1200 (64.3% off)
+- [[amazon-fresh]] — latest ₹1209 (64.0% off)
 - [[amazon-now]] — latest ₹1272 (62.1% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Vijayawada]]
 
-## Runs that observed this SKU (8)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (9)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-2026-05-21-1330]]
 
-## Price history (270 observations)
+## Price history (281 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -310,6 +310,17 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-08-0708,2026-08-08,amazon-fresh,Thiruvananthapuram,695002,1200,3360,64.3,1
 2026-08-08-0708,2026-08-08,amazon-fresh,Vadodara,390001,1200,3360,64.3,1
 2026-08-08-0708,2026-08-08,amazon-fresh,Vadodara,390002,1200,3360,64.3,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Ahmedabad,380008,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Bhubaneswar,751004,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Bhubaneswar,751009,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Kolkata,700001,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Kolkata,700009,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Kolkata,700022,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Kolkata,700069,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Surat,394101,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Surat,394107,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Thiruvananthapuram,695001,1209,3360,64,1
+2026-08-09-0708,2026-08-09,amazon-fresh,Thiruvananthapuram,695002,1209,3360,64,1
 ```
 
 ---
