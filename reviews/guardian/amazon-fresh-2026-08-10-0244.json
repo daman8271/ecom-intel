@@ -1,0 +1,98 @@
+{
+  "platform": "amazon-fresh",
+  "run_id": "2026-08-10-0244",
+  "verdict": "SUSPECT",
+  "review_verdict": "OK",
+  "review_reasons": [],
+  "deep_reasons": [
+    "[class 2] geo_price_identity: 11/20 multi-city SKUs price-identical, e.g. jivo-cold-pressed-canola-soyabean-oil-1l-each-1l at identical \u20b9418.0 across 16 cities w/o store_id \u2014 possible contamination",
+    "[class 4] shared_price_dup: 1 discounted (sale,mrp) pairs shared by distinct non-combo products, e.g. \u20b9179.0/\u20b9225.0 -> jivo-cooking-edible-soyabean-oil-1-litre-1l, jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l"
+  ],
+  "reasons": [
+    "[class 2] geo_price_identity: 11/20 multi-city SKUs price-identical, e.g. jivo-cold-pressed-canola-soyabean-oil-1l-each-1l at identical \u20b9418.0 across 16 cities w/o store_id \u2014 possible contamination",
+    "[class 4] shared_price_dup: 1 discounted (sale,mrp) pairs shared by distinct non-combo products, e.g. \u20b9179.0/\u20b9225.0 -> jivo-cooking-edible-soyabean-oil-1-litre-1l, jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_price_identity",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "11/20 multi-city SKUs price-identical, e.g. jivo-cold-pressed-canola-soyabean-oil-1l-each-1l at identical \u20b9418.0 across 16 cities w/o store_id \u2014 possible contamination"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "42 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "1337 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 1337 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "1 discounted (sale,mrp) pairs shared by distinct non-combo products, e.g. \u20b9179.0/\u20b9225.0 -> jivo-cooking-edible-soyabean-oil-1-litre-1l, jivo-gold-premium-refined-cooking-oil-perfect-blend-of-rice-bran-sunflower-oil-1l"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/1337 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (1337/1337 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 0.0h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "amazon-fresh SUSPECT (deep-check): 11/20 multi-city SKUs price-identical, e.g. jivo-cold-pressed-canola-soyabean-oil-1l-each-1l at identical \u20b9418.0 across 16 cities w/o store_id \u2014 possible contamination | heal: blinkit-style default-store contamination -> re-resolve store + re-scrape",
+  "quarantined": false,
+  "evaluated_at": "2026-08-10T02:44:39.209698+00:00",
+  "source_result": "/opt/ecom-intel/platforms/amazon-fresh/result.json"
+}
