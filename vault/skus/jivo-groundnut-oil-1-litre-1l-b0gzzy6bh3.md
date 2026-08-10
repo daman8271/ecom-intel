@@ -5,11 +5,11 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-08-09
-observations: 397
+last_seen: 2026-08-10
+observations: 426
 min_price: 373
 max_price: 408
-latest_price: 393
+latest_price: 398
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Groundnut Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹393 (53.5% off)
+- [[amazon-fresh]] — latest ₹398 (52.9% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Vijayawada]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (12)
-[[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (13)
+[[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (397 observations)
+## Price history (426 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -431,6 +431,35 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-09-0708,2026-08-09,amazon-fresh,Surat,394107,393,845,53.5,1
 2026-08-09-0708,2026-08-09,amazon-fresh,Thiruvananthapuram,695001,393,845,53.5,1
 2026-08-09-0708,2026-08-09,amazon-fresh,Thiruvananthapuram,695002,393,845,53.5,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Ahmedabad,380008,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Bhubaneswar,751004,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Bhubaneswar,751009,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Delhi,110091,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700001,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700009,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700015,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700019,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700022,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700024,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700037,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700040,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700053,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700069,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700100,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Kolkata,700107,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201009,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201301,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201303,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201304,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201305,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201306,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201307,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201309,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201310,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201311,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201318,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Surat,394101,398,845,52.9,1
+2026-08-10-0707,2026-08-10,amazon-fresh,Surat,394107,398,845,52.9,1
 ```
 
 ---
