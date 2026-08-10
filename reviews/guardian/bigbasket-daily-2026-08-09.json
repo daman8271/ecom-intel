@@ -1,0 +1,98 @@
+{
+  "platform": "bigbasket",
+  "run_id": "daily-2026-08-09",
+  "verdict": "SUSPECT",
+  "review_verdict": "SUSPECT",
+  "review_reasons": [
+    "rows_vs_baseline: 8025 rows is 604% of baseline 1329 (spike)",
+    "llm_judgment: SUSPECT \u2014 6\u00d7 baseline spike (8025 vs 1329 rows) + duplicate SKU-pincode entries visible in sample; legitimate products/pricing but count anomaly flags coverage mode mismatch or duplication."
+  ],
+  "deep_reasons": [],
+  "reasons": [
+    "rows_vs_baseline: 8025 rows is 604% of baseline 1329 (spike)",
+    "llm_judgment: SUSPECT \u2014 6\u00d7 baseline spike (8025 vs 1329 rows) + duplicate SKU-pincode entries visible in sample; legitimate products/pricing but count anomaly flags coverage mode mismatch or duplication."
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no store spans >2 cities (480 stores, 21 cities, 100% rows carry a store_id)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "29 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "3752 in-stock priced rows (floor 7, baseline-derived)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 3752 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/3752 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (3752/8025 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 12.6h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "bigbasket SUSPECT (review.py): rows_vs_baseline: 8025 rows is 604% of baseline 1329 (spike); llm_judgment: SUSPECT \u2014 6\u00d7 baseline spike (8025 vs 1329 rows) + duplicate SKU-pincode entries visible in sample; legitimate products/pricing but count anomaly flags coverage mode mismatch or duplication. | heal: see review.py reasons",
+  "quarantined": false,
+  "evaluated_at": "2026-08-09T12:32:17.829507+00:00",
+  "source_result": "/opt/ecom-intel/platforms/bigbasket/result_pincode.json"
+}
