@@ -5,11 +5,11 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (5 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-08-10
-observations: 309
+last_seen: 2026-08-12
+observations: 321
 min_price: 824
 max_price: 1562
-latest_price: 852
+latest_price: 920
 tags:
   - type/sku-hub
   - platform/flipkart-minutes
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **JIVO Cold Pressed Pure Cooking Mustard Oil (5 L)**
 
 ## Sold on
-- [[flipkart-minutes]] — latest ₹852 (31.0% off)
+- [[flipkart-minutes]] — latest ₹920 (26.0% off)
 
 ## Available in cities
 [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurugram]] · [[Jalandhar]] · [[Noida]]
 
-## Runs that observed this SKU (25)
-[[flipkart-minutes-2026-08-10-0645]] · [[flipkart-minutes-2026-08-09-0645]] · [[flipkart-minutes-2026-08-08-0645]] · [[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (26)
+[[flipkart-minutes-2026-08-12-0645]] · [[flipkart-minutes-2026-08-10-0645]] · [[flipkart-minutes-2026-08-09-0645]] · [[flipkart-minutes-2026-08-08-0645]] · [[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (309 observations)
+## Price history (321 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -343,6 +343,18 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-10-0645,2026-08-10,flipkart-minutes,Gurugram,122001,852,1250,31,1
 2026-08-10-0645,2026-08-10,flipkart-minutes,Gurugram,122504,852,1250,31,1
 2026-08-10-0645,2026-08-10,flipkart-minutes,Noida,201304,852,1250,31,1
+2026-08-12-0645,2026-08-12,flipkart-minutes,Delhi,110016,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Delhi,110019,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Delhi,110043,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Delhi,110045,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Delhi,110046,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Delhi,110059,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Faridabad,121009,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Ghaziabad,201002,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Ghaziabad,201004,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Ghaziabad,201020,920,1250,26,0
+2026-08-12-0645,2026-08-12,flipkart-minutes,Gurugram,122001,920,1250,26,1
+2026-08-12-0645,2026-08-12,flipkart-minutes,Noida,201304,920,1250,26,1
 ```
 
 ---

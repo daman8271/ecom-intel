@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-groundnut-oil-1-litre-1l-b0gzzzysnw
-display_name: Jivo Groundnut Oil 1 Litre
+display_name: Jivo Groundnut Oil 1 Litre 1l B0gzzzysnw
 platforms:
   - amazon-fresh
 first_seen: 2026-08-10
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Groundnut Oil 1 Litre**
+**Jivo Groundnut Oil 1 Litre 1l B0gzzzysnw**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹448 (51.0% off)

@@ -7,8 +7,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-08-10
-observations: 11
+last_seen: 2026-08-12
+observations: 21
 min_price: 1443
 max_price: 1628
 latest_price: 1473
@@ -31,12 +31,12 @@ Up: [[skus-index]]
 - [[amazon-now]] — latest ₹1628 (29.2% off)
 
 ## Available in cities
-[[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Mysuru]] · [[Pune]]
+[[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Hyderabad]] · [[Kolkata]] · [[Mysuru]] · [[Pune]] · [[Surat]] · [[Vijayawada]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (6)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (7)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-12-0657]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-2026-05-21-1330]]
 
-## Price history (11 observations)
+## Price history (21 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -51,6 +51,16 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-09-0708,2026-08-09,amazon-fresh,Pune,411035,1443,2299,37.2,1
 2026-08-09-0708,2026-08-09,amazon-fresh,Pune,411057,1443,2299,37.2,1
 2026-08-10-0707,2026-08-10,amazon-fresh,Bhubaneswar,751009,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500002,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500024,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500066,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Kolkata,700037,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Surat,394101,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Surat,394107,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Vijayawada,520001,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Vijayawada,520002,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Visakhapatnam,530001,1473,2299,35.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Visakhapatnam,530002,1473,2299,35.9,1
 ```
 
 ---
