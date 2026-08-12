@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: canola-omega3-rich-cooking-oil-1-l-1l
-display_name: Canola omega3 Rich Cooking Oil 1 L 1l
+display_name: Canola Omega-3 Rich Cooking Oil 1 L
 platforms:
   - bigbasket
 first_seen: 2026-06-01
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Canola omega3 Rich Cooking Oil 1 L 1l**
+**Canola Omega-3 Rich Cooking Oil 1 L**
 
 ## Sold on
 - [[bigbasket]] — latest ₹241.47 (19.2% off)

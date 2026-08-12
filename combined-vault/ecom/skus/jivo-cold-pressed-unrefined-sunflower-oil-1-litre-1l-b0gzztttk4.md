@@ -5,11 +5,11 @@ display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
-last_seen: 2026-08-10
-observations: 301
-min_price: 353
+last_seen: 2026-08-12
+observations: 309
+min_price: 348
 max_price: 398
-latest_price: 358
+latest_price: 348
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹358 (36.1% off)
+- [[amazon-fresh]] — latest ₹348 (37.9% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Mysuru]] · [[Noida]] · [[Surat]] · [[Thiruvananthapuram]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (17)
-[[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
+## Runs that observed this SKU (18)
+[[amazon-fresh-2026-08-12-0657]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-26-0708]] · [[amazon-fresh-2026-07-25-0705]] · [[amazon-fresh-2026-07-24-0707]] · [[amazon-fresh-2026-07-10-0658]]
 
-## Price history (301 observations)
+## Price history (309 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -335,6 +335,14 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-10-0707,2026-08-10,amazon-fresh,Surat,394107,358,560,36.1,1
 2026-08-10-0707,2026-08-10,amazon-fresh,Thiruvananthapuram,695001,358,560,36.1,1
 2026-08-10-0707,2026-08-10,amazon-fresh,Thiruvananthapuram,695002,358,560,36.1,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Bhubaneswar,751004,348,560,37.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Bhubaneswar,751009,348,560,37.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Kolkata,700001,348,560,37.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Kolkata,700009,348,560,37.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Kolkata,700022,348,560,37.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Kolkata,700069,348,560,37.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Mysuru,570004,348,560,37.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Mysuru,570016,348,560,37.9,1
 ```
 
 ---

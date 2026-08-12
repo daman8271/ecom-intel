@@ -2,12 +2,12 @@
   "aggregate_hash_method": "sha256 over sorted list of per-file SOURCE sha256 hex digests",
   "combined_vault": "/opt/ecom-intel/combined-vault",
   "design_note": "Source vaults are copied verbatim, then a '## Related' wikilink layer is APPENDED to source notes that reference a known SKU/canonical/product/platform/category. Therefore DEST bytes EXCEED SOURCE bytes BY DESIGN. Zero-loss is proven per file: each source file's original bytes are preserved as an EXACT BYTE-PREFIX of its combined-vault copy (n_altered=n_truncated=0). 'bytes_match' is intentionally NOT claimed; the honest signal is original_prefix_preserved_all.",
-  "generated_at": "2026-08-10T05:18:01.702216+00:00",
+  "generated_at": "2026-08-12T05:02:52.833205+00:00",
   "summary": {
-    "appended_link_layer_bytes": 2184582,
-    "combined_dest_notes": 150041,
-    "dest_bytes": 997589267,
-    "ecom_source_notes": 3715,
+    "appended_link_layer_bytes": 2184832,
+    "combined_dest_notes": 150048,
+    "dest_bytes": 1001227835,
+    "ecom_source_notes": 3722,
     "factory_source_notes": 109765,
     "jivo_source_notes": 36561,
     "pillars": [
@@ -15,16 +15,16 @@
       "factory",
       "jivo"
     ],
-    "source_bytes": 995404685,
+    "source_bytes": 999043003,
     "zero_loss_ok": true
   },
   "tool": "/opt/ecom-intel/bin/combined_backbone.py",
   "vaults": {
     "ecom": {
-      "appended_link_layer_bytes": 324785,
+      "appended_link_layer_bytes": 325035,
       "dest": {
-        "bytes": 452710110,
-        "count": 3715
+        "bytes": 456348678,
+        "count": 3722
       },
       "dest_path": "/opt/ecom-intel/combined-vault/ecom",
       "lossless": {
@@ -37,9 +37,9 @@
         "original_prefix_preserved_all": true
       },
       "source": {
-        "aggregate_sha256": "d99602e7e8d5a9709cf3650a94d61f752b6f1f275f830b7b4c1c612a74b8d97b",
-        "bytes": 452385325,
-        "count": 3715
+        "aggregate_sha256": "3b62018fe13940295a37521d30191ec69c68d5ee3df2d3364d80f14e36ceaf62",
+        "bytes": 456023643,
+        "count": 3722
       },
       "source_path": "/opt/ecom-intel/vault"
     },

@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-10
-observations: 504
+last_seen: 2026-08-12
+observations: 512
 latest_status: NOT_LISTED
-below_days: 29
+below_days: 30
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-soybean-oil-5-ltr-pet-bottle-allnatural-nutrientrich-cooking-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-10) — ref ₹949 vs live ₹-
-- **Days below reference:** 29 of 63
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-25]] · [[2026-07-26]] · [[2026-07-27]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-12) — ref ₹949 vs live ₹-
+- **Days below reference:** 30 of 64
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-25]] · [[2026-07-26]] · [[2026-07-27]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]]
 
-## Ref-vs-live history (504 observations)
+## Ref-vs-live history (512 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -549,6 +549,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-10,flipkart,NOT_LISTED,BAU,949,,,,,,0,false
 2026-08-10,flipkart-minutes,NOT_LISTED,BAU,949,,,,,,0,false
 2026-08-10,zepto,NOT_LISTED,BAU,949,,,,,,0,false
+2026-08-12,amazon,BELOW,BAU,949,849,849,849,-100,-10.54,1,true
+2026-08-12,amazon-fresh,NOT_LISTED,BAU,949,,,,,,0,false
+2026-08-12,amazon-now,NOT_LISTED,BAU,949,,,,,,0,false
+2026-08-12,bigbasket,NOT_LISTED,BAU,949,,,,,,0,false
+2026-08-12,blinkit,NOT_LISTED,BAU,949,,,,,,0,false
+2026-08-12,flipkart,NOT_LISTED,BAU,949,,,,,,0,false
+2026-08-12,flipkart-minutes,NOT_LISTED,BAU,949,,,,,,0,false
+2026-08-12,zepto,NOT_LISTED,BAU,949,,,,,,0,false
 ```
 
 ---

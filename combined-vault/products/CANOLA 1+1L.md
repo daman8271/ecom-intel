@@ -38,14 +38,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-10).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-12).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 529 | 479 | -9.45 | 🟢 BELOW | BAU | 2026-08-10 |
-| [[Platform - amazon\|amazon-fresh]] | 529 | 479 | -9.45 | 🟢 BELOW | BAU | 2026-08-10 |
-| [[Platform - amazon\|amazon-now]] | 529 | 479 | -9.45 | 🟢 BELOW | BAU | 2026-08-10 |
-| [[Platform - flipkart\|flipkart]] | 529 | — | — | ⚪ OOS | BAU | 2026-08-10 |
+| [[Platform - amazon\|amazon]] | 529 | 479 | -9.45 | 🟢 BELOW | BAU | 2026-08-12 |
+| [[Platform - amazon\|amazon-fresh]] | 529 | 479 | -9.45 | 🟢 BELOW | BAU | 2026-08-12 |
+| [[Platform - amazon\|amazon-now]] | 529 | 479 | -9.45 | 🟢 BELOW | BAU | 2026-08-12 |
+| [[Platform - flipkart\|flipkart]] | 529 | 533 | 0.76 | 🔴 ABOVE | BAU | 2026-08-12 |
 | [[Platform - flipkart\|flipkart-minutes]] | 529 | 937 | 77.13 | 🔴 ABOVE | BAU | 2026-07-13 |
 | [[Platform - zepto\|zepto]] | 509 | 487 | -4.32 | 🟢 BELOW | SVD | 2026-08-04 |
 

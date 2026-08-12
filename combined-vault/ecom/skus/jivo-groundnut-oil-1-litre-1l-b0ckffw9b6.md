@@ -5,11 +5,11 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-08-10
-observations: 79
+last_seen: 2026-08-12
+observations: 83
 min_price: 193
 max_price: 219
-latest_price: 209
+latest_price: 202
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Groundnut Oil 1 Litre**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹209 (62.7% off)
+- [[amazon-fresh]] — latest ₹202 (63.9% off)
 
 ## Available in cities
-[[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Mysuru]] · [[Noida]] · [[Pune]]
+[[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (10)
-[[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (11)
+[[amazon-fresh-2026-08-12-0657]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (79 observations)
+## Price history (83 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -113,6 +113,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-09-0708,2026-08-09,amazon-fresh,Delhi,110052,215,560,61.6,1
 2026-08-09-0708,2026-08-09,amazon-fresh,Noida,201312,209,560,62.7,1
 2026-08-10-0707,2026-08-10,amazon-fresh,Noida,201312,209,560,62.7,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500001,202,560,63.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500003,202,560,63.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500024,202,560,63.9,1
+2026-08-12-0657,2026-08-12,amazon-fresh,Noida,201312,202,560,63.9,1
 ```
 
 ---
