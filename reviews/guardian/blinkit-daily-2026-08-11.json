@@ -1,0 +1,99 @@
+{
+  "platform": "blinkit",
+  "run_id": "daily-2026-08-11",
+  "verdict": "BROKEN",
+  "review_verdict": "BROKEN",
+  "review_reasons": [
+    "freshness: captured_at 2026-08-10T01:17:27.721Z is 35.2h old (> 15h); stale file?"
+  ],
+  "deep_reasons": [
+    "[class 9] freshness: captured 35.2h ago (>24h stale)"
+  ],
+  "reasons": [
+    "freshness: captured_at 2026-08-10T01:17:27.721Z is 35.2h old (> 15h); stale file?",
+    "[class 9] freshness: captured 35.2h ago (>24h stale)"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no store spans >2 cities (435 stores, 22 cities, 100% rows carry a store_id)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "9 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "3526 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 3526 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/3526 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (3526/3529 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "captured 35.2h ago (>24h stale)"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "blinkit BROKEN (deep-check): captured 35.2h ago (>24h stale) | heal: stale/cache-served prices -> re-fetch live from PDP",
+  "quarantined": true,
+  "evaluated_at": "2026-08-11T12:30:03.333349+00:00",
+  "source_result": "/opt/ecom-intel/platforms/blinkit/result.json"
+}
