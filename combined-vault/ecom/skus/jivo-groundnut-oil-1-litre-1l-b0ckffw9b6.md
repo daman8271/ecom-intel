@@ -5,9 +5,9 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-08-12
-observations: 83
-min_price: 193
+last_seen: 2026-08-13
+observations: 87
+min_price: 183
 max_price: 219
 latest_price: 202
 tags:
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bengaluru]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Mysuru]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (11)
-[[amazon-fresh-2026-08-12-0657]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (12)
+[[amazon-fresh-2026-08-13-0657]] · [[amazon-fresh-2026-08-12-0657]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (83 observations)
+## Price history (87 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -117,6 +117,10 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500003,202,560,63.9,1
 2026-08-12-0657,2026-08-12,amazon-fresh,Hyderabad,500024,202,560,63.9,1
 2026-08-12-0657,2026-08-12,amazon-fresh,Noida,201312,202,560,63.9,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Hyderabad,500003,183,560,67.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Hyderabad,500006,183,560,67.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Hyderabad,500024,183,560,67.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Noida,201312,202,560,63.9,1
 ```
 
 ---

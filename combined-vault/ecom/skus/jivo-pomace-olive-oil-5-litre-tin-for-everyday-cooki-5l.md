@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-pomace-olive-oil-5-litre-tin-for-everyday-cooki-5l
-display_name: Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooki
+display_name: Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cooki 5l
 platforms:
   - amazon-now
 first_seen: 2026-08-12
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Pomace Olive Oil 5 Litre Tin for Everyday Cooki**
+**Jivo Pomace Olive Oil 5 Litre Tin For Everyday Cooki 5l**
 
 ## Sold on
 - [[amazon-now]] — latest ₹1899 (62.0% off)
