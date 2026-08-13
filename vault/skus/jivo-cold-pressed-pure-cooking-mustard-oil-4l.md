@@ -5,11 +5,11 @@ display_name: JIVO Cold Pressed Pure Cooking Mustard Oil (4 L)
 platforms:
   - flipkart-minutes
 first_seen: 2026-07-14
-last_seen: 2026-08-12
-observations: 536
+last_seen: 2026-08-13
+observations: 544
 min_price: 674
-max_price: 709
-latest_price: 709
+max_price: 717
+latest_price: 717
 tags:
   - type/sku-hub
   - platform/flipkart-minutes
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **JIVO Cold Pressed Pure Cooking Mustard Oil (4 L)**
 
 ## Sold on
-- [[flipkart-minutes]] — latest ₹709 (29.0% off)
+- [[flipkart-minutes]] — latest ₹717 (28.0% off)
 
 ## Available in cities
 [[Chandigarh]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurugram]] · [[Jalandhar]] · [[Lucknow]] · [[Ludhiana]] · [[Mohali]]
 
-## Runs that observed this SKU (26)
-[[flipkart-minutes-2026-08-12-0645]] · [[flipkart-minutes-2026-08-10-0645]] · [[flipkart-minutes-2026-08-09-0645]] · [[flipkart-minutes-2026-08-08-0645]] · [[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
+## Runs that observed this SKU (27)
+[[flipkart-minutes-2026-08-13-0645]] · [[flipkart-minutes-2026-08-12-0645]] · [[flipkart-minutes-2026-08-10-0645]] · [[flipkart-minutes-2026-08-09-0645]] · [[flipkart-minutes-2026-08-08-0645]] · [[flipkart-minutes-2026-08-06-0645]] · [[flipkart-minutes-2026-08-04-0645]] · [[flipkart-minutes-2026-08-03-0645]] · [[flipkart-minutes-2026-08-02-0645]] · [[flipkart-minutes-2026-08-01-0645]] · [[flipkart-minutes-2026-07-31-0645]] · [[flipkart-minutes-2026-07-30-0645]] · [[flipkart-minutes-2026-07-29-0645]] · [[flipkart-minutes-2026-07-28-0645]] · [[flipkart-minutes-2026-07-27-0645]] · [[flipkart-minutes-2026-07-26-0645]] · [[flipkart-minutes-2026-07-25-0645]] · [[flipkart-minutes-2026-07-24-0645]] · [[flipkart-minutes-2026-07-23-0645]] · [[flipkart-minutes-2026-07-22-0645]] · [[flipkart-minutes-2026-07-21-0645]] · [[flipkart-minutes-2026-07-19-0645]] · [[flipkart-minutes-2026-07-18-0645]] · [[flipkart-minutes-2026-07-17-0645]] · [[flipkart-minutes-2026-07-16-0645]] · [[flipkart-minutes-2026-07-15-0645]] · [[flipkart-minutes-2026-07-14-0645]]
 
-## Price history (536 observations)
+## Price history (544 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -570,6 +570,14 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-12-0645,2026-08-12,flipkart-minutes,Lucknow,226031,709,1000,29,0
 2026-08-12-0645,2026-08-12,flipkart-minutes,Ludhiana,141010,709,1000,29,0
 2026-08-12-0645,2026-08-12,flipkart-minutes,Ludhiana,141011,709,1000,29,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Delhi,110070,717,1000,28,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Lucknow,226016,717,1000,28,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Lucknow,226021,717,1000,28,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Lucknow,226022,717,1000,28,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Lucknow,226028,717,1000,28,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Lucknow,226031,717,1000,28,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Ludhiana,141010,717,1000,28,0
+2026-08-13-0645,2026-08-13,flipkart-minutes,Ludhiana,141011,717,1000,28,0
 ```
 
 ---

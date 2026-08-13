@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-extra-virgin-olive-oil-5-litre-tin-5l
-display_name: Jivo Extra Virgin Olive Oil 5 litre Tin
+display_name: Jivo Extra Virgin Olive Oil 5 Litre Tin 5l
 platforms:
   - amazon-fresh
 first_seen: 2026-07-16
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Extra Virgin Olive Oil 5 litre Tin**
+**Jivo Extra Virgin Olive Oil 5 Litre Tin 5l**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹3499 (56.3% off)

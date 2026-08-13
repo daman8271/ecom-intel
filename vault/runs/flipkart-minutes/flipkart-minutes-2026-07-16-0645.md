@@ -30,7 +30,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-07-16]] · Week: [[2026-W29]] · Month: 
 ## SKUs seen
 - [[jivo-cold-press-canola-oil-1l]] — JIVO Cold Press Canola Oil (1 L) — ₹234 (37.0% off) · in 389 pincodes
 - [[jivo-cold-press-combo-canola-oil-2l]] — JIVO Cold Press Combo Canola Oil (2 x 1 L) — ₹600 · in 21 pincodes
-- [[jivo-cold-pressed-canola-oil-5l]] — JIVO Cold Pressed Canola Oil (5000 ml) — ₹1650 · in 1 pincodes
+- [[jivo-cold-pressed-canola-oil-5l]] — Jivo Cold Pressed Canola Oil 5l — ₹1650 · in 1 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil (1 L) — ₹167 (34.0% off) · in 129 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil (4 L) — ₹674 (32.0% off) · in 9 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-5l]] — JIVO Cold Pressed Pure Cooking Mustard Oil (5 L) — ₹851 (31.0% off) · in 16 pincodes

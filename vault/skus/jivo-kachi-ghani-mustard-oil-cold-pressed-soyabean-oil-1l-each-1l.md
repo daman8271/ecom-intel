@@ -4,16 +4,18 @@ canonical_sku: jivo-kachi-ghani-mustard-oil-cold-pressed-soyabean-oil-1l-each-1l
 display_name: Jivo Kachi Ghani Mustard Oil Cold Pressed Soyabean Oil 1l Each 1l
 platforms:
   - amazon
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 99
+last_seen: 2026-08-13
+observations: 108
 min_price: 366
 max_price: 408
-latest_price: 366
+latest_price: 378
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -25,15 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹366 (23.8% off)
+- [[amazon-fresh]] — latest ₹378 (21.3% off)
 - [[amazon-now]] — latest ₹366 (23.8% off)
 
 ## Available in cities
 [[Delhi]] · [[Ghaziabad]] · [[Jaipur]] · [[Mumbai]] · [[Pune]]
 
-## Runs that observed this SKU (36)
-[[amazon-now-2026-06-04-1417]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (37)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-13-0657]] · [[amazon-2026-06-04-1417]] · [[amazon-2026-06-01-1600]] · [[amazon-2026-06-01-1200]] · [[amazon-2026-06-01-0900]] · [[amazon-2026-05-31-1600]] · [[amazon-2026-05-31-1200]] · [[amazon-2026-05-31-0900]] · [[amazon-2026-05-30-1200]] · [[amazon-2026-05-30-0900]] · [[amazon-2026-05-29-1600]] · [[amazon-2026-05-29-1200]] · [[amazon-2026-05-29-0900]] · [[amazon-2026-05-28-1600]] · [[amazon-2026-05-28-1200]] · [[amazon-2026-05-28-0900]] · [[amazon-2026-05-27-1600]] · [[amazon-2026-05-27-1200]] · [[amazon-2026-05-27-0900]] · [[amazon-2026-05-26-1600]] · [[amazon-2026-05-26-1200]] · [[amazon-2026-05-26-0900]] · [[amazon-2026-05-25-1600]] · [[amazon-2026-05-25-1200]] · [[amazon-2026-05-25-0900]] · [[amazon-2026-05-24-1600]] · [[amazon-2026-05-24-1200]] · [[amazon-2026-05-24-0900]] · [[amazon-2026-05-23-1600]] · [[amazon-2026-05-23-1200]] · [[amazon-2026-05-23-0900]] · [[amazon-2026-05-22-1600]] · [[amazon-2026-05-22-1200]] · [[amazon-2026-05-22-0900]] · [[amazon-2026-05-21-1835]] · [[amazon-2026-05-21-1330]]
 
-## Price history (99 observations)
+## Price history (108 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -136,6 +139,15 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Pune,411047,366,480,23.8,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,412101,366,480,23.8,1
 2026-06-04-1417,2026-06-04,amazon-now,Pune,412114,366,480,23.8,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411001,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411004,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411005,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411006,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411011,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411014,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411015,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411028,378,480,21.3,1
+2026-08-13-0657,2026-08-13,amazon-fresh,Pune,411030,378,480,21.3,1
 ```
 
 ---
