@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-13
-observations: 520
+last_seen: 2026-08-14
+observations: 528
 latest_status: NOT_LISTED
-below_days: 6
+below_days: 7
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cu
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-13) — ref ₹2709 vs live ₹-
-- **Days below reference:** 6 of 65
-- **Below on:** [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-14) — ref ₹2609 vs live ₹-
+- **Days below reference:** 7 of 66
+- **Below on:** [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]] · [[2026-08-14]]
 
-## Ref-vs-live history (520 observations)
+## Ref-vs-live history (528 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -565,6 +565,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-13,flipkart,OOS,BAU,2709,,,,,,0,false
 2026-08-13,flipkart-minutes,NOT_LISTED,BAU,2709,,,,,,0,false
 2026-08-13,zepto,NOT_LISTED,BAU,2709,,,,,,0,false
+2026-08-14,amazon,BELOW,SVD,2609,1999,1999,1999,-610,-23.38,1,true
+2026-08-14,amazon-fresh,NOT_LISTED,SVD,2609,,,,,,0,false
+2026-08-14,amazon-now,NOT_LISTED,SVD,2609,,,,,,0,false
+2026-08-14,bigbasket,NOT_LISTED,SVD,2609,,,,,,0,false
+2026-08-14,blinkit,NOT_LISTED,SVD,2609,,,,,,0,false
+2026-08-14,flipkart,OOS,SVD,2609,,,,,,0,false
+2026-08-14,flipkart-minutes,NOT_LISTED,SVD,2609,,,,,,0,false
+2026-08-14,zepto,NOT_LISTED,SVD,2609,,,,,,0,false
 ```
 
 ---

@@ -6,8 +6,8 @@ platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-08-13
-observations: 106
+last_seen: 2026-08-14
+observations: 134
 min_price: 3058
 max_price: 3338
 latest_price: 3078
@@ -28,12 +28,12 @@ Up: [[skus-index]]
 - [[amazon-fresh]] — latest ₹3078 (53.7% off)
 
 ## Available in cities
-[[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Noida]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Vijayawada]] · [[Visakhapatnam]]
+[[Ahmedabad]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Noida]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Vijayawada]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (5)
-[[amazon-fresh-2026-08-13-0657]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (6)
+[[amazon-fresh-2026-08-14-0701]] · [[amazon-fresh-2026-08-13-0657]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-2026-05-21-1330]]
 
-## Price history (106 observations)
+## Price history (134 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -143,6 +143,34 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-13-0657,2026-08-13,amazon-fresh,Thiruvananthapuram,695002,3078,6649,53.7,1
 2026-08-13-0657,2026-08-13,amazon-fresh,Visakhapatnam,530001,3078,6649,53.7,1
 2026-08-13-0657,2026-08-13,amazon-fresh,Visakhapatnam,530002,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Ahmedabad,380008,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Bhubaneswar,751004,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Bhubaneswar,751009,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Delhi,110055,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Delhi,110092,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Gurugram,122001,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Gurugram,122002,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Gurugram,122003,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Gurugram,122007,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Gurugram,122010,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Gurugram,122012,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Gurugram,122051,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Hyderabad,500001,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Hyderabad,500002,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Hyderabad,500003,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Hyderabad,500006,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Hyderabad,500024,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Hyderabad,500066,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Kolkata,700009,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Kolkata,700015,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Kolkata,700022,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Kolkata,700024,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Kolkata,700040,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Kolkata,700053,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Thiruvananthapuram,695001,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Thiruvananthapuram,695002,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Vijayawada,520001,3078,6649,53.7,1
+2026-08-14-0701,2026-08-14,amazon-fresh,Vijayawada,520002,3078,6649,53.7,1
 ```
 
 ---
