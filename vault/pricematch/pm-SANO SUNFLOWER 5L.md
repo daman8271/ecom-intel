@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-13
-observations: 520
+last_seen: 2026-08-14
+observations: 528
 latest_status: NOT_LISTED
 below_days: 22
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[sano-sunflower-oil-5-ltr-pet-bottle-pure-nutrient-rich-cooking-oil
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-13) — ref ₹1069 vs live ₹-
-- **Days below reference:** 22 of 65
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-14) — ref ₹1029 vs live ₹-
+- **Days below reference:** 22 of 66
 - **Below on:** [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-10]] · [[2026-07-11]] · [[2026-07-12]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-17]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-23]] · [[2026-07-24]]
 
-## Ref-vs-live history (520 observations)
+## Ref-vs-live history (528 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -565,6 +565,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-13,flipkart,NOT_LISTED,BAU,1069,,,,,,0,false
 2026-08-13,flipkart-minutes,NOT_LISTED,BAU,1069,,,,,,0,false
 2026-08-13,zepto,NOT_LISTED,BAU,1069,,,,,,0,false
+2026-08-14,amazon,OOS,SVD,1029,,,,,,0,false
+2026-08-14,amazon-fresh,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-08-14,amazon-now,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-08-14,bigbasket,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-08-14,blinkit,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-08-14,flipkart,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-08-14,flipkart-minutes,NOT_LISTED,SVD,1029,,,,,,0,false
+2026-08-14,zepto,NOT_LISTED,SVD,1029,,,,,,0,false
 ```
 
 ---

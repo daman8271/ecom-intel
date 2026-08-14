@@ -11,8 +11,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-13
-observations: 520
+last_seen: 2026-08-14
+observations: 528
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -34,10 +34,10 @@ Up: [[Price-Match-MOC]]
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-13) — ref ₹689 vs live ₹-
-- **Days below reference:** 0 of 65
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-14) — ref ₹649 vs live ₹-
+- **Days below reference:** 0 of 66
 
-## Ref-vs-live history (520 observations)
+## Ref-vs-live history (528 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -561,6 +561,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-13,flipkart,NOT_LISTED,BAU,689,,,,,,0,false
 2026-08-13,flipkart-minutes,NOT_LISTED,BAU,689,,,,,,0,false
 2026-08-13,zepto,NOT_LISTED,BAU,689,,,,,,0,false
+2026-08-14,amazon,NOT_LISTED,SVD,649,,,,,,0,false
+2026-08-14,amazon-fresh,NOT_LISTED,SVD,649,,,,,,0,false
+2026-08-14,amazon-now,NOT_LISTED,SVD,649,,,,,,0,false
+2026-08-14,bigbasket,NOT_LISTED,SVD,649,,,,,,0,false
+2026-08-14,blinkit,NOT_LISTED,SVD,649,,,,,,0,false
+2026-08-14,flipkart,NOT_LISTED,SVD,649,,,,,,0,false
+2026-08-14,flipkart-minutes,NOT_LISTED,SVD,649,,,,,,0,false
+2026-08-14,zepto,NOT_LISTED,SVD,649,,,,,,0,false
 ```
 
 ---
