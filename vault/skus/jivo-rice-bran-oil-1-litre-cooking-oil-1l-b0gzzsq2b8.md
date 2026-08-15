@@ -1,15 +1,15 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0gzzsq2b8
-display_name: Jivo Rice Bran Oil 1 Litre Cooking Oil 1l b0gzzsq2b8
+display_name: Jivo Rice Bran Oil 1 Litre Cooking Oil
 platforms:
   - amazon-fresh
 first_seen: 2026-08-05
-last_seen: 2026-08-06
-observations: 15
+last_seen: 2026-08-15
+observations: 28
 min_price: 418
-max_price: 418
-latest_price: 418
+max_price: 448
+latest_price: 448
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -19,18 +19,18 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Oil 1 Litre Cooking Oil 1l b0gzzsq2b8**
+**Jivo Rice Bran Oil 1 Litre Cooking Oil**
 
 ## Sold on
-- [[amazon-fresh]] — latest ₹418 (31.5% off)
+- [[amazon-fresh]] — latest ₹448 (26.6% off)
 
 ## Available in cities
-[[Kolkata]]
+[[Delhi]] · [[Gurugram]] · [[Kolkata]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-08-15-0657]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]]
 
-## Price history (15 observations)
+## Price history (28 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -49,6 +49,19 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700053,418,610,31.5,1
 2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700100,418,610,31.5,1
 2026-08-06-0708,2026-08-06,amazon-fresh,Kolkata,700107,418,610,31.5,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110001,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110004,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110008,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110018,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110024,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110025,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110032,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110037,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110044,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110048,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Delhi,110075,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Gurugram,122003,448,610,26.6,1
+2026-08-15-0657,2026-08-15,amazon-fresh,Gurugram,122012,448,610,26.6,1
 ```
 
 ---
