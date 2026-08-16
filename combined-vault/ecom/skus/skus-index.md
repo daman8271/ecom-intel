@@ -667,7 +667,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-extra-virgin-olive-oil-250-ml-250ml]] — Jivo Extra Virgin Olive Oil 250 Ml 250ml
 - [[jivo-extra-virgin-olive-oil-5-litre-tin-5l]] — Jivo Extra Virgin Olive Oil 5 Litre Tin 5l
 - [[jivo-extra-virgin-olive-oil-5-litre-with-1litre-100-natural-and-cold-pressed-cooking-oil-for-dressings-salad-and-soups-dips-marinades-5l]] — Jivo Extra Virgin Olive Oil 5 Litre With 1litre 100 Natural And Cold Pressed Cooking Oil For Dressings Salad And Soups Dips Marinades 5l
-- [[jivo-extra-virgin-olive-oil-5-litres-100-natural-and-cold-pressed-cooking-oil-marinadesjivo-olive-oil-extra-light-daily-cooking-5-litre-5l]] — Jivo Extra Virgin Olive Oil 5 litres, 100% natural and cold pressed cooking oil & Marinades.&Jivo Olive Oil Extra Light Daily Cooking 5 Litre (TIN)
+- [[jivo-extra-virgin-olive-oil-5-litres-100-natural-and-cold-pressed-cooking-oil-marinadesjivo-olive-oil-extra-light-daily-cooking-5-litre-5l]] — Jivo Extra Virgin Olive Oil 5 Litres 100 Natural And Cold Pressed Cooking Oil Marinadesjivo Olive Oil Extra Light Daily Cooking 5 Litre 5l
 - [[jivo-first-pressed-sesame-oil-1-litre-cholesterol-free-with-rich-aroma-flavour-of-sesame-seeds-unrefined-daily-cooking-with-multipurpose-usage-1l]] — Jivo First Pressed Sesame (Gingelly) Oil 1 Litre, Cholesterol Free with Rich Aroma & Flavour of Sesame Seeds, Unrefined Daily Cooking with Multipurpose Usage
 - [[jivo-first-pressed-sesame-oil-1l]] — Jivo First Pressed Sesame Oil 1l
 - [[jivo-first-pressed-yellow-mustard-oil-1-litre-1l]] — Jivo First Pressed Yellow Mustard Oil 1 Litre
@@ -683,7 +683,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-groundnut-oil-1l]] — Jivo Groundnut Oil 1l
 - [[jivo-groundnut-oil-5-litre-5l]] — Jivo Groundnut Oil 5 Litre
 - [[jivo-groundnut-oil-5l-cold-pressed-sunflower-oil-5l-5l]] — Jivo Groundnut Oil 5l Cold Pressed Sunflower Oil 5l 5l
-- [[jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml]] — Jivo Healthy Wheatgrass Juice with Mango Flavor (500ml) (500 ml)
+- [[jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml]] — Jivo Healthy Wheatgrass Juice With Mango Flavor 500ml
 - [[jivo-healthy-wheatgrass-juice-with-mango-flavor-body-detox-immunity-booster-natural-ingredients-500ml-mango-500ml]] — Jivo Healthy Wheatgrass Juice With Mango Flavor Body Detox Immunity Booster Natural Ingredients 500ml Mango 500ml
 - [[jivo-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-each-1l]] — Jivo Kachi Ghani Chemical Free Mustard Daily Cooking Oil 1 Litre Each 1l
 - [[jivo-kachi-ghani-chemical-free-mustard-oil-5-litre-with-jivo-chemical-free-sunflower-oil-5-litre-5l]] — Jivo Kachi Ghani Chemical Free Mustard Oil 5 Litre With Jivo Chemical Free Sunflower Oil 5 Litre 5l
@@ -762,7 +762,7 @@ Every Jivo SKU tracked, grouped by platform. Each links to its per-SKU memory no
 - [[jivo-cold-pressed-groundnut-oil-1-litre-1l]] — Jivo Cold Pressed Groundnut Oil 1 Litre 1l
 - [[jivo-cold-pressed-groundnut-oil-5-litre-1-litre-combo-pack-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre 1 Litre Combo Pack 5l
 - [[jivo-cold-pressed-groundnut-oil-5-litre-5l]] — Jivo Cold Pressed Groundnut Oil 5 Litre 5l
-- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D Na
+- [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-d-na]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard D
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre
 - [[jivo-cold-pressed-kachi-ghani-chemical-free-mustard-daily-cooking-oil-1-litre-pouch-1l]] — Jivo Cold Pressed Kachi Ghani Chemical Free Mustard Daily Cooking Oil, 1 Litre Pouch
 - [[jivo-cold-pressed-sunflower-oil-5l-gold-premium-refined-oil-5l-5l]] — Jivo Cold Pressed Sunflower Oil 5l Gold Premium Refined Oil 5l 5l

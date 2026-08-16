@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-healthy-wheatgrass-juice-with-mango-flavor-500ml
-display_name: Jivo Healthy Wheatgrass Juice with Mango Flavor (500ml) (500 ml)
+display_name: Jivo Healthy Wheatgrass Juice With Mango Flavor 500ml
 platforms:
   - amazon-fresh
   - amazon-now
@@ -21,7 +21,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Healthy Wheatgrass Juice with Mango Flavor (500ml) (500 ml)**
+**Jivo Healthy Wheatgrass Juice With Mango Flavor 500ml**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹39 (29.1% off)
