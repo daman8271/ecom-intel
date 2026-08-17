@@ -1,0 +1,101 @@
+{
+  "platform": "flipkart",
+  "run_id": "daily-2026-08-16",
+  "verdict": "BROKEN",
+  "review_verdict": "BROKEN",
+  "review_reasons": [
+    "freshness: captured_at 2026-08-10T04:46:53.109Z is 151.7h old (> 15h); stale file?",
+    "priced_floor_block: 50 priced in-stock rows is 59% of baseline 84"
+  ],
+  "deep_reasons": [
+    "[class 9] freshness: captured 151.7h ago (>24h stale)"
+  ],
+  "reasons": [
+    "freshness: captured_at 2026-08-10T04:46:53.109Z is 151.7h old (> 15h); stale file?",
+    "priced_floor_block: 50 priced in-stock rows is 59% of baseline 84",
+    "[class 9] freshness: captured 151.7h ago (>24h stale)"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "national platform \u2014 geo n/a"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "269 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "50 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 50 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/50 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (50/269 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "captured 151.7h ago (>24h stale)"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "flipkart BROKEN (deep-check): captured 151.7h ago (>24h stale) | heal: stale/cache-served prices -> re-fetch live from PDP",
+  "quarantined": true,
+  "evaluated_at": "2026-08-16T12:30:17.957193+00:00",
+  "source_result": "/opt/ecom-intel/platforms/flipkart/result.json"
+}
