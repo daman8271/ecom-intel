@@ -36,11 +36,11 @@ Up: [[Home]]
 | Bridge class | new_confirmed |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-16).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-17).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 39 | — | — | ⚪ OOS | SVD | 2026-08-16 |
+| [[Platform - amazon\|amazon]] | 49 | — | — | ⚪ OOS | BAU | 2026-08-17 |
 | [[Platform - bigbasket\|bigbasket]] | — | — | — | — | — | — |
 
 ## JIVO lens

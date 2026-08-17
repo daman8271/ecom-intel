@@ -41,13 +41,13 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-16).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-17).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 849 | — | — | ⚪ OOS | SVD | 2026-08-16 |
-| [[Platform - bigbasket\|bigbasket]] | 849 | 1100 | 29.56 | 🔴 ABOVE | SVD | 2026-08-16 |
-| [[Platform - flipkart\|flipkart]] | 849 | 783 | -7.77 | 🟢 BELOW | SVD | 2026-08-16 |
+| [[Platform - amazon\|amazon]] | 869 | — | — | ⚪ OOS | BAU | 2026-08-17 |
+| [[Platform - bigbasket\|bigbasket]] | 869 | 1100 | 26.58 | 🔴 ABOVE | BAU | 2026-08-17 |
+| [[Platform - flipkart\|flipkart]] | 869 | 783 | -9.9 | 🟢 BELOW | BAU | 2026-08-17 |
 | [[Platform - zepto\|zepto]] | 849 | 826 | -2.71 | 🟢 BELOW | SVD | 2026-08-04 |
 
 ## JIVO lens

@@ -14,7 +14,7 @@ Up: [[Home]]
 - **Retired/merged JIDs (kept, never reused):** 0
 - **Highest serial minted:** JID-0151
 - **Identity conflicts to review:** 14
-- **Generated:** 2026-08-16T05:07:25.177975+00:00
+- **Generated:** 2026-08-17T05:06:03.268458+00:00
 
 ## Registry — JID ↔ product ↔ external keys
 | JID | Product (our canonical) | SAP code(s) — app/factory | Ecom canonical listing(s) | Category | Tier |

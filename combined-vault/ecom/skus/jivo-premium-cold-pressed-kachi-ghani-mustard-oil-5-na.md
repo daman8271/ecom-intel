@@ -5,11 +5,11 @@ display_name: "Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5"
 platforms:
   - amazon-now
 first_seen: 2026-06-09
-last_seen: 2026-08-09
-observations: 200
+last_seen: 2026-08-17
+observations: 211
 min_price: 846
 max_price: 1049
-latest_price: 853
+latest_price: 898
 tags:
   - type/sku-hub
   - platform/amazon-now
@@ -22,15 +22,15 @@ Up: [[skus-index]]
 **Jivo Premium Cold Pressed Kachi Ghani Mustard Oil, 5**
 
 ## Sold on
-- [[amazon-now]] — latest ₹853 (31.8% off)
+- [[amazon-now]] — latest ₹898 (28.2% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Lucknow]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (18)
-[[amazon-now-2026-08-09-0813]] · [[amazon-now-2026-08-08-0812]] · [[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-now-2026-07-06-0910]] · [[amazon-now-2026-07-05-0218]] · [[amazon-now-2026-07-05-0208]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
+## Runs that observed this SKU (19)
+[[amazon-now-2026-08-17-0803]] · [[amazon-now-2026-08-09-0813]] · [[amazon-now-2026-08-08-0812]] · [[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-now-2026-07-06-0910]] · [[amazon-now-2026-07-05-0218]] · [[amazon-now-2026-07-05-0208]] · [[amazon-now-2026-06-18-1013]] · [[amazon-now-2026-06-16-1352]] · [[amazon-now-2026-06-16-1014]] · [[amazon-now-2026-06-14-1018]] · [[amazon-now-2026-06-13-1346]] · [[amazon-now-2026-06-13-1013]] · [[amazon-now-2026-06-12-1025]] · [[amazon-now-2026-06-09-1226]] · [[amazon-now-2026-06-09-0924]]
 
-## Price history (200 observations)
+## Price history (211 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -234,6 +234,17 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-08-0812,2026-08-08,amazon-now,Lucknow,226031,846,1250,32.3,1
 2026-08-08-0812,2026-08-08,amazon-now,Pune,411026,853,1250,31.8,1
 2026-08-09-0813,2026-08-09,amazon-now,Pune,411026,853,1250,31.8,1
+2026-08-17-0803,2026-08-17,amazon-now,Lucknow,226006,898,1250,28.2,1
+2026-08-17-0803,2026-08-17,amazon-now,Mumbai,400074,942,1250,24.6,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411005,949,1250,24.1,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411008,898,1250,28.2,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411015,898,1250,28.2,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411026,898,1250,28.2,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411027,898,1250,28.2,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411030,949,1250,24.1,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411037,949,1250,24.1,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411043,949,1250,24.1,1
+2026-08-17-0803,2026-08-17,amazon-now,Pune,411044,898,1250,28.2,1
 ```
 
 ---

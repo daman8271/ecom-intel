@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-16
-observations: 544
+last_seen: 2026-08-17
+observations: 552
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-black-sliced-olives-470g-finest-olives-from-egypt-evenly-cut-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-16) — ref ₹209 vs live ₹-
-- **Days below reference:** 0 of 68
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-17) — ref ₹249 vs live ₹-
+- **Days below reference:** 0 of 69
 
-## Ref-vs-live history (544 observations)
+## Ref-vs-live history (552 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -588,6 +588,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-16,flipkart,NOT_LISTED,SVD,209,,,,,,0,false
 2026-08-16,flipkart-minutes,NOT_LISTED,SVD,209,,,,,,0,false
 2026-08-16,zepto,NOT_LISTED,SVD,209,,,,,,0,false
+2026-08-17,amazon,OOS,BAU,249,,,,,,0,false
+2026-08-17,amazon-fresh,NOT_LISTED,BAU,249,,,,,,0,false
+2026-08-17,amazon-now,NOT_LISTED,BAU,249,,,,,,0,false
+2026-08-17,bigbasket,NOT_LISTED,BAU,249,,,,,,0,false
+2026-08-17,blinkit,NOT_LISTED,BAU,249,,,,,,0,false
+2026-08-17,flipkart,NOT_LISTED,BAU,249,,,,,,0,false
+2026-08-17,flipkart-minutes,NOT_LISTED,BAU,249,,,,,,0,false
+2026-08-17,zepto,NOT_LISTED,BAU,249,,,,,,0,false
 ```
 
 ---
