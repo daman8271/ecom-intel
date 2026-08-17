@@ -4,16 +4,18 @@ canonical_sku: jivo-daily-cooking-pomace-olive-oil-cold-pressed-soyabean-oil-1l-
 display_name: Jivo Daily Cooking Pomace Olive Oil Cold Pressed Soyabean Oil 1l Each 1l
 platforms:
   - amazon
+  - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-06-04
-observations: 99
+last_seen: 2026-08-17
+observations: 106
 min_price: 578
-max_price: 578
-latest_price: 578
+max_price: 625
+latest_price: 625
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
   - platform/amazon-now
 ---
 
@@ -25,15 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹578 (33.9% off)
+- [[amazon-fresh]] — latest ₹625 (28.5% off)
 - [[amazon-now]] — latest ₹578 (33.9% off)
 
 ## Available in cities
-[[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Mumbai]] · [[Mysuru]] · [[Noida]]
+[[Bengaluru]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Jaipur]] · [[Mumbai]] · [[Mysuru]] · [[Noida]]
 
-## Runs that observed this SKU (2)
-[[amazon-now-2026-06-04-1417]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (3)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-17-0657]] · [[amazon-2026-05-21-1330]]
 
-## Price history (99 observations)
+## Price history (106 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -136,6 +139,13 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-06-04-1417,2026-06-04,amazon-now,Noida,201307,578,874,33.9,1
 2026-06-04-1417,2026-06-04,amazon-now,Noida,201309,578,874,33.9,1
 2026-06-04-1417,2026-06-04,amazon-now,Noida,201310,578,874,33.9,1
+2026-08-17-0657,2026-08-17,amazon-fresh,Bengaluru,560001,625,874,28.5,1
+2026-08-17-0657,2026-08-17,amazon-fresh,Bengaluru,560002,625,874,28.5,1
+2026-08-17-0657,2026-08-17,amazon-fresh,Bengaluru,560003,625,874,28.5,1
+2026-08-17-0657,2026-08-17,amazon-fresh,Bengaluru,560006,625,874,28.5,1
+2026-08-17-0657,2026-08-17,amazon-fresh,Bengaluru,560029,625,874,28.5,1
+2026-08-17-0657,2026-08-17,amazon-fresh,Bengaluru,560040,625,874,28.5,1
+2026-08-17-0657,2026-08-17,amazon-fresh,Bengaluru,560072,625,874,28.5,1
 ```
 
 ---
