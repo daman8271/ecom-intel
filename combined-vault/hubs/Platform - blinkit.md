@@ -27,7 +27,7 @@ Up: [[Home]]
 - [[CANOLA 5L]] — ref ₹1159 / live ₹1193 (🔴 ABOVE)
 - [[EXTRA LIGHT 1L]] — ref ₹599 / live ₹624 (🔴 ABOVE)
 - [[EXTRA LIGHT 2L]] — ref ₹1159 / live ₹1139 (🟢 BELOW)
-- [[JIVO POMACE 1L]] — ref ₹429 / live ₹387 (🟢 BELOW)
+- [[JIVO POMACE 1L]] — ref ₹429 / live ₹380 (🟢 BELOW)
 - [[JIVO POMACE 5L]] — ref ₹1999 / live ₹1971 (🟢 BELOW)
 - [[MUSTARD 1L]] — ref ₹209 / live ₹171 (🟢 BELOW)
 - [[MUSTARD 5L]] — ref ₹999 / live ₹868 (🟢 BELOW)

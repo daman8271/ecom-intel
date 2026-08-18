@@ -6,8 +6,8 @@ platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-08-17
-observations: 325
+last_seen: 2026-08-18
+observations: 332
 min_price: 3058
 max_price: 3338
 latest_price: 3148
@@ -30,10 +30,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ahmedabad]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Noida]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Vijayawada]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (9)
-[[amazon-fresh-2026-08-17-0657]] · [[amazon-fresh-2026-08-16-0657]] · [[amazon-fresh-2026-08-15-0657]] · [[amazon-fresh-2026-08-14-0701]] · [[amazon-fresh-2026-08-13-0657]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (10)
+[[amazon-fresh-2026-08-18-0657]] · [[amazon-fresh-2026-08-17-0657]] · [[amazon-fresh-2026-08-16-0657]] · [[amazon-fresh-2026-08-15-0657]] · [[amazon-fresh-2026-08-14-0701]] · [[amazon-fresh-2026-08-13-0657]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-2026-05-21-1330]]
 
-## Price history (325 observations)
+## Price history (332 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -362,6 +362,13 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-17-0657,2026-08-17,amazon-fresh,Noida,201310,3148,6649,52.7,1
 2026-08-17-0657,2026-08-17,amazon-fresh,Noida,201311,3148,6649,52.7,1
 2026-08-17-0657,2026-08-17,amazon-fresh,Noida,201318,3148,6649,52.7,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Delhi,110016,3148,6649,52.7,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Delhi,110032,3148,6649,52.7,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Delhi,110048,3148,6649,52.7,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Delhi,110055,3148,6649,52.7,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Delhi,110091,3148,6649,52.7,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Delhi,110092,3148,6649,52.7,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Noida,201301,3148,6649,52.7,1
 ```
 
 ---

@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-rice-bran-oil-1-litre-cooking-oil-1l-b0dbhq2qww
-display_name: Jivo Rice Bran Oil 1 Litre Cooking Oil
+display_name: Jivo Rice Bran Oil 1 Litre Cooking Oil 1l B0dbhq2qww
 platforms:
   - amazon-fresh
 first_seen: 2026-07-10
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Rice Bran Oil 1 Litre Cooking Oil**
+**Jivo Rice Bran Oil 1 Litre Cooking Oil 1l B0dbhq2qww**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹199 (30.2% off)
