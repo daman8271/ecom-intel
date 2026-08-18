@@ -7,11 +7,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-08-08
-observations: 374
+last_seen: 2026-08-18
+observations: 375
 min_price: 1968
 max_price: 2225
-latest_price: 1999
+latest_price: 2214
 tags:
   - type/sku-hub
   - platform/amazon
@@ -27,16 +27,16 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹2138 (28.7% off)
-- [[amazon-fresh]] — latest ₹1999 (33.4% off)
+- [[amazon-fresh]] — latest ₹2214 (26.2% off)
 - [[amazon-now]] — latest ₹2225 (25.8% off)
 
 ## Available in cities
 [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Noida]] · [[Pune]] · [[Thiruvananthapuram]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (13)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (14)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-18-0657]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-2026-05-21-1330]]
 
-## Price history (374 observations)
+## Price history (375 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -414,6 +414,7 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-08-0708,2026-08-08,amazon-fresh,Pune,411057,1999,3000,33.4,1
 2026-08-08-0708,2026-08-08,amazon-fresh,Thiruvananthapuram,695001,1999,3000,33.4,1
 2026-08-08-0708,2026-08-08,amazon-fresh,Thiruvananthapuram,695002,1999,3000,33.4,1
+2026-08-18-0657,2026-08-18,amazon-fresh,Visakhapatnam,530002,2214,3000,26.2,1
 ```
 
 ---
