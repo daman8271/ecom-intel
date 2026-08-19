@@ -1,0 +1,101 @@
+{
+  "platform": "bigbasket",
+  "run_id": "daily-2026-08-18",
+  "verdict": "BROKEN",
+  "review_verdict": "BROKEN",
+  "review_reasons": [
+    "rows_vs_baseline: 8005 rows is 602% of baseline 1329 (spike)",
+    "freshness: captured_at 2026-08-09T23:52:55Z is 204.7h old (> 15h); stale file?"
+  ],
+  "deep_reasons": [
+    "[class 9] freshness: captured 204.7h ago (>24h stale)"
+  ],
+  "reasons": [
+    "rows_vs_baseline: 8005 rows is 602% of baseline 1329 (spike)",
+    "freshness: captured_at 2026-08-09T23:52:55Z is 204.7h old (> 15h); stale file?",
+    "[class 9] freshness: captured 204.7h ago (>24h stale)"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no store spans >2 cities (478 stores, 21 cities, 100% rows carry a store_id)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "29 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": true,
+      "severity": "broken",
+      "detail": "3674 in-stock priced rows (floor 7, baseline-derived)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 3674 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/3674 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (3674/8005 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "captured 204.7h ago (>24h stale)"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "bigbasket BROKEN (deep-check): captured 204.7h ago (>24h stale) | heal: stale/cache-served prices -> re-fetch live from PDP",
+  "quarantined": true,
+  "evaluated_at": "2026-08-18T12:32:09.731352+00:00",
+  "source_result": "/opt/ecom-intel/platforms/bigbasket/result_pincode.json"
+}

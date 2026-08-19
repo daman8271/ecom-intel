@@ -1,0 +1,111 @@
+{
+  "platform": "zepto",
+  "run_id": "daily-2026-08-18",
+  "verdict": "BROKEN",
+  "review_verdict": "BROKEN",
+  "review_reasons": [
+    "non_zero_rows: 0 rows scraped",
+    "rows_above_floor: 0 rows (floor 20)",
+    "rows_vs_baseline: 0 rows is 0% of baseline 17952 (collapse)",
+    "skus_vs_baseline: 0 unique SKUs vs baseline 24 (0%)",
+    "pincode_coverage: 0 pincodes w/ Jivo is 0% of baseline 780 (collapsed)",
+    "priced_floor_block: 0 priced in-stock rows is 0% of baseline 4693 (collapse)"
+  ],
+  "deep_reasons": [
+    "[class 3] catalog_floor: 0 distinct Jivo SKUs (floor 6)",
+    "[class 4] priced_row_floor: 0 in-stock priced rows (floor 15)"
+  ],
+  "reasons": [
+    "non_zero_rows: 0 rows scraped",
+    "rows_above_floor: 0 rows (floor 20)",
+    "rows_vs_baseline: 0 rows is 0% of baseline 17952 (collapse)",
+    "skus_vs_baseline: 0 unique SKUs vs baseline 24 (0%)",
+    "pincode_coverage: 0 pincodes w/ Jivo is 0% of baseline 780 (collapsed)",
+    "priced_floor_block: 0 priced in-stock rows is 0% of baseline 4693 (collapse)",
+    "[class 3] catalog_floor: 0 distinct Jivo SKUs (floor 6)",
+    "[class 4] priced_row_floor: 0 in-stock priced rows (floor 15)"
+  ],
+  "deep_checks": [
+    {
+      "class": 1,
+      "name": "no_block_markers",
+      "pass": true,
+      "severity": "broken",
+      "detail": "no captcha/403/expired-session markers"
+    },
+    {
+      "class": 2,
+      "name": "geo_consistency",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no price spans >6 cities (store_id sparse)"
+    },
+    {
+      "class": 3,
+      "name": "catalog_floor",
+      "pass": false,
+      "severity": "suspect",
+      "detail": "0 distinct Jivo SKUs (floor 6)"
+    },
+    {
+      "class": 4,
+      "name": "priced_row_floor",
+      "pass": false,
+      "severity": "broken",
+      "detail": "0 in-stock priced rows (floor 15)"
+    },
+    {
+      "class": 11,
+      "name": "null_price_padding",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0% of 0 in-stock rows have no price"
+    },
+    {
+      "class": 4,
+      "name": "shared_price_dup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no discounted (sale,mrp) pair shared across distinct non-combo products"
+    },
+    {
+      "class": 5,
+      "name": "per_litre_sanity",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "per_litre within band for all SKUs"
+    },
+    {
+      "class": 6,
+      "name": "volume_parse",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "0/0 priced rows missing vol_ml"
+    },
+    {
+      "class": 7,
+      "name": "oos_captured",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "in_stock present (0/0 in stock)"
+    },
+    {
+      "class": 9,
+      "name": "freshness",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "captured 9.8h ago"
+    },
+    {
+      "class": 10,
+      "name": "canonical_dedup",
+      "pass": true,
+      "severity": "suspect",
+      "detail": "no divergent-price dedup leak"
+    }
+  ],
+  "diagnosis": "zepto BROKEN (deep-check): 0 in-stock priced rows (floor 15) | heal: priced-row collapse / padding -> re-scrape (selector or block?)",
+  "quarantined": true,
+  "evaluated_at": "2026-08-18T12:31:21.302223+00:00",
+  "source_result": "/opt/ecom-intel/platforms/zepto/result.json"
+}
