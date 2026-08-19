@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-18
-observations: 560
+last_seen: 2026-08-19
+observations: 568
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-black-pepper-whole-natural-peppercorns-premium-kali-mirch-per
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-18) — ref ₹145 vs live ₹-
-- **Days below reference:** 0 of 70
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-19) — ref ₹145 vs live ₹-
+- **Days below reference:** 0 of 71
 
-## Ref-vs-live history (560 observations)
+## Ref-vs-live history (568 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -604,6 +604,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-18,flipkart,OOS,BAU,145,,,,,,0,false
 2026-08-18,flipkart-minutes,NOT_LISTED,BAU,145,,,,,,0,false
 2026-08-18,zepto,NOT_LISTED,BAU,145,,,,,,0,false
+2026-08-19,amazon,OOS,BAU,145,,,,,,0,false
+2026-08-19,amazon-fresh,NOT_LISTED,BAU,145,,,,,,0,false
+2026-08-19,amazon-now,NOT_LISTED,BAU,145,,,,,,0,false
+2026-08-19,bigbasket,NOT_LISTED,BAU,145,,,,,,0,false
+2026-08-19,blinkit,NOT_LISTED,BAU,145,,,,,,0,false
+2026-08-19,flipkart,OOS,BAU,145,,,,,,0,false
+2026-08-19,flipkart-minutes,NOT_LISTED,BAU,145,,,,,,0,false
+2026-08-19,zepto,NOT_LISTED,BAU,145,,,,,,0,false
 ```
 
 ---
