@@ -1,7 +1,7 @@
 ---
 type: sku-hub
 canonical_sku: jivo-cold-pressed-unrefined-sunflower-oil-1-litre-1l-b0b4sjtnf2
-display_name: Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre
+display_name: Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0b4sjtnf2
 platforms:
   - amazon-fresh
 first_seen: 2026-06-08
@@ -19,7 +19,7 @@ tags:
 
 Up: [[skus-index]]
 
-**Jivo Cold Pressed Unrefined Sunflower Oil - 1 Litre**
+**Jivo Cold Pressed Unrefined Sunflower Oil 1 Litre 1l b0b4sjtnf2**
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹169 (38.5% off)
