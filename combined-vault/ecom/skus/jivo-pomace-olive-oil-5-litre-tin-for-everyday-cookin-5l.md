@@ -6,11 +6,11 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-06-04
-last_seen: 2026-08-19
-observations: 191
+last_seen: 2026-08-22
+observations: 194
 min_price: 1685
 max_price: 1999
-latest_price: 1993
+latest_price: 1899
 tags:
   - type/sku-hub
   - platform/amazon-fresh
@@ -25,15 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon-fresh]] — latest ₹1926 (61.5% off)
-- [[amazon-now]] — latest ₹1993 (60.1% off)
+- [[amazon-now]] — latest ₹1899 (62.0% off)
 
 ## Available in cities
 [[Ahmedabad]] · [[Bengaluru]] · [[Delhi]] · [[Ghaziabad]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]]
 
-## Runs that observed this SKU (12)
-[[amazon-now-2026-08-19-0804]] · [[amazon-now-2026-08-08-0812]] · [[amazon-now-2026-07-30-0810]] · [[amazon-now-2026-07-27-1916]] · [[amazon-now-2026-07-17-0811]] · [[amazon-now-2026-07-16-0808]] · [[amazon-now-2026-07-14-0808]] · [[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
+## Runs that observed this SKU (13)
+[[amazon-now-2026-08-22-0756]] · [[amazon-now-2026-08-19-0804]] · [[amazon-now-2026-08-08-0812]] · [[amazon-now-2026-07-30-0810]] · [[amazon-now-2026-07-27-1916]] · [[amazon-now-2026-07-17-0811]] · [[amazon-now-2026-07-16-0808]] · [[amazon-now-2026-07-14-0808]] · [[amazon-now-2026-07-11-0758]] · [[amazon-now-2026-07-10-0758]] · [[amazon-now-2026-07-09-0826]] · [[amazon-now-2026-07-08-0800]] · [[amazon-fresh-2026-06-04-1417]]
 
-## Price history (191 observations)
+## Price history (194 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -228,6 +228,9 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-19-0804,2026-08-19,amazon-now,Pune,411017,1899,4999,62,1
 2026-08-19-0804,2026-08-19,amazon-now,Pune,411042,1993,4999,60.1,1
 2026-08-19-0804,2026-08-19,amazon-now,Pune,411060,1993,4999,60.1,1
+2026-08-22-0756,2026-08-22,amazon-now,Jaipur,302033,1899,4999,62,1
+2026-08-22-0756,2026-08-22,amazon-now,Pune,411006,1993,4999,60.1,1
+2026-08-22-0756,2026-08-22,amazon-now,Pune,411015,1899,4999,62,1
 ```
 
 ---

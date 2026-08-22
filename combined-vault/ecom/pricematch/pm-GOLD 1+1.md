@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-19
-observations: 568
+last_seen: 2026-08-22
+observations: 576
 latest_status: NOT_LISTED
 below_days: 24
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-gold-refined-oil-blend-of-rice-bran-oil-sunflower-oil-cooking
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-19) — ref ₹389 vs live ₹-
-- **Days below reference:** 24 of 71
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-22) — ref ₹369 vs live ₹-
+- **Days below reference:** 24 of 72
 - **Below on:** [[2026-06-15]] · [[2026-06-16]] · [[2026-06-21]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-26]] · [[2026-06-29]] · [[2026-06-30]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-27]] · [[2026-07-28]]
 
-## Ref-vs-live history (568 observations)
+## Ref-vs-live history (576 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -613,6 +613,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-19,flipkart,OOS,BAU,389,,,,,,0,false
 2026-08-19,flipkart-minutes,NOT_LISTED,BAU,389,,,,,,0,false
 2026-08-19,zepto,NOT_LISTED,BAU,389,,,,,,0,false
+2026-08-22,amazon,OOS,SVD,369,,,,,,0,false
+2026-08-22,amazon-fresh,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-22,amazon-now,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-22,bigbasket,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-22,blinkit,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-22,flipkart,OOS,SVD,369,,,,,,0,false
+2026-08-22,flipkart-minutes,NOT_LISTED,SVD,369,,,,,,0,false
+2026-08-22,zepto,NOT_LISTED,SVD,369,,,,,,0,false
 ```
 
 ---

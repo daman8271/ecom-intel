@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-19
-observations: 568
+last_seen: 2026-08-22
+observations: 576
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[sano-pure-and-aromatic-kachi-ghani-mustard-oil-5l-pet-bottle-100-n
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-19) — ref ₹999 vs live ₹-
-- **Days below reference:** 0 of 71
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-22) — ref ₹949 vs live ₹-
+- **Days below reference:** 0 of 72
 
-## Ref-vs-live history (568 observations)
+## Ref-vs-live history (576 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -612,6 +612,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-19,flipkart,OOS,BAU,999,,,,,,0,false
 2026-08-19,flipkart-minutes,NOT_LISTED,BAU,999,,,,,,0,false
 2026-08-19,zepto,NOT_LISTED,BAU,999,,,,,,0,false
+2026-08-22,amazon,OOS,SVD,949,,,,,,0,false
+2026-08-22,amazon-fresh,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-22,amazon-now,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-22,bigbasket,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-22,blinkit,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-22,flipkart,OOS,SVD,949,,,,,,0,false
+2026-08-22,flipkart-minutes,NOT_LISTED,SVD,949,,,,,,0,false
+2026-08-22,zepto,NOT_LISTED,SVD,949,,,,,,0,false
 ```
 
 ---
