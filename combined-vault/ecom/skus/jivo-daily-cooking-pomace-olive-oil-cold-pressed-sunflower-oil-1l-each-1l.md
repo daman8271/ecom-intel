@@ -4,15 +4,17 @@ canonical_sku: jivo-daily-cooking-pomace-olive-oil-cold-pressed-sunflower-oil-1l
 display_name: Jivo Daily Cooking Pomace Olive Oil Cold Pressed Sunflower Oil 1l Each 1l
 platforms:
   - amazon
+  - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-05-21
-observations: 1
+last_seen: 2026-08-23
+observations: 43
 min_price: 558
-max_price: 558
-latest_price: 558
+max_price: 608
+latest_price: 608
 tags:
   - type/sku-hub
   - platform/amazon
+  - platform/amazon-fresh
 ---
 
 # jivo-daily-cooking-pomace-olive-oil-cold-pressed-sunflower-oil-1l-each-1l
@@ -23,15 +25,61 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹558 (39.6% off)
+- [[amazon-fresh]] — latest ₹608 (34.2% off)
 
-## Runs that observed this SKU (1)
-[[amazon-2026-05-21-1330]]
+## Available in cities
+[[Ahmedabad]] · [[Bhubaneswar]] · [[Chandigarh]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Jaipur]] · [[Noida]] · [[Surat]]
 
-## Price history (1 observations)
+## Runs that observed this SKU (2)
+[[amazon-fresh-2026-08-23-0657]] · [[amazon-2026-05-21-1330]]
+
+## Price history (43 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-05-21-1330,2026-05-21,amazon,All India,-,558,924,39.6,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Ahmedabad,380008,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Ahmedabad,380024,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Bhubaneswar,751004,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Bhubaneswar,751009,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Chandigarh,160002,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Chandigarh,160030,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Chennai,600025,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110001,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110003,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110004,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110008,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110016,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110017,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110024,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110026,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110031,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110032,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110037,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110059,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110091,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110092,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Gurugram,122001,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Gurugram,122002,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Gurugram,122003,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Gurugram,122007,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Gurugram,122010,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Gurugram,122012,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Gurugram,122051,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Jaipur,302026,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201009,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201301,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201303,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201304,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201305,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201306,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201307,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201309,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201310,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201311,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201318,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Surat,394101,608,924,34.2,1
+2026-08-23-0657,2026-08-23,amazon-fresh,Surat,394107,608,924,34.2,1
 ```
 
 ---

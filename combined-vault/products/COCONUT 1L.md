@@ -34,14 +34,14 @@ Up: [[Home]]
 | Bridge class | core (priced) |
 
 ## Competitor-price lens
-*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-22).*
+*Per platform — JIVO ref/floor vs latest live competitor price (pricematch, latest = 2026-08-23).*
 
 | Platform | Ref/Floor ₹ | Live ₹ | Diff % | Violation | Regime | Latest |
 |---|---|---|---|---|---|---|
-| [[Platform - amazon\|amazon]] | 539 | — | — | ⚪ OOS | SVD | 2026-08-22 |
-| [[Platform - amazon\|amazon-fresh]] | 539 | 559 | 3.71 | 🔴 ABOVE | SVD | 2026-08-22 |
-| [[Platform - amazon\|amazon-now]] | 539 | 559 | 3.71 | 🔴 ABOVE | SVD | 2026-08-22 |
-| [[Platform - flipkart\|flipkart]] | 539 | — | — | ⚪ OOS | SVD | 2026-08-22 |
+| [[Platform - amazon\|amazon]] | 539 | — | — | ⚪ OOS | SVD | 2026-08-23 |
+| [[Platform - amazon\|amazon-fresh]] | 539 | 539 | 0 | 🟦 MATCH | SVD | 2026-08-23 |
+| [[Platform - amazon\|amazon-now]] | 539 | 539 | 0 | 🟦 MATCH | SVD | 2026-08-23 |
+| [[Platform - flipkart\|flipkart]] | 539 | — | — | ⚪ OOS | SVD | 2026-08-23 |
 
 ## JIVO lens
 *TIER-LEVEL (Premium) 2026 sell-through from target-history — shared across all Premium products, NOT product-specific (JIVO rows key on platform item_id, no canonical join).*

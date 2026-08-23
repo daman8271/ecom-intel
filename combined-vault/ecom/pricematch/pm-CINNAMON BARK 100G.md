@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-22
-observations: 576
+last_seen: 2026-08-23
+observations: 584
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-organic-cinnamon-sticks-bark-finest-dalchini-sticks-whole-spi
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-22) — ref ₹89 vs live ₹-
-- **Days below reference:** 0 of 72
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-23) — ref ₹89 vs live ₹-
+- **Days below reference:** 0 of 73
 
-## Ref-vs-live history (576 observations)
+## Ref-vs-live history (584 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -620,6 +620,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-22,flipkart,OOS,SVD,89,,,,,,0,false
 2026-08-22,flipkart-minutes,NOT_LISTED,SVD,89,,,,,,0,false
 2026-08-22,zepto,NOT_LISTED,SVD,89,,,,,,0,false
+2026-08-23,amazon,OOS,SVD,89,,,,,,0,false
+2026-08-23,amazon-fresh,NOT_LISTED,SVD,89,,,,,,0,false
+2026-08-23,amazon-now,NOT_LISTED,SVD,89,,,,,,0,false
+2026-08-23,bigbasket,NOT_LISTED,SVD,89,,,,,,0,false
+2026-08-23,blinkit,NOT_LISTED,SVD,89,,,,,,0,false
+2026-08-23,flipkart,OOS,SVD,89,,,,,,0,false
+2026-08-23,flipkart-minutes,NOT_LISTED,SVD,89,,,,,,0,false
+2026-08-23,zepto,NOT_LISTED,SVD,89,,,,,,0,false
 ```
 
 ---
