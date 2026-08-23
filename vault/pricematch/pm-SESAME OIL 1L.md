@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-22
-observations: 576
+last_seen: 2026-08-23
+observations: 584
 latest_status: NOT_LISTED
 below_days: 15
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-first-pressed-sesame-oil-1l-bottle-gingelly-oil-contains-mufa
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-22) — ref ₹329 vs live ₹-
-- **Days below reference:** 15 of 72
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-23) — ref ₹329 vs live ₹-
+- **Days below reference:** 15 of 73
 - **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-10]] · [[2026-06-11]] · [[2026-06-15]] · [[2026-06-16]] · [[2026-06-22]] · [[2026-06-23]] · [[2026-06-24]] · [[2026-06-25]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]]
 
-## Ref-vs-live history (576 observations)
+## Ref-vs-live history (584 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -621,6 +621,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-22,flipkart,OOS,SVD,329,,,,,,0,false
 2026-08-22,flipkart-minutes,NOT_LISTED,SVD,329,,,,,,0,false
 2026-08-22,zepto,NOT_LISTED,SVD,329,,,,,,0,false
+2026-08-23,amazon,OOS,SVD,329,,,,,,0,false
+2026-08-23,amazon-fresh,NOT_LISTED,SVD,329,,,,,,0,false
+2026-08-23,amazon-now,NOT_LISTED,SVD,329,,,,,,0,false
+2026-08-23,bigbasket,NOT_LISTED,SVD,329,,,,,,0,false
+2026-08-23,blinkit,NOT_LISTED,SVD,329,,,,,,0,false
+2026-08-23,flipkart,OOS,SVD,329,,,,,,0,false
+2026-08-23,flipkart-minutes,NOT_LISTED,SVD,329,,,,,,0,false
+2026-08-23,zepto,NOT_LISTED,SVD,329,,,,,,0,false
 ```
 
 ---

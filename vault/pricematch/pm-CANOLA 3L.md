@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-22
-observations: 576
+last_seen: 2026-08-23
+observations: 584
 latest_status: NOT_LISTED
-below_days: 16
+below_days: 17
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-canola-cold-pressed-edible-oil-3-litres-cooking-oil-for-daily
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-22) — ref ₹769 vs live ₹-
-- **Days below reference:** 16 of 72
-- **Below on:** [[2026-07-22]] · [[2026-07-26]] · [[2026-07-30]] · [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]] · [[2026-08-14]] · [[2026-08-15]] · [[2026-08-16]] · [[2026-08-17]] · [[2026-08-18]] · [[2026-08-19]] · [[2026-08-22]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-23) — ref ₹769 vs live ₹-
+- **Days below reference:** 17 of 73
+- **Below on:** [[2026-07-22]] · [[2026-07-26]] · [[2026-07-30]] · [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]] · [[2026-08-14]] · [[2026-08-15]] · [[2026-08-16]] · [[2026-08-17]] · [[2026-08-18]] · [[2026-08-19]] · [[2026-08-22]] · [[2026-08-23]]
 
-## Ref-vs-live history (576 observations)
+## Ref-vs-live history (584 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -621,6 +621,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-22,flipkart,OOS,SVD,769,,,,,,0,false
 2026-08-22,flipkart-minutes,NOT_LISTED,SVD,769,,,,,,0,false
 2026-08-22,zepto,NOT_LISTED,SVD,769,,,,,,0,false
+2026-08-23,amazon,BELOW,SVD,769,749,749,749,-20,-2.6,1,true
+2026-08-23,amazon-fresh,NOT_LISTED,SVD,769,,,,,,0,false
+2026-08-23,amazon-now,NOT_LISTED,SVD,769,,,,,,0,false
+2026-08-23,bigbasket,NOT_LISTED,SVD,769,,,,,,0,false
+2026-08-23,blinkit,NOT_LISTED,SVD,769,,,,,,0,false
+2026-08-23,flipkart,OOS,SVD,769,,,,,,0,false
+2026-08-23,flipkart-minutes,NOT_LISTED,SVD,769,,,,,,0,false
+2026-08-23,zepto,NOT_LISTED,SVD,769,,,,,,0,false
 ```
 
 ---
