@@ -5,8 +5,8 @@ display_name: Jivo First Pressed Sesame Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-08-22
-last_seen: 2026-08-23
-observations: 22
+last_seen: 2026-08-24
+observations: 33
 min_price: 299
 max_price: 329
 latest_price: 299
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Kolkata]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-08-23-0657]] · [[amazon-fresh-2026-08-22-0656]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-08-24-0657]] · [[amazon-fresh-2026-08-23-0657]] · [[amazon-fresh-2026-08-22-0656]]
 
-## Price history (22 observations)
+## Price history (33 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -56,6 +56,17 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-23-0657,2026-08-23,amazon-fresh,Kolkata,700069,299,600,50.2,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Kolkata,700100,299,600,50.2,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Kolkata,700107,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700001,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700009,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700015,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700019,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700022,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700024,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700040,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700053,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700069,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700100,299,600,50.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700107,299,600,50.2,1
 ```
 
 ---

@@ -30,7 +30,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-08-15]] · Week: [[2026-W33]] · Month: 
 ## SKUs seen
 - [[jivo-cold-press-canola-oil-1l]] — JIVO Cold Press Canola Oil (1 L) — ₹244 (34.0% off) · in 523 pincodes
 - [[jivo-cold-press-combo-canola-oil-2l]] — JIVO Cold Press Combo Canola Oil (2 x 1 L) — ₹375 · in 16 pincodes
-- [[jivo-cold-press-soyabean-oil-1l]] — JIVO Cold Press Soyabean Oil (1 L) — ₹148 (34.0% off) · in 1 pincodes
+- [[jivo-cold-press-soyabean-oil-1l]] — Jivo Cold Press Soyabean Oil 1l — ₹148 (34.0% off) · in 1 pincodes
 - [[jivo-cold-pressed-canola-oil-5l]] — JIVO Cold Pressed Canola Oil (5000 ml) — ₹1650 · in 1 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-1l]] — JIVO Cold Pressed Pure Cooking Mustard Oil (1 L) — ₹186 (27.0% off) · in 199 pincodes
 - [[jivo-cold-pressed-pure-cooking-mustard-oil-4l]] — JIVO Cold Pressed Pure Cooking Mustard Oil (4 L) — ₹717 (28.0% off) · in 14 pincodes
@@ -39,7 +39,7 @@ Up: [[flipkart-minutes]] · Day: [[2026-08-15]] · Week: [[2026-W33]] · Month: 
 - [[jivo-extra-light-olive-oil-1l]] — JIVO Extra Light Olive Oil (1 L) — ₹1499 · in 2 pincodes
 - [[jivo-extra-light-olive-oil-2l]] — JIVO Extra Light Olive Oil (2 L) — ₹1890 (30.0% off) · in 156 pincodes
 - [[jivo-natural-minerals-water-mineral-water-1l]] — JIVO Natural Minerals Water Mineral Water (1000 ml) — ₹20 · in 157 pincodes
-- [[jivo-pomace-cooking-olive-oil-5l]] — JIVO Pomace Cooking Olive Oil (5000 ml) — ₹4896 · in 1 pincodes
+- [[jivo-pomace-cooking-olive-oil-5l]] — Jivo Pomace Cooking Olive Oil 5l — ₹4896 · in 1 pincodes
 - [[jivo-pomace-olive-oil-1l]] — JIVO Pomace Olive Oil (1 L) — ₹403 (61.0% off) · in 200 pincodes
 - [[jivo-pomace-olive-oil-5l]] — JIVO Pomace Olive Oil (5 L) — ₹2149 (57.0% off) · in 82 pincodes
 - [[jivo-soybean-oil-soyabean-oil-1l]] — JIVO Soybean Oil Soyabean Oil (1 L) — ₹177 (26.0% off) · in 78 pincodes

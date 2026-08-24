@@ -5,8 +5,8 @@ display_name: Jivo Groundnut Oil 1 Litre
 platforms:
   - amazon-fresh
 first_seen: 2026-06-05
-last_seen: 2026-08-23
-observations: 738
+last_seen: 2026-08-24
+observations: 755
 min_price: 373
 max_price: 458
 latest_price: 408
@@ -27,10 +27,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Ahmedabad]] · [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Faridabad]] · [[Ghaziabad]] · [[Gurgaon]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kolkata]] · [[Mumbai]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Thiruvananthapuram]] · [[Vadodara]] · [[Vijayawada]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (22)
-[[amazon-fresh-2026-08-23-0657]] · [[amazon-fresh-2026-08-22-0656]] · [[amazon-fresh-2026-08-18-0657]] · [[amazon-fresh-2026-08-17-0657]] · [[amazon-fresh-2026-08-16-0657]] · [[amazon-fresh-2026-08-15-0657]] · [[amazon-fresh-2026-08-14-0701]] · [[amazon-fresh-2026-08-13-0657]] · [[amazon-fresh-2026-08-12-0657]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
+## Runs that observed this SKU (23)
+[[amazon-fresh-2026-08-24-0657]] · [[amazon-fresh-2026-08-23-0657]] · [[amazon-fresh-2026-08-22-0656]] · [[amazon-fresh-2026-08-18-0657]] · [[amazon-fresh-2026-08-17-0657]] · [[amazon-fresh-2026-08-16-0657]] · [[amazon-fresh-2026-08-15-0657]] · [[amazon-fresh-2026-08-14-0701]] · [[amazon-fresh-2026-08-13-0657]] · [[amazon-fresh-2026-08-12-0657]] · [[amazon-fresh-2026-08-10-0707]] · [[amazon-fresh-2026-08-09-0708]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-07-0707]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-04-0709]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-07-15-0708]] · [[amazon-fresh-2026-07-14-0708]] · [[amazon-fresh-2026-07-13-0707]] · [[amazon-fresh-2026-06-05-1108]]
 
-## Price history (738 observations)
+## Price history (755 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -772,6 +772,23 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-23-0657,2026-08-23,amazon-fresh,Kolkata,700001,408,845,51.7,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Kolkata,700009,408,845,51.7,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Kolkata,700069,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600016,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600025,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600083,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110001,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110004,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110007,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110009,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110017,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110035,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110059,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122003,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700001,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700009,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700022,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Kolkata,700069,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Thiruvananthapuram,695001,408,845,51.7,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Thiruvananthapuram,695002,408,845,51.7,1
 ```
 
 ---

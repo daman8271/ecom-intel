@@ -6,11 +6,11 @@ platforms:
   - amazon
   - amazon-fresh
 first_seen: 2026-05-21
-last_seen: 2026-08-23
-observations: 43
+last_seen: 2026-08-24
+observations: 110
 min_price: 558
 max_price: 608
-latest_price: 608
+latest_price: 558
 tags:
   - type/sku-hub
   - platform/amazon
@@ -25,15 +25,15 @@ Up: [[skus-index]]
 
 ## Sold on
 - [[amazon]] — latest ₹558 (39.6% off)
-- [[amazon-fresh]] — latest ₹608 (34.2% off)
+- [[amazon-fresh]] — latest ₹558 (39.6% off)
 
 ## Available in cities
-[[Ahmedabad]] · [[Bhubaneswar]] · [[Chandigarh]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Jaipur]] · [[Noida]] · [[Surat]]
+[[Ahmedabad]] · [[Bhubaneswar]] · [[Chandigarh]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Jaipur]] · [[Noida]] · [[Pune]] · [[Surat]] · [[Vadodara]]
 
-## Runs that observed this SKU (2)
-[[amazon-fresh-2026-08-23-0657]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (3)
+[[amazon-fresh-2026-08-24-0657]] · [[amazon-fresh-2026-08-23-0657]] · [[amazon-2026-05-21-1330]]
 
-## Price history (43 observations)
+## Price history (110 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -80,6 +80,73 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-23-0657,2026-08-23,amazon-fresh,Noida,201318,608,924,34.2,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Surat,394101,608,924,34.2,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Surat,394107,608,924,34.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Ahmedabad,380008,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Bhubaneswar,751004,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Bhubaneswar,751009,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chandigarh,160002,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chandigarh,160030,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600002,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600003,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600005,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600006,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600011,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600013,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600016,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600017,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600025,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600083,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Chennai,600118,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110001,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110003,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110004,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110008,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110016,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110017,578,924,37.4,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110024,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110026,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110031,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110032,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110037,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110059,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110091,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110092,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122001,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122002,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122003,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122007,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122010,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122012,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Gurugram,122051,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Jaipur,302026,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Jaipur,302033,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201009,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201301,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201303,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201304,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201305,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201306,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201307,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201309,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201310,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201311,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Noida,201318,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411001,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411003,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411004,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411005,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411006,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411011,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411012,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411014,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411015,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411020,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411028,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411030,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411033,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411035,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Pune,411057,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Vadodara,390001,558,924,39.6,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Vadodara,390002,558,924,39.6,1
 ```
 
 ---

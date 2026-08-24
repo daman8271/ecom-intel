@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-23
-observations: 584
+last_seen: 2026-08-24
+observations: 592
 latest_status: NOT_LISTED
-below_days: 46
+below_days: 47
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[jivo-extra-light-olive-oil-500ml-imported-from-spain-everyday-use-
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-23) — ref ₹339 vs live ₹-
-- **Days below reference:** 46 of 73
-- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-25]] · [[2026-07-26]] · [[2026-07-27]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-08-01]] · [[2026-08-02]] · [[2026-08-03]] · [[2026-08-04]] · [[2026-08-05]] · [[2026-08-06]] · [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]] · [[2026-08-14]] · [[2026-08-15]] · [[2026-08-16]] · [[2026-08-17]] · [[2026-08-18]] · [[2026-08-19]] · [[2026-08-22]] · [[2026-08-23]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-24) — ref ₹349 vs live ₹-
+- **Days below reference:** 47 of 74
+- **Below on:** [[2026-06-08]] · [[2026-06-09]] · [[2026-06-29]] · [[2026-07-02]] · [[2026-07-03]] · [[2026-07-04]] · [[2026-07-05]] · [[2026-07-06]] · [[2026-07-08]] · [[2026-07-09]] · [[2026-07-13]] · [[2026-07-14]] · [[2026-07-15]] · [[2026-07-16]] · [[2026-07-18]] · [[2026-07-19]] · [[2026-07-20]] · [[2026-07-21]] · [[2026-07-22]] · [[2026-07-23]] · [[2026-07-25]] · [[2026-07-26]] · [[2026-07-27]] · [[2026-07-28]] · [[2026-07-29]] · [[2026-07-30]] · [[2026-08-01]] · [[2026-08-02]] · [[2026-08-03]] · [[2026-08-04]] · [[2026-08-05]] · [[2026-08-06]] · [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]] · [[2026-08-14]] · [[2026-08-15]] · [[2026-08-16]] · [[2026-08-17]] · [[2026-08-18]] · [[2026-08-19]] · [[2026-08-22]] · [[2026-08-23]] · [[2026-08-24]]
 
-## Ref-vs-live history (584 observations)
+## Ref-vs-live history (592 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -629,6 +629,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-23,flipkart,NOT_LISTED,SVD,339,,,,,,0,false
 2026-08-23,flipkart-minutes,NOT_LISTED,SVD,339,,,,,,0,false
 2026-08-23,zepto,NOT_LISTED,SVD,339,,,,,,0,false
+2026-08-24,amazon,BELOW,BAU,349,289,289,289,-60,-17.19,1,true
+2026-08-24,amazon-fresh,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,amazon-now,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,bigbasket,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,blinkit,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,flipkart,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,flipkart-minutes,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,zepto,NOT_LISTED,BAU,349,,,,,,0,false
 ```
 
 ---

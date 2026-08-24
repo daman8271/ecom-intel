@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-23
-observations: 584
+last_seen: 2026-08-24
+observations: 592
 latest_status: NOT_LISTED
 below_days: 1
 tags:
@@ -37,11 +37,11 @@ SKU memory: [[jivo-raw-basil-seeds-for-weight-loss-sabja-seeds-tukmaria-seeds-hi
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-23) — ref ₹329 vs live ₹-
-- **Days below reference:** 1 of 73
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-24) — ref ₹349 vs live ₹-
+- **Days below reference:** 1 of 74
 - **Below on:** [[2026-07-26]]
 
-## Ref-vs-live history (584 observations)
+## Ref-vs-live history (592 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -629,6 +629,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-23,flipkart,OOS,SVD,329,,,,,,0,false
 2026-08-23,flipkart-minutes,NOT_LISTED,SVD,329,,,,,,0,false
 2026-08-23,zepto,NOT_LISTED,SVD,329,,,,,,0,false
+2026-08-24,amazon,OOS,BAU,349,,,,,,0,false
+2026-08-24,amazon-fresh,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,amazon-now,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,bigbasket,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,blinkit,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,flipkart,OOS,BAU,349,,,,,,0,false
+2026-08-24,flipkart-minutes,NOT_LISTED,BAU,349,,,,,,0,false
+2026-08-24,zepto,NOT_LISTED,BAU,349,,,,,,0,false
 ```
 
 ---

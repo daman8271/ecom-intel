@@ -12,8 +12,8 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-23
-observations: 584
+last_seen: 2026-08-24
+observations: 592
 latest_status: NOT_LISTED
 below_days: 0
 tags:
@@ -37,10 +37,10 @@ SKU memory: [[jivo-a2-cow-ghee-1-litre-traditional-bilona-method-prepared-from-a
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-23) — ref ₹1309 vs live ₹-
-- **Days below reference:** 0 of 73
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-24) — ref ₹1409 vs live ₹-
+- **Days below reference:** 0 of 74
 
-## Ref-vs-live history (584 observations)
+## Ref-vs-live history (592 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -628,6 +628,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-23,flipkart,OOS,SVD,1309,,,,,,0,false
 2026-08-23,flipkart-minutes,NOT_LISTED,SVD,1309,,,,,,0,false
 2026-08-23,zepto,NOT_LISTED,SVD,1309,,,,,,0,false
+2026-08-24,amazon,OOS,BAU,1409,,,,,,0,false
+2026-08-24,amazon-fresh,NOT_LISTED,BAU,1409,,,,,,0,false
+2026-08-24,amazon-now,NOT_LISTED,BAU,1409,,,,,,0,false
+2026-08-24,bigbasket,NOT_LISTED,BAU,1409,,,,,,0,false
+2026-08-24,blinkit,NOT_LISTED,BAU,1409,,,,,,0,false
+2026-08-24,flipkart,OOS,BAU,1409,,,,,,0,false
+2026-08-24,flipkart-minutes,NOT_LISTED,BAU,1409,,,,,,0,false
+2026-08-24,zepto,NOT_LISTED,BAU,1409,,,,,,0,false
 ```
 
 ---

@@ -7,8 +7,8 @@ platforms:
   - amazon-fresh
   - amazon-now
 first_seen: 2026-05-21
-last_seen: 2026-08-23
-observations: 394
+last_seen: 2026-08-24
+observations: 399
 min_price: 1968
 max_price: 2225
 latest_price: 2124
@@ -33,10 +33,10 @@ Up: [[skus-index]]
 ## Available in cities
 [[Bhubaneswar]] · [[Chennai]] · [[Delhi]] · [[Gurugram]] · [[Hyderabad]] · [[Jaipur]] · [[Kochi]] · [[Kolkata]] · [[Lucknow]] · [[Noida]] · [[Pune]] · [[Thiruvananthapuram]] · [[Visakhapatnam]]
 
-## Runs that observed this SKU (16)
-[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-23-0657]] · [[amazon-fresh-2026-08-19-0657]] · [[amazon-fresh-2026-08-18-0657]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-2026-05-21-1330]]
+## Runs that observed this SKU (17)
+[[amazon-now-2026-06-04-1417]] · [[amazon-fresh-2026-08-24-0657]] · [[amazon-fresh-2026-08-23-0657]] · [[amazon-fresh-2026-08-19-0657]] · [[amazon-fresh-2026-08-18-0657]] · [[amazon-fresh-2026-08-08-0708]] · [[amazon-fresh-2026-08-06-0708]] · [[amazon-fresh-2026-08-05-0708]] · [[amazon-fresh-2026-08-03-0708]] · [[amazon-fresh-2026-08-02-0707]] · [[amazon-fresh-2026-08-01-0707]] · [[amazon-fresh-2026-07-31-0707]] · [[amazon-fresh-2026-07-30-0708]] · [[amazon-fresh-2026-07-29-0708]] · [[amazon-fresh-2026-07-21-0707]] · [[amazon-fresh-2026-07-20-0709]] · [[amazon-2026-05-21-1330]]
 
-## Price history (394 observations)
+## Price history (399 observations)
 
 ```csv
 run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
@@ -434,6 +434,11 @@ run_id,date_ist,platform,city,pincode,price,mrp,discount_pct,in_stock
 2026-08-23-0657,2026-08-23,amazon-fresh,Delhi,110075,2124,3000,29.2,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Kolkata,700022,2124,3000,29.2,1
 2026-08-23-0657,2026-08-23,amazon-fresh,Visakhapatnam,530002,2124,3000,29.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110007,2124,3000,29.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110009,2124,3000,29.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110033,2124,3000,29.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110035,2124,3000,29.2,1
+2026-08-24-0657,2026-08-24,amazon-fresh,Delhi,110059,2124,3000,29.2,1
 ```
 
 ---

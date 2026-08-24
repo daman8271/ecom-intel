@@ -12,10 +12,10 @@ platforms:
   - flipkart-minutes
   - zepto
 first_seen: 2026-06-08
-last_seen: 2026-08-23
-observations: 584
+last_seen: 2026-08-24
+observations: 592
 latest_status: NOT_LISTED
-below_days: 14
+below_days: 15
 tags:
   - type/pricematch-sku
   - platform/amazon
@@ -37,11 +37,11 @@ SKU memory: [[sano-classic-olive-oil-5-litre-ideal-for-all-indian-and-western-cu
 ## Sold on
 [[amazon]] · [[amazon-fresh]] · [[amazon-now]] · [[bigbasket]] · [[blinkit]] · [[flipkart]] · [[flipkart-minutes]] · [[zepto]]
 
-- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-23) — ref ₹2609 vs live ₹-
-- **Days below reference:** 14 of 73
-- **Below on:** [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]] · [[2026-08-14]] · [[2026-08-15]] · [[2026-08-16]] · [[2026-08-17]] · [[2026-08-18]] · [[2026-08-19]] · [[2026-08-22]] · [[2026-08-23]]
+- **Latest status:** ▫️ not listed on [[zepto]] (2026-08-24) — ref ₹2709 vs live ₹-
+- **Days below reference:** 15 of 74
+- **Below on:** [[2026-08-07]] · [[2026-08-08]] · [[2026-08-09]] · [[2026-08-10]] · [[2026-08-12]] · [[2026-08-13]] · [[2026-08-14]] · [[2026-08-15]] · [[2026-08-16]] · [[2026-08-17]] · [[2026-08-18]] · [[2026-08-19]] · [[2026-08-22]] · [[2026-08-23]] · [[2026-08-24]]
 
-## Ref-vs-live history (584 observations)
+## Ref-vs-live history (592 observations)
 
 ```csv
 date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_below,in_stock
@@ -629,6 +629,14 @@ date,platform,status,regime,ref,live,live_min,live_max,diff,diff_pct,stores_belo
 2026-08-23,flipkart,OOS,SVD,2609,,,,,,0,false
 2026-08-23,flipkart-minutes,NOT_LISTED,SVD,2609,,,,,,0,false
 2026-08-23,zepto,NOT_LISTED,SVD,2609,,,,,,0,false
+2026-08-24,amazon,BELOW,BAU,2709,1999,1999,1999,-710,-26.21,1,true
+2026-08-24,amazon-fresh,NOT_LISTED,BAU,2709,,,,,,0,false
+2026-08-24,amazon-now,NOT_LISTED,BAU,2709,,,,,,0,false
+2026-08-24,bigbasket,NOT_LISTED,BAU,2709,,,,,,0,false
+2026-08-24,blinkit,NOT_LISTED,BAU,2709,,,,,,0,false
+2026-08-24,flipkart,OOS,BAU,2709,,,,,,0,false
+2026-08-24,flipkart-minutes,NOT_LISTED,BAU,2709,,,,,,0,false
+2026-08-24,zepto,NOT_LISTED,BAU,2709,,,,,,0,false
 ```
 
 ---
